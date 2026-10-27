@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 // Synthetic browser only: no wallet, owner account, provider login or live API.
-async function mountUpdateControls({message = '', imagePending = false, fileSelected = false, confirm = true, canPrepare = true, fetchResults = []} = {}) {
+async function mountUpdateControls({message = '', imagePending = false, fileSelected = false, confirm = true, canPrepare = true, fetchResults = [], expectUpdate = true} = {}) {
   const nodes = [];
   const makeNode = tag => {
     const node = {
@@ -55,14 +55,16 @@ async function mountUpdateControls({message = '', imagePending = false, fileSele
     document, navigator: {userAgent: 'Chrome'}, window, location,
     URL, URLSearchParams, Date,
     fetch: async () => {
-      if (fetchResults[fetchCalls++] === 'error') throw new Error('temporary_manifest_failure');
-      return {ok: true, json: async () => ({version: '20261026-ui-settings2'})};
+      const result = fetchResults[fetchCalls++];
+      if (result === 'error') throw new Error('temporary_manifest_failure');
+      return {ok: true, json: async () => result || ({version: '20261028-overnight1', build: 2026102801})};
     }
   });
   await new Promise(resolve => setImmediate(resolve));
   await new Promise(resolve => setImmediate(resolve));
-  const button = nodes.find(node => node.tag === 'button' && node.textContent === 'Update Bubbles');
-  assert.ok(button, 'new first-party release must be offered');
+  const button = nodes.find(node => node.tag === 'button' && node !== install);
+  assert.ok(button, 'PWA update control must be rendered');
+  assert.equal(button.textContent, expectUpdate ? 'Update Bubbles' : 'Check for updates');
   const updateMessage = nodes.find(node => node.tag === 'p' && node !== status);
   assert.ok(updateMessage);
   return {button, updateMessage, navigations,
@@ -105,7 +107,7 @@ test('Bubbles PWA update permits confirmed reload when composer is empty', async
   assert.equal(app.confirmations, 1);
   assert.equal(app.preparations, 1);
   assert.equal(app.navigations.length, 1);
-  assert.equal(new URL(app.navigations[0]).searchParams.get('appVersion'), '20261026-ui-settings2');
+  assert.equal(new URL(app.navigations[0]).searchParams.get('appVersion'), '20261028-overnight1');
 });
 
 test('Bubbles PWA update never reloads when confirmation is declined', async () => {
@@ -139,11 +141,44 @@ test('Bubbles PWA clears a previously offered update if a later release verifica
   assert.equal(app.confirmations, 0, 'stale release must never prompt for reload');
 });
 
+test('Bubbles PWA rejects an older published build instead of offering a rollback', async () => {
+  const app = await mountUpdateControls({
+    fetchResults: [{version: '20261026-ui-settings2', build: 2026102602}],
+    expectUpdate: false
+  });
+  assert.equal(app.button.dataset.update, 'unverified');
+  assert.match(app.updateMessage.textContent, /Update paused/);
+  assert.equal(app.navigations.length, 0);
+  assert.equal(app.confirmations, 0);
+});
+
+test('Bubbles PWA rejects mismatched release version and build identifiers', async () => {
+  const app = await mountUpdateControls({
+    fetchResults: [{version: '20261028-overnight1', build: 2026102702}],
+    expectUpdate: false
+  });
+  assert.equal(app.button.dataset.update, 'unverified');
+  assert.equal(app.navigations.length, 0);
+});
+
+test('Bubbles PWA accepts its exact current version without offering an update', async () => {
+  const app = await mountUpdateControls({
+    fetchResults: [{version: '20261027-overnight2', build: 2026102702}],
+    expectUpdate: false
+  });
+  assert.equal(app.button.dataset.update, 'current');
+  assert.match(app.updateMessage.textContent, /web app is current/);
+  assert.equal(app.navigations.length, 0);
+});
+
 test('Bubbles PWA release manifest and cache-busted entry points match the update script', () => {
-  const release = JSON.parse(fs.readFileSync('bubbles-app-version.json', 'utf8')).version;
+  const manifest = JSON.parse(fs.readFileSync('bubbles-app-version.json', 'utf8'));
+  const release = manifest.version;
   assert.match(release, /^[a-zA-Z0-9_-]{5,64}$/);
+  assert.ok(Number.isSafeInteger(manifest.build) && manifest.build > 0);
   const updater = fs.readFileSync('bubbles-pwa.js', 'utf8');
   assert.ok(updater.includes("const CURRENT_RELEASE = '" + release + "';"), 'current release must match the first-party manifest');
+  assert.ok(updater.includes('const CURRENT_BUILD = ' + manifest.build + ';'), 'monotonic build must match the first-party manifest');
   for (const page of ['bubbles-chrome.html', 'bubbles.html', 'bubbles/index.html', 'index.html']) {
     const html = fs.readFileSync(page, 'utf8');
     assert.ok(html.includes('/bubbles-ai.js?v=' + release), page + ' must refresh the conversation-preservation script');
