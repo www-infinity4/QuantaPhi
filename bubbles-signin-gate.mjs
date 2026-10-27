@@ -46,7 +46,12 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const reasonTexts={
   callback_missing_code:'Cloudflare returned without an authorization code.',
   callback_state_invalid:'Bubbles could not match this return to the original sign-in session.',
-  callback_handoff_failed:'Bubbles could not save Cloudflare authorization after the callback.',
+  callback_handoff_failed:'Bubbles could not reach the secure authorization handoff. The Worker may be unavailable.',
+  callback_handoff_state_invalid:'Your earlier Cloudflare sign-in session expired or disappeared. Start a new sign-in.',
+  callback_handoff_conflict:'A different Cloudflare authorization return was already saved for this session. Start a new sign-in.',
+  callback_handoff_decrypt_failed:'Bubbles could not decrypt your original sign-in session. The server keyring needs repair without erasing existing credentials.',
+  callback_handoff_encrypt_failed:'Bubbles could not encrypt Cloudflare authorization. The server keyring needs repair.',
+  callback_handoff_store_failed:'Bubbles could not write the encrypted authorization to secure storage.',
   invalid_scope:'Cloudflare rejected the requested permissions. This OAuth client currently has 386 required scopes.',
   invalid_request:'Cloudflare rejected the sign-in request.',
   unauthorized_client:'Cloudflare did not authorize this OAuth application.',
