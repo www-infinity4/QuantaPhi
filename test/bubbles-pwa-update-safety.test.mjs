@@ -220,7 +220,7 @@ async function simulateAutomaticSiteRevision({remote, version, build, canPrepare
         '<script src="/bubbles-ai.js?v=' + remote + '"></script>'};
     }
   };
-  vm.runInNewContext(watcher + '\\nglobalThis.runRevisionCheck = checkForSiteUpdate;', context);
+  vm.runInNewContext(watcher + '\nglobalThis.runRevisionCheck = checkForSiteUpdate;', context);
   const accepted = await context.runRevisionCheck();
   return {accepted, events};
 }
