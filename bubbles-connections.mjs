@@ -291,11 +291,17 @@ export function mountConnections(container,{token}) {
         }
         button.addEventListener('click',async()=>{
           if(client.pending){status.textContent='Finish or cancel the current sign-in first.';return;}
-          button.disabled=true;button.setAttribute('aria-busy','true');status.textContent='Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
-          // Cloudflare identity sign-in is a separate, short authorization.
-          // A previously verified connection may request the full project toolkit.
-          // Never send the 386-scope owner.full grant on a first-time login.
+          button.disabled=true;button.setAttribute('aria-busy','true');
+          status.textContent=provider.id==='cloudflare'&&availableActions.includes('owner.full')?
+            'Opening official Cloudflare sign-in for the 386 registered permissions. Approve only if you want to grant all 386.':
+            'Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
+          // The currently registered Cloudflare app has 386 scopes marked
+          // required. Asking for only two on first sign-in does not match that
+          // registration. Only send owner.full when the provider advertises it,
+          // and disclose that the authorization grants the full toolkit.
+          const fullCloudflare=provider.id==='cloudflare'&&availableActions.includes('owner.full');
           const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):
+            fullCloudflare?['owner.full']:
             provider.id==='cloudflare'&&!upgrade?['account.read']:availableActions;
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
           try {await client.connect(provider.id,actions,async(error,account)=>{
