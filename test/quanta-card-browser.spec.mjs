@@ -1,4 +1,6 @@
 import {test,expect} from '@playwright/test';
+// Use existing Android QA invocation for the new wiring study and hidden-login cases.
+import './quick-card-wiring-browser.spec.mjs';
 const base='http://127.0.0.1:8799';
 test.use({viewport:{width:390,height:844}});
 test('original single-card Oracle viewer replaces the giant feed on Android width',async({page})=>{
