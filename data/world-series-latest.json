@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-27T18:52:32.132769Z",
+  "checked_at": "2026-10-27T22:50:39.284286Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
@@ -17,6 +17,61 @@
     }
   ],
   "articles": [
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Rays World Series Game 4, Pistons-Knicks",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-brewers-rays-world-series-game-4-pistons-knicks/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T21:57:44Z",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for World Series, NBA, NFL betting on Tuesday",
+      "author": "Owen OBrien",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/09/08/8c9b2f2a-2dd9-45bb-932a-45e8faf837ef/betmgm-promo-code-september-2026.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Rays-Brewers, World Series Game 4 on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-rays-brewers-world-series-game-4-tuesday/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T21:56:04Z",
+      "summary": "Sign up with the latest FanDuel promo code to get your bonus bets when you wager on Tuesday's top games",
+      "author": "James Holliman",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/11/75c36b18-83fe-49ef-9757-d560099e5072/fanduel-350-promo.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Use DraftKings promo code to get $200 bonus, free NBA League Pass for Brewers-Rays, World Series Game 4, NBA",
+      "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-free-nba-league-pass-brewers-rays-world-series-game-4-nba/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T21:52:39Z",
+      "summary": "DraftKings offers $200 in bonus bets and three free months of NBA League Pass after your first $5 wager for World Series, NBA, NFL betting on Tuesday",
+      "author": "Owen OBrien",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/18/c97262f9-761a-4e09-92d0-e42eb8f40a51/draftkings-nba-league-pass-200-bonus-cbssports.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Brewers-Rays World Series Game 4 lineups, FAQ (8 ET, FOX/FOX One)",
+      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-4-starting-lineups-and-pitching-matchup",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-27T20:55:00Z",
+      "summary": "",
+      "author": "Anthony Castrovince, Adam Berry, Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Today's top games to watch, best bets, odds: Brewers at Rays World Series Game 4, Blazers at Lakers and more",
+      "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-at-rays-world-series-game-4-blazers-at-lakers-and-more/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T19:30:52Z",
+      "summary": "Find best bets and props for the biggest games in sports on Tuesday from the SportsLine Projection Model and top CBS Sports experts",
+      "author": "Gene Menez",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/df14fc97-9be7-4e5a-adec-17903ef08f44/brewers-imagn-1.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
     {
       "title": "Vote tonight for the World Series MVP Award",
       "url": "https://www.mlb.com/postseason/mvp-vote?affiliateID=ws_mvp_vote_digital_2026",
@@ -40,17 +95,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Brewers vs. Rays odds, World Series Game 4 predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-      "url": "https://www.cbssports.com/prediction/news/brewers-vs-rays-odds-world-series-game-4-predictions-kalshi-promo-code-cbssports55-55-bonus/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T15:38:51Z",
-      "summary": "Here's a look at the trading markets at Kalshi for World Series Game 4 as the Tampa Bay Rays host the Milwaukee Brewers in World Series Game 4",
-      "author": "James Holliman",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/24/db1facbb-31e9-4676-a4e1-a8845729024a/brewers.jpg",
-      "kind": "Analysis",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
       "title": "Here's one more way 'Wild Bill' is dominating during Brewers' postseason run",
       "url": "https://www.mlb.com/news/william-contreras-showing-mastery-of-abs-challenge-system-in-postseason",
       "publisher": "MLB.com",
@@ -60,17 +104,6 @@
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Brewers-Rays, World Series Game 4 on Tuesday",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-brewers-rays-world-series-game-4-tuesday/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T15:01:25Z",
-      "summary": "Sign up with the latest FanDuel promo code to get your bonus bets when you wager on Tuesday's top games",
-      "author": "James Holliman",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/11/75c36b18-83fe-49ef-9757-d560099e5072/fanduel-350-promo.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
     },
     {
       "title": "How the Rays were broken by the merciless Brewers, who are on the verge of a World Series sweep",
@@ -84,39 +117,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Rays World Series Game 4, Knicks-Pistons",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-brewers-rays-world-series-game-4-knicks-pistons/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T14:47:46Z",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for World Series, NBA, NFL betting on Tuesday",
-      "author": "Owen OBrien",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/09/08/8c9b2f2a-2dd9-45bb-932a-45e8faf837ef/betmgm-promo-code-september-2026.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Brewers-Rays World Series Game 4 FAQ (8 ET, FOX/FOX One)",
-      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-4-starting-lineups-and-pitching-matchup",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T14:47:00Z",
-      "summary": "",
-      "author": "Anthony Castrovince, Adam Berry, Adam McCalvy",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Use DraftKings promo code to get $200 bonus, free NBA League Pass for Rays-Brewers World Series Game 4, NBA",
-      "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-free-nba-league-pass-rays-brewers-world-series-game-4-nba/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T14:46:17Z",
-      "summary": "DraftKings offers $200 in bonus bets and three free months of NBA League Pass after your first $5 wager for World Series, NBA, NFL betting on Tuesday",
-      "author": "Owen OBrien",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/18/c97262f9-761a-4e09-92d0-e42eb8f40a51/draftkings-nba-league-pass-200-bonus-cbssports.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
       "title": "4 takeaways from Crew's Game 3 dominance",
       "url": "https://www.mlb.com/news/key-takeaways-from-world-series-game-3-2026",
       "publisher": "MLB.com",
@@ -126,17 +126,6 @@
       "image_url": "",
       "kind": "Analysis",
       "image_credit": ""
-    },
-    {
-      "title": "Brewers vs. Rays Game 4 MLB picks: Expect Tampa Bay to show pulse Tuesday on verge of being swept at home",
-      "url": "https://www.cbssports.com/betting/news/brewers-vs-rays-game-4-mlb-picks-expect-tampa-bay-to-show-pulse-tuesday-on-verge-of-being-swept-at-home/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T13:26:36Z",
-      "summary": "Can the Rays avoid a sweep at home tonight vs. the Brewers in the 2026 World Series?",
-      "author": "Matt Severance",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/3b46acd5-6d9b-4ae9-94ae-0cd36ccf9569/brewers-getty-8.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
     },
     {
       "title": "Jackson Chourio just showing off now as the face of the Brewers as Crew creeps closer to World Series title",
@@ -345,6 +334,17 @@
       "author": "Carter Bahns",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/26/a55dbc41-553a-4ba7-bc6b-de85c9dc699b/untitled-design-2026-10-25t224644-396.png",
       "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Three biggest questions for World Series Game 3: Can the Rays get off the mat at home?",
+      "url": "https://www.cbssports.com/mlb/news/three-biggest-questions-world-series-game-3-rays-brewers/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-26T12:33:55Z",
+      "summary": "The Brewers hold a 2-0 lead after two one-run wins at home, but now the series shifts to St. Petersburg",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/042d3910-65c9-459f-b1ef-32f0d72d9a31/yandy-getty.png",
+      "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
     }
   ],
