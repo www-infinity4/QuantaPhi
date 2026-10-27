@@ -114,7 +114,7 @@ export function mountCardActions(host,card,options={}){
  // A general card must not silently send its search to Google and pretend
  // that a connected TinyFish browser or the original website produced it.
  const verifiedSearch=providerSearchUrl(provider,'example');
- if(options.showSearch!==false&&verifiedSearch){
+ if(options.showSearch!==false&&verifiedSearch&&!['google','bing'].includes(card.id)){
   const search=element('form','qca-search'),q=element('input','qca-search-input');
   q.type='search';q.placeholder='Search '+provider.name+'…';q.required=true;q.maxLength=180;
   q.setAttribute('aria-label','Search '+provider.name);
