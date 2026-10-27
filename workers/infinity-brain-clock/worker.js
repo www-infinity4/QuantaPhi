@@ -16,6 +16,7 @@ import {githubOperation,directGithubAgent,validateRepository,suggestRepositories
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {planCloudflareToken,confirmCloudflareToken,inspectCloudflareTokenManager} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
+import {handleQuickCardBrowser,readBoundedJson} from './quick-card-browser.mjs';
 
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
@@ -725,6 +726,11 @@ export class BrainClock extends DurableObject{
    return Response.json(result.body,{status:result.status});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
+  if(new URL(request.url).pathname==='/quick-card-browser'){
+   const body=await readBoundedJson(request,2300);
+   const result=await this.ctx.blockConcurrencyWhile(()=>handleQuickCardBrowser(this.ctx.storage,this.env,body));
+   return Response.json(result.result,{status:result.httpStatus});
+  }
   if(new URL(request.url).pathname==='/owner/task-clock'){
    const body=await request.json();
    const response=await this.ctx.blockConcurrencyWhile(()=>ownerClockCommand(this.ctx.storage,this.env.WORK_DB,this.env.WRITER_OWNER_HASH,body));
@@ -1341,6 +1347,19 @@ export default{
     const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/github',{method:'POST',body:raw});
     return output(request,await response.json(),response.status);
    }catch{return output(request,{ok:false,error:'direct_github_unavailable'},503)}
+  }
+  if(path==='/work/quick-card-browser'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(!/^application\/json(?:;|$)/i.test(request.headers.get('Content-Type')||''))return output(request,{ok:false,error:'json_required'},415);
+   try{
+    const body=await readBoundedJson(request,2300);
+    const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main'))
+     .fetch('https://clock.internal/quick-card-browser',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    return output(request,await response.json(),response.status);
+   }catch(error){return output(request,{ok:false,error:error.message==='browser_result_oversize'?'request_too_large':'quick_card_browser_unavailable'},error.message==='browser_result_oversize'?413:503)}
   }
   if(['/work/cloudflare/token-plan','/work/cloudflare/token-confirm'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');

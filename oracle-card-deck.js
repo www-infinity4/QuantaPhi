@@ -104,7 +104,7 @@ function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
- for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id]')){
+ for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
   if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
   if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
@@ -112,16 +112,18 @@ function registerSourceCards(){
   const category=node.querySelector('.iqc-kind')?.textContent?.trim()||'Website';
   const entry={id:'source-'+id,title:label+' · Interactive',feedId:id,
    category,feature:'Use the real '+label+' card controls',study:'Original source card with direct controls',
+   official:node.dataset.official||'',
    node,marker:null,count:Math.max(0,Math.min(1000,Number(counts['source-'+id])||0))};
   entries.push(entry);added=true;
  }
  if(added){
   updateTabs();predict();
-  // New sources enter the same rotation as originals, product cards and Cardone.
-  // Explicit deep links still take priority, but source arrival cannot steal
-  // the first slot from a legitimate earlier Quant/rotation selection.
+  // Honor deep links and visitor interaction. Before interaction, newly loaded
+  // accepted brands receive their requested priority over ordinary brands.
   const requested=entries.find(e=>e.id===spotlightRequested||e.feedId===spotlightRequested);
   if(!expanded&&!viewerTouched&&requested&&available(requested))show(requested,false);
+  else if(!expanded&&!viewerTouched&&!spotlightRequested&&!active?.node?.matches('.iac-card')&&
+   entries.some(e=>available(e)&&e.node.matches('.iac-card')))show(chooseOpening(),false);
   else if(!active&&!expanded)start();
  }
 }
@@ -145,7 +147,7 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study}));}
+function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||''}));}
 function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
@@ -166,7 +168,10 @@ function updateInventory(){
  if(chooser.dataset.inventory!==signature){
   chooser.replaceChildren();
   const hint=document.createElement('option');hint.value='';hint.textContent='Choose a card…';chooser.append(hint);
-  for(const [label,list] of [['QuantaPhi originals',cards.filter(e=>!e.id.startsWith('source-'))],['Source experiences',cards.filter(e=>e.id.startsWith('source-'))]]){
+  for(const [label,list] of [
+   ['Infinity accepted',cards.filter(e=>e.node.matches('.iac-card'))],
+   ['QuantaPhi originals',cards.filter(e=>!e.id.startsWith('source-'))],
+   ['Source experiences',cards.filter(e=>e.id.startsWith('source-')&&!e.node.matches('.iac-card'))]]){
    if(!list.length)continue;const group=document.createElement('optgroup');group.label=label;
    for(const e of list){const option=document.createElement('option');option.value=e.id;option.textContent=e.title;group.append(option)}chooser.append(group);
   }
@@ -265,7 +270,7 @@ window.addEventListener('quantaphi:feed-updated',e=>{
  feedState=readDirections();
  updateTabs();predict();
 });
-Promise.all([import('/quanta-feed-rank.mjs?v=20261024-clean3'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1')]).then(([r,q])=>{
  directionApi=r;quantApi=q;feedState=readDirections();updateTabs();
  if(selectedTab==='for-you')void connectQuant();
@@ -428,7 +433,9 @@ function chooseOpening(){
    localStorage.setItem('oracle:opening-rotation:v1',String((openingCursor+1)%1000000));
   }catch{openingCursor=0}
  }
- return ready[openingCursor%ready.length];
+ const accepted=ready.filter(e=>e.node.matches('.iac-card[data-infinity-accepted="true"]'));
+ const pool=accepted.length?accepted:ready;
+ return pool[openingCursor%pool.length];
 }
 function start(){if(!active&&!expanded){
  const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);

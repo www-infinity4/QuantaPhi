@@ -29,8 +29,10 @@ test('Android gets two legible large interactive companion tiles with working Ne
  const tiles=page.locator('#oracleCardDeck .shopphi-flank:visible');
  await expect(tiles).toHaveCount(2,{timeout:25000});
  await expect(page.locator('.shopphi-flank-position')).toHaveText('1–2 of 6');
- const h=await tiles.first().locator('.shopphi-flank-visual').evaluate(x=>x.getBoundingClientRect().height);
- expect(h).toBeGreaterThanOrEqual(120);
+ // Source banks may finish mounting between locator resolution and evaluation.
+ // Wait for the current tile's rendered visual, rather than measure a replaced node.
+ await expect.poll(()=>tiles.first().locator('.shopphi-flank-visual')
+  .evaluate(x=>x.isConnected?x.getBoundingClientRect().height:0).catch(()=>0)).toBeGreaterThanOrEqual(120);
  await expect(tiles.first().locator('.shopphi-flank-cta')).toContainText(/Open/);
  const first=await tiles.first().getAttribute('href');
  expect(first).toMatch(/^https:\/\//);expect(first).not.toContain('undefined');
