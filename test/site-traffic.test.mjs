@@ -141,7 +141,7 @@ test('public counter labels partial seven-day coverage instead of implying seven
  const partial=trafficPayload(958421,374475,'2026-10-26T16:28:24.621Z');
  partial.last7Days.daysRecorded=6;
  const nodes=await runClientOnce(store,[partial]);
- assert.match(nodes.qtrafficNote.textContent,/2026-10-20 to 2026-10-26, 6\\/7 days recorded/);
+ assert.ok(nodes.qtrafficNote.textContent.includes('2026-10-20 to 2026-10-26, 6/7 days recorded'));
  assert.match(nodes.qtrafficNote.textContent,/automatic ingestion is not yet authorized/);
  assert.equal(nodes.qtrafficRequests.textContent,'958,421');
 });
