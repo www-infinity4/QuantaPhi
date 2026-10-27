@@ -56,7 +56,7 @@ function show(item,draft=false){
  // ShopPhi is a living product card: refresh flanking connections when the
  // selected product changes, not only when the Oracle carousel arrow is tapped.
  const oracleStage=document.getElementById('oracleCardStage');
- if(oracleStage?.contains(host)){
+ if(typeof oracleStage?.contains==='function'&&oracleStage.contains(host)){
   oracleStage.dataset.switchboardId='deck-shop';
   oracleStage.dataset.switchboardTitle=item.title||'Shop Phi';
   oracleStage.dataset.switchboardCategory='Shopping';
