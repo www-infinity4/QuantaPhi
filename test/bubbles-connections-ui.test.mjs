@@ -223,9 +223,9 @@ test('Cloudflare OAuth uses its real consent endpoint and verifies scopes before
    assert.equal(body.get('code_verifier'),'verifier-test');
    return Response.json({access_token:'private-access',refresh_token:'private-refresh',token_type:'Bearer',expires_in:3600,scope:scopes});
   }
-  if(url==='https://dash.cloudflare.com/oauth2/userinfo'){
+  if(url==='https://api.cloudflare.com/client/v4/user'){
    assert.equal(options.headers.Authorization,'Bearer private-access');
-   return Response.json({sub:'cloudflare-stable-user',email:'owner@example.test'});
+   return Response.json({success:true,result:{id:'a'.repeat(32),email:'owner@example.test'}});
   }
   throw Error('Unexpected Cloudflare endpoint');
  };
@@ -240,7 +240,7 @@ test('Cloudflare OAuth uses its real consent endpoint and verifies scopes before
  assert.doesNotMatch(url.href,/server-only-secret/);
  assert.throws(()=>adapter.authorization({state:'x',challenge:'y',actions:['wallet.mint']}),/unsupported_action/);
  const exchanged=await adapter.exchange({code:'code-test',verifier:'verifier-test',actions:['account.read','projects.build','ledger.read']});
- assert.equal(exchanged.subject,'cloudflare-stable-user');
+ assert.equal(exchanged.subject,'a'.repeat(32));
  assert.deepEqual(exchanged.grantedActions,['account.read','projects.build','ledger.read']);
  assert.equal(calls.length,2);
 });
@@ -254,7 +254,7 @@ test('Bubbles full project grant requests real provider scopes and requires ever
  let providerScopes=all;
  const adapter=cloudflareAdapter({clientId:'client-id',clientSecret:'server-side',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async url=>url.endsWith('/token')?
    Response.json({access_token:'test-token',refresh_token:'refresh',token_type:'Bearer',expires_in:3600,scope:providerScopes.join(' ')}):
-   Response.json({sub:'cloudflare-owner',email:'owner@example.test'}));
+   Response.json({success:true,result:{id:'b'.repeat(32),email:'owner@example.test'}}));
  const actions=['account.read','projects.build','ledger.read','projects.full'];
  const url=new URL(adapter.authorization({state:'state',challenge:'challenge',actions}));
  const requested=new Set(url.searchParams.get('scope').split(' '));
@@ -271,7 +271,7 @@ test('Cloudflare OAuth never mistakes limited consent for project management per
  const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
  const adapter=cloudflareAdapter({clientId:'cf-client',clientSecret:'secret',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url)=>{
   if(url.endsWith('/token'))return Response.json({access_token:'limited',refresh_token:'refresh',token_type:'bearer',expires_in:3600,scope:'user-details.read memberships.read'});
-  return Response.json({sub:'unique-cloudflare-user',email:'user@example.test'});
+  return Response.json({success:true,result:{id:'c'.repeat(32),email:'user@example.test'}});
  });
  const result=await adapter.exchange({code:'code',verifier:'verifier',actions:['account.read','projects.build']});
  assert.deepEqual(result.grantedActions,['account.read']);
@@ -429,4 +429,15 @@ test('Account Connections Cloudflare sign-in is usable without unregistered full
  assert.deepEqual(availableCloudflareLoginActions({...provider,configured:false}),[]);
  assert.deepEqual(availableCloudflareLoginActions({...provider,actions:[]}),[]);
  assert.deepEqual(availableCloudflareLoginActions({...provider,id:'github'}),[]);
+});
+
+test('Cloudflare OAuth rejects User Details responses with no verified user ID',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ const scopes='user-details.read memberships.read';
+ const adapter=cloudflareAdapter({clientId:'cf-client',clientSecret:'server-only',
+  redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback',
+  allowedScopes:scopes},async url=>url.endsWith('/oauth2/token')?
+   Response.json({access_token:'test',expires_in:3600,scope:scopes,token_type:'Bearer'}):
+   Response.json({success:true,result:{email:'owner@example.test'}}));
+ await assert.rejects(adapter.exchange({code:'code',verifier:'pkce',actions:['account.read']}),/provider_identity_invalid/);
 });

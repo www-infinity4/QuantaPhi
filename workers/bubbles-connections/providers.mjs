@@ -310,13 +310,19 @@ export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...
         form({grant_type:'authorization_code',client_id:config.clientId,
           redirect_uri:redirectUri,code,code_verifier:verifier})),'cloudflare_exchange');
       const token=tokenFields(raw);
-      const identity=await jsonResponse(await request('https://dash.cloudflare.com/oauth2/userinfo',
+      // The registered Bubbles OAuth client has 386 Cloudflare API scopes,
+      // including user-details.read, but no OIDC openid protocol scope.
+      // The OpenID /userinfo endpoint is therefore not a valid identity
+      // dependency for this client. Verify the OAuth bearer via Cloudflare's
+      // User Details API instead; never use the app-owner's platform token.
+      const identity=await jsonResponse(await request('https://api.cloudflare.com/client/v4/user',
         {redirect:'error',signal:AbortSignal.timeout(15000),
           headers:{Authorization:'Bearer '+token.accessToken,Accept:'application/json'}}),'cloudflare_identity');
-      if(typeof identity.sub!=='string'||!identity.sub||identity.sub.length>256)
+      if(identity?.success!==true||!/^[a-f0-9]{32}$/i.test(identity?.result?.id||''))
         throw Error('provider_identity_invalid');
-      return {...withScope(token,raw,actions),subject:identity.sub,
-        label:typeof identity.email==='string'&&identity.email.length<320?identity.email:'Cloudflare account'};
+      return {...withScope(token,raw,actions),subject:identity.result.id,
+        label:typeof identity.result.email==='string'&&identity.result.email.length<320?
+          identity.result.email:'Cloudflare account'};
     },
     async refresh({refreshToken,actions}){
       if(!refreshToken)throw Error('reconnect_required');
