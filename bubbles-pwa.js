@@ -69,4 +69,66 @@
     installButton.hidden = true;
     status.textContent = 'Bubbles is installed in Chrome.';
   });
+  // A PWA cannot silently scan or patch the user's computer or Chrome itself.
+  // Poll the first-party release manifest only while Bubbles is running/visible.
+  const CURRENT_RELEASE = '20261026-ui-settings1';
+  const updateSection = document.createElement('div');
+  updateSection.className = 'bubbles-update-controls';
+  const updateButton = document.createElement('button');
+  updateButton.type = 'button';
+  updateButton.textContent = 'Check for updates';
+  const updateMessage = document.createElement('p');
+  updateMessage.className = 'bubbles-update-message';
+  updateMessage.setAttribute('role', 'status');
+  updateMessage.setAttribute('aria-live', 'polite');
+  updateMessage.textContent = 'Security and app updates are checked when Bubbles opens.';
+  updateSection.append(updateButton, updateMessage);
+  status.parentElement?.append(updateSection);
+  let latest = '', checking = false, lastCheck = 0;
+  const check = async (showResult = false) => {
+    if (checking || document.visibilityState === 'hidden') return;
+    checking = true;
+    updateButton.disabled = true;
+    if (showResult) updateMessage.textContent = 'Checking for Bubbles updates…';
+    try {
+      if ('serviceWorker' in navigator) {
+        const registration = await navigator.serviceWorker.getRegistration('/');
+        if (registration) await registration.update();
+      }
+      const response = await fetch('/bubbles-app-version.json', {cache:'no-store', credentials:'same-origin'});
+      if (!response.ok) throw Error('manifest_unavailable');
+      const release = await response.json();
+      if (typeof release.version !== 'string' || !/^[a-zA-Z0-9_-]{5,64}$/.test(release.version)) throw Error('invalid_release');
+      lastCheck = Date.now();
+      latest = release.version !== CURRENT_RELEASE ? release.version : '';
+      updateButton.dataset.update = latest ? 'ready' : 'current';
+      updateButton.textContent = latest ? 'Update Bubbles' : 'Check for updates';
+      updateMessage.textContent = latest
+        ? 'A Bubbles website update is ready. Save any unsent message, then tap Update Bubbles.'
+        : 'Bubbles web app is current · checked just now. Chrome itself updates separately.';
+    } catch {
+      updateMessage.textContent = 'Could not verify the latest Bubbles version. Existing chats and wallet remain unchanged.';
+    } finally {
+      checking = false;
+      updateButton.disabled = false;
+    }
+  };
+  updateButton.addEventListener('click', () => {
+    if (!latest) { void check(true); return; }
+    if (!window.confirm('Reload Bubbles to apply the web app update? Copy or send unsent text first. Your wallet will not be erased.')) return;
+    const url = new URL(location.href);
+    url.searchParams.set('appVersion', latest);
+    location.assign(url.href);
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && Date.now()-lastCheck > 60000) void check();
+  });
+  window.addEventListener('focus', () => {
+    if (Date.now()-lastCheck > 60000) void check();
+  });
+  window.setInterval(() => {
+    if (document.visibilityState === 'visible') void check();
+  }, 60*60*1000);
+  void check();
+
 })();
