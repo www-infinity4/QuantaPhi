@@ -1,4 +1,4 @@
-import {mountCardTools} from './quanta-card-experience.mjs';
+import {mountCardTools} from './quanta-card-experience.mjs?v=20261027-karaoke1';
 import {STARMAKER_EMBED_URL,STARMAKER_EMBED_HTML} from './starmaker-quick-card.mjs';
 const card=Object.freeze({id:'starmaker',name:'StarMaker',kind:'Karaoke · Singing',feature:'Find a song and sing karaoke',official:'https://www.starmakerstudios.com/en/songs',featureUrl:'https://www.starmakerstudios.com/en/songs'});
 mountCardTools(document.getElementById('starmakerLive'),card);

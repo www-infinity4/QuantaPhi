@@ -1,6 +1,7 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
+import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
  */
@@ -358,7 +359,7 @@ export function mountCardTools(root,card){
   mountStarMakerQuickCard(root);
   const recording=node('details','qcx-recording-details');
   recording.append(node('summary','','Record a local voice take'));
-  recorder(recording);root.append(recording);
+  mountKaraokeLab(recording);root.append(recording);
   mountCardActions(root,card,{showSearch:false});return;
  }
  if(id==='whatsapp')whatsappDraft(root);

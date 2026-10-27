@@ -5,7 +5,7 @@ const read=file=>readFileSync(new URL('../'+file,import.meta.url),'utf8');
 test('StarMaker portable card mounts real existing interactive Quick Card implementation',()=>{
  const page=read('starmaker-embed.html'),source=read('starmaker-embed.mjs');
  assert.match(source,/mountCardTools\(document\.getElementById\('starmakerLive'\),card\)/);
- assert.match(source,/import \{mountCardTools\} from '\.\/quanta-card-experience\.mjs'/);
+ assert.match(source,/import \{mountCardTools\} from '\.\/quanta-card-experience\.mjs\?v=20261027-karaoke1'/);
  assert.match(page,/id="starmakerLive"/);
  assert.match(page,/id="smEmbedCode"/);
  assert.match(read('starmaker-quick-card.mjs'),/allow="microphone"/);

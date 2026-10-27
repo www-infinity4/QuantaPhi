@@ -23,3 +23,22 @@ test('Outreach page embeds its real same-origin StarMaker card and links working
  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
  expect(overflow).toBe(false);
 });
+
+test('StarMaker card offers original on-device karaoke effects and a licensed backing file picker',async({page})=>{
+ await page.goto(base+'/starmaker-embed.html',{waitUntil:'domcontentloaded'});
+ const details=page.locator('details.qcx-recording-details');
+ await expect(details).not.toHaveAttribute('open');
+ await details.locator('summary').click();
+ await expect(page.getByText('Microphone is off',{exact:true})).toBeVisible();
+ const effect=page.getByRole('combobox',{name:'Voice effect'});
+ await expect(effect).toBeVisible();
+ await effect.selectOption('room');
+ await expect(effect).toHaveValue('room');
+ await page.getByRole('slider',{name:'Backing mix volume'}).fill('60');
+ const input=page.getByLabel('Backing audio (optional · your licensed file)');
+ await input.setInputFiles({name:'my-demo-track.wav',mimeType:'audio/wav',buffer:Buffer.from([82,73,70,70,36,0,0,0,87,65,86,69,102,109,116,32])});
+ await expect(page.getByText('Backing audio ready from your device. Microphone is off.')).toBeVisible();
+ await expect(page.getByRole('button',{name:'● Start recording'})).toBeEnabled();
+ await expect(page.getByRole('button',{name:'■ Stop'})).toBeDisabled();
+ await expect(page.getByText(/No StarMaker songs are downloaded/)).toBeVisible();
+});
