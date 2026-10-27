@@ -164,10 +164,10 @@ def login():
     print("Keep Termux running until authorization completes.", flush=True)
     print("", flush=True)
     if "--open" in sys.argv:
-        if subprocess.call(["command", "-v", "termux-open-url"],
-                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-                           shell=False) == 0:
-            subprocess.Popen(["termux-open-url", approval_url],
+        import shutil
+        opener = shutil.which("termux-open-url")
+        if opener:
+            subprocess.Popen([opener, approval_url],
                              stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     deadline = time.monotonic() + maximum
     while time.monotonic() < deadline:
