@@ -4,6 +4,11 @@
  * microphone access is inferred from browsing/listening data.
  */
 import {STUDIO_SONGS,findSongs,OFFICIAL_SONGBOOK} from './studio/songbook.mjs';
+// Reusable card URL for email previews and iframe HTML for websites.
+// A destination site's own Content Security Policy may disallow frames.
+export const STARMAKER_EMBED_URL='https://quantaphi.org/starmaker-embed.html';
+export const STARMAKER_EMBED_HTML='<iframe title="StarMaker interactive QuantaPhi Quick Card" src="'+STARMAKER_EMBED_URL+'" width="100%" height="780" loading="lazy" allow="microphone" style="width:100%;max-width:880px;min-width:0;border:0;border-radius:18px" referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+
 
 const norm=value=>String(value??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
 const stop=new Set(['the','and','you','your','with','from','have','this','that','feat','song','music']);
@@ -102,7 +107,13 @@ export function mountStarMakerQuickCard(root){
  panel.append(consent,status,picks,more);
  const actions=text('div','','qcx-controls');
  const studio=official('Record my voice ↗','/studio/#studio');
- studio.target='_self';actions.append(studio,official('Full StarMaker songbook ↗',OFFICIAL_SONGBOOK));
+ studio.target='_self';actions.append(studio,official('Full StarMaker songbook ↗',OFFICIAL_SONGBOOK),official('Open portable card ↗',STARMAKER_EMBED_URL));
+ const embedCopy=text('button','Copy card embed','qcx-button');embedCopy.type='button';
+ embedCopy.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(STARMAKER_EMBED_HTML);status.textContent='Website embed copied. Paste into a permitted HTML or iframe block.';}
+  catch{const field=text('textarea',STARMAKER_EMBED_HTML,'qcx-input');field.readOnly=true;field.rows=3;field.setAttribute('aria-label','Copy portable card embed');panel.append(field);field.focus();field.select();status.textContent='Select and copy the website embed from the text box.';}
+ });
+ actions.append(embedCopy);
  panel.append(actions);
  panel.append(text('p','Verified song links only. StarMaker handles licensed karaoke, duets, effects, account sign-in and party rooms. The QuantaPhi recorder is separate. No listening history is transmitted to StarMaker.','qcx-note'));
  root.append(panel);render();
