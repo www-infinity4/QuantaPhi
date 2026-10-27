@@ -197,4 +197,4 @@ if(sellerMode){
  const newest=read(KEY)[0];if(newest){show(newest,true)}
 } 
 window.addEventListener('quantaphi:search-start',e=>{query=String(e.detail?.query||'').slice(0,140);showSearchFallback(query);void loadAd()});showSearchFallback(query);void loadAd();
-})()
+})();
