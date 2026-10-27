@@ -202,6 +202,7 @@ if(typeof document!=='undefined'){
     grid.hidden=true;heading.hidden=true;receipt.hidden=true;before.replaceChildren();after.replaceChildren();return;
    }
    grid.hidden=false;heading.hidden=false;receipt.hidden=false;
+   before.replaceChildren();after.replaceChildren();
    const lane=contextFor(active);
    receipt.textContent='Checking approved Quick Cards and live AdPhi offers…';
    const candidates=await inventory(lane);
