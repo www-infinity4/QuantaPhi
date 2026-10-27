@@ -287,6 +287,17 @@ test('read-only status retries one transient D1 object reset without mutating re
     assert.equal(denied.status, 503);
     assert.equal(attempts, 1);
     assert.equal(d.writes.length, originalWrites);
+
+    // A different D1 internal error is not proof of the known transient object reset.
+    attempts = 0;
+    f.env.WORK_DB = {prepare() {return {first: async () => {
+      attempts++;
+      throw Error('D1_ERROR: Internal error in D1 DB storage unrelated to reset');
+    }}}};
+    const unrelated = await worker.fetch(new Request(url), f.env);
+    assert.equal(unrelated.status, 503);
+    assert.equal(attempts, 1, 'unrelated D1 errors must not be retried');
+    assert.equal(d.writes.length, originalWrites);
   } finally {d.close();}
 });
 
