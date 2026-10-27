@@ -92,7 +92,8 @@ const trafficPayload=(requests,pageViews,fetchedAt)=>({
  schemaVersion:2,site:'quantaphi.org',source:'Cloudflare GraphQL httpRequests1dGroups',
  scope:'recorded_since',historicComplete:false,refreshConfigured:false,
  since:'2026-10-04',through:'2026-10-26',fetchedAt,requests,pageViews,
- last7Days:{requests:100,pageViews:50},recordedDays:23,coverageContinuous:true
+ last7Days:{since:'2026-10-20',until:'2026-10-26',requests:100,pageViews:50,daysRecorded:7},
+ recordedDays:23,coverageContinuous:true
 });
 async function runClientOnce(store,queue){
  const nodes=Object.fromEntries(['qtrafficRequests','qtrafficViews','qtrafficNote'].map(id=>[id,{textContent:''}]));
@@ -133,4 +134,23 @@ test('malformed saved traffic is ignored rather than displayed',async()=>{
  const nodes=await runClientOnce(store,[trafficPayload(1000,500,'2026-10-26T16:28:24.621Z')]);
  assert.equal(nodes.qtrafficRequests.textContent,'1,000');
  assert.equal(nodes.qtrafficViews.textContent,'500');
+});
+
+test('public counter labels partial seven-day coverage instead of implying seven complete days',async()=>{
+ const store=new Map();
+ const partial=trafficPayload(958421,374475,'2026-10-26T16:28:24.621Z');
+ partial.last7Days.daysRecorded=6;
+ const nodes=await runClientOnce(store,[partial]);
+ assert.match(nodes.qtrafficNote.textContent,/2026-10-20 to 2026-10-26, 6\\/7 days recorded/);
+ assert.match(nodes.qtrafficNote.textContent,/automatic ingestion is not yet authorized/);
+ assert.equal(nodes.qtrafficRequests.textContent,'958,421');
+});
+
+test('public counter rejects an impossible seven-day coverage count',async()=>{
+ const store=new Map();
+ const malformed=trafficPayload(958421,374475,'2026-10-26T16:28:24.621Z');
+ malformed.last7Days.daysRecorded=8;
+ const nodes=await runClientOnce(store,[malformed,new Error('fallback unavailable')]);
+ assert.equal(nodes.qtrafficRequests.textContent,'—');
+ assert.match(nodes.qtrafficNote.textContent,/ledger currently unavailable/);
 });
