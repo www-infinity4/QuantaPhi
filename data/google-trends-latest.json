@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-27T16:44:45.542939Z",
+  "checked_at": "2026-10-27T21:01:48.485629Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "colts trade",
+      "query": "arsenal vs",
       "approx_searches": "500+",
-      "published_at": "2026-10-27T16:30:00Z",
+      "published_at": "2026-10-27T20:40:00Z",
       "related_news_urls": [
-        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/quenton-nelson-trade-deadline/1974787/",
-        "https://www.49ers.com/news/morning-reports/morning-report-49ers-looking-ahead-to-bye-week-injury-updates",
-        "https://www.cbssports.com/nfl/news/jets-garrett-wilson-trade-landing-spots-chiefs-49ers/"
+        "https://sports.yahoo.com/articles/arsenal-vs-benfica-womens-champions-140004421.html",
+        "https://www.arsenal.com/news/every-word-of-renees-and-alessias-pre-benfica-presser-a2U647Y6sTiV",
+        "https://www.livescore.com/en/news/football/more/slegers-shares-updates-on-several-arsenal-stars-ahead-of-benfica-bout-hayters/"
       ]
     },
     {
-      "query": "ted bundy",
+      "query": "stan wawrinka",
+      "approx_searches": "500+",
+      "published_at": "2026-10-27T20:40:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/video/wawrinka-walks-out-to-emotional-standing-ovation-in-basel-2026",
+        "https://www.tenniswatcher.com/en/news/monfils-to-play-again-in-geneva-despite-retirement",
+        "https://www.bluewin.ch/en/sport/that-s-why-with-stan-wawrinka-a-part-of-my-love-for-tennis-is-also-leaving-li.3650956"
+      ]
+    },
+    {
+      "query": "pat sajak 80th birthday",
       "approx_searches": "200+",
-      "published_at": "2026-10-27T16:30:00Z",
+      "published_at": "2026-10-27T20:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/us/articles/utah-authorities-connecting-serial-killer-152942415.html",
-        "https://www.tribdem.com/news/crime/utah-authorities-connecting-serial-killer-ted-bundy-to-another-1970s-homicide/article_4f4ba66b-828d-59a7-ba7a-53c04c363707.html",
-        "https://www.seattletimes.com/nation-world/nation/utah-authorities-are-connecting-serial-killer-ted-bundy-to-another-1970s-homicide/"
+        "https://people.com/pat-sajak-80th-birthday-tribute-daughter-maggie-sajak-12196478",
+        "https://www.tvinsider.com/1299840/maggie-sajak-birthday-tribute-dad-pat-80th/",
+        "https://thespun.com/trending/pat-sajaks-daughter-has-fans-heartbroken-over-throwback-photo"
       ]
     },
     {
-      "query": "jennifer shuford",
+      "query": "jiri lehecka",
+      "approx_searches": "500+",
+      "published_at": "2026-10-27T20:30:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/lehecka-locker-room-code-2026",
+        "https://www.atptour.com/en/video/wawrinka-walks-out-to-emotional-standing-ovation-in-basel-2026",
+        "https://www.tenniswatcher.com/en/news/monfils-to-play-again-in-geneva-despite-retirement"
+      ]
+    },
+    {
+      "query": "kevin o'connell kyler murray vikings",
       "approx_searches": "200+",
-      "published_at": "2026-10-27T16:30:00Z",
+      "published_at": "2026-10-27T20:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/10/27/health/shuford-cdc-resign.html",
-        "https://www.washingtonpost.com/politics/2026/10/26/jennifer-shuford-cdc-top-medical-officer-leave-trump-administration/",
-        "https://www.theguardian.com/us-news/2026/oct/27/cdc-deputy-director-resigns-jennifer-shuford"
+        "https://bringmethenews.com/minnesota-sports/kevin-oconnell-has-two-weeks-to-figure-out-kyler-murray-or-find-another-quarterback",
+        "https://www.fox.com/watch/clip/fmc-7t6b5vmg4j2isq8p/is-vikings-head-coach-kevin-o-connell-actually-a-quarterback-whisperer",
+        "https://vikingsterritory.com/2026/news/top_news/kevin-oconnell-laughable-jj"
       ]
     },
     {
-      "query": "essen vs rb leipzig",
+      "query": "christian haynes",
+      "approx_searches": "200+",
+      "published_at": "2026-10-27T20:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/seahawks-release-veteran-player-trade-204224923.html",
+        "https://nfltraderumors.co/seahawks-waive-g-christian-haynes/",
+        "https://www.fieldgulls.com/seattle-seahawks-news/178434/seattle-seahawks-waive-former-third-round-pick-christian-haynes"
+      ]
+    },
+    {
+      "query": "angie nixon",
+      "approx_searches": "500+",
+      "published_at": "2026-10-27T20:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/politics/cuban-exile-turned-congressman-unloads-dem-senate-hopeful-over-cuba-remarks",
+        "https://www.yahoo.com/news/politics/articles/cbs-news-deletes-post-misstating-132356172.html",
+        "https://www.tampabay.com/news/florida-politics/elections/2026/10/27/angie-nixon-cuba-dictatorship-cbs-interview/"
+      ]
+    },
+    {
+      "query": "oil prices",
       "approx_searches": "2000+",
-      "published_at": "2026-10-27T16:10:00Z",
+      "published_at": "2026-10-27T20:20:00Z",
       "related_news_urls": [
-        "https://www.sportschau.de/regional/wdr/wdr-fans-von-rot-weiss-essen-betonieren-gaesteblock-zu-100.html",
-        "https://www.bild.de/sport/fussball/ultras-von-essen-betonieren-eingang-vor-dfb-pokalspiel-zu-6ae06fac67fc5d0d0ce66e1f",
-        "https://de.nachrichten.yahoo.com/sport/leipzig-nkunku-fehlt-pokal-144141940.html"
+        "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html",
+        "https://www.wsj.com/finance/stocks/tech-stocks-power-higher-oil-cools-724e6a63",
+        "https://www.reuters.com/business/us-stock-futures-muted-oil-holds-near-april-highs-ahead-fed-decision-2026-10-27/"
       ]
     },
     {
-      "query": "alex pretti",
+      "query": "tyreek hill news",
       "approx_searches": "1000+",
-      "published_at": "2026-10-27T16:10:00Z",
+      "published_at": "2026-10-27T20:20:00Z",
       "related_news_urls": [
-        "https://kstp.com/kstp-news/top-news/alex-prettis-parents-holding-first-news-conference-since-deadly-metro-surge-shooting/",
-        "https://abc13.com/post/alex-pretti-case-family-say-have-no-answers-months-shooting-death-live/19985556/",
-        "https://www.nytimes.com/2026/10/27/us/alex-pretti-parents-federal-investigation.html"
+        "https://timesofindia.indiatimes.com/sports/nfl/news/nothing-is-happening-tyreek-hill-faces-major-setback-in-chiefs-reunion-hopes-as-kansas-city-weighs-injury-risks/articleshow/135204021.cms",
+        "https://athlonsports.com/nfl/tyreek-hill-nears-a-return-from-knee-injury-per-drew-rosenhaus-as-rams-lose-davante-adams",
+        "https://lastwordonsports.com/nfl/2026/10/21/tyreek-hill-rams-davante-adams/"
       ]
     },
     {
-      "query": "kawhi leonard",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-27T16:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50298441/raptors-kawhi-leonard-weeks-due-knee-sources-say",
-        "https://bleacherreport.com/articles/25521035-kawhi-leonard-injury-update-latest-rumors-timeline-return-raptors-amid-knee-swelling",
-        "https://www.cbssports.com/nba/news/kawhi-leonard-sidelined-knee-injury-miss-return-to-clippers-intuit-dome/"
-      ]
-    },
-    {
-      "query": "quenton nelson",
-      "approx_searches": "10000+",
-      "published_at": "2026-10-27T15:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/deforest-buckner-jonathan-taylor-quenton-120335676.html",
-        "https://www.espn.com/video/clip/_/id/50288619",
-        "https://www.stampedeblue.com/indianapolis-colts-rumors/129155/no-colts-player-reportedly-off-limits-if-rebuild-begins-before-upcoming-trade-deadline"
-      ]
-    },
-    {
-      "query": "gta 6 delay",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-27T15:50:00Z",
-      "related_news_urls": [
-        "https://www.ign.com/articles/emberville-delays-early-access-launch-at-the-last-minute",
-        "https://www.gamingbible.com/news/emberville-delayed-day-1-launch-363427-20261027",
-        "https://www.gamespot.com/articles/one-day-out-from-early-access-emberville-has-been-delayed-to-2027/"
-      ]
-    },
-    {
-      "query": "victor julian duque fbi wanted",
+      "query": "winter weather advisory",
       "approx_searches": "500+",
-      "published_at": "2026-10-27T15:50:00Z",
+      "published_at": "2026-10-27T20:20:00Z",
       "related_news_urls": [
-        "https://www.nbcmiami.com/news/local/fbi-miami-searches-for-colombian-fugitive-in-54m-drug-money-laundering-operation/3878091/",
-        "https://www.kens5.com/article/news/crime/sa-man-accused-of-laundering-drug-money-now-on-fbis-most-wanted-list/273-b4cbcd0e-ab17-4e0a-ab78-6b13e850f6aa",
-        "https://www.nbcmiami.com/video/nbc-6-news/fbi-offers-reward-in-54m-drug-money-laundering-scheme/3878092/"
-      ]
-    },
-    {
-      "query": "gta 6",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-27T15:50:00Z",
-      "related_news_urls": [
-        "https://www.gamesradar.com/games/grand-theft-auto/gta-6-exclusive-leads-edge-430-check-out-the-16-page-cover-feature-that-includes-interviews-with-rockstar-bespoke-screenshots-and-more-this-week/",
-        "https://www.vice.com/en/article/gta-6-edge-magazine-release-times-screenshots-details/",
-        "https://www.pcgamer.com/games/grand-theft-auto/edge-magazine-went-to-rockstar-to-see-gta-6-and-will-tell-you-all-about-in-lavish-detail-this-thursday-october-29/"
+        "https://www.king5.com/article/news/local/winter-weather-advisory-issued-for-cascade-mountains/281-e55ea04b-ca97-419e-9daf-b55242ac521f",
+        "https://www.autoblog.com/news/winter-weather-advisory-issued-for-up-to-12-inches-of-snow-through-wednesday",
+        "https://komonews.com/weather/winter-weather-advisory-cascade-mountains-slippery-pass-travel-safety-3-to-12-inches-snow-road-driving-conditions-snow-plow"
       ]
     }
   ]
