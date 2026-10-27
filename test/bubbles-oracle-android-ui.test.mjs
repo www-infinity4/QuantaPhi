@@ -20,7 +20,8 @@ test('Android chat scroll and composer remain distinct, readable surfaces',()=>{
  assert.match(css,/background:#f2edfa!important/);
  assert.match(css,/--bco-violet: #5f2c91/);
  assert.ok(app.includes('chatScroll.prepend(browserHome)'), 'real browser inside scroll owner');
- assert.ok(app.includes('panel.insertBefore(quick,chatScroll)'), 'approval outside transcript');
+ assert.ok(app.includes('tools.append(quick)'), 'optional GPT approval in dedicated settings');
+  assert.ok(app.includes('if(!embedded)panel.append(tools)'), 'settings overlay outside transcript');
  assert.ok(app.includes('if(!nativeOverlay && window.innerWidth>600)input.focus()'), 'no automatic Android keyboard');
  assert.ok(!app.includes('panel.style.height=(viewport?viewport.height:window.innerHeight)'), 'one viewport sizing handler');
  assert.match(app,/quickButton\.dataset\.connected='true'/);
