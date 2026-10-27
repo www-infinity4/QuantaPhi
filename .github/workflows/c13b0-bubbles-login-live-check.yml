@@ -1,0 +1,15 @@
+name: C13b0 Bubbles Cloudflare sign-in live public check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify served public login, Worker routing, OAuth callback and 386 scopes
+        run: python3 scripts/c13b0-bubbles-signin-check.py
