@@ -70,3 +70,32 @@
  #shopAdPhi .sap-shell .sap-actions button,#shopAdPhi .sap-shell .sap-actions a{flex:1 1 130px}
  #shopAdPhi .sap-feature>img{min-height:140px;max-height:310px}
 }
+
+/* A genuine mobile-first listing form occupying the full viewport, not a
+   compressed advertisement inside the carousel. */
+body.shopphi-sell-page{background:#f4f6f8;color:#263646}
+body.shopphi-sell-page main{max-width:840px;margin:auto;padding:10px 12px 65px}
+body.shopphi-sell-page header.shopphi-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 2px}
+body.shopphi-sell-page .shopphi-header a{color:#214f73;text-decoration:none;font-weight:900}
+#shopAdPhi .sap-seller-fullscreen{margin:0;max-width:100%;padding:18px 16px 28px;background:#fff;border:1px solid #e1e5e9;border-radius:20px;box-shadow:none}
+#shopAdPhi .sap-seller-fullscreen h2{font-size:clamp(27px,6vw,38px);letter-spacing:-.055em;color:#183c55}
+#shopAdPhi .sap-seller-fullscreen>.sap-actions{display:flex;gap:9px}
+#shopAdPhi .sap-seller-fullscreen>.sap-actions button{border-radius:10px}
+#shopAdPhi .sap-seller-fullscreen .sap-form{display:grid;gap:18px;margin:16px 0;padding:16px;background:#f7f9fb;border:1px solid #e0e6eb;border-radius:17px;order:0}
+#shopAdPhi .sap-seller-fullscreen .sap-form>label{font-size:15px;color:#183b56;gap:7px;font-weight:750}
+#shopAdPhi .sap-seller-fullscreen :is(input,textarea,select){box-sizing:border-box;display:block;width:100%;min-width:0;min-height:50px;border:1px solid #b4c4d0;border-radius:11px;padding:12px 13px;font-size:16px;background:white;color:#142e43}
+#shopAdPhi .sap-seller-fullscreen textarea{min-height:138px;resize:vertical}
+#shopAdPhi .sap-seller-fullscreen .sap-item-specifics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;border:1px solid #dbe5ed;border-radius:14px;padding:12px;margin:0;background:#fff}
+#shopAdPhi .sap-item-specifics legend{font-weight:850;font-size:16px;color:#173d59;padding:0 8px}
+#shopAdPhi .sap-item-specifics label{min-width:0;display:grid;gap:6px;font-size:13px;font-weight:700;color:#254d67}
+#shopAdPhi .sap-seller-fullscreen .sap-seller-studio{background:white;border-color:#b7cbd9}
+#shopAdPhi .sap-seller-fullscreen .sap-feature{margin-top:15px;background:white;border:1px solid #bfcfda;border-radius:16px;padding:20px}
+#shopAdPhi .sap-seller-fullscreen .sap-feature img{height:320px;max-height:50vh;object-fit:contain}
+#shopAdPhi .sap-seller-fullscreen .sap-submit-listing{display:block;width:100%;min-height:58px;border:0;background:#145784;color:white;font-size:17px;border-radius:12px}
+#shopAdPhi .sap-seller-fullscreen :is(.sap-actions button,.sap-review-btn){border-radius:12px}
+#shopAdPhi .sap-seller-fullscreen .sap-status{padding:11px 15px;background:#eaf4fb;border-radius:11px;color:#204e67;font-size:13px}
+@media(max-width:440px){
+ #shopAdPhi .sap-seller-fullscreen{padding:14px 9px}
+ #shopAdPhi .sap-seller-fullscreen .sap-form{padding:11px}
+ #shopAdPhi .sap-seller-fullscreen .sap-item-specifics{grid-template-columns:1fr}
+}

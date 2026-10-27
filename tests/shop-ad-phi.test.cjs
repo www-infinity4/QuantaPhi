@@ -53,9 +53,9 @@ function setup(config,options={}){
 }
 const fill=s=>Object.entries({title:'My antique radio',url:'https://www.ebay.com/itm/123',merchant:'My store',description:'Working radio',imageUrl:'https://example.org/radio.jpg'}).forEach(([k,v])=>s.fields[k].value=v);
 
-test('Create post remains readable and explicitly saves locally when owner publish is not connected',async()=>{
+test('Create listing remains readable and explicitly saves privately when owner publish is not connected',async()=>{
  const s=setup();fill(s);
- assert.ok(s.button('Create post'));
+ assert.ok(s.button('Create listing'));
  await s.form.events.submit({preventDefault(){}});
  assert.match(s.text(),/PRIVATE POST DRAFT/);
  assert.match(s.text(),/not connected to an authenticated Shop Phi owner session/i);
@@ -109,7 +109,7 @@ test('product-specific +1 Build stores the exact source in a project instead of 
 test('product card retains real source image and primary controls',async()=>{
  const s=setup();fill(s);await s.form.events.submit({preventDefault(){}});
  assert.ok(walk(s.host).some(x=>x.tag==='img'&&x.src==='https://example.org/radio.jpg'));
- for(const label of ['☆ Star','Collect','Share','+1 Build','Search similar'])assert.ok(s.button(label),label);
+ for(const label of ['☆ Star','Collect','Share','+1 Build','Browse similar at eBay'])assert.ok(s.button(label),label);
  const css=fs.readFileSync(require('node:path').join(__dirname,'../shop-ad-phi.css'),'utf8');
  assert.match(css,/#shopAdPhi \.sap-shell \.sap-form>button\[type=submit\]/);
  assert.match(css,/color:#fff!important/);

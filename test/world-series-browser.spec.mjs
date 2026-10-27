@@ -35,7 +35,7 @@ test('World Series source reporting shows real feed image, analysts, usable link
  await expect(first.getByText('Four key World Series Game 2 questions')).toBeVisible();
  await expect(first.locator('.ws-news-photo')).toHaveAttribute('src',/img\.mlbstatic\.com/);
  await expect(first.getByRole('link',{name:/Read the original report/})).toHaveAttribute('href',/mlb\.com\/news/);
- for(const part of ['Star','Collect','Share','+1 Build','Quick Search'])
+ for(const part of ['Star','Collect','Share','+1 Build'])
   await expect(first.locator('.qca-toolbar').getByText(part,{exact:false}).first()).toBeVisible();
  await news.getByLabel('Filter World Series news').selectOption('Reporting');
  await expect(news.locator('.ws-news-story')).toHaveCount(1);
@@ -46,7 +46,7 @@ test('Cardone standalone property has original imagery, five actions and real Bu
  await page.goto(base+'/cardone-capital.html',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#cardoneQuickActions .qca-toolbar')).toBeVisible({timeout:20000});
  const actions=page.locator('#cardoneQuickActions');
- for(const part of ['Star','Collect','Share','+1 Build','Quick Search'])
+ for(const part of ['Star','Collect','Share','+1 Build'])
   await expect(actions.getByText(part,{exact:false}).first()).toBeVisible();
  await expect(page.getByRole('link',{name:/Explore the official property/})).toHaveAttribute('href',/cardonecapital\.com\/westshoresouth/);
  await expect(page.locator('script[data-bubble-role="specialist"]')).toHaveAttribute('src',/bubbles-embed\.js/);

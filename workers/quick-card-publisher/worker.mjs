@@ -41,7 +41,7 @@ export function cardHtml(row){
  '<meta name="robots" content="'+noindex+'"><link rel="canonical" href="'+share+'">'+
  '<meta property="og:type" content="website"><meta property="og:site_name" content="QuantaPhi"><meta property="og:title" content="'+title+' · Quick Card">'+
  '<meta property="og:description" content="'+desc+'"><meta property="og:url" content="'+share+'"><meta property="og:image" content="'+img+'">'+
- '<meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/published-quick-card.css?v=2">'+
+ '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="'+title+' · Quick Card"><meta name="twitter:description" content="'+desc+'"><meta name="twitter:image" content="'+img+'"><meta name="twitter:image:alt" content="'+title+' source image"><link rel="stylesheet" href="/published-quick-card.css?v=2">'+
  '</head><body><main id="publishedQuickCard" data-card-slug="'+htmlEscape(card.slug)+'"><p role="status">Loading Quick Card…</p></main>'+
  '<script type="module" src="/published-quick-card.js?v=2"></script></body></html>';
 }
