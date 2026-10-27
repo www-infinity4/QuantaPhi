@@ -32,3 +32,13 @@ test('gateway requires configured secrets before spending on agent',async()=>{
  const response=await handleTinyfishCard(request,{},()=>{throw Error('should not call TinyFish')});
  assert.equal(response.status,503);
 });
+
+test('shared action toolbar mounts one website panel across card catalogs',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const actions=readFileSync(new URL('../quanta-card-actions.mjs',import.meta.url),'utf8');
+ const source=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
+ assert.match(actions,/mountTinyfishCard\(host,card\)/);
+ assert.doesNotMatch(source,/mountTinyfishCard\(item,card\)/);
+ for(const id of ['pcgs','levis-501-dark','kohls-coupons','world-series-game3-2026'])assert.equal(tinyfishCardSupported(id),true,id);
+ assert.equal(validateCardBrowse({cardId:'levis-501-dark',query:'Are these jeans cotton?'}).sourceUrl,'https://www.levi.com/US/en_US/clothing/men/jeans/straight/501-original-fit-mens-jeans/p/005013373');
+});
