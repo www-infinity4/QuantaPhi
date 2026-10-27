@@ -319,8 +319,11 @@ function show(entry,remember=true){
   import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
    if(active!==displayed||!stage.contains(displayed.node))return;
    const container=document.createElement('div');container.className='oracle-card-actions';
+   // Capture the real photo/artwork from the displayed original card, not
+   // the generic QuantaPhi site preview used by unrelated URLs.
+   const mediaSrc=displayed.node.querySelector('img[src]:not([hidden])')?.getAttribute('src')||'';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
-    category:displayed.category,route:'/?card='+encodeURIComponent(displayed.id)});
+    category:displayed.category,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
