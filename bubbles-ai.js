@@ -3729,6 +3729,9 @@ if(!embedded&&incomingWork&&incomingWork.length<=1800){
 const siteScript=[...(document.querySelectorAll?.('script[src]')||[])].find(el=>
  {try{return new URL(el.src,location.href).pathname==='/bubbles-ai.js'}catch{return false}});
 const siteRevision=siteScript?new URL(siteScript.src,location.href).searchParams.get('v')||'':'';
+// Keep the automatic HTML revision watcher on the same monotonic release
+// boundary as the Chrome PWA updater. A stale HTML page is not an upgrade.
+const CURRENT_SITE_BUILD=2026102702;
 let siteVersionChecking=false,lastSiteVersionCheck=0;
 async function checkForSiteUpdate(){
  if(embedded||siteVersionChecking||Date.now()-lastSiteVersionCheck<25000)return false;
@@ -3741,6 +3744,12 @@ async function checkForSiteUpdate(){
   const html=await response.text();
   const remote=html.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
   if(!remote||!siteRevision||remote===siteRevision)return false;
+  // HTML alone is not an update receipt: stale caches can serve older pins.
+  // Cross-check a fresh first-party manifest before allowing any reload.
+  const manifestResponse=await bubblesFetch(new URL('/bubbles-app-version.json',location.origin).href,{cache:'no-store'},9000);
+  if(!manifestResponse.ok)return false;
+  const release=await manifestResponse.json();
+  if(release?.version!==remote||!Number.isSafeInteger(release.build)||release.build<=CURRENT_SITE_BUILD)return false;
   // The automatic site-revision updater must obey the same unsent-draft,
   // in-flight reply and storage safety checks as the Chrome update button.
   if(window.QuantaBubbles?.prepareSiteUpdateReload?.()!==true)return false;
