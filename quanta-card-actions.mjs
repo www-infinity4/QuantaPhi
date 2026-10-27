@@ -14,6 +14,21 @@ function route(card){
  return location.pathname+location.search;
 }
 function previewUrl(card){return new URL(route(card),location.origin).href}
+function sharePreviewUrl(card){
+ // The QuantaPhi edge renders distinct real OG/Twitter metadata on /q-share
+ // even for an original Oracle card whose visible route is homepage ?card=id.
+ const target=previewUrl(card),u=new URL('/q-share',location.origin);
+ u.searchParams.set('kind','quick-card');
+ u.searchParams.set('title',String(card.name||card.title||card.id||'QuantaPhi Quick Card').slice(0,120));
+ u.searchParams.set('text',String(card.feature||card.description||card.study||'Open this original interactive QuantaPhi Quick Card.').slice(0,230));
+ u.searchParams.set('dest',target);
+ let visual=card.image||card.imageUrl||card.mediaSrc||'';
+ try{
+  const image=new URL(visual,location.origin);
+  if(image.protocol==='https:'&&/\\.(png|jpe?g|webp|gif)$/i.test(image.pathname))u.searchParams.set('image',image.href);
+ }catch{}
+ return u.href;
+}
 function notify(host,s){host.textContent=s}
 export function mountCardActions(host,card,options={}){
  if(!host||!card)return;
@@ -59,7 +74,7 @@ export function mountCardActions(host,card,options={}){
   notify(status,'Collected on this device. Cloud sync and coin rewards are not confirmed.');
  });
  b('↗ Share',async()=>{
-  const url=previewUrl(card);
+  const url=sharePreviewUrl(card);
   try{
    if(navigator.share){await navigator.share({title:name,text:'Explore the '+name+' interactive Quick Card on QuantaPhi',url});notify(status,'Share sheet opened.');return}
    if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);notify(status,'Quick Card link copied.');return}
