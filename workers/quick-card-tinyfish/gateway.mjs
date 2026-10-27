@@ -16,7 +16,7 @@ export const WEBSITE_CARDS=Object.freeze({
  'fox-one':'https://www.fox.com/',
  'fox-one-live-news':'https://www.fox.com/stream/fox-news',
  facebook:'https://www.facebook.com/',
- instagram:'https://www.instagram.com/'
+ instagram:'https://www.instagram.com/',
 
  'vamworld':"https://vamworld.com/",
  'pcgs':"https://www.pcgs.com/coinfacts",
