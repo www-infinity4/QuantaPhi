@@ -270,3 +270,34 @@ test('OAuth provider invalid_scope is classified separately from user decline',a
  assert.match(html,/rejected the requested permission combination/);
  assert.doesNotMatch(html,/SECRET/);
 });
+
+test('callback never claims receipt when Durable Object handoff fails and reveals only safe failure codes',async()=>{
+  const state='z'.repeat(43);
+  const registry={lookupOAuthState:async()=>({userId:'verified-alice'})};
+  const e={CONNECTIONS:{idFromName:name=>name,get:()=>registry}};
+  const expected={
+    state_invalid:'callback_handoff_state_invalid',
+    conflicting_callback:'callback_handoff_conflict',
+    decrypt:'callback_handoff_decrypt_failed',
+    encrypt:'callback_handoff_encrypt_failed',
+    storage:'callback_handoff_store_failed',
+    unavailable:'callback_handoff_failed',
+  };
+  for(const [failure,reason] of Object.entries(expected)){
+    const response=await handleConnections(
+      new Request('https://quantaphi.org'+PREFIX+'/cloudflare/callback?state='+state+'&code=private-code'),
+      e,async()=>({handoff:async()=>({received:false,failure})}));
+    assert.equal(response.status,303);
+    const location=response.headers.get('Location');
+    assert.equal(location,PREFIX+'/cloudflare/callback?result=failed&reason='+reason);
+    assert.doesNotMatch(location,/private-code|state=|z{20}/);
+    const page=await handleConnections(new Request('https://quantaphi.org'+location),e,()=>assert.fail());
+    const html=await page.text();
+    assert.equal(page.status,200);
+    assert.doesNotMatch(html,/private-code|z{20}/);
+  }
+  const undefinedResponse=await handleConnections(new Request(
+    'https://quantaphi.org'+PREFIX+'/cloudflare/callback?state='+state+'&code=private-code'),
+    e,async()=>({handoff:async()=>({})}));
+  assert.equal(undefinedResponse.headers.get('Location'),PREFIX+'/cloudflare/callback?result=failed&reason=callback_handoff_failed');
+});
