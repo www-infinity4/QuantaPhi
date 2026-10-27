@@ -59,3 +59,10 @@ assert.match(html,/class=\"search\" role=\"search\"/);
 assert.ok(html.indexOf('class=\"search\"')<html.indexOf('id=\"qtraffic\"'),'Search must lead before traffic counters');
 assert.doesNotMatch(html,/<section class=\"q-bubbles-entry\"/);
 assert.match(deck,/connectQuant\(\{select:true,revision\}\)/);
+
+assert.match(html,/data-oracle-family="accepted"/);
+assert.match(html,/data-oracle-family="website"/);
+assert.match(html,/data-oracle-family="original"/);
+assert.match(deck,/selectNextFamilyPool\(tour\.cards,cardFamily\(active\)\)/);
+assert.match(deck,/openingFamilyPool\(cards,openingCursor\)/);
+assert.match(deck,/show\(chosen\)/);
