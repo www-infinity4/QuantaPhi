@@ -19,7 +19,7 @@ final class TermuxLoopbackProbe {
 
     static String check() {
         try (Socket socket = new Socket()) {
-            socket.connect(new InetSocketAddress(InetAddress.getLoopbackAddress(), 18767), 900);
+            socket.connect(new InetSocketAddress(InetAddress.getByName("127.0.0.1"), 18767), 900);
             socket.setSoTimeout(900);
             OutputStream out = socket.getOutputStream();
             out.write(("GET /health HTTP/1.0\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n")
