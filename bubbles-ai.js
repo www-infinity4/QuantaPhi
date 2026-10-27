@@ -2181,6 +2181,26 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    aiConsult[1].toLowerCase()==='claude'?'claude_only':'gemini_first';
   await consultExternalAi(aiConsult[2],mode,fromVoice);return;
  }
+ // Integra's owner-only X browser commands are not ordinary model prompts.
+ // A human confirmation is required for publishing and voice cannot approve posts.
+ if(!embedded&&/^(?:(?:hey\s+)?bubbles[,\s]+)?(?:ask\s+)?integra\b/i.test(spoken)){
+  busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();
+  let reply;
+  try{
+   const module=await import('/bubbles-integra-x.mjs?v=20261027-integra1');
+   const command=module.parseIntegraCommand(spoken);
+   const headers=await verifiedOwnerHeaders();
+   reply=await module.executeIntegraCommand(command,{
+    url:BRAIN+'/work/integra-x',headers,fetcher:bubblesFetch,
+    approve:post=>!fromVoice&&window.confirm('Publish this one post from @IntegraAI?\n\n'+post)
+   });
+  }catch(error){reply='Integra bridge could not verify this action: '+String(error.message||error).slice(0,135)+'. No published post is confirmed.';}
+  display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=reply.slice(0,180);
+  else if(fromVoice&&config.voice&&!nativeOverlay)speakText(reply.slice(0,180));
+  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');drainVoiceTurns();
+  return;
+ }
  // One character from the owner or the Android Bubbles bridge resumes
  // existing work. Archived text is context, NEVER new build authorization.
  if(spoken==='*'){

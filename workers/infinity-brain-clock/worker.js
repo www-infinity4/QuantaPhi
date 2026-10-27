@@ -16,6 +16,9 @@ import {githubOperation,directGithubAgent,validateRepository,suggestRepositories
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {planCloudflareToken,confirmCloudflareToken,inspectCloudflareTokenManager} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
+import {handleIntegraX} from './integra-x.mjs';
+import {handleProviderBrowser} from './provider-browser.mjs';
+import {handleQuickCardBrowser} from './quick-card-browser.mjs';
 
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
@@ -725,6 +728,22 @@ export class BrainClock extends DurableObject{
    return Response.json(result.body,{status:result.status});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
+  if(new URL(request.url).pathname==='/quick-card-browser'){
+   const body=await request.json();
+   const result=await this.ctx.blockConcurrencyWhile(()=>handleQuickCardBrowser(this.ctx.storage,this.env,body));
+   return Response.json(result.result,{status:result.httpStatus});
+  }
+  if(new URL(request.url).pathname==='/provider-browser'){
+   const body=await request.json();
+   const result=await this.ctx.blockConcurrencyWhile(()=>handleProviderBrowser(this.ctx.storage,this.env,body));
+   return Response.json(result.result,{status:result.httpStatus});
+  }
+  if(new URL(request.url).pathname==='/integra-x'){
+   // The outer Worker has already verified this is the Unified Wallet owner.
+   const body=await request.json();
+   const result=await this.ctx.blockConcurrencyWhile(()=>handleIntegraX(this.ctx.storage,this.env,body));
+   return Response.json(result.result,{status:result.httpStatus});
+  }
   if(new URL(request.url).pathname==='/owner/task-clock'){
    const body=await request.json();
    const response=await this.ctx.blockConcurrencyWhile(()=>ownerClockCommand(this.ctx.storage,this.env.WORK_DB,this.env.WRITER_OWNER_HASH,body));
@@ -1341,6 +1360,52 @@ export default{
     const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/github',{method:'POST',body:raw});
     return output(request,await response.json(),response.status);
    }catch{return output(request,{ok:false,error:'direct_github_unavailable'},503)}
+  }
+  // Each Quick Card action must be an explicit current owner's approved action.
+  // Neither a public user nor a provider page can inherit the owner's TinyFish profile.
+  if(path==='/work/quick-card-browser'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(Number(request.headers.get('Content-Length')||0)>2300)return output(request,{ok:false,error:'request_too_large'},413);
+   try{
+    const raw=await request.text();if(raw.length>2300)return output(request,{ok:false,error:'request_too_large'},413);
+    const body=JSON.parse(raw);
+    const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main'))
+     .fetch('https://clock.internal/quick-card-browser',{method:'POST',
+      headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    return output(request,await response.json(),response.status);
+   }catch{return output(request,{ok:false,error:'quick_card_browser_unavailable'},503)}
+  }
+  // Owner-only provider card browser tasks; no visitor requests may use the owner's session.
+  if(path==='/work/provider-browser'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(Number(request.headers.get('Content-Length')||0)>2500)return output(request,{ok:false,error:'request_too_large'},413);
+   try{
+    const raw=await request.text();if(raw.length>2500)return output(request,{ok:false,error:'request_too_large'},413);
+    const body=JSON.parse(raw);
+    const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/provider-browser',{
+     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    return output(request,await r.json(),r.status);
+   }catch{return output(request,{ok:false,error:'provider_browser_unavailable'},503)}
+  }
+  if(path==='/work/integra-x'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(Number(request.headers.get('Content-Length')||0)>3000)return output(request,{ok:false,error:'request_too_large'},413);
+   try{
+    const raw=await request.text();if(raw.length>3000)return output(request,{ok:false,error:'request_too_large'},413);
+    const data=JSON.parse(raw);
+    const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/integra-x',{
+     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    return output(request,await r.json(),r.status);
+   }catch{return output(request,{ok:false,error:'integra_bridge_unavailable'},503)}
   }
   if(['/work/cloudflare/token-plan','/work/cloudflare/token-confirm'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');

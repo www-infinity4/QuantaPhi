@@ -8,9 +8,9 @@ const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
 const deck=readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
 const tools=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
-test('all twenty provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
- assert.equal(QUICK_CARD_SOURCES.length,20);
- assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,20);
+test('all twenty-three provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
+ assert.equal(QUICK_CARD_SOURCES.length,23);
+ assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,23);
  for(const card of QUICK_CARD_SOURCES){
   assert.ok(validSourceCard(card),card.id);
   assert.equal(findSourceCard(card.id),card);
@@ -20,7 +20,7 @@ test('all twenty provider quick cards exist, have unique IDs and real HTTPS orig
  }
  assert.equal(findSourceCard('not-registered'),null);
  assert.deepEqual(QUICK_CARD_SOURCES.map(p=>p.id),
- ['google','youtube','facebook','instagram','chatgpt','gemini','claude','copilot','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-one','fox-one-live-news','fox-news','tv-guide','starmaker']);
+ ['google','youtube','facebook','instagram','chatgpt','gemini','claude','microsoft-copilot','ibm-watsonx','levis','copilot','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-one','fox-one-live-news','fox-news','tv-guide','starmaker']);
 });
 test('Google and Bing start real engine requests inside the Infinity Viewer',()=>{
  for(const id of ['google','bing']){
@@ -113,9 +113,9 @@ test('functional source cards enter Public while link-only integrations remain s
  assert.deepEqual(PUBLIC_SOURCE_IDS,[
   'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
   'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
-  'chatgpt','gemini','claude','copilot'
+  'chatgpt','gemini','claude','copilot','microsoft-copilot','ibm-watsonx','levis'
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,20);
+ assert.equal(PUBLIC_SOURCE_IDS.length,23);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/QUICK_CARD_SOURCES.filter\(isPublicSourceCard\)/);
