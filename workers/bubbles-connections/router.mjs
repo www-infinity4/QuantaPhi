@@ -25,8 +25,22 @@ export async function walletIdentity(request,env) {
   // Binding uses the authenticated device session, not browser-provided IDs.
   return {userId:String(id),sessionId:await digest(authorization)};
 }
-export function callbackPage(provider,result='') {
+// Only constant, non-secret categories may be reflected from OAuth callbacks.
+// Never expose state, authorization code, user ID, or provider descriptions.
+const OAUTH_RETURN_REASONS=Object.freeze({
+  callback_missing_code:'Cloudflare returned without an authorization code.',
+  callback_state_invalid:'The login session could not be matched to the authorization return.',
+  callback_handoff_failed:'Cloudflare returned, but Bubbles could not securely save the authorization.',
+  invalid_scope:'Cloudflare rejected the requested permission combination.',
+  invalid_request:'Cloudflare rejected the authorization request.',
+  unauthorized_client:'Cloudflare did not authorize this application for sign-in.',
+  access_denied:'Cloudflare authorization was declined.',
+  server_error:'Cloudflare reported an authorization service error.',
+  temporarily_unavailable:'Cloudflare authorization is temporarily unavailable.',
+});
+export function callbackPage(provider,result='',reason='') {
   if(!['google','github','cloudflare'].includes(provider))return new Response('Unknown provider',{status:404});
+  const details=Object.hasOwn(OAUTH_RETURN_REASONS,reason)?OAUTH_RETURN_REASONS[reason]:null;
   const message=result==='received'
     ? 'Authorization received securely. Return to Bubbles to verify and finish connecting your account.'
     : result==='declined'
@@ -34,10 +48,11 @@ export function callbackPage(provider,result='') {
     : result==='failed'
       ? 'The authorization could not be received. Return to Bubbles and retry the sign-in.'
       : 'Return to Bubbles to check your account connection.';
+  const detailLine=details?'<p role="alert">'+details+'</p>':'';
   // The callback has already redirected away from the provider code. Offer
   // user-initiated navigation to the registered Android return intent or to
   // the Chrome/PWA account page. Neither link carries OAuth state or tokens.
-  const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f4f0"><title>Return to Bubbles</title><link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1"></head><body class="bubbles-auth-page"><main class="bubbles-auth-shell"><article class="auth-return-card"><h1>Return to Bubbles</h1><p>'+message+'</p><p><a class="auth-action auth-primary" href="/bubbles.html">Continue in Bubbles</a><a class="auth-action" href="quantaphi-bubbles://return">Return to Bubbles Android app</a></p><p><a href="/bubbles-accounts.html">Account connections</a></p><p class="auth-intro">Connection is not confirmed until Bubbles checks your account securely.</p></article></main><script type="module" src="/bubbles-auth-return.mjs?v=20261026-oauth-finalize2"></script></body></html>';
+  const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f4f0"><title>Return to Bubbles</title><link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1"></head><body class="bubbles-auth-page"><main class="bubbles-auth-shell"><article class="auth-return-card"><h1>Return to Bubbles</h1><p>'+message+'</p>'+detailLine+'<p><a class="auth-action auth-primary" href="/bubbles.html">Continue in Bubbles</a><a class="auth-action" href="quantaphi-bubbles://return">Return to Bubbles Android app</a></p><p><a href="/bubbles-accounts.html">Account connections</a></p><p class="auth-intro">Connection is not confirmed until Bubbles checks your account securely.</p></article></main><script type="module" src="/bubbles-auth-return.mjs?v=20261026-oauth-finalize2"></script></body></html>';
   return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store',
     'Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
     'X-Content-Type-Options':'nosniff'}});
@@ -61,21 +76,27 @@ export async function handleConnections(request,env,resolveService) {
   const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
   if(callback && request.method==='GET'){
     const provider=callback[1],state=url.searchParams.get('state');
-    if(!state)return callbackPage(provider,url.searchParams.get('result')||'');
-    let result='failed';
+    if(!state)return callbackPage(provider,url.searchParams.get('result')||'',url.searchParams.get('reason')||'');
+    let result='failed',reason='callback_state_invalid';
     try{
       const code=url.searchParams.get('code'),denied=url.searchParams.has('error');
-      if(!denied&&!code)throw Error('callback_invalid');
+      if(!denied&&!code){reason='callback_missing_code';throw Error('callback_invalid');}
       const registry=env.CONNECTIONS.get(env.CONNECTIONS.idFromName('oauth-state-registry-v1'));
-      const locator=await registry.lookupOAuthState({state,provider});
+      let locator;
+      try{locator=await registry.lookupOAuthState({state,provider});}
+      catch{reason='callback_state_invalid';throw Error('state_invalid_or_used');}
       const service=await resolveService(locator.userId);
+      reason='callback_handoff_failed';
       await service.handoff({userId:locator.userId,provider,state,
         ...(denied?{error:true}:{code})});
       result=denied?'declined':'received';
+      reason=denied&&Object.hasOwn(OAUTH_RETURN_REASONS,url.searchParams.get('error')||'')?
+        url.searchParams.get('error'):'';
     }catch{
-      // Never return provider codes or detailed state errors to the browser.
+      // No OAuth state, code, user identity or untrusted provider text may
+      // appear in the URL, logs or browser response.
     }
-    return new Response(null,{status:303,headers:{Location:PREFIX+'/'+provider+'/callback?result='+result,
+    return new Response(null,{status:303,headers:{Location:PREFIX+'/'+provider+'/callback?result='+result+(reason?'&reason='+encodeURIComponent(reason):''),
       'Cache-Control':'no-store','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff'}});
   }
   // Browsers normally omit Origin for same-origin GET fetches. Accept only
