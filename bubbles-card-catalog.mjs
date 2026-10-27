@@ -35,6 +35,7 @@ export const cards=Object.freeze([
  app("radio-atwater-kent-20","Atwater Kent Model 20","/quanta-feed-card.html?card=radio-atwater-kent-20",'QuantaPhi',["atwater kent 20"]),
  app("robinhood","Robinhood Research Card","/quanta-feed-card.html?card=robinhood",'QuantaPhi',["robinhood research"]),
  app("chime","Chime Bank Card","/quanta-feed-card.html?card=chime",'QuantaPhi',["chime bank"]),
+ app("x-money","X Money · Signup & Infinity Money Lab","/x-money.html",'QuantaPhi',["x money","money card","infinity money","x money signup","x money quick card","website phone number"]),
  app("ebay","eBay Market Card","/quanta-feed-card.html?card=ebay",'QuantaPhi',["ebay marketplace"]),
  app("gold","Gold Market Charts","/quanta-feed-card.html?card=gold",'QuantaPhi',["gold spot price"]),
  app("silver","Silver Market Charts","/quanta-feed-card.html?card=silver",'QuantaPhi',["silver spot price"]),
