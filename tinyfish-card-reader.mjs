@@ -31,10 +31,21 @@ export function mountTinyFishCardReader(host,card){
  results.setAttribute('aria-live','polite');
  const status=el('p','qca-status','Public-site lookup uses TinyFish Search. Signed-in features stay on the provider website.');
  status.setAttribute('role','status');
- const visit=el('a','qca-button qca-source','Open the real '+clean(card.name||target.hostname));
+ const visit=el('a','qca-button qca-source','Open official website');
  visit.href=target.href;visit.target='_blank';visit.rel='noopener noreferrer';
  const actions=el('div','qca-controls');actions.append(visit);
- form.append(q,submit);panel.append(form,status,results,actions);
+ const toggle=el('button','qca-button qca-tinyfish-toggle','🌐 Browse site with TinyFish');
+ toggle.type='button';
+ form.append(q,submit);form.hidden=true;status.hidden=true;results.hidden=true;
+ // The input is inserted only after a deliberate tap. Ordinary cards must not
+ // sprout extra generic search bars merely by entering the carousel.
+ toggle.addEventListener('click',()=>{
+  if(!panel.contains(form)){panel.insertBefore(form,status);form.hidden=false;status.hidden=false;results.hidden=false;}
+  else{form.hidden=!form.hidden;status.hidden=form.hidden;results.hidden=form.hidden;}
+  toggle.textContent=form.hidden?'🌐 Browse site with TinyFish':'Close TinyFish browser';
+  if(!form.hidden)q.focus();
+ });
+ panel.append(toggle,status,results,actions);
  let controller=null;
  form.addEventListener('submit',async event=>{
   event.preventDefault();
