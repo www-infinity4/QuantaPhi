@@ -1,4 +1,4 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261026-starmaker1';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261027-infinity-launch1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -91,7 +91,7 @@ function starterCard(card){
  // Search cards are already complete with their own actual search fields.
  if(!['google','bing'].includes(card.id)){
   const actions=el('div','iqc-actions');
-  actions.append(link('Official '+card.name+' website',card.official));item.append(actions);
+  actions.append(link('Official '+card.name+' website',card.official));if(card.id==='starmaker'){const demo=link('Try & embed the mini card','/starmaker-embed.html','iqc-primary');demo.target='_self';actions.append(demo)}item.append(actions);
  }
  return item;
 }
@@ -124,7 +124,7 @@ function mountDetail(){
  host.append(el('p','iqc-kind','INFINITY 2026® · SOURCE EXPERIENCE'),createCardArtwork(card),el('h1','',card.name),el('h2','',card.feature));
  const tools=el('div','iqc-tools');mountCardTools(tools,card);host.append(tools);
  askAiTools(host,card);
- const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
+ const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio);const mini=link('Try portable interactive card ↗','/starmaker-embed.html','iqc-primary');mini.target='_self';actions.append(mini)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
  const about=el('section','iqc-feature');about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));host.append(about);
  installBubble(card);
 }
