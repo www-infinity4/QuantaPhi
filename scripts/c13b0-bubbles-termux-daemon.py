@@ -225,11 +225,21 @@ def selftest():
             raise AssertionError("cross-origin accepted")
         except HTTPError as error:
             assert error.code == 403
+        def dialogue(role, text):
+            post = Request(base + "/v1/dialogue/check", method="POST",
+                           data=json.dumps({"role": role, "text": text}).encode(),
+                           headers={"Content-Type": "application/json",
+                                    "Authorization": "Bearer " + server.owner_token})
+            with urlopen(post, timeout=2) as response:
+                return json.load(response)
+        assert dialogue("assistant", "Hello, what can I help with?")["speech_safe"]
+        assert not dialogue("assistant", '{"tool_calls":[{"function":{"name":"run"}}]}')["speech_safe"]
+        assert not dialogue("tool", "The request succeeded")["speech_safe"]
     finally:
         server.shutdown()
         runner.join(timeout=3)
         server.server_close()
-    print("PASS: local health, no remote model, bearer guard, roundtrip, browser-origin guard")
+    print("PASS: health, no model, owner bearer, roundtrip, origin guard, dialogue-syntax guard")
 
 
 if __name__ == "__main__":
