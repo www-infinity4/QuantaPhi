@@ -145,17 +145,48 @@ def login():
         print("Cloudflare error:", str(data.get("error") or "unspecified")[:70], flush=True)
         return 2
     user_code, device_code = data.get("user_code"), data.get("device_code")
-    verify = data.get("verification_uri") or APPROVAL_ENDPOINT
-    target = urllib.parse.urlparse(verify)
-    if (not isinstance(user_code, str) or not user_code or
-        not isinstance(device_code, str) or not device_code or
-        target.scheme != "https" or target.hostname != "dash.cloudflare.com" or
-        target.path != "/oauth2/device"):
-        print("Cloudflare returned an invalid verification URL or code. Aborted.")
+    verify = data.get("verification_uri")
+    complete = data.get("verification_uri_complete")
+    # Wrangler trusts HTTPS on exactly dash.cloudflare.com regardless of the
+    # authorization server's path. The previous C13b0 script incorrectly
+    # insisted on /oauth2/device and discarded otherwise valid device codes.
+    # Never print raw server JSON: it may contain the secret device_code.
+    if not isinstance(user_code, str) or not user_code or not isinstance(device_code, str) or not device_code:
+        print("Cloudflare device authorization response lacks a usable user_code or device_code.")
+        print("HTTP:", code, "user_code present:", bool(user_code),
+              "device_code present:", bool(device_code),
+              "verification_uri present:", bool(verify),
+              "response type:", "oauth-error" if data.get("error") else "unrecognized")
         return 3
+
+    def trusted_url(value):
+        if not isinstance(value, str) or not value:
+            return False
+        try:
+            url = urllib.parse.urlsplit(value)
+        except ValueError:
+            return False
+        return (url.scheme == "https" and url.hostname == "dash.cloudflare.com"
+                and url.username is None and url.password is None
+                and url.port in (None, 443))
+
+    if not trusted_url(verify) or (complete and not trusted_url(complete)):
+        print("Cloudflare returned an untrusted verification URL; refusing to open it.")
+        print("Required verification domain: dash.cloudflare.com")
+        return 3
+
     maximum = min(max(float(data.get("expires_in") or 300), 1), 300)
     interval = max(float(data.get("interval") or 5), 1)
-    approval_url = APPROVAL_ENDPOINT + "?" + urllib.parse.urlencode({"user_code": user_code})
+    if isinstance(complete, str) and complete:
+        approval_url = complete
+    else:
+        parts = urllib.parse.urlsplit(verify)
+        query = urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+        query = [(k, v) for k, v in query if k != "user_code"]
+        query.append(("user_code", user_code))
+        approval_url = urllib.parse.urlunsplit(
+            (parts.scheme, parts.netloc, parts.path,
+             urllib.parse.urlencode(query), parts.fragment))
     print("", flush=True)
     print("=== YOUR CLOUDFLARE APPROVAL CODE ===", flush=True)
     print(user_code, flush=True)
