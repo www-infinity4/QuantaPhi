@@ -26,3 +26,18 @@ A public TinyFish search does not send prompts into chatgpt.com or StarMaker pri
 - [ ] No plain Google fallback on ordinary cards
 - [ ] Signed-in ChatGPT and StarMaker per-user session support separately authorized, implemented and tested
 - [ ] Reviewed production deploy has independent timestamp/commit and user-visible test
+
+## Existing Brain/brand TinyFish integration (important)
+The 116 accepted brand cards already have an owner-authorized Bubbles/TinyFish website-action interface through quick-card-tinyfish-actions.mjs and the Brain endpoint /work/quick-card-browser. That source code previously required a direct TINYFISH_API_KEY on infinity-brain-clock; live settings instead put the API key on continuity-session-coordinator and a TINYFISH_BROKER service binding on Brain. This PR updates the Brain's quick-card-browser.mjs to use that binding with TINYFISH_BRIDGE_TOKEN. The existing direct-key path remains for isolated tests.
+
+To activate this missing server-side link, import handlePrivateTinyfishBridge from workers/continuity-session-coordinator/tinyfish-agent-bridge.mjs into the EXISTING coordinator Worker and call it before its GET-only switch. Do this as well as handleTinyFishCardRequest; the **private Brain bridge** is distinct from the **public read-only TinyFish Search relay**. The private route requires the shared secret and allows only GET run status or POST read-only TinyFish Web Agent runs. No browser prompt, account cookie, or private profile passes from a public card to Brain. Release coordinator before Brain, then source website, and verify no downtime.
+
+The Brain browser still uses its existing owner session check and 16 read actions/day budget. Accepted brands can run fresh public reads without account profiles; ChatGPT, StarMaker, Gemini and other authenticated sites still require a separately approved, per-user isolated sign-in session. The live Brain has no TINYFISH_PROFILE_ID binding. Never set a global private user account profile for public visitors or claim that ChatGPT card prompts produce authentic chatgpt.com replies without a verified provider-supported authorization path.
+
+## Two coordinator route registrations
+At the beginning of coordinator fetch():
+1. const privateResponse = await handlePrivateTinyfishBridge(request,env); if (privateResponse) return privateResponse;
+2. const publicResponse = await handleTinyFishCardRequest(request,env); if (publicResponse) return publicResponse;
+3. Continue the existing GET-only public monitoring handler unchanged.
+
+Run test/tinyfish-agent-bridge.test.mjs and test/tinyfish-card-reader.test.mjs plus existing Brain/monitoring suites before staging. The private bridge returns no CORS origin wildcard and is inaccessible without the secret shared by both Workers.
