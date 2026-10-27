@@ -163,7 +163,7 @@ form.addEventListener('submit',async e=>{
  for(const [k,v] of Object.entries(extraInputs))item[k]=v.value.trim();
  if(item.quantity&&!/^[1-9]\d{0,3}$/.test(item.quantity)){status.textContent='Quantity must be a whole number from 1 to 9999.';return}
  if(item.priceLabel&&!/^\$?\d+(?:\.\d{1,2})?$/.test(item.priceLabel)){status.textContent='Enter a numeric asking price such as 45 or $45.00.';return}
- if(item.priceLabel&&!item.priceLabel.startsWith('
+ if(item.priceLabel&&item.priceLabel.charAt(0)!=='\x24')item.priceLabel='\x24'+item.priceLabel;
  if(!item.merchant)item.merchant='Anonymous seller';
  item.mediaIds=sellerStudio?.ids()||[];
  if((!item.url&&!item.mediaIds.length)||(item.url&&!safe(item.url))||(item.imageUrl&&!safe(item.imageUrl))){
