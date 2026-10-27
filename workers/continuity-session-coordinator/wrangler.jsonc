@@ -1,0 +1,20 @@
+{
+  "name": "continuity-session-coordinator",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-27",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {"enabled": true},
+  "vars": {"CYCLE_ENABLED": "false"},
+  "triggers": {"crons": ["*/5 * * * *"]},
+  "d1_databases": [{
+    "binding": "WORK_DB", "database_name": "rogers-consensus",
+    "database_id": "4aa6a463-02c6-48c3-854f-a87c0ca5f41c"
+  }],
+  "services": [
+    {"binding": "SITE", "service": "quantaphi-site"},
+    {"binding": "BROWSER", "service": "bubbles-cloud-browser"},
+    {"binding": "TOOLS", "service": "bubbles-tools"},
+    {"binding": "CONNECTIONS", "service": "bubbles-connections"},
+    {"binding": "TRAFFIC", "service": "quantaphi-site-traffic"}
+  ]
+}
