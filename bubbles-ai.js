@@ -1820,6 +1820,11 @@ async function refreshConversationFolders(){
 }
 async function openConversation(id){
  if(busy){chatsMessage.textContent='Finish the current reply before changing conversations.';return;}
+ // Do not carry an unsent draft into another conversation or discard an image.
+ if(String(input.value||'').trim() || pendingImage || pendingImages.length || photoInput.files?.length){
+  chatsMessage.textContent='Your current message or image is unsent. Send or remove it before switching conversations.';
+  return;
+ }
  if(!threadIndex.some(item=>item.id===id))return;
  if(keepChat)saveThread();
  let next=keepChat?readThread(id):[];
@@ -1849,6 +1854,11 @@ async function openConversation(id){
 async function startConversation({automatic=false}={}){
  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length){
   chatsMessage.textContent='Current reply or voice request must finish before starting a fresh chat.';
+  return false;
+ }
+ // A timer/reopen or New chat must not overwrite a composed owner instruction.
+ if(String(input.value||'').trim() || pendingImage || pendingImages.length || photoInput.files?.length){
+  chatsMessage.textContent='Your message or image is unsent. Send or remove it before starting another chat.';
   return false;
  }
  if(keepChat&&messages.length)saveThread();
