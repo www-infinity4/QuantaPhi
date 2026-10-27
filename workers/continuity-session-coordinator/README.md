@@ -15,6 +15,14 @@ not another work queue or identity store. Seven days of receipts are retained.
 Responses never contain upstream bodies, private work, credentials or conversation
 archives. Failing checks and missing authenticated adapters remain explicit.
 
+Public GitHub observations are reused for 15 minutes to reduce request load.
+Each saved check retains its original `observedAt` time and `sourceState`; reused
+checks have state `cached`. If a refresh fails, the prior observation can be shown
+for at most one hour as `stale`, with the actual refresh failure. Its timestamp is
+never renewed by reuse. A cached/stale CI result cannot establish current-head CI,
+lift a hold, authorize execution or prove a release. Site/service health and traffic
+are still read on every five-minute cycle.
+
 `GET /health` describes this monitor. `GET /status` returns the latest completed
 cycle and its original check time. It returns 503 after two missed intervals;
 refreshing either URL cannot run a cycle or extend a grant. A checked health URL

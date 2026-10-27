@@ -19,6 +19,7 @@ function database() {
         return {success: true, meta: {changes: Number(result.changes)}};
       },
       async first() {return sql.prepare(query).get(...params) || null;},
+      async all() {return {success: true, results: sql.prepare(query).all(...params)};},
     };
     return statement;
   }};
@@ -238,4 +239,53 @@ test('retention only prunes its own old telemetry, preserving fresh cycles', asy
     const rows = d.sql.prepare('SELECT scheduled_for FROM continuity_cycle_receipts').all();
     assert.deepEqual(rows.map(x => x.scheduled_for), [AT]);
   } finally {d.close();}
+});
+
+test('source cache reduces calls, preserves observation age and marks failed refreshes stale', async () => {
+  const d = database(), f = fixture();
+  try {
+    f.env.WORK_DB = d.db;
+    let requests = 0;
+    const fetcher = (url, opts) => {requests++; return f.fetcher(url, opts);};
+    const first = await runCycle(f.env, AT, {now: () => f.at, fetcher, fence: 'first'});
+    assert.equal(requests, 4);
+    const observedAt = first.report.tracks.find(t => t.id === 'build').observedAt;
+    let current = await runCycle(f.env, AT + INTERVAL, {
+      now: () => f.at + INTERVAL, fetcher, fence: 'second',
+    });
+    assert.equal(requests, 4, 'a five-minute cycle must not repeat the source requests');
+    assert.equal(current.report.tracks.find(t => t.id === 'build').state, 'cached');
+    assert.equal(current.report.tracks.find(t => t.id === 'build').observedAt, observedAt);
+    const denied = async () => {requests++; return new Response('restricted', {status: 403});};
+    current = await runCycle(f.env, AT + 3 * INTERVAL, {
+      now: () => f.at + 3 * INTERVAL, fetcher: denied, fence: 'refresh',
+    });
+    const stale = current.report.tracks.find(t => t.id === 'build');
+    assert.equal(stale.state, 'stale');
+    assert.equal(stale.observedAt, observedAt, 'reuse cannot renew verification time');
+    assert.equal(stale.refreshError, 'upstream_http_403');
+    assert.equal(stale.sourceState, 'checked');
+    assert.match(stale.detail, /Current read failed/);
+    const hold = current.report.tracks.find(t => t.id === 'integra');
+    assert.equal(hold.sourceState, 'blocked');
+    assert.equal(hold.executionAllowed, false);
+    current = await runCycle(f.env, AT + 13 * INTERVAL, {
+      now: () => f.at + 13 * INTERVAL, fetcher: denied, fence: 'expired',
+    });
+    assert.equal(current.report.tracks.find(t => t.id === 'build').state, 'unreachable');
+    assert.equal(current.report.tracks.find(t => t.id === 'build').ci, undefined);
+  } finally {d.close();}
+});
+
+test('future-dated or wrong-resource cache entries cannot suppress a real source read', async () => {
+  const f = fixture(); let requests = 0;
+  const bad = {build: {id: 'build', url: 'https://github.com/other/repo/pull/1144',
+    sourceState: 'checked', observedAt: new Date(f.at).toISOString()}};
+  let report = await observe(f.env, (url, opts) => {requests++; return f.fetcher(url, opts);}, f.at, 1, bad);
+  assert.equal(report.tracks.find(t => t.id === 'build').state, 'checked');
+  assert.equal(requests, 4);
+  bad.build.url = 'https://github.com/www-infinity4/QuantaPhi/pull/1144';
+  bad.build.observedAt = new Date(f.at + INTERVAL).toISOString();
+  report = await observe(f.env, async () => new Response('denied', {status: 403}), f.at, 2, bad);
+  assert.equal(report.tracks.find(t => t.id === 'build').state, 'unreachable');
 });

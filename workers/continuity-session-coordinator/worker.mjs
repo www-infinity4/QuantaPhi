@@ -8,6 +8,13 @@ const RETENTION = 7 * 86_400_000;
 const SHA = /^[a-f0-9]{40}$/;
 const API = 'https://api.github.com/repos/www-infinity4/QuantaPhi';
 const PROTOCOL = 'continuity-cycle-v1';
+const SOURCE_TTL = 15 * 60_000;
+const SOURCE_MAX_AGE = 60 * 60_000;
+const SOURCE_URLS = Object.freeze({
+  history: 'https://github.com/www-infinity4/QuantaPhi',
+  build: 'https://github.com/www-infinity4/QuantaPhi/pull/1144',
+  integra: 'https://github.com/www-infinity4/QuantaPhi/issues/525',
+});
 export const TRACKS = Object.freeze([
   ['coordinator', 'Coordinator'], ['history', 'Research & history'],
   ['design', 'Product & design'], ['build', 'Build & integration'],
@@ -109,10 +116,52 @@ function binding(env, name) {
   return (url, options) => env[name].fetch(url, options);
 }
 
-export async function observe(env, fetcher, at, cycleId) {
+// This cache contains public source observations only. It cannot authorize work
+// or turn an older CI result into current-head/release acceptance.
+export async function sourceCache(db, at) {
+  const cache = {};
+  try {
+    const rows = await db.prepare(`SELECT report_json FROM continuity_cycle_receipts
+      WHERE state='complete' ORDER BY cycle_id DESC LIMIT 13`).all();
+    for (const row of rows.results || []) {
+      let report; try {report = JSON.parse(row.report_json);} catch {continue;}
+      if (report?.protocol !== PROTOCOL || !Array.isArray(report.tracks)) continue;
+      for (const t of report.tracks) {
+        if (!Object.hasOwn(SOURCE_URLS, t.id) || cache[t.id] || t.url !== SOURCE_URLS[t.id]) continue;
+        const sourceState = t.sourceState || t.state;
+        const stamp = Date.parse(t.observedAt || report.checkedAt);
+        if (!['checked', 'blocked'].includes(sourceState) || !Number.isFinite(stamp) ||
+            stamp > at || at - stamp > SOURCE_MAX_AGE) continue;
+        cache[t.id] = {...t, sourceState, sourceDetail: t.sourceDetail || t.detail,
+          observedAt: new Date(stamp).toISOString()};
+      }
+    }
+  } catch {/* Missing history never blocks fresh, bounded source reads. */}
+  return cache;
+}
+
+function savedSource(prior, state, error) {
+  return {...prior, state, cached: true,
+    detail: (error ? 'Current read failed (' + error + '). ' : '') +
+      'Saved source check from ' + prior.observedAt + '. ' + prior.sourceDetail,
+    refreshError: error || null};
+}
+
+export async function observe(env, fetcher, at, cycleId, cache = {}) {
   const checkedAt = new Date(at).toISOString();
+  async function source(id, action) {
+    const prior = cache[id];
+    const age = at - Date.parse(prior?.observedAt);
+    const valid = prior && prior.url === SOURCE_URLS[id] &&
+      ['checked', 'blocked'].includes(prior.sourceState) &&
+      Number.isFinite(age) && age >= 0 && age <= SOURCE_MAX_AGE;
+    if (valid && age < SOURCE_TTL) return savedSource(prior, 'cached');
+    const current = await inspect(id, action);
+    if (current.state !== 'unreachable') return {...current, observedAt: checkedAt};
+    return valid ? savedSource(prior, 'stale', current.detail) : current;
+  }
   const results = await Promise.all([
-    inspect('history', async () => {
+    source('history', async () => {
       const doc = await read(fetcher, API + '/git/ref/heads/main');
       if (!SHA.test(doc?.object?.sha) || doc.ref !== 'refs/heads/main') throw Error('schema_invalid');
       return track('history', 'checked', 'Current public main revision read', {
@@ -127,7 +176,7 @@ export async function observe(env, fetcher, at, cycleId) {
           : 'Home HTML has no verified mobile viewport declaration',
         {url: 'https://quantaphi.org/', visualAcceptance: false});
     }),
-    inspect('build', async () => {
+    source('build', async () => {
       const pr = await read(fetcher, API + '/pulls/1144');
       if (pr?.number !== 1144 || !SHA.test(pr?.head?.sha) || !['open', 'closed'].includes(pr.state))
         throw Error('schema_invalid');
@@ -155,7 +204,7 @@ export async function observe(env, fetcher, at, cycleId) {
         draft: pr.draft === true, merged: Boolean(pr.merged_at), deploymentVerified: false,
       });
     }),
-    inspect('integra', async () => {
+    source('integra', async () => {
       const issue = await read(fetcher, API + '/issues/525');
       if (issue?.number !== 525 || !['open', 'closed'].includes(issue.state)) throw Error('schema_invalid');
       return track('integra', 'blocked', issue.state === 'open'
@@ -218,7 +267,8 @@ export async function runCycle(env, scheduledFor, {now = Date.now, fetcher = fet
   const claim = await claimCycle(env.WORK_DB, scheduledFor, now(), fence);
   if (!claim.claimed) return {started: false, reason: 'cycle_already_claimed_or_complete'};
   try {
-    const report = await observe(env, fetcher, now(), claim.id);
+    const cache = await sourceCache(env.WORK_DB, now());
+    const report = await observe(env, fetcher, now(), claim.id, cache);
     const committed = await finishCycle(env.WORK_DB, claim, report, now());
     if (!committed) throw Error('cycle_lease_lost');
     // Retain seven days of public monitoring receipts. Never touch work_tickets or grants.
@@ -227,7 +277,7 @@ export async function runCycle(env, scheduledFor, {now = Date.now, fetcher = fet
         .bind(now() - RETENTION).run();
     } catch {console.warn(JSON.stringify({event: PROTOCOL, retention: 'deferred'}));}
     console.log(JSON.stringify({event: PROTOCOL, cycleId: claim.id, tracks: report.tracks.length,
-      attention: report.tracks.filter(t => ['attention', 'unreachable'].includes(t.state)).map(t => t.id)}));
+      attention: report.tracks.filter(t => ['attention', 'unreachable', 'stale'].includes(t.state)).map(t => t.id)}));
     return {started: true, committed: true, report};
   } catch {
     await finishCycle(env.WORK_DB, claim, {protocol: PROTOCOL, error: 'cycle_failed'}, now(), 'failed');
