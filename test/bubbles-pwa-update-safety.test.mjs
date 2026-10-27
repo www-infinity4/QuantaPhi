@@ -189,3 +189,71 @@ test('Bubbles PWA release manifest and cache-busted entry points match the updat
     }
   }
 });
+
+
+async function simulateAutomaticSiteRevision({remote, version, build, canPrepare = true}) {
+  const source = fs.readFileSync('bubbles-ai.js', 'utf8');
+  const start = source.indexOf('const siteScript=');
+  const end = source.indexOf('window.QuantaBubbles={', start);
+  assert.ok(start >= 0 && end > start, 'automatic revision watcher must be present');
+  const watcher = source.slice(start, end);
+  const events = {requests: [], preparations: 0, reloads: 0};
+  const location = {
+    origin: 'https://quantaphi.org', href: 'https://quantaphi.org/bubbles.html',
+    reload() { events.reloads++; }
+  };
+  const document = {querySelectorAll() {
+    return [{src: 'https://quantaphi.org/bubbles-ai.js?v=20261027-overnight2'}];
+  }};
+  const window = {QuantaBubbles: {prepareSiteUpdateReload() {
+    events.preparations++;
+    return canPrepare;
+  }}};
+  const context = {
+    document, window, location, URL, Date, embedded: false,
+    bubblesFetch: async (url, options) => {
+      events.requests.push({url, cache: options.cache});
+      if (String(url).includes('bubbles-app-version.json')) {
+        return {ok: true, json: async () => ({version, build})};
+      }
+      return {ok: true, text: async () =>
+        '<script src="/bubbles-ai.js?v=' + remote + '"></script>'};
+    }
+  };
+  vm.runInNewContext(watcher + '\\nglobalThis.runRevisionCheck = checkForSiteUpdate;', context);
+  const accepted = await context.runRevisionCheck();
+  return {accepted, events};
+}
+
+test('Bubbles automatic HTML revision watcher refuses older or mismatched release manifests', async () => {
+  for (const scenario of [
+    {remote: '20261026-ui-settings2', version: '20261026-ui-settings2', build: 2026102602},
+    {remote: '20261028-overnight1', version: '20261029-overnight1', build: 2026102901},
+    {remote: '20261028-overnight1', version: '20261028-overnight1', build: 2026102702}
+  ]) {
+    const {accepted, events} = await simulateAutomaticSiteRevision(scenario);
+    assert.equal(accepted, false, 'stale or unverified HTML must not trigger a reload');
+    assert.equal(events.preparations, 0, 'conversation checkpoint must not be touched');
+    assert.equal(events.reloads, 0, 'automatic reload must not navigate');
+    assert.equal(events.requests.length, 2, 'HTML pin must be verified against fresh manifest');
+    assert.equal(events.requests[1].cache, 'no-store');
+  }
+});
+
+test('Bubbles automatic HTML revision watcher accepts only verified newer build and safe checkpoint', async () => {
+  const scenario = {remote: '20261028-overnight1', version: '20261028-overnight1', build: 2026102801};
+  const allowed = await simulateAutomaticSiteRevision(scenario);
+  assert.equal(allowed.accepted, true);
+  assert.equal(allowed.events.preparations, 1);
+  assert.equal(allowed.events.reloads, 1);
+  const blocked = await simulateAutomaticSiteRevision({...scenario, canPrepare: false});
+  assert.equal(blocked.accepted, false);
+  assert.equal(blocked.events.preparations, 1);
+  assert.equal(blocked.events.reloads, 0);
+});
+
+test('Bubbles HTML revision guard uses the same current build as its release manifest', () => {
+  const source = fs.readFileSync('bubbles-ai.js', 'utf8');
+  const manifest = JSON.parse(fs.readFileSync('bubbles-app-version.json', 'utf8'));
+  assert.ok(source.includes('const CURRENT_SITE_BUILD=' + manifest.build + ';'));
+});
