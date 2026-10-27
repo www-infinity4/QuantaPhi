@@ -75,6 +75,8 @@
   // A PWA cannot silently scan or patch the user's computer or Chrome itself.
   // Poll the first-party release manifest only while Bubbles is running/visible.
   const CURRENT_RELEASE = '20261027-overnight2';
+  // A monotonic build number prevents stale CDN manifests offering a downgrade.
+  const CURRENT_BUILD = 2026102702;
   const updateSection = document.createElement('div');
   updateSection.className = 'bubbles-update-controls';
   const updateButton = document.createElement('button');
@@ -102,8 +104,12 @@
       if (!response.ok) throw Error('manifest_unavailable');
       const release = await response.json();
       if (typeof release.version !== 'string' || !/^[a-zA-Z0-9_-]{5,64}$/.test(release.version)) throw Error('invalid_release');
+      // A different version with the same build, a matching version with a
+      // different build, or an older build is not a verified update. Fail closed.
+      if (!Number.isSafeInteger(release.build) || release.build < CURRENT_BUILD ||
+          (release.build === CURRENT_BUILD) !== (release.version === CURRENT_RELEASE)) throw Error('invalid_or_older_release');
       lastCheck = Date.now();
-      latest = release.version !== CURRENT_RELEASE ? release.version : '';
+      latest = release.build > CURRENT_BUILD ? release.version : '';
       updateButton.dataset.update = latest ? 'ready' : 'current';
       updateButton.textContent = latest ? 'Update Bubbles' : 'Check for updates';
       updateMessage.textContent = latest
