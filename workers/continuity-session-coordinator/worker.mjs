@@ -10,6 +10,9 @@ const API = 'https://api.github.com/repos/www-infinity4/QuantaPhi';
 const PROTOCOL = 'continuity-cycle-v1';
 const SOURCE_TTL = 15 * 60_000;
 const SOURCE_MAX_AGE = 60 * 60_000;
+// Prior independently verified PR #1144 workflow inventory had 37 distinct workflows.
+// A one-run GitHub API response is not proof of full current-head CI coverage.
+const PR1144_WORKFLOW_FLOOR = 37;
 const SOURCE_URLS = Object.freeze({
   history: 'https://github.com/www-infinity4/QuantaPhi',
   build: 'https://github.com/www-infinity4/QuantaPhi/pull/1144',
@@ -217,13 +220,16 @@ export async function observe(env, fetcher, at, cycleId, cache = {}) {
       const success = values.filter(r => r.status === 'completed' && r.conclusion === 'success').length;
       const failed = values.filter(r => r.status === 'completed' && !['success', 'skipped', 'neutral'].includes(r.conclusion)).length;
       const pending = values.filter(r => r.status !== 'completed').length;
-      const coverageComplete = doc.total_count <= doc.workflow_runs.length;
-      const ciPassed = coverageComplete && values.length > 0 && success === values.length;
+      const responseComplete = doc.total_count <= doc.workflow_runs.length;
+      const coverageComplete = responseComplete && values.length >= PR1144_WORKFLOW_FLOOR;
+      const ciPassed = coverageComplete && success === values.length;
       return track('build', failed ? 'attention' : ciPassed ? 'checked' : 'blocked',
-        'PR #1144: ' + success + '/' + values.length + ' latest workflows successful; ' +
+        'PR #1144: ' + success + '/' + values.length + ' observed workflows successful' +
+          (coverageComplete ? '' : '; CI inventory incomplete (minimum ' + PR1144_WORKFLOW_FLOOR + ' distinct workflows required)') + '; ' +
           (pr.draft ? 'draft' : pr.merged_at ? 'merged' : pr.state) + '; production acceptance is separate', {
         url: 'https://github.com/www-infinity4/QuantaPhi/pull/1144', sourceRevision: pr.head.sha,
-        ci: {success, failed, pending, observed: values.length, coverageComplete, passed: ciPassed},
+        ci: {success, failed, pending, observed: values.length, expectedMinimum: PR1144_WORKFLOW_FLOOR,
+          responseComplete, coverageComplete, passed: ciPassed},
         draft: pr.draft === true, merged: Boolean(pr.merged_at), deploymentVerified: false,
       });
     }),
