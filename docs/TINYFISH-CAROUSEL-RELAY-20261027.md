@@ -41,3 +41,8 @@ At the beginning of coordinator fetch():
 3. Continue the existing GET-only public monitoring handler unchanged.
 
 Run test/tinyfish-agent-bridge.test.mjs and test/tinyfish-card-reader.test.mjs plus existing Brain/monitoring suites before staging. The private bridge returns no CORS origin wildcard and is inaccessible without the secret shared by both Workers.
+
+## Bundling, rollout and proof
+The Brain production entry is workers/infinity-brain-clock/worker.js, which is a generated bundle. Editing quick-card-browser.mjs alone does NOT guarantee the running Worker contains this change. The guarded build/staging workflow must regenerate the bundled entry from the source modules, test its exact commit, and prove its deployed /work/quick-card-browser capabilities. Do not overwrite the running bundle directly or accidentally discard unrelated Worker code.
+
+Compare existing TINYFISH_BRIDGE_TOKEN secrets by a safe authenticated handshake, **not** by logging their values. Production activation is blocked if the coordinator rejects the Brain's shared secret. Deployed coordinator must return a real provider run receipt before calling a brand action operational. The public card search and private owner-agent bridge are independent services with separate limits and authorization.
