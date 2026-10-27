@@ -60,7 +60,7 @@ test('status requires a mapped brand and a run id, and returns bounded private r
 test('oversize, provider redirects and malformed provider receipts are rejected',async()=>{
  let calls=0;const fetcher=async()=>{calls++;return Response.redirect('https://example.com/',302)};
  const big={...start,query:'x'.repeat(2400)};
- assert.equal((await handlePrivateBroker(req(big),env,fetcher)).status,413);
+ assert.equal((await handlePrivateBroker(req(big,{'Content-Length':'3000'}),env,fetcher)).status,413);
  assert.equal(calls,0);
  assert.equal((await handlePrivateBroker(req(),env,fetcher)).status,502);
  const malformed=async()=>Response.json({unexpected:true});
