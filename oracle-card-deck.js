@@ -86,7 +86,8 @@ let active=null,expanded=false;
 let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
-let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantConnected=false;
+let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
+const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
 let feedState=null,proposed=null;
 const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
@@ -122,9 +123,8 @@ function registerSourceCards(){
   // accepted brands receive their requested priority over ordinary brands.
   const requested=entries.find(e=>e.id===spotlightRequested||e.feedId===spotlightRequested);
   if(!expanded&&!viewerTouched&&requested&&available(requested))show(requested,false);
-  else if(!expanded&&!viewerTouched&&!spotlightRequested&&!active?.node?.matches('.iac-card')&&
-   entries.some(e=>available(e)&&e.node.matches('.iac-card')))show(chooseOpening(),false);
   else if(!active&&!expanded)start();
+  // A newly loaded brand must not steal focus from an active website card.
  }
 }
 window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
@@ -147,11 +147,16 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||''}));}
+function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
  updateInventory();
+ for(const button of host.querySelectorAll('[data-oracle-family]')){
+  const count=eligible().filter(e=>cardFamily(e)===button.dataset.oracleFamily).length;
+  button.disabled=count===0;
+  const total=button.querySelector('[data-family-count]');if(total)total.textContent=String(count);
+ }
  tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
  if(follow){
   const saved=Boolean(active&&feedState?.following.includes(active.feedId));
@@ -209,13 +214,18 @@ function predict(){
   const tour=directionApi.nextDeckCycle(
    present.filter(c=>eligibleIds.has(c.id)),active?.feedId||'',seenByTab[selectedTab]);
   seenByTab[selectedTab]=tour.seen;
-  const pick=directionApi.nextFeedDirection(tour.cards,selectedTab,context,active?.feedId||'');
+  const balanced=familyApi?.selectNextFamilyPool(tour.cards,cardFamily(active))||tour.cards;
+  const pick=directionApi.nextFeedDirection(balanced,selectedTab,context,active?.feedId||'');
   proposed=possible.find(e=>e.feedId===pick.card?.id)||null;
   reason.textContent=proposed?(proposed.title+' · '+pick.reason+
    ' · '+tour.remaining+' other cards in this round'):
    'Use a card to help choose the next useful action.';
  }else{
-  proposed=possible.filter(x=>x!==active).sort((a,b)=>a.count-b.count)[0]||possible[0];
+  const rest=possible.filter(x=>x!==active);
+  const groups=['accepted','website','original'],pos=groups.indexOf(cardFamily(active));
+  const nextFamily=groups[(pos+1)%groups.length];
+  proposed=rest.filter(e=>cardFamily(e)===nextFamily).sort((a,b)=>a.count-b.count)[0]||
+   rest.sort((a,b)=>a.count-b.count)[0]||possible[0];
   reason.textContent=proposed?'Next: '+proposed.title:'';
  }
  next.disabled=possible.length<2;
@@ -271,8 +281,9 @@ window.addEventListener('quantaphi:feed-updated',e=>{
  updateTabs();predict();
 });
 Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
- import('/quanta-feed-quants.mjs?v=20261024-directions1')]).then(([r,q])=>{
- directionApi=r;quantApi=q;feedState=readDirections();updateTabs();
+ import('/quanta-feed-quants.mjs?v=20261024-directions1'),
+ import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
+ directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
  if(selectedTab==='for-you')void connectQuant();
  predict();
 }).catch(()=>{reason.textContent='Card directions are not available; original interactive cards are still usable.'});
@@ -384,6 +395,25 @@ for(const shortcut of document.querySelectorAll('[data-oracle-spotlight]')){
   show(entry);host.scrollIntoView?.({block:'start',behavior:'smooth'});
  });
 }
+// Direct group shortcuts make all ready website pages reachable in one tap.
+for(const button of host.querySelectorAll('[data-oracle-family]')){
+ button.addEventListener('click',()=>{
+  const family=button.dataset.oracleFamily;
+  const matches=eligible().filter(e=>cardFamily(e)===family&&e!==active);
+  if(!matches.length){status.textContent='No other ready cards in this group. Try Public or choose a card.';return}
+  const unseen=matches.filter(e=>!seenByTab[selectedTab].has(e.feedId));
+  const pool=unseen.length?unseen:matches;
+  const chosen=[...pool].sort((a,b)=>(feedState?.viewed?.[a.feedId]||0)-
+   (feedState?.viewed?.[b.feedId]||0)||entries.indexOf(a)-entries.indexOf(b))[0];
+  viewerTouched=true;selectionVersion++;
+  if(expanded){
+   expanded=false;document.body.classList.remove('oracle-shelf-open');
+   scroll.setAttribute('aria-expanded','false');
+   scroll.textContent='↓ Scroll interactive cards / widgets';
+  }
+  show(chosen);host.scrollIntoView?.({block:'start',behavior:'smooth'});
+ });
+}
 next.addEventListener('click',()=>advance(1));
 prev.addEventListener('click',()=>advance(-1));
 scroll.addEventListener('click',()=>{
@@ -416,26 +446,29 @@ document.body.classList.add('oracle-card-deck-active');
 // Every ready card competes for first placement. The source/museum/product
 // categories and both Cardone cards have no privileged opening positions.
 function chooseOpening(){
- const ready=eligible();
- if(!ready.length)return null;
+ const ready=eligible();if(!ready.length)return null;
+ // Each visit starts with another family; 116 accepted brands no longer monopolize
+ // the starting slot. Preserve direct-link spotlight selection in start().
+ if(openingCursor===null){
+  try{
+   const saved=Number(localStorage.getItem('oracle:opening-rotation:v2'));
+   openingCursor=Number.isSafeInteger(saved)&&saved>=0?saved:0;
+   localStorage.setItem('oracle:opening-rotation:v2',String((openingCursor+1)%1000000));
+  }catch{openingCursor=0}
+ }
+ const cards=ready.map(e=>({...e,family:cardFamily(e)}));
+ const opening=familyApi?.openingFamilyPool(cards,openingCursor)||
+  cards.filter(c=>c.family===['accepted','website','original'][openingCursor%3]);
+ const pool=opening.length?opening:cards;
  if(directionApi&&feedState){
-  const catalog=liveCatalog(),context={...feedState,catalog,quantScores:quantWeights};
-  const selected=directionApi.nextFeedDirection(catalog,selectedTab,context,'').card;
+  const catalog=liveCatalog(),ids=new Set(pool.map(c=>c.feedId));
+  const context={...feedState,catalog,quantScores:quantWeights};
+  const selected=directionApi.nextFeedDirection(catalog.filter(c=>ids.has(c.id)),
+   selectedTab,context,'').card;
   const ranked=ready.find(e=>e.feedId===selected?.id);
   if(ranked)return ranked;
  }
- // Before the ranking module loads, rotate across sessions rather than
- // exposing one permanent first card. Store no raw searches or location.
- if(openingCursor===null){
-  try{
-   const saved=Number(localStorage.getItem('oracle:opening-rotation:v1'));
-   openingCursor=Number.isSafeInteger(saved)&&saved>=0?saved:0;
-   localStorage.setItem('oracle:opening-rotation:v1',String((openingCursor+1)%1000000));
-  }catch{openingCursor=0}
- }
- const accepted=ready.filter(e=>e.node.matches('.iac-card[data-infinity-accepted="true"]'));
- const pool=accepted.length?accepted:ready;
- return pool[openingCursor%pool.length];
+ return pool[openingCursor%pool.length]||ready[0];
 }
 function start(){if(!active&&!expanded){
  const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
