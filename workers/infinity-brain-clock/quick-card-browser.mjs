@@ -7,7 +7,11 @@ const TINYFISH='https://agent.tinyfish.ai';
 const uuid=v=>/^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(v||'');
 const fail=(error,status=400)=>({httpStatus:status,result:{ok:false,error,executed:false}});
 const success=(obj,status=200)=>({httpStatus:status,result:{ok:true,...obj}});
-const configured=env=>typeof env.TINYFISH_API_KEY==='string'&&env.TINYFISH_API_KEY.length>12;
+const brokerEnabled=env=>env?.TINYFISH_BROKER_ENABLED==='true';
+const brokerConfigured=env=>brokerEnabled(env)&&typeof env.TINYFISH_BRIDGE_TOKEN==='string'&&
+ env.TINYFISH_BRIDGE_TOKEN.length>=20&&typeof env.TINYFISH_BROKER?.fetch==='function';
+const configured=env=>brokerEnabled(env)?brokerConfigured(env):
+ typeof env.TINYFISH_API_KEY==='string'&&env.TINYFISH_API_KEY.length>12;
 const profileConfigured=env=>typeof env.TINYFISH_PROFILE_ID==='string'&&/^prof_[a-zA-Z0-9]{8,80}$/.test(env.TINYFISH_PROFILE_ID);
 const summary=job=>({jobId:job.jobId,cardId:job.cardId,action:job.action,state:job.state,
  createdAt:job.createdAt,requestId:job.requestId,
@@ -42,6 +46,18 @@ async function tinyfish(env,fetcher,path,body){
  if(!r.ok){await r.body?.cancel();throw Error('tinyfish_http_'+r.status)}
  return readBoundedJson(r);
 }
+// Explicitly opt in only after a reviewed private service binding and separately
+// provisioned broker secret exist. Never silently fall back to a direct paid API.
+async function privateBroker(env,command){
+ const r=await env.TINYFISH_BROKER.fetch('https://broker.internal/internal/quick-card-browser',{
+  method:'POST',headers:{'Content-Type':'application/json',
+   'X-QuantaPhi-Broker-Token':env.TINYFISH_BRIDGE_TOKEN},
+  body:JSON.stringify(command),redirect:'manual',signal:AbortSignal.timeout(20000)});
+ if(!r.ok){await r.body?.cancel();throw Error('private_broker_http_'+r.status)}
+ const receipt=await readBoundedJson(r,30000);
+ if(receipt?.ok!==true)throw Error('private_broker_receipt_invalid');
+ return receipt;
+}
 const k=id=>'quick-card-browser:job:'+id;
 function reportFor(raw,cardId){
  // Extract a strictly bounded data summary, not arbitrary provider instructions.
@@ -70,8 +86,8 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
  try{validateQuickCardBrowser(body)}catch(e){return fail(e.message)}
  if(body.action==='capabilities')
   return success({ownerOnly:true,provider:'TinyFish Web Agent',configured:configured(env),
-   profileConfigured:profileConfigured(env),publicBrandReads:true,
-   supported:Object.entries(CARD_SITES).map(([id,info])=>({id,name:info.name,kind:info.kind,
+   profileConfigured:!brokerEnabled(env)&&profileConfigured(env),publicBrandReads:true,
+   supported:Object.entries(CARD_SITES).filter(([,info])=>!brokerEnabled(env)||info.kind==='durable').map(([id,info])=>({id,name:info.name,kind:info.kind,
     actions:info.kind==='durable'?info.mappings.map(x=>x.id):[]})),
    note:'Configured means backend secret and profile settings exist, not proof of browser login or successful navigation.'});
  if(body.action==='checkout'){
@@ -80,6 +96,7 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
  }
  if(body.action==='start'){
   const plan=planCardBrowserAction({cardId:body.cardId,action:body.kind,query:body.query});
+  if(brokerEnabled(env)&&plan.useProfile)return fail('private_broker_public_brand_only',403);
   if(!configured(env))return fail('tinyfish_backend_not_configured',503);
   if(plan.useProfile&&!profileConfigured(env))return fail('tinyfish_profile_not_configured',503);
   const previousId=await storage.get('quick-card-browser:request:'+body.requestId);
@@ -100,7 +117,9 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
   await storage.put(k(job.jobId),job);
   await storage.put('quick-card-browser:request:'+body.requestId,job.jobId);
   try{
-   const run=await tinyfish(env,fetcher,'/v1/automation/run-async',{url:plan.url,goal:cardActionGoal(plan),
+   const run=brokerEnabled(env)?await privateBroker(env,{action:'start',cardId:plan.cardId,
+    kind:plan.action,query:plan.query,requestId:body.requestId}):
+    await tinyfish(env,fetcher,'/v1/automation/run-async',{url:plan.url,goal:cardActionGoal(plan),
     ...(plan.useProfile?{use_profile:true,profile_id:env.TINYFISH_PROFILE_ID}:{}),
     browser_profile:'lite',agent_config:{max_duration_seconds:120}});
    const runId=run.run_id||run.runId;
@@ -118,7 +137,8 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
  if(job.state!=='working'||!job.runId)return success({job:summary(job)});
  if(!configured(env))return fail('tinyfish_backend_not_configured',503);
  try{
-  const run=await tinyfish(env,fetcher,'/v1/runs/'+encodeURIComponent(job.runId));
+  const run=brokerEnabled(env)?await privateBroker(env,{action:'status',cardId:job.cardId,
+   runId:job.runId}):await tinyfish(env,fetcher,'/v1/runs/'+encodeURIComponent(job.runId));
   const state=String(run.status||'').toUpperCase();
  if(['FAILED','CANCELLED','TIMED_OUT'].includes(state)){job.state='failed';job.error=String(run.error?.message||run.error||state).slice(0,140)}
   else if(state==='COMPLETED'){
