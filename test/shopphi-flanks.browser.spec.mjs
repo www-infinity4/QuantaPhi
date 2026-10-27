@@ -52,8 +52,12 @@ test('404 paid ad service does not create fake sponsored ads or six empty boxes'
  expect(await page.locator('#oracleCardDeck .shopphi-flank-tag:visible').allTextContents())
   .not.toContain('SPONSORED');
  const cards=page.locator('#oracleCardDeck .shopphi-flank:visible');
- const total=await cards.count();
- if(total){
+ const finalStatus=await page.locator('.shopphi-switchboard-receipt').textContent();
+ // Source discovery is asynchronous; do not infer empty inventory from a
+ // transient zero-card frame before the final six-card render is visible.
+ if(finalStatus?.includes('related, working card links')){
+  await expect(cards).toHaveCount(2);
+ 
   const link=cards.first();
   await expect(link).toContainText('INDEPENDENT SOURCE CARD');
   expect(await link.getAttribute('href')).toMatch(/^https:\/\/quantaphi\.org\/\?card=source-/);
