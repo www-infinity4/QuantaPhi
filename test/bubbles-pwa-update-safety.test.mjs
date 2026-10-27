@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 // Synthetic browser only: no wallet, owner account, provider login or live API.
-async function mountUpdateControls({message = '', imagePending = false, fileSelected = false, confirm = true, canPrepare = true} = {}) {
+async function mountUpdateControls({message = '', imagePending = false, fileSelected = false, confirm = true, canPrepare = true, fetchResults = []} = {}) {
   const nodes = [];
   const makeNode = tag => {
     const node = {
@@ -30,7 +30,7 @@ async function mountUpdateControls({message = '', imagePending = false, fileSele
     return null;
   }};
   const navigations = [];
-  let confirmations = 0, preparations = 0;
+  let confirmations = 0, preparations = 0, fetchCalls = 0, scheduledCheck;
   const document = {
     visibilityState: 'visible',
     querySelector: selector => selector === '#bubblesInstallChrome' ? install
@@ -46,7 +46,7 @@ async function mountUpdateControls({message = '', imagePending = false, fileSele
   const window = {
     navigator: {standalone: false}, isSecureContext: false,
     matchMedia: () => ({matches: false}),
-    addEventListener() {}, setInterval() {},
+    addEventListener() {}, setInterval(handler) { scheduledCheck = handler; },
     confirm() { confirmations++; return confirm; },
     QuantaBubbles: {prepareSiteUpdateReload() { preparations++; return canPrepare; }}
   };
@@ -54,7 +54,10 @@ async function mountUpdateControls({message = '', imagePending = false, fileSele
   vm.runInNewContext(source, {
     document, navigator: {userAgent: 'Chrome'}, window, location,
     URL, URLSearchParams, Date,
-    fetch: async () => ({ok: true, json: async () => ({version: '20261026-ui-settings2'})})
+    fetch: async () => {
+      if (fetchResults[fetchCalls++] === 'error') throw new Error('temporary_manifest_failure');
+      return {ok: true, json: async () => ({version: '20261026-ui-settings2'})};
+    }
   });
   await new Promise(resolve => setImmediate(resolve));
   await new Promise(resolve => setImmediate(resolve));
@@ -62,7 +65,14 @@ async function mountUpdateControls({message = '', imagePending = false, fileSele
   assert.ok(button, 'new first-party release must be offered');
   const updateMessage = nodes.find(node => node.tag === 'p' && node !== status);
   assert.ok(updateMessage);
-  return {button, updateMessage, navigations, get confirmations() {return confirmations;}, get preparations() {return preparations;}};
+  return {button, updateMessage, navigations,
+    async runScheduledCheck() {
+      assert.ok(scheduledCheck, 'hourly update check must be registered');
+      scheduledCheck();
+      await new Promise(resolve => setImmediate(resolve));
+      await new Promise(resolve => setImmediate(resolve));
+    },
+    get confirmations() {return confirmations;}, get preparations() {return preparations;}};
 }
 
 test('Bubbles PWA update refuses to reload an unsent chat draft', async () => {
@@ -114,4 +124,17 @@ test('Bubbles PWA update fails closed when active chat cannot be checkpointed', 
   assert.equal(app.preparations, 1);
   assert.equal(app.navigations.length, 0);
   assert.match(app.updateMessage.textContent, /could not be safely saved/);
+});
+
+
+test('Bubbles PWA clears a previously offered update if a later release verification fails', async () => {
+  const app = await mountUpdateControls({fetchResults: ['ok', 'error', 'error']});
+  assert.equal(app.button.textContent, 'Update Bubbles');
+  await app.runScheduledCheck();
+  assert.equal(app.button.textContent, 'Check for updates');
+  assert.equal(app.button.dataset.update, 'unverified');
+  assert.match(app.updateMessage.textContent, /Update paused/);
+  app.button.events.click();
+  assert.equal(app.navigations.length, 0, 'stale release must never navigate');
+  assert.equal(app.confirmations, 0, 'stale release must never prompt for reload');
 });
