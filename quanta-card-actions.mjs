@@ -1,4 +1,5 @@
 import {cardProvider,providerSearchUrl,quickCardManifest} from './quanta-card-provider.mjs';
+import {mountTinyfishCard} from './quanta-tinyfish-card.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
 /* Shared actions for QuantaPhi quick cards. No browser sign-in implies API permission. */
 const STORE_STARS='quantaPhiCardStarsV1';
@@ -137,7 +138,7 @@ export function mountCardActions(host,card,options={}){
    open.href=source;open.target='_blank';open.rel='noopener noreferrer';controls.append(open);
   }
  }
- bar.append(controls);bar.append(status);host.append(bar);return bar;
+ bar.append(controls);bar.append(status);host.append(bar);mountTinyfishCard(host,card);return bar;
 }
 function restoreDraft(){
  let request;try{request=sessionStorage.getItem(STORE_DRAFT)}catch{return}
