@@ -263,10 +263,13 @@ export function mountConnections(container,{token}) {
           continue;
         }
         if(upgrade)card.append(element('p','Cloudflare signed in, but full toolkit access is not approved yet. Review the expanded permissions to connect them.','ba-muted'));
-        const button=element('button',upgrade?'Authorize full Cloudflare toolkit':'Sign in with '+providerName,'ba-control');
+        const fullConsent=provider.id==='cloudflare'&&providerAuthorizationActions(provider).includes('owner.full');
+        const button=element('button',fullConsent?
+          (upgrade?'Authorize all 386 Cloudflare permissions':'Sign in and authorize 386 Cloudflare permissions'):
+          upgrade?'Authorize full Cloudflare toolkit':'Sign in with '+providerName,'ba-control');
         button.type='button';button.disabled=Boolean(client.pending);button.dataset.provider=provider.id;
         button.classList.add('ba-signin-button');
-        button.setAttribute('aria-label','Sign in with '+providerName);
+        button.setAttribute('aria-label',fullConsent?'Sign in and authorize all 386 Cloudflare permissions':'Sign in with '+providerName);
         card.append(button);
         if(provider.id==='cloudflare'){
           card.append(element('p','Cloudflare may already recognize your login and go straight to Review permissions. After authorizing, Bubbles must verify the connection.','ba-muted'));
