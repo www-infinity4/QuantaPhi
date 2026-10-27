@@ -46,3 +46,45 @@ A Levi's card may display authorized product records and the merchant's exact vi
 ### Follow-up live acceptance retry — also blocked
 
 A second TinyFish run targeted Gemini's `rich-textarea` element and attempted keyboard input with live visible checks. Even after clicking the specific editable region and tab navigation, no prompt text appeared. The test was halted without claiming a response. The account remains authenticated, but **Gemini browser chat transport is not operational through the currently tested TinyFish Agent typing method**. Possible next implementation is supported low-level CDP/Playwright input against a separate browser session, with its own verified consent and costs; this is not yet implemented.
+
+
+## Universal Quick Card button → TinyFish navigation (2026-10-27)
+
+New source modules:
+- `workers/infinity-brain-clock/quick-card-browser-policy.mjs`: trusted per-card origin, provider kind, allowed read-only actions, and deterministic natural-language browser goals.
+- `workers/infinity-brain-clock/quick-card-browser.mjs`: owner-authenticated TinyFish start / status / merchant-checkout-handoff logic with per-day budget and durable duplicate-click protection.
+- `quick-card-tinyfish-actions.mjs`: native Android-size owner-facing panel on the existing card, with explicit action selection, optional search terms, and separate Check Results button.
+- `provider-quick-cards.mjs`: mounts the optional Bubbles browser panel only after verified QuantaPhi owner authentication, while every visitor retains the real provider-site link.
+- `test/quick-card-tinyfish.test.mjs`: fixed-domain, authenticated, duplicate-dispatch, purchase-boundary and status-receipt tests.
+
+Protocol:
+```text
+Quick Card user tap
+  → verify owning QuantaPhi wallet session
+  → POST /work/quick-card-browser
+  → durable job ID + action manifest (cardId/kind/query)
+  → server-side TinyFish Web Agent request with saved owner profile
+  → inspect same-site, bounded results, record receipts
+  → show original product URLs for checkout at the merchant
+```
+
+Supported requests (owner-only pilot):
+
+```json
+{"action":"capabilities"}
+{"action":"start","cardId":"levis","kind":"products","query":"501 jeans","requestId":"<fresh UUID>"}
+{"action":"status","jobId":"<returned UUID>"}
+{"action":"checkout","cardId":"levis","productUrl":"https://www.levi.com/US/en_US/actual-product-path"}
+```
+
+Only registered trusted websites can launch a browser job. Unrecognized cards need a reviewed source entry first; public providers' page contents cannot register themselves or supply executable commands. Read-only controls include `inspect`, `search`, `products`, `compare`, and `availability` where suitable. Bubbles navigates a real provider website according to that button's intended outcome, then returns a receipt. A success status means the browser task ended, not that a transaction, official API grant or product claim is verified.
+
+The `checkout` action constructs a first-party HTTPS product link only. It does NOT enter payment information, add to cart, submit an order or charge a customer. Buyers sign into the real Levi's website, select sizes and finish the merchant's checkout themselves. The card must never request or relay a raw credit card number to the merchant or TinyFish. Merchant APIs/payment processing require separate agreements and precise receipts.
+
+TinyFish is metered: Web Agent usage is $0.016 per browser step (vendor published pricing). Its separate raw Browser/CDP service is $0.002 per browser minute and is a different integration. The current app key can run Web Agent but raw CDP is not yet plugged into these Cloudflare Workers. The per-owner daily pilot limit is 16 read starts; duplicate `requestId` reuses the same job and ambiguous network responses do not auto-retry.
+
+Privacy: The current gateway is **owner only** and explicitly does not borrow the owner's TinyFish profile for public QuantaPhi users. Public per-user connection/history requires isolated profiles, explicit consent, revocation, secure credential handling, and an independently reviewed authorization surface. No page login or Google authentication alone grants permission to scrape a private provider conversation. Browser work never constitutes per-user payment authorization.
+
+Levi's affiliate review: Official US application is https://www.levi.com/US/en_US/features/affiliate-program; it directs publishers to Rakuten/LinkShare enrollment. Advertiser approval and the actual tracked links must precede any commission claim. On October 27, QuantaPhi's owner contacted Levi's customer service and Rakuten publisher support with questions about program eligibility and approved creatives. Emails being sent is not proof of program acceptance. Don't embed affiliate parameters or fake commissions before receiving an approved link and terms.
+
+Required release gates: backend TinyFish key/profile settings, cross-origin real browser acceptance, card gallery Android smoke test, ordinary tests, owner-session denial and checkout safety review. **No production deployment is claimed by this draft PR.**
