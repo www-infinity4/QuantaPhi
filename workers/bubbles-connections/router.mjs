@@ -89,9 +89,9 @@ export async function handleConnections(request,env,resolveService) {
       reason='callback_handoff_failed';
       await service.handoff({userId:locator.userId,provider,state,
         ...(denied?{error:true}:{code})});
-      result=denied?'declined':'received';
-      reason=denied&&Object.hasOwn(OAUTH_RETURN_REASONS,url.searchParams.get('error')||'')?
-        url.searchParams.get('error'):'';
+      const errorCode=url.searchParams.get('error')||'';
+      result=denied?(errorCode==='access_denied'?'declined':'failed'):'received';
+      reason=denied&&Object.hasOwn(OAUTH_RETURN_REASONS,errorCode)?errorCode:'';
     }catch{
       // No OAuth state, code, user identity or untrusted provider text may
       // appear in the URL, logs or browser response.
