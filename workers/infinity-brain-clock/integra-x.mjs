@@ -74,7 +74,7 @@ export async function handleIntegraX(storage,env,body,fetcher=fetch){
   note:profile(env)?'Backend credentials configured; X session and publishing not yet proven by this check.':'Requires Brain TINYFISH_API_KEY secret and TINYFISH_PROFILE_ID in the same TinyFish account.'});
  if(body.action==='draft'){
   const job={jobId:crypto.randomUUID(),kind:'post',state:'draft',text:body.text,createdAt:nowIso()};
-  await storage.put(key(job.jobId),job,{expirationTtl:7*86400});
+  await storage.put(key(job.jobId),job);
   return result({job:storedCopy(job),output:'Post draft saved. Publishing needs a fresh explicit owner confirmation. No browser run started.'});
  }
  if(body.action==='confirm'){
@@ -85,15 +85,15 @@ export async function handleIntegraX(storage,env,body,fetcher=fetch){
   if(!profile(env))return fail('tinyfish_backend_not_configured',503);
   // Durable pre-write: a failed/timed-out start may STILL run. Never auto-retry.
   job.state='dispatch_uncertain';job.startedAt=nowIso();
-  await storage.put(key(job.jobId),job,{expirationTtl:7*86400});
+  await storage.put(key(job.jobId),job);
   try{
    job.runId=await queue(env,fetcher,'https://x.com/compose/post',publishGoal(job.text));
    job.state='working';
-   await storage.put(key(job.jobId),job,{expirationTtl:7*86400});
+   await storage.put(key(job.jobId),job);
    return result({job:storedCopy(job),output:'Integra publishing submitted, not yet verified. Check the receipt before claiming a post.'},202);
   }catch(e){
    job.error=bounded(e.message,100);
-   await storage.put(key(job.jobId),job,{expirationTtl:7*86400});
+   await storage.put(key(job.jobId),job);
    return fail('publish_dispatch_uncertain_check_tinyfish_history_before_retry',502);
   }
  }
@@ -103,14 +103,14 @@ export async function handleIntegraX(storage,env,body,fetcher=fetch){
   const count=Number(await storage.get(counterKey)||0);
   if(count>=24)return fail('integra_daily_manual_read_budget_reached',429);
   // Each call uses metered provider steps. Reserve budget before dispatch.
-  await storage.put(counterKey,count+1,{expirationTtl:2*86400});
+  await storage.put(counterKey,count+1);
   const source=SOURCES[body.source],job={jobId:crypto.randomUUID(),kind:'read',source:body.source,state:'dispatch_uncertain',createdAt:nowIso()};
-  await storage.put(key(job.jobId),job,{expirationTtl:7*86400});
+  await storage.put(key(job.jobId),job);
   try{
    job.runId=await queue(env,fetcher,source.url,readGoal(source.label));job.state='working';
-   await storage.put(key(job.jobId),job,{expirationTtl:7*86400});
+   await storage.put(key(job.jobId),job);
    return result({job:storedCopy(job),output:'Source read submitted. A completed provider receipt is required; use Integra status.'},202);
-  }catch(e){job.error=bounded(e.message,100);await storage.put(key(job.jobId),job,{expirationTtl:7*86400});
+  }catch(e){job.error=bounded(e.message,100);await storage.put(key(job.jobId),job);
    return fail('read_dispatch_uncertain_check_tinyfish_history_before_retry',502);}
  }
  const job=await storage.get(key(body.jobId));
@@ -131,7 +131,7 @@ export async function handleIntegraX(storage,env,body,fetcher=fetch){
     job.summary=url?'Provider reported a verified @IntegraAI post. Check the linked post.':'Provider finished without a verified X post permalink; publication remains uncertain.';
    }else{job.state='completed_read';job.summary=data;}
   }else{job.state='working';}
-  await storage.put(key(job.jobId),job,{expirationTtl:7*86400});
+  await storage.put(key(job.jobId),job);
   return result({job:storedCopy(job),providerStatus:state});
  }catch(e){return fail('provider_status_unavailable',503)}
 }
