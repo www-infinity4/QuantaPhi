@@ -46,7 +46,7 @@ function fixture() {
       return json({ok: true, service, token: 'PRIVATE_UPSTREAM_SENTINEL', account: 'private@example.invalid'});
     }};
   }
-  const runs = [1, 2].map(id => ({id, workflow_id: id, event: 'pull_request', head_sha: SHA,
+  const runs = Array.from({length: 37}, (_, i) => i + 1).map(id => ({id, workflow_id: id, event: 'pull_request', head_sha: SHA,
     status: 'completed', conclusion: 'success', run_attempt: 1}));
   const fetcher = async (url, options) => {
     calls.push({url, options});
@@ -169,6 +169,22 @@ test('upstream errors stay explicit, without blocking independent observations o
   assert.doesNotMatch(JSON.stringify(report), /private error|<html>/);
 });
 
+test('a successful one-workflow API response cannot certify PR #1144 full CI', async () => {
+  const f = fixture(), original = f.fetcher;
+  const partial = {total_count: 1, workflow_runs: [f.runs[0]]};
+  const report = await observe(f.env,
+    (url, opts) => url.includes('/actions/runs') ? json(partial) : original(url, opts), f.at, 1);
+  const build = report.tracks.find(t => t.id === 'build');
+  assert.equal(build.state, 'blocked');
+  assert.equal(build.ci.success, 1);
+  assert.equal(build.ci.observed, 1);
+  assert.equal(build.ci.expectedMinimum, 37);
+  assert.equal(build.ci.responseComplete, true, 'the API response itself is complete');
+  assert.equal(build.ci.coverageComplete, false, 'one API run is not the known CI inventory');
+  assert.equal(build.ci.passed, false);
+  assert.match(build.detail, /CI inventory incomplete/);
+});
+
 test('wrong-revision CI and truncated run inventories cannot pass', async () => {
   const f = fixture(), original = f.fetcher;
   for (const bad of [
@@ -183,15 +199,15 @@ test('wrong-revision CI and truncated run inventories cannot pass', async () => 
 
 test('latest workflow rerun wins, while failed or pending current checks remain visible', async () => {
   const f = fixture();
-  f.runs.push({...f.runs[0], id: 10, conclusion: 'failure'});
+  f.runs.push({...f.runs[0], id: 100, conclusion: 'failure'});
   let report = await observe(f.env, f.fetcher, f.at, 1);
   let build = report.tracks.find(t => t.id === 'build');
   assert.equal(build.ci.passed, false);
   assert.equal(build.ci.failed, 1);
-  f.runs.push({...f.runs[0], id: 11});
+  f.runs.push({...f.runs[0], id: 101});
   report = await observe(f.env, f.fetcher, f.at, 1);
   assert.equal(report.tracks.find(t => t.id === 'build').ci.passed, true);
-  f.runs.push({...f.runs[1], id: 12, status: 'in_progress', conclusion: null});
+  f.runs.push({...f.runs[1], id: 102, status: 'in_progress', conclusion: null});
   report = await observe(f.env, f.fetcher, f.at, 1);
   build = report.tracks.find(t => t.id === 'build');
   assert.equal(build.ci.passed, false);
