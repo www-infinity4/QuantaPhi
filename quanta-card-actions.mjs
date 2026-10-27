@@ -25,7 +25,7 @@ function sharePreviewUrl(card){
  let visual=card.image||card.imageUrl||card.mediaSrc||'';
  try{
   const image=new URL(visual,location.origin);
-  if(image.protocol==='https:'&&/\\.(png|jpe?g|webp|gif)$/i.test(image.pathname))u.searchParams.set('image',image.href);
+  if(image.protocol==='https:'&&/\.(png|jpe?g|webp|gif)$/i.test(image.pathname))u.searchParams.set('image',image.href);
  }catch{}
  return u.href;
 }

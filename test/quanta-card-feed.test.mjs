@@ -48,7 +48,7 @@ test('for you uses explicit engagement and category similarity without opaque or
  const radio=feedCard('radio-zenith-console'),other=feedCard('radio-zenith-transoceanic');
  for(let i=0;i<4;i++)state=markOpened(state,radio.id);
  const ranked=feedCandidates(cards,'for-you',state);
- assert.equal(ranked[0].id,radio.id);
+ assert.equal(ranked.filter(c=>c.origin!=='infinity-accepted')[0].id,radio.id);
  assert.ok(ranked.indexOf(other)<ranked.indexOf(feedCard('whatsapp')),'radio interest helps another radio');
  assert.equal(state.counts[radio.id],4);
  assert.ok(!JSON.stringify(cleanFeedState(state)).includes('token'));

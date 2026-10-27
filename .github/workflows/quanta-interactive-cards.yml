@@ -21,6 +21,12 @@ on:
       - 'premium-source-cards.*'
       - 'test/premium*'
       - 'quanta-feed.*'
+      - 'quanta-feed-rank.mjs'
+      - 'infinity-accepted*'
+      - 'quick-card-tinyfish-actions.mjs'
+      - 'workers/infinity-brain-clock/quick-card-browser*'
+      - 'test/infinity-accepted*'
+      - 'test/quick-card-tinyfish.test.mjs'
       - 'quanta-feed-card.html'
       - 'source-quick-cards.mjs'
       - 'brand-product-cards.mjs'
@@ -85,6 +91,12 @@ jobs:
           node --check verified-brand-sports-catalog.mjs
           node --check verified-brand-sports-cards.mjs
           node --check quanta-feed.mjs
+          node --check infinity-accepted-catalog.mjs
+          node --check infinity-accepted-sources.mjs
+          node --check infinity-accepted-cards.mjs
+          node --check quick-card-tinyfish-actions.mjs
+          node --check workers/infinity-brain-clock/quick-card-browser-policy.mjs
+          node --check workers/infinity-brain-clock/quick-card-browser.mjs
           node --check source-quick-cards.mjs
           node --check premium-source-cards.mjs
           node --check shop-phi-switchboard.mjs
@@ -96,7 +108,9 @@ jobs:
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
         run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs
-      - name: Check assimilation contrast and action contracts
+      - name: Check Infinity accepted catalog and browser action contracts
+        run: node --test test/infinity-accepted.test.mjs test/quick-card-tinyfish.test.mjs test/brain-clock.test.mjs
+      - name: Check assimilation accessibility
         run: node --test test/assimilation-mobile-accessibility.test.mjs
       - name: Validate real-brand retail products and APK disclosure
         run: node --test test/brand-product-cards.test.mjs
@@ -114,4 +128,4 @@ jobs:
         run: |
           node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
-          npx playwright test test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/world-series-browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/world-series-browser.spec.mjs --reporter=line --workers=1

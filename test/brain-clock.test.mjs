@@ -38,7 +38,23 @@ const colorCoreUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(
 const assignedJobScopeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/assigned-job-scope.mjs',import.meta.url))).toString('base64');
 const ownerAuditDraftUrl='data:text/javascript;base64,'+Buffer.from((await fs.readFile(new URL('../workers/infinity-brain-clock/owner-audit-draft.mjs',import.meta.url),'utf8')).replace('./conversation-work-audit.mjs',new URL('../workers/infinity-brain-clock/conversation-work-audit.mjs',import.meta.url).href)).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./continuity-snapshot.mjs",new URL("../workers/infinity-brain-clock/continuity-snapshot.mjs",import.meta.url).href).replace("./color-core.mjs",colorCoreUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace('./owner-audit-draft.mjs',ownerAuditDraftUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./owner-task-clock.mjs",clockUrl).replace("./autopilot-triage.mjs",autopilotUrl).replace("./agent-skills.mjs",agentSkillsUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
-const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
+const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./quick-card-browser.mjs',new URL('../workers/infinity-brain-clock/quick-card-browser.mjs',import.meta.url).href).replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
+test('quick-card browser HTTP route denies guests and wrong origins before forwarding',async()=>{
+ let forwarded=0;
+ const owner='quick-card-synthetic-owner',hash=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(owner))).toString('hex');
+ const env={WRITER_OWNER_HASH:hash,CLOCK:{idFromName:()=>1,get:()=>({fetch:async(url,init)=>{
+  forwarded++;assert.equal(url,'https://clock.internal/quick-card-browser');
+  assert.deepEqual(JSON.parse(init.body),{action:'capabilities'});return Response.json({ok:true,configured:false});
+ }})}};
+ const request=(auth='',origin='https://quantaphi.org',body='{"action":"capabilities"}')=>new Request('https://brain.test/work/quick-card-browser',{
+  method:'POST',headers:{Origin:origin,Authorization:auth,'Content-Type':'application/json'},body});
+ assert.equal((await brainWorker.fetch(request(),env)).status,401);
+ assert.equal((await brainWorker.fetch(request('Bearer '+owner,'https://evil.example'),env)).status,403);
+ assert.equal(forwarded,0);
+ const good=await brainWorker.fetch(request('Bearer '+owner),env);assert.equal(good.status,200);assert.equal(forwarded,1);
+ const huge=await brainWorker.fetch(request('Bearer '+owner,'https://quantaphi.org',' '.repeat(2500)),env);
+ assert.equal(huge.status,413);assert.equal(forwarded,1);
+});
 test('deferred Pink result releases only its own lease and never leaves a stopped runner working',async()=>{
  const repository='www-infinity4/QuantaPhi',runUrl='https://github.com/www-infinity4/Moltnook/actions/runs/42';
  const job={id:'TASK-2',repository,instructions:'Verify source',acceptance:['Tests'],status:'working',progress:{runUrl}};
