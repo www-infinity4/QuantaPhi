@@ -23,9 +23,9 @@ export function mountTinyFishCardReader(host,card){
  const q=el('input','qca-search-input');
  const ai=card.id==='chatgpt'||card.id==='gemini'||card.id==='claude'||card.id==='copilot';
  q.type='search';q.maxLength=180;q.required=true;
- q.placeholder=ai?'What would you like to ask?':'Find on '+target.hostname+'…';
- q.setAttribute('aria-label',(ai?'Question about ':'Find public pages on ')+target.hostname);
- const submit=el('button','qca-button qca-search-submit',ai?'Find provider help':'Browse '+target.hostname);
+ q.placeholder=ai?'Find provider help pages…':'Find public pages on '+target.hostname+'…';
+ q.setAttribute('aria-label','Find public pages on '+target.hostname);
+ const submit=el('button','qca-button qca-search-submit',ai?'Find help pages':'Find pages on '+target.hostname);
  submit.type='submit';
  const results=el('div','qca-site-results');
  results.setAttribute('aria-live','polite');
@@ -34,7 +34,7 @@ export function mountTinyFishCardReader(host,card){
  const visit=el('a','qca-button qca-source','Open official website');
  visit.href=target.href;visit.target='_blank';visit.rel='noopener noreferrer';
  const actions=el('div','qca-controls');actions.append(visit);
- const toggle=el('button','qca-button qca-tinyfish-toggle','🌐 Browse site with TinyFish');
+ const toggle=el('button','qca-button qca-tinyfish-toggle','🌐 TinyFish public-site lookup');
  toggle.type='button';
  form.append(q,submit);form.hidden=true;status.hidden=true;results.hidden=true;
  // The input is inserted only after a deliberate tap. Ordinary cards must not
@@ -42,7 +42,7 @@ export function mountTinyFishCardReader(host,card){
  toggle.addEventListener('click',()=>{
   if(!panel.contains(form)){panel.insertBefore(form,status);form.hidden=false;status.hidden=false;results.hidden=false;}
   else{form.hidden=!form.hidden;status.hidden=form.hidden;results.hidden=form.hidden;}
-  toggle.textContent=form.hidden?'🌐 Browse site with TinyFish':'Close TinyFish browser';
+  toggle.textContent=form.hidden?'🌐 TinyFish public-site lookup':'Close website lookup';
   if(!form.hidden)q.focus();
  });
  panel.append(toggle,status,results,actions);
@@ -52,7 +52,7 @@ export function mountTinyFishCardReader(host,card){
   const query=q.value.trim().slice(0,180);if(query.length<2)return;
   controller?.abort();controller=new AbortController();
   results.replaceChildren();submit.disabled=true;
-  status.textContent='Reading public '+target.hostname+' results through the TinyFish relay…';
+  status.textContent='Searching public '+target.hostname+' pages through TinyFish…';
   try{
    const response=await fetch(ENDPOINT,{method:'POST',mode:'cors',cache:'no-store',
     headers:{'Content-Type':'application/json'},
