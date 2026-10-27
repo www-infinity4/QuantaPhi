@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-27T07:18:12.267967Z",
+  "checked_at": "2026-10-27T13:28:44.816225Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
@@ -17,6 +17,50 @@
     }
   ],
   "articles": [
+    {
+      "title": "Jackson Chourio just showing off now as the face of the Brewers as Crew creeps closer to World Series title",
+      "url": "https://www.cbssports.com/mlb/news/jackson-chourio-brewers-world-series-face-of-the-franchise/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T12:54:08Z",
+      "summary": "In Game 3 on Monday, Chourio became the youngest player with a four-hit World Series game since Joe Garagiola in 1946",
+      "author": "Matt Snyder",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/7433b4c9-eb4e-4d2f-8e10-c5012d90d8a4/chourio-getty-5.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "2026 MLB playoff bracket: Schedule and scores with Brewers one win away from first World Series title",
+      "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T12:53:16Z",
+      "summary": "The Brewers-Rays matchup guarantees that we'll have a first-time champion in 2026",
+      "author": "Kate Feldman",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/20/ad4b6088-a174-48fb-8be4-f78cb2b02b32/2026-mlb-bracket-brewers-rays.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Cowboys crush Eagles to revive NFC East hopes; Brewers hammer Rays for 3-0 World Series lead",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-eagles-nfc-east-nfl-brewers-rays-world-series-mlb/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T12:50:24Z",
+      "summary": "Plus, the Valkyries won a defensive struggle in Game 5 of the WNBA Finals",
+      "author": "Austin Nivison",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/a8c430f9-61ac-44b3-ad7a-9699facb905a/gettyimages-2301720541-2.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Tolle knocks it out of the park as World Series correspondent ... is anyone surprised?",
+      "url": "https://www.mlb.com/news/payton-tolle-world-series-player-correspondent-highlights",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-27T12:36:12Z",
+      "summary": "",
+      "author": "Ian Browne",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
     {
       "title": "After two 1-run losses, blowout at Trop puts Rays' season on brink",
       "url": "https://www.mlb.com/news/rays-lose-game-3-of-2026-world-series",
@@ -128,28 +172,6 @@
       "image_credit": ""
     },
     {
-      "title": "Jackson Chourio just showing off now as the face of the Brewers as Crew creeps closer to World Series title",
-      "url": "https://www.cbssports.com/mlb/news/jackson-chourio-brewers-world-series-face-of-the-franchise/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T04:01:01Z",
-      "summary": "In Game 3 on Monday, Chourio became the youngest player with a four-hit World Series game since Joe Garagiola in 1946",
-      "author": "Matt Snyder",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/7433b4c9-eb4e-4d2f-8e10-c5012d90d8a4/chourio-getty-5.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "2026 MLB playoff bracket: Schedule and scores with Brewers one win away from first World Series title",
-      "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T03:11:16Z",
-      "summary": "The Brewers-Rays matchup guarantees that we'll have a first-time champion in 2026",
-      "author": "Kate Feldman",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/20/ad4b6088-a174-48fb-8be4-f78cb2b02b32/2026-mlb-bracket-brewers-rays.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
       "title": "From crab claws to tomahawks, World Series fans can get fancy at the Trop",
       "url": "https://www.mlb.com/news/rays-unveil-world-series-food-options-at-tropicana-field",
       "publisher": "MLB.com",
@@ -238,17 +260,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "In tatters 2 years ago, rejuvenated Trop will host first World Series since '08",
-      "url": "https://www.mlb.com/news/world-series-returns-to-tropicana-field-for-first-time-since-2008",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-25T19:58:57Z",
-      "summary": "",
-      "author": "Adam Berry",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Turang made shocking pitch to Brewers to land 1st pro contract ... or did he?",
       "url": "https://www.mlb.com/news/brice-turang-s-surprising-pitch-to-brewers-for-first-pro-contract",
       "publisher": "MLB.com",
@@ -334,17 +345,6 @@
       "author": "Mike Axisa",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/24/66d9358c-d12b-451a-ac11-3d51927af471/rays-rasumussen-getty.png",
       "kind": "Analysis",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Rust? What rust? Brewers open World Series refreshed and ready thanks to all that winning",
-      "url": "https://www.cbssports.com/mlb/news/2026-world-series-brewers-rested-rays/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-24T04:30:01Z",
-      "summary": "The Brewers have now played nine games in the last 26 days and they've won eight of them",
-      "author": "Matt Snyder",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/24/423563af-9694-4354-a44b-2a5dcf0cb236/miz-getty-4.png",
-      "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
   ],
