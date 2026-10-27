@@ -244,6 +244,17 @@ test('selected repository pins both writer and verification jobs',()=>{
  assert.throws(()=>makeJobs('Fix menu','another-owner/repo'),/explicit_owner_repository_required/);
 });
 
+test('Bubbles never speaks fenced tool arguments, Responses delegation JSON, or function arrays',()=>{
+ const {speechText}=require('../bubbles-brain-actions.js');
+ for(const raw of [
+  '{"recipient":"functions.exec","arguments":{"cmd":"internal"}}',
+  '[{"type":"function","name":"github_write","arguments":"{}"}]',
+  '\x60\x60\x60json\n{"tool_calls":[{"function":{"name":"deploy","arguments":"{}"}}]}\n\x60\x60\x60'
+ ])assert.equal(speechText(raw),'The requested action has not been verified.');
+ assert.equal(speechText('Build is being reviewed; no production deployment was verified.'),
+ 'Build is being reviewed; no production deployment was verified.');
+});
+
 test('speech rejects unverified AI tool-call envelopes',()=>{
  const {speechText}=require('../bubbles-brain-actions.js');
  assert.equal(speechText('{"tool":"github","action":"read_file","parameters":{"repository":"www-infinity4/QuantaPhi"}}'),
