@@ -2183,7 +2183,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }
  // Integra's owner-only X browser commands are not ordinary model prompts.
  // A human confirmation is required for publishing and voice cannot approve posts.
- if(!embedded&&/^(?:(?:hey\\s+)?bubbles[,\\s]+)?(?:ask\\s+)?integra\\b/i.test(spoken)){
+ if(!embedded&&/^(?:(?:hey\s+)?bubbles[,\s]+)?(?:ask\s+)?integra\b/i.test(spoken)){
   busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();
   let reply;
   try{
@@ -2192,7 +2192,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const headers=await verifiedOwnerHeaders();
    reply=await module.executeIntegraCommand(command,{
     url:BRAIN+'/work/integra-x',headers,fetcher:bubblesFetch,
-    approve:post=>!fromVoice&&window.confirm('Publish this one post from @IntegraAI?\\n\\n'+post)
+    approve:post=>!fromVoice&&window.confirm('Publish this one post from @IntegraAI?\n\n'+post)
    });
   }catch(error){reply='Integra bridge could not verify this action: '+String(error.message||error).slice(0,135)+'. No published post is confirmed.';}
   display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
