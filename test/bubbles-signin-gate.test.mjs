@@ -89,13 +89,13 @@ test('missing extra project scopes does not disable normal Cloudflare sign-in',a
  assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
  assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
  await button.listeners.click();
- assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['account.read','projects.build','ledger.read']});
+ assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['account.read']});
  const destination=new URL(ui.popups[0].location.href);
  assert.equal(destination.origin,'https://dash.cloudflare.com');
  assert.equal(destination.pathname,'/oauth2/auth');
  assert.equal(destination.searchParams.get('redirect_uri'),'https://quantaphi.org/api/bubbles/connections/cloudflare/callback');
  assert.equal(destination.searchParams.get('code_challenge_method'),'S256');
- assert.equal(destination.searchParams.get('scope'),'user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read');
+ assert.equal(destination.searchParams.get('scope'),'user-details.read memberships.read');
 });
 test('failed sign-in launch restores the button for another attempt',async t=>{
  const ui=mountedGate(t,partialGate(),{startFails:true});
@@ -180,4 +180,17 @@ test('received callback with no completion receipt never claims the user is conn
  assert.match(ui.get('bubblesSigninStatus').textContent,/Waiting to verify/);
  assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
  assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+});
+
+test('a verified Cloudflare identity keeps full 386-scope upgrade separate from sign-in',async t=>{
+ const payload=partialGate();
+ payload.providers.cloudflare.connected=true;
+ payload.providers.cloudflare.authorizationActions=['account.read','owner.full'];
+ const ui=mountedGate(t,payload);
+ await new Promise(setImmediate);
+ const button=ui.get('bubblesCloudflareSignIn');
+ assert.equal(button.textContent,'Authorize all 386 Cloudflare permissions');
+ await button.listeners.click();
+ assert.deepEqual(ui.calls.find(x=>x.path==='/start').body,
+  {provider:'cloudflare',actions:['owner.full']});
 });

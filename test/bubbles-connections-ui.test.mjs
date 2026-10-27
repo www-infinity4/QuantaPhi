@@ -37,7 +37,7 @@ test('account page launches real Cloudflare consent with registered actions even
  assert.equal(button.textContent,'Sign in with Cloudflare');
  assert.equal(descendants(container).find(node=>node.tag==='fieldset').hidden,true);
  await button.listeners.click();
- assert.deepEqual(calls.find(call=>call.path==='/start').body,{provider:'cloudflare',actions:['account.read','projects.build','ledger.read']});
+ assert.deepEqual(calls.find(call=>call.path==='/start').body,{provider:'cloudflare',actions:['account.read']});
  assert.equal(new URL(popup.location.href).origin,'https://dash.cloudflare.com');
  assert.equal(JSON.parse(storage.get('bubbles:oauth-pending:v1')).returnPath,'/bubbles-accounts.html');
  panel.client.cancelConnect();
