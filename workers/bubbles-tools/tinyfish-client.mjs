@@ -24,6 +24,7 @@ export async function readViaTinyfish(request,env,body){
    typeof data?.markdown==='string'?data.markdown:
    typeof data?.results?.[0]?.markdown==='string'?data.results[0].markdown:
    typeof data?.results?.[0]?.content==='string'?data.results[0].content:
+   typeof data?.results?.[0]?.text==='string'?data.results[0].text:
    JSON.stringify(data);
   const excerpt=trim(page,4800);
   return build(request,{ok:true,output:excerpt,sourceUrl:result.sourceUrl||null,
