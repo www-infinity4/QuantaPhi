@@ -101,7 +101,7 @@ export function mountCardActions(host,card,options={}){
   }
  }
  b('+1 Build',()=>{
-  const request='Build one improvement for the '+name+' QuantaPhi Quick Card. Preserve original graphics and functional controls; use real verified provider sources. Card: '+previewUrl(card)+'. Keep Star, Collect, Share, +1 Build and Quick Search. Verify build results and receipts before marking complete.';
+  const request='Build one improvement for the '+name+' QuantaPhi Quick Card. Preserve original graphics and functional controls; use real verified provider sources. Card: '+previewUrl(card)+'. Follow the repository instructions in docs/QUANT-AI-QUICK-CARD-AGENT-DIRECTIVES.md and production/quant-ai-quick-card-agent-directives.json before building. Preserve Star, Collect, Share, +1 Build and one compact Power Search control; use a generic search field only for a verified original-provider search feature. For sports prefer the next verified game and show final recaps once per viewer. Verify build results, original-source freshness, permissions and deployment receipts before marking complete.';
   const builder=document.getElementById('robotDirectionsInput');
   if(builder){
    builder.value=request;builder.dispatchEvent(new Event('input',{bubbles:true}));
