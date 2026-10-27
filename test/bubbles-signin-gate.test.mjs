@@ -64,7 +64,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
    if(startFails)return Response.json({ok:false,error:'provider_not_configured'},{status:503});
    const adapter=cloudflareAdapter({clientId:'bubbles-test-client',clientSecret:'server-only',
     redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback',
-    allowedScopes:'user-details.read memberships.read workers-scripts.admin d1.read d1.write page.write'});
+    allowedScopes:body.actions.includes('owner.full')?['user-details.read','memberships.read',...Array.from({length:384},(_,i)=>'preview-scope-'+i+'.read')].join(' '):'user-details.read memberships.read workers-scripts.admin d1.read d1.write page.write'});
    return Response.json({ok:true,authorizationUrl:adapter.authorization({state:'s'.repeat(43),challenge:'c'.repeat(43),actions:body.actions}),expiresIn:300});
   }
   if(path==='/handoff/status')return Response.json({ok:true,status:'pending'});
@@ -193,4 +193,22 @@ test('a verified Cloudflare identity keeps full 386-scope upgrade separate from 
  await button.listeners.click();
  assert.deepEqual(ui.calls.find(x=>x.path==='/start').body,
   {provider:'cloudflare',actions:['owner.full']});
+});
+
+test('registered full-scope Cloudflare client uses all 386 at first consent instead of incompatible two-scope request',async t=>{
+ const payload=partialGate();
+ payload.providers.cloudflare.authorizationActions=['account.read','owner.full'];
+ const ui=mountedGate(t,payload);
+ await new Promise(setImmediate);
+ const button=ui.get('bubblesCloudflareSignIn');
+ assert.equal(button.textContent,'Sign in and authorize 386 Cloudflare permissions');
+ await button.listeners.click();
+ assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['owner.full']});
+ const authorization=new URL(ui.popups[0].location.href);
+ const scopes=authorization.searchParams.get('scope').split(' ');
+ assert.equal(scopes.length,386);
+ assert.equal(new Set(scopes).size,386);
+ assert.ok(scopes.includes('user-details.read'));
+ assert.ok(scopes.includes('memberships.read'));
+ assert.equal(authorization.origin,'https://dash.cloudflare.com');
 });
