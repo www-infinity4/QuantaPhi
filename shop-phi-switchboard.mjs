@@ -153,7 +153,9 @@ if(typeof document!=='undefined'){
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;visiblePage=0;
    if(!visible.length){
-    grid.hidden=true;heading.hidden=true;navigation.hidden=true;
+    // The original Oracle stage lives INSIDE grid. Never hide the hero merely
+    // because the companion inventory is empty or its network is unavailable.
+    grid.hidden=false;heading.hidden=true;navigation.hidden=true;
     receipt.hidden=false;
     receipt.textContent='No verified companion offers available for this card right now. Its original links and controls still work.';
     return;
@@ -268,7 +270,7 @@ if(typeof document!=='undefined'){
     grid.hidden=true;heading.hidden=true;receipt.hidden=true;navigation.hidden=true;
     before.replaceChildren();after.replaceChildren();return;
    }
-   grid.hidden=true;heading.hidden=true;navigation.hidden=true;receipt.hidden=false;
+   grid.hidden=false;heading.hidden=true;navigation.hidden=true;receipt.hidden=false;
    before.replaceChildren();after.replaceChildren();
    const lane=contextFor(active);
    receipt.textContent='Checking approved Quick Cards and live AdPhi offers…';
@@ -284,7 +286,7 @@ if(typeof document!=='undefined'){
    draw(result,lane);
   }
   window.addEventListener('quantaphi:switchboard-change',e=>{void update(e.detail).catch(()=>{
-   if(active){grid.hidden=true;navigation.hidden=true;before.replaceChildren();after.replaceChildren();
+   if(active){grid.hidden=false;navigation.hidden=true;before.replaceChildren();after.replaceChildren();
     receipt.textContent='Companion offers are temporarily unavailable. Original Quick Card is still usable.';}
   })});
   // The deck may have selected its first card before this module finished loading.
