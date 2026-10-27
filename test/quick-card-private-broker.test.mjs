@@ -66,3 +66,45 @@ test('oversize, provider redirects and malformed provider receipts are rejected'
  const malformed=async()=>Response.json({unexpected:true});
  assert.equal((await handlePrivateBroker(req(),env,malformed)).status,502);
 });
+
+// Brain retains the owner Durable Object's budget, request-ID receipt, and
+// same-site report filter; this test never calls the paid provider.
+import {webcrypto} from 'node:crypto';
+import {handleQuickCardBrowser} from '../workers/infinity-brain-clock/quick-card-browser.mjs';
+globalThis.crypto??=webcrypto;
+test('Brain broker adapter only activates with explicit opt-in and preserves idempotency',async()=>{
+ const data=new Map(),storage={get:async k=>data.get(k),put:async(k,v)=>data.set(k,v)};
+ const messages=[];
+ const service={fetch:async(url,init)=>{
+  assert.equal(url,'https://broker.internal/internal/quick-card-browser');
+  assert.equal(init.headers['X-QuantaPhi-Broker-Token'],token);
+  const command=JSON.parse(init.body);messages.push(command);
+  if(command.action==='start')return Response.json({ok:true,runId},{status:202});
+  assert.equal(command.action,'status');assert.equal(command.runId,runId);
+  return Response.json({ok:true,status:'COMPLETED',result:{summary:'Public page inspected',
+   items:[{name:'Official resource',url:card.mappings[0].url,note:'Public resource'},
+    {name:'Unsafe cross-site',url:'https://untrusted.example/private',note:'Ignored'}]}});
+ }};
+ const direct=async()=>{throw Error('direct provider call forbidden')};
+ const noFlag={TINYFISH_BROKER:service,TINYFISH_BRIDGE_TOKEN:token};
+ assert.equal((await handleQuickCardBrowser(storage,noFlag,start,direct)).httpStatus,503);
+ assert.equal(messages.length,0);
+ const bridged={...noFlag,TINYFISH_BROKER_ENABLED:'true'};
+ const first=await handleQuickCardBrowser(storage,bridged,start,direct);
+ assert.equal(first.httpStatus,202);
+ assert.equal(first.result.job.state,'working');
+ assert.deepEqual(messages[0],{action:'start',cardId,kind:start.kind,query:'',requestId});
+ const duplicate=await handleQuickCardBrowser(storage,bridged,start,direct);
+ assert.equal(duplicate.httpStatus,200);
+ assert.equal(duplicate.result.job.jobId,first.result.job.jobId);
+ assert.equal(messages.length,1,'duplicate request must not incur a second paid call');
+ const status=await handleQuickCardBrowser(storage,bridged,{action:'status',jobId:first.result.job.jobId},direct);
+ assert.equal(status.httpStatus,200);
+ assert.equal(status.result.job.state,'completed_browser_read');
+ assert.equal(status.result.job.report.verifiedSameSiteLinks,1);
+ assert.equal(status.result.job.report.items[1].url,'');
+ assert.equal(messages.length,2);
+ const denied=await handleQuickCardBrowser(storage,bridged,{action:'start',cardId:'gemini',kind:'inspect',requestId:'12345678-1234-4234-8234-123456789abe'},direct);
+ assert.equal(denied.httpStatus,403);
+ assert.equal(messages.length,2,'account/AI actions must never reach the private broker');
+});
