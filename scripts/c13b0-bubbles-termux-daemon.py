@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bubbles Termux loopback companion: fast LOCAL transport, not an LLM or public API.
 No npm, external dependencies, bank/wallet data, shell execution, or WAN listener.
-Use: python3 scripts/c13b0-bubbles-termux-daemon.py install|start|status|stop|selftest
+Use: python3 scripts/c13b0-bubbles-termux-daemon.py install|start|status|bench|stop|selftest
 """
 import hmac
 import json
@@ -200,6 +200,22 @@ def install():
     print("Android may still stop background processes; no remote AI or login is implied.")
 
 
+
+def bench():
+    """Measure only LOCAL HTTP round-trip; this does not benchmark AI response time."""
+    samples = []
+    for n in range(25):
+        begin = time.perf_counter()
+        result = endpoint("/v1/roundtrip", {"nonce": str(n)}, True)
+        if not result.get("ok") or result.get("nonce") != str(n):
+            raise RuntimeError("invalid local reply")
+        samples.append((time.perf_counter() - begin) * 1000)
+    samples.sort()
+    print(json.dumps({"samples": len(samples), "p50_ms": round(samples[len(samples)//2], 2),
+                      "p95_ms": round(samples[int(0.95*(len(samples)-1))], 2),
+                      "metric": "LOCAL_HTTP_only", "ai_latency_measured": False}))
+
+
 def selftest():
     server = Loopback((ADDRESS, 0), Handler)
     server.owner_token = secrets.token_hex(32)
@@ -253,6 +269,8 @@ if __name__ == "__main__":
             start()
         elif op == "status":
             print(json.dumps(endpoint("/health"), indent=2))
+        elif op == "bench":
+            bench()
         elif op == "stop":
             print(json.dumps(endpoint("/v1/stop", {}, True)))
         elif op == "selftest":
