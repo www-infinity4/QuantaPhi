@@ -17,7 +17,7 @@ assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
 assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested/);
 assert.doesNotMatch(html,/class="oracle-card-deck-feature"/);
-assert.match(html,/oracle-card-deck\.js\?v=20261027-infinity-accepted2/);
+assert.match(html,/oracle-card-deck\.js\?v=20261027-all-families1/);
 assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
 assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
 
@@ -59,3 +59,10 @@ assert.match(html,/class=\"search\" role=\"search\"/);
 assert.ok(html.indexOf('class=\"search\"')<html.indexOf('id=\"qtraffic\"'),'Search must lead before traffic counters');
 assert.doesNotMatch(html,/<section class=\"q-bubbles-entry\"/);
 assert.match(deck,/connectQuant\(\{select:true,revision\}\)/);
+
+assert.match(html,/data-oracle-family="accepted"/);
+assert.match(html,/data-oracle-family="website"/);
+assert.match(html,/data-oracle-family="original"/);
+assert.match(deck,/selectNextFamilyPool\(tour\.cards,cardFamily\(active\)\)/);
+assert.match(deck,/openingFamilyPool\(cards,openingCursor\)/);
+assert.match(deck,/show\(chosen\)/);
