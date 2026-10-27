@@ -335,6 +335,20 @@ export async function runCycle(env, scheduledFor, {now = Date.now, fetcher = fet
 const HEADERS = {'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff',
   'Content-Security-Policy': "default-src 'none'; frame-ancestors 'none'; base-uri 'none'"};
 const json = (value, status = 200) => Response.json(value, {status, headers: HEADERS});
+// A Cloudflare D1 object reset can briefly interrupt a read without changing
+// the underlying receipt. Retry only this known transient read failure, once.
+// Never retry claims, writes, authorization failures or malformed receipts.
+async function latestReceipt(db) {
+  const sql = `SELECT scheduled_for,completed_at,report_json
+        FROM continuity_cycle_receipts WHERE state='complete' ORDER BY cycle_id DESC LIMIT 1`;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {return await db.prepare(sql).first();}
+    catch (error) {
+      if (attempt || !/D1_ERROR:.*(?:Internal error|reset)/i.test(String(error?.message))) throw error;
+      await new Promise(resolve => setTimeout(resolve, 75));
+    }
+  }
+}
 export default {
   async scheduled(controller, env) {await runCycle(env, controller.scheduledTime);},
   async fetch(request, env) {
@@ -352,8 +366,7 @@ export default {
       configuredTracks: TRACKS.length, observedAuthenticatedSessions: 0});
     if (path !== '/status') return json({ok: false, error: 'not_found'}, 404);
     try {
-      const row = await env.WORK_DB.prepare(`SELECT scheduled_for,completed_at,report_json
-        FROM continuity_cycle_receipts WHERE state='complete' ORDER BY cycle_id DESC LIMIT 1`).first();
+      const row = await latestReceipt(env.WORK_DB);
       if (!row) return json({ok: false, error: 'no_completed_cycle', configuredTracks: TRACKS.length}, 503);
       const report = JSON.parse(row.report_json);
       if (report?.protocol !== PROTOCOL || report.tracks?.length !== TRACKS.length) throw Error();
