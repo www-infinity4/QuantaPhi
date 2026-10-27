@@ -122,3 +122,18 @@ test('missing image shows an honest source identity instead of invented product 
  assert.match(css,/height:165px/);
  assert.match(css,/\.shopphi-flank\[hidden\]\{display:flex!important\}/);
 });
+
+test('six distinct creator Quick Cards hosted on quantaphi.org can flank one coin card',()=>{
+ const hero={id:'source-pcgs',title:'Morgan silver dollar grading'};
+ const cards=Array.from({length:6},(_,i)=>normalizeCandidate({
+  id:'quick-coin-'+i,sourceId:'coin-'+i,
+  title:'Morgan silver dollar coin supplies '+i,
+  description:'Coin collecting and Morgan grading albums',
+  url:'https://quantaphi.org/cards/morgan-'+i,
+  type:'published-card',status:'approved'
+ }));
+ const selected=chooseCompanions(hero,cards);
+ assert.equal(selected.length,6,
+  'Different card publishers share the same domain; treat cards, not hostname, as inventory');
+ assert.equal(new Set(selected.map(c=>c.sourceId)).size,6);
+});
