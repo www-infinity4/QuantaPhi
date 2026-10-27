@@ -110,7 +110,13 @@
         ? 'A Bubbles website update is ready. Save any unsent message, then tap Update Bubbles.'
         : 'Bubbles web app is current · checked just now. Chrome itself updates separately.';
     } catch {
-      updateMessage.textContent = 'Could not verify the latest Bubbles version. Existing chats and wallet remain unchanged.';
+      // Never offer a previously observed release after a later verification
+      // failure. A stale Update button could otherwise reload from an
+      // unverified manifest while the network or service worker is failing.
+      latest = '';
+      updateButton.dataset.update = 'unverified';
+      updateButton.textContent = 'Check for updates';
+      updateMessage.textContent = 'Could not verify the latest Bubbles version. Update paused; existing chats and wallet remain unchanged.';
     } finally {
       checking = false;
       updateButton.disabled = false;
