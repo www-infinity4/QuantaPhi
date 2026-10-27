@@ -117,37 +117,78 @@ if(typeof document!=='undefined'){
   stage.parentNode.insertBefore(grid,stage);
   grid.append(before,stage,after);
   grid.after(receipt);
+  const navigation=document.createElement('nav');navigation.className='shopphi-flank-navigation';
+  navigation.setAttribute('aria-label','Browse larger companion cards');
+  const prev=document.createElement('button');prev.type='button';prev.textContent='‹ Previous';
+  const position=document.createElement('span');position.className='shopphi-flank-position';
+  const next=document.createElement('button');next.type='button';next.textContent='Next ›';
+  navigation.append(prev,position,next);
+  grid.after(navigation);
   const exposure=Object.create(null),cache=new Map();
-  let seq=0,rotation=0,active=null;
+  let seq=0,rotation=0,active=null,visiblePage=0,visibleCards=[];
+  function showPage(){
+   const start=visiblePage*2,total=visibleCards.length;
+   let index=0;
+   for(const card of [...before.children,...after.children]){
+    card.hidden=index<start||index>=start+2;
+    index++;
+   }
+   position.textContent=total?String(start+1)+'–'+Math.min(total,start+2)+' of '+total:'No offers';
+   prev.disabled=visiblePage===0;next.disabled=start+2>=total;
+   navigation.hidden=total<3;
+  }
+  prev.addEventListener('click',()=>{visiblePage=Math.max(0,visiblePage-1);showPage()});
+  next.addEventListener('click',()=>{visiblePage=Math.min(Math.floor((visibleCards.length-1)/2),visiblePage+1);showPage()});
   const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
   function draw(list,lane){
    before.replaceChildren();after.replaceChildren();
-   const visible=list.slice(0,SLOT_COUNT);
-   for(let i=0;i<SLOT_COUNT;i++){
+   const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;visiblePage=0;
+   if(!visible.length){
+    grid.hidden=true;heading.hidden=true;navigation.hidden=true;
+    receipt.hidden=false;
+    receipt.textContent='No verified companion offers available for this card right now. Its original links and controls still work.';
+    return;
+   }
+   grid.hidden=false;heading.hidden=false;
+   for(let i=0;i<visible.length;i++){
     const parent=i<3?before:after,c=visible[i];
-    if(!c){const empty=document.createElement('div');empty.className='shopphi-flank shopphi-flank-empty';
-     empty.append(span('POSITION '+(i+1),'shopphi-flank-tag'),span('Awaiting a verified offer','shopphi-flank-empty-copy'));
-     parent.append(empty);continue;}
     const link=document.createElement('a');link.className='shopphi-flank';link.href=c.url;
-    link.target='_blank';link.rel=c.type==='sponsored'?'noopener noreferrer sponsored':'noopener noreferrer';
-    const tag=c.type==='sponsored'?'SPONSORED':c.type==='shop-item'?'SHOP PHI ITEM':'RELATED QUICK CARD';
+    const internal=new URL(c.url).hostname===location.hostname;
+    link.target=internal?'_self':'_blank';
+    link.rel=c.type==='sponsored'?'noopener noreferrer sponsored':'noopener noreferrer';
+    link.setAttribute('aria-label',(c.type==='sponsored'?'Sponsored: ':'Open related card: ')+c.title);
+    const tag=c.type==='sponsored'?'SPONSORED':c.type==='shop-item'?'SHOP PHI PRODUCT':'INDEPENDENT SOURCE CARD';
     link.append(span(tag,'shopphi-flank-tag'));
+    const art=document.createElement('div');art.className='shopphi-flank-visual';
     if(c.image){
-     const img=document.createElement('img');img.src=c.image;img.alt='';img.loading='lazy';img.referrerPolicy='no-referrer';
-     img.addEventListener('error',()=>img.remove(),{once:true});link.append(img);
+     const img=document.createElement('img');img.src=c.image;img.alt=c.title+' source photograph or artwork';
+     img.loading='lazy';img.referrerPolicy='no-referrer';
+     img.addEventListener('error',()=>{img.remove();art.classList.add('shopphi-flank-no-photo');
+      art.replaceChildren(span(c.merchant||new URL(c.url).hostname.replace(/^www\./,''),'shopphi-flank-brand'),
+       span('Source image unavailable · open the card','shopphi-flank-visual-note'));
+     },{once:true});art.append(img);
+    }else{
+     art.classList.add('shopphi-flank-no-photo');
+     art.append(span(c.merchant||c.title,'shopphi-flank-brand'),
+      span('Explore the original source','shopphi-flank-visual-note'));
     }
-    link.append(span(c.title,'shopphi-flank-title'));
+    link.append(art,span(c.title,'shopphi-flank-title'));
     if(c.price&&c.type==='shop-item')link.append(span(c.price,'shopphi-flank-price'));
-    link.append(span(c.reason,'shopphi-flank-reason'));
-    link.addEventListener('click',()=>{ // Local anonymous choice; never a reward or paid impression.
+    if(c.reason)link.append(span(c.reason,'shopphi-flank-reason'));
+    link.append(span(internal?'Open interactive Quick Card →':'Open original offer →','shopphi-flank-cta'));
+    link.addEventListener('click',()=>{ // Local rank rotation only; never financial or viewability reporting.
      exposure[c.id]=Math.min(200,(exposure[c.id]||0)+1);
     });
     parent.append(link);
+    // A candidate being chosen isn't a paid impression, conversion or reward.
     exposure[c.id]=Math.min(200,(exposure[c.id]||0)+1);
    }
+   showPage();
    heading.hidden=false;receipt.hidden=false;
-   receipt.textContent=visible.length+' of 6 slots filled with actual '+(lane.id==='neutral'?'non-targeted':'contextual')+
-    ' cards/offers. Sponsored placements are labeled; the remaining slots are unfilled.';
+   const sponsored=visible.filter(c=>c.type==='sponsored').length;
+   receipt.textContent=visible.length+' related, working card links · '+sponsored+
+    ' verified sponsored offers · '+(visible.length-sponsored)+' independent source cards.'+
+    (lane.sensitive?' Personalized advertising disabled for this category.':'');
   }
   function siteCards(){
    const result=[];
@@ -158,12 +199,20 @@ if(typeof document!=='undefined'){
     const source=node.querySelector('a[href^="https://"]');
     if(!httpsUrl(source?.href))continue;
     const title=node.dataset.sourceName||node.querySelector('h3')?.textContent||'';
+    const image=node.querySelector('.premium-selected img, .iqc-media img, .iqc-card-art img, img[src]')?.getAttribute('src')||'';
+    let actualImage='';try{actualImage=httpsUrl(new URL(image,location.href).href)}catch{}
     const c=normalizeCandidate({id:'site-'+id,sourceId:id,title,url:'https://quantaphi.org/?card=source-'+encodeURIComponent(id),
-     type:'website-card',category:node.querySelector('.iqc-kind')?.textContent||'',description:node.textContent?.slice(0,180)});
+     image:actualImage,type:'website-card',category:node.querySelector('.iqc-kind')?.textContent||'',
+     description:node.textContent?.slice(0,220),merchant:node.dataset.sourceName||title});
     if(c)result.push(c);
    }
    return result;
   }
+  // A new provider bank may mount after the first async fetch; refresh the
+  // visible companions as soon as real registered source cards arrive.
+  window.addEventListener('quantaphi:source-cards-ready',()=>{
+   if(active)void update(active).catch(()=>{});
+  });
   async function inventory(lane){
    const key=lane.id,prior=cache.get(key);
    if(prior&&Date.now()-prior.time<60000)return prior.cards;
@@ -199,9 +248,10 @@ if(typeof document!=='undefined'){
   async function update(detail){
    const revision=++seq;active=detail||null;
    if(!active||document.body.classList.contains('oracle-shelf-open')){
-    grid.hidden=true;heading.hidden=true;receipt.hidden=true;before.replaceChildren();after.replaceChildren();return;
+    grid.hidden=true;heading.hidden=true;receipt.hidden=true;navigation.hidden=true;
+    before.replaceChildren();after.replaceChildren();return;
    }
-   grid.hidden=false;heading.hidden=false;receipt.hidden=false;
+   grid.hidden=true;heading.hidden=true;navigation.hidden=true;receipt.hidden=false;
    before.replaceChildren();after.replaceChildren();
    const lane=contextFor(active);
    receipt.textContent='Checking approved Quick Cards and live AdPhi offers…';
@@ -217,7 +267,8 @@ if(typeof document!=='undefined'){
    draw(result,lane);
   }
   window.addEventListener('quantaphi:switchboard-change',e=>{void update(e.detail).catch(()=>{
-   if(active){before.replaceChildren();after.replaceChildren();receipt.textContent='Companion offers are temporarily unavailable. Original Quick Card is still usable.';}
+   if(active){grid.hidden=true;navigation.hidden=true;before.replaceChildren();after.replaceChildren();
+    receipt.textContent='Companion offers are temporarily unavailable. Original Quick Card is still usable.';}
   })});
   // The deck may have selected its first card before this module finished loading.
   void update(detailFromStage());
