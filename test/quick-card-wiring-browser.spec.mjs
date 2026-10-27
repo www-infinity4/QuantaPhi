@@ -16,6 +16,7 @@ test('Unknown site never gains StarMaker login, and builder prefill requires exp
  await page.goto(base+'/quick-card-wiring.html?website=https%3A%2F%2Fexample.org%2F',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#qwsCurrent')).toContainText('Unregistered public website');
  await expect(page.locator('#qwsSignin')).toBeHidden();
+ await expect(page.locator('#qwsSignin')).toHaveAttribute('hidden','');
  await expect(page.locator('#qwsJSON')).toHaveValue(/"providerLogin": null/);
  await page.locator('#qwsPublish').click();
  await expect(page).toHaveURL(/quick-card-builder.html/);
