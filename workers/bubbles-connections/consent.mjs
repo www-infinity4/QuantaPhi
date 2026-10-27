@@ -3,7 +3,7 @@ import {digest, randomToken} from './vault.mjs';
 import {PROVIDERS, authorizeConnection} from './authorization.mjs';
 
 async function completionStep(stage,operation){
- try{return await operation();}catch(error){if(error&&typeof error==='object')error.connectionStage=stage;throw error;}
+ try{return await operation();}catch(error){if(error&&typeof error==='object'&&!error.connectionStage)error.connectionStage=stage;throw error;}
 }
 // Storage must implement Durable Object transactional get/put/delete. This
 // service is called only after a host authenticates its user and session.
@@ -51,16 +51,27 @@ export class ConsentService {
     if(code!==undefined&&(typeof code!=='string'||!code||code.length>4096))
       throw Error('callback_invalid');
     const key=prefix+'state:'+await digest(state),handoffKey=prefix+'handoff:'+await digest(state);
-    return this.storage.transaction(async tx=>{
-      const sealed=await tx.get(key);
+    return completionStep('handoff_transaction',()=>this.storage.transaction(async tx=>{
+      const sealed=await completionStep('handoff_read',()=>tx.get(key));
       if(!sealed)throw Error('state_invalid_or_used');
-      const pending=await this.vault.open(sealed,key);
+      const pending=await completionStep('handoff_decrypt',()=>this.vault.open(sealed,key));
       if(pending.provider!==provider||pending.userId!==userId||pending.expiresAt<=this.now())
         throw Error('state_invalid_or_used');
-      if(await tx.get(handoffKey))throw Error('callback_already_received');
-      await tx.put(handoffKey,{...await this.vault.seal({code:code||null,error:error?'provider_declined':null},handoffKey),expiresAt:pending.expiresAt});
+      const incoming={code:code||null,error:error?'provider_declined':null};
+      const existing=await completionStep('handoff_read',()=>tx.get(handoffKey));
+      if(existing){
+        // Chrome may repeat the exact callback after redirect/recovery.
+        // Accept only an identical, previously sealed payload; never replace
+        // a one-use authorization code with a different one.
+        const saved=await completionStep('handoff_decrypt',()=>this.vault.open(existing,handoffKey));
+        if(saved.code===incoming.code && saved.error===incoming.error)
+          return {received:true,duplicate:true};
+        throw Error('callback_already_received');
+      }
+      const encrypted=await completionStep('handoff_encrypt',()=>this.vault.seal(incoming,handoffKey));
+      await completionStep('handoff_store',()=>tx.put(handoffKey,{...encrypted,expiresAt:pending.expiresAt}));
       return {received:true};
-    });
+    }));
   }
   async handoffStatus({userId,sessionId,provider,state}) {
     const prefix=await this.namespace(userId),sessionHash=await this.session(sessionId);
