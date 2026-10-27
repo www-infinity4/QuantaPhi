@@ -29,13 +29,15 @@ export function callbackPage(provider,result='') {
   if(!['google','github','cloudflare'].includes(provider))return new Response('Unknown provider',{status:404});
   const message=result==='received'
     ? 'Authorization received securely. Return to Bubbles to verify and finish connecting your account.'
+    : result==='declined'
+      ? 'Cloudflare declined the requested access. No authorization was completed. Return to Bubbles to review your connection.'
     : result==='failed'
       ? 'The authorization could not be received. Return to Bubbles and retry the sign-in.'
       : 'Return to Bubbles to check your account connection.';
   // The callback has already redirected away from the provider code. Offer
   // user-initiated navigation to the registered Android return intent or to
   // the Chrome/PWA account page. Neither link carries OAuth state or tokens.
-  const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f4f0"><title>Return to Bubbles</title><link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1"></head><body class="bubbles-auth-page"><main class="bubbles-auth-shell"><article class="auth-return-card"><h1>Return to Bubbles</h1><p>'+message+'</p><p><a class="auth-action auth-primary" href="/bubbles.html">Continue in Bubbles</a><a class="auth-action" href="quantaphi-bubbles://return">Return to Bubbles Android app</a></p><p><a href="/bubbles-accounts.html">Account connections</a></p><p class="auth-intro">Connection is not confirmed until Bubbles checks your account securely.</p></article></main><script type="module" src="/bubbles-auth-return.mjs?v=20261026-oracle-auth1"></script></body></html>';
+  const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f4f0"><title>Return to Bubbles</title><link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1"></head><body class="bubbles-auth-page"><main class="bubbles-auth-shell"><article class="auth-return-card"><h1>Return to Bubbles</h1><p>'+message+'</p><p><a class="auth-action auth-primary" href="/bubbles.html">Continue in Bubbles</a><a class="auth-action" href="quantaphi-bubbles://return">Return to Bubbles Android app</a></p><p><a href="/bubbles-accounts.html">Account connections</a></p><p class="auth-intro">Connection is not confirmed until Bubbles checks your account securely.</p></article></main><script type="module" src="/bubbles-auth-return.mjs?v=20261026-oauth-finalize2"></script></body></html>';
   return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store',
     'Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
     'X-Content-Type-Options':'nosniff'}});
@@ -69,7 +71,7 @@ export async function handleConnections(request,env,resolveService) {
       const service=await resolveService(locator.userId);
       await service.handoff({userId:locator.userId,provider,state,
         ...(denied?{error:true}:{code})});
-      result='received';
+      result=denied?'declined':'received';
     }catch{
       // Never return provider codes or detailed state errors to the browser.
     }

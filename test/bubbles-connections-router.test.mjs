@@ -235,3 +235,12 @@ test('public scope inventory is session-free, secret-free, and never grants muta
   const blocked=await handleConnections(new Request(url,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}),configured,()=>assert.fail('no mutation'));
   assert.equal(blocked.status,403);
 });
+
+test('Cloudflare callback return distinguishes decline from server failure without exposing codes',async()=>{
+ const {callbackPage}=await import('../workers/bubbles-connections/router.mjs');
+ const denied=await callbackPage('cloudflare','declined').text();
+ const failed=await callbackPage('cloudflare','failed').text();
+ assert.match(denied,/declined the requested access/);
+ assert.match(failed,/authorization could not be received/);
+ assert.doesNotMatch(denied,/access_token|refresh_token|client_secret/);
+});
