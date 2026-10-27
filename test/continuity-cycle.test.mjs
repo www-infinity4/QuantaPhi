@@ -289,3 +289,47 @@ test('future-dated or wrong-resource cache entries cannot suppress a real source
   report = await observe(f.env, async () => new Response('denied', {status: 403}), f.at, 2, bad);
   assert.equal(report.tracks.find(t => t.id === 'build').state, 'unreachable');
 });
+
+test('internal transport failures use only fixed public comparisons and remain visible', async () => {
+  const f = fixture(), publicReads = [];
+  for (const name of ['SITE', 'BROWSER', 'TOOLS', 'CONNECTIONS', 'TRAFFIC'])
+    f.env[name].fetch = async () => {throw new TypeError('transport unavailable');};
+  const expected = new Map([
+    ['https://bubbles-cloud-browser.marvaseater.workers.dev/health', 'bubbles-cloud-browser'],
+    ['https://bubbles-tools.marvaseater.workers.dev/health', 'bubbles-tools'],
+    ['https://quantaphi.org/api/bubbles/connections/health', 'bubbles-connections'],
+  ]);
+  const fetcher = async (url, opts) => {
+    if (url.startsWith('https://api.github.com/')) return f.fetcher(url, opts);
+    publicReads.push(url);
+    assert.equal(opts.method, 'GET');
+    assert.equal(opts.headers.Authorization, undefined);
+    assert.equal(opts.headers.Cookie, undefined);
+    if (expected.has(url)) return json({ok: true, service: expected.get(url)});
+    if (url === 'https://quantaphi.org/') return html('<html><meta name="viewport" content="width=device-width"></html>');
+    if (url === 'https://quantaphi.org/api/site-traffic') return json({site: 'quantaphi.org', requests: 10,
+      pageViews: 4, fetchedAt: new Date(f.at).toISOString(), since: '2026-10-04'});
+    throw Error('arbitrary_public_url');
+  };
+  const report = await observe(f.env, fetcher, f.at, 1);
+  const qa = report.tracks.find(t => t.id === 'qa');
+  assert.equal(qa.state, 'attention', 'public success cannot hide the internal failure');
+  assert.ok(qa.probes.every(p => p.state === 'reachable' && p.transport === 'public-fallback' && p.internalProbeError));
+  assert.equal(report.tracks.find(t => t.id === 'operations').traffic.requests, 10);
+  assert.equal(report.tracks.find(t => t.id === 'design').transport, 'public-fallback');
+  assert.equal(report.observedAuthenticatedSessions, 0);
+  assert.equal(publicReads.length, 5);
+});
+
+test('authentication denials are never retried through a public route', async () => {
+  const f = fixture(); let publicCalls = 0;
+  f.env.BROWSER.fetch = async () => new Response('denied', {status: 403});
+  const report = await observe(f.env, async (url, opts) => {
+    if (!url.startsWith('https://api.github.com/')) publicCalls++;
+    return f.fetcher(url, opts);
+  }, f.at, 1);
+  assert.equal(publicCalls, 0);
+  const browser = report.tracks.find(t => t.id === 'qa').probes.find(p => p.service === 'bubbles-cloud-browser');
+  assert.equal(browser.state, 'unreachable');
+  assert.equal(browser.reason, 'upstream_http_403');
+});

@@ -2,7 +2,7 @@
   "name": "continuity-session-coordinator",
   "main": "worker.mjs",
   "compatibility_date": "2026-10-27",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "observability": {"enabled": true},
   "vars": {"CYCLE_ENABLED": "false"},
   "triggers": {"crons": ["*/5 * * * *"]},

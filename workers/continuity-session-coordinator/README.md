@@ -23,6 +23,14 @@ never renewed by reuse. A cached/stale CI result cannot establish current-head C
 lift a hold, authorize execution or prove a release. Site/service health and traffic
 are still read on every five-minute cycle.
 
+An internal transport failure (or 502/503/504) can be compared with the matching
+fixed public endpoint. The report records the transport and internal failure;
+it keeps that track in attention even if the public read succeeds. Caller headers
+are never forwarded. Authentication denials, malformed bodies and size-limit
+failures do not trigger this fallback. This comparison cannot grant owner access.
+The explicit `global_fetch_strictly_public` flag sends these comparisons through
+Cloudflare's public routing and security checks rather than the zone origin.
+
 `GET /health` describes this monitor. `GET /status` returns the latest completed
 cycle and its original check time. It returns 503 after two missed intervals;
 refreshing either URL cannot run a cycle or extend a grant. A checked health URL

@@ -15,6 +15,13 @@ const SOURCE_URLS = Object.freeze({
   build: 'https://github.com/www-infinity4/QuantaPhi/pull/1144',
   integra: 'https://github.com/www-infinity4/QuantaPhi/issues/525',
 });
+const PUBLIC_PROBES = Object.freeze({
+  SITE: 'https://quantaphi.org/',
+  BROWSER: 'https://bubbles-cloud-browser.marvaseater.workers.dev/health',
+  TOOLS: 'https://bubbles-tools.marvaseater.workers.dev/health',
+  CONNECTIONS: 'https://quantaphi.org/api/bubbles/connections/health',
+  TRAFFIC: 'https://quantaphi.org/api/site-traffic',
+});
 export const TRACKS = Object.freeze([
   ['coordinator', 'Coordinator'], ['history', 'Research & history'],
   ['design', 'Product & design'], ['build', 'Build & integration'],
@@ -116,6 +123,19 @@ function binding(env, name) {
   return (url, options) => env[name].fetch(url, options);
 }
 
+async function publicProbe(env, name, url, kind, max, fetcher) {
+  try {return {data: await read(binding(env, name), url, kind, max), transport: 'service-binding', internalError: null};}
+  catch (error) {
+    const reason = failure(error);
+    // Only these fixed, credential-free public reads may fall back on transport
+    // errors. Never turn an auth denial, invalid body or size limit into a retry.
+    if (!Object.hasOwn(PUBLIC_PROBES, name) ||
+        !/^(upstream_unavailable|binding_missing|upstream_http_50[234])$/.test(reason)) throw error;
+    return {data: await read(fetcher, PUBLIC_PROBES[name], kind, max),
+      transport: 'public-fallback', internalError: reason};
+  }
+}
+
 // This cache contains public source observations only. It cannot authorize work
 // or turn an older CI result into current-head/release acceptance.
 export async function sourceCache(db, at) {
@@ -169,12 +189,15 @@ export async function observe(env, fetcher, at, cycleId, cache = {}) {
       });
     }),
     inspect('design', async () => {
-      const page = await read(binding(env, 'SITE'), 'https://quantaphi.org/', 'html', 1_048_576);
+      const probe = await publicProbe(env, 'SITE', 'https://quantaphi.org/', 'html', 1_048_576, fetcher);
+      const page = probe.data;
       const viewport = /<meta\b[^>]*name=["']viewport["']/i.test(page.text);
-      return track('design', viewport ? 'checked' : 'attention',
-        viewport ? 'Public home HTML and mobile viewport declaration read; visual acceptance remains separate'
-          : 'Home HTML has no verified mobile viewport declaration',
-        {url: 'https://quantaphi.org/', visualAcceptance: false});
+      return track('design', viewport && !probe.internalError ? 'checked' : 'attention',
+        (viewport ? 'Public home HTML and mobile viewport declaration read; visual acceptance remains separate'
+          : 'Home HTML has no verified mobile viewport declaration') +
+          (probe.internalError ? '. Public endpoint verified; internal routing needs attention' : ''),
+        {url: 'https://quantaphi.org/', visualAcceptance: false,
+          transport: probe.transport, internalProbeError: probe.internalError});
     }),
     source('build', async () => {
       const pr = await read(fetcher, API + '/pulls/1144');
@@ -222,30 +245,34 @@ export async function observe(env, fetcher, at, cycleId, cache = {}) {
       ];
       const probes = await Promise.all(targets.map(async ([name, url, service]) => {
         try {
-          const doc = await read(binding(env, name), url);
+          const probe = await publicProbe(env, name, url, 'json', undefined, fetcher);
+          const doc = probe.data;
           if (doc?.ok !== true || doc.service !== service) throw Error('schema_invalid');
-          return {service, state: 'reachable'};
+          return {service, state: 'reachable', transport: probe.transport, internalProbeError: probe.internalError};
         } catch (error) {return {service, state: 'unreachable', reason: failure(error)};}
       }));
-      return track('qa', probes.every(p => p.state === 'reachable') ? 'checked' : 'attention',
+      return track('qa', probes.every(p => p.state === 'reachable' && !p.internalProbeError) ? 'checked' : 'attention',
+        (probes.some(p => p.internalProbeError) ? 'Public endpoint comparison completed; internal routing needs attention. ' : '') +
         'Public service health checks; authenticated sign-in, model responses and Android acceptance remain unverified',
         {probes, authenticatedAcceptance: false});
     }),
     inspect('operations', async () => {
-      const doc = await read(binding(env, 'TRAFFIC'), 'https://quantaphi.org/api/site-traffic');
+      const probe = await publicProbe(env, 'TRAFFIC', 'https://quantaphi.org/api/site-traffic', 'json', undefined, fetcher);
+      const doc = probe.data;
       const stamp = Date.parse(doc?.fetchedAt);
       if (doc.site !== 'quantaphi.org' || !Number.isFinite(stamp) || stamp > at + 60_000 ||
           !Number.isSafeInteger(doc.requests) || doc.requests < 0 ||
           !Number.isSafeInteger(doc.pageViews) || doc.pageViews < 0) throw Error('schema_invalid');
       const fresh = at - stamp <= 60 * 60_000;
-      return track('operations', fresh ? 'checked' : 'attention',
-        fresh ? 'Traffic data refreshed within one hour; Gemini batching awaits an authorized runtime adapter'
-          : 'Traffic data older than one hour; inspect the existing traffic refresh service', {
+      return track('operations', fresh && !probe.internalError ? 'checked' : 'attention',
+        (fresh ? 'Traffic data refreshed within one hour; Gemini batching awaits an authorized runtime adapter'
+          : 'Traffic data older than one hour; inspect the existing traffic refresh service') +
+          (probe.internalError ? '. Public endpoint verified; internal routing needs attention' : ''), {
         url: 'https://quantaphi.org/api/site-traffic', traffic: {
           requests: doc.requests, pageViews: doc.pageViews, fetchedAt: doc.fetchedAt,
           since: /^\d{4}-\d{2}-\d{2}$/.test(doc.since || '') ? doc.since : null,
           lifetimeVerified: false, fresh,
-        }, geminiRuntimeConnected: false,
+        }, geminiRuntimeConnected: false, transport: probe.transport, internalProbeError: probe.internalError,
       });
     }),
   ]);
