@@ -86,8 +86,8 @@ test('recorded anonymous exposure reduces repeated winning, not creates StarCoin
 test('six responsive positions preserve original viewer and scripts, with real provenance labels',()=>{
  const deck=src('oracle-card-deck.js'),page=src('index.html'),
   shop=src('shop-ad-phi.js'),css=src('shop-phi-switchboard.css'),engine=src('shop-phi-switchboard.mjs');
- assert.match(page,/shop-phi-switchboard\.mjs\?v=20261027-six-flanks1/);
- assert.match(page,/shop-phi-switchboard\.css\?v=20261027-six-flanks1/);
+ assert.match(page,/shop-phi-switchboard\.mjs\?v=20261027-readability2/);
+ assert.match(page,/shop-phi-switchboard\.css\?v=20261027-readability2/);
  assert.match(deck,/quantaphi:switchboard-change/);
  assert.match(shop,/quantaphi:switchboard-change/);
  assert.match(engine,/stage\.parentNode\.insertBefore\(grid,stage\)/);
@@ -96,4 +96,29 @@ test('six responsive positions preserve original viewer and scripts, with real p
  assert.match(engine,/SPONSORED/);
  assert.match(css,/@media\(max-width:480px\)/);
  assert.match(css,/repeat\(3,minmax\(0,1fr\)\)/);
+});
+
+test('readable mobile cards paginate two at a time and avoid blank ad placeholders',()=>{
+ const css=src('shop-phi-switchboard.css'),module=src('shop-phi-switchboard.mjs');
+ assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
+ assert.match(css,/shopphi-flank-visual\{height:clamp\(120px,39vw,165px\)/);
+ assert.match(css,/shopphi-flank-cta\{min-height:48px\}/);
+ assert.match(module,/next\.addEventListener\('click'/);
+ assert.match(module,/prev\.addEventListener\('click'/);
+ assert.match(module,/card\.hidden=index<start\|\|index>=start\+2/);
+ assert.match(module,/if\(!visible\.length\)/);
+ assert.doesNotMatch(module,/Awaiting a verified offer/);
+ assert.match(module,/link\.target=internal\?'_self':'_blank'/);
+ assert.match(module,/actualImage=httpsUrl\(new URL\(image,location\.href\)\.href\)/);
+ assert.match(module,/window\.addEventListener\('load'/);
+ assert.match(module,/window\.addEventListener\('quantaphi:source-cards-ready'/);
+});
+test('missing image shows an honest source identity instead of invented product photography',()=>{
+ const module=src('shop-phi-switchboard.mjs'),css=src('shop-phi-switchboard.css');
+ assert.match(module,/shopphi-flank-no-photo/);
+ assert.match(module,/Source image unavailable/);
+ assert.match(module,/Open interactive Quick Card/);
+ assert.match(css,/\.shopphi-flank-brand/);
+ assert.match(css,/height:165px/);
+ assert.match(css,/\.shopphi-flank\[hidden\]\{display:flex!important\}/);
 });
