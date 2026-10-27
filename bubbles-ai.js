@@ -3753,6 +3753,17 @@ async function checkForSiteUpdate(){
 window.QuantaBubbles={
  siteRevision,
  sharedMainThread:SHARED_MAIN_THREAD,
+ // The first-party PWA updater must preserve the active chat and must not
+ // interrupt a reply, voice request, selected image or unsent owner draft.
+ // This grants no new account, wallet, browser or Robot Brain authority.
+ prepareSiteUpdateReload:()=>{
+  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
+  if(String(input.value||'').trim()||pendingImage||pendingImages.length||photoInput.files?.length)return false;
+  // With history disabled, reloading a nonempty chat would lose its turns.
+  if(!keepChat&&messages.length)return false;
+  if(keepChat&&messages.length&&!saveThread())return false;
+  try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1');return true}catch{return false}
+ },
  // The native X hides the outer Android window, not this inner WebView.
  // Begin another visually empty chat only after a real owner reopening.
  startFreshOnReopen:()=>{
