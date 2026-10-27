@@ -25,6 +25,8 @@ on:
       - 'brand-product-cards.css'
       - 'test/brand-product-cards.test.mjs'
       - 'source-quick-card.html'
+      - 'x-money.html'
+      - 'test/x-money-card.test.mjs'
       - 'index.html'
       - 'world-series-news.mjs'
       - 'church-iam-card.js'
@@ -82,7 +84,7 @@ jobs:
           node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
-        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs
+        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs
       - name: Check assimilation contrast and action contracts
         run: node --test test/assimilation-mobile-accessibility.test.mjs
       - name: Validate real-brand retail products and APK disclosure
