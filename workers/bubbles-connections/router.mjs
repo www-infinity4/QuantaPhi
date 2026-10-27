@@ -134,6 +134,10 @@ export async function handleConnections(request,env,resolveService) {
       return json(origin,{ok:true,...await pair.redeemPair({code:body.code})});
     }
     const identity = await walletIdentity(request,env);
+    // Application identity is verified by Unified Wallet. Provider token
+    // storage and OAuth configuration are separate from this sign-in.
+    if(request.method==='GET'&&url.pathname===PREFIX+'/session')
+      return json(origin,{ok:true,walletVerified:true});
     if(url.pathname===PREFIX+'/pair/create'&&request.method==='POST'){
       if(request.headers.get('Authorization')?.startsWith('Bearer bc_'))throw Error('verified_wallet_required');
       const pair=env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1'));
@@ -189,7 +193,7 @@ export async function handleConnections(request,env,resolveService) {
             scopeSetupRequired:cloudflareAppReady&&!cloudflareFullReady}: {})};
       };
       const github=state('github'),cloudflare=state('cloudflare');
-      return json(origin,{ok:true,mode:'preview',enforced:false,
+      return json(origin,{ok:true,walletVerified:true,mode:'preview',enforced:false,
         ready:github.permissionsApproved&&cloudflare.permissionsApproved,
         providers:{github,cloudflare}});
     }
@@ -200,6 +204,11 @@ export async function handleConnections(request,env,resolveService) {
     const raw = await request.text(); if (raw.length > 8192) return json(origin,{ok:false,error:'too_large'},413);
     let body; try {body = JSON.parse(raw);} catch {return json(origin,{ok:false,error:'invalid_json'},400);}
     if (!body || typeof body !== 'object' || Array.isArray(body)) return json(origin,{ok:false,error:'invalid_json'},400);
+    if(url.pathname===PREFIX+'/setup/check'){
+      const result=await service.checkSetup(identity);
+      if(result?.connectionError)throw Error(result.connectionError);
+      return json(origin,{ok:true,...result});
+    }
     if (url.pathname === PREFIX+'/handoff/status' || url.pathname === PREFIX+'/handoff/finish') {
       const input={...identity,provider:body.provider,state:body.state};
       const result=url.pathname.endsWith('/finish')

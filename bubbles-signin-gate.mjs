@@ -1,7 +1,7 @@
 import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261026-completion7';
 
 export function summarizeGate(payload){
- const summary={ready:false,signedIn:false,providers:{},state:'unverified'};
+ const summary={ready:false,signedIn:false,walletVerified:payload?.ok===true&&payload?.walletVerified===true,providers:{},state:'unverified'};
  for(const id of ['github','cloudflare']){
   const record=payload?.providers?.[id];
   const configured=record?.configured===true;
@@ -32,6 +32,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const chat=get('bubblesAICard');
  const retry=get('bubblesRetrySignInCheck');
  const recover=get('bubblesRecoverWallet');
+ const walletIdentity=get('bubblesWalletIdentity');
  const cancel=get('bubblesCancelSignIn');
  const client=new AccountConnections({token:()=>resolveConnectorWalletToken(host),root:host});
  let loading=false,oauthInProgress=false,latest=null,lastChecked=0,refreshInFlight=null;
@@ -126,7 +127,11 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   // Account sign-in and project authorization are separate. Only the server can
   // approve a tool's permissions; hiding this form never authorizes a tool.
   gate.dataset.ready=String(summary.ready);
-  gate.hidden=summary.ready;
+  gate.hidden=summary.ready||summary.walletVerified;
+  if(walletIdentity){
+   walletIdentity.hidden=!summary.walletVerified;
+   walletIdentity.textContent=summary.walletVerified?'Signed in to Bubbles with your Unified Wallet.':'';
+  }
   if(summary.ready){
    clearReturnNote();returnIssue='';
    setStatus('You’re signed in with the required permissions.');
@@ -144,14 +149,21 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    loading=true;updateButtons();
    setStatus('Checking your sign-in…');
    try {
-    const data=await client.call('/gate/status');
+    const session=await client.call('/session');
+    let data;
+    try{data=await client.call('/gate/status');}
+    catch(error){
+     if(session?.walletVerified!==true)throw error;
+     data={ok:true,ready:false,providers:{}};
+    }
     lastChecked=Date.now();
-    return render(data);
+    return render({...data,walletVerified:session?.walletVerified===true});
    } catch(error) {
     latest=null;gate.hidden=false;gate.dataset.ready='false';
+    if(walletIdentity){walletIdentity.hidden=true;walletIdentity.textContent='';}
     const code=String(error?.message||'');
     if(code==='verified_wallet_required'){
-     setStatus('Cloudflare sign-in requires your verified Bubbles wallet in this browser. Restore that wallet first, then tap Sign in with Cloudflare again.');
+     setStatus('Sign in with StarQuest to connect your existing Unified Wallet to Bubbles.');
      if(recover)recover.hidden=false;
     }else if(code==='connection_timeout'){
      setStatus('The account check timed out. Tap Sign in with Cloudflare to retry.');

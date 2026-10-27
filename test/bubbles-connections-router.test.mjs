@@ -13,6 +13,25 @@ test('router rejects foreign origins and unauthenticated callers before resolvin
   assert.equal((await handleConnections(request('/accounts',{origin:'https://evil.test'}),env,resolve)).status,403);
   assert.equal((await handleConnections(request('/accounts',{authorization:''}),env,resolve)).status,401);
 });
+
+test('Unified Wallet identity remains usable without provider configuration or a connection Durable Object',async()=>{
+ const result=await handleConnections(request('/session'),{...env,CONNECTIONS_READY:false},()=>assert.fail('sign-in must not access provider credentials'));
+ assert.deepEqual(await result.json(),{ok:true,walletVerified:true});
+ const missing=await handleConnections(request('/session',{authorization:''}),env,()=>assert.fail());
+ assert.equal(missing.status,401);
+ const foreign=await handleConnections(request('/session',{origin:'https://evil.test'}),env,()=>assert.fail());
+ assert.equal(foreign.status,403);
+});
+
+test('setup check requires a verified wallet and cannot use a body-supplied identity',async()=>{
+ let called=0;
+ const resolve=()=>({checkSetup:async input=>{called++;assert.equal(input.userId,'verified-alice');
+  return {vault:'passed',storage:'passed',client:{status:'client_accepted'},accountVerified:false};}});
+ const good=await handleConnections(request('/setup/check',{method:'POST',body:{userId:'attacker'}}),env,resolve);
+ assert.equal(good.status,200);assert.equal((await good.json()).accountVerified,false);
+ const bad=await handleConnections(request('/setup/check',{method:'POST',authorization:'',body:{}}),env,resolve);
+ assert.equal(bad.status,401);assert.equal(called,1);
+});
 test('same-origin browser GET works without Origin while cross-site and unsafe requests stay blocked',async()=>{
   const headers={Authorization:bearer,'Sec-Fetch-Site':'same-origin'};
   const url='https://quantaphi.org'+PREFIX+'/catalog';
@@ -142,6 +161,7 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
  assert.equal(result.enforced,false);
  assert.equal(result.mode,'preview');
  assert.equal(result.ready,true);
+ assert.equal(result.walletVerified,true);
  assert.equal(result.providers.cloudflare.permissionsApproved,true);
  assert.equal(result.providers.github.permissionsApproved,true);
  assert.ok(!JSON.stringify(result).includes('not-exposed'));

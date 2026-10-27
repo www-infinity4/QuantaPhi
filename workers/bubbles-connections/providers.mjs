@@ -1,4 +1,5 @@
 // Only trusted server configuration supplies clients, secrets and callbacks.
+import {connectionFailureCode} from './completion.mjs';
 // A 386-scope OAuth registration exceeds Cloudflare's 5 KB per-Worker-secret
 // limit. Prefer three complete, validated chunks; retain the legacy binding
 // until all chunks have been installed. Never interpret partial writes as full access.
@@ -303,6 +304,24 @@ export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...
   };
   return {
     id:'cloudflare',
+    async checkClient(){
+      // Cloudflare validates the existing confidential client while rejecting
+      // this deliberately fictitious grant. No person is signed in and no
+      // real state or user code is submitted to the provider.
+      try {
+        await tokenResponse(await request('https://dash.cloudflare.com/oauth2/token',
+          form({grant_type:'authorization_code',client_id:config.clientId,redirect_uri:redirectUri,
+            code:'bubbles-setup-probe-'+crypto.randomUUID(),
+            code_verifier:crypto.randomUUID().replaceAll('-','')+crypto.randomUUID().replaceAll('-','')})),
+          'cloudflare_exchange');
+        return {status:'unverified',reason:'unexpected_provider_response'};
+      } catch(error) {
+        const reason=connectionFailureCode(error);
+        return {status:/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_grant$/.test(reason)
+          ?'client_accepted':/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_client$/.test(reason)
+            ?'client_rejected':'unverified',reason};
+      }
+    },
     async accounts({accessToken}){
       // This endpoint uses only the connected user's encrypted token. No platform
       // account token, user-supplied URL or arbitrary account identifier is used.

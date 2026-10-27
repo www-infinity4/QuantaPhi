@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bubbles Connection Check</title><link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1"></head>
+<body class="bubbles-auth-page"><main class="bubbles-auth-shell"><article class="auth-return-card">
+<a href="/bubbles.html">← Bubbles</a><h1>Check Bubbles connection setup</h1>
+<p>Use your verified StarQuest session to check Bubbles’ secure storage and Cloudflare app configuration.</p>
+<button class="auth-action auth-primary" id="check">Check connection setup</button>
+<p id="status" role="status">Ready to check.</p><pre id="result" style="white-space:pre-wrap;overflow-wrap:anywhere"></pre>
+</article></main><script type="module">
+import {AccountConnections,resolveConnectorWalletToken} from '/bubbles-connections.mjs?v=20261026-completion7';
+const client=new AccountConnections({token:()=>resolveConnectorWalletToken(window),timeoutMs:25000});
+const button=document.getElementById('check'),status=document.getElementById('status'),result=document.getElementById('result');
+button.addEventListener('click',async()=>{
+ button.disabled=true;status.textContent='Checking the existing connection configuration…';result.textContent='';
+ try {
+  const data=await client.call('/setup/check',{});
+  status.textContent=data.client?.status==='client_accepted'?'App credentials, encryption and storage checks completed.':
+   data.client?.status==='client_rejected'?'Cloudflare rejected Bubbles’ existing app credentials. The connector configuration needs repair.':
+   'The configuration check needs attention.';
+  result.textContent=JSON.stringify({encryption:data.vault,storage:data.storage,client:data.client,accountVerified:data.accountVerified},null,2);
+ }catch(error){status.textContent=error.message==='too_many_requests'?'Wait 30 seconds before checking again.':'Connection setup check failed: '+error.message;}
+ finally {button.disabled=false;}
+});
+</script></body></html>

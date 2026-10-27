@@ -6,6 +6,7 @@ import {executeGoogleRead,selectGoogleResource} from './google-read.mjs';
 import {handleConnections} from './router.mjs';
 import {ConnectorPairing} from './pairing.mjs';
 import {connectionResult} from './completion.mjs';
+import {checkConnectionSetup} from './setup-check.mjs';
 
 export class UserConnections extends DurableObject {
   constructor(ctx,env) {
@@ -70,6 +71,7 @@ export class UserConnections extends DurableObject {
   async handoffStatus(input) {return connectionResult(()=>this.service.handoffStatus(input));}
   async finishHandoff(input) {return connectionResult(()=>this.service.finishHandoff(input));}
   async complete(input) {return connectionResult(()=>this.service.complete(input));}
+  async checkSetup(input) {return connectionResult(()=>checkConnectionSetup(this.service,input));}
   async disconnect(input) {return this.service.disconnect(input);}
   async refresh(input) {return this.service.refresh(input);}
   async read(input) {return executeGoogleRead(this.service,input);}

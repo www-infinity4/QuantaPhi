@@ -9,6 +9,7 @@ export const safeConnectionFailure = value => typeof value === 'string' &&
 
 export function connectionFailureCode(error) {
   const message = String(error?.message || '');
+  if(message==='too_many_requests')return message;
   if (safeConnectionFailure(message)) return message;
   const stages = ['state','exchange','seal','store','handoff_read','handoff_decrypt',
     'handoff_store','receipt_seal','receipt_store'];

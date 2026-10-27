@@ -51,6 +51,9 @@
     .bubbles-signin-gate h2{font-size:24px;color:#30243e;margin:0}
     .bubbles-signin-gate>p{margin:8px 0 20px;color:#655c6b;font-size:15px}
     .bubbles-signin-grid{display:grid;gap:16px}
+    .bubbles-starquest-signin{display:block;text-align:center;background:#0070ba;color:#fff;text-decoration:none;font:650 16px system-ui;padding:14px 16px;border-radius:10px;margin-bottom:16px;min-height:48px}
+    .bubbles-starquest-signin:focus-visible{outline:3px solid #298ed4;outline-offset:3px}
+    .bubbles-wallet-identity{max-width:720px;margin:12px auto;color:#286648;font-weight:650}
     .bubbles-signin-provider{min-width:0}
     .bubbles-signin-provider[hidden]{display:none!important}
     .bubbles-signin-provider[data-status="connected"]{border-color:#7fb9a2;background:#f3fbf7}
@@ -149,11 +152,14 @@
     </section>
 
 
-    <!-- Stage 2 preview: chat remains usable until both providers and backup
-         recovery are verified live; no client-side status authorizes tools. -->
+    <p class="bubbles-wallet-identity" id="bubblesWalletIdentity" role="status" hidden></p>
+    <!-- Unified Wallet verifies the Bubbles identity. Connected providers
+         retain their own server-checked permission grants for tools. -->
     <section class="bubbles-signin-gate" id="bubblesSigninGate" data-ready="false" aria-labelledby="bubblesSigninTitle">
       <h2 id="bubblesSigninTitle">Sign in to Bubbles</h2>
       <p id="bubblesSigninStatus" role="status" aria-live="polite">Checking your sign-in…</p>
+      <a class="bubbles-starquest-signin" id="bubblesStarquestSignIn" href="/wallet-recovery.html?signin=starquest&amp;returnTo=/bubbles.html">Sign in with StarQuest</a>
+      <details class="bubbles-signin-help"><summary>Connect accounts for tools</summary>
       <div class="bubbles-signin-grid">
         <article class="bubbles-signin-provider" id="bubblesGithubCard">
           <button id="bubblesGithubSignIn" data-provider="github" type="button" disabled aria-describedby="bubblesGithubStatus">Sign in with GitHub</button>
@@ -165,6 +171,7 @@
           <a id="bubblesRecoverWallet" class="bubbles-wallet-recovery" href="/wallet-recovery.html?verify=1" hidden>Verify existing wallet to finish Cloudflare sign-in</a>
         </article>
       </div>
+      </details>
       <div class="bubbles-signin-controls">
         <button id="bubblesRetrySignInCheck" type="button" class="bubbles-signin-retry">Try again</button>
         <button id="bubblesCancelSignIn" type="button" class="bubbles-signin-retry" hidden>Cancel sign-in</button>
@@ -250,7 +257,7 @@ html.bubble-iframe .bubbles-bottom-nav,body.bubbles-embedded .bubbles-bottom-nav
 </style>
 <footer class="qp-site-footer" aria-label="QuantaPhi site information"><p>QuantaPhi · AI research, media and learning</p><nav aria-label="Legal and site links"><a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a></nav></footer>
   <script type="module">
-    import('/bubbles-signin-gate.mjs?v=20261026-completion7')
+    import('/bubbles-signin-gate.mjs?v=20261026-starquest8')
       .then(({mountBubblesSigninGate})=>mountBubblesSigninGate())
       .catch(()=>{
         const state=document.getElementById('bubblesSigninStatus');
