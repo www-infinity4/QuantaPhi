@@ -45,7 +45,10 @@ test('404 paid ad service does not create fake sponsored ads or six empty boxes'
  await page.setViewportSize({width:360,height:800});await setup(page,{empty:true});
  await page.goto(base+'/?card=source-pcgs',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#oracleCardStage [data-source-id="pcgs"]')).toBeVisible({timeout:30000});
- await expect(page.locator('.shopphi-switchboard-receipt')).not.toHaveText(/Checking approved|temporarily unavailable/, {timeout:28000});
+ await expect(page.locator('.shopphi-switchboard-receipt')).toContainText(/related, working|No verified companion offers/, {timeout:28000});
+ // Empty AdPhi inventory cannot hide, replace or disable the real PCGS search.
+ await expect(page.locator('#oracleCardStage [data-source-id="pcgs"] input[type="search"]')).toBeVisible();
+ await expect(page.locator('#oracleCardStage [data-source-id="pcgs"] button[type="submit"]')).toBeEnabled();
  expect(await page.locator('#oracleCardDeck .shopphi-flank-tag:visible').allTextContents())
   .not.toContain('SPONSORED');
  const cards=page.locator('#oracleCardDeck .shopphi-flank:visible');
