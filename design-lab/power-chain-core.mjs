@@ -25,6 +25,20 @@ export function safeChainResult(target,row){
   return Object.freeze({target,title,url:url.href,snippet:cleanText(row.content||row.snippet||row.description,225)});
  }catch{return null;}
 }
+/** Deterministic first-pass intent router, visible and user-overridable.
+ * It classifies wording; it is NOT an autonomous AI or account authorization. */
+export function inferCircuit(query){
+ const text=cleanText(query,110).toLowerCase();
+ const rules=[
+  {id:'collect',pattern:/coin|dime|morgan|vintage|auction|collect|card|antique|grade|silver dollar|radio/i,reason:'Collector terminology points to listings and attribution sources.'},
+  {id:'research',pattern:/why|how|research|physics|learn|history|science|source|archive|patent|space|study/i,reason:'Research language calls for primary references and archives.'},
+  {id:'shop',pattern:/shop|buy|price|deal|supply|store|product|jeans|tools|parts|retail/i,reason:'Shopping language points to original merchant pages.'},
+  {id:'signal',pattern:/news|today|latest|world|report|trends|market|breaking|current|update/i,reason:'Time-sensitive wording calls for attributed news and signals.'}
+ ];
+ const chosen=rules.filter(r=>r.pattern.test(text));
+ const result=chosen.length?chosen:rules.slice(0,2);
+ return Object.freeze({lanes:result.map(r=>r.id),reason:result.map(r=>r.reason).join(' ')});
+}
 export function planChain({query,lanes=['collect'],limit=12}={}){
  const q=cleanText(query,110);
  if(q.length<3)throw Error('Enter a research intent of at least three characters.');
