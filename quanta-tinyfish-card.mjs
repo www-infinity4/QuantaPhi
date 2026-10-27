@@ -3,7 +3,7 @@
  */
 const SUPPORTED=new Set(['starmaker','youtube','reddit','x','tiktok','cnn','fox-news','yahoo-news','tv-guide','fox-one','fox-one-live-news','facebook','instagram']);
 const UNSUPPORTED_AI=new Set(['chatgpt','gemini','claude','copilot']);
-export const TINYFISH_CARD_ENDPOINT='/api/quick-cards/tinyfish';
+export const TINYFISH_CARD_ENDPOINT='https://continuity-session-coordinator.marvaseater.workers.dev/v1/quick-cards/tinyfish';
 export const tinyfishCardSupported=id=>SUPPORTED.has(String(id||''));
 export const tinyfishIsAi=id=>UNSUPPORTED_AI.has(String(id||''));
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
