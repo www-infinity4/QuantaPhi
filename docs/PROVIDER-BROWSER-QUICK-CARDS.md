@@ -42,3 +42,7 @@ A Levi's card may display authorized product records and the merchant's exact vi
 - Add per-user owned profiles plus consent/revoke only after product, privacy, billing and security review. Do **not** repurpose owner session for public cards.
 - Merchant data and payment integration require authorized product/checkout source; existing Levi's card is merchant-site handoff only.
 - Confirm mobile card UI, swipe arrows and all existing Share / Collect / +1 Build actions after deployment.
+
+### Follow-up live acceptance retry — also blocked
+
+A second TinyFish run targeted Gemini's `rich-textarea` element and attempted keyboard input with live visible checks. Even after clicking the specific editable region and tab navigation, no prompt text appeared. The test was halted without claiming a response. The account remains authenticated, but **Gemini browser chat transport is not operational through the currently tested TinyFish Agent typing method**. Possible next implementation is supported low-level CDP/Playwright input against a separate browser session, with its own verified consent and costs; this is not yet implemented.
