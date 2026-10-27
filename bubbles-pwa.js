@@ -123,7 +123,11 @@
     for (const form of document.querySelectorAll('.ba-composer')) {
       const message = form.querySelector('textarea[aria-label="Message Bubbles"]');
       const image = form.querySelector('.ba-photo-preview');
-      if (String(message?.value || '').trim() || (image && !image.hidden)) return true;
+      // A selected file can still be decoding before its preview appears.
+      // Block reload throughout image preparation, not just after preview.
+      const fileInput = form.querySelector('.ba-photo-file');
+      if (String(message?.value || '').trim() || (image && !image.hidden) ||
+          (fileInput?.files && fileInput.files.length > 0)) return true;
     }
     return false;
   };
