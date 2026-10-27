@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Infinity® Coliseum — Zeus 6.2 and Greek-God Builder Cards</title>
+<meta name="description" content="Explore Infinity Coliseum: a prototype group-building arena with Greek-god experience cards, idea challenges, and project branching.">
+<meta name="theme-color" content="#0b1725">
+<meta property="og:title" content="Infinity® Coliseum — Bring an idea. Find your team.">
+<meta property="og:description" content="Zeus 6.2 and the Greek-God model collection: collaboration, build rooms, and idea jousts. A prototype, not a third-party model subscription.">
+<meta property="og:url" content="https://quantaphi.org/coliseum/">
+<link rel="stylesheet" href="./coliseum.css">
+<script type="module" src="./coliseum.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the arena</a>
+<header class="topbar"><a class="brand" href="/">∞ QUANTAPHI</a><span class="topright">INFINITY® 2026 · PRODUCT LAB</span><a class="home-link" href="/">Home</a></header>
+<main id="main" class="layout">
+<section class="hero" aria-labelledby="hero-title">
+ <div class="hero-art" aria-hidden="true"><div class="lightning">ϟ</div><div class="bolt-lines"></div><div class="temple">▰ ▰ ▰ ▰ ▰</div></div>
+ <div class="hero-copy">
+  <p class="eyebrow">THE FIRST ARENA · ZEUS 6.2</p>
+  <h1 id="hero-title">EXPERIENCE THE<br><em>GOD OF THUNDER.</em></h1>
+  <p class="hero-lead">Build in the Coliseum. Your idea could change everything.</p>
+  <p>Join the arena, choose a sector, pitch your idea, and find collaborators. A Joust challenges the idea—not the person. If one group declines, start a new direction with the builders who believe in it.</p>
+  <div class="hero-buttons"><a class="primary" href="#arena">Enter the Coliseum</a><a class="secondary" href="#models">Explore model cards</a></div>
+  <p class="disclosure">Interactive prototype · Notes and sample votes stay in this browser · No public AI model, paid access or shared room is activated.</p>
+ </div>
+</section>
+<section id="models" class="models" aria-labelledby="models-title">
+ <div class="section-head"><p class="eyebrow">FOUR GODS · ONE NETWORK</p><h2 id="models-title">Choose your arena</h2><p>Experience editions describe Infinity features—not unannounced OpenAI model versions. Each room is designed for a maximum of 1,000 verified members at launch.</p></div>
+ <div id="modelCards" class="model-grid" aria-label="Greek-god model cards"></div>
+</section>
+<section class="plans" aria-labelledby="plans-title">
+ <div class="section-head"><p class="eyebrow">MEMBERSHIP CONCEPT</p><h2 id="plans-title">One pass. Many arenas.</h2></div>
+ <div class="plan-grid">
+  <article class="plan"><strong>Discovery</strong><h3>$0 <span>/month</span></h3><p>Zeus and Hermes introductory experiences.</p><small>Concept · no signup yet</small></article>
+  <article class="plan recommended"><strong>Coliseum Pass</strong><h3>$23 <span>/month</span></h3><p>Eligible sector rooms and Athena collaborative business builds.</p><small>Checkout not connected</small></article>
+  <article class="plan"><strong>Forge Pass</strong><h3>$100 <span>/month</span></h3><p>Includes Coliseum Pass plus the proposed Hephaestus engineering rooms.</p><small>Checkout not connected</small></article>
+ </div>
+ <p class="fineprint">Proposed pricing only. PayPal billing, verified membership, refunds, cancellation controls and server-enforced capacity must be tested before taking payments. Losing a vote does not cancel a membership.</p>
+</section>
+<section id="arena" class="arena" aria-labelledby="arena-title">
+ <div class="arena-heading"><div><p class="eyebrow">THE COLISEUM · BUILDER PREVIEW</p><h2 id="arena-title">The group builder</h2><p>Choose your room, submit a project, discuss its direction, or open a new project branch.</p></div><span class="local-pill">PRIVATE DEVICE DEMO</span></div>
+ <div class="arena-layout">
+  <aside class="rooms"><h3>Select an experience</h3><div id="roomList" class="room-list"></div><h3>Sector directory</h3><div id="sectors" class="sector-list"></div><p class="fineprint">AI replies, real users and live occupancy are not simulated. The room is a private interactive design proof.</p></aside>
+  <div class="workzone">
+   <div class="workzone-top"><div><span class="eyebrow" id="currentRoom">ZEUS 6.2</span><h3 id="roomHeadline">The Thunder Arena</h3></div><div class="mode-toggle" role="group" aria-label="Builder mode"><button id="chatTab" type="button" aria-pressed="false">Chat</button><button id="buildTab" type="button" aria-pressed="true">Build</button></div></div>
+   <p id="roomStatus" class="notice" role="status" aria-live="polite">A local preview, not a connected multiuser room.</p>
+   <section id="buildPane" aria-labelledby="pitchHeading"><h4 id="pitchHeading">Put an idea into the arena</h4>
+    <form id="pitchForm" class="pitch-form">
+     <label for="ideaTitle">Project title</label><input id="ideaTitle" name="title" required minlength="5" maxlength="110" placeholder="A durable electronics repair marketplace">
+     <label for="ideaDescription">What would your group build?</label><textarea id="ideaDescription" name="description" required minlength="12" maxlength="1800" rows="4" placeholder="Describe the user problem, your approach, and what help you need from other builders."></textarea>
+     <button class="primary" type="submit">Enter idea into the Joust</button>
+    </form>
+    <div class="list-heading"><h4>Ideas in this device's arena</h4><small id="ideaCount"></small></div>
+    <div id="ideaList" class="idea-list"></div>
+   </section>
+   <section id="chatPane" hidden aria-labelledby="chatHeading">
+    <h4 id="chatHeading">Builder conversation</h4><p class="fineprint">This is a private discussion scratchpad, not a ChatGPT conversation or a shared group chat. Connect an authorized AI and verified users before enabling live conversations.</p>
+    <div id="chatLog" class="chat-log" aria-live="polite"></div>
+    <form id="chatForm" class="pitch-form"><label for="chatMessage">Your note for this local group draft</label><textarea id="chatMessage" rows="3" maxlength="1000" required placeholder="What could the group improve or test next?"></textarea><button class="primary" type="submit">Save local note</button></form>
+   </section>
+   <div class="switchline"><span>Not the right fit?</span><button id="switchRoom" type="button" class="secondary">Find the next arena</button><button id="resetDemo" type="button" class="secondary">Clear demo data</button></div>
+  </div>
+ </div>
+</section>
+<section class="how"><p class="eyebrow">HOW A JOUST WORKS</p><h2>Good ideas evolve. Builders stay respected.</h2><div class="how-grid"><article><span>01</span><h3>Pitch</h3><p>Describe a useful idea and the problem it solves.</p></article><article><span>02</span><h3>Challenge</h3><p>Builders ask questions and vote on the project's direction, never a person's worth.</p></article><article><span>03</span><h3>Build or branch</h3><p>Approved ideas gain a roadmap. Others can continue in another group or fork into a related project.</p></article></div><p class="fineprint">The future AI Builder can draft plans, validate evidence, recommend collaborators, and propose a new edition, but publishing, charging, and major actions require real authorization and human review.</p></section>
+<footer><p>∞ INFINITY® · An independent QuantaPhi experience. Not affiliated with or endorsed by OpenAI, Google, or Anthropic.</p><p>No paid subscriptions or third-party-model access are offered by this prototype. <a href="/">Return to QuantaPhi</a></p></footer>
+</main>
+</body></html>
