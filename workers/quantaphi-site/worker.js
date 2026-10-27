@@ -250,7 +250,7 @@ function rewriteSuiteText(text) {
  return text.split('__QUANTAPHI_STORAGE_BRIDGE__').join(bridgeUrl);
 }
 // Social crawlers do not execute the browser app. Render topic metadata on the edge.
-const QP_PREVIEW_IMAGE = CANONICAL_ORIGIN + '/preview.png?v=20261008-share1';
+// Card shares render their original image, never the generic site banner.
 function qpShareEscape(value) {
  return String(value || '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 }
@@ -260,7 +260,8 @@ function qpSharePlain(value, max) {
 function qpShareImage(value) {
  try {
   const url=new URL(String(value || ''));
-  if(url.protocol!=='https:' || url.href.length>1600 || !/\.(?:png|jpe?g|webp|gif)$/i.test(url.pathname)) return '';
+  const imageCDN=url.hostname==='lsco.scene7.com' && url.pathname.startsWith('/is/image/');
+   if(url.protocol!=='https:' || url.username || url.password || url.href.length>1600 || (!/\.(?:png|jpe?g|webp|gif)$/i.test(url.pathname) && !imageCDN)) return '';
   if(['localhost','127.0.0.1','0.0.0.0','::1'].includes(url.hostname) || url.hostname.endsWith('.local')) return '';
   return url.href;
  }catch{return ''}
@@ -271,7 +272,7 @@ function qpShareResponse(incoming) {
  const summary=qpSharePlain(incoming.searchParams.get('text'),450) || 'Discover original research, surprising stories, images, video and sound with QuantaPhi.';
  const kind=qpSharePlain(incoming.searchParams.get('kind'),30) || 'research';
  const customImage=qpShareImage(incoming.searchParams.get('image'));
- const image=customImage || QP_PREVIEW_IMAGE;
+ const image=customImage;
  const destination=new URL('/',CANONICAL_ORIGIN);
  if(search)destination.searchParams.set('q',search);
  destination.hash='result';
@@ -292,15 +293,16 @@ function qpShareResponse(incoming) {
   '<meta property="og:url" content="'+qpShareEscape(canonical.href)+'">',
   '<meta property="og:title" content="'+qpShareEscape(title)+'">',
   '<meta property="og:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
-  '<meta property="og:image" content="'+qpShareEscape(image)+'">',
-  '<meta property="og:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi copper emblem on deep blue background')+'">',
-  '<meta name="twitter:card" content="summary_large_image">',
+  '<meta name="twitter:card" content="'+(image?'summary_large_image':'summary')+'">',
   '<meta name="twitter:title" content="'+qpShareEscape(title)+'">',
   '<meta name="twitter:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
-  '<meta name="twitter:image" content="'+qpShareEscape(image)+'">',
-  '<meta name="twitter:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi research cover artwork')+'">',
  ];
- if(!customImage)tags.push('<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">');
+ if(image)tags.push(
+  '<meta property="og:image" content="'+qpShareEscape(image)+'">',
+  '<meta property="og:image:alt" content="'+qpShareEscape(title+' Quick Card image')+'">',
+  '<meta name="twitter:image" content="'+qpShareEscape(image)+'">',
+  '<meta name="twitter:image:alt" content="'+qpShareEscape(title+' Quick Card image')+'">'
+ );
  const html=tags.join('\n')+'</head><body style="background:#0a215f;color:white;font:16px system-ui;padding:2rem;max-width:42rem;margin:auto">'+
   '<h1>'+qpShareEscape(title)+'</h1><p>'+qpShareEscape(summary.slice(0,800))+'</p>'+
   '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">Open in QuantaPhi</a>'+
