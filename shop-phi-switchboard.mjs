@@ -81,8 +81,13 @@ export function chooseCompanions(hero,inventory,{quantScores={},exposures={},rot
  const sorted=[...unique.values()].sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));
  const selected=[],sponsors=new Set(),sourceCounts=new Map();
  for(const c of sorted){
-  const source=c.sponsor.toLowerCase()||new URL(c.url).hostname.replace(/^www\./,'');
-  const limit=c.type==='sponsored'?1:2;
+  // QuantaPhi hosts thousands of independent published website cards on one
+  // domain. Group paid ads by advertiser and organic cards by actual source,
+  // not quantaphi.org or the six-slot view will collapse to two cards.
+  const source=c.type==='sponsored'?('sponsor:'+c.sponsor.toLowerCase()):
+   c.type==='shop-item'?('merchant:'+(c.merchant||new URL(c.url).hostname).toLowerCase()):
+   ('card:'+c.sourceId);
+  const limit=c.type==='sponsored'?1:c.type==='shop-item'?2:1;
   if((sourceCounts.get(source)||0)>=limit)continue;
   if(c.type==='sponsored'&&sponsors.has(source))continue;
   selected.push(c);sourceCounts.set(source,(sourceCounts.get(source)||0)+1);
