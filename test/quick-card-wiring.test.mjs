@@ -34,7 +34,7 @@ test('public wiring study is linked into existing builder and Bubbles card catal
  assert.match(get('quick-card-builder.js'),/Explicit prefill from the wiring study/);
  const study=get('quick-card-wiring.html');
  for(const id of ['qwsForm','qwsSource','qwsRows','qwsFrame','qwsJSON','qwsCart'])assert.match(study,new RegExp('id="'+id+'"'));
- assert.match(study,/original-site login/i);
+ assert.match(study,/Sign in at StarMaker/);
 });
 test('Integra is a validation role, not invented registered Gmail account',()=>{
  const role=JSON.parse(get('data/integra-card-validation.json'));
