@@ -151,7 +151,8 @@ if(typeof document!=='undefined'){
   const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
   function draw(list,lane){
    before.replaceChildren();after.replaceChildren();
-   const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;visiblePage=0;
+   const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
+   visiblePage=Math.min(visiblePage,Math.max(0,Math.ceil(visible.length/2)-1));
    if(!visible.length){
     // The original Oracle stage lives INSIDE grid. Never hide the hero merely
     // because the companion inventory is empty or its network is unavailable.
@@ -265,15 +266,16 @@ if(typeof document!=='undefined'){
     category:stage.dataset.switchboardCategory,tab:stage.dataset.switchboardTab};
   }
   async function update(detail){
-   const revision=++seq;active=detail||null;
+   const revision=++seq;const changed=(detail?.id||null)!==(active?.id||null);
+   active=detail||null;if(changed)visiblePage=0;
    if(!active||document.body.classList.contains('oracle-shelf-open')){
     grid.hidden=true;heading.hidden=true;receipt.hidden=true;navigation.hidden=true;
     before.replaceChildren();after.replaceChildren();return;
    }
-   grid.hidden=false;heading.hidden=true;navigation.hidden=true;receipt.hidden=false;
-   before.replaceChildren();after.replaceChildren();
+   if(changed){grid.hidden=false;heading.hidden=true;navigation.hidden=true;receipt.hidden=false;
+    before.replaceChildren();after.replaceChildren();}
    const lane=contextFor(active);
-   receipt.textContent='Checking approved Quick Cards and live AdPhi offers…';
+   if(changed)receipt.textContent='Checking approved Quick Cards and live AdPhi offers…';
    const candidates=await inventory(lane);
    if(revision!==seq)return;
    const all=candidates.concat(siteCards());
