@@ -1,5 +1,6 @@
 import {cardProvider,providerSearchUrl,quickCardManifest} from './quanta-card-provider.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
+import {readTinyfishCardSource} from './quanta-card-tinyfish.mjs';
 /* Shared actions for QuantaPhi quick cards. No browser sign-in implies API permission. */
 const STORE_STARS='quantaPhiCardStarsV1';
 const STORE_COLLECT='quantaPhiCollected';
@@ -134,6 +135,20 @@ export function mountCardActions(host,card,options={}){
   }catch{}
   if(source){
    const open=element('a','qca-button qca-source','↗ Open original website');
+
+   // User-triggered public TinyFetch. Never show a fake Google fallback.
+   const read=b('⌕ Live card source',async()=>{
+    read.disabled=true;notify(status,'Reading this source with TinyFish…');
+    let detail=bar.querySelector('.qca-live-source');
+    if(!detail){detail=element('p','qca-live-source');detail.setAttribute('role','status');bar.append(detail);}
+    try{
+     const result=await readTinyfishCardSource(source);
+     detail.textContent=result.text||'The source returned no readable text.';
+     notify(status,'TinyFish live source checked. Read-only, with source evidence; no checkout or sign-in.');
+    }catch{detail.textContent='Live source unavailable. You can open the original site instead.';
+     notify(status,'TinyFish did not return a verified read.');}
+    finally{read.disabled=false;}
+   });
    open.href=source;open.target='_blank';open.rel='noopener noreferrer';controls.append(open);
   }
  }

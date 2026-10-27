@@ -48,3 +48,9 @@ binding = "WRITER_AI"
 # Refuse to stage an update if the existing payout secret is not configured.
 [secrets]
 required = ["BOT_WORK_SECRET"]
+
+# TinyFish public read broker. API key stays only on continuity-session-coordinator.
+[[services]]
+binding = "TINYFISH_BROKER"
+service = "continuity-session-coordinator"
+environment = "production"

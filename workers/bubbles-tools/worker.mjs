@@ -7,6 +7,7 @@ import {semanticDecision,interpretOwnerWork} from './semantic-intent.mjs';
 import {lookupKind,webSearch,currentWeather,compareWeather} from './search.mjs';
 import {needsReadAgent,runReadAgent,planReadSteps} from './read-agent.mjs';
 import {cardSourcePlanFor} from './card-source.mjs';
+import {readViaTinyfish} from './tinyfish-client.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
 const VISION_MODEL='@cf/google/gemma-4-26b-a4b-it';
@@ -499,7 +500,7 @@ async function execute(request,env,body){
  const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
  const contextual=contextualReadPlan(question,request.headers.get('Origin')||'',body.repository);
  if(contextual)body={...body,repository:contextual.repository,...(contextual.path&&!body.path?{path:contextual.path}:{})};
- const tool=['resonance.calculate','organic.memory_benchmark','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:contextual?.tool||chooseTool(question),id=crypto.randomUUID();
+ const tool=['resonance.calculate','organic.memory_benchmark','web.search','weather.current','news.headlines','tinyfish.fetch','tinyfish.search'].includes(body.tool)?body.tool:contextual?.tool||chooseTool(question),id=crypto.randomUUID();
  const receipt={id,tool,status:'started',createdAt:new Date().toISOString(),kind:'bubbles-tool-result',minted:false,...(contextual?{repositoryContext:contextual.basis}:{})};
  if(/\b(?:what|which|describe|explain|show)\b/i.test(question)&&/\b(?:server runtime|running on|runtime and tools|runtime.*tools)\b/i.test(question)){
   return response(request,{ok:true,output:'This Bubbles chat runs on Cloudflare Workers using JavaScript. '+
@@ -510,6 +511,7 @@ async function execute(request,env,body){
    receipt:{...receipt,tool:'runtime.capabilities',status:'complete',repositoryActionsVerified:false}});
  }
  if(tool==='public_x.read'){const result=await publicXRead(env);return response(request,{...result,receipt:{...receipt,...result.receipt}});}
+ if(tool==='tinyfish.fetch'||tool==='tinyfish.search')return readViaTinyfish(request,env,body);
  const aliasExplanation=explainUnverifiedAlias(question);
  if(aliasExplanation)return response(request,{ok:true,output:aliasExplanation,receipt:{...receipt,tool:'alias.safety_explanation',status:'complete',executed:false,repositoryActionsVerified:false}});
  if(body.mcp===true&&env.AI&&!isSourceDraftRequest(question)&&!isSourceReviewRequest(question)&&needsReadAgent(question)){
@@ -750,6 +752,7 @@ export async function finishSearchReply(original,summarize,timeoutMs=20000,userR
  }catch{return fallback()}
  finally{clearTimeout(timer)}
 }
+const tinyfishBudget=new Map();
 export default {async fetch(request,env){
  const url=new URL(request.url);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
@@ -783,9 +786,18 @@ export default {async fetch(request,env){
   const body=JSON.parse(text);
   if(body.image!==undefined)return analyzePhoto(request,env,body);
   if(text.length>70000)return response(request,{ok:false,error:'body_too_large'},413);
+  // Anonymous free Search/Fetch cards have a small per-isolate safety budget.
+  // Paid TinyFish agent/browser tasks are not exposed here.
+  if(body.tool==='tinyfish.fetch'||body.tool==='tinyfish.search'){
+   const ip=request.headers.get('CF-Connecting-IP')||'unknown',now=Date.now();
+   const record=tinyfishBudget.get(ip);
+   if(!record||now-record.start>60000)tinyfishBudget.set(ip,{start:now,count:1});
+   else if(++record.count>4)return response(request,{ok:false,error:'tinyfish_rate_limited'},429);
+   if(tinyfishBudget.size>1024)tinyfishBudget.delete(tinyfishBudget.keys().next().value);
+  }
   const result=await execute(request,env,body);if(!result.ok)return result;
   const data=await result.clone().json();
-  if(data.receipt?.tool==='public_x.read')return result;
+  if(data.receipt?.tool==='public_x.read'||data.receipt?.tool==='tinyfish.fetch'||data.receipt?.tool==='tinyfish.search')return result;
   if(data.model||data.receipt?.tool==='runtime.capabilities'||data.receipt?.tool==='agent.read_sequence'||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool==='alias.safety_explanation'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='organic.memory_benchmark'||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
   const summarize=()=>gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
   if(data.receipt?.tool==='web.search')return finishSearchReply(result,summarize,20000,clean(body.request));
