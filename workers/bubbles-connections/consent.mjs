@@ -119,22 +119,22 @@ export class ConsentService {
   }
   async finishHandoff(input) {
     const {userId,sessionId,provider,state}=input;
-    const status=await this.handoffStatus(input);
+    const status=await completionStep('handoff_read',()=>this.handoffStatus(input));
     if(status.status!=='received')return status;
     const sessionHash=await this.session(sessionId);
     const prefix=await this.namespace(userId);
     const key=prefix+'handoff:'+await digest(state);
-    const encrypted=await this.storage.get(key);
+    const encrypted=await completionStep('handoff_read',()=>this.storage.get(key));
     if(!encrypted)return {status:'pending'};
-    const received=await this.vault.open(encrypted,key);
+    const received=await completionStep('handoff_decrypt',()=>this.vault.open(encrypted,key));
     if(!received.code)throw Error('callback_invalid');
     const inflightKey=prefix+'handoff-inflight:'+await digest(state);
-    await this.storage.transaction(async tx=>{
+    await completionStep('handoff_store',()=>this.storage.transaction(async tx=>{
       const previous=await tx.get(inflightKey);
       if(previous&&(previous.userId!==userId||previous.sessionHash!==sessionHash||previous.provider!==provider))
         throw Error('callback_session_mismatch');
       await tx.put(inflightKey,{userId,sessionHash,provider,expiresAt:this.now()+300000});
-    });
+    }));
     // The storage contract exposes transactional delete, not a top-level
     // delete method. Erase the sealed callback even if token exchange fails.
     try {
@@ -143,16 +143,17 @@ export class ConsentService {
       // Persist a sealed, session-bound completion receipt before returning.
       const receiptKey=prefix+'handoff-receipt:'+await digest(state);
       const receipt={userId,sessionHash,provider,account,expiresAt:this.now()+300000};
-      await this.storage.transaction(async tx=>{
+      await completionStep('receipt_store',()=>this.storage.transaction(async tx=>{
         const current=await tx.get(prefix+'connection:'+account.id);
         if(current?.userId!==userId||current.provider!==provider||
            current.status!=='connected'||!current.credentialRef||
            current.expiresAt<=this.now()||!(await tx.get(current.credentialRef)))
           throw Error('connection_cancelled');
         receipt.connectionRevision=current.revision;
-        await tx.put(receiptKey,{...await this.vault.seal(receipt,receiptKey),expiresAt:receipt.expiresAt});
+        const sealedReceipt=await completionStep('receipt_seal',()=>this.vault.seal(receipt,receiptKey));
+        await tx.put(receiptKey,{...sealedReceipt,expiresAt:receipt.expiresAt});
         await tx.delete(inflightKey);
-      });
+      }));
       return {status:'connected',account};
     } catch(error) {
       if(error?.message==='state_invalid_or_used') {

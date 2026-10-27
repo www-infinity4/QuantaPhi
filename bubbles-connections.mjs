@@ -48,7 +48,19 @@ export function providerSignInErrorMessage(code){
     return 'Bubbles could not verify this browser session. Return to the original Bubbles browser and sign in again.';
   if(value==='state_invalid_or_used'||value==='state_expired')
     return 'This authorization was already used or expired. Start a new Cloudflare authorization.';
-  if(value==='connection_operation_failed'||value.startsWith('connection_complete_'))
+  if(/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_client$/.test(value))
+    return 'Cloudflare rejected the Bubbles OAuth client credentials. The server client configuration needs repair. Diagnostic: '+value+'.';
+  if(/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_grant$/.test(value))
+    return 'Cloudflare rejected the authorization code or PKCE verification. Start a fresh sign-in. Diagnostic: '+value+'.';
+  if(/^cloudflare_(?:exchange|refresh)_(?:[45]\d{2}|rejected)(?:_(?:invalid_client|invalid_grant|invalid_scope|invalid_request|unauthorized_client|unsupported_grant_type|server_error|temporarily_unavailable))?$/.test(value))
+    return 'Cloudflare could not complete the token exchange. Diagnostic: '+value+'.';
+  if(/^cloudflare_identity_[45]\d{2}$/.test(value))
+    return 'Cloudflare issued a token, but its User Details API could not verify the account. Diagnostic: '+value+'.';
+  if(['provider_response_invalid','provider_identity_invalid','provider_token_invalid','expiring_token_required','provider_response_too_large','vault_key_unavailable','vault_key_invalid'].includes(value))
+    return 'Bubbles could not verify or securely save the account connection. Diagnostic: '+value+'.';
+  if(/^connection_complete_(?:state|exchange|seal|store|handoff_read|handoff_decrypt|handoff_store|receipt_seal|receipt_store|unknown)_(?:timeout|type|internal)_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown)$/.test(value))
+    return 'Bubbles could not finish the account connection. Diagnostic: '+value+'.';
+  if(value==='connection_operation_failed')
     return 'Cloudflare returned to Bubbles, but Bubbles could not complete the account connection. Please retry; the connector needs repair if this repeats.';
   if(value==='cloudflare_client_scopes_unavailable'||value==='provider_not_configured')
     return 'The Bubbles Cloudflare OAuth application requires configuration before this permission can be authorized.';

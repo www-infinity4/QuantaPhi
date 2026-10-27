@@ -1,6 +1,7 @@
 import {cloudStarCoinBackup} from './starcoin-backup.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
+import {safeConnectionFailure} from './completion.mjs';
 import {CONNECTOR_REQUIREMENTS,cloudflareAvailableActions,cloudflareScopeInventory,resolveCloudflareScopeConfig} from './providers.mjs';
 const ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 export const PREFIX = '/api/bubbles/connections';
@@ -199,8 +200,13 @@ export async function handleConnections(request,env,resolveService) {
     const raw = await request.text(); if (raw.length > 8192) return json(origin,{ok:false,error:'too_large'},413);
     let body; try {body = JSON.parse(raw);} catch {return json(origin,{ok:false,error:'invalid_json'},400);}
     if (!body || typeof body !== 'object' || Array.isArray(body)) return json(origin,{ok:false,error:'invalid_json'},400);
-    if (url.pathname === PREFIX+'/handoff/status') return json(origin,{ok:true,...await service.handoffStatus({...identity,provider:body.provider,state:body.state})});
-    if (url.pathname === PREFIX+'/handoff/finish') return json(origin,{ok:true,...await service.finishHandoff({...identity,provider:body.provider,state:body.state})});
+    if (url.pathname === PREFIX+'/handoff/status' || url.pathname === PREFIX+'/handoff/finish') {
+      const input={...identity,provider:body.provider,state:body.state};
+      const result=url.pathname.endsWith('/finish')
+        ? await service.finishHandoff(input) : await service.handoffStatus(input);
+      if(result?.connectionError)throw Error(result.connectionError);
+      return json(origin,{ok:true,...result});
+    }
     if (url.pathname === PREFIX+'/github/starcoins/create-repository')
       return json(origin,{ok:true,...await service.createStarCoinRepository({userId:identity.userId,id:body.id})});
     if(url.pathname===PREFIX+'/github/starcoins/backup'||url.pathname===PREFIX+'/github/starcoins/verify'){
@@ -244,7 +250,7 @@ export async function handleConnections(request,env,resolveService) {
     return json(origin,{ok:false,error:'not_found'},404);
   } catch (error) {
     const expected = /^(?:starcoin_account_identity_mismatch|starcoin_state_invalid|starcoin_sources_disagree|starcoin_duplicate_receipt|starcoin_cloud_unavailable|starcoin_verified_device_required|github_private_write_not_verified|github_backup_http_\d+|backup_(?:account_mismatch_review_required|mismatch_review_required|malformed_review_required|commit_conflict_retry|commit_unverified|repository_invalid|repository_already_selected|not_configured|invalid_request)|connection_complete_(?:state|exchange|seal|store|unknown)_(?:timeout|type|internal)(?:_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown))?|pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+|cloudflare_client_scopes_unavailable|cloudflare_account_(?:invalid|not_authorized)|cloudflare_accounts_http_\d+)$/;
-    const message = expected.test(error.message) ? error.message : 'connection_operation_failed';
+    const message = expected.test(error.message) || safeConnectionFailure(error.message) ? error.message : 'connection_operation_failed';
     const status = ['verified_wallet_required','starcoin_verified_device_required'].includes(message) ? 401 : message === 'too_many_requests' ? 429 : /unavailable|not_configured|operation_failed/.test(message) ? 503 : 400;
     return json(origin,{ok:false,error:message},status);
   }
