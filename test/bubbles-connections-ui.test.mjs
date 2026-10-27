@@ -271,7 +271,7 @@ test('Cloudflare OAuth never mistakes limited consent for project management per
  const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
  const adapter=cloudflareAdapter({clientId:'cf-client',clientSecret:'secret',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url)=>{
   if(url.endsWith('/token'))return Response.json({access_token:'limited',refresh_token:'refresh',token_type:'bearer',expires_in:3600,scope:'user-details.read memberships.read'});
-  return Response.json({sub:'unique-cloudflare-user',email:'user@example.test'});
+  return Response.json({success:true,result:{id:'c'.repeat(32),email:'user@example.test'}});
  });
  const result=await adapter.exchange({code:'code',verifier:'verifier',actions:['account.read','projects.build']});
  assert.deepEqual(result.grantedActions,['account.read']);
