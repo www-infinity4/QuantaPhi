@@ -1,0 +1,225 @@
+/* ShopPhi / AdPhi six-way contextual switchboard.
+ * One live Oracle hero; six companion positions. No fake ads, login proxy,
+ * charge, invented merchant inventory, visitor tracking or private-search upload.
+ */
+import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
+
+export const SLOT_COUNT=6;
+const SENSITIVE=/\b(religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy)\b/i;
+const LANES=Object.freeze([
+ {id:'coins',match:/\b(morgan|silver dollar|coin|numismatic|pcgs|ngc|gold eagle|bullion|mintmark|mercury dime)\b/i,
+  topics:['gold coins','coin grading pcgs','coin collecting supplies','jeweler loupe','coin albums','silver dollars'],
+  clues:['coin','gold','silver','dollar','numismatic','pcgs','ngc','loupes','loupe','album','grading','supplies','bullion']},
+ {id:'denim',match:/\b(jeans?|denim|levis|levi.s|wrangler|pants|trousers)\b/i,
+  topics:['shirts','denim jackets','belts','casual shoes','denim care','clothing'],
+  clues:['jeans','denim','shirt','jacket','belt','shoe','clothing','boots','apparel','fashion','pants']},
+ {id:'grocery',match:/\b(pizza|grocer|food|recipe|snack|ingredient|frozen meal)\b/i,
+  topics:['grocery deals','pizza ingredients','cookware','snacks','kitchen tools','groceries'],
+  clues:['grocery','pizza','ingredients','food','cook','kitchen','snack','recipe']},
+ {id:'radio',match:/\b(antique radio|vacuum tube|shortwave|ham radio|electronics repair)\b/i,
+  topics:['radio parts','vacuum tubes','electronics tools','radio kits','repair supplies','antique radios'],
+  clues:['radio','parts','tube','repair','kits','electronics','solder','capacitor']},
+ {id:'shopping',match:/\b(shop|shopping|product|store|marketplace|buy|sale|retail)\b/i,
+  topics:['related products','shopping supplies','accessories','product comparisons','retail shops','shopping'],
+  clues:['shop','product','store','supplies','accessories','retail','marketplace']}
+]);
+const scrub=x=>String(x||'').trim().slice(0,220);
+export function httpsUrl(input){
+ try {const u=new URL(String(input));const h=u.hostname.toLowerCase();
+  if(u.protocol!=='https:'||u.username||u.password||!h.includes('.')||h==='localhost'||h.endsWith('.local')||u.href.length>1800)return '';
+  if(/^(127\.|10\.|192\.168\.|169\.254\.|0\.|172\.(1[6-9]|2\d|3[01])\.)/.test(h))return '';
+  return u.href;
+ }catch{return ''}
+}
+export function contextFor(hero={}){
+ const text=[hero.title,hero.category,hero.description].filter(Boolean).join(' ').slice(0,600);
+ if(SENSITIVE.test(text))return {id:'neutral',topics:[],clues:[],sensitive:true};
+ return LANES.find(x=>x.match.test(text))||{id:'discovery',topics:[],clues:[],sensitive:false};
+}
+const tokenize=x=>new Set((scrub(x).toLowerCase().match(/[a-z0-9]{3,}/g)||[]).slice(0,65));
+export function normalizeCandidate(raw={}){
+ const id=scrub(raw.id).slice(0,110),title=scrub(raw.title);
+ const url=httpsUrl(raw.url);
+ if(!id||title.length<3||!url)return null;
+ const type=['sponsored','published-card','website-card','shop-item'].includes(raw.type)?raw.type:'';
+ if(!type)return null;
+ if(type==='published-card'&&raw.status!=='approved')return null;
+ if(type==='shop-item'&&raw.status!=='published')return null;
+ const image=httpsUrl(raw.image);
+ return {id,title,url,image,type,sponsor:type==='sponsored'?scrub(raw.sponsor)||'Advertiser':'',
+  sourceId:scrub(raw.sourceId),contextTopic:scrub(raw.contextTopic),description:scrub(raw.description),
+  category:scrub(raw.category),merchant:scrub(raw.merchant),price:scrub(raw.price)};
+}
+function relation(candidate,hero,lane){
+ const text=[candidate.title,candidate.description,candidate.category,candidate.contextTopic].join(' ').toLowerCase();
+ const words=tokenize(text);const clues=lane.clues||[];
+ let match=0;
+ for(const clue of clues){const key=clue.toLowerCase();if(words.has(key)||text.includes(key))match++;}
+ if(lane.id==='discovery'||lane.id==='neutral'){
+  const a=tokenize([hero.title,hero.category].join(' '));
+  for(const w of a)if(words.has(w))match++;
+ }
+ return Math.min(7,match);
+}
+function stable(id){let n=2166136261;for(const c of id){n=Math.imul(n^c.charCodeAt(0),16777619)}return n>>>0}
+export function chooseCompanions(hero,inventory,{quantScores={},exposures={},rotation=0,slots=SLOT_COUNT}={}){
+ const lane=contextFor(hero),unique=new Map();
+ for(const raw of Array.isArray(inventory)?inventory:[]){
+  const c=normalizeCandidate(raw);if(!c)continue;
+  if(c.id===hero.id||c.sourceId===hero.id||c.url===hero.url||unique.has(c.url))continue;
+  const match=relation(c,hero,lane);
+  if(match===0)continue; // Unrelated high-value ads cannot buy their way in.
+  const quant=Math.min(30,Math.max(0,Number(quantScores[c.id])||0));
+  const count=Math.min(200,Math.max(0,Number(exposures[c.id])||0));
+  const fairness=(stable(c.id+'|'+String(rotation))%11);
+  const score=match*22+quant/2+fairness-Math.min(100,count*8);
+  unique.set(c.url,{...c,score,reason:c.contextTopic||(
+   lane.id==='coins'?'Useful for coin collecting':
+   lane.id==='denim'?'Complements denim shopping':
+   lane.id==='grocery'?'Related grocery discovery':'Related to this card')});
+ }
+ const sorted=[...unique.values()].sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));
+ const selected=[],sponsors=new Set(),sourceCounts=new Map();
+ for(const c of sorted){
+  const source=c.sponsor.toLowerCase()||new URL(c.url).hostname.replace(/^www\./,'');
+  const limit=c.type==='sponsored'?1:2;
+  if((sourceCounts.get(source)||0)>=limit)continue;
+  if(c.type==='sponsored'&&sponsors.has(source))continue;
+  selected.push(c);sourceCounts.set(source,(sourceCounts.get(source)||0)+1);
+  if(c.type==='sponsored')sponsors.add(source);
+  if(selected.length>=Math.max(1,Math.min(6,slots)))break;
+ }
+ return selected;
+}
+export function approvedQuickCards(payload){
+ return (Array.isArray(payload?.cards)?payload.cards:[]).filter(x=>x.status==='approved')
+ .map(x=>normalizeCandidate({id:'quick-'+x.slug,title:x.title,description:x.description,category:x.kind,
+  image:x.image,url:x.cardUrl,type:'published-card',status:x.status,sourceId:x.slug})).filter(Boolean);
+}
+export function shopItems(payload){
+ return (Array.isArray(payload?.items)?payload.items:[]).filter(x=>x.state==='published')
+ .map(x=>normalizeCandidate({id:'shop-'+x.item_id,title:x.title,description:x.description,
+  image:x.image_url,url:x.source_url,merchant:x.merchant,price:x.price_label,
+  type:'shop-item',status:x.state,sourceId:x.item_id,category:'Shopping'})).filter(Boolean);
+}
+
+if(typeof document!=='undefined'){
+ const stage=document.getElementById('oracleCardStage');
+ const deck=document.getElementById('oracleCardDeck');
+ if(stage&&deck){
+  const grid=document.createElement('div');grid.className='shopphi-switchboard-grid';grid.hidden=true;
+  const before=document.createElement('aside');before.className='shopphi-flanks shopphi-flanks-left';before.setAttribute('aria-label','Related offers, positions one through three');
+  const after=document.createElement('aside');after.className='shopphi-flanks shopphi-flanks-right';after.setAttribute('aria-label','Related offers, positions four through six');
+  const heading=document.createElement('p');heading.className='shopphi-switchboard-heading';
+  heading.textContent='SHOPPHI × ADPHI · SIX CONNECTION SWITCHBOARD';
+  const receipt=document.createElement('p');receipt.className='shopphi-switchboard-receipt';receipt.setAttribute('role','status');
+  stage.parentNode.insertBefore(heading,stage);
+  stage.parentNode.insertBefore(grid,stage);
+  grid.append(before,stage,after);
+  grid.after(receipt);
+  const exposure=Object.create(null),cache=new Map();
+  let seq=0,rotation=0,active=null;
+  const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
+  function draw(list,lane){
+   before.replaceChildren();after.replaceChildren();
+   const visible=list.slice(0,SLOT_COUNT);
+   for(let i=0;i<SLOT_COUNT;i++){
+    const parent=i<3?before:after,c=visible[i];
+    if(!c){const empty=document.createElement('div');empty.className='shopphi-flank shopphi-flank-empty';
+     empty.append(span('POSITION '+(i+1),'shopphi-flank-tag'),span('Awaiting a verified offer','shopphi-flank-empty-copy'));
+     parent.append(empty);continue;}
+    const link=document.createElement('a');link.className='shopphi-flank';link.href=c.url;
+    link.target='_blank';link.rel=c.type==='sponsored'?'noopener noreferrer sponsored':'noopener noreferrer';
+    const tag=c.type==='sponsored'?'SPONSORED':c.type==='shop-item'?'SHOP PHI ITEM':'RELATED QUICK CARD';
+    link.append(span(tag,'shopphi-flank-tag'));
+    if(c.image){
+     const img=document.createElement('img');img.src=c.image;img.alt='';img.loading='lazy';img.referrerPolicy='no-referrer';
+     img.addEventListener('error',()=>img.remove(),{once:true});link.append(img);
+    }
+    link.append(span(c.title,'shopphi-flank-title'));
+    if(c.price&&c.type==='shop-item')link.append(span(c.price,'shopphi-flank-price'));
+    link.append(span(c.reason,'shopphi-flank-reason'));
+    link.addEventListener('click',()=>{ // Local anonymous choice; never a reward or paid impression.
+     exposure[c.id]=Math.min(200,(exposure[c.id]||0)+1);
+    });
+    parent.append(link);
+    exposure[c.id]=Math.min(200,(exposure[c.id]||0)+1);
+   }
+   heading.hidden=false;receipt.hidden=false;
+   receipt.textContent=visible.length+' of 6 slots filled with actual '+(lane.id==='neutral'?'non-targeted':'contextual')+
+    ' cards/offers. Sponsored placements are labeled; the remaining slots are unfilled.';
+  }
+  function siteCards(){
+   const result=[];
+   for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id]')){
+    if(node.dataset.sourceReady!=='true'||node.hidden)continue;
+    const id=node.dataset.sourceId;
+    if(!/^[a-z0-9-]{2,100}$/.test(id||''))continue;
+    const source=node.querySelector('a[href^="https://"]');
+    if(!httpsUrl(source?.href))continue;
+    const title=node.dataset.sourceName||node.querySelector('h3')?.textContent||'';
+    const c=normalizeCandidate({id:'site-'+id,sourceId:id,title,url:'https://quantaphi.org/?card=source-'+encodeURIComponent(id),
+     type:'website-card',category:node.querySelector('.iqc-kind')?.textContent||'',description:node.textContent?.slice(0,180)});
+    if(c)result.push(c);
+   }
+   return result;
+  }
+  async function inventory(lane){
+   const key=lane.id,prior=cache.get(key);
+   if(prior&&Date.now()-prior.time<60000)return prior.cards;
+   const calls=[fetch('/api/quick-cards?limit=24',{credentials:'omit',cache:'no-store'}).then(r=>r.ok?r.json():null)
+    .then(approvedQuickCards).catch(()=>[])];
+   const config=window.ShopAdPhiConfig;
+   // Catalog remains owner-controlled: only public read, and only when the real site/card is configured.
+   if(config&&/^[A-Za-z0-9_-]{1,80}$/.test(config.siteId||'')&&/^[A-Za-z0-9_-]{1,80}$/.test(config.instanceId||'')&&
+    /^\/[A-Za-z0-9/_-]*$/.test(config.apiBase||'')){
+    const url=config.apiBase.replace(/\/$/,'')+'/public/sites/'+config.siteId+'/cards/'+config.instanceId+'/shop';
+    calls.push(fetch(url,{credentials:'omit',cache:'no-store'}).then(r=>r.ok?r.json():null).then(shopItems).catch(()=>[]));
+   }
+   if(!lane.sensitive&&typeof window.ControlPhi?.requestSponsoredCard==='function'){
+    for(let i=0;i<lane.topics.length;i++){
+     const topic=lane.topics[i];
+     calls.push(Promise.resolve().then(()=>window.ControlPhi.requestSponsoredCard(topic,'shopphi-flank-'+(i+1)))
+      .then(ad=>ad?normalizeCandidate({id:'ad-'+(ad.id||ad.campaignId||topic+'-'+ad.destinationUrl),
+       title:ad.title,description:ad.body,url:ad.destinationUrl,image:ad.imageUrl,
+       sponsor:ad.advertiser,type:'sponsored',contextTopic:topic}):null)
+      .then(x=>x?[x]:[]).catch(()=>[]));
+    }
+   }
+   const data=await Promise.all(calls);
+   const cards=data.flat().concat(siteCards());
+   cache.set(key,{time:Date.now(),cards});
+   return cards;
+  }
+  function detailFromStage(){
+   if(!stage.dataset.switchboardId)return null;
+   return {id:stage.dataset.switchboardId,title:stage.dataset.switchboardTitle,
+    category:stage.dataset.switchboardCategory,tab:stage.dataset.switchboardTab};
+  }
+  async function update(detail){
+   const revision=++seq;active=detail||null;
+   if(!active||document.body.classList.contains('oracle-shelf-open')){
+    grid.hidden=true;heading.hidden=true;receipt.hidden=true;before.replaceChildren();after.replaceChildren();return;
+   }
+   grid.hidden=false;heading.hidden=false;receipt.hidden=false;
+   before.replaceChildren();after.replaceChildren();
+   const lane=contextFor(active);
+   receipt.textContent='Checking approved Quick Cards and live AdPhi offers…';
+   const candidates=await inventory(lane);
+   if(revision!==seq)return;
+   const all=candidates.concat(siteCards());
+   // Only a signed-in For You selection can read existing bounded Quant card weights.
+   const quant=active.tab==='for-you'?await loadOwnQuantScores(window.QuantaCloudConnection,
+    all.map(c=>({id:c.id,name:c.title,category:c.category,feature:c.description,study:c.contextTopic}))):
+    {connected:false,scores:{}};
+   if(revision!==seq)return;
+   const result=chooseCompanions(active,all,{quantScores:quant.scores,exposures:exposure,rotation:rotation++});
+   draw(result,lane);
+  }
+  window.addEventListener('quantaphi:switchboard-change',e=>{void update(e.detail).catch(()=>{
+   if(active){before.replaceChildren();after.replaceChildren();receipt.textContent='Companion offers are temporarily unavailable. Original Quick Card is still usable.';}
+  })});
+  // The deck may have selected its first card before this module finished loading.
+  void update(detailFromStage());
+ }
+}

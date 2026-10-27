@@ -232,6 +232,13 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
  viewerTouched=true;
  const revision=++selectionVersion;
  selectedTab=b.dataset.oracleFeed;visited.length=0;
+ if(active){
+  stage.dataset.switchboardTab=selectedTab;
+  window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
+   id:stage.dataset.switchboardId,title:stage.dataset.switchboardTitle,
+   category:stage.dataset.switchboardCategory,tab:selectedTab
+  }}));
+ }
  if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
  updateTabs();
@@ -283,6 +290,9 @@ function returnActive(){
  marker?.remove();
  active.marker=null;active=null;
  stage.replaceChildren();
+ delete stage.dataset.switchboardId;delete stage.dataset.switchboardTitle;
+ delete stage.dataset.switchboardCategory;delete stage.dataset.switchboardTab;
+ window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:null}));
 }
 function show(entry,remember=true){
  if(!entry||expanded||entry===active)return;
@@ -293,6 +303,13 @@ function show(entry,remember=true){
  const marker=document.createComment('Oracle card original location: '+entry.id);
  entry.node.parentNode.insertBefore(marker,entry.node);entry.marker=marker;
  presentOriginal(entry);stage.append(entry.node);active=entry;
+ stage.dataset.switchboardId=entry.feedId;
+ stage.dataset.switchboardTitle=entry.title;
+ stage.dataset.switchboardCategory=entry.category;
+ stage.dataset.switchboardTab=selectedTab;
+ window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
+  id:entry.feedId,title:entry.title,category:entry.category,tab:selectedTab
+ }}));
  entry.node.dispatchEvent(new Event('oracle:activate'));
  void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // Every original Oracle widget receives the same five real actions.

@@ -53,6 +53,18 @@ async function publish(item){
 const link=(parent,text,url,viewer=false)=>{if(!safe(url))return;const a=node('a',text);a.href=url;a.target='_blank';a.rel='noopener noreferrer'+(current?.sponsored?' sponsored':'');if(viewer){a.dataset.siteUrl=url;a.dataset.siteTitle=current?.title||text;a.addEventListener('click',e=>{if(window.QuantaOpenSite){e.preventDefault();window.QuantaOpenSite(a)}})}parent.append(a)};
 function show(item,draft=false){
  current=item;openAd.disabled=!safe(item.url);feature.replaceChildren();
+ // ShopPhi is a living product card: refresh flanking connections when the
+ // selected product changes, not only when the Oracle carousel arrow is tapped.
+ const oracleStage=document.getElementById('oracleCardStage');
+ if(typeof oracleStage?.contains==='function'&&oracleStage.contains(host)){
+  oracleStage.dataset.switchboardId='deck-shop';
+  oracleStage.dataset.switchboardTitle=item.title||'Shop Phi';
+  oracleStage.dataset.switchboardCategory='Shopping';
+  window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
+   id:'deck-shop',title:item.title||'Shop Phi',
+   category:'Shopping',tab:oracleStage.dataset.switchboardTab||'public'
+  }}));
+ }
  feature.append(node('small',draft?(item.publishState==='public'?'PUBLIC SHOP PHI POST · VERIFIED':item.publishState==='catalog-published'?'OWNER CATALOG · PUBLIC VISIBILITY NOT CONFIRMED':'PRIVATE POST DRAFT · NOT PUBLIC'):item.sponsored?'ADVERTISEMENT · '+(item.sponsor||'Advertiser'):'SHOPPING SOURCE · '+(item.merchant||'Original seller')));
  if(safe(item.imageUrl)){const img=node('img');img.src=item.imageUrl;img.alt=item.title;img.loading='lazy';feature.append(img)}
  if(draft&&item.mediaIds?.length)void sellerStudio?.previewIn(item,feature);
