@@ -171,3 +171,26 @@ test('public counter rejects malformed UTC dates and non-seven-day windows',asyn
   assert.match(nodes.qtrafficNote.textContent,/ledger currently unavailable/);
  }
 });
+
+test('stale ledger retains cumulative totals when no days overlap the recent window',async()=>{
+ const d=trafficPayload(958421,374475,'2026-10-10T16:28:24.621Z');
+ d.through='2026-10-10';
+ d.recordedDays=7;
+ d.last7Days={since:'2026-10-20',until:'2026-10-26',requests:0,pageViews:0,daysRecorded:0};
+ const nodes=await runClientOnce(new Map(),[d]);
+ assert.equal(nodes.qtrafficRequests.textContent,'958,421');
+ assert.equal(nodes.qtrafficViews.textContent,'374,475');
+ assert.match(nodes.qtrafficNote.textContent,/0\/7 days recorded/);
+ assert.match(nodes.qtrafficNote.textContent,/automatic ingestion is not yet authorized/);
+});
+
+test('new ledger retains cumulative totals when seven-day window predates first record',async()=>{
+ const d=trafficPayload(200,100,'2026-10-26T16:28:24.621Z');
+ d.since='2026-10-24';
+ d.recordedDays=3;
+ d.last7Days={since:'2026-10-20',until:'2026-10-26',requests:200,pageViews:100,daysRecorded:3};
+ const nodes=await runClientOnce(new Map(),[d]);
+ assert.equal(nodes.qtrafficRequests.textContent,'200');
+ assert.equal(nodes.qtrafficViews.textContent,'100');
+ assert.match(nodes.qtrafficNote.textContent,/3\/7 days recorded/);
+});
