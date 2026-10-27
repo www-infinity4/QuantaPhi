@@ -57,7 +57,7 @@ export function mountTinyfishCard(root,card){
    status.textContent='TinyFish observation · '+when+' · Not an official '+card.name+' reply.';
   }catch(error){
    const code=String(error?.message||'unavailable');
-   status.textContent=code==='gateway_unavailable'||code==='not_found'||code==='http_404'?
+   status.textContent=code==='gateway_unavailable'||code==='not_found'||code==='http_404'||code==='method_not_allowed'?
     'TinyFish gateway is not enabled on the live website yet. Use the original website link.' :
     'No verified website result: '+code.replace(/[^a-z0-9_ -]/gi,'').slice(0,90)+'. Open the original website instead.';
   }finally{submit.disabled=false}
