@@ -2130,7 +2130,7 @@ async function consumeOwnerCodeFromChat(message,fromVoice){
   if(result?.state!=='verified')throw Error(result?.state==='unreachable'?'Brain verifier unavailable.':'Code expired or was not accepted.');
   await connectOwner();
   if(!ownerReady)throw Error('Verification did not establish an owner session.');
-  ownerMode.textContent='Signed in to Bubbles · Brain / Wallet verified';ownerMode.dataset.verified='true';
+  ownerMode.textContent='Owner mode connected · Robot Brain commands active · Signed in to Bubbles / Wallet';ownerMode.dataset.verified='true';
   status.textContent='Robot Brain connected. Your normal conversation and tasks are ready.';
   linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing accepted. Shared history syncs automatically.';
   void sharedMemory();
@@ -3409,7 +3409,7 @@ async function verifiedOwnerHeaders(){
  const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
  if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
- ownerMode.textContent='Signed in to Bubbles · Brain / Wallet verified';ownerMode.dataset.verified='true';
+ ownerMode.textContent='Owner mode connected · Robot Brain commands active · Signed in to Bubbles / Wallet';ownerMode.dataset.verified='true';
  // Pairing is handled in the same chat composer.
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
  window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
@@ -3422,7 +3422,7 @@ async function connectOwner(){
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
- ownerMode.textContent='Signed in to Bubbles · Brain / Wallet verified';ownerMode.dataset.verified='true';
+ ownerMode.textContent='Owner mode connected · Robot Brain commands active · Signed in to Bubbles / Wallet';ownerMode.dataset.verified='true';
  if(nativeOverlay){linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing saved · history syncs automatically.';}
  // Pairing is handled in the same chat composer.
  persistChat();void sharedMemory();
