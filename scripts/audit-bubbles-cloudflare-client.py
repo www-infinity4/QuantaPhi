@@ -51,6 +51,7 @@ if 'authorization_code' not in grants or 'code' not in responses:problems.append
 if method!='client_secret_basic':problems.append('server_token_method_mismatch')
 if len(regular)!=386:problems.append('scope_count_mismatch')
 if len(set(regular))!=len(regular):problems.append('duplicate_scopes')
-if 'openid' not in scopes:problems.append('openid_scope_not_registered')
+if 'user-details.read' not in regular:problems.append('verified_user_details_scope_missing')
+print('  identity strategy: Cloudflare User Details API with user-details.read; OpenID not required')
 print('contract:', 'PASS' if not problems else 'CHECK_REQUIRED: '+','.join(problems))
 sys.exit(0 if not problems else 2)
