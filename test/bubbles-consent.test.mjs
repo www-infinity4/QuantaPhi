@@ -4,6 +4,7 @@ import {ConsentService} from '../workers/bubbles-connections/consent.mjs';
 import {TokenVault, randomToken} from '../workers/bubbles-connections/vault.mjs';
 import {googleAdapter, githubAdapter} from '../workers/bubbles-connections/providers.mjs';
 import {executeGoogleRead,googleReadURL,selectGoogleResource} from '../workers/bubbles-connections/google-read.mjs';
+import {connectionResult} from '../workers/bubbles-connections/completion.mjs';
 
 // Serialized transactions model DO atomic storage; failures roll back writes.
 function storage() {
@@ -70,6 +71,20 @@ test('failed exchange burns state without persisting a connection', async () => 
   await assert.rejects(f.finish(state),/provider_unavailable/);
   await assert.rejects(f.finish(state),/state_invalid_or_used/);
   assert.ok(![...f.db.rows.keys()].some(k=>k.includes(':connection:') || k.includes(':credential:')));
+});
+
+test('external-browser exchange failure survives the RPC boundary and cannot replay a code',async()=>{
+  const f=fixture(),state=await f.begin();let calls=0;
+  f.adapter.exchange=async()=>{calls++;throw Error('cloudflare_exchange_401_invalid_client');};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'one-use-provider-code'});
+  const input={...f.input,state};
+  const result=await connectionResult(()=>f.service.finishHandoff(input));
+  assert.deepEqual(JSON.parse(JSON.stringify(result)),{connectionError:'cloudflare_exchange_401_invalid_client'});
+  assert.equal(calls,1);
+  assert.deepEqual(await f.service.handoffStatus(input),{status:'expired'});
+  assert.deepEqual(await f.service.finishHandoff(input),{status:'expired'});
+  assert.equal(calls,1);
+  assert.ok(![...f.db.rows.keys()].some(key=>key.includes(':connection:')||key.includes(':credential:')||key.includes(':handoff:')));
 });
 test('disconnect deletes credentials and cancels a callback already in flight', async () => {
   const f = fixture(), first = await f.finish(await f.begin()), state = await f.begin();

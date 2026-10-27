@@ -1,6 +1,33 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {AccountConnections,mountConnections,resolveConnectorWalletToken,connectionCodeMessage,availableCloudflareLoginActions} from '../bubbles-connections.mjs';
+import {providerSignInErrorMessage} from '../bubbles-connections.mjs';
+
+test('Cloudflare exchange diagnostics preserve only standard error names and hide provider descriptions',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ for(const [status,providerError,expected] of [[401,'invalid_client','cloudflare_exchange_401_invalid_client'],
+   [400,'invalid_grant','cloudflare_exchange_400_invalid_grant'],[200,'invalid_scope','cloudflare_exchange_rejected_invalid_scope'],
+   [400,'private-code-token','cloudflare_exchange_400']]){
+  const adapter=cloudflareAdapter({clientId:'test-client',clientSecret:'server-only',
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},
+   async()=>Response.json({error:providerError,error_description:'private-code-token',access_token:'private-access'},{status}));
+  await assert.rejects(adapter.exchange({code:'one-use-code',verifier:'private-verifier',actions:['account.read']}),error=>{
+   assert.equal(error.message,expected);assert.ok(!error.message.includes('private'));return true;
+  });
+ }
+ const oversized=cloudflareAdapter({clientId:'test-client',clientSecret:'server-only',
+  redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},
+  async()=>new Response('x'.repeat(65537),{status:200}));
+ await assert.rejects(oversized.exchange({code:'code',verifier:'verifier',actions:['account.read']}),/provider_response_too_large/);
+});
+
+test('sign-in reports distinct safe client, grant and identity failures',()=>{
+ assert.match(providerSignInErrorMessage('cloudflare_exchange_401_invalid_client'),/client credentials/);
+ assert.match(providerSignInErrorMessage('cloudflare_exchange_400_invalid_grant'),/code or PKCE/);
+ assert.match(providerSignInErrorMessage('cloudflare_identity_403'),/User Details API/);
+ assert.match(providerSignInErrorMessage('connection_complete_receipt_store_type_unknown'),/Diagnostic: connection_complete_receipt_store_type_unknown/);
+ assert.doesNotMatch(providerSignInErrorMessage('cloudflare_exchange_400_private-code-token'),/private-code-token/);
+});
 
 test('account page launches real Cloudflare consent with registered actions even without the full project toolkit',async t=>{
  class Element {

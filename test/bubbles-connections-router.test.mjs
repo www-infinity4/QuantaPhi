@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {handleConnections,PREFIX} from '../workers/bubbles-connections/router.mjs';
+import {connectionResult} from '../workers/bubbles-connections/completion.mjs';
 const bearer='Bearer sq_'+ 'a'.repeat(40);
 function request(path,{method='GET',origin='https://quantaphi.org',authorization=bearer,body}={}) {
   return new Request('https://quantaphi.org'+PREFIX+path,{method,headers:{Origin:origin,Authorization:authorization,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});
@@ -84,6 +85,37 @@ test('callback rejects unregistered states without revealing provider code',asyn
 test('unexpected provider error text is redacted and no token appears in response',async()=>{
   const response=await handleConnections(request('/refresh',{method:'POST',body:{id:'id'}}),env,()=>({refresh:async()=>{throw Error('secret-token-would-be-leaked');}}));
   assert.equal(response.status,503);assert.equal((await response.json()).error,'connection_operation_failed');
+});
+
+test('Android finish and status return safe RPC failures as errors, never ok:true',async()=>{
+  for(const path of ['/handoff/finish','/handoff/status']){
+    for(const failure of ['cloudflare_exchange_401_invalid_client','cloudflare_exchange_400_invalid_grant',
+      'cloudflare_identity_403','provider_token_invalid','vault_key_unavailable']){
+      const fail=()=>connectionResult(async()=>{throw Error(failure);});
+      // A real RPC result is a plain value, without Error custom properties.
+      const rpc=async()=>JSON.parse(JSON.stringify(await fail()));
+      const response=await handleConnections(request(path,{method:'POST',body:{provider:'cloudflare',state:'a'.repeat(43)}}),
+        env,()=>({finishHandoff:rpc,handoffStatus:rpc}));
+      assert.equal(response.status,failure==='vault_key_unavailable'?503:400);
+      assert.deepEqual(await response.json(),{ok:false,error:failure});
+    }
+  }
+});
+
+test('RPC diagnostics classify receipt storage errors without disclosing underlying text',async()=>{
+  const secret='private-provider-code-and-token';
+  const error=Object.assign(new TypeError('storage failed: '+secret),{connectionStage:'receipt_store'});
+  const result=await connectionResult(async()=>{throw error;});
+  assert.deepEqual(result,{connectionError:'connection_complete_receipt_store_type_unknown'});
+  const response=await handleConnections(request('/handoff/finish',{method:'POST',body:{provider:'cloudflare',state:'a'.repeat(43)}}),
+    env,()=>({finishHandoff:async()=>result}));
+  const body=await response.text();
+  assert.equal(response.status,400);
+  assert.ok(!body.includes(secret));
+  assert.match(body,/connection_complete_receipt_store_type_unknown/);
+  const poisoned=await handleConnections(request('/handoff/finish',{method:'POST',body:{provider:'cloudflare'}}),
+    env,()=>({finishHandoff:async()=>({connectionError:'cloudflare_exchange_400_'+secret})}));
+  assert.deepEqual(await poisoned.json(),{ok:false,error:'connection_operation_failed'});
 });
 
 test('two-provider gate reuses tenant-scoped verified records and never gives chat permission itself',async()=>{

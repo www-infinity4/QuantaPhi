@@ -267,6 +267,34 @@ export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...
   const form=fields=>({method:'POST',redirect:'error',signal:AbortSignal.timeout(15000),
     headers:{Authorization:basic,'Content-Type':'application/x-www-form-urlencoded',Accept:'application/json'},
     body:new URLSearchParams(fields)});
+  // Only reflect standardized OAuth errors, never provider descriptions,
+  // tokens, codes, or arbitrary response text. Both token paths use this.
+  const tokenResponse=async(response,stage)=>{
+    const reader=response.body?.getReader();
+    const chunks=[];let size=0;
+    if(!reader)throw Error('provider_response_invalid');
+    try {
+      while(true){
+        const {done,value}=await reader.read();if(done)break;
+        size+=value.byteLength;
+        if(size>65536){await reader.cancel();throw Error('provider_response_too_large');}
+        chunks.push(value);
+      }
+    } finally {reader.releaseLock();}
+    const bytes=new Uint8Array(size);let offset=0;
+    for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}
+    let value;try{value=JSON.parse(new TextDecoder().decode(bytes));}catch{
+      throw Error(response.ok?'provider_response_invalid':stage+'_'+response.status);
+    }
+    if(!value||typeof value!=='object'||Array.isArray(value))throw Error('provider_response_invalid');
+    const allowed=new Set(['invalid_client','invalid_grant','invalid_scope','invalid_request',
+      'unauthorized_client','unsupported_grant_type','server_error','temporarily_unavailable']);
+    if(!response.ok||value?.error){
+      const suffix=allowed.has(value?.error)?'_'+value.error:'';
+      throw Error(stage+'_'+(response.ok?'rejected':response.status)+suffix);
+    }
+    return value;
+  };
   const tokens=async fields=>tokenFields(await jsonResponse(
     await request('https://dash.cloudflare.com/oauth2/token',form(fields)),'cloudflare_exchange'));
   const withScope=(token,value,actions)=>{
@@ -306,7 +334,7 @@ export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...
       return url.href;
     },
     async exchange({code,verifier,actions}){
-      const raw=await jsonResponse(await request('https://dash.cloudflare.com/oauth2/token',
+      const raw=await tokenResponse(await request('https://dash.cloudflare.com/oauth2/token',
         form({grant_type:'authorization_code',client_id:config.clientId,
           redirect_uri:redirectUri,code,code_verifier:verifier})),'cloudflare_exchange');
       const token=tokenFields(raw);
@@ -326,7 +354,7 @@ export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...
     },
     async refresh({refreshToken,actions}){
       if(!refreshToken)throw Error('reconnect_required');
-      const raw=await jsonResponse(await request('https://dash.cloudflare.com/oauth2/token',
+      const raw=await tokenResponse(await request('https://dash.cloudflare.com/oauth2/token',
         form({grant_type:'refresh_token',client_id:config.clientId,refresh_token:refreshToken})),'cloudflare_refresh');
       const token=tokenFields(raw);
       return {...withScope(token,raw,actions),refreshToken:token.refreshToken||refreshToken};
