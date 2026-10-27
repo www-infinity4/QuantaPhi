@@ -1,0 +1,5 @@
+{
+  "version": "20261026-ui-settings1",
+  "app": "Bubbles Chrome PWA",
+  "notes": "Separate Settings viewer, safer backups, source-backed update checking."
+}
