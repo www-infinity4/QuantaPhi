@@ -53,7 +53,8 @@ export async function handleConnections(request,env,resolveService) {
     const inventory=cloudflareScopeInventory(cloudflareScopes);
     return json(origin,{ok:true,configured,clientIdPrefix:configured?clientId.slice(0,16):null,
       scopeInventory:{serverAllowlistCount:inventory.serverAllowlistCount,
-        signInRequestScopeCount:inventory.signInRequestScopeCount}});
+        signInRequestScopeCount:inventory.signInRequestScopeCount,
+        supportsChunkedAllowlist:true}});
   }
   const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
   if(callback && request.method==='GET'){
