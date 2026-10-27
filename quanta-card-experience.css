@@ -182,3 +182,18 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .iqc-ai-send:disabled{opacity:.65;cursor:wait}
 .iqc-ai-receipt{margin:0;font-size:13px;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere;color:#544840}
 .iqc-ai-input:focus-visible,.iqc-ai-send:focus-visible{outline:3px solid #70469c;outline-offset:2px}
+
+
+/* Provider browser quick cards: single Android-friendly action, not a fake embedded provider. */
+.iqc-provider-actions{display:grid;gap:6px;margin:10px 0 12px;padding:11px;border:1px solid #cbddeb;border-radius:15px;background:#f7fbff;max-width:100%;min-width:0}
+.iqc-provider-link{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 12px;border-radius:11px;background:#1765ad;color:#fff!important;font-size:14px;font-weight:800;text-decoration:none;text-align:center;overflow-wrap:anywhere}
+.iqc-provider-info{font:13px/1.45 system-ui,sans-serif;color:#465767;margin:0;overflow-wrap:anywhere}
+.iqc-gemini-browser{background:#fff;border:1px solid #ccdce9;border-radius:15px;padding:10px;margin:10px 0;color:#172839;max-width:100%;min-width:0}
+.iqc-gemini-browser summary{cursor:pointer;font-weight:800;min-height:34px;display:list-item;padding:6px}
+.iqc-gemini-browser form{display:grid;gap:8px;margin-top:8px;min-width:0}
+.iqc-gemini-browser textarea{width:100%;min-width:0;max-width:100%;resize:vertical;border:1px solid #9db6c8;border-radius:11px;padding:11px;font:15px/1.45 system-ui,sans-serif;color:#172839}
+.iqc-gemini-browser button{width:100%;min-height:44px;border-radius:11px;background:#155d9a;color:white;font-size:14px}
+.iqc-gemini-browser button:disabled{opacity:.52}
+.iqc-gemini-browser p{font:13px/1.5 system-ui,sans-serif;white-space:pre-wrap;overflow-wrap:anywhere;margin:3px 0}
+.iqc-gemini-browser [role=status]{min-height:30px}
+@media(max-width:420px){.iqc-provider-actions,.iqc-gemini-browser{padding:9px;margin-block:8px}}
