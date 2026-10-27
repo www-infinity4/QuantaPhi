@@ -138,3 +138,16 @@ test('FOX One exact original video post is source-linked, without fabricating a 
  assert.match(tools,/Third-party autoplay is controlled/);
  assert.match(tools,/qcx-fox-one-brand/);
 });
+
+test('ChatGPT card only requests its actual official website, with no credential interception',async()=>{
+ const {officialView}=await import('../quanta-official-viewer.mjs');
+ const frame=readFileSync(new URL('../quanta-official-viewer.mjs',import.meta.url),'utf8');
+ assert.equal(officialView('chatgpt').url,'https://chatgpt.com/');
+ assert.equal(officialView('https://evil.test'),null);
+ assert.match(frame,/frame\.src=site\.url/);
+ assert.match(frame,/Sign in at /);
+ assert.match(frame,/target='_blank'/);
+ assert.doesNotMatch(frame,/sessionStorage|localStorage|document\.cookie|postMessage\s*\(|api\.openai\.com/);
+ assert.match(launcher,/if\(card\.id==='chatgpt'\)mountOfficialViewer\(item,card\.id\)/);
+ assert.match(detail,/quanta-official-viewer\.css/);
+});
