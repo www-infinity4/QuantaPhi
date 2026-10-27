@@ -44,7 +44,7 @@ The defaults use StarMaker. To change websites, edit `card-input.json` then `pyt
 
 ## Integra review role
 
-Integra is the validation-only reviewer on the Quick Card wiring plan, not the owner executor. As of creation of this document, **no new Integra Gmail, X, or Google profile has been registered** through the existing linked Gmail/Google account. An authenticated user must complete a provider-owned Google account signup and verification to make a distinct mailbox; the Gmail connector does not create accounts. Do not invent the address, assume access, store a password or show a connected badge without verified readback.
+Integra is the validation-only reviewer on the Quick Card wiring plan, not the owner executor. The owner supplied **quantaphi.integra.ai@gmail.com** as Integra's designated Gmail identity on October 27, 2026. It is recorded as **owner-declared, connection unverified**; no Gmail connector authorization, mailbox read, Google verification receipt, or sender rights for this account have been observed. Do not treat owner-reported address creation as a granted session. Sign in to Google separately and connect the account with explicit consent before any Inbox, send, or automated action. No separate Integra X account or handle is verified. Do not store passwords, assume access, or show a Connected badge without readback.
 
 ## Tests and release
 
