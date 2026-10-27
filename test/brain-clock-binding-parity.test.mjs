@@ -8,7 +8,10 @@ const field=(body,key)=>body.split('\n').filter(l=>!l.trim().startsWith('#'))
  .find(Boolean)?.[1]||null;
 test('MODELS points to actual BrainModels entrypoint, wallet retains its production default',()=>{
  const byName=new Map(serviceEntries.map(x=>[field(x,'binding'),x]));
- assert.equal(byName.size,2);
+ assert.equal(byName.size,3);
+ assert.equal(field(byName.get('TINYFISH_BROKER'),'service'),'continuity-session-coordinator');
+ assert.equal(field(byName.get('TINYFISH_BROKER'),'environment'),'production');
+ assert.equal(field(byName.get('TINYFISH_BROKER'),'entrypoint'),null);
  assert.equal(field(byName.get('MODELS'),'service'),'infinity-rogers');
  assert.equal(field(byName.get('MODELS'),'environment'),'production');
  assert.equal(field(byName.get('MODELS'),'entrypoint'),'BrainModels');
