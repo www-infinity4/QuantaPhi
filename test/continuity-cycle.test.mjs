@@ -246,6 +246,50 @@ test('status freshness follows last completed receipt, and delayed cron cannot r
   } finally {d.close();}
 });
 
+test('read-only status retries one transient D1 object reset without mutating receipts', async () => {
+  const d = database(), f = fixture();
+  try {
+    const now = Date.now();
+    const claim = await claimCycle(d.db, AT, now, 'status-read');
+    const receipt = {protocol: 'continuity-cycle-v1', cycleId: claim.id,
+      tracks: TRACKS.map(({id}) => ({id}))};
+    assert.equal(await finishCycle(d.db, claim, receipt, now), true);
+    const originalWrites = d.writes.length;
+    let attempts = 0;
+    f.env.WORK_DB = {prepare(sql) {return {first: async () => {
+      attempts++;
+      if (attempts === 1) throw Error('D1_ERROR: Internal error in D1 DB storage caused object to be reset');
+      return d.db.prepare(sql).first();
+    }}}};
+    const url = 'https://monitor.invalid/status';
+    const recovered = await worker.fetch(new Request(url), f.env);
+    assert.equal(recovered.status, 200);
+    assert.equal((await recovered.json()).report.cycleId, claim.id);
+    assert.equal(attempts, 2);
+    assert.equal(d.writes.length, originalWrites);
+
+    attempts = 0;
+    f.env.WORK_DB = {prepare() {return {first: async () => {
+      attempts++;
+      throw Error('D1_ERROR: Internal error in D1 DB storage caused object to be reset');
+    }}}};
+    const unavailable = await worker.fetch(new Request(url), f.env);
+    assert.equal(unavailable.status, 503);
+    assert.deepEqual(await unavailable.json(), {ok: false, error: 'cycle_receipt_unavailable'});
+    assert.equal(attempts, 2);
+
+    attempts = 0;
+    f.env.WORK_DB = {prepare() {return {first: async () => {
+      attempts++;
+      throw Error('permission_denied');
+    }}}};
+    const denied = await worker.fetch(new Request(url), f.env);
+    assert.equal(denied.status, 503);
+    assert.equal(attempts, 1);
+    assert.equal(d.writes.length, originalWrites);
+  } finally {d.close();}
+});
+
 test('retention only prunes its own old telemetry, preserving fresh cycles', async () => {
   const d = database(), f = fixture();
   try {
