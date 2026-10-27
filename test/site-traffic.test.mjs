@@ -154,3 +154,20 @@ test('public counter rejects an impossible seven-day coverage count',async()=>{
  assert.equal(nodes.qtrafficRequests.textContent,'—');
  assert.match(nodes.qtrafficNote.textContent,/ledger currently unavailable/);
 });
+
+test('public counter rejects malformed UTC dates and non-seven-day windows',async()=>{
+ const changes=[
+  d=>{d.last7Days.since='2026-10-01';},
+  d=>{d.last7Days.until='2026-10-40';},
+  d=>{d.last7Days.since='2026-09-20';d.last7Days.until='2026-09-26';},
+  d=>{d.since='2026-02-30';},
+  d=>{d.last7Days.daysRecorded=7;d.recordedDays=6;}
+ ];
+ for(const change of changes){
+  const malformed=trafficPayload(958421,374475,'2026-10-26T16:28:24.621Z');
+  change(malformed);
+  const nodes=await runClientOnce(new Map(),[malformed,new Error('fallback unavailable')]);
+  assert.equal(nodes.qtrafficRequests.textContent,'—');
+  assert.match(nodes.qtrafficNote.textContent,/ledger currently unavailable/);
+ }
+});
