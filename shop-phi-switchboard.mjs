@@ -46,7 +46,11 @@ export function normalizeCandidate(raw={}){
  if(type==='published-card'&&raw.status!=='approved')return null;
  if(type==='shop-item'&&raw.status!=='published')return null;
  const image=httpsUrl(raw.image);
- return {id,title,url,image,type,sponsor:type==='sponsored'?scrub(raw.sponsor)||'Advertiser':'',
+ return {id,title,url,image,type,
+  // Keep the signed/publicly validated state through later candidate ranking.
+  // approvedQuickCards()/shopItems() are normalized before chooseCompanions().
+  status:type==='published-card'?'approved':type==='shop-item'?'published':'',
+  sponsor:type==='sponsored'?scrub(raw.sponsor)||'Advertiser':'',
   sourceId:scrub(raw.sourceId),contextTopic:scrub(raw.contextTopic),description:scrub(raw.description),
   category:scrub(raw.category),merchant:scrub(raw.merchant),price:scrub(raw.price)};
 }
