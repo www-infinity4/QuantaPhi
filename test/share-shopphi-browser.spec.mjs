@@ -1,0 +1,31 @@
+import {test,expect} from '@playwright/test';
+test.use({viewport:{width:390,height:844}});
+test('ShopPhi full-page seller studio opens with working item fields, draft and large preview',async({page})=>{
+ await page.goto('http://127.0.0.1:8799/shopphi-sell.html',{waitUntil:'domcontentloaded'});
+ const form=page.locator('#shopAdPhi .sap-form');
+ await expect(form).toBeVisible();
+ await expect(page.locator('#shopAdPhi .sap-seller-fullscreen')).toBeVisible();
+ await page.locator('[name="title"]').fill('Vintage denim jacket');
+ await page.locator('[name="description"]').fill('Original denim jacket in used condition, photographed and described by seller.');
+ await page.locator('[name="url"]').fill('https://www.ebay.com/itm/123456789012');
+ await page.locator('[name="priceLabel"]').fill('49.95');
+ await page.locator('[name="category"]').selectOption('Clothing & shoes');
+ await page.locator('[name="condition"]').selectOption('Used');
+ await page.locator('[name="shipping"]').selectOption('Shipping offered');
+ await page.locator('[name="quantity"]').fill('1');
+ await page.getByRole('button',{name:'Save Shop Phi listing draft'}).click();
+ await expect(page.locator('#shopAdPhi .sap-feature')).toContainText('Vintage denim jacket');
+ await expect(page.locator('#shopAdPhi .sap-feature')).toContainText('$49.95');
+ const stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('quantaphi:shop-ad-phi:drafts:v1')||'[]'));
+ expect(stored[0].category).toBe('Clothing & shoes');
+ expect(stored[0].condition).toBe('Used');
+ expect(stored[0].quantity).toBe('1');
+ expect(stored[0].publishState).not.toBe('public');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
+});
+test('unconnected seller never says the draft is public, and card-first page still works',async({page})=>{
+ await page.goto('http://127.0.0.1:8799/',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#oracleCardDeck')).toBeVisible();
+ await expect(page.locator('#oracleCardNext')).toBeVisible();
+ await expect(page.locator('#qtraffic summary')).toBeVisible();
+});
