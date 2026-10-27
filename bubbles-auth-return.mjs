@@ -8,13 +8,13 @@ export function resumeAuthReturn(host=window) {
   const callbackProvider=String(host.location?.pathname||'').match(/\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/)?.[1]||null;
   const saved=JSON.parse(host.sessionStorage?.getItem('bubbles:oauth-pending:v1')||'null');
   const provider=callbackProvider||saved?.provider||'cloudflare';
-  if(result==='received'||result==='failed'){
+  if(result==='received'||result==='failed'||result==='declined'){
    try {host.sessionStorage?.setItem(OAUTH_RETURN_NOTE,
     JSON.stringify({provider,result,at:Date.now()}));}catch{}
   }
   // A provider failure must remain visible. Never silently turn "denied" into
   // a fresh login screen.
-  if(result==='failed')return false;
+  if(result==='failed'||result==='declined')return false;
   const pending=saved;
   if(!pending||!['github','cloudflare','google'].includes(pending.provider)||
      !/^[A-Za-z0-9_-]{43}$/.test(pending.state)||!Number.isFinite(pending.expiresAt)||
