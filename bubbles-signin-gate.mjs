@@ -35,7 +35,38 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const cancel=get('bubblesCancelSignIn');
  const client=new AccountConnections({token:()=>resolveConnectorWalletToken(host),root:host});
  let loading=false,oauthInProgress=false,latest=null,lastChecked=0,refreshInFlight=null;
+ const NOTE_KEY='bubbles:oauth-return-note:v1';
+ const returned=(()=>{
+  try{
+   const value=JSON.parse(host.sessionStorage?.getItem(NOTE_KEY)||'null');
+   return value&&value.provider==='cloudflare'&&['received','failed'].includes(value.result)&&
+    Number.isFinite(value.at)&&value.at<=Date.now()&&value.at>Date.now()-300000?value:null;
+  }catch{return null;}
+ })();
+ let returnIssue=returned?.result==='failed'?
+  'Cloudflare returned an authorization error. Your Bubbles account is not connected.':
+  returned?.result==='received'?
+  'Cloudflare returned to Bubbles. Waiting to verify your account with the server.':'';
+ const clearReturnNote=()=>{try{host.sessionStorage?.removeItem(NOTE_KEY);}catch{}};
  const setStatus=text=>{status.textContent=text;};
+ const finalizeReturn=async(id,error)=>{
+  oauthInProgress=false;
+  const summary=await refresh();
+  if(error){
+   returnIssue=(id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in did not complete: '+String(error.message||'Authorization could not be verified.')+
+    ' Your account remains unverified.';
+  }else if(summary?.providers?.[id]?.connected){
+   clearReturnNote();
+   returnIssue=summary.providers[id].approved?
+    (id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in verified and required permissions approved.':
+    (id==='cloudflare'?'Cloudflare':'GitHub')+' account connected, but not all requested permissions were approved. Review the remaining permissions.';
+   if(summary?.ready&&chat)chat.scrollIntoView({behavior:'smooth',block:'start'});
+  }else{
+   returnIssue=(id==='cloudflare'?'Cloudflare':'GitHub')+' returned, but Bubbles could not verify a connected account. Check that you are in the original wallet-authorized Chrome tab.';
+  }
+  setStatus(returnIssue);
+  updateButtons();
+ };
  const updateButtons=()=>{
   for(const id of ['github','cloudflare']){
    // A provider button must never become a dead control just because wallet
@@ -70,7 +101,10 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   // approve a tool's permissions; hiding this form never authorizes a tool.
   gate.dataset.ready=String(summary.ready);
   gate.hidden=summary.ready;
-  if(summary.ready)setStatus('You’re signed in with the required permissions.');
+  if(summary.ready){
+   clearReturnNote();returnIssue='';
+   setStatus('You’re signed in with the required permissions.');
+  }else if(returnIssue)setStatus(returnIssue);
   else if(summary.signedIn)setStatus('Your account is connected, but Cloudflare needs authorization for the remaining permissions.');
   else if(summary.providers.github.connected)setStatus('Continue with Cloudflare.');
   else setStatus('Sign in to connect your accounts.');
@@ -123,15 +157,9 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    oauthInProgress=true;updateButtons();
    setStatus('Continue on '+(id==='github'?'GitHub':'Cloudflare')+' to sign in.');
    try{
-    await client.connect(id,authorizationActions,async (error)=>{
-     oauthInProgress=false;
-     if(error)setStatus('Sign-in wasn’t completed. Try again.');
-     else {
-      const summary=await refresh();
-      if(summary?.signedIn&&chat)chat.scrollIntoView({behavior:'smooth',block:'start'});
-     }
-     updateButtons();
-    });
+    returnIssue='';
+    clearReturnNote();
+    await client.connect(id,authorizationActions,error=>void finalizeReturn(id,error));
     updateButtons();
    }catch(error){
     oauthInProgress=false;
@@ -154,12 +182,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  host.addEventListener('pageshow',()=>{if(Date.now()-lastChecked>15000)void refresh();});
  root.addEventListener('visibilitychange',()=>{if(!root.hidden&&Date.now()-lastChecked>15000)void refresh();});
  // Resume the existing wallet-bound Android handoff after same-window navigation.
- const resuming=client.resumePending(async (error)=>{
-  oauthInProgress=false;
-  if(error)setStatus('Sign-in wasn’t completed. Try again.');
-  const summary=await refresh();
-  if(!error&&summary?.signedIn&&chat)chat.scrollIntoView({behavior:'smooth',block:'start'});
- });
+ const resuming=client.resumePending(error=>void finalizeReturn('cloudflare',error));
  if(resuming){
   oauthInProgress=true;updateButtons();
   setStatus('Finishing sign-in…');
