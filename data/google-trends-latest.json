@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-27T11:06:55.776037Z",
+  "checked_at": "2026-10-27T16:44:45.542939Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "shaker heights student death",
-      "approx_searches": "100+",
-      "published_at": "2026-10-27T10:50:00Z",
-      "related_news_urls": [
-        "https://fox8.com/news/shaker-heights-student-killed-in-act-of-violence-some-schools-closed-tuesday/",
-        "https://www.news5cleveland.com/about-us/as-seen-on/morning-digest-shaker-heights-high-school-middle-school-closed-following-student-death",
-        "https://www.cleveland.com/crime/2026/10/shaker-hts-high-school-middle-school-to-close-tuesday-because-of-students-death.html"
-      ]
-    },
-    {
-      "query": "purdue basketball preseason game connecticut",
-      "approx_searches": "100+",
-      "published_at": "2026-10-27T10:50:00Z",
-      "related_news_urls": [
-        "https://uconnhuskies.com/news/2026/10/25/mens-basketball-huskies-close-preseason-with-purdue-tuesday-in-hartford",
-        "https://purduesports.com/news/2026/10/26/purdue-closes-out-exhibition-play-at-no-4-connecticut",
-        "https://www.courant.com/2026/10/26/uconn-mens-basketball-readies-for-final-dress-rehearsal-against-purdue-how-to-watch/"
-      ]
-    },
-    {
-      "query": "ynet",
+      "query": "colts trade",
       "approx_searches": "500+",
-      "published_at": "2026-10-27T10:50:00Z",
+      "published_at": "2026-10-27T16:30:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/world/us/us-accuses-government-contractor-leaking-classified-info-girlfriends-substack-2026-10-24/",
-        "https://www.jpost.com/international/article-912939",
-        "https://www.ynetnews.com/article/bjkngeq2fg"
+        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/quenton-nelson-trade-deadline/1974787/",
+        "https://www.49ers.com/news/morning-reports/morning-report-49ers-looking-ahead-to-bye-week-injury-updates",
+        "https://www.cbssports.com/nfl/news/jets-garrett-wilson-trade-landing-spots-chiefs-49ers/"
       ]
     },
     {
-      "query": "when does time change fall 2026",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-27T10:50:00Z",
-      "related_news_urls": [
-        "https://www.wthr.com/article/news/nation-world/permanent-daylight-saving-time-where-states-stand/507-57319b6e-6458-4de6-99c3-e5e40d7fb9a6",
-        "https://www.washingtonpost.com/wellness/2026/10/24/clocks-change-soon-heres-how-prep-your-body/",
-        "https://www.al.com/news/2026/10/daylight-saving-time-halloween-meet-in-2026-it-wont-happen-again-for-a-long-tme.html"
-      ]
-    },
-    {
-      "query": "brian schottenheimer cowboys play calling",
-      "approx_searches": "10000+",
-      "published_at": "2026-10-27T10:40:00Z",
-      "related_news_urls": [
-        "https://www.dallascowboys.com/news/eatman-the-play-caller-fired-back-with-schotts",
-        "https://sports.yahoo.com/nfl/article/its-not-like-hes-naive-as-cowboys-hear-brian-schottenheimer-criticism-theyre-not-content-to-just-beat-injury-riddled-eagles-071848961.html",
-        "https://www.dallasnews.com/sports/cowboys/article/cowboys-eagle-schottenheimer-criticism-nfl-week-7-22491112.php"
-      ]
-    },
-    {
-      "query": "coastal flood warning",
+      "query": "ted bundy",
       "approx_searches": "200+",
-      "published_at": "2026-10-27T10:40:00Z",
+      "published_at": "2026-10-27T16:30:00Z",
       "related_news_urls": [
-        "https://www.cbs8.com/article/news/local/coastal-flood-warning-san-diego/509-f36dedb5-8b13-4610-8a06-2647997836ab",
-        "https://www.ocregister.com/2026/10/26/newport-beach-sees-some-flooding-pch-northbound-in-huntington-beach-closed-during-high-tide/",
-        "https://www.theguardian.com/us-news/2026/oct/26/southern-california-flooding-tides"
+        "https://www.yahoo.com/news/us/articles/utah-authorities-connecting-serial-killer-152942415.html",
+        "https://www.tribdem.com/news/crime/utah-authorities-connecting-serial-killer-ted-bundy-to-another-1970s-homicide/article_4f4ba66b-828d-59a7-ba7a-53c04c363707.html",
+        "https://www.seattletimes.com/nation-world/nation/utah-authorities-are-connecting-serial-killer-ted-bundy-to-another-1970s-homicide/"
       ]
     },
     {
-      "query": "ncis like and subscribe",
-      "approx_searches": "100+",
-      "published_at": "2026-10-27T10:40:00Z",
+      "query": "jennifer shuford",
+      "approx_searches": "200+",
+      "published_at": "2026-10-27T16:30:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66072700/?ref_=ttnw_art_perm",
-        "https://www.tvinsider.com/1298323/ncis-torres-cia-job-keller-gibbs-parker-wilmer-valderrama/",
-        "https://www.cbr.com/ncis-season-24-episode-3-nick-torres-exit/"
+        "https://www.nytimes.com/2026/10/27/health/shuford-cdc-resign.html",
+        "https://www.washingtonpost.com/politics/2026/10/26/jennifer-shuford-cdc-top-medical-officer-leave-trump-administration/",
+        "https://www.theguardian.com/us-news/2026/oct/27/cdc-deputy-director-resigns-jennifer-shuford"
       ]
     },
     {
-      "query": "the fall and rise of reggie dinkins",
-      "approx_searches": "100+",
-      "published_at": "2026-10-27T10:40:00Z",
+      "query": "essen vs rb leipzig",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-27T16:10:00Z",
       "related_news_urls": [
-        "https://www.hollywoodreporter.com/tv/tv-news/reggie-dinkins-season-2-guest-stars-30-rock-alums-1236739389/",
-        "https://www.tvline.com/2297744/jane-krakowski-reggie-dinkins-season-2-cast-nikolaj-coster-waldau-the-black-tapes/",
-        "https://www.avclub.com/reggie-dinkins-season-two-guest-stars-jane-krakowski-scott-adsit"
+        "https://www.sportschau.de/regional/wdr/wdr-fans-von-rot-weiss-essen-betonieren-gaesteblock-zu-100.html",
+        "https://www.bild.de/sport/fussball/ultras-von-essen-betonieren-eingang-vor-dfb-pokalspiel-zu-6ae06fac67fc5d0d0ce66e1f",
+        "https://de.nachrichten.yahoo.com/sport/leipzig-nkunku-fehlt-pokal-144141940.html"
       ]
     },
     {
-      "query": "joan smalls",
-      "approx_searches": "100+",
-      "published_at": "2026-10-27T10:40:00Z",
+      "query": "alex pretti",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T16:10:00Z",
       "related_news_urls": [
-        "https://www.usmagazine.com/celebrity-news/news/tom-brady-and-supermodel-candice-swanepoel-are-dating/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/taking-things-slow-tom-brady-101046756.html",
-        "https://www.justjared.com/2026/10/23/joan-smalls-seemingly-confirms-candice-swanepoel-friendship-breakup-references-summer-house-amid-unverified-tom-brady-rumor/"
+        "https://kstp.com/kstp-news/top-news/alex-prettis-parents-holding-first-news-conference-since-deadly-metro-surge-shooting/",
+        "https://abc13.com/post/alex-pretti-case-family-say-have-no-answers-months-shooting-death-live/19985556/",
+        "https://www.nytimes.com/2026/10/27/us/alex-pretti-parents-federal-investigation.html"
       ]
     },
     {
-      "query": "haiti news",
-      "approx_searches": "100+",
-      "published_at": "2026-10-27T10:40:00Z",
+      "query": "kawhi leonard",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-27T16:10:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/world/americas/bodies-ambushed-salvadoran-soldiers-found-haiti-new-york-times-reports-2026-10-24/",
-        "https://www.nytimes.com/2026/10/21/world/americas/el-salvador-military-haiti-gangs.html",
-        "https://www.washingtonpost.com/world/2026/10/26/confusion-haiti-over-whether-bodies-belong-missing-salvadoran-soldiers/"
+        "https://www.espn.com/nba/story/_/id/50298441/raptors-kawhi-leonard-weeks-due-knee-sources-say",
+        "https://bleacherreport.com/articles/25521035-kawhi-leonard-injury-update-latest-rumors-timeline-return-raptors-amid-knee-swelling",
+        "https://www.cbssports.com/nba/news/kawhi-leonard-sidelined-knee-injury-miss-return-to-clippers-intuit-dome/"
+      ]
+    },
+    {
+      "query": "quenton nelson",
+      "approx_searches": "10000+",
+      "published_at": "2026-10-27T15:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/deforest-buckner-jonathan-taylor-quenton-120335676.html",
+        "https://www.espn.com/video/clip/_/id/50288619",
+        "https://www.stampedeblue.com/indianapolis-colts-rumors/129155/no-colts-player-reportedly-off-limits-if-rebuild-begins-before-upcoming-trade-deadline"
+      ]
+    },
+    {
+      "query": "gta 6 delay",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-27T15:50:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/articles/emberville-delays-early-access-launch-at-the-last-minute",
+        "https://www.gamingbible.com/news/emberville-delayed-day-1-launch-363427-20261027",
+        "https://www.gamespot.com/articles/one-day-out-from-early-access-emberville-has-been-delayed-to-2027/"
+      ]
+    },
+    {
+      "query": "victor julian duque fbi wanted",
+      "approx_searches": "500+",
+      "published_at": "2026-10-27T15:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcmiami.com/news/local/fbi-miami-searches-for-colombian-fugitive-in-54m-drug-money-laundering-operation/3878091/",
+        "https://www.kens5.com/article/news/crime/sa-man-accused-of-laundering-drug-money-now-on-fbis-most-wanted-list/273-b4cbcd0e-ab17-4e0a-ab78-6b13e850f6aa",
+        "https://www.nbcmiami.com/video/nbc-6-news/fbi-offers-reward-in-54m-drug-money-laundering-scheme/3878092/"
+      ]
+    },
+    {
+      "query": "gta 6",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-27T15:50:00Z",
+      "related_news_urls": [
+        "https://www.gamesradar.com/games/grand-theft-auto/gta-6-exclusive-leads-edge-430-check-out-the-16-page-cover-feature-that-includes-interviews-with-rockstar-bespoke-screenshots-and-more-this-week/",
+        "https://www.vice.com/en/article/gta-6-edge-magazine-release-times-screenshots-details/",
+        "https://www.pcgamer.com/games/grand-theft-auto/edge-magazine-went-to-rockstar-to-see-gta-6-and-will-tell-you-all-about-in-lavish-detail-this-thursday-october-29/"
       ]
     }
   ]
