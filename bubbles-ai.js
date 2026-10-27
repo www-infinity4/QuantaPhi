@@ -3741,10 +3741,9 @@ async function checkForSiteUpdate(){
   const html=await response.text();
   const remote=html.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
   if(!remote||!siteRevision||remote===siteRevision)return false;
-  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
-  if(keepChat)saveThread();
-  // Only this trusted update path may keep the active thread on reload.
-  try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1')}catch{}
+  // The automatic site-revision updater must obey the same unsent-draft,
+  // in-flight reply and storage safety checks as the Chrome update button.
+  if(window.QuantaBubbles?.prepareSiteUpdateReload?.()!==true)return false;
   location.reload();
   return true;
  }catch{return false}
