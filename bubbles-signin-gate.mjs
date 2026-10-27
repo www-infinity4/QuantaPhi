@@ -52,11 +52,16 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   if(recover)recover.hidden=true;
   for(const id of ['github','cloudflare']){
    const value=summary.providers[id];
-   cards[id].dataset.status=value.connected?'connected':value.configured?'pending':'unavailable';
-   cards[id].hidden=value.connected;
-   actions[id].textContent='Sign in with '+(id==='github'?'GitHub':'Cloudflare');
+   cards[id].dataset.status=value.connected?(value.approved?'connected':'upgrade'):value.configured?'pending':'unavailable';
+   // A previous partial OAuth connection must still offer re-authorization.
+   // Hiding the button because an old six-scope connection exists prevents
+   // the new 386-scope consent flow from ever starting.
+   cards[id].hidden=value.connected&&value.approved;
+   actions[id].textContent=value.connected&&!value.approved&&id==='cloudflare'?
+    'Review Cloudflare permissions':'Sign in with '+(id==='github'?'GitHub':'Cloudflare');
    labels[id].textContent=value.connected?
-    'Signed in'+(value.label?' as '+value.label:''):
+    value.approved?'Signed in'+(value.label?' as '+value.label:''):
+    'Connected with limited permissions. Review and authorize Cloudflare access to finish setup.':
     !value.configured?'Sign-in is temporarily unavailable. Please try again later.':
     value.reconnect?'Your session expired. Sign in again.':
     'Continue securely on '+(id==='github'?'GitHub':'Cloudflare')+'.';
@@ -64,8 +69,9 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   // Account sign-in and project authorization are separate. Only the server can
   // approve a tool's permissions; hiding this form never authorizes a tool.
   gate.dataset.ready=String(summary.ready);
-  gate.hidden=summary.signedIn;
-  if(summary.signedIn)setStatus('You’re signed in.');
+  gate.hidden=summary.ready;
+  if(summary.ready)setStatus('You’re signed in with the required permissions.');
+  else if(summary.signedIn)setStatus('Your account is connected, but Cloudflare needs authorization for the remaining permissions.');
   else if(summary.providers.github.connected)setStatus('Continue with Cloudflare.');
   else setStatus('Sign in to connect your accounts.');
   updateButtons();
