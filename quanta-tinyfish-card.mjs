@@ -1,7 +1,7 @@
 /* First-party website-to-card transport. No provider tokens or browser cookies in card JS.
  * Responses are TinyFish observations, never publisher-operated APIs or official ChatGPT replies.
  */
-const SUPPORTED=new Set(['starmaker','youtube','reddit','x','tiktok','cnn','fox-news','yahoo-news','tv-guide','fox-one','fox-one-live-news','facebook','instagram']);
+const SUPPORTED=new Set(['starmaker','youtube','reddit','x','tiktok','cnn','fox-news','yahoo-news','tv-guide','fox-one','fox-one-live-news','facebook','instagram','vamworld','pcgs','ngc','heritage','topps','beckett','christies','morrison-hotel-gallery','rolling-stone','coinworld','coinage','shoplc-premium','sonic','burger-king','mcdonalds','loc','nasa-library','pepe-brooke','pepe-vapour','guess-g11-light','guess-g11-dark','levis-501-dark','levis-501-medium','packers-lions-2026','fox-nfl-watch','lions-interception-watch','packers-next-schedule','lions-next-schedule','world-series-game3-2026','world-series-pitchers-2026','world-series-lineups-2026','world-series-game2-highlights','world-series-game1-recap','world-series-future-games','hidden-valley-ranch','kohls-coupons','honda-vehicles','oakley-meta','gmc-trucks','gmc-sierra-2026','gmc-denali-2026','carhartt-shop','des-moines-register','miller-meeks-ia1','zach-nunn-ia3','hurley-surfwear','colorectal-screening','burger-king-chicken-2026','royal-caribbean-cruises','kraft-mac-cheese','tucker-kraft-plays','ai-game-announcer']);
 const UNSUPPORTED_AI=new Set(['chatgpt','gemini','claude','copilot']);
 export const TINYFISH_CARD_ENDPOINT='https://continuity-session-coordinator.marvaseater.workers.dev/v1/quick-cards/tinyfish';
 export const tinyfishCardSupported=id=>SUPPORTED.has(String(id||''));
