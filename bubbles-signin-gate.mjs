@@ -39,11 +39,13 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const returned=(()=>{
   try{
    const value=JSON.parse(host.sessionStorage?.getItem(NOTE_KEY)||'null');
-   return value&&value.provider==='cloudflare'&&['received','failed'].includes(value.result)&&
+   return value&&value.provider==='cloudflare'&&['received','failed','declined'].includes(value.result)&&
     Number.isFinite(value.at)&&value.at<=Date.now()&&value.at>Date.now()-300000?value:null;
   }catch{return null;}
  })();
- let returnIssue=returned?.result==='failed'?
+ let returnIssue=returned?.result==='declined'?
+  'Cloudflare authorization was declined. No account permission was granted.':
+  returned?.result==='failed'?
   'Cloudflare returned an authorization error. Your Bubbles account is not connected.':
   returned?.result==='received'?
   'Cloudflare returned to Bubbles. Waiting to verify your account with the server.':'';
