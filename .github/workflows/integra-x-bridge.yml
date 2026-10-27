@@ -1,0 +1,30 @@
+name: Integra X Browser Bridge
+on:
+  pull_request:
+    paths:
+      - 'bubbles-integra-x.mjs'
+      - 'bubbles-ai.js'
+      - 'workers/infinity-brain-clock/integra-x.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
+      - 'test/bubbles-integra-x.test.mjs'
+      - '.github/workflows/integra-x-bridge.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  focused-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Source parse checks
+        run: |
+          node --check bubbles-integra-x.mjs
+          node --check bubbles-ai.js
+          node --check workers/infinity-brain-clock/integra-x.mjs
+          node --check workers/infinity-brain-clock/worker.js
+      - name: Read/draft/confirm/status safety checks
+        run: node --test test/bubbles-integra-x.test.mjs
