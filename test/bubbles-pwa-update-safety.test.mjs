@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 // Synthetic browser only: no wallet, owner account, provider login or live API.
-async function mountUpdateControls({message = '', imagePending = false, fileSelected = false, confirm = true} = {}) {
+async function mountUpdateControls({message = '', imagePending = false, fileSelected = false, confirm = true, canPrepare = true} = {}) {
   const nodes = [];
   const makeNode = tag => {
     const node = {
@@ -30,7 +30,7 @@ async function mountUpdateControls({message = '', imagePending = false, fileSele
     return null;
   }};
   const navigations = [];
-  let confirmations = 0;
+  let confirmations = 0, preparations = 0;
   const document = {
     visibilityState: 'visible',
     querySelector: selector => selector === '#bubblesInstallChrome' ? install
@@ -47,7 +47,8 @@ async function mountUpdateControls({message = '', imagePending = false, fileSele
     navigator: {standalone: false}, isSecureContext: false,
     matchMedia: () => ({matches: false}),
     addEventListener() {}, setInterval() {},
-    confirm() { confirmations++; return confirm; }
+    confirm() { confirmations++; return confirm; },
+    QuantaBubbles: {prepareSiteUpdateReload() { preparations++; return canPrepare; }}
   };
   const source = fs.readFileSync('bubbles-pwa.js', 'utf8');
   vm.runInNewContext(source, {
@@ -61,7 +62,7 @@ async function mountUpdateControls({message = '', imagePending = false, fileSele
   assert.ok(button, 'new first-party release must be offered');
   const updateMessage = nodes.find(node => node.tag === 'p' && node !== status);
   assert.ok(updateMessage);
-  return {button, updateMessage, navigations, get confirmations() {return confirmations;}};
+  return {button, updateMessage, navigations, get confirmations() {return confirmations;}, get preparations() {return preparations;}};
 }
 
 test('Bubbles PWA update refuses to reload an unsent chat draft', async () => {
@@ -69,6 +70,7 @@ test('Bubbles PWA update refuses to reload an unsent chat draft', async () => {
   app.button.events.click();
   assert.equal(app.navigations.length, 0);
   assert.equal(app.confirmations, 0);
+  assert.equal(app.preparations, 0);
   assert.match(app.updateMessage.textContent, /unsent Bubbles message or image/);
 });
 
@@ -91,6 +93,7 @@ test('Bubbles PWA update permits confirmed reload when composer is empty', async
   const app = await mountUpdateControls();
   app.button.events.click();
   assert.equal(app.confirmations, 1);
+  assert.equal(app.preparations, 1);
   assert.equal(app.navigations.length, 1);
   assert.equal(new URL(app.navigations[0]).searchParams.get('appVersion'), '20261026-ui-settings2');
 });
@@ -99,5 +102,16 @@ test('Bubbles PWA update never reloads when confirmation is declined', async () 
   const app = await mountUpdateControls({confirm: false});
   app.button.events.click();
   assert.equal(app.confirmations, 1);
+  assert.equal(app.preparations, 0);
   assert.equal(app.navigations.length, 0);
+});
+
+
+test('Bubbles PWA update fails closed when active chat cannot be checkpointed', async () => {
+  const app = await mountUpdateControls({canPrepare: false});
+  app.button.events.click();
+  assert.equal(app.confirmations, 1);
+  assert.equal(app.preparations, 1);
+  assert.equal(app.navigations.length, 0);
+  assert.match(app.updateMessage.textContent, /could not be safely saved/);
 });
