@@ -8,11 +8,12 @@ test('StarMaker portable card mounts real existing interactive Quick Card implem
  assert.match(source,/import \{mountCardTools\} from '\.\/quanta-card-experience\.mjs'/);
  assert.match(page,/id="starmakerLive"/);
  assert.match(page,/id="smEmbedCode"/);
- assert.match(source,/allow="microphone"/);
- assert.match(source,/referrerpolicy="strict-origin-when-cross-origin"/);
+ assert.match(read('starmaker-quick-card.mjs'),/allow="microphone"/);
+ assert.match(read('starmaker-quick-card.mjs'),/referrerpolicy="strict-origin-when-cross-origin"/);
  assert.match(page,/starmakerstudios\.com\/en\/web-login/);
  assert.match(page,/play\.google\.com\/store\/apps\/details\?id=com\.starmakerinteractive\.starmaker/);
  assert.doesNotMatch(source,/apiKey|clientSecret|accessToken|localStorage\.setItem/);
+ assert.match(read('starmaker-quick-card.mjs'),/Copy card embed/);
 });
 test('Product launch showcases the playable actual StarMaker demo with accurately labeled future work',()=>{
  const page=read('infinity-launch.html');
