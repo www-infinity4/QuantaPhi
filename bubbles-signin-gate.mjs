@@ -90,11 +90,15 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    // Hiding the button because an old six-scope connection exists prevents
    // the new 386-scope consent flow from ever starting.
    cards[id].hidden=value.connected&&value.approved;
+   // Identity and full toolkit consent are separate user actions.
+   // Initial Cloudflare sign-in needs only user-details.read + memberships.read.
+   // Only an already authenticated Cloudflare account offers 386-scope upgrade.
    actions[id].textContent=value.connected&&!value.approved&&id==='cloudflare'?
-    'Review Cloudflare permissions':'Sign in with '+(id==='github'?'GitHub':'Cloudflare');
+    (value.authorizationActions.includes('owner.full')?'Authorize all 386 Cloudflare permissions':'Review Cloudflare permissions'):
+    'Sign in with '+(id==='github'?'GitHub':'Cloudflare');
    labels[id].textContent=value.connected?
     value.approved?'Signed in'+(value.label?' as '+value.label:''):
-    'Connected with limited permissions. Review and authorize Cloudflare access to finish setup.':
+    'Cloudflare account verified. Full toolkit authorization is separate. Your existing 386 registered permissions are unchanged.':
     !value.configured?'Sign-in is temporarily unavailable. Please try again later.':
     value.reconnect?'Your session expired. Sign in again.':
     'Continue securely on '+(id==='github'?'GitHub':'Cloudflare')+'.';
@@ -155,9 +159,14 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     setStatus((id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in is not configured on the connection service. No authorization was started.');
     return;
    }
-   const authorizationActions=provider.authorizationActions;
+   const authorizationActions=id==='cloudflare'&&!provider.connected?
+    ['account.read']:provider.authorizationActions;
+   // An existing Cloudflare identity may opt into owner.full afterwards.
+   // No request to 386 scopes is sent as a prerequisite for signing in.
+   const upgrading=id==='cloudflare'&&provider.connected;
    oauthInProgress=true;updateButtons();
-   setStatus('Continue on '+(id==='github'?'GitHub':'Cloudflare')+' to sign in.');
+   setStatus(upgrading?'Opening Cloudflare to review the full 386 permissions…':
+    'Continue on '+(id==='github'?'GitHub':'Cloudflare')+' to sign in.');
    try{
     returnIssue='';
     clearReturnNote();
