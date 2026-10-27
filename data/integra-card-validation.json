@@ -1,0 +1,36 @@
+{
+  "schema": "infinity.integra-validation.v1",
+  "id": "integra",
+  "title": "Integra · Quick Card Validator",
+  "role": "validate-only",
+  "gmailAccount": {
+    "status": "not-created",
+    "address": null
+  },
+  "xAccount": {
+    "status": "not-created",
+    "handle": null
+  },
+  "permissions": {
+    "readStudySheet": true,
+    "inspectPublicURLs": true,
+    "inspectConsentedTestReceipts": true,
+    "approveDeploy": false,
+    "sendEmail": false,
+    "createAccounts": false,
+    "writeProviderSessions": false
+  },
+  "reviewKeys": [
+    "officialSource",
+    "providerIdentity",
+    "requestedCapability",
+    "authenticationBoundary",
+    "privacyConsent",
+    "originalLinkFallback",
+    "sourceProvenance",
+    "testsAndReceipts",
+    "deploymentProof"
+  ],
+  "releaseStatus": "not-authorized",
+  "requiredOwnerAction": "Register provider identity and verify permissions separately"
+}
