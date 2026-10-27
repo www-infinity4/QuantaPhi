@@ -43,10 +43,21 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     Number.isFinite(value.at)&&value.at<=Date.now()&&value.at>Date.now()-300000?value:null;
   }catch{return null;}
  })();
+ const reasonTexts={
+  callback_missing_code:'Cloudflare returned without an authorization code.',
+  callback_state_invalid:'Bubbles could not match this return to the original sign-in session.',
+  callback_handoff_failed:'Bubbles could not save Cloudflare authorization after the callback.',
+  invalid_scope:'Cloudflare rejected the requested permissions. This OAuth client currently has 386 required scopes.',
+  invalid_request:'Cloudflare rejected the sign-in request.',
+  unauthorized_client:'Cloudflare did not authorize this OAuth application.',
+  access_denied:'Cloudflare access was declined.',
+  server_error:'Cloudflare authorization service reported an error.',
+  temporarily_unavailable:'Cloudflare authorization service is temporarily unavailable.'
+ };
  let returnIssue=returned?.result==='declined'?
   'Cloudflare authorization was declined. No account permission was granted.':
   returned?.result==='failed'?
-  'Cloudflare returned an authorization error. Your Bubbles account is not connected.':
+  'Cloudflare returned an authorization error: '+(Object.hasOwn(reasonTexts,returned?.reason)?reasonTexts[returned.reason]:'Callback could not complete.')+' Your Bubbles account is not connected.':
   returned?.result==='received'?
   'Cloudflare returned to Bubbles. Waiting to verify your account with the server.':'';
  const clearReturnNote=()=>{try{host.sessionStorage?.removeItem(NOTE_KEY);}catch{}};
