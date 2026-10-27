@@ -24,8 +24,17 @@ body.oracle-quanta .qtraffic-expanded{padding:0 12px 13px}
 body.oracle-quanta #qtrafficNote{display:block;color:#575f64;font-size:12px;line-height:1.5}
 /* The menu already provides every app and account connection link; the
    separate oversized installers list must not interrupt search and cards. */
-body.oracle-quanta .q-install-details,
 body.oracle-quanta main.app > p.sub{display:none!important}
+body.oracle-quanta .q-install-details{
+ display:block!important;margin:12px 0 18px;padding:10px 12px;
+ background:#fff;border:1px solid #dedfdc;border-radius:11px;
+ font-size:12px;color:#50606a
+}
+body.oracle-quanta .q-install-details summary{cursor:pointer;font-size:12px;font-weight:800;min-height:29px;line-height:1.35}
+body.oracle-quanta #oracleCardDeck .shopphi-flank .shopphi-flank-visual{
+ /* Real product companions must not shrink their image away to fit text. */
+ flex:0 0 auto!important;min-height:120px!important;
+}
 /* The wallet recovery action stays navigable, adjacent to Wallet in the menu. */
 body.oracle-quanta #qmenu #qpCloudRecoveryLink{
  display:flex!important;align-items:center;justify-content:flex-start!important;
