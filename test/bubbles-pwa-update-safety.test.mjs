@@ -57,7 +57,8 @@ async function mountUpdateControls({message = '', imagePending = false, fileSele
     fetch: async () => {
       const result = fetchResults[fetchCalls++];
       if (result === 'error') throw new Error('temporary_manifest_failure');
-      return {ok: true, json: async () => result || ({version: '20261028-overnight1', build: 2026102801})};
+      return {ok: true, json: async () => result && typeof result === 'object'
+        ? result : ({version: '20261028-overnight1', build: 2026102801})};
     }
   });
   await new Promise(resolve => setImmediate(resolve));
