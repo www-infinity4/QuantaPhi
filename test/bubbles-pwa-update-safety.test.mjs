@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 // Synthetic browser only: no wallet, owner account, provider login or live API.
-async function mountUpdateControls({message = '', imagePending = false, confirm = true} = {}) {
+async function mountUpdateControls({message = '', imagePending = false, fileSelected = false, confirm = true} = {}) {
   const nodes = [];
   const makeNode = tag => {
     const node = {
@@ -22,9 +22,11 @@ async function mountUpdateControls({message = '', imagePending = false, confirm 
   status.parentElement = {append() {}};
   const text = {value: message};
   const image = {hidden: !imagePending};
+  const photoFile = {files: fileSelected ? [{name: 'pending-photo.png'}] : []};
   const form = {querySelector(selector) {
     if (selector === 'textarea[aria-label="Message Bubbles"]') return text;
     if (selector === '.ba-photo-preview') return image;
+    if (selector === '.ba-photo-file') return photoFile;
     return null;
   }};
   const navigations = [];
@@ -75,6 +77,14 @@ test('Bubbles PWA update refuses to reload an unsent photo', async () => {
   app.button.events.click();
   assert.equal(app.navigations.length, 0);
   assert.equal(app.confirmations, 0);
+});
+
+test('Bubbles PWA update refuses reload while a selected image is still preparing', async () => {
+  const app = await mountUpdateControls({fileSelected: true});
+  app.button.events.click();
+  assert.equal(app.navigations.length, 0);
+  assert.equal(app.confirmations, 0);
+  assert.match(app.updateMessage.textContent, /unsent Bubbles message or image/);
 });
 
 test('Bubbles PWA update permits confirmed reload when composer is empty', async () => {
