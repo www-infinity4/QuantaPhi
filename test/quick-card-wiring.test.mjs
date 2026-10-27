@@ -36,10 +36,13 @@ test('public wiring study is linked into existing builder and Bubbles card catal
  for(const id of ['qwsForm','qwsSource','qwsRows','qwsFrame','qwsJSON','qwsCart'])assert.match(study,new RegExp('id="'+id+'"'));
  assert.match(study,/Sign in at StarMaker/);
 });
-test('Integra is a validation role, not invented registered Gmail account',()=>{
+test('Integra has owner-declared Gmail but no independently verified connector or send grant',()=>{
  const role=JSON.parse(get('data/integra-card-validation.json'));
  assert.equal(role.id,'integra');
- assert.equal(role.gmailAccount.status,'not-created');
+ assert.equal(role.gmailAccount.address,'quantaphi.integra.ai@gmail.com');
+ assert.equal(role.gmailAccount.status,'owner-declared');
+ assert.equal(role.gmailAccount.connected,false);
+ assert.equal(role.gmailAccount.verification,'not-verified-via-connector');
  assert.equal(role.permissions.sendEmail,false);
  assert.equal(role.permissions.approveDeploy,false);
 });
