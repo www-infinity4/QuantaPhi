@@ -8,7 +8,7 @@
 <p class="auth-intro">Sign in with GitHub and Cloudflare to use your accounts in Bubbles.</p>
 <main id="accounts"></main>
 <script type="module">
-import {mountConnections,resolveConnectorWalletToken} from '/bubbles-connections.mjs?v=20261026-full-consent6';
+import {mountConnections,resolveConnectorWalletToken} from '/bubbles-connections.mjs?v=20261026-required386';
 const panel=mountConnections(document.getElementById('accounts'),{token:()=>resolveConnectorWalletToken(window)});
 await panel.refresh();
 </script></div></body></html>

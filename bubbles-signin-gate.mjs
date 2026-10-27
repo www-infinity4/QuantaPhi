@@ -104,8 +104,12 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    // Identity and full toolkit consent are separate user actions.
    // Initial Cloudflare sign-in needs only user-details.read + memberships.read.
    // Only an already authenticated Cloudflare account offers 386-scope upgrade.
-   actions[id].textContent=value.connected&&!value.approved&&id==='cloudflare'?
-    (value.authorizationActions.includes('owner.full')?'Authorize all 386 Cloudflare permissions':'Review Cloudflare permissions'):
+   // When Cloudflare's existing client marks all 386 registered scopes as
+   // required, a two-scope request cannot establish a valid first consent.
+   // Tell the user explicitly that this sign-in also requests the toolkit.
+   actions[id].textContent=id==='cloudflare'&&value.authorizationActions.includes('owner.full')?
+    (value.connected?'Authorize all 386 Cloudflare permissions':'Sign in and authorize 386 Cloudflare permissions'):
+    value.connected&&!value.approved&&id==='cloudflare'?'Review Cloudflare permissions':
     'Sign in with '+(id==='github'?'GitHub':'Cloudflare');
    labels[id].textContent=value.connected?
     value.approved?'Signed in'+(value.label?' as '+value.label:''):
@@ -170,13 +174,18 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     setStatus((id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in is not configured on the connection service. No authorization was started.');
     return;
    }
-   const authorizationActions=id==='cloudflare'&&!provider.connected?
-    ['account.read']:provider.authorizationActions;
-   // An existing Cloudflare identity may opt into owner.full afterwards.
-   // No request to 386 scopes is sent as a prerequisite for signing in.
+   // A registered owner.full permission means the OAuth client currently
+   // requires the full scope inventory at consent time. Do not request an
+   // incompatible two-scope subset and bounce back to the login button.
+   // The button explicitly discloses the 386-permission request.
+   const fullCloudflare=id==='cloudflare'&&provider.authorizationActions.includes('owner.full');
+   const authorizationActions=fullCloudflare?['owner.full']:
+    id==='cloudflare'&&!provider.connected?['account.read']:provider.authorizationActions;
    const upgrading=id==='cloudflare'&&provider.connected;
    oauthInProgress=true;updateButtons();
-   setStatus(upgrading?'Opening Cloudflare to review the full 386 permissions…':
+   setStatus(fullCloudflare?
+    'Opening official Cloudflare consent for all 386 registered permissions. Only approve if you intend to grant all 386.':
+    upgrading?'Opening Cloudflare to review permissions…':
     'Continue on '+(id==='github'?'GitHub':'Cloudflare')+' to sign in.');
    try{
     returnIssue='';

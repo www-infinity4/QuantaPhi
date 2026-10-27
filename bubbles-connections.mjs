@@ -263,10 +263,13 @@ export function mountConnections(container,{token}) {
           continue;
         }
         if(upgrade)card.append(element('p','Cloudflare signed in, but full toolkit access is not approved yet. Review the expanded permissions to connect them.','ba-muted'));
-        const button=element('button',upgrade?'Authorize full Cloudflare toolkit':'Sign in with '+providerName,'ba-control');
+        const fullConsent=provider.id==='cloudflare'&&providerAuthorizationActions(provider).includes('owner.full');
+        const button=element('button',fullConsent?
+          (upgrade?'Authorize all 386 Cloudflare permissions':'Sign in and authorize 386 Cloudflare permissions'):
+          upgrade?'Authorize full Cloudflare toolkit':'Sign in with '+providerName,'ba-control');
         button.type='button';button.disabled=Boolean(client.pending);button.dataset.provider=provider.id;
         button.classList.add('ba-signin-button');
-        button.setAttribute('aria-label','Sign in with '+providerName);
+        button.setAttribute('aria-label',fullConsent?'Sign in and authorize all 386 Cloudflare permissions':'Sign in with '+providerName);
         card.append(button);
         if(provider.id==='cloudflare'){
           card.append(element('p','Cloudflare may already recognize your login and go straight to Review permissions. After authorizing, Bubbles must verify the connection.','ba-muted'));
@@ -291,11 +294,17 @@ export function mountConnections(container,{token}) {
         }
         button.addEventListener('click',async()=>{
           if(client.pending){status.textContent='Finish or cancel the current sign-in first.';return;}
-          button.disabled=true;button.setAttribute('aria-busy','true');status.textContent='Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
-          // Cloudflare identity sign-in is a separate, short authorization.
-          // A previously verified connection may request the full project toolkit.
-          // Never send the 386-scope owner.full grant on a first-time login.
+          button.disabled=true;button.setAttribute('aria-busy','true');
+          status.textContent=provider.id==='cloudflare'&&availableActions.includes('owner.full')?
+            'Opening official Cloudflare sign-in for the 386 registered permissions. Approve only if you want to grant all 386.':
+            'Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
+          // The currently registered Cloudflare app has 386 scopes marked
+          // required. Asking for only two on first sign-in does not match that
+          // registration. Only send owner.full when the provider advertises it,
+          // and disclose that the authorization grants the full toolkit.
+          const fullCloudflare=provider.id==='cloudflare'&&availableActions.includes('owner.full');
           const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):
+            fullCloudflare?['owner.full']:
             provider.id==='cloudflare'&&!upgrade?['account.read']:availableActions;
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
           try {await client.connect(provider.id,actions,async(error,account)=>{
