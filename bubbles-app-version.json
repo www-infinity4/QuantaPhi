@@ -1,0 +1,6 @@
+{
+  "version": "20261027-overnight2",
+  "build": 2026102702,
+  "app": "Bubbles Chrome PWA",
+  "notes": "Safe draft-preserving PWA updates, guarded release checks and separate Settings viewer."
+}

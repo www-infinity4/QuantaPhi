@@ -124,3 +124,13 @@ test('Chrome install button is actionable without an installation-prompt event',
   listeners.get('appinstalled')();
   assert.equal(button.hidden, true);
 });
+
+// The existing Chrome PWA CI workflow runs this file. Include the separate
+// behavioral suite without editing protected GitHub Actions configuration.
+test('PWA update never discards unsent text or photos', () => {
+  const {spawnSync} = require('node:child_process');
+  const result = spawnSync(process.execPath, ['--test', 'test/bubbles-pwa-update-safety.test.mjs'], {
+    encoding: 'utf8', timeout: 15000
+  });
+  assert.equal(result.status, 0, (result.stdout || '') + (result.stderr || ''));
+});

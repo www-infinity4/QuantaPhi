@@ -42,6 +42,9 @@ try{
   await workspace.locator('iframe[title="Media Star"]').waitFor({state:'attached',timeout:20000});
   const nested=chat.frameLocator('.ba-panel .ba-card-workspace iframe[title="Media Star"]');
   await nested.locator('#fredSpacesRadio .fs-media-star').waitFor({state:'visible',timeout:20000});
+  // Fred's player and the Following picker render asynchronously inside the iframe.
+  // Wait for both before asserting; a transient zero count is not a product failure.
+  await nested.locator('#followingSpacesRadio .fsr-person-picker').waitFor({state:'attached',timeout:20000});
   assert.equal(await nested.locator('#followingSpacesRadio .fsr-person-picker').count(),1);
   assert.match(await workspace.locator('p[role="status"]').first().innerText(),/open in chat/i);
   results.push({probe:'bubbles_chat_spoken_command',status:'passed',card:'media-star',iframeRendered:true,playerLinkedToX:true});

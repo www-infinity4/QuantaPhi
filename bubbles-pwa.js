@@ -69,4 +69,107 @@
     installButton.hidden = true;
     status.textContent = 'Bubbles is installed in Chrome.';
   });
+  // Headless install tests and constrained webviews may omit DOM creation APIs.
+  // The existing install behavior must continue even without updater controls.
+  if (typeof document.createElement !== 'function') return;
+  // A PWA cannot silently scan or patch the user's computer or Chrome itself.
+  // Poll the first-party release manifest only while Bubbles is running/visible.
+  const CURRENT_RELEASE = '20261027-overnight2';
+  // A monotonic build number prevents stale CDN manifests offering a downgrade.
+  const CURRENT_BUILD = 2026102702;
+  const updateSection = document.createElement('div');
+  updateSection.className = 'bubbles-update-controls';
+  const updateButton = document.createElement('button');
+  updateButton.type = 'button';
+  updateButton.textContent = 'Check for updates';
+  const updateMessage = document.createElement('p');
+  updateMessage.className = 'bubbles-update-message';
+  updateMessage.setAttribute('role', 'status');
+  updateMessage.setAttribute('aria-live', 'polite');
+  updateMessage.textContent = 'Security and app updates are checked when Bubbles opens.';
+  updateSection.append(updateButton, updateMessage);
+  status.parentElement?.append(updateSection);
+  let latest = '', checking = false, lastCheck = 0;
+  const check = async (showResult = false) => {
+    if (checking || document.visibilityState === 'hidden') return;
+    checking = true;
+    updateButton.disabled = true;
+    if (showResult) updateMessage.textContent = 'Checking for Bubbles updates…';
+    try {
+      if ('serviceWorker' in navigator) {
+        const registration = await navigator.serviceWorker.getRegistration('/');
+        if (registration) await registration.update();
+      }
+      const response = await fetch('/bubbles-app-version.json', {cache:'no-store', credentials:'same-origin'});
+      if (!response.ok) throw Error('manifest_unavailable');
+      const release = await response.json();
+      if (typeof release.version !== 'string' || !/^[a-zA-Z0-9_-]{5,64}$/.test(release.version)) throw Error('invalid_release');
+      // A different version with the same build, a matching version with a
+      // different build, or an older build is not a verified update. Fail closed.
+      if (!Number.isSafeInteger(release.build) || release.build < CURRENT_BUILD ||
+          (release.build === CURRENT_BUILD) !== (release.version === CURRENT_RELEASE)) throw Error('invalid_or_older_release');
+      lastCheck = Date.now();
+      latest = release.build > CURRENT_BUILD ? release.version : '';
+      updateButton.dataset.update = latest ? 'ready' : 'current';
+      updateButton.textContent = latest ? 'Update Bubbles' : 'Check for updates';
+      updateMessage.textContent = latest
+        ? 'A Bubbles website update is ready. Save any unsent message, then tap Update Bubbles.'
+        : 'Bubbles web app is current · checked just now. Chrome itself updates separately.';
+    } catch {
+      // Never offer a previously observed release after a later verification
+      // failure. A stale Update button could otherwise reload from an
+      // unverified manifest while the network or service worker is failing.
+      latest = '';
+      updateButton.dataset.update = 'unverified';
+      updateButton.textContent = 'Check for updates';
+      updateMessage.textContent = 'Could not verify the latest Bubbles version. Update paused; existing chats and wallet remain unchanged.';
+    } finally {
+      checking = false;
+      updateButton.disabled = false;
+    }
+  };
+  // A reload must never discard a composed message or an unsent image.
+  // The conversation may be collapsed, so inspect all Bubbles composers.
+  const hasUnsentMessage = () => {
+    if (typeof document.querySelectorAll !== 'function') return false;
+    for (const form of document.querySelectorAll('.ba-composer')) {
+      const message = form.querySelector('textarea[aria-label="Message Bubbles"]');
+      const image = form.querySelector('.ba-photo-preview');
+      // A selected file can still be decoding before its preview appears.
+      // Block reload throughout image preparation, not just after preview.
+      const fileInput = form.querySelector('.ba-photo-file');
+      if (String(message?.value || '').trim() || (image && !image.hidden) ||
+          (fileInput?.files && fileInput.files.length > 0)) return true;
+    }
+    return false;
+  };
+  updateButton.addEventListener('click', () => {
+    if (!latest) { void check(true); return; }
+    if (hasUnsentMessage()) {
+      updateMessage.textContent = 'Your unsent Bubbles message or image is still here. Send or remove it before updating; no reload occurred.';
+      return;
+    }
+    if (!window.confirm('Reload Bubbles to apply the web app update? Your wallet will not be erased.')) return;
+    // A clean composer is not sufficient: a reply may still be generating.
+    // Bubbles must checkpoint the active thread and explicitly authorize this
+    // one reload; otherwise a fresh-chat startup would hide the conversation.
+    if (window.QuantaBubbles?.prepareSiteUpdateReload?.() !== true) {
+      updateMessage.textContent = 'Bubbles is still working, or the current conversation could not be safely saved. Update paused; no reload occurred.';
+      return;
+    }
+    const url = new URL(location.href);
+    url.searchParams.set('appVersion', latest);
+    location.assign(url.href);
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && Date.now()-lastCheck > 60000) void check();
+  });
+  window.addEventListener('focus', () => {
+    if (Date.now()-lastCheck > 60000) void check();
+  });
+  window.setInterval(() => {
+    if (document.visibilityState === 'visible') void check();
+  }, 60*60*1000);
+  void check();
+
 })();

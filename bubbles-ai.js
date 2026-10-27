@@ -901,9 +901,9 @@ launcher.append(create('span','ba-orb-shine'),create('span','ba-orb-center'));la
 const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('aria-label','Bubbles AI messenger');
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
 header.append(name,close);
-// The same wallet-scoped two-account setup appears at the start of first-party
-// Bubbles chat (including the Android WebView). Preview never blocks chat.
-const chatGate=embedded?null:create('section','ba-inline-account-gate');
+// GitHub/Cloudflare controls live in Accounts. The duplicate inline gate
+// had mismatched IDs and stranded mobile status checks on 'Checking…'.
+const chatGate=null;
 let chatGateMounted=false,chatGateLoading=false;
 if(chatGate){
  chatGate.id='chatBubblesSigninGate';
@@ -1046,7 +1046,7 @@ connectorCodeButton.addEventListener('click',async()=>{
  }catch(error){connectorCodeStatus.textContent=module?module.connectionCodeMessage(error):'The connection controls could not load. Try again.';}
  finally{connectorCodeButton.disabled=false;}
 });
-if(!embedded)composer.prepend(connectorCodeButton,connectorCodeOutput,connectorCodeStatus);
+// Pairing-code generation belongs in Settings, not the composer.
 
 
 
@@ -1068,7 +1068,10 @@ pluginsButton.addEventListener('click',async()=>{
  }catch{pluginsPanel.textContent='Skill references could not load. Your connections are unchanged.';}
 });
 tools.append(pluginsButton,pluginsPanel);
-tools.addEventListener('toggle',()=>{if(tools.open&&typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));});
+tools.addEventListener('toggle',()=>{
+  summary.textContent=tools.open?'← Back to chat':'Settings';
+  tools.setAttribute('aria-label',tools.open?'Bubbles settings viewer':'Open Bubbles settings');
+});
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
 const historyToggle=create('input','');historyToggle.type='checkbox';historyToggle.checked=keepChat;
@@ -1091,7 +1094,9 @@ const importLabel=create('label','ba-privacy-label','Import ChatGPT or Gemini hi
 const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
 importGPT.setAttribute('aria-label','Import ChatGPT conversations.json or Gemini Apps MyActivity.json from Google Takeout');
 const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Choose each ChatGPT conversations.json or Google Takeout Gemini Apps MyActivity.json file. Bubbles indexes only the records actually present in that export.');
-privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
+const advancedDeletion=create('details','ba-danger-zone');
+advancedDeletion.append(create('summary','','Advanced · delete saved backup'),cloudDelete);
+privacy.append(privacyLabel,cloudLabel,clearChat,advancedDeletion,importLabel,importGPT,importStatus);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
@@ -1271,6 +1276,12 @@ for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi
 }
 // Chrome is invoked from Bubbles conversation; no extra browser-launch button.
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
+if(!embedded){
+ const connections=create('a','ba-settings-link','Accounts · GitHub, Cloudflare & StarQuest');
+ connections.href='/bubbles-accounts.html';connections.rel='noopener';
+ tools.prepend(connections);
+ tools.append(connectorCodeButton,connectorCodeOutput,connectorCodeStatus);
+}
 const pairingCard=create('section','ba-pairing-card');
  pairingCard.hidden=true;
  const pairingInstructions=create('p','',nativeOverlay?'Website pairing code. Copy it into the website’s verified owner access. Expires in two minutes; use it once.':'APK pairing code. Copy it on the website, then paste it into the ordinary Android Bubbles chat and Send. Expires in two minutes; use it once.');
@@ -1304,7 +1315,7 @@ if(nativeOverlay){
  // original wallet view into Options without duplicating IDs or credentials.
  const verifiedWallet=document.querySelector('.bubbles-wallet');
  if(verifiedWallet)tools.append(verifiedWallet);
- summary.textContent='⋯';summary.setAttribute('aria-label','Bubbles options');
+ summary.textContent='Settings';summary.setAttribute('aria-label','Bubbles settings');
  // One scrolling surface owns messages, pairing output and expanded options.
  // The composer and its visible feedback remain reachable at every scroll position.
  panel.insertBefore(chatScroll,header);
@@ -1315,7 +1326,7 @@ if(nativeOverlay){
  composer.prepend(status);
  header.hidden=true;
  memoryHint.hidden=true;
- summary.textContent='Options';
+ summary.textContent='Settings';
  workText.hidden=true;
  for(const label of tools.querySelectorAll(':scope > label'))label.hidden=true;
  // One visualViewport handler is attached below by fitChatViewport().
@@ -1337,6 +1348,8 @@ if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
  panel.insertBefore(program,composer);
 }
+// Settings is an overlaid viewer, not another section of the transcript.
+if(!embedded)panel.append(tools);
 // The RecordB project owns the reusable recorder-card source. This first-party
 // QuantaPhi bundle gives the Android WebView actual device commands and status.
 // Do not mount a nonfunctional recorder button in ordinary website browsers.
@@ -1375,7 +1388,7 @@ if(!embedded){
  });
  // Fix the original bug: the Cloud Browser belongs inside this scroll owner.
  chatScroll.prepend(browserHome);
- panel.insertBefore(quick,chatScroll);
+ tools.append(quick); // Optional five-day GPT session is managed in Settings.
  const loadBrowser=async()=>{
   const module=await import('/bubbles-cloud-browser.mjs?v=20261026-ai-collab-browser1');
   return module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
@@ -1807,6 +1820,11 @@ async function refreshConversationFolders(){
 }
 async function openConversation(id){
  if(busy){chatsMessage.textContent='Finish the current reply before changing conversations.';return;}
+ // Do not carry an unsent draft into another conversation or discard an image.
+ if(String(input.value||'').trim() || pendingImage || pendingImages.length || photoInput.files?.length){
+  chatsMessage.textContent='Your current message or image is unsent. Send or remove it before switching conversations.';
+  return;
+ }
  if(!threadIndex.some(item=>item.id===id))return;
  if(keepChat)saveThread();
  let next=keepChat?readThread(id):[];
@@ -1836,6 +1854,11 @@ async function openConversation(id){
 async function startConversation({automatic=false}={}){
  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length){
   chatsMessage.textContent='Current reply or voice request must finish before starting a fresh chat.';
+  return false;
+ }
+ // A timer/reopen or New chat must not overwrite a composed owner instruction.
+ if(String(input.value||'').trim() || pendingImage || pendingImages.length || photoInput.files?.length){
+  chatsMessage.textContent='Your message or image is unsent. Send or remove it before starting another chat.';
   return false;
  }
  if(keepChat&&messages.length)saveThread();
@@ -2015,7 +2038,9 @@ cloudToggle.addEventListener('change',async()=>{
 clearChat.textContent=embedded?'New card chat':'Start new chat';
 clearChat.addEventListener('click',()=>void startConversation());
 cloudDelete.addEventListener('click',async()=>{
- if(!cloudChat||!confirm('Erase the extra Bubbles transcript stored under your verified wallet? This will not erase the separate Robot Brain job records.'))return;
+ if(!cloudChat)return;
+  const typed=prompt('To erase ONLY the optional Bubbles transcript backup, type ERASE BACKUP. Wallet balances and Robot Brain jobs stay unchanged.');
+  if(typed!=='ERASE BACKUP')return;
  try{await longMemory.clear({cloudToo:true});cloudChat=false;cloudToggle.checked=false;cloudDelete.hidden=true;
   save(CLOUD_MEMORY_KEY,false);memoryHint.textContent='Optional wallet-scoped transcript erased. Owner Brain archive is unchanged.'}
  catch(error){memoryHint.textContent='Could not erase wallet archive: '+String(error.message||error)}
@@ -2115,7 +2140,7 @@ async function consumeOwnerCodeFromChat(message,fromVoice){
   if(result?.state!=='verified')throw Error(result?.state==='unreachable'?'Brain verifier unavailable.':'Code expired or was not accepted.');
   await connectOwner();
   if(!ownerReady)throw Error('Verification did not establish an owner session.');
-  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+  ownerMode.textContent='Owner mode connected · Robot Brain commands active · Signed in to Bubbles / Wallet';ownerMode.dataset.verified='true';
   status.textContent='Robot Brain connected. Your normal conversation and tasks are ready.';
   linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing accepted. Shared history syncs automatically.';
   void sharedMemory();
@@ -3394,7 +3419,7 @@ async function verifiedOwnerHeaders(){
  const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
  if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
- ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+ ownerMode.textContent='Owner mode connected · Robot Brain commands active · Signed in to Bubbles / Wallet';ownerMode.dataset.verified='true';
  // Pairing is handled in the same chat composer.
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
  window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
@@ -3407,7 +3432,7 @@ async function connectOwner(){
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
- ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+ ownerMode.textContent='Owner mode connected · Robot Brain commands active · Signed in to Bubbles / Wallet';ownerMode.dataset.verified='true';
  if(nativeOverlay){linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing saved · history syncs automatically.';}
  // Pairing is handled in the same chat composer.
  persistChat();void sharedMemory();
@@ -3716,10 +3741,9 @@ async function checkForSiteUpdate(){
   const html=await response.text();
   const remote=html.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
   if(!remote||!siteRevision||remote===siteRevision)return false;
-  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
-  if(keepChat)saveThread();
-  // Only this trusted update path may keep the active thread on reload.
-  try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1')}catch{}
+  // The automatic site-revision updater must obey the same unsent-draft,
+  // in-flight reply and storage safety checks as the Chrome update button.
+  if(window.QuantaBubbles?.prepareSiteUpdateReload?.()!==true)return false;
   location.reload();
   return true;
  }catch{return false}
@@ -3728,6 +3752,17 @@ async function checkForSiteUpdate(){
 window.QuantaBubbles={
  siteRevision,
  sharedMainThread:SHARED_MAIN_THREAD,
+ // The first-party PWA updater must preserve the active chat and must not
+ // interrupt a reply, voice request, selected image or unsent owner draft.
+ // This grants no new account, wallet, browser or Robot Brain authority.
+ prepareSiteUpdateReload:()=>{
+  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
+  if(String(input.value||'').trim()||pendingImage||pendingImages.length||photoInput.files?.length)return false;
+  // With history disabled, reloading a nonempty chat would lose its turns.
+  if(!keepChat&&messages.length)return false;
+  if(keepChat&&messages.length&&!saveThread())return false;
+  try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1');return true}catch{return false}
+ },
  // The native X hides the outer Android window, not this inner WebView.
  // Begin another visually empty chat only after a real owner reopening.
  startFreshOnReopen:()=>{

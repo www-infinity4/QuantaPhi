@@ -90,7 +90,7 @@ test('UI has a distinct five-day ChatGPT control; browser worker enforces owner 
  assert.doesNotMatch(ui,/localStorage\.setItem\(.*Authorization/);
 });
 
-test('Android chat exposes approval above scroll while browser content stays inside it',()=>{
+test('Android chat keeps optional GPT approval in Settings while browser stays in chat scroll',()=>{
  const ai=fs.readFileSync('bubbles-ai.js','utf8');
  const browser=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
  const css=fs.readFileSync('bubbles-mobile-access.css','utf8');
@@ -102,9 +102,10 @@ test('Android chat exposes approval above scroll while browser content stays ins
   assert.match(page,/bubbles-mobile-access.css/);
  }
  assert.ok(ai.includes('chatScroll.prepend(browserHome)'), 'Cloud Browser must mount inside the chat scroll area');
- assert.ok(ai.includes('panel.insertBefore(quick,chatScroll)'), 'the grant button must remain visible above the transcript');
- assert.ok(ai.includes('if(chatGate)chatScroll.insertBefore(chatGate,ownerMode)'),
-  'both web and Android account sign-in gates must scroll instead of clipping the approval');
+ assert.ok(ai.includes('tools.append(quick)'), 'optional GPT grant must stay in Settings, not crowd the transcript');
+ assert.ok(ai.includes('const chatGate=null'), 'no duplicate account sign-in gate may hang inside the conversation');
+  assert.ok(ai.includes("connections.href='/bubbles-accounts.html'"), 'Accounts must remain reachable in their dedicated viewer');
+  assert.ok(ai.includes('if(!embedded)panel.append(tools)'), 'Settings must not be in the chat scroll');
  assert.ok(ai.includes('input.blur();'), 'opening approval must not force the Android keyboard');
  assert.ok(ai.includes('module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders})'));
  assert.ok(!ai.includes('module.mount({host:panel,ownerHeaders:verifiedOwnerHeaders})'));
