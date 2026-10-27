@@ -1,5 +1,6 @@
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261027-karaoke1';
 import {mountProviderActions,officialProviderUrl} from './provider-quick-cards.mjs';
+import {mountOwnerGeminiBrowserTool} from './gemini-owner-browser-card.mjs';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -52,6 +53,7 @@ const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=
 function link(text,href,klass=''){const a=el('a',klass,text);a.href=href;a.target='_blank';a.rel='noopener noreferrer';return a}
 export const aiCardMode=id=>id==='gemini'?'gemini_first':id==='claude'?'gemini_claude_review':null;
 function askAiTools(root,card){
+ if(card.id==='gemini'){mountOwnerGeminiBrowserTool(root);return;}
  if(!['gemini','claude','copilot'].includes(card.id))return;
  const area=el('div','iqc-ask-ai');
  if(card.id==='copilot'){
