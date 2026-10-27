@@ -57,13 +57,17 @@ export async function runSmoke({fetcher=fetch,full=false}={}) {
    const scope=await jsonResponse(scopeRes,'Cloudflare scope inventory');
    const allowed=scope.scopeInventory?.serverAllowlistCount;
    const requested=scope.scopeInventory?.signInRequestScopeCount;
+   // The public inventory must identify the active OAuth client, not just
+   // return plausible counts from an unrelated or stale configuration.
    check(scope.ok===true&&typeof scope.configured==='boolean'&&
+     typeof scope.clientIdPrefix==='string'&&/^[a-f0-9]{16}$/i.test(scope.clientIdPrefix)&&
      Number.isSafeInteger(allowed)&&allowed>=0&&
      Number.isSafeInteger(requested)&&requested>=0&&requested<=allowed,
      'Cloudflare scope inventory is malformed or inconsistent');
    check(!/clientSecret|accessToken|refreshToken|apiToken/i.test(JSON.stringify(scope)),
      'Cloudflare scope inventory exposed credential fields');
    add('cloudflare_scope_inventory','observed',{http:scopeRes.status,
+     clientIdPrefix:scope.clientIdPrefix,
      serverAllowlistCount:allowed,signInRequestScopeCount:requested,
      fullScopeRequestConfigured:scope.configured&&allowed===386&&requested===386,
      clientRegistrationVerified:false,ownerConsentVerified:false});
