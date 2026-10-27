@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-26T22:18:03.769355Z",
+  "checked_at": "2026-10-27T01:34:29.546338Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 17
+      "articles_selected": 12
     },
     {
       "publisher": "CBS Sports",
@@ -17,6 +17,17 @@
     }
   ],
   "articles": [
+    {
+      "title": "Brewers vs. Rays World Series Game 3 picks: Freddy Peralta faces former club at crucial point in series",
+      "url": "https://www.cbssports.com/betting/news/brewers-vs-rays-world-series-game-3-picks-freddy-peralta-faces-former-club-at-crucial-point-in-series/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-26T22:45:48Z",
+      "summary": "Down 2-0, the Rays turn to former Brewer Freddy Peralta in Game 3 of the World Series",
+      "author": "Matt Severance",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/26/ec284248-2fc1-4e0f-b75c-621ddf7a28af/peralta.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
     {
       "title": "2026 MLB playoff bracket: Schedule and scores as Brewers go for 3-0 World Series lead over Rays",
       "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/",
@@ -27,17 +38,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/20/ad4b6088-a174-48fb-8be4-f78cb2b02b32/2026-mlb-bracket-brewers-rays.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Brewers-Rays World Series Game 3 FAQ, lineups (Monday, 8 ET, FOX/FOX One)",
-      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-3-starting-lineups-and-pitching-matchup",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-26T20:41:00Z",
-      "summary": "",
-      "author": "Anthony Castrovince, Adam Berry and Adam McCalvy",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "Former Ray -- and 2020 World Series hero -- gives back to cause near and dear to him",
@@ -62,23 +62,12 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Brewers prep for potential 'roof ball' as World Series shifts to Tampa Bay",
+      "title": "Brewers prep for potential 'roof ball' as World Series shifts to Tropicana Field",
       "url": "https://www.mlb.com/news/brewers-practice-plays-off-tropicana-field-roof",
       "publisher": "MLB.com",
       "published_at": "2026-10-26T14:52:48Z",
       "summary": "",
       "author": "Max Ralph",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Maddon to return to Trop to throw out Game 3 1st pitch",
-      "url": "https://www.mlb.com/news/20261026-joe-maddon-first-pitch-rays",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-26T14:51:00Z",
-      "summary": "",
-      "author": "",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -161,34 +150,12 @@
       "image_credit": ""
     },
     {
-      "title": "'Fastball Freddy' benefiting from historic velo bump this postseason",
-      "url": "https://www.mlb.com/news/freddy-peralta-velocity-increase-2026-postseason",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-25T19:47:23Z",
-      "summary": "",
-      "author": "Jared Greenspan",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Brewers, Rays prove there's still room for old-school scouting",
       "url": "https://www.mlb.com/news/brewers-rays-scouting-investment-world-series-2026",
       "publisher": "MLB.com",
       "published_at": "2026-10-25T18:46:13Z",
       "summary": "",
       "author": "",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Peralta set to meet old friends -- and new foes -- in Fall Classic",
-      "url": "https://www.mlb.com/news/freddy-peralta-ready-to-face-old-team-in-2026-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-25T18:00:00Z",
-      "summary": "",
-      "author": "Anthony DiComo",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -236,17 +203,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/0e27538b-6922-4e4b-8ad5-9ff5676c15bb/frelick-homer-imagn.png",
       "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Fiery Caminero airs frustrations about Rays' miscues as focus shifts to Game 3",
-      "url": "https://www.mlb.com/news/junior-caminero-rays-miscues-2026-world-series-game-2",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-25T05:48:37Z",
-      "summary": "",
-      "author": "Adam Berry",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "Methodical Brewers chip away at Rays, rally to seize 2-0 lead",
@@ -346,6 +302,50 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/07/22/b563f6f2-3782-4bf1-9958-e98e5a237e60/jacob-misiorowski-brewers-2.jpg",
       "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Today's top games to watch, best bets, odds: Brewers vs. Rays World Series Game 1, Knicks at Celtics and more",
+      "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-vs-rays-world-series-game-1-knicks-at-celtics-and-more/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T23:56:07Z",
+      "summary": "Find best bets and props for the biggest games in sports on Friday from the SportsLine Projection Model and top CBS Sports experts",
+      "author": "Gene Menez",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/08/20/18a863a5-e179-42fb-bec6-6c0b5b004088/jacob-misiorowski-cbs.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Rays vs. Brewers World Series Game 1 parlay, MLB picks, prediction: Let the small-ball Fall Classic begin",
+      "url": "https://www.cbssports.com/betting/news/rays-vs-brewers-world-series-game-1-parlay-mlb-picks-prediction-let-the-small-ball-fall-classic-begin/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T23:01:18Z",
+      "summary": "The Rays and Brewers open an unlikely 2026 World Series on Friday in Milwaukee",
+      "author": "Matt Severance",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/21/99be7715-986d-4092-ab6b-480f87cb72d4/2026-04-01t204030z-1567889633-mt1usatoday28636884-rtrmadp-3-mlb-tampa-bay-rays-at-milwaukee-brewers-jpg.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Brandon Woodruff, Brewers' longest-tenured player, makes World Series roster after long injury absence",
+      "url": "https://www.cbssports.com/mlb/news/brandon-woodruff-injury-brewers-world-series-roster-rays/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T20:48:32Z",
+      "summary": "Woodruff, who debuted with Milwaukee in 2017, hasn't pitched since July 4 due to a shoulder issue",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/4d68ee28-5e19-45f2-a03d-546bdc0dc49d/woodruff-getty.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Ever wonder what a Chandler Simpson homer would look like? We'll show you",
+      "url": "https://www.mlb.com/news/chandler-simpson-home-run-breakdown",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-23T16:04:00Z",
+      "summary": "Rays speedster has zero official MLB HR. That doesn't mean he's never hit one",
+      "author": "Mike Petriello",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
     }
   ],
   "unavailable_sources": [
