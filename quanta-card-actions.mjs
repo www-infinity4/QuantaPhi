@@ -14,6 +14,22 @@ function route(card){
  return location.pathname+location.search;
 }
 function previewUrl(card){return new URL(route(card),location.origin).href}
+function socialPreviewUrl(card,host){
+ // X/other crawlers need actual card metadata in HTML, not browser-only JS.
+ const u=new URL('/q-share',location.origin);
+ const name=String(card.name||card.title||card.id||'Quick Card').slice(0,160);
+ const description=String(card.shareDescription||card.description||card.feature||card.details||('Explore '+name+' Quick Card')).replace(/\s+/g,' ').slice(0,420);
+ const image=card.shareImage||card.ogImage||card.previewImage||card.poster||card.image||
+  host?.closest('article')?.querySelector('img')?.currentSrc||
+  host?.closest('article')?.querySelector('img')?.src||'';
+ u.searchParams.set('title',name);
+ u.searchParams.set('text',description);
+ u.searchParams.set('kind','card');
+ u.searchParams.set('dest',previewUrl(card));
+ if(image){try{const asset=new URL(image,location.origin);if(asset.protocol==='https:'&&!asset.username&&!asset.password)u.searchParams.set('image',asset.href)}catch(_){}}
+ return u.href;
+}
+
 function notify(host,s){host.textContent=s}
 export function mountCardActions(host,card,options={}){
  if(!host||!card)return;
@@ -59,7 +75,7 @@ export function mountCardActions(host,card,options={}){
   notify(status,'Collected on this device. Cloud sync and coin rewards are not confirmed.');
  });
  b('↗ Share',async()=>{
-  const url=previewUrl(card);
+  const url=socialPreviewUrl(card,host);
   try{
    if(navigator.share){await navigator.share({title:name,text:'Explore the '+name+' interactive Quick Card on QuantaPhi',url});notify(status,'Share sheet opened.');return}
    if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);notify(status,'Quick Card link copied.');return}
