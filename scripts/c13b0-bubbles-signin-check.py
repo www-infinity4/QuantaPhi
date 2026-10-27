@@ -73,13 +73,13 @@ def javascript():
     module=html['module']
     code,headers,body,url=get(module+'&c13b0='+STAMP if '?' in module else module+'?c13b0='+STAMP)
     if code!=200:raise Exception('Sign-in JS HTTP '+str(code))
-    if "['account.read']:provider.authorizationActions" not in body:
-        raise Exception('Expected identity-first sign-in code is not live')
-    if 'Authorize all 386 Cloudflare permissions' not in body:
-        raise Exception('Separate 386-scope authorization control not live')
+    if "fullCloudflare?['owner.full']" not in body:
+        raise Exception('Expected registered 386-scope sign-in code is not live')
+    if 'Sign in and authorize 386 Cloudflare permissions' not in body:
+        raise Exception('Explicit 386-scope Cloudflare sign-in label is not live')
     if 'client.resumePending(' not in body:
         raise Exception('Android/Chrome OAuth return recovery not present')
-    return {"identityFirst":True,"fullScopesSeparate":True,"returnHandler":True}
+    return {"fullRequiredScopeConsent":True,"scopeCountDisclosed":386,"returnHandler":True}
 
 def callback():
     code,headers,body,url=get('/api/bubbles/connections/cloudflare/callback?result=failed&c13b0='+STAMP)
@@ -109,7 +109,7 @@ def protected():
 check('Bubbles routed to Cloudflare service',api)
 check('registered 386 OAuth scopes',scope)
 check('live Bubbles button',frontend)
-check('live identity-first JavaScript',javascript)
+check('live registered-scope JavaScript',javascript)
 check('Cloudflare callback failure visibility',callback)
 check('wallet-bound gate enforcement',protected)
 RECEIPT.parent.mkdir(mode=0o700,parents=True,exist_ok=True)
@@ -125,7 +125,7 @@ print("\nReceipt:",RECEIPT)
 print("Outcome:",receipt['status'])
 if receipt["status"]=="public_path_verified_not_user_signed_in":
     print("These checks passed; actual browser OAuth still requires confirmation.")
-    url=BASE+'/bubbles.html?signin=identity-first-1131'
+    url=BASE+'/bubbles.html?signin=required386-1134'
     try:
         opener=subprocess.run(['am','start','-a','android.intent.action.VIEW',
             '-d',url,'-p','com.android.chrome'],capture_output=True,timeout=10)
