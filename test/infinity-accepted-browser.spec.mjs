@@ -36,6 +36,7 @@ test('website button performs an authenticated typed request and renders only sa
  });
  await page.goto(base+'/?card=durable-framework-computers',{waitUntil:'domcontentloaded'});
  const card=page.locator('#oracleCardStage .iac-card');
+ await card.getByText('Read this website with Bubbles',{exact:true}).click();
  await card.getByRole('button',{name:'Parts & accessories on Framework Computers',exact:true}).click();
  await expect(card.getByRole('button',{name:'Check results',exact:true})).toBeVisible();
  await expect(card.getByRole('button',{name:'Parts & accessories on Framework Computers',exact:true})).toBeDisabled();
@@ -54,6 +55,33 @@ test('missing TinyFish backend reports unavailable and never launches a run',asy
  });
  await page.goto(base+'/?card=durable-framework-computers',{waitUntil:'domcontentloaded'});
  const card=page.locator('#oracleCardStage .iac-card');
+ await card.getByText('Read this website with Bubbles',{exact:true}).click();
  await card.getByRole('button',{name:'Parts & accessories on Framework Computers',exact:true}).click();
  await expect(card.getByRole('status').filter({hasText:'awaiting activation'})).toBeVisible();expect(starts).toBe(0);
+});
+
+test('all 116 accepted brands reach the carousel inventory and accepted priority opens the homepage',async({page})=>{
+ await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#oracleCardStage > .iac-card')).toBeVisible();
+ await expect(page.locator('.iac-card[data-infinity-accepted="true"]')).toHaveCount(116);
+ await expect(page.locator('#oracleCardChooser option[value^="source-durable-"]')).toHaveCount(116);
+ await page.locator('#oracleCardInventory').click();
+ await page.locator('#oracleCardChooser').selectOption('source-durable-fisher-space-pen');
+ await expect(page.locator('#oracleCardStage').getByRole('heading',{name:'Fisher Space Pen',exact:true})).toBeVisible();
+});
+test('website actions remain direct links without owner login or browser dispatch',async({page})=>{
+ let requests=0;
+ await page.route('**/work/quick-card-browser',r=>{requests++;return r.abort();});
+ await page.goto(base+'/?card=durable-framework-computers',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage .iac-card');
+ await expect(card.getByRole('link',{name:'Parts & accessories on Framework Computers',exact:true})).toHaveAttribute('href','https://frame.work/marketplace/parts');
+ await expect(card.getByRole('link',{name:'Parts & accessories on Framework Computers',exact:true})).toHaveAttribute('target','_blank');
+ expect(requests).toBe(0);
+ await page.goto(base+'/?card=durable-ronson',{waitUntil:'domcontentloaded'});
+ const held=page.locator('#oracleCardStage .iac-card');
+ await expect(held.getByRole('heading',{name:'Ronson',exact:true})).toBeVisible();
+ await expect(held.getByRole('link',{name:'Visit official website ↗'})).toHaveAttribute('href','https://kb.zippo.com/kb-articleour-companies');
+ await expect(held.locator('[data-website-action]')).toHaveCount(0);
+ await expect(held.locator('.iac-provenance')).toContainText('awaiting verification');
+ expect(requests).toBe(0);
 });

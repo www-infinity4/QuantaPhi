@@ -118,11 +118,12 @@ function registerSourceCards(){
  }
  if(added){
   updateTabs();predict();
-  // New sources enter the same rotation as originals, product cards and Cardone.
-  // Explicit deep links still take priority, but source arrival cannot steal
-  // the first slot from a legitimate earlier Quant/rotation selection.
+  // Honor deep links and visitor interaction. Before interaction, newly loaded
+  // accepted brands receive their requested priority over ordinary brands.
   const requested=entries.find(e=>e.id===spotlightRequested||e.feedId===spotlightRequested);
   if(!expanded&&!viewerTouched&&requested&&available(requested))show(requested,false);
+  else if(!expanded&&!viewerTouched&&!spotlightRequested&&!active?.node?.matches('.iac-card')&&
+   entries.some(e=>available(e)&&e.node.matches('.iac-card')))show(chooseOpening(),false);
   else if(!active&&!expanded)start();
  }
 }
@@ -167,7 +168,10 @@ function updateInventory(){
  if(chooser.dataset.inventory!==signature){
   chooser.replaceChildren();
   const hint=document.createElement('option');hint.value='';hint.textContent='Choose a card…';chooser.append(hint);
-  for(const [label,list] of [['QuantaPhi originals',cards.filter(e=>!e.id.startsWith('source-'))],['Source experiences',cards.filter(e=>e.id.startsWith('source-'))]]){
+  for(const [label,list] of [
+   ['Infinity accepted',cards.filter(e=>e.node.matches('.iac-card'))],
+   ['QuantaPhi originals',cards.filter(e=>!e.id.startsWith('source-'))],
+   ['Source experiences',cards.filter(e=>e.id.startsWith('source-')&&!e.node.matches('.iac-card'))]]){
    if(!list.length)continue;const group=document.createElement('optgroup');group.label=label;
    for(const e of list){const option=document.createElement('option');option.value=e.id;option.textContent=e.title;group.append(option)}chooser.append(group);
   }
@@ -266,7 +270,7 @@ window.addEventListener('quantaphi:feed-updated',e=>{
  feedState=readDirections();
  updateTabs();predict();
 });
-Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted1'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1')]).then(([r,q])=>{
  directionApi=r;quantApi=q;feedState=readDirections();updateTabs();
  if(selectedTab==='for-you')void connectQuant();
@@ -429,7 +433,9 @@ function chooseOpening(){
    localStorage.setItem('oracle:opening-rotation:v1',String((openingCursor+1)%1000000));
   }catch{openingCursor=0}
  }
- return ready[openingCursor%ready.length];
+ const accepted=ready.filter(e=>e.node.matches('.iac-card[data-infinity-accepted="true"]'));
+ const pool=accepted.length?accepted:ready;
+ return pool[openingCursor%pool.length];
 }
 function start(){if(!active&&!expanded){
  const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);

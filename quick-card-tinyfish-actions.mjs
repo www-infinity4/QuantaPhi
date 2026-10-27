@@ -79,9 +79,20 @@ function safeResultUrl(url,card){
 }
 export function mountQuickCardTinyfishTools(host,card){
  const trusted=acceptedBrand(card?.id);if(!host||!trusted||trusted.official!==card.official)return;
- const box=node('section',undefined,'iac-browser'),actions=node('div',undefined,'iac-website-actions');
+ const box=node('section',undefined,'iac-browser'),links=node('div',undefined,'iac-website-actions');
  box.setAttribute('aria-label',card.name+' website actions');
- const status=node('p','Choose what to open on the real website.','iac-status');status.setAttribute('role','status');
+ for(const action of trusted.actions){
+  const link=node('a',action.label+' ↗','iac-web-action');link.href=action.url;link.target='_blank';link.rel='noopener noreferrer';
+  link.dataset.websiteAction=action.id;link.setAttribute('aria-label',action.label+' on '+card.name);links.append(link);
+ }
+ box.append(links);
+ if(trusted.sourceStatus!=='observed'||!trusted.actions.length){
+  box.append(node('p','Website action links are being checked. You can visit the official website below.','iac-status'));
+  host.append(box);return {box};
+ }
+ const assist=node('details',undefined,'iac-assist'),summary=node('summary','Read this website with Bubbles');
+ const actions=node('div',undefined,'iac-website-actions');
+ const status=node('p','Choose an action to request a website read.','iac-status');status.setAttribute('role','status');
  const result=node('div',undefined,'iac-results'),check=node('button','Check results','iac-check');check.type='button';check.hidden=true;
  const signin=node('a','Open Bubbles to sign in');signin.href='/bubbles.html';signin.hidden=true;
  const buttons=[];let active=false;
@@ -133,5 +144,5 @@ export function mountQuickCardTinyfishTools(host,card){
  check.addEventListener('click',async()=>{
   try{const work=session.check();refresh();await work;render()}catch(error){explain(error)}finally{refresh()}
  });
- box.append(actions,status,signin,check,result);host.append(box);return {session,box};
+ assist.append(summary,actions,status,signin,check,result);box.append(assist);host.append(box);return {session,box};
 }

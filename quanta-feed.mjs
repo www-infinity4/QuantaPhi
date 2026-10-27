@@ -1,5 +1,5 @@
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
-import {INFINITY_ACCEPTED_BRANDS,hasAcceptedSource} from './infinity-accepted-catalog.mjs';
+import {INFINITY_ACCEPTED_BRANDS} from './infinity-accepted-catalog.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261026-live-results1';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
 import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
@@ -25,7 +25,7 @@ const fromBubbles=BUBBLES_CARDS.filter(c=>typeof c.url==='string'&&/^\/(?!\/)/.t
  .map(c=>({id:c.id,name:c.title,category:'QuantaPhi apps',feature:'Open interactive QuantaPhi app',
   study:'Existing QuantaPhi application or media card with its original controls. Some actions require a verified wallet, source access or the usual owner approval.',
   url:c.url,route:c.url,origin:'quanta-app'}));
-const fromAccepted=INFINITY_ACCEPTED_BRANDS.filter(hasAcceptedSource).map(card=>({...card,
+const fromAccepted=INFINITY_ACCEPTED_BRANDS.map(card=>({...card,
  url:card.official,route:'/?card='+card.id,origin:'infinity-accepted'}));
 export const ALL_FEED_CARDS=Object.freeze([...new Map([...fromAccepted,...fromSources,...fromScience,...fromDiscovery,...fromBubbles]
  .map(c=>[c.id,Object.freeze(c)])).values()]);

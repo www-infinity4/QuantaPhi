@@ -13,13 +13,14 @@ not manufacturer affiliation or a blanket durability/lifetime-warranty claim.
 - `infinity-accepted-sources.mjs`: dated original website imagery and navigation.
   **111 sources observed, 106 source images, 341 action mappings**. No generic
   QuantaPhi image replaces missing brand artwork.
-- Existing Oracle carousel and discovery feed admit observed source cards, retain
+- Existing Oracle carousel and discovery feed admit all 116 owner-accepted cards, retain
   each card's real node, Follow / Star / Collect / Share / +1 Build handlers,
   preserve explicit card selection and strict Following membership, and prefer
   accepted brands within the least-exposed group. Every card remains reachable
   in complete rounds. Accepted cards have no generic Google search fields.
-- `quick-card-tinyfish-actions.mjs`: each visible website control is a typed action
-  with its observed destination. Owner verification precedes dispatch. Running or
+- `quick-card-tinyfish-actions.mjs`: primary website controls are direct links to
+  observed destinations for every visitor. Optional Bubbles reads remain typed,
+  authenticated actions. Owner verification precedes dispatch. Running or
   ambiguous starts block another run; recovery reuses the same request ID.
 - `workers/infinity-brain-clock/quick-card-browser*.mjs` and the existing Brain
   route: authenticated, fixed-source browser tasks, bounded request/result streams,
@@ -36,7 +37,8 @@ Reconcile these three overlapping module paths before merging that other draft.
 
 ## Source holds
 
-These remain in the accepted registry but do not enter the working carousel:
+These appear in the carousel with their official website and an action-verification
+notice. They have no automated website-action controls until verified:
 
 | Entry | Observed limitation |
 | --- | --- |
@@ -63,18 +65,21 @@ quick-card integration. That produced no article; it was not a required website
 capability. The observed navigation is useful evidence for these destinations,
 **not a live QuantaPhi-to-TinyFish runtime receipt or acceptance of every brand**.
 
-Cloudflare's live `infinity-brain-clock` settings were read on October 27:
-**no `TINYFISH_API_KEY` binding exists**. ChatGPT's TinyFish connection cannot be
-exported into the website. A server credential must be provisioned through a
-private, authorized configuration path before deployment/activation. No saved
-profile is required for this branch's public brand tasks. Never request a key
-in chat or embed it in public code. Owner-profile tasks from PR #1156 need their
-own separately verified profile configuration.
+The owner installed `TINYFISH_API_KEY` on `continuity-session-coordinator`.
+A later binding inspection also found a private `TINYFISH_BROKER` binding and
+bridge-token metadata on Brain. These settings do not supply the provider
+adapter implemented here: this source expects a direct Brain key, and the live
+scripts still lacked a broker route during the independent review. No secret
+values were read, copied or committed. Preserve the current workers and secrets.
 
-Keep this change in draft until authenticated browser acceptance succeeds after
-the backend credential is available. Do not describe the cards as live or all
-buttons as tested from source checks alone. Public multi-user metered browsing
-still requires its own per-user authorization and budget integration.
+The October 27 owner follow-up explicitly requested that the cards be put on the
+page. Publish carousel placement and direct website navigation independently of
+the unfinished authenticated browser adapter. Do not hold the cards in an
+unpublished draft because Bubbles reads await activation, and do not claim those
+reads work. No production Brain/coordinator deployment is part of page placement.
+Public multi-user metered browsing still requires per-user authorization and
+budget integration. An authenticated live receipt remains required for that
+separate integration.
 
 ## Validation
 

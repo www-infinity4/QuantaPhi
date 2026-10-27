@@ -15,7 +15,7 @@ test('preserves all 116 owner entries, four categories and specific model qualif
  assert.equal(acceptedBrand('durable-thinkpad-classic-t-series').name,'ThinkPad (Classic/T-Series)');
  assert.equal(acceptedBrand('durable-casio-g-shock-classic-line').name,'Casio (G-Shock/Classic Line)');
  assert.ok(INFINITY_ACCEPTED_BRANDS.every(c=>c.acceptedBy==='catalog-owner'&&c.infinityAccepted));
- assert.ok(!hasAcceptedSource(acceptedBrand('durable-ronson')),'domain for sale must not enter the carousel');
+ assert.ok(!hasAcceptedSource(acceptedBrand('durable-ronson')),'a held source must not enable automated actions');
 });
 test('each enabled button maps to a trusted observed HTTPS website destination',()=>{
  for(const card of INFINITY_ACCEPTED_BRANDS.filter(hasAcceptedSource))for(const action of card.actions){
