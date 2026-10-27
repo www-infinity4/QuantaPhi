@@ -6,17 +6,26 @@
  const STORAGE_KEY='quantaphi_verified_traffic_v2';
  let best=null,busy=false;
  const validCount=n=>Number.isSafeInteger(n)&&n>=0;
+ // Verify real UTC calendar dates; a seven-day label must describe seven days.
+ const utcDay=s=>{
+  if(typeof s!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(s))return NaN;
+  const t=Date.parse(s+'T00:00:00.000Z');
+  return Number.isFinite(t)&&new Date(t).toISOString().slice(0,10)===s?t:NaN;
+ };
  function valid(d){
   const t=Date.parse(d?.fetchedAt);
+  const start=utcDay(d?.since),through=utcDay(d?.through);
+  const recentStart=utcDay(d?.last7Days?.since),recentUntil=utcDay(d?.last7Days?.until);
   return d?.schemaVersion===2&&d.site==='quantaphi.org'&&d.source==='Cloudflare GraphQL httpRequests1dGroups'&&
    d.scope==='recorded_since'&&d.historicComplete===false&&typeof d.refreshConfigured==='boolean'&&
-   /^\d{4}-\d{2}-\d{2}$/.test(d.since)&&/^\d{4}-\d{2}-\d{2}$/.test(d.through)&&d.since<=d.through&&
+   Number.isFinite(start)&&Number.isFinite(through)&&start<=through&&
    Number.isFinite(t)&&t<Date.now()+60000&&validCount(d.requests)&&validCount(d.pageViews)&&
    d.last7Days&&validCount(d.last7Days.requests)&&validCount(d.last7Days.pageViews)&&
    validCount(d.last7Days.daysRecorded)&&d.last7Days.daysRecorded<=7&&
-   /^\d{4}-\d{2}-\d{2}$/.test(d.last7Days.since)&&
-   /^\d{4}-\d{2}-\d{2}$/.test(d.last7Days.until)&&d.last7Days.since<=d.last7Days.until&&
-   validCount(d.recordedDays)&&typeof d.coverageContinuous==='boolean'&&
+   Number.isFinite(recentStart)&&Number.isFinite(recentUntil)&&
+   recentUntil-recentStart===6*86400000&&recentStart>=start&&recentStart<=through&&
+   validCount(d.recordedDays)&&d.last7Days.daysRecorded<=d.recordedDays&&
+   typeof d.coverageContinuous==='boolean'&&
    d.last7Days.requests<=d.requests&&d.last7Days.pageViews<=d.pageViews;
  }
  // Keep only validated aggregate counts across page reloads. No visitor identifiers are stored.
