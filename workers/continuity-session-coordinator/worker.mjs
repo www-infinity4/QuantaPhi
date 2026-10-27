@@ -155,6 +155,20 @@ export async function sourceCache(db, at) {
         const stamp = Date.parse(t.observedAt || report.checkedAt);
         if (!['checked', 'blocked'].includes(sourceState) || !Number.isFinite(stamp) ||
             stamp > at || at - stamp > SOURCE_MAX_AGE) continue;
+        // Older deployed versions incorrectly marked one successful workflow as
+        // full CI coverage. Never carry that legacy verdict into a corrected
+        // coordinator through the public-source cache.
+        if (t.id === 'build') {
+          const ci = t.ci;
+          if (!ci || ci.expectedMinimum !== PR1144_WORKFLOW_FLOOR ||
+              typeof ci.responseComplete !== 'boolean' ||
+              typeof ci.coverageComplete !== 'boolean' ||
+              !Number.isSafeInteger(ci.observed) ||
+              ci.coverageComplete !== (ci.responseComplete &&
+                ci.observed >= PR1144_WORKFLOW_FLOOR) ||
+              (ci.passed === true && (!ci.coverageComplete || ci.success !== ci.observed)))
+            continue;
+        }
         cache[t.id] = {...t, sourceState, sourceDetail: t.sourceDetail || t.detail,
           observedAt: new Date(stamp).toISOString()};
       }
