@@ -42,7 +42,7 @@ test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>
  assert.match(source,/Finishing sign-in/);
 });
 
-function mountedGate(t,payload,{startFails=false}={}){
+function mountedGate(t,payload,{startFails=false,walletMissing=false}={}){
  const elements=new Map();
  const root={getElementById(id){
   if(!elements.has(id))elements.set(id,{dataset:{},hidden:false,disabled:false,textContent:'',
@@ -50,7 +50,7 @@ function mountedGate(t,payload,{startFails=false}={}){
   return elements.get(id);
  },addEventListener(){}};
  const popups=[],calls=[],storage=new Map();
- const host={document:root,QuantaCloudConnection:{resolveDeviceToken:async()=>'sq_'+'a'.repeat(40)},
+ const host={document:root,QuantaCloudConnection:{resolveDeviceToken:async()=>walletMissing?'':'sq_'+'a'.repeat(40)},
   addEventListener(){},removeEventListener(){},setTimeout:()=>1,clearTimeout(){},
   sessionStorage:{getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)},
   open(){const popup={location:{},close(){}};popups.push(popup);return popup;}};
@@ -120,7 +120,7 @@ test('an abandoned provider sign-in can be cancelled and immediately retried',as
  assert.equal(ui.calls.filter(c=>c.path==='/start').length,2);
  cancel.listeners.click();
 });
-test('signed-in form hides while missing project permissions remain unapproved',async t=>{
+test('previously limited Cloudflare connection offers reauthorization instead of hiding the button',async t=>{
  const payload=partialGate();
  payload.providers.cloudflare.connected=true;
  payload.providers.cloudflare.missingActions=['projects.full'];
@@ -131,8 +131,11 @@ test('signed-in form hides while missing project permissions remain unapproved',
  assert.deepEqual(summary.providers.cloudflare.missing,['projects.full']);
  const ui=mountedGate(t,payload);
  await new Promise(setImmediate);
- assert.equal(ui.get('bubblesSigninGate').hidden,true);
+ assert.equal(ui.get('bubblesSigninGate').hidden,false);
  assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+ assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
+ assert.equal(ui.get('bubblesCloudflareSignIn').disabled,false);
+ assert.equal(ui.get('bubblesCloudflareSignIn').textContent,'Review Cloudflare permissions');
 });
 test('full project permissions are still requested when registered by the server',()=>{
  const payload=partialGate();
@@ -140,4 +143,24 @@ test('full project permissions are still requested when registered by the server
  payload.providers.cloudflare.authorizationActions.push('projects.full','invented-action');
  assert.deepEqual(summarizeGate(payload).providers.cloudflare.authorizationActions,
   ['account.read','projects.build','ledger.read','projects.full']);
+});
+
+test('missing verified wallet never leaves a dead disabled Cloudflare button',async t=>{
+ const ui=mountedGate(t,partialGate(),{walletMissing:true});
+ await new Promise(setImmediate);
+ const button=ui.get('bubblesCloudflareSignIn');
+ assert.equal(button.disabled,false);
+ assert.equal(ui.get('bubblesRecoverWallet').hidden,false);
+ assert.match(ui.get('bubblesSigninStatus').textContent,/verified Bubbles wallet/i);
+ await button.listeners.click();
+ assert.equal(button.disabled,false);
+ assert.equal(ui.get('bubblesRecoverWallet').hidden,false);
+ assert.equal(ui.calls.some(c=>c.path==='/start'),false,'Unverified wallet must never start OAuth or associate a token');
+});
+
+test('public Bubbles markup includes clickable Cloudflare action and wallet recovery',()=>{
+ const html=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
+ assert.match(html,/<button id="bubblesCloudflareSignIn"[^>]*type="button"[^>]*>/);
+ assert.doesNotMatch(html,/<button id="bubblesCloudflareSignIn"[^>]*disabled/);
+ assert.match(html,/id="bubblesRecoverWallet"/);
 });

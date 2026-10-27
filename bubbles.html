@@ -160,8 +160,9 @@
           <p id="bubblesGithubStatus"></p>
         </article>
         <article class="bubbles-signin-provider" id="bubblesCloudflareCard">
-          <button id="bubblesCloudflareSignIn" data-provider="cloudflare" type="button" disabled aria-describedby="bubblesCloudflareStatus">Sign in with Cloudflare</button>
+          <button id="bubblesCloudflareSignIn" data-provider="cloudflare" type="button" aria-describedby="bubblesCloudflareStatus">Sign in with Cloudflare</button>
           <p id="bubblesCloudflareStatus"></p>
+          <a id="bubblesRecoverWallet" class="bubbles-wallet-recovery" href="/wallet-recovery.html?verify=1" hidden>Verify existing wallet to finish Cloudflare sign-in</a>
         </article>
       </div>
       <div class="bubbles-signin-controls">
@@ -249,7 +250,7 @@ html.bubble-iframe .bubbles-bottom-nav,body.bubbles-embedded .bubbles-bottom-nav
 </style>
 <footer class="qp-site-footer" aria-label="QuantaPhi site information"><p>QuantaPhi · AI research, media and learning</p><nav aria-label="Legal and site links"><a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a></nav></footer>
   <script type="module">
-    import('/bubbles-signin-gate.mjs?v=20261026-full-consent6')
+    import('/bubbles-signin-gate.mjs?v=20261026-cloudflare-click1')
       .then(({mountBubblesSigninGate})=>mountBubblesSigninGate())
       .catch(()=>{
         const state=document.getElementById('bubblesSigninStatus');
