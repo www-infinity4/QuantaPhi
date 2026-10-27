@@ -1,5 +1,6 @@
 import {cardProvider,providerSearchUrl,quickCardManifest} from './quanta-card-provider.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
+import {readTinyfishCardSource} from './quanta-card-tinyfish.mjs';
 /* Shared actions for QuantaPhi quick cards. No browser sign-in implies API permission. */
 const STORE_STARS='quantaPhiCardStarsV1';
 const STORE_COLLECT='quantaPhiCollected';
@@ -141,14 +142,8 @@ export function mountCardActions(host,card,options={}){
     let detail=bar.querySelector('.qca-live-source');
     if(!detail){detail=element('p','qca-live-source');detail.setAttribute('role','status');bar.append(detail);}
     try{
-     const r=await fetch('https://bubbles-tools.marvaseater.workers.dev/v1/assist',{
-      method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({tool:'tinyfish.fetch',request:'Read this Quick Card public source',url:source}),
-      signal:AbortSignal.timeout(24000)});
-     const result=await r.json();
-     if(!r.ok||result?.receipt?.status!=='complete'||result.provider!=='TinyFish')
-      throw Error(result.error||'provider_unavailable');
-     detail.textContent=String(result.output||'').slice(0,2200)||'The source returned no readable text.';
+     const result=await readTinyfishCardSource(source);
+     detail.textContent=result.text||'The source returned no readable text.';
      notify(status,'TinyFish live source checked. Read-only, with source evidence; no checkout or sign-in.');
     }catch{detail.textContent='Live source unavailable. You can open the original site instead.';
      notify(status,'TinyFish did not return a verified read.');}
