@@ -4,6 +4,17 @@ const show=()=>{document.getElementById('qcpSearchLine').hidden=kind.value!=='se
 kind.addEventListener('change',show);show();
 // Help creators configure official search interactions without inventing arbitrary APIs.
 const websiteInput=form.elements.namedItem('website'),searchInput=form.elements.namedItem('searchTemplate');
+// Explicit prefill from the wiring study; never publish on navigation.
+try {
+ const from=new URLSearchParams(location.search),raw=from.get('website'),text=from.get('title');
+ const site=raw&&new URL(raw);
+ if(site?.protocol==='https:'&&!site.username&&!site.password&&!site.port&&/^[a-z0-9.-]+$/i.test(site.hostname)){
+  websiteInput.value=site.href;
+  if(text)form.elements.namedItem('title').value=text.slice(0,85);
+  form.elements.namedItem('description').value='Explore the original '+(text||site.hostname)+' website, using its authorized actions and source links.';
+  form.elements.namedItem('interactionRequest').value='Use real provider URLs, preserve original sign-in, and show working controls with a reliable official-site fallback.';
+ }
+}catch{/* Ignore malformed navigation parameters. */}
 function suggestSearch(){
  if(kind.value!=='search'||searchInput.value.trim())return;
  try{
