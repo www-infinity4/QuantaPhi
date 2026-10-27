@@ -69,6 +69,9 @@
     installButton.hidden = true;
     status.textContent = 'Bubbles is installed in Chrome.';
   });
+  // Headless install tests and constrained webviews may omit DOM creation APIs.
+  // The existing install behavior must continue even without updater controls.
+  if (typeof document.createElement !== 'function') return;
   // A PWA cannot silently scan or patch the user's computer or Chrome itself.
   // Poll the first-party release manifest only while Bubbles is running/visible.
   const CURRENT_RELEASE = '20261026-ui-settings1';
