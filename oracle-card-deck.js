@@ -321,7 +321,7 @@ function show(entry,remember=true){
  void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // Every original Oracle widget receives the same five real actions.
  // Source cards already own the toolbar inside mountCardTools.
- if(!entry.id.startsWith('source-')){
+ if(!entry.id.startsWith('source-')&&entry.id!=='coliseumZeusCard'){
   const displayed=entry;
   import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
    if(active!==displayed||!stage.contains(displayed.node))return;
