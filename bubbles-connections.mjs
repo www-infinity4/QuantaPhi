@@ -292,7 +292,11 @@ export function mountConnections(container,{token}) {
         button.addEventListener('click',async()=>{
           if(client.pending){status.textContent='Finish or cancel the current sign-in first.';return;}
           button.disabled=true;button.setAttribute('aria-busy','true');status.textContent='Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
-          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):availableActions;
+          // Cloudflare identity sign-in is a separate, short authorization.
+          // A previously verified connection may request the full project toolkit.
+          // Never send the 386-scope owner.full grant on a first-time login.
+          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):
+            provider.id==='cloudflare'&&!upgrade?['account.read']:availableActions;
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
           try {await client.connect(provider.id,actions,async(error,account)=>{
             cancel.hidden=true;
