@@ -164,11 +164,11 @@ def login():
             return False
         try:
             url = urllib.parse.urlsplit(value)
+            return (url.scheme == "https" and url.hostname == "dash.cloudflare.com"
+                    and url.username is None and url.password is None
+                    and url.port in (None, 443))
         except ValueError:
             return False
-        return (url.scheme == "https" and url.hostname == "dash.cloudflare.com"
-                and url.username is None and url.password is None
-                and url.port in (None, 443))
 
     if not trusted_url(verify) or (complete and not trusted_url(complete)):
         print("Cloudflare returned an untrusted verification URL; refusing to open it.")
