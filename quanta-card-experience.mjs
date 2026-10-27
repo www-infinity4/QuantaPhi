@@ -345,6 +345,14 @@ export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(id==='chatgpt'){
+  // This card is a real-website launch surface, not a fake site search,
+  // local checklist or an imitation ChatGPT reply. The official viewer
+  // mounts beside these original shared actions in source-quick-cards.mjs.
+  root.append(node('p','qcx-note','Sign in and use the actual ChatGPT website with the official website controls below.'));
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
  if(id==='google'||id==='bing'){
   // Search remains the primary interaction; global controls come afterward.
   searchTool(root,card);mountCardActions(root,card);return;

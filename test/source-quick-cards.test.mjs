@@ -36,7 +36,7 @@ test('Google and Bing start real engine requests inside the Infinity Viewer',()=
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261027-karaoke1/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261027-siteviewer1/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
@@ -65,7 +65,8 @@ test('provider permissions and content limitations remain explicit',()=>{
  assert.match(findSourceCard('whatsapp').details,/cannot be embedded/);
  assert.match(findSourceCard('starmaker').details,/backing tracks/);
  assert.match(findSourceCard('fox-news').details,/draft-only/);
- assert.match(findSourceCard('chatgpt').details,/not get embedded/);
+ assert.match(findSourceCard('chatgpt').details,/Framing depends on the provider and browser/);
+ assert.match(findSourceCard('chatgpt').details,/not synchronized to QuantaPhi/);
  assert.ok(!launcher.includes('localStorage.setItem'));
  assert.ok(!launcher.includes('navigator.geolocation'));
  assert.ok(!launcher.includes('navigator.mediaDevices.getUserMedia'));
@@ -136,4 +137,17 @@ test('FOX One exact original video post is source-linked, without fabricating a 
  assert.match(tools,/widgets\?\.load/);
  assert.match(tools,/Third-party autoplay is controlled/);
  assert.match(tools,/qcx-fox-one-brand/);
+});
+
+test('ChatGPT card only requests its actual official website, with no credential interception',async()=>{
+ const {officialView}=await import('../quanta-official-viewer.mjs');
+ const frame=readFileSync(new URL('../quanta-official-viewer.mjs',import.meta.url),'utf8');
+ assert.equal(officialView('chatgpt').url,'https://chatgpt.com/');
+ assert.equal(officialView('https://evil.test'),null);
+ assert.match(frame,/frame\.src=site\.url/);
+ assert.match(frame,/Sign in at /);
+ assert.match(frame,/target='_blank'/);
+ assert.doesNotMatch(frame,/sessionStorage|localStorage|document\.cookie|postMessage\s*\(|api\.openai\.com/);
+ assert.match(launcher,/if\(card\.id==='chatgpt'\)mountOfficialViewer\(item,card\.id\)/);
+ assert.match(detail,/quanta-official-viewer\.css/);
 });
