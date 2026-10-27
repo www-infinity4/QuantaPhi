@@ -154,7 +154,7 @@ test('standalone website and Android reopen fresh chats while embedded cards ret
 
 test('PWA update preparation checkpoints the active chat and rejects active work or unsafe storage',()=>{
  const a=ui.indexOf('prepareSiteUpdateReload:()=>{');
- const b=ui.indexOf('\\n },',a);
+ const b=ui.indexOf('\n },',a);
  assert.ok(a>0&&b>a,'first-party updater must expose a bounded checkpoint method');
  const stored=[],ctx={busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,
   voicePending:[],input:{value:''},pendingImage:null,pendingImages:[],photoInput:{files:[]},
