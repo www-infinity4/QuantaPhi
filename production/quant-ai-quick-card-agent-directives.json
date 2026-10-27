@@ -1,0 +1,149 @@
+{
+  "version": "2026-10-27.1",
+  "status": "proposed_source_only_not_deployed",
+  "owner_intent": "Fresh source-checked quick cards, one embedded power-search surface, consent-scoped Quant AI ranking, and auditable 6-flank commerce.",
+  "load_rule": {
+    "at": "job_intake",
+    "requires": [
+      "docs/QUANT-AI-QUICK-CARD-AGENT-DIRECTIVES.md",
+      "docs/UNIVERSAL-QUICK-CARD-CONTRACT.md"
+    ],
+    "missing": "halt_compliance_claim_and_log_directives_loaded_false"
+  },
+  "messages": [
+    {
+      "id": "ALL-FRESH",
+      "role": "all",
+      "directive": "Verify original URL and event/product freshness before each public render or hide and mark stale.",
+      "evidence": [
+        "source_url",
+        "checked_at",
+        "expires_at",
+        "source_response",
+        "fallback"
+      ]
+    },
+    {
+      "id": "SPORTS-NEXT",
+      "role": "research",
+      "directive": "Prefer the next verified matchup, live game only with freshness receipt; recap a final game only once per viewer-event, then rotate.",
+      "state_machine": [
+        "scheduled",
+        "live",
+        "final_unseen",
+        "archived"
+      ],
+      "event_key": [
+        "provider",
+        "league",
+        "season",
+        "event_id"
+      ],
+      "viewer_recap_key": [
+        "wallet_or_local_anonymous_id",
+        "event_id"
+      ],
+      "fallback": "schedule_original_or_unavailable"
+    },
+    {
+      "id": "ONE-SEARCH",
+      "role": "ui",
+      "directive": "One compact card toolbar power search, one in-card surface, three verified routes named QuantaPhi, Infinity Phi and Omni Phi; genuine original-site search bar only where core to provider.",
+      "routes": [
+        {
+          "id": "quantaphi",
+          "status": "adapter_must_be_verified"
+        },
+        {
+          "id": "infinity_phi",
+          "status": "adapter_must_be_verified"
+        },
+        {
+          "id": "omni_phi",
+          "status": "adapter_must_be_verified"
+        }
+      ],
+      "missing_route": "show_not_connected_without_fake_results",
+      "layout": [
+        "three_attributed_groups",
+        "three_tabs_when_narrow"
+      ]
+    },
+    {
+      "id": "QUANT-PROFILE",
+      "role": "ranker",
+      "directive": "Consent-based authenticated wallet profile, contextual and transparent ranking; preserve unseen and diverse items and profile opt-out.",
+      "inputs": [
+        "explicit_opt_in_interests",
+        "verified_follows",
+        "verified_stars",
+        "verified_collects",
+        "event_freshness",
+        "exposure_history"
+      ],
+      "privacy": [
+        "wallet_isolation",
+        "do_not_target_sensitive_traits",
+        "no_raw_profile_broadcast",
+        "explain_why",
+        "user_edit_or_delete"
+      ]
+    },
+    {
+      "id": "SIX-FLANKS",
+      "role": "adphi",
+      "directive": "Show at most six distinct labeled contextual ad units; enforce verified purchase-based publisher star coin settlement only under merchant agreement.",
+      "max_flanking_ads": 6,
+      "events": [
+        "impression",
+        "click",
+        "collect",
+        "verified_purchase",
+        "reversal"
+      ],
+      "star_coins_per_eligible_purchase": 1,
+      "settle_only_if": [
+        "merchant_approved",
+        "attribution_verified",
+        "transaction_unique",
+        "refund_window_handled"
+      ],
+      "disclosure": "Sponsored or Affiliate"
+    },
+    {
+      "id": "FREE-FIRST",
+      "role": "browser",
+      "directive": "Use provider-documented free API then legitimate source search and permitted own browser; paid integrations require owner approval.",
+      "secrets": "server_only",
+      "account_access": "explicit_consent",
+      "browser_evidence": [
+        "url",
+        "timestamp",
+        "observed_data",
+        "error",
+        "consent_scope"
+      ]
+    },
+    {
+      "id": "VALIDATE",
+      "role": "integra",
+      "directive": "Never claim live, connected, billed or verified without independent test/production receipts.",
+      "required_checks": [
+        "freshness",
+        "per_viewer_recap",
+        "on_card_search",
+        "small_android",
+        "authorization",
+        "consent_scope",
+        "no_duplicate_credit",
+        "production_readback"
+      ]
+    }
+  ],
+  "publish_criteria": {
+    "source_change": "separate_review",
+    "tests_required": true,
+    "production_readback_required": true,
+    "existing_security_holds": "preserve"
+  }
+}
