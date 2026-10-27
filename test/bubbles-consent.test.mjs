@@ -276,6 +276,9 @@ test('cross-browser handoff remains bound to the initiating wallet session',asyn
   await assert.rejects(f.service.handoffStatus({...f.input,state,sessionId:'another-session'}),/callback_session_mismatch/);
   await f.service.handoff({userId:'alice',provider:'google',state,code:'provider-code'});
   assert.deepEqual(await f.service.handoffStatus({...f.input,state}),{status:'received'});
+  // Chrome may repeat the exact callback after a redirect; this is harmless
+  // and must not turn a valid initial handoff into a false sign-in failure.
+  assert.deepEqual(await f.service.handoff({userId:'alice',provider:'google',state,code:'provider-code'}),{received:true,duplicate:true});
   await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'replayed'}),/callback_already_received/);
   assert.equal(JSON.stringify([...f.db.rows]).includes('provider-code'),false);
 });

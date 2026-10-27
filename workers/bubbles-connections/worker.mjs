@@ -49,7 +49,23 @@ export class UserConnections extends DurableObject {
     return {userId:record.userId};
   }
   async start(input) {return this.service.start(input);}
-  async handoff(input) {return this.service.handoff(input);}
+  async handoff(input) {
+    try {return await this.service.handoff(input);}
+    catch(error) {
+      // Durable Object RPC must return only non-secret failure categories.
+      // Never send a provider code, state, user ID, encryption record or
+      // underlying exception text to the browser/callback URL.
+      const message=String(error?.message||'');
+      const stage=error?.connectionStage;
+      const failure=message==='state_invalid_or_used'?'state_invalid':
+        message==='callback_already_received'?'conflicting_callback':
+        stage==='handoff_decrypt'?'decrypt':
+        stage==='handoff_encrypt'?'encrypt':
+        stage==='handoff_store'?'storage':
+        'unavailable';
+      return {received:false,failure};
+    }
+  }
   async handoffStatus(input) {return this.service.handoffStatus(input);}
   async finishHandoff(input) {return this.service.finishHandoff(input);}
   async complete(input) {try{return await this.service.complete(input);}catch(error){const stage=['state','exchange','seal','store'].includes(error?.connectionStage)?error.connectionStage:'unknown';const kind=error?.name==='TimeoutError'?'timeout':error?.name==='TypeError'?'type':'internal';const message=String(error?.message||'');const point=/github_token_redirect_token/.test(message)?'token_redirect':/github_token_redirect_login/.test(message)?'login_redirect':/github_token_redirect_external/.test(message)?'external_redirect':/github_token_redirect_other/.test(message)?'other_redirect':/Illegal invocation|receiver/i.test(message)?'receiver':/different request|request context/i.test(message)||message.includes('I/O')?'context':/redirect/i.test(message)?'redirect':/header|ByteString|character/i.test(message)?'headers':/URL|scheme/i.test(message)?'url':/timeout|AbortSignal/i.test(message)?'timeout':/fetch|network|connect/i.test(message)?'network':/not a function/i.test(message)?'function':'unknown';return {connectionError:'connection_complete_'+stage+'_'+kind+'_'+point};}}
