@@ -29,6 +29,20 @@ test('sign-in reports distinct safe client, grant and identity failures',()=>{
  assert.doesNotMatch(providerSignInErrorMessage('cloudflare_exchange_400_private-code-token'),/private-code-token/);
 });
 
+test('client setup probe uses only a fictitious grant and never claims account verification',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ for(const [error,status] of [['invalid_grant','client_accepted'],['invalid_client','client_rejected']]){
+  const adapter=cloudflareAdapter({clientId:'test-client',clientSecret:'server-only',
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+    assert.equal(url,'https://dash.cloudflare.com/oauth2/token');
+    assert.match(options.body.get('code'),/^bubbles-setup-probe-/);
+    assert.equal(options.body.get('code_verifier').length,64);
+    return Response.json({error,error_description:'private-provider-description'},{status:400});
+   });
+  assert.deepEqual(await adapter.checkClient(),{status,reason:'cloudflare_exchange_400_'+error});
+ }
+});
+
 test('account page launches real Cloudflare consent with registered actions even without the full project toolkit',async t=>{
  class Element {
   constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.classList={add(){}};}

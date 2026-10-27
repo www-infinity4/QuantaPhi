@@ -34,6 +34,21 @@ test('missing server status and spoofed local positive status never enable the g
  }
 });
 
+test('verified Unified Wallet signs into Bubbles without fabricating provider permissions',async t=>{
+ const payload={...partialGate(),ok:true,walletVerified:true};
+ const summary=summarizeGate(payload);
+ assert.equal(summary.walletVerified,true);
+ assert.equal(summary.ready,false);
+ assert.equal(summary.providers.cloudflare.connected,false);
+ assert.equal(summary.providers.cloudflare.approved,false);
+ assert.equal(summarizeGate({walletVerified:true}).walletVerified,false);
+ const ui=mountedGate(t,payload);await new Promise(setImmediate);
+ assert.equal(ui.get('bubblesSigninGate').hidden,true);
+ assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+ assert.match(ui.get('bubblesWalletIdentity').textContent,/Signed in to Bubbles with your Unified Wallet/);
+ assert.equal(ui.calls.some(call=>call.path==='/start'),false);
+});
+
 test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>{
  const source=readFileSync(new URL('../bubbles-signin-gate.mjs',import.meta.url),'utf8');
  assert.match(source,/client\.resumePending\(/);
@@ -59,6 +74,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
  globalThis.fetch=async(url,options)=>{
   const path=String(url).replace('/api/bubbles/connections','');
   const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
+  if(path==='/session')return Response.json({ok:true,walletVerified:payload?.walletVerified===true});
   if(path==='/gate/status')return Response.json({ok:true,...payload});
   if(path==='/start'){
    if(startFails)return Response.json({ok:false,error:'provider_not_configured'},{status:503});
@@ -152,7 +168,7 @@ test('missing verified wallet never leaves a dead disabled Cloudflare button',as
  const button=ui.get('bubblesCloudflareSignIn');
  assert.equal(button.disabled,false);
  assert.equal(ui.get('bubblesRecoverWallet').hidden,false);
- assert.match(ui.get('bubblesSigninStatus').textContent,/verified Bubbles wallet/i);
+ assert.match(ui.get('bubblesSigninStatus').textContent,/Sign in with StarQuest.*Unified Wallet/i);
  await button.listeners.click();
  assert.equal(button.disabled,false);
  assert.equal(ui.get('bubblesRecoverWallet').hidden,false);
