@@ -9,8 +9,13 @@ export function resumeAuthReturn(host=window) {
   const saved=JSON.parse(host.sessionStorage?.getItem('bubbles:oauth-pending:v1')||'null');
   const provider=callbackProvider||saved?.provider||'cloudflare';
   if(result==='received'||result==='failed'||result==='declined'){
+   // Only predefined, non-secret reason codes travel into the page session.
+   const reasons=['callback_missing_code','callback_state_invalid','callback_handoff_failed',
+    'invalid_scope','invalid_request','unauthorized_client','access_denied',
+    'server_error','temporarily_unavailable'];
+   const reason=reasons.includes(query.get('reason'))?query.get('reason'):null;
    try {host.sessionStorage?.setItem(OAUTH_RETURN_NOTE,
-    JSON.stringify({provider,result,at:Date.now()}));}catch{}
+    JSON.stringify({provider,result,reason,at:Date.now()}));}catch{}
   }
   // A provider failure must remain visible. Never silently turn "denied" into
   // a fresh login screen.
