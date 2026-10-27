@@ -31,7 +31,7 @@ test('Infinity Money and website-phone concepts cannot be confused with deployed
  assert.match(html,/Star Coins minted/i);
 });
 test('required actions and mobile responsive controls are present',()=>{
- for(const label of ['Share','Collect','+1 Build','CHOOSE','aria-selected','viewport','@media'])assert.ok(html.includes(label),label);
+ for(const label of ['Share','Collect','+1 Build','data-tab','aria-selected','viewport','@media'])assert.ok(html.includes(label),label);
  assert.ok(html.includes('navigator.share'));
  assert.ok(html.includes('quick-card-builder.html'));
 });
