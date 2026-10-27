@@ -6,6 +6,10 @@ on:
       - 'scripts/c13b0-bubbles-termux-daemon.py'
       - 'docs/BUBBLES-TERMUX-LOCAL-COMPANION.md'
       - '.github/workflows/bubbles-termux-loopback.yml'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/TermuxLoopbackProbe.java'
+      - 'android/bubbles-overlay/checks/TermuxLoopbackProbeCheck.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BubblesService.java'
+      - 'test/bubbles-brain-actions.test.cjs'
   workflow_dispatch:
 
 jobs:
@@ -20,3 +24,10 @@ jobs:
         run: |
           python3 -m py_compile scripts/c13b0-bubbles-termux-daemon.py
           python3 scripts/c13b0-bubbles-termux-daemon.py selftest
+      - name: Compile and test native Android Java loopback probe
+        run: |
+          mkdir -p /tmp/bubbles-termux-probe
+          javac -d /tmp/bubbles-termux-probe \
+            android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/TermuxLoopbackProbe.java \
+            android/bubbles-overlay/checks/TermuxLoopbackProbeCheck.java
+          java -cp /tmp/bubbles-termux-probe org.quantaphi.bubbles.TermuxLoopbackProbeCheck
