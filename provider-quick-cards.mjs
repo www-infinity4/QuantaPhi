@@ -1,3 +1,4 @@
+import {mountQuickCardTinyfishTools} from './quick-card-tinyfish-actions.mjs';
 // Small native quick-card launcher: official provider UI remains on its own domain.
 // Each user signs into that site directly. No third-party cookies or passwords are read.
 export const PROVIDER_DESTINATIONS=Object.freeze({
@@ -21,4 +22,5 @@ export function mountProviderActions(root,card){
  ? 'Shop and pay on the official Levi’s checkout. QuantaPhi does not collect payment credentials.'
  : 'Sign in on the provider website to see your own history. QuantaPhi does not receive your password or private conversations.';
  wrapper.append(p);root.append(wrapper);
+ void mountQuickCardTinyfishTools(wrapper,card);
 }
