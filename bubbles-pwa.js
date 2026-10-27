@@ -74,7 +74,7 @@
   if (typeof document.createElement !== 'function') return;
   // A PWA cannot silently scan or patch the user's computer or Chrome itself.
   // Poll the first-party release manifest only while Bubbles is running/visible.
-  const CURRENT_RELEASE = '20261026-ui-settings1';
+  const CURRENT_RELEASE = '20261027-overnight2';
   const updateSection = document.createElement('div');
   updateSection.className = 'bubbles-update-controls';
   const updateButton = document.createElement('button');
