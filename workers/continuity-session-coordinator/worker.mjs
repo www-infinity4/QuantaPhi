@@ -344,7 +344,7 @@ async function latestReceipt(db) {
   for (let attempt = 0; attempt < 2; attempt++) {
     try {return await db.prepare(sql).first();}
     catch (error) {
-      if (attempt || !/D1_ERROR:.*(?:Internal error|reset)/i.test(String(error?.message))) throw error;
+      if (attempt || !/^D1_ERROR:\s*Internal error in D1 DB storage caused object to be reset\b/i.test(String(error?.message))) throw error;
       await new Promise(resolve => setTimeout(resolve, 75));
     }
   }
