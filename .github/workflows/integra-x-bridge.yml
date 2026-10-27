@@ -9,6 +9,10 @@ on:
       - 'workers/infinity-brain-clock/provider-browser.mjs'
       - 'test/provider-browser-cards.test.mjs'
       - 'test/source-quick-cards.test.mjs'
+      - 'test/quick-card-tinyfish.test.mjs'
+      - 'quick-card-tinyfish-actions.mjs'
+      - 'workers/infinity-brain-clock/quick-card-browser.mjs'
+      - 'workers/infinity-brain-clock/quick-card-browser-policy.mjs'
       - 'bubbles-ai.js'
       - 'workers/infinity-brain-clock/integra-x.mjs'
       - 'workers/infinity-brain-clock/worker.js'
@@ -32,9 +36,12 @@ jobs:
           node --check provider-quick-cards.mjs
           node --check gemini-owner-browser-card.mjs
           node --check source-quick-cards.mjs
+          node --check quick-card-tinyfish-actions.mjs
+          node --check workers/infinity-brain-clock/quick-card-browser.mjs
+          node --check workers/infinity-brain-clock/quick-card-browser-policy.mjs
           node --check workers/infinity-brain-clock/provider-browser.mjs
           node --check bubbles-ai.js
           node --check workers/infinity-brain-clock/integra-x.mjs
           node --check workers/infinity-brain-clock/worker.js
       - name: Read/draft/confirm/status safety checks
-        run: node --test test/bubbles-integra-x.test.mjs test/provider-browser-cards.test.mjs test/source-quick-cards.test.mjs
+        run: node --test test/bubbles-integra-x.test.mjs test/provider-browser-cards.test.mjs test/source-quick-cards.test.mjs test/quick-card-tinyfish.test.mjs
