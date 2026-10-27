@@ -29,8 +29,8 @@ export async function planBubblesScopeSync(storage,env,{now=Date.now()}={}){
  return {ok:true,status:'owner_approval_required',requestId:plan.id,
   expiresAt:plan.expiresAt,clientIdPrefix:CLIENT_ID.slice(0,16),expectedScopeCount:EXPECTED,
   managerConfigured:Boolean(parentTokenManager(env)),
-  target:'CLOUDFLARE_OAUTH_ALLOWED_SCOPES',
-  scope:'Read the existing Cloudflare OAuth client; synchronize one Worker secret only',
+  target:'CLOUDFLARE_OAUTH_ALLOWED_SCOPES_PART_1..3',
+  scope:'Read the existing Cloudflare OAuth client; synchronize three size-safe Worker bindings only',
   deletesClient:false,createsClient:false,changesDns:false,changesWallet:false,
   requiresOwnerApproval:true,loginStillRequiresConsent:true};
 }
@@ -86,12 +86,24 @@ export async function confirmBubblesScopeSync(storage,body,env,{
    return {ok:true,status:'already_synchronized',clientIdPrefix:CLIENT_ID.slice(0,16),
     verifiedRegisteredScopeCount:scopes.length,serverScopeCount:EXPECTED,secretExposed:false,
     needsUserCloudflareConsent:true};
-  await getResult(prefix+'/secrets',writer.secret,{method:'PUT',request,
-   body:{name:'CLOUDFLARE_OAUTH_ALLOWED_SCOPES',type:'secret_text',text:scopes.join(' ')}});
-  wrote=true;
+  // Each Worker secret is capped at 5 KB. The 386 scope identifiers exceed
+  // that cap when joined, so install three smaller bindings instead. The live
+  // Worker continues using its legacy allowlist until all parts are present.
+  const size=Math.ceil(scopes.length/3);
+  const chunks=[0,1,2].map(i=>scopes.slice(i*size,(i+1)*size).join(' '));
+  if(chunks.some(chunk=>!chunk||new TextEncoder().encode(chunk).length>4800))
+   throw Error('oauth_scope_chunk_exceeds_worker_secret_limit');
+  for(let i=0;i<chunks.length;i++){
+   const name='CLOUDFLARE_OAUTH_ALLOWED_SCOPES_PART_'+(i+1);
+   // On a network error the provider may still have applied the write.
+   wrote=true;
+   await getResult(prefix+'/secrets',writer.secret,{method:'PUT',request,
+    body:{name,type:'secret_text',text:chunks[i]}});
+  }
   const after=await getResult(prefix+'/settings',writer.secret,{request});
-  if(!(after?.bindings||[]).some(x=>x.name==='CLOUDFLARE_OAUTH_ALLOWED_SCOPES'))
-   throw Error('updated_worker_secret_missing_on_readback');
+  const afterNames=new Set((after?.bindings||[]).map(x=>x.name));
+  if(![1,2,3].every(i=>afterNames.has('CLOUDFLARE_OAUTH_ALLOWED_SCOPES_PART_'+i)))
+   throw Error('updated_worker_scope_chunks_missing_on_readback');
   // The Worker secret value cannot be read back. Never claim 386 is in use
   // until a fresh public catalog read actually returns the new count.
   let count=null;
