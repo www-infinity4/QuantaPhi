@@ -211,6 +211,14 @@ if(typeof document!=='undefined'){
   // A new provider bank may mount after the first async fetch; refresh the
   // visible companions as soon as real registered source cards arrive.
   window.addEventListener('quantaphi:source-cards-ready',()=>{
+   // Inventory fetched too early cannot mask newly mounted real source cards.
+   cache.clear();
+   if(active)void update(active).catch(()=>{});
+  });
+  window.addEventListener('load',()=>{
+   // Control Phi (the real AdPhi provider) can initialize after our module.
+   // Retry at full page readiness rather than cache an empty sponsored feed.
+   cache.clear();
    if(active)void update(active).catch(()=>{});
   });
   async function inventory(lane){
