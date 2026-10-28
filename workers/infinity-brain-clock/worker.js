@@ -725,6 +725,34 @@ export class BrainClock extends DurableObject{
     new URL(request.url).pathname.slice(7),body,request.headers.get('X-Phone-Device')||''));
    return Response.json(result.body,{status:result.status});
   }
+  // Only the outer /work/github/read ingress may call this internal route.
+  // It has already validated the live owner session and origin. No lease,
+  // editor credential, model prompt or action beyond read_repository/read_file.
+  if(new URL(request.url).pathname==='/github/read'){
+   let body;
+   try{body=await request.json()}catch{return Response.json({ok:false,error:'invalid_json'},{status:400});}
+   if(!body||!['read_repository','read_file'].includes(body.action)||
+      Object.keys(body).some(k=>!['action','repository','path'].includes(k)))
+    return Response.json({ok:false,error:'unsupported_read_only_action'},{status:400});
+   try{
+    const repository=validateRepository(body.repository);
+    const runtime=await githubEnvironment(this.env,this.ctx.storage);
+    if(body.action==='read_repository'){
+     const result=await githubOperation(runtime,{action:'read_repository',repository,includeRoot:true});
+     return Response.json(result);
+    }
+    const head=await githubOperation(runtime,{action:'read_repository',repository});
+    if(!/^([a-f0-9]{40})$/.test(head.headSha||''))throw Error('github_head_sha_invalid');
+    const data=await githubOperation(runtime,{action:'read_file',repository,path:body.path,ref:head.headSha});
+    if(!data.ok||data.exists===false)return Response.json({ok:false,error:'source_file_not_found',repository},{status:404});
+    const content=String(data.content||'').slice(0,30000);
+    return Response.json({ok:true,repository,path:data.path,ref:head.headSha,sha:data.sha,
+      content,truncated:data.content.length>content.length,
+      sourceUrl:'https://github.com/'+repository+'/blob/'+head.headSha+'/'+data.path.split('/').map(encodeURIComponent).join('/')});
+   }catch(error){
+    return Response.json({ok:false,error:String(error.message||'owner_github_read_failed').slice(0,140)},{status:503});
+   }
+  }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
   if(new URL(request.url).pathname==='/quick-card-browser'){
    const body=await readBoundedJson(request,2300);
@@ -1337,6 +1365,27 @@ export default{
      {method:'POST',headers:{'X-Phone-Device':['next','result'].includes(op)?token:''},body:raw||'{}'});
     return output(request,await r.json(),r.status);
    }catch{return output(request,{ok:false,error:'phone_tool_unavailable'},503);}
+  }
+  // Separate owner-verified GitHub READ path: no writer lease, no queue, no
+  // anonymous REST rate-limit fallback. The StarQuest/Brain bearer is checked
+  // here on every request and never passed to GitHub or a chat model.
+  if(path==='/work/github/read'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(Number(request.headers.get('Content-Length')||0)>1200)return output(request,{ok:false,error:'request_too_large'},413);
+   try{
+    const raw=await request.text();if(raw.length>1200)return output(request,{ok:false,error:'request_too_large'},413);
+    const body=JSON.parse(raw||'{}');
+    if(!body||typeof body!=='object'||Array.isArray(body)||
+       !['read_repository','read_file'].includes(body.action)||
+       Object.keys(body).some(key=>!['action','repository','path'].includes(key)))
+     return output(request,{ok:false,error:'unsupported_read_only_action'},400);
+    const result=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/github/read',{
+     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    return output(request,await result.json(),result.status);
+   }catch(error){return output(request,{ok:false,error:'owner_github_read_unavailable'},503);}
   }
   if(path==='/work/github'&&request.method==='POST'){
    const origin=request.headers.get('Origin');

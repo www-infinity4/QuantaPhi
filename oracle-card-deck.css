@@ -51,3 +51,15 @@ body.oracle-quanta #oracleCardDeck .oracle-card-deck-stage{margin:4px 0 9px}
 body.oracle-quanta #oracleCardDeck .oracle-card-scroll{background:transparent;color:#62574f;border:1px solid #ddd5ce;min-height:44px;font-size:13px;font-weight:500;box-shadow:none}
 /* Keep changing recommendation explanations accessible without crowding cards. */
 #oracleCardReason,#oracleCardStatus{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}
+
+/* One-tap navigation to original pages and website/sports cards, not just brands.
+ * Mobile-first full-width actions stay visible above the swipe deck. */
+.oracle-family-jump{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:8px 0 11px}
+.oracle-family-jump button{font:750 clamp(12px,2.2vw,14px)/1.3 system-ui,sans-serif;border-radius:12px;min-height:46px;
+ border:1px solid #cad8e5;background:#f6faff;color:#143e65;padding:9px 7px;cursor:pointer;white-space:normal}
+.oracle-family-jump button:hover{background:#e7f2fc;border-color:#65a4da}
+.oracle-family-jump button:focus-visible{outline:3px solid #f1af40;outline-offset:2px}
+.oracle-family-jump button:disabled{opacity:.45;cursor:not-allowed}
+.oracle-family-jump [data-family-count]{display:inline-block;min-width:25px;margin-left:3px;
+ border-radius:20px;background:#e0edf9;padding:3px 5px;color:#14416f;font-size:11px;font-variant-numeric:tabular-nums}
+@media(max-width:410px){.oracle-family-jump{gap:5px}.oracle-family-jump button{font-size:11px;padding:8px 3px;min-height:50px}}

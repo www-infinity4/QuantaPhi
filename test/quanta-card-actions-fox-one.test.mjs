@@ -12,7 +12,8 @@ test('shared controls are exported and bound to real browser actions',()=>{
  assert.match(src,/navigator\.clipboard/);
  assert.match(src,/quantaPhiCollected/);
  assert.match(src,/robotDirectionsInput/);
- assert.match(src,/const verifiedSearch=providerSearchUrl/);
+ assert.match(src,/mountTinyFishCardReader\(bar,card\)/);
+ assert.doesNotMatch(src,/providerSearchUrl\(provider,value\)/);
  assert.doesNotMatch(src,/providerSearchUrl\(provider,value\)\|\|/);
  assert.match(src,/sharePreviewUrl/);
  assert.match(src,/quantaphi:collected/);

@@ -127,7 +127,12 @@ test('Brain broker adapter only activates with explicit opt-in and preserves ide
 const fixedNow=Date.parse('2026-10-28T03:00:00Z');
 const budgetKey='quick-card-browser:count:2026-10-28';
 const directEnv={TINYFISH_API_KEY:'fake-provider-test-key-123'};
-for(const transport of ['direct','broker']){
+const transportReceipt=transport=>transport==='source'?{ok:true,provider:'TinyFish',operation:'fetch',
+ receipt:{sourceReadVerified:true},data:{results:[{url:card.mappings[0].url,title:'Observed source'}]}}:
+ transport==='broker'?{ok:true,runId,receiptProof:'a'.repeat(64)}:{run_id:runId};
+const transportEnv=(transport,dispatch)=>transport==='source'?{TINYFISH_BRIDGE_TOKEN:'c'.repeat(64),TINYFISH_BROKER:{fetch:dispatch}}:
+ transport==='broker'?{TINYFISH_BROKER_ENABLED:'true',TINYFISH_BRIDGE_TOKEN:token,TINYFISH_BROKER:{fetch:dispatch}}:directEnv;
+for(const transport of ['direct','broker','source']){
  test(`${transport}: concurrent duplicate returns its committed receipt before provider completion`,{timeout:3000},async t=>{
   const storage=quickCardStorage(t),entered=deferred(),release=deferred();let calls=0;
   t.after(()=>release.resolve());
@@ -139,10 +144,9 @@ for(const transport of ['direct','broker']){
    assert.equal((await storage.get('quick-card-browser:job:'+savedId)).state,'dispatch_uncertain');
    assert.equal(await storage.get(budgetKey),1);
    entered.resolve();await release.promise;
-   return Response.json(transport==='broker'?{ok:true,runId,receiptProof:'a'.repeat(64)}:{run_id:runId});
+   return Response.json(transportReceipt(transport));
   };
-  const configuredEnv=transport==='broker'?{TINYFISH_BROKER_ENABLED:'true',TINYFISH_BRIDGE_TOKEN:token,
-   TINYFISH_BROKER:{fetch:dispatch}}:directEnv;
+  const configuredEnv=transportEnv(transport,dispatch);
   const first=handleQuickCardBrowser(storage,configuredEnv,start,dispatch,fixedNow);
   const duplicate=handleQuickCardBrowser(storage,configuredEnv,start,dispatch,fixedNow);
   await entered.promise;
@@ -152,23 +156,43 @@ for(const transport of ['direct','broker']){
   assert.equal(await storage.get(budgetKey),1);
   assert.equal(calls,1);
   release.resolve();const completed=await first;
-  assert.equal(completed.httpStatus,202);
+  assert.equal(completed.httpStatus,transport==='source'?200:202);
   assert.equal(completed.result.job.jobId,reused.result.job.jobId);
  });
  test(`${transport}: competing starts share the final daily paid slot`,async t=>{
   const storage=quickCardStorage(t);await storage.put(budgetKey,15);let calls=0;
   const dispatch=async()=>{
-   calls++;return Response.json(transport==='broker'?{ok:true,runId,receiptProof:'a'.repeat(64)}:{run_id:runId});
+   calls++;return Response.json(transportReceipt(transport));
   };
-  const configuredEnv=transport==='broker'?{TINYFISH_BROKER_ENABLED:'true',TINYFISH_BRIDGE_TOKEN:token,
-   TINYFISH_BROKER:{fetch:dispatch}}:directEnv;
+  const configuredEnv=transportEnv(transport,dispatch);
   const other={...start,requestId:'12345678-1234-4234-8234-123456789ab1'};
   const results=await Promise.all([start,other].map(body=>handleQuickCardBrowser(storage,configuredEnv,body,dispatch,fixedNow)));
-  assert.deepEqual(results.map(r=>r.httpStatus).sort((a,b)=>a-b),[202,429]);
+  assert.deepEqual(results.map(r=>r.httpStatus).sort((a,b)=>a-b),[transport==='source'?200:202,429]);
   assert.equal(calls,1);assert.equal(await storage.get(budgetKey),16);
   assert.equal((await storage.entries()).filter(([key])=>key.startsWith('quick-card-browser:request:')).length,1);
  });
 }
+test('existing coordinator source reads survive flag-off mode and never become a private-browser fallback',async t=>{
+ const storage=quickCardStorage(t),messages=[];
+ const env={TINYFISH_BRIDGE_TOKEN:'c'.repeat(64),TINYFISH_BROKER:{fetch:async(url,init)=>{
+  messages.push({url,body:JSON.parse(init.body)});
+  return url==='https://continuity.internal/internal/tinyfish'?Response.json(transportReceipt('source')):
+   Response.json({ok:false},{status:404});
+ }}};
+ const direct=async()=>{throw Error('must_not_fall_back_to_direct_provider')};
+ const source=await handleQuickCardBrowser(storage,env,start,direct,fixedNow);
+ assert.equal(source.httpStatus,200);assert.equal(source.result.job.state,'completed_source_read');
+ assert.equal(messages[0].body.operation,'fetch');
+ const next={...start,requestId:'12345678-1234-4234-8234-123456789ab1'};
+ const failed=await handleQuickCardBrowser(storage,{...env,TINYFISH_BROKER_ENABLED:'true'},next,direct,fixedNow);
+ assert.equal(failed.httpStatus,502);assert.equal(failed.result.job.state,'dispatch_uncertain');
+ assert.equal(messages.length,2);
+ assert.equal(messages[1].url,'https://broker.internal/internal/quick-card-browser');
+ assert.equal(messages[1].body.action,'start');
+ const caps=await handleQuickCardBrowser(storage,{...env,TINYFISH_BROKER_ENABLED:'true'},{action:'capabilities'},direct,fixedNow);
+ assert.equal(caps.result.brokerSourceReads,false);
+ assert.equal(caps.result.supported.some(c=>c.kind!=='durable'),false);
+});
 test('an interrupted reservation rolls back every receipt before any paid dispatch',async t=>{
  for(const writeNumber of [1,2,3]){
   const storage=quickCardStorage(t);let calls=0;

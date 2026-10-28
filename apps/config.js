@@ -155,7 +155,7 @@ window.INFINITY_APPS=[
     "url": "/",
     "card": "channels",
     "focus": "phiChannelCards",
-    "desc": "StarQuest, Omni TV, Chiller and ShopLC in one remote."
+    "desc": "StarQuest, Omni TV, Chiller, ShopLC and FOX One World Series viewing in Infinity TV."
   },
   {
     "slug": "shoplc",

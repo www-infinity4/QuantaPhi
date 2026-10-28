@@ -43,6 +43,8 @@ jobs:
       - name: Verify Brain auth, queue priority, source windows and owner boundaries
         run: |
           node --check workers/infinity-brain-clock/worker.js
+          node --check workers/infinity-brain-clock/direct-github.mjs
+          node --test test/bubbles-owner-github-auth-read.test.mjs
           node --check workers/infinity-brain-clock/ticket-selector.mjs
           node --check workers/infinity-brain-clock/deferred-recovery.mjs
           node --check workers/infinity-brain-clock/source-review.mjs

@@ -203,3 +203,12 @@ test('every tab completes repeated catalog rounds despite extreme favorite score
   }
  }
 });
+
+test('Oracle has one-tap website, original and accepted brand shortcuts and balanced rotation',()=>{
+ const source=raw('oracle-card-deck.js'),html=raw('index.html'),css=raw('oracle-card-deck.css');
+ for(const family of ['website','original','accepted'])assert.match(html,new RegExp('data-oracle-family="'+family+'"'));
+ assert.match(source,/selectNextFamilyPool\(tour\.cards,cardFamily\(active\)\)/);
+ assert.match(source,/openingFamilyPool\(cards,openingCursor\)/);
+ assert.match(source,/source-cards-ready/);
+ assert.match(css,/\.oracle-family-jump/);
+});

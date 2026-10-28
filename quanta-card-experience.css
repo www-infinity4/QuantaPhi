@@ -182,3 +182,14 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .iqc-ai-send:disabled{opacity:.65;cursor:wait}
 .iqc-ai-receipt{margin:0;font-size:13px;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere;color:#544840}
 .iqc-ai-input:focus-visible,.iqc-ai-send:focus-visible{outline:3px solid #70469c;outline-offset:2px}
+
+/* Original-site reads remain inside their card, with accessible mobile controls. */
+.qca-website-reader{margin:10px 0;border:1px solid #cbd8e2;border-radius:14px;background:#fff;color:#22384b;padding:10px;min-width:0}
+.qca-website-reader summary{min-height:44px;display:list-item;cursor:pointer;font:700 14px/1.5 system-ui;padding:10px;box-sizing:border-box}
+.qca-website-reader .qca-controls{margin-top:8px}
+.qca-website-results{min-width:0;max-height:360px;overflow:auto;overscroll-behavior:contain;overflow-wrap:anywhere}
+.qca-website-result{border-top:1px solid #dde5eb;padding:12px 0;font:400 14px/1.55 system-ui}
+.qca-website-text{white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0;color:#243b50}
+.qca-website-receipt{display:block;margin:8px 0;color:#50667a;overflow-wrap:anywhere}
+.qca-website-reader :is(button,a):focus-visible{outline:3px solid #0070ba;outline-offset:2px}
+.qca-website-reader .qca-button{min-height:44px;white-space:normal}
