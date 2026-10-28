@@ -37,8 +37,8 @@ export function verifiedApkUrl(releases){
 // verified release feed names the same compatible, versioned APK asset.
 export function releasedCardLinkReady(releases){
  const href=verifiedApkUrl(releases), version=releases?.bubbles?.version;
- if(!href||typeof version!=='string'||!/^[0-9]+\\.[0-9]+\\.[0-9]+$/.test(version))return false;
- const matched=new URL(href).pathname.match(/Bubbles-v([0-9]+\\.[0-9]+\\.[0-9]+)-Preview5-Android12\\.apk$/);
+ if(!href||typeof version!=='string'||!/^[0-9]+\.[0-9]+\.[0-9]+$/.test(version))return false;
+ const matched=new URL(href).pathname.match(/Bubbles-v([0-9]+\.[0-9]+\.[0-9]+)-Preview5-Android12\.apk$/);
  if(!matched||matched[1]!==version)return false;
  const [major,minor]=version.split('.').map(Number);
  return major>0 || (major===0 && minor>=59);
