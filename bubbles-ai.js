@@ -3571,6 +3571,18 @@ async function checkForSiteUpdate(){
 }
 window.QuantaBubbles={
  siteRevision,
+ // Explicit Android card link: resolve ONLY locally registered first-party
+ // cards. No provider cookies, external URL, wallet action or AI prompt.
+ openRegisteredCardFromAndroid:(id)=>{
+  if(!nativeOverlay||typeof id!=='string'||!/^[a-zA-Z0-9_-]{1,90}$/.test(id))return false;
+  void chatCardWorkspace().then(({module,workspace})=>{
+   const card=module.cards.find(item=>item.id===id);
+   if(!card){status.textContent='This Quick Card is not registered in Bubbles yet.';return;}
+   return workspace.open(card,false);
+  }).catch(()=>{status.textContent='Could not open the Quick Card. Your chat remains available.';});
+  return true;
+ },
+
  sharedMainThread:SHARED_MAIN_THREAD,
  // The native X hides the outer Android window, not this inner WebView.
  // Begin another visually empty chat only after a real owner reopening.
