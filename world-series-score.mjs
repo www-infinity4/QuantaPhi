@@ -24,7 +24,8 @@ export function game4FromSchedule(payload){
  const detailed=String(game.status?.detailedState||'');
  const isFinal=abstract==='final'||/final|completed|game over/i.test(detailed);
  const isLive=abstract==='live'||/in progress|manager challenge|mid.*inning/i.test(detailed);
- const away=Number(game.teams.away.score),home=Number(game.teams.home.score);
+ const away=game.teams.away.score==null?NaN:Number(game.teams.away.score);
+ const home=game.teams.home.score==null?NaN:Number(game.teams.home.score);
  const validScore=v=>Number.isInteger(v)&&v>=0&&v<=200;
  const status=isFinal?'final':isLive?'live':abstract==='preview'?'pregame':'unknown';
  const hasScore=validScore(away)&&validScore(home);
