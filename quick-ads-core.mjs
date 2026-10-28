@@ -1,4 +1,4 @@
-import {GAME_START,CAMPAIGN_START,TONIGHT_END,GAME_PK} from './world-series-score.mjs?v=20261028-game5';
+import {GAME_START,CAMPAIGN_START,TONIGHT_END,GAME_PK} from './world-series-score.mjs?v=20261028-game5b';
 export {GAME_START,CAMPAIGN_START};
 /* QuantaPhi independent Quick Ads: pregame and game campaign, no paid-sponsor assertions.
  * Public outbound destinations are a reviewed allowlist; no unapproved scraping,
@@ -46,6 +46,8 @@ export function gameLiveStatus(payload){
  if(!game)return 'unknown';
  const state=String(game.status?.abstractGameState||'').toLowerCase();
  const detailed=String(game.status?.detailedState||'').toLowerCase();
+ // MLB can retain Preview/Live while the more-specific status stops play.
+ if(/postpon|cancel|suspend|delay/.test(detailed))return 'unavailable';
  if(state==='live'||detailed==='in progress'||detailed==='manager challenge')return 'live';
  if(state==='final'||/final|completed|game over/.test(detailed))return 'final';
  if(state==='preview'||/scheduled|warmup|pre-game/.test(detailed))return 'scheduled';
