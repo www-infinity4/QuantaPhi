@@ -3569,18 +3569,31 @@ async function checkForSiteUpdate(){
  }catch{return false}
  finally{siteVersionChecking=false}
 }
+// Resolve to the declared Bubbles card first. For QuantaPhi source, science and
+// discovery cards, fall back only to existing first-party detail pages.
+let detailCardRegistryPromise;
+async function resolveBubblesQuickCard(module,id){
+ const native=module.cards.find(card=>card.id===id);
+ if(native)return native;
+ if(!detailCardRegistryPromise)
+  detailCardRegistryPromise=import('/bubbles-quick-card-registry.mjs?v=20261028-cardview1');
+ const registry=await detailCardRegistryPromise;
+ return registry.resolveQuickCard(id);
+}
 window.QuantaBubbles={
  siteRevision,
  // Explicit Android card link: resolve ONLY locally registered first-party
  // cards. No provider cookies, external URL, wallet action or AI prompt.
  openRegisteredCardFromAndroid:(id)=>{
   if(!nativeOverlay||typeof id!=='string'||!/^[a-zA-Z0-9_-]{1,90}$/.test(id))return false;
-  void chatCardWorkspace().then(({module,workspace})=>{
-   const card=module.cards.find(item=>item.id===id);
-   if(!card){status.textContent='This Quick Card is not registered in Bubbles yet.';return;}
-   return workspace.open(card,false);
+  status.textContent='Opening registered QuantaPhi card…';
+  void chatCardWorkspace().then(async({module,workspace})=>{
+   const card=await resolveBubblesQuickCard(module,id);
+   if(!card){status.textContent='This Quick Card is not registered in QuantaPhi yet.';return;}
+   const opened=await workspace.open(card,false);
+   if(opened?.message)status.textContent=opened.message;
   }).catch(()=>{status.textContent='Could not open the Quick Card. Your chat remains available.';});
-  return true;
+  return true; // Accepted for verified local lookup, NOT proof of iframe render.
  },
 
  sharedMainThread:SHARED_MAIN_THREAD,
@@ -3835,11 +3848,11 @@ if(!embedded){
   Promise.resolve().then(async()=>{
    try{
     const {module,workspace}=await chatCardWorkspace();
-    const target=module.cards.find(card=>card.id===cardId);
+    const target=await resolveBubblesQuickCard(module,cardId);
     if(target){
      const opened=await workspace.open(target,false);
      if(opened?.message)status.textContent=opened.message;
-    }
+    }else status.textContent='This Quick Card is not registered in QuantaPhi yet.';
    }catch(error){
     status.textContent='Bubbles opened; this card could not be loaded inside chat.';
    }
