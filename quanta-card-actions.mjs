@@ -1,5 +1,6 @@
-import {cardProvider,providerSearchUrl,quickCardManifest} from './quanta-card-provider.mjs';
+import {cardProvider,quickCardManifest} from './quanta-card-provider.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
+import {mountTinyFishCardReader} from './tinyfish-card-reader.mjs';
 /* Shared actions for QuantaPhi quick cards. No browser sign-in implies API permission. */
 const STORE_STARS='quantaPhiCardStarsV1';
 const STORE_COLLECT='quantaPhiCollected';
@@ -110,34 +111,12 @@ export function mountCardActions(host,card,options={}){
   }
   try{sessionStorage.setItem(STORE_DRAFT,request);location.assign('/#robotDirectionsInput')}catch{notify(status,'Build draft could not be opened.')}
  });
- // Only a verified provider search URL earns an on-card search bar.
- // A general card must not silently send its search to Google and pretend
- // that a connected TinyFish browser or the original website produced it.
- const verifiedSearch=providerSearchUrl(provider,'example');
- if(options.showSearch!==false&&verifiedSearch&&!['google','bing'].includes(card.id)){
-  const search=element('form','qca-search'),q=element('input','qca-search-input');
-  q.type='search';q.placeholder='Search '+provider.name+'…';q.required=true;q.maxLength=180;
-  q.setAttribute('aria-label','Search '+provider.name);
-  const submit=element('button','qca-button qca-search-submit','⌕ Quick Search');submit.type='submit';
-  search.append(q,submit);search.addEventListener('submit',event=>{
-   event.preventDefault();const value=q.value.trim();if(!value)return;
-   const destination=providerSearchUrl(provider,value);
-   if(!destination)return notify(status,'Original provider search is unavailable.');
-   window.open(destination,'_blank','noopener,noreferrer');
-  });
-  bar.append(search);
- }else if(options.showSearch!==false){
-  // This is a real original-source handoff, not a pretend search result.
-  let source=null;
-  try{const u=new URL(card.official||card.website||card.url||'',location.origin);
-   if(u.protocol==='https:'&&u.origin!==location.origin&&!u.username&&!u.password)source=u.href;
-  }catch{}
-  if(source){
-   const open=element('a','qca-button qca-source','↗ Open original website');
-   open.href=source;open.target='_blank';open.rel='noopener noreferrer';controls.append(open);
-  }
- }
- bar.append(controls);bar.append(status);host.append(bar);return bar;
+ // The shared reader returns actual website content in this card.
+ // Account sign-in remains on the original provider until a session is connected.
+ let original=null;
+ try{const u=new URL(card.official||card.website||card.url||'');if(u.protocol==='https:'&&!u.username&&!u.password)original=u.href}catch{}
+ if(original){const open=element('a','qca-button qca-source','↗ Open original website');open.href=original;open.target='_blank';open.rel='noopener noreferrer';controls.append(open)}
+ bar.append(controls);mountTinyFishCardReader(bar,card);bar.append(status);host.append(bar);return bar;
 }
 function restoreDraft(){
  let request;try{request=sessionStorage.getItem(STORE_DRAFT)}catch{return}

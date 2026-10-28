@@ -4,6 +4,7 @@
  * microphone access is inferred from browsing/listening data.
  */
 import {STUDIO_SONGS,findSongs,OFFICIAL_SONGBOOK} from './studio/songbook.mjs';
+import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
 // Reusable card URL for email previews and iframe HTML for websites.
 // A destination site's own Content Security Policy may disallow frames.
 export const STARMAKER_EMBED_URL='https://quantaphi.org/starmaker-embed.html';
@@ -98,13 +99,21 @@ export function mountStarMakerQuickCard(root){
   else status.textContent='Showing '+ranked.length+' verified public song links'+(check.checked?' with Music Quant suggestions':'')+'.';
  }
  const more=text('button','Show more songs','qcx-button');more.type='button';more.addEventListener('click',()=>{expanded=!expanded;render();});
- form.addEventListener('submit',e=>{e.preventDefault();expanded=true;render();});
+ const live=text('div','','qca-website-results');live.setAttribute('aria-live','polite');
+ let liveRequest=null;
+ form.addEventListener('submit',async e=>{
+  e.preventDefault();expanded=true;render();const query=search.value.trim();if(query.length<2)return;
+  liveRequest?.abort();liveRequest=new AbortController();submit.disabled=true;
+  try{await showCardWebsiteResults(live,'starmaker','search',query,{signal:liveRequest.signal})}
+  catch{/* The actual provider error is shown beside the curated list. */}
+  finally{submit.disabled=false}
+ });
  search.addEventListener('input',()=>{expanded=false;render();});
  check.addEventListener('change',()=>{
   listens=check.checked?availableListeningRecords():[];
   expanded=false;render();
  });
- panel.append(consent,status,picks,more);
+ panel.append(consent,status,picks,more,live);
  const actions=text('div','','qcx-controls');
  const studio=official('Record my voice ↗','/studio/#studio');
  studio.target='_self';actions.append(studio,official('Full StarMaker songbook ↗',OFFICIAL_SONGBOOK),official('Open portable card ↗',STARMAKER_EMBED_URL));

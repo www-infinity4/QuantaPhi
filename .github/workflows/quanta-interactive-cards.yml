@@ -24,6 +24,8 @@ on:
       - 'quanta-feed-rank.mjs'
       - 'infinity-accepted*'
       - 'quick-card-tinyfish-actions.mjs'
+      - 'tinyfish-card-*.mjs'
+      - 'test/card-website.test.mjs'
       - 'workers/infinity-brain-clock/quick-card-browser*'
       - 'test/infinity-accepted*'
       - 'test/quick-card-tinyfish.test.mjs'
