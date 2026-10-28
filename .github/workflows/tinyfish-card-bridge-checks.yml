@@ -1,0 +1,35 @@
+name: TinyFish Card Bridge Safety
+on:
+  pull_request:
+    paths:
+      - 'workers/continuity-session-coordinator/**'
+      - 'workers/bubbles-tools/tinyfish-client.mjs'
+      - 'workers/bubbles-tools/worker.mjs'
+      - 'quanta-card-tinyfish.mjs'
+      - 'quanta-card-actions.mjs'
+      - 'test/tinyfish-card-bridge.test.mjs'
+      - '.github/workflows/tinyfish-card-bridge-checks.yml'
+  push:
+    branches:
+      - 'feat/tinyfish-brain-card-bridge-20261027'
+jobs:
+  unit:
+    name: TinyFish read-only bridge unit and syntax
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Static syntax checks
+        run: |
+          node --check workers/continuity-session-coordinator/worker.mjs
+          node --check workers/continuity-session-coordinator/tinyfish-broker.mjs
+          node --check workers/bubbles-tools/worker.mjs
+          node --check workers/bubbles-tools/tinyfish-client.mjs
+          node --check quanta-card-actions.mjs
+          node --check quanta-card-tinyfish.mjs
+      - name: TinyFish safe public-read adapter tests
+        run: node --test test/tinyfish-card-bridge.test.mjs
