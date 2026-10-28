@@ -59,6 +59,10 @@
     const title = esc(data.title.trim() || "My Media Star");
     const description = esc(data.description.trim() || "Creator-selected original media");
     const source = safeSource(data.url);
+    const cover = data.image?.trim()?safeSource(data.image):'';
+    if(cover && (new URL(cover).protocol!=='https:' || !/\\.(?:png|jpe?g|gif|webp)$/i.test(new URL(cover).pathname)))
+      throw Error('Cover artwork must be a public HTTPS image.');
+    const coverMarkup=cover?'<img alt="Media Star cover artwork" loading="lazy" referrerpolicy="no-referrer" src="'+esc(cover)+'" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-radius:14px;margin:12px 0">':'';
     const productionCredits=creditManifest(data);
     const productionManifest=esc(JSON.stringify({version:1,sourceUrl:source,
       title:data.title,credits:productionCredits,mediaStarOwnedByPublisher:true,
@@ -71,7 +75,7 @@
     const card = '<article data-production-credits="'+productionManifest+'" data-ledger-status="research-pending" data-media-star="creator-v3" data-payment-mode="off" aria-label="Media Star creator card" style="position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:22px;border:2px solid #f3ca52;border-radius:24px;background:linear-gradient(135deg,#fff8cd,#e4af31);color:#33220c;font:16px/1.5 system-ui,sans-serif;box-shadow:0 8px 25px #7d541d3d">' +
       '<span aria-hidden="true" style="position:absolute;right:-54px;top:-68px;width:295px;height:295px;clip-path:polygon(50% 0%,62% 34%,98% 35%,69% 57%,80% 91%,50% 72%,20% 91%,31% 57%,2% 35%,38% 34%);background:linear-gradient(150deg,#fff2a7,#edb028);opacity:.56;z-index:-1"></span>' +
       '<div style="position:relative"><strong style="letter-spacing:.06em;font-size:22px">⭐ MEDIA STAR</strong>' +
-      '<p style="font-size:12px;font-weight:800;letter-spacing:.07em;margin:5px 0">CREATOR MEDIA</p>' +
+      '<p style="font-size:12px;font-weight:800;letter-spacing:.07em;margin:5px 0">CREATOR MEDIA</p>' + coverMarkup +
       '<h2 style="font-size:24px;margin:10px 0">' + title + '</h2>' +
       '<p style="margin:11px 0">' + description + '</p>' +
       '<div data-media-star-player>' + (source ? playable(source) :
@@ -245,7 +249,7 @@
   host.append(panel);
   window.PhiMediaStarAsset=Object.freeze({
     html: options=>exportHtml(options&&typeof options==="object"?{
-      title:String(options.title||""),url:String(options.url||""),description:String(options.description||""),creator:String(options.creator||""),creditEvidence:String(options.creditEvidence||""),credits:String(options.credits||""),creator:String(options.creator||""),creditEvidence:String(options.creditEvidence||""),credits:String(options.credits||"")
+      title:String(options.title||""),url:String(options.url||""),image:String(options.image||""),description:String(options.description||""),creator:String(options.creator||""),creditEvidence:String(options.creditEvidence||""),credits:String(options.credits||"")
     }:{title:"",url:"",description:""})
   });
 })();
