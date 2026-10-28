@@ -1,3 +1,4 @@
+import {mountQuickCardApkBridge} from './quick-card-apk-bridge.mjs';
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-directcards2';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
@@ -186,6 +187,8 @@ function renderDetail(){
  const study=create('section','qf-study');study.append(create('h3','','Investigate with Bubbles'),create('p','','Ask Bubbles to compare the original source with other references, explain the history, and check evidence. It does not have this provider’s private login or account data.'));
  host.append(study);
  const tools=create('div','qf-inline-tool');mountCardTools(tools,card);host.append(tools);
+ host.dataset.quickCardId=card.id;host.dataset.cardTitle=card.name;
+ mountQuickCardApkBridge(host);
  if(card.id==='x-live-spaces'){
   const list=create('section','qf-study');mountSpaceSource(list);host.append(list);
  }
