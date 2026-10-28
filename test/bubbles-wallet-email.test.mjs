@@ -9,7 +9,7 @@ function fixture(){
   storage:{get:async key=>store.get(key),put:async(key,value)=>store.set(key,value),delete:async key=>store.delete(key)}
  };
  const cid='z'.repeat(43);
- store.set('user:alice:connection:'+cid,{userId:'alice',provider:'google',status:'connected',verifiedEmail:'alice@example.com',revision:'rev-1'});
+ store.set('user:alice:connection:'+cid,{userId:'alice',provider:'google',status:'connected',verifiedEmail:'alice@example.com',providerSubject:'google-subject-1',revision:'rev-1'});
  return {store,service,cid};
 }
 test('StarCoin wallet email enrollment binds only to the same authenticated wallet Google-verified address',async()=>{
@@ -24,10 +24,12 @@ test('StarCoin wallet email enrollment binds only to the same authenticated wall
  assert.equal(view.cadence,'daily');assert.equal(view.enabled,true);
  const bob=await walletEmailPreference(service,{userId:'bob'});assert.equal(bob.enabled,false);
 });
-test('disconnect or change of OAuth credential invalidates email notification enrollment',async()=>{
+test('OAuth refresh keeps enrollment, while disconnect invalidates wallet email notifications',async()=>{
  const {service,store,cid}=fixture();
  await walletEmailPreference(service,{userId:'alice',action:'enroll',cadence:'weekly',connectionId:cid});
  store.set('user:alice:connection:'+cid,{...store.get('user:alice:connection:'+cid),revision:'new-revision'});
+ assert.equal((await walletEmailPreference(service,{userId:'alice'})).enabled,true);
+ store.set('user:alice:connection:'+cid,{...store.get('user:alice:connection:'+cid),status:'disconnected'});
  const view=await walletEmailPreference(service,{userId:'alice'});
  assert.equal(view.enabled,false);assert.equal(view.email,null);assert.equal(view.status,'verification_expired');
  await walletEmailPreference(service,{userId:'alice',action:'disable'});
