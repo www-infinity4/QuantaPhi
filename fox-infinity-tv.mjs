@@ -52,7 +52,7 @@ export function mountFoxViewer(root,{compact=false,channel='world-series'}={}){
   make('p','fit-copy','2026 World Series Game 4. Live game scores from MLB. The FOX broadcast requires FOX One or a participating TV provider.'));
  const match=createMatch();
  const actions=make('div','fit-actions');
- const watch=link('▶ Watch live on FOX One',FOX_WATCH_URL,'fit-btn fit-primary');
+ const watch=link('▶ Open '+initial.title+' at FOX',initial.url,'fit-btn fit-primary');
  const source=link('MLB official game center','https://www.mlb.com/gameday/849803','fit-btn fit-secondary');
  const frameToggle=make('button','fit-btn fit-secondary','Try FOX in Infinity Viewer');
  frameToggle.type='button';frameToggle.setAttribute('aria-expanded','false');
