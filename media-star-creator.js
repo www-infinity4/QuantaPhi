@@ -97,7 +97,8 @@
     wrap.append(input);form.append(wrap);return input;
   };
   const title=field("title","Card title","My original episode");
-  const link=field("url","Link to your own content (HTTP or HTTPS)","https://your-site.example/episode.mp3");
+  const link=field("url","Link to your own content (HTTPS required for publishing)","https://your-site.example/episode.mp3");
+  const cover=field("image","Cover artwork URL (optional HTTPS PNG, JPG, WebP or GIF)","https://your-site.example/cover.jpg");
   const description=field("description","Episode description","Tell viewers about your content","textarea");
   const creator=field("creator","Creator or main host to research","Creator / host name");
   const creditEvidence=field("creditEvidence","Official production credits source URL","https://example.org/credits");
@@ -108,8 +109,9 @@
   const createBtn=(label,css,cb)=>{const b=el("button",css,label);b.type="button";b.addEventListener("click",cb);actions.append(b);return b;};
   const preview=el("div","ms-creator-preview");preview.setAttribute("aria-live","polite");
   const feedback=el("p","ms-creator-status");feedback.setAttribute("role","status");
-  const data=()=>({title:title.value,url:link.value,description:description.value,
+  const data=()=>({title:title.value,url:link.value,image:cover.value,description:description.value,
     creator:creator.value,creditEvidence:creditEvidence.value,credits:contributors.value});
+  const published=el('div','ms-creator-published');published.setAttribute('role','status');
   let registeredContentId='';
   async function registerBuiltCard(){
     const item=data(),source=safeSource(item.url),api=window.StarQuestCloudLedger;
@@ -133,7 +135,6 @@
   createBtn("Preview card","ms-creator-button",()=>{
     try{ const html=exportHtml(data());preview.innerHTML=html.replace(/<script>[\s\S]*?<\/script>/gi,"");
       feedback.textContent=link.value.trim()?"Preview ready.":"Blank card ready. Add your own media URL before publishing to all visitors.";
-      if(link.value.trim())void registerBuiltCard();
     }catch(e){feedback.textContent=e.message;}
   });
   createBtn("Copy my Media Star","ms-creator-button ms-primary",async()=>{
@@ -141,9 +142,51 @@
       if(!navigator.clipboard?.writeText)throw Error("Clipboard is unavailable in this browser.");
       await navigator.clipboard.writeText(html);
       feedback.textContent="Your independent Media Star HTML is copied. No Fred content, Phi wallet, Cloudflare binding or payment keys are included.";
-      if(link.value.trim())void registerBuiltCard();
     }catch(e){feedback.textContent=e.message;}
   });
+
+  // Creator publication is an explicit user-initiated, D1-backed operation;
+  // a preview or clipboard copy can never silently publish or mint coins.
+  const publishButton=createBtn('Publish Media Star online','ms-creator-button ms-primary',async()=>{
+    published.replaceChildren();
+    try{
+      const item=data(),source=safeSource(item.url);
+      if(!source||new URL(source).protocol!=='https:')throw Error('Add your own public HTTPS media URL to publish.');
+      if(item.title.trim().length<3||item.title.trim().length>85)throw Error('Use a card title between 3 and 85 characters.');
+      if(item.description.trim().length<12)throw Error('Write an episode description of at least 12 characters.');
+      let image='';
+      if(item.image.trim()){
+        const u=new URL(item.image.trim());
+        if(u.protocol!=='https:'||u.username||u.password||!/\\.(?:png|jpe?g|webp|gif)$/i.test(u.pathname))
+          throw Error('Cover artwork must be a public HTTPS PNG, JPG, WebP or GIF.');
+        image=u.href;
+      }
+      const u=new URL(source),host=u.hostname.toLowerCase();
+      const videoId=host==='youtu.be'?u.pathname.slice(1):
+        ['youtube.com','www.youtube.com','m.youtube.com'].includes(host)?
+        u.searchParams.get('v')||((u.pathname.startsWith('/shorts/')||u.pathname.startsWith('/embed/'))?u.pathname.split('/')[2]:''):'';
+      const kind=/^[A-Za-z0-9_-]{11}$/.test(videoId||'')?'video':'visit';
+      const request={title:item.title.trim(),description:item.description.trim(),website:source,image,kind,
+        video:kind==='video'?source:'',
+        interactionRequest:'Media Star creator: play the authorized media or open its original source; paid access is disabled.',
+        previewMode:'interactive'};
+      publishButton.disabled=true;publishButton.textContent='Publishing…';
+      feedback.textContent='Saving a Media Star with the Quick Card publisher…';
+      const response=await fetch('/api/quick-cards',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(request)});
+      const receipt=await response.json().catch(()=>({}));
+      if(!response.ok||receipt.ok!==true||receipt.status!=='unlisted'||!/^https:\/\/quantaphi\.org\/cards\/[a-z0-9-]{5,91}$/.test(String(receipt.cardUrl||'')))
+        throw Error(String(receipt.error||'The backend did not confirm a saved card. No publish link was created.'));
+      const info=el('p','ms-creator-intro','Media Star saved! Your direct link works now. Carousel placement requires review.');
+      const url=el('input','ms-creator-input');url.type='url';url.readOnly=true;url.value=receipt.cardUrl;url.setAttribute('aria-label','Published Media Star URL');
+      const open=el('a','ms-creator-button','Open published Media Star');open.href=receipt.cardUrl;open.target='_blank';open.rel='noopener noreferrer';
+      const copy=el('button','ms-creator-button','Copy share link');copy.type='button';
+      copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(receipt.cardUrl);copy.textContent='Copied';}catch{url.focus();url.select();}});
+      published.append(info,url,open,copy);
+      feedback.textContent='Publication confirmed by the card backend. Credits and payments remain separate, unfunded features.';
+    }catch(error){feedback.textContent='Media Star not published: '+String(error.message||error).slice(0,210);}
+    finally{publishButton.disabled=false;publishButton.textContent='Publish Media Star online';}
+  });
+  createBtn('Register production credits for review','ms-creator-button',()=>void registerBuiltCard());
   const build=which=>{
     let clean;
     try{clean=safeSource(link.value);}catch(e){feedback.textContent=e.message;return;}
@@ -160,7 +203,7 @@
   };
   createBtn("Build with Infinity Phi","ms-creator-button",()=>build("Infinity"));
   createBtn("Build with Omni Phi","ms-creator-button",()=>build("Omni"));
-  form.append(actions,feedback);
+  form.append(actions,feedback,published);
   panel.append(form,preview);
   const lookup=el('section','ms-production-lookup');
   lookup.append(el('h3','','Search the public production credits ledger'));
