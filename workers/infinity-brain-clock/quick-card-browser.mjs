@@ -8,6 +8,7 @@ const uuid=v=>/^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0
 const fail=(error,status=400)=>({httpStatus:status,result:{ok:false,error,executed:false}});
 const success=(obj,status=200)=>({httpStatus:status,result:{ok:true,...obj}});
 const configured=env=>typeof env.TINYFISH_API_KEY==='string'&&env.TINYFISH_API_KEY.length>12;
+const brokerConfigured=env=>Boolean(env.TINYFISH_BROKER?.fetch&&/^[a-f0-9]{64}$/.test(env.TINYFISH_BRIDGE_TOKEN||''));
 const profileConfigured=env=>typeof env.TINYFISH_PROFILE_ID==='string'&&/^prof_[a-zA-Z0-9]{8,80}$/.test(env.TINYFISH_PROFILE_ID);
 const summary=job=>({jobId:job.jobId,cardId:job.cardId,action:job.action,state:job.state,
  createdAt:job.createdAt,requestId:job.requestId,
@@ -69,7 +70,7 @@ function reportFor(raw,cardId){
 export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=Date.now()){
  try{validateQuickCardBrowser(body)}catch(e){return fail(e.message)}
  if(body.action==='capabilities')
-  return success({ownerOnly:true,provider:'TinyFish Web Agent',configured:configured(env),
+  return success({ownerOnly:true,provider:brokerConfigured(env)?'TinyFish public website reader':'TinyFish Web Agent',configured:configured(env)||brokerConfigured(env),
    profileConfigured:profileConfigured(env),publicBrandReads:true,
    supported:Object.entries(CARD_SITES).map(([id,info])=>({id,name:info.name,kind:info.kind,
     actions:info.kind==='durable'?info.mappings.map(x=>x.id):[]})),
@@ -80,8 +81,8 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
  }
  if(body.action==='start'){
   const plan=planCardBrowserAction({cardId:body.cardId,action:body.kind,query:body.query});
-  if(!configured(env))return fail('tinyfish_backend_not_configured',503);
-  if(plan.useProfile&&!profileConfigured(env))return fail('tinyfish_profile_not_configured',503);
+  if(!configured(env)&&!brokerConfigured(env))return fail('tinyfish_backend_not_configured',503);
+  if(!brokerConfigured(env)&&plan.useProfile&&!profileConfigured(env))return fail('tinyfish_profile_not_configured',503);
   const previousId=await storage.get('quick-card-browser:request:'+body.requestId);
   if(previousId){
    const previous=await storage.get(k(previousId));
@@ -100,6 +101,26 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
   await storage.put(k(job.jobId),job);
   await storage.put('quick-card-browser:request:'+body.requestId,job.jobId);
   try{
+   if(brokerConfigured(env)){
+    // Fixed public website reads through the coordinator's existing secret.
+    // Never forward a profile or turn source reading into website messaging.
+    const action=plan.kind==='durable'?plan.action:plan.query?'search':'inspect';
+    const response=await env.TINYFISH_BROKER.fetch(new Request('https://continuity-session-coordinator.internal/internal/cards/website',{
+     method:'POST',headers:{'Content-Type':'application/json','X-Tinyfish-Bridge-Token':env.TINYFISH_BRIDGE_TOKEN},
+     body:JSON.stringify({cardId:plan.cardId,action,...(plan.query?{query:plan.query}:{})}),signal:AbortSignal.timeout(24000)}));
+    const result=await readBoundedJson(response);
+    if(!response.ok||result.ok!==true){
+     job.state='failed';job.error=String(result.error||'website_read_failed').slice(0,130);await storage.put(k(job.jobId),job);
+     return {httpStatus:502,result:{ok:false,error:job.error,executed:false,job:summary(job)}};
+    }
+    if(result.cardId!==plan.cardId||!['TinyFish Fetch','TinyFish Search'].includes(result.provider)||!result.receipt?.id||!Array.isArray(result.items))throw Error('invalid_broker_result');
+    const parsed=reportFor({summary:result.items[0]?.text||'No matching public website pages.',observedAt:result.observedAt,
+     items:result.items.map(item=>({name:item.title,url:item.url,note:item.text}))},plan.cardId);
+    job.report={...parsed,provider:result.provider,sourceReceipt:result.receipt.id,accountAccessed:false};
+    job.state=parsed.verifiedSameSiteLinks?'completed_browser_read':'unverified_browser_result';
+    await storage.put(k(job.jobId),job);
+    return success({job:summary(job),output:'Public website source returned through TinyFish; no account action or message was sent.'});
+   }
    const run=await tinyfish(env,fetcher,'/v1/automation/run-async',{url:plan.url,goal:cardActionGoal(plan),
     ...(plan.useProfile?{use_profile:true,profile_id:env.TINYFISH_PROFILE_ID}:{}),
     browser_profile:'lite',agent_config:{max_duration_seconds:120}});

@@ -1,0 +1,24 @@
+name: TinyFish original website wiring
+on:
+  pull_request:
+    paths:
+      - '*card*.mjs'
+      - 'starmaker-quick-card.mjs'
+      - 'workers/continuity-session-coordinator/**'
+      - 'workers/infinity-brain-clock/quick-card-browser.mjs'
+      - 'test/card-website*'
+      - 'test/continuity-cycle.test.mjs'
+      - '.github/workflows/tinyfish-card-website.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  original-website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify actual SQL quota enforcement, source validation and unchanged monitoring
+        run: node --test test/card-website.test.mjs test/quick-card-tinyfish.test.mjs test/continuity-cycle.test.mjs test/infinity-accepted.test.mjs test/quanta-card-experience.test.mjs test/source-quick-cards.test.mjs
