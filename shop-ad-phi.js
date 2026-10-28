@@ -102,8 +102,8 @@ function show(item,draft=false){
     void publish(item);
   });
   action.classList.add('sap-publish-saved');
-  terms.prepend(node('strong','Ready to publish this recovered draft?'));
-  terms.insertBefore(own,action);terms.insertBefore(consent,action);feature.append(terms);
+  terms.replaceChildren(node('strong','Ready to publish this recovered draft?'),own,consent,action);
+  feature.append(terms);
   button(row,'Edit this saved draft',()=>{
     editingSaved=item;form.hidden=false;
     for(const [name,input] of Object.entries(fields))input.value=String(item[name]||'');
