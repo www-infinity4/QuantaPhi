@@ -59,7 +59,11 @@ export function openQuickCardPreview({url,title='Quick Card',description='',imag
   popup.append(el('p','qpr-note','The actual QuantaPhi card is loaded above. Search, play and other actions work when their real provider connections permit them. If an app blocks framing, open its full page.'));
  }else{
   const cover=el('div','qpr-visual');
-  if(photo){const img=el('img','qpr-image');img.src=photo;img.alt=String(title).slice(0,100)+' card artwork';cover.append(img);}
+  if(photo){
+   const img=el('img','qpr-image');img.src=photo;img.alt=String(title).slice(0,100)+' card artwork';
+   img.addEventListener('error',()=>{img.remove();cover.append(el('strong','qpr-visual-title',String(title).slice(0,130)),el('span','qpr-visual-label','Source artwork unavailable · open original card'));});
+   cover.append(img);
+  }
   else{cover.append(el('strong','qpr-visual-title',String(title).slice(0,130)),el('span','qpr-visual-label','Interactive Quick Card · open to use'));}
   popup.append(cover);
  }
