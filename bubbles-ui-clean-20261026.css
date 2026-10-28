@@ -39,6 +39,22 @@
 .ba-panel .ba-chatgpt-quick .ba-chatgpt-quick-approve{width:100%;font-size:14px!important}
 .ba-panel .ba-thread{min-height:0!important}
 .ba-panel .ba-composer{background:#fff!important;border-top:1px solid #e3e7e9!important}
+/* Secondary actions stay accessible but do not crowd the conversation. */
+.ba-panel .ba-message-actions{display:block!important;margin:1px 3px 7px!important;
+ align-self:flex-start!important;max-width:100%;border:0!important;background:transparent!important}
+.ba-panel .ba-line-you .ba-message-actions{align-self:flex-end!important}
+.ba-panel .ba-message-actions > .ba-message-actions-toggle{
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ width:43px!important;min-width:43px!important;min-height:40px!important;
+ padding:3px 8px!important;margin:0!important;background:transparent!important;
+ border:1px solid #e0e1e4!important;border-radius:13px!important;
+ color:#425365!important;font:800 21px/1 system-ui,sans-serif!important;list-style:none!important}
+.ba-panel .ba-message-actions > .ba-message-actions-toggle::-webkit-details-marker{display:none}
+.ba-panel .ba-message-actions:not([open]) > button{display:none!important}
+.ba-panel .ba-message-actions[open]{padding:4px 6px 8px!important;
+ border:1px solid #e0e1e4!important;border-radius:12px!important;background:#fff!important}
+.ba-panel .ba-message-actions[open] > button{display:inline-flex;min-height:40px!important;
+ margin:4px 4px 0 0!important;padding:5px 10px!important}
 .ba-panel .ba-messages{padding-top:10px}
 .bubbles-chatgpt-entry:not([open]){padding:10px 14px!important;border-radius:14px!important}
 .bubbles-chatgpt-entry>summary{font-size:14px;font-weight:750;cursor:pointer;color:#344c5d}
