@@ -1,8 +1,9 @@
-/* QuantaPhi independent Quick Ads: one-game campaign, no paid-sponsor assertions.
+import {GAME_START,CAMPAIGN_START,TONIGHT_END,GAME_PK} from './world-series-score.mjs?v=20261028-game5';
+export {GAME_START,CAMPAIGN_START};
+/* QuantaPhi independent Quick Ads: pregame and game campaign, no paid-sponsor assertions.
  * Public outbound destinations are a reviewed allowlist; no unapproved scraping,
  * alcohol, gambling, cookies, wallet reads or API keys. */
-export const GAME_START=Date.parse('2026-10-27T19:00:00-05:00');
-export const GAME_END=Date.parse('2026-10-27T23:59:59-05:00');
+export const GAME_END=TONIGHT_END;
 const ad=(id,name,tagline,category,href,tone,primary=false)=>Object.freeze({
  id,name,tagline,category,href,tone,primary
 });
@@ -27,10 +28,13 @@ export const QUICK_ADS=Object.freeze([
  ad('google','Google','Find more websites and useful answers','technology','https://www.google.com/','#2361ad'),
  ad('best-buy','Best Buy','Shop electronics and useful accessories','technology','https://www.bestbuy.com/','#113a84'),
  ad('ebay','eBay','Discover collectibles and vintage finds','shopping','https://www.ebay.com/','#d44636'),
- ad('walmart','Walmart','Explore groceries and everyday essentials','shopping','https://www.walmart.com/','#1378bf')
+ ad('walmart','Walmart','Explore groceries and everyday essentials','shopping','https://www.walmart.com/','#1378bf'),
+ ad('apple-iphone','Apple iPhone','Explore iPhone models at Apple','technology','https://www.apple.com/iphone/','#202930'),
+ ad('helzberg','Helzberg Diamonds','Explore jewelry at the official Helzberg store','shopping','https://www.helzberg.com/','#843e6c'),
+ ad('infinity-affiliates','Infinity Affiliates','Explore Infinity Accepted brands and product affiliations','shopping','https://quantaphi.org/infinity-affiliates.html','#135e9d')
 ]);
 export function inGameWindow(now=Date.now()){
- return Number.isFinite(now)&&now>=GAME_START&&now<=GAME_END;
+ return Number.isFinite(now)&&now>=CAMPAIGN_START&&now<=GAME_END;
 }
 export function isOfficialUrl(href){
  try{const u=new URL(href);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.');}
@@ -38,8 +42,7 @@ export function isOfficialUrl(href){
 }
 export function gameLiveStatus(payload){
  const games=(payload?.dates||[]).flatMap(d=>Array.isArray(d.games)?d.games:[]);
- const game=games.find(g=>/world series/i.test(g?.seriesDescription||'')||
-  (/Brewers/i.test(g?.teams?.away?.team?.name||'')&&/Rays/i.test(g?.teams?.home?.team?.name||'')));
+ const game=games.find(g=>Number(g?.gamePk)===GAME_PK);
  if(!game)return 'unknown';
  const state=String(game.status?.abstractGameState||'').toLowerCase();
  const detailed=String(game.status?.detailedState||'').toLowerCase();
