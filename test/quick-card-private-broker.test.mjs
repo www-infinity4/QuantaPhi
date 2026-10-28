@@ -122,3 +122,45 @@ test('Brain broker adapter only activates with explicit opt-in and preserves ide
  assert.equal(denied.httpStatus,403);
  assert.equal(messages.length,2,'account/AI actions must never reach the private broker');
 });
+
+test('owner Durable Object serialization protects concurrent paid starts and the final daily slot',async()=>{
+ // The real Brain entry point must retain this wrapper. Testing the helper alone
+ // would miss the concurrency boundary that protects its get/put reservations.
+ const {readFileSync}=await import('node:fs');
+ const source=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ assert.match(source,/pathname==='\\/quick-card-browser'[\\s\\S]{0,250}blockConcurrencyWhile\\(\\(\\)=>handleQuickCardBrowser/,
+  'owner DO must serialize the entire paid-run reservation and provider dispatch');
+ const data=new Map();
+ const storage={get:async k=>data.get(k),put:async(k,v)=>data.set(k,structuredClone(v))};
+ let tail=Promise.resolve();
+ const ctx={storage,async blockConcurrencyWhile(fn){
+  const previous=tail;
+  let release;
+  tail=new Promise(resolve=>{release=resolve});
+  await previous;
+  try{return await fn()}finally{release()}
+ }};
+ let providerCalls=0;
+ const fetcher=async()=>{
+  await new Promise(resolve=>setTimeout(resolve,12)); // Force overlapping arrivals.
+  providerCalls++;
+  return Response.json({run_id:runId});
+ };
+ const directEnv={TINYFISH_API_KEY:'fake-provider-test-key-123'};
+ const fixedNow=Date.parse('2026-10-28T03:00:00Z');
+ const submit=body=>ctx.blockConcurrencyWhile(()=>
+  handleQuickCardBrowser(ctx.storage,directEnv,body,fetcher,fixedNow));
+ const [first,duplicate]=await Promise.all([submit(start),submit(start)]);
+ assert.equal(first.httpStatus,202);
+ assert.equal(duplicate.httpStatus,200);
+ assert.equal(first.result.job.jobId,duplicate.result.job.jobId);
+ assert.equal(providerCalls,1,'concurrent duplicate click must not incur a second paid call');
+ const budgetKey='quick-card-browser:count:2026-10-28';
+ await storage.put(budgetKey,15);
+ const a={...start,requestId:'12345678-1234-4234-8234-123456789ab1'};
+ const b={...start,requestId:'12345678-1234-4234-8234-123456789ab2'};
+ const [one,two]=await Promise.all([submit(a),submit(b)]);
+ assert.deepEqual([one.httpStatus,two.httpStatus].sort((x,y)=>x-y),[202,429]);
+ assert.equal(providerCalls,2,'only the last authorized daily slot can dispatch');
+ assert.equal(await storage.get(budgetKey),16);
+});
