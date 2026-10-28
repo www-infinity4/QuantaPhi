@@ -1,6 +1,6 @@
 /* Register only approved creator cards in the ORIGINAL Oracle direction viewer.
  * All unlisted cards work from direct links but are deliberately absent here. */
-import {paintCard} from '/published-quick-card.js?v=2';
+import {paintCard} from '/published-quick-card.js?v=4';
 function attachCards(cards){
  const bank=document.getElementById('siteQuickCards');if(!bank||!Array.isArray(cards))return;
  let count=0;
