@@ -1,4 +1,4 @@
-import {mountQuickCardApkBridge} from './quick-card-apk-bridge.mjs';
+import {mountQuickCardApkBridge} from './quick-card-apk-bridge.mjs?v=20261028-cardbridge2';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-foxone1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
