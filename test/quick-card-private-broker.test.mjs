@@ -82,9 +82,10 @@ test('oversize, provider redirects and malformed provider receipts are rejected'
 // same-site report filter; this test never calls the paid provider.
 import {webcrypto} from 'node:crypto';
 import {handleQuickCardBrowser} from '../workers/infinity-brain-clock/quick-card-browser.mjs';
+import {quickCardStorage,deferred} from './helpers/quick-card-storage.mjs';
 globalThis.crypto??=webcrypto;
-test('Brain broker adapter only activates with explicit opt-in and preserves idempotency',async()=>{
- const data=new Map(),storage={get:async k=>data.get(k),put:async(k,v)=>data.set(k,v)};
+test('Brain broker adapter only activates with explicit opt-in and preserves idempotency',async t=>{
+ const storage=quickCardStorage(t);
  const messages=[];
  const service={fetch:async(url,init)=>{
   assert.equal(url,'https://broker.internal/internal/quick-card-browser');
@@ -123,44 +124,84 @@ test('Brain broker adapter only activates with explicit opt-in and preserves ide
  assert.equal(messages.length,2,'account/AI actions must never reach the private broker');
 });
 
-test('owner Durable Object serialization protects concurrent paid starts and the final daily slot',async()=>{
- // The real Brain entry point must retain this wrapper. Testing the helper alone
- // would miss the concurrency boundary that protects its get/put reservations.
- const {readFileSync}=await import('node:fs');
- const source=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
- assert.ok(source.includes("this.ctx.blockConcurrencyWhile(()=>handleQuickCardBrowser(this.ctx.storage,this.env,body))"),
-  'owner DO must serialize the entire paid-run reservation and provider dispatch');
- const data=new Map();
- const storage={get:async k=>data.get(k),put:async(k,v)=>data.set(k,structuredClone(v))};
- let tail=Promise.resolve();
- const ctx={storage,async blockConcurrencyWhile(fn){
-  const previous=tail;
-  let release;
-  tail=new Promise(resolve=>{release=resolve});
-  await previous;
-  try{return await fn()}finally{release()}
- }};
- let providerCalls=0;
- const fetcher=async()=>{
-  await new Promise(resolve=>setTimeout(resolve,12)); // Force overlapping arrivals.
-  providerCalls++;
-  return Response.json({run_id:runId});
- };
- const directEnv={TINYFISH_API_KEY:'fake-provider-test-key-123'};
- const fixedNow=Date.parse('2026-10-28T03:00:00Z');
- const submit=body=>ctx.blockConcurrencyWhile(()=>
-  handleQuickCardBrowser(ctx.storage,directEnv,body,fetcher,fixedNow));
- const [first,duplicate]=await Promise.all([submit(start),submit(start)]);
- assert.equal(first.httpStatus,202);
- assert.equal(duplicate.httpStatus,200);
- assert.equal(first.result.job.jobId,duplicate.result.job.jobId);
- assert.equal(providerCalls,1,'concurrent duplicate click must not incur a second paid call');
- const budgetKey='quick-card-browser:count:2026-10-28';
- await storage.put(budgetKey,15);
- const a={...start,requestId:'12345678-1234-4234-8234-123456789ab1'};
- const b={...start,requestId:'12345678-1234-4234-8234-123456789ab2'};
- const [one,two]=await Promise.all([submit(a),submit(b)]);
- assert.deepEqual([one.httpStatus,two.httpStatus].sort((x,y)=>x-y),[202,429]);
- assert.equal(providerCalls,2,'only the last authorized daily slot can dispatch');
- assert.equal(await storage.get(budgetKey),16);
+const fixedNow=Date.parse('2026-10-28T03:00:00Z');
+const budgetKey='quick-card-browser:count:2026-10-28';
+const directEnv={TINYFISH_API_KEY:'fake-provider-test-key-123'};
+for(const transport of ['direct','broker']){
+ test(`${transport}: concurrent duplicate returns its committed receipt before provider completion`,{timeout:3000},async t=>{
+  const storage=quickCardStorage(t),entered=deferred(),release=deferred();let calls=0;
+  t.after(()=>release.resolve());
+  const dispatch=async()=>{
+   calls++;
+   // Reads through the outer storage wait for the transaction to commit. They
+   // would deadlock here if dispatch were inside its own reservation callback.
+   const savedId=await storage.get('quick-card-browser:request:'+requestId);
+   assert.equal((await storage.get('quick-card-browser:job:'+savedId)).state,'dispatch_uncertain');
+   assert.equal(await storage.get(budgetKey),1);
+   entered.resolve();await release.promise;
+   return Response.json(transport==='broker'?{ok:true,runId,receiptProof:'a'.repeat(64)}:{run_id:runId});
+  };
+  const configuredEnv=transport==='broker'?{TINYFISH_BROKER_ENABLED:'true',TINYFISH_BRIDGE_TOKEN:token,
+   TINYFISH_BROKER:{fetch:dispatch}}:directEnv;
+  const first=handleQuickCardBrowser(storage,configuredEnv,start,dispatch,fixedNow);
+  const duplicate=handleQuickCardBrowser(storage,configuredEnv,start,dispatch,fixedNow);
+  await entered.promise;
+  const reused=await duplicate;
+  assert.equal(reused.httpStatus,200);
+  assert.equal(reused.result.job.state,'dispatch_uncertain');
+  assert.equal(await storage.get(budgetKey),1);
+  assert.equal(calls,1);
+  release.resolve();const completed=await first;
+  assert.equal(completed.httpStatus,202);
+  assert.equal(completed.result.job.jobId,reused.result.job.jobId);
+ });
+ test(`${transport}: competing starts share the final daily paid slot`,async t=>{
+  const storage=quickCardStorage(t);await storage.put(budgetKey,15);let calls=0;
+  const dispatch=async()=>{
+   calls++;return Response.json(transport==='broker'?{ok:true,runId,receiptProof:'a'.repeat(64)}:{run_id:runId});
+  };
+  const configuredEnv=transport==='broker'?{TINYFISH_BROKER_ENABLED:'true',TINYFISH_BRIDGE_TOKEN:token,
+   TINYFISH_BROKER:{fetch:dispatch}}:directEnv;
+  const other={...start,requestId:'12345678-1234-4234-8234-123456789ab1'};
+  const results=await Promise.all([start,other].map(body=>handleQuickCardBrowser(storage,configuredEnv,body,dispatch,fixedNow)));
+  assert.deepEqual(results.map(r=>r.httpStatus).sort((a,b)=>a-b),[202,429]);
+  assert.equal(calls,1);assert.equal(await storage.get(budgetKey),16);
+  assert.equal((await storage.entries()).filter(([key])=>key.startsWith('quick-card-browser:request:')).length,1);
+ });
+}
+test('an interrupted reservation rolls back every receipt before any paid dispatch',async t=>{
+ for(const writeNumber of [1,2,3]){
+  const storage=quickCardStorage(t);let calls=0;
+  const dispatch=async()=>{calls++;return Response.json({run_id:runId})};
+  storage.interruptNextTransactionAtWrite(writeNumber);
+  const interrupted=await handleQuickCardBrowser(storage,directEnv,start,dispatch,fixedNow);
+  assert.equal(interrupted.httpStatus,503);assert.equal(calls,0);
+  assert.deepEqual(await storage.entries(),[],'budget, job and request index must roll back together');
+  const retry=await handleQuickCardBrowser(storage,directEnv,start,dispatch,fixedNow);
+  assert.equal(retry.httpStatus,202);assert.equal(calls,1);
+  assert.equal(await storage.get(budgetKey),1);
+ }
+});
+test('conflicting or missing receipts and invalid budgets never incur a new paid call',async t=>{
+ const storage=quickCardStorage(t);let calls=0;
+ const dispatch=async()=>{calls++;return Response.json({run_id:runId})};
+ assert.equal((await handleQuickCardBrowser(storage,directEnv,start,dispatch,fixedNow)).httpStatus,202);
+ const conflict=await handleQuickCardBrowser(storage,directEnv,{...start,query:'changed query'},dispatch,fixedNow);
+ assert.equal(conflict.httpStatus,409);assert.equal(conflict.result.error,'request_id_conflict');
+ const other={...start,requestId:'12345678-1234-4234-8234-123456789ab1'};
+ for(const invalid of [-1,1.5,'0',null]){
+  await storage.put(budgetKey,invalid);
+  assert.equal((await handleQuickCardBrowser(storage,directEnv,other,dispatch,fixedNow)).httpStatus,503);
+ }
+ await storage.put('quick-card-browser:request:'+other.requestId,runId);
+ const missing=await handleQuickCardBrowser(storage,directEnv,other,dispatch,fixedNow);
+ assert.equal(missing.httpStatus,409);assert.equal(missing.result.error,'request_receipt_missing_no_retry');
+ assert.equal(calls,1);
+});
+test('missing transactional storage fails closed without dispatch or non-atomic fallback',async()=>{
+ let calls=0;
+ const forbidden=async()=>{calls++;throw Error('must_not_be_called')};
+ const result=await handleQuickCardBrowser({get:forbidden,put:forbidden},directEnv,start,forbidden,fixedNow);
+ assert.equal(result.httpStatus,503);assert.equal(result.result.error,'browser_reservation_unavailable');
+ assert.equal(calls,0);
 });

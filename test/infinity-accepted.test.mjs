@@ -5,9 +5,9 @@ import {cleanFeedState,feedCandidates,nextFeedDirection,nextDeckCycle,markViewed
 import {planCardBrowserAction,cardActionGoal} from '../workers/infinity-brain-clock/quick-card-browser-policy.mjs';
 import {handleQuickCardBrowser,readBoundedJson} from '../workers/infinity-brain-clock/quick-card-browser.mjs';
 import {createCardBrowserSession} from '../quick-card-tinyfish-actions.mjs';
+import {quickCardStorage} from './helpers/quick-card-storage.mjs';
 const framework=acceptedBrand('durable-framework-computers');
 const other={id:'ordinary',name:'Ordinary brand',official:'https://example.com/',category:'Hardware'};
-const store=()=>{const map=new Map();return {get:async key=>map.get(key),put:async(key,value)=>map.set(key,structuredClone(value))}};
 const env={TINYFISH_API_KEY:'synthetic-provider-fixture-key'};
 test('preserves all 116 owner entries, four categories and specific model qualifiers',()=>{
  assert.equal(INFINITY_ACCEPTED_BRANDS.length,116);assert.equal(new Set(INFINITY_ACCEPTED_BRANDS.map(x=>x.id)).size,116);
@@ -43,8 +43,8 @@ test('accepted priority applies in each feed, while Following and unseen rotatio
  assert.equal(new Set(visited).size,cards.length);assert.equal(visited.at(-1),other.id);
  assert.equal(nextDeckCycle(cards,current,seen).restarted,true);
 });
-test('public brand browser read uses no saved profile and binds duplicate IDs to the original action',async()=>{
- const storage=store(),calls=[],requestId=crypto.randomUUID();
+test('public brand browser read uses no saved profile and binds duplicate IDs to the original action',async t=>{
+ const storage=quickCardStorage(t),calls=[],requestId=crypto.randomUUID();
  const action=framework.actions[0];
  const send=async(url,init)=>{calls.push({url,init});return Response.json({run_id:crypto.randomUUID()})};
  const body={action:'start',cardId:framework.id,kind:action.id,requestId};
@@ -52,7 +52,7 @@ test('public brand browser read uses no saved profile and binds duplicate IDs to
  const wire=JSON.parse(calls[0].init.body);assert.equal(wire.url,action.url);assert.equal(wire.use_profile,undefined);assert.equal(wire.profile_id,undefined);
  const repeat=await handleQuickCardBrowser(storage,env,body,send);assert.equal(repeat.result.job.jobId,first.result.job.jobId);assert.equal(calls.length,1);
  const conflict=await handleQuickCardBrowser(storage,env,{...body,query:'different task'},send);assert.equal(conflict.httpStatus,409);assert.equal(calls.length,1);
- const unconfigured=await handleQuickCardBrowser(store(),{},body,send);assert.equal(unconfigured.httpStatus,503);assert.equal(calls.length,1);
+ const unconfigured=await handleQuickCardBrowser(quickCardStorage(t),{},body,send);assert.equal(unconfigured.httpStatus,503);assert.equal(calls.length,1);
 });
 test('uncertain client start recovers using the same request ID, and running jobs prevent duplicate taps',async()=>{
  const requests=[];let fail=true;
@@ -72,8 +72,8 @@ test('bounded upstream JSON cancels oversized streams and never buffers an unlim
  await assert.rejects(readBoundedJson(response,150),/oversize/);assert.equal(cancelled,true);
  const parsed=await readBoundedJson(Response.json({ok:true}));assert.equal(parsed.ok,true);
 });
-test('a finished provider run with no same-brand links does not claim a completed website read',async()=>{
- const storage=store(),body={action:'start',cardId:framework.id,kind:framework.actions[0].id,requestId:crypto.randomUUID()};
+test('a finished provider run with no same-brand links does not claim a completed website read',async t=>{
+ const storage=quickCardStorage(t),body={action:'start',cardId:framework.id,kind:framework.actions[0].id,requestId:crypto.randomUUID()};
  const begin=await handleQuickCardBrowser(storage,env,body,async()=>Response.json({run_id:crypto.randomUUID()}));
  const result=await handleQuickCardBrowser(storage,env,{action:'status',jobId:begin.result.job.jobId},async()=>Response.json({status:'COMPLETED',result:{summary:'No source evidence',items:[null,{}, {name:'Off-site',url:'https://evil.example/'}]}}));
  assert.equal(result.result.job.state,'unverified_browser_result');assert.equal(result.result.job.report.verifiedSameSiteLinks,0);

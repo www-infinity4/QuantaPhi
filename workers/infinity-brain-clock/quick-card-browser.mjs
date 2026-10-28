@@ -59,6 +59,33 @@ async function privateBroker(env,command){
  return receipt;
 }
 const k=id=>'quick-card-browser:job:'+id;
+async function reserveStart(storage,plan,requestId,now){
+ if(typeof storage.transaction!=='function')return {response:fail('browser_reservation_unavailable',503)};
+ // No provider I/O belongs in this retryable transaction. Commit all three
+ // receipts together before dispatch, so a duplicate can safely return while
+ // the first request is still waiting on TinyFish.
+ const job={jobId:crypto.randomUUID(),requestId,cardId:plan.cardId,action:plan.action,
+  query:plan.query,state:'dispatch_uncertain',createdAt:new Date(now).toISOString()};
+ const requestKey='quick-card-browser:request:'+requestId;
+ const budgetKey='quick-card-browser:count:'+job.createdAt.slice(0,10);
+ try{return await storage.transaction(async tx=>{
+  const previousId=await tx.get(requestKey);
+  if(previousId!==undefined){
+   const previous=uuid(previousId)?await tx.get(k(previousId)):null;
+   if(!previous)return {response:fail('request_receipt_missing_no_retry',409)};
+   if(previous.cardId!==plan.cardId||previous.action!==plan.action||previous.query!==plan.query)
+    return {response:fail('request_id_conflict',409)};
+   return {response:success({job:summary(previous),output:'Duplicate click reused the existing job, not a second paid run.'})};
+  }
+  const storedCount=await tx.get(budgetKey),count=storedCount===undefined?0:storedCount;
+  if(!Number.isSafeInteger(count)||count<0)return {response:fail('browser_budget_receipt_invalid',503)};
+  if(count>=16)return {response:fail('owner_daily_browser_read_limit_reached',429)};
+  await tx.put(budgetKey,count+1);
+  await tx.put(k(job.jobId),job);
+  await tx.put(requestKey,job.jobId);
+  return {job};
+ })}catch{return {response:fail('browser_reservation_unavailable',503)}}
+}
 function reportFor(raw,cardId){
  // Extract a strictly bounded data summary, not arbitrary provider instructions.
  const source=typeof raw==='string'?raw:JSON.stringify(raw??'');
@@ -99,26 +126,12 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
   if(brokerEnabled(env)&&plan.useProfile)return fail('private_broker_public_brand_only',403);
   if(!configured(env))return fail('tinyfish_backend_not_configured',503);
   if(plan.useProfile&&!profileConfigured(env))return fail('tinyfish_profile_not_configured',503);
-  const previousId=await storage.get('quick-card-browser:request:'+body.requestId);
-  if(previousId){
-   const previous=await storage.get(k(previousId));
-   if(previous){
-    if(previous.cardId!==plan.cardId||previous.action!==plan.action||previous.query!==plan.query)return fail('request_id_conflict',409);
-    return success({job:summary(previous),output:'Duplicate click reused the existing job, not a second paid run.'});
-   }
-   return fail('request_receipt_missing_no_retry',409);
-  }
-  const day=new Date(now).toISOString().slice(0,10),budgetKey='quick-card-browser:count:'+day;
-  const count=Number(await storage.get(budgetKey)||0);
-  if(count>=16)return fail('owner_daily_browser_read_limit_reached',429);
-  await storage.put(budgetKey,count+1);
-  const job={jobId:crypto.randomUUID(),requestId:body.requestId,cardId:plan.cardId,action:plan.action,
-   query:plan.query,state:'dispatch_uncertain',createdAt:new Date(now).toISOString()};
-  await storage.put(k(job.jobId),job);
-  await storage.put('quick-card-browser:request:'+body.requestId,job.jobId);
+  const requestId=body.requestId,reserved=await reserveStart(storage,plan,requestId,now);
+  if(reserved.response)return reserved.response;
+  const job=reserved.job;
   try{
    const run=brokerEnabled(env)?await privateBroker(env,{action:'start',cardId:plan.cardId,
-    kind:plan.action,query:plan.query,requestId:body.requestId}):
+    kind:plan.action,query:plan.query,requestId}):
     await tinyfish(env,fetcher,'/v1/automation/run-async',{url:plan.url,goal:cardActionGoal(plan),
     ...(plan.useProfile?{use_profile:true,profile_id:env.TINYFISH_PROFILE_ID}:{}),
     browser_profile:'lite',agent_config:{max_duration_seconds:120}});

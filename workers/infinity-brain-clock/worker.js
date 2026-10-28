@@ -728,7 +728,9 @@ export class BrainClock extends DurableObject{
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
   if(new URL(request.url).pathname==='/quick-card-browser'){
    const body=await readBoundedJson(request,2300);
-   const result=await this.ctx.blockConcurrencyWhile(()=>handleQuickCardBrowser(this.ctx.storage,this.env,body));
+   // The handler atomically reserves its request ID, budget and job before
+   // provider I/O. Do not hold the entire Brain object while that I/O waits.
+   const result=await handleQuickCardBrowser(this.ctx.storage,this.env,body);
    return Response.json(result.result,{status:result.httpStatus});
   }
   if(new URL(request.url).pathname==='/owner/task-clock'){
