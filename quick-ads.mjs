@@ -82,7 +82,10 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
   const pick=chooseQuickAd(detail,state.counts,state.recent,Date.now());
   if(pick)display(pick);
  };
- window.addEventListener('quantaphi:world-series-toast',e=>{\n  if(e.detail?.visible){scoreAdSuppressedUntil=Date.now()+14000;hide()}\n });\n window.addEventListener('quantaphi:switchboard-change',e=>{
+ window.addEventListener('quantaphi:world-series-toast',e=>{
+  if(e.detail?.visible){scoreAdSuppressedUntil=Date.now()+14000;hide()}
+ });
+ window.addEventListener('quantaphi:switchboard-change',e=>{
   const detail=e.detail;
   if(!detail?.id){currentId='';hide();return;}
   // Ignore tab-only updates for the same card.
