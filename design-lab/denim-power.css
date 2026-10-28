@@ -1,0 +1,30 @@
+/* QuantaPhi Design Lab · Category Power prototype. Scoped; no home/wallet overrides. */
+.dp-section{padding:74px clamp(18px,6vw,100px);background:linear-gradient(160deg,#edf3f6,#f8f8f5 65%);border-top:1px solid #cbdce7;border-bottom:1px solid #d5dde1;color:#193548}
+.dp-shell{max-width:1370px;margin:0 auto}
+.dp-eyebrow{font-size:11px;font-weight:900;letter-spacing:.16em;color:#246a95}
+.dp-head{display:flex;align-items:end;gap:24px;justify-content:space-between}
+.dp-head h2{font:650 clamp(33px,4.8vw,58px)/1.07 Georgia,serif;letter-spacing:-.05em;margin:10px 0 15px}
+.dp-head h2 em{font-weight:450;color:#247fb5}
+.dp-head p{max-width:660px;margin:0;color:#496477;font-size:14px;line-height:1.7}
+.dp-tally{background:#fff;border:1px solid #bfd0dc;border-radius:18px;padding:17px 20px;font-size:14px;font-weight:850;white-space:nowrap;box-shadow:0 6px 20px #2e6b9030}
+.dp-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:28px 0}
+.dp-controls button,.dp-controls select{min-height:45px;border-radius:13px;padding:10px 15px;font-size:13px;font-weight:800}
+#denimFollowAll{border:0;background:#124e78;color:#fff;box-shadow:0 6px 18px #16477333}
+#denimUnfollowAll{border:1px solid #b2c7d6;background:#fff;color:#174b6a}
+.dp-controls label{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700}
+.dp-controls select{background:#fff;border:1px solid #a8bdc9;max-width:170px}
+.dp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.dp-item{display:flex;align-items:stretch;gap:0;overflow:hidden;background:#fff;border:1px solid #c7d6df;border-radius:19px;box-shadow:0 10px 24px #3759761a;min-width:0}
+.dp-photo{height:180px;width:38%;max-width:155px;object-fit:cover;background:#eef3f6}
+.dp-copy{flex:1;min-width:0;padding:17px 14px;display:flex;flex-direction:column}
+.dp-brand{font-size:10px;letter-spacing:.09em;font-weight:950;color:#266a94;text-transform:uppercase}
+.dp-copy h3{font:700 17px/1.25 Georgia,serif;letter-spacing:-.015em;margin:9px 0 auto;overflow-wrap:anywhere}
+.dp-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.dp-follow{background:#e3f2fb;border:1px solid #9fc2db;border-radius:10px;color:#174e73;font-size:11px;font-weight:800;padding:9px 11px;min-height:36px}
+.dp-follow[aria-pressed="true"]{background:#144c70;color:white}
+.dp-open{font-size:11px;color:#25678c;font-weight:750}
+.dp-disclosure,.dp-status{font-size:12px;color:#557184;line-height:1.6}
+.dp-status{min-height:21px;margin:8px 0 14px;font-weight:800}
+.dp-disclosure{margin:23px 0 0}
+@media(max-width:1000px){.dp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.dp-head{display:block}.dp-tally{display:inline-block;margin-top:17px}}
+@media(max-width:620px){.dp-section{padding:48px 16px}.dp-grid{grid-template-columns:1fr}.dp-photo{height:190px;width:39%}.dp-controls{align-items:stretch}.dp-controls button{flex:1}.dp-controls label{flex-basis:100%;margin:10px 0 0;justify-content:space-between}.dp-copy h3{font-size:16px}.dp-head h2{font-size:36px}}
