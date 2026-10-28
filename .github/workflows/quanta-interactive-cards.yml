@@ -17,6 +17,9 @@ on:
       - 'oracle-card-deck.css'
       - 'shop-phi-switchboard.*'
       - 'test/shopphi-flanks.browser.spec.mjs'
+      - 'test/shopphi-seller-live.browser.spec.mjs'
+      - 'shop-phi-publish.js'
+      - 'shopphi-wallet-status.js'
       - 'test/cardone-carousel.browser.cjs'
       - 'premium-source-cards.*'
       - 'test/premium*'
@@ -129,4 +132,4 @@ jobs:
         run: |
           node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
-          npx playwright test test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/world-series-browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/world-series-browser.spec.mjs --reporter=line --workers=1
