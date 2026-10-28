@@ -14,19 +14,30 @@ function route(card){
  return location.pathname+location.search;
 }
 function previewUrl(card){return new URL(route(card),location.origin).href}
-function sharePreviewUrl(card){
- // The QuantaPhi edge renders distinct real OG/Twitter metadata on /q-share
- // even for an original Oracle card whose visible route is homepage ?card=id.
+function sharePreviewUrl(card,host){
+ // Crawler-rendered card-specific metadata; the destination remains the real
+ // interactive card, not an external site or a generic homepage banner.
  const target=previewUrl(card),u=new URL('/q-share',location.origin);
+ const name=String(card.name||card.title||card.id||'QuantaPhi Quick Card').slice(0,160);
  u.searchParams.set('kind','quick-card');
- u.searchParams.set('title',String(card.name||card.title||card.id||'QuantaPhi Quick Card').slice(0,120));
- u.searchParams.set('text',String(card.feature||card.description||card.study||'Open this original interactive QuantaPhi Quick Card.').slice(0,230));
+ u.searchParams.set('title',name);
+ u.searchParams.set('text',String(card.shareDescription||card.feature||card.description||card.study||card.details||('Open the '+name+' interactive Quick Card.')).replace(/\s+/g,' ').slice(0,420));
  u.searchParams.set('dest',target);
- let visual=card.image||card.imageUrl||card.mediaSrc||'';
- try{
-  const image=new URL(visual,location.origin);
-  if(image.protocol==='https:'&&/\.(png|jpe?g|webp|gif)$/i.test(image.pathname))u.searchParams.set('image',image.href);
- }catch{}
+ let visual=card.shareImage||card.ogImage||card.previewImage||card.poster||card.image||card.imageUrl||card.mediaSrc||'';
+ if(!visual){
+   const picture=host?.closest('article')?.querySelector('img');
+   visual=picture?.currentSrc||picture?.src||'';
+ }
+ if(visual){
+   try{
+     const image=new URL(visual,location.origin);
+     const cdn=image.hostname==='lsco.scene7.com'&&image.pathname.startsWith('/is/image/');
+     const generic=image.pathname==='/preview.png';
+     if(!generic&&image.protocol==='https:'&&!image.username&&!image.password&&image.href.length<1600&&(/\.(png|jpe?g|webp|gif)$/i.test(image.pathname)||cdn)){
+       u.searchParams.set('image',image.href);
+     }
+   }catch{}
+ }
  return u.href;
 }
 function notify(host,s){host.textContent=s}
@@ -74,7 +85,7 @@ export function mountCardActions(host,card,options={}){
   notify(status,'Collected on this device. Cloud sync and coin rewards are not confirmed.');
  });
  b('↗ Share',async()=>{
-  const url=sharePreviewUrl(card);
+  const url=sharePreviewUrl(card,host);
   try{
    if(navigator.share){await navigator.share({title:name,text:'Explore the '+name+' interactive Quick Card on QuantaPhi',url});notify(status,'Share sheet opened.');return}
    if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);notify(status,'Quick Card link copied.');return}
