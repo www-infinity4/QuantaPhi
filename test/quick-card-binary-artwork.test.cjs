@@ -3,7 +3,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),fs=requir
 test('public QuantaPhi share artwork is fetched as real binary from original source, not Pages HTML',async()=>{
  const calls=[],png=new Uint8Array([137,80,78,71,13,10,26,10,0,0,0,0]);
  const scope={URL,Request,Response,Headers,AbortController,AbortSignal,setTimeout,clearTimeout,fetch:async(input)=>{
-  const url=String(input);calls.push(url);
+  const url=typeof input==='string'?input:input.url;calls.push(url);
   if(url.includes('raw.githubusercontent.com/www-infinity4/QuantaPhi/main/assets/share/x-money-card.png')){
    return new Response(png,{status:200,headers:{'Content-Type':'application/octet-stream'}});
   }
