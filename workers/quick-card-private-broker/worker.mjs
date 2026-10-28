@@ -28,6 +28,15 @@ async function boundedJson(response,max=30000){
  for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}
  return JSON.parse(new TextDecoder().decode(bytes));
 }
+// A stateless, signed correlation receipt binds a provider run to the exact
+// approved card and owner-Durable-Object request ID. This is not a user login.
+async function runProof(env,cardId,requestId,runId){
+ const key=await crypto.subtle.importKey('raw',encoder.encode(env.TINYFISH_BRIDGE_TOKEN),
+  {name:'HMAC',hash:'SHA-256'},false,['sign']);
+ const message=encoder.encode(JSON.stringify([cardId,requestId,runId]));
+ const bytes=new Uint8Array(await crypto.subtle.sign('HMAC',key,message));
+ return Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');
+}
 export function validatePrivateBrokerRequest(body){
  if(!body||typeof body!=='object'||Array.isArray(body))throw Error('invalid_body');
  if(body.action==='start'){
@@ -35,14 +44,16 @@ export function validatePrivateBrokerRequest(body){
   if(!UUID.test(body.requestId||''))throw Error('invalid_request_id');
   const plan=planCardBrowserAction({cardId:body.cardId,action:body.kind,query:body.query});
   if(plan.useProfile||plan.kind!=='durable')throw Error('account_profile_not_authorized');
-  return {action:'start',plan};
+  return {action:'start',plan,requestId:body.requestId};
  }
  if(body.action==='status'){
-  if(Object.keys(body).some(k=>!['action','cardId','runId'].includes(k)))throw Error('extra_fields');
+  if(Object.keys(body).some(k=>!['action','cardId','runId','requestId','receiptProof'].includes(k)))throw Error('extra_fields');
   if(!UUID.test(body.runId||''))throw Error('invalid_run_id');
+  if(!UUID.test(body.requestId||''))throw Error('invalid_request_id');
+  if(typeof body.receiptProof!=='string'||!/^[a-f0-9]{64}$/i.test(body.receiptProof))throw Error('invalid_receipt_proof');
   const card=typeof body.cardId==='string'&&Object.hasOwn(CARD_SITES,body.cardId)?CARD_SITES[body.cardId]:null;
   if(!card||card.kind!=='durable'||!card.mappings.length)throw Error('account_profile_not_authorized');
-  return {action:'status',runId:body.runId};
+  return {action:'status',cardId:body.cardId,requestId:body.requestId,runId:body.runId,receiptProof:body.receiptProof};
  }
  throw Error('unsupported_action');
 }
@@ -63,6 +74,10 @@ export async function handlePrivateBroker(request,env,fetcher=fetch){
  try{command=validatePrivateBrokerRequest(await boundedJson(request,2300));}
  catch{return reply({ok:false,error:'invalid_or_unapproved_request'},400);}
  const start=command.action==='start';
+ if(!start){
+  const expected=await runProof(env,command.cardId,command.requestId,command.runId);
+  if(!equalSecret(command.receiptProof,expected))return reply({ok:false,error:'run_receipt_not_authorized'},403);
+ }
  const endpoint=start?'/v1/automation/run-async':'/v1/runs/'+encodeURIComponent(command.runId);
  const payload=start?{url:command.plan.url,goal:cardActionGoal(command.plan),
   browser_profile:'lite',agent_config:{max_duration_seconds:120}}:null;
@@ -75,7 +90,7 @@ export async function handlePrivateBroker(request,env,fetcher=fetch){
   if(start){
    const runId=data?.run_id||data?.runId;
    if(!UUID.test(runId||''))return reply({ok:false,error:'provider_receipt_invalid'},502);
-   return reply({ok:true,runId},202);
+   return reply({ok:true,runId,receiptProof:await runProof(env,command.plan.cardId,command.requestId,runId)},202);
   }
   return reply({ok:true,status:String(data?.status||'UNKNOWN').slice(0,30),result:data?.result??null,
    error:data?.error?{message:String(data.error?.message||data.error).slice(0,140)}:null});
