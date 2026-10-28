@@ -1,4 +1,7 @@
 import {test,expect} from '@playwright/test';
+// Include Integra audit regressions in the existing CI gate.
+import './integra-validation-browser.spec.mjs';
+
 // Use existing Android QA invocation for the new wiring study and hidden-login cases.
 import './quick-card-wiring-browser.spec.mjs';
 const base='http://127.0.0.1:8799';
