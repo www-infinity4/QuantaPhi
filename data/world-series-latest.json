@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-27T22:50:39.284286Z",
+  "checked_at": "2026-10-28T02:01:26.448908Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
@@ -17,6 +17,61 @@
     }
   ],
   "articles": [
+    {
+      "title": "LIVE: Rays, Brewers trade runs early in Game 4 (FOX/FOX One)",
+      "url": "https://www.mlb.com/stories/game/849803",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T01:19:11Z",
+      "summary": "",
+      "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Longoria tosses first pitch ahead of Rays' must-win Game 4",
+      "url": "https://www.mlb.com/news/evan-longoria-to-throw-first-pitch-at-world-series-game-4-2026",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T00:23:00Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Here's one more way 'Wild Bill' is dominating during Brewers' postseason run",
+      "url": "https://www.mlb.com/news/william-contreras-showing-mastery-of-abs-challenge-system-in-postseason",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T00:06:00Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Brewers vs. Rays World Series odds, Game 4 predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
+      "url": "https://www.cbssports.com/prediction/news/brewers-vs-rays-world-series-odds-game-4-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T22:40:38Z",
+      "summary": "Here's a look at the trading markets at Kalshi for World Series Game 4 as the Tampa Bay Rays host the Milwaukee Brewers in World Series Game 4",
+      "author": "James Holliman",
+      "image_url": "https://sportshub.cbsistatic.com/i/2025/07/22/a594e72b-49e5-4ca9-8d82-a96a092ea054/jackson-chourio-brewers.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Game 4 Brewers vs. Rays MLB picks: Expect Tampa Bay to show pulse Tuesday on verge of being swept at home",
+      "url": "https://www.cbssports.com/betting/news/game-4-brewers-vs-rays-mlb-picks-expect-tampa-bay-to-show-pulse-tuesday-on-verge-of-being-swept-at-home/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T22:30:47Z",
+      "summary": "Can the Rays avoid a sweep at home tonight vs. the Brewers in the 2026 World Series?",
+      "author": "Matt Severance",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/06/22/1878cf49-ac13-4ea9-a42c-b90968e53258/brewers.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
     {
       "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Rays World Series Game 4, Pistons-Knicks",
       "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-brewers-rays-world-series-game-4-pistons-knicks/",
@@ -51,17 +106,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Brewers-Rays World Series Game 4 lineups, FAQ (8 ET, FOX/FOX One)",
-      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-4-starting-lineups-and-pitching-matchup",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T20:55:00Z",
-      "summary": "",
-      "author": "Anthony Castrovince, Adam Berry, Adam McCalvy",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Today's top games to watch, best bets, odds: Brewers at Rays World Series Game 4, Blazers at Lakers and more",
       "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-at-rays-world-series-game-4-blazers-at-lakers-and-more/",
       "publisher": "CBS Sports",
@@ -73,11 +117,11 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Vote tonight for the World Series MVP Award",
+      "title": "VOTE NOW for the World Series MVP Award",
       "url": "https://www.mlb.com/postseason/mvp-vote?affiliateID=ws_mvp_vote_digital_2026",
       "publisher": "MLB.com",
       "published_at": "2026-10-27T16:41:34Z",
-      "summary": "Who should be the 2026 Willie Mays MLB World Series Most Valuable Player? Voting starts during the 6th inning and remains open until the end of the game.",
+      "summary": "Who should be the 2026 Willie Mays MLB World Series Most Valuable Player? Voting is underway and will remain open until the end of the game.",
       "author": "",
       "image_url": "",
       "kind": "Reporting",
@@ -93,17 +137,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/01ace6ca-00c5-4061-bb2e-0dad6125edaf/contreras-chourio-getty.png",
       "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Here's one more way 'Wild Bill' is dominating during Brewers' postseason run",
-      "url": "https://www.mlb.com/news/william-contreras-showing-mastery-of-abs-challenge-system-in-postseason",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T15:03:22Z",
-      "summary": "",
-      "author": "Max Ralph",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "How the Rays were broken by the merciless Brewers, who are on the verge of a World Series sweep",
@@ -227,17 +260,6 @@
       "image_credit": ""
     },
     {
-      "title": "Longoria tapped for first pitch ahead of Rays' must-win Game 4",
-      "url": "https://www.mlb.com/news/evan-longoria-to-throw-first-pitch-at-world-series-game-4-2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T05:24:24Z",
-      "summary": "",
-      "author": "Adam Berry",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "With historic romp, unrelenting Crew just 1 win from 1st World Series title",
       "url": "https://www.mlb.com/news/brewers-win-world-series-game-3-2026",
       "publisher": "MLB.com",
@@ -322,28 +344,6 @@
       "summary": "Peralta, starting for Tampa in a must-win World Series Game 3, has been dominant since a midseason trade",
       "author": "Mike Axisa",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/57f549ac-d816-49ea-8961-b30971a0be17/freddy-peralta-getty.png",
-      "kind": "Analysis",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Giants among NFL's biggest Week 7 winners; today's rare Sports Equinox with World Series, MNF, WNBA Finals",
-      "url": "https://www.cbssports.com/nfl/news/giants-among-nfls-biggest-week-7-winners-todays-rare-sports-equinox-with-world-series-mnf-wnba-finals/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-26T12:56:38Z",
-      "summary": "Plus highlights from UFC 333, another chaotic weekend of college football and blockbuster NHL trade",
-      "author": "Carter Bahns",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/26/a55dbc41-553a-4ba7-bc6b-de85c9dc699b/untitled-design-2026-10-25t224644-396.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Three biggest questions for World Series Game 3: Can the Rays get off the mat at home?",
-      "url": "https://www.cbssports.com/mlb/news/three-biggest-questions-world-series-game-3-rays-brewers/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-26T12:33:55Z",
-      "summary": "The Brewers hold a 2-0 lead after two one-run wins at home, but now the series shifts to St. Petersburg",
-      "author": "Mike Axisa",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/042d3910-65c9-459f-b1ef-32f0d72d9a31/yandy-getty.png",
       "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
     }
