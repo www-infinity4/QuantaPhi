@@ -1,3 +1,4 @@
+import {mountQuickCardApkBridge} from './quick-card-apk-bridge.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-foxone1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
@@ -83,6 +84,8 @@ function mountDetail(){
  document.title=card.name+' · Infinity Quick Card';
  host.append(el('p','iqc-kind','INFINITY 2026® · SOURCE EXPERIENCE'),createCardArtwork(card),el('h1','',card.name),el('h2','',card.feature));
  const tools=el('div','iqc-tools');mountCardTools(tools,card);host.append(tools);
+ host.dataset.quickCardId=card.id;host.dataset.cardTitle=card.name;
+ mountQuickCardApkBridge(host);
  const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
  const about=el('section','iqc-feature');about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));host.append(about);
  installBubble(card);
