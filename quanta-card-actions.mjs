@@ -127,16 +127,20 @@ export function mountCardActions(host,card,options={}){
    window.open(destination,'_blank','noopener,noreferrer');
   });
   bar.append(search);
- }else if(options.showSearch!==false){
-  // This is a real original-source handoff, not a pretend search result.
+
+ }
+ // Provider search is optional; the real source read must work on every
+ // source-backed card, including cards with an official provider search.
+ if(options.showSearch!==false){
   let source=null;
-  try{const u=new URL(card.official||card.website||card.url||'',location.origin);
+  try{
+   const u=new URL(card.official||card.website||card.url||'',location.origin);
    if(u.protocol==='https:'&&u.origin!==location.origin&&!u.username&&!u.password)source=u.href;
   }catch{}
   if(source){
    const open=element('a','qca-button qca-source','↗ Open original website');
-
-   // User-triggered public TinyFetch. Never show a fake Google fallback.
+   open.href=source;open.target='_blank';open.rel='noopener noreferrer';
+   controls.append(open);
    const read=b('⌕ Live card source',async()=>{
     read.disabled=true;notify(status,'Reading this source with TinyFish…');
     let detail=bar.querySelector('.qca-live-source');
@@ -144,12 +148,12 @@ export function mountCardActions(host,card,options={}){
     try{
      const result=await readTinyfishCardSource(source);
      detail.textContent=result.text||'The source returned no readable text.';
-     notify(status,'TinyFish live source checked. Read-only, with source evidence; no checkout or sign-in.');
-    }catch{detail.textContent='Live source unavailable. You can open the original site instead.';
-     notify(status,'TinyFish did not return a verified read.');}
-    finally{read.disabled=false;}
+     notify(status,'TinyFish source checked at '+(result.observedAt||'verified time unavailable')+'. Read-only; no checkout or sign-in.');
+    }catch{
+     detail.textContent='Live source unavailable. You can open the original site instead.';
+     notify(status,'TinyFish did not return a verified read.');
+    }finally{read.disabled=false;}
    });
-   open.href=source;open.target='_blank';open.rel='noopener noreferrer';controls.append(open);
   }
  }
  bar.append(controls);bar.append(status);host.append(bar);return bar;
