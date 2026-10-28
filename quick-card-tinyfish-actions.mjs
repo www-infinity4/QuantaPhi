@@ -16,6 +16,8 @@ export function browserStatus(job){
  if(!job)return 'Choose a website action.';
  if(job.state==='working')return 'Browser running. Check results in a moment.';
  if(job.state==='dispatch_uncertain')return 'The browser request is uncertain. Recover this request before starting another.';
+ if(job.state==='completed_source_read')return 'TinyFish public-source lookup complete. '+String(job.report?.summary||'Review the original links.');
+ if(job.state==='unverified_source_read')return 'TinyFish returned no matching verified-site links. Open the original website to review.';
  if(job.state==='completed_browser_read')return job.report?.blocker?
   'Website action blocked: '+job.report.blocker:'Read completed. '+String(job.report?.summary||'See the original source links below.');
  if(job.state==='failed')return 'Website action failed: '+String(job.error||'Unknown error');
@@ -90,7 +92,7 @@ export function mountQuickCardTinyfishTools(host,card){
   box.append(node('p','Website action links are being checked. You can visit the official website below.','iac-status'));
   host.append(box);return {box};
  }
- const assist=node('details',undefined,'iac-assist'),summary=node('summary','Read this website with Bubbles');
+ const assist=node('details',undefined,'iac-assist'),summary=node('summary','Read public website with TinyFish · Bubbles owner');
  const actions=node('div',undefined,'iac-website-actions');
  const status=node('p','Choose an action to request a website read.','iac-status');status.setAttribute('role','status');
  const result=node('div',undefined,'iac-results'),check=node('button','Check results','iac-check');check.type='button';check.hidden=true;
@@ -105,7 +107,7 @@ export function mountQuickCardTinyfishTools(host,card){
  function render(){
   const job=session.job;status.textContent=browserStatus(job);result.replaceChildren();refresh();
   if(job?.jobId){const receipt=node('small','Receipt '+job.jobId,'iac-receipt');result.append(receipt)}
-  if(job?.state!=='completed_browser_read')return;
+  if(!['completed_browser_read','completed_source_read'].includes(job?.state))return;
   for(const item of job.report?.items||[]){
    const row=node('div',undefined,'iac-result');row.append(node('strong',String(item.name||'Source result')));
    if(item.price)row.append(node('span',String(item.price)+' · observed on source'));
@@ -129,12 +131,14 @@ export function mountQuickCardTinyfishTools(host,card){
   const button=node('button',action.label,'iac-web-action');button.type='button';button.dataset.websiteAction=action.id;
   button.dataset.websiteDestination=action.url;button.setAttribute('aria-label',action.label+' on '+card.name);
   button.addEventListener('click',async()=>{
-   status.textContent='Opening the website through Bubbles…';buttons.forEach(b=>b.disabled=true);
+   status.textContent='Requesting a read-only public website lookup…';buttons.forEach(b=>b.disabled=true);
    try{
     const auth=await ownerHeaders();if(!auth?.Authorization)throw Error('Owner session required');
     const capabilities=await callCardBrowser({action:'capabilities'},{headers:async()=>auth});
     if(capabilities.configured!==true){const e=Error('tinyfish_backend_not_configured');e.responseReceived=true;throw e;}
     const advertised=capabilities.supported?.find(x=>x.id===card.id);
+    if(capabilities.brokerSourceReads&&!capabilities.browserNavigationConfigured)
+     status.textContent='Reading public page data via TinyFish. No site login or button clicks.';
     if(!advertised?.actions?.includes(action.id))throw Error('This website action is not available yet.');
     await session.start(action.id);render();
    }catch(error){explain(error)}

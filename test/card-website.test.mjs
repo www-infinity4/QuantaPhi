@@ -89,3 +89,16 @@ test('client rejects forged successful results and keeps source errors distinct'
  await assert.rejects(readCardWebsite('starmaker','search','duets',{fetcher:async()=>Response.json({ok:true,provider:'OpenAI',items:[]})}),/verified/);
  await assert.rejects(readCardWebsite('chatgpt','message','test',{fetcher:async()=>Response.json({ok:false,error:'provider_session_required'},{status:409})}),/No message was sent/);
 });
+
+test('the merged Brain transport reaches the typed provider route and rejects arbitrary private destinations',async()=>{
+ const e=env();let calls=0;
+ const target='https://frame.work/marketplace/parts';
+ const options={path:'/internal/tinyfish',headers:{'X-Tinyfish-Bridge-Token':secret}};
+ const fetcher=async(url,init)=>{calls++;assert.equal(url,'https://api.fetch.tinyfish.ai');assert.deepEqual(JSON.parse(init.body).urls,[target]);
+  return Response.json({results:[{url:target,title:'Parts source',text:'Observed parts text'}],errors:[]});};
+ const response=await handleCardWebsite(request({operation:'fetch',url:target},options),e,{fetcher});
+ const d=await response.json();assert.equal(response.status,200);assert.equal(d.provider,'TinyFish');assert.equal(d.operation,'fetch');
+ assert.equal(d.receipt.sourceReadVerified,true);assert.equal(d.data.results[0].text,'Observed parts text');
+ const denied=await handleCardWebsite(request({operation:'fetch',url:'https://example.com/unregistered'},options),e,{fetcher});
+ assert.equal(denied.status,400);assert.equal(calls,1);
+});

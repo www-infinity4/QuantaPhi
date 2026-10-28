@@ -1,4 +1,4 @@
-import {tinyfishCard} from '../../tinyfish-card-catalog.mjs';
+import {tinyfishCard,TINYFISH_CARDS} from '../../tinyfish-card-catalog.mjs';
 import {authorized} from './bridge-auth.mjs';
 
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org']);
@@ -83,7 +83,9 @@ export async function websiteQuota(request,env,{internal=false,now=Date.now()}={
  await env.WORK_DB.prepare('DELETE FROM card_website_quota WHERE expires<?').bind(now).run();
 }
 export async function handleCardWebsite(request,env,{fetcher=fetch,now=Date.now}={}){
- const path=new URL(request.url).pathname,internal=path==='/internal/cards/website';
+ const path=new URL(request.url).pathname;
+ if(path==='/internal/tinyfish')return legacyBrainRead(request,env,{fetcher,now});
+ const internal=path==='/internal/cards/website';
  if(path!=='/v1/cards/website'&&!internal)return null;
  if(internal){if(!authorized(request,env))return reply(request,{ok:false,error:'unauthorized'},401)}
  else if(!ORIGINS.has(request.headers.get('Origin')))return reply(request,{ok:false,error:'origin_not_allowed'},403);
@@ -111,4 +113,36 @@ export async function handleCardWebsite(request,env,{fetcher=fetch,now=Date.now}
    sourceUrl:plan.url,observedAt:new Date(now()).toISOString(),items,
    receipt:{id:crypto.randomUUID(),state:items.length?'source_read':'no_matches',accountAccessed:false,messageSent:false}});
  }catch(error){return reply(request,{ok:false,error:['login_required','bot_blocked','page_not_found','timeout','source_not_readable'].includes(error.message)?error.message:'tinyfish_unavailable'},502)}
+}
+
+// Preserve the existing merged Brain transport while applying the same trusted
+// destination registry, actual Fetch validation and durable quota as public cards.
+async function legacyBrainRead(request,env,options){
+ if(!authorized(request,env))return reply(request,{ok:false,error:'unauthorized'},401);
+ if(request.method!=='POST')return reply(request,{ok:false,error:'method_not_allowed'},405);
+ if(!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json'))return reply(request,{ok:false,error:'content_type_required'},415);
+ let body,plan;
+ try{
+  body=await boundedJson(request,2048);
+  if(!body||typeof body!=='object'||Array.isArray(body)||Object.keys(body).some(k=>!['operation','url','query'].includes(k)))throw Error();
+  if(body.operation==='fetch'&&typeof body.url==='string'){
+   for(const card of Object.values(TINYFISH_CARDS)){
+    if(body.url===card.url){plan={cardId:card.id,action:'inspect'};break}
+    const action=card.actions?.find(a=>a.url===body.url);if(action){plan={cardId:card.id,action:action.id};break}
+   }
+   if(!plan){const match=/^https:\/\/www\.artic\.edu\/artworks\/([1-9][0-9]{0,8})$/.exec(body.url);if(match)plan={cardId:'aic-'+match[1],action:'inspect'}}
+  }else if(body.operation==='search'&&typeof body.query==='string'){
+   const match=/^([\s\S]{2,180}) site:([a-z0-9.-]+)$/i.exec(body.query.trim());
+   const card=match&&Object.values(TINYFISH_CARDS).find(c=>new URL(c.url).hostname===match[2]);
+   if(card)plan={cardId:card.id,action:'search',query:match[1].trim()};
+  }
+  if(!plan)throw Error();
+ }catch{return reply(request,{ok:false,error:'unregistered_source'},400)}
+ const forwarded=new Request('https://continuity.internal/internal/cards/website',{method:'POST',
+  headers:{'Content-Type':'application/json','X-Tinyfish-Bridge-Token':env.TINYFISH_BRIDGE_TOKEN},body:JSON.stringify(plan)});
+ const response=await handleCardWebsite(forwarded,env,options),result=await response.json();
+ if(!response.ok||result.ok!==true)return reply(request,result,response.status);
+ return reply(request,{ok:true,provider:'TinyFish',operation:body.operation,sourceUrl:result.sourceUrl,observedAt:result.observedAt,
+  data:{results:result.items.map(i=>({url:i.url,title:i.title,text:i.text,snippet:i.text}))},
+  receipt:{...result.receipt,sourceReadVerified:result.items.length>0}});
 }

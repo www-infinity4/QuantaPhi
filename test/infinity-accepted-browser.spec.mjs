@@ -36,7 +36,7 @@ test('website button performs an authenticated typed request and renders only sa
  });
  await page.goto(base+'/?card=durable-framework-computers',{waitUntil:'domcontentloaded'});
  const card=page.locator('#oracleCardStage .iac-card');
- await card.getByText('Read this website with Bubbles',{exact:true}).click();
+ await card.getByText('Read public website with TinyFish · Bubbles owner',{exact:true}).click();
  await card.getByRole('button',{name:'Parts & accessories on Framework Computers',exact:true}).click();
  await expect(card.getByRole('button',{name:'Check results',exact:true})).toBeVisible();
  await expect(card.getByRole('button',{name:'Parts & accessories on Framework Computers',exact:true})).toBeDisabled();
@@ -55,9 +55,34 @@ test('missing TinyFish backend reports unavailable and never launches a run',asy
  });
  await page.goto(base+'/?card=durable-framework-computers',{waitUntil:'domcontentloaded'});
  const card=page.locator('#oracleCardStage .iac-card');
- await card.getByText('Read this website with Bubbles',{exact:true}).click();
+ await card.getByText('Read public website with TinyFish · Bubbles owner',{exact:true}).click();
  await card.getByRole('button',{name:'Parts & accessories on Framework Computers',exact:true}).click();
  await expect(card.getByRole('status').filter({hasText:'awaiting activation'})).toBeVisible();expect(starts).toBe(0);
+});
+
+test('TinyFish public-source result is labeled correctly and never displays untrusted hosts',async({page})=>{
+ let starts=0;
+ await page.route('**/robot-brain-owner.js?*',r=>r.fulfill({contentType:'application/javascript',body:'window.QuantaBrainOwner={ready:Promise.resolve({Authorization:"Bearer synthetic-owner-fixture"})};'}));
+ await page.route('**/work/quick-card-browser',async r=>{
+  const body=r.request().postDataJSON();
+  if(body.action==='start')starts++;
+  const data=body.action==='capabilities'?
+   {ok:true,configured:true,brokerSourceReads:true,browserNavigationConfigured:false,
+    supported:[{id:'durable-framework-computers',actions:['parts']}]}:
+   {ok:true,sourceRead:true,job:{jobId:'source-read-fixture',state:'completed_source_read',
+    report:{summary:'Public parts links from a TinyFish source read.',mode:'source_read',notBrowserNavigation:true,
+     items:[{name:'Original Framework parts',url:'https://frame.work/marketplace/parts',note:'Observed source link'},
+            {name:'Rejected domain',url:'https://evil.example/secret'}]}}};
+  await r.fulfill({contentType:'application/json',body:JSON.stringify(data)});
+ });
+ await page.goto(base+'/?card=durable-framework-computers',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage .iac-card');
+ await card.getByText('Read public website with TinyFish · Bubbles owner',{exact:true}).click();
+ await card.getByRole('button',{name:'Parts & accessories on Framework Computers',exact:true}).click();
+ await expect(card.getByRole('status').filter({hasText:'TinyFish public-source lookup complete'})).toBeVisible();
+ await expect(card.getByRole('link',{name:'Open original result ↗'})).toHaveAttribute('href','https://frame.work/marketplace/parts');
+ await expect(card.locator('a[href*="evil.example"]')).toHaveCount(0);
+ expect(starts).toBe(1);
 });
 
 test('all 116 accepted brands reach the carousel inventory and accepted priority opens the homepage',async({page})=>{

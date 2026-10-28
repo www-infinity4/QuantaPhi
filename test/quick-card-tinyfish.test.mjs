@@ -82,17 +82,18 @@ test('frontend has no keys or cookies and requires owner authorization',async()=
 
 test('Brain uses the coordinator binding for a public brand read without copying its provider key or dispatching an agent',async()=>{
  const s=store(),requests=[];
- const broker={TINYFISH_BRIDGE_TOKEN:'a'.repeat(64),TINYFISH_BROKER:{fetch:async request=>{
+ const broker={TINYFISH_BRIDGE_TOKEN:'a'.repeat(64),TINYFISH_BROKER:{fetch:async(input,options)=>{
+  const request=typeof input==='string'?new Request(input,options):input;
   requests.push({url:request.url,token:request.headers.get('X-Tinyfish-Bridge-Token'),body:await request.json()});
-  return Response.json({ok:true,cardId:'durable-framework-computers',action:'parts',provider:'TinyFish Fetch',
-   observedAt:'2026-10-28T04:00:00Z',receipt:{id:'public-receipt'},
-   items:[{title:'Framework parts',url:'https://frame.work/marketplace/parts',text:'Public parts source'}]});
+  return Response.json({ok:true,operation:'fetch',provider:'TinyFish',
+   observedAt:'2026-10-28T04:00:00Z',receipt:{sourceReadVerified:true},
+   data:{results:[{title:'Framework parts',url:'https://frame.work/marketplace/parts',text:'Public parts source'}]}});
  }}};
  const start={action:'start',cardId:'durable-framework-computers',kind:'parts',query:'',requestId:reqId};
  const a=await handleQuickCardBrowser(s,broker,start,()=>{throw Error('direct provider dispatch forbidden')});
- assert.equal(a.result.job.state,'completed_browser_read');assert.equal(a.result.job.report.sourceReceipt,'public-receipt');
- assert.equal(requests[0].url,'https://continuity-session-coordinator.internal/internal/cards/website');
- assert.deepEqual(requests[0].body,{cardId:'durable-framework-computers',action:'parts'});
+ assert.equal(a.result.job.state,'completed_source_read');assert.equal(a.result.job.report.notBrowserNavigation,true);
+ assert.equal(requests[0].url,'https://continuity.internal/internal/tinyfish');
+ assert.deepEqual(requests[0].body,{operation:'fetch',url:'https://frame.work/marketplace/parts'});
  assert.doesNotMatch(JSON.stringify(requests[0].body),/profile|goal|API_KEY/);
  const again=await handleQuickCardBrowser(s,broker,start);assert.equal(again.result.job.jobId,a.result.job.jobId);assert.equal(requests.length,1);
 });
@@ -100,6 +101,6 @@ test('Brain uses the coordinator binding for a public brand read without copying
 test('a coordinator refusal stays a failed read and duplicate click cannot silently dispatch another request',async()=>{
  let calls=0;const s=store(),broker={TINYFISH_BRIDGE_TOKEN:'a'.repeat(64),TINYFISH_BROKER:{fetch:async()=>{calls++;return Response.json({ok:false,error:'tinyfish_key_rejected'},{status:502})}}};
  const start={action:'start',cardId:'durable-framework-computers',kind:'parts',query:'',requestId:reqId};
- const a=await handleQuickCardBrowser(s,broker,start);assert.equal(a.result.job.state,'failed');assert.equal(a.result.error,'tinyfish_key_rejected');
+ const a=await handleQuickCardBrowser(s,broker,start);assert.equal(a.result.job.state,'dispatch_uncertain');assert.match(a.result.job.error,/broker_http_502/);
  await handleQuickCardBrowser(s,broker,start);assert.equal(calls,1);
 });

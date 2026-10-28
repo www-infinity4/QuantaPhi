@@ -7,8 +7,10 @@ const TINYFISH='https://agent.tinyfish.ai';
 const uuid=v=>/^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(v||'');
 const fail=(error,status=400)=>({httpStatus:status,result:{ok:false,error,executed:false}});
 const success=(obj,status=200)=>({httpStatus:status,result:{ok:true,...obj}});
-const configured=env=>typeof env.TINYFISH_API_KEY==='string'&&env.TINYFISH_API_KEY.length>12;
-const brokerConfigured=env=>Boolean(env.TINYFISH_BROKER?.fetch&&/^[a-f0-9]{64}$/.test(env.TINYFISH_BRIDGE_TOKEN||''));
+const directConfigured=env=>typeof env.TINYFISH_API_KEY==='string'&&env.TINYFISH_API_KEY.length>12;
+const brokerConfigured=env=>typeof env.TINYFISH_BROKER?.fetch==='function'&&
+ typeof env.TINYFISH_BRIDGE_TOKEN==='string'&&/^[a-f0-9]{64}$/.test(env.TINYFISH_BRIDGE_TOKEN);
+const configured=env=>directConfigured(env)||brokerConfigured(env);
 const profileConfigured=env=>typeof env.TINYFISH_PROFILE_ID==='string'&&/^prof_[a-zA-Z0-9]{8,80}$/.test(env.TINYFISH_PROFILE_ID);
 const summary=job=>({jobId:job.jobId,cardId:job.cardId,action:job.action,state:job.state,
  createdAt:job.createdAt,requestId:job.requestId,
@@ -43,6 +45,65 @@ async function tinyfish(env,fetcher,path,body){
  if(!r.ok){await r.body?.cancel();throw Error('tinyfish_http_'+r.status)}
  return readBoundedJson(r);
 }
+// The existing Continuity coordinator has the TinyFish read-only search/fetch
+// broker and holds the API key. Brain has a private service binding and a bridge
+// token; neither credential ever crosses to card JavaScript or GitHub.
+async function brokerRead(env,plan){
+ const operation=plan.kind==='durable'||plan.action==='inspect'?'fetch':'search';
+ const query=plan.query+' site:'+plan.expectedHost;
+ const body=operation==='fetch'?{operation,url:plan.url}:{operation,query:query.trim()};
+ const response=await env.TINYFISH_BROKER.fetch('https://continuity.internal/internal/tinyfish',{
+  method:'POST',headers:{'Content-Type':'application/json','X-Tinyfish-Bridge-Token':env.TINYFISH_BRIDGE_TOKEN},
+  body:JSON.stringify(body),signal:AbortSignal.timeout(23000)
+ });
+ if(!response.ok){await response.body?.cancel();throw Error('tinyfish_broker_http_'+response.status)}
+ const result=await readBoundedJson(response,180000);
+ if(result?.ok!==true||result.provider!=='TinyFish'||result.operation!==operation||
+    result.receipt?.sourceReadVerified!==true)throw Error('tinyfish_broker_receipt_invalid');
+ return {result,operation};
+}
+export function reportForBroker(receipt,plan){
+ // The broker's public web data is untrusted text. Accept only absolute links
+ // on the exact registered card host or one of its approved action hosts.
+ const source=receipt?.data&&typeof receipt.data==='object'?receipt.data:{};
+ const records=Array.isArray(source.results)?source.results:
+  Array.isArray(source.items)?source.items:[];
+ const expected=new Set([CARD_SITES[plan.cardId].host,
+  ...(CARD_SITES[plan.cardId].mappings||[]).map(x=>new URL(x.url).hostname)]);
+ const items=[],seen=new Set();
+ const add=(value,title='',note='',price='')=>{
+  const raw=typeof value==='string'?value:value?.url||value?.href||'';
+  let url;
+  try{url=new URL(String(raw));
+   if(url.protocol!=='https:'||url.username||url.password||url.port||
+      url.href.length>1400||!expected.has(url.hostname)||seen.has(url.href))return;
+  }catch{return}
+  seen.add(url.href);items.push({name:String(title||url.hostname).slice(0,140),
+   note:String(note||'Public source link returned by TinyFish.').slice(0,300),
+   price:price?String(price).slice(0,65):null,url:url.href});
+ };
+ for(const entry of records.slice(0,8)){
+  if(items.length>=5)break;
+  if(!entry||typeof entry!=='object')continue;
+  add(entry.url||entry.link||entry.source_url,entry.title||entry.name,entry.snippet||entry.description,entry.price);
+  for(const link of (Array.isArray(entry.links)?entry.links:[]).slice(0,5)){
+   if(items.length>=5)break;
+   add(link,entry.title||entry.name,'Link observed in the public source');
+  }
+ }
+ for(const link of (Array.isArray(source.links)?source.links:[]).slice(0,12)){
+  if(items.length>=5)break;add(link,'Official source link','Link observed in the public source');
+ }
+ // Fetch results often contain the inspected URL and a text-only extract.
+ // Only count the URL when the provider actually returned that page.
+ const excerpt=records.map(x=>typeof x?.text==='string'?x.text:
+  typeof x?.snippet==='string'?x.snippet:'').join(' ').replace(/\s+/g,' ').slice(0,600);
+ return {summary:(items.length?'TinyFish public source read returned '+items.length+' same-site link'+(items.length===1?'':'s')+'. ':
+   'TinyFish returned no same-site result links. ')+excerpt,
+  observedAt:Number.isFinite(Date.parse(receipt?.observedAt))?new Date(receipt.observedAt).toISOString():'',
+  blocker:'',items,verifiedSameSiteLinks:items.length,providerResultUnverified:true,
+  mode:'source_read',notBrowserNavigation:true};
+}
 const k=id=>'quick-card-browser:job:'+id;
 function reportFor(raw,cardId){
  // Extract a strictly bounded data summary, not arbitrary provider instructions.
@@ -70,19 +131,22 @@ function reportFor(raw,cardId){
 export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=Date.now()){
  try{validateQuickCardBrowser(body)}catch(e){return fail(e.message)}
  if(body.action==='capabilities')
-  return success({ownerOnly:true,provider:brokerConfigured(env)?'TinyFish public website reader':'TinyFish Web Agent',configured:configured(env)||brokerConfigured(env),
-   profileConfigured:profileConfigured(env),publicBrandReads:true,
+  return success({ownerOnly:true,provider:'TinyFish',configured:configured(env),
+   profileConfigured:profileConfigured(env),brokerSourceReads:brokerConfigured(env),
+   browserNavigationConfigured:directConfigured(env)&&profileConfigured(env),
+   publicBrandReads:true,
    supported:Object.entries(CARD_SITES).map(([id,info])=>({id,name:info.name,kind:info.kind,
     actions:info.kind==='durable'?info.mappings.map(x=>x.id):[]})),
-   note:'Configured means backend secret and profile settings exist, not proof of browser login or successful navigation.'});
+   note:'Source reads use the private coordinator TinyFish broker when available. This is not proof of authenticated navigation, provider login, or checkout.'});
  if(body.action==='checkout'){
   return success({handoff:cardCheckoutHandoff(body.cardId,body.productUrl),
    executed:false,output:'Merchant-hosted product/checkout link prepared. Nothing was purchased.'});
  }
  if(body.action==='start'){
   const plan=planCardBrowserAction({cardId:body.cardId,action:body.kind,query:body.query});
-  if(!configured(env)&&!brokerConfigured(env))return fail('tinyfish_backend_not_configured',503);
-  if(!brokerConfigured(env)&&plan.useProfile&&!profileConfigured(env))return fail('tinyfish_profile_not_configured',503);
+  if(!configured(env))return fail('tinyfish_backend_not_configured',503);
+  const useBroker=brokerConfigured(env)&&(!directConfigured(env)||!profileConfigured(env)||plan.kind==='durable');
+  if(!useBroker&&plan.useProfile&&!profileConfigured(env))return fail('tinyfish_profile_not_configured',503);
   const previousId=await storage.get('quick-card-browser:request:'+body.requestId);
   if(previousId){
    const previous=await storage.get(k(previousId));
@@ -101,25 +165,13 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
   await storage.put(k(job.jobId),job);
   await storage.put('quick-card-browser:request:'+body.requestId,job.jobId);
   try{
-   if(brokerConfigured(env)){
-    // Fixed public website reads through the coordinator's existing secret.
-    // Never forward a profile or turn source reading into website messaging.
-    const action=plan.kind==='durable'?plan.action:plan.query?'search':'inspect';
-    const response=await env.TINYFISH_BROKER.fetch(new Request('https://continuity-session-coordinator.internal/internal/cards/website',{
-     method:'POST',headers:{'Content-Type':'application/json','X-Tinyfish-Bridge-Token':env.TINYFISH_BRIDGE_TOKEN},
-     body:JSON.stringify({cardId:plan.cardId,action,...(plan.query?{query:plan.query}:{})}),signal:AbortSignal.timeout(24000)}));
-    const result=await readBoundedJson(response);
-    if(!response.ok||result.ok!==true){
-     job.state='failed';job.error=String(result.error||'website_read_failed').slice(0,130);await storage.put(k(job.jobId),job);
-     return {httpStatus:502,result:{ok:false,error:job.error,executed:false,job:summary(job)}};
-    }
-    if(result.cardId!==plan.cardId||!['TinyFish Fetch','TinyFish Search'].includes(result.provider)||!result.receipt?.id||!Array.isArray(result.items))throw Error('invalid_broker_result');
-    const parsed=reportFor({summary:result.items[0]?.text||'No matching public website pages.',observedAt:result.observedAt,
-     items:result.items.map(item=>({name:item.title,url:item.url,note:item.text}))},plan.cardId);
-    job.report={...parsed,provider:result.provider,sourceReceipt:result.receipt.id,accountAccessed:false};
-    job.state=parsed.verifiedSameSiteLinks?'completed_browser_read':'unverified_browser_result';
+   if(useBroker){
+    const observed=await brokerRead(env,plan);
+    job.report=reportForBroker(observed.result,plan);
+    job.state=job.report.verifiedSameSiteLinks?'completed_source_read':'unverified_source_read';
     await storage.put(k(job.jobId),job);
-    return success({job:summary(job),output:'Public website source returned through TinyFish; no account action or message was sent.'});
+    return success({job:summary(job),sourceRead:true,
+     output:'Read-only TinyFish source result stored. This did not click, sign in, buy, or automate the site.'});
    }
    const run=await tinyfish(env,fetcher,'/v1/automation/run-async',{url:plan.url,goal:cardActionGoal(plan),
     ...(plan.useProfile?{use_profile:true,profile_id:env.TINYFISH_PROFILE_ID}:{}),

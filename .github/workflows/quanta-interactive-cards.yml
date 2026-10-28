@@ -29,6 +29,7 @@ on:
       - 'workers/infinity-brain-clock/quick-card-browser*'
       - 'test/infinity-accepted*'
       - 'test/quick-card-tinyfish.test.mjs'
+      - 'test/tinyfish-broker-bridge.test.mjs'
       - 'quanta-feed-card.html'
       - 'source-quick-cards.mjs'
       - 'brand-product-cards.mjs'
@@ -111,7 +112,7 @@ jobs:
       - name: Run interactive card regression tests
         run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs
       - name: Check Infinity accepted catalog and browser action contracts
-        run: node --test test/infinity-accepted.test.mjs test/quick-card-tinyfish.test.mjs test/brain-clock.test.mjs
+        run: node --test test/infinity-accepted.test.mjs test/quick-card-tinyfish.test.mjs test/brain-clock.test.mjs test/tinyfish-broker-bridge.test.mjs
       - name: Check assimilation accessibility
         run: node --test test/assimilation-mobile-accessibility.test.mjs
       - name: Validate real-brand retail products and APK disclosure
