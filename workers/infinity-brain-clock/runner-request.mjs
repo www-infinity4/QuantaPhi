@@ -36,8 +36,14 @@ export async function submitApprovedBridgeWork({request,claims,body,submit,dispa
   let execution={status:'scheduled_fallback'};
   // A retry does not revive blocked work or redispatch an existing ticket.
   if(saved.result.startRequested)try{execution=await dispatch(ticket.id);}catch{}
+  // The Brain already returns an admission reason. Preserve safe machine-readable
+  // reason codes so the owner bridge does not reduce a concrete blocker to
+  // "job_not_dispatchable". Never forward arbitrary upstream text or secrets.
+  const receipt={status:execution?.status||'unverified'};
+  if(typeof execution?.reason==='string'&&/^[a-z][a-z0-9_]{0,79}$/.test(execution.reason))
+    receipt.reason=execution.reason;
   return {status:200,result:{ok:true,ticketId:ticket.id,repository,status:ticket.status,
-    deduplicated:saved.result.deduplicated===true,execution:{status:execution.status||'unverified'},
+    deduplicated:saved.result.deduplicated===true,execution:receipt,
     completed:false,productionVerified:false}};
 }
 
