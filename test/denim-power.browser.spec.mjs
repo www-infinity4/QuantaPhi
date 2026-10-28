@@ -42,3 +42,22 @@ test('Following carousel recognizes one-press denim actions without affecting ot
  expect(local.counts['durable-framework-computers']).toBe(3);
  expect(local.viewed['durable-framework-computers']).toBe(1);
 });
+
+test('native Power Chain carousel card can follow denim in one tap, without website clicks',async({page})=>{
+ let browserJobs=0;
+ await page.route('**/work/quick-card-browser',route=>{browserJobs++;return route.abort();});
+ await page.goto(base+'/?card=power-chain',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage .lab-quick-card');
+ await expect(card).toBeVisible({timeout:20000});
+ const power=card.locator('.lab-card-category-go');
+ await expect(power).toHaveText(/FOLLOW 6 DENIM CARDS/);
+ await power.click();
+ await expect(power).toContainText('ALL 6 DENIM CARDS FOLLOWED');
+ await expect(card.locator('.lab-card-category')).toContainText('on this device');
+ await expect(card.getByRole('link',{name:/Manage denim follows/})).toHaveAttribute('href','/design-lab/index.html#denimPower');
+ const stored=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)),STORAGE);
+ expect(stored.following).toHaveLength(6);
+ expect(browserJobs).toBe(0);
+ await page.locator('[data-oracle-feed="following"]').click();
+ await expect(page.locator('#oracleCardChooser option[value="source-levis-501-dark"]')).toHaveCount(1);
+});
