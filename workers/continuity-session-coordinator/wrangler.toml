@@ -1,0 +1,45 @@
+name = "continuity-session-coordinator"
+main = "entry.mjs"
+keep_vars = true
+compatibility_date = "2026-10-27"
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
+
+# Match deployed five-minute observer; preserve existing D1 and owner approvals.
+[triggers]
+crons = ["*/5 * * * *"]
+
+[[d1_databases]]
+binding = "WORK_DB"
+database_id = "4aa6a463-02c6-48c3-854f-a87c0ca5f41c"
+database_name = "rogers-consensus"
+
+[[services]]
+binding = "BROWSER"
+service = "bubbles-cloud-browser"
+environment = "production"
+
+[[services]]
+binding = "CONNECTIONS"
+service = "bubbles-connections"
+environment = "production"
+
+[[services]]
+binding = "SITE"
+service = "quantaphi-site"
+environment = "production"
+
+[[services]]
+binding = "TOOLS"
+service = "bubbles-tools"
+environment = "production"
+
+[[services]]
+binding = "TRAFFIC"
+service = "quantaphi-site-traffic"
+environment = "production"
+
+# Keep existing Cloudflare variables CYCLE_ENABLED and SOURCE_REVISION
+# plus the private TINYFISH_API_KEY and TINYFISH_BRIDGE_TOKEN secrets.
+# Do not put plaintext secrets or owner credentials in this file.
+[secrets]
+required = ["TINYFISH_API_KEY", "TINYFISH_BRIDGE_TOKEN"]
