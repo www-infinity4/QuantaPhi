@@ -1,5 +1,6 @@
 import {mountCardActions} from '/quanta-card-actions.mjs';
-import {makeShareButton,xShareLink} from '/quick-card-share.js?v=2';
+import {makeShareButton,xShareLink} from '/quick-card-share.js?v=3';
+import {openQuickCardPreview,normalizePreviewMode} from '/quick-card-preview.mjs';
 const host=document.getElementById('publishedQuickCard');const slug=host?.dataset.cardSlug;
 const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
 const browse=url=>{const a=el('a');a.href=url;a.dataset.siteUrl=url;a.dataset.siteTitle='Quick Card · Official website';if(typeof window.QuantaOpenSite==='function'){try{window.QuantaOpenSite(a);return}catch{}}window.open(url,'_blank','noopener,noreferrer');};
@@ -7,15 +8,18 @@ export function paintCard(container,c,{embedded=false}={}){
  if(!container||!c)return;
  const article=el('article','qcp-card');article.dataset.cardId='published-'+c.slug;
  const top=el('header','qcp-card-head');
- const badge=el('p','qcp-eyebrow','QUANTAPHI · ORIGINAL WEBSITE CARD');
+ const badge=el('p','qcp-eyebrow',String(c.interactionRequest||'').startsWith('Media Star creator:')?'MEDIA STAR · CREATOR EDITION':'QUANTAPHI · ORIGINAL WEBSITE CARD');
  const title=el('h1','',c.title),desc=el('p','qcp-desc',c.description);
  top.append(badge,title,desc);article.append(top);
  const shareBar=el('div','qcp-share-prominent');
  const shareStatus=el('p','qcp-small');shareStatus.setAttribute('role','status');shareStatus.setAttribute('aria-live','polite');
- const share=makeShareButton({url:c.cardUrl,title:c.title+' · QuantaPhi Quick Card',label:'↗ Share this card',status:shareStatus});
- const xPost=el('a','qcp-x-share','Post card to X ↗');xPost.href=xShareLink(c.cardUrl,c.title);xPost.target='_blank';xPost.rel='noopener noreferrer';
- shareBar.append(share,xPost);article.append(shareBar,shareStatus);
- if(c.image){const image=el('img','qcp-art');image.src=c.image;image.alt='Artwork supplied for '+c.title;image.loading='lazy';image.referrerPolicy='no-referrer';image.addEventListener('error',()=>image.remove());article.append(image);}
+ const share=makeShareButton({url:c.cardUrl,title:c.title+' · QuantaPhi Quick Card',image:c.image||'',description:c.description||'',label:'↗ Share this card',status:shareStatus});
+ const livePreview=el('button','qcp-preview-button','◫ Preview interactive card');
+ livePreview.type='button';livePreview.addEventListener('click',()=>openQuickCardPreview({url:c.cardUrl,title:c.title,description:c.description,image:c.image,official:c.website,previewMode:c.previewMode}));
+ if(new URLSearchParams(location.search).has('preview'))livePreview.hidden=true;
+ const xPost=el('a','qcp-x-share','Post card to X ↗');xPost.href=xShareLink(c.cardUrl,c.title,c.image||'',c.description||'');xPost.target='_blank';xPost.rel='noopener noreferrer';
+ shareBar.append(livePreview,share,xPost);article.append(shareBar,shareStatus);
+ if(c.image){const image=el('img','qcp-art');image.src=c.image;image.alt='Artwork supplied for '+c.title;image.loading='lazy';image.referrerPolicy='no-referrer';image.addEventListener('error',()=>{image.remove();article.prepend(el('p','qcp-error','Card image is unavailable. The title and actions are still usable.'));});article.append(image);}
  else article.append(el('div','qcp-brand',new URL(c.website).hostname.replace(/^www\./,'')));
  const info=el('section','qcp-interaction');
  info.append(el('h2','','Use this Quick Card'));
@@ -26,6 +30,13 @@ export function paintCard(container,c,{embedded=false}={}){
   info.append(form,el('p','qcp-small','Results come from the original website.'));
  }else if(c.kind==='video'&&c.videoId){
   const frame=el('iframe','qcp-video');frame.src='https://www.youtube-nocookie.com/embed/'+c.videoId;frame.title=c.title+' video';frame.allow='accelerometer; encrypted-media; picture-in-picture; web-share';frame.allowFullscreen=true;frame.loading='lazy';info.append(frame);
+ }else if(c.kind==='visit'&&/^https:\/\//i.test(c.website||'')&&/\.(?:mp3|wav|ogg|m4a|aac|mp4|webm|ogv)$/i.test(new URL(c.website).pathname)){
+  const isAudio=/\.(?:mp3|wav|ogg|m4a|aac)$/i.test(new URL(c.website).pathname);
+  const player=el(isAudio?'audio':'video','qcp-media');
+  player.src=c.website;player.controls=true;player.preload='none';
+  player.setAttribute('aria-label',isAudio?'Play original Media Star audio':'Play original Media Star video');
+  if(!isAudio)player.playsInline=true;
+  info.append(player,el('p','qcp-small','Playback uses the creator’s original HTTPS source. If the host blocks streaming, open the original media link.'));
  }else{
   info.append(el('p','', 'The requested interaction is recorded for Bubbles to build. This first release opens the original website; it does not pretend the advanced feature is connected.'));
  }
@@ -33,7 +44,7 @@ export function paintCard(container,c,{embedded=false}={}){
  info.append(el('h3','','Requested Bubbles interaction'),el('p','qcp-request',c.interactionRequest));
  article.append(info);
  const controls=el('div','qcp-actions');article.append(controls);
- mountCardActions(controls,{id:'published-'+c.slug,name:c.title,category:'Community Quick Card',route:'/cards/'+c.slug,website:c.website,url:c.website});
+ mountCardActions(controls,{id:'published-'+c.slug,name:c.title,category:'Community Quick Card',route:'/cards/'+c.slug,website:c.website,url:c.website,shareImage:c.image||'',shareDescription:c.description||'',previewMode:normalizePreviewMode(c.previewMode)});
  const foot=el('p','qcp-small',c.status==='approved'?'Approved for public discovery; Quant matching determines placement.':'This card is shareable by URL. Main-feed placement is pending review.');
  article.append(foot);
  const embed=el('div','qcp-embed'); const code=el('input');code.readOnly=true;code.value='<iframe title="'+c.title.replace(/"/g,'')+'" src="'+c.cardUrl+'" loading="lazy" width="100%" height="720"></iframe>';code.setAttribute('aria-label','Copy embeddable iframe HTML');
