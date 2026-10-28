@@ -202,7 +202,21 @@ jobs:
  }
  if(action==='read_repository'){
   const repo=await api(''),ref=await api('/git/ref/heads/'+encodeURIComponent(repo.default_branch));
-  return {ok:true,repository,defaultBranch:repo.default_branch,headSha:ref.object.sha};
+  const base={ok:true,repository,defaultBranch:repo.default_branch,headSha:ref.object.sha};
+  if(body.includeRoot!==true)return base;
+  // Owner-authorized read-only tree inspection. This is an exact GitHub API
+  // result, not a guessed root listing, README or private token disclosure.
+  if(!SHA.test(ref.object.sha||''))throw Error('github_head_sha_invalid');
+  const commit=await api('/git/commits/'+ref.object.sha);
+  if(!SHA.test(commit.tree?.sha||''))throw Error('github_tree_sha_invalid');
+  const root=await api('/git/trees/'+commit.tree.sha);
+  if(root.sha!==commit.tree.sha||root.truncated===true||!Array.isArray(root.tree)||root.tree.length>10000)
+   throw Error('github_root_tree_unverified');
+  const contents=root.tree.filter(entry=>['blob','tree'].includes(entry.type)&&
+    typeof entry.path==='string'&&entry.path.length<=240&&!entry.path.includes('/'))
+   .map(entry=>({name:entry.path,type:entry.type==='tree'?'dir':'file'}));
+  return {...base,contents,rootEntryCount:contents.length,rootListingVerified:true,
+   sourceUrl:'https://github.com/'+repository+'/tree/'+ref.object.sha};
  }
  if(action==='create_pr'){
   const branch=branchName(body.branch);
