@@ -2054,7 +2054,8 @@ cloudDelete.addEventListener('click',async()=>{
 });
 let panelWasOpened=false;
 function toggle(open){
- // Reopening the panel must not silently replace a chat or an unsent draft.
+ const reopening=Boolean(open)&&!showing&&panelWasOpened;
+ if(reopening&&!nativeOverlay&&!embedded)void startConversation({automatic:true});
  showing=Boolean(open);
  if(showing)panelWasOpened=true;
  panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
