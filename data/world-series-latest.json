@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-28T02:01:26.448908Z",
+  "checked_at": "2026-10-28T08:51:31.746730Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 16
+      "articles_selected": 18
     },
     {
       "publisher": "CBS Sports",
@@ -18,12 +18,199 @@
   ],
   "articles": [
     {
-      "title": "LIVE: Rays, Brewers trade runs early in Game 4 (FOX/FOX One)",
-      "url": "https://www.mlb.com/stories/game/849803",
+      "title": "'We’ve got one more day': Rays walk it off to force Game 5",
+      "url": "https://www.mlb.com/news/rays-win-world-series-game-4-2026",
       "publisher": "MLB.com",
-      "published_at": "2026-10-28T01:19:11Z",
+      "published_at": "2026-10-28T07:48:00Z",
+      "summary": "",
+      "author": "Anthony Castrovince",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Rays' 'next man up' attitude serves them well in comeback win",
+      "url": "https://www.mlb.com/news/rays-rally-in-12th-to-win-game-4-of-2026-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T07:44:44Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Placed in a tough spot, rookie lefty Drohan can't stifle Rays rally in 12th",
+      "url": "https://www.mlb.com/news/shane-drohan-allows-walk-off-in-12th-inning-of-world-series-game-4",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T07:37:15Z",
+      "summary": "",
+      "author": "Anthony DiComo",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "After fighting for their lives with 7 pitchers in Game 4, what's Rays' Game 5 plan?",
+      "url": "https://www.mlb.com/news/what-is-rays-pitching-plan-after-game-4-thriller",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T07:30:59Z",
       "summary": "",
       "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Rallying Rays join rare company by forcing Game 5 facing 3-0 deficit",
+      "url": "https://www.mlb.com/news/stats-facts-from-rays-win-2026-world-series-game-4",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T07:29:45Z",
+      "summary": "",
+      "author": "Sarah Langs",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Pratt unshaken after losing out on potential World Series-winning HR",
+      "url": "https://www.mlb.com/news/cooper-pratt-homers-12th-inning-brewers-world-series-game-4-loss-rays",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T07:21:35Z",
+      "summary": "",
+      "author": "Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Costly errors sink Brewers, but they hope Miz can provide title-winning bounceback",
+      "url": "https://www.mlb.com/news/brewers-errors-world-series-game-4-loss-rays-jacob-misiorowski",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T06:58:57Z",
+      "summary": "",
+      "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Key takeaways as Rays stay alive with thrilling Game 4 walk-off",
+      "url": "https://www.mlb.com/news/key-takeaways-from-world-series-game-4-2026",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T06:57:00Z",
+      "summary": "",
+      "author": "",
+      "image_url": "",
+      "kind": "Analysis",
+      "image_credit": ""
+    },
+    {
+      "title": "Brewers-Rays World Series Game 5 FAQ (8 ET, FOX/FOX One)",
+      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-5-starting-lineups-and-pitching-matchup",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T06:46:08Z",
+      "summary": "",
+      "author": "Anthony Castrovince, Adam Berry, Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Battle-tested 'pen proves Rays 'never out of the fight' in gritty Game 4",
+      "url": "https://www.mlb.com/news/rays-bullpen-matches-brewers-in-2026-world-series-game-4-win",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T06:28:02Z",
+      "summary": "",
+      "author": "Bryan Hoch",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "3 big questions for Game 5 with Rays starting to regain some mojo",
+      "url": "https://www.mlb.com/news/2026-world-series-game-5-storylines-brewers-rays",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T05:46:10Z",
+      "summary": "",
+      "author": "Will Leitch",
+      "image_url": "",
+      "kind": "Analysis",
+      "image_credit": ""
+    },
+    {
+      "title": "2026 MLB playoff bracket: Schedule and scores as Rays stave off World Series elimination vs. Brewers",
+      "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T05:06:39Z",
+      "summary": "The Rays walked off the Brewers in extra innings in Game 4 to avoid the sweep",
+      "author": "Kate Feldman",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/adc24fc6-adc3-420d-ba7b-0df815615212/2026-mlb-bracket-rays-alive.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Nick Martinez, bullpen save the Rays from World Series elimination, but Game 4 win merely a stay of execution",
+      "url": "https://www.cbssports.com/mlb/news/world-series-game-4-rays-bullpen-elimination-nick-martinez/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T05:04:16Z",
+      "summary": "The Rays had to use their Game 5 starter in relief in Game 4, but they got the win and for now, that's what matters",
+      "author": "Matt Snyder",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/96d77e2a-d212-46a0-96a5-4e50c685734e/martinez-getty-1.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Here's one more way 'Wild Bill' is dominating during Brewers' postseason run",
+      "url": "https://www.mlb.com/news/william-contreras-showing-mastery-of-abs-challenge-system-in-postseason",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T04:59:00Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Game 4 joins other crazy World Series finishes",
+      "url": "https://www.mlb.com/news/craziest-finishes-in-world-series-history",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T04:52:00Z",
+      "summary": "",
+      "author": "Sarah Langs, Andrew Simon and Manny Randhawa",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Teams with the best records in a postseason",
+      "url": "https://www.mlb.com/news/best-mlb-single-season-postseason-winning-percentages",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T04:47:00Z",
+      "summary": "",
+      "author": "Dylan Svoboda",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Players with best postseason performances",
+      "url": "https://www.mlb.com/news/best-playoff-performances-in-mlb-history-c296028438",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T04:35:00Z",
+      "summary": "These stars enjoyed Octobers that will never be forgotten",
+      "author": "Matt Kelly and Manny Randhawa",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Crew honors Ueck as World Series pauses for powerful Stand Up To Cancer moment",
+      "url": "https://www.mlb.com/news/stand-up-to-cancer-at-world-series-game-4-2026",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T02:38:06Z",
+      "summary": "",
+      "author": "Alyson Footer and Adam McCalvy",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -35,17 +222,6 @@
       "published_at": "2026-10-28T00:23:00Z",
       "summary": "",
       "author": "Adam Berry",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Here's one more way 'Wild Bill' is dominating during Brewers' postseason run",
-      "url": "https://www.mlb.com/news/william-contreras-showing-mastery-of-abs-challenge-system-in-postseason",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-28T00:06:00Z",
-      "summary": "",
-      "author": "Max Ralph",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -73,17 +249,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Rays World Series Game 4, Pistons-Knicks",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-brewers-rays-world-series-game-4-pistons-knicks/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T21:57:44Z",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for World Series, NBA, NFL betting on Tuesday",
-      "author": "Owen OBrien",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/09/08/8c9b2f2a-2dd9-45bb-932a-45e8faf837ef/betmgm-promo-code-september-2026.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
       "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Rays-Brewers, World Series Game 4 on Tuesday",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-rays-brewers-world-series-game-4-tuesday/",
       "publisher": "CBS Sports",
@@ -91,17 +256,6 @@
       "summary": "Sign up with the latest FanDuel promo code to get your bonus bets when you wager on Tuesday's top games",
       "author": "James Holliman",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/11/75c36b18-83fe-49ef-9757-d560099e5072/fanduel-350-promo.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Use DraftKings promo code to get $200 bonus, free NBA League Pass for Brewers-Rays, World Series Game 4, NBA",
-      "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-free-nba-league-pass-brewers-rays-world-series-game-4-nba/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T21:52:39Z",
-      "summary": "DraftKings offers $200 in bonus bets and three free months of NBA League Pass after your first $5 wager for World Series, NBA, NFL betting on Tuesday",
-      "author": "Owen OBrien",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/18/c97262f9-761a-4e09-92d0-e42eb8f40a51/draftkings-nba-league-pass-200-bonus-cbssports.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     },
@@ -115,17 +269,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/df14fc97-9be7-4e5a-adec-17903ef08f44/brewers-imagn-1.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "VOTE NOW for the World Series MVP Award",
-      "url": "https://www.mlb.com/postseason/mvp-vote?affiliateID=ws_mvp_vote_digital_2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T16:41:34Z",
-      "summary": "Who should be the 2026 Willie Mays MLB World Series Most Valuable Player? Voting is underway and will remain open until the end of the game.",
-      "author": "",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "Who's the World Series MVP frontrunner? Plus more pressing questions for Brewers vs. Rays Game 4",
@@ -150,17 +293,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "4 takeaways from Crew's Game 3 dominance",
-      "url": "https://www.mlb.com/news/key-takeaways-from-world-series-game-3-2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T14:20:00Z",
-      "summary": "",
-      "author": "Bryan Hoch",
-      "image_url": "",
-      "kind": "Analysis",
-      "image_credit": ""
-    },
-    {
       "title": "Jackson Chourio just showing off now as the face of the Brewers as Crew creeps closer to World Series title",
       "url": "https://www.cbssports.com/mlb/news/jackson-chourio-brewers-world-series-face-of-the-franchise/",
       "publisher": "CBS Sports",
@@ -168,17 +300,6 @@
       "summary": "In Game 3 on Monday, Chourio became the youngest player with a four-hit World Series game since Joe Garagiola in 1946",
       "author": "Matt Snyder",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/7433b4c9-eb4e-4d2f-8e10-c5012d90d8a4/chourio-getty-5.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "2026 MLB playoff bracket: Schedule and scores with Brewers one win away from first World Series title",
-      "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T12:53:16Z",
-      "summary": "The Brewers-Rays matchup guarantees that we'll have a first-time champion in 2026",
-      "author": "Kate Feldman",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/20/ad4b6088-a174-48fb-8be4-f78cb2b02b32/2026-mlb-bracket-brewers-rays.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     },
@@ -205,94 +326,6 @@
       "image_credit": ""
     },
     {
-      "title": "After two 1-run losses, blowout at Trop puts Rays' season on brink",
-      "url": "https://www.mlb.com/news/rays-lose-game-3-of-2026-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T06:45:00Z",
-      "summary": "",
-      "author": "Adam Berry",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "1 unprecedented inning not only way Crew rewriting Fall Classic record books",
-      "url": "https://www.mlb.com/news/stats-facts-from-brewers-win-world-series-game-3-2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T06:38:44Z",
-      "summary": "",
-      "author": "Sarah Langs",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Gasser not just unbothered, he's nearly perfect in Game 3 showcase",
-      "url": "https://www.mlb.com/news/robert-gasser-throws-six-scoreless-innings-in-world-series-game-3",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T06:15:29Z",
-      "summary": "",
-      "author": "Bryan Hoch",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "EIGHT runs with two outs in 5th? Brewers' ‘drag 'em’ approach on full display",
-      "url": "https://www.mlb.com/news/brewers-win-world-series-game-3-historic-inning",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T05:55:24Z",
-      "summary": "",
-      "author": "Adam McCalvy",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Brewers' 8-run 5th in Game 3 a 'knife in the chest' to Rays",
-      "url": "https://www.mlb.com/news/rays-allow-eight-runs-to-brewers-in-fifth-inning-of-world-series-game-3",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T05:54:00Z",
-      "summary": "",
-      "author": "Brian Murphy",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "With historic romp, unrelenting Crew just 1 win from 1st World Series title",
-      "url": "https://www.mlb.com/news/brewers-win-world-series-game-3-2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T04:48:00Z",
-      "summary": "",
-      "author": "Anthony Castrovince",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "3 big questions for a World Series Game 4 that could seal Brewers' first title",
-      "url": "https://www.mlb.com/news/2026-world-series-game-4-storylines-brewers-rays",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T04:33:58Z",
-      "summary": "",
-      "author": "Will Leitch",
-      "image_url": "",
-      "kind": "Analysis",
-      "image_credit": ""
-    },
-    {
-      "title": "From crab claws to tomahawks, World Series fans can get fancy at the Trop",
-      "url": "https://www.mlb.com/news/rays-unveil-world-series-food-options-at-tropicana-field",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-27T01:44:38Z",
-      "summary": "",
-      "author": "MLB.com",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Brewers vs. Rays World Series Game 3 picks: Freddy Peralta faces former club at crucial point in series",
       "url": "https://www.cbssports.com/betting/news/brewers-vs-rays-world-series-game-3-picks-freddy-peralta-faces-former-club-at-crucial-point-in-series/",
       "publisher": "CBS Sports",
@@ -304,17 +337,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Former Ray -- and 2020 World Series hero -- gives back to cause near and dear to him",
-      "url": "https://www.mlb.com/news/mlb-rays-partner-on-boys-and-girls-club-event-in-tampa-bay",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-26T20:39:24Z",
-      "summary": "",
-      "author": "CJ Haddad",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Today's top games to watch, best bets, odds: Brewers vs. Rays World Series Game 3, Cowboys vs. Eagles MNF",
       "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-vs-rays-world-series-game-3-cowboys-vs-eagles-mnf/",
       "publisher": "CBS Sports",
@@ -323,28 +345,6 @@
       "author": "Gene Menez",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/20/e0d2033a-c06f-4b36-94a0-5353321e822a/peralta-imagn.png",
       "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Brewers prep for potential 'roof ball' as World Series shifts to Tropicana Field",
-      "url": "https://www.mlb.com/news/brewers-practice-plays-off-tropicana-field-roof",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-26T14:52:48Z",
-      "summary": "",
-      "author": "Max Ralph",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "How the Rays fixed Freddy Peralta: The changes that propelled him back to ace form after ugly Mets stint",
-      "url": "https://www.cbssports.com/mlb/news/how-rays-fixed-freddy-peralta-changes-propelled-him-back-to-ace-form/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-26T14:35:42Z",
-      "summary": "Peralta, starting for Tampa in a must-win World Series Game 3, has been dominant since a midseason trade",
-      "author": "Mike Axisa",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/57f549ac-d816-49ea-8961-b30971a0be17/freddy-peralta-getty.png",
-      "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
     }
   ],
