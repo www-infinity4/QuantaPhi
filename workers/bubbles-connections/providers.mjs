@@ -83,6 +83,9 @@ export function googleAdapter(config, request = (...args)=>globalThis.fetch(...a
       if (typeof identity.sub !== 'string' || !identity.sub) throw Error('provider_identity_invalid');
       const scopes = new Set(String(value.scope || '').split(/\s+/));
       return {...tokens, subject:identity.sub,
+        verifiedEmail:identity.email_verified===true&&typeof identity.email==='string'&&
+          /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(identity.email)&&identity.email.length<=254
+          ?identity.email.toLowerCase():null,
         label:identity.email_verified === true ? String(identity.email || identity.sub) : identity.sub,
         grantedActions:actions.filter(a => scopes.has(GOOGLE_SCOPES[a]))};
     }
