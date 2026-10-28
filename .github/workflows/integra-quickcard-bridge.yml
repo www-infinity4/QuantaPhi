@@ -1,5 +1,7 @@
 name: Integra X and Bubbles Card APK bridge
 on:
+  push:
+    branches: ['feat/quickcard-bubbles-install-bridge-20261025']
   pull_request:
     paths:
       - 'quick-card-apk-bridge.mjs'
@@ -47,3 +49,25 @@ jobs:
             grep -q 'quick-card-apk-bridge.mjs' "$page"
             grep -q 'quick-card-apk-bridge.css' "$page"
           done
+  android-compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Ensure Android API 35 platform is installed
+        run: |
+          set -e
+          SDK="${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}"
+          echo "ANDROID_HOME=$SDK" >> "$GITHUB_ENV"
+          TOOL="$(find "$SDK/cmdline-tools" -name sdkmanager -type f | head -n 1)"
+          test -n "$TOOL"
+          "$TOOL" "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Compile Android card deep-link receiver and overlay
+        working-directory: android/bubbles-overlay
+        run: gradle --no-daemon :app:compileDebugJavaWithJavac
