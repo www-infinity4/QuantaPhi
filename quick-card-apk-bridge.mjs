@@ -32,12 +32,24 @@ export function verifiedApkUrl(releases){
   return url.href;
  }catch{return null;}
 }
+// Android card VIEW links exist only in APK 0.59.0+; older preview APKs
+// cannot receive them. Never advertise a broken native button before the
+// verified release feed names the same compatible, versioned APK asset.
+export function releasedCardLinkReady(releases){
+ const href=verifiedApkUrl(releases), version=releases?.bubbles?.version;
+ if(!href||typeof version!=='string'||!/^[0-9]+\\.[0-9]+\\.[0-9]+$/.test(version))return false;
+ const matched=new URL(href).pathname.match(/Bubbles-v([0-9]+\\.[0-9]+\\.[0-9]+)-Preview5-Android12\\.apk$/);
+ if(!matched||matched[1]!==version)return false;
+ const [major,minor]=version.split('.').map(Number);
+ return major>0 || (major===0 && minor>=59);
+}
 async function lookupApk(){
  try{
   const response=await fetch('/api/apk-releases',{cache:'no-store',credentials:'same-origin'});
   if(!response.ok)throw Error('Unverified');
-  return verifiedApkUrl(await response.json());
- }catch{return null;}
+  const releases=await response.json();
+  return {href:verifiedApkUrl(releases),nativeReady:releasedCardLinkReady(releases)};
+ }catch{return {href:null,nativeReady:false};}
 }
 function makeLink(text,href,styleClass){
  const a=document.createElement('a');a.className=styleClass;a.textContent=text;
@@ -58,19 +70,20 @@ export function mountQuickCardApkBridge(root,apkPromise){
  install.className='bubbles-card-install-status';
  install.textContent='Checking verified APK…';
  install.setAttribute('role','status');
- // This is a user-tapped Android VIEW deep link, not a silent install.
- // Browser users retain the Open Bubbles web fallback even without an APK.
- if(typeof navigator!=='undefined'&&/Android/i.test(navigator.userAgent||'')){
-  const native=makeLink('Open in Bubbles APK',bubblesNativeCardUrl(card.id),'bubbles-card-native');
-  native.title='Open the installed Bubbles Android overlay. Bubbles must already be running.';
-  wrapper.append(native);
- }
+ // The web chat remains available until a compatible APK is published.
  wrapper.append(open,install);
  const toolbar=root.querySelector('.qca-controls, .iqc-actions, .premium-actions');
  if(toolbar)toolbar.append(wrapper);
  else root.append(wrapper);
- Promise.resolve(apkPromise).then(href=>{
+ Promise.resolve(apkPromise).then(release=>{
   if(!root.isConnected)return;
+  const href=typeof release==='string'?release:release?.href;
+  if(release?.nativeReady&&typeof navigator!=='undefined'&&/Android/i.test(navigator.userAgent||'')){
+   // Explicit Android VIEW tap only; never a permission or recording command.
+   const native=makeLink('Open in Bubbles APK',bubblesNativeCardUrl(card.id),'bubbles-card-native');
+   native.title='Requires installed Bubbles APK 0.59.0 or newer, already running.';
+   wrapper.prepend(native);
+  }
   if(!href){install.textContent='APK unavailable · security check';return;}
   const a=makeLink('Install Bubbles APK',href,'bubbles-card-install');
   a.setAttribute('download','');
