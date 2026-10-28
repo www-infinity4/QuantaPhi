@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-28T15:43:52.281863Z",
+  "checked_at": "2026-10-28T20:46:29.204295Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 19
+      "articles_selected": 21
     },
     {
       "publisher": "CBS Sports",
@@ -18,14 +18,124 @@
   ],
   "articles": [
     {
-      "title": "Biggest questions for World Series Game 5: Where will Rays turn to avoid elimination (again)?",
+      "title": "Brewers-Rays World Series Game 5 lineups, FAQ (8 ET, FOX/FOX One)",
+      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-5-starting-lineups-and-pitching-matchup",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T20:35:00Z",
+      "summary": "",
+      "author": "Anthony Castrovince, Adam Berry, Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Use FanDuel promo code to get $150 bonus bets by targeting World Series Game 5, NBA, Pacers-76ers on Wednesday",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-150-bonus-bets-world-series-game-5-nba-pacers-76ers-wednesday/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T20:29:30Z",
+      "summary": "Sign up with the latest FanDuel promo code to get your bonus bets when you wager on Wednesday's top games",
+      "author": "Brandon Gustafson",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/c761778d-1215-4e46-9ff6-468f4f7e08e2/fanduel-150-promo.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Biggest questions for World Series Game 5: How will the Rays get enough innings to avoid elimination (again)?",
       "url": "https://www.cbssports.com/mlb/news/biggest-questions-world-series-game-5-rays-brewers/",
       "publisher": "CBS Sports",
-      "published_at": "2026-10-28T15:17:44Z",
-      "summary": "The Brewers will send Jacob Misiorowski to the mound as they try again for their first championship. The Rays? We'll see",
+      "published_at": "2026-10-28T20:08:16Z",
+      "summary": "The Brewers will start Jacob Misiorowski as they try again for their first championship, while the Rays turn to Drew Rasmussen on short rest",
       "author": "Dayn Perry",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/a6d2066b-663f-404d-a0e2-7a673f1678be/kevin-cash-getty-1.png",
       "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Cash was right, Caminero is playing in pivotal Game 5",
+      "url": "https://www.mlb.com/news/junior-caminero-injury-status-world-series-game-5",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T20:06:00Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Today's top games to watch, best bets, odds: Brewers vs. Rays World Series Game 5, Spurs vs. Jazz and more",
+      "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-vs-rays-world-series-game-5-spurs-vs-jazz-and-more/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T19:34:50Z",
+      "summary": "Find best bets and props for the biggest games in sports on Wednesday from the SportsLine Projection Model and top CBS Sports experts",
+      "author": "Scott Erskine",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/08/20/18a863a5-e179-42fb-bec6-6c0b5b004088/jacob-misiorowski-cbs.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Brewers vs. Rays odds, World Series Game 5 predictions: Use best Kalshi promo code CBSSPORTS55 for $55 bonus",
+      "url": "https://www.cbssports.com/prediction/news/brewers-vs-rays-odds-world-series-game-5-predictions-use-best-kalshi-promo-code-cbssports55-55-bonus/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T19:19:01Z",
+      "summary": "Here's a look at the trading markets at Kalshi for World Series Game 5 as the Tampa Bay Rays host the Milwaukee Brewers with their season on the line",
+      "author": "Brandon Gustafson",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/b34822d9-f13e-43c8-b3d1-761f0d1b48fd/brewers-imagn-1.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Rasmussen, on 3 days’ rest, gets Game 5 nod",
+      "url": "https://www.mlb.com/news/drew-rasmussen-2026-world-series-game-5-start",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T19:11:49Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "3 big questions for Game 5 with Rays starting to regain some mojo",
+      "url": "https://www.mlb.com/news/2026-world-series-game-5-storylines-brewers-rays",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T19:10:00Z",
+      "summary": "",
+      "author": "Will Leitch",
+      "image_url": "",
+      "kind": "Analysis",
+      "image_credit": ""
+    },
+    {
+      "title": "Brewers vs. Rays World Series Game 5 most-wagered player props: Bettors on Jacob Misiorowski to strike out 5",
+      "url": "https://www.cbssports.com/mlb/news/brewers-vs-rays-world-series-game-5-most-wagered-player-props-bettors-on-jacob-misiorowski-to-strike-out-5/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T18:16:09Z",
+      "summary": "Jacob Misiorowski leads all action on player props for World Series Game 5 on Wednesday",
+      "author": "Matt Severance",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/af71a311-93bf-4540-86d6-6d52ed0e2f29/jacob-misiorowski-milwaukee-brewers-imagn-images.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "With parallels to '04 Red Sox, here's the Rays' path to their own historic comeback",
+      "url": "https://www.mlb.com/news/how-rays-might-pull-off-world-series-history",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-28T16:56:40Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Yankees legend Jorge Posada reveals rift with team: 'I don't feel welcome when I go there'",
+      "url": "https://www.cbssports.com/mlb/news/yankees-legend-jorge-posada-rift-with-team-dont-feel-welcome/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T16:37:21Z",
+      "summary": "The Yankees' stalwart catcher during the Joe Torre dynasty years won four World Series rings in New York",
+      "author": "Dayn Perry",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/c1aa6667-c427-452a-84f4-f31a1ca26ae9/jorge-posada-getty.png",
+      "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     },
     {
@@ -40,7 +150,7 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Key takeaways as Rays stay alive with thrilling Game 4 walk-off",
+      "title": "4 takeaways from a thrilling Game 4",
       "url": "https://www.mlb.com/news/key-takeaways-from-world-series-game-4-2026",
       "publisher": "MLB.com",
       "published_at": "2026-10-28T15:00:00Z",
@@ -48,50 +158,6 @@
       "author": "",
       "image_url": "",
       "kind": "Analysis",
-      "image_credit": ""
-    },
-    {
-      "title": "Use DraftKings promo code to get $200 bonus, free NBA League Pass for Brewers-Rays, World Series Game 5, NBA",
-      "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-free-nba-league-pass-brewers-rays-world-series-game-5-nba/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T14:57:48Z",
-      "summary": "DraftKings offers $200 in bonus bets and three free months of NBA League Pass after your first $5 wager for World Series, NBA, NFL betting on Wednesday",
-      "author": "Owen OBrien",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/18/c97262f9-761a-4e09-92d0-e42eb8f40a51/draftkings-nba-league-pass-200-bonus-cbssports.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Rays World Series Game 5, 76ers-Pacers",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-brewers-rays-world-series-game-5-76ers-pacers/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T14:56:23Z",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for World Series, NBA, NFL betting on Wednesday",
-      "author": "Owen OBrien",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/09/08/8c9b2f2a-2dd9-45bb-932a-45e8faf837ef/betmgm-promo-code-september-2026.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Use FanDuel promo code to get $150 bonus bets by targeting World Series Game 5, NBA, 76ers-Pacers on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-150-bonus-bets-world-series-game-5-nba-76ers-pacers-wednesday/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T14:54:02Z",
-      "summary": "Sign up with the latest FanDuel promo code to get your bonus bets when you wager on Wednesday's top games",
-      "author": "Brandon Gustafson",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/c761778d-1215-4e46-9ff6-468f4f7e08e2/fanduel-150-promo.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Caminero expected to be fine despite exiting Game 4 with apparent injury",
-      "url": "https://www.mlb.com/news/junior-caminero-injury-status-world-series-game-5",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-28T13:59:28Z",
-      "summary": "",
-      "author": "Max Ralph",
-      "image_url": "",
-      "kind": "Reporting",
       "image_credit": ""
     },
     {
@@ -139,17 +205,6 @@
       "image_credit": ""
     },
     {
-      "title": "After fighting for their lives with 7 pitchers in Game 4, what's Rays' Game 5 plan?",
-      "url": "https://www.mlb.com/news/what-is-rays-pitching-plan-after-game-4-thriller",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-28T07:30:59Z",
-      "summary": "",
-      "author": "",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Rallying Rays join rare company by forcing Game 5 facing 3-0 deficit",
       "url": "https://www.mlb.com/news/stats-facts-from-rays-win-2026-world-series-game-4",
       "publisher": "MLB.com",
@@ -183,17 +238,6 @@
       "image_credit": ""
     },
     {
-      "title": "Brewers-Rays World Series Game 5 FAQ (8 ET, FOX/FOX One)",
-      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-5-starting-lineups-and-pitching-matchup",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-28T06:46:08Z",
-      "summary": "",
-      "author": "Anthony Castrovince, Adam Berry, Adam McCalvy",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Battle-tested 'pen proves Rays 'never out of the fight' in gritty Game 4",
       "url": "https://www.mlb.com/news/rays-bullpen-matches-brewers-in-2026-world-series-game-4-win",
       "publisher": "MLB.com",
@@ -202,17 +246,6 @@
       "author": "Bryan Hoch",
       "image_url": "",
       "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "3 big questions for Game 5 with Rays starting to regain some mojo",
-      "url": "https://www.mlb.com/news/2026-world-series-game-5-storylines-brewers-rays",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-28T05:46:10Z",
-      "summary": "",
-      "author": "Will Leitch",
-      "image_url": "",
-      "kind": "Analysis",
       "image_credit": ""
     },
     {
@@ -311,39 +344,6 @@
       "summary": "Here's a look at the trading markets at Kalshi for World Series Game 4 as the Tampa Bay Rays host the Milwaukee Brewers in World Series Game 4",
       "author": "James Holliman",
       "image_url": "https://sportshub.cbsistatic.com/i/2025/07/22/a594e72b-49e5-4ca9-8d82-a96a092ea054/jackson-chourio-brewers.png",
-      "kind": "Analysis",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Game 4 Brewers vs. Rays MLB picks: Expect Tampa Bay to show pulse Tuesday on verge of being swept at home",
-      "url": "https://www.cbssports.com/betting/news/game-4-brewers-vs-rays-mlb-picks-expect-tampa-bay-to-show-pulse-tuesday-on-verge-of-being-swept-at-home/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T22:30:47Z",
-      "summary": "Can the Rays avoid a sweep at home tonight vs. the Brewers in the 2026 World Series?",
-      "author": "Matt Severance",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/06/22/1878cf49-ac13-4ea9-a42c-b90968e53258/brewers.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Today's top games to watch, best bets, odds: Brewers at Rays World Series Game 4, Blazers at Lakers and more",
-      "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-at-rays-world-series-game-4-blazers-at-lakers-and-more/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T19:30:52Z",
-      "summary": "Find best bets and props for the biggest games in sports on Tuesday from the SportsLine Projection Model and top CBS Sports experts",
-      "author": "Gene Menez",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/df14fc97-9be7-4e5a-adec-17903ef08f44/brewers-imagn-1.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Who's the World Series MVP frontrunner? Plus more pressing questions for Brewers vs. Rays Game 4",
-      "url": "https://www.cbssports.com/mlb/news/world-series-mvp-pressing-questions-brewers-rays-game-4/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T15:57:00Z",
-      "summary": "The Brewers are going for a sweep and their first World Series championship on Tuesday night",
-      "author": "Dayn Perry",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/01ace6ca-00c5-4061-bb2e-0dad6125edaf/contreras-chourio-getty.png",
       "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
     }
