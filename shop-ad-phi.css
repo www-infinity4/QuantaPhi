@@ -115,3 +115,10 @@ body.shopphi-sell-page .shopphi-header a{color:#214f73;text-decoration:none;font
 }
 #shopAdPhi .sap-form>label:has(input[type=checkbox]) span{flex:1}
 #shopAdPhi .sap-feature .sap-actions button{min-height:48px}
+
+/* Recover actual phone-local ShopPhi drafts without publishing by accident. */
+#shopAdPhi .sap-saved-publish-consent{margin:14px 0;padding:15px;border-radius:13px;border:1px solid #aac5d5;background:#eff7fc;color:#173c55;display:grid;gap:11px}
+#shopAdPhi .sap-saved-publish-consent>strong{font-size:15px}
+#shopAdPhi .sap-saved-publish-consent>label{display:flex;align-items:center;gap:12px;min-height:45px;line-height:1.4;font-size:14px}
+#shopAdPhi .sap-saved-publish-consent input[type=checkbox]{width:23px;height:23px;flex:0 0 23px;accent-color:#15639a}
+#shopAdPhi .sap-saved-publish-consent .sap-publish-saved{min-height:50px;border-radius:11px;background:#145784;color:white;font-size:15px}

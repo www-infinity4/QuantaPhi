@@ -3,7 +3,7 @@
 const capabilities = {
   github: ['repository.read', 'repository.fork', 'repository.write'],
   cloudflare: ['account.read','projects.build','ledger.read','projects.full','owner.full'],
-  google: ['drive.read', 'drive.write', 'sheets.read', 'sheets.write', 'calendar.read', 'calendar.write'],
+  google: ['drive.read', 'drive.write', 'sheets.read', 'sheets.write', 'calendar.read', 'calendar.write', 'gmail.read'],
   ebay: ['listing.read', 'bid.place'],
   walmart: ['product.read', 'order.place'],
   ibm: ['project.read', 'project.write'],

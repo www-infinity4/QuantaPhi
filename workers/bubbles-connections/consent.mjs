@@ -193,6 +193,7 @@ export class ConsentService {
     const id = await digest(provider + ':' + value.subject), connectionKey = prefix + 'connection:' + id;
     const credentialKey = prefix + 'credential:' + id;
     const connection = {id, userId, provider, providerSubject:value.subject, label:String(value.label || value.subject),
+      verifiedEmail:provider==='google'&&typeof value.verifiedEmail==='string'?value.verifiedEmail:null,
       credentialRef:credentialKey, status:'connected', expiresAt:this.now()+value.expiresIn*1000,
       grantedActions:value.grantedActions.filter(a => record.actions.includes(a)), revision:randomToken(), updatedAt:this.now()};
     const ciphertext = await completionStep('seal',()=>this.vault.seal({accessToken:value.accessToken, refreshToken:value.refreshToken || null}, credentialKey));
