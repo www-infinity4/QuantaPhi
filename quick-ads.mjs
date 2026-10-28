@@ -8,7 +8,7 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
  const read=()=>{try{return JSON.parse(sessionStorage.getItem(KEY)||'{}')}catch{return {}}};
  const state={...read(),counts:{...(read().counts||{})},recent:[...(read().recent||[])]};
  const save=()=>{try{sessionStorage.setItem(KEY,JSON.stringify(state))}catch{}};
- let currentId='',moves=0,shown=null,closeTimer=null,seq=0,poll=null;
+ let currentId='',moves=0,shown=null,closeTimer=null,seq=0,poll=null,scoreAdSuppressedUntil=0;
  let liveState='unknown',lastFetch=0,checking=null;
  const node=document.createElement('aside');node.id='quantaQuickAd';
  node.className='qad-toast';node.hidden=true;node.setAttribute('aria-label','Quick Ad website spotlight');
@@ -72,7 +72,7 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
   save();
  }
  const onSwitch=async(detail,revision)=>{
-  if(!inGameWindow()||document.hidden||Date.now()>GAME_END)return;
+  if(!inGameWindow()||document.hidden||Date.now()>GAME_END||Date.now()<scoreAdSuppressedUntil)return;
   if(Date.now()<Number(state.dismissedUntil||0))return;
   if(Date.now()-Number(state.lastAt||0)<24000)return;
   if(Number(state.total||0)>=30)return;
@@ -82,6 +82,9 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
   const pick=chooseQuickAd(detail,state.counts,state.recent,Date.now());
   if(pick)display(pick);
  };
+ window.addEventListener('quantaphi:world-series-toast',e=>{
+  if(e.detail?.visible){scoreAdSuppressedUntil=Date.now()+14000;hide()}
+ });
  window.addEventListener('quantaphi:switchboard-change',e=>{
   const detail=e.detail;
   if(!detail?.id){currentId='';hide();return;}
