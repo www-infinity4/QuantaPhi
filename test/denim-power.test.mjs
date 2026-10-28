@@ -43,6 +43,6 @@ test('Design Lab markup exposes the category controls and honest scope',()=>{
  assert.match(html,/id="denimUnfollowAll"/);
  assert.match(html,/id="denimBrandFilter"/);
  assert.match(html,/denim-power\.mjs/);
- assert.match(html,/does not follow accounts on other websites/);
+ assert.match(html,/do not follow accounts on other websites/);
  assert.match(css,/\.dp-item/);
 });
