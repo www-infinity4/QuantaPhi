@@ -26,3 +26,11 @@
 .lab-card-shared{margin-top:9px}
 .lab-quick-card :focus-visible{outline:3px solid #cd865e;outline-offset:3px}
 @media(max-width:440px){.lab-quick-card .lab-card-art{min-height:165px}.lab-quick-card .lab-card-art h3{font-size:32px}.lab-card-disc{height:80px;width:80px}.lab-card-actions{gap:5px}.lab-card-go{padding:9px 11px}}
+
+/* Second Power action: one tap follows a whole catalog category in QuantaPhi. */
+.lab-card-category{display:grid;grid-template-columns:minmax(0,1fr);gap:7px;padding:12px;background:linear-gradient(110deg,#e6f3fc,#f8fbfd);border:1px solid #bbd5e7;border-radius:13px;min-width:0}
+.lab-card-category-go{width:100%;min-height:43px;border:1px solid #1a618d;border-radius:10px;background:#125b87;color:white;font-size:12px;font-weight:950;letter-spacing:.025em;padding:9px 12px}
+.lab-card-category-go[aria-pressed="true"]{background:#1e6f65;border-color:#1e6f65}
+.lab-card-category-detail{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:7px}
+.lab-card-category .lab-card-fine{color:#395e76;flex:1;min-width:155px}
+.lab-card-category-manage{color:#16577d;text-decoration:underline;font-size:11px;font-weight:800;white-space:nowrap}
