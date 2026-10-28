@@ -542,6 +542,11 @@ final class FloatingOracleWindow {
                     // consume the crash or Android terminates Bubbles entirely.
                     if (view != website) return true;
                     loadGeneration++;
+                    // A card handoff may have been in flight as WebView died.
+                    // Keep the selected card, but retry only after a fresh,
+                    // verified first-party page has initialized.
+                    cardDeliveryInFlight = false;
+                    cardDeliveryAttempts = 0;
                     showWebsite(false);
                     dispatchInFlight = false;
                     typedDispatchInFlight = false;
