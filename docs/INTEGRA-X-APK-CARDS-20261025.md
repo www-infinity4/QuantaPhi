@@ -15,6 +15,11 @@
 - Google/Facebook/Instagram/TikTok pages cannot be forced into cross-origin frames when blocked. Use permitted deep links, authenticated provider APIs, and first-party search/result cards; never request or persist personal passwords in an APK.
 - Google Workspace or another verified identity provider is required for a Google-login-capable service mailbox; Cloudflare Email Routing by itself does not supply a Gmail/Google identity or a full mailbox. No address is claimed to be provisioned.
 
+## October 27 follow-up — card coverage and compatibility
+- `bubbles-quick-card-registry.mjs` resolves existing source, science and discovery IDs to their real first-party HTML detail pages. It never accepts user-provided URLs, performs provider sign-in, or generates a fake card when an ID is unknown. Both native Android card links and the web `sourceCard` fallback now use the same resolver; registered Bubbles-native cards remain first choice.
+- `quick-card-apk-bridge.mjs` now hides its Android native-launch control unless the verified release feed lists a **matching 0.59.0 or newer** versioned APK artifact. The web Bubbles button remains available regardless; version 0.58.0 must not be represented as supporting the new Android card intent.
+- `test/bubbles-quick-card-registry.test.mjs` and new release compatibility assertions cover source/science/discovery routing, invalid IDs, mismatched APK release metadata, older versions and unavailable releases. Device interaction still needs a separate receipt.
+
 ## Next verified work
 1. Confirm card selector coverage and user taps on a real Android device; inspect and execute Node tests and CI checks; collect browser receipts for install/unavailable states. Fix any CSS conflicts before merge.
 2. Create official Integra X account and its separate service identity through owner-driven signup/verification; request X's written approval for AI auto-replies and acquire properly scoped OAuth tokens stored as encrypted secrets.
