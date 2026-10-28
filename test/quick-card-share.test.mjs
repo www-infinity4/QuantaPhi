@@ -37,7 +37,7 @@ test('published artwork is carried into X and Android quick-card shares',()=>{
  const actions=read('quanta-card-actions.mjs');
  assert.match(page,/image:c\.image/);
  assert.match(page,/xShareLink\(c\.cardUrl,c\.title,c\.image/);
- assert.match(actions,/socialPreviewUrl\(card,host\)/);
+ assert.match(actions,/sharePreviewUrl\(card,host\)/);
  assert.match(helper,/\/q-share/);
 });
 test('X composer uses the actual card image metadata and returns to card',async()=>{
