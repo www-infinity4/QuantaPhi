@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Infinity Affiliates Quick Card — Connect approved brands with products</title>
+<defs>
+ <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#071b2f"/><stop offset=".57" stop-color="#183d5f"/><stop offset="1" stop-color="#091e30"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dde9ef"/><stop offset=".35" stop-color="#6899bc"/><stop offset=".64" stop-color="#d5e3e8"/><stop offset="1" stop-color="#3c759e"/></linearGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<path d="M0 490Q350 350 695 472T1200 428" stroke="#5590af" stroke-opacity=".22" stroke-width="3" fill="none"/>
+<rect x="27" y="26" width="1146" height="578" rx="31" fill="none" stroke="#9bc6db" stroke-opacity=".35" stroke-width="3"/>
+<rect x="65" y="70" width="365" height="417" rx="29" fill="url(#metal)" stroke="#d4e4ec" stroke-width="5"/>
+<rect x="83" y="89" width="328" height="377" rx="23" fill="none" stroke="#ffffff" stroke-opacity=".45"/>
+<text x="237" y="337" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="255" font-weight="800" fill="#173a59">∞</text>
+<text x="246" y="423" text-anchor="middle" font-family="DejaVu Sans,Arial" font-size="31" font-weight="900" letter-spacing="3" fill="#163d57">APPROVED</text>
+<text x="475" y="116" font-family="DejaVu Sans,Arial" font-size="27" font-weight="900" fill="#cbe7f5">QUANTAPHI® · INFINITY 2026®</text>
+<path d="M476 135H1100" stroke="#bd5160" stroke-width="5"/>
+<text x="471" y="244" font-family="DejaVu Sans,Arial" font-size="71" font-weight="900" fill="#fff">INFINITY</text>
+<text x="471" y="328" font-family="DejaVu Sans,Arial" font-size="71" font-weight="900" fill="#fff">AFFILIATES</text>
+<text x="475" y="402" font-family="DejaVu Sans,Arial" font-size="31" fill="#cde8f7">MATCH BRANDS · REQUEST PRODUCTS</text>
+<rect x="477" y="438" width="540" height="62" rx="15" fill="#ffffff" fill-opacity=".13" stroke="#93c2d9" stroke-opacity=".6"/>
+<text x="498" y="480" font-family="DejaVu Sans,Arial" font-size="27" font-weight="800" fill="#e8f7ff">OWNER-CURATED PRODUCT DISCOVERY</text>
+<text x="69" y="567" font-family="DejaVu Sans,Arial" font-size="19" fill="#d8e8f1">Independent publisher network · Affiliate agreements and commissions require separate approval.</text>
+</svg>

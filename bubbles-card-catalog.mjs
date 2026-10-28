@@ -6,6 +6,7 @@ export const cards=Object.freeze([
  app('infinity-radio','Infinity Radio','/infinity-radio/','Alien-Radio',['radio','alien radio'],'#play-btn'),
  local('story-writer','Story Writer','phiStoryWriter',['phi-visual-render.js','phi-story-writer.js'],['phi-story-writer.css'],['oracle story writer']),
  local('reads-realms','Reads & Realms','infiniteBook',['infinite-book-discovery.js','infinite-book.js'],['infinite-book.css'],['reads and realms','reads realms','big book']),
+ app('infinity-affiliates','Infinity Affiliates · Approved Products','/infinity-affiliates.html','QuantaPhi',['affiliates','affiliate products','infinity approved affiliate','join affiliate program','affiliate request','brand associations']),
  app('reader-mystery','Tales of Mystery & Suspense','/?card=infinityReaderMystery','QuantaPhi',['mystery stories','tales of mystery']),
  app('reader-twilight','Twilight Zone · Original Fiction','/?card=infinityReaderTwilight','QuantaPhi',['twilight zone stories','speculative fiction']),
  app('reader-tech','Tech History','/?card=infinityReaderTech','QuantaPhi',['technology history','computing stories']),

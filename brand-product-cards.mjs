@@ -92,7 +92,11 @@ export function createBrandProductCard(card){
   id:card.id,name:card.brand+' · '+card.title,category:'Shopping · denim',
   featureUrl:card.url,official:card.url,route:'/?card='+encodeURIComponent(card.id)
  });
- info.append(title,description,price,links,detail,activity);
+ const associate=outlet('Request Infinity affiliate review ↗',
+  '/infinity-affiliates.html?product='+encodeURIComponent(card.url)+'&name='+encodeURIComponent(card.title)+'&newBrand='+encodeURIComponent(card.brand),
+  'qbp-request-affiliate');
+ associate.removeAttribute('target');
+ info.append(title,description,price,links,associate,detail,activity);
  article.append(kicker,imageLink,info);
  return article;
 }
