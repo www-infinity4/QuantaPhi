@@ -25,3 +25,10 @@ test('player handles errors and continues playlist without background media prel
   assert.match(player,/if \(\+\+failures > tracks\.length\)/);
   assert.match(player,/Playback unavailable/);
 });
+
+test('original cover has a known bundled image and fails gracefully',()=>{
+  const deck=readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+  assert.match(deck,/infinityConcepts:\['Infinity Concepts'[^\n]+julius-balloon-001\.jpg/);
+  assert.match(deck,/image\.addEventListener\('error',/);
+  assert.match(deck,/header\.style\.gridTemplateColumns='1fr'/);
+});
