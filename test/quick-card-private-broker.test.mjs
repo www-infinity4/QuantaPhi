@@ -128,7 +128,7 @@ test('owner Durable Object serialization protects concurrent paid starts and the
  // would miss the concurrency boundary that protects its get/put reservations.
  const {readFileSync}=await import('node:fs');
  const source=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
- assert.match(source,/pathname==='\\/quick-card-browser'[\\s\\S]{0,250}blockConcurrencyWhile\\(\\(\\)=>handleQuickCardBrowser/,
+ assert.ok(source.includes("this.ctx.blockConcurrencyWhile(()=>handleQuickCardBrowser(this.ctx.storage,this.env,body))"),
   'owner DO must serialize the entire paid-run reservation and provider dispatch');
  const data=new Map();
  const storage={get:async k=>data.get(k),put:async(k,v)=>data.set(k,structuredClone(v))};
