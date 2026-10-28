@@ -755,19 +755,22 @@ function cleanMediaTitle(title,query){let t=String(title||'').replace(/\bfile\s*
 function extractionPermalink(query){const u=new URL(searchPermalink(query));if(window.__qActiveTokenId)u.searchParams.set('from',window.__qActiveTokenId);return u.toString()}
 function searchPermalink(query){const u=new URL(location.href);u.searchParams.set('q',String(query||'').trim());u.searchParams.delete('from');u.hash='result';return u.toString()}
 function quantaShareUrl({title='',description='',q='',image='',dest='',kind='research'}={}){
- // Social URLs carry an indexed search seed, not the complete article,
- // media asset URL, nested destination, or OG copy.
+ // A crawler cannot run the client-side card. Publish its actual title and
+ // media image as server-rendered Open Graph metadata at /q-share.
  const clean=(value,max)=>String(value||'').replace(/\s+/g,' ').trim().slice(0,max);
+ const u=new URL('/q-share',location.origin);
  const topic=clean(q||title||document.getElementById('q')?.value||'',100);
- if(dest){
-   try{
-     const d=new URL(dest,location.origin);
-     if(d.origin===location.origin && d.href.length<=190 &&
-       !/[?&](?:storyDetail|storySummary|bookSummary|cardBody|text)=/i.test(d.search))return d.href;
-   }catch(_){}
- }
- const u=new URL('/infinity-phi/',location.origin);
+ const name=clean(title||topic||'QuantaPhi research',160);
+ u.searchParams.set('title',name);
  if(topic)u.searchParams.set('q',topic);
+ if(description)u.searchParams.set('text',clean(description,420));
+ u.searchParams.set('kind',clean(kind,30));
+ if(image){
+   try{const asset=new URL(image,location.origin);if(asset.protocol==='https:' && !asset.username && !asset.password)u.searchParams.set('image',asset.href)}catch(_){}
+ }
+ if(dest){
+   try{const d=new URL(dest,location.origin);if(d.origin===location.origin && !d.pathname.startsWith('/q-share'))u.searchParams.set('dest',d.href)}catch(_){}
+ }
  return u.href;
 }
 function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=cleanMediaTitle(x.title,document.getElementById('q')?.value||'Explore'),url=x.url||location.href,desc=String(x.content||x.description||'').replace(/\s+/g,' ').trim().slice(0,1200);if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|mpeg|mpg|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(video)+'" data-archive-id="'+esc(x.archive_id||'')+'" data-archive-metadata="'+esc(x.archive_metadata||'')+'"><div class="videoVisual">'+(video?'<video controls playsinline webkit-playsinline preload="metadata" poster="'+esc(img)+'" src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardUncollect" type="button" hidden>Uncollect</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(img)+'" data-source-snippet="'+esc(desc)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardUncollect" type="button" hidden>Uncollect</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(audio)+'" data-archive-id="'+esc(x.archive_id||'')+'" data-archive-metadata="'+esc(x.archive_metadata||'')+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardUncollect" type="button" hidden>Uncollect</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
