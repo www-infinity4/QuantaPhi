@@ -1,4 +1,4 @@
-import {mountQuickCardApkBridge} from './quick-card-apk-bridge.mjs';
+import {mountQuickCardApkBridge} from './quick-card-apk-bridge.mjs?v=20261028-cardbridge2';
 /* Evidence-first specialist Quick Cards. Independent of providers: never clone
  * their private sessions, infer credentials, or claim a live provider feed. */
 const item=(id,name,category,feature,url,description,role,otherUrl='')=>
