@@ -178,6 +178,10 @@ export async function observe(env, fetcher, at, cycleId, cache = {}) {
     const age = at - Date.parse(prior?.observedAt);
     const valid = prior && prior.url === SOURCE_URLS[id] &&
       ['checked', 'blocked'].includes(prior.sourceState) &&
+      // Defend at the reuse boundary too: an injected or older cached build
+      // observation must never restore the legacy false-green CI verdict.
+      (id !== 'build' || (prior.ci?.coverageComplete === false &&
+        prior.ci?.passed === false && prior.sourceState === 'blocked')) &&
       Number.isFinite(age) && age >= 0 && age <= SOURCE_MAX_AGE;
     if (valid && age < SOURCE_TTL) return savedSource(prior, 'cached');
     const current = await inspect(id, action);
