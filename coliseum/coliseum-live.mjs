@@ -41,6 +41,32 @@ if(area){
  const refreshRoom=make('button','Refresh shared ideas and messages');refreshRoom.className='secondary';refreshRoom.type='button';board.append(refreshRoom);
  frame.append(board);
  area.insertAdjacentElement('afterend',frame);
+ // Existing Bubbles Oracle provides a *real* assistant, without claiming Zeus
+ // is a separately trained or OpenAI-endorsed model. Load it on first tap.
+ const heroButtons=document.querySelector('.hero-buttons');
+ if(heroButtons){
+  const ask=make('button','Ask the Zeus builder (Bubbles AI)','secondary');
+  ask.id='zeusAskBuilder';ask.type='button';
+  const info=make('small','Uses the existing Bubbles AI service; it does not connect to live member rooms or share private drafts.');info.className='fineprint';
+  let loading=false,installed=false;
+  ask.addEventListener('click',()=>{
+   const open=()=>{const orb=document.querySelector('.quantaphi-bubbles-embed-launcher');if(orb){orb.click();return true}return false};
+   if(installed){if(!open())window.location.assign('/bubbles.html');return}
+   if(loading)return;loading=true;ask.disabled=true;ask.textContent='Opening assistant…';
+   const script=document.createElement('script');
+   script.src='/bubbles-embed.js?v=20261028-coliseum1';
+   script.dataset.bubbleId='coliseum-zeus-assistant';
+   script.dataset.bubbleRole='builder';
+   script.dataset.bubbleName='Zeus Builder';
+   script.dataset.bubbleInstructions='You are the independent Bubbles AI builder for Infinity Coliseum Zeus 6.2. Help visitors refine ideas, ask evidence-based questions, and propose practical build steps. Do not claim to be a newly trained OpenAI model or publish their private drafts without permission.';
+   script.onload=()=>{installed=true;loading=false;ask.disabled=false;ask.textContent='Open Zeus builder (Bubbles AI)';if(!open())window.location.assign('/bubbles.html')};
+   script.onerror=()=>{loading=false;ask.disabled=false;ask.textContent='Open Zeus builder';window.location.assign('/bubbles.html')};
+   document.body.append(script);
+  });
+  heroButtons.append(ask);
+  heroButtons.insertAdjacentElement('afterend',info);
+ }
+
  let enabled=false,joined=false,modelId='zeus',busy=false;
  const state=s=>status.textContent=s;
  async function call(path,options={}){
