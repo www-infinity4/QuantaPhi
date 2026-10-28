@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {chooseEntertainmentProgram, ENTERTAINMENT_CHANNELS} from '../infinity-entertainment-data.mjs';
+const catalog = {now: channel => ({title: channel === 'starquest' ? 'Movie' : 'Episode', videoId: 'MqaN40sbap4', year: 1961}), valid: id => id === 'MqaN40sbap4'};
+const read = file => readFileSync(new URL('../'+file,import.meta.url),'utf8');
+test('only existing movie and scripted TV sources are permitted',()=>assert.deepEqual(ENTERTAINMENT_CHANNELS,['starquest','chiller']));
+test('valid existing movie resolves without fetching or copying media',()=>assert.deepEqual(chooseEntertainmentProgram(catalog,'starquest'),{channel:'starquest',title:'Movie',year:1961,videoId:'MqaN40sbap4',poster:'https://i.ytimg.com/vi/MqaN40sbap4/hqdefault.jpg'}));
+test('shopping and unknown channels fail closed',()=>{assert.equal(chooseEntertainmentProgram(catalog,'shoplc'),null);assert.equal(chooseEntertainmentProgram(catalog,'netflix'),null)});
+test('missing or unverified catalog fails closed',()=>{assert.equal(chooseEntertainmentProgram(null,'starquest'),null);assert.equal(chooseEntertainmentProgram({now:()=>null},'starquest'),null)});
+test('malformed or unsafe video ids are rejected',()=>{assert.equal(chooseEntertainmentProgram({now:()=>({title:'Bad',videoId:'../unsafe.mp4'})},'starquest'),null);assert.equal(chooseEntertainmentProgram({now:()=>({title:'Bad',videoId:'MqaN40sbap4'}),valid:()=>false},'starquest'),null)});
+test('movie title must be present',()=>assert.equal(chooseEntertainmentProgram({now:()=>({title:'',videoId:'MqaN40sbap4'})},'starquest'),null));
+test('card playback is user-initiated and iframe is removed on stage change',()=>{const source=read('infinity-entertainment-card.mjs');assert.match(source,/watch\.addEventListener\('click'/);assert.match(source,/new MutationObserver/);assert.match(source,/activeFrame\.remove\(\)/);assert.doesNotMatch(source,/autoplay=1/)});
+test('card retains real Share Collect Build actions and accurate rights disclosure',()=>{const source=read('infinity-entertainment-card.mjs');assert.match(source,/mountCardActions\(/);assert.match(source,/does not import Netflix accounts/);assert.match(source,/Infinity TV program references/)});
+test('homepage and Oracle deck register the new card bank',()=>{const html=read('index.html');const deck=read('oracle-card-deck.js');assert.match(html,/id="infinityEntertainmentCards"/);assert.match(html,/infinity-entertainment-card\.mjs/);assert.match(deck,/#infinityEntertainmentCards \.iqc-card\[data-source-id\]/)});
