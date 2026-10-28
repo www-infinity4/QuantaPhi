@@ -8,6 +8,7 @@ if(!host||!stage)return;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
+ ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
@@ -45,6 +46,7 @@ const choices=[
 /* These are the ORIGINAL live widgets, not duplicated external link previews.
  * Shared IDs connect the Oracle viewer to Public / For You / Following. */
 const CARD_DIRECTIONS={
+ coliseumZeusCard:['coliseum-zeus','Collaboration','Pitch, vote, branch and build in the Zeus arena'],
  walmartShoppingCard:['walmart-shopping','Shopping','Shop Walmart pizza, groceries and related products'],
  cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
  quantaDirectoryCards:['public-directory','Directory','Search verified names, businesses and websites'],
@@ -89,7 +91,7 @@ const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={walmart:'walmartShoppingCard',google:'source-google','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ const names={zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
  const requested=url.searchParams.get('card');
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
 }catch{return null}})();
@@ -344,7 +346,7 @@ function show(entry,remember=true){
  void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // Every original Oracle widget receives the same five real actions.
  // Source cards already own the toolbar inside mountCardTools.
- if(!entry.id.startsWith('source-')){
+ if(!entry.id.startsWith('source-')&&entry.id!=='coliseumZeusCard'){
   const displayed=entry;
   import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
    if(active!==displayed||!stage.contains(displayed.node))return;
