@@ -53,3 +53,10 @@ test('builder and card surfaces use stored preview setting without opening third
  assert.match(read('workers/quick-card-publisher/schema.sql'),/preview_mode/);
  assert.match(read('workers/quick-card-publisher/migrations\/002-card-preview-mode.sql'),/ALTER TABLE/);
 });
+
+test('Levi 501 screenshot case: social image is a real product photo URL, not escaped query delimiters',()=>{
+ const html=read('levis-501.html');
+ assert.match(html,/og:image" content="https:\/\/lsco\.scene7\.com\/is\/image\/lsco\/005013373-front-gstk/);
+ assert.match(html,/fmt=jpeg&amp;wid=1200/);
+ assert.doesNotMatch(html,/%26fmt=jpeg%26wid=/);
+});
