@@ -11,7 +11,7 @@ export async function walletEmailPreference(service,{userId,action='read',cadenc
   const connected=await service.storage.get(prefix+'connection:'+old.connectionId);
   const verified=connected?.userId===userId&&connected?.provider==='google'&&
    connected?.status==='connected'&&connected?.verifiedEmail===old.email&&
-   connected?.revision===old.connectionRevision;
+   connected?.providerSubject===old.providerSubject;
   return {ok:true,enabled:verified&&old.enabled===true,cadence:old.cadence,
    email:verified?old.email:null,
    status:verified?'pending_email_sender_setup':'verification_expired',
@@ -26,11 +26,11 @@ export async function walletEmailPreference(service,{userId,action='read',cadenc
   throw Error('verified_google_connection_required');
  const connection=await service.storage.get(prefix+'connection:'+connectionId);
  if(connection?.userId!==userId||connection?.provider!=='google'||
-    connection?.status!=='connected'||typeof connection?.verifiedEmail!=='string'||
+    connection?.status!=='connected'||typeof connection?.providerSubject!=='string'||!connection.providerSubject||typeof connection?.verifiedEmail!=='string'||
     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(connection.verifiedEmail))
   throw Error('verified_google_connection_required');
  const value={enabled:true,cadence,email:connection.verifiedEmail,
-   connectionId,connectionRevision:connection.revision,enrolledAt:Date.now()};
+   connectionId,providerSubject:connection.providerSubject,enrolledAt:Date.now()};
  await service.storage.put(key,value);
  return {ok:true,enabled:true,cadence,email:value.email,
   status:'pending_email_sender_setup',deliveryEnabled:false};
