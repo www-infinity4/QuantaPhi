@@ -61,7 +61,7 @@ test('Gutenberg book candidates require public domain in U.S. plus English and v
  assert.equal(books.length,1);assert.equal(books[0].id,'pg:1');
  assert.match(books[0].source,/gutenberg.org\/ebooks\/1/);
  assert.match(books[0].license,/public domain/);
- assert.match(module,/source links/);
+ assert.match(module,/public-domain book/i);
 });
 test('no fake Infinity currency minting, invented author credentials or television scripts',()=>{
  assert.doesNotMatch(module,/QuantaStarCredit\?\./);
