@@ -26,7 +26,7 @@ test('seller has full-width eBay-like fields and an honest preview instead of fa
  assert.match(shop,/Connect your existing Unified Wallet/);
  assert.match(css,/sap-seller-fullscreen/);
  assert.match(css,/sap-submit-listing/);
- assert.match(index,/shop-ad-phi\.js\?v=20261027-seller-live1/);
+ assert.match(index,/shop-ad-phi\.js\?v=20261028-recovery1/);
 });
 test('ordinary Quick Cards never masquerade Google results as a TinyFish website browser',()=>{
  assert.doesNotMatch(actions,/providerSearchUrl\(provider,value\)\|\|/);
