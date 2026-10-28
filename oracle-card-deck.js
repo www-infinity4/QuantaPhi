@@ -107,7 +107,7 @@ let viewerTouched=false,selectionVersion=0;
 const ORIGINAL_COVERS={
  phiStoryWriter:['Story Writer','Write it. Illustrate it. Make it yours.','/assets/phi-scholastic-reader.webp'],
  phiMediaBuilder:['Image & Video Studio','Create something worth sharing.','/assets/phi-data-analyst.webp'],
- infinityConcepts:['Infinity Concepts','Physics, experiments and connected ideas.','/assets/julius-physics-002.png'],
+ infinityConcepts:['Infinity Concepts','Physics, experiments and connected ideas.','/assets/julius-balloon-001.jpg'],
  groupStoryBuild:['Group Stories','Build the next chapter together.','/assets/phi-scholastic-reader.webp'],
  mediaStarCreator:['Media Star','Make your own playable media card.','/apps/icons/media-star-512.png'],
  phiProjectActions:['Code Phi · Create Phi','Take an idea into a working project.','/assets/phi-data-analyst.webp'],
@@ -208,7 +208,9 @@ document.getElementById('oracleCardChooser')?.addEventListener('change',event=>{
 function presentOriginal(entry){
  const cover=ORIGINAL_COVERS[entry.id];if(!cover||entry.node.querySelector(':scope > .oracle-original-cover'))return;
  const header=document.createElement('header');header.className='oracle-original-cover';
- const image=document.createElement('img');image.src=cover[2];image.alt='';image.loading='lazy';
+ const image=document.createElement('img');image.alt='';image.loading='lazy';
+ image.addEventListener('error',()=>{image.remove();header.style.gridTemplateColumns='1fr';});
+ image.src=cover[2];
  const text=document.createElement('div'),brand=document.createElement('small'),title=document.createElement('h2'),copy=document.createElement('p');
  brand.textContent='QUANTAPHI ORIGINAL · INFINITY 2026®';title.textContent=cover[0];copy.textContent=cover[1];
  text.append(brand,title,copy);header.append(image,text);entry.node.prepend(header);
