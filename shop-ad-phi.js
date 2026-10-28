@@ -199,7 +199,7 @@ const ownerTerms=node('label');const ownership=node('input');ownership.type='che
  publishTerms.append(publicConsent,node('span',' Publish an unlisted, shareable ShopPhi item page (not yet a carousel ad).'));form.append(publishTerms);
  const submit=node('button',connected?'Save and request catalog publication':'Save my item to ShopPhi');
 submit.className='sap-submit-listing';submit.type='submit';
-submit.setAttribute('aria-label','Save Shop Phi listing');form.append(submit,node('small',
+submit.setAttribute('aria-label',submit.textContent);form.append(submit,node('small',
  connected?'Connected Shop Phi catalog: public readback required.':
  'Uses your existing Unified Wallet. Item drafts stay private until you explicitly select unlisted publication. The public carousel requires separate approval.'));
 button(form,'Export saved listings',()=>{const blob=new Blob([JSON.stringify({schema:'phi.shop-curation/drafts-v1',items:read(KEY)},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=node('a');a.href=url;a.download='shop-phi-listings.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
