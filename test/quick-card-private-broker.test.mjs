@@ -132,6 +132,75 @@ const transportReceipt=transport=>transport==='source'?{ok:true,provider:'TinyFi
  transport==='broker'?{ok:true,runId,receiptProof:'a'.repeat(64)}:{run_id:runId};
 const transportEnv=(transport,dispatch)=>transport==='source'?{TINYFISH_BRIDGE_TOKEN:'c'.repeat(64),TINYFISH_BROKER:{fetch:dispatch}}:
  transport==='broker'?{TINYFISH_BROKER_ENABLED:'true',TINYFISH_BRIDGE_TOKEN:token,TINYFISH_BROKER:{fetch:dispatch}}:directEnv;
+for(const transport of ['direct','broker'])for(const [firstStatus,delayedStatus] of [
+ ['COMPLETED','RUNNING'],['COMPLETED','FAILED'],['FAILED','COMPLETED']
+]){
+ test(`${transport}: out-of-order ${delayedStatus} poll preserves the committed ${firstStatus} receipt`,{timeout:3000},async t=>{
+  const storage=quickCardStorage(t),entered=deferred(),release=deferred();let starts=0,polls=0;
+  t.after(()=>release.resolve());
+  const reply=status=>({ok:true,status,error:status==='FAILED'?'provider_failed':undefined,
+   result:{summary:'Observed source',items:[{name:'Official link',url:card.mappings[0].url}]}});
+  const dispatch=async(url,init)=>{
+   const isStart=transport==='broker'?JSON.parse(init.body).action==='start':url.endsWith('/run-async');
+   if(isStart){starts++;return Response.json(transportReceipt(transport))}
+   if(++polls===1){entered.resolve();await release.promise;return Response.json(reply(delayedStatus))}
+   return Response.json(reply(firstStatus));
+  };
+  const env=transportEnv(transport,dispatch);
+  const started=await handleQuickCardBrowser(storage,env,start,dispatch,fixedNow);
+  assert.equal(started.httpStatus,202);
+  const command={action:'status',jobId:started.result.job.jobId};
+  const delayed=handleQuickCardBrowser(storage,env,command,dispatch,fixedNow);
+  await entered.promise;
+  const committed=await handleQuickCardBrowser(storage,env,command,dispatch,fixedNow);
+  assert.equal(committed.result.job.state,firstStatus==='COMPLETED'?'completed_browser_read':'failed');
+  release.resolve();const late=await delayed;
+  const saved=await storage.get('quick-card-browser:job:'+command.jobId);
+  assert.equal(saved.state,committed.result.job.state,'a late poll must never overwrite the first final receipt');
+  assert.deepEqual(late.result.job,committed.result.job,'the late caller must receive the already committed final receipt');
+  assert.equal(late.result.providerStatus,firstStatus);
+  assert.equal(late.result.job.receiptProof,undefined);
+  assert.equal(starts,1);assert.equal(polls,2);assert.equal(await storage.get(budgetKey),1);
+ });
+}
+test('a failed status commit preserves the working receipt and can retry status without a new run',async t=>{
+ const storage=quickCardStorage(t);let starts=0,polls=0;
+ const dispatch=async url=>{
+  if(url.endsWith('/run-async')){starts++;return Response.json({run_id:runId})}
+  polls++;return Response.json({status:'COMPLETED',result:{summary:'Source observed',
+   items:[{name:'Official link',url:card.mappings[0].url}]}});
+ };
+ const started=await handleQuickCardBrowser(storage,directEnv,start,dispatch,fixedNow);
+ const command={action:'status',jobId:started.result.job.jobId};
+ storage.interruptNextTransactionAtWrite(1);
+ const unavailable=await handleQuickCardBrowser(storage,directEnv,command,dispatch,fixedNow);
+ assert.equal(unavailable.httpStatus,503);
+ assert.equal((await storage.get('quick-card-browser:job:'+command.jobId)).state,'working');
+ const recovered=await handleQuickCardBrowser(storage,directEnv,command,dispatch,fixedNow);
+ assert.equal(recovered.result.job.state,'completed_browser_read');
+ assert.equal(starts,1);assert.equal(polls,2);assert.equal(await storage.get(budgetKey),1);
+});
+test('status cannot contact the provider without transactional storage or replace a changed run receipt',{timeout:3000},async t=>{
+ const storage=quickCardStorage(t),entered=deferred(),release=deferred();let polls=0;
+ t.after(()=>release.resolve());
+ const dispatch=async url=>{
+  if(url.endsWith('/run-async'))return Response.json({run_id:runId});
+  polls++;entered.resolve();await release.promise;
+  return Response.json({status:'FAILED',error:'Old run failure'});
+ };
+ const started=await handleQuickCardBrowser(storage,directEnv,start,dispatch,fixedNow);
+ const command={action:'status',jobId:started.result.job.jobId};
+ const unavailable=await handleQuickCardBrowser({get:storage.get},directEnv,command,dispatch,fixedNow);
+ assert.equal(unavailable.httpStatus,503);assert.equal(polls,0);
+ const pending=handleQuickCardBrowser(storage,directEnv,command,dispatch,fixedNow);
+ await entered.promise;
+ const key='quick-card-browser:job:'+command.jobId,saved=await storage.get(key);
+ const changed={...saved,runId:'12345678-1234-4234-8234-123456789ab1'};
+ await storage.put(key,changed);release.resolve();
+ assert.equal((await pending).httpStatus,503);
+ assert.deepEqual(await storage.get(key),changed);
+ assert.equal(await storage.get(budgetKey),1);
+});
 for(const transport of ['direct','broker','source']){
  test(`${transport}: concurrent duplicate returns its committed receipt before provider completion`,{timeout:3000},async t=>{
   const storage=quickCardStorage(t),entered=deferred(),release=deferred();let calls=0;

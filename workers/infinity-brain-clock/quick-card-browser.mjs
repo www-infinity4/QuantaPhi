@@ -226,16 +226,30 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
  if(!job)return fail('job_not_found',404);
  if(job.state!=='working'||!job.runId)return success({job:summary(job)});
  if(!configured(env))return fail('tinyfish_backend_not_configured',503);
+ if(typeof storage.transaction!=='function')return fail('provider_status_unavailable',503);
  try{
   const run=brokerEnabled(env)?await privateBroker(env,{action:'status',cardId:job.cardId,
    runId:job.runId,requestId:job.requestId,receiptProof:job.receiptProof}):await tinyfish(env,fetcher,'/v1/runs/'+encodeURIComponent(job.runId));
   const state=String(run.status||'').toUpperCase();
- if(['FAILED','CANCELLED','TIMED_OUT'].includes(state)){job.state='failed';job.error=String(run.error?.message||run.error||state).slice(0,140)}
-  else if(state==='COMPLETED'){
-   job.report=reportFor(run.result,job.cardId);
-   job.state=job.report.blocker?'blocked_browser_read':job.report.verifiedSameSiteLinks?'completed_browser_read':'unverified_browser_result';
-  }
-  await storage.put(k(job.jobId),job);
-  return success({job:summary(job),providerStatus:state});
+  // Provider waits may overlap. Re-read the receipt atomically after the wait;
+  // a stale working snapshot must never replace a committed final result.
+  const current=await storage.transaction(async tx=>{
+   const saved=await tx.get(k(job.jobId));
+   if(!saved||['jobId','requestId','cardId','action','query','runId','receiptProof'].some(field=>saved[field]!==job[field]))
+    throw Error('job_receipt_changed');
+   if(saved.state!=='working')return saved;
+   const next={...saved};
+   if(['FAILED','CANCELLED','TIMED_OUT'].includes(state)){
+    next.state='failed';next.error=String(run.error?.message||run.error||state).slice(0,140);
+   }else if(state==='COMPLETED'){
+    next.report=reportFor(run.result,job.cardId);
+    next.state=next.report.blocker?'blocked_browser_read':next.report.verifiedSameSiteLinks?'completed_browser_read':'unverified_browser_result';
+   }else return saved; // A running poll has no durable state change to write.
+   next.providerStatus=state;
+   await tx.put(k(job.jobId),next);
+   return next;
+  });
+  const providerStatus=current.providerStatus||(current.state==='working'?state:'');
+  return success({job:summary(current),...(providerStatus?{providerStatus}:{})});
  }catch{return fail('provider_status_unavailable',503)}
 }
