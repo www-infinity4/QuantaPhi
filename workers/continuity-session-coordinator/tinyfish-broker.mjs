@@ -59,8 +59,8 @@ export async function tinyfishBroker(request,env,fetcher=fetch){
  catch {return json({ok:false,error:'invalid_request'},400);}
  if(!body)return json({ok:false,error:'invalid_operation_or_input'},400);
  const endpoint=body.operation==='search'
-  ?'https://api.search.tinyfish.ai/?'+new URLSearchParams({query:body.query})
-  :'https://api.fetch.tinyfish.ai/';
+  ?'https://api.search.tinyfish.ai?'+new URLSearchParams({query:body.query})
+  :'https://api.fetch.tinyfish.ai';
  try{
   const upstream=await fetcher(endpoint,{
    method:body.operation==='search'?'GET':'POST',
