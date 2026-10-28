@@ -15,7 +15,9 @@ const instructions=String(script.dataset.bubbleInstructions||'').slice(0,MAXLEN.
 const id=String(script.dataset.bubbleId||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,MAXLEN.id)||'embedded';
 const options=new URLSearchParams({embed:'1',id,role:allowedRoles.has(role)?role:'assistant',name,instructions});
 const iframe=document.createElement('iframe');
-iframe.src=ORIGIN+'/bubbles.html?'+options;
+// Defer both iframe insertion and network navigation until the visitor opens
+// this assistant. A homepage can render many cards without eagerly booting
+// multiple Bubbles chat documents, Web Speech services and model tooling.
 iframe.title=name+' · Bubbles AI messenger';
 iframe.loading='eager';
 iframe.setAttribute('allow','microphone');
@@ -38,7 +40,7 @@ for(const [left,top,size] of [[13,37,14],[21,16,29],[48,37,12]]){
  bubble.style.cssText='position:absolute!important;left:'+left+'px!important;top:'+top+'px!important;width:'+size+'px!important;height:'+size+'px!important;border-radius:50%!important;background:radial-gradient(circle at 28% 26%,white,#dcffff9e 39%,#2e88d89c 85%)!important;pointer-events:none!important;';
  orb.appendChild(bubble);
 }
-let expanded=false,loaded=false,pendingOpen=false,drag=null,suppressClick=false;
+let expanded=false,loaded=false,pendingOpen=false,started=false,drag=null,suppressClick=false;
 const position={right:11,bottom:80};
 function resize(open){
  expanded=Boolean(open);
@@ -49,6 +51,12 @@ function resize(open){
  iframe.style.bottom=expanded?'6px':position.bottom+'px';
 }
 function requestOpen(){
+ if(!started){
+  started=true;pendingOpen=true;
+  iframe.src=ORIGIN+'/bubbles.html?'+options;
+  (document.body||document.documentElement).append(iframe);
+  return;
+ }
  if(!loaded){pendingOpen=true;return}
  pendingOpen=false;
  iframe.contentWindow?.postMessage({type:'quantaphi:bubbles:open',id},ORIGIN);
@@ -99,6 +107,12 @@ function onMessage(event){
  }
 }
 window.addEventListener('message',onMessage);
-iframe.addEventListener('load',()=>{loaded=true;if(expanded||pendingOpen)requestOpen()});
-(document.body||document.documentElement).append(iframe,orb);
+iframe.addEventListener('load',()=>{
+ if(!started)return;
+ loaded=true;
+ if(expanded||pendingOpen)requestOpen();
+});
+// Preserve the same loaded iframe, session and mic permissions after the
+// first open; closing merely hides it. The closed state mounts only an orb.
+(document.body||document.documentElement).append(orb);
 })();
