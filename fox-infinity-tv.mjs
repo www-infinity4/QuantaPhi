@@ -1,7 +1,7 @@
 import {
  FOX_WATCH_URL,FOX_LIVE_URL,FOX_NEWS_URL,FOX_SPORTS_URL,TEAMS,
  scoreText,fetchWorldSeries,REFRESH_MS
-} from './world-series-score.mjs?v=20261027-fox1';
+} from './world-series-score.mjs?v=20261028-game5';
 
 const make=(tag,klass,content)=>{
  const el=document.createElement(tag);if(klass)el.className=klass;
@@ -11,7 +11,7 @@ const link=(label,url,klass='')=>{
  const a=make('a',klass,label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;
 };
 export const FOX_CHANNELS=Object.freeze([
- {key:'world-series',title:'FOX · World Series',kind:'LIVE MLB · GAME 4',url:FOX_WATCH_URL,copy:'Brewers at Rays · the FOX One authorized live game page.'},
+ {key:'world-series',title:'FOX · World Series',kind:'MLB · GAME 5',url:FOX_WATCH_URL,copy:'Brewers at Rays · tonight at 7 PM Central on FOX / FOX One.'},
  {key:'fox-one',title:'FOX One · Live TV',kind:'LIVE TV · FOX',url:FOX_LIVE_URL,copy:'Sports, news and programming with FOX One or eligible provider sign-in.'},
  {key:'fox-sports',title:'FOX Sports',kind:'SPORTS · MLB',url:FOX_SPORTS_URL,copy:'FOX Sports game coverage, updates and highlights.'},
  {key:'fox-news',title:'FOX News',kind:'NEWS · LIVE CHANNEL',url:FOX_NEWS_URL,copy:'FOX News live TV on FOX One, subject to provider access.'}
@@ -49,11 +49,11 @@ export function mountFoxViewer(root,{compact=false,channel='world-series'}={}){
  const header=make('header','fit-header');
  header.append(make('span','fit-kicker','INFINITY TV · FOX CHANNELS · INDEPENDENT VIEWER'),
   make('h1','',initial.title),
-  make('p','fit-copy','2026 World Series Game 4. Live game scores from MLB. The FOX broadcast requires FOX One or a participating TV provider.'));
+  make('p','fit-copy','2026 World Series Game 5 · tonight at 7 PM Central. Live game scores from MLB. The FOX broadcast requires FOX One or a participating TV provider.'));
  const match=createMatch();
  const actions=make('div','fit-actions');
  const watch=link('▶ Open '+initial.title+' at FOX',initial.url,'fit-btn fit-primary');
- const source=link('MLB official game center','https://www.mlb.com/gameday/849803','fit-btn fit-secondary');
+ const source=link('MLB official game center','https://www.mlb.com/gameday/849799','fit-btn fit-secondary');
  const frameToggle=make('button','fit-btn fit-secondary','Try FOX in Infinity Viewer');
  frameToggle.type='button';frameToggle.setAttribute('aria-expanded','false');
  actions.append(watch,frameToggle,source);

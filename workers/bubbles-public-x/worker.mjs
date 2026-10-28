@@ -7,9 +7,12 @@ const json=(v,status=200)=>Response.json(v,{status,headers:{'Cache-Control':'no-
 const decode=s=>String(s).replace(/&(?:amp|lt|gt|quot|apos|#39|nbsp);/g,x=>({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&#39;':"'",'&nbsp;':' '}[x])).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Math.min(0x10ffff,Number(n)||32)));
 const strip=s=>decode(String(s).replace(/<script\b[\s\S]*?<\/script>/gi,' ').replace(/<style\b[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim());
 export function parsePublicProfile(html){
- const h=String(html||''),out=[],seen=new Set(),re=/<div role="link" data-href="\/YahooPingcwlz\/status\/(\d{15,22})"/gi;
+ // X adds aria-labelledby/id before role. Attribute order is not a source
+ // identity signal; require the exact owner status path and role instead.
+ const h=String(html||''),out=[],seen=new Set(),re=/<div\b[^>]{0,4000}\bdata-href=(["'])\/YahooPingcwlz\/status\/(\d{15,22})\1[^>]{0,4000}>/gi;
  for(const m of h.matchAll(re)){
-  const id=m[1];if(seen.has(id))continue;
+  if(!/\brole=(["'])link\1/i.test(m[0]))continue;
+  const id=m[2];if(seen.has(id))continue;
   const cut=h.indexOf('</article>',m.index);
   if(cut<0||cut-m.index>25000)continue;
   const article=h.slice(m.index,cut+10);

@@ -27,6 +27,17 @@ test('cannot obtain posts from static login wall',()=>{
  assert.equal(parsePublicProfile('<p>Log in to X</p>').length,0);
 });
 
+test('current X profile attributes before role do not hide owner requests',()=>{
+ const body=x('2115247012413100176','#bubbles quick ad');
+ const actual=body.replace('<div role="link" data-href=',
+  '<div aria-labelledby="post-title" id="post-title" role="link" data-href=');
+ assert.equal(parsePublicProfile(actual)[0]?.text,'#bubbles quick ad');
+ const reordered=actual.replace('role="link" data-href="/YahooPingcwlz/status/2115247012413100176"',
+  "data-href='/YahooPingcwlz/status/2115247012413100176' tabindex='0' role='link'");
+ assert.equal(parsePublicProfile(reordered)[0]?.id,'2115247012413100176');
+ assert.equal(parsePublicProfile(reordered.replace("role='link'","role='button'")).length,0);
+});
+
 test('retries a late public timeline and records real owner posts',async()=>{
  const html=x('2113352129427730641','Repair Bubbles #bubbles'),calls=[],writes=[];
  const responses=['<p>Loading...</p>',html];
