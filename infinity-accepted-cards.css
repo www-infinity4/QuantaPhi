@@ -5,3 +5,6 @@
 @media(max-width:650px){#oracleCardStage > .iac-card{max-height:var(--iac-available-height,calc(100dvh - 390px));overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
 body.oracle-quanta #oracleCardDeck:has(#oracleCardStage > .iac-card) .oracle-card-deck-nav{position:sticky;top:60px;z-index:39;background:#f3f7f8;box-shadow:0 3px 10px #163d5014}}
 @media(max-width:420px){.iac-heading,.iac-content{padding:14px}.iac-website-actions{gap:7px}.iac-media{height:23vh;min-height:150px}}
+
+/* Affiliate requests attach to the actual Infinity Accepted brand card. */
+.iac-affiliate-link{display:flex!important;align-items:center;justify-content:center;margin:9px 0;padding:12px 11px;border-radius:12px;background:#e7f3fa!important;border:1px solid #9ac6dc!important;color:#155579!important;font:850 13px/1.3 system-ui,sans-serif!important;text-align:center;text-decoration:none!important;min-height:46px}

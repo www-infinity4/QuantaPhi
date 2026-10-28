@@ -27,7 +27,10 @@ export function createAcceptedCard(card){
  const official=node('a','Visit official website ↗','iac-official');official.href=card.official;official.target='_blank';official.rel='noopener noreferrer';
  const source=node('p',(hasAcceptedSource(card)?'Website checked '+String(card.sourceCheckedAt||'').slice(0,10)+'. ':
   'Website action links are awaiting verification. ')+card.acceptanceNote,'iac-provenance');
- content.append(official,source);
+ const affiliate=node('a','Request affiliate product ↗','iac-official iac-affiliate-link');
+ affiliate.href='/infinity-affiliates.html?brand='+encodeURIComponent(card.id);
+ affiliate.setAttribute('aria-label','Request affiliation for '+card.name+' products');
+ content.append(official,affiliate,source);
  const tools=node('div');mountCardActions(tools,{...card,route:'/?card='+card.id},{showSearch:false});content.append(tools);
  article.append(heading,media,content);return article;
 }
