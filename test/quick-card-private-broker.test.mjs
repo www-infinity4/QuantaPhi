@@ -35,7 +35,10 @@ test('approved public brand start uses a fixed URL and no owner profile, cookies
  const calls=[];const fetcher=async(url,init)=>{calls.push({url,init});return Response.json({run_id:runId})};
  const response=await handlePrivateBroker(req(),env,fetcher);
  assert.equal(response.status,202);
- assert.deepEqual(await response.json(),{ok:true,runId});
+ const startReceipt=await response.json();
+ assert.equal(startReceipt.ok,true);
+ assert.equal(startReceipt.runId,runId);
+ assert.match(startReceipt.receiptProof,/^[a-f0-9]{64}$/);
  assert.equal(calls.length,1);
  assert.equal(calls[0].url,'https://agent.tinyfish.ai/v1/automation/run-async');
  const payload=JSON.parse(calls[0].init.body);
@@ -47,10 +50,18 @@ test('approved public brand start uses a fixed URL and no owner profile, cookies
  assert.equal(response.headers.get('Access-Control-Allow-Origin'),null);
 });
 test('status requires a mapped brand and a run id, and returns bounded private results',async()=>{
- const body={action:'status',cardId,runId};
+ const started=await handlePrivateBroker(req(),env,async()=>Response.json({run_id:runId}));
+ const {receiptProof}=await started.json();
+ const body={action:'status',cardId,runId,requestId,receiptProof};
  let calls=0;const fetcher=async(url,init)=>{calls++;assert.equal(init.method,'GET');
   assert.equal(url,'https://agent.tinyfish.ai/v1/runs/'+runId);
   return Response.json({status:'COMPLETED',result:{summary:'source read'}})};
+ assert.equal((await handlePrivateBroker(req({...body,receiptProof:'0'.repeat(64)}),env,fetcher)).status,403);
+ const otherCardId=Object.entries(CARD_SITES).find(([id,c])=>id!==cardId&&c.kind==='durable'&&c.mappings.length)?.[0];
+ assert.ok(otherCardId);
+ assert.equal((await handlePrivateBroker(req({...body,cardId:otherCardId}),env,fetcher)).status,403);
+ assert.equal((await handlePrivateBroker(req({...body,requestId:'12345678-1234-4234-8234-123456789abe'}),env,fetcher)).status,403);
+ assert.equal(calls,0,'invalid correlation must not reach provider');
  const r=await handlePrivateBroker(req(body),env,fetcher);
  assert.equal(r.status,200);
  assert.equal((await r.json()).status,'COMPLETED');
@@ -79,8 +90,10 @@ test('Brain broker adapter only activates with explicit opt-in and preserves ide
   assert.equal(url,'https://broker.internal/internal/quick-card-browser');
   assert.equal(init.headers['X-QuantaPhi-Broker-Token'],token);
   const command=JSON.parse(init.body);messages.push(command);
-  if(command.action==='start')return Response.json({ok:true,runId},{status:202});
+  if(command.action==='start')return Response.json({ok:true,runId,receiptProof:'a'.repeat(64)},{status:202});
   assert.equal(command.action,'status');assert.equal(command.runId,runId);
+  assert.equal(command.requestId,requestId);
+  assert.equal(command.receiptProof,'a'.repeat(64));
   return Response.json({ok:true,status:'COMPLETED',result:{summary:'Public page inspected',
    items:[{name:'Official resource',url:card.mappings[0].url,note:'Public resource'},
     {name:'Unsafe cross-site',url:'https://untrusted.example/private',note:'Ignored'}]}});
@@ -93,6 +106,7 @@ test('Brain broker adapter only activates with explicit opt-in and preserves ide
  const first=await handleQuickCardBrowser(storage,bridged,start,direct);
  assert.equal(first.httpStatus,202);
  assert.equal(first.result.job.state,'working');
+ assert.equal(first.result.job.receiptProof,undefined,'private proof must not be exposed in owner job summary');
  assert.deepEqual(messages[0],{action:'start',cardId,kind:start.kind,query:'',requestId});
  const duplicate=await handleQuickCardBrowser(storage,bridged,start,direct);
  assert.equal(duplicate.httpStatus,200);
