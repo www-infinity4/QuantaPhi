@@ -9,6 +9,7 @@ on:
       - 'bubbles-chrome.html'
       - 'index.html'
       - 'test/bubbles-oracle-android-ui.test.mjs'
+      - 'test/bubbles-account-viewer-smoke.test.mjs'
       - 'test/bubbles-owner-diagnostic.test.mjs'
       - 'bubbles-owner-diagnostic.js'
       - 'test/bubbles-cloud-browser.test.mjs'
@@ -19,6 +20,7 @@ on:
       - 'bubbles-ai.js'
       - 'bubbles-octaves-chat.css'
       - 'test/bubbles-oracle-android-ui.test.mjs'
+      - 'test/bubbles-account-viewer-smoke.test.mjs'
       - 'test/bubbles-owner-diagnostic.test.mjs'
       - 'bubbles-owner-diagnostic.js'
       - '.github/workflows/bubbles-oracle-android-chat.yml'
@@ -36,4 +38,4 @@ jobs:
       - name: Verify Bubbles JavaScript compiles
         run: node --check bubbles-ai.js
       - name: Verify mobile UI and browser regression contracts
-        run: node --test test/bubbles-oracle-android-ui.test.mjs test/bubbles-owner-diagnostic.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-chatgpt-bridge.test.mjs
+        run: node --test test/bubbles-oracle-android-ui.test.mjs test/bubbles-owner-diagnostic.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-chatgpt-bridge.test.mjs test/bubbles-account-viewer-smoke.test.mjs
