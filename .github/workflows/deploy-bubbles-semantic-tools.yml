@@ -5,7 +5,10 @@ on:
       - 'workers/bubbles-tools/**'
       - 'scripts/verify-bubbles-live-tools.mjs'
       - 'test/bubbles-live-tool-acceptance.test.mjs'
-      - 'test/bubbles-github-raw-fallback.test.mjs test/bubbles-browser-controls.test.mjs test/bubbles-cloud-browser.test.mjs'
+      - 'test/bubbles-github-raw-fallback.test.mjs'
+      - 'test/bubbles-owner-github-auth-read.test.mjs'
+      - 'test/bubbles-browser-controls.test.mjs'
+      - 'test/bubbles-cloud-browser.test.mjs'
       - '.github/workflows/deploy-bubbles-semantic-tools.yml'
   push:
     branches: [main]
@@ -37,7 +40,7 @@ jobs:
           node --check workers/bubbles-tools/mcp.mjs
           node --check workers/bubbles-tools/organic-benchmark.mjs
           node --check workers/bubbles-tools/search.mjs
-          node --test test/bubbles-public-x-chat.test.mjs test/bubbles-card-source-routing.test.mjs test/bubbles-read-agent.test.mjs test/bubbles-multi-library-research.test.mjs test/bubbles-unknown-alias-safety.test.mjs test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-tools.test.mjs test/bubbles-live-tool-acceptance.test.mjs test/bubbles-source-read-ui.test.mjs test/bubbles-search-completion.test.mjs test/bubbles-server-assist.test.mjs test/bubbles-organic-memory-tool.test.mjs test/bubbles-github-commit-reader.test.mjs test/bubbles-github-raw-fallback.test.mjs
+          node --test test/bubbles-public-x-chat.test.mjs test/bubbles-card-source-routing.test.mjs test/bubbles-read-agent.test.mjs test/bubbles-multi-library-research.test.mjs test/bubbles-unknown-alias-safety.test.mjs test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-tools.test.mjs test/bubbles-live-tool-acceptance.test.mjs test/bubbles-source-read-ui.test.mjs test/bubbles-search-completion.test.mjs test/bubbles-server-assist.test.mjs test/bubbles-organic-memory-tool.test.mjs test/bubbles-github-commit-reader.test.mjs test/bubbles-github-raw-fallback.test.mjs test/bubbles-owner-github-auth-read.test.mjs
       - name: Check existing deployment authorization
         if: github.event_name != 'pull_request'
         id: deploy_auth
@@ -70,7 +73,7 @@ jobs:
           const url='https://bubbles-tools.marvaseater.workers.dev/health';
           const response=await fetch(url,{headers:{'Cache-Control':'no-cache'}});
           const body=await response.json();
-          if(!response.ok||body.service!=='bubbles-tools'||!body.tools?.weather||body.revision!=='20261022-read-agent-v2-github-raw-fallback'||body.tools?.githubRawReadFallback!=='public-main-403-429-only')
+          if(!response.ok||body.service!=='bubbles-tools'||!body.tools?.weather||body.revision!=='20261027-owner-github-reads-v1'||body.tools?.githubRawReadFallback!=='public-main-403-429-only')
             throw Error('Live Bubbles tool gateway health was not confirmed');
           console.log('Bubbles gateway health checked; individual tool execution still requires receipts.');
           VERIFY
