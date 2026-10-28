@@ -11,7 +11,7 @@ export function safeLocalCardUrl(input,base='https://quantaphi.org/'){
  try{
   const url=new URL(String(input||''),base),origin=new URL(base).origin;
   if(url.origin!==origin||url.username||url.password||!['https:','http:'].includes(url.protocol))return '';
-  if(!(/\/(?:cards\/[a-z0-9-]{5,91}|source-quick-card\.html|science-quick-card\.html|quanta-feed-card\.html|bubbles-card-host\.html|storybook\/|studio\/|resonance\.html|trending-now\.html|quick-card-wiring\.html|x-money\.html|levis-501\.html)(?:$|[?#\/])/i.test(url.pathname+url.search)))return '';
+  if(!(/\/(?:cards\/[a-z0-9-]{5,91}|source-quick-card\.html|science-quick-card\.html|quanta-feed-card\.html|bubbles-card-host\.html|storybook\/|studio\/|resonance\.html|trending-now\.html|quick-card-wiring\.html|x-money\.html|levis-501\.html|integra-validation\.html)(?:$|[?#\/])/i.test(url.pathname+url.search)))return '';
   return url.href;
  }catch{return ''}
 }
