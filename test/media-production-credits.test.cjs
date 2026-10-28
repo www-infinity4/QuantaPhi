@@ -22,6 +22,23 @@ test('Oracle playback records an authenticated observation rather than paying on
  assert.match(tv,/video\.onpause/);
  assert.match(tv,/productionTimer/);
  assert.match(html,/phi-channel-cards\.js\?v=20261015-credits1/);
- assert.match(html,/media-star-creator\.js\?v=20261015-credits1/);
+ assert.match(html,/media-star-creator\.js\?v=20261028-publisher1/);
  assert.doesNotThrow(()=>new Function(tv));
+});
+
+test('Media Star publication is explicit, D1-backed and must return a real unlisted link',()=>{
+ assert.match(builder,/createBtn\('Publish Media Star online'/);
+ assert.match(builder,/fetch\('\/api\/quick-cards',\{method:'POST'/);
+ assert.match(builder,/receipt\.status!=='unlisted'/);
+ assert.match(builder,/receipt\.cardUrl/);
+ assert.match(builder,/publishButton\.disabled=true/);
+ assert.match(builder,/creator:creator\.value/);
+ assert.match(builder,/createBtn\('Register production credits for review'/);
+ assert.doesNotMatch(builder,/if\(link\.value\.trim\(\)\)void registerBuiltCard\(\)/);
+ const page=fs.readFileSync('published-quick-card.js','utf8');
+ assert.match(page,/qcp-media/);
+ assert.match(page,/player\.controls=true/);
+ const worker=fs.readFileSync('workers/quick-card-publisher/worker.mjs','utf8');
+ assert.match(worker,/media-src https:/);
+ assert.match(worker,/published-quick-card\.js\?v=4/);
 });
