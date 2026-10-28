@@ -110,7 +110,8 @@ test('cycle observes eight tracks, preserves private work and grants, and skips 
     assert.equal(result.report.observedAuthenticatedSessions, 0);
     assert.equal(result.report.autonomousChatExecution, false);
     assert.equal(result.report.workLease, 'unclaimed');
-    assert.equal(result.report.tracks.find(t => t.id === 'build').ci.passed, true);
+    assert.equal(result.report.tracks.find(t => t.id === 'build').ci.passed, false);
+    assert.equal(result.report.tracks.find(t => t.id === 'build').ci.prPassed, true);
     assert.equal(result.report.tracks.find(t => t.id === 'integra').securityValidated, false);
     assert.equal(result.report.tracks.find(t => t.id === 'work').state, 'blocked');
     assert.doesNotMatch(JSON.stringify(result), /PRIVATE_UPSTREAM_SENTINEL|private@example|PRIVATE_TICKET/);
@@ -181,6 +182,28 @@ test('wrong-revision CI and truncated run inventories cannot pass', async () => 
   }
 });
 
+test('one green push or PR workflow never proves full required CI coverage', async () => {
+  const f = fixture();
+  f.runs.splice(0, f.runs.length, {...f.runs[0], event: 'push'});
+  let report = await observe(f.env, f.fetcher, f.at, 1);
+  let build = report.tracks.find(t => t.id === 'build');
+  assert.equal(build.ci.observed, 1);
+  assert.equal(build.ci.prObserved, 0);
+  assert.equal(build.ci.pageComplete, true);
+  assert.equal(build.ci.coverageComplete, false);
+  assert.equal(build.ci.passed, false);
+  assert.equal(build.state, 'blocked');
+  assert.match(build.detail, /required CI coverage not established/);
+  f.runs[0].event = 'pull_request';
+  report = await observe(f.env, f.fetcher, f.at, 2);
+  build = report.tracks.find(t => t.id === 'build');
+  assert.equal(build.ci.prObserved, 1);
+  assert.equal(build.ci.prPassed, true, 'the observed PR run did pass');
+  assert.equal(build.ci.coverageComplete, false, 'required checks remain unverified');
+  assert.equal(build.ci.passed, false);
+  assert.equal(build.state, 'blocked');
+});
+
 test('latest workflow rerun wins, while failed or pending current checks remain visible', async () => {
   const f = fixture();
   f.runs.push({...f.runs[0], id: 10, conclusion: 'failure'});
@@ -190,7 +213,8 @@ test('latest workflow rerun wins, while failed or pending current checks remain 
   assert.equal(build.ci.failed, 1);
   f.runs.push({...f.runs[0], id: 11});
   report = await observe(f.env, f.fetcher, f.at, 1);
-  assert.equal(report.tracks.find(t => t.id === 'build').ci.passed, true);
+  assert.equal(report.tracks.find(t => t.id === 'build').ci.prPassed, true);
+  assert.equal(report.tracks.find(t => t.id === 'build').ci.passed, false);
   f.runs.push({...f.runs[1], id: 12, status: 'in_progress', conclusion: null});
   report = await observe(f.env, f.fetcher, f.at, 1);
   build = report.tracks.find(t => t.id === 'build');
@@ -282,7 +306,7 @@ test('future-dated or wrong-resource cache entries cannot suppress a real source
   const bad = {build: {id: 'build', url: 'https://github.com/other/repo/pull/1144',
     sourceState: 'checked', observedAt: new Date(f.at).toISOString()}};
   let report = await observe(f.env, (url, opts) => {requests++; return f.fetcher(url, opts);}, f.at, 1, bad);
-  assert.equal(report.tracks.find(t => t.id === 'build').state, 'checked');
+  assert.equal(report.tracks.find(t => t.id === 'build').state, 'blocked');
   assert.equal(requests, 4);
   bad.build.url = 'https://github.com/www-infinity4/QuantaPhi/pull/1144';
   bad.build.observedAt = new Date(f.at + INTERVAL).toISOString();
