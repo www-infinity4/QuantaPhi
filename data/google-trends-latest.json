@@ -3,107 +3,103 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-28T00:35:06.972573Z",
+  "checked_at": "2026-10-28T06:23:40.563837Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "william contreras",
-      "approx_searches": "10000+",
-      "published_at": "2026-10-28T00:20:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/william-contreras-showing-mastery-of-abs-challenge-system-in-postseason",
-        "https://www.washingtonpost.com/sports/2026/10/27/hell-take-your-hand-off-most-dangerous-high-five-baseball/",
-        "https://www.espn.com/mlb/story/_/id/50263667/rays-ease-basepaths-losing-game-1-world-series"
-      ]
-    },
-    {
-      "query": "paul reed",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-28T00:20:00Z",
-      "related_news_urls": [
-        "https://pistonpowered.com/paul-reed-vindicating-pistons-polarizing-isaiah-stewart-trade",
-        "https://sports.yahoo.com/articles/where-isaiah-stewart-why-beef-214006206.html",
-        "https://heavy.com/sports/nba/detroit-pistons/where-is-isaiah-stewart-why-beef-stew-isnt-playing-pistons/"
-      ]
-    },
-    {
-      "query": "jennifer garner",
-      "approx_searches": "500+",
-      "published_at": "2026-10-28T00:20:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/jennifer-garner-ben-affleck-kids-violet-seraphina-samuel-12174082",
-        "https://www.yahoo.com/entertainment/videos/jennifer-garner-three-kids-heres-134500741.html",
-        "https://www.istitutoimpariamo.it/jennifer-garner-reunites-with-ex-michael-vartan-for-25th-anniversary-of-alias-as-star-reflects-on-box-office-surprises-and-hollywood-reality/"
-      ]
-    },
-    {
-      "query": "chaney johnson",
-      "approx_searches": "200+",
-      "published_at": "2026-10-28T00:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909862",
-        "https://www.indystar.com/story/sports/nba/pacers/2026/10/25/pacers-vs-nets-how-tyrese-haliburton-led-indiana-to-win-without-ivica-zubac/92288076007/",
-        "https://www.netsdaily.com/nets-game-previews/115186/nets-vs-pacers-game-preview-how-to-watch-injury-report"
-      ]
-    },
-    {
-      "query": "peggy flanagan",
-      "approx_searches": "200+",
-      "published_at": "2026-10-28T00:20:00Z",
-      "related_news_urls": [
-        "https://www.startribune.com/mn-midterm-elections-us-senate-race-michele-tafoya-peggy-flanagan/601903550",
-        "https://kstp.com/kstp-news/top-news/barack-obama-endorses-peggy-flanagan-in-tight-minnesotas-us-senate-race/",
-        "https://www.duluthnewstribune.com/news/local/photos-bernie-sanders-visits-duluth-in-support-of-flanagan-ellison"
-      ]
-    },
-    {
-      "query": "shirley ballas",
-      "approx_searches": "10000+",
-      "published_at": "2026-10-28T00:10:00Z",
-      "related_news_urls": [
-        "https://www.thesun.co.uk/tv/40749839/shirley-ballas-joins-dancing-with-the-stars-strictly/",
-        "https://www.northjersey.com/videos/news/2026/10/27/shirley-ballas-mark-ballas-dwts-guest-judge-fair-bias/92462331007/",
-        "https://www.mirror.co.uk/3am/celebrity-news/shirley-ballas-strictly-come-dancing-37814737"
-      ]
-    },
-    {
-      "query": "mark ballas",
+      "query": "mortgage interest rates",
       "approx_searches": "2000+",
-      "published_at": "2026-10-28T00:10:00Z",
+      "published_at": "2026-10-28T06:10:00Z",
       "related_news_urls": [
-        "https://pagesix.com/2026/10/24/celebrity-news/dwts-pros-witney-carson-and-mark-ballas-allegedly-feuded-during-season-21-former-contestants-claim/",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/10/23/dwts-carlos-alexa-penavega-marital-issues/92402176007/",
-        "https://www.tvinsider.com/1299422/mark-ballas-witney-carson-feud-dancing-with-the-stars-season-21-drama/"
+        "https://www.mortgagenewsdaily.com/markets/mortgage-rates-10272026",
+        "https://www.realtor.com/news/trends/treasury-yields-above-5-homeowners-savings-money-monday/",
+        "https://www.housingwire.com/articles/mortgage-rates-demand-stabilizes/"
       ]
     },
     {
-      "query": "wild vs mammoth",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-28T00:10:00Z",
+      "query": "nba standings",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-28T06:00:00Z",
+      "related_news_urls": []
+    },
+    {
+      "query": "cyberpunk",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-28T06:00:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/utah/news/the-week-ahead-oct-26-nov-1-feature-10-26-26",
-        "https://www.startribune.com/minnesota-wild-utah-mammoth-score-today-kirill-kaprizov-goals-jesper-wallstedt-quinn-hughes-stats/601902996",
-        "https://sports.yahoo.com/articles/mammoth-face-huge-central-division-195542650.html"
+        "https://www.cyberpunk.net/en/news/52125/cyberpunk-2077s-edgerunners-2-update-2-5-is-out-now",
+        "https://www.forbes.com/sites/paultassi/2026/10/26/10-things-i-wish-i-knew-when-i-started-cyberpunk-2077-update-25-edition/",
+        "https://www.gamingbible.com/news/cyberpunk-2077-players-turn-cars-into-tesla-roadster-622791-20261022"
       ]
     },
     {
-      "query": "brooklyn nets vs boston celtics match player stats",
+      "query": "katerina siniakova",
+      "approx_searches": "200+",
+      "published_at": "2026-10-28T06:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/katerina-siniakova-now-guaranteed-surpass-110000988.html",
+        "https://lastwordonsports.com/tennis/2026/10/27/wta-guangzhou-day-3-predictions-badosa-kraus/",
+        "https://www.mundodeportivo.com/en/20261026/1004243332/paula-badosa-defeats-carol-lee-and-cruises-into-the-round-of-16-in-guangzhou.html"
+      ]
+    },
+    {
+      "query": "por vs lal",
+      "approx_searches": "200+",
+      "published_at": "2026-10-28T06:00:00Z",
+      "related_news_urls": [
+        "https://www.elmundo.es/deportes/baloncesto/nba/lakers-blazers/2026/10/28/02_0202_20261028_7425_7428-directo.html",
+        "https://us.marca.com/nba/2026/10/27/ver-lakers-vs-portland-trail-blazers-horario-juego-hoy-transmision-vivo.html",
+        "https://deadspin.com/es/luka-doncic-y-los-invictos-lakers-reciben-a-los-mejorados-trail-blazers/"
+      ]
+    },
+    {
+      "query": "sofia vergara",
+      "approx_searches": "200+",
+      "published_at": "2026-10-28T06:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/sof-vergara-holds-hands-imagine-192925152.html",
+        "https://www.hola.com/us/celebrities/20261027931644/sofia-vergara-imagine-dragons-singer-dan-reynolds-hold-hands/",
+        "https://www.justjared.com/2026/10/27/sofia-vergara-reacts-dan-reynolds-dating-rumors-source-speaks-out/"
+      ]
+    },
+    {
+      "query": "russell westbrook",
+      "approx_searches": "100+",
+      "published_at": "2026-10-28T05:50:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25520782-russell-westbrook-thunder-reunion-addressed-sam-presti-after-jalen-williams-wallace-injuries",
+        "https://thunderousintentions.com/okc-thunder-final-window-russell-westbrook-reunion-was-just-opened",
+        "https://sports.yahoo.com/articles/sam-presti-asked-russell-westbrook-091853219.html"
+      ]
+    },
+    {
+      "query": "shaedon sharpe",
+      "approx_searches": "100+",
+      "published_at": "2026-10-28T05:50:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/trail-blazers-analysis/117275/why-scoot-henderson-didnt-score-a-blazers-extension",
+        "https://ripcityproject.com/blazers-backcourt-upgrade-clouds-scoot-henderson-shaedon-sharpe-futures",
+        "https://airalamo.com/victor-wembanyama-has-created-an-undeniable-gap-between-himself-and-scoot-henderson"
+      ]
+    },
+    {
+      "query": "jake laravia",
       "approx_searches": "500+",
-      "published_at": "2026-10-28T00:10:00Z",
+      "published_at": "2026-10-28T05:50:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mlb/game/_/gameId/401908044/brewers-rays",
-        "https://www.espn.com/soccer/match/_/gameId/401928522/villarreal-manacor",
-        "https://www.espn.com/mlb/game/_/gameId/401908043/rays-brewers"
+        "https://www.si.com/nba/lakers/onsi/lakers-jj-redick-shares-encouraging-jake-laravia-injury-update",
+        "https://nypost.com/2026/10/23/sports/lakers-jake-laravia-sitting-vs-clippers-ending-streak/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-22/jarrett-allen-knee-good-to-go-thursday-vs-phi"
       ]
     },
     {
-      "query": "jordan walsh",
-      "approx_searches": "500+",
-      "published_at": "2026-10-28T00:10:00Z",
+      "query": "war",
+      "approx_searches": "100+",
+      "published_at": "2026-10-28T05:40:00Z",
       "related_news_urls": [
-        "https://www.espn.co.uk/video/clip/_/id/50293046/jordan-walsh-connects-alley-oop",
-        "https://www.espn.ph/video/clip/_/id/50293002/jordan-walsh-rocks-rim-jam",
-        "https://www.rotowire.com/basketball/headlines/jordan-walsh-news-collects-three-steals-536337"
+        "https://www.nytimes.com/2026/10/27/us/politics/iran-war-cost-rises.html",
+        "https://www.cbsnews.com/news/iran-war-cost-centcom-47-billion/",
+        "https://www.reuters.com/world/middle-east/us-costs-iran-war-rise-over-47-billion-according-pentagon-estimate-2026-10-28/"
       ]
     }
   ]
