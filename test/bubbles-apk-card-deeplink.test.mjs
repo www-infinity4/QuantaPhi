@@ -40,7 +40,7 @@ test('card opens the existing trusted WebView and bypasses conversation reset',(
  assert.doesNotMatch(panel.slice(panel.indexOf('private void deliverPendingCard()'),panel.indexOf('boolean show()',panel.indexOf('private void deliverPendingCard()'))),/loadUrl\(/);
  const chat=source('bubbles-ai.js');
  assert.match(chat,/openRegisteredCardFromAndroid:/);
- assert.match(chat,/module\.cards\.find\(item=>item\.id===id\)/);
+ assert.match(chat,/resolveBubblesQuickCard\(module,id\)/);
  assert.match(chat,/if\(!nativeOverlay\|\|typeof id/);
 });
 test('source, feed and science viewer details each mount their own APK control',()=>{
