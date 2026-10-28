@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-27T21:01:48.485629Z",
+  "checked_at": "2026-10-28T00:35:06.972573Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "arsenal vs",
-      "approx_searches": "500+",
-      "published_at": "2026-10-27T20:40:00Z",
+      "query": "william contreras",
+      "approx_searches": "10000+",
+      "published_at": "2026-10-28T00:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/arsenal-vs-benfica-womens-champions-140004421.html",
-        "https://www.arsenal.com/news/every-word-of-renees-and-alessias-pre-benfica-presser-a2U647Y6sTiV",
-        "https://www.livescore.com/en/news/football/more/slegers-shares-updates-on-several-arsenal-stars-ahead-of-benfica-bout-hayters/"
+        "https://www.mlb.com/news/william-contreras-showing-mastery-of-abs-challenge-system-in-postseason",
+        "https://www.washingtonpost.com/sports/2026/10/27/hell-take-your-hand-off-most-dangerous-high-five-baseball/",
+        "https://www.espn.com/mlb/story/_/id/50263667/rays-ease-basepaths-losing-game-1-world-series"
       ]
     },
     {
-      "query": "stan wawrinka",
-      "approx_searches": "500+",
-      "published_at": "2026-10-27T20:40:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/video/wawrinka-walks-out-to-emotional-standing-ovation-in-basel-2026",
-        "https://www.tenniswatcher.com/en/news/monfils-to-play-again-in-geneva-despite-retirement",
-        "https://www.bluewin.ch/en/sport/that-s-why-with-stan-wawrinka-a-part-of-my-love-for-tennis-is-also-leaving-li.3650956"
-      ]
-    },
-    {
-      "query": "pat sajak 80th birthday",
-      "approx_searches": "200+",
-      "published_at": "2026-10-27T20:40:00Z",
-      "related_news_urls": [
-        "https://people.com/pat-sajak-80th-birthday-tribute-daughter-maggie-sajak-12196478",
-        "https://www.tvinsider.com/1299840/maggie-sajak-birthday-tribute-dad-pat-80th/",
-        "https://thespun.com/trending/pat-sajaks-daughter-has-fans-heartbroken-over-throwback-photo"
-      ]
-    },
-    {
-      "query": "jiri lehecka",
-      "approx_searches": "500+",
-      "published_at": "2026-10-27T20:30:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/lehecka-locker-room-code-2026",
-        "https://www.atptour.com/en/video/wawrinka-walks-out-to-emotional-standing-ovation-in-basel-2026",
-        "https://www.tenniswatcher.com/en/news/monfils-to-play-again-in-geneva-despite-retirement"
-      ]
-    },
-    {
-      "query": "kevin o'connell kyler murray vikings",
-      "approx_searches": "200+",
-      "published_at": "2026-10-27T20:30:00Z",
-      "related_news_urls": [
-        "https://bringmethenews.com/minnesota-sports/kevin-oconnell-has-two-weeks-to-figure-out-kyler-murray-or-find-another-quarterback",
-        "https://www.fox.com/watch/clip/fmc-7t6b5vmg4j2isq8p/is-vikings-head-coach-kevin-o-connell-actually-a-quarterback-whisperer",
-        "https://vikingsterritory.com/2026/news/top_news/kevin-oconnell-laughable-jj"
-      ]
-    },
-    {
-      "query": "christian haynes",
-      "approx_searches": "200+",
-      "published_at": "2026-10-27T20:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/seahawks-release-veteran-player-trade-204224923.html",
-        "https://nfltraderumors.co/seahawks-waive-g-christian-haynes/",
-        "https://www.fieldgulls.com/seattle-seahawks-news/178434/seattle-seahawks-waive-former-third-round-pick-christian-haynes"
-      ]
-    },
-    {
-      "query": "angie nixon",
-      "approx_searches": "500+",
-      "published_at": "2026-10-27T20:30:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/cuban-exile-turned-congressman-unloads-dem-senate-hopeful-over-cuba-remarks",
-        "https://www.yahoo.com/news/politics/articles/cbs-news-deletes-post-misstating-132356172.html",
-        "https://www.tampabay.com/news/florida-politics/elections/2026/10/27/angie-nixon-cuba-dictatorship-cbs-interview/"
-      ]
-    },
-    {
-      "query": "oil prices",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-27T20:20:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html",
-        "https://www.wsj.com/finance/stocks/tech-stocks-power-higher-oil-cools-724e6a63",
-        "https://www.reuters.com/business/us-stock-futures-muted-oil-holds-near-april-highs-ahead-fed-decision-2026-10-27/"
-      ]
-    },
-    {
-      "query": "tyreek hill news",
+      "query": "paul reed",
       "approx_searches": "1000+",
-      "published_at": "2026-10-27T20:20:00Z",
+      "published_at": "2026-10-28T00:20:00Z",
       "related_news_urls": [
-        "https://timesofindia.indiatimes.com/sports/nfl/news/nothing-is-happening-tyreek-hill-faces-major-setback-in-chiefs-reunion-hopes-as-kansas-city-weighs-injury-risks/articleshow/135204021.cms",
-        "https://athlonsports.com/nfl/tyreek-hill-nears-a-return-from-knee-injury-per-drew-rosenhaus-as-rams-lose-davante-adams",
-        "https://lastwordonsports.com/nfl/2026/10/21/tyreek-hill-rams-davante-adams/"
+        "https://pistonpowered.com/paul-reed-vindicating-pistons-polarizing-isaiah-stewart-trade",
+        "https://sports.yahoo.com/articles/where-isaiah-stewart-why-beef-214006206.html",
+        "https://heavy.com/sports/nba/detroit-pistons/where-is-isaiah-stewart-why-beef-stew-isnt-playing-pistons/"
       ]
     },
     {
-      "query": "winter weather advisory",
+      "query": "jennifer garner",
       "approx_searches": "500+",
-      "published_at": "2026-10-27T20:20:00Z",
+      "published_at": "2026-10-28T00:20:00Z",
       "related_news_urls": [
-        "https://www.king5.com/article/news/local/winter-weather-advisory-issued-for-cascade-mountains/281-e55ea04b-ca97-419e-9daf-b55242ac521f",
-        "https://www.autoblog.com/news/winter-weather-advisory-issued-for-up-to-12-inches-of-snow-through-wednesday",
-        "https://komonews.com/weather/winter-weather-advisory-cascade-mountains-slippery-pass-travel-safety-3-to-12-inches-snow-road-driving-conditions-snow-plow"
+        "https://www.instyle.com/jennifer-garner-ben-affleck-kids-violet-seraphina-samuel-12174082",
+        "https://www.yahoo.com/entertainment/videos/jennifer-garner-three-kids-heres-134500741.html",
+        "https://www.istitutoimpariamo.it/jennifer-garner-reunites-with-ex-michael-vartan-for-25th-anniversary-of-alias-as-star-reflects-on-box-office-surprises-and-hollywood-reality/"
+      ]
+    },
+    {
+      "query": "chaney johnson",
+      "approx_searches": "200+",
+      "published_at": "2026-10-28T00:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909862",
+        "https://www.indystar.com/story/sports/nba/pacers/2026/10/25/pacers-vs-nets-how-tyrese-haliburton-led-indiana-to-win-without-ivica-zubac/92288076007/",
+        "https://www.netsdaily.com/nets-game-previews/115186/nets-vs-pacers-game-preview-how-to-watch-injury-report"
+      ]
+    },
+    {
+      "query": "peggy flanagan",
+      "approx_searches": "200+",
+      "published_at": "2026-10-28T00:20:00Z",
+      "related_news_urls": [
+        "https://www.startribune.com/mn-midterm-elections-us-senate-race-michele-tafoya-peggy-flanagan/601903550",
+        "https://kstp.com/kstp-news/top-news/barack-obama-endorses-peggy-flanagan-in-tight-minnesotas-us-senate-race/",
+        "https://www.duluthnewstribune.com/news/local/photos-bernie-sanders-visits-duluth-in-support-of-flanagan-ellison"
+      ]
+    },
+    {
+      "query": "shirley ballas",
+      "approx_searches": "10000+",
+      "published_at": "2026-10-28T00:10:00Z",
+      "related_news_urls": [
+        "https://www.thesun.co.uk/tv/40749839/shirley-ballas-joins-dancing-with-the-stars-strictly/",
+        "https://www.northjersey.com/videos/news/2026/10/27/shirley-ballas-mark-ballas-dwts-guest-judge-fair-bias/92462331007/",
+        "https://www.mirror.co.uk/3am/celebrity-news/shirley-ballas-strictly-come-dancing-37814737"
+      ]
+    },
+    {
+      "query": "mark ballas",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-28T00:10:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/10/24/celebrity-news/dwts-pros-witney-carson-and-mark-ballas-allegedly-feuded-during-season-21-former-contestants-claim/",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/10/23/dwts-carlos-alexa-penavega-marital-issues/92402176007/",
+        "https://www.tvinsider.com/1299422/mark-ballas-witney-carson-feud-dancing-with-the-stars-season-21-drama/"
+      ]
+    },
+    {
+      "query": "wild vs mammoth",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-28T00:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/utah/news/the-week-ahead-oct-26-nov-1-feature-10-26-26",
+        "https://www.startribune.com/minnesota-wild-utah-mammoth-score-today-kirill-kaprizov-goals-jesper-wallstedt-quinn-hughes-stats/601902996",
+        "https://sports.yahoo.com/articles/mammoth-face-huge-central-division-195542650.html"
+      ]
+    },
+    {
+      "query": "brooklyn nets vs boston celtics match player stats",
+      "approx_searches": "500+",
+      "published_at": "2026-10-28T00:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/game/_/gameId/401908044/brewers-rays",
+        "https://www.espn.com/soccer/match/_/gameId/401928522/villarreal-manacor",
+        "https://www.espn.com/mlb/game/_/gameId/401908043/rays-brewers"
+      ]
+    },
+    {
+      "query": "jordan walsh",
+      "approx_searches": "500+",
+      "published_at": "2026-10-28T00:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.co.uk/video/clip/_/id/50293046/jordan-walsh-connects-alley-oop",
+        "https://www.espn.ph/video/clip/_/id/50293002/jordan-walsh-rocks-rim-jam",
+        "https://www.rotowire.com/basketball/headlines/jordan-walsh-news-collects-three-steals-536337"
       ]
     }
   ]
