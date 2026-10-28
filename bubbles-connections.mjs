@@ -359,6 +359,41 @@ export function mountConnections(container,{token}) {
             status.textContent=result.providerRevocation==='failed'?'Disconnected in Bubbles. Provider revocation failed; remove Bubbles access in that service’s account settings.':'Account disconnected.';
           }catch(error){status.textContent=error.message;button.disabled=false;}});row.append(button);
         }
+        if(account.provider==='google'&&activeConnection(account)){
+          const gmailGranted=account.grantedActions?.includes('gmail.read');
+          const panel=element('section','','ba-gmail-reader');
+          panel.append(element('h3','Gmail · read-only in Bubbles'));
+          if(!gmailGranted){
+            panel.append(element('p','Gmail permission was not granted. Disconnect and reconnect Google, selecting Read Gmail messages, if you want Bubbles to read your inbox.','ba-muted'));
+          }else{
+            const query=document.createElement('input');query.type='search';query.maxLength=160;
+            query.placeholder='Find an email (optional)';query.setAttribute('aria-label','Search your connected Gmail inbox');query.className='ba-field';
+            const search=element('button','Read Gmail inbox','ba-control');search.type='button';
+            const results=element('div','');results.setAttribute('role','status');
+            search.addEventListener('click',async()=>{
+              search.disabled=true;results.replaceChildren(element('p','Reading Gmail with your approved Google account…'));
+              try{
+                const listing=await client.call('/read',{id:account.id,operation:'gmail.search',args:{query:query.value}});
+                const messages=Array.isArray(listing.data?.messages)?listing.data.messages.slice(0,20):[];
+                results.replaceChildren(element('p',messages.length+' message references from Gmail. No email was sent or changed.'));
+                for(const message of messages){
+                  if(!/^[A-Za-z0-9_-]{5,100}$/.test(message.id||''))continue;
+                  const preview=await client.call('/read',{id:account.id,operation:'gmail.message',args:{messageId:message.id}});
+                  const headers=preview.data?.payload?.headers||[];
+                  const header=name=>String(headers.find(h=>h.name?.toLowerCase()===name.toLowerCase())?.value||'').slice(0,250);
+                  const card=element('article','','ba-provider-card');
+                  card.append(element('strong',header('Subject')||'(no subject)'));
+                  card.append(element('p','From: '+(header('From')||'Unknown')+' · '+header('Date'),'ba-muted'));
+                  card.append(element('p',String(preview.data?.snippet||'').slice(0,450)));
+                  results.append(card);
+                }
+              }catch(error){results.replaceChildren(element('p','Gmail read failed: '+String(error.message||'connection unavailable').slice(0,150)));}
+              finally{search.disabled=false;}
+            });
+            panel.append(query,search,results);
+          }
+          row.append(panel);
+        }
         if(account.provider==='github'&&activeConnection(account)){
           const inspect=element('button','Check GitHub repositories','ba-control');inspect.type='button';
           const result=element('div','');result.setAttribute('role','status');
