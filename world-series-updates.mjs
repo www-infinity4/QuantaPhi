@@ -1,7 +1,7 @@
 import {
  isNotificationWindow,fetchWorldSeries,REFRESH_MS,TONIGHT_END,pregameReminderSlot,
  TEAMS,scoreText
-} from './world-series-score.mjs?v=20261028-game5';
+} from './world-series-score.mjs?v=20261028-game5b';
 /* Pregame reminders and five-minute live score notifications for Oct 28 Game 5.
  * Uses MLB scores and official linked logos; no guessed inning or points.
  * Score notification takes priority over unrelated Quick Ads.
@@ -14,7 +14,7 @@ import {
  const toast=el('aside','fit-update-toast');toast.id='worldSeriesUpdateToast';toast.hidden=true;
  toast.setAttribute('aria-label','World Series live scoreboard update');
  document.body.append(toast);
- let timer=null,lastReminderSlot=null,wasLive=false;
+ let timer=null,lastReminderSlot=null;
  try{lastReminderSlot=Number(sessionStorage.getItem(reminderKey))||null}catch{}
  const notify=visible=>window.dispatchEvent(new CustomEvent('quantaphi:world-series-toast',{detail:{visible}}));
  function close(){
@@ -64,10 +64,9 @@ import {
    return;
   }
   if(game.status!=='live'){
-   if(wasLive&&game?.status==='final')close();
+   close();
    return;
   }
-  wasLive=true;
   if(Date.now()<quiet)return;
   // Notify every five minutes even when tied, but ONLY with a verified current score.
   show(game);

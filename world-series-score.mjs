@@ -24,12 +24,13 @@ export function gameFromSchedule(payload){
  if(!game)return null;
  const abstract=String(game.status?.abstractGameState||'').toLowerCase();
  const detailed=String(game.status?.detailedState||'');
+ const unavailable=/postpon|cancel|suspend|delay/i.test(detailed);
  const isFinal=abstract==='final'||/final|completed|game over/i.test(detailed);
  const isLive=abstract==='live'||/in progress|manager challenge|mid.*inning/i.test(detailed);
  const away=game.teams.away.score==null?NaN:Number(game.teams.away.score);
  const home=game.teams.home.score==null?NaN:Number(game.teams.home.score);
  const validScore=v=>Number.isInteger(v)&&v>=0&&v<=200;
- const status=isFinal?'final':isLive?'live':abstract==='preview'?'pregame':'unknown';
+ const status=unavailable?'unavailable':isFinal?'final':isLive?'live':abstract==='preview'?'pregame':'unknown';
  const hasScore=validScore(away)&&validScore(home);
  const linescore=game.linescore||{};
  const ordinal=typeof linescore.currentInningOrdinal==='string'?linescore.currentInningOrdinal:'';
