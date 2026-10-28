@@ -1,3 +1,4 @@
+import {mountQuickCardApkBridge} from './quick-card-apk-bridge.mjs';
 /* Evidence-first specialist Quick Cards. Independent of providers: never clone
  * their private sessions, infer credentials, or claim a live provider feed. */
 const item=(id,name,category,feature,url,description,role,otherUrl='')=>
@@ -81,6 +82,8 @@ function detail(){
  const card=scienceCard(new URLSearchParams(location.search).get('card'));
  if(!card){root.append(el('p','','Unknown science card.'));return;}
  document.title=card.name+' · Infinity Quick Card';
+ root.dataset.quickCardId=card.id;root.dataset.cardTitle=card.name;
+ mountQuickCardApkBridge(root);
  root.append(el('p','sqc-label',card.category+' · INFINITY 2026®'),
  el('h1','',card.name),el('h2','',card.feature),el('p','sqc-muted',card.description),
  external('Use official '+card.name+' ↗',card.url));
