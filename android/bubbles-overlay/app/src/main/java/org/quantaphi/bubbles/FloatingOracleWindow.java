@@ -88,6 +88,10 @@ final class FloatingOracleWindow {
     private final java.util.ArrayDeque<QueuedMessage> pendingTyped = new java.util.ArrayDeque<>();
     private boolean dispatchInFlight = false, typedDispatchInFlight = false;
     private long speechDispatchAt = 0L, typedDispatchAt = 0L;
+    private String pendingCardId;
+    private boolean suppressFreshOnCardOpen;
+    private boolean cardDeliveryInFlight;
+    private int cardDeliveryAttempts;
     private static final String SITE_URL = "https://quantaphi.org/bubbles.html?nativeOverlay=1"; // paired through ordinary chat input
     private static final String SITE_HOST = "quantaphi.org";
 
@@ -119,6 +123,7 @@ final class FloatingOracleWindow {
                 deliverQueuedSpeech();
                 deliverQueuedText();
                 pollWebsiteReply();
+                deliverPendingCard();
                 backupRecentHistory(now);
                 checkSiteRevision();
                 // The floating voice service stays foregrounded after Hide.
@@ -170,6 +175,50 @@ final class FloatingOracleWindow {
         b.setElevation(dp(2));
         return b;
     }
+    /**
+     * Open the already running chat with one registered card. Crucially this
+     * bypasses the "fresh conversation on reopening" behavior: the person
+     * can stay in an X/Facebook conversation while viewing this card.
+     */
+    boolean showCard(String id) {
+        if (!BubblesCardLink.validCardId(id)) return false;
+        pendingCardId = id;
+        cardDeliveryAttempts = 0;
+        suppressFreshOnCardOpen = true;
+        boolean opened;
+        try { opened = show(); }
+        finally { suppressFreshOnCardOpen = false; }
+        if (!opened) pendingCardId = null;
+        else deliverPendingCard();
+        return opened;
+    }
+
+    private void deliverPendingCard() {
+        if (pendingCardId == null || cardDeliveryInFlight || cardDeliveryAttempts >= 3
+                || !websiteReady || livePage || !trustedChat(website)
+                || dispatchInFlight || typedDispatchInFlight) return;
+        final String id = pendingCardId;
+        final int generation = loadGeneration;
+        cardDeliveryInFlight = true;
+        cardDeliveryAttempts++;
+        // Evaluate only a bounded, JSON-quoted card ID on trusted HTTPS.
+        // Never navigate away, transfer cookies or inject a prompt to the AI.
+        website.evaluateJavascript(
+            "Boolean(window.QuantaBubbles && window.QuantaBubbles.openRegisteredCardFromAndroid"
+                + " && window.QuantaBubbles.openRegisteredCardFromAndroid("
+                + JSONObject.quote(id) + "))",
+            result -> {
+                cardDeliveryInFlight = false;
+                if (generation != loadGeneration || !trustedChat(website)
+                        || !id.equals(pendingCardId)) return;
+                if ("true".equals(result)) pendingCardId = null;
+                else if (cardDeliveryAttempts >= 3 && status != null) {
+                    status.setText("This QuantaPhi chat version cannot open that card. Your existing conversation is unchanged.");
+                    status.setVisibility(View.VISIBLE);
+                }
+            });
+    }
+
     boolean show() {
         if (root != null) {
             final boolean reopened = root.getVisibility() != View.VISIBLE;
@@ -178,7 +227,7 @@ final class FloatingOracleWindow {
             // On genuine reopen, begin a new visible conversation without
             // clearing the owner archive or NativeChatJournal crash backup.
             // Do not reset while the web bridge has an unfinished voice/typed turn.
-            if (reopened && websiteReady && trustedChat(website)
+            if (reopened && !suppressFreshOnCardOpen && websiteReady && trustedChat(website)
                     && !dispatchInFlight && !typedDispatchInFlight
                     && pendingSpeech.isEmpty() && pendingTyped.isEmpty()) {
                 website.evaluateJavascript(
@@ -635,6 +684,7 @@ final class FloatingOracleWindow {
             // The visible Android foreground service owns recognition; the
             // website only coordinates an owner-scoped lease, never mutes it.
             claimMicrophone();
+            deliverPendingCard();
         }
     }
 
@@ -966,6 +1016,8 @@ final class FloatingOracleWindow {
     }
 
     void close() {
+        pendingCardId = null;
+        cardDeliveryInFlight = false;
         stopLiveCall();
         PhoneToolController.stop();
         loadGeneration++;
