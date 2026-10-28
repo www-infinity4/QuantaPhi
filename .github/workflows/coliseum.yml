@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'coliseum/**'
+      - 'workers/coliseum/**'
+      - 'test/coliseum-api.test.mjs'
       - 'test/coliseum*'
       - 'oracle-card-deck.js'
       - 'index.html'
@@ -23,7 +25,10 @@ jobs:
           node --check coliseum/coliseum-core.mjs
           node --check coliseum/coliseum.js
           node --check coliseum/zeus-quick-card.mjs
-          node --test test/coliseum.test.mjs
+          node --check coliseum/room-api-core.mjs
+          node --check coliseum/coliseum-live.mjs
+          node --check workers/coliseum/worker.mjs
+          node --test test/coliseum.test.mjs test/coliseum-api.test.mjs
       - name: Verify prototype has no fabricated live subscription routes
         run: |
           test -f coliseum/index.html
