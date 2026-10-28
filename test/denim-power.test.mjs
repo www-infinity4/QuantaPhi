@@ -45,4 +45,9 @@ test('Design Lab markup exposes the category controls and honest scope',()=>{
  assert.match(html,/denim-power\.mjs/);
  assert.match(html,/do not follow accounts on other websites/);
  assert.match(css,/\.dp-item/);
+ const mini=readFileSync(new URL('../design-lab/quick-card.mjs',import.meta.url),'utf8');
+ assert.match(mini,/applyDenimPower\(readDenimState\(\),'follow-all'\)/);
+ assert.match(mini,/lab-card-category-go/);
+ assert.match(mini,/quantaphi:feed-updated/);
+
 });
