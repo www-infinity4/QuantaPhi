@@ -2,7 +2,7 @@
  * One verified APK powers all cards. A website cannot silently install an APK.
  * This module adds no generic search bar and does not impersonate third-party apps.
  */
-const CARD_SELECTOR='.iqc-card[data-source-id], .iqc-card[data-card-id], .premium-card[data-source-id], [data-quick-card-id]';
+const CARD_SELECTOR='.iqc-card[data-source-id], .iqc-card[data-card-id], .premium-card[data-source-id], .sqc-card[data-source-id], [data-quick-card-id]';
 const RELEASE_PATH=/^\/www-infinity4\/QuantaPhi\/releases\/download\/bubbles-preview-current\/Bubbles-v\d+\.\d+\.\d+-Preview5-Android12\.apk$/;
 const clean=(value,max=120)=>String(value||'').trim().slice(0,max);
 
