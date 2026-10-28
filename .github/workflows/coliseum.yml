@@ -1,0 +1,33 @@
+name: Coliseum model cards and builder prototype
+on:
+  pull_request:
+    paths:
+      - 'coliseum/**'
+      - 'test/coliseum*'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - '.github/workflows/coliseum.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate all modules and local proposal rules
+        run: |
+          node --check coliseum/coliseum-core.mjs
+          node --check coliseum/coliseum.js
+          node --check coliseum/zeus-quick-card.mjs
+          node --test test/coliseum.test.mjs
+      - name: Verify prototype has no fabricated live subscription routes
+        run: |
+          test -f coliseum/index.html
+          grep -q 'Checkout not connected' coliseum/index.html
+          grep -q 'No paid subscriptions or third-party-model access' coliseum/index.html
+          grep -q '1,000 verified members' coliseum/index.html
+          ! grep -E -q 'paypal\.com/cgi-bin/webscr|paypal\.me/|api\.openai\.com/v1|api-m\.paypal\.com' coliseum/index.html
