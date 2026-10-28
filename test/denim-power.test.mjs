@@ -38,7 +38,7 @@ test('forged card ids, unsupported commands and overflow fail closed',()=>{
 });
 test('Design Lab markup exposes the category controls and honest scope',()=>{
  const html=readFileSync(new URL('../design-lab/index.html',import.meta.url),'utf8');
- const css=readFileSync(new URL('../design-lab/lab.css',import.meta.url),'utf8');
+ const css=readFileSync(new URL('../design-lab/denim-power.css',import.meta.url),'utf8');
  assert.match(html,/id="denimFollowAll"/);
  assert.match(html,/id="denimUnfollowAll"/);
  assert.match(html,/id="denimBrandFilter"/);
