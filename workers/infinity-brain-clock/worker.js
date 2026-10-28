@@ -1336,6 +1336,27 @@ export default{
     return output(request,await r.json(),r.status);
    }catch{return output(request,{ok:false,error:'phone_tool_unavailable'},503);}
   }
+  // Separate owner-verified GitHub READ path: no writer lease, no queue, no
+  // anonymous REST rate-limit fallback. The StarQuest/Brain bearer is checked
+  // here on every request and never passed to GitHub or a chat model.
+  if(path==='/work/github/read'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(Number(request.headers.get('Content-Length')||0)>1200)return output(request,{ok:false,error:'request_too_large'},413);
+   try{
+    const raw=await request.text();if(raw.length>1200)return output(request,{ok:false,error:'request_too_large'},413);
+    const body=JSON.parse(raw||'{}');
+    if(!body||typeof body!=='object'||Array.isArray(body)||
+       !['read_repository','read_file'].includes(body.action)||
+       Object.keys(body).some(key=>!['action','repository','path'].includes(key)))
+     return output(request,{ok:false,error:'unsupported_read_only_action'},400);
+    const result=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/github/read',{
+     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    return output(request,await result.json(),result.status);
+   }catch(error){return output(request,{ok:false,error:'owner_github_read_unavailable'},503);}
+  }
   if(path==='/work/github'&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
