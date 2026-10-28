@@ -347,11 +347,23 @@ export function mountCardTools(root,card){
   return;
  }
  if(id==='google'||id==='bing'){
-  // Search remains the primary interaction; global controls come afterward.
-  searchTool(root,card);mountCardActions(root,card);return;
+  // Search remains the primary interaction; generic search is unnecessary.
+  searchTool(root,card);mountCardActions(root,card,{showSearch:false});return;
  }
  if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
- if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);
+ if(id==='youtube'||id==='tiktok'){
+  // Play is the first action; a secondary source lookup is available without
+  // stacking two different search boxes under a single video card.
+  mediaPlayer(root,id);
+  const discover=node('details','qcx-discover-details');
+  discover.append(node('summary','','Find more '+(id==='tiktok'?'TikTok videos':'YouTube videos')));
+  if(searchTool(discover,card)){
+   if(id==='youtube')trendingTool(discover,card);
+   root.append(discover);
+  }
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
  if(id==='spotify')mediaPlayer(root,'spotify');
  if(id==='starmaker'){
   // Real on-card curated song search, explicitly consented Music Quant
@@ -367,8 +379,9 @@ export function mountCardTools(root,card){
  if(id==='wikipedia')wikipediaTool(root,card);
  if(id==='gold'||id==='silver')calculator(root,card);
  checklist(root,card);
- searchTool(root,card);
+ const alreadyHasSearch=searchTool(root,card);
  trendingTool(root,card);
- // Cards with their own working source search do not need a duplicate generic search bar.
- mountCardActions(root,card,{showSearch:!liveSourceProfile(id)});
+ // Only one source lookup form per card. Generic TinyFish search remains for
+ // cards that have no native provider search or live-source lookup.
+ mountCardActions(root,card,{showSearch:!alreadyHasSearch&&!liveSourceProfile(id)});
 }
