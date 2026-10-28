@@ -18,7 +18,7 @@ test('Shop Phi is photo-first, with camera snap and native mobile fallback',()=>
  assert.match(capture,/object-fit:contain|MediaRecorder|canvas\.toBlob/);
  assert.match(ui,/sellerStudio\?\.ids\(\)/);
  assert.match(ui,/mediaIds/);
- assert.match(ui,/Publish after verification/);
+ assert.match(ui,/Photos saved privately/);
  assert.ok(!ui.includes('window.currentActiveCardData'));
 });
 test('Local title-only media draft cannot silently become published catalog inventory',()=>{
@@ -28,7 +28,7 @@ test('Local title-only media draft cannot silently become published catalog inve
  assert.match(capture,/credentials:'same-origin'/);
  assert.match(capture,/comparables/);
  assert.match(capture,/awaiting robot-review service connection/);
- assert.match(ui,/Use an https source link, or attach actual item photos/);
+ assert.match(ui,/Optional original item and photo links must use secure HTTPS/);
 });
 test('No browser-side policy pass can claim authenticity',()=>{
  const ctx={};ctx.window=ctx;vm.runInNewContext(policy,ctx);
