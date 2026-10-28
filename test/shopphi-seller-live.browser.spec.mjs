@@ -66,4 +66,28 @@ test('ShopPhi owner lists own item with wallet and receives a verified shareable
  await expect(page.locator('#title')).toHaveText('My 1881 Morgan silver dollar');
  await expect(page.locator('#state')).toContainText('Published, shareable unlisted listing');
  await expect(page.locator('#disclosure')).toContainText('has not verified');
+
+ // A previous version stored the seller's original coin as a private
+ // on-phone draft. Recover THAT item (same ID), never invent a new listing.
+ const oldId='a9876543-1234-4234-8234-123456789012';
+ await page.goto(base+'/shopphi-sell.html',{waitUntil:'domcontentloaded'});
+ await page.evaluate(old=>{
+  const key='quantaphi:shop-ad-phi:drafts:v1',prior=JSON.parse(localStorage.getItem(key)||'[]');
+  localStorage.setItem(key,JSON.stringify([{itemId:old.id,title:'My saved Morgan coin',
+   description:'Coin from my collection.',category:'Coins & paper money',condition:'Used',
+   shipping:'Local pickup',priceLabel:'$75.00',quantity:'1',mediaIds:[],
+   publishState:'device-draft'},...prior]));
+ },{id:oldId});
+ await page.reload({waitUntil:'domcontentloaded'});
+ await page.getByRole('button',{name:'My listings'}).click();
+ await page.locator('#shopAdPhi .sap-list').getByRole('button',{name:/My saved Morgan coin/}).click();
+ await page.locator('[name="recover-own"]').check();
+ await page.locator('[name="recover-public"]').check();
+ await page.getByRole('button',{name:'Publish this saved item'}).click();
+ await expect(page.locator('#shopAdPhi .sap-status')).toContainText('published at a verified shareable URL',{timeout:15000});
+ const recovered=calls.filter(x=>x.id===oldId);
+ expect(recovered.map(x=>x.action)).toEqual(['publish','public-readback']);
+ const savedCloud=calls.find(x=>x.action==='draft'&&x.item.itemId===oldId);
+ expect(savedCloud.item.title).toBe('My saved Morgan coin');
+ expect(savedCloud.item.priceLabel).toBe('$75.00');
 });
