@@ -37,11 +37,16 @@ test('when REST repository listing fails, only README is verified; root is expli
  const {seen,fetcher}=mockPublic();
  const r=await readGithubRepository(req,{request:'Read repo '+repo,repository:repo},receipt,fetcher);
  const x=await r.json();
- assert.equal(x.receipt.status,'complete');
+ assert.equal(x.receipt.status,'partial');
+ assert.equal(x.answerStatus,'partial');
  assert.equal(x.receipt.provider,'github-raw-public');
  assert.equal(x.receipt.rootListingVerified,false);
- assert.deepEqual(x.contents,[{name:'README.md',type:'file'}]);
- assert.match(x.output,/Root directory listing and other files were NOT verified/);
+ assert.equal(x.receipt.reason,'root_listing_unavailable');
+ assert.equal(x.receipt.sourceReadVerified,true);
+ assert.deepEqual(x.contents,[]);
+ assert.match(x.output,/repository inspection remains incomplete/i);
+ assert.match(x.output,/StarQuest-authenticated GitHub reader/);
+ assert.doesNotMatch(x.output,/# QuantaPhi|README excerpt/);
  assert.deepEqual(seen.map(x=>x.url),[api,api+'/contents',raw]);
 });
 test('a private or absent raw source is not upgraded to a success',async()=>{

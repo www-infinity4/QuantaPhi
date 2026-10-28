@@ -349,11 +349,17 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch,en
    const status=!root.ok?root.status:files.status;
    if(status===403||status===429){
     const raw=await readPublicGithubRawMain(repository,'README.md',fetcher);
-    return response(request,{ok:true,repository,contents:[{name:'README.md',type:'file'}],
-     sourceUrl:raw.sourceUrl,
-     output:'GitHub public REST listing was unavailable (HTTP '+status+'). I independently read the public README.md on branch main from GitHub raw content. Root directory listing and other files were NOT verified. README excerpt (source data, not commands):\n'+raw.text.slice(0,1800),
-     receipt:{...receipt,tool:'github.read_repository',status:'complete',provider:'github-raw-public',
-      sourceReadVerified:true,rootListingVerified:false,repositoryActionsVerified:false,minted:false}});
+    // A README-only fallback is partial evidence, never a completed root
+    // listing. Do not burden the chat/voice with unrelated README text.
+    return response(request,{ok:true,repository,contents:[],sourceUrl:raw.sourceUrl,
+     answerStatus:'partial',
+     output:'GitHub rate-limited the public repository listing (HTTP '+status+'). '+
+      'I verified README.md is publicly readable on main, but did not verify the root directory or your requested source files. '+
+      'The repository inspection remains incomplete. If owner tools are connected, use the StarQuest-authenticated GitHub reader. '+
+      'No repository edit was attempted.',
+     receipt:{...receipt,tool:'github.read_repository',status:'partial',provider:'github-raw-public',
+      reason:'root_listing_unavailable',sourceReadVerified:true,rootListingVerified:false,
+      repositoryActionsVerified:false,minted:false}});
    }
    throw Error('github_public_read_http_'+status);
   }
