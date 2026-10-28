@@ -96,9 +96,9 @@ function show(item,draft=false){
  button(row,'+1 Build',()=>{
   const packageApi=window.PhiProjectPackage;
   if(!packageApi?.capture){status.textContent='Code Phi project collection is not loaded; this post has not been added to a build.';return}
-  if(!safe(item.url)){status.textContent='Add a verified original source link before sending this draft to Code Phi.';return}
+  if(!safe(item.url||item.publicUrl)){status.textContent='Publish your ShopPhi item or add an original source link before sending it to Code Phi.';return}
   if(!packageApi.active()&&!packageApi.newToken('Shop Phi product ideas')){status.textContent='Could not start a Code Phi project.';return}
-  const result=packageApi.capture({kind:'product',id:'shop:'+item.itemId,title:item.title,description:item.description,sourceUrl:item.url,imageUrl:safe(item.imageUrl),originCard:'shop-phi'});
+  const result=packageApi.capture({kind:'product',id:'shop:'+item.itemId,title:item.title,description:item.description,sourceUrl:item.url||item.publicUrl,imageUrl:safe(item.imageUrl),originCard:'shop-phi'});
   status.textContent=result.ok?(result.duplicate?'Already in your Code Phi project.':'Added this exact product to your Code Phi project (+1).'):result.reason||'Could not add this post to the project.';
  });
  button(row,'Browse similar at eBay',()=>{
@@ -108,7 +108,7 @@ function show(item,draft=false){
   url.searchParams.set('_nkw',String(item.title||'').trim().slice(0,100));
   window.open(url.href,'_blank','noopener,noreferrer');
  });
- button(row,'Collect',()=>{try{const k='quantaPhiCollected',data={key:'shop:'+(item.url||item.itemId),type:'Shop Phi',title:item.title,sourceUrl:item.url,media:item.imageUrl||'',story:item.description||'',collectedAt:new Date().toISOString()};save(k,[data,...read(k).filter(x=>x.key!==data.key)]);window.QuantaStarCredit?.('collect',data.key,data);status.textContent='Item collected. Rewards depend on StarQuest confirmation.'}catch{status.textContent='Collection could not be saved.'}});
+ button(row,'Collect',()=>{try{const k='quantaPhiCollected',data={key:'shop:'+(item.url||item.itemId),type:'Shop Phi',title:item.title,sourceUrl:item.url||item.publicUrl,media:item.imageUrl||'',story:item.description||'',collectedAt:new Date().toISOString()};save(k,[data,...read(k).filter(x=>x.key!==data.key)]);window.QuantaStarCredit?.('collect',data.key,data);status.textContent='Item collected. Rewards depend on StarQuest confirmation.'}catch{status.textContent='Collection could not be saved.'}});
  if(item.publicUrl||item.url)button(row,'Share',async()=>{
   try{
    const u=item.publicUrl||item.url;
