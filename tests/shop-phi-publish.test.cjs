@@ -61,6 +61,10 @@ test('public page and entrypoint both load publisher from verified wallet and no
  const index=source('index.html'),seller=source('shopphi-sell.html'),page=source('shopphi-item.html'),
   js=source('shopphi-item.js'),core=source('shop-ad-phi.js'),client=source('quant-ai-personal.js');
  for(const x of [index,seller])assert.ok(x.indexOf('shop-phi-publish.js')<x.indexOf('shop-ad-phi.js')&&x.includes('shop-phi-publish.js'));
+ assert.ok(seller.indexOf('cloud-wallet-client.js')>0&&seller.indexOf('cloud-wallet-client.js')<seller.indexOf('quant-ai-personal.js'),
+  'The standalone seller editor must load the original wallet bridge before protected seller API calls');
+ assert.match(seller,/id="shopphiConnectWallet"/);
+ assert.match(seller,/shopphi-wallet-status.js/);
  assert.match(core,/item\.ownItem=ownership\.checked/);
  assert.match(core,/item\.publishConsent=publicConsent\.checked/);
  assert.match(client,/resolveDeviceToken/);
@@ -68,6 +72,6 @@ test('public page and entrypoint both load publisher from verified wallet and no
  assert.match(page,/noindex,follow/);
  assert.match(js,/fetch\('\/quant-ai\/api\/shopphi\/public\//);
  assert.doesNotMatch(page,/Purchase now|PayPal checkout/);
- for(const f of ['shop-phi-publish.js','shopphi-item.js','quant-ai-personal.js','shop-ad-phi.js','shop-phi-seller.js'])
+ for(const f of ['shop-phi-publish.js','shopphi-item.js','quant-ai-personal.js','shop-ad-phi.js','shop-phi-seller.js','shopphi-wallet-status.js'])
   assert.doesNotThrow(()=>new Function(source(f)));
 });
