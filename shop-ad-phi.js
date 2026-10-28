@@ -101,7 +101,7 @@ function show(item,draft=false){
     item.ownItem=true;item.publishConsent=true;
     void publish(item);
   });
-  action.classList.add('sap-publish-saved');
+  action.className='sap-publish-saved';
   terms.replaceChildren(node('strong','Ready to publish this recovered draft?'),own,consent,action);
   feature.append(terms);
   button(row,'Edit this saved draft',()=>{
