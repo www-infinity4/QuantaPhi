@@ -664,8 +664,44 @@ public final class MainActivity extends Activity {
     }
     private int dp(float value){return Math.round(getResources().getDisplayMetrics().density*value);}
 
+    /**
+     * A user tapped Open in Bubbles APK from a Quick Card. Never start the
+     * microphone or enable accessibility on behalf of a browser deep link.
+     * If the user already has a running Bubbles session, open that SAME chat
+     * in the overlay, then return to the previous app behind the bubble.
+     */
+    private boolean consumeQuickCardLink(Intent intent) {
+        if (intent == null || !Intent.ACTION_VIEW.equals(intent.getAction())) return false;
+        Uri uri = intent.getData();
+        if (uri == null || !"quantaphi-bubbles".equals(uri.getScheme())
+                || !"card".equals(uri.getHost())) return false;
+        intent.setData(null); // single-use even when Android reuses MainActivity
+        String id = BubblesCardLink.cardId(uri);
+        if (id == null) {
+            if (state != null) state.setText("Unrecognized Quick Card link. No action was taken.");
+            return true;
+        }
+        if (!BubblesService.isSessionRunning() || !canTalk()) {
+            if (state != null) state.setText("Quick Card: " + id
+                + ". Start Bubbles with its normal permissions, then tap Open in Bubbles APK again.");
+            return true;
+        }
+        try {
+            Intent open = new Intent(this, BubblesService.class)
+                .setAction(BubblesService.ACTION_OPEN_CARD)
+                .putExtra(BubblesService.EXTRA_CARD_ID, id);
+            startService(open); // Existing service ONLY. No new foreground mic startup.
+            if (state != null) state.setText("Opening Quick Card " + id + " in the running Bubbles overlay.");
+            moveTaskToBack(true); // Keep the previous browser/app under the floating bubble.
+        } catch (RuntimeException error) {
+            if (state != null) state.setText("Bubbles could not open the card. The current chat is preserved.");
+        }
+        return true;
+    }
+
     @Override protected void onResume() {
         super.onResume();
+        boolean fromQuickCard = consumeQuickCardLink(getIntent());
         // Browser return is navigation only. It never provides credentials,
         // starts microphone capture, or triggers a second OAuth attempt.
         Uri deepLink = getIntent() == null ? null : getIntent().getData();
@@ -708,7 +744,7 @@ public final class MainActivity extends Activity {
         // automatically when Bubbles is opened. Explicit Stop is respected.
         // We do NOT launch a background microphone at installation or reboot:
         // Android requires a visible user-started foreground session.
-        if (canTalk() && !BubblesService.isSessionRunning()
+        if (!fromQuickCard && canTalk() && !BubblesService.isSessionRunning()
                 && BrainNotes.prefs(this).getBoolean("orb_auto_resume", true)) {
             ui.postDelayed(() -> {
                 if (!isFinishing() && !BubblesService.isSessionRunning() && canTalk()
@@ -745,6 +781,7 @@ public final class MainActivity extends Activity {
     @Override protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
+        if (consumeQuickCardLink(intent)) return;
         if (intent != null && intent.getBooleanExtra("termux_python_probe", false)) {
             intent.removeExtra("termux_python_probe");
             ui.post(this::offerTermuxPythonProbe);
