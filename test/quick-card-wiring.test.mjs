@@ -1,4 +1,7 @@
 import test from 'node:test';
+// Include Integra audit regressions in the existing CI gate.
+import './integra-validation.test.mjs';
+
 import assert from 'node:assert/strict';
 import {readFileSync,mkdtempSync,existsSync,readFileSync as read,rmSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';

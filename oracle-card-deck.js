@@ -17,6 +17,12 @@ const choices=[
  ['churchOfIAmCard','Church of I AM · Gary Cardone'],
  ['googleTrendCulture','Media · Trending searches'],
  ['infiniteBook','Read an original story'],
+ ['infinityReaderMystery','Tales of Mystery & Suspense · Read'],
+ ['infinityReaderTwilight','Twilight Zone · Original Fiction'],
+ ['infinityReaderTech','Tech History · Discover'],
+ ['infinityReaderFame','Touts of Fame · Biographies'],
+ ['infinityReaderSports','Sports Almanac · Records'],
+ ['infinityReaderCosmic','Beyond the Signal · Read'],
  ['phiChannelCards','Watch a channel'],
  ['phiStoryWriter','Write a story'],
  ['phiMediaBuilder','Create images and video'],
@@ -48,6 +54,12 @@ const CARD_DIRECTIONS={
  churchOfIAmCard:['church-of-i-am','Sunday conversations','Find Gary Cardone’s official Sunday I AM gathering'],
  googleTrendCulture:['trending-media','Media','Investigate popular media and events'],
  infiniteBook:['reads-realms','Stories','Read and research an original story'],
+ infinityReaderMystery:['reader-mystery','Stories','Read original mysteries and public-domain detective fiction'],
+ infinityReaderTwilight:['reader-twilight','Stories','Read independent, original speculative stories'],
+ infinityReaderTech:['reader-tech','History','Read technology inventions and early computing histories'],
+ infinityReaderFame:['reader-fame','Biographies','Discover pathways to fame and overlooked innovators'],
+ infinityReaderSports:['reader-sports','Sports','Read historical games, milestones and athletic records'],
+ infinityReaderCosmic:['reader-cosmic','Stories','Read original cosmic fiction and public-domain space adventures'],
  phiChannelCards:['channels','Television','Watch a channel'],
  phiStoryWriter:['story-writer','Stories','Write or continue a story'],
  phiMediaBuilder:['image-builder','Media','Create images and video'],
@@ -339,7 +351,7 @@ function show(entry,remember=true){
    // the generic QuantaPhi site preview used by unrelated URLs.
    const mediaSrc=displayed.node.querySelector('[data-walmart-image],.qbp-photo,.sap-feature img,.iqc-media img,.qcx-art img,.premium-selected img,.oracle-original-cover img,img[src]')?.getAttribute('src')||'';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
-    category:displayed.category,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
+    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
