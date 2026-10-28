@@ -1,5 +1,5 @@
 import {randomToken} from './vault.mjs';
-const READ_ACTIONS = Object.freeze({'drive.list':'drive.read','sheets.values':'sheets.read','calendar.events':'calendar.read'});
+const READ_ACTIONS = Object.freeze({'drive.list':'drive.read','sheets.values':'sheets.read','calendar.events':'calendar.read', 'gmail.search':'gmail.read','gmail.message':'gmail.read'});
 function selected(record, kind, id) {
   if (typeof id !== 'string' || !id || id.length > 200 || !record.resourceGrants?.[kind]?.includes(id)) throw Error('resource_selection_required');
   return encodeURIComponent(id);
