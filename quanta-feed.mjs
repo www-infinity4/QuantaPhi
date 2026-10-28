@@ -1,4 +1,4 @@
-import {mountQuickCardApkBridge} from './quick-card-apk-bridge.mjs';
+import {mountQuickCardApkBridge} from './quick-card-apk-bridge.mjs?v=20261028-cardbridge2';
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-directcards2';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
