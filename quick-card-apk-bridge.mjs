@@ -18,6 +18,10 @@ export function bubblesCardUrl(id,title){
  const search=new URLSearchParams({sourceCard:String(id),sourceTitle:clean(title,120)});
  return '/bubbles.html?'+search+'#bubblesAICard';
 }
+export function bubblesNativeCardUrl(id){
+ if(!/^[a-zA-Z0-9_-]{1,90}$/.test(String(id||'')))return null;
+ return 'quantaphi-bubbles://card/'+encodeURIComponent(String(id));
+}
 export function verifiedApkUrl(releases){
  const release=releases?.bubbles;
  if(!release||release.available!==true||!release.url)return null;
@@ -54,6 +58,13 @@ export function mountQuickCardApkBridge(root,apkPromise){
  install.className='bubbles-card-install-status';
  install.textContent='Checking verified APK…';
  install.setAttribute('role','status');
+ // This is a user-tapped Android VIEW deep link, not a silent install.
+ // Browser users retain the Open Bubbles web fallback even without an APK.
+ if(typeof navigator!=='undefined'&&/Android/i.test(navigator.userAgent||'')){
+  const native=makeLink('Open in Bubbles APK',bubblesNativeCardUrl(card.id),'bubbles-card-native');
+  native.title='Open the installed Bubbles Android overlay. Bubbles must already be running.';
+  wrapper.append(native);
+ }
  wrapper.append(open,install);
  const toolbar=root.querySelector('.qca-controls, .iqc-actions, .premium-actions');
  if(toolbar)toolbar.append(wrapper);
