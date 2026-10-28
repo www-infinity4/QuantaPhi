@@ -1,5 +1,6 @@
 /* The Power Chain prototype as ONE native Oracle swipe card, not a nested iframe. */
 import {LANES,planChain,runPowerChain} from './power-chain-core.mjs';
+import {DENIM_CARDS,FEED_STORAGE_KEY,cleanFeedState,applyDenimPower,denimTotals} from './denim-power-core.mjs';
 import {mountCardActions} from '/quanta-card-actions.mjs';
 const make=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
 function createCard(){
@@ -24,6 +25,37 @@ function createCard(){
  const stop=make('button','lab-card-stop','Stop');stop.type='button';stop.disabled=true;
  const open=make('a','lab-card-open','Full design lab ↗');open.href='/design-lab/index.html';
  actions.append(go,stop,open);
+ const denimPanel=make('div','lab-card-category');
+ const denimAction=make('button','lab-card-category-go','⏻ FOLLOW ALL DENIM CARDS');
+ denimAction.type='button';
+ const denimStatus=make('p','lab-card-fine','Follow the six current denim product cards in QuantaPhi on this device.');
+ denimStatus.setAttribute('role','status');
+ const manageDenim=make('a','lab-card-category-manage','Manage denim follows ↗');
+ manageDenim.href='/design-lab/index.html#denimPower';
+ const denimDetails=make('div','lab-card-category-detail');
+ denimDetails.append(denimStatus,manageDenim);
+ denimPanel.append(denimAction,denimDetails);
+ function readDenimState(){
+  try{return cleanFeedState(JSON.parse(localStorage.getItem(FEED_STORAGE_KEY)||'{}'));}
+  catch{return cleanFeedState({});}
+ }
+ function updateDenimState(){
+  const totals=denimTotals(readDenimState());
+  denimAction.textContent=totals.followed===totals.total?'✓ ALL '+totals.total+' DENIM CARDS FOLLOWED':'⏻ FOLLOW '+totals.total+' DENIM CARDS';
+  denimAction.setAttribute('aria-pressed',String(totals.followed===totals.total));
+ }
+ denimAction.addEventListener('click',()=>{
+  try{
+   const state=applyDenimPower(readDenimState(),'follow-all');
+   localStorage.setItem(FEED_STORAGE_KEY,JSON.stringify(state));
+   denimStatus.textContent='Saved '+DENIM_CARDS.length+' denim cards to your QuantaPhi Following view on this device.';
+   window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'power-chain-denim'}}));
+   updateDenimState();
+  }catch(error){denimStatus.textContent='Could not save denim follows: '+String(error?.message||'storage unavailable');}
+ });
+ window.addEventListener('quantaphi:feed-updated',updateDenimState);
+ window.addEventListener('storage',event=>{if(event.key===FEED_STORAGE_KEY)updateDenimState();});
+ updateDenimState();
  const status=make('p','lab-card-status','Ready. Each source will be checked in QuantaPhi’s public web index.');status.setAttribute('role','status');
  const results=make('div','lab-card-results');
  const rule=make('p','lab-card-fine','Independent public-index results. Not 10 website sign-ins or direct scraping.');
@@ -47,7 +79,7 @@ function createCard(){
  }
  go.addEventListener('click',()=>void run());stop.addEventListener('click',()=>ctrl?.abort());
  field.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();void run();}});
- content.append(label,field,modes,actions,status,results,rule);
+ content.append(label,field,modes,actions,denimPanel,status,results,rule);
  const shared=make('div','lab-card-shared');
  mountCardActions(shared,{id:'power-chain',name:'Power Chain · Design Lab',category:'Design',url:'https://quantaphi.org/design-lab/index.html'},{showSearch:false});
  card.append(art,content,shared);return card;
