@@ -282,9 +282,10 @@ export async function readPublicGithubRawMain(repository,path,fetcher=fetch){
 // The GitHub token remains server-side in Brain. Guests use the public reader.
 export async function authenticatedGithubSource(request,env,{action,repository,path}){
  const authorization=request.headers.get('Authorization')||'';
- if(!/^Bearer r[bd]_[a-f0-9]{64}$/i.test(authorization)||!env?.BRAIN?.fetch||
+ if(!/^Bearer r[bd]_[a-f0-9]{64}$/i.test(authorization)||
     !/^www-infinity4\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/.test(repository)||
     !['read_repository','read_file'].includes(action))return null;
+ if(!env?.BRAIN?.fetch)return {authReadBlocked:true,reason:'owner_github_reader_not_configured'};
  if(action==='read_file'&&(!/^(?:[a-z0-9_.-]+\/){0,6}[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json)$/i.test(path||'')||
     path.includes('..')))return null;
  try{
@@ -295,9 +296,11 @@ export async function authenticatedGithubSource(request,env,{action,repository,p
    body:JSON.stringify({action,repository,...(action==='read_file'?{path}:{})}),
    signal:AbortSignal.timeout(20000)
   });
-  if(!upstream.ok)return null;
+  if(!upstream.ok)return {authReadBlocked:true,reason:
+   upstream.status===401||upstream.status===403?'owner_session_not_verified':
+    upstream.status===404?'owner_reader_not_deployed':'owner_github_reader_unavailable'};
   const data=await upstream.json();
-  if(data.ok!==true||data.repository!==repository)return null;
+  if(data.ok!==true||data.repository!==repository)return {authReadBlocked:true,reason:'owner_github_receipt_invalid'};
   if(action==='read_repository'){
    if(data.rootListingVerified!==true||!/^[a-f0-9]{40}$/i.test(data.headSha||'')||
       !Array.isArray(data.contents)||data.contents.some(x=>!x||typeof x.name!=='string'||
@@ -305,7 +308,7 @@ export async function authenticatedGithubSource(request,env,{action,repository,p
   }else if(data.path!==path||!/^[a-f0-9]{40}$/i.test(data.ref||'')||
     !/^[a-f0-9]{40}$/i.test(data.sha||'')||typeof data.content!=='string')return null;
   return data;
- }catch{return null}
+ }catch{return {authReadBlocked:true,reason:'owner_github_reader_unavailable'}}
 }
 // Fixed GitHub host, public-read-only API. Reading a repo is NOT creating it.
 // A model's description of files never supplies an authenticated GitHub receipt.
@@ -317,6 +320,13 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch,en
  if(!/^[A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/.test(repository))
   return response(request,{ok:true,output:'Give me the public repository owner/name to inspect, for example www-infinity4/QuantaPhi.',receipt:{...receipt,status:'needs_input',reason:'repository_name_required',repositoryActionsVerified:false}});
  const verified=await authenticatedGithubSource(request,env,{action:'read_repository',repository});
+ if(verified?.authReadBlocked)return response(request,{ok:true,output:
+  verified.reason==='owner_session_not_verified'?'Your Bubbles owner session is expired or not authorized. Reconnect the existing StarQuest owner tools, then retry the GitHub read. No GitHub data was verified.':
+  verified.reason==='owner_reader_not_deployed'?'Bubbles owner GitHub reader is not deployed in the Brain Worker yet. This is not a GitHub rate-limit problem; source and release verification are pending.':
+  'The authenticated GitHub reader is unavailable ('+verified.reason+'). No repository source was verified; the anonymous README fallback is not substituted for your requested task.',
+  receipt:{...receipt,tool:'github.read_repository',status:'blocked',reason:verified.reason,
+   repositoryActionsVerified:false,sourceReadVerified:false,rootListingVerified:false}});
+
  if(verified){
   const contents=verified.contents;
   const matched=contents.filter(x=>/bubbles|brain|worker|code|\.json$|index\.html$/i.test(x.name));
@@ -383,6 +393,13 @@ export async function readGithubFile(request,body,receipt,fetcher=fetch,env=null
  if(!/^(?:[a-z0-9_.-]+\/){0,6}[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json)$/i.test(path)||path.includes('..'))
   return fail('file_path_required','Give me a README or a source file path such as docs/README.md.');
  const verified=await authenticatedGithubSource(request,env,{action:'read_file',repository:repo,path});
+ if(verified?.authReadBlocked)return response(request,{ok:true,output:
+  verified.reason==='owner_session_not_verified'?'Your Bubbles owner session is expired or not authorized. Reconnect the existing StarQuest owner tools, then retry the GitHub read. No GitHub data was verified.':
+  verified.reason==='owner_reader_not_deployed'?'Bubbles owner GitHub reader is not deployed in the Brain Worker yet. This is not a GitHub rate-limit problem; source and release verification are pending.':
+  'The authenticated GitHub reader is unavailable ('+verified.reason+'). No repository source was verified; the anonymous README fallback is not substituted for your requested task.',
+  receipt:{...receipt,tool:'github.read_file',status:'blocked',reason:verified.reason,
+   repositoryActionsVerified:false,sourceReadVerified:false,rootListingVerified:false}});
+
  if(verified){
   return response(request,{ok:true,repository:repo,path,content:verified.content,sourceUrl:verified.sourceUrl,
    truncated:verified.truncated===true,
