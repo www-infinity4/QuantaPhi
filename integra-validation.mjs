@@ -28,7 +28,7 @@ export function inspectCardSource(raw,{evidenceLink='',notes=''}={}){
   check('integra-mail','Integra Gmail authorization','not-connected','Designated Gmail is owner-declared; this system has not verified a Gmail grant for that mailbox.'),
   check('release','Authority to execute or release','validation-only','Integra reviews evidence but cannot send, purchase, publish, approve deployments or modify other accounts.')
  ];
- return {schema:'infinity.integra-card-audit.v1',role:INTEGRA_REVIEW_STATUS,source:u.href,
+ return {ok:true,schema:'infinity.integra-card-audit.v1',role:INTEGRA_REVIEW_STATUS,source:u.href,
   provider:sheet.provider,providerName:sheet.providerName,providerLogin:sheet.providerLogin,
   evidence:evidence?.href||null,notes:details||null,gmail:{address:INTEGRA_GMAIL,status:INTEGRA_GMAIL_STATUS,connected:false},
   status:'needs-evidence',checks};
