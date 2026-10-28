@@ -43,3 +43,15 @@ test('card opens the existing trusted WebView and bypasses conversation reset',(
  assert.match(chat,/module\.cards\.find\(item=>item\.id===id\)/);
  assert.match(chat,/if\(!nativeOverlay\|\|typeof id/);
 });
+test('source, feed and science viewer details each mount their own APK control',()=>{
+ for(const path of ['source-quick-cards.mjs','quanta-feed.mjs','science-quick-cards.mjs']){
+  const code=source(path);
+  assert.match(code,/mountQuickCardApkBridge\(host\)|mountQuickCardApkBridge\(root\)/);
+  assert.match(code,/dataset\.quickCardId=card\.id/);
+  assert.match(code,/dataset\.cardTitle=card\.name/);
+ }
+ const science=source('science-quick-card.html');
+ assert.match(science,/quick-card-apk-bridge\.css/);
+ const bridge=source('quick-card-apk-bridge.mjs');
+ assert.match(bridge,/\.sqc-card\[data-source-id\]/);
+});
