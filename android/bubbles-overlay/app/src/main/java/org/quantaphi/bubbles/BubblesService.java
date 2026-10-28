@@ -63,6 +63,8 @@ public final class BubblesService extends Service {
     private static volatile boolean sessionRunning = false;
     static boolean isSessionRunning() { return sessionRunning; }
     public static final String ACTION_OPEN_CHAT = "org.quantaphi.bubbles.OPEN_CHAT";
+    public static final String ACTION_OPEN_CARD = "org.quantaphi.bubbles.OPEN_CARD";
+    public static final String EXTRA_CARD_ID = "card_id";
     public static final String ACTION_SCREEN_FOLLOW_ON = "org.quantaphi.bubbles.SCREEN_FOLLOW_ON";
     public static final String ACTION_TEXT = "org.quantaphi.bubbles.TEXT";
     public static final String ACTION_STOP_SPEAKING = "org.quantaphi.bubbles.STOP_SPEAKING";
@@ -534,6 +536,15 @@ public final class BubblesService extends Service {
     }
 
     @Override public int onStartCommand(Intent intent, int flags, int startId) {
+        // A deep link can select a registered card, never authorize a task.
+        // This branch must precede the microphone/overlay startup code, so
+        // an external browser can NEVER start Bubbles listening on its own.
+        if (intent != null && ACTION_OPEN_CARD.equals(intent.getAction())) {
+            String id = intent.getStringExtra(EXTRA_CARD_ID);
+            if (connected && oracleWindow != null && BubblesCardLink.validCardId(id))
+                oracleWindow.showCard(id);
+            return START_NOT_STICKY;
+        }
         // Open the first-party website overlay even on the first launch,
         // without routing users into an unrelated native chat screen.
         if (intent != null && ACTION_OPEN_CHAT.equals(intent.getAction())
