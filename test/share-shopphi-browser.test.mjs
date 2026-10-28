@@ -20,13 +20,13 @@ test('seller has full-width eBay-like fields and an honest preview instead of fa
  assert.match(form,/shop-ad-phi\.js/);
  assert.match(shop,/sap-item-specifics/);
  for(const field of ['category','condition','shipping','quantity','priceLabel','title','description'])assert.ok(shop.includes(field),'field '+field);
- assert.match(shop,/Save listing draft \+ show preview/);
+ assert.match(shop,/Save my item to ShopPhi/);
  assert.match(shop,/form\.hidden=false/);
  assert.match(shop,/feature\.scrollIntoView/);
- assert.match(shop,/Public publishing requires a connected, verified Shop Phi seller account/);
+ assert.match(shop,/Connect your existing Unified Wallet/);
  assert.match(css,/sap-seller-fullscreen/);
  assert.match(css,/sap-submit-listing/);
- assert.match(index,/shop-ad-phi\.js\?v=20261027-full-seller2/);
+ assert.match(index,/shop-ad-phi\.js\?v=20261027-seller-live1/);
 });
 test('ordinary Quick Cards never masquerade Google results as a TinyFish website browser',()=>{
  assert.doesNotMatch(actions,/providerSearchUrl\(provider,value\)\|\|/);
