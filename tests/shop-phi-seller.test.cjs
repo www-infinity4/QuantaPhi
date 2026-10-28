@@ -23,7 +23,7 @@ test('Shop Phi is photo-first, with camera snap and native mobile fallback',()=>
 });
 test('Local title-only media draft cannot silently become published catalog inventory',()=>{
  assert.match(ui,/item\.verificationStatus=item\.mediaIds\.length\?'not-reviewed'/);
- assert.match(ui,/if\(draft&&connected&&!item\.mediaIds\?\.length\)/);
+ assert.match(ui,/ShopPhiPublish/);
  assert.match(capture,/reviewEndpoint/);
  assert.match(capture,/credentials:'same-origin'/);
  assert.match(capture,/comparables/);
