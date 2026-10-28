@@ -124,6 +124,11 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
     browser_profile:'lite',agent_config:{max_duration_seconds:120}});
    const runId=run.run_id||run.runId;
    if(!uuid(runId))throw Error('missing_provider_run_id');
+   if(brokerEnabled(env)){
+    if(typeof run.receiptProof!=='string'||!/^[a-f0-9]{64}$/i.test(run.receiptProof))
+     throw Error('private_broker_proof_missing');
+    job.receiptProof=run.receiptProof; // Private storage only; excluded from summary().
+   }
    job.runId=runId;job.state='working';await storage.put(k(job.jobId),job);
    return success({job:summary(job),output:'Read-only Quick Card browser action submitted; verify result using status.'},202);
   }catch(e){
@@ -138,7 +143,7 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
  if(!configured(env))return fail('tinyfish_backend_not_configured',503);
  try{
   const run=brokerEnabled(env)?await privateBroker(env,{action:'status',cardId:job.cardId,
-   runId:job.runId}):await tinyfish(env,fetcher,'/v1/runs/'+encodeURIComponent(job.runId));
+   runId:job.runId,requestId:job.requestId,receiptProof:job.receiptProof}):await tinyfish(env,fetcher,'/v1/runs/'+encodeURIComponent(job.runId));
   const state=String(run.status||'').toUpperCase();
  if(['FAILED','CANCELLED','TIMED_OUT'].includes(state)){job.state='failed';job.error=String(run.error?.message||run.error||state).slice(0,140)}
   else if(state==='COMPLETED'){
