@@ -288,7 +288,7 @@ test('source cache reduces calls, preserves observation age and marks failed ref
     assert.equal(stale.state, 'stale');
     assert.equal(stale.observedAt, observedAt, 'reuse cannot renew verification time');
     assert.equal(stale.refreshError, 'upstream_http_403');
-    assert.equal(stale.sourceState, 'checked');
+    assert.equal(stale.sourceState, 'blocked');
     assert.match(stale.detail, /Current read failed/);
     const hold = current.report.tracks.find(t => t.id === 'integra');
     assert.equal(hold.sourceState, 'blocked');
