@@ -100,3 +100,25 @@ test('Bubbles chat uses verified owner bearer for explicit GitHub reads without 
  assert.match(brain,/ownerAuthorized\(env,token\)/);
  assert.match(brain,/path==="\/work\/github\/read"|pathname==='\/github\/read'/);
 });
+
+
+test('expired owner session is explicitly blocked without falling back to an unrelated README',async()=>{
+ const calls=[];
+ const env={BRAIN:{fetch:async()=>new Response('not owner',{status:401})}};
+ const result=await (await readGithubRepository(req(),{request:'Inspect repository '+repo,repository:repo},receipt,
+  async url=>{calls.push(url);return new Response('anonymous REST 429',{status:429})},env)).json();
+ assert.equal(result.receipt.status,'blocked');
+ assert.equal(result.receipt.reason,'owner_session_not_verified');
+ assert.equal(result.receipt.sourceReadVerified,false);
+ assert.equal(calls.length,0);
+ assert.match(result.output,/session is expired or not authorized/);
+ assert.doesNotMatch(result.output,/README excerpt/);
+});
+test('unreleased Brain read endpoint is not represented as an owner login or successful source read',async()=>{
+ const env={BRAIN:{fetch:async()=>new Response('not found',{status:404})}};
+ const result=await (await readGithubFile(req(),{request:'Read README.md',repository:repo,path:'README.md'},receipt,
+  async()=>{throw Error('must not use public fallback when an owner session exists')},env)).json();
+ assert.equal(result.receipt.status,'blocked');
+ assert.equal(result.receipt.reason,'owner_reader_not_deployed');
+ assert.match(result.output,/not deployed/);
+});
