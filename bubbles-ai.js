@@ -901,9 +901,12 @@ launcher.append(create('span','ba-orb-shine'),create('span','ba-orb-center'));la
 const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('aria-label','Bubbles AI messenger');
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
 header.append(name,close);
-// The same wallet-scoped two-account setup appears at the start of first-party
-// Bubbles chat (including the Android WebView). Preview never blocks chat.
-const chatGate=embedded?null:create('section','ba-inline-account-gate');
+// Account sign-in and provider permissions belong on the dedicated Bubbles
+// Accounts viewer, never in a second panel above messages. The historical
+// inline gate used a mismatched 'chat' ID prefix and could remain stuck on
+// 'Checking GitHub/Cloudflare…' even after verified wallet sign-in.
+// Preserve the existing official Accounts and StarQuest wallet flows.
+const chatGate=null;
 let chatGateMounted=false,chatGateLoading=false;
 if(chatGate){
  chatGate.id='chatBubblesSigninGate';
@@ -1068,6 +1071,13 @@ pluginsButton.addEventListener('click',async()=>{
  }catch{pluginsPanel.textContent='Skill references could not load. Your connections are unchanged.';}
 });
 tools.append(pluginsButton,pluginsPanel);
+if(!embedded){
+ const accountSettings=create('a','ba-account-settings-link','Accounts & sign-in');
+ accountSettings.href='/bubbles-accounts.html';
+ accountSettings.rel='noopener';
+ accountSettings.setAttribute('aria-label','Open Bubbles account connections in the dedicated viewer');
+ tools.append(accountSettings);
+}
 tools.addEventListener('toggle',()=>{if(tools.open&&typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));});
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
