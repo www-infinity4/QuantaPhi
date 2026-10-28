@@ -7,12 +7,20 @@
 <link rel="stylesheet" href="/shop-ad-phi.css?v=20261027-full-seller1">
 <style>:focus-visible{outline:3px solid #1593d0;outline-offset:3px}body{margin:0}.shopphi-intro{margin:10px 0 16px;padding:16px;background:#e5f1f7;border-radius:15px;border:1px solid #c2d7e5;color:#25465e;font-size:14px;line-height:1.55}.shopphi-intro strong{font-size:17px}.shopphi-info{font-size:13px;color:#5d7080;line-height:1.5;margin:15px auto;max-width:750px}.shopphi-header a:first-child{font-size:22px;letter-spacing:-.06em}#shopAdPhi .sap-seller-fullscreen .sap-search-links{display:none}@media(min-width:840px){body.shopphi-sell-page main{max-width:940px}}@media(max-width:460px){.shopphi-header a{font-size:13px!important}}</style>
 </head><body class="shopphi-sell-page"><main><header class="shopphi-header"><a href="/">QuantaPhi®</a><a href="/?card=shopAdPhi">← Back to Quick Cards</a></header>
-<div class="shopphi-intro"><strong>ShopPhi · Sell an item</strong><p>Build an eBay-style item draft with actual photographs, condition, category, quantity, asking price, shipping and an official product/source URL. Photos and unfinished drafts remain private on this device until a verified seller-media and publishing service is connected.</p></div>
+<div class="shopphi-intro"><strong>ShopPhi · Sell an item</strong><p>Build an eBay-style item draft with actual photographs, condition, category, quantity, asking price, shipping and an official product/source URL. Use your existing Unified Wallet to save goods privately, upload real product photos, and publish a shareable unlisted item page after confirming ownership. Public carousel placement requires separate review.</p></div>
+<section class="shopphi-intro" aria-label="Seller wallet connection" style="background:#fff;border-color:#b9d3df">
+<strong>Unified Wallet seller connection</strong>
+<p id="shopphiWalletStatus" role="status">Checking the wallet linked to this browser…</p>
+<button id="shopphiConnectWallet" type="button" style="background:#145784;color:white;border:0;border-radius:12px;min-height:48px;padding:10px 16px;font-weight:850;font-size:15px">Connect my Unified Wallet</button>
+</section>
 <div id="shopAdPhi" data-seller-page="true" aria-label="Full-size ShopPhi listing editor"></div>
 <p class="shopphi-info">Saving does not create a public offer or take money. Merchant checkout stays with its authorized provider. Do not upload ID documents, banking numbers, verification codes or someone else's private photographs.</p>
 </main>
-<script defer src="/quant-ai-personal.js"></script>
+<script src="/cloud-wallet-client.js?v=20261011-account-selection1"></script>
+<script defer src="/shopphi-wallet-status.js?v=20261027-seller-live1"></script>
+<script defer src="/quant-ai-personal.js?v=20261027-seller-live1"></script>
 <script defer src="/shop-phi-policy.js"></script>
-<script defer src="/shop-phi-seller.js"></script>
-<script defer src="/shop-ad-phi.js?v=20261027-full-seller1"></script>
+<script defer src="/shop-phi-seller.js?v=20261027-seller-live1"></script>
+<script defer src="/shop-phi-publish.js?v=20261027-seller-live1"></script>
+<script defer src="/shop-ad-phi.js?v=20261027-seller-live1"></script>
 </body></html>

@@ -13,7 +13,7 @@ test('ShopPhi full-page seller studio opens with working item fields, draft and 
  await page.locator('[name="condition"]').selectOption('Used');
  await page.locator('[name="shipping"]').selectOption('Shipping offered');
  await page.locator('[name="quantity"]').fill('1');
- await page.getByRole('button',{name:'Save Shop Phi listing draft'}).click();
+ await page.getByRole('button',{name:'Save my item to ShopPhi'}).click();
  await expect(page.locator('#shopAdPhi .sap-feature')).toContainText('Vintage denim jacket');
  await expect(page.locator('#shopAdPhi .sap-feature')).toContainText('$49.95');
  const stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('quantaphi:shop-ad-phi:drafts:v1')||'[]'));

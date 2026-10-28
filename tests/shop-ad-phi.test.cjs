@@ -58,7 +58,7 @@ test('Create listing remains readable and explicitly saves privately when owner 
  assert.ok(s.button('Create listing'));
  await s.form.events.submit({preventDefault(){}});
  assert.match(s.text(),/PRIVATE POST DRAFT/);
- assert.match(s.text(),/not connected to an authenticated Shop Phi owner session/i);
+ assert.match(s.text(),/Seller cloud publishing is not connected/i);
  assert.equal(s.calls.length,0);
  s.button('Collect').click();s.button('Collect').click();
  assert.equal(JSON.parse(s.store.get('quantaPhiCollected')).length,1);
@@ -71,7 +71,7 @@ test('Create listing remains readable and explicitly saves privately when owner 
 test('unsafe source URL is not saved or posted',async()=>{
  const s=setup();fill(s);s.fields.url.value='javascript:alert(1)';
  await s.form.events.submit({preventDefault(){}});
- assert.equal(s.store.size,0);assert.match(s.text(),/Use an https/);
+ assert.equal(s.store.size,0);assert.match(s.text(),/Optional original item and photo links must use secure HTTPS/);
 });
 test('Create post uses owner session, verifies catalog and confirms public readback',async()=>{
  const s=setup({apiBase:'/widgetphi',siteId:'my-site',instanceId:'shop-1'});fill(s);
@@ -95,7 +95,7 @@ test('failed owner post preserves local draft and reports server error',async()=
  await s.form.events.submit({preventDefault(){}});
  assert.match(s.text(),/Post not verified as published: owner_session_expired/);
  assert.equal(JSON.parse(s.store.get('quantaphi:shop-ad-phi:drafts:v1')).length,1);
- assert.ok(s.button('Retry public posting'));
+ assert.ok(s.button('Save / retry cloud listing'));
 });
 test('product-specific +1 Build stores the exact source in a project instead of a fake link',async()=>{
  const s=setup();fill(s);await s.form.events.submit({preventDefault(){}});

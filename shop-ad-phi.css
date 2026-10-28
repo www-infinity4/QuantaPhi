@@ -99,3 +99,19 @@ body.shopphi-sell-page .shopphi-header a{color:#214f73;text-decoration:none;font
  #shopAdPhi .sap-seller-fullscreen .sap-form{padding:11px}
  #shopAdPhi .sap-seller-fullscreen .sap-item-specifics{grid-template-columns:1fr}
 }
+
+
+/* Own-goods seller authorization is a deliberate, readable opt-in; keep native checkbox size. */
+#shopAdPhi .sap-seller-fullscreen .sap-form>label:has(input[type=checkbox]),
+#shopAdPhi .sap-form>label:has(input[type=checkbox]){
+ display:flex;align-items:flex-start;gap:12px;font-size:15px;line-height:1.5;
+ background:#eff6fa;border:1px solid #b4cbda;border-radius:12px;padding:13px;
+ color:#183b56;
+}
+#shopAdPhi .sap-form input[type=checkbox],
+#shopAdPhi .sap-seller-fullscreen .sap-form input[type=checkbox]{
+ display:block;appearance:auto;flex:0 0 23px;width:23px;height:23px;min-height:23px;
+ max-width:23px;padding:0;margin:1px 0 0;accent-color:#12699b;
+}
+#shopAdPhi .sap-form>label:has(input[type=checkbox]) span{flex:1}
+#shopAdPhi .sap-feature .sap-actions button{min-height:48px}
