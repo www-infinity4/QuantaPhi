@@ -58,7 +58,7 @@ test('Create listing remains readable and explicitly saves privately when owner 
  assert.ok(s.button('Create listing'));
  await s.form.events.submit({preventDefault(){}});
  assert.match(s.text(),/PRIVATE POST DRAFT/);
- assert.match(s.text(),/not connected to an authenticated Shop Phi owner session/i);
+ assert.match(s.text(),/secure wallet-owned ShopPhi seller service is unavailable/i);
  assert.equal(s.calls.length,0);
  s.button('Collect').click();s.button('Collect').click();
  assert.equal(JSON.parse(s.store.get('quantaPhiCollected')).length,1);
