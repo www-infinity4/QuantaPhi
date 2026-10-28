@@ -67,6 +67,7 @@ export const cards=Object.freeze([
  app('fox-one-live-news','FOX One · Live News Video','/source-quick-card.html?card=fox-one-live-news','QuantaPhi',['fox one news','fox news live promo','fox one live news','fox live news ad']),
  app('starmaker-studio','StarMaker Song Studio','/studio/','QuantaPhi',['starmaker','karaoke','song directory','sing','record voice','music studio']),
  app('quick-card-wiring','Quick Card Wiring Study','/quick-card-wiring.html','QuantaPhi',['c13b0 quick card','wiring template','site schematic','website mirror study','quick card study']),
+ app('integra-validator','Integra · Quick Card Validation','/integra-validation.html','QuantaPhi',['integra','validate quick card','source audit','card security check','integra ai']),
  app('quantaphi','QuantaPhi','/','QuantaPhi',['quantaphi home','quantaphi website','quantaphi page']),
  app('alien-coin','Alien Coin','/alien-coin/','Alien-Coin',['alien coin website']),
  app('resonance','Resonance Calculator','/resonance.html','QuantaPhi',['resonance engine']),
