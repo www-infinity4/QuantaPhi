@@ -6,6 +6,8 @@ on:
       - 'quick-card-apk-bridge.css'
       - 'integra-x-reply-policy.mjs'
       - 'bubbles-ai.js'
+      - 'android/bubbles-overlay/**'
+      - 'test/bubbles-apk-card-deeplink.test.mjs'
       - 'bubbles-provider-card.mjs'
       - 'bubbles-provider-card.html'
       - 'bubbles-card-catalog.mjs'
@@ -37,7 +39,7 @@ jobs:
           node --check bubbles-ai.js
           node --check bubbles-card-catalog.mjs
       - name: Verify URL safety, X reply consent, and replay protection
-        run: node --test test/quick-card-apk-bridge.test.mjs test/integra-x-reply-policy.test.mjs test/bubbles-provider-card.test.mjs
+        run: node --test test/quick-card-apk-bridge.test.mjs test/integra-x-reply-policy.test.mjs test/bubbles-provider-card.test.mjs test/bubbles-apk-card-deeplink.test.mjs
       - name: Check all public card pages load the shared bridge
         shell: bash
         run: |
