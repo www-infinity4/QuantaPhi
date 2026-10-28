@@ -230,7 +230,7 @@ export function mountConnections(container,{token}) {
   refresh.type='button';status.setAttribute('role','status');
   const scopes=element('fieldset',''),legend=element('legend','Google access');scopes.append(legend);
   const selections=[];
-  for(const [name,action] of [['Find Drive files','drive.read'],['Read spreadsheets','sheets.read'],['Read calendar events','calendar.read']]) {
+  for(const [name,action] of [['Find Drive files','drive.read'],['Read spreadsheets','sheets.read'],['Read calendar events','calendar.read'],['Read Gmail messages','gmail.read']]) {
     const label=element('label',''),check=document.createElement('input');check.type='checkbox';check.value=action;label.append(check,document.createTextNode(' '+name+' '));scopes.append(label);selections.push(check);
   }
   section.append(element('h2','Your accounts'),status,catalog,cancel,accounts,scopes,refresh);container.append(section);
