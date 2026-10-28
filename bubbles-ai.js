@@ -2705,7 +2705,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   let answer='',readVerified=false;
   try{
    const resp=await bubblesFetch(AI,{method:'POST',
-    headers:{'Content-Type':'application/json'},
+    headers:{'Content-Type':'application/json',
+     ...(!publicPageReadRequested&&!embedded&&ownerReady&&ownerHeaders?.Authorization
+      ?{Authorization:ownerHeaders.Authorization}:{})},
     body:JSON.stringify({request,requestId:crypto.randomUUID()})},30000);
    const result=await resp.json();
    if(!resp.ok||result.receipt?.tool!==expectedReadTool||result.receipt?.status!=='complete'||
