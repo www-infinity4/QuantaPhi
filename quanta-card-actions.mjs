@@ -1,6 +1,7 @@
 import {cardProvider,quickCardManifest} from './quanta-card-provider.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
 import {mountTinyFishCardReader} from './tinyfish-card-reader.mjs';
+import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
 /* Shared actions for QuantaPhi quick cards. No browser sign-in implies API permission. */
 const STORE_STARS='quantaPhiCardStarsV1';
 const STORE_COLLECT='quantaPhiCollected';
@@ -85,6 +86,18 @@ export function mountCardActions(host,card,options={}){
   window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:item}));
   notify(status,'Collected on this device. Cloud sync and coin rewards are not confirmed.');
  });
+ // Every public, embeddable card gets the same professional in-site preview.
+ // The modal contains the original live controls, not screenshots posing as actions.
+ if(!new URLSearchParams(location.search).has('preview') && safeLocalCardUrl(previewUrl(card),location.origin+'/')){
+  b('◫ Preview',()=>{
+   const ok=openQuickCardPreview({url:previewUrl(card),title:name,
+    description:card.shareDescription||card.description||card.feature||card.study||'',
+    image:card.shareImage||card.image||card.poster||card.mediaSrc||'',
+    official:card.official||card.website||'',
+    previewMode:card.previewMode});
+   if(!ok)notify(status,'This card uses its original full-page viewer.');
+  });
+ }
  b('↗ Share',async()=>{
   const url=sharePreviewUrl(card,host);
   try{
