@@ -2,23 +2,19 @@
 
 The live Cloudflare bindings have already been added to `bubbles-tools` and `infinity-brain-clock` as `TINYFISH_BROKER` pointing at `continuity-session-coordinator` (production). The same 64-hex-character secret `TINYFISH_BRIDGE_TOKEN` is saved privately in all three Workers. The upstream `TINYFISH_API_KEY` belongs **only** to the coordinator. Never copy either secret into a file, browser, README, screenshot, URL, GitHub action output or chat.
 
-## Unfinished release gate (do not claim this is live)
+## Staging checkpoint — October 28 UTC
 
-The existing `continuity-session-coordinator` deployment currently has a five-minute scheduled observer, public read-only `/health` and `/status` routes, and static page assets. Its live main and view modules have **not** been replaced on this branch; do not redeploy the coordinator from a partial source tree.
+- Recovered deployed coordinator `entry.mjs`, `view.mjs`, `worker.mjs` as complete source without public credentials.
+- Added protected `POST /internal/tinyfish` to the coordinator. The default GET routes and five-minute scheduled observer remain intact.
+- Cloudflare staged (not deployed) version: `e8adb821-b120-46ee-9ea8-84200989f430`.
+- Staged version bindings inspected: all 10 original bindings survived, including `TINYFISH_API_KEY`, `TINYFISH_BRIDGE_TOKEN`, `WORK_DB`, site and browser services.
+- Version URL smoke: `GET /` returned the expected eight-track dashboard; `GET /health` returned service=continuity-session-coordinator and configuredTracks=8. `GET /internal/tinyfish` returned HTTP 405, while the old production version returns 404; this confirms the added route without exercising an API key. Version preview URLs were re-disabled afterward to restore original settings.
+- Latest `bubbles-tools` production deployment had removed `TINYFISH_BROKER`; this was repaired directly via Cloudflare settings PATCH and verified. Follow-up deployments must preserve it using the Wrangler file.
+- `wrangler.toml` now pins the existing service bindings, D1 and `*/5 * * * *` schedule; secret values remain out of source.
+- No authenticated POST call through the coordinator, TinyFish upstream success, or browser/Android Quick Card click has been verified yet.
+- Unit CI workflow added in the branch, but verified successful test output for this head is still unavailable; do not infer green CI from workflow existence.
 
-To activate the source module after staging an exact, audited snapshot of its complete currently deployed Worker modules, add to its worker module:
-
-```js
-import {tinyfishBroker} from './tinyfish-broker.mjs';
-```
-
-At the beginning of `fetch(request, env)` after computing the path, **before** the existing GET-only guard:
-
-```js
-if(path==='/internal/tinyfish') return tinyfishBroker(request, env);
-```
-
-Preserve the existing five-minute scheduled handler, Durable Object/D1 bindings, views, source revision and all other routes verbatim. Never replace the coordinator with only `tinyfish-broker.mjs`. Upload/stage the complete module set with inherited existing bindings, compare the exact pre-/post- binding identities and routes, verify test receipts, and only then promote.
+**Production release remains blocked.** Do not overwrite the deployed coordinator until an authenticated POST smoke, source/regression tests, and rollback check are all complete. Continue with this exact staged version where possible, avoiding full worker replacement.
 
 ## Request path and scope
 
