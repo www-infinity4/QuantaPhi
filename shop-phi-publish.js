@@ -47,7 +47,7 @@ async function publish(item,studio,status,onUpdate,saveDraft){
   throw Error('Public item readback is unavailable. Your cloud draft remains recoverable.');
  item.publishState='public';
  item.publicUrl=receipt.listing.link;
- item.imageUrl=receipt.listing.imageUrl||item.imageUrl;
+ item.imageUrl=receipt.listing.imageUrl?new URL(receipt.listing.imageUrl,location.origin).href:item.imageUrl;
  item.merchant=receipt.listing.merchant||item.merchant;
  saveDraft(item);onUpdate(item);
  status.textContent='Your item is published at a verified shareable URL. It is UNLISTED, not yet approved for the public carousel. Tap Share to send the listing.';
