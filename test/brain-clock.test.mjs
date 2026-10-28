@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
+import {quickCardStorage,deferred} from './helpers/quick-card-storage.mjs';
 const sourceReviewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/source-review.mjs',import.meta.url))).toString('base64');
 const handoffSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/technical-handoff.mjs',import.meta.url),'utf8')).replace('./source-review.mjs',sourceReviewUrl);
 const handoffUrl='data:text/javascript;base64,'+Buffer.from(handoffSource).toString('base64');
@@ -54,6 +55,34 @@ test('quick-card browser HTTP route denies guests and wrong origins before forwa
  const good=await brainWorker.fetch(request('Bearer '+owner),env);assert.equal(good.status,200);assert.equal(forwarded,1);
  const huge=await brainWorker.fetch(request('Bearer '+owner,'https://quantaphi.org',' '.repeat(2500)),env);
  assert.equal(huge.status,413);assert.equal(forwarded,1);
+});
+test('Brain Quick Card route commits once and responds to duplicate/status while provider I/O waits',{timeout:3000},async t=>{
+ const storage=quickCardStorage(t),entered=deferred(),release=deferred();let locks=0,calls=0;
+ t.after(()=>release.resolve());
+ const clock=new BrainClock({storage,async blockConcurrencyWhile(fn){
+  locks++;try{return await fn()}finally{locks--}
+ }},{TINYFISH_BROKER_ENABLED:'true',TINYFISH_BRIDGE_TOKEN:'synthetic-test-bridge-token-123',
+  TINYFISH_BROKER:{fetch:async()=>{
+   calls++;entered.resolve();await release.promise;
+   return Response.json({ok:true,runId:'12345678-1234-4234-8234-123456789def',receiptProof:'a'.repeat(64)});
+  }}});
+ const {CARD_SITES}=await import('../workers/infinity-brain-clock/quick-card-browser-policy.mjs');
+ const [cardId,card]=Object.entries(CARD_SITES).find(([,card])=>card.kind==='durable'&&card.mappings.length);
+ const body={action:'start',cardId,kind:card.mappings[0].id,requestId:'12345678-1234-4234-8234-123456789abc'};
+ const send=command=>clock.fetch(new Request('https://clock.internal/quick-card-browser',{
+  method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(command)}));
+ const first=send(body);await entered.promise;
+ assert.equal(locks,0,'browser provider wait must not hold the whole Brain object');
+ const duplicate=await send(body),reused=await duplicate.json();
+ assert.equal(duplicate.status,200);assert.equal(reused.job.state,'dispatch_uncertain');
+ const pending=await send({action:'status',jobId:reused.job.jobId});
+ assert.equal((await pending.json()).job.state,'dispatch_uncertain');
+ assert.equal((await send({action:'capabilities'})).status,200);
+ assert.equal(calls,1);
+ assert.deepEqual((await storage.entries()).filter(([key])=>key.startsWith('quick-card-browser:count:')).map(([,value])=>value),[1]);
+ release.resolve();const dispatched=await first;
+ assert.equal(dispatched.status,202);
+ assert.equal((await dispatched.json()).job.jobId,reused.job.jobId);
 });
 test('deferred Pink result releases only its own lease and never leaves a stopped runner working',async()=>{
  const repository='www-infinity4/QuantaPhi',runUrl='https://github.com/www-infinity4/Moltnook/actions/runs/42';

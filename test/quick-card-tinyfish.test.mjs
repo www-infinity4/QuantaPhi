@@ -5,9 +5,9 @@ import fs from 'node:fs';
 import {planCardBrowserAction,cardActionGoal,cardCheckoutHandoff,CARD_SITES} from '../workers/infinity-brain-clock/quick-card-browser-policy.mjs';
 import {handleQuickCardBrowser,validateQuickCardBrowser} from '../workers/infinity-brain-clock/quick-card-browser.mjs';
 import {cardActionsFor,browserStatus,callCardBrowser} from '../quick-card-tinyfish-actions.mjs';
+import {quickCardStorage} from './helpers/quick-card-storage.mjs';
 globalThis.crypto??=webcrypto;
 const env={TINYFISH_API_KEY:'mock-key-no-real-provider-access',TINYFISH_PROFILE_ID:'prof_abcdefabcdef1234'};
-function store(){const m=new Map();return {m,async get(k){return m.get(k)},async put(k,v){m.set(k,structuredClone(v))}}}
 const runId='12345678-1234-4234-8234-123456789def';
 const reqId='12345678-1234-4234-8234-123456789abc';
 const mkFetch=calls=>async(url,init)=>{
@@ -37,16 +37,16 @@ test('merchant checkout is a first-party link, never payment collection or autom
  assert.throws(()=>cardCheckoutHandoff('gemini','https://gemini.google.com/app'),/not_a_shopping/);
  assert.throws(()=>cardCheckoutHandoff('levis','http://www.levi.com/a'),/untrusted/);
 });
-test('browser run requires separate backend credentials, never guest direct use',async()=>{
- const s=store(),calls=[],f=mkFetch(calls);
+test('browser run requires separate backend credentials, never guest direct use',async t=>{
+ const s=quickCardStorage(t),calls=[],f=mkFetch(calls);
  const denied=await handleQuickCardBrowser(s,{}, {action:'start',cardId:'levis',kind:'products',query:'501',requestId:reqId},f);
  assert.equal(denied.httpStatus,503);assert.equal(calls.length,0);
  const caps=await handleQuickCardBrowser(s,{}, {action:'capabilities'},f);
  assert.equal(caps.result.configured,false);
  assert.throws(()=>validateQuickCardBrowser({action:'start',cardId:'levis',kind:'products',query:'501',requestId:reqId,domain:'evil.example'}));
 });
-test('card click starts exactly one billed run and repeat click reuses its receipt',async()=>{
- const s=store(),calls=[],f=mkFetch(calls),start={action:'start',cardId:'levis',kind:'products',query:'501 jeans',requestId:reqId};
+test('card click starts exactly one billed run and repeat click reuses its receipt',async t=>{
+ const s=quickCardStorage(t),calls=[],f=mkFetch(calls),start={action:'start',cardId:'levis',kind:'products',query:'501 jeans',requestId:reqId};
  const a=await handleQuickCardBrowser(s,env,start,f);
  assert.equal(a.httpStatus,202);assert.equal(a.result.job.state,'working');
  const plan=JSON.parse(calls[0].init.body);
@@ -60,8 +60,8 @@ test('card click starts exactly one billed run and repeat click reuses its recei
  assert.equal(checked.result.job.report.items[1].url,'');
  assert.equal(checked.result.job.report.providerResultUnverified,true);
 });
-test('network uncertainty never retries the same paid action',async()=>{
- const s=store(),calls=[];
+test('network uncertainty never retries the same paid action',async t=>{
+ const s=quickCardStorage(t),calls=[];
  const badFetch=async(url,init)=>{calls.push(url);throw Error('network_lost')};
  const body={action:'start',cardId:'ebay',kind:'search',query:'Morgan dollar',requestId:reqId};
  const first=await handleQuickCardBrowser(s,env,body,badFetch);assert.equal(first.httpStatus,502);
@@ -80,8 +80,8 @@ test('frontend has no keys or cookies and requires owner authorization',async()=
  assert.match(code,/mountQuickCardTinyfishTools/);
 });
 
-test('Brain uses the coordinator binding for a public brand read without copying its provider key or dispatching an agent',async()=>{
- const s=store(),requests=[];
+test('Brain uses the coordinator binding for a public brand read without copying its provider key or dispatching an agent',async t=>{
+ const s=quickCardStorage(t),requests=[];
  const broker={TINYFISH_BRIDGE_TOKEN:'a'.repeat(64),TINYFISH_BROKER:{fetch:async(input,options)=>{
   const request=typeof input==='string'?new Request(input,options):input;
   requests.push({url:request.url,token:request.headers.get('X-Tinyfish-Bridge-Token'),body:await request.json()});
@@ -98,8 +98,8 @@ test('Brain uses the coordinator binding for a public brand read without copying
  const again=await handleQuickCardBrowser(s,broker,start);assert.equal(again.result.job.jobId,a.result.job.jobId);assert.equal(requests.length,1);
 });
 
-test('a coordinator refusal stays a failed read and duplicate click cannot silently dispatch another request',async()=>{
- let calls=0;const s=store(),broker={TINYFISH_BRIDGE_TOKEN:'a'.repeat(64),TINYFISH_BROKER:{fetch:async()=>{calls++;return Response.json({ok:false,error:'tinyfish_key_rejected'},{status:502})}}};
+test('a coordinator refusal stays a failed read and duplicate click cannot silently dispatch another request',async t=>{
+ let calls=0;const s=quickCardStorage(t),broker={TINYFISH_BRIDGE_TOKEN:'a'.repeat(64),TINYFISH_BROKER:{fetch:async()=>{calls++;return Response.json({ok:false,error:'tinyfish_key_rejected'},{status:502})}}};
  const start={action:'start',cardId:'durable-framework-computers',kind:'parts',query:'',requestId:reqId};
  const a=await handleQuickCardBrowser(s,broker,start);assert.equal(a.result.job.state,'dispatch_uncertain');assert.match(a.result.job.error,/broker_http_502/);
  await handleQuickCardBrowser(s,broker,start);assert.equal(calls,1);

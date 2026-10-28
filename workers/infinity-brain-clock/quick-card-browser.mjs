@@ -7,10 +7,13 @@ const TINYFISH='https://agent.tinyfish.ai';
 const uuid=v=>/^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(v||'');
 const fail=(error,status=400)=>({httpStatus:status,result:{ok:false,error,executed:false}});
 const success=(obj,status=200)=>({httpStatus:status,result:{ok:true,...obj}});
+const brokerEnabled=env=>env?.TINYFISH_BROKER_ENABLED==='true';
+const brokerConfigured=env=>brokerEnabled(env)&&typeof env.TINYFISH_BRIDGE_TOKEN==='string'&&
+ env.TINYFISH_BRIDGE_TOKEN.length>=20&&typeof env.TINYFISH_BROKER?.fetch==='function';
 const directConfigured=env=>typeof env.TINYFISH_API_KEY==='string'&&env.TINYFISH_API_KEY.length>12;
-const brokerConfigured=env=>typeof env.TINYFISH_BROKER?.fetch==='function'&&
+const sourceBrokerConfigured=env=>!brokerEnabled(env)&&typeof env.TINYFISH_BROKER?.fetch==='function'&&
  typeof env.TINYFISH_BRIDGE_TOKEN==='string'&&/^[a-f0-9]{64}$/.test(env.TINYFISH_BRIDGE_TOKEN);
-const configured=env=>directConfigured(env)||brokerConfigured(env);
+const configured=env=>brokerEnabled(env)?brokerConfigured(env):directConfigured(env)||sourceBrokerConfigured(env);
 const profileConfigured=env=>typeof env.TINYFISH_PROFILE_ID==='string'&&/^prof_[a-zA-Z0-9]{8,80}$/.test(env.TINYFISH_PROFILE_ID);
 const summary=job=>({jobId:job.jobId,cardId:job.cardId,action:job.action,state:job.state,
  createdAt:job.createdAt,requestId:job.requestId,
@@ -44,6 +47,18 @@ async function tinyfish(env,fetcher,path,body){
   ...(body?{body:JSON.stringify(body)}:{}),redirect:'manual',signal:AbortSignal.timeout(20000)});
  if(!r.ok){await r.body?.cancel();throw Error('tinyfish_http_'+r.status)}
  return readBoundedJson(r);
+}
+// Explicitly opt in only after a reviewed private service binding and separately
+// provisioned broker secret exist. Never silently fall back to a direct paid API.
+async function privateBroker(env,command){
+ const r=await env.TINYFISH_BROKER.fetch('https://broker.internal/internal/quick-card-browser',{
+  method:'POST',headers:{'Content-Type':'application/json',
+   'X-QuantaPhi-Broker-Token':env.TINYFISH_BRIDGE_TOKEN},
+  body:JSON.stringify(command),redirect:'manual',signal:AbortSignal.timeout(20000)});
+ if(!r.ok){await r.body?.cancel();throw Error('private_broker_http_'+r.status)}
+ const receipt=await readBoundedJson(r,30000);
+ if(receipt?.ok!==true)throw Error('private_broker_receipt_invalid');
+ return receipt;
 }
 // The existing Continuity coordinator has the TinyFish read-only search/fetch
 // broker and holds the API key. Brain has a private service binding and a bridge
@@ -105,6 +120,33 @@ export function reportForBroker(receipt,plan){
   mode:'source_read',notBrowserNavigation:true};
 }
 const k=id=>'quick-card-browser:job:'+id;
+async function reserveStart(storage,plan,requestId,now){
+ if(typeof storage.transaction!=='function')return {response:fail('browser_reservation_unavailable',503)};
+ // No provider I/O belongs in this retryable transaction. Commit all three
+ // receipts together before dispatch, so a duplicate can safely return while
+ // the first request is still waiting on TinyFish.
+ const job={jobId:crypto.randomUUID(),requestId,cardId:plan.cardId,action:plan.action,
+  query:plan.query,state:'dispatch_uncertain',createdAt:new Date(now).toISOString()};
+ const requestKey='quick-card-browser:request:'+requestId;
+ const budgetKey='quick-card-browser:count:'+job.createdAt.slice(0,10);
+ try{return await storage.transaction(async tx=>{
+  const previousId=await tx.get(requestKey);
+  if(previousId!==undefined){
+   const previous=uuid(previousId)?await tx.get(k(previousId)):null;
+   if(!previous)return {response:fail('request_receipt_missing_no_retry',409)};
+   if(previous.cardId!==plan.cardId||previous.action!==plan.action||previous.query!==plan.query)
+    return {response:fail('request_id_conflict',409)};
+   return {response:success({job:summary(previous),output:'Duplicate click reused the existing job, not a second paid run.'})};
+  }
+  const storedCount=await tx.get(budgetKey),count=storedCount===undefined?0:storedCount;
+  if(!Number.isSafeInteger(count)||count<0)return {response:fail('browser_budget_receipt_invalid',503)};
+  if(count>=16)return {response:fail('owner_daily_browser_read_limit_reached',429)};
+  await tx.put(budgetKey,count+1);
+  await tx.put(k(job.jobId),job);
+  await tx.put(requestKey,job.jobId);
+  return {job};
+ })}catch{return {response:fail('browser_reservation_unavailable',503)}}
+}
 function reportFor(raw,cardId){
  // Extract a strictly bounded data summary, not arbitrary provider instructions.
  const source=typeof raw==='string'?raw:JSON.stringify(raw??'');
@@ -132,10 +174,10 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
  try{validateQuickCardBrowser(body)}catch(e){return fail(e.message)}
  if(body.action==='capabilities')
   return success({ownerOnly:true,provider:'TinyFish',configured:configured(env),
-   profileConfigured:profileConfigured(env),brokerSourceReads:brokerConfigured(env),
-   browserNavigationConfigured:directConfigured(env)&&profileConfigured(env),
+   profileConfigured:!brokerEnabled(env)&&profileConfigured(env),brokerSourceReads:sourceBrokerConfigured(env),
+   browserNavigationConfigured:brokerEnabled(env)?brokerConfigured(env):directConfigured(env)&&profileConfigured(env),
    publicBrandReads:true,
-   supported:Object.entries(CARD_SITES).map(([id,info])=>({id,name:info.name,kind:info.kind,
+   supported:Object.entries(CARD_SITES).filter(([,info])=>!brokerEnabled(env)||info.kind==='durable').map(([id,info])=>({id,name:info.name,kind:info.kind,
     actions:info.kind==='durable'?info.mappings.map(x=>x.id):[]})),
    note:'Source reads use the private coordinator TinyFish broker when available. This is not proof of authenticated navigation, provider login, or checkout.'});
  if(body.action==='checkout'){
@@ -144,26 +186,13 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
  }
  if(body.action==='start'){
   const plan=planCardBrowserAction({cardId:body.cardId,action:body.kind,query:body.query});
+  if(brokerEnabled(env)&&plan.useProfile)return fail('private_broker_public_brand_only',403);
   if(!configured(env))return fail('tinyfish_backend_not_configured',503);
-  const useBroker=brokerConfigured(env)&&(!directConfigured(env)||!profileConfigured(env)||plan.kind==='durable');
+  const useBroker=sourceBrokerConfigured(env)&&(!directConfigured(env)||!profileConfigured(env)||plan.kind==='durable');
   if(!useBroker&&plan.useProfile&&!profileConfigured(env))return fail('tinyfish_profile_not_configured',503);
-  const previousId=await storage.get('quick-card-browser:request:'+body.requestId);
-  if(previousId){
-   const previous=await storage.get(k(previousId));
-   if(previous){
-    if(previous.cardId!==plan.cardId||previous.action!==plan.action||previous.query!==plan.query)return fail('request_id_conflict',409);
-    return success({job:summary(previous),output:'Duplicate click reused the existing job, not a second paid run.'});
-   }
-   return fail('request_receipt_missing_no_retry',409);
-  }
-  const day=new Date(now).toISOString().slice(0,10),budgetKey='quick-card-browser:count:'+day;
-  const count=Number(await storage.get(budgetKey)||0);
-  if(count>=16)return fail('owner_daily_browser_read_limit_reached',429);
-  await storage.put(budgetKey,count+1);
-  const job={jobId:crypto.randomUUID(),requestId:body.requestId,cardId:plan.cardId,action:plan.action,
-   query:plan.query,state:'dispatch_uncertain',createdAt:new Date(now).toISOString()};
-  await storage.put(k(job.jobId),job);
-  await storage.put('quick-card-browser:request:'+body.requestId,job.jobId);
+  const requestId=body.requestId,reserved=await reserveStart(storage,plan,requestId,now);
+  if(reserved.response)return reserved.response;
+  const job=reserved.job;
   try{
    if(useBroker){
     const observed=await brokerRead(env,plan);
@@ -173,11 +202,18 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
     return success({job:summary(job),sourceRead:true,
      output:'Read-only TinyFish source result stored. This did not click, sign in, buy, or automate the site.'});
    }
-   const run=await tinyfish(env,fetcher,'/v1/automation/run-async',{url:plan.url,goal:cardActionGoal(plan),
+   const run=brokerEnabled(env)?await privateBroker(env,{action:'start',cardId:plan.cardId,
+    kind:plan.action,query:plan.query,requestId}):
+    await tinyfish(env,fetcher,'/v1/automation/run-async',{url:plan.url,goal:cardActionGoal(plan),
     ...(plan.useProfile?{use_profile:true,profile_id:env.TINYFISH_PROFILE_ID}:{}),
     browser_profile:'lite',agent_config:{max_duration_seconds:120}});
    const runId=run.run_id||run.runId;
    if(!uuid(runId))throw Error('missing_provider_run_id');
+   if(brokerEnabled(env)){
+    if(typeof run.receiptProof!=='string'||!/^[a-f0-9]{64}$/i.test(run.receiptProof))
+     throw Error('private_broker_proof_missing');
+    job.receiptProof=run.receiptProof; // Private storage only; excluded from summary().
+   }
    job.runId=runId;job.state='working';await storage.put(k(job.jobId),job);
    return success({job:summary(job),output:'Read-only Quick Card browser action submitted; verify result using status.'},202);
   }catch(e){
@@ -190,15 +226,30 @@ export async function handleQuickCardBrowser(storage,env,body,fetcher=fetch,now=
  if(!job)return fail('job_not_found',404);
  if(job.state!=='working'||!job.runId)return success({job:summary(job)});
  if(!configured(env))return fail('tinyfish_backend_not_configured',503);
+ if(typeof storage.transaction!=='function')return fail('provider_status_unavailable',503);
  try{
-  const run=await tinyfish(env,fetcher,'/v1/runs/'+encodeURIComponent(job.runId));
+  const run=brokerEnabled(env)?await privateBroker(env,{action:'status',cardId:job.cardId,
+   runId:job.runId,requestId:job.requestId,receiptProof:job.receiptProof}):await tinyfish(env,fetcher,'/v1/runs/'+encodeURIComponent(job.runId));
   const state=String(run.status||'').toUpperCase();
- if(['FAILED','CANCELLED','TIMED_OUT'].includes(state)){job.state='failed';job.error=String(run.error?.message||run.error||state).slice(0,140)}
-  else if(state==='COMPLETED'){
-   job.report=reportFor(run.result,job.cardId);
-   job.state=job.report.blocker?'blocked_browser_read':job.report.verifiedSameSiteLinks?'completed_browser_read':'unverified_browser_result';
-  }
-  await storage.put(k(job.jobId),job);
-  return success({job:summary(job),providerStatus:state});
+  // Provider waits may overlap. Re-read the receipt atomically after the wait;
+  // a stale working snapshot must never replace a committed final result.
+  const current=await storage.transaction(async tx=>{
+   const saved=await tx.get(k(job.jobId));
+   if(!saved||['jobId','requestId','cardId','action','query','runId','receiptProof'].some(field=>saved[field]!==job[field]))
+    throw Error('job_receipt_changed');
+   if(saved.state!=='working')return saved;
+   const next={...saved};
+   if(['FAILED','CANCELLED','TIMED_OUT'].includes(state)){
+    next.state='failed';next.error=String(run.error?.message||run.error||state).slice(0,140);
+   }else if(state==='COMPLETED'){
+    next.report=reportFor(run.result,job.cardId);
+    next.state=next.report.blocker?'blocked_browser_read':next.report.verifiedSameSiteLinks?'completed_browser_read':'unverified_browser_result';
+   }else return saved; // A running poll has no durable state change to write.
+   next.providerStatus=state;
+   await tx.put(k(job.jobId),next);
+   return next;
+  });
+  const providerStatus=current.providerStatus||(current.state==='working'?state:'');
+  return success({job:summary(current),...(providerStatus?{providerStatus}:{})});
  }catch{return fail('provider_status_unavailable',503)}
 }
