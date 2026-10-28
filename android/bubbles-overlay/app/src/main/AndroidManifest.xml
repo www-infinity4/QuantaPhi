@@ -39,6 +39,14 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="quantaphi-bubbles" android:host="return"/>
             </intent-filter>
+            <!-- Tapped from a QuantaPhi Quick Card. Only an opaque card ID enters.
+                 It cannot grant screen, mic, wallet or browser permissions. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="quantaphi-bubbles" android:host="card"/>
+            </intent-filter>
         </activity>
         <service android:name=".BubblesTileService" android:exported="true"
             android:label="${appTitle}" android:icon="@android:drawable/ic_btn_speak_now"
