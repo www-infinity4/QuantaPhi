@@ -301,6 +301,28 @@ test('source cache reduces calls, preserves observation age and marks failed ref
   } finally {d.close();}
 });
 
+test('legacy green build cache cannot bypass the CI gate through direct observe injection', async () => {
+  const f = fixture(), legacy = {build: {
+    id: 'build', url: 'https://github.com/www-infinity4/QuantaPhi/pull/1144',
+    sourceState: 'checked', observedAt: new Date(f.at).toISOString(),
+    sourceRevision: SHA, ci: {passed: true, coverageComplete: true, observed: 1},
+    detail: 'Legacy 1/1 green workflow result',
+  }};
+  let requests = 0;
+  let report = await observe(f.env, (url, opts) => {
+    requests++; return f.fetcher(url, opts);
+  }, f.at, 1, legacy);
+  const build = report.tracks.find(t => t.id === 'build');
+  assert.equal(requests, 4, 'legacy build cache must trigger a fresh source read');
+  assert.equal(build.state, 'blocked');
+  assert.equal(build.ci.coverageComplete, false);
+  assert.equal(build.ci.passed, false);
+  report = await observe(f.env, async () => new Response('denied', {status: 403}), f.at, 2, legacy);
+  const unreachable = report.tracks.find(t => t.id === 'build');
+  assert.equal(unreachable.state, 'unreachable', '403 must not fall back to legacy green');
+  assert.equal(unreachable.ci, undefined);
+});
+
 test('future-dated or wrong-resource cache entries cannot suppress a real source read', async () => {
   const f = fixture(); let requests = 0;
   const bad = {build: {id: 'build', url: 'https://github.com/other/repo/pull/1144',
