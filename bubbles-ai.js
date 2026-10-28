@@ -1011,6 +1011,9 @@ photoInput.addEventListener('change',async()=>{
  }}finally{busy=false;photoInput.disabled=false;send.disabled=false;photoInput.value='';}
 });
 const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder=nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
+// Preserve the words a visitor types instead of inviting keyboard rewrites.
+// Voice transcripts never get inserted into this textarea.
+input.setAttribute('autocomplete','off');input.setAttribute('autocorrect','off');input.setAttribute('autocapitalize','off');input.spellcheck=false;
 const actions=create('div','ba-actions');
 const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
@@ -1069,7 +1072,7 @@ pluginsButton.addEventListener('click',async()=>{
 });
 tools.append(pluginsButton,pluginsPanel);
 tools.addEventListener('toggle',()=>{
-  summary.textContent=tools.open?'← Back to chat':'Settings';
+  summary.textContent=tools.open?'← Back to chat':'⚙ Settings';
   tools.setAttribute('aria-label',tools.open?'Bubbles settings viewer':'Open Bubbles settings');
 });
 const privacy=create('div','ba-privacy');
@@ -1315,7 +1318,7 @@ if(nativeOverlay){
  // original wallet view into Options without duplicating IDs or credentials.
  const verifiedWallet=document.querySelector('.bubbles-wallet');
  if(verifiedWallet)tools.append(verifiedWallet);
- summary.textContent='Settings';summary.setAttribute('aria-label','Bubbles settings');
+ summary.textContent='⚙ Settings';summary.setAttribute('aria-label','Bubbles settings');
  // One scrolling surface owns messages, pairing output and expanded options.
  // The composer and its visible feedback remain reachable at every scroll position.
  panel.insertBefore(chatScroll,header);
@@ -1326,7 +1329,7 @@ if(nativeOverlay){
  composer.prepend(status);
  header.hidden=true;
  memoryHint.hidden=true;
- summary.textContent='Settings';
+ summary.textContent='⚙ Settings';
  workText.hidden=true;
  for(const label of tools.querySelectorAll(':scope > label'))label.hidden=true;
  // One visualViewport handler is attached below by fitChatViewport().
@@ -1726,7 +1729,11 @@ function display(text,who,greeting=false){
   bubble.append(value.slice(cursor));
  }
  line.append(bubble);
- const row=create('div','ba-message-actions');
+ // Keep the transcript readable. Secondary per-message controls are discoverable
+ // through a single accessible menu, not a permanent four-button toolbar.
+ const row=create('details','ba-message-actions');
+ const menu=create('summary','ba-message-actions-toggle','⋯');menu.setAttribute('aria-label','Message actions');
+ row.append(menu);
  const copy=create('button','ba-miniaction ba-copy-message','Copy');copy.type='button';
  copy.setAttribute('aria-label','Copy message');
  copy.addEventListener('click',()=>{void copyBubblesMessage(text,bubble,copy)});
@@ -2047,8 +2054,7 @@ cloudDelete.addEventListener('click',async()=>{
 });
 let panelWasOpened=false;
 function toggle(open){
- const reopening=Boolean(open)&&!showing&&panelWasOpened;
- if(reopening&&!nativeOverlay&&!embedded)void startConversation({automatic:true});
+ // Reopening the panel must not silently replace a chat or an unsent draft.
  showing=Boolean(open);
  if(showing)panelWasOpened=true;
  panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
@@ -3324,7 +3330,20 @@ function heardTranscript(transcript){
  status.textContent='Heard: '+transcript;launcher.dataset.words=String(transcript.split(/\s+/).length);
  if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
  if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
- if(turn.type==='message'){if(busy)enqueueVoiceTurn(turn.text);else void sendMessage(turn.text,true)}
+ if(turn.type==='message'){
+   const voiceText=String(turn.text||'').trim();
+   // Always-on listening can hear background speech while someone is typing.
+   // Never mix it into a draft or dispatch it as a verified work instruction.
+   if(document.activeElement===input||input.value.trim()){
+    status.textContent='Voice paused while editing your typed message. Your words were not changed.';
+    return;
+   }
+   if(voiceText.split(/\s+/).length<2){
+    status.textContent='Short background speech fragment ignored. Repeat the full request.';
+    return;
+   }
+   if(busy)enqueueVoiceTurn(voiceText);else void sendMessage(voiceText,true);
+  }
 }
 async function startVoice(){
  // Android's foreground service already owns voice recognition. A WebView
