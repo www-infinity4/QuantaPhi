@@ -234,6 +234,48 @@ export function mountConnections(container,{token}) {
     const label=element('label',''),check=document.createElement('input');check.type='checkbox';check.value=action;label.append(check,document.createTextNode(' '+name+' '));scopes.append(label);selections.push(check);
   }
   section.append(element('h2','Your accounts'),status,catalog,cancel,accounts,scopes,refresh);container.append(section);
+  const walletEmail=element('section','','ba-provider-card ba-wallet-email');
+  walletEmail.append(element('h2','StarCoin wallet email updates'),
+    element('p','Verify your wallet balance in real time. Choose a daily or weekly email preference after you connect a Google-verified address. Email delivery is not active until a sender is configured.','ba-muted'));
+  const emailStatus=element('p','Wallet email is not enrolled.','ba-muted');emailStatus.setAttribute('role','status');
+  const frequency=document.createElement('select');frequency.className='ba-field';frequency.setAttribute('aria-label','StarCoin wallet email frequency');
+  for(const [value,label] of [['weekly','Weekly balance email'],['daily','Daily balance email']]){
+    const option=document.createElement('option');option.value=value;option.textContent=label;frequency.append(option);
+  }
+  const preview=element('button','Verify my StarCoin balance','ba-control');
+  const enroll=element('button','Save wallet email preference','ba-control');
+  const unsubscribe=element('button','Disable wallet email updates','ba-control');
+  for(const button of [preview,enroll,unsubscribe])button.type='button';
+  let verifiedGoogleId=null;
+  preview.addEventListener('click',async()=>{
+    preview.disabled=true;emailStatus.textContent='Reconciling StarCoins with Unified Wallet and StarQuest…';
+    try{
+      const result=await client.call('/wallet-email/preview',{});
+      emailStatus.textContent='Verified wallet balance: '+(Number(result.balanceTenths)/10).toFixed(1)+
+        ' StarCoins as of '+new Date(result.asOf).toLocaleString()+'. No email was sent.';
+    }catch(error){emailStatus.textContent='Balance could not be verified: '+String(error.message||'wallet unavailable').slice(0,120);}
+    finally{preview.disabled=false}
+  });
+  enroll.addEventListener('click',async()=>{
+    if(!verifiedGoogleId){emailStatus.textContent='Connect a Google account with a verified email address before enrolling.';return;}
+    enroll.disabled=true;
+    try{
+      const result=await client.call('/wallet-email/preferences',{action:'enroll',cadence:frequency.value,connectionId:verifiedGoogleId});
+      emailStatus.textContent='Verified address: '+result.email+'. '+frequency.value+
+        ' preference saved. Delivery is pending an approved email sender; no messages are scheduled yet.';
+    }catch(error){emailStatus.textContent='Preference not saved: '+String(error.message||'connection unavailable').slice(0,120);}
+    finally{enroll.disabled=false;}
+  });
+  unsubscribe.addEventListener('click',async()=>{
+    unsubscribe.disabled=true;
+    try{
+      await client.call('/wallet-email/preferences',{action:'disable'});
+      emailStatus.textContent='Wallet email preference disabled. No balance email will be sent.';
+    }catch(error){emailStatus.textContent='Could not disable preference: '+String(error.message||'connection unavailable').slice(0,120);}
+    finally{unsubscribe.disabled=false}
+  });
+  walletEmail.append(frequency,preview,enroll,unsubscribe,emailStatus);
+  section.append(walletEmail);
   const pairing=element('details','','ba-pairing');pairing.append(element('summary','Advanced: connect another browser (optional)'));
   pairing.append(element('p','On your phone, open Bubbles on quantaphi.org in the browser with your existing wallet. Open these account settings and create a two-minute code. Enter it here. This grants account-connector access for 15 minutes, without transferring your wallet token. Keep the code private.'));
   const create=element('button','Create connection code on this device','ba-control'),redeem=element('button','Connect this browser','ba-control'),end=element('button','End this browser connection','ba-control'),code=document.createElement('input'),output=element('p','');
@@ -253,9 +295,20 @@ export function mountConnections(container,{token}) {
       const activeConnection=account=>account.status==='connected'&&
         Number.isFinite(account.expiresAt)&&account.expiresAt>Date.now()+30000;
       const signedIn=new Map();
+      verifiedGoogleId=null;
       for(const account of dataAccounts.accounts||[]){
         if(activeConnection(account)&&!signedIn.has(account.provider))signedIn.set(account.provider,account);
       }
+      const googleAccount=signedIn.get('google');
+      verifiedGoogleId=googleAccount?.id||null;
+      try{
+        const settings=await client.call('/wallet-email/preferences',{action:'read'});
+        frequency.value=settings.cadence||'weekly';
+        if(settings.enabled)emailStatus.textContent='Verified address: '+settings.email+
+          '. '+settings.cadence+' preference saved. Delivery pending sender setup; no email is scheduled.';
+        else if(settings.status==='verification_expired')emailStatus.textContent='Google verification expired. Reconnect before balance emails can be enabled.';
+        else emailStatus.textContent='No verified wallet email enrolled. Google connection and sender setup are required.';
+      }catch{emailStatus.textContent='Wallet email preferences unavailable until your Unified Wallet is connected.';}
       scopes.hidden=!data.providers.some(provider=>provider.id==='google'&&provider.configured);
       const unavailable=element('details','','ba-unavailable');unavailable.append(element('summary','Other account services'));
       for(const provider of data.providers) {
