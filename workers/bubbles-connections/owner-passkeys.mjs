@@ -5,7 +5,7 @@ import {
 
 const RP_ID='quantaphi.org',ORIGIN='https://quantaphi.org';
 const ALIASES=Object.freeze(['kris@quantaphi.org','administrator@quantaphi.org']);
-const CHALLENGE_TTL=5*60*1000,SESSION_TTL=12*60*60*1000;
+const CHALLENGE_TTL=5*60*1000,SESSION_TTL=12*60*60*1000,ADMIN_SESSION_TTL=5*60*1000;
 const enc=new TextEncoder();
 const b64=bytes=>{
  let raw='';for(const n of bytes)raw+=String.fromCharCode(n);
@@ -79,7 +79,18 @@ export class OwnerPasskeys {
   });
   return {ok:true,passkeyVerified:true,registrationStored:true,alias:record.alias,rpId:RP_ID};
  }
- async beginAuthentication({alias}){
+ async checkRateLimit(fingerprint){
+  const key='quant-mail:rate:'+fingerprint;
+  await this.storage.transaction(async tx=>{
+   const at=this.clock(),last=await tx.get(key);
+   const record=last&&at-last.startedAt<60000?last:{startedAt:at,count:0};
+   if(record.count>=12)invalid('passkey_rate_limited');
+   record.count++;await tx.put(key,record);
+  });
+ }
+ async beginAuthentication({alias,fingerprint='anonymous'}){
+  if(typeof fingerprint!=='string'||!/^[A-Za-z0-9_-]{1,64}$/.test(fingerprint))invalid('invalid_client_fingerprint');
+  await this.checkRateLimit(fingerprint);
   const chosen=allowedAlias(alias);
   if(!chosen)invalid('owner_alias_invalid');
   const state=await this.load();
@@ -116,7 +127,7 @@ export class OwnerPasskeys {
   const sessionToken=random(),sessionHash=await digest(sessionToken);
   await this.storage.put('quant-mail:session:'+sessionHash,{
    subject:state.subject,role:record.alias==='administrator@quantaphi.org'?'administrator':'owner',
-   alias:record.alias,expiresAt:this.clock()+SESSION_TTL,
+   alias:record.alias,expiresAt:this.clock()+(record.alias==='administrator@quantaphi.org'?ADMIN_SESSION_TTL:SESSION_TTL),
    verifiedAt:this.clock()});
   return {ok:true,passkeyVerified:true,alias:record.alias,rpId:RP_ID,
    sessionEstablished:true,sessionToken};
@@ -128,4 +139,4 @@ export class OwnerPasskeys {
   return {valid:true,role:record.role,alias:record.alias,verifiedAt:record.verifiedAt};
  }
 }
-export const PASSKEY_CONSTANTS={RP_ID,ORIGIN,ALIASES,CHALLENGE_TTL,SESSION_TTL};
+export const PASSKEY_CONSTANTS={RP_ID,ORIGIN,ALIASES,CHALLENGE_TTL,SESSION_TTL,ADMIN_SESSION_TTL};
