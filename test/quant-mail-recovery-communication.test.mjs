@@ -5,7 +5,7 @@ import {RECOVERY_METHODS,REQUIRED_RECOVERY_METHODS,recoveryEligibility,
 const accountId='account_owner_123',challengeId='challenge_from_server_123456',at=1770000000000;
 const enroll=(type,identifier)=>({type,identifier,accountId,verified:true,revoked:false});
 const receipt=(type,identifier,proofId,independentAuthenticatorId)=>
- ({type,identifier,proofId,accountId,challengeId,serverVerified:true,verifiedAt:at-2000,independentAuthenticatorId});
+ ({type,identifier,proofId:'proof-'+proofId,accountId,challengeId,serverVerified:true,verifiedAt:at-2000,independentAuthenticatorId});
 const pass=enroll('passkey','credential-1'),mail=enroll('external_email','outside@gmail.com'),
  auth=enroll('authenticator','totp-enrollment-1'),phone=enroll('phone','+15550001111'),
  backup=enroll('backup_security_key','credential-2'),offline=enroll('offline_code','recovery-credential-1');
