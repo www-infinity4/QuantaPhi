@@ -1,10 +1,10 @@
 name: Live TV carousel acceptance
 on:
   pull_request:
-    paths: ['live-tv-*','phi-channel-cards.*','infinity-tv/kyou.html','oracle-card-deck.js','index.html','test/live-tv-*','test/phi-channel-cards.test.cjs','.github/workflows/live-tv-cards.yml']
+    paths: ['live-tv-*','tv-front-priority.js','phi-channel-cards.*','infinity-tv/kyou.html','oracle-card-deck.js','index.html','test/live-tv-*','test/tv-front-priority.test.cjs','test/phi-channel-cards.test.cjs','.github/workflows/live-tv-cards.yml']
   push:
     branches: [main]
-    paths: ['live-tv-*','phi-channel-cards.*','infinity-tv/kyou.html','oracle-card-deck.js','index.html','test/live-tv-*','test/phi-channel-cards.test.cjs','.github/workflows/live-tv-cards.yml']
+    paths: ['live-tv-*','tv-front-priority.js','phi-channel-cards.*','infinity-tv/kyou.html','oracle-card-deck.js','index.html','test/live-tv-*','test/tv-front-priority.test.cjs','test/phi-channel-cards.test.cjs','.github/workflows/live-tv-cards.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -23,7 +23,8 @@ jobs:
           node --check live-tv-state.mjs
           node --check oracle-card-deck.js
           node --check phi-channel-cards.js
-          node --test test/live-tv-state.test.mjs test/fox-world-series.test.mjs test/phi-channel-cards.test.cjs test/oracle-card-deck.test.cjs test/oracle-deck-cycle.test.mjs
+          node --check tv-front-priority.js
+          node --test test/tv-front-priority.test.cjs test/live-tv-state.test.mjs test/fox-world-series.test.mjs test/phi-channel-cards.test.cjs test/oracle-card-deck.test.cjs test/oracle-deck-cycle.test.mjs
       - name: Install test-only browser
         run: |
           npm install --no-save --package-lock=false @playwright/test@1.56.1

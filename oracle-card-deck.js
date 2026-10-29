@@ -5,6 +5,7 @@
 'use strict';
 const host=document.getElementById('oracleCardDeck'),stage=document.getElementById('oracleCardStage');
 if(!host||!stage)return;
+const TV_FRONT_BOOTSTRAP=(()=>{try{const api=window.QuantaTVFrontPriority;return !!api?.shouldPin(null,Date.now(),api.readFinal(localStorage))}catch{return false}})();
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
@@ -168,7 +169,11 @@ registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
 function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
-function livePriority(e){return e?.id==='phiChannelCards'&&document.getElementById('liveFoxGameCard')?.dataset.livePriority==='1'?1:0}
+function livePriority(e){
+ if(e?.id!=='phiChannelCards')return 0;
+ const priority=document.getElementById('liveFoxGameCard')?.dataset.tvFrontPriority;
+ return (priority===undefined?TV_FRONT_BOOTSTRAP:priority==='1')?1:0;
+}
 function eligible(){const cards=entries.filter(available).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
@@ -506,6 +511,8 @@ function chooseOpening(){
 }
 function start(){if(!active&&!expanded){
  const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
+ const tv=entries.find(livePriority);
+ if(!spotlightRequested&&tv&&!available(tv)){now.textContent='Infinity TV · Loading channels…';status.textContent='Loading the game-night TV viewer…';return;}
  // Keep an explicitly requested original card in front of generic rotation.
  // Some tools hydrate asynchronously after DOMContentLoaded.
  if(request&&!available(request)){status.textContent='Loading requested interactive card…';return;}
@@ -564,4 +571,5 @@ window.addEventListener('quantaphi:search-start',()=>{
  if(available(entry)){watcher.disconnect();show(entry)}
  setTimeout(()=>watcher.disconnect(),60000);
 });
+window.addEventListener('quantaphi:query-start',()=>{viewerTouched=true;selectionVersion++});
 })();
