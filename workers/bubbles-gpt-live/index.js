@@ -37,7 +37,7 @@ export default {
   async fetch(request,env) {
     const url=new URL(request.url),origin=request.headers.get("Origin");
     if(request.method==="GET" && url.pathname==="/health")
-      return reply(200,{ok:true,configured:Boolean(env.OPENAI_API_KEY&&env.BUBBLES_LIVE_OWNER_TOKEN)},null);
+      return reply(200,{ok:true,configured:Boolean(env.OPENAI_API_KEY&&(env.BRAIN?.fetch||env.BUBBLES_LIVE_OWNER_TOKEN))},null);
     if(url.pathname!==path)return reply(404,{error:"Not found"},origin);
     if(origin!==ORIGIN)return reply(403,{error:"Origin denied"},origin);
     if(request.method==="OPTIONS")return new Response(null,{
@@ -50,14 +50,28 @@ export default {
       }
     });
     if(request.method!=="POST")return reply(405,{error:"Method not allowed"},origin);
-    if(!env.OPENAI_API_KEY||!env.BUBBLES_LIVE_OWNER_TOKEN)
-      return reply(503,{error:"GPT-Live is not configured. Project API key and owner authorization are required."},origin);
-    const expected=String(env.BUBBLES_LIVE_OWNER_TOKEN);
-    if(expected.length<32)return reply(503,{error:"Owner authorization secret is misconfigured"},origin);
+    if(!env.OPENAI_API_KEY||(!env.BRAIN?.fetch&&!env.BUBBLES_LIVE_OWNER_TOKEN))
+      return reply(503,{error:"GPT-Live is not configured. A project API key and verified owner gate are required."},origin);
     const authorization=request.headers.get("Authorization")||"";
     const submitted=authorization.startsWith("Bearer ")?authorization.slice(7):"";
-    if(!submitted||submitted.length>512||!(await equalTokens(submitted,expected)))
-      return reply(401,{error:"Owner authorization required"},origin);
+    let verified=false;
+    // A real StarQuest wallet proves owner identity only after Brain issues
+    // its scoped rb_/rd_ session. Never accept the sq_ wallet credential here.
+    if(/^r[bd]_[a-f0-9]{64}$/.test(submitted)&&env.BRAIN?.fetch){
+      try{
+        const owner=await env.BRAIN.fetch("https://brain.internal/health",{
+          headers:{Authorization:authorization},signal:AbortSignal.timeout(6000)
+        });
+        verified=owner.ok;
+      }catch{verified=false}
+    }
+    // Existing private owner-token flow remains available for recovery.
+    if(!verified&&env.BUBBLES_LIVE_OWNER_TOKEN){
+      const expected=String(env.BUBBLES_LIVE_OWNER_TOKEN);
+      if(expected.length<32)return reply(503,{error:"Owner authorization secret is misconfigured"},origin);
+      if(submitted&&submitted.length<=512)verified=await equalTokens(submitted,expected);
+    }
+    if(!verified)return reply(401,{error:"Verified Bubbles owner session required"},origin);
     if(!(request.headers.get("Content-Type")||"").startsWith("application/json"))
       return reply(415,{error:"Expected JSON"},origin);
     const length=Number(request.headers.get("Content-Length")||0);

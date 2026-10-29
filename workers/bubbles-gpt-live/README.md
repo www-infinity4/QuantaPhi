@@ -16,9 +16,14 @@ It uses the official `gpt-live-1` voice model, not system TTS or a third-party v
 ## Setup required (no keys are included in the repository)
 1. Deploy Worker as `bubbles-live` in the correct Cloudflare account, default
    workers.dev URL `https://bubbles-live.marvaseater.workers.dev`.
-2. Provision **Worker secrets**, not plaintext variables:
-   `OPENAI_API_KEY` and `BUBBLES_LIVE_OWNER_TOKEN`. Choose a cryptographically
-   random 32+ character owner token, unrelated to wallet/ChatGPT credentials.
+2. Provision the **Worker secret** `OPENAI_API_KEY` from an authorized
+   paid OpenAI API project. This is never a ChatGPT Plus account credential.
+   Bind the `BRAIN` service to the existing `infinity-brain-clock` Worker.
+   The verified StarQuest Unified Wallet grants only the short-lived Brain
+   `rb_` owner session; the Live Worker verifies it server-side through Brain.
+   The optional legacy `BUBBLES_LIVE_OWNER_TOKEN` Worker secret can remain as
+   a separate recovery gate. Never expose wallet `sq_` credentials, API keys
+   or session bearers to a third-party site.
 3. Restrict access to the owner additionally with Cloudflare Access/WAF and
    OpenAI project usage limits before public rollout. The token is an interim
    owner-only gate; it is **not** a scalable per-user authentication system.
@@ -61,3 +66,18 @@ https://developers.openai.com/api/docs/models/gpt-live-1
   Repeated delegation IDs are deduplicated within a session.
 - This first browser client is intended for owner testing, not an always-on
   Android overlay, and does not yet track paid multiuser entitlement.
+
+
+## October 27 owner wallet bridge (draft)
+
+The source now accepts a short-lived owner bearer issued by the existing
+StarQuest→Brain wallet verification process, **only** if the `BRAIN` service
+binding exists and confirms the bearer on its owner-gated `/health` route.
+The Live page obtains owner headers from the existing first-party
+`QuantaBrainOwner.ready` bridge; it cannot turn a raw `sq_` device token into
+a provider credential or skip the separate `OPENAI_API_KEY` requirement.
+The preexisting private owner token remains a backup. There is still no public
+Live service claim: as checked via the connected Cloudflare account on
+October 27, the running `bubbles-live` Worker had **zero bindings**. Do not
+merge/deploy this draft or enable paid audio until project access, owner-scoped
+binding, budget guard, WebRTC microphone and interruption behavior are proven.
