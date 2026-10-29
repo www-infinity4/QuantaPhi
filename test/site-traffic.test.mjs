@@ -79,6 +79,9 @@ test('idempotent daily upsert keeps highest verified day count without double-co
  assert.equal(statements.length,21);
  assert.match(statements[0].sql,/ON CONFLICT\(date\) DO UPDATE/);
  assert.match(statements[0].sql,/MAX\(traffic_daily.requests,excluded.requests\)/);
+ // Two overlapping refreshes can finish out of order. The older write must
+ // never move the last verified time backwards after the newer write.
+ assert.match(statements[0].sql,/verified_at=MAX\(traffic_daily.verified_at,excluded.verified_at\)/);
  assert.equal(statements[0].params[0],'2026-10-04');
 });
 test('traffic refresh rejects incomplete or unsuccessful D1 batch receipts',async()=>{
