@@ -3,105 +3,106 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-29T07:58:19.839668Z",
+  "checked_at": "2026-10-29T14:53:50.615336Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "emma watson",
-      "approx_searches": "100+",
-      "published_at": "2026-10-29T07:40:00Z",
-      "related_news_urls": [
-        "https://www.oxfordmail.co.uk/news/26679402.fans-fear-harry-potters-emma-watson/"
-      ]
-    },
-    {
-      "query": "sl vs eng",
+      "query": "montez sweat",
       "approx_searches": "500+",
-      "published_at": "2026-10-29T07:20:00Z",
+      "published_at": "2026-10-29T14:40:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/england-vs-sri-lanka-6th-match-1550718/match-preview",
-        "https://www.theguardian.com/sport/live/2026/oct/29/sri-lanka-v-england-mens-cricket-tri-series-one-day-international-live",
-        "https://www.bbc.com/sport/cricket/articles/cmd93kw9q5v3o"
+        "https://www.nytimes.com/athletic/7733510/2026/10/29/bears-defensive-reinforcements-montez-sweat-tj-edwards/",
+        "https://www.espn.com/nfl/story/_/id/50301493/montez-sweat-back-bears-devastating-2-game-suspension",
+        "https://www.nfl.com/news/montez-sweat-returns-to-bears-devastating-two-game-suspension"
       ]
     },
     {
-      "query": "yulia putintseva",
-      "approx_searches": "100+",
-      "published_at": "2026-10-29T07:20:00Z",
+      "query": "khalil mack",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-29T14:30:00Z",
       "related_news_urls": [
-        "https://en.tennistemple.com/match/rybakina-putintseva-tokyo-2026/9487299/",
-        "https://lastwordonsports.com/tennis/2026/10/28/wta-tokyo-rybakina-putintseva/",
-        "https://www.dimers.com/tennis/news/elena-rybakina-vs-yulia-putintseva-tennis-prediction-wta-toray-pan-pacific-open-2026-ac"
+        "https://www.yardbarker.com/nfl/articles/khalil_mack_returned_to_fort_pierce_florida_in_2019_he_paid_off_80000_in_layaway_orders_at_the_local_walmart/s1_17615_44489013",
+        "https://www.boltsfromtheblue.com/los-angeles-chargers-news/66425/los-angeles-chargers-news-kkhalil-mack-kimani-vidal-trade-candidates",
+        "https://www.si.com/nfl/trade-deadline/khalil-mack-trade-destinations-four-best-landing-spots-for-veteran-edge-rusher"
       ]
     },
     {
-      "query": "japan open",
+      "query": "dexter lawrence",
       "approx_searches": "500+",
-      "published_at": "2026-10-29T07:10:00Z",
+      "published_at": "2026-10-29T14:30:00Z",
       "related_news_urls": [
-        "https://www.sportsnet.ca/wta/article/canadas-leylah-fernandez-wins-first-round-match-at-japan-open/",
-        "https://www.thestar.com/sports/tennis/canada-s-fernandez-holds-off-mertens-rally-to-advance-from-second-round-at-japan-open/article_3f4a6b26-c21e-5877-a8a6-a96797547549.html",
-        "https://www.skysports.com/tennis/watch/9021860658980192112/toray-pan-pacific-open-tennis-2026"
+        "https://www.cincinnati.com/story/sports/nfl/bengals/2026/10/26/dexter-lawrence-three-man-sexy-dexy-bengals-ravens/92449980007/",
+        "https://sports.yahoo.com/articles/three-man-sexy-dexy-watch-205827484.html",
+        "https://www.nytimes.com/athletic/7733786/2026/10/29/bengals-red-zone-defense/"
       ]
     },
     {
-      "query": "yaxel",
-      "approx_searches": "100+",
-      "published_at": "2026-10-29T07:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50245902/warriors-yaxel-lendeborg-lost-all-respect-luka-doncic",
-        "https://bleacherreport.com/articles/25526756-yaxel-lendeborg-absolutely-ready-luka-rematch-after-warriors-rookie-ripped-lakers-star",
-        "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/yaxel-lendeborg-luka-doncic-trash-talk/1973839/"
-      ]
-    },
-    {
-      "query": "osaka tennis",
-      "approx_searches": "100+",
-      "published_at": "2026-10-29T07:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7726913/2026/10/27/naomi-osaka-tennis-fashion-outfits-tokyo-pan-pacific-open/",
-        "https://www.skysports.com/tennis/news/13604425/wta-tour-naomi-osaka-wears-japan-inspired-outfit-during-tokyo-win-as-venus-williams-loses-to-teenager-at-guangzhou-open",
-        "https://www.wtatennis.com/videos/4599556/osaka-saves-triple-set-point-vs-paolini-advances-to-tokyo-second-round"
-      ]
-    },
-    {
-      "query": "one piece 1197",
-      "approx_searches": "100+",
-      "published_at": "2026-10-29T06:50:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66084717/?ref_=int_nwr_1",
-        "https://www.yahoo.com/entertainment/tv/articles/one-piece-chapter-1197-spoilers-065915962.html",
-        "https://www.aol.com/articles/one-piece-chapter-1197-release-045948000.html"
-      ]
-    },
-    {
-      "query": "mia pohankova",
+      "query": "micah parsons trade",
       "approx_searches": "500+",
-      "published_at": "2026-10-29T06:40:00Z",
+      "published_at": "2026-10-29T14:30:00Z",
       "related_news_urls": [
-        "https://www.wtatennis.com/videos/4600594/slovak-wild-card-pohankova-18-stuns-osaka-in-tokyo-for-first-top-20-win",
-        "https://www.dimers.com/tennis/news/naomi-osaka-vs-mia-pohankova-tennis-prediction-wta-toray-pan-pacific-open-2026-ac",
-        "https://www.olympics.com/en/news/tennis-pan-pacific-open-tokyo-2026-naomi-osaka-round-16"
+        "https://www.nytimes.com/athletic/7727326/2026/10/27/new-york-giants-j-j-mccarthy-eye-black-michigan-ohio-state-c-j-stroud/",
+        "https://www.wsj.com/sports/football/jj-mccarthy-giants-0c041275",
+        "https://sports.yahoo.com/articles/micah-parsons-gets-blunt-j-090808158.html"
       ]
     },
     {
-      "query": "go fund me",
-      "approx_searches": "100+",
-      "published_at": "2026-10-29T06:40:00Z",
+      "query": "adam schefter",
+      "approx_searches": "500+",
+      "published_at": "2026-10-29T14:30:00Z",
       "related_news_urls": [
-        "https://www.oregonlive.com/business/2026/10/oregon-nonprofits-press-gofundme-lawsuit-alleging-unauthorized-use-of-names-and-logos-to-solicit-donations.html",
-        "https://valawyersweekly.com/2026/10/28/oregon-nonprofits-gofundme-ai-impersonation-lawsuit/",
-        "https://turnto10.com/news/coronavirus/show-us-something-good/local-22-year-old-helps-widower-in-tough-spot-with-free-whole-house-cleanout-fundraiser-home-improvement-october-27-2026"
+        "https://sports.yahoo.com/articles/49ers-insider-gets-blunt-jets-112651688.html",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-news/214302/chiefs-news-reportedly-calling-around-trade"
       ]
     },
     {
-      "query": "maria timofeeva",
+      "query": "nebraska examiner",
+      "approx_searches": "500+",
+      "published_at": "2026-10-29T14:30:00Z",
+      "related_news_urls": [
+        "https://nebraskaexaminer.com/2026/10/28/kearney-senator-preparing-legislation-to-bring-state-into-regulations-for-head-start-programs/",
+        "https://nebraskapublicmedia.org/en/news/news-articles/advocates-say-nebraska-is-lacking-in-resources-for-deaf-hard-of-hearing-students/",
+        "https://www.ketv.com/article/nebraska-lawmakers-examine-gaps-in-education-access/74277432"
+      ]
+    },
+    {
+      "query": "jeffery simmons",
+      "approx_searches": "100000+",
+      "published_at": "2026-10-29T14:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50318351/sources-bears-trade-all-pro-dt-jeffery-simmons",
+        "https://www.cbssports.com/nfl/news/titans-trade-jeffery-simmons-to-chicago-bears-grades/",
+        "https://sports.yahoo.com/articles/tennessee-titans-trading-jeffery-simmons-142812494.html"
+      ]
+    },
+    {
+      "query": "sophie cunningham",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-29T14:20:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/jackson-thompson-sophie-cunningham-claims-fbi-watching-20-people-wnba-anthem-controversy",
+        "https://athlonsports.com/wnba/indiana-fever/sophie-cunningham-sends-clear-message-to-judge-after-stalker-case-update",
+        "https://thespun.com/wnba/wnba-star-sophie-cunningham-has-received-disturbing-threats"
+      ]
+    },
+    {
+      "query": "afg vs zim",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-29T14:20:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-1st-t20i-1555120/match-report",
+        "https://sports.yahoo.com/articles/afghanistan-vs-zimbabwe-prediction-team-080913300.html",
+        "https://www.heraldonline.co.zw/coach-demands-more-aggression-as-chevrons-seek-to-bounce-back/"
+      ]
+    },
+    {
+      "query": "modern sport vs al ahly",
       "approx_searches": "200+",
-      "published_at": "2026-10-29T06:20:00Z",
+      "published_at": "2026-10-29T14:20:00Z",
       "related_news_urls": [
-        "https://www.wtatennis.com/videos/4599440/linette-saves-two-set-points-advances-past-zakharova-in-guangzhou",
-        "https://www.dimers.com/tennis/news/lilli-tagger-vs-magda-linette-tennis-prediction-wta-guangzhou-open-2026-ac",
-        "https://www.skysports.com/tennis/watch/8380352964561018112/guangzhou-open-2026"
+        "https://english.ahram.org.eg/NewsContent/6/51/581190/Sports/Egyptian-Football/Live-score-Modern-Sport-FC-v-Ahly-Egyptian-Premier.aspx",
+        "https://www.voiceofemirates.com/en/sport/2026/10/29/todays-matches-thursday-and-broadcast-channels-al-ahly-egypt-vs-modern-sport/",
+        "https://www.alahlyegypt.com/en/news/article/al-ahly-begin-preparations-for-modern-sport-fc-league-clash"
       ]
     }
   ]
