@@ -7,7 +7,7 @@ test('website chat scrolls without hiding composer and pairing requests bypass A
  const server=http.createServer((req,res)=>{
   const path=new URL(req.url,'http://localhost').pathname;
   if(!/^\/[a-zA-Z0-9.-]+$/.test(path)||!fs.existsSync('.'+path)){res.writeHead(404);return res.end();}
-  res.setHeader('Content-Type',path.endsWith('.js')?'text/javascript':path.endsWith('.css')?'text/css':'text/html');
+  res.setHeader('Content-Type',/\.m?js$/.test(path)?'text/javascript':path.endsWith('.css')?'text/css':'text/html');
   res.end(fs.readFileSync('.'+path));
  });
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
@@ -48,4 +48,59 @@ test('website chat scrolls without hiding composer and pairing requests bypass A
   assert.equal(pairCalls,3);
   assert.deepEqual(errors,[]);
  }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}
+});
+
+test('real inline chat sign-in settles at phone and desktop widths without granting provider access',async t=>{
+ const server=http.createServer((req,res)=>{
+  const path=new URL(req.url,'http://localhost').pathname;
+  if(!/^\/[a-zA-Z0-9.-]+$/.test(path)||!fs.existsSync('.'+path)){res.writeHead(404);return res.end();}
+  res.setHeader('Content-Type',/\.m?js$/.test(path)?'text/javascript':path.endsWith('.css')?'text/css':'text/html');
+  res.end(fs.readFileSync('.'+path));
+ });
+ await new Promise(r=>server.listen(0,'127.0.0.1',r));
+ const browser=await chromium.launch({headless:true});
+ try{
+  for(const [width,walletVerified] of [[360,false],[1280,false],[360,true]]){
+   await t.test(width+'px '+(walletVerified?'verified wallet':'missing wallet'),async()=>{
+    const page=await browser.newPage({viewport:{width,height:760},isMobile:width===360,hasTouch:width===360});
+    let oauthStarts=0;
+    const errors=[];page.on('pageerror',e=>errors.push(e.message));
+    await page.route('https://**/*',route=>route.fulfill({json:{ok:true,messages:[],capabilities:[]}}));
+    await page.route('**/api/bubbles/connections/**',route=>{
+     const path=new URL(route.request().url()).pathname;
+     if(path.endsWith('/start'))oauthStarts++;
+     return route.fulfill({json:{ok:true,walletVerified,ready:false,providers:{}}});
+    });
+    if(walletVerified)await page.addInitScript(()=>{
+     localStorage.setItem('starquest_session',JSON.stringify({key:'fixture',username:'fixture'}));
+     localStorage.setItem('starquest_ledger_device_v1:fixture','sq_'+'a'.repeat(43));
+    });
+    try{
+     await page.goto(`http://127.0.0.1:${server.address().port}/bubbles.html`);
+     await page.waitForFunction(()=>window.QuantaBubbles);
+     await page.locator('.ba-launcher').click();
+     const gate=page.locator('#chatBubblesSigninGate');
+     if(walletVerified){
+      await gate.waitFor({state:'hidden'});
+      assert.equal(await gate.getAttribute('data-ready'),'false');
+     }else{
+      const github=page.locator('#chatBubblesGithubSignIn'),cloudflare=page.locator('#chatBubblesCloudflareSignIn');
+      await page.waitForFunction(()=>document.getElementById('chatBubblesCloudflareSignIn')?.textContent==='Sign in with Cloudflare');
+      assert.equal(await github.isEnabled(),true);
+      assert.equal(await cloudflare.isEnabled(),true);
+      const recovery=page.locator('#chatBubblesRecoverWallet');
+      assert.equal(await recovery.isVisible(),true);
+      assert.equal(await recovery.getAttribute('href'),'/wallet-recovery.html?signin=starquest&returnTo=/bubbles.html');
+      await cloudflare.click();
+      assert.match(await page.locator('#chatBubblesSigninStatus').textContent(),/Sign in with StarQuest/);
+      assert.equal(await cloudflare.isEnabled(),true);
+      assert.equal(await page.locator('#chatBubblesCancelSignIn').isVisible(),false);
+     }
+     assert.equal(oauthStarts,0,'Status checks cannot authorize a provider');
+     assert.equal(await page.getByRole('textbox',{name:'Message Bubbles',exact:true}).isVisible(),true);
+     assert.deepEqual(errors,[]);
+    }finally{await page.close();}
+   });
+  }
+ }finally{await browser.close();await new Promise(r=>server.close(r));}
 });

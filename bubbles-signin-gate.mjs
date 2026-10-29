@@ -22,7 +22,8 @@ export function summarizeGate(payload){
  return summary;
 }
 export function mountBubblesSigninGate({root=document,host=window,prefix=''}={}){
- const get=id=>root.getElementById(prefix+id);
+ // Inline chat uses chatBubbles… IDs; the page uses bubbles… IDs.
+ const get=id=>root.getElementById(prefix?prefix+id[0].toUpperCase()+id.slice(1):id);
  const gate=get('bubblesSigninGate');
  if(!gate)return null;
  const status=get('bubblesSigninStatus');
