@@ -18,7 +18,7 @@ function mockDb(data=rows){
    if(sql.includes('SELECT date,requests,page_views'))return {all:async()=>({results:data})};
    return {bind(...params){statements.push({sql,params});return {sql,params}}};
   },
-  batch:async batch=>{assert.equal(batch.length,statements.length);return [];}
+  batch:async batch=>{assert.equal(batch.length,statements.length);return batch.map(()=>({success:true}));}
  };
  return {db,statements};
 }
@@ -80,6 +80,16 @@ test('idempotent daily upsert keeps highest verified day count without double-co
  assert.match(statements[0].sql,/ON CONFLICT\(date\) DO UPDATE/);
  assert.match(statements[0].sql,/MAX\(traffic_daily.requests,excluded.requests\)/);
  assert.equal(statements[0].params[0],'2026-10-04');
+});
+test('traffic refresh rejects incomplete or unsuccessful D1 batch receipts',async()=>{
+ const fetcher=async()=>({ok:true,json:async()=>({data:{viewer:{zones:[{httpRequests1dGroups:groups}]}}})});
+ for(const receipts of [[],undefined,[{success:false}],
+  Array.from({length:groups.length},(_,i)=>({success:i!==3})),
+  Array.from({length:groups.length},()=>({}))]){
+  const {db}=mockDb();
+  db.batch=async()=>receipts;
+  await assert.rejects(refreshLedger(db,{token:'not-a-real-private-token',now,fetcher}),/ledger_write_unverified/);
+ }
 });
 test('public traffic endpoint serves durable counts even when live token is absent',async()=>{
  const {db}=mockDb();
