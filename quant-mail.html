@@ -20,15 +20,29 @@ nav{display:flex;gap:12px}a{color:#075eac}
 <header><strong>QuantaPhi · Quant Mail</strong><nav aria-label="Navigation"><a href="/bubbles.html">Bubbles chat</a><a href="/bubbles-accounts.html">Account connections</a></nav></header>
 <section class="card">
 <h1>Quant Mail</h1>
-<p class="status" role="status">Setup in progress — no active mailbox or phone passkey enrollment yet.</p>
+<p class="status" id="quantMailOverallStatus" role="status">Mailboxes are not active. Checking whether secure phone passkey enrollment is available…</p>
 <p>QuantaPhi's planned passwordless email service will use the existing Bubbles identity, with a passkey created on your own device after the secure server is ready.</p>
 <h2>Requested owner addresses</h2>
 <div class="alias"><strong>kris@quantaphi.org</strong><small>Owner address · not active</small></div>
 <div class="alias"><strong>administrator@quantaphi.org</strong><small>Administrator alias · not active, requires verified administrator privileges</small></div>
 <p class="muted">These names are reserved in the proposed design. They are not mailboxes, confirmed account identities or a way to claim administrator access.</p>
 </section>
+<section class="card"><h2>Phone passkey registration</h2>
+<p>Choose your requested owner alias. Both addresses belong to one verified owner wallet; the administrator alias additionally requires administrator authorization. Your phone keeps the private key.</p>
+<label for="quantMailPasskeyAlias" style="display:block;margin:12px 0 6px;font-weight:700">Owner address</label>
+<select id="quantMailPasskeyAlias" style="width:100%;min-height:48px;padding:12px;border:1px solid #9db9c8;border-radius:10px;font:16px system-ui">
+<option value="kris@quantaphi.org">kris@quantaphi.org</option>
+<option value="administrator@quantaphi.org">administrator@quantaphi.org</option>
+</select>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
+<button type="button" id="quantMailPasskeyRegister" disabled style="min-height:48px;background:#096bb2;border:0;border-radius:10px;color:#fff;font:700 15px system-ui;padding:12px">Create phone passkey</button>
+<button type="button" id="quantMailPasskeyLogin" disabled style="min-height:48px;background:#e8f2fa;border:1px solid #a8c1d2;border-radius:10px;color:#144c74;font:700 15px system-ui;padding:12px">Sign in with passkey</button>
+</div>
+<p class="status" id="quantMailPasskeyStatus" data-state="checking" aria-live="polite" role="status">Checking verified passkey service readiness…</p>
+<p class="muted">The Create button remains disabled unless the real WebAuthn server reports readiness. Passkey confirmation must be completed on your own phone.</p>
+</section>
 <section class="card"><h2>Sign in and security</h2>
-<p>Use your existing verified StarQuest / Unified Wallet session to open Bubbles. Do not enter a Gmail password or your phone's screen lock here. Passkey registration requires a future secure on-phone confirmation; this preview intentionally has no registration button.</p>
+<p>Use your existing verified StarQuest / Unified Wallet session to open Bubbles. Do not enter a Gmail password or your phone's screen lock here. Passkey registration requires server-verified owner authentication and a secure on-phone confirmation. If the server is not ready, registration remains unavailable.</p>
 <a class="action" href="/bubbles.html">Open Bubbles chat</a>
 <p class="muted">Once the WebAuthn server, owner identity verification and actual mail transport are independently reviewed and operational, this page can offer passkey registration and an inbox. No password or wallet was changed to show this preview.</p></section>
-</main></body></html>
+</main><script type="module" src="/quant-mail-passkeys.mjs?v=20261029-secure-registration1"></script></body></html>
