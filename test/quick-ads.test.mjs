@@ -87,7 +87,7 @@ test('homepage loads the independent notification module after carousel, keeping
  assert.match(html,/quick-ads\.css\?v=20261028-game5b/);
  assert.ok(html.indexOf('quick-ads.mjs?v=20261029-house1')>html.indexOf('oracle-card-deck.js?v='));
  assert.match(ui,/quantaphi:switchboard-change/);
- assert.match(ui,/\['scheduled','live'\]\.includes\(status\)/);
+ assert.match(ui,/\['scheduled','live','house'\]\.includes\(status\)/);
  assert.match(ui,/Dismiss Quick Ads for 10 minutes/);
  assert.match(css,/prefers-reduced-motion/);
 });
