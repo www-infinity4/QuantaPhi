@@ -19,7 +19,7 @@ export function parsePublicProfile(html){
   if(!article.includes('href="/YahooPingcwlz"'))continue; // authored account, not a quoted article
   const match=article.match(/<div class="[^"]*\bwhitespace-pre-wrap\b[^"]*" dir="auto">([\s\S]*?)<\/div>/i);
   if(!match)continue;
-  const text=strip(match[1]).slice(0,2000);if(!text)continue;
+  const text=strip(match[1]).slice(0,4000);if(!text)continue;
   out.push({id,text,url:PROFILE+'/status/'+id,pinned:/>Pinned</.test(article)});
   seen.add(id);
  }
@@ -79,16 +79,31 @@ export async function scanPublicX(env){
   if(!observed.length)throw Error('no_visible_public_owner_posts_after_retry');
  }catch(e){await recordScan(env,{status:'blocked',error:String(e.message||e)});throw e}
  const stamp=now();
- let newCount=0,candidates=0;
+ let newCount=0,candidates=0,expandedCount=0;
  for(const p of observed){
   const kind=classifyPost(p.text);
   const result=await env.DB.prepare("INSERT OR IGNORE INTO owner_x_posts(id,url,body,kind,observed_at,pinned) VALUES (?,?,?,?,?,?)").bind(p.id,p.url,p.text,kind,stamp,p.pinned?1:0).run();
   const added=Number(result.meta?.changes||0);
   newCount+=added;
   if(added&&(kind==='tagged'||kind==='possible'))candidates++;
+  if(!added){
+   // An initial public profile render can clip a post. Accept only a strict
+   // extension of the same authored post; never replace divergent wording.
+   // observed_at remains the original first-seen timestamp.
+   const prior=await env.DB.prepare('SELECT kind FROM owner_x_posts WHERE id=?').bind(p.id).first();
+   if(prior){
+    const expanded=await env.DB.prepare(
+     'UPDATE owner_x_posts SET body=?, kind=? WHERE id=? AND length(?)>length(body) AND substr(?,1,length(body))=body'
+    ).bind(p.text,kind,p.id,p.text,p.text).run();
+    if(Number(expanded.meta?.changes||0)===1){
+     expandedCount++;
+     if(!['tagged','possible'].includes(prior.kind)&&['tagged','possible'].includes(kind))candidates++;
+    }
+   }
+  }
  }
  await recordScan(env,{status:'public_posts_observed',visible:observed.length,added:newCount,candidates});
- return {ok:true,status:'public_posts_observed',visibleCount:observed.length,newPosts:newCount,newPossibleRequests:candidates,lastSuccess:stamp,publicRead:true,completeHistory:false};
+ return {ok:true,status:'public_posts_observed',visibleCount:observed.length,newPosts:newCount,expandedPosts:expandedCount,newPossibleRequests:candidates,lastSuccess:stamp,publicRead:true,completeHistory:false};
 }
 export default {
  async scheduled(event,env,ctx){ctx.waitUntil(scanPublicX(env))},
