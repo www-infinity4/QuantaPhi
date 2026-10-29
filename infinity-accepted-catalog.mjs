@@ -3,6 +3,8 @@
  * Model qualifiers are preserved: acceptance does not extend to every product.
  */
 import {BRAND_SOURCE_EVIDENCE} from './infinity-accepted-sources.mjs';
+import {BRAND_VISUALS} from './infinity-accepted-visuals.mjs';
+import {BRAND_OFFERINGS} from './infinity-accepted-offerings.mjs';
 const groups=[
  ['Infrastructure & Physical Tools',`
 Channellock|https://www.channellock.com/
@@ -132,8 +134,10 @@ export const INFINITY_ACCEPTED_BRANDS=Object.freeze(groups.flatMap(([category,ro
   const [name,seedUrl]=row.split('|'),id=slug(name),evidence=BRAND_SOURCE_EVIDENCE[id]||{};
   return Object.freeze({id,name,category,official:evidence.official||seedUrl,
    seedUrl,infinityAccepted:true,acceptedBy:'catalog-owner',acceptedAt:'2026-10-27',
-   feature:'Products · care · repair · parts',study:name+' official products, repair resources and service terms',
-   image:evidence.image||null,logo:evidence.logo||null,
+   feature:BRAND_OFFERINGS[id]||'Product details are awaiting a source check.',
+   study:name+' official products, repair resources and service terms',
+   image:BRAND_VISUALS[id]?.images[0]||evidence.image||null,logo:evidence.logo||null,
+   images:Object.freeze([...(BRAND_VISUALS[id]?.images||[]),evidence.image,evidence.logo].filter(Boolean)),
    sourceCheckedAt:evidence.checkedAt||null,sourceStatus:evidence.status||'not-checked',
    actions:Object.freeze((evidence.actions||[]).map(x=>Object.freeze({...x}))),
    // Source inspection is separate from TinyFish end-to-end acceptance.
