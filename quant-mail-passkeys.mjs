@@ -118,6 +118,12 @@ export async function mountQuantMailPasskeys(doc=document,root=window){
  }catch{
   announce('Passkey service is not active yet. No phone credential or mailbox was changed.');
  }
+ if(serviceEnabled&&(!root.PublicKeyCredential||!root.navigator?.credentials||
+    (typeof root.PublicKeyCredential.parseCreationOptionsFromJSON!=='function')||
+    (typeof root.PublicKeyCredential.parseRequestOptionsFromJSON!=='function'))){
+  serviceEnabled=false;
+  announce('This Android Chrome or passkey provider does not support the required security API. Update Chrome to continue.');
+ }
  setButtons();
  const execute=async(kind)=>{
   if(!serviceEnabled||busy)return;busy=true;setButtons();
