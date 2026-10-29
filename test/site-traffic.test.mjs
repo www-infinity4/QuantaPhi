@@ -48,6 +48,17 @@ test('Cloudflare day validator rejects duplicates, invalid and future values',()
  assert.throws(()=>validateGroups([{dimensions:{date:'2026-10-25'},sum:{requests:1,pageViews:1}}],now),/invalid/);
  assert.throws(()=>validateGroups([{dimensions:{date:'2026-10-24'},sum:{requests:-1,pageViews:1}}],now),/invalid/);
 });
+test('impossible calendar dates and duplicate ledger days fail closed',()=>{
+ const badDays=['2026-02-30','2026-02-29','2026-13-01','2026-00-10'];
+ for(const date of badDays){
+  assert.throws(()=>validateGroups([{dimensions:{date},sum:{requests:1,pageViews:1}}],now),/invalid_analytics_day/);
+  assert.throws(()=>cumulativeSnapshot([{date,requests:1,page_views:1,verified_at:now.toISOString()}],now),/ledger_invalid/);
+ }
+ assert.throws(()=>cumulativeSnapshot([rows[0],rows[0]],now),/ledger_invalid/);
+ const leap={date:'2028-02-29',requests:1,page_views:1,verified_at:'2028-02-29T00:00:00Z'};
+ assert.equal(cumulativeSnapshot([leap],new Date('2028-03-01T00:00:00Z')).recordedDays,1);
+ assert.equal(validateGroups([{dimensions:{date:'2028-02-29'},sum:{requests:1,pageViews:1}}],new Date('2028-03-01T00:00:00Z')).length,1);
+});
 test('GraphQL stays server-side, reading bounded previous days with no browser token',async()=>{
  const days=await queryTraffic({token:'not-a-real-private-token',now,fetcher:async(url,init)=>{
   assert.equal(url,'https://api.cloudflare.com/client/v4/graphql');
