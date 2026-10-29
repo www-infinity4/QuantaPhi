@@ -108,3 +108,14 @@ test('new UI only offers passkeys when backend readiness is confirmed',()=>{
  assert.match(js,/navigator\?\.credentials/);
  assert.doesNotMatch(html,/type="password"/);
 });
+
+test('per-IP begin auth attempt limit and administrator session expiry window are enforced',async()=>{
+ const passkeys=make();
+ for(let i=0;i<12;i++)await passkeys.beginAuthentication({alias:'kris@quantaphi.org',fingerprint:'example-ip-hash'});
+ await assert.rejects(passkeys.beginAuthentication({alias:'kris@quantaphi.org',fingerprint:'example-ip-hash'}),/passkey_rate_limited/);
+ const next=await passkeys.beginAuthentication({alias:'kris@quantaphi.org',fingerprint:'different-ip-hash'});
+ assert.ok(next.attemptId);
+ assert.equal(PASSKEY_CONSTANTS.ADMIN_SESSION_TTL,5*60*1000);
+ assert.match(passkeyCookie('abc',true),/Max-Age=300/);
+ assert.match(passkeyCookie('abc',false),/Max-Age=43200/);
+});
