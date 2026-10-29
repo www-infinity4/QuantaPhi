@@ -50,7 +50,8 @@ export async function refreshLedger(db,{token,fetcher=fetch,now=new Date()}={}){
  const sql='INSERT INTO traffic_daily(date,requests,page_views,verified_at,source) VALUES(?1,?2,?3,?4,?5) '+
   'ON CONFLICT(date) DO UPDATE SET requests=MAX(traffic_daily.requests,excluded.requests), '+
   'page_views=MAX(traffic_daily.page_views,excluded.page_views), '+
-  'verified_at=MAX(traffic_daily.verified_at,excluded.verified_at)';
+  'verified_at=CASE WHEN julianday(excluded.verified_at)>julianday(traffic_daily.verified_at) '+
+  'THEN excluded.verified_at ELSE traffic_daily.verified_at END';
  const statements=days.map(d=>db.prepare(sql).bind(d.date,d.requests,d.pageViews,timestamp,SOURCE));
  const receipts=await db.batch(statements);
  // A resolved D1 batch is not proof that every daily write succeeded.
@@ -61,7 +62,7 @@ export async function refreshLedger(db,{token,fetcher=fetch,now=new Date()}={}){
 export function cumulativeSnapshot(rows,now=new Date()){
  if(!Array.isArray(rows)||!rows.length)throw Error('ledger_empty');
  const sorted=[...rows].sort((a,b)=>a.date.localeCompare(b.date)),today=isoDate(now);
- let requests=0,pageViews=0,latest='';
+ let requests=0,pageViews=0,latest='',latestMs=-Infinity;
  const seenDates=new Set();
  for(const r of sorted){
   if(!validUtcDay(r.date)||r.date>today||seenDates.has(r.date)||!isCount(r.requests)||!isCount(r.page_views)||
@@ -70,7 +71,8 @@ export function cumulativeSnapshot(rows,now=new Date()){
   seenDates.add(r.date);
   requests+=r.requests;pageViews+=r.page_views;
   if(!isCount(requests)||!isCount(pageViews))throw Error('ledger_overflow');
-  if(r.verified_at>latest)latest=r.verified_at;
+  const verifiedMs=Date.parse(r.verified_at);
+  if(verifiedMs>latestMs){latestMs=verifiedMs;latest=r.verified_at;}
  }
  const first=sorted[0].date,mostRecent=sorted[sorted.length-1].date,begin7=offsetDate(now,-6);
  const recent=sorted.filter(x=>x.date>=begin7&&x.date<=today);
