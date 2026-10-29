@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-29T19:25:48.018127Z",
+  "checked_at": "2026-10-29T23:29:33.832637Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 16
+      "articles_selected": 15
     },
     {
       "publisher": "CBS Sports",
@@ -18,12 +18,34 @@
   ],
   "articles": [
     {
-      "title": "Party in Milwaukee! Brewers' parade set for Friday",
-      "url": "https://www.mlb.com/news/brewers-2026-world-series-championship-parade",
+      "title": "White Sox to name Roffe director of amateur scouting (source)",
+      "url": "https://www.mlb.com/news/matt-roffe-to-be-white-sox-director-of-amateur-scouting",
       "publisher": "MLB.com",
-      "published_at": "2026-10-29T18:07:00Z",
+      "published_at": "2026-10-29T20:01:10Z",
+      "summary": "New executive spent past 5 seasons in Brewers front office",
+      "author": "Scott Merkin",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "The Brewers are 1st-time champs. Nearly all of their players are, too.",
+      "url": "https://www.mlb.com/news/first-time-champs-on-2026-brewers",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-29T19:32:01Z",
       "summary": "",
-      "author": "Manny Randhawa",
+      "author": "Aiden Stepansky",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "The most clutch postseason performances",
+      "url": "https://www.mlb.com/news/most-clutch-postseason-performances",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-29T19:17:00Z",
+      "summary": "These players came through in October's biggest moments",
+      "author": "Matt Kelly",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -150,17 +172,6 @@
       "image_credit": ""
     },
     {
-      "title": "A look at what went wrong in Fall Classic, as Rays met their match in Brewers",
-      "url": "https://www.mlb.com/news/takeaways-from-rays-world-series-loss-to-brewers",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T08:26:12Z",
-      "summary": "",
-      "author": "Brian Murphy",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "After dream season, Rays' World Series wishes crash back down to earth",
       "url": "https://www.mlb.com/news/rays-lose-2026-world-series-to-brewers",
       "publisher": "MLB.com",
@@ -233,17 +244,6 @@
       "published_at": "2026-10-29T05:18:00Z",
       "summary": "",
       "author": "Anthony Castrovince",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Watch the end of every World Series since 1943",
-      "url": "https://mlb-cuts-diamond.mlb.com/FORGE/2026/2026-10/28/d4c6958c-9621499a-94f2db94-csvm-diamondgcp-asset_1280x720_59_4000K.mp4",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T04:26:53Z",
-      "summary": "Every World Series champion since 1943",
-      "author": "",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -337,15 +337,15 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Brewers complete one of the best postseason runs in history",
-      "url": "https://www.mlb.com/news/best-mlb-single-season-postseason-winning-percentages",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T03:29:00Z",
-      "summary": "",
-      "author": "Dylan Svoboda",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
+      "title": "Brewers vs. Rays odds, World Series Game 5 predictions: Use best Kalshi promo code CBSSPORTS55 for $55 bonus",
+      "url": "https://www.cbssports.com/prediction/news/brewers-vs-rays-odds-world-series-game-5-predictions-use-best-kalshi-promo-code-cbssports55-55-bonus/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T22:13:36Z",
+      "summary": "Here's a look at the trading markets at Kalshi for World Series Game 5 as the Tampa Bay Rays host the Milwaukee Brewers with their season on the line",
+      "author": "Brandon Gustafson",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/b34822d9-f13e-43c8-b3d1-761f0d1b48fd/brewers-imagn-1.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
     }
   ],
   "unavailable_sources": [
