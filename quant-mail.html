@@ -50,6 +50,21 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #e5a4
 <p id="mail-session-status" class="status" role="status" aria-live="polite" data-state="checking">Not signed in to Quant Mail yet. Check your QuantaPhi session.</p>
 <p class="muted">A verified QuantaPhi wallet confirms the account holder, not ownership of a proposed email name or working email delivery. Your mailbox will require separate server provisioning.</p>
 </section>
+<section aria-labelledby="passkey-title">
+<h2 id="passkey-title">Sign in with your phone passkey</h2>
+<p>Both owner addresses will use your verified QuantaPhi identity. Your passkey is approved on your Android phone; it is not stored as an email password.</p>
+<label class="label" for="quantMailPasskeyAlias">Owner address</label>
+<select id="quantMailPasskeyAlias" style="width:100%;border:1px solid #97aebe;border-radius:10px;padding:12px;font:16px system-ui;min-height:48px">
+<option value="kris@quantaphi.org">kris@quantaphi.org</option>
+<option value="administrator@quantaphi.org">administrator@quantaphi.org</option>
+</select>
+<div class="actions">
+<button type="button" id="quantMailPasskeyRegister" disabled>Set up phone passkey</button>
+<button type="button" id="quantMailPasskeyLogin" disabled>Sign in with passkey</button>
+</div>
+<p id="quantMailPasskeyStatus" role="status" aria-live="polite" class="status" data-state="checking">Checking whether verified passkey enrollment is available…</p>
+<p class="muted">Passkey enrollment is not active until QuantaPhi verifies the owner, validates the browser challenge and confirms the credential was saved. An administrator address alone never grants administrator access.</p>
+</section>
 <section aria-labelledby="mail-setup-title">
 <h2 id="mail-setup-title">Owner setup</h2>
 <p>Requested first address: <strong>kris@quantaphi.org</strong>. This name is held for owner verification, not available for public claiming. It is <strong>not an active mailbox</strong>.</p>
@@ -57,5 +72,6 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #e5a4
 </section>
 </main>
 <script type="module" src="/quant-mail.mjs?v=20261029-owner-entry1"></script>
+<script type="module" src="/quant-mail-passkeys.mjs?v=20261029-owner-passkey1"></script>
 </body>
 </html>
