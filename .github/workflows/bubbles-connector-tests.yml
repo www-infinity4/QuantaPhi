@@ -18,6 +18,13 @@ on:
       - 'test/bubbles-connections*.test.mjs'
       - 'test/bubbles-gmail-inbox.test.mjs'
       - 'test/bubbles-wallet-email.test.mjs'
+      - 'test/quant-mail-entry.test.mjs'
+      - 'quant-mail.html'
+      - 'quant-mail.mjs'
+      - 'bubbles-quant-mail-shortcut.js'
+      - 'wallet-recovery.html'
+      - 'bubbles-chrome.html'
+      - 'bubbles/index.html'
       - 'test/starcoin-github-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
   push:
@@ -38,6 +45,13 @@ on:
       - 'test/bubbles-connections*.test.mjs'
       - 'test/bubbles-gmail-inbox.test.mjs'
       - 'test/bubbles-wallet-email.test.mjs'
+      - 'test/quant-mail-entry.test.mjs'
+      - 'quant-mail.html'
+      - 'quant-mail.mjs'
+      - 'bubbles-quant-mail-shortcut.js'
+      - 'wallet-recovery.html'
+      - 'bubbles-chrome.html'
+      - 'bubbles/index.html'
       - 'test/starcoin-github-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
 
@@ -66,4 +80,5 @@ jobs:
             test/bubbles-home-account-link.test.mjs \
             test/bubbles-gmail-inbox.test.mjs \
             test/bubbles-wallet-email.test.mjs \
+            test/quant-mail-entry.test.mjs \
             test/starcoin-github-backup.test.mjs
