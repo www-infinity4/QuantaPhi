@@ -32,9 +32,12 @@ export function classifyPost(text){
  const action=/\b(build|create|make|add|put|show|place|fix|repair|restore|update|connect|deploy|publish|sync|replace|improve|change|install|redesign|give|need|want|must|ought|should|have to|we need|we have)\b/i.test(s);
  return subject&&action?'possible':subject?'context':'other';
 }
-async function recordScan(env,{status,visible=0,added=0,candidates=0,error=''}){
+async function recordScan(env,{status,visible=0,added=0,candidates=0,error='',checkedAt}){
+ // A slower, earlier Browser Run can finish after a newer scan. Record the
+ // original scan start and never let an old failure or stale result roll back
+ // a newer receipt. On equal timestamps, prefer a successful public read.
  const lastSuccess=status==='public_posts_observed'?now():null;
- await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES ('main',?,?,?,?,?,?,?) ON CONFLICT(k) DO UPDATE SET last_checked=excluded.last_checked,last_success=COALESCE(excluded.last_success,owner_x_scans.last_success),status=excluded.status,visible_count=excluded.visible_count,new_count=excluded.new_count,candidate_count=excluded.candidate_count,error=excluded.error").bind(now(),lastSuccess,status,visible,added,candidates,error.slice(0,180)).run();
+ await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES ('main',?,?,?,?,?,?,?) ON CONFLICT(k) DO UPDATE SET last_checked=excluded.last_checked,last_success=COALESCE(excluded.last_success,owner_x_scans.last_success),status=excluded.status,visible_count=excluded.visible_count,new_count=excluded.new_count,candidate_count=excluded.candidate_count,error=excluded.error WHERE excluded.last_checked>owner_x_scans.last_checked OR (excluded.last_checked=owner_x_scans.last_checked AND excluded.status='public_posts_observed' AND owner_x_scans.status!='public_posts_observed')").bind(checkedAt,lastSuccess,status,visible,added,candidates,error.slice(0,180)).run();
 }
 async function renderedProfileHTML(response){
  const reader=response.body?.getReader();
@@ -64,6 +67,7 @@ async function renderedProfileHTML(response){
 }
 export async function scanPublicX(env){
  if(!env.BROWSER||!env.DB)throw Error('browser_or_db_binding_unavailable');
+ const scanStartedAt=now();
  // A profile may render its initial skeleton before public articles arrive.
  // Retry one empty render with a longer DOM wait, but never report zero posts
  // as a successful read; X sometimes returns a login wall or rate limit.
@@ -77,7 +81,7 @@ export async function scanPublicX(env){
    if(observed.length)break;
   }
   if(!observed.length)throw Error('no_visible_public_owner_posts_after_retry');
- }catch(e){await recordScan(env,{status:'blocked',error:String(e.message||e)});throw e}
+ }catch(e){await recordScan(env,{status:'blocked',error:String(e.message||e),checkedAt:scanStartedAt});throw e}
  const stamp=now();
  let newCount=0,candidates=0,expandedCount=0;
  for(const p of observed){
@@ -102,7 +106,7 @@ export async function scanPublicX(env){
    }
   }
  }
- await recordScan(env,{status:'public_posts_observed',visible:observed.length,added:newCount,candidates});
+ await recordScan(env,{status:'public_posts_observed',visible:observed.length,added:newCount,candidates,checkedAt:scanStartedAt});
  return {ok:true,status:'public_posts_observed',visibleCount:observed.length,newPosts:newCount,expandedPosts:expandedCount,newPossibleRequests:candidates,lastSuccess:stamp,publicRead:true,completeHistory:false};
 }
 export default {
