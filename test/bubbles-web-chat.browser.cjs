@@ -41,7 +41,9 @@ test('website chat scrolls without hiding composer and pairing requests bypass A
   assert.ok(await page.locator('.ba-thread').evaluate(e=>e.scrollTop>0));
   const field=page.getByRole('textbox',{name:'Message Bubbles',exact:true});
   for(const phrase of ['One time code brain link','one-time code','link my APK']){
+   const receipt=page.waitForResponse(response=>response.url().endsWith('/owner/pair/create'));
    await field.fill(phrase);await page.getByRole('button',{name:'Send',exact:true}).click();
+   await receipt;
    await page.waitForFunction(()=>!document.querySelector('.ba-send').disabled);
   }
   assert.equal(aiCalls,0);
