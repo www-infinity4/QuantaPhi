@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {scanPublicX} from '../workers/bubbles-public-x/worker.mjs';
+import {scanPublicX,parsePublicProfile,classifyPost} from '../workers/bubbles-public-x/worker.mjs';
 
 const ID='2115528052818276498';
 const article=(body)=>'<div role="link" data-href="/YahooPingcwlz/status/'+ID+'"><article><a href="/YahooPingcwlz">Owner</a><div class="whitespace-pre-wrap" dir="auto">'+body+'</div></article></div>';
@@ -69,4 +69,20 @@ test('a longer but untrusted divergent post cannot promote a noncandidate',async
  const r=await scanPublicX(h.env);
  assert.equal(r.expandedPosts,0);assert.equal(r.newPossibleRequests,0);
  assert.equal(h.posts.get(ID).kind,'other');
+});
+
+
+test('hexadecimal HTML entities retain #bubbles owner request tags',async()=>{
+ for(const encoded of ['&#x23;bubbles','&#X23;bubbles','&#35;bubbles']){
+  const posts=parsePublicProfile(article(encoded+' build an Infinity card'));
+  assert.equal(posts.length,1);
+  assert.equal(posts[0].text,'#bubbles build an Infinity card');
+  assert.equal(classifyPost(posts[0].text),'tagged');
+ }
+ const h=harness();
+ h.renders.push(article('&#x23;bubbles build an Infinity card'));
+ const result=await scanPublicX(h.env);
+ assert.equal(result.newPosts,1);
+ assert.equal(result.newPossibleRequests,1);
+ assert.equal(h.posts.get(ID).kind,'tagged');
 });
