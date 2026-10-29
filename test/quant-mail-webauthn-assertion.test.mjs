@@ -44,7 +44,7 @@ test('32-byte unpredictable challenges, strict canonical encoding and SHA256 dig
   assert.notEqual(a,b);
   assert.equal(decodeBase64url(a,32,32).length,32);
   assert.equal((await challengeHash(a,webcrypto)).length,43);
-  assert.throws(()=>decodeBase64url('Zg'),/webauthn_encoding/); // invalid unpadded trailing bits
+  assert.throws(()=>decodeBase64url('Zh'),/webauthn_encoding/); // invalid unpadded trailing bits
   assert.throws(()=>decodeBase64url('AA=='),/webauthn_encoding/);
 });
 test('valid RP-bound, user-verified ES256 assertion returns evidence, not a session',async()=>{
@@ -60,10 +60,10 @@ test('valid RP-bound, user-verified ES256 assertion returns evidence, not a sess
   assert.equal('session' in result,false);
 });
 test('reject wrong origin, challenge, RP, credential and cross-origin assertions',async()=>{
-  await reject(()=>verifyAssertion(await fixture({origin:'https://phish.quantaphi.org'})),'client_data');
+  await reject(async()=>verifyAssertion(await fixture({origin:'https://phish.quantaphi.org'})),'client_data');
   const f=await fixture();
   await reject(()=>verifyAssertion({...f,expectedChallenge:newChallenge(webcrypto)}),'client_data');
-  await reject(()=>verifyAssertion(await fixture({rp:'evil.example'})),'rp_id');
+  await reject(async()=>verifyAssertion(await fixture({rp:'evil.example'})),'rp_id');
   await reject(()=>verifyAssertion({...f,expectedCredentialId:newChallenge(webcrypto)}),'credential_mismatch');
   const client=JSON.parse(new TextDecoder().decode(decodeBase64url(f.credential.response.clientDataJSON)));
   client.crossOrigin=true;
@@ -71,7 +71,7 @@ test('reject wrong origin, challenge, RP, credential and cross-origin assertions
 });
 test('reject missing UP or UV, attested assertion, unsupported extension and invalid backup flags',async()=>{
   for(const flags of [0x00,0x01,0x04,0x45,0x85,0x15]){
-    await reject(()=>verifyAssertion(await fixture({flags})),'authenticator_flags');
+    await reject(async()=>verifyAssertion(await fixture({flags})),'authenticator_flags');
   }
 });
 test('reject signature tampering, revoked-style key mismatch and counter rollback',async()=>{
