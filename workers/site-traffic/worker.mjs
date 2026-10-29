@@ -45,7 +45,10 @@ export async function refreshLedger(db,{token,fetcher=fetch,now=new Date()}={}){
   'ON CONFLICT(date) DO UPDATE SET requests=MAX(traffic_daily.requests,excluded.requests), '+
   'page_views=MAX(traffic_daily.page_views,excluded.page_views), verified_at=excluded.verified_at';
  const statements=days.map(d=>db.prepare(sql).bind(d.date,d.requests,d.pageViews,timestamp,SOURCE));
- await db.batch(statements);
+ const receipts=await db.batch(statements);
+ // A resolved D1 batch is not proof that every daily write succeeded.
+ if(!Array.isArray(receipts)||receipts.length!==statements.length||
+    receipts.some(r=>r?.success!==true))throw Error('ledger_write_unverified');
  return {dayCount:days.length,fetchedAt:timestamp};
 }
 export function cumulativeSnapshot(rows,now=new Date()){
