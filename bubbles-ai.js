@@ -1074,7 +1074,41 @@ pluginsButton.addEventListener('click',async()=>{
  }catch{pluginsPanel.textContent='Skill references could not load. Your connections are unchanged.';}
 });
 tools.append(pluginsButton,pluginsPanel);
-tools.addEventListener('toggle',()=>{if(tools.open&&typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));});
+// Private owner setup belongs only in the existing Robot Brain Notes and work.
+// A public link, localStorage flag, profile name or email address is NOT proof.
+// Even if a user manually guesses the destination, its secure server must
+// separately validate the owner wallet before any credential registration.
+const ownerSecurityLink=create('a','ba-control ba-owner-security','Owner security · passkeys');
+ownerSecurityLink.href='/continuity/owner/#account-security';
+ownerSecurityLink.rel='nofollow';
+ownerSecurityLink.hidden=true;
+ownerSecurityLink.dataset.ownerOnlyPasskeys='true';
+tools.append(ownerSecurityLink);
+let ownerSecurityChecking=false;
+async function checkOwnerSecurityAccess(){
+ if(embedded||ownerSecurityChecking)return;
+ ownerSecurityChecking=true;
+ try{
+  const gate=window.QuantaBrainOwner;
+  if(typeof gate?.walletIdentity!=='function')return;
+  const result=await gate.walletIdentity();
+  ownerSecurityLink.hidden=result?.state!=='verified';
+ }catch{ownerSecurityLink.hidden=true;}
+ finally{ownerSecurityChecking=false;}
+}
+ownerSecurityLink.addEventListener('click',async event=>{
+ event.preventDefault();
+ ownerSecurityLink.hidden=true;
+ await checkOwnerSecurityAccess();
+ if(!ownerSecurityLink.hidden)window.location.assign('/continuity/owner/#account-security');
+});
+window.addEventListener('bubbles:owner-ready',()=>void checkOwnerSecurityAccess());
+tools.addEventListener('toggle',()=>{
+ if(tools.open){
+  void checkOwnerSecurityAccess();
+  if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));
+ }else ownerSecurityLink.hidden=true;
+});
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
 const historyToggle=create('input','');historyToggle.type='checkbox';historyToggle.checked=keepChat;
