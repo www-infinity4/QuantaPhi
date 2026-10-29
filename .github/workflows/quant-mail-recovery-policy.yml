@@ -1,0 +1,27 @@
+name: Quant Mail recovery and AI switchboard policy
+on:
+  pull_request:
+    paths:
+      - 'workers/quant-mail/**'
+      - 'test/quant-mail-recovery-communication.test.mjs'
+      - 'docs/QUANT-MAIL-RECOVERY-SWITCHBOARD-20261029.md'
+      - '.github/workflows/quant-mail-recovery-policy.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/quant-mail/**'
+      - 'test/quant-mail-recovery-communication.test.mjs'
+      - '.github/workflows/quant-mail-recovery-policy.yml'
+permissions:
+  contents: read
+jobs:
+  recovery-policy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check independent proofs, passkey fallback and outbound consent boundaries
+        run: node --test test/quant-mail-recovery-communication.test.mjs
