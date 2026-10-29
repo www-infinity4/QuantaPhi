@@ -2,6 +2,7 @@
  * lease or permission to replay blocked/sensitive work. Keep this gate in
  * the Worker, not in the Android microphone or the chat model. */
 import {eligibleForRetry} from './alarm-retry.mjs';
+import {technicalSourceEvidenceNeeded} from './ticket-selector.mjs';
 
 // The five-day bridge may enqueue source work, never impersonate a wallet,
 // approve blocked jobs, release production, or obtain a writer lease.
@@ -54,8 +55,10 @@ export function checkOwnerRunnerRequest(
   if (!job?.id || !/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(String(job.repository || '')) || !String(job.instructions || '').trim()) {
     return { eligible: false, reason: 'invalid_job_scope' };
   }
-  if (ownerBlock.test(String(job.progress?.blocker || '')) || ownerBlock.test(String(job.progress?.summary || ''))) {
-    return { eligible: false, reason: 'owner_decision_required' };
+  const blockerText=[job.progress?.blocker,job.progress?.summary,job.progress?.next].filter(v=>typeof v==='string').join(' ');
+  if (ownerBlock.test(blockerText)) {
+    return { eligible: false, reason: technicalSourceEvidenceNeeded(blockerText)?
+      'technical_source_evidence_required':'owner_decision_required' };
   }
   return eligibleForRetry(job, { now, prior, lease, retry, deps });
 }
