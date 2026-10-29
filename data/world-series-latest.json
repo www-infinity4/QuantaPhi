@@ -1,22 +1,99 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-29T13:55:57.897280Z",
+  "checked_at": "2026-10-29T19:25:48.018127Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 19
+      "articles_selected": 16
     },
     {
       "publisher": "CBS Sports",
       "url": "https://www.cbssports.com/partners/feeds/rss/mlb_news",
-      "articles_selected": 35
+      "articles_selected": 34
     }
   ],
   "articles": [
+    {
+      "title": "Party in Milwaukee! Brewers' parade set for Friday",
+      "url": "https://www.mlb.com/news/brewers-2026-world-series-championship-parade",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-29T18:07:00Z",
+      "summary": "",
+      "author": "Manny Randhawa",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Brewers set World Series parade for Friday, two days after winning 2026 title",
+      "url": "https://www.cbssports.com/mlb/news/brewers-world-series-parade-time-how-to-watch-route/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-29T17:40:01Z",
+      "summary": "The Parade of Champions will wrap through downtown Milwaukee",
+      "author": "Dayn Perry",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/6d7ae3fc-6aa4-4651-8868-9a726431fdd8/parade-getty.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Milwaukee Public Schools to close for Brewers' championship parade",
+      "url": "https://www.mlb.com/news/milwaukee-public-schools-to-close-for-brewers-championship-parade",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-29T17:36:28Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Huge year for Contreras brothers ends with World Series embrace",
+      "url": "https://www.mlb.com/news/contreras-brothers-finish-huge-2026-season",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-29T16:35:26Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Three reasons why the Brewers can repeat as World Series champions in 2027",
+      "url": "https://www.cbssports.com/mlb/news/brewers-world-series-champions-repeat-2027/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-29T15:51:22Z",
+      "summary": "Fresh off the first title in franchise history, the Brew Crew are nowhere close to done",
+      "author": "Dayn Perry",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/91591fec-e18d-4a39-b2cc-2aacf335414e/pratt-chourio-getty.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "After watching his brother win World Series, Tylor Megill can take inspiration",
+      "url": "https://www.mlb.com/news/tylor-megill-inspired-by-world-series-champion-brother-trevor-megill",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-29T15:12:31Z",
+      "summary": "",
+      "author": "Anthony DiComo",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "'It was about each other': The Brewers and Pat Murphy admire the masterpiece they built",
+      "url": "https://www.cbssports.com/mlb/news/brewers-pat-murphy-admire-the-masterpiece-they-built-world-series/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-29T14:53:00Z",
+      "summary": "Everything came together for the 2026 Brewers, and they celebrated their first World Series title Wednesday night at Tropicana Field",
+      "author": "Julian McWilliams",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/bac58823-5f61-4e1f-912f-35c43d266ff6/murphy-chourio-getty.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
     {
       "title": "Ranking the World Series chances for last four MLB teams looking for first title after Brewers snap drought",
       "url": "https://www.cbssports.com/mlb/news/ranking-world-series-chances-titleless-teams-rockies-padres-mariners-rays/",
@@ -27,6 +104,17 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/676f2ee6-06ae-4e6f-b444-898025a20362/caminero-getty-5.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "These Brewers World Series artifacts are heading to the Hall of Fame",
+      "url": "https://www.mlb.com/news/brewers-world-series-artifacts-heading-to-hall-of-fame",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-29T13:33:06Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
     },
     {
       "title": "Ranking the last 10 World Series: Where does Brewers vs. Rays 2026 showdown land in the last decade?",
@@ -73,32 +161,10 @@
       "image_credit": ""
     },
     {
-      "title": "Rasmussen lauds Rays, ponders 2027 after starting Game 5 on short rest",
-      "url": "https://www.mlb.com/news/drew-rasmussen-2026-world-series-game-5-start",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T07:33:00Z",
-      "summary": "",
-      "author": "Adam Berry",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "After dream season, Rays' World Series wishes crash back down to earth",
       "url": "https://www.mlb.com/news/rays-lose-2026-world-series-to-brewers",
       "publisher": "MLB.com",
       "published_at": "2026-10-29T07:24:00Z",
-      "summary": "",
-      "author": "Adam Berry",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "'Rock of our clubhouse': Martinez reflects on season with Rays, future",
-      "url": "https://www.mlb.com/news/nick-martinez-future-with-rays-unclear-after-serving-as-clubhouse-leader-in-2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T07:21:27Z",
       "summary": "",
       "author": "Adam Berry",
       "image_url": "",
@@ -150,34 +216,12 @@
       "image_credit": ""
     },
     {
-      "title": "Party in Milwaukee! Brewers' parade set for Friday",
-      "url": "https://www.mlb.com/news/brewers-2026-world-series-championship-parade",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T05:54:59Z",
-      "summary": "",
-      "author": "Manny Randhawa",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "'I've waited my whole life for this': Brewers fans take in title-clinching win",
       "url": "https://www.mlb.com/news/brewers-fans-celebrate-world-series-title-at-american-family-field",
       "publisher": "MLB.com",
       "published_at": "2026-10-29T05:40:05Z",
       "summary": "",
       "author": "Zach Sweet",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Extra rest a boon to Brewers in World Series",
-      "url": "https://www.mlb.com/news/impact-of-extra-rest-before-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T05:39:00Z",
-      "summary": "",
-      "author": "",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -216,17 +260,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Check out all the top plays from the 2026 World Series",
-      "url": "https://www.mlb.com/stories/mlb-top-plays-world-series-2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T04:06:02Z",
-      "summary": "",
-      "author": "",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "2027 World Series odds: Can Brewers go back-to-back? Will Dodgers reclaim the crown?",
       "url": "https://www.cbssports.com/mlb/news/2027-world-series-odds-brewers-repeat-dodgers/",
       "publisher": "CBS Sports",
@@ -247,17 +280,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/91bd66e7-144a-46bd-9d29-264028d9a999/2026-mlb-bracket-brewers-win.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Pratt the latest rookie to make a name for himself in postseason",
-      "url": "https://www.mlb.com/news/best-mlb-postseasons-by-rookies",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T03:57:00Z",
-      "summary": "",
-      "author": "Thomas Harrigan",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "MLB Lockout 101: Everything to know about baseball's likely upcoming work stoppage",
@@ -304,17 +326,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Brothers who have won World Series titles",
-      "url": "https://www.mlb.com/news/brothers-who-won-the-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T03:50:00Z",
-      "summary": "",
-      "author": "Theo DeRosa",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Brewers win the 2026 World Series: Where the Brew Crew ranks among the best recent MLB champions",
       "url": "https://www.cbssports.com/mlb/news/brewers-world-series-champions-ranked/",
       "publisher": "CBS Sports",
@@ -332,17 +343,6 @@
       "published_at": "2026-10-29T03:29:00Z",
       "summary": "",
       "author": "Dylan Svoboda",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Full 2026 postseason results and final bracket",
-      "url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T03:17:00Z",
-      "summary": "",
-      "author": "",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
