@@ -1,0 +1,40 @@
+name: Live TV carousel acceptance
+on:
+  pull_request:
+    paths: ['live-tv-*','oracle-card-deck.js','index.html','test/live-tv-*','.github/workflows/live-tv-cards.yml']
+  push:
+    branches: [main]
+    paths: ['live-tv-*','oracle-card-deck.js','index.html','test/live-tv-*','.github/workflows/live-tv-cards.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live-tv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check state and existing TV regressions
+        run: |
+          node --check live-tv-cards.mjs
+          node --check live-tv-state.mjs
+          node --check oracle-card-deck.js
+          node --test test/live-tv-state.test.mjs test/fox-world-series.test.mjs test/phi-channel-cards.test.cjs test/oracle-card-deck.test.cjs test/oracle-deck-cycle.test.mjs
+      - name: Install test-only browser
+        run: |
+          npm install --no-save --package-lock=false @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Android-width carousel lifecycle acceptance (provider fixtures)
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 &
+          npx playwright test test/live-tv-browser.spec.mjs --reporter=line --workers=1
+      - name: Retain failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-tv-browser-failure
+          path: test-results/
+          retention-days: 14
