@@ -1,12 +1,13 @@
-import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign} from './quick-ads-core.mjs?v=20261029-house1';
+import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAdState,quickAdPacingAllows} from './quick-ads-core.mjs?v=20261029-house2';
 /* QuantaPhi Quick Ads: event-driven, silent, dismissible game spots and first-party successor.
  * Server feed establishes live vs final; network errors fail closed.
  * No merchant, wallet, search or account data leaves this module. */
 (()=>{
  if(typeof window==='undefined'||typeof document==='undefined')return;
  const KEY='quantaphi:quickads:house-20261029:v1';
- const read=()=>{try{return JSON.parse(sessionStorage.getItem(KEY)||'{}')}catch{return {}}};
- const state={...read(),counts:{...(read().counts||{})},recent:[...(read().recent||[])]};
+ const LEGACY_KEY='quantaphi:worldseries-quickads:20261028:v1';
+ const read=key=>{try{return JSON.parse(sessionStorage.getItem(key)||'{}')}catch{return {}}};
+ const state=restoreQuickAdState(read(KEY),read(LEGACY_KEY));
  const save=()=>{try{sessionStorage.setItem(KEY,JSON.stringify(state))}catch{}};
  let currentId='',moves=0,shown=null,closeTimer=null,seq=0,poll=null,scoreAdSuppressedUntil=0;
  let liveState='unknown',lastFetch=0,checking=null;
@@ -76,12 +77,10 @@ import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign} from './quick
  }
  const onSwitch=async(detail,revision)=>{
   if(quickAdCampaign()==='inactive'||document.hidden||Date.now()<scoreAdSuppressedUntil)return;
-  if(Date.now()<Number(state.dismissedUntil||0))return;
-  if(Date.now()-Number(state.lastAt||0)<24000)return;
-  if(Number(state.total||0)>=30)return;
+  if(!quickAdPacingAllows(Date.now(),state,scoreAdSuppressedUntil))return;
   if(moves%2!==0)return; // one non-blocking pop-up per two card transitions at most
   const status=await live();
-  if(!['scheduled','live','house'].includes(status)||revision!==seq||document.hidden||quickAdCampaign()==='inactive')return;
+  if(!['scheduled','live','house'].includes(status)||revision!==seq||document.hidden||quickAdCampaign()==='inactive'||!quickAdPacingAllows(Date.now(),state,scoreAdSuppressedUntil))return;
   const pick=chooseQuickAd(detail,state.counts,state.recent,Date.now());
   if(pick)display(pick);
  };
