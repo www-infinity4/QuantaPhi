@@ -3,107 +3,105 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-29T01:58:51.202857Z",
+  "checked_at": "2026-10-29T07:58:19.839668Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "lakers vs clippers",
-      "approx_searches": "50000+",
-      "published_at": "2026-10-29T01:40:00Z",
+      "query": "emma watson",
+      "approx_searches": "100+",
+      "published_at": "2026-10-29T07:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-lakers-vs-clippers-live-013000581.html",
-        "https://www.silverscreenandroll.com/lakers-game-previews/127953/lakers-vs-clippers-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-austin-reaves",
-        "https://www.covers.com/nba/lakers-vs-clippers-prediction-picks-odds-oct-28-2026"
+        "https://www.oxfordmail.co.uk/news/26679402.fans-fear-harry-potters-emma-watson/"
       ]
     },
     {
-      "query": "william contreras",
-      "approx_searches": "5000+",
-      "published_at": "2026-10-29T01:40:00Z",
-      "related_news_urls": [
-        "https://nypost.com/2026/10/27/sports/brewers-unlikely-to-keep-william-contreras-this-offseason/",
-        "https://heavy.com/sports/mlb/new-york-yankees/william-contreras-best-trade-destination/",
-        "https://blogredmachine.com/reds-wise-avoid-brewers-favorite-trick-staying-away-william-contreras"
-      ]
-    },
-    {
-      "query": "houston dynamo vs seattle sounders",
+      "query": "sl vs eng",
       "approx_searches": "500+",
-      "published_at": "2026-10-29T01:40:00Z",
+      "published_at": "2026-10-29T07:20:00Z",
       "related_news_urls": [
-        "https://www.soundersfc.com/news/seavhou-101-preview-all-you-need-to-know-when-the-sounders-face-off-against-the-houston-dynamo-on-wednesday-presented-by-ticketmaster",
-        "https://www.sounderatheart.com/2026/10/sounders-treating-dynamo-as-a-must-win-game/",
-        "https://www.squawka.com/en/news/previews/seattle-sounders-vs-houston-dynamo-predictions-betting-tips-29-10-26/"
+        "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/england-vs-sri-lanka-6th-match-1550718/match-preview",
+        "https://www.theguardian.com/sport/live/2026/oct/29/sri-lanka-v-england-mens-cricket-tri-series-one-day-international-live",
+        "https://www.bbc.com/sport/cricket/articles/cmd93kw9q5v3o"
       ]
     },
     {
-      "query": "keyonte george",
+      "query": "yulia putintseva",
+      "approx_searches": "100+",
+      "published_at": "2026-10-29T07:20:00Z",
+      "related_news_urls": [
+        "https://en.tennistemple.com/match/rybakina-putintseva-tokyo-2026/9487299/",
+        "https://lastwordonsports.com/tennis/2026/10/28/wta-tokyo-rybakina-putintseva/",
+        "https://www.dimers.com/tennis/news/elena-rybakina-vs-yulia-putintseva-tennis-prediction-wta-toray-pan-pacific-open-2026-ac"
+      ]
+    },
+    {
+      "query": "japan open",
       "approx_searches": "500+",
-      "published_at": "2026-10-29T01:40:00Z",
+      "published_at": "2026-10-29T07:10:00Z",
       "related_news_urls": [
-        "https://www.si.com/nba/jazz/onsi/utah-jazz-announce-new-starting-five-without-jaren-jackson-jr-markkanen-",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/jaxson-hayes-shoulder-upgraded-to-available",
-        "https://www.rotoballer.com/player-news/jaxson-hayes-carries-questionable-tag-for-wednesday/1977698"
+        "https://www.sportsnet.ca/wta/article/canadas-leylah-fernandez-wins-first-round-match-at-japan-open/",
+        "https://www.thestar.com/sports/tennis/canada-s-fernandez-holds-off-mertens-rally-to-advance-from-second-round-at-japan-open/article_3f4a6b26-c21e-5877-a8a6-a96797547549.html",
+        "https://www.skysports.com/tennis/watch/9021860658980192112/toray-pan-pacific-open-tennis-2026"
       ]
     },
     {
-      "query": "inter de miami",
+      "query": "yaxel",
+      "approx_searches": "100+",
+      "published_at": "2026-10-29T07:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50245902/warriors-yaxel-lendeborg-lost-all-respect-luka-doncic",
+        "https://bleacherreport.com/articles/25526756-yaxel-lendeborg-absolutely-ready-luka-rematch-after-warriors-rookie-ripped-lakers-star",
+        "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/yaxel-lendeborg-luka-doncic-trash-talk/1973839/"
+      ]
+    },
+    {
+      "query": "osaka tennis",
+      "approx_searches": "100+",
+      "published_at": "2026-10-29T07:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7726913/2026/10/27/naomi-osaka-tennis-fashion-outfits-tokyo-pan-pacific-open/",
+        "https://www.skysports.com/tennis/news/13604425/wta-tour-naomi-osaka-wears-japan-inspired-outfit-during-tokyo-win-as-venus-williams-loses-to-teenager-at-guangzhou-open",
+        "https://www.wtatennis.com/videos/4599556/osaka-saves-triple-set-point-vs-paolini-advances-to-tokyo-second-round"
+      ]
+    },
+    {
+      "query": "one piece 1197",
+      "approx_searches": "100+",
+      "published_at": "2026-10-29T06:50:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66084717/?ref_=int_nwr_1",
+        "https://www.yahoo.com/entertainment/tv/articles/one-piece-chapter-1197-spoilers-065915962.html",
+        "https://www.aol.com/articles/one-piece-chapter-1197-release-045948000.html"
+      ]
+    },
+    {
+      "query": "mia pohankova",
       "approx_searches": "500+",
-      "published_at": "2026-10-29T01:40:00Z",
+      "published_at": "2026-10-29T06:40:00Z",
       "related_news_urls": [
-        "https://vantage-dc.com/virtual-tour-montreal-data-center/?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vdHJhdmlzLWF1c3Rpbi5naXRodWIuaW8vZW5tL2VudS54bWwiLz48L2tycGFubz4=&id=video-cincinnati-vs-inter-miami-match-lie-fjdibzo",
-        "https://en.as.com/soccer/inter-miami-vs-cincinnati-live-online-score-stats-goals-updates-mls-2026-f202610-n/",
-        "https://onefootball.com/en/video/inter-miami-cf-fc-cincinnati-2-2-tor-riquelme-fillipi-43689231"
+        "https://www.wtatennis.com/videos/4600594/slovak-wild-card-pohankova-18-stuns-osaka-in-tokyo-for-first-top-20-win",
+        "https://www.dimers.com/tennis/news/naomi-osaka-vs-mia-pohankova-tennis-prediction-wta-toray-pan-pacific-open-2026-ac",
+        "https://www.olympics.com/en/news/tennis-pan-pacific-open-tokyo-2026-naomi-osaka-round-16"
       ]
     },
     {
-      "query": "contreras",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-29T01:40:00Z",
+      "query": "go fund me",
+      "approx_searches": "100+",
+      "published_at": "2026-10-29T06:40:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/william-contreras-showing-mastery-of-abs-challenge-system-in-postseason",
-        "https://www.espn.com/watch/player/_/id/50292990",
-        "https://www.jsonline.com/story/sports/mlb/brewers/2026/10/22/contreras-dedicated-workout-regime-allowed-him-to-endure-all-season/92377556007/"
+        "https://www.oregonlive.com/business/2026/10/oregon-nonprofits-press-gofundme-lawsuit-alleging-unauthorized-use-of-names-and-logos-to-solicit-donations.html",
+        "https://valawyersweekly.com/2026/10/28/oregon-nonprofits-gofundme-ai-impersonation-lawsuit/",
+        "https://turnto10.com/news/coronavirus/show-us-something-good/local-22-year-old-helps-widower-in-tough-spot-with-free-whole-house-cleanout-fundraiser-home-improvement-october-27-2026"
       ]
     },
     {
-      "query": "amy roloff",
+      "query": "maria timofeeva",
       "approx_searches": "200+",
-      "published_at": "2026-10-29T01:40:00Z",
+      "published_at": "2026-10-29T06:20:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/little-people-big-world-star-171032974.html",
-        "https://www.cleveland.com/entertainment/2026/10/little-people-big-world-family-mourns-2nd-death-in-weeks.html",
-        "https://people.com/amy-roloff-dad-dies-97-12196368"
-      ]
-    },
-    {
-      "query": "pacers score",
-      "approx_searches": "200+",
-      "published_at": "2026-10-29T01:40:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/pacers-ben-sheppard-to-undergo-surgery-for-a-torn-meniscus-on-wednesday",
-        "https://www.hoopsrumors.com/2026/10/injury-notes-pacers-adams-dybantsa-hornets-jones.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-ben-sheppard-knee-out-for-months"
-      ]
-    },
-    {
-      "query": "world series mvp odds",
-      "approx_searches": "500+",
-      "published_at": "2026-10-29T01:40:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/stories/mlb/world-series-mvp-predictions-brewers-williams-contreras",
-        "https://www.sportsnet.ca/mlb/video/makes-more-sense-to-stay-in-player-props-market-for-contreras-and-chourio/",
-        "https://www.jsonline.com/story/sports/mlb/brewers/2026/10/27/who-is-favorited-to-be-the-world-series-mvp/92461588007/"
-      ]
-    },
-    {
-      "query": "josh green",
-      "approx_searches": "200+",
-      "published_at": "2026-10-29T01:40:00Z",
-      "related_news_urls": [
-        "https://www.rotowire.com/basketball/headlines/josh-green-news-starting-sans-markkanen-536564",
-        "https://www.si.com/nba/jazz/onsi/utah-jazz-announce-new-starting-five-without-jaren-jackson-jr-markkanen-",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/jaxson-hayes-shoulder-upgraded-to-available"
+        "https://www.wtatennis.com/videos/4599440/linette-saves-two-set-points-advances-past-zakharova-in-guangzhou",
+        "https://www.dimers.com/tennis/news/lilli-tagger-vs-magda-linette-tennis-prediction-wta-guangzhou-open-2026-ac",
+        "https://www.skysports.com/tennis/watch/8380352964561018112/guangzhou-open-2026"
       ]
     }
   ]
