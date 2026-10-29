@@ -1092,7 +1092,7 @@ async function checkOwnerSecurityAccess(){
   const gate=window.QuantaBrainOwner;
   if(typeof gate?.walletIdentity!=='function')return;
   const result=await gate.walletIdentity();
-  ownerSecurityLink.hidden=result?.state!=='verified';
+  ownerSecurityLink.hidden=result?.state!=='verified'||!tools.open;
  }catch{ownerSecurityLink.hidden=true;}
  finally{ownerSecurityChecking=false;}
 }
