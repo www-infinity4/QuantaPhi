@@ -68,6 +68,14 @@ test('ledger rejects invalid and far-future verification timestamps',()=>{
  const closeSkew=new Date(now.getTime()+2*60*1000).toISOString();
  assert.equal(cumulativeSnapshot([{...sample,verified_at:closeSkew}],now).fetchedAt,closeSkew);
 });
+test('mixed-precision UTC timestamps preserve the actual latest verification',()=>{
+ const older={...rows[0],verified_at:'2026-10-24T06:10:54Z'};
+ const newer={...rows[1],verified_at:'2026-10-24T06:10:54.421Z'};
+ // A lexical MAX incorrectly prefers the older 'Z' suffix to '.421Z'.
+ assert.ok(older.verified_at>newer.verified_at);
+ assert.ok(Date.parse(older.verified_at)<Date.parse(newer.verified_at));
+ assert.equal(cumulativeSnapshot([older,newer],now).fetchedAt,newer.verified_at);
+});
 test('GraphQL stays server-side, reading bounded previous days with no browser token',async()=>{
  const days=await queryTraffic({token:'not-a-real-private-token',now,fetcher:async(url,init)=>{
   assert.equal(url,'https://api.cloudflare.com/client/v4/graphql');
@@ -90,7 +98,7 @@ test('idempotent daily upsert keeps highest verified day count without double-co
  assert.match(statements[0].sql,/MAX\(traffic_daily.requests,excluded.requests\)/);
  // Two overlapping refreshes can finish out of order. The older write must
  // never move the last verified time backwards after the newer write.
- assert.match(statements[0].sql,/verified_at=MAX\(traffic_daily.verified_at,excluded.verified_at\)/);
+ assert.match(statements[0].sql,/verified_at=CASE WHEN julianday\(excluded.verified_at\)>julianday\(traffic_daily.verified_at\)/);
  assert.equal(statements[0].params[0],'2026-10-04');
 });
 test('traffic refresh rejects incomplete or unsuccessful D1 batch receipts',async()=>{
