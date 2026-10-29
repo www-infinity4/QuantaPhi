@@ -96,7 +96,7 @@ function searchTool(root,card,options={}){
  if(direct){
   // The search starts on this card. Infinity Viewer owns a SAME-ORIGIN
   // results interface; google.com cannot be framed as a third-party page.
-  form.classList.add('qcx-native-search');
+  if (form) form.classList.add('qcx-native-search');
   field.name='q';
   form.addEventListener('submit',e=>{
    e.preventDefault();const q=field.value.trim().slice(0,180);if(!q)return;
