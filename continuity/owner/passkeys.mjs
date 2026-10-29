@@ -22,10 +22,15 @@ async function openPrivateOwnerPasskeys(){
   if(verified?.state!=='verified')return;
   region.hidden=false;
   text('Owner wallet verified. Checking passkey registration service…');
-  const response=await fetch('/api/quant-mail/passkeys/status',{
-   method:'GET',cache:'no-store',credentials:'same-origin',
-   signal:AbortSignal.timeout(9000)
-  });
+  // Android 12 WebView may not implement AbortSignal.timeout.
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),9000);
+  let response;
+  try{
+   response=await fetch('/api/quant-mail/passkeys/status',{
+    method:'GET',cache:'no-store',credentials:'same-origin',signal:controller.signal
+   });
+  }finally{clearTimeout(timer);}
   if(!response.ok){
    text('The phone passkey server is not active. No account, email or wallet was changed.');
    return;
