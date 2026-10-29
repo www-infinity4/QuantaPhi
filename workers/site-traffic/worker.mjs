@@ -43,7 +43,8 @@ export async function refreshLedger(db,{token,fetcher=fetch,now=new Date()}={}){
  const timestamp=now.toISOString();
  const sql='INSERT INTO traffic_daily(date,requests,page_views,verified_at,source) VALUES(?1,?2,?3,?4,?5) '+
   'ON CONFLICT(date) DO UPDATE SET requests=MAX(traffic_daily.requests,excluded.requests), '+
-  'page_views=MAX(traffic_daily.page_views,excluded.page_views), verified_at=excluded.verified_at';
+  'page_views=MAX(traffic_daily.page_views,excluded.page_views), '+
+  'verified_at=MAX(traffic_daily.verified_at,excluded.verified_at)';
  const statements=days.map(d=>db.prepare(sql).bind(d.date,d.requests,d.pageViews,timestamp,SOURCE));
  const receipts=await db.batch(statements);
  // A resolved D1 batch is not proof that every daily write succeeded.
