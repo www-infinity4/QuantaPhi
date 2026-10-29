@@ -1,0 +1,30 @@
+name: Quant Mail WebAuthn assertion verifier
+on:
+  pull_request:
+    paths:
+      - 'workers/quant-mail/webauthn-assertion-verifier.mjs'
+      - 'test/quant-mail-webauthn-assertion.test.mjs'
+      - '.github/workflows/quant-mail-webauthn-assertion.yml'
+  push:
+    branches: [main, 'continuity/quant-mail-webauthn-assertion-20261029']
+    paths:
+      - 'workers/quant-mail/webauthn-assertion-verifier.mjs'
+      - 'test/quant-mail-webauthn-assertion.test.mjs'
+      - '.github/workflows/quant-mail-webauthn-assertion.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check source syntax
+        run: |
+          node --check workers/quant-mail/webauthn-assertion-verifier.mjs
+          node --check test/quant-mail-webauthn-assertion.test.mjs
+      - name: Verify signed assertion and atomic guards
+        run: node --test test/quant-mail-webauthn-assertion.test.mjs
