@@ -7,6 +7,7 @@ const article=(body)=>'<div role="link" data-href="/YahooPingcwlz/status/'+ID+'"
 
 function harness(){
  const posts=new Map(),scanWrites=[],renders=[];
+ let scanRow=null;
  const env={
   BROWSER:{async quickAction(){return new Response(renders.shift())}},
   DB:{prepare(sql){return{bind(...args){return{
@@ -25,12 +26,20 @@ function harness(){
      if(!row||body!==extended1||body!==extended2||body.length<=row.body.length||!body.startsWith(row.body))return {meta:{changes:0}};
      posts.set(id,{...row,body,kind});return {meta:{changes:1}};
     }
-    if(sql.startsWith('INSERT INTO owner_x_scans')){scanWrites.push(args);return {meta:{changes:1}}}
+    if(sql.startsWith('INSERT INTO owner_x_scans')){
+     assert.match(sql,/WHERE excluded\.last_checked>owner_x_scans\.last_checked/);
+     scanWrites.push(args);
+     const [checkedAt,lastSuccess,status,visible,added,candidates,error]=args;
+     const newer=!scanRow||checkedAt>scanRow.checkedAt||
+      (checkedAt===scanRow.checkedAt&&status==='public_posts_observed'&&scanRow.status!=='public_posts_observed');
+     if(newer)scanRow={checkedAt,lastSuccess:lastSuccess||scanRow?.lastSuccess||null,status,visible,added,candidates,error};
+     return {meta:{changes:Number(newer)}};
+    }
     throw Error('unexpected SQL: '+sql);
    }
   }}}}}
  };
- return {env,posts,scanWrites,renders};
+ return {env,posts,scanWrites,renders,getScan:()=>scanRow};
 }
 
 test('strict public-text extension upgrades a clipped post and promotes its request without recounting a new ID',async()=>{
@@ -85,4 +94,26 @@ test('hexadecimal HTML entities retain #bubbles owner request tags',async()=>{
  assert.equal(result.newPosts,1);
  assert.equal(result.newPossibleRequests,1);
  assert.equal(h.posts.get(ID).kind,'tagged');
+});
+
+
+test('an older failed Browser Run cannot overwrite a newer successful scan receipt',async()=>{
+ const h=harness(),pending=[];
+ h.env.BROWSER.quickAction=()=>new Promise(resolve=>pending.push(resolve));
+ const older=scanPublicX(h.env).catch(e=>e.message);
+ // Distinct scan-start timestamps make the intended ordering explicit.
+ await new Promise(resolve=>setTimeout(resolve,15));
+ const newer=scanPublicX(h.env);
+ assert.equal(pending.length,2);
+ pending[1](new Response(article('#bubbles create a new card')));
+ const good=await newer;
+ assert.equal(good.newPossibleRequests,1);
+ pending[0](new Response('upstream unavailable',{status:503}));
+ assert.equal(await older,'browser_http_503');
+ assert.equal(h.scanWrites.length,2);
+ assert.ok(h.scanWrites[1][0]<h.scanWrites[0][0]);
+ assert.equal(h.getScan().checkedAt,h.scanWrites[0][0]);
+ assert.equal(h.getScan().status,'public_posts_observed');
+ assert.equal(h.getScan().candidates,1);
+ assert.ok(h.getScan().lastSuccess);
 });
