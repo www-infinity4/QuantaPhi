@@ -25,7 +25,7 @@ const choices=[
  ['infinityReaderFame','Touts of Fame · Biographies'],
  ['infinityReaderSports','Sports Almanac · Records'],
  ['infinityReaderCosmic','Beyond the Signal · Read'],
- ['phiChannelCards','Watch a channel'],
+ ['phiChannelCards','KYOU · Infinity live TV'],
  ['liveFoxGameCard','KYOU · FOX 15.1 · Iowa'],
  ['liveFoxNewsCard','LiveNOW from FOX · Live news'],
  ['phiStoryWriter','Write a story'],
@@ -41,7 +41,7 @@ const choices=[
  ['halloweenPhi','Watch a cinema'],
  ['phiProjectActions','Build a website'],
  ['shopAdPhi','Discover products'],
- ['phiChannelCards','Watch live television'],
+ ['phiChannelCards','KYOU · Infinity live TV'],
  ['publicCardTrends','Explore what is trending']
 ];
 
@@ -168,7 +168,7 @@ registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
 function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
-function livePriority(e){return e?.id==='liveFoxGameCard'&&e.node.dataset.livePriority==='1'?1:0}
+function livePriority(e){return e?.id==='phiChannelCards'&&document.getElementById('liveFoxGameCard')?.dataset.livePriority==='1'?1:0}
 function eligible(){const cards=entries.filter(available).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){

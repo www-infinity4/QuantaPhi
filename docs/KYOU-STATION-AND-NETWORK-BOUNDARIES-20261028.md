@@ -13,6 +13,8 @@ Owner request: use the local FOX affiliate KYOU, retain publisher attribution an
 
 ## Implemented source behavior
 
+The existing Infinity TV wall now starts with a full-width KYOU channel **above StarQuest**, followed by Omni TV, Chiller and ShopLC. Selecting the TV wall automatically opens KYOU's intact live page without an initial Play tap. The same live viewer is available at `/infinity-tv/kyou.html`. Switching channels stops the preceding iframe/video; Stop prevents an automatic restart. Other live-card requests also stop the TV-wall player, so both views cannot keep streaming simultaneously. During a freshly confirmed live MLB game the carousel pins this TV wall first, with KYOU above StarQuest, while the separate station/score card remains directly available.
+
 The current game card uses KYOU's published logo, station name and location. When selected and visible, it requests KYOU's intact original live page in an iframe and delegates autoplay permission. The station continues to control its player, ads, navigation, consent and program selection. There is no stream extraction, ad cropping, credential proxy or replay substitution. The frame unloads on card departure, backgrounding and exit. A direct station link remains available when the frame cannot play.
 
 Live-game priority remains tied to fresh MLB status, not to an assumption that the station's online video carries the game. KYOU's own home, live-newscast, schedule and channel-guide pages receive outbound referrals with `utm_source=quantaphi`, `utm_medium=referral`, and `utm_campaign=kyou_station_card`. An origin-only HTTP referrer is retained where the viewer's browser permits it.

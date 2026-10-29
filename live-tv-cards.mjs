@@ -31,6 +31,7 @@ function mountKyouPage(root){
  function sync(){
   if(!selected||!visible||document.hidden){stop();return}
   if(frame)return;
+  document.dispatchEvent(new CustomEvent('quantaphi:tv-playback-request',{detail:{owner:root.id}}));
   const pending=el('iframe','ltv-frame ltv-station-frame');frame=pending;
   pending.title='KYOU original live-news website, with its own player and advertising';
   pending.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';pending.allowFullscreen=true;
@@ -44,6 +45,7 @@ function mountKyouPage(root){
  }
  root.addEventListener('oracle:activate',()=>{selected=true;sync()});
  document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id===root.id){selected=false;stop()}});
+ document.addEventListener('quantaphi:tv-playback-request',event=>{if(event.detail?.owner!==root.id){selected=false;stop()}});
  const observer=new IntersectionObserver(items=>{
   visible=items.some(item=>item.isIntersecting&&item.intersectionRatio>=0.2);
   if(document.body.classList.contains('oracle-shelf-open'))selected=visible;
@@ -114,6 +116,7 @@ export function mountLiveNews(root){
  function sync(){
   if(!selected||!visible||document.hidden){stop();return}
   if(frame)return;
+  document.dispatchEvent(new CustomEvent('quantaphi:tv-playback-request',{detail:{owner:root.id}}));
   frame=el('iframe','ltv-frame');frame.title='LiveNOW from FOX official live news video';
   frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;
   frame.referrerPolicy='strict-origin-when-cross-origin';frame.loading='eager';
@@ -122,6 +125,7 @@ export function mountLiveNews(root){
  }
  root.addEventListener('oracle:activate',()=>{selected=true;sync()});
  document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id===root.id){selected=false;stop()}});
+ document.addEventListener('quantaphi:tv-playback-request',event=>{if(event.detail?.owner!==root.id){selected=false;stop()}});
  const observer=new IntersectionObserver(items=>{
   visible=items.some(item=>item.isIntersecting&&item.intersectionRatio>=0.2);
   // Shelf mode exposes original cards without an Oracle activation event.

@@ -15,14 +15,13 @@ async function prepare(page,state){
 }
 test('a verified live game opens first, stays reachable, and unpins on final',async({page})=>{
  const state={value:'Live'};await prepare(page,state);await page.goto(base+'/',{waitUntil:'domcontentloaded'});
- await expect(page.locator('#oracleCardStage #liveFoxGameCard')).toBeVisible();
+ await expect(page.locator('#oracleCardStage #phiChannelCards')).toBeVisible();
  await expect(page.locator('#liveFoxGameCard h2')).toHaveText('KYOU · FOX 15.1');
  await expect(page.locator('#liveFoxGameCard .ltv-state')).toHaveText('LIVE GAME · Top 3rd');
  await expect(page.locator('#oracleCardLive')).toBeVisible();
  await expect(page.locator('#oracleCardChooser optgroup').first()).toHaveAttribute('label','Live game · pinned first');
  await expect(page.locator('#liveFoxGameCard')).toContainText('FOX game video is not available inside this card.');
- await page.locator('#liveFoxGameCard .ltv-station-window').scrollIntoViewIfNeeded();
- await expect(page.locator('#liveFoxGameCard iframe')).toHaveAttribute('src',/^https:\/\/www\.kyoutv\.com\/livestream\/\?utm_source=quantaphi/);
+ await expect(page.locator('#phiChannelCards .channelphi-kyou iframe')).toHaveAttribute('src',/^https:\/\/www\.kyoutv\.com\/livestream\/\?utm_source=quantaphi/);
  state.value='Final';await page.clock.setFixedTime(new Date(Date.parse(now)+300001));
  await page.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));
  await expect(page.locator('#liveFoxGameCard .ltv-state')).toHaveText('FINAL');
@@ -44,8 +43,23 @@ test('a direct card choice is preserved, news starts inline without a Play butto
  expect(overflow).toBe(false);
  expect(await frame.evaluate(n=>n.getBoundingClientRect().height)).toBeGreaterThanOrEqual(200);
  await page.locator('#oracleCardLive').click();
- await expect(page.locator('#oracleCardStage #liveFoxGameCard')).toBeVisible();
+ await expect(page.locator('#oracleCardStage #phiChannelCards')).toBeVisible();
  await expect(page.locator('#liveFoxNewsCard iframe')).toHaveCount(0);
+});
+test('KYOU opens automatically above StarQuest in the shared live viewer and hands off one player at a time',async({page})=>{
+ await prepare(page,{value:'Live'});await page.goto(base+'/infinity-tv/kyou.html',{waitUntil:'domcontentloaded'});
+ const wall=page.locator('#phiChannelCards'),kyou=wall.locator('.channelphi-kyou'),star=wall.locator('.channelphi-starquest');
+ await expect(wall.locator('.channelphi-grid > article').first()).toHaveClass(/channelphi-kyou/);
+ await expect(kyou.getByRole('heading',{name:'KYOU · FOX 15.1',exact:true})).toBeVisible();
+ await expect(kyou.locator('iframe')).toHaveAttribute('src',/^https:\/\/www\.kyoutv\.com\/livestream\//);
+ await expect(kyou.locator('.channelphi-screen')).toBeHidden();
+ expect(await kyou.evaluate(n=>n.getBoundingClientRect().top)).toBeLessThan(await star.evaluate(n=>n.getBoundingClientRect().top));
+ await star.getByRole('button',{name:'Watch StarQuest video in this card'}).click();
+ await expect(kyou.locator('iframe')).toHaveCount(0);await expect(star.locator('iframe')).toHaveCount(1);
+ await kyou.getByRole('button',{name:'Watch KYOU · FOX 15.1 video in this card'}).click();
+ await expect(kyou.locator('iframe')).toHaveCount(1);await expect(star.locator('iframe')).toHaveCount(0);
+ await kyou.getByRole('button',{name:'■ Stop',exact:true}).click();
+ await expect(wall.locator('iframe,video')).toHaveCount(0);
 });
 test('final and unavailable games never get a live pin',async({page})=>{
  await prepare(page,{value:'Final'});await page.goto(base+'/?card=fox-live-game',{waitUntil:'domcontentloaded'});

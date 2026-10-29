@@ -85,9 +85,11 @@ test('TinyFish public-source result is labeled correctly and never displays untr
  expect(starts).toBe(1);
 });
 
-test('all 116 accepted brands reach the carousel inventory and accepted priority opens the homepage',async({page})=>{
+test('all 116 accepted brands remain reachable when live TV can lead the homepage',async({page})=>{
  await page.goto(base+'/',{waitUntil:'domcontentloaded'});
- await expect(page.locator('#oracleCardStage > .iac-card')).toBeVisible();
+ // Live-event opening priority is covered by live-tv-browser.spec.mjs.
+ // Brand inventory and direct selection must work with any current opener.
+ await expect(page.locator('#oracleCardStage')).toBeVisible();
  await expect(page.locator('.iac-card[data-infinity-accepted="true"]')).toHaveCount(116);
  await expect(page.locator('#oracleCardChooser option[value^="source-durable-"]')).toHaveCount(116);
  await page.locator('#oracleCardInventory').click();
