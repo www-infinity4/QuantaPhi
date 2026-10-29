@@ -314,10 +314,6 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env) {
   const incoming = new URL(request.url);
-  if(incoming.pathname.startsWith('/api/quant-mail/passkeys/')){
-   if(!env.BUBBLES_CONNECTIONS)return Response.json({ok:false,error:'passkey_service_not_ready'},{status:503,headers:{'Cache-Control':'no-store'}});
-   return env.BUBBLES_CONNECTIONS.fetch(request);
-  }
   if(incoming.pathname.startsWith('/api/bubbles/connections/')){
    if(!env.BUBBLES_CONNECTIONS)return Response.json({ok:false,error:'connections_not_configured'},{status:503,headers:{'Cache-Control':'no-store'}});
    return env.BUBBLES_CONNECTIONS.fetch(request);
