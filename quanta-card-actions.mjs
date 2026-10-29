@@ -88,7 +88,7 @@ export function mountCardActions(host,card,options={}){
  });
  // Every public, embeddable card gets the same professional in-site preview.
  // The modal contains the original live controls, not screenshots posing as actions.
- if(!new URLSearchParams(location.search).has('preview') && safeLocalCardUrl(previewUrl(card),location.origin+'/')){
+ if(options.showPreview!==false&&!new URLSearchParams(location.search).has('preview') && safeLocalCardUrl(previewUrl(card),location.origin+'/')){
   b('◫ Preview',()=>{
    const ok=openQuickCardPreview({url:previewUrl(card),title:name,
     description:card.shareDescription||card.description||card.feature||card.study||'',
@@ -139,8 +139,8 @@ export function mountCardActions(host,card,options={}){
  // Account sign-in remains on the original provider until a session is connected.
  let original=null;
  try{const u=new URL(card.official||card.website||card.url||'');if(u.protocol==='https:'&&!u.username&&!u.password)original=u.href}catch{}
- if(original){const open=element('a','qca-button qca-source','↗ Open original website');open.href=original;open.target='_blank';open.rel='noopener noreferrer';controls.append(open)}
- bar.append(controls);mountTinyFishCardReader(bar,card);bar.append(status);host.append(bar);return bar;
+ if(original&&options.showOriginal!==false){const open=element('a','qca-button qca-source','↗ Open original website');open.href=original;open.target='_blank';open.rel='noopener noreferrer';controls.append(open)}
+ bar.append(controls);if(options.websiteReader!==false)mountTinyFishCardReader(bar,card);bar.append(status);host.append(bar);return bar;
 }
 function restoreDraft(){
  let request;try{request=sessionStorage.getItem(STORE_DRAFT)}catch{return}

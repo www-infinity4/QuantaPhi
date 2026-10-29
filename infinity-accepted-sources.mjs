@@ -251,13 +251,13 @@ export const BRAND_SOURCE_EVIDENCE=Object.freeze({
   "actions": [
    {
     "id": "products",
-    "label": "Browse products",
+    "label": "Thread gages",
     "url": "https://www.starrett.com/products/precision-measuring-tools/precision-hand-tools/thread-gages",
     "sourceUrl": "https://www.starrett.com/"
    },
    {
     "id": "parts",
-    "label": "Parts & accessories",
+    "label": "Saw blades",
     "url": "https://www.starrett.com/products/power-tool-accessories-and-hand-tools/reciprocating-saw-blades/carbide-tipped",
     "sourceUrl": "https://www.starrett.com/"
    }
