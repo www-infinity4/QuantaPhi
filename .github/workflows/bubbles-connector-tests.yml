@@ -19,6 +19,9 @@ on:
       - 'test/bubbles-gmail-inbox.test.mjs'
       - 'test/bubbles-wallet-email.test.mjs'
       - 'test/quant-mail-entry.test.mjs'
+      - 'test/quant-mail-passkeys.test.mjs'
+      - 'quant-mail-passkeys.mjs'
+      - 'workers/quant-mail/owner-passkey-guard.mjs'
       - 'quant-mail.html'
       - 'quant-mail.mjs'
       - 'bubbles-quant-mail-shortcut.js'
@@ -46,6 +49,9 @@ on:
       - 'test/bubbles-gmail-inbox.test.mjs'
       - 'test/bubbles-wallet-email.test.mjs'
       - 'test/quant-mail-entry.test.mjs'
+      - 'test/quant-mail-passkeys.test.mjs'
+      - 'quant-mail-passkeys.mjs'
+      - 'workers/quant-mail/owner-passkey-guard.mjs'
       - 'quant-mail.html'
       - 'quant-mail.mjs'
       - 'bubbles-quant-mail-shortcut.js'
@@ -81,4 +87,5 @@ jobs:
             test/bubbles-gmail-inbox.test.mjs \
             test/bubbles-wallet-email.test.mjs \
             test/quant-mail-entry.test.mjs \
+            test/quant-mail-passkeys.test.mjs \
             test/starcoin-github-backup.test.mjs
