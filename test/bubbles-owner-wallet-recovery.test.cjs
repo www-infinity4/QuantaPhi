@@ -72,7 +72,18 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  const env={IDENTITY_DB:db,RECOVERY_ACCESS_AUD:'aud-test',RECOVERY_ACCESS_ISSUER:issuerURL,RECOVERY_OWNER_EMAIL:'owner@example.test',RECOVERY_OWNER_ACCOUNT_ID:'original-123'};
  const digest=async code=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(code)))).map(x=>x.toString(16).padStart(2,'0')).join('');
  let certMode='ok';
- const getCerts=async url=>{assert.equal(url,issuerURL+'/cdn-cgi/access/certs');if(certMode==='error')return new Response('Unavailable',{status:503});if(certMode==='invalid-json')return new Response('Not JSON');if(certMode==='throw')throw Error('network');return Response.json({keys:certMode==='missing'?[]:[pub]})};
+ const getCerts=async(url,options)=>{
+  assert.equal(url,issuerURL+'/cdn-cgi/access/certs');
+  // Workerd accepts only follow/manual; unlike Node, error throws before I/O.
+  if(options?.redirect==='error')throw new TypeError('Invalid redirect value, must be one of follow or manual');
+  assert.equal(options?.redirect,'manual');
+  assert.deepEqual(Object.keys(options.headers),['Accept']);
+  if(certMode.startsWith('redirect-'))return new Response(null,{status:Number(certMode.slice(9)),headers:{Location:'https://untrusted.example/keys'}});
+  if(certMode==='error')return new Response('Unavailable',{status:503});
+  if(certMode==='invalid-json')return new Response('Not JSON');
+  if(certMode==='throw')throw Error('network');
+  return Response.json({keys:certMode==='missing'?[]:[pub]});
+ };
  const issue=vm.runInNewContext(issuer+';issueOwnerRecovery',{crypto,TextEncoder,TextDecoder,Response,URL,Request,btoa,atob,Uint8Array,fetch:getCerts,digest,AbortSignal,console:{warn(){}}});
  const endpoint='https://unified-wallet.marvaseater.workers.dev/v1/wallet/issue-recovery';
  const request=(jwt='',method='GET',origin=endpoint)=>new Request(endpoint,{method,headers:{...(jwt?{'Cf-Access-Jwt-Assertion':jwt}:{}),...(method==='POST'?{Origin:new URL(origin).origin,'Sec-Fetch-Site':'same-origin'}:{})}});
@@ -105,7 +116,7 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  const expiredResponse=await issue(request(expired),env,{});
  assert.equal(expiredResponse.headers.get('X-Wallet-Recovery-Reason'),'session_expired');
  assert.doesNotMatch(await expiredResponse.text(),/owner@example|aud-test|original-123|eyJ/);
- for(const mode of ['error','invalid-json','throw','missing']){
+ for(const mode of ['error','invalid-json','throw','missing','redirect-301','redirect-302','redirect-303','redirect-307','redirect-308']){
   certMode=mode;
   const failure=await issue(request(valid,'POST'),env,{});
   assert.equal(failure.status,mode==='missing'?403:503);
