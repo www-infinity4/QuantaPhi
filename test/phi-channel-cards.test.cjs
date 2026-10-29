@@ -56,16 +56,19 @@ test('one active TV screen can be played and switched with genuine media element
  }
  const root=new Element('section'),listeners={};
  const document={getElementById:id=>id==='phiChannelCards'?root:null,createElement:tag=>new Element(tag),
-  head:new Element('head'),addEventListener:(kind,callback)=>listeners[kind]=callback,hidden:false};
+  head:new Element('head'),addEventListener:(kind,callback)=>listeners[kind]=callback,dispatchEvent:event=>listeners[event.type]?.(event),hidden:false};
  const window={PhiTVPrograms:programs,YT:{Player:class{stopVideo(){}destroy(){}unMute(){}setVolume(){}playVideo(){}}},
   addEventListener:(kind,cb)=>listeners[kind]=cb};
- const context={document,window,location:{origin:'https://quantaphi.org'},URL,setTimeout,clearTimeout};
+ const context={document,window,location:{origin:'https://quantaphi.org'},URL,setTimeout,clearTimeout,CustomEvent:class{constructor(type,{detail}){this.type=type;this.detail=detail}}};
  vm.runInNewContext(code,context);
  const all=n=>[n,...n.children.flatMap(all)];
  const cards=all(root).filter(n=>n.tagName==='article');
- assert.equal(cards.length,4);
- const star=cards[0],omni=cards[1],chiller=cards[2],shop=cards[3];
+ assert.equal(cards.length,5);
+ const [kyou,star,omni,chiller,shop]=cards;
  const btn=(card,c)=>all(card).find(n=>n.className===c);
+ root.handlers['oracle:activate']();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
+ assert.match(all(kyou).find(x=>x.tagName==='iframe').src,/^https:\/\/www\.kyoutv\.com\/livestream\/\?utm_source=quantaphi/);
  btn(star,'channelphi-screen').click();
  const f1=all(root).filter(x=>x.tagName==='iframe');assert.equal(f1.length,1);
  assert.match(f1[0].src,/youtube-nocookie.com\/embed\/[A-Za-z0-9_-]{11}/);
@@ -86,5 +89,9 @@ test('one active TV screen can be played and switched with genuine media element
  btn(omni,'channelphi-next').click();
  assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
  listeners['oracle:card-deactivated']({detail:{id:'phiChannelCards'}});
+ assert.equal(all(root).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
+ root.handlers['oracle:activate']();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
+ listeners['quantaphi:tv-playback-request']({detail:{owner:'liveFoxNewsCard'}});
  assert.equal(all(root).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
 });

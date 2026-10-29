@@ -1,7 +1,7 @@
 import {
  FOX_WATCH_URL,FOX_LIVE_URL,FOX_NEWS_URL,FOX_SPORTS_URL,TEAMS,
  scoreText,fetchWorldSeries,REFRESH_MS
-} from './world-series-score.mjs?v=20261028-game5b';
+} from './world-series-score.mjs?v=20261028-game5c';
 
 const make=(tag,klass,content)=>{
  const el=document.createElement(tag);if(klass)el.className=klass;

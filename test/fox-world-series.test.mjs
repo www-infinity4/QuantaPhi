@@ -52,8 +52,8 @@ test('existing TV players remain while FOX channels extend the same TV grid',()=
  const html=load('index.html'),tv=load('phi-channel-cards.js'),newTv=load('fox-infinity-tv.mjs');
  assert.match(tv,/StarQuest/);assert.match(tv,/Omni TV/);assert.match(tv,/Chiller/);assert.match(tv,/ShopLC/);
  assert.match(html,/id="phiChannelCards"/);
- assert.match(html,/fox-infinity-tv\.mjs\?v=20261028-game5b/);
- assert.match(html,/world-series-updates\.mjs\?v=20261028-game5b/);
+ assert.match(html,/fox-infinity-tv\.mjs\?v=20261028-game5c/);
+ assert.match(html,/world-series-updates\.mjs\?v=20261028-game5c/);
  assert.match(html,/fox-infinity-tv\.css\?v=20261028-game5b/);
  assert.match(newTv,/#phiChannelCards \.channelphi-grid/);
  for(const word of ['FOX · World Series','FOX One · Live TV','FOX Sports','FOX News'])assert.ok(newTv.includes(word));

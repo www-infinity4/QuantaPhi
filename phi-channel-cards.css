@@ -6,6 +6,11 @@
 .channelphi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:14px;align-items:start}
 .channelphi-card{background:#fff;border:1px solid #ddcfeb;border-radius:18px;padding:13px;display:flex;flex-direction:column;gap:9px;min-width:0;box-shadow:0 5px 14px #45276912}
 .channelphi-card.channelphi-playing{grid-column:1/-1}
+.channelphi-card.channelphi-kyou{grid-column:1/-1;border-color:#a4c9e6;background:#f7fbff}
+.channelphi-kyou .channelphi-monogram{background:#0865a6}
+.channelphi-kyou-logo{display:block;width:90px;max-width:35%;height:48px;object-fit:contain}
+.channelphi-full-view{color:#075b98;font-size:13px;min-height:36px;display:inline-flex;align-items:center}
+.channelphi-kyou .channelphi-controls a{display:flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;padding:9px 5px;border:1px solid #947ac4;color:#fff;background:#281b43;text-decoration:none;font-size:12px}
 .channelphi-mast{display:flex;align-items:center;gap:10px;min-width:0}
 .channelphi-monogram{display:grid;place-items:center;flex:0 0 48px;height:48px;border-radius:13px;color:white;font-size:18px;font-weight:950;background:linear-gradient(145deg,#7340aa,#42205f)}
 .channelphi-omni .channelphi-monogram{background:linear-gradient(145deg,#0c74bf,#4d2ca3)}
@@ -34,6 +39,8 @@
 .channelphi-video-slot{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:10px;background:#000}
 .channelphi-video-slot .channelphi-frame,.channelphi-video-slot .channelphi-video{display:block;width:100%;height:100%;min-height:0;max-height:none;aspect-ratio:16/9;border:0;background:#000;object-fit:contain}
 .channelphi-viewer{padding:8px;background:#030507;color:#fff}
+.channelphi-kyou .channelphi-video-slot{height:520px;aspect-ratio:auto}
+.channelphi-kyou .channelphi-video-slot .channelphi-frame{height:520px;min-height:0;aspect-ratio:auto}
 .channelphi-now{display:block;margin:8px 6px 2px;font-size:15px;line-height:1.35;color:#fff;overflow-wrap:anywhere}
 .channelphi-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
 .channelphi-controls button{padding:9px 5px!important;min-width:0;min-height:48px;font-size:12px;border:1px solid #947ac4;background:#281b43;color:#fff;touch-action:manipulation}

@@ -51,8 +51,8 @@ export const scoreText=game=>game&&game.away!==null&&game.home!==null?game.away+
 let lastResult=null,lastAttempt=0,pending=null;
 export async function fetchWorldSeries({force=false}={}){
  const now=Date.now();
- if(!force&&lastResult&&now-lastAttempt<REFRESH_MS)return lastResult;
  if(pending)return pending;
+ if(!force&&lastResult&&now-lastAttempt<REFRESH_MS)return lastResult;
  lastAttempt=now;
  pending=(async()=>{
   const controller=new AbortController();

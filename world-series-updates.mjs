@@ -1,7 +1,7 @@
 import {
  isNotificationWindow,fetchWorldSeries,REFRESH_MS,TONIGHT_END,pregameReminderSlot,
  TEAMS,scoreText
-} from './world-series-score.mjs?v=20261028-game5b';
+} from './world-series-score.mjs?v=20261028-game5c';
 /* Pregame reminders and five-minute live score notifications for Oct 28 Game 5.
  * Uses MLB scores and official linked logos; no guessed inning or points.
  * Score notification takes priority over unrelated Quick Ads.
