@@ -5,6 +5,10 @@ const SOURCE='Cloudflare GraphQL httpRequests1dGroups';
 const DAY=86400000;
 const isoDate=d=>d.toISOString().slice(0,10);
 const isCount=n=>Number.isSafeInteger(n)&&n>=0;
+// Date.parse normalizes impossible days (e.g. February 30); reject them before D1 writes.
+const validUtcDay=date=>typeof date==='string'&&/^20\d{2}-\d{2}-\d{2}$/.test(date)&&
+ !Number.isNaN(Date.parse(date+'T00:00:00Z'))&&
+ new Date(date+'T00:00:00Z').toISOString().slice(0,10)===date;
 function offsetDate(now,shift){
  const midnight=Date.parse(isoDate(now)+'T00:00:00.000Z');
  return isoDate(new Date(midnight+shift*DAY));
@@ -14,8 +18,7 @@ export function validateGroups(groups,now=new Date()){
  const seen=new Set(),today=isoDate(now);
  return groups.map(g=>{
   const date=g?.dimensions?.date,requests=g?.sum?.requests,pageViews=g?.sum?.pageViews;
-  if(typeof date!=='string'||!/^20\d{2}-\d{2}-\d{2}$/.test(date)||
-   Number.isNaN(Date.parse(date+'T00:00:00Z'))||date>today||seen.has(date)||
+  if(!validUtcDay(date)||date>today||seen.has(date)||
    !isCount(requests)||!isCount(pageViews))throw Error('invalid_analytics_day');
   seen.add(date);return {date,requests,pageViews};
  }).sort((a,b)=>a.date.localeCompare(b.date));
@@ -49,9 +52,11 @@ export function cumulativeSnapshot(rows,now=new Date()){
  if(!Array.isArray(rows)||!rows.length)throw Error('ledger_empty');
  const sorted=[...rows].sort((a,b)=>a.date.localeCompare(b.date)),today=isoDate(now);
  let requests=0,pageViews=0,latest='';
+ const seenDates=new Set();
  for(const r of sorted){
-  if(typeof r.date!=='string'||!/^20\d{2}-\d{2}-\d{2}$/.test(r.date)||r.date>today||!isCount(r.requests)||!isCount(r.page_views))
+  if(!validUtcDay(r.date)||r.date>today||seenDates.has(r.date)||!isCount(r.requests)||!isCount(r.page_views))
    throw Error('ledger_invalid');
+  seenDates.add(r.date);
   requests+=r.requests;pageViews+=r.page_views;
   if(!isCount(requests)||!isCount(pageViews))throw Error('ledger_overflow');
   if(typeof r.verified_at==='string'&&r.verified_at>latest)latest=r.verified_at;
