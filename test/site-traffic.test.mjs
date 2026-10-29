@@ -59,6 +59,15 @@ test('impossible calendar dates and duplicate ledger days fail closed',()=>{
  assert.equal(cumulativeSnapshot([leap],new Date('2028-03-01T00:00:00Z')).recordedDays,1);
  assert.equal(validateGroups([{dimensions:{date:'2028-02-29'},sum:{requests:1,pageViews:1}}],new Date('2028-03-01T00:00:00Z')).length,1);
 });
+test('ledger rejects invalid and far-future verification timestamps',()=>{
+ const sample=rows[0];
+ for(const stamp of [undefined,'not-a-time','2026-02-30T00:00:00.000Z',
+  '2099-01-01T00:00:00.000Z',new Date(now.getTime()+6*60*1000).toISOString()]){
+  assert.throws(()=>cumulativeSnapshot([{...sample,verified_at:stamp}],now),/ledger_invalid/);
+ }
+ const closeSkew=new Date(now.getTime()+2*60*1000).toISOString();
+ assert.equal(cumulativeSnapshot([{...sample,verified_at:closeSkew}],now).fetchedAt,closeSkew);
+});
 test('GraphQL stays server-side, reading bounded previous days with no browser token',async()=>{
  const days=await queryTraffic({token:'not-a-real-private-token',now,fetcher:async(url,init)=>{
   assert.equal(url,'https://api.cloudflare.com/client/v4/graphql');

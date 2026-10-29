@@ -5,6 +5,11 @@ const SOURCE='Cloudflare GraphQL httpRequests1dGroups';
 const DAY=86400000;
 const isoDate=d=>d.toISOString().slice(0,10);
 const isCount=n=>Number.isSafeInteger(n)&&n>=0;
+// Reject invalid or implausibly future D1 verification timestamps (5m clock skew).
+const validVerifiedAt=(value,now)=>typeof value==='string'&&
+ /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(value)&&
+ Number.isFinite(Date.parse(value))&&new Date(value).toISOString()===value&&
+ Date.parse(value)<=now.getTime()+5*60*1000;
 // Date.parse normalizes impossible days (e.g. February 30); reject them before D1 writes.
 const validUtcDay=date=>typeof date==='string'&&/^20\d{2}-\d{2}-\d{2}$/.test(date)&&
  !Number.isNaN(Date.parse(date+'T00:00:00Z'))&&
@@ -58,12 +63,13 @@ export function cumulativeSnapshot(rows,now=new Date()){
  let requests=0,pageViews=0,latest='';
  const seenDates=new Set();
  for(const r of sorted){
-  if(!validUtcDay(r.date)||r.date>today||seenDates.has(r.date)||!isCount(r.requests)||!isCount(r.page_views))
+  if(!validUtcDay(r.date)||r.date>today||seenDates.has(r.date)||!isCount(r.requests)||!isCount(r.page_views)||
+     !validVerifiedAt(r.verified_at,now))
    throw Error('ledger_invalid');
   seenDates.add(r.date);
   requests+=r.requests;pageViews+=r.page_views;
   if(!isCount(requests)||!isCount(pageViews))throw Error('ledger_overflow');
-  if(typeof r.verified_at==='string'&&r.verified_at>latest)latest=r.verified_at;
+  if(r.verified_at>latest)latest=r.verified_at;
  }
  const first=sorted[0].date,mostRecent=sorted[sorted.length-1].date,begin7=offsetDate(now,-6);
  const recent=sorted.filter(x=>x.date>=begin7&&x.date<=today);
