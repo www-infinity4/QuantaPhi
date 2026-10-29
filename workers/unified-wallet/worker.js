@@ -158,6 +158,8 @@ async function issueOwnerRecovery(request,env,ctx){
     invalid_signature:'The recovery session signature could not be verified.',
     unsupported_signature:'The recovery session uses an unsupported signature.',
     invalid_session:'The wallet service could not read the recovery session.',
+    origin_mismatch:'The recovery form origin could not be verified. Open the recovery sign-in page again.',
+    cross_site_request:'The recovery form must be submitted from its original sign-in page.',
     verification_failed:'The wallet service could not complete signed-session verification.'
   };
   const denied=(reason='verification_failed')=>{
@@ -178,12 +180,14 @@ async function issueOwnerRecovery(request,env,ctx){
     'X-Frame-Options':'DENY',
     'Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'"
   };
-  const page=(body,status=200)=>new Response('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cloudflare Wallet Recovery</title><style>body{max-width:600px;margin:3rem auto;padding:1rem;font:17px system-ui;color:#342445}main{padding:20px;border:1px solid #c9b5df;border-radius:16px}button,a{font:inherit;padding:12px;display:inline-block}button{background:#602b99;color:white;border:0;border-radius:10px}code{overflow-wrap:anywhere}</style></head><body><main><h1>Restore original Cloudflare wallet</h1>'+body+'</main></body></html>',{status,headers:secureHeaders});
-  if(request.method==='GET')return page('<p>Only the Cloudflare Access-verified owner may issue a one-time recovery code. No wallet balance will change.</p><form method="POST"><button type="submit">Generate one-time recovery code</button></form>');
+  const page=(body,status=200,referrerPolicy='no-referrer')=>new Response('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cloudflare Wallet Recovery</title><style>body{max-width:600px;margin:3rem auto;padding:1rem;font:17px system-ui;color:#342445}main{padding:20px;border:1px solid #c9b5df;border-radius:16px}button,a{font:inherit;padding:12px;display:inline-block}button{background:#602b99;color:white;border:0;border-radius:10px}code{overflow-wrap:anywhere}</style></head><body><main><h1>Restore original Cloudflare wallet</h1>'+body+'</main></body></html>',{status,headers:{...secureHeaders,'Referrer-Policy':referrerPolicy}});
+  // no-referrer makes a browser navigation POST send Origin: null. Preserve
+  // the same-origin form's Origin; pages containing a code keep no-referrer.
+  if(request.method==='GET')return page('<p>Only the Cloudflare Access-verified owner may issue a one-time recovery code. No wallet balance will change.</p><form method="POST"><button type="submit">Generate one-time recovery code</button></form>',200,'same-origin');
   const actualOrigin=new URL(request.url).origin;
-  if(request.headers.get('Origin')!==actualOrigin)return denied('invalid_session');
+  if(request.headers.get('Origin')!==actualOrigin)return denied('origin_mismatch');
   const site=request.headers.get('Sec-Fetch-Site');
-  if(site && site!=='same-origin' && site!=='none')return denied('invalid_session');
+  if(site && site!=='same-origin' && site!=='none')return denied('cross_site_request');
   const account=await env.IDENTITY_DB.prepare('SELECT id,username FROM accounts WHERE id=?1')
     .bind(env.RECOVERY_OWNER_ACCOUNT_ID).first();
   if(!account?.id || !String(account.username).startsWith('device_'))

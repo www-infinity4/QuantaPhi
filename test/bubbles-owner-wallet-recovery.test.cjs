@@ -99,7 +99,12 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  // Mutate a signed byte, not the unused low-order bits in the last base64url character.
  const signed=valid.split('.');signed[2]=(signed[2][0]==='A'?'B':'A')+signed[2].slice(1);
  assert.equal((await issue(request(signed.join('.')),env,{})).status,403);
- assert.equal((await issue(request(valid),env,{})).status,200);
+ const formResponse=await issue(request(valid),env,{});
+ assert.equal(formResponse.status,200);
+ // A navigation POST inherits this policy. no-referrer makes Chromium send
+ // Origin: null, which must still fail the issuer's exact-origin check.
+ assert.equal(formResponse.headers.get('Referrer-Policy'),'same-origin');
+ assert.equal(inserts.length,0);
  // Access app cookie and assertion header have equal cryptographic proof.
  const cookieRequest=new Request(endpoint,{headers:{Cookie:'CF_Authorization='+valid}});
  assert.equal((await issue(cookieRequest,env,{})).status,200);
@@ -125,7 +130,25 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  }
  certMode='ok';
  assert.equal(inserts.length,0);
- assert.equal((await issue(request(valid,'POST','https://attacker.example'),env,{})).status,403);
+ const crossOrigin=await issue(request(valid,'POST','https://attacker.example'),env,{});
+ assert.equal(crossOrigin.status,403);
+ assert.equal(crossOrigin.headers.get('X-Wallet-Recovery-Reason'),'origin_mismatch');
+ for(const headers of [
+  {Origin:'null','Sec-Fetch-Site':'same-origin'},
+  {'Sec-Fetch-Site':'same-origin'},
+  {Origin:'https://attacker.example','Sec-Fetch-Site':'same-origin'}
+ ]){
+  const denied=await issue(new Request(endpoint,{method:'POST',headers:{'Cf-Access-Jwt-Assertion':valid,...headers}}),env,{});
+  assert.equal(denied.status,403);
+  assert.equal(denied.headers.get('X-Wallet-Recovery-Reason'),'origin_mismatch');
+  assert.equal(inserts.length,0);
+ }
+ for(const site of ['cross-site','same-site']){
+  const denied=await issue(new Request(endpoint,{method:'POST',headers:{'Cf-Access-Jwt-Assertion':valid,Origin:new URL(endpoint).origin,'Sec-Fetch-Site':site}}),env,{});
+  assert.equal(denied.status,403);
+  assert.equal(denied.headers.get('X-Wallet-Recovery-Reason'),'cross_site_request');
+  assert.equal(inserts.length,0);
+ }
  assert.equal(inserts.length,0);
  const response=await issue(request(valid,'POST'),env,{});
  assert.equal(response.status,200);
