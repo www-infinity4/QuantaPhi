@@ -7,8 +7,9 @@ const isoDate=d=>d.toISOString().slice(0,10);
 const isCount=n=>Number.isSafeInteger(n)&&n>=0;
 // Reject invalid or implausibly future D1 verification timestamps (5m clock skew).
 const validVerifiedAt=(value,now)=>typeof value==='string'&&
- /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(value)&&
- Number.isFinite(Date.parse(value))&&new Date(value).toISOString()===value&&
+ /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(value)&&
+ Number.isFinite(Date.parse(value))&&
+ new Date(value).toISOString()===(value.includes('.')?value:value.replace(/Z$/,'.000Z'))&&
  Date.parse(value)<=now.getTime()+5*60*1000;
 // Date.parse normalizes impossible days (e.g. February 30); reject them before D1 writes.
 const validUtcDay=date=>typeof date==='string'&&/^20\d{2}-\d{2}-\d{2}$/.test(date)&&
