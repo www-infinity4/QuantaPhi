@@ -4,7 +4,6 @@
  */
 (function(){
  'use strict';
- let attached=false;
  const add=(parent,label,placeBeforeClose=false)=>{
   if(!parent||parent.querySelector('[data-quant-mail-entry]'))return false;
   const link=document.createElement('a');
@@ -22,8 +21,8 @@
  const mount=()=>{
   const header=document.querySelector('.ba-panel .ba-header');
   const tools=document.querySelector('.ba-panel .ba-tools');
-  if(header){add(header,'Mail',true);attached=true;}
-  if(tools){add(tools,'Quant Mail · Email sign-in');attached=true;}
+  if(header)add(header,'Mail',true);
+  if(tools)add(tools,'Quant Mail · Email sign-in');
   return Boolean(header&&tools);
  };
  if(!mount()&&typeof MutationObserver==='function'){
