@@ -17,7 +17,7 @@ const json=async r=>({status:r.status,...await r.json()});
 const request=(path,body,{origin='https://quantaphi.org',token=null}={})=>new Request('https://quantaphi.org/api/quant-mail/passkeys'+path,{
  method:body?'POST':'GET',
  headers:{...(body?{'Content-Type':'application/json','Origin':origin}:{'Sec-Fetch-Site':'same-origin'}),
- ...(token?{Authorization:'Bearer '+token}:{})},...(body?{body:JSON.stringify(body)}:{})
+ ...(token?{Authorization:token.startsWith('Bearer ')?token:'Bearer '+token}:{})},...(body?{body:JSON.stringify(body)}:{})
 });
 const stub={
  passkeyRegisterBegin:async()=>({attemptId:'begin',publicKey:{challenge:'secret'}}),
