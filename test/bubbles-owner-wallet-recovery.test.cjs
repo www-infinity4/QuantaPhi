@@ -49,7 +49,7 @@ test('Bubbles opens the Cloudflare verification form directly',()=>{
 test('Access issuer checks signed RSA JWT, owner, expiry and audience before writing one grant',async()=>{
  const vm=require('node:vm'),crypto=require('node:crypto').webcrypto;
  const source=fs.readFileSync('workers/unified-wallet/worker.js','utf8');
- const start=source.indexOf('async function verifiedAccessEmail(request,env){');
+ const start=source.indexOf('async function verifiedAccessEmail(request,env,diagnostics={}){');
  const end=source.indexOf('async function redeemRecovery(request,env){',start);
  assert.ok(start>=0&&end>start);
  const issuer=source.slice(start,end);
@@ -71,8 +71,9 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  }}}}}};
  const env={IDENTITY_DB:db,RECOVERY_ACCESS_AUD:'aud-test',RECOVERY_ACCESS_ISSUER:issuerURL,RECOVERY_OWNER_EMAIL:'owner@example.test',RECOVERY_OWNER_ACCOUNT_ID:'original-123'};
  const digest=async code=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(code)))).map(x=>x.toString(16).padStart(2,'0')).join('');
- const getCerts=async url=>{assert.equal(url,issuerURL+'/cdn-cgi/access/certs');return Response.json({keys:[pub]})};
- const issue=vm.runInNewContext(issuer+';issueOwnerRecovery',{crypto,TextEncoder,TextDecoder,Response,URL,Request,btoa,atob,Uint8Array,fetch:getCerts,digest});
+ let certMode='ok';
+ const getCerts=async url=>{assert.equal(url,issuerURL+'/cdn-cgi/access/certs');if(certMode==='error')return new Response('Unavailable',{status:503});if(certMode==='invalid-json')return new Response('Not JSON');if(certMode==='throw')throw Error('network');return Response.json({keys:certMode==='missing'?[]:[pub]})};
+ const issue=vm.runInNewContext(issuer+';issueOwnerRecovery',{crypto,TextEncoder,TextDecoder,Response,URL,Request,btoa,atob,Uint8Array,fetch:getCerts,digest,AbortSignal,console:{warn(){}}});
  const endpoint='https://unified-wallet.marvaseater.workers.dev/v1/wallet/issue-recovery';
  const request=(jwt='',method='GET',origin=endpoint)=>new Request(endpoint,{method,headers:{...(jwt?{'Cf-Access-Jwt-Assertion':jwt}:{}),...(method==='POST'?{Origin:new URL(origin).origin,'Sec-Fetch-Site':'same-origin'}:{})}});
  assert.equal((await issue(request(),env,{})).status,403);
@@ -91,6 +92,27 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  // Access app cookie and assertion header have equal cryptographic proof.
  const cookieRequest=new Request(endpoint,{headers:{Cookie:'CF_Authorization='+valid}});
  assert.equal((await issue(cookieRequest,env,{})).status,200);
+ // A stale header or duplicate parent cookie cannot hide a valid app cookie.
+ const expired=await sign({...standard,exp:now-10});
+ const wrongApp=await sign({...standard,aud:['another-application']});
+ for(const headers of [
+  {Cookie:'CF_Authorization='+expired+'; CF_Authorization='+valid},
+  {Cookie:'CF_Authorization='+wrongApp+'; CF_Authorization='+valid},
+  {'Cf-Access-Jwt-Assertion':expired,Cookie:'CF_Authorization='+valid},
+  {'Cf-Access-Jwt-Assertion':'malformed',Cookie:'CF_Authorization='+valid},
+  {'Cf-Access-Jwt-Assertion':await sign({...standard,email:'other@example.test'}),Cookie:'CF_Authorization='+valid}
+ ]) assert.equal((await issue(new Request(endpoint,{headers}),env,{})).status,200);
+ const expiredResponse=await issue(request(expired),env,{});
+ assert.equal(expiredResponse.headers.get('X-Wallet-Recovery-Reason'),'session_expired');
+ assert.doesNotMatch(await expiredResponse.text(),/owner@example|aud-test|original-123|eyJ/);
+ for(const mode of ['error','invalid-json','throw','missing']){
+  certMode=mode;
+  const failure=await issue(request(valid,'POST'),env,{});
+  assert.equal(failure.status,mode==='missing'?403:503);
+  assert.equal(failure.headers.get('X-Wallet-Recovery-Reason'),mode==='missing'?'signing_key_not_found':'signing_keys_unavailable');
+  assert.equal(inserts.length,0);
+ }
+ certMode='ok';
  assert.equal(inserts.length,0);
  assert.equal((await issue(request(valid,'POST','https://attacker.example'),env,{})).status,403);
  assert.equal(inserts.length,0);

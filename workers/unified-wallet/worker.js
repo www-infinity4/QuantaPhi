@@ -83,39 +83,54 @@ async function infinityHistory(env,account,url){
  * identity API. Never trust Cf-Access-Authenticated-User-Email by itself.
  * Fail closed when the JWT, audience, issuer, expiry, or RSA signature is wrong.
  */
-async function verifiedAccessEmail(request,env){
-  try {
-    const issuer=String(env.RECOVERY_ACCESS_ISSUER||'').replace(/\/$/,'');
-    if(!/^https:\/\/[a-z0-9-]+\.cloudflareaccess\.com$/.test(issuer))return null;
-    // Access normally forwards the signed assertion header, but some
-    // Workers routes arrive with only the app-scoped CF_Authorization cookie.
-    // Both are signed JWTs and go through identical RS256/JWKS validation.
-    const appCookie=String(request.headers.get('Cookie')||'').split(';')
-      .map(x=>x.trim()).find(x=>x.startsWith('CF_Authorization='))||'';
-    const cookieToken=appCookie?appCookie.slice('CF_Authorization='.length):'';
-    const assertion=request.headers.get('Cf-Access-Jwt-Assertion')||cookieToken;
-    if(!/^[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$/.test(assertion))return null;
-    const parts=assertion.split('.');
-    const decode=v=>Uint8Array.from(atob(v.replace(/-/g,'+').replace(/_/g,'/')+'='.repeat((4-v.length%4)%4)),c=>c.charCodeAt(0));
-    const header=JSON.parse(new TextDecoder().decode(decode(parts[0])));
-    const claims=JSON.parse(new TextDecoder().decode(decode(parts[1])));
-    if(header.alg!=='RS256' || !/^[A-Za-z0-9_-]{1,180}$/.test(header.kid||''))return null;
-    const aud=Array.isArray(claims.aud)?claims.aud:[claims.aud];
-    const now=Math.floor(Date.now()/1000);
-    if(claims.iss!==issuer || !aud.includes(env.RECOVERY_ACCESS_AUD) ||
-       typeof claims.exp!=='number' || claims.exp<=now ||
-       (typeof claims.nbf==='number' && claims.nbf>now+60) ||
-       (typeof claims.iat==='number' && claims.iat>now+60) ||
-       typeof claims.email!=='string' || claims.email.length>320)return null;
-    const res=await fetch(issuer+'/cdn-cgi/access/certs',{headers:{Accept:'application/json'},redirect:'error'});
-    if(!res.ok)return null;
-    const jwks=await res.json();
-    const key=(Array.isArray(jwks.keys)?jwks.keys:[]).find(k=>k.kid===header.kid && k.kty==='RSA' && k.n && k.e && (!k.alg || k.alg==='RS256'));
-    if(!key)return null;
-    const publicKey=await crypto.subtle.importKey('jwk',{kty:'RSA',n:key.n,e:key.e,alg:'RS256',ext:true}, {name:'RSASSA-PKCS1-v1_5',hash:'SHA-256'},false,['verify']);
-    const valid=await crypto.subtle.verify('RSASSA-PKCS1-v1_5',publicKey,decode(parts[2]),new TextEncoder().encode(parts[0]+'.'+parts[1]));
-    return valid ? claims.email.trim() : null;
-  }catch{return null}
+async function verifiedAccessEmail(request,env,diagnostics={}){
+  const reject=reason=>{diagnostics.reason=reason;return null};
+  const issuer=String(env.RECOVERY_ACCESS_ISSUER||'').replace(/\/$/,'');
+  if(!/^https:\/\/[a-z0-9-]+\.cloudflareaccess\.com$/.test(issuer))return reject('configuration_missing');
+  // A browser can send app- and parent-scoped cookies with the same name.
+  // Validate every bounded candidate; an old cookie or assertion must not
+  // hide a valid, independently signed session for this exact application.
+  const cookies=String(request.headers.get('Cookie')||'').split(';')
+    .map(x=>x.trim()).filter(x=>x.startsWith('CF_Authorization='))
+    .map(x=>x.slice('CF_Authorization='.length));
+  const candidates=[...new Set([request.headers.get('Cf-Access-Jwt-Assertion')||'',...cookies]
+    .map(x=>x.trim()).filter(Boolean))].slice(0,4);
+  if(!candidates.length)return reject('missing_session');
+  let jwks=null,lastReason='invalid_session';
+  const decode=v=>Uint8Array.from(atob(v.replace(/-/g,'+').replace(/_/g,'/')+'='.repeat((4-v.length%4)%4)),c=>c.charCodeAt(0));
+  for(const assertion of candidates){
+    try{
+      if(assertion.length>8192||!/^[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$/.test(assertion)){lastReason='invalid_session';continue}
+      const parts=assertion.split('.');
+      const header=JSON.parse(new TextDecoder().decode(decode(parts[0])));
+      const claims=JSON.parse(new TextDecoder().decode(decode(parts[1])));
+      if(header.alg!=='RS256'||!/^[A-Za-z0-9_-]{1,180}$/.test(header.kid||'')){lastReason='unsupported_signature';continue}
+      const aud=Array.isArray(claims.aud)?claims.aud:[claims.aud];
+      const now=Math.floor(Date.now()/1000);
+      if(claims.iss!==issuer){lastReason='wrong_issuer';continue}
+      if(!aud.includes(env.RECOVERY_ACCESS_AUD)){lastReason='wrong_application';continue}
+      if(typeof claims.exp!=='number'||claims.exp<=now){lastReason='session_expired';continue}
+      if((typeof claims.nbf==='number'&&claims.nbf>now+60)||(typeof claims.iat==='number'&&claims.iat>now+60)){lastReason='session_not_active';continue}
+      if(typeof claims.email!=='string'||claims.email.length>320||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(claims.email.trim())){lastReason='missing_verified_email';continue}
+      if(!jwks){
+        try{
+          const res=await fetch(issuer+'/cdn-cgi/access/certs',{headers:{Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(5000)});
+          if(!res.ok)return reject('signing_keys_unavailable');
+          jwks=await res.json();
+        }catch{return reject('signing_keys_unavailable')}
+      }
+      const key=(Array.isArray(jwks.keys)?jwks.keys:[]).find(k=>k.kid===header.kid&&k.kty==='RSA'&&k.n&&k.e&&(!k.alg||k.alg==='RS256')&&(!k.use||k.use==='sig'));
+      if(!key){lastReason='signing_key_not_found';continue}
+      const publicKey=await crypto.subtle.importKey('jwk',{kty:'RSA',n:key.n,e:key.e,alg:'RS256',ext:true},{name:'RSASSA-PKCS1-v1_5',hash:'SHA-256'},false,['verify']);
+      const valid=await crypto.subtle.verify('RSASSA-PKCS1-v1_5',publicKey,decode(parts[2]),new TextEncoder().encode(parts[0]+'.'+parts[1]));
+      if(!valid){lastReason='invalid_signature';continue}
+      const email=claims.email.trim();
+      if(email.toLowerCase()!==String(env.RECOVERY_OWNER_EMAIL||'').trim().toLowerCase()){lastReason='owner_mismatch';continue}
+      diagnostics.reason='verified';
+      return email;
+    }catch{lastReason='verification_failed'}
+  }
+  return reject(lastReason);
 }
 
 /**
@@ -125,22 +140,35 @@ async function verifiedAccessEmail(request,env){
  * mapping, this route is disabled. It never accepts an account ID from a client.
  */
 async function issueOwnerRecovery(request,env,ctx){
-  // Distinguish missing session from an invalid signed session without ever
-  // echoing tokens, identity claims, account IDs or Access keys to the client.
-  const denied=(reason='invalid')=>new Response(
-    reason==='missing'
-      ? 'Cloudflare Access session was not forwarded to the wallet service. Use the Access owner login in this browser.'
-      : 'Cloudflare Access owner authorization is required (signed session was not accepted).',
-    {status:403,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}}
-  );
-  if(!env.RECOVERY_ACCESS_AUD || !env.RECOVERY_ACCESS_ISSUER ||
-     !env.RECOVERY_OWNER_EMAIL || !env.RECOVERY_OWNER_ACCOUNT_ID || !env.IDENTITY_DB)return denied();
-  const verifiedEmail=await verifiedAccessEmail(request,env);
-  if(!verifiedEmail || verifiedEmail.toLowerCase()!==String(env.RECOVERY_OWNER_EMAIL).trim().toLowerCase()){
-    const noHeader=!request.headers.get('Cf-Access-Jwt-Assertion');
-    const noCookie=!String(request.headers.get('Cookie')||'').split(';').some(x=>x.trim().startsWith('CF_Authorization='));
-    return denied(noHeader&&noCookie?'missing':'invalid');
-  }
+  // Only constant diagnostic categories leave the verifier. Never return or
+  // log assertions, cookies, unverified claims, email addresses or wallet IDs.
+  const messages={
+    missing_session:'Cloudflare Access session was not forwarded to the wallet service. Use the Access owner login in this browser.',
+    configuration_missing:'Wallet recovery sign-in is not configured correctly. The operator must repair its Cloudflare settings.',
+    wrong_application:'This signed session belongs to another Access application. Open the original-wallet recovery login.',
+    wrong_issuer:'This signed session belongs to another Cloudflare Access team. Open the original-wallet recovery login.',
+    session_expired:'The wallet recovery sign-in expired. Sign in to the recovery page again; your wallet connection was not removed.',
+    session_not_active:'The recovery session is not active yet. Check the device clock and retry the recovery login.',
+    signing_keys_unavailable:'The wallet service could not retrieve Cloudflare signing keys. This is a service verification failure.',
+    signing_key_not_found:'Cloudflare signing keys do not match the recovery session. Retry the recovery login.',
+    owner_mismatch:'The verified email does not match the configured original-wallet owner. Use the owner account for recovery.',
+    missing_verified_email:'The recovery session did not contain a verified email address.',
+    invalid_signature:'The recovery session signature could not be verified.',
+    unsupported_signature:'The recovery session uses an unsupported signature.',
+    invalid_session:'The wallet service could not read the recovery session.',
+    verification_failed:'The wallet service could not complete signed-session verification.'
+  };
+  const denied=(reason='verification_failed')=>{
+    const code=Object.hasOwn(messages,reason)?reason:'verification_failed';
+    console.warn('wallet_recovery_access_rejected',code);
+    return new Response(messages[code]+' No wallet balances or device connections were changed. Recovery check: '+code+'.',
+      {status:code==='configuration_missing'||code==='signing_keys_unavailable'?503:403,
+       headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','X-Wallet-Recovery-Reason':code}});
+  };
+  if(!env.RECOVERY_ACCESS_AUD||!env.RECOVERY_ACCESS_ISSUER||!env.RECOVERY_OWNER_EMAIL||!env.RECOVERY_OWNER_ACCOUNT_ID||!env.IDENTITY_DB)return denied('configuration_missing');
+  const diagnostics={};
+  const verifiedEmail=await verifiedAccessEmail(request,env,diagnostics);
+  if(!verifiedEmail)return denied(diagnostics.reason);
   if(!['GET','POST'].includes(request.method))return new Response('Method not allowed',{status:405});
   const secureHeaders={
     'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store, private',
@@ -151,9 +179,9 @@ async function issueOwnerRecovery(request,env,ctx){
   const page=(body,status=200)=>new Response('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cloudflare Wallet Recovery</title><style>body{max-width:600px;margin:3rem auto;padding:1rem;font:17px system-ui;color:#342445}main{padding:20px;border:1px solid #c9b5df;border-radius:16px}button,a{font:inherit;padding:12px;display:inline-block}button{background:#602b99;color:white;border:0;border-radius:10px}code{overflow-wrap:anywhere}</style></head><body><main><h1>Restore original Cloudflare wallet</h1>'+body+'</main></body></html>',{status,headers:secureHeaders});
   if(request.method==='GET')return page('<p>Only the Cloudflare Access-verified owner may issue a one-time recovery code. No wallet balance will change.</p><form method="POST"><button type="submit">Generate one-time recovery code</button></form>');
   const actualOrigin=new URL(request.url).origin;
-  if(request.headers.get('Origin')!==actualOrigin)return denied();
+  if(request.headers.get('Origin')!==actualOrigin)return denied('invalid_session');
   const site=request.headers.get('Sec-Fetch-Site');
-  if(site && site!=='same-origin' && site!=='none')return denied();
+  if(site && site!=='same-origin' && site!=='none')return denied('invalid_session');
   const account=await env.IDENTITY_DB.prepare('SELECT id,username FROM accounts WHERE id=?1')
     .bind(env.RECOVERY_OWNER_ACCOUNT_ID).first();
   if(!account?.id || !String(account.username).startsWith('device_'))
@@ -251,5 +279,5 @@ async function spend(request,env,account){
   const row=await env.DB.prepare('SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?1').bind(account.id).first(); const balance=Number(row?.infinity_balance||0); if(balance<amount)throw Object.assign(new Error('insufficient_balance'),{status:409}); const next=balance-amount;
   await env.DB.batch([env.DB.prepare('UPDATE unified_wallet_state SET infinity_balance=?2,updated_at=?3 WHERE user_id=?1').bind(account.id,next,now),env.DB.prepare("INSERT INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) VALUES(?1,?2,?3,'INFINITY','SPEND',?4,?5,?6,?7,?8)").bind('uwe_'+crypto.randomUUID(),key,account.id,-amount,next,clean(input.referenceId,160),JSON.stringify(input.metadata||{}),now)]); return {ok:true,replayed:false,balance:next};
 }
-export default {async fetch(request,env,ctx){ if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(request)}); const url=new URL(request.url); if(url.pathname==='/health')return json(request,{ok:true,service:'unified-wallet',version:1}); if(url.pathname==='/unified-wallet.js')return new Response(CLIENT_SCRIPT,{headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'public, max-age=300','X-Content-Type-Options':'nosniff',...cors(request)}}); try{if(url.pathname==='/internal/bot-work-credit'&&request.method==='POST'){const key=request.headers.get('X-Bot-Work-Key')||'';if(!env.BOT_WORK_SECRET||await digest(key)!==await digest(env.BOT_WORK_SECRET))return json(request,{ok:false,error:'bot_work_authorization_required'},401);const raw=await request.text();if(raw.length>8000)return json(request,{ok:false,error:'credit_payload_too_large'},413);return json(request,await payBotWork(env,JSON.parse(raw)));}if(url.pathname==='/v1/wallet/issue-recovery')return issueOwnerRecovery(request,env,ctx);if(url.pathname==='/v1/wallet/redeem-recovery'&&request.method==='POST')return json(request,await redeemRecovery(request,env)); const account=await identity(request,env); if(url.pathname==='/v1/wallet/state'&&request.method==='GET')return json(request,await state(env,account)); if(url.pathname==='/v1/wallet/infinity-history'&&request.method==='GET')return json(request,await infinityHistory(env,account,url)); if(url.pathname==='/v1/wallet/import'&&request.method==='POST')return json(request,await importLegacy(request,env,account)); if(url.pathname==='/v1/tokens/mint'&&request.method==='POST')return json(request,await mintToken(request,env,account),201); if(url.pathname==='/v1/wallet/spend'&&request.method==='POST')return json(request,await spend(request,env,account)); return json(request,{error:'not_found'},404)}catch(error){return json(request,{error:error.message||'internal_error'},error.status||500)}}};
+export default {async fetch(request,env,ctx){ if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(request)}); const url=new URL(request.url); if(url.pathname==='/health')return json(request,{ok:true,service:'unified-wallet',version:1,recoveryVerification:'signed-candidates-v2'}); if(url.pathname==='/unified-wallet.js')return new Response(CLIENT_SCRIPT,{headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'public, max-age=300','X-Content-Type-Options':'nosniff',...cors(request)}}); try{if(url.pathname==='/internal/bot-work-credit'&&request.method==='POST'){const key=request.headers.get('X-Bot-Work-Key')||'';if(!env.BOT_WORK_SECRET||await digest(key)!==await digest(env.BOT_WORK_SECRET))return json(request,{ok:false,error:'bot_work_authorization_required'},401);const raw=await request.text();if(raw.length>8000)return json(request,{ok:false,error:'credit_payload_too_large'},413);return json(request,await payBotWork(env,JSON.parse(raw)));}if(url.pathname==='/v1/wallet/issue-recovery')return issueOwnerRecovery(request,env,ctx);if(url.pathname==='/v1/wallet/redeem-recovery'&&request.method==='POST')return json(request,await redeemRecovery(request,env)); const account=await identity(request,env); if(url.pathname==='/v1/wallet/state'&&request.method==='GET')return json(request,await state(env,account)); if(url.pathname==='/v1/wallet/infinity-history'&&request.method==='GET')return json(request,await infinityHistory(env,account,url)); if(url.pathname==='/v1/wallet/import'&&request.method==='POST')return json(request,await importLegacy(request,env,account)); if(url.pathname==='/v1/tokens/mint'&&request.method==='POST')return json(request,await mintToken(request,env,account),201); if(url.pathname==='/v1/wallet/spend'&&request.method==='POST')return json(request,await spend(request,env,account)); return json(request,{error:'not_found'},404)}catch(error){return json(request,{error:error.message||'internal_error'},error.status||500)}}};
 
