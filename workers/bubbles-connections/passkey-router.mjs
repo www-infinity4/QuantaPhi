@@ -5,8 +5,8 @@ const json=(value,status=200,extra={})=>Response.json(value,{status,headers:{
  'Referrer-Policy':'no-referrer','Vary':'Origin',...extra}});
 const deny=(error,status=403)=>json({ok:false,error},status);
 const cookieName='qp_owner_passkey';
-export function passkeyCookie(token){
- return cookieName+'='+token+'; Path='+PREFIX+'; Secure; HttpOnly; SameSite=Strict; Max-Age=43200';
+export function passkeyCookie(token,admin=false){
+ return cookieName+'='+token+'; Path='+PREFIX+'; Secure; HttpOnly; SameSite=Strict; Max-Age='+(admin?'300':'43200');
 }
 async function readJson(request){
  if(!request.headers.get('Content-Type')?.startsWith('application/json'))
@@ -20,7 +20,7 @@ function errorCode(e){
  if(['verified_owner_required','owner_binding_conflict','passkey_limit','owner_alias_invalid',
  'passkey_response_invalid','challenge_invalid','passkey_verification_failed',
  'credential_exists_or_limit','passkey_unrecognized','credential_revoked',
- 'counter_replay','passkey_record_invalid'].includes(name))return name;
+ 'counter_replay','passkey_record_invalid','passkey_rate_limited'].includes(name))return name;
  return 'passkey_verification_failed';
 }
 export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
@@ -70,14 +70,17 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
    return json({ok:true,...value});
   }
   if(suffix==='/login/begin'){
-   const value=await svc.passkeyLoginBegin({alias});
+   const ip=request.headers.get('CF-Connecting-IP')||'anonymous';
+   const ipHash=new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(ip)));
+   const fingerprint=Array.from(ipHash.slice(0,12),x=>x.toString(16).padStart(2,'0')).join('');
+   const value=await svc.passkeyLoginBegin({alias,fingerprint});
    return json({ok:true,...value});
   }
   if(suffix==='/login/finish'){
    const value=await svc.passkeyLoginFinish({alias,attemptId:body.attemptId,credential:body.credential});
    if(!value?.sessionEstablished||!value.sessionToken)return deny('passkey_session_unavailable');
    const {sessionToken,...publicValue}=value;
-   return json(publicValue,200,{'Set-Cookie':passkeyCookie(sessionToken)});
+   return json(publicValue,200,{'Set-Cookie':passkeyCookie(sessionToken,alias==='administrator@quantaphi.org')});
   }
  }catch(error){
   const code=errorCode(error);
