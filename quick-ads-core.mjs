@@ -45,6 +45,32 @@ export function quickAdCampaign(now=Date.now()){
  if(!Number.isFinite(now)||now<CAMPAIGN_START)return 'inactive';
  return now<=GAME_END?'world-series':'infinity-house';
 }
+// Preserve an existing ten-minute dismissal and 24-second pacing when the
+// World Series script is replaced by the house campaign. Never inherit the
+// expired campaign's view cap, merchant counts, or rotation history.
+export function restoreQuickAdState(current={},legacy={}){
+ const record=x=>x&&typeof x==='object'&&!Array.isArray(x)?x:{};
+ const fresh=record(current),old=record(legacy);
+ const time=x=>typeof x==='number'&&Number.isFinite(x)&&x>=0?x:0;
+ return {
+  ...fresh,
+  dismissedUntil:Math.max(time(fresh.dismissedUntil),time(old.dismissedUntil)),
+  lastAt:Math.max(time(fresh.lastAt),time(old.lastAt)),
+  total:time(fresh.total),
+  counts:{...record(fresh.counts)},
+  recent:Array.isArray(fresh.recent)?fresh.recent.filter(x=>typeof x==='string').slice(0,4):[]
+ };
+}
+// Check again after any asynchronous MLB status request: a user may dismiss a
+// spotlight while that request is pending, and the old result must not revive it.
+export function quickAdPacingAllows(now,state={},suppressedUntil=0){
+ if(!Number.isFinite(now)||!state||typeof state!=='object')return false;
+ const dismiss=Number(state.dismissedUntil)||0;
+ const last=Number(state.lastAt)||0;
+ const suppressed=Number(suppressedUntil)||0;
+ const total=Number(state.total)||0;
+ return now>=dismiss&&now>=suppressed&&now-last>=24000&&total<30;
+}
 export function inGameWindow(now=Date.now()){
  return Number.isFinite(now)&&now>=CAMPAIGN_START&&now<=GAME_END;
 }
