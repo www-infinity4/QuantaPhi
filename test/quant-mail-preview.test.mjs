@@ -7,8 +7,10 @@ test('Quant Mail status clearly states that account and passkeys do not work yet
  assert.match(html,/kris@quantaphi\.org/);
  assert.match(html,/administrator@quantaphi\.org/);
  assert.match(html,/not active/);
- assert.match(html,/no active mailbox or phone passkey enrollment yet/);
- assert.match(html,/preview intentionally has no registration button/);
+ assert.match(html,/Mailboxes are not active/);
+ assert.match(html,/quantMailPasskeyRegister" disabled/);
+ assert.match(html,/quantMailPasskeyLogin" disabled/);
+ assert.match(html,/Passkey registration requires server-verified owner authentication/);
  assert.doesNotMatch(html,/type="password"/);
  assert.doesNotMatch(html,/passkeyVerified/);
  assert.doesNotMatch(html,/createCredential/);
