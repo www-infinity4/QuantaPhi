@@ -76,7 +76,7 @@ export async function runPasskeyCeremony({
  const options=await passkeyServerRequest('/'+kind+'/begin',{alias:name},{
   request,token:kind==='register'?walletToken:null
  });
- const publicKey=decodeOptions(options,'create'=== (kind==='register'?'create':'get')?'create':'get',Credential);
+ const publicKey=decodeOptions(options,kind==='register'?'create':'get',Credential);
  const credential=kind==='register'
   ?await credentials.create({publicKey})
   :await credentials.get({publicKey});
