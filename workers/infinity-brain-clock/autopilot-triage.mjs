@@ -1,4 +1,5 @@
 /* Staged Robot Brain intake. Read-only, owner-partitioned, no model-sourced execution. */
+import {technicalSourceEvidenceNeeded} from './ticket-selector.mjs';
 const STATE='autopilot-triage-v1',CURSOR='autopilot-triage-cursor-v1';
 const DONE=new Set(['complete','deployed_verified','merged_verified']);
 const word=v=>String(v||'').slice(0,240);
@@ -9,7 +10,8 @@ export function workBucket(job,jobs=[]){
  if(status==='committed_unverified'||/commit_verification_required/i.test(hint))return 'commit_needs_verification';
  if(['complete','deployed_verified','merged_verified','superseded'].includes(status))return 'source_or_review_finished';
  if(status==='working')return 'runner_in_progress_or_stale';
- if(/owner_input_required|owner_authorization_required|owner_approval_required|security_hold|permission_denied|secret|credential|wallet|payment|biometric/i.test(hint))return 'owner_or_security_decision';
+ if(/owner_input_required|owner_authorization_required|owner_approval_required|security_hold|permission_denied|secret|credential|wallet|payment|biometric/i.test(hint))
+  return technicalSourceEvidenceNeeded(hint)?'technical_source_diagnosis':'owner_or_security_decision';
  if(status==='blocked')return 'blocked_requires_diagnosis';
  if(['queued','ready'].includes(status)){
   const deps=Array.isArray(job.dependencies)?job.dependencies:[];
