@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {GAME_START,CAMPAIGN_START,GAME_END,HOUSE_START,QUICK_ADS,HOUSE_ADS,quickAdCampaign,inGameWindow,isOfficialUrl,gameLiveStatus,eligibleQuickAds,chooseQuickAd} from '../quick-ads-core.mjs';
+import {GAME_START,CAMPAIGN_START,GAME_END,HOUSE_START,QUICK_ADS,HOUSE_ADS,quickAdCampaign,restoreQuickAdState,quickAdPacingAllows,inGameWindow,isOfficialUrl,gameLiveStatus,eligibleQuickAds,chooseQuickAd} from '../quick-ads-core.mjs';
 import {GAME_PK} from '../world-series-score.mjs';
 const source=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 test('Game 5 Quick Ads start early and expire tonight in Chicago',()=>{
@@ -44,6 +44,36 @@ test('officially ended World Series switches to first-party, unpaid Infinity hou
  assert.match(ui,/INFINITY HOUSE SPOTLIGHT/);
  assert.match(ui,/no paid placement or affiliate relationship claimed/);
  assert.doesNotMatch(ui,/Date\.now\(\)>GAME_END/);
+});
+test('house successor retains prior dismissal and pacing but not expired game view cap',()=>{
+ const legacy={dismissedUntil:HOUSE_START+600000,lastAt:HOUSE_START-5000,total:30,counts:{helzberg:30},recent:['helzberg']};
+ const fresh=restoreQuickAdState({},legacy);
+ assert.equal(fresh.dismissedUntil,legacy.dismissedUntil);
+ assert.equal(fresh.lastAt,legacy.lastAt);
+ assert.equal(fresh.total,0,'old game cap must not disable the new house campaign');
+ assert.deepEqual(fresh.counts,{});
+ assert.deepEqual(fresh.recent,[]);
+ assert.equal(quickAdPacingAllows(HOUSE_START,fresh),false,'old dismissal survives a JS upgrade');
+ assert.equal(quickAdPacingAllows(legacy.dismissedUntil,fresh),true,'spotlight may resume when dismissal expires');
+ const current={dismissedUntil:HOUSE_START+900000,lastAt:HOUSE_START+3000,total:2,counts:{'infinity-accepted-house':2},recent:['infinity-accepted-house']};
+ const resumed=restoreQuickAdState(current,legacy);
+ assert.equal(resumed.dismissedUntil,current.dismissedUntil);
+ assert.equal(resumed.lastAt,current.lastAt);
+ assert.equal(resumed.total,2);
+ assert.deepEqual(resumed.counts,current.counts);
+ assert.deepEqual(resumed.recent,current.recent);
+ assert.equal(quickAdPacingAllows(HOUSE_START+20000,{lastAt:HOUSE_START},0),false,'24-second limit');
+ assert.equal(quickAdPacingAllows(HOUSE_START+24000,{lastAt:HOUSE_START},0),true);
+ assert.equal(quickAdPacingAllows(HOUSE_START+24000,{lastAt:HOUSE_START},HOUSE_START+30000),false,'score notice suppresses popups');
+ assert.equal(quickAdPacingAllows(HOUSE_START+24000,{lastAt:HOUSE_START,total:30}),false,'per-campaign cap');
+ assert.equal(quickAdPacingAllows(Number.NaN,fresh),false);
+ assert.equal(restoreQuickAdState(null,{dismissedUntil:-1,lastAt:Infinity,total:30}).total,0);
+ const ui=source('quick-ads.mjs');
+ assert.match(ui,/LEGACY_KEY='quantaphi:worldseries-quickads:20261028:v1'/);
+ assert.match(ui,/restoreQuickAdState\(read\(KEY\),read\(LEGACY_KEY\)\)/);
+ const before=ui.indexOf('const status=await live();');
+ const after=ui.indexOf('quickAdPacingAllows(Date.now(),state,scoreAdSuppressedUntil)',before);
+ assert.ok(before>0&&after>before,'recheck dismissal and pacing after the asynchronous MLB request');
 });
 test('prospective independent-site ads have unique ids and legitimate HTTPS destinations',()=>{
  assert.ok(QUICK_ADS.length>=15);
