@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light">
+<title>Quant Mail · QuantaPhi</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#223345;background:#f7fafc}
+*{box-sizing:border-box}body{margin:0;padding:clamp(14px,4vw,30px) 14px 60px}
+main{max-width:690px;margin:auto}a{color:#0763ac}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+header strong{font-size:19px;color:#194f86}header nav{display:flex;gap:14px}
+section{background:#fff;border:1px solid #d7e2eb;border-radius:18px;padding:clamp(18px,4vw,28px);margin:14px 0;box-shadow:0 4px 20px #1436500c}
+h1{font-size:clamp(25px,5vw,34px);margin:0 0 8px;color:#163f65}h2{font-size:20px;margin:0 0 9px;color:#234f77}
+p{line-height:1.6;margin:9px 0;color:#42566a}
+.label{font-weight:700;display:block;margin:15px 0 6px}
+input{width:100%;border:1px solid #97aebe;border-radius:10px;padding:12px 13px;min-height:48px;font-size:16px}
+button,.action{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:11px;min-height:48px;padding:12px 17px;background:#0965b0;color:white;font-weight:700;text-decoration:none;font:700 15px system-ui;cursor:pointer}
+button:disabled{opacity:.65;cursor:wait}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 4px}
+.muted{font-size:13px;color:#5a7080}
+.preview{padding:13px;border-radius:12px;background:#eaf2f9;color:#16466b;font-weight:700;overflow-wrap:anywhere}
+.status{padding:13px 14px;border-left:4px solid #94aaba;background:#f3f6f8;border-radius:6px;overflow-wrap:anywhere}
+.status[data-state="verified"]{border-color:#27845a;background:#f0faf5;color:#205c40}
+.status[data-state="failed"]{border-color:#ba6239;background:#fff5f0}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #e5a42d;outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+<header><strong>QuantaPhi · Quant Mail</strong><nav aria-label="Account navigation"><a href="/bubbles.html">Bubbles chat</a><a href="/bubbles-accounts.html">Accounts</a></nav></header>
+<section aria-labelledby="mail-title">
+<h1 id="mail-title">Quant Mail</h1>
+<p>Your email address at <strong>@quantaphi.org</strong>, connected to your existing QuantaPhi account. Your chat and wallet remain separate from email content.</p>
+<p class="status" role="status" id="mail-availability">Mailbox delivery is not configured yet. Addresses cannot send or receive mail until the service is verified.</p>
+<label class="label" for="mail-handle">Choose an email name</label>
+<input id="mail-handle" name="mail-handle" type="text" maxlength="30" inputmode="email" spellcheck="false" autocapitalize="none" autocomplete="off" placeholder="yourname" aria-describedby="mail-preview mail-name-notice">
+<div class="preview" id="mail-preview" aria-live="polite">yourname@quantaphi.org</div>
+<p class="muted" id="mail-name-notice">Address preview only. This does not create, reserve or verify a mailbox. Certain names are reserved.</p>
+</section>
+<section aria-labelledby="mail-account-title">
+<h2 id="mail-account-title">Sign in through Bubbles</h2>
+<p>Use the same verified StarQuest / Unified Wallet session as Bubbles. No second password or unverified email code is needed for this sign-in check.</p>
+<div class="actions">
+<a class="action" href="/wallet-recovery.html?signin=starquest&amp;returnTo=%2Fquant-mail.html">Sign in to QuantaPhi</a>
+<button type="button" id="mail-check">Check my sign-in</button>
+</div>
+<p id="mail-session-status" class="status" role="status" aria-live="polite" data-state="checking">Not signed in to Quant Mail yet. Check your QuantaPhi session.</p>
+<p class="muted">A verified QuantaPhi wallet confirms the account holder, not ownership of a proposed email name or working email delivery. Your mailbox will require separate server provisioning.</p>
+</section>
+<section aria-labelledby="passkey-title">
+<h2 id="passkey-title">Sign in with your phone passkey</h2>
+<p>Both owner addresses will use your verified QuantaPhi identity. Your passkey is approved on your Android phone; it is not stored as an email password.</p>
+<label class="label" for="quantMailPasskeyAlias">Owner address</label>
+<select id="quantMailPasskeyAlias" style="width:100%;border:1px solid #97aebe;border-radius:10px;padding:12px;font:16px system-ui;min-height:48px">
+<option value="kris@quantaphi.org">kris@quantaphi.org</option>
+<option value="administrator@quantaphi.org">administrator@quantaphi.org</option>
+</select>
+<div class="actions">
+<button type="button" id="quantMailPasskeyRegister" disabled>Set up phone passkey</button>
+<button type="button" id="quantMailPasskeyLogin" disabled>Sign in with passkey</button>
+</div>
+<p id="quantMailPasskeyStatus" role="status" aria-live="polite" class="status" data-state="checking">Checking whether verified passkey enrollment is available…</p>
+<p class="muted">Passkey enrollment is not active until QuantaPhi verifies the owner, validates the browser challenge and confirms the credential was saved. An administrator address alone never grants administrator access.</p>
+</section>
+<section aria-labelledby="mail-setup-title">
+<h2 id="mail-setup-title">Owner setup</h2>
+<p>Requested first address: <strong>kris@quantaphi.org</strong>. This name is held for owner verification, not available for public claiming. It is <strong>not an active mailbox</strong>.</p>
+<p>The receiving route, secure per-user storage, outbound authenticated sender, and delivery tests must be completed before actual email accounts can be issued. When available, this page will show server-confirmed inbox status rather than assuming success.</p>
+</section>
+</main>
+<script type="module" src="/quant-mail.mjs?v=20261029-owner-entry1"></script>
+<script type="module" src="/quant-mail-passkeys.mjs?v=20261029-owner-passkey1"></script>
+</body>
+</html>
