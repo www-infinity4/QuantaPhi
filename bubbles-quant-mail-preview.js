@@ -1,7 +1,7 @@
 /* UI-only Quant Mail discovery link. No identity, wallet, email, or auth operations. */
 (function(){
  'use strict';
- if(document.documentElement.classList.contains('bubble-iframe'))return;
+ // Embedded website chat also gets the same safe Mail setup link.
  const mount=()=>{
   const header=document.querySelector('.ba-panel .ba-header');
   const tools=document.querySelector('.ba-panel .ba-tools');
