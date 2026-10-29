@@ -70,7 +70,7 @@ test('AI marketing and X replies fail closed without scoped consent',()=>{
   aiIdentityDisclosureReady:true,callHoursCompliant:true}).allowed,true);
  assert.equal(evaluateOutboundCommunication({...base,expressWrittenConsent:true,aiVoiceConsent:true,
   aiIdentityDisclosureReady:true,callHoursCompliant:true,optedOut:true}).allowed,false);
- const x={...base,channel:'x_reply',kind:'customer_response'};
+ assert.equal(evaluateOutboundCommunication({channel:'voice',kind:'transactional',accountAuthorized:true,\n  senderVerified:true,verifiedRecipient:true,deduplicationKeyVerified:true,aiIdentityDisclosureReady:true}).allowed,false);\n const x={...base,channel:'x_reply',kind:'customer_response'};
  assert.equal(evaluateOutboundCommunication(x).reason,'x_ai_reply_approval_required');
  assert.equal(evaluateOutboundCommunication({...x,xWrittenAiBotApproval:true,officialAuthorizedApi:true}).allowed,true);
  assert.equal(evaluateOutboundCommunication({...x,xWrittenAiBotApproval:true,officialAuthorizedApi:true,
