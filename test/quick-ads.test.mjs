@@ -113,9 +113,9 @@ test('official scoreboard status gates live, scheduled and final states',()=>{
 test('homepage loads the independent notification module after carousel, keeping original cards',()=>{
  const html=source('index.html'),ui=source('quick-ads.mjs'),css=source('quick-ads.css');
  assert.match(html,/oracle-card-deck\.js\?v=/);
- assert.match(html,/quick-ads\.mjs\?v=20261029-house1/);
+ assert.match(html,/quick-ads\.mjs\?v=20261029-house2/);
  assert.match(html,/quick-ads\.css\?v=20261028-game5b/);
- assert.ok(html.indexOf('quick-ads.mjs?v=20261029-house1')>html.indexOf('oracle-card-deck.js?v='));
+ assert.ok(html.indexOf('quick-ads.mjs?v=20261029-house2')>html.indexOf('oracle-card-deck.js?v='));
  assert.match(ui,/quantaphi:switchboard-change/);
  assert.match(ui,/\['scheduled','live','house'\]\.includes\(status\)/);
  assert.match(ui,/Dismiss Quick Ads for 10 minutes/);
