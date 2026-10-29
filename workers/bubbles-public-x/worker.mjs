@@ -4,7 +4,7 @@ const OWNER='YahooPingcwlz';
 const origin='https://quantaphi.org';
 const now=()=>new Date().toISOString();
 const json=(v,status=200)=>Response.json(v,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Access-Control-Allow-Origin':origin}});
-const decode=s=>String(s).replace(/&(?:amp|lt|gt|quot|apos|#39|nbsp);/g,x=>({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&#39;':"'",'&nbsp;':' '}[x])).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Math.min(0x10ffff,Number(n)||32)));
+const decode=s=>String(s).replace(/&(?:amp|lt|gt|quot|apos|#39|nbsp);/g,x=>({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&#39;':"'",'&nbsp;':' '}[x])).replace(/&#(?:([0-9]+)|x([0-9a-f]+));/gi,(_,decimal,hex)=>String.fromCodePoint(Math.min(0x10ffff,hex?parseInt(hex,16):Number(decimal)||32)));
 const strip=s=>decode(String(s).replace(/<script\b[\s\S]*?<\/script>/gi,' ').replace(/<style\b[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim());
 export function parsePublicProfile(html){
  // X adds aria-labelledby/id before role. Attribute order is not a source
