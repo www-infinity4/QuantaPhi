@@ -926,6 +926,11 @@ if(chatGate){
  const retry=create('button','ba-control','Check sign-ins again');
  retry.id='chatBubblesRetrySignInCheck';retry.type='button';
  chatGate.append(retry);
+ const recover=create('a','ba-link','Sign in with StarQuest / restore existing Bubbles account');
+ recover.id='chatBubblesRecoverWallet';recover.href='/wallet-recovery.html?signin=starquest&returnTo=/bubbles.html';recover.hidden=true;
+ const cancel=create('button','ba-control','Cancel sign-in');
+ cancel.id='chatBubblesCancelSignIn';cancel.type='button';cancel.hidden=true;
+ chatGate.append(recover,cancel);
  const repair=create('button','ba-control','Repair Cloudflare permissions');
  repair.type='button';repair.id='chatBubblesRepairCloudflare';
  repair.addEventListener('click',()=>void repairCloudflareConsent());
@@ -935,8 +940,9 @@ async function checkPanelGate(){
  if(!chatGate||chatGateMounted||chatGateLoading)return;
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await Promise.race([import('/bubbles-signin-gate.mjs?v=20261026-full-consent6'),new Promise((_,reject)=>setTimeout(()=>reject(Error('signin_gate_load_timeout')),9000))]);
+  const {mountBubblesSigninGate}=await Promise.race([import('/bubbles-signin-gate.mjs?v=20261029-chat-signin1'),new Promise((_,reject)=>setTimeout(()=>reject(Error('signin_gate_load_timeout')),9000))]);
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
+  if(!chatGateMounted)throw Error('signin_gate_mount_failed');
  }catch{
   const hint=document.getElementById('chatBubblesSigninStatus');
   if(hint)hint.textContent='Sign-in status unavailable. Open Account Connections to continue; chat remains available.';
