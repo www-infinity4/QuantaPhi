@@ -8,6 +8,7 @@ async function prepare(page,state){
   const u=new URL(route.request().url());
   if(u.origin===base)return route.continue();
   if(u.hostname==='statsapi.mlb.com')return route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:JSON.stringify(feed(state.value))});
+  if(u.hostname==='www.kyoutv.com'&&u.pathname==='/livestream/')return route.fulfill({contentType:'text/html',body:'<!doctype html><title>Station page fixture</title><h1>KYOU official-site request fixture</h1><p>Navigation, player, advertising and consent belong to the station. This fixture does not establish actual video playback.</p>'});
   if(u.hostname==='www.youtube-nocookie.com')return route.fulfill({contentType:'text/html',body:'<!doctype html><title>Provider test fixture</title><p>Official player request fixture. Playback is not verified by this test.</p>'});
   return route.abort();
  });
@@ -20,7 +21,8 @@ test('a verified live game opens first, stays reachable, and unpins on final',as
  await expect(page.locator('#oracleCardLive')).toBeVisible();
  await expect(page.locator('#oracleCardChooser optgroup').first()).toHaveAttribute('label','Live game · pinned first');
  await expect(page.locator('#liveFoxGameCard')).toContainText('FOX game video is not available inside this card.');
- await expect(page.locator('#liveFoxGameCard iframe')).toHaveCount(0);
+ await page.locator('#liveFoxGameCard .ltv-station-window').scrollIntoViewIfNeeded();
+ await expect(page.locator('#liveFoxGameCard iframe')).toHaveAttribute('src',/^https:\/\/www\.kyoutv\.com\/livestream\/\?utm_source=quantaphi/);
  state.value='Final';await page.clock.setFixedTime(new Date(Date.parse(now)+300001));
  await page.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));
  await expect(page.locator('#liveFoxGameCard .ltv-state')).toHaveText('FINAL');
@@ -32,6 +34,7 @@ test('a direct card choice is preserved, news starts inline without a Play butto
  await expect(page.locator('#oracleCardLive')).toBeVisible();
  await page.locator('#oracleCardInventory').click();
  await page.locator('#oracleCardChooser').selectOption('liveFoxNewsCard');
+ await expect(page.locator('#liveFoxGameCard iframe')).toHaveCount(0);
  const frame=page.locator('#liveFoxNewsCard iframe');await expect(frame).toBeVisible();
  const src=new URL(await frame.getAttribute('src'));
  expect(src.searchParams.get('autoplay')).toBe('1');expect(src.searchParams.get('mute')).toBe('1');
@@ -51,7 +54,7 @@ test('final and unavailable games never get a live pin',async({page})=>{
  await expect(page.locator('#oracleCardChooser optgroup[label="Live game · pinned first"]')).toHaveCount(0);
 });
 test('KYOU referrals retain source attribution and record clicks without claiming broadcast views',async({page})=>{
- await prepare(page,{value:'Live'});await page.goto(base+'/?card=fox-live-game',{waitUntil:'domcontentloaded'});
+ await prepare(page,{value:'Live'});await page.goto(base+'/?card=kyou',{waitUntil:'domcontentloaded'});
  const station=page.locator('#liveFoxGameCard'),a=station.getByRole('link',{name:'KYOU live newscasts',exact:true});
  await expect(a).toHaveAttribute('rel','noopener');
  await expect(a).toHaveAttribute('referrerpolicy','strict-origin-when-cross-origin');
@@ -60,7 +63,15 @@ test('KYOU referrals retain source attribution and record clicks without claimin
  await a.evaluate(n=>{n.addEventListener('click',e=>e.preventDefault(),{once:true});n.click()});
  const events=await page.evaluate(()=>window.dataLayer.filter(v=>v[0]==='event'&&String(v[1]).startsWith('partner_')).map(v=>[v[1],v[2]]));
  expect(events).toContainEqual(['partner_referral_click',{partner:'kyou',card_id:'fox-live-game',link_id:'live'}]);
- expect(events.every(v=>['partner_card_open','partner_referral_click'].includes(v[0]))).toBe(true);
+ expect(events.every(v=>['partner_card_open','partner_referral_click','partner_site_frame_request'].includes(v[0]))).toBe(true);
  await expect(station).toContainText('KYOU controls its player, ads and audience reporting.');
- await expect(station.locator('iframe,video')).toHaveCount(0);
+ await expect(station.locator('video')).toHaveCount(0);
+ await station.locator('.ltv-station-window').scrollIntoViewIfNeeded();
+ const frame=station.locator('iframe.ltv-station-frame');
+ await expect(frame).toHaveAttribute('allow',/autoplay/);
+ await expect(frame).toHaveAttribute('src',/^https:\/\/www\.kyoutv\.com\/livestream\//);
+ await expect(frame).toHaveAttribute('referrerpolicy','strict-origin-when-cross-origin');
+ await page.locator('#oracleCardInventory').click();
+ await page.locator('#oracleCardChooser').selectOption('liveFoxNewsCard');
+ await expect(station.locator('iframe')).toHaveCount(0);
 });

@@ -22,6 +22,36 @@ function stationLink(label,destination){
  a.addEventListener('click',()=>stationEvent('partner_referral_click',destination));
  return a;
 }
+function mountKyouPage(root){
+ const wrapper=el('section','ltv-station-viewer'),label=el('h3','','KYOU’s original live page'),screen=el('div','ltv-station-window');
+ const status=el('p','ltv-playback','The station page opens automatically when this card is visible.');status.setAttribute('role','status');
+ wrapper.append(label,screen,status);root.append(wrapper);
+ let selected=false,visible=false,frame=null;
+ function stop(){if(frame){frame.src='about:blank';frame.remove();frame=null}status.textContent='Station page paused while off screen.'}
+ function sync(){
+  if(!selected||!visible||document.hidden){stop();return}
+  if(frame)return;
+  const pending=el('iframe','ltv-frame ltv-station-frame');frame=pending;
+  pending.title='KYOU original live-news website, with its own player and advertising';
+  pending.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';pending.allowFullscreen=true;
+  pending.referrerPolicy='strict-origin-when-cross-origin';pending.loading='eager';
+  // Load the intact publisher page. Do not extract/rehost its stream or hide
+  // its navigation, controls, branding, consent, advertising or error messages.
+  pending.src=kyouReferralUrl('live');
+  pending.addEventListener('load',()=>{if(frame===pending)status.textContent='Station page opened. Programming, playback and ads are controlled by KYOU. A page load is not a verified video view.'});
+  pending.addEventListener('error',()=>{if(frame===pending)status.textContent='The station page could not load here. Open KYOU live newscasts below.'});
+  screen.append(pending);status.textContent='Loading KYOU’s original live page…';stationEvent('partner_site_frame_request','live');
+ }
+ root.addEventListener('oracle:activate',()=>{selected=true;sync()});
+ document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id===root.id){selected=false;stop()}});
+ const observer=new IntersectionObserver(items=>{
+  visible=items.some(item=>item.isIntersecting&&item.intersectionRatio>=0.2);
+  if(document.body.classList.contains('oracle-shelf-open'))selected=visible;
+  sync();
+ },{threshold:[0,0.2]});observer.observe(screen);
+ document.addEventListener('visibilitychange',sync);
+ window.addEventListener('pagehide',()=>{selected=false;stop();observer.disconnect();document.removeEventListener('visibilitychange',sync)},{once:true});
+}
 export function mountLiveGame(root){
  if(!root||root.dataset.liveTvReady)return;
  root.dataset.liveTvReady='true';root.classList.add('ltv-card');
@@ -32,6 +62,7 @@ export function mountLiveGame(root){
  brand.setAttribute('aria-label','Open the official KYOU website');logo.src=KYOU.logo;logo.alt='KYOU';logo.width=176;logo.height=70;
  brand.append(logo);root.querySelector('.ltv-head').prepend(brand);
  root.addEventListener('oracle:activate',()=>stationEvent('partner_card_open'));
+ mountKyouPage(root);
  const score=el('div','ltv-score'),names=el('div','ltv-teams');
  for(const side of ['away','home']){
   const team=TEAMS[side],part=el('div','ltv-team'),image=el('img');
