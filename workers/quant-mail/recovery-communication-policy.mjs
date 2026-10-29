@@ -68,6 +68,11 @@ export function evaluateOutboundCommunication(input={}){
  if(input.blockedByRecipient===true||input.optedOut===true)return blocked('recipient_opted_out');
  if(input.accountAuthorized!==true||input.senderVerified!==true)return blocked('account_or_sender_not_authorized');
  if(input.verifiedRecipient!==true)return blocked('recipient_unverified');
+ // Even informational outbound AI voice calls can fall under the TCPA.
+ if(channel==='voice'&&input.priorExpressConsent!==true&&input.expressWrittenConsent!==true)
+  return blocked('voice_recipient_consent_required');
+ if(channel==='voice'&&input.aiIdentityDisclosureReady!==true)return blocked('ai_identity_disclosure_required');
+ if(channel==='sms'&&input.recipientExplicitOptIn!==true)return blocked('sms_consent_required');
  if(input.deduplicationKeyVerified!==true)return blocked('missing_idempotency');
  if(channel==='x_reply'){
   if(input.xWrittenAiBotApproval!==true||input.officialAuthorizedApi!==true)return blocked('x_ai_reply_approval_required');
