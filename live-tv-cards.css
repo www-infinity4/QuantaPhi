@@ -2,6 +2,8 @@
 .ltv-head{padding:20px 20px 14px;background:#f2f7fc;border-bottom:1px solid #dbe6f0}
 .ltv-kicker{font-size:11px;font-weight:850;letter-spacing:.12em;color:#1468aa}
 .ltv-head h2{margin:9px 0;font-size:clamp(25px,6vw,38px);line-height:1.1}
+.ltv-station-brand{display:block;width:176px;max-width:100%;margin:0 0 12px}
+.ltv-station-brand img{display:block;max-width:100%;height:auto;object-fit:contain}
 .ltv-copy,.ltv-note,.ltv-access p,.ltv-playback{font-size:14px;line-height:1.5}
 .ltv-copy{margin:8px 0 0}.ltv-screen{width:100%;min-height:200px;aspect-ratio:16/9;background:#101f2d}
 .ltv-frame{display:block;width:100%;height:100%;border:0}
@@ -13,7 +15,8 @@
 .ltv-team{display:flex;align-items:center;gap:10px}.ltv-team img{width:48px;height:48px;padding:5px;background:#fff;border-radius:50%}
 .ltv-numbers{display:block;font-size:clamp(38px,10vw,56px);font-variant-numeric:tabular-nums;line-height:1.2;margin-top:8px}
 .ltv-state{margin:9px 0 0;font-size:13px;font-weight:800;letter-spacing:.04em}
-.ltv-access{padding:18px}.ltv-access>.ltv-link{margin:0}.ltv-access>strong{line-height:1.45;display:block}
+.ltv-access{padding:18px}.ltv-access>.ltv-link{margin:0 6px 8px 0;white-space:normal}.ltv-access>strong{line-height:1.45;display:block}
+.ltv-referral-note{font-size:12px!important;color:#536779;margin:5px 0 0}
 .ltv-stamp{display:block;padding:0 18px 18px;color:#536779;line-height:1.4}
 #oracleCardLive{display:block;box-sizing:border-box;width:100%;margin:0 0 10px;padding:12px 14px;min-height:46px;text-align:left;border:1px solid #a9c9e4;border-radius:12px;background:#eaf5ff;color:#07588e;font:800 14px/1.35 system-ui;cursor:pointer}
 #oracleCardLive[hidden]{display:none}

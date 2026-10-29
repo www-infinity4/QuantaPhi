@@ -15,6 +15,7 @@ async function prepare(page,state){
 test('a verified live game opens first, stays reachable, and unpins on final',async({page})=>{
  const state={value:'Live'};await prepare(page,state);await page.goto(base+'/',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#oracleCardStage #liveFoxGameCard')).toBeVisible();
+ await expect(page.locator('#liveFoxGameCard h2')).toHaveText('KYOU · FOX 15.1');
  await expect(page.locator('#liveFoxGameCard .ltv-state')).toHaveText('LIVE GAME · Top 3rd');
  await expect(page.locator('#oracleCardLive')).toBeVisible();
  await expect(page.locator('#oracleCardChooser optgroup').first()).toHaveAttribute('label','Live game · pinned first');
@@ -48,4 +49,18 @@ test('final and unavailable games never get a live pin',async({page})=>{
  await expect(page.locator('#liveFoxGameCard .ltv-state')).toHaveText('FINAL');
  await expect(page.locator('#oracleCardLive')).toBeHidden();
  await expect(page.locator('#oracleCardChooser optgroup[label="Live game · pinned first"]')).toHaveCount(0);
+});
+test('KYOU referrals retain source attribution and record clicks without claiming broadcast views',async({page})=>{
+ await prepare(page,{value:'Live'});await page.goto(base+'/?card=fox-live-game',{waitUntil:'domcontentloaded'});
+ const station=page.locator('#liveFoxGameCard'),a=station.getByRole('link',{name:'KYOU live newscasts',exact:true});
+ await expect(a).toHaveAttribute('rel','noopener');
+ await expect(a).toHaveAttribute('referrerpolicy','strict-origin-when-cross-origin');
+ const u=new URL(await a.getAttribute('href'));
+ expect(u.origin+u.pathname).toBe('https://www.kyoutv.com/livestream/');expect(u.searchParams.get('utm_source')).toBe('quantaphi');
+ await a.evaluate(n=>{n.addEventListener('click',e=>e.preventDefault(),{once:true});n.click()});
+ const events=await page.evaluate(()=>window.dataLayer.filter(v=>v[0]==='event'&&String(v[1]).startsWith('partner_')).map(v=>[v[1],v[2]]));
+ expect(events).toContainEqual(['partner_referral_click',{partner:'kyou',card_id:'fox-live-game',link_id:'live'}]);
+ expect(events.every(v=>['partner_card_open','partner_referral_click'].includes(v[0]))).toBe(true);
+ await expect(station).toContainText('KYOU controls its player, ads and audience reporting.');
+ await expect(station.locator('iframe,video')).toHaveCount(0);
 });

@@ -1,5 +1,5 @@
 import {fetchWorldSeries,REFRESH_MS,TEAMS,FOX_WATCH_URL,scoreText} from './world-series-score.mjs?v=20261028-game5c';
-import {isLiveGame,liveNewsEmbed} from './live-tv-state.mjs?v=20261028-live1';
+import {isLiveGame,liveNewsEmbed,KYOU,kyouReferralUrl} from './live-tv-state.mjs?v=20261028-kyou1';
 
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
 const link=(label,href)=>{const n=el('a','ltv-link',label);n.href=href;n.target='_blank';n.rel='noopener noreferrer';return n};
@@ -7,11 +7,31 @@ function heading(root,kicker,title,copy){
  const header=el('header','ltv-head');
  header.append(el('span','ltv-kicker',kicker),el('h2','',title),el('p','ltv-copy',copy));root.append(header);
 }
+function stationEvent(name,destination){
+ // Uses the site's existing analytics configuration only. Card opens/clicks
+ // are never renamed as broadcast viewing, paid impressions or station totals.
+ const detail={partner:'kyou',card_id:'fox-live-game',...(destination?{link_id:destination}:{})};
+ if(typeof window.gtag==='function')window.gtag('event',name,detail);
+ window.dispatchEvent(new CustomEvent('quantaphi:partner-referral',{detail:{event:name,...detail}}));
+}
+function stationLink(label,destination){
+ const a=link(label,kyouReferralUrl(destination));
+ // Preserve an origin-only referrer alongside the explicit campaign tags.
+ a.rel='noopener';a.referrerPolicy='strict-origin-when-cross-origin';
+ a.dataset.stationDestination=destination;
+ a.addEventListener('click',()=>stationEvent('partner_referral_click',destination));
+ return a;
+}
 export function mountLiveGame(root){
  if(!root||root.dataset.liveTvReady)return;
  root.dataset.liveTvReady='true';root.classList.add('ltv-card');
- heading(root,'FOX · WORLD SERIES','World Series · FOX',
-  'Live game status from MLB. This card stays at the front while MLB confirms play is in progress.');
+ root.dataset.station='kyou';
+ heading(root,'IOWA · FOX 15.1',KYOU.name,
+  'Ottumwa · Southeastern Iowa and Northeastern Missouri. Official KYOU destinations, with World Series status from MLB.');
+ const brand=stationLink('','home'),logo=el('img');brand.className='ltv-station-brand';
+ brand.setAttribute('aria-label','Open the official KYOU website');logo.src=KYOU.logo;logo.alt='KYOU';logo.width=176;logo.height=70;
+ brand.append(logo);root.querySelector('.ltv-head').prepend(brand);
+ root.addEventListener('oracle:activate',()=>stationEvent('partner_card_open'));
  const score=el('div','ltv-score'),names=el('div','ltv-teams');
  for(const side of ['away','home']){
   const team=TEAMS[side],part=el('div','ltv-team'),image=el('img');
@@ -22,8 +42,10 @@ export function mountLiveGame(root){
  score.append(names,numbers,state);root.append(score);
  const access=el('div','ltv-access');
  access.append(el('strong','','FOX game video is not available inside this card.'),
-  el('p','','Watch the broadcast at FOX with your own eligible FOX One or TV-provider sign-in.'),
-  link('Watch the game at FOX',FOX_WATCH_URL));root.append(access);
+  el('p','','KYOU’s public online page offers news streams and newscasts. Full FOX game video has not been verified in that online feed.'),
+  stationLink('KYOU live newscasts','live'),stationLink('KYOU program schedule','schedule'),
+  stationLink('KYOU channel guide','guide'),link('FOX game viewing options',FOX_WATCH_URL),
+  el('p','ltv-referral-note','Station links identify QuantaPhi as the referral source. KYOU controls its player, ads and audience reporting. Independent station guide.'));root.append(access);
  const stamp=el('small','ltv-stamp','Scores and broadcast availability are separate.');root.append(stamp);
  let current=null,stopped=false;
  function render(){

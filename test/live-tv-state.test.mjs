@@ -1,9 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {isLiveGame,liveNewsEmbed,LIVE_FRESH_MS,LIVE_GAME_MAX_MS} from '../live-tv-state.mjs';
+import {isLiveGame,liveNewsEmbed,LIVE_FRESH_MS,LIVE_GAME_MAX_MS,KYOU,kyouReferralUrl} from '../live-tv-state.mjs';
 import {gameFromSchedule,GAME_PK,TEAMS} from '../world-series-score.mjs';
 const now=Date.parse('2026-10-29T01:00:00Z');
 const live={status:'live',start:'2026-10-29T00:00:00Z',fetchedAt:new Date(now).toISOString()};
+test('KYOU is the Ottumwa FOX affiliate; station referrals stay on verified official pages',()=>{
+ assert.equal(KYOU.name,'KYOU · FOX 15.1');assert.equal(KYOU.city,'Ottumwa, Iowa');
+ for(const destination of ['home','live','schedule','guide']){
+  const u=new URL(kyouReferralUrl(destination));
+  assert.equal(u.origin,'https://www.kyoutv.com');
+  assert.equal(u.pathname,new URL(KYOU[destination]).pathname);
+  assert.equal(u.searchParams.get('utm_source'),'quantaphi');
+  assert.equal(u.searchParams.get('utm_medium'),'referral');
+  assert.equal(u.searchParams.get('utm_campaign'),'kyou_station_card');
+  assert.equal(u.searchParams.size,3);
+ }
+ for(const bad of ['https://example.com/','logo','__proto__','constructor',null,undefined])assert.equal(kyouReferralUrl(bad),null);
+});
 test('only a fresh, currently running game is pinned, including play after midnight',()=>{
  assert.equal(isLiveGame(live,now),true);
  assert.equal(isLiveGame({...live,start:'2026-10-28T23:30:00Z'},now),true);
