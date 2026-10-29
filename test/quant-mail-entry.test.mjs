@@ -61,3 +61,11 @@ test('public mail page does not promise a working account or capture an email pa
  assert.doesNotMatch(html,/type="password"/);
  assert.doesNotMatch(html,/mailbox created successfully/i);
 });
+
+test('StarQuest return to Quant Mail is strictly path-allowlisted',()=>{
+ const recovery=load('wallet-recovery.html');
+ assert.match(recovery,/const RETURN_TO_MAIL=RECOVERY_PARAMS\.get\('returnTo'\)==='\/quant-mail\.html'&&!RETURN_TO_BRAIN/);
+ assert.match(recovery,/location\.replace\(RETURN_TO_MAIL\?'\/quant-mail\.html':'\/bubbles\.html'\)/);
+ assert.match(recovery,/RETURN_TO_MAIL\?'Sign in to Quant Mail with StarQuest'/);
+ assert.doesNotMatch(recovery,/location\.assign\(RECOVERY_PARAMS\.get\('returnTo'\)\)/);
+});
