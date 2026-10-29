@@ -1,5 +1,6 @@
 import {fetchWorldSeries,REFRESH_MS,TEAMS,FOX_WATCH_URL,scoreText} from './world-series-score.mjs?v=20261028-game5c';
 import {isLiveGame,liveNewsEmbed,KYOU,kyouReferralUrl} from './live-tv-state.mjs?v=20261028-kyou1';
+import './tv-front-priority.js?v=20261028-front1';
 
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
 const link=(label,href)=>{const n=el('a','ltv-link',label);n.href=href;n.target='_blank';n.rel='noopener noreferrer';return n};
@@ -80,20 +81,23 @@ export function mountLiveGame(root){
   stationLink('KYOU channel guide','guide'),link('FOX game viewing options',FOX_WATCH_URL),
   el('p','ltv-referral-note','Station links identify QuantaPhi as the referral source. KYOU controls its player, ads and audience reporting. Independent station guide.'));root.append(access);
  const stamp=el('small','ltv-stamp','Scores and broadcast availability are separate.');root.append(stamp);
- let current=null,stopped=false;
+ let current=null,stopped=false,checked=false;
  function render(){
   const live=isLiveGame(current);
+  const front=globalThis.QuantaTVFrontPriority;let store=null;try{store=localStorage}catch{}
+  front.remember(current,store);const pinned=front.shouldPin(current,Date.now(),front.readFinal(store));
   root.dataset.livePriority=live?'1':'0';
+  root.dataset.tvFrontPriority=pinned?'1':'0';
   numbers.textContent=scoreText(current);
-  state.textContent=!current?'MLB status unavailable':current.stale?'Last known score · live status unconfirmed':
+  state.textContent=!current?(checked?'MLB status unavailable':'Checking MLB game status…'):current.stale?'Last known score · live status unconfirmed':
    live?'LIVE GAME'+(current.inning?' · '+current.inning:''):
    current.status==='final'?'FINAL':current.status==='pregame'?'UPCOMING':
    current.status==='live'?'Live status no longer current':current.detail||'Game status unavailable';
-  stamp.textContent=current?.fetchedAt?'MLB checked '+new Date(current.fetchedAt).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'})+' · '+(live?'Pinned during this game':'No live-game pin'):'Cannot confirm that the game is live.';
+  stamp.textContent=current?.fetchedAt?'MLB checked '+new Date(current.fetchedAt).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'})+' · '+(pinned?'Infinity TV is first for game night':'Game-night placement ended'):'Score pending. Game-night placement does not confirm live video access.';
   window.dispatchEvent(new Event('quantaphi:live-tv-update'));
  }
- async function update(){if(stopped||document.hidden)return;current=await fetchWorldSeries();if(!stopped)render()}
- void update();
+ async function update(){if(stopped||document.hidden)return;current=await fetchWorldSeries();checked=true;if(!stopped)render()}
+ render();void update();
  const refresh=setInterval(update,REFRESH_MS),expiry=setInterval(render,30000);
  const resume=()=>{if(!document.hidden){render();void update()}};
  document.addEventListener('visibilitychange',resume);

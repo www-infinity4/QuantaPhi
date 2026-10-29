@@ -1,5 +1,6 @@
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261027-karaoke1';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
+import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -39,7 +40,11 @@ export const PUBLIC_SOURCE_IDS=Object.freeze([
  'chatgpt','gemini','claude','copilot'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
-export const findSourceCard=id=>QUICK_CARD_SOURCES.find(p=>p.id===id)||null;
+export const findSourceCard=id=>{
+ const original=QUICK_CARD_SOURCES.find(p=>p.id===id);if(original)return original;
+ const card=lookupQuickCard(id);if(!card)return null;
+ return {...card,featureUrl:card.official,focus:'Help visitors use the original '+card.name+' website. Do not invent account access, offers or provider actions.',details:card.description};
+};
 export const validSourceCard=card=>{
  if(!card||!/^[a-z0-9-]+$/.test(card.id||''))return false;
  for(const href of [card.official,card.featureUrl,...(card.secondUrl?[card.secondUrl]:[])]){let url;try{url=new URL(href)}catch{return false}if(url.protocol!=='https:'||url.username||url.password)return false;}

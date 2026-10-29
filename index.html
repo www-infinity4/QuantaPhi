@@ -260,9 +260,11 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
 </style><link rel="stylesheet" href="/walmart-card.css?v=20261024-pizza1"><link rel="stylesheet" href="/brand-product-cards.css?v=20261024-real-products1">
 <link rel="stylesheet" href="/home-mobile-cards-first.css?v=20261027-first1">
 <link rel="stylesheet" href="/oracle-card-spotlight.css?v=20261027-livespot1">
+<link rel="stylesheet" href="/quick-card-search.css?v=20261028-search1">
+<script defer src="/tv-front-priority.js?v=20261028-front1"></script>
 <link rel="stylesheet" href="/live-tv-cards.css?v=20261028-kyou1">
 </head>
-<body class="oracle-surface oracle-quanta oracle-octaves-home"><main class="app">
+<body class="oracle-surface oracle-quanta oracle-octaves-home"><script>document.body.classList.add('oracle-card-deck-active');</script><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Open menu" aria-controls="qmenu" aria-expanded="false">☰</button><h1>Quantaφ</h1><button class="qnewSearch" id="qNewSearch" type="button" aria-label="Start a new search">＋ New Search</button>
 <button class="enroll-btn btn btn-primary" aria-label="Enroll">Enroll</button><div class="qbalances" aria-live="polite" data-control-phi-wallet-host><button class="qtoken" id="qinfinity" type="button" title="Infinity website tokens">Infinity: —</button><button class="qtoken" id="qtoken" type="button" title="Spendable Quants">Quants: —</button><button class="qstar" id="controlPhiWalletButton" type="button" aria-label="Open unified wallet" aria-expanded="false"><span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong data-control-phi-wallet-balance>0</strong><small data-control-phi-wallet-progress>0/10</small></button></div><nav class="qmenu" id="qmenu" hidden><button id="qshare" type="button">Share +0.1 ★</button><button id="qmenuWallet" type="button">Unified Wallet ⭐</button><a href="/design-lab/index.html">Design Lab · Power Chain</a><a href="/about.html">About QuantaPhi</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a><a href="/explore/">Explore AI Tools</a><a href="/trending-now.html">Trending tools</a><a href="/platinum/index.html">Infinity Platinum · Browse / Collect / Create</a><a href="#phiStoryWriter">Story Writer</a><a href="/bubbles.html">Bubbles page</a><a href="/downloads/bubbles.apk" data-apk-download="bubbles">Bubbles Android APK</a><a href="/test-ground-ai/">Test Ground AI</a><a href="/terriphi/">TerriPhi · Haunted Arcade</a><a href="/petriphi/">PetriPhi · Halloween Art Studio</a><a href="/apps/index.html">Install all Chrome apps</a><a href="/bubbles-chrome.html">Install Bubbles Chrome app</a><a href="/bubbles-accounts.html">Connect accounts · Bubbles</a><p role="status" data-platinum-security-hold style="font-size:13px;line-height:1.4;color:#682825;margin:8px 10px">Infinity Platinum APK withdrawn pending security review. Do not install the preview.</p><a href="/resonance.html">Resonance Calculator</a><a href="https://www-infinity4.github.io/Infinity-Phi/">Infinity Phi</a><a href="https://www-infinity4.github.io/Omni-Phi/">Omni Phi</a><a href="https://www-infinity4.github.io/News-Phi/">News Phi</a><a href="https://www-infinity4.github.io/Alien-Radio/">Infinity Radio</a><a href="#result">Overview</a><button id="qHistoryBtn" type="button">Build History</button><button class="mediaNav" id="qImagesBtn" type="button">Images</button><button class="mediaNav" id="qVideoBtn" type="button">Video</button><button class="mediaNav" id="qSoundBtn" type="button">Sound</button><a href="#media">Media</a></nav></div>
 <div class="search" role="search" aria-label="QuantaPhi search"><input id="q" type="search" enterkeyhint="search" aria-label="Search anything" autocomplete="off" placeholder="Search anything…"><button id="go" type="button">Search</button></div>
@@ -274,6 +276,7 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
 <p class="sub">Research anything · compare original sources · build and collect interactive QuantaPhi cards</p>
 <div class="qrefine" id="qrefineWrap" hidden><input id="qrefine" autocomplete="off" placeholder="Refine this entity…"><button id="qrefineBtn" type="button">Refine</button></div>
 <div id="status" role="status" aria-live="polite"></div>
+<section id="quickCardSearchResults" aria-label="Matching website Quick Cards" hidden></section>
 <section id="walmartShoppingCard" class="card" aria-label="Walmart shopping card" data-walmart-item="19668500198">
  <header class="walmart-card-header"><a class="walmart-card-brand" href="https://www.walmart.com/" aria-label="Walmart"><img src="https://i5.walmartimages.com/dfw/63fd9f59-14e2/9d304ce6-96de-4331-b8ec-c5191226d378/v1/spark-icon.svg" alt="" width="34" height="34">Walmart</a><span class="walmart-card-label">Grocery<br>Frozen pizza</span></header>
  <div class="walmart-card-photo"><img data-walmart-image src="https://i5.walmartimages.com/seo/bettergoods-Woodfired-Crust-Mediterranean-Pizza-5-7oz-Single-Serve-Frozen_318c1481-cc5b-40f8-989e-e2fc0be1099d.8963c93f9e485ce82e3b87c5ce4b5507.jpeg?odnHeight=573&amp;odnWidth=573&amp;odnBg=FFFFFF" alt="bettergoods Mediterranean Pizza — product photo from Walmart" width="573" height="573" fetchpriority="high"><p data-walmart-image-error hidden>Product photo unavailable. View the original item at Walmart below.</p></div>
@@ -404,7 +407,7 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
   <a href="/quick-card-builder.html" style="display:inline-block;border-radius:12px;padding:12px 18px;background:#a52520;color:white;font-weight:800;text-decoration:none">+ Create a Quick Card</a>
 </div>
 <section id="oracleCardDeck" class="oracle-card-deck" aria-label="Interactive Oracle widget viewer">
-  <button id="oracleCardLive" type="button" hidden>● Live game · KYOU FOX 15.1 · Return to the game card</button>
+  <button id="oracleCardLive" type="button" hidden>Infinity TV · KYOU · Return to the game-night viewer</button>
   <div class="oracle-direction-tabs" role="tablist" aria-label="Choose card direction">
     <button type="button" role="tab" data-oracle-feed="public" aria-selected="true">Public</button>
     <button type="button" role="tab" data-oracle-feed="for-you" aria-selected="false">For You</button>
@@ -1192,6 +1195,7 @@ async function search(options={}){
  const run=++activeSearchRun;let refining=options.refine===true||options.restore===true;
  const isCurrent=()=>run===activeSearchRun;
  const q=$('#q').value.trim().slice(0,2000); if(!q)return;
+ window.dispatchEvent(new CustomEvent('quantaphi:query-start',{detail:{query:q,run}}));
  const regularResultsPromise=regularWebSearch(q,run);
  const selectedSubjects=q.includes(' + ')?q.split(' + ').map(x=>x.trim()).filter(Boolean).slice(0,8):[];
  $('#result').hidden=false;$('#overview').innerHTML='<section class="qzone qzoneRed"><h3>Scholastic Reader</h3><div>Preparing the AI overview…</div></section>';
@@ -1919,7 +1923,8 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script type="module" src="/premium-source-cards.mjs?v=20261024-library1"></script>
 <script type="module" src="/art-museum-quick-cards.mjs?v=20261025-gallery1"></script>
 <script type="module" src="/verified-brand-sports-cards.mjs?v=20261025-brandbatch1"></script>
-<script type="module" src="/source-quick-cards.mjs?v=20261027-siteviewer1"></script>
+<script type="module" src="/source-quick-cards.mjs?v=20261028-search1"></script>
+<script type="module" src="/quick-card-search.mjs?v=20261028-search1"></script>
 <script type="module" src="/design-lab/quick-card.mjs?v=1"></script>
 <script type="module" src="/brand-product-cards.mjs?v=20261024-real-products1"></script>
 <script type="module" src="/science-quick-cards.mjs?v=20261023-science1"></script>
@@ -1929,8 +1934,8 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script type="module" src="/infinity-accepted-cards.mjs?v=20261027-2"></script>
 <link rel="stylesheet" href="/coliseum/zeus-card.css?v=20261028-rc1">
 <script type="module" src="/coliseum/zeus-quick-card.mjs?v=20261028-rc1"></script>
-<script type="module" src="/live-tv-cards.mjs?v=20261028-kyou1"></script>
-<script defer src="/oracle-card-deck.js?v=20261028-kyou1"></script>
+<script type="module" src="/live-tv-cards.mjs?v=20261028-front1"></script>
+<script defer src="/oracle-card-deck.js?v=20261028-front1"></script>
 <link rel="stylesheet" href="/quick-ads.css?v=20261028-game5b">
 <script type="module" src="/quick-ads.mjs?v=20261028-game5b"></script>
 <script type="module" src="/shop-phi-switchboard.mjs?v=20261027-readability2"></script>
