@@ -147,7 +147,10 @@ export class AccountConnections {
     };
     pending.onReturn=()=>{
       if(this.pending!==pending||pending.finished)return;
-      if(popup?.closed){finish(Error('The sign-in window was closed. Tap Sign in to retry.'));return;}
+      // A closed popup is not a failed authorization: the provider callback
+      // may still be sealing its receipt on the server when focus returns.
+      // Keep polling the wallet-bound handoff until its verified result,
+      // explicit cancellation, or the original five-minute expiry.
       void poll();
     };
     this.root.addEventListener?.('focus',pending.onReturn);

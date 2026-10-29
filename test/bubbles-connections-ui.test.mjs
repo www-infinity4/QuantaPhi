@@ -220,6 +220,38 @@ test('OAuth resumes after Android browser return without sharing a popup or code
   assert.ok(calls.some(c=>c.url.endsWith('/handoff/finish')));
   assert.ok(calls.every(c=>!c.url.endsWith('/complete')&&!String(c.options.body).includes('authorization-code')));
 });
+test('closed OAuth popup waits for a late server handoff instead of falsely failing sign-in',async()=>{
+ const state='z'.repeat(43),listeners=new Map();
+ const popup={location:{},closed:false,close(){this.closed=true;}};
+ const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},
+  addEventListener:(key,handler)=>listeners.set(key,handler),
+  removeEventListener:key=>listeners.delete(key)};
+ let serverStatus='pending',completed=null,polls=0;
+ const client=new AccountConnections({token:()=> 'existing-wallet-session',root,request:async url=>{
+  if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+state,expiresIn:300});
+  if(url.endsWith('/handoff/status')){polls++;return Response.json({ok:true,status:serverStatus});}
+  if(url.endsWith('/handoff/finish'))return Response.json({ok:true,status:'connected',account:{id:'verified-cloudflare'}});
+  assert.fail('Unexpected connection endpoint '+url);
+ }});
+ await client.connect('cloudflare',['account.read'],(error,account)=>{completed={error,account};});
+ await new Promise(resolve=>setImmediate(resolve));
+ // Android Chrome may close the external window before the Durable Object
+ // has committed its callback. Focus is not a negative provider receipt.
+ popup.closed=true;
+ listeners.get('focus')();
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(completed,null,'Closed popup must not discard the pending wallet-bound handoff');
+ assert.ok(client.pending);
+ serverStatus='received';
+ listeners.get('focus')();
+ await new Promise(resolve=>setImmediate(resolve));
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(completed?.error,null);
+ assert.equal(completed?.account?.id,'verified-cloudflare');
+ assert.ok(polls>=2);
+ assert.equal(client.pending,null);
+});
+
 test('unsafe authorization URL closes the popup without navigating to it',async()=>{
   const popup={location:{},close(){this.closed=true;}},root={open:()=>popup};
   const client=new AccountConnections({token:()=> 'device-token',root,request:async()=>Response.json({ok:true,authorizationUrl:'https://evil.test/?state=state'})});
