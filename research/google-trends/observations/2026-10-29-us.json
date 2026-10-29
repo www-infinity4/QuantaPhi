@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-10-29T01:58:51.202857Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "lakers vs clippers",
+      "approx_searches": "50000+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/watch-lakers-vs-clippers-live-013000581.html",
+        "https://www.silverscreenandroll.com/lakers-game-previews/127953/lakers-vs-clippers-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-austin-reaves",
+        "https://www.covers.com/nba/lakers-vs-clippers-prediction-picks-odds-oct-28-2026"
+      ]
+    },
+    {
+      "query": "william contreras",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://nypost.com/2026/10/27/sports/brewers-unlikely-to-keep-william-contreras-this-offseason/",
+        "https://heavy.com/sports/mlb/new-york-yankees/william-contreras-best-trade-destination/",
+        "https://blogredmachine.com/reds-wise-avoid-brewers-favorite-trick-staying-away-william-contreras"
+      ]
+    },
+    {
+      "query": "houston dynamo vs seattle sounders",
+      "approx_searches": "500+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://www.soundersfc.com/news/seavhou-101-preview-all-you-need-to-know-when-the-sounders-face-off-against-the-houston-dynamo-on-wednesday-presented-by-ticketmaster",
+        "https://www.sounderatheart.com/2026/10/sounders-treating-dynamo-as-a-must-win-game/",
+        "https://www.squawka.com/en/news/previews/seattle-sounders-vs-houston-dynamo-predictions-betting-tips-29-10-26/"
+      ]
+    },
+    {
+      "query": "keyonte george",
+      "approx_searches": "500+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://www.si.com/nba/jazz/onsi/utah-jazz-announce-new-starting-five-without-jaren-jackson-jr-markkanen-",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/jaxson-hayes-shoulder-upgraded-to-available",
+        "https://www.rotoballer.com/player-news/jaxson-hayes-carries-questionable-tag-for-wednesday/1977698"
+      ]
+    },
+    {
+      "query": "inter de miami",
+      "approx_searches": "500+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://vantage-dc.com/virtual-tour-montreal-data-center/?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vdHJhdmlzLWF1c3Rpbi5naXRodWIuaW8vZW5tL2VudS54bWwiLz48L2tycGFubz4=&id=video-cincinnati-vs-inter-miami-match-lie-fjdibzo",
+        "https://en.as.com/soccer/inter-miami-vs-cincinnati-live-online-score-stats-goals-updates-mls-2026-f202610-n/",
+        "https://onefootball.com/en/video/inter-miami-cf-fc-cincinnati-2-2-tor-riquelme-fillipi-43689231"
+      ]
+    },
+    {
+      "query": "contreras",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/william-contreras-showing-mastery-of-abs-challenge-system-in-postseason",
+        "https://www.espn.com/watch/player/_/id/50292990",
+        "https://www.jsonline.com/story/sports/mlb/brewers/2026/10/22/contreras-dedicated-workout-regime-allowed-him-to-endure-all-season/92377556007/"
+      ]
+    },
+    {
+      "query": "amy roloff",
+      "approx_searches": "200+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/little-people-big-world-star-171032974.html",
+        "https://www.cleveland.com/entertainment/2026/10/little-people-big-world-family-mourns-2nd-death-in-weeks.html",
+        "https://people.com/amy-roloff-dad-dies-97-12196368"
+      ]
+    },
+    {
+      "query": "pacers score",
+      "approx_searches": "200+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/news/pacers-ben-sheppard-to-undergo-surgery-for-a-torn-meniscus-on-wednesday",
+        "https://www.hoopsrumors.com/2026/10/injury-notes-pacers-adams-dybantsa-hornets-jones.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-ben-sheppard-knee-out-for-months"
+      ]
+    },
+    {
+      "query": "world series mvp odds",
+      "approx_searches": "500+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/stories/mlb/world-series-mvp-predictions-brewers-williams-contreras",
+        "https://www.sportsnet.ca/mlb/video/makes-more-sense-to-stay-in-player-props-market-for-contreras-and-chourio/",
+        "https://www.jsonline.com/story/sports/mlb/brewers/2026/10/27/who-is-favorited-to-be-the-world-series-mvp/92461588007/"
+      ]
+    },
+    {
+      "query": "josh green",
+      "approx_searches": "200+",
+      "published_at": "2026-10-29T01:40:00Z",
+      "related_news_urls": [
+        "https://www.rotowire.com/basketball/headlines/josh-green-news-starting-sans-markkanen-536564",
+        "https://www.si.com/nba/jazz/onsi/utah-jazz-announce-new-starting-five-without-jaren-jackson-jr-markkanen-",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/jaxson-hayes-shoulder-upgraded-to-available"
+      ]
+    }
+  ]
+}
