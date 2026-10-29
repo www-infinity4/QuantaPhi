@@ -27,7 +27,7 @@ test('a verified live game opens first, stays reachable, and unpins on final',as
 });
 test('a direct card choice is preserved, news starts inline without a Play button, and leaving stops it',async({page})=>{
  await prepare(page,{value:'Live'});await page.goto(base+'/?card=google',{waitUntil:'domcontentloaded'});
- await expect(page.locator('#oracleCardStage .qcx-google-wordmark')).toBeVisible();
+ await expect(page.locator('#oracleCardStage').getByRole('searchbox',{name:'Search Google'})).toBeVisible();
  await expect(page.locator('#oracleCardLive')).toBeVisible();
  await page.locator('#oracleCardInventory').click();
  await page.locator('#oracleCardChooser').selectOption('liveFoxNewsCard');
@@ -38,6 +38,7 @@ test('a direct card choice is preserved, news starts inline without a Play butto
  await expect(page.locator('#liveFoxNewsCard button').filter({hasText:/^(?:Play|Watch|Start)/})).toHaveCount(0);
  const overflow=await page.locator('#liveFoxNewsCard').evaluate(n=>n.getBoundingClientRect().width>innerWidth);
  expect(overflow).toBe(false);
+ expect(await frame.evaluate(n=>n.getBoundingClientRect().height)).toBeGreaterThanOrEqual(200);
  await page.locator('#oracleCardLive').click();
  await expect(page.locator('#oracleCardStage #liveFoxGameCard')).toBeVisible();
  await expect(page.locator('#liveFoxNewsCard iframe')).toHaveCount(0);

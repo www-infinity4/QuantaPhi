@@ -33,3 +33,21 @@ test('live news requests the official channel inline, muted, with controls and a
  assert.equal(u.searchParams.get('origin'),'https://quantaphi.org');
  assert.throws(()=>liveNewsEmbed('file:///tmp/site.html'));
 });
+test('concurrent scoreboard consumers await the new final result instead of cached live data',async t=>{
+ let clock=now,requests=0,finish;
+ const payload=status=>({dates:[{games:[{gamePk:GAME_PK,gameDate:live.start,status:{abstractGameState:status,detailedState:status==='Live'?'In Progress':'Final'},teams:{away:{team:{id:TEAMS.away.id},score:2},home:{team:{id:TEAMS.home.id},score:1}}}]}]});
+ t.mock.method(Date,'now',()=>clock);
+ t.mock.method(globalThis,'fetch',()=>{
+  requests++;
+  if(requests===1)return Promise.resolve({ok:true,json:async()=>payload('Live')});
+  return new Promise(resolve=>{finish=()=>resolve({ok:true,json:async()=>payload('Final')})});
+ });
+ const {fetchWorldSeries,REFRESH_MS}=await import('../world-series-score.mjs?live-tv-concurrency-test');
+ assert.equal((await fetchWorldSeries()).status,'live');
+ clock+=REFRESH_MS+1;
+ const notification=fetchWorldSeries({force:true}),carousel=fetchWorldSeries();
+ assert.equal(requests,2);finish();
+ const results=await Promise.all([notification,carousel]);
+ assert.deepEqual(results.map(r=>r.status),['final','final']);
+ assert.equal(requests,2);
+});

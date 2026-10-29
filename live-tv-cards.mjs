@@ -1,4 +1,4 @@
-import {fetchWorldSeries,REFRESH_MS,TEAMS,FOX_WATCH_URL,scoreText} from './world-series-score.mjs?v=20261028-game5b';
+import {fetchWorldSeries,REFRESH_MS,TEAMS,FOX_WATCH_URL,scoreText} from './world-series-score.mjs?v=20261028-game5c';
 import {isLiveGame,liveNewsEmbed} from './live-tv-state.mjs?v=20261028-live1';
 
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
