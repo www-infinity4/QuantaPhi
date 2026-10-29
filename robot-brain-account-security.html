@@ -25,7 +25,7 @@ p{line-height:1.6}button,a{touch-action:manipulation}button:focus-visible,a:focu
 <header><b>Robot Brain · Private account security</b><a href="/bubbles.html">Return to Bubbles</a></header>
 <section><h1>Owner access</h1><p>Account security is available only to the verified owner wallet. This page does not offer public email signup.</p>
 <div id="robotBrainOwner" aria-live="polite"></div>
-<p id="ownerGateMessage" role="status">Checking your existing Robot Brain owner connection…</p>
+<p id="ownerGateMessage" role="status">Use your existing verified owner wallet to open private security settings.</p>
 </section>
 <section id="account-security" hidden aria-label="Private owner account security">
 <h2>Private passkey setup</h2><p>Your account security controls stay in the verified owner session. The private key remains on your phone.</p>
@@ -37,5 +37,10 @@ p{line-height:1.6}button,a{touch-action:manipulation}button:focus-visible,a:focu
 <script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script>
 <script src="/cloud-wallet-client.js?v=20261013-brain-bridge1"></script>
 <script src="/robot-brain-owner.js?v=20261014-shared-memory6"></script>
-<script type="module" src="/robot-brain-passkeys.mjs?v=20261029-private-owner2"></script>
+<script type="module">
+import('/robot-brain-passkeys.mjs?v=20261029-private-owner2').catch(()=>{
+ const status=document.getElementById('ownerGateMessage');
+ if(status)status.textContent='Private account controls could not load. Your wallet and email settings were not changed.';
+});
+</script>
 </body></html>
