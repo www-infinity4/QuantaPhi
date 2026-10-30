@@ -3,106 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-30T03:03:19.899451Z",
+  "checked_at": "2026-10-30T10:15:54.411279Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "giuliana & bill",
-      "approx_searches": "200+",
-      "published_at": "2026-10-30T02:50:00Z",
+      "query": "patrick queen trade rumors cowboys",
+      "approx_searches": "100+",
+      "published_at": "2026-10-30T10:00:00Z",
       "related_news_urls": [
-        "https://people.com/bill-and-giuliana-rancic-are-considering-moving-to-nashville-or-florida-12201412",
-        "https://www.usmagazine.com/celebrity-news/news/bill-giuliana-rancic-are-mulling-nashville-or-florida-move/"
+        "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-made-trade-call-all-pro-afc-linebacker-resurfacing-nfl-deadline",
+        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/177049/steelers-received-trade-calls-on-lb-patrick-queen",
+        "https://heavy.com/sports/nfl/pittsburgh-steelers/linked-patrick-queen-linebacker-defense/"
       ]
     },
     {
-      "query": "wild score",
-      "approx_searches": "200+",
-      "published_at": "2026-10-30T02:50:00Z",
+      "query": "kyle chrisley guilty plea",
+      "approx_searches": "100+",
+      "published_at": "2026-10-30T09:50:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/minnesota-wild-utah-mammoth-game-recap-october-27-2026",
-        "https://www.startribune.com/minnesota-wild-utah-mammoth-score-today-kirill-kaprizov-goals-jesper-wallstedt-quinn-hughes-stats/601902996",
-        "https://www.espn.com/nhl/recap/_/gameId/401892592"
+        "https://www.yahoo.com/entertainment/celebrity/articles/kyle-chrisley-pleads-guilty-resisting-215907676.html",
+        "https://people.com/kyle-chrisley-pleads-guilty-resisting-arrest-10-months-public-intoxication-domestic-assault-charges-12200382",
+        "https://pagesix.com/2026/10/29/celebrity-news/savannah-chrisleys-brother-pleads-guilty-to-resisting-arrest-months-after-aggressive-cop-showdown/"
       ]
     },
     {
-      "query": "zach edey",
+      "query": "espncricinfo",
+      "approx_searches": "100+",
+      "published_at": "2026-10-30T09:50:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/scans-show-joint-injury-for-steven-smith-expected-to-be-fit-to-face-new-zealand-1560491",
+        "https://www.news.com.au/sport/cricket/australian-camp-frustrated-at-steve-smith-after-pulling-out-of-third-test-with-neck-injury/news-story/9bfb7b92f09a63620e2ec0efcb4655b7",
+        "https://www.icc-cricket.com/news/neck-injury-confirmed-as-new-zealand-the-focus-for-smith"
+      ]
+    },
+    {
+      "query": "detroit tigers",
       "approx_searches": "500+",
-      "published_at": "2026-10-30T02:40:00Z",
+      "published_at": "2026-10-30T09:50:00Z",
       "related_news_urls": [
-        "https://www.basketballnews.com/news/basketballnews-nba-active-news-courtside-audio-reveals-warriors-rookie-yaxel-lendeborg-defending-draymond-green-against-seven-foot-four-grizzlies-star/",
-        "https://www.essentiallysports.com/nba-active-basketball-news-cameras-catch-draymond-green-poking-seven-four-stars-eye-as-warriors-grizzlies-turn-chippy/",
-        "https://www.tomahawknation.com/florida-state-football/139521/fsu-seminoles-clemson-tigers-how-to-watch-stream-odds"
+        "https://www.mlbtraderumors.com/2026/10/red-sox-to-trade-tsung-che-cheng-to-tigers.html",
+        "https://www.blessyouboys.com/detroit-tigers-news/101160/detroit-tigers-news-mlb-trade-rumors-tsung-che-cheng-red-sox",
+        "https://sports.yahoo.com/articles/mlb-trade-boston-red-sox-043807565.html"
       ]
     },
     {
-      "query": "zakee wheatley",
-      "approx_searches": "200+",
-      "published_at": "2026-10-30T02:40:00Z",
+      "query": "avatar seven havens season 2 release date",
+      "approx_searches": "100+",
+      "published_at": "2026-10-30T09:40:00Z",
       "related_news_urls": [
-        "https://pantherswire.usatoday.com/story/sports/nfl/panthers/2026/10/29/panthers-zakee-wheatley-espn-week-8/92496513007/",
-        "https://sports.yahoo.com/articles/one-panthers-rookie-shining-brighter-191229941.html",
-        "https://roundtable.io/sports/nfl/panthers/news/panthers-rookie-could-play-major-role-vs-buccaneers-this-week"
+        "https://www.imdb.com/news/ni66086997/?ref_=ttnw_art_perm",
+        "https://mashable.com/entertainment/avatar-seven-havens-finale-clip",
+        "https://www.ign.com/articles/avatar-seven-havens-season-1-finale-episodes-10-13-review-and-recap"
       ]
     },
     {
-      "query": "josh turek",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-30T02:30:00Z",
-      "related_news_urls": [
-        "https://www.economist.com/united-states/2026/10/29/democrats-are-rediscovering-what-an-appealing-politics-of-progress-looks-like",
-        "https://slate.com/news-and-politics/2026/10/iowa-senate-josh-turek-ashley-hinson-polls.html",
-        "https://www.npr.org/2026/10/27/nx-s1-6019374/why-iowa-is-up-for-grabs"
-      ]
-    },
-    {
-      "query": "winter storm warning",
-      "approx_searches": "50000+",
-      "published_at": "2026-10-30T02:30:00Z",
-      "related_news_urls": [
-        "https://www.autoblog.com/news/winter-storm-warning-issued-for-up-to-15-inches-of-snow-through-friday",
-        "https://www.mensjournal.com/news/new-winter-storm-warning-bringing-18-inches-of-snow-35-mph-winds",
-        "https://www.theaustralian.com.au/news/snowstorm-whitens-fairbanks/video/6657950ba74814ca9ef2215767660f5f"
-      ]
-    },
-    {
-      "query": "memphis grizzlies vs portland trail blazers match player stats",
-      "approx_searches": "5000+",
-      "published_at": "2026-10-30T02:30:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/game/gsw-vs-min-0022600139/box-score",
-        "https://www.nba.com/game/lal-vs-lac-0022600143/box-score",
-        "https://www.nba.com/game/hou-vs-mil-0022600138/box-score"
-      ]
-    },
-    {
-      "query": "robert kelker kelly died from what",
-      "approx_searches": "500+",
-      "published_at": "2026-10-30T02:30:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/entertainment/days-of-our-lives-star-robert-kelker-kelly-cause-of-death-revealed",
-        "https://www.eonline.com/news/1437650/days-of-our-lives-star-robert-kelker-kellys-cause-of-death-heart-disease",
-        "https://www.yahoo.com/entertainment/celebrity/articles/days-lives-alum-robert-kelker-225609424.html"
-      ]
-    },
-    {
-      "query": "nickeil alexander-walker",
+      "query": "nasdaq futures",
       "approx_searches": "1000+",
-      "published_at": "2026-10-30T02:30:00Z",
+      "published_at": "2026-10-30T09:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50243863/nickeil-alexander-walker-knocks-3",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/nickeil-alexander-walker-has-23-points-in-loss",
-        "https://www.rotowire.com/basketball/headlines/nickeil-alexander-walker-news-drains-five-triples-536686"
+        "https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html",
+        "https://www.scmp.com/tech/big-tech/article/3372737/amid-brutal-sell-what-comes-next-google-amazon-and-other-big-tech-titans",
+        "https://finance.yahoo.com/markets/stocks/articles/stocktwits-ai-roundup-intel-amazon-080728991.html"
       ]
     },
     {
-      "query": "cedric coward",
-      "approx_searches": "500+",
-      "published_at": "2026-10-30T02:30:00Z",
+      "query": "gta delayed",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T09:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/3-takeaways-grizzlies-110-105-162825397.html",
-        "https://www.fanduel.com/research/jazz-vs-grizzlies-prediction-nba-odds-spread-best-bets-for-10-26-2026",
-        "https://www.cbssports.com/nba/news/grizzlies-hold-off-late-jazz-rally-to-stay-unbeaten/"
+        "https://www.forbes.com/sites/paultassi/2026/10/29/gta-6-enormous-map-size-confirmed-enormous-file-size-reported/",
+        "https://hypebeast.com/2026/10/grand-theft-auto-vi-require-210-gb-download-ps5-xbox-reports",
+        "https://www.ign.com/articles/gta-6-trade-in-old-console-save-on-upgrade-paymore"
+      ]
+    },
+    {
+      "query": "playstation",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T09:20:00Z",
+      "related_news_urls": [
+        "https://blog.playstation.com/2026/10/28/first-look-inside-the-prism-collection-with-three-new-transparent-designs-for-ps5-accessories/",
+        "https://www.wired.com/story/sony-wants-you-to-forget-about-discs-with-its-gorgeous-transparent-controller/",
+        "https://hypebeast.com/2026/10/playstation-the-prism-collection-dualsense-wireless-controllers-release-info"
+      ]
+    },
+    {
+      "query": "tarek el moussa daughter bmw gift",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T09:10:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/10/29/celebrity-news/hgtv-star-defends-buying-150k-bmw-for-his-16-year-old-daughter/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/tarek-el-moussa-says-daughter-221507611.html",
+        "https://www.usmagazine.com/celebrity-news/news/tarek-el-moussa-defends-buying-teen-daughter-150000-bmw/"
+      ]
+    },
+    {
+      "query": "jim cramer wall street tech commentary",
+      "approx_searches": "100+",
+      "published_at": "2026-10-30T09:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/10/29/jim-cramer-earnings-guilt-by-association.html",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-s-p-500-nasdaq-dow-alphabet-earnings-results-amazon-intel/card/investors-selling-cybersecurity-stocks-are-missing-the-point-says-cramer-3SHSC8jxtIrsqYhtRsY0?mod=mw_FV",
+        "https://pluang.com/en/news-feed/jim-cramer-kata-wall-street-salah-hukum-saham-teknologi"
       ]
     }
   ]
