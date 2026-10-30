@@ -62,7 +62,7 @@ test('old shared session without index entry is kept in History, never opened by
  assert.notEqual(result.activeThread,SHARED);
 });
 test('automatic reopened chat preserves old turns but does not create empty cloud folders',async()=>{
- const a=ui.indexOf('async function startConversation(');
+ const a=ui.indexOf('function startConversation(');
  const b=ui.indexOf("newConversation.addEventListener('click'",a);
  assert.ok(a>0&&b>a);
  const saved=[],cloud=[],storage=new Map(),ctx={
@@ -109,7 +109,7 @@ test('automatic reopened chat preserves old turns but does not create empty clou
  assert.match(ctx.status.textContent,/Earlier conversations are available/);
 });
 test('active requests do not reset the chat when a panel is reopened',async()=>{
- const a=ui.indexOf('async function startConversation(');
+ const a=ui.indexOf('function startConversation(');
  const b=ui.indexOf("newConversation.addEventListener('click'",a);
  const state={busy:true,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   chatsMessage:{textContent:''},messages:['existing'],keepChat:true,
@@ -133,7 +133,7 @@ test('standalone website and Android reopen fresh chats while embedded cards ret
 });
 
 test('history storage failure blocks both automatic and confirmed New chat without clearing the active thread',async()=>{
- const a=ui.indexOf('async function startConversation(');
+ const a=ui.indexOf('function startConversation(');
  const b=ui.indexOf("newConversation.addEventListener('click'",a);
  assert.ok(a>0&&b>a);
  let saves=0,clears=0,confirms=0;
@@ -184,7 +184,7 @@ test('conversation index storage failure blocks History saves even when the thre
 });
 
 test('new chat preserves the active session when the new History index cannot be written',async()=>{
- const a=ui.indexOf('async function startConversation(');
+ const a=ui.indexOf('function startConversation(');
  const b=ui.indexOf("newConversation.addEventListener('click'",a);
  assert.ok(a>0&&b>a);
  const events=[];
@@ -243,7 +243,7 @@ test('native recovery reports index persistence failures without mutating Histor
 
 test('History switching never discards unsent photos, typed work or an unsaved current conversation',async()=>{
  const begin=ui.indexOf('async function openConversation(id){');
- const end=ui.indexOf('async function startConversation(',begin);
+ const end=ui.indexOf('function startConversation(',begin);
  assert.ok(begin>0&&end>begin,'actual History switch handler exists');
  async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false}={}){
   let confirmations=0,saves=0,clears=0;
@@ -317,7 +317,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
 });
 
 test('History-off turns survive automatic website and Android reopen without unsent composer text',async()=>{
- const a=ui.indexOf('async function startConversation(');
+ const a=ui.indexOf('function startConversation(');
  const b=ui.indexOf("newConversation.addEventListener('click'",a);
  assert.ok(a>0&&b>a,'real fresh-chat handler exists');
  let clears=0;
@@ -352,7 +352,7 @@ test('History-off turns survive automatic website and Android reopen without uns
 
 
 test('explicit New chat requires confirmation before discarding History-off conversation turns',async()=>{
- const a=ui.indexOf('async function startConversation(');
+ const a=ui.indexOf('function startConversation(');
  const b=ui.indexOf("newConversation.addEventListener('click'",a);
  assert.ok(a>0&&b>a,'actual New chat handler exists');
  async function attempt(approve){
@@ -393,7 +393,7 @@ test('explicit New chat requires confirmation before discarding History-off conv
 
 test('Android RecordB, live mic and speech block History switch, New chat and native reopen',async()=>{
  const openStart=ui.indexOf('async function openConversation(id){');
- const freshStart=ui.indexOf('async function startConversation(',openStart);
+ const freshStart=ui.indexOf('function startConversation(',openStart);
  const freshEnd=ui.indexOf("newConversation.addEventListener('click'",freshStart);
  const nativeStart=ui.indexOf('startFreshOnReopen:()=>{');
  const nativeEnd=ui.indexOf('nativeHistorySnapshot:',nativeStart);
