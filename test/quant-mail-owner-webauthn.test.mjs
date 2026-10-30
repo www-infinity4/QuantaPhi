@@ -372,3 +372,29 @@ test('owner enrollment checks wallet even when JSON payload is malformed',async(
  assert.equal(result.status,403);
  assert.equal(result.error,'owner_verification_required');
 });
+
+test('login challenge rotation is scoped to alias and fingerprint, preserving other devices',async()=>{
+ const p=make(),owner='owner.test@quantaphi.org',admin='admin.test@quantaphi.org';
+ const first=await p.beginAuthentication({alias:owner,fingerprint:'deviceOne'});
+ const otherAlias=await p.beginAuthentication({alias:admin,fingerprint:'deviceOne'});
+ const otherDevice=await p.beginAuthentication({alias:owner,fingerprint:'deviceTwo'});
+ const latest=await p.beginAuthentication({alias:owner,fingerprint:'deviceOne'});
+ assert.notEqual(first.attemptId,latest.attemptId);
+ assert.equal(await p.storage.get('quant-mail:challenge:'+first.attemptId),undefined,
+  'superseded challenge must be deleted, not merely left until expiration');
+ await assert.rejects(p.consume(first.attemptId,'login',owner),/challenge_invalid/);
+ assert.ok(await p.storage.get('quant-mail:challenge:'+otherAlias.attemptId),
+  'second alias must retain its independent login challenge');
+ assert.ok(await p.storage.get('quant-mail:challenge:'+otherDevice.attemptId),
+  'different device fingerprint must retain its independent challenge');
+ assert.equal(await p.storage.get('quant-mail:pending-login:'+owner+':deviceOne'),latest.attemptId);
+ const accepted=await p.consume(latest.attemptId,'login',owner);
+ assert.equal(accepted.fingerprint,'deviceOne');
+ assert.equal(await p.storage.get('quant-mail:pending-login:'+owner+':deviceOne'),undefined,
+  'consumed login must clear its matching pending pointer');
+ await assert.rejects(p.consume(latest.attemptId,'login',owner),/challenge_invalid/);
+ assert.ok(await p.storage.get('quant-mail:challenge:'+otherAlias.attemptId));
+ assert.ok(await p.storage.get('quant-mail:challenge:'+otherDevice.attemptId));
+ const remaining=[...p.storage.map.keys()].filter(x=>x.startsWith('quant-mail:challenge:'));
+ assert.equal(remaining.length,2,'abandoned repeated attempts must not accumulate');
+});
