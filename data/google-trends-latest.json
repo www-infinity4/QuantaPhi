@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-30T16:44:37.713458Z",
+  "checked_at": "2026-10-30T21:10:16.627798Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "konyaspor - galatasaray",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-30T16:30:00Z",
-      "related_news_urls": [
-        "https://www.hurriyet.com.tr/sporarena/konyaya-gitmeyip-istanbulda-kalmisti-maca-saatler-kala-galatasarayda-osimhen-gelismesi-43360660",
-        "https://www.ntvspor.net/futbol/galeri-super-lig-konyaspor-galatasaray-maci-ne-zaman-saat-kacta-hangi-kanalda-muhtemel-11-432129",
-        "https://www.sozcu.com.tr/galatasarayda-amedspor-maci-oncesi-alarm-verildi-p373933"
-      ]
-    },
-    {
-      "query": "dwyane wade statue",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-30T16:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50328871/heat-unveil-updated-dwyane-wade-statue-original-face-was-panned",
-        "https://sports.yahoo.com/articles/seeing-full-scale-154758450.html",
-        "https://www.miamiherald.com/sports/nba/miami-heat/article317843246.html"
-      ]
-    },
-    {
-      "query": "sexiest man alive",
+      "query": "green card",
       "approx_searches": "500+",
-      "published_at": "2026-10-30T16:30:00Z",
+      "published_at": "2026-10-30T20:50:00Z",
       "related_news_urls": [
-        "https://people.com/noah-wyle-is-the-sexiest-man-alive-2026-12189498",
-        "https://www.instyle.com/noah-wyle-kids-sexiest-man-alive-2026-reaction-12195833",
-        "https://www.businessinsider.com/men-who-could-have-been-peoples-sexiest-man-alive-year-2026-10"
+        "https://www.foxnews.com/politics/liberal-court-delivers-immigration-win-trump-judge-warns-floodgates-law-firm-succeeded",
+        "https://news.bloomberglaw.com/litigation/diversity-immigrant-visa-lottery-can-remain-paused-as-us-appeals",
+        "https://africa.businessinsider.com/local/lifestyle/us-court-blocks-reopening-of-55000-visa-green-card-lottery-leaving-african-applicants/htswsw6"
       ]
     },
     {
-      "query": "weather phoenix",
+      "query": "pat mcafee college gameday backlash",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T20:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/former-espn-star-michelle-beadle-135910834.html",
+        "https://people.com/pat-mcafee-reportedly-encouraged-to-wear-bulletproof-vest-after-charlie-kirk-shooting-12198857",
+        "https://www.indystar.com/story/sports/nfl/colts/2026/10/28/pat-mcafees-uncomfortable-college-gameday-at-utah/92471477007/"
+      ]
+    },
+    {
+      "query": "lille fc",
       "approx_searches": "500+",
-      "published_at": "2026-10-30T16:30:00Z",
+      "published_at": "2026-10-30T20:40:00Z",
       "related_news_urls": [
-        "https://www.azfamily.com/2026/10/30/round-one-rain-storms-arrive-phoenix-area-wet-weekend-ahead/",
-        "https://www.abc15.com/weather/most-accurate-forecast-flood-watch-in-effect-as-storms-roll-through-the-valley-today",
-        "https://www.fox10phoenix.com/weather/arizona-weather-forecast-102926"
+        "https://www.bbc.com/sport/football/live/cmjwe1g8yv5zt",
+        "https://www.getfootballnewsfrance.com/2026/ligue-1-predictions-round-9-lille-host-lens-in-derby-du-nord-liam-roseniors-paris-fc-face-monaco/",
+        "https://www.beinsports.com/en-us/soccer/ligue-1/articles/how-and-where-to-watch-lille-vs-lens-live-on-bein-sports-2026-10-30"
       ]
     },
     {
-      "query": "konyaspor vs galatasaray",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-30T16:20:00Z",
+      "query": "baylor vs ucf prediction",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T20:40:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/soccer/events/konyaspor-vs-galatasaray-oct-30-2026/",
-        "https://www.sportsmole.co.uk/football/konyaspor/preview/konyaspor-vs-galatasaray-prediction-team-news-lineups_607886.html",
-        "https://sportsbook.fanduel.com/soccer/turkish-super-league/konyaspor-v-galatasaray-36242255"
+        "https://www.orlandosentinel.com/2026/10/29/ucf-knights-baylor-bears-tv-info-betting-odds-keys-to-the-game/",
+        "https://sports.yahoo.com/articles/predicting-final-score-baylor-bears-130008629.html",
+        "https://www.on3.com/sites/ucf-sports/news/two-official-visitors-highlight-ucfs-recruit-list-for-space-game-vs-baylor/"
       ]
     },
     {
-      "query": "mv odyssey residential cruise stranded",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-30T16:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/10/28/travel/endless-cruise-suspended-villa-vie-passengers.html",
-        "https://www.businessinsider.com/villa-vie-residences-odyssey-never-ending-cruise-off-26-days-2026-10",
-        "https://www.wsj.com/business/hospitality/they-sold-everything-to-live-on-a-cruise-ship-now-theyre-stuck-in-cambodia-20d98d4f"
-      ]
-    },
-    {
-      "query": "taylor fritz",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-30T16:00:00Z",
-      "related_news_urls": [
-        "https://www.marketwatch.com/story/tennis-star-taylor-fritz-is-selling-his-condo-for-860-000with-sweeping-views-of-miami-2db8d086",
-        "https://sports.yahoo.com/articles/taylor-fritz-miami-condo-comes-112253121.html",
-        "https://www.realtor.com/news/sports/tennis-star-taylor-fritz-miami-condo-for-sale/"
-      ]
-    },
-    {
-      "query": "crime",
-      "approx_searches": "5000+",
-      "published_at": "2026-10-30T15:50:00Z",
-      "related_news_urls": [
-        "https://www.wibw.com/2026/10/29/wish-we-could-have-got-it-17-victims-crime-spree-that-left-three-stabbed-topeka/",
-        "https://jcpost.com/posts/180f9f8a-a61e-4ee4-801b-53dc56d3c008",
-        "https://www.ksnt.com/news/crime/17-victims-tied-to-central-topeka-crime-spree-investigation-arrest-made/"
-      ]
-    },
-    {
-      "query": "fernando mendoza indiana football departure impact",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-30T15:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/ex-boyfriend-perfect-fernando-mendoza-142406723.html",
-        "https://www.indystar.com/story/sports/college/indiana/2026/10/30/indiana-football-tobi-osunsanmi-sacks-defense-ranks-fernando-mendoza-impact-transfers/92500729007/",
-        "https://www.thedailyhoosier.com/hes-so-explosive-iu-footballs-unstoppable-defensive-force-tobi-osunsanmi/"
-      ]
-    },
-    {
-      "query": "arthur fils",
+      "query": "is jaylen brown playing tonight",
       "approx_searches": "500+",
-      "published_at": "2026-10-30T15:50:00Z",
+      "published_at": "2026-10-30T20:30:00Z",
       "related_news_urls": [
-        "https://www.lequipe.fr/Tennis/bale/epreuve-simple-messieurs/annee-2026/match-direct/taylor-fritz-arthur-fils-live/714412",
-        "https://www.sudouest.fr/sport/tennis/tennis-arthur-fils-abandonne-a-vienne-grosse-inquietude-avant-deux-grands-rendez-vous-a-paris-et-au-masters-a-turin-31307258.php",
-        "https://www.lalsace.fr/sport/2026/10/29/sous-pression-plus-que-jamais-en-course-pour-les-masters-le-francais-arthur-fils-s-impose-sur-un-fil-aux-swiss-indoors-de-bale"
+        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-injury-report-jaylen-brown-sixers-vs-knicks-nba-cup/762792/",
+        "https://www.libertyballers.com/76ers-injury-report/100341/jaylen-brown-questionable-lebron-embiid-not-listed-on-injury-report-for-sixers-knicks-cup-matchup",
+        "https://sports.yahoo.com/articles/76ers-concerning-jaylen-brown-injury-004112564.html"
+      ]
+    },
+    {
+      "query": "rick ross miami battery case",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T20:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/oct/30/rick-ross-felony-charge-dropped-domestic-violence",
+        "https://www.tmz.com/2026/10/30/rick-ross-felony-battery-charge-dropped/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/rick-ross-faces-arraignment-domestic-160713444.html"
+      ]
+    },
+    {
+      "query": "the traitors",
+      "approx_searches": "500+",
+      "published_at": "2026-10-30T20:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/live/2026/oct/30/the-celebrity-traitors-finale-live",
+        "https://www.telegraph.co.uk/tv/2026/10/30/celebrity-traitors-final-2026/",
+        "https://www.bbc.com/news/live/cqrmyx1p8nzmt"
+      ]
+    },
+    {
+      "query": "brooklyn",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-30T20:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcnewyork.com/brooklyn/body-garbage-bag-canarsie/6565282/",
+        "https://abc7ny.com/post/man-found-dead-inside-garbage-bag-canarsie-brooklyn/20000167/",
+        "https://www.audacy.com/1010wins/news/local/body-found-lying-on-brooklyn-street"
+      ]
+    },
+    {
+      "query": "fincen minnesota suspicious wire payments",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-30T20:20:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/politics/treasury-flags-8b-suspicious-foreign-directed-transfers-us-money-services-firms",
+        "https://www.yahoo.com/news/us/articles/treasury-flags-8b-suspicious-foreign-183154147.html",
+        "https://www.foxnews.com/video/6407671870112"
+      ]
+    },
+    {
+      "query": "joe minoso",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-30T20:20:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1299149/chicago-fire-joe-minoso-leaving-cruz-exit-interview-exclusive/",
+        "https://www.wkyc.com/article/entertainment/television/chicago-fire-300-episodes-taylor-kinney-miranda-rae-mayo-mike-polk-junior-nbc/95-31a44eb9-7329-483f-92a6-95b5aa8000ca",
+        "https://www.yahoo.com/entertainment/tv/articles/first-look-joe-mi-oso-020715755.html"
       ]
     }
   ]
