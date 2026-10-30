@@ -69,3 +69,9 @@ assert.match(deck,/show\(chosen\)/);
 
 assert.match(deck,/phiStoryWriter:\['Story Writer','Write it\. Illustrate it\. Make it yours\.','\/apps\/icons\/story-writer\.svg'\]/);
 assert.doesNotMatch(deck,/phiStoryWriter:[^\n]*phi-scholastic-reader\.webp/);
+
+const mobile=fs.readFileSync('home-mobile-cards-first.css','utf8');
+assert.match(html,/home-mobile-cards-first\.css\?v=20261030-unobstructed1/);
+assert.match(mobile,/body\.oracle-quanta \.search\{[\s\S]*?position:relative!important;top:auto!important/);
+assert.match(mobile,/body\.oracle-quanta \.ba-launcher\{[\s\S]*?width:48px!important/);
+assert.match(mobile,/bottom:calc\(8px \+ env\(safe-area-inset-bottom\)\)!important/);
