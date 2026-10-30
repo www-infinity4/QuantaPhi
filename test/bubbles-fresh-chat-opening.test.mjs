@@ -390,3 +390,49 @@ test('explicit New chat requires confirmation before discarding History-off conv
  assert.equal(approved.thread,'chat_next');
  assert.equal(approved.clears,1);
 });
+
+test('Android RecordB, live mic and speech block History switch, New chat and native reopen',async()=>{
+ const openStart=ui.indexOf('async function openConversation(id){');
+ const freshStart=ui.indexOf('async function startConversation(',openStart);
+ const freshEnd=ui.indexOf("newConversation.addEventListener('click'",freshStart);
+ const nativeStart=ui.indexOf('startFreshOnReopen:()=>{');
+ const nativeEnd=ui.indexOf('nativeHistorySnapshot:',nativeStart);
+ assert.ok(openStart>0&&freshStart>openStart&&freshEnd>freshStart&&nativeStart>0&&nativeEnd>nativeStart);
+ for(const media of ['nativeRecordingActive','voiceStarting','voiceEnabled','speaking']){
+  let opened=0,cleared=0,started=0;
+  const state={
+   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+   nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
+   chatsMessage:{textContent:''},keepChat:true,ownerReady:false,
+   threadIndex:[{id:'old',title:'Earlier chat',updated:1},{id:'target',title:'Saved chat',updated:2}],
+   activeThread:'old',messages:[],input:{value:'',focus:()=>{}},
+   noteText:{value:''},workText:{value:''},pendingImage:null,pendingImages:[],
+   readThread:()=>[],saveThread:()=>true,save:()=>true,THREAD_INDEX:'threads',
+   photoInput:{value:''},photoPreview:{hidden:true},sessionStorage:{setItem:()=>{}},
+   TAB_THREAD:'tab',EXPLICIT_THREAD:'explicit',SHARED_MAIN_THREAD:'shared',
+   crypto:{randomUUID:()=> 'test-id'},memoryContext:[],memoryInstructions:[],
+   activeCardEvidence:null,cardWorkspaceInstance:null,
+   conversation:{replaceChildren:()=>{cleared++}},display:()=>{opened++},
+   chatsPanel:{open:true},renderConversationFolders:()=>{},greeted:false,
+   freshThreadId:()=> 'next',status:{textContent:''},nativeOverlay:true
+  };
+  state[media]=true;
+  const open=vm.runInNewContext(ui.slice(openStart,freshStart)+';openConversation',state);
+  assert.equal(await open('target'),false,media+' must block History switch');
+  assert.equal(state.activeThread,'old');
+  assert.equal(cleared,0);
+  const fresh=vm.runInNewContext(ui.slice(freshStart,freshEnd)+';startConversation',state);
+  assert.equal(await fresh({automatic:false}),false,media+' must block New chat');
+  assert.equal(state.activeThread,'old');
+  assert.equal(cleared,0);
+  const native=vm.runInNewContext('({'+ui.slice(nativeStart,nativeEnd)+'}).startFreshOnReopen',{
+   nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+   nativeRecordingActive:media==='nativeRecordingActive',
+   voiceStarting:media==='voiceStarting',voiceEnabled:media==='voiceEnabled',speaking:media==='speaking',
+   keepChat:true,messages:[],input:{value:''},noteText:{value:''},workText:{value:''},
+   pendingImage:null,pendingImages:[],startConversation:()=>{started++}
+  });
+  assert.equal(native(),false,media+' must block native reopen');
+  assert.equal(started,0);
+ }
+});
