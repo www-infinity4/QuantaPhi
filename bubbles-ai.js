@@ -1905,7 +1905,7 @@ async function startConversation({automatic=false}={}){
  // explicit click needs confirmation; an automatic reopen must never erase
  // chat, Notes, or Robot Brain drafts, even if its caller misses a guard.
  const unsentChat=Boolean(input.value.length||pendingImage||pendingImages.length);
- if(automatic&&(unsentChat||noteText.value.length||workText.value.length))return false;
+ if(automatic&&(unsentChat||noteText.value.length||workText.value.length||(!keepChat&&messages.length)))return false;
  if(!automatic&&unsentChat&&!confirm('Start a new chat? Your unsent message and photos will be discarded.'))return false;
  if(keepChat&&messages.length&&!saveThread()){
   chatsMessage.textContent='This conversation could not be saved on this device. Keep it open and free storage before starting a new chat.';
@@ -3908,7 +3908,7 @@ window.QuantaBubbles={
   if(!nativeOverlay)return false;
   if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
   // Android Hide / reopen must preserve an unsent typed message, Notes, work or photos.
-  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length)return false;
+  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length||(!keepChat&&messages.length))return false;
   void startConversation({automatic:true});
   return true;
  },
