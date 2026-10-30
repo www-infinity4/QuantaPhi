@@ -42,7 +42,7 @@ async function lookup(card,query){
  const result={time:Date.now(),rows:rows.slice(0,12)};cache.set(key,result);return result;
 }
 export function mountPremiumCard(card){
- const article=make('article','iqc-card premium-card');article.dataset.sourceId=card.id;article.dataset.sourceName=card.name;article.dataset.sourceReady='true';article.style.setProperty('--premium-accent',card.color);
+ const article=make('article','iqc-card premium-card');const isRestaurant=card.category==='Restaurants';article.classList.toggle('premium-restaurant',isRestaurant);article.dataset.sourceId=card.id;article.dataset.sourceName=card.name;article.dataset.sourceReady='true';article.style.setProperty('--premium-accent',card.color);
  const header=make('header','premium-heading');header.append(make('p','iqc-kind',card.category+' · INFINITY 2026®'),make('h2','',card.name));
  const identity=make('a','premium-origin',new URL(card.official).hostname);identity.href=card.official;identity.target='_blank';identity.rel='noopener noreferrer';header.append(identity);
  const form=make('form','premium-search');const label=make('label','',card.id==='nasa-library'?'Explore the NASA image collection':'Search '+card.name);
@@ -53,7 +53,17 @@ export function mountPremiumCard(card){
  const state=make('p','premium-state','Choose a topic or search the original source.');state.setAttribute('role','status');
  const content=make('div','premium-content'),actions=make('div');
  const disclaimer=make('p','premium-footnote',card.id==='nasa-library'?'NASA collection images and captions. Check the original record for credits and usage guidance.':card.category==='Restaurants'?'Search original restaurant pages. Confirm current offers, dates and eligibility at the restaurant.':card.category==='Auctions'||card.category==='Shopping'?'Original-source search results. Confirm price, availability and sale details on the source page.':'Independent QuantaPhi research card · original publisher sources.');
- article.append(header,form,topics,state,content,disclaimer,actions);
+ if(isRestaurant){
+  // The verified publisher image is the leading card artwork. Research controls
+  // remain accessible, but do not push the promotion below the first viewport.
+  const links=make('nav','premium-site-actions');links.setAttribute('aria-label',card.name+' official website links');
+  const destinations=card.id==='burger-king'?
+   [['Restaurant','https://www.bk.com/'],['Royal Perks','https://www.bk.com/royalperks'],['Offers','https://www.bk.com/royalperks']]:
+   [['Restaurant',card.official],['Offers',card.official],['Menu',new URL('/',card.official).href]];
+  for(const [label,url] of destinations){const a=make('a','premium-site-action',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';links.append(a)}
+  const tools=make('details','premium-tools');tools.append(make('summary','', 'Search '+card.name+' and browse topics'),form,topics);
+  article.append(header,content,links,tools,state,disclaimer,actions);
+ }else article.append(header,form,topics,state,content,disclaimer,actions);
  mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
  let serial=0,loaded=false;
  async function run(){
@@ -67,13 +77,22 @@ export function mountPremiumCard(card){
    const previous=make('button','','‹ Previous item'),count=make('span'),next=make('button','','Next item ›');previous.type=next.type='button';nav.append(previous,count,next);
    function show(){
     const row=rows[selected];visual.replaceChildren();
-    if(row.image){const image=make('img','premium-photo');image.src=row.image;image.alt=row.title;image.referrerPolicy='no-referrer';image.addEventListener('error',()=>{image.remove()},{once:true});visual.append(image)}
-    visual.append(make('p','premium-credit',row.credit+(row.date?' · '+String(row.date).slice(0,10):'')),make('h3','',row.title),make('p','premium-description',String(row.description||'').replace(/<[^>]*>/g,'').slice(0,600)));
+    if(row.image){
+     const image=make('img','premium-photo');image.src=row.image;image.alt=row.title;image.referrerPolicy='no-referrer';
+     image.addEventListener('error',()=>{image.remove();if(isRestaurant){const fallback=make('span','premium-photo-unavailable','Image unavailable · open the original restaurant page');image.parentNode?.append(fallback)}},{once:true});
+     if(isRestaurant){const hero=make('a','premium-hero-media');hero.href=sourceURL(row.url);hero.target='_blank';hero.rel='noopener noreferrer';hero.setAttribute('aria-label','View '+row.title+' at '+card.name);hero.append(image);visual.append(hero)}
+     else visual.append(image);
+    }else if(isRestaurant){const fallback=make('a','premium-hero-fallback','View the latest '+card.name+' food and offers at the official website');fallback.href=card.official;fallback.target='_blank';fallback.rel='noopener noreferrer';visual.append(fallback)}
+    if(isRestaurant)visual.append(nav);
+    const description=String(row.description||'').replace(/<[^>]*>/g,'').trim();
+    visual.append(make('p','premium-credit',row.credit+(row.date?' · '+String(row.date).slice(0,10):'')),make('h3','',row.title));
+    // Search brokers occasionally return an image fingerprint instead of copy.
+    if(description&&!/^[a-f0-9]{24,}(?:\\s|$)/i.test(description))visual.append(make('p','premium-description',description.slice(0,isRestaurant?170:600)));
     const open=make('a','premium-open','Read at '+card.name+' ↗');open.href=sourceURL(row.url);open.target='_blank';open.rel='noopener noreferrer';visual.append(open);
     const itemActions=make('div');mountCardActions(itemActions,{id:card.id+'-item-'+hash(row.url),name:row.title,category:card.category,url:row.url,route:'/?card='+card.id+'&topic='+encodeURIComponent(query)+'&item='+hash(row.url)});visual.append(itemActions);
     count.textContent=(selected+1)+' / '+rows.length;previous.disabled=selected===0;next.disabled=selected===rows.length-1;
    }
-   previous.addEventListener('click',()=>{selected--;show()});next.addEventListener('click',()=>{selected++;show()});content.append(visual,nav);show();
+   previous.addEventListener('click',()=>{selected--;show()});next.addEventListener('click',()=>{selected++;show()});if(isRestaurant)content.append(visual);else content.append(visual,nav);show();
   }catch{if(request===serial){content.replaceChildren();state.textContent=card.name+' search is unavailable right now. Retry or use the original source above.'}}
   finally{if(request===serial)article.removeAttribute('aria-busy')}
  }
