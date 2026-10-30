@@ -1896,7 +1896,7 @@ async function openConversation(id){
  input.focus();
  return true;
 }
-async function startConversation({automatic=false}={}){
+function startConversation({automatic=false}={}){
  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking){
   chatsMessage.textContent='Current reply or voice request must finish before starting a fresh chat.';
   return false;
@@ -3919,8 +3919,9 @@ window.QuantaBubbles={
   if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking)return false;
   // Android Hide / reopen must preserve an unsent typed message, Notes, work or photos.
   if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length||(!keepChat&&messages.length))return false;
-  void startConversation({automatic:true});
-  return true;
+  // The native Android bridge expects a synchronous boolean. Report the
+  // actual reset result, not a queued Promise that can fail on storage.
+  return startConversation({automatic:true})===true;
  },
  // The native Android foreground service pulls this bounded snapshot from
  // the trusted first-party page. This is crash recovery, not a second chat
