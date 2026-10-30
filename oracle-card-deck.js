@@ -117,7 +117,7 @@ const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
 let viewerTouched=false,selectionVersion=0;
 const ORIGINAL_COVERS={
- phiStoryWriter:['Story Writer','Write it. Illustrate it. Make it yours.','/assets/phi-scholastic-reader.webp'],
+ phiStoryWriter:['Story Writer','Write it. Illustrate it. Make it yours.','/apps/icons/story-writer.svg'],
  phiMediaBuilder:['Image & Video Studio','Create something worth sharing.','/assets/phi-data-analyst.webp'],
  infinityConcepts:['Infinity Concepts','Physics, experiments and connected ideas.','/assets/julius-physics-002.png'],
  groupStoryBuild:['Group Stories','Build the next chapter together.','/assets/phi-scholastic-reader.webp'],
