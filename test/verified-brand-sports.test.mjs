@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from '../verified-brand-sports-catalog.mjs';
-import {VERIFIED_CARD_COUNT,isSafeCardUrl,safeSportsArticle} from '../verified-brand-sports-cards.mjs';
+import {VERIFIED_CARD_COUNT,isSafeCardUrl,safeSportsArticle,isExpiredOneOff} from '../verified-brand-sports-cards.mjs';
 const read=x=>readFileSync(new URL('../'+x,import.meta.url),'utf8');
 test('all curated sources have real image URLs and exactly three source-aware interactions',()=>{
  assert.ok(REQUESTED_PUBLIC_CARDS.length>=25);
@@ -71,4 +71,19 @@ test('Oracle opening selector is initialized before any eager hidden-bank images
  const declaration=deck.indexOf('let openingCursor=null;');
  const firstSourceScan=deck.indexOf('registerSourceCards();');
  assert.ok(declaration>0 && firstSourceScan>declaration,'No temporary-dead-zone crash before chooser listeners mount');
+});
+
+test('past dated previews retire from front-page rotation but archived highlights remain available',()=>{
+ const past=REQUESTED_PUBLIC_CARDS.find(x=>x.id==='packers-lions-2026');
+ assert.ok(isExpiredOneOff(past,Date.parse('2026-10-30T00:00:00Z')));
+ assert.equal(isExpiredOneOff(past,Date.parse('2026-10-25T12:00:00Z')),false);
+ const fox=REQUESTED_PUBLIC_CARDS.find(x=>x.id==='fox-nfl-watch');
+ assert.equal(isExpiredOneOff(fox,Date.parse('2026-10-30T00:00:00Z')),false);
+ assert.equal(fox.official,'https://www.foxsports.com/nfl/scores');
+ assert.ok(fox.actions[0].url.includes('/scores'));
+ assert.ok(!fox.actions.some(a=>/packers.vs.lions/i.test(a.url)));
+ const bk=REQUESTED_PUBLIC_CARDS.find(x=>x.id==='burger-king-chicken-2026');
+ assert.equal(bk.heroImage,true);
+ assert.match(bk.visual,/Burger-King-Expands-Its-Iconic-Original-Chicken-Sandwich-Lineup/);
+ assert.ok(bk.photoAsOf.includes('2026'));
 });
