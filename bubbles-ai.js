@@ -1845,7 +1845,7 @@ async function refreshConversationFolders(){
  renderConversationFolders();
 }
 async function openConversation(id){
- if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length){
+ if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking){
   chatsMessage.textContent='Finish the current reply before changing conversations.';
   return false;
  }
@@ -1872,7 +1872,7 @@ async function openConversation(id){
  }
  // Cloud History may take seconds. A reply, new typing or photo added while
  // waiting invalidates the earlier switch decision; do not clear new work.
- if(activeThread!==previousThread||busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||
+ if(activeThread!==previousThread||busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking||
     input.value!==previousDraft||pendingImage!==previousPhoto||
     pendingImages.length!==previousPhotos.length||pendingImages.some((p,i)=>p!==previousPhotos[i])||
     messages.length!==previousMessages.length||messages.some((m,i)=>m!==previousMessages[i])){
@@ -1897,7 +1897,7 @@ async function openConversation(id){
  return true;
 }
 async function startConversation({automatic=false}={}){
- if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length){
+ if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking){
   chatsMessage.textContent='Current reply or voice request must finish before starting a fresh chat.';
   return false;
  }
@@ -3916,7 +3916,7 @@ window.QuantaBubbles={
  // Begin another visually empty chat only after a real owner reopening.
  startFreshOnReopen:()=>{
   if(!nativeOverlay)return false;
-  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
+  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking)return false;
   // Android Hide / reopen must preserve an unsent typed message, Notes, work or photos.
   if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length||(!keepChat&&messages.length))return false;
   void startConversation({automatic:true});
