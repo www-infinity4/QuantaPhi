@@ -11,7 +11,7 @@ const link=(label,url,klass='')=>{
  const a=make('a',klass,label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;
 };
 export const FOX_CHANNELS=Object.freeze([
- {key:'world-series',title:'FOX · World Series',kind:'MLB · GAME 5',url:FOX_WATCH_URL,copy:'Brewers at Rays · tonight at 7 PM Central on FOX / FOX One.'},
+ {key:'world-series',title:'FOX · World Series',kind:'MLB · OFFICIAL POSTSEASON',url:FOX_WATCH_URL,copy:'World Series coverage and licensed viewing at FOX. Verify current series status through the official MLB Game Center.'},
  {key:'fox-one',title:'FOX One · Live TV',kind:'LIVE TV · FOX',url:FOX_LIVE_URL,copy:'Sports, news and programming with FOX One or eligible provider sign-in.'},
  {key:'fox-sports',title:'FOX Sports',kind:'SPORTS · MLB',url:FOX_SPORTS_URL,copy:'FOX Sports game coverage, updates and highlights.'},
  {key:'fox-news',title:'FOX News',kind:'NEWS · LIVE CHANNEL',url:FOX_NEWS_URL,copy:'FOX News live TV on FOX One, subject to provider access.'}
@@ -38,7 +38,7 @@ function applyMatch(view,game){
  view.score.textContent=scoreText(game);
  view.score.setAttribute('aria-label','Milwaukee Brewers '+(game.away??'unavailable')+', Tampa Bay Rays '+(game.home??'unavailable'));
  const live=game.status==='live',final=game.status==='final';
- view.status.textContent=live?'● LIVE'+(game.inning?' · '+game.inning:''):final?'FINAL':game.status==='pregame'?'PREGAME · 7:00 PM CENTRAL':'MLB status: '+game.detail;
+ view.status.textContent=live?'● LIVE'+(game.inning?' · '+game.inning:''):final?'FINAL':game.status==='pregame'?'SCHEDULED · CHECK MLB GAME CENTER':'MLB status: '+game.detail;
  view.status.dataset.state=game.status;
  view.stamp.textContent=(game.stale?'Last verified':'Verified')+' MLB score · '+(game.fetchedAt?new Date(game.fetchedAt).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}):'pending');
 }
@@ -49,7 +49,7 @@ export function mountFoxViewer(root,{compact=false,channel='world-series'}={}){
  const header=make('header','fit-header');
  header.append(make('span','fit-kicker','INFINITY TV · FOX CHANNELS · INDEPENDENT VIEWER'),
   make('h1','',initial.title),
-  make('p','fit-copy','2026 World Series Game 5 · tonight at 7 PM Central. Live game scores from MLB. The FOX broadcast requires FOX One or a participating TV provider.'));
+  make('p','fit-copy','World Series coverage with game status fetched from MLB. Live FOX video requires FOX One or an eligible provider; this independent card never substitutes a stale scheduled game for a live broadcast.'));
  const match=createMatch();
  const actions=make('div','fit-actions');
  const watch=link('▶ Open '+initial.title+' at FOX',initial.url,'fit-btn fit-primary');
