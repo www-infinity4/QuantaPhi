@@ -100,7 +100,7 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Denali original source','https://www.gmc.com/trucks/sierra/1500/denali'],
   ['Compare GMC trucks','https://www.gmc.com/trucks'],
   ['Inventory','https://www.gmc.com/view-inventory']
- ), 'https://www.gmc.com/content/dam/gmc/na/us/english/index/vehicles/2026/trucks/sierra-ld/denali/exterior/my26-sierra-1500-denali-exterior-unique-1920x960-26PGSRLD99012.jpg?imwidth=1920'),
+ ), 'https://www.gmc.com/content/dam/gmc/na/us/english/index/01-images/sept2025/2026-gmc-sierra-1500-denali-downpour-metallic-1000x563.png?imwidth=1200'),
  entry('carhartt-shop','Carhartt · workwear','retail','Clothing','Browse actual workwear and original product photographs at Carhartt.','https://www.carhartt.com/',actions(
   ['Shop workwear','https://www.carhartt.com/'],
   ['New arrivals','https://www.carhartt.com/'],
