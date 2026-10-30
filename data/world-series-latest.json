@@ -1,24 +1,46 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-30T09:36:41.518185Z",
+  "checked_at": "2026-10-30T16:32:08.166155Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 12
+      "articles_selected": 9
     },
     {
       "publisher": "CBS Sports",
       "url": "https://www.cbssports.com/partners/feeds/rss/mlb_news",
-      "articles_selected": 34
+      "articles_selected": 30
     }
   ],
   "articles": [
     {
-      "title": "Presenting the 2026 All-Postseason Team",
+      "title": "Milwaukee Public Schools close for Brewers' championship parade",
+      "url": "https://www.mlb.com/news/milwaukee-public-schools-to-close-for-brewers-championship-parade",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-30T15:00:00Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "LIVE coverage of Brewers World Series championship parade",
+      "url": "https://www.mlb.com/brewers/news/brewers-2026-world-series-championship-parade",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-30T14:14:53Z",
+      "summary": "",
+      "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Who made this year's All-Postseason Team?",
       "url": "https://www.mlb.com/news/2026-mlb-all-postseason-team",
       "publisher": "MLB.com",
       "published_at": "2026-10-30T02:44:28Z",
@@ -49,17 +71,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/6d7ae3fc-6aa4-4651-8868-9a726431fdd8/parade-getty.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Milwaukee Public Schools to close for Brewers' championship parade",
-      "url": "https://www.mlb.com/news/milwaukee-public-schools-to-close-for-brewers-championship-parade",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T17:36:28Z",
-      "summary": "",
-      "author": "Max Ralph",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "Huge year for Contreras brothers ends with World Series embrace",
@@ -148,50 +159,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/6958a18f-6d37-42d3-bd6c-b7917c5cd624/brewers.jpg",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "A closer look at just how dominant the Brewers were this October",
-      "url": "https://www.mlb.com/news/key-stats-from-brewers-2026-world-series-win",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T08:26:19Z",
-      "summary": "",
-      "author": "Sarah Langs",
-      "image_url": "",
-      "kind": "Analysis",
-      "image_credit": ""
-    },
-    {
-      "title": "After dream season, Rays' World Series wishes crash back down to earth",
-      "url": "https://www.mlb.com/news/rays-lose-2026-world-series-to-brewers",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T07:24:00Z",
-      "summary": "",
-      "author": "Adam Berry",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "One of the best postseason performances ever? Ashby just did it",
-      "url": "https://www.mlb.com/news/aaron-ashby-delivers-historic-playoff-run-to-aid-brewers-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T07:17:38Z",
-      "summary": "",
-      "author": "Bryan Hoch",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "'How awesome is this?' Pratt sets World Series rookie record to help Crew to 1st title",
-      "url": "https://www.mlb.com/news/cooper-pratt-world-series-rookie-record-six-straight-hits",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T06:58:00Z",
-      "summary": "",
-      "author": "Anthony DiComo",
-      "image_url": "",
-      "kind": "Analysis",
-      "image_credit": ""
     },
     {
       "title": "Mighty Brewers prove they're an unbeatable crew, capture first World Series!",
@@ -344,6 +311,39 @@
       "summary": "Jacob Misiorowski leads all action on player props for World Series Game 5 on Wednesday",
       "author": "Matt Severance",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/af71a311-93bf-4540-86d6-6d52ed0e2f29/jacob-misiorowski-milwaukee-brewers-imagn-images.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Yankees legend Jorge Posada reveals rift with team: 'I don't feel welcome when I go there'",
+      "url": "https://www.cbssports.com/mlb/news/yankees-legend-jorge-posada-rift-with-team-dont-feel-welcome/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T16:37:21Z",
+      "summary": "The Yankees' stalwart catcher during the Joe Torre dynasty years won four World Series rings in New York",
+      "author": "Dayn Perry",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/c1aa6667-c427-452a-84f4-f31a1ca26ae9/jorge-posada-getty.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Jacob Misiorowski's moment? MLB's most electric starter can pitch the Brewers to their first title",
+      "url": "https://www.cbssports.com/mlb/news/jacob-misiorowski-moment-mlb-most-electric-starter-brewers-world-series/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T15:15:43Z",
+      "summary": "Misiorowski has been good but not his usual level of great in the playoffs ... will that change in World Series Game 5?",
+      "author": "Julian McWilliams",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/ef010e72-e146-4436-9c52-bcfac493e930/misiorowski-getty-2.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Rays stay alive vs. Brewers in extra-innings World Series classic; Colts begin NFL trade deadline sale",
+      "url": "https://www.cbssports.com/mlb/news/rays-brewers-world-series-classic-mlb-colts-nfl-trade-deadline-sale/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T12:44:32Z",
+      "summary": "Plus the Top 100 And 1 college basketball teams for the 2026-27 season",
+      "author": "Carter Bahns",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/8f773b61-3ae0-40e5-9e7e-8f3e6e71bdd3/gettyimages-2301840807-1.jpg",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
