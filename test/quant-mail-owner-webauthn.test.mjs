@@ -85,7 +85,8 @@ test('owner wallet and same-origin post are mandatory for passkey registration',
 test('owner signup rejects linked device pairing token in lieu of original wallet',async()=>{
  const r=await json(await handleOwnerPasskeyRequest(request('/register/begin',{alias:'owner.test@quantaphi.org'},{
  token:'Bearer bc_'+'A'.repeat(32)}),env,ownerAuth));
- assert.equal(r.status,401);
+ assert.equal(r.status,403);
+ assert.equal(r.error,'owner_verification_required');
 });
 test('successful verified login sets HttpOnly Secure SameSite Strict cookie, never JS session token',async()=>{
  const res=await handleOwnerPasskeyRequest(request('/login/finish',{
