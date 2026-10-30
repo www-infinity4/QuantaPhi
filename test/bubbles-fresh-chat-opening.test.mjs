@@ -80,14 +80,21 @@ test('automatic reopened chat preserves old turns but does not create empty clou
   memoryContext:[1],memoryInstructions:['old'],greeted:true,activeCardEvidence:{id:1},
   cardWorkspaceInstance:null,
   conversation:{replaceChildren:()=>{ctx.cleared=true}},
-  input:{value:'old unsent message',focus:()=>{}},ownerReady:true,
+  input:{value:'old unsent message',focus:()=>{}},noteText:{value:''},workText:{value:''},ownerReady:true,
   conversationApi:async(...args)=>cloud.push(args),renderConversationFolders:()=>{},
   chatsPanel:{open:true},status:{textContent:''},nativeOverlay:true,
   cleared:false
  };
  const start=vm.runInNewContext(ui.slice(a,b)+'; startConversation',ctx);
+ const protectedResult=await start({automatic:true});
+ assert.equal(protectedResult,false,'automatic reopen must not erase unsent text/photos');
+ assert.deepEqual(saved,[]);
+ assert.equal(ctx.activeThread,'chat_previous');
+ assert.equal(ctx.input.value,'old unsent message');
+ assert.equal(ctx.pendingImages.length,1);
+ ctx.input.value='';ctx.pendingImage=null;ctx.pendingImages=[];
  const result=await start({automatic:true});
- assert.equal(result,true);
+ assert.equal(result,true,'an empty reopened chat may start fresh');
  assert.deepEqual(saved,['chat_previous']);
  assert.equal(ctx.activeThread,'chat_fresh_00001');
  assert.equal(ctx.pendingImage,null);
