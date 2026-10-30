@@ -157,3 +157,33 @@ test('direct Durable Object administrator authentication fails closed without tr
   credential:{id:'unregisteredcredential',type:'public-key',response:{}}}),/admin_role_verification_required/);
  assert.ok(await p.storage.get('quant-mail:challenge:'+b.attemptId));
 });
+
+test('one passkey slot per verified owner email; each address has a distinct account credential',async()=>{
+ const p=make();
+ const first=await p.beginRegistration({subject:walletSubject,alias:'kris@quantaphi.org'});
+ const second=await p.beginRegistration({subject:walletSubject,alias:'administrator@quantaphi.org'});
+ assert.notEqual(Buffer.from(first.publicKey.user.id).toString('hex'),Buffer.from(second.publicKey.user.id).toString('hex'));
+ assert.equal(first.publicKey.user.name,'kris@quantaphi.org');
+ assert.equal(second.publicKey.user.name,'administrator@quantaphi.org');
+ const current=await p.load();
+ current.subject=walletSubject;
+ current.credentials=[
+  {id:'Y3JlZDE',alias:'kris@quantaphi.org',publicKey:'YQ',counter:0,transports:[]},
+  {id:'Y3JlZDI',alias:'administrator@quantaphi.org',publicKey:'YQ',counter:0,transports:[]}
+ ];
+ await p.storage.put('quant-mail:owner-passkeys',current);
+ await assert.rejects(p.beginRegistration({subject:walletSubject,alias:'kris@quantaphi.org'}),/alias_passkey_already_registered/);
+ await assert.rejects(p.beginRegistration({subject:walletSubject,alias:'administrator@quantaphi.org'}),/alias_passkey_already_registered/);
+ const one=await p.beginAuthentication({alias:'kris@quantaphi.org',fingerprint:'firstIP'});
+ const two=await p.beginAuthentication({alias:'administrator@quantaphi.org',fingerprint:'secondIP'});
+ assert.deepEqual(one.publicKey.allowCredentials.map(c=>c.id),['Y3JlZDE']);
+ assert.deepEqual(two.publicKey.allowCredentials.map(c=>c.id),['Y3JlZDI']);
+ await assert.rejects(p.finishAuthentication({alias:'kris@quantaphi.org',attemptId:one.attemptId,
+  credential:{type:'public-key',id:'Y3JlZDI',response:{}}}),/passkey_unrecognized/);
+});
+test('private Android passkey form never preselects owner email and public client accepts typed email',()=>{
+ const client=readFileSync(new URL('../quant-mail-passkeys.mjs',import.meta.url),'utf8');
+ assert.doesNotMatch(client,/OWNER_MAIL_ALIASES|kris@quantaphi\.org|administrator@quantaphi\.org/);
+ assert.match(client,/aliasInput.value=''/);
+ assert.match(client,/alias_passkey_already_registered/);
+});
