@@ -72,7 +72,7 @@ test('APK loads the current live website, not an HTML build pinned to the APK ve
 });
 
 
-async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null}={}){
+async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null,saveFails=false}={}){
  const begin=site.indexOf('let siteVersionChecking=false,lastSiteVersionCheck=0;');
  const end=site.indexOf('window.QuantaBubbles={',begin);
  assert.ok(begin>0&&end>begin,'actual first-party updater is present');
@@ -89,7 +89,7 @@ async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',pho
   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
   input,noteText,workText,pendingImage:photo?{data:'unsent-photo'}:null,
   pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
-  keepChat:true,saveThread:()=>events.push('saved'),
+  keepChat:true,saveThread:()=>{events.push('saved');return !saveFails;},
   sessionStorage:{setItem:(key,value)=>events.push('marker:'+key+':'+value)},
   UPDATE_RELOAD_THREAD:'site-update-reload'
  });
@@ -120,6 +120,15 @@ test('revision updater still reloads safely once composer and photos are empty',
  const {result,events}=await simulateSiteRevisionCheck();
  assert.equal(result,true);
  assert.deepEqual(events,['saved','marker:site-update-reload:1','reload']);
+});
+
+test('revision updater keeps the active conversation when local History persistence fails',async()=>{
+ const {result,events}=await simulateSiteRevisionCheck({saveFails:true});
+ assert.equal(result,false,'failed local History save must defer revision reload');
+ assert.deepEqual(events,['saved'],'failed save must not mark the tab or reload');
+ const recovered=await simulateSiteRevisionCheck();
+ assert.equal(recovered.result,true,'successful retry can update once storage works');
+ assert.deepEqual(recovered.events,['saved','marker:site-update-reload:1','reload']);
 });
 
 test('Android Hide/reopen cannot start a new conversation over any unsent draft',()=>{
