@@ -9,6 +9,8 @@ on:
       - 'quant-mail-passkeys.mjs'
       - 'test/quant-mail-preview.test.mjs'
       - 'test/quant-mail-owner-webauthn.test.mjs'
+      - 'test/quant-mail-live-smoke.test.mjs'
+      - 'scripts/verify-quant-mail-passkey-live.mjs'
       - '.github/workflows/quant-mail-owner-webauthn.yml'
       - '.github/workflows/deploy-bubbles-connections.yml'
   push:
@@ -21,6 +23,8 @@ on:
       - 'quant-mail-passkeys.mjs'
       - 'test/quant-mail-preview.test.mjs'
       - 'test/quant-mail-owner-webauthn.test.mjs'
+      - 'test/quant-mail-live-smoke.test.mjs'
+      - 'scripts/verify-quant-mail-passkey-live.mjs'
       - '.github/workflows/quant-mail-owner-webauthn.yml'
 permissions:
   contents: read
@@ -44,8 +48,9 @@ jobs:
           node --check workers/unified-wallet/worker.js
           node --check workers/quantaphi-site/worker.js
           node --check quant-mail-passkeys.mjs
+          node --check scripts/verify-quant-mail-passkey-live.mjs
       - name: Prove negative-path owner, origin, replay and cookie security
-        run: node --test test/quant-mail-owner-webauthn.test.mjs test/quant-mail-preview.test.mjs
+        run: node --test test/quant-mail-owner-webauthn.test.mjs test/quant-mail-preview.test.mjs test/quant-mail-live-smoke.test.mjs
       - name: Compile Cloudflare Worker with real WebAuthn verification library
         run: |
           npx --yes wrangler@4 deploy --config workers/bubbles-connections/wrangler.toml --dry-run --outdir /tmp/quant-mail-owner-passkeys
