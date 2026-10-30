@@ -25,6 +25,13 @@ test('GMC and Burger King hero show documented original-source product imagery',
  assert.match(find('burger-king-chicken-2026').visual,/^https:\/\/cdn\.prod\.website-files\.com\//);
  assert.ok(find('gmc-denali-2026').actions.some(action=>action.url.startsWith('https://www.gmc.com')));
 });
+test('McDonald's hero uses its approved menu-item photo and real official app links',()=>{
+ const card=find('mcdonalds-big-mac-deals');
+ assert.ok(card);
+ assert.match(card.visual,/^https:\\/\\/corporate\\.mcdonalds\\.com\\/content\\/dam\\//);
+ assert.ok(card.actions.some(x=>x.url==='https://www.mcdonalds.com/us/en-us/deals.html'));
+ assert.ok(card.actions.some(x=>x.url==='https://www.mcdonalds.com/us/en-us/full-menu.html'));
+});
 test('Radio Clubhouse sorts latest activity first and returns newest card to front on fetch',()=>{
  const script=local('radio-clubhouse.js');
  assert.match(script,/sort\(\(a,b\)=>/);
