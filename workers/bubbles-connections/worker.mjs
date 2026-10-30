@@ -14,7 +14,7 @@ export class UserConnections extends DurableObject {
   constructor(ctx,env) {
     super(ctx,env);
     this.pairing=new ConnectorPairing(ctx.storage);
-    this.ownerPasskeys=new OwnerPasskeys(ctx.storage);
+    this.ownerPasskeys=new OwnerPasskeys(ctx.storage,{allowedAliases:env.OWNER_EMAIL_ALIAS_REGISTRY});
     const adapters = {};
     const cloudflareScopes=resolveCloudflareScopeConfig(env);
     if (env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET) adapters.google = googleAdapter({clientId:env.GOOGLE_CLIENT_ID,clientSecret:env.GOOGLE_CLIENT_SECRET,redirectUri:'https://quantaphi.org/api/bubbles/connections/google/callback'});
