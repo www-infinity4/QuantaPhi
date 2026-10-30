@@ -206,3 +206,37 @@ test('new chat preserves the active session when the new History index cannot be
  assert.deepEqual(ctx.threadIndex.map(x=>x.id),['old']);
  assert.match(ctx.chatsMessage.textContent,/History could not be saved/);
 });
+
+test('native recovery reports index persistence failures without mutating History',()=>{
+ const begin=ui.indexOf('restoreNativeHistory:(backup)=>{');
+ const end=ui.indexOf('checkForSiteUpdate,',begin);
+ assert.ok(begin>0&&end>begin,'actual native recovery handler exists');
+ const id='chat_1234567890';
+ const backup=JSON.stringify({thread:id,messages:[
+  {id:'message_12345678',role:'user',text:'Recovered Android turn',at:1000}
+ ]});
+ const run=({existing=false,indexFails=false}={})=>{
+  const writes=[],initial=existing?[{id,title:'Earlier chat',updated:10}]:[];
+  const ctx={
+   nativeOverlay:true,keepChat:true,THREAD_PREFIX:'thread:',THREAD_INDEX:'threads',
+   SHARED_MAIN_THREAD:'bubbles_shared_main_v1',
+   activeThread:'different_chat',messages:[],threadIndex:initial,
+   readThread:()=>[],
+   save:key=>{writes.push(key);return !(indexFails&&key==='threads')},
+   renderConversationFolders:()=>writes.push('render')
+  };
+  const restore=vm.runInNewContext('({'+ui.slice(begin,end)+'}).restoreNativeHistory',ctx);
+  const result=restore(backup);
+  return {result,writes,index:ctx.threadIndex,initial};
+ };
+ for(const existing of [false,true]){
+  const failed=run({existing,indexFails:true});
+  assert.equal(failed.result,false,'failed index write cannot acknowledge Android recovery');
+  assert.deepEqual(failed.writes,['thread:'+id,'threads']);
+  assert.deepEqual(failed.index,failed.initial,'failed write must not mutate History in memory');
+ }
+ const successful=run({indexFails:false});
+ assert.equal(successful.result,true);
+ assert.deepEqual(successful.writes,['thread:'+id,'threads','render']);
+ assert.equal(successful.index.find(x=>x.id===id)?.updated,1000);
+});
