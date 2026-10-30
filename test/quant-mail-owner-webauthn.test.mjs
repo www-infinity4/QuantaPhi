@@ -55,11 +55,11 @@ test('registration rejects mismatched subject, invalid alias and unverified atte
  await assert.rejects(p.finishRegistration({subject:walletSubject,alias:'administrator@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'fakecredential1',response:{}}}),/challenge_invalid/);
 });
 test('login requires real registered passkey and a fresh credential challenge',async()=>{
- const p=make(),b=await p.beginAuthentication({alias:'administrator@quantaphi.org'});
+ const p=make(),b=await p.beginAuthentication({alias:'kris@quantaphi.org'});
  assert.equal(b.publicKey.rpId,'quantaphi.org');
  assert.equal(b.publicKey.userVerification,'required');
  assert.equal(b.attemptId.length,43);
- await assert.rejects(p.finishAuthentication({alias:'administrator@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'unregisteredcredential',response:{}}}),/passkey_unrecognized/);
+ await assert.rejects(p.finishAuthentication({alias:'kris@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'unregisteredcredential',response:{}}}),/passkey_unrecognized/);
  assert.equal(await p.storage.get('quant-mail:challenge:'+b.attemptId),undefined);
 });
 test('public status must fail closed until explicitly enabled',async()=>{
