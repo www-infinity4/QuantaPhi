@@ -196,3 +196,20 @@
 #radioClubhouse [hidden] { display: none !important; }
 #radioClubhouse .rc-topic-body { margin-top: 10px; }
 #radioClubhouse .rc-actions button { min-height: 44px; border-radius: 999px; }
+
+
+/* Align Radio Clubhouse with clean Infinity product cards: white, readable blue,
+   no decorative orbital watermark competing with discussion content. */
+#radioClubhouse{--oo-ink:#174d6e;--oo-line:#c8dbe8}
+#radioClubhouse .rc-shell{border-radius:22px;box-shadow:0 12px 28px #153c5614}
+#radioClubhouse .rc-shell:before{display:none}
+#radioClubhouse .rc-header{align-items:center}
+#radioClubhouse .rc-title{color:#174d6e}
+#radioClubhouse .rc-topic:first-child{border:1px solid #b9d4e8;background:#fff;box-shadow:0 6px 22px #153c5614}
+#radioClubhouse .rc-topic h3{font-size:clamp(18px,4.6vw,24px)}
+#radioClubhouse .rc-actions .rc-reader{background:#07699e;border-color:#07699e;color:#fff}
+#radioClubhouse .rc-refresh{background:#086d9f;border-color:#086d9f;color:#fff}
+#radioClubhouse .rc-archive-toggle{background:#fff;border-color:#b8cddb;color:#174d6e}
+#radioClubhouse .rc-actions .rc-button{border-radius:12px}
+#radioClubhouse .rc-archive-toggle[hidden]{display:none!important}
+@media(max-width:420px){#radioClubhouse .rc-header .rc-refresh{flex:1 1 45%;padding:9px 10px}}
