@@ -73,7 +73,7 @@ export function mountPremiumCard(card){
    const result=await lookup(card,query);if(request!==serial)return;
    content.replaceChildren();const rows=result.rows;const requested=new URLSearchParams(location.search).get('item');let selected=Math.max(0,rows.findIndex(row=>hash(row.url)===requested));
    state.textContent=rows.length+' original-source results · checked '+new Date(result.time).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});
-   if(!rows.length){state.textContent='No verified source results returned. Try another topic or use the original source above.';return}
+   if(!rows.length){if(siteActions&&isRestaurant)article.insertBefore(siteActions,article.querySelector('.premium-tools'));state.textContent='No verified source results returned. Try another topic or use the original source above.';return}
    const visual=make('section','premium-selected');const nav=make('div','premium-result-nav');
    const previous=make('button','','‹ Previous item'),count=make('span'),next=make('button','','Next item ›');previous.type=next.type='button';nav.append(previous,count,next);
    function show(){
@@ -88,13 +88,13 @@ export function mountPremiumCard(card){
     const description=String(row.description||'').replace(/<[^>]*>/g,'').trim();
     visual.append(make('p','premium-credit',row.credit+(row.date?' · '+String(row.date).slice(0,10):'')),make('h3','',row.title));
     // Search brokers occasionally return an image fingerprint instead of copy.
-    if(description&&!/^[a-f0-9]{24,}(?:\\s|$)/i.test(description))visual.append(make('p','premium-description',description.slice(0,isRestaurant?170:600)));
+    if(description&&!/^[a-f0-9]{24,}(?:\s|$)/i.test(description))visual.append(make('p','premium-description',description.slice(0,isRestaurant?170:600)));
     const open=make('a','premium-open','Read at '+card.name+' ↗');open.href=sourceURL(row.url);open.target='_blank';open.rel='noopener noreferrer';visual.append(open);
     const itemActions=make('div');mountCardActions(itemActions,{id:card.id+'-item-'+hash(row.url),name:row.title,category:card.category,url:row.url,route:'/?card='+card.id+'&topic='+encodeURIComponent(query)+'&item='+hash(row.url)});visual.append(itemActions);
     count.textContent=(selected+1)+' / '+rows.length;previous.disabled=selected===0;next.disabled=selected===rows.length-1;
    }
    previous.addEventListener('click',()=>{selected--;show()});next.addEventListener('click',()=>{selected++;show()});if(isRestaurant)content.append(visual);else content.append(visual,nav);show();
-  }catch{if(request===serial){content.replaceChildren();state.textContent=card.name+' search is unavailable right now. Retry or use the original source above.'}}
+  }catch{if(request===serial){content.replaceChildren();if(siteActions&&isRestaurant)article.insertBefore(siteActions,article.querySelector('.premium-tools'));state.textContent=card.name+' search is unavailable right now. Retry or use the original source above.'}}
   finally{if(request===serial)article.removeAttribute('aria-busy')}
  }
  article.addEventListener('oracle:activate',()=>{if(!loaded)void run()});
