@@ -86,7 +86,7 @@ async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',pho
    if(lateWorkDraft!==null)workText.value=lateWorkDraft;
    return {ok:true,text:async()=>'<script src="/bubbles-ai.js?v=next-revision"></script>'};
   },
-  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   speaking,voiceStarting,voiceEnabled,nativeRecordingActive,
   input,noteText,workText,pendingImage:photo?{data:'unsent-photo'}:null,
   pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
@@ -149,7 +149,7 @@ test('Android Hide/reopen cannot start a new conversation over any unsent draft'
  const run=({draft='',noteDraft='',workDraft='',photo=false,photos=0}={})=>{
   let started=0;
   const ctx={
-   nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+   nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
    keepChat:true,messages:[],
    input:{value:draft},noteText:{value:noteDraft},workText:{value:workDraft},
    pendingImage:photo?{data:'photo'}:null,pendingImages:Array.from({length:photos},()=>({data:'photo'})),
@@ -173,7 +173,7 @@ async function simulateNewChat({draft='',noteDraft='',workDraft='',photo=false,p
  assert.ok(begin>0&&end>begin,'actual first-party New chat handler exists');
  const events=[],input={value:draft,focus:()=>events.push('focus')};
  const scope=vm.createContext({
-  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   input,noteText:{value:noteDraft},workText:{value:workDraft},
   pendingImage:photo?{data:'unsent-photo'}:null,
   pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
