@@ -1,5 +1,6 @@
 import {STATES,HOUSING_LINKS,HOUSING_QUICK_CARD,HOUSING_DRAFT_KEY,HOUSING_SESSION_KEY,normalizeIntake,validateIntake,housingPlan,intakeSummary,serializeHousingDraft,parseHousingDraft,money,stateName} from './disability-housing-core.mjs';
 import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountHousingHelpAround} from './housing-help-cards.mjs';
 const $=id=>document.getElementById(id),form=$('haForm');
 const make=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n;};
 const external=(label,url)=>{const a=make('a','',label+' ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.referrerPolicy='no-referrer';return a;};
@@ -36,6 +37,7 @@ else{
  if(STATES.some(([id])=>id===params.get('state')))initial.state=params.get('state');
  if(Object.keys(initial).length)apply(normalizeIntake(initial));
 }
+const housingHelp=mountHousingHelpAround(document.querySelector('.ha-panel'),{state:read().state,goal:read().goal});
 function showStep(next){
  step=next;
  for(const el of document.querySelectorAll('[data-ha-step]'))el.hidden=Number(el.dataset.haStep)!==step;
@@ -87,7 +89,9 @@ form.addEventListener('submit',event=>{
 $('haBack').addEventListener('click',()=>showStep(1));
 $('haEdit').addEventListener('click',()=>showStep(1));
 form.addEventListener('input',()=>{hasDraft=true;syncGoal();syncIncome();clearTimeout(timer);timer=setTimeout(save,250);});
-form.addEventListener('change',()=>{hasDraft=true;syncGoal();syncIncome();clearTimeout(timer);save();});
+form.addEventListener('change',event=>{hasDraft=true;syncGoal();syncIncome();clearTimeout(timer);save();
+ if(['state','goal'].includes(event.target.name))housingHelp.update({state:read().state,goal:read().goal});
+});
 $('haRemember').addEventListener('change',()=>{
  clearTimeout(timer);
  if($('haRemember').checked)save();
@@ -114,7 +118,7 @@ $('haConfirmClear').addEventListener('click',()=>{
  clearTimeout(timer);hasDraft=false;let removed=true;
  try{sessionStorage.removeItem(HOUSING_SESSION_KEY);}catch{removed=false;}
  try{localStorage.removeItem(HOUSING_DRAFT_KEY);}catch{removed=false;}
- form.reset();$('haRemember').checked=false;$('haRestore').hidden=true;syncGoal();syncIncome();
+ form.reset();$('haRemember').checked=false;$('haRestore').hidden=true;syncGoal();syncIncome();housingHelp.update({state:'',goal:'buy'});
  $('haPrograms').replaceChildren();$('haTasks').replaceChildren();$('haPrintSummary').textContent='';showErrors({});dialog.close();showStep(1);
  status(removed?'Your answers and saved draft have been cleared.':'Answers cleared on screen. Browser storage could not be cleared; remove this site’s browser data.');
 });

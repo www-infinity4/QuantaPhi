@@ -6,10 +6,13 @@ test.use({viewport:{width:390,height:844}});
 test('phone intake: validate, prepare, download, recover and erase without sending answers',async({page})=>{
  const outbound=[];page.on('request',r=>{if(!r.url().startsWith(origin)&&!r.url().startsWith('blob:'))outbound.push(r.url());});
  await page.goto(url);
+ await expect(page.locator('[data-housing-resource]')).toHaveCount(6);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
  await page.getByRole('button',{name:'Continue',exact:true}).click();
  await expect(page.getByText('Choose the state or territory where you want housing.')).toBeVisible();
  await page.locator('#haState').selectOption('IA');await page.locator('#haCity').fill('Lovilia');
+ await page.getByRole('button',{name:'Next help',exact:false}).click();
+ await expect(page.locator('.ha-resource-nav span')).toHaveText('2–2 of 6');
  await page.getByRole('button',{name:'Continue',exact:true}).click();
  await page.locator('#haNext').click();await expect(page.locator('#haIncome')).toHaveAttribute('aria-invalid','true');
  await page.locator('#haBenefits').selectOption('ssdi');await page.locator('#haAge').selectOption('18-61');
@@ -37,8 +40,16 @@ test('repair grants and rental handoffs respond to the visitor instead of guaran
  await page.locator('#haNext').click();await page.locator('#haAge').selectOption('18-61');await page.locator('#haIncomeUnknown').check();
  await page.locator('#haNext').click();await expect(page.locator('[data-program="504"]')).toContainText('Disability alone does not remove');
  await expect(page.locator('#haTasks')).toContainText('renter cannot use it to buy');
- await page.locator('#haEdit').click();await page.getByLabel('Find a rental',{exact:false}).check();
+ await page.locator('#haEdit').click();await page.getByText('Find a rental',{exact:true}).click();
  await page.locator('#haState').selectOption('CA');await page.locator('#haNext').click();await page.locator('#haNext').click();
  await expect(page.locator('[data-program="rental"]')).toBeVisible();await expect(page.locator('#haContact')).toContainText('local housing agency');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+});
+test('Infinity Sieda card names its real provider and service area with working source actions',async({page})=>{
+ await page.goto(origin+'/housing-help.html?resource=sieda');
+ await expect(page.getByRole('heading',{name:'Energy bills & weatherization',exact:true})).toBeVisible();
+ await expect(page.locator('#housingHelpDetail')).toContainText('Sieda Community Action');
+ await expect(page.locator('#housingHelpDetail')).toContainText('Appanoose, Davis, Jefferson');
+ await expect(page.getByRole('link',{name:'Ask Sieda about assistance'})).toHaveAttribute('href','https://www.sieda.org/contact-us/');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
 });

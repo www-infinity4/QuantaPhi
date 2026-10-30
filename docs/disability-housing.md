@@ -14,6 +14,18 @@ There is no underwriting, eligibility determination, credit pull, document uploa
 government submission, promised payment, or guaranteed housing in this feature.
 No diagnosis, SSN, bank account number, or credential field is present.
 
+Six automatically Infinity-branded community help cards flank the intake on
+desktop, with full-width paged cards and visible arrows on phones. The same
+catalog feeds the original homepage switchboard. Providers include bathroom
+accessibility services, USDA repair/purchase loans, Sieda, SCICAP, the Chariton
+Valley housing trust fund, Habitat, and the Community Action network. These are
+unpaid directory listings, not paid sponsorship or provider endorsements.
+Each card credits its provider, displays its actual service area, and tells
+visitors to confirm current funding. Sieda's weatherization county list excludes
+Monroe; SCICAP and Chariton Valley explicitly include Monroe. State and housing
+goal may change resource ordering. Benefit type, income, and other financial
+answers never select paid advertising or leave this guide for ad/Quant ranking.
+
 Answers are kept in the current tab's session storage. Persistent local storage
 requires the unchecked-by-default Save draft control. Unchecking removes that
 saved copy; Clear answers removes both draft keys after an explicit confirmation.

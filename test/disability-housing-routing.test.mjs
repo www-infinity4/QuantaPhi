@@ -11,6 +11,9 @@ test('only the public housing HTML gets same-origin embedding and a network-disa
   assert.match(r.headers.get('Content-Security-Policy'),/form-action 'none'/);
   assert.match(r.headers.get('Content-Security-Policy'),/frame-ancestors 'self'/);
   assert.equal(r.headers.get('Referrer-Policy'),'no-referrer');
+  const help=await gateway.fetch(new Request('https://quantaphi.org/housing-help.html?resource=sieda'),{});
+  assert.equal(help.headers.get('X-Frame-Options'),'SAMEORIGIN');
+  assert.match(help.headers.get('Content-Security-Policy'),/connect-src 'none'/);
   for(const path of ['/bubbles-accounts.html','/wallet-link.html','/disability-housing.html/other']){
    const other=await gateway.fetch(new Request('https://quantaphi.org'+path),{});
    assert.equal(other.headers.get('X-Frame-Options'),'DENY',path);

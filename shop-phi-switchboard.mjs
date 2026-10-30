@@ -3,6 +3,8 @@
  * charge, invented merchant inventory, visitor tracking or private-search upload.
  */
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
+import {housingCompanions,housingResource} from './housing-help-catalog.mjs';
+import {createHousingHelpCard} from './housing-help-cards.mjs';
 
 export const SLOT_COUNT=6;
 const SENSITIVE=/\b(religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy)\b/i;
@@ -150,6 +152,8 @@ if(typeof document!=='undefined'){
   next.addEventListener('click',()=>{visiblePage=Math.min(Math.floor((visibleCards.length-1)/2),visiblePage+1);showPage()});
   const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
   function draw(list,lane){
+   const housing=lane.id==='housing-help';grid.classList.toggle('housing-help-layout',housing);
+   heading.textContent=housing?'INFINITY® · SIX CONNECTIONS TO HOUSING HELP':'SHOPPHI × ADPHI · SIX CONNECTION SWITCHBOARD';
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
    visiblePage=Math.min(visiblePage,Math.max(0,Math.ceil(visible.length/2)-1));
@@ -164,6 +168,9 @@ if(typeof document!=='undefined'){
    grid.hidden=false;heading.hidden=false;
    for(let i=0;i<visible.length;i++){
     const parent=i<3?before:after,c=visible[i];
+    if(housing&&housingResource(c.id)){
+     const card=createHousingHelpCard(c);card.classList.add('shopphi-flank');parent.append(card);continue;
+    }
     const link=document.createElement('a');link.className='shopphi-flank';link.href=c.url;
     const internal=new URL(c.url).hostname===location.hostname;
     link.target=internal?'_self':'_blank';
@@ -198,7 +205,7 @@ if(typeof document!=='undefined'){
    showPage();
    heading.hidden=false;receipt.hidden=false;
    const sponsored=visible.filter(c=>c.type==='sponsored').length;
-   receipt.textContent=visible.length+' related, working card links · '+sponsored+
+   receipt.textContent=housing?'Six Infinity-branded community help cards. Unpaid resources; service areas and current funding must be confirmed with each provider.':visible.length+' related, working card links · '+sponsored+
     ' verified sponsored offers · '+(visible.length-sponsored)+' independent source cards.'+
     (lane.sensitive?' Personalized advertising disabled for this category.':'');
   }
@@ -275,6 +282,11 @@ if(typeof document!=='undefined'){
    if(changed){grid.hidden=false;heading.hidden=true;navigation.hidden=true;receipt.hidden=false;
     before.replaceChildren();after.replaceChildren();}
    const lane=contextFor(active);
+   // Explicit housing help uses fixed public resources. Never send disability,
+   // benefit income, or other intake answers to advertising or Quant services.
+   if(active.id==='disability-housing'){
+    draw(housingCompanions(),{id:'housing-help',sensitive:true});return;
+   }
    if(changed)receipt.textContent='Checking approved Quick Cards and live AdPhi offers…';
    const candidates=await inventory(lane);
    if(revision!==seq)return;
