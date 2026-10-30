@@ -53,7 +53,13 @@ export async function passkeyServerRequest(path,body,{request=fetch,token=null}=
    headers:{...(body?{'Content-Type':'application/json'}:{}),...(token?{Authorization:'Bearer '+token}:{})},
    ...(body?{body:JSON.stringify(body)}:{}),signal:controller.signal
   });
-  if(!response?.ok)throw Error(response?.status===404?'passkey_service_not_ready':'passkey_service_unavailable');
+  if(!response?.ok){
+   const reason=await response.json().catch(()=>null);
+   const known=new Set(['alias_passkey_already_registered','owner_verification_required',
+    'admin_role_verification_required','owner_alias_invalid','passkey_rate_limited']);
+   if(typeof reason?.error==='string'&&known.has(reason.error))throw Error(reason.error);
+   throw Error(response?.status===404?'passkey_service_not_ready':'passkey_service_unavailable');
+  }
   const result=await response.json();
   if(result?.ok!==true)throw Error('passkey_service_unavailable');
   return result;
@@ -82,7 +88,7 @@ export async function runPasskeyCeremony({
  if(!credential)throw Error('passkey_cancelled');
  const finish=await passkeyServerRequest('/'+kind+'/finish',{
   alias:name,attemptId:options.attemptId,credential:safeCredentialJSON(credential)
- },{request,token:kind==='register'?walletToken:null});
+ },{request,token:walletToken});
  // A successful response must report a server-verified credential, not just HTTP 200.
  if(finish.passkeyVerified!==true||finish.alias!==name||finish.rpId!==PASSKEY_RP_ID)
   throw Error('passkey_verification_incomplete');
@@ -129,10 +135,12 @@ export async function mountQuantMailPasskeys(doc=document,root=window){
   announce(kind==='register'?'Preparing your phone passkey…':'Preparing passkey sign-in…');
   try{
    let walletToken=null;
-   if(kind==='register'){
+   // Administrator login needs its existing verified owner wallet as
+   // step-up in addition to WebAuthn. Owner-alias login can remain passwordless.
+   try{
     const {resolveConnectorWalletToken}=await import('/bubbles-connections.mjs?v=20261028-gmail-wallet1');
     walletToken=await resolveConnectorWalletToken(root);
-   }
+   }catch(error){if(kind==='register')throw error;}
    const res=await runPasskeyCeremony({kind,alias:aliasInput.value,
     request:(...args)=>root.fetch(...args),Credential:root.PublicKeyCredential,
     credentials:root.navigator?.credentials,walletToken,
@@ -144,6 +152,9 @@ export async function mountQuantMailPasskeys(doc=document,root=window){
    const reasons={
     verified_wallet_required:'Verify your existing owner wallet before registering a passkey.',
     passkey_alias_not_supported:'Enter a valid owner email address at quantaphi.org.',
+    admin_role_verification_required:'Administrator sign-in requires the verified owner wallet as well as the phone passkey.',
+    owner_verification_required:'Verify the original owner wallet before adding a passkey.',
+    passkey_rate_limited:'Too many passkey attempts. Try again after a short pause.',
     alias_passkey_already_registered:'This address already has a passkey. One passkey per address is allowed.',
     passkey_service_unavailable:'Passkey verification is unavailable. No login was changed.',
     passkey_verification_incomplete:'The server could not verify this passkey.',
