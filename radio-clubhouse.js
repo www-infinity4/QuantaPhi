@@ -109,8 +109,8 @@
   });
   current();
  }
- function render(topics,isLive,message){
-  const selected=deck[position]?.id;deck=topics;deckLive=isLive;position=Math.max(0,topics.findIndex(x=>x.id===selected));next.disabled=topics.length<2;expand.disabled=!topics.length;collection.replaceChildren();
+ function render(topics,isLive,message,focusLatest=false){
+  const selected=deck[position]?.id;deck=topics;deckLive=isLive;position=focusLatest?0:Math.max(0,topics.findIndex(x=>x.id===selected));next.disabled=topics.length<2;expand.disabled=!topics.length;collection.replaceChildren();
   if(!topics.length){
    const empty=add(collection,make('div','rc-empty',message||'No verified Radio Clubhouse discussions are available.'));
    add(empty,make('p','','Use the original forum link or refresh when the feed becomes available.'));
@@ -148,7 +148,10 @@
     archived:raw.archived===true,publishedAt:/^\d{4}-\d{2}-\d{2}$/.test(String(raw.publishedAt||''))?raw.publishedAt:null};
    if(!uniq.has(t.id))uniq.set(t.id,t);
   }
-  return [...uniq.values()].slice(0,8);
+  return [...uniq.values()].sort((a,b)=>{
+   const time=x=>Date.parse(x.updated||x.publishedAt||'')||0;
+   return time(b)-time(a)||Number(b.id)-Number(a.id);
+  }).slice(0,8);
  }
  async function load(){
   if(pending)return;
@@ -184,7 +187,7 @@
    save(SEEN,[...known]);
    live=topics;everLoaded=true;lastChecked=Date.now();
    save(SNAPSHOT,{topics:topics.map(({isNew,...t})=>t),checkedAt:lastChecked});
-   render(topics,true);
+   render(topics,true,undefined,true);
    status.textContent='Latest '+topics.length+' discussion topics from Radio Clubhouse · Checked '+formatDate(new Date(lastChecked).toISOString())+
     ' · Updates checked every 5 minutes.'+(first?' Starting with the current forum topics.':'');
   }catch{
@@ -201,6 +204,7 @@
  }
  refresh.addEventListener('click',load);
  window.addEventListener('online',load);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)void load()});
  load();
  const poll=setInterval(()=>{if(!document.hidden)load()},INTERVAL);
  // Timers are suspended inside the back-forward cache, then resume automatically.
