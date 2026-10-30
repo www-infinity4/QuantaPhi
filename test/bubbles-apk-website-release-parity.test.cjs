@@ -149,6 +149,7 @@ test('Android Hide/reopen cannot start a new conversation over any unsent draft'
   let started=0;
   const ctx={
    nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+   keepChat:true,messages:[],
    input:{value:draft},noteText:{value:noteDraft},workText:{value:workDraft},
    pendingImage:photo?{data:'photo'}:null,pendingImages:Array.from({length:photos},()=>({data:'photo'})),
    startConversation:()=>{started++;return true}
