@@ -50,12 +50,12 @@ test('Radio Clubhouse browser refresh, archive labels, pending rewards and BFCac
   assert.equal(find(mount,'rc-new').length,0);
   await find(mount,'rc-refresh')[0].listeners.click();
   await flush();
-  // Preserve the currently selected card when newer topics arrive.
-  assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['8']);
-  // The next control exposes the newly discovered discussion.
-  find(mount,'rc-button').find(x=>x.textContent==='Next discussion').listeners.click();
+  // New discussions return to the front; the reader no longer remains on an older topic.
   assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['9']);
   assert.equal(find(mount,'rc-new').length,1);
+  // The next control still exposes previous discussions.
+  find(mount,'rc-button').find(x=>x.textContent==='Next discussion').listeners.click();
+  assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['8']);
   find(mount,'rc-secondary')[0].listeners.click();
   assert.equal(credits.length,2); // successful Share and Star each submit one receipt
   assert.deepEqual(credits.map(x=>x[0]),['share','star']);
@@ -64,7 +64,7 @@ test('Radio Clubhouse browser refresh, archive labels, pending rewards and BFCac
   assert.ok(typeof listeners.get('pageshow')==='function');
   listeners.get('pageshow')({persisted:true});
   await flush();
-  assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['9']);
+  assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['8']);
   assert.match(find(mount,'rc-status')[0].textContent,/previously retrieved/);
  }finally{
   for(const key of Object.keys(prior))Object.defineProperty(globalThis,key,{configurable:true,writable:true,value:prior[key]});
@@ -80,4 +80,12 @@ test('Radio Clubhouse share landing is a first-party preview with credited origi
  assert.match(html,/no discussion text has been invented/);
  assert.match(html,/source\.href=/);
  assert.ok(!html.includes('iframe src="https://antiqueradios.com'));
+});
+
+test('Archived-only fallback is explicitly hidden until selected',async()=>{
+ const source=await readFile(new URL('../radio-clubhouse.js',import.meta.url),'utf8');
+ assert.match(source,/archiveToggle\.hidden=true/);
+ assert.match(source,/archiveToggle\.hidden=false/);
+ assert.match(source,/render\(\[\],false,'No current forum topics could be verified/);
+ assert.match(source,/newTopics=topics\.some/);
 });
