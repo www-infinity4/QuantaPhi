@@ -64,6 +64,7 @@ export function mountPremiumCard(card){
   const tools=make('details','premium-tools');tools.append(make('summary','', 'Search '+card.name+' and browse topics'),form,topics);
   article.append(header,content,links,tools,state,disclaimer,actions);
  }else article.append(header,form,topics,state,content,disclaimer,actions);
+ const siteActions=article.querySelector('.premium-site-actions');
  mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
  let serial=0,loaded=false;
  async function run(){
@@ -79,11 +80,11 @@ export function mountPremiumCard(card){
     const row=rows[selected];visual.replaceChildren();
     if(row.image){
      const image=make('img','premium-photo');image.src=row.image;image.alt=row.title;image.referrerPolicy='no-referrer';
-     image.addEventListener('error',()=>{image.remove();if(isRestaurant){const fallback=make('span','premium-photo-unavailable','Image unavailable · open the original restaurant page');image.parentNode?.append(fallback)}},{once:true});
+     image.addEventListener('error',()=>{const holder=image.parentNode;image.remove();if(isRestaurant&&holder)holder.append(make('span','premium-photo-unavailable','Image unavailable · open the original restaurant page'))},{once:true});
      if(isRestaurant){const hero=make('a','premium-hero-media');hero.href=sourceURL(row.url);hero.target='_blank';hero.rel='noopener noreferrer';hero.setAttribute('aria-label','View '+row.title+' at '+card.name);hero.append(image);visual.append(hero)}
      else visual.append(image);
     }else if(isRestaurant){const fallback=make('a','premium-hero-fallback','View the latest '+card.name+' food and offers at the official website');fallback.href=card.official;fallback.target='_blank';fallback.rel='noopener noreferrer';visual.append(fallback)}
-    if(isRestaurant)visual.append(nav);
+    if(isRestaurant){visual.append(nav);if(siteActions)visual.append(siteActions)}
     const description=String(row.description||'').replace(/<[^>]*>/g,'').trim();
     visual.append(make('p','premium-credit',row.credit+(row.date?' · '+String(row.date).slice(0,10):'')),make('h3','',row.title));
     // Search brokers occasionally return an image fingerprint instead of copy.
