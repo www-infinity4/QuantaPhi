@@ -168,7 +168,7 @@ test('Android Hide/reopen cannot start a new conversation over any unsent draft'
 });
 
 async function simulateNewChat({draft='',noteDraft='',workDraft='',photo=false,photos=0,approve=false,automatic=false}={}){
- const begin=site.indexOf('async function startConversation({automatic=false}={}){');
+ const begin=site.indexOf('function startConversation({automatic=false}={}){');
  const end=site.indexOf("newConversation.addEventListener('click'",begin);
  assert.ok(begin>0&&end>begin,'actual first-party New chat handler exists');
  const events=[],input={value:draft,focus:()=>events.push('focus')};
