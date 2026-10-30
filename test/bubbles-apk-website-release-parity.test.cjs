@@ -72,7 +72,7 @@ test('APK loads the current live website, not an HTML build pinned to the APK ve
 });
 
 
-async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null,saveFails=false,historyDisabled=false,activeMessages=0,markerFails=false}={}){
+async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null,saveFails=false,historyDisabled=false,activeMessages=0,markerFails=false,speaking=false,voiceStarting=false,voiceEnabled=false,nativeRecordingActive=false}={}){
  const begin=site.indexOf('let siteVersionChecking=false,lastSiteVersionCheck=0;');
  const end=site.indexOf('window.QuantaBubbles={',begin);
  assert.ok(begin>0&&end>begin,'actual first-party updater is present');
@@ -87,6 +87,7 @@ async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',pho
    return {ok:true,text:async()=>'<script src="/bubbles-ai.js?v=next-revision"></script>'};
   },
   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+  speaking,voiceStarting,voiceEnabled,nativeRecordingActive,
   input,noteText,workText,pendingImage:photo?{data:'unsent-photo'}:null,
   pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
   keepChat:!historyDisabled,messages:Array.from({length:activeMessages},()=>({role:'user',text:'existing turn'})),
@@ -246,4 +247,22 @@ test('revision updater refuses reload if sessionStorage cannot retain the resume
  const blockedNoHistory=await simulateSiteRevisionCheck({historyDisabled:true,markerFails:true});
  assert.equal(blockedNoHistory.result,false);
  assert.deepEqual(blockedNoHistory.events,[]);
+});
+
+// The Android RecordB Start→Stop file is not yet saved while recording is active.
+// Likewise a live microphone/TTS session must not be torn down by a background
+// website revision check, even when the text composer is empty.
+test('revision updater defers during Android recording and live voice playback',async()=>{
+ for(const scenario of [
+  {nativeRecordingActive:true},
+  {speaking:true},
+  {voiceStarting:true},
+  {voiceEnabled:true}
+ ]){
+  const {result,events}=await simulateSiteRevisionCheck(scenario);
+  assert.equal(result,false,'active recording, speech or microphone must defer reload');
+  assert.deepEqual(events,[],'do not write a resume marker or reload during voice');
+ }
+ const safe=await simulateSiteRevisionCheck();
+ assert.equal(safe.result,true,'an idle session may update after recording and voice finish');
 });
