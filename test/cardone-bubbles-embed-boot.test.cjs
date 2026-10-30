@@ -21,7 +21,7 @@ test('named card chat keeps locally scoped history, resumes, and never auto-clea
  assert.match(ai,/let keepChat=data\(KEEP_HISTORY,true\)===true/);
  assert.match(ai,/const embeddedResume=embedded&&keepChat/);
  assert.match(ai,/const THREAD_INDEX='quantaphi:bubbles:threads:v2'/);
- assert.match(ai,/if\(reopening&&!nativeOverlay&&!embedded\)void startConversation/);
+ assert.match(ai,/if\(reopening&&!nativeOverlay&&!embedded&&!unsentDraft\)void startConversation/);
  assert.match(ai,/clearChat\.textContent=embedded\?'New card chat'/);
  assert.match(ai,/chatScroll\.insertBefore\(chatsPanel,conversation\)/);
 });
