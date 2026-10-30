@@ -96,6 +96,21 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
     const identity=await verifyWallet(request,env);
     if(!authorizedOwnerWallet(request,identity,env))
      return deny('admin_role_verification_required');
+    // Owner wallet authentication alone is NOT administrator RBAC. A separate
+    // trusted wallet-server claim must explicitly attest this exact subject.
+    // Until that claim exists, administrator login deliberately fails closed.
+    let proof;
+    try{
+     const wallet=await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/passkey-owner',{
+      headers:{Authorization:request.headers.get('Authorization')},
+      signal:AbortSignal.timeout(9000)
+     });
+     if(!wallet.ok)return deny('admin_role_verification_required');
+     proof=await wallet.json();
+    }catch{return deny('admin_role_verification_required');}
+    if(proof?.ok!==true||proof.ownerVerified!==true||proof.adminVerified!==true||
+       typeof proof.userId!=='string'||proof.userId!==identity.userId)
+     return deny('admin_role_verification_required');
     adminAuthorized=true;
    }
    const value=await svc.passkeyLoginFinish({alias,attemptId:body.attemptId,credential:body.credential,adminAuthorized});
