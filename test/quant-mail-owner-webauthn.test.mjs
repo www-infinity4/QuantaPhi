@@ -65,6 +65,25 @@ test('login requires real registered passkey and a fresh credential challenge',a
  await assert.rejects(p.finishAuthentication({alias:'owner.test@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'unregisteredcredential',response:{}}}),/passkey_unrecognized/);
  assert.equal(await p.storage.get('quant-mail:challenge:'+b.attemptId),undefined);
 });
+
+test('restarting verified owner enrollment bounds outstanding challenges per alias',async()=>{
+ const p=make(),owner='owner.test@quantaphi.org',admin='admin.test@quantaphi.org';
+ const first=await p.beginRegistration({subject:walletSubject,alias:owner});
+ const other=await p.beginRegistration({subject:walletSubject,alias:admin});
+ const restarted=await p.beginRegistration({subject:walletSubject,alias:owner});
+ assert.equal(await p.storage.get('quant-mail:challenge:'+first.attemptId),undefined,
+  'restarting must revoke the previous challenge, not leave an unlimited backlog');
+ assert.ok(await p.storage.get('quant-mail:challenge:'+restarted.attemptId));
+ assert.ok(await p.storage.get('quant-mail:challenge:'+other.attemptId),
+  'another address retains its independent pending Android prompt');
+ await assert.rejects(p.consume(first.attemptId,'register',owner,walletSubject),/challenge_invalid/);
+ const consumed=await p.consume(restarted.attemptId,'register',owner,walletSubject);
+ assert.equal(consumed.subject,walletSubject);
+ assert.equal(await p.storage.get('quant-mail:pending-register:'+owner),undefined,
+  'consuming the latest challenge removes its pending pointer');
+ assert.ok(await p.storage.get('quant-mail:challenge:'+other.attemptId));
+});
+
 test('public status must fail closed until explicitly enabled',async()=>{
  const no={PASSKEY_ENABLED:'false',CONNECTIONS:service,BOT_WALLET:env.BOT_WALLET};
  const r=await json(await handleOwnerPasskeyRequest(request('/status'),no,ownerAuth));
