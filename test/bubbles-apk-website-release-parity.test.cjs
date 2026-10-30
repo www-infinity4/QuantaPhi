@@ -121,3 +121,36 @@ test('revision updater still reloads safely once composer and photos are empty',
  assert.equal(result,true);
  assert.deepEqual(events,['saved','marker:site-update-reload:1','reload']);
 });
+
+test('Android Hide/reopen cannot start a new conversation over any unsent draft',()=>{
+ const begin=site.indexOf('startFreshOnReopen:()=>{');
+ const end=site.indexOf('nativeHistorySnapshot:',begin);
+ assert.ok(begin>0&&end>begin,'actual Android reopen controller exists');
+ const code='({'+site.slice(begin,end)+'})';
+ const cases=[
+  {draft:'Do not erase my unfinished message'},
+  {draft:'   '},
+  {noteDraft:'Private note still being written'},
+  {workDraft:'Robot Brain job not yet submitted'},
+  {photo:true},
+  {photos:2}
+ ];
+ const run=({draft='',noteDraft='',workDraft='',photo=false,photos=0}={})=>{
+  let started=0;
+  const ctx={
+   nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+   input:{value:draft},noteText:{value:noteDraft},workText:{value:workDraft},
+   pendingImage:photo?{data:'photo'}:null,pendingImages:Array.from({length:photos},()=>({data:'photo'})),
+   startConversation:()=>{started++;return true}
+  };
+  const fn=vm.runInNewContext(code,ctx).startFreshOnReopen;
+  return {result:fn(),started};
+ };
+ for(const scenario of cases){
+  assert.deepEqual(run(scenario),{result:false,started:0},'unsent content must remain on Android reopen');
+ }
+ assert.deepEqual(run(),{result:true,started:1},'an empty panel may start a fresh chat');
+ assert.match(site,/if\(reopening&&!nativeOverlay&&!embedded&&!unsentDraft\)void startConversation\(\{automatic:true\}\)/,
+  'website reopen must use the same unsent draft guard');
+ assert.match(site,/const unsentDraft=Boolean\(input\.value\.length\|\|noteText\.value\.length\|\|workText\.value\.length\|\|pendingImage\|\|pendingImages\.length\)/);
+});
