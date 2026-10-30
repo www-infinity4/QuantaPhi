@@ -72,20 +72,22 @@ test('APK loads the current live website, not an HTML build pinned to the APK ve
 });
 
 
-async function simulateSiteRevisionCheck({draft='',photo=false,photos=0,lateDraft=null}={}){
+async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null}={}){
  const begin=site.indexOf('let siteVersionChecking=false,lastSiteVersionCheck=0;');
  const end=site.indexOf('window.QuantaBubbles={',begin);
  assert.ok(begin>0&&end>begin,'actual first-party updater is present');
- const input={value:draft},events=[];
+ const input={value:draft},noteText={value:noteDraft},workText={value:workDraft},events=[];
  const scope=vm.createContext({
   embedded:false,Date:{now:()=>60000},URL,siteRevision:'previous',
   location:{origin:'https://quantaphi.org',reload:()=>events.push('reload')},
   bubblesFetch:async()=>{
    if(lateDraft!==null)input.value=lateDraft;
+   if(lateNoteDraft!==null)noteText.value=lateNoteDraft;
+   if(lateWorkDraft!==null)workText.value=lateWorkDraft;
    return {ok:true,text:async()=>'<script src="/bubbles-ai.js?v=next-revision"></script>'};
   },
   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
-  input,pendingImage:photo?{data:'unsent-photo'}:null,
+  input,noteText,workText,pendingImage:photo?{data:'unsent-photo'}:null,
   pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
   keepChat:true,saveThread:()=>events.push('saved'),
   sessionStorage:{setItem:(key,value)=>events.push('marker:'+key+':'+value)},
@@ -100,9 +102,13 @@ test('revision updater never reloads over unsent Android composer text or photos
  for(const scenario of [
   {draft:'Fifteen minutes of unsent writing'},
   {draft:'  '},
+  {noteDraft:'Unsent private note'},
+  {workDraft:'Unsent Robot Brain source request'},
   {photo:true},
   {photos:2},
-  {lateDraft:'Text typed while the revision request was pending'}
+  {lateDraft:'Text typed while the revision request was pending'},
+  {lateNoteDraft:'Note written during update check'},
+  {lateWorkDraft:'Brain work request written during update check'}
  ]){
   const {result,events}=await simulateSiteRevisionCheck(scenario);
   assert.equal(result,false,'reload must defer while the user has unsent content');
