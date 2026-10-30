@@ -70,3 +70,48 @@ test('APK loads the current live website, not an HTML build pinned to the APK ve
  assert.equal(remoteRevision(doc),revision);
  assert.equal(remoteRevision(doc.replace(revision,'new-script-revision')),'new-script-revision');
 });
+
+
+async function simulateSiteRevisionCheck({draft='',photo=false,photos=0,lateDraft=null}={}){
+ const begin=site.indexOf('let siteVersionChecking=false,lastSiteVersionCheck=0;');
+ const end=site.indexOf('window.QuantaBubbles={',begin);
+ assert.ok(begin>0&&end>begin,'actual first-party updater is present');
+ const input={value:draft},events=[];
+ const scope=vm.createContext({
+  embedded:false,Date:{now:()=>60000},URL,siteRevision:'previous',
+  location:{origin:'https://quantaphi.org',reload:()=>events.push('reload')},
+  bubblesFetch:async()=>{
+   if(lateDraft!==null)input.value=lateDraft;
+   return {ok:true,text:async()=>'<script src="/bubbles-ai.js?v=next-revision"></script>'};
+  },
+  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+  input,pendingImage:photo?{data:'unsent-photo'}:null,
+  pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
+  keepChat:true,saveThread:()=>events.push('saved'),
+  sessionStorage:{setItem:(key,value)=>events.push('marker:'+key+':'+value)},
+  UPDATE_RELOAD_THREAD:'site-update-reload'
+ });
+ vm.runInContext(site.slice(begin,end),scope);
+ const result=await vm.runInContext('checkForSiteUpdate()',scope);
+ return {result,events};
+}
+
+test('revision updater never reloads over unsent Android composer text or photos',async()=>{
+ for(const scenario of [
+  {draft:'Fifteen minutes of unsent writing'},
+  {draft:'  '},
+  {photo:true},
+  {photos:2},
+  {lateDraft:'Text typed while the revision request was pending'}
+ ]){
+  const {result,events}=await simulateSiteRevisionCheck(scenario);
+  assert.equal(result,false,'reload must defer while the user has unsent content');
+  assert.deepEqual(events,[],'no reload or update marker may be written');
+ }
+});
+
+test('revision updater still reloads safely once composer and photos are empty',async()=>{
+ const {result,events}=await simulateSiteRevisionCheck();
+ assert.equal(result,true);
+ assert.deepEqual(events,['saved','marker:site-update-reload:1','reload']);
+});
