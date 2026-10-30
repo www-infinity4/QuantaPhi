@@ -51,8 +51,18 @@ export class OwnerPasskeys {
    timeout:60000
   });
   const attemptId=random(),stamp=this.clock();
-  await this.storage.put('quant-mail:challenge:'+attemptId,{
+  // An owner can restart phone enrollment. Keep only the newest outstanding
+  // challenge per alias so repeated starts cannot grow credential storage forever.
+  // The transaction also invalidates the old challenge before publishing the new one.
+  await this.storage.transaction(async tx=>{
+   const pendingKey='quant-mail:pending-register:'+chosen;
+   const previous=await tx.get(pendingKey);
+   if(typeof previous==='string'&&/^[A-Za-z0-9_-]{43}$/.test(previous))
+    await tx.delete('quant-mail:challenge:'+previous);
+   await tx.put('quant-mail:challenge:'+attemptId,{
     purpose:'register',alias:chosen,subject,challenge:options.challenge,expiresAt:stamp+CHALLENGE_TTL});
+   await tx.put(pendingKey,attemptId);
+  });
   return {attemptId,publicKey:options};
  }
  async consume(attemptId,purpose,alias,subject=null){
@@ -64,6 +74,10 @@ export class OwnerPasskeys {
       record.expiresAt<=this.clock()||(subject!==null&&record.subject!==subject))
       invalid('challenge_invalid');
    await tx.delete(key);
+   if(purpose==='register'){
+    const pendingKey='quant-mail:pending-register:'+record.alias;
+    if(await tx.get(pendingKey)===attemptId)await tx.delete(pendingKey);
+   }
    return record;
   });
  }
