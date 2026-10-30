@@ -1,22 +1,33 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-30T16:32:08.166155Z",
+  "checked_at": "2026-10-30T21:22:35.667612Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 9
+      "articles_selected": 8
     },
     {
       "publisher": "CBS Sports",
       "url": "https://www.cbssports.com/partners/feeds/rss/mlb_news",
-      "articles_selected": 30
+      "articles_selected": 29
     }
   ],
   "articles": [
+    {
+      "title": "A parade 44 years in the making, Brewers celebrate title with fans",
+      "url": "https://www.mlb.com/news/brewers-2026-world-series-championship-parade",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-30T18:39:00Z",
+      "summary": "",
+      "author": "Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
     {
       "title": "Milwaukee Public Schools close for Brewers' championship parade",
       "url": "https://www.mlb.com/news/milwaukee-public-schools-to-close-for-brewers-championship-parade",
@@ -24,17 +35,6 @@
       "published_at": "2026-10-30T15:00:00Z",
       "summary": "",
       "author": "Max Ralph",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "LIVE coverage of Brewers World Series championship parade",
-      "url": "https://www.mlb.com/brewers/news/brewers-2026-world-series-championship-parade",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-30T14:14:53Z",
-      "summary": "",
-      "author": "",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -99,7 +99,7 @@
       "url": "https://www.mlb.com/news/2026-brewers-championship-takeways",
       "publisher": "MLB.com",
       "published_at": "2026-10-29T15:20:00Z",
-      "summary": "New champs have 4th-most wins in MLB over last decade",
+      "summary": "",
       "author": "Mike Petriello",
       "image_url": "",
       "kind": "Reporting",
@@ -165,17 +165,6 @@
       "url": "https://www.mlb.com/news/brewers-win-world-series-2026",
       "publisher": "MLB.com",
       "published_at": "2026-10-29T06:07:00Z",
-      "summary": "",
-      "author": "Anthony Castrovince",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Contreras honored with World Series MVP for prowess behind the plate",
-      "url": "https://www.mlb.com/news/william-contreras-wins-2026-world-series-mvp",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T05:18:00Z",
       "summary": "",
       "author": "Anthony Castrovince",
       "image_url": "",
@@ -344,6 +333,17 @@
       "summary": "Plus the Top 100 And 1 college basketball teams for the 2026-27 season",
       "author": "Carter Bahns",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/8f773b61-3ae0-40e5-9e7e-8f3e6e71bdd3/gettyimages-2301840807-1.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Nick Martinez, bullpen save the Rays from World Series elimination, but Game 4 win merely a stay of execution",
+      "url": "https://www.cbssports.com/mlb/news/world-series-game-4-rays-bullpen-elimination-nick-martinez/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T05:04:16Z",
+      "summary": "The Rays had to use their Game 5 starter in relief in Game 4, but they got the win and for now, that's what matters",
+      "author": "Matt Snyder",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/96d77e2a-d212-46a0-96a5-4e50c685734e/martinez-getty-1.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
