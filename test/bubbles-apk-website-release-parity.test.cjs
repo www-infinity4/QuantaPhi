@@ -154,3 +154,67 @@ test('Android Hide/reopen cannot start a new conversation over any unsent draft'
   'website reopen must use the same unsent draft guard');
  assert.match(site,/const unsentDraft=Boolean\(input\.value\.length\|\|noteText\.value\.length\|\|workText\.value\.length\|\|pendingImage\|\|pendingImages\.length\)/);
 });
+
+async function simulateNewChat({draft='',noteDraft='',workDraft='',photo=false,photos=0,approve=false,automatic=false}={}){
+ const begin=site.indexOf('async function startConversation({automatic=false}={}){');
+ const end=site.indexOf("newConversation.addEventListener('click'",begin);
+ assert.ok(begin>0&&end>begin,'actual first-party New chat handler exists');
+ const events=[],input={value:draft,focus:()=>events.push('focus')};
+ const scope=vm.createContext({
+  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+  input,noteText:{value:noteDraft},workText:{value:workDraft},
+  pendingImage:photo?{data:'unsent-photo'}:null,
+  pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
+  keepChat:true,messages:[{role:'user',text:'previous turn'}],
+  saveThread:()=>events.push('saved'),
+  threadIndex:[{id:'previous',title:'Earlier chat',updated:1}],activeThread:'previous',
+  freshThreadId:()=> 'chat_new',
+  sessionStorage:{setItem:()=>events.push('session')},
+  TAB_THREAD:'tab',EXPLICIT_THREAD:'explicit',
+  photoInput:{value:'selected'},photoPreview:{hidden:false},
+  save:()=>events.push('index'),THREAD_INDEX:'threads',
+  memoryContext:[],memoryInstructions:[],greeted:true,activeCardEvidence:null,
+  cardWorkspaceInstance:null,conversation:{replaceChildren:()=>events.push('cleared')},
+  renderConversationFolders:()=>events.push('rendered'),
+  chatsPanel:{open:true},status:{textContent:''},nativeOverlay:true,ownerReady:false,
+  confirm:()=>{events.push('confirm');return approve}
+ });
+ vm.runInContext(site.slice(begin,end),scope);
+ const result=await vm.runInContext(automatic?'startConversation({automatic:true})':'startConversation()',scope);
+ return {result,events,composer:input.value,photos:scope.pendingImages.length,thread:scope.activeThread};
+}
+
+test('explicit New chat never silently discards unsent text or photos',async()=>{
+ for(const scenario of [{draft:'Fifteen minutes of writing'},{draft:'   '},{photo:true},{photos:2}]){
+  const cancelled=await simulateNewChat(scenario);
+  assert.equal(cancelled.result,false);
+  assert.deepEqual(cancelled.events,['confirm'],'cancel must not save, reset, or change the session');
+  assert.equal(cancelled.thread,'previous');
+  assert.equal(cancelled.composer,scenario.draft||'');
+  assert.equal(cancelled.photos,scenario.photos||0);
+  const approved=await simulateNewChat({...scenario,approve:true});
+  assert.equal(approved.result,true);
+  assert.equal(approved.thread,'chat_new');
+  assert.equal(approved.composer,'');
+  assert.equal(approved.photos,0);
+  assert.equal(approved.events[0],'confirm');
+ }
+ const empty=await simulateNewChat();
+ assert.equal(empty.result,true);
+ assert.ok(!empty.events.includes('confirm'),'empty New chat needs no warning');
+});
+
+test('automatic fresh chat fails closed even if caller skips its draft guard',async()=>{
+ for(const scenario of [
+  {draft:'unfinished'}, {noteDraft:'private note'}, {workDraft:'Brain job draft'},
+  {photo:true}, {photos:2}
+ ]){
+  const result=await simulateNewChat({...scenario,automatic:true});
+  assert.equal(result.result,false);
+  assert.deepEqual(result.events,[]);
+  assert.equal(result.thread,'previous');
+ }
+ const empty=await simulateNewChat({automatic:true});
+ assert.equal(empty.result,true);
+ assert.ok(!empty.events.includes('confirm'));
+});
