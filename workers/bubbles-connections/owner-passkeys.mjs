@@ -28,12 +28,14 @@ export class OwnerPasskeys {
   if(!chosen)invalid('owner_alias_invalid');
   const state=await this.load();
   if(state.subject&&state.subject!==subject)invalid('owner_binding_conflict');
-  if(state.credentials.length>=8)invalid('passkey_limit');
-  const userID=new Uint8Array(await crypto.subtle.digest('SHA-256',enc.encode('quant-mail-owner:'+subject)));
+  // One independently registered phone credential per chosen address, enforced server-side.
+  if(state.credentials.some(c=>c.alias===chosen))invalid('alias_passkey_already_registered');
+  if(state.credentials.length>=2)invalid('passkey_limit');
+  const userID=new Uint8Array(await crypto.subtle.digest('SHA-256',enc.encode('quant-mail-owner:'+subject+':'+chosen)));
   const options=await generateRegistrationOptions({
    rpName:'QuantaPhi Quant Mail',rpID:RP_ID,
    userID,userName:chosen,attestationType:'none',
-   excludeCredentials:state.credentials.map(c=>({id:c.id,transports:c.transports||[]})),
+   excludeCredentials:state.credentials.filter(c=>c.alias===chosen).map(c=>({id:c.id,transports:c.transports||[]})),
    authenticatorSelection:{residentKey:'preferred',userVerification:'required'},
    supportedAlgorithmIDs:[-7,-257],
    timeout:60000
@@ -69,10 +71,11 @@ export class OwnerPasskeys {
   await this.storage.transaction(async tx=>{
    const current=await tx.get('quant-mail:owner-passkeys')||{subject:null,credentials:[]};
    if(current.subject&&current.subject!==subject)invalid('owner_binding_conflict');
-   if(current.credentials.some(c=>c.id===accepted.id)||current.credentials.length>=8)
+   if(current.credentials.some(c=>c.alias===record.alias))invalid('alias_passkey_already_registered');
+   if(current.credentials.some(c=>c.id===accepted.id)||current.credentials.length>=2)
     invalid('credential_exists_or_limit');
    current.subject=subject;
-   current.credentials.push({id:accepted.id,publicKey:b64(accepted.publicKey),counter:accepted.counter,
+   current.credentials.push({alias:record.alias,id:accepted.id,publicKey:b64(accepted.publicKey),counter:accepted.counter,
     transports:accepted.transports||[],deviceType:credentialDeviceType,backedUp:credentialBackedUp,
     createdAt:this.clock()});
    await tx.put('quant-mail:owner-passkeys',current);
@@ -96,7 +99,7 @@ export class OwnerPasskeys {
   const state=await this.load();
   const options=await generateAuthenticationOptions({
    rpID:RP_ID,userVerification:'required',timeout:60000,
-   allowCredentials:state.credentials.map(c=>({id:c.id,transports:c.transports||[]}))
+   allowCredentials:state.credentials.filter(c=>c.alias===chosen).map(c=>({id:c.id,transports:c.transports||[]}))
   });
   const attemptId=random();
   await this.storage.put('quant-mail:challenge:'+attemptId,{
@@ -111,7 +114,7 @@ export class OwnerPasskeys {
    invalid('admin_role_verification_required');
   const record=await this.consume(attemptId,'login',alias);
   const state=await this.load();
-  const stored=state.credentials.find(c=>c.id===credential.id);
+  const stored=state.credentials.find(c=>c.id===credential.id&&c.alias===record.alias);
   if(!stored||!validOwner(state.subject))invalid('passkey_unrecognized');
   const result=await verifyAuthenticationResponse({
    response:credential,expectedChallenge:record.challenge,expectedOrigin:ORIGIN,
@@ -124,7 +127,7 @@ export class OwnerPasskeys {
   await this.storage.transaction(async tx=>{
    const current=await tx.get('quant-mail:owner-passkeys');
    const c=current?.credentials?.find(x=>x.id===stored.id);
-   if(!c||current.subject!==state.subject)invalid('credential_revoked');
+   if(!c||c.alias!==record.alias||current.subject!==state.subject)invalid('credential_revoked');
    if(c.counter>0&&newCounter<=c.counter)invalid('counter_replay');
    c.counter=newCounter;await tx.put('quant-mail:owner-passkeys',current);
   });
