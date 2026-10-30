@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {OwnerPasskeys,PASSKEY_CONSTANTS} from '../workers/bubbles-connections/owner-passkeys.mjs';
 import {handleOwnerPasskeyRequest,passkeyCookie,authorizedOwnerWallet} from '../workers/bubbles-connections/passkey-router.mjs';
+import {handleConnections} from '../workers/bubbles-connections/router.mjs';
 const now=1793310000000;
 class Storage{
  constructor(){this.map=new Map();}
@@ -214,4 +215,20 @@ test('server requires a private two-address owner allowlist; public source does 
  const source=readFileSync(new URL('../workers/bubbles-connections/owner-passkeys.mjs',import.meta.url),'utf8')+
   readFileSync(new URL('../workers/bubbles-connections/passkey-router.mjs',import.meta.url),'utf8');
  assert.doesNotMatch(source,/kris@quantaphi\\.org|administrator@quantaphi\\.org/i);
+});
+
+test('route accepts only public GET status without Origin while failing closed for other unauthenticated requests',async()=>{
+ const empty={CONNECTIONS:service,BOT_WALLET:env.BOT_WALLET};
+ const lookup=()=>stub;
+ const status=await json(await handleConnections(new Request('https://quantaphi.org/api/quant-mail/passkeys/status'),empty,lookup));
+ assert.equal(status.status,200);
+ assert.equal(status.ok,true);
+ assert.equal(status.registrationReady,false);
+ assert.equal(status.enabled,false);
+ assert.equal(status.rpId,'quantaphi.org');
+ assert.equal(status.aliases,undefined);
+ const attack=await json(await handleConnections(new Request('https://quantaphi.org/api/quant-mail/passkeys/register/begin',{
+  method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({alias:'owner.test@quantaphi.org'})
+ }),empty,lookup));
+ assert.equal(attack.status,403);
 });
