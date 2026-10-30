@@ -78,6 +78,10 @@ export class OwnerPasskeys {
     const pendingKey='quant-mail:pending-register:'+record.alias;
     if(await tx.get(pendingKey)===attemptId)await tx.delete(pendingKey);
    }
+   if(purpose==='login'&&typeof record.fingerprint==='string'){
+    const pendingKey='quant-mail:pending-login:'+record.alias+':'+record.fingerprint;
+    if(await tx.get(pendingKey)===attemptId)await tx.delete(pendingKey);
+   }
    return record;
   });
  }
@@ -125,9 +129,20 @@ export class OwnerPasskeys {
    rpID:RP_ID,userVerification:'required',timeout:60000,
    allowCredentials:state.credentials.filter(c=>c.alias===chosen).map(c=>({id:c.id,transports:c.transports||[]}))
   });
-  const attemptId=random();
-  await this.storage.put('quant-mail:challenge:'+attemptId,{
-   purpose:'login',alias:chosen,challenge:options.challenge,expiresAt:this.clock()+CHALLENGE_TTL});
+  const attemptId=random(),stamp=this.clock();
+  // Keep only the newest outstanding login challenge for this alias and
+  // network fingerprint. Other aliases/devices retain independent ceremonies.
+  // Without this bounded pointer, every abandoned login start persisted forever.
+  await this.storage.transaction(async tx=>{
+   const pendingKey='quant-mail:pending-login:'+chosen+':'+fingerprint;
+   const previous=await tx.get(pendingKey);
+   if(typeof previous==='string'&&/^[A-Za-z0-9_-]{43}$/.test(previous))
+    await tx.delete('quant-mail:challenge:'+previous);
+   await tx.put('quant-mail:challenge:'+attemptId,{
+    purpose:'login',alias:chosen,fingerprint,challenge:options.challenge,
+    expiresAt:stamp+CHALLENGE_TTL});
+   await tx.put(pendingKey,attemptId);
+  });
   return {attemptId,publicKey:options};
  }
  async finishAuthentication({alias,attemptId,credential,adminAuthorized=false}){
