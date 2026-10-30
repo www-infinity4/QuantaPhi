@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {OwnerPasskeys,PASSKEY_CONSTANTS} from '../workers/bubbles-connections/owner-passkeys.mjs';
 import {handleOwnerPasskeyRequest,passkeyCookie,authorizedOwnerWallet} from '../workers/bubbles-connections/passkey-router.mjs';
 import {handleConnections} from '../workers/bubbles-connections/router.mjs';
+import {runPasskeyCeremony,passkeyServerRequest} from '../quant-mail-passkeys.mjs';
 const now=1793310000000;
 class Storage{
  constructor(){this.map=new Map();}
@@ -264,4 +265,36 @@ test('authenticated owner aliases are accepted from private registry and never f
  assert.equal(authorizedOwnerWallet(requestGood,{userId:walletSubject},env),true);
  assert.equal(authorizedOwnerWallet(requestGood,{userId:'imposter'},env),false);
  assert.equal(authorizedOwnerWallet(requestGood,{userId:walletSubject},{...env,PASSKEY_OWNER_ACCOUNT_ID:'other'}),false);
+});
+
+test('phone administrator login supplies an existing wallet token for WebAuthn step-up',async()=>{
+ const requests=[];
+ const wallet='sq_'+'A'.repeat(36);
+ const request=async(url,init)=>{
+  requests.push({url,auth:init.headers?.Authorization||null});
+  if(url.endsWith('/login/begin'))
+   return Response.json({ok:true,attemptId:'signed-challenge',publicKey:{
+    challenge:'abc',rpId:'quantaphi.org',userVerification:'required'
+   }});
+  return Response.json({ok:true,passkeyVerified:true,sessionEstablished:true,
+   alias:'admin.test@quantaphi.org',rpId:'quantaphi.org'});
+ };
+ const Credential={parseRequestOptionsFromJSON:x=>x};
+ const credentials={get:async()=>({type:'public-key',toJSON:()=>({
+  id:'test-credential-123',type:'public-key',response:{clientDataJSON:'x',authenticatorData:'x',signature:'x'}
+ })})};
+ const result=await runPasskeyCeremony({kind:'login',alias:'admin.test@quantaphi.org',
+  request,Credential,credentials,walletToken:wallet,
+  locationLike:{origin:'https://quantaphi.org',hostname:'quantaphi.org'},secureContext:true});
+ assert.equal(result.verified,true);
+ assert.equal(requests.length,2);
+ assert.equal(requests[0].auth,'Bearer '+wallet);
+ assert.equal(requests[1].auth,'Bearer '+wallet);
+});
+test('server-reported already registered alias survives safe client error translation',async()=>{
+ const name='alias_passkey_already_registered';
+ await assert.rejects(passkeyServerRequest('/register/finish',{alias:'owner.test@quantaphi.org'},{
+  request:async()=>Response.json({ok:false,error:name},{status:400}),
+  token:'sq_'+'B'.repeat(32)
+ }),error=>error.message===name);
 });
