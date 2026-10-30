@@ -50,3 +50,37 @@ test('a shared original-tool link waits for its actual controls before spotlight
  await expect(page.locator('#oracleCardStage #sw-idea')).toBeVisible();
  await expect(page.locator('#oracleCardStage .oracle-original-cover h2')).toHaveText('Story Writer');
 });
+
+
+test('restaurant Quick Card leads with a source-owned promotional image and real site controls',async({page})=>{
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
+  const q=new URL(route.request().url()).searchParams.get('q')||'';
+  const results=q.includes('bk.com')?[{title:'Burger King official offers',url:'https://www.bk.com/royalperks',content:'View current rewards and offers at the official website.',thumbnail:base+'/assets/julius-balloon-001.jpg'}]:[];
+  return route.fulfill({contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:JSON.stringify({results})});
+ });
+ await page.goto(base+'/?card=burger-king',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage [data-source-id="burger-king"]');
+ await expect(card).toBeVisible();
+ await expect(card.locator('.premium-hero-media img')).toBeVisible({timeout:25000});
+ await expect(card.getByRole('link',{name:'Royal Perks'})).toHaveAttribute('href','https://www.bk.com/royalperks');
+ await expect(card.locator('.premium-tools')).not.toHaveAttribute('open','');
+ const positions=await card.evaluate(node=>({
+  image:node.querySelector('.premium-hero-media').getBoundingClientRect().top,
+  controls:node.querySelector('.premium-tools').getBoundingClientRect().top
+ }));
+ expect(positions.image).toBeLessThan(positions.controls);
+ await card.locator('.premium-tools summary').click();
+ await expect(card.getByRole('searchbox',{name:'Search Burger King'})).toBeVisible();
+});
+test('secondary carousel rows navigate to working cards and brand identities stay opt-in',async({page})=>{
+ await fixtures(page);await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#infinityCarouselRails .icr-rail')).toHaveCount(3);
+ await expect(page.locator('#infinityCarouselRails a[href="/?card=burger-king"]')).toBeVisible();
+ await expect(page.locator('#infinityCarouselRails a[href="/?card=infiniteBook"]')).toBeVisible();
+ const brands=page.locator('#infinityCarouselRails .icr-brand-library');
+ await expect(brands).toBeVisible();
+ await expect(brands).not.toHaveAttribute('open','');
+ await brands.locator('summary').click();
+ await expect(brands).toHaveAttribute('open','');
+ await expect(brands.getByRole('link',{name:/Browse brands/})).toHaveAttribute('href','/infinity-affiliates.html');
+});
