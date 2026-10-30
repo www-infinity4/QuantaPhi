@@ -12,7 +12,8 @@ class Storage{
  async transaction(fn){return fn(this);}
 }
 const walletSubject='verified-owner-subject-1';
-const make=()=>new OwnerPasskeys(new Storage(),{clock:()=>now});
+const privateAliases=JSON.stringify({owner:'owner.test@quantaphi.org',administrator:'admin.test@quantaphi.org'});
+const make=()=>new OwnerPasskeys(new Storage(),{clock:()=>now,allowedAliases:privateAliases});
 const json=async r=>({status:r.status,...await r.json()});
 const request=(path,body,{origin='https://quantaphi.org',token=null}={})=>new Request('https://quantaphi.org/api/quant-mail/passkeys'+path,{
  method:body?'POST':'GET',
@@ -21,17 +22,17 @@ const request=(path,body,{origin='https://quantaphi.org',token=null}={})=>new Re
 });
 const stub={
  passkeyRegisterBegin:async()=>({attemptId:'begin',publicKey:{challenge:'secret'}}),
- passkeyRegisterFinish:async()=>({passkeyVerified:true,registrationStored:true,alias:'kris@quantaphi.org',rpId:'quantaphi.org'}),
+ passkeyRegisterFinish:async()=>({passkeyVerified:true,registrationStored:true,alias:'owner.test@quantaphi.org',rpId:'quantaphi.org'}),
  passkeyLoginBegin:async()=>({attemptId:'login',publicKey:{challenge:'challenge'}}),
- passkeyLoginFinish:async()=>({sessionToken:'test_raw_token',passkeyVerified:true,sessionEstablished:true,alias:'kris@quantaphi.org',rpId:'quantaphi.org'}),
+ passkeyLoginFinish:async()=>({sessionToken:'test_raw_token',passkeyVerified:true,sessionEstablished:true,alias:'owner.test@quantaphi.org',rpId:'quantaphi.org'}),
  passkeyValidateSession:async()=>({valid:false})
 };
 const service={get:()=>stub,idFromName:x=>x};
-const env={PASSKEY_ENABLED:'true',CONNECTIONS:service,BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:true})}};
+const env={PASSKEY_ENABLED:'true',OWNER_EMAIL_ALIAS_REGISTRY:privateAliases,CONNECTIONS:service,BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:true})}};
 const ownerAuth=async()=>({userId:walletSubject});
 test('passkey challenge uses exact website RP and verified local user presence',async()=>{
  const p=make();
- const b=await p.beginRegistration({subject:walletSubject,alias:'kris@quantaphi.org'});
+ const b=await p.beginRegistration({subject:walletSubject,alias:'owner.test@quantaphi.org'});
  assert.equal(PASSKEY_CONSTANTS.RP_ID,'quantaphi.org');
  assert.equal(PASSKEY_CONSTANTS.ORIGIN,'https://quantaphi.org');
  assert.equal(b.publicKey.rp.id,'quantaphi.org');
@@ -44,22 +45,22 @@ test('passkey challenge uses exact website RP and verified local user presence',
 });
 test('registration rejects mismatched subject, invalid alias and unverified attestation',async()=>{
  const p=make();
- await assert.rejects(p.beginRegistration({subject:'',alias:'kris@quantaphi.org'}),/verified_owner_required/);
+ await assert.rejects(p.beginRegistration({subject:'',alias:'owner.test@quantaphi.org'}),/verified_owner_required/);
  await assert.rejects(p.beginRegistration({subject:walletSubject,alias:'hacker@quantaphi.org'}),/owner_alias_invalid/);
- const b=await p.beginRegistration({subject:walletSubject,alias:'administrator@quantaphi.org'});
- await assert.rejects(p.finishRegistration({subject:walletSubject+'x',alias:'administrator@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'fakecredential1',response:{}}}),/challenge_invalid/);
+ const b=await p.beginRegistration({subject:walletSubject,alias:'admin.test@quantaphi.org'});
+ await assert.rejects(p.finishRegistration({subject:walletSubject+'x',alias:'admin.test@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'fakecredential1',response:{}}}),/challenge_invalid/);
  const old=await p.storage.get('quant-mail:challenge:'+b.attemptId);
  assert.equal(old.subject,walletSubject); // unauthorized attempt cannot consume a valid challenge
- await assert.rejects(p.finishRegistration({subject:walletSubject,alias:'administrator@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'fakecredential1',response:{}}}));
+ await assert.rejects(p.finishRegistration({subject:walletSubject,alias:'admin.test@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'fakecredential1',response:{}}}));
  assert.equal(await p.storage.get('quant-mail:challenge:'+b.attemptId),undefined);
- await assert.rejects(p.finishRegistration({subject:walletSubject,alias:'administrator@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'fakecredential1',response:{}}}),/challenge_invalid/);
+ await assert.rejects(p.finishRegistration({subject:walletSubject,alias:'admin.test@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'fakecredential1',response:{}}}),/challenge_invalid/);
 });
 test('login requires real registered passkey and a fresh credential challenge',async()=>{
- const p=make(),b=await p.beginAuthentication({alias:'kris@quantaphi.org'});
+ const p=make(),b=await p.beginAuthentication({alias:'owner.test@quantaphi.org'});
  assert.equal(b.publicKey.rpId,'quantaphi.org');
  assert.equal(b.publicKey.userVerification,'required');
  assert.equal(b.attemptId.length,43);
- await assert.rejects(p.finishAuthentication({alias:'kris@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'unregisteredcredential',response:{}}}),/passkey_unrecognized/);
+ await assert.rejects(p.finishAuthentication({alias:'owner.test@quantaphi.org',attemptId:b.attemptId,credential:{type:'public-key',id:'unregisteredcredential',response:{}}}),/passkey_unrecognized/);
  assert.equal(await p.storage.get('quant-mail:challenge:'+b.attemptId),undefined);
 });
 test('public status must fail closed until explicitly enabled',async()=>{
@@ -67,11 +68,11 @@ test('public status must fail closed until explicitly enabled',async()=>{
  const r=await json(await handleOwnerPasskeyRequest(request('/status'),no,ownerAuth));
  assert.equal(r.enabled,false);
  assert.equal(r.registrationReady,false);
- const b=await json(await handleOwnerPasskeyRequest(request('/register/begin',{alias:'kris@quantaphi.org'},{token:'Bearer sq_'+ 'A'.repeat(32)}),no,ownerAuth));
+ const b=await json(await handleOwnerPasskeyRequest(request('/register/begin',{alias:'owner.test@quantaphi.org'},{token:'Bearer sq_'+ 'A'.repeat(32)}),no,ownerAuth));
  assert.equal(b.status,503);
 });
 test('owner wallet and same-origin post are mandatory for passkey registration',async()=>{
- const body={alias:'kris@quantaphi.org'};
+ const body={alias:'owner.test@quantaphi.org'};
  const wrong=await json(await handleOwnerPasskeyRequest(request('/register/begin',body,{origin:'https://evil.test'}),env,ownerAuth));
  assert.equal(wrong.status,403);
  const notOwner=await json(await handleOwnerPasskeyRequest(request('/register/begin',body),{
@@ -82,13 +83,13 @@ test('owner wallet and same-origin post are mandatory for passkey registration',
  assert.equal(valid.attemptId,'begin');
 });
 test('owner signup rejects linked device pairing token in lieu of original wallet',async()=>{
- const r=await json(await handleOwnerPasskeyRequest(request('/register/begin',{alias:'kris@quantaphi.org'},{
+ const r=await json(await handleOwnerPasskeyRequest(request('/register/begin',{alias:'owner.test@quantaphi.org'},{
  token:'Bearer bc_'+'A'.repeat(32)}),env,ownerAuth));
  assert.equal(r.status,401);
 });
 test('successful verified login sets HttpOnly Secure SameSite Strict cookie, never JS session token',async()=>{
  const res=await handleOwnerPasskeyRequest(request('/login/finish',{
- alias:'kris@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}}),env,ownerAuth);
+ alias:'owner.test@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}}),env,ownerAuth);
  const body=await res.json();
  assert.equal(body.sessionEstablished,true);
  assert.equal(body.sessionToken,undefined);
@@ -109,9 +110,9 @@ test('public Quant Mail is private placeholder; WebAuthn client keeps server rea
 
 test('per-IP begin auth attempt limit and administrator session expiry window are enforced',async()=>{
  const passkeys=make();
- for(let i=0;i<12;i++)await passkeys.beginAuthentication({alias:'kris@quantaphi.org',fingerprint:'example-ip-hash'});
- await assert.rejects(passkeys.beginAuthentication({alias:'kris@quantaphi.org',fingerprint:'example-ip-hash'}),/passkey_rate_limited/);
- const next=await passkeys.beginAuthentication({alias:'kris@quantaphi.org',fingerprint:'different-ip-hash'});
+ for(let i=0;i<12;i++)await passkeys.beginAuthentication({alias:'owner.test@quantaphi.org',fingerprint:'example-ip-hash'});
+ await assert.rejects(passkeys.beginAuthentication({alias:'owner.test@quantaphi.org',fingerprint:'example-ip-hash'}),/passkey_rate_limited/);
+ const next=await passkeys.beginAuthentication({alias:'owner.test@quantaphi.org',fingerprint:'different-ip-hash'});
  assert.ok(next.attemptId);
  assert.equal(PASSKEY_CONSTANTS.ADMIN_SESSION_TTL,5*60*1000);
  assert.match(passkeyCookie('abc',true),/Max-Age=300/);
@@ -119,7 +120,7 @@ test('per-IP begin auth attempt limit and administrator session expiry window ar
 });
 
 test('administrator alias cannot elevate without independent wallet RBAC proof',async()=>{
- const body={alias:'administrator@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}},adminAuthorized:true};
+ const body={alias:'admin.test@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}},adminAuthorized:true};
  const withoutWallet=await json(await handleOwnerPasskeyRequest(request('/login/finish',body),env,ownerAuth));
  assert.equal(withoutWallet.status,403);
  assert.equal(withoutWallet.error,'admin_role_verification_required');
@@ -134,12 +135,12 @@ test('administrator session requires server-verified matching subject and role, 
  let passedRole=null;
  const serviceWithRole={...stub,passkeyLoginFinish:async args=>{
   passedRole=args.adminAuthorized;
-  return {...await stub.passkeyLoginFinish(args),alias:'administrator@quantaphi.org'};
+  return {...await stub.passkeyLoginFinish(args),alias:'admin.test@quantaphi.org'};
  }};
  const approved={...env,CONNECTIONS:{idFromName:x=>x,get:()=>serviceWithRole},
   BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:true,adminVerified:true,userId:walletSubject})}};
  const response=await handleOwnerPasskeyRequest(request('/login/finish',{
-  alias:'administrator@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}
+  alias:'admin.test@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}
  },{token}),approved,ownerAuth);
  assert.equal(response.status,200);
  assert.equal(passedRole,true);
@@ -147,38 +148,38 @@ test('administrator session requires server-verified matching subject and role, 
  const wrongSubject={...approved,BOT_WALLET:{fetch:async()=>Response.json({
   ok:true,ownerVerified:true,adminVerified:true,userId:'different-subject'})}};
  const denied=await json(await handleOwnerPasskeyRequest(request('/login/finish',{
-  alias:'administrator@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}
+  alias:'admin.test@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}
  },{token}),wrongSubject,ownerAuth));
  assert.equal(denied.status,403);
 });
 test('direct Durable Object administrator authentication fails closed without trusted role',async()=>{
- const p=make(),b=await p.beginAuthentication({alias:'administrator@quantaphi.org'});
- await assert.rejects(p.finishAuthentication({alias:'administrator@quantaphi.org',attemptId:b.attemptId,
+ const p=make(),b=await p.beginAuthentication({alias:'admin.test@quantaphi.org'});
+ await assert.rejects(p.finishAuthentication({alias:'admin.test@quantaphi.org',attemptId:b.attemptId,
   credential:{id:'unregisteredcredential',type:'public-key',response:{}}}),/admin_role_verification_required/);
  assert.ok(await p.storage.get('quant-mail:challenge:'+b.attemptId));
 });
 
 test('one passkey slot per verified owner email; each address has a distinct account credential',async()=>{
  const p=make();
- const first=await p.beginRegistration({subject:walletSubject,alias:'kris@quantaphi.org'});
- const second=await p.beginRegistration({subject:walletSubject,alias:'administrator@quantaphi.org'});
+ const first=await p.beginRegistration({subject:walletSubject,alias:'owner.test@quantaphi.org'});
+ const second=await p.beginRegistration({subject:walletSubject,alias:'admin.test@quantaphi.org'});
  assert.notEqual(Buffer.from(first.publicKey.user.id).toString('hex'),Buffer.from(second.publicKey.user.id).toString('hex'));
- assert.equal(first.publicKey.user.name,'kris@quantaphi.org');
- assert.equal(second.publicKey.user.name,'administrator@quantaphi.org');
+ assert.equal(first.publicKey.user.name,'owner.test@quantaphi.org');
+ assert.equal(second.publicKey.user.name,'admin.test@quantaphi.org');
  const current=await p.load();
  current.subject=walletSubject;
  current.credentials=[
-  {id:'Y3JlZDEw',alias:'kris@quantaphi.org',publicKey:'YQ',counter:0,transports:[]},
-  {id:'Y3JlZDIx',alias:'administrator@quantaphi.org',publicKey:'YQ',counter:0,transports:[]}
+  {id:'Y3JlZDEw',alias:'owner.test@quantaphi.org',publicKey:'YQ',counter:0,transports:[]},
+  {id:'Y3JlZDIx',alias:'admin.test@quantaphi.org',publicKey:'YQ',counter:0,transports:[]}
  ];
  await p.storage.put('quant-mail:owner-passkeys',current);
- await assert.rejects(p.beginRegistration({subject:walletSubject,alias:'kris@quantaphi.org'}),/alias_passkey_already_registered/);
- await assert.rejects(p.beginRegistration({subject:walletSubject,alias:'administrator@quantaphi.org'}),/alias_passkey_already_registered/);
- const one=await p.beginAuthentication({alias:'kris@quantaphi.org',fingerprint:'firstIP'});
- const two=await p.beginAuthentication({alias:'administrator@quantaphi.org',fingerprint:'secondIP'});
+ await assert.rejects(p.beginRegistration({subject:walletSubject,alias:'owner.test@quantaphi.org'}),/alias_passkey_already_registered/);
+ await assert.rejects(p.beginRegistration({subject:walletSubject,alias:'admin.test@quantaphi.org'}),/alias_passkey_already_registered/);
+ const one=await p.beginAuthentication({alias:'owner.test@quantaphi.org',fingerprint:'firstIP'});
+ const two=await p.beginAuthentication({alias:'admin.test@quantaphi.org',fingerprint:'secondIP'});
  assert.deepEqual(one.publicKey.allowCredentials.map(c=>c.id),['Y3JlZDEw']);
  assert.deepEqual(two.publicKey.allowCredentials.map(c=>c.id),['Y3JlZDIx']);
- await assert.rejects(p.finishAuthentication({alias:'kris@quantaphi.org',attemptId:one.attemptId,
+ await assert.rejects(p.finishAuthentication({alias:'owner.test@quantaphi.org',attemptId:one.attemptId,
   credential:{type:'public-key',id:'Y3JlZDIx',response:{}}}),/passkey_unrecognized/);
 });
 test('private Android passkey form never preselects owner email and public client accepts typed email',()=>{
@@ -186,4 +187,19 @@ test('private Android passkey form never preselects owner email and public clien
  assert.doesNotMatch(client,/OWNER_MAIL_ALIASES|kris@quantaphi\.org|administrator@quantaphi\.org/);
  assert.match(client,/aliasInput.value=''/);
  assert.match(client,/alias_passkey_already_registered/);
+});
+
+test('server requires a private two-address owner allowlist; public source does not contain owner addresses',async()=>{
+ const p=make();
+ assert.equal(p.registry.owner,'owner.test@quantaphi.org');
+ assert.equal(p.registry.administrator,'admin.test@quantaphi.org');
+ const denied=await json(await handleOwnerPasskeyRequest(request('/status'),{
+  ...env,OWNER_EMAIL_ALIAS_REGISTRY:undefined},ownerAuth));
+ assert.equal(denied.enabled,false);
+ const registered=await json(await handleOwnerPasskeyRequest(request('/register/begin',{alias:'owner.test@quantaphi.org'}),
+  {...env,OWNER_EMAIL_ALIAS_REGISTRY:'{"owner":"owner.test@quantaphi.org"}'},ownerAuth));
+ assert.equal(registered.status,503);
+ const source=readFileSync(new URL('../workers/bubbles-connections/owner-passkeys.mjs',import.meta.url),'utf8')+
+  readFileSync(new URL('../workers/bubbles-connections/passkey-router.mjs',import.meta.url),'utf8');
+ assert.doesNotMatch(source,/kris@quantaphi\\.org|administrator@quantaphi\\.org/i);
 });
