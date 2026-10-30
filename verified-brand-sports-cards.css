@@ -59,3 +59,12 @@
 .vbs-card[data-source-id="burger-king-chicken-2026"] .vbs-identity{object-fit:contain;background:#fff}
 .vbs-archive-note{margin:10px 0;padding:11px 12px;border-left:4px solid #507798;
  background:#edf5fa;border-radius:8px;font:700 13px/1.45 system-ui;color:#23445e}
+
+/* McDonald's Big Mac: actual corporate menu photography, not logo filler. */
+.vbs-card[data-source-id="mcdonalds-big-mac-deals"] .vbs-art{
+ padding:8px;min-height:245px;background:linear-gradient(145deg,#b2222d,#ffb900);
+}
+.vbs-card[data-source-id="mcdonalds-big-mac-deals"] .vbs-identity{
+ display:block;width:100%;max-width:none;min-width:0;height:clamp(220px,60vw,350px);
+ max-height:none;object-fit:contain;filter:drop-shadow(0 8px 12px #0002);
+}
