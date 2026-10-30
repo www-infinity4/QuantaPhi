@@ -1878,6 +1878,12 @@ async function startConversation({automatic=false}={}){
   chatsMessage.textContent='Current reply or voice request must finish before starting a fresh chat.';
   return false;
  }
+ // Starting a new chat is destructive for unsent text and photos. An
+ // explicit click needs confirmation; an automatic reopen must never erase
+ // chat, Notes, or Robot Brain drafts, even if its caller misses a guard.
+ const unsentChat=Boolean(input.value.length||pendingImage||pendingImages.length);
+ if(automatic&&(unsentChat||noteText.value.length||workText.value.length))return false;
+ if(!automatic&&unsentChat&&!confirm('Start a new chat? Your unsent message and photos will be discarded.'))return false;
  if(keepChat&&messages.length)saveThread();
  // A closed, unused empty chat should not grow the History list every time
  // the floating bubble is opened and collapsed.
