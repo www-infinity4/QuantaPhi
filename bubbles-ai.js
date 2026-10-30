@@ -1884,7 +1884,10 @@ async function startConversation({automatic=false}={}){
  const unsentChat=Boolean(input.value.length||pendingImage||pendingImages.length);
  if(automatic&&(unsentChat||noteText.value.length||workText.value.length))return false;
  if(!automatic&&unsentChat&&!confirm('Start a new chat? Your unsent message and photos will be discarded.'))return false;
- if(keepChat&&messages.length)saveThread();
+ if(keepChat&&messages.length&&!saveThread()){
+  chatsMessage.textContent='This conversation could not be saved on this device. Keep it open and free storage before starting a new chat.';
+  return false;
+ }
  // A closed, unused empty chat should not grow the History list every time
  // the floating bubble is opened and collapsed.
  if(!messages.length&&threadIndex.find(t=>t.id===activeThread)?.title==='New conversation'&&
