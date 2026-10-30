@@ -108,6 +108,7 @@ let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
 let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
+let brandLibraryVisible=false; // Owner-curated brand identities are opt-in, not the default homepage rotation.
 const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
 let feedState=null,proposed=null;
 const visited=[];
@@ -174,7 +175,7 @@ function livePriority(e){
  const priority=document.getElementById('liveFoxGameCard')?.dataset.tvFrontPriority;
  return (priority===undefined?TV_FRONT_BOOTSTRAP:priority==='1')?1:0;
 }
-function eligible(){const cards=entries.filter(available).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
+function eligible(){const cards=entries.filter(available).filter(e=>brandLibraryVisible||!e.node.matches('.iac-card')||e.id===spotlightRequested||e.feedId===spotlightRequested).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
  updateInventory();
@@ -443,6 +444,18 @@ for(const button of host.querySelectorAll('[data-oracle-family]')){
   show(chosen);host.scrollIntoView?.({block:'start',behavior:'smooth'});
  });
 }
+// One explicit control reveals the large accepted-brand catalog without
+// letting 100+ logo cards displace photos, restaurants and original experiences.
+document.addEventListener('toggle',event=>{
+ if(!event.target?.matches?.('#infinityCarouselRails .icr-brand-library'))return;
+ brandLibraryVisible=Boolean(event.target.open);updateTabs();predict();
+ if(brandLibraryVisible){
+  const brand=entries.find(e=>e.node.matches('.iac-card')&&available(e));
+  if(brand){viewerTouched=true;show(brand,false);host.scrollIntoView?.({block:'start',behavior:'smooth'})}
+ }else if(active?.node.matches('.iac-card')&&active.id!==spotlightRequested&&active.feedId!==spotlightRequested){
+  const first=eligible()[0];if(first)show(first,false);
+ }
+},true);
 next.addEventListener('click',()=>advance(1));
 prev.addEventListener('click',()=>advance(-1));
 document.getElementById('oracleCardLive')?.addEventListener('click',()=>{
