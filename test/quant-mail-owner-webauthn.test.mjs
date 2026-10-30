@@ -288,7 +288,9 @@ test('phone administrator login supplies an existing wallet token for WebAuthn s
   locationLike:{origin:'https://quantaphi.org',hostname:'quantaphi.org'},secureContext:true});
  assert.equal(result.verified,true);
  assert.equal(requests.length,2);
- assert.equal(requests[0].auth,'Bearer '+wallet);
+ // A username-free authentication challenge is public; only privileged
+ // administrator completion needs the verified owner wallet step-up.
+ assert.equal(requests[0].auth,null);
  assert.equal(requests[1].auth,'Bearer '+wallet);
 });
 test('server-reported already registered alias survives safe client error translation',async()=>{
