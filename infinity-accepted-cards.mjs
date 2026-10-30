@@ -50,7 +50,15 @@ export function mountAcceptedWebsiteActions(host,card,{reader=readCardWebsite}={
   buttons.forEach(b=>b.setAttribute('aria-expanded','false'));selected?.focus();
  });
  actions.style.setProperty('--iac-action-count',Math.min(3,buttons.length)||1);
- if(!buttons.length)status.textContent='Website actions are awaiting verification.';
+ if(!buttons.length){
+  // A real, explicit manufacturer link is more useful than an empty panel.
+  // Do not imply that a particular product or price has been verified.
+  const original=node('a','Browse official products ↗','iac-web-action iac-direct');
+  original.href=trusted.official;original.target='_blank';original.rel='noopener noreferrer';
+  original.setAttribute('aria-label','Browse '+trusted.name+' official website');
+  actions.append(original);
+  status.textContent='Specific product listings have not been verified for this card.';
+ }
  box.append(actions);if(buttons.length>3)box.append(more);box.append(status,close,result);host.append(box);
  return {box,buttons,result};
 }
