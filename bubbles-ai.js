@@ -1905,8 +1905,14 @@ async function startConversation({automatic=false}={}){
  // explicit click needs confirmation; an automatic reopen must never erase
  // chat, Notes, or Robot Brain drafts, even if its caller misses a guard.
  const unsentChat=Boolean(input.value.length||pendingImage||pendingImages.length);
- if(automatic&&(unsentChat||noteText.value.length||workText.value.length||(!keepChat&&messages.length)))return false;
- if(!automatic&&unsentChat&&!confirm('Start a new chat? Your unsent message and photos will be discarded.'))return false;
+ // With History disabled, the transcript itself is unsaved work even if the
+ // composer is empty. Require a deliberate confirmation for an explicit reset.
+ const unsavedTurns=!keepChat&&messages.length>0;
+ if(automatic&&(unsentChat||noteText.value.length||workText.value.length||unsavedTurns))return false;
+ const discardWarning=unsavedTurns
+  ?'Start a new chat? History is off, so this conversation and any unsent message or photos will be discarded permanently.'
+  :'Start a new chat? Your unsent message and photos will be discarded.';
+ if(!automatic&&(unsentChat||unsavedTurns)&&!confirm(discardWarning))return false;
  if(keepChat&&messages.length&&!saveThread()){
   chatsMessage.textContent='This conversation could not be saved on this device. Keep it open and free storage before starting a new chat.';
   return false;
