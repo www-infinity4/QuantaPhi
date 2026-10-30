@@ -1079,7 +1079,7 @@ tools.append(pluginsButton,pluginsPanel);
 // Even if a user manually guesses the destination, its secure server must
 // separately validate the owner wallet before any credential registration.
 const ownerSecurityLink=create('a','ba-control ba-owner-security','Owner security · passkeys');
-ownerSecurityLink.href='/continuity/owner/#account-security';
+ownerSecurityLink.href='/robot-brain-account-security.html#account-security';
 ownerSecurityLink.rel='nofollow';
 ownerSecurityLink.hidden=true;
 ownerSecurityLink.dataset.ownerOnlyPasskeys='true';
@@ -1100,7 +1100,7 @@ ownerSecurityLink.addEventListener('click',async event=>{
  event.preventDefault();
  ownerSecurityLink.hidden=true;
  await checkOwnerSecurityAccess();
- if(!ownerSecurityLink.hidden)window.location.assign('/continuity/owner/#account-security');
+ if(!ownerSecurityLink.hidden)window.location.assign('/robot-brain-account-security.html#account-security');
 });
 window.addEventListener('bubbles:owner-ready',()=>void checkOwnerSecurityAccess());
 tools.addEventListener('toggle',()=>{

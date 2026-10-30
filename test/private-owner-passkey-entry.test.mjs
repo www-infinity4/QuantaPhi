@@ -43,3 +43,23 @@ test('public pages and no-op shortcut do not reveal owner aliases or signup link
  }
  assert.doesNotMatch(source('bubbles-quant-mail-preview.js'),/document\.querySelector|MutationObserver|\.append\(/);
 });
+
+
+test('Notes link opens canonical Robot Brain security page rather than stale continuity proxy',()=>{
+ const bubbles=source('bubbles-ai.js');
+ const html=source('robot-brain-account-security.html');
+ const client=source('robot-brain-passkeys.mjs');
+ assert.match(bubbles,/ownerSecurityLink\.href='\/robot-brain-account-security\.html#account-security'/);
+ assert.match(bubbles,/window\.location\.assign\('\/robot-brain-account-security\.html#account-security'\)/);
+ assert.doesNotMatch(bubbles,/\/continuity\/owner\/#account-security/);
+ assert.match(html,/id="robotBrainOwner"/);
+ assert.match(html,/id="account-security" hidden/);
+ assert.match(html,/robot-brain-owner\.js/);
+ assert.match(html,/robot-brain-passkeys\.mjs/);
+ assert.doesNotMatch(html,/kris@quantaphi\.org|administrator@quantaphi\.org/);
+ assert.match(client,/const verified=await gate\.walletIdentity\(\)/);
+ assert.match(client,/verified\?\.state!=='verified'/);
+ assert.match(client,/region\.hidden=false/);
+ assert.match(client,/state\.enabled!==true/);
+ assert.match(client,/import\('\/quant-mail-passkeys\.mjs/);
+});
