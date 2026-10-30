@@ -65,7 +65,8 @@ jobs:
             CONNECTION_ACTIVE_KEY:'secret_text',CONNECTION_KEYRING:'secret_text',
             CONNECTIONS:'durable_object_namespace',CONNECTIONS_READY:'plain_text',
             GITHUB_CLIENT_ID:'secret_text',GITHUB_CLIENT_SECRET:'secret_text',
-            STARQUEST_LEDGER:'service'
+            STARQUEST_LEDGER:'service',
+            OWNER_EMAIL_ALIAS_REGISTRY:'secret_text',PASSKEY_OWNER_ACCOUNT_ID:'secret_text'
           })){
             if(found.get(name)?.type!==type)throw Error('Production binding drift: '+name);
           }
@@ -123,6 +124,7 @@ jobs:
           NODE
 
       - name: Install registered 386 Cloudflare OAuth scopes and verify live Bubbles
+        if: github.event_name == 'workflow_dispatch'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
