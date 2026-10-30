@@ -2063,7 +2063,9 @@ cloudDelete.addEventListener('click',async()=>{
 let panelWasOpened=false;
 function toggle(open){
  const reopening=Boolean(open)&&!showing&&panelWasOpened;
- if(reopening&&!nativeOverlay&&!embedded)void startConversation({automatic:true});
+ // A collapsed Bubbles panel is not consent to erase unsent chat, Notes or Brain work.
+ const unsentDraft=Boolean(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length);
+ if(reopening&&!nativeOverlay&&!embedded&&!unsentDraft)void startConversation({automatic:true});
  showing=Boolean(open);
  if(showing)panelWasOpened=true;
  panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
@@ -3860,6 +3862,8 @@ window.QuantaBubbles={
  startFreshOnReopen:()=>{
   if(!nativeOverlay)return false;
   if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
+  // Android Hide / reopen must preserve an unsent typed message, Notes, work or photos.
+  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length)return false;
   void startConversation({automatic:true});
   return true;
  },
