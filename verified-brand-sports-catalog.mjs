@@ -131,6 +131,13 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Screening recommendations','https://ebccp.cancercontrol.cancer.gov/recommendation.do?topicId=102265'],
   ['Discuss with a clinician','https://www.cancer.gov/types/colorectal/screening-fact-sheet']
  ),icon('cancer.gov'),{nonTargeted:true}),
+ entry('mcdonalds-big-mac-deals','McDonald’s · Big Mac & app deals','food','Restaurants',
+ 'Explore the real Big Mac and current McValue or app offers. Prices and deal eligibility vary by location, account and date; order only through McDonald’s official services.',
+ 'https://www.mcdonalds.com/us/en-us/product/big-mac.html',actions(
+  ['Big Mac product','https://www.mcdonalds.com/us/en-us/product/big-mac.html'],
+  ['Current McValue & app deals','https://www.mcdonalds.com/us/en-us/deals.html'],
+  ['Explore full menu','https://www.mcdonalds.com/us/en-us/full-menu.html']
+ ),'https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/newsroom/menu-items-2023/NR_202302_0005-999_BigMac_2000x2000.png'),
  entry('burger-king-chicken-2026','Burger King · new chicken sandwiches','food','Restaurants','Burger King announced Loaded Jalapeño and Club Original Chicken Sandwich options in July 2026. Participating restaurant availability may change.','https://news.bk.com/blog-posts/burger-king-r-expands-its-iconic-original-chicken-sandwich-lineup-with-two-bold-new-flavors',actions(
   ['See new sandwiches','https://news.bk.com/blog-posts/burger-king-r-expands-its-iconic-original-chicken-sandwich-lineup-with-two-bold-new-flavors'],
   ['Official menu','https://www.bk.com/'],
