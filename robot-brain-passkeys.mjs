@@ -6,6 +6,7 @@
 const region=document.getElementById('account-security');
 const root=document.getElementById('ownerPasskeyWorkspace');
 const status=document.getElementById('ownerPasskeyServiceStatus');
+const gateMessage=document.getElementById('ownerGateMessage');
 const gate=window.QuantaBrainOwner;
 const text=(message)=>{if(status)status.textContent=message;};
 const element=(tag,content)=>{
@@ -19,7 +20,11 @@ async function openPrivateOwnerPasskeys(){
   const headers=await gate.ready;
   if(typeof headers?.Authorization!=='string'||!headers.Authorization)return;
   const verified=await gate.walletIdentity();
-  if(verified?.state!=='verified')return;
+  if(verified?.state!=='verified'){
+   if(gateMessage)gateMessage.textContent='Owner wallet verification is required. No account change was made.';
+   return;
+  }
+  if(gateMessage)gateMessage.textContent='Owner wallet verified. Private account security is available.';
   region.hidden=false;
   text('Owner wallet verified. Checking passkey registration service…');
   // Android 12 WebView may not implement AbortSignal.timeout.
@@ -70,6 +75,7 @@ async function openPrivateOwnerPasskeys(){
   }
  }catch{
   if(!region.hidden)text('Private account setup could not be verified. No changes were made.');
+  if(gateMessage&&region.hidden)gateMessage.textContent='Owner verification or private account setup is unavailable. No changes were made.';
  }
 }
 void openPrivateOwnerPasskeys();
