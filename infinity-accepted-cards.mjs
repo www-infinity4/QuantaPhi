@@ -1,6 +1,69 @@
 import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs';
 import {mountCardActions} from './quanta-card-actions.mjs';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
+// Dated manufacturer product spotlights; independent editorial placement,
+// not an ad sale or an integrated retailer checkout. Product and media origins
+// are explicitly identified. Verify stock and prices with retailer on every visit.
+export const ACCEPTED_FEATURED_PRODUCTS=Object.freeze({
+ 'durable-goruck':Object.freeze({
+  title:'GR1® USA · 21L · Black',
+  productUrl:'https://www.goruck.com/products/gr1-usa',
+  imageUrl:'https://www.northernfitness.ca/cdn/shop/products/gr1-21L-black_1800x1800_2d083eeb-e40c-43e2-923d-e4b8031eb774.jpg?v=1762441060&width=1080',
+  imageCredit:'Product photo: Northern Fitness · same GR1 21L Black model',
+  price:'$395.00 USD',availability:'Official GORUCK listing showed in stock when checked',
+  checked:'2026-10-30'
+ }),
+ 'durable-filson':Object.freeze({
+  title:'Dryden Briefcase · Whiskey · SKU F2020295179-1',
+  productUrl:'https://www.filson.com/products/dryden-briefcase-whiskey-1',
+  imageUrl:'https://www.filson.com/cdn/shop/files/c73c47e9c54355a60fc4a09784daea763ce8aeddd4bba3e45f85b9cc31098b89.png?v=1770941465&width=1946',
+  imageCredit:'Product photo: Filson official website',
+  price:'Price at Filson',availability:'Select color and check stock on Filson',
+  checked:'2026-10-30'
+ }),
+ 'durable-thule':Object.freeze({
+  title:'Motion 3 XL · Black Glossy · Model 639850',
+  productUrl:'https://www.thule.com/en-us/cargo-carrier/car-top-carrier/thule-motion-3-xl-_-639850',
+  imageUrl:'https://content.abt.com/image.php/be5d55bc44932d57c92e2203704987f1?canvas=&ck=2&height=1100&image=%2Fimages%2Fproducts%2FBDP_Images%2Fthule-cargo-carrier-black-639850-car-rear-angled.jpg&width=1500',
+  imageCredit:'Product photo: Abt Electronics · exact Thule 639850 model',
+  price:'$1,149.95 USD',availability:'Thule displayed a back-in-stock notification · availability unconfirmed',
+  checked:'2026-10-30'
+ })
+});
+export function acceptedFeaturedProduct(card){
+ const item=ACCEPTED_FEATURED_PRODUCTS[card?.id],trusted=acceptedBrand(card?.id);
+ if(!item||!trusted||card?.official!==trusted.official)return null;
+ const store=new URL(trusted.official).hostname.replace(/^www\\./,'');
+ try{
+  const url=new URL(item.productUrl),photo=new URL(item.imageUrl);
+  if(url.protocol!=='https:'||photo.protocol!=='https:'||url.username||url.password||
+     photo.username||photo.password||!(url.hostname===store||url.hostname.endsWith('.'+store)))return null;
+  return item;
+ }catch{return null}
+}
+function featuredProductCard(card){
+ const data=acceptedFeaturedProduct(card);if(!data)return null;
+ const box=node('section',undefined,'iac-product-feature');
+ box.setAttribute('aria-label',card.name+' featured real product');
+ const imageLink=node('a',undefined,'iac-product-image-link');
+ imageLink.href=data.productUrl;imageLink.target='_blank';imageLink.rel='noopener noreferrer';
+ imageLink.setAttribute('aria-label','View '+data.title+' at '+card.name);
+ const photo=node('img');photo.src=data.imageUrl;photo.alt=data.title+' — real product photograph';
+ photo.loading='eager';photo.decoding='async';photo.referrerPolicy='no-referrer';
+ photo.addEventListener('error',()=>{
+  photo.remove();imageLink.append(node('span','Product photo unavailable · Open official product','iac-product-fallback'));
+ },{once:true});
+ imageLink.append(photo);box.append(imageLink);
+ const detail=node('div',undefined,'iac-product-detail');
+ detail.append(node('span','FEATURED SOURCE PRODUCT · INFINITY 2026®','iac-product-eyebrow'),
+  node('h3',data.title),node('strong',data.price,'iac-product-price'),
+  node('p',data.availability+'. Confirm details with retailer.','iac-product-availability'));
+ const shop=node('a','View item at '+card.name+' ↗','iac-product-buy');
+ shop.href=data.productUrl;shop.target='_blank';shop.rel='noopener noreferrer';
+ const source=node('small',data.imageCredit+' · Price/item checked '+data.checked+'. Independent card, not a paid brand endorsement.','iac-product-source');
+ detail.append(shop,source);box.append(detail);
+ return box;
+}
 const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
 export function cardImageCandidates(card){
  return [...new Set([...(card.images||[]),card.image,card.logo].filter(value=>{
@@ -82,7 +145,10 @@ export function createAcceptedCard(card){
  const affiliate=node('a','Request affiliate product ↗','iac-official iac-affiliate-link');
  affiliate.href='/infinity-affiliates.html?brand='+encodeURIComponent(card.id);
  affiliate.setAttribute('aria-label','Request affiliation for '+card.name+' products');more.append(official,affiliate,source);content.append(more);
- article.append(heading,title,media,content);return article;
+ const featured=featuredProductCard(card);
+ if(featured)article.append(heading,title,featured,content);
+ else article.append(heading,title,media,content);
+ return article;
 }
 function mount(){
  const bank=document.getElementById('infinityAcceptedCards');
