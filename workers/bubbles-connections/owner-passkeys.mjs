@@ -103,8 +103,12 @@ export class OwnerPasskeys {
    purpose:'login',alias:chosen,challenge:options.challenge,expiresAt:this.clock()+CHALLENGE_TTL});
   return {attemptId,publicKey:options};
  }
- async finishAuthentication({alias,attemptId,credential}){
+ async finishAuthentication({alias,attemptId,credential,adminAuthorized=false}){
   if(!cleanCredential(credential))invalid('passkey_response_invalid');
+  // An alias is never an RBAC grant. Only a trusted server-side role check
+  // may authorize a fresh UV-verified administrator assertion.
+  if(allowedAlias(alias)==='administrator@quantaphi.org'&&adminAuthorized!==true)
+   invalid('admin_role_verification_required');
   const record=await this.consume(attemptId,'login',alias);
   const state=await this.load();
   const stored=state.credentials.find(c=>c.id===credential.id);
