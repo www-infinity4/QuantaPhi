@@ -1,0 +1,45 @@
+/* Zeus 6.2 private continuity tracker. Session dots, not robot operation states. */
+.zeus-history{margin:36px 0 12px;padding:clamp(15px,3vw,28px);border-radius:20px;border:1px solid #45647c;background:#0f2335;color:#e9f3fa}
+.zeus-history-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.zeus-history h2{font-size:clamp(24px,3vw,36px);margin:0 0 8px;line-height:1.18}
+.zeus-history-head p:last-child{color:#c0d4e2;font-size:14px}
+.zeus-history-disclosure{font-size:12px;color:#abc3d5;line-height:1.55;margin:12px 0}
+.zeus-history-legend{display:flex;gap:9px 18px;flex-wrap:wrap;padding:12px 0;margin-bottom:18px;border-bottom:1px solid #435d72}
+.zeus-legend-pair{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:#e4edf6}
+.zeus-dot{display:inline-block;flex:none;width:13px;height:13px;border-radius:50%;background:#d44249;border:1px solid #ffffff75;box-shadow:0 0 0 2px #fff1}
+.zeus-dot[data-color="red"]{background:#f04e4e}.zeus-dot[data-color="green"]{background:#39c66b}
+.zeus-dot[data-color="blue"]{background:#40a4ff}.zeus-dot[data-color="yellow"]{background:#ffcc42}.zeus-dot[data-color="orange"]{background:#ff9138}
+.zeus-history-grid{display:grid;grid-template-columns:minmax(205px,290px) minmax(0,1fr);gap:17px}
+.zeus-history-side,.zeus-history-detail{min-width:0;border:1px solid #3c5d74;background:#132d43;border-radius:15px;padding:16px}
+.zeus-history h3{margin:2px 0 12px;font-size:19px;overflow-wrap:anywhere}
+.zeus-history h4{margin:15px 0 10px}
+.zeus-history-form,.zeus-history-new{display:grid;gap:8px;margin:0 0 15px}
+.zeus-history :is(input,textarea,select){width:100%;min-width:0;box-sizing:border-box;font:inherit;padding:11px;border:1px solid #8299ab;color:#f0f6fa;background:#0a1d2b;border-radius:10px;resize:vertical;font-size:14px}
+.zeus-history :is(input,textarea,select)::placeholder{color:#c2d1dd}
+.zeus-history button{min-height:41px;white-space:normal}
+.zeus-history button:disabled{opacity:.5;cursor:default}
+.zeus-history-threads{display:grid;gap:6px;max-height:460px;overflow:auto}
+.zeus-thread{width:100%;display:flex;gap:10px;align-items:center;text-align:left;border-radius:11px;border:1px solid #426079;background:#1a3850;color:#f4f7fc;padding:10px}
+.zeus-thread.active{border-color:#f7c46d;background:#294358}
+.zeus-thread-name{display:grid;gap:3px;overflow-wrap:anywhere}
+.zeus-thread-name strong{font-size:13px}.zeus-thread-name small{color:#bbd0e1;font-size:11px}
+.zeus-current-head{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.zeus-current-head small{font-size:11px;color:#add1e9}.zeus-status{display:inline-flex;gap:8px;align-items:center;border:1px solid #58748a;border-radius:100px;padding:8px 10px;font-size:12px}
+.zeus-history-sessions{display:flex;gap:8px;flex-wrap:wrap;padding:10px 0 16px;border-bottom:1px solid #ffffff27}
+.zeus-session-entry{display:flex;align-items:center;gap:7px;background:#1f4359;border:1px solid #54738a;padding:7px 9px;border-radius:9px;font-size:11px}
+.zeus-history-items{display:grid;gap:10px}
+.zeus-work-item{padding:12px;border:1px solid #4d6981;border-radius:12px;background:#0f263a}
+.zeus-work-top{display:flex;justify-content:space-between;gap:9px;flex-wrap:wrap;color:#f7cf83;font-size:12px}
+.zeus-work-top small{color:#b6ccda}.zeus-work-text{white-space:pre-wrap;overflow-wrap:anywhere;color:#f2f5f9}
+.zeus-source{display:block;font-size:12px;color:#c0d6e5;overflow-wrap:anywhere}
+.zeus-evidence{font-size:12px;padding:9px;border-left:3px solid #4fcc86;background:#183950;white-space:pre-wrap;overflow-wrap:anywhere}
+.zeus-item-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px}
+.zeus-item-controls input{flex:2 1 240px}.zeus-item-controls button{flex:1 1 160px}
+.zeus-history-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}
+.zeus-history-actions button{flex:1 1 160px}
+.zeus-empty{padding:22px;color:#c2d2df;border:1px dashed #58748a;border-radius:10px}
+.zeus-history-notice{padding:11px;background:#1e4059;border-radius:10px;font-size:12px;color:#d8eaf7}
+.zeus-handoff-output{margin:12px 0}
+.zeus-history [hidden]{display:none!important}
+.zeus-history :is(button,input,textarea,select):focus-visible{outline:3px solid #f5cb7f;outline-offset:2px}
+@media(max-width:720px){.zeus-history-grid{grid-template-columns:1fr}.zeus-history-side{max-height:none}.zeus-history-threads{max-height:260px}}
