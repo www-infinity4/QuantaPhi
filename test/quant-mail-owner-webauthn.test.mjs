@@ -300,3 +300,33 @@ test('server-reported already registered alias survives safe client error transl
   token:'sq_'+'B'.repeat(32)
  }),error=>error.message===name);
 });
+
+test('unverified visitors cannot enumerate private owner aliases through signup errors',async()=>{
+ const candidates=['owner.test@quantaphi.org','not-registered@quantaphi.org'];
+ const unauthenticated=[];
+ for(const alias of candidates){
+  let checked=0;
+  const result=await json(await handleOwnerPasskeyRequest(
+   request('/register/begin',{alias}),env,async()=>{checked++;return {userId:walletSubject};}));
+  assert.equal(result.status,403);
+  assert.equal(result.error,'owner_verification_required');
+  assert.equal(checked,1);
+  unauthenticated.push(result.error);
+ }
+ assert.equal(unauthenticated[0],unauthenticated[1]);
+ const ownerToken='Bearer sq_'+'A'.repeat(32);
+ const confirmed=await json(await handleOwnerPasskeyRequest(
+  request('/register/begin',{alias:'not-registered@quantaphi.org'},{token:ownerToken}),env,ownerAuth));
+ assert.equal(confirmed.status,400);
+ assert.equal(confirmed.error,'owner_alias_invalid');
+});
+test('owner enrollment checks wallet even when JSON payload is malformed',async()=>{
+ const response=await handleOwnerPasskeyRequest(new Request(
+  'https://quantaphi.org/api/quant-mail/passkeys/register/begin',{
+  method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:'{"alias":"not-registered@quantaphi.org"'
+ }),env,ownerAuth);
+ const result=await json(response);
+ assert.equal(result.status,403);
+ assert.equal(result.error,'owner_verification_required');
+});
