@@ -3863,9 +3863,13 @@ async function checkForSiteUpdate(){
   if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length)return false;
   // A storage quota/error must not reload away the only in-memory copy of
   // this conversation. Keep the current page and retry on a later check.
+  // With History disabled, existing turns exist only in memory. A silent
+  // update must not destroy them, even if the composer itself is empty.
+  if(!keepChat&&messages.length)return false;
   if(keepChat&&!saveThread())return false;
-  // Only this trusted update path may keep the active thread on reload.
-  try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1')}catch{}
+  // Without the one-use resume marker, the next page opens a different chat.
+  // Browser privacy settings can reject sessionStorage writes: fail closed.
+  try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1')}catch{return false}
   location.reload();
   return true;
  }catch{return false}
