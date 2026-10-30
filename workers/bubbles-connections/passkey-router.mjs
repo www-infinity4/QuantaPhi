@@ -19,7 +19,7 @@ function errorCode(e){
  const name=String(e?.message||'');
  if(['verified_owner_required','owner_binding_conflict','passkey_limit','owner_alias_invalid',
  'passkey_response_invalid','challenge_invalid','passkey_verification_failed',
- 'credential_exists_or_limit','passkey_unrecognized','credential_revoked',
+ 'credential_exists_or_limit','alias_passkey_already_registered','passkey_unrecognized','credential_revoked',
  'counter_replay','passkey_record_invalid','passkey_rate_limited',
  'admin_role_verification_required'].includes(name))return name;
  return 'passkey_verification_failed';
