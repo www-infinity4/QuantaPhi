@@ -21,7 +21,7 @@ const isEvent=c=>c.event==='NFL'||c.event==='MLB';
 // Dated game previews must not be promoted as current weeks after kickoff.
 // Historical recaps and verified highlights remain available as archival sources.
 export function isExpiredOneOff(card,now=Date.now()){
- if(!['game','matchup','lineup','tracker'].includes(card?.kind)||!/^\\d{4}-\\d{2}-\\d{2}$/.test(card.date||''))return false;
+ if(!['game','matchup','lineup','tracker'].includes(card?.kind)||!/^\d{4}-\d{2}-\d{2}$/.test(card.date||''))return false;
  const day=Date.parse(card.date+'T00:00:00Z');
  return Number.isFinite(day)&&now>day+48*60*60*1000;
 }
