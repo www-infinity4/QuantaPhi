@@ -3886,6 +3886,10 @@ async function checkForSiteUpdate(){
   const remote=html.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
   if(!remote||!siteRevision||remote===siteRevision)return false;
   if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
+  // An Android recording has not been saved until Stop completes. Reloading
+  // during RecordB capture, microphone startup, continuous listening or TTS
+  // would terminate that active media session without a recovery receipt.
+  if(nativeRecordingActive||voiceStarting||voiceEnabled||speaking)return false;
   // A revision reload must not discard a partially typed message, private
   // note, Robot Brain work request, or unsent photo. Recheck AFTER the network
   // wait, when Android may have resumed editing any of these fields.
