@@ -87,3 +87,12 @@ test('past dated previews retire from front-page rotation but archived highlight
  assert.match(bk.visual,/Burger-King-Expands-Its-Iconic-Original-Chicken-Sandwich-Lineup/);
  assert.ok(bk.photoAsOf.includes('2026'));
 });
+
+test('historical NFL and MLB cards remain accessible by deep link but are excluded from carousel rotation',()=>{
+ const source=read('verified-brand-sports-cards.mjs');
+ const deck=read('oracle-card-deck.js');
+ assert.match(source,/node\.dataset\.archived='true'/);
+ assert.match(source,/const valid=REQUESTED_PUBLIC_CARDS\.filter\(validBrandSportsCard\)/);
+ assert.match(deck,/function eligible\(\)\{const cards=entries\.filter\(rotationallyCurrent\)/);
+ assert.match(deck,/function start\(\).*spotlightRequested/s);
+});
