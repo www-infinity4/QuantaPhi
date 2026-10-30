@@ -1078,7 +1078,7 @@ tools.append(pluginsButton,pluginsPanel);
 // A public link, localStorage flag, profile name or email address is NOT proof.
 // Even if a user manually guesses the destination, its secure server must
 // separately validate the owner wallet before any credential registration.
-const ownerSecurityLink=create('a','ba-control ba-owner-security','Owner security · passkeys');
+const ownerSecurityLink=create('a','ba-control ba-owner-security','Email setup');
 ownerSecurityLink.href='/robot-brain-account-security.html#account-security';
 ownerSecurityLink.rel='nofollow';
 ownerSecurityLink.hidden=true;
@@ -1306,7 +1306,7 @@ siteDraftButton.addEventListener('click',()=>{
 const workStatus=create('p','ba-muted',embedded?'This is your website’s independent work draft. It has no access to QuantaPhi owner jobs. Your own verified site adapter must run any requested work.':'Bubbles queues real bot jobs from spoken instructions after owner-wallet verification. Only actual Brain receipts count.');
 workStatus.setAttribute('role','status');
 const toolRail=create('nav','ba-tool-rail');toolRail.setAttribute('aria-label','Infinity builder workspaces');
-for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi','/infinity-phi/'],['Code · Omni Phi','/omni-phi/']]){
+for(const [label,path] of [['Quant Search','/'],['Infinity','/infinity-phi/'],['Omni','/omni-phi/']]){
  const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
 }
 // Chrome is invoked from Bubbles conversation; no extra browser-launch button.
@@ -3500,6 +3500,86 @@ resolveRoutineNow.type='button';
 ownerDecisionDrawer.append(ownerDecisionSummary,ownerDecisionIntro,
  resolveRoutineNow,ownerDecisionMessage,ownerDecisionList);
 tools.append(ownerDecisionDrawer);
+// 2026 button viewer. Keep the existing Notes/settings controls and all their
+// event listeners: move DOM nodes, never replace them or recreate wallet state.
+// The single existing Email setup link stays in the chat Notes bar.
+const toolsViewerButton=create('button','ba-control ba-tools-viewer-launch','Open Notes & tools');
+toolsViewerButton.type='button';
+toolsViewerButton.setAttribute('aria-haspopup','dialog');
+toolsViewerButton.setAttribute('aria-expanded','false');
+const toolsViewer=create('section','ba-tools-viewer');
+toolsViewer.hidden=true;
+toolsViewer.setAttribute('role','dialog');
+toolsViewer.setAttribute('aria-modal','true');
+toolsViewer.setAttribute('aria-label','Bubbles notes and tools viewer');
+toolsViewer.setAttribute('tabindex','-1');
+const viewerHeader=create('header','ba-tools-viewer-header');
+const viewerTitle=create('h2','','Notes & tools');
+const viewerClose=create('button','ba-tools-viewer-close','×');
+viewerClose.type='button';viewerClose.setAttribute('aria-label','Close Notes and tools viewer');
+viewerHeader.append(viewerTitle,viewerClose);
+const viewerContent=create('div','ba-tools-viewer-content');
+// All existing Notes, Infinity, Omni, Quant Search, settings, checkboxes,
+// repository targets and Brain tools now belong to this single button viewer.
+for(const child of [...tools.children]){
+ if(child===summary||child===ownerSecurityLink)continue;
+ viewerContent.append(child);
+}
+toolsViewer.append(viewerHeader,viewerContent);
+document.body.append(toolsViewer);
+tools.append(toolsViewerButton);
+let viewerLastFocus=null;
+function enhanceSettingsCheckboxes(){
+ for(const check of viewerContent.querySelectorAll('input[type="checkbox"]')){
+  if(check.dataset.clearControl==='ready')continue;
+  check.dataset.clearControl='ready';
+  check.setAttribute('aria-label',check.getAttribute('aria-label')||
+    check.closest('label')?.textContent.trim()||'Setting');
+  const clear=create('button','ba-setting-clear','×');
+  clear.type='button';clear.setAttribute('aria-label','Uncheck setting');
+  const render=()=>{clear.hidden=!check.checked||check.disabled;};
+  clear.addEventListener('click',event=>{
+   event.preventDefault();event.stopPropagation();
+   if(check.disabled)return;
+   check.checked=false;
+   check.dispatchEvent(new Event('change',{bubbles:true}));
+   render();
+  });
+  check.addEventListener('change',render);
+  const label=check.closest('label');
+  // Keep clear action outside its label so tapping X never toggles it again.
+  if(label&&viewerContent.contains(label))label.insertAdjacentElement('afterend',clear);
+  else check.insertAdjacentElement('afterend',clear);
+  render();
+ }
+}
+function closeNotesViewer(){
+ toolsViewer.hidden=true;
+ toolsViewerButton.setAttribute('aria-expanded','false');
+ document.body.classList.remove('ba-viewer-active');
+ if(viewerLastFocus?.isConnected)viewerLastFocus.focus();
+}
+function openNotesViewer(){
+ viewerLastFocus=document.activeElement;
+ enhanceSettingsCheckboxes();
+ toolsViewer.hidden=false;
+ toolsViewerButton.setAttribute('aria-expanded','true');
+ document.body.classList.add('ba-viewer-active');
+ viewerClose.focus();
+}
+toolsViewerButton.addEventListener('click',()=>openNotesViewer());
+viewerClose.addEventListener('click',closeNotesViewer);
+toolsViewer.addEventListener('keydown',event=>{
+ if(event.key==='Escape'){event.preventDefault();closeNotesViewer();return;}
+ if(event.key!=='Tab')return;
+ const focusable=[...toolsViewer.querySelectorAll('button:not([hidden]):not(:disabled),a[href]:not([hidden]),input:not([hidden]):not(:disabled),select:not([hidden]):not(:disabled),textarea:not([hidden]):not(:disabled),summary')]
+  .filter(el=>el.getClientRects().length>0);
+ if(!focusable.length)return;
+ const first=focusable[0],last=focusable.at(-1);
+ if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+ else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+});
+// The email action remains uniquely linked to verified Robot Brain owner access.
 let routineDecisionBusy=false,lastOwnerApprovalTickets=[];
 async function resolveRoutineOwnerDecisions(tickets){
  if(embedded||!ownerReady||routineDecisionBusy)return;
