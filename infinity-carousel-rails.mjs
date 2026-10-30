@@ -59,6 +59,7 @@ function init(){
  const observer=new MutationObserver(refreshSourcePhotos);
  observer.observe(document.getElementById('oracleCardDeck')||root,{subtree:true,childList:true});
  window.addEventListener('quantaphi:source-cards-ready',refreshSourcePhotos);
+ (document.getElementById('oracleCardDeck')||root).addEventListener('load',refreshSourcePhotos,true);
  refreshSourcePhotos();
 }
 if(typeof document!=='undefined'){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init()}
