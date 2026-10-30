@@ -204,7 +204,7 @@
  }
  refresh.addEventListener('click',load);
  window.addEventListener('online',load);
- document.addEventListener('visibilitychange',()=>{if(!document.hidden)void load()});
+ document.addEventListener?.('visibilitychange',()=>{if(!document.hidden)void load()});
  load();
  const poll=setInterval(()=>{if(!document.hidden)load()},INTERVAL);
  // Timers are suspended inside the back-forward cache, then resume automatically.
