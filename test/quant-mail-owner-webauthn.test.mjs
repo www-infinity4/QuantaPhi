@@ -232,3 +232,36 @@ test('route accepts only public GET status without Origin while failing closed f
  }),empty,lookup));
  assert.equal(attack.status,403);
 });
+
+test('one-time owner enrollment challenges cannot be replayed or stolen by a different subject',async()=>{
+ const p=make();
+ const first=await p.beginRegistration({subject:walletSubject,alias:'owner.test@quantaphi.org'});
+ await assert.rejects(p.consume(first.attemptId,'register','owner.test@quantaphi.org','other-subject'),/challenge_invalid/);
+ const saved=await p.storage.get('quant-mail:challenge:'+first.attemptId);
+ assert.equal(saved.subject,walletSubject);
+ const consumed=await p.consume(first.attemptId,'register','owner.test@quantaphi.org',walletSubject);
+ assert.equal(consumed.subject,walletSubject);
+ await assert.rejects(p.consume(first.attemptId,'register','owner.test@quantaphi.org',walletSubject),/challenge_invalid/);
+});
+test('browser origin, method and owner account claim are fail-closed',async()=>{
+ const alias='owner.test@quantaphi.org';
+ const wrongOrigin=await json(await handleOwnerPasskeyRequest(request('/register/begin',{alias},
+  {origin:'https://malicious.test',token:'Bearer sq_'+'A'.repeat(32)}),env,ownerAuth));
+ assert.equal(wrongOrigin.status,403);
+ const emptyOrigin=await json(await handleOwnerPasskeyRequest(request('/register/begin',{alias},
+  {origin:'',token:'Bearer sq_'+'A'.repeat(32)}),env,ownerAuth));
+ assert.equal(emptyOrigin.status,403);
+ const unrelated=await json(await handleOwnerPasskeyRequest(request('/register/begin',{alias},
+  {token:'Bearer sq_'+'A'.repeat(32)}),env,async()=>({userId:'imposter'})));
+ assert.equal(unrelated.status,403);
+ const noConfiguredOwner=await json(await handleOwnerPasskeyRequest(request('/status'),
+  {...env,PASSKEY_OWNER_ACCOUNT_ID:undefined},ownerAuth));
+ assert.equal(noConfiguredOwner.enabled,false);
+});
+test('authenticated owner aliases are accepted from private registry and never from browser supplied authorization flags',()=>{
+ const requestGood=request('/register/begin',{alias:'owner.test@quantaphi.org'},{
+  token:'Bearer sq_'+'A'.repeat(32)});
+ assert.equal(authorizedOwnerWallet(requestGood,{userId:walletSubject},env),true);
+ assert.equal(authorizedOwnerWallet(requestGood,{userId:'imposter'},env),false);
+ assert.equal(authorizedOwnerWallet(requestGood,{userId:walletSubject},{...env,PASSKEY_OWNER_ACCOUNT_ID:'other'}),false);
+});
