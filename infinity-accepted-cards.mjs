@@ -33,7 +33,7 @@ export const ACCEPTED_FEATURED_PRODUCTS=Object.freeze({
 export function acceptedFeaturedProduct(card){
  const item=ACCEPTED_FEATURED_PRODUCTS[card?.id],trusted=acceptedBrand(card?.id);
  if(!item||!trusted||card?.official!==trusted.official)return null;
- const store=new URL(trusted.official).hostname.replace(/^www\\./,'');
+ const store=new URL(trusted.official).hostname.replace(/^www\./,'');
  try{
   const url=new URL(item.productUrl),photo=new URL(item.imageUrl);
   if(url.protocol!=='https:'||photo.protocol!=='https:'||url.username||url.password||
