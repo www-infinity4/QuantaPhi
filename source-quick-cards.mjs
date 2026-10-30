@@ -1,5 +1,6 @@
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261027-karaoke1';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
+import {mountCopilotCardTool} from './copilot-card-tool.mjs?v=20261029-c1';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
@@ -57,7 +58,7 @@ function askAiTools(root,card){
  if(!['gemini','claude','copilot'].includes(card.id))return;
  const area=el('div','iqc-ask-ai');
  if(card.id==='copilot'){
-  area.append(el('p','iqc-muted','Copilot runs through GitHub’s own agent interface, with repository permission and a reviewable PR. No silent issue assignment.'));
+  mountCopilotCardTool(area);
   root.append(area);return;
  }
  const form=el('form','iqc-ai-form');
