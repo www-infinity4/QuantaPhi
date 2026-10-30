@@ -31,7 +31,7 @@ jobs:
           node --check workers/bubbles-connections/worker.mjs
           node --check workers/bubbles-connections/owner-passkeys.mjs
           node --check workers/bubbles-connections/passkey-router.mjs
-          node --test test/quant-mail-owner-webauthn.test.mjs
+          node --test test/quant-mail-owner-webauthn.test.mjs test/quant-mail-live-smoke.test.mjs
           node --check workers/infinity-brain-clock/cloudflare-scope-sync.mjs
           node --test test/bubbles-cloudflare-scope-sync.test.mjs test/bubbles-connections.test.mjs test/bubbles-connections-router.test.mjs test/bubbles-consent.test.mjs test/bubbles-connections-ui.test.mjs test/bubbles-connector-pairing.test.mjs
       - name: Validate full Worker bundle without changing production
@@ -123,6 +123,10 @@ jobs:
             console.log('Worker deployed; the three owner-authorized scope secrets still require installation and verification.');
           NODE
 
+      - name: Verify live passkey Worker route, privacy and origin denial
+        run: |
+          set -euo pipefail
+          node scripts/verify-quant-mail-passkey-live.mjs
       - name: Install registered 386 Cloudflare OAuth scopes and verify live Bubbles
         if: github.event_name == 'workflow_dispatch'
         env:
