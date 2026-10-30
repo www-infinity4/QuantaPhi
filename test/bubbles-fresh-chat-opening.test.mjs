@@ -240,3 +240,78 @@ test('native recovery reports index persistence failures without mutating Histor
  assert.deepEqual(successful.writes,['thread:'+id,'threads','render']);
  assert.equal(successful.index.find(x=>x.id===id)?.updated,1000);
 });
+
+test('History switching never discards unsent photos, typed work or an unsaved current conversation',async()=>{
+ const begin=ui.indexOf('async function openConversation(id){');
+ const end=ui.indexOf('async function startConversation(',begin);
+ assert.ok(begin>0&&end>begin,'actual History switch handler exists');
+ async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false}={}){
+  let confirmations=0,saves=0,clears=0;
+  const original={id:'old_message',role:'user',text:'Important current chat',at:100};
+  const ctx={
+   busy:false,nativeBridgeBusy:nativeBusy,nativeSpeechPending:false,voicePending:[],
+   chatsMessage:{textContent:''},
+   threadIndex:[{id:'chat_old',title:'Current chat',updated:100},{id:'chat_target',title:'Earlier chat',updated:10}],
+   keepChat:!historyOff,messages:[original],activeThread:'chat_old',
+   input:{value:draft,focus:()=>{}},pendingImage:photo?{id:'photo'}:null,
+   pendingImages:photo?[{id:'photo'}]:[],photoInput:{value:'selected'},photoPreview:{hidden:false},
+   saveThread:()=>{saves++;return saveOk},
+   readThread:()=>[{id:'saved_123',role:'assistant',text:'Saved earlier turn',at:10}],
+   ownerReady:lateDraft!==null||latePhoto,
+   conversationApi:async()=>{
+    if(lateDraft!==null)ctx.input.value=lateDraft;
+    if(latePhoto)ctx.pendingImages.push({id:'new-photo'});
+    return {session:{id:'chat_target'},messages:[]};
+   },
+   confirm:()=>{confirmations++;return approve},
+   sessionStorage:{setItem:()=>{}},TAB_THREAD:'tab',EXPLICIT_THREAD:'explicit',
+   SHARED_MAIN_THREAD:'bubbles_shared_main_v1',
+   memoryContext:[],activeCardEvidence:null,cardWorkspaceInstance:null,
+   conversation:{replaceChildren:()=>{clears++}},display:()=>{},
+   renderConversationFolders:()=>{},chatsPanel:{open:true},
+   crypto:{randomUUID:()=> 'uuid'},greeted:true
+  };
+  const source=vm.runInNewContext(ui.slice(begin,end)+
+   ';({openConversation,getState:()=>({activeThread,pendingImage,pendingImages,messages,input})})',ctx);
+  const result=await source.openConversation('chat_target');
+  return {result,confirmations,saves,clears,state:source.getState(),notice:ctx.chatsMessage.textContent};
+ }
+ const denied=await run({draft:'Unsent writing',photo:true});
+ assert.equal(denied.result,false);
+ assert.equal(denied.confirmations,1);
+ assert.equal(denied.saves,0);
+ assert.equal(denied.clears,0);
+ assert.equal(denied.state.activeThread,'chat_old');
+ assert.equal(denied.state.pendingImages.length,1);
+ assert.equal(denied.state.input.value,'Unsent writing');
+ const failed=await run({draft:'Unsent writing',photo:true,approve:true,saveOk:false});
+ assert.equal(failed.result,false);
+ assert.equal(failed.saves,1);
+ assert.equal(failed.clears,0);
+ assert.equal(failed.state.activeThread,'chat_old');
+ assert.equal(failed.state.pendingImages.length,1);
+ assert.match(failed.notice,/could not be saved/);
+ const accepted=await run({draft:'Old chat draft',photo:true,approve:true});
+ assert.equal(accepted.result,true);
+ assert.equal(accepted.confirmations,1);
+ assert.equal(accepted.clears,1);
+ assert.equal(accepted.state.activeThread,'chat_target');
+ assert.equal(accepted.state.pendingImages.length,0);
+ assert.equal(accepted.state.input.value,'','approved switch must not leak an old draft into another conversation');
+ const late=await run({lateDraft:'Typed while cloud History was loading'});
+ assert.equal(late.result,false);
+ assert.equal(late.clears,0);
+ assert.equal(late.state.activeThread,'chat_old');
+ assert.equal(late.state.input.value,'Typed while cloud History was loading');
+ const latePhoto=await run({latePhoto:true});
+ assert.equal(latePhoto.result,false);
+ assert.equal(latePhoto.clears,0);
+ assert.equal(latePhoto.state.pendingImages.length,1);
+ const historyOff=await run({historyOff:true});
+ assert.equal(historyOff.result,false,'History-off turns require explicit consent before switching');
+ assert.equal(historyOff.confirmations,1);
+ const busy=await run({nativeBusy:true});
+ assert.equal(busy.result,false);
+ assert.equal(busy.confirmations,0);
+ assert.equal(busy.clears,0);
+});
