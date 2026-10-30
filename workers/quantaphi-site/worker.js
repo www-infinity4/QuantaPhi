@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-const EDGE_VERSION = 'quantaphi-org-service-20261026-cf-manager-diagnostic-v14';
+const EDGE_VERSION = 'quantaphi-org-service-20261029-housing-v15';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -440,9 +440,15 @@ export default {
   }
   if (raw) { out.delete('Content-Security-Policy'); out.delete('Content-Disposition'); }
   // Upstream GitHub headers prohibit even our own embedded suite pages.
-  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
+  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/infinity-affiliates.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
    || (['Oracle-Octaves','C13b0','Omni-Phi','News-Phi','Mckee-Coins-Inc','Omni-TV','Builder-Reserve'].includes(route.repo) && route.sourcePath === '/index.html');
   if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio','Alien-Coin'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
+  // Public housing intake can run inside QuantaPhi, but cannot submit or send answers.
+  if (route.repo === 'QuantaPhi' && route.sourcePath === '/disability-housing.html' && /text\/html/i.test(out.get('Content-Type') || '')) {
+   out.set('X-Frame-Options', 'SAMEORIGIN');
+   out.set('Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'");
+   out.set('Referrer-Policy', 'no-referrer');
+  }
   if (textual || !upstream.ok) out.set('Cache-Control', 'no-cache, max-age=0, must-revalidate');
   const contentType = out.get('Content-Type') || '';
   const infinityHtml = route.repo === 'C13b0' && /text\/html/i.test(contentType);

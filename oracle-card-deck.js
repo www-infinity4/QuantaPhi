@@ -13,6 +13,7 @@ const choices=[
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
+ ['disabilityHousingCard','Home Access · Housing with disability income'],
  ['pixieStoryCard','Pixie Stories · Read and explore'],
  ['googleTrendNba','NBA · Trending matchups'],
  ['googleTrendMlb','MLB · World Series'],
@@ -55,6 +56,7 @@ const CARD_DIRECTIONS={
  walmartShoppingCard:['walmart-shopping','Shopping','Shop Walmart pizza, groceries and related products'],
  cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
  quantaDirectoryCards:['public-directory','Directory','Search verified names, businesses and websites'],
+ disabilityHousingCard:['disability-housing','Housing','Prepare a housing intake with disability benefit income'],
  scienceQuickCards:['nasa-science','Science','Study current science and research'],
  pixieStoryCard:['pixie-stories','Stories','Read an original Pixie story'],
  googleTrendNba:['trending-nba','Sports','Explore an NBA match and related research'],
@@ -97,6 +99,7 @@ const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
  const names={zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ names.housing='disabilityHousingCard';names['disability-housing']='disabilityHousingCard';names['home-access']='disabilityHousingCard';
  const requested=url.searchParams.get('card');
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
 }catch{return null}})();

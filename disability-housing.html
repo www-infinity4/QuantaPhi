@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Home Access · Disability Housing | QuantaPhi</title>
+<meta name="description" content="A simple housing intake for people with disabilities. Explore USDA home loans, repairs, and rental assistance; save your summary and continue with official agencies.">
+<link rel="canonical" href="https://quantaphi.org/disability-housing.html">
+<meta property="og:type" content="website"><meta property="og:url" content="https://quantaphi.org/disability-housing.html">
+<meta property="og:title" content="Home Access · A simpler path to housing">
+<meta property="og:description" content="SSI or SSDI income? Prepare your housing intake, explore USDA and HUD programs, and take the next step with an official agency.">
+<meta property="og:image" content="https://quantaphi.org/assets/share/disability-housing-card.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Home Access by QuantaPhi, with a house and a green check mark. Prepare your housing intake.">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Home Access · Disability Housing"><meta name="twitter:description" content="A short housing intake, a saved plan, and official next steps."><meta name="twitter:image" content="https://quantaphi.org/assets/share/disability-housing-card.png">
+<link rel="stylesheet" href="/disability-housing.css?v=20261029-1">
+<script type="module" src="/disability-housing.mjs?v=20261029-1"></script>
+</head>
+<body class="ha-page">
+<a class="ha-skip" href="#haForm">Skip to housing intake</a>
+<main class="ha-app">
+ <nav class="ha-nav" aria-label="Home Access"><a class="ha-brand" href="/">Quanta<span>Phi</span><sup>®</sup></a><span>INFINITY · HOME ACCESS</span></nav>
+ <header class="ha-hero">
+  <div class="ha-hero-copy"><p class="ha-eyebrow">HOUSING, ONE STEP AT A TIME</p><h1>A place to<br>call <span>home.</span></h1><p>On SSI, SSDI, or other disability income? Start with a few answers. Leave with a housing plan and official next steps.</p><div class="ha-pills"><span>Free to use</span><span>No SSN needed</span><span>Save your progress</span></div></div>
+  <img src="/assets/share/disability-housing-house.svg" width="380" height="310" alt="" class="ha-hero-art">
+ </header>
+ <p class="ha-intro-note">QuantaPhi is an independent guide. This prepares your intake; an agency decides eligibility, funding, and approval.</p>
+ <section class="ha-panel" aria-labelledby="haStepTitle">
+  <ol class="ha-progress" aria-label="Intake progress"><li aria-current="step"><span>1</span>Your home</li><li><span>2</span>Your household</li><li><span>3</span>Your plan</li></ol>
+  <div class="ha-panel-body">
+   <p id="haRestore" class="ha-notice" hidden></p>
+   <p class="ha-step-label" id="haStepLabel">STEP 1 OF 3</p>
+   <h2 id="haStepTitle" tabindex="-1">What would help you most?</h2>
+   <form id="haForm" novalidate>
+    <section data-ha-step="1">
+     <fieldset class="ha-goal-field"><legend class="ha-sr">Your housing goal</legend><div class="ha-goals">
+      <label class="ha-goal"><input type="radio" name="goal" value="buy" checked><span><b aria-hidden="true">⌂</b><strong>Buy a home</strong><small>A home of my own</small></span></label>
+      <label class="ha-goal"><input type="radio" name="goal" value="repair"><span><b aria-hidden="true">⚒</b><strong>Repair my home</strong><small>Roof, access, safety</small></span></label>
+      <label class="ha-goal"><input type="radio" name="goal" value="rent"><span><b aria-hidden="true">▤</b><strong>Find a rental</strong><small>Help with housing costs</small></span></label>
+     </div></fieldset>
+     <div class="ha-grid"><label for="haState">State or territory <span class="ha-required">Required</span><select id="haState" name="state" required autocomplete="address-level1"><option value="">Choose your location</option></select><small data-error="state" class="ha-error"></small></label>
+     <label for="haCity">City or town <span class="ha-optional">Optional</span><input id="haCity" name="city" maxlength="80" autocomplete="address-level2" placeholder="For example, Lovilia"></label></div>
+     <details class="ha-details"><summary>Add a county, ZIP, or home you found</summary><div class="ha-details-body"><div class="ha-grid"><label for="haCounty">County<input id="haCounty" name="county" maxlength="80" placeholder="For example, Monroe"></label><label for="haZip">ZIP code<input id="haZip" name="zip" inputmode="numeric" maxlength="5" autocomplete="postal-code" pattern="[0-9]{5}"><small data-error="zip" class="ha-error"></small></label></div><label for="haProperty">Home address or listing link <span class="ha-optional">Optional</span><input id="haProperty" name="property" maxlength="180" placeholder="Add this later if you have not found a home"></label><label for="haPrice">Asking price <span class="ha-optional">Optional</span><div class="ha-money"><span>$</span><input id="haPrice" name="homePrice" type="number" min="0" max="10000000" step="0.01" inputmode="decimal" placeholder="0.00"></div><small data-error="homePrice" class="ha-error"></small></label></div></details>
+     <div class="ha-grid" id="haOwnerWrap" hidden><label for="haOwns">Do you own and live in this home?<select id="haOwns" name="ownsHome"><option value="unknown">Not sure / add later</option><option value="yes">Yes</option><option value="no">No</option></select></label></div>
+     <label id="haPrimaryWrap" for="haPrimary">Will this be the home you live in?<select id="haPrimary" name="primary"><option value="yes">Yes, my primary residence</option><option value="unknown">Not sure yet</option><option value="no">No</option></select></label>
+     <p class="ha-inline-info">You do not need to find a house before exploring your options.</p>
+    </section>
+    <section data-ha-step="2" hidden>
+     <p class="ha-helper">Benefit income can be considered. We do not need your diagnosis or medical records.</p>
+     <div class="ha-grid"><label for="haBenefits">Disability benefit income<select id="haBenefits" name="benefits"><option value="unknown">Not sure / prefer to add later</option><option value="ssi">SSI</option><option value="ssdi">SSDI</option><option value="both">SSI and SSDI</option><option value="other">Other disability benefits</option><option value="none">No disability benefit income</option></select></label><label for="haAge">Your age range<select id="haAge" name="age"><option value="unknown">Prefer to add later</option><option value="under18">Under 18</option><option value="18-61">18–61</option><option value="62plus">62 or older</option></select></label></div>
+     <div class="ha-grid"><label for="haHousehold">People who will live in the home<input id="haHousehold" name="householdSize" type="number" min="1" max="30" step="1" value="1" inputmode="numeric" required><small class="ha-helper">Include yourself.</small><small data-error="householdSize" class="ha-error"></small></label><label for="haIncome">Total monthly household income<div class="ha-money"><span>$</span><input id="haIncome" name="monthlyIncome" type="number" min="0" max="10000000" step="0.01" inputmode="decimal" placeholder="Before deductions" aria-describedby="haIncomeHelp"><span>/ mo</span></div><small id="haIncomeHelp" class="ha-helper">Include benefits and other income for everyone in the household. USDA makes program adjustments.</small><small data-error="monthlyIncome" class="ha-error"></small></label></div>
+     <label class="ha-check"><input type="checkbox" id="haIncomeUnknown" name="incomeUnknown"><span class="ha-check-mark" aria-hidden="true"></span><span>I will add income later.</span></label>
+     <details class="ha-details"><summary>Add a name and budget details <span class="ha-optional">Optional</span></summary><div class="ha-details-body"><label for="haName">Name for your saved summary<input id="haName" name="name" maxlength="100" autocomplete="name"></label><div class="ha-grid"><label for="haTarget">Total monthly housing budget<div class="ha-money"><span>$</span><input id="haTarget" name="targetPayment" type="number" min="0" max="10000000" step="0.01" inputmode="decimal" placeholder="Your goal, not a quote"></div><small data-error="targetPayment" class="ha-error"></small></label><label for="haCurrent">Current monthly housing payment<div class="ha-money"><span>$</span><input id="haCurrent" name="currentPayment" type="number" min="0" max="10000000" step="0.01" inputmode="decimal"></div><small data-error="currentPayment" class="ha-error"></small></label><label for="haDebts">Monthly debt payments<div class="ha-money"><span>$</span><input id="haDebts" name="monthlyDebts" type="number" min="0" max="10000000" step="0.01" inputmode="decimal"></div><small data-error="monthlyDebts" class="ha-error"></small></label><label for="haSavings">Approximate savings<div class="ha-money"><span>$</span><input id="haSavings" name="savings" type="number" min="0" max="10000000" step="0.01" inputmode="decimal"></div><small data-error="savings" class="ha-error"></small></label></div></div></details>
+    </section>
+    <div class="ha-form-footer"><button class="ha-secondary" type="button" id="haBack" hidden>← Back</button><button class="ha-primary" type="submit" id="haNext">Continue <span aria-hidden="true">→</span></button></div>
+    <p class="ha-form-error" id="haFormError" role="alert"></p>
+   </form>
+   <section id="haResults" hidden aria-label="Your housing plan">
+    <p class="ha-result-lede">Here are programs to discuss with an official agency. Your answers have not been submitted.</p>
+    <div id="haResultFacts" class="ha-result-facts"></div>
+    <div id="haPrograms"></div>
+    <section class="ha-next-steps"><h3>Your next steps</h3><ol id="haTasks"></ol></section>
+    <section id="haContact" class="ha-contact"></section>
+    <section class="ha-save-summary"><div><h3>Take your details with you.</h3><p>Save your intake summary, then use it to complete the agency’s application.</p></div><div class="ha-output-actions"><button type="button" id="haDownload" class="ha-primary">↓ Download summary</button><button type="button" id="haCopy" class="ha-secondary">Copy summary</button><button type="button" id="haPrint" class="ha-secondary">Print / save PDF</button></div></section>
+    <p class="ha-small">This summary is not an official loan or housing application. Government sign-in, signatures, document delivery, and credit authorizations happen through the agency’s approved process.</p>
+    <button type="button" id="haEdit" class="ha-secondary">← Edit my answers</button>
+   </section>
+  </div>
+ </section>
+ <section class="ha-privacy" aria-label="Your answers"><div><strong>Your answers, your choice.</strong><p>Kept in this tab while you work. This guide does not send your answers to USDA, HUD, or QuantaPhi’s servers. Saving a draft keeps a copy in this browser.</p></div><label class="ha-check"><input type="checkbox" id="haRemember"><span class="ha-check-mark" aria-hidden="true"></span><span>Save a draft on this device <small>Use a private device. Uncheck to delete the saved copy.</small></span></label><button type="button" id="haClear" class="ha-text-button">Clear my answers</button><p id="haStatus" role="status" aria-live="polite"></p></section>
+ <details class="ha-details ha-about"><summary>Official sources and how this guide works</summary><div class="ha-details-body"><p>Independent QuantaPhi guide, not a government agency or lender. Benefit income alone does not establish eligibility. Income limits depend on location and household size; agencies verify the complete application. There is no guaranteed home, approval date, or $100 monthly payment.</p><ul><li><a href="https://www.rd.usda.gov/programs-services/single-family-housing-programs/direct-home-loans" target="_blank" rel="noopener noreferrer">USDA home purchase programs</a></li><li><a href="https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-repair-loans-grants" target="_blank" rel="noopener noreferrer">USDA repair loans and grants</a></li><li><a href="https://www.rd.usda.gov/files/3550-1chapter04.pdf" target="_blank" rel="noopener noreferrer">USDA income and borrower guidance</a></li><li><a href="https://www.hud.gov/helping-americans/public-indian-housing-hcv-homeownership" target="_blank" rel="noopener noreferrer">HUD voucher homeownership</a></li><li><a href="https://www.hud.gov/contactus/public-housing-contacts" target="_blank" rel="noopener noreferrer">HUD local housing agencies</a></li></ul><p>Sources checked October 29, 2026. Confirm current terms and funding with the agency. Do not enter SSNs, bank account numbers, passwords, or medical records in this guide.</p></div></details>
+ <div id="haCardActions" class="ha-card-actions" aria-label="Share and collect this housing card"></div>
+ <footer class="ha-footer"><a href="/">∞ QuantaPhi</a><span>HOME ACCESS · BUILT FOR A CLEARER NEXT STEP</span><a href="/privacy.html">Privacy</a></footer>
+ <noscript><p class="ha-notice">Turn on JavaScript to prepare your intake. You can also <a href="https://www.rd.usda.gov/about-rd/state-offices">contact a USDA office</a> or <a href="https://www.hud.gov/contactus/public-housing-contacts">find a local housing agency</a> directly.</p></noscript>
+</main>
+<pre id="haPrintSummary" class="ha-print-summary"></pre>
+<dialog id="haClearDialog" class="ha-confirm" aria-labelledby="haClearTitle"><h2 id="haClearTitle">Clear your housing answers?</h2><p>This removes the answers in this tab and the saved draft in this browser. Download your summary first if you want to keep it.</p><div class="ha-output-actions"><button type="button" id="haCancelClear" class="ha-secondary">Keep my answers</button><button type="button" id="haConfirmClear" class="ha-primary">Clear answers</button></div></dialog>
+</body>
+</html>

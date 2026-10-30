@@ -1,4 +1,4 @@
-import {searchQuickCards} from './quick-card-search-core.mjs?v=20261028-search1';
+import {searchQuickCards} from './quick-card-search-core.mjs?v=20261029-housing1';
 import {createCardArtwork} from './quanta-card-experience.mjs?v=20261027-karaoke1';
 import {mountCardActions} from './quanta-card-actions.mjs';
 import {openQuickCardPreview} from './quick-card-preview.mjs';
@@ -11,13 +11,14 @@ export function showQuickCardMatches(query){
  const grid=el('div','qsr-grid');host.append(grid);
  for(const card of cards){
   const article=el('article','qsr-card');article.dataset.quickCardMatch=card.id;
-  article.append(createCardArtwork(card,true));
+  if(card.internal&&card.shareImage){const image=el('img','qsr-housing-image');image.src=card.shareImage;image.alt='Home Access · Disability Housing';image.style.cssText='width:100%;height:auto;border-radius:12px;display:block';article.append(image);}
+  else article.append(createCardArtwork(card,true));
   const body=el('div','qsr-body'),heading=el('h3'),title=el('a','qsr-title',card.name);
   title.href=card.route;
   title.addEventListener('click',event=>{if(openQuickCardPreview({url:card.route,title:card.name,description:card.description,official:card.official}))event.preventDefault()});
   heading.append(title);body.append(heading,el('p','qsr-domain',new URL(card.official).hostname));
-  const visit=el('a','qsr-visit','Visit '+card.name+' ↗');visit.href=card.official;visit.target='_blank';visit.rel='noopener';visit.referrerPolicy='strict-origin-when-cross-origin';body.append(visit);
-  const actions=el('div','qsr-actions');mountCardActions(actions,card);body.append(actions);article.append(body);grid.append(article);
+  const visit=el('a','qsr-visit',card.internal?'Start housing intake →':'Visit '+card.name+' ↗');visit.href=card.internal?card.route:card.official;visit.target=card.internal?'_self':'_blank';visit.rel='noopener';visit.referrerPolicy='strict-origin-when-cross-origin';body.append(visit);
+  const actions=el('div','qsr-actions');mountCardActions(actions,card,card.internal?{websiteReader:false,showOriginal:false}:{});body.append(actions);article.append(body);grid.append(article);
  }
  return cards;
 }
