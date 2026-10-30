@@ -166,3 +166,43 @@ test('history storage failure blocks both automatic and confirmed New chat witho
  assert.equal(clears,0);
  assert.match(ctx.chatsMessage.textContent,/could not be saved/);
 });
+
+test('conversation index storage failure blocks History saves even when the thread payload was written',()=>{
+ const a=ui.indexOf('function saveThread(){');
+ const b=ui.indexOf('function persistChat(){',a);
+ assert.ok(a>0&&b>a,'actual History writer exists');
+ const writes=[];
+ const ctx={
+  keepChat:true,embedded:false,THREAD_PREFIX:'threads:',THREAD_INDEX:'threads',
+  activeThread:'old',messages:[{role:'user',text:'Important earlier turn'}],
+  threadIndex:[{id:'old',title:'New conversation',updated:1}],
+  save:(key)=>{writes.push(key);return key!=='threads'}
+ };
+ const result=vm.runInNewContext(ui.slice(a,b)+';saveThread()',ctx);
+ assert.equal(result,false,'a saved message blob is not enough without its History index');
+ assert.deepEqual(writes,['threads:old','threads']);
+});
+
+test('new chat preserves the active session when the new History index cannot be written',async()=>{
+ const a=ui.indexOf('async function startConversation(');
+ const b=ui.indexOf("newConversation.addEventListener('click'",a);
+ assert.ok(a>0&&b>a);
+ const events=[];
+ const ctx={
+  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+  chatsMessage:{textContent:''},keepChat:true,
+  messages:[],activeThread:'old',
+  threadIndex:[{id:'old',title:'Earlier conversation',updated:1}],
+  pendingImage:null,pendingImages:[],input:{value:''},noteText:{value:''},workText:{value:''},
+  readThread:()=>[],freshThreadId:()=> 'chat_new',
+  save:(key)=>{events.push('save:'+key);return false},THREAD_INDEX:'threads',
+  sessionStorage:{setItem:()=>events.push('session')},
+  conversation:{replaceChildren:()=>events.push('cleared')}
+ };
+ const start=vm.runInNewContext(ui.slice(a,b)+';startConversation',ctx);
+ assert.equal(await start({automatic:true}),false);
+ assert.deepEqual(events,['save:threads'],'failed index must not change session or clear chat');
+ assert.equal(ctx.activeThread,'old');
+ assert.deepEqual(ctx.threadIndex.map(x=>x.id),['old']);
+ assert.match(ctx.chatsMessage.textContent,/History could not be saved/);
+});
