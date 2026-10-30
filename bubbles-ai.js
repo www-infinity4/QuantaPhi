@@ -3916,10 +3916,16 @@ window.QuantaBubbles={
   const result=[...combined.values()].sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id)).slice(-160);
   if(!result.length)return true;
   if(!save(THREAD_PREFIX+id,result))return false;
-  let row=threadIndex.find(t=>t.id===id);
-  if(!row){row={id,title:id===SHARED_MAIN_THREAD?'Bubbles shared chat':'Recovered Android conversation',updated:Date.now()};threadIndex.push(row);}
-  row.updated=Math.max(row.updated||0,...result.map(m=>m.at));
-  save(THREAD_INDEX,threadIndex.slice(-150));
+  // Native crash recovery must not report success if History cannot index
+  // the recovered transcript. Stage the row first so quota/privacy failures
+  // cannot mutate the in-memory index or hide the recovery error.
+  const priorRow=threadIndex.find(t=>t.id===id);
+  const updated=Math.max(priorRow?.updated||0,...result.map(m=>m.at));
+  const nextRow=priorRow?{...priorRow,updated}:
+   {id,title:id===SHARED_MAIN_THREAD?'Bubbles shared chat':'Recovered Android conversation',updated};
+  const nextIndex=priorRow?threadIndex.map(t=>t.id===id?nextRow:t):[...threadIndex,nextRow];
+  if(!save(THREAD_INDEX,nextIndex.slice(-150)))return false;
+  threadIndex=nextIndex;
   if(id===activeThread){
    const seen=new Set(messages.map(m=>m.id));
    const additions=result.filter(m=>!seen.has(m.id));
