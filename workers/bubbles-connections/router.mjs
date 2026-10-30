@@ -124,6 +124,10 @@ export async function handleConnections(request,env,resolveService) {
   // or cross-site reads. A bearer token is still required on protected routes.
   const browserSameOriginRead = request.method === 'GET' && !request.headers.has('Origin')
     && ORIGINS.has(url.origin) && request.headers.get('Sec-Fetch-Site') === 'same-origin';
+  // Expose only non-sensitive server readiness for a direct GET readback.
+  // The owner alias list, wallet IDs, credentials and secret config stay private.
+  if(request.method==='GET'&&url.pathname===PASSKEY_PREFIX+'/status'&&!origin)
+    return handleOwnerPasskeyRequest(request,env,walletIdentity);
   if (!ORIGINS.has(origin) && !browserSameOriginRead) return json(origin,{ok:false,error:'origin_not_allowed'},403);
   if (request.method === 'OPTIONS') return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origin,
     'Access-Control-Allow-Headers':'Authorization, Content-Type','Access-Control-Allow-Methods':'GET, POST, OPTIONS','Vary':'Origin'}});
