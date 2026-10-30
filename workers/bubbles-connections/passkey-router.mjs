@@ -1,3 +1,4 @@
+import {parseOwnerAliasRegistry} from './owner-passkeys.mjs';
 const PREFIX='/api/quant-mail/passkeys';
 const ORIGIN='https://quantaphi.org',RP_ID='quantaphi.org';
 const json=(value,status=200,extra={})=>Response.json(value,{status,headers:{
@@ -31,7 +32,8 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
  if(!allowed.has(suffix))return deny('not_found',404);
  if(!['GET','POST'].includes(request.method))return deny('method_not_allowed',405);
  if(request.method==='POST'&&request.headers.get('Origin')!==ORIGIN)return deny('origin_not_allowed');
- const enabled=String(env.PASSKEY_ENABLED||'')==='true'&&Boolean(env.CONNECTIONS&&env.BOT_WALLET?.fetch);
+ const registry=parseOwnerAliasRegistry(env.OWNER_EMAIL_ALIAS_REGISTRY);
+ const enabled=String(env.PASSKEY_ENABLED||'')==='true'&&Boolean(registry&&env.CONNECTIONS&&env.BOT_WALLET?.fetch);
  const base={ok:true,enabled,registrationReady:enabled,loginReady:enabled,rpId:RP_ID};
  if(suffix==='/status'&&request.method==='GET')return json(base);
  if(!enabled)return json({ok:false,error:'passkey_service_not_ready'},503);
@@ -48,7 +50,7 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
  let body;
  try{body=await readJson(request);}catch{return deny('invalid_json',400);}
  const alias=body?.alias;
- if(typeof alias!=='string'||!['kris@quantaphi.org','administrator@quantaphi.org'].includes(alias))
+ if(typeof alias!=='string'||!Object.values(registry).includes(alias.toLowerCase().trim()))
   return deny('owner_alias_invalid',400);
  if(!body||JSON.stringify(body).length>24000)return deny('invalid_payload',400);
  try{
@@ -79,7 +81,7 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
   }
   if(suffix==='/login/finish'){
    let adminAuthorized=false;
-   if(alias==='administrator@quantaphi.org'){
+   if(alias===registry.administrator){
     // Administrator step-up is a separate server-side RBAC check, not an
     // alias selector or a passkey credential alone. Fail closed until the
     // wallet's dedicated admin role claim is independently implemented.
@@ -98,7 +100,7 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
    const value=await svc.passkeyLoginFinish({alias,attemptId:body.attemptId,credential:body.credential,adminAuthorized});
    if(!value?.sessionEstablished||!value.sessionToken)return deny('passkey_session_unavailable');
    const {sessionToken,...publicValue}=value;
-   return json(publicValue,200,{'Set-Cookie':passkeyCookie(sessionToken,alias==='administrator@quantaphi.org')});
+   return json(publicValue,200,{'Set-Cookie':passkeyCookie(sessionToken,alias===registry.administrator)});
   }
  }catch(error){
   const code=errorCode(error);
