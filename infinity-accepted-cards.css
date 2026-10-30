@@ -32,3 +32,18 @@
 .iac-affiliate-link{display:flex;align-items:center;justify-content:center;margin:9px 0;padding:12px 11px;border-radius:12px;background:#e7f3fa;border:1px solid #9ac6dc;color:#155579;font:800 .8rem/1.3 system-ui;text-align:center;text-decoration:none;min-height:46px}
 body.oracle-quanta #oracleCardStage > .iac-card{max-height:none;height:auto;overflow:clip;overscroll-behavior:auto;scrollbar-gutter:auto;animation:none;transition:none;transform:none}
 @media(max-width:420px){.iac-heading,.iac-title,.iac-content{padding-left:12px;padding-right:12px}.iac-media{height:148px;margin-inline:12px}.iac-website-actions{gap:6px}.iac-website-actions :is(button,a){font-size:.78rem;padding:10px 5px}}
+
+/* Publisher/item-led Infinity source product cards. Keep CTAs visible at mobile widths,
+   without a second decorative hero or false in-site checkout. */
+.iac-product-feature{margin:0 12px 10px;border:1px solid #cadde8;border-radius:16px;overflow:hidden;background:#fff}
+.iac-product-image-link{display:block;min-height:70px;background:#f3f6f7;text-decoration:none}
+.iac-product-image-link img{display:block;width:100%;height:auto;max-height:280px;aspect-ratio:4/3;object-fit:contain;object-position:center;background:#f6f8f8}
+.iac-product-fallback{display:grid;place-items:center;min-height:100px;padding:15px;color:#194a6e;font-weight:800;text-align:center}
+.iac-product-detail{padding:14px 14px 16px}
+.iac-product-eyebrow{font:800 10px/1.4 system-ui;letter-spacing:.09em;color:#275b77}
+.iac-product-detail h3{margin:7px 0;font:850 clamp(20px,5vw,26px)/1.2 system-ui;color:#142e3e}
+.iac-product-price{font:850 18px/1.4 system-ui;color:#173c5a}
+.iac-product-availability{font:13px/1.45 system-ui;color:#495e67;margin:6px 0 12px}
+.iac-product-buy{display:grid;place-items:center;min-height:50px;padding:9px 12px;border-radius:12px;background:#086f9f;color:#fff!important;font:850 15px/1.35 system-ui;text-decoration:none;text-align:center}
+.iac-product-source{display:block;margin-top:9px;font:11px/1.45 system-ui;color:#5d6a70}
+@media(max-width:420px){.iac-product-feature{margin:0 9px 8px}.iac-product-image-link img{max-height:245px}.iac-product-detail{padding:12px}.iac-product-detail h3{font-size:21px}}
