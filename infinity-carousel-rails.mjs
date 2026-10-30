@@ -42,8 +42,9 @@ function init(){
  const brands=make('details','icr-brand-library');
  const label=make('summary','', '∞ Infinity Approved brands · Browse or request inclusion');
  const p=make('p','', 'Brand identity cards are grouped here instead of taking over the main browsing area. Inclusion starts with a public website nomination and source-backed review; it is not automatic endorsement.');
- const directory=make('a','', 'Browse brands & request a website review');directory.href='/infinity-affiliates.html';
- brands.append(label,p,directory);root.append(brands);
+ const directory=make('a','', 'Browse approved brands & affiliations');directory.href='/infinity-affiliates.html';
+ const survey=make('a','','Request a new website inclusion survey');survey.href='/infinity-inclusion-survey.html';
+ brands.append(label,p,survey,directory);root.append(brands);
  function refreshSourcePhotos(){
   for(const tile of root.querySelectorAll('.icr-tile[data-card-id]')){
    if(tile.querySelector('.icr-tile-art img'))continue;
