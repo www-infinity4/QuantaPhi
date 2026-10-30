@@ -63,7 +63,10 @@ export function formatHandoff(tickets,{checkedAt=new Date().toISOString(),covera
    'Original request: '+clean(t.request||'',1200),
    'Updated: '+clean(t.updatedAt||'',55)];
   for(const j of Array.isArray(t.jobs)?t.jobs:[]){
-   const phase=j.phase||j.status||'unknown';
+   // A persisted "working" label without a fresh individual runner receipt is not live activity.
+   const age=Date.now()-Date.parse(j.lastAttempt||'');
+   const recent=Number.isFinite(age)&&age>=0&&age<=20*60000&&Boolean(j.runUrl);
+   const phase=j.status==='working'&&!recent?'unverified_or_stale_working':(j.phase||j.status||'unknown');
    lines.push('JOB '+clean(j.jobId||'ticket-level',65)+' | status='+clean(j.status||'unknown',45)+' | phase='+clean(phase,55));
    if(j.repository)lines.push('Repository: '+clean(j.repository,110));
    if(j.lastAttempt)lines.push('Last recorded attempt: '+clean(j.lastAttempt,55));
