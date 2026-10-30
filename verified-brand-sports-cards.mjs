@@ -18,6 +18,11 @@ function link(label,href,cls){
  return a;
 }
 const isEvent=c=>c.event==='NFL'||c.event==='MLB';
+export function isPastDatedGame(card,now=Date.now()){
+ if(!card||!['game','matchup','lineup','tracker'].includes(card.kind)||!isEvent(card)||!/^\d{4}-\d{2}-\d{2}$/.test(card.date||''))return false;
+ const midnight=Date.parse(card.date+'T00:00:00Z');
+ return Number.isFinite(midnight)&&now>=midnight+36*60*60*1000;
+}
 function createVisual(card,article){
  const visual=el('div','vbs-art vbs-'+card.kind);
  const primary=el('img','vbs-identity');
@@ -86,16 +91,18 @@ export function createVerifiedCard(card){
  node.dataset.kind=card.kind;
  node.dataset.category=card.category;
  node.dataset.checked=card.checked;
+ const archivedGame=isPastDatedGame(card);node.dataset.pastGame=String(archivedGame);
  if(card.nonTargeted)node.dataset.personalization='disabled';
  node.append(createVisual(card,node));
  const info=el('div','vbs-info');
- info.append(el('p','vbs-kicker',distinctLead(card)),el('h3','vbs-title',card.name));
+ info.append(el('p','vbs-kicker',archivedGame?'PAST MATCHUP · OFFICIAL RECAP':distinctLead(card)),el('h3','vbs-title',card.name));
  if(isEvent(card)){
   const p=el('p','vbs-broadcaster','SOURCE: '+(card.event==='NFL'?'NFL / OFFICIAL TEAM':'MLB / OFFICIAL TEAM')+
    (card.network?' · '+card.network:''));
   info.append(p);
  }
  info.append(el('p','vbs-description',card.description));
+ if(archivedGame)info.append(el('p','vbs-archive-note','This dated event is in the past, not a live broadcast. Use the official game center for verified results and highlights.'));
  if(card.kind==='coupon'){
   if(card.offer){
    const now=new Date();const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
@@ -113,7 +120,7 @@ export function createVerifiedCard(card){
   info.append(el('p','vbs-neutral','Independent civic directory. Not an endorsement or an official government application.'));
  }
  if(isEvent(card)){
-  const live=el('p','vbs-updates','Scores and highlights can change. Open the official game center for current play-by-play; no live game feed is claimed here.');
+  const live=el('p','vbs-updates',archivedGame?'Archived event: open the official game center for results and replay sources; no live game feed is claimed here.':'Scores and highlights can change. Open the official game center for current play-by-play; no live game feed is claimed here.');
   info.append(live);
  }
  const controls=el('nav','vbs-topics');controls.setAttribute('aria-label',card.name+' actions');
@@ -158,7 +165,7 @@ function appendSportsCoverage(card,info,node){
  if(!record)return;
  const [domain,query]=record;
  const panel=el('section','vbs-news-panel');
- const title=el('h4','vbs-news-title','Recent official-source coverage');
+ const title=el('h4','vbs-news-title',isPastDatedGame(card)?'Official-source coverage of this past event':'Recent official-source coverage');
  const status=el('p','vbs-news-status','Source headlines load only when this card opens.');
  const results=el('div','vbs-news-results');
  const refresh=el('button','vbs-news-refresh','Refresh source headlines');refresh.type='button';
