@@ -18,6 +18,13 @@ function link(label,href,cls){
  return a;
 }
 const isEvent=c=>c.event==='NFL'||c.event==='MLB';
+// Dated game previews must not be promoted as current weeks after kickoff.
+// Historical recaps and verified highlights remain available as archival sources.
+export function isExpiredOneOff(card,now=Date.now()){
+ if(!['game','matchup','lineup','tracker'].includes(card?.kind)||!/^\\d{4}-\\d{2}-\\d{2}$/.test(card.date||''))return false;
+ const day=Date.parse(card.date+'T00:00:00Z');
+ return Number.isFinite(day)&&now>day+48*60*60*1000;
+}
 function createVisual(card,article){
  const visual=el('div','vbs-art vbs-'+card.kind);
  const primary=el('img','vbs-identity');
@@ -79,7 +86,7 @@ const sampleAnnouncerFacts=Object.freeze([
 ]);
 export function createVerifiedCard(card){
  if(!validBrandSportsCard(card))throw Error('unverified_card_source');
- const node=el('article','iqc-card vbs-card vbs-kind-'+card.kind+' vbs-category-'+(card.event||'original').toLowerCase());
+ const node=el('article','iqc-card vbs-card vbs-kind-'+card.kind+' vbs-category-'+(card.event||'original').toLowerCase()+(card.heroImage?' vbs-photo-led':''));
  node.dataset.sourceId=card.id;
  node.dataset.sourceName=card.name;
  node.dataset.sourceReady='false';
@@ -96,6 +103,7 @@ export function createVerifiedCard(card){
   info.append(p);
  }
  info.append(el('p','vbs-description',card.description));
+ if(card.heroImage&&card.photoAsOf)info.append(el('p','vbs-photo-credit',card.photoAsOf));
  if(card.kind==='coupon'){
   if(card.offer){
    const now=new Date();const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
@@ -120,8 +128,9 @@ export function createVerifiedCard(card){
  for(const action of card.actions){
   controls.append(link(action.label,action.url,'vbs-source-action'));
  }
+ if(card.kind==='broadcast'&&isEvent(card))appendSportsCoverage(card,info,node);
  info.append(controls);
- if(isEvent(card))appendSportsCoverage(card,info,node);
+ if(card.kind!=='broadcast'&&isEvent(card))appendSportsCoverage(card,info,node);
  if(card.kind==='announcer')appendAnnouncer(info);
  const notes=el('p','vbs-attribution','Verified source links · Checked '+card.checked+' · Independent QuantaPhi card, not an official endorsement or paid advertisement.');
  info.append(notes);
@@ -136,7 +145,7 @@ export function createVerifiedCard(card){
 }
 const sportsQueries=Object.freeze({
  'packers-lions-2026':['packers.com','Packers Lions October 25 2026 play-by-play highlights'],
- 'fox-nfl-watch':['foxsports.com','Packers Lions NFL October 25 2026 highlights'],
+ 'fox-nfl-watch':['foxsports.com','NFL latest scores schedule and highlights'],
  'lions-interception-watch':['detroitlions.com','Packers Lions 2026 interceptions takeaways highlight'],
  'packers-next-schedule':['packers.com','Packers next game 2026 schedule'],
  'lions-next-schedule':['detroitlions.com','Lions next game 2026 schedule'],
@@ -231,7 +240,7 @@ export function mountVerifiedCards(){
  const bank=document.getElementById('verifiedBrandSportsCards');
  if(!bank||bank.dataset.mounted==='true')return;
  bank.dataset.mounted='true';
- const valid=REQUESTED_PUBLIC_CARDS.filter(validBrandSportsCard);
+ const valid=REQUESTED_PUBLIC_CARDS.filter(card=>validBrandSportsCard(card)&&!isExpiredOneOff(card));
  // Keep source widgets in their original hidden bank. The Oracle top viewer
  // moves the same DOM node into the spotlight and preserves all click handlers.
  bank.append(...valid.map(createVerifiedCard));
