@@ -1,7 +1,7 @@
-import {
- generateRegistrationOptions,verifyRegistrationResponse,
- generateAuthenticationOptions,verifyAuthenticationResponse
-} from '@simplewebauthn/server';
+// Load the pinned verifier only for an actual WebAuthn ceremony. Existing
+// account/connection readers must not require the package just to import router.
+let verifierPromise;
+const verifier=()=>verifierPromise||(verifierPromise=import('@simplewebauthn/server'));
 
 const RP_ID='quantaphi.org',ORIGIN='https://quantaphi.org';
 // The two owner aliases are configured privately at runtime, never in public source.
@@ -42,7 +42,7 @@ export class OwnerPasskeys {
   if(state.credentials.some(c=>c.alias===chosen))invalid('alias_passkey_already_registered');
   if(state.credentials.length>=2)invalid('passkey_limit');
   const userID=new Uint8Array(await crypto.subtle.digest('SHA-256',enc.encode('quant-mail-owner:'+subject+':'+chosen)));
-  const options=await generateRegistrationOptions({
+  const options=await (await verifier()).generateRegistrationOptions({
    rpName:'QuantaPhi Quant Mail',rpID:RP_ID,
    userID,userName:chosen,attestationType:'none',
    excludeCredentials:state.credentials.filter(c=>c.alias===chosen).map(c=>({id:c.id,transports:c.transports||[]})),
@@ -71,7 +71,7 @@ export class OwnerPasskeys {
   if(!validOwner(subject))invalid('verified_owner_required');
   if(!cleanCredential(credential))invalid('passkey_response_invalid');
   const record=await this.consume(attemptId,'register',alias,subject);
-  const result=await verifyRegistrationResponse({
+  const result=await (await verifier()).verifyRegistrationResponse({
    response:credential,expectedChallenge:record.challenge,expectedOrigin:ORIGIN,
    expectedRPID:RP_ID,requireUserVerification:true
   });
@@ -107,7 +107,7 @@ export class OwnerPasskeys {
   const chosen=allowedAlias(alias,this.registry);
   if(!chosen)invalid('owner_alias_invalid');
   const state=await this.load();
-  const options=await generateAuthenticationOptions({
+  const options=await (await verifier()).generateAuthenticationOptions({
    rpID:RP_ID,userVerification:'required',timeout:60000,
    allowCredentials:state.credentials.filter(c=>c.alias===chosen).map(c=>({id:c.id,transports:c.transports||[]}))
   });
@@ -126,7 +126,7 @@ export class OwnerPasskeys {
   const state=await this.load();
   const stored=state.credentials.find(c=>c.id===credential.id&&c.alias===record.alias);
   if(!stored||!validOwner(state.subject))invalid('passkey_unrecognized');
-  const result=await verifyAuthenticationResponse({
+  const result=await (await verifier()).verifyAuthenticationResponse({
    response:credential,expectedChallenge:record.challenge,expectedOrigin:ORIGIN,
    expectedRPID:RP_ID,requireUserVerification:true,
    credential:{id:stored.id,publicKey:bytes(stored.publicKey),
