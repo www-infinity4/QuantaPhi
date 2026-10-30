@@ -6,6 +6,14 @@ const json=(value,status=200,extra={})=>Response.json(value,{status,headers:{
  'Referrer-Policy':'no-referrer','Vary':'Origin',...extra}});
 const deny=(error,status=403)=>json({ok:false,error},status);
 const cookieName='qp_owner_passkey';
+export function authorizedOwnerWallet(request,identity,env){
+ const token=request.headers.get('Authorization')||'';
+ const subject=String(env.PASSKEY_OWNER_ACCOUNT_ID||'');
+ return /^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(token)
+  &&subject.length>0&&subject.length<160
+  &&typeof identity?.userId==='string'&&identity.userId===subject;
+}
+
 export function passkeyCookie(token,admin=false){
  return cookieName+'='+token+'; Path='+PREFIX+'; Secure; HttpOnly; SameSite=Strict; Max-Age='+(admin?'300':'43200');
 }
@@ -33,7 +41,7 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
  if(!['GET','POST'].includes(request.method))return deny('method_not_allowed',405);
  if(request.method==='POST'&&request.headers.get('Origin')!==ORIGIN)return deny('origin_not_allowed');
  const registry=parseOwnerAliasRegistry(env.OWNER_EMAIL_ALIAS_REGISTRY);
- const enabled=String(env.PASSKEY_ENABLED||'')==='true'&&Boolean(registry&&env.CONNECTIONS&&env.BOT_WALLET?.fetch);
+ const enabled=String(env.PASSKEY_ENABLED||'')==='true'&&Boolean(registry&&env.CONNECTIONS&&env.BOT_WALLET?.fetch&&String(env.PASSKEY_OWNER_ACCOUNT_ID||''));
  const base={ok:true,enabled,registrationReady:enabled,loginReady:enabled,rpId:RP_ID};
  if(suffix==='/status'&&request.method==='GET')return json(base);
  if(!enabled)return json({ok:false,error:'passkey_service_not_ready'},503);
@@ -55,16 +63,11 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
  if(!body||JSON.stringify(body).length>24000)return deny('invalid_payload',400);
  try{
   if(suffix.startsWith('/register/')){
+   // Existing Unified Wallet already validates this device token with
+   // /v1/wallet/state. A private server-only copy of its configured owner
+   // account ID then restricts enrollment; browser alias cannot grant it.
    const identity=await verifyWallet(request,env);
-   if(!identity?.userId||request.headers.get('Authorization')?.startsWith('Bearer bc_'))
-    return deny('owner_wallet_required',401);
-   // Only the Unified Wallet may assert owner subject by matching its
-   // server-configured RECOVERY_OWNER_ACCOUNT_ID; never use a browser-supplied role.
-   const auth=await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/passkey-owner',{
-    headers:{Authorization:request.headers.get('Authorization')||''},
-    signal:AbortSignal.timeout(9000)});
-   const proof=await auth.json().catch(()=>({}));
-   if(!auth.ok||proof?.ok!==true||proof?.ownerVerified!==true)
+   if(!authorizedOwnerWallet(request,identity,env))
     return deny('owner_verification_required');
    const args={alias,subject:identity.userId};
    const value=suffix==='/register/begin'
@@ -82,18 +85,11 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
   if(suffix==='/login/finish'){
    let adminAuthorized=false;
    if(alias===registry.administrator){
-    // Administrator step-up is a separate server-side RBAC check, not an
-    // alias selector or a passkey credential alone. Fail closed until the
-    // wallet's dedicated admin role claim is independently implemented.
+    // Administrator is the second reserved alias of the SAME confirmed
+    // owner subject. Require a fresh existing owner wallet device session
+    // in addition to a user-verified WebAuthn assertion.
     const identity=await verifyWallet(request,env);
-    const bearer=request.headers.get('Authorization')||'';
-    if(!identity?.userId||!/^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(bearer))
-     return deny('admin_role_verification_required');
-    const auth=await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/passkey-owner',{
-     headers:{Authorization:bearer},signal:AbortSignal.timeout(9000)});
-    const proof=await auth.json().catch(()=>({}));
-    if(!auth.ok||proof?.ok!==true||proof.ownerVerified!==true||
-       proof.adminVerified!==true||String(proof.userId)!==String(identity.userId))
+    if(!authorizedOwnerWallet(request,identity,env))
      return deny('admin_role_verification_required');
     adminAuthorized=true;
    }
