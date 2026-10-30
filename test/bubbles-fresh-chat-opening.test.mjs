@@ -315,3 +315,37 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  assert.equal(busy.confirmations,0);
  assert.equal(busy.clears,0);
 });
+
+test('History-off turns survive automatic website and Android reopen without unsent composer text',async()=>{
+ const a=ui.indexOf('async function startConversation(');
+ const b=ui.indexOf("newConversation.addEventListener('click'",a);
+ assert.ok(a>0&&b>a,'real fresh-chat handler exists');
+ let clears=0;
+ const state={
+  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+  chatsMessage:{textContent:''},keepChat:false,
+  messages:[{id:'prior_turn',role:'user',text:'History disabled but still active'}],
+  activeThread:'chat_live',threadIndex:[{id:'chat_live',title:'Current chat',updated:1}],
+  input:{value:''},noteText:{value:''},workText:{value:''},
+  pendingImage:null,pendingImages:[],
+  saveThread:()=>{throw Error('must not attempt History storage')},
+  freshThreadId:()=>{throw Error('must not create a new chat')},
+  conversation:{replaceChildren:()=>{clears++}}
+ };
+ const start=vm.runInNewContext(ui.slice(a,b)+';startConversation',state);
+ assert.equal(await start({automatic:true}),false,'automatic reopen must preserve unsaved History-off turns');
+ assert.equal(state.activeThread,'chat_live');
+ assert.equal(state.messages[0].text,'History disabled but still active');
+ assert.equal(clears,0);
+ const n=ui.indexOf('startFreshOnReopen:()=>{');
+ const e=ui.indexOf(' // The native Android foreground service',n);
+ assert.ok(n>0&&e>n,'real Android reopen bridge exists');
+ let starts=0;
+ const native=vm.runInNewContext('({'+ui.slice(n,e)+'}).startFreshOnReopen',{
+  nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+  keepChat:false,messages:state.messages,input:{value:''},noteText:{value:''},workText:{value:''},
+  pendingImage:null,pendingImages:[],startConversation:()=>{starts++}
+ });
+ assert.equal(native(),false,'Android must report no fresh chat when History-off turns exist');
+ assert.equal(starts,0);
+});
