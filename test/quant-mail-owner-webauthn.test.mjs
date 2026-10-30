@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {OwnerPasskeys,PASSKEY_CONSTANTS} from '../workers/bubbles-connections/owner-passkeys.mjs';
-import {handleOwnerPasskeyRequest,passkeyCookie} from '../workers/bubbles-connections/passkey-router.mjs';
+import {handleOwnerPasskeyRequest,passkeyCookie,authorizedOwnerWallet} from '../workers/bubbles-connections/passkey-router.mjs';
 const now=1793310000000;
 class Storage{
  constructor(){this.map=new Map();}
@@ -28,7 +28,7 @@ const stub={
  passkeyValidateSession:async()=>({valid:false})
 };
 const service={get:()=>stub,idFromName:x=>x};
-const env={PASSKEY_ENABLED:'true',OWNER_EMAIL_ALIAS_REGISTRY:privateAliases,CONNECTIONS:service,BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:true})}};
+const env={PASSKEY_ENABLED:'true',OWNER_EMAIL_ALIAS_REGISTRY:privateAliases,PASSKEY_OWNER_ACCOUNT_ID:walletSubject,CONNECTIONS:service,BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:true})}};
 const ownerAuth=async()=>({userId:walletSubject});
 test('passkey challenge uses exact website RP and verified local user presence',async()=>{
  const p=make();
@@ -76,9 +76,9 @@ test('owner wallet and same-origin post are mandatory for passkey registration',
  const wrong=await json(await handleOwnerPasskeyRequest(request('/register/begin',body,{origin:'https://evil.test'}),env,ownerAuth));
  assert.equal(wrong.status,403);
  const notOwner=await json(await handleOwnerPasskeyRequest(request('/register/begin',body),{
-  ...env,BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:false})}},ownerAuth));
+  ...env},async()=>({userId:'unrecognized-user'})));
  assert.equal(notOwner.status,403);
- const valid=await json(await handleOwnerPasskeyRequest(request('/register/begin',body),env,ownerAuth));
+ const valid=await json(await handleOwnerPasskeyRequest(request('/register/begin',body,{token:'Bearer sq_'+'A'.repeat(32)}),env,ownerAuth));
  assert.equal(valid.ok,true);
  assert.equal(valid.attemptId,'begin');
 });
@@ -119,38 +119,49 @@ test('per-IP begin auth attempt limit and administrator session expiry window ar
  assert.match(passkeyCookie('abc',false),/Max-Age=43200/);
 });
 
-test('administrator alias cannot elevate without independent wallet RBAC proof',async()=>{
- const body={alias:'admin.test@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}},adminAuthorized:true};
- const withoutWallet=await json(await handleOwnerPasskeyRequest(request('/login/finish',body),env,ownerAuth));
- assert.equal(withoutWallet.status,403);
- assert.equal(withoutWallet.error,'admin_role_verification_required');
+test('administrator alias cannot elevate without the existing server-verified owner wallet',async()=>{
+ const body={alias:'admin.test@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}};
+ const noToken=await json(await handleOwnerPasskeyRequest(request('/login/finish',body),env,ownerAuth));
+ assert.equal(noToken.status,403);
+ assert.equal(noToken.error,'admin_role_verification_required');
  const token='Bearer sq_'+'A'.repeat(32);
- const ownerOnly={...env,BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:true,userId:walletSubject})}};
- const denied=await json(await handleOwnerPasskeyRequest(request('/login/finish',body,{token}),ownerOnly,ownerAuth));
- assert.equal(denied.status,403);
- assert.equal(denied.error,'admin_role_verification_required');
+ const differentWallet=await json(await handleOwnerPasskeyRequest(request('/login/finish',body,{token}),env,
+  async()=>({userId:'different-wallet'})));
+ assert.equal(differentWallet.status,403);
+ assert.equal(differentWallet.error,'admin_role_verification_required');
+ const paired=await json(await handleOwnerPasskeyRequest(request('/login/finish',body,{token:'Bearer bc_'+'A'.repeat(32)}),env,ownerAuth));
+ assert.equal(paired.status,403);
+ assert.equal(paired.error,'admin_role_verification_required');
 });
-test('administrator session requires server-verified matching subject and role, not a client flag',async()=>{
+
+test('administrator requires matching trusted wallet subject and has a five-minute cookie',async()=>{
  const token='Bearer sq_'+'A'.repeat(32);
- let passedRole=null;
- const serviceWithRole={...stub,passkeyLoginFinish:async args=>{
-  passedRole=args.adminAuthorized;
+ let role=null;
+ const admin={...stub,passkeyLoginFinish:async args=>{
+  role=args.adminAuthorized;
   return {...await stub.passkeyLoginFinish(args),alias:'admin.test@quantaphi.org'};
  }};
- const approved={...env,CONNECTIONS:{idFromName:x=>x,get:()=>serviceWithRole},
-  BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:true,adminVerified:true,userId:walletSubject})}};
+ const config={...env,CONNECTIONS:{idFromName:x=>x,get:()=>admin}};
  const response=await handleOwnerPasskeyRequest(request('/login/finish',{
   alias:'admin.test@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}
- },{token}),approved,ownerAuth);
+ },{token}),config,ownerAuth);
  assert.equal(response.status,200);
- assert.equal(passedRole,true);
+ assert.equal(role,true);
  assert.match(response.headers.get('set-cookie'),/Max-Age=300/);
- const wrongSubject={...approved,BOT_WALLET:{fetch:async()=>Response.json({
-  ok:true,ownerVerified:true,adminVerified:true,userId:'different-subject'})}};
- const denied=await json(await handleOwnerPasskeyRequest(request('/login/finish',{
+ const unauthorized=await json(await handleOwnerPasskeyRequest(request('/login/finish',{
   alias:'admin.test@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}
- },{token}),wrongSubject,ownerAuth));
- assert.equal(denied.status,403);
+ },{token}),config,async()=>({userId:'different-subject'})));
+ assert.equal(unauthorized.status,403);
+});
+
+test('owner auth requires verified wallet state plus private expected account id',()=>{
+ const valid=request('/register/begin',{alias:'owner.test@quantaphi.org'},
+  {token:'Bearer sq_'+'A'.repeat(32)});
+ assert.equal(authorizedOwnerWallet(valid,{userId:walletSubject},env),true);
+ assert.equal(authorizedOwnerWallet(valid,{userId:'other'},env),false);
+ assert.equal(authorizedOwnerWallet(valid,{userId:walletSubject},{...env,PASSKEY_OWNER_ACCOUNT_ID:''}),false);
+ assert.equal(authorizedOwnerWallet(request('/register/begin',{alias:'owner.test@quantaphi.org'},
+  {token:'Bearer bc_'+'A'.repeat(32)}),{userId:walletSubject},env),false);
 });
 test('direct Durable Object administrator authentication fails closed without trusted role',async()=>{
  const p=make(),b=await p.beginAuthentication({alias:'admin.test@quantaphi.org'});
