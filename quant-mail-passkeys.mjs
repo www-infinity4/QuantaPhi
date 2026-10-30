@@ -2,9 +2,8 @@
  * user's own phone. This never issues a session or trusts the email alone.
  * Service endpoints are deliberately NOT enabled by this frontend module.
  */
-export const OWNER_MAIL_ALIASES=Object.freeze([
- 'kris@quantaphi.org','administrator@quantaphi.org'
-]);
+// The private page does not publish or pre-fill owner aliases.
+// The server independently enforces the exact allowed addresses.
 export const PASSKEY_RP_ID='quantaphi.org';
 export const PASSKEY_ORIGIN='https://quantaphi.org';
 const API='/api/quant-mail/passkeys';
@@ -12,7 +11,7 @@ const MAX_BODY=30000;
 export function strictAlias(value){
  if(typeof value!=='string')return null;
  const normalized=value.toLowerCase().trim();
- return OWNER_MAIL_ALIASES.includes(normalized)?normalized:null;
+ return /^[a-z0-9][a-z0-9._-]{0,63}@quantaphi\.org$/.test(normalized)?normalized:null;
 }
 export function isPasskeySiteReady(locationLike,secureContext){
  return secureContext===true && locationLike?.origin===PASSKEY_ORIGIN &&
@@ -138,12 +137,14 @@ export async function mountQuantMailPasskeys(doc=document,root=window){
     request:(...args)=>root.fetch(...args),Credential:root.PublicKeyCredential,
     credentials:root.navigator?.credentials,walletToken,
     locationLike:root.location,secureContext:root.isSecureContext});
-   announce(res.status,true);
+   announce(res.status+(kind==='register'?' Now type your next email address.':''),true);
+   if(kind==='register')aliasInput.value='';
   }catch(error){
    const code=String(error?.message||'');
    const reasons={
     verified_wallet_required:'Verify your existing owner wallet before registering a passkey.',
-    passkey_alias_not_supported:'Choose kris@quantaphi.org or administrator@quantaphi.org.',
+    passkey_alias_not_supported:'Enter a valid owner email address at quantaphi.org.',
+    alias_passkey_already_registered:'This address already has a passkey. One passkey per address is allowed.',
     passkey_service_unavailable:'Passkey verification is unavailable. No login was changed.',
     passkey_verification_incomplete:'The server could not verify this passkey.',
     passkey_browser_update_required:'Update Chrome or your Android passkey provider to continue.',
