@@ -18,3 +18,37 @@ body.oracle-shelf-open #premiumSourceCards[hidden],body.oracle-shelf-open #siteQ
 .premium-card .qca-search-submit{background:#a42e2d;color:#fff}
 .premium-card .qca-button[aria-pressed="true"]{background:#fff1d5;color:#5f3800}
 @media(max-width:420px){.premium-card .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* Restaurant cards are photo-first, while search and source evidence remain accessible. */
+.oracle-card-deck-stage>.premium-restaurant{gap:0;border-radius:20px}
+.premium-restaurant .premium-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;column-gap:12px;row-gap:3px;padding:13px 16px;background:#fff;color:#44312a;border-bottom:1px solid #e7d9d0}
+.premium-restaurant .premium-heading .iqc-kind{flex-basis:100%;font:800 10px/1.3 system-ui;letter-spacing:.07em;color:#925131!important;opacity:1}
+.oracle-card-deck-stage .premium-restaurant .premium-heading h2{margin:0;font:800 clamp(21px,5vw,27px)/1.2 system-ui,sans-serif;letter-spacing:-.03em;color:#3b2721!important}
+.premium-restaurant .premium-origin{font-size:12px;color:#7e4831;opacity:1}
+.premium-restaurant .premium-content{margin:0!important}
+.premium-restaurant .premium-selected{padding:0 0 11px}
+.premium-restaurant .premium-hero-media{display:block;margin:0;position:relative;background:#f4eee6;overflow:hidden;min-height:205px}
+.premium-restaurant .premium-photo{display:block;width:100%;height:clamp(205px,54vw,345px);max-height:345px;aspect-ratio:16/9;object-fit:cover;border-radius:0;background:#f3eee8}
+.premium-restaurant .premium-photo-unavailable{display:flex;min-height:205px;align-items:center;justify-content:center;text-align:center;padding:25px;color:#6b4c3b;font-weight:700}
+.premium-restaurant .premium-hero-fallback{display:grid;place-items:center;min-height:205px;padding:22px;text-align:center;font-weight:800;font-size:19px;line-height:1.4;background:linear-gradient(125deg,#fae6b8,#dd8761);color:#482318;text-decoration:none}
+.premium-restaurant .premium-result-nav{position:relative;z-index:1;display:flex;justify-content:space-between;gap:6px;margin:-57px 11px 13px;pointer-events:none}
+.premium-restaurant .premium-result-nav button{pointer-events:auto;min-width:45px;min-height:45px;padding:9px 11px;border-radius:100px;border:1px solid #fff;background:rgba(59,36,27,.89);color:white;font:800 18px/1 system-ui}
+.premium-restaurant .premium-result-nav button:disabled{opacity:.4}
+.premium-restaurant .premium-result-nav span{align-self:center;padding:7px 9px;background:rgba(255,255,255,.95);border-radius:20px;color:#4c342d;font-weight:850}
+.premium-restaurant .premium-site-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:0 12px 8px}
+.premium-restaurant .premium-site-action{display:flex;align-items:center;justify-content:center;text-align:center;min-height:44px;padding:9px 6px;border-radius:12px;background:#fff2e7;border:1px solid #d2ad95;color:#743321;text-decoration:none;font:800 13px/1.25 system-ui}
+.premium-restaurant .premium-site-action:focus-visible{outline:3px solid #286ca0;outline-offset:2px}
+.premium-restaurant .premium-credit,.premium-restaurant .premium-selected h3,.premium-restaurant .premium-description,.premium-restaurant .premium-open,.premium-restaurant .premium-selected .qca-toolbar{margin-left:15px;margin-right:15px}
+.premium-restaurant .premium-credit{margin-top:8px;margin-bottom:0;font-size:11px}
+.premium-restaurant .premium-selected h3{font:800 clamp(19px,5vw,25px)/1.25 system-ui;margin-top:5px;margin-bottom:4px}
+.premium-restaurant .premium-description{font:13px/1.48 system-ui;margin-top:5px;margin-bottom:7px}
+.premium-restaurant .premium-open{min-height:40px;margin-top:7px;margin-bottom:10px;font-size:13px;background:var(--premium-accent,#843b23)}
+.premium-restaurant .premium-tools{margin:0 14px 6px;border:1px solid #e5d9cf;background:#fffaf5;border-radius:12px;padding:0 10px}
+.premium-restaurant .premium-tools summary{cursor:pointer;min-height:43px;display:flex;align-items:center;font:750 13px system-ui;color:#734632}
+.premium-restaurant .premium-tools .premium-search,.premium-restaurant .premium-tools .premium-topics{margin:7px 0 13px!important}
+.premium-restaurant .premium-state{margin:4px 15px 9px;min-height:0;font-size:11px}
+.premium-restaurant .premium-footnote{margin:4px 15px 8px;font-size:11px;padding-top:9px}
+.premium-restaurant>.qca-toolbar,.premium-restaurant>div:last-child{margin-left:15px;margin-right:15px}
+@media(max-width:420px){.premium-restaurant .premium-search>button{width:100%}.premium-restaurant .premium-photo{height:clamp(205px,54vw,270px)}}
+@media(prefers-reduced-motion:reduce){.premium-restaurant *{scroll-behavior:auto}}
