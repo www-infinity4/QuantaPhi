@@ -1,31 +1,108 @@
-# Quant Mail passkeys: owner-only WebAuthn implementation checkpoint
+# QuantaPhi owner-only passkey server: verified release contract
 
-Updated 2026-10-29. The requested addresses are `kris@quantaphi.org` and `administrator@quantaphi.org`, two aliases of **one existing verified owner wallet identity**. No separate Quant Mail password.
+Engineering checkpoint, 2026-10-29. This document is intentionally free of
+owner email strings, owner wallet IDs, device tokens, OAuth secrets, or
+configuration values. **Do not publish the alias list on a public page.**
 
-## Implemented on feature branch
+## Server architecture
 
-- Real WebAuthn registration and authentication challenge endpoints under `/api/quant-mail/passkeys`, relying party `quantaphi.org`, exact web origin `https://quantaphi.org`.
-- Registered credentials, public keys, unique one-time challenges, counters and short-lived authenticated sessions stored in the existing `CONNECTIONS` Durable Object, with a dedicated owner namespace. The private key never leaves the user's passkey provider on Android.
-- Uses the audited, exact-version-pinned `@simplewebauthn/server@14.0.3` verifier, without authoring custom CBOR/COSE signature verification. Only GitHub build runners install the package; users have no npm commands.
-- `/register/begin` and `/register/finish` require a valid existing StarQuest device wallet session (not a paired token), and call the Unified Wallet service's **server-only owner check** comparing the device's authenticated account ID with its existing configured `RECOVERY_OWNER_ACCOUNT_ID`. Browser-supplied admin role/ID is ignored. First registered owner becomes the single allowed subject in the registry; the same credential works for both aliases. Sign-in has independent fresh WebAuthn challenges.
-- `/login/finish` requires verified user presence, user verification, RP, origin, challenge, signature and monotonic counter, and sets a `Secure; HttpOnly; SameSite=Strict` session cookie. Plain email selection alone never creates a session. Sessions are scoped to the Quant Mail passkey service, **not** an existing Unified Wallet device token or a working inbox.
-- `quant-mail.html` includes an owner address dropdown, Create passkey and Sign in controls **disabled by default**. It checks the live `/status` readiness endpoint, and only unlocks controls when the service is enabled. Without the new service, it stays safely blocked and displays an honest message.
-- `PASSKEY_ENABLED` is an explicit opt-in deployment variable: absent/false makes registration/login return 503, while public `/status` reports disabled. This protects live users while routing and staging are tested.
+- The existing **bubbles-connections** Cloudflare Worker implements
+  `/api/quant-mail/passkeys/status`, `/register/begin`, `/register/finish`,
+  `/login/begin`, `/login/finish` and `/session`. It uses
+  `@simplewebauthn/server@14.0.3` for WebAuthn verification.
+- RP ID is `quantaphi.org` and browser origin must be
+  `https://quantaphi.org`. User verification is mandatory.
+  Registration and sign-in challenges expire after 5 minutes and are
+  consumed atomically exactly once. Public credential keys, counters and
+  owner-subject association live in the existing `CONNECTIONS` Durable Object.
+- **A verified wallet must be checked before examining the email alias.**
+  Registration requires an authenticated original `sq_` device session
+  verified by the existing `BOT_WALLET` service and a private
+  `PASSKEY_OWNER_ACCOUNT_ID` binding that matches its account ID. A paired
+  `bc_` token, a typed email or a browser-supplied admin flag is insufficient.
+- The private `OWNER_EMAIL_ALIAS_REGISTRY` secret must contain JSON of the
+  shape `{"owner":"<approved-address>","administrator":"<approved-address>"}`.
+  Use only owner-authorized values from the existing account setup. There is
+  **one independently verified credential per alias**, with a distinct
+  WebAuthn user ID per alias and an atomic duplicate-credential rejection.
+  No owner email or wallet identity is hardcoded into public source.
+- Administrator authentication requires both a verified WebAuthn assertion
+  and a fresh original owner wallet token checked on the server.
+  The owner alias receives a regular short session; administrator sessions
+  are limited to 5 minutes. The resulting session cookie is
+  `Secure; HttpOnly; SameSite=Strict`; it cannot mint a wallet device token.
+- The existing private Robot Brain route
+  `https://quantaphi.org/robot-brain-account-security.html` is the only
+  owner onboarding surface. It renders an empty email input *after* the
+  `QuantaBrainOwner.walletIdentity()` check. The owner types one address,
+  registers its phone passkey with Android consent, and repeats for the next
+  address. No public homepage, Bubbles generic chat or Quant Mail preview
+  may display or advertise the aliases.
 
-## Critical release ordering — DO NOT skip
+## Current verified Cloudflare state
 
-1. Review exact source and install pinned package during CI. Target [Quant Mail PR #1235](https://github.com/www-infinity4/QuantaPhi/pull/1235) may overlap earlier frontend sources; reconcile it after this branch, not blindly merge competing versions.
-2. Verify the Unified Wallet internal `/v1/wallet/passkey-owner` route and existing `RECOVERY_OWNER_ACCOUNT_ID` configuration are deployed without mutating wallet balances or account ID.
-3. Deploy updated `bubbles-connections` while preserving all live OAuth keyring, Cloudflare scopes, service bindings and Durable Object migration history. Keep `PASSKEY_ENABLED` unset/false initially.
-4. Route `/api/quant-mail/passkeys/*` to the correct service through a verified same-origin site Worker proxy or explicitly configured Cloudflare Worker route. Do not change an existing route blindly.
-5. Independently test live `GET /api/quant-mail/passkeys/status` from Chrome, strict Origin enforcement, denied enrollment using unrelated wallet, wrong RP, wrong origin, stale/replayed challenge, cookie handling, existing Bubbles/Wallet flows and cross-device failures.
-6. Following successful security review and acceptance, turn on `PASSKEY_ENABLED=true` **without changing existing sensitive bindings**. Recheck /status from Cloudflare Browser and native Android Chrome. The owner then opens https://quantaphi.org/quant-mail.html, signs into the existing StarQuest wallet if needed, chooses kris@quantaphi.org and taps **Create phone passkey** to accept the Android screen-lock/biometric prompt. The same registered owner credential may also be used with administrator@quantaphi.org, subject to actual owner authorization and administrator step-up.
-7. Verify credential storage and true login `/login/finish` with secure cookie; store receipt without raw passkey material. Only then call passwordless owner sign-in active. Mailbox **inbound/outbound email** remains a separate still-unfinished infrastructure task.
+- A narrow Cloudflare Worker route
+  `quantaphi.org/api/quant-mail/passkeys/*` is already assigned to
+  `bubbles-connections`; do not create a duplicate route.
+- Existing Worker settings contain `OWNER_EMAIL_ALIAS_REGISTRY`,
+  `PASSKEY_OWNER_ACCOUNT_ID`, `CONNECTION_KEYRING`, `BOT_WALLET`,
+  `CONNECTIONS`, Cloudflare OAuth scopes, and `CONNECTIONS_READY`.
+  Keep all existing values and bindings untouched.
+- `PASSKEY_ENABLED` is absent, deliberately **fail-closed**.
+- The current production response to a direct
+  `GET /api/quant-mail/passkeys/status` is
+  `{"ok":false,"error":"origin_not_allowed"}`, showing the **old Worker
+  code** still handles this path. This is not a working passkey service.
+- Email Routing for the domain was separately verified **disabled**.
+  A phone passkey grants no inbound email, inbox, outbound sending,
+  admin mailbox processing, or right to execute instructions from email.
 
-## Threats / review checklist
+## Safe server-release sequence
 
-- Owner identity must come from `BOT_WALLET` internal service (not a front-end email address).
-- Counter replay, cross-account registration, reusing challenge, malicious origin and unregistered credential must all fail.
-- The global owner Durable Object is an owner-only registry, not a public alias claim store; don't reuse it for users. User signup will require wallet-scoped, atomic unique alias registry and independently reviewed privilege boundaries.
-- In initial version, credential registration relies on possession of the existing owner wallet device token. For higher-assurance first enrollment, add independent Cloudflare Access/email verification before enabling privileges if required by the security review. A lost/stolen device requires the separate 3-of-6 recovery policy, not silently replacing owner credentials.
-- Never enable automatic wallet token issuance using just a passkey session until the wallet's independent server explicitly supports and verifies that transaction. No user session, passkey, mailbox or owner action can be completed by ChatGPT without the Android authenticator confirmation.
+1. Obtain independent security review of exact-head source. Check first
+   enrollment assurance, original wallet binding, WebAuthn verification,
+   one-per-alias atomic writes, alias enumeration, administrator step-up,
+   challenge replay, credential counters, cookie security and recovery.
+2. Let GitHub Actions install the pinned verifier, run source and regression
+   tests, and dry-run bundle the Worker. Do **not** ask the user to run npm.
+3. Via the authorized **existing** Bubbles Worker deployment workflow,
+   publish with `PASSKEY_ENABLED` unset/false. Its pre/post binding
+   inventory must preserve every existing secret, service, Durable Object,
+   Cloudflare scope and OAuth grant. Do not alter Unified Wallet or D1.
+4. The deployment workflow now runs
+   `node scripts/verify-quant-mail-passkey-live.mjs`.
+   It requires a JSON `GET /status` response with RP `quantaphi.org`,
+   `ok:true`, coherent `enabled` / `registrationReady` /
+   `loginReady` flags, `Cache-Control:no-store`, no private alias/account
+   fields, and both cross-origin and missing-origin POST registration
+   requests rejected with HTTP 403. A stale old Worker **fails** this gate.
+5. Verify trusted-owner and unrelated-wallet behavior, origin and role
+   denial, real Android authenticator support, and normal wallet/Bubbles
+   regression checks. Only after independent signoff, set
+   `PASSKEY_ENABLED=true` using an authorized Cloudflare change, while
+   preserving the private aliases and all existing bindings.
+6. On the verified private Robot Brain page, have the owner type each
+   address individually and personally approve one Android WebAuthn prompt
+   per address. Confirm successful server storage and subsequent sign-in.
+   Never claim a key was registered unless receipt verification succeeds.
+
+## Security / operational cautions
+
+- A guessed private-page URL is not authorization. The server never
+  accepts owner entitlement from HTML, local storage or email strings.
+- All requests are scoped to the correct relying party and approved
+  origin, and unauthenticated users cannot enumerate the two owner
+  addresses through the registration endpoint.
+- Staged and production Worker deployments must not silently replace
+  the `CONNECTION_KEYRING`, OAuth permission inventory, unified wallet
+  service, device tokens or account recovery configuration.
+- An independent owner recovery procedure is required to handle a
+  lost or replaced phone. Do not silently allow re-enrollment of an
+  address whose one credential is already recorded.
+- Administrator inbox reading and GPT-assisted build proposals require
+  separate explicit consent, mail delivery configuration and untrusted
+  email-content handling. An email must never automatically authorize
+  privileged builds.
+- A source-build pass is not a live deployment. A live `/status`
+  check without an actual Android WebAuthn ceremony is not a completed
+  phone registration.
