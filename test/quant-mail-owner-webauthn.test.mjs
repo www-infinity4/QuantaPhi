@@ -117,3 +117,43 @@ test('per-IP begin auth attempt limit and administrator session expiry window ar
  assert.match(passkeyCookie('abc',true),/Max-Age=300/);
  assert.match(passkeyCookie('abc',false),/Max-Age=43200/);
 });
+
+test('administrator alias cannot elevate without independent wallet RBAC proof',async()=>{
+ const body={alias:'administrator@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}},adminAuthorized:true};
+ const withoutWallet=await json(await handleOwnerPasskeyRequest(request('/login/finish',body),env,ownerAuth));
+ assert.equal(withoutWallet.status,403);
+ assert.equal(withoutWallet.error,'admin_role_verification_required');
+ const token='Bearer sq_'+'A'.repeat(32);
+ const ownerOnly={...env,BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:true,userId:walletSubject})}};
+ const denied=await json(await handleOwnerPasskeyRequest(request('/login/finish',body,{token}),ownerOnly,ownerAuth));
+ assert.equal(denied.status,403);
+ assert.equal(denied.error,'admin_role_verification_required');
+});
+test('administrator session requires server-verified matching subject and role, not a client flag',async()=>{
+ const token='Bearer sq_'+'A'.repeat(32);
+ let passedRole=null;
+ const serviceWithRole={...stub,passkeyLoginFinish:async args=>{
+  passedRole=args.adminAuthorized;
+  return {...await stub.passkeyLoginFinish(args),alias:'administrator@quantaphi.org'};
+ }};
+ const approved={...env,CONNECTIONS:{idFromName:x=>x,get:()=>serviceWithRole},
+  BOT_WALLET:{fetch:async()=>Response.json({ok:true,ownerVerified:true,adminVerified:true,userId:walletSubject})}};
+ const response=await handleOwnerPasskeyRequest(request('/login/finish',{
+  alias:'administrator@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}
+ },{token}),approved,ownerAuth);
+ assert.equal(response.status,200);
+ assert.equal(passedRole,true);
+ assert.match(response.headers.get('set-cookie'),/Max-Age=300/);
+ const wrongSubject={...approved,BOT_WALLET:{fetch:async()=>Response.json({
+  ok:true,ownerVerified:true,adminVerified:true,userId:'different-subject'})}};
+ const denied=await json(await handleOwnerPasskeyRequest(request('/login/finish',{
+  alias:'administrator@quantaphi.org',attemptId:'attempt',credential:{id:'credential',type:'public-key',response:{}}
+ },{token}),wrongSubject,ownerAuth));
+ assert.equal(denied.status,403);
+});
+test('direct Durable Object administrator authentication fails closed without trusted role',async()=>{
+ const p=make(),b=await p.beginAuthentication({alias:'administrator@quantaphi.org'});
+ await assert.rejects(p.finishAuthentication({alias:'administrator@quantaphi.org',attemptId:b.attemptId,
+  credential:{id:'unregisteredcredential',type:'public-key',response:{}}}),/admin_role_verification_required/);
+ assert.ok(await p.storage.get('quant-mail:challenge:'+b.attemptId));
+});
