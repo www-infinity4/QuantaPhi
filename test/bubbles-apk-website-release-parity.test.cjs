@@ -266,3 +266,26 @@ test('revision updater defers during Android recording and live voice playback',
  const safe=await simulateSiteRevisionCheck();
  assert.equal(safe.result,true,'an idle session may update after recording and voice finish');
 });
+
+
+test('native reopen acknowledges only a successful synchronous fresh-chat reset',()=>{
+ const begin=site.indexOf('startFreshOnReopen:()=>{');
+ const end=site.indexOf('nativeHistorySnapshot:',begin);
+ assert.ok(begin>0&&end>begin,'actual Android reopen bridge exists');
+ const make=(succeeded)=>{
+  let calls=0;
+  const ctx={
+   nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,
+   voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
+   keepChat:true,messages:[],input:{value:''},noteText:{value:''},workText:{value:''},
+   pendingImage:null,pendingImages:[],
+   startConversation:()=>{calls++;return succeeded}
+  };
+  const fn=vm.runInNewContext('({'+site.slice(begin,end)+'}).startFreshOnReopen',ctx);
+  return {result:fn(),calls};
+ };
+ assert.deepEqual(make(false),{result:false,calls:1},
+  'Android must not acknowledge a new chat when storage prevents the reset');
+ assert.deepEqual(make(true),{result:true,calls:1},
+  'a genuinely completed reset may still acknowledge success');
+});
