@@ -55,6 +55,16 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
    :deny('passkey_session_expired',401);
  }
  if(request.method!=='POST')return deny('method_not_allowed',405);
+ // Authenticate a real owner wallet BEFORE inspecting the requested address.
+ // Otherwise unauthenticated callers could probe the private allowlist by
+ // comparing owner_alias_invalid with owner_verification_required.
+ let enrollmentIdentity=null;
+ if(suffix.startsWith('/register/')){
+  try{enrollmentIdentity=await verifyWallet(request,env);}
+  catch{return deny('owner_verification_required',401);}
+  if(!authorizedOwnerWallet(request,enrollmentIdentity,env))
+   return deny('owner_verification_required',403);
+ }
  let body;
  try{body=await readJson(request);}catch{return deny('invalid_json',400);}
  const alias=body?.alias;
@@ -63,13 +73,8 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
  if(!body||JSON.stringify(body).length>24000)return deny('invalid_payload',400);
  try{
   if(suffix.startsWith('/register/')){
-   // Existing Unified Wallet already validates this device token with
-   // /v1/wallet/state. A private server-only copy of its configured owner
-   // account ID then restricts enrollment; browser alias cannot grant it.
-   const identity=await verifyWallet(request,env);
-   if(!authorizedOwnerWallet(request,identity,env))
-    return deny('owner_verification_required');
-   const args={alias,subject:identity.userId};
+   // This identity was authenticated before the alias/JSON was inspected.
+   const args={alias,subject:enrollmentIdentity.userId};
    const value=suffix==='/register/begin'
     ?await svc.passkeyRegisterBegin(args)
     :await svc.passkeyRegisterFinish({...args,attemptId:body.attemptId,credential:body.credential});
