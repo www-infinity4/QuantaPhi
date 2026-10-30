@@ -26,8 +26,31 @@ async function openPrivateOwnerPasskeys(){
   }
   if(gateMessage)gateMessage.textContent='Owner wallet verified. Private account security is available.';
   region.hidden=false;
-  text('Owner wallet verified. Checking passkey registration service…');
-  // Android 12 WebView may not implement AbortSignal.timeout.
+  // One compact form. Address is typed by the verified owner; never
+  // prepopulate or advertise either address in publicly served page HTML.
+  const label=element('label','Email address');
+  label.htmlFor='quantMailPasskeyAlias';
+  label.style.cssText='display:block;font-weight:750;margin:14px 0 6px';
+  const field=element('input');
+  field.id='quantMailPasskeyAlias';
+  field.type='email';field.required=true;field.inputMode='email';
+  field.autocomplete='off';field.autocapitalize='off';
+  field.spellcheck=false;field.placeholder='Type your email address';
+  field.maxLength=254;
+  field.style.cssText='display:block;width:100%;min-height:52px;border:1px solid #91aabc;border-radius:13px;padding:12px;font:16px system-ui';
+  const buttons=element('div');buttons.className='controls';buttons.style.marginTop='12px';
+  const register=element('button','Add phone passkey');
+  register.type='button';register.id='quantMailPasskeyRegister';register.className='btn';register.disabled=true;
+  const login=element('button','Sign in with passkey');
+  login.type='button';login.id='quantMailPasskeyLogin';login.className='btn secondary';login.disabled=true;
+  buttons.append(register,login);
+  const result=element('p','Passkey enrollment is disabled until the verified server is active.');
+  result.id='quantMailPasskeyStatus';result.setAttribute('role','status');
+  result.setAttribute('aria-live','polite');
+  const help=element('p','Enter the first address, approve its passkey on your phone, then replace the address with the second one. Exactly one passkey is allowed per address. Email delivery is a separate setup step.');
+  help.className='muted';
+  root.append(label,field,buttons,result,help);
+  text('Owner wallet verified. Checking whether phone passkeys are available…');
   const controller=new AbortController();
   const timer=setTimeout(()=>controller.abort(),9000);
   let response;
@@ -37,41 +60,21 @@ async function openPrivateOwnerPasskeys(){
    });
   }finally{clearTimeout(timer);}
   if(!response.ok){
-   text('The phone passkey server is not active. No account, email or wallet was changed.');
+   text('Email setup is visible here, but the secure passkey server is not live. Nothing can be registered yet.');
    return;
   }
   const state=await response.json();
   if(state?.ok!==true||state.enabled!==true||state.registrationReady!==true||
      state.loginReady!==true||state.rpId!=='quantaphi.org'){
-   text('The verified owner passkey service is not enabled yet. Your existing wallet remains unchanged.');
+   text('The secure passkey server is not enabled yet. Your existing wallet is unchanged.');
    return;
   }
-  const label=element('label','Choose owner address');
-  label.htmlFor='quantMailPasskeyAlias';
-  label.style.cssText='display:block;font-weight:700;margin:14px 0 6px';
-  const select=element('select');select.id='quantMailPasskeyAlias';
-  select.style.cssText='width:100%;min-height:48px;border:1px solid #a7b6be;border-radius:10px;padding:12px;font:inherit';
-  for(const address of ['kris@quantaphi.org','administrator@quantaphi.org']){
-   const option=element('option',address);option.value=address;select.append(option);
-  }
-  const buttons=element('div');buttons.className='controls';buttons.style.marginTop='12px';
-  const register=element('button','Create phone passkey');
-  register.type='button';register.id='quantMailPasskeyRegister';register.className='btn';register.disabled=true;
-  const login=element('button','Sign in using phone passkey');
-  login.type='button';login.id='quantMailPasskeyLogin';login.className='btn secondary';login.disabled=true;
-  buttons.append(register,login);
-  const result=element('p','Preparing secure Android passkey confirmation…');
-  result.id='quantMailPasskeyStatus';result.setAttribute('role','status');
-  result.setAttribute('aria-live','polite');
-  root.append(label,select,buttons,result);
-  text('Phone enrollment is available only to the verified owner. Confirm the device prompt yourself.');
+  text('Passkey service ready. Enter an eligible address and confirm registration on your phone.');
   try{
-   // The server-side WebAuthn feature must be separately deployed and reviewed.
-   // This module enables the buttons only if the authenticated service confirms readiness.
    await import('/quant-mail-passkeys.mjs?v=20261029-secure-registration1');
   }catch{
    register.disabled=true;login.disabled=true;
-   result.textContent='The secure passkey client is unavailable. Nothing was registered.';
+   result.textContent='The verified passkey client could not load. No credential was saved.';
   }
  }catch{
   if(!region.hidden)text('Private account setup could not be verified. No changes were made.');
