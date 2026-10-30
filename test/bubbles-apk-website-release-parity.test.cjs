@@ -72,7 +72,7 @@ test('APK loads the current live website, not an HTML build pinned to the APK ve
 });
 
 
-async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null,saveFails=false}={}){
+async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null,saveFails=false,historyDisabled=false,activeMessages=0,markerFails=false}={}){
  const begin=site.indexOf('let siteVersionChecking=false,lastSiteVersionCheck=0;');
  const end=site.indexOf('window.QuantaBubbles={',begin);
  assert.ok(begin>0&&end>begin,'actual first-party updater is present');
@@ -89,8 +89,9 @@ async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',pho
   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
   input,noteText,workText,pendingImage:photo?{data:'unsent-photo'}:null,
   pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
-  keepChat:true,saveThread:()=>{events.push('saved');return !saveFails;},
-  sessionStorage:{setItem:(key,value)=>events.push('marker:'+key+':'+value)},
+  keepChat:!historyDisabled,messages:Array.from({length:activeMessages},()=>({role:'user',text:'existing turn'})),
+  saveThread:()=>{events.push('saved');return !saveFails;},
+  sessionStorage:{setItem:(key,value)=>{if(markerFails)throw Error('sessionStorage unavailable');events.push('marker:'+key+':'+value)}},
   UPDATE_RELOAD_THREAD:'site-update-reload'
  });
  vm.runInContext(site.slice(begin,end),scope);
@@ -226,4 +227,22 @@ test('automatic fresh chat fails closed even if caller skips its draft guard',as
  const empty=await simulateNewChat({automatic:true});
  assert.equal(empty.result,true);
  assert.ok(!empty.events.includes('confirm'));
+});
+
+test('revision updater does not discard active turns when History is disabled',async()=>{
+ const blocked=await simulateSiteRevisionCheck({historyDisabled:true,activeMessages:2});
+ assert.equal(blocked.result,false,'no durable transcript exists to restore after reload');
+ assert.deepEqual(blocked.events,[],'must not save, mark or reload a nonpersistent chat');
+ const empty=await simulateSiteRevisionCheck({historyDisabled:true});
+ assert.equal(empty.result,true,'empty history-disabled chat may still update');
+ assert.deepEqual(empty.events,['marker:site-update-reload:1','reload']);
+});
+
+test('revision updater refuses reload if sessionStorage cannot retain the resume marker',async()=>{
+ const blocked=await simulateSiteRevisionCheck({markerFails:true});
+ assert.equal(blocked.result,false,'a rejected marker would open a different thread');
+ assert.deepEqual(blocked.events,['saved'],'the saved transcript remains accessible in the current session');
+ const blockedNoHistory=await simulateSiteRevisionCheck({historyDisabled:true,markerFails:true});
+ assert.equal(blockedNoHistory.result,false);
+ assert.deepEqual(blockedNoHistory.events,[]);
 });
