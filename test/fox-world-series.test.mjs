@@ -52,7 +52,7 @@ test('existing TV players remain while FOX channels extend the same TV grid',()=
  const html=load('index.html'),tv=load('phi-channel-cards.js'),newTv=load('fox-infinity-tv.mjs');
  assert.match(tv,/StarQuest/);assert.match(tv,/Omni TV/);assert.match(tv,/Chiller/);assert.match(tv,/ShopLC/);
  assert.match(html,/id="phiChannelCards"/);
- assert.match(html,/fox-infinity-tv\.mjs\?v=20261028-game5c/);
+ assert.match(html,/fox-infinity-tv\.mjs\?v=20261030-evergreen1/);
  assert.match(html,/world-series-updates\.mjs\?v=20261028-game5c/);
  assert.match(html,/fox-infinity-tv\.css\?v=20261028-game5b/);
  assert.match(newTv,/#phiChannelCards \.channelphi-grid/);
@@ -88,4 +88,11 @@ test('postponed, cancelled, suspended and delayed games never trigger pregame or
    assert.equal(game.status,'unavailable');
   }
  }
+});
+
+test('FOX TV viewer never treats the fixed previous game as tonight',()=>{
+ const viewer=load('fox-infinity-tv.mjs');
+ assert.ok(!viewer.includes('Game 5 · tonight'));
+ assert.ok(viewer.includes('SCHEDULED · CHECK MLB GAME CENTER'));
+ assert.ok(viewer.includes('official MLB Game Center'));
 });
