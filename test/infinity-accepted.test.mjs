@@ -5,7 +5,7 @@ import {cleanFeedState,feedCandidates,nextFeedDirection,nextDeckCycle,markViewed
 import {planCardBrowserAction,cardActionGoal} from '../workers/infinity-brain-clock/quick-card-browser-policy.mjs';
 import {handleQuickCardBrowser,readBoundedJson} from '../workers/infinity-brain-clock/quick-card-browser.mjs';
 import {createCardBrowserSession} from '../quick-card-tinyfish-actions.mjs';
-import {cardImageCandidates} from '../infinity-accepted-cards.mjs';
+import {cardImageCandidates,acceptedFeaturedProduct,ACCEPTED_FEATURED_PRODUCTS} from '../infinity-accepted-cards.mjs';
 import {websiteSummary} from '../tinyfish-card-reader.mjs';
 const framework=acceptedBrand('durable-framework-computers');
 const other={id:'ordinary',name:'Ordinary brand',official:'https://example.com/',category:'Hardware'};
@@ -91,4 +91,20 @@ test('a finished provider run with no same-brand links does not claim a complete
  const begin=await handleQuickCardBrowser(storage,env,body,async()=>Response.json({run_id:crypto.randomUUID()}));
  const result=await handleQuickCardBrowser(storage,env,{action:'status',jobId:begin.result.job.jobId},async()=>Response.json({status:'COMPLETED',result:{summary:'No source evidence',items:[null,{}, {name:'Off-site',url:'https://evil.example/'}]}}));
  assert.equal(result.result.job.state,'unverified_browser_result');assert.equal(result.result.job.report.verifiedSameSiteLinks,0);
+});
+
+test('three owner-cited product spotlights use real SKUs, attributable photographs and official retailer handoffs',()=>{
+ for(const id of ['durable-goruck','durable-filson','durable-thule']){
+  const card=acceptedBrand(id),item=acceptedFeaturedProduct(card);
+  assert.ok(item,id+' missing');
+  assert.ok(item.title.length>12);
+  assert.match(item.imageUrl,/^https:\/\//);
+  assert.ok(new URL(item.productUrl).hostname.endsWith(new URL(card.official).hostname.replace(/^www\./,'')));
+  assert.match(item.imageCredit,/Product photo:/);
+  assert.equal(item.checked,'2026-10-30');
+ }
+ assert.equal(Object.keys(ACCEPTED_FEATURED_PRODUCTS).length,3);
+ assert.equal(acceptedFeaturedProduct({...acceptedBrand('durable-thule'),official:'https://wrong.example/'}),null);
+ assert.equal(acceptedFeaturedProduct({id:'ordinary',official:'https://example.org/'}),null);
+ assert.match(ACCEPTED_FEATURED_PRODUCTS['durable-thule'].availability,/unconfirmed/);
 });

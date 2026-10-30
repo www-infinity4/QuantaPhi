@@ -16,22 +16,22 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Official game center','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/'],
   ['Lions highlights','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/']
  ),nfl('gb'),{secondaryVisual:nfl('det'),date:'2026-10-25',network:'FOX',event:'NFL'}),
- entry('fox-nfl-watch','FOX NFL · Watch & highlights','broadcast','NFL','FOX game coverage and licensed FOX One live viewing, subject to the viewer’s location, service and login.','https://www.foxsports.com/nfl',actions(
-  ['FOX NFL schedule','https://www.foxsports.com/nfl'],
-  ['FOX One streaming','https://www.fox.com/'],
-  ['Packers–Lions coverage','https://www.foxsports.com/live-blog/nfl/packers-vs-lions-live-updates-score']
- ),icon('foxsports.com'),{date:'2026-10-25',event:'NFL'}),
+ entry('fox-nfl-watch','FOX NFL · Current scores & highlights','broadcast','NFL','Current NFL scores, game schedule and FOX source headlines refresh at the official publisher. Licensed video is provided by FOX or the viewer’s eligible provider, not QuantaPhi.','https://www.foxsports.com/nfl/scores',actions(
+  ['Current FOX NFL scores','https://www.foxsports.com/nfl/scores'],
+  ['FOX NFL highlights','https://www.foxsports.com/nfl'],
+  ['FOX One streaming','https://www.fox.com/']
+ ),icon('foxsports.com'),{event:'NFL'}),
  entry('lions-interception-watch','Lions · turnover and interception watch','tracker','NFL','Watch official play-by-play and video highlights for verified takeaways. This card does not assert an interception happened.','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/',actions(
   ['Scoring and play-by-play','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/'],
   ['FOX live updates','https://www.foxsports.com/live-blog/nfl/packers-vs-lions-live-updates-score'],
   ['Highlights','https://www.nfl.com/videos/']
  ),nfl('det'),{date:'2026-10-25',event:'NFL'}),
- entry('packers-next-schedule','Green Bay · schedule and next game','schedule','NFL','After Detroit, Green Bay is scheduled to host Carolina on Thursday, Oct 29 on Prime Video; confirm schedule changes.','https://www.packers.com/schedule/',actions(
+ entry('packers-next-schedule','Green Bay · schedule and next game','schedule','NFL','Open Green Bay’s official schedule to see the actual next matchup, time, location and broadcast. Archived Oct 29 coverage is no longer a next-game preview.','https://www.packers.com/schedule/',actions(
   ['Official next game','https://www.packers.com/schedule/'],
   ['Roster and lineup','https://www.packers.com/team/players-roster/'],
   ['Latest Packers video','https://www.packers.com/video/']
  ),nfl('gb'),{event:'NFL'}),
- entry('lions-next-schedule','Detroit · upcoming games','schedule','NFL','After Green Bay, Detroit is scheduled to host Minnesota on Sunday, Nov 1 on FOX; confirm schedule changes.','https://www.detroitlions.com/schedule/',actions(
+ entry('lions-next-schedule','Detroit · upcoming games','schedule','NFL','Open Detroit’s official schedule for its next verified matchup and coverage. Times and broadcast assignments can change.','https://www.detroitlions.com/schedule/',actions(
   ['Official next game','https://www.detroitlions.com/schedule/'],
   ['Roster','https://www.detroitlions.com/team/players-roster/'],
   ['Video highlights','https://www.detroitlions.com/video/']
@@ -61,7 +61,7 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Game highlights','https://www.mlb.com/video/'],
   ['World Series news','https://www.mlb.com/news']
  ),mlb(139),{event:'MLB',date:'2026-10-23'}),
- entry('world-series-future-games','World Series · games 4–7','schedule','MLB','Game 4 Oct 27. Games 5–7 are conditional; verify their status on MLB’s official postseason schedule.','https://www.mlb.com/postseason',actions(
+ entry('world-series-future-games','World Series · official postseason schedule','schedule','MLB','Official MLB postseason dates, scores and highlights are the live source of truth; this card does not label a completed game as upcoming.','https://www.mlb.com/postseason',actions(
   ['Upcoming schedule','https://www.mlb.com/postseason'],
   ['MLB video','https://www.mlb.com/video/'],
   ['FOX sports','https://www.foxsports.com/mlb']
@@ -135,7 +135,7 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['See new sandwiches','https://news.bk.com/blog-posts/burger-king-r-expands-its-iconic-original-chicken-sandwich-lineup-with-two-bold-new-flavors'],
   ['Official menu','https://www.bk.com/'],
   ['Find nearby restaurants','https://www.bk.com/']
- ),icon('bk.com')),
+ ),'https://cdn.prod.website-files.com/631b4b4e277091ef01450237/6a4bbcaef5381d4ca4bf00a4_Burger-King-Expands-Its-Iconic-Original-Chicken-Sandwich-Lineup-with-Two-Bold-New-Flavors.jpg',{heroImage:true,photoAsOf:'July 2026 promotional photograph · original Burger King newsroom'}),
  entry('royal-caribbean-cruises','Royal Caribbean · cruise explorer','travel','Travel','Compare official itineraries, ships and cruise dates; final costs and availability come from Royal Caribbean.','https://www.royalcaribbean.com/',actions(
   ['Browse cruises','https://www.royalcaribbean.com/'],
   ['Ships and itineraries','https://www.royalcaribbean.com/'],
