@@ -3839,10 +3839,11 @@ async function checkForSiteUpdate(){
   const remote=html.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
   if(!remote||!siteRevision||remote===siteRevision)return false;
   if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
-  // A revision reload must not discard a partially typed message or unsent
-  // photo. Recheck AFTER the network wait, when Android may have resumed typing.
-  // The next visibility/hourly check will retry once the composer is empty.
-  if(input.value.length||pendingImage||pendingImages.length)return false;
+  // A revision reload must not discard a partially typed message, private
+  // note, Robot Brain work request, or unsent photo. Recheck AFTER the network
+  // wait, when Android may have resumed editing any of these fields.
+  // The next visibility/hourly check will retry once all drafts are clear.
+  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length)return false;
   if(keepChat)saveThread();
   // Only this trusted update path may keep the active thread on reload.
   try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1')}catch{}
