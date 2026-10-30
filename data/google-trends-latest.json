@@ -3,107 +3,106 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-29T23:41:18.404900Z",
+  "checked_at": "2026-10-30T03:03:19.899451Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "panthers schedule",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-29T23:20:00Z",
-      "related_news_urls": [
-        "https://www.panthers.com/news/week-8-inactives-at-green-bay-panthers-down-three-starters-for-packers",
-        "https://www.espn.com/nfl/story/_/id/50309816/pass-rusher-jaelan-phillips-4-panthers-ruled-tnf",
-        "https://sports.yahoo.com/articles/carolina-panthers-rule-two-key-001018954.html"
-      ]
-    },
-    {
-      "query": "dave canales",
+      "query": "giuliana & bill",
       "approx_searches": "200+",
-      "published_at": "2026-10-29T23:20:00Z",
+      "published_at": "2026-10-30T02:50:00Z",
       "related_news_urls": [
-        "https://en.as.com/nfl/dave-canales-contract-details-what-is-the-panthers-head-coachs-salary-and-how-many-years-are-left-f202610-n/",
-        "https://www.espn.com/nfl/story/_/id/50308348/carolina-panthers-consistency-packers-week-8-tnf-evero",
-        "https://www.panthers.com/news/monday-brew-working-on-run-defense-and-position-numbers"
+        "https://people.com/bill-and-giuliana-rancic-are-considering-moving-to-nashville-or-florida-12201412",
+        "https://www.usmagazine.com/celebrity-news/news/bill-giuliana-rancic-are-mulling-nashville-or-florida-move/"
       ]
     },
     {
-      "query": "cavaliers vs hawks",
-      "approx_searches": "10000+",
-      "published_at": "2026-10-29T23:10:00Z",
+      "query": "wild score",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T02:50:00Z",
       "related_news_urls": [
-        "https://www.espn.com/fantasy/basketball/story/_/id/50289500/fantasy-basketball-tips-nba-betting-picks-today",
-        "https://sports.yahoo.com/articles/watch-cavaliers-vs-hawks-live-213000162.html",
-        "https://www.sportsline.com/nfl/game-forecast/NFL_20261101_LV@NYJ/"
+        "https://www.nhl.com/news/minnesota-wild-utah-mammoth-game-recap-october-27-2026",
+        "https://www.startribune.com/minnesota-wild-utah-mammoth-score-today-kirill-kaprizov-goals-jesper-wallstedt-quinn-hughes-stats/601902996",
+        "https://www.espn.com/nhl/recap/_/gameId/401892592"
       ]
     },
     {
-      "query": "bruins vs blues",
+      "query": "zach edey",
+      "approx_searches": "500+",
+      "published_at": "2026-10-30T02:40:00Z",
+      "related_news_urls": [
+        "https://www.basketballnews.com/news/basketballnews-nba-active-news-courtside-audio-reveals-warriors-rookie-yaxel-lendeborg-defending-draymond-green-against-seven-foot-four-grizzlies-star/",
+        "https://www.essentiallysports.com/nba-active-basketball-news-cameras-catch-draymond-green-poking-seven-four-stars-eye-as-warriors-grizzlies-turn-chippy/",
+        "https://www.tomahawknation.com/florida-state-football/139521/fsu-seminoles-clemson-tigers-how-to-watch-stream-odds"
+      ]
+    },
+    {
+      "query": "zakee wheatley",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T02:40:00Z",
+      "related_news_urls": [
+        "https://pantherswire.usatoday.com/story/sports/nfl/panthers/2026/10/29/panthers-zakee-wheatley-espn-week-8/92496513007/",
+        "https://sports.yahoo.com/articles/one-panthers-rookie-shining-brighter-191229941.html",
+        "https://roundtable.io/sports/nfl/panthers/news/panthers-rookie-could-play-major-role-vs-buccaneers-this-week"
+      ]
+    },
+    {
+      "query": "josh turek",
       "approx_searches": "2000+",
-      "published_at": "2026-10-29T23:10:00Z",
+      "published_at": "2026-10-30T02:30:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/blues/news/projected-lineup-oct-29-vs-boston",
-        "https://sports.yahoo.com/articles/bruins-vs-blues-score-live-230001810.html",
-        "https://www.stanleycupofchowder.com/26-27-game-coverage/59569/preview-bruins-continue-their-road-trip-in-st-louis"
+        "https://www.economist.com/united-states/2026/10/29/democrats-are-rediscovering-what-an-appealing-politics-of-progress-looks-like",
+        "https://slate.com/news-and-politics/2026/10/iowa-senate-josh-turek-ashley-hinson-polls.html",
+        "https://www.npr.org/2026/10/27/nx-s1-6019374/why-iowa-is-up-for-grabs"
       ]
     },
     {
-      "query": "islanders vs wild",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-29T23:10:00Z",
+      "query": "winter storm warning",
+      "approx_searches": "50000+",
+      "published_at": "2026-10-30T02:30:00Z",
       "related_news_urls": [
-        "https://www.startribune.com/minnesota-wild-vs-new-york-islanders-score-today-quinn-hughes-stats-dylan-larkin-trade-update/601904565",
-        "https://sports.yahoo.com/videos/10-29-26-wild-vs-220005057.html",
-        "https://www.nhl.com/news/new-york-islanders-minnesota-wild-game-preview-october-29-2026"
+        "https://www.autoblog.com/news/winter-storm-warning-issued-for-up-to-15-inches-of-snow-through-friday",
+        "https://www.mensjournal.com/news/new-winter-storm-warning-bringing-18-inches-of-snow-35-mph-winds",
+        "https://www.theaustralian.com.au/news/snowstorm-whitens-fairbanks/video/6657950ba74814ca9ef2215767660f5f"
       ]
     },
     {
-      "query": "canadiens vs stars",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-29T23:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50309369/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-        "https://www.nhl.com/news/montreal-canadiens-dallas-stars-game-preview-october-29-2026",
-        "https://sports.yahoo.com/articles/line-combinations-stars-vs-canadiens-195259832.html"
-      ]
-    },
-    {
-      "query": "bo bichette",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-29T23:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7736936/2026/10/29/bo-bichette-player-option-mets/",
-        "https://www.mlbtraderumors.com/2026/10/bo-bichette-to-exercise-player-option-for-2027.html",
-        "https://sports.yahoo.com/articles/blue-jays-learn-bo-bichette-231603584.html"
-      ]
-    },
-    {
-      "query": "kings vs pelicans",
+      "query": "memphis grizzlies vs portland trail blazers match player stats",
       "approx_searches": "5000+",
-      "published_at": "2026-10-29T23:00:00Z",
+      "published_at": "2026-10-30T02:30:00Z",
       "related_news_urls": [
-        "https://www.si.com/nba/kings/onsi/kings-injury-report-who-out-for-must-win-game-vs-pelicans",
-        "https://kings.com/news/kings-medical-updates-4",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-26/dylan-cardwell-calf-to-be-re-evaluated-in-7-days"
+        "https://www.nba.com/game/gsw-vs-min-0022600139/box-score",
+        "https://www.nba.com/game/lal-vs-lac-0022600143/box-score",
+        "https://www.nba.com/game/hou-vs-mil-0022600138/box-score"
       ]
     },
     {
-      "query": "sunshine protection act",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-29T23:00:00Z",
+      "query": "robert kelker kelly died from what",
+      "approx_searches": "500+",
+      "published_at": "2026-10-30T02:30:00Z",
       "related_news_urls": [
-        "https://www.axios.com/local/denver/2026/10/29/daylight-saving-time-fall-back-sleep-tips-colorado",
-        "https://www.pbs.org/newshour/politics/senate-is-skeptical-about-making-daylight-saving-time-permanent-despite-trumps-pressure",
-        "https://www.today.com/health/sleep/daylight-saving-time-fall-back-heart-tips-rcna605909"
+        "https://www.foxnews.com/entertainment/days-of-our-lives-star-robert-kelker-kelly-cause-of-death-revealed",
+        "https://www.eonline.com/news/1437650/days-of-our-lives-star-robert-kelker-kellys-cause-of-death-heart-disease",
+        "https://www.yahoo.com/entertainment/celebrity/articles/days-lives-alum-robert-kelker-225609424.html"
       ]
     },
     {
-      "query": "servicio de ciudadanía e inmigración de los estados unidos",
+      "query": "nickeil alexander-walker",
       "approx_searches": "1000+",
-      "published_at": "2026-10-29T22:50:00Z",
+      "published_at": "2026-10-30T02:30:00Z",
       "related_news_urls": [
-        "https://apnews.com/article/eeuu-trump-inmigracion-ice-redadas-elecciones-3b51a10e20e6ee7ed319cc5b665d8982",
-        "https://www.france24.com/es/minuto-a-minuto/20261029-c%C3%B3mo-la-ofensiva-antimigratoria-de-trump-amenaza-con-convertirse-en-un-lastre-electoral-para-los-republicanos",
-        "https://www.univision.com/noticias/inmigracion/uscis-suma-2-200-000-acciones-migratorias-desde-el-regreso-de-donald-trump-a-la-casa-blanca"
+        "https://www.espn.com/video/clip/_/id/50243863/nickeil-alexander-walker-knocks-3",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/nickeil-alexander-walker-has-23-points-in-loss",
+        "https://www.rotowire.com/basketball/headlines/nickeil-alexander-walker-news-drains-five-triples-536686"
+      ]
+    },
+    {
+      "query": "cedric coward",
+      "approx_searches": "500+",
+      "published_at": "2026-10-30T02:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/3-takeaways-grizzlies-110-105-162825397.html",
+        "https://www.fanduel.com/research/jazz-vs-grizzlies-prediction-nba-odds-spread-best-bets-for-10-26-2026",
+        "https://www.cbssports.com/nba/news/grizzlies-hold-off-late-jazz-rally-to-stay-unbeaten/"
       ]
     }
   ]

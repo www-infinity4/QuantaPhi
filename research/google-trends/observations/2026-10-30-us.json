@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-10-30T03:03:19.899451Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "giuliana & bill",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T02:50:00Z",
+      "related_news_urls": [
+        "https://people.com/bill-and-giuliana-rancic-are-considering-moving-to-nashville-or-florida-12201412",
+        "https://www.usmagazine.com/celebrity-news/news/bill-giuliana-rancic-are-mulling-nashville-or-florida-move/"
+      ]
+    },
+    {
+      "query": "wild score",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T02:50:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/minnesota-wild-utah-mammoth-game-recap-october-27-2026",
+        "https://www.startribune.com/minnesota-wild-utah-mammoth-score-today-kirill-kaprizov-goals-jesper-wallstedt-quinn-hughes-stats/601902996",
+        "https://www.espn.com/nhl/recap/_/gameId/401892592"
+      ]
+    },
+    {
+      "query": "zach edey",
+      "approx_searches": "500+",
+      "published_at": "2026-10-30T02:40:00Z",
+      "related_news_urls": [
+        "https://www.basketballnews.com/news/basketballnews-nba-active-news-courtside-audio-reveals-warriors-rookie-yaxel-lendeborg-defending-draymond-green-against-seven-foot-four-grizzlies-star/",
+        "https://www.essentiallysports.com/nba-active-basketball-news-cameras-catch-draymond-green-poking-seven-four-stars-eye-as-warriors-grizzlies-turn-chippy/",
+        "https://www.tomahawknation.com/florida-state-football/139521/fsu-seminoles-clemson-tigers-how-to-watch-stream-odds"
+      ]
+    },
+    {
+      "query": "zakee wheatley",
+      "approx_searches": "200+",
+      "published_at": "2026-10-30T02:40:00Z",
+      "related_news_urls": [
+        "https://pantherswire.usatoday.com/story/sports/nfl/panthers/2026/10/29/panthers-zakee-wheatley-espn-week-8/92496513007/",
+        "https://sports.yahoo.com/articles/one-panthers-rookie-shining-brighter-191229941.html",
+        "https://roundtable.io/sports/nfl/panthers/news/panthers-rookie-could-play-major-role-vs-buccaneers-this-week"
+      ]
+    },
+    {
+      "query": "josh turek",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-30T02:30:00Z",
+      "related_news_urls": [
+        "https://www.economist.com/united-states/2026/10/29/democrats-are-rediscovering-what-an-appealing-politics-of-progress-looks-like",
+        "https://slate.com/news-and-politics/2026/10/iowa-senate-josh-turek-ashley-hinson-polls.html",
+        "https://www.npr.org/2026/10/27/nx-s1-6019374/why-iowa-is-up-for-grabs"
+      ]
+    },
+    {
+      "query": "winter storm warning",
+      "approx_searches": "50000+",
+      "published_at": "2026-10-30T02:30:00Z",
+      "related_news_urls": [
+        "https://www.autoblog.com/news/winter-storm-warning-issued-for-up-to-15-inches-of-snow-through-friday",
+        "https://www.mensjournal.com/news/new-winter-storm-warning-bringing-18-inches-of-snow-35-mph-winds",
+        "https://www.theaustralian.com.au/news/snowstorm-whitens-fairbanks/video/6657950ba74814ca9ef2215767660f5f"
+      ]
+    },
+    {
+      "query": "memphis grizzlies vs portland trail blazers match player stats",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-30T02:30:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/game/gsw-vs-min-0022600139/box-score",
+        "https://www.nba.com/game/lal-vs-lac-0022600143/box-score",
+        "https://www.nba.com/game/hou-vs-mil-0022600138/box-score"
+      ]
+    },
+    {
+      "query": "robert kelker kelly died from what",
+      "approx_searches": "500+",
+      "published_at": "2026-10-30T02:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/entertainment/days-of-our-lives-star-robert-kelker-kelly-cause-of-death-revealed",
+        "https://www.eonline.com/news/1437650/days-of-our-lives-star-robert-kelker-kellys-cause-of-death-heart-disease",
+        "https://www.yahoo.com/entertainment/celebrity/articles/days-lives-alum-robert-kelker-225609424.html"
+      ]
+    },
+    {
+      "query": "nickeil alexander-walker",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-30T02:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50243863/nickeil-alexander-walker-knocks-3",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/nickeil-alexander-walker-has-23-points-in-loss",
+        "https://www.rotowire.com/basketball/headlines/nickeil-alexander-walker-news-drains-five-triples-536686"
+      ]
+    },
+    {
+      "query": "cedric coward",
+      "approx_searches": "500+",
+      "published_at": "2026-10-30T02:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/3-takeaways-grizzlies-110-105-162825397.html",
+        "https://www.fanduel.com/research/jazz-vs-grizzlies-prediction-nba-odds-spread-best-bets-for-10-26-2026",
+        "https://www.cbssports.com/nba/news/grizzlies-hold-off-late-jazz-rally-to-stay-unbeaten/"
+      ]
+    }
+  ]
+}
