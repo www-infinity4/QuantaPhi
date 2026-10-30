@@ -91,6 +91,7 @@ export function createVerifiedCard(card){
  node.dataset.sourceName=card.name;
  node.dataset.sourceReady='false';
  node.dataset.kind=card.kind;
+ if(isExpiredOneOff(card))node.dataset.archived='true';
  node.dataset.category=card.category;
  node.dataset.checked=card.checked;
  if(card.nonTargeted)node.dataset.personalization='disabled';
@@ -240,7 +241,9 @@ export function mountVerifiedCards(){
  const bank=document.getElementById('verifiedBrandSportsCards');
  if(!bank||bank.dataset.mounted==='true')return;
  bank.dataset.mounted='true';
- const valid=REQUESTED_PUBLIC_CARDS.filter(card=>validBrandSportsCard(card)&&!isExpiredOneOff(card));
+ // Keep dated source cards in the hidden bank for direct historical links.
+ // The Oracle feed excludes archived entries, not the original card library.
+ const valid=REQUESTED_PUBLIC_CARDS.filter(validBrandSportsCard);
  // Keep source widgets in their original hidden bank. The Oracle top viewer
  // moves the same DOM node into the spotlight and preserves all click handlers.
  bank.append(...valid.map(createVerifiedCard));
