@@ -349,3 +349,44 @@ test('History-off turns survive automatic website and Android reopen without uns
  assert.equal(native(),false,'Android must report no fresh chat when History-off turns exist');
  assert.equal(starts,0);
 });
+
+
+test('explicit New chat requires confirmation before discarding History-off conversation turns',async()=>{
+ const a=ui.indexOf('async function startConversation(');
+ const b=ui.indexOf("newConversation.addEventListener('click'",a);
+ assert.ok(a>0&&b>a,'actual New chat handler exists');
+ async function attempt(approve){
+  let confirms=0,clears=0,warning='';
+  const ctx={
+   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+   chatsMessage:{textContent:''},keepChat:false,
+   messages:[{id:'turn_1',role:'user',text:'Important conversation with History disabled'}],
+   activeThread:'chat_live',threadIndex:[{id:'chat_live',title:'Current chat',updated:1}],
+   input:{value:'',focus:()=>{}},noteText:{value:''},workText:{value:''},
+   pendingImage:null,pendingImages:[],photoInput:{value:''},photoPreview:{hidden:false},
+   confirm:text=>{confirms++;warning=text;return approve},
+   readThread:()=>[],freshThreadId:()=> 'chat_next',
+   save:()=>true,THREAD_INDEX:'threads',
+   sessionStorage:{setItem:()=>{}},TAB_THREAD:'tab',EXPLICIT_THREAD:'explicit',
+   memoryContext:[],memoryInstructions:[],greeted:true,activeCardEvidence:null,
+   cardWorkspaceInstance:null,conversation:{replaceChildren:()=>{clears++}},
+   renderConversationFolders:()=>{},chatsPanel:{open:true},status:{textContent:''},
+   nativeOverlay:true,ownerReady:false
+  };
+  const start=vm.runInNewContext(ui.slice(a,b)+';startConversation',ctx);
+  const result=await start({automatic:false});
+  return {result,confirms,clears,warning,thread:ctx.activeThread,messages:ctx.messages};
+ }
+ const cancelled=await attempt(false);
+ assert.equal(cancelled.result,false,'Cancel must preserve History-off turns');
+ assert.equal(cancelled.confirms,1,'explicit New chat must ask before discarding an unsaved conversation');
+ assert.match(cancelled.warning,/History is off/i);
+ assert.equal(cancelled.thread,'chat_live');
+ assert.equal(cancelled.messages[0].text,'Important conversation with History disabled');
+ assert.equal(cancelled.clears,0);
+ const approved=await attempt(true);
+ assert.equal(approved.result,true,'owner-approved new chat remains available');
+ assert.equal(approved.confirms,1);
+ assert.equal(approved.thread,'chat_next');
+ assert.equal(approved.clears,1);
+});
