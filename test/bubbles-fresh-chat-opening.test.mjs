@@ -131,3 +131,38 @@ test('standalone website and Android reopen fresh chats while embedded cards ret
  assert.match(native,/void hide\(\) \{/);
  assert.match(native,/historyJournal\.read\(\)/);
 });
+
+test('history storage failure blocks both automatic and confirmed New chat without clearing the active thread',async()=>{
+ const a=ui.indexOf('async function startConversation(');
+ const b=ui.indexOf("newConversation.addEventListener('click'",a);
+ assert.ok(a>0&&b>a);
+ let saves=0,clears=0,confirms=0;
+ const ctx={
+  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+  chatsMessage:{textContent:''},keepChat:true,
+  messages:[{id:'old_message',role:'user',text:'important saved conversation'}],
+  activeThread:'chat_old',threadIndex:[{id:'chat_old',title:'Existing',updated:1}],
+  pendingImage:null,pendingImages:[],input:{value:''},noteText:{value:''},workText:{value:''},
+  saveThread:()=>{saves++;return false},
+  confirm:()=>{confirms++;return true},
+  conversation:{replaceChildren:()=>{clears++}},
+  freshThreadId:()=>{throw Error('must not create a thread when saving fails')}
+ };
+ const start=vm.runInNewContext(ui.slice(a,b)+';startConversation',ctx);
+ assert.equal(await start({automatic:true}),false);
+ assert.equal(saves,1);
+ assert.equal(confirms,0);
+ assert.equal(ctx.activeThread,'chat_old');
+ assert.equal(ctx.messages.length,1);
+ assert.equal(clears,0);
+ ctx.input.value='unfinished text';ctx.pendingImage={data:'photo'};ctx.pendingImages=[{data:'photo'}];
+ assert.equal(await start({automatic:false}),false);
+ assert.equal(saves,2);
+ assert.equal(confirms,1);
+ assert.equal(ctx.input.value,'unfinished text');
+ assert.equal(ctx.pendingImages.length,1);
+ assert.equal(ctx.activeThread,'chat_old');
+ assert.equal(ctx.messages[0].text,'important saved conversation');
+ assert.equal(clears,0);
+ assert.match(ctx.chatsMessage.textContent,/could not be saved/);
+});
