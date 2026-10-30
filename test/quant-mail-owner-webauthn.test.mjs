@@ -99,11 +99,11 @@ test('public Quant Mail is private placeholder; WebAuthn client keeps server rea
  const html=readFileSync(new URL('../quant-mail.html',import.meta.url),'utf8');
  const js=readFileSync(new URL('../quant-mail-passkeys.mjs',import.meta.url),'utf8');
  assert.match(html,/Private account enrollment is not available from this public page/);
- assert.doesNotMatch(html,/kris@quantaphi\\.org|administrator@quantaphi\\.org|Create phone passkey/i);
- assert.match(js,/result\\.enabled===true/);
- assert.match(js,/result\\.registrationReady===true/);
- assert.match(js,/result\\.loginReady===true/);
- assert.match(js,/navigator\\?\\.credentials/);
+ assert.doesNotMatch(html,/kris@quantaphi\.org|administrator@quantaphi\.org|Create phone passkey/i);
+ assert.match(js,/result\.enabled===true/);
+ assert.match(js,/result\.registrationReady===true/);
+ assert.match(js,/result\.loginReady===true/);
+ assert.match(js,/navigator\?\.credentials/);
  assert.doesNotMatch(html,/type="password"/);
 });
 
