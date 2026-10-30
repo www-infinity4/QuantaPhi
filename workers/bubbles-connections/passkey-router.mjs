@@ -20,7 +20,8 @@ function errorCode(e){
  if(['verified_owner_required','owner_binding_conflict','passkey_limit','owner_alias_invalid',
  'passkey_response_invalid','challenge_invalid','passkey_verification_failed',
  'credential_exists_or_limit','passkey_unrecognized','credential_revoked',
- 'counter_replay','passkey_record_invalid','passkey_rate_limited'].includes(name))return name;
+ 'counter_replay','passkey_record_invalid','passkey_rate_limited',
+ 'admin_role_verification_required'].includes(name))return name;
  return 'passkey_verification_failed';
 }
 export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
@@ -77,7 +78,24 @@ export async function handleOwnerPasskeyRequest(request,env,verifyWallet){
    return json({ok:true,...value});
   }
   if(suffix==='/login/finish'){
-   const value=await svc.passkeyLoginFinish({alias,attemptId:body.attemptId,credential:body.credential});
+   let adminAuthorized=false;
+   if(alias==='administrator@quantaphi.org'){
+    // Administrator step-up is a separate server-side RBAC check, not an
+    // alias selector or a passkey credential alone. Fail closed until the
+    // wallet's dedicated admin role claim is independently implemented.
+    const identity=await verifyWallet(request,env);
+    const bearer=request.headers.get('Authorization')||'';
+    if(!identity?.userId||!/^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(bearer))
+     return deny('admin_role_verification_required');
+    const auth=await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/passkey-owner',{
+     headers:{Authorization:bearer},signal:AbortSignal.timeout(9000)});
+    const proof=await auth.json().catch(()=>({}));
+    if(!auth.ok||proof?.ok!==true||proof.ownerVerified!==true||
+       proof.adminVerified!==true||String(proof.userId)!==String(identity.userId))
+     return deny('admin_role_verification_required');
+    adminAuthorized=true;
+   }
+   const value=await svc.passkeyLoginFinish({alias,attemptId:body.attemptId,credential:body.credential,adminAuthorized});
    if(!value?.sessionEstablished||!value.sessionToken)return deny('passkey_session_unavailable');
    const {sessionToken,...publicValue}=value;
    return json(publicValue,200,{'Set-Cookie':passkeyCookie(sessionToken,alias==='administrator@quantaphi.org')});
