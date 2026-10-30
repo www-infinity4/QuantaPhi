@@ -434,8 +434,7 @@ function saveThread(){
  const first=messages.find(m=>m.role==='user')?.text?.trim().replace(/\s+/g,' ').slice(0,65);
  if(row){row.updated=Date.now();if(row.title==='New conversation'&&first)row.title=first;}
  threadIndex.sort((a,b)=>b.updated-a.updated);
- save(THREAD_INDEX,threadIndex.slice(0,150));
- return true;
+ return save(THREAD_INDEX,threadIndex.slice(0,150));
 }
 function persistChat(){
  for(const m of messages){if(!m.id)m.id=crypto.randomUUID();if(!m.at)m.at=Date.now();m.sessionId=activeThread;}
@@ -1889,18 +1888,25 @@ async function startConversation({automatic=false}={}){
   return false;
  }
  // A closed, unused empty chat should not grow the History list every time
- // the floating bubble is opened and collapsed.
- if(!messages.length&&threadIndex.find(t=>t.id===activeThread)?.title==='New conversation'&&
-   !readThread(activeThread).length)
-  threadIndex=threadIndex.filter(t=>t.id!==activeThread);
+ // the floating bubble is opened and collapsed. Stage the next index before
+ // changing the active thread: storage quota errors must not orphan History.
+ const dropUnused=!messages.length&&threadIndex.find(t=>t.id===activeThread)?.title==='New conversation'&&
+   !readThread(activeThread).length;
+ const nextThread=freshThreadId();
+ const nextIndex=[{id:nextThread,title:'New conversation',updated:Date.now()},
+  ...threadIndex.filter(t=>!dropUnused||t.id!==activeThread)];
+ const indexSaved=save(THREAD_INDEX,nextIndex);
+ if(keepChat&&!indexSaved){
+  chatsMessage.textContent='Conversation History could not be saved on this device. Keep this chat open and free storage before starting a new one.';
+  return false;
+ }
+ threadIndex=nextIndex;
  pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
- activeThread=freshThreadId();
+ activeThread=nextThread;
  try{
   sessionStorage.setItem(TAB_THREAD,activeThread);
   sessionStorage.setItem(EXPLICIT_THREAD,'1');
  }catch{}
- threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
- save(THREAD_INDEX,threadIndex);
  messages=[];memoryContext=[];memoryInstructions=[];greeted=false;activeCardEvidence=null;
  cardWorkspaceInstance?.close();cardWorkspaceInstance=null;conversation.replaceChildren();
  input.value=''; // Prevent a previous chat's unfinished composer text from appearing as a new turn.
