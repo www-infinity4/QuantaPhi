@@ -3861,7 +3861,9 @@ async function checkForSiteUpdate(){
   // wait, when Android may have resumed editing any of these fields.
   // The next visibility/hourly check will retry once all drafts are clear.
   if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length)return false;
-  if(keepChat)saveThread();
+  // A storage quota/error must not reload away the only in-memory copy of
+  // this conversation. Keep the current page and retry on a later check.
+  if(keepChat&&!saveThread())return false;
   // Only this trusted update path may keep the active thread on reload.
   try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1')}catch{}
   location.reload();
