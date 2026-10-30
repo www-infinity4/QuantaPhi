@@ -1,48 +1,24 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Quant Mail — QuantaPhi</title>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Account settings · QuantaPhi</title>
 <style>
-:root{color-scheme:light;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#263c4d;background:#f8fafb}
-*{box-sizing:border-box}body{margin:0;padding:18px 14px 55px}
-main{max-width:700px;margin:auto}h1{font-size:clamp(28px,5vw,38px);margin:8px 0;color:#12486f}h2{font-size:20px;color:#12486f}p{line-height:1.6}
-header{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:8px 0 15px}
-header strong{font-size:18px;color:#15578c}
-nav{display:flex;gap:12px}a{color:#075eac}
-.card{padding:clamp(18px,4vw,26px);background:white;border:1px solid #d9e3eb;border-radius:17px;margin:14px 0;box-shadow:0 2px 16px #14385612}
-.status{display:block;background:#f2f5f8;border-left:4px solid #829aa8;border-radius:8px;padding:13px;font-weight:650}
-.alias{border:1px solid #d9e4ef;background:#f2f7fb;padding:12px;border-radius:10px;margin:9px 0;overflow-wrap:anywhere}
-.alias strong{display:block;color:#1b4a73}.alias small{color:#536a7d}
-.action{display:inline-block;background:#096bb2;color:#fff;text-decoration:none;padding:12px 18px;border-radius:11px;font-weight:700;min-height:44px}
-.muted{font-size:14px;color:#526577}a:focus-visible{outline:3px solid #e5aa25;outline-offset:3px}
-</style></head><body><main>
-<header><strong>QuantaPhi · Quant Mail</strong><nav aria-label="Navigation"><a href="/bubbles.html">Bubbles chat</a><a href="/bubbles-accounts.html">Account connections</a></nav></header>
-<section class="card">
-<h1>Quant Mail</h1>
-<p class="status" id="quantMailOverallStatus" role="status">Mailboxes are not active. Checking whether secure phone passkey enrollment is available…</p>
-<p>QuantaPhi's planned passwordless email service will use the existing Bubbles identity, with a passkey created on your own device after the secure server is ready.</p>
-<h2>Requested owner addresses</h2>
-<div class="alias"><strong>kris@quantaphi.org</strong><small>Owner address · not active</small></div>
-<div class="alias"><strong>administrator@quantaphi.org</strong><small>Administrator alias · not active, requires verified administrator privileges</small></div>
-<p class="muted">These names are reserved in the proposed design. They are not mailboxes, confirmed account identities or a way to claim administrator access.</p>
-</section>
-<section class="card"><h2>Phone passkey registration</h2>
-<p>Choose your requested owner alias. Both addresses belong to one verified owner wallet; the administrator alias additionally requires administrator authorization. Your phone keeps the private key.</p>
-<label for="quantMailPasskeyAlias" style="display:block;margin:12px 0 6px;font-weight:700">Owner address</label>
-<select id="quantMailPasskeyAlias" style="width:100%;min-height:48px;padding:12px;border:1px solid #9db9c8;border-radius:10px;font:16px system-ui">
-<option value="kris@quantaphi.org">kris@quantaphi.org</option>
-<option value="administrator@quantaphi.org">administrator@quantaphi.org</option>
-</select>
-<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px">
-<button type="button" id="quantMailPasskeyRegister" disabled style="min-height:48px;background:#096bb2;border:0;border-radius:10px;color:#fff;font:700 15px system-ui;padding:12px">Create phone passkey</button>
-<button type="button" id="quantMailPasskeyLogin" disabled style="min-height:48px;background:#e8f2fa;border:1px solid #a8c1d2;border-radius:10px;color:#144c74;font:700 15px system-ui;padding:12px">Sign in with passkey</button>
-</div>
-<p class="status" id="quantMailPasskeyStatus" data-state="checking" aria-live="polite" role="status">Checking verified passkey service readiness…</p>
-<p class="muted">The Create button remains disabled unless the real WebAuthn server reports readiness. Passkey confirmation must be completed on your own phone.</p>
-</section>
-<section class="card"><h2>Sign in and security</h2>
-<p>Use your existing verified StarQuest / Unified Wallet session to open Bubbles. Do not enter a Gmail password or your phone's screen lock here. Passkey registration requires server-verified owner authentication and a secure on-phone confirmation. If the server is not ready, registration remains unavailable.</p>
-<a class="action" href="/bubbles.html">Open Bubbles chat</a>
-<p class="muted">Once the WebAuthn server, owner identity verification and actual mail transport are independently reviewed and operational, this page can offer passkey registration and an inbox. No password or wallet was changed to show this preview.</p></section>
-</main><script type="module" src="/quant-mail-passkeys.mjs?v=20261029-secure-registration1"></script></body></html>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#243c4e;background:#f7fafc}
+*{box-sizing:border-box}body{margin:0;padding:24px 15px}
+main{max-width:560px;margin:8vh auto;background:#fff;border:1px solid #d8e3eb;border-radius:18px;padding:clamp(18px,5vw,32px)}
+h1{font-size:clamp(24px,5vw,32px);color:#16466d;margin:0 0 14px}
+p{line-height:1.65;color:#425a6c}
+a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 18px;border-radius:10px;background:#1266a4;color:#fff;font-weight:700;text-decoration:none}
+a:focus-visible{outline:3px solid #e7a42c;outline-offset:3px}
+</style>
+</head>
+<body><main>
+<h1>Account settings</h1>
+<p>Private account enrollment is not available from this public page. No email address, password, security key or passkey is collected here.</p>
+<p>Use your existing verified account to manage security settings when private enrollment becomes available.</p>
+<a href="/bubbles.html">Return to Bubbles</a>
+</main></body>
+</html>
