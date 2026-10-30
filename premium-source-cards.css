@@ -18,3 +18,18 @@ body.oracle-shelf-open #premiumSourceCards[hidden],body.oracle-shelf-open #siteQ
 .premium-card .qca-search-submit{background:#a42e2d;color:#fff}
 .premium-card .qca-button[aria-pressed="true"]{background:#fff1d5;color:#5f3800}
 @media(max-width:420px){.premium-card .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* Original food photography leads restaurant cards before their optional research form. */
+.premium-food-hero{margin:0!important;display:grid;gap:0;background:#fff}
+.premium-food-visual{display:block;background:#fff9ef;text-decoration:none;min-height:100px}
+.premium-food-photo{display:block;width:100%;max-height:390px;aspect-ratio:4/3;object-fit:contain;object-position:center}
+.premium-food-fallback{display:block;padding:24px;text-align:center;color:#245271;font-weight:800}
+.premium-food-body{padding:16px 20px 18px;color:#263844}
+.premium-food-source{text-transform:uppercase;letter-spacing:.08em;font:800 11px/1.4 system-ui;color:#7a3d2b}
+.premium-food-body h3{font:800 clamp(21px,5vw,29px)/1.2 system-ui;color:#203d50;margin:7px 0}
+.premium-food-body>p:not(.premium-food-source){font:14px/1.5 system-ui;margin:7px 0 13px}
+.premium-food-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.premium-food-links a{display:grid;place-items:center;min-height:48px;border:1px solid #a9c7d8;border-radius:12px;background:#e9f4fb;color:#184c6d;font:800 13px/1.25 system-ui;text-align:center;text-decoration:none;padding:9px}
+.premium-card:has(.premium-food-hero) .premium-search{margin-top:18px}
+@media(max-width:420px){.premium-food-photo{max-height:300px}.premium-food-body{padding:14px}.premium-food-links a{font-size:12px}}
