@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-30T02:51:30.736908Z",
+  "checked_at": "2026-10-30T09:36:41.518185Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
@@ -18,23 +18,23 @@
   ],
   "articles": [
     {
+      "title": "Presenting the 2026 All-Postseason Team",
+      "url": "https://www.mlb.com/news/2026-mlb-all-postseason-team",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-30T02:44:28Z",
+      "summary": "",
+      "author": "Jared Greenspan",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
       "title": "The Brewers are 1st-time champs. Nearly all of their players are, too.",
       "url": "https://www.mlb.com/news/first-time-champs-on-2026-brewers",
       "publisher": "MLB.com",
       "published_at": "2026-10-29T19:32:01Z",
       "summary": "",
       "author": "Aiden Stepansky",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "The most clutch postseason performances",
-      "url": "https://www.mlb.com/news/most-clutch-postseason-performances",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T19:17:00Z",
-      "summary": "These players came through in October's biggest moments",
-      "author": "Matt Kelly",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -82,6 +82,17 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/91591fec-e18d-4a39-b2cc-2aacf335414e/pratt-chourio-getty.png",
       "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "What can we learn from the dominant 2026 Brewers?",
+      "url": "https://www.mlb.com/news/2026-brewers-championship-takeways",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-29T15:20:00Z",
+      "summary": "New champs have 4th-most wins in MLB over last decade",
+      "author": "Mike Petriello",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
     },
     {
       "title": "'It was about each other': The Brewers and Pat Murphy admire the masterpiece they built",
@@ -180,17 +191,6 @@
       "author": "Anthony DiComo",
       "image_url": "",
       "kind": "Analysis",
-      "image_credit": ""
-    },
-    {
-      "title": "Champs twice in one year! Brewers' Venezuelan trio pulls off rare feat with WBC, WS wins",
-      "url": "https://www.mlb.com/news/jackson-chourio-william-contreras-antonio-senzatela-2026-world-baseball-classic-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T06:20:30Z",
-      "summary": "",
-      "author": "Anthony DiComo",
-      "image_url": "",
-      "kind": "Reporting",
       "image_credit": ""
     },
     {
