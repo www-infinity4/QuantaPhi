@@ -11,7 +11,7 @@ const entry=(id,name,kind,category,description,official,actions,visual,extra={})
 });
 const actions=(...pairs)=>pairs.map(([label,url])=>({label,url}));
 export const REQUESTED_PUBLIC_CARDS=Object.freeze([
- entry('packers-lions-2026','Packers at Lions · FOX','game','NFL','Week 7 matchup was scheduled for Sun Oct 25, 2026 at Ford Field. For verified results and highlights, open the official game center.','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/',actions(
+ entry('packers-lions-2026','Packers at Lions · FOX','game','NFL','Week 7 matchup was scheduled for Sun Oct 25, 2026 at 3:25 PM Central at Ford Field. For verified results and highlights, open the official game center.','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/',actions(
   ['FOX / FOX One viewing','https://www.fox.com/sports/football/nfl/watch-packers-vs-lions-oct-25-2026'],
   ['Official game center','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/'],
   ['Lions highlights','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/']
