@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-29T23:29:33.832637Z",
+  "checked_at": "2026-10-30T02:51:30.736908Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 15
+      "articles_selected": 12
     },
     {
       "publisher": "CBS Sports",
@@ -17,17 +17,6 @@
     }
   ],
   "articles": [
-    {
-      "title": "White Sox to name Roffe director of amateur scouting (source)",
-      "url": "https://www.mlb.com/news/matt-roffe-to-be-white-sox-director-of-amateur-scouting",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T20:01:10Z",
-      "summary": "New executive spent past 5 seasons in Brewers front office",
-      "author": "Scott Merkin",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
     {
       "title": "The Brewers are 1st-time champs. Nearly all of their players are, too.",
       "url": "https://www.mlb.com/news/first-time-champs-on-2026-brewers",
@@ -93,17 +82,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/91591fec-e18d-4a39-b2cc-2aacf335414e/pratt-chourio-getty.png",
       "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "After watching his brother win World Series, Tylor Megill can take inspiration",
-      "url": "https://www.mlb.com/news/tylor-megill-inspired-by-world-series-champion-brother-trevor-megill",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T15:12:31Z",
-      "summary": "",
-      "author": "Anthony DiComo",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "'It was about each other': The Brewers and Pat Murphy admire the masterpiece they built",
@@ -227,17 +205,6 @@
       "image_credit": ""
     },
     {
-      "title": "'I've waited my whole life for this': Brewers fans take in title-clinching win",
-      "url": "https://www.mlb.com/news/brewers-fans-celebrate-world-series-title-at-american-family-field",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T05:40:05Z",
-      "summary": "",
-      "author": "Zach Sweet",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Contreras honored with World Series MVP for prowess behind the plate",
       "url": "https://www.mlb.com/news/william-contreras-wins-2026-world-series-mvp",
       "publisher": "MLB.com",
@@ -345,6 +312,39 @@
       "author": "Brandon Gustafson",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/b34822d9-f13e-43c8-b3d1-761f0d1b48fd/brewers-imagn-1.png",
       "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Biggest questions for World Series Game 5: How will the Rays get enough innings to avoid elimination (again)?",
+      "url": "https://www.cbssports.com/mlb/news/biggest-questions-world-series-game-5-rays-brewers/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T20:08:16Z",
+      "summary": "The Brewers will start Jacob Misiorowski as they try again for their first championship, while the Rays turn to Drew Rasmussen on short rest",
+      "author": "Dayn Perry",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/a6d2066b-663f-404d-a0e2-7a673f1678be/kevin-cash-getty-1.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Today's top games to watch, best bets, odds: Brewers vs. Rays World Series Game 5, Spurs vs. Jazz and more",
+      "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-vs-rays-world-series-game-5-spurs-vs-jazz-and-more/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T19:34:50Z",
+      "summary": "Find best bets and props for the biggest games in sports on Wednesday from the SportsLine Projection Model and top CBS Sports experts",
+      "author": "Scott Erskine",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/08/20/18a863a5-e179-42fb-bec6-6c0b5b004088/jacob-misiorowski-cbs.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Brewers vs. Rays World Series Game 5 most-wagered player props: Bettors on Jacob Misiorowski to strike out 5",
+      "url": "https://www.cbssports.com/mlb/news/brewers-vs-rays-world-series-game-5-most-wagered-player-props-bettors-on-jacob-misiorowski-to-strike-out-5/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T18:16:09Z",
+      "summary": "Jacob Misiorowski leads all action on player props for World Series Game 5 on Wednesday",
+      "author": "Matt Severance",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/af71a311-93bf-4540-86d6-6d52ed0e2f29/jacob-misiorowski-milwaukee-brewers-imagn-images.jpg",
+      "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
   ],
