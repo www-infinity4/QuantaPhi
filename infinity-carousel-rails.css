@@ -1,0 +1,26 @@
+/* Compact stacked carousel lanes. The original interactive card remains one node. */
+#infinityCarouselRails{display:grid;gap:15px;margin:12px 0 20px;min-width:0}
+.icr-rail{min-width:0;background:#fff;border:1px solid #d9dce1;border-radius:17px;padding:12px 11px 14px;box-shadow:0 4px 17px #25364c10}
+.icr-rail-head{display:flex;align-items:start;justify-content:space-between;gap:10px;margin-bottom:10px}
+.icr-rail-head h2{font:850 clamp(18px,4vw,22px)/1.24 system-ui;margin:0;color:#1d4258}
+.icr-rail-head p{font:12px/1.4 system-ui;color:#637383;margin:4px 0 0}
+.icr-rail-controls{display:flex;gap:5px;flex:0 0 auto}
+.icr-rail-controls button{font:800 24px/1 system-ui;width:42px;height:43px;border-radius:11px;border:1px solid #bfced9;background:#eff7fc;color:#125078;cursor:pointer}
+.icr-track{display:flex;gap:11px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scrollbar-width:thin;padding:1px 2px 9px}
+.icr-tile{display:block;flex:0 0 clamp(156px,45vw,225px);min-width:0;border:1px solid #dce0e2;border-radius:14px;scroll-snap-align:start;color:#24323d;text-decoration:none;overflow:hidden;background:#fff}
+.icr-tile-art{height:115px;position:relative;display:grid;place-items:center;align-content:center;gap:1px;text-align:center;padding:9px;background:linear-gradient(140deg,#edeee5,#d2e4ed)}
+.icr-tile:nth-child(2n) .icr-tile-art{background:linear-gradient(120deg,#f6e4cf,#eec6a7)}
+.icr-tile:nth-child(3n) .icr-tile-art{background:linear-gradient(140deg,#e1eef2,#adcfe3)}
+.icr-emoji{font-size:29px;line-height:1.2}.icr-tile-art strong{font:850 17px/1.2 system-ui;color:#274254}
+.icr-tile-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#ece6df}
+.icr-tile-body{display:grid;gap:3px;padding:10px;align-content:start;min-height:87px}
+.icr-tile-body strong{font:800 14px/1.25 system-ui;color:#183f58}
+.icr-tile-body span{font:12px/1.3 system-ui;color:#66727c}
+.icr-tile-body em{font:800 11px/1.3 system-ui;color:#9b312e;font-style:normal;margin-top:5px}
+.icr-tile:focus-visible,.icr-rail button:focus-visible{outline:3px solid #286ca0;outline-offset:3px}
+.icr-brand-library{padding:4px 13px 13px;border-radius:14px;border:1px solid #cfdee4;background:#eff6f8;color:#21465c}
+.icr-brand-library summary{min-height:46px;cursor:pointer;font:800 14px/1.4 system-ui;display:list-item;padding:12px 0 4px}
+.icr-brand-library p{font:13px/1.5 system-ui;color:#506875}
+.icr-brand-library a{display:inline-block;margin-top:5px;min-height:42px;padding:11px 13px;background:#14577b;color:white;border-radius:10px;font:800 13px/1.3 system-ui;text-decoration:none}
+@media(max-width:400px){.icr-rail{padding:10px 8px 12px}.icr-rail-controls button{width:36px;height:40px}.icr-tile{flex-basis:168px}}
+@media(prefers-reduced-motion:reduce){.icr-track{scroll-behavior:auto}}
