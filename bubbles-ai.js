@@ -1845,9 +1845,22 @@ async function refreshConversationFolders(){
  renderConversationFolders();
 }
 async function openConversation(id){
- if(busy){chatsMessage.textContent='Finish the current reply before changing conversations.';return;}
- if(!threadIndex.some(item=>item.id===id))return;
- if(keepChat)saveThread();
+ if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length){
+  chatsMessage.textContent='Finish the current reply before changing conversations.';
+  return false;
+ }
+ if(!threadIndex.some(item=>item.id===id))return false;
+ if(id===activeThread)return true;
+ // A History click must not silently move an unfinished message or photo
+ // into a different conversation. History-off turns are not recoverable.
+ const hasUnsent=Boolean(input.value.length||pendingImage||pendingImages.length||(!keepChat&&messages.length));
+ if(hasUnsent&&!confirm('Open another conversation? Your unsent message, photos or unsaved turns will be discarded.'))return false;
+ const previousThread=activeThread,previousDraft=input.value,previousPhoto=pendingImage;
+ const previousPhotos=[...pendingImages],previousMessages=[...messages];
+ if(keepChat&&messages.length&&!saveThread()){
+  chatsMessage.textContent='This conversation could not be saved on this device. Keep it open and free storage before switching chats.';
+  return false;
+ }
  let next=keepChat?readThread(id):[];
  if(ownerReady){
   try{
@@ -1857,7 +1870,17 @@ async function openConversation(id){
    next=result.messages||next;
   }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
  }
+ // Cloud History may take seconds. A reply, new typing or photo added while
+ // waiting invalidates the earlier switch decision; do not clear new work.
+ if(activeThread!==previousThread||busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||
+    input.value!==previousDraft||pendingImage!==previousPhoto||
+    pendingImages.length!==previousPhotos.length||pendingImages.some((p,i)=>p!==previousPhotos[i])||
+    messages.length!==previousMessages.length||messages.some((m,i)=>m!==previousMessages[i])){
+  chatsMessage.textContent='This chat changed while History was loading. Your current message and photos were kept; try again.';
+  return false;
+ }
  pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
+ input.value='';
  activeThread=id;
  try{
   sessionStorage.setItem(TAB_THREAD,id);
@@ -1871,6 +1894,7 @@ async function openConversation(id){
  if(keepChat)saveThread();
  chatsPanel.open=false;renderConversationFolders();
  input.focus();
+ return true;
 }
 async function startConversation({automatic=false}={}){
  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length){
