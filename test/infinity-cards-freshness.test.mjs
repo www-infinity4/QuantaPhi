@@ -28,7 +28,7 @@ test('GMC and Burger King hero show documented original-source product imagery',
 test('McDonald's hero uses its approved menu-item photo and real official app links',()=>{
  const card=find('mcdonalds-big-mac-deals');
  assert.ok(card);
- assert.match(card.visual,/^https:\\/\\/corporate\\.mcdonalds\\.com\\/content\\/dam\\//);
+ assert.ok(card.visual.startsWith('https://corporate.mcdonalds.com/content/dam/'));
  assert.ok(card.actions.some(x=>x.url==='https://www.mcdonalds.com/us/en-us/deals.html'));
  assert.ok(card.actions.some(x=>x.url==='https://www.mcdonalds.com/us/en-us/full-menu.html'));
 });
