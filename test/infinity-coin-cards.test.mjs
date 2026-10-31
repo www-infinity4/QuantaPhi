@@ -42,6 +42,6 @@ test('refresh never mints or reads wallet secrets and remains honest about model
  assert.match(client,/No tokens minted by this check/);
  assert.match(client,/model, account and wallet operations not yet verified/);
  assert.match(client,/mountCardActions/);
- assert.doesNotMatch(client,/localStorage|walletAddress|POST/);
+ for(const forbidden of ['localStorage','walletAddress','POST','api/tokens'])assert.ok(!client.includes(forbidden));
  assert.equal(client.includes('/api/tokens'),false);
 });
