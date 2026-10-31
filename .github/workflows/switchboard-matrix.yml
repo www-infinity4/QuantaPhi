@@ -1,0 +1,27 @@
+name: Switchboard Matrix regression checks
+on:
+  pull_request:
+    paths:
+      - 'switchboard-matrix.js'
+      - 'test/switchboard-matrix.test.cjs'
+      - '.github/workflows/switchboard-matrix.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'switchboard-matrix.js'
+      - 'test/switchboard-matrix.test.cjs'
+      - '.github/workflows/switchboard-matrix.yml'
+permissions:
+  contents: read
+jobs:
+  switchboard-regressions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check switchboard syntax
+        run: node --check switchboard-matrix.js
+      - name: Verify reserved keys and connection isolation
+        run: node --test test/switchboard-matrix.test.cjs
