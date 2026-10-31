@@ -70,4 +70,10 @@ test('stale or withdrawn independent reviews cannot authorize a new PR head',asy
   {state:'APPROVED',user:{login:'reviewer'},commit_id:sha,submitted_at:'2026-10-31T00:00:00Z'},
   {state:'DISMISSED',user:{login:'reviewer'},commit_id:sha,submitted_at:'2026-10-31T00:01:00Z'}
  ]),/merge_independent_review_required/);
+ // A second reviewer's outstanding change request must veto an otherwise
+ // approved head; a different approval cannot override their review state.
+ await assert.rejects(run([
+  {state:'APPROVED',user:{login:'reviewer-a'},commit_id:sha,submitted_at:'2026-10-31T00:00:00Z'},
+  {state:'CHANGES_REQUESTED',user:{login:'reviewer-b'},commit_id:sha,submitted_at:'2026-10-31T00:02:00Z'}
+ ]),/merge_independent_review_required/);
 });
