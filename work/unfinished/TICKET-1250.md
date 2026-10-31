@@ -8,13 +8,14 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Source and exact-head CI are verified; independent approval, wallet-isolated OAuth, release, and Android acceptance are not."
-sessions_spent: 5
+sessions_spent: 6
 sessions_remaining_estimate: unknown
 agent: "Continuity Builder hourly; read-only observation and isolated ledger update"
 lease_id: null
 lease_expires_at: null
+task_session_id: null
 fence: null
-last_observed_at_utc: "2026-10-31T13:20:12.186Z"
+last_observed_at_utc: "2026-10-31T14:24:51.885Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/infinity-copilot-popup-gitpal-20261031
 head_sha: b85bdd4d27641af8bff2fff62b15def51d820221
@@ -79,3 +80,12 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 - Live coordinator public /status and existing WORK_DB D1 receipt cycle **5978176**, completed 2026-10-31T13:20:12.685Z, source b4955351..., **0 authenticated ChatGPT consumer runners**, owner presence unknown, shared Work lease unclaimed. Live site traffic readback remains bot-inclusive 1,223,404 requests / 468,641 page views, verified 11:26:15Z (stale; no refresh or D1 write here).
 - **State:** 🟡 source_tested / ci_passed / review_pending; progress_percent=unknown; sessions_spent=5 documented; sessions_remaining_estimate=unknown; no merge, Worker deploy, signed-in OAuth/Android acceptance, or Gitcoin mint.
 - **Next single action:** secure genuine independent exact-head security approval of #1272, address findings, then follow protected release and real wallet-isolated browser acceptance.
+
+## 2026-10-31 · bounded lease-safety regression session
+
+- Reused issue #1250 and existing review-ready PR #1276 after reading AGENTS.md, branch README/INDEX and current issue checkpoints. No owner Work/browser lease claimed.
+- Coordinator WORK_DB D1 cycle 5978188 completed 2026-10-31T14:20:12.643Z: deployed source b495535169f94a0300e419dd60071b7b86697e6f, 8 logical tracks, 0 authenticated ChatGPT consumer runners, owner presence unknown, Work lease unclaimed. Cached upstream 403 observations remain dated.
+- Root defect: ticket CI previously allowed non-null lease/fence without an expiring UTC lease or task/session identity. Added negative tests for missing fence, expiry, session, agent, malformed expiry, and stale expiry on unclaimed tickets. Test commit 27e15444116c147aa212818da201f835d8d81172; README commit 2590a4b9d119e427a6f2999d341953343572b07e; INDEX commit a30610735edb9884182a815532fe9be3674d9b0e. Exact-head CI remains to be observed; not yet a deployed coordinator fix.
+- Git-family #1272 remains b85bdd4d27641af8bff2fff62b15def51d820221 with 12/12 PR Actions successful but 0 independent reviews. #1273 has 20/20 and Gitpal #2 1/1 PR Actions successful, also without independent review. No merge, deployment, wallet-isolated OAuth, Android acceptance or Gitcoin mint.
+- Signed-in read-only TinyFish X run 2b917834-8005-4626-8a73-2371bebb5fdd confirmed @IntegraAI. Eight @YahooPingcwlz/@GoogleWaveTech posts deduplicated against #1210; one G-Ware post text-clipped; no X writes.
+- State: YELLOW review_pending; progress_percent=unknown, sessions_spent=6 documented, sessions_remaining_estimate=unknown; lease_id/fence/task_session_id=null. Next single executable action: check exact-head #1276 CI, then secure independent security approval of #1272 before any release.
