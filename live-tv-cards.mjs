@@ -109,35 +109,82 @@ export function mountLiveNews(root){
  if(!root||root.dataset.liveTvReady)return;
  root.dataset.liveTvReady='true';root.classList.add('ltv-card');
  heading(root,'LIVE TV · NEWS','LiveNOW from FOX',
-  'The official live news player starts muted when this card is on screen. Use the player’s volume control for sound.');
- const screen=el('div','ltv-screen'),status=el('p','ltv-playback','Live news · player loads when this card is visible.');status.setAttribute('role','status');
- root.append(screen,status,el('p','ltv-note','LiveNOW is FOX’s news stream. The World Series game is a separate FOX broadcast.'),link('LiveNOW from FOX · original channel','https://www.livenowfox.com/live'));
- let selected=false,visible=false,frame=null;
- function stop(){
+  'Watch the publisher’s original live news coverage. Try the in-card player, or use the official channel when embedding is unavailable.');
+ const screen=el('div','ltv-screen ltv-screen-source');
+ const fallback=el('div','ltv-source-first');
+ const identity=el('p','ltv-source-label','OFFICIAL LIVE NEWS SOURCE');
+ const title=el('h3','','LiveNOW from FOX');
+ const help=el('p','','The live program is controlled by FOX. An embedded video may be blocked, unavailable or require opening the publisher site.');
+ const watch=link('Watch at LiveNOW from FOX','https://www.livenowfox.com/live');
+ watch.classList.add('ltv-source-watch');
+ fallback.append(identity,title,help,watch);screen.append(fallback);
+ const controls=el('div','ltv-video-controls');
+ const tryPlayer=el('button','ltv-try-player','Try in-card video');tryPlayer.type='button';
+ const returnSource=el('button','ltv-try-player ltv-return-source','Video unavailable? Show source');returnSource.type='button';returnSource.hidden=true;
+ controls.append(tryPlayer,returnSource);
+ const status=el('p','ltv-playback','The publisher’s live channel is available above. Video playback inside QuantaPhi has not been verified.');
+ status.setAttribute('role','status');
+ root.append(screen,controls,status,el('p','ltv-note','LiveNOW is FOX’s news service. The World Series game is a separate FOX broadcast.'),link('Open the original LiveNOW channel','https://www.livenowfox.com/live'));
+ let selected=false,visible=false,frame=null,requested=false;
+ function sourceState(message){
   if(frame){frame.src='about:blank';frame.remove();frame=null}
-  status.textContent='Live news · player paused while this card is off screen.';
+  requested=false;fallback.hidden=false;screen.classList.add('ltv-screen-source');
+  tryPlayer.hidden=false;returnSource.hidden=true;
+  status.textContent=message;
+ }
+ function stop(){
+  sourceState('The publisher channel remains available. The in-card player is paused off screen.');
  }
  function sync(){
-  if(!selected||!visible||document.hidden){stop();return}
-  if(frame)return;
+  if(!selected||!visible||document.hidden){if(frame||requested)stop();return}
+  if(!requested||frame)return;
   document.dispatchEvent(new CustomEvent('quantaphi:tv-playback-request',{detail:{owner:root.id}}));
-  frame=el('iframe','ltv-frame');frame.title='LiveNOW from FOX official live news video';
-  frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;
-  frame.referrerPolicy='strict-origin-when-cross-origin';frame.loading='eager';
-  frame.src=liveNewsEmbed(location.origin);screen.append(frame);
-  status.textContent='Live news requested · starts muted. If the provider cannot play here, use the original channel below.';
+  const player=el('iframe','ltv-frame');frame=player;
+  player.title='LiveNOW from FOX YouTube embedded player';
+  player.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';player.allowFullscreen=true;
+  player.referrerPolicy='strict-origin-when-cross-origin';player.loading='eager';
+  player.addEventListener('error',()=>{
+   if(frame===player)sourceState('The embedded player could not load. Watch on the original LiveNOW channel instead.');
+  },{once:true});
+  player.addEventListener('load',()=>{
+   if(frame===player)status.textContent='Player frame loaded. This does not confirm video playback; FOX and YouTube control availability. If the picture is unavailable, choose Show source.';
+  },{once:true});
+  try{
+   player.src=liveNewsEmbed(location.origin);
+   fallback.hidden=true;screen.classList.remove('ltv-screen-source');
+   tryPlayer.hidden=true;returnSource.hidden=false;
+   screen.append(player);
+   status.textContent='Requesting the publisher’s embedded player. Playback is not confirmed.';
+  }catch{
+   sourceState('The embedded player could not be prepared. Use the original channel above.');
+  }
  }
+ tryPlayer.addEventListener('click',()=>{
+  requested=true;selected=true;sync();
+  if(!frame&&requested)status.textContent='The player will load when this card is visible.';
+ });
+ returnSource.addEventListener('click',()=>sourceState('Publisher playback was selected. Watch at LiveNOW from FOX above.'));
+ const reportedError=event=>{
+  if(!frame||event.source!==frame.contentWindow||
+     !['https://www.youtube.com','https://www.youtube-nocookie.com'].includes(event.origin))return;
+  let payload;try{payload=typeof event.data==='string'?JSON.parse(event.data):event.data}catch{return}
+  if(payload?.event==='onError')sourceState('The video provider reported a playback error. Use the original LiveNOW channel above.');
+ };
+ window.addEventListener('message',reportedError);
  root.addEventListener('oracle:activate',()=>{selected=true;sync()});
  document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id===root.id){selected=false;stop()}});
  document.addEventListener('quantaphi:tv-playback-request',event=>{if(event.detail?.owner!==root.id){selected=false;stop()}});
  const observer=new IntersectionObserver(items=>{
   visible=items.some(item=>item.isIntersecting&&item.intersectionRatio>=0.2);
-  // Shelf mode exposes original cards without an Oracle activation event.
   if(document.body.classList.contains('oracle-shelf-open'))selected=visible;
   sync();
  },{threshold:[0,0.2]});observer.observe(screen);
  document.addEventListener('visibilitychange',sync);
- window.addEventListener('pagehide',()=>{selected=false;stop();observer.disconnect();document.removeEventListener('visibilitychange',sync)},{once:true});
+ window.addEventListener('pagehide',()=>{
+  selected=false;stop();observer.disconnect();
+  document.removeEventListener('visibilitychange',sync);
+  window.removeEventListener('message',reportedError);
+ },{once:true});
  return {root,stop};
 }
 if(typeof document!=='undefined'){
