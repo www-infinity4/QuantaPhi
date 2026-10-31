@@ -11,7 +11,7 @@ This is an original integration scaffold, **not TinyFish source code**. It uses 
 
 ## Security limitation
 
-The exact-hostname HTTPS policy rejects alternate ports, loopback literals and local hostnames. The DNS preflight and per-request check **also reject private, loopback, link-local, reserved, mixed and failed DNS answers**, and Chromium's sandbox is requested. These checks are defense in depth, **not complete DNS-rebinding/SSRF protection**: Chromium may resolve a hostname again after Node's check, and network requests can occur outside page routes. Use an independently verified network egress firewall/namespace with private ranges denied and DNS pinning or equivalent protections before any authenticated or multi-tenant use. Chromium sandbox requires a supported non-root host with user namespaces; do not disable it to make a broken host work. No website login, paid service, X posting or provider approval is included.
+The exact-hostname HTTPS policy rejects alternate ports, loopback literals and local hostnames. The DNS preflight and per-request check **also reject private, loopback, link-local, reserved, mixed and failed DNS answers**, and Chromium's sandbox is requested. The request policy is installed at **browser context** scope before any page is opened, so the first navigation of popup/new-tab pages is also checked; page-only interception misses that initial request. These checks are defense in depth, **not complete DNS-rebinding/SSRF protection**: Chromium may resolve a hostname again after Node's check, and network requests can occur outside route interception. Use an independently verified network egress firewall/namespace with private ranges denied and DNS pinning or equivalent protections before any authenticated or multi-tenant use. Chromium sandbox requires a supported non-root host with user namespaces; do not disable it to make a broken host work. No website login, paid service, X posting or provider approval is included.
 
 ## Run
 ```sh
@@ -21,6 +21,6 @@ npx playwright install chromium
 node browser-bridge.mjs https://example.com
 ```
 
-Run policy tests without installing browser packages: `node --test tools/open-browser-bridge/*.test.mjs` from the repository root. The dedicated GitHub workflow runs both URL and DNS tests and syntax checks without using paid browser services.
+Run policy tests without installing browser packages: `node --test tools/open-browser-bridge/*.test.mjs` from the repository root. The dedicated GitHub workflow runs URL, DNS and context-routing tests and syntax checks without using paid browser services.
 
 This first milestone opens an allowlisted page, prints its title and saves a screenshot locally. A future owner-authenticated Bubbles job runner can add consented workflows, persistent session encryption, signed receipts, and a Quick Card UI. This scaffold is **not deployed**.
