@@ -31,3 +31,18 @@ test('invalid quantities, negative prices, fractional cents and excess buyers fa
  for(const input of bad)assert.throws(()=>planBulkAllocation(input),RangeError);
  assert.equal(moneyCents('1.20'),120);assert.equal(formatCents(7065),'$70.65');
 });
+
+test('the existing Design Lab mounts a real calculator, with no checkout or wallet action',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const html=readFileSync(new URL('../design-lab/index.html',import.meta.url),'utf8');
+ const ui=readFileSync(new URL('../design-lab/bulk-allocator-ui.mjs',import.meta.url),'utf8');
+ const css=readFileSync(new URL('../design-lab/lab.css',import.meta.url),'utf8');
+ assert.match(html,/id="bulkAllocatorForm"/);
+ assert.match(html,/bulk-allocator-ui\.mjs/);
+ assert.match(html,/name="storage"/);
+ assert.match(html,/name="shipping"/);
+ assert.match(ui,/planBulkAllocation\(fields\)/);
+ assert.match(ui,/event\.preventDefault\(\)/);
+ assert.match(css,/@media\(max-width:360px\)/);
+ assert.doesNotMatch(ui,/fetch\(|localStorage|wallet|checkout|payment/i);
+});
