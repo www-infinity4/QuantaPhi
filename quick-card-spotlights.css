@@ -17,3 +17,7 @@
 
 [data-spotlight-manual="true"]>.qcs-panel{display:none!important}
 .qcs-has-items>.iac-title .iac-intro{display:none}
+
+/* Keep a pending source photo from displaying as a blank advertising rectangle. */
+.qcs-visual:has(>.qcs-photo[hidden]){display:none}
+.qcs-photo[hidden]{display:none!important}
