@@ -55,7 +55,7 @@ async function snapshot(){
   for(const endpoint of DATA){try{
    const r=await fetch(endpoint+'?checked='+Date.now(),{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(9000)});
    if(!r.ok)continue;const d=await r.json(),t=Date.parse(d.checked_at);
-   if(d.schema_version===1&&d.cards&&Number.isFinite(t)&&t<=Date.now()+300000&&(!newest||t>Date.parse(newest.checked_at)))newest=d;
+   if(d.schema_version===1&&d.cards&&Number.isFinite(t)&&t<=Date.now()+300000){return d;}
   }catch{}}
   return newest;
  })();return snapshotPromise;
@@ -64,10 +64,13 @@ export async function fetchSpotlights(card,fetcher=fetch){
  const previous=cache.get(card.id);if(previous&&Date.now()-previous.at<TTL)return previous.items;
  const feed=fetcher===fetch?await snapshot():null;
  let items=normalizeSpotlights(feed?.cards?.[card.id],card);
+ // A verified published photo should appear immediately; do not wait for a second search.
+ if(items.length){cache.set(card.id,{at:Date.now(),items});return items;}
  // A public, domain-restricted image search fills gaps between scheduled checks.
  // Search snippets never become product prices or claimed discounts.
  try{
-  const q='site:'+new URL(card.official).hostname.replace(/^www\./,'')+' '+text(card.query||card.feature||card.name,100)+' products new offers';
+  const intent=['Shopping','Restaurants','Auctions','Trading cards'].includes(card.category)?' listings':' source photos';
+  const q='site:'+new URL(card.official).hostname.replace(/^www\./,'')+' '+text(card.query||card.feature||card.name,100)+intent;
   const url=BROKER+'?'+new URLSearchParams({q,format:'json',categories:'images',safesearch:'1'});
   const r=await fetcher(url,{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(10000)});
   if(r.ok){const data=await r.json();const indexed=normalizeSpotlights({schema_version:1,items:(data.results||[]).slice(0,35).map(row=>({
@@ -88,7 +91,7 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
  const open=el('a','qcs-open','View at original source ↗');open.target='_blank';open.rel='noopener noreferrer';
  const nav=el('div','qcs-nav'),next=el('button','','Next offer ›'),pause=el('button','','Pause'),count=el('span','qcs-count');next.type=pause.type='button';
  nav.append(count,pause,next);panel.append(visual,meta,title,desc,price,open,nav);
- const header=article.querySelector('.iac-title,.qbp-head,.premium-heading');if(header)header.after(panel);else article.prepend(panel);
+ const header=article.querySelector('.iac-title,.qbp-head,.premium-heading');if(header)header.before(panel);else article.prepend(panel);
  const key='quanta:spotlight:'+card.id+':v1';let history={seen:[],last:''};try{history=JSON.parse(localStorage.getItem(key))||history}catch{}
  if(!Array.isArray(history.seen))history={seen:[],last:''};
  let requested=new URLSearchParams(location.search).get('spotlight')||'';
@@ -105,9 +108,13 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
   current=row;history={seen:[...history.seen.filter(x=>x!==row.id),row.id].slice(-items.length),last:row.id};
   try{localStorage.setItem(key,JSON.stringify(history))}catch{}
   visual.replaceChildren();const image=el('img','qcs-photo');image.alt=row.title;image.decoding='async';image.referrerPolicy='no-referrer';
-  image.addEventListener('error',()=>{items=items.filter(x=>x.id!==row.id);if(current!==row)return;
+  image.hidden=true;
+  image.addEventListener('load',()=>{if(image.isConnected)image.hidden=false},{once:true});
+  const broken=()=>{items=items.filter(x=>x.id!==row.id);if(current!==row)return;
    if(items.length)show();else{panel.hidden=true;article.classList.remove('qcs-has-items');forgetSpotlightCreative(article)}
-  },{once:true});image.src=row.image;visual.append(image);
+  };
+  image.addEventListener('error',broken,{once:true});image.src=row.image;visual.append(image);
+  if(image.complete&&image.naturalWidth===0)broken();
   title.textContent=row.title;desc.textContent=row.description;updatePrice();
   meta.textContent='∞ INFINITY · '+row.method+' · '+row.source+' · checked '+new Date(row.checked_at).toLocaleString();
   open.href=row.url;open.textContent=(row.kind==='Product'?'Shop this item':'View this spotlight')+' ↗';
