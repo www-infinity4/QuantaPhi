@@ -434,8 +434,7 @@ function saveThread(){
  const first=messages.find(m=>m.role==='user')?.text?.trim().replace(/\s+/g,' ').slice(0,65);
  if(row){row.updated=Date.now();if(row.title==='New conversation'&&first)row.title=first;}
  threadIndex.sort((a,b)=>b.updated-a.updated);
- save(THREAD_INDEX,threadIndex.slice(0,150));
- return true;
+ return save(THREAD_INDEX,threadIndex.slice(0,150));
 }
 function persistChat(){
  for(const m of messages){if(!m.id)m.id=crypto.randomUUID();if(!m.at)m.at=Date.now();m.sessionId=activeThread;}
@@ -1838,8 +1837,14 @@ async function syncCloudFolder(id,items){
 }
 async function refreshConversationFolders(){
  if(!ownerReady){chatsMessage.textContent='Chats saved on this device. Connect your owner account for cloud history.';renderConversationFolders();return;}
+ const ownerAtStart=ownerHeaders,ownerAuthorizationAtStart=ownerHeaders?.Authorization||'';
  try{
   const data=await conversationApi('sessions-list');
+  if(!ownerReady||ownerHeaders!==ownerAtStart||(ownerHeaders?.Authorization||'')!==ownerAuthorizationAtStart){
+   chatsList.replaceChildren();
+   chatsMessage.textContent='Owner connection changed during History refresh. Verify the wallet and refresh again.';
+   return;
+  }
   if(!Array.isArray(data.sessions))throw Error('cloud_folders_not_deployed');
   for(const item of data.sessions||[]){
    if(!/^[a-zA-Z0-9_-]{10,80}$/.test(item.id||''))continue;
@@ -1849,22 +1854,64 @@ async function refreshConversationFolders(){
   }
   save(THREAD_INDEX,threadIndex);chatsMessage.textContent='Your older conversations are ready to reopen.';
  }catch{chatsMessage.textContent='Cloud chat history could not be reached. Your device history is still available.'}
+ if(!ownerReady||ownerHeaders!==ownerAtStart||(ownerHeaders?.Authorization||'')!==ownerAuthorizationAtStart){
+  chatsList.replaceChildren();
+  chatsMessage.textContent='Owner connection changed during History refresh. Verify the wallet and refresh again.';
+  return;
+ }
  renderConversationFolders();
 }
 async function openConversation(id){
- if(busy){chatsMessage.textContent='Finish the current reply before changing conversations.';return;}
- if(!threadIndex.some(item=>item.id===id))return;
- if(keepChat)saveThread();
+ if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking){
+  chatsMessage.textContent='Finish the current reply before changing conversations.';
+  return false;
+ }
+ if(!threadIndex.some(item=>item.id===id))return false;
+ if(id===activeThread)return true;
+ // A History click must not silently move an unfinished message or photo
+ // into a different conversation. History-off turns are not recoverable.
+ const hasUnsent=Boolean(input.value.length||pendingImage||pendingImages.length||(!keepChat&&messages.length));
+ if(hasUnsent&&!confirm('Open another conversation? Your unsent message, photos or unsaved turns will be discarded.'))return false;
+ const previousThread=activeThread,previousDraft=input.value,previousPhoto=pendingImage;
+ const previousPhotos=[...pendingImages],previousMessages=[...messages];
+ // A cloud History response is valid only for the verified owner session that
+ // started the request. A wallet change, sign-out or re-pair must not apply
+ // an old account's response to the currently visible chat.
+ const ownerAtStart=ownerHeaders,ownerReadyAtStart=ownerReady;
+ const ownerAuthorizationAtStart=ownerHeaders?.Authorization||'';
+ if(keepChat&&messages.length&&!saveThread()){
+  chatsMessage.textContent='This conversation could not be saved on this device. Keep it open and free storage before switching chats.';
+  return false;
+ }
  let next=keepChat?readThread(id):[];
  if(ownerReady){
   try{
    const result=await conversationApi('sessions-get',id);
-   if(!Array.isArray(result.messages)||!result.session)throw Error('cloud_folders_not_deployed');
+   if(ownerReady!==ownerReadyAtStart||ownerHeaders!==ownerAtStart||(ownerHeaders?.Authorization||'')!==ownerAuthorizationAtStart)throw Error('owner_connection_changed');
+   // Fail closed if the cloud response belongs to a different session; never
+    // display or persist another thread's turns in this device's History.
+    if(!Array.isArray(result.messages)||!result.session||result.session.id!==id)throw Error('cloud_folder_identity_mismatch');
    if(result.session?.title){const entry=threadIndex.find(x=>x.id===id);if(entry)entry.title=result.session.title;}
-   next=result.messages||next;
+   // An empty or not-yet-synced cloud folder must not erase saved device History.
+   // Prefer verified nonempty cloud turns, but retain the local copy on empty.
+   if(result.messages.length||!next.length)next=result.messages;
   }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
  }
+ if(ownerReady!==ownerReadyAtStart||ownerHeaders!==ownerAtStart||(ownerHeaders?.Authorization||'')!==ownerAuthorizationAtStart){
+  chatsMessage.textContent='Owner connection changed while History was loading. Your current chat was kept; verify the wallet and try again.';
+  return false;
+ }
+ // Cloud History may take seconds. A reply, new typing or photo added while
+ // waiting invalidates the earlier switch decision; do not clear new work.
+ if(activeThread!==previousThread||busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking||
+    input.value!==previousDraft||pendingImage!==previousPhoto||
+    pendingImages.length!==previousPhotos.length||pendingImages.some((p,i)=>p!==previousPhotos[i])||
+    messages.length!==previousMessages.length||messages.some((m,i)=>m!==previousMessages[i])){
+  chatsMessage.textContent='This chat changed while History was loading. Your current message and photos were kept; try again.';
+  return false;
+ }
  pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
+ input.value='';
  activeThread=id;
  try{
   sessionStorage.setItem(TAB_THREAD,id);
@@ -1878,26 +1925,49 @@ async function openConversation(id){
  if(keepChat)saveThread();
  chatsPanel.open=false;renderConversationFolders();
  input.focus();
+ return true;
 }
-async function startConversation({automatic=false}={}){
- if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length){
+function startConversation({automatic=false}={}){
+ if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking){
   chatsMessage.textContent='Current reply or voice request must finish before starting a fresh chat.';
   return false;
  }
- if(keepChat&&messages.length)saveThread();
+ // Starting a new chat is destructive for unsent text and photos. An
+ // explicit click needs confirmation; an automatic reopen must never erase
+ // chat, Notes, or Robot Brain drafts, even if its caller misses a guard.
+ const unsentChat=Boolean(input.value.length||pendingImage||pendingImages.length);
+ // With History disabled, the transcript itself is unsaved work even if the
+ // composer is empty. Require a deliberate confirmation for an explicit reset.
+ const unsavedTurns=!keepChat&&messages.length>0;
+ if(automatic&&(unsentChat||noteText.value.length||workText.value.length||unsavedTurns))return false;
+ const discardWarning=unsavedTurns
+  ?'Start a new chat? History is off, so this conversation and any unsent message or photos will be discarded permanently.'
+  :'Start a new chat? Your unsent message and photos will be discarded.';
+ if(!automatic&&(unsentChat||unsavedTurns)&&!confirm(discardWarning))return false;
+ if(keepChat&&messages.length&&!saveThread()){
+  chatsMessage.textContent='This conversation could not be saved on this device. Keep it open and free storage before starting a new chat.';
+  return false;
+ }
  // A closed, unused empty chat should not grow the History list every time
- // the floating bubble is opened and collapsed.
- if(!messages.length&&threadIndex.find(t=>t.id===activeThread)?.title==='New conversation'&&
-   !readThread(activeThread).length)
-  threadIndex=threadIndex.filter(t=>t.id!==activeThread);
+ // the floating bubble is opened and collapsed. Stage the next index before
+ // changing the active thread: storage quota errors must not orphan History.
+ const dropUnused=!messages.length&&threadIndex.find(t=>t.id===activeThread)?.title==='New conversation'&&
+   !readThread(activeThread).length;
+ const nextThread=freshThreadId();
+ const nextIndex=[{id:nextThread,title:'New conversation',updated:Date.now()},
+  ...threadIndex.filter(t=>!dropUnused||t.id!==activeThread)];
+ const indexSaved=save(THREAD_INDEX,nextIndex);
+ if(keepChat&&!indexSaved){
+  chatsMessage.textContent='Conversation History could not be saved on this device. Keep this chat open and free storage before starting a new one.';
+  return false;
+ }
+ threadIndex=nextIndex;
  pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
- activeThread=freshThreadId();
+ activeThread=nextThread;
  try{
   sessionStorage.setItem(TAB_THREAD,activeThread);
   sessionStorage.setItem(EXPLICIT_THREAD,'1');
  }catch{}
- threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
- save(THREAD_INDEX,threadIndex);
  messages=[];memoryContext=[];memoryInstructions=[];greeted=false;activeCardEvidence=null;
  cardWorkspaceInstance?.close();cardWorkspaceInstance=null;conversation.replaceChildren();
  input.value=''; // Prevent a previous chat's unfinished composer text from appearing as a new turn.
@@ -2069,7 +2139,9 @@ cloudDelete.addEventListener('click',async()=>{
 let panelWasOpened=false;
 function toggle(open){
  const reopening=Boolean(open)&&!showing&&panelWasOpened;
- if(reopening&&!nativeOverlay&&!embedded)void startConversation({automatic:true});
+ // A collapsed Bubbles panel is not consent to erase unsent chat, Notes or Brain work.
+ const unsentDraft=Boolean(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length);
+ if(reopening&&!nativeOverlay&&!embedded&&!unsentDraft)void startConversation({automatic:true});
  showing=Boolean(open);
  if(showing)panelWasOpened=true;
  panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
@@ -3845,9 +3917,24 @@ async function checkForSiteUpdate(){
   const remote=html.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
   if(!remote||!siteRevision||remote===siteRevision)return false;
   if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
-  if(keepChat)saveThread();
-  // Only this trusted update path may keep the active thread on reload.
-  try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1')}catch{}
+  // An Android recording has not been saved until Stop completes. Reloading
+  // during RecordB capture, microphone startup, continuous listening or TTS
+  // would terminate that active media session without a recovery receipt.
+  if(nativeRecordingActive||voiceStarting||voiceEnabled||speaking)return false;
+  // A revision reload must not discard a partially typed message, private
+  // note, Robot Brain work request, or unsent photo. Recheck AFTER the network
+  // wait, when Android may have resumed editing any of these fields.
+  // The next visibility/hourly check will retry once all drafts are clear.
+  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length)return false;
+  // A storage quota/error must not reload away the only in-memory copy of
+  // this conversation. Keep the current page and retry on a later check.
+  // With History disabled, existing turns exist only in memory. A silent
+  // update must not destroy them, even if the composer itself is empty.
+  if(!keepChat&&messages.length)return false;
+  if(keepChat&&!saveThread())return false;
+  // Without the one-use resume marker, the next page opens a different chat.
+  // Browser privacy settings can reject sessionStorage writes: fail closed.
+  try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1')}catch{return false}
   location.reload();
   return true;
  }catch{return false}
@@ -3860,9 +3947,12 @@ window.QuantaBubbles={
  // Begin another visually empty chat only after a real owner reopening.
  startFreshOnReopen:()=>{
   if(!nativeOverlay)return false;
-  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
-  void startConversation({automatic:true});
-  return true;
+  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking)return false;
+  // Android Hide / reopen must preserve an unsent typed message, Notes, work or photos.
+  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length||(!keepChat&&messages.length))return false;
+  // The native Android bridge expects a synchronous boolean. Report the
+  // actual reset result, not a queued Promise that can fail on storage.
+  return startConversation({automatic:true})===true;
  },
  // The native Android foreground service pulls this bounded snapshot from
  // the trusted first-party page. This is crash recovery, not a second chat
@@ -3892,10 +3982,16 @@ window.QuantaBubbles={
   const result=[...combined.values()].sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id)).slice(-160);
   if(!result.length)return true;
   if(!save(THREAD_PREFIX+id,result))return false;
-  let row=threadIndex.find(t=>t.id===id);
-  if(!row){row={id,title:id===SHARED_MAIN_THREAD?'Bubbles shared chat':'Recovered Android conversation',updated:Date.now()};threadIndex.push(row);}
-  row.updated=Math.max(row.updated||0,...result.map(m=>m.at));
-  save(THREAD_INDEX,threadIndex.slice(-150));
+  // Native crash recovery must not report success if History cannot index
+  // the recovered transcript. Stage the row first so quota/privacy failures
+  // cannot mutate the in-memory index or hide the recovery error.
+  const priorRow=threadIndex.find(t=>t.id===id);
+  const updated=Math.max(priorRow?.updated||0,...result.map(m=>m.at));
+  const nextRow=priorRow?{...priorRow,updated}:
+   {id,title:id===SHARED_MAIN_THREAD?'Bubbles shared chat':'Recovered Android conversation',updated};
+  const nextIndex=priorRow?threadIndex.map(t=>t.id===id?nextRow:t):[...threadIndex,nextRow];
+  if(!save(THREAD_INDEX,nextIndex.slice(-150)))return false;
+  threadIndex=nextIndex;
   if(id===activeThread){
    const seen=new Set(messages.map(m=>m.id));
    const additions=result.filter(m=>!seen.has(m.id));
