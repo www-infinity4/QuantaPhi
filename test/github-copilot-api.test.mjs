@@ -77,3 +77,20 @@ test('stale or withdrawn independent reviews cannot authorize a new PR head',asy
   {state:'CHANGES_REQUESTED',user:{login:'reviewer-b'},commit_id:sha,submitted_at:'2026-10-31T00:02:00Z'}
  ]),/merge_independent_review_required/);
 });
+
+test('Gitpro fails closed on a full review page that could hide later change requests',async()=>{
+ const reviews=[{state:'APPROVED',user:{login:'reviewer-a'},commit_id:sha,submitted_at:'2026-10-31T00:00:00Z'},
+  ...Array.from({length:99},(_,i)=>({state:'COMMENTED',user:{login:'reviewer-'+i},commit_id:sha,
+   submitted_at:'2026-10-31T00:01:00Z'}))];
+ let mergeCalls=0;
+ await assert.rejects(githubCopilotRequest({...args,action:'merge',prNumber:3,
+   confirmation:'MERGE testowner/testrepo#3'},mock(url=>{
+  if(url.pathname.endsWith('/pulls/3'))return {state:'open',draft:false,mergeable:true,head:{sha},user:{login:'author'}};
+  if(url.pathname.endsWith('/reviews'))return reviews;
+  if(url.pathname.endsWith('/status'))return {state:'success',total_count:1};
+  if(url.pathname.endsWith('/check-runs'))return {check_runs:[{status:'completed',conclusion:'success'}],total_count:1};
+  if(url.pathname.endsWith('/merge')){mergeCalls++;return {merged:true,sha};}
+  throw Error('unexpected endpoint '+url.pathname);
+ })),/merge_independent_review_required/);
+ assert.equal(mergeCalls,0,'no merge may be sent while review pagination is incomplete');
+});
