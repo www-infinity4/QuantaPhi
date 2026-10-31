@@ -140,7 +140,7 @@ export function mountCardActions(host,card,options={}){
  let original=null;
  try{const u=new URL(card.official||card.website||card.url||'');if(u.protocol==='https:'&&!u.username&&!u.password)original=u.href}catch{}
  if(original&&options.showOriginal!==false){const open=element('a','qca-button qca-source','↗ Open original website');open.href=original;open.target='_blank';open.rel='noopener noreferrer';controls.append(open)}
- bar.append(controls);if(options.websiteReader!==false)mountTinyFishCardReader(bar,card);bar.append(status);host.append(bar);return bar;
+ bar.append(controls);if(options.websiteReader!==false&&options.showSearch!==false)mountTinyFishCardReader(bar,card);bar.append(status);host.append(bar);return bar;
 }
 function restoreDraft(){
  let request;try{request=sessionStorage.getItem(STORE_DRAFT)}catch{return}

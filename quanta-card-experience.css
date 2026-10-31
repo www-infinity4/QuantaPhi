@@ -210,3 +210,11 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qca-toolbar .qca-controls>.qca-button[data-action]:hover{filter:brightness(.95)}
 .qca-toolbar .qca-controls>.qca-button[data-action]:focus-visible{outline:3px solid #e2a23a;outline-offset:3px}
 @media(max-width:380px){.qca-toolbar .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* The original player stays primary; additional video search stays collapsed. */
+.qcx-discover-details{box-sizing:border-box;margin:12px 0;border:1px solid #c4d9e5;border-radius:14px;background:#f4faff;min-width:0;color:#244760}
+.qcx-discover-details summary{box-sizing:border-box;cursor:pointer;display:list-item;min-height:48px;padding:13px 15px;font:800 14px/1.4 system-ui,sans-serif}
+.qcx-discover-details[open]{background:#fff}
+.qcx-discover-details>.qcx-tool{margin:0 10px 12px;padding:12px;border-radius:12px}
+.qcx-discover-details :is(button,input,summary):focus-visible{outline:3px solid #1485bc;outline-offset:2px}
