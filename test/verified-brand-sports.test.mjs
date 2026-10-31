@@ -84,5 +84,5 @@ test('Tide #bubbles source card has an actual Tide product image and three first
  assert.equal(tide.actions.length,3);
  assert.ok(tide.actions.every(x=>x.url.startsWith('https://tide.com/en-us/')));
  assert.match(tide.description,/independent card/);
- assert.doesNotMatch(tide.description,/\\$\\d/);
+ assert.equal(tide.description.includes('$'),false);
 });
