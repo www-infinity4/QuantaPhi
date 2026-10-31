@@ -89,3 +89,8 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 - Git-family #1272 remains b85bdd4d27641af8bff2fff62b15def51d820221 with 12/12 PR Actions successful but 0 independent reviews. #1273 has 20/20 and Gitpal #2 1/1 PR Actions successful, also without independent review. No merge, deployment, wallet-isolated OAuth, Android acceptance or Gitcoin mint.
 - Signed-in read-only TinyFish X run 2b917834-8005-4626-8a73-2371bebb5fdd confirmed @IntegraAI. Eight @YahooPingcwlz/@GoogleWaveTech posts deduplicated against #1210; one G-Ware post text-clipped; no X writes.
 - State: YELLOW review_pending; progress_percent=unknown, sessions_spent=6 documented, sessions_remaining_estimate=unknown; lease_id/fence/task_session_id=null. Next single executable action: check exact-head #1276 CI, then secure independent security approval of #1272 before any release.
+
+### Exact-head test result after regex correction
+
+- Final source/test head before this documentation receipt: `a89a074ea664ce56e4e93f2c4f2243ad27fa8dbd`. Five of five associated PR-triggered GitHub Actions workflows completed SUCCESS. Dedicated [Unfinished work ledger contracts run 41210053360](https://github.com/www-infinity4/QuantaPhi/actions/runs/41210053360), job 124562958214, logs show **5/5 Node subtests passed**, including synthetic missing-expiry/fence/agent/session and invalid-UTC negative cases. Earlier test code had overescaped digit regex and was corrected in commit `a89a074e` before this green run.
+- This checkpoint commit itself creates a new head, so independently recheck its own Actions before calling the PR latest-head green. No independent review, merge, deployment or authenticated browser acceptance is implied.
