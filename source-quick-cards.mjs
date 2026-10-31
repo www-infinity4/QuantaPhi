@@ -1,4 +1,5 @@
 import {mountInfinityCopilotCard} from './infinity-copilot-card.mjs';
+import {mountGitProductionCards} from './git-production-cards.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261027-karaoke1';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
@@ -105,7 +106,9 @@ function mountShelf(){
  const host=document.getElementById('siteQuickCards');if(!host)return;
  host.replaceChildren();
  host.append(el('p','iqc-kind','INFINITY 2026® · INTERACTIVE SOURCE TOOLS'),el('h2','','Discover, watch, search, research and create'),el('p','iqc-muted','Use the feature on each card. Provider-owned accounts and copyrighted catalogs remain with their original services.'));
- const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES.filter(isPublicSourceCard))cards.append(starterCard(p));host.append(cards);
+ const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES.filter(isPublicSourceCard))cards.append(starterCard(p));
+ mountGitProductionCards(cards,mountCardTools);
+ host.append(cards);
  // The Oracle viewer discovers each original source article as an individual
  // swipeable card, never a single 15-item link shelf.
  window.dispatchEvent(new Event('quantaphi:source-cards-ready'));
