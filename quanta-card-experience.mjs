@@ -1,4 +1,5 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountMetaSocialCard} from './meta-social-card.mjs';
 import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
 import {tinyfishCard} from './tinyfish-card-catalog.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
@@ -349,6 +350,9 @@ export function mountCardTools(root,card){
  if(id==='google'||id==='bing'){
   // Search remains the primary interaction; global controls come afterward.
   searchTool(root,card);mountCardActions(root,card);return;
+ }
+ if(id==='facebook'||id==='instagram'){
+  mountMetaSocialCard(root,card);mountCardActions(root,card,{showSearch:false});return;
  }
  if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
  if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);

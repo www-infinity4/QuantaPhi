@@ -1,5 +1,5 @@
 const API = '/api/bubbles/connections';
-const NAMES = {cloudflare:'Cloudflare',google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic'};
+const NAMES = {cloudflare:'Cloudflare',google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic',meta:'Meta (Facebook + Instagram)'};
 export function availableCloudflareLoginActions(provider) {
   if(provider?.id!=='cloudflare'||provider.configured!==true||!Array.isArray(provider.actions))return [];
   return ['account.read','projects.build','ledger.read','projects.full'].filter(action=>provider.actions.includes(action));
@@ -7,7 +7,7 @@ export function availableCloudflareLoginActions(provider) {
 
 export function providerAuthorizationActions(provider) {
   if(!provider?.configured)return [];
-  if(provider.id!=='cloudflare')return provider.id==='github'?['repository.read']:[];
+  if(provider.id!=='cloudflare')return provider.id==='github'?['repository.read']:provider.id==='meta'?['pages.read','instagram.read']:[];
   const available=provider.authorizationActions??provider.actions;
   const required=['account.read','projects.build','ledger.read','projects.full'];
   if(Array.isArray(available)&&available.includes('owner.full'))return ['owner.full'];
@@ -96,7 +96,7 @@ export class AccountConnections {
   readPendingHandoff() {
     try{
       const saved=JSON.parse(this.root.sessionStorage?.getItem('bubbles:oauth-pending:v1')||'null');
-      if(saved&&['github','google','cloudflare'].includes(saved.provider)&&
+      if(saved&&['github','google','cloudflare','meta'].includes(saved.provider)&&
         /^[A-Za-z0-9_-]{43}$/.test(saved.state)&&Number.isFinite(saved.expiresAt)&&
         saved.expiresAt>Date.now()&&saved.expiresAt<=Date.now()+300000&&saved.flow==='same-window')return saved;
     }catch{}
@@ -164,7 +164,7 @@ export class AccountConnections {
     this.trackHandoff(saved,null,onComplete);
     return true;
   }
-  async connect(provider,actions,onComplete) {
+  async connect(provider,actions,onComplete,returnDestination=null) {
     if(this.pending)throw Error('Finish the current sign-in window first.');
     // Open synchronously on the user's tap where supported. Android WebViews
     // may block window.open; use same-window navigation with session-bound
@@ -181,10 +181,11 @@ export class AccountConnections {
     try{
       const result=await this.call('/start',{provider,actions});
       const authorization=new URL(result.authorizationUrl),state=authorization.searchParams.get('state');
-      const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':'';
+      const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':provider==='meta'?'www.facebook.com':'';
       if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||
          !/^[A-Za-z0-9_-]{43}$/.test(state||''))throw Error('Sign-in address rejected.');
-      const returnPath=this.root.location?.pathname==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
+      const returnPath=provider==='meta'&&/^\/source-quick-card\.html\?card=(?:facebook|instagram)$/.test(returnDestination||'')?returnDestination:
+        this.root.location?.pathname==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
       const saved={provider,state,returnPath,flow:sameWindow?'same-window':'popup',expiresAt:Date.now()+Math.min(300,Math.max(1,Number(result.expiresIn)||300))*1000};
       try{this.root.sessionStorage?.setItem('bubbles:oauth-pending:v1',JSON.stringify(saved));}
       catch{if(!popup)throw Error('This viewer cannot preserve sign-in. Open Account Connections in Chrome.');}

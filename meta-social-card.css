@@ -1,0 +1,18 @@
+.qmeta{--meta:#0866ff;display:grid;gap:10px;background:#fff;border:1px solid #dce2ec;border-radius:18px;padding:14px;color:#192234;min-width:0}
+.qmeta-instagram{--meta:#b52a78;background:linear-gradient(145deg,#fff,#fff9fc)}
+.qmeta .qmeta-kicker{font-size:10px;font-weight:850;letter-spacing:.12em;color:var(--meta);margin:0}
+.qmeta h3{font:800 clamp(17px,4vw,23px)/1.2 system-ui,sans-serif;margin:0;color:#212a3c}
+.qmeta-status{font-size:12px;line-height:1.5;color:#52617b;margin:0}
+.qmeta-controls{display:flex;flex-wrap:wrap;gap:7px}
+.qmeta-btn{background:var(--meta);color:#fff;border:0;border-radius:999px;font-weight:750;font-size:13px;min-height:42px;padding:10px 14px;cursor:pointer}
+.qmeta-btn:disabled{opacity:.48;cursor:not-allowed}
+.qmeta-select,.qmeta-compose,.qmeta-input{font:inherit;width:100%;min-width:0;max-width:100%;padding:12px;border-radius:12px;border:1px solid #bdc8d8;background:#fff;color:#20283a}
+.qmeta-select{min-height:44px}.qmeta-compose{resize:vertical;font-size:15px}.qmeta-option{display:flex;align-items:center;gap:7px;font-size:12px;color:#536075}
+.qmeta-option input{width:18px;height:18px;accent-color:var(--meta)}
+.qmeta-stream{min-width:0}.qmeta-post{display:grid;gap:10px;background:#f8faff;border:1px solid #e2e9f5;padding:12px;border-radius:14px;min-width:0}
+.qmeta-instagram .qmeta-post{background:#fff9fc}
+.qmeta-source{font-size:11px;color:#5c6780;font-weight:700;margin:0}.qmeta-caption{font-size:14px;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+.qmeta-image{display:block;object-fit:contain;width:100%;max-height:360px;border-radius:11px;background:#e7ebf4}
+.qmeta-help{font-size:13px;color:#1154ae;font-weight:700;min-height:35px;display:inline-flex;align-items:center}
+.qmeta :is(button,input,select,textarea,a):focus-visible{outline:3px solid #cc8e45;outline-offset:2px}
+@media(max-width:425px){.qmeta{padding:11px}.qmeta-controls .qmeta-btn{flex:1 1 100%}}

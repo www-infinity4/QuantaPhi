@@ -5,7 +5,7 @@ export function resumeAuthReturn(host=window) {
  try {
   const query=new URLSearchParams(host.location?.search||'');
   const result=query.get('result');
-  const callbackProvider=String(host.location?.pathname||'').match(/\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/)?.[1]||null;
+  const callbackProvider=String(host.location?.pathname||'').match(/\/api\/bubbles\/connections\/(google|github|cloudflare|meta)\/callback$/)?.[1]||null;
   const saved=JSON.parse(host.sessionStorage?.getItem('bubbles:oauth-pending:v1')||'null');
   const provider=callbackProvider||saved?.provider||'cloudflare';
   if(result==='received'||result==='failed'||result==='declined'){
@@ -30,7 +30,8 @@ export function resumeAuthReturn(host=window) {
    return false;
   }
   if(callbackProvider&&callbackProvider!==pending.provider)return false;
-  const destination=pending.returnPath==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
+  const destination=pending.provider==='meta'&&/^\/source-quick-card\.html\?card=(?:facebook|instagram)$/.test(pending.returnPath||'')?pending.returnPath:
+   pending.returnPath==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
   host.location.replace(destination);
   return true;
  }catch{return false;}

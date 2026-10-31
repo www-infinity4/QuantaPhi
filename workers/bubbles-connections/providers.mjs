@@ -386,5 +386,6 @@ export const CONNECTOR_REQUIREMENTS = Object.freeze({
   ebay:'Registered eBay application; approved Offer API access before enabling buyer bids',
   walmart:'Supported consumer buyer authorization and checkout integration must be verified',
   ibm:'Choose IBM product and supported project authentication before enabling actions',
-  anthropic:'Supported Claude API credentials or approved integration; consumer login is not assumed API access'
+  anthropic:'Supported Claude API credentials or approved integration; consumer login is not assumed API access',
+  meta:'Meta Facebook Login app with approved Page and linked Instagram Professional Graph permissions'
 });

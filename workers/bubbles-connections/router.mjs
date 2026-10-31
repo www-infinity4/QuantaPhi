@@ -54,7 +54,7 @@ const HANDOFF_FAILURE_REASONS=Object.freeze({
   unavailable:'callback_handoff_failed',
 });
 export function callbackPage(provider,result='',reason='') {
-  if(!['google','github','cloudflare'].includes(provider))return new Response('Unknown provider',{status:404});
+  if(!['google','github','cloudflare','meta'].includes(provider))return new Response('Unknown provider',{status:404});
   const details=Object.hasOwn(OAUTH_RETURN_REASONS,reason)?OAUTH_RETURN_REASONS[reason]:null;
   const message=result==='received'
     ? 'Authorization received securely. Return to Bubbles to verify and finish connecting your account.'
@@ -89,7 +89,7 @@ export async function handleConnections(request,env,resolveService) {
         supportsChunkedAllowlist:true,supportsVersionedAllowlist:true,
         ...await cloudflareScopeConfigProof(env)}});
   }
-  const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
+  const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare|meta)\/callback$/);
   if(callback && request.method==='GET'){
     const provider=callback[1],state=url.searchParams.get('state');
     if(!state)return callbackPage(provider,url.searchParams.get('result')||'',url.searchParams.get('reason')||'');
@@ -160,7 +160,8 @@ export async function handleConnections(request,env,resolveService) {
       return json(origin,{ok:true,starcoinBackupEnabled:Boolean(ready&&env.STARQUEST_LEDGER?.fetch&&env.BOT_WALLET?.fetch),providers:Object.keys(PROVIDERS).map(id=>({id,actions:id==='cloudflare'?oauthClientScopes:PROVIDERS[id].actions,
         configured:ready && ((id==='google' && !!env.GOOGLE_CLIENT_ID && !!env.GOOGLE_CLIENT_SECRET) ||
           (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET) ||
-          (id==='cloudflare' && cloudflareAppReady)),
+          (id==='cloudflare' && cloudflareAppReady) ||
+          (id==='meta' && !!env.META_CLIENT_ID && !!env.META_CLIENT_SECRET)),
         ...(id==='cloudflare'?{scopeInventory:cloudflareScopeInventory(cloudflareScopes),
           clientIdPrefix:ready&&env.CLOUDFLARE_CLIENT_ID?String(env.CLOUDFLARE_CLIENT_ID).slice(0,16):null,
           fullProjectConfigured:ready&&cloudflareFullReady,
@@ -269,6 +270,7 @@ export async function handleConnections(request,env,resolveService) {
         balanceTenths:snapshot.data.balanceTenths,asOf:new Date().toISOString(),
         source:'StarQuest + Unified Wallet reconciliation',emailed:false});
     }
+    if (url.pathname === PREFIX+'/meta') return json(origin,{ok:true,...await service.meta({userId:identity.userId,id:body.id,operation:body.operation,pageId:body.pageId,message:body.message,imageUrl:body.imageUrl,confirmed:body.confirmed})});
     if (url.pathname === PREFIX+'/github/test') return json(origin,{ok:true,...await service.githubConnectionTest({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/github/repositories') return json(origin,{ok:true,...await service.githubRepositories({userId:identity.userId,id:body.id})});
     if(url.pathname===PREFIX+'/start'){
@@ -286,7 +288,7 @@ export async function handleConnections(request,env,resolveService) {
     if (url.pathname === PREFIX+'/select-resource') return json(origin,await service.selectResource({userId:identity.userId,id:body.id,kind:body.kind,resourceId:body.resourceId}));
     return json(origin,{ok:false,error:'not_found'},404);
   } catch (error) {
-    const expected = /^(?:starcoin_account_identity_mismatch|starcoin_state_invalid|starcoin_sources_disagree|starcoin_duplicate_receipt|starcoin_cloud_unavailable|starcoin_verified_device_required|github_private_write_not_verified|github_backup_http_\d+|backup_(?:account_mismatch_review_required|mismatch_review_required|malformed_review_required|commit_conflict_retry|commit_unverified|repository_invalid|repository_already_selected|not_configured|invalid_request)|connection_complete_(?:state|exchange|seal|store|unknown)_(?:timeout|type|internal)(?:_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown))?|pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+|cloudflare_client_scopes_unavailable|cloudflare_account_(?:invalid|not_authorized)|cloudflare_accounts_http_\d+)$/;
+    const expected = /^(?:starcoin_account_identity_mismatch|starcoin_state_invalid|starcoin_sources_disagree|starcoin_duplicate_receipt|starcoin_cloud_unavailable|starcoin_verified_device_required|github_private_write_not_verified|github_backup_http_\d+|backup_(?:account_mismatch_review_required|mismatch_review_required|malformed_review_required|commit_conflict_retry|commit_unverified|repository_invalid|repository_already_selected|not_configured|invalid_request)|connection_complete_(?:state|exchange|seal|store|unknown)_(?:timeout|type|internal)(?:_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown))?|pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+|meta_http_\d+|meta_page_not_authorized|meta_publish_not_confirmed|meta_content_invalid|meta_instagram_not_linked|meta_media_not_ready|cloudflare_client_scopes_unavailable|cloudflare_account_(?:invalid|not_authorized)|cloudflare_accounts_http_\d+)$/;
     const message = expected.test(error.message) || safeConnectionFailure(error.message) ? error.message : 'connection_operation_failed';
     const status = ['verified_wallet_required','starcoin_verified_device_required'].includes(message) ? 401 : message === 'too_many_requests' ? 429 : /unavailable|not_configured|operation_failed/.test(message) ? 503 : 400;
     return json(origin,{ok:false,error:message},status);

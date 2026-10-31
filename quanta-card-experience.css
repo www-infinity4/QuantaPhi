@@ -1,3 +1,4 @@
+@import url('./meta-social-card.css');
 /* Oracle Octaves editorial identity: functional, readable, no emoji placeholder tiles. */
 .qcx-art{--qcx-a:#532f31;--qcx-b:#e8d2c4;position:relative;isolation:isolate;min-height:170px;border-radius:17px;overflow:hidden;padding:15px;color:#fff;background:linear-gradient(145deg,var(--qcx-a),#1f1923 90%);display:flex;flex-direction:column;justify-content:space-between;gap:12px;border:1px solid #ffffff2e}
 .qcx-art:before{content:"";position:absolute;inset:-90px -50px auto auto;width:245px;height:245px;border:1px solid #ffffff48;border-radius:50%;box-shadow:0 0 0 25px #ffffff10,0 0 0 54px #ffffff0b,0 0 0 83px #ffffff09;z-index:-1;transform:translate(12%,8%)}
