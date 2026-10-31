@@ -32,7 +32,7 @@ test('merge requires typed confirmation and passing CI',async()=>{
  await assert.rejects(githubCopilotRequest({...args,action:'merge',prNumber:3,confirmation:'MERGE testowner/testrepo#3'},mock((url)=>{
   calls.push(url.pathname);
   if(url.pathname.endsWith('/pulls/3'))return {state:'open',draft:false,mergeable:true,head:{sha}};
-  if(url.pathname.endsWith('/reviews'))return [{state:'APPROVED',user:{login:'reviewer'}}];
+  if(url.pathname.endsWith('/reviews'))return [{state:'APPROVED',user:{login:'reviewer'},commit_id:sha,submitted_at:'2026-10-31T00:00:00Z'}];
   if(url.pathname.endsWith('/status'))return {state:'success',total_count:1};
   if(url.pathname.endsWith('/check-runs'))return {check_runs:[{status:'completed',conclusion:'failure'}],total_count:1};
   throw Error('must not merge');
@@ -42,11 +42,32 @@ test('merge requires typed confirmation and passing CI',async()=>{
 test('successful guarded merge returns verified SHA',async()=>{
  const result=await githubCopilotRequest({...args,action:'merge',prNumber:3,confirmation:'MERGE testowner/testrepo#3'},mock((url)=>{
   if(url.pathname.endsWith('/pulls/3'))return {state:'open',draft:false,mergeable:true,head:{sha}};
-  if(url.pathname.endsWith('/reviews'))return [{state:'APPROVED',user:{login:'reviewer'}}];
+  if(url.pathname.endsWith('/reviews'))return [{state:'APPROVED',user:{login:'reviewer'},commit_id:sha,submitted_at:'2026-10-31T00:00:00Z'}];
   if(url.pathname.endsWith('/status'))return {state:'success',total_count:1};
   if(url.pathname.endsWith('/check-runs'))return {check_runs:[{status:'completed',conclusion:'success'}],total_count:1};
   if(url.pathname.endsWith('/merge'))return {merged:true,sha};
   throw Error('unknown');
  }));
  assert.equal(result.status,'merged');assert.equal(result.commit,sha);
+});
+
+test('stale or withdrawn independent reviews cannot authorize a new PR head',async()=>{
+ const run=reviews=>githubCopilotRequest({...args,action:'merge',prNumber:3,
+   confirmation:'MERGE testowner/testrepo#3'},mock(url=>{
+  if(url.pathname.endsWith('/pulls/3'))return {state:'open',draft:false,mergeable:true,head:{sha},user:{login:'author'}};
+  if(url.pathname.endsWith('/reviews'))return reviews;
+  if(url.pathname.endsWith('/status'))return {state:'success',total_count:1};
+  if(url.pathname.endsWith('/check-runs'))return {check_runs:[{status:'completed',conclusion:'success'}],total_count:1};
+  throw Error('merge must not be attempted');
+ }));
+ await assert.rejects(run([{state:'APPROVED',user:{login:'reviewer'},commit_id:'b'.repeat(40),submitted_at:'2026-10-31T00:00:00Z'}]),/merge_independent_review_required/);
+ await assert.rejects(run([{state:'APPROVED',user:{login:'author'},commit_id:sha,submitted_at:'2026-10-31T00:00:00Z'}]),/merge_independent_review_required/);
+ await assert.rejects(run([
+  {state:'APPROVED',user:{login:'reviewer'},commit_id:sha,submitted_at:'2026-10-31T00:00:00Z'},
+  {state:'CHANGES_REQUESTED',user:{login:'reviewer'},commit_id:sha,submitted_at:'2026-10-31T00:01:00Z'}
+ ]),/merge_independent_review_required/);
+ await assert.rejects(run([
+  {state:'APPROVED',user:{login:'reviewer'},commit_id:sha,submitted_at:'2026-10-31T00:00:00Z'},
+  {state:'DISMISSED',user:{login:'reviewer'},commit_id:sha,submitted_at:'2026-10-31T00:01:00Z'}
+ ]),/merge_independent_review_required/);
 });
