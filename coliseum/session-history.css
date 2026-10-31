@@ -43,3 +43,7 @@
 .zeus-history [hidden]{display:none!important}
 .zeus-history :is(button,input,textarea,select):focus-visible{outline:3px solid #f5cb7f;outline-offset:2px}
 @media(max-width:720px){.zeus-history-grid{grid-template-columns:1fr}.zeus-history-side{max-height:none}.zeus-history-threads{max-height:260px}}
+
+/* History is navigable: preserve the selected session without changing its recorded state. */
+.zeus-session-entry{cursor:pointer;color:inherit;text-align:left}
+.zeus-session-entry.selected{border-color:#f5ca79;background:#2e5266;box-shadow:0 0 0 1px #f5ca7966}
