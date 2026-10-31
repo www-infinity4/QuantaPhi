@@ -45,3 +45,14 @@ test('refresh never mints or reads wallet secrets and remains honest about model
  for(const forbidden of ['localStorage','walletAddress','POST','api/tokens'])assert.ok(!client.includes(forbidden));
  assert.equal(client.includes('/api/tokens'),false);
 });
+
+test('Alien Coin wallet reader uses protected first-party API and avoids false empty balances',()=>{
+ const wallet=fs.readFileSync(new URL('../wallet-runtime.js',import.meta.url),'utf8');
+ assert.match(wallet,/fetch\('\/alien-coin\/api\/tokens'/);
+ assert.match(wallet,/location\.origin!=='https:\/\/quantaphi\.org'/);
+ assert.match(wallet,/credentials:'omit'/);
+ assert.match(wallet,/stillSelected!==session/);
+ assert.match(wallet,/count:null,status:'Alien Coin ledger unavailable or not authorized/);
+ assert.doesNotMatch(wallet,/fetch\('https:\/\/alien-coin\.marvaseater\.workers\.dev\/api\/tokens'/);
+ assert.match(wallet,/Cardone is not an owned security, balance or mint/);
+});
