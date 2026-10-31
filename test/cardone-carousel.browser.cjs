@@ -51,7 +51,12 @@ test('Gary Cardone appears once, inside the carousel, and survives Next/Previous
      parentTag:document.getElementById('churchOfIAmCard')?.parentElement?.tagName,
      profileParent:document.getElementById('quantaProfileCard')?.parentElement?.id,
      profileHidden:document.getElementById('quantaProfileCard')?.hidden,
-     activeTab:[...document.querySelectorAll('[data-oracle-feed]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.dataset.oracleFeed)
+     activeTab:[...document.querySelectorAll('[data-oracle-feed]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.dataset.oracleFeed),
+     forcedChange:(()=>{const select=document.getElementById('oracleCardChooser');select?.dispatchEvent(new Event('change',{bubbles:true}));return {
+      status:document.getElementById('oracleCardStatus')?.textContent,
+      now:document.getElementById('oracleCardNow')?.textContent,
+      parent:document.getElementById('churchOfIAmCard')?.parentElement?.id
+     }})()
     }));console.error('ORACLE_DIAGNOSTIC',JSON.stringify(diag));
    }
    assert.equal(state.count,1);assert.equal(state.parent,'oracleCardStage');assert.notEqual(state.display,'none');
