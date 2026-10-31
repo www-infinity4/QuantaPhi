@@ -63,3 +63,29 @@ test('rendered login wall stays blocked after bounded retry',async()=>{
  assert.deepEqual(calls,[4800,8000]);
  assert.ok(writes.some(w=>w.args.includes('blocked')));
 });
+
+test('Integra is a separate read-only public source with strict author identity',()=>{
+ const id='2116317875573063833';
+ const html=x(id,'#bubbles Bubble Yum from Hershey','IntegraAI');
+ assert.equal(parsePublicProfile(html).length,0,'default owner reader must not absorb Integra posts');
+ const posts=parsePublicProfile(html,'IntegraAI');
+ assert.equal(posts.length,1);
+ assert.equal(posts[0].url,'https://x.com/IntegraAI/status/'+id);
+ assert.deepEqual(parsePublicProfile(x(id,'Forged quote','OtherUser'),'IntegraAI'),[]);
+ assert.deepEqual(parsePublicProfile(html,'NotAuthorized'),[]);
+ const spoof=x(id,'#bubbles quote','IntegraAI').replace('href="/IntegraAI"','href="/OtherUser"');
+ assert.deepEqual(parsePublicProfile(spoof,'IntegraAI'),[]);
+});
+
+test('Integra scan uses its own profile, preserves source URL and scan key',async()=>{
+ const id='2116317875573063833',calls=[],writes=[];
+ const env={BROWSER:{async quickAction(op,opts){calls.push(opts.url);return new Response(x(id,'#bubbles Bubble Yum','IntegraAI'));}},
+  DB:{prepare(sql){return{bind(...args){writes.push({sql,args});return{async run(){return{meta:{changes:1}}}}}}}}};
+ const result=await scanPublicX(env,'IntegraAI');
+ assert.equal(result.ok,true);
+ assert.deepEqual(calls,['https://x.com/IntegraAI']);
+ const post=writes.find(w=>w.sql.includes('owner_x_posts'));
+ assert.equal(post.args[1],'https://x.com/IntegraAI/status/'+id);
+ const scan=writes.find(w=>w.sql.includes('owner_x_scans'));
+ assert.equal(scan.args[0],'IntegraAI');
+});
