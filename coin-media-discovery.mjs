@@ -17,7 +17,7 @@ export function preferenceKey(){
  return STORAGE+':account-'+(hash>>>0).toString(36);
 }
 const read=()=>{try{const x=JSON.parse(localStorage.getItem(preferenceKey())||'{}');return x&&typeof x==='object'?x:{}}catch{return {}}};
-const save=x=>{try{localStorage.setItem(preferenceKey(),JSON.stringify(x))}catch{}};
+const save=x=>{try{localStorage.setItem(preferenceKey(),JSON.stringify(x));return true}catch{return false}};
 export function orderCoinMedia(items,{kind='music',seen=[],query=''}={}){
  const text=String(query).trim().toLowerCase();
  const seenSet=new Set(seen);
@@ -68,7 +68,7 @@ function mount(root){
   const all=read(),p=all[coin]||{};
   const clean={id:item.id,kind:item.kind,title:String(item.title||'').slice(0,160),channel:String(item.channel||'YouTube').slice(0,100),published:String(item.published||'')};
   p.saved=[clean,...savedPicks().filter(x=>x.id!==item.id)].slice(0,30);
-  all[coin]=p;save(all);return true;
+  all[coin]=p;return save(all);
  };
  const show=item=>{
   remember(item.id);player.replaceChildren();
@@ -81,7 +81,7 @@ function mount(root){
   external.href=yt(item.id);external.target='_blank';external.rel='noopener noreferrer';
   const collect=el('button','coin-media-next','Save on this coin card');collect.type='button';
   collect.addEventListener('click',()=>{
-   if(savePick(item)){render();status.textContent='Saved to this coin card for the selected account on this device. This is a media bookmark, not a minted token or wallet asset.'}
+   if(savePick(item)){render();status.textContent='Saved to this coin card on this device (in the current account when signed in). This is a bookmark, not a minted token or wallet asset.'}
    else status.textContent='Could not save this media selection.';
   });
   player.append(caption,frame,external,collect);
