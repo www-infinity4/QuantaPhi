@@ -9,7 +9,7 @@ export function readProfileInterests(){
  }catch{return []}
 }
 function readProfile(){try{const value=JSON.parse(localStorage.getItem(PROFILE_KEY)||'{}');return value&&typeof value==='object'?value:{}}catch{return {}}}
-function addStyles(){if(document.getElementById('qp-profile-css'))return;const link=el('link');link.id='qp-profile-css';link.rel='stylesheet';link.href='/quanta-profile-card.css?v=20261030-1';document.head.append(link)}
+function addStyles(){if(document.getElementById('qp-profile-css'))return;const link=el('link');link.id='qp-profile-css';link.rel='stylesheet';link.href='/quanta-profile-card.css?v=20261030-3';document.head.append(link)}
 export function mountProfileCard(host,{onComplete=()=>{}}={}){
  if(!host)return;
  addStyles();
