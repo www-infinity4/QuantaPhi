@@ -90,3 +90,15 @@ test('carousel stays in viewport at additional Android widths',async({page})=>{
   await expect(page.locator('#iqpNext')).toBeVisible();
  }
 });
+
+test('verified plugin handoff is specific and does not imply inherited login',async({page})=>{
+ await prepare(page);
+ await page.goto(base+'/plugin-quick-cards.html?card=plugin-flaim-fantasy',{waitUntil:'domcontentloaded'});
+ await expect(page.getByRole('link',{name:'Connect via ChatGPT plugin ↗'}))
+  .toHaveAttribute('href','https://chatgpt.com/plugins/flaim-fantasy');
+ await expect(page.locator('.iqp-warning')).toContainText('require an approved connection');
+ await page.goto(base+'/plugin-quick-cards.html?card=plugin-daily-tarot',{waitUntil:'domcontentloaded'});
+ await expect(page.getByRole('link',{name:'Open verified ChatGPT plugin ↗'}))
+  .toHaveAttribute('href','https://chatgpt.com/plugins/plugin_asdk_app_6943a2c078b0819188de39e4fe168d9b');
+ await expect(page.locator('.iqp-warning')).toContainText('does not inherit account access');
+});
