@@ -72,6 +72,8 @@ if(host){
    const meta=make('div',undefined,'eqc-meta');
    if(item.bidCount!==null&&mode==='auction')meta.append(make('span',item.bidCount+' bids'));
    if(item.seller)meta.append(make('span','Seller · '+item.seller));
+   if(item.sellerFeedback!==null&&item.sellerFeedback!==undefined)meta.append(make('span','Positive seller feedback · '+item.sellerFeedback+'%'));
+   if(item.topRated)meta.append(make('span','eBay Top Rated Plus buying experience'));
    if(item.condition)meta.append(make('span',item.condition));
    if(item.ends&&mode==='auction')meta.append(make('span','Ends · '+new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short'}).format(new Date(item.ends))));
    body.append(meta);
@@ -80,6 +82,12 @@ if(host){
   const open=make('a',mode==='auction'?'Open eBay to bid ↗':'Open eBay to buy ↗');open.href=item.url;
   open.target='_blank';open.rel='noopener noreferrer'+(item.sponsored?' sponsored':'');
   actions.append(open);
+  if(item.seller&&mode==='buy'&&!sourceOnly){
+   const sellerSearch=new URL('https://www.ebay.com/sch/i.html');
+   sellerSearch.searchParams.set('_ssn',item.seller);sellerSearch.searchParams.set('LH_BIN','1');
+   const store=make('a','More from seller ↗');store.href=sellerSearch.href;
+   store.target='_blank';store.rel='noopener noreferrer';actions.append(store);
+  }
   const share=make('button','Share');share.type='button';
   share.addEventListener('click',async()=>{
    try{
