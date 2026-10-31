@@ -27,6 +27,7 @@ export class UserConnections extends DurableObject {
   async walletEmail(input) {return walletEmailPreference(this.service,input);}
   async gateStatus(input) {return this.service.gateStatus(input);}
   async githubRepositories(input) {return this.service.githubRepositories(input);}
+  async githubCopilot(input) {return this.service.githubCopilot(input);}
   async cloudflareAccounts(input) {return this.service.cloudflareAccounts(input);}
   async selectCloudflareAccount(input) {return this.service.selectCloudflareAccount(input);}
   async githubConnectionTest(input) {return this.service.githubRepositories({...input,test:true});}

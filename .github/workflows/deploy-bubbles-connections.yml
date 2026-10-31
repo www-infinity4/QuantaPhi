@@ -27,8 +27,10 @@ jobs:
           node --check workers/bubbles-connections/providers.mjs
           node --check workers/bubbles-connections/router.mjs
           node --check workers/bubbles-connections/worker.mjs
+          node --check workers/bubbles-connections/github-copilot-api.mjs
+          node --check infinity-copilot-card.mjs
           node --check workers/infinity-brain-clock/cloudflare-scope-sync.mjs
-          node --test test/bubbles-cloudflare-scope-sync.test.mjs test/bubbles-connections.test.mjs test/bubbles-connections-router.test.mjs test/bubbles-consent.test.mjs test/bubbles-connections-ui.test.mjs test/bubbles-connector-pairing.test.mjs
+          node --test test/bubbles-cloudflare-scope-sync.test.mjs test/bubbles-connections.test.mjs test/bubbles-connections-router.test.mjs test/bubbles-consent.test.mjs test/bubbles-connections-ui.test.mjs test/bubbles-connector-pairing.test.mjs test/github-copilot-api.test.mjs test/github-copilot-popup.test.mjs
       - name: Validate full Worker bundle without changing production
         run: |
           npx --yes wrangler@4 deploy --config workers/bubbles-connections/wrangler.toml --dry-run --outdir /tmp/bubbles-connections-verified

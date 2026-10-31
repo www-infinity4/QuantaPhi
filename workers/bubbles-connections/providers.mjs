@@ -1,3 +1,4 @@
+import {githubCopilotRequest} from './github-copilot-api.mjs';
 // Only trusted server configuration supplies clients, secrets and callbacks.
 import {connectionFailureCode} from './completion.mjs';
 export {resolveCloudflareScopeConfig} from './scope-config.mjs';
@@ -85,6 +86,7 @@ export function githubAdapter(config, request = githubRequest) {
   const redirectUri = callback(config);
   return {
     id:'github',
+    async copilot(input){return githubCopilotRequest(input,request);},
     async connectionTest({accessToken}) {
       const verified=await this.repositories({accessToken});
       const repository='www-infinity4/QuantaPhi';
