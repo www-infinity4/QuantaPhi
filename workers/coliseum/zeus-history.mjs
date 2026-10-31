@@ -70,8 +70,10 @@ export async function handleZeusHistory(req,env,member,respond){
     await db.prepare('UPDATE zeus_threads SET updated_at=? WHERE member_id=? AND id=?').bind(now,member,id).run();
    }
    const saved=previous||await db.prepare('SELECT id,role,text,created_at FROM zeus_turns WHERE member_id=? AND thread_id=? AND id=?').bind(member,id,msgId).first();
-   const backedUp=await backup(env,prefix(member,id)+'turns/'+msgId+'.json',saved);
-   return respond({ok:true,saved:true,backedUp,id:msgId},201);
+   const copiedTurn=await backup(env,prefix(member,id)+'turns/'+msgId+'.json',saved);
+   const updatedThread=await db.prepare('SELECT id,title,created_at,updated_at FROM zeus_threads WHERE member_id=? AND id=?').bind(member,id).first();
+   const copiedThread=await backup(env,prefix(member,id)+'thread.json',updatedThread);
+   return respond({ok:true,saved:true,backedUp:copiedTurn&&copiedThread,id:msgId},201);
   }
   return respond({ok:false,error:'method_not_allowed'},405);
  }catch(e){
