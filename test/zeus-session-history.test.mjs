@@ -91,4 +91,8 @@ test('tracker is installed on Zeus but never claims ChatGPT-native access',()=>{
  assert.match(source,/Device-local tracker only/);
  assert.match(source,/user-entered/);
  assert.match(source,/Private handoff text to copy/);
+ assert.match(source,/Return to active session/);
+ assert.match(source,/aria-pressed/);
+ assert.match(source,/headingTitle\.id='zeusHistoryTitle'/);
+ assert.match(source,/previousFocus=focusedSessionId/);
 });
