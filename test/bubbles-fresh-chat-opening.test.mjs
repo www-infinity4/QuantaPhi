@@ -280,7 +280,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
    saveThread:()=>{saves++;return saveOk},
    readThread:()=>[{id:'saved_123',role:'assistant',text:'Saved earlier turn',at:10}],
    ownerReady:lateDraft!==null||latePhoto||cloudEmpty||cloudMessages||ownerSwitchDuringCloud||ownerSwitchInPlace,
-   ownerHeaders:{Authorization:'Bearer old-verified-owner'},
+   ownerHeaders:(lateDraft!==null||latePhoto||cloudEmpty||cloudMessages||ownerSwitchDuringCloud||ownerSwitchInPlace)?{Authorization:'Bearer old-verified-owner'}:null,
    conversationApi:async()=>{
     if(ownerSwitchDuringCloud)ctx.ownerHeaders={Authorization:'Bearer different-verified-owner'};
     if(ownerSwitchInPlace)ctx.ownerHeaders.Authorization='Bearer rotated-to-different-owner';
@@ -301,6 +301,9 @@ test('History switching never discards unsent photos, typed work or an unsaved c
   const result=await source.openConversation('chat_target');
   return {result,confirmations,saves,clears,state:source.getState(),notice:ctx.chatsMessage.textContent};
  }
+ const localOnly=await run();
+ assert.equal(localOnly.result,true,'device History must open without a verified cloud owner');
+ assert.equal(localOnly.state.messages[0]?.text,'Saved earlier turn');
  const denied=await run({draft:'Unsent writing',photo:true});
  assert.equal(denied.result,false);
  assert.equal(denied.confirmations,1);
