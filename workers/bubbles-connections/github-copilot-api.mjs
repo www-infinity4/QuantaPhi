@@ -25,11 +25,14 @@ export async function githubCopilotRequest({accessToken,repository,action,prompt
   const clean=String(prompt||'').trim();
   if(clean.length<12||clean.length>4000)throw Error('copilot_prompt_invalid');
   const title=clean.split(/[\r\n.!?]/)[0].slice(0,100).trim()||'Build requested website';
+  const metadata=await call('');
+  const baseBranch=String(metadata.default_branch||'');
+  if(!/^[A-Za-z0-9_.\/-]{1,160}$/.test(baseBranch)||baseBranch.includes('..'))throw Error('repository_branch_invalid');
   const created=await call('/issues','POST',{title:'Infinity Copilot: '+title,
    body:'Requested through QuantaPhi Infinity Copilot Quick Card.\n\n'+clean+
      '\n\nMake changes in a reviewable pull request. Include tests and evidence. Never merge or deploy automatically.',
    assignees:['copilot-swe-agent[bot]'],
-   agent_assignment:{target_repo:repository,base_branch:'',custom_instructions:'Create a PR and include test evidence; do not merge or deploy without review.'}});
+   agent_assignment:{target_repo:repository,base_branch:baseBranch,custom_instructions:'Create a PR and include test evidence; do not merge or deploy without review.'}});
   if(!Number.isSafeInteger(created.number))throw Error('github_copilot_response_invalid');
   const assigned=Array.isArray(created.assignees)&&created.assignees.some(a=>a.login==='copilot-swe-agent[bot]'||a.login==='copilot-swe-agent');
   return {status:assigned?'copilot_assigned':'issue_created_not_assigned',issue:created.number,
@@ -49,10 +52,13 @@ export async function githubCopilotRequest({accessToken,repository,action,prompt
   const pr=await call('/pulls/'+number);
   if(pr.state!=='open'||pr.draft===true||pr.mergeable!==true||!/^[a-f0-9]{40}$/.test(pr.head?.sha||''))
    throw Error('merge_pr_not_ready');
-  const [combined,checks]=await Promise.all([
+  const [combined,checks,reviews]=await Promise.all([
    call('/commits/'+pr.head.sha+'/status'),
-   call('/commits/'+pr.head.sha+'/check-runs?per_page=100')]);
+   call('/commits/'+pr.head.sha+'/check-runs?per_page=100'),
+   call('/pulls/'+number+'/reviews?per_page=100')]);
   const runs=checks.check_runs;
+  if(!Array.isArray(reviews)||!reviews.some(r=>r.state==='APPROVED'&&r.user?.login!==pr.user?.login))
+   throw Error('merge_independent_review_required');
   if(!Array.isArray(runs)||runs.length<1||Number(checks.total_count)>100||
      runs.some(r=>r.status!=='completed'||r.conclusion!=='success')||
      !['success','pending'].includes(combined.state)||
