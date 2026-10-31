@@ -1834,7 +1834,7 @@ async function refreshConversationFolders(){
  const ownerAtStart=ownerHeaders,ownerAuthorizationAtStart=ownerHeaders?.Authorization||'';
  try{
   const data=await conversationApi('sessions-list');
-  if(!ownerReady||ownerHeaders!==ownerAtStart||ownerHeaders?.Authorization!==ownerAuthorizationAtStart){
+  if(!ownerReady||ownerHeaders!==ownerAtStart||(ownerHeaders?.Authorization||'')!==ownerAuthorizationAtStart){
    chatsList.replaceChildren();
    chatsMessage.textContent='Owner connection changed during History refresh. Verify the wallet and refresh again.';
    return;
@@ -1848,7 +1848,7 @@ async function refreshConversationFolders(){
   }
   save(THREAD_INDEX,threadIndex);chatsMessage.textContent='Your older conversations are ready to reopen.';
  }catch{chatsMessage.textContent='Cloud chat history could not be reached. Your device history is still available.'}
- if(!ownerReady||ownerHeaders!==ownerAtStart||ownerHeaders?.Authorization!==ownerAuthorizationAtStart){
+ if(!ownerReady||ownerHeaders!==ownerAtStart||(ownerHeaders?.Authorization||'')!==ownerAuthorizationAtStart){
   chatsList.replaceChildren();
   chatsMessage.textContent='Owner connection changed during History refresh. Verify the wallet and refresh again.';
   return;
@@ -1881,7 +1881,7 @@ async function openConversation(id){
  if(ownerReady){
   try{
    const result=await conversationApi('sessions-get',id);
-   if(ownerReady!==ownerReadyAtStart||ownerHeaders!==ownerAtStart||ownerHeaders?.Authorization!==ownerAuthorizationAtStart)throw Error('owner_connection_changed');
+   if(ownerReady!==ownerReadyAtStart||ownerHeaders!==ownerAtStart||(ownerHeaders?.Authorization||'')!==ownerAuthorizationAtStart)throw Error('owner_connection_changed');
    // Fail closed if the cloud response belongs to a different session; never
     // display or persist another thread's turns in this device's History.
     if(!Array.isArray(result.messages)||!result.session||result.session.id!==id)throw Error('cloud_folder_identity_mismatch');
@@ -1891,7 +1891,7 @@ async function openConversation(id){
    if(result.messages.length||!next.length)next=result.messages;
   }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
  }
- if(ownerReady!==ownerReadyAtStart||ownerHeaders!==ownerAtStart||ownerHeaders?.Authorization!==ownerAuthorizationAtStart){
+ if(ownerReady!==ownerReadyAtStart||ownerHeaders!==ownerAtStart||(ownerHeaders?.Authorization||'')!==ownerAuthorizationAtStart){
   chatsMessage.textContent='Owner connection changed while History was loading. Your current chat was kept; verify the wallet and try again.';
   return false;
  }
