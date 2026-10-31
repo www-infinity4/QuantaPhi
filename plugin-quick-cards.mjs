@@ -1,5 +1,6 @@
 import {PLUGIN_QUICK_CARDS,PLUGIN_CATEGORIES,pluginQuickCard} from './plugin-quick-card-catalog.mjs';
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs';
+import {createCardArtwork} from './quanta-card-experience.mjs';
+import {mountCardActions} from './quanta-card-actions.mjs';
 import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
 const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
 const params=new URLSearchParams(location.search);
@@ -88,7 +89,9 @@ function render(updateUrl=false){
   catch{entry.focus();entry.select();state.textContent='Clipboard unavailable. Select and copy your text manually.'}
  });
  row.append(copy);details.append(label,entry,row,state);
- const tools=el('section','iqp-tools');mountCardTools(tools,card);
+ const tools=el('section','iqp-tools');
+ tools.classList.add('qcx-experience');
+ mountCardActions(tools,card,{showSearch:false,websiteReader:false,showOriginal:false,showPreview:false});
  cardHost.append(header,art,info,warning,actions,publicSearch,details,tools);
  status.textContent=card.name+' · '+(index+1)+' of '+eligible.length;
 }
