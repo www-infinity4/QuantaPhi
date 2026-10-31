@@ -9,8 +9,7 @@ export const VERIFIED_CHATGPT_PLUGIN_URLS=Object.freeze({
  'ajaxx-data-scrubber':'https://chatgpt.com/plugins/plugin_asdk_app_698d2bdf0eb08191890a55606150ecc2',
  'flaim-fantasy':'https://chatgpt.com/plugins/flaim-fantasy',
  'steer-astro':'https://chatgpt.com/plugins/plugin_asdk_app_69655fed917081918a100b069ceb963f',
- 'freddy':'https://chatgpt.com/plugins/plugin_asdk_app_6a322b52a82c8191b7fb653f9e9f7891',
- 'daily-tarot':'https://chatgpt.com/plugins/plugin_asdk_app_6943a2c078b0819188de39e4fe168d9b'
+ 'freddy':'https://chatgpt.com/plugins/plugin_asdk_app_6a322b52a82c8191b7fb653f9e9f7891'
 });
 export const PLUGIN_QUICK_CARDS=Object.freeze(ROWS.split('\n').map(line=>{
  const [slug,name,category,official,feature,mode]=line.split('|');
