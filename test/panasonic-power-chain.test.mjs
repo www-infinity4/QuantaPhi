@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {runInNewContext} from 'node:vm';
 import {planPanasonicSearch,verifiedPanasonicResult,searchPanasonic,PANASONIC_SOURCE} from '../design-lab/panasonic-card.mjs';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 test('bounded official-domain research plan with no purchasing authority',()=>{
@@ -35,4 +36,25 @@ test('responsive real page, working controls, shared card actions and disclosure
  for(const id of ['panasonicQuery','panasonicGo','panasonicStop','panasonicStatus','panasonicResults','panasonicCardActions'])assert.match(html,new RegExp('id="'+id+'"'));
  assert.match(ui,/searchPanasonic\(/);assert.match(ui,/\.abort\(\)/);assert.match(ui,/mountCardActions/);
  assert.match(html,/not a Panasonic partnership/);assert.doesNotMatch(html,/Buy now|instant checkout/i);
+});
+
+test('Stop releases controls immediately; late aborted result cannot overwrite a newer search',async()=>{
+ const ids=['panasonicQuery','panasonicGo','panasonicStop','panasonicStatus','panasonicResults','panasonicCardActions'];
+ const element=()=>({disabled:false,textContent:'',children:[],listeners:{},addEventListener(event,handler){this.listeners[event]=handler;},replaceChildren(){this.children=[];},append(...items){this.children.push(...items);}});
+ const elements=Object.fromEntries(ids.map(id=>[id,element()]));elements.panasonicQuery.value='camera';
+ const pending=[];
+ const document={getElementById:id=>elements[id],createElement:()=>element()};
+ const searchPanasonic=(query,{signal})=>new Promise((resolve,reject)=>pending.push({query,signal,resolve,reject}));
+ const ui=read('design-lab/panasonic-ui.mjs').replace(/^import .*;\n/gm,'');
+ runInNewContext(ui,{document,AbortController,searchPanasonic,mountCardActions(){}});
+ elements.panasonicGo.listeners.click();
+ assert.equal(pending.length,1);assert.equal(elements.panasonicGo.disabled,true);
+ elements.panasonicStop.listeners.click();
+ assert.equal(pending[0].signal.aborted,true);assert.equal(elements.panasonicGo.disabled,false);assert.equal(elements.panasonicQuery.disabled,false);assert.match(elements.panasonicStatus.textContent,/Stopped/);
+ elements.panasonicQuery.value='battery';elements.panasonicGo.listeners.click();
+ assert.equal(pending.length,2);assert.equal(elements.panasonicGo.disabled,true);
+ pending[0].resolve({found:1,results:[{title:'STALE',url:'https://www.panasonic.com/stale'}]});await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(elements.panasonicResults.children.length,0);assert.match(elements.panasonicStatus.textContent,/Searching/);assert.equal(elements.panasonicGo.disabled,true);
+ pending[1].resolve({found:1,results:[{title:'Fresh',url:'https://www.panasonic.com/fresh'}]});await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(elements.panasonicResults.children.length,1);assert.equal(elements.panasonicResults.children[0].children[0].textContent,'Fresh');assert.equal(elements.panasonicGo.disabled,false);
 });
