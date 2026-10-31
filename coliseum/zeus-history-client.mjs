@@ -7,7 +7,7 @@ const label=(text)=>{const p=document.createElement('p');p.textContent=text;retu
 const button=(text)=>{const b=document.createElement('button');b.type='button';b.className='ba-control';b.textContent=text;return b};
 const stored=()=>{try{return JSON.parse(localStorage.getItem(CONSENT)||'null')}catch{return null}};
 const save=value=>{try{localStorage.setItem(CONSENT,JSON.stringify(value));return true}catch{return false}};
-export function mountZeusArchive({root,snapshot,openThread}){
+export function mountZeusArchive({root,snapshot,openThread,localArchive}){
  const wrap=document.createElement('details');wrap.className='ba-zeus-cloud-history';
  const summary=document.createElement('summary');summary.textContent='Zeus · Cloud history and backup';
  const intro=label('Private to your verified StarQuest wallet. With your permission, Zeus saves both your messages and assistant replies in Cloudflare D1, with a separate private R2 copy. This is not end-to-end encrypted.');
@@ -17,11 +17,12 @@ export function mountZeusArchive({root,snapshot,openThread}){
  const enable=button('Enable automatic cloud backup');
  const listButton=button('View cloud conversations');
  const retry=button('Retry pending backup');
+ const importOlder=button('Back up older chats from this device');
  const exportButton=button('Download complete Zeus history');
  const recovery=document.createElement('a');recovery.href='/wallet-recovery.html?verify=1';recovery.textContent='Sign in / verify your existing StarQuest wallet';
  recovery.rel='nofollow';
  const list=document.createElement('div');list.className='ba-folder-list';
- controls.append(enable,listButton,retry,exportButton);
+ controls.append(enable,listButton,retry,importOlder,exportButton);
  wrap.append(summary,intro,controls,recovery,status,list);
  root.append(wrap);
  let profile='',enabled=false,loading=false,running=false;
@@ -91,10 +92,10 @@ export function mountZeusArchive({root,snapshot,openThread}){
  }
  async function action(job){
   if(loading)return;
-  loading=true;for(const b of [enable,listButton,retry,exportButton])b.disabled=true;
+  loading=true;for(const b of [enable,listButton,retry,importOlder,exportButton])b.disabled=true;
   try{await job()}catch(e){
    say('Cloud history: '+String(e.message||e).replaceAll('_',' ')+'. Your device conversations were not deleted.');
-  }finally{loading=false;for(const b of [enable,listButton,retry,exportButton])b.disabled=false}
+  }finally{loading=false;for(const b of [enable,listButton,retry,importOlder,exportButton])b.disabled=false}
  }
  async function drain(){
   if(running||!enabled)return;
@@ -147,6 +148,17 @@ export function mountZeusArchive({root,snapshot,openThread}){
   await verify();
   if(!enabled){say('Automatic cloud backup is paused. Enable it to save new messages.');return}
   const current=snapshot();queue(current.id,current.messages,current.thread);
+  await drain();
+ }));
+ importOlder.addEventListener('click',()=>void action(async()=>{
+  await verify();
+  if(!enabled)throw Error('Enable automatic cloud backup before importing older device chats');
+  if(snapshot().keepChat===false)throw Error('Enable local conversation history before importing');
+  const older=(typeof localArchive==='function'?localArchive():[])
+   .filter(x=>uuid.test(x.id)&&Array.isArray(x.messages)&&x.messages.length);
+  if(!older.length){say('No older Zeus conversations found in this browser.');return}
+  if(!confirm('Back up '+older.length+' Zeus conversation(s) currently saved in this browser to the signed-in wallet? On a shared device, older chats may belong to another person.'))return;
+  for(const item of older)queue(item.id,item.messages,item.thread);
   await drain();
  }));
  exportButton.addEventListener('click',()=>void action(async()=>{
