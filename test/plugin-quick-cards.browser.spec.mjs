@@ -123,3 +123,34 @@ test('outdated Cloudflare reader does not dispatch paid provider reads',async({p
  assert.deepEqual(actions,['capabilities']);
  await expect(page.locator('.iqp-public-results')).not.toContainText('Receipt');
 });
+
+test('unfinished card task survives carousel navigation, filtering and same-tab reload',async({page})=>{
+ await prepare(page);
+ await page.goto(base+'/plugin-quick-cards.html?card=plugin-etsy',{waitUntil:'domcontentloaded'});
+ const task=page.locator('#iqpTaskInput');
+ const draft='Identify the variety of an 1888-O dime before suggesting a fair listing price.';
+ await task.fill(draft);
+ await page.locator('#iqpNext').click();
+ await expect(page.locator('#iqpCard h2')).not.toHaveText('Etsy');
+ await page.locator('#iqpPrevious').click();
+ await expect(task).toHaveValue(draft);
+ await page.reload({waitUntil:'domcontentloaded'});
+ await expect(task).toHaveValue(draft);
+ await page.locator('#iqpCategory').selectOption('Security');
+ await expect(page.locator('#iqpCard h2')).not.toHaveText('Etsy');
+ await page.locator('#iqpCategory').selectOption('');
+ await page.locator('#iqpFilter').fill('Etsy');
+ await expect(task).toHaveValue(draft);
+ await expect(page.locator('.iqp-workspace')).toContainText('saved in this tab');
+});
+test('task drafts remain separated by provider and are not submitted externally',async({page})=>{
+ await prepare(page);
+ await page.goto(base+'/plugin-quick-cards.html?card=plugin-etsy',{waitUntil:'domcontentloaded'});
+ await page.locator('#iqpTaskInput').fill('Etsy-specific product draft');
+ await page.goto(base+'/plugin-quick-cards.html?card=plugin-shopify',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#iqpTaskInput')).toHaveValue('');
+ await page.locator('#iqpTaskInput').fill('Shopify storefront draft');
+ await page.goto(base+'/plugin-quick-cards.html?card=plugin-etsy',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#iqpTaskInput')).toHaveValue('Etsy-specific product draft');
+ await expect(page.locator('#iqpCard')).toContainText('Your task workspace');
+});
