@@ -263,7 +263,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
     if(ownerSwitchDuringCloud)ctx.ownerHeaders={Authorization:'Bearer different-verified-owner'};
     if(lateDraft!==null)ctx.input.value=lateDraft;
     if(latePhoto)ctx.pendingImages.push({id:'new-photo'});
-    return {session:{id:cloudSessionId},messages:cloudMessages?[{id:'cloud_123',role:'assistant',text:'Verified cloud turn',at:20}]:[]};
+    return {session:{id:cloudSessionId,title:ownerSwitchDuringCloud?'Stale other-wallet title':undefined},messages:cloudMessages?[{id:'cloud_123',role:'assistant',text:'Verified cloud turn',at:20}]:[]};
    },
    confirm:()=>{confirmations++;return approve},
    sessionStorage:{setItem:()=>{}},TAB_THREAD:'tab',EXPLICIT_THREAD:'explicit',
@@ -274,7 +274,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
    crypto:{randomUUID:()=> 'uuid'},greeted:true
   };
   const source=vm.runInNewContext(ui.slice(begin,end)+
-   ';({openConversation,getState:()=>({activeThread,pendingImage,pendingImages,messages,input})})',ctx);
+   ';({openConversation,getState:()=>({activeThread,pendingImage,pendingImages,messages,input,threadIndex})})',ctx);
   const result=await source.openConversation('chat_target');
   return {result,confirmations,saves,clears,state:source.getState(),notice:ctx.chatsMessage.textContent};
  }
@@ -311,6 +311,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  assert.equal(switchedWallet.clears,0,'stale cloud History must not replace the active chat');
  assert.equal(switchedWallet.state.activeThread,'chat_old');
  assert.equal(switchedWallet.state.messages[0].text,'Important current chat');
+ assert.equal(switchedWallet.state.threadIndex.find(x=>x.id==='chat_target')?.title,'Earlier chat','old wallet response must not rename local History');
  assert.match(switchedWallet.notice,/owner connection changed/i);
  const wrongCloudSession=await run({cloudMessages:true,cloudSessionId:'another_wallet_thread'});
  assert.equal(wrongCloudSession.result,true,'the verified device copy remains open when cloud returns a different session');
