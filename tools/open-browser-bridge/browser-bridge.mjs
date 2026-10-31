@@ -20,6 +20,8 @@ try {
   await installRequestPolicy(context, allowed);
   const page = await context.newPage();
   await page.goto(raw, { waitUntil: 'domcontentloaded', timeout: 20000 });
+  // A navigation can end on a different URL; never issue a successful receipt for an unapproved destination.
+  if (!isAllowedUrl(page.url(), allowed)) throw new Error('Final URL not permitted by HTTPS hostname policy');
   await mkdir('receipts', { recursive: true });
   const screenshot = 'receipts/last-visit.png';
   await page.screenshot({ path: screenshot, fullPage: false });
