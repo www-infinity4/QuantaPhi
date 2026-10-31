@@ -265,7 +265,7 @@ export class ConsentService {
     const lease=action==='build'?randomToken():null;
     let receiptKey=null;
     if(action==='build'){
-      if(typeof nonce!=='string'||!\/^[a-f0-9-]{36}$\/.test(nonce))throw Error('copilot_request_id_required');
+      if(typeof nonce!=='string'||!/^[a-f0-9-]{36}$/.test(nonce))throw Error('copilot_request_id_required');
       receiptKey=prefix+'copilot:request:'+await digest(id+'|'+nonce);
       const known=await this.storage.transaction(async tx=>{
         const old=await tx.get(receiptKey);
