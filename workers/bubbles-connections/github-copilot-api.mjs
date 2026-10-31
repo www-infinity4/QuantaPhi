@@ -40,6 +40,18 @@ export async function githubCopilotRequest({accessToken,repository,action,prompt
  }
  const number=Number(prNumber);
  if(!Number.isSafeInteger(number)||number<1||number>100000000)throw Error('pull_request_invalid');
+ if(action==='details'){
+  const [files,comments]=await Promise.all([
+   call('/pulls/'+number+'/files?per_page=100'),
+   call('/issues/'+number+'/comments?per_page=30')]);
+  if(!Array.isArray(files)||!Array.isArray(comments))throw Error('github_copilot_response_invalid');
+  return {pr:number,
+   files:files.slice(0,100).map(f=>({path:String(f.filename||'').slice(0,300),
+    status:String(f.status||'').slice(0,30),additions:Number(f.additions)||0,
+    deletions:Number(f.deletions)||0,patch:String(f.patch||'').slice(0,2400)})),
+   messages:comments.slice(-20).map(c=>({author:String(c.user?.login||'unknown').slice(0,80),
+    body:String(c.body||'').slice(0,3000),createdAt:c.created_at||null}))};
+ }
  if(action==='feedback'){
   const body=String(prompt||'').trim();
   if(body.length<3||body.length>4000)throw Error('copilot_prompt_invalid');
