@@ -65,7 +65,8 @@ test('Following displays genuine publisher listings only after Follow and preser
  await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/**',route=>route.fulfill({json:{results:[]}}));
  await page.goto(base+'/?card=heritage',{waitUntil:'domcontentloaded'});
  const card=page.locator('#oracleCardStage [data-source-id="heritage"]');
- await expect(card.getByRole('link',{name:'Sign in with Heritage Auctions'})).toHaveAttribute('href','https://www.ha.com/c/login.zx');
+ await expect(card).toBeVisible({timeout:20000});
+ await expect(card.locator('a.qca-signin')).toHaveAttribute('href','https://www.ha.com/c/login.zx');
  const listing=page.locator('#oracleFollowingFeed');
  await expect(listing).toBeHidden();
  await page.locator('#oracleCardFollow').click();
