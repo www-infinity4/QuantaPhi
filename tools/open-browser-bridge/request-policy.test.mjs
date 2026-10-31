@@ -5,8 +5,24 @@ import { installRequestPolicy } from './request-policy.mjs';
 
 function fakeContext() {
   let handler;
+  let socketHandler;
   return {
-    async route(pattern, fn) { assert.equal(pattern, '**/*'); handler = fn; },
+    async routeWebSocket(pattern, fn) { assert.equal(pattern, '**/*'); socketHandler = fn; },
+    async route(pattern, fn) {
+      assert.equal(pattern, '**/*');
+      assert.equal(typeof socketHandler, 'function', 'socket policy must be installed before HTTP routing');
+      handler = fn;
+    },
+    async socket(url) {
+      assert.equal(typeof socketHandler, 'function', 'socket policy must precede page creation');
+      let action = 'none';
+      await socketHandler({
+        url: () => url,
+        close: async () => { action = 'close'; },
+        connectToServer: async () => { action = 'connect'; },
+      });
+      return action;
+    },
     async request(url) {
       assert.equal(typeof handler, 'function', 'route must be installed before pages are opened');
       let action = 'none';
@@ -39,6 +55,27 @@ test('DNS lookup failures abort rather than permit a request', async () => {
   const context = fakeContext();
   await installRequestPolicy(context, new Set(['example.com']), async () => { throw new Error('dns timeout'); });
   assert.equal(await context.request('https://example.com/'), 'abort');
+});
+
+test('WebSockets are blocked even for an allowlisted hostname or popup', async () => {
+  const context = fakeContext();
+  await installRequestPolicy(context, new Set(['example.com']), async () => true);
+  assert.equal(await context.socket('wss://example.com/live'), 'close');
+  assert.equal(await context.socket('ws://127.0.0.1/admin'), 'close');
+  assert.equal(await context.socket('wss://169.254.169.254/metadata'), 'close');
+});
+
+test('missing WebSocket interception fails closed before HTTP route installation', async () => {
+  const context = fakeContext();
+  delete context.routeWebSocket;
+  await assert.rejects(
+    () => installRequestPolicy(context, new Set(['example.com'])),
+    /WebSocket routing unavailable/,
+  );
+  await assert.rejects(
+    () => context.request('https://example.com/'),
+    /route must be installed/,
+  );
 });
 
 test('browser runner installs context policy before opening pages', async () => {
