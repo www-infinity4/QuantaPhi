@@ -54,12 +54,22 @@ function mount(root){
  tools.append(select,input,find,next,freeMovies,clear);
  const status=el('p','coin-media-status','Loading public media sources…');status.setAttribute('role','status');
  const list=el('div','coin-media-results'),player=el('div','coin-media-player');
+ const savedPanel=el('div','coin-media-saved');
+ savedPanel.setAttribute('aria-label','Saved media on this coin card');
  const foot=el('p','coin-media-explain','Source links and the official YouTube player govern playback. A movie trailer is not a full movie; full films depend on the provider’s rights and availability.');
- root.append(heading,explanation,tools,status,list,player,foot);
+ root.append(heading,explanation,tools,status,savedPanel,list,player,foot);
  let items=[],state='loading',cursor=0,version=0;
  const track=()=>{const all=read(),p=all[coin]||{};p.kind=select.value;all[coin]=p;save(all)};
  const recent=()=>{const all=read();return Array.isArray(all[coin]?.seen)?all[coin].seen:[]};
  const remember=id=>{const all=read(),p=all[coin]||{};p.kind=select.value;p.seen=[id,...(Array.isArray(p.seen)?p.seen:[]).filter(x=>x!==id)].slice(0,80);all[coin]=p;save(all)};
+ const savedPicks=()=>{const a=read()[coin]?.saved;return Array.isArray(a)?a.filter(x=>x&&/^[A-Za-z0-9_-]{11}$/.test(x.id)&&KINDS.includes(x.kind)).slice(0,30):[]};
+ const savePick=item=>{
+  if(!item||!/^[A-Za-z0-9_-]{11}$/.test(item.id)||!KINDS.includes(item.kind))return false;
+  const all=read(),p=all[coin]||{};
+  const clean={id:item.id,kind:item.kind,title:String(item.title||'').slice(0,160),channel:String(item.channel||'YouTube').slice(0,100),published:String(item.published||'')};
+  p.saved=[clean,...savedPicks().filter(x=>x.id!==item.id)].slice(0,30);
+  all[coin]=p;save(all);return true;
+ };
  const show=item=>{
   remember(item.id);player.replaceChildren();
   const caption=el('p','','YouTube · '+item.channel+' · '+item.title);
@@ -69,7 +79,12 @@ function mount(root){
   frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';
   const external=el('a','coin-media-search','Watch on YouTube if playback is blocked');
   external.href=yt(item.id);external.target='_blank';external.rel='noopener noreferrer';
-  player.append(caption,frame,external);
+  const collect=el('button','coin-media-next','Save on this coin card');collect.type='button';
+  collect.addEventListener('click',()=>{
+   if(savePick(item)){render();status.textContent='Saved to this coin card for the selected account on this device. This is a media bookmark, not a minted token or wallet asset.'}
+   else status.textContent='Could not save this media selection.';
+  });
+  player.append(caption,frame,external,collect);
   render();
  };
  const render=()=>{
@@ -78,7 +93,16 @@ function mount(root){
   freeMovies.hidden=kind!=='movies';
   const matches=orderCoinMedia(items,{kind,seen,query});
   const total=orderCoinMedia(items,{kind,seen:[],query}).length;
-  list.replaceChildren();
+  list.replaceChildren();savedPanel.replaceChildren();
+  const picks=savedPicks().filter(item=>kind==='all'||item.kind===kind);
+  if(picks.length){
+   const label=el('strong','coin-media-saved-heading','Saved on this coin card · '+picks.length+' (device only)');
+   savedPanel.append(label);
+   for(const item of picks.slice(0,4)){
+    const b=el('button','coin-media-choice',item.title||item.id);b.type='button';
+    b.addEventListener('click',()=>show(item));savedPanel.append(b);
+   }
+  }
   if(state==='error')status.textContent='Live source feed unavailable. Use Search all of YouTube; no catalog is being invented.';
   else if(!total)status.textContent=query?'No matching upload in the limited recent pool. Search all of YouTube for more.':
     'No recent uploads in this category. Search all of YouTube for current options.';
