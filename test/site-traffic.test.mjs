@@ -95,7 +95,7 @@ const trafficPayload=(requests,pageViews,fetchedAt)=>({
  last7Days:{since:'2026-10-20',until:'2026-10-26',requests:100,pageViews:50,daysRecorded:7},
  recordedDays:23,coverageContinuous:true
 });
-async function runClientOnce(store,queue){
+async function runClientOnce(store,queue,{clock=Date.parse('2026-10-31T04:30:00.000Z')}={}){
  const nodes=Object.fromEntries(['qtrafficRequests','qtrafficViews','qtrafficNote','qtrafficRefresh'].map(id=>[id,{textContent:'',disabled:false,addEventListener(type,handler){if(type==='click')this.click=handler;}}]));
  const document={getElementById:id=>nodes[id],hidden:false,addEventListener(){}};
  const localStorage={getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)};
@@ -104,8 +104,14 @@ async function runClientOnce(store,queue){
   if(value instanceof Error)throw value;
   return {ok:true,json:async()=>value};
  };
+ // Snapshot fixtures have fixed observation dates. A real wall clock would
+ // eventually make a fresh fixture stale and consume the next response as a backup.
+ class FixedDate extends Date{
+  constructor(...args){super(...(args.length?args:[clock]));}
+  static now(){return clock;}
+ }
  vm.runInNewContext(clientSource,{document,localStorage,fetch,AbortSignal,
-  setInterval:()=>0,Date,Number,JSON,Math,Promise,Error});
+  setInterval:()=>0,Date:FixedDate,Number,JSON,Math,Promise,Error});
  await new Promise(resolve=>setTimeout(resolve,5));
  return nodes;
 }
