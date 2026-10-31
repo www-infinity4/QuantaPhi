@@ -46,7 +46,7 @@ test('slow owner memory does not gate the Android or website work dispatcher',()
 });
 test('native ChatGPT fallback is bounded and the Android model prompt is smaller',()=>{
  const bridge=source.slice(source.indexOf('function nativeChatGPT('),source.indexOf('if(nativeOverlay)document.documentElement'));
- assert.match(bridge,/\},12000\);/);
+ assert.match(bridge,/setTimeout\(expire,12000\)/);
  assert.doesNotMatch(bridge,/90000/);
  assert.match(source,/messages\.slice\(nativeOverlay\?-12:-40\)/);
  assert.match(source,/slice\(nativeOverlay\?-5000:-12000\)/);
