@@ -5,7 +5,7 @@ import { isPublicAddress, resolvesOnlyPublicAddresses } from './dns-policy.mjs';
 test('private, metadata, loopback, mapped, reserved and documentation addresses fail closed', () => {
   for (const address of ['127.0.0.1', '10.0.1.2', '172.16.0.1', '192.168.1.1',
     '169.254.169.254', '100.64.0.1', '0.0.0.0', '198.51.100.5', '203.0.113.2',
-    '::1', 'fe80::1', 'fd00::1', '::ffff:127.0.0.1', '2001:db8::1', 'ff02::1']) {
+    '::1', 'fe80::1', 'fd00::1', '::ffff:127.0.0.1', '2001:db8::1',\n    '2002:c0a8:0101::1', '2001:0:4136:e378:8000:63bf:3fff:fdd2', 'ff02::1']) {
     assert.equal(isPublicAddress(address), false, address);
   }
 });
