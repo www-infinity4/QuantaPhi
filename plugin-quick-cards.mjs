@@ -1,7 +1,7 @@
 import {PLUGIN_QUICK_CARDS,PLUGIN_CATEGORIES,pluginQuickCard} from './plugin-quick-card-catalog.mjs';
 import {createCardArtwork} from './quanta-card-experience.mjs';
 import {mountCardActions} from './quanta-card-actions.mjs';
-import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
+import {checkCardWebsiteReadiness,showCardWebsiteResults} from './tinyfish-card-reader.mjs';
 const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
 const params=new URLSearchParams(location.search);
 const filterInput=document.getElementById('iqpFilter');
@@ -61,11 +61,21 @@ function render(updateUrl=false){
   searchForm.append(query,searchButton);
   const controls=el('div','iqp-actions');controls.append(readButton);
   const results=el('div','iqp-public-results');results.hidden=true;results.setAttribute('aria-live','polite');
+  let verifiedReader=false;
   const run=async(action,term='')=>{
    readButton.disabled=searchButton.disabled=true;results.hidden=false;
-   try{await showCardWebsiteResults(results,card.id,action,term)}
-   catch{/* Verified reader renders its own error; never substitute an invented result. */}
-   finally{readButton.disabled=searchButton.disabled=false}
+   try{
+    if(!verifiedReader){
+     results.replaceChildren(el('p','iqp-message','Checking the website reader connection…'));
+     await checkCardWebsiteReadiness(card.id);
+     verifiedReader=true;
+    }
+    await showCardWebsiteResults(results,card.id,action,term);
+   }catch(error){
+    // Read failures are already shown by the reader. A capability failure
+    // instead reports its real blocker; never invent a website receipt.
+    if(!verifiedReader)results.replaceChildren(el('p','iqp-message',String(error.message||'Website reader is unavailable.')));
+   }finally{readButton.disabled=searchButton.disabled=false}
   };
   readButton.addEventListener('click',()=>run('inspect'));
   searchForm.addEventListener('submit',event=>{
