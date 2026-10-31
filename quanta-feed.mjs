@@ -93,7 +93,7 @@ function renderHome(){
  const refresh=()=>renderHome();
  host.replaceChildren();
  const heading=create('div','qf-heading');
- heading.append(create('p','qf-eyebrow','QUANTAPHI · DISCOVER'),create('h2','','Explore cards made for interaction'),create('p','qf-muted','Browse every card, explore suggestions based on what you open, or keep your followed cards together.'));
+ heading.append(create('p','qf-eyebrow','QUANTAPHI · DISCOVER'),create('h2','','Explore cards made for interaction'),create('p','qf-muted','Discover new cards here. Followed cards move to Following; For You recommends other unfollowed experiences.'));
  host.append(heading);
  const search=create('input','qf-search');search.type='search';search.placeholder='Search QuantaPhi cards, radios, coins, science…';
  search.autocomplete='off';search.value=query;search.setAttribute('aria-label','Search QuantaPhi cards');
@@ -121,7 +121,7 @@ function renderHome(){
  const grid=create('div','qf-grid');grid.id='quantaFeedGrid';host.append(grid);
  const more=create('button','qf-more','Show more cards');more.type='button';
  more.addEventListener('click',()=>{showCount+=16;renderResults(false);});host.append(more);
- const privacy=create('p','qf-muted qf-note','For You uses signed-in Quant search interests when available and otherwise this browser’s card interactions. Following is saved on this device for now; cross-device wallet sync is not yet enabled. No banking or brokerage credentials are read or saved by this feed.');
+ const privacy=create('p','qf-muted qf-note','For You uses signed-in Quant search interests when available and otherwise this browser’s card interactions. Following is stored only in this browser; cross-device wallet sync is not yet enabled. No banking or brokerage credentials are read or saved by this feed.');
  host.append(privacy);
  function renderResults(nextCard){
   const ranked=feedCandidates(ALL_FEED_CARDS,tab,ranking(),query);
