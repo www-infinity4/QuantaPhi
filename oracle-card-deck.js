@@ -114,6 +114,8 @@ const spotlightRequested=(()=>{try{
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
 let active=null,expanded=false;
+// Must initialize before early source-card registration can open a card.
+let postTurns=0;
 // Must be ready before early registerSourceCards() invokes start().
 let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
@@ -258,8 +260,7 @@ function presentOriginal(entry){
  const text=document.createElement('div'),brand=document.createElement('small'),title=document.createElement('h2'),copy=document.createElement('p');
  brand.textContent='QUANTAPHI ORIGINAL · INFINITY 2026®';title.textContent=cover[0];copy.textContent=cover[1];
  text.append(brand,title,copy);header.append(image,text);entry.node.prepend(header);
-}
-let postTurns=0;
+} 
 function updateCardPost(entry){
  if(!entry||entry===profileEntry)return;
  let note=stage.querySelector('[data-oracle-post]');
