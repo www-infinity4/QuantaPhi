@@ -114,8 +114,12 @@ export async function githubCopilotRequest({accessToken,repository,action,prompt
    const stamp=Date.parse(review.submitted_at||'')||0;
    if(!previous||stamp>=previous.stamp)latestByReviewer.set(reviewer,{stamp,review});
   }
-  if(![...latestByReviewer.entries()].some(([reviewer,{review}])=>
-    reviewer!==pr.user?.login&&review.state==='APPROVED'&&review.commit_id===pr.head.sha))
+  // A separate reviewer's unresolved CHANGES_REQUESTED is a veto, even if
+  // another reviewer approved this exact head. GitHub branch protection may
+  // impose additional gates, but this first-party merge route must fail closed.
+  if([...latestByReviewer.values()].some(({review})=>review.state==='CHANGES_REQUESTED')||
+     ![...latestByReviewer.entries()].some(([reviewer,{review}])=>
+       reviewer!==pr.user?.login&&review.state==='APPROVED'&&review.commit_id===pr.head.sha))
    throw Error('merge_independent_review_required');
   if(!Array.isArray(runs)||runs.length<1||Number(checks.total_count)>100||
      runs.some(r=>r.status!=='completed'||r.conclusion!=='success')||
