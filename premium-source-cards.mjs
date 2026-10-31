@@ -43,7 +43,7 @@ async function lookup(card,query){
  const result={time:Date.now(),rows:rows.slice(0,12)};cache.set(key,result);return result;
 }
 export function mountPremiumCard(card){
- const article=make('article','iqc-card premium-card');article.dataset.sourceId=card.id;article.dataset.sourceName=card.name;article.dataset.sourceReady='true';article.style.setProperty('--premium-accent',card.color);
+ const article=make('article','iqc-card premium-card');article.dataset.sourceId=card.id;article.dataset.sourceName=card.name;article.dataset.sourceReady='true';article.dataset.official=card.official;article.dataset.sourceCategory=card.category;article.dataset.sourceQuery=card.query;article.style.setProperty('--premium-accent',card.color);
  const header=make('header','premium-heading');header.append(make('p','iqc-kind',card.category+' · INFINITY 2026®'),make('h2','',card.name));
  const identity=make('a','premium-origin',new URL(card.official).hostname);identity.href=card.official;identity.target='_blank';identity.rel='noopener noreferrer';header.append(identity);
  const browse=make('a','premium-browse-source','Explore '+card.name+' listings ↗');browse.href=card.official;browse.target='_blank';browse.rel='noopener noreferrer';header.append(browse);
