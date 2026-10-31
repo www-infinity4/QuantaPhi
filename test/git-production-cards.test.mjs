@@ -95,3 +95,12 @@ test('Gitcoin code-line report requires merged SHA evidence, excludes docs and b
  assert.equal(result.walletVerified,false);
  assert.equal(result.merges[0].mergeCommitSha,sha);
 });
+
+test('Gitpal never hands stale PR evidence from another account, repository or PR to AI',()=>{
+ assert.match(moduleSource,/let selectionVersion=0,evidenceSource=null/);
+ assert.match(moduleSource,/version!==selectionVersion\|\|active\?\.id!==selection\.account/);
+ assert.match(moduleSource,/Repository or PR changed; stale evidence discarded/);
+ assert.match(moduleSource,/evidenceSource\.account!==active\?\.id\|\|evidenceSource\.repo!==repos\.value/);
+ assert.match(moduleSource,/evidenceSource\.pr!==selectedPr\(\)\|\|evidenceSource\.version!==selectionVersion/);
+ assert.match(moduleSource,/if\(version!==selectionVersion\|\|!active\|\|active\.id!==accountId\|\|repos\.value!==r\.name\)return/);
+});
