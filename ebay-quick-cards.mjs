@@ -72,6 +72,7 @@ if(host){
    const meta=make('div',undefined,'eqc-meta');
    if(item.bidCount!==null&&mode==='auction')meta.append(make('span',item.bidCount+' bids'));
    if(item.seller)meta.append(make('span','Seller · '+item.seller));
+   if(item.shipping)meta.append(make('span',item.shipping));
    if(item.sellerFeedback!==null&&item.sellerFeedback!==undefined)meta.append(make('span','Positive seller feedback · '+item.sellerFeedback+'%'));
    if(item.topRated)meta.append(make('span','eBay Top Rated Plus buying experience'));
    if(item.condition)meta.append(make('span',item.condition));
