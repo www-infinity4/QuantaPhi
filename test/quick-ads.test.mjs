@@ -25,6 +25,7 @@ test('officially ended World Series switches to first-party, unpaid Infinity hou
  assert.deepEqual(eligibleQuickAds(HOUSE_START).map(a=>a.id),HOUSE_ADS.map(a=>a.id));
  assert.equal(eligibleQuickAds(GAME_START).length,QUICK_ADS.length);
  for(const ad of HOUSE_ADS){
+  assert.equal(isOfficialUrl(ad.href,ad.id),true,'house spots require the same exact reviewed destinations as merchants');
   const url=new URL(ad.href);
   assert.equal(url.origin,'https://quantaphi.org','house campaign cannot send traffic to merchants');
   assert.ok(['/infinity-accepted.html','/infinity-affiliates.html'].includes(url.pathname));
@@ -32,6 +33,8 @@ test('officially ended World Series switches to first-party, unpaid Infinity hou
   assert.equal(url.hash,'');
   assert.ok(!/paid|sponsor|commission|partner/i.test(ad.tagline));
  }
+ assert.equal(isOfficialUrl(HOUSE_ADS[0].href,HOUSE_ADS[1].id),false,'one house destination cannot borrow another spot identity');
+ assert.equal(isOfficialUrl(HOUSE_ADS[0].href+'?redirect=https://example.org',HOUSE_ADS[0].id),false);
  const seen=new Set(),counts={},recent=[];
  for(let i=0;i<HOUSE_ADS.length;i++){
   const next=chooseQuickAd({category:'shopping'},counts,recent,HOUSE_START);
@@ -80,10 +83,20 @@ test('prospective independent-site ads have unique ids and legitimate HTTPS dest
  assert.equal(new Set(QUICK_ADS.map(a=>a.id)).size,QUICK_ADS.length);
  for(const ad of QUICK_ADS){
   assert.ok(ad.name&&ad.tagline&&ad.category&&/^#[a-fA-F0-9]{6}$/.test(ad.tone));
-  assert.equal(isOfficialUrl(ad.href),true);
+  assert.equal(isOfficialUrl(ad.href,ad.id),true);
  }
- assert.equal(isOfficialUrl('javascript:alert(1)'),false);
- assert.equal(isOfficialUrl('https://user:pass@example.com'),false);
+ assert.equal(isOfficialUrl('javascript:alert(1)','google'),false);
+ assert.equal(isOfficialUrl('https://user:pass@example.com','google'),false);
+ // Official brand association must be checked independently of HTTPS syntax.
+ assert.equal(isOfficialUrl('https://www.google.com/','google'),true);
+ assert.equal(isOfficialUrl('https://www.google.com/','apple-iphone'),false);
+ assert.equal(isOfficialUrl('https://google.com.evil.example/','google'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/?redirect=https://evil.example','google'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/#other','google'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/','unreviewed-brand'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/','__proto__'),false);
+ assert.match(source('quick-ads.mjs'),/Independent website spotlight · not a paid ad/);
  assert.ok(QUICK_ADS.every(a=>!/budweiser|corona|kalshi|polymarket/i.test(a.name)));
 });
 test('replacement ad rotates through every unseen website before recycling',()=>{

@@ -74,9 +74,41 @@ export function quickAdPacingAllows(now,state={},suppressedUntil=0){
 export function inGameWindow(now=Date.now()){
  return Number.isFinite(now)&&now>=CAMPAIGN_START&&now<=GAME_END;
 }
-export function isOfficialUrl(href){
- try{const u=new URL(href);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.');}
- catch{return false;}
+// Deliberately separate from QUICK_ADS: a new ad needs a reviewed, exact official
+// destination. A syntactically valid HTTPS link alone is not brand verification.
+const REVIEWED_AD_DESTINATIONS=Object.freeze({
+ 'capital-one':'https://www.capitalone.com/',
+ 't-mobile':'https://www.t-mobile.com/',
+ 'google-cloud':'https://cloud.google.com/',
+ 'apple-tv':'https://tv.apple.com/',
+ 'mastercard':'https://www.mastercard.com/',
+ 'att':'https://www.att.com/',
+ 'starbucks':'https://www.starbucks.com/',
+ 'liberty-mutual':'https://www.libertymutual.com/',
+ 'progressive':'https://www.progressive.com/',
+ 'fox-nation':'https://nation.foxnews.com/',
+ 'fox-shows':'https://www.fox.com/',
+ 'mlb-shop':'https://www.mlbshop.com/',
+ 'mlb':'https://www.mlb.com/postseason',
+ 'fox-sports':'https://www.foxsports.com/mlb',
+ 'youtube':'https://www.youtube.com/',
+ 'google':'https://www.google.com/',
+ 'best-buy':'https://www.bestbuy.com/',
+ 'ebay':'https://www.ebay.com/',
+ 'walmart':'https://www.walmart.com/',
+ 'apple-iphone':'https://www.apple.com/iphone/',
+ 'helzberg':'https://www.helzberg.com/',
+ 'infinity-affiliates':'https://quantaphi.org/infinity-affiliates.html',
+ 'infinity-accepted-house':'https://quantaphi.org/infinity-accepted.html',
+ 'infinity-affiliates-house':'https://quantaphi.org/infinity-affiliates.html',
+});
+export function isOfficialUrl(href,id){
+ if(typeof id!=='string'||!Object.hasOwn(REVIEWED_AD_DESTINATIONS,id))return false;
+ try{
+  const u=new URL(href);
+  return u.protocol==='https:'&&!u.username&&!u.password&&
+   u.href===REVIEWED_AD_DESTINATIONS[id];
+ }catch{return false;}
 }
 export function gameLiveStatus(payload){
  const games=(payload?.dates||[]).flatMap(d=>Array.isArray(d.games)?d.games:[]);
@@ -94,7 +126,7 @@ export function gameLiveStatus(payload){
 export function eligibleQuickAds(now=Date.now()){
  const campaign=quickAdCampaign(now);
  const ads=campaign==='world-series'?QUICK_ADS:campaign==='infinity-house'?HOUSE_ADS:[];
- return ads.filter(a=>isOfficialUrl(a.href));
+ return ads.filter(a=>isOfficialUrl(a.href,a.id));
 }
 // Session-first rotation: never replay the same ad while a different unseen one
 // exists, then restart the queue with adjacent/topic relevance and view penalty.

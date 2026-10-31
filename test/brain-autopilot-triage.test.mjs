@@ -40,3 +40,15 @@ test('private project instructions never enter triage receipts, and triage canno
  assert.equal(result.counts.owner_or_security_decision,1);
  assert.doesNotMatch(JSON.stringify([...h.memory]),/PRIVATE conversation contents/);
 });
+
+test('triage labels missing immutable edit-path evidence as engineering work, not owner consent',async()=>{
+ const summary='Reader blocker: owner_input_required: The failure report does not specify which repository file triggered the “Edit must match immutable source exactly once” error.';
+ const h=harness([row('source',1,[{id:'TASK-2',status:'blocked',progress:{summary}}]),
+  row('owner',2,[{id:'TASK-3',status:'blocked',progress:{summary:summary+' Owner approval required for wallet access.'}}])]);
+ const result=await triageBacklog(h.db,h.storage,owner,{batchSize:5,now:1000});
+ assert.equal(workBucket({status:'blocked',progress:{summary}}),'technical_source_diagnosis');
+ assert.equal(result.counts.technical_source_diagnosis,1);
+ assert.equal(result.counts.owner_or_security_decision,1);
+ assert.equal(result.executionVerified,false);
+ assert.equal(result.runnerDispatchRequested,false);
+});
