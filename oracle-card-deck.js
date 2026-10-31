@@ -115,7 +115,7 @@ let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
 let active=null,expanded=false;
 // Must initialize before early source-card registration can open a card.
-let postTurns=0;
+let postTurns=new Map();
 // Must be ready before early registerSourceCards() invokes start().
 let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
@@ -276,13 +276,21 @@ function updateCardPost(entry){
  let note=stage.querySelector('[data-oracle-post]');
  if(!note){note=document.createElement('p');note.className='oracle-card-post-note';
   note.dataset.oraclePost='true';stage.append(note);}
+ const topic=String(entry.category||'Discovery').slice(0,60);
+ const feature=String(entry.feature||'Explore a working Quick Card').slice(0,160);
+ const title=String(entry.title||'QuantaPhi Quick Card').slice(0,100);
+ // These are QuantaPhi-authored editorial prompts, not provider quotes,
+ // current promotions or fabricated product offers.
  const moments=[
-  'Explore this experience using its original controls.',
-  'Save it to Following to keep it with your favorite cards.',
-  'Share a useful discovery or collect the card for later.',
-  'Discover another interactive card whenever you are ready.'
+  'Explore '+title+' · '+feature,
+  'Inside this '+topic+' card · '+feature,
+  'Keep '+title+' handy: Follow saves this interactive card.',
+  'Another useful direction in '+topic+' · Use the original controls or discover the next card.'
  ];
- note.textContent='INFINITY® CARD POST · '+moments[(postTurns++)%moments.length];
+ const id=entry.feedId||entry.id,turn=postTurns.get(id)||0;
+ note.textContent='INFINITY® EDITORIAL CARD POST · '+moments[turn%moments.length];
+ note.dataset.cardId=id;
+ postTurns.set(id,turn+1);
 }
 function predict(){
  updateInventory();
