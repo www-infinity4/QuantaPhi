@@ -245,7 +245,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  const begin=ui.indexOf('async function openConversation(id){');
  const end=ui.indexOf('function startConversation(',begin);
  assert.ok(begin>0&&end>begin,'actual History switch handler exists');
- async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false}={}){
+ async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false,cloudEmpty=false}={}){
   let confirmations=0,saves=0,clears=0;
   const original={id:'old_message',role:'user',text:'Important current chat',at:100};
   const ctx={
@@ -257,7 +257,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
    pendingImages:photo?[{id:'photo'}]:[],photoInput:{value:'selected'},photoPreview:{hidden:false},
    saveThread:()=>{saves++;return saveOk},
    readThread:()=>[{id:'saved_123',role:'assistant',text:'Saved earlier turn',at:10}],
-   ownerReady:lateDraft!==null||latePhoto,
+   ownerReady:lateDraft!==null||latePhoto||cloudEmpty,
    conversationApi:async()=>{
     if(lateDraft!==null)ctx.input.value=lateDraft;
     if(latePhoto)ctx.pendingImages.push({id:'new-photo'});
@@ -298,6 +298,9 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  assert.equal(accepted.state.activeThread,'chat_target');
  assert.equal(accepted.state.pendingImages.length,0);
  assert.equal(accepted.state.input.value,'','approved switch must not leak an old draft into another conversation');
+ const cloudEmptyResult=await run({cloudEmpty:true});
+ assert.equal(cloudEmptyResult.result,true,'empty cloud History must not prevent opening a saved local conversation');
+ assert.equal(cloudEmptyResult.state.messages[0]?.text,'Saved earlier turn','an empty cloud response must not replace nonempty saved device History');
  const late=await run({lateDraft:'Typed while cloud History was loading'});
  assert.equal(late.result,false);
  assert.equal(late.clears,0);
