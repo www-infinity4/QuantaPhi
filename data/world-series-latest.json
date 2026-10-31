@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-31T06:46:20.637948Z",
+  "checked_at": "2026-10-31T13:17:44.933980Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
@@ -18,23 +18,23 @@
   ],
   "articles": [
     {
+      "title": "Which long World Series title drought is most likely to end next?",
+      "url": "https://www.mlb.com/news/which-world-series-drought-will-end-next",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-31T12:05:00Z",
+      "summary": "",
+      "author": "Will Leitch",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
       "title": "The most jaw-dropping metrics of the 2026 postseason",
       "url": "https://www.mlb.com/news/top-statcast-moments-2026-mlb-postseason",
       "publisher": "MLB.com",
       "published_at": "2026-10-31T02:26:02Z",
       "summary": "",
       "author": "David Adler",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Which long World Series title drought is most likely to end next?",
-      "url": "https://www.mlb.com/news/which-world-series-drought-will-end-next",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-31T02:24:38Z",
-      "summary": "",
-      "author": "Will Leitch",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
