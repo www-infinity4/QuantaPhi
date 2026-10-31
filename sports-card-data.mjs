@@ -38,6 +38,7 @@ export function mlbGames(data){
   const count=live?['balls','strikes','outs'].filter(k=>numeric(line[k])!==null).map(k=>line[k]+' '+k).join(' · '):'';
   return {id:String(game.gamePk),teams,live,finished,date:game.gameDate,
    status:shorten(game.status?.detailedState||state||'Scheduled')+inning,series:shorten(game.seriesDescription),
+   badge:/postponed|cancel|delayed/i.test(game.status?.detailedState||'')?'UPDATE':live?'LIVE':finished?'FINAL':'SCHEDULED',
    venue:shorten(game.venue?.name),broadcast:shorten((game.broadcasts||[]).map(b=>b.name).filter(Boolean).join(' · ')),
    detail:count||shorten(game.seriesGameNumber?'Series game '+game.seriesGameNumber:''),
    url:Number.isInteger(game.gamePk)&&game.gamePk>0?'https://www.mlb.com/gameday/'+game.gamePk:'https://www.mlb.com/scores'};
@@ -78,15 +79,19 @@ export function mountCurrentSports(host,card){
  const league=card.event?.toLowerCase();if(!['mlb','nfl'].includes(league))return;
  const panel=el('section','vbs-current-scores'),title=el('h4','vbs-news-title','Current '+league.toUpperCase()+' scoreboard');
  const status=el('p','gt-status','Open this card to check the current source scoreboard.'),list=el('div','gt-games'),refresh=el('button','gt-control','Refresh scores');refresh.type='button';
- panel.append(title,status,list,refresh);host.querySelector('.vbs-info')?.prepend(panel);
+ const nav=el('div','gt-toolbar'),previous=el('button','gt-control','‹ Previous game'),position=el('span','gt-date'),next=el('button','gt-control','Next game ›');previous.type=next.type='button';
+ let games=[],selected=0;
+ function draw(){list.replaceChildren();previous.disabled=next.disabled=games.length<2;position.textContent=games.length?(selected+1)+' / '+games.length:'0 games';if(games.length)list.append(renderSportsGame(games[selected]))}
+ previous.addEventListener('click',()=>{selected=(selected-1+games.length)%games.length;draw()});next.addEventListener('click',()=>{selected=(selected+1)%games.length;draw()});
+ nav.append(previous,position,next);panel.append(title,status,list,nav,refresh);host.querySelector('.vbs-info')?.prepend(panel);draw();
  let busy=false,last=0;const visible=()=>!document.hidden&&host.getClientRects().length>0;
  async function load(){if(busy||Date.now()-last<60000)return;busy=true;refresh.disabled=true;
   try{const day=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
    const data=await fetchScoreboard(league,league==='mlb'?day:null);
    if(!visible())return;
-   list.replaceChildren(...data.games.slice(0,6).map(renderSportsGame));last=data.checked;
+   const current=games[selected]?.id;games=data.games;selected=Math.max(0,games.findIndex(g=>g.id===current));draw();last=data.checked;
    status.textContent=(data.games.length?data.games.length+' games returned':'No games returned')+' · source checked '+new Date(data.checked).toLocaleTimeString()+' · '+(league==='mlb'?'MLB':'ESPN')+' data may be delayed';
-  }catch{status.textContent='Scores unavailable. The official scoreboard links below remain available.'}
+  }catch{games=[];selected=0;draw();status.textContent='Scores unavailable. The official scoreboard links below remain available.'}
   finally{busy=false;refresh.disabled=false}
  }
  host.addEventListener('oracle:activate',()=>void load());refresh.addEventListener('click',()=>{last=0;void load()});

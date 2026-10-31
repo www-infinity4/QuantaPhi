@@ -15,6 +15,8 @@ test('MLB exact source innings, R/H/E, pitchers and team image identities stay t
   linescore:{currentInningOrdinal:'3rd',inningHalf:'Top',balls:1,strikes:2,outs:0,teams:{away:{runs:0,hits:1,errors:0}}}}]}]})[0];
  assert.equal(g.teams[0].score,'0');assert.match(g.status,/Top 3rd/);assert.deepEqual(g.teams[0].stats,['R 0','H 1','E 0']);assert.match(g.detail,/0 outs/);
  assert.equal(g.teams[0].logo,'https://www.mlbstatic.com/team-logos/158.svg');assert.match(g.teams[0].leader,/Source Pitcher/);
+ const postponed=mlbGames({dates:[{games:[{gamePk:124,status:{abstractGameState:'Preview',detailedState:'Postponed'}}]}]})[0];
+ assert.equal(postponed.badge,'UPDATE');assert.equal(postponed.live,false);
 });
 test('invalid sources and dates fail, HTTP errors never fabricate a scoreboard',async()=>{
  assert.equal(sportsUrl('https://espn.com.attacker.test/a'),null);assert.throws(()=>scoreboardUrl('other','2026-10-31'));
