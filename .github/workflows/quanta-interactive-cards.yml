@@ -58,6 +58,13 @@ on:
       - 'bubbles-card-catalog.mjs'
       - 'world-series-news.css'
       - 'cardone-capital.html'
+      - 'infinity-coin-cards.html'
+      - 'infinity-coin-cards.mjs'
+      - 'test/infinity-coin-cards.test.mjs'
+      - 'test/infinity-coin-service.test.cjs'
+      - 'quick-card-search-core.mjs'
+      - 'quick-card-search.mjs'
+      - 'workers/quantaphi-site/worker.js'
       - 'test/world-series-news.test.mjs'
       - 'test/test_world_series_sync.py'
       - 'phi-assimilation.js'
@@ -92,6 +99,9 @@ jobs:
       - name: Validate card module syntax
         run: |
           node --check quanta-card-experience.mjs
+          node --check infinity-coin-cards.mjs
+          node --check quick-card-search-core.mjs
+          node --check workers/quantaphi-site/worker.js
           node --check quanta-card-live-source.mjs
           node --check design-lab/power-chain-core.mjs
           node --check design-lab/app.mjs
@@ -119,6 +129,8 @@ jobs:
           node --check world-series-news.mjs
           node --check church-iam-card.js
           node --check phi-assimilation.js
+      - name: Verify Infinity braided coin registry and safe backend diagnostics
+        run: node --test test/infinity-coin-cards.test.mjs test/infinity-coin-service.test.cjs
       - name: Run interactive card regression tests
         run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
       - name: Check Infinity accepted catalog and browser action contracts
