@@ -4,6 +4,8 @@ import {ConsentService} from '../workers/bubbles-connections/consent.mjs';
 import {TokenVault, randomToken} from '../workers/bubbles-connections/vault.mjs';
 import {googleAdapter, githubAdapter} from '../workers/bubbles-connections/providers.mjs';
 import {executeGoogleRead,googleReadURL,selectGoogleResource} from '../workers/bubbles-connections/google-read.mjs';
+import {connectionResult} from '../workers/bubbles-connections/completion.mjs';
+import {checkConnectionSetup} from '../workers/bubbles-connections/setup-check.mjs';
 
 // Serialized transactions model DO atomic storage; failures roll back writes.
 function storage() {
@@ -39,6 +41,17 @@ test('vault encrypts secrets and authenticates user/connection context', async (
   await assert.rejects(new TokenVault({v1:randomToken()},'v1').open(record,'alice/google'));
   assert.deepEqual(await new TokenVault({v1:key,v2:randomToken()},'v2').open(record,'alice/google'),{token:'private-token'});
 });
+
+test('wallet setup probe checks encrypted storage without creating an account or retaining probe data',async()=>{
+ const f=fixture();let checked=0;
+ f.service.adapters.cloudflare={checkClient:async()=>{checked++;return {status:'client_rejected',reason:'cloudflare_exchange_401_invalid_client'};}};
+ const result=await checkConnectionSetup(f.service,{userId:'alice'});
+ assert.deepEqual(result,{vault:'passed',storage:'passed',client:{status:'client_rejected',reason:'cloudflare_exchange_401_invalid_client'},accountVerified:false});
+ assert.equal(checked,1);
+ assert.deepEqual([...f.db.rows.keys()].map(key=>key.split(':').at(-1)),['setup-check-rate']);
+ await assert.rejects(checkConnectionSetup(f.service,{userId:'alice'}),/too_many_requests/);
+ assert.equal(checked,1);
+});
 test('consent state uses PKCE and neither state storage nor response contains raw secrets', async () => {
   const f = fixture(), state = await f.begin();
   const result = await f.finish(state), stored = JSON.stringify([...f.db.rows]);
@@ -70,6 +83,20 @@ test('failed exchange burns state without persisting a connection', async () => 
   await assert.rejects(f.finish(state),/provider_unavailable/);
   await assert.rejects(f.finish(state),/state_invalid_or_used/);
   assert.ok(![...f.db.rows.keys()].some(k=>k.includes(':connection:') || k.includes(':credential:')));
+});
+
+test('external-browser exchange failure survives the RPC boundary and cannot replay a code',async()=>{
+  const f=fixture(),state=await f.begin();let calls=0;
+  f.adapter.exchange=async()=>{calls++;throw Error('cloudflare_exchange_401_invalid_client');};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'one-use-provider-code'});
+  const input={...f.input,state};
+  const result=await connectionResult(()=>f.service.finishHandoff(input));
+  assert.deepEqual(JSON.parse(JSON.stringify(result)),{connectionError:'cloudflare_exchange_401_invalid_client'});
+  assert.equal(calls,1);
+  assert.deepEqual(await f.service.handoffStatus(input),{status:'expired'});
+  assert.deepEqual(await f.service.finishHandoff(input),{status:'expired'});
+  assert.equal(calls,1);
+  assert.ok(![...f.db.rows.keys()].some(key=>key.includes(':connection:')||key.includes(':credential:')||key.includes(':handoff:')));
 });
 test('disconnect deletes credentials and cancels a callback already in flight', async () => {
   const f = fixture(), first = await f.finish(await f.begin()), state = await f.begin();
@@ -276,6 +303,9 @@ test('cross-browser handoff remains bound to the initiating wallet session',asyn
   await assert.rejects(f.service.handoffStatus({...f.input,state,sessionId:'another-session'}),/callback_session_mismatch/);
   await f.service.handoff({userId:'alice',provider:'google',state,code:'provider-code'});
   assert.deepEqual(await f.service.handoffStatus({...f.input,state}),{status:'received'});
+  // Chrome may repeat the exact callback after a redirect; this is harmless
+  // and must not turn a valid initial handoff into a false sign-in failure.
+  assert.deepEqual(await f.service.handoff({userId:'alice',provider:'google',state,code:'provider-code'}),{received:true,duplicate:true});
   await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'replayed'}),/callback_already_received/);
   assert.equal(JSON.stringify([...f.db.rows]).includes('provider-code'),false);
 });

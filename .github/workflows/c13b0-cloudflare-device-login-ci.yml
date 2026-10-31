@@ -1,0 +1,112 @@
+name: C13b0 native Termux Cloudflare device login offline tests
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/c13b0-cloudflare-device-login.py'
+      - '.github/workflows/c13b0-cloudflare-device-login-ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/c13b0-cloudflare-device-login.py'
+      - '.github/workflows/c13b0-cloudflare-device-login-ci.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile and test all-offline device grant and token confidentiality
+        run: |
+          python -m py_compile scripts/c13b0-cloudflare-device-login.py
+          python - <<'PY'
+          import contextlib, importlib.util, io, pathlib, sys
+          path = pathlib.Path("scripts/c13b0-cloudflare-device-login.py")
+          spec = importlib.util.spec_from_file_location("c13b0_device", path)
+          m = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(m)
+          assert m.CLIENT_ID == "54d11594-84e4-41aa-b438-e81b8fa78ee7"
+          assert len(m.SCOPES) == 29
+          original_argv = sys.argv
+          sys.argv = ["c13b0_device"]
+          calls = []
+          secret = "a" * 48
+          saved = []
+          def request(url, payload=None, token=None):
+              calls.append((url, payload, token))
+              if url == m.DEVICE_ENDPOINT:
+                  assert payload["client_id"] == m.CLIENT_ID
+                  assert payload["scope"].endswith("offline_access")
+                  return 200, {"user_code":"TEST-1111","device_code":"private-device-code",
+                               "verification_uri":m.APPROVAL_ENDPOINT,
+                               "expires_in":90,"interval":1}
+              if url == m.TOKEN_ENDPOINT:
+                  assert payload["device_code"] == "private-device-code"
+                  return 200, {"access_token":secret,"expires_in":3600,
+                               "refresh_token":"private-refresh","token_type":"Bearer"}
+              if url == m.API_ROOT + "/user":
+                  assert token == secret
+                  return 200, {"success":True}
+              if url.endswith("/settings"):
+                  return 200, {"success":True}
+              if "/oauth_clients/" in url:
+                  return 403, {"success":False}
+              raise AssertionError("Unexpected network route: "+url)
+          m.request_json=request
+          m.save=lambda d:saved.append(d)
+          m.time.sleep=lambda x:None
+          output=io.StringIO()
+          with contextlib.redirect_stdout(output):
+              assert m.login() == 0
+          assert saved and saved[0]["access_token"] == secret
+          assert "TEST-1111" in output.getvalue()
+          assert "private-device-code" not in output.getvalue()
+          assert secret not in output.getvalue()
+          assert "private-refresh" not in output.getvalue()
+          assert "OAuth Client Read: HTTP 403" in output.getvalue()
+          print("PASS: simulated browser code, OAuth exchange, API identity, scope denial; secrets remain hidden")
+          # Cloudflare is allowed to return a different path on its own
+          # trusted authorization domain. This previously failed before login.
+          def alternative(url, payload=None, token=None):
+              if url == m.DEVICE_ENDPOINT:
+                  return 200, {"user_code":"ALT-789","device_code":"hidden-alt-device",
+                               "verification_uri":"https://dash.cloudflare.com/oauth2/authorize-device?channel=cli",
+                               "expires_in":90,"interval":1}
+              if url == m.TOKEN_ENDPOINT:
+                  return 200, {"access_token":secret,"expires_in":3600,
+                               "refresh_token":"private-refresh","token_type":"Bearer"}
+              if url == m.API_ROOT + "/user":
+                  return 200, {"success":True}
+              return 403, {}
+          m.request_json=alternative
+          printed=io.StringIO()
+          with contextlib.redirect_stdout(printed):
+              assert m.login() == 0
+          assert "ALT-789" in printed.getvalue()
+          assert "https://dash.cloudflare.com/oauth2/authorize-device?channel=cli&user_code=ALT-789" in printed.getvalue()
+          assert "hidden-alt-device" not in printed.getvalue()
+          assert secret not in printed.getvalue()
+          # A malformed response must identify missing code fields without
+          # accidentally printing private keys or credentials.
+          m.request_json=lambda url, payload=None, token=None: (200, {"device_code":"hidden-alt-device","verification_uri":m.APPROVAL_ENDPOINT}) if url == m.DEVICE_ENDPOINT else (500,{})
+          printed=io.StringIO()
+          with contextlib.redirect_stdout(printed):
+              assert m.login() == 3
+          assert "user_code present: False" in printed.getvalue()
+          assert "hidden-alt-device" not in printed.getvalue()
+          # Off-domain server-provided authorization links are rejected.
+          m.request_json=lambda url, payload=None, token=None: (200, {"user_code":"BAD-000","device_code":"hidden-alt-device","verification_uri":"https://evil.example.com/oauth2/device","expires_in":90}) if url == m.DEVICE_ENDPOINT else (500,{})
+          printed=io.StringIO()
+          with contextlib.redirect_stdout(printed):
+              assert m.login() == 3
+          assert "untrusted verification URL" in printed.getvalue()
+          assert "evil.example.com" not in printed.getvalue()
+          print("PASS: different Cloudflare URL paths, missing codes and off-domain URLs handled safely")
+          sys.argv=original_argv
+          PY

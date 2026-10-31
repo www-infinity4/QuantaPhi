@@ -1,0 +1,34 @@
+name: C13b0 Bubbles Cloudflare sign-in live public check
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-signin-gate.mjs'
+      - 'bubbles-connections.mjs'
+      - 'bubbles.html'
+      - 'scripts/c13b0-bubbles-signin-check.py'
+      - '.github/workflows/c13b0-bubbles-login-live-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify served public login, Worker routing, OAuth callback and 386 scopes
+        run: |
+          # Static site deployment and the Cloudflare Worker can converge at
+          # slightly different times. Bounded retries prevent a false "green".
+          for attempt in 1 2 3 4; do
+            if python3 scripts/c13b0-bubbles-signin-check.py; then
+              exit 0
+            fi
+            [ "$attempt" = 4 ] && break
+            sleep 12
+          done
+          echo "::error::Live Bubbles Cloudflare sign-in path is not ready."
+          exit 1

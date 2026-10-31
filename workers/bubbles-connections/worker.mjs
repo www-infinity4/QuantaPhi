@@ -1,25 +1,30 @@
 import {DurableObject} from 'cloudflare:workers';
 import {ConsentService} from './consent.mjs';
 import {TokenVault,digest} from './vault.mjs';
-import {googleAdapter,githubAdapter,cloudflareAdapter} from './providers.mjs';
+import {googleAdapter,githubAdapter,cloudflareAdapter,resolveCloudflareScopeConfig} from './providers.mjs';
 import {executeGoogleRead,selectGoogleResource} from './google-read.mjs';
 import {handleConnections} from './router.mjs';
 import {ConnectorPairing} from './pairing.mjs';
+import {connectionResult} from './completion.mjs';
+import {checkConnectionSetup} from './setup-check.mjs';
+import {walletEmailPreference} from './wallet-email.mjs';
 
 export class UserConnections extends DurableObject {
   constructor(ctx,env) {
     super(ctx,env);
     this.pairing=new ConnectorPairing(ctx.storage);
     const adapters = {};
+    const cloudflareScopes=resolveCloudflareScopeConfig(env);
     if (env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET) adapters.google = googleAdapter({clientId:env.GOOGLE_CLIENT_ID,clientSecret:env.GOOGLE_CLIENT_SECRET,redirectUri:'https://quantaphi.org/api/bubbles/connections/google/callback'});
     if (env.GITHUB_CLIENT_ID && env.GITHUB_CLIENT_SECRET) adapters.github = githubAdapter({clientId:env.GITHUB_CLIENT_ID,clientSecret:env.GITHUB_CLIENT_SECRET,redirectUri:'https://quantaphi.org/api/bubbles/connections/github/callback'});
-    if (env.CLOUDFLARE_CLIENT_ID && env.CLOUDFLARE_CLIENT_SECRET && env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES)
+    if (env.CLOUDFLARE_CLIENT_ID && env.CLOUDFLARE_CLIENT_SECRET && cloudflareScopes)
       adapters.cloudflare = cloudflareAdapter({clientId:env.CLOUDFLARE_CLIENT_ID,clientSecret:env.CLOUDFLARE_CLIENT_SECRET,
-        allowedScopes:env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES,
+        allowedScopes:cloudflareScopes,
         redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'});
     this.service = new ConsentService({storage:ctx.storage,vault:new TokenVault(JSON.parse(env.CONNECTION_KEYRING || '{}'),env.CONNECTION_ACTIVE_KEY),adapters});
   }
   async list(input) {return this.service.list(input);}
+  async walletEmail(input) {return walletEmailPreference(this.service,input);}
   async gateStatus(input) {return this.service.gateStatus(input);}
   async githubRepositories(input) {return this.service.githubRepositories(input);}
   async cloudflareAccounts(input) {return this.service.cloudflareAccounts(input);}
@@ -48,10 +53,27 @@ export class UserConnections extends DurableObject {
     return {userId:record.userId};
   }
   async start(input) {return this.service.start(input);}
-  async handoff(input) {return this.service.handoff(input);}
-  async handoffStatus(input) {return this.service.handoffStatus(input);}
-  async finishHandoff(input) {return this.service.finishHandoff(input);}
-  async complete(input) {try{return await this.service.complete(input);}catch(error){const stage=['state','exchange','seal','store'].includes(error?.connectionStage)?error.connectionStage:'unknown';const kind=error?.name==='TimeoutError'?'timeout':error?.name==='TypeError'?'type':'internal';const message=String(error?.message||'');const point=/github_token_redirect_token/.test(message)?'token_redirect':/github_token_redirect_login/.test(message)?'login_redirect':/github_token_redirect_external/.test(message)?'external_redirect':/github_token_redirect_other/.test(message)?'other_redirect':/Illegal invocation|receiver/i.test(message)?'receiver':/different request|request context/i.test(message)||message.includes('I/O')?'context':/redirect/i.test(message)?'redirect':/header|ByteString|character/i.test(message)?'headers':/URL|scheme/i.test(message)?'url':/timeout|AbortSignal/i.test(message)?'timeout':/fetch|network|connect/i.test(message)?'network':/not a function/i.test(message)?'function':'unknown';return {connectionError:'connection_complete_'+stage+'_'+kind+'_'+point};}}
+  async handoff(input) {
+    try {return await this.service.handoff(input);}
+    catch(error) {
+      // Durable Object RPC must return only non-secret failure categories.
+      // Never send a provider code, state, user ID, encryption record or
+      // underlying exception text to the browser/callback URL.
+      const message=String(error?.message||'');
+      const stage=error?.connectionStage;
+      const failure=message==='state_invalid_or_used'?'state_invalid':
+        message==='callback_already_received'?'conflicting_callback':
+        stage==='handoff_decrypt'?'decrypt':
+        stage==='handoff_encrypt'?'encrypt':
+        stage==='handoff_store'?'storage':
+        'unavailable';
+      return {received:false,failure};
+    }
+  }
+  async handoffStatus(input) {return connectionResult(()=>this.service.handoffStatus(input));}
+  async finishHandoff(input) {return connectionResult(()=>this.service.finishHandoff(input));}
+  async complete(input) {return connectionResult(()=>this.service.complete(input));}
+  async checkSetup(input) {return connectionResult(()=>checkConnectionSetup(this.service,input));}
   async disconnect(input) {return this.service.disconnect(input);}
   async refresh(input) {return this.service.refresh(input);}
   async read(input) {return executeGoogleRead(this.service,input);}

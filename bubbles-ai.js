@@ -523,6 +523,18 @@ async function repairCloudflareConsent(){
  if(embedded||!ownerReady){status.textContent='Verified Bubbles owner access is required for scope sync.';return;}
  try{
   const headers=await verifiedOwnerHeaders();
+  // Read-only preflight first: never ask the owner to confirm a doomed write.
+  const diagRes=await bubblesFetch(BRAIN+'/work/cloudflare/scope-sync-diagnose',{
+   method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body:'{}',cache:'no-store'},18000);
+  const diag=await diagRes.json().catch(()=>({}));
+  if(!diagRes.ok||diag.ok!==true){
+   const code=Array.isArray(diag.providerCodes)&&diag.providerCodes.length?
+     ' / Cloudflare code '+diag.providerCodes.join(','):'';
+   throw Error('Token manager blocked during '+String(diag.stage||'preflight')+
+     ' (HTTP '+String(diag.httpStatus||diagRes.status||'unknown')+code+
+     '). No OAuth client, DNS or wallet change was attempted. '+String(diag.diagnostic||'').slice(0,140));
+  }
   const res=await bubblesFetch(BRAIN+'/work/cloudflare/scope-sync-plan',{
    method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',
    cache:'no-store'},15000);
@@ -531,35 +543,41 @@ async function repairCloudflareConsent(){
   const card=create('div','ba-cloudflare-approval');
   const info=create('p','ba-muted',
    'Repair the existing Bubbles Cloudflare OAuth client '+String(plan.clientIdPrefix||'8f676e')+
-   '. Read the permission list you already selected at Cloudflare and, ONLY IF it contains exactly 386 verified scopes, synchronize Bubbles’ single server-side allowlist. This creates no new OAuth client, changes no DNS, security settings or wallet, and never exposes credentials.');
+   '. Read its registered permission list directly from Cloudflare, then synchronize all verified entries in Bubbles’ server configuration. This creates no new OAuth client, changes no DNS, security settings or wallet, and never exposes credentials.');
   const state=create('p','ba-muted',plan.managerConfigured?
    'Approve the one-time permission sync. Cloudflare signs you in separately only when needed.':
    'Cloudflare token manager is not configured. No changes can be made.');
   state.setAttribute('role','status');
-  const apply=create('button','ba-control','Synchronize 386 Cloudflare permissions');
+  const apply=create('button','ba-control','Synchronize registered Cloudflare permissions');
   const cancel=create('button','ba-control','Cancel');
   apply.type='button';cancel.type='button';apply.disabled=!plan.managerConfigured;
   cancel.onclick=()=>{apply.disabled=true;cancel.disabled=true;state.textContent='Cancelled. Nothing changed.'};
   apply.onclick=async()=>{
    apply.disabled=true;cancel.disabled=true;
-   state.textContent='Checking the existing OAuth client and its 386 scopes directly with Cloudflare…';
+   state.textContent='Checking the existing OAuth client and its registered permissions directly with Cloudflare…';
    try{
     const auth=await verifiedOwnerHeaders();
     const response=await bubblesFetch(BRAIN+'/work/cloudflare/scope-sync-confirm',{
      method:'POST',headers:{...auth,'Content-Type':'application/json'},
      body:JSON.stringify({requestId:plan.requestId}),cache:'no-store'},95000);
     const result=await response.json().catch(()=>({}));
-    if(!response.ok||result.ok!==true)throw Error(String(result.error||'scope_sync_unverified'));
-    const live=result.status==='live_scope_count_verified';
+    if(!response.ok||result.ok!==true){
+     if(result.needsLiveReadback===true){
+      state.textContent='Cloudflare may have applied part of the configuration. Live readback is required before another synchronization; owner consent is still separate.';
+      return;
+     }
+     throw Error(String(result.error||'scope_sync_unverified'));
+    }
+    const live=['live_scope_count_verified','already_synchronized'].includes(result.status);
     state.textContent=live?
      'Verified: Bubbles now requests '+result.serverScopeCount+' registered Cloudflare permissions. Use Sign in with Cloudflare once to review and authorize them.':
      'Scope synchronization submitted. Live readback still pending; do not assume full access yet. Return to Account Connections for a fresh scope count.';
-   }catch(e){state.textContent='Not synchronized: '+String(e.message||e).slice(0,230)+'. No new client was created. Do not retry until the blocker is reviewed.'}
+   }catch(e){state.textContent='Synchronization not verified: '+String(e.message||e).slice(0,230)+'. Check the recorded configuration before retrying. The registered OAuth client was not changed.'}
   };
   card.append(info,state,apply,cancel);conversation.append(card);
   if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;
   status.textContent='Review the one-time Cloudflare permission synchronization.';
- }catch(e){status.textContent='Cloudflare scope repair unavailable: '+String(e.message||e).slice(0,230)}
+ }catch(e){const message='Cloudflare scope repair unavailable: '+String(e.message||e).slice(0,230);status.textContent=message;display(message,'ai');}
 }
 async function setupCloudflareOAuthClient(){
  if(embedded||!ownerReady){status.textContent='Connect verified owner mode to configure the Cloudflare OAuth app.';return;}
@@ -816,7 +834,7 @@ const macroButtons=[
  ['Check GitHub executor','Read the real authenticated GitHub capability or missing-credential error',()=>void sendMessage('check GitHub access')],
  ['Run Python sandbox','Request the pinned GitHub Actions Python fixture, not a phone shell',()=>void sendMessage('run Python sandbox/hello.py')],
  ['Check coder runs','Read actual GitHub Actions sandbox status and receipts',()=>void sendMessage('check coder sandbox results')],
- ['Repair Cloudflare login','Synchronize the existing Bubbles OAuth client’s 386 registered scopes with its current server allowlist',()=>void repairCloudflareConsent()],
+ ['Repair Cloudflare login','Synchronize the existing Bubbles OAuth client’s verified registered scopes with its current server allowlist',()=>void repairCloudflareConsent()],
  ['Cloudflare OAuth setup','Register Bubbles as a private Cloudflare OAuth client using the owner-approved server API',()=>void setupCloudflareOAuthClient()],
  ['Cloudflare token manager','Review and explicitly approve short-lived Cloudflare Worker access without sharing API keys with the APK',()=>void proposeCloudflareWorkerToken()],
  ['Voice','Preview the currently selected speaking voice',()=>previewVoice.click()],
@@ -914,6 +932,11 @@ if(chatGate){
  const retry=create('button','ba-control','Check sign-ins again');
  retry.id='chatBubblesRetrySignInCheck';retry.type='button';
  chatGate.append(retry);
+ const recover=create('a','ba-link','Sign in with StarQuest / restore existing Bubbles account');
+ recover.id='chatBubblesRecoverWallet';recover.href='/wallet-recovery.html?signin=starquest&returnTo=/bubbles.html';recover.hidden=true;
+ const cancel=create('button','ba-control','Cancel sign-in');
+ cancel.id='chatBubblesCancelSignIn';cancel.type='button';cancel.hidden=true;
+ chatGate.append(recover,cancel);
  const repair=create('button','ba-control','Repair Cloudflare permissions');
  repair.type='button';repair.id='chatBubblesRepairCloudflare';
  repair.addEventListener('click',()=>void repairCloudflareConsent());
@@ -923,8 +946,9 @@ async function checkPanelGate(){
  if(!chatGate||chatGateMounted||chatGateLoading)return;
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await Promise.race([import('/bubbles-signin-gate.mjs?v=20261026-full-consent6'),new Promise((_,reject)=>setTimeout(()=>reject(Error('signin_gate_load_timeout')),9000))]);
+  const {mountBubblesSigninGate}=await Promise.race([import('/bubbles-signin-gate.mjs?v=20261029-chat-signin1'),new Promise((_,reject)=>setTimeout(()=>reject(Error('signin_gate_load_timeout')),9000))]);
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
+  if(!chatGateMounted)throw Error('signin_gate_mount_failed');
  }catch{
   const hint=document.getElementById('chatBubblesSigninStatus');
   if(hint)hint.textContent='Sign-in status unavailable. Open Account Connections to continue; chat remains available.';
@@ -1056,7 +1080,41 @@ pluginsButton.addEventListener('click',async()=>{
  }catch{pluginsPanel.textContent='Skill references could not load. Your connections are unchanged.';}
 });
 tools.append(pluginsButton,pluginsPanel);
-tools.addEventListener('toggle',()=>{if(tools.open&&typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));});
+// Private owner setup belongs only in the existing Robot Brain Notes and work.
+// A public link, localStorage flag, profile name or email address is NOT proof.
+// Even if a user manually guesses the destination, its secure server must
+// separately validate the owner wallet before any credential registration.
+const ownerSecurityLink=create('a','ba-control ba-owner-security','Email setup');
+ownerSecurityLink.href='/robot-brain-account-security.html#account-security';
+ownerSecurityLink.rel='nofollow';
+ownerSecurityLink.hidden=true;
+ownerSecurityLink.dataset.ownerOnlyPasskeys='true';
+tools.append(ownerSecurityLink);
+let ownerSecurityChecking=false;
+async function checkOwnerSecurityAccess(){
+ if(embedded||ownerSecurityChecking)return;
+ ownerSecurityChecking=true;
+ try{
+  const gate=window.QuantaBrainOwner;
+  if(typeof gate?.walletIdentity!=='function')return;
+  const result=await gate.walletIdentity();
+  ownerSecurityLink.hidden=result?.state!=='verified'||!tools.open;
+ }catch{ownerSecurityLink.hidden=true;}
+ finally{ownerSecurityChecking=false;}
+}
+ownerSecurityLink.addEventListener('click',async event=>{
+ event.preventDefault();
+ ownerSecurityLink.hidden=true;
+ await checkOwnerSecurityAccess();
+ if(!ownerSecurityLink.hidden)window.location.assign('/robot-brain-account-security.html#account-security');
+});
+window.addEventListener('bubbles:owner-ready',()=>void checkOwnerSecurityAccess());
+tools.addEventListener('toggle',()=>{
+ if(tools.open){
+  void checkOwnerSecurityAccess();
+  if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));
+ }else ownerSecurityLink.hidden=true;
+});
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
 const historyToggle=create('input','');historyToggle.type='checkbox';historyToggle.checked=keepChat;
@@ -1254,7 +1312,7 @@ siteDraftButton.addEventListener('click',()=>{
 const workStatus=create('p','ba-muted',embedded?'This is your website’s independent work draft. It has no access to QuantaPhi owner jobs. Your own verified site adapter must run any requested work.':'Bubbles queues real bot jobs from spoken instructions after owner-wallet verification. Only actual Brain receipts count.');
 workStatus.setAttribute('role','status');
 const toolRail=create('nav','ba-tool-rail');toolRail.setAttribute('aria-label','Infinity builder workspaces');
-for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi','/infinity-phi/'],['Code · Omni Phi','/omni-phi/']]){
+for(const [label,path] of [['Quant Search','/'],['Infinity','/infinity-phi/'],['Omni','/omni-phi/']]){
  const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
 }
 // Chrome is invoked from Bubbles conversation; no extra browser-launch button.
@@ -2693,7 +2751,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   let answer='',readVerified=false;
   try{
    const resp=await bubblesFetch(AI,{method:'POST',
-    headers:{'Content-Type':'application/json'},
+    headers:{'Content-Type':'application/json',
+     ...(!publicPageReadRequested&&!embedded&&ownerReady&&ownerHeaders?.Authorization
+      ?{Authorization:ownerHeaders.Authorization}:{})},
     body:JSON.stringify({request,requestId:crypto.randomUUID()})},30000);
    const result=await resp.json();
    if(!resp.ok||result.receipt?.tool!==expectedReadTool||result.receipt?.status!=='complete'||
@@ -3446,6 +3506,86 @@ resolveRoutineNow.type='button';
 ownerDecisionDrawer.append(ownerDecisionSummary,ownerDecisionIntro,
  resolveRoutineNow,ownerDecisionMessage,ownerDecisionList);
 tools.append(ownerDecisionDrawer);
+// 2026 button viewer. Keep the existing Notes/settings controls and all their
+// event listeners: move DOM nodes, never replace them or recreate wallet state.
+// The single existing Email setup link stays in the chat Notes bar.
+const toolsViewerButton=create('button','ba-control ba-tools-viewer-launch','Open Notes & tools');
+toolsViewerButton.type='button';
+toolsViewerButton.setAttribute('aria-haspopup','dialog');
+toolsViewerButton.setAttribute('aria-expanded','false');
+const toolsViewer=create('section','ba-tools-viewer');
+toolsViewer.hidden=true;
+toolsViewer.setAttribute('role','dialog');
+toolsViewer.setAttribute('aria-modal','true');
+toolsViewer.setAttribute('aria-label','Bubbles notes and tools viewer');
+toolsViewer.setAttribute('tabindex','-1');
+const viewerHeader=create('header','ba-tools-viewer-header');
+const viewerTitle=create('h2','','Notes & tools');
+const viewerClose=create('button','ba-tools-viewer-close','×');
+viewerClose.type='button';viewerClose.setAttribute('aria-label','Close Notes and tools viewer');
+viewerHeader.append(viewerTitle,viewerClose);
+const viewerContent=create('div','ba-tools-viewer-content');
+// All existing Notes, Infinity, Omni, Quant Search, settings, checkboxes,
+// repository targets and Brain tools now belong to this single button viewer.
+for(const child of [...tools.children]){
+ if(child===summary||child===ownerSecurityLink)continue;
+ viewerContent.append(child);
+}
+toolsViewer.append(viewerHeader,viewerContent);
+document.body.append(toolsViewer);
+tools.append(toolsViewerButton);
+let viewerLastFocus=null;
+function enhanceSettingsCheckboxes(){
+ for(const check of viewerContent.querySelectorAll('input[type="checkbox"]')){
+  if(check.dataset.clearControl==='ready')continue;
+  check.dataset.clearControl='ready';
+  check.setAttribute('aria-label',check.getAttribute('aria-label')||
+    check.closest('label')?.textContent.trim()||'Setting');
+  const clear=create('button','ba-setting-clear','×');
+  clear.type='button';clear.setAttribute('aria-label','Uncheck setting');
+  const render=()=>{clear.hidden=!check.checked||check.disabled;};
+  clear.addEventListener('click',event=>{
+   event.preventDefault();event.stopPropagation();
+   if(check.disabled)return;
+   check.checked=false;
+   check.dispatchEvent(new Event('change',{bubbles:true}));
+   render();
+  });
+  check.addEventListener('change',render);
+  const label=check.closest('label');
+  // Keep clear action outside its label so tapping X never toggles it again.
+  if(label&&viewerContent.contains(label))label.insertAdjacentElement('afterend',clear);
+  else check.insertAdjacentElement('afterend',clear);
+  render();
+ }
+}
+function closeNotesViewer(){
+ toolsViewer.hidden=true;
+ toolsViewerButton.setAttribute('aria-expanded','false');
+ document.body.classList.remove('ba-viewer-active');
+ if(viewerLastFocus?.isConnected)viewerLastFocus.focus();
+}
+function openNotesViewer(){
+ viewerLastFocus=document.activeElement;
+ enhanceSettingsCheckboxes();
+ toolsViewer.hidden=false;
+ toolsViewerButton.setAttribute('aria-expanded','true');
+ document.body.classList.add('ba-viewer-active');
+ viewerClose.focus();
+}
+toolsViewerButton.addEventListener('click',()=>openNotesViewer());
+viewerClose.addEventListener('click',closeNotesViewer);
+toolsViewer.addEventListener('keydown',event=>{
+ if(event.key==='Escape'){event.preventDefault();closeNotesViewer();return;}
+ if(event.key!=='Tab')return;
+ const focusable=[...toolsViewer.querySelectorAll('button:not([hidden]):not(:disabled),a[href]:not([hidden]),input:not([hidden]):not(:disabled),select:not([hidden]):not(:disabled),textarea:not([hidden]):not(:disabled),summary')]
+  .filter(el=>el.getClientRects().length>0);
+ if(!focusable.length)return;
+ const first=focusable[0],last=focusable.at(-1);
+ if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+ else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+});
+// The email action remains uniquely linked to verified Robot Brain owner access.
 let routineDecisionBusy=false,lastOwnerApprovalTickets=[];
 async function resolveRoutineOwnerDecisions(tickets){
  if(embedded||!ownerReady||routineDecisionBusy)return;

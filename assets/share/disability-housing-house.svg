@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="310" viewBox="0 0 380 310" role="img" aria-label="Home with a green check mark">
+ <defs><linearGradient id="wall" x2=".5" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e5f0f7"/></linearGradient><linearGradient id="roof" x2="1" y2="1"><stop stop-color="#1599d8"/><stop offset="1" stop-color="#0962b2"/></linearGradient><linearGradient id="door" x2=".5" y2="1"><stop stop-color="#1c8ccc"/><stop offset="1" stop-color="#0764aa"/></linearGradient></defs>
+ <circle cx="199" cy="151" r="116" fill="#d7ebf7"/><circle cx="285" cy="78" r="20" fill="#f9fdff"/><path d="M61 121h61a15 15 0 0 0-29-5 11 11 0 0 0-22 0 8 8 0 0 0-10 5" fill="#fff"/>
+ <ellipse cx="194" cy="266" rx="131" ry="15" fill="#a5cbdf" opacity=".42"/>
+ <path d="M112 140l91-70 89 70v113H112z" fill="url(#wall)" stroke="#adcfe3" stroke-width="2"/>
+ <path d="M203 70l89 70v113h-35V145z" fill="#d6e8f3"/>
+ <path d="M124 131l78-61 77 61" fill="none" stroke="#f4fbff" stroke-width="22" stroke-linejoin="round"/>
+ <path d="M96 147L201 63l105 84-14 17-91-72-91 72z" fill="url(#roof)"/>
+ <path d="M244 76h26v35l-26-20z" fill="#1672b4"/>
+ <rect x="128" y="158" width="45" height="48" rx="7" fill="#c0e9fc" stroke="#fff" stroke-width="7"/><path d="M151 159v45m-23-22h45" stroke="#fff" stroke-width="4"/>
+ <path d="M203 251v-70a19 19 0 0 1 38 0v70z" fill="url(#door)"/><circle cx="230" cy="213" r="3" fill="#f4d78f"/>
+ <path d="M197 252h51l7 10h-64z" fill="#a9c8dc"/><path d="M96 252h206" stroke="#77b79a" stroke-width="4" stroke-linecap="round"/>
+ <path d="M92 249v-37" stroke="#477e69" stroke-width="4"/><circle cx="91" cy="204" r="17" fill="#67bd97"/><circle cx="82" cy="219" r="17" fill="#47a681"/><circle cx="99" cy="221" r="15" fill="#7ac6a3"/>
+ <path d="M280 254v-21" stroke="#4a9372" stroke-width="4"/><ellipse cx="271" cy="237" rx="10" ry="6" transform="rotate(35 271 237)" fill="#65b791"/>
+ <circle cx="291" cy="188" r="35" fill="#e3f5ed" stroke="#fff" stroke-width="7"/><circle cx="291" cy="188" r="26" fill="#15906b"/><path d="M278 188l9 9 17-19" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M81 77h12m-6-6v12m231 151h12m-6-6v12" stroke="#74b5d5" stroke-width="3" stroke-linecap="round"/>
+</svg>

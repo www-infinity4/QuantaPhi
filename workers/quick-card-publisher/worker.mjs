@@ -14,6 +14,8 @@ export function youtubeId(url){try{const u=new URL(url);const h=u.hostname.toLow
 export function normalizeCard(input){
  const title=text(input?.title,85),description=text(input?.description,600),interactionRequest=text(input?.interactionRequest,500);
  const website=safeUrl(input?.website),image=safeUrl(input?.image||''),kind=text(input?.kind,25);
+ const previewMode=input?.previewMode==='visual'?'visual':'interactive';
+ if(input?.image&&(!image||(!/\.(?:png|jpe?g|gif|webp)$/i.test(new URL(image).pathname)&&!(new URL(image).hostname==='lsco.scene7.com'&&new URL(image).pathname.startsWith('/is/image/')))))return {error:'Use a public HTTPS PNG, JPG, WebP or GIF image URL you may share.'};
  if(title.length<3||description.length<12||interactionRequest.length<10||!website)return {error:'A title, official HTTPS website, description and interaction request are required.'};
  if(!['search','visit','video'].includes(kind))return {error:'Select a supported interaction.'};
  let searchTemplate='',videoId='';
@@ -24,26 +26,30 @@ export function normalizeCard(input){
   if(!probe||new URL(probe).hostname!==new URL(website).hostname)return {error:'Search must use a confirmed URL on the same website; Bubbles cannot invent a site API.'};
  }
  if(kind==='video'){videoId=youtubeId(text(input?.video,500));if(!videoId)return {error:'Use a valid public YouTube URL for the video player.'};}
- return {card:{title,description,interactionRequest,website,image,kind,searchTemplate,videoId}};
+ return {card:{title,description,interactionRequest,website,image,kind,searchTemplate,videoId,previewMode}};
 }
 export const publicCard=row=>({
  slug:row.slug,title:row.title,description:row.description,interactionRequest:row.interaction_request,
  website:row.website,image:row.image||'',kind:row.kind,searchTemplate:row.search_template||'',
- videoId:row.video_id||'',status:row.status,createdAt:row.created_at,cardUrl:origin+'/cards/'+row.slug
+ videoId:row.video_id||'',previewMode:row.preview_mode==='visual'?'visual':'interactive',
+ status:row.status,createdAt:row.created_at,cardUrl:origin+'/cards/'+row.slug
 });
 export function cardHtml(row){
  const card=publicCard(row), url=card.cardUrl;
  const title=htmlEscape(card.title),desc=htmlEscape(card.description),share=htmlEscape(url),
- img=htmlEscape(card.image||origin+'/preview.png');
+ img=htmlEscape(card.image);
  const noindex=card.status==='approved'?'index,follow':'noindex,follow';
  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+
  '<title>'+title+' · QuantaPhi Quick Card</title><meta name="description" content="'+desc+'">'+
  '<meta name="robots" content="'+noindex+'"><link rel="canonical" href="'+share+'">'+
  '<meta property="og:type" content="website"><meta property="og:site_name" content="QuantaPhi"><meta property="og:title" content="'+title+' · Quick Card">'+
- '<meta property="og:description" content="'+desc+'"><meta property="og:url" content="'+share+'"><meta property="og:image" content="'+img+'">'+
- '<meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="/published-quick-card.css?v=2">'+
+ '<meta property="og:description" content="'+desc+'"><meta property="og:url" content="'+share+'">'+
+ (img?'<meta property="og:image" content="'+img+'"><meta property="og:image:alt" content="'+title+' Quick Card image">':'')+
+ '<meta name="twitter:card" content="'+(img?'summary_large_image':'summary')+'"><meta name="twitter:title" content="'+title+' · Quick Card"><meta name="twitter:description" content="'+desc+'">'+
+ (img?'<meta name="twitter:image" content="'+img+'"><meta name="twitter:image:alt" content="'+title+' Quick Card image">':'')+
+ '<link rel="stylesheet" href="/published-quick-card.css?v=3">'+
  '</head><body><main id="publishedQuickCard" data-card-slug="'+htmlEscape(card.slug)+'"><p role="status">Loading Quick Card…</p></main>'+
- '<script type="module" src="/published-quick-card.js?v=2"></script></body></html>';
+ '<script type="module" src="/published-quick-card.js?v=3"></script></body></html>';
 }
 function validOrigin(request){const source=request.headers.get('Origin');return source===origin||source==='https://www.quantaphi.org';}
 export default {async fetch(request,env){
@@ -67,8 +73,8 @@ export default {async fetch(request,env){
    const tail=[...crypto.getRandomValues(new Uint8Array(5))].map(b=>b.toString(16).padStart(2,'0')).join('');
    const slug=slugBase+'-'+tail,stamp=new Date().toISOString(),c=norm.card;
    await db.batch([
-    db.prepare("INSERT INTO quick_cards (slug,title,description,interaction_request,website,image,kind,search_template,video_id,status,created_at) VALUES (?,?,?,?,?,?,?,?,?,'unlisted',?)")
-      .bind(slug,c.title,c.description,c.interactionRequest,c.website,c.image,c.kind,c.searchTemplate,c.videoId,stamp),
+    db.prepare("INSERT INTO quick_cards (slug,title,description,interaction_request,website,image,kind,search_template,video_id,preview_mode,status,created_at) VALUES (?,?,?,?,?,?,?,?,?,?,'unlisted',?)")
+      .bind(slug,c.title,c.description,c.interactionRequest,c.website,c.image,c.kind,c.searchTemplate,c.videoId,c.previewMode,stamp),
     db.prepare("INSERT INTO card_publish_limits(day,ip_hash,count) VALUES (?,?,1) ON CONFLICT(day,ip_hash) DO UPDATE SET count=count+1").bind(day,bucket)
    ]);
    return json({ok:true,slug,cardUrl:origin+'/cards/'+slug,status:'unlisted',discovery:'Submitted for moderation. Your card link works immediately.'},201);
@@ -84,7 +90,8 @@ export default {async fetch(request,env){
   const row=await db.prepare('SELECT * FROM quick_cards WHERE slug=?').bind(match[1]).first();
   if(!row||row.status==='removed')return json({ok:false,error:'Card not found.'},404);
   if(path.startsWith('/api/'))return json({ok:true,card:publicCard(row)});
-  if(match[2]==='manifest.json')return json({name:row.title,description:row.description,website:row.website,interaction:row.kind,canonical:origin+'/cards/'+row.slug,status:row.status});
+  if(match[2]==='manifest.json')return json({name:row.title,description:row.description,website:row.website,interaction:row.kind,previewMode:row.preview_mode==='visual'?'visual':'interactive',
+   canonical:origin+'/cards/'+row.slug,status:row.status});
   const html=cardHtml(row);
   return new Response(method==='HEAD'?null:html,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'public, max-age=60','x-content-type-options':'nosniff','content-security-policy':"default-src 'none'; script-src 'self'; style-src 'self'; img-src https: data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; form-action 'none'; base-uri 'none'; frame-ancestors *", 'referrer-policy':'strict-origin-when-cross-origin'}});
  }

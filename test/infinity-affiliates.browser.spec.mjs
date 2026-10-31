@@ -1,0 +1,45 @@
+import {test,expect} from '@playwright/test';
+test.use({viewport:{width:390,height:844}});
+const base='http://127.0.0.1:8799';
+test('Infinity Affiliates mobile card matches approved product and prepares real issue link',async({page})=>{
+ await page.goto(base+'/infinity-affiliates.html',{waitUntil:'domcontentloaded'});
+ const root=page.locator('#infinityAffiliatesStandalone');
+ await expect(root.getByRole('heading',{name:/YOUR PRODUCT/i})).toBeVisible({timeout:20000});
+ await root.locator('#iaProductUrl').fill('https://frame.work/marketplace/parts');
+ await expect(root.locator('#iaMatchResult')).toContainText('Framework Computers');
+ await expect(root.locator('#iaBrandSelect')).toHaveValue('durable-framework-computers');
+ await root.locator('#iaProductName').fill('Modular Framework laptop parts');
+ await root.locator('#iaRationale').fill('I want to publish original guides and link customers to official repair parts.');
+ await root.locator('#iaConsent').check();
+ await root.getByRole('button',{name:/Prepare affiliation request/}).click();
+ const prepared=root.locator('#iaPrepared');
+ await expect(prepared).toBeVisible();
+ const href=await root.locator('#iaSubmitLink').getAttribute('href');
+ const parsed=new URL(href);
+ expect(parsed.hostname).toBe('github.com');
+ expect(parsed.pathname).toBe('/www-infinity4/QuantaPhi/issues/new');
+ expect(parsed.searchParams.get('body')).toContain('PRODUCT NOT REVIEWED');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
+});
+test('wrong-domain product cannot request affiliation for approved brand',async({page})=>{
+ await page.goto(base+'/infinity-affiliates.html?brand=durable-framework-computers',{waitUntil:'domcontentloaded'});
+ const root=page.locator('#infinityAffiliatesStandalone');
+ await root.locator('#iaProductUrl').fill('https://frame.work.evil.example/parts');
+ await root.locator('#iaBrandSelect').selectOption('durable-framework-computers');
+ await root.locator('#iaProductName').fill('Unverified laptop accessory');
+ await root.locator('#iaRationale').fill('Please review the provenance of this product and check the official merchant.');
+ await root.locator('#iaConsent').check();
+ await root.getByRole('button',{name:/Prepare affiliation request/}).click();
+ await expect(root.locator('#iaPrepared')).toBeHidden();
+ await expect(root.locator('#iaFeedback')).toContainText(/must belong to the selected official brand domain/i);
+});
+test('original Oracle carousel accepts a deep link and preserves brand list and controls',async({page})=>{
+ await page.goto(base+'/?card=infinityAffiliates',{waitUntil:'domcontentloaded'});
+ const stage=page.locator('#oracleCardStage');
+ await expect(stage.locator('#infinityAffiliates')).toBeVisible({timeout:20000});
+ await expect(stage.locator('#iaBrandSearch')).toBeVisible();
+ await stage.locator('#iaBrandSearch').fill('Framework');
+ await expect(stage.locator('.ia-brand-button',{hasText:'Framework Computers'})).toBeVisible();
+ await expect(page.locator('#oracleCardNext')).toBeVisible();
+ await expect(page.locator('#oracleCardFollow')).toBeVisible();
+});

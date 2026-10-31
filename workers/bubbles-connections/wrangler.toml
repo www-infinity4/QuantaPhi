@@ -3,9 +3,9 @@ main = "worker.mjs"
 compatibility_date = "2026-10-10"
 keep_vars = true
 
-[vars]
-# Enable only after client registration, keyring provisioning and staging checks.
-CONNECTIONS_READY = "false"
+# CONNECTIONS_READY is managed on the existing deployed Worker.
+# Do not set or reset it here: keep_vars=true preserves the live value.
+# New deployments without the variable remain disabled by default.
 
 [[services]]
 binding = "BOT_WALLET"
@@ -28,7 +28,7 @@ new_sqlite_classes = ["UserConnections"]
 # GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET; and the separate Bubbles public OAuth
 # application CLOUDFLARE_CLIENT_ID, CLOUDFLARE_CLIENT_SECRET. Never reuse
 # ChatGPT's Cloudflare OAuth client, any user's OAuth token, or the owner's GHP.
-# CLOUDFLARE_OAUTH_ALLOWED_SCOPES is a SERVER-ONLY config value listing precisely
-# the scopes pre-registered for the Bubbles OAuth client. Set only after checking
-# that actual client configuration. Without this allowlist, Cloudflare consent
-# stays unavailable instead of entering a repeated ungrantable-scope login loop.
+# The legacy CLOUDFLARE_OAUTH_ALLOWED_SCOPES stays intact until the three
+# CLOUDFLARE_OAUTH_ALLOWED_SCOPES_PART_1..3 secrets are installed from the
+# actual registered 386 scopes (each part below Cloudflare’s 5 KB limit).
+# Source code accepts three parts only when complete and unique; never guess scopes.

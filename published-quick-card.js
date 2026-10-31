@@ -1,5 +1,6 @@
 import {mountCardActions} from '/quanta-card-actions.mjs';
-import {makeShareButton,xShareLink} from '/quick-card-share.js?v=2';
+import {makeShareButton,xShareLink} from '/quick-card-share.js?v=3';
+import {openQuickCardPreview,normalizePreviewMode} from '/quick-card-preview.mjs';
 const host=document.getElementById('publishedQuickCard');const slug=host?.dataset.cardSlug;
 const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
 const browse=url=>{const a=el('a');a.href=url;a.dataset.siteUrl=url;a.dataset.siteTitle='Quick Card · Official website';if(typeof window.QuantaOpenSite==='function'){try{window.QuantaOpenSite(a);return}catch{}}window.open(url,'_blank','noopener,noreferrer');};
@@ -12,10 +13,13 @@ export function paintCard(container,c,{embedded=false}={}){
  top.append(badge,title,desc);article.append(top);
  const shareBar=el('div','qcp-share-prominent');
  const shareStatus=el('p','qcp-small');shareStatus.setAttribute('role','status');shareStatus.setAttribute('aria-live','polite');
- const share=makeShareButton({url:c.cardUrl,title:c.title+' · QuantaPhi Quick Card',label:'↗ Share this card',status:shareStatus});
- const xPost=el('a','qcp-x-share','Post card to X ↗');xPost.href=xShareLink(c.cardUrl,c.title);xPost.target='_blank';xPost.rel='noopener noreferrer';
- shareBar.append(share,xPost);article.append(shareBar,shareStatus);
- if(c.image){const image=el('img','qcp-art');image.src=c.image;image.alt='Artwork supplied for '+c.title;image.loading='lazy';image.referrerPolicy='no-referrer';image.addEventListener('error',()=>image.remove());article.append(image);}
+ const share=makeShareButton({url:c.cardUrl,title:c.title+' · QuantaPhi Quick Card',image:c.image||'',description:c.description||'',label:'↗ Share this card',status:shareStatus});
+ const livePreview=el('button','qcp-preview-button','◫ Preview interactive card');
+ livePreview.type='button';livePreview.addEventListener('click',()=>openQuickCardPreview({url:c.cardUrl,title:c.title,description:c.description,image:c.image,official:c.website,previewMode:c.previewMode}));
+ if(new URLSearchParams(location.search).has('preview'))livePreview.hidden=true;
+ const xPost=el('a','qcp-x-share','Post card to X ↗');xPost.href=xShareLink(c.cardUrl,c.title,c.image||'',c.description||'');xPost.target='_blank';xPost.rel='noopener noreferrer';
+ shareBar.append(livePreview,share,xPost);article.append(shareBar,shareStatus);
+ if(c.image){const image=el('img','qcp-art');image.src=c.image;image.alt='Artwork supplied for '+c.title;image.loading='lazy';image.referrerPolicy='no-referrer';image.addEventListener('error',()=>{image.remove();article.prepend(el('p','qcp-error','Card image is unavailable. The title and actions are still usable.'));});article.append(image);}
  else article.append(el('div','qcp-brand',new URL(c.website).hostname.replace(/^www\./,'')));
  const info=el('section','qcp-interaction');
  info.append(el('h2','','Use this Quick Card'));
@@ -33,7 +37,7 @@ export function paintCard(container,c,{embedded=false}={}){
  info.append(el('h3','','Requested Bubbles interaction'),el('p','qcp-request',c.interactionRequest));
  article.append(info);
  const controls=el('div','qcp-actions');article.append(controls);
- mountCardActions(controls,{id:'published-'+c.slug,name:c.title,category:'Community Quick Card',route:'/cards/'+c.slug,website:c.website,url:c.website});
+ mountCardActions(controls,{id:'published-'+c.slug,name:c.title,category:'Community Quick Card',route:'/cards/'+c.slug,website:c.website,url:c.website,shareImage:c.image||'',shareDescription:c.description||'',previewMode:normalizePreviewMode(c.previewMode)});
  const foot=el('p','qcp-small',c.status==='approved'?'Approved for public discovery; Quant matching determines placement.':'This card is shareable by URL. Main-feed placement is pending review.');
  article.append(foot);
  const embed=el('div','qcp-embed'); const code=el('input');code.readOnly=true;code.value='<iframe title="'+c.title.replace(/"/g,'')+'" src="'+c.cardUrl+'" loading="lazy" width="100%" height="720"></iframe>';code.setAttribute('aria-label','Copy embeddable iframe HTML');

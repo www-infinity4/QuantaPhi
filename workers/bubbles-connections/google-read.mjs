@@ -1,5 +1,5 @@
 import {randomToken} from './vault.mjs';
-const READ_ACTIONS = Object.freeze({'drive.list':'drive.read','sheets.values':'sheets.read','calendar.events':'calendar.read'});
+const READ_ACTIONS = Object.freeze({'drive.list':'drive.read','sheets.values':'sheets.read','calendar.events':'calendar.read', 'gmail.search':'gmail.read','gmail.message':'gmail.read'});
 function selected(record, kind, id) {
   if (typeof id !== 'string' || !id || id.length > 200 || !record.resourceGrants?.[kind]?.includes(id)) throw Error('resource_selection_required');
   return encodeURIComponent(id);
@@ -25,6 +25,22 @@ export function googleReadURL(operation, args, record) {
       if (!Number.isFinite(date.getTime())) throw Error('time_invalid');
       url.searchParams.set('timeMin',date.toISOString());
     }
+  } else if(operation==='gmail.search'){
+    const query=String(args.query??'').trim();
+    if(query.length>160||/[\x00-\x1f]/.test(query))throw Error('gmail_query_invalid');
+    url=new URL('https://gmail.googleapis.com/gmail/v1/users/me/messages');
+    url.search=new URLSearchParams({maxResults:'20',fields:'messages(id,threadId),nextPageToken,resultSizeEstimate',
+      ...(query?{q:query}:{labelIds:'INBOX'})}).toString();
+  } else if(operation==='gmail.message'){
+    const messageId=String(args.messageId||'');
+    if(!/^[A-Za-z0-9_-]{5,100}$/.test(messageId))throw Error('gmail_message_invalid');
+    url=new URL('https://gmail.googleapis.com/gmail/v1/users/me/messages/'+encodeURIComponent(messageId));
+    url.search=new URLSearchParams({format:'metadata',
+      metadataHeaders:'From',fields:'id,threadId,labelIds,snippet,internalDate,payload(headers)'});
+    // Gmail API supports multiple metadataHeaders; only From, Subject and
+    // Date are relevant to the permissioned inbox preview.
+    url.searchParams.append('metadataHeaders','Subject');
+    url.searchParams.append('metadataHeaders','Date');
   } else throw Error('unsupported_action');
   return url.href;
 }

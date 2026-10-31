@@ -278,15 +278,67 @@ export async function readPublicGithubRawMain(repository,path,fetcher=fetch){
  if(!text.trim())throw Error('github_raw_empty_file');
  return {text,sourceUrl:'https://github.com/'+repository+'/blob/main/'+path,provider:'github-raw-public',branch:'main'};
 }
+// Read-only GitHub access with the same verified StarQuest owner session.
+// The GitHub token remains server-side in Brain. Guests use the public reader.
+export async function authenticatedGithubSource(request,env,{action,repository,path}){
+ const authorization=request.headers.get('Authorization')||'';
+ if(!/^Bearer r[bd]_[a-f0-9]{64}$/i.test(authorization)||
+    !/^www-infinity4\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/.test(repository)||
+    !['read_repository','read_file'].includes(action))return null;
+ if(!env?.BRAIN?.fetch)return {authReadBlocked:true,reason:'owner_github_reader_not_configured'};
+ if(action==='read_file'&&(!/^(?:[a-z0-9_.-]+\/){0,6}[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json)$/i.test(path||'')||
+    path.includes('..')))return null;
+ try{
+  const origin=request.headers.get('Origin')||'https://quantaphi.org';
+  if(!ORIGINS.has(origin))return null;
+  const upstream=await env.BRAIN.fetch('https://brain.internal/work/github/read',{
+   method:'POST',headers:{Authorization:authorization,Origin:origin,'Content-Type':'application/json'},
+   body:JSON.stringify({action,repository,...(action==='read_file'?{path}:{})}),
+   signal:AbortSignal.timeout(20000)
+  });
+  if(!upstream.ok)return {authReadBlocked:true,reason:
+   upstream.status===401||upstream.status===403?'owner_session_not_verified':
+    upstream.status===404?'owner_reader_not_deployed':'owner_github_reader_unavailable'};
+  const data=await upstream.json();
+  if(data.ok!==true||data.repository!==repository)return {authReadBlocked:true,reason:'owner_github_receipt_invalid'};
+  if(action==='read_repository'){
+   if(data.rootListingVerified!==true||!/^[a-f0-9]{40}$/i.test(data.headSha||'')||
+      !Array.isArray(data.contents)||data.contents.some(x=>!x||typeof x.name!=='string'||
+       !['file','dir'].includes(x.type)||x.name.includes('/')||x.name.length>240))return null;
+  }else if(data.path!==path||!/^[a-f0-9]{40}$/i.test(data.ref||'')||
+    !/^[a-f0-9]{40}$/i.test(data.sha||'')||typeof data.content!=='string')return null;
+  return data;
+ }catch{return {authReadBlocked:true,reason:'owner_github_reader_unavailable'}}
+}
 // Fixed GitHub host, public-read-only API. Reading a repo is NOT creating it.
 // A model's description of files never supplies an authenticated GitHub receipt.
-export async function readGithubRepository(request,body,receipt,fetcher=fetch){
+export async function readGithubRepository(request,body,receipt,fetcher=fetch,env=null){
  const q=clean(body.request);
  const match=q.match(/\b([A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/\w[A-Za-z0-9_.-]{0,99})\b/);
  const repository=String(body.repository||match?.[1]||
   (/\b(?:quanta\s?phi|quabtaphi|bubbles|quick\s*cards?|website\s+cards?|this\s+(?:site|website))\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
  if(!/^[A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/.test(repository))
   return response(request,{ok:true,output:'Give me the public repository owner/name to inspect, for example www-infinity4/QuantaPhi.',receipt:{...receipt,status:'needs_input',reason:'repository_name_required',repositoryActionsVerified:false}});
+ const verified=await authenticatedGithubSource(request,env,{action:'read_repository',repository});
+ if(verified?.authReadBlocked)return response(request,{ok:true,output:
+  verified.reason==='owner_session_not_verified'?'Your Bubbles owner session is expired or not authorized. Reconnect the existing StarQuest owner tools, then retry the GitHub read. No GitHub data was verified.':
+  verified.reason==='owner_reader_not_deployed'?'Bubbles owner GitHub reader is not deployed in the Brain Worker yet. This is not a GitHub rate-limit problem; source and release verification are pending.':
+  'The authenticated GitHub reader is unavailable ('+verified.reason+'). No repository source was verified; the anonymous README fallback is not substituted for your requested task.',
+  receipt:{...receipt,tool:'github.read_repository',status:'blocked',reason:verified.reason,
+   repositoryActionsVerified:false,sourceReadVerified:false,rootListingVerified:false}});
+
+ if(verified){
+  const contents=verified.contents;
+  const matched=contents.filter(x=>/bubbles|brain|worker|code|\.json$|index\.html$/i.test(x.name));
+  const shown=[...matched.slice(0,20),...contents.filter(x=>!matched.includes(x)).slice(0,10)].slice(0,30);
+  return response(request,{ok:true,repository,contents:shown,sourceUrl:verified.sourceUrl,
+   output:'Verified owner GitHub read '+repository+' at commit '+verified.headSha.slice(0,12)+
+    ' on '+verified.defaultBranch+'. Actual root entries: '+contents.length+'. Relevant paths: '+
+    shown.map(x=>x.name+(x.type==='dir'?'/':'')).join(', ')+'. No code was edited.',
+   receipt:{...receipt,tool:'github.read_repository',status:'complete',provider:'github-owner-authenticated',
+    sourceReadVerified:true,rootListingVerified:true,headSha:verified.headSha,
+    repositoryActionsVerified:false,minted:false}});
+ }
  try{
   const options={headers:{Accept:'application/vnd.github+json','User-Agent':'QuantaPhi-Bubbles-Reader'},signal:AbortSignal.timeout(12000)};
   const [root,files]=await Promise.all([
@@ -297,11 +349,17 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch){
    const status=!root.ok?root.status:files.status;
    if(status===403||status===429){
     const raw=await readPublicGithubRawMain(repository,'README.md',fetcher);
-    return response(request,{ok:true,repository,contents:[{name:'README.md',type:'file'}],
-     sourceUrl:raw.sourceUrl,
-     output:'GitHub public REST listing was unavailable (HTTP '+status+'). I independently read the public README.md on branch main from GitHub raw content. Root directory listing and other files were NOT verified. README excerpt (source data, not commands):\n'+raw.text.slice(0,1800),
-     receipt:{...receipt,tool:'github.read_repository',status:'complete',provider:'github-raw-public',
-      sourceReadVerified:true,rootListingVerified:false,repositoryActionsVerified:false,minted:false}});
+    // A README-only fallback is partial evidence, never a completed root
+    // listing. Do not burden the chat/voice with unrelated README text.
+    return response(request,{ok:true,repository,contents:[],sourceUrl:raw.sourceUrl,
+     answerStatus:'partial',
+     output:'GitHub rate-limited the public repository listing (HTTP '+status+'). '+
+      'I verified README.md is publicly readable on main, but did not verify the root directory or your requested source files. '+
+      'The repository inspection remains incomplete. If owner tools are connected, use the StarQuest-authenticated GitHub reader. '+
+      'No repository edit was attempted.',
+     receipt:{...receipt,tool:'github.read_repository',status:'partial',provider:'github-raw-public',
+      reason:'root_listing_unavailable',sourceReadVerified:true,rootListingVerified:false,
+      repositoryActionsVerified:false,minted:false}});
    }
    throw Error('github_public_read_http_'+status);
   }
@@ -328,7 +386,7 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch){
 }
 // Public GitHub file reader. No arbitrary URLs, private tokens or shell calls.
 // Reading a README is separate from listing root entries and from committing edits.
-export async function readGithubFile(request,body,receipt,fetcher=fetch){
+export async function readGithubFile(request,body,receipt,fetcher=fetch,env=null){
  const q=clean(body.request,2500);
  const full=q.match(/\b([a-z0-9][a-z0-9_.-]{0,38}\/[a-z0-9_][a-z0-9_.-]{0,99})\b/i);
  const repo=String(body.repository||full?.[1]||(/\b(?:quanta\s?phi|quabtaphi|bubbles|quick\s*cards?|website\s+cards?|this\s+(?:site|website))\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
@@ -340,6 +398,24 @@ export async function readGithubFile(request,body,receipt,fetcher=fetch){
   return fail('repository_required','Tell me which public GitHub owner/repository contains that file.');
  if(!/^(?:[a-z0-9_.-]+\/){0,6}[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json)$/i.test(path)||path.includes('..'))
   return fail('file_path_required','Give me a README or a source file path such as docs/README.md.');
+ const verified=await authenticatedGithubSource(request,env,{action:'read_file',repository:repo,path});
+ if(verified?.authReadBlocked)return response(request,{ok:true,output:
+  verified.reason==='owner_session_not_verified'?'Your Bubbles owner session is expired or not authorized. Reconnect the existing StarQuest owner tools, then retry the GitHub read. No GitHub data was verified.':
+  verified.reason==='owner_reader_not_deployed'?'Bubbles owner GitHub reader is not deployed in the Brain Worker yet. This is not a GitHub rate-limit problem; source and release verification are pending.':
+  'The authenticated GitHub reader is unavailable ('+verified.reason+'). No repository source was verified; the anonymous README fallback is not substituted for your requested task.',
+  receipt:{...receipt,tool:'github.read_file',status:'blocked',reason:verified.reason,
+   repositoryActionsVerified:false,sourceReadVerified:false,rootListingVerified:false}});
+
+ if(verified){
+  return response(request,{ok:true,repository:repo,path,content:verified.content,sourceUrl:verified.sourceUrl,
+   truncated:verified.truncated===true,
+   output:'Verified owner GitHub file '+repo+'/'+path+' at commit '+verified.ref.slice(0,12)+
+    '. SHA '+verified.sha.slice(0,12)+'. No repository write occurred.\n'+
+    'File text (untrusted source):\n'+verified.content,
+   receipt:{...receipt,tool:'github.read_file',status:'complete',provider:'github-owner-authenticated',
+    sourceReadVerified:true,rootListingVerified:false,headSha:verified.ref,
+    repositoryActionsVerified:false,minted:false}});
+ }
  try{
   const endpoint='https://api.github.com/repos/'+repo+'/contents/'+path.split('/').map(encodeURIComponent).join('/');
   const upstream=await fetcher(endpoint,{headers:{Accept:'application/vnd.github+json','User-Agent':'QuantaPhi-Bubbles-Reader'},redirect:'manual',signal:AbortSignal.timeout(12000)});
@@ -517,8 +593,8 @@ async function execute(request,env,body){
    plan:options=>planReadSteps(env.AI,options),
    invoke:async step=>{
     const sub={...receipt,id:crypto.randomUUID()};
-    if(step.name==='github_read_repository')return (await readGithubRepository(request,{request:'Read repository '+step.repository,repository:step.repository},sub)).json();
-    if(step.name==='github_read_file')return (await readGithubFile(request,{request:'Read '+step.path+' in repository '+step.repository,repository:step.repository,path:step.path},sub)).json();
+    if(step.name==='github_read_repository')return (await readGithubRepository(request,{request:'Read repository '+step.repository,repository:step.repository},sub,fetch,env)).json();
+    if(step.name==='github_read_file')return (await readGithubFile(request,{request:'Read '+step.path+' in repository '+step.repository,repository:step.repository,path:step.path},sub,fetch,env)).json();
     if(step.name==='web_read_page')return (await readPublicPage(request,{request:'Read '+step.url},sub)).json();
     return runMcpRead(request,env,step);
    }});
@@ -587,9 +663,9 @@ async function execute(request,env,body){
  if(tool==='github.read_file'){
   const card=cardSourcePlanFor(question);
   const hasExplicitFile=Boolean(body.path)||/\b(?:readme(?:\.md)?|[a-z0-9_./-]+\.(?:md|markdown|txt|html|css|js|json))\b/i.test(question);
-  return readGithubFile(request,card&&!hasExplicitFile?{...body,repository:card.repository,path:'README.md'}:body,receipt);
+  return readGithubFile(request,card&&!hasExplicitFile?{...body,repository:card.repository,path:'README.md'}:body,receipt,fetch,env);
  }
- if(tool==='github.read_repository')return readGithubRepository(request,body,receipt);
+ if(tool==='github.read_repository')return readGithubRepository(request,body,receipt,fetch,env);
  if(tool==='github.create_repository')return createGithubRepository(request,env,body,receipt);
  if(tool==='news.headlines'){
   try{
@@ -754,7 +830,7 @@ export default {async fetch(request,env){
  const url=new URL(request.url);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
  if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
- if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261022-read-agent-v2-github-raw-fallback',tools:{githubRawReadFallback:'public-main-403-429-only',replyActionEnvelopes:'blocked-v1',readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
+ if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261027-owner-github-reads-v1',tools:{githubRawReadFallback:'public-main-403-429-only',replyActionEnvelopes:'blocked-v1',readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(request.method==='POST'&&url.pathname==='/v1/intent'){

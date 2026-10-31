@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Robot Brain · Private account security</title>
+<style>
+:root{font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:#253c4f;background:#f5f8fb}
+*{box-sizing:border-box}body{margin:0;padding:16px 14px 64px}
+main{max-width:640px;margin:auto}
+header{padding:10px 0 14px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:9px}
+header b{font-size:19px;color:#1b5278}a{color:#165b97}
+section{border:1px solid #d7e1ea;background:white;border-radius:18px;padding:clamp(17px,4vw,26px);margin:14px 0}
+h1{color:#174970;font-size:clamp(23px,5vw,33px);margin:0 0 12px}
+h2{font-size:20px;color:#174970;margin:0 0 10px}
+p{line-height:1.6}button,a{touch-action:manipulation}button:focus-visible,a:focus-visible{outline:3px solid #d9a73f;outline-offset:3px}
+#robotBrainOwner button,#robotBrainOwner input{font:inherit;padding:10px;margin:6px 0;border-radius:9px}
+#robotBrainOwner details{padding:12px;border:1px solid #ccd9e5;border-radius:11px}
+#account-security[hidden]{display:none!important}
+.btn{padding:11px 16px;border-radius:11px;background:#0e67a8;color:white}
+.controls{display:flex;gap:10px;flex-wrap:wrap}
+</style>
+</head>
+<body><main>
+<header><b>Robot Brain · Private account security</b><a href="/bubbles.html">Return to Bubbles</a></header>
+<section><h1>Owner access</h1><p>Account security is available only to the verified owner wallet. This page does not offer public email signup.</p>
+<div id="robotBrainOwner" aria-live="polite"></div>
+<p id="ownerGateMessage" role="status">Use your existing verified owner wallet to open private security settings.</p>
+</section>
+<section id="account-security" hidden aria-label="Private owner account security">
+<h2>Private passkey setup</h2><p>Your account security controls stay in the verified owner session. The private key remains on your phone.</p>
+<div id="ownerPasskeyWorkspace" role="region" aria-label="Phone passkey setup">
+<p id="ownerPasskeyServiceStatus" role="status">Checking the secure passkey service…</p>
+</div>
+</section>
+</main>
+<script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script>
+<script src="/cloud-wallet-client.js?v=20261013-brain-bridge1"></script>
+<script src="/robot-brain-owner.js?v=20261014-shared-memory6"></script>
+<script type="module">
+import('/robot-brain-passkeys.mjs?v=20261029-private-owner2').catch(()=>{
+ const status=document.getElementById('ownerGateMessage');
+ if(status)status.textContent='Private account controls could not load. Your wallet and email settings were not changed.';
+});
+</script>
+</body></html>

@@ -34,6 +34,21 @@ test('missing server status and spoofed local positive status never enable the g
  }
 });
 
+test('verified Unified Wallet signs into Bubbles without fabricating provider permissions',async t=>{
+ const payload={...partialGate(),ok:true,walletVerified:true};
+ const summary=summarizeGate(payload);
+ assert.equal(summary.walletVerified,true);
+ assert.equal(summary.ready,false);
+ assert.equal(summary.providers.cloudflare.connected,false);
+ assert.equal(summary.providers.cloudflare.approved,false);
+ assert.equal(summarizeGate({walletVerified:true}).walletVerified,false);
+ const ui=mountedGate(t,payload);await new Promise(setImmediate);
+ assert.equal(ui.get('bubblesSigninGate').hidden,true);
+ assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+ assert.match(ui.get('bubblesWalletIdentity').textContent,/Signed in to Bubbles with your Unified Wallet/);
+ assert.equal(ui.calls.some(call=>call.path==='/start'),false);
+});
+
 test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>{
  const source=readFileSync(new URL('../bubbles-signin-gate.mjs',import.meta.url),'utf8');
  assert.match(source,/client\.resumePending\(/);
@@ -42,15 +57,20 @@ test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>
  assert.match(source,/Finishing sign-in/);
 });
 
-function mountedGate(t,payload,{startFails=false}={}){
- const elements=new Map();
- const root={getElementById(id){
-  if(!elements.has(id))elements.set(id,{dataset:{},hidden:false,disabled:false,textContent:'',
-   listeners:{},addEventListener(event,callback){this.listeners[event]=callback;},scrollIntoView(){}});
-  return elements.get(id);
- },addEventListener(){}};
+function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn=null,chat=false}={}){
+ const ids=chat?['chatBubblesSigninGate','chatBubblesSigninStatus','chatBubblesGithubSignIn',
+  'chatBubblesCloudflareSignIn','chatBubblesGithubStatus','chatBubblesCloudflareStatus',
+  'chatBubblesGithubCard','chatBubblesCloudflareCard','chatBubblesRetrySignInCheck',
+  'chatBubblesRecoverWallet','chatBubblesCancelSignIn']:
+  ['bubblesSigninGate','bubblesSigninStatus','bubblesGithubSignIn','bubblesCloudflareSignIn',
+   'bubblesGithubStatus','bubblesCloudflareStatus','bubblesGithubCard','bubblesCloudflareCard',
+   'bubblesAICard','bubblesRetrySignInCheck','bubblesRecoverWallet','bubblesWalletIdentity','bubblesCancelSignIn'];
+ const elements=new Map(ids.map(id=>[id,{dataset:{},hidden:false,disabled:false,textContent:'',
+  listeners:{},addEventListener(event,callback){this.listeners[event]=callback;},scrollIntoView(){}}]));
+ const root={getElementById:id=>elements.get(id)||null,addEventListener(){}};
  const popups=[],calls=[],storage=new Map();
- const host={document:root,QuantaCloudConnection:{resolveDeviceToken:async()=>'sq_'+'a'.repeat(40)},
+ if(oauthReturn)storage.set('bubbles:oauth-return-note:v1',JSON.stringify({provider:'cloudflare',result:oauthReturn,at:Date.now()}));
+ const host={document:root,QuantaCloudConnection:{resolveDeviceToken:async()=>walletMissing?'':'sq_'+'a'.repeat(40)},
   addEventListener(){},removeEventListener(){},setTimeout:()=>1,clearTimeout(){},
   sessionStorage:{getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)},
   open(){const popup={location:{},close(){}};popups.push(popup);return popup;}};
@@ -58,25 +78,48 @@ function mountedGate(t,payload,{startFails=false}={}){
  globalThis.fetch=async(url,options)=>{
   const path=String(url).replace('/api/bubbles/connections','');
   const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
+  if(path==='/session')return Response.json({ok:true,walletVerified:payload?.walletVerified===true});
   if(path==='/gate/status')return Response.json({ok:true,...payload});
   if(path==='/start'){
    if(startFails)return Response.json({ok:false,error:'provider_not_configured'},{status:503});
    const adapter=cloudflareAdapter({clientId:'bubbles-test-client',clientSecret:'server-only',
     redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback',
-    allowedScopes:'user-details.read memberships.read workers-scripts.admin d1.read d1.write page.write'});
+    allowedScopes:body.actions.includes('owner.full')?['user-details.read','memberships.read',...Array.from({length:384},(_,i)=>'preview-scope-'+i+'.read')].join(' '):'user-details.read memberships.read workers-scripts.admin d1.read d1.write page.write'});
    return Response.json({ok:true,authorizationUrl:adapter.authorization({state:'s'.repeat(43),challenge:'c'.repeat(43),actions:body.actions}),expiresIn:300});
   }
   if(path==='/handoff/status')return Response.json({ok:true,status:'pending'});
   assert.fail('Unexpected request '+path);
  };
  t.after(()=>{globalThis.fetch=original;});
- return {controller:mountBubblesSigninGate({root,host}),get:root.getElementById,calls,popups};
+ return {controller:mountBubblesSigninGate({root,host,prefix:chat?'chat':''}),get:root.getElementById,calls,popups};
 }
 const partialGate=()=>({ready:false,providers:{
  github:{configured:true,connected:true,permissionsApproved:true},
  cloudflare:{configured:true,connected:false,permissionsApproved:false,scopeSetupRequired:true,
   authorizationActions:['account.read','projects.build','ledger.read']}
 }});
+
+test('inline chat mounts its real IDs and replaces pending controls with actionable sign-in',async t=>{
+ const ui=mountedGate(t,partialGate(),{walletMissing:true,chat:true});
+ assert.ok(ui.controller,'The real chat gate must mount');
+ await new Promise(setImmediate);
+ for(const id of ['chatBubblesGithubSignIn','chatBubblesCloudflareSignIn']){
+  assert.equal(ui.get(id).disabled,false);
+  assert.match(ui.get(id).textContent,/^Sign in with /);
+ }
+ assert.match(ui.get('chatBubblesSigninStatus').textContent,/Sign in with StarQuest/);
+ assert.equal(ui.get('chatBubblesRecoverWallet').hidden,false);
+ assert.equal(ui.get('chatBubblesCancelSignIn').hidden,true);
+ await ui.get('chatBubblesCloudflareSignIn').listeners.click();
+ assert.equal(ui.calls.some(c=>c.path==='/start'),false);
+});
+
+test('inline chat hides the sign-in gate after server wallet verification',async t=>{
+ const ui=mountedGate(t,{...partialGate(),walletVerified:true},{chat:true});
+ await new Promise(setImmediate);
+ assert.equal(ui.get('chatBubblesSigninGate').hidden,true);
+ assert.equal(ui.get('chatBubblesSigninGate').dataset.ready,'false','Wallet identity does not grant provider permissions');
+});
 
 test('missing extra project scopes does not disable normal Cloudflare sign-in',async t=>{
  const ui=mountedGate(t,partialGate());
@@ -88,13 +131,13 @@ test('missing extra project scopes does not disable normal Cloudflare sign-in',a
  assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
  assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
  await button.listeners.click();
- assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['account.read','projects.build','ledger.read']});
+ assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['account.read']});
  const destination=new URL(ui.popups[0].location.href);
  assert.equal(destination.origin,'https://dash.cloudflare.com');
  assert.equal(destination.pathname,'/oauth2/auth');
  assert.equal(destination.searchParams.get('redirect_uri'),'https://quantaphi.org/api/bubbles/connections/cloudflare/callback');
  assert.equal(destination.searchParams.get('code_challenge_method'),'S256');
- assert.equal(destination.searchParams.get('scope'),'user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read');
+ assert.equal(destination.searchParams.get('scope'),'user-details.read memberships.read');
 });
 test('failed sign-in launch restores the button for another attempt',async t=>{
  const ui=mountedGate(t,partialGate(),{startFails:true});
@@ -120,7 +163,7 @@ test('an abandoned provider sign-in can be cancelled and immediately retried',as
  assert.equal(ui.calls.filter(c=>c.path==='/start').length,2);
  cancel.listeners.click();
 });
-test('signed-in form hides while missing project permissions remain unapproved',async t=>{
+test('previously limited Cloudflare connection offers reauthorization instead of hiding the button',async t=>{
  const payload=partialGate();
  payload.providers.cloudflare.connected=true;
  payload.providers.cloudflare.missingActions=['projects.full'];
@@ -131,8 +174,11 @@ test('signed-in form hides while missing project permissions remain unapproved',
  assert.deepEqual(summary.providers.cloudflare.missing,['projects.full']);
  const ui=mountedGate(t,payload);
  await new Promise(setImmediate);
- assert.equal(ui.get('bubblesSigninGate').hidden,true);
+ assert.equal(ui.get('bubblesSigninGate').hidden,false);
  assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+ assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
+ assert.equal(ui.get('bubblesCloudflareSignIn').disabled,false);
+ assert.equal(ui.get('bubblesCloudflareSignIn').textContent,'Review Cloudflare permissions');
 });
 test('full project permissions are still requested when registered by the server',()=>{
  const payload=partialGate();
@@ -140,4 +186,71 @@ test('full project permissions are still requested when registered by the server
  payload.providers.cloudflare.authorizationActions.push('projects.full','invented-action');
  assert.deepEqual(summarizeGate(payload).providers.cloudflare.authorizationActions,
   ['account.read','projects.build','ledger.read','projects.full']);
+});
+
+test('missing verified wallet never leaves a dead disabled Cloudflare button',async t=>{
+ const ui=mountedGate(t,partialGate(),{walletMissing:true});
+ await new Promise(setImmediate);
+ const button=ui.get('bubblesCloudflareSignIn');
+ assert.equal(button.disabled,false);
+ assert.equal(ui.get('bubblesRecoverWallet').hidden,false);
+ assert.match(ui.get('bubblesSigninStatus').textContent,/Sign in with StarQuest.*Unified Wallet/i);
+ await button.listeners.click();
+ assert.equal(button.disabled,false);
+ assert.equal(ui.get('bubblesRecoverWallet').hidden,false);
+ assert.equal(ui.calls.some(c=>c.path==='/start'),false,'Unverified wallet must never start OAuth or associate a token');
+});
+
+test('public Bubbles markup includes clickable Cloudflare action and wallet recovery',()=>{
+ const html=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
+ assert.match(html,/<button id="bubblesCloudflareSignIn"[^>]*type="button"[^>]*>/);
+ assert.doesNotMatch(html,/<button id="bubblesCloudflareSignIn"[^>]*disabled/);
+ assert.match(html,/id="bubblesRecoverWallet"/);
+});
+
+test('a declined Cloudflare callback remains visible through wallet status refresh',async t=>{
+ const ui=mountedGate(t,partialGate(),{oauthReturn:'declined'});
+ await new Promise(setImmediate);
+ assert.match(ui.get('bubblesSigninStatus').textContent,/authorization was declined/i);
+ await ui.controller.refresh();
+ assert.match(ui.get('bubblesSigninStatus').textContent,/authorization was declined/i);
+ assert.equal(ui.get('bubblesCloudflareSignIn').disabled,false);
+});
+test('received callback with no completion receipt never claims the user is connected',async t=>{
+ const ui=mountedGate(t,partialGate(),{oauthReturn:'received'});
+ await new Promise(setImmediate);
+ assert.match(ui.get('bubblesSigninStatus').textContent,/Waiting to verify/);
+ assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
+ assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+});
+
+test('a verified Cloudflare identity keeps full 386-scope upgrade separate from sign-in',async t=>{
+ const payload=partialGate();
+ payload.providers.cloudflare.connected=true;
+ payload.providers.cloudflare.authorizationActions=['account.read','owner.full'];
+ const ui=mountedGate(t,payload);
+ await new Promise(setImmediate);
+ const button=ui.get('bubblesCloudflareSignIn');
+ assert.equal(button.textContent,'Authorize all 386 Cloudflare permissions');
+ await button.listeners.click();
+ assert.deepEqual(ui.calls.find(x=>x.path==='/start').body,
+  {provider:'cloudflare',actions:['owner.full']});
+});
+
+test('registered full-scope Cloudflare client uses all 386 at first consent instead of incompatible two-scope request',async t=>{
+ const payload=partialGate();
+ payload.providers.cloudflare.authorizationActions=['account.read','owner.full'];
+ const ui=mountedGate(t,payload);
+ await new Promise(setImmediate);
+ const button=ui.get('bubblesCloudflareSignIn');
+ assert.equal(button.textContent,'Sign in and authorize 386 Cloudflare permissions');
+ await button.listeners.click();
+ assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['owner.full']});
+ const authorization=new URL(ui.popups[0].location.href);
+ const scopes=authorization.searchParams.get('scope').split(' ');
+ assert.equal(scopes.length,386);
+ assert.equal(new Set(scopes).size,386);
+ assert.ok(scopes.includes('user-details.read'));
+ assert.ok(scopes.includes('memberships.read'));
+ assert.equal(authorization.origin,'https://dash.cloudflare.com');
 });

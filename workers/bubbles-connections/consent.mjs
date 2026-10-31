@@ -3,7 +3,7 @@ import {digest, randomToken} from './vault.mjs';
 import {PROVIDERS, authorizeConnection} from './authorization.mjs';
 
 async function completionStep(stage,operation){
- try{return await operation();}catch(error){if(error&&typeof error==='object')error.connectionStage=stage;throw error;}
+ try{return await operation();}catch(error){if(error&&typeof error==='object'&&!error.connectionStage)error.connectionStage=stage;throw error;}
 }
 // Storage must implement Durable Object transactional get/put/delete. This
 // service is called only after a host authenticates its user and session.
@@ -51,16 +51,27 @@ export class ConsentService {
     if(code!==undefined&&(typeof code!=='string'||!code||code.length>4096))
       throw Error('callback_invalid');
     const key=prefix+'state:'+await digest(state),handoffKey=prefix+'handoff:'+await digest(state);
-    return this.storage.transaction(async tx=>{
-      const sealed=await tx.get(key);
+    return completionStep('handoff_transaction',()=>this.storage.transaction(async tx=>{
+      const sealed=await completionStep('handoff_read',()=>tx.get(key));
       if(!sealed)throw Error('state_invalid_or_used');
-      const pending=await this.vault.open(sealed,key);
+      const pending=await completionStep('handoff_decrypt',()=>this.vault.open(sealed,key));
       if(pending.provider!==provider||pending.userId!==userId||pending.expiresAt<=this.now())
         throw Error('state_invalid_or_used');
-      if(await tx.get(handoffKey))throw Error('callback_already_received');
-      await tx.put(handoffKey,{...await this.vault.seal({code:code||null,error:error?'provider_declined':null},handoffKey),expiresAt:pending.expiresAt});
+      const incoming={code:code||null,error:error?'provider_declined':null};
+      const existing=await completionStep('handoff_read',()=>tx.get(handoffKey));
+      if(existing){
+        // Chrome may repeat the exact callback after redirect/recovery.
+        // Accept only an identical, previously sealed payload; never replace
+        // a one-use authorization code with a different one.
+        const saved=await completionStep('handoff_decrypt',()=>this.vault.open(existing,handoffKey));
+        if(saved.code===incoming.code && saved.error===incoming.error)
+          return {received:true,duplicate:true};
+        throw Error('callback_already_received');
+      }
+      const encrypted=await completionStep('handoff_encrypt',()=>this.vault.seal(incoming,handoffKey));
+      await completionStep('handoff_store',()=>tx.put(handoffKey,{...encrypted,expiresAt:pending.expiresAt}));
       return {received:true};
-    });
+    }));
   }
   async handoffStatus({userId,sessionId,provider,state}) {
     const prefix=await this.namespace(userId),sessionHash=await this.session(sessionId);
@@ -108,22 +119,22 @@ export class ConsentService {
   }
   async finishHandoff(input) {
     const {userId,sessionId,provider,state}=input;
-    const status=await this.handoffStatus(input);
+    const status=await completionStep('handoff_read',()=>this.handoffStatus(input));
     if(status.status!=='received')return status;
     const sessionHash=await this.session(sessionId);
     const prefix=await this.namespace(userId);
     const key=prefix+'handoff:'+await digest(state);
-    const encrypted=await this.storage.get(key);
+    const encrypted=await completionStep('handoff_read',()=>this.storage.get(key));
     if(!encrypted)return {status:'pending'};
-    const received=await this.vault.open(encrypted,key);
+    const received=await completionStep('handoff_decrypt',()=>this.vault.open(encrypted,key));
     if(!received.code)throw Error('callback_invalid');
     const inflightKey=prefix+'handoff-inflight:'+await digest(state);
-    await this.storage.transaction(async tx=>{
+    await completionStep('handoff_store',()=>this.storage.transaction(async tx=>{
       const previous=await tx.get(inflightKey);
       if(previous&&(previous.userId!==userId||previous.sessionHash!==sessionHash||previous.provider!==provider))
         throw Error('callback_session_mismatch');
       await tx.put(inflightKey,{userId,sessionHash,provider,expiresAt:this.now()+300000});
-    });
+    }));
     // The storage contract exposes transactional delete, not a top-level
     // delete method. Erase the sealed callback even if token exchange fails.
     try {
@@ -132,16 +143,17 @@ export class ConsentService {
       // Persist a sealed, session-bound completion receipt before returning.
       const receiptKey=prefix+'handoff-receipt:'+await digest(state);
       const receipt={userId,sessionHash,provider,account,expiresAt:this.now()+300000};
-      await this.storage.transaction(async tx=>{
+      await completionStep('receipt_store',()=>this.storage.transaction(async tx=>{
         const current=await tx.get(prefix+'connection:'+account.id);
         if(current?.userId!==userId||current.provider!==provider||
            current.status!=='connected'||!current.credentialRef||
            current.expiresAt<=this.now()||!(await tx.get(current.credentialRef)))
           throw Error('connection_cancelled');
         receipt.connectionRevision=current.revision;
-        await tx.put(receiptKey,{...await this.vault.seal(receipt,receiptKey),expiresAt:receipt.expiresAt});
+        const sealedReceipt=await completionStep('receipt_seal',()=>this.vault.seal(receipt,receiptKey));
+        await tx.put(receiptKey,{...sealedReceipt,expiresAt:receipt.expiresAt});
         await tx.delete(inflightKey);
-      });
+      }));
       return {status:'connected',account};
     } catch(error) {
       if(error?.message==='state_invalid_or_used') {
@@ -181,6 +193,7 @@ export class ConsentService {
     const id = await digest(provider + ':' + value.subject), connectionKey = prefix + 'connection:' + id;
     const credentialKey = prefix + 'credential:' + id;
     const connection = {id, userId, provider, providerSubject:value.subject, label:String(value.label || value.subject),
+      verifiedEmail:provider==='google'&&typeof value.verifiedEmail==='string'?value.verifiedEmail:null,
       credentialRef:credentialKey, status:'connected', expiresAt:this.now()+value.expiresIn*1000,
       grantedActions:value.grantedActions.filter(a => record.actions.includes(a)), revision:randomToken(), updatedAt:this.now()};
     const ciphertext = await completionStep('seal',()=>this.vault.seal({accessToken:value.accessToken, refreshToken:value.refreshToken || null}, credentialKey));

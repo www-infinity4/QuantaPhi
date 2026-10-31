@@ -1,0 +1,78 @@
+/* Oracle live-card spotlight. Render the original card, not a link preview. */
+body.oracle-quanta #oracleCardDeck{
+ --spot:#2675a7;--spot-dark:#124b76;
+ border:0!important;border-radius:0!important;background:transparent!important;
+ box-shadow:none!important;
+}
+body.oracle-quanta #oracleCardDeck .oracle-direction-tabs{
+ border-bottom:1px solid #d6e2ea!important;gap:4px;margin-bottom:10px!important
+}
+body.oracle-quanta #oracleCardDeck .oracle-direction-tabs button{
+ min-height:47px;border-radius:12px 12px 0 0!important;font:850 15px/1.2 system-ui,sans-serif!important;
+ letter-spacing:-.015em;transition:background .2s ease,color .2s ease;
+}
+body.oracle-quanta #oracleCardDeck .oracle-direction-tabs button[aria-selected="true"]{
+ color:#fff!important;background:linear-gradient(118deg,#124c7c,#0b92c8)!important;
+ border-bottom:3px solid #62d8f6!important;box-shadow:0 4px 17px #1367982b;
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav{
+ background:#f0f6fa;border:1px solid #bfd8e8;border-radius:14px;
+ padding:7px 7px 7px 8px;box-shadow:0 3px 12px #234d6e16;
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav button:is(#oracleCardPrevious,#oracleCardNext){
+ background:linear-gradient(148deg,#18496c,#1079a2)!important;
+ color:white!important;border:1px solid #0f628a!important;
+ box-shadow:0 4px 9px #1b537129!important;
+ border-radius:11px!important;min-height:45px!important;
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav button:active{transform:scale(.96)}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav #oracleCardFollow{
+ border-color:#a6c7da!important;background:#fff!important;color:#174a72!important;
+ min-height:42px;max-width:98px;box-shadow:0 3px 8px #0b4a6f10!important;
+}
+body.oracle-quanta #oracleCardDeck #oracleCardNow{color:#183e57;font-weight:850!important;letter-spacing:-.015em}
+body.oracle-quanta #oracleCardStage{position:relative;isolation:isolate}
+body.oracle-quanta #oracleCardStage:has(> :is(.iqc-card,.qbp-card,.premium-card,.card,.sap-shell,.pi-panel,.walmart-card)){
+ border-radius:19px;box-shadow:0 12px 34px #193f6226;
+}
+body.oracle-quanta #oracleCardStage > :is(article,section,.iqc-card){
+ width:100%;max-width:100%;min-width:0;
+}
+body.oracle-quanta #oracleCardDeck .oracle-original-cover{
+ display:grid;grid-template-columns:minmax(0,37%) 1fr;gap:13px;
+ align-items:center;background:linear-gradient(130deg,#e5f3fb,#ffffff 68%);
+ color:#203c50;border:1px solid #c6dce8;border-radius:14px;padding:10px;margin-bottom:12px
+}
+body.oracle-quanta #oracleCardDeck .oracle-original-cover img{
+ width:100%;height:140px;object-fit:cover;border-radius:11px;background:#e2eef5
+}
+body.oracle-quanta #oracleCardDeck .oracle-original-cover h2{
+ color:#154c77!important;font-size:clamp(20px,5vw,30px);
+ line-height:1.14;letter-spacing:-.04em;margin:5px 0
+}
+body.oracle-quanta #oracleCardDeck .oracle-original-cover p{
+ line-height:1.35;font-size:13px;color:#465d6f
+}
+body.oracle-quanta #oracleCardDeck .oracle-original-cover small{
+ letter-spacing:.12em;font-size:9px;font-weight:850;color:#48708a
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-actions{
+ margin:12px 0;background:#fff;border:1px solid #e0eaf0;border-radius:13px;padding:8px;
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-library{border-color:#d2dfe7;color:#204f6f}
+body.oracle-quanta #oracleCardDeck .oracle-card-scroll{
+ min-height:44px;background:#e9f2f7!important;color:#295d7b!important;
+ border:1px solid #c5dce8!important;border-radius:11px!important;
+ font-weight:750!important
+}
+body.oracle-quanta #oracleCardDeck :is(button,a,select):focus-visible{outline:3px solid #0b97ca;outline-offset:3px}
+@media(max-width:460px){
+ body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav{gap:5px}
+ body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav button:is(#oracleCardPrevious,#oracleCardNext){width:42px;min-width:42px}
+ body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav #oracleCardFollow{padding:8px 7px;font-size:11px;max-width:83px}
+ body.oracle-quanta #oracleCardDeck .oracle-original-cover img{height:115px}
+ body.oracle-quanta #oracleCardDeck .oracle-original-cover{gap:9px;padding:9px}
+}
+@media(prefers-reduced-motion:reduce){
+ body.oracle-quanta #oracleCardDeck *{transition:none!important;animation:none!important}
+}

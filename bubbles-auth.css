@@ -88,3 +88,13 @@ body.bubbles-auth-page button[data-provider]:disabled { cursor: not-allowed; opa
   .bubbles-auth-page .ba-account-card > button { width: 100%; }
   body.oracle-octaves-page .bubbles-signin-gate { max-width: 100%; padding: 22px; }
 }
+
+/* An unavailable wallet session must expose a real, keyboard-accessible route
+   to identity recovery instead of leaving the Cloudflare control disabled. */
+body.oracle-octaves-page .bubbles-wallet-recovery{
+ display:inline-flex;align-items:center;min-height:44px;margin:8px 0;
+ padding:10px 12px;border:1px solid #d8c8bf;border-radius:10px;
+ color:#8e2b25;background:#fff8f4;font:600 15px/1.4 system-ui,sans-serif;
+ text-decoration:underline;
+}
+body.oracle-octaves-page .bubbles-wallet-recovery[hidden]{display:none!important}

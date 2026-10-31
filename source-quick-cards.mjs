@@ -1,4 +1,6 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261026-starmaker1';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261027-karaoke1';
+import {mountOfficialViewer} from './quanta-official-viewer.mjs';
+import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -12,7 +14,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('youtube','YouTube','Video','Trending and popular videos','https://www.youtube.com/','https://www.youtube.com/feed/trending','Find verified channel uploads, popular videos and authorized YouTube player embeds.','Discover videos on the official YouTube trending destination. An actual in-card reel needs YouTube API video IDs and permitted embeds.'), 
  source('facebook','Facebook','Social','Local groups and events','https://www.facebook.com/','https://www.facebook.com/events/','Help signed-in users navigate groups, events and voluntary local interests without assuming their location.','Facebook local items require Facebook sign-in and explicit location consent. This independent card cannot read private feeds.'), 
  source('instagram','Instagram','Social','Explore photos and reels','https://www.instagram.com/','https://www.instagram.com/explore/','Explain image attribution and discover explicitly authorized media via supported Instagram APIs or embeds.','Explore photos and reels at Instagram. Real images require authorized media/official embeds, not scraped CDN images.'), 
- source('chatgpt','ChatGPT','AI','Open your real ChatGPT conversation','https://chatgpt.com/','https://chatgpt.com/','Help visitors decide which research or creative task to bring to ChatGPT. Do not impersonate ChatGPT or claim cross-service conversation access.','Open the authentic ChatGPT site. ChatGPT sessions do not get embedded or synchronized by this card.'),
+ source('chatgpt','ChatGPT','AI','Open the real ChatGPT website and sign in','https://chatgpt.com/','https://chatgpt.com/','Open the original ChatGPT app and authenticate on chatgpt.com, without copying credentials or impersonating its sessions.','One-tap official sign-in and an optional real website frame. Framing depends on the provider and browser; your private conversation is not synchronized to QuantaPhi.'),
  source('gemini','Google Gemini','AI · Planning','Ask Gemini first through Bubbles','https://gemini.google.com/','https://gemini.google.com/','Gemini offers the first research/engineering plan. Independently check model advice before acting.','Use the real Gemini API only with verified Bubbles owner access, or continue in the official Gemini app.'),
  source('claude','Anthropic Claude','AI · Review','Review the Gemini plan with Claude','https://claude.ai/','https://claude.ai/','Claude independently reviews proposed changes, tests and possible hazards; no generated text is execution authorization.','The card can ask Bubbles for an authenticated Anthropic API response, if configured; otherwise use the official Claude interface.'),
  source('copilot','GitHub Copilot','AI · Coding','Review work with GitHub Copilot','https://github.com/copilot','https://github.com/copilot/agents','GitHub Copilot cloud agent can work on appropriately enabled repositories through approved GitHub issues and PRs.','Open the official GitHub Copilot interface. This card does not inherit private repository permissions or claim a direct Copilot chat API.'), 
@@ -38,7 +40,11 @@ export const PUBLIC_SOURCE_IDS=Object.freeze([
  'chatgpt','gemini','claude','copilot'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
-export const findSourceCard=id=>QUICK_CARD_SOURCES.find(p=>p.id===id)||null;
+export const findSourceCard=id=>{
+ const original=QUICK_CARD_SOURCES.find(p=>p.id===id);if(original)return original;
+ const card=lookupQuickCard(id);if(!card)return null;
+ return {...card,featureUrl:card.official,focus:'Help visitors use the original '+card.name+' website. Do not invent account access, offers or provider actions.',details:card.description};
+};
 export const validSourceCard=card=>{
  if(!card||!/^[a-z0-9-]+$/.test(card.id||''))return false;
  for(const href of [card.official,card.featureUrl,...(card.secondUrl?[card.secondUrl]:[])]){let url;try{url=new URL(href)}catch{return false}if(url.protocol!=='https:'||url.username||url.password)return false;}
@@ -87,11 +93,12 @@ function starterCard(card){
  item.append(createCardArtwork(card,true));
  if(card.id!=='google'&&card.id!=='bing')item.append(el('p','iqc-kind',card.kind));
  const tools=el('div','iqc-inline-tools');mountCardTools(tools,card);item.append(tools);
+ if(card.id==='chatgpt')mountOfficialViewer(item,card.id);
  askAiTools(item,card);
  // Search cards are already complete with their own actual search fields.
  if(!['google','bing'].includes(card.id)){
   const actions=el('div','iqc-actions');
-  actions.append(link('Official '+card.name+' website',card.official));item.append(actions);
+  actions.append(link('Official '+card.name+' website',card.official));if(card.id==='starmaker'){const demo=link('Try & embed the mini card','/starmaker-embed.html','iqc-primary');demo.target='_self';actions.append(demo)}item.append(actions);
  }
  return item;
 }
@@ -123,8 +130,9 @@ function mountDetail(){
  document.title=card.name+' · Infinity Quick Card';
  host.append(el('p','iqc-kind','INFINITY 2026® · SOURCE EXPERIENCE'),createCardArtwork(card),el('h1','',card.name),el('h2','',card.feature));
  const tools=el('div','iqc-tools');mountCardTools(tools,card);host.append(tools);
+ if(card.id==='chatgpt')mountOfficialViewer(host,card.id);
  askAiTools(host,card);
- const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
+ const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio);const mini=link('Try portable interactive card ↗','/starmaker-embed.html','iqc-primary');mini.target='_self';actions.append(mini)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
  const about=el('section','iqc-feature');about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));host.append(about);
  installBubble(card);
 }

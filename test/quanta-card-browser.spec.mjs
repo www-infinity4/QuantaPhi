@@ -1,4 +1,9 @@
 import {test,expect} from '@playwright/test';
+// Include Integra audit regressions in the existing CI gate.
+import './integra-validation-browser.spec.mjs';
+
+// Use existing Android QA invocation for the new wiring study and hidden-login cases.
+import './quick-card-wiring-browser.spec.mjs';
 const base='http://127.0.0.1:8799';
 test.use({viewport:{width:390,height:844}});
 test('original single-card Oracle viewer replaces the giant feed on Android width',async({page})=>{
@@ -99,7 +104,7 @@ test('FOX One original advertisement and five interactive controls are present',
  await expect(page.locator('.qcx-fox-one-brand')).toHaveText('FOX ONE');
  await expect(page.locator('.twitter-tweet a')).toHaveAttribute('href','https://x.com/foxone/status/2113352129427730641');
  const actions=page.locator('#sourceQuickCardDetail .qca-toolbar');
- for(const label of ['Star','Collect','Share','+1 Build','Quick Search'])await expect(actions.getByText(label,{exact:false}).first()).toBeVisible();
+ for(const label of ['Star','Collect','Share','+1 Build'])await expect(actions.getByText(label,{exact:false}).first()).toBeVisible();
  await actions.getByRole('button',{name:/Star/}).click();
  await expect(actions.getByRole('button',{name:/Starred/})).toBeVisible();
  await actions.getByRole('button',{name:/Collect/}).click();
@@ -114,7 +119,7 @@ test('FOX One live news card has its own post, official FOX News viewing link, a
  await expect(page.locator('.twitter-tweet a')).toHaveAttribute('href','https://x.com/foxone/status/2070282166190408122');
  await expect(page.getByRole('link',{name:/Watch FOX News live at FOX One/})).toHaveAttribute('href','https://www.fox.com/stream/fox-news');
  const actions=page.locator('#sourceQuickCardDetail .qca-toolbar');
- for(const label of ['Star','Collect','Share','+1 Build','Quick Search'])await expect(actions.getByText(label,{exact:false}).first()).toBeVisible();
+ for(const label of ['Star','Collect','Share','+1 Build'])await expect(actions.getByText(label,{exact:false}).first()).toBeVisible();
  await actions.getByRole('button',{name:/Collect/}).click();
  await expect(actions.getByRole('button',{name:/Collected/})).toBeVisible();
 });
@@ -128,7 +133,7 @@ test('Pepe Jeans product photographs, exact merchant links, and all five actions
  await expect(card).toBeVisible({timeout:20000});
  await expect(card.locator('img.qbp-photo')).toHaveAttribute('src',/PL2050628_4UA_000_06_MO/);
  await expect(card.getByRole('link',{name:/Shop this exact item/})).toHaveAttribute('href',/pepejeans\.com\/uk\/en_gb\/pd\/iconic-brooke/);
- for(const label of ['Star','Collect','Share','+1 Build','Quick Search'])
+ for(const label of ['Star','Collect','Share','+1 Build'])
   await expect(card.locator('.qca-toolbar').getByText(label,{exact:false}).first()).toBeVisible();
  await expect(page.locator('#brandProductCards')).toBeHidden();
  await page.locator('#oracleCardNext').click();

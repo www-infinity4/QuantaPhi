@@ -3,6 +3,11 @@ on:
   pull_request:
     paths:
       - 'workers/infinity-brain-clock/**'
+      - 'workers/bubbles-connections/scope-config.mjs'
+      - 'workers/bubbles-connections/providers.mjs'
+      - 'workers/bubbles-connections/router.mjs'
+      - 'test/bubbles-cloudflare-scope-sync.test.mjs'
+      - 'test/cloudflare-scope-config.test.mjs'
       - 'scripts/brain-writer.mjs'
       - 'test/brain-autopilot-*.test.mjs'
       - 'test/brain-clock.test.mjs'
@@ -27,6 +32,6 @@ jobs:
           node --check scripts/brain-writer.mjs
       - name: Test staged triage, owner boundary, no-op recovery and Brain clock
         run: |
-          node --test test/brain-autopilot-triage.test.mjs test/brain-autopilot-writer.test.mjs test/brain-clock.test.mjs test/brain-writer.test.mjs test/bubbles-cloudflare-scope-sync.test.mjs
+          node --test test/brain-autopilot-triage.test.mjs test/brain-autopilot-writer.test.mjs test/brain-clock.test.mjs test/brain-writer.test.mjs test/bubbles-cloudflare-scope-sync.test.mjs test/cloudflare-scope-config.test.mjs
       - name: Validate deployable Cloudflare bundle without production writes
         run: npx --yes wrangler@4 deploy --config workers/infinity-brain-clock/wrangler.toml --dry-run --outdir /tmp/bubbles-autopilot-dry-run

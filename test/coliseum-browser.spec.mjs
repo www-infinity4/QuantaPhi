@@ -1,0 +1,37 @@
+import {test,expect} from '@playwright/test';
+const base='http://127.0.0.1:8799';
+test.use({viewport:{width:390,height:844}});
+test('Zeus Coliseum supports private idea creation, a local Joust, branching and switching rooms',async({page})=>{
+ await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
+ await expect(page.getByRole('heading',{name:/EXPERIENCE THE/})).toBeVisible();
+ await expect(page.locator('#modelCards > button')).toHaveCount(4);
+ await expect(page.getByText('PRIVATE DEVICE DEMO')).toBeVisible();
+ await page.locator('#ideaTitle').fill('A modular radio repair exchange');
+ await page.locator('#ideaDescription').fill('Connect neighborhood radio enthusiasts with verified repair instructions and exchangeable spare parts.');
+ await page.getByRole('button',{name:'Enter idea into the Joust'}).click();
+ await expect(page.locator('#ideaList').getByText('A modular radio repair exchange')).toBeVisible();
+ await page.getByRole('button',{name:'Support this idea'}).click();
+ await expect(page.locator('#ideaList').getByText('1 support · 0 questions')).toBeVisible();
+ await page.getByRole('button',{name:'Branch project'}).click();
+ await expect(page.locator('#ideaList .idea-card')).toHaveCount(2);
+ await page.getByRole('button',{name:'Chat',exact:true}).click();
+ await page.locator('#chatMessage').fill('Testing a version for radio enthusiasts.');
+ await page.getByRole('button',{name:'Save local note'}).click();
+ await expect(page.locator('#chatLog')).toContainText('Testing a version for radio enthusiasts.');
+ await page.reload({waitUntil:'domcontentloaded'});
+ await expect(page.locator('#ideaList .idea-card')).toHaveCount(2);
+ await page.getByRole('button',{name:'Find the next arena'}).click();
+ await expect(page.locator('#currentRoom')).toHaveText('HERMES 6.6');
+ await expect(page.locator('#roomStatus')).toContainText('Previous drafts');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
+});
+test('Zeus is one original card in the Oracle carousel with a single action bar',async({page})=>{
+ await page.goto(base+'/?card=zeus',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#oracleCardStage #coliseumZeusCard')).toBeVisible({timeout:20000});
+ const card=page.locator('#oracleCardStage #coliseumZeusCard');
+ await expect(card.getByRole('link',{name:/Enter the Coliseum/})).toHaveAttribute('href','/coliseum/');
+ await expect(card.locator('#coliseumZeusActions .qca-toolbar')).toHaveCount(1);
+ await expect(page.locator('#oracleCardStage .oracle-card-actions')).toHaveCount(0);
+ await expect(page.locator('#oracleCardPrevious')).toBeVisible();
+ await expect(page.locator('#oracleCardNext')).toBeVisible();
+});

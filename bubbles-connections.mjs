@@ -48,7 +48,19 @@ export function providerSignInErrorMessage(code){
     return 'Bubbles could not verify this browser session. Return to the original Bubbles browser and sign in again.';
   if(value==='state_invalid_or_used'||value==='state_expired')
     return 'This authorization was already used or expired. Start a new Cloudflare authorization.';
-  if(value==='connection_operation_failed'||value.startsWith('connection_complete_'))
+  if(/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_client$/.test(value))
+    return 'Cloudflare rejected the Bubbles OAuth client credentials. The server client configuration needs repair. Diagnostic: '+value+'.';
+  if(/^cloudflare_exchange_(?:[45]\d{2}|rejected)_invalid_grant$/.test(value))
+    return 'Cloudflare rejected the authorization code or PKCE verification. Start a fresh sign-in. Diagnostic: '+value+'.';
+  if(/^cloudflare_(?:exchange|refresh)_(?:[45]\d{2}|rejected)(?:_(?:invalid_client|invalid_grant|invalid_scope|invalid_request|unauthorized_client|unsupported_grant_type|server_error|temporarily_unavailable))?$/.test(value))
+    return 'Cloudflare could not complete the token exchange. Diagnostic: '+value+'.';
+  if(/^cloudflare_identity_[45]\d{2}$/.test(value))
+    return 'Cloudflare issued a token, but its User Details API could not verify the account. Diagnostic: '+value+'.';
+  if(['provider_response_invalid','provider_identity_invalid','provider_token_invalid','expiring_token_required','provider_response_too_large','vault_key_unavailable','vault_key_invalid'].includes(value))
+    return 'Bubbles could not verify or securely save the account connection. Diagnostic: '+value+'.';
+  if(/^connection_complete_(?:state|exchange|seal|store|handoff_read|handoff_decrypt|handoff_store|receipt_seal|receipt_store|unknown)_(?:timeout|type|internal)_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown)$/.test(value))
+    return 'Bubbles could not finish the account connection. Diagnostic: '+value+'.';
+  if(value==='connection_operation_failed')
     return 'Cloudflare returned to Bubbles, but Bubbles could not complete the account connection. Please retry; the connector needs repair if this repeats.';
   if(value==='cloudflare_client_scopes_unavailable'||value==='provider_not_configured')
     return 'The Bubbles Cloudflare OAuth application requires configuration before this permission can be authorized.';
@@ -218,10 +230,52 @@ export function mountConnections(container,{token}) {
   refresh.type='button';status.setAttribute('role','status');
   const scopes=element('fieldset',''),legend=element('legend','Google access');scopes.append(legend);
   const selections=[];
-  for(const [name,action] of [['Find Drive files','drive.read'],['Read spreadsheets','sheets.read'],['Read calendar events','calendar.read']]) {
+  for(const [name,action] of [['Find Drive files','drive.read'],['Read spreadsheets','sheets.read'],['Read calendar events','calendar.read'],['Read Gmail messages','gmail.read']]) {
     const label=element('label',''),check=document.createElement('input');check.type='checkbox';check.value=action;label.append(check,document.createTextNode(' '+name+' '));scopes.append(label);selections.push(check);
   }
   section.append(element('h2','Your accounts'),status,catalog,cancel,accounts,scopes,refresh);container.append(section);
+  const walletEmail=element('section','','ba-provider-card ba-wallet-email');
+  walletEmail.append(element('h2','StarCoin wallet email updates'),
+    element('p','Verify your wallet balance in real time. Choose a daily or weekly email preference after you connect a Google-verified address. Email delivery is not active until a sender is configured.','ba-muted'));
+  const emailStatus=element('p','Wallet email is not enrolled.','ba-muted');emailStatus.setAttribute('role','status');
+  const frequency=document.createElement('select');frequency.className='ba-field';frequency.setAttribute('aria-label','StarCoin wallet email frequency');
+  for(const [value,label] of [['weekly','Weekly balance email'],['daily','Daily balance email']]){
+    const option=document.createElement('option');option.value=value;option.textContent=label;frequency.append(option);
+  }
+  const preview=element('button','Verify my StarCoin balance','ba-control');
+  const enroll=element('button','Save wallet email preference','ba-control');
+  const unsubscribe=element('button','Disable wallet email updates','ba-control');
+  for(const button of [preview,enroll,unsubscribe])button.type='button';
+  let verifiedGoogleId=null;
+  preview.addEventListener('click',async()=>{
+    preview.disabled=true;emailStatus.textContent='Reconciling StarCoins with Unified Wallet and StarQuest…';
+    try{
+      const result=await client.call('/wallet-email/preview',{});
+      emailStatus.textContent='Verified wallet balance: '+(Number(result.balanceTenths)/10).toFixed(1)+
+        ' StarCoins as of '+new Date(result.asOf).toLocaleString()+'. No email was sent.';
+    }catch(error){emailStatus.textContent='Balance could not be verified: '+String(error.message||'wallet unavailable').slice(0,120);}
+    finally{preview.disabled=false}
+  });
+  enroll.addEventListener('click',async()=>{
+    if(!verifiedGoogleId){emailStatus.textContent='Connect a Google account with a verified email address before enrolling.';return;}
+    enroll.disabled=true;
+    try{
+      const result=await client.call('/wallet-email/preferences',{action:'enroll',cadence:frequency.value,connectionId:verifiedGoogleId});
+      emailStatus.textContent='Verified address: '+result.email+'. '+frequency.value+
+        ' preference saved. Delivery is pending an approved email sender; no messages are scheduled yet.';
+    }catch(error){emailStatus.textContent='Preference not saved: '+String(error.message||'connection unavailable').slice(0,120);}
+    finally{enroll.disabled=false;}
+  });
+  unsubscribe.addEventListener('click',async()=>{
+    unsubscribe.disabled=true;
+    try{
+      await client.call('/wallet-email/preferences',{action:'disable'});
+      emailStatus.textContent='Wallet email preference disabled. No balance email will be sent.';
+    }catch(error){emailStatus.textContent='Could not disable preference: '+String(error.message||'connection unavailable').slice(0,120);}
+    finally{unsubscribe.disabled=false}
+  });
+  walletEmail.append(frequency,preview,enroll,unsubscribe,emailStatus);
+  section.append(walletEmail);
   const pairing=element('details','','ba-pairing');pairing.append(element('summary','Advanced: connect another browser (optional)'));
   pairing.append(element('p','On your phone, open Bubbles on quantaphi.org in the browser with your existing wallet. Open these account settings and create a two-minute code. Enter it here. This grants account-connector access for 15 minutes, without transferring your wallet token. Keep the code private.'));
   const create=element('button','Create connection code on this device','ba-control'),redeem=element('button','Connect this browser','ba-control'),end=element('button','End this browser connection','ba-control'),code=document.createElement('input'),output=element('p','');
@@ -241,9 +295,20 @@ export function mountConnections(container,{token}) {
       const activeConnection=account=>account.status==='connected'&&
         Number.isFinite(account.expiresAt)&&account.expiresAt>Date.now()+30000;
       const signedIn=new Map();
+      verifiedGoogleId=null;
       for(const account of dataAccounts.accounts||[]){
         if(activeConnection(account)&&!signedIn.has(account.provider))signedIn.set(account.provider,account);
       }
+      const googleAccount=signedIn.get('google');
+      verifiedGoogleId=googleAccount?.id||null;
+      try{
+        const settings=await client.call('/wallet-email/preferences',{action:'read'});
+        frequency.value=settings.cadence||'weekly';
+        if(settings.enabled)emailStatus.textContent='Verified address: '+settings.email+
+          '. '+settings.cadence+' preference saved. Delivery pending sender setup; no email is scheduled.';
+        else if(settings.status==='verification_expired')emailStatus.textContent='Google verification expired. Reconnect before balance emails can be enabled.';
+        else emailStatus.textContent='No verified wallet email enrolled. Google connection and sender setup are required.';
+      }catch{emailStatus.textContent='Wallet email preferences unavailable until your Unified Wallet is connected.';}
       scopes.hidden=!data.providers.some(provider=>provider.id==='google'&&provider.configured);
       const unavailable=element('details','','ba-unavailable');unavailable.append(element('summary','Other account services'));
       for(const provider of data.providers) {
@@ -263,10 +328,13 @@ export function mountConnections(container,{token}) {
           continue;
         }
         if(upgrade)card.append(element('p','Cloudflare signed in, but full toolkit access is not approved yet. Review the expanded permissions to connect them.','ba-muted'));
-        const button=element('button',upgrade?'Authorize full Cloudflare toolkit':'Sign in with '+providerName,'ba-control');
+        const fullConsent=provider.id==='cloudflare'&&providerAuthorizationActions(provider).includes('owner.full');
+        const button=element('button',fullConsent?
+          (upgrade?'Authorize all 386 Cloudflare permissions':'Sign in and authorize 386 Cloudflare permissions'):
+          upgrade?'Authorize full Cloudflare toolkit':'Sign in with '+providerName,'ba-control');
         button.type='button';button.disabled=Boolean(client.pending);button.dataset.provider=provider.id;
         button.classList.add('ba-signin-button');
-        button.setAttribute('aria-label','Sign in with '+providerName);
+        button.setAttribute('aria-label',fullConsent?'Sign in and authorize all 386 Cloudflare permissions':'Sign in with '+providerName);
         card.append(button);
         if(provider.id==='cloudflare'){
           card.append(element('p','Cloudflare may already recognize your login and go straight to Review permissions. After authorizing, Bubbles must verify the connection.','ba-muted'));
@@ -291,8 +359,18 @@ export function mountConnections(container,{token}) {
         }
         button.addEventListener('click',async()=>{
           if(client.pending){status.textContent='Finish or cancel the current sign-in first.';return;}
-          button.disabled=true;button.setAttribute('aria-busy','true');status.textContent='Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
-          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):availableActions;
+          button.disabled=true;button.setAttribute('aria-busy','true');
+          status.textContent=provider.id==='cloudflare'&&availableActions.includes('owner.full')?
+            'Opening official Cloudflare sign-in for the 386 registered permissions. Approve only if you want to grant all 386.':
+            'Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
+          // The currently registered Cloudflare app has 386 scopes marked
+          // required. Asking for only two on first sign-in does not match that
+          // registration. Only send owner.full when the provider advertises it,
+          // and disclose that the authorization grants the full toolkit.
+          const fullCloudflare=provider.id==='cloudflare'&&availableActions.includes('owner.full');
+          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):
+            fullCloudflare?['owner.full']:
+            provider.id==='cloudflare'&&!upgrade?['account.read']:availableActions;
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
           try {await client.connect(provider.id,actions,async(error,account)=>{
             cancel.hidden=true;
@@ -333,6 +411,41 @@ export function mountConnections(container,{token}) {
             const result=await client.call('/disconnect',{id:account.id});await load();
             status.textContent=result.providerRevocation==='failed'?'Disconnected in Bubbles. Provider revocation failed; remove Bubbles access in that service’s account settings.':'Account disconnected.';
           }catch(error){status.textContent=error.message;button.disabled=false;}});row.append(button);
+        }
+        if(account.provider==='google'&&activeConnection(account)){
+          const gmailGranted=account.grantedActions?.includes('gmail.read');
+          const panel=element('section','','ba-gmail-reader');
+          panel.append(element('h3','Gmail · read-only in Bubbles'));
+          if(!gmailGranted){
+            panel.append(element('p','Gmail permission was not granted. Disconnect and reconnect Google, selecting Read Gmail messages, if you want Bubbles to read your inbox.','ba-muted'));
+          }else{
+            const query=document.createElement('input');query.type='search';query.maxLength=160;
+            query.placeholder='Find an email (optional)';query.setAttribute('aria-label','Search your connected Gmail inbox');query.className='ba-field';
+            const search=element('button','Read Gmail inbox','ba-control');search.type='button';
+            const results=element('div','');results.setAttribute('role','status');
+            search.addEventListener('click',async()=>{
+              search.disabled=true;results.replaceChildren(element('p','Reading Gmail with your approved Google account…'));
+              try{
+                const listing=await client.call('/read',{id:account.id,operation:'gmail.search',args:{query:query.value}});
+                const messages=Array.isArray(listing.data?.messages)?listing.data.messages.slice(0,20):[];
+                results.replaceChildren(element('p',messages.length+' message references from Gmail. No email was sent or changed.'));
+                for(const message of messages){
+                  if(!/^[A-Za-z0-9_-]{5,100}$/.test(message.id||''))continue;
+                  const preview=await client.call('/read',{id:account.id,operation:'gmail.message',args:{messageId:message.id}});
+                  const headers=preview.data?.payload?.headers||[];
+                  const header=name=>String(headers.find(h=>h.name?.toLowerCase()===name.toLowerCase())?.value||'').slice(0,250);
+                  const card=element('article','','ba-provider-card');
+                  card.append(element('strong',header('Subject')||'(no subject)'));
+                  card.append(element('p','From: '+(header('From')||'Unknown')+' · '+header('Date'),'ba-muted'));
+                  card.append(element('p',String(preview.data?.snippet||'').slice(0,450)));
+                  results.append(card);
+                }
+              }catch(error){results.replaceChildren(element('p','Gmail read failed: '+String(error.message||'connection unavailable').slice(0,150)));}
+              finally{search.disabled=false;}
+            });
+            panel.append(query,search,results);
+          }
+          row.append(panel);
         }
         if(account.provider==='github'&&activeConnection(account)){
           const inspect=element('button','Check GitHub repositories','ba-control');inspect.type='button';

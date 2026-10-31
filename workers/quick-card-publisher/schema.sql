@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS quick_cards (
  interaction_request TEXT NOT NULL, website TEXT NOT NULL, image TEXT NOT NULL DEFAULT '',
  kind TEXT NOT NULL CHECK(kind IN ('search','visit','video')),
  search_template TEXT NOT NULL DEFAULT '', video_id TEXT NOT NULL DEFAULT '',
+ preview_mode TEXT NOT NULL DEFAULT 'interactive' CHECK(preview_mode IN ('interactive','visual')),
  status TEXT NOT NULL DEFAULT 'unlisted' CHECK(status IN ('unlisted','approved','removed')),
  created_at TEXT NOT NULL
 );

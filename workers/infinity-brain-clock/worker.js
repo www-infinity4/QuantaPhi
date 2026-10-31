@@ -14,8 +14,9 @@ import {checkOwnerRunnerRequest,runnerDispatchReceipt,submitApprovedBridgeWork} 
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
-import {planCloudflareToken,confirmCloudflareToken} from './cloudflare-token-broker.mjs';
+import {planCloudflareToken,confirmCloudflareToken,inspectCloudflareTokenManager} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
+import {handleQuickCardBrowser,readBoundedJson} from './quick-card-browser.mjs';
 
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
@@ -724,7 +725,40 @@ export class BrainClock extends DurableObject{
     new URL(request.url).pathname.slice(7),body,request.headers.get('X-Phone-Device')||''));
    return Response.json(result.body,{status:result.status});
   }
+  // Only the outer /work/github/read ingress may call this internal route.
+  // It has already validated the live owner session and origin. No lease,
+  // editor credential, model prompt or action beyond read_repository/read_file.
+  if(new URL(request.url).pathname==='/github/read'){
+   let body;
+   try{body=await request.json()}catch{return Response.json({ok:false,error:'invalid_json'},{status:400});}
+   if(!body||!['read_repository','read_file'].includes(body.action)||
+      Object.keys(body).some(k=>!['action','repository','path'].includes(k)))
+    return Response.json({ok:false,error:'unsupported_read_only_action'},{status:400});
+   try{
+    const repository=validateRepository(body.repository);
+    const runtime=await githubEnvironment(this.env,this.ctx.storage);
+    if(body.action==='read_repository'){
+     const result=await githubOperation(runtime,{action:'read_repository',repository,includeRoot:true});
+     return Response.json(result);
+    }
+    const head=await githubOperation(runtime,{action:'read_repository',repository});
+    if(!/^([a-f0-9]{40})$/.test(head.headSha||''))throw Error('github_head_sha_invalid');
+    const data=await githubOperation(runtime,{action:'read_file',repository,path:body.path,ref:head.headSha});
+    if(!data.ok||data.exists===false)return Response.json({ok:false,error:'source_file_not_found',repository},{status:404});
+    const content=String(data.content||'').slice(0,30000);
+    return Response.json({ok:true,repository,path:data.path,ref:head.headSha,sha:data.sha,
+      content,truncated:data.content.length>content.length,
+      sourceUrl:'https://github.com/'+repository+'/blob/'+head.headSha+'/'+data.path.split('/').map(encodeURIComponent).join('/')});
+   }catch(error){
+    return Response.json({ok:false,error:String(error.message||'owner_github_read_failed').slice(0,140)},{status:503});
+   }
+  }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
+  if(new URL(request.url).pathname==='/quick-card-browser'){
+   const body=await readBoundedJson(request,2300);
+   const result=await this.ctx.blockConcurrencyWhile(()=>handleQuickCardBrowser(this.ctx.storage,this.env,body));
+   return Response.json(result.result,{status:result.httpStatus});
+  }
   if(new URL(request.url).pathname==='/owner/task-clock'){
    const body=await request.json();
    const response=await this.ctx.blockConcurrencyWhile(()=>ownerClockCommand(this.ctx.storage,this.env.WORK_DB,this.env.WRITER_OWNER_HASH,body));
@@ -738,6 +772,8 @@ export class BrainClock extends DurableObject{
     'Owner-approved '+result.capability+' token provisioned and stored encrypted on Brain. No secret value sent to chat.');
    return Response.json(result,{status:result.httpStatus||200});
   }
+  if(new URL(request.url).pathname==='/owner/cloudflare-scope-sync-diagnose')
+   return Response.json(await inspectCloudflareTokenManager(this.env));
   if(new URL(request.url).pathname==='/owner/cloudflare-scope-sync-plan'){
    const {planBubblesScopeSync}=await import('./cloudflare-scope-sync.mjs');
    return Response.json(await planBubblesScopeSync(this.ctx.storage,this.env));
@@ -1328,6 +1364,27 @@ export default{
     return output(request,await r.json(),r.status);
    }catch{return output(request,{ok:false,error:'phone_tool_unavailable'},503);}
   }
+  // Separate owner-verified GitHub READ path: no writer lease, no queue, no
+  // anonymous REST rate-limit fallback. The StarQuest/Brain bearer is checked
+  // here on every request and never passed to GitHub or a chat model.
+  if(path==='/work/github/read'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(Number(request.headers.get('Content-Length')||0)>1200)return output(request,{ok:false,error:'request_too_large'},413);
+   try{
+    const raw=await request.text();if(raw.length>1200)return output(request,{ok:false,error:'request_too_large'},413);
+    const body=JSON.parse(raw||'{}');
+    if(!body||typeof body!=='object'||Array.isArray(body)||
+       !['read_repository','read_file'].includes(body.action)||
+       Object.keys(body).some(key=>!['action','repository','path'].includes(key)))
+     return output(request,{ok:false,error:'unsupported_read_only_action'},400);
+    const result=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/github/read',{
+     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    return output(request,await result.json(),result.status);
+   }catch(error){return output(request,{ok:false,error:'owner_github_read_unavailable'},503);}
+  }
   if(path==='/work/github'&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
@@ -1339,6 +1396,19 @@ export default{
     const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/github',{method:'POST',body:raw});
     return output(request,await response.json(),response.status);
    }catch{return output(request,{ok:false,error:'direct_github_unavailable'},503)}
+  }
+  if(path==='/work/quick-card-browser'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(!/^application\/json(?:;|$)/i.test(request.headers.get('Content-Type')||''))return output(request,{ok:false,error:'json_required'},415);
+   try{
+    const body=await readBoundedJson(request,2300);
+    const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main'))
+     .fetch('https://clock.internal/quick-card-browser',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    return output(request,await response.json(),response.status);
+   }catch(error){return output(request,{ok:false,error:error.message==='browser_result_oversize'?'request_too_large':'quick_card_browser_unavailable'},error.message==='browser_result_oversize'?413:503)}
   }
   if(['/work/cloudflare/token-plan','/work/cloudflare/token-confirm'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
@@ -1357,7 +1427,7 @@ export default{
    }catch{return output(request,{ok:false,error:'cloudflare_token_broker_unavailable'},503);}
   }
   // Owner-scoped repair; plan has no mutation, confirmation is an explicit click.
-  if(['/work/cloudflare/scope-sync-plan','/work/cloudflare/scope-sync-confirm'].includes(path)&&request.method==='POST'){
+  if(['/work/cloudflare/scope-sync-diagnose','/work/cloudflare/scope-sync-plan','/work/cloudflare/scope-sync-confirm'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
@@ -1367,7 +1437,7 @@ export default{
    try{
     const body=JSON.parse(raw||'{}');
     if(Object.keys(body).some(k=>k!=='requestId'))return output(request,{ok:false,error:'scope_sync_request_invalid'},400);
-    const subpath=path.endsWith('-plan')?'/owner/cloudflare-scope-sync-plan':'/owner/cloudflare-scope-sync-confirm';
+    const subpath=path.endsWith('-diagnose')?'/owner/cloudflare-scope-sync-diagnose':path.endsWith('-plan')?'/owner/cloudflare-scope-sync-plan':'/owner/cloudflare-scope-sync-confirm';
     const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main'))
       .fetch('https://clock.internal'+subpath,{method:'POST',body:JSON.stringify(body)});
     return output(request,await r.json(),r.status);

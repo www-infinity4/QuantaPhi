@@ -5,19 +5,31 @@
 'use strict';
 const host=document.getElementById('oracleCardDeck'),stage=document.getElementById('oracleCardStage');
 if(!host||!stage)return;
+const TV_FRONT_BOOTSTRAP=(()=>{try{const api=window.QuantaTVFrontPriority;return !!api?.shouldPin(null,Date.now(),api.readFinal(localStorage))}catch{return false}})();
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
+ ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
+ ['disabilityHousingCard','Home Access · Housing with disability income'],
  ['pixieStoryCard','Pixie Stories · Read and explore'],
  ['googleTrendNba','NBA · Trending matchups'],
  ['googleTrendMlb','MLB · World Series'],
  ['churchOfIAmCard','Church of I AM · Gary Cardone'],
  ['googleTrendCulture','Media · Trending searches'],
  ['infiniteBook','Read an original story'],
- ['phiChannelCards','Watch a channel'],
+ ['infinityAffiliates','Infinity Affiliates · Match approved brands'],
+ ['infinityReaderMystery','Tales of Mystery & Suspense · Read'],
+ ['infinityReaderTwilight','Twilight Zone · Original Fiction'],
+ ['infinityReaderTech','Tech History · Discover'],
+ ['infinityReaderFame','Touts of Fame · Biographies'],
+ ['infinityReaderSports','Sports Almanac · Records'],
+ ['infinityReaderCosmic','Beyond the Signal · Read'],
+ ['phiChannelCards','KYOU · Infinity live TV'],
+ ['liveFoxGameCard','KYOU · FOX 15.1 · Iowa'],
+ ['liveFoxNewsCard','LiveNOW from FOX · Live news'],
  ['phiStoryWriter','Write a story'],
  ['phiMediaBuilder','Create images and video'],
  ['result','Explore research and Asteroid'],
@@ -31,16 +43,20 @@ const choices=[
  ['halloweenPhi','Watch a cinema'],
  ['phiProjectActions','Build a website'],
  ['shopAdPhi','Discover products'],
- ['phiChannelCards','Watch live television'],
+ ['phiChannelCards','KYOU · Infinity live TV'],
  ['publicCardTrends','Explore what is trending']
 ];
 
 /* These are the ORIGINAL live widgets, not duplicated external link previews.
  * Shared IDs connect the Oracle viewer to Public / For You / Following. */
 const CARD_DIRECTIONS={
+ liveFoxGameCard:['fox-live-game','Television','Visit KYOU’s official Iowa station, schedule and live newscasts with verified MLB game status'],
+ liveFoxNewsCard:['fox-live-news','Television','Watch the official LiveNOW from FOX news player'],
+ coliseumZeusCard:['coliseum-zeus','Collaboration','Pitch, vote, branch and build in the Zeus arena'],
  walmartShoppingCard:['walmart-shopping','Shopping','Shop Walmart pizza, groceries and related products'],
  cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
  quantaDirectoryCards:['public-directory','Directory','Search verified names, businesses and websites'],
+ disabilityHousingCard:['disability-housing','Housing','Prepare a housing intake with disability benefit income'],
  scienceQuickCards:['nasa-science','Science','Study current science and research'],
  pixieStoryCard:['pixie-stories','Stories','Read an original Pixie story'],
  googleTrendNba:['trending-nba','Sports','Explore an NBA match and related research'],
@@ -48,6 +64,13 @@ const CARD_DIRECTIONS={
  churchOfIAmCard:['church-of-i-am','Sunday conversations','Find Gary Cardone’s official Sunday I AM gathering'],
  googleTrendCulture:['trending-media','Media','Investigate popular media and events'],
  infiniteBook:['reads-realms','Stories','Read and research an original story'],
+ infinityAffiliates:['infinity-affiliates','Shopping','Match Infinity Approved brands and request product affiliation'],
+ infinityReaderMystery:['reader-mystery','Stories','Read original mysteries and public-domain detective fiction'],
+ infinityReaderTwilight:['reader-twilight','Stories','Read independent, original speculative stories'],
+ infinityReaderTech:['reader-tech','History','Read technology inventions and early computing histories'],
+ infinityReaderFame:['reader-fame','Biographies','Discover pathways to fame and overlooked innovators'],
+ infinityReaderSports:['reader-sports','Sports','Read historical games, milestones and athletic records'],
+ infinityReaderCosmic:['reader-cosmic','Stories','Read original cosmic fiction and public-domain space adventures'],
  phiChannelCards:['channels','Television','Watch a channel'],
  phiStoryWriter:['story-writer','Stories','Write or continue a story'],
  phiMediaBuilder:['image-builder','Media','Create images and video'],
@@ -75,7 +98,8 @@ const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={walmart:'walmartShoppingCard',google:'source-google','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ const names={zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ names.housing='disabilityHousingCard';names['disability-housing']='disabilityHousingCard';names['home-access']='disabilityHousingCard';
  const requested=url.searchParams.get('card');
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
 }catch{return null}})();
@@ -86,7 +110,8 @@ let active=null,expanded=false;
 let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
-let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantConnected=false;
+let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
+const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
 let feedState=null,proposed=null;
 const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
@@ -104,7 +129,7 @@ function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
- for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id]')){
+ for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
   if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
   if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
@@ -112,17 +137,18 @@ function registerSourceCards(){
   const category=node.querySelector('.iqc-kind')?.textContent?.trim()||'Website';
   const entry={id:'source-'+id,title:label+' · Interactive',feedId:id,
    category,feature:'Use the real '+label+' card controls',study:'Original source card with direct controls',
+   official:node.dataset.official||'',
    node,marker:null,count:Math.max(0,Math.min(1000,Number(counts['source-'+id])||0))};
   entries.push(entry);added=true;
  }
  if(added){
   updateTabs();predict();
-  // New sources enter the same rotation as originals, product cards and Cardone.
-  // Explicit deep links still take priority, but source arrival cannot steal
-  // the first slot from a legitimate earlier Quant/rotation selection.
+  // Honor deep links and visitor interaction. Before interaction, newly loaded
+  // accepted brands receive their requested priority over ordinary brands.
   const requested=entries.find(e=>e.id===spotlightRequested||e.feedId===spotlightRequested);
   if(!expanded&&!viewerTouched&&requested&&available(requested))show(requested,false);
   else if(!active&&!expanded)start();
+  // A newly loaded brand must not steal focus from an active website card.
  }
 }
 window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
@@ -145,11 +171,23 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study}));}
-function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
+function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
+function livePriority(e){
+ if(e?.id!=='phiChannelCards')return 0;
+ const priority=document.getElementById('liveFoxGameCard')?.dataset.tvFrontPriority;
+ return (priority===undefined?TV_FRONT_BOOTSTRAP:priority==='1')?1:0;
+}
+function eligible(){const cards=entries.filter(available).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
  updateInventory();
+ const live=eligible().find(livePriority),liveButton=document.getElementById('oracleCardLive');
+ if(liveButton)liveButton.hidden=!live;
+ for(const button of host.querySelectorAll('[data-oracle-family]')){
+  const count=eligible().filter(e=>cardFamily(e)===button.dataset.oracleFamily).length;
+  button.disabled=count===0;
+  const total=button.querySelector('[data-family-count]');if(total)total.textContent=String(count);
+ }
  tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
  if(follow){
   const saved=Boolean(active&&feedState?.following.includes(active.feedId));
@@ -162,11 +200,15 @@ function updateInventory(){
  const chooser=document.getElementById('oracleCardChooser'),inventory=document.getElementById('oracleCardInventory');
  if(!chooser)return;
  const cards=eligible();
- const signature=cards.map(e=>e.id).join('|');
+ const signature=cards.map(e=>e.id+':'+livePriority(e)).join('|');
  if(chooser.dataset.inventory!==signature){
   chooser.replaceChildren();
   const hint=document.createElement('option');hint.value='';hint.textContent='Choose a card…';chooser.append(hint);
-  for(const [label,list] of [['QuantaPhi originals',cards.filter(e=>!e.id.startsWith('source-'))],['Source experiences',cards.filter(e=>e.id.startsWith('source-'))]]){
+  for(const [label,list] of [
+   ['Live game · pinned first',cards.filter(livePriority)],
+   ['Infinity accepted',cards.filter(e=>e.node.matches('.iac-card'))],
+   ['QuantaPhi originals',cards.filter(e=>!e.id.startsWith('source-')&&!livePriority(e))],
+   ['Source experiences',cards.filter(e=>e.id.startsWith('source-')&&!e.node.matches('.iac-card'))]]){
    if(!list.length)continue;const group=document.createElement('optgroup');group.label=label;
    for(const e of list){const option=document.createElement('option');option.value=e.id;option.textContent=e.title;group.append(option)}chooser.append(group);
   }
@@ -204,13 +246,18 @@ function predict(){
   const tour=directionApi.nextDeckCycle(
    present.filter(c=>eligibleIds.has(c.id)),active?.feedId||'',seenByTab[selectedTab]);
   seenByTab[selectedTab]=tour.seen;
-  const pick=directionApi.nextFeedDirection(tour.cards,selectedTab,context,active?.feedId||'');
+  const balanced=familyApi?.selectNextFamilyPool(tour.cards,cardFamily(active))||tour.cards;
+  const pick=directionApi.nextFeedDirection(balanced,selectedTab,context,active?.feedId||'');
   proposed=possible.find(e=>e.feedId===pick.card?.id)||null;
   reason.textContent=proposed?(proposed.title+' · '+pick.reason+
    ' · '+tour.remaining+' other cards in this round'):
    'Use a card to help choose the next useful action.';
  }else{
-  proposed=possible.filter(x=>x!==active).sort((a,b)=>a.count-b.count)[0]||possible[0];
+  const rest=possible.filter(x=>x!==active);
+  const groups=['accepted','website','original'],pos=groups.indexOf(cardFamily(active));
+  const nextFamily=groups[(pos+1)%groups.length];
+  proposed=rest.filter(e=>cardFamily(e)===nextFamily).sort((a,b)=>a.count-b.count)[0]||
+   rest.sort((a,b)=>a.count-b.count)[0]||possible[0];
   reason.textContent=proposed?'Next: '+proposed.title:'';
  }
  next.disabled=possible.length<2;
@@ -232,6 +279,13 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
  viewerTouched=true;
  const revision=++selectionVersion;
  selectedTab=b.dataset.oracleFeed;visited.length=0;
+ if(active){
+  stage.dataset.switchboardTab=selectedTab;
+  window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
+   id:stage.dataset.switchboardId,title:stage.dataset.switchboardTitle,
+   category:stage.dataset.switchboardCategory,tab:selectedTab
+  }}));
+ }
  if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
  updateTabs();
@@ -258,9 +312,10 @@ window.addEventListener('quantaphi:feed-updated',e=>{
  feedState=readDirections();
  updateTabs();predict();
 });
-Promise.all([import('/quanta-feed-rank.mjs?v=20261024-clean3'),
- import('/quanta-feed-quants.mjs?v=20261024-directions1')]).then(([r,q])=>{
- directionApi=r;quantApi=q;feedState=readDirections();updateTabs();
+Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
+ import('/quanta-feed-quants.mjs?v=20261024-directions1'),
+ import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
+ directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
  if(selectedTab==='for-you')void connectQuant();
  predict();
 }).catch(()=>{reason.textContent='Card directions are not available; original interactive cards are still usable.'});
@@ -276,13 +331,16 @@ function returnActive(){
  if(!active)return;
  const {node,marker}=active;
  // Playing TV must stop immediately before the viewer switches away.
- if(active.id==='phiChannelCards')document.dispatchEvent(new CustomEvent('oracle:card-deactivated',{detail:{id:active.id}}));
+ document.dispatchEvent(new CustomEvent('oracle:card-deactivated',{detail:{id:active.id}}));
  // Story generation may reparent Asteroid into the research card while a
  // search begins. Never pull it back out of that authoritative context.
  if(node.parentNode===stage&&marker?.parentNode)marker.parentNode.insertBefore(node,marker);
  marker?.remove();
  active.marker=null;active=null;
  stage.replaceChildren();
+ delete stage.dataset.switchboardId;delete stage.dataset.switchboardTitle;
+ delete stage.dataset.switchboardCategory;delete stage.dataset.switchboardTab;
+ window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:null}));
 }
 function show(entry,remember=true){
  if(!entry||expanded||entry===active)return;
@@ -293,17 +351,27 @@ function show(entry,remember=true){
  const marker=document.createComment('Oracle card original location: '+entry.id);
  entry.node.parentNode.insertBefore(marker,entry.node);entry.marker=marker;
  presentOriginal(entry);stage.append(entry.node);active=entry;
+ stage.dataset.switchboardId=entry.feedId;
+ stage.dataset.switchboardTitle=entry.title;
+ stage.dataset.switchboardCategory=entry.category;
+ stage.dataset.switchboardTab=selectedTab;
+ window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
+  id:entry.feedId,title:entry.title,category:entry.category,tab:selectedTab
+ }}));
  entry.node.dispatchEvent(new Event('oracle:activate'));
  void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // Every original Oracle widget receives the same five real actions.
  // Source cards already own the toolbar inside mountCardTools.
- if(!entry.id.startsWith('source-')){
+ if(!entry.id.startsWith('source-')&&entry.id!=='coliseumZeusCard'){
   const displayed=entry;
   import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
    if(active!==displayed||!stage.contains(displayed.node))return;
    const container=document.createElement('div');container.className='oracle-card-actions';
+   // Capture the real photo/artwork from the displayed original card, not
+   // the generic QuantaPhi site preview used by unrelated URLs.
+   const mediaSrc=displayed.node.querySelector('[data-walmart-image],.qbp-photo,.sap-feature img,.iqc-media img,.qcx-art img,.premium-selected img,.oracle-original-cover img,img[src]')?.getAttribute('src')||'';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
-    category:displayed.category,route:'/?card='+encodeURIComponent(displayed.id)});
+    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
@@ -359,8 +427,33 @@ for(const shortcut of document.querySelectorAll('[data-oracle-spotlight]')){
   show(entry);host.scrollIntoView?.({block:'start',behavior:'smooth'});
  });
 }
+// Direct group shortcuts make all ready website pages reachable in one tap.
+for(const button of host.querySelectorAll('[data-oracle-family]')){
+ button.addEventListener('click',()=>{
+  const family=button.dataset.oracleFamily;
+  const matches=eligible().filter(e=>cardFamily(e)===family&&e!==active);
+  if(!matches.length){status.textContent='No other ready cards in this group. Try Public or choose a card.';return}
+  const unseen=matches.filter(e=>!seenByTab[selectedTab].has(e.feedId));
+  const pool=unseen.length?unseen:matches;
+  const chosen=[...pool].sort((a,b)=>(feedState?.viewed?.[a.feedId]||0)-
+   (feedState?.viewed?.[b.feedId]||0)||entries.indexOf(a)-entries.indexOf(b))[0];
+  viewerTouched=true;selectionVersion++;
+  if(expanded){
+   expanded=false;document.body.classList.remove('oracle-shelf-open');
+   scroll.setAttribute('aria-expanded','false');
+   scroll.textContent='↓ Scroll interactive cards / widgets';
+  }
+  show(chosen);host.scrollIntoView?.({block:'start',behavior:'smooth'});
+ });
+}
 next.addEventListener('click',()=>advance(1));
 prev.addEventListener('click',()=>advance(-1));
+document.getElementById('oracleCardLive')?.addEventListener('click',()=>{
+ const live=eligible().find(livePriority);if(!live)return;
+ viewerTouched=true;selectionVersion++;
+ if(expanded){expanded=false;document.body.classList.remove('oracle-shelf-open');scroll.setAttribute('aria-expanded','false');scroll.textContent='↓ Scroll interactive cards / widgets'}
+ show(live);host.scrollIntoView?.({block:'start',behavior:'smooth'});
+});
 scroll.addEventListener('click',()=>{
  expanded=!expanded;
  document.body.classList.toggle('oracle-shelf-open',expanded);
@@ -378,8 +471,11 @@ scroll.addEventListener('click',()=>{
  }
 });
 // Only a deliberate interaction INSIDE the active working card is a use.
+host.addEventListener('pointerdown',()=>{viewerTouched=true},{capture:true,passive:true});
+host.addEventListener('keydown',()=>{viewerTouched=true},true);
 host.addEventListener('click',e=>{
  if(!active||!stage.contains(e.target)||!e.target.closest?.('button,a,[role="button"],input[type="submit"]'))return;
+ viewerTouched=true;
  counts[active.id]=Math.min(1000,(counts[active.id]||0)+1);
  if(directionApi&&feedState){
   feedState=directionApi.markOpened(readDirections(),active.feedId);
@@ -391,27 +487,35 @@ document.body.classList.add('oracle-card-deck-active');
 // Every ready card competes for first placement. The source/museum/product
 // categories and both Cardone cards have no privileged opening positions.
 function chooseOpening(){
- const ready=eligible();
- if(!ready.length)return null;
+ const ready=eligible();if(!ready.length)return null;
+ const live=ready.find(livePriority);if(live)return live;
+ // Each visit starts with another family; 116 accepted brands no longer monopolize
+ // the starting slot. Preserve direct-link spotlight selection in start().
+ if(openingCursor===null){
+  try{
+   const saved=Number(localStorage.getItem('oracle:opening-rotation:v2'));
+   openingCursor=Number.isSafeInteger(saved)&&saved>=0?saved:0;
+   localStorage.setItem('oracle:opening-rotation:v2',String((openingCursor+1)%1000000));
+  }catch{openingCursor=0}
+ }
+ const cards=ready.map(e=>({...e,family:cardFamily(e)}));
+ const opening=familyApi?.openingFamilyPool(cards,openingCursor)||
+  cards.filter(c=>c.family===['accepted','website','original'][openingCursor%3]);
+ const pool=opening.length?opening:cards;
  if(directionApi&&feedState){
-  const catalog=liveCatalog(),context={...feedState,catalog,quantScores:quantWeights};
-  const selected=directionApi.nextFeedDirection(catalog,selectedTab,context,'').card;
+  const catalog=liveCatalog(),ids=new Set(pool.map(c=>c.feedId));
+  const context={...feedState,catalog,quantScores:quantWeights};
+  const selected=directionApi.nextFeedDirection(catalog.filter(c=>ids.has(c.id)),
+   selectedTab,context,'').card;
   const ranked=ready.find(e=>e.feedId===selected?.id);
   if(ranked)return ranked;
  }
- // Before the ranking module loads, rotate across sessions rather than
- // exposing one permanent first card. Store no raw searches or location.
- if(openingCursor===null){
-  try{
-   const saved=Number(localStorage.getItem('oracle:opening-rotation:v1'));
-   openingCursor=Number.isSafeInteger(saved)&&saved>=0?saved:0;
-   localStorage.setItem('oracle:opening-rotation:v1',String((openingCursor+1)%1000000));
-  }catch{openingCursor=0}
- }
- return ready[openingCursor%ready.length];
+ return pool[openingCursor%pool.length]||ready[0];
 }
 function start(){if(!active&&!expanded){
  const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
+ const tv=entries.find(livePriority);
+ if(!spotlightRequested&&tv&&!available(tv)){now.textContent='Infinity TV · Loading channels…';status.textContent='Loading the game-night TV viewer…';return;}
  // Keep an explicitly requested original card in front of generic rotation.
  // Some tools hydrate asynchronously after DOMContentLoaded.
  if(request&&!available(request)){status.textContent='Loading requested interactive card…';return;}
@@ -419,6 +523,12 @@ function start(){if(!active&&!expanded){
  if(first)show(first,false);else status.textContent='Loading original interactive cards…';
 }}
 start();
+window.addEventListener('quantaphi:live-tv-update',()=>{
+ updateTabs();predict();
+ const live=eligible().find(livePriority);
+ if(live&&!viewerTouched&&!expanded&&!spotlightRequested&&selectedTab==='public')show(live,false);
+ if(!active)start();
+});
 const observe=new MutationObserver(()=>{
  predict();
  if(!viewerTouched&&!expanded&&spotlightRequested){
@@ -450,6 +560,7 @@ document.addEventListener('visibilitychange',()=>{
  if(!document.hidden)start();
 });
 window.addEventListener('quantaphi:search-start',()=>{
+ viewerTouched=true;
  // Search owns the current Asteroid story. When the new overview arrives,
  // spotlight the ORIGINAL live result card without needing a long scroll.
  if(active?.id==='infiniteBook')returnActive();
@@ -463,4 +574,5 @@ window.addEventListener('quantaphi:search-start',()=>{
  if(available(entry)){watcher.disconnect();show(entry)}
  setTimeout(()=>watcher.disconnect(),60000);
 });
+window.addEventListener('quantaphi:query-start',()=>{viewerTouched=true;selectionVersion++});
 })();

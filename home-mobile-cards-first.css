@@ -1,0 +1,135 @@
+/* QuantaPhi homepage: card-first mobile structure, Oct 27 2026.
+   Only the homepage; do not change Bubbles Android, PWA updates, wallets or auth. */
+body.oracle-quanta #qtraffic.qtraffic-compact{
+  margin:5px 0 9px;
+  border:1px solid #deddd8;
+  border-radius:13px;
+  background:#fff;
+  color:#302e2c;
+  box-shadow:0 2px 6px #1726380b;
+}
+body.oracle-quanta .qtraffic-compact summary{
+  box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;
+  gap:4px 12px;min-height:45px;padding:9px 12px;
+  font:600 12px/1.25 system-ui,sans-serif;cursor:pointer;
+  list-style:none;
+}
+body.oracle-quanta .qtraffic-compact summary::-webkit-details-marker{display:none}
+body.oracle-quanta .qtraffic-compact summary strong{font-weight:850;font-variant-numeric:tabular-nums}
+body.oracle-quanta .qtraffic-compact-label{font-weight:900;font-size:13px;color:#263948}
+body.oracle-quanta .qtraffic-toggle{margin-left:auto;color:#475f71;text-decoration:underline;text-underline-offset:3px;font-size:11px;font-weight:800}
+body.oracle-quanta .qtraffic-compact[open] .qtraffic-toggle{color:transparent;font-size:0;text-decoration:none}
+body.oracle-quanta .qtraffic-compact[open] .qtraffic-toggle::after{content:"Less";color:#475f71;font-size:11px;text-decoration:underline}
+body.oracle-quanta .qtraffic-expanded{padding:0 12px 13px}
+body.oracle-quanta #qtrafficNote{display:block;color:#575f64;font-size:12px;line-height:1.5}
+/* The menu already provides every app and account connection link; the
+   separate oversized installers list must not interrupt search and cards. */
+body.oracle-quanta main.app > p.sub{display:none!important}
+body.oracle-quanta .q-install-details{
+ display:block!important;margin:12px 0 18px;padding:10px 12px;
+ background:#fff;border:1px solid #dedfdc;border-radius:11px;
+ font-size:12px;color:#50606a
+}
+body.oracle-quanta .q-install-details summary{cursor:pointer;font-size:12px;font-weight:800;min-height:29px;line-height:1.35}
+body.oracle-quanta #oracleCardDeck .shopphi-flank .shopphi-flank-visual{
+ /* Real product companions must not shrink their image away to fit text. */
+ flex:0 0 auto!important;min-height:120px!important;
+}
+/* The wallet recovery action stays navigable, adjacent to Wallet in the menu. */
+body.oracle-quanta #qmenu #qpCloudRecoveryLink{
+ display:flex!important;align-items:center;justify-content:flex-start!important;
+ background:#fff!important;border:0!important;border-radius:9px!important;
+ min-height:48px!important;margin:3px 0!important;padding:12px 15px!important;
+ font:800 17px/1.35 system-ui,sans-serif!important;
+ color:#542b79!important;text-decoration:none!important;white-space:normal!important
+}
+body.oracle-quanta #oracleCardDeck .oracle-direction-tabs{margin:0 0 5px}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav{
+ display:grid;grid-template-columns:44px minmax(0,1fr) auto 44px;
+ gap:6px;align-items:center;
+}
+body.oracle-quanta #oracleCardDeck #oracleCardNow{
+ display:block;min-width:0;max-width:100%;overflow-wrap:anywhere;
+ text-align:left;font:750 14px/1.2 system-ui,sans-serif;
+ color:#283b49;
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav #oracleCardFollow{
+ position:static!important;float:none!important;transform:none!important;animation:none!important;
+ box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;
+ width:auto;min-width:0;min-height:40px;max-height:44px;padding:7px 9px;
+ border:1px solid #cbd8e0;border-radius:10px;background:#f4f8fa;
+ color:#1f4a64;font:800 12px/1.2 system-ui,sans-serif;
+ box-shadow:none!important;white-space:nowrap;cursor:pointer
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav #oracleCardFollow[hidden]{display:none!important}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav #oracleCardFollow[aria-pressed="true"]{
+ background:#e3f1e9;border-color:#7db39a;color:#20523a
+}
+body.oracle-quanta #oracleCardDeck .oracle-direction-action{padding:0!important;margin:0!important;min-height:0!important}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-stage{
+ margin:8px 0 8px;min-height:0;max-width:100%;overflow-wrap:anywhere;
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-stage:empty::after{
+ content:"Getting your next interactive card ready…";
+ display:block;font-size:13px;line-height:1.35;color:#586974;padding:12px;
+ background:#fff;border:1px solid #e0e4e7;border-radius:12px
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-library{
+ background:#fff;border:1px solid #e2e3e5;border-radius:11px;
+ padding:9px 11px;margin:8px 0;color:#3b5264;font-size:13px
+}
+body.oracle-quanta #oracleCardDeck .oracle-card-library summary{font-weight:800;cursor:pointer;min-height:26px}
+body.oracle-quanta #oracleCardDeck .oracle-card-library select{width:100%;max-width:100%;min-height:44px;display:block;margin:7px 0;font-size:15px}
+body.oracle-quanta #oracleCardDeck .oracle-card-scroll{margin-top:6px}
+/* Current search remains the primary operation; status blocks stay out of its way. */
+@media(max-width:650px){
+ body.oracle-quanta main.app{padding:11px 12px 42px}
+ body.oracle-quanta .qtop{
+  display:grid;grid-template-columns:44px minmax(0,1fr) auto auto;
+  gap:7px;align-items:center;row-gap:7px
+ }
+ body.oracle-quanta .qtop #qmenuBtn{
+  width:44px;min-width:44px;min-height:44px;height:44px;
+  border-radius:12px;font-size:24px;padding:0
+ }
+ body.oracle-quanta .qtop h1{
+  width:auto;min-width:0;margin:0;
+  font-size:clamp(21px,6.1vw,29px);letter-spacing:-.06em;line-height:1.1;white-space:nowrap
+ }
+ body.oracle-quanta .qtop #qNewSearch{
+  min-height:43px;padding:6px 8px;border-radius:11px;
+  font:800 12px/1.1 system-ui,sans-serif;white-space:normal;max-width:88px
+ }
+ body.oracle-quanta .qtop .enroll-btn{
+  min-height:43px;padding:7px 10px;border-radius:11px;
+  font:850 13px/1.2 system-ui,sans-serif
+ }
+ body.oracle-quanta .qtop .qbalances{
+  grid-column:1/-1;width:100%;min-width:0;margin:0;padding:0;
+  display:grid;grid-template-columns:1fr 1fr 1.38fr;align-items:stretch;gap:7px
+ }
+ body.oracle-quanta .qbalances :is(#qinfinity,#qtoken,#controlPhiWalletButton){
+  box-sizing:border-box;margin:0;min-width:0;min-height:40px;padding:7px 6px;
+  border:1px solid #d0d8df;border-radius:11px;
+  font:800 12px/1.2 system-ui,sans-serif;
+  white-space:normal;text-align:center;background:#fff;color:#243443
+ }
+ body.oracle-quanta #controlPhiWalletButton strong{font-size:13px}
+ body.oracle-quanta #controlPhiWalletButton small{font-size:10px}
+ body.oracle-quanta .search{margin:7px 0 3px!important;padding:3px 0!important;gap:7px!important}
+ body.oracle-quanta .search #q{min-height:48px!important;border:1px solid #9aaebc!important;font-size:16px!important}
+ body.oracle-quanta .search #go{min-height:48px!important;padding:8px 13px!important;border-radius:11px!important}
+ body.oracle-quanta #oracleCardDeck{margin:7px 0 18px!important}
+ body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav strong{font-size:13px}
+ body.oracle-quanta #oracleCardDeck .oracle-card-deck-stage{margin-top:5px}
+}
+@media(max-width:350px){
+ body.oracle-quanta .qtop{grid-template-columns:43px minmax(0,1fr) auto auto;gap:5px}
+ body.oracle-quanta .qtop #qNewSearch{max-width:74px;font-size:11px}
+ body.oracle-quanta .qtop .enroll-btn{font-size:12px;padding:6px 8px}
+ body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav{gap:4px}
+ body.oracle-quanta #oracleCardDeck #oracleCardFollow{font-size:11px;padding:6px}
+}
+@media(prefers-reduced-motion:reduce){
+ body.oracle-quanta #oracleCardDeck #oracleCardFollow{transition:none!important;animation:none!important}
+}

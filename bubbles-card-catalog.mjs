@@ -1,11 +1,21 @@
 // Repository-backed card definitions. Only these declared modules/routes may run in chat.
+import {HOUSING_HELP_RESOURCES,housingResourceRoute} from './housing-help-catalog.mjs';
 const local=(id,title,mount,scripts,styles=[],aliases=[],extraMounts=[])=>({id,title,mount,scripts,styles,aliases,extraMounts,repository:'www-infinity4/QuantaPhi',pageUrl:'/#'+mount,url:'/bubbles-card-host.html?card='+id});
 const app=(id,title,path,repo,aliases=[],play='')=>({id,title,url:path,repository:'www-infinity4/'+repo,aliases,play,surface:id==='bubbles-workshop'?'body':id==='infinity-radio'?'.player':'main, [role="main"]'});
 export const cards=Object.freeze([
+ app('disability-housing','Home Access · Disability Housing','/disability-housing.html','QuantaPhi',['disability housing','disabled housing','housing on disability','ssi housing','ssdi housing','usda housing','home access','housing assistance']),
+ ...HOUSING_HELP_RESOURCES.map(r=>app('housing-help-'+r.id,r.title+' · '+r.provider,housingResourceRoute(r.id),'QuantaPhi',[r.id,r.id==='sieda'?'seida':r.id,r.provider.toLowerCase()+' housing help',r.title.toLowerCase()])),
  app('bubbles-workshop','Bubbles Agent Workshop','/bubbles-agent-workshop/','Bubbles-Agent-Workshop',['agent workshop','build workshop']),
  app('infinity-radio','Infinity Radio','/infinity-radio/','Alien-Radio',['radio','alien radio'],'#play-btn'),
  local('story-writer','Story Writer','phiStoryWriter',['phi-visual-render.js','phi-story-writer.js'],['phi-story-writer.css'],['oracle story writer']),
  local('reads-realms','Reads & Realms','infiniteBook',['infinite-book-discovery.js','infinite-book.js'],['infinite-book.css'],['reads and realms','reads realms','big book']),
+ app('infinity-affiliates','Infinity Affiliates · Approved Products','/infinity-affiliates.html','QuantaPhi',['affiliates','affiliate products','infinity approved affiliate','join affiliate program','affiliate request','brand associations']),
+ app('reader-mystery','Tales of Mystery & Suspense','/?card=infinityReaderMystery','QuantaPhi',['mystery stories','tales of mystery']),
+ app('reader-twilight','Twilight Zone · Original Fiction','/?card=infinityReaderTwilight','QuantaPhi',['twilight zone stories','speculative fiction']),
+ app('reader-tech','Tech History','/?card=infinityReaderTech','QuantaPhi',['technology history','computing stories']),
+ app('reader-fame','Touts of Fame','/?card=infinityReaderFame','QuantaPhi',['touts of fame','famous people stories']),
+ app('reader-sports','Sports Almanac','/?card=infinityReaderSports','QuantaPhi',['sports history','sports stories']),
+ app('reader-cosmic','Beyond the Signal','/?card=infinityReaderCosmic','QuantaPhi',['science fiction stories','space mysteries']),
  local('image-builder','Image Generator','phiImageBuilder',['phi-visual-render.js','phi-generation-references.js','phi-image-builder.js'],['phi-image-builder.css'],['image builder','image studio']),
  local('video-builder','Video Builder','phiVideoBuilder',['phi-video-builder.js'],[],['video studio']),
  local('fred-spaces','Fred Spaces','fredSpacesRadio',['fred-spaces-radio.js'],['fred-spaces-radio.css'],['fred radio','fred krueger','fred space','freds spaces','freds space']),
@@ -35,6 +45,7 @@ export const cards=Object.freeze([
  app("radio-atwater-kent-20","Atwater Kent Model 20","/quanta-feed-card.html?card=radio-atwater-kent-20",'QuantaPhi',["atwater kent 20"]),
  app("robinhood","Robinhood Research Card","/quanta-feed-card.html?card=robinhood",'QuantaPhi',["robinhood research"]),
  app("chime","Chime Bank Card","/quanta-feed-card.html?card=chime",'QuantaPhi',["chime bank"]),
+ app("x-money","X Money · Signup & Infinity Money Lab","/x-money.html",'QuantaPhi',["x money","money card","infinity money","x money signup","x money quick card","website phone number"]),
  app("ebay","eBay Market Card","/quanta-feed-card.html?card=ebay",'QuantaPhi',["ebay marketplace"]),
  app("gold","Gold Market Charts","/quanta-feed-card.html?card=gold",'QuantaPhi',["gold spot price"]),
  app("silver","Silver Market Charts","/quanta-feed-card.html?card=silver",'QuantaPhi',["silver spot price"]),
@@ -59,6 +70,8 @@ export const cards=Object.freeze([
  app('fox-one-video','FOX One Original Advertisement','/source-quick-card.html?card=fox-one','QuantaPhi',['fox one','foxone','fox one ad','fox one advertisement']),
  app('fox-one-live-news','FOX One · Live News Video','/source-quick-card.html?card=fox-one-live-news','QuantaPhi',['fox one news','fox news live promo','fox one live news','fox live news ad']),
  app('starmaker-studio','StarMaker Song Studio','/studio/','QuantaPhi',['starmaker','karaoke','song directory','sing','record voice','music studio']),
+ app('quick-card-wiring','Quick Card Wiring Study','/quick-card-wiring.html','QuantaPhi',['c13b0 quick card','wiring template','site schematic','website mirror study','quick card study']),
+ app('integra-validator','Integra · Quick Card Validation','/integra-validation.html','QuantaPhi',['integra','validate quick card','source audit','card security check','integra ai']),
  app('quantaphi','QuantaPhi','/','QuantaPhi',['quantaphi home','quantaphi website','quantaphi page']),
  app('alien-coin','Alien Coin','/alien-coin/','Alien-Coin',['alien coin website']),
  app('resonance','Resonance Calculator','/resonance.html','QuantaPhi',['resonance engine']),

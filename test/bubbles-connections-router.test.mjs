@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {handleConnections,PREFIX} from '../workers/bubbles-connections/router.mjs';
+import {connectionResult} from '../workers/bubbles-connections/completion.mjs';
 const bearer='Bearer sq_'+ 'a'.repeat(40);
 function request(path,{method='GET',origin='https://quantaphi.org',authorization=bearer,body}={}) {
   return new Request('https://quantaphi.org'+PREFIX+path,{method,headers:{Origin:origin,Authorization:authorization,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});
@@ -11,6 +12,25 @@ test('router rejects foreign origins and unauthenticated callers before resolvin
   const resolve=()=>assert.fail('must not resolve a service');
   assert.equal((await handleConnections(request('/accounts',{origin:'https://evil.test'}),env,resolve)).status,403);
   assert.equal((await handleConnections(request('/accounts',{authorization:''}),env,resolve)).status,401);
+});
+
+test('Unified Wallet identity remains usable without provider configuration or a connection Durable Object',async()=>{
+ const result=await handleConnections(request('/session'),{...env,CONNECTIONS_READY:false},()=>assert.fail('sign-in must not access provider credentials'));
+ assert.deepEqual(await result.json(),{ok:true,walletVerified:true});
+ const missing=await handleConnections(request('/session',{authorization:''}),env,()=>assert.fail());
+ assert.equal(missing.status,401);
+ const foreign=await handleConnections(request('/session',{origin:'https://evil.test'}),env,()=>assert.fail());
+ assert.equal(foreign.status,403);
+});
+
+test('setup check requires a verified wallet and cannot use a body-supplied identity',async()=>{
+ let called=0;
+ const resolve=()=>({checkSetup:async input=>{called++;assert.equal(input.userId,'verified-alice');
+  return {vault:'passed',storage:'passed',client:{status:'client_accepted'},accountVerified:false};}});
+ const good=await handleConnections(request('/setup/check',{method:'POST',body:{userId:'attacker'}}),env,resolve);
+ assert.equal(good.status,200);assert.equal((await good.json()).accountVerified,false);
+ const bad=await handleConnections(request('/setup/check',{method:'POST',authorization:'',body:{}}),env,resolve);
+ assert.equal(bad.status,401);assert.equal(called,1);
 });
 test('same-origin browser GET works without Origin while cross-site and unsafe requests stay blocked',async()=>{
   const headers={Authorization:bearer,'Sec-Fetch-Site':'same-origin'};
@@ -78,12 +98,43 @@ test('callback rejects unregistered states without revealing provider code',asyn
   const configured={CONNECTIONS:{idFromName:name=>name,get:()=>({lookupOAuthState:async()=>{throw Error('state_invalid_or_used');}})}};
   const response=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/github/callback?state='+state+'&code=secret'),configured,()=>assert.fail());
   assert.equal(response.status,303);
-  assert.equal(response.headers.get('Location'),PREFIX+'/github/callback?result=failed');
+  assert.equal(response.headers.get('Location'),PREFIX+'/github/callback?result=failed&reason=callback_state_invalid');
   assert.ok(!response.headers.get('Location').includes('secret'));
 });
 test('unexpected provider error text is redacted and no token appears in response',async()=>{
   const response=await handleConnections(request('/refresh',{method:'POST',body:{id:'id'}}),env,()=>({refresh:async()=>{throw Error('secret-token-would-be-leaked');}}));
   assert.equal(response.status,503);assert.equal((await response.json()).error,'connection_operation_failed');
+});
+
+test('Android finish and status return safe RPC failures as errors, never ok:true',async()=>{
+  for(const path of ['/handoff/finish','/handoff/status']){
+    for(const failure of ['cloudflare_exchange_401_invalid_client','cloudflare_exchange_400_invalid_grant',
+      'cloudflare_identity_403','provider_token_invalid','vault_key_unavailable']){
+      const fail=()=>connectionResult(async()=>{throw Error(failure);});
+      // A real RPC result is a plain value, without Error custom properties.
+      const rpc=async()=>JSON.parse(JSON.stringify(await fail()));
+      const response=await handleConnections(request(path,{method:'POST',body:{provider:'cloudflare',state:'a'.repeat(43)}}),
+        env,()=>({finishHandoff:rpc,handoffStatus:rpc}));
+      assert.equal(response.status,failure==='vault_key_unavailable'?503:400);
+      assert.deepEqual(await response.json(),{ok:false,error:failure});
+    }
+  }
+});
+
+test('RPC diagnostics classify receipt storage errors without disclosing underlying text',async()=>{
+  const secret='private-provider-code-and-token';
+  const error=Object.assign(new TypeError('storage failed: '+secret),{connectionStage:'receipt_store'});
+  const result=await connectionResult(async()=>{throw error;});
+  assert.deepEqual(result,{connectionError:'connection_complete_receipt_store_type_unknown'});
+  const response=await handleConnections(request('/handoff/finish',{method:'POST',body:{provider:'cloudflare',state:'a'.repeat(43)}}),
+    env,()=>({finishHandoff:async()=>result}));
+  const body=await response.text();
+  assert.equal(response.status,400);
+  assert.ok(!body.includes(secret));
+  assert.match(body,/connection_complete_receipt_store_type_unknown/);
+  const poisoned=await handleConnections(request('/handoff/finish',{method:'POST',body:{provider:'cloudflare'}}),
+    env,()=>({finishHandoff:async()=>({connectionError:'cloudflare_exchange_400_'+secret})}));
+  assert.deepEqual(await poisoned.json(),{ok:false,error:'connection_operation_failed'});
 });
 
 test('two-provider gate reuses tenant-scoped verified records and never gives chat permission itself',async()=>{
@@ -110,6 +161,7 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
  assert.equal(result.enforced,false);
  assert.equal(result.mode,'preview');
  assert.equal(result.ready,true);
+ assert.equal(result.walletVerified,true);
  assert.equal(result.providers.cloudflare.permissionsApproved,true);
  assert.equal(result.providers.github.permissionsApproved,true);
  assert.ok(!JSON.stringify(result).includes('not-exposed'));
@@ -230,8 +282,77 @@ test('public scope inventory is session-free, secret-free, and never grants muta
   assert.equal(data.ok,true);
   assert.equal(data.clientIdPrefix,'8f676e020d9ff91a');
   assert.equal(data.scopeInventory.serverAllowlistCount,FULL_CLOUDFLARE_SCOPES.split(' ').length);
+  assert.equal(data.scopeInventory.supportsVersionedAllowlist,true);
+  assert.match(data.scopeInventory.scopeSetDigest,/^[\w-]{43}$/);
+  assert.equal(data.scopeInventory.configurationRevision,null);
   assert.ok(!JSON.stringify(data).includes('hidden-secret'));
   assert.ok(!Object.keys(data).includes('providers'));
   const blocked=await handleConnections(new Request(url,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}),configured,()=>assert.fail('no mutation'));
   assert.equal(blocked.status,403);
+});
+
+test('Cloudflare callback return distinguishes decline from server failure without exposing codes',async()=>{
+ const {callbackPage}=await import('../workers/bubbles-connections/router.mjs');
+ const denied=await callbackPage('cloudflare','declined').text();
+ const failed=await callbackPage('cloudflare','failed').text();
+ assert.match(denied,/declined the requested access/);
+ assert.match(failed,/authorization could not be received/);
+ assert.doesNotMatch(denied,/access_token|refresh_token|client_secret/);
+});
+
+test('Cloudflare callback reports missing authorization code without exposing state',async()=>{
+ const state='z'.repeat(43);
+ const response=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/cloudflare/callback?state='+state),
+  {CONNECTIONS:{idFromName:name=>name,get:()=>assert.fail('must not access state registry without code')}},
+  ()=>assert.fail('must not resolve user identity'));
+ assert.equal(response.status,303);
+ assert.equal(response.headers.get('Location'),PREFIX+'/cloudflare/callback?result=failed&reason=callback_missing_code');
+ assert.ok(!response.headers.get('Location').includes(state));
+});
+test('OAuth provider invalid_scope is classified separately from user decline',async()=>{
+ const state='s'.repeat(43);
+ const env={CONNECTIONS:{idFromName:name=>name,get:()=>({
+  lookupOAuthState:async()=>({userId:'verified-alice'})
+ })}};
+ const response=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/cloudflare/callback?state='+state+'&error=invalid_scope&error_description=SECRET'),
+  env,()=>({handoff:async input=>{assert.equal(input.error,true);return {received:true};}}));
+ assert.equal(response.status,303);
+ assert.equal(response.headers.get('Location'),PREFIX+'/cloudflare/callback?result=failed&reason=invalid_scope');
+ assert.doesNotMatch(response.headers.get('Location'),/SECRET|state=|code=/);
+ const page=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/cloudflare/callback?result=failed&reason=invalid_scope'),
+  env,()=>assert.fail());
+ const html=await page.text();
+ assert.match(html,/rejected the requested permission combination/);
+ assert.doesNotMatch(html,/SECRET/);
+});
+
+test('callback never claims receipt when Durable Object handoff fails and reveals only safe failure codes',async()=>{
+  const state='z'.repeat(43);
+  const registry={lookupOAuthState:async()=>({userId:'verified-alice'})};
+  const e={CONNECTIONS:{idFromName:name=>name,get:()=>registry}};
+  const expected={
+    state_invalid:'callback_handoff_state_invalid',
+    conflicting_callback:'callback_handoff_conflict',
+    decrypt:'callback_handoff_decrypt_failed',
+    encrypt:'callback_handoff_encrypt_failed',
+    storage:'callback_handoff_store_failed',
+    unavailable:'callback_handoff_failed',
+  };
+  for(const [failure,reason] of Object.entries(expected)){
+    const response=await handleConnections(
+      new Request('https://quantaphi.org'+PREFIX+'/cloudflare/callback?state='+state+'&code=private-code'),
+      e,async()=>({handoff:async()=>({received:false,failure})}));
+    assert.equal(response.status,303);
+    const location=response.headers.get('Location');
+    assert.equal(location,PREFIX+'/cloudflare/callback?result=failed&reason='+reason);
+    assert.doesNotMatch(location,/private-code|state=|z{20}/);
+    const page=await handleConnections(new Request('https://quantaphi.org'+location),e,()=>assert.fail());
+    const html=await page.text();
+    assert.equal(page.status,200);
+    assert.doesNotMatch(html,/private-code|z{20}/);
+  }
+  const undefinedResponse=await handleConnections(new Request(
+    'https://quantaphi.org'+PREFIX+'/cloudflare/callback?state='+state+'&code=private-code'),
+    e,async()=>({handoff:async()=>({})}));
+  assert.equal(undefinedResponse.headers.get('Location'),PREFIX+'/cloudflare/callback?result=failed&reason=callback_handoff_failed');
 });

@@ -1,6 +1,9 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
+import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
+import {tinyfishCard} from './tinyfish-card-catalog.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
+import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
  */
@@ -84,6 +87,7 @@ export function createCardArtwork(card,small=false){
 function searchTool(root,card,options={}){
  const spec=searchBase[card.id];if(!spec)return false;
  const direct=card.id==='google'||card.id==='bing';
+ if(!direct&&!tinyfishCard(card.id))return false;
  const panel=section(root,direct?'SEARCH · '+spec[1].toUpperCase():'SEARCH · ORIGINAL SOURCE',direct?'Search the web with '+spec[1]:'Find exactly what interests you');
  const form=node('form','qcx-search-form');const field=input(card.id==='facebook'?'Local events, people, groups…':card.id==='ebay'?'Morgan dollars, radios, parts…':direct?'Search '+spec[1]+'…':'Topic, show, artist, product…','Search '+spec[1]);
  if(card.id==='instagram')field.placeholder='Enter a hashtag (without #)';
@@ -92,7 +96,7 @@ function searchTool(root,card,options={}){
  if(direct){
   // The search starts on this card. Infinity Viewer owns a SAME-ORIGIN
   // results interface; google.com cannot be framed as a third-party page.
-  form.classList.add('qcx-native-search');
+  if (form) form.classList.add('qcx-native-search');
   field.name='q';
   form.addEventListener('submit',e=>{
    e.preventDefault();const q=field.value.trim().slice(0,180);if(!q)return;
@@ -103,27 +107,17 @@ function searchTool(root,card,options={}){
    }else location.assign(target);
   });
   note(panel,'Google/Bing listings are displayed through the Infinity search broker, with their source identified. This is an independent QuantaPhi tool.');
- }else if(liveSourceProfile(card.id)){
-  // Keep the existing single search field: source-matched public listings
-  // appear INSIDE this card instead of opening a different browser view.
-  const results=node('div','qcx-source-live');
-  results.setAttribute('aria-label',liveSourceProfile(card.id).name+' public search results');
+ }else{
+  const results=node('div','qcx-source-live');results.setAttribute('aria-label',spec[1]+' website results');
   form.addEventListener('submit',async e=>{
-   e.preventDefault();const query=field.value.trim().slice(0,110);if(!query)return;
+   e.preventDefault();const query=field.value.trim().slice(0,180);if(query.length<2)return;
    b.disabled=true;
-   try{await showLiveSourceResults(results,card.id,query);}
-   finally{b.disabled=false;}
+   try{await showCardWebsiteResults(results,card.id,'search',query)}
+   catch{/* The original website failure is visible in this card. */}
+   finally{b.disabled=false}
   });
   panel.append(form,results);
-  const target=card.official||card.url||spec[0];
-  if(/^https:\/\//.test(target))panel.append(link('Open original '+liveSourceProfile(card.id).name+' site',target));
-  note(panel,'Results are independently indexed public pages, filtered to the original website. Not an official provider API, live listing inventory, price quote, or account session.');
- }else{
-  form.addEventListener('submit',e=>{
-   e.preventDefault();const query=field.value.trim().replace(/^#/,'');if(!query)return;
-   // Other sites' authenticated search cannot be copied into this origin.
-   window.open(spec[0]+encodeURIComponent(query),'_blank','noopener,noreferrer');
-  });
+  note(panel,'Public source pages returned through TinyFish, with original links and the time checked.');
  }
  if(!panel.contains(form))panel.append(form);
  if(card.id==='facebook')note(panel,'Search at Facebook. Local personalization only follows location or interests you explicitly enter.');
@@ -344,6 +338,14 @@ export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(id==='chatgpt'){
+  // This card is a real-website launch surface, not a fake site search,
+  // local checklist or an imitation ChatGPT reply. The official viewer
+  // mounts beside these original shared actions in source-quick-cards.mjs.
+  root.append(node('p','qcx-note','Sign in and use the actual ChatGPT website with the official website controls below.'));
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
  if(id==='google'||id==='bing'){
   // Search remains the primary interaction; global controls come afterward.
   searchTool(root,card);mountCardActions(root,card);return;
@@ -358,7 +360,7 @@ export function mountCardTools(root,card){
   mountStarMakerQuickCard(root);
   const recording=node('details','qcx-recording-details');
   recording.append(node('summary','','Record a local voice take'));
-  recorder(recording);root.append(recording);
+  mountKaraokeLab(recording);root.append(recording);
   mountCardActions(root,card,{showSearch:false});return;
  }
  if(id==='whatsapp')whatsappDraft(root);
@@ -367,12 +369,6 @@ export function mountCardTools(root,card){
  checklist(root,card);
  searchTool(root,card);
  trendingTool(root,card);
- if(root.querySelectorAll('.qcx-tool').length===0){
-  const tool=section(root,'INVESTIGATE','Research this source');
-  const field=input('What would you like to investigate?','Research topic');
-  const b=action('Search original topic',()=>{const q=field.value.trim();if(q)window.open('https://www.google.com/search?q='+encodeURIComponent(card.name+' '+q),'_blank','noopener,noreferrer');});
-  tool.append(field,b);
- }
  // Cards with their own working source search do not need a duplicate generic search bar.
  mountCardActions(root,card,{showSearch:!liveSourceProfile(id)});
 }

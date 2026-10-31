@@ -1,5 +1,7 @@
-import {cardProvider,providerSearchUrl,quickCardManifest} from './quanta-card-provider.mjs';
+import {cardProvider,quickCardManifest} from './quanta-card-provider.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
+import {mountTinyFishCardReader} from './tinyfish-card-reader.mjs';
+import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
 /* Shared actions for QuantaPhi quick cards. No browser sign-in implies API permission. */
 const STORE_STARS='quantaPhiCardStarsV1';
 const STORE_COLLECT='quantaPhiCollected';
@@ -14,6 +16,32 @@ function route(card){
  return location.pathname+location.search;
 }
 function previewUrl(card){return new URL(route(card),location.origin).href}
+function sharePreviewUrl(card,host){
+ // Crawler-rendered card-specific metadata; the destination remains the real
+ // interactive card, not an external site or a generic homepage banner.
+ const target=previewUrl(card),u=new URL('/q-share',location.origin);
+ const name=String(card.name||card.title||card.id||'QuantaPhi Quick Card').slice(0,160);
+ u.searchParams.set('kind','quick-card');
+ u.searchParams.set('title',name);
+ u.searchParams.set('text',String(card.shareDescription||card.feature||card.description||card.study||card.details||('Open the '+name+' interactive Quick Card.')).replace(/\s+/g,' ').slice(0,420));
+ u.searchParams.set('dest',target);
+ let visual=card.shareImage||card.ogImage||card.previewImage||card.poster||card.image||card.imageUrl||card.mediaSrc||'';
+ if(!visual){
+   const picture=host?.closest('article')?.querySelector('img');
+   visual=picture?.currentSrc||picture?.src||'';
+ }
+ if(visual){
+   try{
+     const image=new URL(visual,location.origin);
+     const cdn=image.hostname==='lsco.scene7.com'&&image.pathname.startsWith('/is/image/');
+     const generic=image.pathname==='/preview.png';
+     if(!generic&&image.protocol==='https:'&&!image.username&&!image.password&&image.href.length<1600&&(/\.(png|jpe?g|webp|gif)$/i.test(image.pathname)||cdn)){
+       u.searchParams.set('image',image.href);
+     }
+   }catch{}
+ }
+ return u.href;
+}
 function notify(host,s){host.textContent=s}
 export function mountCardActions(host,card,options={}){
  if(!host||!card)return;
@@ -58,8 +86,20 @@ export function mountCardActions(host,card,options={}){
   window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:item}));
   notify(status,'Collected on this device. Cloud sync and coin rewards are not confirmed.');
  });
+ // Every public, embeddable card gets the same professional in-site preview.
+ // The modal contains the original live controls, not screenshots posing as actions.
+ if(options.showPreview!==false&&!new URLSearchParams(location.search).has('preview') && safeLocalCardUrl(previewUrl(card),location.origin+'/')){
+  b('◫ Preview',()=>{
+   const ok=openQuickCardPreview({url:previewUrl(card),title:name,
+    description:card.shareDescription||card.description||card.feature||card.study||'',
+    image:card.shareImage||card.image||card.poster||card.mediaSrc||'',
+    official:card.official||card.website||'',
+    previewMode:card.previewMode});
+   if(!ok)notify(status,'This card uses its original full-page viewer.');
+  });
+ }
  b('↗ Share',async()=>{
-  const url=previewUrl(card);
+  const url=sharePreviewUrl(card,host);
   try{
    if(navigator.share){await navigator.share({title:name,text:'Explore the '+name+' interactive Quick Card on QuantaPhi',url});notify(status,'Share sheet opened.');return}
    if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);notify(status,'Quick Card link copied.');return}
@@ -95,19 +135,12 @@ export function mountCardActions(host,card,options={}){
   }
   try{sessionStorage.setItem(STORE_DRAFT,request);location.assign('/#robotDirectionsInput')}catch{notify(status,'Build draft could not be opened.')}
  });
- const search=element('form','qca-search'),q=element('input','qca-search-input');
- q.type='search';q.placeholder='Quick search '+name+'…';q.required=true;q.maxLength=180;q.setAttribute('aria-label','Find within '+name+' card');
- const submit=element('button','qca-button qca-search-submit','⌕ Quick Search');submit.type='submit';
- search.append(q,submit);search.addEventListener('submit',event=>{
-  event.preventDefault();const value=q.value.trim();if(!value)return;
-  const destination=providerSearchUrl(provider,value)||'/infinity-search-results.html?'+new URLSearchParams({engine:'google',q:name+' '+value});
-  if(typeof window.QuantaOpenSite==='function'){
-   const a=element('a');a.href=destination;a.dataset.siteUrl=destination;a.dataset.siteTitle=name+' · Quick Search';
-   try{window.QuantaOpenSite(a);return}catch{}
-  }
-  location.assign(destination);
- });
- bar.append(controls);if(options.showSearch!==false)bar.append(search);bar.append(status);host.append(bar);return bar;
+ // The shared reader returns actual website content in this card.
+ // Account sign-in remains on the original provider until a session is connected.
+ let original=null;
+ try{const u=new URL(card.official||card.website||card.url||'');if(u.protocol==='https:'&&!u.username&&!u.password)original=u.href}catch{}
+ if(original&&options.showOriginal!==false){const open=element('a','qca-button qca-source','↗ Open original website');open.href=original;open.target='_blank';open.rel='noopener noreferrer';controls.append(open)}
+ bar.append(controls);if(options.websiteReader!==false)mountTinyFishCardReader(bar,card);bar.append(status);host.append(bar);return bar;
 }
 function restoreDraft(){
  let request;try{request=sessionStorage.getItem(STORE_DRAFT)}catch{return}

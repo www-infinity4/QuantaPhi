@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-const EDGE_VERSION = 'quantaphi-org-service-20261026-cf-repair-v13';
+const EDGE_VERSION = 'quantaphi-org-service-20261029-housing-v15';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -250,7 +250,7 @@ function rewriteSuiteText(text) {
  return text.split('__QUANTAPHI_STORAGE_BRIDGE__').join(bridgeUrl);
 }
 // Social crawlers do not execute the browser app. Render topic metadata on the edge.
-const QP_PREVIEW_IMAGE = CANONICAL_ORIGIN + '/preview.png?v=20261008-share1';
+// Card shares render their original image, never the generic site banner.
 function qpShareEscape(value) {
  return String(value || '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 }
@@ -260,7 +260,8 @@ function qpSharePlain(value, max) {
 function qpShareImage(value) {
  try {
   const url=new URL(String(value || ''));
-  if(url.protocol!=='https:' || url.href.length>1600 || !/\.(?:png|jpe?g|webp|gif)$/i.test(url.pathname)) return '';
+  const imageCDN=url.hostname==='lsco.scene7.com' && url.pathname.startsWith('/is/image/');
+   if(url.protocol!=='https:' || url.username || url.password || url.href.length>1600 || (!/\.(?:png|jpe?g|webp|gif)$/i.test(url.pathname) && !imageCDN)) return '';
   if(['localhost','127.0.0.1','0.0.0.0','::1'].includes(url.hostname) || url.hostname.endsWith('.local')) return '';
   return url.href;
  }catch{return ''}
@@ -271,7 +272,7 @@ function qpShareResponse(incoming) {
  const summary=qpSharePlain(incoming.searchParams.get('text'),450) || 'Discover original research, surprising stories, images, video and sound with QuantaPhi.';
  const kind=qpSharePlain(incoming.searchParams.get('kind'),30) || 'research';
  const customImage=qpShareImage(incoming.searchParams.get('image'));
- const image=customImage || QP_PREVIEW_IMAGE;
+ const image=customImage;
  const destination=new URL('/',CANONICAL_ORIGIN);
  if(search)destination.searchParams.set('q',search);
  destination.hash='result';
@@ -292,15 +293,16 @@ function qpShareResponse(incoming) {
   '<meta property="og:url" content="'+qpShareEscape(canonical.href)+'">',
   '<meta property="og:title" content="'+qpShareEscape(title)+'">',
   '<meta property="og:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
-  '<meta property="og:image" content="'+qpShareEscape(image)+'">',
-  '<meta property="og:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi copper emblem on deep blue background')+'">',
-  '<meta name="twitter:card" content="summary_large_image">',
+  '<meta name="twitter:card" content="'+(image?'summary_large_image':'summary')+'">',
   '<meta name="twitter:title" content="'+qpShareEscape(title)+'">',
   '<meta name="twitter:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
-  '<meta name="twitter:image" content="'+qpShareEscape(image)+'">',
-  '<meta name="twitter:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi research cover artwork')+'">',
  ];
- if(!customImage)tags.push('<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">');
+ if(image)tags.push(
+  '<meta property="og:image" content="'+qpShareEscape(image)+'">',
+  '<meta property="og:image:alt" content="'+qpShareEscape(title+' Quick Card image')+'">',
+  '<meta name="twitter:image" content="'+qpShareEscape(image)+'">',
+  '<meta name="twitter:image:alt" content="'+qpShareEscape(title+' Quick Card image')+'">'
+ );
  const html=tags.join('\n')+'</head><body style="background:#0a215f;color:white;font:16px system-ui;padding:2rem;max-width:42rem;margin:auto">'+
   '<h1>'+qpShareEscape(title)+'</h1><p>'+qpShareEscape(summary.slice(0,800))+'</p>'+
   '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">Open in QuantaPhi</a>'+
@@ -390,6 +392,10 @@ export default {
   origin.search = incoming.search;
   const extension = route.sourcePath.split('.').pop().toLowerCase();
   const textual = ['html','js','mjs','css','json','xml','txt'].includes(extension);
+  // Share art is a real image, not GitHub Pages' HTML fallback. Read the
+  // original public repository bytes first, then retain existing fallbacks.
+  const shareArtwork = route.repo === 'QuantaPhi' &&
+    /^\/assets\/share\/[a-z0-9._-]+\.(?:png|jpe?g|webp)$/i.test(route.sourcePath);
   if (textual) origin.searchParams.set('__qpedge', EDGE_VERSION);
   const headers = new Headers(request.headers);
   for (const name of ['Host', 'Cookie', 'Authorization']) headers.delete(name);
@@ -403,7 +409,7 @@ export default {
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
-  if (((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || route.repo === 'Alien-Radio' || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || route.repo === 'StarQuest' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && textual && readRequest) {
+  if (((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || route.repo === 'Alien-Radio' || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || route.repo === 'StarQuest' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && (textual || shareArtwork) && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
@@ -427,11 +433,22 @@ export default {
   out.set('x-quantaphi-edge', EDGE_VERSION);
   out.set('x-quantaphi-app', route.repo);
   if (raw && upstream.ok && RAW_TYPES[extension]) out.set('Content-Type', RAW_TYPES[extension]);
+  if(shareArtwork&&upstream.ok){
+   out.set('Content-Type',RAW_TYPES[extension]||'application/octet-stream');
+   out.set('X-Content-Type-Options','nosniff');
+   out.set('Cache-Control','public, max-age=300, s-maxage=1800');
+  }
   if (raw) { out.delete('Content-Security-Policy'); out.delete('Content-Disposition'); }
   // Upstream GitHub headers prohibit even our own embedded suite pages.
-  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html'].includes(route.sourcePath))
+  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/infinity-affiliates.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
    || (['Oracle-Octaves','C13b0','Omni-Phi','News-Phi','Mckee-Coins-Inc','Omni-TV','Builder-Reserve'].includes(route.repo) && route.sourcePath === '/index.html');
   if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio','Alien-Coin'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
+  // Public housing intake can run inside QuantaPhi, but cannot submit or send answers.
+  if (route.repo === 'QuantaPhi' && ['/disability-housing.html','/housing-help.html'].includes(route.sourcePath) && /text\/html/i.test(out.get('Content-Type') || '')) {
+   out.set('X-Frame-Options', 'SAMEORIGIN');
+   out.set('Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'");
+   out.set('Referrer-Policy', 'no-referrer');
+  }
   if (textual || !upstream.ok) out.set('Cache-Control', 'no-cache, max-age=0, must-revalidate');
   const contentType = out.get('Content-Type') || '';
   const infinityHtml = route.repo === 'C13b0' && /text\/html/i.test(contentType);
