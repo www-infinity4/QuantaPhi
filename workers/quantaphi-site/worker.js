@@ -499,7 +499,7 @@ export default {
   }
   if (raw) { out.delete('Content-Security-Policy'); out.delete('Content-Disposition'); }
   // Upstream GitHub headers prohibit even our own embedded suite pages.
-  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/infinity-affiliates.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
+  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/infinity-coin-cards.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/infinity-affiliates.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
    || (['Oracle-Octaves','C13b0','Omni-Phi','News-Phi','Mckee-Coins-Inc','Omni-TV','Builder-Reserve'].includes(route.repo) && route.sourcePath === '/index.html');
   if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio','Alien-Coin'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
   // Public housing intake can run inside QuantaPhi, but cannot submit or send answers.
