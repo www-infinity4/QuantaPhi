@@ -62,7 +62,7 @@ export function createBrandProductCard(card){
  if(!validBrandProduct(card))throw Error('invalid_brand_product');
  const article=create('article','iqc-card qbp-product-card');
  article.dataset.sourceId=card.id;article.dataset.sourceName=card.brand+' · '+card.title;
- article.dataset.sourceReady='true';
+ article.dataset.sourceReady='true';article.dataset.official=card.shop;article.dataset.sourceCategory=card.category;article.dataset.sourceQuery=card.title;
  article.style.setProperty('--qbp-accent',card.accent);
  article.dataset.region=card.region;article.dataset.verifiedDate=card.checked;
  const kicker=create('div','qbp-head');
