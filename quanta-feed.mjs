@@ -6,6 +6,7 @@ import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
 import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
+import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
 import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
@@ -47,6 +48,12 @@ function choose(card){
 function open(card){
  state=markOpened(safeRead(),card.id);persist();shareChange();
  const target=card.route;
+ // Show the full QuantaPhi interaction inside a mobile popup for allowed
+ // public routes. Protected/private apps keep the existing safe handoff.
+ if(!new URLSearchParams(location.search).has('preview')&&safeLocalCardUrl(target,location.origin+'/')){
+  if(openQuickCardPreview({url:target,title:card.name,description:card.feature,
+   image:card.shareImage||card.image||card.poster||'',official:card.official||'',previewMode:card.previewMode}))return;
+ }
  if(typeof window.QuantaOpenSite==='function'){
   // Let the site's original in-page viewer own the selected source card.
   try{const link=document.createElement('a');link.href=target;link.dataset.siteUrl=target;link.dataset.siteTitle=card.name+' · QuantaPhi card';window.QuantaOpenSite(link);return;}catch{/* The local route is safe to open normally. */}

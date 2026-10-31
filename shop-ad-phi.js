@@ -21,7 +21,7 @@ shell.append(node('small','ORACLE OCTAVES · INFINITY 2026® · SHOP + AD PHI'),
 const actions=node('div',undefined,'sap-actions'),feature=node('article',undefined,'sap-feature'),status=node('p','', 'sap-status');status.setAttribute('role','status');
 shell.append(actions,feature,status);
 const button=(parent,text,fn)=>{const b=node('button',text);b.type='button';b.addEventListener('click',fn);parent.append(b);return b};
-let current=null,sellerStudio=null,publishing=false,interactionRevision=0,query=new URL(location.href).searchParams.get('q')||'antique radio';
+let current=null,sellerStudio=null,publishing=false,interactionRevision=0,editingSaved=null,query=new URL(location.href).searchParams.get('q')||'antique radio';
 async function publish(item){
  if(publishing){status.textContent='A Shop Phi post is already being submitted.';return false}
  if(!connected){
@@ -88,7 +88,30 @@ function show(item,draft=false){
  const row=node('div',undefined,'sap-actions');feature.append(row);
  if(draft&&item.mediaIds?.length&&!window.ShopPhiPublish){const blocked=button(row,'Photos saved privately',()=>{});blocked.disabled=true;}
  if(draft&&(connected||window.ShopPhiPublish)&&item.publishState!=='public'){
-  button(row,'Save / retry cloud listing',()=>publish(item));
+  button(row,'Save private cloud draft',()=>{item.ownItem=false;item.publishConsent=false;void publish(item)});
+  const terms=node('div',undefined,'sap-saved-publish-consent');
+  const own=node('label'),ownCheck=node('input');ownCheck.type='checkbox';ownCheck.name='recover-own';
+  own.append(ownCheck,node('span','I own this item or am authorized to sell it.'));
+  const consent=node('label'),consentCheck=node('input');consentCheck.type='checkbox';consentCheck.name='recover-public';
+  consent.append(consentCheck,node('span','Publish this listing on a shareable public item page.'));
+  const action=button(terms,'Publish this saved item',()=>{
+    if(!ownCheck.checked||!consentCheck.checked){
+      status.textContent='Confirm ownership and public sharing before publishing this saved item.';return;
+    }
+    item.ownItem=true;item.publishConsent=true;
+    void publish(item);
+  });
+  action.className='sap-publish-saved';
+  terms.replaceChildren(node('strong','Ready to publish this recovered draft?'),own,consent,action);
+  feature.append(terms);
+  button(row,'Edit this saved draft',()=>{
+    editingSaved=item;form.hidden=false;
+    for(const [name,input] of Object.entries(fields))input.value=String(item[name]||'');
+    for(const [name,input] of Object.entries(extraInputs))input.value=String(item[name]|| (name==='quantity'?'1':''));
+    ownership.checked=false;publicConsent.checked=false;
+    status.textContent='Editing the original saved item. Its existing photos remain attached on this device.';
+    form.scrollIntoView({block:'start',behavior:'smooth'});fields.title.focus();
+  });
 }
 
 
@@ -146,7 +169,9 @@ button(actions,sellerMode?'Edit my listing':'Create listing',()=>{
 button(actions,'My listings',async()=>{
  interactionRevision++;list.hidden=false;list.replaceChildren();
  const items=read(KEY);
- items.forEach(item=>button(list,item.title+' · '+(item.publishState||'device draft'),()=>show(item,true)));
+ items.forEach(item=>button(list,item.title+' · '+(item.publishState||'device draft'),()=>{
+   show(item,true);status.textContent='Recovered this item from your phone. Review its photos and confirm both choices to publish.';
+ }));
  if(window.ShopPhiPublish){
   try{
    const cloud=await window.ShopPhiPublish.listings();
@@ -215,7 +240,7 @@ form.addEventListener('submit',async e=>{
  item.publishConsent=publicConsent.checked;
  if(item.publishConsent&&!item.ownItem){status.textContent='Confirm you own this item or have permission to sell it.';return}
  if(item.publishConsent&&!item.priceLabel){status.textContent='Enter your asking price before publishing your item.';return}
- item.mediaIds=sellerStudio?.ids()||[];
+ item.mediaIds=[...new Set([...(editingSaved?.mediaIds||[]),...(sellerStudio?.ids()||[])])].slice(0,10);
  if((item.url&&!safe(item.url))||(item.imageUrl&&!safe(item.imageUrl))){
   status.textContent='Optional original item and photo links must use secure HTTPS. You can list your own goods without an existing eBay or merchant URL.';return
  }
@@ -224,7 +249,9 @@ form.addEventListener('submit',async e=>{
  if(policy.status==='blocked'){status.textContent='Shop Phi cannot accept this listing: '+policy.reason+' If this is a mistake, request a manual policy review once the seller service is connected.';return}
  item.policyStatus=policy.status;
  item.policyNote=policy.reason;
- item.itemId=crypto.randomUUID();
+ item.itemId=editingSaved?.itemId||crypto.randomUUID();
+ if(editingSaved?.photoIds?.length)item.photoIds=editingSaved.photoIds.slice();
+ editingSaved=null;
  item.kind=item.sponsor?'advertisement':'product';item.sponsored=!!item.sponsor;
  item.verificationStatus=item.mediaIds.length?'not-reviewed':'external-source-unverified';
  try{

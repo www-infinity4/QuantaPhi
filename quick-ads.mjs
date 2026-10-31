@@ -1,12 +1,13 @@
-import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-core.mjs?v=20261027-game4';
-/* QuantaPhi Quick Ads: event-driven, silent, dismissible and limited to Game 4.
+import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAdState,quickAdPacingAllows} from './quick-ads-core.mjs?v=20261029-house2';
+/* QuantaPhi Quick Ads: event-driven, silent, dismissible game spots and first-party successor.
  * Server feed establishes live vs final; network errors fail closed.
  * No merchant, wallet, search or account data leaves this module. */
 (()=>{
  if(typeof window==='undefined'||typeof document==='undefined')return;
- const KEY='quantaphi:worldseries-quickads:20261027:v1';
- const read=()=>{try{return JSON.parse(sessionStorage.getItem(KEY)||'{}')}catch{return {}}};
- const state={...read(),counts:{...(read().counts||{})},recent:[...(read().recent||[])]};
+ const KEY='quantaphi:quickads:house-20261029:v1';
+ const LEGACY_KEY='quantaphi:worldseries-quickads:20261028:v1';
+ const read=key=>{try{return JSON.parse(sessionStorage.getItem(key)||'{}')}catch{return {}}};
+ const state=restoreQuickAdState(read(KEY),read(LEGACY_KEY));
  const save=()=>{try{sessionStorage.setItem(KEY,JSON.stringify(state))}catch{}};
  let currentId='',moves=0,shown=null,closeTimer=null,seq=0,poll=null,scoreAdSuppressedUntil=0;
  let liveState='unknown',lastFetch=0,checking=null;
@@ -25,9 +26,11 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
   if(content!==undefined)el.textContent=content;
   return el;
  }
- const STATUS_URL='https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=10/27/2026';
+ const STATUS_URL='https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=10/28/2026';
  async function live(){
-  if(!inGameWindow()){hide();return 'inactive';}
+  const campaign=quickAdCampaign();
+  if(campaign==='infinity-house')return 'house'; // No MLB fetch or merchant spots after Game 5.
+  if(campaign==='inactive'){hide();return 'inactive';}
   const now=Date.now();
   if(liveState==='final')return 'final';
   if(now-lastFetch<90000)return liveState;
@@ -41,7 +44,7 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
     liveState=gameLiveStatus(await response.json());
    }catch{liveState='unknown';}
    finally{clearTimeout(timeout);checking=null;}
-   if(liveState==='final'||!inGameWindow())hide();
+   if(!['scheduled','live'].includes(liveState)||!inGameWindow())hide();
    return liveState;
   })();
   return checking;
@@ -53,16 +56,17 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
   const glyph=make('span','qad-mark',ad.name.slice(0,1));
   glyph.setAttribute('aria-hidden','true');
   const heading=make('span','qad-heading');
-  heading.append(make('small','qad-kicker','QUICK AD · WORLD SERIES NIGHT'),make('strong','',ad.name),make('span','qad-tagline',ad.tagline));
-  const link=make('a','qad-cta','Visit');
+  const house=quickAdCampaign()==='infinity-house';
+  heading.append(make('small','qad-kicker',house?'INFINITY HOUSE SPOTLIGHT':'QUICK AD · WORLD SERIES NIGHT'),make('strong','',ad.name),make('span','qad-tagline',ad.tagline));
+  const link=make('a','qad-cta',house?'Explore':'Visit');
   link.href=ad.href;link.target='_blank';link.rel='noopener noreferrer';
-  link.setAttribute('aria-label','Visit '+ad.name+' official website');
+  link.setAttribute('aria-label',house?'Explore '+ad.name+' on QuantaPhi':'Visit '+ad.name+' official website');
   const dismiss=make('button','qad-dismiss','×');
   dismiss.type='button';dismiss.setAttribute('aria-label','Dismiss Quick Ads for 10 minutes');
   dismiss.addEventListener('click',()=>{
    state.dismissedUntil=Date.now()+10*60*1000;save();hide();
   });
-  node.append(glyph,heading,link,dismiss,make('small','qad-disclosure','Independent website spotlight · not a paid ad'));
+  node.append(glyph,heading,link,dismiss,make('small','qad-disclosure',house?'QuantaPhi house spotlight · no paid placement or affiliate relationship claimed':'Independent website spotlight · not a paid ad'));
   node.hidden=false;shown=ad.id;
   requestAnimationFrame(()=>node.classList.add('qad-visible'));
   closeTimer=setTimeout(hide,6500);
@@ -72,13 +76,11 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
   save();
  }
  const onSwitch=async(detail,revision)=>{
-  if(!inGameWindow()||document.hidden||Date.now()>GAME_END||Date.now()<scoreAdSuppressedUntil)return;
-  if(Date.now()<Number(state.dismissedUntil||0))return;
-  if(Date.now()-Number(state.lastAt||0)<24000)return;
-  if(Number(state.total||0)>=30)return;
+  if(quickAdCampaign()==='inactive'||document.hidden||Date.now()<scoreAdSuppressedUntil)return;
+  if(!quickAdPacingAllows(Date.now(),state,scoreAdSuppressedUntil))return;
   if(moves%2!==0)return; // one non-blocking pop-up per two card transitions at most
   const status=await live();
-  if(status!=='live'||revision!==seq||document.hidden||!inGameWindow())return;
+  if(!['scheduled','live','house'].includes(status)||revision!==seq||document.hidden||quickAdCampaign()==='inactive'||!quickAdPacingAllows(Date.now(),state,scoreAdSuppressedUntil))return;
   const pick=chooseQuickAd(detail,state.counts,state.recent,Date.now());
   if(pick)display(pick);
  };
@@ -91,19 +93,18 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
   // Ignore tab-only updates for the same card.
   if(currentId===detail.id)return;
   currentId=detail.id;
-  if(!inGameWindow()){hide();return;}
+  if(quickAdCampaign()==='inactive'){hide();return;}
   moves++;const revision=++seq;
   void onSwitch(detail,revision);
  });
  document.addEventListener('visibilitychange',()=>{
   if(document.hidden)hide();
-  else if(!inGameWindow())hide();
+  else if(quickAdCampaign()==='inactive')hide();
  });
- // Hide and permanently stop after tonight's window, even if the page remains open.
+ // Preserve the house campaign after the game without polling MLB or reviving merchant ads.
  poll=setInterval(()=>{
-  if(!inGameWindow()){
-   hide();
-   if(Date.now()>GAME_END){clearInterval(poll);poll=null;}
-  }else if(liveState!=='final'&&!document.hidden)void live();
+  const campaign=quickAdCampaign();
+  if(campaign==='inactive')hide();
+  else if(campaign==='world-series'&&liveState!=='final'&&!document.hidden)void live();
  },60000);
 })();

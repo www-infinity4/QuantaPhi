@@ -67,7 +67,19 @@ export function mountPremiumCard(card){
    const previous=make('button','','‹ Previous item'),count=make('span'),next=make('button','','Next item ›');previous.type=next.type='button';nav.append(previous,count,next);
    function show(){
     const row=rows[selected];visual.replaceChildren();
-    if(row.image){const image=make('img','premium-photo');image.src=row.image;image.alt=row.title;image.referrerPolicy='no-referrer';image.addEventListener('error',()=>{image.remove()},{once:true});visual.append(image)}
+    const media=make('div','premium-media');
+    const fallback=make('div','premium-photo-fallback');
+    fallback.append(make('strong','','Publisher photograph unavailable here'),
+     make('p','','View the original result for full photographs, availability and sale details.'));
+    const photoLink=make('a','premium-photo-source','See images at '+card.name+' ↗');
+    photoLink.href=row.url;photoLink.target='_blank';photoLink.rel='noopener noreferrer';fallback.append(photoLink);
+    media.append(fallback);visual.append(media);
+    if(row.image){
+     const image=make('img','premium-photo');image.alt=row.title;image.referrerPolicy='no-referrer';image.loading='lazy';image.hidden=true;
+     image.addEventListener('load',()=>{if(image.isConnected){image.hidden=false;fallback.hidden=true}},{once:true});
+     image.addEventListener('error',()=>{image.remove();fallback.hidden=false},{once:true});
+     media.prepend(image);image.src=row.image;
+    }
     visual.append(make('p','premium-credit',row.credit+(row.date?' · '+String(row.date).slice(0,10):'')),make('h3','',row.title),make('p','premium-description',String(row.description||'').replace(/<[^>]*>/g,'').slice(0,600)));
     const open=make('a','premium-open','Read at '+card.name+' ↗');open.href=sourceURL(row.url);open.target='_blank';open.rel='noopener noreferrer';visual.append(open);
     const itemActions=make('div');mountCardActions(itemActions,{id:card.id+'-item-'+hash(row.url),name:row.title,category:card.category,url:row.url,route:'/?card='+card.id+'&topic='+encodeURIComponent(query)+'&item='+hash(row.url)});visual.append(itemActions);

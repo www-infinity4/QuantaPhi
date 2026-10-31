@@ -5,6 +5,16 @@ const SOURCE='Cloudflare GraphQL httpRequests1dGroups';
 const DAY=86400000;
 const isoDate=d=>d.toISOString().slice(0,10);
 const isCount=n=>Number.isSafeInteger(n)&&n>=0;
+// Reject invalid or implausibly future D1 verification timestamps (5m clock skew).
+const validVerifiedAt=(value,now)=>typeof value==='string'&&
+ /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(value)&&
+ Number.isFinite(Date.parse(value))&&
+ new Date(value).toISOString()===(value.includes('.')?value:value.replace(/Z$/,'.000Z'))&&
+ Date.parse(value)<=now.getTime()+5*60*1000;
+// Date.parse normalizes impossible days (e.g. February 30); reject them before D1 writes.
+const validUtcDay=date=>typeof date==='string'&&/^20\d{2}-\d{2}-\d{2}$/.test(date)&&
+ !Number.isNaN(Date.parse(date+'T00:00:00Z'))&&
+ new Date(date+'T00:00:00Z').toISOString().slice(0,10)===date;
 function offsetDate(now,shift){
  const midnight=Date.parse(isoDate(now)+'T00:00:00.000Z');
  return isoDate(new Date(midnight+shift*DAY));
@@ -14,8 +24,7 @@ export function validateGroups(groups,now=new Date()){
  const seen=new Set(),today=isoDate(now);
  return groups.map(g=>{
   const date=g?.dimensions?.date,requests=g?.sum?.requests,pageViews=g?.sum?.pageViews;
-  if(typeof date!=='string'||!/^20\d{2}-\d{2}-\d{2}$/.test(date)||
-   Number.isNaN(Date.parse(date+'T00:00:00Z'))||date>today||seen.has(date)||
+  if(!validUtcDay(date)||date>today||seen.has(date)||
    !isCount(requests)||!isCount(pageViews))throw Error('invalid_analytics_day');
   seen.add(date);return {date,requests,pageViews};
  }).sort((a,b)=>a.date.localeCompare(b.date));
@@ -40,21 +49,30 @@ export async function refreshLedger(db,{token,fetcher=fetch,now=new Date()}={}){
  const timestamp=now.toISOString();
  const sql='INSERT INTO traffic_daily(date,requests,page_views,verified_at,source) VALUES(?1,?2,?3,?4,?5) '+
   'ON CONFLICT(date) DO UPDATE SET requests=MAX(traffic_daily.requests,excluded.requests), '+
-  'page_views=MAX(traffic_daily.page_views,excluded.page_views), verified_at=excluded.verified_at';
+  'page_views=MAX(traffic_daily.page_views,excluded.page_views), '+
+  'verified_at=CASE WHEN julianday(excluded.verified_at)>julianday(traffic_daily.verified_at) '+
+  'THEN excluded.verified_at ELSE traffic_daily.verified_at END';
  const statements=days.map(d=>db.prepare(sql).bind(d.date,d.requests,d.pageViews,timestamp,SOURCE));
- await db.batch(statements);
+ const receipts=await db.batch(statements);
+ // A resolved D1 batch is not proof that every daily write succeeded.
+ if(!Array.isArray(receipts)||receipts.length!==statements.length||
+    receipts.some(r=>r?.success!==true))throw Error('ledger_write_unverified');
  return {dayCount:days.length,fetchedAt:timestamp};
 }
 export function cumulativeSnapshot(rows,now=new Date()){
  if(!Array.isArray(rows)||!rows.length)throw Error('ledger_empty');
  const sorted=[...rows].sort((a,b)=>a.date.localeCompare(b.date)),today=isoDate(now);
- let requests=0,pageViews=0,latest='';
+ let requests=0,pageViews=0,latest='',latestMs=-Infinity;
+ const seenDates=new Set();
  for(const r of sorted){
-  if(typeof r.date!=='string'||!/^20\d{2}-\d{2}-\d{2}$/.test(r.date)||r.date>today||!isCount(r.requests)||!isCount(r.page_views))
+  if(!validUtcDay(r.date)||r.date>today||seenDates.has(r.date)||!isCount(r.requests)||!isCount(r.page_views)||
+     !validVerifiedAt(r.verified_at,now))
    throw Error('ledger_invalid');
+  seenDates.add(r.date);
   requests+=r.requests;pageViews+=r.page_views;
   if(!isCount(requests)||!isCount(pageViews))throw Error('ledger_overflow');
-  if(typeof r.verified_at==='string'&&r.verified_at>latest)latest=r.verified_at;
+  const verifiedMs=Date.parse(r.verified_at);
+  if(verifiedMs>latestMs){latestMs=verifiedMs;latest=r.verified_at;}
  }
  const first=sorted[0].date,mostRecent=sorted[sorted.length-1].date,begin7=offsetDate(now,-6);
  const recent=sorted.filter(x=>x.date>=begin7&&x.date<=today);

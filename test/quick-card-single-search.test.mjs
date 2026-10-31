@@ -6,7 +6,7 @@ const source=(file)=>readFileSync(new URL('../'+file,import.meta.url),'utf8');
 
 test('action toolbar honors the existing explicit no-generic-search contract',()=>{
  const actions=source('quanta-card-actions.mjs');
- assert.match(actions,/if\(options\.showSearch!==false\)mountTinyFishCardReader\(bar,card\)/);
+ assert.match(actions,/if\(options\.websiteReader!==false&&options\.showSearch!==false\)mountTinyFishCardReader\(bar,card\)/);
  assert.match(actions,/bar\.append\(status\);host\.append\(bar\);return bar/);
  assert.match(actions,/const follow=b\(/);
  assert.match(actions,/const collect=b\(/);

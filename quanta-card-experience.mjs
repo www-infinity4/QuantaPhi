@@ -96,7 +96,7 @@ function searchTool(root,card,options={}){
  if(direct){
   // The search starts on this card. Infinity Viewer owns a SAME-ORIGIN
   // results interface; google.com cannot be framed as a third-party page.
-  form.classList.add('qcx-native-search');
+  if (form) form.classList.add('qcx-native-search');
   field.name='q';
   form.addEventListener('submit',e=>{
    e.preventDefault();const q=field.value.trim().slice(0,180);if(!q)return;
@@ -347,13 +347,12 @@ export function mountCardTools(root,card){
   return;
  }
  if(id==='google'||id==='bing'){
-  // Search remains the primary interaction; generic search is unnecessary.
+  // Search remains the primary interaction; global controls come afterward.
   searchTool(root,card);mountCardActions(root,card,{showSearch:false});return;
  }
  if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
  if(id==='youtube'||id==='tiktok'){
-  // Play is the first action; a secondary source lookup is available without
-  // stacking two different search boxes under a single video card.
+  // Playback is the first action; source discovery stays optional and secondary.
   mediaPlayer(root,id);
   const discover=node('details','qcx-discover-details');
   discover.append(node('summary','','Find more '+(id==='tiktok'?'TikTok videos':'YouTube videos')));
@@ -381,7 +380,6 @@ export function mountCardTools(root,card){
  checklist(root,card);
  const alreadyHasSearch=searchTool(root,card);
  trendingTool(root,card);
- // Only one source lookup form per card. Generic TinyFish search remains for
- // cards that have no native provider search or live-source lookup.
+ // Preserve generic discovery only when there is no existing on-card provider search.
  mountCardActions(root,card,{showSearch:!alreadyHasSearch&&!liveSourceProfile(id)});
 }

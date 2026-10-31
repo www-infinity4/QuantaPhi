@@ -95,7 +95,8 @@ test('failed owner post preserves local draft and reports server error',async()=
  await s.form.events.submit({preventDefault(){}});
  assert.match(s.text(),/Post not verified as published: owner_session_expired/);
  assert.equal(JSON.parse(s.store.get('quantaphi:shop-ad-phi:drafts:v1')).length,1);
- assert.ok(s.button('Save / retry cloud listing'));
+ assert.ok(s.button('Save private cloud draft'));
+ assert.ok(s.button('Publish this saved item'));
 });
 test('product-specific +1 Build stores the exact source in a project instead of a fake link',async()=>{
  const s=setup();fill(s);await s.form.events.submit({preventDefault(){}});

@@ -2,6 +2,7 @@ import {cloudStarCoinBackup} from './starcoin-backup.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
 import {safeConnectionFailure} from './completion.mjs';
+import {cloudflareScopeConfigProof} from './scope-config.mjs';
 import {CONNECTOR_REQUIREMENTS,cloudflareAvailableActions,cloudflareScopeInventory,resolveCloudflareScopeConfig} from './providers.mjs';
 const ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 export const PREFIX = '/api/bubbles/connections';
@@ -85,7 +86,8 @@ export async function handleConnections(request,env,resolveService) {
     return json(origin,{ok:true,configured,clientIdPrefix:configured?clientId.slice(0,16):null,
       scopeInventory:{serverAllowlistCount:inventory.serverAllowlistCount,
         signInRequestScopeCount:inventory.signInRequestScopeCount,
-        supportsChunkedAllowlist:true}});
+        supportsChunkedAllowlist:true,supportsVersionedAllowlist:true,
+        ...await cloudflareScopeConfigProof(env)}});
   }
   const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
   if(callback && request.method==='GET'){
@@ -241,6 +243,32 @@ export async function handleConnections(request,env,resolveService) {
     // Explicit field selection prevents supplied userId/sessionId from winning.
     if (url.pathname === PREFIX+'/cloudflare/accounts') return json(origin,{ok:true,...await service.cloudflareAccounts({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/cloudflare/select-account') return json(origin,{ok:true,...await service.selectCloudflareAccount({userId:identity.userId,id:body.id,accountId:body.accountId})});
+    if(url.pathname===PREFIX+'/wallet-email/preferences'){
+      if(!/^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(request.headers.get('Authorization')||''))
+        throw Error('starcoin_verified_device_required');
+      return json(origin,await service.walletEmail({userId:identity.userId,action:body.action||'read',
+        cadence:body.cadence,connectionId:body.connectionId}));
+    }
+    if(url.pathname===PREFIX+'/wallet-email/preview'){
+      const authorization=request.headers.get('Authorization')||'';
+      if(!/^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(authorization))
+        throw Error('starcoin_verified_device_required');
+      if(!env.STARQUEST_LEDGER?.fetch||!env.BOT_WALLET?.fetch)
+        throw Error('starcoin_cloud_unavailable');
+      const [starResponse,walletResponse]=await Promise.all([
+        env.STARQUEST_LEDGER.fetch('https://starquest.internal/v1/state',
+          {headers:{Authorization:authorization},signal:AbortSignal.timeout(10000)}),
+        env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',
+          {headers:{Authorization:authorization},signal:AbortSignal.timeout(10000)})
+      ]);
+      if(!starResponse.ok||!walletResponse.ok)throw Error('starcoin_cloud_unavailable');
+      const [star,wallet]=await Promise.all([starResponse.json(),walletResponse.json()]);
+      if(!star?.ok||!wallet?.ok)throw Error('starcoin_cloud_unavailable');
+      const snapshot=await cloudStarCoinBackup(identity.userId,wallet,star.state);
+      return json(origin,{ok:true,status:'authoritative_wallet_snapshot',
+        balanceTenths:snapshot.data.balanceTenths,asOf:new Date().toISOString(),
+        source:'StarQuest + Unified Wallet reconciliation',emailed:false});
+    }
     if (url.pathname === PREFIX+'/github/test') return json(origin,{ok:true,...await service.githubConnectionTest({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/github/repositories') return json(origin,{ok:true,...await service.githubRepositories({userId:identity.userId,id:body.id})});
     if(url.pathname===PREFIX+'/start'){

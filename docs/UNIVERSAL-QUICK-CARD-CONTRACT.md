@@ -40,3 +40,16 @@ This is the shared card contract for QuantaPhi, Infinity Phi and Bubbles. Each c
 - Android: verified app link and Chrome Custom Tab sign-in return, no wallet token in intent URL, and no automatic write/payment.
 - Commerce: item selection + order review/confirm + documented payment partner and receipt; fall back to official merchant checkout.
 - Deployment proof: run node tests and Android/Chrome end-to-end. **This source branch is not a production deployment or proof of an authenticated eBay/X/Meta session.**
+
+## Universal share-and-preview rule (October 28, 2026)
+
+Every new QuantaPhi card and public website/card template should use **the same two-layer contract**.
+
+1. **In QuantaPhi**: default `previewMode=interactive`. A visible **◫ Preview** action opens a mobile-friendly same-origin dialog containing the actual public interactive card in its first-party route. Preserve working Search, Play, Share, Collect, official-source handoffs and +1 Build. An author can choose `previewMode=visual` for an image-first popup with genuine **Open full interactive card** and official-source buttons.
+2. **When shared on X, SMS, Facebook, etc.**: serve crawlable title, description and the **card's own publicly available licensed raster image** as `og:image` and `twitter:image` in the initial HTTP HTML response. Do not substitute `/preview.png` (generic site emblem), pretend an image exists, or take a screenshot of a protected provider session. When no real image is available, render a usable text card and offer the original interactive card on click.
+3. The public creator publisher stores `preview_mode` on the card row. The D1 migration `workers/quick-card-publisher/migrations/002-card-preview-mode.sql` must run before its updated Worker is deployed. Existing rows default to `interactive`.
+4. **Host limitations**: an external social platform owns whether and how a link preview renders. Normal image cards cannot execute buttons in another platform's feed. The **X Player Card** is a separate, conditional media iframe integration that requires HTTPS, compatible framing, supported media, and verification on X; do not turn it on indiscriminately for login, payments or third-party web apps.
+5. Only approved first-party public routes can be framed by the universal modal. Protected wallet, account, owner and external login pages must open through their existing secure handoff. An iframe load event does not mean that a third-party account was authorized.
+6. Every new brand/product/story card should explicitly choose an actual hero asset or record that none has been cleared for use. A card with no image is not considered image-ready for an X large-image preview. Create approved card artwork and verify crawler visibility as a separate readiness task. Never claim all earlier cards have artwork until inspected.
+
+Verification: `node --test test/quick-card-preview.test.mjs test/quick-card-publisher.test.mjs test/quick-card-share.test.mjs`; mobile dialog test; persisted D1 readback; X crawler image URL verification and production route tests.

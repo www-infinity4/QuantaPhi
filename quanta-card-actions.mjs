@@ -1,6 +1,7 @@
 import {cardProvider,quickCardManifest} from './quanta-card-provider.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
 import {mountTinyFishCardReader} from './tinyfish-card-reader.mjs';
+import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
 /* Shared actions for QuantaPhi quick cards. No browser sign-in implies API permission. */
 const STORE_STARS='quantaPhiCardStarsV1';
 const STORE_COLLECT='quantaPhiCollected';
@@ -51,7 +52,7 @@ export function mountCardActions(host,card,options={}){
  const bar=element('section','qca-toolbar');bar.dataset.cardActions=id;bar.dataset.cardCapabilities=JSON.stringify(manifest);bar.setAttribute('aria-label',name+' card actions');
  const controls=element('div','qca-controls'),status=element('p','qca-status','');
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
- const b=(label,fn)=>{const n=element('button','qca-button',label);n.type='button';n.addEventListener('click',fn);controls.append(n);return n};
+ const b=(label,fn,action)=>{const n=element('button','qca-button',label);n.type='button';if(action)n.dataset.action=action;n.addEventListener('click',fn);controls.append(n);return n};
  const key='quick-card|'+id,followId=id.slice(0,70);
  const followed=()=>cleanFeedState(read(FEED_STORAGE_KEY,{})).following.includes(followId);
  const follow=b(followed()?'✓ Following':'+ Follow',()=>{
@@ -62,7 +63,7 @@ export function mountCardActions(host,card,options={}){
   follow.textContent=yes?'✓ Following':'+ Follow';follow.setAttribute('aria-pressed',String(yes));
   notify(status,yes?'Following saved on this device.':'Unfollowed on this device.');
   window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'card-actions',id:followId}}));
- });follow.setAttribute('aria-pressed',String(followed()));
+ },'follow');follow.setAttribute('aria-pressed',String(followed()));
  const starred=()=>Boolean(read(STORE_STARS,{})[id]);
  const star=b(starred()?'★ Starred':'☆ Star',()=>{
   const next={...read(STORE_STARS,{})};
@@ -72,7 +73,7 @@ export function mountCardActions(host,card,options={}){
   star.setAttribute('aria-pressed',String(Boolean(next[id])));
   notify(status,next[id]?'Star saved on this device.':'Star removed on this device.');
   window.dispatchEvent(new CustomEvent('quantaphi:card-star',{detail:{id,starred:Boolean(next[id])}}));
- });star.setAttribute('aria-pressed',String(starred()));
+ },'star');star.setAttribute('aria-pressed',String(starred()));
  const collected=()=>{const items=read(STORE_COLLECT,[]);return Array.isArray(items)&&items.some(x=>x?.key===key)};
  const collect=b(collected()?'✓ Collected':'+ Collect',()=>{
   if(collected())return notify(status,'Already in your local collection.');
@@ -81,10 +82,22 @@ export function mountCardActions(host,card,options={}){
    sourceUrl:String(card.featureUrl||card.official||card.url||previewUrl(card)),
    cardUrl:previewUrl(card),collectedAt:new Date().toISOString()};
   if(!write(STORE_COLLECT,[...items,item]))return notify(status,'Could not save collection on this device.');
-  collect.textContent='✓ Collected';
+  collect.textContent='✓ Collected';collect.setAttribute('aria-pressed','true');
   window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:item}));
   notify(status,'Collected on this device. Cloud sync and coin rewards are not confirmed.');
- });
+ },'collect');collect.setAttribute('aria-pressed',String(collected()));
+ // Every public, embeddable card gets the same professional in-site preview.
+ // The modal contains the original live controls, not screenshots posing as actions.
+ if(options.showPreview!==false&&!new URLSearchParams(location.search).has('preview') && safeLocalCardUrl(previewUrl(card),location.origin+'/')){
+  b('◫ Preview',()=>{
+   const ok=openQuickCardPreview({url:previewUrl(card),title:name,
+    description:card.shareDescription||card.description||card.feature||card.study||'',
+    image:card.shareImage||card.image||card.poster||card.mediaSrc||'',
+    official:card.official||card.website||'',
+    previewMode:card.previewMode});
+   if(!ok)notify(status,'This card uses its original full-page viewer.');
+  },'preview');
+ }
  b('↗ Share',async()=>{
   const url=sharePreviewUrl(card,host);
   try{
@@ -93,7 +106,7 @@ export function mountCardActions(host,card,options={}){
   }catch(error){if(error?.name==='AbortError')return notify(status,'Share cancelled.');}
   const field=element('input','qca-copy');field.value=url;field.readOnly=true;field.setAttribute('aria-label','Copy card link');bar.append(field);field.focus();field.select();
   notify(status,'Select and copy this Quick Card link.');
- });
+ },'share');
  if(provider){
   const signin=element('a','qca-button qca-signin',provider.hasDedicatedSignin?'Sign in with '+provider.name:'Open '+provider.name+' to sign in');
   signin.href=provider.signin;signin.target='_blank';signin.rel='noopener noreferrer';
@@ -121,17 +134,13 @@ export function mountCardActions(host,card,options={}){
    notify(status,'Build instructions entered. Submit through Bubbles to start the job.');return;
   }
   try{sessionStorage.setItem(STORE_DRAFT,request);location.assign('/#robotDirectionsInput')}catch{notify(status,'Build draft could not be opened.')}
- });
+ },'build');
  // The shared reader returns actual website content in this card.
  // Account sign-in remains on the original provider until a session is connected.
  let original=null;
  try{const u=new URL(card.official||card.website||card.url||'');if(u.protocol==='https:'&&!u.username&&!u.password)original=u.href}catch{}
- if(original){const open=element('a','qca-button qca-source','↗ Open original website');open.href=original;open.target='_blank';open.rel='noopener noreferrer';controls.append(open)}
- bar.append(controls);
- // Source cards already offering their own direct search/player can opt out of
- // the generic TinyFish search form. Preserve all other toolbar actions.
- if(options.showSearch!==false)mountTinyFishCardReader(bar,card);
- bar.append(status);host.append(bar);return bar;
+ if(original&&options.showOriginal!==false){const open=element('a','qca-button qca-source','↗ Open original website');open.href=original;open.target='_blank';open.rel='noopener noreferrer';controls.append(open)}
+ bar.append(controls);if(options.websiteReader!==false&&options.showSearch!==false)mountTinyFishCardReader(bar,card);bar.append(status);host.append(bar);return bar;
 }
 function restoreDraft(){
  let request;try{request=sessionStorage.getItem(STORE_DRAFT)}catch{return}

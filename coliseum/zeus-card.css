@@ -1,0 +1,45 @@
+/* Zeus uses the same white, image-first Infinity brand-card language as the accepted catalog.
+   It is an original Infinity prototype, NOT an Infinity Accepted manufacturer or an official AI model. */
+#coliseumZeusCard.iac-card{
+ display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+ grid-template-areas:"heading heading" "media content";gap:0;align-items:stretch;
+ background:#fff;color:#14282f;border:1px solid #d6e3e4;border-radius:22px;
+ padding:0;margin:16px 0;min-width:0;overflow:hidden;
+ box-shadow:0 12px 36px #213f5012;
+}
+#coliseumZeusCard .zc-heading{grid-area:heading;border-bottom:1px solid #e0eaec}
+#coliseumZeusCard .zc-heading small{font-size:.76rem;font-weight:800;letter-spacing:.08em;color:#485f6b}
+#coliseumZeusCard .zc-art{
+ grid-area:media;display:grid;place-items:center;min-height:270px;height:auto;
+ background:radial-gradient(circle at 50% 42%,#ffe4a0 0,#f3f5ee 38%,#e5f0f4 75%,#f1f5f6 100%);
+ border-right:1px solid #e0eaec;overflow:hidden;
+}
+#coliseumZeusCard .zc-art span{
+ font-size:clamp(110px,17vw,210px);line-height:1;color:#b77819;
+ text-shadow:0 5px 1px #fff,0 14px 32px #8b651944;padding:0;
+}
+#coliseumZeusCard .zc-main{grid-area:content;min-width:0;padding:clamp(18px,3vw,30px)}
+#coliseumZeusCard .zc-kicker{font-size:.76rem;letter-spacing:.1em;font-weight:850;color:#2c6481}
+#coliseumZeusCard h2{font-size:clamp(1.65rem,4vw,2.55rem);line-height:1.06;letter-spacing:-.035em;margin:9px 0 13px;color:#14282f}
+#coliseumZeusCard .iac-intro{font-size:1rem;line-height:1.5;color:#405560;margin:0 0 18px}
+#coliseumZeusCard .zc-links{margin:8px 0 14px}
+#coliseumZeusCard .zc-links a{
+ display:grid;place-items:center;min-height:48px;border-radius:13px;
+ font-size:.92rem;font-weight:800;text-align:center;text-decoration:none;padding:12px;
+}
+#coliseumZeusCard .zc-links .zc-cta{background:#0068a6;color:#fff}
+#coliseumZeusCard .zc-links .zc-cta-secondary{background:#edf3f7;color:#164f72;border:1px solid #c7dce8}
+#coliseumZeusCard .zc-legal{font-size:.78rem;line-height:1.5;color:#536974;margin:12px 0}
+#coliseumZeusCard .qca-toolbar{margin-top:12px}
+#coliseumZeusCard :is(a,button):focus-visible{outline:3px solid #d26e10;outline-offset:3px}
+@media(max-width:650px){
+ #coliseumZeusCard.iac-card{grid-template-columns:minmax(0,1fr);grid-template-areas:"heading" "media" "content";max-height:var(--iac-available-height,none);overflow-y:auto;overscroll-behavior:contain}
+ #coliseumZeusCard .zc-art{min-height:150px;height:clamp(160px,24vh,235px);border-right:0;border-bottom:1px solid #e0eaec}
+ #coliseumZeusCard .zc-art span{font-size:clamp(90px,21vw,135px)}
+ #coliseumZeusCard .zc-main{padding:17px}
+ #coliseumZeusCard h2{font-size:clamp(1.7rem,7vw,2.15rem)}
+}
+@media(max-width:380px){
+ #coliseumZeusCard .zc-links{grid-template-columns:1fr}
+ #coliseumZeusCard .zc-main{padding:14px}
+}

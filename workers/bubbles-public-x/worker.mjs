@@ -4,19 +4,22 @@ const OWNER='YahooPingcwlz';
 const origin='https://quantaphi.org';
 const now=()=>new Date().toISOString();
 const json=(v,status=200)=>Response.json(v,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Access-Control-Allow-Origin':origin}});
-const decode=s=>String(s).replace(/&(?:amp|lt|gt|quot|apos|#39|nbsp);/g,x=>({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&#39;':"'",'&nbsp;':' '}[x])).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Math.min(0x10ffff,Number(n)||32)));
+const decode=s=>String(s).replace(/&(?:amp|lt|gt|quot|apos|#39|nbsp);/g,x=>({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&#39;':"'",'&nbsp;':' '}[x])).replace(/&#(?:([0-9]+)|x([0-9a-f]+));/gi,(_,decimal,hex)=>String.fromCodePoint(Math.min(0x10ffff,hex?parseInt(hex,16):Number(decimal)||32)));
 const strip=s=>decode(String(s).replace(/<script\b[\s\S]*?<\/script>/gi,' ').replace(/<style\b[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim());
 export function parsePublicProfile(html){
- const h=String(html||''),out=[],seen=new Set(),re=/<div role="link" data-href="\/YahooPingcwlz\/status\/(\d{15,22})"/gi;
+ // X adds aria-labelledby/id before role. Attribute order is not a source
+ // identity signal; require the exact owner status path and role instead.
+ const h=String(html||''),out=[],seen=new Set(),re=/<div\b[^>]{0,4000}\bdata-href=(["'])\/YahooPingcwlz\/status\/(\d{15,22})\1[^>]{0,4000}>/gi;
  for(const m of h.matchAll(re)){
-  const id=m[1];if(seen.has(id))continue;
+  if(!/\brole=(["'])link\1/i.test(m[0]))continue;
+  const id=m[2];if(seen.has(id))continue;
   const cut=h.indexOf('</article>',m.index);
   if(cut<0||cut-m.index>25000)continue;
   const article=h.slice(m.index,cut+10);
   if(!article.includes('href="/YahooPingcwlz"'))continue; // authored account, not a quoted article
   const match=article.match(/<div class="[^"]*\bwhitespace-pre-wrap\b[^"]*" dir="auto">([\s\S]*?)<\/div>/i);
   if(!match)continue;
-  const text=strip(match[1]).slice(0,2000);if(!text)continue;
+  const text=strip(match[1]).slice(0,4000);if(!text)continue;
   out.push({id,text,url:PROFILE+'/status/'+id,pinned:/>Pinned</.test(article)});
   seen.add(id);
  }
@@ -29,9 +32,12 @@ export function classifyPost(text){
  const action=/\b(build|create|make|add|put|show|place|fix|repair|restore|update|connect|deploy|publish|sync|replace|improve|change|install|redesign|give|need|want|must|ought|should|have to|we need|we have)\b/i.test(s);
  return subject&&action?'possible':subject?'context':'other';
 }
-async function recordScan(env,{status,visible=0,added=0,candidates=0,error=''}){
+async function recordScan(env,{status,visible=0,added=0,candidates=0,error='',checkedAt}){
+ // A slower, earlier Browser Run can finish after a newer scan. Record the
+ // original scan start and never let an old failure or stale result roll back
+ // a newer receipt. On equal timestamps, prefer a successful public read.
  const lastSuccess=status==='public_posts_observed'?now():null;
- await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES ('main',?,?,?,?,?,?,?) ON CONFLICT(k) DO UPDATE SET last_checked=excluded.last_checked,last_success=COALESCE(excluded.last_success,owner_x_scans.last_success),status=excluded.status,visible_count=excluded.visible_count,new_count=excluded.new_count,candidate_count=excluded.candidate_count,error=excluded.error").bind(now(),lastSuccess,status,visible,added,candidates,error.slice(0,180)).run();
+ await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES ('main',?,?,?,?,?,?,?) ON CONFLICT(k) DO UPDATE SET last_checked=excluded.last_checked,last_success=COALESCE(excluded.last_success,owner_x_scans.last_success),status=excluded.status,visible_count=excluded.visible_count,new_count=excluded.new_count,candidate_count=excluded.candidate_count,error=excluded.error WHERE excluded.last_checked>owner_x_scans.last_checked OR (excluded.last_checked=owner_x_scans.last_checked AND excluded.status='public_posts_observed' AND owner_x_scans.status!='public_posts_observed')").bind(checkedAt,lastSuccess,status,visible,added,candidates,error.slice(0,180)).run();
 }
 async function renderedProfileHTML(response){
  const reader=response.body?.getReader();
@@ -61,6 +67,7 @@ async function renderedProfileHTML(response){
 }
 export async function scanPublicX(env){
  if(!env.BROWSER||!env.DB)throw Error('browser_or_db_binding_unavailable');
+ const scanStartedAt=now();
  // A profile may render its initial skeleton before public articles arrive.
  // Retry one empty render with a longer DOM wait, but never report zero posts
  // as a successful read; X sometimes returns a login wall or rate limit.
@@ -74,18 +81,33 @@ export async function scanPublicX(env){
    if(observed.length)break;
   }
   if(!observed.length)throw Error('no_visible_public_owner_posts_after_retry');
- }catch(e){await recordScan(env,{status:'blocked',error:String(e.message||e)});throw e}
+ }catch(e){await recordScan(env,{status:'blocked',error:String(e.message||e),checkedAt:scanStartedAt});throw e}
  const stamp=now();
- let newCount=0,candidates=0;
+ let newCount=0,candidates=0,expandedCount=0;
  for(const p of observed){
   const kind=classifyPost(p.text);
   const result=await env.DB.prepare("INSERT OR IGNORE INTO owner_x_posts(id,url,body,kind,observed_at,pinned) VALUES (?,?,?,?,?,?)").bind(p.id,p.url,p.text,kind,stamp,p.pinned?1:0).run();
   const added=Number(result.meta?.changes||0);
   newCount+=added;
   if(added&&(kind==='tagged'||kind==='possible'))candidates++;
+  if(!added){
+   // An initial public profile render can clip a post. Accept only a strict
+   // extension of the same authored post; never replace divergent wording.
+   // observed_at remains the original first-seen timestamp.
+   const prior=await env.DB.prepare('SELECT kind FROM owner_x_posts WHERE id=?').bind(p.id).first();
+   if(prior){
+    const expanded=await env.DB.prepare(
+     'UPDATE owner_x_posts SET body=?, kind=? WHERE id=? AND length(?)>length(body) AND substr(?,1,length(body))=body'
+    ).bind(p.text,kind,p.id,p.text,p.text).run();
+    if(Number(expanded.meta?.changes||0)===1){
+     expandedCount++;
+     if(!['tagged','possible'].includes(prior.kind)&&['tagged','possible'].includes(kind))candidates++;
+    }
+   }
+  }
  }
- await recordScan(env,{status:'public_posts_observed',visible:observed.length,added:newCount,candidates});
- return {ok:true,status:'public_posts_observed',visibleCount:observed.length,newPosts:newCount,newPossibleRequests:candidates,lastSuccess:stamp,publicRead:true,completeHistory:false};
+ await recordScan(env,{status:'public_posts_observed',visible:observed.length,added:newCount,candidates,checkedAt:scanStartedAt});
+ return {ok:true,status:'public_posts_observed',visibleCount:observed.length,newPosts:newCount,expandedPosts:expandedCount,newPossibleRequests:candidates,lastSuccess:stamp,publicRead:true,completeHistory:false};
 }
 export default {
  async scheduled(event,env,ctx){ctx.waitUntil(scanPublicX(env))},

@@ -1,4 +1,5 @@
-import {shareQuickCard} from '/quick-card-share.js?v=2';
+import {shareQuickCard} from '/quick-card-share.js?v=3';
+import {openQuickCardPreview} from '/quick-card-preview.mjs';
 const form=document.getElementById('quickCardCreate'),result=document.getElementById('qcpResult'),kind=document.getElementById('qcpKind');
 const show=()=>{document.getElementById('qcpSearchLine').hidden=kind.value!=='search';document.getElementById('qcpVideoLine').hidden=kind.value!=='video';};
 kind.addEventListener('change',show);show();
@@ -56,9 +57,11 @@ form.addEventListener('submit',async event=>{
   const copy=document.createElement('button');copy.type='button';copy.textContent='Copy link';copy.addEventListener('click',async()=>{
    try{await navigator.clipboard.writeText(value.cardUrl);copy.textContent='Copied';}catch{field.focus();field.select();copy.textContent='Select and copy the link';}
   });
+  const previewButton=document.createElement('button');previewButton.type='button';previewButton.id='qcpPreviewPublished';previewButton.textContent='◫ Preview live card';
+  previewButton.addEventListener('click',()=>openQuickCardPreview({url:value.cardUrl,title:body.title,description:body.description,image:body.image,official:body.website,previewMode:body.previewMode}));
   const publishedShare=document.createElement('button');publishedShare.type='button';publishedShare.id='qcpSharePublished';publishedShare.textContent='↗ Share published card';
-  publishedShare.addEventListener('click',()=>void shareQuickCard({url:value.cardUrl,title:body.title+' · QuantaPhi Quick Card',status:message}));
-  row.append(publishedShare,link,copy);result.append(message,field,row);
+  publishedShare.addEventListener('click',()=>void shareQuickCard({url:value.cardUrl,title:body.title+' · QuantaPhi Quick Card',image:body.image||'',description:body.description||'',status:message}));
+  row.append(previewButton,publishedShare,link,copy);result.append(message,field,row);
  }catch(error){const p=document.createElement('p');p.textContent=error.message||'Could not publish your card.';result.append(p);}
  finally{button.disabled=false;button.textContent='Publish shareable card';}
 });

@@ -117,14 +117,8 @@ test('published Bubbles embed hides iframe until visitor opens its host-page bub
  };
  const window={addEventListener:(event,fn)=>{if(event==='message')listener=fn}};
  vm.runInNewContext(code,{document,window,URLSearchParams,Set});
- assert.deepEqual(appended,[iframe,orb]);
- const url=new URL(iframe.src);
- assert.equal(url.origin,'https://quantaphi.org');
- assert.equal(url.pathname,'/bubbles.html');
- assert.equal(url.searchParams.get('role'),'singer');
- assert.equal(url.searchParams.get('id'),'my_page');
- assert.equal(url.searchParams.get('name'),'Choir helper');
- assert.equal(url.searchParams.get('instructions'),'Original singing exercises');
+ assert.deepEqual(appended,[orb], 'closed assistant only mounts its lightweight launcher');
+ assert.equal(iframe.src,undefined,'no network navigation occurs before click');
  assert.equal(iframe.style.display,'none','closed messenger iframe must be invisible');
  assert.equal(orb.style.display,'block');
  assert.match(orb.style.cssText,/border-radius:50%!important/);
@@ -133,6 +127,14 @@ test('published Bubbles embed hides iframe until visitor opens its host-page bub
  listener({origin:'https://quantaphi.org',source:{},data:{type:'quantaphi:bubbles:size',open:true}});
  assert.equal(iframe.style.display,'none','an unrelated frame cannot open it');
  events.get('button:click')();
+ assert.deepEqual(appended,[orb,iframe],'user tap mounts actual iframe');
+ const url=new URL(iframe.src);
+ assert.equal(url.origin,'https://quantaphi.org');
+ assert.equal(url.pathname,'/bubbles.html');
+ assert.equal(url.searchParams.get('role'),'singer');
+ assert.equal(url.searchParams.get('id'),'my_page');
+ assert.equal(url.searchParams.get('name'),'Choir helper');
+ assert.equal(url.searchParams.get('instructions'),'Original singing exercises');
  assert.equal(iframe.style.display,'block');
  assert.equal(orb.style.display,'none');
  events.get('iframe:load')();
@@ -142,6 +144,8 @@ test('published Bubbles embed hides iframe until visitor opens its host-page bub
  listener({origin:'https://quantaphi.org',source:iframe.contentWindow,data:{type:'quantaphi:bubbles:size',open:false}});
  assert.equal(iframe.style.display,'none');
  assert.equal(orb.style.display,'block');
+ events.get('button:click')();
+ assert.deepEqual(appended,[orb,iframe],'reopen keeps the original document');
 });
 
 test('multiple Bubbles embeds isolate notes and never inherit owner authorization',()=>{

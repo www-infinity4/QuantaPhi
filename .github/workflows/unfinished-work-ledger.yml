@@ -1,0 +1,29 @@
+name: Unfinished work ledger contracts
+
+on:
+  pull_request:
+    paths:
+      - AGENTS.md
+      - work/unfinished/**
+      - test/unfinished-ledger.test.mjs
+      - .github/workflows/unfinished-work-ledger.yml
+  push:
+    paths:
+      - AGENTS.md
+      - work/unfinished/**
+      - test/unfinished-ledger.test.mjs
+      - .github/workflows/unfinished-work-ledger.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ledger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out exact commit
+        uses: actions/checkout@v4
+      - name: Check ticket and index contracts
+        run: node --test test/unfinished-ledger.test.mjs

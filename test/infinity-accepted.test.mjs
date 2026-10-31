@@ -5,10 +5,24 @@ import {cleanFeedState,feedCandidates,nextFeedDirection,nextDeckCycle,markViewed
 import {planCardBrowserAction,cardActionGoal} from '../workers/infinity-brain-clock/quick-card-browser-policy.mjs';
 import {handleQuickCardBrowser,readBoundedJson} from '../workers/infinity-brain-clock/quick-card-browser.mjs';
 import {createCardBrowserSession} from '../quick-card-tinyfish-actions.mjs';
+import {cardImageCandidates} from '../infinity-accepted-cards.mjs';
+import {websiteSummary} from '../tinyfish-card-reader.mjs';
 const framework=acceptedBrand('durable-framework-computers');
 const other={id:'ordinary',name:'Ordinary brand',official:'https://example.com/',category:'Hardware'};
 const store=()=>{const map=new Map();return {get:async key=>map.get(key),put:async(key,value)=>map.set(key,structuredClone(value))}};
 const env={TINYFISH_API_KEY:'synthetic-provider-fixture-key'};
+test('still images keep observed fallbacks and exclude unsafe or animated media',()=>{
+ assert.deepEqual(cardImageCandidates({images:['https://example.com/product.jpg','https://example.com/product.jpg','https://example.com/moving.gif','javascript:alert(1)','https://user:password@example.com/private.jpg'],logo:'https://example.com/logo.svg'}),
+  ['https://example.com/product.jpg','https://example.com/logo.svg']);
+ const starrett=acceptedBrand('durable-starrett');assert.match(starrett.image,/thread-gaging/);
+ assert.match(starrett.feature,/calipers/);assert.deepEqual(starrett.actions.map(a=>a.label),['Thread gages','Saw blades']);
+});
+test('compact website results present source prose without raw Markdown or hidden product loss',()=>{
+ const text='# Tools\n\nShort heading\n\nA detailed product description with enough words to explain the original website offering clearly.\n\n[Original product](https://example.com/product)';
+ const summary=websiteSummary(text);assert.match(summary.lead,/^A detailed product description/);
+ assert.doesNotMatch(summary.full,/#|\]\(/);assert.match(summary.full,/Original product/);
+ assert.ok(websiteSummary('a'.repeat(2000)).lead.length<=600);
+});
 test('preserves all 116 owner entries, four categories and specific model qualifiers',()=>{
  assert.equal(INFINITY_ACCEPTED_BRANDS.length,116);assert.equal(new Set(INFINITY_ACCEPTED_BRANDS.map(x=>x.id)).size,116);
  assert.deepEqual(ACCEPTED_GROUPS.map(group=>INFINITY_ACCEPTED_BRANDS.filter(x=>x.category===group).length),[29,22,45,20]);

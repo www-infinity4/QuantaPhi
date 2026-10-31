@@ -64,7 +64,9 @@ test('Framework parts control fetches the mapped original website only after a t
  });
  await page.goto(base+'/?card=durable-framework-computers',{waitUntil:'domcontentloaded'});
  const card=page.locator('#oracleCardStage');
- const reader=card.locator('.qca-website-reader');await expect(reader).toBeVisible();expect(requests).toBe(0);
- await reader.locator('summary').click();await reader.getByRole('button',{name:'Parts & accessories',exact:true}).click();
- await expect(reader.getByText('Parts source fixture')).toBeVisible();expect(requests).toBe(1);
+ const action=card.getByRole('button',{name:'Parts & accessories on Framework Computers',exact:true});
+ await expect(action).toBeVisible();expect(requests).toBe(0);
+ await expect(card.locator('.qca-website-reader')).toHaveCount(0);
+ await action.click();
+ await expect(card.getByText('Parts source fixture')).toBeVisible();expect(requests).toBe(1);
 });

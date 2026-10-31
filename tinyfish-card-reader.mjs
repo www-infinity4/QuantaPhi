@@ -31,14 +31,27 @@ export async function readCardWebsite(cardId,action='inspect',query='',{fetcher=
  }catch(error){if(error?.name==='AbortError')throw Error('Website reading was interrupted. Please try again.');throw error;}
  finally{clearTimeout(timer);signal?.removeEventListener('abort',cancel)}
 }
-export function renderWebsiteResults(host,data){
+export function websiteSummary(value){
+ const plain=String(value||'').replace(/!\[[^\]]*\]\([^)]*\)/g,'').replace(/\[([^\]]+)\]\([^)]*\)/g,'$1')
+  .replace(/^\s{0,3}#{1,6}\s+/gm,'').replace(/[*_`]+/g,'');
+ const parts=plain.split(/\n\s*\n/).map(s=>s.replace(/\s+/g,' ').trim()).filter(Boolean);
+ const lead=parts.find(s=>s.length>65&&!/^https?:\/\//.test(s))||parts[0]||'';
+ return {lead:lead.length>600?lead.slice(0,597)+'…':lead,full:plain};
+}
+export function renderWebsiteResults(host,data,{compact=false}={}){
  host.replaceChildren();
  const stamp=new Date(data.observedAt).toLocaleString();
  const status=text('p',data.items.length?'From '+new URL(data.sourceUrl).hostname+' · '+stamp:'No matching public pages were found on this website.','qca-status');
  status.setAttribute('role','status');host.append(status);
  for(const item of data.items){
   const row=text('article',undefined,'qca-website-result');row.append(text('strong',item.title));
-  if(item.text)row.append(text('p',item.text,'qca-website-text'));
+  if(item.text){
+   if(compact){
+    const copy=websiteSummary(item.text);row.append(text('p',copy.lead,'qca-website-text'));
+    if(copy.full.trim()!==copy.lead){const more=text('details',undefined,'qca-website-details');
+     more.append(text('summary','Full website details'),text('p',copy.full,'qca-website-text'));row.append(more)}
+   }else row.append(text('p',item.text,'qca-website-text'));
+  }
   const link=text('a','Open original page ↗','qca-button');link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';row.append(link);host.append(row);
  }
  host.append(text('small',data.provider+' · Receipt '+data.receipt.id,'qca-website-receipt'));

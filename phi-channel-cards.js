@@ -1,11 +1,12 @@
-/* Four TV card screens: VIDEO or actual YouTube player, never an entire
- * TV website embedded in an iframe. Playback is user-started and audible when
- * allowed by Android/browser and the source provider. One active sound source. */
+/* TV wall: four direct-media channels plus the intact KYOU station page.
+ * KYOU opens first above StarQuest; the publisher controls online programming.
+ * One active player across the TV wall and separate live-TV cards. */
 (function(){
 'use strict';
 const host=document.getElementById('phiChannelCards'),catalog=window.PhiTVPrograms;
 if(!host||!catalog)return;
 const channels=[
+ {name:'KYOU · FOX 15.1',eyebrow:'IOWA · OFFICIAL STATION VIEWER',description:'KYOU’s original live page in this screen. Online news programming is controlled by KYOU; game video is not verified in this feed.',key:'kyou',poster:'https://webpubcontent.gray.tv/gray/arc-fusion-assets/images/logo-off-site/kyou.png?d=602&mxId=00000000',icon:'KY',tone:'kyou'},
  {name:'StarQuest',eyebrow:'CLASSIC MOVIES · WATCH NOW',description:'Direct movie player · daily feature or next title.',key:'starquest',poster:'/TV-Database/assets/starquest-share-card.jpg',icon:'SQ',tone:'starquest'},
  {name:'Omni TV',eyebrow:'ONE REMOTE · THREE CHANNELS',description:'Actual video only. CH− / CH+ switches between StarQuest, Chiller and Shop LC.',key:'omni',poster:'/omni-tv/preview.png',icon:'TV',tone:'omni'},
  {name:'Chiller',eyebrow:'1980s SUSPENSE · ON AIR',description:'Current scheduled Hitchcock or Twilight Zone episode in the screen.',key:'chiller',poster:'https://i.ytimg.com/vi/YD5xBeGeX5w/hqdefault.jpg',icon:'C',tone:'chiller'},
@@ -15,9 +16,15 @@ const remoteChannels=['starquest','chiller','shoplc'];
 const el=(tag,cls,label)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(label!==undefined)node.textContent=label;return node};
 const heading=host.appendChild(el('div','channelphi-heading'));
 heading.append(el('span','channelphi-kicker','INFINITY 2026® · ORACLE OCTAVES'),el('h2',null,'Watch · Infinity Channels'),
- el('p',null,'Tap a TV screen to watch the actual movie or channel with sound. No television websites open inside these cards.'));
+ el('p',null,'KYOU opens in the first live viewer above StarQuest. Choose another channel below to switch the active player.'));
 const grid=host.appendChild(el('div','channelphi-grid'));
 let active=null,generation=0,ytReady=null,hlsReady=null;
+let kyouPlayback=null,autoKyou=true;
+function kyouSource(){
+ const url=new URL('https://www.kyoutv.com/livestream/');
+ url.searchParams.set('utm_source','quantaphi');url.searchParams.set('utm_medium','referral');url.searchParams.set('utm_campaign','kyou_station_card');return url.href;
+}
+function startKyou(){if(autoKyou&&kyouPlayback&&!document.hidden&&!active)open(kyouPlayback,{automatic:true})}
 function scriptOnce(src,test){
  if(test())return Promise.resolve(true);
  return new Promise(resolve=>{
@@ -99,10 +106,12 @@ function recordProductionAfterPlayback(playback,token){
  },30000);
 }
 function programFor(playback){
+ if(playback.channel==='kyou')return {title:'KYOU · Official live news page',channel:'kyou'};
  return catalog.now(playback.channel,new Date());
 }
 function setSound(playback){
  if(active!==playback)return;
+ if(playback.channel==='kyou'){playback.status.textContent='Use the volume control in KYOU’s own player inside the station page.';return}
  if(playback.video){
   playback.video.muted=false;playback.video.volume=1;
   const promise=playback.video.play();if(promise?.catch)promise.catch(()=>{
@@ -125,6 +134,16 @@ function showProgram(playback,program,token){
  playback.productionLogged=null;
  playback.title.textContent=program.title+(program.year?' · '+program.year:'');
  playback.status.textContent='Preparing '+program.title+'…';
+ if(playback.channel==='kyou'){
+  const frame=el('iframe','channelphi-frame channelphi-kyou-frame');
+  frame.title='KYOU official live website with its own player, controls and advertising';
+  frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;
+  frame.referrerPolicy='strict-origin-when-cross-origin';frame.loading='eager';frame.src=kyouSource();
+  playback.frame=frame;playback.screenSlot.append(frame);
+  playback.status.textContent='KYOU’s original page requested. News, game availability, video and ads remain controlled by KYOU.';
+  if(typeof window.gtag==='function')window.gtag('event','partner_site_frame_request',{partner:'kyou',card_id:'channels',link_id:'live'});
+  return;
+ }
  if(playback.channel==='shoplc'){void playShopLC(playback,token,0);return}
  if(!catalog.valid(program.videoId)){playback.status.textContent='Invalid media ID. Playback cancelled.';return}
  const frame=el('iframe','channelphi-frame');
@@ -169,6 +188,7 @@ function showProgram(playback,program,token){
 }
 function changeProgram(playback,step){
  if(active!==playback)return;
+ if(playback.channel==='kyou'){resetMedia();showProgram(playback,programFor(playback),++generation);return}
  // Omni's CH buttons always change CHANNEL, even when currently on ShopLC.
  if(playback.key==='omni'){
   const i=remoteChannels.indexOf(playback.remoteChannel);
@@ -219,7 +239,9 @@ async function playShopLC(playback,token,index){
  video.onpause=()=>{if(playback.productionTimer){clearTimeout(playback.productionTimer);playback.productionTimer=null}};
  await feed();
 }
-function open(playback){
+function open(playback,{automatic=false}={}){
+ autoKyou=automatic;
+ document.dispatchEvent(new CustomEvent('quantaphi:tv-playback-request',{detail:{owner:'phiChannelCards'}}));
  stop();const token=generation;
  playback.screen.hidden=true;playback.screen.setAttribute('aria-expanded','true');
  playback.viewer.hidden=false;playback.card.classList.add('channelphi-playing');
@@ -230,9 +252,11 @@ function open(playback){
 for(const c of channels){
  const card=grid.appendChild(el('article','channelphi-card channelphi-'+c.tone));card.setAttribute('aria-label',c.name+' channel');
  const mast=card.appendChild(el('div','channelphi-mast'));
- mast.append(el('span','channelphi-monogram',c.icon));
+ if(c.key==='kyou'){const logo=el('img','channelphi-kyou-logo');logo.src=c.poster;logo.alt='KYOU';logo.width=90;logo.height=48;mast.append(logo)}
+ else mast.append(el('span','channelphi-monogram',c.icon));
  const title=mast.appendChild(el('div','channelphi-name'));title.append(el('span','channelphi-kicker',c.eyebrow),el('h3',null,c.name));
  card.append(el('p','channelphi-description',c.description));
+ if(c.key==='kyou'){const full=el('a','channelphi-full-view','Open full KYOU viewer');full.href='/infinity-tv/kyou.html';card.append(full)}
  const screen=card.appendChild(el('button','channelphi-screen'));screen.type='button';screen.setAttribute('aria-label','Watch '+c.name+' video in this card');screen.setAttribute('aria-expanded','false');
  const image=screen.appendChild(el('img','channelphi-art'));image.src=c.poster;image.alt='';image.loading='lazy';
  const shade=screen.appendChild(el('span','channelphi-screen-label'));shade.append(el('span','channelphi-play-icon','▶'),el('strong',null,'Watch '+c.name));
@@ -241,19 +265,32 @@ for(const c of channels){
  const now=viewer.appendChild(el('strong','channelphi-now','On air'));
  const status=viewer.appendChild(el('p','channelphi-status','Ready'));status.setAttribute('role','status');
  const controls=viewer.appendChild(el('div','channelphi-controls'));
- const previous=controls.appendChild(el('button','channelphi-prev','◀ CH−'));previous.type='button';
- const next=controls.appendChild(el('button','channelphi-next','CH+ ▶'));next.type='button';
- const sound=controls.appendChild(el('button','channelphi-sound','🔊 Sound'));sound.type='button';
+ if(c.key==='kyou')controls.classList.add('channelphi-kyou-controls');
+ const previous=controls.appendChild(el('button','channelphi-prev',c.key==='kyou'?'↻ Refresh station':'◀ CH−'));previous.type='button';
+ const next=controls.appendChild(el(c.key==='kyou'?'a':'button','channelphi-next',c.key==='kyou'?'↗ KYOU website':'CH+ ▶'));
+ if(c.key==='kyou'){next.href=kyouSource();next.target='_blank';next.rel='noopener';next.referrerPolicy='strict-origin-when-cross-origin'}else next.type='button';
+ const sound=c.key==='kyou'?null:controls.appendChild(el('button','channelphi-sound','🔊 Sound'));
+ if(sound)sound.type='button';
+ else viewer.appendChild(el('p','channelphi-hint','Sound and volume are controlled inside KYOU’s original player.'));
  const close=controls.appendChild(el('button','channelphi-stop','■ Stop'));close.type='button';
  const playback={key:c.key,card,screen,viewer,screenSlot,status,title:now,sound,video:null,frame:null,yt:null,hls:null,program:null,channel:c.key,remoteChannel:c.key};
+ if(c.key==='kyou')kyouPlayback=playback;
  screen.addEventListener('click',()=>open(playback));
  previous.addEventListener('click',()=>changeProgram(playback,-1));
- next.addEventListener('click',()=>changeProgram(playback,1));
- sound.addEventListener('click',()=>setSound(playback));
- close.addEventListener('click',()=>{stop();screen.focus()});
+ if(c.key!=='kyou')next.addEventListener('click',()=>changeProgram(playback,1));
+ sound?.addEventListener('click',()=>setSound(playback));
+ close.addEventListener('click',()=>{autoKyou=false;stop();screen.focus()});
 }
+host.addEventListener('oracle:activate',()=>{autoKyou=true;startKyou()});
+if(typeof IntersectionObserver!=='undefined'){
+ const shelfObserver=new IntersectionObserver(items=>{
+  if(items.some(item=>item.isIntersecting)&&document.body?.classList?.contains('oracle-shelf-open'))startKyou();
+ });shelfObserver.observe(heading);
+ window.addEventListener('pagehide',()=>shelfObserver.disconnect(),{once:true});
+}
+document.addEventListener('quantaphi:tv-playback-request',event=>{if(event.detail?.owner!=='phiChannelCards'){autoKyou=false;stop()}});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
 document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id==='phiChannelCards')stop()});
 window.addEventListener('pagehide',stop);
-host.append(el('p','channelphi-foot','Only one video streams at a time. Sound is requested after you tap; YouTube, live sources and Android may require the Play/volume control in the screen. Unavailable media cannot be made playable by embedding its website.'));
+host.append(el('p','channelphi-foot','One active player at a time. KYOU retains its original page, controls and advertising. Online KYOU programming can differ from FOX 15.1 over the air; this viewer does not confirm game access. Other channels keep their direct video controls.'));
 })();
