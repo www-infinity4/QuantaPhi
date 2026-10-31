@@ -1,5 +1,5 @@
 const API = '/api/bubbles/connections';
-const NAMES = {cloudflare:'Cloudflare',google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic'};
+const NAMES = {cloudflare:'Cloudflare',google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic',meta:'Meta (Facebook + Instagram)'};
 export function availableCloudflareLoginActions(provider) {
   if(provider?.id!=='cloudflare'||provider.configured!==true||!Array.isArray(provider.actions))return [];
   return ['account.read','projects.build','ledger.read','projects.full'].filter(action=>provider.actions.includes(action));
@@ -7,7 +7,7 @@ export function availableCloudflareLoginActions(provider) {
 
 export function providerAuthorizationActions(provider) {
   if(!provider?.configured)return [];
-  if(provider.id!=='cloudflare')return provider.id==='github'?['repository.read']:[];
+  if(provider.id!=='cloudflare')return provider.id==='github'?['repository.read']:provider.id==='meta'?['pages.read','instagram.read']:[];
   const available=provider.authorizationActions??provider.actions;
   const required=['account.read','projects.build','ledger.read','projects.full'];
   if(Array.isArray(available)&&available.includes('owner.full'))return ['owner.full'];
@@ -96,7 +96,7 @@ export class AccountConnections {
   readPendingHandoff() {
     try{
       const saved=JSON.parse(this.root.sessionStorage?.getItem('bubbles:oauth-pending:v1')||'null');
-      if(saved&&['github','google','cloudflare'].includes(saved.provider)&&
+      if(saved&&['github','google','cloudflare','meta'].includes(saved.provider)&&
         /^[A-Za-z0-9_-]{43}$/.test(saved.state)&&Number.isFinite(saved.expiresAt)&&
         saved.expiresAt>Date.now()&&saved.expiresAt<=Date.now()+300000&&saved.flow==='same-window')return saved;
     }catch{}
