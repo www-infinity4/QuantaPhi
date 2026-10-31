@@ -87,7 +87,7 @@
    if(refreshButton){refreshButton.disabled=false;refreshButton.textContent='Refresh totals';}
   }
  }
- if(refreshButton)refreshButton.addEventListener('click',()=>{void refresh()});
+ if(refreshButton)refreshButton.addEventListener('click',()=>refresh());
  refresh();
  setInterval(()=>{if(!document.hidden)refresh();},60000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
