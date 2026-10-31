@@ -1,4 +1,4 @@
-import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261031-source-ad-first1';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 // Real source searches, not invented inventory, account data or offers.
 const provider=(id,name,category,official,query,topics,color)=>({id,name,category,official,query,topics,color});
@@ -46,6 +46,7 @@ export function mountPremiumCard(card){
  const article=make('article','iqc-card premium-card');article.dataset.sourceId=card.id;article.dataset.sourceName=card.name;article.dataset.sourceReady='true';article.style.setProperty('--premium-accent',card.color);
  const header=make('header','premium-heading');header.append(make('p','iqc-kind',card.category+' · INFINITY 2026®'),make('h2','',card.name));
  const identity=make('a','premium-origin',new URL(card.official).hostname);identity.href=card.official;identity.target='_blank';identity.rel='noopener noreferrer';header.append(identity);
+ const browse=make('a','premium-browse-source','Explore '+card.name+' listings ↗');browse.href=card.official;browse.target='_blank';browse.rel='noopener noreferrer';header.append(browse);
  const form=make('form','premium-search');const label=make('label','',card.id==='nasa-library'?'Explore the NASA image collection':'Search '+card.name);
  const field=make('input');field.type='search';field.value=card.query;field.required=true;field.maxLength=160;field.setAttribute('aria-label','Search '+card.name);label.append(field);
  const submit=make('button','','Search');submit.type='submit';form.append(label,submit);
@@ -54,7 +55,7 @@ export function mountPremiumCard(card){
  const state=make('p','premium-state','Choose a topic or search the original source.');state.setAttribute('role','status');
  const content=make('div','premium-content'),actions=make('div');
  const disclaimer=make('p','premium-footnote',card.id==='nasa-library'?'NASA collection images and captions. Check the original record for credits and usage guidance.':card.category==='Restaurants'?'Search original restaurant pages. Confirm current offers, dates and eligibility at the restaurant.':card.category==='Auctions'||card.category==='Shopping'?'Original-source search results. Confirm price, availability and sale details on the source page.':'Independent QuantaPhi research card · original publisher sources.');
- article.append(header,form,topics,state,content,disclaimer,actions);
+ article.append(header,content,form,topics,state,disclaimer,actions);
  mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
  const rotating=['Restaurants','Shopping','Trading cards','Auctions'].includes(card.category);
  let serial=0,loaded=false;

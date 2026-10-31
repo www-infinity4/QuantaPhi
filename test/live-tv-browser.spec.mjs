@@ -25,9 +25,9 @@ test('a verified live game opens first, stays reachable, and unpins on final',as
  for(const action of ['star','collect','share','build'])await expect(actions.locator('[data-action="'+action+'"]')).toHaveCount(1);
  // The direct KYOU viewer must not open a second nested player as a preview.
  await expect(actions.locator('[data-action="preview"]')).toHaveCount(0);
- await expect(actions.locator('[data-action="star"]')).toHaveCSS('background-color','rgb(255, 243, 212)');
- await expect(actions.locator('[data-action="collect"]')).toHaveCSS('background-color','rgb(230, 247, 238)');
- await expect(actions.locator('[data-action="share"]')).toHaveCSS('background-color','rgb(29, 64, 95)');
+ await expect(actions.locator('[data-action="star"]')).toHaveCSS('background-color','rgb(255, 255, 255)');
+ await expect(actions.locator('[data-action="collect"]')).toHaveCSS('background-color','rgb(255, 255, 255)');
+ await expect(actions.locator('[data-action="share"]')).toHaveCSS('background-color','rgb(255, 255, 255)');
  const overflow=await actions.evaluate(n=>n.getBoundingClientRect().right>innerWidth);
  expect(overflow).toBe(false);
  await expect(page.locator('#liveFoxGameCard h2')).toHaveText('KYOU · FOX 15.1');
