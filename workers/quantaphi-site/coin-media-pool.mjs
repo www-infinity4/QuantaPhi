@@ -2,7 +2,9 @@
 // Channel feeds are recent upload inventories, not the full YouTube search index.
 const CHANNELS=Object.freeze([
  {id:'UC4eYXhJI4-7wSWc8UNRwD4A',name:'NPR Music',kind:'music'},
- {id:'UCAuUUnT6oDeKwE6v1NGQxug',name:'TED',kind:'science'}
+ {id:'UCAuUUnT6oDeKwE6v1NGQxug',name:'TED',kind:'science'},
+ {id:'UCi8e0iOVk1fEOogdfu4YgfA',name:'Rotten Tomatoes Trailers',kind:'movies'},
+ {id:'UC3gNmTGu-TTbFPpfSs5kNkg',name:'Rotten Tomatoes Movieclips',kind:'movies'}
 ]);
 const FEATURED=Object.freeze([
  {id:'vXlUZlrh7AA',kind:'movies',title:'New movie trailers · Rotten Tomatoes Trailers (July 2026)',channel:'Rotten Tomatoes Trailers',published:'2026-07-13T00:00:00Z'},
@@ -42,7 +44,7 @@ export async function coinMediaRoute(request,{fetcher=fetch}={}){
  }));
  const items=[...(kind==='all'||kind==='movies'?FEATURED:[]),...results.flatMap(x=>x.status==='fulfilled'?x.value:[])];
  const unique=[...new Map(items.map(item=>[item.id,item])).values()]
-  .sort((a,b)=>Date.parse(b.published)-Date.parse(a.published)).slice(0,40);
+  .sort((a,b)=>Date.parse(b.published)-Date.parse(a.published)).slice(0,80);
  const failures=results.filter(x=>x.status!=='fulfilled').length;
  return Response.json({ok:true,kind,items:unique,count:unique.length,
   source:'official-publisher-links-and-public-channel-feeds',feedChannels:requested.length,
