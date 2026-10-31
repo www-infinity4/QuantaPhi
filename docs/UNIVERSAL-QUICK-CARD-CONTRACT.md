@@ -53,3 +53,11 @@ Every new QuantaPhi card and public website/card template should use **the same 
 6. Every new brand/product/story card should explicitly choose an actual hero asset or record that none has been cleared for use. A card with no image is not considered image-ready for an X large-image preview. Create approved card artwork and verify crawler visibility as a separate readiness task. Never claim all earlier cards have artwork until inspected.
 
 Verification: `node --test test/quick-card-preview.test.mjs test/quick-card-publisher.test.mjs test/quick-card-share.test.mjs`; mobile dialog test; persisted D1 readback; X crawler image URL verification and production route tests.
+
+## Professional hero image default (October 31, 2026)
+
+- Every new card begins with **professional imagery required for image-ready/featured status**. A text-only card may still work and publish, but cannot be called hero/image-ready or promoted on the strength of placeholder art. The creator studio displays the standard before publishing and preflights any supplied image.
+- Use real episode/program photography, real publisher-approved product/ad images, or licensed original artwork. Minimum landscape hero 1200 × 675 pixels, recommended at least 1600 × 900, good framing, safe margins for phones, legible text, no watermarks or fake approvals. Preserve a source/rights audit trail.
+- Prefer verified original assets, not stylized initials, tiny favicons, flat color brand names, fake photographs or scraped image URLs. Images that fail to load or meet dimensions are blocked at the creator UI; server-side editorial/asset-rights review is still necessary before promoting them.
+- The TV Guide quick card may show attributed TVmaze episode cover/thumbnail and schedules with day, time and network selectors. TVmaze metadata is CC BY-SA 4.0 with attribution, and is not a provider-specific local channel lineup. A full local lineup goes to the original TV Guide provider selection until there is a licensed feed.
+- Preserve documented provider actions (including authentic restaurant ads), source stamps and accessibility while upgrading covers. Never invent network airings or film images.
