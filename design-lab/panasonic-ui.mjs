@@ -10,7 +10,7 @@ async function run(){
  try{
   const receipt=await searchPanasonic(field.value,{signal});
   if(signal.aborted){status.textContent='Stopped. No purchase or account action was taken.';return;}
-  status.textContent=receipt.found+' verified official-domain page'+(receipt.found===1?'':'s')+' found. Public index only.';
+  status.textContent=receipt.found+' matching official-domain link'+(receipt.found===1?'':'s')+' in the public index. Page availability is not confirmed.';
   for(const item of receipt.results){
    const link=document.createElement('a');link.className='result';link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';
    const title=document.createElement('strong');title.textContent=item.title;
