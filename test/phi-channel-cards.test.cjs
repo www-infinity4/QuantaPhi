@@ -108,7 +108,7 @@ test('KYOU and shared Quick Card footer actions keep real controls with neutral 
  const actions=fs.readFileSync('quanta-card-actions.mjs','utf8');
  const actionCss=fs.readFileSync('quanta-card-experience.css','utf8');
  for(const action of ['follow','star','collect','preview','share','build']){
-  assert.match(actions,new RegExp("'"+action+"'\\\\)"),action+' is a real tagged control');
+  assert.ok(actions.includes("'"+action+"')"),action+' is a real tagged control');
  }
  assert.match(actionCss,/\.qca-toolbar \.qca-controls>\.qca-button\{[^}]*background:#fff!important/);
  assert.match(actionCss,/\.qca-toolbar \.qca-controls>\.qca-button\[aria-pressed="true"\]\{[^}]*background:#eee!important/);
