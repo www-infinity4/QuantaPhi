@@ -102,7 +102,20 @@ export async function githubCopilotRequest({accessToken,repository,action,prompt
    call('/commits/'+pr.head.sha+'/check-runs?per_page=100'),
    call('/pulls/'+number+'/reviews?per_page=100')]);
   const runs=checks.check_runs;
-  if(!Array.isArray(reviews)||!reviews.some(r=>r.state==='APPROVED'&&r.user?.login!==pr.user?.login))
+  // An old approval is not authorization for a newly changed PR head.
+  // Resolve only each reviewer's latest submitted state, and require that the
+  // successful independent approval examined this exact immutable commit.
+  if(!Array.isArray(reviews))throw Error('merge_independent_review_required');
+  const latestByReviewer=new Map();
+  for(const review of reviews){
+   const reviewer=review?.user?.login;
+   if(typeof reviewer!=='string'||!reviewer||!['APPROVED','CHANGES_REQUESTED','DISMISSED'].includes(review.state))continue;
+   const previous=latestByReviewer.get(reviewer);
+   const stamp=Date.parse(review.submitted_at||'')||0;
+   if(!previous||stamp>=previous.stamp)latestByReviewer.set(reviewer,{stamp,review});
+  }
+  if(![...latestByReviewer.entries()].some(([reviewer,{review}])=>
+    reviewer!==pr.user?.login&&review.state==='APPROVED'&&review.commit_id===pr.head.sha))
    throw Error('merge_independent_review_required');
   if(!Array.isArray(runs)||runs.length<1||Number(checks.total_count)>100||
      runs.some(r=>r.status!=='completed'||r.conclusion!=='success')||
