@@ -7,7 +7,8 @@ const capabilities = {
   ebay: ['listing.read', 'bid.place'],
   walmart: ['product.read', 'order.place'],
   ibm: ['project.read', 'project.write'],
-  anthropic: ['model.invoke']
+  anthropic: ['model.invoke'],
+  meta: ['pages.read','pages.publish','instagram.read','instagram.publish']
 };
 export const PROVIDERS = Object.freeze(Object.fromEntries(
   Object.entries(capabilities).map(([id, actions]) => [id, Object.freeze({
