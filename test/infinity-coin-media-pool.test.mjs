@@ -21,8 +21,8 @@ test('film choices are verified editorial trailer records, not promised free ful
  const response=await coinMediaRoute(new Request('https://quantaphi.org/api/infinity-coin-media?kind=movies'),{fetcher:async()=>{throw Error('offline')}});
  const d=await response.json();
  assert.equal(d.items.length,2);assert.equal(d.partial,true);assert.equal(d.feedsAvailable,0);
- assert.ok(d.items.every(x=>x.channel==='Rotten Tomatoes Trailers'&&x.kind==='movies'));
- assert.equal(d.feedChannels,2);
+ assert.ok(d.items.every(x=>x.channel==='KinoCheck.com'&&x.kind==='movies'));
+ assert.equal(d.feedChannels,2);assert.deepEqual(d.items.map(x=>x.id),['D58cvO2Dr34','0O2I2kAtpbY']);
  assert.match(mediaSearchUrl('sci fi horror','movies'),/youtube.com\/results\?search_query=/);
 });
 test('invalid kind and non-GET reject before source fetch',async()=>{
