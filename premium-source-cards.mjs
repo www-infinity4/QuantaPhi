@@ -57,8 +57,8 @@ export function mountPremiumCard(card){
  article.append(header,form,topics,state,content,disclaimer,actions);
  mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
  const rotating=['Restaurants','Shopping','Trading cards','Auctions'].includes(card.category);
- if(rotating)mountRotatingSpotlights(article,card);
  let serial=0,loaded=false;
+ if(rotating)mountRotatingSpotlights(article,card,{onEmpty:()=>{if(!loaded)void run()}});
  async function run(){
   const query=field.value.trim();if(!query)return;const request=++serial;loaded=true;state.textContent='Searching '+card.name+'…';article.setAttribute('aria-busy','true');
   try{
