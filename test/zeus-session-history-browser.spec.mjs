@@ -11,6 +11,8 @@ for(const width of [320,360,393,720]){
   await expect(page.locator(root+' .zeus-legend-pair')).toHaveCount(5);
   const layout=await page.evaluate(()=>({
    width:innerWidth,scrollWidth:document.documentElement.scrollWidth,
+   withoutTracker:(()=>{const a=document.querySelector('#zeusSessionHistory');if(!a)return null;const value=a.style.display;a.style.display='none';const w=document.documentElement.scrollWidth;a.style.display=value;return w})(),
+   scrollChildren:[...document.querySelectorAll('body *')].filter(e=>e.scrollWidth>e.clientWidth+2&&e.clientWidth>0).map(e=>({name:e.id||e.className?.toString().slice(0,70)||e.tagName,scroll:e.scrollWidth,client:e.clientWidth,css:getComputedStyle(e).overflowX,text:e.textContent?.slice(0,45)})).slice(0,12),
    overflow:[...document.querySelectorAll('body *')].map(e=>({
     name:e.tagName.toLowerCase()+(e.id?'#'+e.id:'')+(e.className&&typeof e.className==='string'?'.'+e.className.split(/\\s+/).join('.'):''),
     right:Math.ceil(e.getBoundingClientRect().right),
