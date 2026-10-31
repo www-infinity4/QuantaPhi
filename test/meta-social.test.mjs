@@ -1,3 +1,4 @@
+import {readFileSync} from 'node:fs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {metaAdapter,executeMeta} from '../workers/bubbles-connections/meta.mjs';
@@ -59,4 +60,13 @@ test('Instagram does not publish a failed or unready media container',async()=>{
  await assert.rejects(executeMeta(f.service,{userId:'alice',id:'c',operation:'instagram.publish',pageId:'987',message:'hello',imageUrl:'https://quantaphi.org/media/test.jpg',confirmed:true},f.request,async()=>{}),/meta_media_not_ready/);
  assert.equal(f.visited.length,3);
  assert.ok(f.visited.every(p=>!p.url.includes('/media_publish')));
+});
+
+test('Meta OAuth return goes back to the originating approved card route',()=>{
+ 
+ const client=readFileSync(new URL('../bubbles-connections.mjs',import.meta.url),'utf8');
+ const callback=readFileSync(new URL('../bubbles-auth-return.mjs',import.meta.url),'utf8');
+ assert.match(client,/provider==='meta'.*source-quick-card/s);
+ assert.match(callback,/pending.provider==='meta'.*source-quick-card/s);
+ assert.match(callback,/\(google\|github\|cloudflare\|meta\)/);
 });
