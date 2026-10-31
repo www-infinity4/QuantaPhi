@@ -6,6 +6,9 @@ on:
       - 'workers/coliseum/**'
       - 'test/coliseum-api.test.mjs'
       - 'test/coliseum*'
+      - 'test/zeus-session-history.test.mjs'
+      - 'test/zeus-session-history-browser.spec.mjs'
+      - 'playwright.zeus-session-history.config.mjs'
       - 'oracle-card-deck.js'
       - 'index.html'
       - '.github/workflows/coliseum.yml'
@@ -27,8 +30,11 @@ jobs:
           node --check coliseum/zeus-quick-card.mjs
           node --check coliseum/room-api-core.mjs
           node --check coliseum/coliseum-live.mjs
+          node --check coliseum/session-history-core.mjs
+          node --check coliseum/session-history.mjs
+          node --check test/zeus-session-history-browser.spec.mjs
           node --check workers/coliseum/worker.mjs
-          node --test test/coliseum.test.mjs test/coliseum-api.test.mjs
+          node --test test/coliseum.test.mjs test/coliseum-api.test.mjs test/zeus-session-history.test.mjs
       - name: Verify prototype has no fabricated live subscription routes
         run: |
           test -f coliseum/index.html
@@ -36,3 +42,17 @@ jobs:
           grep -q 'No paid subscriptions or third-party-model access' coliseum/index.html
           grep -q '1,000 verified members' coliseum/index.html
           ! grep -E -q 'paypal\.com/cgi-bin/webscr|paypal\.me/|api\.openai\.com/v1|api-m\.paypal\.com' coliseum/index.html
+
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test runtime
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify Zeus history on Android-sized layouts and session state controls
+        run: npx playwright test --config=playwright.zeus-session-history.config.mjs --reporter=line
