@@ -40,7 +40,7 @@ test('QuantaPhi/Bubbles and typed search resolve to the real internal coin cards
 test('refresh never mints or reads wallet secrets and remains honest about model readiness',()=>{
  assert.match(client,/cache:'no-store'/);
  assert.match(client,/No tokens minted by this check/);
- assert.match(client,/model and service bindings not yet verified/);
+ assert.match(client,/model, account and wallet operations not yet verified/);
  assert.match(client,/mountCardActions/);
  assert.doesNotMatch(client,/localStorage|walletAddress|POST|/api/tokens/);
 });
