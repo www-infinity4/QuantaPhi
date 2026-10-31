@@ -105,7 +105,7 @@ export async function githubCopilotRequest({accessToken,repository,action,prompt
   // An old approval is not authorization for a newly changed PR head.
   // Resolve only each reviewer's latest submitted state, and require that the
   // successful independent approval examined this exact immutable commit.
-  if(!Array.isArray(reviews))throw Error('merge_independent_review_required');
+  // GitHub reviews are paginated (max 100 per page). A full first page may\n  // hide a later CHANGES_REQUESTED or dismissal. Fail closed until a separate\n  // audited pagination reader can prove the complete review history.\n  if(!Array.isArray(reviews)||reviews.length>=100)throw Error('merge_independent_review_required');
   const latestByReviewer=new Map();
   for(const review of reviews){
    const reviewer=review?.user?.login;
