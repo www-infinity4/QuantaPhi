@@ -47,7 +47,7 @@ test('unverified generic plugin endpoints clearly identify directory handoff',()
 });
 
 test('specific ChatGPT plugin handoffs are verified destinations, never inherited sessions',()=>{
- for(const id of ['ajaxx-data-scrubber','flaim-fantasy','steer-astro','freddy','daily-tarot']){
+ for(const id of ['ajaxx-data-scrubber','flaim-fantasy','steer-astro','freddy']){
   const card=pluginQuickCard('plugin-'+id);
   assert.ok(card,'missing '+id);
   const link=new URL(card.pluginUrl);
@@ -57,6 +57,7 @@ test('specific ChatGPT plugin handoffs are verified destinations, never inherite
   assert.notEqual(card.pluginUrl,card.route);
  }
  assert.equal(pluginQuickCard('plugin-shopify').pluginUrl,null);
+ assert.equal(pluginQuickCard('plugin-daily-tarot').pluginUrl,null,'Unmatched Tarot provider must not impersonate Daily Tarot');
 });
 
 test('reader readiness confirms only the exact trusted backend card and destination',async()=>{
