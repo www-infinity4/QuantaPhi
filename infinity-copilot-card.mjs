@@ -65,6 +65,26 @@ export function mountInfinityCopilotCard(host){
     const row=el('article','pr'),head=el('strong','', '#'+pr.number+' · '+pr.title),
       info=el('p','muted',pr.draft?'Draft · not ready to merge':'Review changes and required checks before merging'),buttons=el('div','buttons');
     row.append(head,info);
+    const inspect=el('button','','Review files & conversation');inspect.type='button';
+    inspect.addEventListener('click',async()=>{
+      inspect.disabled=true;
+      let details=row.querySelector('.infc-details');
+      if(details){details.remove();inspect.disabled=false;return;}
+      details=el('div','infc-details');details.setAttribute('aria-live','polite');
+      try{
+       const d=await call('/github/copilot',{id:active.id,repository:r.name,action:'details',prNumber:pr.number});
+       details.append(el('strong','','Changed files'));
+       for(const f of d.files||[]){const file=el('details',''),summary=el('summary','',f.path+' · +'+f.additions+' / -'+f.deletions);
+        const patch=el('pre','',f.patch||'Patch unavailable for this file');patch.style.cssText='white-space:pre-wrap;overflow-wrap:anywhere;max-height:220px;overflow:auto;font-size:.8em';
+        file.append(summary,patch);details.append(file);}
+       details.append(el('strong','','PR conversation'));
+       for(const m of d.messages||[])details.append(el('p','muted',m.author+': '+m.body));
+       if(!(d.messages||[]).length)details.append(el('p','muted','No PR messages yet.'));
+       row.append(details);
+      }catch(e){setStatus('PR details unavailable: '+e.message)}
+      finally{inspect.disabled=false;}
+    });
+    buttons.append(inspect);
     if(mode!=='copilot'){
      const comment=el('button','','Send instructions');
      comment.type='button';
