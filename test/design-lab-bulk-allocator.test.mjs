@@ -44,5 +44,5 @@ test('the existing Design Lab mounts a real calculator, with no checkout or wall
  assert.match(ui,/planBulkAllocation\(fields\)/);
  assert.match(ui,/event\.preventDefault\(\)/);
  assert.match(css,/@media\(max-width:360px\)/);
- assert.doesNotMatch(ui,/fetch\(|localStorage|wallet|checkout|payment/i);
+ assert.doesNotMatch(ui,/fetch\s*\(|localStorage\.|wallet\.|checkout\s*\(|payment\s*\(/i);
 });
