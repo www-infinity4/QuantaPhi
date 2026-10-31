@@ -1,5 +1,5 @@
 import {AccountConnections,resolveConnectorWalletToken} from './bubbles-connections.mjs';
-import {GIT_APP_CARDS,GIT_PRODUCTION_CHAIN,gitRepoUrl,gitCardRoute,nextGitStage,mergedLinePreview,safeGitReviewSnippet} from './git-production-core.mjs';
+import {GIT_APP_CARDS,GIT_PRODUCTION_CHAIN,gitRepoUrl,gitCardRoute,nextGitStage,mergedLinePreview,safeGitReviewSnippet,safeGitReviewText} from './git-production-core.mjs';
 const node=(tag,cls,label)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(label!==undefined)x.textContent=label;return x};
 const css='.igf{background:#fff;border:1px solid #d9e1e9;border-radius:18px;padding:15px;color:#1a2c3e;display:grid;gap:10px;font:inherit}.igf .igf-eyebrow{font-size:.78rem;color:#2861a0;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.igf h3{margin:0;font-size:1.3rem}.igf p{margin:0;line-height:1.5}.igf .igf-muted{color:#526579;font-size:.93rem}.igf select,.igf textarea,.igf button{font:inherit}.igf select,.igf textarea{width:100%;box-sizing:border-box;background:#fff;color:#152f4b;border:1px solid #a9bbcc;border-radius:10px;padding:10px}.igf textarea{min-height:75px;resize:vertical}.igf .igf-actions{display:flex;flex-wrap:wrap;gap:8px}.igf button,.igf .igf-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;text-decoration:none;cursor:pointer;background:#eaf3ff;color:#123e71;font-weight:750;border:1px solid #bfd2e6;border-radius:11px;padding:9px 12px}.igf button.primary,.igf .primary{background:#1762b6;color:#fff;border-color:#1762b6}.igf button:disabled{opacity:.55;cursor:not-allowed}.igf .igf-result{border-top:1px solid #d8e3ed;padding-top:10px;white-space:pre-wrap;overflow-wrap:anywhere}.igf .igf-evidence{border:1px solid #dce6ee;border-radius:11px;padding:10px;max-height:310px;overflow:auto;overflow-wrap:anywhere}.igf .igf-evidence pre{white-space:pre-wrap;font-size:.79em}.igf a{color:#1258a2;overflow-wrap:anywhere}.igf :is(button,textarea,select,a):focus-visible{outline:3px solid #e7a031;outline-offset:2px}';
 function stageCard(stage,mountTools){
@@ -162,9 +162,9 @@ function stageCard(stage,mountTools){
   if(stage.mode==='requirements'&&!issue){setStatus('Select the original Copilot issue to compare against the PR.');return;}
   const question=[
    'Read-only Gitpal completion audit. Do not claim to have run code or deployment steps.',
-   'Requested task: '+String(issue?.instruction||input.value||'not provided').slice(0,1700),
+   'Requested task: '+safeGitReviewText(issue?.instruction||input.value||'not provided',1700),
    'Repository: '+repos.value+'; PR #'+lastDetails.pr,
-   'PR description: '+String(lastDetails.description||'').slice(0,500),
+   'PR description: '+safeGitReviewText(lastDetails.description||'',500),
    'Changed files: '+(lastDetails.files||[]).slice(0,30).map(f=>f.path+' +'+f.additions+' -'+f.deletions).join('; ').slice(0,550),
    'Selected sanitized patch excerpts (partial): '+(lastDetails.files||[]).filter(f=>f.patch).slice(0,6).map(f=>{const excerpt=safeGitReviewSnippet(f.path,f.patch);return excerpt.startsWith('[Sensitive-file')?excerpt:f.path+'\\n'+excerpt.slice(0,260);}).join('\\n').slice(0,1000),
    'Compare intended deliverables to observable changes. Separate verified evidence, missing work and Cloudflare tasks for Bubbles. Never treat this as execution approval.'
