@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {orderCoinMedia,youtubeSearchLink,preferenceKey} from '../coin-media-discovery.mjs';
+import {orderCoinMedia,youtubeSearchLink,preferenceKey,normalizeInterest} from '../coin-media-discovery.mjs';
 const media=[{id:'abcdefghijk',kind:'music',title:'Space Music',published:'2026-10-28T00:00:00Z'},{id:'lmnopqrstuv',kind:'music',title:'Jazz Show',published:'2026-10-27T00:00:00Z'},{id:'123456789ab',kind:'movies',title:'Official Trailer',published:'2026-10-20T00:00:00Z'},{id:'invalid',kind:'movies',title:'fake'}];
 test('selection filters category and source and avoids watched videos',()=>{
  assert.deepEqual(orderCoinMedia(media,{kind:'music',seen:['abcdefghijk']}).map(x=>x.id),['lmnopqrstuv','abcdefghijk']);
@@ -49,4 +49,16 @@ test('media bookmarks are opt-in and never become a minted wallet transaction au
  assert.match(source,/not a minted token or wallet asset/);
  assert.match(source,/savedPicks\(\)/);
  assert.doesNotMatch(source,/fetch\(['"`][^'"`]*mint|mintToken\(/);
+});
+
+test('explicit coin media topic is bounded and retained only in the selected local profile',()=>{
+ assert.equal(normalizeInterest('  jazz blues  '),'jazz blues');
+ assert.equal(normalizeInterest(null),'');
+ assert.equal(normalizeInterest('a'.repeat(250)).length,100);
+ const source=fs.readFileSync(new URL('../coin-media-discovery.mjs',import.meta.url),'utf8');
+ assert.match(source,/input\.value=normalizeInterest\(prefs\.query\)/);
+ assert.match(source,/p\.query=normalizeInterest\(input\.value\)/);
+ assert.match(source,/input\.value=normalizeInterest\(selected\.query\)/);
+ assert.match(source,/input\.addEventListener\('input',\(\)=>\{track\(\)/);
+ assert.doesNotMatch(source,/fetch\([^\n]*prefs\.query/);
 });
