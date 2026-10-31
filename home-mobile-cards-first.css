@@ -133,3 +133,24 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{margin-top:6px}
 @media(prefers-reduced-motion:reduce){
  body.oracle-quanta #oracleCardDeck #oracleCardFollow{transition:none!important;animation:none!important}
 }
+
+/* Oct 30 Android screenshot repair: a 90px sticky search row was hiding
+   category tabs and card titles. Search remains at the page top, but scrolls
+   away naturally so cards can own the mobile viewport. */
+@media(max-width:540px){
+ body.oracle-quanta .search{
+  position:relative!important;top:auto!important;z-index:2!important;
+  margin:6px 0 10px!important;padding:3px 0!important;
+  box-shadow:none!important;max-width:100%;isolation:isolate
+ }
+ body.oracle-quanta .search :is(#q,#go){min-height:45px!important}
+ /* Bubbles remains visible as a tap-sized dock, but no longer sits over
+    card actions one hundred pixels above the Android navigation bar. */
+ body.oracle-quanta .ba-launcher{
+  box-sizing:border-box!important;width:48px!important;height:48px!important;
+  min-width:48px!important;min-height:48px!important;
+  right:8px!important;bottom:calc(8px + env(safe-area-inset-bottom))!important;
+  box-shadow:0 3px 12px #25364f66!important
+ }
+ body.oracle-quanta .ba-panel{bottom:calc(66px + env(safe-area-inset-bottom))!important}
+}

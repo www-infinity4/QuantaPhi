@@ -17,7 +17,7 @@ assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
 assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested/);
 assert.doesNotMatch(html,/class="oracle-card-deck-feature"/);
-assert.match(html,/oracle-card-deck\.js\?v=20261028-front1/);
+assert.match(html,/oracle-card-deck\.js\?v=20261030-archive1/);
 assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
 assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
 
@@ -66,3 +66,14 @@ assert.match(html,/data-oracle-family="original"/);
 assert.match(deck,/selectNextFamilyPool\(tour\.cards,cardFamily\(active\)\)/);
 assert.match(deck,/openingFamilyPool\(cards,openingCursor\)/);
 assert.match(deck,/show\(chosen\)/);
+
+assert.match(deck,/phiStoryWriter:\['Story Writer','Write it\. Illustrate it\. Make it yours\.','\/apps\/icons\/story-writer\.svg'\]/);
+assert.doesNotMatch(deck,/phiStoryWriter:[^\n]*phi-scholastic-reader\.webp/);
+
+const mobile=fs.readFileSync('home-mobile-cards-first.css','utf8');
+assert.match(html,/home-mobile-cards-first\.css\?v=20261030-unobstructed1/);
+assert.match(mobile,/body\.oracle-quanta \.search\{[\s\S]*?position:relative!important;top:auto!important/);
+assert.match(mobile,/body\.oracle-quanta \.ba-launcher\{[\s\S]*?width:48px!important/);
+assert.match(mobile,/bottom:calc\(8px \+ env\(safe-area-inset-bottom\)\)!important/);
+
+assert.match(deck,/const rotationallyCurrent=e=>available\(e\)&&e\.node\.dataset\.archived!=='true'/);

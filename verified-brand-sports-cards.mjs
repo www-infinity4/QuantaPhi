@@ -18,6 +18,13 @@ function link(label,href,cls){
  return a;
 }
 const isEvent=c=>c.event==='NFL'||c.event==='MLB';
+// Dated game previews must not be promoted as current weeks after kickoff.
+// Historical recaps and verified highlights remain available as archival sources.
+export function isExpiredOneOff(card,now=Date.now()){
+ if(!['game','matchup','lineup','tracker'].includes(card?.kind)||!/^\d{4}-\d{2}-\d{2}$/.test(card.date||''))return false;
+ const day=Date.parse(card.date+'T00:00:00Z');
+ return Number.isFinite(day)&&now>day+48*60*60*1000;
+}
 function createVisual(card,article){
  const visual=el('div','vbs-art vbs-'+card.kind);
  const primary=el('img','vbs-identity');
@@ -73,17 +80,18 @@ function distinctLead(card){
  }
 }
 const sampleAnnouncerFacts=Object.freeze([
- 'Today’s NFL matchup is Green Bay at Detroit. The original FOX broadcast and official game center are one tap away.',
- 'In baseball, Milwaukee won World Series Game 2 by five runs to four on October twenty-fourth. Tampa Bay and Milwaukee meet again for Game 3.',
- 'This is original QuantaPhi commentary from dated public facts, not a live broadcast. Check the official game center for the latest plays.'
+ 'For current NFL games, check the official NFL schedule and FOX sports game center before a narrated update.',
+ 'For World Series coverage, use the MLB postseason game center for the latest confirmed score, game status and official video.',
+ 'This is an original QuantaPhi information example, not a live broadcast or a claim about today’s result.'
 ]);
 export function createVerifiedCard(card){
  if(!validBrandSportsCard(card))throw Error('unverified_card_source');
- const node=el('article','iqc-card vbs-card vbs-kind-'+card.kind+' vbs-category-'+(card.event||'original').toLowerCase());
+ const node=el('article','iqc-card vbs-card vbs-kind-'+card.kind+' vbs-category-'+(card.event||'original').toLowerCase()+(card.heroImage?' vbs-photo-led':''));
  node.dataset.sourceId=card.id;
  node.dataset.sourceName=card.name;
  node.dataset.sourceReady='false';
  node.dataset.kind=card.kind;
+ if(isExpiredOneOff(card))node.dataset.archived='true';
  node.dataset.category=card.category;
  node.dataset.checked=card.checked;
  if(card.nonTargeted)node.dataset.personalization='disabled';
@@ -96,6 +104,7 @@ export function createVerifiedCard(card){
   info.append(p);
  }
  info.append(el('p','vbs-description',card.description));
+ if(card.heroImage&&card.photoAsOf)info.append(el('p','vbs-photo-credit',card.photoAsOf));
  if(card.kind==='coupon'){
   if(card.offer){
    const now=new Date();const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
@@ -120,8 +129,9 @@ export function createVerifiedCard(card){
  for(const action of card.actions){
   controls.append(link(action.label,action.url,'vbs-source-action'));
  }
+ if(card.kind==='broadcast'&&isEvent(card))appendSportsCoverage(card,info,node);
  info.append(controls);
- if(isEvent(card))appendSportsCoverage(card,info,node);
+ if(card.kind!=='broadcast'&&isEvent(card))appendSportsCoverage(card,info,node);
  if(card.kind==='announcer')appendAnnouncer(info);
  const notes=el('p','vbs-attribution','Verified source links · Checked '+card.checked+' · Independent QuantaPhi card, not an official endorsement or paid advertisement.');
  info.append(notes);
@@ -136,7 +146,7 @@ export function createVerifiedCard(card){
 }
 const sportsQueries=Object.freeze({
  'packers-lions-2026':['packers.com','Packers Lions October 25 2026 play-by-play highlights'],
- 'fox-nfl-watch':['foxsports.com','Packers Lions NFL October 25 2026 highlights'],
+ 'fox-nfl-watch':['foxsports.com','NFL latest scores schedule and highlights'],
  'lions-interception-watch':['detroitlions.com','Packers Lions 2026 interceptions takeaways highlight'],
  'packers-next-schedule':['packers.com','Packers next game 2026 schedule'],
  'lions-next-schedule':['detroitlions.com','Lions next game 2026 schedule'],
@@ -231,6 +241,8 @@ export function mountVerifiedCards(){
  const bank=document.getElementById('verifiedBrandSportsCards');
  if(!bank||bank.dataset.mounted==='true')return;
  bank.dataset.mounted='true';
+ // Keep dated source cards in the hidden bank for direct historical links.
+ // The Oracle feed excludes archived entries, not the original card library.
  const valid=REQUESTED_PUBLIC_CARDS.filter(validBrandSportsCard);
  // Keep source widgets in their original hidden bank. The Oracle top viewer
  // moves the same DOM node into the spotlight and preserves all click handlers.

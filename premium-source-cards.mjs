@@ -20,7 +20,42 @@ export const PREMIUM_CARDS=Object.freeze([
  provider('loc','Library of Congress','Archives','https://www.loc.gov/collections/','historic radio photographs',['Historic radios','Jazz photographs','Historic maps'],'#3b3849'),
  provider('nasa-library','NASA Image Library','Science','https://images.nasa.gov/','Carina nebula',['Carina nebula','James Webb telescope','Apollo 11'],'#172d50')
 ]);
+// Real first-party promotional/menu photography; no fabricated offers or checkout.
+export const RESTAURANT_SPOTLIGHTS=Object.freeze({
+ 'burger-king':Object.freeze({
+  title:'Original Chicken Sandwich · featured photo',
+  description:'A Burger King newsroom product photograph from July 2026. Limited-time items and local availability must be confirmed with Burger King.',
+  photo:'https://cdn.prod.website-files.com/631b4b4e277091ef01450237/6a4bbcaef5381d4ca4bf00a4_Burger-King-Expands-Its-Iconic-Original-Chicken-Sandwich-Lineup-with-Two-Bold-New-Flavors.jpg',
+  source:'https://news.bk.com/blog-posts/burger-king-r-expands-its-iconic-original-chicken-sandwich-lineup-with-two-bold-new-flavors',
+  menu:'https://www.bk.com/',
+  sourceName:'Burger King newsroom · July 2026'
+ }),
+ mcdonalds:Object.freeze({
+  title:'Big Mac® · original menu photo',
+  description:'An actual McDonald’s menu item, not a generic logo or a claimed current discount. See the official menu for local prices and availability.',
+  photo:'https://s7d1.scene7.com/is/image/mcdonalds/Big_Mac-2%3Anutrition-calculator-tile?dpr=off&hei=822&wid=822',
+  source:'https://corporate.mcdonalds.com/corpmcd/our-stories/media-assets-library/media-article/bigmac.html',
+  menu:'https://www.mcdonalds.com/us/en-us/full-menu.html',
+  sourceName:'McDonald’s corporate media library'
+ })
+});
 const make=(tag,cls,text)=>{const e=document.createElement(tag);e.className=cls||'';if(text!==undefined)e.textContent=text;return e};
+function restaurantSpotlight(card){
+ const data=RESTAURANT_SPOTLIGHTS[card.id];if(!data)return null;
+ const hero=make('section','premium-food-hero');
+ const visual=make('a','premium-food-visual');visual.href=data.source;visual.target='_blank';visual.rel='noopener noreferrer';
+ const photo=make('img','premium-food-photo');photo.src=data.photo;photo.alt=data.title+' · source photograph';
+ photo.loading='eager';photo.decoding='async';photo.referrerPolicy='no-referrer';
+ photo.addEventListener('error',()=>{photo.remove();visual.append(make('span','premium-food-fallback','Original product image unavailable · View publisher source'))},{once:true});
+ visual.append(photo);hero.append(visual);
+ const body=make('div','premium-food-body');
+ body.append(make('p','premium-food-source',data.sourceName),make('h3','',data.title),make('p','',data.description));
+ const links=make('div','premium-food-links');
+ for(const [label,url] of [['View official menu',data.menu],['Publisher photograph',data.source]]){
+  const a=make('a','',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';links.append(a);
+ }
+ body.append(links);hero.append(body);return hero;
+}
 export function sourceURL(value,host){try{const u=new URL(value);if(u.protocol!=='https:'||u.username||u.password)return null;if(host&&u.hostname!==host&&!u.hostname.endsWith('.'+host))return null;return u.href}catch{return null}}
 export function normalizeResults(data,card){
  if(card.id==='nasa-library')return (data?.collection?.items||[]).map(x=>{const d=x.data?.[0]||{};return {title:d.title,url:'https://images.nasa.gov/details/'+encodeURIComponent(d.nasa_id||''),image:x.links?.find(l=>l.rel==='preview')?.href,description:d.description,credit:d.secondary_creator||d.photographer||d.center||'NASA',date:d.date_created}}).filter(x=>x.title&&sourceURL(x.image));
@@ -53,7 +88,8 @@ export function mountPremiumCard(card){
  const state=make('p','premium-state','Choose a topic or search the original source.');state.setAttribute('role','status');
  const content=make('div','premium-content'),actions=make('div');
  const disclaimer=make('p','premium-footnote',card.id==='nasa-library'?'NASA collection images and captions. Check the original record for credits and usage guidance.':card.category==='Restaurants'?'Search original restaurant pages. Confirm current offers, dates and eligibility at the restaurant.':card.category==='Auctions'||card.category==='Shopping'?'Original-source search results. Confirm price, availability and sale details on the source page.':'Independent QuantaPhi research card · original publisher sources.');
- article.append(header,form,topics,state,content,disclaimer,actions);
+ article.append(header);const spotlight=restaurantSpotlight(card);if(spotlight)article.append(spotlight);
+ article.append(form,topics,state,content,disclaimer,actions);
  mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
  let serial=0,loaded=false;
  async function run(){

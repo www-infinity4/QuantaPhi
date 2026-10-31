@@ -117,7 +117,7 @@ const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
 let viewerTouched=false,selectionVersion=0;
 const ORIGINAL_COVERS={
- phiStoryWriter:['Story Writer','Write it. Illustrate it. Make it yours.','/assets/phi-scholastic-reader.webp'],
+ phiStoryWriter:['Story Writer','Write it. Illustrate it. Make it yours.','/apps/icons/story-writer.svg'],
  phiMediaBuilder:['Image & Video Studio','Create something worth sharing.','/assets/phi-data-analyst.webp'],
  infinityConcepts:['Infinity Concepts','Physics, experiments and connected ideas.','/assets/julius-physics-002.png'],
  groupStoryBuild:['Group Stories','Build the next chapter together.','/assets/phi-scholastic-reader.webp'],
@@ -171,13 +171,14 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
+const rotationallyCurrent=e=>available(e)&&e.node.dataset.archived!=='true';
+function liveCatalog(){return entries.filter(rotationallyCurrent).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function livePriority(e){
  if(e?.id!=='phiChannelCards')return 0;
  const priority=document.getElementById('liveFoxGameCard')?.dataset.tvFrontPriority;
  return (priority===undefined?TV_FRONT_BOOTSTRAP:priority==='1')?1:0;
 }
-function eligible(){const cards=entries.filter(available).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
+function eligible(){const cards=entries.filter(rotationallyCurrent).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
  updateInventory();
@@ -326,7 +327,7 @@ function available(entry){
  // Root components can be empty until their asynchronous scripts finish.
  return entry.node.children.length>0;
 }
-function order(){return entries.filter(available).sort((a,b)=>b.count-a.count||entries.indexOf(a)-entries.indexOf(b))}
+function order(){return entries.filter(rotationallyCurrent).sort((a,b)=>b.count-a.count||entries.indexOf(a)-entries.indexOf(b))}
 function returnActive(){
  if(!active)return;
  const {node,marker}=active;
