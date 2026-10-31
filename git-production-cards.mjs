@@ -17,9 +17,10 @@ function stageCard(stage,mountTools){
  root.append(links);
  const status=node('p','igf-result','Use your verified GitHub connection to load real PRs and build evidence.');
  status.setAttribute('role','status');
- const connect=node('button','primary','Load my GitHub work'),reload=node('button','','Refresh work');
- connect.type=reload.type='button';
- const buttons=node('div','igf-actions');buttons.append(connect,reload);
+ const sign=node('button','primary','Sign in with GitHub');
+ const connect=node('button','','Load my GitHub work'),reload=node('button','','Refresh work');
+ sign.type=connect.type=reload.type='button';
+ const buttons=node('div','igf-actions');buttons.append(sign,connect,reload);
  const repos=node('select','');repos.setAttribute('aria-label','Choose authorized repository');
  const prs=node('select','');prs.setAttribute('aria-label','Choose pull request');prs.append(node('option','','No PRs loaded'));
  const selectIssue=node('select','');selectIssue.setAttribute('aria-label','Choose original Copilot build request');
@@ -85,12 +86,14 @@ function stageCard(stage,mountTools){
   if(!issueRecords.length)selectIssue.append(node('option','','No Infinity Copilot issues found'));
  }
  async function load(){
-  if(loading)return;loading=true;connect.disabled=true;reload.disabled=true;setStatus('Checking your existing GitHub authorization…');
+  if(loading)return;loading=true;connect.disabled=true;reload.disabled=true;sign.disabled=true;setStatus('Checking your existing GitHub authorization…');
   try{
    const [catalog,accounts]=await Promise.all([call('/catalog'),call('/accounts')]);
    const gh=catalog.providers?.find(p=>p.id==='github');
    active=(accounts.accounts||[]).find(a=>a.provider==='github'&&a.status==='connected'&&a.expiresAt>Date.now()+30000)||null;
-   if(!active){authorized=[];repos.replaceChildren();prs.replaceChildren();setStatus(gh?.configured?'Sign in with GitHub from the Copilot Quick Card first, then load this stage.':'GitHub authorization connector not configured.');return;}
+   sign.textContent=active?'Reconnect GitHub':'Sign in with GitHub';
+   sign.dataset.available=String(gh?.configured===true);
+   if(!active){authorized=[];repos.replaceChildren();prs.replaceChildren();setStatus(gh?.configured?'Use Sign in with GitHub here to authorize this card in a popup.':'GitHub authorization connector not configured.');return;}
    const result=await call('/github/repositories',{id:active.id});
    authorized=(result.repositories||[]).filter(r=>r.permissions?.read);
    repos.replaceChildren();for(const r of authorized){const o=node('option','',r.name+(r.permissions?.write?'':' · read only'));o.value=r.name;repos.append(o);}
@@ -100,8 +103,21 @@ function stageCard(stage,mountTools){
    if(stage.mode==='requirements')await loadIssues();
    setStatus('GitHub verified. Choose the repository and a PR; actions use its account-scoped permission checks.');
   }catch(e){setStatus('GitHub read unavailable: '+(e.message||e));}
-  finally{loading=false;connect.disabled=false;reload.disabled=false;}
+  finally{loading=false;connect.disabled=false;reload.disabled=false;sign.disabled=sign.dataset.available!=='true';}
  }
+ sign.addEventListener('click',async()=>{
+  if(loading)return;
+  sign.disabled=true;
+  try{
+   if(!client)client=new AccountConnections({token:()=>resolveConnectorWalletToken()});
+   await client.connect('github',['repository.read','repository.write'],(error,account)=>{
+    if(error)setStatus('GitHub sign-in did not finish: '+String(error.message||error).slice(0,180));
+    else{setStatus('Verified GitHub account: '+account.label);void load();}
+   },{preferPopup:true});
+   setStatus('Complete GitHub authorization in the popup; this Quick Card stays open.');
+  }catch(e){setStatus('GitHub popup unavailable: '+String(e.message||e).slice(0,180));}
+  finally{sign.disabled=false;}
+ });
  connect.addEventListener('click',()=>void load());reload.addEventListener('click',()=>void load());
  repos.addEventListener('change',async()=>{setNextContext();try{await loadPRs();if(stage.mode==='requirements')await loadIssues();}catch(e){setStatus(e.message)}});
  prs.addEventListener('change',()=>{clear();setNextContext()});
