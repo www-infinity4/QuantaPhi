@@ -5,6 +5,7 @@ import {validRepository,composeBuildRequest,prEvidencePrompt,responseText} from 
 
 const html=readFileSync(new URL('../gitpal/index.html',import.meta.url),'utf8');
 const script=readFileSync(new URL('../gitpal/studio.mjs',import.meta.url),'utf8');
+const catalog=readFileSync(new URL('../bubbles-card-catalog.mjs',import.meta.url),'utf8');
 
 test('Gitpal is a real same-origin engineering studio with working controls',()=>{
   for(const name of ['sign-in','repository','request','ask-ai','send-build','refresh-prs','prefill','add-field','clear-draft']){
@@ -14,6 +15,7 @@ test('Gitpal is a real same-origin engineering studio with working controls',()=
   assert.match(html,/Oracle Octaves/);
   assert.match(html,/Gitpro/);
   assert.match(html,/Gitpub/);
+  assert.match(catalog,/app\('gitpal-engineer','Gitpal · Infinity Oracle Engineer','\/gitpal\/'/);
 });
 test('first-party wallet auth does not share secrets with GitHub Pages',()=>{
   assert.match(script,/import\('\/bubbles-connections\.mjs'\)/);
