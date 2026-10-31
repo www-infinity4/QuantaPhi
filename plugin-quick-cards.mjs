@@ -45,6 +45,25 @@ function render(updateUrl=false){
  const warning=el('p','iqp-warning',card.mode==='directory'?'This is a plugin-directory entry. The provider-specific website is not verified. Use ChatGPT Plugins to locate and authorize it.':card.mode==='plugin'?'This card links to official plugin information. Installation and account consent happen inside ChatGPT; no plugin authorization is inherited here.':'Independent QuantaPhi card. Public website information can be viewed; private feeds, accounts, edits and purchases require an approved connection.');
  const actions=el('div','iqp-actions');
  actions.append(external(card.mode==='directory'?'Find in ChatGPT Plugins ↗':card.mode==='plugin'?'Official plugin details ↗':'Open original website ↗',card.official,'iqp-primary'));
+ const publicSearch=el('section','iqp-public-search');
+ if(card.mode==='site'){
+  const heading=el('h3','','Search public pages from '+card.name);
+  const searchForm=el('form','iqp-public-form');
+  const query=el('input','iqp-public-query');query.type='search';query.maxLength=100;query.required=true;
+  query.placeholder='Topic, product or question…';query.setAttribute('aria-label','Search public pages from '+card.name);
+  const submit=el('button','iqp-btn iqp-primary','Find pages');submit.type='submit';
+  const source=el('p','iqp-message','Uses the independent Infinity search broker. Results are attributed to their original publishers; this is not a private provider feed.');
+  const frame=el('iframe','iqp-public-results');frame.title=card.name+' public search results';frame.hidden=true;frame.loading='lazy';frame.referrerPolicy='no-referrer';
+  searchForm.append(query,submit);
+  searchForm.addEventListener('submit',event=>{
+   event.preventDefault();const term=query.value.trim().slice(0,100);if(!term)return;
+   const hostname=new URL(card.official).hostname;
+   const scoped='site:'+hostname+' '+term;
+   frame.src='/infinity-search-results.html?'+new URLSearchParams({engine:'google',q:scoped});
+   frame.hidden=false;source.textContent='Searching public pages from '+hostname+'. Results may be unavailable or general web results; check the publisher link on each result.';
+  });
+  publicSearch.append(heading,searchForm,source,frame);
+ }
  const details=el('section','iqp-workspace');
  details.append(el('h3','','Your task workspace'));
  const label=el('label','', 'Describe what you want to do with '+card.name);
@@ -63,7 +82,7 @@ function render(updateUrl=false){
  });
  row.append(copy);details.append(label,entry,row,state);
  const tools=el('section','iqp-tools');mountCardTools(tools,card);
- cardHost.append(header,art,info,warning,actions,details,tools);
+ cardHost.append(header,art,info,warning,actions,publicSearch,details,tools);
  status.textContent=card.name+' · '+(index+1)+' of '+eligible.length;
 }
 previous.addEventListener('click',()=>move(-1));
