@@ -148,6 +148,13 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Ships and itineraries','https://www.royalcaribbean.com/'],
   ['Original provider','https://www.royalcaribbean.com/']
  ),icon('royalcaribbean.com')),
+ entry('tide-original-liquid','Tide Original · Laundry Detergent','product','Household care',
+ 'Explore Tide Original liquid detergent, compare current Tide products, and find official stain-removal instructions. Prices, sizes, availability and promotions must be verified at the actual merchant; this independent card is not a paid Tide ad.',
+ 'https://tide.com/en-us/shop/type/liquid/tide-original-liquid',actions(
+  ['Original liquid product','https://tide.com/en-us/shop/type/liquid/tide-original-liquid'],
+  ['Browse Tide products','https://tide.com/en-us/shop'],
+  ['Official stain guides','https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains']
+ ),'https://images.ctfassets.net/ajjw8wywicb3/56SpCPjmVKhVPEEryvVCzh/5c1ffc8980151c72d478703dc62810fb/Tide_Belize_SUD_Original_listing_520x520.png?fm=png',{checked:'2026-10-30'}),
  entry('kraft-mac-cheese','Kraft Mac & Cheese · recipes','food','Food & recipes','Original Kraft Mac & Cheese products and cooking ideas at Kraft Heinz.','https://www.kraftheinz.com/kraft-mac-and-cheese',actions(
   ['Original Kraft products','https://www.kraftheinz.com/kraft-mac-and-cheese'],
   ['Kraft recipes','https://www.kraftheinz.com/kraft-mac-and-cheese'],

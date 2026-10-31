@@ -68,3 +68,16 @@
  display:block;width:100%;max-width:none;min-width:0;height:clamp(220px,60vw,350px);
  max-height:none;object-fit:contain;filter:drop-shadow(0 8px 12px #0002);
 }
+
+/* Product-forward Infinity card for the owner-requested Tide Quick Card.
+   Authentic source image; no fabricated prices, affiliate status or coupons. */
+.vbs-card[data-source-id="tide-original-liquid"] .vbs-art{
+ min-height:260px;padding:14px;background:linear-gradient(130deg,#fff7e8,#ffe2bd);
+}
+.vbs-card[data-source-id="tide-original-liquid"] .vbs-identity{
+ width:100%;max-width:300px;min-width:0;height:clamp(200px,55vw,320px);max-height:none;
+ object-fit:contain;filter:drop-shadow(0 10px 13px #8f4a221e);
+}
+@media(max-width:420px){
+ .vbs-card[data-source-id="tide-original-liquid"] .vbs-art{min-height:220px;padding:8px}
+}

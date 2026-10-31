@@ -7,6 +7,16 @@ export const MAXIMUM_BACKGROUND_AGE_DAYS=7;
 const DAY=86400000;
 const NO_SPECS=/\b(?:must|needs?|required|lacks?|without)\b.{0,100}\b(?:specify|provide|supply|identify|define|concrete|exact|full)\b|\b(?:specify|provide|supply)\b.{0,100}\b(?:file|schema|signature|requirement|path|details?)\b|(?:unspecified|underspecified|missing actionable|unknown export signatures)/i;
 const OWNER_BLOCK=/owner_input_required|owner_authorization_required|owner_approval_required|requires_owner|permission_denied|security_hold|sensitive_decision|unsupported_repository|invalid_color_jobs/i;
+// A missing immutable edit path is a source-evidence problem, not a request
+// for the owner to decide or grant access. Keep it INELIGIBLE until the
+// authenticated runner provides exact source evidence; never revive a job.
+const IMMUTABLE_PATH_EVIDENCE=/(?:edit must match immutable source exactly once|failure report does not specify which repository file|exact path is required to locate the immutable.source)/i;
+const OWNER_CHOICE_OR_SECURITY=/(?:owner_authorization_required|owner_approval_required|requires_owner|permission_denied|security_hold|sensitive_decision|unsupported_repository|invalid_color_jobs|owner must (?:approve|choose|authorize)|owner (?:approval|consent|sign.in)|new permission|payment|purchase|wallet|biometric|credential|password)/i;
+export function technicalSourceEvidenceNeeded(summary){
+ const text=String(summary||'').slice(0,3000);
+ return /owner_input_required/i.test(text)&&IMMUTABLE_PATH_EVIDENCE.test(text)&&
+  !OWNER_CHOICE_OR_SECURITY.test(text);
+}
 const toMillis=value=>{
  if(typeof value==='number'&&Number.isFinite(value))return value<1e11?value*1000:value;
  if(typeof value!=='string'||!value.trim())return NaN;
@@ -25,7 +35,7 @@ export function ticketAdmission(candidate,{
  // or security hold must be explicitly resolved through its own auth gate.
  // A model's self-asserted hasActionableSpecs cannot override a blocker.
  if(job.status==='blocked'&&(OWNER_BLOCK.test(summary)||job.hasActionableSpecs===false&&NO_SPECS.test(summary))){
-  return {eligible:false,reason:OWNER_BLOCK.test(summary)?'owner_decision_required':'actionable_specs_required',selected};
+  return {eligible:false,reason:OWNER_BLOCK.test(summary)?(technicalSourceEvidenceNeeded(summary)?'technical_source_evidence_required':'owner_decision_required'):'actionable_specs_required',selected};
  }
  if(job.status==='blocked'&&NO_SPECS.test(summary)){
   return {eligible:false,reason:'actionable_specs_required',selected};

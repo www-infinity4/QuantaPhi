@@ -1,18 +1,6 @@
 // Only trusted server configuration supplies clients, secrets and callbacks.
 import {connectionFailureCode} from './completion.mjs';
-// A 386-scope OAuth registration exceeds Cloudflare's 5 KB per-Worker-secret
-// limit. Prefer three complete, validated chunks; retain the legacy binding
-// until all chunks have been installed. Never interpret partial writes as full access.
-export function resolveCloudflareScopeConfig(env={}) {
-  const chunks=[1,2,3].map(i=>env['CLOUDFLARE_OAUTH_ALLOWED_SCOPES_PART_'+i]);
-  if(chunks.every(chunk=>typeof chunk==='string'&&chunk.trim())) {
-    const text=chunks.join(' ');
-    const scopes=text.trim().split(/\s+/);
-    if(scopes.length===386&&new Set(scopes).size===386&&
-      scopes.every(scope=>/^[a-zA-Z][\w.-]{1,100}$/.test(scope)))return text;
-  }
-  return String(env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES||'');
-}
+export {resolveCloudflareScopeConfig} from './scope-config.mjs';
 
 // Generated plugins cannot add arbitrary token endpoints to this registry.
 const GOOGLE_SCOPES = Object.freeze({
@@ -227,7 +215,7 @@ const cfScopes=(actions,allowlist)=>{
  const all=allowlist?Array.from(allowlist):[];
  return [...new Set(actions.flatMap(action=>{
   if(action===FULL_ACTION){
-   if(all.length<25||all.length>401)throw Error('cloudflare_client_scopes_unavailable');
+   if(all.length<25||all.length>1000)throw Error('cloudflare_client_scopes_unavailable');
    return all;
   }
   if(!Object.hasOwn(CLOUDFLARE_SCOPES,action))throw Error('unsupported_action');
@@ -242,7 +230,7 @@ export function cloudflareAvailableActions(approvedScopes) {
   const allowed=new Set(String(approvedScopes||'').split(/[\s,]+/).filter(Boolean));
   const actions=Object.keys(CLOUDFLARE_SCOPES).filter(action=>
     CLOUDFLARE_SCOPES[action].every(scope=>allowed.has(scope)));
-  if(allowed.size>=25&&allowed.size<=401)actions.push(FULL_ACTION);
+  if(allowed.size>=25&&allowed.size<=1000)actions.push(FULL_ACTION);
   return actions;
 }
 export function cloudflareScopeInventory(allowedScopes){
