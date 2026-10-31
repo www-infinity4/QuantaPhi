@@ -26,7 +26,7 @@ export function mountInfinityCopilotCard(host){
  let mode='copilot',client=null,active=null,repos=[],busy=false;
  for(const [key,label] of [['copilot','Copilot'],['gitpal','GitPal · Review'],['gitpro','GitPro · Merge']]){
   const b=el('button','',label);b.type='button';b.dataset.mode=key;b.setAttribute('aria-selected',String(key===mode));
-  b.addEventListener('click',()=>{mode=key;for(const node of modes.children)node.setAttribute('aria-selected',String(node.dataset.mode===mode));renderMode();});modes.append(b);
+  b.addEventListener('click',()=>{mode=key;for(const node of modes.children)node.setAttribute('aria-selected',String(node.dataset.mode===mode));renderMode();void loadPrs();});modes.append(b);
  }
  const setStatus=message=>{status.textContent=message;};
  const selected=()=>repos.find(r=>r.name===repo.value);
@@ -47,7 +47,7 @@ export function mountInfinityCopilotCard(host){
    const [catalog,accounts]=await Promise.all([call('/catalog'),call('/accounts')]);
    const config=catalog.providers?.find(p=>p.id==='github');
    active=(accounts.accounts||[]).find(a=>a.provider==='github'&&a.status==='connected'&&a.expiresAt>Date.now()+30000)||null;
-   sign.hidden=!!active;sign.disabled=!config?.configured;
+   sign.hidden=false;sign.textContent=active?'Reconnect GitHub':'Sign in with GitHub';sign.disabled=!config?.configured;
    account.textContent=active?'Signed in to GitHub · '+active.label:(config?.configured?'GitHub sign-in required':'GitHub connector setup is not active');
    if(!active){repos=[];renderRepos();prlist.replaceChildren();setStatus('Connect your wallet and authorize GitHub in the popup. No passwords are collected by Infinity.');return;}
    const data=await call('/github/repositories',{id:active.id});
