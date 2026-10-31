@@ -184,7 +184,8 @@ export class AccountConnections {
       const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':provider==='meta'?'www.facebook.com':'';
       if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||
          !/^[A-Za-z0-9_-]{43}$/.test(state||''))throw Error('Sign-in address rejected.');
-      const returnPath=provider==='meta'&&/^\/source-quick-card\.html\?card=(?:facebook|instagram)$/.test(returnDestination||'')?returnDestination:\n        this.root.location?.pathname==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
+      const returnPath=provider==='meta'&&/^\/source-quick-card\.html\?card=(?:facebook|instagram)$/.test(returnDestination||'')?returnDestination:
+        this.root.location?.pathname==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
       const saved={provider,state,returnPath,flow:sameWindow?'same-window':'popup',expiresAt:Date.now()+Math.min(300,Math.max(1,Number(result.expiresIn)||300))*1000};
       try{this.root.sessionStorage?.setItem('bubbles:oauth-pending:v1',JSON.stringify(saved));}
       catch{if(!popup)throw Error('This viewer cannot preserve sign-in. Open Account Connections in Chrome.');}
