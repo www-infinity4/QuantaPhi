@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-31T19:59:11.592933Z",
+  "cards": {
+    "pepe-brooke": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "pepe-vapour": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": [
+        {
+          "url": "https://www.pepejeans.in/pepe-jeans-online-exclusive",
+          "image": "https://d1pdzcnm6xgxlz.cloudfront.net/content/images/banners/FEB2024/09_03_2026/online_exclusive_SMU.jpeg",
+          "title": "Jackets",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Denim & fashion"
+        },
+        {
+          "url": "https://www.pepejeans.in/sale/men/jeans",
+          "image": "https://d1pdzcnm6xgxlz.cloudfront.net/content/images/banners/FEB2024/circle-tiles_denim.png",
+          "title": "Denims",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Denim & fashion"
+        },
+        {
+          "url": "https://www.pepejeans.in/sale/men/shirts",
+          "image": "https://d1pdzcnm6xgxlz.cloudfront.net/content/images/banners/FEB2024/circle-tiles_shirts.png",
+          "title": "Shirts",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Denim & fashion"
+        },
+        {
+          "url": "https://www.pepejeans.in/sale/men/t-shirts",
+          "image": "https://d1pdzcnm6xgxlz.cloudfront.net/content/images/banners/FEB2024/circle-tiles_tshirts.png",
+          "title": "T-Shirts",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Denim & fashion"
+        },
+        {
+          "url": "https://www.pepejeans.in/vapour-dark-blue-low-rise-tapered-jeans/PM207785J671.html",
+          "image": "https://www.pepejeans.in/on/demandware.static/-/Sites-masterCatalog_Pepe/default/dw9adf4385/bottoms/8905875130871-9.JPG",
+          "title": "Vapour Dark Blue Low Rise Tapered Jeans, , large image number 0",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Denim & fashion"
+        },
+        {
+          "url": "https://www.pepejeans.in/vapour-dark-blue-low-rise-tapered-jeans/PM207785J671.html",
+          "image": "https://www.pepejeans.in/on/demandware.static/-/Sites-masterCatalog_Pepe/default/dw36ef5e95/bottoms/8905875130871-10.JPG",
+          "title": "Vapour Dark Blue Low Rise Tapered Jeans, , large image number 1",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Denim & fashion"
+        },
+        {
+          "url": "https://www.pepejeans.in/vapour-dark-blue-low-rise-tapered-jeans/PM207785J671.html",
+          "image": "https://www.pepejeans.in/on/demandware.static/-/Sites-masterCatalog_Pepe/default/dw0b4122cb/bottoms/8905875130871-11.JPG",
+          "title": "Vapour Dark Blue Low Rise Tapered Jeans, , large image number 2",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Denim & fashion"
+        },
+        {
+          "url": "https://www.pepejeans.in/vapour-dark-blue-low-rise-tapered-jeans/PM207785J671.html",
+          "image": "https://www.pepejeans.in/on/demandware.static/-/Sites-masterCatalog_Pepe/default/dw2ae0b30d/bottoms/8905875130871-12.JPG",
+          "title": "Vapour Dark Blue Low Rise Tapered Jeans, , large image number 3",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Denim & fashion"
+        }
+      ]
+    },
+    "guess-g11-light": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "guess-g11-dark": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "levis-501-dark": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "levis-501-medium": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "sonic": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": [
+        {
+          "url": "https://pages-a.sonicdrivein.com/deals/",
+          "image": "https://imagedelivery.net/cyuZzWywsYlsu7DPQZIgOg/ac63dc74-4bc2-4e9b-c0fd-b54b6615e000?&q=80&w=397",
+          "title": "Deals | Sonic",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "burger-king": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "mcdonalds": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "hidden-valley-ranch": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": [
+        {
+          "url": "https://www.hiddenvalley.com/recipe-collections/serve-it-or-skip-it-recipe-collection/",
+          "image": "https://images.ctfassets.net/j9gt1m2cyvgh/5ffl3nhTFnhufigu8LXUx8/4e5b193f496771e49eda5c478cc8ae5f/_0015_33500_2334820_hvr_fy25_small_appliance_hub_recipes_pressure_cooker_ranch_chicken_and_white_bean_chili_hero_s02_cro.jpg?fm=webp&w=1200&q=40",
+          "title": "Serve It or Skip It Recipe Collection",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.hiddenvalley.com/recipe-collections/serve-it-or-skip-it-recipe-collection/",
+          "image": "https://images.ctfassets.net/j9gt1m2cyvgh/76sEu0DWSI0qpCbid5ZnLb/ff1bd7bb3aa910e750373bebc1a12144/slow-cooker-ranch-bbq-pulled-pork-nachos-RDP.jpg?fm=webp&w=1200&q=40",
+          "title": "Serve It or Skip It Recipe Collection",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.hiddenvalley.com/recipe-collections/serve-it-or-skip-it-recipe-collection/",
+          "image": "https://images.ctfassets.net/j9gt1m2cyvgh/5XUCVBGfgId2XRiibyaf3W/7b7c6e298c3fac93752dfab53a8e1bbe/baked-crispy-ranch-chicken-wings-RDP.jpg?fm=webp&w=1200&q=40",
+          "title": "Serve It or Skip It Recipe Collection",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.hiddenvalley.com/recipe-collections/serve-it-or-skip-it-recipe-collection/",
+          "image": "https://images.ctfassets.net/j9gt1m2cyvgh/5Oui0g8PL5OQMVmmBDXKY7/b6d3abb31e8f35528577fed70b813ae8/29152_HVR_Spicy_Vegan_Ranch_SweetPotato_BlackBean_Chili-_HERO.jpg?fm=webp&w=1200&q=40",
+          "title": "Serve It or Skip It Recipe Collection",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.hiddenvalley.com/products/",
+          "image": "https://images.ctfassets.net/j9gt1m2cyvgh/KGEMqoEYy0zbTW3zKlJAJ/4707d2cb4e555df0d82cb4b1475b8f88/hidden-valley-product-group.webp?w=1200&h=630&fit=crop&q=75",
+          "title": "Hidden Valley Ranch Products",
+          "kind": "website",
+          "description": "Try our bottled dressings, dips, mixes, & seasonings for bold flavors you are sure to love. Our products are a convenient and delicious way to improve...",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.hiddenvalley.com/products/ranch-condiments/",
+          "image": "https://images.ctfassets.net/j9gt1m2cyvgh/60YSKMCHMVUNKAaTNJl5wD/a17c984317ebcf8ca3c5480ca77cdcda/ranch-condiments-category.jpg?w=1200&h=630&fit=crop&q=75",
+          "title": "Ranch Condiments | Hidden Valley™ Ranch",
+          "kind": "website",
+          "description": "Explore all Hidden Valley™ Ranch condiments—Original Ranch, flavored Ranch varieties, plus lighter and plant-based options for a range of dietary preferences.",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        }
+      ]
+    },
+    "mcdonalds-big-mac-deals": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "burger-king-chicken-2026": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": [
+        {
+          "url": "https://news.bk.com/",
+          "image": "https://cdn.prod.website-files.com/631b4b4e277091a7d4450233/631b79a162511b2f4a075be0_Burger-King-Newsroom.png",
+          "title": "Burger King® Expands Its Iconic Original Chicken Sandwich Lineup with Two Bold New Flavors",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://news.bk.com/blog-posts/hello-kitty-r-and-friends-are-coming-to-burger-king-r",
+          "image": "https://cdn.prod.website-files.com/631b4b4e277091ef01450237/6ad76867bf03265157187ff5_10964-2%20Hello%20Kitty%20PR_1920x1080_CR.jpg",
+          "title": "Hello Kitty® and Friends Are Coming to Burger King®",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://news.bk.com/blog-posts/burger-king-r-serves-up-game-day-flavor-with-new-stadium-inspired-menu",
+          "image": "https://cdn.prod.website-files.com/631b4b4e277091ef01450237/6abad616dbd94b42f3a1c355_Burger%20King%20Game%20Day%20Hero.png",
+          "title": "Burger King® Serves Up Game Day Flavor with New Stadium-Inspired Menu",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://news.bk.com/blog-posts/burger-king-r-gives-new-chicken-nuggets-the-high-fashion-treatment-with-le-nugguette",
+          "image": "https://cdn.prod.website-files.com/631b4b4e277091ef01450237/6aa3009bb40f041d0932164b_Screenshot%202026-09-10%20150919.png",
+          "title": "Burger King® Gives New Chicken Nuggets The High-Fashion Treatment With “Le Nugguette”",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "kraft-mac-cheese": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": [
+        {
+          "url": "https://www.kraftheinz.com/kraft-mac-and-cheese",
+          "image": "https://cdn.allotta.io/image/upload/f_auto/q_auto/v1734726150/1KR127-KMC-Core-Primary-Brandmark-RGB_1_gm48sb_p1axop.png",
+          "title": "Site Logo",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.kraftheinz.com/kraft-mac-and-cheese/products",
+          "image": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/f_auto,c_limit,w_3840,q_auto/f_auto/q_auto/Products_2_wsp5ae.png",
+          "title": "An image displaying two Kraft Mac & Cheese products. On the left, against a solid blue background, the word \"products\" is written in large white text. To the right, on a split blue",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.kraftheinz.com/kraft-mac-and-cheese/flavors",
+          "image": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/f_auto,c_limit,w_3840,q_auto/f_auto/q_auto/Flavors_dvq4km.png",
+          "title": "An image featuring two limited-edition Kraft Mac & Cheese boxes: a red \"Pizza Flavored\" box with pizza slice graphics and a green \"Jalapeño Flavored\" box with a jalapeño pepper gra",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.kraftheinz.com/kraft-mac-and-cheese",
+          "image": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/image/upload/f_auto/q_auto/c_limit,w_3840/v1/op1_-_mobile_wr7pun?_a=BAVMn6ID0",
+          "title": "Kraft PowerMac and Original Mac & Cheese boxes next to a prepared bowl of macaroni on a blue and yellow background.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.kraftheinz.com/",
+          "image": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/f_auto,c_limit,w_3840,q_auto/f_auto/q_auto/dxp-images/brands/Mega%20Menu/Home-%20first%20level.png",
+          "title": "Kraft Heinz logo on a purple background",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.kraftheinz.com/",
+          "image": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/f_auto,c_limit,w_3840,q_auto/f_auto/q_auto/dxp-images/brands/Mega%20Menu/Brands-first%20level.png",
+          "title": "Collage with packages from all the Kraft Heinz brands on a red background",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.kraftheinz.com/",
+          "image": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/f_auto,c_limit,w_3840,q_auto/f_auto/q_auto/dxp-images/brands/Mega%20Menu/Recipes-first%20level.png",
+          "title": "A plate of pasta and meat on a yellow background",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        },
+        {
+          "url": "https://www.kraftheinz.com/philadelphia/recipes/500340-philadelphia-no-bake-pumpkin-cheesecake",
+          "image": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/image/upload/f_auto/q_auto/c_limit,w_3840/v1/Cheesecake_Mobile_mmhxgn?_a=BAVMn6ID0",
+          "title": "A slice of pumpkin cheesecake topped with whipped cream, served on a plate next to a gold fork.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "category": "Food & recipes"
+        }
+      ]
+    },
+    "heritage": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "topps": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "beckett": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "christies": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "shoplc-premium": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "kohls-coupons": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "honda-vehicles": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "oakley-meta": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "gmc-trucks": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "gmc-sierra-2026": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    },
+    "gmc-denali-2026": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "items": []
+    }
+  }
+}
