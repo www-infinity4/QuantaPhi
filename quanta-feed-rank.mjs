@@ -64,12 +64,12 @@ export function feedScore(card,state){
 }
 export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
- const filtered=cards.filter(c=>(tab!=='following'||(state.following||[]).includes(c.id))&&
+ const filtered=cards.filter(c=>(tab==='following'?(state.following||[]).includes(c.id):!(state.following||[]).includes(c.id))&&
   (!q||[c.name,c.category,c.feature,c.study].join(' ').toLowerCase().includes(q)));
  const priority=(a,b)=>Number(isInfinityAccepted(b))-Number(isInfinityAccepted(a));
  if(tab==='following')return filtered.sort((a,b)=>priority(a,b)||(state.counts?.[b.id]||0)-(state.counts?.[a.id]||0)||a.name.localeCompare(b.name));
  if(tab==='for-you')return filtered.sort((a,b)=>priority(a,b)||feedScore(b,state)-feedScore(a,state)||a.id.localeCompare(b.id));
- // Public remains a broad catalog rather than a personalized, narrowed feed.
+ // Public is a discovery-only catalog: followed cards stay in Following until unfollowed.
  return filtered.sort(priority);
 }
 export function nextFeedDirection(cards,tab,state,currentId='',query=''){
