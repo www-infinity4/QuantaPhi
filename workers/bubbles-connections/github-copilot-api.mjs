@@ -21,6 +21,39 @@ export async function githubCopilotRequest({accessToken,repository,action,prompt
    draft:pr.draft===true,headSha:pr.head?.sha||null,updatedAt:pr.updated_at||null,
    url:pr.html_url||null})).filter(pr=>Number.isSafeInteger(pr.number)&&pr.number>0)};
  }
+ if(action==='issues'){
+  const items=await call('/issues?state=all&per_page=60&sort=updated&direction=desc');
+  if(!Array.isArray(items))throw Error('github_copilot_response_invalid');
+  return {issues:items.filter(i=>!i.pull_request&&String(i.title||'').startsWith('Infinity Copilot: '))
+   .slice(0,20).map(i=>({number:i.number,title:String(i.title||'').slice(0,200),
+    instruction:String(i.body||'').slice(0,4000),state:i.state,
+    url:i.html_url||null,updatedAt:i.updated_at||null}))
+   .filter(i=>Number.isSafeInteger(i.number)&&i.number>0)};
+ }
+ if(action==='merged'){
+  const items=await call('/pulls?state=closed&per_page=60&sort=updated&direction=desc');
+  if(!Array.isArray(items))throw Error('github_copilot_response_invalid');
+  const recent=items.filter(p=>p.merged_at&&/^[a-f0-9]{40}$/.test(p.merge_commit_sha||'')).slice(0,10);
+  // Bounded, read-only evidence preview. A Gitcoin mint requires a separate
+  // authenticated ledger with idempotent receipts, never browser-side arithmetic.
+  const merges=await Promise.all(recent.map(async p=>{
+   const files=await call('/pulls/'+p.number+'/files?per_page=100');
+   if(!Array.isArray(files))throw Error('github_copilot_response_invalid');
+   const qualifying=files.filter(f=>{
+    const name=String(f.filename||'');
+    return /\.(?:mjs|cjs|js|jsx|ts|tsx|py|go|rs|sh|html|css|sql|java|kt|swift|rb|php|c|cpp|h|hpp)$/i.test(name)
+      && !/(^|\/)(?:node_modules|vendor|dist|build|generated|coverage)\//i.test(name)
+      && !/(?:\.min\.js|\.generated\.[cm]?js)$/i.test(name);
+   });
+   return {number:p.number,url:p.html_url||null,mergedAt:p.merged_at,
+    mergeCommitSha:p.merge_commit_sha,eligibleAddedLines:qualifying.reduce((s,f)=>s+Math.max(0,Number(f.additions)||0),0),
+    qualifyingFiles:qualifying.length,filesTruncated:files.length===100};
+  }));
+  return {merges,eligibleAddedLines:merges.reduce((s,m)=>s+m.eligibleAddedLines,0),
+   countedMerges:merges.length,limit:10,partial:items.length===60||recent.length===10||merges.some(m=>m.filesTruncated),
+   gitsMinted:null,walletVerified:false,
+   notice:'Read-only recent merge evidence. No Gitcoin wallet credit has been created or verified.'};
+ }
  if(action==='build'){
   const clean=String(prompt||'').trim();
   if(clean.length<12||clean.length>4000)throw Error('copilot_prompt_invalid');
@@ -45,7 +78,7 @@ export async function githubCopilotRequest({accessToken,repository,action,prompt
    call('/pulls/'+number+'/files?per_page=100'),
    call('/issues/'+number+'/comments?per_page=30')]);
   if(!Array.isArray(files)||!Array.isArray(comments))throw Error('github_copilot_response_invalid');
-  return {pr:number,
+  return {pr:number,description:String((await call('/pulls/'+number)).body||'').slice(0,4000),
    files:files.slice(0,100).map(f=>({path:String(f.filename||'').slice(0,300),
     status:String(f.status||'').slice(0,30),additions:Number(f.additions)||0,
     deletions:Number(f.deletions)||0,patch:String(f.patch||'').slice(0,2400)})),
