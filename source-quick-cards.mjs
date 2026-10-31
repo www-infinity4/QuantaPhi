@@ -89,7 +89,7 @@ function askAiTools(root,card){
 function starterCard(card){
  // The homepage article IS the interactive card. Do not redirect it to an
  // internal viewer; Android WebView's pop-up handling must not be required.
- const item=el('article','iqc-card');item.dataset.sourceId=card.id;item.dataset.sourceName=card.name;item.dataset.sourceReady='true';
+ const item=el('article','iqc-card');item.dataset.sourceId=card.id;item.dataset.sourceName=card.name;item.dataset.sourceReady='true';item.dataset.official=card.official;item.dataset.sourceCategory=card.kind;item.dataset.sourceQuery=card.feature;
  item.append(createCardArtwork(card,true));
  if(card.id!=='google'&&card.id!=='bing')item.append(el('p','iqc-kind',card.kind));
  const tools=el('div','iqc-inline-tools');mountCardTools(tools,card);item.append(tools);
