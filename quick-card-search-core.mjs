@@ -1,9 +1,14 @@
 import {TINYFISH_CARDS} from './tinyfish-card-catalog.mjs';
 import {HOUSING_QUICK_CARD,HOUSING_ALIASES} from './disability-housing-core.mjs';
 import {HOUSING_HELP_RESOURCES,HOUSING_RESOURCE_ALIASES,housingResourceCard} from './housing-help-catalog.mjs';
+export const INFINITY_COIN_QUICK_CARDS=Object.freeze({
+ 'infinity-cardone-notes':Object.freeze({id:'infinity-cardone-notes',name:'Cardone Capital Notes · Infinity Braided Coin',official:'https://cardonecapital.com/investments/',route:'/infinity-coin-cards.html#cardone-notes',description:'Independent research record for issuer documents; not a verified note, investment value or payment token.',kind:'Investment research',internal:true}),
+ 'infinity-alien-coin':Object.freeze({id:'infinity-alien-coin',name:'Alien Coin · Infinity Braided Coin',official:'https://quantaphi.org/alien-coin/',route:'/infinity-coin-cards.html#alien-coin',description:'Living Alien Coin bundle; mint and wallet records remain in the original server app.',kind:'Collectible research',internal:true})
+});
 const normalized=value=>String(value||'').normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const aliases=Object.freeze({bk:'burger-king',burgerking:'burger-king',mcdonalds:'mcdonalds'});
 export function lookupQuickCard(id){
+ if(typeof id==='string'&&Object.hasOwn(INFINITY_COIN_QUICK_CARDS,id))return INFINITY_COIN_QUICK_CARDS[id];
  if(id===HOUSING_QUICK_CARD.id)return HOUSING_QUICK_CARD;
  if(typeof id==='string'&&id.startsWith('housing-help-'))return housingResourceCard({id:id.slice('housing-help-'.length)});
  if(typeof id!=='string'||!Object.hasOwn(TINYFISH_CARDS,id))return null;
@@ -20,6 +25,13 @@ export function searchQuickCards(query,{limit=4}={}){
  const q=normalized(String(query||'').slice(0,2000));if(!q)return [];
  const compact=q.replace(/ /g,''),alias=aliases[compact]||'',words=q.split(' ');
  const ranked=[];
+ for(const card of Object.values(INFINITY_COIN_QUICK_CARDS)){
+  const name=normalized(card.name),identity=normalized(card.id),whole=(' '+q+' ');
+  const relevant=card.id==='infinity-cardone-notes'?['cardone capital notes','cardone coin','cardone notes','braided cardone coin','infinity braided cardone']:['alien coin','braided alien coin','alien coin quick card','alien token'];
+  const score=q===name||q===identity?1300:relevant.some(term=>whole.includes(' '+term+' '))?1220:q.length>=4&&name.includes(q)?650:0;
+  if(score)ranked.push({card,score});
+ }
+
  const housingPhrase=HOUSING_ALIASES.some(alias=>(' '+q+' ').includes(' '+normalized(alias)+' '));
  if(housingPhrase||q==='usda'||(/\b(?:disability|disabled|ssi|ssdi)\b/.test(q)&&/\b(?:home|homes|house|housing|loan)\b/.test(q)))ranked.push({card:HOUSING_QUICK_CARD,score:1100});
  for(const resource of HOUSING_HELP_RESOURCES){

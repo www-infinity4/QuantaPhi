@@ -17,7 +17,7 @@ export function showQuickCardMatches(query){
   title.href=card.route;
   title.addEventListener('click',event=>{if(openQuickCardPreview({url:card.route,title:card.name,description:card.description,official:card.official}))event.preventDefault()});
   heading.append(title);body.append(heading,el('p','qsr-domain',new URL(card.official).hostname));
-  const visit=el('a','qsr-visit',card.internal?'Start housing intake →':'Visit '+card.name+' ↗');visit.href=card.internal?card.route:card.official;visit.target=card.internal?'_self':'_blank';visit.rel='noopener';visit.referrerPolicy='strict-origin-when-cross-origin';body.append(visit);
+  const visit=el('a','qsr-visit',card.id==='disability-housing'?'Start housing intake →':card.internal?'Open '+card.name+' →':'Visit '+card.name+' ↗');visit.href=card.internal?card.route:card.official;visit.target=card.internal?'_self':'_blank';visit.rel='noopener';visit.referrerPolicy='strict-origin-when-cross-origin';body.append(visit);
   const actions=el('div','qsr-actions');mountCardActions(actions,card,card.internal?{websiteReader:false,showOriginal:false}:{});body.append(actions);article.append(body);grid.append(article);
  }
  return cards;
