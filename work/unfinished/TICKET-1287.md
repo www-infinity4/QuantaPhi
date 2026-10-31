@@ -7,25 +7,27 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Milestone 1 policy and navigation scaffold only; browser/session/owner authorization/real deployment acceptance unverified"
-sessions_spent: 4
+sessions_spent: 5
 sessions_remaining_estimate: unknown
 agent: "Continuity Builder source engineering"
 lease_id: null
 lease_expires_at: null
-last_observed_at_utc: "2026-10-31T09:24:00Z"
+last_observed_at_utc: "2026-10-31T10:26:00Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/open-browser-bridge-20261031
-head_sha: "40750e600daedab6ef93feaf8f5a28a3b60b011b"
+head_sha: "9a8931d7584b0e963b0ba3f9547181a433470237"
 pr: 1286
 tests:
   - "Node v22 local policy regression: test-first 2/3 (alternate-port bypass reproduced), fixed 3/3 pass; node --check policy.mjs pass"
+  - "Context routing new 4/4 Node v22 tests passed locally; 11/11 full suite passed in exact-head GitHub Actions job"
 ci:
   - "Exact source head e2c9d229: 4/4 returned GitHub Actions workflows successful, including dedicated Infinity Open Browser Bridge policy"
+  - "Exact source head 9a8931d7: 4/4 GitHub Actions workflows success, dedicated policy job 41192664422 reports 11/11 tests"
 merged: false
 deployed: false
 live_verified: false
-blocker: "Independent security review, network egress firewall and DNS pinning still required; DNS preflight is not complete SSRF protection"
-next_action: "Review exact-head DNS policy CI, then obtain independent security review of network egress/DNS pinning before any browser authentication"
+blocker: "Independent security review, network egress firewall and DNS pinning still required; Node DNS checks are not complete SSRF protection"
+next_action: "Obtain independent security review of context routing and egress/DNS pinning; implement verified network isolation before any browser authentication"
 ---
 
 ## Bounded source receipt (2026-10-31)
@@ -54,3 +56,12 @@ Index synchronization: main lacks `work/unfinished/INDEX.md`; it exists in still
 - Local Node policy suite 7/7 passed (4 new DNS + 3 existing URL regressions), not a full Chromium integration test. At source head 40750e60, four GitHub Actions workflows observed IN PROGRESS at initial read, no exact-head pass claim yet.
 - Remaining gate: Node preflight does not pin Chromium DNS; egress network firewall/namespace, DNS rebinding protection, independent security review, authenticated per-user sessions and real acceptance still missing. No merge, deploy, login, paid action, X post or wallet change.
 - Progress percent unknown; sessions spent 4 documented, remaining unknown. Next single action: inspect exact latest-head CI, obtain independent network isolation security review, then add reviewed DNS pinning/egress isolation before enabling authenticated browsing.
+
+## Session 5 — 2026-10-31 ~10:26 UTC
+
+- Read root AGENTS.md and the draft #1276 unfinished-work README/INDEX before edits; #1287/#1286 reused. No observed active branch lease; did not claim a shared browser lease or touch any owner session. TinyFish profile still lists x.com sign-in claimed Oct 27, but that does **not** prove current sign-in; prior browser credits exhausted, no new paid run or signed-in X claim.
+- Cloudflare read-only public X D1 scan at 10:17:30.425Z: 5 visible posts, 0 new/candidates; this is **public** intake only. Live coordinator status not independently obtained this session, so runner count remains last verified 0 at 09:20Z rather than a fresh measurement.
+- Found a real popup bypass: Playwright `page.route()` does not intercept the initial navigation of popup/new-window pages. Added `request-policy.mjs` and `request-policy.test.mjs` to register fail-closed URL/DNS routing on the **browser context** before any page creation; updated `browser-bridge.mjs`, dedicated CI syntax check and README. DNS exceptions explicitly abort. No actual browser/network run or credentials used.
+- Source commits: `28084818`, `7e0f0224`, `80a960a5`, `f3ebca95`, `9a8931d7`. Local Node 22 new tests 4/4 PASS, source syntax checks PASS. GitHub Actions at exact source head `9a8931d7584b0e963b0ba3f9547181a433470237`: 4/4 workflows SUCCESS, including dedicated policy run [41192664422](https://github.com/www-infinity4/QuantaPhi/actions/runs/41192664422), whose job logs report **11/11 tests passed**.
+- State 🟡 source_tested / ci_passed / review_pending. Independent reviews still 0 at last check; **not merged, deployed, authenticated, or live browser-tested**. Popup coverage is improved but DNS TOCTOU, un-intercepted Chromium traffic, egress firewall/namespace and signed per-user sessions remain hard blockers. Progress unknown; sessions_spent=5; remaining unknown; lease/fence=null.
+- Next single action: obtain independent security review of the exact head and implement verified network egress/DNS-pinning barrier before enabling any authenticated browser runner.
