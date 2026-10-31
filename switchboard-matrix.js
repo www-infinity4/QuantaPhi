@@ -1,50 +1,28 @@
-// switchboard-matrix.js
-// Centralized Signal Broker (Switchboard‑Matrix)
-// Manages active patches between "jacks" (inputs) and "plugs" (outputs).
-// Exported as a CommonJS module for compatibility with the repository's test runner.
+// Centralized Signal Broker: in-memory patch registry only.
+// Null-prototype keys prevent special JavaScript object names from disappearing
+// or resolving through Object.prototype. This module does not dispatch jobs.
+const active_patches = Object.create(null);
 
-// Internal map storing the current connections.
-// Keys are jack identifiers, values are plug identifiers.
-const active_patches = {};
-
-/**
- * Connect a jack to a plug.
- * If the jack already has a connection, it will be overwritten.
- *
- * @param {string} jack - Identifier for the input port.
- * @param {string} plug - Identifier for the output port.
- */
-function connect(jack, plug) {
-  if (typeof jack !== "string" || typeof plug !== "string") {
-    throw new TypeError("jack and plug must be strings");
+function assertPortId(value, label) {
+  if (typeof value !== 'string' || !value.trim()) {
+    throw new TypeError(`${label} must be a nonempty string`);
   }
+}
+
+function connect(jack, plug) {
+  assertPortId(jack, 'jack');
+  assertPortId(plug, 'plug');
   active_patches[jack] = plug;
 }
 
-/**
- * Disconnect a jack, removing its entry from the map.
- *
- * @param {string} jack - Identifier for the input port to remove.
- */
 function disconnect(jack) {
-  if (typeof jack !== "string") {
-    throw new TypeError("jack must be a string");
-  }
+  assertPortId(jack, 'jack');
   delete active_patches[jack];
 }
 
-/**
- * Retrieve a shallow copy of the current active patches map.
- *
- * @returns {Object} Copy of the active patches.
- */
 function getActivePatches() {
-  // Return a shallow copy to prevent external mutation.
+  // Return a detached, plain-object snapshot for existing consumers.
   return { ...active_patches };
 }
 
-module.exports = {
-  connect,
-  disconnect,
-  getActivePatches,
-};
+module.exports = { connect, disconnect, getActivePatches };
