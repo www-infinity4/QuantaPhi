@@ -66,4 +66,5 @@ jobs:
             test/bubbles-home-account-link.test.mjs \
             test/bubbles-gmail-inbox.test.mjs \
             test/bubbles-wallet-email.test.mjs \
-            test/starcoin-github-backup.test.mjs
+            test/starcoin-github-backup.test.mjs \
+            test/github-copilot-api.test.mjs
