@@ -34,6 +34,10 @@ test('on-card Git family preserves editable instructions and authentic connectio
  for(const word of ['Load my GitHub work','Inspect PR evidence','Post instructions on PR',
   'Prepare Bubbles evidence handoff','Check gates & merge PR','Check verified merged lines'])assert.ok(moduleSource.includes(word),word);
  assert.match(moduleSource,/AccountConnections/);
+ assert.match(moduleSource,/const sign=node\('button','primary','Sign in with GitHub'\)/);
+ assert.match(moduleSource,/client\.connect\('github',\['repository\.read','repository\.write'\]/);
+ assert.match(moduleSource,/\{preferPopup:true\}/);
+ assert.match(moduleSource,/GitHub sign-in did not finish/);
  assert.match(moduleSource,/connection.*session|connection.*authorization|existing GitHub authorization/);
  assert.doesNotMatch(moduleSource,/localStorage|document\.cookie|GHP_TOKEN|accessToken:/);
  assert.match(reviewer,/'prs','details','issues','merged','build','feedback','merge'/);
