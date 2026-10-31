@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {metaAdapter,executeMeta} from './meta.mjs';
+import {metaAdapter,executeMeta} from '../workers/bubbles-connections/meta.mjs';
 const adapter=()=>metaAdapter({clientId:'app',clientSecret:'secret',redirectUri:'https://quantaphi.org/api/bubbles/connections/meta/callback'});
 test('OAuth asks only for explicitly selected Meta Page and Instagram permissions',()=>{
  const u=new URL(adapter().authorization({state:'state',actions:['pages.read','instagram.read']}));
