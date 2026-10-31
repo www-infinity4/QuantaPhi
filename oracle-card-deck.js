@@ -133,7 +133,11 @@ void import('/quanta-profile-card.mjs?v=20261030-3').then(({mountProfileCard,pro
   if(active===profileEntry)returnActive();
   profileNode.hidden=true;profileInterests=readProfileInterests();updateTabs();predict();start();
  }});
- if(!profileNode.hidden&&!viewerTouched&&!expanded&&!spotlightRequested&&!TV_FRONT_BOOTSTRAP){
+ // Explicit profile deep links win over automatic TV/discovery placement.
+ // Otherwise the completed onboarding card is not returned to rotation.
+ if(!profileNode.hidden&&!viewerTouched&&!expanded&&
+   (spotlightRequested==='user-profile'||spotlightRequested==='quantaProfileCard'||
+    (!spotlightRequested&&!TV_FRONT_BOOTSTRAP))){
   show(profileEntry,false);
  }
  updateTabs();predict();
