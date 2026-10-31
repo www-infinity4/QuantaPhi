@@ -1,4 +1,5 @@
 import {AccountConnections,resolveConnectorWalletToken} from './bubbles-connections.mjs';
+import {gitCardRoute} from './git-production-core.mjs';
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
 export function mountInfinityCopilotCard(host){
  if(!host)return;
@@ -10,7 +11,7 @@ export function mountInfinityCopilotCard(host){
  .infc textarea,.infc select{width:100%;box-sizing:border-box;border:1px solid #b6c7d8;border-radius:11px;padding:11px;background:white;color:#1d2a37}
  .infc textarea{min-height:95px;resize:vertical}.infc .muted{color:#526478;font-size:.91em}.infc .pr{border:1px solid #dbe5ec;border-radius:12px;padding:11px;display:grid;gap:8px}
  .infc .buttons{display:flex;gap:7px;flex-wrap:wrap}.infc .status{border-top:1px solid #dce5ef;padding-top:9px;white-space:pre-wrap}
- .infc button:focus-visible,.infc textarea:focus-visible,.infc select:focus-visible{outline:3px solid #eaa63c;outline-offset:2px}`;
+ .infc .infc-continue{display:inline-flex;align-items:center;min-height:44px;border-radius:12px;background:#155aab;color:white;text-decoration:none;padding:9px 13px;font-weight:800;justify-content:center}.infc button:focus-visible,.infc textarea:focus-visible,.infc select:focus-visible,.infc a:focus-visible{outline:3px solid #eaa63c;outline-offset:2px}`;
  const card=el('section','infc'),title=el('h3','','Infinity Copilot · Build Studio'),
   summary=el('p','muted','GitHub signs you in securely. Build and review work here without opening the full GitHub website.'),
   status=el('p','status','Checking your existing connection…');
@@ -18,6 +19,8 @@ export function mountInfinityCopilotCard(host){
  const sign=el('button','primary','Sign in with GitHub');sign.type='button';
  const refresh=el('button','','Refresh PRs');refresh.type='button';
  const connection=el('div','buttons');connection.append(sign,refresh);
+ const continueLink=el('a','infc-continue','Continue to Gitpal · audit original request →');
+ continueLink.href=gitCardRoute('gitpal');
  const account=el('p','muted','Not signed in');
  const repo=el('select','');repo.setAttribute('aria-label','Authorized GitHub repository');
  const textarea=el('textarea','');textarea.maxLength=4000;textarea.placeholder='Copilot, build me a webpage that…';textarea.setAttribute('aria-label','Copilot build instruction');
@@ -40,6 +43,7 @@ export function mountInfinityCopilotCard(host){
   for(const r of repos){const option=el('option','',r.name+(r.permissions?.write?'':' · read only'));option.value=r.name;repo.append(option);}
   send.disabled=!repos.some(r=>r.permissions?.write);
   refresh.disabled=!repos.length;
+  continueLink.href=gitCardRoute('gitpal',repo.value);
  }
  async function load(){
   if(busy)return;busy=true;refresh.disabled=true;sign.disabled=true;
@@ -122,7 +126,7 @@ export function mountInfinityCopilotCard(host){
    setStatus('Authorize in the GitHub popup. This card stays open.');
   }catch(e){setStatus('Could not open GitHub authorization popup: '+e.message);}
  });
- repo.addEventListener('change',()=>void loadPrs());
+ repo.addEventListener('change',()=>{continueLink.href=gitCardRoute('gitpal',repo.value);void loadPrs();});
  refresh.addEventListener('click',()=>void loadPrs());
  send.addEventListener('click',async()=>{
   const r=selected(),prompt=textarea.value.trim();
@@ -134,6 +138,6 @@ export function mountInfinityCopilotCard(host){
    setStatus(result.notice+' GitHub issue #'+result.issue+'.');textarea.value='';await loadPrs();
   }catch(e){setStatus('Build request not confirmed: '+e.message)}finally{send.disabled=false;}
  });
- card.append(style,title,summary,connection,account,repo,modes,textarea,send,prlist,status);
+ card.append(style,title,summary,connection,account,repo,modes,textarea,send,prlist,continueLink,status);
  host.append(card);renderMode();void load();
 }
