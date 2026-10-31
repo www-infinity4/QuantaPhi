@@ -1,5 +1,6 @@
 import {DurableObject} from 'cloudflare:workers';
 import {ConsentService} from './consent.mjs';
+import {metaAdapter,executeMeta} from './meta.mjs';
 import {TokenVault,digest} from './vault.mjs';
 import {googleAdapter,githubAdapter,cloudflareAdapter,resolveCloudflareScopeConfig} from './providers.mjs';
 import {executeGoogleRead,selectGoogleResource} from './google-read.mjs';
@@ -21,6 +22,7 @@ export class UserConnections extends DurableObject {
       adapters.cloudflare = cloudflareAdapter({clientId:env.CLOUDFLARE_CLIENT_ID,clientSecret:env.CLOUDFLARE_CLIENT_SECRET,
         allowedScopes:cloudflareScopes,
         redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'});
+    if (env.META_CLIENT_ID && env.META_CLIENT_SECRET) adapters.meta = metaAdapter({clientId:env.META_CLIENT_ID,clientSecret:env.META_CLIENT_SECRET,redirectUri:'https://quantaphi.org/api/bubbles/connections/meta/callback'});
     this.service = new ConsentService({storage:ctx.storage,vault:new TokenVault(JSON.parse(env.CONNECTION_KEYRING || '{}'),env.CONNECTION_ACTIVE_KEY),adapters});
   }
   async list(input) {return this.service.list(input);}
@@ -34,7 +36,7 @@ export class UserConnections extends DurableObject {
   async createStarCoinRepository(input) {return this.service.createStarCoinRepository(input);}
   async registerOAuthState({state,provider,userId,expiresAt}) {
     if(typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state)||
-       !['github','cloudflare','google'].includes(provider)||
+       !['github','cloudflare','google','meta'].includes(provider)||
        typeof userId!=='string'||!userId||!Number.isFinite(expiresAt)||
        expiresAt<=Date.now()||expiresAt>Date.now()+300000)throw Error('callback_invalid');
     const key='oauth-locator:'+await digest(state);
@@ -46,7 +48,7 @@ export class UserConnections extends DurableObject {
   }
   async lookupOAuthState({state,provider}) {
     if(typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state)||
-       !['github','cloudflare','google'].includes(provider))throw Error('callback_invalid');
+       !['github','cloudflare','google','meta'].includes(provider))throw Error('callback_invalid');
     const key='oauth-locator:'+await digest(state);
     const record=await this.service.storage.get(key);
     if(!record||record.provider!==provider||record.expiresAt<=Date.now())throw Error('state_invalid_or_used');
@@ -77,6 +79,7 @@ export class UserConnections extends DurableObject {
   async disconnect(input) {return this.service.disconnect(input);}
   async refresh(input) {return this.service.refresh(input);}
   async read(input) {return executeGoogleRead(this.service,input);}
+  async meta(input) {return executeMeta(this.service,input);}
   async selectResource(input) {return selectGoogleResource(this.service,input);}
   async createPair(input){return this.pairing.create(input);}
   async redeemPair(input){return this.pairing.redeem(input);}
