@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'quanta-card-experience.*'
+      - 'meta-social-card.*'
+      - 'workers/bubbles-connections/meta.mjs'
+      - 'test/meta-social.test.mjs'
       - 'quanta-card-actions.mjs'
       - 'art-museum-quick-cards.mjs'
       - 'verified-brand-sports-catalog.mjs'
@@ -92,6 +95,8 @@ jobs:
       - name: Validate card module syntax
         run: |
           node --check quanta-card-experience.mjs
+          node --check meta-social-card.mjs
+          node --check workers/bubbles-connections/meta.mjs
           node --check quanta-card-live-source.mjs
           node --check design-lab/power-chain-core.mjs
           node --check design-lab/app.mjs
@@ -120,7 +125,7 @@ jobs:
           node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
-        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
+        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/meta-social.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
       - name: Check Infinity accepted catalog and browser action contracts
         run: node --test test/infinity-accepted.test.mjs test/quick-card-tinyfish.test.mjs test/brain-clock.test.mjs test/tinyfish-broker-bridge.test.mjs
       - name: Check assimilation accessibility
