@@ -46,7 +46,7 @@ export function mountMetaSocialCard(root,card){
  async function initialize(){
   status.textContent='Checking authorized account permissions…';clearPosts();
   try{
-   client=new AccountConnections({token:()=>resolveConnectorWalletToken(window)});
+   client=new AccountConnections({token:()=>resolveConnectorWalletToken(window)});\n   if(location.pathname==='/source-quick-card.html'&&new URLSearchParams(location.search).get('card')===platform){\n    client.resumePending(async error=>{if(error){status.textContent='Meta authorization could not finish. Try signing in again.';return;}await initialize();});\n   }
    const [catalog,accounts]=await Promise.all([client.call('/catalog'),client.call('/accounts')]);
    const meta=catalog.providers?.find(p=>p.id==='meta');
    if(!meta?.configured){connection.disabled=true;see.disabled=true;send.disabled=true;status.textContent='Meta developer credentials and app permissions are not configured on Bubbles yet. No feed is available.';return;}
@@ -66,7 +66,7 @@ export function mountMetaSocialCard(root,card){
   const actions=platform==='facebook'?['pages.read']:['pages.read','instagram.read'];
   if(requestPublishing.checked)actions.push(platform==='facebook'?'pages.publish':'instagram.publish');
   connection.disabled=true;status.textContent='Opening official Facebook authorization…';
-  try{await client.connect('meta',actions,async error=>{if(error){status.textContent='Meta authorization was not completed.';connection.disabled=false;return;}await initialize();});}
+  try{await client.connect('meta',actions,async error=>{if(error){status.textContent='Meta authorization was not completed.';connection.disabled=false;return;}await initialize();},'/source-quick-card.html?card='+platform);}
   catch{connection.disabled=false;status.textContent='Could not start Meta authorization. Check the registered app and Bubbles session.';}
  }
  async function loadFeed(){
