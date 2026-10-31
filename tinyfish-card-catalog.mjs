@@ -1,5 +1,6 @@
 /* Trusted original-site destinations. Register new external cards here before public execution. */
 import {INFINITY_ACCEPTED_BRANDS} from './infinity-accepted-catalog.mjs';
+import {PLUGIN_QUICK_CARDS} from './plugin-quick-card-catalog.mjs';
 const sources=[
  {"id":"walmart-shopping","name":"Walmart shopping","url":"https://www.walmart.com/"},
  {"id":"cardone-capital","name":"10X Westshore South · Cardone Capital","url":"https://cardonecapital.com/westshoresouth/"},
@@ -469,7 +470,7 @@ const sources=[
   "url": "https://www.nfl.com/schedules/"
  }
 ];
-export const TINYFISH_CARDS=Object.freeze(Object.fromEntries([...sources,...INFINITY_ACCEPTED_BRANDS.map(c=>({id:c.id,name:c.name,url:c.official,actions:c.actions}))].map(c=>[c.id,Object.freeze(c)])));
+export const TINYFISH_CARDS=Object.freeze(Object.fromEntries([...sources,...PLUGIN_QUICK_CARDS.map(c=>({id:c.id,name:c.name,url:c.official})),...INFINITY_ACCEPTED_BRANDS.map(c=>({id:c.id,name:c.name,url:c.official,actions:c.actions}))].map(c=>[c.id,Object.freeze(c)])));
 export function tinyfishCard(id){
  if(typeof id!=='string')return null;
  if(Object.hasOwn(TINYFISH_CARDS,id))return TINYFISH_CARDS[id];

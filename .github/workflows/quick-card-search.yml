@@ -1,10 +1,10 @@
 name: Search returns working Quick Cards
 on:
   pull_request:
-    paths: ['quick-card-search*','source-quick-cards.mjs','source-quick-card.html','tinyfish-card-catalog.mjs','index.html','test/quick-card-search*','.github/workflows/quick-card-search.yml']
+    paths: ['quick-card-search*','source-quick-cards.mjs','source-quick-card.html','tinyfish-card-catalog.mjs','index.html','test/quick-card-search*','plugin-quick-card*','test/plugin-quick-card*','.github/workflows/quick-card-search.yml']
   push:
     branches: [main]
-    paths: ['quick-card-search*','source-quick-cards.mjs','source-quick-card.html','tinyfish-card-catalog.mjs','index.html','test/quick-card-search*','.github/workflows/quick-card-search.yml']
+    paths: ['quick-card-search*','source-quick-cards.mjs','source-quick-card.html','tinyfish-card-catalog.mjs','index.html','test/quick-card-search*','plugin-quick-card*','test/plugin-quick-card*','.github/workflows/quick-card-search.yml']
 permissions:
   contents: read
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --check quick-card-search.mjs && node --test test/quick-card-search.test.mjs test/source-quick-cards.test.mjs test/chatgpt-official-viewer.test.mjs
+      - run: node --check quick-card-search.mjs && node --check plugin-quick-cards.mjs && node --test test/plugin-quick-card-catalog.test.mjs test/quick-card-search.test.mjs test/source-quick-cards.test.mjs test/chatgpt-official-viewer.test.mjs
       - name: Install test-only browser
         run: |
           npm install --no-save --package-lock=false @playwright/test@1.56.1
@@ -24,4 +24,4 @@ jobs:
       - name: Offline and original-site navigation acceptance
         run: |
           python3 -m http.server 8799 --bind 127.0.0.1 &
-          npx playwright test test/quick-card-search.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/quick-card-search.browser.spec.mjs test/plugin-quick-cards.browser.spec.mjs --reporter=line --workers=1

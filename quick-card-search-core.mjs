@@ -1,10 +1,12 @@
 import {TINYFISH_CARDS} from './tinyfish-card-catalog.mjs';
+import {pluginQuickCard} from './plugin-quick-card-catalog.mjs';
 import {HOUSING_QUICK_CARD,HOUSING_ALIASES} from './disability-housing-core.mjs';
 import {HOUSING_HELP_RESOURCES,HOUSING_RESOURCE_ALIASES,housingResourceCard} from './housing-help-catalog.mjs';
 const normalized=value=>String(value||'').normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const aliases=Object.freeze({bk:'burger-king',burgerking:'burger-king',mcdonalds:'mcdonalds'});
 export function lookupQuickCard(id){
  if(id===HOUSING_QUICK_CARD.id)return HOUSING_QUICK_CARD;
+ const plugin=pluginQuickCard(id);if(plugin)return plugin;
  if(typeof id==='string'&&id.startsWith('housing-help-'))return housingResourceCard({id:id.slice('housing-help-'.length)});
  if(typeof id!=='string'||!Object.hasOwn(TINYFISH_CARDS,id))return null;
  const item=TINYFISH_CARDS[id];

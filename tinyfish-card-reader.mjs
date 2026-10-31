@@ -12,6 +12,32 @@ const messages={provider_session_required:'Your website conversation session is 
  tinyfish_allowance_exhausted:'The website reading allowance is used up for today.',
  login_required:'This page requires signing in on the original website.',bot_blocked:'The original website requires a browser verification.',
  page_not_found:'The original website no longer has this page.',timeout:'The original website did not finish loading.',source_not_readable:'The original website did not return readable public content.'};
+export async function checkCardWebsiteReadiness(cardId,{fetcher=fetch,signal}={}){
+ const card=tinyfishCard(cardId);
+ if(!card)throw Error('This website card is not connected yet.');
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),8000);
+ const cancel=()=>controller.abort();signal?.addEventListener('abort',cancel,{once:true});if(signal?.aborted)cancel();
+ try{
+  const response=await fetcher(WEBSITE_ENDPOINT,{method:'POST',credentials:'omit',cache:'no-store',
+   headers:{'Content-Type':'application/json'},signal:controller.signal,
+   body:JSON.stringify({cardId,action:'capabilities'})});
+  const data=await response.json();
+  if(!response.ok||data?.ok!==true){
+   if(data?.error==='card_not_registered')throw Error('Website reader Worker update required for this Quick Card. The original website link remains available.');
+   throw Error(messages[data?.error]||'Website reader availability could not be verified.');
+  }
+  if(data.cardId!==cardId||data.provider!=='TinyFish'||typeof data.configured!=='boolean'||
+     !Array.isArray(data.actions)||!data.actions.includes('inspect')||!data.actions.includes('search'))
+   throw Error('Unverified website reader response. No source content was requested.');
+  if(data.sourceUrl!==card.url)throw Error('Website reader returned an unexpected source. No content was requested.');
+  if(!data.configured)throw Error(messages.tinyfish_not_configured);
+  return {configured:true,sourceUrl:data.sourceUrl};
+ }catch(error){
+  if(error?.name==='AbortError')throw Error('Website reader status timed out. No content was requested.');
+  throw error;
+ }finally{clearTimeout(timer);signal?.removeEventListener('abort',cancel)}
+}
+
 export async function readCardWebsite(cardId,action='inspect',query='',{fetcher=fetch,signal}={}){
  const card=tinyfishCard(cardId);if(!card)throw Error('This website card is not connected yet.');
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),26000);
