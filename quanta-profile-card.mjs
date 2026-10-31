@@ -3,6 +3,11 @@ export const PROFILE_KEY='quantaphi:profile-preferences:v1';
 export const profileComplete=()=>{try{return JSON.parse(localStorage.getItem(PROFILE_KEY)||'{}').complete===true}catch{return false}};
 const el=(tag,cl,text)=>{const node=document.createElement(tag);if(cl)node.className=cl;if(text!==undefined)node.textContent=text;return node};
 const topics=['Shopping','Music','Stories','Science','Television','History','DIY','Sports','Research'];
+export function readProfileInterests(){
+ try{const p=JSON.parse(localStorage.getItem(PROFILE_KEY)||'{}');
+  return p.complete===true&&Array.isArray(p.interests)?p.interests.filter(x=>topics.includes(x)).slice(0,topics.length):[];
+ }catch{return []}
+}
 function readProfile(){try{const value=JSON.parse(localStorage.getItem(PROFILE_KEY)||'{}');return value&&typeof value==='object'?value:{}}catch{return {}}}
 function addStyles(){if(document.getElementById('qp-profile-css'))return;const link=el('link');link.id='qp-profile-css';link.rel='stylesheet';link.href='/quanta-profile-card.css?v=20261030-1';document.head.append(link)}
 export function mountProfileCard(host,{onComplete=()=>{}}={}){
