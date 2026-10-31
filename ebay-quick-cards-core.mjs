@@ -71,6 +71,8 @@ export function normalizeEbayItem(raw,mode){
   image:safeEbayImageUrl(raw.image?.imageUrl||''),
   price,seller,bidCount,ends,
   mode,condition:clean(raw.condition,70),
+  sellerFeedback:Number.isFinite(Number(raw.seller?.feedbackPercentage))&&raw.seller?.feedbackPercentage!==undefined?Number(raw.seller.feedbackPercentage):null,
+  topRated:raw.topRatedBuyingExperience===true,
   // No paid-ad claim from a search result alone.
   sponsored:raw.priorityListing===true
  };
