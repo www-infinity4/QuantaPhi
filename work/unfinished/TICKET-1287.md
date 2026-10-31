@@ -7,15 +7,15 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Milestone 1 policy and navigation scaffold only; browser/session/owner authorization/real deployment acceptance unverified"
-sessions_spent: 3
+sessions_spent: 4
 sessions_remaining_estimate: unknown
 agent: "Continuity Builder source engineering"
 lease_id: null
 lease_expires_at: null
-last_observed_at_utc: "2026-10-31T08:31:00Z"
+last_observed_at_utc: "2026-10-31T09:24:00Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/open-browser-bridge-20261031
-head_sha: "e2c9d22903583380907c29b33b0fbbf73cb40a69"
+head_sha: "40750e600daedab6ef93feaf8f5a28a3b60b011b"
 pr: 1286
 tests:
   - "Node v22 local policy regression: test-first 2/3 (alternate-port bypass reproduced), fixed 3/3 pass; node --check policy.mjs pass"
@@ -24,8 +24,8 @@ ci:
 merged: false
 deployed: false
 live_verified: false
-blocker: "Independent review and real browser/session security acceptance required; DNS rebinding and private DNS resolution remain outside the current hostname-only policy"
-next_action: "Obtain independent security review of PR #1286 network/credential isolation; implement DNS and browser sandbox before deployment"
+blocker: "Independent security review, network egress firewall and DNS pinning still required; DNS preflight is not complete SSRF protection"
+next_action: "Review exact-head DNS policy CI, then obtain independent security review of network egress/DNS pinning before any browser authentication"
 ---
 
 ## Bounded source receipt (2026-10-31)
@@ -45,3 +45,12 @@ next_action: "Obtain independent security review of PR #1286 network/credential 
 5. Provider-specific automation restrictions and official APIs (X posting separate).
 
 Index synchronization: main lacks `work/unfinished/INDEX.md`; it exists in still-draft PR #1276. Do not overwrite that active branch. Add this ticket to the index after #1276 is reviewed/merged or during a conflict-free reconciliation.
+
+## Session 4 — 2026-10-31 ~09:24 UTC
+
+- Source root AGENTS.md and draft #1276 ledger README/INDEX read; existing #1287 and PR #1286 reused, no duplicate project or shared browser lease.
+- Cloudflare production /status read via Browser Rendering and independent WORK_DB D1 query. Cycle 5978128 completed 09:20:12.654Z, deployed coordinator source b495535169f94a0300e419dd60071b7b86697e6f, 8 logical tracks, 0 authenticated ChatGPT runners, owner presence unknown, Work lease unclaimed. Do not auto-send '*' or use owner's browser.
+- DNS/private-address source defense added in commits e1ca3fe2, 9169eb11, 8a8a6034; dedicated policy CI updated 2280c523 and README clarified in 40750e60. Reject mixed public/private DNS results, private/metadata/reserved IPs, lookup errors, and recheck before routed requests; request Chromium sandbox. No network traffic or provider login performed.
+- Local Node policy suite 7/7 passed (4 new DNS + 3 existing URL regressions), not a full Chromium integration test. At source head 40750e60, four GitHub Actions workflows observed IN PROGRESS at initial read, no exact-head pass claim yet.
+- Remaining gate: Node preflight does not pin Chromium DNS; egress network firewall/namespace, DNS rebinding protection, independent security review, authenticated per-user sessions and real acceptance still missing. No merge, deploy, login, paid action, X post or wallet change.
+- Progress percent unknown; sessions spent 4 documented, remaining unknown. Next single action: inspect exact latest-head CI, obtain independent network isolation security review, then add reviewed DNS pinning/egress isolation before enabling authenticated browsing.
