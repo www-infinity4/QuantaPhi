@@ -28,6 +28,8 @@ sessions_remaining_estimate: unknown
 agent: unassigned
 lease_id: null
 lease_expires_at: null
+task_session_id: null
+fence: null
 last_observed_at_utc: null
 repo: www-infinity4/QuantaPhi
 branch: null
