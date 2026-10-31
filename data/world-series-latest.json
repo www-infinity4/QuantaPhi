@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-31T17:51:33.011224Z",
+  "checked_at": "2026-10-31T20:58:57.458912Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 10
+      "articles_selected": 9
     },
     {
       "publisher": "CBS Sports",
@@ -137,17 +137,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/91591fec-e18d-4a39-b2cc-2aacf335414e/pratt-chourio-getty.png",
       "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "What can we learn from the dominant 2026 Brewers?",
-      "url": "https://www.mlb.com/news/2026-brewers-championship-takeways",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-29T15:20:00Z",
-      "summary": "",
-      "author": "Mike Petriello",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "'It was about each other': The Brewers and Pat Murphy admire the masterpiece they built",
@@ -344,6 +333,17 @@
       "summary": "Misiorowski has been good but not his usual level of great in the playoffs ... will that change in World Series Game 5?",
       "author": "Julian McWilliams",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/ef010e72-e146-4436-9c52-bcfac493e930/misiorowski-getty-2.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Rays stay alive vs. Brewers in extra-innings World Series classic; Colts begin NFL trade deadline sale",
+      "url": "https://www.cbssports.com/mlb/news/rays-brewers-world-series-classic-mlb-colts-nfl-trade-deadline-sale/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T12:44:32Z",
+      "summary": "Plus the Top 100 And 1 college basketball teams for the 2026-27 season",
+      "author": "Carter Bahns",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/8f773b61-3ae0-40e5-9e7e-8f3e6e71bdd3/gettyimages-2301840807-1.jpg",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
