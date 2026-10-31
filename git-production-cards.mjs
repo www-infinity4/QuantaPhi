@@ -141,7 +141,8 @@ function stageCard(stage,mountTools){
    'Requested task: '+String(issue?.instruction||input.value||'not provided').slice(0,1700),
    'Repository: '+repos.value+'; PR #'+lastDetails.pr,
    'PR description: '+String(lastDetails.description||'').slice(0,500),
-   'Changed files: '+(lastDetails.files||[]).slice(0,30).map(f=>f.path+' +'+f.additions+' -'+f.deletions).join('; ').slice(0,900),
+   'Changed files: '+(lastDetails.files||[]).slice(0,30).map(f=>f.path+' +'+f.additions+' -'+f.deletions).join('; ').slice(0,550),
+   'Selected patch excerpts (partial): '+(lastDetails.files||[]).filter(f=>f.patch).slice(0,6).map(f=>f.path+'\\n'+f.patch.slice(0,260)).join('\\n').slice(0,1000),
    'Compare intended deliverables to observable changes. Separate verified evidence, missing work and Cloudflare tasks for Bubbles. Never treat this as execution approval.'
   ].join('\n').slice(0,3900);
   if(!window.confirm('Send this selected GitHub issue and file-summary evidence to Bubbles’ verified Gemini → Claude consultation? It may go to those AI providers.'))return;
