@@ -1,4 +1,5 @@
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 // Real source searches, not invented inventory, account data or offers.
 const provider=(id,name,category,official,query,topics,color)=>({id,name,category,official,query,topics,color});
 export const PREMIUM_CARDS=Object.freeze([
@@ -49,13 +50,15 @@ export function mountPremiumCard(card){
  const field=make('input');field.type='search';field.value=card.query;field.required=true;field.maxLength=160;field.setAttribute('aria-label','Search '+card.name);label.append(field);
  const submit=make('button','','Search');submit.type='submit';form.append(label,submit);
  const topics=make('div','premium-topics');topics.setAttribute('aria-label',card.name+' topics');
- for(const topic of card.topics){const b=make('button','',topic);b.type='button';b.addEventListener('click',()=>{field.value=topic;void run()});topics.append(b)}
+ for(const topic of card.topics){const b=make('button','',topic);b.type='button';b.addEventListener('click',()=>{article.dataset.spotlightManual='true';field.value=topic;void run()});topics.append(b)}
  const state=make('p','premium-state','Choose a topic or search the original source.');state.setAttribute('role','status');
  const content=make('div','premium-content'),actions=make('div');
  const disclaimer=make('p','premium-footnote',card.id==='nasa-library'?'NASA collection images and captions. Check the original record for credits and usage guidance.':card.category==='Restaurants'?'Search original restaurant pages. Confirm current offers, dates and eligibility at the restaurant.':card.category==='Auctions'||card.category==='Shopping'?'Original-source search results. Confirm price, availability and sale details on the source page.':'Independent QuantaPhi research card · original publisher sources.');
  article.append(header,form,topics,state,content,disclaimer,actions);
  mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
+ const rotating=['Restaurants','Shopping','Trading cards','Auctions'].includes(card.category);
  let serial=0,loaded=false;
+ if(rotating)mountRotatingSpotlights(article,card,{onEmpty:()=>{if(!loaded)void run()}});
  async function run(){
   const query=field.value.trim();if(!query)return;const request=++serial;loaded=true;state.textContent='Searching '+card.name+'…';article.setAttribute('aria-busy','true');
   try{
@@ -77,11 +80,11 @@ export function mountPremiumCard(card){
   }catch{if(request===serial){content.replaceChildren();state.textContent=card.name+' search is unavailable right now. Retry or use the original source above.'}}
   finally{if(request===serial)article.removeAttribute('aria-busy')}
  }
- article.addEventListener('oracle:activate',()=>{if(!loaded)void run()});
- form.addEventListener('submit',e=>{e.preventDefault();void run()});
+ article.addEventListener('oracle:activate',()=>{if(!rotating&&!loaded)void run()});
+ form.addEventListener('submit',e=>{e.preventDefault();article.dataset.spotlightManual='true';void run()});
  const params=new URLSearchParams(location.search);if(params.get('card')===card.id&&params.get('topic'))field.value=params.get('topic').slice(0,160);
  // Only the card actually displayed makes a request; hidden banks never fan out.
- const observer=new IntersectionObserver(items=>{if(items.some(x=>x.isIntersecting)&&!loaded)void run()});observer.observe(article);
+ const observer=new IntersectionObserver(items=>{if(items.some(x=>x.isIntersecting)&&!loaded&&!rotating)void run()});observer.observe(article);
  return article;
 }
 function hash(text){let n=2166136261;for(const c of text)n=Math.imul(n^c.charCodeAt(0),16777619);return (n>>>0).toString(36)}

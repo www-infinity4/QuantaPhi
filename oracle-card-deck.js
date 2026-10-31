@@ -365,7 +365,7 @@ function show(entry,remember=true){
  if(!entry.id.startsWith('source-')&&entry.id!=='coliseumZeusCard'){
   const displayed=entry;
   import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
-   if(active!==displayed||!stage.contains(displayed.node))return;
+   if(active!==displayed||!stage.contains(displayed.node)||displayed.node.querySelector('.qca-toolbar'))return;
    const container=document.createElement('div');container.className='oracle-card-actions';
    // Capture the real photo/artwork from the displayed original card, not
    // the generic QuantaPhi site preview used by unrelated URLs.

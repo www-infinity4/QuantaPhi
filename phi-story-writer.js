@@ -70,6 +70,16 @@ function ui(){
   }catch{personalIdeas.append(make('p','sw-muted','History is unavailable on this device. Your manual story inputs still work.'))}
  }
  personalize.addEventListener('change',()=>{store('quantaPhi:storyWriter:personalize:v1',personalize.checked);void refreshPersonalIdeas()});
+ // A browser-local composer survives accidental navigation and Android tab reloads.
+ const composerKey='quantaPhi:storyWriter:composer:v1',composer=read(composerKey,{});
+ if(composer&&typeof composer==='object'){
+  if(typeof composer.idea==='string')idea.value=composer.idea.slice(0,3000);
+  if(typeof composer.keys==='string')keys.value=composer.keys.slice(0,500);
+  if(typeof composer.genre==='string'&&[...type.options].some(o=>o.value===composer.genre))type.value=composer.genre;
+  if(['500','900','1500'].includes(composer.length))length.value=composer.length;
+ }
+ const saveComposer=()=>store(composerKey,{idea:idea.value,keys:keys.value,genre:type.value,length:length.value});
+ for(const field of [idea,keys,type,length]){field.addEventListener('input',saveComposer);field.addEventListener('change',saveComposer)}
  const go=make('button','sw-primary','Write story + create image');go.type='button';go.id='sw-write';
  const viewStories=make('button','sw-view-stories','View Stories');viewStories.type='button';viewStories.id='sw-view-stories';
  viewStories.setAttribute('aria-controls','sw-saved-library');viewStories.setAttribute('aria-expanded','false');
@@ -82,8 +92,11 @@ function ui(){
  const art=make('img','sw-art');art.id='sw-art';art.alt='AI illustration of the story';art.hidden=true;
  const artStatus=make('p','sw-art-status','');artStatus.id='sw-art-status';
  const body=make('div','sw-story');body.id='sw-body';
+ const nextDirection=make('textarea','sw-field');nextDirection.id='sw-next-chapter-note';nextDirection.rows=2;nextDirection.maxLength=1200;
+ nextDirection.placeholder='What happens next? Give a direction, or leave blank to surprise me.';
+ nextDirection.setAttribute('aria-label','Next chapter direction (optional)');
  const controls=make('div','sw-actions');
- for(const [id,label]of [['sw-star','☆ Star +0.1 ★'],['sw-collect','Collect +0.1 ★'],['sw-share','Share +0.1 ★'],['sw-copy-story','Copy story'],['sw-fix','Fix illustration'],['sw-retry-image','Retry image']]){
+ for(const [id,label]of [['sw-star','☆ Star +0.1 ★'],['sw-collect','Collect +0.1 ★'],['sw-share','Share +0.1 ★'],['sw-copy-story','Copy story'],['sw-continue','Continue this story'],['sw-fix','Fix illustration'],['sw-retry-image','Retry image']]){
    const b=make('button','',''+label);b.type='button';b.id=id;controls.append(b);
  }
  const rewardStatus=make('p','sw-reward-status','A verified Star, Collect, or Share submits a separate +0.1 StarCoin receipt.');rewardStatus.id='sw-reward-status';rewardStatus.setAttribute('role','status');
@@ -94,7 +107,7 @@ function ui(){
  const historyState=make('p','sw-muted','Loading saved stories…');historyState.id='sw-history-state';
  const library=make('div','sw-library');library.id='sw-library';library.setAttribute('aria-label','Saved stories available to read');
  history.append(picker,library,exportBtn,historyState);
- section.append(header,sourceArt,sourceCaption,art,artStatus,body,controls,rewardStatus);
+ section.append(header,sourceArt,sourceCaption,art,artStatus,body,nextDirection,controls,rewardStatus);
  root.append(form,section,history);
  void refreshPersonalIdeas();
  $('#sw-write').addEventListener('click',()=>void writeStory());
@@ -103,6 +116,7 @@ function ui(){
  $('#sw-collect').addEventListener('click',collect);
  $('#sw-share').addEventListener('click',()=>void share());
  $('#sw-copy-story').addEventListener('click',()=>void copy());
+ $('#sw-continue').addEventListener('click',()=>void continueStory());
  $('#sw-fix').addEventListener('click',()=>void fix());
  $('#sw-retry-image').addEventListener('click',()=>void illustrate(active));
  picker.addEventListener('change',()=>openSavedStory(picker.value)); 
@@ -336,6 +350,38 @@ async function writeStory(){
   void illustrate(active);
  }catch(error){note('Story writing could not finish: '+String(error?.message||error).slice(0,180))}
  finally{busy=false;$('#sw-write').disabled=false}
+}
+async function continueStory(){
+ if(!active||busy||artBusy)return;
+ const previous=active,idea=$('#sw-next-chapter-note').value.trim();
+ if(previous.body.length>40000){note('This manuscript is long. Download its text backup before starting another volume.');return}
+ busy=true;const button=$('#sw-continue');button.disabled=true;
+ note('Writing a new chapter while preserving the original manuscript…');
+ try{
+  const prompt=[
+   'You are QuantaPhi Story Writer. Continue an existing ORIGINAL work of fiction in a new chapter.',
+   'Keep the established names, setting, voice and continuity. Advance events, reveal something meaningful, and end with an interesting next step.',
+   'Do not repeat, rewrite, summarize, replace, or contradict any earlier chapter. This is a continuation only.',
+   'Return ONLY valid JSON with keys "title", "story", "illustration"; story must contain only the NEW fully written chapter (at least 250 words), with paragraph breaks.',
+   'Existing title: '+previous.title,'Genre: '+previous.genre,
+   'Owner direction: '+(idea||'Continue the established story organically.'),
+   'Recent manuscript context:\n'+previous.body.slice(-10000),
+   'Write the next chapter now.'
+  ].join('\n');
+  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),65000);
+  let response;
+  try{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'oracle-story-writer-continuation',requireCloudflare:true}}),signal:controller.signal})}
+  finally{clearTimeout(timeout)}
+  const data=await response.json().catch(()=>({}));
+  if(!response.ok||data.ok===false)throw Error(String(data.error||'The continuation was not returned'));
+  const chapter=parseStory(takeText(data),previous.title).body.trim();
+  if(chapter.length<750)throw Error('Incomplete continuation returned. The original manuscript remains unchanged.');
+  const combined={...previous,body:previous.body.trim()+'\n\n'+chapter,updatedAt:new Date().toISOString(),chapters:(previous.chapters||1)+1};
+  active=combined;const saved=await saveStory(combined);renderStory();
+  $('#sw-next-chapter-note').value='';
+  note(saved?'New chapter appended and saved. The original chapters and illustration remain intact.':'Chapter appended, but browser storage could not confirm a save. Copy or download your story now.');
+ }catch(error){note('Could not continue the story: '+String(error?.message||error).slice(0,160))}
+ finally{busy=false;button.disabled=false}
 }
 async function illustrate(story){
  if(!story||artBusy)return;

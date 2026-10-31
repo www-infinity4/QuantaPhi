@@ -1,5 +1,7 @@
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
+import {mountCurrentSports} from './sports-card-data.mjs?v=20261030-rich1';
 import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from './verified-brand-sports-catalog.mjs';
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 
 /* An original, working quick-card body with a source identity, 3 relevant
  * on-card actions, and the shared collection toolbar. No synthetic brand art.
@@ -18,6 +20,11 @@ function link(label,href,cls){
  return a;
 }
 const isEvent=c=>c.event==='NFL'||c.event==='MLB';
+export function isPastDatedGame(card,now=Date.now()){
+ if(!card||!['game','matchup','lineup','tracker'].includes(card.kind)||!isEvent(card)||!/^\d{4}-\d{2}-\d{2}$/.test(card.date||''))return false;
+ const midnight=Date.parse(card.date+'T00:00:00Z');
+ return Number.isFinite(midnight)&&now>=midnight+36*60*60*1000;
+}
 function createVisual(card,article){
  const visual=el('div','vbs-art vbs-'+card.kind);
  const primary=el('img','vbs-identity');
@@ -86,16 +93,18 @@ export function createVerifiedCard(card){
  node.dataset.kind=card.kind;
  node.dataset.category=card.category;
  node.dataset.checked=card.checked;
+ const archivedGame=isPastDatedGame(card);node.dataset.pastGame=String(archivedGame);
  if(card.nonTargeted)node.dataset.personalization='disabled';
  node.append(createVisual(card,node));
  const info=el('div','vbs-info');
- info.append(el('p','vbs-kicker',distinctLead(card)),el('h3','vbs-title',card.name));
+ info.append(el('p','vbs-kicker',archivedGame?'PAST MATCHUP · OFFICIAL RECAP':distinctLead(card)),el('h3','vbs-title',card.name));
  if(isEvent(card)){
   const p=el('p','vbs-broadcaster','SOURCE: '+(card.event==='NFL'?'NFL / OFFICIAL TEAM':'MLB / OFFICIAL TEAM')+
    (card.network?' · '+card.network:''));
   info.append(p);
  }
  info.append(el('p','vbs-description',card.description));
+ if(archivedGame)info.append(el('p','vbs-archive-note','This dated event is in the past, not a live broadcast. Use the official game center for verified results and highlights.'));
  if(card.kind==='coupon'){
   if(card.offer){
    const now=new Date();const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
@@ -113,7 +122,7 @@ export function createVerifiedCard(card){
   info.append(el('p','vbs-neutral','Independent civic directory. Not an endorsement or an official government application.'));
  }
  if(isEvent(card)){
-  const live=el('p','vbs-updates','Scores and highlights can change. Open the official game center for current play-by-play; no live game feed is claimed here.');
+  const live=el('p','vbs-updates',archivedGame?'Archived event: open the official game center for results and replay sources; no live game feed is claimed here.':'Scores and highlights can change. Open the official game center for current play-by-play; no live game feed is claimed here.');
   info.append(live);
  }
  const controls=el('nav','vbs-topics');controls.setAttribute('aria-label',card.name+' actions');
@@ -132,11 +141,13 @@ export function createVerifiedCard(card){
  },{showSearch:false});
  info.append(shared);
  node.append(info);
+ if(['food','retail','coupon','vehicle','wearable','travel'].includes(card.kind))mountRotatingSpotlights(node,card);
+ if(card.id==='fox-nfl-watch'||card.id==='world-series-future-games')mountCurrentSports(node,card);
  return node;
 }
 const sportsQueries=Object.freeze({
  'packers-lions-2026':['packers.com','Packers Lions October 25 2026 play-by-play highlights'],
- 'fox-nfl-watch':['foxsports.com','Packers Lions NFL October 25 2026 highlights'],
+ 'fox-nfl-watch':['foxsports.com','NFL latest scores highlights'],
  'lions-interception-watch':['detroitlions.com','Packers Lions 2026 interceptions takeaways highlight'],
  'packers-next-schedule':['packers.com','Packers next game 2026 schedule'],
  'lions-next-schedule':['detroitlions.com','Lions next game 2026 schedule'],
@@ -158,7 +169,7 @@ function appendSportsCoverage(card,info,node){
  if(!record)return;
  const [domain,query]=record;
  const panel=el('section','vbs-news-panel');
- const title=el('h4','vbs-news-title','Recent official-source coverage');
+ const title=el('h4','vbs-news-title',isPastDatedGame(card)?'Official-source coverage of this past event':'Recent official-source coverage');
  const status=el('p','vbs-news-status','Source headlines load only when this card opens.');
  const results=el('div','vbs-news-results');
  const refresh=el('button','vbs-news-refresh','Refresh source headlines');refresh.type='button';
@@ -182,6 +193,11 @@ function appendSportsCoverage(card,info,node){
    results.replaceChildren();
    for(const item of list){
     const row=el('article','vbs-news-item');
+    const imageUrl=item.img_src||item.thumbnail_src||item.thumbnail;
+    if(imageUrl&&isSafeCardUrl(imageUrl)){
+     const image=el('img','vbs-news-photo');image.src=imageUrl;image.alt=String(item.title).slice(0,160);
+     image.referrerPolicy='no-referrer';image.loading='lazy';image.addEventListener('error',()=>image.remove(),{once:true});row.append(image);
+    }
     row.append(link(String(item.title).slice(0,160),item.url,'vbs-news-link'));
     if(item.publishedDate){
      const d=new Date(item.publishedDate);
