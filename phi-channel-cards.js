@@ -265,17 +265,20 @@ for(const c of channels){
  const now=viewer.appendChild(el('strong','channelphi-now','On air'));
  const status=viewer.appendChild(el('p','channelphi-status','Ready'));status.setAttribute('role','status');
  const controls=viewer.appendChild(el('div','channelphi-controls'));
- const previous=controls.appendChild(el('button','channelphi-prev',c.key==='kyou'?'↻ Reload KYOU':'◀ CH−'));previous.type='button';
- const next=controls.appendChild(el(c.key==='kyou'?'a':'button','channelphi-next',c.key==='kyou'?'↗ KYOU site':'CH+ ▶'));
+ if(c.key==='kyou')controls.classList.add('channelphi-kyou-controls');
+ const previous=controls.appendChild(el('button','channelphi-prev',c.key==='kyou'?'↻ Refresh station':'◀ CH−'));previous.type='button';
+ const next=controls.appendChild(el(c.key==='kyou'?'a':'button','channelphi-next',c.key==='kyou'?'↗ KYOU website':'CH+ ▶'));
  if(c.key==='kyou'){next.href=kyouSource();next.target='_blank';next.rel='noopener';next.referrerPolicy='strict-origin-when-cross-origin'}else next.type='button';
- const sound=controls.appendChild(el('button','channelphi-sound','🔊 Sound'));sound.type='button';
+ const sound=c.key==='kyou'?null:controls.appendChild(el('button','channelphi-sound','🔊 Sound'));
+ if(sound)sound.type='button';
+ else viewer.appendChild(el('p','channelphi-hint','Sound and volume are controlled inside KYOU’s original player.'));
  const close=controls.appendChild(el('button','channelphi-stop','■ Stop'));close.type='button';
  const playback={key:c.key,card,screen,viewer,screenSlot,status,title:now,sound,video:null,frame:null,yt:null,hls:null,program:null,channel:c.key,remoteChannel:c.key};
  if(c.key==='kyou')kyouPlayback=playback;
  screen.addEventListener('click',()=>open(playback));
  previous.addEventListener('click',()=>changeProgram(playback,-1));
  if(c.key!=='kyou')next.addEventListener('click',()=>changeProgram(playback,1));
- sound.addEventListener('click',()=>setSound(playback));
+ sound?.addEventListener('click',()=>setSound(playback));
  close.addEventListener('click',()=>{autoKyou=false;stop();screen.focus()});
 }
 host.addEventListener('oracle:activate',()=>{autoKyou=true;startKyou()});

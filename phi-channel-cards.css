@@ -48,3 +48,15 @@
 .channelphi-controls .channelphi-stop{background:#56212c;color:#fff}
 .channelphi-prev:focus-visible,.channelphi-next:focus-visible,.channelphi-sound:focus-visible{outline:3px solid #ffd877;outline-offset:2px}
 @media(max-width:430px){.channelphi-video-slot .channelphi-frame,.channelphi-video-slot .channelphi-video{height:100%;min-height:0}.channelphi-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.channelphi-controls button{font-size:14px}}
+
+/* KYOU station-aware controls: actionable buttons only; third-party sound stays in the station player. */
+.channelphi-kyou .channelphi-full-view{box-sizing:border-box;display:inline-flex;align-self:flex-start;align-items:center;justify-content:center;min-height:44px;padding:9px 13px;margin:2px 0 4px;border:1px solid #8ebad8;border-radius:11px;background:#fff;color:#075b98;text-decoration:none;font:800 13px/1.35 system-ui,sans-serif}
+.channelphi-kyou .channelphi-controls{grid-template-columns:repeat(3,minmax(0,1fr))}
+.channelphi-kyou .channelphi-controls :is(button,a){box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-width:0;min-height:48px;padding:10px 8px!important;border-radius:12px;border:1px solid #8dbad9;text-decoration:none;text-align:center;font:800 13px/1.35 system-ui,sans-serif;overflow-wrap:anywhere;white-space:normal;cursor:pointer}
+.channelphi-kyou .channelphi-controls .channelphi-prev{background:#e9f4ff;color:#12527e;border-color:#85b7da}
+.channelphi-kyou .channelphi-controls .channelphi-next{background:#075b98;color:#fff;border-color:#075b98}
+.channelphi-kyou .channelphi-controls .channelphi-stop{background:#7b2638;color:#fff;border-color:#7b2638}
+.channelphi-kyou .channelphi-hint{margin:8px 5px 3px;color:#d8ecfb;font:600 12px/1.5 system-ui,sans-serif}
+.channelphi-kyou :is(.channelphi-full-view,.channelphi-controls button,.channelphi-controls a):focus-visible{outline:3px solid #ffce66;outline-offset:3px}
+.channelphi-kyou .channelphi-controls :is(button,a):active{filter:brightness(.94)}
+@media(max-width:430px){.channelphi-kyou .channelphi-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.channelphi-kyou .channelphi-controls .channelphi-stop{grid-column:1/-1}}
