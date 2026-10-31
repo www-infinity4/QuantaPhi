@@ -18,7 +18,7 @@ function mockDb(data=rows){
    if(sql.includes('SELECT date,requests,page_views'))return {all:async()=>({results:data})};
    return {bind(...params){statements.push({sql,params});return {sql,params}}};
   },
-  batch:async batch=>{assert.equal(batch.length,statements.length);return [];}
+  batch:async batch=>{assert.equal(batch.length,statements.length);return batch.map(()=>({success:true}));}
  };
  return {db,statements};
 }
@@ -48,6 +48,34 @@ test('Cloudflare day validator rejects duplicates, invalid and future values',()
  assert.throws(()=>validateGroups([{dimensions:{date:'2026-10-25'},sum:{requests:1,pageViews:1}}],now),/invalid/);
  assert.throws(()=>validateGroups([{dimensions:{date:'2026-10-24'},sum:{requests:-1,pageViews:1}}],now),/invalid/);
 });
+test('impossible calendar dates and duplicate ledger days fail closed',()=>{
+ const badDays=['2026-02-30','2026-02-29','2026-13-01','2026-00-10'];
+ for(const date of badDays){
+  assert.throws(()=>validateGroups([{dimensions:{date},sum:{requests:1,pageViews:1}}],now),/invalid_analytics_day/);
+  assert.throws(()=>cumulativeSnapshot([{date,requests:1,page_views:1,verified_at:now.toISOString()}],now),/ledger_invalid/);
+ }
+ assert.throws(()=>cumulativeSnapshot([rows[0],rows[0]],now),/ledger_invalid/);
+ const leap={date:'2028-02-29',requests:1,page_views:1,verified_at:'2028-02-29T00:00:00Z'};
+ assert.equal(cumulativeSnapshot([leap],new Date('2028-03-01T00:00:00Z')).recordedDays,1);
+ assert.equal(validateGroups([{dimensions:{date:'2028-02-29'},sum:{requests:1,pageViews:1}}],new Date('2028-03-01T00:00:00Z')).length,1);
+});
+test('ledger rejects invalid and far-future verification timestamps',()=>{
+ const sample=rows[0];
+ for(const stamp of [undefined,'not-a-time','2026-02-30T00:00:00.000Z',
+  '2099-01-01T00:00:00.000Z',new Date(now.getTime()+6*60*1000).toISOString()]){
+  assert.throws(()=>cumulativeSnapshot([{...sample,verified_at:stamp}],now),/ledger_invalid/);
+ }
+ const closeSkew=new Date(now.getTime()+2*60*1000).toISOString();
+ assert.equal(cumulativeSnapshot([{...sample,verified_at:closeSkew}],now).fetchedAt,closeSkew);
+});
+test('mixed-precision UTC timestamps preserve the actual latest verification',()=>{
+ const older={...rows[0],verified_at:'2026-10-24T06:10:54Z'};
+ const newer={...rows[1],verified_at:'2026-10-24T06:10:54.421Z'};
+ // A lexical MAX incorrectly prefers the older 'Z' suffix to '.421Z'.
+ assert.ok(older.verified_at>newer.verified_at);
+ assert.ok(Date.parse(older.verified_at)<Date.parse(newer.verified_at));
+ assert.equal(cumulativeSnapshot([older,newer],now).fetchedAt,newer.verified_at);
+});
 test('GraphQL stays server-side, reading bounded previous days with no browser token',async()=>{
  const days=await queryTraffic({token:'not-a-real-private-token',now,fetcher:async(url,init)=>{
   assert.equal(url,'https://api.cloudflare.com/client/v4/graphql');
@@ -68,7 +96,20 @@ test('idempotent daily upsert keeps highest verified day count without double-co
  assert.equal(statements.length,21);
  assert.match(statements[0].sql,/ON CONFLICT\(date\) DO UPDATE/);
  assert.match(statements[0].sql,/MAX\(traffic_daily.requests,excluded.requests\)/);
+ // Two overlapping refreshes can finish out of order. The older write must
+ // never move the last verified time backwards after the newer write.
+ assert.match(statements[0].sql,/verified_at=CASE WHEN julianday\(excluded.verified_at\)>julianday\(traffic_daily.verified_at\)/);
  assert.equal(statements[0].params[0],'2026-10-04');
+});
+test('traffic refresh rejects incomplete or unsuccessful D1 batch receipts',async()=>{
+ const fetcher=async()=>({ok:true,json:async()=>({data:{viewer:{zones:[{httpRequests1dGroups:groups}]}}})});
+ for(const receipts of [[],undefined,[{success:false}],
+  Array.from({length:groups.length},(_,i)=>({success:i!==3})),
+  Array.from({length:groups.length},()=>({}))]){
+  const {db}=mockDb();
+  db.batch=async()=>receipts;
+  await assert.rejects(refreshLedger(db,{token:'not-a-real-private-token',now,fetcher}),/ledger_write_unverified/);
+ }
 });
 test('public traffic endpoint serves durable counts even when live token is absent',async()=>{
  const {db}=mockDb();
