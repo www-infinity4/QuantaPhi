@@ -42,6 +42,46 @@ test('index references only existing ticket files', () => {
   }
 });
 
+// A lease is a short-lived, attributable claim, never a bare colored status.
+function validateLeaseClaim(field, filename) {
+  const unclaimed = value => value === undefined || value === null ||
+    value === '' || value === 'null' || value === 'unknown';
+  const lease = field('lease_id');
+  const fence = field('fence');
+  const expiry = field('lease_expires_at');
+  const session = field('task_session_id');
+  assert.equal(unclaimed(lease), unclaimed(fence), filename + ' lease requires fence');
+  if (unclaimed(lease)) {
+    assert.ok(unclaimed(expiry), filename + ' unclaimed lease must not retain expiry');
+    assert.ok(unclaimed(session), filename + ' unclaimed lease must not retain task/session identity');
+    return;
+  }
+  const timestamp = String(expiry || '').replace(/^"|"$/g, '');
+  assert.match(timestamp, /^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$/,
+    filename + ' claimed lease requires UTC expiry');
+  assert.ok(Number.isFinite(Date.parse(timestamp)), filename + ' lease expiry must be a valid date');
+  assert.ok(!unclaimed(session), filename + ' claimed lease requires task/session identity');
+  const agent = String(field('agent') || '').replace(/^"|"$/g, '');
+  assert.ok(agent && !/^(unassigned|unknown|null)$/i.test(agent),
+    filename + ' claimed lease requires named agent');
+  assert.match(field('issue') || '', /^[1-9]\\d*$/, filename + ' claimed lease requires canonical ticket');
+}
+
+test('lease claims require expiry, fence, agent and task/session identity', () => {
+  const fields = values => key => values[key];
+  const valid = {issue: '1250', agent: 'build-agent-1', lease_id: 'lease-1',
+    fence: 'fence-1', lease_expires_at: '2026-10-31T16:00:00Z', task_session_id: 'session-1'};
+  assert.doesNotThrow(() => validateLeaseClaim(fields(valid), 'valid'));
+  for (const key of ['fence', 'lease_expires_at', 'task_session_id', 'agent']) {
+    assert.throws(() => validateLeaseClaim(fields({...valid, [key]: null}), 'missing-' + key));
+  }
+  assert.throws(() => validateLeaseClaim(fields({...valid, lease_expires_at: 'not-a-date'}), 'bad-date'));
+  assert.doesNotThrow(() => validateLeaseClaim(fields({lease_id: 'null', fence: 'null',
+    lease_expires_at: 'null', task_session_id: 'null'}), 'unclaimed'));
+  assert.throws(() => validateLeaseClaim(fields({lease_id: 'null', fence: 'null',
+    lease_expires_at: '2026-10-31T16:00:00Z', task_session_id: 'null'}), 'stale-expiry'));
+});
+
 test('ticket front matter rejects unsupported completion and unfenced lease claims', () => {
   const files = readdirSync(folder).filter(name => /^TICKET-\d+\.md$/.test(name));
   for (const filename of files) {
@@ -51,16 +91,14 @@ test('ticket front matter rejects unsupported completion and unfenced lease clai
     const metadata = match[1];
     const field = key => metadata.match(new RegExp('^' + key + ':\\s*(.*)$', 'm'))?.[1]?.trim();
     for (const key of ['issue', 'state', 'dot', 'progress_percent', 'progress_basis',
-      'sessions_spent', 'sessions_remaining_estimate', 'lease_id', 'fence',
+      'sessions_spent', 'sessions_remaining_estimate', 'agent', 'lease_id', 'fence',
+      'lease_expires_at', 'task_session_id',
       'next_action', 'merged', 'deployed', 'live_verified']) {
       assert.notEqual(field(key), undefined, filename + ' missing front-matter field ' + key);
     }
     assert.match(field('sessions_spent'), /^(0|[1-9]\d*)$/, filename + ' sessions_spent must be counted');
     assert.match(field('progress_percent'), /^(unknown|100|[1-9]?\d)$/, filename + ' percent must be evidence-based');
-    const lease = field('lease_id');
-    const fence = field('fence');
-    const unclaimed = value => value === 'null' || value === 'unknown' || value === '';
-    assert.equal(unclaimed(lease), unclaimed(fence), filename + ' must not claim an unfenced lease');
+    validateLeaseClaim(field, filename);
     if (field('progress_percent') === '100') {
       assert.equal(field('state'), 'complete', filename + ' 100% requires accepted completion');
       assert.match(field('dot'), /🟢/, filename + ' 100% requires accepted green state');
