@@ -14,7 +14,7 @@ export function moneyCents(value,name='Amount'){
 }
 export function formatCents(cents){
  if(!Number.isSafeInteger(cents)||cents<0)throw new RangeError('Invalid cents');
- return '
+ return '$'+Math.floor(cents/100)+'.'+String(cents%100).padStart(2,'0');
 }
 export function planBulkAllocation({quantity,unitPrice,buyers,shipping='0',tax='0',storage='0'}={}){
  const units=whole(quantity,'Quantity',1,10000);
