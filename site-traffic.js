@@ -73,15 +73,33 @@
   if(!valid(d))throw Error('traffic_invalid');
   return d;
  }
+ // A stale but valid ledger response must not eclipse a newer, verified
+ // same-origin fallback. Cache the backup check to avoid repeated asset loads.
+ let backup=null,backupCheckedAt=0;
+ async function validatedBackup(){
+  if(backupCheckedAt&&Date.now()-backupCheckedAt<10*60*1000)return backup;
+  backupCheckedAt=Date.now();
+  try{backup=await load('/data/site-traffic-lifetime.json?v='+Math.floor(Date.now()/60000));}catch{}
+  return backup;
+ }
  async function refresh(){
   if(busy)return;busy=true;
   if(refreshButton){refreshButton.disabled=true;refreshButton.textContent='Checking totals…';}
   try{
-   try{render(await load('/api/site-traffic'),{fallback:false});}
-   catch{render(await load('/data/site-traffic-lifetime.json?v='+Math.floor(Date.now()/60000)),{fallback:true});}
-  }catch{
-   if(best)render(best,{fallback:true});
-   else{requests.textContent='—';views.textContent='—';note.textContent='Cloudflare lifetime ledger currently unavailable; no estimated counts shown.';}
+   let server=null;
+   try{server=await load('/api/site-traffic')}catch{}
+   const oldServer=!server||Date.now()-Date.parse(server.fetchedAt)>60*60*1000;
+   const fallback=oldServer?await validatedBackup():null;
+   // Do not trust a newer timestamp if its recorded totals go backwards.
+   const useFallback=Boolean(fallback&&(!server||(
+    fallback.since===server.since &&
+    fallback.requests>=server.requests&&fallback.pageViews>=server.pageViews &&
+    Date.parse(fallback.fetchedAt)>Date.parse(server.fetchedAt)
+   )));
+   const chosen=useFallback?fallback:server;
+   if(chosen)render(chosen,{fallback:useFallback});
+   else if(best)render(best,{fallback:true});
+   else{requests.textContent='—';views.textContent='—';note.textContent='Cloudflare recorded ledger currently unavailable; no estimated counts shown.';}
   }finally{
    busy=false;
    if(refreshButton){refreshButton.disabled=false;refreshButton.textContent='Refresh totals';}
