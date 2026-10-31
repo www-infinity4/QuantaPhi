@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {GIT_APP_CARDS,GIT_PRODUCTION_CHAIN,gitRepoUrl,gitCardRoute,nextGitStage,mergedLinePreview} from '../git-production-core.mjs';
+import {GIT_APP_CARDS,GIT_PRODUCTION_CHAIN,gitRepoUrl,gitCardRoute,nextGitStage,mergedLinePreview,safeGitReviewSnippet} from '../git-production-core.mjs';
 import {githubCopilotRequest} from '../workers/bubbles-connections/github-copilot-api.mjs';
 import {lookupQuickCard,searchQuickCards} from '../quick-card-search-core.mjs';
 const moduleSource=readFileSync(new URL('../git-production-cards.mjs',import.meta.url),'utf8');
@@ -105,4 +105,18 @@ test('Gitpal never hands stale PR evidence from another account, repository or P
  assert.match(moduleSource,/if\(version!==selectionVersion\|\|!active\|\|active\.id!==accountId\|\|repos\.value!==r\.name\)return/);
  assert.match(moduleSource,/issueRecords=\[\];selectIssue\.replaceChildren\(node\('option','','Copilot issues not loaded for this repository'\)\)/);
  assert.match(moduleSource,/if\(!active\)\{authorized=\[\];prRecords=\[\];issueRecords=\[\];selectionVersion\+\+;clear\(\)/);
+});
+
+test('Gitpal strips sensitive files and credential-bearing patch lines before AI provider handoff',()=>{
+ assert.match(moduleSource,/safeGitReviewSnippet\(f.path,f.patch\)/);
+ assert.equal(safeGitReviewSnippet('.env.production','+API_KEY=secret-value'),'[Sensitive-file patch excluded from external AI review]');
+ assert.equal(safeGitReviewSnippet('config/service-account.json','+{"private_key":"secret"}'),'[Sensitive-file patch excluded from external AI review]');
+ assert.equal(safeGitReviewSnippet('keys/id_rsa','+-----BEGIN PRIVATE KEY-----'),'[Sensitive-file patch excluded from external AI review]');
+ const patch='+const name = "demo";\n+Authorization: Bearer supersecret123456789012\n+client_secret = "sensitive"\n+function demo(){}';
+ const safe=safeGitReviewSnippet('src/app.mjs',patch);
+ assert.match(safe,/const name = "demo"/);
+ assert.match(safe,/function demo\(\)/);
+ assert.ok(!safe.includes('supersecret123456789012'));
+ assert.ok(!safe.includes('client_secret = "sensitive"'));
+ assert.equal(safeGitReviewSnippet('src/app.mjs','a\n'.repeat(200)).split('\n').length<=12,true);
 });
