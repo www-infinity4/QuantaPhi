@@ -19,10 +19,20 @@ test('prospective independent-site ads have unique ids and legitimate HTTPS dest
  assert.equal(new Set(QUICK_ADS.map(a=>a.id)).size,QUICK_ADS.length);
  for(const ad of QUICK_ADS){
   assert.ok(ad.name&&ad.tagline&&ad.category&&/^#[a-fA-F0-9]{6}$/.test(ad.tone));
-  assert.equal(isOfficialUrl(ad.href),true);
+  assert.equal(isOfficialUrl(ad.href,ad.id),true);
  }
- assert.equal(isOfficialUrl('javascript:alert(1)'),false);
- assert.equal(isOfficialUrl('https://user:pass@example.com'),false);
+ assert.equal(isOfficialUrl('javascript:alert(1)','google'),false);
+ assert.equal(isOfficialUrl('https://user:pass@example.com','google'),false);
+ // Official brand association must be checked independently of HTTPS syntax.
+ assert.equal(isOfficialUrl('https://www.google.com/','google'),true);
+ assert.equal(isOfficialUrl('https://www.google.com/','apple-iphone'),false);
+ assert.equal(isOfficialUrl('https://google.com.evil.example/','google'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/?redirect=https://evil.example','google'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/#other','google'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/','unreviewed-brand'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/'),false);
+ assert.equal(isOfficialUrl('https://www.google.com/','__proto__'),false);
+ assert.match(source('quick-ads.mjs'),/Independent website spotlight · not a paid ad/);
  assert.ok(QUICK_ADS.every(a=>!/budweiser|corona|kalshi|polymarket/i.test(a.name)));
 });
 test('replacement ad rotates through every unseen website before recycling',()=>{
