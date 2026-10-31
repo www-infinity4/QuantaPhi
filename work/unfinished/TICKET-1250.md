@@ -8,17 +8,17 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Source and exact-head CI are verified; independent approval, wallet-isolated OAuth, release, and Android acceptance are not."
-sessions_spent: 6
+sessions_spent: 7
 sessions_remaining_estimate: unknown
 agent: "Continuity Builder hourly; read-only observation and isolated ledger update"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: "2026-10-31T14:24:51.885Z"
+last_observed_at_utc: "2026-10-31T16:25:43.220Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/infinity-copilot-popup-gitpal-20261031
-head_sha: b85bdd4d27641af8bff2fff62b15def51d820221
+head_sha: 8908ed393d010c723449f22378bee09be5d1958f
 pr: 1272
 dependent_prs:
   - "https://github.com/www-infinity4/QuantaPhi/pull/1273"
@@ -94,3 +94,13 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 
 - Final source/test head before this documentation receipt: `a89a074ea664ce56e4e93f2c4f2243ad27fa8dbd`. Five of five associated PR-triggered GitHub Actions workflows completed SUCCESS. Dedicated [Unfinished work ledger contracts run 41210053360](https://github.com/www-infinity4/QuantaPhi/actions/runs/41210053360), job 124562958214, logs show **5/5 Node subtests passed**, including synthetic missing-expiry/fence/agent/session and invalid-UTC negative cases. Earlier test code had overescaped digit regex and was corrected in commit `a89a074e` before this green run.
 - This checkpoint commit itself creates a new head, so independently recheck its own Actions before calling the PR latest-head green. No independent review, merge, deployment or authenticated browser acceptance is implied.
+
+## 2026-10-31 ~16:25 UTC · Gitpro conflicting-review security regression
+
+- Reused issue #1250 and existing review-ready QuantaPhi PR #1272, after reading main AGENTS.md, draft ledger README/INDEX, current #1145/#1192/#1210/#1231, X runbook and exact PR heads. No authenticated Work/chat runner claimed; lease_id/fence/task_session_id remain null.
+- **Root defect:** Gitpro's server merge route accepted an exact-head approval from reviewer A even when reviewer B's latest review still requested changes. A synthetic test of original head `b85bdd4d27641af8bff2fff62b15def51d820221` reached the merge endpoint; the same test on fixed head `8908ed393d010c723449f22378bee09be5d1958f` returned `merge_independent_review_required` without reaching merge. Both tests used mock GitHub responses and synthetic tokens; no real PR merged.
+- Actual source commit [4757970](https://github.com/www-infinity4/QuantaPhi/commit/47579704640d15f8019e89db77231c216c446175) blocks unresolved CHANGES_REQUESTED reviews regardless of another approval. Regression test commit [8908ed3](https://github.com/www-infinity4/QuantaPhi/commit/8908ed393d010c723449f22378bee09be5d1958f) adds a conflicting-review case to `test/github-copilot-api.test.mjs`.
+- [Bubbles account connection regressions run 41219625348](https://github.com/www-infinity4/QuantaPhi/actions/runs/41219625348) succeeded at exact source/test head: **158/158 Node subtests passed**, including the updated stale/withdrawn/conflicting-review test. Other associated exact-head workflows were still running when first observed (9 success / 3 in progress / 0 failed of 12); recheck before release.
+- Coordinator public /status and actual WORK_DB D1 cycle **5978212** completed 2026-10-31T16:20:12.378Z, source b4955351..., eight logical tracks, **0 authenticated ChatGPT consumer runners**, owner presence unknown, Work lease unclaimed. Public X health checked 16:17:30.547Z, five visible posts, zero new candidates; saved signed-in @IntegraAI profile was **not** entered because shared Work/browser resource yields on unknown owner presence. No X writes.
+- State: 🟡 `source_tested / ci_partially_passed / review_pending`; progress_percent **unknown**, sessions_spent **7 documented**, sessions_remaining_estimate **unknown**. No merge, deployment, wallet/OAuth change, Android acceptance or Gitcoin mint. Independent exact-head Git-family review remains outstanding.
+- **Next single executable action:** verify all exact-head #1272 workflows, then obtain a genuine independent security approval and resolve findings before protected release.
