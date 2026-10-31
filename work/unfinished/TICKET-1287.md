@@ -7,22 +7,24 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Milestone 1 policy and navigation scaffold only; browser/session/owner authorization/real deployment acceptance unverified"
-sessions_spent: 5
+sessions_spent: 6
 sessions_remaining_estimate: unknown
 agent: "Continuity Builder source engineering"
 lease_id: null
 lease_expires_at: null
-last_observed_at_utc: "2026-10-31T10:26:00Z"
+last_observed_at_utc: "2026-10-31T18:22:00Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/open-browser-bridge-20261031
-head_sha: "9a8931d7584b0e963b0ba3f9547181a433470237"
+head_sha: "26f0b4c02ede0f473c511cc98268b3f6ad91a8d5"
 pr: 1286
 tests:
   - "Node v22 local policy regression: test-first 2/3 (alternate-port bypass reproduced), fixed 3/3 pass; node --check policy.mjs pass"
   - "Context routing new 4/4 Node v22 tests passed locally; 11/11 full suite passed in exact-head GitHub Actions job"
+  - "WebSocket denial: local synthetic 6/6 PASS; exact source-head GitHub Actions 13/13 Node tests PASS"
 ci:
   - "Exact source head e2c9d229: 4/4 returned GitHub Actions workflows successful, including dedicated Infinity Open Browser Bridge policy"
   - "Exact source head 9a8931d7: 4/4 GitHub Actions workflows success, dedicated policy job 41192664422 reports 11/11 tests"
+  - "Exact source head 26f0b4c0: 4/4 Actions success, dedicated policy run 41229030536, job 124619122965, 13/13 tests"
 merged: false
 deployed: false
 live_verified: false
@@ -65,3 +67,13 @@ Index synchronization: main lacks `work/unfinished/INDEX.md`; it exists in still
 - Source commits: `28084818`, `7e0f0224`, `80a960a5`, `f3ebca95`, `9a8931d7`. Local Node 22 new tests 4/4 PASS, source syntax checks PASS. GitHub Actions at exact source head `9a8931d7584b0e963b0ba3f9547181a433470237`: 4/4 workflows SUCCESS, including dedicated policy run [41192664422](https://github.com/www-infinity4/QuantaPhi/actions/runs/41192664422), whose job logs report **11/11 tests passed**.
 - State 🟡 source_tested / ci_passed / review_pending. Independent reviews still 0 at last check; **not merged, deployed, authenticated, or live browser-tested**. Popup coverage is improved but DNS TOCTOU, un-intercepted Chromium traffic, egress firewall/namespace and signed per-user sessions remain hard blockers. Progress unknown; sessions_spent=5; remaining unknown; lease/fence=null.
 - Next single action: obtain independent security review of the exact head and implement verified network egress/DNS-pinning barrier before enabling any authenticated browser runner.
+
+## Session 6 — 2026-10-31 ~18:22 UTC
+
+- Reused issue #1287 and PR #1286 after reading main AGENTS.md, draft #1276 README/INDEX, #1145/#1192/#1210/#1231/#1250 and current PR heads. No competing source lease was observed; owner presence remained **unknown** and shared Work/browser lease **unclaimed**. No owner conversation, X session, or credentials accessed.
+- **Root cause:** Playwright's context HTTP `route()` does not intercept WebSockets. A page could open `ws://127.0.0.1` or `wss://169.254.169.254` despite existing HTTP URL/DNS checks. This screenshot-only milestone needs no sockets.
+- **Bounded source fix:** commit [3e670f6](https://github.com/www-infinity4/QuantaPhi/commit/3e670f677538ba35a956f7d0fbedc67ea69c4377) installs `context.routeWebSocket('**/*', ws => ws.close())` before HTTP interception/page creation and fails closed when the API is missing; [9187ce9](https://github.com/www-infinity4/QuantaPhi/commit/9187ce99e8c174cdb988124abf12f27fe11a054d) adds negative regressions; [26f0b4c](https://github.com/www-infinity4/QuantaPhi/commit/26f0b4c02ede0f473c511cc98268b3f6ad91a8d5) documents remaining limitations.
+- Local synthetic tests **6/6 PASS**; baseline without socket handler failed as expected. Exact source head `26f0b4c02ede0f473c511cc98268b3f6ad91a8d5`: **4/4 associated Actions SUCCESS**; [dedicated policy run 41229030536](https://github.com/www-infinity4/QuantaPhi/actions/runs/41229030536), job 124619122965, **13/13 Node tests PASS** including both new WebSocket regressions.
+- Coordinator WORK_DB cycle **5978235** completed 18:15:13.849Z, deployed source `b495535169f94a0300e419dd60071b7b86697e6f`, eight logical tracks, **0 authenticated consumer ChatGPT runners**, owner presence unknown, Work lease unclaimed. Latest public X D1 scan 18:17:30.675Z: five visible, zero new/candidates. Saved TinyFish x.com profile metadata does not prove current sign-in; no paid browser run was started.
+- **State:** 🟡 `source_tested / ci_passed / review_pending`; progress_percent **unknown**, sessions_spent **6**, sessions_remaining_estimate **unknown**, lease_id/fence/task_session_id=null. No independent security review, merge, deployment, real Chromium/phone acceptance or network egress isolation. WebSocket denial closes one interception gap but **does not** prevent Chromium DNS rebinding, UDP/WebRTC or other out-of-band egress.
+- **Next single executable action:** obtain independent security review of #1286 and verify a network-level deny-private egress/DNS-pinning boundary before enabling authenticated browser use. Do not enable provider sessions or claim this is a complete TinyFish replacement.
