@@ -158,6 +158,10 @@ test('diagnostic checks require reference links and a specimen, and edited evide
  await expect(page.locator('#kitAssessment')).toContainText('insufficient evidence');
  await page.locator('#kitCandidateUrl').fill('https://www.ebay.com/itm/12345');
  for (let i = 0; i < 2; i++) await page.locator('#kitCheckState' + i).selectOption('supported');
+ // A delayed change event on URL blur must not erase checks already entered for this same URL.
+ await page.locator('#kitCandidateUrl').blur();
+ await expect(page.locator('#kitCheckState0')).toHaveValue('supported');
+ await expect(page.locator('#kitCheckState1')).toHaveValue('supported');
  await page.locator('#kitAssess').click();
  await expect(page.locator('#kitAssessment')).toContainText('insufficient evidence');
  for (let i = 0; i < 2; i++) await page.locator('#kitCheckReference' + i).fill('https://www.pcgs.com/reference-' + i);
