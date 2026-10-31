@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {GIT_APP_CARDS,GIT_PRODUCTION_CHAIN,gitRepoUrl,gitCardRoute,nextGitStage,mergedLinePreview} from '../git-production-core.mjs';
 import {githubCopilotRequest} from '../workers/bubbles-connections/github-copilot-api.mjs';
+import {lookupQuickCard,searchQuickCards} from '../quick-card-search-core.mjs';
 const moduleSource=readFileSync(new URL('../git-production-cards.mjs',import.meta.url),'utf8');
 const source=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
 const reviewer=readFileSync(new URL('../workers/bubbles-connections/consent.mjs',import.meta.url),'utf8');
@@ -19,6 +20,14 @@ test('every known Git application has an original-repository card and Gitcoin is
  assert.equal(nextGitStage('git-stream').id,'gitcoin');
  assert.equal(nextGitStage('gitcoin'),null);
  assert.match(gitCardRoute('gitpro','testowner/demo',12),/card=source-gitpro&repo=testowner%2Fdemo&pr=12/);
+});
+test('git project names discover their real cards and open deep links, not third-party login imitations',()=>{
+ for(const id of ['gitpal','gitpro','gitflow','gitcoin','gitpin','gitpub','git-stream','gitmap']){
+  const card=lookupQuickCard(id);
+  assert.equal(card.route,'/?card=source-'+id);
+  assert.ok(card.official.startsWith('https://github.com/www-infinity4/'));
+  assert.ok(searchQuickCards(id,{limit:8}).some(item=>item.id===id),id);
+ }
 });
 test('on-card Git family preserves editable instructions and authentic connection scope',()=>{
  assert.match(source,/mountGitProductionCards\(cards,mountCardTools\)/);
