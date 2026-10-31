@@ -250,5 +250,21 @@ test('verified public Cloudflare fallback is current, scoped and never presented
  assert.equal(s.last7Days.pageViews<=s.pageViews,true);
  const page=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  assert.match(page,/id="qtrafficRefresh"/);
- assert.match(page,/site-traffic\.js\?v=20261031-manualrefresh1/);
+ assert.match(page,/site-traffic\.js\?v=20261031-freshsource2/);
+});
+
+test('stale successful ledger cannot hide newer, source-validated Cloudflare fallback',async()=>{
+ const stale=trafficPayload(1177738,453387,'2026-10-30T16:29:07.394Z');
+ stale.through='2026-10-30';
+ stale.last7Days={since:'2026-10-25',until:'2026-10-31',requests:296740,pageViews:114437,daysRecorded:6};
+ stale.recordedDays=27;stale.coverageContinuous=false;
+ const fresh=trafficPayload(1191980,459620,'2026-10-31T04:23:58.441Z');
+ fresh.through='2026-10-30';
+ fresh.last7Days={since:'2026-10-24',until:'2026-10-30',requests:377965,pageViews:143479,daysRecorded:7};
+ fresh.recordedDays=27;
+ const nodes=await runClientOnce(new Map(),[stale,fresh]);
+ assert.equal(nodes.qtrafficRequests.textContent,'1,191,980');
+ assert.equal(nodes.qtrafficViews.textContent,'459,620');
+ assert.match(nodes.qtrafficNote.textContent,/2026-10-24 to 2026-10-30, 7\/7 days recorded/);
+ assert.match(nodes.qtrafficNote.textContent,/automatic ingestion is not yet authorized/);
 });
