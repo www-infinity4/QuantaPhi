@@ -245,7 +245,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  const begin=ui.indexOf('async function openConversation(id){');
  const end=ui.indexOf('function startConversation(',begin);
  assert.ok(begin>0&&end>begin,'actual History switch handler exists');
- async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false,cloudEmpty=false,cloudMessages=false,cloudSessionId='chat_target'}={}){
+ async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false,cloudEmpty=false,cloudMessages=false,cloudSessionId='chat_target',ownerSwitchDuringCloud=false}={}){
   let confirmations=0,saves=0,clears=0;
   const original={id:'old_message',role:'user',text:'Important current chat',at:100};
   const ctx={
@@ -257,8 +257,10 @@ test('History switching never discards unsent photos, typed work or an unsaved c
    pendingImages:photo?[{id:'photo'}]:[],photoInput:{value:'selected'},photoPreview:{hidden:false},
    saveThread:()=>{saves++;return saveOk},
    readThread:()=>[{id:'saved_123',role:'assistant',text:'Saved earlier turn',at:10}],
-   ownerReady:lateDraft!==null||latePhoto||cloudEmpty||cloudMessages,
+   ownerReady:lateDraft!==null||latePhoto||cloudEmpty||cloudMessages||ownerSwitchDuringCloud,
+   ownerHeaders:{Authorization:'Bearer old-verified-owner'},
    conversationApi:async()=>{
+    if(ownerSwitchDuringCloud)ctx.ownerHeaders={Authorization:'Bearer different-verified-owner'};
     if(lateDraft!==null)ctx.input.value=lateDraft;
     if(latePhoto)ctx.pendingImages.push({id:'new-photo'});
     return {session:{id:cloudSessionId},messages:cloudMessages?[{id:'cloud_123',role:'assistant',text:'Verified cloud turn',at:20}]:[]};
@@ -304,6 +306,12 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  const cloudWithTurns=await run({cloudMessages:true});
  assert.equal(cloudWithTurns.result,true);
  assert.equal(cloudWithTurns.state.messages[0]?.text,'Verified cloud turn','nonempty cloud History remains authoritative');
+ const switchedWallet=await run({ownerSwitchDuringCloud:true,cloudMessages:true});
+ assert.equal(switchedWallet.result,false,'a different owner session arriving during History fetch must abort the switch');
+ assert.equal(switchedWallet.clears,0,'stale cloud History must not replace the active chat');
+ assert.equal(switchedWallet.state.activeThread,'chat_old');
+ assert.equal(switchedWallet.state.messages[0].text,'Important current chat');
+ assert.match(switchedWallet.notice,/owner connection changed/i);
  const wrongCloudSession=await run({cloudMessages:true,cloudSessionId:'another_wallet_thread'});
  assert.equal(wrongCloudSession.result,true,'the verified device copy remains open when cloud returns a different session');
  assert.equal(wrongCloudSession.state.messages[0]?.text,'Saved earlier turn','a mismatched cloud session must never replace device History');
