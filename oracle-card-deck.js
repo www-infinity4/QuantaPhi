@@ -8,7 +8,12 @@ if(!host||!stage)return;
 const TV_FRONT_BOOTSTRAP=(()=>{try{const api=window.QuantaTVFrontPriority;return !!api?.shouldPin(null,Date.now(),api.readFinal(localStorage))}catch{return false}})();
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
+// One authentic, editable onboarding card joins the original live cards.
+const profileNode=document.createElement('section');
+profileNode.id='quantaProfileCard';profileNode.hidden=true;
+(document.querySelector('.oracle-card-library')||document.querySelector('main.app')||document.body).append(profileNode);
 const choices=[
+ ['quantaProfileCard','Your Profile · QuantaPhi Settings'],
  ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
@@ -50,6 +55,7 @@ const choices=[
 /* These are the ORIGINAL live widgets, not duplicated external link previews.
  * Shared IDs connect the Oracle viewer to Public / For You / Following. */
 const CARD_DIRECTIONS={
+ quantaProfileCard:['user-profile','Account setup','Choose interests and notification preferences'],
  liveFoxGameCard:['fox-live-game','Television','Visit KYOU’s official Iowa station, schedule and live newscasts with verified MLB game status'],
  liveFoxNewsCard:['fox-live-news','Television','Watch the official LiveNOW from FOX news player'],
  coliseumZeusCard:['coliseum-zeus','Collaboration','Pitch, vote, branch and build in the Zeus arena'],
@@ -110,6 +116,22 @@ let active=null,expanded=false;
 let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
+const profileEntry=entries.find(e=>e.id==='quantaProfileCard');
+const profileLink=document.createElement('a');profileLink.href='/quanta-profile.html';
+profileLink.className='oracle-profile-settings-link';profileLink.textContent='Profile & settings';
+profileLink.setAttribute('aria-label','Open your profile and settings');
+(host.querySelector('.oracle-card-deck-nav')||host).append(profileLink);
+void import('/quanta-profile-card.mjs?v=20261030-1').then(({mountProfileCard,profileComplete})=>{
+ profileNode.hidden=profileComplete();
+ mountProfileCard(profileNode,{onComplete:()=>{
+  if(active===profileEntry)returnActive();
+  profileNode.hidden=true;updateTabs();predict();start();
+ }});
+ if(!profileNode.hidden&&!viewerTouched&&!expanded&&!spotlightRequested&&!TV_FRONT_BOOTSTRAP){
+  show(profileEntry,false);
+ }
+ updateTabs();predict();
+}).catch(()=>{profileNode.hidden=true;});
 let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
 const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
 let feedState=null,proposed=null;
@@ -177,8 +199,10 @@ function livePriority(e){
  const priority=document.getElementById('liveFoxGameCard')?.dataset.tvFrontPriority;
  return (priority===undefined?TV_FRONT_BOOTSTRAP:priority==='1')?1:0;
 }
-function eligible(){const cards=entries.filter(available).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
- cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
+function eligible(){const cards=entries.filter(available).sort((a,b)=>livePriority(b)-livePriority(a));
+ if(!feedState)return selectedTab==='following'?[]:cards;
+ return selectedTab==='following'?cards.filter(e=>feedState.following.includes(e.feedId)):
+  cards.filter(e=>!feedState.following.includes(e.feedId));}
 function updateTabs(){
  updateInventory();
  const live=eligible().find(livePriority),liveButton=document.getElementById('oracleCardLive');
@@ -191,7 +215,7 @@ function updateTabs(){
  tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
  if(follow){
   const saved=Boolean(active&&feedState?.following.includes(active.feedId));
-  follow.hidden=!active;
+  follow.hidden=!active||active===profileEntry;
   follow.textContent=saved?'✓ Following':'+ Follow';
   follow.setAttribute('aria-pressed',String(saved));
  }
@@ -232,6 +256,20 @@ function presentOriginal(entry){
  const text=document.createElement('div'),brand=document.createElement('small'),title=document.createElement('h2'),copy=document.createElement('p');
  brand.textContent='QUANTAPHI ORIGINAL · INFINITY 2026®';title.textContent=cover[0];copy.textContent=cover[1];
  text.append(brand,title,copy);header.append(image,text);entry.node.prepend(header);
+}
+let postTurns=0;
+function updateCardPost(entry){
+ if(!entry||entry===profileEntry)return;
+ let note=stage.querySelector('[data-oracle-post]');
+ if(!note){note=document.createElement('p');note.className='oracle-card-post-note';
+  note.dataset.oraclePost='true';stage.append(note);}
+ const moments=[
+  'Explore this experience using its original controls.',
+  'Save it to Following to keep it with your favorite cards.',
+  'Share a useful discovery or collect the card for later.',
+  'Discover another interactive card whenever you are ready.'
+ ];
+ note.textContent='INFINITY® CARD POST · '+moments[(postTurns++)%moments.length];
 }
 function predict(){
  updateInventory();
@@ -289,7 +327,7 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
  if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
  updateTabs();
- if(selectedTab==='following'&&!eligible().some(e=>e===active)){
+ if(active&&!eligible().some(e=>e===active)){
   returnActive();const first=eligible()[0];if(first)show(first,false);else{
    now.textContent='No followed interactive cards';status.textContent='Use Public and tap + Follow on any live card.';
   }
@@ -299,13 +337,27 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
 }));
 follow?.addEventListener('click',()=>{
  if(!directionApi||!active)return;
+ if(active===profileEntry)return;
  feedState=directionApi.toggleFollowing(readDirections(),active.feedId);storeDirections();
+ if(feedState.following.includes(active.feedId)){
+  selectedTab='following';stage.dataset.switchboardTab=selectedTab;
+  window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
+   id:stage.dataset.switchboardId,title:stage.dataset.switchboardTitle,
+   category:stage.dataset.switchboardCategory,tab:selectedTab
+  }}));
+ }
  if(selectedTab==='following'&&!feedState.following.includes(active.feedId)){
   returnActive();const first=eligible()[0];if(first)show(first,false);
   else {now.textContent='No followed interactive cards';status.textContent='Choose Public and follow a card to fill this view.';}
  }
  updateTabs();predict();
  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
+});
+window.addEventListener('storage',event=>{
+ if(event.key!=='quanta:discovery:anonymous:v1'||!directionApi)return;
+ feedState=readDirections();
+ if(active&&!eligible().includes(active)){returnActive();start();}
+ updateTabs();predict();
 });
 window.addEventListener('quantaphi:feed-updated',e=>{
  if(e.detail?.origin==='oracle-viewer'||!directionApi)return;
@@ -379,10 +431,11 @@ function show(entry,remember=true){
  try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
  if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
  seenByTab[selectedTab].add(entry.feedId);
+ updateCardPost(entry);
  now.textContent=entry.title;updateTabs();predict();
  status.textContent='Live interactive card · '+entry.title+
   '. '+(selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
-    selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.')+
+    selectedTab==='following'?'Only your followed cards appear here.':'Public shows cards you have not followed yet.')+
   ' · '+eligible().length+' ready cards in this direction.';
 }
 function advance(direction){
@@ -477,6 +530,7 @@ host.addEventListener('click',e=>{
  if(!active||!stage.contains(e.target)||!e.target.closest?.('button,a,[role="button"],input[type="submit"]'))return;
  viewerTouched=true;
  counts[active.id]=Math.min(1000,(counts[active.id]||0)+1);
+ updateCardPost(active);
  if(directionApi&&feedState){
   feedState=directionApi.markOpened(readDirections(),active.feedId);
   storeDirections();predict();
@@ -489,6 +543,7 @@ document.body.classList.add('oracle-card-deck-active');
 function chooseOpening(){
  const ready=eligible();if(!ready.length)return null;
  const live=ready.find(livePriority);if(live)return live;
+ if(profileEntry&&ready.includes(profileEntry))return profileEntry;
  // Each visit starts with another family; 116 accepted brands no longer monopolize
  // the starting slot. Preserve direct-link spotlight selection in start().
  if(openingCursor===null){
