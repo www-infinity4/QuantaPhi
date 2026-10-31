@@ -21,11 +21,17 @@ export async function refreshCoinConnections({force=false}={}) {
  if(status)status.textContent='Checking the current source routes. No wallet changes are made.';
  try {
   // First-party checks observe route availability, not AI model readiness, owner identity or mint completion.
-  const [alien,ai]=await Promise.all([probe('/alien-coin/'),probe('/quant-ai/')]);
+  const [alien,diagnostic]=await Promise.all([
+   probe('/alien-coin/'),
+   fetch('/api/infinity-connections',{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(6000)})
+    .then(async response=>({http:response.status,data:await response.json()}))
+    .catch(()=>({http:null,data:null}))
+  ]);
   const alienMessage=alien.reachable?'Alien Coin page reachable; server mint not yet verified.':
     'Alien Coin route unavailable'+(alien.code?' (HTTP '+alien.code+')':'')+'.';
-  const aiMessage=ai.reachable?'Quant-AI route reachable; model and service bindings not yet verified.':
-    'Quant-AI connection not verified'+(ai.code?' (HTTP '+ai.code+')':'')+'.';
+  const aiMessage=diagnostic.data?.quantAi==='AUTH_ROUTE_REACHABLE'
+    ?'Quant-AI private authentication route reachable; model, account and wallet operations not yet verified.'
+    :'Quant-AI backend not verified'+(diagnostic.data?.quantAi?' ('+diagnostic.data.quantAi+')':'')+'.';
   setStatus('alien-coin',alienMessage);
   if(status)status.textContent=alienMessage+' '+aiMessage+' No tokens minted by this check.';
   checkedAt=Date.now();
