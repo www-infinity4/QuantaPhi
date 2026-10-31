@@ -16,8 +16,11 @@ export function safeLocalCardUrl(input,base='https://quantaphi.org/'){
  }catch{return ''}
 }
 export function safePreviewImage(input,base='https://quantaphi.org/'){
- try{const url=new URL(String(input||''),base);if(url.protocol!=='https:'||url.username||url.password||url.href.length>1600||url.pathname==='/preview.png')return '';
-  if(!/\.(?:png|jpg|jpeg|gif|webp)$/i.test(url.pathname)&&!(url.hostname==='lsco.scene7.com'&&url.pathname.startsWith('/is/image/')))return '';
+ try{const url=new URL(String(input||''),base);if(url.protocol!=='https:'||url.username||url.password||url.port||url.href.length>1600||url.pathname==='/preview.png'||/\.(?:svg|html|js)$/i.test(url.pathname))return '';
+  const sourceCDN=(['lsco.scene7.com','lscoglobal.scene7.com'].includes(url.hostname)&&url.pathname.startsWith('/is/image/'))||
+   (url.hostname==='img.guess.com'&&url.pathname.startsWith('/image/upload/'));
+  if(!/\.(?:png|jpg|jpeg|gif|webp)$/i.test(url.pathname)&&!sourceCDN)return '';
+  if(['localhost','127.0.0.1','0.0.0.0','[::1]'].includes(url.hostname)||url.hostname.endsWith('.local'))return '';
   return url.href;
  }catch{return ''}
 }

@@ -1,5 +1,5 @@
-import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate1';
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 
 /* Independently curated product spotlights: original merchandise, publisher-hosted
  * photos and exact product links verified 2026-10-24. NOT paid retailer ads.

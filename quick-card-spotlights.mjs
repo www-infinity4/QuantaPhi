@@ -1,6 +1,7 @@
 /* Public source previews. Private searches, account data and wallet balances never
  * leave the device. Prices require recently checked, structured source offers. */
 import {FEED_STORAGE_KEY,cleanFeedState} from './quanta-feed-rank.mjs';
+import {rememberSpotlightCreative,forgetSpotlightCreative,requestedSpotlight} from './card-spotlight-creative.mjs';
 const BROKER='https://orange-brook-a2ac.marvaseater.workers.dev/search';
 const DATA=['/data/quick-card-spotlights-latest.json','https://raw.githubusercontent.com/www-infinity4/QuantaPhi/trends-rss-data/data/quick-card-spotlights-latest.json'];
 const TTL=15*60*1000,DAY=86400000;
@@ -32,9 +33,13 @@ export function normalizeSpotlights(payload,card,now=Date.now()){
    try{price=new Intl.NumberFormat(undefined,{style:'currency',currency:offer.currency}).format(Number(offer.price))}catch{}
   }
   return [{url,image,title,description:text(row.description,260),checked_at:row.checked_at,
-   category:text(row.category||card.category,90),price,kind:row.kind==='product'?'Product':'Website spotlight',
+   category:text(row.category||card.category,90),price,price_expires_at:price?Math.min(checked+DAY,offer?.valid_until?Date.parse(offer.valid_until):Infinity):0,kind:row.kind==='product'?'Product':'Website spotlight',
    source:new URL(url).hostname,method:row.method==='indexed'?'Indexed preview':'Source page',id:key}];
  }).slice(0,12);
+}
+export function visibleSpotlightPrice(row,now=Date.now()){
+ const deadline=Math.min(Date.parse(row?.checked_at)+DAY,row?.price_expires_at||Infinity);
+ return row?.price&&Number.isFinite(deadline)&&now<=deadline?row.price:'';
 }
 export function chooseSpotlight(items,{seen=[],interests=[],last=''}={}){
  const used=new Set(seen);let pool=items.filter(x=>x.id!==last&&!used.has(x.id));
@@ -86,28 +91,32 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
  const header=article.querySelector('.iac-title,.qbp-head,.premium-heading');if(header)header.after(panel);else article.prepend(panel);
  const key='quanta:spotlight:'+card.id+':v1';let history={seen:[],last:''};try{history=JSON.parse(localStorage.getItem(key))||history}catch{}
  if(!Array.isArray(history.seen))history={seen:[],last:''};
+ let requested=new URLSearchParams(location.search).get('spotlight')||'';
  let items=[],active=false,loading=false,lastFetch=0,current=null,paused=globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches||false,hover=false;
  const isVisible=()=>!document.hidden&&article.isConnected&&article.getClientRects().length>0;
- function show(){
+ function show({advance=false}={}){
+  if(advance)requested='';
   if(article.dataset.spotlightManual==='true')return;
   if(items.length&&items.every(x=>history.seen.includes(x.id)))history={seen:[],last:history.last};
   let state;try{state=cleanFeedState(JSON.parse(localStorage.getItem(FEED_STORAGE_KEY)))}catch{state=cleanFeedState({})}
   // Use explicit follows and bounded card categories; never raw searches.
   const interests=state.following.concat(Object.keys(state.counts).sort((a,b)=>state.counts[b]-state.counts[a]).slice(0,12));
-  const row=chooseSpotlight(items,{...history,interests});if(!row)return;
+  const row=requestedSpotlight(items,requested,card.official)||chooseSpotlight(items,{...history,interests});if(!row)return;
   current=row;history={seen:[...history.seen.filter(x=>x!==row.id),row.id].slice(-items.length),last:row.id};
   try{localStorage.setItem(key,JSON.stringify(history))}catch{}
   visual.replaceChildren();const image=el('img','qcs-photo');image.alt=row.title;image.decoding='async';image.referrerPolicy='no-referrer';
   image.addEventListener('error',()=>{items=items.filter(x=>x.id!==row.id);if(current!==row)return;
-   if(items.length)show();else{panel.hidden=true;article.classList.remove('qcs-has-items')}
+   if(items.length)show();else{panel.hidden=true;article.classList.remove('qcs-has-items');forgetSpotlightCreative(article)}
   },{once:true});image.src=row.image;visual.append(image);
-  title.textContent=row.title;desc.textContent=row.description;price.textContent=row.price?row.price+' · source price':'See current price and availability at the source';
+  title.textContent=row.title;desc.textContent=row.description;updatePrice();
   meta.textContent='∞ INFINITY · '+row.method+' · '+row.source+' · checked '+new Date(row.checked_at).toLocaleString();
   open.href=row.url;open.textContent=(row.kind==='Product'?'Shop this item':'View this spotlight')+' ↗';
   count.textContent=items.length+' source choices';next.disabled=items.length<2;pause.hidden=items.length<2;
   pause.textContent=paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(paused));
   panel.hidden=false;article.classList.add('qcs-has-items');article.dataset.currentSpotlight=row.url;
+  rememberSpotlightCreative(article,card,row);
  }
+ function updatePrice(){const amount=visibleSpotlightPrice(current);price.textContent=amount?amount+' · source price':'See current price and availability at the source'}
  async function refresh(){if(loading||Date.now()-lastFetch<TTL)return;loading=true;
   try{const result=await fetchSpotlights(card);lastFetch=Date.now();if(result.length){items=result;if(isVisible()&&!panel.contains(document.activeElement))show()}else onEmpty?.()}
   finally{loading=false}
@@ -117,13 +126,13 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
  const observer=typeof IntersectionObserver==='undefined'?null:new IntersectionObserver(entries=>{
   active=entries.some(x=>x.isIntersecting);if(active)activate();
  });observer?.observe(article);
- next.addEventListener('click',show);pause.addEventListener('click',()=>{paused=!paused;pause.textContent=paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(paused))});
+ next.addEventListener('click',()=>show({advance:true}));pause.addEventListener('click',()=>{paused=!paused;pause.textContent=paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(paused))});
  panel.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')hover=true});panel.addEventListener('pointerleave',()=>{hover=false});
- document.addEventListener('visibilitychange',()=>{if(active&&isVisible())void refresh()});
+ document.addEventListener('visibilitychange',()=>{if(active&&isVisible()){updatePrice();void refresh()}});
  const timer=setInterval(()=>{
   if(!article.isConnected){clearInterval(timer);observer?.disconnect();return}
-  if(active&&isVisible()){if(Date.now()-lastFetch>=TTL)void refresh();
-   if(items.length>1&&!paused&&!hover&&!panel.contains(document.activeElement))show();}
+  if(active&&isVisible()){updatePrice();if(Date.now()-lastFetch>=TTL)void refresh();
+   if(items.length>1&&!paused&&!hover&&!panel.contains(document.activeElement))show({advance:true});}
  },20000);
  return {panel,refresh,next};
 }

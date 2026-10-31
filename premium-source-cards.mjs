@@ -1,5 +1,5 @@
-import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate1';
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 // Real source searches, not invented inventory, account data or offers.
 const provider=(id,name,category,official,query,topics,color)=>({id,name,category,official,query,topics,color});
 export const PREMIUM_CARDS=Object.freeze([

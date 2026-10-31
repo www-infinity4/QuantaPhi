@@ -2,6 +2,9 @@ name: QuantaPhi real interactive card quality
 on:
   pull_request:
     paths:
+      - 'card-spotlight-creative.mjs'
+      - 'test/rotating-card-share.test.mjs'
+      - 'test/quick-card-spotlights.browser.spec.mjs'
       - 'quick-card-spotlights.*'
       - 'sports-card-data.mjs'
       - 'google-trending-cards.*'
@@ -98,6 +101,7 @@ jobs:
           node-version: '22'
       - name: Validate card module syntax
         run: |
+          node --check card-spotlight-creative.mjs
           node --check quick-card-spotlights.mjs
           node --check sports-card-data.mjs
           node --check google-trending-cards.js
@@ -135,7 +139,7 @@ jobs:
         run: node --test test/infinity-cards-freshness.test.mjs
       - name: Check changing imagery, source prices, trends and sports data
         run: |
-          node --test test/quick-card-spotlights.test.mjs test/sports-card-data.test.mjs test/google-trending-cards.test.cjs
+          node --test test/rotating-card-share.test.mjs test/quick-card-share.test.mjs test/social-share-preview.test.cjs test/quick-card-spotlights.test.mjs test/sports-card-data.test.mjs test/google-trending-cards.test.cjs
           python3 -m unittest discover -s test -p 'test_card_spotlights_sync.py' -v
           python3 -m unittest discover -s test -p 'test_google_trends_sync.py' -v
       - name: Check Infinity accepted catalog and browser action contracts

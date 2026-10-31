@@ -1,6 +1,6 @@
-import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate1';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
 import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs';
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
 const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
 export function cardImageCandidates(card){

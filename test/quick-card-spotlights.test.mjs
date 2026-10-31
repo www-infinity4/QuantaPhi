@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {normalizeSpotlights,chooseSpotlight,sourceUrl,publicImageUrl,fetchSpotlights} from '../quick-card-spotlights.mjs';
+import {normalizeSpotlights,chooseSpotlight,sourceUrl,publicImageUrl,fetchSpotlights,visibleSpotlightPrice} from '../quick-card-spotlights.mjs';
 const now=Date.parse('2026-10-31T01:00:00Z');
 const card={id:'fixture-store',name:'Source',official:'https://www.levi.com/',category:'Denim'};
 const item=(extra={})=>({url:'https://www.levi.com/p/123',image:'https://lsco.scene7.com/is/image/123',title:'Denim jacket',checked_at:new Date(now-1000).toISOString(),...extra});
@@ -26,6 +26,12 @@ test('matching ranks unseen offers and cannot repeat the last when another is av
  const second=chooseSpotlight(items,{seen:[first.id],last:first.id,interests:['work-jacket']});assert.notEqual(second.id,first.id);
  const third=chooseSpotlight(items,{seen:[first.id,second.id],last:second.id});assert.ok(![first.id,second.id].includes(third.id));
  assert.notEqual(chooseSpotlight(items,{seen:items.map(x=>x.id),last:first.id}).id,first.id);
+});
+test('an already normalized price expires without another successful source refresh',()=>{
+ const row=normalize([item({offer:{price:'89.00',currency:'USD',evidence:'jsonld-offer',valid_until:new Date(now+30000).toISOString()}})])[0];
+ assert.match(visibleSpotlightPrice(row,now),/89/);assert.equal(visibleSpotlightPrice(row,now+40000),'');
+ const daily=normalize([item({offer:{price:'89.00',currency:'USD',evidence:'jsonld-offer'}})])[0];
+ assert.equal(visibleSpotlightPrice(daily,now+86400000),'');
 });
 test('indexed images use a fixed public broker and never promote result prices to source offers',async()=>{
  let requested;

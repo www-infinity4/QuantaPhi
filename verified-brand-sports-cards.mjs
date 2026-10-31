@@ -1,7 +1,7 @@
-import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate1';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
 import {mountCurrentSports} from './sports-card-data.mjs?v=20261030-rich1';
 import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from './verified-brand-sports-catalog.mjs';
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 
 /* An original, working quick-card body with a source identity, 3 relevant
  * on-card actions, and the shared collection toolbar. No synthetic brand art.

@@ -1,7 +1,8 @@
 import {cardProvider,quickCardManifest} from './quanta-card-provider.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
 import {mountTinyFishCardReader} from './tinyfish-card-reader.mjs';
-import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
+import {openQuickCardPreview,safeLocalCardUrl,safePreviewImage} from './quick-card-preview.mjs';
+import {currentSpotlightCreative,spotlightCardDestination} from './card-spotlight-creative.mjs';
 /* Shared actions for QuantaPhi quick cards. No browser sign-in implies API permission. */
 const STORE_STARS='quantaPhiCardStarsV1';
 const STORE_COLLECT='quantaPhiCollected';
@@ -15,31 +16,23 @@ function route(card){
  if(card.id&&card.origin==='discovery')return '/quanta-feed-card.html?card='+encodeURIComponent(card.id);
  return location.pathname+location.search;
 }
-function previewUrl(card){return new URL(route(card),location.origin).href}
-function sharePreviewUrl(card,host){
+function previewUrl(card,origin=location.origin){return new URL(route(card),origin).href}
+export function sharePreviewUrl(card,host,{origin=location.origin}={}){
  // Crawler-rendered card-specific metadata; the destination remains the real
  // interactive card, not an external site or a generic homepage banner.
- const target=previewUrl(card),u=new URL('/q-share',location.origin);
- const name=String(card.name||card.title||card.id||'QuantaPhi Quick Card').slice(0,160);
+ const creative=currentSpotlightCreative(host?.closest('article'),card);
+ const target=spotlightCardDestination(previewUrl(card,origin),creative,origin),u=new URL('/q-share',origin);
+ const name=String(creative?.title||card.name||card.title||card.id||'QuantaPhi Quick Card').slice(0,160);
  u.searchParams.set('kind','quick-card');
  u.searchParams.set('title',name);
- u.searchParams.set('text',String(card.shareDescription||card.feature||card.description||card.study||card.details||('Open the '+name+' interactive Quick Card.')).replace(/\s+/g,' ').slice(0,420));
+ u.searchParams.set('text',String(creative?(creative.description||'Explore '+name+' from '+new URL(creative.url).hostname+' on QuantaPhi.'):card.shareDescription||card.feature||card.description||card.study||card.details||('Open the '+name+' interactive Quick Card.')).replace(/\s+/g,' ').slice(0,420));
  u.searchParams.set('dest',target);
- let visual=card.shareImage||card.ogImage||card.previewImage||card.poster||card.image||card.imageUrl||card.mediaSrc||'';
+ let visual=creative?.image||card.shareImage||card.ogImage||card.previewImage||card.poster||card.image||card.imageUrl||card.mediaSrc||'';
  if(!visual){
    const picture=host?.closest('article')?.querySelector('img');
    visual=picture?.currentSrc||picture?.src||'';
  }
- if(visual){
-   try{
-     const image=new URL(visual,location.origin);
-     const cdn=image.hostname==='lsco.scene7.com'&&image.pathname.startsWith('/is/image/');
-     const generic=image.pathname==='/preview.png';
-     if(!generic&&image.protocol==='https:'&&!image.username&&!image.password&&image.href.length<1600&&(/\.(png|jpe?g|webp|gif)$/i.test(image.pathname)||cdn)){
-       u.searchParams.set('image',image.href);
-     }
-   }catch{}
- }
+ const image=safePreviewImage(visual,origin+'/');if(image)u.searchParams.set('image',image);
  return u.href;
 }
 function notify(host,s){host.textContent=s}
@@ -90,18 +83,20 @@ export function mountCardActions(host,card,options={}){
  // The modal contains the original live controls, not screenshots posing as actions.
  if(options.showPreview!==false&&!new URLSearchParams(location.search).has('preview') && safeLocalCardUrl(previewUrl(card),location.origin+'/')){
   b('◫ Preview',()=>{
-   const ok=openQuickCardPreview({url:previewUrl(card),title:name,
-    description:card.shareDescription||card.description||card.feature||card.study||'',
-    image:card.shareImage||card.image||card.poster||card.mediaSrc||'',
-    official:card.official||card.website||'',
+   const creative=currentSpotlightCreative(host?.closest('article'),card);
+   const ok=openQuickCardPreview({url:spotlightCardDestination(previewUrl(card),creative,location.origin),title:creative?.title||name,
+    description:creative?.description||card.shareDescription||card.description||card.feature||card.study||'',
+    image:creative?.image||card.shareImage||card.image||card.poster||card.mediaSrc||'',
+    official:creative?.url||card.official||card.website||'',
     previewMode:card.previewMode});
    if(!ok)notify(status,'This card uses its original full-page viewer.');
   });
  }
  b('↗ Share',async()=>{
   const url=sharePreviewUrl(card,host);
+  const sharedName=new URL(url).searchParams.get('title')||name;
   try{
-   if(navigator.share){await navigator.share({title:name,text:'Explore the '+name+' interactive Quick Card on QuantaPhi',url});notify(status,'Share sheet opened.');return}
+   if(navigator.share){await navigator.share({title:sharedName,text:'Explore the '+sharedName+' interactive Quick Card on QuantaPhi',url});notify(status,'Share sheet opened.');return}
    if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);notify(status,'Quick Card link copied.');return}
   }catch(error){if(error?.name==='AbortError')return notify(status,'Share cancelled.');}
   const field=element('input','qca-copy');field.value=url;field.readOnly=true;field.setAttribute('aria-label','Copy card link');bar.append(field);field.focus();field.select();
