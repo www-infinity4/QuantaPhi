@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-31T20:30:44.864615Z",
+  "checked_at": "2026-10-31T23:48:53.816269Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "islanders",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-31T20:10:00Z",
+      "query": "thunder vs rockets",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-31T23:30:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/edmonton-oilers-new-york-islanders-game-preview-october-31-2026",
-        "https://www.espn.com/video/clip/_/id/50338667/vasily-podkolzin-scores-goal-vs-islanders",
-        "https://oilersnation.com/news/edmonton-oilers-new-york-islanders-game-preview-matthew-schaefer"
+        "https://www.espn.com/nba/story/_/id/50332283/thunder-say-chet-holmgren-8-10-weeks-due-knee",
+        "https://www.nytimes.com/athletic/7740444/2026/10/30/chet-holmgren-injury-okc-thunder/",
+        "https://www.nba.com/news/chet-holmgren-out-8-10-weeks-with-patellar-tendon-tear"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/edmonton-oilers-new-york-islanders-game-preview-october-31-2026",
-          "title": "Oilers at Islanders projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50338667/vasily-podkolzin-scores-goal-vs-islanders",
-          "title": "Vasily Podkolzin scores goal vs. Islanders",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDcY-7kzSy8g7NI0oMokgQgGl1yCAC1B2Hq9Q_juSgYZdwT-fiBwrGh72wJlI"
-        },
-        {
-          "url": "https://oilersnation.com/news/edmonton-oilers-new-york-islanders-game-preview-matthew-schaefer",
-          "title": "Pre-Scout: Oilers start road trip vs. scary Schaefer and his Islanders",
-          "publisher": "Oilers Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9o144df76Xa_w81LFKWxaM0kX_6YyDqets5LZ2Yf87UNRVG_9-N50MX-hbRw"
-        }
-      ]
-    },
-    {
-      "query": "porto vs estoril",
-      "approx_searches": "500+",
-      "published_at": "2026-10-31T20:10:00Z",
-      "related_news_urls": [
-        "https://www.abola.pt/futebol/jogo/fc-porto-estoril-11216338/liveblog",
-        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-fc-porto-pode-ser-sexta-equipa-a-vencer-os-10-primeiros-jogos-na-historia-da-liga/AgI0lzQ0/",
-        "https://observador.pt/liveblogs/fc-porto-estoril-farioli-volta-ao-onze-inicial-normal-e-deixa-os-tres-centrais/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt6RIagNZyjcUa47w6HKroC0TgDR7tC792dfZcLxSVvPZEc8QMHs3AAW7sn3I",
-      "image_credit": "A Bola",
-      "news": [
-        {
-          "url": "https://www.abola.pt/futebol/jogo/fc-porto-estoril-11216338/liveblog",
-          "title": "FC Porto-Estoril: extremos tocam-se para a 10.ª jornada da Liga",
-          "publisher": "A Bola",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt6RIagNZyjcUa47w6HKroC0TgDR7tC792dfZcLxSVvPZEc8QMHs3AAW7sn3I"
-        },
-        {
-          "url": "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-fc-porto-pode-ser-sexta-equipa-a-vencer-os-10-primeiros-jogos-na-historia-da-liga/AgI0lzQ0/",
-          "title": "FC Porto pode ser sexta equipa a vencer os 10 primeiros jogos na história da Liga",
-          "publisher": "Flashscore.pt",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrQ7KvYdm-gA2CApGzcelQAkCmDBiY_rD96TGYrlduBD_Qgc50Z5rJX_I0XL4"
-        },
-        {
-          "url": "https://observador.pt/liveblogs/fc-porto-estoril-farioli-volta-ao-onze-inicial-normal-e-deixa-os-tres-centrais/",
-          "title": "Em direto/ FC Porto-Estoril. Farioli volta ao onze inicial normal e deixa os três centrais",
-          "publisher": "Observador",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKMV3adrpl3WPlo-v55hG6a7NNss5E3IvNzG918GKad1O78HEWTZ2Bea0n4fA"
-        }
-      ]
-    },
-    {
-      "query": "emmitt smith",
-      "approx_searches": "200+",
-      "published_at": "2026-10-31T20:10:00Z",
-      "related_news_urls": [
-        "https://floridagators.com/news/2026/10/30/football-maurkice-pouncey-emmitt-smith-inducted-into-florida-georgia-hall-of-fame",
-        "https://sports.yahoo.com/articles/emmitt-smith-daughters-share-shoutouts-155259895.html",
-        "https://gatorswire.usatoday.com/story/sports/college/gators/football/2026/10/30/florida-football-emmitt-smith-maurkice-pouncey-florida-georgia-hall-of-fame-induction/92522442007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaOhiGtMweomiYaGnWs1BuXT9vL3tyBeiUzhLMAo0ZZVbjHfRRahhuop1-5cc",
-      "image_credit": "Florida Gators",
-      "news": [
-        {
-          "url": "https://floridagators.com/news/2026/10/30/football-maurkice-pouncey-emmitt-smith-inducted-into-florida-georgia-hall-of-fame",
-          "title": "Maurkice Pouncey, Emmitt Smith Inducted into Florida-Georgia Hall of Fame",
-          "publisher": "Florida Gators",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaOhiGtMweomiYaGnWs1BuXT9vL3tyBeiUzhLMAo0ZZVbjHfRRahhuop1-5cc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/emmitt-smith-daughters-share-shoutouts-155259895.html",
-          "title": "Emmitt Smith’s Daughters Share Shoutouts as Cowboys Legend Gets Georgia-Florida Hall of Fame Honor",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt7Aa27GW5_I61wNwRzM04rj2Swu-gkLpSi-CijLYVX3mHGSv09RIt56s0xIU"
-        },
-        {
-          "url": "https://gatorswire.usatoday.com/story/sports/college/gators/football/2026/10/30/florida-football-emmitt-smith-maurkice-pouncey-florida-georgia-hall-of-fame-induction/92522442007/",
-          "title": "Emmitt Smith, Maurkice Pouncey inducted into Florida-Georgia Hall of Fame",
-          "publisher": "Gators Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-bSt5peERnjOvK4onsVJcMnfytewGMzP0i7EwQjsbgCMXDMXHrcOg4nl1K7M"
-        }
-      ]
-    },
-    {
-      "query": "tatum o'neal",
-      "approx_searches": "500+",
-      "published_at": "2026-10-31T20:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/entertainment/tatum-oneal-steps-out-family-ahead-63rd-birthday-years-after-near-fatal-stroke",
-        "https://www.syracuse.com/entertainment/2026/10/actress-62-makes-rare-public-appearance-six-years-after-near-fatal-overdose-stroke.html",
-        "https://www.eonline.com/news/1437598/tatum-oneal-makes-rare-l-a-outing-6-years-after-stroke-overdose-photo"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThvimPLH5kYVFx1_cY3yUlNpw2Yb-tQtQOhEV1RDn1I3V9B_8AT1HCwYVyeYM",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/entertainment/tatum-oneal-steps-out-family-ahead-63rd-birthday-years-after-near-fatal-stroke",
-          "title": "Tatum O'Neal steps out with family ahead of 63rd birthday years after near-fatal stroke",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThvimPLH5kYVFx1_cY3yUlNpw2Yb-tQtQOhEV1RDn1I3V9B_8AT1HCwYVyeYM"
-        },
-        {
-          "url": "https://www.syracuse.com/entertainment/2026/10/actress-62-makes-rare-public-appearance-six-years-after-near-fatal-overdose-stroke.html",
-          "title": "Actress, 62, makes rare public appearance six years after near-fatal overdose, stroke",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBcySVopYlfJqxiSXYbMR8RJB4L5xDwR7NA2Uqlrq4bC9NU7km76RNs_rG_DE"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437598/tatum-oneal-makes-rare-l-a-outing-6-years-after-stroke-overdose-photo",
-          "title": "Tatum O'Neal Makes Rare Outing 6 Years After Near-Fatal Stroke",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIPhTpvv-2fdg9QiIx4YtN321JALnvZVlYs1qlpy8x0chfrC6E5wbSXlix89I"
-        }
-      ]
-    },
-    {
-      "query": "zendaya and tom holland",
-      "approx_searches": "500+",
-      "published_at": "2026-10-31T20:00:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66086893/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/celebrity/articles/tom-holland-brother-two-very-102239132.html",
-        "https://metro.co.uk/2026/10/30/tom-hollands-brother-sam-surprise-career-wows-viewers-tv-appearance-29752486/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLoYU_gn0d-Cu6-4_QTzSvncbSESDPzvaiFrgALBiHdolOr1K8RF4mFE6fD9Y",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66086893/?ref_=nwc_art_perm",
-          "title": "Tom Holland’s Brother Sam Refers to Zendaya as ‘Lovely Sister-In-Law’ In His ‘Cooking with the Stars’ Intro",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLoYU_gn0d-Cu6-4_QTzSvncbSESDPzvaiFrgALBiHdolOr1K8RF4mFE6fD9Y"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/tom-holland-brother-two-very-102239132.html",
-          "title": "Tom Holland’s Brother Has Two Very Sweet Words for Zendaya",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSalBikMVuxAGPKdKJ5d5iIdKQbkz8esXbZ8GDA5Iyj-o9fFqyGtFDSdR25CJE"
-        },
-        {
-          "url": "https://metro.co.uk/2026/10/30/tom-hollands-brother-sam-surprise-career-wows-viewers-tv-appearance-29752486/",
-          "title": "Tom Holland’s brother Sam with surprise career wows viewers in TV appearance",
-          "publisher": "Metro.co.uk",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNhxiJPfj4BswsZheQTC3ppLuStf7jAEwyf0AUVcmP5pfjmcX_BQk5d4I4VNU"
-        }
-      ]
-    },
-    {
-      "query": "ajax vs az",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-31T20:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/boxscore/_/gameId/401859185",
-        "https://www.espn.com/nhl/recap/_/gameId/401892615",
-        "https://www.espn.com/soccer/odds/_/gameId/401915387"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJZ0gWYXrdnj6OSfsZZM6vP8s-exwkz_2aopL1Cupqrk-jTqo1ro9MHU00PoM",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7Eq2RLMI015aY99OdlbpL87_qw4W9PLYjqQ0XnMVbdnoEm0TLGFXZJrNbIvU",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/boxscore/_/gameId/401859185",
-          "title": "Notre Dame 35-13 Navy (Oct 31, 2026) Box Score",
+          "url": "https://www.espn.com/nba/story/_/id/50332283/thunder-say-chet-holmgren-8-10-weeks-due-knee",
+          "title": "Thunder's Chet Holmgren out 8-10 weeks; OKC flips on Agbaji signing, per sources",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJZ0gWYXrdnj6OSfsZZM6vP8s-exwkz_2aopL1Cupqrk-jTqo1ro9MHU00PoM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7Eq2RLMI015aY99OdlbpL87_qw4W9PLYjqQ0XnMVbdnoEm0TLGFXZJrNbIvU"
         },
         {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892615",
-          "title": "Blues 5-4 Red Wings (Oct 31, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.nytimes.com/athletic/7740444/2026/10/30/chet-holmgren-injury-okc-thunder/",
+          "title": "Thunder’s Chet Holmgren to miss 8-10 weeks with knee injury",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSohTRj-1JlA_Pp2zUxmfvsEFQu5JkiiJbkAfJrSwSu5HFZgovOy_Or75VJs7Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG4dAUhOzrFf2J4U55QyegEx0Ikx853t_UkvDxGI7qC9CBfOn5UWycW8wTBAE"
         },
         {
-          "url": "https://www.espn.com/soccer/odds/_/gameId/401915387",
-          "title": "Barcelona vs. Aston Villa (Nov 3, 2026) Odds and Spread",
-          "publisher": "ESPN",
+          "url": "https://www.nba.com/news/chet-holmgren-out-8-10-weeks-with-patellar-tendon-tear",
+          "title": "Chet Holmgren out 8-10 weeks with patellar tendon tear",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjK82XQqVcJm7Au6WzZaLNdNMN0d9tiB6tX7eFMcgHgD01CkJgCF8mBLNt0Bc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT70poVjdFMYWMdIGWblfgDBAllbaQ4pJ7tDMF6tLbi4B460xz6VcrD9_aTnKo"
         }
       ]
     },
     {
-      "query": "isaiah marshall",
-      "approx_searches": "500+",
-      "published_at": "2026-10-31T19:50:00Z",
+      "query": "trent mosley",
+      "approx_searches": "200+",
+      "published_at": "2026-10-31T23:30:00Z",
       "related_news_urls": [
-        "https://www2.kusports.com/sports/college/basketball-women/2026/oct/29/marshall-declared-questionable-for-saturdays-game-against-tcu/",
-        "https://sports.yahoo.com/articles/isaiah-marshall-play-quarterback-kansas-180553624.html",
-        "https://247sports.com/college/kansas/article/cole-ballard-kansas-football-quarterback-starting-291978618/"
+        "https://roundtable.io/sports/ncaa/usc/video/usc-football-has-the-best-freshman-receiver-in-the-nation-per-pff",
+        "https://roundtable.io/sports/ncaa/usc/video/uscs-mosley-receives-another-midseason-honor-as-a-return-man",
+        "https://roundtable.io/sports/ncaa/usc/video/kayden-dixon-wyatt-is-usc-footballs-other-star-freshman-receiver"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFb4pmoo5srtZ6wTxZSAGTaYVTFfZxyZVyZ2Ks2ph7fLJtSCjByItbXPX82pc",
-      "image_credit": "KU Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPb6tLrrfzOTm65Y0WD2BA8hqCF9uF2mEuoGyolAUDy1dKxIr6PV0YKtO1dU",
+      "image_credit": "roundtable.io",
       "news": [
         {
-          "url": "https://www2.kusports.com/sports/college/basketball-women/2026/oct/29/marshall-declared-questionable-for-saturdays-game-against-tcu/",
-          "title": "Marshall declared questionable for Saturday’s game against TCU",
-          "publisher": "KU Sports",
+          "url": "https://roundtable.io/sports/ncaa/usc/video/usc-football-has-the-best-freshman-receiver-in-the-nation-per-pff",
+          "title": "Video - USC Football Has the Best Freshman Receiver in the Nation Per PFF",
+          "publisher": "roundtable.io",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFb4pmoo5srtZ6wTxZSAGTaYVTFfZxyZVyZ2Ks2ph7fLJtSCjByItbXPX82pc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPb6tLrrfzOTm65Y0WD2BA8hqCF9uF2mEuoGyolAUDy1dKxIr6PV0YKtO1dU"
         },
         {
-          "url": "https://sports.yahoo.com/articles/isaiah-marshall-play-quarterback-kansas-180553624.html",
-          "title": "Will Isaiah Marshall play at quarterback for Kansas football vs TCU?",
-          "publisher": "Yahoo Sports",
+          "url": "https://roundtable.io/sports/ncaa/usc/video/uscs-mosley-receives-another-midseason-honor-as-a-return-man",
+          "title": "Video - USC's Mosley Receives Another Midseason Honor As a Return Man",
+          "publisher": "roundtable.io",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv_LlndTN75oV61E5vM7onacR9vlMiEj2l80KWTc7wuonl-JskGmwp3-1jpgs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTexMwdobWqV2-XZXPhU79VGsT09haeyuA3ppUn-9lDSI4DZyJzdjIKrqVG77U"
         },
         {
-          "url": "https://247sports.com/college/kansas/article/cole-ballard-kansas-football-quarterback-starting-291978618/",
-          "title": "Cole Ballard set to start at QB against TCU",
-          "publisher": "247Sports",
+          "url": "https://roundtable.io/sports/ncaa/usc/video/kayden-dixon-wyatt-is-usc-footballs-other-star-freshman-receiver",
+          "title": "Video - Kayden Dixon-Wyatt is USC Football's Other Star Freshman Receiver",
+          "publisher": "roundtable.io",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9Vt68cRjTuq4MyOBlH4HMEMcpeCVMs5D2Pg-wzfx7hQMHTX-iBYTDDNGVZH8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTA-ExfSOZw3k9n_AD2KyOa1un0_sL-c9l5ELoEKz7wflfS3cIqdiWJ7e4S714"
         }
       ]
     },
     {
-      "query": "keyonte george",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-31T19:50:00Z",
+      "query": "friday the 13th movies",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T23:30:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/nhl/gametracker/boxscore/NHL_20261031_STL@DET/",
-        "https://www.poundingtherock.com/spurs-analysis/109041/what-we-learned-from-the-spurs-win-over-the-jazz",
-        "https://www.expressnews.com/sports/spurs/article/wemby-joined-elite-company-big-game-utah-22502296.php"
+        "https://comicbook.com/movies/news/roger-ebert-and-gene-siskel-hated-one-franchise-more-than-any-other-and-its-first-movie-is-a-free-streaming-hit-46-years-later/",
+        "https://www.aol.com/articles/critics-best-friday-13th-film-194958000.html",
+        "https://filmhounds.co.uk/2026/10/31/friday-the-13th-4k-film-review/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLoMNn4pPV7pvQ9AqrPJPjl1vq7WT0ujN7ehW_R4iNJJqTnOVcOBe4XYn_ncc",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4RsewQtAVX7AGHK3ocx51UhKs1bR_LwAfS9IWItgFUe5aqB1_vvdb3gA3MVM",
+      "image_credit": "ComicBook.com",
+      "news": [
+        {
+          "url": "https://comicbook.com/movies/news/roger-ebert-and-gene-siskel-hated-one-franchise-more-than-any-other-and-its-first-movie-is-a-free-streaming-hit-46-years-later/",
+          "title": "Roger Ebert and Gene Siskel Hated One Franchise More Than Any Other, and Its First Movie Is a Free Streaming Hit 46 Years Later",
+          "publisher": "ComicBook.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4RsewQtAVX7AGHK3ocx51UhKs1bR_LwAfS9IWItgFUe5aqB1_vvdb3gA3MVM"
+        },
+        {
+          "url": "https://www.aol.com/articles/critics-best-friday-13th-film-194958000.html",
+          "title": "Critics Say the Best Friday the 13th Film Is the One Without Jason in a Hockey Mask",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOH0cYjuvVe_9hvCirJt-qlN6KCnjxzO2BiL6pbmcjvZjZLDE8A5NAp8kBKe4"
+        },
+        {
+          "url": "https://filmhounds.co.uk/2026/10/31/friday-the-13th-4k-film-review/",
+          "title": "Friday The 13th (4K Review) — Jason’s Subtle Era",
+          "publisher": "FILMHOUNDS Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6hs-W8JlbkDOHAsvO7KQTZiVF6AURhJD7QKIr6f3_2GdfeQkyDIyxu8-bBTY"
+        }
+      ]
+    },
+    {
+      "query": "bill murray",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-31T23:30:00Z",
+      "related_news_urls": [
+        "https://people.com/bill-murray-a-course-called-ireland-docuseries-12203071",
+        "https://www.wsj.com/arts-culture/television/a-course-called-ireland-review-bill-murray-on-the-green-in-the-emerald-isle-6451f0df",
+        "https://www.theguardian.com/tv-and-radio/2026/oct/24/a-course-called-ireland-bill-murray-clearly-hated-making-his-new-golfing-show-but-its-extremely-fun-to-binge"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyOY3lTPGwA0IPbixQJ2Oi1Ytrd603NnWs5P6ezcq1sTyG33HEZCqYaqlTrZI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/bill-murray-a-course-called-ireland-docuseries-12203071",
+          "title": "Why Bill Murray Misses the Autograph ‘Era’ and More Surprising Revelations From His New Golf Documentary",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyOY3lTPGwA0IPbixQJ2Oi1Ytrd603NnWs5P6ezcq1sTyG33HEZCqYaqlTrZI"
+        },
+        {
+          "url": "https://www.wsj.com/arts-culture/television/a-course-called-ireland-review-bill-murray-on-the-green-in-the-emerald-isle-6451f0df",
+          "title": "‘A Course Called Ireland’ Review: Bill Murray, on the Green in the Emerald Isle",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVgnO65bX5l4sg_guY4Ko7_ocwnyNYhbwf6hMXc4ysxkVrsCR6zsjTkzZvUeo"
+        },
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/oct/24/a-course-called-ireland-bill-murray-clearly-hated-making-his-new-golfing-show-but-its-extremely-fun-to-binge",
+          "title": "A Course Called Ireland: Bill Murray clearly hated making his new golfing show – but it’s extremely fun to binge",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiaEBlnCQh3Dk8_p_IYXBnWmNkT7Ql2BKstl4lbXzAsPhIdyknJEEufROtVng"
+        }
+      ]
+    },
+    {
+      "query": "wnba game",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-31T23:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/wnba/story/_/id/50331173/finals-2026-game-7-historic-first-atlanta-valkyries",
+        "https://www.cbsnews.com/sanfrancisco/news/valkyries-fan-excitement-game-7-wnba-finals-atlanta-dream/",
+        "https://sports.yahoo.com/wnba/betting/article/wnba-finals-odds-pick-prediction-best-bets-for-dream-valkyries-game-7-142209232.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8VavuoHxfLGDbnxDK8j0dMf7-nigeEGiQtw7DwZztClR9_PcO04eyQEmceVY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/wnba/story/_/id/50331173/finals-2026-game-7-historic-first-atlanta-valkyries",
+          "title": "First Game 7 in WNBA history will decide first title for Dream or Valkyries",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8VavuoHxfLGDbnxDK8j0dMf7-nigeEGiQtw7DwZztClR9_PcO04eyQEmceVY"
+        },
+        {
+          "url": "https://www.cbsnews.com/sanfrancisco/news/valkyries-fan-excitement-game-7-wnba-finals-atlanta-dream/",
+          "title": "Golden State Valkyries fans thrilled for Halloween day Game 7 against Atlanta Dream",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrDf3BXh5PpKbIMmW-yDkcRvWE1zHPZJCMoGyjYhhu__KeyNPs-_8WbyLTDbM"
+        },
+        {
+          "url": "https://sports.yahoo.com/wnba/betting/article/wnba-finals-odds-pick-prediction-best-bets-for-dream-valkyries-game-7-142209232.html",
+          "title": "WNBA Finals odds, pick, prediction: Best bets for Dream-Valkyries Game 7",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8tZ6PW7wo2_YlO4I0bXkNILlYeIyuE0EeSGlUr4jgSsMa0wkZQJcTMlqycUM"
+        }
+      ]
+    },
+    {
+      "query": "inde navarrette",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-31T23:20:00Z",
+      "related_news_urls": [
+        "https://www.nbc.com/nbc-insider/snl-new-tonight-october-31-host-musical-guest",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/10/31/inde-navarrette-gracie-abrams-snl-halloween-show/92502095007/",
+        "https://people.com/is-snl-new-tonight-what-to-know-about-fourth-episode-season-52-inde-navarrette-gracie-abrams-12194168"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0",
+      "image_credit": "NBC TV",
+      "news": [
+        {
+          "url": "https://www.nbc.com/nbc-insider/snl-new-tonight-october-31-host-musical-guest",
+          "title": "Is SNL New Tonight, October 31, 2026? About This Week's Host & Musical Guest",
+          "publisher": "NBC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/10/31/inde-navarrette-gracie-abrams-snl-halloween-show/92502095007/",
+          "title": "'SNL' reveals host, musical guest ahead of Halloween show. Guess who?",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGVRDAM2dOSW-HDZGRwIOrpljsq_SpImNklozowtARKou2YhvnongKiR-EJBI"
+        },
+        {
+          "url": "https://people.com/is-snl-new-tonight-what-to-know-about-fourth-episode-season-52-inde-navarrette-gracie-abrams-12194168",
+          "title": "Is ‘SNL’ New Tonight? What to Know About the Fourth Episode of Season 52",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQviOXg51QS2N3seaR-iSVxiTfiIJDCQyEyw9wZOrwH-oicOUZfEAiQyQEx7L8"
+        }
+      ]
+    },
+    {
+      "query": "big ten football standings",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T23:20:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-8-ohio-state-ucla/",
+        "https://www.indystar.com/story/sports/college/indiana/2026/10/27/big-ten-football-power-rankings-see-michigan-iowa-usc-slide/92443582007/",
+        "https://247sports.com/college/ohio-state/article/ohio-state-football-no-1-in-big-ten-power-rankings-cbs-sports-291905761/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP0p33hFXX5ZDByVi0fEmgrKmahCivdZ8evZlC998ezQICMt8JseSfhlaXD2o",
       "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.cbssports.com/nhl/gametracker/boxscore/NHL_20261031_STL@DET/",
-          "title": "St. Louis Blues vs. Detroit Red Wings Box Score & Stats - October 31, 2026",
+          "url": "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-8-ohio-state-ucla/",
+          "title": "Big Ten Power Rankings, Week 9: Ohio State and UCLA lead way, but uncertainty remains",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLoMNn4pPV7pvQ9AqrPJPjl1vq7WT0ujN7ehW_R4iNJJqTnOVcOBe4XYn_ncc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP0p33hFXX5ZDByVi0fEmgrKmahCivdZ8evZlC998ezQICMt8JseSfhlaXD2o"
         },
         {
-          "url": "https://www.poundingtherock.com/spurs-analysis/109041/what-we-learned-from-the-spurs-win-over-the-jazz",
-          "title": "What we learned from the Spurs win over the Jazz",
-          "publisher": "Pounding The Rock",
+          "url": "https://www.indystar.com/story/sports/college/indiana/2026/10/27/big-ten-football-power-rankings-see-michigan-iowa-usc-slide/92443582007/",
+          "title": "Big Ten football power rankings look at best-case scenarios for each time",
+          "publisher": "IndyStar",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnxIKnP_zGanbUSlL-kR4DhIkV2vChooVVczXnOPdWUnCyQydFXRj9RYB0L2M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm1s3dxo8mul3WOePL8Ud4R5fX0dgBzzW3qVdGotlPuf8MvOfLqOslu9xEHIQ"
         },
         {
-          "url": "https://www.expressnews.com/sports/spurs/article/wemby-joined-elite-company-big-game-utah-22502296.php",
-          "title": "Spurs star Victor Wembyanyama joined elite company with big game in Utah",
-          "publisher": "San Antonio Express-News",
+          "url": "https://247sports.com/college/ohio-state/article/ohio-state-football-no-1-in-big-ten-power-rankings-cbs-sports-291905761/",
+          "title": "Ohio State No. 1 in Big Ten Power Rankings | Indiana No. 4? Michigan No. 14?",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEwcP-BGigWsnH-HOWJSzJP5uF3n-zGCdTlARkyVEePF0LBdm0jkGyDmqBG6Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw5xgRVG5RxGCmT9hlfTwBVy2oGGry-yx8EsWAVIU1pHR-kxEgEI61uk5hQvU"
         }
       ]
     },
     {
-      "query": "sweepstake",
-      "approx_searches": "500+",
-      "published_at": "2026-10-31T19:50:00Z",
-      "related_news_urls": [
-        "https://www.mlive.com/sweepstakes-casinos/2026/10/new-social-casinos-5-sites-our-team-is-backing-this-spooky-weekend.html",
-        "https://www.rotowire.com/news/stakeus-promo-code-rotowire-get-250k-gc-25-sc-for-october-31-144743",
-        "https://africa.businessinsider.com/local/top-social-casino-sign-up-bonuses-in-the-us-best-welcome-offers-for-2026/d2n03zw"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4Tq15eouyWodeJBlFE9fNY7J0H9-fv0-vpzyB4nouZfT3DLZqf_Ac7A2OUSY",
-      "image_credit": "MLive.com",
-      "news": [
-        {
-          "url": "https://www.mlive.com/sweepstakes-casinos/2026/10/new-social-casinos-5-sites-our-team-is-backing-this-spooky-weekend.html",
-          "title": "New social casinos: 5 sites our team is backing this spooky weekend",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4Tq15eouyWodeJBlFE9fNY7J0H9-fv0-vpzyB4nouZfT3DLZqf_Ac7A2OUSY"
-        },
-        {
-          "url": "https://www.rotowire.com/news/stakeus-promo-code-rotowire-get-250k-gc-25-sc-for-october-31-144743",
-          "title": "Stake.us Promo Code ROTOWIRE: 250,000 GC + $25 SC Today!",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR1ETXQMh3iMsekHFEqUrrwNfx5MKwZ7auX_SD6XooC9NmR8cLJawr3PEa948"
-        },
-        {
-          "url": "https://africa.businessinsider.com/local/top-social-casino-sign-up-bonuses-in-the-us-best-welcome-offers-for-2026/d2n03zw",
-          "title": "Top social casino sign-up bonuses in the US: best welcome offers for 2026",
-          "publisher": "Business Insider Africa",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3b7zpAH6rtXmSX4z8jP5pN5sQZdzooIPIdV3ClU34a5njALIA6f0X1PFUOr8"
-        }
-      ]
-    },
-    {
-      "query": "pj fleck",
+      "query": "jessica lange",
       "approx_searches": "200+",
-      "published_at": "2026-10-31T19:50:00Z",
+      "published_at": "2026-10-31T23:20:00Z",
       "related_news_urls": [
-        "https://www.footballscoop.com/2026/10/29/playoff-push-minnesota-pj-fleck-indiana-rivalry-trophies-iowa-wisconsin-michigan",
-        "https://www.thedailygopher.com/minnesota-golden-gophers-football/41422/the-monday-perspective-can-get-used-to-that",
-        "https://blackpressusa.com/gopher-football-can-they-rekindle-2019-magic-or-are-they-just-average-shorts/"
+        "https://www.yahoo.com/entertainment/tv/articles/jessica-lange-thinks-her-acting-202102573.html",
+        "https://deadline.com/2026/10/jessica-lange-retirement-1237210656/",
+        "https://www.rollingstone.com/tv-movies/tv-movie-features/jessica-lange-american-horror-story-interview-1235648802/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3gXHhVuEuEYdCsFYEogwZNS1v9U-b4_5YDg-60DPIwQE6vNdb_F44OHsE0F8",
-      "image_credit": "FootballScoop.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ3ew7EGtC9ABGjAeti2Gv41zgevcGK_lTM08vHzw_1bJHlgMKgOhUq2Clk2w",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.footballscoop.com/2026/10/29/playoff-push-minnesota-pj-fleck-indiana-rivalry-trophies-iowa-wisconsin-michigan",
-          "title": "Playoff Push: PJ Fleck, Minnesota playing for history and more",
-          "publisher": "FootballScoop.com",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/jessica-lange-thinks-her-acting-202102573.html",
+          "title": "Jessica Lange Thinks Her Acting Career Is About Over: ‘Maybe It’s Not a Bad Way to End’",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3gXHhVuEuEYdCsFYEogwZNS1v9U-b4_5YDg-60DPIwQE6vNdb_F44OHsE0F8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ3ew7EGtC9ABGjAeti2Gv41zgevcGK_lTM08vHzw_1bJHlgMKgOhUq2Clk2w"
         },
         {
-          "url": "https://www.thedailygopher.com/minnesota-golden-gophers-football/41422/the-monday-perspective-can-get-used-to-that",
-          "title": "The Monday Perspective can get used to that.",
-          "publisher": "The Daily Gopher",
+          "url": "https://deadline.com/2026/10/jessica-lange-retirement-1237210656/",
+          "title": "Jessica Lange Says Acting Career Might Be \"Coming To An End\"",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9dXN1USy7NOVL7YUot8xBIFpfwwsD4uk1v_3SbGjfVBJt-I_51K0nXgQGs18"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjbBlMpwQGCgDhMQbE5Vcox6RFlQC4SdHSiVv-CvkobCfwttRaL803hZWge1k"
         },
         {
-          "url": "https://blackpressusa.com/gopher-football-can-they-rekindle-2019-magic-or-are-they-just-average-shorts/",
-          "title": "Gopher Football: Can They Rekindle 2019 Magic Or Are They Just Average? #shorts",
-          "publisher": "BlackPressUSA",
+          "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/jessica-lange-american-horror-story-interview-1235648802/",
+          "title": "Jessica Lange Thinks She Might Have Made Her Last Film: ‘It All Was a Great Adventure’",
+          "publisher": "Rolling Stone",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8tOfSbIZwhjEunuh4NPLA_J-G-pww33EzU45WIfnPO81v7EmmcIHU53ElS1o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9_ZyNg8ynRU59MMuGKfaGUfhXpHx7Iq2aiGpfFxOOyHWpHDluOOhMP7NUrDk"
+        }
+      ]
+    },
+    {
+      "query": "u of u football",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T23:20:00Z",
+      "related_news_urls": [
+        "https://www.sltrib.com/sports/utah-utes/2026/10/30/why-this-3-star-recruit-texas-felt/",
+        "https://www.on3.com/teams/utah-utes/news/utah-football-game-balls-tricks-and-treats-edition/",
+        "https://www.usatoday.com/sports/ncaaf/event/2026/2968816/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=8"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRr7rR0BRvIrggDVoT_M_N2DgvZvOj5TV3_Pu8YyNOfIoEZsWGnTsMJrau-ao",
+      "image_credit": "The Salt Lake Tribune",
+      "news": [
+        {
+          "url": "https://www.sltrib.com/sports/utah-utes/2026/10/30/why-this-3-star-recruit-texas-felt/",
+          "title": "Why this Texas recruit chose Utah football over Northwestern, Baylor and Houston",
+          "publisher": "The Salt Lake Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRr7rR0BRvIrggDVoT_M_N2DgvZvOj5TV3_Pu8YyNOfIoEZsWGnTsMJrau-ao"
+        },
+        {
+          "url": "https://www.on3.com/teams/utah-utes/news/utah-football-game-balls-tricks-and-treats-edition/",
+          "title": "Utah Football Game Balls: Tricks and Treats Edition",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKKIvRMUH_V4JjcNVfVzVQheXtdEIokzxxm0KL6d-pEpxtfg6OQD058RRyb_M"
+        },
+        {
+          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2968816/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=8",
+          "title": "Utah Utes at Cincinnati Bearcats - NCAAF Game Summary - Oct 31, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ-vX-XNvf5liaxRXAe0VTpEwb-nl6WWuhhFVwn1VeOEKdFHT3EZklMqQZZ08"
+        }
+      ]
+    },
+    {
+      "query": "tennis",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-31T23:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50338909/valentin-vacherot-meet-jiri-lehecka-swiss-indoors-final",
+        "https://www.atptour.com/en/news/vacherot-fritz-basel-2026-saturday",
+        "https://sports.yahoo.com/articles/vacherot-meet-lehecka-swiss-indoors-194421412.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPx2HvmTYB7rpucOVkR6GSKNRh3dlM5ZhJKOAAlF2Zm4Bt1Hqr0PuyDlfNvVI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50338909/valentin-vacherot-meet-jiri-lehecka-swiss-indoors-final",
+          "title": "Valentin Vacherot to meet Jiri Lehecka in Swiss Indoors final",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPx2HvmTYB7rpucOVkR6GSKNRh3dlM5ZhJKOAAlF2Zm4Bt1Hqr0PuyDlfNvVI"
+        },
+        {
+          "url": "https://www.atptour.com/en/news/vacherot-fritz-basel-2026-saturday",
+          "title": "Vacherot upsets Fritz, Lehecka saves MP to reach Basel final",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkJULYXj_oEe4wk87Dt6hh-tVdOZ4CgT29vuvHTDv6yxlBtHbrJWy5mCO_b7s"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/vacherot-meet-lehecka-swiss-indoors-194421412.html",
+          "title": "Vacherot to meet Lehecka in the Swiss Indoors tennis final",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnuzfrHY-8D1U-Ehr2oTem1Mz2NuonyDBtyvgsvwi9cFn5oT5s3biBKVP9qp8"
         }
       ]
     }
