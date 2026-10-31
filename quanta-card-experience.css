@@ -193,3 +193,20 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qca-website-receipt{display:block;margin:8px 0;color:#50667a;overflow-wrap:anywhere}
 .qca-website-reader :is(button,a):focus-visible{outline:3px solid #0070ba;outline-offset:2px}
 .qca-website-reader .qca-button{min-height:44px;white-space:normal}
+
+/* Semantic Quick Card footer buttons: same Infinity shape, color reflects the actual action.
+ * Follow/Star/Collect persist locally; Share invokes the real share sheet, Build drafts a request.
+ * Do not imply wallet minting, provider authorization or automatic publishing. */
+.qca-toolbar .qca-controls>.qca-button[data-action]{box-sizing:border-box;min-height:48px;border-radius:12px;padding:10px 7px;font:800 13px/1.3 system-ui,sans-serif;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.qca-toolbar .qca-controls>.qca-button[data-action="follow"]{background:#e7f3ff;border-color:#86b8e0;color:#104e83}
+.qca-toolbar .qca-controls>.qca-button[data-action="follow"][aria-pressed="true"]{background:#cce9fd;border-color:#2678b0;color:#0a4776}
+.qca-toolbar .qca-controls>.qca-button[data-action="star"]{background:#fff3d4;border-color:#d6b45a;color:#6a4700}
+.qca-toolbar .qca-controls>.qca-button[data-action="star"][aria-pressed="true"]{background:#fbe2a0;border-color:#ad7a12;color:#503400}
+.qca-toolbar .qca-controls>.qca-button[data-action="collect"]{background:#e6f7ee;border-color:#82bda0;color:#186043}
+.qca-toolbar .qca-controls>.qca-button[data-action="collect"][aria-pressed="true"]{background:#ccead9;border-color:#389366;color:#0f5237}
+.qca-toolbar .qca-controls>.qca-button[data-action="preview"]{background:#e8f5f8;border-color:#94c4d2;color:#155771}
+.qca-toolbar .qca-controls>.qca-button[data-action="share"]{background:#1d405f;border-color:#1d405f;color:#fff}
+.qca-toolbar .qca-controls>.qca-button[data-action="build"]{background:#fff0da;border-color:#d7a76b;color:#844716}
+.qca-toolbar .qca-controls>.qca-button[data-action]:hover{filter:brightness(.95)}
+.qca-toolbar .qca-controls>.qca-button[data-action]:focus-visible{outline:3px solid #e2a23a;outline-offset:3px}
+@media(max-width:380px){.qca-toolbar .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}

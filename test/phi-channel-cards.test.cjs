@@ -56,16 +56,27 @@ test('one active TV screen can be played and switched with genuine media element
  }
  const root=new Element('section'),listeners={};
  const document={getElementById:id=>id==='phiChannelCards'?root:null,createElement:tag=>new Element(tag),
-  head:new Element('head'),addEventListener:(kind,callback)=>listeners[kind]=callback,hidden:false};
+  head:new Element('head'),addEventListener:(kind,callback)=>listeners[kind]=callback,dispatchEvent:event=>listeners[event.type]?.(event),hidden:false};
  const window={PhiTVPrograms:programs,YT:{Player:class{stopVideo(){}destroy(){}unMute(){}setVolume(){}playVideo(){}}},
   addEventListener:(kind,cb)=>listeners[kind]=cb};
- const context={document,window,location:{origin:'https://quantaphi.org'},URL,setTimeout,clearTimeout};
+ const context={document,window,location:{origin:'https://quantaphi.org'},URL,setTimeout,clearTimeout,CustomEvent:class{constructor(type,{detail}){this.type=type;this.detail=detail}}};
  vm.runInNewContext(code,context);
  const all=n=>[n,...n.children.flatMap(all)];
  const cards=all(root).filter(n=>n.tagName==='article');
- assert.equal(cards.length,4);
- const star=cards[0],omni=cards[1],chiller=cards[2],shop=cards[3];
+ assert.equal(cards.length,5);
+ const [kyou,star,omni,chiller,shop]=cards;
  const btn=(card,c)=>all(card).find(n=>n.className===c);
+ root.handlers['oracle:activate']();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
+ assert.match(all(kyou).find(x=>x.tagName==='iframe').src,/^https:\/\/www\.kyoutv\.com\/livestream\/\?utm_source=quantaphi/);
+ const kyouControls=all(kyou).find(x=>x.className.includes('channelphi-kyou-controls'));
+ assert.equal(kyouControls.children.length,3,'KYOU shows only Refresh, Station Website and Stop');
+ assert.equal(btn(kyou,'channelphi-sound'),undefined,'KYOU volume is controlled in the publisher iframe');
+ assert.match(btn(kyou,'channelphi-prev').textContent,/Refresh station/);
+ assert.match(btn(kyou,'channelphi-next').textContent,/KYOU website/);
+ assert.match(all(kyou).find(x=>x.className==='channelphi-hint').textContent,/volume are controlled inside KYOU/);
+ btn(kyou,'channelphi-prev').click();
+ assert.equal(all(kyou).filter(x=>x.tagName==='iframe').length,1,'refresh replaces the original frame');
  btn(star,'channelphi-screen').click();
  const f1=all(root).filter(x=>x.tagName==='iframe');assert.equal(f1.length,1);
  assert.match(f1[0].src,/youtube-nocookie.com\/embed\/[A-Za-z0-9_-]{11}/);
@@ -87,4 +98,22 @@ test('one active TV screen can be played and switched with genuine media element
  assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
  listeners['oracle:card-deactivated']({detail:{id:'phiChannelCards'}});
  assert.equal(all(root).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
+ root.handlers['oracle:activate']();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
+ listeners['quantaphi:tv-playback-request']({detail:{owner:'liveFoxNewsCard'}});
+ assert.equal(all(root).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
+});
+
+test('KYOU and shared Quick Card footer actions have readable purpose-specific colors',()=>{
+ const actions=fs.readFileSync('quanta-card-actions.mjs','utf8');
+ const actionCss=fs.readFileSync('quanta-card-experience.css','utf8');
+ for(const action of ['follow','star','collect','preview','share','build']){
+  assert.match(actions,new RegExp("'"+action+"'\\)"),action+' is a real tagged control');
+  assert.ok(actionCss.includes('data-action="'+action+'"'),action+' has a declared color');
+ }
+ assert.match(actions,/collect\.setAttribute\('aria-pressed','true'\)/);
+ assert.match(actionCss,/@media\(max-width:380px\)/);
+ assert.match(css,/\.channelphi-kyou \.channelphi-controls\{grid-template-columns:repeat\(3,/);
+ assert.match(css,/\.channelphi-kyou \.channelphi-controls \.channelphi-stop\{background:#7b2638/);
+ assert.match(css,/@media\(max-width:430px\)\{\.channelphi-kyou \.channelphi-controls\{grid-template-columns:repeat\(2,/);
 });

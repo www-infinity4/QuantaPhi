@@ -1,10 +1,34 @@
-.iac-card{background:#fff;color:#14282f;border:1px solid #d6e3e4;border-radius:22px;overflow:hidden;min-width:0;box-shadow:0 12px 36px #213f5012}
-.iac-heading{padding:16px 18px;display:flex;align-items:center;flex-wrap:wrap;gap:8px;justify-content:space-between}.iac-badge{background:#e1f5e9;color:#145a39;border:1px solid #b7dfc7;border-radius:30px;padding:7px 12px;font-size:.86rem;font-weight:800}.iac-heading small{font-size:.75rem;max-width:28ch;color:#485f6b}
-.iac-media{height:clamp(180px,30vh,340px);background:#f1f4f3;display:grid;place-items:center;overflow:hidden}.iac-media img{width:100%;height:100%;object-fit:contain}.iac-media span{padding:24px;color:#4c626d;text-align:center}
-.iac-content{padding:18px}.iac-content h2{font-size:clamp(1.5rem,5vw,2.1rem);line-height:1.15;margin:0 0 10px}.iac-intro{font-size:1rem;line-height:1.5;color:#405560;margin:0 0 18px}.iac-website-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.iac-website-actions :is(button,a),.iac-check{background:#0068a6;color:#fff;border:0;border-radius:13px;padding:13px 10px;font-size:.95rem;font-weight:700;min-height:48px;cursor:pointer;text-align:center;text-decoration:none;display:grid;place-items:center}.iac-assist{margin-top:16px}.iac-assist summary{cursor:pointer;color:#0068a6;font-weight:700;padding:10px 0}.iac-assist[open] summary{margin-bottom:8px}.iac-assist .iac-website-actions button{background:#edf3f7;color:#164f72;border:1px solid #c7dce8}.iac-website-actions button:disabled,.iac-check:disabled{opacity:.55;cursor:wait}.iac-card :is(button,a):focus-visible{outline:3px solid #d26e10;outline-offset:3px}.iac-status{color:#3d5460;line-height:1.45;font-size:.88rem;overflow-wrap:anywhere}.iac-official{display:inline-block;padding:10px 0;color:#0068a6;font-weight:700}.iac-provenance{font-size:.75rem;line-height:1.5;color:#536974}.iac-receipt{display:block;overflow-wrap:anywhere;color:#536974;margin:8px 0}.iac-result{display:grid;gap:6px;padding:14px 0;border-top:1px solid #dce5e8}.iac-result p{margin:0;font-size:.9rem}.iac-result a{color:#0068a6}.iac-results{overflow-wrap:anywhere}.iac-check[hidden]{display:none}.iac-content .qca-controls{flex-wrap:wrap}.iac-card .qca-toolbar{margin-top:12px}
-@media(max-width:650px){#oracleCardStage > .iac-card{max-height:var(--iac-available-height,calc(100dvh - 390px));overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
-body.oracle-quanta #oracleCardDeck:has(#oracleCardStage > .iac-card) .oracle-card-deck-nav{position:sticky;top:60px;z-index:39;background:#f3f7f8;box-shadow:0 3px 10px #163d5014}}
-@media(max-width:420px){.iac-heading,.iac-content{padding:14px}.iac-website-actions{gap:7px}.iac-media{height:23vh;min-height:150px}}
-
-/* Affiliate requests attach to the actual Infinity Accepted brand card. */
-.iac-affiliate-link{display:flex!important;align-items:center;justify-content:center;margin:9px 0;padding:12px 11px;border-radius:12px;background:#e7f3fa!important;border:1px solid #9ac6dc!important;color:#155579!important;font:850 13px/1.3 system-ui,sans-serif!important;text-align:center;text-decoration:none!important;min-height:46px}
+/* A normal, still card. The page owns scrolling; no nested viewport or fit loop. */
+.iac-card{background:#fff;color:#14282f;border:1px solid #d6e3e4;border-radius:20px;min-width:0;box-shadow:0 12px 36px #213f5012;overflow:clip}
+.iac-heading{padding:12px 16px 0;display:flex;align-items:center;flex-wrap:wrap;gap:8px;justify-content:space-between}
+.iac-badge{background:#e1f5e9;color:#145a39;border:1px solid #b7dfc7;border-radius:30px;padding:5px 10px;font-size:.75rem;font-weight:800}
+.iac-heading small{font-size:.66rem;max-width:28ch;color:#485f6b}
+.iac-title{padding:12px 16px}.iac-title h2{font-size:clamp(1.5rem,5vw,2rem);line-height:1.15;margin:0 0 7px}
+.iac-intro{font-size:.95rem;line-height:1.45;color:#405560;margin:0}
+.iac-media{height:180px;margin:0 16px;background:#f4f7f8;border-radius:12px;display:grid;place-items:center;overflow:clip}
+.iac-media img{display:block;width:100%;height:100%;object-fit:contain}
+.iac-content{padding:12px 16px 16px}
+.iac-website-actions{display:grid;grid-template-columns:repeat(var(--iac-action-count,3),minmax(0,1fr));gap:8px}
+.iac-website-actions :is(button,a){background:#0068a6;color:#fff;border:0;border-radius:12px;padding:11px 7px;font:700 .85rem/1.3 system-ui;min-height:48px;cursor:pointer;text-align:center;text-decoration:none;display:grid;place-items:center;overflow-wrap:anywhere}
+.iac-website-actions button[aria-expanded="true"]{background:#124b76;box-shadow:inset 0 0 0 2px #6dd6f5}
+.iac-website-actions button:disabled{opacity:.65;cursor:wait}
+.iac-card :is(button,a,summary):focus-visible{outline:3px solid #d26e10;outline-offset:3px}
+.iac-status{color:#3d5460;line-height:1.4;font-size:.8rem;overflow-wrap:anywhere;margin:8px 0}
+.iac-status:empty,.iac-card .qca-status:empty{display:none}
+.iac-card :is(.iac-media,.iac-results,.iac-close)[hidden]{display:none!important}
+.iac-close{border:1px solid #adc9da;border-radius:10px;background:#fff;color:#174d70;padding:9px 12px;min-height:44px;cursor:pointer;font:700 .8rem system-ui;margin-top:8px}
+.iac-results{min-width:0;overflow-wrap:anywhere}
+.iac-results .qca-website-results{max-height:none;overflow:visible}
+.iac-results .qca-website-result{font-size:.85rem;line-height:1.45}
+.iac-results .qca-website-text{white-space:pre-wrap}
+.iac-official{display:inline-block;padding:10px 0;color:#0068a6;font-weight:700;font-size:.85rem}
+.iac-provenance{font-size:.75rem;line-height:1.5;color:#536974}
+.iac-card summary{cursor:pointer;color:#1e5a7b;font:700 .8rem/1.4 system-ui;padding:12px 0;min-height:44px;box-sizing:border-box}
+.iac-more{margin-top:10px;border-top:1px solid #dce6ed}
+.iac-extra-actions{margin-top:4px}.iac-extra-actions .iac-website-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.iac-card .qca-toolbar{margin-top:12px;padding-top:10px;border-top:1px solid #dce6ed}
+.iac-card .qca-controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+.iac-card .qca-button{font-size:.69rem;min-height:44px;background:#f5f9fc;color:#174d70;border-color:#c9dce8}
+.iac-affiliate-link{display:flex;align-items:center;justify-content:center;margin:9px 0;padding:12px 11px;border-radius:12px;background:#e7f3fa;border:1px solid #9ac6dc;color:#155579;font:800 .8rem/1.3 system-ui;text-align:center;text-decoration:none;min-height:46px}
+body.oracle-quanta #oracleCardStage > .iac-card{max-height:none;height:auto;overflow:clip;overscroll-behavior:auto;scrollbar-gutter:auto;animation:none;transition:none;transform:none}
+@media(max-width:420px){.iac-heading,.iac-title,.iac-content{padding-left:12px;padding-right:12px}.iac-media{height:148px;margin-inline:12px}.iac-website-actions{gap:6px}.iac-website-actions :is(button,a){font-size:.78rem;padding:10px 5px}}

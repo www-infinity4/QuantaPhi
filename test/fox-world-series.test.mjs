@@ -52,9 +52,9 @@ test('existing TV players remain while FOX channels extend the same TV grid',()=
  const html=load('index.html'),tv=load('phi-channel-cards.js'),newTv=load('fox-infinity-tv.mjs');
  assert.match(tv,/StarQuest/);assert.match(tv,/Omni TV/);assert.match(tv,/Chiller/);assert.match(tv,/ShopLC/);
  assert.match(html,/id="phiChannelCards"/);
- assert.match(html,/fox-infinity-tv\.mjs\?v=20261028-game5/);
- assert.match(html,/world-series-updates\.mjs\?v=20261028-game5/);
- assert.match(html,/fox-infinity-tv\.css\?v=20261028-game5/);
+ assert.match(html,/fox-infinity-tv\.mjs\?v=20261028-game5c/);
+ assert.match(html,/world-series-updates\.mjs\?v=20261028-game5c/);
+ assert.match(html,/fox-infinity-tv\.css\?v=20261028-game5b/);
  assert.match(newTv,/#phiChannelCards \.channelphi-grid/);
  for(const word of ['FOX · World Series','FOX One · Live TV','FOX Sports','FOX News'])assert.ok(newTv.includes(word));
  assert.match(newTv,/Try FOX in Infinity Viewer/);
@@ -79,4 +79,13 @@ test('pregame reminder cadence advances every fifteen minutes and stops at first
  assert.equal(pregameReminderSlot(afternoon+900000),pregameReminderSlot(afternoon)+1);
  assert.equal(pregameReminderSlot(GAME_START),null);
  assert.equal(pregameReminderSlot(CAMPAIGN_START-1),null);
+});
+
+test('postponed, cancelled, suspended and delayed games never trigger pregame or live notices',()=>{
+ for(const detailedState of ['Postponed','Cancelled','Suspended','Delayed Start']){
+  for(const abstractGameState of ['Preview','Live']){
+   const game=game4FromSchedule(schedule({abstractGameState,detailedState}));
+   assert.equal(game.status,'unavailable');
+  }
+ }
 });

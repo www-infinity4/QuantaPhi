@@ -43,14 +43,18 @@ test('official scoreboard status gates live, scheduled and final states',()=>{
  assert.equal(gameLiveStatus(fixture({abstractGameState:'Preview',detailedState:'Scheduled'})),'scheduled');
  assert.equal(gameLiveStatus(fixture({abstractGameState:'Final',detailedState:'Final'})),'final');
  assert.equal(gameLiveStatus({dates:[]}), 'unknown');
+ for(const detailedState of ['Postponed','Cancelled','Suspended','Delayed Start']){
+  assert.equal(gameLiveStatus(fixture({abstractGameState:'Preview',detailedState})),'unavailable');
+  assert.equal(gameLiveStatus(fixture({abstractGameState:'Live',detailedState})),'unavailable');
+ }
  assert.equal(gameLiveStatus({dates:[{games:[{gamePk:849803,seriesDescription:'World Series',status:{abstractGameState:'Live'}}]}]}),'unknown');
 });
 test('homepage loads the independent notification module after carousel, keeping original cards',()=>{
  const html=source('index.html'),ui=source('quick-ads.mjs'),css=source('quick-ads.css');
  assert.match(html,/oracle-card-deck\.js\?v=/);
- assert.match(html,/quick-ads\.mjs\?v=20261028-game5/);
- assert.match(html,/quick-ads\.css\?v=20261028-game5/);
- assert.ok(html.indexOf('quick-ads.mjs?v=20261028-game5')>html.indexOf('oracle-card-deck.js?v='));
+ assert.match(html,/quick-ads\.mjs\?v=20261028-game5b/);
+ assert.match(html,/quick-ads\.css\?v=20261028-game5b/);
+ assert.ok(html.indexOf('quick-ads.mjs?v=20261028-game5b')>html.indexOf('oracle-card-deck.js?v='));
  assert.match(ui,/quantaphi:switchboard-change/);
  assert.match(ui,/\['scheduled','live'\]\.includes\(status\)/);
  assert.match(ui,/Dismiss Quick Ads for 10 minutes/);

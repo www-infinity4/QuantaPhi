@@ -1,0 +1,40 @@
+name: Private Robot Brain passkey access gate
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.js'
+      - 'robot-brain-account-security.html'
+      - 'robot-brain-passkeys.mjs'
+      - 'continuity/owner/**'
+      - 'test/private-owner-passkey-entry.test.mjs'
+      - '.github/workflows/private-owner-passkey-entry.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-ai.js'
+      - 'robot-brain-account-security.html'
+      - 'robot-brain-passkeys.mjs'
+      - 'continuity/owner/**'
+      - 'test/private-owner-passkey-entry.test.mjs'
+      - '.github/workflows/private-owner-passkey-entry.yml'
+permissions:
+  contents: read
+jobs:
+  owner-notes-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check source syntax
+        run: |
+          node --check bubbles-ai.js
+          node --check robot-brain-passkeys.mjs
+          node --check continuity/owner/passkeys.mjs
+          node --check continuity/owner/app.mjs
+      - name: Prove private Robot Brain notes gating and no public email disclosure
+        run: |
+          node --test test/private-owner-passkey-entry.test.mjs
+          node --test test/quant-mail-preview.test.mjs

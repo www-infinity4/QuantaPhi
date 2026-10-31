@@ -1,4 +1,4 @@
-import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-core.mjs?v=20261028-game5';
+import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-core.mjs?v=20261028-game5b';
 /* QuantaPhi Quick Ads: event-driven, silent, dismissible and limited to Game 5 day.
  * Server feed establishes live vs final; network errors fail closed.
  * No merchant, wallet, search or account data leaves this module. */
@@ -41,7 +41,7 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
     liveState=gameLiveStatus(await response.json());
    }catch{liveState='unknown';}
    finally{clearTimeout(timeout);checking=null;}
-   if(liveState==='final'||!inGameWindow())hide();
+   if(!['scheduled','live'].includes(liveState)||!inGameWindow())hide();
    return liveState;
   })();
   return checking;
