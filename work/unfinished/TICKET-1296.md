@@ -1,9 +1,11 @@
+---
 issue: 1296
 project: "Bubbles context-first iterations and Bits"
 state: implementing
 dot: "🟡"
 progress_percent: unknown
-sessions_spent: 1
+progress_basis: "Phase 1 source written; live acceptance incomplete"
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: ChatGPT
 lease_id: null
@@ -12,14 +14,14 @@ task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
 branch: feature/1296-bubbles-bit-receipts
-head_sha: 710572f7b4ca3146da5d4dfd7ffcea6d0f8b963a
+head_sha: null
 tests:
-  - "test/bubbles-bits.test.mjs added; CI not yet verified"
+  - "Initial CI failed: context-first test fixtures; corrected in follow-up"
 merged: false
 deployed: false
 live_verified: false
 blocker: "No authenticated transactional wallet ledger or chat event stream integration yet"
-next_action: "Run focused node --test test/bubbles-bits.test.mjs and review receipt trust boundary; then integrate D1 ledger and live Bubbles pipeline"
+next_action: "Verify exact-head CI and review source-only projection; then integrate authenticated D1 ledger and live Bubbles pipeline"
 
 # Acceptance
 - Personal Context is first step for every authenticated iteration
@@ -31,3 +33,7 @@ next_action: "Run focused node --test test/bubbles-bits.test.mjs and review rece
 
 # Session 1
 Added test-first receipt projection and focused tests. Provisional Bits are explicitly NOT spendable, walletWrites always zero. No live integration or deployment.
+
+---
+
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1296
