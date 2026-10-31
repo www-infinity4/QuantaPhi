@@ -43,7 +43,10 @@ async function lookup(card,query){
 }
 export function mountPremiumCard(card){
  const article=make('article','iqc-card premium-card');article.dataset.sourceId=card.id;article.dataset.sourceName=card.name;article.dataset.sourceReady='true';article.style.setProperty('--premium-accent',card.color);
- const header=make('header','premium-heading');header.append(make('p','iqc-kind',card.category+' · INFINITY 2026®'),make('h2','',card.name));
+ const header=make('header','premium-heading');
+ header.dataset.heroQuality='editorial-no-placeholder';
+ header.append(make('p','iqc-kind',card.category+' · INFINITY 2026®'),make('h2','',card.name));
+ if(card.category==='Restaurants')header.append(make('p','premium-heading-subtitle','Official offers and featured food · fresh source results below'));
  const identity=make('a','premium-origin',new URL(card.official).hostname);identity.href=card.official;identity.target='_blank';identity.rel='noopener noreferrer';header.append(identity);
  const form=make('form','premium-search');const label=make('label','',card.id==='nasa-library'?'Explore the NASA image collection':'Search '+card.name);
  const field=make('input');field.type='search';field.value=card.query;field.required=true;field.maxLength=160;field.setAttribute('aria-label','Search '+card.name);label.append(field);

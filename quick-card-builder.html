@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Turn a website and its most useful interaction into a shareable QuantaPhi Quick Card.">
-<title>Create a Quick Card · QuantaPhi</title><link rel="stylesheet" href="/published-quick-card.css?v=1">
+<title>Create a Quick Card · QuantaPhi</title><link rel="stylesheet" href="/published-quick-card.css?v=20261031-image1">
 </head><body><main class="qcp-shell"><a href="/" class="qcp-home">← QuantaPhi</a>
 <p class="qcp-eyebrow">INFINITY 2026® · BUBBLES CARD STUDIO</p>
 <h1>Build a Quick Card</h1>
@@ -22,10 +22,11 @@
 <label>Quick Card preview display
 <select name="previewMode" id="qcpPreviewMode"><option value="interactive" selected>Interactive card — working buttons in QuantaPhi popup (default)</option><option value="visual">Image-first — artwork with buttons to open the card</option></select>
 <small>This setting is saved with your card. Both options use the actual artwork in social link previews. X and other outside feeds decide whether to show an interactive player; normal website previews cannot run arbitrary buttons.</small></label>
-<label>Official or permitted card image (recommended) <input name="image" type="url" maxlength="900" placeholder="https://example.com/your-permitted-photo.jpg"><small>Use a publicly reachable PNG, JPG or WebP you can share. This image is shown in X/other social previews, with the real card reachable when tapped. Without an image, share text is used—not a generic QuantaPhi logo.</small></label>
+<fieldset class="qcp-image-standard"><legend>Professional card artwork standard</legend><p>Every featured image must be real, crisp, relevant to the actual product/show/service, permitted for use, and deliberately composed. Use a high-resolution photograph or approved publisher artwork. No cheesy initials, stretched logos, tiny favicons, blurry screenshots, AI-imagined products or text-only placeholders as a published hero.</p><p>Target 1600 × 900 pixels or larger for landscape hero cards (minimum 1200 × 675). Keep the subject visible on mobile and leave a safe area for titles. Provide the publisher or rights source; no image is better than false imagery.</p></fieldset>
+<label>Official or permitted high-resolution card image <input name="image" type="url" maxlength="900" placeholder="https://example.com/your-approved-hero.jpg"><small>Public HTTPS PNG, JPG or WebP. Images that fail loading or resolution checks will be rejected in the browser. Without a cleared image, your card stays interactive but is not image-ready.</small><span id="qcpImageQualityStatus" class="qcp-image-quality-status" aria-live="polite"></span></label>
 <button type="submit" id="qcpPublish">Publish shareable card</button>
 <p class="qcp-muted">The new URL is public to anyone you share it with, but it stays unlisted in Public / For You until approved. It does not automatically copy another website, connect a third-party account or charge StarCoins.</p>
 </form>
 <section class="qcp-result" id="qcpResult" aria-live="polite" role="status"></section>
 <section class="qcp-context"><h2>Bubbles and X</h2><p>Your official X posts can become build requests after the existing verified account reader is connected. Unverified posts and quoted text must never trigger owner-level work.</p><p><a class="qcp-link-button" href="/bubbles-x-connect.html">Public X reader and inbox ↗</a></p><p><a href="https://x.com/YahooPingcwlz" target="_blank" rel="noopener noreferrer">Your public X profile ↗</a> · <a href="/bubbles.html">Open Bubbles ↗</a></p><p id="qcpXStatus">Bubbles public X reader: hourly cloud-browser checks are configured. Open the reader receipt to see the last successful scan; private X API connection is separate.</p></section>
-</main><script type="module" src="/quick-card-builder.js?v=20261028-preview1"></script></body></html>
+</main><script type="module" src="/quick-card-builder.js?v=20261031-image1"></script></body></html>

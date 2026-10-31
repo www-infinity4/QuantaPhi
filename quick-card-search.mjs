@@ -1,5 +1,5 @@
 import {searchQuickCards} from './quick-card-search-core.mjs?v=20261029-housing1';
-import {createCardArtwork} from './quanta-card-experience.mjs?v=20261027-karaoke1';
+import {createCardArtwork} from './quanta-card-experience.mjs?v=20261031-tv-guide1';
 import {mountCardActions} from './quanta-card-actions.mjs';
 import {openQuickCardPreview} from './quick-card-preview.mjs';
 const el=(tag,cls,label)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(label!==undefined)n.textContent=label;return n};

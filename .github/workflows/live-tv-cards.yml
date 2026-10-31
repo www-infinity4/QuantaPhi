@@ -1,10 +1,10 @@
 name: Live TV carousel acceptance
 on:
   pull_request:
-    paths: ['live-tv-*','tv-front-priority.js','phi-channel-cards.*','infinity-tv/kyou.html','oracle-card-deck.js','index.html','test/live-tv-*','test/tv-front-priority.test.cjs','test/phi-channel-cards.test.cjs','.github/workflows/live-tv-cards.yml']
+    paths: ['live-tv-*','tv-front-priority.js','tv-guide-quick-card.mjs','test/tv-guide-quick-card*','phi-channel-cards.*','infinity-tv/kyou.html','oracle-card-deck.js','index.html','test/live-tv-*','test/tv-front-priority.test.cjs','test/phi-channel-cards.test.cjs','.github/workflows/live-tv-cards.yml']
   push:
     branches: [main]
-    paths: ['live-tv-*','tv-front-priority.js','phi-channel-cards.*','infinity-tv/kyou.html','oracle-card-deck.js','index.html','test/live-tv-*','test/tv-front-priority.test.cjs','test/phi-channel-cards.test.cjs','.github/workflows/live-tv-cards.yml']
+    paths: ['live-tv-*','tv-front-priority.js','tv-guide-quick-card.mjs','test/tv-guide-quick-card*','phi-channel-cards.*','infinity-tv/kyou.html','oracle-card-deck.js','index.html','test/live-tv-*','test/tv-front-priority.test.cjs','test/phi-channel-cards.test.cjs','.github/workflows/live-tv-cards.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,7 +24,8 @@ jobs:
           node --check oracle-card-deck.js
           node --check phi-channel-cards.js
           node --check tv-front-priority.js
-          node --test test/tv-front-priority.test.cjs test/live-tv-state.test.mjs test/fox-world-series.test.mjs test/phi-channel-cards.test.cjs test/oracle-card-deck.test.cjs test/oracle-deck-cycle.test.mjs
+          node --check tv-guide-quick-card.mjs
+          node --test test/tv-front-priority.test.cjs test/live-tv-state.test.mjs test/fox-world-series.test.mjs test/phi-channel-cards.test.cjs test/oracle-card-deck.test.cjs test/oracle-deck-cycle.test.mjs test/tv-guide-quick-card.test.mjs
       - name: Install test-only browser
         run: |
           npm install --no-save --package-lock=false @playwright/test@1.56.1
@@ -32,7 +33,7 @@ jobs:
       - name: Android-width carousel lifecycle acceptance (provider fixtures)
         run: |
           python3 -m http.server 8799 --bind 127.0.0.1 &
-          npx playwright test test/live-tv-browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/live-tv-browser.spec.mjs test/tv-guide-quick-card.browser.spec.mjs --reporter=line --workers=1
       - name: Retain failure evidence
         if: failure()
         uses: actions/upload-artifact@v4
