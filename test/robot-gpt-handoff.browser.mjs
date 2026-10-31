@@ -41,7 +41,10 @@ const ticket=(suffix,title,phase,extra={})=>({
 async function mount(page,{deny=false,legacy=false}={}){
  const paths=[],requests=[];
  await page.route('https://infinity-brain-clock.marvaseater.workers.dev/**',async route=>{
-  const url=new URL(route.request().url()),path=url.pathname,body=route.request().postDataJSON?.()||{};
+  const url=new URL(route.request().url()),path=url.pathname;
+  const cors={'Access-Control-Allow-Origin':'*','Access-Control-Allow-Headers':'authorization,content-type','Access-Control-Allow-Methods':'POST, OPTIONS'};
+  if(route.request().method()==='OPTIONS'){await route.fulfill({status:204,headers:cors});return}
+  const body=route.request().postDataJSON?.()||{};
   paths.push(path);requests.push({path,body});
   let result;
   if(path==='/work/tickets/list')result={ok:true,tickets:[]};
@@ -53,7 +56,7 @@ async function mount(page,{deny=false,legacy=false}={}){
     {ok:true,service:'Continuity',tickets:[ticket('11111111','Robot Brain status repair','blocked_recoverable')],hasMore:true,
      nextCursor:{beforeUpdatedAt:123456,beforeId:'IW-20261029-11111111'}};
   }else{await route.fulfill({status:404,body:'Not found'});return}
-  await route.fulfill({status:200,contentType:'application/json',headers:{'Access-Control-Allow-Origin':'*','Access-Control-Allow-Headers':'authorization,content-type'},body:JSON.stringify(result)});
+  await route.fulfill({status:200,contentType:'application/json',headers:cors,body:JSON.stringify(result)});
  });
  await page.goto(base+'/fixture'+(deny?'?deny=1':''),{waitUntil:'load'});
  return {paths,requests};
