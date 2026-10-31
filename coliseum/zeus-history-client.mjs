@@ -2,7 +2,7 @@
  * never receive conversation text. Cloud writes require explicit user opt-in. */
 const API='https://infinity-coliseum.marvaseater.workers.dev';
 const CONSENT='quantaphi:zeus:history-consent:v1';
-const uuid=/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i;
+const uuid=/^(?:[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}|chat_[a-f0-9]{32})$/i;
 const label=(text)=>{const p=document.createElement('p');p.textContent=text;return p};
 const button=(text)=>{const b=document.createElement('button');b.type='button';b.className='ba-control';b.textContent=text;return b};
 const stored=()=>{try{return JSON.parse(localStorage.getItem(CONSENT)||'null')}catch{return null}};
