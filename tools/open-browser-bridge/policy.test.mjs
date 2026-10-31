@@ -16,3 +16,10 @@ test('private and loopback addresses are forbidden', () => {
   const hosts = parseAllowedHosts('127.0.0.1,localhost,10.0.0.1,169.254.169.254');
   for (const host of hosts) assert.equal(isAllowedUrl('https://' + host + '/', hosts), false);
 });
+
+test('nonstandard HTTPS ports and URL credentials cannot bypass host policy', () => {
+  const hosts = parseAllowedHosts('example.com');
+  assert.equal(isAllowedUrl('https://example.com:443/', hosts), true);
+  assert.equal(isAllowedUrl('https://example.com:8443/', hosts), false);
+  assert.equal(isAllowedUrl('https://alice:secret@example.com/', hosts), false);
+});
