@@ -66,7 +66,7 @@ test('guide is integrated into all source-card entrypoints, and declares attribu
  assert.match(guide,/www\.tvguide\.com\/listings/);
  assert.match(guide,/creativecommons\.org\/licenses\/by-sa\/4\.0/);
  assert.match(guide,/aria-live/);
- assert.match(guide,/scroll-snap/);
+ assert.match(guide,/itg-carousel/);
  assert.match(css,/scroll-snap-type:x mandatory/);
  assert.match(guide,/No scheduled episodes were supplied/);
  assert.match(guide,/could not be loaded/);
