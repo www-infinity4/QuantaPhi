@@ -1,51 +1,33 @@
-// scripts/dependency-resolver.mjs
-// CLI wrapper for the dependency resolver.
-// Reads JSON files from the `data/` directory, resolves dependencies, and writes the
-// claimable jobs to `data/claimed.json`.
-
+// Eligibility report only. Writing this file does not claim a runner lease.
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import resolver from '../utils/dependencyResolver.js';
 
 const { resolveDependencies } = resolver;
+export const defaultDataDir = fileURLToPath(new URL('../data/', import.meta.url));
 
-// Helper to load JSON safely.
 async function loadJson(filePath) {
-  try {
-    const content = await readFile(filePath, 'utf8');
-    return JSON.parse(content);
-  } catch (err) {
-    console.error(`Failed to read or parse ${filePath}:`, err.message);
-    process.exit(1);
-  }
+  const content = await readFile(filePath, 'utf8');
+  return JSON.parse(content);
 }
 
-async function main() {
-  const dataDir = resolve(import.meta.url, '..', '..', 'data');
-  const completedPath = resolve(dataDir, 'completed.json');
-  const pendingPath = resolve(dataDir, 'pending.json');
+export async function run(dataDir = defaultDataDir) {
+  const completedJobs = await loadJson(resolve(dataDir, 'completed.json'));
+  const pendingJobs = await loadJson(resolve(dataDir, 'pending.json'));
+  const eligible = resolveDependencies(completedJobs, pendingJobs);
+  // Preserve the legacy output path for consumers; these are eligibility
+  // candidates, not authenticated, fenced, or leased claims.
   const claimedPath = resolve(dataDir, 'claimed.json');
-
-  console.log('Loading completed jobs from', completedPath);
-  const completedJobs = await loadJson(completedPath);
-
-  console.log('Loading pending jobs from', pendingPath);
-  const pendingJobs = await loadJson(pendingPath);
-
-  console.log('Resolving dependencies...');
-  const claimable = resolveDependencies(completedJobs, pendingJobs);
-
-  console.log(`Found ${claimable.length} claimable job(s). Writing to ${claimedPath}`);
-  try {
-    await writeFile(claimedPath, JSON.stringify(claimable, null, 2), 'utf8');
-    console.log('Claimable jobs written successfully.');
-  } catch (err) {
-    console.error('Failed to write claimed.json:', err.message);
-    process.exit(1);
-  }
+  await writeFile(claimedPath, JSON.stringify(eligible, null, 2) + '\n', 'utf8');
+  return eligible;
 }
 
-// Execute when run directly.
-if (import.meta.url === process.argv[1] || import.meta.url === `file://${process.argv[1]}`) {
-  main();
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  run()
+    .then((eligible) => console.log(`Recorded ${eligible.length} eligible jobs; no lease claimed.`))
+    .catch((err) => {
+      console.error('Dependency eligibility failed:', err.message);
+      process.exitCode = 1;
+    });
 }
