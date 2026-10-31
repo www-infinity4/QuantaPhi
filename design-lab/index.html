@@ -7,11 +7,12 @@
 <title>Design Lab · Power Chain | QuantaPhi</title>
 <link rel="canonical" href="https://quantaphi.org/design-lab/index.html">
 <link rel="stylesheet" href="/design-lab/lab.css?v=1">
+<link rel="stylesheet" href="/design-lab/component-kit.css?v=1">
 </head>
 <body data-finish="copper">
 <header class="lab-top">
  <a class="lab-logo" href="/" aria-label="QuantaPhi home"><span aria-hidden="true">Q<span class="lab-phi">φ</span></span><span>QUANTAPHI</span></a>
- <nav aria-label="Design Lab navigation"><a href="#workbench">Power Chain</a><a href="#blueprint">Blueprint</a><a href="/">Back to QuantaPhi</a></nav>
+ <nav aria-label="Design Lab navigation"><a href="#workbench">Power Chain</a><a href="#blueprint">Blueprint</a><a href="#componentKit">Component kit</a><a href="/">Back to QuantaPhi</a></nav>
  <span class="lab-status"><i aria-hidden="true"></i> EXPERIMENT 001</span>
 </header>
 <main>
@@ -76,6 +77,40 @@
  <div id="bulkAllocationResults"></div>
  <p class="bulk-disclosure">Research-only proposal. No buyer consent, payment, wallet charge, merchant inventory or shipping quote is implied. Confirm costs and storage before purchasing.</p>
 </section>
+<section class="kit-section" id="componentKit" aria-labelledby="kitHeading">
+ <div class="kit-heading"><div><span class="kit-eyebrow">INFINITY® 2026 · POWER CHAIN KIT</span><h2 id="kitHeading">Parts with a purpose.</h2></div><p>Choose a job. Check the wiring. Run a useful component with visible limits and a receipt.</p></div>
+ <div class="kit-recipes" role="group" aria-label="Power Chain recipes"><button type="button" data-kit-recipe="coin-research" aria-pressed="true">Coin diagnostic research</button><button type="button" data-kit-recipe="bulk-pool" aria-pressed="false">Bulk buying allocation</button></div>
+ <div class="kit-metaphors"><span><strong>Voltage</strong> read-only authority</span><span><strong>Current</strong> bounded work</span><span><strong>Polarity</strong> typed connections</span></div>
+ <p id="kitWiringStatus" class="kit-wiring" role="status"></p>
+ <div class="kit-layout">
+  <div class="kit-console">
+   <div id="kitCoinPanel">
+    <h3>Find evidence for a particular variety</h3>
+    <label for="kitCoinQuery">Coin target</label><input id="kitCoinQuery" data-kit-input type="text" maxlength="80" value="1881 Morgan dollar" autocomplete="off">
+    <label for="kitDiagnostics">Required diagnostic features · one per line</label><textarea id="kitDiagnostics" data-kit-input rows="3" maxlength="500" placeholder="Enter a short feature from your reference"></textarea>
+    <p class="kit-help">Use short phrases from a reference you have checked. The combined search is limited to 110 characters. The existing public index checks up to 10 approved source domains.</p>
+    <p class="kit-boundary">This component finds reference and listing leads. Photograph inspection is not connected; image matches and variety attribution remain unverified.</p>
+   </div>
+   <div id="kitBulkPanel" hidden>
+    <h3>Can this offer serve the whole buying pool?</h3>
+    <p class="kit-help">Enter a hypothetical or independently checked offer. All prices below are USD. Include delivery, handling, storage and other known extras in the extra-cost total.</p>
+    <div class="kit-fields"><div><label for="kitOfferQuantity">Offer quantity</label><input id="kitOfferQuantity" data-kit-input type="text" inputmode="numeric" value="300"></div><div><label for="kitUnitPrice">Price per item · $</label><input id="kitUnitPrice" data-kit-input type="text" inputmode="decimal" value="1.00"></div><div><label for="kitExtraCost">Total extra costs · $</label><input id="kitExtraCost" data-kit-input type="text" inputmode="decimal" value="0.00"></div><div><label for="kitPackSize">Minimum buyer pack</label><input id="kitPackSize" data-kit-input type="text" inputmode="numeric" value="1"></div><div><label for="kitBaselinePrice">Current price per item · $</label><input id="kitBaselinePrice" data-kit-input type="text" inputmode="decimal" value="1.00"></div></div>
+    <label for="kitBuyers">Buyers · name, quantity, optional maximum total in $</label><textarea id="kitBuyers" data-kit-input rows="6" maxlength="60000">Buyer 1, 30, 30.00
+Buyer 2, 30, 30.00
+Buyer 3, 30, 30.00
+Buyer 4, 30, 30.00
+Buyer 5, 30, 30.00</textarea>
+    <div class="kit-examples" role="group" aria-label="Hypothetical buyer examples"><button type="button" data-kit-example="5,30">5 × 30</button><button type="button" data-kit-example="5,60">5 × 60</button><button type="button" data-kit-example="10,30">10 × 30</button></div>
+    <p class="kit-boundary">This calculates a proposal. Buyer entries are not verified commitments; supplier stock, storage and delivery must still be confirmed. It cannot reserve, order or charge.</p>
+   </div>
+   <div class="kit-actions"><button id="kitRun" type="button" class="kit-power">⏻ Search coin evidence</button><button id="kitStop" type="button" disabled>Stop</button><button id="kitCopy" type="button" disabled>Copy receipt</button></div>
+   <p id="kitStatus" class="kit-status" role="status">Enter diagnostic features, then run the coin research kit.</p>
+   <div id="kitResults" class="kit-results" aria-live="polite"></div>
+   <details id="kitEvidence" hidden><summary>Record your diagnostic checks</summary><p id="kitEvidenceTarget" class="kit-help"></p><label for="kitCandidateUrl">Candidate listing URL</label><input id="kitCandidateUrl" type="url" placeholder="https://www.ebay.com/itm/…"><div id="kitCheckRows"></div><button type="button" id="kitAssess">Assess recorded evidence</button><p id="kitAssessment" role="status">No diagnostic observations recorded.</p></details>
+  </div>
+  <aside class="kit-schematic" aria-labelledby="kitPartsHeading"><h3 id="kitPartsHeading">Parts list</h3><p id="kitPurpose"></p><ol id="kitParts"></ol><details><summary>Inspect connections</summary><ol id="kitWires"></ol></details></aside>
+ </div>
+</section>
 <section class="lab-blueprint" id="blueprint" aria-labelledby="blueprintHeading">
  <div class="lab-heading"><div><span class="lab-kicker">WHY THIS CARD EXISTS</span><h2 id="blueprintHeading">A circuit with a purpose.</h2></div><p>Every new Quick Card begins with intent, an actual working mechanism, and proof.</p></div>
  <div class="lab-principles">
@@ -89,4 +124,5 @@
 <footer class="lab-footer"><span>INFINITY® 2026 · QUANTAPHI DESIGN LAB</span><span>Concept 001 · Functional prototype · Source-first design</span><a href="/">QUANTAPHI ↗</a></footer>
 <script type="module" src="/design-lab/app.mjs?v=1"></script>
 <script type="module" src="/design-lab/bulk-allocator-ui.mjs?v=1"></script>
+<script type="module" src="/design-lab/component-kit.mjs?v=1"></script>
 </body></html>

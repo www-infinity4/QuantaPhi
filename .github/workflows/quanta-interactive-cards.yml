@@ -90,6 +90,8 @@ on:
       - 'test/design-lab-bulk-allocator.test.mjs'
       - 'test/design-lab-power-chain.browser.spec.mjs'
       - 'test/design-lab-bulk-allocator.browser.spec.mjs'
+      - 'test/power-chain-*.test.mjs'
+      - 'test/power-chain-component-kit.browser.spec.mjs'
       - '.github/workflows/quanta-interactive-cards.yml'
   workflow_dispatch:
 jobs:
@@ -115,6 +117,10 @@ jobs:
           node --check design-lab/quick-card.mjs
           node --check design-lab/bulk-allocator.mjs
           node --check design-lab/bulk-allocator-ui.mjs
+          node --check design-lab/component-kit-core.mjs
+          node --check design-lab/coin-evidence-core.mjs
+          node --check design-lab/bulk-pool-core.mjs
+          node --check design-lab/component-kit.mjs
           node --check quanta-card-actions.mjs
           node --check quick-card-preview.mjs
           node --check art-museum-quick-cards.mjs
@@ -147,6 +153,8 @@ jobs:
           node --test test/rotating-card-share.test.mjs test/quick-card-share.test.mjs test/social-share-preview.test.cjs test/quick-card-spotlights.test.mjs test/sports-card-data.test.mjs test/google-trending-cards.test.cjs
           python3 -m unittest discover -s test -p 'test_card_spotlights_sync.py' -v
           python3 -m unittest discover -s test -p 'test_google_trends_sync.py' -v
+      - name: Check Power Chain component and allocation contracts
+        run: node --test test/power-chain-*.test.mjs
       - name: Check Infinity accepted catalog and browser action contracts
         run: node --test test/infinity-accepted.test.mjs test/quick-card-tinyfish.test.mjs test/brain-clock.test.mjs test/tinyfish-broker-bridge.test.mjs
       - name: Check assimilation accessibility
@@ -167,4 +175,4 @@ jobs:
         run: |
           node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
-          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/power-chain-component-kit.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs --reporter=line --workers=1
