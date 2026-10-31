@@ -90,7 +90,6 @@ export function mountFollowingPublisherFeed(host,{getProfiles,getFollowing}={}){
   if(key!==lastKey){lastKey=key;paint();}
   const missing=profiles.filter(p=>!Object.hasOwn(records,p.id)&&!pending.has(p.id));
   if(!missing.length)return;
-  const seq=revision;
   // Bound network reads to followed public sources only; never forward cookies.
   await Promise.allSettled(missing.map(async card=>{
    pending.add(card.id);
@@ -98,7 +97,7 @@ export function mountFollowingPublisherFeed(host,{getProfiles,getFollowing}={}){
    catch{records[card.id]=[];}
    finally{pending.delete(card.id);}
   }));
-  if(seq===revision&&selected)paint();
+  if(selected)paint();
  }
  more.addEventListener('click',()=>{shown=Math.min(800,shown+8);void refresh();});
  return {
