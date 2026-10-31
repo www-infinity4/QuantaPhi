@@ -4,6 +4,7 @@ on:
     paths:
       - 'scripts/developer-connect-policy.mjs'
       - 'test/developer-connect-policy.test.mjs'
+      - 'work/unfinished/TICKET-1282.md'
       - '.github/workflows/developer-connect-policy.yml'
   workflow_dispatch:
 jobs:
