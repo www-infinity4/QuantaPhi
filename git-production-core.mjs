@@ -45,12 +45,12 @@ export function mergedLinePreview(evidence){
 // This is defense-in-depth: a user's review consent is still required separately.
 // Issue bodies and PR descriptions can also contain pasted credentials.
 // Remove entire matching lines before any consented external AI consultation.
-const GIT_REVIEW_SECRET_LINE=/(?:-----BEGIN [A-Z ]*PRIVATE KEY-----|github_pat_|gh[pousr]_[A-Za-z0-9]{16,}|(?:Bearer|Basic)\\s+[A-Za-z0-9._~+/-]{12,}|(?:api[_-]?key|access[_-]?token|client[_-]?secret|password|private[_-]?key|authorization|secret[_-]?key|cookie|set-cookie)\\s*[:=]|(?:[?&](?:token|key|secret|code)=)|(?:AKIA|ASIA)[A-Z0-9]{16}|sk-[A-Za-z0-9_-]{16,})/i;
+const GIT_REVIEW_SECRET_LINE=/(?:-----BEGIN [A-Z ]*PRIVATE KEY-----|github_pat_|gh[pousr]_[A-Za-z0-9]{16,}|(?:Bearer|Basic)\s+[A-Za-z0-9._~+/-]{12,}|(?:api[_-]?key|access[_-]?token|client[_-]?secret|password|private[_-]?key|authorization|secret[_-]?key|cookie|set-cookie)\s*[:=]|(?:[?&](?:token|key|secret|code)=)|(?:AKIA|ASIA)[A-Z0-9]{16}|sk-[A-Za-z0-9_-]{16,})/i;
 export function safeGitReviewText(value,maxLength=1700) {
  const limit=Number.isSafeInteger(maxLength)?Math.max(0,Math.min(maxLength,4000)):1700;
- return String(value??'').split(/\\r?\\n/).slice(0,50)
+ return String(value??'').split(/\r?\n/).slice(0,50)
   .map(line=>GIT_REVIEW_SECRET_LINE.test(line)?'[Potential credential line removed]':line.slice(0,320))
-  .join('\\n').slice(0,limit);
+  .join('\n').slice(0,limit);
 }
 export function safeGitReviewSnippet(filename, patch) {
  const file=String(filename||'');
