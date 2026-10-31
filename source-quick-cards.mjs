@@ -1,3 +1,5 @@
+import {mountInfinityCopilotCard} from './infinity-copilot-card.mjs';
+import {mountGitProductionCards} from './git-production-cards.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261027-karaoke1';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
@@ -17,7 +19,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('chatgpt','ChatGPT','AI','Open the real ChatGPT website and sign in','https://chatgpt.com/','https://chatgpt.com/','Open the original ChatGPT app and authenticate on chatgpt.com, without copying credentials or impersonating its sessions.','One-tap official sign-in and an optional real website frame. Framing depends on the provider and browser; your private conversation is not synchronized to QuantaPhi.'),
  source('gemini','Google Gemini','AI · Planning','Ask Gemini first through Bubbles','https://gemini.google.com/','https://gemini.google.com/','Gemini offers the first research/engineering plan. Independently check model advice before acting.','Use the real Gemini API only with verified Bubbles owner access, or continue in the official Gemini app.'),
  source('claude','Anthropic Claude','AI · Review','Review the Gemini plan with Claude','https://claude.ai/','https://claude.ai/','Claude independently reviews proposed changes, tests and possible hazards; no generated text is execution authorization.','The card can ask Bubbles for an authenticated Anthropic API response, if configured; otherwise use the official Claude interface.'),
- source('copilot','GitHub Copilot','AI · Coding','Review work with GitHub Copilot','https://github.com/copilot','https://github.com/copilot/agents','GitHub Copilot cloud agent can work on appropriately enabled repositories through approved GitHub issues and PRs.','Open the official GitHub Copilot interface. This card does not inherit private repository permissions or claim a direct Copilot chat API.'), 
+ source('copilot','GitHub Copilot','AI · Coding','Build and review PRs inside Infinity','https://github.com/copilot','https://github.com/copilot/agents','GitHub Copilot cloud agent can work on appropriately enabled repositories through approved GitHub issues and PRs.','Open the official GitHub Copilot interface. This card does not inherit private repository permissions or claim a direct Copilot chat API.'), 
  source('x','X / Grok','Social','Trends, posts and Grok','https://x.com/','https://x.com/explore','Explore verified public X posts, native embeds and the separate Grok product only when allowed.','Open the X Explore interface. Post streams and Grok need supported provider authorization.',{secondUrl:'https://x.com/i/grok',secondLabel:'Open Grok'}),
  source('reddit','Reddit','Community','Popular communities and discussions','https://www.reddit.com/','https://www.reddit.com/r/popular/','Find relevant communities and explain posts only from explicitly permitted Reddit sources.','Open Reddit popular. Commercial reuse and embedding require provider permission; no unlicensed card feed.'), 
  source('tiktok','TikTok','Video','Discover popular short videos','https://www.tiktok.com/','https://www.tiktok.com/explore','Curate original creators with verified post URLs and approved TikTok Embed Player.','Open TikTok Explore. A real player reel needs actual authorized post IDs and player use; no fabricated trends.'), 
@@ -56,10 +58,7 @@ export const aiCardMode=id=>id==='gemini'?'gemini_first':id==='claude'?'gemini_c
 function askAiTools(root,card){
  if(!['gemini','claude','copilot'].includes(card.id))return;
  const area=el('div','iqc-ask-ai');
- if(card.id==='copilot'){
-  area.append(el('p','iqc-muted','Copilot runs through GitHub’s own agent interface, with repository permission and a reviewable PR. No silent issue assignment.'));
-  root.append(area);return;
- }
+ if(card.id==='copilot')return;
  const form=el('form','iqc-ai-form');
  const input=el('textarea','iqc-ai-input');
  input.maxLength=1800;input.rows=2;
@@ -94,9 +93,10 @@ function starterCard(card){
  if(card.id!=='google'&&card.id!=='bing')item.append(el('p','iqc-kind',card.kind));
  const tools=el('div','iqc-inline-tools');mountCardTools(tools,card);item.append(tools);
  if(card.id==='chatgpt')mountOfficialViewer(item,card.id);
+ if(card.id==='copilot')mountInfinityCopilotCard(item);
  askAiTools(item,card);
  // Search cards are already complete with their own actual search fields.
- if(!['google','bing'].includes(card.id)){
+ if(!['google','bing','copilot'].includes(card.id)){
   const actions=el('div','iqc-actions');
   actions.append(link('Official '+card.name+' website',card.official));if(card.id==='starmaker'){const demo=link('Try & embed the mini card','/starmaker-embed.html','iqc-primary');demo.target='_self';actions.append(demo)}item.append(actions);
  }
@@ -106,7 +106,9 @@ function mountShelf(){
  const host=document.getElementById('siteQuickCards');if(!host)return;
  host.replaceChildren();
  host.append(el('p','iqc-kind','INFINITY 2026® · INTERACTIVE SOURCE TOOLS'),el('h2','','Discover, watch, search, research and create'),el('p','iqc-muted','Use the feature on each card. Provider-owned accounts and copyrighted catalogs remain with their original services.'));
- const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES.filter(isPublicSourceCard))cards.append(starterCard(p));host.append(cards);
+ const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES.filter(isPublicSourceCard))cards.append(starterCard(p));
+ mountGitProductionCards(cards,mountCardTools);
+ host.append(cards);
  // The Oracle viewer discovers each original source article as an individual
  // swipeable card, never a single 15-item link shelf.
  window.dispatchEvent(new Event('quantaphi:source-cards-ready'));
@@ -131,8 +133,9 @@ function mountDetail(){
  host.append(el('p','iqc-kind','INFINITY 2026® · SOURCE EXPERIENCE'),createCardArtwork(card),el('h1','',card.name),el('h2','',card.feature));
  const tools=el('div','iqc-tools');mountCardTools(tools,card);host.append(tools);
  if(card.id==='chatgpt')mountOfficialViewer(host,card.id);
+ if(card.id==='copilot')mountInfinityCopilotCard(host);
  askAiTools(host,card);
- const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio);const mini=link('Try portable interactive card ↗','/starmaker-embed.html','iqc-primary');mini.target='_self';actions.append(mini)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
+ const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio);const mini=link('Try portable interactive card ↗','/starmaker-embed.html','iqc-primary');mini.target='_self';actions.append(mini)}if(card.id!=='copilot')actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
  const about=el('section','iqc-feature');about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));host.append(about);
  installBubble(card);
 }

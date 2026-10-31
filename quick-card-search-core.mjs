@@ -1,9 +1,13 @@
 import {TINYFISH_CARDS} from './tinyfish-card-catalog.mjs';
+import {GIT_APP_CARDS,gitCardRoute,gitRepoUrl} from './git-production-core.mjs';
 import {HOUSING_QUICK_CARD,HOUSING_ALIASES} from './disability-housing-core.mjs';
 import {HOUSING_HELP_RESOURCES,HOUSING_RESOURCE_ALIASES,housingResourceCard} from './housing-help-catalog.mjs';
 const normalized=value=>String(value||'').normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const aliases=Object.freeze({bk:'burger-king',burgerking:'burger-king',mcdonalds:'mcdonalds'});
 export function lookupQuickCard(id){
+ const git=GIT_APP_CARDS.find(stage=>stage.id===id);
+ if(git)return {id:git.id,name:git.name,kind:'Development',official:gitRepoUrl(git.repo),
+  feature:'GitHub production · '+git.name,description:git.role,route:gitCardRoute(git.id)};
  if(id===HOUSING_QUICK_CARD.id)return HOUSING_QUICK_CARD;
  if(typeof id==='string'&&id.startsWith('housing-help-'))return housingResourceCard({id:id.slice('housing-help-'.length)});
  if(typeof id!=='string'||!Object.hasOwn(TINYFISH_CARDS,id))return null;
@@ -25,6 +29,13 @@ export function searchQuickCards(query,{limit=4}={}){
  for(const resource of HOUSING_HELP_RESOURCES){
   const match=(HOUSING_RESOURCE_ALIASES[resource.id]||[]).some(alias=>(' '+q+' ').includes(' '+normalized(alias)+' '));
   if(match)ranked.push({card:housingResourceCard(resource),score:1000});
+ }
+ for(const stage of GIT_APP_CARDS){
+  const card=lookupQuickCard(stage.id),name=normalized(card.name),identity=normalized(stage.id),repo=normalized(stage.repo);
+  const identityCompact=identity.replace(/ /g,''),nameCompact=name.replace(/ /g,'');
+  let score=name===q?1000:nameCompact===compact?950:identity===q||identityCompact===compact?900:repo===q?880:0;
+  if(!score&&q.length>=3&&(name.includes(q)||q.includes(name)||repo.includes(q)))score=500+name.length;
+  if(score)ranked.push({card,score});
  }
  for(const id of Object.keys(TINYFISH_CARDS)){
   const card=lookupQuickCard(id);if(!card)continue;

@@ -245,6 +245,58 @@ export class ConsentService {
     if(current?.status!=='connected'||current.revision!==record.revision)throw Error('connection_cancelled');
     return result;
   }
+  // Separate per-user Copilot actions from Bubbles owner credentials.
+  // Every request selects a repository which GitHub must return as installed
+  // with effective permissions. A login alone is never enough.
+  async githubCopilot({userId,id,repository,action,prompt,prNumber,confirmation,nonce}) {
+    if(!['prs','details','issues','merged','build','feedback','merge'].includes(action))throw Error('unsupported_action');
+    if(typeof repository!=='string'||!/^[-A-Za-z0-9_.]+\/[-A-Za-z0-9_.]+$/.test(repository))
+      throw Error('repository_invalid');
+    const listing=await this.githubRepositories({userId,id});
+    const chosen=listing.repositories?.find(r=>r.name===repository);
+    const needsWrite=!['prs','details','issues','merged'].includes(action);
+    if(!chosen||(!chosen.permissions?.read&&!chosen.permissions?.write)||
+       (needsWrite&&!chosen.permissions?.write))throw Error('github_repository_permission_required');
+    const prefix=await this.namespace(userId),key=prefix+'connection:'+id;
+    const record=await this.storage.get(key);
+    if(record?.userId!==userId||record.provider!=='github'||record.status!=='connected'||!record.credentialRef)
+      throw Error('connection_not_verified');
+    if(!this.adapters.github?.copilot)throw Error('provider_not_configured');
+    const lease=action==='build'?randomToken():null;
+    let receiptKey=null;
+    if(action==='build'){
+      if(typeof nonce!=='string'||!/^[a-f0-9-]{36}$/.test(nonce))throw Error('copilot_request_id_required');
+      receiptKey=prefix+'copilot:request:'+await digest(id+'|'+nonce);
+      const known=await this.storage.transaction(async tx=>{
+        const old=await tx.get(receiptKey);
+        if(old?.status==='complete')return old.result;
+        if(old?.expiresAt>this.now())throw Error('copilot_action_pending');
+        await tx.put(receiptKey,{status:'pending',lease,expiresAt:this.now()+120000});
+        return null;
+      });
+      if(known)return known;
+    }
+    try{
+      const encrypted=await this.storage.get(record.credentialRef);
+      if(!encrypted)throw Error('credential_unavailable');
+      const credential=await this.vault.open(encrypted,record.credentialRef);
+      const result=await this.adapters.github.copilot({accessToken:credential.accessToken,
+        repository,action,prompt,prNumber,confirmation});
+      const current=await this.storage.get(key);
+      if(current?.status!=='connected'||current.revision!==record.revision)throw Error('connection_cancelled');
+      if(receiptKey)await this.storage.transaction(async tx=>{
+        const existing=await tx.get(receiptKey);
+        if(existing?.lease===lease)await tx.put(receiptKey,{status:'complete',result,expiresAt:this.now()+86400000});
+      });
+      return result;
+    }catch(error){
+      if(receiptKey)await this.storage.transaction(async tx=>{
+        const existing=await tx.get(receiptKey);
+        if(existing?.lease===lease)await tx.delete(receiptKey);
+      });
+      throw error;
+    }
+  }
   /* The only mutable backup destination per account is the verified first
    * private GitHub repository explicitly chosen by that account. */
   async starCoinBackup({userId,id,repository,snapshot,mode='write'}) {

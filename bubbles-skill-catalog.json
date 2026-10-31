@@ -38,6 +38,14 @@
       "requires": "User GitHub consent and verified repository permissions"
     },
     {
+      "id": "bubbles:infinity-git-production",
+      "label": "Infinity Git · Copilot to Gitcoin production",
+      "description": "Copilot issue and PR → Gitpal requirement audit → Gitpin source evidence → Gitpro reviewed merge → Gitflow → Gitmap → Gitpub deployment check → Git-Stream → Gitcoin merged-line preview. Bubbles can request consented Gemini/Claude read-only audits; Cloudflare work and wallet minting need independent signed executor and ledger receipts.",
+      "origin": "Bubbles / QuantaPhi Git family",
+      "state": "implemented_in_source_pending_live_deployment",
+      "requires": "Verified user GitHub authorization; PR/issue permissions; separate Bubbles owner authorization for executable Cloudflare work; audited wallet mint ledger"
+    },
+    {
       "id": "bubbles:cloudflare-projects",
       "label": "Cloudflare deployments",
       "description": "Cloudflare project operations require the user's separately approved and configured account access. A wallet login does not grant API permissions.",
