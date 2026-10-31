@@ -72,3 +72,17 @@ test('Oracle opening selector is initialized before any eager hidden-bank images
  const firstSourceScan=deck.indexOf('registerSourceCards();');
  assert.ok(declaration>0 && firstSourceScan>declaration,'No temporary-dead-zone crash before chooser listeners mount');
 });
+
+test('Tide #bubbles source card has an actual Tide product image and three first-party actions',()=>{
+ const tide=REQUESTED_PUBLIC_CARDS.find(x=>x.id==='tide-original-liquid');
+ assert.ok(tide,'owner-requested Tide card exists in public rotation');
+ assert.equal(tide.kind,'product');
+ assert.equal(tide.checked,'2026-10-30');
+ assert.equal(tide.official,'https://tide.com/en-us/shop/type/liquid/tide-original-liquid');
+ assert.ok(tide.visual.startsWith('https://images.ctfassets.net/ajjw8wywicb3/'));
+ assert.ok(tide.visual.includes('Tide_Belize_SUD_Original_listing'));
+ assert.equal(tide.actions.length,3);
+ assert.ok(tide.actions.every(x=>x.url.startsWith('https://tide.com/en-us/')));
+ assert.match(tide.description,/independent card/);
+ assert.doesNotMatch(tide.description,/\\$\\d/);
+});
