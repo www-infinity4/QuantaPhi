@@ -1,6 +1,6 @@
 /* Zeus private conversation history. D1 is authoritative; private R2 copies every
  * accepted thread and turn. Never shares data with public Coliseum rooms. */
-const UUID=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const UUID=/^(?:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}|chat_[0-9a-f]{32})$/i;
 const cleanText=(value,max)=>typeof value==='string'?value.replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g,'').trim().slice(0,max):'';
 const pageValue=value=>{const n=Number(value||0);return Number.isSafeInteger(n)&&n>=0&&n<=1000000?n:null;};
 async function body(request){
@@ -35,7 +35,7 @@ export async function handleZeusHistory(req,env,member,respond){
    if(offset===null)return respond({ok:false,error:'invalid_page'},400);
    const rows=await db.prepare('SELECT id,title,created_at,updated_at FROM zeus_threads WHERE member_id=? ORDER BY created_at DESC,id DESC LIMIT 101 OFFSET ?').bind(member,offset).all();
    const items=(rows.results||[]).slice(0,100);
-   return respond({ok:true,items,next:(rows.results||[]).length>100?offset+100:null});
+   return respond({ok:true,profile:member,items,next:(rows.results||[]).length>100?offset+100:null});
   }
   if(list&&req.method==='POST'){
    const b=await body(req);
@@ -53,7 +53,7 @@ export async function handleZeusHistory(req,env,member,respond){
   if(messages&&req.method==='GET'){
    const offset=pageValue(url.searchParams.get('offset'));
    if(offset===null)return respond({ok:false,error:'invalid_page'},400);
-   const rows=await db.prepare('SELECT id,role,text,created_at FROM zeus_turns WHERE member_id=? AND thread_id=? ORDER BY created_at ASC,id ASC LIMIT 101 OFFSET ?').bind(member,id,offset).all();
+   const rows=await db.prepare('SELECT id,role,text,created_at FROM zeus_turns WHERE member_id=? AND thread_id=? ORDER BY rowid ASC LIMIT 101 OFFSET ?').bind(member,id,offset).all();
    return respond({ok:true,thread:exists,items:(rows.results||[]).slice(0,100),next:(rows.results||[]).length>100?offset+100:null});
   }
   if(messages&&req.method==='POST'){
