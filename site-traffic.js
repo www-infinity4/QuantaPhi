@@ -3,6 +3,7 @@
  'use strict';
  const requests=document.getElementById('qtrafficRequests'),views=document.getElementById('qtrafficViews'),note=document.getElementById('qtrafficNote');
  if(!requests||!views||!note)return;
+ const refreshButton=document.getElementById('qtrafficRefresh');
  const STORAGE_KEY='quantaphi_verified_traffic_v2';
  let best=null,busy=false;
  const validCount=n=>Number.isSafeInteger(n)&&n>=0;
@@ -74,14 +75,19 @@
  }
  async function refresh(){
   if(busy)return;busy=true;
+  if(refreshButton){refreshButton.disabled=true;refreshButton.textContent='Checking totals…';}
   try{
    try{render(await load('/api/site-traffic'),{fallback:false});}
    catch{render(await load('/data/site-traffic-lifetime.json?v='+Math.floor(Date.now()/60000)),{fallback:true});}
   }catch{
    if(best)render(best,{fallback:true});
    else{requests.textContent='—';views.textContent='—';note.textContent='Cloudflare lifetime ledger currently unavailable; no estimated counts shown.';}
-  }finally{busy=false;}
+  }finally{
+   busy=false;
+   if(refreshButton){refreshButton.disabled=false;refreshButton.textContent='Refresh totals';}
+  }
  }
+ if(refreshButton)refreshButton.addEventListener('click',()=>{void refresh()});
  refresh();
  setInterval(()=>{if(!document.hidden)refresh();},60000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
