@@ -4,6 +4,7 @@ import {tinyfishCard} from './tinyfish-card-catalog.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
+import {mountInfinityTvGuide} from './tv-guide-quick-card.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
  */
@@ -46,7 +47,10 @@ export function createCardArtwork(card,small=false){
  const theme=/radio/.test(text)?'radio':/music|karaoke|starmaker/.test(text)?'music':/youtube|video|tiktok/.test(text)?'video':/news|cnn|fox/.test(text)?'news':/social|facebook|instagram|reddit|whatsapp|x \/ grok/.test(text)?'social':/coin|vam|silver|gold|mint|pcgs|ngc/.test(text)?'coin':/market|ebay|toy|antique/.test(text)?'market':/finance|invest|robinhood|chime/.test(text)?'finance':/science|knowledge|wikipedia/.test(text)?'research':'other';
  art.dataset.theme=variants.includes(theme)?theme:'other';
  art.dataset.brand=/^[a-z0-9-]{1,45}$/.test(card.id||'')?card.id:'other';
- if(card.id==='fox-one'||card.id==='fox-one-live-news'){
+ if(card.id==='tv-guide'){
+  art.classList.add('qcx-tv-editorial');
+  art.append(node('span','qcx-tv-kicker','INFINITY TV · PROGRAM GUIDE'),node('strong','qcx-tv-heading','What’s on tonight'),node('span','qcx-tv-subtitle','U.S. episode schedules · Shows · Networks'));
+ }else if(card.id==='fox-one'||card.id==='fox-one-live-news'){
   art.classList.add('qcx-fox-one');
   const foxWordmark=node('img','qcx-fox-one-logo');
   foxWordmark.alt='FOX One official wordmark';foxWordmark.loading='lazy';
@@ -349,6 +353,10 @@ export function mountCardTools(root,card){
  if(id==='google'||id==='bing'){
   // Search remains the primary interaction; global controls come afterward.
   searchTool(root,card);mountCardActions(root,card);return;
+ }
+ if(id==='tv-guide'){
+  mountInfinityTvGuide(root);
+  mountCardActions(root,card,{showSearch:false});return;
  }
  if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
  if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);
