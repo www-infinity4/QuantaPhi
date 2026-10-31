@@ -103,4 +103,6 @@ test('Gitpal never hands stale PR evidence from another account, repository or P
  assert.match(moduleSource,/evidenceSource\.account!==active\?\.id\|\|evidenceSource\.repo!==repos\.value/);
  assert.match(moduleSource,/evidenceSource\.pr!==selectedPr\(\)\|\|evidenceSource\.version!==selectionVersion/);
  assert.match(moduleSource,/if\(version!==selectionVersion\|\|!active\|\|active\.id!==accountId\|\|repos\.value!==r\.name\)return/);
+ assert.match(moduleSource,/issueRecords=\[\];selectIssue\.replaceChildren\(node\('option','','Copilot issues not loaded for this repository'\)\)/);
+ assert.match(moduleSource,/if\(!active\)\{authorized=\[\];prRecords=\[\];issueRecords=\[\];selectionVersion\+\+;clear\(\)/);
 });
