@@ -53,6 +53,8 @@ test('onboarding appears in actual live carousel while completed cards stop recu
  assert.match(deck,/profileNode\.hidden=true;updateTabs\(\);predict\(\);start\(\)/);
  assert.match(deck,/selectedTab='following'/);
  assert.match(deck,/updateCardPost\(active\)/);
+ assert.ok(deck.indexOf('let postTurns=new Map()')<deck.indexOf('\nregisterSourceCards();'),'post rotation must initialize before early source-card registration');
+ assert.match(deck,/INFINITY® EDITORIAL CARD POST/);
  assert.match(deck,/new CustomEvent\('quantaphi:feed-updated'/);
  assert.match(style,/\.oracle-card-post-note/);
  assert.match(html,/oracle-card-deck\.js\?v=20261030-profile-follow-v3/);
