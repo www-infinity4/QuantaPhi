@@ -1,0 +1,26 @@
+name: Bubbles StarQuest GPT Live owner gate
+
+on:
+  pull_request:
+    paths:
+      - 'workers/bubbles-gpt-live/**'
+      - 'bubbles-gpt-live.js'
+      - 'bubbles-gpt-live.html'
+      - 'bubbles-live-tools.js'
+      - 'test/bubbles-gpt-live.test.cjs'
+      - '.github/workflows/bubbles-live-owner-bridge.yml'
+  workflow_dispatch:
+
+jobs:
+  owner-gated-voice:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Source syntax and paid-voice owner authorization regression
+        run: |
+          node --check workers/bubbles-gpt-live/index.js
+          node --check bubbles-gpt-live.js
+          node --test test/bubbles-gpt-live.test.cjs

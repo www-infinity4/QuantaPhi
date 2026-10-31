@@ -145,6 +145,20 @@ public final class BubblesService extends Service {
     /** Fixed diagnostic only; never treats an AI plan or ambient speech as permission
      * to execute local Python. Android presents a real user-confirmation dialog.
      */
+    private boolean handleTermuxCompanion(String addressed, boolean typed) {
+        if (addressed == null || !addressed.trim().matches(
+                "(?i)^(?:bubbles[, ]+)?(?:please\\s+)?(?:(?:check|test|verify|inspect)(?:\\s+the)?|is(?:\\s+the)?)\\s+termux\\s+(?:local\\s+)?(?:server|companion)(?:\\s+(?:running|online|ready))?[.!?]*$"))
+            return false;
+        // Read-only loopback probe; do not block the microphone or Android UI.
+        localCompanionProbe.execute(() -> {
+            String receipt = TermuxLoopbackProbe.check();
+            main.post(() -> {
+                if (sessionRunning) screenStatus(receipt, typed);
+            });
+        });
+        return true;
+    }
+
     private boolean handleTermuxProbe(String addressed, boolean typed) {
         if (addressed == null || !addressed.trim().matches(
                 "(?i)^(?:bubbles[, ]+)?(?:please\\s+)?(?:(?:test|check|verify)(?:\\s+the)?\\s+(?:python(?:\\s+(?:in|with))?\\s+termux|python|termux(?:\\s+python)?)|(?:run|start|try)(?:\\s+a)?\\s+python\\s+(?:test|diagnostic)|(?:does\\s+python\\s+work|is\\s+python\\s+(?:working|ready))(?:\\s+in\\s+termux)?)[.!?]*$"))
@@ -162,6 +176,7 @@ public final class BubblesService extends Service {
     }
 
     private final ExecutorService network = Executors.newSingleThreadExecutor();
+    private final ExecutorService localCompanionProbe = Executors.newSingleThreadExecutor();
     private WindowManager manager;
     private WindowManager.LayoutParams bubbleLayout;
     private OrbView orb;
@@ -1172,6 +1187,7 @@ public final class BubblesService extends Service {
         if (!typed && addressed.length() < 3) return;
         BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
         if (directed && handleWorkflowRequest(addressed, false)) return;
+        if (directed && handleTermuxCompanion(addressed, false)) return;
         if (directed && handleTermuxProbe(addressed, false)) return;
         if (SimNetworkCommands.matches(addressed)) {
             screenStatus(CellularInspector.capture(this), false);
@@ -1404,6 +1420,7 @@ public final class BubblesService extends Service {
         }
         if (panelCommand(text, true, SystemClock.elapsedRealtime())) return;
         if (handleWorkflowRequest(text, true)) return;
+        if (handleTermuxCompanion(text, true)) return;
         if (handleTermuxProbe(text, true)) return;
         if (handleChatGPTAppRequest(text, true)) return;
         String localLaunch = AppControlBridge.tryLaunch(this, text);
@@ -1766,6 +1783,7 @@ public final class BubblesService extends Service {
         if (orb != null && manager != null) {
             try {manager.removeView(orb);}catch(Exception ignored){}
         }
+        localCompanionProbe.shutdownNow();
         network.shutdownNow();
         // Let a media export already queued by 'stop' finish writing to the phone.
         mediaPublish.shutdown();
