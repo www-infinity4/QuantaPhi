@@ -41,7 +41,7 @@ export async function ebayQuickCardsAPI(request,env,{fetcher=fetch}={}){
  search.searchParams.set('limit',String(limit));
  search.searchParams.set('offset',String(offset));
  search.searchParams.set('filter',mode==='auction'?
-  'buyingOptions:{AUCTION},bidCount:[3..]':'buyingOptions:{FIXED_PRICE}');
+  'buyingOptions:{AUCTION},bidCount:[3]':'buyingOptions:{FIXED_PRICE}');
  if(mode==='auction')search.searchParams.set('sort','endingSoonest');
  try{
   const appToken=await token(env,fetcher);
