@@ -161,7 +161,9 @@ async function scan(username,token){
   if(username&&String(star.username||'').toLowerCase()!==username.toLowerCase())throw Error('Account identity mismatch. No records were changed.');
   $('results').hidden=false;$('stats').replaceChildren();$('details').replaceChildren();
   $('account').textContent='Verified StarQuest account: '+star.username;
-  stat('Available StarCoins',Number(star.starCoins||0)+Number(star.pendingShareCredits||0)/10);
+  const completeBalance=[star.starCoins,star.pendingShareCredits].every(value=>value!==undefined&&value!==null&&value!==''&&Number.isSafeInteger(Number(value))&&Number(value)>=0);
+  stat('Available StarCoins',completeBalance?Number(star.starCoins)+Number(star.pendingShareCredits)/10:NaN);
+  if(!completeBalance)detail('StarQuest balance details are incomplete. The account was not cleared; retry this read or contact support before treating any value as zero.');
   detail('StarQuest: '+(Array.isArray(star.ledger)?star.ledger.length:0)+' recent ledger events returned; '+fmt(star.shareCount||0)+' confirmed share actions recorded.');
   if(u.status==='fulfilled'){
     const v=u.value;
