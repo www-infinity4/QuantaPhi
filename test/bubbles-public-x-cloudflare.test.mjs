@@ -103,3 +103,38 @@ test('owner inbox never promotes Integra context to an owner request',async()=>{
  assert.equal(context.authority,'reference_only');
  assert.match(queries.at(-1),/url LIKE 'https:\/\/x\.com\/IntegraAI\/status\/%'/);
 });
+
+test('owner and Integra public readers report independently when one profile fails',async()=>{
+ const modes=[['IntegraAI','YahooPingcwlz'],['YahooPingcwlz','IntegraAI']];
+ for(const [bad,good] of modes){
+  const rows=[],queries=[];
+  const env={
+   BROWSER:{async quickAction(_,opts){
+    const account=opts.url.split('/').pop();
+    return new Response(account===bad?'<p>Log in to X</p>':x('2116350825656107422','Fix QuantaPhi #bubbles',account));
+   }},
+   DB:{prepare(sql){return{bind(...args){queries.push(sql);return{async run(){rows.push({sql,args});return{meta:{changes:1}}}}}}}}
+  };
+  let pending=null;
+  await reader.scheduled({},env,{waitUntil(p){pending=p}});
+  assert.ok(pending);
+  const outcomes=await pending;
+  assert.equal(outcomes.length,2);
+  assert.equal(outcomes.filter(item=>item.status==='rejected').length,1);
+  const success=rows.filter(item=>item.sql.includes('owner_x_scans')&&item.args.includes('public_posts_observed'));
+  const blocked=rows.filter(item=>item.sql.includes('owner_x_scans')&&item.args.includes('blocked'));
+  assert.equal(success.length,1);assert.equal(blocked.length,1);
+  assert.equal(success[0].args[0],good==='YahooPingcwlz'?'main':'IntegraAI');
+  assert.equal(blocked[0].args[0],bad==='YahooPingcwlz'?'main':'IntegraAI');
+ }
+});
+test('X setup page distinguishes owner reader and secondary context',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const page=await readFile(new URL('../bubbles-x-connect.html',import.meta.url),'utf8');
+ const script=await readFile(new URL('../bubbles-public-x-status.js',import.meta.url),'utf8');
+ assert.match(page,/id="bubblesPublicXSecondaryStatus"/);
+ assert.match(page,/Integra read-only context/);
+ assert.match(script,/sources\.find\(item=>item\.account==='IntegraAI'/);
+ assert.match(script,/sub\?\.status==='blocked'/);
+ assert.doesNotMatch(script,/innerHTML/);
+});
