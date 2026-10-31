@@ -4,29 +4,32 @@ project: Infinity Developer Connect / X Integra
 source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1282
   - https://help.x.com/en/rules-and-policies/x-automation
-state: ci_passed
+state: merged
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Policy preflight source slice complete; OAuth, server verifier, independent review, integration and deployment remain."
-sessions_spent: 2
+sessions_spent: 3
 sessions_remaining_estimate: unknown
 agent: "scheduled Continuity Builder, source-only"
 lease_id: null
+task_session_id: null
+fence: null
 lease_expires_at: null
 last_observed_at_utc: "2026-10-31T07:30:00Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/developer-connect-policy-gate-20261031
-head_sha: "941fef36ecffc956f462980e9a60684cd98f1dab"
+head_sha: "c14afd8a563088b7f5d99c07909a610c5de215af"
+merge_commit_sha: "8398388cc853404313bb7ce692fd7418b054e479"
 pr: https://github.com/www-infinity4/QuantaPhi/pull/1283
 tests:
   - "Node 24 9/9 contract tests passed at 941fef36ecffc956f462980e9a60684cd98f1dab"
 ci:
   - "https://github.com/www-infinity4/QuantaPhi/actions/runs/41180797598 success at prior exact head; new ticket/workflow head must be rechecked"
-merged: false
+merged: true
 deployed: false
 live_verified: false
 blocker: "X AI-reply prior written approval and verified API grant not yet available; no authenticated ChatGPT runner; owner presence unknown."
-next_action: "Recheck new exact-head CI; request independent security review; implement real server-side OAuth and approval verification before any API write."
+next_action: "Implement server-side OAuth, provider scope and consent verification with independent security review before any X API write."
 ---
 
 ## Scope and safety
@@ -44,3 +47,9 @@ Source-only fail-closed X provider capability preflight; no tokens, paid subscri
 - Server-enforced reply idempotency and X opt-in/opt-out, written approval verification.
 - Independent review, exact-head CI, staged deployment and live negative-path tests.
 - Provider registry extension and professional Quick Card integration.
+
+## October 31 post-merge ledger reconciliation
+The third documented session is this interactive integrity audit; the prior source-runner attribution above is retained as history.
+- The side-effect-free X Developer Connect **advisory policy source only** merged through [QuantaPhi #1283](https://github.com/www-infinity4/QuantaPhi/pull/1283), squash commit `8398388cc853404313bb7ce692fd7418b054e479` (verified GitHub merge). Historical OPEN/DRAFT notes above describe the prior stage.
+- Project **not complete**: real server authentication, X approvals, opt-in, one-reply idempotency, two-account tests and production posting remain separately blocked. Source merge does not authorize API writes; `deployed: false` and `live_verified: false` remain as recorded for the full project.
+- Ledger consistency repair coordinated via [#1145](https://github.com/www-infinity4/QuantaPhi/issues/1145). No active lease was claimed; `fence` and `task_session_id` are null by design.
