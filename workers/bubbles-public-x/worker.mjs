@@ -1,26 +1,30 @@
 /* Public X browser reader. Separate Cloudflare browser/D1, no X API credentials. */
-const PROFILE='https://x.com/YahooPingcwlz';
 const OWNER='YahooPingcwlz';
+const SECONDARY='IntegraAI';
+const SOURCES=Object.freeze({YahooPingcwlz:'https://x.com/YahooPingcwlz',IntegraAI:'https://x.com/IntegraAI'});
+const PROFILE=SOURCES[OWNER];
+function sourceProfile(account){if(!Object.hasOwn(SOURCES,account))throw Error('unapproved_public_x_source');return SOURCES[account];}
 const origin='https://quantaphi.org';
 const now=()=>new Date().toISOString();
 const json=(v,status=200)=>Response.json(v,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Access-Control-Allow-Origin':origin}});
 const decode=s=>String(s).replace(/&(?:amp|lt|gt|quot|apos|#39|nbsp);/g,x=>({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&#39;':"'",'&nbsp;':' '}[x])).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Math.min(0x10ffff,Number(n)||32)));
 const strip=s=>decode(String(s).replace(/<script\b[\s\S]*?<\/script>/gi,' ').replace(/<style\b[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim());
-export function parsePublicProfile(html){
+export function parsePublicProfile(html,account=OWNER){
+ const profile=sourceProfile(account);
  // X adds aria-labelledby/id before role. Attribute order is not a source
  // identity signal; require the exact owner status path and role instead.
- const h=String(html||''),out=[],seen=new Set(),re=/<div\b[^>]{0,4000}\bdata-href=(["'])\/YahooPingcwlz\/status\/(\d{15,22})\1[^>]{0,4000}>/gi;
+ const h=String(html||''),out=[],seen=new Set(),re=/<div\b[^>]{0,4000}\bdata-href=(["'])\/([A-Za-z0-9_]{1,15})\/status\/(\d{15,22})\1[^>]{0,4000}>/gi;
  for(const m of h.matchAll(re)){
-  if(!/\brole=(["'])link\1/i.test(m[0]))continue;
-  const id=m[2];if(seen.has(id))continue;
+  if(!/\brole=(["'])link\1/i.test(m[0])||m[2].toLowerCase()!==account.toLowerCase())continue;
+  const id=m[3];if(seen.has(id))continue;
   const cut=h.indexOf('</article>',m.index);
   if(cut<0||cut-m.index>25000)continue;
   const article=h.slice(m.index,cut+10);
-  if(!article.includes('href="/YahooPingcwlz"'))continue; // authored account, not a quoted article
+  if(!article.includes('href="/'+account+'"'))continue; // authored account, not a quoted article
   const match=article.match(/<div class="[^"]*\bwhitespace-pre-wrap\b[^"]*" dir="auto">([\s\S]*?)<\/div>/i);
   if(!match)continue;
   const text=strip(match[1]).slice(0,2000);if(!text)continue;
-  out.push({id,text,url:PROFILE+'/status/'+id,pinned:/>Pinned</.test(article)});
+  out.push({id,text,url:profile+'/status/'+id,pinned:/>Pinned</.test(article)});
   seen.add(id);
  }
  return out.slice(0,50);
@@ -32,9 +36,11 @@ export function classifyPost(text){
  const action=/\b(build|create|make|add|put|show|place|fix|repair|restore|update|connect|deploy|publish|sync|replace|improve|change|install|redesign|give|need|want|must|ought|should|have to|we need|we have)\b/i.test(s);
  return subject&&action?'possible':subject?'context':'other';
 }
-async function recordScan(env,{status,visible=0,added=0,candidates=0,error=''}){
+async function recordScan(env,{status,visible=0,added=0,candidates=0,error='',account=OWNER}){
+ sourceProfile(account);
+ const scanKey=account===OWNER?'main':account;
  const lastSuccess=status==='public_posts_observed'?now():null;
- await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES ('main',?,?,?,?,?,?,?) ON CONFLICT(k) DO UPDATE SET last_checked=excluded.last_checked,last_success=COALESCE(excluded.last_success,owner_x_scans.last_success),status=excluded.status,visible_count=excluded.visible_count,new_count=excluded.new_count,candidate_count=excluded.candidate_count,error=excluded.error").bind(now(),lastSuccess,status,visible,added,candidates,error.slice(0,180)).run();
+ await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(k) DO UPDATE SET last_checked=excluded.last_checked,last_success=COALESCE(excluded.last_success,owner_x_scans.last_success),status=excluded.status,visible_count=excluded.visible_count,new_count=excluded.new_count,candidate_count=excluded.candidate_count,error=excluded.error").bind(scanKey,now(),lastSuccess,status,visible,added,candidates,error.slice(0,180)).run();
 }
 async function renderedProfileHTML(response){
  const reader=response.body?.getReader();
@@ -62,7 +68,8 @@ async function renderedProfileHTML(response){
  if(!raw.trimStart().startsWith('<'))throw Error('browser_content_invalid');
  return raw;
 }
-export async function scanPublicX(env){
+export async function scanPublicX(env,account=OWNER){
+ const profile=sourceProfile(account);
  if(!env.BROWSER||!env.DB)throw Error('browser_or_db_binding_unavailable');
  // A profile may render its initial skeleton before public articles arrive.
  // Retry one empty render with a longer DOM wait, but never report zero posts
@@ -70,14 +77,14 @@ export async function scanPublicX(env){
  let observed=[];
  try{
   for(const waitForTimeout of [4800,8000]){
-   const response=await env.BROWSER.quickAction('content',{url:PROFILE,waitForTimeout,
+   const response=await env.BROWSER.quickAction('content',{url:profile,waitForTimeout,
     gotoOptions:{waitUntil:'domcontentloaded',timeout:25000}});
    if(!response.ok)throw Error('browser_http_'+response.status);
-   observed=parsePublicProfile(await renderedProfileHTML(response));
+   observed=parsePublicProfile(await renderedProfileHTML(response),account);
    if(observed.length)break;
   }
   if(!observed.length)throw Error('no_visible_public_owner_posts_after_retry');
- }catch(e){await recordScan(env,{status:'blocked',error:String(e.message||e)});throw e}
+ }catch(e){await recordScan(env,{status:'blocked',account,error:String(e.message||e)});throw e}
  const stamp=now();
  let newCount=0,candidates=0;
  for(const p of observed){
@@ -87,21 +94,30 @@ export async function scanPublicX(env){
   newCount+=added;
   if(added&&(kind==='tagged'||kind==='possible'))candidates++;
  }
- await recordScan(env,{status:'public_posts_observed',visible:observed.length,added:newCount,candidates});
- return {ok:true,status:'public_posts_observed',visibleCount:observed.length,newPosts:newCount,newPossibleRequests:candidates,lastSuccess:stamp,publicRead:true,completeHistory:false};
+ await recordScan(env,{status:'public_posts_observed',account,visible:observed.length,added:newCount,candidates});
+ return {ok:true,status:'public_posts_observed',sourceAccount:account,authority:account===OWNER?'owner_source':'reference_only',visibleCount:observed.length,newPosts:newCount,newPossibleRequests:candidates,lastSuccess:stamp,publicRead:true,completeHistory:false};
 }
 export default {
- async scheduled(event,env,ctx){ctx.waitUntil(scanPublicX(env))},
+ async scheduled(event,env,ctx){
+  // Public Integra posts provide context, never a second source of owner authority.
+  // Independent scan receipts allow one blocked profile without hiding the other.
+  ctx.waitUntil(Promise.allSettled([scanPublicX(env,OWNER),scanPublicX(env,SECONDARY)]));
+ },
  async fetch(request,env){
   const url=new URL(request.url);
   if(request.method!=='GET')return json({ok:false,error:'read_only'},405);
   if(url.pathname.endsWith('/health')){
    const row=await env.DB.prepare("SELECT last_checked,last_success,status,visible_count,new_count,candidate_count,error FROM owner_x_scans WHERE k='main'").first();
-   return json({ok:true,reader:'Cloudflare Browser Run public profile',profile:PROFILE,cron:'17 * * * * UTC',apiTokenRequired:false,readStatus:row||{status:'not_run'},executionEnabled:false});
+   const secondary=await env.DB.prepare("SELECT last_checked,last_success,status,visible_count,new_count,candidate_count,error FROM owner_x_scans WHERE k=?").bind(SECONDARY).first();
+   return json({ok:true,reader:'Cloudflare Browser Run public profile',profile:PROFILE,cron:'17 * * * * UTC',apiTokenRequired:false,readStatus:row||{status:'not_run'},sources:[{account:OWNER,authority:'owner_source',readStatus:row||{status:'not_run'}},{account:SECONDARY,authority:'reference_only',readStatus:secondary||{status:'not_run'}}],executionEnabled:false});
   }
   if(url.pathname.endsWith('/inbox')){
-   const rows=await env.DB.prepare("SELECT id,url,body,kind,observed_at FROM owner_x_posts WHERE kind IN ('tagged','possible') ORDER BY CAST(id AS INTEGER) DESC LIMIT 30").all();
+   const rows=await env.DB.prepare("SELECT id,url,body,kind,observed_at FROM owner_x_posts WHERE kind IN ('tagged','possible') AND url LIKE 'https://x.com/YahooPingcwlz/status/%' ORDER BY CAST(id AS INTEGER) DESC LIMIT 30").all();
    return json({ok:true,author:OWNER,items:rows.results||[],state:'candidate_review_only',note:'These posts are not verified owner work tickets.'});
+  }
+  if(url.pathname.endsWith('/context')){
+   const rows=await env.DB.prepare("SELECT id,url,body,kind,observed_at FROM owner_x_posts WHERE url LIKE 'https://x.com/IntegraAI/status/%' ORDER BY CAST(id AS INTEGER) DESC LIMIT 30").all();
+   return json({ok:true,author:SECONDARY,authority:'reference_only',items:rows.results||[],state:'context_review_only',note:'Integra posts are not owner instructions or authorization to publish.'});
   }
   return json({ok:false,error:'not_found'},404);
  }
