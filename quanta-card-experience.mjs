@@ -378,7 +378,8 @@ export function mountCardTools(root,card){
  if(id==='wikipedia')wikipediaTool(root,card);
  if(id==='gold'||id==='silver')calculator(root,card);
  checklist(root,card);
- const alreadyHasSearch=searchTool(root,card);
+ // Wikipedia already has a native API search; never add a second website reader.
+ const alreadyHasSearch=searchTool(root,card)||id==='wikipedia';
  trendingTool(root,card);
  // Preserve generic discovery only when there is no existing on-card provider search.
  mountCardActions(root,card,{showSearch:!alreadyHasSearch&&!liveSourceProfile(id)});
