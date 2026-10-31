@@ -62,3 +62,10 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 3. Reconcile first-party #1273 and Gitpal #2 in safe dependency order; verify actual mobile behavior and leave Gitcoin wallet issuance disabled absent a separate authorized ledger.
 
 **Status:** 🟡 `review_pending`; progress_percent **unknown**; sessions_spent **4 documented Git-family continuity turns including this ledger session**; remaining estimate **unknown**. No new lease or fence claimed. Do not treat green CI as independent approval.
+
+## Ledger source and test receipt · 2026-10-31 UTC
+
+- Draft ledger PR [#1276](https://github.com/www-infinity4/QuantaPhi/pull/1276): created this `TICKET-1250.md`, added its `INDEX.md` route, and added zero-dependency Node contract tests plus `.github/workflows/unfinished-work-ledger.yml` (read-only `contents` permission).
+- Commit sequence: `d4daea6cd85c35e3795c30b7596fbaeaed4f3116` (ticket), `516b540747314f1c96364ef668d3c84effc401e2` (index), `0a88c362c7409e73a13c496fd201357221db5f84` and `6b3bf1456669449b0ab1edc4338bbfef7cfa53fe` (test/correction), `244807a0e5a02e2fb09006887055459008a0e5ac` (workflow).
+- [Dedicated GitHub Actions run 41200952588](https://github.com/www-infinity4/QuantaPhi/actions/runs/41200952588): **SUCCESS**, `Check ticket and index contracts` step successful at source head `244807a0e5a02e2fb09006887055459008a0e5ac`. Other associated workflows were partially observed; do not claim full exact-head CI or independent approval yet.
+- This is **source-tested ledger enforcement**, not Copilot production repair, merge, Cloudflare deployment or Android acceptance. Keep #1272's independent review gate intact.
