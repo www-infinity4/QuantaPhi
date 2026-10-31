@@ -1880,6 +1880,7 @@ async function openConversation(id){
  if(ownerReady){
   try{
    const result=await conversationApi('sessions-get',id);
+   if(ownerReady!==ownerReadyAtStart||ownerHeaders!==ownerAtStart)throw Error('owner_connection_changed');
    // Fail closed if the cloud response belongs to a different session; never
     // display or persist another thread's turns in this device's History.
     if(!Array.isArray(result.messages)||!result.session||result.session.id!==id)throw Error('cloud_folder_identity_mismatch');
