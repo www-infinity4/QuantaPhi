@@ -41,3 +41,31 @@ test('index references only existing ticket files', () => {
     assert.ok(existsSync(join(new URL(folder).pathname, match[1])), match[1] + ' missing');
   }
 });
+
+test('ticket front matter rejects unsupported completion and unfenced lease claims', () => {
+  const files = readdirSync(folder).filter(name => /^TICKET-\d+\.md$/.test(name));
+  for (const filename of files) {
+    const body = read('work/unfinished/' + filename);
+    const match = body.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
+    assert.ok(match, filename + ' must start with machine-readable YAML front matter');
+    const metadata = match[1];
+    const field = key => metadata.match(new RegExp('^' + key + ':\\s*(.*)$', 'm'))?.[1]?.trim();
+    for (const key of ['issue', 'state', 'dot', 'progress_percent', 'progress_basis',
+      'sessions_spent', 'sessions_remaining_estimate', 'lease_id', 'fence',
+      'next_action', 'merged', 'deployed', 'live_verified']) {
+      assert.notEqual(field(key), undefined, filename + ' missing front-matter field ' + key);
+    }
+    assert.match(field('sessions_spent'), /^(0|[1-9]\d*)$/, filename + ' sessions_spent must be counted');
+    assert.match(field('progress_percent'), /^(unknown|100|[1-9]?\d)$/, filename + ' percent must be evidence-based');
+    const lease = field('lease_id');
+    const fence = field('fence');
+    const unclaimed = value => value === 'null' || value === 'unknown' || value === '';
+    assert.equal(unclaimed(lease), unclaimed(fence), filename + ' must not claim an unfenced lease');
+    if (field('progress_percent') === '100') {
+      assert.equal(field('state'), 'complete', filename + ' 100% requires accepted completion');
+      assert.match(field('dot'), /🟢/, filename + ' 100% requires accepted green state');
+      assert.ok(field('progress_basis') && field('progress_basis') !== 'unknown',
+        filename + ' 100% requires a documented acceptance basis');
+    }
+  }
+});
