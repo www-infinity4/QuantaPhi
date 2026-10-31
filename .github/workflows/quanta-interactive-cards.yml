@@ -100,6 +100,8 @@ jobs:
         run: |
           node --check quanta-card-experience.mjs
           node --check infinity-coin-cards.mjs
+          node --check coin-media-discovery.mjs
+          node --check workers/quantaphi-site/coin-media-pool.mjs
           node --check quick-card-search-core.mjs
           node --check workers/quantaphi-site/worker.js
           node --check quanta-card-live-source.mjs
@@ -130,7 +132,7 @@ jobs:
           node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Verify Infinity braided coin registry and safe backend diagnostics
-        run: node --test test/infinity-coin-cards.test.mjs test/infinity-coin-service.test.cjs
+        run: node --test test/infinity-coin-cards.test.mjs test/infinity-coin-service.test.cjs test/infinity-coin-media-pool.test.mjs test/infinity-coin-media-discovery.test.mjs
       - name: Run interactive card regression tests
         run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
       - name: Check Infinity accepted catalog and browser action contracts
