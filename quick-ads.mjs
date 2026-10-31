@@ -1,10 +1,10 @@
-import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-core.mjs?v=20261027-game4';
-/* QuantaPhi Quick Ads: event-driven, silent, dismissible and limited to Game 4.
+import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-core.mjs?v=20261028-game5b';
+/* QuantaPhi Quick Ads: event-driven, silent, dismissible and limited to Game 5 day.
  * Server feed establishes live vs final; network errors fail closed.
  * No merchant, wallet, search or account data leaves this module. */
 (()=>{
  if(typeof window==='undefined'||typeof document==='undefined')return;
- const KEY='quantaphi:worldseries-quickads:20261027:v1';
+ const KEY='quantaphi:worldseries-quickads:20261028:v1';
  const read=()=>{try{return JSON.parse(sessionStorage.getItem(KEY)||'{}')}catch{return {}}};
  const state={...read(),counts:{...(read().counts||{})},recent:[...(read().recent||[])]};
  const save=()=>{try{sessionStorage.setItem(KEY,JSON.stringify(state))}catch{}};
@@ -25,7 +25,7 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
   if(content!==undefined)el.textContent=content;
   return el;
  }
- const STATUS_URL='https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=10/27/2026';
+ const STATUS_URL='https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=10/28/2026';
  async function live(){
   if(!inGameWindow()){hide();return 'inactive';}
   const now=Date.now();
@@ -41,7 +41,7 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
     liveState=gameLiveStatus(await response.json());
    }catch{liveState='unknown';}
    finally{clearTimeout(timeout);checking=null;}
-   if(liveState==='final'||!inGameWindow())hide();
+   if(!['scheduled','live'].includes(liveState)||!inGameWindow())hide();
    return liveState;
   })();
   return checking;
@@ -78,7 +78,7 @@ import {GAME_END,inGameWindow,gameLiveStatus,chooseQuickAd} from './quick-ads-co
   if(Number(state.total||0)>=30)return;
   if(moves%2!==0)return; // one non-blocking pop-up per two card transitions at most
   const status=await live();
-  if(status!=='live'||revision!==seq||document.hidden||!inGameWindow())return;
+  if(!['scheduled','live'].includes(status)||revision!==seq||document.hidden||!inGameWindow())return;
   const pick=chooseQuickAd(detail,state.counts,state.recent,Date.now());
   if(pick)display(pick);
  };

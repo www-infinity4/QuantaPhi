@@ -26,6 +26,9 @@ on:
       - 'quanta-feed.*'
       - 'quanta-feed-rank.mjs'
       - 'infinity-accepted*'
+      - 'infinity-affiliates*'
+      - 'test/infinity-affiliates.test.mjs'
+      - 'test/infinity-affiliates.browser.spec.mjs'
       - 'quick-card-tinyfish-actions.mjs'
       - 'workers/infinity-brain-clock/quick-card-browser*'
       - 'test/infinity-accepted*'
@@ -60,6 +63,9 @@ on:
       - 'phi-assimilation.js'
       - 'test/assimilation-mobile-accessibility.test.mjs'
       - 'test/quanta-card-browser.spec.mjs'
+      - 'quick-card-preview.mjs'
+      - 'quick-card-preview.css'
+      - 'test/quick-card-preview.browser.spec.mjs'
       - 'test/quanta-card-experience.test.mjs'
       - 'test/source-quick-cards.test.mjs'
       - 'test/quanta-card-feed.test.mjs'
@@ -91,6 +97,7 @@ jobs:
           node --check design-lab/app.mjs
           node --check design-lab/quick-card.mjs
           node --check quanta-card-actions.mjs
+          node --check quick-card-preview.mjs
           node --check art-museum-quick-cards.mjs
           node --check verified-brand-sports-catalog.mjs
           node --check verified-brand-sports-cards.mjs
@@ -98,6 +105,8 @@ jobs:
           node --check infinity-accepted-catalog.mjs
           node --check infinity-accepted-sources.mjs
           node --check infinity-accepted-cards.mjs
+          node --check infinity-affiliates-core.mjs
+          node --check infinity-affiliates-card.mjs
           node --check quick-card-tinyfish-actions.mjs
           node --check workers/infinity-brain-clock/quick-card-browser-policy.mjs
           node --check workers/infinity-brain-clock/quick-card-browser.mjs
@@ -111,7 +120,7 @@ jobs:
           node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
-        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs
+        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
       - name: Check Infinity accepted catalog and browser action contracts
         run: node --test test/infinity-accepted.test.mjs test/quick-card-tinyfish.test.mjs test/brain-clock.test.mjs test/tinyfish-broker-bridge.test.mjs
       - name: Check assimilation accessibility
@@ -132,4 +141,4 @@ jobs:
         run: |
           node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
-          npx playwright test test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/world-series-browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs --reporter=line --workers=1

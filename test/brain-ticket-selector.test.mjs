@@ -77,3 +77,16 @@ test('maximum age and look-ahead are bounded; malformed or absent created_at doe
  assert.equal(ticketAdmission(unknown,{now}).eligible,true);
  assert.equal(ticketAdmission(mk('OLD',{days:20}),{now,maximumAgeDays:Infinity}).reason,'background_ticket_aged_out');
 });
+
+test('immutable source edit path is a technical evidence blocker, never an owner permission request or runnable job',()=>{
+ const summary='Reader blocker: owner_input_required: The failure report does not specify which repository file triggered the “Edit must match immutable source exactly once” error. The exact path is required to locate the immutable-source violation.';
+ const job=mk('IW-20261028-DD1151EC',{days:1,status:'blocked',summary,jobId:'TASK-2'});
+ const snapshot=JSON.stringify(job);
+ assert.deepEqual(ticketAdmission(job,{now}),{eligible:false,reason:'technical_source_evidence_required',selected:false});
+ assert.equal(checkOwnerRunnerRequest(job.job,{now}).reason,'technical_source_evidence_required');
+ assert.equal(ticketAdmission(job,{now,requested:{ticketId:job.ticket.id,jobId:'TASK-2'}}).eligible,false);
+ assert.equal(JSON.stringify(job),snapshot,'diagnosis must not requeue or mutate blocked tickets');
+ const genuine=mk('SECURE',{status:'blocked',summary:summary+' Owner approval required for wallet access.'});
+ assert.equal(ticketAdmission(genuine,{now}).reason,'owner_decision_required');
+ assert.equal(checkOwnerRunnerRequest(genuine.job,{now}).reason,'owner_decision_required');
+});

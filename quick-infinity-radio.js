@@ -64,6 +64,7 @@
   let trackIndex = 0;
   let failures = 0;
   let generation = 0;
+  let playbackRequested = false;
   function setPlaying(playing) {
     play.textContent = playing ? 'Ⅱ' : '▶';
     play.setAttribute('aria-label',playing?'Pause Infinity Radio':'Play Infinity Radio');
@@ -74,6 +75,7 @@
     status.textContent = tracks[trackIndex].title;
   }
   function start() {
+    if (!playbackRequested) return;
     if (!audio.getAttribute('src')) setTrack();
     const current = ++generation;
     status.textContent = 'Connecting · ' + tracks[trackIndex].title;
@@ -85,13 +87,16 @@
       status.textContent = tracks[trackIndex].title;
     }).catch(() => {
       if (current !== generation) return;
+      playbackRequested = false;
       setPlaying(false);
       status.textContent = 'Playback unavailable · try Full station';
     });
   }
   function advance() {
+    // A queued media error/ended event is not a new Play gesture.
+    if (!playbackRequested) return;
     if (++failures > tracks.length) {
-      audio.pause(); ++generation; setPlaying(false);
+      playbackRequested = false; audio.pause(); ++generation; setPlaying(false);
       status.textContent = 'Audio sources unavailable · open Full station';
       return;
     }
@@ -100,9 +105,10 @@
     start();
   }
   play.addEventListener('click',() => {
-    if (!audio.paused) {
-      ++generation; audio.pause(); setPlaying(false); status.textContent = 'Paused · ' + tracks[trackIndex].title;
+    if (playbackRequested) {
+      playbackRequested = false; ++generation; audio.pause(); setPlaying(false); status.textContent = 'Paused · ' + tracks[trackIndex].title;
     } else {
+      playbackRequested = true;
       failures = 0;
       start();
     }
@@ -112,5 +118,8 @@
     if (audio.getAttribute('src') && !audio.ended) advance();
   });
   audio.addEventListener('pause',() => { if (audio.paused) setPlaying(false); });
-  audio.addEventListener('playing',() => { setPlaying(true); });
+  audio.addEventListener('playing',() => {
+    if (!playbackRequested) { audio.pause(); setPlaying(false); return; }
+    setPlaying(true);
+  });
 })();

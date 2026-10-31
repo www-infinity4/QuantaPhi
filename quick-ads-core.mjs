@@ -1,8 +1,9 @@
-/* QuantaPhi independent Quick Ads: one-game campaign, no paid-sponsor assertions.
+import {GAME_START,CAMPAIGN_START,TONIGHT_END,GAME_PK} from './world-series-score.mjs?v=20261028-game5b';
+export {GAME_START,CAMPAIGN_START};
+/* QuantaPhi independent Quick Ads: pregame and game campaign, no paid-sponsor assertions.
  * Public outbound destinations are a reviewed allowlist; no unapproved scraping,
  * alcohol, gambling, cookies, wallet reads or API keys. */
-export const GAME_START=Date.parse('2026-10-27T19:00:00-05:00');
-export const GAME_END=Date.parse('2026-10-27T23:59:59-05:00');
+export const GAME_END=TONIGHT_END;
 const ad=(id,name,tagline,category,href,tone,primary=false)=>Object.freeze({
  id,name,tagline,category,href,tone,primary
 });
@@ -27,29 +28,63 @@ export const QUICK_ADS=Object.freeze([
  ad('google','Google','Find more websites and useful answers','technology','https://www.google.com/','#2361ad'),
  ad('best-buy','Best Buy','Shop electronics and useful accessories','technology','https://www.bestbuy.com/','#113a84'),
  ad('ebay','eBay','Discover collectibles and vintage finds','shopping','https://www.ebay.com/','#d44636'),
- ad('walmart','Walmart','Explore groceries and everyday essentials','shopping','https://www.walmart.com/','#1378bf')
+ ad('walmart','Walmart','Explore groceries and everyday essentials','shopping','https://www.walmart.com/','#1378bf'),
+ ad('apple-iphone','Apple iPhone','Explore iPhone models at Apple','technology','https://www.apple.com/iphone/','#202930'),
+ ad('helzberg','Helzberg Diamonds','Explore jewelry at the official Helzberg store','shopping','https://www.helzberg.com/','#843e6c'),
+ ad('infinity-affiliates','Infinity Affiliates','Explore Infinity Accepted brands and product affiliations','shopping','https://quantaphi.org/infinity-affiliates.html','#135e9d')
 ]);
 export function inGameWindow(now=Date.now()){
- return Number.isFinite(now)&&now>=GAME_START&&now<=GAME_END;
+ return Number.isFinite(now)&&now>=CAMPAIGN_START&&now<=GAME_END;
 }
-export function isOfficialUrl(href){
- try{const u=new URL(href);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.');}
- catch{return false;}
+// Deliberately separate from QUICK_ADS: a new ad needs a reviewed, exact official
+// destination. A syntactically valid HTTPS link alone is not brand verification.
+const REVIEWED_AD_DESTINATIONS=Object.freeze({
+ 'capital-one':'https://www.capitalone.com/',
+ 't-mobile':'https://www.t-mobile.com/',
+ 'google-cloud':'https://cloud.google.com/',
+ 'apple-tv':'https://tv.apple.com/',
+ 'mastercard':'https://www.mastercard.com/',
+ 'att':'https://www.att.com/',
+ 'starbucks':'https://www.starbucks.com/',
+ 'liberty-mutual':'https://www.libertymutual.com/',
+ 'progressive':'https://www.progressive.com/',
+ 'fox-nation':'https://nation.foxnews.com/',
+ 'fox-shows':'https://www.fox.com/',
+ 'mlb-shop':'https://www.mlbshop.com/',
+ 'mlb':'https://www.mlb.com/postseason',
+ 'fox-sports':'https://www.foxsports.com/mlb',
+ 'youtube':'https://www.youtube.com/',
+ 'google':'https://www.google.com/',
+ 'best-buy':'https://www.bestbuy.com/',
+ 'ebay':'https://www.ebay.com/',
+ 'walmart':'https://www.walmart.com/',
+ 'apple-iphone':'https://www.apple.com/iphone/',
+ 'helzberg':'https://www.helzberg.com/',
+ 'infinity-affiliates':'https://quantaphi.org/infinity-affiliates.html',
+});
+export function isOfficialUrl(href,id){
+ if(typeof id!=='string'||!Object.hasOwn(REVIEWED_AD_DESTINATIONS,id))return false;
+ try{
+  const u=new URL(href);
+  return u.protocol==='https:'&&!u.username&&!u.password&&
+   u.href===REVIEWED_AD_DESTINATIONS[id];
+ }catch{return false;}
 }
 export function gameLiveStatus(payload){
  const games=(payload?.dates||[]).flatMap(d=>Array.isArray(d.games)?d.games:[]);
- const game=games.find(g=>/world series/i.test(g?.seriesDescription||'')||
-  (/Brewers/i.test(g?.teams?.away?.team?.name||'')&&/Rays/i.test(g?.teams?.home?.team?.name||'')));
+ const game=games.find(g=>Number(g?.gamePk)===GAME_PK);
  if(!game)return 'unknown';
  const state=String(game.status?.abstractGameState||'').toLowerCase();
  const detailed=String(game.status?.detailedState||'').toLowerCase();
+ // MLB can retain Preview/Live while the more-specific status stops play.
+ if(/postpon|cancel|suspend|delay/.test(detailed))return 'unavailable';
  if(state==='live'||detailed==='in progress'||detailed==='manager challenge')return 'live';
  if(state==='final'||/final|completed|game over/.test(detailed))return 'final';
  if(state==='preview'||/scheduled|warmup|pre-game/.test(detailed))return 'scheduled';
  return 'unknown';
 }
 export function eligibleQuickAds(now=Date.now()){
- return inGameWindow(now)?QUICK_ADS.filter(a=>isOfficialUrl(a.href)):[];
+ return inGameWindow(now)?QUICK_ADS.filter(a=>isOfficialUrl(a.href,a.id)):[];
 }
 // Session-first rotation: never replay the same ad while a different unseen one
 // exists, then restart the queue with adjacent/topic relevance and view penalty.

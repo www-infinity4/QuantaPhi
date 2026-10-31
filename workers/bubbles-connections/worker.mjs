@@ -7,6 +7,7 @@ import {handleConnections} from './router.mjs';
 import {ConnectorPairing} from './pairing.mjs';
 import {connectionResult} from './completion.mjs';
 import {checkConnectionSetup} from './setup-check.mjs';
+import {walletEmailPreference} from './wallet-email.mjs';
 
 export class UserConnections extends DurableObject {
   constructor(ctx,env) {
@@ -23,6 +24,7 @@ export class UserConnections extends DurableObject {
     this.service = new ConsentService({storage:ctx.storage,vault:new TokenVault(JSON.parse(env.CONNECTION_KEYRING || '{}'),env.CONNECTION_ACTIVE_KEY),adapters});
   }
   async list(input) {return this.service.list(input);}
+  async walletEmail(input) {return walletEmailPreference(this.service,input);}
   async gateStatus(input) {return this.service.gateStatus(input);}
   async githubRepositories(input) {return this.service.githubRepositories(input);}
   async cloudflareAccounts(input) {return this.service.cloudflareAccounts(input);}

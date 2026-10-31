@@ -21,7 +21,7 @@ test('Oracle playback records an authenticated observation rather than paying on
  assert.match(tv,/video\.onplaying/);
  assert.match(tv,/video\.onpause/);
  assert.match(tv,/productionTimer/);
- assert.match(html,/phi-channel-cards\.js\?v=20261015-credits1/);
+ assert.match(html,/phi-channel-cards\.js\?v=20261030-controls1/);
  assert.match(html,/media-star-creator\.js\?v=20261015-credits1/);
  assert.doesNotThrow(()=>new Function(tv));
 });
