@@ -63,3 +63,27 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{background:transparent;co
 .oracle-family-jump [data-family-count]{display:inline-block;min-width:25px;margin-left:3px;
  border-radius:20px;background:#e0edf9;padding:3px 5px;color:#14416f;font-size:11px;font-variant-numeric:tabular-nums}
 @media(max-width:410px){.oracle-family-jump{gap:5px}.oracle-family-jump button{font-size:11px;padding:8px 3px;min-height:50px}}
+
+
+/* Following stream: actual original publisher items instead of name-only promotional tiles.
+ * Controls stay neutral and do not imply sponsorship or authentication. */
+.oracle-following-feed[hidden]{display:none!important}
+.oracle-following-feed{min-width:0;display:grid;gap:9px;margin:10px 0 17px;padding:8px 0;border-bottom:1px solid #e4e4e4}
+.oracle-following-feed .ofp-status{margin:0;color:#454545;font:650 13px/1.5 system-ui,sans-serif}
+.oracle-following-feed .ofp-note{font:450 11px/1.45 system-ui,sans-serif;color:#696969;margin:0}
+.oracle-following-feed .ofp-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:12px;min-width:0}
+.oracle-following-feed .ofp-item{display:grid;grid-template-rows:auto 1fr;background:#fff;border:1px solid #dfdfdf;border-radius:14px;overflow:hidden;min-width:0}
+.oracle-following-feed .ofp-photo{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.oracle-following-feed .ofp-info{display:grid;align-content:start;gap:7px;padding:13px;min-width:0}
+.oracle-following-feed .ofp-source{font:750 11px/1.4 system-ui,sans-serif;color:#565656;margin:0}
+.oracle-following-feed .ofp-title{font:750 18px/1.25 system-ui,sans-serif;color:#222;margin:0;overflow-wrap:anywhere}
+.oracle-following-feed .ofp-description{font:450 13px/1.45 system-ui,sans-serif;color:#494949;margin:0;overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.oracle-following-feed .ofp-price{font:800 15px/1.35 system-ui,sans-serif;color:#252525;margin:0}
+.oracle-following-feed .ofp-disclosure{font:450 10px/1.35 system-ui,sans-serif;color:#686868;margin:2px 0 0}
+.oracle-following-feed .ofp-actions{display:flex;flex-wrap:wrap;gap:7px}
+.oracle-following-feed .ofp-action,.oracle-following-feed .ofp-more{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;min-height:44px;padding:9px 11px;border:1px solid #cacaca;border-radius:11px;background:#fff;color:#252525!important;font:750 12px/1.35 system-ui,sans-serif;cursor:pointer}
+.oracle-following-feed .ofp-action:hover,.oracle-following-feed .ofp-more:hover{background:#f3f3f3}
+.oracle-following-feed .ofp-unavailable{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;min-height:48px;padding:8px 12px;border-bottom:1px solid #e1e1e1;background:#fff;color:#555;font:550 12px/1.4 system-ui,sans-serif}
+.oracle-following-feed .ofp-more[hidden]{display:none!important}
+.oracle-following-feed :is(a,button):focus-visible{outline:3px solid #333;outline-offset:2px}
+@media(max-width:600px){.oracle-following-feed .ofp-items{grid-template-columns:1fr}.oracle-following-feed .ofp-item{grid-template-columns:minmax(116px,42%) 1fr;grid-template-rows:auto}.oracle-following-feed .ofp-photo{height:100%;aspect-ratio:auto;min-height:145px;object-fit:cover}.oracle-following-feed .ofp-title{font-size:15px}.oracle-following-feed .ofp-info{padding:11px}.oracle-following-feed .ofp-actions{display:grid;grid-template-columns:1fr}.oracle-following-feed .ofp-action{width:100%}.oracle-following-feed .ofp-item.ofp-no-photo{grid-template-columns:1fr}}

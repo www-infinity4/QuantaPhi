@@ -112,7 +112,7 @@ const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
 let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
 const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
-let feedState=null,proposed=null;
+let feedState=null,proposed=null,followingPublisherFeed=null;
 const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
 let viewerTouched=false,selectionVersion=0;
@@ -189,6 +189,7 @@ function updateTabs(){
   const total=button.querySelector('[data-family-count]');if(total)total.textContent=String(count);
  }
  tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
+ followingPublisherFeed?.sync({tab:selectedTab});
  if(follow){
   const saved=Boolean(active&&feedState?.following.includes(active.feedId));
   follow.hidden=!active;
@@ -312,6 +313,17 @@ window.addEventListener('quantaphi:feed-updated',e=>{
  feedState=readDirections();
  updateTabs();predict();
 });
+void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountFollowingPublisherFeed})=>{
+ const target=document.getElementById('oracleFollowingFeed');
+ followingPublisherFeed=mountFollowingPublisherFeed(target,{
+  getFollowing:()=>directionApi?readDirections().following:[],
+  getProfiles:()=>entries.filter(e=>e.id.startsWith('source-')&&e.node?.dataset?.official).map(e=>({
+   id:e.feedId,name:e.node.dataset.sourceName||e.title,official:e.node.dataset.official,
+   category:e.node.dataset.sourceCategory||e.category,query:e.node.dataset.sourceQuery||e.title
+  }))
+ });
+ followingPublisherFeed?.sync({tab:selectedTab});
+}).catch(()=>{const target=document.getElementById('oracleFollowingFeed');if(target)target.hidden=true;});
 Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1'),
  import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{

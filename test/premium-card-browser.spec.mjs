@@ -50,3 +50,33 @@ test('a shared original-tool link waits for its actual controls before spotlight
  await expect(page.locator('#oracleCardStage #sw-idea')).toBeVisible();
  await expect(page.locator('#oracleCardStage .oracle-original-cover h2')).toHaveText('Story Writer');
 });
+
+
+test('Following displays genuine publisher listings only after Follow and preserves Heritage sign-in handoff',async({page})=>{
+ const at=new Date().toISOString();
+ const lot='https://coins.ha.com/itm/morgan-dollars/verified-fixture/a/12345-678.s';
+ await page.route('**/data/quick-card-spotlights-latest.json?**',route=>route.fulfill({json:{
+  schema_version:1,checked_at:at,cards:{heritage:{schema_version:1,items:[{
+   url:lot,image:'https://images.ha.com/lot-fixture.jpg',title:'1885 Morgan Silver Dollar · Heritage lot',
+   description:'Original Heritage lot page preview',checked_at:at,kind:'product'
+  }]}}
+ }}));
+ await page.route('https://images.ha.com/**',route=>route.fulfill({contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="400" height="300" fill="#ddd"/></svg>'}));
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/**',route=>route.fulfill({json:{results:[]}}));
+ await page.goto(base+'/?card=heritage',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage [data-source-id="heritage"]');
+ await expect(card).toBeVisible({timeout:20000});
+ await expect(card.locator('a.qca-signin')).toHaveAttribute('href','https://www.ha.com/c/login.zx');
+ const listing=page.locator('#oracleFollowingFeed');
+ await expect(listing).toBeHidden();
+ await page.locator('#oracleCardFollow').click();
+ await page.getByRole('tab',{name:'Following',exact:true}).click();
+ await expect(listing).toBeVisible();
+ await expect(listing.getByText('1885 Morgan Silver Dollar · Heritage lot')).toBeVisible({timeout:20000});
+ await expect(listing.getByRole('link',{name:'View original listing'})).toHaveAttribute('href',lot);
+ await expect(listing.locator('img.ofp-photo')).toHaveAttribute('src','https://images.ha.com/lot-fixture.jpg');
+ await expect(listing.getByText(/not a paid Infinity advertisement/)).toBeVisible();
+ await page.locator('#oracleCardFollow').click();
+ await expect(listing.getByText('1885 Morgan Silver Dollar · Heritage lot')).toHaveCount(0);
+ await expect(listing).toContainText('Follow auction houses');
+});
