@@ -58,7 +58,7 @@ async function managedPages(request,token){
 function pageList(pages){return pages.map(p=>({id:p.id,name:clean(p.name),instagram:p.instagram_business_account&&numberId(p.instagram_business_account.id)?{id:p.instagram_business_account.id,username:clean(p.instagram_business_account.username)}:null,
  canPublish:Array.isArray(p.tasks)&&p.tasks.includes('CREATE_CONTENT')}))}
 const validImage=url=>{
- try{const u=new URL(url);return u.protocol==='https:'&&u.hostname==='quantaphi.org'&&!u.username&&!u.password&&!u.port&&/\.(?:jpg|jpeg|png)(?:$|\?)/i.test(u.pathname)}catch{return false}
+ try{const u=new URL(url);return u.protocol==='https:'&&u.hostname==='quantaphi.org'&&!u.username&&!u.password&&!u.port&&/\.(?:jpg|jpeg)(?:$|\?)/i.test(u.pathname)}catch{return false}
 };
 const compactPosts=(data,instagram)=>{
  if(!Array.isArray(data?.data))fail();
@@ -69,7 +69,7 @@ const compactPosts=(data,instagram)=>{
   type:instagram?clean(item.media_type):'POST',source:instagram?'Instagram':'Facebook'
  }))
 };
-export async function executeMeta(service,{userId,id,operation,pageId,message,imageUrl,confirmed},request=fetch){
+export async function executeMeta(service,{userId,id,operation,pageId,message,imageUrl,confirmed},request=fetch,sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms))){
  const action=({'pages':'pages.read','facebook.feed':'pages.read','facebook.publish':'pages.publish','instagram.feed':'instagram.read','instagram.publish':'instagram.publish'})[operation];
  if(!action)throw Error('unsupported_action');
  return service.withCredential({userId,id,provider:'meta',action},async token=>{
@@ -94,6 +94,15 @@ export async function executeMeta(service,{userId,id,operation,pageId,message,im
   if(confirmed!==true||!validImage(imageUrl)||typeof message!=='string'||message.length>2000)throw Error('meta_content_invalid');
   const draft=await graph(request,API+'/'+ig+'/media',page.access_token,{method:'POST',fields:{image_url:imageUrl,caption:message}});
   if(!numberId(draft.id))fail();
+  // Only publish media after Meta confirms the upload finished processing.
+  let ready=false;
+  for(let attempt=0;attempt<5;attempt++){
+   if(attempt)await sleep(1000);
+   const state=await graph(request,API+'/'+draft.id+'?fields=status_code',page.access_token);
+   if(state.status_code==='FINISHED'){ready=true;break;}
+   if(state.status_code==='ERROR'||state.status_code==='EXPIRED')break;
+  }
+  if(!ready)throw Error('meta_media_not_ready');
   const published=await graph(request,API+'/'+ig+'/media_publish',page.access_token,{method:'POST',fields:{creation_id:draft.id}});
   if(!numberId(published.id))fail();return {ok:true,published:true,postId:published.id,source:'Meta Graph API'};
  });
