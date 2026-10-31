@@ -13,6 +13,21 @@ const previous=document.getElementById('iqpPrevious');
 const next=document.getElementById('iqpNext');
 let active=pluginQuickCard(params.get('card'))?.id||PLUGIN_QUICK_CARDS[0].id;
 let eligible=PLUGIN_QUICK_CARDS;
+const taskDrafts=new Map();
+const taskDraftPrefix='quantaPhiPluginTaskDraftV1:';
+function readTaskDraft(cardId){
+ if(taskDrafts.has(cardId))return taskDrafts.get(cardId);
+ let value='';
+ try{value=String(sessionStorage.getItem(taskDraftPrefix+cardId)||'').slice(0,1500)}catch{}
+ taskDrafts.set(cardId,value);
+ return value;
+}
+function keepTaskDraft(cardId,value){
+ const text=String(value||'').slice(0,1500);
+ taskDrafts.set(cardId,text);
+ try{sessionStorage.setItem(taskDraftPrefix+cardId,text);return true}
+ catch{return false}
+}
 for(const category of PLUGIN_CATEGORIES){
  const option=el('option','',category);option.value=category;categoryInput.append(option);
 }
@@ -88,10 +103,16 @@ function render(updateUrl=false){
  details.append(el('h3','','Your task workspace'));
  const label=el('label','', 'Describe what you want to do with '+card.name);
  const entry=el('textarea','iqp-task');entry.rows=3;entry.maxLength=1500;entry.placeholder='Example: '+card.feature+'. Include your own requirements…';
+ entry.value=readTaskDraft(card.id);
  entry.id='iqpTaskInput';label.htmlFor=entry.id;
  const row=el('div','iqp-actions');
  const copy=el('button','iqp-btn iqp-primary','Copy task');copy.type='button';
- const state=el('p','iqp-message','Task stays on your device until you choose an action.');
+ const state=el('p','iqp-message',entry.value?'Restored your draft saved in this tab. No online backup or provider submission.':'Draft saved in this tab as you type. No online backup or provider submission.');
+ entry.addEventListener('input',()=>{
+  const stored=keepTaskDraft(card.id,entry.value);
+  state.textContent=stored?'Draft saved in this tab. No online backup or provider submission.':
+   'Draft kept while this page remains open. Use Copy task for a backup.';
+ });
  state.setAttribute('role','status');state.setAttribute('aria-live','polite');
  copy.addEventListener('click',async()=>{
   const text=entry.value.trim();
