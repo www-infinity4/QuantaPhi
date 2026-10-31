@@ -25,6 +25,7 @@ test('TikTok and YouTube lead with in-card player and one optional discovery loo
 test('source cards with direct search never duplicate a generic TinyFish input',()=>{
  const experience=source('quanta-card-experience.mjs');
  assert.match(experience,/const alreadyHasSearch=searchTool\(root,card\)/);
+ assert.match(experience,/const alreadyHasSearch=searchTool\(root,card\)\|\|id==='wikipedia'/);
  assert.match(experience,/showSearch:!alreadyHasSearch&&!liveSourceProfile\(id\)/);
  assert.match(experience,/searchTool\(root,card\);mountCardActions\(root,card,\{showSearch:false\}\);return/);
  // Non-search toolbar actions remain reachable on the same original card.
