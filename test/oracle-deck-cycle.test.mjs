@@ -13,7 +13,7 @@ const cards=[
 
 for(const tab of ['public','for-you','following']){
  test(tab+' rotates through every ready card despite two dominant favorites',()=>{
-  let state={...cleanFeedState({following:cards.map(c=>c.id),
+  let state={...cleanFeedState({following:tab==='following'?cards.map(c=>c.id):[],
    counts:{'walmart-shopping':300,'deck-shop':250}}),catalog:cards,
    quantScores:{'walmart-shopping':70,'deck-shop':70}};
   let current=cards[0].id;
