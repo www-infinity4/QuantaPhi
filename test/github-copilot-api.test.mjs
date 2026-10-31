@@ -11,6 +11,7 @@ test('rejects unverified tokens and malformed repositories before requests',asyn
 test('creates Copilot issue with official assignee and does not claim PR exists',async()=>{
  let seen;
  const result=await githubCopilotRequest({...args,action:'build',prompt:'Build an accessible landing page and add tests'},mock((url,opt)=>{
+  if(url.pathname==='/repos/testowner/testrepo')return {default_branch:'main'};
   seen=JSON.parse(opt.body);
   assert.equal(url.pathname,'/repos/testowner/testrepo/issues');
   assert.equal(opt.headers.Authorization,'Bearer test-secret');
@@ -31,6 +32,7 @@ test('merge requires typed confirmation and passing CI',async()=>{
  await assert.rejects(githubCopilotRequest({...args,action:'merge',prNumber:3,confirmation:'MERGE testowner/testrepo#3'},mock((url)=>{
   calls.push(url.pathname);
   if(url.pathname.endsWith('/pulls/3'))return {state:'open',draft:false,mergeable:true,head:{sha}};
+  if(url.pathname.endsWith('/reviews'))return [{state:'APPROVED',user:{login:'reviewer'}}];
   if(url.pathname.endsWith('/status'))return {state:'success',total_count:1};
   if(url.pathname.endsWith('/check-runs'))return {check_runs:[{status:'completed',conclusion:'failure'}],total_count:1};
   throw Error('must not merge');
@@ -40,6 +42,7 @@ test('merge requires typed confirmation and passing CI',async()=>{
 test('successful guarded merge returns verified SHA',async()=>{
  const result=await githubCopilotRequest({...args,action:'merge',prNumber:3,confirmation:'MERGE testowner/testrepo#3'},mock((url)=>{
   if(url.pathname.endsWith('/pulls/3'))return {state:'open',draft:false,mergeable:true,head:{sha}};
+  if(url.pathname.endsWith('/reviews'))return [{state:'APPROVED',user:{login:'reviewer'}}];
   if(url.pathname.endsWith('/status'))return {state:'success',total_count:1};
   if(url.pathname.endsWith('/check-runs'))return {check_runs:[{status:'completed',conclusion:'success'}],total_count:1};
   if(url.pathname.endsWith('/merge'))return {merged:true,sha};
