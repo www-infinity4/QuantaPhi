@@ -181,7 +181,7 @@ export class AccountConnections {
     try{
       const result=await this.call('/start',{provider,actions});
       const authorization=new URL(result.authorizationUrl),state=authorization.searchParams.get('state');
-      const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':'';
+      const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':provider==='meta'?'www.facebook.com':'';
       if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||
          !/^[A-Za-z0-9_-]{43}$/.test(state||''))throw Error('Sign-in address rejected.');
       const returnPath=this.root.location?.pathname==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
