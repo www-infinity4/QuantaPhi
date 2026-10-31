@@ -55,7 +55,7 @@ test('onboarding appears in actual live carousel while completed cards stop recu
  assert.match(deck,/updateCardPost\(active\)/);
  assert.match(deck,/new CustomEvent\('quantaphi:feed-updated'/);
  assert.match(style,/\.oracle-card-post-note/);
- assert.match(html,/oracle-card-deck\.js\?v=20261028-front1-20261030-profile-follow/);
+ assert.match(html,/oracle-card-deck\.js\?v=20261030-profile-follow-v3/);
  assert.match(source('quanta-profile.html'),/quantaProfileStandalone/);
 });
 
