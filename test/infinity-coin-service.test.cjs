@@ -39,3 +39,36 @@ test('response 200 from unauthenticated upstream is not declared healthy',async(
  assert.equal(response.status,503);
  assert.equal((await response.json()).quantAi,'ROUTE_UNVERIFIED');
 });
+
+test('same-origin Alien Coin proxy forwards protected requests without cookies or CORS',async()=>{
+ const worker=(await app).default, original=globalThis.fetch;
+ let seen;
+ globalThis.fetch=async (url,init)=>{seen={url,init};return Response.json({token:{id:'alien-test'}});};
+ try{
+  const response=await worker.fetch(new Request(root+'/alien-coin/api/tokens?id=123',{
+   method:'POST',
+   headers:{Origin:root,Authorization:'Bearer secret_test',Cookie:'local=private','Content-Type':'application/json'},
+   body:JSON.stringify({profile:{zone:'Iowa'}})
+  }),{});
+  assert.equal(response.status,200);
+  assert.equal(seen.url,'https://alien-coin.marvaseater.workers.dev/api/tokens?id=123');
+  assert.equal(seen.init.headers.get('authorization'),'Bearer secret_test');
+  assert.equal(seen.init.headers.get('cookie'),null);
+  assert.equal(seen.init.headers.get('origin'),null);
+  assert.equal(await new Response(seen.init.body).text(),JSON.stringify({profile:{zone:'Iowa'}}));
+  assert.equal(response.headers.get('Access-Control-Allow-Origin'),null);
+  assert.equal(response.headers.get('Cache-Control'),'no-store');
+ }finally{globalThis.fetch=original;}
+});
+
+test('Alien Coin proxy rejects remote post origin and unknown API destinations',async()=>{
+ const worker=(await app).default;
+ const denied=await worker.fetch(new Request(root+'/alien-coin/api/tokens',{
+  method:'POST',headers:{Origin:'https://evil.example','content-type':'application/json'},body:'{}'
+ }),{});
+ assert.equal(denied.status,403);
+ const unknown=await worker.fetch(new Request(root+'/alien-coin/api/admin'),{});
+ assert.equal(unknown.status,404);
+ const deleting=await worker.fetch(new Request(root+'/alien-coin/api/tokens',{method:'DELETE'}),{});
+ assert.equal(deleting.status,405);
+});
