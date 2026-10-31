@@ -1,6 +1,6 @@
 /* Public listings from explicitly followed original source cards.
  * Never claim a third-party login exposes a private feed or bid permissions. */
-import {fetchSpotlights,publicImageUrl,sourceUrl} from './quick-card-spotlights.mjs';
+import {fetchSpotlights,publicImageUrl,sourceUrl} from './quick-card-spotlights.mjs?v=20261031-source-ad-first1';
 
 const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n;};
 const safeId=value=>typeof value==='string'&&/^[a-z0-9-]{1,70}$/.test(value);
@@ -57,7 +57,8 @@ function offerCard(item){
 }
 function unavailableRow(card){
  const article=el('div','ofp-unavailable');
- const line=el('span','',card.name+' · no verified listings to show right now');
+ const social=/^(Social|Community|Messaging|Video|News|Music|TV)/i.test(card.category||'');
+ const line=el('span','',card.name+(social?' · source posts require an authorized public feed':' · no verified listings to show right now'));
  const link=el('a','ofp-action','Open Quick Card');link.href='/?card='+encodeURIComponent(card.id);
  article.append(line,link);return article;
 }
@@ -88,7 +89,8 @@ export function mountFollowingPublisherFeed(host,{getProfiles,getFollowing}={}){
   const profiles=followedPublisherProfiles(follows(),candidates()).slice(0,shown);
   const key=profiles.map(x=>x.id).join('|');
   if(key!==lastKey){lastKey=key;paint();}
-  const missing=profiles.filter(p=>!Object.hasOwn(records,p.id)&&!pending.has(p.id));
+  const canRead=card=>!/^(Social|Community|Messaging|AI|Karaoke|TV|News|Video)/i.test(card.category||'');
+  const missing=profiles.filter(p=>canRead(p)&&!Object.hasOwn(records,p.id)&&!pending.has(p.id));
   if(!missing.length)return;
   // Bound network reads to followed public sources only; never forward cookies.
   await Promise.allSettled(missing.map(async card=>{
