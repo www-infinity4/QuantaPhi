@@ -1,6 +1,6 @@
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
 import {INFINITY_ACCEPTED_BRANDS} from './infinity-accepted-catalog.mjs';
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261026-live-results1';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261031-tv-guide1';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
 import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
