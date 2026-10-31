@@ -9,8 +9,8 @@ const CHANNELS=Object.freeze([
  {id:'UC3gNmTGu-TTbFPpfSs5kNkg',name:'Rotten Tomatoes Movieclips',kind:'movies'}
 ]);
 const FEATURED=Object.freeze([
- {id:'vXlUZlrh7AA',kind:'movies',title:'New movie trailers · Rotten Tomatoes Trailers (July 2026)',channel:'Rotten Tomatoes Trailers',published:'2026-07-13T00:00:00Z'},
- {id:'6gNEQE0AFf8',kind:'movies',title:'New movie trailers · Rotten Tomatoes Trailers (May 2026)',channel:'Rotten Tomatoes Trailers',published:'2026-05-26T00:00:00Z'}
+ {id:'D58cvO2Dr34',kind:'movies',title:'NEW MOVIE TRAILERS 2026 · KinoCheck compilation',channel:'KinoCheck.com',published:'2026-04-17T00:00:00Z'},
+ {id:'0O2I2kAtpbY',kind:'movies',title:'NEW MOVIE TRAILERS 2026 · KinoCheck compilation',channel:'KinoCheck.com',published:'2026-03-06T00:00:00Z'}
 ]);
 const decode=s=>String(s).replace(/&(#x[0-9a-f]+|#[0-9]+|amp|lt|gt|quot|apos);/gi,(_,x)=>{
  if(x[0]==='#'){const n=x[1].toLowerCase()==='x'?parseInt(x.slice(2),16):parseInt(x.slice(1),10);return n>=32&&n<=0x10ffff?String.fromCodePoint(n):'';}
