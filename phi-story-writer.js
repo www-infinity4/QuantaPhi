@@ -369,10 +369,13 @@ async function continueStory(){
    'Write the next chapter now.'
   ].join('\n');
   const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),65000);
-  let response;
-  try{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'oracle-story-writer-continuation',requireCloudflare:true}}),signal:controller.signal})}
+  let response,data;
+  try{
+   response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'oracle-story-writer-continuation',requireCloudflare:true}}),signal:controller.signal});
+   // Keep the deadline until the body is read; receiving headers alone is not a completed response.
+   data=await response.json();
+  }
   finally{clearTimeout(timeout)}
-  const data=await response.json().catch(()=>({}));
   if(!response.ok||data.ok===false)throw Error(String(data.error||'The continuation was not returned'));
   const chapter=parseStory(takeText(data),previous.title).body.trim();
   if(chapter.length<750)throw Error('Incomplete continuation returned. The original manuscript remains unchanged.');
