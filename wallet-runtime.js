@@ -355,6 +355,7 @@
   }
   function refreshWalletOnOpen(){
     refreshWalletUI();
+    void refreshAlienCoinCount();
     // A modal cannot present an old saved number as if it were just checked.
     void (async()=>{
       await refreshStarCoinCloud();
@@ -414,7 +415,10 @@
       void refreshStarCoinCloud();
   });
   window.addEventListener('infinity-wallet-updated',refreshCloudBalances);
-  document.addEventListener('starquest:auth-changed',refreshCloudBalances);
+  document.addEventListener('starquest:auth-changed',()=>{void refreshCloudBalances();void refreshAlienCoinCount()});
+  window.addEventListener('storage',event=>{
+    if(event.key==='alien-coin-wallet-session-v1')void refreshAlienCoinCount();
+  });
   window.addEventListener('phi:asset-balances',refreshWalletUI);
   window.addEventListener('musicquant:cloud-synced',refreshWalletUI);
   window.addEventListener('musicquant:changed',refreshWalletUI);
@@ -456,23 +460,35 @@
     };
   }
 
-  function alienCoinCount(){
-    try{
-      const cached=Number(sessionStorage.getItem('controlPhi:alienCoinCount:v1'));
-      return Number.isFinite(cached)&&cached>=0?cached:0;
-    }catch{return 0}
-  }
-
+  // Alien Coin is a separate token inventory, never an inferred Infinity/Quant balance.
+  // Unknown, disconnected and failed reads must not be painted as zero owned tokens.
+  let alienCoinCloud={count:null,status:'Not connected'},alienCoinReadEpoch=0;
+  function alienCoinCount(){return alienCoinCloud.count}
   async function refreshAlienCoinCount(){
+    const epoch=++alienCoinReadEpoch;
     let session='';try{session=localStorage.getItem('alien-coin-wallet-session-v1')||''}catch{}
-    if(!session){try{sessionStorage.setItem('controlPhi:alienCoinCount:v1','0')}catch{};refreshWalletUI();return 0}
+    if(!session){alienCoinCloud={count:null,status:'Connect Alien Coin to verify holdings'};refreshWalletUI();return null}
+    alienCoinCloud={count:null,status:'Checking Alien Coin ledger…'};refreshWalletUI();
     try{
-      const response=await fetch('https://alien-coin.marvaseater.workers.dev/api/tokens',{headers:{Authorization:'Bearer '+session},cache:'no-store'});
-      const data=await response.json();
-      const count=response.ok&&Array.isArray(data.tokens)?data.tokens.length:0;
-      try{sessionStorage.setItem('controlPhi:alienCoinCount:v1',String(count))}catch{}
+      // Read through the already registered QuantaPhi same-origin proxy.
+      // Never send an account bearer token from a third-party copy of this UI.
+      if(location.origin!=='https://quantaphi.org')throw new Error('canonical_origin_required');
+      const response=await fetch('/alien-coin/api/tokens',{
+        headers:{Authorization:'Bearer '+session},credentials:'omit',cache:'no-store',
+        signal:AbortSignal.timeout(12000)
+      });
+      const data=await response.json().catch(()=>null);
+      let stillSelected='';try{stillSelected=localStorage.getItem('alien-coin-wallet-session-v1')||''}catch{}
+      if(epoch!==alienCoinReadEpoch||stillSelected!==session)return null;
+      if(!response.ok||!Array.isArray(data?.tokens))throw new Error('unverified_account_or_response');
+      const count=data.tokens.length;
+      alienCoinCloud={count,status:'Confirmed token records returned by Alien Coin; not a cash valuation'};
       refreshWalletUI();return count;
-    }catch{return alienCoinCount()}
+    }catch(error){
+      if(epoch!==alienCoinReadEpoch)return null;
+      alienCoinCloud={count:null,status:'Alien Coin ledger unavailable or not authorized; holdings unchanged'};
+      refreshWalletUI();return null;
+    }
   }
 
   function walletSnapshot(){
@@ -483,7 +499,7 @@
     const verified=cloudStarState&&cloudStarState.sessionKey===String(session?.key||'')?cloudStarState:null;
     const whole=verified?verified.starCoins:wallet.tokens;
     const tenths=verified?verified.pendingShareCredits:wallet.pendingShareCredits;
-    const starCoins=Math.round((whole+(tenths/10))*10)/10;return {balance:starCoins,starCoins,wholeStarCoins:whole,progressToNextCoin:tenths,shareCount:verified?verified.shareCount:wallet.shareCount,username:verified?verified.username:wallet.username||'Guest',totalTokens:assets.total,quants:assets.quants,omni:assets.omni,infinity:assets.infinity,quantaWebsites:assets.quantaWebsites,legacy:assets.legacy,musicQuants:assets.musicQuants,pianoQuants:assets.pianoQuants,listeningQuants:assets.listeningQuants,alienCoins:alienCoinCount()};
+    const starCoins=Math.round((whole+(tenths/10))*10)/10;return {balance:starCoins,starCoins,wholeStarCoins:whole,progressToNextCoin:tenths,shareCount:verified?verified.shareCount:wallet.shareCount,username:verified?verified.username:wallet.username||'Guest',totalTokens:assets.total,quants:assets.quants,omni:assets.omni,infinity:assets.infinity,quantaWebsites:assets.quantaWebsites,legacy:assets.legacy,musicQuants:assets.musicQuants,pianoQuants:assets.pianoQuants,listeningQuants:assets.listeningQuants,alienCoins:alienCoinCount(),alienCoinStatus:alienCoinCloud.status,cardoneNotesStatus:'Research reference only · no verified owned value'};
   }
 
   function importLegacyStarCoinBalance(amount,source='legacy'){
@@ -523,6 +539,19 @@
   function refreshWalletUI(){
     const snapshot=walletSnapshot();
     const panel=document.getElementById('controlPhiWalletPanel');
+    if(panel&&!panel.querySelector('[data-coin-wallet-registry]')){
+      const group=document.createElement('section');
+      group.dataset.coinWalletRegistry='1';group.setAttribute('aria-label','Infinity braided coin registry');
+      group.style.cssText='margin:12px 0;padding:10px;border:1px solid #6c869d;border-radius:12px;background:#142335;color:#fff';
+      const title=document.createElement('strong');title.textContent='Infinity braided coins · wallet registry';
+      const alien=document.createElement('a');alien.href='/infinity-coin-cards.html#alien-coin';alien.textContent='Alien Coin · view owned token details';
+      const cardone=document.createElement('a');cardone.href='/infinity-coin-cards.html#cardone-notes';cardone.textContent='Cardone Capital Notes · research reference';
+      for(const link of [alien,cardone])link.style.cssText='display:block;color:#bde6ff;margin-top:8px;font-size:13px';
+      const note=document.createElement('p');note.textContent='Cardone is not an owned security, balance or mint. Alien Coin holdings require a verified server response.';
+      note.style.cssText='margin:8px 0 0;color:#d4e2eb;font-size:11px';
+      const status=document.createElement('small');status.dataset.controlPhiWalletAlienStatus='1';status.style.cssText='display:block;margin-top:8px;color:#b5d5e8';
+      group.append(title,alien,cardone,note,status);panel.append(group);
+    }
     if(panel&&!panel.querySelector('[data-crusher-research-history]')){
       const link=document.createElement('a');link.dataset.crusherResearchHistory='1';
       link.href='/bitcoin-crusher/?history=1#researchHistory';link.textContent='Open research article history';
@@ -541,7 +570,8 @@
     document.querySelectorAll('[data-control-phi-wallet-piano]').forEach(el=>{const value=String(snapshot.pianoQuants);if(el.textContent!==value)el.textContent=value});
     document.querySelectorAll('[data-control-phi-wallet-listening]').forEach(el=>{const value=String(snapshot.listeningQuants);if(el.textContent!==value)el.textContent=value});
     document.querySelectorAll('[data-control-phi-wallet-music-quants]').forEach(el=>{const value=String(snapshot.musicQuants);if(el.textContent!==value)el.textContent=value});
-    document.querySelectorAll('[data-control-phi-wallet-alien-coins]').forEach(el=>{const value=String(snapshot.alienCoins);if(el.textContent!==value)el.textContent=value});
+    document.querySelectorAll('[data-control-phi-wallet-alien-coins]').forEach(el=>{const value=snapshot.alienCoins===null?'—':String(snapshot.alienCoins);if(el.textContent!==value)el.textContent=value});
+    document.querySelectorAll('[data-control-phi-wallet-alien-status]').forEach(el=>{if(el.textContent!==snapshot.alienCoinStatus)el.textContent=snapshot.alienCoinStatus});
     const button=document.getElementById('controlPhiWalletButton');
     const buttonMarkup=`<span class="cp-wallet-button-label">Wallet</span><span aria-hidden="true">⭐</span><strong>${snapshot.balance}</strong><small>${snapshot.progressToNextCoin}/10</small>`;
     if(button && button.innerHTML!==buttonMarkup)button.innerHTML=buttonMarkup;
@@ -753,7 +783,7 @@
       item.id='controlPhiWalletMenuButton';
       item.type='button';
       item.setAttribute('aria-label','Open StarCoin wallet');
-      item.innerHTML='<span aria-hidden="true">⭐</span><span class="cp-wallet-menu-name"><strong>Unified Wallet</strong><small>StarCoin · Quants · Music Quants · Infinity · Alien Coin</small></span><span class="cp-wallet-menu-value"><strong data-control-phi-wallet-menu-balance>0 ⭐</strong><small><span data-control-phi-wallet-quants>0</span> Q · <span data-control-phi-wallet-music-quants>0</span> MQ · <span data-control-phi-wallet-total>0</span> Infinity · <span data-control-phi-wallet-alien-coins>0</span> Alien</small></span>';
+      item.innerHTML='<span aria-hidden="true">⭐</span><span class="cp-wallet-menu-name"><strong>Unified Wallet</strong><small>StarCoin · Quants · Music Quants · Infinity · Alien Coin · Cardone Notes reference</small></span><span class="cp-wallet-menu-value"><strong data-control-phi-wallet-menu-balance>0 ⭐</strong><small><span data-control-phi-wallet-quants>0</span> Q · <span data-control-phi-wallet-music-quants>0</span> MQ · <span data-control-phi-wallet-total>0</span> Infinity · <span data-control-phi-wallet-alien-coins>—</span> Alien</small></span>';
       item.addEventListener('click',()=>document.getElementById('controlPhiWalletButton')?.click());
     }
     if(item.parentElement!==nav)nav.prepend(item);
@@ -784,7 +814,7 @@
     document.head.appendChild(style);
     const button=existingTrigger||document.createElement('button');
     button.id='controlPhiWalletButton';button.type='button';button.setAttribute('aria-label','Open unified wallet');button.setAttribute('aria-expanded','false');
-    const panel=document.createElement('section');panel.id='controlPhiWalletPanel';panel.hidden=true;panel.setAttribute('aria-label','Unified wallet');panel.innerHTML='<div class="cp-wallet-row"><span data-control-phi-wallet-name>Guest</span><strong>Unified Wallet</strong></div><div class="cp-wallet-assets"><div class="cp-wallet-asset"><span>Star Coins</span><strong><span data-control-phi-wallet-balance>0</span> ⭐</strong><small data-control-phi-wallet-progress>0/10</small><small data-control-phi-star-sync>Cached • checking StarQuest</small><button type="button" data-control-phi-sync-stars style="margin-top:7px;border:1px solid #d7b85d;background:#ffe99d;border-radius:9px;padding:6px;color:#382600;font-weight:800;font-size:11px">Sync StarCoins</button></div><div class="cp-wallet-asset"><span>Owned Infinity tokens</span><strong data-control-phi-wallet-total>0</strong><small>One website token type</small></div><div class="cp-wallet-asset"><span>Created through Infinity Phi</span><strong data-control-phi-wallet-infinity>0</strong><small>tokens</small></div><div class="cp-wallet-asset"><span>Created through Omni Phi</span><strong data-control-phi-wallet-omni>0</strong><small>tokens</small></div><div class="cp-wallet-asset"><span>Quants</span><strong data-control-phi-wallet-quants>0</strong><small>Independent spendable balance</small></div><div class="cp-wallet-asset"><span>Created through QuantaPhi</span><strong data-control-phi-wallet-quanta-websites>0</strong><small>Infinity tokens</small></div><div class="cp-wallet-asset"><span>Legacy / metadata pending</span><strong data-control-phi-wallet-legacy>0</strong><small>counted, details not recovered yet</small></div><div class="cp-wallet-asset"><span>Music Quants</span><strong data-control-phi-wallet-music-quants>0</strong><small><span data-control-phi-wallet-piano>0</span> five-note + <span data-control-phi-wallet-listening>0</span> listening</small></div><div class="cp-wallet-asset"><span>Alien Coins</span><strong data-control-phi-wallet-alien-coins>0</strong><small>secured tokens</small></div></div><p>Each search creates an Infinity website token and a separate Quant. Spending either changes only that asset. Music Quants combine five-note and listening records.</p>';
+    const panel=document.createElement('section');panel.id='controlPhiWalletPanel';panel.hidden=true;panel.setAttribute('aria-label','Unified wallet');panel.innerHTML='<div class="cp-wallet-row"><span data-control-phi-wallet-name>Guest</span><strong>Unified Wallet</strong></div><div class="cp-wallet-assets"><div class="cp-wallet-asset"><span>Star Coins</span><strong><span data-control-phi-wallet-balance>0</span> ⭐</strong><small data-control-phi-wallet-progress>0/10</small><small data-control-phi-star-sync>Cached • checking StarQuest</small><button type="button" data-control-phi-sync-stars style="margin-top:7px;border:1px solid #d7b85d;background:#ffe99d;border-radius:9px;padding:6px;color:#382600;font-weight:800;font-size:11px">Sync StarCoins</button></div><div class="cp-wallet-asset"><span>Owned Infinity tokens</span><strong data-control-phi-wallet-total>0</strong><small>One website token type</small></div><div class="cp-wallet-asset"><span>Created through Infinity Phi</span><strong data-control-phi-wallet-infinity>0</strong><small>tokens</small></div><div class="cp-wallet-asset"><span>Created through Omni Phi</span><strong data-control-phi-wallet-omni>0</strong><small>tokens</small></div><div class="cp-wallet-asset"><span>Quants</span><strong data-control-phi-wallet-quants>0</strong><small>Independent spendable balance</small></div><div class="cp-wallet-asset"><span>Created through QuantaPhi</span><strong data-control-phi-wallet-quanta-websites>0</strong><small>Infinity tokens</small></div><div class="cp-wallet-asset"><span>Legacy / metadata pending</span><strong data-control-phi-wallet-legacy>0</strong><small>counted, details not recovered yet</small></div><div class="cp-wallet-asset"><span>Music Quants</span><strong data-control-phi-wallet-music-quants>0</strong><small><span data-control-phi-wallet-piano>0</span> five-note + <span data-control-phi-wallet-listening>0</span> listening</small></div><div class="cp-wallet-asset"><span>Alien Coins</span><strong data-control-phi-wallet-alien-coins>—</strong><small>Only confirmed token records</small></div></div><p>Each search creates an Infinity website token and a separate Quant. Spending either changes only that asset. Music Quants combine five-note and listening records.</p>';
     const host=document.querySelector('.head-actions,.qbalances,[data-control-phi-wallet-host]');
     if(!existingTrigger){if(host)host.appendChild(button);else{button.classList.add('control-phi-wallet-floating');document.body.appendChild(button)}}
     document.body.appendChild(panel);
@@ -954,7 +984,7 @@
     const mount=()=>{if(!document.body.contains(host))document.body.appendChild(host);const t=latestExplicitAdTopic();if(t)renderSponsoredCard(host,t,location.pathname).catch(()=>{});else host.hidden=true};
     mount();setInterval(mount,30000);
   }
-  window.ControlPhi={version:'1.9.2',sourceCounts:canonicalSearchCounts,recordShare,trackingUrl:(input={})=>{const plan=sharePlan(input,input.platform||'share');return plan.trackingUrl},openNews:()=>location.assign(NEWS_URL),shareFeed:()=>read(SHARE_KEY,[]).slice(),interestFeed:()=>read(INTEREST_KEY,[]).slice(),wallet:walletSnapshot,recordActivity,contextFeed:()=>read(CONTEXT_KEY,[]).slice(),ensureShareCredit,ensureActionCredit,ensureResearchSpinCredit,reconcileCollectedAds,shopCart,importLegacyStarCoinBalance,refreshWallet:refreshWalletUI,refreshCloudWallet:refreshCloudBalances,requestSponsoredCard,renderSponsoredCard};
+  window.ControlPhi={version:'1.9.3',sourceCounts:canonicalSearchCounts,recordShare,trackingUrl:(input={})=>{const plan=sharePlan(input,input.platform||'share');return plan.trackingUrl},openNews:()=>location.assign(NEWS_URL),shareFeed:()=>read(SHARE_KEY,[]).slice(),interestFeed:()=>read(INTEREST_KEY,[]).slice(),wallet:walletSnapshot,recordActivity,contextFeed:()=>read(CONTEXT_KEY,[]).slice(),ensureShareCredit,ensureActionCredit,ensureResearchSpinCredit,reconcileCollectedAds,shopCart,importLegacyStarCoinBalance,refreshWallet:refreshWalletUI,refreshCloudWallet:refreshCloudBalances,requestSponsoredCard,renderSponsoredCard};
   // When QuantaPhi rendered buttons before Control Phi finished loading,
   // their reward intents were persisted, not misrepresented as paid locally.
   const QUANTA_DEFERRED_ACTIONS='quantaPhi:pendingStarCoinWalletActions:v1';

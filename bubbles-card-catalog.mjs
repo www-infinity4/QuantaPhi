@@ -73,6 +73,8 @@ export const cards=Object.freeze([
  app('quick-card-wiring','Quick Card Wiring Study','/quick-card-wiring.html','QuantaPhi',['c13b0 quick card','wiring template','site schematic','website mirror study','quick card study']),
  app('integra-validator','Integra · Quick Card Validation','/integra-validation.html','QuantaPhi',['integra','validate quick card','source audit','card security check','integra ai']),
  app('quantaphi','QuantaPhi','/','QuantaPhi',['quantaphi home','quantaphi website','quantaphi page']),
+ app('infinity-cardone-notes','Infinity Braided Cardone Capital Notes','/infinity-coin-cards.html#cardone-notes','QuantaPhi',['cardone capital notes','cardone coin','braided cardone coin','cardone notes','infinity notes']),
+ app('infinity-alien-coin','Infinity Braided Alien Coin','/infinity-coin-cards.html#alien-coin','QuantaPhi',['braided alien coin','alien token quick card','alien coin quick card']),
  app('alien-coin','Alien Coin','/alien-coin/','Alien-Coin',['alien coin website']),
  app('resonance','Resonance Calculator','/resonance.html','QuantaPhi',['resonance engine']),
  app('bitcoin-crusher','Bitcoin Crusher','/bitcoin-crusher/','Bitcoin-Crusher',['crusher','bitcoin crusher jukebox'],'#musicPlay'),

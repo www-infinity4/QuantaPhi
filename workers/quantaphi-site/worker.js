@@ -1,4 +1,64 @@
 import {videoAPI} from './video-api.mjs';
+const coinMediaRoute = (() => {
+// Public-only, keyless media discovery. Never proxy video/audio, assume paid playback, or mint coins.
+// Channel feeds are recent upload inventories, not the full YouTube search index.
+const CHANNELS=Object.freeze([
+ {id:'UC4eYXhJI4-7wSWc8UNRwD4A',name:'NPR Music',kind:'music'},
+ {id:'UCAuUUnT6oDeKwE6v1NGQxug',name:'TED',kind:'science'},
+ {id:'UCi8e0iOVk1fEOogdfu4YgfA',name:'Rotten Tomatoes Trailers',kind:'movies'},
+ {id:'UC3gNmTGu-TTbFPpfSs5kNkg',name:'Rotten Tomatoes Movieclips',kind:'movies'}
+]);
+const FEATURED=Object.freeze([
+ {id:'D58cvO2Dr34',kind:'movies',title:'NEW MOVIE TRAILERS 2026 · KinoCheck compilation',channel:'KinoCheck.com',published:'2026-04-17T00:00:00Z'},
+ {id:'0O2I2kAtpbY',kind:'movies',title:'NEW MOVIE TRAILERS 2026 · KinoCheck compilation',channel:'KinoCheck.com',published:'2026-03-06T00:00:00Z'}
+]);
+const decode=s=>String(s).replace(/&(#x[0-9a-f]+|#[0-9]+|amp|lt|gt|quot|apos);/gi,(_,x)=>{
+ if(x[0]==='#'){const n=x[1].toLowerCase()==='x'?parseInt(x.slice(2),16):parseInt(x.slice(1),10);return n>=32&&n<=0x10ffff?String.fromCodePoint(n):'';}
+ return {amp:'&',lt:'<',gt:'>',quot:'"',apos:"'"}[x.toLowerCase()]||'';
+});
+function parseYouTubeFeed(xml,channel){
+ if(typeof xml!=='string'||xml.length>1500000||!/<feed\b/.test(xml))return [];
+ return [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].slice(0,20).map(([,part])=>{
+  const id=part.match(/<yt:videoId>([\w-]{11})<\/yt:videoId>/)?.[1];
+  const title=decode(part.match(/<title>([\s\S]*?)<\/title>/)?.[1]||'').replace(/<[^>]*>/g,'').trim().slice(0,160);
+  const published=part.match(/<published>([^<]+)<\/published>/)?.[1]||'';
+  return id&&title&&Number.isFinite(Date.parse(published))?{id,kind:channel.kind,title,channel:channel.name,published}:null;
+ }).filter(Boolean);
+}
+function mediaSearchUrl(query,kind='all'){
+ const intent={music:'official music video',movies:'official movie trailer or free movie',science:'science documentary'};
+ const words=String(query||'').trim().slice(0,100);
+ return 'https://www.youtube.com/results?search_query='+encodeURIComponent([words,intent[kind]||''].filter(Boolean).join(' '));
+}
+async function coinMediaRoute(request,{fetcher=fetch}={}){
+ if(request.method!=='GET')return Response.json({ok:false,error:'method_not_allowed'},{status:405,headers:{Allow:'GET'}});
+ const url=new URL(request.url),kind=url.searchParams.get('kind')||'all';
+ if(!['all','music','movies','science'].includes(kind))return Response.json({ok:false,error:'invalid_kind'},{status:400});
+ const requested=CHANNELS.filter(ch=>kind==='all'||ch.kind===kind);
+ const results=await Promise.allSettled(requested.map(async channel=>{
+  const upstream=await fetcher('https://www.youtube.com/feeds/videos.xml?channel_id='+channel.id,{
+   headers:{Accept:'application/atom+xml, application/xml;q=0.9'},
+   signal:AbortSignal.timeout(6500)
+  });
+  if(!upstream.ok)throw Error('feed_unavailable');
+  const xml=await upstream.text();
+  return parseYouTubeFeed(xml,channel);
+ }));
+ const items=[...(kind==='all'||kind==='movies'?FEATURED:[]),...results.flatMap(x=>x.status==='fulfilled'?x.value:[])];
+ const unique=[...new Map(items.map(item=>[item.id,item])).values()]
+  .sort((a,b)=>Date.parse(b.published)-Date.parse(a.published)).slice(0,80);
+ const failures=results.filter(x=>x.status!=='fulfilled').length;
+ return Response.json({ok:true,kind,items:unique,count:unique.length,
+  source:'official-publisher-links-and-public-channel-feeds',feedChannels:requested.length,
+  feedsAvailable:requested.length-failures,partial:failures>0,
+  note:'Only recent public uploads and separately cited trailers. Not a full YouTube search, playback rights or verified embedding permission.',
+  searchUrl:mediaSearchUrl('',kind)},{
+   headers:{'Cache-Control':'public, max-age=300, s-maxage=600','X-Content-Type-Options':'nosniff'}
+  });
+}
+
+return coinMediaRoute;
+})();
 const EDGE_VERSION = 'quantaphi-org-service-20261029-housing-v15';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
@@ -314,11 +374,69 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env) {
   const incoming = new URL(request.url);
+  // QuantaPhi is the canonical origin for the Alien Coin frontend.
+  // Proxy only the registered Alien Coin API routes. Browsers must never send
+  // wallets or authentication tokens to a mismatched CORS origin.
+  if(incoming.pathname.startsWith('/alien-coin/api/')) {
+   if(!['GET','POST','OPTIONS'].includes(request.method))return Response.json({error:'method_not_allowed'},{status:405,headers:{'Cache-Control':'no-store'}});
+   const origin=request.headers.get('Origin');
+   if(origin&&origin!==CANONICAL_ORIGIN)return Response.json({error:'origin_not_allowed'},{status:403,headers:{'Cache-Control':'no-store'}});
+   const backendPath=incoming.pathname.slice('/alien-coin'.length);
+   if(!/^\/api\/(?:tokens(?:\/|$)|wallet\/|auth\/)/.test(backendPath))
+    return Response.json({error:'route_not_allowed'},{status:404,headers:{'Cache-Control':'no-store'}});
+   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{'Cache-Control':'no-store','Allow':'GET, POST, OPTIONS'}});
+   const backend=new URL('https://alien-coin.marvaseater.workers.dev');
+   backend.pathname=backendPath;backend.search=incoming.search;
+   const headers=new Headers();
+   for(const name of ['Authorization','Content-Type','Accept']) {
+    const value=request.headers.get(name);
+    if(value)headers.set(name,value);
+   }
+   try{
+    const response=await fetch(backend.toString(),{
+     method:request.method,headers,
+     body:request.method==='POST'?request.body:undefined,
+     redirect:'manual',cache:'no-store',signal:AbortSignal.timeout(15000)
+    });
+    const outHeaders=new Headers();
+    for(const name of ['content-type','content-disposition']){
+     const value=response.headers.get(name);if(value)outHeaders.set(name,value);
+    }
+    outHeaders.set('Cache-Control','no-store');
+    outHeaders.set('x-quantaphi-app','Alien-Coin');
+    return new Response(response.body,{status:response.status,headers:outHeaders});
+   }catch{
+    return Response.json({error:'alien_coin_api_unavailable'},{status:502,headers:{'Cache-Control':'no-store'}});
+   }
+  }
+  if(incoming.pathname === '/api/infinity-connections') {
+   if(request.method!=='GET') return Response.json({ok:false,error:'method_not_allowed'},{status:405,headers:{'Cache-Control':'no-store'}});
+   if(!env.QUANT_AI || typeof env.QUANT_AI.fetch!=='function') return Response.json({
+    ok:false,quantAi:'BINDING_MISSING',wallet:'NOT_CHECKED',mint:'NOT_CHECKED'
+   },{status:503,headers:{'Cache-Control':'no-store','x-quantaphi-edge':EDGE_VERSION}});
+   try{
+    // An unauthenticated 401 is proof that the private router reached the
+    // protected wallet API, NOT proof that a specific wallet or model works.
+    // Never forward cookies, tokens or visitor credentials from this endpoint.
+    const upstream=await env.QUANT_AI.fetch(new Request(CANONICAL_ORIGIN+'/api/quants/owned',{
+     method:'GET',headers:{Accept:'application/json'},signal:AbortSignal.timeout(4000)
+    }));
+    const routeAvailable=upstream.status===401;
+    return Response.json({
+     ok:routeAvailable,quantAi:routeAvailable?'AUTH_ROUTE_REACHABLE':'ROUTE_UNVERIFIED',
+     upstreamStatus:upstream.status,wallet:'NOT_CHECKED',mint:'NOT_CHECKED',model:'NOT_CHECKED'
+    },{status:routeAvailable?200:503,headers:{'Cache-Control':'no-store','x-quantaphi-edge':EDGE_VERSION}});
+   }catch{
+    return Response.json({ok:false,quantAi:'UPSTREAM_UNAVAILABLE',wallet:'NOT_CHECKED',mint:'NOT_CHECKED',model:'NOT_CHECKED'},
+     {status:503,headers:{'Cache-Control':'no-store','x-quantaphi-edge':EDGE_VERSION}});
+   }
+  }
   if(incoming.pathname.startsWith('/api/bubbles/connections/')){
    if(!env.BUBBLES_CONNECTIONS)return Response.json({ok:false,error:'connections_not_configured'},{status:503,headers:{'Cache-Control':'no-store'}});
    return env.BUBBLES_CONNECTIONS.fetch(request);
   }
   if(['/api/apk-releases','/downloads/bubbles.apk','/downloads/site.apk'].includes(incoming.pathname))return apkRoute(request,incoming);
+  if(incoming.pathname==='/api/infinity-coin-media')return coinMediaRoute(request); 
   if(incoming.pathname.startsWith('/api/video/'))return videoAPI(request,env);
   if (/^(?:www\.)?quantaphi\.net$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });
   if (/^(?:www\.)?quantaphi\.org$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });
@@ -440,7 +558,7 @@ export default {
   }
   if (raw) { out.delete('Content-Security-Policy'); out.delete('Content-Disposition'); }
   // Upstream GitHub headers prohibit even our own embedded suite pages.
-  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/infinity-affiliates.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
+  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html','/infinity-search-results.html','/source-quick-card.html','/science-quick-card.html','/directory/index.html','/studio/index.html','/cardone-capital.html','/infinity-coin-cards.html','/bubbles-agent-workshop/index.html','/trending-now.html','/quanta-feed-card.html','/pixie/index.html','/x-money.html','/infinity-affiliates.html','/quick-card-wiring.html','/integra-validation.html'].includes(route.sourcePath))
    || (['Oracle-Octaves','C13b0','Omni-Phi','News-Phi','Mckee-Coins-Inc','Omni-TV','Builder-Reserve'].includes(route.repo) && route.sourcePath === '/index.html');
   if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio','Alien-Coin'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
   // Public housing intake can run inside QuantaPhi, but cannot submit or send answers.
