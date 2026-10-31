@@ -11,7 +11,9 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
 // One authentic, editable onboarding card joins the original live cards.
 const profileNode=document.createElement('section');
 profileNode.id='quantaProfileCard';profileNode.hidden=true;
-(document.querySelector('.oracle-card-library')||document.querySelector('main.app')||document.body).append(profileNode);
+const profileShelf=document.querySelector('.oracle-card-library');
+if(profileShelf)profileShelf.after(profileNode);
+else (document.querySelector('main.app')||document.body).append(profileNode);
 const choices=[
  ['quantaProfileCard','Your Profile · QuantaPhi Settings'],
  ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
@@ -120,7 +122,7 @@ const profileEntry=entries.find(e=>e.id==='quantaProfileCard');
 const profileLink=document.createElement('a');profileLink.href='/quanta-profile.html';
 profileLink.className='oracle-profile-settings-link';profileLink.textContent='Profile & settings';
 profileLink.setAttribute('aria-label','Open your profile and settings');
-(host.querySelector('.oracle-card-deck-nav')||host).append(profileLink);
+(host.querySelector('.oracle-direction-action')||host).append(profileLink);
 void import('/quanta-profile-card.mjs?v=20261030-1').then(({mountProfileCard,profileComplete})=>{
  profileNode.hidden=profileComplete();
  mountProfileCard(profileNode,{onComplete:()=>{
