@@ -134,6 +134,7 @@ export function mountZeusArchive({root,snapshot,openThread}){
  enable.addEventListener('click',()=>void action(async()=>{
   await verify();
   if(enabled){enabled=false;save({enabled:false,profile});enable.textContent='Enable automatic cloud backup';say('New cloud backups paused. Existing D1 and R2 histories remain intact.');return}
+  if(snapshot().keepChat===false)throw Error('Enable local conversation history before cloud backup');
   if(!confirm('Enable private Cloudflare storage of Zeus conversations for this verified wallet, including the current conversation? Your messages and AI replies will be readable by the service operator.'))return;
   if(!save({enabled:true,profile}))throw Error('Cannot save your backup preference on this device');
   enabled=true;enable.textContent='Pause automatic backup';
@@ -162,5 +163,16 @@ export function mountZeusArchive({root,snapshot,openThread}){
  // Reading is opt-in; never initiate a write or import an old account's history
  // until the account has been verified and the person enables backup.
  wrap.addEventListener('toggle',()=>{if(wrap.open&&!profile)void action(async()=>{await verify();say(enabled?'Cloud backup enabled for this wallet.':'Verified wallet connected. Cloud backup is off until you choose to enable it.');})});
+ const previous=stored();
+ if(previous?.enabled){
+  void action(async()=>{
+   await verify();
+   if(enabled&&snapshot().keepChat!==false){
+    const current=snapshot();queue(current.id,current.messages,current.thread);
+   }else if(enabled){
+    say('Enable local conversation history before automatic backup can resume.');
+   }
+  });
+ }
  return {queue};
 }
