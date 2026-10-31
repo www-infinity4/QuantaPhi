@@ -102,9 +102,10 @@ test('verified plugin handoff is specific and does not imply inherited login',as
   .toHaveAttribute('href','https://chatgpt.com/plugins/flaim-fantasy');
  await expect(page.locator('.iqp-warning')).toContainText('require an approved connection');
  await page.goto(base+'/plugin-quick-cards.html?card=plugin-daily-tarot',{waitUntil:'domcontentloaded'});
- await expect(page.getByRole('link',{name:'Open verified ChatGPT plugin ↗'}))
-  .toHaveAttribute('href','https://chatgpt.com/plugins/plugin_asdk_app_6943a2c078b0819188de39e4fe168d9b');
- await expect(page.locator('.iqp-warning')).toContainText('does not inherit account access');
+ await expect(page.getByRole('link',{name:'Find in ChatGPT Plugins ↗'}))
+  .toHaveAttribute('href','https://chatgpt.com/plugins');
+ await expect(page.getByRole('link',{name:'Open verified ChatGPT plugin ↗'})).toHaveCount(0);
+ await expect(page.locator('.iqp-warning')).toContainText('provider-specific website is not verified');
 });
 
 test('outdated Cloudflare reader does not dispatch paid provider reads',async({page})=>{
