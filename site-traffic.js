@@ -15,7 +15,7 @@
  // Date.parse silently normalizes impossible days (e.g. February 30).
  // The ledger emits UTC Z timestamps, with optional millisecond precision.
  const utcStamp=s=>{
-  if(typeof s!=='string'||!/^20\\d{2}-\\d{2}-\\d{2}T(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d{3})?Z$/.test(s))return NaN;
+  if(typeof s!=='string'||!/^20\d{2}-\d{2}-\d{2}T(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d{3})?Z$/.test(s))return NaN;
   if(!Number.isFinite(utcDay(s.slice(0,10))))return NaN;
   const t=Date.parse(s);
   if(!Number.isFinite(t))return NaN;
