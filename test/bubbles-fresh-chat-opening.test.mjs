@@ -245,7 +245,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  const begin=ui.indexOf('async function openConversation(id){');
  const end=ui.indexOf('function startConversation(',begin);
  assert.ok(begin>0&&end>begin,'actual History switch handler exists');
- async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false,cloudEmpty=false,cloudMessages=false}={}){
+ async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false,cloudEmpty=false,cloudMessages=false,cloudSessionId='chat_target'}={}){
   let confirmations=0,saves=0,clears=0;
   const original={id:'old_message',role:'user',text:'Important current chat',at:100};
   const ctx={
@@ -261,7 +261,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
    conversationApi:async()=>{
     if(lateDraft!==null)ctx.input.value=lateDraft;
     if(latePhoto)ctx.pendingImages.push({id:'new-photo'});
-    return {session:{id:'chat_target'},messages:cloudMessages?[{id:'cloud_123',role:'assistant',text:'Verified cloud turn',at:20}]:[]};
+    return {session:{id:cloudSessionId},messages:cloudMessages?[{id:'cloud_123',role:'assistant',text:'Verified cloud turn',at:20}]:[]};
    },
    confirm:()=>{confirmations++;return approve},
    sessionStorage:{setItem:()=>{}},TAB_THREAD:'tab',EXPLICIT_THREAD:'explicit',
@@ -304,6 +304,10 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  const cloudWithTurns=await run({cloudMessages:true});
  assert.equal(cloudWithTurns.result,true);
  assert.equal(cloudWithTurns.state.messages[0]?.text,'Verified cloud turn','nonempty cloud History remains authoritative');
+ const wrongCloudSession=await run({cloudMessages:true,cloudSessionId:'another_wallet_thread'});
+ assert.equal(wrongCloudSession.result,true,'the verified device copy remains open when cloud returns a different session');
+ assert.equal(wrongCloudSession.state.messages[0]?.text,'Saved earlier turn','a mismatched cloud session must never replace device History');
+ assert.match(wrongCloudSession.notice,/saved device copy/i);
  const late=await run({lateDraft:'Typed while cloud History was loading'});
  assert.equal(late.result,false);
  assert.equal(late.clears,0);
