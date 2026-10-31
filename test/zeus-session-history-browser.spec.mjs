@@ -9,7 +9,15 @@ for(const width of [320,360,393,720]){
   await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
   await expect(page.getByRole('heading',{name:'Session history & work dots'})).toBeVisible();
   await expect(page.locator(root+' .zeus-legend-pair')).toHaveCount(5);
-  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
+  const layout=await page.evaluate(()=>({
+   width:innerWidth,scrollWidth:document.documentElement.scrollWidth,
+   overflow:[...document.querySelectorAll('body *')].map(e=>({
+    name:e.tagName.toLowerCase()+(e.id?'#'+e.id:'')+(e.className&&typeof e.className==='string'?'.'+e.className.split(/\\s+/).join('.'):''),
+    right:Math.ceil(e.getBoundingClientRect().right),
+    left:Math.floor(e.getBoundingClientRect().left)
+   })).filter(x=>x.right>innerWidth+1||x.left<-1).slice(0,15)
+  }));
+  expect(layout.scrollWidth,JSON.stringify(layout)).toBeLessThanOrEqual(layout.width+1);
  });
 }
 test('red work, green completion, browsable old session and orange continuation keep receipts',async({page})=>{
