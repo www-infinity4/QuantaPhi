@@ -1,8 +1,23 @@
 // QuantaPhi coin media: opted-in playback from original YouTube publishers.
-const STORAGE='infinity-coin-media-prefs:v1';
+const STORAGE='infinity-coin-media-prefs:v2';
 const KINDS=['music','movies','science'];
-const read=()=>{try{const x=JSON.parse(localStorage.getItem(STORAGE)||'{}');return x&&typeof x==='object'?x:{}}catch{return {}}};
-const save=x=>{try{localStorage.setItem(STORAGE,JSON.stringify(x))}catch{}};
+// Partition private viewing preferences by the selected StarQuest account on this
+// device. Do not copy credentials, wallet IDs, personal titles or API tokens into
+// the media settings or send the selected account to YouTube.
+function preferenceKey(){
+ let username='';
+ try{username=String(window.ControlPhi?.wallet?.()?.username||'').trim()}catch{}
+ if(!username||username.toLowerCase()==='guest'){
+  try{const session=JSON.parse(localStorage.getItem('starquest_session')||'null');username=String(session?.username||'').trim()}catch{}
+ }
+ if(!username||username.toLowerCase()==='guest')return STORAGE+':anonymous-device';
+ const name=username.toLowerCase(),bytes=new TextEncoder().encode(name);
+ let hash=2166136261;
+ for(const byte of bytes){hash^=byte;hash=Math.imul(hash,16777619)}
+ return STORAGE+':account-'+(hash>>>0).toString(36);
+}
+const read=()=>{try{const x=JSON.parse(localStorage.getItem(preferenceKey())||'{}');return x&&typeof x==='object'?x:{}}catch{return {}}};
+const save=x=>{try{localStorage.setItem(preferenceKey(),JSON.stringify(x))}catch{}};
 export function orderCoinMedia(items,{kind='music',seen=[],query=''}={}){
  const text=String(query).trim().toLowerCase();
  const seenSet=new Set(seen);
@@ -88,6 +103,11 @@ function mount(root){
   }catch{if(current!==version)return;state='error';items=[];render()}
  };
  select.addEventListener('change',()=>{track();cursor=0;player.replaceChildren();render()});
+ // Switching account in place must never display the former account's choices.
+ document.addEventListener('starquest:auth-changed',()=>{
+  const selected=read()[coin]||{};select.value=KINDS.includes(selected.kind)?selected.kind:'music';
+  input.value='';cursor=0;player.replaceChildren();render();
+ });
  clear.addEventListener('click',()=>{const all=read(),p=all[coin]||{};p.seen=[];all[coin]=p;save(all);cursor=0;render()});
  input.addEventListener('input',()=>{cursor=0;render()});
  next.addEventListener('click',()=>{
