@@ -14,6 +14,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from c13b0_scope_inventory import validate_public_scope_inventory
 
 BASE = "https://quantaphi.org"
 STAMP = str(int(time.time()))
@@ -51,10 +52,7 @@ def scope():
     code,headers,body,url=get('/api/bubbles/connections/scope-inventory?c13b0='+STAMP)
     if code!=200:raise Exception('scope inventory HTTP '+str(code))
     data=json.loads(body)
-    item=data.get('scopeInventory') or {}
-    if data.get('configured') is not True or item.get('serverAllowlistCount')!=386 or item.get('signInRequestScopeCount')!=386:
-        raise Exception('live scope inventory not 386/386')
-    return {"allowed":386,"requested":386}
+    return validate_public_scope_inventory(data)
 
 def frontend():
     code,headers,body,url=get('/bubbles.html?c13b0='+STAMP)
@@ -74,7 +72,7 @@ def javascript():
     code,headers,body,url=get(module+'&c13b0='+STAMP if '?' in module else module+'?c13b0='+STAMP)
     if code!=200:raise Exception('Sign-in JS HTTP '+str(code))
     if "fullCloudflare?['owner.full']" not in body:
-        raise Exception('Expected registered 386-scope sign-in code is not live')
+        raise Exception('Expected configured full-386 consent code is not live')
     if 'Sign in and authorize 386 Cloudflare permissions' not in body:
         raise Exception('Explicit 386-scope Cloudflare sign-in label is not live')
     if 'client.resumePending(' not in body:
@@ -107,9 +105,9 @@ def protected():
     return {"requiresWallet":True,"noBypass":True}
 
 check('Bubbles routed to Cloudflare service',api)
-check('registered 386 OAuth scopes',scope)
+check('configured 386 OAuth request scopes (not provider registration)',scope)
 check('live Bubbles button',frontend)
-check('live registered-scope JavaScript',javascript)
+check('live full-consent JavaScript',javascript)
 check('Cloudflare callback failure visibility',callback)
 check('wallet-bound gate enforcement',protected)
 RECEIPT.parent.mkdir(mode=0o700,parents=True,exist_ok=True)

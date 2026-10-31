@@ -1,4 +1,13 @@
 /* Staged Robot Brain intake. Read-only, owner-partitioned, no model-sourced execution. */
+// This file is also loaded by the legacy Brain test harness as an isolated
+// data: module, so keep the read-only classifier self-contained. Its narrow
+// contract is cross-tested against ticket-selector and runner-request.
+function technicalSourceEvidenceNeeded(summary){
+ const text=String(summary||'').slice(0,3000);
+ return /owner_input_required/i.test(text)&&
+  /(?:edit must match immutable source exactly once|failure report does not specify which repository file|exact path is required to locate the immutable.source)/i.test(text)&&
+  !/(?:owner_authorization_required|owner_approval_required|requires_owner|permission_denied|security_hold|sensitive_decision|unsupported_repository|invalid_color_jobs|owner must (?:approve|choose|authorize)|owner (?:approval|consent|sign.in)|new permission|payment|purchase|wallet|biometric|credential|password)/i.test(text);
+}
 const STATE='autopilot-triage-v1',CURSOR='autopilot-triage-cursor-v1';
 const DONE=new Set(['complete','deployed_verified','merged_verified']);
 const word=v=>String(v||'').slice(0,240);
@@ -9,7 +18,8 @@ export function workBucket(job,jobs=[]){
  if(status==='committed_unverified'||/commit_verification_required/i.test(hint))return 'commit_needs_verification';
  if(['complete','deployed_verified','merged_verified','superseded'].includes(status))return 'source_or_review_finished';
  if(status==='working')return 'runner_in_progress_or_stale';
- if(/owner_input_required|owner_authorization_required|owner_approval_required|security_hold|permission_denied|secret|credential|wallet|payment|biometric/i.test(hint))return 'owner_or_security_decision';
+ if(/owner_input_required|owner_authorization_required|owner_approval_required|security_hold|permission_denied|secret|credential|wallet|payment|biometric/i.test(hint))
+  return technicalSourceEvidenceNeeded(hint)?'technical_source_diagnosis':'owner_or_security_decision';
  if(status==='blocked')return 'blocked_requires_diagnosis';
  if(['queued','ready'].includes(status)){
   const deps=Array.isArray(job.dependencies)?job.dependencies:[];

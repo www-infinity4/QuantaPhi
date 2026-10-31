@@ -133,3 +133,17 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{margin-top:6px}
 @media(prefers-reduced-motion:reduce){
  body.oracle-quanta #oracleCardDeck #oracleCardFollow{transition:none!important;animation:none!important}
 }
+
+/* On phones a 56px sticky search repeatedly covers the selected card and
+   carousel controls. Keep the actual search at the top of the page, but let
+   the original card occupy the viewport when browsing the deck. */
+@media(max-width:650px){
+ body.oracle-quanta.oracle-card-deck-active .search{
+  position:static!important;top:auto!important;z-index:auto!important;
+  box-shadow:none!important
+ }
+ body.oracle-quanta.oracle-card-deck-active #oracleCardDeck,
+ body.oracle-quanta.oracle-card-deck-active #oracleCardStage{
+  scroll-margin-top:12px
+ }
+}

@@ -11,7 +11,7 @@ const entry=(id,name,kind,category,description,official,actions,visual,extra={})
 });
 const actions=(...pairs)=>pairs.map(([label,url])=>({label,url}));
 export const REQUESTED_PUBLIC_CARDS=Object.freeze([
- entry('packers-lions-2026','Packers at Lions · FOX','game','NFL','Week 7, Sun Oct 25, 2026 · 3:25 PM Central at Ford Field. Official game status and highlights update at the sources.','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/',actions(
+ entry('packers-lions-2026','Packers at Lions · FOX','game','NFL','Week 7 matchup was scheduled for Sun Oct 25, 2026 at 3:25 PM Central at Ford Field. For verified results and highlights, open the official game center.','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/',actions(
   ['FOX / FOX One viewing','https://www.fox.com/sports/football/nfl/watch-packers-vs-lions-oct-25-2026'],
   ['Official game center','https://www.packers.com/game-day/2026/reg-week7/packers-at-lions/'],
   ['Lions highlights','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/']
@@ -19,19 +19,19 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
  entry('fox-nfl-watch','FOX NFL · Watch & highlights','broadcast','NFL','FOX game coverage and licensed FOX One live viewing, subject to the viewer’s location, service and login.','https://www.foxsports.com/nfl',actions(
   ['FOX NFL schedule','https://www.foxsports.com/nfl'],
   ['FOX One streaming','https://www.fox.com/'],
-  ['Packers–Lions coverage','https://www.foxsports.com/live-blog/nfl/packers-vs-lions-live-updates-score']
+  ['FOX NFL highlights','https://www.foxsports.com/nfl']
  ),icon('foxsports.com'),{date:'2026-10-25',event:'NFL'}),
  entry('lions-interception-watch','Lions · turnover and interception watch','tracker','NFL','Watch official play-by-play and video highlights for verified takeaways. This card does not assert an interception happened.','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/',actions(
   ['Scoring and play-by-play','https://www.detroitlions.com/game-day/2026/reg-week7/packers-vs-lions/'],
   ['FOX live updates','https://www.foxsports.com/live-blog/nfl/packers-vs-lions-live-updates-score'],
   ['Highlights','https://www.nfl.com/videos/']
  ),nfl('det'),{date:'2026-10-25',event:'NFL'}),
- entry('packers-next-schedule','Green Bay · schedule and next game','schedule','NFL','After Detroit, Green Bay is scheduled to host Carolina on Thursday, Oct 29 on Prime Video; confirm schedule changes.','https://www.packers.com/schedule/',actions(
+ entry('packers-next-schedule','Green Bay · schedule and next game','schedule','NFL','See Green Bay’s official schedule for its next upcoming game, kickoff and current broadcaster. Never assume an older fixture is still upcoming.','https://www.packers.com/schedule/',actions(
   ['Official next game','https://www.packers.com/schedule/'],
   ['Roster and lineup','https://www.packers.com/team/players-roster/'],
   ['Latest Packers video','https://www.packers.com/video/']
  ),nfl('gb'),{event:'NFL'}),
- entry('lions-next-schedule','Detroit · upcoming games','schedule','NFL','After Green Bay, Detroit is scheduled to host Minnesota on Sunday, Nov 1 on FOX; confirm schedule changes.','https://www.detroitlions.com/schedule/',actions(
+ entry('lions-next-schedule','Detroit · upcoming games','schedule','NFL','See Detroit’s official schedule for its next upcoming game, kickoff and current broadcaster. Check the official page before claiming live status.','https://www.detroitlions.com/schedule/',actions(
   ['Official next game','https://www.detroitlions.com/schedule/'],
   ['Roster','https://www.detroitlions.com/team/players-roster/'],
   ['Video highlights','https://www.detroitlions.com/video/']
@@ -100,7 +100,7 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Denali original source','https://www.gmc.com/trucks/sierra/1500/denali'],
   ['Compare GMC trucks','https://www.gmc.com/trucks'],
   ['Inventory','https://www.gmc.com/view-inventory']
- ),icon('gmc.com')),
+ ), 'https://www.gmc.com/content/dam/gmc/na/us/english/index/01-images/sept2025/2026-gmc-sierra-1500-denali-downpour-metallic-1000x563.png?imwidth=1200'),
  entry('carhartt-shop','Carhartt · workwear','retail','Clothing','Browse actual workwear and original product photographs at Carhartt.','https://www.carhartt.com/',actions(
   ['Shop workwear','https://www.carhartt.com/'],
   ['New arrivals','https://www.carhartt.com/'],
@@ -131,16 +131,30 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Screening recommendations','https://ebccp.cancercontrol.cancer.gov/recommendation.do?topicId=102265'],
   ['Discuss with a clinician','https://www.cancer.gov/types/colorectal/screening-fact-sheet']
  ),icon('cancer.gov'),{nonTargeted:true}),
+ entry('mcdonalds-big-mac-deals','McDonald’s · Big Mac & app deals','food','Restaurants',
+ 'Explore the real Big Mac and current McValue or app offers. Prices and deal eligibility vary by location, account and date; order only through McDonald’s official services.',
+ 'https://www.mcdonalds.com/us/en-us/product/big-mac.html',actions(
+  ['Big Mac product','https://www.mcdonalds.com/us/en-us/product/big-mac.html'],
+  ['Current McValue & app deals','https://www.mcdonalds.com/us/en-us/deals.html'],
+  ['Explore full menu','https://www.mcdonalds.com/us/en-us/full-menu.html']
+ ),'https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/newsroom/menu-items-2023/NR_202302_0005-999_BigMac_2000x2000.png'),
  entry('burger-king-chicken-2026','Burger King · new chicken sandwiches','food','Restaurants','Burger King announced Loaded Jalapeño and Club Original Chicken Sandwich options in July 2026. Participating restaurant availability may change.','https://news.bk.com/blog-posts/burger-king-r-expands-its-iconic-original-chicken-sandwich-lineup-with-two-bold-new-flavors',actions(
   ['See new sandwiches','https://news.bk.com/blog-posts/burger-king-r-expands-its-iconic-original-chicken-sandwich-lineup-with-two-bold-new-flavors'],
   ['Official menu','https://www.bk.com/'],
   ['Find nearby restaurants','https://www.bk.com/']
- ),icon('bk.com')),
+ ), 'https://cdn.prod.website-files.com/631b4b4e277091ef01450237/65947e705329215630a9828a_Original%20Chicken%20Sandwich%20%281%29.png'),
  entry('royal-caribbean-cruises','Royal Caribbean · cruise explorer','travel','Travel','Compare official itineraries, ships and cruise dates; final costs and availability come from Royal Caribbean.','https://www.royalcaribbean.com/',actions(
   ['Browse cruises','https://www.royalcaribbean.com/'],
   ['Ships and itineraries','https://www.royalcaribbean.com/'],
   ['Original provider','https://www.royalcaribbean.com/']
  ),icon('royalcaribbean.com')),
+ entry('tide-original-liquid','Tide Original · Laundry Detergent','product','Household care',
+ 'Explore Tide Original liquid detergent, compare current Tide products, and find official stain-removal instructions. Prices, sizes, availability and promotions must be verified at the actual merchant; this independent card is not a paid Tide ad.',
+ 'https://tide.com/en-us/shop/type/liquid/tide-original-liquid',actions(
+  ['Original liquid product','https://tide.com/en-us/shop/type/liquid/tide-original-liquid'],
+  ['Browse Tide products','https://tide.com/en-us/shop'],
+  ['Official stain guides','https://tide.com/en-us/how-to-wash-clothes/how-to-remove-stains']
+ ),'https://images.ctfassets.net/ajjw8wywicb3/56SpCPjmVKhVPEEryvVCzh/5c1ffc8980151c72d478703dc62810fb/Tide_Belize_SUD_Original_listing_520x520.png?fm=png',{checked:'2026-10-30'}),
  entry('kraft-mac-cheese','Kraft Mac & Cheese · recipes','food','Food & recipes','Original Kraft Mac & Cheese products and cooking ideas at Kraft Heinz.','https://www.kraftheinz.com/kraft-mac-and-cheese',actions(
   ['Original Kraft products','https://www.kraftheinz.com/kraft-mac-and-cheese'],
   ['Kraft recipes','https://www.kraftheinz.com/kraft-mac-and-cheese'],

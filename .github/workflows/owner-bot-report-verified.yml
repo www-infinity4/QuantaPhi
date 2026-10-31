@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'robot-work-report.js'
+      - 'robot-gpt-handoff.mjs'
+      - 'test/robot-gpt-handoff.browser.mjs'
       - 'workers/unified-wallet/bot-work-credit.mjs'
       - 'test/robot-work-report.test.cjs'
       - 'test/bot-work-credit.test.mjs'
@@ -11,6 +13,8 @@ on:
     branches: [main]
     paths:
       - 'robot-work-report.js'
+      - 'robot-gpt-handoff.mjs'
+      - 'test/robot-gpt-handoff.browser.mjs'
       - 'workers/unified-wallet/bot-work-credit.mjs'
       - 'test/robot-work-report.test.cjs'
       - 'test/bot-work-credit.test.mjs'
@@ -31,6 +35,14 @@ jobs:
       - name: Parse source
         run: |
           node --check robot-work-report.js
+          node --check robot-gpt-handoff.mjs
+          node --check test/robot-gpt-handoff.browser.mjs
           node --check workers/unified-wallet/bot-work-credit.mjs
       - name: Test source-backed bot reports and actual SQLite mint trigger
         run: node --test test/robot-work-report.test.cjs test/bot-work-credit.test.mjs test/bot-work-earnings-status.test.mjs test/robot-brain-owner.test.cjs
+      - name: Install isolated Android browser runtime
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify live handoff controls, mobile layout and owner isolation in Chromium
+        run: node --test test/robot-gpt-handoff.browser.mjs

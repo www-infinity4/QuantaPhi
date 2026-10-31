@@ -3,17 +3,42 @@
  'use strict';
  const requests=document.getElementById('qtrafficRequests'),views=document.getElementById('qtrafficViews'),note=document.getElementById('qtrafficNote');
  if(!requests||!views||!note)return;
+ const refreshButton=document.getElementById('qtrafficRefresh');
  const STORAGE_KEY='quantaphi_verified_traffic_v2';
  let best=null,busy=false;
  const validCount=n=>Number.isSafeInteger(n)&&n>=0;
+ // Verify real UTC calendar dates; a seven-day label must describe seven days.
+ const utcDay=s=>{
+  if(typeof s!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(s))return NaN;
+  const t=Date.parse(s+'T00:00:00.000Z');
+  return Number.isFinite(t)&&new Date(t).toISOString().slice(0,10)===s?t:NaN;
+ };
+ // Date.parse silently normalizes impossible days (e.g. February 30).
+ // The ledger emits UTC Z timestamps, with optional millisecond precision.
+ const utcStamp=s=>{
+  if(typeof s!=='string'||!/^20\d{2}-\d{2}-\d{2}T(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d{3})?Z$/.test(s))return NaN;
+  if(!Number.isFinite(utcDay(s.slice(0,10))))return NaN;
+  const t=Date.parse(s);
+  if(!Number.isFinite(t))return NaN;
+  const canonical=new Date(t).toISOString();
+  return canonical===(s.includes('.')?s:s.replace(/Z$/,'.000Z'))?t:NaN;
+ };
  function valid(d){
-  const t=Date.parse(d?.fetchedAt);
+  const t=utcStamp(d?.fetchedAt);
+  const start=utcDay(d?.since),through=utcDay(d?.through);
+  const recentStart=utcDay(d?.last7Days?.since),recentUntil=utcDay(d?.last7Days?.until);
   return d?.schemaVersion===2&&d.site==='quantaphi.org'&&d.source==='Cloudflare GraphQL httpRequests1dGroups'&&
    d.scope==='recorded_since'&&d.historicComplete===false&&typeof d.refreshConfigured==='boolean'&&
-   /^\d{4}-\d{2}-\d{2}$/.test(d.since)&&/^\d{4}-\d{2}-\d{2}$/.test(d.through)&&d.since<=d.through&&
+   Number.isFinite(start)&&Number.isFinite(through)&&start<=through&&
    Number.isFinite(t)&&t<Date.now()+60000&&validCount(d.requests)&&validCount(d.pageViews)&&
    d.last7Days&&validCount(d.last7Days.requests)&&validCount(d.last7Days.pageViews)&&
-   validCount(d.recordedDays)&&typeof d.coverageContinuous==='boolean'&&
+   validCount(d.last7Days.daysRecorded)&&d.last7Days.daysRecorded<=7&&
+   Number.isFinite(recentStart)&&Number.isFinite(recentUntil)&&
+   // The recorded ledger may start after the seven-day window begins, or end before it.
+   // Neither condition invalidates its durable cumulative totals.
+   recentUntil-recentStart===6*86400000&&recentUntil>=through&&
+   validCount(d.recordedDays)&&d.last7Days.daysRecorded<=d.recordedDays&&
+   typeof d.coverageContinuous==='boolean'&&
    d.last7Days.requests<=d.requests&&d.last7Days.pageViews<=d.pageViews;
  }
  // Keep only validated aggregate counts across page reloads. No visitor identifiers are stored.
@@ -33,7 +58,9 @@
   const age=Date.now()-Date.parse(d.fetchedAt);
   const live=d.refreshConfigured&&!fallback&&!recovered&&age<60*60*1000&&d.through===new Date().toISOString().slice(0,10);
   const prefix='Recorded since '+d.since+' (earliest available Cloudflare date), through '+d.through+'. ';
-  const recent=' Last 7 days (UTC): '+d.last7Days.requests.toLocaleString()+' requests, '+d.last7Days.pageViews.toLocaleString()+' page views.';
+  const recent=' Last 7 days (UTC '+d.last7Days.since+' to '+d.last7Days.until+', '+
+   d.last7Days.daysRecorded+'/7 days recorded): '+d.last7Days.requests.toLocaleString()+
+   ' requests, '+d.last7Days.pageViews.toLocaleString()+' page views.';
   const status=live?'Automatic Cloudflare sync is active. ':(d.refreshConfigured?'Last recorded total; feed is temporarily stale. ':'Last recorded total; automatic ingestion is not yet authorized. ');
   note.textContent=prefix+status+'Last verified '+updated+'.'+recent+
    ' Includes bots; not unique visitors or individual clicks.'+
@@ -46,16 +73,39 @@
   if(!valid(d))throw Error('traffic_invalid');
   return d;
  }
+ // A stale but valid ledger response must not eclipse a newer, verified
+ // same-origin fallback. Cache the backup check to avoid repeated asset loads.
+ let backup=null,backupCheckedAt=0;
+ async function validatedBackup(){
+  if(backupCheckedAt&&Date.now()-backupCheckedAt<10*60*1000)return backup;
+  backupCheckedAt=Date.now();
+  try{backup=await load('/data/site-traffic-lifetime.json?v='+Math.floor(Date.now()/60000));}catch{}
+  return backup;
+ }
  async function refresh(){
   if(busy)return;busy=true;
+  if(refreshButton){refreshButton.disabled=true;refreshButton.textContent='Checking totals…';}
   try{
-   try{render(await load('/api/site-traffic'),{fallback:false});}
-   catch{render(await load('/data/site-traffic-lifetime.json?v='+Math.floor(Date.now()/60000)),{fallback:true});}
-  }catch{
-   if(best)render(best,{fallback:true});
-   else{requests.textContent='—';views.textContent='—';note.textContent='Cloudflare lifetime ledger currently unavailable; no estimated counts shown.';}
-  }finally{busy=false;}
+   let server=null;
+   try{server=await load('/api/site-traffic')}catch{}
+   const oldServer=!server||Date.now()-Date.parse(server.fetchedAt)>60*60*1000;
+   const fallback=oldServer?await validatedBackup():null;
+   // Do not trust a newer timestamp if its recorded totals go backwards.
+   const useFallback=Boolean(fallback&&(!server||(
+    fallback.since===server.since &&
+    fallback.requests>=server.requests&&fallback.pageViews>=server.pageViews &&
+    Date.parse(fallback.fetchedAt)>Date.parse(server.fetchedAt)
+   )));
+   const chosen=useFallback?fallback:server;
+   if(chosen)render(chosen,{fallback:useFallback});
+   else if(best)render(best,{fallback:true});
+   else{requests.textContent='—';views.textContent='—';note.textContent='Cloudflare recorded ledger currently unavailable; no estimated counts shown.';}
+  }finally{
+   busy=false;
+   if(refreshButton){refreshButton.disabled=false;refreshButton.textContent='Refresh totals';}
+  }
  }
+ if(refreshButton)refreshButton.addEventListener('click',()=>refresh());
  refresh();
  setInterval(()=>{if(!document.hidden)refresh();},60000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});

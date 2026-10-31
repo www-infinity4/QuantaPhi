@@ -1,0 +1,40 @@
+name: Bubbles draft-safe website updates
+
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles.html'
+      - 'test/bubbles-apk-website-release-parity.test.cjs'
+      - 'test/bubbles-fresh-chat-opening.test.mjs'
+      - 'test/cardone-bubbles-embed-boot.test.cjs'
+      - '.github/workflows/bubbles-draft-update-safety.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles.html'
+      - 'test/bubbles-apk-website-release-parity.test.cjs'
+      - 'test/bubbles-fresh-chat-opening.test.mjs'
+      - 'test/cardone-bubbles-embed-boot.test.cjs'
+      - '.github/workflows/bubbles-draft-update-safety.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  draft-safe-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify first-party Bubbles source syntax
+        run: node --check bubbles-ai.js
+      - name: Verify native/web draft safety, fresh-chat opening and embedded-card behavior
+        run: |
+          node --test test/bubbles-apk-website-release-parity.test.cjs \
+            test/bubbles-fresh-chat-opening.test.mjs \
+            test/cardone-bubbles-embed-boot.test.cjs
