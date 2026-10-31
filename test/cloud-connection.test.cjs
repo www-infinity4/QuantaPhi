@@ -1,6 +1,24 @@
 const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
 function setup(entries){let calls=[];const map=new Map(entries),window={StarQuestCloudLedger:{authenticatedFetch:async()=>{throw Error('ledger_not_connected')}}};const localStorage={getItem:k=>map.get(k)||null,key:i=>[...map.keys()][i],get length(){return map.size}};vm.runInNewContext(fs.readFileSync('cloud-wallet-client.js','utf8'),{window,localStorage,location:{origin:"https://www-infinity4.github.io"},URL,fetch:async(url,opts)=>{calls.push({url,opts});return {ok:true}},Set});return {window,calls}}
 test('expired session can use its single existing device credential for the paired commit',async()=>{const token='sq_'+'a'.repeat(40),{window,calls}=setup([['starquest_ledger_device_v1:kris',token]]);await window.QuantaCloudConnection.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{search_id:'same-id'}});assert.equal(calls[0].opts.headers.authorization,'Bearer '+token);assert.equal(calls[0].opts.body,'{"search_id":"same-id"}')});
+test('Coliseum receives only a verified selected StarQuest bearer token on specific room endpoints',async()=>{
+ const token='sq_'+'c'.repeat(40),{window,calls}=setup([['starquest_ledger_device_v1:member',token]]);
+ await window.QuantaCloudConnection.authenticatedFetch('https://infinity-coliseum.marvaseater.workers.dev/v1/me');
+ await window.QuantaCloudConnection.authenticatedFetch('https://infinity-coliseum.marvaseater.workers.dev/v1/join',{method:'POST',body:{modelId:'zeus'}});
+ assert.equal(calls.length,2);
+ assert.equal(calls[0].opts.headers.authorization,'Bearer '+token);
+ assert.equal(calls[1].opts.headers.authorization,'Bearer '+token);
+ assert.equal(calls[1].opts.body,'{"modelId":"zeus"}');
+ for(const endpoint of [
+  'https://attacker.test/v1/me',
+  'https://infinity-coliseum.marvaseater.workers.dev/v1/admin',
+  'https://someone@infinity-coliseum.marvaseater.workers.dev/v1/me'
+ ]){
+  await assert.rejects(window.QuantaCloudConnection.authenticatedFetch(endpoint),/unsupported_wallet_target/);
+ }
+ await assert.rejects(window.QuantaCloudConnection.authenticatedFetch('https://infinity-coliseum.marvaseater.workers.dev/v1/vote',{method:'GET'}),/unsupported_wallet_target/);
+ assert.equal(calls.length,2);
+});
 test('ambiguous devices and another account never silently choose a credential',async()=>{for(const entries of [[['starquest_ledger_device_v1:a','sq_'+'a'.repeat(40)],['starquest_ledger_device_v1:b','sq_'+'b'.repeat(40)]],[['starquest_session','{"username":"other"}'],['starquest_ledger_device_v1:a','sq_'+'a'.repeat(40)]]]){const {window,calls}=setup(entries);await assert.rejects(window.QuantaCloudConnection.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/history'),/ledger_not_connected/);assert.equal(calls.length,0)}});
 test('paid-domain bridge accepts only its exact frame and origin, preserves existing data',async()=>{
  const map=new Map([['quantaPhiTokens','80']]),events=new Map(),frame={contentWindow:{postMessage(){}},remove(){this.removed=true}};

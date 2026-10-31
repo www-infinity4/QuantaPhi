@@ -12,10 +12,10 @@ if(area){
  frame.append(make('p','SHARED COLISEUM · VERIFIED BETA','eyebrow'),make('h2','The connected arena'));
  const status=make('p','Checking whether the invited beta is enabled…','notice');status.id='liveStatus';status.setAttribute('role','status');frame.append(status);
  const heading=make('h3','Join your builders');heading.id='liveTitle';frame.append(heading);
- const intro=make('p','Private local drafts never publish automatically. To share an idea, you must sign in with your own StarQuest wallet and choose Publish. No paid plans or AI model access are active.');
+ const intro=make('p','Use the same existing StarQuest wallet as Bubbles and QuantaPhi. Account recovery only reconnects: it never spends or resets tokens. Zeus AI chat is available separately through the existing Bubbles service; human Joust rooms require the verified beta. Paid billing is not live.');
  frame.append(intro);
  const controls=make('div',undefined,'live-controls');
- const sign=make('a','Connect StarQuest wallet');sign.href='/wallet-recovery.html';sign.className='secondary';
+ const sign=make('a','Sign in with StarQuest · keep my tokens');sign.href='/wallet-recovery.html?signin=starquest&returnTo=/coliseum/';sign.className='secondary';
  const refresh=make('button','Check beta');refresh.type='button';refresh.className='secondary';
  const join=make('button','Join free Zeus 6.2');join.type='button';join.className='primary';join.hidden=true;
  controls.append(sign,refresh,join);frame.append(controls);
@@ -41,30 +41,46 @@ if(area){
  const refreshRoom=make('button','Refresh shared ideas and messages');refreshRoom.className='secondary';refreshRoom.type='button';board.append(refreshRoom);
  frame.append(board);
  area.insertAdjacentElement('afterend',frame);
- // Existing Bubbles Oracle provides a *real* assistant, without claiming Zeus
- // is a separately trained or OpenAI-endorsed model. Load it on first tap.
+ // Embed the existing authenticated Bubbles AI conversation in the Zeus card.
+ // Never simulate a model, a human participant or paid access.
  const heroButtons=document.querySelector('.hero-buttons');
  if(heroButtons){
-  const ask=make('button','Ask the Zeus builder (Bubbles AI)','secondary');
+  const ask=make('button','Talk to Zeus AI · Bubbles connected','primary');
   ask.id='zeusAskBuilder';ask.type='button';
-  const info=make('small','Uses the existing Bubbles AI service; it does not connect to live member rooms or share private drafts.');info.className='fineprint';
-  let loading=false,installed=false;
-  ask.addEventListener('click',()=>{
-   const open=()=>{const orb=document.querySelector('.quantaphi-bubbles-embed-launcher');if(orb){orb.click();return true}return false};
-   if(installed){if(!open())window.location.assign('/bubbles.html');return}
-   if(loading)return;loading=true;ask.disabled=true;ask.textContent='Opening assistant…';
-   const script=document.createElement('script');
-   script.src='/bubbles-embed.js?v=20261028-coliseum1';
-   script.dataset.bubbleId='coliseum-zeus-assistant';
-   script.dataset.bubbleRole='builder';
-   script.dataset.bubbleName='Zeus Builder';
-   script.dataset.bubbleInstructions='You are the independent Bubbles AI builder for Infinity Coliseum Zeus 6.2. Help visitors refine ideas, ask evidence-based questions, and propose practical build steps. Do not claim to be a newly trained OpenAI model or publish their private drafts without permission.';
-   script.onload=()=>{installed=true;loading=false;ask.disabled=false;ask.textContent='Open Zeus builder (Bubbles AI)';if(!open())window.location.assign('/bubbles.html')};
-   script.onerror=()=>{loading=false;ask.disabled=false;ask.textContent='Open Zeus builder';window.location.assign('/bubbles.html')};
-   document.body.append(script);
+  ask.setAttribute('aria-expanded','false');
+  ask.setAttribute('aria-controls','zeusAssistantPanel');
+  const panel=make('section',undefined,'zeus-assistant-panel');
+  panel.id='zeusAssistantPanel';panel.hidden=true;
+  panel.setAttribute('aria-label','Zeus AI assistant conversation');
+  const header=make('div',undefined,'zeus-assistant-heading');
+  header.append(make('h2','⚡ Zeus AI · Your builder companion'),make('p','Real Bubbles conversation on your existing QuantaPhi account. Available for ideas, planning and preparation for human Joust rooms. No simulated humans, payment or published drafts.'));
+  const chat=make('iframe');
+  chat.title='Zeus AI · Bubbles conversation';
+  chat.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms allow-popups');
+  chat.setAttribute('allow','microphone');
+  chat.referrerPolicy='no-referrer';
+  chat.loading='lazy';
+  const params=new URLSearchParams({
+   embed:'1',id:'coliseum-zeus-assistant',role:'builder',name:'Zeus AI · Bubbles',
+   instructions:'You are the Bubbles-connected Zeus AI assistant in the Infinity Coliseum. Respond to the visitor, discuss practical projects and ask clarifying questions before proposing a Joust plan. Do not impersonate human members, claim to be an OpenAI model edition, transact, or publish drafts without authorization.'
   });
+  let loaded=false;
+  function openChat(){
+   panel.hidden=false;
+   ask.setAttribute('aria-expanded','true');
+   ask.textContent='Close Zeus AI conversation';
+   if(!loaded){
+    loaded=true;chat.src='/bubbles.html?'+params;
+   }else if(chat.contentWindow)chat.contentWindow.postMessage({type:'quantaphi:bubbles:open',id:'coliseum-zeus-assistant'},location.origin);
+  }
+  chat.addEventListener('load',()=>chat.contentWindow?.postMessage({type:'quantaphi:bubbles:open',id:'coliseum-zeus-assistant'},location.origin));
+  ask.addEventListener('click',()=>{
+   if(panel.hidden){openChat();return}
+   panel.hidden=true;ask.setAttribute('aria-expanded','false');ask.textContent='Talk to Zeus AI · Bubbles connected';
+  });
+  panel.append(header,chat);
   heroButtons.append(ask);
-  heroButtons.insertAdjacentElement('afterend',info);
+  heroButtons.insertAdjacentElement('afterend',panel);
  }
 
  let enabled=false,joined=false,modelId='zeus',busy=false;
