@@ -18,3 +18,11 @@ body.oracle-shelf-open #premiumSourceCards[hidden],body.oracle-shelf-open #siteQ
 .premium-card .qca-search-submit{background:#a42e2d;color:#fff}
 .premium-card .qca-button[aria-pressed="true"]{background:#fff1d5;color:#5f3800}
 @media(max-width:420px){.premium-card .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Editorial restaurant covers: strong real brand identities, no oversized faux poster or generic letter art. */
+.premium-card[data-source-id="mcdonalds"] .premium-heading{background:linear-gradient(120deg,#a91620,#d22b2b);border-bottom:5px solid #ffc72c}
+.premium-card[data-source-id="burger-king"] .premium-heading{background:linear-gradient(115deg,#9c2d18,#c54722);border-bottom:5px solid #f6a83c}
+.premium-card[data-source-id="mcdonalds"] .premium-heading h2,.premium-card[data-source-id="burger-king"] .premium-heading h2{font:900 clamp(32px,7vw,51px)/1.04 system-ui,sans-serif;letter-spacing:-.06em;text-wrap:balance}
+.premium-card .premium-heading-subtitle{color:#fff;font:650 13px/1.5 system-ui,sans-serif;opacity:.93;margin:10px 0 0;max-width:35ch}
+.premium-card[data-source-id="mcdonalds"] .premium-selected,.premium-card[data-source-id="burger-king"] .premium-selected{border-radius:16px;border:1px solid #e4d7d0;overflow:hidden}
+.premium-card[data-source-id="mcdonalds"] .premium-photo,.premium-card[data-source-id="burger-king"] .premium-photo{object-fit:cover;aspect-ratio:16/9;max-height:355px;border-radius:0;background:#f5f3ee}
