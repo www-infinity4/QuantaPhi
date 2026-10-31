@@ -82,10 +82,10 @@ export function mountCardActions(host,card,options={}){
    sourceUrl:String(card.featureUrl||card.official||card.url||previewUrl(card)),
    cardUrl:previewUrl(card),collectedAt:new Date().toISOString()};
   if(!write(STORE_COLLECT,[...items,item]))return notify(status,'Could not save collection on this device.');
-  collect.textContent='✓ Collected';
+  collect.textContent='✓ Collected';collect.setAttribute('aria-pressed','true');
   window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:item}));
   notify(status,'Collected on this device. Cloud sync and coin rewards are not confirmed.');
- },'collect');
+ },'collect');collect.setAttribute('aria-pressed',String(collected()));
  // Every public, embeddable card gets the same professional in-site preview.
  // The modal contains the original live controls, not screenshots posing as actions.
  if(options.showPreview!==false&&!new URLSearchParams(location.search).has('preview') && safeLocalCardUrl(previewUrl(card),location.origin+'/')){
