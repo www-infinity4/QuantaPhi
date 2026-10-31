@@ -1,7 +1,10 @@
 // Repository-backed card definitions. Only these declared modules/routes may run in chat.
+import {HOUSING_HELP_RESOURCES,housingResourceRoute} from './housing-help-catalog.mjs';
 const local=(id,title,mount,scripts,styles=[],aliases=[],extraMounts=[])=>({id,title,mount,scripts,styles,aliases,extraMounts,repository:'www-infinity4/QuantaPhi',pageUrl:'/#'+mount,url:'/bubbles-card-host.html?card='+id});
 const app=(id,title,path,repo,aliases=[],play='')=>({id,title,url:path,repository:'www-infinity4/'+repo,aliases,play,surface:id==='bubbles-workshop'?'body':id==='infinity-radio'?'.player':'main, [role="main"]'});
 export const cards=Object.freeze([
+ app('disability-housing','Home Access · Disability Housing','/disability-housing.html','QuantaPhi',['disability housing','disabled housing','housing on disability','ssi housing','ssdi housing','usda housing','home access','housing assistance']),
+ ...HOUSING_HELP_RESOURCES.map(r=>app('housing-help-'+r.id,r.title+' · '+r.provider,housingResourceRoute(r.id),'QuantaPhi',[r.id,r.id==='sieda'?'seida':r.id,r.provider.toLowerCase()+' housing help',r.title.toLowerCase()])),
  app('bubbles-workshop','Bubbles Agent Workshop','/bubbles-agent-workshop/','Bubbles-Agent-Workshop',['agent workshop','build workshop']),
  app('infinity-radio','Infinity Radio','/infinity-radio/','Alien-Radio',['radio','alien radio'],'#play-btn'),
  local('story-writer','Story Writer','phiStoryWriter',['phi-visual-render.js','phi-story-writer.js'],['phi-story-writer.css'],['oracle story writer']),

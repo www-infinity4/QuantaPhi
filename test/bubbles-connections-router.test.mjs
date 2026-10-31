@@ -282,6 +282,9 @@ test('public scope inventory is session-free, secret-free, and never grants muta
   assert.equal(data.ok,true);
   assert.equal(data.clientIdPrefix,'8f676e020d9ff91a');
   assert.equal(data.scopeInventory.serverAllowlistCount,FULL_CLOUDFLARE_SCOPES.split(' ').length);
+  assert.equal(data.scopeInventory.supportsVersionedAllowlist,true);
+  assert.match(data.scopeInventory.scopeSetDigest,/^[\w-]{43}$/);
+  assert.equal(data.scopeInventory.configurationRevision,null);
   assert.ok(!JSON.stringify(data).includes('hidden-secret'));
   assert.ok(!Object.keys(data).includes('providers'));
   const blocked=await handleConnections(new Request(url,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}),configured,()=>assert.fail('no mutation'));

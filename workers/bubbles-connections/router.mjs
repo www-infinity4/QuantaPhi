@@ -2,6 +2,7 @@ import {cloudStarCoinBackup} from './starcoin-backup.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
 import {safeConnectionFailure} from './completion.mjs';
+import {cloudflareScopeConfigProof} from './scope-config.mjs';
 import {CONNECTOR_REQUIREMENTS,cloudflareAvailableActions,cloudflareScopeInventory,resolveCloudflareScopeConfig} from './providers.mjs';
 const ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 export const PREFIX = '/api/bubbles/connections';
@@ -85,7 +86,8 @@ export async function handleConnections(request,env,resolveService) {
     return json(origin,{ok:true,configured,clientIdPrefix:configured?clientId.slice(0,16):null,
       scopeInventory:{serverAllowlistCount:inventory.serverAllowlistCount,
         signInRequestScopeCount:inventory.signInRequestScopeCount,
-        supportsChunkedAllowlist:true}});
+        supportsChunkedAllowlist:true,supportsVersionedAllowlist:true,
+        ...await cloudflareScopeConfigProof(env)}});
   }
   const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
   if(callback && request.method==='GET'){

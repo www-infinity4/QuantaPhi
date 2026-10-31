@@ -1,0 +1,33 @@
+name: Disability housing intake and privacy checks
+on:
+  pull_request:
+    paths: ['disability-housing*','housing-help*','assets/share/disability-housing*','assets/share/housing-help*','shop-phi-switchboard.mjs','quick-card-search*','quick-card-preview.mjs','bubbles-card-catalog.mjs','index.html','oracle-card-deck.js','workers/quantaphi-site/worker.js','test/disability-housing*','test/housing-help*','.github/workflows/disability-housing.yml']
+  push:
+    branches: [main]
+    paths: ['disability-housing*','housing-help*','assets/share/disability-housing*','assets/share/housing-help*','shop-phi-switchboard.mjs','quick-card-search*','quick-card-preview.mjs','bubbles-card-catalog.mjs','index.html','oracle-card-deck.js','workers/quantaphi-site/worker.js','test/disability-housing*','test/housing-help*','.github/workflows/disability-housing.yml']
+permissions:
+  contents: read
+jobs:
+  housing-intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate intake and discovery modules
+        run: |
+          node --check disability-housing.mjs
+          node --check disability-housing-card.mjs
+          node --check disability-housing-core.mjs
+          node --check housing-help-cards.mjs
+          node --test test/disability-housing.test.mjs test/disability-housing-routing.test.mjs test/housing-help.test.mjs tests/shop-phi-switchboard.test.mjs test/quick-card-search.test.mjs test/quick-card-preview.test.mjs test/shoplc-embed.test.cjs test/quantaphi-text-proxy.test.mjs test/site-source-release.test.cjs
+      - name: Install test-only browser
+        run: |
+          npm install --no-save --package-lock=false @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify mobile flow, local drafts, exports, and no outbound answers
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 &
+          npx playwright test test/disability-housing.browser.spec.mjs --reporter=line --workers=1

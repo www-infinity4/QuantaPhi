@@ -7,6 +7,7 @@ import {semanticDecision,interpretOwnerWork} from './semantic-intent.mjs';
 import {lookupKind,webSearch,currentWeather,compareWeather} from './search.mjs';
 import {needsReadAgent,runReadAgent,planReadSteps} from './read-agent.mjs';
 import {cardSourcePlanFor} from './card-source.mjs';
+import {readPublicGithubRoot,githubRootSummary} from './github-public-root.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
 const VISION_MODEL='@cf/google/gemma-4-26b-a4b-it';
@@ -329,8 +330,7 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch,en
 
  if(verified){
   const contents=verified.contents;
-  const matched=contents.filter(x=>/bubbles|brain|worker|code|\.json$|index\.html$/i.test(x.name));
-  const shown=[...matched.slice(0,20),...contents.filter(x=>!matched.includes(x)).slice(0,10)].slice(0,30);
+  const shown=githubRootSummary(contents,30);
   return response(request,{ok:true,repository,contents:shown,sourceUrl:verified.sourceUrl,
    output:'Verified owner GitHub read '+repository+' at commit '+verified.headSha.slice(0,12)+
     ' on '+verified.defaultBranch+'. Actual root entries: '+contents.length+'. Relevant paths: '+
@@ -348,6 +348,18 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch,en
   if(!root.ok||!files.ok){
    const status=!root.ok?root.status:files.status;
    if(status===403||status===429){
+    try{
+     const page=await readPublicGithubRoot(repository,fetcher);
+     const shown=githubRootSummary(page.contents);
+     return response(request,{ok:true,repository,contents:shown,sourceUrl:page.sourceUrl,
+      output:'Verified public GitHub root '+repository+' at commit '+page.headSha.slice(0,12)+
+       ' on '+page.defaultBranch+' using GitHub’s public HTML after REST HTTP '+status+'. '+
+       'Root entries: '+page.contents.length+'. Showing '+shown.length+' relevant paths: '+
+       shown.map(x=>x.name+(x.type==='dir'?'/':'')).join(', ')+'. No repository edit occurred.',
+      receipt:{...receipt,tool:'github.read_repository',status:'complete',provider:'github-html-public',
+       sourceReadVerified:true,rootListingVerified:true,headSha:page.headSha,
+       repositoryActionsVerified:false,minted:false}});
+    }catch{/* Keep the existing honest partial README fallback if HTML is unavailable. */}
     const raw=await readPublicGithubRawMain(repository,'README.md',fetcher);
     // A README-only fallback is partial evidence, never a completed root
     // listing. Do not burden the chat/voice with unrelated README text.
@@ -368,8 +380,7 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch,en
    throw Error('github_response_not_verified');
   const contents=listing.filter(x=>typeof x.name==='string'&&(x.type==='file'||x.type==='dir'))
    .map(x=>({name:clean(x.name,110),type:x.type})); 
-  const matched=contents.filter(x=>/bubbles|brain|worker|code|\.json$|index\.html$/i.test(x.name));
-  const shown=[...matched.slice(0,18),...contents.filter(x=>!matched.includes(x)).slice(0,8)].slice(0,26);
+  const shown=githubRootSummary(contents);
   const output='GitHub repository '+meta.full_name+' (public read verified). Default branch: '+
    clean(meta.default_branch,60)+'. Root entries: '+contents.length+'. Relevant files: '+
    shown.map(x=>x.name+(x.type==='dir'?'/':'')).join(', ')+
@@ -830,7 +841,7 @@ export default {async fetch(request,env){
  const url=new URL(request.url);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
  if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
- if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261027-owner-github-reads-v1',tools:{githubRawReadFallback:'public-main-403-429-only',replyActionEnvelopes:'blocked-v1',readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
+ if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261027-owner-github-reads-v1',tools:{githubRawReadFallback:'public-main-403-429-only',githubRootReadFallback:'public-html-403-429-v1',replyActionEnvelopes:'blocked-v1',readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(request.method==='POST'&&url.pathname==='/v1/intent'){

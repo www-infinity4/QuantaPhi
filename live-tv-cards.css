@@ -25,3 +25,16 @@
 .oracle-card-deck-active:not(.oracle-shelf-open) main.app>:is(#liveFoxGameCard,#liveFoxNewsCard){display:none!important}
 .oracle-shelf-open main.app>:is(#liveFoxGameCard,#liveFoxNewsCard){display:block;margin:16px 0}
 @media(max-width:360px){.ltv-head,.ltv-score,.ltv-access{padding:15px}.ltv-team{gap:5px}.ltv-team img{width:36px;height:36px}}
+
+/* KYOU official destination button grid: meaningful actions instead of blue text links.
+ * Source links retain publisher control; FOX viewing stays clearly separate. */
+.ltv-card[data-station="kyou"] .ltv-access{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;align-items:stretch}
+.ltv-card[data-station="kyou"] .ltv-access > :is(strong,p){grid-column:1/-1;margin:0}
+.ltv-card[data-station="kyou"] .ltv-access > .ltv-link{box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-width:0;min-height:50px;margin:0;padding:10px 11px;border-radius:12px;border:1px solid #95bfdc;background:#eaf5ff;color:#114f7e;font:800 13px/1.35 system-ui,sans-serif;text-align:center;text-decoration:none;white-space:normal;overflow-wrap:anywhere}
+.ltv-card[data-station="kyou"] .ltv-access > .ltv-link[data-station-destination="live"]{background:#075b98;border-color:#075b98;color:#fff}
+.ltv-card[data-station="kyou"] .ltv-access > .ltv-link[data-station-destination="schedule"]{background:#edf5fc;border-color:#8eb7d5;color:#144c75}
+.ltv-card[data-station="kyou"] .ltv-access > .ltv-link[data-station-destination="guide"]{background:#f1f8ff;border-color:#a3c9e5;color:#165781}
+.ltv-card[data-station="kyou"] .ltv-access > .ltv-link:not([data-station-destination]){background:#192f4c;border-color:#192f4c;color:#fff}
+.ltv-card[data-station="kyou"] .ltv-access > .ltv-link:hover{filter:brightness(.95)}
+.ltv-card[data-station="kyou"] .ltv-access > .ltv-link:focus-visible{outline:3px solid #e9a530;outline-offset:3px}
+@media(max-width:340px){.ltv-card[data-station="kyou"] .ltv-access{grid-template-columns:minmax(0,1fr)}}
