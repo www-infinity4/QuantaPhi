@@ -1,5 +1,6 @@
 import {PLUGIN_QUICK_CARDS,PLUGIN_CATEGORIES,pluginQuickCard} from './plugin-quick-card-catalog.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs';
+import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
 const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
 const params=new URLSearchParams(location.search);
 const filterInput=document.getElementById('iqpFilter');
@@ -47,22 +48,28 @@ function render(updateUrl=false){
  actions.append(external(card.mode==='directory'?'Find in ChatGPT Plugins ↗':card.mode==='plugin'?'Official plugin details ↗':'Open original website ↗',card.official,'iqp-primary'));
  const publicSearch=el('section','iqp-public-search');
  if(card.mode==='site'){
-  const heading=el('h3','','Search public pages from '+card.name);
+  publicSearch.append(el('h3','','Live original website content'));
+  const explanation=el('p','iqp-message','Read public information through QuantaPhi’s verified website reader. Sources and receipts appear below; no website account is signed in.');
+  const readButton=el('button','iqp-btn iqp-primary','Read website');readButton.type='button';
   const searchForm=el('form','iqp-public-form');
-  const query=el('input','iqp-public-query');query.type='search';query.maxLength=100;query.required=true;
-  query.placeholder='Topic, product or question…';query.setAttribute('aria-label','Search public pages from '+card.name);
-  const submit=el('button','iqp-btn iqp-primary','Find pages');submit.type='submit';
-  const source=el('p','iqp-message','Uses the independent Infinity search broker. Results are attributed to their original publishers; this is not a private provider feed.');
-  const frame=el('iframe','iqp-public-results');frame.title=card.name+' public search results';frame.hidden=true;frame.loading='lazy';frame.referrerPolicy='no-referrer';
-  searchForm.append(query,submit);
+  const query=el('input','iqp-public-query');query.type='search';query.maxLength=180;query.required=true;
+  query.placeholder='Search public website content…';query.setAttribute('aria-label','Search public pages from '+card.name);
+  const searchButton=el('button','iqp-btn','Search website');searchButton.type='submit';
+  searchForm.append(query,searchButton);
+  const controls=el('div','iqp-actions');controls.append(readButton);
+  const results=el('div','iqp-public-results');results.hidden=true;results.setAttribute('aria-live','polite');
+  const run=async(action,term='')=>{
+   readButton.disabled=searchButton.disabled=true;results.hidden=false;
+   try{await showCardWebsiteResults(results,card.id,action,term)}
+   catch{/* Verified reader renders its own error; never substitute an invented result. */}
+   finally{readButton.disabled=searchButton.disabled=false}
+  };
+  readButton.addEventListener('click',()=>run('inspect'));
   searchForm.addEventListener('submit',event=>{
-   event.preventDefault();const term=query.value.trim().slice(0,100);if(!term)return;
-   const hostname=new URL(card.official).hostname;
-   const scoped='site:'+hostname+' '+term;
-   frame.src='/infinity-search-results.html?'+new URLSearchParams({engine:'google',q:scoped});
-   frame.hidden=false;source.textContent='Searching public pages from '+hostname+'. Results may be unavailable or general web results; check the publisher link on each result.';
+   event.preventDefault();const term=query.value.trim().slice(0,180);if(term.length<2)return;
+   run('search',term);
   });
-  publicSearch.append(heading,searchForm,source,frame);
+  publicSearch.append(explanation,controls,searchForm,results);
  }
  const details=el('section','iqp-workspace');
  details.append(el('h3','','Your task workspace'));
