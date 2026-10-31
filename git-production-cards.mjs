@@ -28,6 +28,8 @@ function stageCard(stage,mountTools){
  const input=node('textarea','');input.maxLength=4000;input.placeholder='Add your own instructions or repairs here…';input.setAttribute('aria-label',stage.name+' instructions');
  const feedback=node('button','','Post instructions on PR');feedback.type='button';
  const handoff=node('button','','Prepare Bubbles evidence handoff');handoff.type='button';
+ const aiReview=node('button','','AI audit · Gemini → Claude');aiReview.type='button';
+ const aiResult=node('div','igf-evidence');aiResult.hidden=true;aiResult.setAttribute('aria-live','polite');
  const merge=node('button','primary','Check gates & merge PR');merge.type='button';
  const evidence=node('div','igf-evidence');evidence.setAttribute('aria-live','polite');
  const draft=node('textarea','');draft.setAttribute('aria-label','Bubbles review packet');draft.hidden=true;draft.rows=6;
@@ -130,6 +132,27 @@ function stageCard(stage,mountTools){
    await loadPRs();
   }catch(e){setStatus('Merge blocked: '+e.message)}finally{merge.disabled=false;}
  });
+ aiReview.addEventListener('click',()=>{
+  const issue=selectedIssue();
+  if(!lastDetails){setStatus('Inspect the actual PR before requesting an AI audit.');return;}
+  if(stage.mode==='requirements'&&!issue){setStatus('Select the original Copilot issue to compare against the PR.');return;}
+  const question=[
+   'Read-only Gitpal completion audit. Do not claim to have run code or deployment steps.',
+   'Requested task: '+String(issue?.instruction||input.value||'not provided').slice(0,1700),
+   'Repository: '+repos.value+'; PR #'+lastDetails.pr,
+   'PR description: '+String(lastDetails.description||'').slice(0,500),
+   'Changed files: '+(lastDetails.files||[]).slice(0,30).map(f=>f.path+' +'+f.additions+' -'+f.deletions).join('; ').slice(0,900),
+   'Compare intended deliverables to observable changes. Separate verified evidence, missing work and Cloudflare tasks for Bubbles. Never treat this as execution approval.'
+  ].join('\n').slice(0,3900);
+  if(!window.confirm('Send this selected GitHub issue and file-summary evidence to Bubbles’ verified Gemini → Claude consultation? It may go to those AI providers.'))return;
+  aiReview.disabled=true;aiResult.hidden=false;aiResult.textContent='Asking the existing verified Bubbles AI consultation…';
+  const detail={question,mode:'gemini_claude_review',respond:value=>{
+   aiReview.disabled=false;aiResult.textContent=String(value||'No verified review returned.').slice(0,7000);
+  }};
+  const accepted=!window.dispatchEvent(new CustomEvent('bubbles:ai-consult',{cancelable:true,detail}));
+  if(!accepted){aiReview.disabled=false;setStatus('AI review requested. Any recommendation must still be separately tested and approved.');}
+  else {aiReview.disabled=false;aiResult.textContent='Verified Bubbles AI consultation is not active in this view. Use the handoff packet to continue in Bubbles.';}
+ });
  handoff.addEventListener('click',()=>{
   const pr=selectedPr(),issue=selectedIssue();
   const lines=['Infinity production evidence handoff · '+stage.name,
@@ -171,7 +194,8 @@ function stageCard(stage,mountTools){
  root.append(evidence);
  if(stage.mode!=='merged'){const writes=node('div','igf-actions');writes.append(feedback,handoff);
   if(stage.mode==='merge')writes.append(merge);
-  root.append(node('label','','User instructions / missing work'),input,writes,draft,copy,handoffLink);}
+  if(stage.mode==='requirements')writes.append(aiReview);
+  root.append(node('label','','User instructions / missing work'),input,writes,aiResult,draft,copy,handoffLink);}
  root.append(status);
  item.append(root);
  if(typeof mountTools==='function'){const tools=node('div','iqc-inline-tools');mountTools(tools,card);item.append(tools);}
