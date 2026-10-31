@@ -415,7 +415,10 @@
       void refreshStarCoinCloud();
   });
   window.addEventListener('infinity-wallet-updated',refreshCloudBalances);
-  document.addEventListener('starquest:auth-changed',refreshCloudBalances);
+  document.addEventListener('starquest:auth-changed',()=>{void refreshCloudBalances();void refreshAlienCoinCount()});
+  window.addEventListener('storage',event=>{
+    if(event.key==='alien-coin-wallet-session-v1')void refreshAlienCoinCount();
+  });
   window.addEventListener('phi:asset-balances',refreshWalletUI);
   window.addEventListener('musicquant:cloud-synced',refreshWalletUI);
   window.addEventListener('musicquant:changed',refreshWalletUI);
@@ -467,11 +470,16 @@
     if(!session){alienCoinCloud={count:null,status:'Connect Alien Coin to verify holdings'};refreshWalletUI();return null}
     alienCoinCloud={count:null,status:'Checking Alien Coin ledger…'};refreshWalletUI();
     try{
-      const response=await fetch('https://alien-coin.marvaseater.workers.dev/api/tokens',{
-        headers:{Authorization:'Bearer '+session},cache:'no-store',signal:AbortSignal.timeout(12000)
+      // Read through the already registered QuantaPhi same-origin proxy.
+      // Never send an account bearer token from a third-party copy of this UI.
+      if(location.origin!=='https://quantaphi.org')throw new Error('canonical_origin_required');
+      const response=await fetch('/alien-coin/api/tokens',{
+        headers:{Authorization:'Bearer '+session},credentials:'omit',cache:'no-store',
+        signal:AbortSignal.timeout(12000)
       });
       const data=await response.json().catch(()=>null);
-      if(epoch!==alienCoinReadEpoch)return null;
+      let stillSelected='';try{stillSelected=localStorage.getItem('alien-coin-wallet-session-v1')||''}catch{}
+      if(epoch!==alienCoinReadEpoch||stillSelected!==session)return null;
       if(!response.ok||!Array.isArray(data?.tokens))throw new Error('unverified_account_or_response');
       const count=data.tokens.length;
       alienCoinCloud={count,status:'Confirmed token records returned by Alien Coin; not a cash valuation'};
