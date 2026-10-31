@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-10-31T00:53:32.645026Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "alina habba",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-31T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/10/29/us/politics/trump-alina-habba-mildon-deal.html",
+        "https://www.the-independent.com/news/world/americas/us-politics/trump-alina-habba-pardon-for-pay-contract-b3076343.html",
+        "https://www.ms.now/on-the-line/watch/nyt-trump-angered-at-size-of-alina-habba-mildon-s-50-million-deal-2519125059926"
+      ]
+    },
+    {
+      "query": "worlds 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T00:40:00Z",
+      "related_news_urls": [
+        "https://dotesports.com/league-of-legends/news/theshy-interview-worlds-2026",
+        "https://en.koreadaily.com/theshy-worlds-2026-ig-return/",
+        "https://www.sheepesports.com/en/articles/why-is-top-esports-run-at-worlds-is-the-most-unexpected-of-the-competition-so-far/en"
+      ]
+    },
+    {
+      "query": "elizabeth holmes",
+      "approx_searches": "10000+",
+      "published_at": "2026-10-31T00:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/10/30/opinion/you-can-see-everything-elizabeth-holmes-nathan-fielder.html",
+        "https://www.forbes.com/sites/alexknapp/2026/10/29/that-forbes-photo-at-the-center-of-the-elizabeth-holmes-documentary/",
+        "https://time.com/collection/time100-next-gala/2026/chloe-fineman-you-can-see-everything/"
+      ]
+    },
+    {
+      "query": "payton pritchard",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-31T00:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909870",
+        "https://www.nba.com/watch/video/game-recap-celtics-134-bulls-99",
+        "https://www.chicagotribune.com/2026/10/26/chicago-bulls-boston-celtics-caleb-wilson-jayson-tatum/"
+      ]
+    },
+    {
+      "query": "angie nixon",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T00:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/10/29/politics/video/angie-nixon-i-reject-labels-im-a-lifelong-democrat-lcl",
+        "https://www.foxnews.com/video/6407684836112",
+        "https://prospect.org/2026/10/30/angie-nixon-florida-senate-sunshine-state-ashley-moody/"
+      ]
+    },
+    {
+      "query": "mhsaa football playoffs",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T00:30:00Z",
+      "related_news_urls": [
+        "https://www.woodtv.com/news/grand-rapids-catholic-central-can-play-after-all-court-rules/",
+        "https://www.wzzm13.com/article/sports/high-school/hs-football/grand-rapids-catholic-central-removed-high-school-football-playoffs/69-2d30ab9e-8be9-4043-afdb-a2ef8bcf755e",
+        "https://www.fox17online.com/sports/judge-orders-catholic-central-football-game-to-be-played-after-mhsaa-reverses-players-eligibility"
+      ]
+    },
+    {
+      "query": "bucaramanga - pasto",
+      "approx_searches": "200+",
+      "published_at": "2026-10-31T00:30:00Z",
+      "related_news_urls": [
+        "https://gainblers.com/es-us/pronosticos/futbol/colombia/primera-a/pronostico-bucaramanga-pasto-31-10-2026/",
+        "https://www.vanguardia.com/deportes/futbol/2026/10/30/atletico-bucaramanga-entrego-el-reporte-medico-del-portero-diego-novoa/",
+        "https://elfrente.com.co/bucaramanga-en-procura-de-retornar-a-la-victoria/"
+      ]
+    },
+    {
+      "query": "rick carlisle",
+      "approx_searches": "200+",
+      "published_at": "2026-10-31T00:30:00Z",
+      "related_news_urls": [
+        "https://www.pennlive.com/sports/2026/10/nba-head-coach-to-miss-game-friday-due-to-heartbreaking-family-news.html",
+        "https://www.si.com/nba/pacers/onsi/what-a-man-rick-carlisle-honors-the-remarkable-life-and-legacy-of-his-father-01m646w9rfnt",
+        "https://www.essentiallysports.com/nba-active-basketball-news-greatest-hero-of-my-life-heartbroken-nba-champion-shares-fathers-death-news-before-game-rick-carlisle-indiana-pacers/"
+      ]
+    },
+    {
+      "query": "christian pulisic",
+      "approx_searches": "200+",
+      "published_at": "2026-10-31T00:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50308383/usmnt-star-christian-pulisic-signs-new-ac-milan-contract",
+        "https://sports.yahoo.com/soccer/article/usmnt-star-christian-pulisic-inks-new-deal-to-remain-with-ac-milan-through-2031-140821781.html",
+        "https://www.nytimes.com/athletic/7709986/2026/10/28/christian-pulisic-milan-contract-length/"
+      ]
+    },
+    {
+      "query": "rhiannon fish",
+      "approx_searches": "200+",
+      "published_at": "2026-10-31T00:30:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/it/news/ni66088336/?ref_=nwc_art_perm",
+        "https://www.justjared.com/2026/10/30/is-rhiannon-fish-single-or-married-all-about-the-hallmark-channel-actress-relationship-status/",
+        "https://www.imdb.com/es/news/ni66088352/?ref_=nwc_art_perm"
+      ]
+    }
+  ]
+}
