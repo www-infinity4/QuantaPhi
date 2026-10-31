@@ -17,7 +17,7 @@ async function request(path) {
  vm.createContext(scope);
  vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8')
   .replace(/^import \{videoAPI\} from '\.\/video-api\.mjs';\s*/m,"const videoAPI=()=>{throw Error('video fixture absent')};\n")
-  .replace(/^import \\{coinMediaRoute\\} from '\\.\\/coin-media-pool\\.mjs';\\s*/m,"const coinMediaRoute=()=>{throw Error('coin media fixture absent')};\\n")
+  .replace(/^import \{coinMediaRoute\} from '\.\/coin-media-pool\.mjs';\s*/m,"const coinMediaRoute=()=>{throw Error('Coin media route requires its dedicated API fixture')};\n")
   .replace('export default','globalThis.worker='),scope);
  const response=await scope.worker.fetch(new Request('https://quantaphi.org'+path));
  return {response,urls};
