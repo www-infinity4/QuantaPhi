@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-31T19:59:11.592933Z",
+  "checked_at": "2026-10-31T23:21:58.598437Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -369,6 +369,1392 @@
       "schema_version": 1,
       "attempted_at": "2026-10-31T19:59:11.592933Z",
       "items": []
+    },
+    "carhartt-shop": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.carhartt.com/product/107726?icid=2026-10-21_hp__1up_none_clickable_pdp_grt-lnds_great-lands-107726_allvisitors_lifestyle_20788",
+          "image": "https://imgcdn.carhartt.com/is/image/Carhartt/261024_HP_land_tile1_dt?&fmt=png-alpha",
+          "title": "Coverall",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing"
+        },
+        {
+          "url": "https://www.carhartt.com/product/107725?icid=2026-10-21_hp__1up_none_clickable_pdp_grt-lnds_great-lands-107725_allvisitors_lifestyle_20788",
+          "image": "https://imgcdn.carhartt.com/is/image/Carhartt/261024_HP_land_tile2_dt?&fmt=png-alpha",
+          "title": "Jacket",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing"
+        },
+        {
+          "url": "https://www.carhartt.com/product/107725?icid=2026-10-21_hp__1up_none_clickable_pdp_grt-lnds_great-lands-107725_allvisitors_lifestyle_20788",
+          "image": "https://imgcdn.carhartt.com/is/image/Carhartt/261024_HP_land_tile2_mb?&fmt=png-alpha",
+          "title": "Jacket",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing"
+        }
+      ]
+    },
+    "hurley-surfwear": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.hurley.com/",
+          "image": "https://www.hurley.com/cdn/shop/files/hurley-concept-category-men.webp?v=1793266996&width=216",
+          "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing"
+        },
+        {
+          "url": "https://www.hurley.com/",
+          "image": "https://www.hurley.com/cdn/shop/files/hurley-concept-category-women.webp?v=1793266997&width=216",
+          "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing"
+        },
+        {
+          "url": "https://www.hurley.com/",
+          "image": "https://www.hurley.com/cdn/shop/files/hurley-concept-category-kids.webp?v=1793266997&width=216",
+          "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing"
+        },
+        {
+          "url": "https://www.hurley.com/collections/mens-boardshorts",
+          "image": "https://www.hurley.com/cdn/shop/files/hurley-concept-category-boardshorts.webp?v=1793266997&width=216",
+          "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing"
+        },
+        {
+          "url": "https://www.hurley.com/products/phantom-eco-weekender-slub-20-hfa26mmbs13902-black",
+          "image": "https://www.hurley.com/cdn/shop/files/HFA26MMBS13902_001_R_10_FNT.png?v=1788446453&width=1920",
+          "title": "Phantom Eco Weekender Slub 20\" - Black / 26IN",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing",
+          "offer": {
+            "price": "59.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.hurley.com/products/phantom-naturals-tailgate-18-hsp26mmbs09030-brown",
+          "image": "https://www.hurley.com/cdn/shop/files/HSP26MMB09030_211_R_10_FNT_bc322a9c-74c3-4d0d-ba77-64ead6bf8e53.jpg?v=1791403140&width=1920",
+          "title": "Phantom Naturals Tailgate 18\" - Brown / 26IN",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing",
+          "offer": {
+            "price": "59.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.hurley.com/products/bottlecap-short-sleeve-hfa26mmts13887-destroyer",
+          "image": "https://www.hurley.com/cdn/shop/files/HFA26MMTS13887_431_R_10_BCK.png?v=1788446462&width=1920",
+          "title": "Bottlecap Short Sleeve - Destroyer / XS",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Clothing",
+          "offer": {
+            "price": "36.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "royal-caribbean-cruises": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.royalcaribbean.com/",
+          "image": "https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/oasis-class-sister-ships-hero-2880-1920",
+          "title": "Best Cruise, Vacation and Travel Deals | Royal Caribbean Official Site",
+          "kind": "website",
+          "description": "Book cruises and vacation deals on the official Royal Caribbean site. Sail to the Caribbean, Bahamas, Perfect Day CocoCay, Mexico, Alaska and Europe.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Travel"
+        },
+        {
+          "url": "https://www.royalcaribbean.com/",
+          "image": "https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/manage-my-cruise-big-time-nav-640-480",
+          "title": "It's Big Time Nav Images",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Travel"
+        },
+        {
+          "url": "https://www.royalcaribbean.com/",
+          "image": "https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/destinations-big-time-nav-640-480",
+          "title": "It's Big Time Nav Images",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Travel"
+        },
+        {
+          "url": "https://www.royalcaribbean.com/",
+          "image": "https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/lg-banner-640-480-1x",
+          "title": "lg banner 640 480 1x",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Travel"
+        }
+      ]
+    },
+    "durable-channellock": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.channellock.com",
+          "image": "https://www.channellock.com/wp-content/uploads/Channellock.com_.link_3.jpg",
+          "title": "CHANNELLOCK®: High-Quality Hand Tools - Channellock, Inc.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.channellock.com/pliers/tongue-groove/",
+          "image": "https://www.channellock.com/wp-content/uploads/2025/10/Tongue-Groove-420.jpg",
+          "title": "CHANNELLOCK® adjustable pliers with blue handles.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.channellock.com/pliers/push-button/",
+          "image": "https://www.channellock.com/wp-content/uploads/2025/10/Push-Button-428X-2.jpg",
+          "title": "CHANNELLOCK® groove-joint pliers with blue handles.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.channellock.com/pliers/locking/",
+          "image": "https://www.channellock.com/wp-content/uploads/2025/10/Locking-101-10.jpg",
+          "title": "CHANNELLOCK® locking pliers with blue and black handles and serrated jaws.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-wright-tool": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.wrighttool.com/",
+          "image": "https://www.www.wrighttool.com/assets/img/ogimage.png",
+          "title": "Wright Tool",
+          "kind": "website",
+          "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.wrighttool.com/products/wrenches",
+          "image": "https://www.www.wrighttool.com/assets/img/ogimage.png",
+          "title": "Wright Tool",
+          "kind": "website",
+          "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.wrighttool.com/products/sockets-ratchets-attachments",
+          "image": "https://www.www.wrighttool.com/assets/img/ogimage.png",
+          "title": "Wright Tool",
+          "kind": "website",
+          "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.wrighttool.com/products/torque-wrenches-and-tools",
+          "image": "https://www.www.wrighttool.com/assets/img/ogimage.png",
+          "title": "Wright Tool",
+          "kind": "website",
+          "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-estwing": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.estwing.com/",
+          "image": "https://www.estwing.com/wp-content/uploads/2026/03/historydf-1.png.webp",
+          "title": "Home - Estwing",
+          "kind": "website",
+          "description": "ProfessionalOutdoorHome Who’s Behind Your Swing? When it’s an Estwing, every strike, every detail counts. https://vimeo.com/1091256749 Estwing 100 Years of a Genuine American Icon How a true American legend grew to become the hand tool of choice for generation",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.estwing.com/shop/",
+          "image": "https://estwing.com/wp-content/plugins/better-post-filter-widgets-for-elementor/assets/images/BPFWE-Placeholder-Image-1-1.png",
+          "title": "Shop - Estwing",
+          "kind": "website",
+          "description": "Select CategorySure Strike— Specialty— Roofing Tools— Pry Tools— Nail HammersSpecialty— Welding & Tinner’s— Lineman’s— Drywall— Drilling & Engineer’s— Bricklayer— Ball PeenSafetyRoofing— Shingler’s Hatchet— Shingler’s Hammer— Rigger’s Axes— Carpenter’s Hatchet",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.estwing.com/product/titanium-hammer-black/",
+          "image": "https://www.estwing.com/wp-content/uploads/2026/03/prod_hammers_nail_hammers_TIBKM_01_2000x2000.png",
+          "title": "Titanium Hammer (Black) - Estwing",
+          "kind": "website",
+          "description": "Power meets precision in a lightweight design as this titanium hammer delivers the striking force of a heavier steel hammer without the added weight. Its magnetic nail starter makes setting nails quick and easy. The Shock Reduction Grip® offers the utmost in b",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.estwing.com/product/titanium-hammer-black/",
+          "image": "https://www.estwing.com/wp-content/uploads/2026/03/prod_hammers_nail_hammers_TIBKM_01_2000x2000-300x300.png",
+          "title": "prod_hammers_nail_hammers_TIBKM_01_2000x2000",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.estwing.com/product/titanium-hammer-black/",
+          "image": "https://www.estwing.com/wp-content/uploads/2026/03/prod_hammers_nail_hammers_TIBKM_02_2000x2000-300x300.png",
+          "title": "prod_hammers_nail_hammers_TIBKM_02_2000x2000",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.estwing.com/product/titanium-hammer-black/",
+          "image": "https://www.estwing.com/wp-content/uploads/2026/03/prod_hammers_nail_hammers_TIBKM_03_2000x2000-300x300.png",
+          "title": "prod_hammers_nail_hammers_TIBKM_03_2000x2000",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.estwing.com/product/timber-titan-splitting-tool-blue/",
+          "image": "https://www.estwing.com/wp-content/uploads/2026/03/prod_outdoor_splitting_tools_E6-TT4_01_2000x2000.png",
+          "title": "Timber Titan™ Splitting Tool (Blue) - Estwing",
+          "kind": "website",
+          "description": "Estwing’s Timber Titan™ Splitting Tool is the ultimate long-handle splitting tool, designed for fast, efficient, and precise wood splitting.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.estwing.com/product/timber-titan-splitting-tool-blue/",
+          "image": "https://www.estwing.com/wp-content/uploads/2026/03/prod_outdoor_splitting_tools_E6-TT4_01_2000x2000-300x300.png",
+          "title": "prod_outdoor_splitting_tools_E6-TT4_01_2000x2000",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-knipex": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": []
+    },
+    "durable-wera": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": []
+    },
+    "durable-wiha": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.wihatools.com/account/login",
+          "image": "https://www.wihatools.com/cdn/shop/t/60/assets/ProRewards-white.png?v=163768641432451276291751988508",
+          "title": "Wiha Tools",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.wihatools.com/collections/complete-tool-kits",
+          "image": "https://www.wihatools.com/cdn/shop/files/tool-kits-menu-tn.png?crop=center&height=100&v=1724078739&width=100",
+          "title": "Wiha Tools",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.wihatools.com/collections/tool-storage",
+          "image": "https://www.wihatools.com/cdn/shop/files/tool-storage-menu-tn.png?crop=center&height=100&v=1724078739&width=100",
+          "title": "Wiha Tools",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.wihatools.com/collections/slimline-system",
+          "image": "https://www.wihatools.com/cdn/shop/files/slimline-system-menu-tn.png?crop=center&height=100&v=1724078739&width=100",
+          "title": "Wiha Tools",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.wihatools.com/products/wiha-premium-mro-case",
+          "image": "https://www.wihatools.com/cdn/shop/files/u4wio9fzywgds5dw2jhb_1024x.jpg?v=1776759757",
+          "title": "158 piece Overlanding Kit in Rolling Tool Box",
+          "kind": "product",
+          "description": "Introducing the 158 Piece Industrial MRO Rolling Case Kit; a masterclass in tool storage, protection, and versatility. This premium case is custom molded to perfection, featuring custom foam tray compartments for each tool, ensuring they are securely held in p",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "1614.09",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2026-11-10T23:59:59+00:00"
+          }
+        },
+        {
+          "url": "https://www.wihatools.com/products/194-piece-premium-kit-in-rolling-tool-box",
+          "image": "https://www.wihatools.com/cdn/shop/files/okoutoivumiii8jwd6lf_1024x.jpg?v=1776759757",
+          "title": "194 Piece Premium Kit In Rolling Tool Box",
+          "kind": "product",
+          "description": "The Wiha 194 Piece Premium Tool Kit In Rolling Tool Box is designed to empower contractors and professionals with a comprehensive set of high-quality tools for all their needs. With an extensive array of 194 must-have pieces, Wiha’s Premium Tool Kit is the per",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "1199.99",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2026-11-10T23:59:59+00:00"
+          }
+        }
+      ]
+    },
+    "durable-pb-swiss-tools": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
+          "image": "https://static.pbswisstools.com/fileadmin/_processed_/4/0/csm_Beststeller-PB175-0-60LED_840x840_fc3626121f.png",
+          "title": "PB 175/0 LED",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/screwdrivers/product/pb-6464",
+          "image": "https://static.pbswisstools.com/fileadmin/_processed_/5/9/csm_Mobile-Sets-PB-6464_840x840_4922e01c21.png",
+          "title": "PB 6464",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/mobile-sets/product/pb-900-v01",
+          "image": "https://static.pbswisstools.com/fileadmin/_processed_/3/3/csm_PB-900-V01_840x840_e2522f03be.png",
+          "title": "PB 900 V01",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/precisionbits/product/pb-c6-192",
+          "image": "https://static.pbswisstools.com/fileadmin/_processed_/a/a/csm_PrecisionBits-PB-C6-192_840x840_4326b3cf95.png",
+          "title": "PB C6 192",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
+          "image": "https://www.pbswisstools.com/fileadmin/pim/images/FOT_PRO_STA_PB175-0-60LED-29889__SALL__AING__V2.jpg",
+          "title": "PB 175/0 LED",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
+          "image": "https://static.pbswisstools.com/fileadmin/_processed_/8/e/csm_FOT_PRO_STA_PB175-0-60LED-29889__SALL__AING__V2_51e31abf0c.jpg",
+          "title": "PB 175/0 LED",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
+          "image": "https://static.pbswisstools.com/fileadmin/_processed_/9/0/csm_FOT_PRO_STA_SKI_PB175-0-60LEDCN-29891__SALL__AING__V1_6319a5a29e.jpg",
+          "title": "PB 175/0 LED",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
+          "image": "https://static.pbswisstools.com/fileadmin/_processed_/a/d/csm_FOT_PRO_SIZ_PB175-0-60LED-29889__SALL__AING__V2_3cc0148575.jpg",
+          "title": "PB 175/0 LED",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-snap-on": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.snapon.com/EN/Makers-and-Fixers",
+          "image": "https://www.snapon.com/Snap-on-Files/photos/Makers-and-Fixers/MakersandFixers.gif",
+          "title": "Snap-on Makers and Fixers",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-lie-nielsen": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
+          "image": "https://lie-nielsen.gumlet.io/catalog/1-SP-Boggs-Con.jpg",
+          "title": "Boggs Concave Spokeshave",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
+          "image": "https://lie-nielsen.gumlet.io/catalog/1-SP-Boggs-Con.jpg?auto=format&w=120&h=120",
+          "title": "1-SP-Boggs-Con.jpg Thumbnail",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
+          "image": "https://lie-nielsen.gumlet.io/default/boggs-concave-2021-iso.jpg?auto=format&w=120&h=120",
+          "title": "boggs-concave-2021-iso.jpg Thumbnail",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
+          "image": "https://lie-nielsen.gumlet.io/default/concave-boggs-spokeshave-2019.jpg?auto=format&w=120&h=120",
+          "title": "concave-boggs-spokeshave-2019.jpg Thumbnail",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lie-nielsen.com/products/small-router-plane?path=joinery-planes&node=4169",
+          "image": "https://lie-nielsen.gumlet.io/default/small-router-plane-ot-front.jpg",
+          "title": "Small Router Plane - Open Throat",
+          "kind": "website",
+          "description": "Small Router Plane Loosely based on the Stanley No. 271, these small Router Planes are perfect for shallow mortise and small relief work. The compact design makes it easy to guide along narrow edges and fit into tight spaces. 4\" long x 2\" wide O1 blade with 1/",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lie-nielsen.com/products/small-router-plane?path=joinery-planes&node=4169",
+          "image": "https://lie-nielsen.gumlet.io/default/small-router-plane-ot-front.jpg?auto=format&w=120&h=120",
+          "title": "small-router-plane-ot-front.jpg Thumbnail",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lie-nielsen.com/products/small-router-plane?path=joinery-planes&node=4169",
+          "image": "https://lie-nielsen.gumlet.io/default/small-router-plane-ot-iso-l.jpg?auto=format&w=120&h=120",
+          "title": "small-router-plane-ot-iso-l.jpg Thumbnail",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lie-nielsen.com/products/small-router-plane?path=joinery-planes&node=4169",
+          "image": "https://lie-nielsen.gumlet.io/default/small-router-plane-ot-iso-r.jpg?auto=format&w=120&h=120",
+          "title": "small-router-plane-ot-iso-r.jpg Thumbnail",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-starrett": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.starrett.com/",
+          "image": "https://www.starrett.com/images/default-source/hero-images/mic-on-flag.jpg?sfvrsn=f079f0ad_4",
+          "title": "Premium Starrett micrometer resting on an American flag",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.starrett.com/",
+          "image": "https://www.starrett.com/images/default-source/products/precision-hand-tools/indicators-gages/w4900/w4900-animated-001.gif?sfvrsn=74ca962f_3",
+          "title": "W4900 Animated Gif",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.starrett.com/",
+          "image": "https://www.starrett.com/images/default-source/banner-images/cr98-1p03cbr.jpg?sfvrsn=b86c7dda_1",
+          "title": "Starrett Carbide Tipped Reciprocating Saw Blade",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.starrett.com/",
+          "image": "https://www.starrett.com/images/default-source/influencers/rye001.jpg?sfvrsn=ec394d77_1",
+          "title": "Starrett and Roush Yates",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.starrett.com/products/precision-measuring-tools/precision-hand-tools/thread-gages",
+          "image": "https://www.starrett.com/images/default-source/banner-images/made-in-america-solid-bg.png?sfvrsn=791032ab_1",
+          "title": "Made In America",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.starrett.com/products/precision-measuring-tools/height-gages/electronic-height-gages/hg-series-electronic-height-gages",
+          "image": "https://www.starrett.com/images/default-source/products/precision-hand-tools/height-gages/hg350p05cusd0726_small.jpg?sfvrsn=8e14f586_1",
+          "title": "HG Electronic Height Gages and Accessories",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.starrett.com/products/precision-measuring-tools/height-gages/electronic-height-gages/hg-series-electronic-height-gages",
+          "image": "https://www.starrett.com/images/default-source/banner-images/made-in-america-solid-bg.png?sfvrsn=791032ab_1",
+          "title": "Made In America",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.starrett.com/products/precision-measuring-tools/precision-hand-tools/indicators-and-gages/electronic-indicators/w4900-touchscreen-electronic-indicators",
+          "image": "https://www.starrett.com/images/default-source/banner-images/made-in-america-solid-bg.png?sfvrsn=791032ab_1",
+          "title": "Made In America",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-mitutoyo": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.mitutoyo.com/services/calibration-repair/calibration-lab/",
+          "image": "https://www.mitutoyo.com/webfoo/wp-content/uploads/AdvancedPrecisionCalibrationLab-900x600.jpg",
+          "title": "Mitutoyo Metrology Calibration Lab",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.mitutoyo.com/services/",
+          "image": "https://www.mitutoyo.com/webfoo/wp-content/uploads/services-pg_services_1600x1260-900x600.jpg",
+          "title": "precision measurement services",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.mitutoyo.com/products/coordinate-measuring-machines/",
+          "image": "https://www.mitutoyo.com/webfoo/wp-content/uploads/product_categories_2026-01.jpg",
+          "title": "Coordinate Measuring Machines | Mitutoyo America Corporation",
+          "kind": "website",
+          "description": "Mitutoyo manufactures top-quality coordinate measuring machines (CMM) that lead the industry in precision. Find the perfect solution for you.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-leatherman": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.leatherman.com/collections/bestsellers/products/arc",
+          "image": "https://www.leatherman.com/cdn/shop/files/arc_20260402201530_u9uh.jpg?v=1777553914&width=460",
+          "title": "Black DLC and stainless steel Leatherman ARC® multi-tool opened showcasing the many tools and features included.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.leatherman.com/collections/bestsellers/products/arc",
+          "image": "https://www.leatherman.com/cdn/shop/files/arc_20260402201600_7ik6.jpg?v=1777553994&width=460",
+          "title": "Leatherman ARC® Talos multi-tool opened showcasing the many tools and features included.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.leatherman.com/collections/bestsellers/products/arc",
+          "image": "https://www.leatherman.com/cdn/shop/files/arc_20260402201529_mz3o.jpg?v=1777553922&width=460",
+          "title": "Black DLC and stainless steel Leatherman ARC® multi-tool closed showcasing its compact design.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.leatherman.com/collections/bestsellers/products/arc",
+          "image": "https://www.leatherman.com/cdn/shop/files/arc_20260402201600.jpg?v=1777554003&width=460",
+          "title": "Leatherman ARC® Talos closed showcasing the Bronze Cerakote coating and compact design.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.leatherman.com/products/leatherman-gift-card",
+          "image": "https://www.leatherman.com/cdn/shop/files/digital-gift-cards-holiday-2026-01.jpg?v=1792423893&width=2000",
+          "title": "Leatherman Gift Card",
+          "kind": "product",
+          "description": "Leatherman's Digital Gift Card is perfect for any occasion. This e-gift card lets recipients pick their favorite products from our online store. Choose how you deliver — email right away, schedule for later, or send to yourself to pass along personally. Simple",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "10.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.leatherman.com/products/arc",
+          "image": "https://www.leatherman.com/cdn/shop/files/arc_20260402201530_u9uh.jpg?v=1777553914&width=2000",
+          "title": "ARC®",
+          "kind": "product",
+          "description": "The ARC is our most advanced multi-tool, built to be both durable and easier to use. It features a MagnaCut steel blade that holds its edge longer and resists rust, making it perfect for both daily tasks and hard outdoor jobs. Every feature is outside-accessib",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "249.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.leatherman.com/products/skeletool-cx",
+          "image": "https://www.leatherman.com/cdn/shop/files/skeletool_cx_20260402201813.png?v=1776173090&width=2000",
+          "title": "Skeletool® CX",
+          "kind": "product",
+          "description": "The Leatherman Skeletool CX packs only the most essential features into a lightweight, portable design. It’s made for people who want serious function without carrying extra bulk. The premium 154CM stainless steel straight-edge blade has a great balance of cor",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "99.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-victorinox": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.victorinox.com/en-US/",
+          "image": "https://media.victorinox.com/transform/a0bf4bb8-b783-46a8-a993-9904b6cfa69b/ENGRAVING-CHARACTERS",
+          "title": "Victorinox (USA) | Victorinox Homepage",
+          "kind": "website",
+          "description": "Victorinox ✚ Makers of the Original Swiss Army Knife ✚ High quality products ✚ Watches, Cutlery, Travel Gear and Fragrances ✚ Order online now!",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.victorinox.com/en-US/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/c/SAK/",
+          "image": "https://imageengine.victorinox.com/transform/ee5c9d44-d4a7-463a-8ad3-e31ccc60ecf7/SAK_B2M_Tourism_1-3713_B_4?io=transform%3Afill%2Cwidth%3A1000%2Cheight%3A1000&focuspoint=0.39%2C0.2&io=transform%3Afill%2Cwidth%3A575%2Cheight%3A575&quality=100",
+          "title": "Swiss Army Knife™ & Tools",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.victorinox.com/en-US/Products/Cutlery/c/CUT/",
+          "image": "https://imageengine.victorinox.com/transform/a3429d1f-548a-4dc7-975e-901db428a6ef/CUT_7-7403-20G_7-7323-17G_7-7203-12G_G?io=transform%3Acrop%2Cheight%3A1300%2Cwidth%3A1300%2Cpath%3Asquare&focuspoint=0.53%2C0.52&io=transform%3Afill%2Cwidth%3A575%2Cheight%3A575&quality=100",
+          "title": "CUTLERY",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.victorinox.com/en-US/Products/Watches/c/TP/",
+          "image": "https://imageengine.victorinox.com/transform/f81b70d8-94a0-40eb-9dd0-1f941590f281/WAT_242059_B1_OB_1800x1000px?io=transform%3Afill&focuspoint=0.48%2C0.42&io=transform%3Afill%2Cwidth%3A575%2Cheight%3A575&quality=100",
+          "title": "WATCHES",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.victorinox.com/en-US/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Synergy-Winter-Magic-Limited-Edition-2026/p/0.8211.22E1",
+          "image": "https://imageengine.victorinox.com/transform/14a60efe-ff70-43fe-a1cf-b07b617fe08c/SAK_0_8211_22E1_S1",
+          "title": "Synergy Winter Magic Limited Edition 2026",
+          "kind": "product",
+          "description": "Based on the Synergy pocket knife, this Swiss Made limited edition combines nine functions, including a large lockable blade, box opener, two screwdrivers, nail file, nail cleaner, bottle opener and wire stripper. Its distinctive Alox scales complete the desig",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "85",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "9999-12-30T23:59:59+00:00"
+          }
+        },
+        {
+          "url": "https://www.victorinox.com/en-US/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/c/SAK/",
+          "image": "https://imageengine.victorinox.com/transform/37acb525-079c-48d7-9e82-8592a4499cd7/SAK_1-3713_B3-jpg?io=transform:crop,height:800,width:800,path:square&focuspoint=0.6,0.52",
+          "title": "Swiss Army Knives / Pocket Knives from Victorinox | Victorinox (USA)",
+          "kind": "website",
+          "description": "Since 1897, the Swiss Army Knife has been a trusted tool of adventurers around the world. The Swiss Army Knife is the companion you can count on.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.victorinox.com/en-US/Pocket-Knives-for-Everyday-Use/cms/sak-everyday/",
+          "image": "https://imageengine.victorinox.com/transform/e4afb0f1-220b-45d1-a7da-f061890f0cbb/SAK_Master_the_Moment_0-8231-26_LS_3-jpg?io=transform%3Afill%2Cwidth%3A800%2Cheight%3A1090&quality=100",
+          "title": "Everyday",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.victorinox.com/en-US/Pocket-Knives-for-Trades-and-Crafts/cms/sak-trades-and-crafts/",
+          "image": "https://imageengine.victorinox.com/transform/9b81c4eb-eaf7-492d-a7ee-b90bce830417/SAK_B2M_Trades_Crafts_3-0339-N_LS_1?io=transform%3Acrop%2Cheight%3A1080%2Cwidth%3A684%2Cpath%3Asquare&focuspoint=0.42%2C0.48&quality=100",
+          "title": "Trades & Crafts",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-stabila": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": []
+    },
+    "durable-klein-tools": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.kleintools.com/",
+          "image": "https://www.kleintools.com/sites/default/files/content-assets/KleinStacked-Official-w-Tagline.jpg",
+          "title": "Klein Tools - For Professionals since 1857 | Klein Tools",
+          "kind": "website",
+          "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.kleintools.com/",
+          "image": "https://www.kleintools.com/sites/default/files/content/kt-stacked-black-bg.png",
+          "title": "Klein Tools logo",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.kleintools.com/",
+          "image": "https://www.kleintools.com/sites/default/files/content/banners/images/wire-hero-banner-d.jpg",
+          "title": "Bites Fast. Holds Tight.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.kleintools.com/",
+          "image": "https://www.kleintools.com/sites/default/files/content/banners-responsive/images/wire-hero-banner-m.jpg",
+          "title": "Bites Fast. Holds Tight.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.kleintools.com/products/industry",
+          "image": "https://www.kleintools.com/sites/default/files/content-assets/KleinStacked-Official-w-Tagline.jpg",
+          "title": "Products by Industry",
+          "kind": "website",
+          "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.kleintools.com/products-industry/contractor-jobsite",
+          "image": "https://www.kleintools.com/sites/default/files/content/industry/images/industry-landing-page-contractor-jobsite.jpg",
+          "title": "Contractor Supply & Jobsite Materials",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.kleintools.com/products-industry/construction-iron-worker",
+          "image": "https://www.kleintools.com/sites/default/files/content/industry/images/industry-landing-page-construction-iron-worker.jpg",
+          "title": "Steel, Concrete, Construction and Iron Worker",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.kleintools.com/products/popular",
+          "image": "https://www.kleintools.com/sites/default/files/content-assets/KleinStacked-Official-w-Tagline.jpg",
+          "title": "Most Popular | Klein Tools",
+          "kind": "website",
+          "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-lodge-cast-iron": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.lodgecastiron.com/collections/luxe-enamel",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/3000x3000_LuxeGroup_Marine_2.jpg?v=1789058660&width=3000",
+          "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lodgecastiron.com/",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/3_Customization_Hero-Headers_WORKING.webp?v=1759856155&width=2760",
+          "title": "Cast iron skillet with a tree design on a white wall",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lodgecastiron.com/",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/Luxe_Option_1.jpg?v=1789495049&width=3218",
+          "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lodgecastiron.com/",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/1001_Jumanji_Desktop.jpg?v=1790791934&width=2760",
+          "title": "Jumanji Hero",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lodgecastiron.com/products/blacklock-skillet?variant=56078547550580",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/BL39SK_9W2A2367.jpg?v=1743778226&width=1920",
+          "title": "Blacklock Lightweight Skillet - 7\"",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "40.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.lodgecastiron.com/products/nutcracker-2026-holiday-mini-skillet",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/3000x3000_LMSWIN26_5.jpg?v=1790704113&width=1920",
+          "title": "Nutcracker 2026 Holiday Mini Skillet",
+          "kind": "product",
+          "description": "Our annual Holiday Mini Skillet tradition continues with a limited-edition nutcracker design! Packed in a special holiday gift box, this skillet is the ultimate stocking stuffer. Complete with a yellow ribbon, the piece can be displayed in your kitchen or even",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "16.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.lodgecastiron.com/products/custom-skillets",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/TExt_HolidayContent_3000x3000_WEB.jpg?v=1792694974&width=1920",
+          "title": "Custom Skillets - Engraved Text",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "99.99",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.lodgecastiron.com/products/custom-skillets",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/3000x3000_Customization_Design_Updates_Father-sDay.png?v=1779904591&width=1920",
+          "title": "Custom Skillets - Engraved Award",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "99.99",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-le-creuset": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.lecreuset.com/featured-collections/harvest-collection",
+          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dw584aedf4/images/megamenu/100126-harvest.jpg",
+          "title": "provence",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lecreuset.com/specials",
+          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dw04cc90b8/images/megamenu/100126-gwp.jpg",
+          "title": "All products with special offers",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lecreuset.com/traditional-oval-dutch-oven-ftt/21002US.html",
+          "image": "https://www.lecreuset.com/dw/image/v2/BDRT_PRD/on/demandware.static/-/Sites-LeCreuset-Library/default/dwc9e1118b/images/homepage/oct26/101526-mobile.jpg?sw=768&sfrm=jpg",
+          "title": "oval oven",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lecreuset.com/specials",
+          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dw2fe69c5a/images/homepage/oct26/100126-gwp.jpg",
+          "title": "Products with special offers",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-smithey-ironware": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://smithey.com",
+          "image": "https://cdn.shopify.com/s/files/1/0269/8225/2637/files/Frame_3_16.png?v=1692708493",
+          "title": "Smithey Ironware Company | Premium Cast Iron Cookware",
+          "kind": "website",
+          "description": "Smithey Ironware Co. designs and manufactures heirloom quality cast iron and carbon steel cookware in Charleston, SC. From skillets to Dutch ovens, roasters to our hand-forged wok, Smithey crafts tools for your kitchen that will last a lifetime.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://smithey.com",
+          "image": "https://smithey.com/cdn/shop/files/2026_Cookbook_Product-Shot_1-Square.jpg?v=1791558940&width=100",
+          "title": "Seasoned: The Art and Craft of Cast Iron Cooking by Smithey, a hardcover cookbook with a cast iron skillet on its green cover.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://smithey.com",
+          "image": "https://smithey.com/cdn/shop/files/acc-1_9.png?v=1695308725&width=100",
+          "title": "Seasoning Oil",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://smithey.com",
+          "image": "https://smithey.com/cdn/shop/files/acc-1_30.png?v=1695315321&width=100",
+          "title": "Mighty Spatula",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://smithey.com/products/glass-lids",
+          "image": "https://smithey.com/cdn/shop/files/acc-2_4_1280x.png?v=1695317261",
+          "title": "Glass Lids",
+          "kind": "product",
+          "description": "Carefully crafted to fit our core skillets, Smithey’s glass lids are thoughtfully designed using high-quality tempered glass and complete with a gold finished cast stainless steel knob and rim. Use them for steaming, braising, reducing sauces, and saving your ",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "30.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://smithey.com/products/seasoned-the-art-and-craft-of-cast-iron-cooking",
+          "image": "https://smithey.com/cdn/shop/files/2026_Cookbook_Product-Shot_1-Square_2000x.jpg?v=1791558940",
+          "title": "Seasoned: The Art and Craft of Cast Iron Cooking",
+          "kind": "product",
+          "description": "It’s no surprise that Smithey is a company of food lovers, home cooks, and cast iron aficionados. We believe everyone should fall in love with cooking in cast iron. When we set out to write Seasoned, we wanted to create a book that would inspire the cast iron-",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "40.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://smithey.com/products/no-12-cast-iron-skillet",
+          "image": "https://smithey.com/cdn/shop/files/hero-1_2_1280x.png?v=1695307136",
+          "title": "No. 12 Skillet",
+          "kind": "product",
+          "description": "Our best-selling cast iron skillet, the No. 12, will elevate your cast iron cooking. Designed with slightly more surface area and depth than the No. 10, the No. 12 is the perfect size for families of four or those who cook to have leftovers. With our signature",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "220.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-all-clad": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://www.all-clad.com/fall-cooking-with-all-clad",
+          "image": "https://www.all-clad.com/media/wysiwyg/ALLCLAD/nav_bar/Nav-02.png",
+          "title": "Fall Cooking with All-Clad. Shop Now.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.all-clad.com/g5-graphite-core",
+          "image": "https://www.all-clad.com/media/wysiwyg/ALLCLAD/nav_bar/Nav_Images-Graphite.png",
+          "title": "Graphite Core Lightness and precision. Explore.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.all-clad.com/blog/post/cleaning-and-caring-for-stainless-steel",
+          "image": "https://www.all-clad.com/media/wysiwyg/ALLCLAD/nav_bar/Nav-05.png",
+          "title": "Cleaning and Care. Learn More.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.all-clad.com/built-to-outlast",
+          "image": "https://www.all-clad.com/media/wysiwyg/ALLCLAD/nav_bar/Nav-03.png",
+          "title": "Built to Outlast. Explore the Legacy.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-fissler": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://us.fissler.com/",
+          "image": "https://us.fissler.com/cdn/shop/files/unnamed_1.png?v=1736859002&width=310",
+          "title": "The Fissler logo is shown in red on a white background.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://us.fissler.com/products/vitavit-premium-pressure-cookers",
+          "image": "https://us.fissler.com/cdn/shop/files/vitavit-premium-pressure-cooker-sa-perspective1.jpg?v=1765961815&width=1200",
+          "title": "AST_SA_2369652;1dd0cc2993126794fc10d80bc365c38a;PROD_997233",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://us.fissler.com/products/5-ply-stainless-steel-saucepan-with-lid",
+          "image": "https://us.fissler.com/cdn/shop/files/071-160-20-0000_Standalone_FrontView_1x1_96eeb917-db63-493a-996c-938a60e04fc0.jpg?v=1772608097&width=1200",
+          "title": "AST_SA_2734561;70d876d44e546ec50f3350fbd59cddca;PROD_2612542,SI_2578497",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://us.fissler.com/products/m5-pro-ply-7pc-set",
+          "image": "https://us.fissler.com/cdn/shop/files/071-750-07-0000_Standalone_Primary_1x1_ab50005f-255c-4977-b78a-b7e9a3e95caf.jpg?v=1774003381&width=1200",
+          "title": "AST_SA_2734581;e47f96176d2797ffa4d2cbd14373db7d;SETI_2588966",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://us.fissler.com/products/the-world-of-pressure-cooking-hardcover-cook-book",
+          "image": "https://us.fissler.com/cdn/shop/files/600-000-00-0010_PRIMARY_IMAGE_FRONT_COVER.jpg?v=1762164555&width=1024",
+          "title": "The World of Pressure Cooking –The Ultimate Guide to The Healthy Cooker® with 150+ Recipes, Techniques & History –Hardcover",
+          "kind": "product",
+          "description": "Unlock the full potential of The Healthy Cooker™ — the smarter way to pressure cook! The World of Pressure Cooking offers over 150 mouthwatering recipes, expert tips, and an in - depth look at the science and history behind this game - changing cooking method.",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "39.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2027-12-31T23:59:59+00:00"
+          }
+        },
+        {
+          "url": "https://us.fissler.com/products/pan_protector_2_piece",
+          "image": "https://us.fissler.com/cdn/shop/files/001_006_02_000_SA.jpg?v=1765391303&width=1024",
+          "title": "Pan Protector, 2 Piece Set",
+          "kind": "product",
+          "description": "​Safeguard your cookware with the Fissler Pan Protector, 2 Piece Set. Designed to prevent damage from stacking, these polyester felt protectors create a cushioned layer between pots, pans, and other cookware. Slip-resistant and heat-resistant, they are ideal f",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "29.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2027-12-31T23:59:59+00:00"
+          }
+        },
+        {
+          "url": "https://us.fissler.com/products/vitavit-premium-pressure-cookers",
+          "image": "https://us.fissler.com/cdn/shop/files/vitavit-premium-pressure-cooker-sa-perspective1.jpg?v=1765961815&width=1024",
+          "title": "Vitavit® Premium Pressure Cooker",
+          "kind": "product",
+          "description": "Discover The Healthy Cooker®, the award-winning Vitavit® Premium by Fissler, made in Germany for fast, healthy, and safe stovetop cooking. Designed to help you eat better with less effort, it cooks up to 70% faster than traditional methods while preserving up ",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "369.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2027-12-31T23:59:59+00:00"
+          }
+        }
+      ]
+    },
+    "durable-zojirushi": {
+      "schema_version": 1,
+      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "items": [
+        {
+          "url": "https://store.zojirushi.com/",
+          "image": "https://store.zojirushi.com/cdn/shop/files/OnigiriAction-SlidingBanner.jpg?v=1791396932&width=3840",
+          "title": "Zojirushi x Lundberg Family Farms Bundle Campaign Banner: With every purchase of a Pressure IH, IH, or Micom Rice Cooker, claim two 2lb. packs of Lundberg Organic Rice Bundle for f",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://store.zojirushi.com/",
+          "image": "https://store.zojirushi.com/cdn/shop/files/250413_ZOJIRUSHI1026-Hero-NT.jpg?v=1777927493&width=3840",
+          "title": "Woman in a city, taking out a Zojirushi GoCafe mug in turquoise white gradient color, from her purse.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://store.zojirushi.com/",
+          "image": "https://store.zojirushi.com/cdn/shop/files/GoCafe-20OFF-Sliding-Banner4.png?v=1791588211&width=3840",
+          "title": "Zojirushi GoCafe® Mugs are 20% off. Now through Saturday, October 31, 2026, or while supplies last.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://store.zojirushi.com/",
+          "image": "https://store.zojirushi.com/cdn/shop/files/1_horizontal_groupshot2_1280x460_copy.jpg?v=1694803114&width=3840",
+          "title": "Zojirushi Collection",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://store.zojirushi.com/products/npgbc",
+          "image": "https://store.zojirushi.com/cdn/shop/files/NP-GBC05NT.png?v=1702585894&width=1946",
+          "title": "Induction Heating System Rice Cooker & Warmer NP-GBC05",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://store.zojirushi.com/products/npgbc",
+          "image": "https://store.zojirushi.com/cdn/shop/products/4.8.jpg?v=1702585894&width=1946",
+          "title": "Accessories include rice measuring cup, rinse-free rice measuring cup, nonstick rice spatula and spatula stand",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://store.zojirushi.com/products/npgbc",
+          "image": "https://store.zojirushi.com/cdn/shop/files/RC-IH_86d51c83-2aa5-43ba-a1e4-4cb86737359a.webp?v=1713511594&width=1946",
+          "title": "Induction Heating (IH) system for precise temperature control",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://store.zojirushi.com/products/npgbc",
+          "image": "https://store.zojirushi.com/cdn/shop/products/4.4.jpg?v=1713511586&width=1946",
+          "title": "Easy-to-read colored LCD control panel with Clock and Timer functions",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
     }
   }
 }
