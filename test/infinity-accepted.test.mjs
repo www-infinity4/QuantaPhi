@@ -45,10 +45,13 @@ test('each enabled button maps to a trusted observed HTTPS website destination',
 test('accepted priority applies in each feed, while Following and unseen rotation remain strict',()=>{
  const accepted=INFINITY_ACCEPTED_BRANDS.filter(hasAcceptedSource).slice(0,3),cards=[other,...accepted];
  let state=cleanFeedState({following:[other.id,accepted[0].id],counts:{ordinary:5000}});
- for(const tab of ['public','for-you','following'])assert.equal(feedCandidates(cards,tab,state)[0].id,accepted[0].id);
+ for(const tab of ['public','for-you'])assert.ok(accepted.slice(1).some(c=>c.id===feedCandidates(cards,tab,state)[0].id),'an unfollowed accepted brand leads discovery');
+ assert.equal(feedCandidates(cards,'following',state)[0].id,accepted[0].id,'saved accepted brand leads Following');
+ assert.ok(!feedCandidates(cards,'public',state).some(c=>c.id===other.id),'saved ordinary brand leaves Public');
  assert.equal(feedCandidates(cards,'following',state).length,2);
  const spoof={...other,infinityAccepted:true};assert.equal(isInfinityAccepted(spoof),false);
  assert.equal(isInfinityAccepted({...framework,official:'https://evil.example/'}),false);
+ state=cleanFeedState({counts:{ordinary:5000}});
  let current='',seen=new Set(),visited=[];
  for(let i=0;i<cards.length;i++){
   const round=nextDeckCycle(cards,current,seen),pick=nextFeedDirection(round.cards,'public',state,current).card;

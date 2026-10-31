@@ -153,7 +153,7 @@ test('Choose Direction learns useful next-card workflows instead of repeating fa
  assert.ok(directionScore(cards[0],cards[1],s).score>directionScore(cards[0],cards[2],s).score);
  assert.equal(nextFeedDirection(cards,'public',s,'radio-kit').card.id,'radio-study','no immediate identical card');
 });
-test('Following is strict, Public remains broad, For You uses Quant interests without persisting raw queries',()=>{
+test('Following is exclusive, and Public and For You exclude saved cards',()=>{
  const cards=[
   {id:'story',name:'Original story',category:'Stories',feature:'Read a story',study:'Creative writing'},
   {id:'writer',name:'Story Writer',category:'Stories',feature:'Write a story',study:'Create an original story'},
@@ -165,7 +165,11 @@ test('Following is strict, Public remains broad, For You uses Quant interests wi
  assert.equal(nextFeedDirection(cards,'following',s,'story').card.id,'writer');
  s={...s,quantScores:{radio:70}};
  assert.equal(nextFeedDirection(cards,'for-you',s,'story').card.id,'radio');
- assert.equal(nextFeedDirection(cards,'public',s,'story').card.id,'writer','public contextual transition uses next writing step');
+ assert.equal(nextFeedDirection(cards,'public',s,'story').card.id,'radio','Public excludes cards already saved to Following');
+ assert.deepEqual(feedCandidates(cards,'following',s).map(c=>c.id),['writer']);
+ assert.ok(!feedCandidates(cards,'for-you',s).some(c=>c.id==='writer'));
+ s=toggleFollowing(s,'writer');
+ assert.ok(feedCandidates(cards,'public',s).some(c=>c.id==='writer'),'unfollowing returns it to Public');
  const stored=cleanFeedState({...s,transitions:{story:{writer:2,radio:-1,bad:'oops'}}});
  assert.equal(stored.transitions.story.writer,2);
  assert.equal(stored.transitions.story.radio,undefined);
@@ -190,7 +194,7 @@ test('Oracle viewer uses same activity source, scoped tabs and original mounted 
 test('every tab completes repeated catalog rounds despite extreme favorite scores',()=>{
  const cards=ALL_FEED_CARDS.slice(0,12);
  for(const tab of ['public','for-you','following']){
-  let state=cleanFeedState({following:cards.map(c=>c.id),counts:{[cards[0].id]:5000},viewed:{[cards[0].id]:20}});
+  let state=cleanFeedState({following:tab==='following'?cards.map(c=>c.id):[],counts:{[cards[0].id]:5000},viewed:{[cards[0].id]:20}});
   state={...state,catalog:cards,quantScores:{[cards[0].id]:70}};
   let current=cards[0].id;
   for(let round=0;round<3;round++){

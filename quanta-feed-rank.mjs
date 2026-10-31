@@ -58,18 +58,35 @@ export function feedScore(card,state){
   (card.category===state.catalog?.find(x=>x.id===id)?.category?v:0),0);
  const saved=(state.following||[]).includes(card.id);
  const seen=state.viewed?.[card.id]||0;
- return clicks*8+category*2+(saved?12:0)+
+ // Voluntary local interests influence ranking only in memory. No private
+ // profile fields enter the anonymous feed activity ledger.
+ const interests=Array.isArray(state.profileInterests)?state.profileInterests:[];
+ const features=[card.category,card.feature,card.study].filter(x=>typeof x==='string').join(' ').toLowerCase();
+ const interestSignals={
+  Shopping:/\\b(shopping|shop|store|product|price|deal|marketplace|retail)\\b/i,
+  Music:/\\b(music|radio|audio|listen|song|podcast|spaces)\\b/i,
+  Stories:/\\b(stories|story|reader|book|fiction|write|literature)\\b/i,
+  Science:/\\b(science|physics|experiment|research|nasa|engineering)\\b/i,
+  Television:/\\b(television|tv|watch|fox|broadcast|channel|video)\\b/i,
+  History:/\\b(history|historical|museum|antique|vintage|heritage)\\b/i,
+  DIY:/\\b(diy|repair|restore|build|kit|make|schematic)\\b/i,
+  Sports:/\\b(sports|baseball|basketball|nba|mlb|football|game)\\b/i,
+  Research:/\\b(research|study|source|search|investigate|knowledge)\\b/i
+ };
+ const interestMatch=interests.some(topic=>Object.prototype.hasOwnProperty.call(interestSignals,topic)&&
+   interestSignals[topic].test(features))?24:0;
+ return clicks*8+category*2+interestMatch+(saved?12:0)+
   Math.min(70,Math.max(0,Number(state.quantScores?.[card.id])||0))-
   Math.min(40,seen*2);
 }
 export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
- const filtered=cards.filter(c=>(tab!=='following'||(state.following||[]).includes(c.id))&&
+ const filtered=cards.filter(c=>(tab==='following'?(state.following||[]).includes(c.id):!(state.following||[]).includes(c.id))&&
   (!q||[c.name,c.category,c.feature,c.study].join(' ').toLowerCase().includes(q)));
  const priority=(a,b)=>Number(isInfinityAccepted(b))-Number(isInfinityAccepted(a));
  if(tab==='following')return filtered.sort((a,b)=>priority(a,b)||(state.counts?.[b.id]||0)-(state.counts?.[a.id]||0)||a.name.localeCompare(b.name));
  if(tab==='for-you')return filtered.sort((a,b)=>priority(a,b)||feedScore(b,state)-feedScore(a,state)||a.id.localeCompare(b.id));
- // Public remains a broad catalog rather than a personalized, narrowed feed.
+ // Public is a discovery-only catalog: followed cards stay in Following until unfollowed.
  return filtered.sort(priority);
 }
 export function nextFeedDirection(cards,tab,state,currentId='',query=''){
