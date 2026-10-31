@@ -44,9 +44,11 @@ function render(updateUrl=false){
  const header=el('header','iqp-card-head');header.append(el('p','iqp-kicker','INFINITY 2026® · '+card.category),el('h2','',card.name),el('p','iqp-desc',card.feature));
  const art=createCardArtwork(card);
  const info=el('p','iqp-origin','Original source: '+new URL(card.official).hostname);
- const warning=el('p','iqp-warning',card.mode==='directory'?'This is a plugin-directory entry. The provider-specific website is not verified. Use ChatGPT Plugins to locate and authorize it.':card.mode==='plugin'?'This card links to official plugin information. Installation and account consent happen inside ChatGPT; no plugin authorization is inherited here.':'Independent QuantaPhi card. Public website information can be viewed; private feeds, accounts, edits and purchases require an approved connection.');
+ const warning=el('p','iqp-warning',card.mode==='directory'?(card.pluginUrl?'A public ChatGPT plugin listing has been verified. Installing or authorizing it happens in ChatGPT; QuantaPhi does not inherit account access.':'This is a plugin-directory entry. The provider-specific website is not verified. Use ChatGPT Plugins to locate and authorize it.'):card.mode==='plugin'?'This card links to official plugin information. Installation and account consent happen inside ChatGPT; no plugin authorization is inherited here.':'Independent QuantaPhi card. Public website information can be viewed; private feeds, accounts, edits and purchases require an approved connection.');
  const actions=el('div','iqp-actions');
- actions.append(external(card.mode==='directory'?'Find in ChatGPT Plugins ↗':card.mode==='plugin'?'Official plugin details ↗':'Open original website ↗',card.official,'iqp-primary'));
+ actions.append(external(card.mode==='directory'&&card.pluginUrl?'Open verified ChatGPT plugin ↗':card.mode==='directory'?'Find in ChatGPT Plugins ↗':card.mode==='plugin'?'Official plugin details ↗':'Open original website ↗',
+  card.mode==='directory'&&card.pluginUrl?card.pluginUrl:card.official,'iqp-primary'));
+ if(card.pluginUrl&&card.mode!=='directory')actions.append(external('Connect via ChatGPT plugin ↗',card.pluginUrl));
  const publicSearch=el('section','iqp-public-search');
  if(card.mode==='site'){
   publicSearch.append(el('h3','','Live original website content'));
