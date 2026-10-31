@@ -314,6 +314,41 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env) {
   const incoming = new URL(request.url);
+  // QuantaPhi is the canonical origin for the Alien Coin frontend.
+  // Proxy only the registered Alien Coin API routes. Browsers must never send
+  // wallets or authentication tokens to a mismatched CORS origin.
+  if(incoming.pathname.startsWith('/alien-coin/api/')) {
+   if(!['GET','POST','OPTIONS'].includes(request.method))return Response.json({error:'method_not_allowed'},{status:405,headers:{'Cache-Control':'no-store'}});
+   const origin=request.headers.get('Origin');
+   if(origin&&origin!==CANONICAL_ORIGIN)return Response.json({error:'origin_not_allowed'},{status:403,headers:{'Cache-Control':'no-store'}});
+   const backendPath=incoming.pathname.slice('/alien-coin'.length);
+   if(!/^\/api\/(?:tokens(?:\/|$)|wallet\/|auth\/)/.test(backendPath))
+    return Response.json({error:'route_not_allowed'},{status:404,headers:{'Cache-Control':'no-store'}});
+   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{'Cache-Control':'no-store','Allow':'GET, POST, OPTIONS'}});
+   const backend=new URL('https://alien-coin.marvaseater.workers.dev');
+   backend.pathname=backendPath;backend.search=incoming.search;
+   const headers=new Headers();
+   for(const name of ['Authorization','Content-Type','Accept']) {
+    const value=request.headers.get(name);
+    if(value)headers.set(name,value);
+   }
+   try{
+    const response=await fetch(backend.toString(),{
+     method:request.method,headers,
+     body:request.method==='POST'?request.body:undefined,
+     redirect:'manual',cache:'no-store',signal:AbortSignal.timeout(15000)
+    });
+    const outHeaders=new Headers();
+    for(const name of ['content-type','content-disposition']){
+     const value=response.headers.get(name);if(value)outHeaders.set(name,value);
+    }
+    outHeaders.set('Cache-Control','no-store');
+    outHeaders.set('x-quantaphi-app','Alien-Coin');
+    return new Response(response.body,{status:response.status,headers:outHeaders});
+   }catch{
+    return Response.json({error:'alien_coin_api_unavailable'},{status:502,headers:{'Cache-Control':'no-store'}});
+   }
+  }
   if(incoming.pathname === '/api/infinity-connections') {
    if(request.method!=='GET') return Response.json({ok:false,error:'method_not_allowed'},{status:405,headers:{'Cache-Control':'no-store'}});
    if(!env.QUANT_AI || typeof env.QUANT_AI.fetch!=='function') return Response.json({
