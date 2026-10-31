@@ -8,6 +8,7 @@ import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
 import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
+import {readProfileInterests} from './quanta-profile-card.mjs';
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
  id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
@@ -37,7 +38,7 @@ let state=safeRead(),tab='public',current='',query='',showCount=16,lastReason=''
 // Quant signals are derived in memory from the authenticated user’s existing ledger.
 // They are NEVER written to anonymous localStorage.
 let quantScores={},quantConnected=false,quantAttempted=false;
-const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores});
+const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores,profileInterests:readProfileInterests()});
 const persist=()=>{try{localStorage.setItem(FEED_STORAGE_KEY,JSON.stringify(state));}catch{/* Anonymous state can still work for this page. */}};
 const shareChange=()=>window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'public-feed'}}));
 function choose(card){
