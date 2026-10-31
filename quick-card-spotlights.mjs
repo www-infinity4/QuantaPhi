@@ -82,7 +82,7 @@ export async function fetchSpotlights(card,fetcher=fetch){
 }
 const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value)n.textContent=value;return n};
 function css(){if(document.querySelector('link[data-quick-spotlights]'))return;
- const link=el('link');link.rel='stylesheet';link.href=new URL('./quick-card-spotlights.css?v=20261030-rotate1',import.meta.url).href;link.dataset.quickSpotlights='true';document.head.append(link);
+ const link=el('link');link.rel='stylesheet';link.href=new URL('./quick-card-spotlights.css?v=20261031-source-ad-first1',import.meta.url).href;link.dataset.quickSpotlights='true';document.head.append(link);
 }
 export function mountRotatingSpotlights(article,card,{onEmpty}={}){
  if(!article||card.nonTargeted||article.dataset.personalization==='disabled')return;css();
