@@ -7,15 +7,15 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Milestone 1 policy and navigation scaffold only; browser/session/owner authorization/real deployment acceptance unverified"
-sessions_spent: 9
+sessions_spent: 10
 sessions_remaining_estimate: unknown
 agent: "Continuity Builder source engineering"
 lease_id: null
 lease_expires_at: null
-last_observed_at_utc: "2026-10-31T18:54:00Z"
+last_observed_at_utc: "2026-10-31T19:15:00Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/open-browser-bridge-20261031
-head_sha: "328c307168e22f49db4eee85c23058c2979c2070"
+head_sha: "4db0b06cff911a58113cdac0c3aed6d5ab75bfd2"
 pr: 1286
 tests:
   - "Node v22 local policy regression: test-first 2/3 (alternate-port bypass reproduced), fixed 3/3 pass; node --check policy.mjs pass"
@@ -83,3 +83,9 @@ Index synchronization: main lacks `work/unfinished/INDEX.md`; it exists in still
 - Exact source head `328c307168e22f49db4eee85c23058c2979c2070` confirmed **4/4 GitHub Actions success**, including dedicated bridge policy run `41231552985`; other runs `41231553061`, `41231553026`, `41231553171` succeeded. Earlier heads `2b50a11` and `994f1ba` failed bridge policy because of escaped newline defects; fixes `994f1ba` and `328c307` corrected them. New 6to4/Teredo IPv6 denies are checked in.
 - PR #1286 still open, independent reviews last verified **0**. This is CI-passed **source only**, not real Chromium egress acceptance, merged or deployed. Owner consent, authenticated sessions, DNS pinning/network isolation and independent security approval remain separate gates. No Work/browser lease claimed. Progress and remaining sessions unknown.
 - Next executable action: independent security review and a real Chromium integration test with network-layer deny-private egress and DNS-rebinding checks; do not auto-merge before these are proven.
+
+## Session 10 — CI and final URL receipt guard
+
+- Source commit `7b3235ea9a5d58d6afe639acb9dcf8e91654acc0` rejects an unapproved final browser URL after `page.goto` and before a success receipt; commit `4db0b06cff911a58113cdac0c3aed6d5ab75bfd2` adds static regression test for ordering (navigation → final URL check → screenshot → receipt).
+- Exact source head `4db0b06` GitHub Actions **4/4 succeeded**: policy `41232191583`, search/wallet `41232191674`, image `41232191569`, StarCoin payout `41232191593`.
+- Caveat: the static regression guard does not demonstrate live Chromium DNS rebinding containment or complete browser isolation. Independent PR reviews last checked: zero. No merge, production deployment, or live verified browser execution. Next action: independent security reviewer and network-isolated Chromium integration acceptance, then owner-approved release gates.
