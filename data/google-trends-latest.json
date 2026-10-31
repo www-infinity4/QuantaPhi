@@ -3,107 +3,357 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-31T17:23:53.542869Z",
+  "checked_at": "2026-10-31T19:58:59.228987Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "lightning vs predators",
+      "query": "wednesday",
       "approx_searches": "500+",
-      "published_at": "2026-10-31T17:10:00Z",
+      "published_at": "2026-10-31T19:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/lightning-vs-predators-prediction-pick-143257438.html",
-        "https://www.nhl.com/predators/video/game-preview-predators-vs-lightning-6407713307112",
-        "https://www.nytimes.com/athletic/7741173/2026/10/31/lightning-vs-predators-stream-how-to-watch-oct-31/"
+        "https://theperrynews.com/west-des-moines-woman-allegedly-assaults-three-wednesday/",
+        "https://myrgv.com/local-news/2026/10/30/weslaco-firefighters-who-died-wednesday-identified/",
+        "https://www.valleycentral.com/news/local-news/johnny-and-julia-will-be-missed-firefighters-in-deadly-off-duty-incident-identified/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWFHbtv1NKMzjUGnKmPBHkB0QrkszpJoVX3K2J_3lIwZhDfELIu8b9liEDCM",
+      "image_credit": "ThePerryNews",
+      "news": [
+        {
+          "url": "https://theperrynews.com/west-des-moines-woman-allegedly-assaults-three-wednesday/",
+          "title": "West Des Moines woman allegedly assaults three Wednesday",
+          "publisher": "ThePerryNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWFHbtv1NKMzjUGnKmPBHkB0QrkszpJoVX3K2J_3lIwZhDfELIu8b9liEDCM"
+        },
+        {
+          "url": "https://myrgv.com/local-news/2026/10/30/weslaco-firefighters-who-died-wednesday-identified/",
+          "title": "Weslaco firefighters who died Wednesday identified",
+          "publisher": "MyRGV.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSy0k-Q0nGUYzeXSez-ymvJBIeTIgi6Wyse_OuFXR44DGnFJzls41YkOnBjMw"
+        },
+        {
+          "url": "https://www.valleycentral.com/news/local-news/johnny-and-julia-will-be-missed-firefighters-in-deadly-off-duty-incident-identified/",
+          "title": "‘Johnny and Julia will be missed’: Firefighters in deadly off-duty incident identified",
+          "publisher": "ValleyCentral.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp4qLAoGUakSlg_h9-eughH-YXlb6JnRtC77ZCr2zn8d2PFWCF9FMNp89QlDk"
+        }
       ]
     },
     {
-      "query": "zendaya",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-31T17:10:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1437692/halloween-2026-zendaya-channels-halle-berry-in-vintage-set",
-        "https://www.elle.com/culture/celebrities/a74302144/zendaya-halle-berry-halloween-costume-2026/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/zendaya-channels-halle-berry-daring-125712458.html"
-      ]
-    },
-    {
-      "query": "coastal carolina vs georgia state",
-      "approx_searches": "500+",
-      "published_at": "2026-10-31T17:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/coastal-carolina-vs-georgia-state-100743769.html",
-        "https://sportstalksc.com/coastal-carolina/after-the-bye-week-ccu-hc-ryan-beard-and-the-chanticleers-shift-their-focus-to-georgia-state-audio/",
-        "https://georgiastatesports.com/news/2026/10/26/football-panthers-host-coastal-for-halloween-showdown.aspx"
-      ]
-    },
-    {
-      "query": "ashley hinson",
-      "approx_searches": "500+",
-      "published_at": "2026-10-31T17:10:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/politics/2026/10/30/locked-close-senate-race-iowa-republican-pledges-be-thorn-trumps-side/",
-        "https://www.ktiv.com/2026/10/30/hinson-rallies-ames-with-former-iowa-assistant-coach-bruce-pearl/",
-        "https://www.cnn.com/2026/10/28/politics/video/ashley-hinson-manu-raju-midterm-campaign"
-      ]
-    },
-    {
-      "query": "oilers vs islanders",
+      "query": "oliver dunn",
       "approx_searches": "200+",
-      "published_at": "2026-10-31T17:10:00Z",
+      "published_at": "2026-10-31T19:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/islanders/news/game-preview-islanders-vs-oilers-oct-31-2026",
-        "https://sports.yahoo.com/articles/oilers-vs-islanders-prediction-picks-133300146.html",
-        "https://oilersnation.com/news/edmonton-oilers-new-york-islanders-game-preview-matthew-schaefer"
+        "https://www.mlbtraderumors.com/2026/10/two-players-elect-free-agency.html",
+        "https://www.yardbarker.com/mlb/articles/tampa_bay_rays_officially_release_29_year_old_infielder/s1_17355_44498184",
+        "https://heavy.com/sports/mlb/toronto-blue-jays/toronto-blue-jays-2-year-pitcher-pannone-elects-mlb-free-agency/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOFmZ_4PiKGRzHxXA-Zgih2fTyeH9FJZxWoc_Zh-wgtuyPLP5a36WoJWDsc3I",
+      "image_credit": "MLB Trade Rumors",
+      "news": [
+        {
+          "url": "https://www.mlbtraderumors.com/2026/10/two-players-elect-free-agency.html",
+          "title": "Two Players Elect Free Agency",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOFmZ_4PiKGRzHxXA-Zgih2fTyeH9FJZxWoc_Zh-wgtuyPLP5a36WoJWDsc3I"
+        },
+        {
+          "url": "https://www.yardbarker.com/mlb/articles/tampa_bay_rays_officially_release_29_year_old_infielder/s1_17355_44498184",
+          "title": "Tampa Bay Rays Officially Release 29-Year-Old Infielder",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm1zDr9Udr4vqHcuhaAUYETsfE47Y54hsPS4NjvtqriU6CsdMNkyDk4IFg-gA"
+        },
+        {
+          "url": "https://heavy.com/sports/mlb/toronto-blue-jays/toronto-blue-jays-2-year-pitcher-pannone-elects-mlb-free-agency/",
+          "title": "Former Toronto Blue Jays 2-Year Pitcher Quietly Elects MLB Free Agency",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQshyHmME_fBlLd9LtkwIzHXn-irVya7s2wlZ99YazuPM29CmaTD91xngA80cw"
+        }
       ]
     },
     {
-      "query": "man city vs brighton & hove albion f.c. standings",
+      "query": "acc standings",
+      "approx_searches": "200+",
+      "published_at": "2026-10-31T19:40:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/ncaaf/acc/2026/10/31/acc-football-standings-live-week-9-scores-week-10-schedule/92497455007/",
+        "https://techsideline.com/subscription/2026/10/28/open-week-musings-the-acc",
+        "https://caneswarning.com/acc-power-rankings-miami-dominates-pitt-as-virginia-tech-and-boston-college-surge"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgA8iJmWlI7fD2nYp8mcrIyF-YtmcsYFTyLgkQuyv288xzc3GqVRfQ16k8dz4",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/acc/2026/10/31/acc-football-standings-live-week-9-scores-week-10-schedule/92497455007/",
+          "title": "Live ACC football standings: Updated Week 9 rankings and results",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgA8iJmWlI7fD2nYp8mcrIyF-YtmcsYFTyLgkQuyv288xzc3GqVRfQ16k8dz4"
+        },
+        {
+          "url": "https://techsideline.com/subscription/2026/10/28/open-week-musings-the-acc",
+          "title": "Open Week Musings: The ACC",
+          "publisher": "TechSideline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToO68KzdnIA-7xHFZtohjTyU-aFtC2c4Ixyse4EAo1TzNLbfUTtgUhjTU0gQA"
+        },
+        {
+          "url": "https://caneswarning.com/acc-power-rankings-miami-dominates-pitt-as-virginia-tech-and-boston-college-surge",
+          "title": "ACC power rankings: Miami dominates Pitt as Virginia Tech and Boston College surge",
+          "publisher": "Canes Warning",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRze1Pvw9rmjGtAZphWvnepKpjsBma3_hNTbbDL0g3v0UGtGuvwOFbWaEVFOB8"
+        }
+      ]
+    },
+    {
+      "query": "michael olise",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T19:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/michael-olise-making-early-case-130000791.html",
+        "https://bulinews.com/bayern-chief-olise-future-want-him-play-for-for-long-possible",
+        "https://www.thenews.com.pk/latest/1421258-uli-hoene-makes-bold-claim-about-bayerns-michael-olise-and-lamine-yamal"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQprTt2rrvVW5SNnGU2mwABj914KTnZppmi3_cLY22UkfRKk_WUHAKcUh157Ds",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/michael-olise-making-early-case-130000791.html",
+          "title": "Michael Olise is making an early case for the 2027 Ballon d’Or",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQprTt2rrvVW5SNnGU2mwABj914KTnZppmi3_cLY22UkfRKk_WUHAKcUh157Ds"
+        },
+        {
+          "url": "https://bulinews.com/bayern-chief-olise-future-want-him-play-for-for-long-possible",
+          "title": "Bayern chief on Olise’s future: “We want him to play for us for as long as possible”",
+          "publisher": "Bulinews",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWXFpZI2jDPkMrGBm9L3Jg6on6rZ0ct4J465XAnfopIHTZthTbqXuOV0ONsJM"
+        },
+        {
+          "url": "https://www.thenews.com.pk/latest/1421258-uli-hoene-makes-bold-claim-about-bayerns-michael-olise-and-lamine-yamal",
+          "title": "Uli Hoeneß makes bold claim about Bayern's Michael Olise and Lamine Yamal",
+          "publisher": "The News International",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWwd9NXTbvokPqJC1oxjR62mvnjS1RtDEz2Tff4_8ACEKQA5SHU0Is6R-iVec"
+        }
+      ]
+    },
+    {
+      "query": "lsu vs alabama",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T19:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/lane-kiffin-fumes-alabama-kickoff-time-accuses-sec-not-wanting-lsu-win",
+        "https://www.nola.com/sports/lsu/football/lsu-sec-lane-kiffin-alabama-espn-rj-luis-basketball-will-wade-tony-clayton/article_e3ddab1e-5da5-4b91-be06-268a13477f1a.html",
+        "https://www.dawgnation.com/football/sec-game-times-channels-lane-kiffin-envious-next-weeks-georgia-kick-time/N6H7AHIHPBGOZDKVA6KLVEKSOY/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ11qqQcMEp3YFC_4sO9UDnGHnXBU346C_S5Xk4Y6X1EHLr_vHUkaDHBzK-ryE",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/lane-kiffin-fumes-alabama-kickoff-time-accuses-sec-not-wanting-lsu-win",
+          "title": "Lane Kiffin fumes over Alabama kickoff time, accuses SEC of not wanting LSU to win",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ11qqQcMEp3YFC_4sO9UDnGHnXBU346C_S5Xk4Y6X1EHLr_vHUkaDHBzK-ryE"
+        },
+        {
+          "url": "https://www.nola.com/sports/lsu/football/lsu-sec-lane-kiffin-alabama-espn-rj-luis-basketball-will-wade-tony-clayton/article_e3ddab1e-5da5-4b91-be06-268a13477f1a.html",
+          "title": "Scott Rabalais: From Lane Kiffin and kickoff times to RJ Luis, the LSU-SEC battle continues",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0TmUmv6EBkd_K8XJ1UxOV4SuHcPElSQTV24_pLMnc9fxYP9uWad7p2tKylPw"
+        },
+        {
+          "url": "https://www.dawgnation.com/football/sec-game-times-channels-lane-kiffin-envious-next-weeks-georgia-kick-time/N6H7AHIHPBGOZDKVA6KLVEKSOY/",
+          "title": "SEC game times, channels: Lane Kiffin envious of next week's Georgia kick time",
+          "publisher": "DawgNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5TZT9PUQoCemoSsXnigoFCARNdL0AUI2rrB0GXmstAt7B5FV9r-bI6l_Dzq4"
+        }
+      ]
+    },
+    {
+      "query": "billy napier",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T19:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/james-madison-fans-warned-billy-napier-chickens-come-home-roost",
+        "https://www.kare11.com/video/sports/locked-on/lo-national/sun-belt-show/jmu-still-unranked-at-70-is-college-football-disrespecting-the-dukes-sun-belt-podcast/535-b1f0394f-9e31-488f-a8b3-3d0580f21e68",
+        "https://hailfloridahail.com/jmu-fans-just-got-the-billy-napier-experience-florida-tried-to-warn-them-about"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMGD_Zy9Cbrp8hfL-GmJTbblEIhTOo0NX2IXZTomiGvXYwDolin578x8q7wvY",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/james-madison-fans-warned-billy-napier-chickens-come-home-roost",
+          "title": "James Madison fans were warned about Billy Napier, now the chickens have come home to roost",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMGD_Zy9Cbrp8hfL-GmJTbblEIhTOo0NX2IXZTomiGvXYwDolin578x8q7wvY"
+        },
+        {
+          "url": "https://www.kare11.com/video/sports/locked-on/lo-national/sun-belt-show/jmu-still-unranked-at-70-is-college-football-disrespecting-the-dukes-sun-belt-podcast/535-b1f0394f-9e31-488f-a8b3-3d0580f21e68",
+          "title": "JMU STILL UNRANKED at 7–0! Is College Football DISRESPECTING the Dukes? | Sun Belt Podcast",
+          "publisher": "kare11.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSltb2ts-w-GcWuctnUXLxVcYxQCU7vBmO4Flm6FkS-pvqPXCcT4Pz6Ancb8Nc"
+        },
+        {
+          "url": "https://hailfloridahail.com/jmu-fans-just-got-the-billy-napier-experience-florida-tried-to-warn-them-about",
+          "title": "JMU fans just got the Billy Napier experience Florida tried to warn them about",
+          "publisher": "Hail Florida Hail",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNaSh5sJlRfVb-_w9T-duwXcmUoQtHA6Xn3eE7Gf0VE6_jZ0JoInKrsP43hAQ"
+        }
+      ]
+    },
+    {
+      "query": "michael jordan",
+      "approx_searches": "500+",
+      "published_at": "2026-10-31T19:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7741049/2026/10/31/bulls-wilson-giddey-splitter-celtics/",
+        "https://bulls.com/news/bulls-struggle-to-keep-up-with-celtics-in-nba-cup-opener-fall-125-111",
+        "https://chicago.suntimes.com/bulls/2026/10/30/bulls-dismantled-boston-leading-rookie-caleb-wilson-speaking-out"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPqTvYpdZdRCfHjMOR0qfECulGUjnHtGgz5tE0rMxGoLpc3E2K6hJKsrQUvCw",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7741049/2026/10/31/bulls-wilson-giddey-splitter-celtics/",
+          "title": "The Bulls weren’t beaten; they were bludgeoned. ‘It’s unacceptable to be losing like we are’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPqTvYpdZdRCfHjMOR0qfECulGUjnHtGgz5tE0rMxGoLpc3E2K6hJKsrQUvCw"
+        },
+        {
+          "url": "https://bulls.com/news/bulls-struggle-to-keep-up-with-celtics-in-nba-cup-opener-fall-125-111",
+          "title": "Bulls struggle to keep up with Celtics in NBA Cup opener, fall 125-111",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrkoSLV72pDUle_xKIw0Ndxk07IQrWNgJa5rAiowX8Bz-iCpo_OF0vsLYpnWQ"
+        },
+        {
+          "url": "https://chicago.suntimes.com/bulls/2026/10/30/bulls-dismantled-boston-leading-rookie-caleb-wilson-speaking-out",
+          "title": "Rookie Caleb Wilson blasts Bulls, self after blowout loss in Boston",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiE4QtDsbq0MOYIW0akE2dh8iWclRXEMDCY3gLQIjGOfUV3QkPkaneEgnmq44"
+        }
+      ]
+    },
+    {
+      "query": "psv vs willem ii",
+      "approx_searches": "200+",
+      "published_at": "2026-10-31T19:30:00Z",
+      "related_news_urls": [
+        "https://www.nu.nl/voetbal/6415047/psv-verdubbelt-voorsprong-tegen-hekkensluiter-willem-ii.html",
+        "https://nos.nl/artikel/2637505-psv-met-ruime-cijfers-langs-machteloos-willem-ii-bij-rentree-streppel",
+        "https://www.telegraaf.nl/sport/voetbal/live-eredivisie-dominant-psv-werkt-aan-doelsaldo-tegen-hekkensluiter-willem-ii-ricardo-pepi-bekroont-rentree-met-goal/163891731.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQW6cJtntvqAAo_eARDIL1UYCdflbnHpkcGkMQrm6C35QYo8-UUUIKdPMUlc0",
+      "image_credit": "NU",
+      "news": [
+        {
+          "url": "https://www.nu.nl/voetbal/6415047/psv-verdubbelt-voorsprong-tegen-hekkensluiter-willem-ii.html",
+          "title": "PSV verdubbelt voorsprong tegen hekkensluiter Willem II",
+          "publisher": "NU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQW6cJtntvqAAo_eARDIL1UYCdflbnHpkcGkMQrm6C35QYo8-UUUIKdPMUlc0"
+        },
+        {
+          "url": "https://nos.nl/artikel/2637505-psv-met-ruime-cijfers-langs-machteloos-willem-ii-bij-rentree-streppel",
+          "title": "PSV met ruime cijfers langs machteloos Willem II bij rentree Streppel",
+          "publisher": "NOS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSA0lQN3byBwSqONW4sAcFAsonbiywxG_UZl9WgaFpc3BFjeZbJFrUBQVttHw"
+        },
+        {
+          "url": "https://www.telegraaf.nl/sport/voetbal/live-eredivisie-dominant-psv-werkt-aan-doelsaldo-tegen-hekkensluiter-willem-ii-ricardo-pepi-bekroont-rentree-met-goal/163891731.html",
+          "title": "Live: PSV tegen Willem II in Eredivisie volgen",
+          "publisher": "De Telegraaf",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTIAiel0abETfMWYP4C_zvv-7cECQu5Mqqgc4FdM8oirZNt3Fq5rUmvQ6oKss"
+        }
+      ]
+    },
+    {
+      "query": "nikita zon",
+      "approx_searches": "200+",
+      "published_at": "2026-10-31T19:30:00Z",
+      "related_news_urls": [
+        "https://www.boxingnews24.com/2026/10/jaime-munguia-must-demolish-inexperienced-nikita-zon/",
+        "https://fightnews.com/jaime-munguia-co-headlines-vs-nikita-zon/199409",
+        "https://www.wbaboxing.com/boxing-news/wba-authorizes-jaime-munguia-to-defend-super-middleweight-world-title-against-nikita-zon"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3MDPGjznHsuJ6zYBxwJ7XRIRFhvetUxrQyhufDt860IMt2KDW7aZp4pLdezw",
+      "image_credit": "Boxing News 24",
+      "news": [
+        {
+          "url": "https://www.boxingnews24.com/2026/10/jaime-munguia-must-demolish-inexperienced-nikita-zon/",
+          "title": "Jaime Munguia Must Demolish Inexperienced Nikita Zon",
+          "publisher": "Boxing News 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3MDPGjznHsuJ6zYBxwJ7XRIRFhvetUxrQyhufDt860IMt2KDW7aZp4pLdezw"
+        },
+        {
+          "url": "https://fightnews.com/jaime-munguia-co-headlines-vs-nikita-zon/199409",
+          "title": "Boxing News: Jaime Munguia Co-Headlines Vs. Nikita Zon » October 31, 2026",
+          "publisher": "FightNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw25H361CPUcyHDV2-Fr5nOtqUp0JJ63VDGEDrQPnDocp2Axs4auC_5GLO8iU"
+        },
+        {
+          "url": "https://www.wbaboxing.com/boxing-news/wba-authorizes-jaime-munguia-to-defend-super-middleweight-world-title-against-nikita-zon",
+          "title": "WBA Authorizes Jaime Munguía to Defend Super Middleweight World Title Against Nikita Zon",
+          "publisher": "World Boxing Association",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnz5ZkwOVgj3074E57be5vLHWtKLg0f0y03mjPRbcBtsfJfnJxHobqyRzXrgM"
+        }
+      ]
+    },
+    {
+      "query": "south carolina vs oklahoma",
       "approx_searches": "20000+",
-      "published_at": "2026-10-31T17:00:00Z",
+      "published_at": "2026-10-31T19:20:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c6x2v4k8e0y9t",
-        "https://www.espn.com/soccer/report/_/gameId/401879245",
-        "https://www.skysports.com/football/live-blog/13604905/man-city-vs-brighton-live-premier-league-match-updates-news-and-score"
-      ]
-    },
-    {
-      "query": "kansas state vs colorado",
-      "approx_searches": "5000+",
-      "published_at": "2026-10-31T17:00:00Z",
-      "related_news_urls": [
-        "https://www.denverpost.com/2026/10/30/cu-deion-sanders-record-kansas-state-renck/",
-        "https://sports.yahoo.com/articles/colorado-account-kansas-states-dual-125944725.html",
-        "https://www.si.com/college/colorado/football/colorado-buffaloes-official-availability-report-kickoff-kansas-state-wildcats"
-      ]
-    },
-    {
-      "query": "iran",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-31T17:00:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/world/middle-east/u-s-warns-gulf-of-possible-short-intense-renewal-of-iran-war-after-midterms-cd1a55e1",
-        "https://www.timesofisrael.com/liveblog_entry/trump-still-hasnt-made-decision-on-fresh-iran-strikes-prefers-diplomatic-solution-rubio/",
-        "https://www.newsnationnow.com/world/trump-rare-military-briefing-iran/"
-      ]
-    },
-    {
-      "query": "michael landon",
-      "approx_searches": "200+",
-      "published_at": "2026-10-31T17:00:00Z",
-      "related_news_urls": [
-        "https://people.com/melissa-gilbert-remembers-little-house-on-the-prairie-michael-landon-would-have-been-his-90th-birthday-12204000",
-        "https://www.nickiswift.com/2301333/little-house-on-the-prairie-stars-passed-away/",
-        "https://closerweekly.com/melissa-gilbert-says-michael-landon-helped-raise-me-in-touching-90th-birthday-tribute/"
-      ]
-    },
-    {
-      "query": "alex de minaur",
-      "approx_searches": "200+",
-      "published_at": "2026-10-31T17:00:00Z",
-      "related_news_urls": [
-        "https://www.dimers.com/tennis/news/alexander-zverev-vs-alex-de-minaur-tennis-prediction-atp-vienna-open-2026-ac",
-        "https://tennisuptodate.com/atp/live-vienna-open-title-charge-continues-for-alexander-zverev-while-alex-de-minaur-makes-last-gasp-push-for-turin",
-        "https://www.statsinsider.com.au/news/alexander-zverev-vs-alex-de-minaur-prediction-atp-vienna-open-2026"
+        "https://www.postandcourier.com/sports/carolina/gamecocks-oklahoma-sooners-football-playoff/article_16f8b171-30db-4338-b624-6c765ea18eac.html",
+        "https://sports.yahoo.com/articles/oklahoma-sooners-vs-south-carolina-192436894.html",
+        "https://soonersports.com/news/2026/10/30/football-game-primer-ou-vs-south-carolina"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa-xBX79Y3XSpeVmbS8SoeNAciEAW5YxmqgFCLoATAUqpemrO7OFlyRIMbFBE",
+      "image_credit": "Post and Courier",
+      "news": [
+        {
+          "url": "https://www.postandcourier.com/sports/carolina/gamecocks-oklahoma-sooners-football-playoff/article_16f8b171-30db-4338-b624-6c765ea18eac.html",
+          "title": "Final predictions for South Carolina at Oklahoma: Key matchups, storylines and more",
+          "publisher": "Post and Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa-xBX79Y3XSpeVmbS8SoeNAciEAW5YxmqgFCLoATAUqpemrO7OFlyRIMbFBE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/oklahoma-sooners-vs-south-carolina-192436894.html",
+          "title": "Oklahoma Sooners vs South Carolina Gamecocks in Week 9 college football game, see photos",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXcT9STFKsLk-yzExWB4pT_8Zxzw-zmkjAfxJHgvzi7UWAb3exxSYUE2SsKSA"
+        },
+        {
+          "url": "https://soonersports.com/news/2026/10/30/football-game-primer-ou-vs-south-carolina",
+          "title": "Game Primer: OU vs. South Carolina - University of Oklahoma",
+          "publisher": "Soonersports.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbKmlYaLC6evi03VMQcyimgRcukF5dVzSVDe1wHX9w4MU5up4TcUowH9uPvMI"
+        }
       ]
     }
   ]
