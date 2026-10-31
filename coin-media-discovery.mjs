@@ -1,6 +1,7 @@
 // QuantaPhi coin media: opted-in playback from original YouTube publishers.
 const STORAGE='infinity-coin-media-prefs:v2';
 const KINDS=['music','movies','science'];
+export const normalizeInterest=value=>typeof value==='string'?value.trim().slice(0,100):'';
 // Partition private viewing preferences by the selected StarQuest account on this
 // device. Do not copy credentials, wallet IDs, personal titles or API tokens into
 // the media settings or send the selected account to YouTube.
@@ -41,12 +42,12 @@ function mount(root){
  const coin=root.closest('[data-coin]')?.dataset.coin||'alien-coin';
  const saved=read(),prefs=saved[coin]||{};
  const heading=el('h3','coin-media-head','Movies & music · YouTube discovery');
- const explanation=el('p','coin-media-explain','Select your interests. Recent publisher uploads appear where available; search opens YouTube’s complete current results. No video or audio is copied or stored by Infinity.');
+ const explanation=el('p','coin-media-explain','Choose a music or movie topic. This explicit preference stays on this device, separated by signed-in account where available. Recent publisher uploads appear when available; full search opens YouTube. No videos are copied by Infinity.');
  const tools=el('div','coin-media-controls');
  const select=el('select','coin-media-select');select.setAttribute('aria-label','Media interest');
  for(const [value,name] of [['music','Music'],['movies','Movies & trailers'],['science','Science & documentaries']]){const option=el('option','',name);option.value=value;select.append(option)}
  select.value=KINDS.includes(prefs.kind)?prefs.kind:'music';
- const input=el('input','coin-media-query');input.type='search';input.maxLength=100;input.placeholder='Artist, film, topic…';input.setAttribute('aria-label','YouTube media topic');
+ const input=el('input','coin-media-query');input.type='search';input.maxLength=100;input.placeholder='Artist, film, topic…';input.setAttribute('aria-label','YouTube media topic');input.value=normalizeInterest(prefs.query);
  const find=el('a','coin-media-search','Search all of YouTube');find.target='_blank';find.rel='noopener noreferrer';
  const next=el('button','coin-media-next','Next unseen video');next.type='button';
  const clear=el('button','coin-media-next','Clear watched history');clear.type='button';
@@ -59,7 +60,7 @@ function mount(root){
  const foot=el('p','coin-media-explain','Source links and the official YouTube player govern playback. A movie trailer is not a full movie; full films depend on the provider’s rights and availability.');
  root.append(heading,explanation,tools,status,savedPanel,list,player,foot);
  let items=[],state='loading',cursor=0,version=0;
- const track=()=>{const all=read(),p=all[coin]||{};p.kind=select.value;all[coin]=p;save(all)};
+ const track=()=>{const all=read(),p=all[coin]||{};p.kind=select.value;p.query=normalizeInterest(input.value);all[coin]=p;save(all)};
  const recent=()=>{const all=read();return Array.isArray(all[coin]?.seen)?all[coin].seen:[]};
  const remember=id=>{const all=read(),p=all[coin]||{};p.kind=select.value;p.seen=[id,...(Array.isArray(p.seen)?p.seen:[]).filter(x=>x!==id)].slice(0,80);all[coin]=p;save(all)};
  const savedPicks=()=>{const a=read()[coin]?.saved;return Array.isArray(a)?a.filter(x=>x&&/^[A-Za-z0-9_-]{11}$/.test(x.id)&&KINDS.includes(x.kind)).slice(0,30):[]};
@@ -130,10 +131,10 @@ function mount(root){
  // Switching account in place must never display the former account's choices.
  document.addEventListener('starquest:auth-changed',()=>{
   const selected=read()[coin]||{};select.value=KINDS.includes(selected.kind)?selected.kind:'music';
-  input.value='';cursor=0;player.replaceChildren();render();
+  input.value=normalizeInterest(selected.query);cursor=0;player.replaceChildren();render();
  });
  clear.addEventListener('click',()=>{const all=read(),p=all[coin]||{};p.seen=[];all[coin]=p;save(all);cursor=0;render()});
- input.addEventListener('input',()=>{cursor=0;render()});
+ input.addEventListener('input',()=>{track();cursor=0;render()});
  next.addEventListener('click',()=>{
   const selected=orderCoinMedia(items,{kind:select.value,seen:recent(),query:input.value.trim()});
   if(!selected.length)return;
