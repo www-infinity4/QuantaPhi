@@ -3,12 +3,13 @@
 <p class="qcp-eyebrow">BUBBLES · READ YOUR OWN X POSTS</p><h1>Bubbles public X reader</h1>
 <section class="qcp-context" id="xPublicReader">
 <h2>Read my public X posts with Bubbles</h2>
-<p id="bubblesPublicXLiveStatus" role="status" aria-live="polite">Checking the public X reader…</p><p id="bubblesPublicXLiveDetail" class="qcp-small"></p>
+<p id="bubblesPublicXLiveStatus" role="status" aria-live="polite">Checking the owner public X reader…</p><p id="bubblesPublicXLiveDetail" class="qcp-small"></p><p id="bubblesPublicXSecondaryStatus" class="qcp-small" role="status" aria-live="polite">Integra read-only context: awaiting independently verified scan.</p>
 <p><strong>No developer login is needed for this reader.</strong> The Cloudflare browser has successfully displayed public posts and post links at <a href="https://x.com/YahooPingcwlz" target="_blank" rel="noopener noreferrer">@YahooPingcwlz</a>. The scheduled Cloudflare-native browser checks that public profile hourly, stores deduplicated post IDs in a separate database and flags possible Bubbles instructions.</p>
 <p>Posts containing <strong>#bubbles</strong> are candidates; so are untagged posts that appear to request work on QuantaPhi or Bubbles. The scan records the real posts seen, last successful time and any errors. A public timeline may omit replies, older posts or newly published items.</p>
 <p><a class="qcp-link-button" href="/api/bubbles/public-x/health">Hourly reader status ↗</a>
 <a class="qcp-link-button" href="/api/bubbles/public-x/inbox">Public X candidate inbox ↗</a></p>
 <p>Recognized instructions are saved as reviewable candidates. No public social post automatically gains authority to modify repositories, approve wallet actions, merge a PR or deploy. Bubbles must match the source post against existing tickets and use its established owner authorization.</p>
+<p class="qcp-small">@IntegraAI is an additional public context source when its status is verified. Its posts are not owner build instructions and cannot authorize replies, payments or deployments.</p>
 </section>
 <section class="qcp-context" id="xManualPost"><h2>Want Bubbles to read one post right now?</h2>
 <p>Open your public X post, copy its link and put it into Bubbles. You can use your ordinary X sign-in for this. No password or account cookie should ever be given to Bubbles.</p>
@@ -19,4 +20,4 @@
 <p>The separate OAuth/API reader in <a href="https://github.com/www-infinity4/QuantaPhi/pull/644" target="_blank" rel="noopener noreferrer">PR #644</a> remains unfinished. It is <strong>not required</strong> for the public browser scan. If a future feature needs private or complete account data, permissions are a separate decision. Do not enter your X password into the site.</p>
 </details>
 <section class="qcp-context"><h2>Share QuantaPhi with someone</h2><p id="qcpXSetupShareStatus" role="status"></p><button type="button" id="qcpXSetupShare">↗ Share Quick Card builder</button></section>
-</main><script defer src="/bubbles-public-x-status.js?v=1"></script><script type="module">import {shareQuickCard} from '/quick-card-share.js?v=2';document.querySelector('#qcpXSetupShare').addEventListener('click',()=>shareQuickCard({url:'https://quantaphi.org/quick-card-builder.html',title:'Build a Quick Card on QuantaPhi',status:document.querySelector('#qcpXSetupShareStatus')}));</script></body></html>
+</main><script defer src="/bubbles-public-x-status.js?v=2"></script><script type="module">import {shareQuickCard} from '/quick-card-share.js?v=2';document.querySelector('#qcpXSetupShare').addEventListener('click',()=>shareQuickCard({url:'https://quantaphi.org/quick-card-builder.html',title:'Build a Quick Card on QuantaPhi',status:document.querySelector('#qcpXSetupShareStatus')}));</script></body></html>
