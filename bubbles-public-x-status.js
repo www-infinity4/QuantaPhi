@@ -1,5 +1,6 @@
 const status=document.getElementById('bubblesPublicXLiveStatus');
 const detail=document.getElementById('bubblesPublicXLiveDetail');
+const secondary=document.getElementById('bubblesPublicXSecondaryStatus');
 if(status){
  fetch('/api/bubbles/public-x/health',{cache:'no-store'})
  .then(r=>r.ok?r.json():Promise.reject(Error('HTTP '+r.status)))
@@ -18,8 +19,20 @@ if(status){
    status.textContent='Public X reader is configured; awaiting a verified scan';
    if(detail)detail.textContent='Check the first hourly scan receipt before calling it connected.';
   }
+  if(secondary){
+   const source=Array.isArray(v.sources)?v.sources.find(item=>item.account==='IntegraAI'&&item.authority==='reference_only'):null;
+   const sub=source?.readStatus;
+   if(sub?.status==='public_posts_observed'){
+    secondary.textContent='Integra · read-only context verified: '+(sub.last_success||'unverified')+' · Visible posts: '+(sub.visible_count??0)+' · Newly recorded: '+(sub.new_count??0)+'. This does not authorize builds or X replies.';
+   }else if(sub?.status==='blocked'){
+    secondary.textContent='Integra · read-only context blocked at '+(sub.last_checked||'unknown')+' · '+(sub.error||'no error detail')+'. Last success: '+(sub.last_success||'none verified')+'. The owner reader has a separate status.';
+   }else{
+    secondary.textContent='Integra · read-only context not verified yet. This does not affect the owner reader.';
+   }
+  }
  }).catch(()=>{
   status.textContent='Reader status not available';
   if(detail)detail.textContent='The browser scan has not been verified here; check the service health or Cloudflare logs.';
+  if(secondary)secondary.textContent='Integra read-only context status unavailable; no successful secondary scan is claimed.';
  });
 }
