@@ -1,6 +1,6 @@
 import {GAME_START,CAMPAIGN_START,TONIGHT_END,GAME_PK} from './world-series-score.mjs?v=20261028-game5b';
 export {GAME_START,CAMPAIGN_START};
-/* QuantaPhi independent Quick Ads: pregame and game campaign, no paid-sponsor assertions.
+/* QuantaPhi independent Quick Ads: bounded game campaign plus first-party house successor; no paid-sponsor assertions.
  * Public outbound destinations are a reviewed allowlist; no unapproved scraping,
  * alcohol, gambling, cookies, wallet reads or API keys. */
 export const GAME_END=TONIGHT_END;
@@ -33,6 +33,44 @@ export const QUICK_ADS=Object.freeze([
  ad('helzberg','Helzberg Diamonds','Explore jewelry at the official Helzberg store','shopping','https://www.helzberg.com/','#843e6c'),
  ad('infinity-affiliates','Infinity Affiliates','Explore Infinity Accepted brands and product affiliations','shopping','https://quantaphi.org/infinity-affiliates.html','#135e9d')
 ]);
+// Verified MLB Game 5 final (October 28, 2026) ends the event campaign.
+// The successor promotes only QuantaPhi's own already-published catalog and
+// review page; accepted brands are not sponsors, affiliates or warranties.
+export const HOUSE_START=GAME_END+1;
+export const HOUSE_ADS=Object.freeze([
+ ad('infinity-accepted-house','Infinity Accepted','Browse 116 owner-curated brand cards and official product sources','shopping','https://quantaphi.org/infinity-accepted.html','#135e9d'),
+ ad('infinity-affiliates-house','Infinity Affiliates','Match a product to an accepted brand and request independent review','shopping','https://quantaphi.org/infinity-affiliates.html','#0d6175')
+]);
+export function quickAdCampaign(now=Date.now()){
+ if(!Number.isFinite(now)||now<CAMPAIGN_START)return 'inactive';
+ return now<=GAME_END?'world-series':'infinity-house';
+}
+// Preserve an existing ten-minute dismissal and 24-second pacing when the
+// World Series script is replaced by the house campaign. Never inherit the
+// expired campaign's view cap, merchant counts, or rotation history.
+export function restoreQuickAdState(current={},legacy={}){
+ const record=x=>x&&typeof x==='object'&&!Array.isArray(x)?x:{};
+ const fresh=record(current),old=record(legacy);
+ const time=x=>typeof x==='number'&&Number.isFinite(x)&&x>=0?x:0;
+ return {
+  ...fresh,
+  dismissedUntil:Math.max(time(fresh.dismissedUntil),time(old.dismissedUntil)),
+  lastAt:Math.max(time(fresh.lastAt),time(old.lastAt)),
+  total:time(fresh.total),
+  counts:{...record(fresh.counts)},
+  recent:Array.isArray(fresh.recent)?fresh.recent.filter(x=>typeof x==='string').slice(0,4):[]
+ };
+}
+// Check again after any asynchronous MLB status request: a user may dismiss a
+// spotlight while that request is pending, and the old result must not revive it.
+export function quickAdPacingAllows(now,state={},suppressedUntil=0){
+ if(!Number.isFinite(now)||!state||typeof state!=='object')return false;
+ const dismiss=Number(state.dismissedUntil)||0;
+ const last=Number(state.lastAt)||0;
+ const suppressed=Number(suppressedUntil)||0;
+ const total=Number(state.total)||0;
+ return now>=dismiss&&now>=suppressed&&now-last>=24000&&total<30;
+}
 export function inGameWindow(now=Date.now()){
  return Number.isFinite(now)&&now>=CAMPAIGN_START&&now<=GAME_END;
 }
@@ -61,6 +99,8 @@ const REVIEWED_AD_DESTINATIONS=Object.freeze({
  'apple-iphone':'https://www.apple.com/iphone/',
  'helzberg':'https://www.helzberg.com/',
  'infinity-affiliates':'https://quantaphi.org/infinity-affiliates.html',
+ 'infinity-accepted-house':'https://quantaphi.org/infinity-accepted.html',
+ 'infinity-affiliates-house':'https://quantaphi.org/infinity-affiliates.html',
 });
 export function isOfficialUrl(href,id){
  if(typeof id!=='string'||!Object.hasOwn(REVIEWED_AD_DESTINATIONS,id))return false;
@@ -84,7 +124,9 @@ export function gameLiveStatus(payload){
  return 'unknown';
 }
 export function eligibleQuickAds(now=Date.now()){
- return inGameWindow(now)?QUICK_ADS.filter(a=>isOfficialUrl(a.href,a.id)):[];
+ const campaign=quickAdCampaign(now);
+ const ads=campaign==='world-series'?QUICK_ADS:campaign==='infinity-house'?HOUSE_ADS:[];
+ return ads.filter(a=>isOfficialUrl(a.href,a.id));
 }
 // Session-first rotation: never replay the same ad while a different unseen one
 // exists, then restart the queue with adjacent/topic relevance and view penalty.
