@@ -1,0 +1,47 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {PLUGIN_QUICK_CARDS,PLUGIN_CATEGORIES,pluginQuickCard} from '../plugin-quick-card-catalog.mjs';
+import {lookupQuickCard,searchQuickCards} from '../quick-card-search-core.mjs';
+import {tinyfishCard} from '../tinyfish-card-catalog.mjs';
+
+test('screenshot services each have their own safe card and deep link',()=>{
+ assert.equal(PLUGIN_QUICK_CARDS.length,56);
+ assert.equal(new Set(PLUGIN_QUICK_CARDS.map(c=>c.id)).size,PLUGIN_QUICK_CARDS.length);
+ assert.ok(PLUGIN_CATEGORIES.length>=10);
+ for(const card of PLUGIN_QUICK_CARDS){
+  assert.match(card.id,/^plugin-[a-z0-9-]+$/);
+  const u=new URL(card.official);
+  assert.equal(u.protocol,'https:');
+  assert.equal(u.username,'');assert.equal(u.password,'');assert.equal(u.port,'');
+  assert.equal(card.url,card.official);
+  assert.ok(card.name.length>1);
+  assert.match(card.route,/^\/plugin-quick-cards\.html\?card=plugin-/);
+  assert.equal(lookupQuickCard(card.id)?.name,card.name);
+  assert.equal(tinyfishCard(card.id)?.url,card.official);
+ }
+});
+test('all key screenshot brands are discoverable by the common homepage search',()=>{
+ for(const [name,id] of [
+  ['Codex Security','plugin-codex-security'],
+  ['Shopify','plugin-shopify'],
+  ['Blockscout Blockchain Data','plugin-blockscout'],
+  ['Undermind','plugin-undermind'],
+  ['Flaim Fantasy','plugin-flaim-fantasy'],
+  ['Remote Desktop Commander','plugin-remote-desktop-commander'],
+  ['PostHog','plugin-posthog'],
+  ['Molecular Structure Viewer','plugin-molecular-structure-viewer'],
+  ['Kleinanzeigen','plugin-kleinanzeigen'],
+  ['AJAXX Data Scrubber','plugin-ajaxx-data-scrubber']
+ ]){
+  assert.ok(searchQuickCards(name,{limit:8}).some(c=>c.id===id),name);
+ }
+});
+test('unverified generic plugin endpoints clearly identify directory handoff',()=>{
+ for(const card of PLUGIN_QUICK_CARDS.filter(c=>c.mode==='directory')){
+  assert.equal(new URL(card.official).hostname,'chatgpt.com');
+  assert.match(card.description,/not been verified/i);
+ }
+ for(const input of ['__proto__','constructor','unknown','plugin-unknown',null]){
+  assert.equal(pluginQuickCard(input),null);
+ }
+});
