@@ -57,14 +57,14 @@ function validateLeaseClaim(field, filename) {
     return;
   }
   const timestamp = String(expiry || '').replace(/^"|"$/g, '');
-  assert.match(timestamp, /^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$/,
+  assert.match(timestamp, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$/,
     filename + ' claimed lease requires UTC expiry');
   assert.ok(Number.isFinite(Date.parse(timestamp)), filename + ' lease expiry must be a valid date');
   assert.ok(!unclaimed(session), filename + ' claimed lease requires task/session identity');
   const agent = String(field('agent') || '').replace(/^"|"$/g, '');
   assert.ok(agent && !/^(unassigned|unknown|null)$/i.test(agent),
     filename + ' claimed lease requires named agent');
-  assert.match(field('issue') || '', /^[1-9]\\d*$/, filename + ' claimed lease requires canonical ticket');
+  assert.match(field('issue') || '', /^[1-9]\d*$/, filename + ' claimed lease requires canonical ticket');
 }
 
 test('lease claims require expiry, fence, agent and task/session identity', () => {
