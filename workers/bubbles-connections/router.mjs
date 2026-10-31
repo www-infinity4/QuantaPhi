@@ -54,7 +54,7 @@ const HANDOFF_FAILURE_REASONS=Object.freeze({
   unavailable:'callback_handoff_failed',
 });
 export function callbackPage(provider,result='',reason='') {
-  if(!['google','github','cloudflare'].includes(provider))return new Response('Unknown provider',{status:404});
+  if(!['google','github','cloudflare','meta'].includes(provider))return new Response('Unknown provider',{status:404});
   const details=Object.hasOwn(OAUTH_RETURN_REASONS,reason)?OAUTH_RETURN_REASONS[reason]:null;
   const message=result==='received'
     ? 'Authorization received securely. Return to Bubbles to verify and finish connecting your account.'
@@ -89,7 +89,7 @@ export async function handleConnections(request,env,resolveService) {
         supportsChunkedAllowlist:true,supportsVersionedAllowlist:true,
         ...await cloudflareScopeConfigProof(env)}});
   }
-  const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
+  const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare|meta)\/callback$/);
   if(callback && request.method==='GET'){
     const provider=callback[1],state=url.searchParams.get('state');
     if(!state)return callbackPage(provider,url.searchParams.get('result')||'',url.searchParams.get('reason')||'');
@@ -160,7 +160,8 @@ export async function handleConnections(request,env,resolveService) {
       return json(origin,{ok:true,starcoinBackupEnabled:Boolean(ready&&env.STARQUEST_LEDGER?.fetch&&env.BOT_WALLET?.fetch),providers:Object.keys(PROVIDERS).map(id=>({id,actions:id==='cloudflare'?oauthClientScopes:PROVIDERS[id].actions,
         configured:ready && ((id==='google' && !!env.GOOGLE_CLIENT_ID && !!env.GOOGLE_CLIENT_SECRET) ||
           (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET) ||
-          (id==='cloudflare' && cloudflareAppReady)),
+          (id==='cloudflare' && cloudflareAppReady) ||
+          (id==='meta' && !!env.META_CLIENT_ID && !!env.META_CLIENT_SECRET)),
         ...(id==='cloudflare'?{scopeInventory:cloudflareScopeInventory(cloudflareScopes),
           clientIdPrefix:ready&&env.CLOUDFLARE_CLIENT_ID?String(env.CLOUDFLARE_CLIENT_ID).slice(0,16):null,
           fullProjectConfigured:ready&&cloudflareFullReady,
@@ -269,6 +270,7 @@ export async function handleConnections(request,env,resolveService) {
         balanceTenths:snapshot.data.balanceTenths,asOf:new Date().toISOString(),
         source:'StarQuest + Unified Wallet reconciliation',emailed:false});
     }
+    if (url.pathname === PREFIX+'/meta') return json(origin,{ok:true,...await service.meta({userId:identity.userId,id:body.id,operation:body.operation,pageId:body.pageId,message:body.message,imageUrl:body.imageUrl,confirmed:body.confirmed})});
     if (url.pathname === PREFIX+'/github/test') return json(origin,{ok:true,...await service.githubConnectionTest({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/github/repositories') return json(origin,{ok:true,...await service.githubRepositories({userId:identity.userId,id:body.id})});
     if(url.pathname===PREFIX+'/start'){
