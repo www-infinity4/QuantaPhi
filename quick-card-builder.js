@@ -43,10 +43,37 @@ document.getElementById('qcpSharePage')?.addEventListener('click',()=>void share
  status:pageShareStatus
 }));
 const button=document.getElementById('qcpPublish');
+const qualityStatus=document.getElementById('qcpImageQualityStatus');
+// A shared, actionable minimum for social/hero artwork, never a guessed image.
+export function verifyCardImage(source,{ImageClass=Image,timeoutMs=8500}={}){
+ return new Promise((resolve,reject)=>{
+  let address;
+  try{address=new URL(source);if(address.protocol!=='https:'||address.username||address.password)throw Error('URL must be public HTTPS.');}
+  catch{reject(Error('Use a publicly available HTTPS image URL.'));return;}
+  const photo=new ImageClass();let settled=false;
+  const done=(error)=>{if(settled)return;settled=true;clearTimeout(timer);photo.onload=photo.onerror=null;error?reject(error):resolve(true)};
+  const timer=setTimeout(()=>done(Error('Image did not load in time. Use a reliable public image host.')),timeoutMs);
+  photo.onload=()=>{
+   if(photo.naturalWidth<1200||photo.naturalHeight<675||photo.naturalWidth/photo.naturalHeight<1.3||photo.naturalWidth/photo.naturalHeight>2.4)
+    done(Error('Hero image must be at least 1200 × 675 and landscape (not a thumbnail, icon or stretched banner).'));
+   else done();
+  };
+  photo.onerror=()=>done(Error('Image could not be opened publicly. Check its image URL and permissions.'));
+  photo.src=address.href;
+ });
+}
+form.elements.namedItem('image')?.addEventListener('change',()=>{
+ qualityStatus.textContent='Image will be checked for public availability and resolution when published.';
+});
 form.addEventListener('submit',async event=>{
  event.preventDefault();button.disabled=true;result.replaceChildren();button.textContent='Publishing…';
  const body=Object.fromEntries(new FormData(form).entries());
  try{
+  if(body.image?.trim()){
+   qualityStatus.textContent='Checking image clarity and dimensions…';
+   await verifyCardImage(body.image.trim());
+   qualityStatus.textContent='High-resolution hero image verified. Please ensure you have permission to publish it.';
+  }else qualityStatus.textContent='No approved hero image submitted. The card remains interactive, but is not image-ready.';
   const response=await fetch('/api/quick-cards',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
   const value=await response.json();
   if(!response.ok||!value.ok)throw new Error(value.error||'Publishing was not confirmed.');
