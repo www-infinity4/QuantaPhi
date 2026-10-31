@@ -63,3 +63,7 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{background:transparent;co
 .oracle-family-jump [data-family-count]{display:inline-block;min-width:25px;margin-left:3px;
  border-radius:20px;background:#e0edf9;padding:3px 5px;color:#14416f;font-size:11px;font-variant-numeric:tabular-nums}
 @media(max-width:410px){.oracle-family-jump{gap:5px}.oracle-family-jump button{font-size:11px;padding:8px 3px;min-height:50px}}
+
+.oracle-profile-settings-link{display:inline-flex;align-items:center;min-height:42px;padding:8px 13px;border-radius:10px;border:1px solid #b1cce5;background:#f4f9ff;color:#14599b;text-decoration:none;font-weight:750;font-size:13px}
+.oracle-profile-settings-link:focus-visible{outline:3px solid #db9e30;outline-offset:3px}
+.oracle-card-post-note{font:600 13px/1.45 system-ui,Arial,sans-serif;color:#335679;background:#f1f6fd;border:1px solid #cfdeed;border-radius:11px;padding:10px 12px;margin:10px 0}

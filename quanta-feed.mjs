@@ -8,6 +8,7 @@ import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
 import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
+import {readProfileInterests} from './quanta-profile-card.mjs';
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
  id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
@@ -37,7 +38,7 @@ let state=safeRead(),tab='public',current='',query='',showCount=16,lastReason=''
 // Quant signals are derived in memory from the authenticated user’s existing ledger.
 // They are NEVER written to anonymous localStorage.
 let quantScores={},quantConnected=false,quantAttempted=false;
-const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores});
+const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores,profileInterests:readProfileInterests()});
 const persist=()=>{try{localStorage.setItem(FEED_STORAGE_KEY,JSON.stringify(state));}catch{/* Anonymous state can still work for this page. */}};
 const shareChange=()=>window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'public-feed'}}));
 function choose(card){
@@ -80,7 +81,7 @@ function makeTile(card,refresh){
  if(card.origin!=='source'){
   const openBtn=create('button','qf-button','Open card');openBtn.type='button';openBtn.addEventListener('click',()=>open(card));buttons.append(openBtn);
  }
- if(card.origin!=='source')buttons.append(followButton(card,refresh));
+ buttons.append(followButton(card,refresh));
  tile.append(art,topic,title,desc);
  if(card.origin==='source'){
   const inline=create('div','qf-inline-tool');mountCardTools(inline,card);tile.append(inline);
@@ -93,7 +94,7 @@ function renderHome(){
  const refresh=()=>renderHome();
  host.replaceChildren();
  const heading=create('div','qf-heading');
- heading.append(create('p','qf-eyebrow','QUANTAPHI · DISCOVER'),create('h2','','Explore cards made for interaction'),create('p','qf-muted','Browse every card, explore suggestions based on what you open, or keep your followed cards together.'));
+ heading.append(create('p','qf-eyebrow','QUANTAPHI · DISCOVER'),create('h2','','Explore cards made for interaction'),create('p','qf-muted','Discover new cards here. Followed cards move to Following; For You recommends other unfollowed experiences.'));
  host.append(heading);
  const search=create('input','qf-search');search.type='search';search.placeholder='Search QuantaPhi cards, radios, coins, science…';
  search.autocomplete='off';search.value=query;search.setAttribute('aria-label','Search QuantaPhi cards');
@@ -121,7 +122,7 @@ function renderHome(){
  const grid=create('div','qf-grid');grid.id='quantaFeedGrid';host.append(grid);
  const more=create('button','qf-more','Show more cards');more.type='button';
  more.addEventListener('click',()=>{showCount+=16;renderResults(false);});host.append(more);
- const privacy=create('p','qf-muted qf-note','For You uses signed-in Quant search interests when available and otherwise this browser’s card interactions. Following is saved on this device for now; cross-device wallet sync is not yet enabled. No banking or brokerage credentials are read or saved by this feed.');
+ const privacy=create('p','qf-muted qf-note','For You uses signed-in Quant search interests when available and otherwise this browser’s card interactions. Following is stored only in this browser; cross-device wallet sync is not yet enabled. No banking or brokerage credentials are read or saved by this feed.');
  host.append(privacy);
  function renderResults(nextCard){
   const ranked=feedCandidates(ALL_FEED_CARDS,tab,ranking(),query);
@@ -142,7 +143,7 @@ function renderHome(){
    const openBtn=create('button','qf-button','Open interactive card');openBtn.type='button';
    openBtn.addEventListener('click',()=>open(selected));buttons.append(openBtn);
   }
-  if(selected.origin!=='source')buttons.append(followButton(selected,refresh));
+  buttons.append(followButton(selected,refresh));
   if(selected.origin!=='source'||!['google','bing'].includes(selected.id)){
    const original=create('a','qf-link','Original source ↗');original.href=selected.url;original.target='_blank';original.rel='noopener noreferrer';buttons.append(original);
   }
