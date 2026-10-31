@@ -126,7 +126,7 @@ profileLink.className='oracle-profile-settings-link';profileLink.textContent='Pr
 profileLink.setAttribute('aria-label','Open your profile and settings');
 (host.querySelector('.oracle-direction-action')||host).append(profileLink);
 let profileInterests=[];
-void import('/quanta-profile-card.mjs?v=20261030-1').then(({mountProfileCard,profileComplete,readProfileInterests})=>{
+void import('/quanta-profile-card.mjs?v=20261030-3').then(({mountProfileCard,profileComplete,readProfileInterests})=>{
  profileInterests=readProfileInterests();
  profileNode.hidden=profileComplete();
  mountProfileCard(profileNode,{onComplete:()=>{
