@@ -46,7 +46,10 @@ export function mountMetaSocialCard(root,card){
  async function initialize(){
   status.textContent='Checking authorized account permissions…';clearPosts();
   try{
-   client=new AccountConnections({token:()=>resolveConnectorWalletToken(window)});\n   if(location.pathname==='/source-quick-card.html'&&new URLSearchParams(location.search).get('card')===platform){\n    client.resumePending(async error=>{if(error){status.textContent='Meta authorization could not finish. Try signing in again.';return;}await initialize();});\n   }
+   client=new AccountConnections({token:()=>resolveConnectorWalletToken(window)});
+   if(location.pathname==='/source-quick-card.html'&&new URLSearchParams(location.search).get('card')===platform){
+    client.resumePending(async error=>{if(error){status.textContent='Meta authorization could not finish. Try signing in again.';return;}await initialize();});
+   }
    const [catalog,accounts]=await Promise.all([client.call('/catalog'),client.call('/accounts')]);
    const meta=catalog.providers?.find(p=>p.id==='meta');
    if(!meta?.configured){connection.disabled=true;see.disabled=true;send.disabled=true;status.textContent='Meta developer credentials and app permissions are not configured on Bubbles yet. No feed is available.';return;}
