@@ -1,4 +1,4 @@
-import {cardProvider,quickCardManifest} from './quanta-card-provider.mjs';
+import {cardProvider,quickCardManifest} from './quanta-card-provider.mjs?v=20261031-heritage-signin1';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
 import {mountTinyFishCardReader} from './tinyfish-card-reader.mjs';
 import {openQuickCardPreview,safeLocalCardUrl,safePreviewImage} from './quick-card-preview.mjs';
