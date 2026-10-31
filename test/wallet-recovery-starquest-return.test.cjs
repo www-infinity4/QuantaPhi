@@ -40,6 +40,16 @@ function recoveryPage(search,{unifiedOk=true}={}){
  }};
 }
 
+test('Coliseum account recovery returns to Zeus without minting or rewriting Cloudflare tokens',async()=>{
+ const page=recoveryPage('?signin=starquest&returnTo=/coliseum/');
+ assert.equal(page.element('signin').hidden,false);
+ await page.signIn();
+ assert.deepEqual(page.navigation,['/coliseum/']);
+ assert.ok(page.requests.some(url=>url.endsWith('/v1/state')));
+ assert.equal(page.element('password').value,'');
+ const unknown=recoveryPage('?signin=starquest&returnTo=/coliseum/?unsafe=1');
+ await unknown.signIn();assert.deepEqual(unknown.navigation,[]);
+});
 test('StarQuest sign-in opens directly and returns to Bubbles only after matching Unified Wallet verification',async()=>{
  const page=recoveryPage('?signin=starquest&returnTo=/bubbles.html');
  assert.equal(page.element('signin').hidden,false);
