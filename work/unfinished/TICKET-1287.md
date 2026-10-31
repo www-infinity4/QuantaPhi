@@ -7,15 +7,15 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Milestone 1 policy and navigation scaffold only; browser/session/owner authorization/real deployment acceptance unverified"
-sessions_spent: 6
+sessions_spent: 9
 sessions_remaining_estimate: unknown
 agent: "Continuity Builder source engineering"
 lease_id: null
 lease_expires_at: null
-last_observed_at_utc: "2026-10-31T18:22:00Z"
+last_observed_at_utc: "2026-10-31T18:54:00Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/open-browser-bridge-20261031
-head_sha: "26f0b4c02ede0f473c511cc98268b3f6ad91a8d5"
+head_sha: "328c307168e22f49db4eee85c23058c2979c2070"
 pr: 1286
 tests:
   - "Node v22 local policy regression: test-first 2/3 (alternate-port bypass reproduced), fixed 3/3 pass; node --check policy.mjs pass"
@@ -77,3 +77,9 @@ Index synchronization: main lacks `work/unfinished/INDEX.md`; it exists in still
 - Coordinator WORK_DB cycle **5978235** completed 18:15:13.849Z, deployed source `b495535169f94a0300e419dd60071b7b86697e6f`, eight logical tracks, **0 authenticated consumer ChatGPT runners**, owner presence unknown, Work lease unclaimed. Latest public X D1 scan 18:17:30.675Z: five visible, zero new/candidates. Saved TinyFish x.com profile metadata does not prove current sign-in; no paid browser run was started.
 - **State:** 🟡 `source_tested / ci_passed / review_pending`; progress_percent **unknown**, sessions_spent **6**, sessions_remaining_estimate **unknown**, lease_id/fence/task_session_id=null. No independent security review, merge, deployment, real Chromium/phone acceptance or network egress isolation. WebSocket denial closes one interception gap but **does not** prevent Chromium DNS rebinding, UDP/WebRTC or other out-of-band egress.
 - **Next single executable action:** obtain independent security review of #1286 and verify a network-level deny-private egress/DNS-pinning boundary before enabling authenticated browser use. Do not enable provider sessions or claim this is a complete TinyFish replacement.
+
+## Session 9 — 2026-10-31 ~18:54 UTC
+
+- Exact source head `328c307168e22f49db4eee85c23058c2979c2070` confirmed **4/4 GitHub Actions success**, including dedicated bridge policy run `41231552985`; other runs `41231553061`, `41231553026`, `41231553171` succeeded. Earlier heads `2b50a11` and `994f1ba` failed bridge policy because of escaped newline defects; fixes `994f1ba` and `328c307` corrected them. New 6to4/Teredo IPv6 denies are checked in.
+- PR #1286 still open, independent reviews last verified **0**. This is CI-passed **source only**, not real Chromium egress acceptance, merged or deployed. Owner consent, authenticated sessions, DNS pinning/network isolation and independent security approval remain separate gates. No Work/browser lease claimed. Progress and remaining sessions unknown.
+- Next executable action: independent security review and a real Chromium integration test with network-layer deny-private egress and DNS-rebinding checks; do not auto-merge before these are proven.
