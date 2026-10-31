@@ -38,6 +38,7 @@ function stageCard(stage,mountTools){
  const handoffLink=node('a','igf-button','Open Bubbles for review');handoffLink.href='/bubbles.html';handoffLink.hidden=true;
  const lineButton=node('button','primary','Check verified merged lines');lineButton.type='button';
  let client=null,active=null,authorized=[],prRecords=[],issueRecords=[],lastDetails=null,loading=false;
+ let selectionVersion=0,evidenceSource=null;
  const params=typeof location!=='undefined'?new URLSearchParams(location.search):new URLSearchParams();
  const preferredRepo=params.get('repo'),preferredPr=Number(params.get('pr'));
  const call=async(path,body)=>{if(!client)client=new AccountConnections({token:()=>resolveConnectorWalletToken()});return client.call(path,body)};
@@ -50,9 +51,9 @@ function stageCard(stage,mountTools){
   if(destination)destination.href=gitCardRoute(next.id,repos.value,selectedPr());
  };
  const appendLine=(text,tag='p')=>evidence.append(node(tag,'',text));
- function clear(){evidence.replaceChildren();lastDetails=null;draft.hidden=true;copy.hidden=true;handoffLink.hidden=true;}
- function showEvidence(details){
-  clear();lastDetails=details;
+ function clear(){evidence.replaceChildren();lastDetails=null;evidenceSource=null;draft.hidden=true;copy.hidden=true;handoffLink.hidden=true;}
+ function showEvidence(details,selection){
+  clear();lastDetails=details;evidenceSource=selection;
   appendLine('Verified GitHub PR #'+details.pr,'strong');
   if(details.description)appendLine('PR description: '+details.description);
   appendLine('Files changed: '+(details.files||[]).length);
@@ -69,9 +70,11 @@ function stageCard(stage,mountTools){
   if(stage.id==='gitpub')appendLine('GitHub merge alone is not deployment proof. Check Cloudflare or GitHub Pages deployment receipts separately.');
  }
  async function loadPRs(){
-  const r=selectedRepo();prs.replaceChildren();prRecords=[];clear();
+  const version=++selectionVersion,r=selectedRepo();prs.replaceChildren();prRecords=[];clear();
   if(!active||!r){prs.append(node('option','','No authorized repository'));return;}
-  const result=await call('/github/copilot',{id:active.id,repository:r.name,action:'prs'});
+  const accountId=active.id;
+  const result=await call('/github/copilot',{id:accountId,repository:r.name,action:'prs'});
+  if(version!==selectionVersion||!active||active.id!==accountId||repos.value!==r.name)return;
   prRecords=result.prs||[];
   for(const p of prRecords){const option=node('option','', '#'+p.number+' · '+p.title+(p.draft?' [DRAFT]':''));option.value=String(p.number);prs.append(option);}
   if(!prRecords.length)prs.append(node('option','','No open PRs'));
@@ -80,7 +83,9 @@ function stageCard(stage,mountTools){
  }
  async function loadIssues(){
   if(!active||!selectedRepo())return;
-  const result=await call('/github/copilot',{id:active.id,repository:repos.value,action:'issues'});
+  const version=selectionVersion,repoName=repos.value,accountId=active.id;
+  const result=await call('/github/copilot',{id:accountId,repository:repoName,action:'issues'});
+  if(version!==selectionVersion||!active||active.id!==accountId||repos.value!==repoName)return;
   issueRecords=result.issues||[];selectIssue.replaceChildren();
   for(const issue of issueRecords){const option=node('option','', '#'+issue.number+' · '+issue.title);option.value=String(issue.number);selectIssue.append(option);}
   if(!issueRecords.length)selectIssue.append(node('option','','No Infinity Copilot issues found'));
@@ -119,13 +124,15 @@ function stageCard(stage,mountTools){
   finally{sign.disabled=false;}
  });
  connect.addEventListener('click',()=>void load());reload.addEventListener('click',()=>void load());
- repos.addEventListener('change',async()=>{setNextContext();try{await loadPRs();if(stage.mode==='requirements')await loadIssues();}catch(e){setStatus(e.message)}});
- prs.addEventListener('change',()=>{clear();setNextContext()});
+ repos.addEventListener('change',async()=>{selectionVersion++;clear();setNextContext();try{await loadPRs();if(stage.mode==='requirements')await loadIssues();}catch(e){setStatus(e.message)}});
+ prs.addEventListener('change',()=>{selectionVersion++;clear();setNextContext()});
  show.addEventListener('click',async()=>{
   if(!selectedRepo()||!selectedPr()){setStatus('Load your account and select an existing PR.');return;}
+  const selection={account:active.id,repo:repos.value,pr:selectedPr(),version:selectionVersion};
   show.disabled=true;try{
-   const details=await call('/github/copilot',{id:active.id,repository:repos.value,action:'details',prNumber:selectedPr()});
-   showEvidence(details);setStatus('Read-only GitHub PR evidence loaded.');}
+   const details=await call('/github/copilot',{id:selection.account,repository:selection.repo,action:'details',prNumber:selection.pr});
+   if(selection.version!==selectionVersion||active?.id!==selection.account||repos.value!==selection.repo||selectedPr()!==selection.pr){setStatus('Repository or PR changed; stale evidence discarded.');return;}
+   showEvidence(details,selection);setStatus('Read-only GitHub PR evidence loaded.');}
   catch(e){setStatus('Could not inspect PR: '+e.message)}finally{show.disabled=false;}
  });
  feedback.addEventListener('click',async()=>{
@@ -150,7 +157,7 @@ function stageCard(stage,mountTools){
  });
  aiReview.addEventListener('click',()=>{
   const issue=selectedIssue();
-  if(!lastDetails){setStatus('Inspect the actual PR before requesting an AI audit.');return;}
+  if(!lastDetails||!evidenceSource||evidenceSource.account!==active?.id||evidenceSource.repo!==repos.value||evidenceSource.pr!==selectedPr()||evidenceSource.version!==selectionVersion){setStatus('Inspect the selected PR again before requesting an AI audit.');return;}
   if(stage.mode==='requirements'&&!issue){setStatus('Select the original Copilot issue to compare against the PR.');return;}
   const question=[
    'Read-only Gitpal completion audit. Do not claim to have run code or deployment steps.',
