@@ -5,7 +5,7 @@
  */
 const STEPS=new Set(['personal_context','github_read','brain_ticket','code_edit','test_verified','pr_merge','tool_result']);
 const hashOK=v=>typeof v==='string'&&/^[a-f0-9]{64}$/.test(v);
-const idOK=v=>typeof v==='string'&&/^[a-zA-Z0-9_-]{3,100}$/.test(v);
+const idOK=v=>typeof v==='string'&&/^[a-zA-Z0-9_-]{2,100}$/.test(v);
 export function validateBitReceipt(event,ownerHash,sessionId){
  if(!hashOK(ownerHash)||!idOK(sessionId)||!event||typeof event!=='object')return false;
  if(event.ownerHash!==ownerHash||event.sessionId!==sessionId||!idOK(event.id))return false;
