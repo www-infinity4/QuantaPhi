@@ -58,3 +58,39 @@ test('specific ChatGPT plugin handoffs are verified destinations, never inherite
  }
  assert.equal(pluginQuickCard('plugin-shopify').pluginUrl,null);
 });
+
+test('reader readiness confirms only the exact trusted backend card and destination',async()=>{
+ const {checkCardWebsiteReadiness}=await import('../tinyfish-card-reader.mjs');
+ const observed=[];
+ const ready=await checkCardWebsiteReadiness('plugin-etsy',{fetcher:async(url,options)=>{
+  observed.push({url,options});
+  return Response.json({ok:true,cardId:'plugin-etsy',provider:'TinyFish',
+   configured:true,actions:['inspect','search'],messageSupported:false,sourceUrl:'https://www.etsy.com/'});
+ }});
+ assert.equal(ready.configured,true);
+ assert.equal(ready.sourceUrl,'https://www.etsy.com/');
+ assert.equal(observed.length,1);
+ assert.equal(JSON.parse(observed[0].options.body).action,'capabilities');
+ assert.equal(observed[0].options.credentials,'omit');
+ assert.equal(observed[0].options.cache,'no-store');
+ await assert.rejects(checkCardWebsiteReadiness('plugin-etsy',{fetcher:async()=>Response.json({
+  ok:true,cardId:'plugin-etsy',provider:'TinyFish',configured:true,actions:['inspect','search'],
+  sourceUrl:'https://evil.example/'
+ })}),/unexpected source/i);
+ await assert.rejects(checkCardWebsiteReadiness('plugin-etsy',{fetcher:async()=>Response.json({
+  ok:true,cardId:'plugin-shopify',provider:'TinyFish',configured:true,actions:['inspect','search'],
+  sourceUrl:'https://www.etsy.com/'
+ })}),/unverified website reader/i);
+});
+
+test('reader readiness clearly blocks old Worker registries and unconfigured backends',async()=>{
+ const {checkCardWebsiteReadiness}=await import('../tinyfish-card-reader.mjs');
+ await assert.rejects(checkCardWebsiteReadiness('plugin-etsy',{fetcher:async()=>Response.json({
+  ok:false,error:'card_not_registered'
+ },{status:400})}),/worker update required/i);
+ await assert.rejects(checkCardWebsiteReadiness('plugin-etsy',{fetcher:async()=>Response.json({
+  ok:true,cardId:'plugin-etsy',provider:'TinyFish',configured:false,actions:['inspect','search'],
+  sourceUrl:'https://www.etsy.com/'
+ })}),/awaiting activation/i);
+ await assert.rejects(checkCardWebsiteReadiness('plugin-missing'),/not connected/i);
+});
