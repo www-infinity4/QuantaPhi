@@ -34,7 +34,9 @@ function mount(root){
  const input=el('input','coin-media-query');input.type='search';input.maxLength=100;input.placeholder='Artist, film, topic…';input.setAttribute('aria-label','YouTube media topic');
  const find=el('a','coin-media-search','Search all of YouTube');find.target='_blank';find.rel='noopener noreferrer';
  const next=el('button','coin-media-next','Next unseen video');next.type='button';
- tools.append(select,input,find,next);
+ const clear=el('button','coin-media-next','Clear watched history');clear.type='button';
+ const freeMovies=el('a','coin-media-search','Free movies on YouTube');freeMovies.href='https://www.youtube.com/movies';freeMovies.target='_blank';freeMovies.rel='noopener noreferrer';
+ tools.append(select,input,find,next,freeMovies,clear);
  const status=el('p','coin-media-status','Loading public media sources…');status.setAttribute('role','status');
  const list=el('div','coin-media-results'),player=el('div','coin-media-player');
  const foot=el('p','coin-media-explain','Source links and the official YouTube player govern playback. A movie trailer is not a full movie; full films depend on the provider’s rights and availability.');
@@ -47,7 +49,7 @@ function mount(root){
   remember(item.id);player.replaceChildren();
   const caption=el('p','','YouTube · '+item.channel+' · '+item.title);
   const frame=el('iframe','coin-media-frame');
-  frame.src='https://www.youtube-nocookie.com/embed/'+item.id+'?playsinline=1&rel=0';
+  frame.src='https://www.youtube-nocookie.com/embed/'+item.id+'?playsinline=1&rel=0&autoplay=1';
   frame.title='YouTube video: '+item.title;frame.loading='eager';frame.allow='encrypted-media; picture-in-picture; fullscreen; autoplay';
   frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';
   const external=el('a','coin-media-search','Watch on YouTube if playback is blocked');
@@ -58,6 +60,7 @@ function mount(root){
  const render=()=>{
   const kind=select.value,query=input.value.trim(),seen=recent();
   find.href=youtubeSearchLink(query,kind);
+  freeMovies.hidden=kind!=='movies';
   const matches=orderCoinMedia(items,{kind,seen,query});
   const total=orderCoinMedia(items,{kind,seen:[],query}).length;
   list.replaceChildren();
@@ -85,6 +88,7 @@ function mount(root){
   }catch{if(current!==version)return;state='error';items=[];render()}
  };
  select.addEventListener('change',()=>{track();cursor=0;player.replaceChildren();render()});
+ clear.addEventListener('click',()=>{const all=read(),p=all[coin]||{};p.seen=[];all[coin]=p;save(all);cursor=0;render()});
  input.addEventListener('input',()=>{cursor=0;render()});
  next.addEventListener('click',()=>{
   const selected=orderCoinMedia(items,{kind:select.value,seen:recent(),query:input.value.trim()});
