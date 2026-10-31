@@ -1867,7 +1867,9 @@ async function openConversation(id){
    const result=await conversationApi('sessions-get',id);
    if(!Array.isArray(result.messages)||!result.session)throw Error('cloud_folders_not_deployed');
    if(result.session?.title){const entry=threadIndex.find(x=>x.id===id);if(entry)entry.title=result.session.title;}
-   next=result.messages||next;
+   // An empty or not-yet-synced cloud folder must not erase saved device History.
+   // Prefer verified nonempty cloud turns, but retain the local copy on empty.
+   if(result.messages.length||!next.length)next=result.messages;
   }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
  }
  // Cloud History may take seconds. A reply, new typing or photo added while
