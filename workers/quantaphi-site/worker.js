@@ -314,6 +314,28 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env) {
   const incoming = new URL(request.url);
+  if(incoming.pathname === '/api/infinity-connections') {
+   if(request.method!=='GET') return Response.json({ok:false,error:'method_not_allowed'},{status:405,headers:{'Cache-Control':'no-store'}});
+   if(!env.QUANT_AI || typeof env.QUANT_AI.fetch!=='function') return Response.json({
+    ok:false,quantAi:'BINDING_MISSING',wallet:'NOT_CHECKED',mint:'NOT_CHECKED'
+   },{status:503,headers:{'Cache-Control':'no-store','x-quantaphi-edge':EDGE_VERSION}});
+   try{
+    // An unauthenticated 401 is proof that the private router reached the
+    // protected wallet API, NOT proof that a specific wallet or model works.
+    // Never forward cookies, tokens or visitor credentials from this endpoint.
+    const upstream=await env.QUANT_AI.fetch(new Request(CANONICAL_ORIGIN+'/api/quants/owned',{
+     method:'GET',headers:{Accept:'application/json'},signal:AbortSignal.timeout(4000)
+    }));
+    const routeAvailable=upstream.status===401;
+    return Response.json({
+     ok:routeAvailable,quantAi:routeAvailable?'AUTH_ROUTE_REACHABLE':'ROUTE_UNVERIFIED',
+     upstreamStatus:upstream.status,wallet:'NOT_CHECKED',mint:'NOT_CHECKED',model:'NOT_CHECKED'
+    },{status:routeAvailable?200:503,headers:{'Cache-Control':'no-store','x-quantaphi-edge':EDGE_VERSION}});
+   }catch{
+    return Response.json({ok:false,quantAi:'UPSTREAM_UNAVAILABLE',wallet:'NOT_CHECKED',mint:'NOT_CHECKED',model:'NOT_CHECKED'},
+     {status:503,headers:{'Cache-Control':'no-store','x-quantaphi-edge':EDGE_VERSION}});
+   }
+  }
   if(incoming.pathname.startsWith('/api/bubbles/connections/')){
    if(!env.BUBBLES_CONNECTIONS)return Response.json({ok:false,error:'connections_not_configured'},{status:503,headers:{'Cache-Control':'no-store'}});
    return env.BUBBLES_CONNECTIONS.fetch(request);
