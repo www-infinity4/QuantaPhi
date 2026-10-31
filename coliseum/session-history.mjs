@@ -44,8 +44,19 @@ if(arena){
  };
  const say=message=>{lastActivity=message;notice.textContent='Last recorded action: '+message};
  const mutate=(fn,message)=>{
-  try{const output=fn();if(!save())return;render();say(message);return output}
-  catch(error){notice.textContent=String(error.message||error)}
+  // Roll back failed local writes in memory as well as on screen. Otherwise a
+  // storage failure would misleadingly change the in-memory session history.
+  const snapshot=JSON.stringify(history),previousSelected=selected;
+  const rollback=()=>{history=JSON.parse(snapshot);selected=previousSelected;render()};
+  try{
+   const output=fn();
+   if(!save()){
+    rollback();
+    notice.textContent='Nothing was saved. Browser storage is unavailable; export an existing handoff before continuing.';
+    return;
+   }
+   render();say(message);return output;
+  }catch(error){rollback();notice.textContent=String(error.message||error)}
  };
  const currentThread=()=>history.threads.find(t=>t.id===selected)||history.threads[0]||null;
  const makeForm=(inputs,onSubmit)=>{
