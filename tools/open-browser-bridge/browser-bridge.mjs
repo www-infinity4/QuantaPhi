@@ -2,6 +2,7 @@ import { chromium } from 'playwright';
 import { mkdir } from 'node:fs/promises';
 import { isAllowedUrl, parseAllowedHosts } from './policy.mjs';
 import { resolvesOnlyPublicAddresses } from './dns-policy.mjs';
+import { installRequestPolicy } from './request-policy.mjs';
 
 const raw = process.argv[2];
 if (!raw) throw new Error('Usage: node browser-bridge.mjs https://example.com');
@@ -14,13 +15,10 @@ if (!(await resolvesOnlyPublicAddresses(new URL(raw).hostname))) {
 const browser = await chromium.launch({ headless: true, chromiumSandbox: true });
 try {
   const context = await browser.newContext({ acceptDownloads: false, serviceWorkers: 'block' });
+  // Context-wide interception covers the first navigation of popups/new tabs;
+  // page.route() does not. Install before any page can make a request.
+  await installRequestPolicy(context, allowed);
   const page = await context.newPage();
-  await page.route('**/*', async route => {
-    const requestUrl = route.request().url();
-    if (!isAllowedUrl(requestUrl, allowed)) return route.abort();
-    if (!(await resolvesOnlyPublicAddresses(new URL(requestUrl).hostname))) return route.abort();
-    return route.continue();
-  });
   await page.goto(raw, { waitUntil: 'domcontentloaded', timeout: 20000 });
   await mkdir('receipts', { recursive: true });
   const screenshot = 'receipts/last-visit.png';
