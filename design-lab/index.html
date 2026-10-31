@@ -61,6 +61,21 @@
  <p class="lab-result-note">Links are independently indexed public results filtered to their original domains; not paid placements, official partner feeds, live prices or logged-in account data.</p>
  <div id="chainResults" class="lab-result-grid"></div>
 </section>
+<section class="lab-bulk" id="bulk-allocator" aria-labelledby="bulkHeading">
+ <div class="lab-heading"><div><span class="lab-kicker">POWER CHAIN / COMPONENT 002</span><h2 id="bulkHeading">Bulk-buy allocator.</h2></div><p>One order, exact units, transparent delivered costs. A calculation, never a purchase.</p></div>
+ <form id="bulkAllocatorForm" class="bulk-form">
+  <label>Units available <input name="quantity" type="number" min="1" max="10000" step="1" value="300" required></label>
+  <label>Price per unit ($) <input name="unitPrice" type="text" inputmode="decimal" value="1.00" required></label>
+  <label>Buyers <select name="buyers"><option value="5">5 buyers</option><option value="10">10 buyers</option></select></label>
+  <label>Total shipping ($) <input name="shipping" type="text" inputmode="decimal" value="25.00" required></label>
+  <label>Total tax ($) <input name="tax" type="text" inputmode="decimal" value="0.00" required></label>
+  <label>Total storage ($) <input name="storage" type="text" inputmode="decimal" value="10.00" required></label>
+  <button type="submit">Calculate full allocation ↗</button>
+ </form>
+ <p id="bulkAllocationStatus" role="status" aria-live="polite">Calculate to see buyer quantities and delivered totals.</p>
+ <div id="bulkAllocationResults"></div>
+ <p class="bulk-disclosure">Research-only proposal. No buyer consent, payment, wallet charge, merchant inventory or shipping quote is implied. Confirm costs and storage before purchasing.</p>
+</section>
 <section class="lab-blueprint" id="blueprint" aria-labelledby="blueprintHeading">
  <div class="lab-heading"><div><span class="lab-kicker">WHY THIS CARD EXISTS</span><h2 id="blueprintHeading">A circuit with a purpose.</h2></div><p>Every new Quick Card begins with intent, an actual working mechanism, and proof.</p></div>
  <div class="lab-principles">
@@ -73,4 +88,5 @@
 </main>
 <footer class="lab-footer"><span>INFINITY® 2026 · QUANTAPHI DESIGN LAB</span><span>Concept 001 · Functional prototype · Source-first design</span><a href="/">QUANTAPHI ↗</a></footer>
 <script type="module" src="/design-lab/app.mjs?v=1"></script>
+<script type="module" src="/design-lab/bulk-allocator-ui.mjs?v=1"></script>
 </body></html>
