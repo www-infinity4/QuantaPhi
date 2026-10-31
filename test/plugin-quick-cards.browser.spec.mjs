@@ -1,4 +1,5 @@
 import {test,expect} from '@playwright/test';
+import assert from 'node:assert/strict';
 const base='http://127.0.0.1:8799';
 test.use({viewport:{width:360,height:800}});
 async function prepare(page){
@@ -38,4 +39,18 @@ test('directory-only apps do not pretend to be independently signed in',async({p
  await expect(page.locator('#iqpCard h2')).toHaveText('Data');
  await expect(page.locator('.iqp-warning')).toContainText('provider-specific website is not verified');
  await expect(page.getByRole('link',{name:'Find in ChatGPT Plugins ↗'})).toHaveAttribute('href','https://chatgpt.com/plugins');
+});
+
+test('public site search keeps results within the card and never impersonates a signed-in provider',async({page})=>{
+ await prepare(page);
+ await page.goto(base+'/plugin-quick-cards.html?card=plugin-etsy',{waitUntil:'domcontentloaded'});
+ const entry=page.getByRole('searchbox',{name:'Search public pages from Etsy'});
+ await entry.fill('handmade radios');
+ await page.getByRole('button',{name:'Find pages'}).click();
+ const frame=page.locator('.iqp-public-results');
+ await expect(frame).toBeVisible();
+ const target=new URL(await frame.getAttribute('src'),base);
+ assert.equal(target.origin,base);
+ expect(target.searchParams.get('q')).toBe('site:www.etsy.com handmade radios');
+ await expect(page.locator('.iqp-warning')).toContainText('private feeds, accounts, edits and purchases');
 });
