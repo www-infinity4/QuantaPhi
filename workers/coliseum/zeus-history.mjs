@@ -22,7 +22,7 @@ const prefix=(member,id)=>'private-zeus/v1/'+member+'/'+id+'/';
 export const hasZeusHistoryBindings=env=>Boolean(env?.COLISEUM_DB&&env?.ZEUS_HISTORY_R2&&typeof env.MEMBER_PEPPER==='string'&&env.MEMBER_PEPPER.length>=32);
 export async function handleZeusHistory(req,env,member,respond){
  const url=new URL(req.url),path=url.pathname;
- const threadPath=/^\/v1\/private\/zeus\/threads\/([0-9a-f-]{36})(?:\/messages)?$/i.exec(path);
+ const threadPath=/^\/v1\/private\/zeus\/threads\/([A-Za-z0-9_-]{36,40})(?:\/messages)?$/i.exec(path);
  const list=path==='/v1/private/zeus/threads';
  const messages=Boolean(threadPath&&path.endsWith('/messages'));
  const id=threadPath?.[1]||'';
