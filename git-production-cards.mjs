@@ -150,7 +150,7 @@ function stageCard(stage,mountTools){
    aiReview.disabled=false;aiResult.textContent=String(value||'No verified review returned.').slice(0,7000);
   }};
   const accepted=!window.dispatchEvent(new CustomEvent('bubbles:ai-consult',{cancelable:true,detail}));
-  if(!accepted){aiReview.disabled=false;setStatus('AI review requested. Any recommendation must still be separately tested and approved.');}
+  if(accepted){setStatus('AI review accepted by Bubbles. Recommendations do not authorize code, merge or deployment.');}
   else {aiReview.disabled=false;aiResult.textContent='Verified Bubbles AI consultation is not active in this view. Use the handoff packet to continue in Bubbles.';}
  });
  handoff.addEventListener('click',()=>{
