@@ -1,3 +1,4 @@
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate1';
 import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs';
 import {mountCardActions} from './quanta-card-actions.mjs';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
@@ -90,7 +91,8 @@ export function createAcceptedCard(card){
  const affiliate=node('a','Request affiliate product ↗','iac-official iac-affiliate-link');
  affiliate.href='/infinity-affiliates.html?brand='+encodeURIComponent(card.id);
  affiliate.setAttribute('aria-label','Request affiliation for '+card.name+' products');more.append(official,affiliate,source);content.append(more);
- article.append(heading,title,media,content);return article;
+ article.append(heading,title,media,content);
+ mountRotatingSpotlights(article,card);return article;
 }
 function mount(){
  const bank=document.getElementById('infinityAcceptedCards');

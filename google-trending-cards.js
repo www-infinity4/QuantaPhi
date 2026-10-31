@@ -33,7 +33,7 @@ const readJson=async(url,controller)=>{
 function heading(host,title,label,volume){
  const eyebrow=make(host,'p','gt-eyebrow',label);
  const h=make(host,'h3','gt-title',title);
- make(host,'p','gt-snapshot',volume==='automatic'?'Latest observed trends are refreshed through a scheduled Google RSS import; the timestamp below shows actual freshness.':volume+' Google searches in the U.S. snapshot · '+snapshot+' · source: Google Trends');
+ make(host,'p','gt-snapshot',volume==='scores'?'Scores, team records and game details from current provider responses.':volume==='automatic'?'Latest observed trends are refreshed through a scheduled Google RSS import; the timestamp below shows actual freshness.':volume+' Google searches in the U.S. snapshot · '+snapshot+' · source: Google Trends');
  return {eyebrow,h};
 }
 function button(row,title,cb){
@@ -43,15 +43,21 @@ function actions(host,urls){
  const line=make(host,'div','gt-actions');for(const [text,url] of urls)line.append(link(text,url));return line;
 }
 function scoreboardShell(host,title,short,volume,sourceUrl){
- heading(host,title,'GOOGLE TRENDING · '+short,volume);
+ heading(host,title,'∞ INFINITY · '+short,volume);
  const toolbar=make(host,'div','gt-toolbar');
  const day=make(host,'strong','gt-date','');
  const status=make(host,'p','gt-status','Loading source…');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const list=make(host,'div','gt-games');list.setAttribute('aria-label',title+' current game data');
+ const gameNav=make(host,'div','gt-toolbar gt-game-nav');
+ let games=[],draw=null,selected=0;
+ const previous=button(gameNav,'‹ Previous game',()=>{selected=(selected-1+games.length)%games.length;display()}),position=make(gameNav,'span','gt-date'),next=button(gameNav,'Next game ›',()=>{selected=(selected+1)%games.length;display()});
+ function display(){list.replaceChildren();previous.disabled=next.disabled=games.length<2;position.textContent=games.length?(selected+1)+' / '+games.length:'0 games';if(games.length&&draw)list.append(draw(games[selected]))}
+ function setGames(items,render){const id=games[selected]?.id;games=items;draw=render;selected=Math.max(0,games.findIndex(g=>g.id===id));display()}
  const footer=make(host,'p','gt-fine','Provider data may be delayed or unavailable. QuantaPhi does not control the upstream feed. Google search counts are a dated snapshot, not a count of game viewers.');
  const row=make(host,'div','gt-actions');
  row.append(link('Open source scoreboard ↗',sourceUrl),link('Google search trend ↗',SOURCES.trends));
- return {toolbar,day,status,list,footer};
+ host.append(list,gameNav,toolbar,day,status,footer,row);display();
+ return {toolbar,day,status,list,footer,setGames};
 }
 function dayControls(shell,refresh,setDate,getDate){
  button(shell.toolbar,'◀ Day',()=>setDate(shiftDay(getDate(),-1)));
@@ -68,68 +74,54 @@ function gameRow(list,teams,summary,url){
  if(url)row.append(link('Details and statistics ↗',url));
  return row;
 }
+// The module also powers the current FOX/NFL card. No stored game result is guessed.
+const sports=()=>import('./sports-card-data.mjs?v=20261030-rich1');
+function watchCard(host,refresh){
+ let active=false;
+ const visible=()=>!document.hidden&&host.getClientRects().length>0;
+ host.addEventListener('oracle:activate',()=>{active=true;void refresh()});
+ const observer=new IntersectionObserver(items=>{active=items.some(x=>x.isIntersecting);if(active)void refresh()});observer.observe(host);
+ document.addEventListener('visibilitychange',()=>{if(active&&visible())void refresh()});
+ setInterval(()=>{if(active&&visible())void refresh()},5*60*1000);
+}
 function nbaCard(host){
- const ui=scoreboardShell(host,'NBA Matchup Center','BASKETBALL','200K+ Knicks–Celtics / 200K+ Bulls–Bucks',SOURCES.nba);
- let date=localDate(),choice='featured',controller;
- const tabs=make(host,'div','gt-tabs');
- const definitions=[['featured','Trending matchups'],['all','All NBA games']];
+ const ui=scoreboardShell(host,'NBA Matchup Center','BASKETBALL','scores',SOURCES.nba);
+ let date=localDate(),choice='all',controller;
+ const tabs=make(host,'div','gt-tabs'),definitions=[['all','All NBA games'],['featured','Live & next']];
  const buttons=definitions.map(([id,label])=>button(tabs,label,()=>{choice=id;select();void refresh()}));
- function select(){buttons.forEach((b,i)=>{const selected=definitions[i][0]===choice;b.setAttribute('aria-pressed',String(selected));b.classList.toggle('selected',selected)})}
+ function select(){buttons.forEach((b,i)=>{const yes=definitions[i][0]===choice;b.setAttribute('aria-pressed',String(yes));b.classList.toggle('selected',yes)})}
  async function refresh(){
-  controller?.abort();controller=new AbortController();
-  ui.day.textContent=dateLabel(date);
-  ui.status.textContent='Checking ESPN NBA games for '+date+'…';
+  controller?.abort();const own=controller=new AbortController();
+  ui.day.textContent=dateLabel(date);ui.status.textContent='Checking ESPN NBA games for '+date+'…';
   try{
-   const data=await readJson('https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates='+compactDay(date),controller);
-   const games=Array.isArray(data.events)?data.events:[];
-   const shown=choice==='featured'?games.filter(e=>{
-    const teams=(e.competitions?.[0]?.competitors||[]).map(x=>String(x.team?.abbreviation||'').toUpperCase());
-    return (teams.includes('BOS')&&teams.includes('NY'))||(teams.includes('CHI')&&teams.includes('MIL'));
-   }):games;
-   ui.list.replaceChildren();
-   if(!shown.length)empty(ui.list,choice==='featured'?'No Knicks–Celtics or Bulls–Bucks games were found for this date. Use All NBA games or change the day.':'No games were returned for this date.');
-   for(const e of shown.slice(0,25)){
-    const pair=(e.competitions?.[0]?.competitors||[]).map(c=>({name:String(c.team?.displayName||c.team?.name||'Unknown'),score:c.score==null?null:c.score}));
-    const state=safeStatus(e.status?.type?.description||e.status?.type?.name);
-    const clock=e.status?.displayClock&&!/final|scheduled|postponed/i.test(state)?' · '+String(e.status.displayClock):'';
-    const period=e.status?.period?' · period '+e.status.period:'';
-    const source=e.links?.map(l=>validUrl(l.href,'espn.com')).find(Boolean)||SOURCES.nba;
-    gameRow(ui.list,pair.length?pair:[{name:e.name||'NBA matchup'}],state+period+clock,source);
-   }
-   ui.status.textContent=shown.length+' of '+games.length+' NBA games shown · source checked '+fetchedAt()+' · ESPN data';
-  }catch(error){if(error.name==='AbortError')return;empty(ui.list,'Scores unavailable right now. Use the source scoreboard link.');ui.status.textContent='NBA refresh failed · '+safeStatus(error.message)}
+   const api=await sports(),data=await api.fetchScoreboard('nba',date,{signal:AbortSignal.any([own.signal,AbortSignal.timeout(14000)])});
+   if(own!==controller)return;
+   const shown=choice==='featured'?data.games.filter(g=>!g.finished):data.games;
+   ui.setGames(shown,api.renderSportsGame);
+   if(!shown.length)empty(ui.list,'No games in this view. Change the day or choose All NBA games.');
+   ui.status.textContent=shown.length+' of '+data.games.length+' NBA games shown · source checked '+new Date(data.checked).toLocaleTimeString()+' · ESPN data';
+  }catch(error){if(own!==controller)return;ui.setGames([],null);empty(ui.list,'Scores unavailable right now. Use the source scoreboard link.');ui.status.textContent='NBA refresh failed · '+safeStatus(error.message)}
  }
- const setDate=day=>{date=day;void refresh()};
- dayControls(ui,refresh,setDate,()=>date);select();void refresh();
+ dayControls(ui,refresh,day=>{date=day;void refresh()},()=>date);select();watchCard(host,refresh);
 }
 function mlbCard(host){
- const ui=scoreboardShell(host,'World Series Game Tracker','BASEBALL','200K+ Rays–Brewers',SOURCES.mlb);
- let date=localDate(),controller,mode='world-series';
- const tabs=make(host,'div','gt-tabs');
- const defs=[['world-series','World Series'],['all','All MLB games']];
+ const ui=scoreboardShell(host,'MLB & World Series Match Center','BASEBALL','scores',SOURCES.mlb);
+ let date=localDate(),controller,mode='all';
+ const tabs=make(host,'div','gt-tabs'),defs=[['all','All MLB games'],['world-series','World Series']];
  const buttons=defs.map(([id,label])=>button(tabs,label,()=>{mode=id;select();void refresh()}));
- function select(){buttons.forEach((b,i)=>{const selected=defs[i][0]===mode;b.classList.toggle('selected',selected);b.setAttribute('aria-pressed',String(selected))})}
+ function select(){buttons.forEach((b,i)=>{const yes=defs[i][0]===mode;b.classList.toggle('selected',yes);b.setAttribute('aria-pressed',String(yes))})}
  async function refresh(){
-  controller?.abort();controller=new AbortController();
-  ui.day.textContent=dateLabel(date);ui.status.textContent='Checking MLB schedule for '+date+'…';
+  controller?.abort();const own=controller=new AbortController();ui.day.textContent=dateLabel(date);ui.status.textContent='Checking MLB schedule for '+date+'…';
   try{
-   const data=await readJson('https://statsapi.mlb.com/api/v1/schedule?sportId=1&date='+date+'&hydrate=linescore',controller);
-   const games=(data.dates||[]).flatMap(d=>d.games||[]);
-   const shown=mode==='world-series'?games.filter(g=>/world series/i.test(String(g.seriesDescription||''))):games;
-   ui.list.replaceChildren();
-   if(!shown.length)empty(ui.list,mode==='world-series'?'No World Series game appears on this date. Switch days or choose All MLB games.':'No MLB games appear on this date.');
-   for(const g of shown.slice(0,30)){
-    const state=safeStatus(g.status?.detailedState||g.status?.abstractGameState);
-    const inning=g.linescore?.currentInningOrdinal?' · '+String(g.linescore.currentInningOrdinal):'';
-    const desc=g.seriesDescription?String(g.seriesDescription).slice(0,45)+' · ':'';
-    const source=Number.isInteger(g.gamePk)&&g.gamePk>0?'https://www.mlb.com/gameday/'+g.gamePk:SOURCES.mlb;
-    gameRow(ui.list,[{name:g.teams?.away?.team?.name,score:g.teams?.away?.score},{name:g.teams?.home?.team?.name,score:g.teams?.home?.score}],desc+state+inning,source);
-   }
-   ui.status.textContent=shown.length+' of '+games.length+' MLB games shown · source checked '+fetchedAt()+' · MLB schedule';
-  }catch(error){if(error.name==='AbortError')return;empty(ui.list,'The MLB schedule is unavailable right now. Open the official scores link.');ui.status.textContent='MLB refresh failed · '+safeStatus(error.message)}
+   const api=await sports(),data=await api.fetchScoreboard('mlb',date,{signal:AbortSignal.any([own.signal,AbortSignal.timeout(14000)])});
+   if(own!==controller)return;
+   const shown=mode==='world-series'?data.games.filter(g=>/world series/i.test(g.series)):data.games;
+   ui.setGames(shown,api.renderSportsGame);
+   if(!shown.length)empty(ui.list,'No MLB games in this view. Switch days or choose All MLB games.');
+   ui.status.textContent=shown.length+' of '+data.games.length+' MLB games shown · source checked '+new Date(data.checked).toLocaleTimeString()+' · MLB schedule';
+  }catch(error){if(own!==controller)return;ui.setGames([],null);empty(ui.list,'MLB schedule unavailable. Use the official scores link.');ui.status.textContent='MLB refresh failed · '+safeStatus(error.message)}
  }
- const setDate=day=>{date=day;void refresh()};
- dayControls(ui,refresh,setDate,()=>date);select();void refresh();
+ dayControls(ui,refresh,day=>{date=day;void refresh()},()=>date);select();watchCard(host,refresh);
 }
 const mediaTopics=[
  {id:'ethan',title:'Ethan Klein',volume:'200K+',question:'Why is Ethan Klein trending?',options:['Latest reporting','Videos and interviews','Search timeline'],query:'Ethan Klein'},
@@ -139,9 +131,9 @@ const mediaTopics=[
 function cultureCard(host){
  heading(host,'Google Trending Now Explorer','SEARCH & MEDIA','automatic');
  mountLatestTrends(host);
- make(host,'h4','gt-topic','October 23, 2026 archived media spotlights');
- const nav=make(host,'div','gt-tabs');
- const details=make(host,'div','gt-media-detail');
+ const archive=make(host,'details','gt-archive');make(archive,'summary','','October 23, 2026 archived media spotlights');
+ const nav=make(archive,'div','gt-tabs');
+ const details=make(archive,'div','gt-media-detail');
  let selected=mediaTopics[0].id;
  const buttons=mediaTopics.map(t=>button(nav,t.title,()=>{selected=t.id;render()}));
  function render(){
@@ -171,7 +163,25 @@ function mountLatestTrends(host){
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const list=make(panel,'div','gt-games');
  controls.append(link('Original Google Trends feed ↗',SOURCES.trends));
- let controller;
+ let controller,topics=[],selected=0;
+ const nav=make(panel,'div','gt-topic-nav');
+ let paused=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const prev=button(nav,'‹ Previous',()=>show(-1)),pause=button(nav,paused?'Resume':'Pause',()=>{paused=!paused;pause.textContent=paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(paused))}),next=button(nav,'Next trend ›',()=>show(1));
+ pause.setAttribute('aria-pressed',String(paused));
+ function safePublic(value){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&u.hostname.includes('.')&&!/^[\d.]+$/.test(u.hostname)&&!u.hostname.endsWith('.local')?u.href:null}catch{return null}}
+ function show(direction=0){
+  if(!topics.length)return;selected=(selected+direction+topics.length)%topics.length;list.replaceChildren();
+  const item=topics[selected],card=make(list,'article','gt-game gt-trend-feature');
+  if(safePublic(item.image_url)){const img=make(card,'img','gt-trend-photo');img.src=item.image_url;img.alt=item.query+' — Google Trends source preview';img.referrerPolicy='no-referrer';img.decoding='async';img.addEventListener('error',()=>img.remove(),{once:true})}
+  make(card,'p','gt-eyebrow','∞ INFINITY · TREND '+(selected+1)+' OF '+topics.length);
+  make(card,'h4','gt-topic',item.query.slice(0,160));
+  make(card,'p','gt-demand',item.approx_searches.slice(0,30)+' approximate searches');
+  make(card,'p','gt-fine','Observed '+new Date(item.published_at).toLocaleString()+(item.image_credit?' · Image: '+String(item.image_credit).slice(0,90):''));
+  const stories=Array.isArray(item.news)?item.news.slice(0,3):[];
+  for(const story of stories){if(!safePublic(story.url)||typeof story.title!=='string')continue;const row=make(card,'div','gt-trend-story');row.append(link(story.title.slice(0,180),story.url));if(story.publisher)make(row,'small','gt-publisher',String(story.publisher).slice(0,90));if(story.description)make(row,'p','gt-fine',String(story.description).slice(0,220))}
+  const row=make(card,'div','gt-actions');row.append(link('Publisher coverage ↗',SOURCES.news+encodeURIComponent(item.query)),link('Explore search ↗','https://www.google.com/search?q='+encodeURIComponent(item.query)));
+  prev.disabled=next.disabled=topics.length<2;
+ }
  async function refresh(){
   controller?.abort();controller=new AbortController();
   status.textContent='Checking latest published trend observations…';
@@ -199,14 +209,8 @@ function mountLatestTrends(host){
    if(!Number.isFinite(checked)||checked>Date.now()+300000||!valid.length)throw Error('No verified trends in response');
    const newest=Math.max(...valid.map(t=>Date.parse(t.published_at)));
    const stale=Date.now()-checked>2*60*60*1000||Date.now()-newest>36*60*60*1000;
-   list.replaceChildren();
-   for(const item of valid){
-    const card=make(list,'article','gt-game');
-    make(card,'h4','gt-topic',item.query.slice(0,160));
-    make(card,'p','gt-fine','Google estimate: '+item.approx_searches.slice(0,30)+' searches · observed '+new Date(item.published_at).toLocaleString());
-    const row=make(card,'div','gt-actions');
-    row.append(link('Publisher coverage ↗',SOURCES.news+encodeURIComponent(item.query)),link('Explore search ↗','https://www.google.com/search?q='+encodeURIComponent(item.query)));
-   }
+   const current=topics[selected]?.query;topics=valid;selected=Math.max(0,topics.findIndex(t=>t.query===current));
+   if(!panel.contains(document.activeElement))show();
    status.textContent=(stale?'STALE SOURCE — last verified topics shown, not current trends':'Source verified')+' · last checked '+new Date(checked).toLocaleString()+' · '+valid.length+' topics · Google Trends approximate buckets, not QuantaPhi visits';
   }catch(error){
    if(error.name==='AbortError')return;
@@ -215,9 +219,11 @@ function mountLatestTrends(host){
   }
  }
  button(controls,'↻ Refresh trends',()=>void refresh());
- const timer=setInterval(()=>{if(!document.hidden)void refresh()},5*60*1000);
- document.addEventListener('visibilitychange',()=>{if(!document.hidden)void refresh()});
- void refresh();
+ panel.append(list,nav,status,controls);
+ const visible=()=>!document.hidden&&host.getClientRects().length>0;
+ let hovered=false;panel.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')hovered=true});panel.addEventListener('pointerleave',()=>{hovered=false});
+ const timer=setInterval(()=>{if(visible()&&!paused&&!hovered&&!panel.contains(document.activeElement))show(1)},20000);
+ watchCard(host,refresh);
  return timer;
 }
 

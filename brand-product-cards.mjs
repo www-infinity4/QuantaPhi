@@ -1,3 +1,4 @@
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate1';
 import {mountCardActions} from './quanta-card-actions.mjs';
 
 /* Independently curated product spotlights: original merchandise, publisher-hosted
@@ -81,7 +82,7 @@ export function createBrandProductCard(card){
  const info=create('div','qbp-info');
  const title=create('h2','qbp-title',card.title);
  const description=create('p','qbp-desc',card.description);
- const price=create('p','qbp-price',card.price?card.price+' · observed '+card.checked:'Current price at original store');
+ const price=create('p','qbp-price',Date.now()-Date.parse(card.checked+'T00:00:00Z')<86400000&&card.price?card.price+' · observed '+card.checked:'Current price at original store');
  const detail=create('p','qbp-disclosure',
   'Independent product discovery. Price/size and availability are controlled by the seller; confirm before purchase. Not a paid brand partnership.');
  const links=create('div','qbp-links');
@@ -98,6 +99,7 @@ export function createBrandProductCard(card){
  associate.removeAttribute('target');
  info.append(title,description,price,links,associate,detail,activity);
  article.append(kicker,imageLink,info);
+ mountRotatingSpotlights(article,{id:card.id,name:card.brand,category:card.category,official:card.shop,query:'denim jeans new arrivals'});
  return article;
 }
 function mount(){

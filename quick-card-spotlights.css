@@ -1,0 +1,19 @@
+.qcs-panel[hidden]{display:none!important}
+.qcs-panel{color:#15334f;background:white;border:1px solid #d6e5ef;border-radius:19px;overflow:hidden;margin:10px 0 15px;box-shadow:0 8px 26px #15334f12;font-family:system-ui,sans-serif;min-width:0}
+.qcs-visual{background:#f2f6f9;aspect-ratio:16/10;overflow:hidden}
+.qcs-photo{display:block;width:100%;height:100%;object-fit:contain}
+.qcs-meta{padding:12px 15px 0;margin:0;color:#1766a3;font-size:10px;font-weight:800;line-height:1.5;letter-spacing:.04em;overflow-wrap:anywhere}
+.qcs-title{margin:9px 15px!important;font-size:clamp(19px,4.8vw,27px)!important;line-height:1.2!important;color:#15334f!important;overflow-wrap:anywhere}
+.qcs-desc{margin:8px 15px;font-size:14px;line-height:1.5;color:#496077}.qcs-desc:empty{display:none}
+.qcs-price{margin:12px 15px;font-size:17px;font-weight:850;line-height:1.4;color:#174d78}
+.qcs-open{display:block;margin:10px 15px;padding:13px 15px;text-align:center;background:#0767b2;border-radius:12px;color:white!important;font-weight:800;text-decoration:none;overflow-wrap:anywhere}
+.qcs-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:7px;padding:10px 15px;background:#f5f9fc;border-top:1px solid #dfebf4}
+.qcs-count{font-size:11px;color:#4c6479;flex:1 1 80px}.qcs-nav button{border:1px solid #c9dbe9;border-radius:10px;background:white;color:#15527d;font:750 12px system-ui;min-height:44px;padding:10px;cursor:pointer}
+.qcs-nav button:disabled{opacity:.5;cursor:default}.qcs-panel a:focus-visible,.qcs-panel button:focus-visible{outline:3px solid #e7ad37;outline-offset:2px}
+.qcs-has-items>.iac-media,.qcs-has-items>.qbp-image-link,.qcs-has-items>.vbs-art,
+.qcs-has-items>.qbp-info>.qbp-title,.qcs-has-items>.qbp-info>.qbp-desc,.qcs-has-items>.qbp-info>.qbp-price{display:none}
+.qcs-has-items>.qbp-info>.qbp-links{display:none}
+@media(max-width:360px){.qcs-meta,.qcs-title,.qcs-desc,.qcs-price{margin-left:11px!important;margin-right:11px!important}.qcs-nav{padding:9px}}
+
+[data-spotlight-manual="true"]>.qcs-panel{display:none!important}
+.qcs-has-items>.iac-title .iac-intro{display:none}

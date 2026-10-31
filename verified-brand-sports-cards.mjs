@@ -1,3 +1,5 @@
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate1';
+import {mountCurrentSports} from './sports-card-data.mjs?v=20261030-rich1';
 import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from './verified-brand-sports-catalog.mjs';
 import {mountCardActions} from './quanta-card-actions.mjs';
 
@@ -139,11 +141,13 @@ export function createVerifiedCard(card){
  },{showSearch:false});
  info.append(shared);
  node.append(info);
+ if(['food','retail','coupon','vehicle','wearable','travel'].includes(card.kind))mountRotatingSpotlights(node,card);
+ if(card.id==='fox-nfl-watch'||card.id==='world-series-future-games')mountCurrentSports(node,card);
  return node;
 }
 const sportsQueries=Object.freeze({
  'packers-lions-2026':['packers.com','Packers Lions October 25 2026 play-by-play highlights'],
- 'fox-nfl-watch':['foxsports.com','Packers Lions NFL October 25 2026 highlights'],
+ 'fox-nfl-watch':['foxsports.com','NFL latest scores highlights'],
  'lions-interception-watch':['detroitlions.com','Packers Lions 2026 interceptions takeaways highlight'],
  'packers-next-schedule':['packers.com','Packers next game 2026 schedule'],
  'lions-next-schedule':['detroitlions.com','Lions next game 2026 schedule'],
@@ -189,6 +193,11 @@ function appendSportsCoverage(card,info,node){
    results.replaceChildren();
    for(const item of list){
     const row=el('article','vbs-news-item');
+    const imageUrl=item.img_src||item.thumbnail_src||item.thumbnail;
+    if(imageUrl&&isSafeCardUrl(imageUrl)){
+     const image=el('img','vbs-news-photo');image.src=imageUrl;image.alt=String(item.title).slice(0,160);
+     image.referrerPolicy='no-referrer';image.loading='lazy';image.addEventListener('error',()=>image.remove(),{once:true});row.append(image);
+    }
     row.append(link(String(item.title).slice(0,160),item.url,'vbs-news-link'));
     if(item.publishedDate){
      const d=new Date(item.publishedDate);
