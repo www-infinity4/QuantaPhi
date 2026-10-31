@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Unit-test publisher RSS, images, duplicates, freshness
         run: python3 -m unittest discover -s test -p 'test_world_series_sync.py' -v
       - name: Fetch official publisher feeds; fail without verified articles
