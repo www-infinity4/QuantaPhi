@@ -4,7 +4,7 @@ on:
     paths: ['quick-card-search*','source-quick-cards.mjs','source-quick-card.html','tinyfish-card-catalog.mjs','index.html','test/quick-card-search*','plugin-quick-card*','test/plugin-quick-card*','.github/workflows/quick-card-search.yml']
   push:
     branches: [main]
-    paths: ['quick-card-search*','source-quick-cards.mjs','source-quick-card.html','tinyfish-card-catalog.mjs','index.html','test/quick-card-search*','.github/workflows/quick-card-search.yml']
+    paths: ['quick-card-search*','source-quick-cards.mjs','source-quick-card.html','tinyfish-card-catalog.mjs','index.html','test/quick-card-search*','plugin-quick-card*','test/plugin-quick-card*','.github/workflows/quick-card-search.yml']
 permissions:
   contents: read
 jobs:
