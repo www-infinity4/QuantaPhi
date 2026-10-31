@@ -23,5 +23,6 @@ jobs:
         run: |
           node --check tools/open-browser-bridge/policy.mjs
           node --check tools/open-browser-bridge/dns-policy.mjs
+          node --check tools/open-browser-bridge/request-policy.mjs
           node --check tools/open-browser-bridge/browser-bridge.mjs
           node --test tools/open-browser-bridge/*.test.mjs
