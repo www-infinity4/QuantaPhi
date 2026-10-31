@@ -194,3 +194,27 @@ test('new ledger retains cumulative totals when seven-day window predates first 
  assert.equal(nodes.qtrafficViews.textContent,'100');
  assert.match(nodes.qtrafficNote.textContent,/3\/7 days recorded/);
 });
+
+test('browser rejects impossible or noncanonical verification timestamps',async()=>{
+ const invalid=[
+  '2026-02-30T16:28:24.621Z',
+  '2026-10-26T16:28:24.621+00:00',
+  '2026-10-26T16:28:24.621Zextra'
+ ];
+ for(const stamp of invalid){
+  const payload=trafficPayload(99999999,99999999,stamp);
+  const nodes=await runClientOnce(new Map(),[payload,new Error('fallback unavailable')]);
+  assert.equal(nodes.qtrafficRequests.textContent,'—',stamp);
+  assert.match(nodes.qtrafficNote.textContent,/ledger currently unavailable/);
+ }
+ const seconds=trafficPayload(1000,500,'2026-10-26T16:28:24Z');
+ const nodes=await runClientOnce(new Map(),[seconds]);
+ assert.equal(nodes.qtrafficRequests.textContent,'1,000','valid UTC second precision remains supported');
+});
+test('invalid locally cached verification timestamp cannot override the source',async()=>{
+ const poisoned=trafficPayload(99999999,99999999,'2026-02-30T16:28:24.621Z');
+ const store=new Map([['quantaphi_verified_traffic_v2',JSON.stringify(poisoned)]]);
+ const nodes=await runClientOnce(store,[trafficPayload(1000,500,'2026-10-26T16:28:24.621Z')]);
+ assert.equal(nodes.qtrafficRequests.textContent,'1,000');
+ assert.equal(nodes.qtrafficViews.textContent,'500');
+});
