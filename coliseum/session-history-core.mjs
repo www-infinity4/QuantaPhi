@@ -37,8 +37,11 @@ export function addItem(thread,kind,text,source=''){
  if(thread.fullAt||current.completedAt)throw Error('Start an active session first.');
  if(!KIND.includes(kind))throw Error('Unknown work type.');
  if(current.items.length>=MAX_ITEMS)throw Error('Local session item limit reached. Close or carry forward this thread.');
- const description=clean(text,3000), origin=clean(source,250);
- if(description.length<3)throw Error('Describe the work or extract at least three characters.');
+ // Never trim or silently truncate an extraction. Yellow-to-blue transfers
+ // must preserve the source exactly, including leading/trailing whitespace.
+ const description=String(text??''), origin=clean(source,250);
+ if(description.length>3000)throw Error('Work text exceeds the 3,000-character local limit. Split it into linked extracts.');
+ if(description.trim().length<3)throw Error('Describe the work or extract at least three characters.');
  if(kind==='extraction'&&!origin)throw Error('Exact extractions need a source reference.');
  const item={id:unique(),kind,text:description,source:origin,createdAt:stamp(),doneAt:null,receipt:''};
  current.items.push(item);
