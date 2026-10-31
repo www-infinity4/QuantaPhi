@@ -251,7 +251,7 @@ test('History refresh discards stale cloud folder list after the verified owner 
   chatsMessage:{textContent:''},chatsList:{replaceChildren:()=>events.push('clear')},
   threadIndex:[{id:'chat_current',title:'Current local chat',updated:10}],
   conversationApi:async()=>{
-   ctx.ownerHeaders={Authorization:'Bearer second-owner'};
+   ctx.ownerHeaders.Authorization='Bearer second-owner';
    return {sessions:[{id:'chat_foreign_1234',title:'Another wallet conversation',updated:20}]};
   },
   save:()=>events.push('save'),renderConversationFolders:()=>events.push('render'),THREAD_INDEX:'threads'
@@ -267,7 +267,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  const begin=ui.indexOf('async function openConversation(id){');
  const end=ui.indexOf('function startConversation(',begin);
  assert.ok(begin>0&&end>begin,'actual History switch handler exists');
- async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false,cloudEmpty=false,cloudMessages=false,cloudSessionId='chat_target',ownerSwitchDuringCloud=false}={}){
+ async function run({draft='',photo=false,approve=false,saveOk=true,lateDraft=null,latePhoto=false,historyOff=false,nativeBusy=false,cloudEmpty=false,cloudMessages=false,cloudSessionId='chat_target',ownerSwitchDuringCloud=false,ownerSwitchInPlace=false}={}){
   let confirmations=0,saves=0,clears=0;
   const original={id:'old_message',role:'user',text:'Important current chat',at:100};
   const ctx={
@@ -279,10 +279,11 @@ test('History switching never discards unsent photos, typed work or an unsaved c
    pendingImages:photo?[{id:'photo'}]:[],photoInput:{value:'selected'},photoPreview:{hidden:false},
    saveThread:()=>{saves++;return saveOk},
    readThread:()=>[{id:'saved_123',role:'assistant',text:'Saved earlier turn',at:10}],
-   ownerReady:lateDraft!==null||latePhoto||cloudEmpty||cloudMessages||ownerSwitchDuringCloud,
+   ownerReady:lateDraft!==null||latePhoto||cloudEmpty||cloudMessages||ownerSwitchDuringCloud||ownerSwitchInPlace,
    ownerHeaders:{Authorization:'Bearer old-verified-owner'},
    conversationApi:async()=>{
     if(ownerSwitchDuringCloud)ctx.ownerHeaders={Authorization:'Bearer different-verified-owner'};
+    if(ownerSwitchInPlace)ctx.ownerHeaders.Authorization='Bearer rotated-to-different-owner';
     if(lateDraft!==null)ctx.input.value=lateDraft;
     if(latePhoto)ctx.pendingImages.push({id:'new-photo'});
     return {session:{id:cloudSessionId,title:ownerSwitchDuringCloud?'Stale other-wallet title':undefined},messages:cloudMessages?[{id:'cloud_123',role:'assistant',text:'Verified cloud turn',at:20}]:[]};
@@ -335,6 +336,10 @@ test('History switching never discards unsent photos, typed work or an unsaved c
  assert.equal(switchedWallet.state.messages[0].text,'Important current chat');
  assert.equal(switchedWallet.state.threadIndex.find(x=>x.id==='chat_target')?.title,'Earlier chat','old wallet response must not rename local History');
  assert.match(switchedWallet.notice,/owner connection changed/i);
+ const mutatedOwner=await run({ownerSwitchInPlace:true,cloudMessages:true});
+ assert.equal(mutatedOwner.result,false,'in-place authorization changes must fence old History requests');
+ assert.equal(mutatedOwner.clears,0);
+ assert.equal(mutatedOwner.state.threadIndex.find(x=>x.id==='chat_target')?.title,'Earlier chat');
  const wrongCloudSession=await run({cloudMessages:true,cloudSessionId:'another_wallet_thread'});
  assert.equal(wrongCloudSession.result,true,'the verified device copy remains open when cloud returns a different session');
  assert.equal(wrongCloudSession.state.messages[0]?.text,'Saved earlier turn','a mismatched cloud session must never replace device History');
