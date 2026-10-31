@@ -33,6 +33,11 @@ test('a verified live game opens first, stays reachable, and unpins on final',as
  await expect(page.locator('#oracleCardLive')).toBeVisible();
  await expect(page.locator('#oracleCardChooser optgroup').first()).toHaveAttribute('label','Live game · pinned first');
  await expect(page.locator('#liveFoxGameCard')).toContainText('FOX game video is not available inside this card.');
+ const destinations=page.locator('#liveFoxGameCard .ltv-access > .ltv-link');
+ await expect(destinations).toHaveCount(4);
+ await expect(destinations.first()).toHaveCSS('background-color','rgb(7, 91, 152)');
+ await expect(destinations.last()).toHaveCSS('background-color','rgb(25, 47, 76)');
+ await expect(page.locator('#liveFoxGameCard .ltv-access')).toHaveCSS('grid-template-columns',/px px/);
  await expect(page.locator('#phiChannelCards .channelphi-kyou iframe')).toHaveAttribute('src',/^https:\/\/www\.kyoutv\.com\/livestream\/\?utm_source=quantaphi/);
  state.value='Final';await page.clock.setFixedTime(new Date(Date.parse(now)+300001));
  await page.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));
