@@ -1,0 +1,21 @@
+name: Bubbles Bits receipt regression
+on:
+  pull_request:
+    paths:
+      - 'workers/infinity-brain-clock/bubbles-bits.mjs'
+      - 'test/bubbles-bits.test.mjs'
+      - '.github/workflows/bubbles-bits.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/infinity-brain-clock/bubbles-bits.mjs'
+      - 'test/bubbles-bits.test.mjs'
+jobs:
+  receipt-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test test/bubbles-bits.test.mjs
