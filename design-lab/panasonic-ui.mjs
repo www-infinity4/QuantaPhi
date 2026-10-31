@@ -1,0 +1,25 @@
+import {searchPanasonic} from './panasonic-card.mjs';
+import {mountCardActions} from '/quanta-card-actions.mjs';
+const $=id=>document.getElementById(id);
+const field=$('panasonicQuery'),go=$('panasonicGo'),stop=$('panasonicStop'),status=$('panasonicStatus'),results=$('panasonicResults');
+let controller=null;
+async function run(){
+ if(controller)return;
+ controller=new AbortController();const signal=controller.signal;
+ go.disabled=true;stop.disabled=false;field.disabled=true;results.replaceChildren();status.textContent='Searching the public index…';
+ try{
+  const receipt=await searchPanasonic(field.value,{signal});
+  if(signal.aborted){status.textContent='Stopped. No purchase or account action was taken.';return;}
+  status.textContent=receipt.found+' verified official-domain page'+(receipt.found===1?'':'s')+' found. Public index only.';
+  for(const item of receipt.results){
+   const link=document.createElement('a');link.className='result';link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';
+   const title=document.createElement('strong');title.textContent=item.title;
+   const detail=document.createElement('span');detail.textContent=item.description||item.url;
+   link.append(title,detail);results.append(link);
+  }
+  if(!receipt.found){const p=document.createElement('p');p.textContent='No official-domain results found. Try a more specific topic.';results.append(p);}
+ }catch(error){status.textContent=signal.aborted?'Stopped. No account action was taken.':error.message||'Search unavailable.';}
+ finally{controller=null;go.disabled=false;stop.disabled=true;field.disabled=false;}
+}
+go.addEventListener('click',()=>void run());stop.addEventListener('click',()=>controller?.abort());field.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();void run();}});
+mountCardActions($('panasonicCardActions'),{id:'panasonic-power-chain',name:'Panasonic · Power Chain',category:'Shopping',url:'https://quantaphi.org/design-lab/panasonic.html'},{showSearch:false});
