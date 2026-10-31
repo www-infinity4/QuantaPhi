@@ -45,3 +45,18 @@ test('Instagram publish requires hosted authorized HTTPS image, not arbitrary re
  const f=fixture();await assert.rejects(executeMeta(f.service,{userId:'alice',id:'c',operation:'instagram.publish',pageId:'987',message:'hi',imageUrl:'https://evil.test/image.jpg',confirmed:true},f.request),/meta_content_invalid/);
  assert.equal(f.visited.length,1);
 });
+
+test('Instagram requires ready container before confirmed publication',async()=>{
+ const f=fixture([{data:[page]},{id:'123456'},{id:'123456',status_code:'IN_PROGRESS'},{id:'123456',status_code:'FINISHED'},{id:'654321'}]);
+ const result=await executeMeta(f.service,{userId:'alice',id:'c',operation:'instagram.publish',pageId:'987',message:'hello',imageUrl:'https://quantaphi.org/media/test.jpg',confirmed:true},f.request,async()=>{});
+ assert.equal(result.postId,'654321');
+ assert.equal(f.visited.length,5);
+ assert.match(f.visited[2].url,/status_code/);
+ assert.match(f.visited[4].url,/media_publish/);
+});
+test('Instagram does not publish a failed or unready media container',async()=>{
+ const f=fixture([{data:[page]},{id:'123456'},{status_code:'ERROR'}]);
+ await assert.rejects(executeMeta(f.service,{userId:'alice',id:'c',operation:'instagram.publish',pageId:'987',message:'hello',imageUrl:'https://quantaphi.org/media/test.jpg',confirmed:true},f.request,async()=>{}),/meta_media_not_ready/);
+ assert.equal(f.visited.length,3);
+ assert.ok(f.visited.every(p=>!p.url.includes('/media_publish')));
+});
