@@ -56,3 +56,11 @@
 #phiStoryWriter .sw-personal-idea{border-radius:999px;background:#eff4fb;color:#123f79;
  border:1px solid #a9c6e7;min-height:44px;padding:8px 14px;font:750 13px/1.35 system-ui,sans-serif}
 #phiStoryWriter .sw-personal-idea:hover{background:#e5eefe}
+
+
+/* Keep the next-chapter direction next to its actual action on mobile. */
+#phiStoryWriter #sw-next-chapter-note{margin-top:14px;background:#fff;min-height:86px}
+#phiStoryWriter #sw-continue{grid-column:span 2;background:#087ac2;color:#fff;
+ border-color:#08669f;min-height:52px;font-size:14px}
+#phiStoryWriter #sw-continue:disabled{opacity:.65;cursor:wait}
+@media(max-width:350px){#phiStoryWriter #sw-continue{grid-column:span 1}}

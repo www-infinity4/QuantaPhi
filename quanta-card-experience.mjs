@@ -348,10 +348,21 @@ export function mountCardTools(root,card){
  }
  if(id==='google'||id==='bing'){
   // Search remains the primary interaction; global controls come afterward.
-  searchTool(root,card);mountCardActions(root,card);return;
+  searchTool(root,card);mountCardActions(root,card,{showSearch:false});return;
  }
  if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
- if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);
+ if(id==='youtube'||id==='tiktok'){
+  // Playback is the first action; source discovery stays optional and secondary.
+  mediaPlayer(root,id);
+  const discover=node('details','qcx-discover-details');
+  discover.append(node('summary','','Find more '+(id==='tiktok'?'TikTok videos':'YouTube videos')));
+  if(searchTool(discover,card)){
+   if(id==='youtube')trendingTool(discover,card);
+   root.append(discover);
+  }
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
  if(id==='spotify')mediaPlayer(root,'spotify');
  if(id==='starmaker'){
   // Real on-card curated song search, explicitly consented Music Quant
@@ -367,8 +378,9 @@ export function mountCardTools(root,card){
  if(id==='wikipedia')wikipediaTool(root,card);
  if(id==='gold'||id==='silver')calculator(root,card);
  checklist(root,card);
- searchTool(root,card);
+ // Wikipedia already has a native API search; never add a second website reader.
+ const alreadyHasSearch=searchTool(root,card)||id==='wikipedia';
  trendingTool(root,card);
- // Cards with their own working source search do not need a duplicate generic search bar.
- mountCardActions(root,card,{showSearch:!liveSourceProfile(id)});
+ // Preserve generic discovery only when there is no existing on-card provider search.
+ mountCardActions(root,card,{showSearch:!alreadyHasSearch&&!liveSourceProfile(id)});
 }

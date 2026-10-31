@@ -47,7 +47,7 @@ test('when REST repository listing fails, only README is verified; root is expli
  assert.match(x.output,/repository inspection remains incomplete/i);
  assert.match(x.output,/StarQuest-authenticated GitHub reader/);
  assert.doesNotMatch(x.output,/# QuantaPhi|README excerpt/);
- assert.deepEqual(seen.map(x=>x.url),[api,api+'/contents',raw]);
+ assert.deepEqual(seen.map(x=>x.url),[api,api+'/contents','https://github.com/'+repo,raw]);
 });
 test('a private or absent raw source is not upgraded to a success',async()=>{
  const {fetcher}=mockPublic({rawStatus:404});

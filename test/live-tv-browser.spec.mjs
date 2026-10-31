@@ -20,11 +20,26 @@ async function prepare(page,state){
 test('a verified live game opens first, stays reachable, and unpins on final',async({page})=>{
  const state={value:'Live'};await prepare(page,state);await page.goto(base+'/',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#oracleCardStage #phiChannelCards')).toBeVisible();
+ const actions=page.locator('#oracleCardStage .oracle-card-actions');
+ await expect(actions.locator('[data-action="follow"]')).toBeVisible();
+ for(const action of ['star','collect','share','build'])await expect(actions.locator('[data-action="'+action+'"]')).toHaveCount(1);
+ // The direct KYOU viewer must not open a second nested player as a preview.
+ await expect(actions.locator('[data-action="preview"]')).toHaveCount(0);
+ await expect(actions.locator('[data-action="star"]')).toHaveCSS('background-color','rgb(255, 243, 212)');
+ await expect(actions.locator('[data-action="collect"]')).toHaveCSS('background-color','rgb(230, 247, 238)');
+ await expect(actions.locator('[data-action="share"]')).toHaveCSS('background-color','rgb(29, 64, 95)');
+ const overflow=await actions.evaluate(n=>n.getBoundingClientRect().right>innerWidth);
+ expect(overflow).toBe(false);
  await expect(page.locator('#liveFoxGameCard h2')).toHaveText('KYOU · FOX 15.1');
  await expect(page.locator('#liveFoxGameCard .ltv-state')).toHaveText('LIVE GAME · Top 3rd');
  await expect(page.locator('#oracleCardLive')).toBeVisible();
  await expect(page.locator('#oracleCardChooser optgroup').first()).toHaveAttribute('label','Live game · pinned first');
  await expect(page.locator('#liveFoxGameCard')).toContainText('FOX game video is not available inside this card.');
+ const destinations=page.locator('#liveFoxGameCard .ltv-access > .ltv-link');
+ await expect(destinations).toHaveCount(4);
+ await expect(destinations.first()).toHaveCSS('background-color','rgb(7, 91, 152)');
+ await expect(destinations.last()).toHaveCSS('background-color','rgb(25, 47, 76)');
+ await expect(page.locator('#liveFoxGameCard .ltv-access')).toHaveCSS('grid-template-columns',/repeat\(2,\s*minmax/);
  await expect(page.locator('#phiChannelCards .channelphi-kyou iframe')).toHaveAttribute('src',/^https:\/\/www\.kyoutv\.com\/livestream\/\?utm_source=quantaphi/);
  state.value='Final';await page.clock.setFixedTime(new Date(Date.parse(now)+300001));
  await page.evaluate(()=>document.dispatchEvent(new Event('visibilitychange')));
@@ -57,6 +72,15 @@ test('KYOU opens automatically above StarQuest in the shared live viewer and han
  await expect(kyou.getByRole('heading',{name:'KYOU · FOX 15.1',exact:true})).toBeVisible();
  await expect(kyou.locator('iframe')).toHaveAttribute('src',/^https:\/\/www\.kyoutv\.com\/livestream\//);
  await expect(kyou.locator('.channelphi-screen')).toBeHidden();
+ const controls=kyou.locator('.channelphi-kyou-controls');
+ await expect(controls.locator('button')).toHaveCount(2);
+ await expect(controls.locator('a')).toHaveCount(1);
+ await expect(controls.getByRole('button',{name:/Sound/})).toHaveCount(0);
+ await expect(controls.getByRole('button',{name:/Refresh station/})).toBeVisible();
+ await expect(controls.getByRole('link',{name:/KYOU website/})).toHaveAttribute('href',/^https:\/\/www\.kyoutv\.com\/livestream\//);
+ await expect(controls.locator('.channelphi-next')).toHaveCSS('background-color','rgb(7, 91, 152)');
+ await expect(controls.locator('.channelphi-stop')).toHaveCSS('background-color','rgb(123, 38, 56)');
+ await expect(kyou.locator('.channelphi-hint')).toContainText('volume are controlled inside KYOU');
  expect(await kyou.evaluate(n=>n.getBoundingClientRect().top)).toBeLessThan(await star.evaluate(n=>n.getBoundingClientRect().top));
  await star.getByRole('button',{name:'Watch StarQuest video in this card'}).click();
  await expect(kyou.locator('iframe')).toHaveCount(0);await expect(star.locator('iframe')).toHaveCount(1);

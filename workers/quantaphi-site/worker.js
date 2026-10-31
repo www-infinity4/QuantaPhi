@@ -260,8 +260,9 @@ function qpSharePlain(value, max) {
 function qpShareImage(value) {
  try {
   const url=new URL(String(value || ''));
-  const imageCDN=url.hostname==='lsco.scene7.com' && url.pathname.startsWith('/is/image/');
-   if(url.protocol!=='https:' || url.username || url.password || url.href.length>1600 || (!/\.(?:png|jpe?g|webp|gif)$/i.test(url.pathname) && !imageCDN)) return '';
+  const imageCDN=(['lsco.scene7.com','lscoglobal.scene7.com'].includes(url.hostname) && url.pathname.startsWith('/is/image/')) ||
+   (url.hostname==='img.guess.com' && url.pathname.startsWith('/image/upload/'));
+   if(url.protocol!=='https:' || url.username || url.password || url.port || url.href.length>1600 || /\.(?:svg|html|js)$/i.test(url.pathname) || (!/\.(?:png|jpe?g|webp|gif)$/i.test(url.pathname) && !imageCDN)) return '';
   if(['localhost','127.0.0.1','0.0.0.0','::1'].includes(url.hostname) || url.hostname.endsWith('.local')) return '';
   return url.href;
  }catch{return ''}

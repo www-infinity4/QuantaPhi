@@ -2,6 +2,15 @@ name: QuantaPhi real interactive card quality
 on:
   pull_request:
     paths:
+      - 'card-spotlight-creative.mjs'
+      - 'test/rotating-card-share.test.mjs'
+      - 'test/quick-card-spotlights.browser.spec.mjs'
+      - 'quick-card-spotlights.*'
+      - 'sports-card-data.mjs'
+      - 'google-trending-cards.*'
+      - 'scripts/*spotlight*'
+      - 'test/*spotlight*'
+      - 'test/sports-card-data.test.mjs'
       - 'quanta-card-experience.*'
       - 'quanta-card-actions.mjs'
       - 'art-museum-quick-cards.mjs'
@@ -9,6 +18,7 @@ on:
       - 'verified-brand-sports-cards.mjs'
       - 'verified-brand-sports-cards.css'
       - 'test/verified-brand-sports.test.mjs'
+      - 'test/infinity-cards-freshness.test.mjs'
       - 'test/verified-brand-sports-browser.spec.mjs'
       - 'art-museum-quick-cards.css'
       - 'test/art-museum-quick-cards.test.mjs'
@@ -70,13 +80,16 @@ on:
       - 'test/source-quick-cards.test.mjs'
       - 'test/quanta-card-feed.test.mjs'
       - 'test/quanta-card-actions-fox-one.test.mjs'
+      - 'test/quick-card-single-search.test.mjs'
       - 'test/quanta-card-provider.test.mjs'
       - 'quanta-card-live-source.mjs'
       - 'test/quanta-card-live-source.test.mjs'
       - 'test/quanta-card-live-source.browser.spec.mjs'
       - 'design-lab/**'
       - 'test/design-lab-power-chain.test.mjs'
+      - 'test/design-lab-bulk-allocator.test.mjs'
       - 'test/design-lab-power-chain.browser.spec.mjs'
+      - 'test/design-lab-bulk-allocator.browser.spec.mjs'
       - 'test/power-chain-*.test.mjs'
       - 'test/power-chain-component-kit.browser.spec.mjs'
       - '.github/workflows/quanta-interactive-cards.yml'
@@ -93,11 +106,17 @@ jobs:
           node-version: '22'
       - name: Validate card module syntax
         run: |
+          node --check card-spotlight-creative.mjs
+          node --check quick-card-spotlights.mjs
+          node --check sports-card-data.mjs
+          node --check google-trending-cards.js
           node --check quanta-card-experience.mjs
           node --check quanta-card-live-source.mjs
           node --check design-lab/power-chain-core.mjs
           node --check design-lab/app.mjs
           node --check design-lab/quick-card.mjs
+          node --check design-lab/bulk-allocator.mjs
+          node --check design-lab/bulk-allocator-ui.mjs
           node --check design-lab/component-kit-core.mjs
           node --check design-lab/coin-evidence-core.mjs
           node --check design-lab/bulk-pool-core.mjs
@@ -126,7 +145,14 @@ jobs:
           node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
-        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
+        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quick-card-single-search.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/design-lab-bulk-allocator.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
+      - name: Check today's Infinity card freshness and real product media
+        run: node --test test/infinity-cards-freshness.test.mjs
+      - name: Check changing imagery, source prices, trends and sports data
+        run: |
+          node --test test/rotating-card-share.test.mjs test/quick-card-share.test.mjs test/social-share-preview.test.cjs test/quick-card-spotlights.test.mjs test/sports-card-data.test.mjs test/google-trending-cards.test.cjs
+          python3 -m unittest discover -s test -p 'test_card_spotlights_sync.py' -v
+          python3 -m unittest discover -s test -p 'test_google_trends_sync.py' -v
       - name: Check Power Chain component and allocation contracts
         run: node --test test/power-chain-*.test.mjs
       - name: Check Infinity accepted catalog and browser action contracts
@@ -149,4 +175,4 @@ jobs:
         run: |
           node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
-          npx playwright test test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/power-chain-component-kit.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/power-chain-component-kit.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs --reporter=line --workers=1

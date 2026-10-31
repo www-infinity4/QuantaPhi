@@ -52,3 +52,57 @@ test('request view groups child jobs once and keeps technical repair details out
  assert.match(texts(prose.children[1]),/exact source window needed/,'original finding remains in nested technical details');
  assert.doesNotMatch(texts(prose),/85%|Delivery verified|Run All/);
 });
+
+test('live GPT handoff reads all paginated owner pages, labels saved evidence, and redacts credentials',async()=>{
+ const {getLiveHandoff}=await import('../robot-gpt-handoff.mjs');
+ const a={ticketId:'IW-20261029-ABCD1234',repository:'www-infinity4/QuantaPhi',title:'Fix APK cards',request:'Repair the cards',
+  updatedAt:12345,jobs:[{jobId:'TASK-1',status:'blocked',phase:'blocked_recoverable',blocker:'Missing source; Bearer TOPSECRET sq_12345678901234567890',next:'Inspect repo first'}]};
+ const b={ticketId:'IW-20261028-ABCD1234',repository:'www-infinity4/Moltnook',title:'Daily evidence',request:'Check receipt',updatedAt:12344,
+  jobs:[{jobId:'TASK-2',status:'working',phase:'stale_working',blocker:'Old runner lease',next:'Reconcile runner'}]};
+ const calls=[];
+ const fetcher=async(url,init)=>{
+  calls.push({url,body:JSON.parse(init.body),authorization:init.headers.Authorization,cache:init.cache});
+  const page=calls.length===1?{ok:true,tickets:[a],hasMore:true,nextCursor:{beforeUpdatedAt:12345,beforeId:a.ticketId}}:
+   {ok:true,tickets:[b],hasMore:false,nextCursor:null};
+  return {ok:true,status:200,json:async()=>page};
+ };
+ const result=await getLiveHandoff({headers:{Authorization:'Bearer OWNER_PRIVATE'},fetcher,clock:()=> '2026-10-29T23:00:00Z'});
+ assert.equal(calls.length,2);
+ assert.equal(result.included,2);
+ assert.equal(result.complete,true);
+ assert.match(result.text,/Fix APK cards/);
+ assert.match(result.text,/Daily evidence/);
+ assert.match(result.text,/stale_working/);
+ assert.match(result.text,/Inspect repo first/);
+ assert.match(result.text,/Bearer \[redacted\]/);
+ assert.doesNotMatch(result.text,/TOPSECRET|OWNER_PRIVATE|sq_123456/);
+ assert.ok(calls.every(x=>x.authorization==='Bearer OWNER_PRIVATE'&&x.cache==='no-store'));
+ assert.equal(calls[1].body.beforeId,a.ticketId);
+});
+test('live GPT export warns when the legacy Brain route hides older pages',async()=>{
+ const {getLiveHandoff}=await import('../robot-gpt-handoff.mjs');
+ const tickets=Array.from({length:100},(_,i)=>({id:'IW-20261029-'+i.toString(16).padStart(8,'0').toUpperCase(),
+   repository:'www-infinity4/QuantaPhi',title:'Old job '+i,status:'blocked',context:{kind:'robot-directions',color_jobs:[]}}));
+ const urls=[];
+ const fetcher=async(url)=>{
+  urls.push(url);
+  return url.endsWith('/work/continuity')?{ok:false,status:404}:{ok:true,status:200,json:async()=>({ok:true,tickets})};
+ };
+ const result=await getLiveHandoff({headers:{Authorization:'Bearer owner'},fetcher});
+ assert.equal(result.included,100);
+ assert.equal(result.complete,false);
+ assert.equal(result.legacy,true);
+ assert.match(result.text,/legacy endpoint returns at most 100 tickets/);
+ assert.equal(urls.length,2);
+});
+test('live GPT export does not silently copy stale data after an authorization error',async()=>{
+ const {getLiveHandoff}=await import('../robot-gpt-handoff.mjs');
+ await assert.rejects(getLiveHandoff({headers:{Authorization:'Bearer owner'},
+  fetcher:async()=>({ok:false,status:403})}),/403/);
+ await assert.rejects(getLiveHandoff({headers:{}}),/verified Robot Brain owner session/);
+ assert.match(source,/Copy live jobs for ChatGPT/);
+ assert.match(source,/robot-work-history/);
+ assert.match(source,/getLiveHandoff/);
+ assert.match(source,/https:\/\/chatgpt\.com\//);
+ assert.match(source,/Nothing is sent to ChatGPT automatically/);
+});

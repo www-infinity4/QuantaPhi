@@ -22,16 +22,16 @@ test('three dedicated original website cards mount on homepage and full-page exp
  assert.match(page,/source: Google Trends|Google Trends/);
  assert.match(home,/\/trending-now\.html/);
  assert.match(read('sitemap.xml'),/trending-now\.html/);
- assert.match(home,/google-trending-cards\.js\?v=20261023-trendsync3/);
- assert.match(home,/google-trending-cards\.css\?v=20261023-trendsync3/);
+ assert.match(home,/google-trending-cards\.js\?v=20261030-richrotation1/);
+ assert.match(home,/google-trending-cards\.css\?v=20261030-richrotation1/);
 });
 test('only sourced sport states are displayed; status does not fabricate games',()=>{
  assert.doesNotThrow(()=>new Function(js));
- assert.match(js,/site\.api\.espn\.com\/apis\/site\/v2\/sports\/basketball\/nba\/scoreboard/);
- assert.match(js,/statsapi\.mlb\.com\/api\/v1\/schedule/);
- assert.match(js,/if\(!response\.ok\)throw/);
+ assert.match(read('sports-card-data.mjs'),/site\.api\.espn\.com\/apis\/site\/v2\/sports/);
+ assert.match(read('sports-card-data.mjs'),/statsapi\.mlb\.com\/api\/v1\/schedule/);
+ assert.match(read('sports-card-data.mjs'),/if\(!response\.ok\)throw/);
  assert.match(js,/refresh failed/);
- assert.match(js,/AbortError/);
+ assert.match(js,/AbortController/);
  assert.match(js,/source checked/);
  assert.match(js,/World Series/);
  assert.match(js,/Date\(isoDay\(day\)/);
