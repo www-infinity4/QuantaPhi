@@ -1831,8 +1831,14 @@ async function syncCloudFolder(id,items){
 }
 async function refreshConversationFolders(){
  if(!ownerReady){chatsMessage.textContent='Chats saved on this device. Connect your owner account for cloud history.';renderConversationFolders();return;}
+ const ownerAtStart=ownerHeaders;
  try{
   const data=await conversationApi('sessions-list');
+  if(!ownerReady||ownerHeaders!==ownerAtStart){
+   chatsList.replaceChildren();
+   chatsMessage.textContent='Owner connection changed during History refresh. Verify the wallet and refresh again.';
+   return;
+  }
   if(!Array.isArray(data.sessions))throw Error('cloud_folders_not_deployed');
   for(const item of data.sessions||[]){
    if(!/^[a-zA-Z0-9_-]{10,80}$/.test(item.id||''))continue;
@@ -1842,6 +1848,11 @@ async function refreshConversationFolders(){
   }
   save(THREAD_INDEX,threadIndex);chatsMessage.textContent='Your older conversations are ready to reopen.';
  }catch{chatsMessage.textContent='Cloud chat history could not be reached. Your device history is still available.'}
+ if(!ownerReady||ownerHeaders!==ownerAtStart){
+  chatsList.replaceChildren();
+  chatsMessage.textContent='Owner connection changed during History refresh. Verify the wallet and refresh again.';
+  return;
+ }
  renderConversationFolders();
 }
 async function openConversation(id){
@@ -1857,6 +1868,10 @@ async function openConversation(id){
  if(hasUnsent&&!confirm('Open another conversation? Your unsent message, photos or unsaved turns will be discarded.'))return false;
  const previousThread=activeThread,previousDraft=input.value,previousPhoto=pendingImage;
  const previousPhotos=[...pendingImages],previousMessages=[...messages];
+ // A cloud History response is valid only for the verified owner session that
+ // started the request. A wallet change, sign-out or re-pair must not apply
+ // an old account's response to the currently visible chat.
+ const ownerAtStart=ownerHeaders,ownerReadyAtStart=ownerReady;
  if(keepChat&&messages.length&&!saveThread()){
   chatsMessage.textContent='This conversation could not be saved on this device. Keep it open and free storage before switching chats.';
   return false;
@@ -1873,6 +1888,10 @@ async function openConversation(id){
    // Prefer verified nonempty cloud turns, but retain the local copy on empty.
    if(result.messages.length||!next.length)next=result.messages;
   }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
+ }
+ if(ownerReady!==ownerReadyAtStart||ownerHeaders!==ownerAtStart){
+  chatsMessage.textContent='Owner connection changed while History was loading. Your current chat was kept; verify the wallet and try again.';
+  return false;
  }
  // Cloud History may take seconds. A reply, new typing or photo added while
  // waiting invalidates the earlier switch decision; do not clear new work.
