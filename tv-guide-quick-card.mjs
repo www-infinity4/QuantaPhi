@@ -108,6 +108,13 @@ export function mountInfinityTvGuide(root,{fetcher=fetch,now=()=>new Date()}={})
   footer.append(source);body.append(footer);card.append(visual,body);return card;
  }
  let shown=[];
+ function upgradeHero(){
+  const art=root.closest('.iqc-card')?.querySelector('.qcx-art[data-brand="tv-guide"]');
+  if(!art)return;
+  art.querySelector('.qcx-tv-poster')?.remove();
+  const item=rows.filter(x=>x.artwork).sort((a,b)=>Math.abs(a.stamp-Date.now())-Math.abs(b.stamp-Date.now()))[0];
+  if(item){const pic=el('img','qcx-tv-poster');pic.src=item.artwork;pic.alt='Featured episode artwork: '+item.title;pic.loading='lazy';pic.referrerPolicy='no-referrer';pic.addEventListener('error',()=>pic.remove(),{once:true});art.prepend(pic);}
+ }
  function render(){
   shown=filterTvSchedule(rows,{network:network.value,slot:slot.value});selected=0;
   carousel.replaceChildren();
@@ -135,12 +142,12 @@ export function mountInfinityTvGuide(root,{fetcher=fetch,now=()=>new Date()}={})
  },{passive:true});
  async function load(){
   const key=day.value,seq=++request;status.textContent='Checking U.S. episode airings for '+key+'…';
-  if(cache.has(key)){rows=cache.get(key);networkOptions();render();return;}
+  if(cache.has(key)){rows=cache.get(key);networkOptions();render();upgradeHero();return;}
   try{
    const response=await fetcher(BASE+encodeURIComponent(key),{credentials:'omit',cache:'no-store',headers:{Accept:'application/json'}});
    if(!response.ok)throw Error('schedule_unavailable');
    const data=await response.json();if(seq!==request)return;
-   rows=normalizeTvSchedule(data);cache.set(key,rows);networkOptions();render();
+   rows=normalizeTvSchedule(data);cache.set(key,rows);networkOptions();render();upgradeHero();
   }catch{
    if(seq!==request)return;
    rows=[];carousel.replaceChildren();status.textContent='Current TV schedule could not be loaded. Open the original listings or choose another day.';
