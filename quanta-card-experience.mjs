@@ -346,6 +346,11 @@ export function mountCardTools(root,card){
   mountCardActions(root,card,{showSearch:false});
   return;
  }
+ if(id==='copilot'){
+  // A dedicated authenticated in-card Copilot builder is mounted by the source renderer.
+  // Do not add a fake website search or iframe.
+  mountCardActions(root,card,{showSearch:false});return;
+ }
  if(id==='google'||id==='bing'){
   // Search remains the primary interaction; global controls come afterward.
   searchTool(root,card);mountCardActions(root,card);return;
