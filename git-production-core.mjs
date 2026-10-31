@@ -39,3 +39,17 @@ export function mergedLinePreview(evidence){
  return {total,merges:unique.size,partial:Boolean(evidence?.partial),gitsMinted:null,
   note:'Read-only sample of verified merged code additions, not an Infinity wallet balance or minted Gits.'};
 }
+
+
+// Explicitly consented external AI review receives short, sanitized excerpts.
+// This is defense-in-depth: a user's review consent is still required separately.
+export function safeGitReviewSnippet(filename, patch) {
+ const file=String(filename||'');
+ if(/(^|\/)(?:\.env(?:\.|$)|\.npmrc$|\.pypirc$|id_(?:rsa|ed25519)|(?:credentials?|secrets?|service.account|private.key)(?:[._-]|$))/i.test(file)||
+    /\.(?:pem|key|p12|pfx|jks|keystore)$/i.test(file))
+  return '[Sensitive-file patch excluded from external AI review]';
+ const unsafe=/(?:-----BEGIN [A-Z ]*PRIVATE KEY-----|github_pat_|gh[pousr]_[A-Za-z0-9]{16,}|(?:Bearer|Basic)\s+[A-Za-z0-9._~+/-]{12,}|(?:api[_-]?key|access[_-]?token|client[_-]?secret|password|private[_-]?key|authorization|secret[_-]?key)\s*[:=]|(?:AKIA|ASIA)[A-Z0-9]{16}|sk-[A-Za-z0-9_-]{16,})/i;
+ return String(patch||'').split(/\r?\n/).slice(0,12)
+  .map(line=>unsafe.test(line)?'[Potential credential line removed]':line.slice(0,260))
+  .join('\n').slice(0,950);
+}
