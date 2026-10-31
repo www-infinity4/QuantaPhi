@@ -109,7 +109,7 @@ export function mountInfinityTvGuide(root,{fetcher=fetch,now=()=>new Date()}={})
  }
  let shown=[];
  function upgradeHero(){
-  const art=root.closest('.iqc-card')?.querySelector('.qcx-art[data-brand="tv-guide"]');
+  const art=root.closest('.iqc-card, #sourceQuickCardDetail')?.querySelector('.qcx-art[data-brand="tv-guide"]');
   if(!art)return;
   art.querySelector('.qcx-tv-poster')?.remove();
   const item=rows.filter(x=>x.artwork).sort((a,b)=>Math.abs(a.stamp-Date.now())-Math.abs(b.stamp-Date.now()))[0];
