@@ -195,8 +195,13 @@ function nativeChatGPT(prompt){
   const id=crypto.randomUUID();
   // The native ChatGPT bridge is optional. A stalled Android hand-off must not
   // keep the shared Bubbles chat waiting 90 seconds before Oracle can answer.
-  const timeout=setTimeout(()=>{if(nativeGPTRequest?.id===id){nativeGPTRequest=null;reject(Error('Android ChatGPT response timed out; trying Oracle'))}},12000);
-  nativeGPTRequest={id,prompt:String(prompt).slice(0,18000),resolve(value){clearTimeout(timeout);resolve(value)},
+  const expire=()=>{if(nativeGPTRequest?.id===id){nativeGPTRequest=null;reject(Error('Android ChatGPT response timed out; trying Oracle'))}};
+  // Fail fast only while unclaimed. After Android pickup the native request
+  // can take up to 90 seconds to read; allow modest transport overhead.
+  let timeout=setTimeout(expire,12000);
+  nativeGPTRequest={id,prompt:String(prompt).slice(0,18000),
+   onPickedUp(){clearTimeout(timeout);timeout=setTimeout(expire,100000);},
+   resolve(value){clearTimeout(timeout);resolve(value)},
    reject(error){clearTimeout(timeout);reject(error)},taken:false};
  });
 }
@@ -4026,7 +4031,8 @@ window.QuantaBubbles={
  },
  drainNativeGPTRequest:()=>{
   if(!nativeOverlay||!nativeGPTRequest||nativeGPTRequest.taken)return '';
-  nativeGPTRequest.taken=true;return JSON.stringify({id:nativeGPTRequest.id,prompt:nativeGPTRequest.prompt});
+  nativeGPTRequest.taken=true;nativeGPTRequest.onPickedUp();
+  return JSON.stringify({id:nativeGPTRequest.id,prompt:nativeGPTRequest.prompt});
  },
  finishNativeGPTRequest:(id,output,error)=>{
   if(!nativeOverlay||!nativeGPTRequest||nativeGPTRequest.id!==id)return false;
