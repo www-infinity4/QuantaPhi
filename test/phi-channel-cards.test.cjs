@@ -104,13 +104,15 @@ test('one active TV screen can be played and switched with genuine media element
  assert.equal(all(root).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
 });
 
-test('KYOU and shared Quick Card footer actions have readable purpose-specific colors',()=>{
+test('KYOU and shared Quick Card footer actions keep real controls with neutral styling',()=>{
  const actions=fs.readFileSync('quanta-card-actions.mjs','utf8');
  const actionCss=fs.readFileSync('quanta-card-experience.css','utf8');
  for(const action of ['follow','star','collect','preview','share','build']){
-  assert.match(actions,new RegExp("'"+action+"'\\)"),action+' is a real tagged control');
-  assert.ok(actionCss.includes('data-action="'+action+'"'),action+' has a declared color');
+  assert.match(actions,new RegExp("'"+action+"'\\\\)"),action+' is a real tagged control');
  }
+ assert.match(actionCss,/\.qca-toolbar \.qca-controls>\.qca-button\{[^}]*background:#fff!important/);
+ assert.match(actionCss,/\.qca-toolbar \.qca-controls>\.qca-button\[aria-pressed="true"\]\{[^}]*background:#eee!important/);
+ assert.doesNotMatch(actionCss,/data-action="follow"\]\{background:#e7f3ff/);
  assert.match(actions,/collect\.setAttribute\('aria-pressed','true'\)/);
  assert.match(actionCss,/@media\(max-width:380px\)/);
  assert.match(css,/\.channelphi-kyou \.channelphi-controls\{grid-template-columns:repeat\(3,/);
