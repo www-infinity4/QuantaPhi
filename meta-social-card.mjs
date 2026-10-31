@@ -78,7 +78,7 @@ export function mountMetaSocialCard(root,card){
  async function publish(){
   const message=composer.value.trim();if(!message){status.textContent='Write a post before publishing.';return;}
   const page=pages.find(p=>p.id===account.value);if(!page||!connectionId)return;
-  if(platform==='instagram'&&!/^https:\/\/quantaphi\.org\/.+\.(jpg|jpeg|png)$/i.test(photo.value.trim())){status.textContent='Instagram needs a public, approved image hosted on quantaphi.org.';return;}
+  if(platform==='instagram'&&!/^https:\/\/quantaphi\.org\/.+\.(jpg|jpeg)$/i.test(photo.value.trim())){status.textContent='Instagram needs a public, approved image hosted on quantaphi.org.';return;}
   if(!window.confirm('Publish this '+platform+' post to '+page.name+'? This action will be public on Meta.'))return;
   send.disabled=true;status.textContent='Submitting only the confirmed post…';
   try{const result=await client.call('/meta',{id:connectionId,operation:platform+'.publish',pageId:page.id,message,
