@@ -42,6 +42,11 @@ export function mountProfileCard(host,{onComplete=()=>{}}={}){
   onComplete(profile);
  });
  card.append(form);
+ const shortcuts=el('nav','qp-profile-shortcuts');shortcuts.setAttribute('aria-label','Account and privacy links');
+ for(const [url,title] of [['/bubbles-accounts.html','Manage sign-in & connections'],['/wallet-link.html','Wallet connections'],['/privacy.html','Privacy & data policy']]){
+  const link=el('a','qp-profile-link',title);link.href=url;shortcuts.append(link);
+ }
+ card.append(shortcuts);
  const navigation=el('p','qp-profile-footer','Privacy: You control these device preferences. Clearing site data removes them and will show onboarding again. Nothing here changes wallet balances.');
  card.append(navigation);host.replaceChildren(card);
 }
