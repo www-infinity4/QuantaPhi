@@ -47,8 +47,8 @@ if(arena){
  const mutate=(fn,message)=>{
   // Roll back failed local writes in memory as well as on screen. Otherwise a
   // storage failure would misleadingly change the in-memory session history.
-  const snapshot=JSON.stringify(history),previousSelected=selected;
-  const rollback=()=>{history=JSON.parse(snapshot);selected=previousSelected;render()};
+  const snapshot=JSON.stringify(history),previousSelected=selected,previousFocus=focusedSessionId;
+  const rollback=()=>{history=JSON.parse(snapshot);selected=previousSelected;focusedSessionId=previousFocus;render()};
   try{
    const output=fn();
    if(!save()){
