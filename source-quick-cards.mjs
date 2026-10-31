@@ -1,4 +1,4 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261027-karaoke1';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261031-tv-guide1';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
