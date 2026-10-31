@@ -9,7 +9,7 @@ dot: "🟡"
 progress_percent: 25
 progress_basis: "Estimated 2 of 8 milestones: read-only formatter with 6 passing source tests and targeted CI; runtime wiring, independent review, release and acceptance remain."
 sessions_spent: 3
-sessions_remaining_estimate: "3–6 bounded source/review sessions, excluding unknown release approvals"
+sessions_remaining_estimate: unknown
 agent: Continuity Builder hourly source runner
 lease_id: null
 task_session_id: null
@@ -18,7 +18,8 @@ lease_expires_at: null
 last_observed_at_utc: 2026-10-31T06:25:41Z
 repo: www-infinity4/QuantaPhi
 branch: feat/integra-evidence-daily-brief-20261031
-head_sha: 5968afb73020003967b4fe6991cd295af76dce91
+head_sha: 2fdd9126241a00b0b4a828fd5bd3c36b9175cd1c
+merge_commit_sha: 5968afb73020003967b4fe6991cd295af76dce91
 pr: 1280
 tests:
   - "2026-10-31: node --test test/integra-daily-brief.test.mjs: 6/6 local PASS; exact source/test Git blob SHAs matched remote."
@@ -28,7 +29,7 @@ merged: true
 deployed: false
 live_verified: false
 blocker: "Independent review, exact-head CI and read-only runtime feed wiring pending. No X write authority."
-next_action: "Inspect exact-head CI, then wire verified Cloudflare traffic/card-summary and signed-in X receipts into the read-only formatter, without posting."
+next_action: "Wire bounded, verified read-only Cloudflare and authorized X receipts into the already-merged formatter, without posting."
 ---
 
 # Integra daily evidence-backed reports
@@ -54,6 +55,7 @@ next_action: "Inspect exact-head CI, then wire verified Cloudflare traffic/card-
 - A source test is not CI, independent review, deployment or daily runtime execution.
 
 ## October 31 post-merge ledger reconciliation
+This checkpoint's third documented session is the interactive repair audit; the historical source-runner agent assignment above is unchanged.
 - Read-only formatter **source slice only** merged in [QuantaPhi #1280](https://github.com/www-infinity4/QuantaPhi/pull/1280), squash commit `5968afb73020003967b4fe6991cd295af76dce91` (verified GitHub merge). Historical OPEN/DRAFT notes above describe the prior build stage, not the current PR state.
 - The wider daily report project is **not complete**: runtime receipts, authorized X data acquisition, independent release acceptance and any X publishing remain separately gated. `deployed: false` and `live_verified: false` are intentionally retained for the unfinished integration.
 - Ledger repair is coordinated under existing owner continuity issue [#1145](https://github.com/www-infinity4/QuantaPhi/issues/1145). An unclaimed lease has null fence and task/session identity; no agent lease was invented.
