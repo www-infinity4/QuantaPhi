@@ -16,14 +16,15 @@ const validHistory=d=>d&&d.version===1&&Array.isArray(d.threads)&&d.threads.leng
  d.threads.every(t=>typeof t.id==='string'&&Array.isArray(t.sessions)&&t.sessions.length<=12&&
  t.sessions.every(s=>Array.isArray(s.items)&&s.items.length<=40));
 const read=()=>{try{const v=JSON.parse(localStorage.getItem(STORE)||'null');return validHistory(v)?v:newHistory()}catch{return newHistory()}};
-let history=read(),selected=history.threads[0]?.id||null;
+let history=read(),selected=history.threads[0]?.id||null,focusedSessionId=null;
 const arena=document.getElementById('arena');
 if(arena){
  const root=el('section','zeus-history');root.id='zeusSessionHistory';root.setAttribute('aria-labelledby','zeusHistoryTitle');
  arena.insertAdjacentElement('afterend',root);
  const heading=el('div','zeus-history-head');
  const titleBlock=el('div');
- titleBlock.append(el('p','eyebrow','ZEUS 6.2 · CONTINUITY'),el('h2','','Session history & work dots'),
+ const headingTitle=el('h2','','Session history & work dots');headingTitle.id='zeusHistoryTitle';
+ titleBlock.append(el('p','eyebrow','ZEUS 6.2 · CONTINUITY'),headingTitle,
   el('p','', 'Follow unfinished work, preserve exact extractions, record imports and start focused continuations.'));
  heading.append(titleBlock);root.append(heading);
  const disclosure=el('p','zeus-history-disclosure',
@@ -75,13 +76,13 @@ if(arena){
   const add=el('button','primary','Create project thread');add.type='submit';form.append(title,add);
   form.addEventListener('submit',e=>{
    e.preventDefault();
-   mutate(()=>{const t=createThread(history,title.value);selected=t.id},'Created a private project thread');
+   mutate(()=>{const t=createThread(history,title.value);selected=t.id;focusedSessionId=null},'Created a private project thread');
   });
   side.append(form);
   const list=el('div','zeus-history-threads');
   if(!history.threads.length)list.append(el('p','', 'No local threads yet. Create one above.'));
   for(const thread of history.threads){
-   const row=button('',()=>{selected=thread.id;render()},'zeus-thread'+(thread.id===selected?' active':''));
+   const row=button('',()=>{selected=thread.id;focusedSessionId=null;render()},'zeus-thread'+(thread.id===selected?' active':''));
    row.append(labelDot(threadColor(thread)));
    const summary=el('span','zeus-thread-name');
    summary.append(el('strong','',thread.title),el('small','',thread.sessions.length+' session(s) · '+SESSION_COLORS[threadColor(thread)]));
@@ -91,9 +92,12 @@ if(arena){
  }
  function renderTimeline(thread){
   const flow=el('div','zeus-history-sessions');
-  for(const s of thread.sessions){
-   const entry=el('div','zeus-session-entry');entry.append(labelDot(sessionColor(s)),
-    el('span','','Session '+s.number+' · '+SESSION_COLORS[sessionColor(s)]+' · '+s.items.length+' task(s)'));
+  for(const session of thread.sessions){
+   const active=(focusedSessionId||activeSession(thread)?.id)===session.id;
+   const entry=button('',()=>{focusedSessionId=session.id;render()},'zeus-session-entry'+(active?' selected':''));
+   entry.setAttribute('aria-pressed',String(active));
+   entry.append(labelDot(sessionColor(session)),
+    el('span','','Session '+session.number+' · '+SESSION_COLORS[sessionColor(session)]+' · '+session.items.length+' task(s)'));
    flow.append(entry);
   }
   return flow;
@@ -113,7 +117,7 @@ if(arena){
    controls.append(evidence,record);
    if(item.kind==='extraction'){
     controls.append(button('Open focused thread',()=>mutate(()=>{
-     const next=extractToThread(history,thread.id,item.id);selected=next.id;
+     const next=extractToThread(history,thread.id,item.id);selected=next.id;focusedSessionId=null;
     },'Preserved exact extraction and created a new blue import task'),'primary'));
    }
    card.append(controls);
@@ -124,12 +128,14 @@ if(arena){
   detail.replaceChildren();
   const thread=currentThread();
   if(!thread){detail.append(el('p','', 'Choose or create a project thread to begin tracking.'));return}
-  const s=activeSession(thread),color=threadColor(thread);
+  const current=activeSession(thread),s=thread.sessions.find(x=>x.id===focusedSessionId)||current;
+  const isCurrent=s.id===current.id,color=threadColor(thread);
   const head=el('div','zeus-current-head');
   const text=el('div');text.append(el('small','', 'PROJECT THREAD'),el('h3','',thread.title));
   const status=el('span','zeus-status');status.append(labelDot(color),el('strong','',SESSION_COLORS[color]));
   head.append(text,status);detail.append(head);
   detail.append(renderTimeline(thread));
+  if(!isCurrent)detail.append(button('Return to active session',()=>{focusedSessionId=null;render()}));
   detail.append(el('h4','', 'Session '+s.number+' · '+SESSION_COLORS[sessionColor(s)]));
   if(thread.fullAt)detail.append(el('p','zeus-history-disclosure','Orange handoff recorded. The original thread remains available as a local read-only history.'));
   else if(s.completedAt)detail.append(el('p','zeus-history-disclosure','Green: every task has a recorded outcome. Evidence is user-entered; a server has not independently verified it.'));
@@ -138,7 +144,7 @@ if(arena){
   for(const item of s.items)items.append(renderItem(thread,item));
   if(!s.items.length)items.append(el('p','zeus-empty','This session has no tasks yet.'));
   detail.append(items);
-  if(!thread.fullAt&&!s.completedAt){
+  if(isCurrent&&!thread.fullAt&&!s.completedAt){
    const kind=el('select');kind.setAttribute('aria-label','Work classification');
    for(const [value,name] of [['work','Red · unfinished work'],['extraction','Yellow · exact extraction'],['import','Blue · import required'],['answer','Blue · AI answer required']]){
     const op=el('option','',name);op.value=value;kind.append(op);
@@ -150,19 +156,19 @@ if(arena){
     ()=>mutate(()=>addItem(thread,kind.value,content.value,source.value),'Added '+kind.value+' work point')));
   }
   const actions=el('div','zeus-history-actions');
-  if(!thread.fullAt&&!s.completedAt){
+  if(isCurrent&&!thread.fullAt&&!s.completedAt){
    const finish=button('Finish session · green',()=>mutate(()=>finishSession(thread),'Completed session '+s.number+' with recorded evidence'),'primary');
    finish.disabled=!s.items.length||s.items.some(i=>!i.doneAt||!i.receipt);
    actions.append(finish);
   }
-  if(!thread.fullAt&&s.completedAt){
-   const next=button('Start next session',()=>mutate(()=>nextSession(thread),'Started next private session in '+thread.title),'primary');
+  if(isCurrent&&!thread.fullAt&&s.completedAt){
+   const next=button('Start next session',()=>mutate(()=>{nextSession(thread);focusedSessionId=null},'Started next private session in '+thread.title),'primary');
    next.disabled=thread.sessions.length>=12;actions.append(next);
    if(next.disabled)detail.append(el('p','zeus-history-disclosure','This local tracker has reached its 12-session limit; use orange handoff. This is not a measured AI context-window limit.'));
   }
   if(!thread.fullAt)actions.append(button('Thread full · orange handoff',()=>{
    if(!confirm('Record orange and open a continuation? Unfinished work will be copied into the new local thread.'))return;
-   mutate(()=>{const result=carryForward(history,thread.id);selected=result.next.id},'Created orange handoff; copied unfinished work to the new thread');
+   mutate(()=>{const result=carryForward(history,thread.id);selected=result.next.id;focusedSessionId=null},'Created orange handoff; copied unfinished work to the new thread');
   }));
   const copy=button('Show handoff for copying',()=>{
    const exportBox=document.getElementById('zeusHandoffText');
