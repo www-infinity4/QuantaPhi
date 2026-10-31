@@ -41,6 +41,19 @@ test('red cannot become green without recorded outcomes, and session history sta
  assert.equal(sessionColor(t.sessions[0]),'green');
  assert.equal(threadColor(t),'red');
 });
+test('exact yellow extracts retain whitespace and newlines through focused import and rollover',()=>{
+ const h=newHistory(),t=createThread(h,'Original source');
+ const precise='  First original line  \nSecond\tline\nFinal line  \n';
+ const item=addItem(t,'extraction',precise,'Private note 11');
+ assert.equal(item.text,precise);
+ const next=extractToThread(h,t.id,item.id);
+ assert.equal(next.sessions[0].items[0].text,precise);
+ const carried=carryForward(h,next.id);
+ assert.equal(carried.next.sessions[0].items[0].text,precise);
+ assert.match(exportHandoff(carried.next),/First original line/);
+ assert.throws(()=>addItem(carried.next,'extraction','x'.repeat(3001),'Note 12'),/exceeds/);
+ assert.throws(()=>addItem(carried.next,'work','    '),/three characters/);
+});
 test('orange creates a new local thread with all unfinished items and retains the old source',()=>{
  const h=newHistory(),t=createThread(h,'StarQuest wallet');
  const work=addItem(t,'work','Inspect auth error');
