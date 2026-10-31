@@ -1266,6 +1266,15 @@ async function search(options={}){
    const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
    const weighted=(sj.results||[]).map((x,i)=>{const text=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>text.includes(w)).length;const entityHits=entityWords.filter(w=>text.includes(w)).length;const coverage=required.length?hits/required.length:0;return {...x,_entityHits:entityHits,_weight:(coverage*100)+(hits*35)+(entityHits*100)+Math.max(0,20-i)};}).filter(x=>{if(technicalIntent){const txt=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>txt.includes(w)).length;return hits>=Math.min(3,required.length)}if(entityWords.length<2)return true;const title=String(x.title||'').toLowerCase(),body=String(x.content||x.description||'').toLowerCase();const phrase=entityWords.join(' ');return title.includes(phrase)||body.includes(phrase)||x._entityHits===entityWords.length}).sort((a,b)=>b._weight-a._weight);
    evidence=weighted.slice(0,8).map((x,i)=>({index:i,weight:Math.round(x._weight),title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,450)})).filter(x=>x.title||x.evidence);
+   // Source-backed preview appears immediately, without waiting for AI synthesis.
+   // It never creates extra Quants or changes credit/ledger rules.
+   if(isCurrent()&&evidence.length){
+     const preview=evidence.filter(x=>{try{const u=new URL(x.url);return /^https?:$/.test(u.protocol)}catch(_){return false}}).slice(0,4);
+     if(preview.length){
+       $('#overview').innerHTML='<section class="qzone qzoneRed"><h3>Source preview · AI overview building</h3><p>Live sources are ready. The full AI overview and data regions are still being prepared.</p><ul>'+preview.map(x=>'<li><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">'+esc(x.title||x.url)+'</a></li>').join('')+'</ul></section>';
+       $('#status').innerHTML='<small>Sources ready · preparing the AI overview…</small>';
+     }
+   }
    const instructionPrefix=[
  'You are the live GPT reasoning layer for QuantaPhi. Plan the explanation around this exact query: identify the entity, select the strongest supported facts, organize them into a coherent narrative, and write an original synthesis. Do not paste a source passage, concatenate snippets, or stretch a single document to reach a word count.',
  selectedSubjects.length>1?('MULTI-SUBJECT SEARCH: cover ALL these subjects by name: '+JSON.stringify(selectedSubjects)+'. Give a separate research section for every subject before comparing their supported connections and differences. Never collapse this request to one entity.'): '',
