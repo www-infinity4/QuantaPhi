@@ -57,6 +57,8 @@ try{
    // must fail closed and preserve the current chat, then permit a deliberate
    // second History click once the owner connection has stabilized.
    assert.notEqual(await page.evaluate(key=>sessionStorage.getItem(key+':tab'),key),oldId);
+   // Allow an asynchronous wallet verification/renewal to settle before retry.
+   await page.waitForTimeout(1500);
    await old.click();
    await page.waitForFunction(text=>document.querySelector('.ba-messages')?.innerText.includes(text),oldText,{timeout:20000});
   }
@@ -65,7 +67,9 @@ try{
    activeThread:sessionStorage.getItem(key+':tab'),
    visibleMessages:document.querySelector('.ba-messages')?.innerText.slice(-500)||'',
    folderStatus:document.querySelector('.ba-conversation-folders .ba-muted')?.innerText||'',
-   folderEntries:[...document.querySelectorAll('.ba-folder-entry')].map(x=>x.dataset.sessionId).slice(0,8)
+   folderEntries:[...document.querySelectorAll('.ba-folder-entry')].map(x=>x.dataset.sessionId).slice(0,8),
+   ownerMode:document.querySelector('.ba-owner-status')?.innerText||'',
+   brainCheck:window.QuantaBrainOwner?.diagnostics?.()||null
   }),key);
   throw Error('Saved History did not reopen: '+JSON.stringify(diagnostic),{cause:error});
  }
