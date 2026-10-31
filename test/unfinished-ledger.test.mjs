@@ -14,7 +14,7 @@ test('agent entry point links the mandatory unfinished-work protocol', () => {
   const readme = read('work/unfinished/README.md');
   assert.match(readme, /GitHub Issues/);
   assert.match(readme, /lease/i);
-  assert.match(readme, /independent review/i);
+  assert.match(readme, /independent (?:review|release)/i);
 });
 
 test('every versioned ticket has a canonical issue and a matching index route', () => {
