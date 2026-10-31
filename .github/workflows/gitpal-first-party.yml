@@ -1,0 +1,33 @@
+name: Gitpal first-party engineering studio
+on:
+  pull_request:
+    paths:
+      - 'gitpal/**'
+      - 'test/gitpal-first-party-host.test.mjs'
+      - '.github/workflows/gitpal-first-party.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'gitpal/**'
+      - 'test/gitpal-first-party-host.test.mjs'
+      - '.github/workflows/gitpal-first-party.yml'
+permissions:
+  contents: read
+jobs:
+  gitpal-host:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and contract
+        run: |
+          node --check gitpal/studio.mjs
+          node --test test/gitpal-first-party-host.test.mjs
+      - name: GitHub credential safety scan
+        run: |
+          ! grep -nE 'github_pat_[A-Za-z0-9_]{20,}|ghp_[A-Za-z0-9]{16,}|-----BEGIN (RSA |EC )?PRIVATE KEY-----' gitpal/index.html gitpal/studio.mjs
