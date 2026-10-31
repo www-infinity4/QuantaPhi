@@ -18,6 +18,8 @@ on:
       - 'test/bubbles-connections*.test.mjs'
       - 'test/bubbles-gmail-inbox.test.mjs'
       - 'test/bubbles-wallet-email.test.mjs'
+      - 'git-production-*.mjs'
+      - 'test/git-production-cards.test.mjs'
       - 'test/starcoin-github-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
   push:
@@ -68,4 +70,5 @@ jobs:
             test/bubbles-wallet-email.test.mjs \
             test/starcoin-github-backup.test.mjs \
             test/github-copilot-api.test.mjs \
-            test/github-copilot-popup.test.mjs
+            test/github-copilot-popup.test.mjs \
+            test/git-production-cards.test.mjs
