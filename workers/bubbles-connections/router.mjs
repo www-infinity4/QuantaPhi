@@ -269,6 +269,9 @@ export async function handleConnections(request,env,resolveService) {
     }
     if (url.pathname === PREFIX+'/github/test') return json(origin,{ok:true,...await service.githubConnectionTest({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/github/repositories') return json(origin,{ok:true,...await service.githubRepositories({userId:identity.userId,id:body.id})});
+    if (url.pathname === PREFIX+'/github/copilot') return json(origin,{ok:true,...await service.githubCopilot({userId:identity.userId,id:body.id,
+      repository:body.repository,action:body.action,prompt:body.prompt,prNumber:body.prNumber,
+      confirmation:body.confirmation,nonce:body.nonce})});
     if(url.pathname===PREFIX+'/start'){
       const started=await service.start({...identity,provider:body.provider,actions:body.actions});
       const state=new URL(started.authorizationUrl).searchParams.get('state');
