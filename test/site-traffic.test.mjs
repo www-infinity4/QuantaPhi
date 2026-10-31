@@ -96,7 +96,7 @@ const trafficPayload=(requests,pageViews,fetchedAt)=>({
  recordedDays:23,coverageContinuous:true
 });
 async function runClientOnce(store,queue){
- const nodes=Object.fromEntries(['qtrafficRequests','qtrafficViews','qtrafficNote'].map(id=>[id,{textContent:''}]));
+ const nodes=Object.fromEntries(['qtrafficRequests','qtrafficViews','qtrafficNote','qtrafficRefresh'].map(id=>[id,{textContent:'',disabled:false,addEventListener(type,handler){if(type==='click')this.click=handler;}}]));
  const document={getElementById:id=>nodes[id],hidden:false,addEventListener(){}};
  const localStorage={getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)};
  const fetch=async()=>{
@@ -217,4 +217,38 @@ test('invalid locally cached verification timestamp cannot override the source',
  const nodes=await runClientOnce(store,[trafficPayload(1000,500,'2026-10-26T16:28:24.621Z')]);
  assert.equal(nodes.qtrafficRequests.textContent,'1,000');
  assert.equal(nodes.qtrafficViews.textContent,'500');
+});
+
+test('manual traffic refresh rereads server totals without minting or double-counting',async()=>{
+ const stored=new Map();
+ const first=trafficPayload(1191980,459620,'2026-10-31T04:23:58.441Z');
+ first.through='2026-10-30';
+ first.last7Days={since:'2026-10-24',until:'2026-10-30',requests:377965,pageViews:143479,daysRecorded:7};
+ first.recordedDays=27;
+ const next=structuredClone(first);
+ next.requests=1192500;next.pageViews=460000;next.fetchedAt='2026-10-31T04:24:58.441Z';
+ const nodes=await runClientOnce(stored,[first,next]);
+ assert.equal(nodes.qtrafficViews.textContent,'459,620');
+ assert.equal(typeof nodes.qtrafficRefresh.click,'function');
+ await nodes.qtrafficRefresh.click();
+ assert.equal(nodes.qtrafficRequests.textContent,'1,192,500');
+ assert.equal(nodes.qtrafficViews.textContent,'460,000');
+ assert.equal(nodes.qtrafficRefresh.disabled,false);
+ assert.equal(nodes.qtrafficRefresh.textContent,'Refresh totals');
+});
+test('verified public Cloudflare fallback is current, scoped and never presented as automatically synced',()=>{
+ const s=JSON.parse(readFileSync(new URL('../data/site-traffic-lifetime.json',import.meta.url),'utf8'));
+ assert.equal(s.schemaVersion,2);
+ assert.equal(s.scope,'recorded_since');
+ assert.equal(s.historicComplete,false);
+ assert.equal(s.refreshConfigured,false);
+ assert.equal(s.since,'2026-10-04');
+ assert.ok(s.pageViews>=459620);
+ assert.ok(s.requests>=1191980);
+ assert.equal(s.last7Days.daysRecorded,7);
+ assert.equal(s.last7Days.requests<=s.requests,true);
+ assert.equal(s.last7Days.pageViews<=s.pageViews,true);
+ const page=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ assert.match(page,/id="qtrafficRefresh"/);
+ assert.match(page,/site-traffic\.js\?v=20261031-manualrefresh1/);
 });
