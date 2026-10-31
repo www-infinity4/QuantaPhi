@@ -19,8 +19,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Syntax and policy regression
+      - name: Syntax, URL policy and DNS regressions
         run: |
           node --check tools/open-browser-bridge/policy.mjs
+          node --check tools/open-browser-bridge/dns-policy.mjs
           node --check tools/open-browser-bridge/browser-bridge.mjs
-          node --test tools/open-browser-bridge/policy.test.mjs
+          node --test tools/open-browser-bridge/*.test.mjs
