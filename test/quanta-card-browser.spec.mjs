@@ -151,3 +151,29 @@ test('GUESS real denim purchase card and app-installer disclosure remain distinc
  await expect(page.getByRole('link',{name:'Install Bubbles in Chrome'})).toBeVisible();
  await expect(page.locator('#q')).toBeVisible();
 });
+
+for (const width of [320,360,393]) {
+ test('native-source deduplication at '+width+'px keeps one primary search and real card actions',async({page})=>{
+  test.setTimeout(90000);
+  await page.setViewportSize({width,height:852});
+  for (const id of ['google','bing','youtube','tiktok','chatgpt','starmaker','ebay','wikipedia','gold']) {
+   await page.goto(base+'/source-quick-card.html?card='+id,{waitUntil:'domcontentloaded'});
+   const card=page.locator('#sourceQuickCardDetail');
+   await expect(card.locator('.qca-toolbar')).toHaveCount(1);
+   await expect(card.locator('.qca-toolbar [data-action="follow"]')).toBeVisible();
+   // Gold has no native source search and must retain the optional generic reader.
+   await expect(card.locator('.qca-website-reader')).toHaveCount(id==='gold'?1:0);
+   if (id==='google'||id==='bing'||id==='ebay'||id==='wikipedia') {
+    await expect(card.locator('.qcx-search-form')).toHaveCount(1);
+   }
+   if (id==='wikipedia')await expect(card.getByRole('searchbox',{name:'Wikipedia search'})).toBeVisible();
+   if (id==='youtube'||id==='tiktok') {
+    await expect(card.getByRole('button',{name:'Play in card'})).toBeVisible();
+    const more=card.locator('details.qcx-discover-details');
+    await expect(more).toHaveCount(1);
+    await expect(more).not.toHaveAttribute('open');
+    await expect(more.locator('.qcx-search-form')).toBeHidden();
+   }
+  }
+ });
+}
