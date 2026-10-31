@@ -58,7 +58,14 @@ export function feedScore(card,state){
   (card.category===state.catalog?.find(x=>x.id===id)?.category?v:0),0);
  const saved=(state.following||[]).includes(card.id);
  const seen=state.viewed?.[card.id]||0;
- return clicks*8+category*2+(saved?12:0)+
+ // Voluntary local interests influence ranking only in memory. No private
+ // profile fields enter the anonymous feed activity ledger.
+ const interests=Array.isArray(state.profileInterests)?state.profileInterests:[];
+ const features=[card.category,card.feature,card.study].filter(x=>typeof x==='string').join(' ').toLowerCase();
+ const interestMatch=interests.some(topic=>typeof topic==='string'&&
+   ['Shopping','Music','Stories','Science','Television','History','DIY','Sports','Research'].includes(topic)&&
+   new RegExp('\\b'+topic.toLowerCase()+'\\b','i').test(features))?24:0;
+ return clicks*8+category*2+interestMatch+(saved?12:0)+
   Math.min(70,Math.max(0,Number(state.quantScores?.[card.id])||0))-
   Math.min(40,seen*2);
 }
