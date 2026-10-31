@@ -88,5 +88,6 @@ export function normalizeEbayFeed(data,mode){
   if(!item||seen.has(item.url))continue;
   seen.add(item.url);items.push(item);
  }
+ if(mode==='auction')items.sort((a,b)=>(b.bidCount||0)-(a.bidCount||0)||String(a.ends).localeCompare(String(b.ends)));
  return items;
 }
