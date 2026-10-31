@@ -57,7 +57,7 @@ test('onboarding appears in actual live carousel while completed cards stop recu
  assert.match(deck,/INFINITY® EDITORIAL CARD POST/);
  assert.match(deck,/new CustomEvent\('quantaphi:feed-updated'/);
  assert.match(style,/\.oracle-card-post-note/);
- assert.match(html,/oracle-card-deck\.js\?v=20261030-profile-follow-v3/);
+ assert.match(html,/oracle-card-deck\.js\?v=20261030-profile-follow-v4/);
  assert.match(source('quanta-profile.html'),/quantaProfileStandalone/);
 });
 
