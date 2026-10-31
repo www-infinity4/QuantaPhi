@@ -42,7 +42,7 @@ test('no private bid, login, orders or account-derived recommendation is inferre
  assert.equal(provider.connector,null);
 });
 
-test('Following feed is wired to Oracle tabs without changing Public or For You data models',()=>{
+test('Following feed is wired to Oracle tabs without changing Public or For You data models',async()=>{
  const fs=await import('node:fs');
  const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
  assert.match(read('oracle-card-deck.js'),/mountFollowingPublisherFeed/);
