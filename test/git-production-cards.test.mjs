@@ -30,6 +30,13 @@ test('on-card Git family preserves editable instructions and authentic connectio
  assert.match(reviewer,/'prs','details','issues','merged','build','feedback','merge'/);
  assert.match(reviewer,/const needsWrite=!\['prs','details','issues','merged'\]/);
 });
+test('Gitpal sends a consented evidence-only AI review through the existing Bubbles event, not a write tool',()=>{
+ assert.match(moduleSource,/bubbles:ai-consult/);
+ assert.match(moduleSource,/mode:'gemini_claude_review'/);
+ assert.match(moduleSource,/window\.confirm\('Send this selected GitHub issue/);
+ assert.match(moduleSource,/if\(accepted\)\{setStatus\('AI review accepted by Bubbles/);
+ assert.doesNotMatch(moduleSource,/AI review.*action:'merge'/);
+});
 test('Gitcoin preview deduplicates merge receipts and never claims minted wallet credits',()=>{
  const one={number:8,mergeCommitSha:sha,eligibleAddedLines:120};
  assert.deepEqual(mergedLinePreview({merges:[one,one],partial:true}),{
