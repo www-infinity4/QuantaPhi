@@ -76,6 +76,7 @@ on:
       - 'test/quanta-card-live-source.browser.spec.mjs'
       - 'design-lab/**'
       - 'test/design-lab-power-chain.test.mjs'
+      - 'test/design-lab-bulk-allocator.test.mjs'
       - 'test/design-lab-power-chain.browser.spec.mjs'
       - '.github/workflows/quanta-interactive-cards.yml'
   workflow_dispatch:
@@ -96,6 +97,8 @@ jobs:
           node --check design-lab/power-chain-core.mjs
           node --check design-lab/app.mjs
           node --check design-lab/quick-card.mjs
+          node --check design-lab/bulk-allocator.mjs
+          node --check design-lab/bulk-allocator-ui.mjs
           node --check quanta-card-actions.mjs
           node --check quick-card-preview.mjs
           node --check art-museum-quick-cards.mjs
@@ -120,7 +123,7 @@ jobs:
           node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
-        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
+        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/design-lab-bulk-allocator.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
       - name: Check Infinity accepted catalog and browser action contracts
         run: node --test test/infinity-accepted.test.mjs test/quick-card-tinyfish.test.mjs test/brain-clock.test.mjs test/tinyfish-broker-bridge.test.mjs
       - name: Check assimilation accessibility
