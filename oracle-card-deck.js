@@ -125,11 +125,13 @@ const profileLink=document.createElement('a');profileLink.href='/quanta-profile.
 profileLink.className='oracle-profile-settings-link';profileLink.textContent='Profile & settings';
 profileLink.setAttribute('aria-label','Open your profile and settings');
 (host.querySelector('.oracle-direction-action')||host).append(profileLink);
-void import('/quanta-profile-card.mjs?v=20261030-1').then(({mountProfileCard,profileComplete})=>{
+let profileInterests=[];
+void import('/quanta-profile-card.mjs?v=20261030-1').then(({mountProfileCard,profileComplete,readProfileInterests})=>{
+ profileInterests=readProfileInterests();
  profileNode.hidden=profileComplete();
  mountProfileCard(profileNode,{onComplete:()=>{
   if(active===profileEntry)returnActive();
-  profileNode.hidden=true;updateTabs();predict();start();
+  profileNode.hidden=true;profileInterests=readProfileInterests();updateTabs();predict();start();
  }});
  if(!profileNode.hidden&&!viewerTouched&&!expanded&&!spotlightRequested&&!TV_FRONT_BOOTSTRAP){
   show(profileEntry,false);
@@ -282,7 +284,7 @@ function predict(){
  if(!possible.length){next.disabled=true;reason.textContent='Your Following view is empty. Return to Public and add a card with + Follow.';return;}
  if(directionApi&&feedState){
   const present=liveCatalog();
-  const context={...feedState,catalog:present,quantScores:quantWeights};
+  const context={...feedState,catalog:present,quantScores:quantWeights,profileInterests};
   const eligibleIds=new Set(possible.map(e=>e.feedId));
   const tour=directionApi.nextDeckCycle(
    present.filter(c=>eligibleIds.has(c.id)),active?.feedId||'',seenByTab[selectedTab]);
@@ -310,7 +312,7 @@ async function connectQuant({select=false,revision=selectionVersion}={}){
  quantWeights=result.scores||{};quantConnected=result.connected===true;
  if(select&&!expanded){
   const catalog=liveCatalog(),ranked=directionApi.feedCandidates(catalog,'for-you',
-   {...readDirections(),catalog,quantScores:quantWeights});
+   {...readDirections(),catalog,quantScores:quantWeights,profileInterests});
   const best=eligible().find(e=>e.feedId===ranked[0]?.id);
   if(best&&best!==active)show(best,false);
  }
@@ -562,7 +564,7 @@ function chooseOpening(){
  const pool=opening.length?opening:cards;
  if(directionApi&&feedState){
   const catalog=liveCatalog(),ids=new Set(pool.map(c=>c.feedId));
-  const context={...feedState,catalog,quantScores:quantWeights};
+  const context={...feedState,catalog,quantScores:quantWeights,profileInterests};
   const selected=directionApi.nextFeedDirection(catalog.filter(c=>ids.has(c.id)),
    selectedTab,context,'').card;
   const ranked=ready.find(e=>e.feedId===selected?.id);
