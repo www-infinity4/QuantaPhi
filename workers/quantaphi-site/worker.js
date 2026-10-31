@@ -1,4 +1,5 @@
 import {videoAPI} from './video-api.mjs';
+import {coinMediaRoute} from './coin-media-pool.mjs';
 const EDGE_VERSION = 'quantaphi-org-service-20261029-housing-v15';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
@@ -376,6 +377,7 @@ export default {
    return env.BUBBLES_CONNECTIONS.fetch(request);
   }
   if(['/api/apk-releases','/downloads/bubbles.apk','/downloads/site.apk'].includes(incoming.pathname))return apkRoute(request,incoming);
+  if(incoming.pathname==='/api/infinity-coin-media')return coinMediaRoute(request); 
   if(incoming.pathname.startsWith('/api/video/'))return videoAPI(request,env);
   if (/^(?:www\.)?quantaphi\.net$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });
   if (/^(?:www\.)?quantaphi\.org$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });
