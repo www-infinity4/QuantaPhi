@@ -85,3 +85,21 @@ test('browser runner installs context policy before opening pages', async () => 
   assert.ok(install >= 0 && newPage > install, 'policy must precede any page creation');
   assert.doesNotMatch(source, /await page\.route\(/, 'page-only routing misses popup initial requests');
 });
+
+test('an allowed request with a public DNS result continues', async () => {
+  const context = fakeContext();
+  await installRequestPolicy(context, new Set(['example.com']), async hostname => {
+    assert.equal(hostname, 'example.com');
+    return true;
+  });
+  assert.equal(await context.request('https://example.com/'), 'continue');
+});
+
+test('DNS rejection applies to later same-host requests, not only initial navigation', async () => {
+  const context = fakeContext();
+  let lookups = 0;
+  await installRequestPolicy(context, new Set(['example.com']), async () => ++lookups === 1);
+  assert.equal(await context.request('https://example.com/'), 'continue');
+  assert.equal(await context.request('https://example.com/next'), 'abort');
+  assert.equal(lookups, 2);
+});
