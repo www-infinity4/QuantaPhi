@@ -140,6 +140,10 @@ void import('/quanta-profile-card.mjs?v=20261030-3').then(({mountProfileCard,pro
     (!spotlightRequested&&!TV_FRONT_BOOTSTRAP))){
   show(profileEntry,false);
  }
+ if(profileNode.hidden&&(spotlightRequested==='user-profile'||spotlightRequested==='quantaProfileCard')){
+  status.textContent='Your profile is complete. Open Profile & settings to edit it.';
+  if(!active)start();
+ }
  updateTabs();predict();
 }).catch(()=>{profileNode.hidden=true;});
 let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
@@ -582,6 +586,10 @@ function start(){if(!active&&!expanded){
  if(!spotlightRequested&&tv&&!available(tv)){now.textContent='Infinity TV · Loading channels…';status.textContent='Loading the game-night TV viewer…';return;}
  // Keep an explicitly requested original card in front of generic rotation.
  // Some tools hydrate asynchronously after DOMContentLoaded.
+ if(request===profileEntry&&profileNode.hidden&&profileNode.querySelector('.qp-profile-card')){
+  const first=chooseOpening();if(first)show(first,false);
+  status.textContent='Your profile is complete. Open Profile & settings to edit it.';return;
+ }
  if(request&&!available(request)){status.textContent='Loading requested interactive card…';return;}
  const first=request&&available(request)?request:chooseOpening();
  if(first)show(first,false);else status.textContent='Loading original interactive cards…';
