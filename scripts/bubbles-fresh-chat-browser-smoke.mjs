@@ -43,7 +43,20 @@ try{
  const old=page.locator('.ba-folder-entry[data-session-id="'+oldId+'"]');
  await old.waitFor({state:'attached',timeout:10000});
  await old.click();
- await page.waitForFunction(text=>document.querySelector('.ba-messages')?.innerText.includes(text),oldText,{timeout:10000});
+ // Cloud History may take up to 12s to fail over to the verified device copy.
+ // Keep the real DOM assertion; on failure report the visible state rather than
+ // treating a click as successful or silently skipping the History check.
+ try{
+  await page.waitForFunction(text=>document.querySelector('.ba-messages')?.innerText.includes(text),oldText,{timeout:20000});
+ }catch(error){
+  const diagnostic=await page.evaluate(key=>({
+   activeThread:sessionStorage.getItem(key+':tab'),
+   visibleMessages:document.querySelector('.ba-messages')?.innerText.slice(-500)||'',
+   folderStatus:document.querySelector('.ba-conversation-folders .ba-muted')?.innerText||'',
+   folderEntries:[...document.querySelectorAll('.ba-folder-entry')].map(x=>x.dataset.sessionId).slice(0,8)
+  }),key);
+  throw Error('Saved History did not reopen: '+JSON.stringify(diagnostic),{cause:error});
+ }
  results.push({probe:'owner_reopens_history',status:'passed',preserved:true});
  // Closing and reopening resets the visible transcript and stale status,
  // but leaves saved message bytes intact for deliberate History selection.
