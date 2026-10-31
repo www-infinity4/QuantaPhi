@@ -38,9 +38,21 @@ export async function verifyQuantMailLive({request=fetch,base=API}={}){
   body:JSON.stringify({alias:'random@quantaphi.org'})
  });
  requireValue(unknownOrigin.status===403,'passkey_no_origin_denial_missing');
- // No keys or secrets are read or modified; this is a negative-path smoke test.
+ // This is deliberately unauthenticated and uses a synthetic, invalid alias.
+ // When staging is disabled, POST must fail closed (503). Once enabled,
+ // the server must check the verified owner wallet BEFORE inspecting aliases:
+ // 401/403 is valid; 200 or 400 would reveal an authorization ordering flaw.
+ const anonymousOwnerAttempt=await request(base+'/register/begin',{
+  method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({alias:'random@quantaphi.org'})
+ });
+ requireValue(body.enabled
+  ?[401,403].includes(anonymousOwnerAttempt.status)
+  :anonymousOwnerAttempt.status===503,
+  'passkey_anonymous_owner_denial_missing');
+ // No keys, secrets, emails or account credentials are read or modified.
  return {ok:true,serverReached:true,enabled:body.enabled,originDenied:true,
-  noOriginDenied:true,rpId:body.rpId};
+  noOriginDenied:true,anonymousOwnerDenied:true,rpId:body.rpId};
 }
 
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
