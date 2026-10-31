@@ -84,9 +84,11 @@ const OPEN_VERIFICATION=RECOVERY_PARAMS.get('verify')==='1';
 // Only a hardcoded same-site return path is allowed; do not accept arbitrary redirect URLs.
 const RETURN_TO_STARQUEST=RECOVERY_PARAMS.get('returnTo')==='/TV-Database/';
 const RETURN_TO_BUBBLES=RECOVERY_PARAMS.get('returnTo')==='/bubbles.html'&&!RETURN_TO_BRAIN;
+const RETURN_TO_COLISEUM=RECOVERY_PARAMS.get('returnTo')==='/coliseum/'&&!RETURN_TO_BRAIN;
 const STARQUEST_SIGNIN=RECOVERY_PARAMS.get('signin')==='starquest';
 if(RETURN_TO_BUBBLES){$('back').textContent='Return to Bubbles';const link=document.querySelector('header a');link.textContent='Return to Bubbles';link.href='/bubbles.html';}
 if(RETURN_TO_STARQUEST&&!RETURN_TO_BRAIN){$('back').textContent='Return to StarQuest';const link=document.querySelector('header a');link.textContent='Return to StarQuest';link.href='/TV-Database/';}
+if(RETURN_TO_COLISEUM){$('back').textContent='Return to Zeus Coliseum';const link=document.querySelector('header a');link.textContent='Return to Zeus Coliseum';link.href='/coliseum/';}
 if(RETURN_TO_BRAIN){$('back').textContent='Open Robot Brain';document.querySelector('header a').href='/#robotDirections';}
 async function timedJson(url,options,timeoutMs){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);
@@ -159,7 +161,9 @@ async function scan(username,token){
   if(username&&String(star.username||'').toLowerCase()!==username.toLowerCase())throw Error('Account identity mismatch. No records were changed.');
   $('results').hidden=false;$('stats').replaceChildren();$('details').replaceChildren();
   $('account').textContent='Verified StarQuest account: '+star.username;
-  stat('Available StarCoins',Number(star.starCoins||0)+Number(star.pendingShareCredits||0)/10);
+  const completeBalance=[star.starCoins,star.pendingShareCredits].every(value=>value!==undefined&&value!==null&&value!==''&&Number.isSafeInteger(Number(value))&&Number(value)>=0);
+  stat('Available StarCoins',completeBalance?Number(star.starCoins)+Number(star.pendingShareCredits)/10:NaN);
+  if(!completeBalance)detail('StarQuest balance details are incomplete. The account was not cleared; retry this read or contact support before treating any value as zero.');
   detail('StarQuest: '+(Array.isArray(star.ledger)?star.ledger.length:0)+' recent ledger events returned; '+fmt(star.shareCount||0)+' confirmed share actions recorded.');
   if(u.status==='fulfilled'){
     const v=u.value;
@@ -189,6 +193,9 @@ async function scan(username,token){
     if(u.status!=='fulfilled')throw Error('Unified Wallet could not verify this account. Try again.');
     location.replace('/bubbles.html');
   }
+  // A Coliseum sign-in returns to its own card after StarQuest account
+  // ownership is confirmed. Never create, zero or merge a token balance.
+  if(RETURN_TO_COLISEUM)location.replace('/coliseum/');
 }
 async function run(){
   if(working)return;working=true;$('scan').disabled=true;
@@ -248,7 +255,7 @@ $('ownerRecovery').addEventListener('submit',async event=>{
 
 $('scan').addEventListener('click',run);
 $('rescan').addEventListener('click',run);
-$('back').addEventListener('click',()=>{location.assign(RETURN_TO_BRAIN?'/#robotDirections':RETURN_TO_STARQUEST?'/TV-Database/':RETURN_TO_BUBBLES||justRecovered?'/bubbles.html':'/')});
+$('back').addEventListener('click',()=>{location.assign(RETURN_TO_BRAIN?'/#robotDirections':RETURN_TO_STARQUEST?'/TV-Database/':RETURN_TO_COLISEUM?'/coliseum/':RETURN_TO_BUBBLES||justRecovered?'/bubbles.html':'/')});
 $('showSignin').addEventListener('click',()=>{$('signin').hidden=false;$('username').focus()});
 $('signin').addEventListener('submit',async event=>{
  event.preventDefault();if(working)return;working=true;$('restore').disabled=true;$('results').hidden=true;
@@ -279,7 +286,7 @@ $('signin').addEventListener('submit',async event=>{
  finally{working=false;$('restore').disabled=false}
 });
 if(STARQUEST_SIGNIN){
- document.title=RETURN_TO_BUBBLES?'Sign in to Bubbles with StarQuest':'Sign in with StarQuest';
+ document.title=RETURN_TO_BUBBLES?'Sign in to Bubbles with StarQuest':RETURN_TO_COLISEUM?'Sign in to Zeus with StarQuest':'Sign in with StarQuest';
  document.querySelector('h1').textContent=document.title;
  $('ownerRecovery').hidden=true;$('signin').hidden=false;
  msg('Sign in with your existing StarQuest account to restore your Unified Wallet.');

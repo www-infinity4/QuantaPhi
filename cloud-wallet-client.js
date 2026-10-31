@@ -146,10 +146,22 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
  if(!findDeviceToken())await ready;
  if(!findDeviceToken())await recoverAccountProfileFromDevice();
  const url=new URL(target);
- const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&(url.pathname.startsWith('/v1/quants/')||url.pathname.startsWith('/v1/music-quants/')));
+ // Only the exact Coliseum Worker endpoints may receive an existing StarQuest
+ // credential. Never send a wallet bearer token to a caller-selected host/path.
+ const method=String(options.method||'GET').toUpperCase();
+ const coliseumRoutes={
+  GET:new Set(['/v1/me','/v1/ideas','/v1/messages']),
+  POST:new Set(['/v1/join','/v1/ideas','/v1/messages','/v1/vote','/v1/branch'])
+ };
+ const isColiseum=url.origin==='https://infinity-coliseum.marvaseater.workers.dev'
+  &&!url.username&&!url.password&&!url.hash
+  &&Boolean(coliseumRoutes[method]?.has(url.pathname));
+ const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&(url.pathname.startsWith('/v1/quants/')||url.pathname.startsWith('/v1/music-quants/')))||isColiseum;
  if(!allowed)throw new Error('unsupported_wallet_target');
  const bridge=global.StarQuestCloudLedger;
- if(bridge?.authenticatedFetch){try{return await bridge.authenticatedFetch(target,options)}catch(error){if(error.message!=='ledger_not_connected')throw error}}
+ // The legacy StarQuestCloudLedger bridge has no Coliseum routing entry. Use
+ // the already verified device token directly only for this narrow allowlist.
+ if(bridge?.authenticatedFetch&&!isColiseum){try{return await bridge.authenticatedFetch(target,options)}catch(error){if(error.message!=='ledger_not_connected')throw error}}
  const token=findDeviceToken()||await resolveDeviceToken();if(!token)throw new Error('ledger_not_connected');
  const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
  return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});

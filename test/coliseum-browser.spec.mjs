@@ -35,3 +35,19 @@ test('Zeus is one original card in the Oracle carousel with a single action bar'
  await expect(page.locator('#oracleCardPrevious')).toBeVisible();
  await expect(page.locator('#oracleCardNext')).toBeVisible();
 });
+
+test('Zeus opens the existing same-origin Bubbles chat inside its card, without wallet changes',async({page})=>{
+ await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
+ const before=await page.evaluate(()=>({wallet:localStorage.getItem('starquest_session'),quants:localStorage.getItem('quantaPhiTokens')}));
+ const open=page.getByRole('button',{name:/Talk to Zeus AI/});
+ await expect(open).toBeVisible();
+ await open.click();
+ await expect(page.locator('#zeusAssistantPanel')).toBeVisible();
+ await expect(open).toHaveAttribute('aria-expanded','true');
+ const frame=page.locator('#zeusAssistantPanel iframe');
+ await expect(frame).toHaveAttribute('src',/\\/bubbles\\.html\\?embed=1/);
+ const after=await page.evaluate(()=>({wallet:localStorage.getItem('starquest_session'),quants:localStorage.getItem('quantaPhiTokens')}));
+ expect(after).toEqual(before);
+ await open.click();
+ await expect(page.locator('#zeusAssistantPanel')).toBeHidden();
+});

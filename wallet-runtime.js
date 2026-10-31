@@ -314,8 +314,17 @@
           lastError=String(payload?.error||('HTTP '+response.status));continue;
         }
         const candidate=payload.state;
-        if(accountName&&candidate.username&&String(candidate.username).trim().toLowerCase()!==accountName){
+        const verifiedUsername=String(candidate.username||'').trim().toLowerCase();
+        if(!/^[a-z0-9_.-]{2,64}$/.test(verifiedUsername)||(accountName&&verifiedUsername!==accountName)){
           lastError='wallet_identity_mismatch';continue;
+        }
+        // A partial/invalid response is NOT an authoritative zero balance.
+        // Retain the existing display and retry; never overwrite cached coins
+        // with Number(undefined) || 0 after a transient API failure.
+        const countFields=[candidate.starCoins,candidate.pendingShareCredits,candidate.shareCount];
+        if(countFields.some(value=>value===null||value===undefined||value===''||typeof value==='boolean'||!Number.isSafeInteger(Number(value))||Number(value)<0)
+          ||Number(candidate.pendingShareCredits)>9){
+          lastError='incomplete_cloud_wallet_state';continue;
         }
         state=candidate;break;
       }
