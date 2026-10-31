@@ -58,3 +58,11 @@ test('onboarding appears in actual live carousel while completed cards stop recu
  assert.match(html,/oracle-card-deck\.js\?v=20261028-front1-20261030-profile-follow/);
  assert.match(source('quanta-profile.html'),/quantaProfileStandalone/);
 });
+
+test('voluntary interest categories affect For You without entering the saved ledger',()=>{
+ const music={id:'music-1',name:'Radio station',category:'Audio',feature:'Listen to radio shows'};
+ const plain={id:'plain-1',name:'Basic listing',category:'General',feature:'Browse something'};
+ const state={...cleanFeedState({}),profileInterests:['Music'],catalog:[plain,music]};
+ assert.equal(feedCandidates([plain,music],'for-you',state)[0].id,music.id);
+ assert.equal(cleanFeedState(state).profileInterests,undefined);
+});
