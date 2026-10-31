@@ -39,3 +39,13 @@ test('view history keys are per wallet account; no raw usernames or wallet secre
   if(oldStorage===undefined)delete globalThis.localStorage;else globalThis.localStorage=oldStorage;
  }
 });
+
+test('media bookmarks are opt-in and never become a minted wallet transaction automatically',()=>{
+ const source=fs.readFileSync(new URL('../coin-media-discovery.mjs',import.meta.url),'utf8');
+ assert.match(source,/Save on this coin card/);
+ assert.match(source,/p\.saved=\[clean,/);
+ assert.match(source,/Saved to this coin card for the selected account/);
+ assert.match(source,/not a minted token or wallet asset/);
+ assert.match(source,/savedPicks\(\)/);
+ assert.doesNotMatch(source,/fetch\(['"`][^'"`]*mint|mintToken\(/);
+});
