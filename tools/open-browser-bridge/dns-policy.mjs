@@ -13,7 +13,7 @@ for (const [ip, prefix] of [
 ]) deniedV4.addSubnet(ip, prefix, 'ipv4');
 const deniedV6 = new BlockList();
 for (const [ip, prefix] of [
-  ['2001:db8::', 32], ['2001:10::', 28], ['2001:20::', 28],
+  // IPv4-encapsulating transition ranges can hide private IPv4 destinations.\n  ['2001::', 32], ['2002::', 16],\n  ['2001:db8::', 32], ['2001:10::', 28], ['2001:20::', 28],
 ]) deniedV6.addSubnet(ip, prefix, 'ipv6');
 
 export function isPublicAddress(address) {
