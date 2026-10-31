@@ -249,12 +249,12 @@ export class ConsentService {
   // Every request selects a repository which GitHub must return as installed
   // with effective permissions. A login alone is never enough.
   async githubCopilot({userId,id,repository,action,prompt,prNumber,confirmation,nonce}) {
-    if(!['prs','build','feedback','merge'].includes(action))throw Error('unsupported_action');
+    if(!['prs','details','build','feedback','merge'].includes(action))throw Error('unsupported_action');
     if(typeof repository!=='string'||!/^[-A-Za-z0-9_.]+\/[-A-Za-z0-9_.]+$/.test(repository))
       throw Error('repository_invalid');
     const listing=await this.githubRepositories({userId,id});
     const chosen=listing.repositories?.find(r=>r.name===repository);
-    const needsWrite=action!=='prs';
+    const needsWrite=!['prs','details'].includes(action);
     if(!chosen||(!chosen.permissions?.read&&!chosen.permissions?.write)||
        (needsWrite&&!chosen.permissions?.write))throw Error('github_repository_permission_required');
     const prefix=await this.namespace(userId),key=prefix+'connection:'+id;
