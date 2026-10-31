@@ -59,7 +59,7 @@ jobs:
           "$SDK/aapt" dump badging "$APK" | tee /tmp/bubbles-one-badging.txt
           grep -q "name='org.quantaphi.bubblesone'" /tmp/bubbles-one-badging.txt
           sha256sum "$APK"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: bubbles-one-clean-android12
           path: android/bubbles-one/app/build/outputs/apk/debug/app-debug.apk

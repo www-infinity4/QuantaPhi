@@ -35,7 +35,7 @@ jobs:
           npx playwright test test/live-tv-browser.spec.mjs --reporter=line --workers=1
       - name: Retain failure evidence
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: live-tv-browser-failure
           path: test-results/
