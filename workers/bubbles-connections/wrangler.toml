@@ -1,8 +1,11 @@
 name = "bubbles-connections"
 main = "worker.mjs"
-compatibility_date = "2026-10-10"
+compatibility_date = "2026-10-27"
+compatibility_flags = ["nodejs_compat"]
 keep_vars = true
 
+# PASSKEY_ENABLED is an opt-in Cloudflare Worker variable. Absent or false
+# leaves the new endpoints disabled pending verified owner enrollment.
 # CONNECTIONS_READY is managed on the existing deployed Worker.
 # Do not set or reset it here: keep_vars=true preserves the live value.
 # New deployments without the variable remain disabled by default.
