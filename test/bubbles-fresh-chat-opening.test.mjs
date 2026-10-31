@@ -241,6 +241,28 @@ test('native recovery reports index persistence failures without mutating Histor
  assert.equal(successful.index.find(x=>x.id===id)?.updated,1000);
 });
 
+test('History refresh discards stale cloud folder list after the verified owner changes',async()=>{
+ const begin=ui.indexOf('async function refreshConversationFolders(){');
+ const end=ui.indexOf('async function openConversation(',begin);
+ assert.ok(begin>0&&end>begin,'actual cloud folder refresh exists');
+ const events=[];
+ const ctx={
+  ownerReady:true,ownerHeaders:{Authorization:'Bearer first-owner'},
+  chatsMessage:{textContent:''},chatsList:{replaceChildren:()=>events.push('clear')},
+  threadIndex:[{id:'chat_current',title:'Current local chat',updated:10}],
+  conversationApi:async()=>{
+   ctx.ownerHeaders={Authorization:'Bearer second-owner'};
+   return {sessions:[{id:'chat_foreign_1234',title:'Another wallet conversation',updated:20}]};
+  },
+  save:()=>events.push('save'),renderConversationFolders:()=>events.push('render'),THREAD_INDEX:'threads'
+ };
+ const refresh=vm.runInNewContext(ui.slice(begin,end)+';refreshConversationFolders',ctx);
+ await refresh();
+ assert.deepEqual(ctx.threadIndex.map(x=>x.id),['chat_current']);
+ assert.deepEqual(events,['clear'],'stale owner response must not be saved or rendered');
+ assert.match(ctx.chatsMessage.textContent,/Owner connection changed/i);
+});
+
 test('History switching never discards unsent photos, typed work or an unsaved current conversation',async()=>{
  const begin=ui.indexOf('async function openConversation(id){');
  const end=ui.indexOf('function startConversation(',begin);
