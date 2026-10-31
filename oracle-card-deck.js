@@ -364,7 +364,7 @@ window.addEventListener('quantaphi:feed-updated',e=>{
  feedState=readDirections();
  updateTabs();predict();
 });
-Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261030-exclusive-following1'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1'),
  import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
  directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
