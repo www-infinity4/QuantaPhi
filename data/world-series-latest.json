@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-30T21:22:35.667612Z",
+  "checked_at": "2026-10-31T00:56:55.910749Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 8
+      "articles_selected": 10
     },
     {
       "publisher": "CBS Sports",
@@ -18,12 +18,34 @@
   ],
   "articles": [
     {
+      "title": "He's waited his entire life for a Brewers title. Now, his celebration has gone viral",
+      "url": "https://www.mlb.com/news/brewers-fan-celebrates-world-series-win",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-31T00:22:54Z",
+      "summary": "",
+      "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
       "title": "A parade 44 years in the making, Brewers celebrate title with fans",
       "url": "https://www.mlb.com/news/brewers-2026-world-series-championship-parade",
       "publisher": "MLB.com",
-      "published_at": "2026-10-30T18:39:00Z",
+      "published_at": "2026-10-30T22:20:00Z",
       "summary": "",
       "author": "Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Rays decline Martinez and Mullins' contract options, making them free agents",
+      "url": "https://www.mlb.com/news/rays-decline-mutual-options-with-nick-martinez-cedric-mullins",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-30T21:54:27Z",
+      "summary": "",
+      "author": "Adam Berry",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -322,28 +344,6 @@
       "summary": "Misiorowski has been good but not his usual level of great in the playoffs ... will that change in World Series Game 5?",
       "author": "Julian McWilliams",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/ef010e72-e146-4436-9c52-bcfac493e930/misiorowski-getty-2.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Rays stay alive vs. Brewers in extra-innings World Series classic; Colts begin NFL trade deadline sale",
-      "url": "https://www.cbssports.com/mlb/news/rays-brewers-world-series-classic-mlb-colts-nfl-trade-deadline-sale/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T12:44:32Z",
-      "summary": "Plus the Top 100 And 1 college basketball teams for the 2026-27 season",
-      "author": "Carter Bahns",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/8f773b61-3ae0-40e5-9e7e-8f3e6e71bdd3/gettyimages-2301840807-1.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Nick Martinez, bullpen save the Rays from World Series elimination, but Game 4 win merely a stay of execution",
-      "url": "https://www.cbssports.com/mlb/news/world-series-game-4-rays-bullpen-elimination-nick-martinez/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T05:04:16Z",
-      "summary": "The Rays had to use their Game 5 starter in relief in Game 4, but they got the win and for now, that's what matters",
-      "author": "Matt Snyder",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/96d77e2a-d212-46a0-96a5-4e50c685734e/martinez-getty-1.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
