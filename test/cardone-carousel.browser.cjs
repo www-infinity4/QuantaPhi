@@ -43,6 +43,17 @@ test('Gary Cardone appears once, inside the carousel, and survives Next/Previous
    await page.evaluate(()=>{window.__qaGary=document.getElementById('churchOfIAmCard')});
    await chooseGary();
    let state=await metrics();
+   if(state.parent!=='oracleCardStage'){
+    const diag=await page.evaluate(()=>({
+     deckStatus:document.getElementById('oracleCardStatus')?.textContent,
+     stage:document.getElementById('oracleCardStage')?.innerText?.slice(0,400),
+     chosen:document.getElementById('oracleCardChooser')?.value,
+     parentTag:document.getElementById('churchOfIAmCard')?.parentElement?.tagName,
+     profileParent:document.getElementById('quantaProfileCard')?.parentElement?.id,
+     profileHidden:document.getElementById('quantaProfileCard')?.hidden,
+     activeTab:[...document.querySelectorAll('[data-oracle-feed]')].filter(x=>x.getAttribute('aria-selected')==='true').map(x=>x.dataset.oracleFeed)
+    }));console.error('ORACLE_DIAGNOSTIC',JSON.stringify(diag));
+   }
    assert.equal(state.count,1);assert.equal(state.parent,'oracleCardStage');assert.notEqual(state.display,'none');
    await page.locator('#oracleCardNext').click();
    state=await metrics();assert.equal(state.count,1);assert.equal(state.display,'none');assert.equal(state.same,true);
