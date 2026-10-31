@@ -71,6 +71,7 @@ function stageCard(stage,mountTools){
  }
  async function loadPRs(){
   const version=++selectionVersion,r=selectedRepo();prs.replaceChildren();prRecords=[];clear();
+  if(stage.mode==='requirements'){issueRecords=[];selectIssue.replaceChildren(node('option','','Copilot issues not loaded for this repository'));}
   if(!active||!r){prs.append(node('option','','No authorized repository'));return;}
   const accountId=active.id;
   const result=await call('/github/copilot',{id:accountId,repository:r.name,action:'prs'});
@@ -98,7 +99,7 @@ function stageCard(stage,mountTools){
    active=(accounts.accounts||[]).find(a=>a.provider==='github'&&a.status==='connected'&&a.expiresAt>Date.now()+30000)||null;
    sign.textContent=active?'Reconnect GitHub':'Sign in with GitHub';
    sign.dataset.available=String(gh?.configured===true);
-   if(!active){authorized=[];repos.replaceChildren();prs.replaceChildren();setStatus(gh?.configured?'Use Sign in with GitHub here to authorize this card in a popup.':'GitHub authorization connector not configured.');return;}
+   if(!active){authorized=[];prRecords=[];issueRecords=[];selectionVersion++;clear();repos.replaceChildren();prs.replaceChildren();selectIssue.replaceChildren();setStatus(gh?.configured?'Use Sign in with GitHub here to authorize this card in a popup.':'GitHub authorization connector not configured.');return;}
    const result=await call('/github/repositories',{id:active.id});
    authorized=(result.repositories||[]).filter(r=>r.permissions?.read);
    repos.replaceChildren();for(const r of authorized){const o=node('option','',r.name+(r.permissions?.write?'':' · read only'));o.value=r.name;repos.append(o);}
