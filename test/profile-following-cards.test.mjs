@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {profileComplete,PROFILE_KEY} from '../quanta-profile-card.mjs';
+import {profileComplete,readProfileInterests,PROFILE_KEY} from '../quanta-profile-card.mjs';
 import {cleanFeedState,feedCandidates,toggleFollowing} from '../quanta-feed-rank.mjs';
 
 const cards=[
@@ -32,8 +32,11 @@ test('profile is optional, local-only and completion is explicit',()=>{
   assert.equal(profileComplete(),false);
   stored=JSON.stringify({displayName:'A',complete:true});
   assert.equal(profileComplete(),true);
+  stored=JSON.stringify({complete:true,interests:['Music','Sports','INVALID']});
+  assert.deepEqual(readProfileInterests(),['Music','Sports']);
   stored='not json';
   assert.equal(profileComplete(),false);
+  assert.deepEqual(readProfileInterests(),[]);
  }finally{if(old===undefined)delete globalThis.localStorage;else globalThis.localStorage=old}
  const profile=source('quanta-profile-card.mjs');
  assert.match(profile,/localStorage\.setItem\(PROFILE_KEY/);
