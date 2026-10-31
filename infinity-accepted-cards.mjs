@@ -1,5 +1,6 @@
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
 import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs';
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
 const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
 export function cardImageCandidates(card){
@@ -50,7 +51,15 @@ export function mountAcceptedWebsiteActions(host,card,{reader=readCardWebsite}={
   buttons.forEach(b=>b.setAttribute('aria-expanded','false'));selected?.focus();
  });
  actions.style.setProperty('--iac-action-count',Math.min(3,buttons.length)||1);
- if(!buttons.length)status.textContent='Website actions are awaiting verification.';
+ if(!buttons.length){
+  // A real, explicit manufacturer link is more useful than an empty panel.
+  // Do not imply that a particular product or price has been verified.
+  const original=node('a','Browse official products ↗','iac-web-action iac-direct');
+  original.href=trusted.official;original.target='_blank';original.rel='noopener noreferrer';
+  original.setAttribute('aria-label','Browse '+trusted.name+' official website');
+  actions.append(original);
+  status.textContent='Specific product listings have not been verified for this card.';
+ }
  box.append(actions);if(buttons.length>3)box.append(more);box.append(status,close,result);host.append(box);
  return {box,buttons,result};
 }
@@ -82,7 +91,8 @@ export function createAcceptedCard(card){
  const affiliate=node('a','Request affiliate product ↗','iac-official iac-affiliate-link');
  affiliate.href='/infinity-affiliates.html?brand='+encodeURIComponent(card.id);
  affiliate.setAttribute('aria-label','Request affiliation for '+card.name+' products');more.append(official,affiliate,source);content.append(more);
- article.append(heading,title,media,content);return article;
+ article.append(heading,title,media,content);
+ mountRotatingSpotlights(article,card);return article;
 }
 function mount(){
  const bank=document.getElementById('infinityAcceptedCards');

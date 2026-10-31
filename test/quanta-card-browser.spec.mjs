@@ -145,7 +145,7 @@ test('GUESS real denim purchase card and app-installer disclosure remain distinc
  const card=page.locator('#oracleCardStage [data-source-id="guess-g11-light"]');
  await expect(card).toBeVisible({timeout:20000});
  await expect(card.locator('img.qbp-photo')).toHaveAttribute('src',/W4BA0YD5CCA-GJRV/);
- await expect(card.getByText('$89.00',{exact:false})).toBeVisible();
+ await expect(card.locator('.qbp-price')).toHaveText('Current price at original store');
  await expect(page.locator('details.q-install-details')).not.toHaveAttribute('open');
  await page.locator('details.q-install-details summary').click();
  await expect(page.getByRole('link',{name:'Install Bubbles in Chrome'})).toBeVisible();

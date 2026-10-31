@@ -45,6 +45,30 @@
 .vbs-offer{padding:13px 14px;border-left:4px solid #b92d36;background:#fff3cf;border-radius:9px;color:#5b3018;font-size:14px;line-height:1.5;font-weight:800}
 .vbs-offer-expired{background:#f4f1ee;border-color:#8a8b8d;color:#666;font-weight:600}
 
+
+/* Photographic product heroes must fill the card, rather than magnifying an icon. */
+.vbs-card[data-source-id="gmc-denali-2026"] .vbs-art,
+.vbs-card[data-source-id="burger-king-chicken-2026"] .vbs-art{
+ padding:0;min-height:0;background:#f7f7f5;overflow:hidden;
+}
+.vbs-card[data-source-id="gmc-denali-2026"] .vbs-identity,
+.vbs-card[data-source-id="burger-king-chicken-2026"] .vbs-identity{
+ display:block;width:100%;max-width:none;min-width:0;height:clamp(210px,60vw,340px);
+ max-height:none;object-fit:cover;filter:none;
+}
+.vbs-card[data-source-id="burger-king-chicken-2026"] .vbs-identity{object-fit:contain;background:#fff}
+.vbs-archive-note{margin:10px 0;padding:11px 12px;border-left:4px solid #507798;
+ background:#edf5fa;border-radius:8px;font:700 13px/1.45 system-ui;color:#23445e}
+
+/* McDonald's Big Mac: actual corporate menu photography, not logo filler. */
+.vbs-card[data-source-id="mcdonalds-big-mac-deals"] .vbs-art{
+ padding:8px;min-height:245px;background:linear-gradient(145deg,#b2222d,#ffb900);
+}
+.vbs-card[data-source-id="mcdonalds-big-mac-deals"] .vbs-identity{
+ display:block;width:100%;max-width:none;min-width:0;height:clamp(220px,60vw,350px);
+ max-height:none;object-fit:contain;filter:drop-shadow(0 8px 12px #0002);
+}
+
 /* Product-forward Infinity card for the owner-requested Tide Quick Card.
    Authentic source image; no fabricated prices, affiliate status or coupons. */
 .vbs-card[data-source-id="tide-original-liquid"] .vbs-art{

@@ -8,6 +8,7 @@ import argparse
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 import json
+from html import unescape
 from pathlib import Path
 import re
 import urllib.request
@@ -50,17 +51,34 @@ def parse_rss(body, checked_at=None):
         if key in seen:
             continue
         seen.add(key)
-        related = []
+        def safe_url(value):
+            try:
+                parsed = urlsplit(value)
+                host = parsed.hostname or ""
+                return value[:1800] if parsed.scheme == "https" and "." in host and not parsed.username and not parsed.password and not parsed.port and not host.endswith((".local", ".localhost")) and not re.fullmatch(r"[\d.]+", host) else None
+            except ValueError:
+                return None
+        def caption(value, limit=220):
+            return re.sub(r"\s+", " ", re.sub(r"<[^>]*>", "", unescape(value or ""))).strip()[:limit]
+        related, stories = [], []
         for news in item.findall(NAMESPACE + "news_item")[:4]:
             href = (news.findtext(NAMESPACE + "news_item_url") or "").strip()
-            parsed = urlsplit(href)
-            if parsed.scheme == "https" and parsed.netloc and not parsed.username and not parsed.password:
+            if safe_url(href):
                 related.append(href[:1000])
+                title = caption(news.findtext(NAMESPACE + "news_item_title"), 180)
+                if title:
+                    stories.append({"url": href[:1000], "title": title,
+                                    "publisher": caption(news.findtext(NAMESPACE + "news_item_source"), 90),
+                                    "description": caption(news.findtext(NAMESPACE + "news_item_snippet")),
+                                    "image_url": safe_url(news.findtext(NAMESPACE + "news_item_picture") or "")})
         rows.append({
             "query": query,
             "approx_searches": traffic,
             "published_at": published_at.isoformat().replace("+00:00", "Z"),
             "related_news_urls": related,
+            "image_url": safe_url(item.findtext(NAMESPACE + "picture") or ""),
+            "image_credit": caption(item.findtext(NAMESPACE + "picture_source"), 90),
+            "news": stories,
         })
         if len(rows) >= 100:
             break
