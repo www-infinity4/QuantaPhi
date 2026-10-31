@@ -1490,6 +1490,7 @@ if(embedded&&bubbleId==='coliseum-zeus-assistant'){
   zeusArchive=mountZeusArchive({
    root:chatsPanel,
    snapshot:()=>({id:activeThread,messages:messages.slice(),thread:threadIndex.find(t=>t.id===activeThread),keepChat}),
+   localArchive:()=>threadIndex.map(t=>({id:t.id,messages:t.id===activeThread?messages.slice():readThread(t.id),thread:t})),
    openThread:async(thread,rows)=>{
     if(busy)throw Error('Finish the current AI reply before changing conversations');
     if(keepChat)saveThread();
