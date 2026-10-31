@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parsePublicProfile,classifyPost,scanPublicX} from '../workers/bubbles-public-x/worker.mjs';
+import reader,{parsePublicProfile,classifyPost,scanPublicX} from '../workers/bubbles-public-x/worker.mjs';
 const x=(id,body,author='YahooPingcwlz')=>
  '<div role="link" data-href="/'+author+'/status/'+id+'"><a href="/'+author+'/status/'+id+'">Link</a>'+
  '<article><a href="/'+author+'">'+author+'</a><div class="max-w-full text-body whitespace-pre-wrap wrap-break-word" dir="auto"><span>'+body+'</span></div></article></div>';
@@ -88,4 +88,18 @@ test('Integra scan uses its own profile, preserves source URL and scan key',asyn
  assert.equal(post.args[1],'https://x.com/IntegraAI/status/'+id);
  const scan=writes.find(w=>w.sql.includes('owner_x_scans'));
  assert.equal(scan.args[0],'IntegraAI');
+});
+
+test('owner inbox never promotes Integra context to an owner request',async()=>{
+ const queries=[];
+ const env={DB:{prepare(sql){queries.push(sql);return{
+  bind(){return this},async all(){return{results:[]}},async first(){return null}
+ }}}};
+ const inbox=await (await reader.fetch(new Request('https://quantaphi.org/api/bubbles/public-x/inbox'),env)).json();
+ assert.equal(inbox.author,'YahooPingcwlz');
+ assert.match(queries.at(-1),/url LIKE 'https:\/\/x\.com\/YahooPingcwlz\/status\/%'/);
+ const context=await (await reader.fetch(new Request('https://quantaphi.org/api/bubbles/public-x/context'),env)).json();
+ assert.equal(context.author,'IntegraAI');
+ assert.equal(context.authority,'reference_only');
+ assert.match(queries.at(-1),/url LIKE 'https:\/\/x\.com\/IntegraAI\/status\/%'/);
 });
