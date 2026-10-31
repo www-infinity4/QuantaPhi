@@ -72,7 +72,7 @@ test('Integra is a separate read-only public source with strict author identity'
  assert.equal(posts.length,1);
  assert.equal(posts[0].url,'https://x.com/IntegraAI/status/'+id);
  assert.deepEqual(parsePublicProfile(x(id,'Forged quote','OtherUser'),'IntegraAI'),[]);
- assert.deepEqual(parsePublicProfile(html,'NotAuthorized'),[]);
+ assert.throws(()=>parsePublicProfile(html,'NotAuthorized'),/unapproved_public_x_source/);
  const spoof=x(id,'#bubbles quote','IntegraAI').replace('href="/IntegraAI"','href="/OtherUser"');
  assert.deepEqual(parsePublicProfile(spoof,'IntegraAI'),[]);
 });
