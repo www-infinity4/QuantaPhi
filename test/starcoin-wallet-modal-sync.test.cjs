@@ -8,11 +8,11 @@ const end=js.indexOf('  let cloudBalances={};',start);
 assert.ok(start>0&&end>start,'extract deployed StarQuest wallet refresh');
 const implementation=js.slice(start,end);
 const token='sq_'+'b'.repeat(40);
-function harness(username='device_example',remoteName=username,hasLocalToken=false,maskedKey=username){
+function harness(username='device_example',remoteName=username,hasLocalToken=false,maskedKey=username,cloudOverrides={}){
  const messages=[],calls=[];
  const session={key:maskedKey,username};
  const profile={tokens:47,pendingShareCredits:9,shareCount:100,ledger:[]};
- const state={username:remoteName,starCoins:49,pendingShareCredits:5,shareCount:120,ledger:[]};
+ const state={username:remoteName,starCoins:49,pendingShareCredits:5,shareCount:120,ledger:[],...cloudOverrides};
  const ctx={
    console,Date,Number,String,Map,Array,AbortSignal:{timeout:()=>undefined},
    document:{querySelectorAll:()=>[{set textContent(v){messages.push(v)},dataset:{}}]},
@@ -50,6 +50,16 @@ test('a different authenticated identity never overwrites the displayed wallet',
  assert.equal(h.profile.tokens,47);
  assert.equal(h.profile.pendingShareCredits,9);
  assert.match(h.messages.at(-1),/Cached balance/);
+});
+test('incomplete StarQuest reply never changes a cached positive wallet into zero',async()=>{
+ for(const state of [{starCoins:undefined},{starCoins:null},{pendingShareCredits:undefined},{shareCount:undefined},{username:''},{starCoins:-1},{pendingShareCredits:100}]){
+  const h=harness('device_example','device_example',false,'device_example',state);
+  const result=await h.api.refreshStarCoinCloud();
+  assert.equal(result,null);
+  assert.equal(h.profile.tokens,47);
+  assert.equal(h.profile.pendingShareCredits,9);
+  assert.match(h.messages.at(-1),/Cached balance/);
+ }
 });
 test('both popup opening handlers recheck the server rather than repaint the cache',()=>{
  assert.match(js,/if\(!prebuiltPanel\.hidden\)refreshWalletOnOpen\(\)/);
