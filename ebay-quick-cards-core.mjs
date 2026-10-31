@@ -64,12 +64,16 @@ export function normalizeEbayItem(raw,mode){
  const price=Number.isFinite(n)&&n>=0&&/^[A-Z]{3}$/.test(value?.currency||'')?
   new Intl.NumberFormat('en-US',{style:'currency',currency:value.currency}).format(n):'Price unavailable';
  const seller=clean(raw.seller?.username,65);
+ const shippingCost=raw.shippingOptions?.find?.(x=>x.shippingCost?.value!==undefined)?.shippingCost;
+ const amount=Number(shippingCost?.value);
+ const shipping=Number.isFinite(amount)&&amount>=0&&/^[A-Z]{3}$/.test(shippingCost?.currency||'')?
+  amount===0?'Free shipping':new Intl.NumberFormat('en-US',{style:'currency',currency:shippingCost.currency}).format(amount)+' shipping':'Shipping: check eBay';
  const bidCount=Number.isSafeInteger(raw.bidCount)&&raw.bidCount>=0?raw.bidCount:null;
  const ends=raw.itemEndDate&&Number.isFinite(Date.parse(raw.itemEndDate))?raw.itemEndDate:'';
  return {
   id:clean(raw.itemId||url,180),url,title,
   image:safeEbayImageUrl(raw.image?.imageUrl||''),
-  price,seller,bidCount,ends,
+  price,seller,shipping,bidCount,ends,
   mode,condition:clean(raw.condition,70),
   sellerFeedback:Number.isFinite(Number(raw.seller?.feedbackPercentage))&&raw.seller?.feedbackPercentage!==undefined?Number(raw.seller.feedbackPercentage):null,
   topRated:raw.topRatedBuyingExperience===true,
