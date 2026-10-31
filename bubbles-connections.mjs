@@ -164,7 +164,7 @@ export class AccountConnections {
     this.trackHandoff(saved,null,onComplete);
     return true;
   }
-  async connect(provider,actions,onComplete) {
+  async connect(provider,actions,onComplete,options={}) {
     if(this.pending)throw Error('Finish the current sign-in window first.');
     // Open synchronously on the user's tap where supported. Android WebViews
     // may block window.open; use same-window navigation with session-bound
@@ -172,7 +172,7 @@ export class AccountConnections {
     // Navigate the initiating browser directly. Android Chrome/PWA/WebView must
     // never receive an empty popup while /start is resolving asynchronously.
     // The callback resumes from this tab's sealed short-lived session state.
-    const sameWindow=Boolean(this.root.location?.assign&&this.root.sessionStorage);
+    const sameWindow=options.preferPopup===true?false:Boolean(this.root.location?.assign&&this.root.sessionStorage);
     let popup=null;
     if(!sameWindow){
       try{popup=this.root.open?.('about:blank','bubbles-account-connect','popup,width=520,height=720')||null;}catch{}
