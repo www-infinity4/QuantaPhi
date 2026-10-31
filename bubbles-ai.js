@@ -1865,7 +1865,9 @@ async function openConversation(id){
  if(ownerReady){
   try{
    const result=await conversationApi('sessions-get',id);
-   if(!Array.isArray(result.messages)||!result.session)throw Error('cloud_folders_not_deployed');
+   // Fail closed if the cloud response belongs to a different session; never
+    // display or persist another thread's turns in this device's History.
+    if(!Array.isArray(result.messages)||!result.session||result.session.id!==id)throw Error('cloud_folder_identity_mismatch');
    if(result.session?.title){const entry=threadIndex.find(x=>x.id===id);if(entry)entry.title=result.session.title;}
    // An empty or not-yet-synced cloud folder must not erase saved device History.
    // Prefer verified nonempty cloud turns, but retain the local copy on empty.
