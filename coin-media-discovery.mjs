@@ -4,7 +4,7 @@ const KINDS=['music','movies','science'];
 // Partition private viewing preferences by the selected StarQuest account on this
 // device. Do not copy credentials, wallet IDs, personal titles or API tokens into
 // the media settings or send the selected account to YouTube.
-function preferenceKey(){
+export function preferenceKey(){
  let username='';
  try{username=String(window.ControlPhi?.wallet?.()?.username||'').trim()}catch{}
  if(!username||username.toLowerCase()==='guest'){
