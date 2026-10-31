@@ -59,3 +59,29 @@ test('tool buttons invoke actual owner-gated GitHub routes instead of a model cl
  assert.match(source,/result\.error==='github_runtime_credential_missing'/);
  assert.match(source,/Bubbles direct GitHub is not connected to a server-side write credential/);
 });
+
+test('Android ChatGPT reply may finish after pickup without the 12-second fallback',async()=>{
+ const bridge=source.slice(source.indexOf('function nativeChatGPT('),source.indexOf('if(nativeOverlay)document.documentElement'));
+ const timers=new Map();
+ let counter=0;
+ const env={
+  nativeOverlay:true,nativeGPTAvailable:true,
+  crypto:{randomUUID:()=> '00000000-0000-4000-8000-000000000001'},
+  setTimeout(fn,ms){const id=++counter;timers.set(id,{fn,ms,active:true});return id;},
+  clearTimeout(id){if(timers.has(id))timers.get(id).active=false;}
+ };
+ vm.createContext(env);
+ vm.runInContext('let nativeGPTRequest=null;\n'+bridge+
+  '\nglobalThis.claimNative=()=>{nativeGPTRequest.taken=true;nativeGPTRequest.onPickedUp();};'+
+  '\nglobalThis.finishNative=()=>{const request=nativeGPTRequest;nativeGPTRequest=null;request.resolve("real ChatGPT reply");};',env);
+ const reply=env.nativeChatGPT('hello');
+ assert.equal([...timers.values()].at(-1).ms,12000,'unclaimed requests must fail fast');
+ env.claimNative();
+ assert.ok([...timers.values()].at(-1).ms>=90000,'claimed Android model request gets its actual inference window');
+ assert.ok(!timers.get(1).active,'pickup timer must be canceled after claim');
+ env.finishNative();
+ assert.equal(await reply,'real ChatGPT reply');
+ assert.ok([...timers.values()].every(t=>!t.active),'completion cancels timeouts');
+ const drain=source.slice(source.indexOf('drainNativeGPTRequest:()=>'),source.indexOf('finishNativeGPTRequest:(id,output,error)=>'));
+ assert.match(drain,/onPickedUp\(\)/,'the native drain must switch to the claimed timeout');
+});
