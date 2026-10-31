@@ -30,7 +30,8 @@ export function resumeAuthReturn(host=window) {
    return false;
   }
   if(callbackProvider&&callbackProvider!==pending.provider)return false;
-  const destination=pending.provider==='meta'&&/^\/source-quick-card\.html\?card=(?:facebook|instagram)$/.test(pending.returnPath||'')?pending.returnPath:\n   pending.returnPath==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
+  const destination=pending.provider==='meta'&&/^\/source-quick-card\.html\?card=(?:facebook|instagram)$/.test(pending.returnPath||'')?pending.returnPath:
+   pending.returnPath==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
   host.location.replace(destination);
   return true;
  }catch{return false;}
