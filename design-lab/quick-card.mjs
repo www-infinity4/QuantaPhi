@@ -23,7 +23,8 @@ function createCard(){
  const go=make('button','lab-card-go','⏻  RUN 10-SOURCE CHAIN');go.type='button';
  const stop=make('button','lab-card-stop','Stop');stop.type='button';stop.disabled=true;
  const open=make('a','lab-card-open','Full design lab ↗');open.href='/design-lab/index.html';
- actions.append(go,stop,open);
+ const kits=make('a','lab-card-open','Open component kits ↗');kits.href='/design-lab/index.html#componentKit';
+ actions.append(go,stop,open,kits);
  const status=make('p','lab-card-status','Ready. Each source will be checked in QuantaPhi’s public web index.');status.setAttribute('role','status');
  const results=make('div','lab-card-results');
  const rule=make('p','lab-card-fine','Independent public-index results. Not 10 website sign-ins or direct scraping.');
