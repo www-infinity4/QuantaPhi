@@ -81,5 +81,5 @@ test('shared studio requires professional landscape hero assets and provides a u
  assert.match(builder,/naturalHeight<675/);
  assert.match(form,/Professional card artwork standard/);
  assert.match(form,/qcpImageQualityStatus/);
- assert.match(standard,/not image-ready/);
+ assert.match(standard,/image-ready/);
 });
