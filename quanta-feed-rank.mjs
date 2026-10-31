@@ -62,9 +62,19 @@ export function feedScore(card,state){
  // profile fields enter the anonymous feed activity ledger.
  const interests=Array.isArray(state.profileInterests)?state.profileInterests:[];
  const features=[card.category,card.feature,card.study].filter(x=>typeof x==='string').join(' ').toLowerCase();
- const interestMatch=interests.some(topic=>typeof topic==='string'&&
-   ['Shopping','Music','Stories','Science','Television','History','DIY','Sports','Research'].includes(topic)&&
-   new RegExp('\\b'+topic.toLowerCase()+'\\b','i').test(features))?24:0;
+ const interestSignals={
+  Shopping:/\\b(shopping|shop|store|product|price|deal|marketplace|retail)\\b/i,
+  Music:/\\b(music|radio|audio|listen|song|podcast|spaces)\\b/i,
+  Stories:/\\b(stories|story|reader|book|fiction|write|literature)\\b/i,
+  Science:/\\b(science|physics|experiment|research|nasa|engineering)\\b/i,
+  Television:/\\b(television|tv|watch|fox|broadcast|channel|video)\\b/i,
+  History:/\\b(history|historical|museum|antique|vintage|heritage)\\b/i,
+  DIY:/\\b(diy|repair|restore|build|kit|make|schematic)\\b/i,
+  Sports:/\\b(sports|baseball|basketball|nba|mlb|football|game)\\b/i,
+  Research:/\\b(research|study|source|search|investigate|knowledge)\\b/i
+ };
+ const interestMatch=interests.some(topic=>Object.prototype.hasOwnProperty.call(interestSignals,topic)&&
+   interestSignals[topic].test(features))?24:0;
  return clicks*8+category*2+interestMatch+(saved?12:0)+
   Math.min(70,Math.max(0,Number(state.quantScores?.[card.id])||0))-
   Math.min(40,seen*2);
