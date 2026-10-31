@@ -332,6 +332,7 @@ if(!threadIndex.some(t=>t.id===activeThread)){
  save(THREAD_INDEX,threadIndex);
 }
 const readThread=id=>(data(THREAD_PREFIX+id,[])||[]).filter(m=>m&&['user','assistant'].includes(m.role)&&typeof m.text==='string').slice(-400);
+let zeusArchive=null;
 let messages=keepChat?readThread(activeThread):[];
 messages=messages.map(m=>({...m,sessionId:activeThread,id:m.id||crypto.randomUUID(),at:m.at||Date.now(),text:m.text.slice(0,6000)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
@@ -452,6 +453,10 @@ function persistChat(){
  void longMemory?.appendAll(messages.slice(-3));
  const saved=saveThread();
  if(saved&&!embedded&&ownerReady)void syncCloudFolder(activeThread,messages.slice(-3));
+ if(saved&&zeusArchive){
+  const row=threadIndex.find(t=>t.id===activeThread);
+  zeusArchive.queue(activeThread,messages,row);
+ }
  return saved;
 }
 const card=create('section','ba-card ba-studio-card');
@@ -1487,6 +1492,35 @@ if(!embedded){
  }).catch(()=>{quickState.textContent='Tap to check ChatGPT access with the verified owner session.';});
 }
 document.body.append(launcher,panel);
+
+/* Zeus 6.2 uses the real Bubbles transcript, not a disconnected demo archive.
+ * Only a verified wallet and explicit consent enable private cloud upload. */
+if(embedded&&bubbleId==='coliseum-zeus-assistant'){
+ void import('/coliseum/zeus-history-client.mjs?v=20261031-private1').then(({mountZeusArchive})=>{
+  zeusArchive=mountZeusArchive({
+   root:chatsPanel,
+   snapshot:()=>({id:activeThread,messages:messages.slice(),thread:threadIndex.find(t=>t.id===activeThread),keepChat}),
+   localArchive:()=>threadIndex.map(t=>({id:t.id,messages:t.id===activeThread?messages.slice():readThread(t.id),thread:t})),
+   openThread:async(thread,rows)=>{
+    if(busy)throw Error('Finish the current AI reply before changing conversations');
+    if(keepChat)saveThread();
+    const id=thread.id;
+    if(!threadIndex.some(t=>t.id===id))threadIndex.push({id,title:thread.title||'Zeus conversation',updated:Date.parse(thread.updated_at)||Date.now()});
+    else{const existing=threadIndex.find(t=>t.id===id);existing.title=thread.title||existing.title;}
+    activeThread=id;
+    try{sessionStorage.setItem(TAB_THREAD,id);sessionStorage.setItem(EXPLICIT_THREAD,'1')}catch{}
+    messages=rows.filter(m=>m&&['user','assistant'].includes(m.role)&&typeof m.text==='string')
+     .map(m=>({id:m.id,role:m.role,text:m.text,at:Date.parse(m.created_at)||Date.now(),sessionId:id}));
+    conversation.replaceChildren();
+    for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
+    greeted=messages.length>0;saveThread();renderConversationFolders();
+    chatsPanel.open=false;
+    status.textContent='Zeus conversation recovered from your verified Cloudflare history.';
+   }
+  });
+ }).catch(()=>{status.textContent='Zeus cloud history controls could not load. This device history is unchanged.';});
+}
+
 // Fit the visible phone viewport, including the space remaining above its keyboard.
 const chatFitStyle=create('style');
 chatFitStyle.textContent=`

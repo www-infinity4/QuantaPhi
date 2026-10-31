@@ -1,4 +1,5 @@
 import {BETA_CAPACITY,clean,validModel,validSector,validIdea,validMessage,allowsOrigin,editionPolicy,publicMemberLabel} from '../../coliseum/room-api-core.mjs';
+import {hasZeusHistoryBindings,handleZeusHistory} from './zeus-history.mjs';
 /* Independent Infinity Coliseum beta API, NOT an OpenAI model.
  * Starts disabled and requires a real StarQuest device credential, D1 migration,
  * a 32+ character member pseudonymization secret, and explicit beta allowlist.
@@ -28,7 +29,7 @@ async function stateUser(req){
  }finally{clearTimeout(timer)}
 }
 async function pseudonym(username,pepper){
- const h=await crypto.subtle.importKey('raw',new TextEncoder().encode(pepper),'HMAC',{hash:'SHA-256'},false,['sign']);
+ const h=await crypto.subtle.importKey('raw',new TextEncoder().encode(pepper),{name:'HMAC',hash:'SHA-256'},false,['sign']);
  const digest=await crypto.subtle.sign('HMAC',h,new TextEncoder().encode(username));
  return [...new Uint8Array(digest)].slice(0,16).map(x=>x.toString(16).padStart(2,'0')).join('');
 }
@@ -68,6 +69,15 @@ async function handler(req,env){
   {id:'athena',version:'7.0',free:false,enabled:false,proposedPrice:23},
   {id:'hephaestus',version:'7.3',free:false,enabled:false,proposedPrice:100}
  ]});
+ // Private Zeus transcripts are owned by a verified StarQuest wallet, never by
+ // public Coliseum room membership. No beta invitation or paid plan required.
+ if(path.startsWith('/v1/private/zeus/')){
+  if(!hasZeusHistoryBindings(env))return error(req,'history_not_configured',503);
+  let user;
+  try{user=await stateUser(req)}catch{return error(req,'signin_required',401)}
+  const member=await pseudonym(user,env.MEMBER_PEPPER);
+  return handleZeusHistory(req,env,member,(data,status=200)=>reply(req,data,status));
+ }
  if(!ready(env))return error(req,'beta_not_enabled',503);
  const db=env.COLISEUM_DB;
  let member;
