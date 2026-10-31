@@ -45,3 +45,16 @@ test('unverified generic plugin endpoints clearly identify directory handoff',()
   assert.equal(pluginQuickCard(input),null);
  }
 });
+
+test('specific ChatGPT plugin handoffs are verified destinations, never inherited sessions',()=>{
+ for(const id of ['ajaxx-data-scrubber','flaim-fantasy','steer-astro','freddy','daily-tarot']){
+  const card=pluginQuickCard('plugin-'+id);
+  assert.ok(card,'missing '+id);
+  const link=new URL(card.pluginUrl);
+  assert.equal(link.origin,'https://chatgpt.com');
+  assert.match(link.pathname,/^\/plugins\//);
+  assert.equal(link.username,'');assert.equal(link.password,'');
+  assert.notEqual(card.pluginUrl,card.route);
+ }
+ assert.equal(pluginQuickCard('plugin-shopify').pluginUrl,null);
+});
