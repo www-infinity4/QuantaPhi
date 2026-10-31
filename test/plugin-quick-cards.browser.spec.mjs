@@ -41,16 +41,52 @@ test('directory-only apps do not pretend to be independently signed in',async({p
  await expect(page.getByRole('link',{name:'Find in ChatGPT Plugins ↗'})).toHaveAttribute('href','https://chatgpt.com/plugins');
 });
 
-test('public site search keeps results within the card and never impersonates a signed-in provider',async({page})=>{
+test('verified public-site reads and search results render within the Infinity card',async({page})=>{
  await prepare(page);
+ const observed=[];
+ await page.route('**/v1/cards/website',async route=>{
+  const body=route.request().postDataJSON();observed.push(body);
+  await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({
+   ok:true,cardId:body.cardId,action:body.action,
+   provider:body.action==='search'?'TinyFish Search':'TinyFish Fetch',
+   sourceUrl:'https://www.etsy.com/',observedAt:'2026-10-31T07:50:00.000Z',
+   receipt:{id:'synthetic-public-receipt'},
+   items:[{title:'Handmade radio parts',url:'https://www.etsy.com/listing/123',
+    text:'Original publisher listing for tested handcrafted radio components.'}]
+  })});
+ });
  await page.goto(base+'/plugin-quick-cards.html?card=plugin-etsy',{waitUntil:'domcontentloaded'});
+ await page.getByRole('button',{name:'Read website'}).click();
+ await expect(page.locator('.iqp-public-results')).toContainText('Handmade radio parts');
+ await expect(page.locator('.iqp-public-results')).toContainText('synthetic-public-receipt');
+ await expect(page.getByRole('link',{name:'Open original page ↗'})).toHaveAttribute('href','https://www.etsy.com/listing/123');
  const entry=page.getByRole('searchbox',{name:'Search public pages from Etsy'});
  await entry.fill('handmade radios');
- await page.getByRole('button',{name:'Find pages'}).click();
- const frame=page.locator('.iqp-public-results');
- await expect(frame).toBeVisible();
- const target=new URL(await frame.getAttribute('src'),base);
- assert.equal(target.origin,base);
- expect(target.searchParams.get('q')).toBe('site:www.etsy.com handmade radios');
+ await page.getByRole('button',{name:'Search website'}).click();
+ await expect.poll(()=>observed.length).toBe(2);
+ assert.deepEqual(observed.map(r=>[r.cardId,r.action,r.query||'']),[
+  ['plugin-etsy','inspect',''],['plugin-etsy','search','handmade radios']
+ ]);
  await expect(page.locator('.iqp-warning')).toContainText('private feeds, accounts, edits and purchases');
+ await expect(page.locator('iframe')).toHaveCount(0);
+});
+test('failed provider reads show an honest error without fake source data',async({page})=>{
+ await prepare(page);
+ await page.route('**/v1/cards/website',route=>route.fulfill({status:503,contentType:'application/json',
+  body:JSON.stringify({ok:false,error:'tinyfish_not_configured'})}));
+ await page.goto(base+'/plugin-quick-cards.html?card=plugin-etsy',{waitUntil:'domcontentloaded'});
+ await page.getByRole('button',{name:'Read website'}).click();
+ await expect(page.locator('.iqp-public-results')).toContainText('awaiting activation');
+ await expect(page.locator('.iqp-public-results')).not.toContainText('Receipt');
+ await expect(page.getByRole('link',{name:'Open original website ↗'})).toHaveAttribute('href','https://www.etsy.com/');
+});
+test('carousel stays in viewport at additional Android widths',async({page})=>{
+ await prepare(page);
+ for(const width of [320,393,430]){
+  await page.setViewportSize({width,height:800});
+  await page.goto(base+'/plugin-quick-cards.html?card=plugin-spotify',{waitUntil:'domcontentloaded'});
+  await expect(page.locator('#iqpCard h2')).toHaveText('Spotify');
+  await expect(page.locator('body')).toHaveJSProperty('scrollWidth',width);
+  await expect(page.locator('#iqpNext')).toBeVisible();
+ }
 });
