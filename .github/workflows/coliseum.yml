@@ -7,6 +7,7 @@ on:
       - 'test/coliseum-api.test.mjs'
       - 'test/coliseum*'
       - 'test/zeus-session-history.test.mjs'
+      - 'test/zeus-session-history-browser.spec.mjs'
       - 'oracle-card-deck.js'
       - 'index.html'
       - '.github/workflows/coliseum.yml'
@@ -30,6 +31,7 @@ jobs:
           node --check coliseum/coliseum-live.mjs
           node --check coliseum/session-history-core.mjs
           node --check coliseum/session-history.mjs
+          node --check test/zeus-session-history-browser.spec.mjs
           node --check workers/coliseum/worker.mjs
           node --test test/coliseum.test.mjs test/coliseum-api.test.mjs test/zeus-session-history.test.mjs
       - name: Verify prototype has no fabricated live subscription routes
