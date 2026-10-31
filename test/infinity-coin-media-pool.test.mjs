@@ -33,3 +33,22 @@ test('a failed feed does not become an empty verified search result',async()=>{
  const res=await coinMediaRoute(new Request('https://quantaphi.org/api/infinity-coin-media?kind=music'),{fetcher:async()=>{throw Error('offline')}});
  const d=await res.json();assert.equal(d.partial,true);assert.equal(d.feedsAvailable,0);assert.equal(d.count,0);assert.equal(d.ok,true);
 });
+
+test('deployed edge code exposes the same authenticated-free coin feed contract',async()=>{
+ const {default:edge}=await import('../workers/quantaphi-site/worker.js');
+ const original=globalThis.fetch,upstreams=[];
+ try{
+  globalThis.fetch=async(url,options)=>{upstreams.push({url:String(url),options});return new Response(feed,{status:200,headers:{'Content-Type':'application/atom+xml'}})};
+  const result=await edge.fetch(new Request('https://quantaphi.org/api/infinity-coin-media?kind=music',{
+   headers:{Cookie:'private=session',Authorization:'Bearer private-token'}
+  }),{});
+  const body=await result.json();
+  assert.equal(result.status,200);assert.equal(body.items.length,1);assert.equal(body.items[0].id,'abcdefghijk');
+  assert.equal(body.feedsAvailable,1);assert.equal(body.partial,false);
+  assert.match(result.headers.get('cache-control'),/max-age=300/);
+  assert.equal(upstreams.length,1);
+  assert.ok(upstreams[0].url.startsWith('https://www.youtube.com/feeds/videos.xml?channel_id='));
+  assert.equal(upstreams[0].options.headers.Authorization,undefined);
+  assert.equal(upstreams[0].options.headers.Cookie,undefined);
+ }finally{globalThis.fetch=original}
+});
