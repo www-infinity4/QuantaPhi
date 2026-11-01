@@ -16,6 +16,14 @@ class TestAttractionImport(unittest.TestCase):
   self.assertIsNone(imp.normalize(sample(confidence=.2)))
   x=sample();x['geometry']['coordinates']=[-113.2,39];self.assertIsNone(imp.normalize(x))
   x=sample();x['properties']['operating_status']='permanently_closed';self.assertIsNone(imp.normalize(x))
+ def test_padded_download_must_not_infer_colorado_from_missing_region(self):
+  x=sample();x['geometry']['coordinates']=[-105.0,41.005]
+  x['properties']['addresses']=[{'locality':'Cheyenne'}]
+  self.assertIsNone(imp.normalize(x))
+  x=sample();x['properties']['addresses']=[{'locality':'Denver'}]
+  self.assertIsNone(imp.normalize(x))
+  x=sample();x['properties']['addresses']=[{'locality':'Denver','region':'WY'}]
+  self.assertIsNone(imp.normalize(x))
  def test_no_unsafe_website(self):
   x=sample();x['properties']['websites']=['javascript:alert(1)']
   self.assertEqual(imp.normalize(x)['website'],'')
