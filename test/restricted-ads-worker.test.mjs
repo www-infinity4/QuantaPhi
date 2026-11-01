@@ -68,9 +68,9 @@ test('consent persists, but creative stays blocked until jurisdiction approved; 
    throw Error('Unexpected read '+sql);
   },
   async all(){if(sql.includes('FROM restricted_ad_creatives'))return {results:[{...creative,
-   reviewed_at:new Date(Date.now()-DAY).toISOString()}]};throw Error('Unexpected listing')}
+   reviewed_at:new Date(Date.now()-86400000).toISOString()}]};throw Error('Unexpected listing')}
  }}}}};
- const valid={...verdict,expires_at:new Date(Date.now()+DAY).toISOString()};
+ const valid={...verdict,expires_at:new Date(Date.now()+86400000).toISOString()};
  const env={ADS_DB:db,CONSENT_SALT:'a-long-unique-test-secret',
   ELIGIBILITY:{fetch:async()=>Response.json(valid)}};
  const denied=await worker.fetch(request('GET','/v1/restricted-ads/creatives?category=cannabis'),env);
