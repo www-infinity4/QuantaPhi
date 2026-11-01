@@ -2,7 +2,7 @@
  * a merchant endorsement, or a product/health recommendation.
  * Isolated D1: DIRECTORY -> quantaphi-cannabis-directory. Public GET only.
  * A per-visit acknowledgment is NOT proof of age and never unlocks ads. */
-import {STATES,eligibleStore} from '../cannabis-directory-policy.mjs';
+import {STATES,eligibleStore,reviewedQualityStar} from '../cannabis-directory-policy.mjs';
 
 const HEADERS={
   'Cache-Control':'private, no-store, max-age=0',
@@ -29,7 +29,7 @@ const publicRow=row=>{
     source_url:safe.source_url,source_name:clean(safe.source_name,120),
     source_checked_at:clean(safe.verified_at,35),
     license_status:clean(safe.license_status,45)||'unverified',
-    sponsored:false,verified_age:false,quality_star:null,customer_rating:null,
+    sponsored:false,verified_age:false,quality_star:null,quality_sources:[],quality_reviewed_at:null,customer_rating:null,
     image_url:'',price:null,inventory:null,
     disclosure:'Organic source listing; no verified age, endorsement, product offer, or merchant license guarantee.'
   };
@@ -87,6 +87,36 @@ async function receipts(env){
   return reply({regulator_source_runs:regulatorRuns||[],store_ingest_runs:storeRuns||[],
     disclosure:'Source catalog receipts are not store imports. A queued state is not populated; no paid campaigns or license approvals are inferred.'});
 }
+// Only read private moderation evidence for the 24 already-eligible organic
+// records. Missing migration or a D1 read failure fails closed to unrated,
+// never to a fabricated ★ or an unavailable store directory.
+async function enrichQuality(items,env){
+  if(!items.length)return items;
+  try{
+    const ids=items.map(item=>item.id);
+    const placeholders=ids.map(()=>'?').join(',');
+    const {results:decisions}=await env.DIRECTORY.prepare(
+      `SELECT store_id,status,review_status,appeal_status,reviewed_at,expires_at FROM store_quality_decisions WHERE store_id IN (${placeholders})`
+    ).bind(...ids).all();
+    if(!decisions?.length)return items;
+    const {results:evidence}=await env.DIRECTORY.prepare(
+      `SELECT store_id,source_url,source_domain,evidence_kind,assessment,observed_at,reviewed_at,review_status FROM store_quality_evidence WHERE store_id IN (${placeholders})`
+    ).bind(...ids).all();
+    const byId=new Map(),evidenceById=new Map();
+    for(const row of decisions||[])byId.set(row.store_id,row);
+    for(const row of evidence||[]){
+      if(!evidenceById.has(row.store_id))evidenceById.set(row.store_id,[]);
+      evidenceById.get(row.store_id).push(row);
+    }
+    return items.map(item=>{
+      const merchantDomain=new URL(item.source_url).hostname;
+      const reviewed=reviewedQualityStar(byId.get(item.id),evidenceById.get(item.id)||[],merchantDomain);
+      return reviewed?{...item,quality_star:reviewed.star,quality_sources:reviewed.sources,
+        quality_reviewed_at:reviewed.reviewed_at,quality_disclosure:reviewed.disclosure}:item;
+    });
+  }catch{return items;}
+}
+
 async function stores(req,env,url){
   // This is only a display acknowledgment for organic location information,
   // never a government-ID check or a 21+ advertising eligibility assertion.
@@ -106,9 +136,11 @@ async function stores(req,env,url){
   ).bind(state).first();
   const medicalOnly=legal?.adult_use==='not_authorized'&&Number(legal?.medical_program)===1;
   const accessType=medicalOnly?'medical_only':(legal?.adult_use||'unreviewed');
+  const eligible=rows.slice(0,24).map(publicRow).filter(Boolean);
+  const qualityChecked=await enrichQuality(eligible,env);
   return reply({state,city,query:q,page:n,page_size:24,has_more:rows.length>24,
     access_type:accessType,medical_only:medicalOnly,
-    items:rows.slice(0,24).map(publicRow).filter(Boolean).map(item=>({...item,
+    items:qualityChecked.map(item=>({...item,
       access_type:accessType,medical_only:medicalOnly})),
     disclosure:medicalOnly
       ? 'Medical-program dispensaries only; NOT adult-use. State patient eligibility applies. No age verification, product offers or paid ads.'
