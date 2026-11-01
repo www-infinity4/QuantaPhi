@@ -48,11 +48,6 @@ export function chooseSpotlight(items,{seen=[],interests=[],last=''}={}){
  const score=x=>(x.kind==='Product'?2:0)+words.reduce((n,w)=>n+Number((x.title+' '+x.category+' '+x.description).toLowerCase().includes(w)),0);
  return [...pool].sort((a,b)=>score(b)-score(a)||Date.parse(b.checked_at)-Date.parse(a.checked_at))[0]||null;
 }
-// Manual navigation must follow the item users actually see, not a stale
-// persisted history cursor that may be changed by asynchronous image loading.
-export function chooseNextSpotlight(items,current,options={}){
- return chooseSpotlight(items,{...options,last:current?.id||options.last||''});
-}
 async function snapshot(){
  if(snapshotPromise&&Date.now()-snapshotAt<TTL)return snapshotPromise;
  snapshotAt=Date.now();snapshotPromise=(async()=>{
@@ -109,7 +104,7 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
   let state;try{state=cleanFeedState(JSON.parse(localStorage.getItem(FEED_STORAGE_KEY)))}catch{state=cleanFeedState({})}
   // Use explicit follows and bounded card categories; never raw searches.
   const interests=state.following.concat(Object.keys(state.counts).sort((a,b)=>state.counts[b]-state.counts[a]).slice(0,12));
-  const row=requestedSpotlight(items,requested,card.official)||(advance?chooseNextSpotlight(items,current,{...history,interests}):chooseSpotlight(items,{...history,interests}));if(!row)return;
+  const row=requestedSpotlight(items,requested,card.official)||chooseSpotlight(items,{...history,interests});if(!row)return;
   current=row;history={seen:[...history.seen.filter(x=>x!==row.id),row.id].slice(-items.length),last:row.id};
   try{localStorage.setItem(key,JSON.stringify(history))}catch{}
   visual.replaceChildren();const image=el('img','qcs-photo');image.alt=row.title;image.decoding='async';image.referrerPolicy='no-referrer';
@@ -119,8 +114,7 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
    if(items.length)show();else{panel.hidden=true;article.classList.remove('qcs-has-items');forgetSpotlightCreative(article)}
   };
   image.addEventListener('error',broken,{once:true});image.src=row.image;visual.append(image);
-  // Browser cache may report complete before image decoding settles. Rely on
-  // the registered error event rather than prematurely removing a valid item.
+  if(image.complete&&image.naturalWidth===0){broken();return}
   title.textContent=row.title;desc.textContent=row.description;updatePrice();
   meta.textContent='∞ INFINITY · '+row.method+' · '+row.source+' · checked '+new Date(row.checked_at).toLocaleString();
   open.href=row.url;open.textContent=(row.kind==='Product'?'Shop this item':'View this spotlight')+' ↗';
