@@ -79,3 +79,19 @@ test('protected ID conflicts never produce a false full-count receipt',async()=>
  await assert.rejects(importApprovedMetro({RESTAURANTS:db},cfg,payload()),/metro_write_conflict/);
  assert.equal(sqls.some(x=>x.sql.includes('INSERT INTO restaurant_ingest_runs')),false);
 });
+
+test('restaurant Quick Card pagination uses a 25th-row lookahead, not a false final page',async()=>{
+ let sql='',args=[],results=[];
+ const db={prepare(q){sql=q;return {bind(...b){args=b;return {all:async()=>({results})}}}}};
+ const env={RESTAURANTS:db};
+ results=Array.from({length:24},(_,i)=>({...row(),id:'overture:restaurant-'+i}));
+ let response=await worker.fetch(new Request('https://test.example/api/dining/search?city=Colorado%20Springs&page=3'),env);
+ let data=await response.json();
+ assert.equal(response.status,200);
+ assert.equal(data.count,24);assert.equal(data.has_more,false);
+ assert.equal(args.at(-1),72);assert.match(sql,/LIMIT 25 OFFSET/);
+ results=[...results,{...row(),id:'overture:restaurant-24'}];
+ response=await worker.fetch(new Request('https://test.example/api/dining/search?city=Colorado%20Springs&page=3'),env);
+ data=await response.json();
+ assert.equal(data.count,24);assert.equal(data.items.length,24);assert.equal(data.has_more,true);
+});
