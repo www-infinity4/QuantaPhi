@@ -2187,6 +2187,23 @@ function extract(reply){
 // Omni continuity rule: a chat model cannot overturn the owner verification
 // already established by the first-party Brain gate. This only corrects freeform
 // model replies; real tool/HTTP auth errors and explicit device pairing are not hidden.
+// Do not turn an HTTP 200 or a model-written explanation into proof of a
+// finished tool call. The real receipt describes the observed operation.
+function describeBubblesToolOutcome(json,answer){
+ const text=String(answer||'').trim();
+ const state=String(json?.receipt?.status||'');
+ const incomplete=json?.answerStatus==='partial';
+ if(!json?.receipt?.tool)return text;
+ const explanations={
+  blocked:'The requested tool was blocked; no successful action was confirmed.',
+  failed:'The tool failed; no successful action was confirmed.',
+  invalid_input:'The tool rejected its input; no successful action was confirmed.',
+  needs_input:'The tool needs more information before it can run.',
+  partial:'The tool result is partial; further verification is needed.'
+ };
+ const note=explanations[state]||(incomplete?'The tool returned data, but the requested explanation or outcome remains incomplete.':'');
+ return note?(text?text+'\\n\\n'+note:note):text;
+}
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
  // Preserve the specific GitHub-search failure message from the concurrent repair.
@@ -3215,10 +3232,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(!rawAnswer&&!cardoneResearch)throw Error('The AI returned no spoken or written reply');
    if(!cardoneResearch&&/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
-   const finalAnswer=cardoneResearch&&
+   const finalAnswer=describeBubblesToolOutcome(json,cardoneResearch&&
     (cardoneReplyUnusable(rawAnswer)||json.answerStatus==='partial'||
      json.receipt?.tool==='web.search'&&json.receipt?.status!=='complete')
-     ?cardoneSourceFallback(request):answer;
+     ?cardoneSourceFallback(request):answer);
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
   messages.push({role:'assistant',text:finalAnswer});messages=messages.slice(-400);persistChat();
   display(finalAnswer,'ai');status.textContent=config.alias+' · response received';
