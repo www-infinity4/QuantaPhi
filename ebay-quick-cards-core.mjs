@@ -115,7 +115,7 @@ export function ebayBidDraft(item,amount){
  if(!item?.canBid||item.bidCurrency!=='USD'||!Number.isFinite(item.currentBidValue))
   return {ok:false,error:'Verified USD auction bidding data unavailable; use eBay directly.'};
  const typed=String(amount||'').trim();
- if(!/^(?:0|[1-9]\\d{0,6})(?:\\.\\d{1,2})?$/.test(typed))
+ if(!/^(?:0|[1-9]\d{0,6})(?:\.\d{1,2})?$/.test(typed))
   return {ok:false,error:'Enter a maximum bid in USD with up to two decimal places.'};
  const n=Number(typed);
  if(!Number.isFinite(n)||n<=item.currentBidValue)
