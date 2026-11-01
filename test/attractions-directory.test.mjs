@@ -12,7 +12,7 @@ test('50 US states queued, Colorado prioritized, isolated database schema',()=>{
  assert.doesNotMatch(read('data/attractions/schema.sql'),/CREATE TABLE IF NOT EXISTS restaurants/);
 });
 test('six licensed source-backed original entries and safe normalization',()=>{
- assert.equal(seed.items.length,6);assert.deepEqual(seedSources('CO'),['co-seed.json','co-overture.json']);
+ assert.equal(seed.items.length,6);assert.deepEqual(seedSources('CO'),['co-seed.json','co-overture-nw.json','co-overture-ne.json','co-overture-sw.json','co-overture-se.json']);
  for(const item of seed.items){const row=cleanRecord(item,'CO',seed.generated_at);assert.ok(row,item.id);
   assert.equal(row.state,'CO');assert.equal(row.image_url,'');assert.equal('price' in row,false);assert.equal('sponsored' in row,false);
  }
