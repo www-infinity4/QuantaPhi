@@ -11,8 +11,14 @@ test('50 US states queued, Colorado prioritized, isolated database schema',()=>{
  assert.match(read('data/attractions/schema.sql'),/CREATE TABLE IF NOT EXISTS attractions/);
  assert.doesNotMatch(read('data/attractions/schema.sql'),/CREATE TABLE IF NOT EXISTS restaurants/);
 });
-test('six licensed source-backed original entries and safe normalization',()=>{
- assert.equal(seed.items.length,6);assert.deepEqual(seedSources('CO'),['co-seed.json','co-overture-nw.json','co-overture-ne.json','co-overture-sw.json','co-overture-se.json']);
+test('seven licensed source-backed original entries and safe normalization',()=>{
+ assert.equal(seed.items.length,7);
+ const blackCanyon=seed.items.find(x=>x.id==='curated:colorado-black-canyon-south-rim');
+ assert.ok(blackCanyon);
+ assert.equal(blackCanyon.source_url,'https://www.nps.gov/blca/planyourvisit/southrim.htm');
+ assert.equal(blackCanyon.latitude,38.555);
+ assert.equal(blackCanyon.longitude,-107.6866);
+ assert.equal(blackCanyon.image_url,'');assert.deepEqual(seedSources('CO'),['co-seed.json','co-overture-nw.json','co-overture-ne.json','co-overture-sw.json','co-overture-se.json']);
  for(const item of seed.items){const row=cleanRecord(item,'CO',seed.generated_at);assert.ok(row,item.id);
   assert.equal(row.state,'CO');assert.equal(row.image_url,'');assert.equal('price' in row,false);assert.equal('sponsored' in row,false);
  }
