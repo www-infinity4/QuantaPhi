@@ -27,7 +27,12 @@ const humanReplies=()=>({
    return 'The source changes were saved.'+(pr?' Review: '+pr.url+'.':' A review link is not confirmed yet.')+' Tests and deployment are not verified.';
   }
   if(result.status==='tool_limit_reached')return 'The GitHub assistant reached its tool limit. Check the recorded receipts for any commits or pull requests; completion is unverified.';
-  if(result.status==='completed'||result.status==='deployed_verified')return 'The available completion checks passed. What should we work on next?';
+  if(result.status==='deployed_verified'&&result.deploymentVerified===true&&result.testsVerified===true)
+   return 'The verified source checks passed and deployment was confirmed by the authenticated service.';
+  if(result.status==='completed'&&result.completionVerified===true&&result.testsVerified===true)
+   return 'The recorded GitHub work completed and independent checks passed. Production deployment remains unverified unless separately confirmed.';
+  if(['completed','deployed_verified','success'].includes(result.status))
+   return 'GitHub returned a completion status, but independent completion and deployment checks are not verified yet.';
   return 'The result is not yet verified. The detailed receipt is saved.';
  },
  workReply(ticket){
@@ -334,7 +339,7 @@ if(!threadIndex.some(t=>t.id===activeThread)){
 const readThread=id=>(data(THREAD_PREFIX+id,[])||[]).filter(m=>m&&['user','assistant'].includes(m.role)&&typeof m.text==='string').slice(-400);
 let messages=keepChat?readThread(activeThread):[];
 messages=messages.map(m=>({...m,sessionId:activeThread,id:m.id||crypto.randomUUID(),at:m.at||Date.now(),text:m.text.slice(0,6000)}));
-let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
+let greeted=messages.length>0,busy=false,turnPending=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending=[],speaking=false,voiceRetry=null,tries=0;
 // Spoken turns must be FIFO; a second phrase must never overwrite the first.
@@ -343,7 +348,7 @@ function enqueueVoiceTurn(text){
  voicePending.push(text);return true;
 }
 function drainVoiceTurns(){
- if(busy||!voicePending.length)return;
+ if(busy||turnPending||!voicePending.length)return;
  const next=voicePending.shift();
  Promise.resolve().then(()=>sendMessage(next,true));
 }
@@ -2182,6 +2187,23 @@ function extract(reply){
 // Omni continuity rule: a chat model cannot overturn the owner verification
 // already established by the first-party Brain gate. This only corrects freeform
 // model replies; real tool/HTTP auth errors and explicit device pairing are not hidden.
+// Do not turn an HTTP 200 or a model-written explanation into proof of a
+// finished tool call. The real receipt describes the observed operation.
+function describeBubblesToolOutcome(json,answer){
+ const text=String(answer||'').trim();
+ const state=String(json?.receipt?.status||'');
+ const incomplete=json?.answerStatus==='partial';
+ if(!json?.receipt?.tool)return text;
+ const explanations={
+  blocked:'The requested tool was blocked; no successful action was confirmed.',
+  failed:'The tool failed; no successful action was confirmed.',
+  invalid_input:'The tool rejected its input; no successful action was confirmed.',
+  needs_input:'The tool needs more information before it can run.',
+  partial:'The tool result is partial; further verification is needed.'
+ };
+ const note=explanations[state]||(incomplete?'The tool returned data, but the requested explanation or outcome remains incomplete.':'');
+ return note?(text?text+'\n\n'+note:note):text;
+}
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
  // Preserve the specific GitHub-search failure message from the concurrent repair.
@@ -2286,7 +2308,7 @@ async function consultExternalAi(question,mode='gemini_first',fromVoice=false,re
  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();
 }
 window.addEventListener('bubbles:ai-consult',event=>{
- if(embedded||busy||!event?.detail?.question)return;
+ if(embedded||busy||turnPending||!event?.detail?.question)return;
  if(!['gemini_first','gemini_claude_review','claude_only'].includes(event.detail.mode))return;
  event.preventDefault();void consultExternalAi(event.detail.question,event.detail.mode,false,event.detail.respond);
 });
@@ -2301,8 +2323,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let roomContext=nativeEvidence.startsWith(roomEvidencePrefix)?nativeEvidence.slice(roomEvidencePrefix.length,roomEvidencePrefix.length+900):'';
  let screenEvidence=roomContext?'':nativeEvidence;
  if(!spoken&&!pendingImage)return;
+ // Serialize from before the first asynchronous owner-memory or pairing read.
+ if(busy||turnPending)return;
+ turnPending=true;
+ try{
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
- if(busy)return;
  // A new turn begins without granting credits; Personal Context must verify first.
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_started'}}));
  // Read the separately authenticated Bubbles owner archive BEFORE routing tools.
@@ -3207,10 +3232,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(!rawAnswer&&!cardoneResearch)throw Error('The AI returned no spoken or written reply');
    if(!cardoneResearch&&/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
-   const finalAnswer=cardoneResearch&&
+   const finalAnswer=describeBubblesToolOutcome(json,cardoneResearch&&
     (cardoneReplyUnusable(rawAnswer)||json.answerStatus==='partial'||
      json.receipt?.tool==='web.search'&&json.receipt?.status!=='complete')
-     ?cardoneSourceFallback(request):answer;
+     ?cardoneSourceFallback(request):answer);
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
   messages.push({role:'assistant',text:finalAnswer});messages=messages.slice(-400);persistChat();
   display(finalAnswer,'ai');status.textContent=config.alias+' · response received';
@@ -3263,10 +3288,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
     drainVoiceTurns()
   }
+ }finally{turnPending=false;drainVoiceTurns();}
 }
 
  window.addEventListener('bubbles:chatgpt-ready',event=>{
-  event.detail?.respond?.(!embedded&&!busy&&ownerReady&&Boolean(ownerHeaders?.Authorization));
+  event.detail?.respond?.(!embedded&&!busy&&!turnPending&&ownerReady&&Boolean(ownerHeaders?.Authorization));
  });
  // Owner approved ChatGPT bridge: a message arrives only after the Cloudflare
  // browser Worker verifies the owner session and an active five-day grant.
@@ -3275,7 +3301,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const detail=event.detail||{};
   const respond=typeof detail.respond==='function'?detail.respond:()=>{};
   const text=String(detail.text||'').slice(0,1800).trim();
-  if(embedded||busy||!text){respond({ok:false,error:'bubbles_chat_not_ready'});return}
+  if(embedded||busy||turnPending||!text){respond({ok:false,error:'bubbles_chat_not_ready'});return}
   const before=messages.length;
   Promise.resolve(sendMessage(text,false)).then(()=>{
    const replies=messages.slice(before).filter(x=>x.role==='assistant');
@@ -3350,6 +3376,17 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
      if(ownerReady)void syncCloudFolder(receiptThread,[entry]);
     }
     return;
+   }
+   // Every bounded watcher terminates with a visible terminal *observation*.
+   // This is a monitoring timeout, never a cancellation or a verified job end.
+   const report='GitHub has not returned a final receipt after repeated owner-authenticated checks. The request may still be running; no finished code, tests, merge or deployment can be verified. Check Work details before retrying a write.';
+   recordBrainNotice(report);
+   if(activeThread===receiptThread){
+    display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
+   }else if(keepChat){
+    const entry={id:crypto.randomUUID(),at:Date.now(),sessionId:receiptThread,role:'assistant',text:report};
+    save(THREAD_PREFIX+receiptThread,[...readThread(receiptThread),entry].slice(-160));
+    if(ownerReady)void syncCloudFolder(receiptThread,[entry]);
    }
   }finally{pendingGithubReceipts.delete(requestId);}
  })();
@@ -3439,7 +3476,7 @@ function heardTranscript(transcript){
  status.textContent='Heard: '+transcript;launcher.dataset.words=String(transcript.split(/\s+/).length);
  if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
  if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
- if(turn.type==='message'){if(busy)enqueueVoiceTurn(turn.text);else void sendMessage(turn.text,true)}
+ if(turn.type==='message'){if(busy||turnPending)enqueueVoiceTurn(turn.text);else void sendMessage(turn.text,true)}
 }
 async function startVoice(){
  // Android's foreground service already owns voice recognition. A WebView

@@ -86,7 +86,7 @@ test('UI has a distinct five-day ChatGPT control; browser worker enforces owner 
  assert.match(ui,/Revoke ChatGPT access/);
  assert.ok(ui.includes("bridgeCall('process'"));
  assert.match(ai,/bubbles:chatgpt-bridge/);
- assert.ok(ai.includes('if(embedded||busy||!text)'), 'Android owner overlay must accept the ChatGPT bridge');
+ assert.ok(ai.includes('if(embedded||busy||turnPending||!text)'), 'Android owner overlay must accept the ChatGPT bridge without racing owner-memory preflight');
  assert.doesNotMatch(ui,/localStorage\.setItem\(.*Authorization/);
 });
 
