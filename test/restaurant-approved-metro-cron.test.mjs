@@ -17,16 +17,24 @@ test('completed Denver is never scheduled again; unapproved city is not ingested
  const m=manifest();
  m.cities['colorado-springs-co'].approved_snapshot='data/restaurants/colorado-springs-co.json';
  assert.deepEqual(approvedMetroSnapshots(m).map(x=>x.key),['colorado-springs-co']);
+ m.cities['denver-metro-co']={...m.cities['denver-co'],approved_snapshot:'data/restaurants/denver-metro-co.json'};
+ assert.deepEqual(approvedMetroSnapshots(m).map(x=>x.key),['colorado-springs-co']);
  m.cities['colorado-springs-co'].approved_snapshot='https://attacker.example/snapshot';
  assert.throws(()=>approvedMetroSnapshots(m),/invalid_approved_metro/);
 });
 test('fail closed before D1 writes on mixed release, duplicate, false ads or out-of-metro rows',()=>{
  const m=manifest();m.cities['colorado-springs-co'].approved_snapshot='data/restaurants/colorado-springs-co.json';
  const cfg=approvedMetroSnapshots(m)[0],good=payload();
+ for(const bbox of [[181,91,182,92],[-181,38,-104,39],[-105,-91,-104,39]]){
+  m.cities['colorado-springs-co'].bbox=bbox;
+  assert.throws(()=>approvedMetroSnapshots(m),/invalid_approved_metro/);
+ }
+ m.cities['colorado-springs-co'].bbox=[-104.98,38.73,-104.65,38.95];
  assert.equal(validateMetroSnapshot(good,cfg).length,1);
  for(const bad of [
   {...good,dataset_version:'2026-11-01.0'},
   {...good,items:[row(),row()]},
+  {...good,items:[{...row(),id:['overture:1234567890abcdef']}]},
   {...good,items:[{...row(),city:'Denver'}]},
   {...good,items:[{...row(),latitude:39.8}]},
   {...good,items:[{...row(),confidence:1.3}]},
@@ -41,7 +49,7 @@ test('approved import records a city-specific receipt and replay is idempotent',
  const db={prepare(sql){return {bind(...args){seen.push({sql,args});return {
   first:async()=>exists?{run_id:args[0]}:null,
   run:async()=>{exists=true;return {success:true}}
- }}}},batch:async statements=>{batches.push(statements);return [{success:true}]}};
+ }}}},batch:async statements=>{batches.push(statements);return statements.map(()=>({success:true,meta:{changes:1}}))}};
  const first=await importApprovedMetro({RESTAURANTS:db},cfg,payload());
  assert.deepEqual(first,{skipped:false,records:1});
  assert.equal(batches.length,1);
@@ -60,4 +68,14 @@ test('Cron reads manifest but never downloads the completed Denver snapshot',asy
   assert.match(requested[0],/city-manifest\.json$/);
   assert.equal(requested.some(url=>url.includes('denver-co.json')),false);
  }finally{globalThis.fetch=originalFetch;}
+});
+
+test('protected ID conflicts never produce a false full-count receipt',async()=>{
+ const m=manifest();m.cities['colorado-springs-co'].approved_snapshot='data/restaurants/colorado-springs-co.json';
+ const cfg=approvedMetroSnapshots(m)[0],sqls=[];
+ const db={prepare(sql){return {bind(...args){sqls.push({sql,args});return {
+  first:async()=>null,run:async()=>{throw Error('receipt must not be written')}
+ }}}},batch:async statements=>statements.map(()=>({success:true,meta:{changes:0}}))};
+ await assert.rejects(importApprovedMetro({RESTAURANTS:db},cfg,payload()),/metro_write_conflict/);
+ assert.equal(sqls.some(x=>x.sql.includes('INSERT INTO restaurant_ingest_runs')),false);
 });
