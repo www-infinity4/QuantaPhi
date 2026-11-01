@@ -217,21 +217,28 @@ def ingest_file(path, job, release, max_items=MAX_PER_RUN):
               ") ON CONFLICT(id) DO UPDATE SET name=excluded.name,category=excluded.category,"
               "website=excluded.website,source_license=excluded.source_license,"
               "last_seen=excluded.last_seen,updated_at=CURRENT_TIMESTAMP WHERE businesses.claimed=0")
+    written = 0
     for i in range(0, len(accepted), 50):
         chunk = accepted[i:i+50]
-        api_query("", batch=[{"sql": insert, "params": [str(row[col]) for col in columns]} for row in chunk])
+        results = api_query("", batch=[{"sql": insert, "params": [str(row[col]) for col in columns]} for row in chunk])
+        # A protected/claimed existing ID may cause a successful no-op UPDATE.
+        # Never record attempted statements as completed D1 inserts.
+        if len(results) != len(chunk) or any(not isinstance(x.get('meta', {}).get('changes'), int)
+            or x['meta']['changes'] != 1 for x in results):
+            raise RuntimeError('D1 business write conflict or missing change receipts; job not advanced')
+        written += sum(x['meta']['changes'] for x in results)
     cursor = seen + examined
     status = "complete" if end_of_file else "queued"
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     receipt_id = job["job_id"] + ":" + now + ":" + str(cursor)
     api_query("INSERT OR IGNORE INTO business_ingest_receipts(receipt_id,source,dataset_version,city,state,inspected,accepted,duplicates,rejected,job_id) VALUES(?,?,?,?,?,?,?,?,?,?)",
-              [receipt_id,SOURCE,release,job["city"],job["state"],str(examined),str(len(accepted)),
+              [receipt_id,SOURCE,release,job["city"],job["state"],str(examined),str(written),
                str(duplicates),str(rejected),job["job_id"]])
     api_query("UPDATE city_import_jobs SET cursor=?,imported=imported+?,status=?,phase=?,source=?,dataset_version=?,updated_at=CURRENT_TIMESTAMP WHERE job_id=?",
-              [str(cursor),str(len(accepted)),status,"expand" if end_of_file else "import",SOURCE,release,job["job_id"]])
-    print(json.dumps({"job_id":job["job_id"],"inspected":examined,"accepted":len(accepted),
+              [str(cursor),str(written),status,"expand" if end_of_file else "import",SOURCE,release,job["job_id"]])
+    print(json.dumps({"job_id":job["job_id"],"inspected":examined,"accepted":written,
                       "duplicates":duplicates,"rejected":rejected,"cursor":cursor,"tile_complete":end_of_file}))
-    return len(accepted)
+    return written
 
 def main():
     rows = api_query("SELECT job_id,city,state,priority,status,bbox,cursor FROM city_import_jobs WHERE status='queued' ORDER BY priority ASC,imported ASC,updated_at ASC LIMIT 1")[0].get("results", [])
