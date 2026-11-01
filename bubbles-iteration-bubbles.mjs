@@ -14,7 +14,7 @@ export const BUBBLE_ROLES=Object.freeze([
 ]);
 const STATES=new Set(['idle','active','queued','review','verified','blocked']);
 const WORK_STATES=new Set(['queued','ready','working','blocked','committed_unverified','merged_verified','deployed_verified','completed','complete','superseded']);
-const TOOL=/^(?:web\.search|web\.read_page|github\.(?:search|read_file|read_repo)|bubbles\.(?:image_read|browser_read|github_research))$/;
+const TOOL=/^(?:web\.search|web\.read_page|github\.(?:search|read_file|read_repo|read_repository)|bubbles\.(?:image_read|browser_read|github_research))$/;
 const REPO=/^www-infinity4\/[a-zA-Z0-9_.-]{1,80}$/;
 function checkedUrl(raw){
  try{const u=new URL(raw);return u.origin==='https://github.com'&&!u.username&&!u.password&&!u.search&&!u.hash&&
@@ -26,6 +26,14 @@ export function newIterationState(){
 export function applyIterationEvent(previous,event){
  const state={...previous};
  if(!event||typeof event!=='object')return state;
+ if(event.type==='session_changed')return newIterationState();
+ if(event.type==='turn_started'){
+  const fresh=newIterationState();
+  fresh.listen=state.listen;
+  fresh.speak=state.speak;
+  fresh.think={status:'active',message:'Processing this request; verified results appear when received.',url:''};
+  return fresh;
+ }
  const set=(id,status,message,url='')=>{
   if(!STATES.has(status))return;
   state[id]={status,message,url:checkedUrl(url)};
@@ -64,8 +72,8 @@ export function applyIterationEvent(previous,event){
  }
  return state;
 }
-export function mountBubbleIterations({launcher,panel,status}={}){
- if(typeof document==='undefined'||!launcher||!panel||!status)return false;
+export function mountBubbleIterations({launcher,panel,status,chatScroll,conversation}={}){
+ if(typeof document==='undefined'||!launcher||!panel||!status||!chatScroll||!conversation)return false;
  if(panel.querySelector('.ba-iteration-bubbles'))return true;
  const create=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(text)el.textContent=text;return el};
  const box=create('section','ba-iteration-bubbles');box.setAttribute('aria-label','Bubbles iteration activity');
@@ -88,7 +96,8 @@ export function mountBubbleIterations({launcher,panel,status}={}){
  const bitNote=create('small','ba-bits-note','Wallet settlement unavailable. These are receipt observations, not spendable credits.');
  const bitRecent=create('div','ba-bits-recent');
  bitPanel.append(bitHeading,bitCount,bitNote,bitRecent);
- box.append(title,buttons,details,bitPanel);status.after(box);
+ // Keep activity in the thread's scroll budget, never in the height-limited composer.
+ box.append(title,buttons,details,bitPanel);chatScroll.insertBefore(box,conversation);
  function render(){
   for(const role of BUBBLE_ROLES){
    const button=nodes.get(role.id),item=state[role.id];
