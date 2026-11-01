@@ -119,7 +119,8 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
    if(items.length)show();else{panel.hidden=true;article.classList.remove('qcs-has-items');forgetSpotlightCreative(article)}
   };
   image.addEventListener('error',broken,{once:true});image.src=row.image;visual.append(image);
-  if(image.complete&&image.naturalWidth===0){broken();return}
+  // Browser cache may report complete before image decoding settles. Rely on
+  // the registered error event rather than prematurely removing a valid item.
   title.textContent=row.title;desc.textContent=row.description;updatePrice();
   meta.textContent='∞ INFINITY · '+row.method+' · '+row.source+' · checked '+new Date(row.checked_at).toLocaleString();
   open.href=row.url;open.textContent=(row.kind==='Product'?'Shop this item':'View this spotlight')+' ↗';
