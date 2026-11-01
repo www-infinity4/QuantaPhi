@@ -46,5 +46,11 @@ CREATE TABLE IF NOT EXISTS store_quality_events (
  event_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
  event_note TEXT NOT NULL DEFAULT ''
 );
+CREATE TRIGGER IF NOT EXISTS store_quality_events_no_update
+BEFORE UPDATE ON store_quality_events
+BEGIN SELECT RAISE(ABORT,'append_only_quality_event'); END;
+CREATE TRIGGER IF NOT EXISTS store_quality_events_no_delete
+BEFORE DELETE ON store_quality_events
+BEGIN SELECT RAISE(ABORT,'append_only_quality_event'); END;
 -- Public Worker exposes only approved evidence source URLs and review date
 -- for an eligible star; raw review, appeal, moderation and actor records stay private.
