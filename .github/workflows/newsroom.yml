@@ -1,0 +1,33 @@
+name: News Phi newsroom and publisher readiness
+on:
+  pull_request:
+    paths:
+      - 'newsroom/**'
+      - 'index.html'
+      - 'sitemap.xml'
+      - 'test/newsroom.test.mjs'
+      - '.github/workflows/newsroom.yml'
+  push:
+    branches: [main, 'feat/newsroom-adsense-readiness-20261101']
+    paths:
+      - 'newsroom/**'
+      - 'index.html'
+      - 'sitemap.xml'
+      - 'test/newsroom.test.mjs'
+      - '.github/workflows/newsroom.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax
+        run: node --check newsroom/live.mjs
+      - name: Original article, discovery, news freshness and existing privacy tests
+        run: node --test test/newsroom.test.mjs test/privacy-policy.test.mjs test/audience-audit.test.mjs
