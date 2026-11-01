@@ -45,3 +45,13 @@ test('Bubbles iteration renders an evidence-linked Bits counter without adding w
  assert.match(src('bubbles-ai.css'),/ba-iteration-bits/);
  assert.doesNotMatch(src('bubbles-bit-session.mjs'),/fetch\(|localStorage|wallet\.|mint\(|innerHTML/);
 });
+
+test('authenticated Bubbles archive lookup precedes tool routing and is reused by the reply',()=>{
+ const js=src('bubbles-ai.js');
+ const start=js.indexOf('async function sendMessage(');
+ const context=js.indexOf('const firstOwnerContext=await currentOwnerContext(spoken);',start);
+ const router=js.indexOf('const aiConsult=',start);
+ const reuse=js.indexOf('const ownerContext=firstOwnerContext;',router);
+ assert.ok(start>=0&&context>start&&router>context&&reuse>router);
+ assert.equal(js.slice(start).split('currentOwnerContext(spoken)').length-1,1);
+});
