@@ -54,9 +54,9 @@ export function reviewedQualityStar(decision, evidence=[], now=new Date(), appea
    !fresh(e.observed_at)||!fresh(e.reviewed_at))continue;
   const domain=String(e.source_domain||'').toLowerCase();
   const group=String(e.publisher_group||'').toLowerCase();
-  const normalized=new URL(e.source_url||'https://invalid.example');
-  normalized.hash='';
-  const href=normalized.href;
+  let href='';
+  try{const normalized=new URL(e.source_url);normalized.hash='';href=normalized.href}
+  catch{continue}
   if(!/^[a-z0-9-]+(?:\.[a-z0-9-]+)+$/.test(domain)||
    !/^[a-z0-9][a-z0-9._-]{2,100}$/.test(group)||groups.has(group)||
    family(domain)===family(merchant)||families.has(family(domain))||urls.has(href)||
