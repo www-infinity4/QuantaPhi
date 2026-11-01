@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T18:26:10.113191Z",
+  "checked_at": "2026-11-01T22:46:39.132262Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -5435,6 +5435,1283 @@
             "evidence": "jsonld-offer",
             "availability": "http://schema.org/InStock"
           }
+        }
+      ]
+    },
+    "durable-red-wing-shoes": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.redwingshoes.com/mens/work/safety-toe/king-toe-02240.html?currency=USD",
+          "image": "https://embed.widencdn.net/img/redwing/ktnk297wx5/300x300px/RW02240C_MUL_N1_0724?position=S&crop=no&color=F2F2F2",
+          "title": "Go to King Toe® Men's 6-inch Waterproof Safety Toe Boot",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.redwingshoes.com/apparel/mens/long-sleeve-shirts/long-sleeve-pocket-t-shirt-98455.html?currency=USD",
+          "image": "https://embed.widencdn.net/img/redwing/qny4htmmta/300x300px/RW98455C_MUL_N1_0526?position=S&crop=no&color=F2F2F2",
+          "title": "Go to Long Sleeve Pocket T-Shirt Men's Long Sleeve T-Shirt in Olive",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.redwingshoes.com/mens/work/safety-toe/traction-tred-lite-02440.html?currency=USD",
+          "image": "https://embed.widencdn.net/img/redwing/dbankc3sbf/300x300px/RW02440C_MUL_N1_0724?position=S&crop=no&color=F2F2F2",
+          "title": "Go to Traction Tred Lite Men's 6-inch Waterproof Safety Toe Boot",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.redwingshoes.com/accessories/essentials/insoles/anti-fatigue-elite-96425.html?currency=USD",
+          "image": "https://embed.widencdn.net/img/redwing/ttnm8mv2p7/300x300px/RW96425C_Antifatigueelite_Pair_RGB_hzt_1023?position=S&crop=no&color=F2F2F2",
+          "title": "Go to Anti Fatigue Elite Orthotic Insole",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        }
+      ]
+    },
+    "durable-danner-boots": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.danner.com/",
+          "image": "https://i.lfi.media/is/image/LaCrosse/category_hero_mobile/danner_homepage_hero_gtf26_mobile",
+          "title": "pair of work boots at a construction project",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.danner.com/",
+          "image": "https://i.lfi.media/is/image/LaCrosse/danner_homepage_cat_1026_hike?wid=680",
+          "title": "A hiker climbs rocky terrain with clouds and trees visible in the background below",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.danner.com/",
+          "image": "https://i.lfi.media/is/image/LaCrosse/danner_homepage_cat_1026_lifestyle?wid=680",
+          "title": "A stylishly dressed person with a backpack casually slung over one shoulder and tidily tied boots sits on a weathered wooden bench on a sunny day, the scene suggests they feel prep",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.danner.com/",
+          "image": "https://i.lfi.media/is/image/LaCrosse/danner_homepage_cat_1026_work?wid=680",
+          "title": "a worker climbs into a backhoe while wearing brown work boots",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        }
+      ]
+    },
+    "durable-schott-nyc": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.schottnyc.com/blogs/journal/fall-1-26",
+          "image": "https://www.schottnyc.com/cdn/shop/files/Fall1Banner.jpg?v=1793129033&width=600",
+          "title": "Schott NYC Leather Jackets and Motorcycle Apparel",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.schottnyc.com/blogs/journal/ready-to-ride-motorcycle-jackets",
+          "image": "https://www.schottnyc.com/cdn/shop/files/ReadyToRide_Guide_2_Vertical_2.2.jpg?v=1792782151&width=600",
+          "title": "Schott NYC Leather Jackets and Motorcycle Apparel",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.schottnyc.com/blogs/journal/jonesin",
+          "image": "https://www.schottnyc.com/cdn/shop/files/4_3_IG_Carousel_10_Images_01.jpg?v=1786996001&width=600",
+          "title": "Schott NYC Leather Jackets and Motorcycle Apparel",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.schottnyc.com/collections/headwear",
+          "image": "https://www.schottnyc.com/cdn/shop/files/A515_NAV1.jpg?v=1772051030&width=600",
+          "title": "A515 Navy",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.schottnyc.com/products/jd1-jd1-type?variant=59932403138846",
+          "image": "https://www.schottnyc.com/cdn/shop/files/JD1_BLK_020.jpg?v=1789648219&width=1920",
+          "title": "JD1 - Black / S",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "1525.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.schottnyc.com/products/jd1-jd1-type?variant=59932403138846",
+          "image": "https://cdn.shopify.com/s/files/1/0905/5872/6430/files/JD1_BLK_020.jpg?v=1789648219",
+          "title": "JD1",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": null
+        },
+        {
+          "url": "https://www.schottnyc.com/products/8630-denim-western-work-jacket?variant=50375916323102",
+          "image": "https://www.schottnyc.com/cdn/shop/files/8630_IND_FRT.jpg?v=1777314189&width=1920",
+          "title": "8630 - Indigo / S",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "250.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.schottnyc.com/products/8630-denim-western-work-jacket?variant=50375916323102",
+          "image": "https://cdn.shopify.com/s/files/1/0905/5872/6430/files/8630_IND_FRT.jpg?v=1777314189",
+          "title": "8630",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": null
+        }
+      ]
+    },
+    "durable-nicks-boots": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": []
+    },
+    "durable-white-s-boots": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://whitesboots.com/collections/legacy-boots",
+          "image": "https://whitesboots.com/cdn/shop/files/navigation-legacy-300x300_500x.png?v=1693896866",
+          "title": "White's Boots Shop",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://whitesboots.com/collections/lifestyle-boots",
+          "image": "https://whitesboots.com/cdn/shop/files/navigation-heritage-300x300_500x.png?v=1693896819",
+          "title": "White's Boots Shop",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://whitesboots.com/collections/fire-boots",
+          "image": "https://whitesboots.com/cdn/shop/files/navigation-fire-3-282x300_500x.png?v=1693896936",
+          "title": "White's Boots Shop",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://whitesboots.com/collections/work-boots",
+          "image": "https://whitesboots.com/cdn/shop/files/navigation-work-2-282x300_500x.png?v=1693896772",
+          "title": "White's Boots Shop",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://whitesboots.com/products/cmp-chelsea",
+          "image": "https://whitesboots.com/cdn/shop/files/2026_WHITES_SEP_PDP_CMPCHELSEA_DISTRESSRO-3.webp?v=1791239602&width=1920",
+          "title": "CMP Chelsea",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "600.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://whitesboots.com/products/355-cruiser-dr-sole",
+          "image": "https://whitesboots.com/cdn/shop/files/2026_WHITES_MAR_PDP_DRSOLES_SMALLBATCH_BLKWAX-7.webp?v=1790793948&width=1920",
+          "title": "355 Cruiser - Dr. Sole",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "850.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://whitesboots.com/products/c350-cruiser",
+          "image": "https://whitesboots.com/cdn/shop/files/c350-mv.png?v=1744021818&width=1920",
+          "title": "C350 Cruiser",
+          "kind": "product",
+          "description": "It spans across every Pacific Northwest trade—drivers, cruisers, miners, sportsmen, brakemen, and factory workers. Not surprisingly, it’s a boot that is built and worn for everyday wear, including days off. Thousands of workers have walked into our retail shop",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "675.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-fjallraven": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": []
+    },
+    "durable-duluth-trading-co": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.duluthtrading.com/",
+          "image": "https://duluthtrading.a.bigcontent.io/v1/static/NO_BULL_BLACK",
+          "title": "No Bull Guarantee",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.duluthtrading.com/",
+          "image": "https://duluthtrading.a.bigcontent.io/v1/static/superior_standard",
+          "title": "Superior Standard",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        }
+      ]
+    },
+    "durable-hilleberg": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.hilleberg.com/eng",
+          "image": "https://www.hilleberg.com/_ipx/f_webp&q_80&s_6200x3500/https://cdn.hilleberg.com/cms/hero/landing/Hero-home-1.jpg",
+          "title": "A Hilleberg tent next to the ocean",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.hilleberg.com/eng/products/tents/all-season",
+          "image": "https://www.hilleberg.com/_ipx/f_webp&q_80&s_800x800/https://cdn.hilleberg.com/cms/landing/imgBar1/1.png",
+          "title": "Inspirational image for All-season tents",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.hilleberg.com/eng/products/tents/three-season",
+          "image": "https://www.hilleberg.com/_ipx/f_webp&q_80&s_800x800/https://cdn.hilleberg.com/cms/landing/imgBar1/2.png",
+          "title": "Inspirational image for Snow-free/3-season tents",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.hilleberg.com/eng/products/shelters",
+          "image": "https://www.hilleberg.com/_ipx/f_webp&q_80&s_800x800/https://cdn.hilleberg.com/cms/landing/imgBar1/3.png",
+          "title": "Inspirational image for Shelters",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        }
+      ]
+    },
+    "durable-snow-peak": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.snowpeak.com/",
+          "image": "https://cdn.shopify.com/s/files/1/0330/3299/4860/files/sharing_hero.png?v=1708719713",
+          "title": "Snow Peak USA - Japanese-Designed Camping Gear & Apparel",
+          "kind": "website",
+          "description": "Since 1958, Snow Peak has made Japanese-designed, lifetime-guaranteed camping gear and apparel that create restorative experiences in nature. Free shipping on orders $200+.",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.snowpeak.com/products/ti-aurora-bottle",
+          "image": "https://www.snowpeak.com/cdn/shop/products/ti_aurora_bottle_rainbow_tw-800-rn_hero_01.jpg?v=1762190904&width=500",
+          "title": "Titanium Aurora Bottle",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.snowpeak.com/products/alpha-breeze-tent-set",
+          "image": "https://www.snowpeak.com/cdn/shop/products/4-5Alpha-Breeze-Mat-and-Sheet-Set.jpg?v=1680197003&width=500",
+          "title": "Alpha Breeze Tent Set",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.snowpeak.com/products/low-beach-chair",
+          "image": "https://www.snowpeak.com/cdn/shop/products/1_b0cf14da-57c9-4de7-bece-bea067bfe504.jpg?v=1587535891&width=500",
+          "title": "Low Beach Chair",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.snowpeak.com/products/ti-aurora-bottle",
+          "image": "https://www.snowpeak.com/cdn/shop/products/ti_aurora_bottle_rainbow_tw-800-rn_hero_01.jpg?v=1762190904&width=1920",
+          "title": "Titanium Aurora Bottle - Rainbow",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "139.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.snowpeak.com/products/ti-aurora-bottle",
+          "image": "https://www.snowpeak.com/cdn/shop/products/ti_aurora_bottle_pink_tw-800-pi_hero_01.jpg?v=1762190904&width=1920",
+          "title": "Titanium Aurora Bottle - Pink",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": null
+        },
+        {
+          "url": "https://www.snowpeak.com/products/ti-aurora-bottle",
+          "image": "https://www.snowpeak.com/cdn/shop/products/ti_aurora_bottle_tw-800_hero_01.jpg?v=1760649151&width=1920",
+          "title": "Titanium Aurora Bottle - Titanium",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "99.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.snowpeak.com/products/ti-aurora-bottle",
+          "image": "https://www.snowpeak.com/cdn/shop/products/ti_aurora_bottle_blue_tw-800-bl_hero_01.jpg?v=1762190904&width=1920",
+          "title": "Titanium Aurora Bottle - Blue",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "109.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-stanley": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.stanley1913.com/",
+          "image": "https://www.stanley1913.com/cdn/shop/files/Stanley_Horizontal_x320_b3ec2ef4-fa76-454a-b900-c4055137902d.webp?height=628&pad_color=fff&v=1706751331&width=1200",
+          "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
+          "kind": "website",
+          "description": "Stanley PMI Online Store | Offers an assortment of Vacuum Bottles, Mugs, thermoses, Cookware and more!",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.stanley1913.com/",
+          "image": "https://www.stanley1913.com/cdn/shop/files/flag-usa.jpg?v=1702939937&width=64",
+          "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.stanley1913.com/collections/leakproof-water-bottles",
+          "image": "https://www.stanley1913.com/cdn/shop/files/081826_SiteNav-Shop-Leakproof.jpg?v=1787074893&width=400",
+          "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.stanley1913.com/collections/holiday-collection",
+          "image": "https://www.stanley1913.com/cdn/shop/files/100926_HP-TrendingTile-2_027bbc15-a4ec-4ebb-b155-c3fd38945ca6.jpg?v=1793067739&width=400",
+          "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.stanley1913.com/products/quencher-protour-flipstraw-tumbler?variant=53974072885608",
+          "image": "https://www.stanley1913.com/cdn/shop/files/Web_PNG_Square-The_Quencher_ProTour_Flip_Straw_Tumbler_-_40oz_-_Sea_Glass_Aura_-Front.png?v=1774642547&width=800",
+          "title": "The Quencher ProTour Flip Straw Tumbler | 40 OZ",
+          "kind": "product",
+          "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": null
+        },
+        {
+          "url": "https://www.stanley1913.com/products/quencher-protour-flipstraw-tumbler?variant=53974072918376",
+          "image": "https://www.stanley1913.com/cdn/shop/files/Web_PNG_Square-The_Quencher_ProTour_Flip_Straw_Tumbler_40OZ_-_Sea_Glass_Plume_-_Front.png?v=1774642562&width=800",
+          "title": "The Quencher ProTour Flip Straw Tumbler | 40 OZ",
+          "kind": "product",
+          "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": null
+        },
+        {
+          "url": "https://www.stanley1913.com/products/quencher-protour-flipstraw-tumbler?variant=53973701230952",
+          "image": "https://www.stanley1913.com/cdn/shop/files/Web_PNG_Square-2025-10-10_The_Quencher_ProTour_Flip_Straw_Tumbler_40OZ_-_Blue_Sky_-_Front.png?v=1769101387&width=800",
+          "title": "The Quencher ProTour Flip Straw Tumbler | 40 OZ",
+          "kind": "product",
+          "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "45.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2030-12-21T23:59:59+00:00"
+          }
+        },
+        {
+          "url": "https://www.stanley1913.com/products/quencher-protour-flipstraw-tumbler?variant=53973867659624",
+          "image": "https://www.stanley1913.com/cdn/shop/files/Web_PNG_Square-The_Quencher_ProTour_Flip_Straw_Tumbler_40OZ_-_Chili_Black_-_Front.png?v=1770151198&width=800",
+          "title": "The Quencher ProTour Flip Straw Tumbler | 40 OZ",
+          "kind": "product",
+          "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "45.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2030-12-21T23:59:59+00:00"
+          }
+        }
+      ]
+    },
+    "durable-klean-kanteen": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.kleankanteen.com/collections/top-sellers",
+          "image": "https://www.kleankanteen.com/cdn/shop/files/20oz_rise_reflect_woman_smile_cap_off_square_jpg.jpg?v=1750981327&width=800",
+          "title": "Woman holding a steel water bottle with bamboo cap",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.kleankanteen.com/collections/coffee-mugs",
+          "image": "https://www.kleankanteen.com/cdn/shop/files/12oz_rise_coffee_mug_dusty_orchid_guy_laptop_square.jpg?v=1773701385&width=800",
+          "title": "Guy with purple coffee mug and laptop inside",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.kleankanteen.com/collections/santa-cruz",
+          "image": "https://www.kleankanteen.com/cdn/shop/files/16oz_pints_santa_cruz_3_graphics_back_square.jpg?v=1764630137&width=600",
+          "title": "Three white Santa Crus graphic pints",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.kleankanteen.com/collections/graphics-collection",
+          "image": "https://www.kleankanteen.com/cdn/shop/files/tkwide_fall_seasonals_2026_blanket_square.jpg?v=1790268341&width=800",
+          "title": "Two water bottles and tumblers on blanket in the grass,",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.kleankanteen.com/products/bring-your-own-party-kit-lowball-tumblers-and-cocktail-shakers",
+          "image": "https://www.kleankanteen.com/cdn/shop/files/Bring-your-own-bundle-1-RIse-8oz-brb.jpg?v=1778544020&width=1920",
+          "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Brittany Blue",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "124.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.kleankanteen.com/products/bring-your-own-party-kit-lowball-tumblers-and-cocktail-shakers",
+          "image": "https://www.kleankanteen.com/cdn/shop/files/Bring-your-own-bundle-1-RIse-8oz-bk.jpg?v=1778544009&width=1920",
+          "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Black",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "124.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.kleankanteen.com/products/bring-your-own-party-kit-lowball-tumblers-and-cocktail-shakers",
+          "image": "https://www.kleankanteen.com/cdn/shop/files/Bring-your-own-bundle-1-RIse-8oz-bab.jpg?v=1778544006&width=1920",
+          "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Barely Blue",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": null
+        },
+        {
+          "url": "https://www.kleankanteen.com/products/bring-your-own-party-kit-lowball-tumblers-and-cocktail-shakers",
+          "image": "https://www.kleankanteen.com/cdn/shop/files/Bring-your-own-bundle-1-RIse-8oz-do.jpg?v=1778544029&width=1920",
+          "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Dusty Orchid",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "124.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-hydro-flask": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": []
+    },
+    "durable-therm-a-rest": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://cascadedesigns.com/blogs/thermarest-gear/ultimate-guide-sleeping-pads",
+          "image": "https://cascadedesigns.com/cdn/shop/files/tar-nav-sleeping-pad-guide.jpg?v=12566276856545637801",
+          "title": "THE ULTIMATE GUIDE TO THERM-A-REST SLEEPING PADS",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/blogs/thermarest-gear/sleeping-bags-camping-quilts-ultimate-guide",
+          "image": "https://cascadedesigns.com/cdn/shop/files/tar-nav-sleeping-bag-guide.jpg?v=12060643705472900510",
+          "title": "THE ULTIMATE GUIDE TO THERM-A-REST SLEEPING BAGS",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/blogs/thermarest-gear/camping-pillows-guide",
+          "image": "https://cascadedesigns.com/cdn/shop/files/tar-nav-pillow-guide.jpg?v=14486446779515236666",
+          "title": "THE ULTIMATE GUIDE TO THERM-A-REST PILLOWS",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/pages/thermarest",
+          "image": "https://cascadedesigns.com/cdn/shop/files/thermarest-sleeping-pad-finder-1920x500.jpg?v=1725841551&width=3840",
+          "title": "Therm-a-Rest® - Sleeping Pads, Bags & Outdoor Comfort Gear | Cascade Designs",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/products/neoloft-sleeping-pad",
+          "image": "https://cascadedesigns.com/cdn/shop/files/14158_thermarest_neoloft_ember_regularwide_angle_backpacker_ec_2025.jpg?v=1765234222&width=1920",
+          "title": "NeoLoft™ Sleeping Pad - Regular",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "249.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://cascadedesigns.com/products/neoloft-sleeping-pad",
+          "image": "https://cascadedesigns.com/cdn/shop/files/14158_thermarest_neoloft_ember_regularwide_angle_backpacker_ec_2025.jpg?v=1765234222&width=480",
+          "title": "NeoLoft™ Sleeping Pad",
+          "kind": "product",
+          "description": "Merging the cutting-edge innovation of ultralight pads with the supreme comfort of car camping pads, the NeoLoft air pad takes backpacking comfort to a whole new level.",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "249.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://cascadedesigns.com/products/synergy-luxe-sheets",
+          "image": "https://cascadedesigns.com/cdn/shop/files/11413_thermarest_synergy_luxe_coupler_25_front.jpg?v=1725609429&width=1920",
+          "title": "Synergy™ Luxe Sheets - 30\" Coupler - 30 Inch Coupler",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "57.89",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://cascadedesigns.com/products/synergy-luxe-sheets",
+          "image": "https://cascadedesigns.com/cdn/shop/files/11413_thermarest_synergy_luxe_coupler_25_front.jpg?v=1725609429&width=480",
+          "title": "Synergy™ Luxe Sheets - 30\" Coupler",
+          "kind": "product",
+          "description": "Add an exceptional next-to-skin comfort boost for quilt-based sleep systems.",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "57.89",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-msr-mountain-safety-research": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://cascadedesigns.com/blogs/msr-gear-guides/ultimate-guide-msr-tents",
+          "image": "https://cascadedesigns.com/cdn/shop/files/msr-nav-tent-guide.jpg?v=8402913739252182948",
+          "title": "THE ULTIMATE GUIDE TO MSR TENTS",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/blogs/msr-gear-guides/msr-backpacking-stoves-guide",
+          "image": "https://cascadedesigns.com/cdn/shop/files/msr-nav-backpacking-stoves-guide.jpg?v=18398629007511789039",
+          "title": "A GUIDE TO MSR BACKPACKING STOVES",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/blogs/msr-gear-guides/water-products-treatment-systems-guide",
+          "image": "https://cascadedesigns.com/cdn/shop/files/msr-nav-water-guide.jpg?v=5476846269887058450",
+          "title": "MSR WATER TREATMENT GUIDE",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/blogs/msr-gear-guides/ultimate-guide-msr-snowshoes",
+          "image": "https://cascadedesigns.com/cdn/shop/files/msr-nav-snowshoe-sale-2024.jpg?v=9503258504753190185",
+          "title": "THE ULTIMATE GUIDE TO MSR SNOWSHOES",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/products/dromedary-bags",
+          "image": "https://cascadedesigns.com/cdn/shop/files/09586_MSR_Dromedary4L.jpg?v=1785340894&width=1920",
+          "title": "Dromedary® Bags - 4 L",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "51.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://cascadedesigns.com/products/dromedary-bags",
+          "image": "https://cascadedesigns.com/cdn/shop/files/09587_MSR_Dromedary6L.jpg?v=1785340894&width=1920",
+          "title": "Dromedary® Bags - 6 L",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "59.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://cascadedesigns.com/products/dromedary-bags",
+          "image": "https://cascadedesigns.com/cdn/shop/files/09588_MSR_Dromedary10L.jpg?v=1785340894&width=1920",
+          "title": "Dromedary® Bags - 10 L",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "64.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://cascadedesigns.com/products/dromedary-bags",
+          "image": "https://cascadedesigns.com/cdn/shop/files/09586_09587_09588_MSR_Dromedary_Bags.jpg?v=1724820222&width=480",
+          "title": "Dromedary® Bags",
+          "kind": "product",
+          "description": "Our burliest medium-to-large capacity water storage and delivery systems.",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "51.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-coleman-classic-camp-stoves": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": []
+    },
+    "durable-primus": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://primusequipment.com/collections/vandringsutrustning",
+          "image": "https://primusequipment.com/cdn/shop/files/Newletter_Products_1x1_43.jpg?v=1788879281",
+          "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://primusequipment.com/collections/utrustning-for-vildmarkscamping",
+          "image": "https://primusequipment.com/cdn/shop/files/Newletter_Products_1x1_44.jpg?v=1788879315",
+          "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://primusequipment.com/collections/utrustning-for-vanlife",
+          "image": "https://primusequipment.com/cdn/shop/files/Newletter_Products_1x1_45.jpg?v=1788879346",
+          "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://primusequipment.com/collections/bikepacking",
+          "image": "https://primusequipment.com/cdn/shop/files/Cykling.jpg?v=1788951667",
+          "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://primusequipment.com/products/lite-ultra-xl-stove-system-1-2-l",
+          "image": "https://primusequipment.com/cdn/shop/files/P356045_LiteUltraXL_1L_3.webp?v=1779266042&width=1920",
+          "title": "Lite Ultra Stove System 1.2L",
+          "kind": "product",
+          "description": "Lite Ultra XL Stove System är ett kompakt stormkök för dig som rör dig snabbt och packar lätt. Med en 1,2-literskastrull och en totalvikt på endast 290 g (brännare + kastrull) passar det lika bra för solovandraren som för det lilla sällskapet. Minimalistisk de",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "1999.00",
+            "currency": "SEK",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://primusequipment.com/products/lite-ultra-stove-system-0-8-l",
+          "image": "https://primusequipment.com/cdn/shop/files/P356044_LiteUltra_08L_3.webp?v=1779266015&width=1920",
+          "title": "Lite Ultra Stove System 0.8L",
+          "kind": "product",
+          "description": "Lite Ultra Stove System är vårt lättaste stormkök – utvecklat för vandrare och klättrare som vill röra sig snabbt och packa lätt. Varje gram har skalats bort utan att tumma på funktion. Med titandetaljer, lätt brännare och kastrull samt minimalistisk design är",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "1899.00",
+            "currency": "SEK",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://primusequipment.com/products/lite-plus-stove-system-ii",
+          "image": "https://primusequipment.com/cdn/shop/files/P356046_LitePlus_II_Stove_System_1L_BLACK5_v2.webp?v=1789743166&width=1920",
+          "title": "Lite Plus Stove System II 0.8L - BLACK",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "1699.00",
+            "currency": "SEK",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://primusequipment.com/products/lite-plus-stove-system-ii",
+          "image": "https://primusequipment.com/cdn/shop/files/356048_Liteplus_08L_GREEN_v2_1.webp?v=1790086583&width=1920",
+          "title": "Lite Plus Stove System II 0.8L - GREEN",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "1699.00",
+            "currency": "SEK",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-cascade-designs": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://cascadedesigns.com/pages/sustainability",
+          "image": "https://cascadedesigns.com/cdn/shop/files/cascade-designs-nav-sustainability.jpg?v=11425512641857664230",
+          "title": "OUR SUSTAINABILITY INITIATIVES",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com",
+          "image": "https://cascadedesigns.com/cdn/shop/files/cascade-designs-homepage-rinckenberger.jpg?v=1778014522&width=3840",
+          "title": "Cascade Designs, Inc.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/pages/msr",
+          "image": "https://cascadedesigns.com/cdn/shop/files/CDIweb-Homepage-BrandImg-MSR.jpg?v=1789075139&width=1500",
+          "title": "Cascade Designs, Inc.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/pages/thermarest",
+          "image": "https://cascadedesigns.com/cdn/shop/files/CDIweb-Homepage-BrandImg-ThermaRest.jpg?v=1789075178&width=1500",
+          "title": "Cascade Designs, Inc.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://cascadedesigns.com/products/changing-poncho",
+          "image": "https://cascadedesigns.com/cdn/shop/files/13867_packtowl_changing_poncho_botanical_hood_small_4264.jpg?v=1724820224&width=1920",
+          "title": "Changing Poncho - Botanical / S/M",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "69.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://cascadedesigns.com/products/changing-poncho",
+          "image": "https://cascadedesigns.com/cdn/shop/files/13866_packtowl_changing_poncho_botanical_pocket_large_4036.jpg?v=1724820224&width=1920",
+          "title": "Changing Poncho - Botanical / L/XL",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "69.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://cascadedesigns.com/products/changing-poncho",
+          "image": "https://cascadedesigns.com/cdn/shop/files/13869_packtowl_changing_poncho_curve_pocket_small_4182.jpg?v=1724820225&width=1920",
+          "title": "Changing Poncho - Retro Curve / S/M",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "69.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://cascadedesigns.com/products/changing-poncho",
+          "image": "https://cascadedesigns.com/cdn/shop/files/13868_packtowl_changing_poncho_Curve_hood_large_4088.jpg?v=1724820224&width=1920",
+          "title": "Changing Poncho - Retro Curve / L/XL",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "69.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-montblanc": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": []
+    },
+    "durable-lamy": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": []
+    },
+    "durable-fisher-space-pen": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": []
+    },
+    "durable-saddleback-leather": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://saddlebackleather.com/",
+          "image": "https://saddlebackleather.com/cdn/shop/files/tan-10-drawstring-leather-backpack-tumbled__60782.jpg?v=1790393114&width=500",
+          "title": "10\" Convertible Crossbody in Tobacco, worn as a backpack by a woman in a denim jacket outdoors",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://saddlebackleather.com/",
+          "image": "https://saddlebackleather.com/cdn/shop/files/black-10-drawstring-tumbled-leather-backpack__41161.jpg?v=1790393114&width=500",
+          "title": "10\" Convertible Crossbody in Black, front view held by its strap by a woman in jeans",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://saddlebackleather.com/",
+          "image": "https://saddlebackleather.com/cdn/shop/files/saddleback-leather-drawstring-backpack-rhino-africa__24228.jpg?v=1790393254&width=500",
+          "title": "12\" Drawstring Backpack in Tobacco, worn by a woman watching two rhinos in the African bush",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://saddlebackleather.com/",
+          "image": "https://saddlebackleather.com/cdn/shop/files/saddleback-tumbled-leather-drawstring-backpack-tan-brown-lifestyle18__54872.jpg?v=1790393254&width=500",
+          "title": "12\" Drawstring Backpack in Tobacco, worn by a woman paddling a canoe on a lake",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://saddlebackleather.com/products/10-convertible-crossbody",
+          "image": "https://saddlebackleather.com/cdn/shop/files/29949_source_1731533966.jpg?v=1790393114&width=1920",
+          "title": "10\" Convertible Crossbody - Black",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering",
+          "offer": null
+        },
+        {
+          "url": "https://saddlebackleather.com/products/10-convertible-crossbody",
+          "image": "https://saddlebackleather.com/cdn/shop/files/29950_source_1732638102.jpg?v=1790393114&width=1920",
+          "title": "10\" Convertible Crossbody - Chestnut",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering",
+          "offer": {
+            "price": "249.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://saddlebackleather.com/products/10-convertible-crossbody",
+          "image": "https://saddlebackleather.com/cdn/shop/files/29951_source_1731533966.jpg?v=1790393114&width=1920",
+          "title": "10\" Convertible Crossbody - Dark Coffee Brown",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering",
+          "offer": null
+        },
+        {
+          "url": "https://saddlebackleather.com/products/10-convertible-crossbody",
+          "image": "https://saddlebackleather.com/cdn/shop/files/29952_source_1731533966.jpg?v=1790393114&width=1920",
+          "title": "10\" Convertible Crossbody - Tobacco",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering",
+          "offer": {
+            "price": "249.00",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-tanner-goods": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": []
+    },
+    "durable-fox-umbrellas": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.foxumbrellas.com/",
+          "image": "https://www.foxumbrellas.com/cdn/shop/files/1_{width}x.jpg?v=1613569420",
+          "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://www.foxumbrellas.com/",
+          "image": "https://www.foxumbrellas.com/cdn/shop/files/1_900x.jpg?v=1613569420",
+          "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://www.foxumbrellas.com/",
+          "image": "https://www.foxumbrellas.com/cdn/shop/files/7_{width}x.jpg?v=1613569420",
+          "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://www.foxumbrellas.com/",
+          "image": "https://www.foxumbrellas.com/cdn/shop/files/5_{width}x.jpg?v=1613569420",
+          "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://www.foxumbrellas.com/products/gt29-nickel-fox-head-copy",
+          "image": "https://www.foxumbrellas.com/cdn/shop/files/GT29_Dragon_01_1600x.jpg?v=1773326009",
+          "title": "GT29 Nickel Dragon Head (NEW 2026)",
+          "kind": "product",
+          "description": "This umbrella comes with a Nickel (Silver) Finish Dragon Head on a straight stem handle with Nickel Tip Cup, the umbrella is made on a 25\" Classic Fox Steel Tube Frame (brown tube with black ribs) with a Best Polyester cover/canopy. This umbrella also comes wi",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering",
+          "offer": null
+        },
+        {
+          "url": "https://www.foxumbrellas.com/products/gt19s-brown-fox-head-new-2026",
+          "image": "https://www.foxumbrellas.com/cdn/shop/files/GT19S_Fox_03_1600x.jpg?v=1773327117",
+          "title": "GT19S Brown Fox Head (NEW 2026)",
+          "kind": "product",
+          "description": "This umbrella comes with a Brown Finish Fox Head on a straight stem handle with Gilt Tip Cup, the umbrella is made on a 25\" Classic Fox Steel Tube Frame (brown tube with black ribs) with a Best Polyester cover/canopy. This umbrella also comes with a matching o",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering",
+          "offer": null
+        },
+        {
+          "url": "https://www.foxumbrellas.com/products/gt1-hardwood",
+          "image": "https://www.foxumbrellas.com/cdn/shop/products/GT1_099_MB_FRONTPAGE_800x.jpg?v=1632142380",
+          "title": "GT1 Hardwood (4 Handle Choices)",
+          "kind": "product",
+          "description": "This polished hardwood handle umbrella is available with a choice of four different polished hardwood handles. The handles available are Medium Brown, Dark Brown, Light Grained and Dark Grained. This umbrella is made on a 25\" Classic Fox Steel Tube Frame (brow",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering",
+          "offer": {
+            "price": "157.00",
+            "currency": "GBP",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock",
+            "valid_until": "2027-11-01T23:59:59+00:00"
+          }
+        }
+      ]
+    },
+    "durable-kaweco": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T22:46:39.132262Z",
+      "items": [
+        {
+          "url": "https://www.kaweco-pen.com/",
+          "image": "https://www.kaweco-pen.com/media/92/0a/c7/1791461158/Kaweco_Piston_Sport_Bordeaux_Startseite_XXL.webp?ts=1791461158",
+          "title": "Kaweco_Piston_Sport_Bordeaux_Startseite_XXL",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://www.kaweco-pen.com/",
+          "image": "https://www.kaweco-pen.com/media/8d/e0/ee/1791361739/Kaweco_Piston_Sport_Bordeaux_Startseite_vert.webp?ts=1791361739",
+          "title": "Kaweco_Piston_Sport_Bordeaux_Startseite_vert",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://www.kaweco-pen.com/",
+          "image": "https://www.kaweco-pen.com/media/0e/32/93/1787209165/Kaweco-Piston_Filler_Sport_Bordeaux_01_s.webp?ts=1787209165",
+          "title": "Kaweco PISTON SPORT AL Solo Bordeaux/Gold",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
+        },
+        {
+          "url": "https://www.kaweco-pen.com/",
+          "image": "https://www.kaweco-pen.com/media/21/4e/33/1787209166/Kaweco_Piston-Filler_FP_Bordeaux_Detail_Front_s.webp?ts=1787209166",
+          "title": "Kaweco PISTON SPORT AL Solo Bordeaux/Gold",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T22:46:39.132262Z",
+          "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     }
