@@ -1,0 +1,556 @@
+{
+  "database": "quantaphi-business-directory",
+  "as_of": "2026-11-01",
+  "scope": "Metro tile queue, not completed business coverage",
+  "jobs": [
+    {
+      "job_id": "metro:CO:denver",
+      "city": "Denver",
+      "state": "CO",
+      "priority": 0,
+      "bbox": "-105.15,39.67,-104.87,39.82",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:CO:aurora",
+      "city": "Aurora",
+      "state": "CO",
+      "priority": 1,
+      "bbox": "-104.9,39.64,-104.7,39.80",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:CO:boulder",
+      "city": "Boulder",
+      "state": "CO",
+      "priority": 1,
+      "bbox": "-105.32,39.96,-105.20,40.08",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:CO:colorado-springs",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "priority": 1,
+      "bbox": "-104.89,38.79,-104.72,38.91",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:CO:fort-collins",
+      "city": "Fort Collins",
+      "state": "CO",
+      "priority": 1,
+      "bbox": "-105.16,40.54,-105.03,40.63",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:CO:lakewood",
+      "city": "Lakewood",
+      "state": "CO",
+      "priority": 1,
+      "bbox": "-105.18,39.67,-105.05,39.77",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:AK:anchorage",
+      "city": "Anchorage",
+      "state": "AK",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:AL:birmingham",
+      "city": "Birmingham",
+      "state": "AL",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:AR:little-rock",
+      "city": "Little Rock",
+      "state": "AR",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:AZ:phoenix",
+      "city": "Phoenix",
+      "state": "AZ",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:CA:los-angeles",
+      "city": "Los Angeles",
+      "state": "CA",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:CT:bridgeport",
+      "city": "Bridgeport",
+      "state": "CT",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:DE:wilmington",
+      "city": "Wilmington",
+      "state": "DE",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:FL:miami",
+      "city": "Miami",
+      "state": "FL",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:GA:atlanta",
+      "city": "Atlanta",
+      "state": "GA",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:HI:honolulu",
+      "city": "Honolulu",
+      "state": "HI",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:IA:des-moines",
+      "city": "Des Moines",
+      "state": "IA",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:ID:boise",
+      "city": "Boise",
+      "state": "ID",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:IL:chicago",
+      "city": "Chicago",
+      "state": "IL",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:IN:indianapolis",
+      "city": "Indianapolis",
+      "state": "IN",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:KS:wichita",
+      "city": "Wichita",
+      "state": "KS",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:KY:louisville",
+      "city": "Louisville",
+      "state": "KY",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:LA:new-orleans",
+      "city": "New Orleans",
+      "state": "LA",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:MA:boston",
+      "city": "Boston",
+      "state": "MA",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:MD:baltimore",
+      "city": "Baltimore",
+      "state": "MD",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:ME:portland",
+      "city": "Portland",
+      "state": "ME",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:MI:detroit",
+      "city": "Detroit",
+      "state": "MI",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:MN:minneapolis",
+      "city": "Minneapolis",
+      "state": "MN",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:MO:kansas-city",
+      "city": "Kansas City",
+      "state": "MO",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:MS:jackson",
+      "city": "Jackson",
+      "state": "MS",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:MT:billings",
+      "city": "Billings",
+      "state": "MT",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:NC:charlotte",
+      "city": "Charlotte",
+      "state": "NC",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:ND:fargo",
+      "city": "Fargo",
+      "state": "ND",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:NE:omaha",
+      "city": "Omaha",
+      "state": "NE",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:NH:manchester",
+      "city": "Manchester",
+      "state": "NH",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:NJ:newark",
+      "city": "Newark",
+      "state": "NJ",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:NM:albuquerque",
+      "city": "Albuquerque",
+      "state": "NM",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:NV:las-vegas",
+      "city": "Las Vegas",
+      "state": "NV",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:NY:new-york",
+      "city": "New York",
+      "state": "NY",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:OH:columbus",
+      "city": "Columbus",
+      "state": "OH",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:OK:oklahoma-city",
+      "city": "Oklahoma City",
+      "state": "OK",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:OR:portland",
+      "city": "Portland",
+      "state": "OR",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:PA:philadelphia",
+      "city": "Philadelphia",
+      "state": "PA",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:RI:providence",
+      "city": "Providence",
+      "state": "RI",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:SC:charleston",
+      "city": "Charleston",
+      "state": "SC",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:SD:sioux-falls",
+      "city": "Sioux Falls",
+      "state": "SD",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:TN:nashville",
+      "city": "Nashville",
+      "state": "TN",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:TX:houston",
+      "city": "Houston",
+      "state": "TX",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:UT:salt-lake-city",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:VA:virginia-beach",
+      "city": "Virginia Beach",
+      "state": "VA",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:VT:burlington",
+      "city": "Burlington",
+      "state": "VT",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:WA:seattle",
+      "city": "Seattle",
+      "state": "WA",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:WI:milwaukee",
+      "city": "Milwaukee",
+      "state": "WI",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:WV:charleston",
+      "city": "Charleston",
+      "state": "WV",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "metro:WY:cheyenne",
+      "city": "Cheyenne",
+      "state": "WY",
+      "priority": 2,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "first-metro-as",
+      "city": "Pago Pago",
+      "state": "AS",
+      "priority": 3,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "first-metro-dc",
+      "city": "Washington",
+      "state": "DC",
+      "priority": 3,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "first-metro-gu",
+      "city": "Hagatna",
+      "state": "GU",
+      "priority": 3,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "first-metro-mp",
+      "city": "Saipan",
+      "state": "MP",
+      "priority": 3,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "first-metro-pr",
+      "city": "San Juan",
+      "state": "PR",
+      "priority": 3,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    },
+    {
+      "job_id": "first-metro-vi",
+      "city": "Charlotte Amalie",
+      "state": "VI",
+      "priority": 3,
+      "bbox": "",
+      "status": "queued",
+      "source": "overture-places"
+    }
+  ]
+}
