@@ -179,6 +179,8 @@ def ingest_file(path, job, max_items=MAX_PER_RUN):
             duplicates += 1
         else:
             accepted.append(business)
+            if business["address"]:
+                known.add((normalize(business["name"]), normalize(business["address"])))
         if examined >= max_items:
             end_of_file = False
             break
