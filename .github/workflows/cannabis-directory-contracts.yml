@@ -28,6 +28,6 @@ jobs:
           node --check cannabis-directory-policy.mjs
           node --check workers/cannabis-directory.mjs
       - name: Organic directory, state policy, privacy and no-ad tests
-        run: node --test test/cannabis-directory.test.mjs test/cannabis-directory-worker.test.mjs
+        run: node --test test/cannabis-directory.test.mjs test/cannabis-directory-worker.test.mjs test/cannabis-directory-quality.test.mjs
       - name: Official Colorado MED source manifest idempotence
         run: python -m unittest discover -s test -p 'test_cannabis_*.py' -v
