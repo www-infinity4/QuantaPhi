@@ -24,8 +24,8 @@ test('homepage and detail route use the original ChatGPT card',()=>{
  assert.match(cards,/if\(card\.id==='chatgpt'\)mountOfficialViewer\(host,card\.id\)/);
  assert.match(home,/quanta-official-viewer\.css/);
  assert.match(detail,/quanta-official-viewer\.css/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261031-following-meta1/);
- assert.match(detail,/source-quick-cards\.mjs\?v=20261028-search1/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261101-integra-business1/);
+ assert.match(detail,/source-quick-cards\.mjs\?v=20261101-integra-business1/);
  const standalone=read('website-viewer.html');
  assert.match(standalone,/id="officialWebsiteViewer"/);
  assert.match(standalone,/href="\/\?card=chatgpt"/);
