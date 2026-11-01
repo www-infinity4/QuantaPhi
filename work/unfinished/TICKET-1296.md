@@ -22,7 +22,7 @@ merged: true # source Phases 1 and 2 only; spendable ledger is still incomplete
 deployed: false
 live_verified: false
 blocker: "Authentic wallet credit/debit settlement and server-minted proof still need an idempotent authenticated ledger"
-next_action: "Verify exact-head CI and merge read-only receipt UI; then build authenticated D1 Bits settlement and spend ledger without affecting existing wallet assets"
+next_action: "Implement owner-authenticated, server-verified D1 Bits settlement and spend ledger, and independently verify Cloudflare release without changing existing wallet balances"
 
 # Acceptance
 - Personal Context is first step for every authenticated iteration
