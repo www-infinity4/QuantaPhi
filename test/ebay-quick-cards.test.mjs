@@ -121,7 +121,7 @@ test('buy now is offered on auctions only when eBay reports FIXED_PRICE as still
 test('My eBay navigation is an account-shaped UI, not a fabricated authenticated session',()=>{
  assert.deepEqual(ebayAccountViews.map(x=>x.id),['buying','bidding','selling','purchases']);
  const app=read('ebay-quick-cards.mjs'),css=read('ebay-quick-cards.css');
- for(const text of ['My eBay','Buying','Bidding','Selling','Purchases','Maximum bid','Continue on eBay'])assert.ok(app.includes(text),text);
+ for(const text of ['My eBay','Maximum bid','Continue on eBay','Get eBay account permission'])assert.ok(app.includes(text),text);
  assert.match(app,/eqc-my-ebay/);
  assert.match(app,/eqc-bid-review/);
  assert.match(app,/Not connected/);
