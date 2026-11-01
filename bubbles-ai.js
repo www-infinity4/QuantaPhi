@@ -1493,8 +1493,8 @@ if(!embedded){
 }
 document.body.append(launcher,panel);
 // One messenger with evidence-backed cognitive/activity bubbles; no extra AI session.
-void import('/bubbles-iteration-bubbles.mjs?v=20261101-bits1')
- .then(({mountBubbleIterations})=>mountBubbleIterations({launcher,panel,status}))
+void import('/bubbles-iteration-bubbles.mjs?v=20261101-activity2')
+ .then(({mountBubbleIterations})=>mountBubbleIterations({launcher,panel,status,chatScroll,conversation}))
  .catch(()=>{ /* The activity view must never interrupt chat, voice or wallet. */ });
 // Fit the visible phone viewport, including the space remaining above its keyboard.
 const chatFitStyle=create('style');
