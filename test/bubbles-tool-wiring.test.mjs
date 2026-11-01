@@ -12,7 +12,7 @@ test('same Bubbles turn is guarded before asynchronous owner code and memory loo
  const context=code.indexOf('await currentOwnerContext(');
  assert.ok(guard>0&&guard<pairing&&pairing<context);
  assert.match(code,/turnPending=true;\s*try\{/);
- assert.match(code,/finally\s*\{turnPending=false;\}/);
+ assert.match(code,/finally\s*\{turnPending=false;drainVoiceTurns\(\);\}/);
 });
 test('ordinary Bubbles replies distinguish partial/failed/blocked tool receipts from verified actions',()=>{
  const file=source;
