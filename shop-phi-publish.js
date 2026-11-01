@@ -26,6 +26,29 @@ async function publish(item,studio,status,onUpdate,saveDraft){
   shipping:item.shipping||'Discuss with buyer',quantity:item.quantity||1,
   priceLabel:item.priceLabel,url:item.url||'',imageUrl:item.imageUrl||'',photoIds:item.photoIds||[]
  };
+ if(item.publishState==='public-edit-pending'){
+  if(!item.ownItem||!item.publishConsent||item.confirmPublishedEdit!==true)
+   throw Error('Confirm ownership and approve changes to this already-public listing.');
+  status.textContent='Updating the original public listing through your verified wallet…';
+  const edited=await api()(path(item.itemId)+'/edit',{...body,confirmPublishedEdit:true});
+  if(edited.edited!==true||edited.published!==true||edited.visibility!=='unlisted'||
+    edited.listing?.listingId!==item.itemId)throw Error('ShopPhi did not confirm updating the original public listing.');
+  const verify=await fetch('/quant-ai/api/shopphi/public/'+encodeURIComponent(item.itemId),{
+   method:'GET',credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(15000)});
+  const current=await verify.json();
+  if(!verify.ok||current.ok!==true||current.listing?.listingId!==item.itemId||
+    current.listing.status!=='published'||current.listing.title!==item.title||
+    current.listing.priceLabel!==edited.listing.priceLabel)
+   throw Error('Updated public listing was not independently verified. Check My Listings before trying again.');
+  item.publishState='public';
+  item.publicUrl=edited.listing.link;
+  item.imageUrl=edited.listing.imageUrl?new URL(edited.listing.imageUrl,location.origin).href:item.imageUrl;
+  item.merchant=edited.listing.merchant||item.merchant;
+  delete item.confirmPublishedEdit;
+  saveDraft(item);onUpdate(item);
+  status.textContent='Your existing ShopPhi listing was updated and verified at the same shareable URL. Public carousel review is separate.';
+  return true;
+ }
  status.textContent='Saving your item in your wallet-owned ShopPhi catalog…';
  const saved=await api()('/listings',body);
  if(saved.listing?.listingId!==item.itemId||saved.saved!=='private-draft')throw Error('Quant AI did not verify saving your item.');
