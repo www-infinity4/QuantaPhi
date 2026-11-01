@@ -32,7 +32,7 @@ if(root){
  prev.type=next.type='button';nav.append(prev,count,next);nav.hidden=true;
  const hide=make('button','icd-quiet','Hide 21+ directory');hide.type='button';hide.hidden=true;
  root.append(kicker,title,intro,gate,form,status,listing,nav,hide);
- let acknowledged=false,rows=[],index=0,page=0,hasMore=false,loading=false,version=0;
+ let acknowledged=false,rows=[],index=0,page=0,hasMore=false,loading=false,version=0,filters=null;
  function render(){
   const row=rows[index];listing.hidden=!row;nav.hidden=!row;
   if(!row)return;
@@ -47,12 +47,17 @@ if(root){
   count.textContent=(index+1)+' / '+rows.length+(hasMore?' · more available':'');
   prev.disabled=index===0;next.disabled=index===rows.length-1&&!hasMore;
  }
+ // A page cursor belongs to the submitted query, never to edited form controls.
+ function submittedFilters(){return {state:state.value,city:city.value.trim(),q:query.value.trim()}}
  async function search(append=false){
   if(!acknowledged||loading)return;
+  const selected=append?filters:submittedFilters();
+  if(!selected)return;
   loading=true;submit.disabled=true;const request=++version;
+  const requestedPage=append?page+1:0;
   status.textContent='Loading verified-source directory records…';
   try{
-   const params=new URLSearchParams({state:state.value,city:city.value.trim(),q:query.value.trim(),page:String(append?page:0)});
+   const params=new URLSearchParams({...selected,page:String(requestedPage)});
    const response=await fetch('/api/21-directory/stores?'+params,{
     method:'GET',headers:{'X-Visitor-21-Acknowledged':'true'},
     credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(10000)
@@ -61,26 +66,23 @@ if(root){
    const data=await response.json();if(request!==version||!acknowledged)return;
    const found=Array.isArray(data.items)?data.items.filter(x=>x?.name&&safeUrl(x.source_url)&&x.sponsored===false):[];
    if(append){rows.push(...found);index=Math.max(0,rows.length-found.length)}
-   else{rows=found;index=0;page=0}
+   else{rows=found;index=0;filters=selected}
+   page=requestedPage; // Commit the next page only after a successful response.
    hasMore=data.has_more===true;
-   status.textContent=rows.length?rows.length+' source records loaded for '+state.value+'.'+(data.medical_only?' Medical program only.':''):'No source-backed listings imported for this search yet. Queued states are not populated.';
+   status.textContent=rows.length?rows.length+' source records loaded for '+selected.state+'.'+(data.medical_only?' Medical program only.':''):'No source-backed listings imported for this search yet. Queued states are not populated.';
    render();
   }catch{if(request===version){status.textContent='Directory unavailable. No stores, ratings or advertisements were invented.';if(!append){rows=[];hasMore=false;render()}}}
-  finally{loading=false;submit.disabled=false}
+  finally{if(request===version){loading=false;submit.disabled=false}}
  }
  function close(){
-  acknowledged=false;version++;rows=[];index=0;page=0;hasMore=false;
+  acknowledged=false;version++;loading=false;submit.disabled=false;filters=null;
+  rows=[];index=0;page=0;hasMore=false;
   gate.hidden=false;form.hidden=true;hide.hidden=true;status.textContent='Directory hidden for this visit.';render();
  }
  enter.addEventListener('click',()=>{acknowledged=true;gate.hidden=true;form.hidden=false;hide.hidden=false;void search()});
- form.addEventListener('submit',e=>{e.preventDefault();page=0;void search()});
+ form.addEventListener('submit',e=>{e.preventDefault();version++;loading=false;submit.disabled=false;page=0;void search()});
  prev.addEventListener('click',()=>{if(index>0){index--;render()}});
- next.addEventListener('click',()=>{if(index<rows.length-1){index++;render()}else if(hasMore&&!loading){page++;void search(true)}});
+ next.addEventListener('click',()=>{if(index<rows.length-1){index++;render()}else if(hasMore&&!loading){void search(true)}});
  hide.addEventListener('click',close);
- const reduced=globalThis.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
- const timer=setInterval(()=>{if(!root.isConnected){clearInterval(timer);return}
-  if(acknowledged&&!reduced&&!document.hidden&&listing.getClientRects().length&&rows.length>1&&!root.contains(document.activeElement)){
-   index=(index+1)%rows.length;render();
-  }
- },25000);
+ // Deliberate Previous/Next navigation only; never auto-advance while someone reads.
 }
