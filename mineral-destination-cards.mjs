@@ -1,5 +1,5 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
-/* Independently source-checked destinations. No invented availability or wallet operations. */
+/* Independently source-checked destinations. No invented availability or financial operations. */
 const photo=(file,credit,license)=>({file,credit,license,source:'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(file)});
 const d=(id,name,location,official,summary,visitorNote,experience,actions,image)=>Object.freeze({id,name,location,official,summary,visitorNote,experience,actions:Object.freeze(actions),image});
 export const MINERAL_DESTINATIONS=Object.freeze([
