@@ -27,7 +27,7 @@ test('travel cards share working Oracle source controls and photo-attribution vi
  assert.match(view,/card\.photoCredit/);
  assert.match(view,/vbs-travel-meta/);
  assert.match(view,/mountCardActions\(shared/);
- assert.match(css,/\.vbs-kind-travel \.vbs-identity/);
+ assert.match(css,/\.vbs-kind-travel\[data-source-id\^="colorado-"\] \.vbs-identity/);
  const deck=src('oracle-card-deck.js');
  assert.match(deck,/#verifiedBrandSportsCards \.iqc-card/);
 });
