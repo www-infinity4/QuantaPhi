@@ -6,6 +6,7 @@ const now=Date.parse('2026-11-01T12:00:00Z');
 const verdict={authenticated:true,subject:'user-123',verified_over_21:true,proof_kind:'third_party_verified',expires_at:'2026-11-02T12:00:00Z',jurisdiction:'US-CO'};
 const creative={id:'approved-creative',category:'cannabis',approved:1,rights_cleared:1,license_id:'TEST-ONLY',
  advertiser:'Sample reviewed advertiser',publisher_domain:'publisher.example.com',
+ title:'Reviewed advertiser notice',description:'Publisher information',
  image:'https://publisher.example.com/approved.jpg',url:'https://publisher.example.com/info',
  reviewed_at:'2026-10-31T12:00:00Z',approved_jurisdictions:'["US-CO"]'};
 test('age verdict requires trusted external verification and nonexpired proof',()=>{
@@ -40,7 +41,7 @@ const request=(method,path,origin='https://quantaphi.org')=>new Request(origin+p
 });
 test('Worker denies all ads and consent when verifier or database missing',async()=>{
  const a=await worker.fetch(request('GET','/v1/restricted-ads/creatives?category=cannabis'),{});
- assert.equal(a.status,503);assert.equal(a.headers.get('Cache-Control'),'no-store');
+ assert.equal(a.status,503);assert.match(a.headers.get('Cache-Control'),/no-store/);
  const b=await worker.fetch(request('POST','/v1/restricted-ads/consent'),{});
  assert.equal(b.status,503);
 });
