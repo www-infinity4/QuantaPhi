@@ -1,0 +1,43 @@
+name: Business directory city-by-city Overture import
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/business_directory_ingest.py'
+      - '.github/workflows/business-directory-import.yml'
+  schedule:
+    - cron: '27 */4 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: business-directory-overture-import
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.repository == 'www-infinity4/QuantaPhi'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify importer contracts before any data writes
+        run: python3 -m unittest discover -s test -p 'test_business_directory_ingest.py' -v
+      - name: Verify scoped Cloudflare credentials exist
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo 'BLOCKED: protected Cloudflare API token unavailable'; exit 1; }
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo 'BLOCKED: Cloudflare account ID unavailable'; exit 1; }
+      - name: Install the official Overture Maps CLI
+        run: python3 -m pip install overturemaps==1.0.2
+      - name: Import one verified metro tile in idempotent 400-record batches
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: python3 scripts/business_directory_ingest.py

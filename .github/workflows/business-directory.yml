@@ -1,14 +1,23 @@
-name: Business directory regression
+name: Infinity National Business Directory
 on:
   pull_request:
     paths:
-      - 'workers/business-directory.js'
-      - 'business-directory-card.*'
-      - 'test/business-directory.test.mjs'
+      - 'workers/business-directory/**'
+      - 'test/business-directory-*.test.mjs'
+      - 'businesses/**'
+      - 'index.html'
+      - 'directory/index.html'
+      - '.github/workflows/business-directory.yml'
   push:
     branches: [main]
+    paths:
+      - 'workers/business-directory/**'
+      - 'test/business-directory-*.test.mjs'
+      - 'businesses/**'
+      - 'directory/index.html'
+      - '.github/workflows/business-directory.yml'
 jobs:
-  test:
+  contracts:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -17,6 +26,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check workers/business-directory.js
-      - run: node --check business-directory-card.mjs
-      - run: node --test test/business-directory.test.mjs
+      - name: Syntax checks
+        run: |
+          node --check workers/business-directory/worker.mjs
+          node --check businesses/directory-app.mjs
+      - name: Business directory and regression tests
+        run: |
+          node --test test/business-directory-worker.test.mjs test/business-directory-page.test.mjs test/public-directory-studio.test.mjs
+      - name: Overture incremental importer unit verification
+        run: python3 -m unittest discover -s test -p 'test_business_directory_ingest.py' -v
