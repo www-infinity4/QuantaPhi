@@ -1,7 +1,7 @@
 import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261031-source-ad-first1';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261031-heritage-signin1';
 // Real source searches, not invented inventory, account data or offers.
-const provider=(id,name,category,official,query,topics,color)=>({id,name,category,official,query,topics,color});
+const provider=(id,name,category,official,query,topics,color,extra={})=>({id,name,category,official,query,topics,color,...extra});
 export const PREMIUM_CARDS=Object.freeze([
  provider('vamworld','VAMWorld','Coin varieties','https://vamworld.com/','Morgan dollar',['1888 O Scarface VAM 1B','1888 O Hot Lips VAM 4','1891 CC Spitting Eagle VAM 3'],'#514536'),
  provider('pcgs','PCGS CoinFacts','Coins','https://www.pcgs.com/coinfacts','Morgan dollar',['Morgan dollars','Photograde','Certification verification'],'#243b56'),
@@ -18,6 +18,15 @@ export const PREMIUM_CARDS=Object.freeze([
  provider('sonic','SONIC','Restaurants','https://pages-a.sonicdrivein.com/deals/','deals',['Deals','Rewards','Menu'],'#a12c39'),
  provider('burger-king','Burger King','Restaurants','https://www.bk.com/','offers',['Royal Perks','Offers','Menu'],'#843b23'),
  provider('mcdonalds','McDonald’s','Restaurants','https://www.mcdonalds.com/us/en-us/deals.html','deals',['App deals','Rewards','Menu'],'#9b2429'),
+ // Local dining: individually addressable cards, official restaurants only. No inferred prices or availability.
+ provider("denver-sams-no3","Sam’s No. 3 · Downtown",'Restaurants',"https://samsno3.com/","green chili breakfast burrito",["Green chili","Kitchen Sink Burrito","Breakfast"],'#3c5357',{dining:{"district":"1500 Curtis St, Denver, CO 80202","address":"Old-school diner with an extensive menu, breakfast burritos, and Colorado green chile.","highlight":"https://samsno3.com/","menu":null}}),
+ provider("denver-work-and-class","Work & Class · RiNo",'Restaurants',"https://www.workandclassdenver.com/","slow roasted meats empanadas",["Dinner menu","Shareable meats","Empanadas"],'#3c5357',{dining:{"district":"2500 Larimer St, Denver, CO 80205","address":"Lively Latin-American and Southern-inspired food designed to share. RiNo location accepts reservations.","highlight":"https://www.workandclassdenver.com/locations","menu":{"label":"Check reservations","url":"https://www.workandclassdenver.com/"}}}),
+ provider("denver-major-tom","Major Tom · RiNo",'Restaurants',"https://majortomdenver.com/","seasonal dinner champagne small plates",["Dinner","Champagne","Seasonal menu"],'#3c5357',{dining:{"district":"2845 Larimer St, Denver, CO 80205","address":"Intimate seasonal cooking, grower Champagne and cocktails from the team behind Beckon.","highlight":"https://majortomdenver.com/","menu":{"label":"Check reservations","url":"https://majortomdenver.com/"}}}),
+ provider("denver-steubens","Steuben’s Uptown",'Restaurants',"https://steubens.com/","fried chicken comfort food",["Fried chicken","Brunch","Desserts"],'#3c5357',{dining:{"district":"523 E 17th Ave, Denver, CO 80203","address":"Regional American comfort classics and a retro neighborhood dining room.","highlight":"https://steubens.com/denver-uptown-steubens-food-menu","menu":{"label":"Check reservations","url":"https://steubens.com/"}}}),
+ provider("denver-hampton-social","The Hampton Social · Denver",'Restaurants',"https://www.thehamptonsocial.com/denver","seafood lobster roll coastal brunch",["Brunch","Seafood","Coastal menu"],'#3c5357',{dining:{"district":"2501 16th St, Denver, CO 80211","address":"Coastal-inspired dining, seafood and lively brunches in a bright, social setting.","highlight":"https://www.thehamptonsocial.com/denver","menu":{"label":"Check reservations","url":"https://www.thehamptonsocial.com/denver"}}}),
+ provider("denver-rhein-haus","Rhein Haus · Denver",'Restaurants',"https://www.rheinhausdenver.com/","giant pretzel house sausages",["Pretzels","Bocce","Dinner menu"],'#3c5357',{dining:{"district":"1415 Market St, Denver, CO 80202","address":"Bavarian-inspired beer hall with house-made sausages, pretzels and indoor bocce.","highlight":"https://www.rheinhausdenver.com/menus","menu":{"label":"Check reservations","url":"https://www.rheinhausdenver.com/contact"}}}),
+ provider("denver-atomic-cowboy","Atomic Cowboy · Colfax",'Restaurants',"https://www.theatomiccowboy.com/locations-colfax","Denver Biscuit Company Fat Sullys pizza",["Breakfast biscuits","Fat Sully’s Pizza","Late-night"],'#3c5357',{dining:{"district":"3237 E Colfax Ave, Denver, CO 80206","address":"Denver Biscuit Company by day and Fat Sully’s pizza into the night at the Colfax location.","highlight":"https://www.theatomiccowboy.com/locations-colfax","menu":{"label":"Join waitlist","url":"https://www.theatomiccowboy.com/locations"}}}),
+ provider("denver-casa-bonita","Casa Bonita · Lakewood",'Restaurants',"https://www.casabonitadenver.com/","cliff divers waterfall Mexican food",["Cliff diving","Family outing","Dining"],'#3c5357',{dining:{"district":"6715 W Colfax Ave, Lakewood, CO 80214","address":"Theatrical Mexican dining with cliff divers and an indoor waterfall; advance reservations are required.","highlight":"https://www.casabonitadenver.com/","menu":{"label":"Check reservations","url":"https://www.casabonitadenver.com/"}}}),
  provider('loc','Library of Congress','Archives','https://www.loc.gov/collections/','historic radio photographs',['Historic radios','Jazz photographs','Historic maps'],'#3b3849'),
  provider('nasa-library','NASA Image Library','Science','https://images.nasa.gov/','Carina nebula',['Carina nebula','James Webb telescope','Apollo 11'],'#172d50')
 ]);
@@ -43,10 +52,10 @@ async function lookup(card,query){
  const result={time:Date.now(),rows:rows.slice(0,12)};cache.set(key,result);return result;
 }
 export function mountPremiumCard(card){
- const article=make('article','iqc-card premium-card');article.dataset.sourceId=card.id;article.dataset.sourceName=card.name;article.dataset.sourceReady='true';article.dataset.official=card.official;article.dataset.sourceCategory=card.category;article.dataset.sourceQuery=card.query;article.style.setProperty('--premium-accent',card.color);
+ const article=make('article','iqc-card premium-card');if(card.dining)article.classList.add('denver-dining-card');article.dataset.sourceId=card.id;article.dataset.sourceName=card.name;article.dataset.sourceReady='true';article.dataset.official=card.official;article.dataset.sourceCategory=card.category;article.dataset.sourceQuery=card.query;article.style.setProperty('--premium-accent',card.color);
  const header=make('header','premium-heading');header.append(make('p','iqc-kind',card.category+' · INFINITY 2026®'),make('h2','',card.name));
  const identity=make('a','premium-origin',new URL(card.official).hostname);identity.href=card.official;identity.target='_blank';identity.rel='noopener noreferrer';header.append(identity);
- const browse=make('a','premium-browse-source','Explore '+card.name+' listings ↗');browse.href=card.official;browse.target='_blank';browse.rel='noopener noreferrer';header.append(browse);
+ const browse=make('a','premium-browse-source',card.dining?'Visit official restaurant ↗':'Explore '+card.name+' listings ↗');browse.href=card.official;browse.target='_blank';browse.rel='noopener noreferrer';header.append(browse);
  const form=make('form','premium-search');const label=make('label','',card.id==='nasa-library'?'Explore the NASA image collection':'Search '+card.name);
  const field=make('input');field.type='search';field.value=card.query;field.required=true;field.maxLength=160;field.setAttribute('aria-label','Search '+card.name);label.append(field);
  const submit=make('button','','Search');submit.type='submit';form.append(label,submit);
@@ -55,7 +64,25 @@ export function mountPremiumCard(card){
  const state=make('p','premium-state','Choose a topic or search the original source.');state.setAttribute('role','status');
  const content=make('div','premium-content'),actions=make('div');
  const disclaimer=make('p','premium-footnote',card.id==='nasa-library'?'NASA collection images and captions. Check the original record for credits and usage guidance.':card.category==='Restaurants'?'Search original restaurant pages. Confirm current offers, dates and eligibility at the restaurant.':card.category==='Auctions'||card.category==='Shopping'?'Original-source search results. Confirm price, availability and sale details on the source page.':'Independent QuantaPhi research card · original publisher sources.');
- article.append(header,content,form,topics,state,disclaimer,actions);
+ let diningInfo=null;
+ if(card.dining){
+  diningInfo=make('div','denver-dining-details');
+  diningInfo.append(make('p','denver-dining-place',card.dining.district+' · '+card.dining.address),
+   make('p','denver-dining-description',card.dining.highlight));
+  const links=make('nav','denver-dining-links');links.setAttribute('aria-label',card.name+' restaurant actions');
+  const add=(label,href,primary=false)=>{
+   const a=make('a',primary?'denver-dining-main':'',label);
+   a.href=href;a.target='_blank';a.rel='noopener noreferrer';links.append(a);
+  };
+  add('View menu',card.dining.menu,true);
+  const directions=new URL('https://www.google.com/maps/search/?api=1');
+  directions.searchParams.set('query',card.dining.address);
+  add('Directions',directions.href);
+  if(card.dining.booking)add(card.dining.booking.label,card.dining.booking.url);
+  diningInfo.append(links,make('p','denver-dining-note','View current menus and booking options at the restaurant. This card does not place a reservation or claim live availability.'));
+ }
+ if(diningInfo)article.append(header,diningInfo,content,disclaimer,actions);
+ else article.append(header,content,form,topics,state,disclaimer,actions);
  mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
  const rotating=['Restaurants','Shopping','Trading cards','Auctions'].includes(card.category);
  let serial=0,loaded=false;
