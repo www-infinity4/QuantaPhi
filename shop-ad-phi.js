@@ -257,7 +257,10 @@ form.addEventListener('submit',async e=>{
  item.policyStatus=policy.status;
  item.policyNote=policy.reason;
  item.itemId=editingSaved?.itemId||crypto.randomUUID();
- if(editingSaved?.photoIds?.length)item.photoIds=editingSaved.photoIds.slice();
+ if(editingSaved?.photoIds?.length){
+  item.photoIds=editingSaved.photoIds.slice();
+  item.uploadedMediaIds=(editingSaved.uploadedMediaIds||editingSaved.mediaIds||[]).slice();
+ }
  if(editingSaved?.publishState==='public'){
   item.publishState='public-edit-pending';
   item.confirmPublishedEdit=item.ownItem&&item.publishConsent;
