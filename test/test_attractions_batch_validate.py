@@ -16,6 +16,8 @@ class BatchValidationTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.paths = []
+        centers = {"nw": (-107.0, 40.0), "ne": (-104.0, 40.0),
+                   "sw": (-107.0, 38.0), "se": (-104.0, 38.0)}
         for shard in ("nw", "ne", "sw", "se"):
             path = Path(self.temp.name) / f"co-overture-{shard}.json"
             rows = [{
@@ -26,6 +28,8 @@ class BatchValidationTests(unittest.TestCase):
                 "license": "CDLA-Permissive-2.0",
                 "image_url": "",
                 "confidence": 0.91,
+                "longitude": centers[shard][0],
+                "latitude": centers[shard][1],
             } for i in range(6)]
             path.write_text(json.dumps({
                 "dataset_version": "2026-10-21.0",
@@ -64,6 +68,19 @@ class BatchValidationTests(unittest.TestCase):
             validator.validate(self.paths)
         self.edit(3, lambda d: d.update(truncated=False))
         self.edit(0, lambda d: d["items"][0].update(confidence=float("nan")))
+        with self.assertRaisesRegex(ValueError, "invalid"):
+            validator.validate(self.paths)
+
+    def test_wrong_shard_geometry_fails_even_when_state_says_colorado(self):
+        self.edit(0, lambda d: d["items"][0].update(latitude=38.0))
+        with self.assertRaisesRegex(ValueError, "invalid"):
+            validator.validate(self.paths)
+
+    def test_nonfinite_or_missing_coordinates_fail(self):
+        self.edit(1, lambda d: d["items"][0].update(longitude=float("nan")))
+        with self.assertRaisesRegex(ValueError, "invalid"):
+            validator.validate(self.paths)
+        self.edit(1, lambda d: d["items"][0].pop("longitude"))
         with self.assertRaisesRegex(ValueError, "invalid"):
             validator.validate(self.paths)
 
