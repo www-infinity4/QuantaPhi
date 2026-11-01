@@ -5,6 +5,8 @@ on:
       - 'cannabis-directory-policy.mjs'
       - 'workers/cannabis-directory.mjs'
       - 'workers/cannabis-directory-*.sql'
+      - 'scripts/cannabis_missouri_dcr_review.py'
+      - 'docs/CANNABIS-MO-DCR-REVIEW.md'
       - 'test/cannabis-directory*.test.mjs'
       - 'test/test_cannabis_*.py'
       - '.github/workflows/cannabis-directory-contracts.yml'
@@ -27,7 +29,8 @@ jobs:
         run: |
           node --check cannabis-directory-policy.mjs
           node --check workers/cannabis-directory.mjs
+          python -m py_compile scripts/cannabis_missouri_dcr_review.py
       - name: Organic directory, state policy, privacy and no-ad tests
         run: node --test test/cannabis-directory.test.mjs test/cannabis-directory-worker.test.mjs test/cannabis-directory-quality.test.mjs
-      - name: Official Colorado MED source manifest idempotence
+      - name: Official source manifests and Missouri DCR ATO preflight
         run: python -m unittest discover -s test -p 'test_cannabis_*.py' -v
