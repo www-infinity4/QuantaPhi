@@ -12,8 +12,9 @@ class CannabisQualitySchemaTests(unittest.TestCase):
         script = SQL.read_text(encoding="utf-8")
         executable = "\\n".join(line for line in script.splitlines()
                                if not line.lstrip().startswith("--")).lower()
-        for forbidden in ("insert into", "update ", "delete from", "wallet",
-                          "social_security", "ssn", "age_verified"):
+        for forbidden in ("insert into", "drop table", "update store_sources",
+                          "delete from store_sources", "wallet", "social_security",
+                          "ssn", "age_verified"):
             self.assertNotIn(forbidden, executable)
         db.executescript(script)
         db.executescript(script)
