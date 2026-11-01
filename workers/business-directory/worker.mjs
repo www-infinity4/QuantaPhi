@@ -56,12 +56,14 @@ async function records(url,db){
  const sql="SELECT id,name,city,state,category,address,latitude,longitude,website,source_url,source_name,source_license,attribution,image_url,image_rights,ad_status,claimed,last_seen FROM businesses WHERE "+where.join(' AND ')+' ORDER BY name COLLATE NOCASE,id LIMIT ? OFFSET ?';
  const r=await db.prepare(sql).bind(...values,f.limit+1,f.offset).all();
  const rows=r.results||[];
- return {ok:true,records:rows.slice(0,f.limit).map(safeBusiness),has_more:rows.length>f.limit,
-  next_offset:rows.length>f.limit?f.offset+f.limit:null,filters:f,
+ const next=f.offset+f.limit;
+ const hasMore=rows.length>f.limit&&next<=10000;
+ return {ok:true,records:rows.slice(0,f.limit).map(safeBusiness),has_more:hasMore,
+  next_offset:hasMore?next:null,filters:f,
   notice:'Independent public business directory; listing does not indicate sponsorship, product availability, or an endorsement.'};
 }
 async function health(db){
- const p=await db.prepare("SELECT (SELECT COUNT(*) FROM businesses WHERE status='listed') AS businesses,(SELECT COUNT(DISTINCT state) FROM businesses WHERE status='listed') AS states,(SELECT COUNT(*) FROM city_import_jobs WHERE status='queued') AS queued,(SELECT COUNT(DISTINCT state) FROM city_import_jobs) AS queued_states").first();
+ const p=await db.prepare("SELECT (SELECT COUNT(*) FROM businesses WHERE status='listed') AS businesses,(SELECT COUNT(DISTINCT state) FROM businesses WHERE status='listed') AS states,(SELECT COUNT(*) FROM city_import_jobs WHERE status='queued') AS queued,(SELECT COUNT(DISTINCT state) FROM city_import_jobs WHERE status='queued') AS queued_states").first();
  return {ok:true,...p,database:'quantaphi-business-directory',version:'2026-11-01',source_policy:'curated metadata with attributed source records'};
 }
 async function cities(db){
