@@ -96,7 +96,7 @@ async function enrichQuality(items,env){
     const ids=items.map(item=>item.id);
     const placeholders=ids.map(()=>'?').join(',');
     const {results:decisions}=await env.DIRECTORY.prepare(
-      `SELECT store_id,status,review_status,appeal_status,reviewed_at,expires_at FROM store_quality_decisions WHERE store_id IN (${placeholders})`
+      `SELECT d.store_id,d.status,d.review_status,d.appeal_status,d.reviewed_at,d.expires_at,m.domain AS merchant_domain,m.verified_at AS merchant_domain_verified_at,m.source_url AS merchant_domain_source_url FROM store_quality_decisions d LEFT JOIN store_quality_merchant_domains m ON m.store_id=d.store_id WHERE d.store_id IN (${placeholders})`
     ).bind(...ids).all();
     if(!decisions?.length)return items;
     const {results:evidence}=await env.DIRECTORY.prepare(
@@ -116,8 +116,7 @@ async function enrichQuality(items,env){
       appealsById.get(row.store_id).push(row);
     }
     return items.map(item=>{
-      const merchantDomain=new URL(item.source_url).hostname;
-      const reviewed=reviewedQualityStar(byId.get(item.id),evidenceById.get(item.id)||[],merchantDomain,new Date(),appealsById.get(item.id)||[]);
+      const reviewed=reviewedQualityStar(byId.get(item.id),evidenceById.get(item.id)||[],new Date(),appealsById.get(item.id)||[]);
       return reviewed?{...item,quality_star:reviewed.star,quality_sources:reviewed.sources,
         quality_reviewed_at:reviewed.reviewed_at,quality_disclosure:reviewed.disclosure}:item;
     });
