@@ -161,3 +161,44 @@ test('seed-only Cron validates source provenance before any D1 mutation',async()
   assert.equal(calls,5);
  }finally{globalThis.fetch=previous}
 });
+
+test('large four-shard Cron stays below D1 Free query budget and quarantines unreviewed historic sites',async()=>{
+ let queryCalls=0;const insertedStatuses=[];
+ const env={ATTRACTIONS:{
+  prepare(sql){return {bind(...args){return {sql,args,first:async()=>{queryCalls++;return null}}}}},
+  batch:async statements=>{
+   queryCalls++;
+   for(const statement of statements)if(statement.sql.startsWith('INSERT INTO attractions(')){
+    insertedStatuses.push(statement.args.at(-1));
+   }
+   return statements.map(()=>({success:true}));
+  }
+ }};
+ const lengths=[948,3998,610,971],closures=[8,40,3,10];
+ for(let shard=0;shard<4;shard++){
+  const items=Array.from({length:lengths[shard]},(_,i)=>({
+   id:'overture:colorado-batch-'+shard+'-'+String(i).padStart(8,'0'),
+   name:'Overture place '+i,city:'Denver',state:'CO',
+   category:i===0?'historic_site':'museum',latitude:39.7,longitude:-104.9,
+   website:'',source_name:'Overture Maps',source_url:'https://overturemaps.org/',
+   license:'CDLA-Permissive-2.0',confidence:.9,image_url:'',image_attribution:''
+  }));
+  const closed_ids=Array.from({length:closures[shard]},(_,i)=>
+   'overture:closure-'+shard+'-'+String(i).padStart(8,'0'));
+  const result=await importSnapshot(env,{schema_version:1,state:'CO',source_name:'Overture Maps',
+   dataset_version:'2026-10-21.0',generated_at:'2026-11-01T17:00:00Z',
+   shard:String(shard),items,closed_ids,truncated:false});
+  assert.equal(result.records,lengths[shard]);
+ }
+ await importSnapshot(env,seed);
+ assert.ok(queryCalls<=50,'D1 Free Worker 50-query limit: '+queryCalls);
+ assert.equal(queryCalls,42);
+ assert.equal(insertedStatuses.filter(s=>s==='needs_review').length,4);
+ assert.equal(insertedStatuses.filter(s=>s==='listed').length,6527-4+seed.items.length);
+});
+test('health distinguishes publicly listed attractions from review-held source candidates',async()=>{
+ const env={ATTRACTIONS:{prepare(){return {first:async()=>({total:100,listed:80,needs_review:20})}}}};
+ const response=await worker.fetch(new Request('https://example.org/api/attractions/health'),env);
+ const body=await response.json();
+ assert.equal(body.records,80);assert.equal(body.review_pending,20);assert.equal(body.total_records,100);
+});
