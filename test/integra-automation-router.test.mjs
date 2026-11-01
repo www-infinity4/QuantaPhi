@@ -55,6 +55,16 @@ test('paid TinyFish is an explicitly approved, host-scoped and budgeted exceptio
  assert.equal(planIntegraAutomation('browser',{grants:{browser_approval:true},approval:{confirmed:true,allowedHosts:['https://example.com/path'],maxUsd:1},quote}).status,'site_scope_required');
 });
 
+test('production X card and homepage load the exact revised Integra assets',()=>{
+ const version='20261101-integra-business1';
+ const detail=read('source-quick-card.html'),home=read('index.html'),catalog=read('source-quick-cards.mjs');
+ assert.ok(detail.includes('/quanta-card-experience.css?v='+version));
+ assert.ok(detail.includes('/source-quick-cards.mjs?v='+version));
+ assert.ok(home.includes('/quanta-card-experience.css?v='+version));
+ assert.ok(home.includes('/source-quick-cards.mjs?v='+version));
+ assert.ok(catalog.includes('quanta-card-experience.mjs?v='+version));
+});
+
 test('public X card guide is a read-only plan, not user credentials, analytics capture or Grok API',()=>{
  const src=read('integra-automation-router.mjs');
  assert.doesNotMatch(src,/fetch\(|localStorage|sessionStorage|document\.cookie|navigator\.sendBeacon|Bearer\s|TINYFISH_API_KEY/);
