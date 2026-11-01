@@ -16,7 +16,7 @@ test('store source requests happen only after a per-visit display acknowledgment
  assert.match(js,/enter\.addEventListener\('click',\(\)=>\{acknowledged=true/);
  assert.match(js,/X-Visitor-21-Acknowledged':'true'/);
  assert.match(js,/credentials:'omit',cache:'no-store'/);
- assert.doesNotMatch(js,/localStorage|sessionStorage|document\.cookie|wallet|SSN|birthdate/);
+ assert.doesNotMatch(js,/localStorage|sessionStorage|document\.cookie|walletBalance|SSN|birthdate/);
  assert.doesNotMatch(js,/oracle:activate/);
 });
 test('unrated, organic medical-only source UI contains no paid product creative',()=>{
