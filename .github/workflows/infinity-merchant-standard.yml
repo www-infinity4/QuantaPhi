@@ -1,0 +1,31 @@
+name: Infinity merchant integration contract
+on:
+  pull_request:
+    paths:
+      - 'infinity-merchant-standard.mjs'
+      - 'test/infinity-merchant-standard.test.mjs'
+      - 'docs/INFINITY-MERCHANT-PARTNER-STANDARD.md'
+      - 'docs/QUANTS-STARCOIN-MERCHANT-UNIT-PROPOSAL.md'
+      - 'docs/APPAREL-UX-GUESS-PEPE-AUDIT.md'
+      - '.github/workflows/infinity-merchant-standard.yml'
+  push:
+    paths:
+      - 'infinity-merchant-standard.mjs'
+      - 'test/infinity-merchant-standard.test.mjs'
+      - 'docs/INFINITY-MERCHANT-PARTNER-STANDARD.md'
+      - 'docs/QUANTS-STARCOIN-MERCHANT-UNIT-PROPOSAL.md'
+      - 'docs/APPAREL-UX-GUESS-PEPE-AUDIT.md'
+      - '.github/workflows/infinity-merchant-standard.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  merchant-standard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test merchant-owned content, scopes, money disclaimers
+        run: |
+          node --check infinity-merchant-standard.mjs
+          node --test test/infinity-merchant-standard.test.mjs
