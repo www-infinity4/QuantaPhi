@@ -1488,7 +1488,7 @@ if(!embedded){
 }
 document.body.append(launcher,panel);
 // One messenger with evidence-backed cognitive/activity bubbles; no extra AI session.
-void import('/bubbles-iteration-bubbles.mjs?v=20261031-iteration1')
+void import('/bubbles-iteration-bubbles.mjs?v=20261101-bits1')
  .then(({mountBubbleIterations})=>mountBubbleIterations({launcher,panel,status}))
  .catch(()=>{ /* The activity view must never interrupt chat, voice or wallet. */ });
 // Fit the visible phone viewport, including the space remaining above its keyboard.
