@@ -51,6 +51,8 @@ test('retail cards mount as real Oracle swipeable widgets with native shared act
   assert.match(renderer,/dataset\.sourceReady='true'/);
   assert.match(renderer,/dataset\.sourceId=card\.id/);
   assert.match(renderer,/mountCardActions\(actions/);
+  assert.ok(renderer.includes("document.querySelector('[data-source-id="));
+  assert.ok(!renderer.includes('bank.querySelector('));
   assert.match(renderer,/quantaphi:source-cards-ready/);
   assert.match(renderer,/premiumSourceCards/);
   assert.match(renderer,/new URL\('https:\/\/www\.google\.com\/maps\/search\/\?api=1'\)/);
