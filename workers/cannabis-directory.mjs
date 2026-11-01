@@ -98,9 +98,18 @@ async function stores(req,env,url){
     "SELECT id,name,store,city,state,address,source_url,source_domain,source_name,verified_at,record_status,paid_sponsor,license_status FROM store_sources WHERE state=? AND record_status='listed' AND paid_sponsor=0 AND (?='' OR lower(city)=lower(?)) AND (name LIKE ? OR store LIKE ?) ORDER BY name COLLATE NOCASE,id LIMIT 25 OFFSET ?"
   ).bind(state,city,city,'%'+q+'%','%'+q+'%',n*24).all();
   const rows=results||[];
+  const legal=await env.DIRECTORY.prepare(
+    'SELECT adult_use,medical_program FROM state_policy WHERE state=?'
+  ).bind(state).first();
+  const medicalOnly=legal?.adult_use==='not_authorized'&&Number(legal?.medical_program)===1;
+  const accessType=medicalOnly?'medical_only':(legal?.adult_use||'unreviewed');
   return reply({state,city,query:q,page:n,page_size:24,has_more:rows.length>24,
-    items:rows.slice(0,24).map(publicRow).filter(Boolean),
-    disclosure:'Organic business sources only. No paid cannabis ads, purchase, product images, potency or health claims. Age acknowledgment is NOT age verification.'});
+    access_type:accessType,medical_only:medicalOnly,
+    items:rows.slice(0,24).map(publicRow).filter(Boolean).map(item=>({...item,
+      access_type:accessType,medical_only:medicalOnly})),
+    disclosure:medicalOnly
+      ? 'Medical-program dispensaries only; NOT adult-use. State patient eligibility applies. No age verification, product offers or paid ads.'
+      : 'Organic business sources only. No paid cannabis ads, purchase, product images, potency or health claims. Age acknowledgment is NOT age verification.'});
 }
 export default {
   async fetch(req,env){
