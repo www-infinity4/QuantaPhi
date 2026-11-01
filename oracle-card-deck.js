@@ -45,6 +45,18 @@ const choices=[
  ['businessDirectoryCard','National Business Directory · Explore'],
  ['shopAdPhi','Discover products'],
  ['infinityAdultContentCard','21+ content preferences'],
+ ['dispensary-livwell-colorado','21+ · LivWell · Colorado Boulevard'],
+ ['dispensary-livwell-central','21+ · LivWell · Central Park'],
+ ['dispensary-native-roots-speer','21+ · Native Roots · Speer Boulevard'],
+ ['dispensary-native-roots-highlands','21+ · Native Roots · Highlands'],
+ ['dispensary-fired-sixth','21+ · Fired Cannabis · 6th Avenue'],
+ ['dispensary-fired-alameda','21+ · Fired Cannabis · Alameda'],
+ ['dispensary-fired-cherry','21+ · Fired Cannabis · Cherry Creek'],
+ ['dispensary-lightshade-evans','21+ · Lightshade · Evans'],
+ ['dispensary-lightshade-dayton','21+ · Lightshade · Dayton'],
+ ['dispensary-star-buds-lakeside','21+ · Star Buds · Lakeside'],
+ ['dispensary-green-solution-wewatta','21+ · The Green Solution · Wewatta'],
+ ['dispensary-maikoh-broadway','21+ · Maikoh Holistics · North Broadway'],
  ['phiChannelCards','KYOU · Infinity live TV'],
  ['publicCardTrends','Explore what is trending']
 ];
@@ -89,6 +101,18 @@ const CARD_DIRECTIONS={
  businessDirectoryCard:['business-directory','Directory','Search source-backed businesses across states and territories'],
  shopAdPhi:['deck-shop','Shopping','Explore interactive product and advertising tools'],
  infinityAdultContentCard:['adult-content-preferences','Preferences','Manage optional 21+ ad viewing; no restricted creative without server verification'],
+ ['dispensary-livwell-colorado']:['adult-store-livwell-colorado','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-livwell-central']:['adult-store-livwell-central','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-native-roots-speer']:['adult-store-native-roots-speer','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-native-roots-highlands']:['adult-store-native-roots-highlands','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-fired-sixth']:['adult-store-fired-sixth','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-fired-alameda']:['adult-store-fired-alameda','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-fired-cherry']:['adult-store-fired-cherry','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-lightshade-evans']:['adult-store-lightshade-evans','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-lightshade-dayton']:['adult-store-lightshade-dayton','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-star-buds-lakeside']:['adult-store-star-buds-lakeside','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-green-solution-wewatta']:['adult-store-green-solution-wewatta','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-maikoh-broadway']:['adult-store-maikoh-broadway','21+ Directory','Independent source-verified dispensary listing with original store website'],
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
 };
 
