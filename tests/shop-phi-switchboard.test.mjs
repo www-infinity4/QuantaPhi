@@ -86,8 +86,8 @@ test('recorded anonymous exposure reduces repeated winning, not creates StarCoin
 test('six responsive positions preserve original viewer and scripts, with real provenance labels',()=>{
  const deck=src('oracle-card-deck.js'),page=src('index.html'),
   shop=src('shop-ad-phi.js'),css=src('shop-phi-switchboard.css'),engine=src('shop-phi-switchboard.mjs');
- assert.match(page,/shop-phi-switchboard\.mjs\?v=20261027-readability2/);
- assert.match(page,/shop-phi-switchboard\.css\?v=20261027-readability2/);
+ assert.match(page,/shop-phi-switchboard\.mjs\?v=20261101-auto1/);
+ assert.match(page,/shop-phi-switchboard\.css\?v=20261101-auto1/);
  assert.match(deck,/quantaphi:switchboard-change/);
  assert.match(shop,/quantaphi:switchboard-change/);
  assert.match(engine,/stage\.parentNode\.insertBefore\(grid,stage\)/);
