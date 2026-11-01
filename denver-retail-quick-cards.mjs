@@ -77,7 +77,7 @@ function mount(){
  if(!bank)return;
  let added=0;
  for(const card of DENVER_RETAIL_CARDS){
-  if(!validDenverRetailCard(card)||bank.querySelector('[data-source-id="'+card.id+'"]'))continue;
+  if(!validDenverRetailCard(card)||document.querySelector('[data-source-id="'+card.id+'"]'))continue;
   bank.append(createDenverRetailCard(card));added++;
  }
  if(added)window.dispatchEvent(new Event('quantaphi:source-cards-ready'));
