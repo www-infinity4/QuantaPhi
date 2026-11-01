@@ -24,6 +24,21 @@ class TestAttractionImport(unittest.TestCase):
   self.assertIsNone(imp.normalize(x))
   x=sample();x['properties']['addresses']=[{'locality':'Denver','region':'WY'}]
   self.assertIsNone(imp.normalize(x))
+ def test_only_explicit_colorado_closures_become_tombstones(self):
+  x=sample()
+  x['properties']['operating_status']='permanently_closed'
+  self.assertEqual(imp.closure_id(x),'overture:'+x['id'])
+  self.assertIsNone(imp.normalize(x))
+  d=imp.build([x],generated_at='2026-11-01T00:00:00Z')
+  self.assertEqual(d['items'],[])
+  self.assertEqual(d['closed_ids'],['overture:'+x['id']])
+  y=sample();y['properties']['operating_status']='permanently_closed'
+  y['properties']['addresses']=[{'locality':'Cheyenne','region':'WY'}]
+  self.assertIsNone(imp.closure_id(y))
+  z=sample();z['properties']['operating_status']='permanently_closed'
+  z['properties']['addresses']=[{'locality':'Unknown'}]
+  self.assertIsNone(imp.closure_id(z))
+  self.assertIsNone(imp.closure_id(sample()))
  def test_no_unsafe_website(self):
   x=sample();x['properties']['websites']=['javascript:alert(1)']
   self.assertEqual(imp.normalize(x)['website'],'')
