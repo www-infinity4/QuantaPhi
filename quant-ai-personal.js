@@ -15,7 +15,7 @@ async function walletToken(){
  return token;
 }
 async function shopPhiRequest(path,body){
- if(!/^\/(?:listings(?:\/[0-9a-f-]{36}\/(?:publish|remove))?)$/i.test(path))throw Error('Invalid seller action');
+ if(!/^\/(?:listings(?:\/[0-9a-f-]{36}\/(?:publish|remove|edit))?)$/i.test(path))throw Error('Invalid seller action');
  const token=await walletToken();
  const response=await fetch('/quant-ai/api/shopphi'+path,{
   method:body===undefined?'GET':'POST',
