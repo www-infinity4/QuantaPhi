@@ -5,7 +5,8 @@ const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 test('new nationwide directory is linked from existing Infinity Oracle and public directory',()=>{
  const home=read('index.html'),dir=read('directory/index.html'),page=read('businesses/index.html'),sitemap=read('sitemap.xml');
  assert.match(home,/id="quantaDirectoryCards"/);
- assert.match(home,/data-site-url="\/businesses\/"/);
+ assert.match(home,/href="\/businesses\/"/);
+ assert.doesNotMatch(home,/data-site-url="\/businesses\/"/);
  assert.match(dir,/href="\/businesses\/"/);
  assert.match(page,/id="businessSearch"/);
  assert.match(page,/id="results"/);
@@ -29,4 +30,12 @@ test('business Worker binding and isolated database never touch any payment ledg
  assert.match(wrangler,/database_id = "51bfedfd-15e0-4695-ab80-0416ff2ea133"/);
  assert.match(wrangler,/quantaphi.org\/api\/business-directory\*/);
  assert.doesNotMatch(wrangler,/QUANTA_DB|IDENTITY_DB|WALLET|LEDGER|starquest/i);
+});
+
+test('source attribution, license, and stable pagination are preserved on cards',()=>{
+ const script=read('businesses/directory-app.mjs');
+ assert.match(script,/business\.attribution/);
+ assert.match(script,/business\.source_license/);
+ assert.match(script,/submittedFilters/);
+ assert.match(script,/Object\.entries\(\{\.\.\.submittedFilters/);
 });
