@@ -17,10 +17,10 @@ fence: null
 last_observed_at_utc: "2026-11-01T05:49:05Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/newsroom-adsense-readiness-20261101
-head_sha: null
-pr: null
+head_sha: edb7e7800e3553a5713d32ba8fc5c59d37e88b95
+pr: 1353
 tests:
-  - "test/newsroom.test.mjs written, CI execution pending"
+  - "test/newsroom.test.mjs passed on GitHub Actions run 41278578788"
 ci: []
 merged: false
 deployed: false
@@ -28,6 +28,9 @@ live_verified: false
 blocker: "Google AdSense account review status and existing consent management not verified"
 next_action: "Run PR CI for the isolated newsroom, review changes and then merge when gates pass."
 ---
+
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1350
+Pull request: https://github.com/www-infinity4/QuantaPhi/pull/1353
 
 ## Scope
 First-party crawlable editorial hub at /newsroom/, two dated full original explainers sourced to NASA and DOE, current headlines from the already-present News Phi Cloudflare desk, link in main QuantaPhi homepage, sitemap, focused tests and CI.
