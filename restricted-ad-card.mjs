@@ -10,8 +10,8 @@ if(root){
  root.classList.add('rac-card');root.dataset.personalization='disabled';
  const head=el('div','rac-head'),kicker=el('small','rac-kicker','INFINITY® · CONTENT PREFERENCES'),
    heading=el('h2','rac-heading','21+ content settings'),
-   intro=el('p','rac-intro','Adult-category advertising stays off unless you opt in and the service confirms your age and legal eligibility.'),
-   message=el('p','rac-status','No restricted advertising is being displayed.');
+   intro=el('p','rac-intro','Browse original 21+ websites after acknowledging your age. Sponsored product ads are separate and require approved verification and campaigns.'),
+   message=el('p','rac-status','Sponsored cannabis advertisements are not active.');
  message.setAttribute('role','status');message.setAttribute('aria-live','polite');
  head.append(kicker,heading);root.append(head,intro);
  // Separate visitor-initiated source navigation from licensed/verified advertising.
@@ -66,14 +66,14 @@ if(root){
  out.target='_blank';out.rel='noopener noreferrer';frame.hidden=true;
  frame.append(image,title,description,sponsor,out);
  const controls=el('div','rac-actions'),
-   enable=el('button','rac-button','Request 21+ access'),
+   enable=el('button','rac-button','Verify for licensed advertisements'),
    disable=el('button','rac-button','Turn off'),
    next=el('button','rac-button','Next verified ad'),
    pause=el('button','rac-button','Pause');
  for(const b of [enable,disable,next,pause])b.type='button';
  disable.hidden=true;next.hidden=true;pause.hidden=true;
  controls.append(enable,disable,next,pause);
- const note=el('p','rac-note','Age checks require an approved server-side verification service. Tapping this button does not verify your age. No advertiser images, products, or links are shown before approval.');
+ const note=el('p','rac-note','The publisher links above are independent website references, not paid ads. Real sponsored cannabis products and advertiser images stay locked until the separate 21+ identity, rights and jurisdiction checks pass.');
  root.append(frame,controls,note);
  let approved=[],last='',seen=[],optedIn=false,paused=false,serial=0;
  const status=value=>{message.textContent=value};
