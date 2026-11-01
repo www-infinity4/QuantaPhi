@@ -120,3 +120,9 @@
  #oracleCardDeck .shopphi-flank{min-height:0}
  #oracleCardDeck .shopphi-flank-visual{height:190px}
 }
+
+/* Compact context label; companion sources no longer dominate the actual card. */
+#oracleCardDeck .shopphi-switchboard-heading{font:700 11px/1.35 system-ui,sans-serif;letter-spacing:.015em;text-transform:none;color:#556575;margin:12px 0 7px}
+#oracleCardDeck .shopphi-flank-navigation{flex-wrap:wrap}
+#oracleCardDeck .shopphi-flank-navigation button:last-child{flex:1 1 100%;min-height:42px;background:#f5f7f9;color:#344a59;border-color:#d4dde5}
+@media(prefers-reduced-motion:reduce){#oracleCardDeck .shopphi-flank{scroll-behavior:auto;transition:none;animation:none}}
