@@ -3,10 +3,10 @@ issue: 1394
 project: "50-state organic cannabis source directory"
 source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1394
-state: review_pending
+state: live_partial_nationwide
 dot: "🟡"
-progress_percent: 40
-progress_basis: "Read-only Worker tests and six exact-head CI workflows passed at 3996d0d; D1 has 17 unique stores (12 CO, five Iowa medical-only), 49 queued and one review state, five official regulator sources, one store and one source-catalog receipt. PR merge/deployment and 48 other states' stores remain."
+progress_percent: 45
+progress_basis: "Fresh public GET and isolated D1: 33 organic listings in four states (CO 12, IA medical-only 5, IL 8, NY 8), 50 state policy rows, 47 queued jobs, 14 regulator source URLs, 3 store receipts; read-only Worker live, zero approved stars or ads. Most states remain unpopulated."
 sessions_spent: 1
 sessions_remaining_estimate: unknown
 agent: "ChatGPT source and Cloudflare, no verified coordinator lease"
@@ -16,14 +16,25 @@ lease_expires_at: null
 task_session_id: null
 repo: www-infinity4/QuantaPhi
 branch: feat/nationwide-cannabis-directory-bruce-banner-20261101
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/1395"
-merged: false
-deployed: false
-live_verified: false
-next_action: "Verify final exact-head #1395 CI and resolved review threads, merge only if actual GitHub gates permit, then separately deploy/read back the isolated source Worker."
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1412"
+merged: true
+deployed: true
+live_verified: true
+next_action: "Missouri DCR: independently extract active dispensary license + approved-to-operate + public address records before bounded D1 import; preserve 47 queued states, no paid ads or invented stars. Attractions Cron separately awaits Nov 2 review."
 ---
 
 # TICKET-1394 · 50-state organic cannabis source directory
+
+## CURRENT VERIFIED CHECKPOINT — 2026-11-01 (supersedes historical notes below)
+- Organic read-only Worker `quantaphi-cannabis-directory` is deployed to apex/www `/api/21-directory/*`, Cloudflare deployment `c82d4a810d5d40bf826d3646527ca669`, with isolated `DIRECTORY` D1 binding. Independent public GET health/coverage/regulator/receipts readbacks succeeded. Ads and first-party age verification remain disabled.
+- Source Worker PR #1395 merged `c4efec7bd4964d956aacec0c3c1abe27f9c969f2`; quality ★ evidence/appeal gate PR #1412 merged `8f7528c08c92cb8cbfcc9977334c240942c3d892`. Five final-head workflows passed on #1412, independent Copilot COMMENTED review findings repaired and threads resolved. No fabricated APPROVED review.
+- Fresh isolated D1: 33 distinct organic store sources (CO 12, IA **five medical-only**, IL 8, NY 8); **4 populated states**, **47 queued** and **3 review** jobs; **50 policy rows**, **14 official regulator source URLs**, **3 store import receipts**. Zero paid sponsors. Queued states are NOT populated.
+- Quality evidence/decisions/merchant domains/appeals/events tables were created and verified EMPTY; event update/delete triggers are present. A ★ requires fresh corroborated independent sources, verified merchant domain, reviewed decision and no pending appeal. **Zero stars assigned**; no user reviews invented.
+- Missouri remains **unpopulated**. The DCR official license dashboard includes active licensees even when ATO says Not Approved to Operate. Next bounded step: obtain a current machine-verifiable public record of active dispensary license, approved-to-operate status and address; source-review and import only eligible records with idempotent receipts. No routine 911/Broadcastify ID checks, SSN shortcuts or personal profiling.
+- Colorado Attractions is separate: seven real CO rows; reviewed 6,527 candidates await Nov 2 10:37 UTC Cron and independent D1 verification. Restaurants and wallet unchanged.
+- Durable append-only GitHub issue receipts: #1394 comments 6564869621 and 6564927124. Historical lines below are retained for provenance and should not override this latest checkpoint.
+
+
 
 Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1394
 Source PR: https://github.com/www-infinity4/QuantaPhi/pull/1395
