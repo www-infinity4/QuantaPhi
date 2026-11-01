@@ -39,6 +39,18 @@ class TestAttractionImport(unittest.TestCase):
   z['properties']['addresses']=[{'locality':'Unknown'}]
   self.assertIsNone(imp.closure_id(z))
   self.assertIsNone(imp.closure_id(sample()))
+ def test_residential_false_positives_are_not_historic_attractions(self):
+  for name in ('23rd Street East Apartments','1304 Apartments',
+               '25 Broadmoor Apartments','Aspen Shadows Condominium',
+               'Buffalo Ridge II Apartments','Vail Condo Association',
+               'Mountain View Townhomes','Main Street Leasing Office',
+               'Residences at Market Station','A Pomeranz Realty'):
+   with self.subTest(name=name):
+    self.assertIsNone(imp.normalize(sample(kind='historic_site',name=name,confidence=.99)))
+  # A genuine-looking historic site is not rejected solely for its category.
+  self.assertEqual(imp.normalize(sample(kind='historic_site',name='Historic Railroad Depot'))['category'],'historic_site')
+  # The same words in a legitimate museum title should not cause a broad category ban.
+  self.assertEqual(imp.normalize(sample(kind='museum',name='Apartment Living History Museum'))['category'],'museum')
  def test_no_unsafe_website(self):
   x=sample();x['properties']['websites']=['javascript:alert(1)']
   self.assertEqual(imp.normalize(x)['website'],'')
