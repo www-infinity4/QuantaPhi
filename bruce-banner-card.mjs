@@ -33,20 +33,20 @@ if(root){
  const close=e('button','bb-close','Close 21+ sources');close.type='button';
  viewer.append(eyebrow,art,copy,visit,nav,note,close);
  root.append(header,intro,gate,gateNote,viewer);
- let acknowledged=false,last='',seen=[],paused=false,shown=0;
+ let acknowledged=false,last='',seen=[],paused=false;
  const reduce=globalThis.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches===true;
  function rotate(){
   const entries=BRUCE_BANNER_SOURCES.map(x=>eligibleBannerSource(x,acknowledged)).filter(Boolean);
   const item=chooseBannerSource(entries,last,seen);if(!item)return;
   if(seen.length>=entries.length)seen=[];
-  last=item.id;seen.push(item.id);shown++;
+  last=item.id;seen.push(item.id);
   hero.textContent=item.title;heroSub.textContent=item.subtitle;
   badge.textContent=item.format;description.textContent=item.summary;
-  count.textContent='Source '+entries.findIndex(x=>x.id===item.id)+1+' of '+entries.length;
+  count.textContent='Source '+String(entries.findIndex(x=>x.id===item.id)+1)+' of '+entries.length;
   visit.href=item.url;viewer.hidden=false;
  }
  function stop(){
-  acknowledged=false;last='';seen=[];shown=0;paused=false;
+  acknowledged=false;last='';seen=[];paused=false;
   pause.textContent='Pause rotation';pause.setAttribute('aria-pressed','false');
   viewer.hidden=true;gate.hidden=false;visit.removeAttribute('href');
   hero.textContent='';heroSub.textContent='';description.textContent='';
