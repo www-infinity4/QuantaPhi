@@ -1,0 +1,31 @@
+name: 21+ publisher discovery card
+on:
+  pull_request:
+    paths:
+      - 'restricted-source-directory.mjs'
+      - 'restricted-ad-card.mjs'
+      - 'restricted-ad-card.css'
+      - 'test/restricted-source-directory.test.mjs'
+      - '.github/workflows/restricted-publisher-card.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'restricted-source-directory.mjs'
+      - 'restricted-ad-card.mjs'
+      - 'test/restricted-source-directory.test.mjs'
+jobs:
+  adult-source-card:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Source correctness and eligibility tests
+        run: node --test test/restricted-source-directory.test.mjs test/restricted-ad-policy.test.mjs
+      - name: UI and JavaScript syntax
+        run: |
+          node --check restricted-ad-card.mjs
+          node --check restricted-source-directory.mjs
