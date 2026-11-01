@@ -7,7 +7,7 @@ function setup({publicVisible=true,photo=false}={}){
   priceLabel:'$80.00',condition:'Used',category:'Electronics',shipping:'Shipping offered',
   quantity:'1',ownItem:true,publishConsent:true,mediaIds:photo?['shopmedia-phone-1']:[]};
  const server={listingId:id,title:item.title,merchant:'Seller-example',link:'https://quantaphi.org/shopphi-item.html?id='+id,
-  imageUrl:'/quant-ai/api/shopphi/media/a1234567-1234-4234-8234-123456789099'};
+  imageUrl:'/quant-ai/api/shopphi/media/a1234567-1234-4234-8234-123456789099',priceLabel:item.priceLabel};
  const root={QuantAIPersonal:{shopPhiRequest:async(p,body)=>{
   calls.push({path:p,body});
   if(p==='/listings')return {saved:'private-draft',published:false,listing:server};
@@ -16,7 +16,7 @@ function setup({publicVisible=true,photo=false}={}){
   throw Error('unsupported');
  }}};
  const fetch=async(url,opts)=>{calls.push({path:url,method:opts.method});
-  return Response.json({ok:publicVisible,listing:{listingId:publicVisible?id:'else',status:publicVisible?'published':'draft'}},
+  return Response.json({ok:publicVisible,listing:{listingId:publicVisible?id:'else',title:item.title,priceLabel:item.priceLabel,status:publicVisible?'published':'draft'}},
    {status:publicVisible?200:404});
  };
  const ctx={window:root,fetch,location:{origin:'https://quantaphi.org'},URL,AbortSignal,Error};
