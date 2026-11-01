@@ -3,209 +3,342 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-01T02:42:16.722824Z",
+  "checked_at": "2026-11-01T09:48:46.398864Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "darius acuff jr.",
+      "query": "feeding our future",
       "approx_searches": "1000+",
-      "published_at": "2026-11-01T02:20:00Z",
+      "published_at": "2026-11-01T09:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/come-man-tim-hardaway-reacts-183245788.html",
-        "https://bleacherreport.com/articles/25527074-darius-acuff-jr-joins-rare-lists-nba-history-alongside-jordan-wilt-wild-box-score-stats",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/acuff-drops-34-points-14-assists-in-loss"
+        "https://www.cbsnews.com/minnesota/news/said-farah-sentence-bribe-juror-feeding-our-future/",
+        "https://www.mprnews.org/story/2026/10/30/feeding-our-future-defendant-sentenced-for-bribing-juror-after-fraud-acquittal",
+        "https://www.willmarradio.com/news/man-who-tried-to-bride-feeding-our-future-juror-gets-6-5-years-in-jail/article_71273445-7cc8-41e7-93db-9ec4760708ba.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShbh7rYsV2jZDK5z2t2hUNdLjSwP_PG3X91RanQGipXfVo-HcMzrIoRONeL8g",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToJxM0LB39VPD5lPEyX73ehkfj7AaKuab0OqLSPswJbzMV5YjG8GdiGjjGuME",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/come-man-tim-hardaway-reacts-183245788.html",
-          "title": "\"Come on, man\" - Tim Hardaway reacts to Kings rookie Darius Acuff Jr. firing away at a historic rate",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.cbsnews.com/minnesota/news/said-farah-sentence-bribe-juror-feeding-our-future/",
+          "title": "Man who pleaded guilty in scheme to bribe Feeding Our Future juror sentenced",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShbh7rYsV2jZDK5z2t2hUNdLjSwP_PG3X91RanQGipXfVo-HcMzrIoRONeL8g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToJxM0LB39VPD5lPEyX73ehkfj7AaKuab0OqLSPswJbzMV5YjG8GdiGjjGuME"
         },
         {
-          "url": "https://bleacherreport.com/articles/25527074-darius-acuff-jr-joins-rare-lists-nba-history-alongside-jordan-wilt-wild-box-score-stats",
-          "title": "Darius Acuff Jr. Joins Rare Lists in NBA History Alongside Jordan, Wilt with Wild Box Score Stats",
-          "publisher": "Bleacher Report",
+          "url": "https://www.mprnews.org/story/2026/10/30/feeding-our-future-defendant-sentenced-for-bribing-juror-after-fraud-acquittal",
+          "title": "After fraud acquittal, Feeding Our Future defendant gets 6 1/2 year sentence for bribing juror",
+          "publisher": "MPR News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpLkH5rwg2kNoyX6wsxF24L0Q-ITkhaVxbuQ9hcBKlycavN9d1nmmeBc_peWk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNBnz5aXq-9GymITDEzO3NcYnSBKhi10cHuVxu6nytmMBynSsyJOMvs4e9w-M"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/acuff-drops-34-points-14-assists-in-loss",
-          "title": "Acuff drops 34 points, 14 assists in loss",
-          "publisher": "NBC Sports",
+          "url": "https://www.willmarradio.com/news/man-who-tried-to-bride-feeding-our-future-juror-gets-6-5-years-in-jail/article_71273445-7cc8-41e7-93db-9ec4760708ba.html",
+          "title": "Man who tried to bride Feeding Our Future juror gets 6.5 years in jail",
+          "publisher": "Willmar Radio",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYR3dpla-xB5qGcNUFp0Uq5nBAkOFsz4Ynf2r28cdR5Fv-XBfjJpGMTaS8l8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6FwzyxIOrAQT0coH9Og56s3dLfWCxhqqu2yFTFw_6721tefxoUcHOHfdBgA"
         }
       ]
     },
     {
-      "query": "gg jackson ii",
-      "approx_searches": "500+",
-      "published_at": "2026-11-01T02:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/watch/player/_/id/50342538",
-        "https://www.idahostatejournal.com/sports/national/kings-grizzlies-basketball/image_3e9d0e10-b597-5911-9ee8-c10dc1835213.html",
-        "https://www.times-news.com/ap/sports/agate/nba-expanded-conference-glance/article_4b809c3e-ff9b-5549-9de0-fda41c4c25ad.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSmP8oSuZwgDg4aTYSu-3kBhp5pi52SDe_G56MsSWAMDprCcU0tGZGx4K86fQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/watch/player/_/id/50342538",
-          "title": "GG Jackson shows off the range on 3",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSmP8oSuZwgDg4aTYSu-3kBhp5pi52SDe_G56MsSWAMDprCcU0tGZGx4K86fQ"
-        },
-        {
-          "url": "https://www.idahostatejournal.com/sports/national/kings-grizzlies-basketball/image_3e9d0e10-b597-5911-9ee8-c10dc1835213.html",
-          "title": "Kings Grizzlies Basketball",
-          "publisher": "Idaho State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSbx0pD_wSnBMZZrpnmQY8FLllxSYJfxqm0hCmgrAo76w3gN_l_Y4PZG9f-U0"
-        },
-        {
-          "url": "https://www.times-news.com/ap/sports/agate/nba-expanded-conference-glance/article_4b809c3e-ff9b-5549-9de0-fda41c4c25ad.html",
-          "title": "NBA Expanded Conference Glance",
-          "publisher": "The Cumberland Times-News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_xTKojjG9Nrxj98FBl6Ayt6dfcEGE0knuTaf_Irveet15z4IdtWQBx0DwjI"
-        }
-      ]
-    },
-    {
-      "query": "mike tomlin nfl coaching rumors",
-      "approx_searches": "200+",
-      "published_at": "2026-11-01T02:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/mike-tomlin-coaching-return-rumors-003341129.html",
-        "https://frontofficesports.com/article/mike-tomlin-could-be-hottest-nfl-coaching-candidate-if-he-wants-back/",
-        "https://bleacherreport.com/articles/25527338-new-nfl-rumors-mike-tomlins-potential-return-high-demand-ahead-coaching-carousel"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHhySEwANpTat8behU3WvUVnH67zurcdF7hSH7-JFBVBr4X3fiiBFLFiWKIlA",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/mike-tomlin-coaching-return-rumors-003341129.html",
-          "title": "Mike Tomlin Coaching Return Rumors Could Cause 2 NFL Teams to Fire Coaches",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHhySEwANpTat8behU3WvUVnH67zurcdF7hSH7-JFBVBr4X3fiiBFLFiWKIlA"
-        },
-        {
-          "url": "https://frontofficesports.com/article/mike-tomlin-could-be-hottest-nfl-coaching-candidate-if-he-wants-back/",
-          "title": "Mike Tomlin Could Be Hottest NFL Coaching Candidate—If He Wants Back",
-          "publisher": "Front Office Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvcrHH0Qg58liOuuIPZgoUN_kPCmWg5wuH3_t2qBiPeFCqVSIh5g5ez6tbekk"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25527338-new-nfl-rumors-mike-tomlins-potential-return-high-demand-ahead-coaching-carousel",
-          "title": "New NFL Rumors on Mike Tomlin's Potential Return, 'High Demand' Ahead of Coaching Carousel",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2LCZGIbAhkwqeoAagnwN2IK3slFqKjrmbPaPeTHWqAbUm66XwzthXy7fsJXA"
-        }
-      ]
-    },
-    {
-      "query": "cam spencer",
-      "approx_searches": "500+",
-      "published_at": "2026-11-01T02:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/cam-spencer-to-start-saturday-vs-sacramento",
-        "https://www.rotowire.com/basketball/headlines/cam-spencer-news-earning-more-playing-time-536806",
-        "https://www.cbssports.com/fantasy/basketball/news/grizzlies-cam-spencer-starting-vs-sacramento/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJefx76GTKEMrzKE6C621I0iJxbbw6BwIvVvyMApEwWG0HTVCr94oH-zb_p9s",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/cam-spencer-to-start-saturday-vs-sacramento",
-          "title": "Cam Spencer to start Saturday vs. Sacramento",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJefx76GTKEMrzKE6C621I0iJxbbw6BwIvVvyMApEwWG0HTVCr94oH-zb_p9s"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/cam-spencer-news-earning-more-playing-time-536806",
-          "title": "Cam Spencer News: Earning more playing time",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTKh_LNbnMJibp_aTfw-wULssAzCo9jNH9lX9yWKPAdb_XkN6oLZHWHS5S7hg"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/grizzlies-cam-spencer-starting-vs-sacramento/",
-          "title": "Grizzlies' Cam Spencer: Starting vs. Sacramento",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwQ2Mt2Qb6a0PXMQt9SHeLVOHOnBgCF46KirGjF3PcPfvPA4xwG3Sm8lI8Hf8"
-        }
-      ]
-    },
-    {
-      "query": "atlanta dream coach",
-      "approx_searches": "200+",
-      "published_at": "2026-11-01T02:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/jackson-thompson-angel-reese-trash-talk-timeline-mocking-caitlin-clark-beefing-bidens",
-        "https://www.espn.com/video/clip/_/id/50342666/angel-reese-drains-triple-atlanta",
-        "https://sports.yahoo.com/articles/angel-reese-hits-3-pointer-020943468.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrCTi-eHHmL-k4Nolm5rA3M9Aej3adbxHdf-xBabnnHS6FLBuE3d60wQuHx94",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/jackson-thompson-angel-reese-trash-talk-timeline-mocking-caitlin-clark-beefing-bidens",
-          "title": "JACKSON THOMPSON: Angel Reese trash talk timeline, from mocking Caitlin Clark to beefing with Bidens",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrCTi-eHHmL-k4Nolm5rA3M9Aej3adbxHdf-xBabnnHS6FLBuE3d60wQuHx94"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50342666/angel-reese-drains-triple-atlanta",
-          "title": "Angel Reese drains the triple for Atlanta",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRspG9DCRtpwHcM3C770OvevYgo8hHNoxXIuBd7r7G24Qpmtw1SJYVe33vr2cY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/angel-reese-hits-3-pointer-020943468.html",
-          "title": "Angel Reese hits 3-pointer vs. Valkyries in Game 7, but will history hold?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNDBxcFD7-iMqNIHqCeYnp3RDaztOIABxILnE6wwYGp8H_6A8uEZVP1W56VnA"
-        }
-      ]
-    },
-    {
-      "query": "los angeles weather",
+      "query": "latest news",
       "approx_searches": "1000+",
-      "published_at": "2026-11-01T02:10:00Z",
+      "published_at": "2026-11-01T09:10:00Z",
       "related_news_urls": [
-        "https://weather.com/2026/10/31/holiday/halloween/halloween-trick-or-treat-weather-forecast",
-        "https://www.cbsnews.com/losangeles/video/alex-bistons-halloween-evening-forecast/",
-        "https://www.foxweather.com/weather-news/halloween-wet-weather-rain-midwest-plains-southwest-southeast-us"
+        "https://www.cnn.com/2026/11/01/politics/live-news/midterm-election-congress",
+        "https://www.cnbc.com/2026/10/30/trump-vance-rally-midterm-elections-.html",
+        "https://www.ksn.com/news/kansas/salina-police-announce-road-closures-for-president-trumps-visit-sunday/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAfWSehtl-ACqhh691zBiXyUvgZwnrtan_zX1xaeY75g07qh88BeLdAzhtKqo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8UI9ewQbHjW-inWkmPMQV05GBx0aZESkCLBEZnY2nobqrFZcfkPJxHt6H_DI",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/01/politics/live-news/midterm-election-congress",
+          "title": "Live updates: Trump makes his last red-state stops as GOP tries to save midterms",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8UI9ewQbHjW-inWkmPMQV05GBx0aZESkCLBEZnY2nobqrFZcfkPJxHt6H_DI"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/10/30/trump-vance-rally-midterm-elections-.html",
+          "title": "Trump rallies in Kansas and Iowa are back on after RNC said they were canceled: Source",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlo0WEa7VSLeBh_1SiiytuSXY4nDqumuaA-vwNQCLPBgToukG6ptRUb13PiPc"
+        },
+        {
+          "url": "https://www.ksn.com/news/kansas/salina-police-announce-road-closures-for-president-trumps-visit-sunday/",
+          "title": "What to know ahead of President Trump’s rally in Salina on Sunday",
+          "publisher": "KSN-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsW4KEw0Xxr4oblrhdleeYZp4U7qfHm53Bepsv06EF3m2Dg-ng8Atb7-Vb_Hg"
+        }
+      ]
+    },
+    {
+      "query": "technology news",
+      "approx_searches": "500+",
+      "published_at": "2026-11-01T09:10:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/legal/transactional/big-tech-returns-smallest-share-cash-shareholders-15-years-given-ai-spending-2026-10-30/",
+        "https://finance.yahoo.com/technology/ai/articles/ai-slowdown-takes-air-exuberance-172041946.html",
+        "https://www.nytimes.com/2026/10/29/technology/amazon-earnings-tech-spending.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVcE7OcTZltmU9NYykNA0e445WLnMBgTeH_zwYuefJT8UtJ7_Z30MVUE17Nlg",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/legal/transactional/big-tech-returns-smallest-share-cash-shareholders-15-years-given-ai-spending-2026-10-30/",
+          "title": "Big Tech returns smallest share of cash to shareholders in 15 years, given AI spending",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVcE7OcTZltmU9NYykNA0e445WLnMBgTeH_zwYuefJT8UtJ7_Z30MVUE17Nlg"
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/ai-slowdown-takes-air-exuberance-172041946.html",
+          "title": "An AI slowdown that takes some air out of the exuberance could actually extend the boom, Wall Street veteran says",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7o8Oh-NMuVMu0iQGKT2_Erwaurb18u_QsHvQ1ZcQFHlQyurMY1aJQueJ2H34"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/10/29/technology/amazon-earnings-tech-spending.html",
+          "title": "Big Tech’s Data Center Blitz Is Burning Through Cash and Scaring Wall St.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIp6wT1AYzRgGYBJLuD8os2ysxlZ6sZ2MJ9SjPGlygv0KviLxEfylYCvflQD0"
+        }
+      ]
+    },
+    {
+      "query": "nyc marathon start time",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-01T09:00:00Z",
+      "related_news_urls": [
+        "https://abc7ny.com/live-updates/nyc-marathon-guide-when-is-race-262-mile-route-road-closures-other-things-know/19985497/",
+        "https://www.westsiderag.com/2026/10/30/upper-west-side-street-closures-to-know-about-on-marathon-sunday",
+        "https://www.fastcompany.com/91633335/nyc-marathon-2026-route-map-road-closures-track-runners-live"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpc0Jn28aDcEzbZwsdIdSLkDrg6Jy26BQITb9t976Ed1vVGRW1PX-8l11lROc",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/live-updates/nyc-marathon-guide-when-is-race-262-mile-route-road-closures-other-things-know/19985497/",
+          "title": "Your guide to the 2026 TCS NYC Marathon",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpc0Jn28aDcEzbZwsdIdSLkDrg6Jy26BQITb9t976Ed1vVGRW1PX-8l11lROc"
+        },
+        {
+          "url": "https://www.westsiderag.com/2026/10/30/upper-west-side-street-closures-to-know-about-on-marathon-sunday",
+          "title": "Here are the Upper West Side Street Closures to Know About on Marathon Sunday",
+          "publisher": "West Side Rag",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqIrZhnJEWIHDM1D8mtRM-gDVicV1yy5XqjPgxU368fEOJLftpfaGGP893-CY"
+        },
+        {
+          "url": "https://www.fastcompany.com/91633335/nyc-marathon-2026-route-map-road-closures-track-runners-live",
+          "title": "New York City Marathon 2026: How to watch live coverage, track runners, see the route map, and more",
+          "publisher": "Fast Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1YqnLpjyB6FA1YzqENgtDR7WesIw_3rOmaBx0efgzED4slo2XL6HptUTC3wY"
+        }
+      ]
+    },
+    {
+      "query": "car accident attorney",
+      "approx_searches": "500+",
+      "published_at": "2026-11-01T09:00:00Z",
+      "related_news_urls": [
+        "https://marylandreporter.com/2026/10/31/best-car-accident-lawyers-in-baltimore-md/",
+        "https://www.firstalert4.com/2026/10/30/survivor-deadly-highway-30-crash-jefferson-county-calls-road-markings/",
+        "https://fox2now.com/news/fox-files/lawyers-target-modot-over-fatal-highway-30-accident/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfEKOG8m2oeSFNNDyNT1ZX-QAnuWCnnlaWQIvWVZPTDp49qLXKNLVdhtN9V1c",
+      "image_credit": "MarylandReporter.com",
+      "news": [
+        {
+          "url": "https://marylandreporter.com/2026/10/31/best-car-accident-lawyers-in-baltimore-md/",
+          "title": "Best Car Accident Lawyers in Baltimore, MD",
+          "publisher": "MarylandReporter.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfEKOG8m2oeSFNNDyNT1ZX-QAnuWCnnlaWQIvWVZPTDp49qLXKNLVdhtN9V1c"
+        },
+        {
+          "url": "https://www.firstalert4.com/2026/10/30/survivor-deadly-highway-30-crash-jefferson-county-calls-road-markings/",
+          "title": "Survivor of deadly Highway 30 crash in Jefferson County calls for road markings",
+          "publisher": "KMOV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXH60yXXaoRfdTbmMZfwfwp2NBcWG8X3x1K-9tHBm_ZshVjt-mysoQvdLCsf0"
+        },
+        {
+          "url": "https://fox2now.com/news/fox-files/lawyers-target-modot-over-fatal-highway-30-accident/",
+          "title": "Lawyers target MoDOT over fatal Highway 30 accident",
+          "publisher": "FOX 2",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDs-5A4CoJQNduvdoGLUe1wrd9zDt53m-MhcUZWKPDC0uLxiObggRjyFSFKSU"
+        }
+      ]
+    },
+    {
+      "query": "photos",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-01T09:00:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/royals/2026/10/31/kate-william-halloween-prince-louis-photo/92534370007/",
+        "https://abcnews.com/GMA/Culture/prince-william-kate-middleton-share-rare-halloween-photo/story?id=137735498",
+        "https://people.com/kate-middleton-prince-william-mark-royal-first-with-halloween-photo-of-prince-louis-12203945"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9mZYvQHOlxfxQHaSKj0stwys6k63aRHC9n7WlDqqRSIh2rsklYlqLilptiuA",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/royals/2026/10/31/kate-william-halloween-prince-louis-photo/92534370007/",
+          "title": "Princess Kate makes debut Halloween post with adorable Prince Louis photo",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9mZYvQHOlxfxQHaSKj0stwys6k63aRHC9n7WlDqqRSIh2rsklYlqLilptiuA"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/prince-william-kate-middleton-share-rare-halloween-photo/story?id=137735498",
+          "title": "Prince William and Kate Middleton share rare Halloween photo of Prince Louis",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGb72lwIXlrNoF1AhSVQ1Rcokbh7PFlAKw7QTM9Wr9khu6QFOn8tso-B5xrSg"
+        },
+        {
+          "url": "https://people.com/kate-middleton-prince-william-mark-royal-first-with-halloween-photo-of-prince-louis-12203945",
+          "title": "Kate Middleton and Prince William Share Halloween Post for the First Time with Throwback Photo of Prince Louis",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyDSm2mYb-rqCU7Oap6OTUOaIToY_voCjWrHq-28K-xZGSofnrTSdMe4f-N0"
+        }
+      ]
+    },
+    {
+      "query": "lilli tagger",
+      "approx_searches": "500+",
+      "published_at": "2026-11-01T08:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/tennis/articles/cqwyr2r3jggno",
+        "https://www.skysports.com/tennis/watch/9018204258244282112/guangzhou-open-2026",
+        "https://www.wtatennis.com/videos/4602036/dart-saves-two-match-points-to-beat-sun-reach-first-wta-final-in-guangzhou"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRckduqTuidWnFCtckhCXy-puPSZFPFlf4bUBW1LRrHgNXxXWZ87xl0Gx81t7c",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/tennis/articles/cqwyr2r3jggno",
+          "title": "Guangzhou Open: Harriet Dart secures maiden WTA Tour final",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRckduqTuidWnFCtckhCXy-puPSZFPFlf4bUBW1LRrHgNXxXWZ87xl0Gx81t7c"
+        },
+        {
+          "url": "https://www.skysports.com/tennis/watch/9018204258244282112/guangzhou-open-2026",
+          "title": "Sports News, Transfers, Scores | Watch Live Sport",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdu4h42tCpBEum4fF5PMT4HaUAzoAaewXKj7WziuPdFW0MHNs9kEuWutBNQDo"
+        },
+        {
+          "url": "https://www.wtatennis.com/videos/4602036/dart-saves-two-match-points-to-beat-sun-reach-first-wta-final-in-guangzhou",
+          "title": "Dart saves two match points to beat Sun, reach first WTA singles final in Guangzhou",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6P--TToDIYiqOFcqw0oKKT46kSGVcOlUUL9ZAMN-1DkEjcVJK5btTy9s8_iM"
+        }
+      ]
+    },
+    {
+      "query": "irina shayk",
+      "approx_searches": "100+",
+      "published_at": "2026-11-01T08:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/irina-shayk-ditches-bra-sultry-143339116.html",
+        "https://www.wmagazine.com/fashion/irina-shayk-breastplate-issey-miyake",
+        "https://www.aol.com/articles/irina-shayk-issey-miyake-corset-064530000.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7FVm-0-Rm6Yltim1E4sCioSoUXQBnTXQb-cpZrTB1MejgtcJ_OpXm7MTJ9wY",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/irina-shayk-ditches-bra-sultry-143339116.html",
+          "title": "Irina Shayk ditches bra in sultry backless dress with bombshell pictures",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7FVm-0-Rm6Yltim1E4sCioSoUXQBnTXQb-cpZrTB1MejgtcJ_OpXm7MTJ9wY"
+        },
+        {
+          "url": "https://www.wmagazine.com/fashion/irina-shayk-breastplate-issey-miyake",
+          "title": "Irina Shayk’s Floating Breastplate Is Downright Angelic",
+          "publisher": "W Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJXJRJPmZpi6gfq4H_ZJTA-85kbZIiEJagkR0P0o0xzQKQ7e6kyQ2PPNIYznk"
+        },
+        {
+          "url": "https://www.aol.com/articles/irina-shayk-issey-miyake-corset-064530000.html",
+          "title": "Irina Shayk’s Issey Miyake Corset Dress Barely Hangs on at WSJ Mag Awards",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY6Jp5LjpOx4a5pnApL4XoArQAKdrHbY8NvZJVBcq6f8sJ33jSFPaL_AD6S50"
+        }
+      ]
+    },
+    {
+      "query": "iphone 15",
+      "approx_searches": "100+",
+      "published_at": "2026-11-01T08:40:00Z",
+      "related_news_urls": [
+        "https://gizmodo.com/forget-the-pricey-iphone-duo-heres-how-to-get-an-iphone-15-for-far-less-than-airpods-max-2000832258",
+        "https://gizmodo.com/how-to-score-apple-dyson-and-nintendo-for-less-before-black-friday-thanks-to-back-markets-refurbished-deals-2000830320",
+        "https://gizmodo.com/these-refurbished-apple-deals-are-an-early-black-friday-bonanza-from-iphones-and-ipads-to-apple-watches-2000830309"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_JIekap-kPSSI3dJZLdFPjoun_WJov4wEdA-W_bIEX_i0s56Mc7TdTXqxnXc",
+      "image_credit": "Gizmodo",
+      "news": [
+        {
+          "url": "https://gizmodo.com/forget-the-pricey-iphone-duo-heres-how-to-get-an-iphone-15-for-far-less-than-airpods-max-2000832258",
+          "title": "Forget the Pricey iPhone Duo, Here's How to Get an iPhone 15 for Far Less Than AirPods Max",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_JIekap-kPSSI3dJZLdFPjoun_WJov4wEdA-W_bIEX_i0s56Mc7TdTXqxnXc"
+        },
+        {
+          "url": "https://gizmodo.com/how-to-score-apple-dyson-and-nintendo-for-less-before-black-friday-thanks-to-back-markets-refurbished-deals-2000830320",
+          "title": "How to Score Apple, Dyson, and Nintendo for Less Before Black Friday, Thanks to Back Market's Refurbished Deals",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6q0hjkxrta2uq0P-byfdODIMTgUcFypoqVK_R_5yT0GSNcJ-Q1KUWUK0fd10"
+        },
+        {
+          "url": "https://gizmodo.com/these-refurbished-apple-deals-are-an-early-black-friday-bonanza-from-iphones-and-ipads-to-apple-watches-2000830309",
+          "title": "These Refurbished Apple Deals Are an Early Black Friday Bonanza, From iPhones and iPads to Apple Watches",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROiB2jhFIGyt_sQnWT65Sbtzee3GGt0aptYvehfQoQZ6CQtJ_lxCABjThXEXs"
+        }
+      ]
+    },
+    {
+      "query": "sf weather",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-01T08:30:00Z",
+      "related_news_urls": [
+        "https://weather.com/2026/10/30/forecast/regional/atmospheric-river-flood-threat-california-southwest-halloween",
+        "https://www.foxweather.com/weather-news/halloween-wet-weather-rain-midwest-plains-southwest-southeast-us",
+        "https://www.nbcsandiego.com/news/local/san-diegans-prep-for-a-rainy-halloween-weekend/4094640/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGB9P4FSxIFd9_TIOm5a72yMZMK0Xa9Iq6VX4Zx2qcZxVa9s2hw54bN58JEIo",
       "image_credit": "The Weather Channel",
       "news": [
         {
-          "url": "https://weather.com/2026/10/31/holiday/halloween/halloween-trick-or-treat-weather-forecast",
-          "title": "Halloween weather forecast: what to expect where you are",
+          "url": "https://weather.com/2026/10/30/forecast/regional/atmospheric-river-flood-threat-california-southwest-halloween",
+          "title": "Pineapple express a flood threat to California, Southwest",
           "publisher": "The Weather Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAfWSehtl-ACqhh691zBiXyUvgZwnrtan_zX1xaeY75g07qh88BeLdAzhtKqo"
-        },
-        {
-          "url": "https://www.cbsnews.com/losangeles/video/alex-bistons-halloween-evening-forecast/",
-          "title": "Alex Biston's Halloween evening forecast",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPMTFvdiQK40WFnbeBmRqFd3WblBU-aqkQGLywT9rbPWB6OM-93bHAl0WLru4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGB9P4FSxIFd9_TIOm5a72yMZMK0Xa9Iq6VX4Zx2qcZxVa9s2hw54bN58JEIo"
         },
         {
           "url": "https://www.foxweather.com/weather-news/halloween-wet-weather-rain-midwest-plains-southwest-southeast-us",
@@ -213,146 +346,13 @@
           "publisher": "FOX Weather",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzJiTCy3XT9EsCC-fP2_67jm0JJruOhE1MNVqlMFpJIh7Wl0y5U0eyaI8joDY"
-        }
-      ]
-    },
-    {
-      "query": "hayden christensen",
-      "approx_searches": "200+",
-      "published_at": "2026-11-01T02:10:00Z",
-      "related_news_urls": [
-        "https://www.ign.com/articles/star-wars-actor-hayden-christensen-says-a-man-who-burgled-his-house-recognized-him-then-gave-his-stuff-back-mid-robbery",
-        "https://screenrant.com/star-wars-hayden-christensen-real-life-encounter-strangest-fan/",
-        "https://www.comicbasics.com/star-wars-star-hayden-christensen-reveals-the-bizarre-time-a-burglar-recognized-him-mid-robbery/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZN1qWU8fJmR85fjXbtOV_e8YTiRpB6SIbmDJD4LMCVtzQehR3YsuFPAGuJ14",
-      "image_credit": "IGN",
-      "news": [
-        {
-          "url": "https://www.ign.com/articles/star-wars-actor-hayden-christensen-says-a-man-who-burgled-his-house-recognized-him-then-gave-his-stuff-back-mid-robbery",
-          "title": "Anakin Skywalker Actor Hayden Christensen Reveals the Strangest Fan Encounter He’s Ever Had",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZN1qWU8fJmR85fjXbtOV_e8YTiRpB6SIbmDJD4LMCVtzQehR3YsuFPAGuJ14"
         },
         {
-          "url": "https://screenrant.com/star-wars-hayden-christensen-real-life-encounter-strangest-fan/",
-          "title": "Star Wars Actor Reveals Shocking Real-Life Encounter With His Strangest Fan",
-          "publisher": "ScreenRant",
+          "url": "https://www.nbcsandiego.com/news/local/san-diegans-prep-for-a-rainy-halloween-weekend/4094640/",
+          "title": "San Diego County prepares for rainy Halloween weekend",
+          "publisher": "NBC 7 San Diego",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSODbIpSNCqAOfKnrPGkZpPpjF6LmoNvG0VGQChfVDaiJyjDTP80ArMF_kj34o"
-        },
-        {
-          "url": "https://www.comicbasics.com/star-wars-star-hayden-christensen-reveals-the-bizarre-time-a-burglar-recognized-him-mid-robbery/",
-          "title": "'Star Wars' Star Hayden Christensen Reveals the Bizarre Time a Burglar Recognized Him Mid-Robbery",
-          "publisher": "Comic Basics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKxPxJ0StpqMPsZNK9KkZTUTFjqKEBHPqkl6mOdjVtgCNsH4ZlTZQZb_bvkQ"
-        }
-      ]
-    },
-    {
-      "query": "oregon state vs fresno state",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-01T02:00:00Z",
-      "related_news_urls": [
-        "https://www.oregonlive.com/beavers/2026/10/oregon-state-beavers-vs-fresno-state-bulldogs-preview-osus-win-streak-spot-atop-the-pac-12-on-the-line.html",
-        "https://sports.yahoo.com/articles/oregon-state-football-vs-fresno-010029680.html",
-        "https://247sports.com/college/oregon-state/article/pregame-notes-oregon-state-vs-fresno-state-292021727/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeDvySg-sQyoJPc0tb556QtJ2LRvSwqDfK_wbC9p3DrQT4MDmzq2HvziiAIp4",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/beavers/2026/10/oregon-state-beavers-vs-fresno-state-bulldogs-preview-osus-win-streak-spot-atop-the-pac-12-on-the-line.html",
-          "title": "Oregon State Beavers vs. Fresno State Bulldogs preview: OSU’s win streak, spot atop the Pac-12 on the line",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeDvySg-sQyoJPc0tb556QtJ2LRvSwqDfK_wbC9p3DrQT4MDmzq2HvziiAIp4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/oregon-state-football-vs-fresno-010029680.html",
-          "title": "Oregon State football vs. Fresno State updates, score, TV, streaming",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRalyAqZnaRxLxR-jzl2OVCa0fhFo0JatnvhMEtai86ataIQmUVzwzefC-ERo"
-        },
-        {
-          "url": "https://247sports.com/college/oregon-state/article/pregame-notes-oregon-state-vs-fresno-state-292021727/",
-          "title": "Pregame notes: Oregon State vs. Fresno State",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdIQmCOTaXiqlh9jJRBWTgEQaoUdV0jhCp5E5cE8r6wSnx9pRYNG5cyJ44kgg"
-        }
-      ]
-    },
-    {
-      "query": "blaise taylor",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-01T02:00:00Z",
-      "related_news_urls": [
-        "https://www.al.com/crime/2026/10/former-auburn-assistant-coachs-sons-murder-trial-to-be-featured-on-cbss-48-hours.html",
-        "https://www.jonesborosun.com/news/blaise-taylor-case-subject-of-48-hours/article_10c0a059-bc4e-5cd2-ac1b-9d6b4fb1b472.html",
-        "https://jonesbororightnow.com/news/268862-a-state-football-alum-blaise-taylors-murder-conviction-to-be-featured-in-48-hours-special/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLq06nrfngr34wW07oyvr29tt7EGeo1yaMYtd3Vsk-0elECgIVShPCtcBfgtI",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/crime/2026/10/former-auburn-assistant-coachs-sons-murder-trial-to-be-featured-on-cbss-48-hours.html",
-          "title": "Former Auburn assistant coach’s son’s murder trial to be featured on CBS’s ’48 Hours’",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLq06nrfngr34wW07oyvr29tt7EGeo1yaMYtd3Vsk-0elECgIVShPCtcBfgtI"
-        },
-        {
-          "url": "https://www.jonesborosun.com/news/blaise-taylor-case-subject-of-48-hours/article_10c0a059-bc4e-5cd2-ac1b-9d6b4fb1b472.html",
-          "title": "Blaise Taylor case subject of '48 Hours'",
-          "publisher": "Jonesboro Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRl_hGaak0k_cl2uRb1QRGT7VaqLtdF4YgvCHOcSeZM6ovWNAgbWcu_fgY0af8"
-        },
-        {
-          "url": "https://jonesbororightnow.com/news/268862-a-state-football-alum-blaise-taylors-murder-conviction-to-be-featured-in-48-hours-special/",
-          "title": "A-State Football Alum Blaise Taylor’s Murder Conviction to be Featured in ’48 Hours’ Special",
-          "publisher": "Jonesboro Right Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEOiSuGVANLCIZt04C8XI_EsbXE0biVLaJomWLoep-aqQsNJC4bF2wtMRQR8o"
-        }
-      ]
-    },
-    {
-      "query": "kiah stokes",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-01T02:00:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/sports/wnba/playoffs/2026/10/29/geno-auriemma-uconn-golden-state-valkyries-wnba-finals/92485614007/",
-        "https://sports.yahoo.com/articles/geno-auriemma-uconn-influence-powering-100750484.html",
-        "https://www.usatoday.com/story/sports/wnba/2026/10/26/golden-state-valkyries-wnba-finals-uconn-players-geno-auriemma/92421172007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGrTEHW8k4ek6iYxmJbbQhsAP7nEI1eolFJw_rGlZD16ej5YHPZDnEAoUqs8A",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/sports/wnba/playoffs/2026/10/29/geno-auriemma-uconn-golden-state-valkyries-wnba-finals/92485614007/",
-          "title": "Geno Auriemma says Kiah Stokes belongs in WNBA Finals MVP conversation",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGrTEHW8k4ek6iYxmJbbQhsAP7nEI1eolFJw_rGlZD16ej5YHPZDnEAoUqs8A"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/geno-auriemma-uconn-influence-powering-100750484.html",
-          "title": "How Geno Auriemma’s UConn influence is powering Valkyries’ title run",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGvE-_C2z1mC5l5CVaGm6JXZL-aOgQgxp2YL2PBbWga2dsxKxnwhIAxVO0FU4"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/wnba/2026/10/26/golden-state-valkyries-wnba-finals-uconn-players-geno-auriemma/92421172007/",
-          "title": "How Geno Auriemma’s UConn influence is powering Valkyries’ title run",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGrTEHW8k4ek6iYxmJbbQhsAP7nEI1eolFJw_rGlZD16ej5YHPZDnEAoUqs8A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYrt2ZeuP0YlEZyKge0ZufjE1MhLHRRIvTqfyHPolejSdvzXy8b6GxIePfBso"
         }
       ]
     }
