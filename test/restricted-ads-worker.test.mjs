@@ -17,7 +17,9 @@ test('age verdict requires trusted external verification and nonexpired proof',(
  }
 });
 test('jurisdiction approval must be explicit and current',()=>{
- assert.equal(allowJurisdiction({enabled:1,reviewed_at:'2026-10-31T12:00:00Z'},now),true);
+ const approvedRule={enabled:1,reviewed_at:'2026-10-31T12:00:00Z',reviewer:'independent reviewer',audience_evidence:'vendor proof of age cohort',legal_evidence:'documented jurisdiction counsel review'};
+ assert.equal(allowJurisdiction(approvedRule,now),true);
+ assert.equal(allowJurisdiction({...approvedRule,legal_evidence:''},now),false);
  assert.equal(allowJurisdiction(null,now),false);
  assert.equal(allowJurisdiction({enabled:0,reviewed_at:'2026-10-31T12:00:00Z'},now),false);
  assert.equal(allowJurisdiction({enabled:1,reviewed_at:'2025-01-01T00:00:00Z'},now),false);
