@@ -2,7 +2,7 @@
  * Browser-only display; never a tool/permission grant, hidden reasoning stream,
  * wallet operation, extra floating assistant, or independent agent executor.
  */
-import {newBitSession,applyBitObservation} from './bubbles-bit-session.mjs';
+import {newBitSession,applyBitObservation} from './bubbles-bit-session.mjs?v=20261101-bits1';
 export const BUBBLE_ROLES=Object.freeze([
  {id:'listen',label:'Listen',help:'Actual voice capture state from the Bubbles orb.'},
  {id:'think',label:'Think',help:'A response is being processed. Private model reasoning is not displayed.'},
