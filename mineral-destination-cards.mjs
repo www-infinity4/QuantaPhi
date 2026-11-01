@@ -10,10 +10,11 @@ d('western-mining-museum','Western Museum of Mining & Industry','225 North Gate 
 d('last-chance-mine','Last Chance Mine','504 Last Chance Mine Road, Creede, CO 81130','https://lastchancemine.com/','Explore an 1891 silver mine, mineral specimens and mining history.','Mine tours and on-site collecting are seasonal and weather-dependent. Verify access and permitted collecting directly with the mine.','SILVER MINE · CREEDE',[{label:'Mine tours & details',url:'https://lastchancemine.com/'},{label:'Creede visitor info',url:'https://www.creede.com/biz/last-chance-mine'}],photo('Quartz-258682.jpg','Robert M. Lavinsky','CC BY-SA 3.0')),
 d('mines-museum-earth-science','Mines Museum of Earth Science','1310 Maple Street, Golden, CO 80401','https://museum.mines.edu/','Explore Colorado minerals, meteorites and an Apollo 17 lunar sample.','Free admission. Regular posted hours are daily 10 a.m.–4 p.m.; check holiday closures and events.','EARTH SCIENCE · FREE MUSEUM',[{label:'Visit the free museum',url:'https://museum.mines.edu/'},{label:'Museum programs',url:'https://museum.mines.edu/'}],photo('Colorado School of Mines Geology Museum, Golden, Colorado, US.jpg','Clyde Charles Brown','CC BY-SA 4.0'))
 ]);
+export const destinationActions=c=>Array.isArray(c?.actions)?c.actions:[];
 export function validMineralDestination(c){
  if(!c||!/^[a-z0-9-]+$/.test(c.id||'')||!c.name||!c.summary||!c.visitorNote||!c.location)return false;
- return [c.official,...(c.actions||[]).map(a=>a.url)].every(raw=>{try{const u=new URL(raw);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port}catch{return false}})
- &&(c.actions||[]).every(a=>Boolean(a.label))
+ return [c.official,...destinationActions(c).map(a=>a.url)].every(raw=>{try{const u=new URL(raw);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port}catch{return false}})
+ &&destinationActions(c).every(a=>Boolean(a.label))
  &&(!c.image||Boolean(c.image.file&&c.image.credit&&c.image.license));
 }
 export const officialMapsUrl=c=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(c.location);
@@ -37,7 +38,7 @@ export function mountMineralDestination(c){
  const body=el('div','mineral-card-body');
  body.append(el('p','iqc-kind',c.experience),el('h2','mineral-card-name',c.name),el('p','mineral-card-city',c.location),el('p','mineral-card-summary',c.summary));
  const actions=el('nav','mineral-card-links');actions.setAttribute('aria-label',c.name+' visit actions');
- for(const item of c.actions)actions.append(link(item.label,item.url,'mineral-card-link'));
+ for(const item of destinationActions(c))actions.append(link(item.label,item.url,'mineral-card-link'));
  actions.append(link('Directions',officialMapsUrl(c),'mineral-card-link'));body.append(actions);
  const detail=el('details','mineral-card-visitor-guide');detail.append(el('summary','','Visitor information'),el('p','',c.visitorNote));body.append(detail);
  body.append(el('p','mineral-card-update','Sources reviewed November 2026 · Verify hours, tickets and access at the original destination.'));
