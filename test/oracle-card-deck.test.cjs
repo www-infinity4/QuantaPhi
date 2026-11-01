@@ -17,7 +17,7 @@ assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
 assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested/);
 assert.doesNotMatch(html,/class="oracle-card-deck-feature"/);
-assert.match(html,/oracle-card-deck\.js\?v=20261031-following-publisher1-mobile-scroll1/);
+assert.match(html,/<script defer src="\/oracle-card-deck\.js\?v=20\d{6}-[a-z0-9-]+"><\/script>/);
 assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
 assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
 

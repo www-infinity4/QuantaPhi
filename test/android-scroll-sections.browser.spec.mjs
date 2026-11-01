@@ -71,13 +71,19 @@ test('Android returns to fully visible header after card navigation and can sett
  // Simulate a short downward user scroll from the restored top, without
  // jumping to the destination programmatically. The nearby deck must settle
  // with its controls visible; the search row must not steal the snap.
- const deckDistance=await page.locator('#oracleCardDeck').evaluate(e=>e.getBoundingClientRect().top);
- const gestureDistance=Math.max(120,Math.min(480,Math.round(deckDistance-75)));
+ const deck=page.locator('#oracleCardDeck');
  await page.mouse.move(2,Math.min(420,page.viewportSize().height/2));
- await page.mouse.wheel(0,gestureDistance);
+ // Proximity snap intentionally does not jump 400+ pixels to a distant section.
+ // Extra content above the deck can require more than one real user wheel gesture.
+ // Approach the deck in bounded gestures, never scrollIntoView or teleport.
+ for(let gesture=0;gesture<4;gesture++){
+  const distance=await deck.evaluate(e=>e.getBoundingClientRect().top);
+  if(distance<110)break;
+  await page.mouse.wheel(0,Math.min(480,Math.max(120,Math.round(distance-70))));
+  await page.waitForTimeout(140);
+ }
  // The tabs and family shortcuts precede the arrow row inside the deck;
  // the correct resting point is the deck section start, not the arrows.
- const deck=page.locator('#oracleCardDeck');
  await expect.poll(async()=>Math.abs(await deck.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:6000}).toBeLessThan(40);
  await expect(nav).toBeInViewport();
 });

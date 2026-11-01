@@ -29,3 +29,13 @@ test('next publisher respects no immediate repeats across rotations',()=>{
  assert.equal(selectPublisher([a,b,c],c.id,[a.id,b.id,c.id]).id,a.id);
  assert.equal(selectPublisher([],null,[]),null);
 });
+
+test('moving existing 21+ source panel includes authentic ILLICIT Bruce Banner Weedmaps references',()=>{
+ const banner=PUBLIC_21_SOURCES.filter(x=>x.official_domain==='weedmaps.com'&&x.id.startsWith('illicit-'));
+ assert.ok(banner.length>=6);
+ for(const row of banner){
+  assert.equal(eligiblePublisher(row,false),null);
+  assert.ok(eligiblePublisher(row,true));
+  assert.match(new URL(row.url).pathname,/^\/brands\/illicit/);
+ }
+});

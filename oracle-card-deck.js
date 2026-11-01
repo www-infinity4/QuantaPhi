@@ -45,6 +45,7 @@ const choices=[
  ['phiProjectActions','Build a website'],
  ['businessDirectoryCard','National Business Directory · Explore'],
  ['shopAdPhi','Discover products'],
+ ['bruceBannerWeedmapsCard','21+ · Bruce Banner / ILLICIT · Weedmaps'],
  ['infinityAdultContentCard','21+ content preferences'],
  ['cannabisDirectoryCard','21+ · National dispensary source directory'],
  ['dispensary-livwell-colorado','21+ · LivWell · Colorado Boulevard'],
@@ -103,6 +104,7 @@ const CARD_DIRECTIONS={
  phiProjectActions:['deck-projects','Creation','Build or improve a real website project'],
  businessDirectoryCard:['business-directory','Directory','Search source-backed businesses across states and territories'],
  shopAdPhi:['deck-shop','Shopping','Explore interactive product and advertising tools'],
+ bruceBannerWeedmapsCard:['bruce-banner-weedmaps','21+ Publisher','Explore rotating original ILLICIT Bruce Banner strain and product references on Weedmaps'],
  infinityAdultContentCard:['adult-content-preferences','Preferences','Manage optional 21+ ad viewing; no restricted creative without server verification'],
  ['dispensary-livwell-colorado']:['adult-store-livwell-colorado','21+ Directory','Independent source-verified dispensary listing with original store website'],
  ['dispensary-livwell-central']:['adult-store-livwell-central','21+ Directory','Independent source-verified dispensary listing with original store website'],
@@ -202,7 +204,7 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
+function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function livePriority(e){
  if(e?.id!=='phiChannelCards')return 0;
  const priority=document.getElementById('liveFoxGameCard')?.dataset.tvFrontPriority;
@@ -428,7 +430,7 @@ function show(entry,remember=true){
  }
  now.textContent=entry.title;updateTabs();predict();
  status.textContent='Live interactive card · '+entry.title+
-  '. '+(selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
+  '. '+(nonProfiling(entry)?'Private browsing: no view or interaction history recorded.':selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
     selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.')+
   ' · '+eligible().length+' ready cards in this direction.';
 }

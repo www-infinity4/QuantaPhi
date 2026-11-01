@@ -3,7 +3,7 @@
  * license and creative review; this UI cannot grant access through a button.
  * No wallet, Quants, inferred interests or browsing telemetry are read. */
 import {eligibleCreative,chooseNextCreative} from './restricted-ad-policy.mjs';
-import {PUBLIC_21_SOURCES,eligiblePublisher,selectPublisher} from './restricted-source-directory.mjs';
+import {PUBLIC_21_SOURCES,eligiblePublisher,selectPublisher} from './restricted-source-directory.mjs?v=20261101-banner1';
 const root=document.getElementById('infinityAdultContentCard');
 if(root){
  const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n};
