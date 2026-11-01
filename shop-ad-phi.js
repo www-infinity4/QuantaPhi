@@ -24,7 +24,7 @@ const button=(parent,text,fn)=>{const b=node('button',text);b.type='button';b.ad
 let current=null,sellerStudio=null,publishing=false,interactionRevision=0,editingSaved=null,query=new URL(location.href).searchParams.get('q')||'antique radio';
 async function publish(item){
  if(publishing){status.textContent='A Shop Phi post is already being submitted.';return false}
- if(!connected){
+ if(!connected||item.publishState==='public-edit-pending'){
   if(!window.ShopPhiPublish){
    status.textContent='The secure wallet-owned ShopPhi seller service is unavailable. Your local draft is safe.';
    return false;
@@ -75,7 +75,7 @@ function show(item,draft=false){
    category:'Shopping',tab:oracleStage.dataset.switchboardTab||'public'
   }}));
  }
- feature.append(node('small',draft?(item.publishState==='public'?'PUBLIC SHOP PHI POST · VERIFIED':item.publishState==='catalog-published'?'OWNER CATALOG · PUBLIC VISIBILITY NOT CONFIRMED':'PRIVATE POST DRAFT · NOT PUBLIC'):item.sponsored?'ADVERTISEMENT · '+(item.sponsor||'Advertiser'):'SHOPPING SOURCE · '+(item.merchant||'Original seller')));
+ feature.append(node('small',draft?(item.publishState==='public'?'PUBLIC SHOP PHI POST · VERIFIED':item.publishState==='public-edit-pending'?'PUBLIC LISTING · EDIT NOT YET VERIFIED':item.publishState==='catalog-published'?'OWNER CATALOG · PUBLIC VISIBILITY NOT CONFIRMED':'PRIVATE POST DRAFT · NOT PUBLIC'):item.sponsored?'ADVERTISEMENT · '+(item.sponsor||'Advertiser'):'SHOPPING SOURCE · '+(item.merchant||'Original seller')));
  if(safe(item.imageUrl)){const img=node('img');img.src=item.imageUrl;img.alt=item.title;img.loading='lazy';feature.append(img)}
  if(draft&&item.mediaIds?.length)void sellerStudio?.previewIn(item,feature);
  if(!safe(item.imageUrl)&&!(draft&&item.mediaIds?.length))feature.append(node('p','Add a real product photo or original source image to give this post a visual. No stock image will be invented.','sap-media-missing'));
@@ -87,7 +87,8 @@ function show(item,draft=false){
  feature.append(meta);
  const row=node('div',undefined,'sap-actions');feature.append(row);
  if(draft&&item.mediaIds?.length&&!window.ShopPhiPublish){const blocked=button(row,'Photos saved privately',()=>{});blocked.disabled=true;}
- if(draft&&(connected||window.ShopPhiPublish)&&item.publishState!=='public'){
+ if(draft&&(connected||window.ShopPhiPublish)){
+ if(item.publishState!=='public'&&item.publishState!=='public-edit-pending'){
   button(row,'Save private cloud draft',()=>{item.ownItem=false;item.publishConsent=false;void publish(item)});
   const terms=node('div',undefined,'sap-saved-publish-consent');
   const own=node('label'),ownCheck=node('input');ownCheck.type='checkbox';ownCheck.name='recover-own';
@@ -104,12 +105,13 @@ function show(item,draft=false){
   action.className='sap-publish-saved';
   terms.replaceChildren(node('strong','Ready to publish this recovered draft?'),own,consent,action);
   feature.append(terms);
-  button(row,'Edit this saved draft',()=>{
+  }
+  button(row,'Edit this saved listing',()=>{
     editingSaved=item;form.hidden=false;
     for(const [name,input] of Object.entries(fields))input.value=String(item[name]||'');
     for(const [name,input] of Object.entries(extraInputs))input.value=String(item[name]|| (name==='quantity'?'1':''));
     ownership.checked=false;publicConsent.checked=false;
-    status.textContent='Editing the original saved item. Its existing photos remain attached on this device.';
+    status.textContent=item.publishState==='public'?'Editing your original public listing. Reconfirm ownership and approve the public changes before saving; the item link stays the same.':'Editing the original saved item. Existing photographs remain attached.';
     form.scrollIntoView({block:'start',behavior:'smooth'});fields.title.focus();
   });
 }
@@ -180,6 +182,8 @@ button(actions,'My listings',async()=>{
     if(localIds.has(row.listingId))continue;
     const item={itemId:row.listingId,title:row.title,description:row.description,
      priceLabel:row.priceLabel,imageUrl:row.imageUrl,merchant:row.merchant,
+     category:row.category,condition:row.condition,shipping:row.shipping,quantity:row.quantity,
+     photoIds:(row.photoUrls||[]).map(u=>String(u).split('/').pop()).filter(x=>/^[0-9a-f-]{36}$/i.test(x)),
      url:row.sourceUrl,publicUrl:row.status==='published'?row.link:'',
      publishState:row.status==='published'?'public':'server-draft'};
     button(list,item.title+' · '+row.status,()=>show(item,true));
@@ -240,6 +244,9 @@ form.addEventListener('submit',async e=>{
  item.publishConsent=publicConsent.checked;
  if(item.publishConsent&&!item.ownItem){status.textContent='Confirm you own this item or have permission to sell it.';return}
  if(item.publishConsent&&!item.priceLabel){status.textContent='Enter your asking price before publishing your item.';return}
+ if(editingSaved?.publishState==='public'&&(!ownership.checked||!publicConsent.checked)){
+  status.textContent='Confirm ownership and approve publishing your corrections to the already-public listing.';return;
+ }
  item.mediaIds=[...new Set([...(editingSaved?.mediaIds||[]),...(sellerStudio?.ids()||[])])].slice(0,10);
  if((item.url&&!safe(item.url))||(item.imageUrl&&!safe(item.imageUrl))){
   status.textContent='Optional original item and photo links must use secure HTTPS. You can list your own goods without an existing eBay or merchant URL.';return
@@ -250,15 +257,23 @@ form.addEventListener('submit',async e=>{
  item.policyStatus=policy.status;
  item.policyNote=policy.reason;
  item.itemId=editingSaved?.itemId||crypto.randomUUID();
- if(editingSaved?.photoIds?.length)item.photoIds=editingSaved.photoIds.slice();
+ if(editingSaved?.photoIds?.length){
+  item.photoIds=editingSaved.photoIds.slice();
+  item.uploadedMediaIds=(editingSaved.uploadedMediaIds||editingSaved.mediaIds||[]).slice();
+ }
+ if(editingSaved?.publishState==='public'){
+  item.publishState='public-edit-pending';
+  item.confirmPublishedEdit=item.ownItem&&item.publishConsent;
+  item.publicUrl=editingSaved.publicUrl;
+ }else if(editingSaved?.publishState)item.publishState=editingSaved.publishState;
  editingSaved=null;
  item.kind=item.sponsor?'advertisement':'product';item.sponsored=!!item.sponsor;
  item.verificationStatus=item.mediaIds.length?'not-reviewed':'external-source-unverified';
  try{
-  save(KEY,[item,...read(KEY)].slice(0,100));
+  save(KEY,[item,...read(KEY).filter(x=>x.itemId!==item.itemId)].slice(0,100));
   show(item,true);
   if(sellerMode)feature.scrollIntoView({behavior:'smooth',block:'start'});
-  status.textContent=item.mediaIds.length?'Private draft saved with '+item.mediaIds.length+' device-only media files. Public image upload/review is unavailable.':'Post draft saved locally. Checking authorized publication…';
+  status.textContent=item.publishState==='public-edit-pending'?'Changes saved locally; verifying the original public listing update…':item.mediaIds.length?'Private draft saved with '+item.mediaIds.length+' device-only media files. Cloud photo upload needs verification.':'Post draft saved locally. Checking authorized publication…';
   form.hidden=true;
   if(window.ShopPhiPublish||connected)await publish(item);
   else status.textContent='Private draft saved on this device. Seller cloud publishing is not connected.';
