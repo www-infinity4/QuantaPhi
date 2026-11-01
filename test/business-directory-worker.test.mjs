@@ -50,3 +50,11 @@ test('city queue and health endpoints are read-only and return real D1 counts',a
  const b=await worker.fetch(new Request('https://quantaphi.org/api/business-directory/cities'),{BUSINESS_DB:db});
  assert.equal(b.status,200);assert.equal((await b.json()).jobs[0].city,'Denver');
 });
+test('pagination never emits a cursor beyond the supported 10k offset',async()=>{
+ const db={prepare(sql){const b={bind(){return b},async all(){return {results:Array.from({length:25},(_,i)=>({id:'x'+i,name:'Place '+i,city:'Denver',state:'CO',category:'Store',status:'listed',source_url:'https://example.org',source_name:'test'}))}}};return b}};
+ const response=await worker.fetch(new Request('https://quantaphi.org/api/business-directory/records?state=CO&offset=10000&limit=24'),{BUSINESS_DB:db});
+ const data=await response.json();
+ assert.equal(data.has_more,false);
+ assert.equal(data.next_offset,null);
+});
+
