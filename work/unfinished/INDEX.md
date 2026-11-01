@@ -4,6 +4,7 @@ Read [README](README.md) and root [AGENTS.md](../../AGENTS.md) before editing co
 
 | Project | Canonical issue | Linked source | Dot | Progress | Sessions spent / remaining | Next verified action |
 | --- | --- | --- | --- | --- | --- | --- |
+| Source provenance / public cooperatives directory | [#1319](https://github.com/www-infinity4/QuantaPhi/issues/1319) | [TICKET-1319](TICKET-1319.md) · [directory](../../quanta-sources.html) | 🟡 | 25% source milestone; remaining history and rights scan | 1 / unknown | Validate public registry, exact-head CI and live readback, then incremental fork/history scan |
 | Funding · TinyFish ambassador/bounty/sponsorship | [#1312](https://github.com/www-infinity4/QuantaPhi/issues/1312) | [TICKET-1312](TICKET-1312.md) · [verified contact and drafts](../../docs/QUANTAPHI-PARTNER-FUNDING-OUTREACH-2026-11-01.md) | 🔴 | 0 approved awards | 1 / unknown | Verify owner program enrolment and choose one live bounty |
 | Funding · X original content and developer partnerships | [#1313](https://github.com/www-infinity4/QuantaPhi/issues/1313) | [TICKET-1313](TICKET-1313.md) | 🔴 | 0 verified eligibility/payout | 1 / unknown | Verify account Creator Studio eligibility before requests |
 | Meta and other provider-native actions | [#1314](https://github.com/www-infinity4/QuantaPhi/issues/1314) | [TICKET-1314](TICKET-1314.md) | 🔴 | 0 official provider grants verified | 1 / unknown | Inventory current provider registry and Meta app-review requirements |
