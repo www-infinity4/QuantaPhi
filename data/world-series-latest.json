@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-31T20:58:57.458912Z",
+  "checked_at": "2026-11-01T00:00:03.310554Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 9
+      "articles_selected": 10
     },
     {
       "publisher": "CBS Sports",
@@ -17,6 +17,28 @@
     }
   ],
   "articles": [
+    {
+      "title": "Rasmussen ($20M club option) returns to Rays for '27 after stellar season, playoff heroics",
+      "url": "https://www.mlb.com/news/rays-pick-up-drew-rasmussen-s-club-option-for-2027",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-31T23:23:42Z",
+      "summary": "",
+      "author": "Brian Murphy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Brewers, Rays face roster decisions this offseason after World Series",
+      "url": "https://www.mlb.com/news/brewers-rays-roster-decisions-this-offseason-after-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-31T22:11:54Z",
+      "summary": "",
+      "author": "Anthony Castrovince",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
     {
       "title": "An inside look at how Brewers won their first World Series title",
       "url": "https://www.mlb.com/news/brewers-world-series-win-on-this-week-in-baseball",
@@ -101,17 +123,6 @@
       "published_at": "2026-10-30T21:54:27Z",
       "summary": "",
       "author": "Adam Berry",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Who made this year's All-Postseason Team?",
-      "url": "https://www.mlb.com/news/2026-mlb-all-postseason-team",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-30T02:44:28Z",
-      "summary": "",
-      "author": "Jared Greenspan",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -333,17 +344,6 @@
       "summary": "Misiorowski has been good but not his usual level of great in the playoffs ... will that change in World Series Game 5?",
       "author": "Julian McWilliams",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/ef010e72-e146-4436-9c52-bcfac493e930/misiorowski-getty-2.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Rays stay alive vs. Brewers in extra-innings World Series classic; Colts begin NFL trade deadline sale",
-      "url": "https://www.cbssports.com/mlb/news/rays-brewers-world-series-classic-mlb-colts-nfl-trade-deadline-sale/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T12:44:32Z",
-      "summary": "Plus the Top 100 And 1 college basketball teams for the 2026-27 season",
-      "author": "Carter Bahns",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/8f773b61-3ae0-40e5-9e7e-8f3e6e71bdd3/gettyimages-2301840807-1.jpg",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
