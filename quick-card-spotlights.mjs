@@ -106,14 +106,16 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
  let requested=new URLSearchParams(location.search).get('spotlight')||'';
  let items=[],active=false,loading=false,lastFetch=0,current=null,paused=globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches||false,hover=false;
  const isVisible=()=>!document.hidden&&article.isConnected&&article.getClientRects().length>0;
- function show({advance=false}={}){
+ function show({advance=false,preserve=false}={}){
   if(advance)requested='';
   if(article.dataset.spotlightManual==='true')return;
   if(items.length&&items.every(x=>history.seen.includes(x.id)))history={seen:[],last:history.last};
   let state;try{state=cleanFeedState(JSON.parse(localStorage.getItem(FEED_STORAGE_KEY)))}catch{state=cleanFeedState({})}
   // Use explicit follows and bounded card categories; never raw searches.
   const interests=state.following.concat(Object.keys(state.counts).sort((a,b)=>state.counts[b]-state.counts[a]).slice(0,12));
-  const row=requestedSpotlight(items,requested,card.official)||chooseSpotlight(items,{...history,interests});if(!row)return;
+  const row=requestedSpotlight(items,requested,card.official)||
+   (preserve?items.find(x=>x.id===current?.id):null)||
+   chooseSpotlight(items,{...history,interests});if(!row)return;
   current=row;history={seen:[...history.seen.filter(x=>x!==row.id),row.id].slice(-items.length),last:row.id};
   try{localStorage.setItem(key,JSON.stringify(history))}catch{}
   visual.replaceChildren();const image=el('img','qcs-photo');image.alt=row.title;image.decoding='async';image.referrerPolicy='no-referrer';
@@ -134,13 +136,13 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
  }
  function updatePrice(){const amount=visibleSpotlightPrice(current);price.textContent=amount?amount+' · source price':'See current price and availability at the source'}
  async function refresh(){if(loading||Date.now()-lastFetch<TTL)return;loading=true;
-  try{const result=await fetchSpotlights(card);lastFetch=Date.now();if(result.length){items=result;if(isVisible()&&!panel.contains(document.activeElement))show()}else onEmpty?.()}
+  try{const result=await fetchSpotlights(card);lastFetch=Date.now();if(result.length){items=result;if(isVisible()&&!panel.contains(document.activeElement))show({preserve:Boolean(current)})}else onEmpty?.()}
   finally{loading=false}
  }
- function activate(){active=true;if(!items.length||Date.now()-lastFetch>=TTL)void refresh();else if(!panel.contains(document.activeElement))show()}
+ function activate(){active=true;if(!items.length||Date.now()-lastFetch>=TTL)void refresh();else if(!current&&!panel.contains(document.activeElement))show()}
  article.addEventListener('oracle:activate',activate);
  const observer=typeof IntersectionObserver==='undefined'?null:new IntersectionObserver(entries=>{
-  active=entries.some(x=>x.isIntersecting);if(active)activate();
+  const wasActive=active;active=entries.some(x=>x.isIntersecting);if(active&&!wasActive)activate();
  });observer?.observe(article);
  next.addEventListener('click',()=>show({advance:true}));pause.addEventListener('click',()=>{paused=!paused;pause.textContent=paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(paused))});
  panel.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')hover=true});panel.addEventListener('pointerleave',()=>{hover=false});
