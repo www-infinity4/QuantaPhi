@@ -34,7 +34,7 @@ jobs:
           mkdir -p data/attractions
           release_from_stac() {
             curl --fail --silent --show-error --location --max-time 20 https://stac.overturemaps.org/catalog.json |
-              python -c 'import json,re,sys; r=json.load(sys.stdin)["latest"]; assert re.fullmatch(r"20[0-9]{2}-[0-9]{2}-[0-9]{2}\\.[0-9]+",r); print(r)'
+              python -c 'import json,re,sys; r=json.load(sys.stdin)["latest"]; assert re.fullmatch(r"20[0-9]{2}-[0-9]{2}-[0-9]{2}\.[0-9]+",r); print(r)'
           }
           RELEASE="$(release_from_stac)"
           echo "Overture source release for all four tiles: ${RELEASE}"
