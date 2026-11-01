@@ -1,3 +1,28 @@
+---
+issue: 1394
+project: "50-state organic cannabis source directory"
+source_requests:
+  - https://github.com/www-infinity4/QuantaPhi/issues/1394
+state: source_tested
+dot: "🟡"
+progress_percent: 35
+progress_basis: "Read-only Worker source and five verified regulator catalog URLs; D1 has 12 Colorado stores, 50 queued states, five catalog records and one source-catalog receipt. Exact-head CI, independent review, deployment and 49 other states' stores remain."
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: "ChatGPT source and Cloudflare, no verified coordinator lease"
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+repo: www-infinity4/QuantaPhi
+branch: feat/nationwide-cannabis-directory-bruce-banner-20261101
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1395"
+merged: false
+deployed: false
+live_verified: false
+next_action: "Verify exact-head #1395 CI after front-matter repair, obtain independent review, then merge and separately deploy/read back the source Worker."
+---
+
 # TICKET-1394 · 50-state organic cannabis source directory
 
 Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1394
