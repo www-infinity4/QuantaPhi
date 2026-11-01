@@ -34,6 +34,12 @@ jobs:
         run: |
           test -n "$CLOUDFLARE_API_TOKEN" || { echo 'BLOCKED: protected Cloudflare API token unavailable'; exit 1; }
           test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo 'BLOCKED: Cloudflare account ID unavailable'; exit 1; }
+      - name: Verify existing Cloudflare D1 read scope before downloading Overture
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          python3 -c "from scripts.business_directory_ingest import api_query; api_query('SELECT 1'); print('Cloudflare D1 read scope verified')"
       - name: Install the official Overture Maps CLI
         run: python3 -m pip install overturemaps==1.0.2
       - name: Import one verified metro tile in idempotent 400-record batches
