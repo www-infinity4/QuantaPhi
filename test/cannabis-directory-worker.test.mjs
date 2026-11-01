@@ -18,6 +18,7 @@ function envWith(rows=[record]){
           {state:'CO',adult_use:'unreviewed',medical_program:null,source_url:'',reviewed_at:'',listings:rows.length},
           {state:'IA',adult_use:'not_authorized',medical_program:1,source_url:'',reviewed_at:'2026-11-01',listings:0}
         ]};
+        if(sql.includes('COUNT(DISTINCT state) AS queued_states'))return {results:[{queued_states:49}]};
         if(sql.includes('FROM directory_jobs'))return {results:[{status:'queued',jobs:50}]};
         if(sql.includes('FROM state_policy ORDER'))return {results:[{state:'IA',adult_use:'not_authorized',medical_program:1,reviewed_at:'2026-11-01'}]};
         if(sql.includes('FROM regulator_source_catalog'))return {results:[
@@ -29,7 +30,7 @@ function envWith(rows=[record]){
         if(sql.includes('FROM store_sources'))return {results:rows};
         return {results:[]};
       },
-      async first(){return sql.includes('FROM state_policy WHERE state=') ? (b.args?.[0]==='IA'?{adult_use:'not_authorized',medical_program:1}:{adult_use:'unreviewed',medical_program:null}) : {ok:1}}};
+      async first(){if(sql.includes('COUNT(DISTINCT state) AS queued_states'))return {queued_states:49};return sql.includes('FROM state_policy WHERE state=') ? (b.args?.[0]==='IA'?{adult_use:'not_authorized',medical_program:1}:{adult_use:'unreviewed',medical_program:null}) : {ok:1}}};
     return b;
   }}};
   return {env,calls};
@@ -47,7 +48,8 @@ test('public health and coverage disclose no ad or verification activation',asyn
   const data=await c.json();
   assert.equal(data.total_listed,1);
   assert.equal(data.states_with_listings,1);
-  assert.equal(data.states_queued,50);
+  assert.equal(data.states_queued,49);
+  assert.equal(data.nationwide_target_states,50);
   assert.equal(data.states_with_policy_rows,2); // mock contains only two, not fabricated 50
 });
 test('Iowa medical-only regulator is distinguished from adult-use and unreviewed states',async()=>{
@@ -59,7 +61,9 @@ test('Iowa medical-only regulator is distinguished from adult-use and unreviewed
   assert.equal(data.states[0].adult_use,'not_authorized');
   assert.match(data.states[0].source_url,/hhs\.iowa\.gov/);
   const unknown=await worker.fetch(get('/api/21-directory/regulators?state=UT'),env);
-  assert.equal((await unknown.json()).states[0].source_kind,'source_pending');
+  const unknownData=await unknown.json();
+  assert.equal(unknownData.states[0].source_kind,'source_pending');
+  assert.equal(unknownData.states[0].medical_program,null);
 });
 test('receipts distinguish real regulator source catalog writes from unimported store queue',async()=>{
   const {env}=envWith();
@@ -105,6 +109,8 @@ test('invalid states/pages, mutation and missing D1 fail closed',async()=>{
   const {env}=envWith();
   const ack={'X-Visitor-21-Acknowledged':'true'};
   assert.equal((await worker.fetch(get('/api/21-directory/stores?state=XX',ack),env)).status,400);
+  assert.equal((await worker.fetch(get('/api/21-directory/stores?state=CO-invalid',ack),env)).status,400);
+  assert.equal((await worker.fetch(get('/api/21-directory/regulators?state=INvalid'),env)).status,400);
   assert.equal((await worker.fetch(get('/api/21-directory/stores?state=CO&page=-1',ack),env)).status,400);
   assert.equal((await worker.fetch(get('/api/21-directory/regulators?state=XX'),env)).status,400);
   assert.equal((await worker.fetch(new Request(url+'/api/21-directory/coverage',{method:'POST'}),env)).status,405);
