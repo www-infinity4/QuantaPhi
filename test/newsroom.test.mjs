@@ -50,7 +50,7 @@ test('no full third-party copyrighted news articles are injected in client marku
 });
 test('ads.txt declares the exact AdSense publisher already installed on homepage',()=>{
  const homepage=read('index.html');
- const publisher=homepage.match(/client=ca-(pub-\\d{16})/);
+ const publisher=homepage.match(/client=ca-(pub-\d{16})/);
  assert.ok(publisher,'Home page must retain its existing AdSense publisher ID');
  assert.equal(read('ads.txt').trim(),'google.com, '+publisher[1]+', DIRECT, f08c47fec0942fa0');
 });
