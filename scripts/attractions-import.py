@@ -58,7 +58,7 @@ def normalize(feature):
  name=names.get('primary','') if isinstance(names,dict) else ''
  if isinstance(name,dict):name=name.get('value','')
  name=re.sub(r'\s+',' ',str(name).strip())[:160]
- if (primary if primary in CATEGORIES else basic) == 'historic_site' and RESIDENTIAL_FALSE_POSITIVE.search(name):
+ if (primary if primary in CATEGORIES else basic) in ('historic_site', 'park') and RESIDENTIAL_FALSE_POSITIVE.search(name):
   return None
  identity=str(p.get('id') or feature.get('id') or '')
  if not name or not re.fullmatch(r'[a-zA-Z0-9-]{10,100}',identity):return None
