@@ -66,7 +66,7 @@ class BusinessIngestTests(unittest.TestCase):
             calls=[]
             def fake_query(sql, params=None, batch=None):
                 calls.append({'sql':sql,'params':params,'batch':batch})
-                return [{'results':[]}]
+                return [{'success':True,'meta':{'changes':1}} for _ in batch] if batch is not None else [{'results':[]}]
             original=ingest.api_query
             try:
                 ingest.api_query=fake_query
@@ -80,6 +80,25 @@ class BusinessIngestTests(unittest.TestCase):
             self.assertEqual(len(batches[0]),1)
             receipts=[x for x in calls if 'INSERT OR IGNORE INTO business_ingest_receipts' in x['sql']]
             self.assertEqual(receipts[0]['params'][2],'2026-10-21.0')
+
+    def test_protected_conflict_never_records_a_false_import_receipt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'one.geojsonseq'
+            path.write_text(json.dumps(feature())+'\\n',encoding='utf-8')
+            calls=[]
+            def fake_query(sql, params=None, batch=None):
+                calls.append({'sql':sql,'params':params,'batch':batch})
+                return [{'success':True,'meta':{'changes':0}} for _ in batch] if batch is not None else [{'results':[]}]
+            original=ingest.api_query
+            try:
+                ingest.api_query=fake_query
+                with self.assertRaisesRegex(RuntimeError,'write conflict'):
+                    ingest.ingest_file(path,{'job_id':'metro:CO:denver','city':'Denver',
+                                                 'state':'CO','cursor':''},release='2026-10-21.0')
+            finally:
+                ingest.api_query=original
+            self.assertFalse(any('INSERT OR IGNORE INTO business_ingest_receipts' in x['sql'] for x in calls))
+            self.assertFalse(any('UPDATE city_import_jobs SET cursor' in x['sql'] for x in calls))
 
     def test_stac_release_is_validated_before_ingestion(self):
         from unittest.mock import patch
