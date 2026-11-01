@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {normalizeSpotlights,chooseSpotlight,sourceUrl,publicImageUrl,fetchSpotlights,visibleSpotlightPrice} from '../quick-card-spotlights.mjs';
+import {normalizeSpotlights,chooseSpotlight,sourceUrl,publicImageUrl,fetchSpotlights,visibleSpotlightPrice,newerSpotlightSnapshot} from '../quick-card-spotlights.mjs';
 const now=Date.parse('2026-10-31T01:00:00Z');
 const card={id:'fixture-store',name:'Source',official:'https://www.levi.com/',category:'Denim'};
 const item=(extra={})=>({url:'https://www.levi.com/p/123',image:'https://lsco.scene7.com/is/image/123',title:'Denim jacket',checked_at:new Date(now-1000).toISOString(),...extra});
@@ -40,4 +40,16 @@ test('indexed images use a fixed public broker and never promote result prices t
  },{url:'https://attacker.test/x',title:'Unrelated',img_src:'https://attacker.test/p.jpg'}]})}});
  assert.match(requested,/^https:\/\/orange-brook-a2ac\.marvaseater\.workers\.dev\/search\?/);
  assert.equal(rows.length,1);assert.equal(rows[0].price,'');assert.equal(rows[0].method,'Indexed preview');
+});
+
+test('source feed chooses the freshest valid snapshot instead of the first stale site file',()=>{
+ const then=Date.parse('2026-11-01T06:00:00Z');
+ const old={schema_version:1,checked_at:'2026-10-31T01:00:00Z',cards:{a:{items:[]}}};
+ const fresh={schema_version:1,checked_at:'2026-11-01T05:57:00Z',cards:{b:{items:[]}}};
+ assert.equal(newerSpotlightSnapshot(null,old,then),old);
+ assert.equal(newerSpotlightSnapshot(old,fresh,then),fresh);
+ assert.equal(newerSpotlightSnapshot(fresh,old,then),fresh);
+ assert.equal(newerSpotlightSnapshot(fresh,{...old,checked_at:'2026-11-01T08:00:00Z'},then),fresh,
+  'future-dated content must never override a verified current feed');
+ assert.equal(newerSpotlightSnapshot(null,{...old,cards:null},then),null);
 });
