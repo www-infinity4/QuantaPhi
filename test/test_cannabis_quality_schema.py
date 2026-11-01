@@ -10,8 +10,11 @@ class CannabisQualitySchemaTests(unittest.TestCase):
         db = sqlite3.connect(":memory:")
         db.execute("CREATE TABLE store_sources (id TEXT PRIMARY KEY)")
         script = SQL.read_text(encoding="utf-8")
-        for forbidden in ("INSERT INTO store_quality", "wallet", "social_security", "ssn", "age_verified"):
-            self.assertNotIn(forbidden.lower(), script.lower())
+        executable = "\\n".join(line for line in script.splitlines()
+                               if not line.lstrip().startswith("--")).lower()
+        for forbidden in ("insert into", "update ", "delete from", "wallet",
+                          "social_security", "ssn", "age_verified"):
+            self.assertNotIn(forbidden, executable)
         db.executescript(script)
         db.executescript(script)
         tables = ("store_quality_evidence", "store_quality_decisions",
