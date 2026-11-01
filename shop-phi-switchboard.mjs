@@ -174,7 +174,7 @@ if(typeof document!=='undefined'){
   // No sponsor is charged and no coins are minted for an automatic change.
   const rotateTimer=setInterval(()=>{
    if(!active||grid.hidden)return;
-   const bounds=stage.getBoundingClientRect();
+   const bounds=grid.getBoundingClientRect();
    const visible=bounds.bottom>0&&bounds.top<window.innerHeight;
    if(!companionRotationAllowed({total:visibleCards.length,visible,pageHidden:document.hidden,
     focused:grid.contains(document.activeElement)||navigation.contains(document.activeElement),
