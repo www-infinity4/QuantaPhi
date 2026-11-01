@@ -25,6 +25,7 @@ deployed: false
 live_verified: false
 blocker: "No tenant-bound Grok or third-party plugin execution adapter, X AI reply authorization, production cost enforcement or provider consent"
 next_action: "Verify exact-head Node and Android CI, obtain review, merge only when eligible and independently read back live UI"
+---
 
 # Scope
 Owner wants Integra supervising Grok for question answering and assigning jobs to the best available specialized provider: CRM, analytics, commerce, GitHub/Cloudflare, communications or an explicitly approved TinyFish browser exception.
