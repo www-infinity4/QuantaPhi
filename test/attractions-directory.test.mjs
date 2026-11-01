@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import worker,{validState,cleanRecord,seedSources,importSnapshot} from '../workers/attractions-directory.mjs';
+import worker,{validState,cleanRecord,seedSources,importSnapshot,validateColoradoShardBatch} from '../workers/attractions-directory.mjs';
 const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root),'utf8');
 const seed=JSON.parse(read('data/attractions/co-seed.json'));
 test('50 US states queued, Colorado prioritized, isolated database schema',()=>{
@@ -71,4 +71,39 @@ test('explicit complete Overture tombstones close only source-matched IDs; trunc
  assert.equal(partial.closureCandidates,0);
  assert.equal(sqls.some(x=>x.sql.includes("SET status='closed'")),false);
  await assert.rejects(importSnapshot(env,{...payload,closed_ids:['curated:colorado-fake']}));
+});
+
+test('Colorado shard batch must be complete, one release, duplicate-free and untruncated',()=>{
+ const row=(i)=>({id:'overture:colorado-test-'+String(i).padStart(10,'0'),
+  name:'Sourced attraction',city:'Denver',state:'CO',category:'museum',
+  latitude:39.7,longitude:-104.9,website:'',source_name:'Overture Maps',
+  source_url:'https://overturemaps.org/',license:'CDLA-Permissive-2.0',
+  confidence:.9,image_url:'',image_attribution:''});
+ const shards=Array.from({length:4},(_,s)=>({
+  schema_version:1,state:'CO',source_name:'Overture Maps',
+  dataset_version:'2026-10-21.0',license:'CDLA-Permissive-2.0',
+  generated_at:'2026-11-01T12:00:00Z',truncated:false,eligible_count:6,
+  items:Array.from({length:6},(_,i)=>row(s*6+i)),closed_ids:[]
+ }));
+ assert.equal(validateColoradoShardBatch(shards).records,24);
+ assert.throws(()=>validateColoradoShardBatch(shards.slice(0,3)),/incomplete_colorado_shards/);
+ assert.throws(()=>validateColoradoShardBatch([{...shards[0],truncated:true},...shards.slice(1)]),/invalid_colorado_shard/);
+ assert.throws(()=>validateColoradoShardBatch([{...shards[0],dataset_version:'2026-11-01.0'},...shards.slice(1)]),/mixed_colorado_release/);
+ assert.throws(()=>validateColoradoShardBatch([{...shards[0],items:[...shards[0].items.slice(0,5),shards[1].items[0]]},...shards.slice(1)]),/invalid_colorado_record/);
+ assert.throws(()=>validateColoradoShardBatch([{...shards[0],closed_ids:[shards[1].items[0].id]},...shards.slice(1)]),/conflicting_colorado_closure/);
+});
+test('Cloudflare Cron refuses a partial four-region upload before any D1 write',async()=>{
+ const previous=globalThis.fetch,urls=[];
+ globalThis.fetch=async url=>{
+  urls.push(String(url));
+  return {status:urls.length===1?200:404,ok:urls.length===1,
+   json:async()=>({})};
+ };
+ try{
+  let pending;
+  await worker.scheduled({}, {ATTRACTIONS:{prepare(){throw Error('D1 must remain untouched')}}},
+   {waitUntil(p){pending=p}});
+  await assert.rejects(pending,/incomplete_colorado_shards/);
+  assert.equal(urls.length,4);
+ }finally{globalThis.fetch=previous}
 });
