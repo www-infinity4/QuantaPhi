@@ -52,3 +52,32 @@ test.describe('fine-pointer narrow desktop',()=>{
   expect(await page.evaluate(()=>window.scrollY)).toBeLessThan(20);
  });
 });
+
+test('Android returns to fully visible header after card navigation and can settle on carousel again',async({page})=>{
+ await ready(page);
+ const header=page.locator('main.app > .qtop');
+ const search=page.locator('main.app > .search');
+ await expect(header).toBeVisible();
+ await expect.poll(()=>header.evaluate(e=>getComputedStyle(e).scrollSnapAlign)).toBe('start');
+ await expect.poll(()=>search.evaluate(e=>getComputedStyle(e).scrollSnapAlign)).toBe('none');
+ await page.locator('#oracleCardNext').click();
+ const nav=page.locator('#oracleCardDeck .oracle-card-deck-nav');
+ await expect.poll(async()=>Math.abs(await nav.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:6000}).toBeLessThan(35);
+ await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
+ // A few CSS snap pixels of alignment are harmless if the full header and search remain visible.
+ await expect.poll(()=>page.evaluate(()=>window.scrollY),{timeout:4000}).toBeLessThan(8);
+ await expect(header).toBeInViewport({ratio:0.95});
+ await expect(page.locator('#q')).toBeInViewport();
+ // Simulate a short downward user scroll from the restored top, without
+ // jumping to the destination programmatically. The nearby deck must settle
+ // with its controls visible; the search row must not steal the snap.
+ const deckDistance=await page.locator('#oracleCardDeck').evaluate(e=>e.getBoundingClientRect().top);
+ const gestureDistance=Math.max(120,Math.min(480,Math.round(deckDistance-75)));
+ await page.mouse.move(2,Math.min(420,page.viewportSize().height/2));
+ await page.mouse.wheel(0,gestureDistance);
+ // The tabs and family shortcuts precede the arrow row inside the deck;
+ // the correct resting point is the deck section start, not the arrows.
+ const deck=page.locator('#oracleCardDeck');
+ await expect.poll(async()=>Math.abs(await deck.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:6000}).toBeLessThan(40);
+ await expect(nav).toBeInViewport();
+});

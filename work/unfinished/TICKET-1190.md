@@ -6,19 +6,19 @@ source_requests:
 state: review_pending
 dot: "🟡"
 progress_percent: unknown
-progress_basis: "One source-level scrolling defect addressed; remaining ANR, media, artwork, overlays and device criteria unverified"
-sessions_spent: 2
+progress_basis: "First source scroll repair merged in #1300; top-reachability regression patched in #1304; remaining ANR, artwork, overlays and device criteria unverified"
+sessions_spent: 3
 sessions_remaining_estimate: unknown
 agent: "ChatGPT scoped mobile section repair"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: 2026-11-01T00:29:52Z
+last_observed_at_utc: 2026-11-01T01:35:00Z
 repo: www-infinity4/QuantaPhi
-branch: fix/android-card-section-settle-20261031
-head_sha: 3ef57c9c423b8c69736877fdf17f762ce02f79b4
-pr: 1300
+branch: fix/android-top-header-snap-20261031
+head_sha: 391b0268723e5356be13f4ccfe8eb84cf9b1932f
+pr: 1304
 tests:
   - "test/android-scroll-sections.test.mjs — passed in exact-head interactive-card CI run 41256872271"
   - "test/android-scroll-sections.browser.spec.mjs — 3/3 browser cases passed in 69/69 Playwright suite, run 41256872271"
@@ -27,8 +27,8 @@ ci:
 merged: false
 deployed: false
 live_verified: false
-blocker: "Chrome/System UI ANR in owner's recording not traced to a specific long task; actual Android test required"
-next_action: "Obtain independent fresh-head review of corrected Copilot findings, then verify final exact-head required checks before expected-head merge."
+blocker: "PR #1304 exact-head CI/review and Android live readback pending; separate Chrome/System UI ANR remains untraced"
+next_action: "Verify PR #1304 exact-head Node/browser checks and independent review; expected-head merge if gates pass, then verify live mobile top access."
 ---
 
 ## Canonical GitHub issue
@@ -56,3 +56,9 @@ Four owner-provided Android screen recordings dated October 31 show a heavily sc
 - Scoped fix: actual non-card shelf roots, pointer:coarse JS guard, arrow navigation row reanchor, browser cases for tall Following feed and fine-pointer desktop, corrected CSSOM expectation.
 - Source head `3ef57c9c423b8c69736877fdf17f762ce02f79b4` all 38/38 check runs passed; interactive-card run 41256872271 69/69 browser cases, 3 new scroll cases. Reviewer is Copilot (COMMENT on earlier head), no fresh-head approval or independent re-review. Four thread replies recorded; no self-approval.
 - This checkpoint update is a subsequent documentation-only commit; verify its new head separately. No Android ANR root-cause acceptance, production deployment or wallet change. Progress unknown; no coordinator lease claimed.
+
+## Session 3 · November 1, 2026 UTC — restored top access
+- Owner reported that the earlier merged #1300 proximity snapping left the very top inaccessible. Root cause at source level: the first snap target was `main.app > .search`, below the `qtop` header, making the top a non-resting position on a touch viewport.
+- Created scoped follow-up [PR #1304](https://github.com/www-infinity4/QuantaPhi/pull/1304) after confirming previous PR #1300 merged. Added source and 390px mobile-browser regression *before* CSS modification; the source contract was red against the original CSS.
+- Changed only the Android homepage CSS to make `.qtop` the first resting snap position and remove standalone search snap; kept the deck/arrow navigation, shelves, reduced-motion and fine-pointer rules untouched. Updated CSS query version. Source fix commit `fff8601e20d9d924cc8845b0a98e170a0a4903fd`, asset version commit `391b0268723e5356be13f4ccfe8eb84cf9b1932f`.
+- Automated PR CI was running at last inspection. This is **not** a claim of browser pass, merge, production release or real Android verification; source-level regression check succeeded after patch. Await exact-head CI + review before merge; perform production and device acceptance separately. No wallet/auth/API changes.

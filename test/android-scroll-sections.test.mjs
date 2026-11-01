@@ -37,3 +37,8 @@ test('Scroll repair does not take ownership of wallet, sign-in, media, or card f
  assert.match(deck,/stage\.append\(entry\.node\)/);
  assert.match(deck,/scrollIntoView\?\.\(\{block:'start',behavior:/);
 });
+
+test('header stays a reachable first snap position and search does not interrupt the jump to cards',()=>{
+ assert.match(css,/main\.app>\.qtop\{scroll-snap-align:start;scroll-snap-stop:normal;scroll-margin-top:0\}/);
+ assert.doesNotMatch(css,/main\.app>\.search,\s*body\.oracle-quanta #oracleCardDeck/);
+});

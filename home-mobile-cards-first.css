@@ -153,7 +153,10 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{margin-top:6px}
  * overlays and nested card carousels keep native browser scrolling. */
 @media (max-width:650px) and (pointer:coarse){
  html:has(body.oracle-quanta){scroll-snap-type:y proximity;scroll-padding-top:max(12px,env(safe-area-inset-top))}
- body.oracle-quanta main.app>.search,
+ /* The top of the page must be a valid resting point: without a header
+  * anchor the browser snaps upward to Search and hides the header/wallet.
+  * Treat search as part of that first section, then settle on the deck. */
+ body.oracle-quanta main.app>.qtop{scroll-snap-align:start;scroll-snap-stop:normal;scroll-margin-top:0}
  body.oracle-quanta #oracleCardDeck,
  body.oracle-quanta.oracle-shelf-open main.app> :is(section.card,#coliseumZeusCard,#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){
   scroll-snap-align:start;scroll-snap-stop:normal;scroll-margin-top:12px;
