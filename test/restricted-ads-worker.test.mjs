@@ -9,8 +9,9 @@ const creative={id:'approved-creative',category:'cannabis',approved:1,rights_cle
  title:'Reviewed advertiser notice',description:'Publisher information',
  image:'https://publisher.example.com/approved.jpg',url:'https://publisher.example.com/info',
  reviewed_at:'2026-10-31T12:00:00Z',approved_jurisdictions:'["US-CO"]'};
-test('age verdict requires trusted external verification and nonexpired proof',()=>{
+test('age verdict requires trusted external or Infinity first-party proof and nonexpired eligibility',()=>{
  assert.ok(verifyVerdict(verdict,now));
+ assert.ok(verifyVerdict({...verdict,proof_kind:'infinity_verified'},now));
  for(const invalid of [{...verdict,verified_over_21:false},{...verdict,proof_kind:'self_attested'},
  {...verdict,expires_at:'2026-10-31T00:00:00Z'},{...verdict,authenticated:false},
  {...verdict,subject:''},{...verdict,jurisdiction:'US-X1'},null]){
