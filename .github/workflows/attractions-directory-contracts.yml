@@ -6,6 +6,8 @@ on:
       - 'workers/attractions-directory.mjs'
       - 'data/attractions/**'
       - 'scripts/attractions-import.py'
+      - 'scripts/attractions-batch-validate.py'
+      - 'test/test_attractions_batch_validate.py'
       - 'test/attractions-directory.test.mjs'
       - 'test/attractions-directory.browser.spec.mjs'
       - 'test/test_attractions_import.py'
@@ -18,6 +20,8 @@ on:
       - 'workers/attractions-directory.mjs'
       - 'data/attractions/**'
       - 'scripts/attractions-import.py'
+      - 'scripts/attractions-batch-validate.py'
+      - 'test/test_attractions_batch_validate.py'
       - 'test/attractions-directory.test.mjs'
       - 'test/attractions-directory.browser.spec.mjs'
       - 'test/test_attractions_import.py'
@@ -42,8 +46,10 @@ jobs:
           node --check workers/attractions-directory.mjs
           node --check attractions-directory.mjs
           node --test test/attractions-directory.test.mjs
-      - name: Overture places category, URL and provenance tests
-        run: python -m unittest discover -s test -p test_attractions_import.py -v
+      - name: Overture places and four-region provenance tests
+        run: |
+          python -m unittest discover -s test -p test_attractions_import.py -v
+          python -m unittest discover -s test -p test_attractions_batch_validate.py -v
       - name: Install Chromium for mobile web QA
         run: |
           npm install --no-save @playwright/test@1.56.1
