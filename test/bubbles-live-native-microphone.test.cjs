@@ -25,7 +25,7 @@ test('actual web lifecycle stop closes every local media resource and requests p
  function node(){return {value:'A'.repeat(40),handlers:{},attrs:{},append(){},after(){},setAttribute(k,v){this.attrs[k]=v},getAttribute(k){return this.attrs[k]},addEventListener(k,v){this.handlers[k]=v}};}
  for(const id of ['liveStart','liveStop','liveInterrupt','liveStatus','liveTranscript','liveOwner','liveAudio'])nodes.set(id,node());
  const tracks=[{stopped:0,stop(){this.stopped++}}],stream={getTracks:()=>tracks,getAudioTracks:()=>tracks};
- let peer,channel;
+ let peer,channel,healthChecks=0;
  class Peer{
   constructor(){peer=this;this.handlers={};this.iceGatheringState='complete';this.connectionState='connected';}
   addEventListener(k,v){this.handlers[k]=v} addTrack(){} async createOffer(){return {type:'offer',sdp:'v=0\n'}}
@@ -33,9 +33,15 @@ test('actual web lifecycle stop closes every local media resource and requests p
   close(){this.closed=true}
   createDataChannel(){channel={handlers:{},readyState:'open',sent:[],addEventListener(k,v){this.handlers[k]=v},send(v){this.sent.push(JSON.parse(v))},close(){this.closed=true}};return channel;}
  }
- const context={document:{getElementById:id=>nodes.get(id),createElement:node,createTextNode:s=>s},window:{addEventListener(){}},navigator:{mediaDevices:{getUserMedia:async()=>stream}},RTCPeerConnection:Peer,AbortController,setTimeout:()=>1,clearTimeout(){},fetch:async()=>({ok:true,json:async()=>({transport:{sdp:'v=0\nanswer'}})})};
+ const context={document:{getElementById:id=>nodes.get(id),createElement:node,createTextNode:s=>s},window:{addEventListener(){}},navigator:{mediaDevices:{getUserMedia:async()=>stream}},RTCPeerConnection:Peer,AbortController,AbortSignal,URL,setTimeout:()=>1,clearTimeout(){},fetch:async(url,options={})=>{
+   if(String(url).endsWith('/health')){healthChecks++;return {ok:true,json:async()=>({ok:true,configured:true})};}
+   assert.equal(options.method,'POST','session negotiation must use POST after health readiness');
+   return {ok:true,json:async()=>({transport:{sdp:'v=0\nanswer'}})};
+  }};
  vm.createContext(context);vm.runInContext(fs.readFileSync('bubbles-gpt-live.js','utf8'),context);
  await nodes.get('liveStart').handlers.click();
+ assert.equal(healthChecks,1,'gateway readiness must be verified before microphone negotiation');
+ assert.ok(channel,'ready gateway should establish a WebRTC data channel');
  channel.handlers.message({data:JSON.stringify({type:'session.started'})});
  assert.equal(context.window.BubblesLiveVoice.inCall(),true);
  context.window.BubblesLiveVoice.stop();
