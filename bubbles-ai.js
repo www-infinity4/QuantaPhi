@@ -1487,6 +1487,10 @@ if(!embedded){
  }).catch(()=>{quickState.textContent='Tap to check ChatGPT access with the verified owner session.';});
 }
 document.body.append(launcher,panel);
+// One messenger with evidence-backed cognitive/activity bubbles; no extra AI session.
+void import('/bubbles-iteration-bubbles.mjs?v=20261031-iteration1')
+ .then(({mountBubbleIterations})=>mountBubbleIterations({launcher,panel,status}))
+ .catch(()=>{ /* The activity view must never interrupt chat, voice or wallet. */ });
 // Fit the visible phone viewport, including the space remaining above its keyboard.
 const chatFitStyle=create('style');
 chatFitStyle.textContent=`
@@ -2911,6 +2915,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }finally{clearTimeout(memoryTimer)}
  }
  const ownerContext=await ownerContextPending;
+ window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'memory',state:ownerContext.state}}));
  const relevant=ownerContext.related.filter(m=>!messages.slice(-40).some(x=>x.id===m.id));
  // A card renderer error must not stop normal speech and work tools.
  if(activeCardEvidence){
@@ -3232,6 +3237,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    conversation.append(row);
   }
   if(json.receipt){
+   window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status}}));
    status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
   }
   if(nativeOverlay){
@@ -3781,6 +3787,12 @@ async function pollBrainProgress(){
   const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
+  // Authenticated Brain tickets are observed state; queued is never completed.
+  const iterationTicket=result.tickets.find(ticket=>ticket?.status==='working'&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))||
+   result.tickets.find(ticket=>['blocked','queued','ready','committed_unverified','merged_verified','deployed_verified'].includes(ticket?.status)&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''));
+  if(iterationTicket)window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+   type:'job',repository:iterationTicket.repository,status:iterationTicket.status,
+   url:iterationTicket.progress?.url||''}}));
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
   brainConnectionState('Connected · Work status available in Options', 'connected');
   if(!brainInboxInitialized){
