@@ -51,3 +51,24 @@ test('lookahead reports more pages only when a 25th record exists, and deep page
  const negative=await (await worker.fetch(new Request('https://test.example/api/attractions/search?state=CO&page=-1'),env)).json();
  assert.equal(negative.page,0);
 });
+
+test('explicit complete Overture tombstones close only source-matched IDs; truncated snapshots never close',async()=>{
+ const sqls=[];
+ const env={ATTRACTIONS:{
+  prepare(sql){return {bind(...params){sqls.push({sql,params});return {first:async()=>null}}}},
+  batch:async statements=>statements.map(()=>({success:true}))
+ }};
+ const payload={schema_version:1,state:'CO',source_name:'Overture Maps',dataset_version:'2026-10-21.0',
+  generated_at:'2026-11-01T00:00:00Z',items:[],truncated:false,
+  closed_ids:['overture:9b51e395-3fb1-41a8-b6df-54859f6e9e63']};
+ const done=await importSnapshot(env,payload);
+ assert.equal(done.records,0);assert.equal(done.closureCandidates,1);
+ const close=sqls.find(x=>x.sql.includes("SET status='closed'"));
+ assert.ok(close);assert.match(close.sql,/source_name='Overture Maps'/);
+ assert.deepEqual(close.params,[payload.closed_ids[0],'CO']);
+ sqls.length=0;
+ const partial=await importSnapshot(env,{...payload,truncated:true,generated_at:'2026-11-01T01:00:00Z'});
+ assert.equal(partial.closureCandidates,0);
+ assert.equal(sqls.some(x=>x.sql.includes("SET status='closed'")),false);
+ await assert.rejects(importSnapshot(env,{...payload,closed_ids:['curated:colorado-fake']}));
+});
