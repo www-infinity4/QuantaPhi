@@ -1,4 +1,4 @@
-import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
 import {mountCurrentSports} from './sports-card-data.mjs?v=20261030-rich1';
 import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from './verified-brand-sports-catalog.mjs?v=20261101-colorado1340';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
