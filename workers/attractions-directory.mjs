@@ -103,7 +103,7 @@ export function validateColoradoSeed(payload){
     payload.source_name!=='QuantaPhi curated official visitor links'||
     payload.license!=='original_directory_entries'||
     typeof payload.generated_at!=='string'||
-    !/^\\d{4}-\\d\\d-\\d\\dT[\\d:.]+Z$/.test(payload.generated_at)||
+    !/^\d{4}-\d\d-\d\dT[\d:.]+Z$/.test(payload.generated_at)||
     payload.generated_at.length>45||
     typeof payload.dataset_version!=='string'||!payload.dataset_version||
     !Array.isArray(payload.items)||payload.items.length<1||payload.items.length>5000||
