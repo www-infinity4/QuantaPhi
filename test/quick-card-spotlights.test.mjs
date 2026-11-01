@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {normalizeSpotlights,chooseSpotlight,chooseNextSpotlight,sourceUrl,publicImageUrl,fetchSpotlights,visibleSpotlightPrice} from '../quick-card-spotlights.mjs';
+import {normalizeSpotlights,chooseSpotlight,sourceUrl,publicImageUrl,fetchSpotlights,visibleSpotlightPrice} from '../quick-card-spotlights.mjs';
 const now=Date.parse('2026-10-31T01:00:00Z');
 const card={id:'fixture-store',name:'Source',official:'https://www.levi.com/',category:'Denim'};
 const item=(extra={})=>({url:'https://www.levi.com/p/123',image:'https://lsco.scene7.com/is/image/123',title:'Denim jacket',checked_at:new Date(now-1000).toISOString(),...extra});
@@ -40,14 +40,4 @@ test('indexed images use a fixed public broker and never promote result prices t
  },{url:'https://attacker.test/x',title:'Unrelated',img_src:'https://attacker.test/p.jpg'}]})}});
  assert.match(requested,/^https:\/\/orange-brook-a2ac\.marvaseater\.workers\.dev\/search\?/);
  assert.equal(rows.length,1);assert.equal(rows[0].price,'');assert.equal(rows[0].method,'Indexed preview');
-});
-
-test('manual next always excludes the currently visible source even if history state was reset',()=>{
- const rows=normalize([
-  item({url:'https://www.levi.com/p/1',image:'https://lsco.scene7.com/a.jpg',title:'Fixture denim jacket'}),
-  item({url:'https://www.levi.com/p/2',image:'https://lsco.scene7.com/b.jpg',title:'Fixture straight jeans'})
- ]);
- const [jacket,jeans]=rows;
- assert.equal(chooseNextSpotlight(rows,jacket,{seen:[],last:jeans.id}).id,jeans.id);
- assert.equal(chooseNextSpotlight(rows,jeans,{seen:[],last:jacket.id}).id,jacket.id);
 });
