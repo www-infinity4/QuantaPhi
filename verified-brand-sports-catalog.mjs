@@ -221,7 +221,7 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   'A steep San Juan Mountains hike to vivid blue lakes above timberline near Silverton. Suitable for fit, acclimatized hikers with proper navigation and weather awareness.',
   'https://www.fs.usda.gov/r02/sanjuan',actions(
    ['National Forest planning','https://www.fs.usda.gov/r02/sanjuan'],
-   ['USFS Ice Lakes access guide','https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5417559.pdf'],
+   ['USFS Silverton access and camping guide','https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5417559.pdf'],
    ['Regional weather alerts','https://www.weather.gov/gjt/']
   ),'https://commons.wikimedia.org/wiki/Special:FilePath/Ice_Lake_Silverton.jpg',
   {collection:'colorado-mountain-adventures',difficulty:'Strenuous · high altitude',season:'Typically July–September, snow-dependent',safety:'Steep exposed alpine terrain; begin early, turn back in lightning, pack layers/water, avoid shortcuts and confirm trail access.',
