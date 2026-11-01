@@ -7,10 +7,7 @@
 .channelphi-card{background:#fff;border:1px solid #ddcfeb;border-radius:18px;padding:13px;display:flex;flex-direction:column;gap:9px;min-width:0;box-shadow:0 5px 14px #45276912}
 .channelphi-card.channelphi-playing{grid-column:1/-1}
 .channelphi-card.channelphi-kyou{grid-column:1/-1;border-color:#a4c9e6;background:#f7fbff}
-.channelphi-kyou .channelphi-monogram{background:#0865a6}
 .channelphi-kyou-logo{display:block;width:90px;max-width:35%;height:48px;object-fit:contain}
-.channelphi-full-view{color:#075b98;font-size:13px;min-height:36px;display:inline-flex;align-items:center}
-.channelphi-kyou .channelphi-controls a{display:flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:48px;padding:9px 5px;border:1px solid #947ac4;color:#fff;background:#281b43;text-decoration:none;font-size:12px}
 .channelphi-mast{display:flex;align-items:center;gap:10px;min-width:0}
 .channelphi-monogram{display:grid;place-items:center;flex:0 0 48px;height:48px;border-radius:13px;color:white;font-size:18px;font-weight:950;background:linear-gradient(145deg,#7340aa,#42205f)}
 .channelphi-omni .channelphi-monogram{background:linear-gradient(145deg,#0c74bf,#4d2ca3)}
@@ -39,8 +36,6 @@
 .channelphi-video-slot{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:10px;background:#000}
 .channelphi-video-slot .channelphi-frame,.channelphi-video-slot .channelphi-video{display:block;width:100%;height:100%;min-height:0;max-height:none;aspect-ratio:16/9;border:0;background:#000;object-fit:contain}
 .channelphi-viewer{padding:8px;background:#030507;color:#fff}
-.channelphi-kyou .channelphi-video-slot{height:520px;aspect-ratio:auto}
-.channelphi-kyou .channelphi-video-slot .channelphi-frame{height:520px;min-height:0;aspect-ratio:auto}
 .channelphi-now{display:block;margin:8px 6px 2px;font-size:15px;line-height:1.35;color:#fff;overflow-wrap:anywhere}
 .channelphi-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
 .channelphi-controls button{padding:9px 5px!important;min-width:0;min-height:48px;font-size:12px;border:1px solid #947ac4;background:#281b43;color:#fff;touch-action:manipulation}
@@ -49,14 +44,11 @@
 .channelphi-prev:focus-visible,.channelphi-next:focus-visible,.channelphi-sound:focus-visible{outline:3px solid #ffd877;outline-offset:2px}
 @media(max-width:430px){.channelphi-video-slot .channelphi-frame,.channelphi-video-slot .channelphi-video{height:100%;min-height:0}.channelphi-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.channelphi-controls button{font-size:14px}}
 
-/* KYOU station-aware controls: actionable buttons only; third-party sound stays in the station player. */
-.channelphi-kyou .channelphi-full-view{box-sizing:border-box;display:inline-flex;align-self:flex-start;align-items:center;justify-content:center;min-height:44px;padding:9px 13px;margin:2px 0 4px;border:1px solid #8ebad8;border-radius:11px;background:#fff;color:#075b98;text-decoration:none;font:800 13px/1.35 system-ui,sans-serif}
-.channelphi-kyou .channelphi-controls{grid-template-columns:repeat(3,minmax(0,1fr))}
-.channelphi-kyou .channelphi-controls :is(button,a){box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-width:0;min-height:48px;padding:10px 8px!important;border-radius:12px;border:1px solid #8dbad9;text-decoration:none;text-align:center;font:800 13px/1.35 system-ui,sans-serif;overflow-wrap:anywhere;white-space:normal;cursor:pointer}
-.channelphi-kyou .channelphi-controls .channelphi-prev{background:#e9f4ff;color:#12527e;border-color:#85b7da}
-.channelphi-kyou .channelphi-controls .channelphi-next{background:#075b98;color:#fff;border-color:#075b98}
-.channelphi-kyou .channelphi-controls .channelphi-stop{background:#7b2638;color:#fff;border-color:#7b2638}
-.channelphi-kyou .channelphi-hint{margin:8px 5px 3px;color:#d8ecfb;font:600 12px/1.5 system-ui,sans-serif}
-.channelphi-kyou :is(.channelphi-full-view,.channelphi-controls button,.channelphi-controls a):focus-visible{outline:3px solid #ffce66;outline-offset:3px}
-.channelphi-kyou .channelphi-controls :is(button,a):active{filter:brightness(.94)}
-@media(max-width:430px){.channelphi-kyou .channelphi-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.channelphi-kyou .channelphi-controls .channelphi-stop{grid-column:1/-1}}
+/* KYOU official media screen. It must never be a 520px embedded website. */
+.channelphi-kyou .channelphi-screen{display:block;aspect-ratio:16/9;min-height:0;border:1px solid #31546f;border-radius:15px;background:radial-gradient(circle at 50% 35%,#285a75 0%,#091925 76%);text-decoration:none}
+.channelphi-kyou .channelphi-art{inset:10% 16%;width:68%;height:80%;object-fit:contain;opacity:1}
+.channelphi-kyou .channelphi-screen-label{justify-content:flex-end;gap:8px;padding:12px;background:linear-gradient(0deg,#071923ed 0%,#07192322 62%,transparent 100%);text-shadow:none;color:#fff}
+.channelphi-kyou .channelphi-screen .channelphi-play-icon{display:grid;place-items:center;flex:none;width:54px;height:54px;margin:auto auto 2px;border:2px solid #f5faff;border-radius:50%;background:#f7fbff;color:#183c58;font-size:23px;box-shadow:0 3px 20px #0006}
+.channelphi-kyou .channelphi-screen-label strong{font:700 13px/1.35 system-ui,sans-serif;color:#fff}
+.channelphi-kyou .channelphi-screen:focus-visible{outline:3px solid #2b88bd;outline-offset:3px}
+.channelphi-kyou .channelphi-screen:hover .channelphi-play-icon{background:#e7f3fb}
