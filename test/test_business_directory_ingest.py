@@ -138,5 +138,42 @@ class BusinessIngestTests(unittest.TestCase):
         finally:
             ingest.ACCOUNT,ingest.TOKEN=old_acc,old_token
 
+
+    def test_main_pins_download_and_ingest_to_same_stac_release(self):
+        from unittest.mock import patch
+        job={'job_id':'metro:CO:colorado-springs','city':'Colorado Springs','state':'CO',
+             'bbox':'-104.9,38.7,-104.6,38.95','cursor':''}
+        with patch.object(ingest,'api_query',return_value=[{'results':[job]}]) as query, \
+             patch.object(ingest,'overture_release',side_effect=['2026-10-21.0','2026-10-21.0']) as resolver, \
+             patch.object(ingest.subprocess,'run') as download, \
+             patch.object(ingest,'ingest_file',return_value=12) as import_rows:
+            ingest.main()
+        self.assertEqual(resolver.call_count,2)
+        download.assert_called_once()
+        command=download.call_args.args[0]
+        self.assertIn('--release=2026-10-21.0',command)
+        self.assertIn('--bbox='+job['bbox'],command)
+        self.assertEqual(command[0:2],['overturemaps','download'])
+        self.assertTrue(download.call_args.kwargs['check'])
+        import_rows.assert_called_once()
+        self.assertEqual(import_rows.call_args.args[1],job)
+        self.assertEqual(import_rows.call_args.args[2],'2026-10-21.0')
+        self.assertEqual(query.call_count,1)
+
+    def test_main_rejects_stac_release_change_before_ingest(self):
+        from unittest.mock import patch
+        job={'job_id':'metro:CO:colorado-springs','city':'Colorado Springs','state':'CO',
+             'bbox':'-104.9,38.7,-104.6,38.95','cursor':''}
+        with patch.object(ingest,'api_query',return_value=[{'results':[job]}]) as query, \
+             patch.object(ingest,'overture_release',side_effect=['2026-10-21.0','2026-11-01.0']) as resolver, \
+             patch.object(ingest.subprocess,'run') as download, \
+             patch.object(ingest,'ingest_file') as import_rows:
+            with self.assertRaisesRegex(RuntimeError,'release changed during download'):
+                ingest.main()
+        self.assertEqual(resolver.call_count,2)
+        self.assertIn('--release=2026-10-21.0',download.call_args.args[0])
+        import_rows.assert_not_called()
+        self.assertEqual(query.call_count,1)
+
 if __name__=='__main__':
     unittest.main()
