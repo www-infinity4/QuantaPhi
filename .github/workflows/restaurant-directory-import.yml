@@ -1,20 +1,31 @@
-name: Restaurant Directory · Denver Overture import
+name: Restaurant Directory · Licensed metro Overture source candidates
 on:
   workflow_dispatch:
+    inputs:
+      city_key:
+        description: 'Reviewed source metro (candidate PR only)'
+        required: true
+        type: choice
+        default: denver-co
+        options:
+          - denver-co
+          - colorado-springs-co
   push:
     branches: [main]
     paths:
       - scripts/restaurant-directory-import.py
+      - data/restaurants/city-manifest.json
+      - test/test_restaurant_directory_import.py
       - .github/workflows/restaurant-directory-import.yml
   schedule:
     - cron: '15 9 * * 1'
 permissions:
   contents: write
 concurrency:
-  group: restaurant-directory-denver
+  group: restaurant-directory-${{ github.event.inputs.city_key || 'denver-co' }}
   cancel-in-progress: false
 jobs:
-  import-denver:
+  import-metro:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -24,34 +35,54 @@ jobs:
           python-version: '3.12'
       - name: Verify importer regression tests before fetching data
         run: python -m unittest discover -s test -p test_restaurant_directory_import.py -v
+      - name: Resolve registered metro and pinned Overture release
+        id: city
+        env:
+          CITY_KEY: ${{ github.event.inputs.city_key || 'denver-co' }}
+        run: |
+          python - <<'PY'
+          import importlib.util, os
+          from pathlib import Path
+          path=Path('scripts/restaurant-directory-import.py')
+          spec=importlib.util.spec_from_file_location('restaurant_import',path)
+          mod=importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(mod)
+          key=os.environ['CITY_KEY']
+          cfg=mod.city_config(key)
+          with open(os.environ['GITHUB_OUTPUT'],'a') as out:
+              out.write('key='+key+'\n')
+              out.write('bbox='+','.join(map(str,cfg['bbox']))+'\n')
+              out.write('release='+cfg['release']+'\n')
+          PY
       - name: Install official Overture Maps download client
         run: python -m pip install --disable-pip-version-check overturemaps
-      - name: Download only Denver-metro place features
+      - name: Download only registered metro place features
         run: |
-          overturemaps download --bbox=-105.12,39.60,-104.69,39.92 -f geojson --type=place -o /tmp/denver-overture.geojson
-      - name: Deduplicate and retain high confidence restaurants
+          overturemaps download --bbox="${{ steps.city.outputs.bbox }}" -f geojson --type=place -o /tmp/metro-overture.geojson
+      - name: Deduplicate and retain high confidence source restaurants
         run: |
           python scripts/restaurant-directory-import.py \
-            --input /tmp/denver-overture.geojson \
-            --output data/restaurants/denver-co.json \
-            --release 2026-10-21.0
+            --input /tmp/metro-overture.geojson \
+            --output data/restaurants/${{ steps.city.outputs.key }}.json \
+            --city-key '${{ steps.city.outputs.key }}' \
+            --release '${{ steps.city.outputs.release }}'
           python - <<'PY'
           import json
           from pathlib import Path
-          d=json.loads(Path('data/restaurants/denver-co.json').read_text())
+          d=json.loads(Path('data/restaurants/${{ steps.city.outputs.key }}.json').read_text())
           print(f"Verified source record count: {len(d['items'])}")
           assert all(not x['sponsored'] and x['source_name']=='Overture Maps' for x in d['items'])
           PY
       - name: Publish vetted source snapshot if changed
         run: |
-          git add data/restaurants/denver-co.json
+          git add 'data/restaurants/${{ steps.city.outputs.key }}.json'
           if git diff --cached --quiet; then echo 'No snapshot changes'; exit 0; fi
-          git -c user.name='QuantaPhi Restaurant Directory' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: refresh Denver restaurant directory from Overture'
-          DATA_BRANCH="data/restaurant-directory-denver-${GITHUB_RUN_ID}"
+          git -c user.name='QuantaPhi Restaurant Directory' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: source-reviewed metro restaurant candidate from Overture'
+          DATA_BRANCH="data/restaurant-directory-${{ steps.city.outputs.key }}-${GITHUB_RUN_ID}"
           git push origin "HEAD:refs/heads/${DATA_BRANCH}"
           echo "Published reviewed-data candidate branch: ${DATA_BRANCH}"
           GH_TOKEN="${{ github.token }}" gh pr create \
             --base main --head "${DATA_BRANCH}" \
             --title "data: refresh vetted Denver restaurants from Overture" \
-            --body "Source: Overture Maps Places 2026-10-21.0. High-confidence restaurant taxonomy, bounding box and duplicate filters. Never merchant-sponsored. Source snapshot generated and locally tested by this workflow; review/count before merge." \
+            --body "Source: Overture Maps Places ${{ steps.city.outputs.release }} for ${{ steps.city.outputs.key }}. High-confidence restaurant taxonomy, registered bounding box and duplicate filters. Candidate data only: verify row count, source license and city coverage before merge. No automatic D1 ingestion or sponsorship." \
             || echo "A source-data branch exists; Continuity Builder must create/review PR manually."
