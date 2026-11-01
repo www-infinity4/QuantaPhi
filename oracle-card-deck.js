@@ -126,6 +126,9 @@ const entries=unique.map(([id,title])=>{
  return {id,title,feedId,category,feature,study:title,node:document.getElementById(id),marker:null,count:0};
 }).filter(x=>x.node);
 const STORE='oracle:card-activity:v1';
+// Explicitly private source cards remain navigable, but never enter activity
+// persistence, Bubbles discovery history or personalized For You ranking.
+const personalizationDisabled=entry=>entry?.node?.dataset?.personalization==='disabled';
 const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
@@ -136,7 +139,7 @@ const spotlightRequested=(()=>{try{
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
 }catch{return null}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
-entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
+entries.forEach(x=>x.count=personalizationDisabled(x)?0:Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
 let active=null,expanded=false;
 // Must be ready before early registerSourceCards() invokes start().
 let openingCursor=null;
@@ -203,7 +206,7 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
+function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!personalizationDisabled(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function livePriority(e){
  if(e?.id!=='phiChannelCards')return 0;
  const priority=document.getElementById('liveFoxGameCard')?.dataset.tvFrontPriority;
@@ -403,7 +406,7 @@ function show(entry,remember=true){
   id:entry.feedId,title:entry.title,category:entry.category,tab:selectedTab
  }}));
  entry.node.dispatchEvent(new Event('oracle:activate'));
- void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
+ if(!personalizationDisabled(entry))void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // Every original Oracle widget receives the same five real actions.
  // Source cards already own the toolbar inside mountCardTools.
  if(!entry.id.startsWith('source-')&&entry.id!=='coliseumZeusCard'){
@@ -419,13 +422,15 @@ function show(entry,remember=true){
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
- entry.count=Math.min(1000,entry.count+1);counts[entry.id]=entry.count;
- try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
- if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
- seenByTab[selectedTab].add(entry.feedId);
+ if(!personalizationDisabled(entry)){
+  entry.count=Math.min(1000,entry.count+1);counts[entry.id]=entry.count;
+  try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
+  if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
+  seenByTab[selectedTab].add(entry.feedId);
+ }
  now.textContent=entry.title;updateTabs();predict();
  status.textContent='Live interactive card · '+entry.title+
-  '. '+(selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
+  '. '+(personalizationDisabled(entry)?'Private browsing: no view or interaction history recorded.':selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
     selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.')+
   ' · '+eligible().length+' ready cards in this direction.';
 }
@@ -536,6 +541,7 @@ host.addEventListener('keydown',()=>{viewerTouched=true},true);
 host.addEventListener('click',e=>{
  if(!active||!stage.contains(e.target)||!e.target.closest?.('button,a,[role="button"],input[type="submit"]'))return;
  viewerTouched=true;
+ if(personalizationDisabled(active))return;
  counts[active.id]=Math.min(1000,(counts[active.id]||0)+1);
  if(directionApi&&feedState){
   feedState=directionApi.markOpened(readDirections(),active.feedId);
