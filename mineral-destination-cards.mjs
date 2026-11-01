@@ -17,6 +17,7 @@ export function validMineralDestination(c){
  &&(!c.image||Boolean(c.image.file&&c.image.credit&&c.image.license));
 }
 export const officialMapsUrl=c=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(c.location);
+export const imageAltForMineralDestination=c=>c.id==='last-chance-mine'?'Quartz specimen photograph; not verified as originating at Last Chance Mine':c.name+' photograph';
 const el=(tag,cls,txt)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(txt!==undefined)node.textContent=txt;return node};
 const link=(label,url,cls='')=>{const a=el('a',cls,label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.referrerPolicy='strict-origin-when-cross-origin';return a};
 export function mountMineralDestination(c){
@@ -25,7 +26,7 @@ export function mountMineralDestination(c){
  card.dataset.sourceId=c.id;card.dataset.sourceName=c.name;card.dataset.sourceReady='true';card.dataset.official=c.official;card.dataset.sourceCategory='Mines & minerals';card.dataset.sourceQuery=c.name;
  const hero=el('div','mineral-card-hero');
  if(c.image){
-  const img=el('img','mineral-card-image');img.alt=c.id==='last-chance-mine'?'Authentic Last Chance Mine amethyst specimen':c.name+' photograph';
+  const img=el('img','mineral-card-image');img.alt=imageAltForMineralDestination(c);
   img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';
   img.addEventListener('error',()=>{img.remove();hero.classList.add('mineral-card-photo-missing')},{once:true});
   img.src='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(c.image.file)+'?width=1280';hero.append(img);
