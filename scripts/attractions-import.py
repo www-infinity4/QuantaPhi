@@ -12,9 +12,9 @@ BBOX=(-109.060,36.990,-102.040,41.010)
 # complexes. A high confidence score is not evidence of public visitor access.
 # Exclude clear residential facility names pending independent historic proof.
 RESIDENTIAL_FALSE_POSITIVE = re.compile(
-    r"\\b(?:apartments?|apartment homes?|condominiums?|condos?|townhomes?|"
+    r"\b(?:apartments?|apartment homes?|condominiums?|condos?|townhomes?|"
     r"townhouses?|leasing office|property management|self[- ]?storage|"
-    r"senior living|assisted living|residential rentals?)\\b", re.I
+    r"senior living|assisted living|residential rentals?)\b", re.I
 )
 CATEGORIES=set("""museum art_museum history_museum science_museum natural_history_museum
 children_museum art_gallery tourist_attraction visitor_center welcome_center national_park
