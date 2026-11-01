@@ -45,13 +45,14 @@ export function approvedMetroSnapshots(manifest){
   if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(key)||!cfg||typeof cfg!=='object')throw Error('invalid_metro_key');
   if(cfg.approved_snapshot==null)continue;
   // Denver's completed 7,222-row import is immutable here; never retry it.
-  if(key==='denver-co')continue;
+  if(key==='denver-co'||(String(cfg.city||'').trim().toLowerCase()==='denver'&&String(cfg.state||'').toUpperCase()==='CO'))continue;
   if(cfg.approved_snapshot!=='data/restaurants/'+key+'.json'||
      !/^[A-Za-z .'-]{2,80}$/.test(cfg.city||'')||
      !/^[A-Z]{2}$/.test(cfg.state||'')||
      !Array.isArray(cfg.bbox)||cfg.bbox.length!==4||
      !cfg.bbox.every(Number.isFinite)||
      !(cfg.bbox[0]<cfg.bbox[2]&&cfg.bbox[1]<cfg.bbox[3])||
+     cfg.bbox[0]<-180||cfg.bbox[2]>180||cfg.bbox[1]<-90||cfg.bbox[3]>90||
      !Number.isSafeInteger(cfg.min_records)||cfg.min_records<1||cfg.min_records>20000)
    throw Error('invalid_approved_metro');
   approved.push({key,city:cfg.city,state:cfg.state,bbox:cfg.bbox,
@@ -68,7 +69,7 @@ export function validateMetroSnapshot(payload,cfg){
     payload.items.length<cfg.minimum||payload.items.length>20000)throw Error('invalid_metro_snapshot');
  const ids=new Set();
  for(const row of payload.items){
-  if(!row||!/^overture:[a-zA-Z0-9-]{10,100}$/.test(row.id||'')||
+  if(!row||typeof row.id!=='string'||!/^overture:[a-zA-Z0-9-]{10,100}$/.test(row.id)||
      ids.has(row.id)||!row.name||row.name.length>160||
      row.city!==cfg.city||row.state!==cfg.state||
      !/^[a-z_]{1,60}$/.test(row.category||'')||
@@ -101,8 +102,14 @@ export async function importApprovedMetro(env,cfg,payload){
   ).bind(x.id,safeText(x.name,160),cfg.city,cfg.state,safeText(x.category,60),
    safeText(x.address,240),x.latitude,x.longitude,validWebsite(x.website),
    'https://overturemaps.org/','Overture Maps',x.confidence,'',safeText(payload.generated_at,40)));
-  await env.RESTAURANTS.batch(batch);
-  records+=batch.length;
+  const results=await env.RESTAURANTS.batch(batch);
+  // Count confirmed D1 mutations, not attempted statements: protected ID conflicts
+  // must never create a false full-count ingestion receipt.
+  if(!Array.isArray(results)||results.length!==batch.length)throw Error('metro_write_unverified');
+  const changes=results.reduce((sum,result)=>sum+(Number.isSafeInteger(result?.meta?.changes)?result.meta.changes:0),0);
+  if(results.some(result=>result?.success!==true||!Number.isSafeInteger(result?.meta?.changes))||changes!==batch.length)
+   throw Error('metro_write_conflict');
+  records+=changes;
  }
  await env.RESTAURANTS.prepare(
   'INSERT INTO restaurant_ingest_runs(run_id,city,state,source_name,dataset_version,records) VALUES(?,?,?,?,?,?)'
