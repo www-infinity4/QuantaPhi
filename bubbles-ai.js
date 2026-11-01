@@ -2202,7 +2202,7 @@ function describeBubblesToolOutcome(json,answer){
   partial:'The tool result is partial; further verification is needed.'
  };
  const note=explanations[state]||(incomplete?'The tool returned data, but the requested explanation or outcome remains incomplete.':'');
- return note?(text?text+'\\n\\n'+note:note):text;
+ return note?(text?text+'\n\n'+note:note):text;
 }
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
