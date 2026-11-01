@@ -489,6 +489,34 @@ for(const button of host.querySelectorAll('[data-oracle-family]')){
   show(chosen);host.scrollIntoView?.({block:'start',behavior:'smooth'});
  });
 }
+// A deliberate short downward gesture from the restored Android header should
+// settle on the deck, even when Chromium's proximity snap threshold is too
+// small for the gap above the carousel. Do not intercept, preventDefault, or
+// modify scrolling when the user is already browsing below the top.
+let topGestureTimer=0;
+function settleTopGesture(deltaY,startedAtTop){
+ if(!startedAtTop||deltaY<85||expanded||
+    !window.matchMedia?.('(max-width: 650px) and (pointer: coarse)')?.matches)return;
+ const distance=host.getBoundingClientRect().top;
+ if(distance<100||distance>1200)return;
+ clearTimeout(topGestureTimer);
+ topGestureTimer=setTimeout(()=>{
+  if(expanded||window.scrollY<20||window.scrollY>1200)return;
+  const top=host.getBoundingClientRect().top;
+  if(top>45&&top<700)host.scrollIntoView?.({block:'start',behavior:'smooth'});
+ },160);
+}
+window.addEventListener('wheel',e=>settleTopGesture(e.deltaY,window.scrollY<35),{passive:true});
+let touchStartY=0,touchStartedAtTop=false;
+window.addEventListener('touchstart',e=>{
+ touchStartedAtTop=window.scrollY<35;
+ touchStartY=e.touches?.[0]?.clientY??0;
+},{passive:true});
+window.addEventListener('touchend',e=>{
+ const endY=e.changedTouches?.[0]?.clientY??touchStartY;
+ settleTopGesture(touchStartY-endY,touchStartedAtTop);
+ touchStartedAtTop=false;
+},{passive:true});
 // Move the viewport only after a user changes cards, not when the deck
 // rotates automatically. Scroll to the deck (with arrows visible), not into
 // a tall card that could hide navigation above the phone viewport.
