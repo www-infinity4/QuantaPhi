@@ -78,7 +78,7 @@ test('public page and entrypoint both load publisher from verified wallet and no
 });
 
 test('existing public ShopPhi listing is edited in place only after explicit confirmation and public readback',async()=>{
- const s=setup();s.item.publishState='public';s.item.confirmPublishedEdit=true;
+ const s=setup();s.item.publishState='public-edit-pending';s.item.confirmPublishedEdit=true;
  const done=await s.publish();
  assert.equal(done,true);
  assert.equal(s.item.publishState,'public');
@@ -90,7 +90,7 @@ test('existing public ShopPhi listing is edited in place only after explicit con
  assert.match(s.status.textContent,/updated and verified/);
 });
 test('public listing edits cannot be sent without explicit owner approval',async()=>{
- const s=setup();s.item.publishState='public';s.item.confirmPublishedEdit=false;
+ const s=setup();s.item.publishState='public-edit-pending';s.item.confirmPublishedEdit=false;
  await assert.rejects(s.publish(),/confirm/i);
  assert.equal(s.calls.length,0);
 });
