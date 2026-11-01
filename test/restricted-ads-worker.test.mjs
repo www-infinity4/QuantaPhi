@@ -56,3 +56,38 @@ test('Worker denies self-attested and expired claims even with explicit opt-in',
  const r=await worker.fetch(request('GET','/v1/restricted-ads/creatives?category=cannabis'),env);
  assert.equal(r.status,403);
 });
+
+test('consent persists, but creative stays blocked until jurisdiction approved; opt-out revokes',async()=>{
+ const store=new Map();
+ let jurisdiction=null;
+ const db={prepare(sql){return {bind(...values){return {
+  async run(){if(sql.startsWith('INSERT INTO restricted_ad_consent')){store.set(values[0],values[2]);return {success:true}}throw Error('Unexpected write')},
+  async first(){
+   if(sql.includes('FROM restricted_ad_consent'))return {enabled:store.get(values[0])??0};
+   if(sql.includes('FROM restricted_ad_jurisdictions'))return jurisdiction;
+   throw Error('Unexpected read '+sql);
+  },
+  async all(){if(sql.includes('FROM restricted_ad_creatives'))return {results:[{...creative,
+   reviewed_at:new Date(Date.now()-DAY).toISOString()}]};throw Error('Unexpected listing')}
+ }}}}};
+ const valid={...verdict,expires_at:new Date(Date.now()+DAY).toISOString()};
+ const env={ADS_DB:db,CONSENT_SALT:'a-long-unique-test-secret',
+  ELIGIBILITY:{fetch:async()=>Response.json(valid)}};
+ const denied=await worker.fetch(request('GET','/v1/restricted-ads/creatives?category=cannabis'),env);
+ assert.equal(denied.status,403);
+ const opt=await worker.fetch(request('POST','/v1/restricted-ads/consent'),env);
+ assert.equal(opt.status,200);assert.equal((await opt.json()).consent_recorded,true);
+ const before=await worker.fetch(request('GET','/v1/restricted-ads/creatives?category=cannabis'),env);
+ assert.equal(before.status,403);
+ jurisdiction={enabled:1,reviewed_at:new Date().toISOString(),reviewer:'authorized counsel',
+  audience_evidence:'100 percent identity verified delivery',legal_evidence:'approved local legal review'};
+ const show=await worker.fetch(request('GET','/v1/restricted-ads/creatives?category=cannabis'),env);
+ assert.equal(show.status,200);const data=await show.json();
+ assert.equal(data.creatives.length,1);assert.equal(data.decision.verified_over_21,true);
+ const off=new Request('https://quantaphi.org/v1/restricted-ads/consent',{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json',Cookie:'session=private'},
+  body:JSON.stringify({category:'cannabis',opt_in:false})});
+ const disabled=await worker.fetch(off,env);assert.equal(disabled.status,200);
+ const again=await worker.fetch(request('GET','/v1/restricted-ads/creatives?category=cannabis'),env);
+ assert.equal(again.status,403);
+});
