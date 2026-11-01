@@ -87,3 +87,18 @@ test('actual delayed receipt preserves observations and saves reply to its origi
  assert.equal(ctx.saved.key,'thread:original-thread');assert.equal(ctx.saved.items[0].sessionId,'original-thread');
  assert.equal(ctx.messages.length,0);
 });
+
+test('an in-flight GitHub request never disappears silently when the receipt remains pending',async()=>{
+ const {ctx}=harness();let reads=0;
+ let resolveShown;const shown=new Promise(resolve=>resolveShown=resolve);
+ Object.assign(ctx,{activeThread:'owner-session',keepChat:true,pendingGithubReceipts:new Set(),setTimeout:fn=>fn(),
+  githubReceipt:async()=>{reads++;return {status:'working'};},messages:[],
+  display:text=>resolveShown(text),persistChat(){},save(){},readThread:()=>[],syncCloudFolder:async()=>{}});
+ const watcher=ui.slice(ui.indexOf('function watchDirectGithubReceipt('),ui.indexOf('\nasync function directGithubOperation(',ui.indexOf('function watchDirectGithubReceipt(')));
+ vm.runInContext(watcher,ctx);
+ ctx.watchDirectGithubReceipt('fixture-unconfirmed-receipt',{action:'assist',mode:'write',repository:'www-infinity4/QuantaPhi'},'Fix Bubbles');
+ const answer=await Promise.race([shown,new Promise((_,reject)=>setTimeout(()=>reject(Error('silent_github_receipt_timeout')),1500))]);
+ assert.equal(reads,120);
+ assert.match(answer,/no final receipt|could not verify|unconfirmed/i);
+ assert.doesNotMatch(answer,/finished|deployed successfully/i);
+});
