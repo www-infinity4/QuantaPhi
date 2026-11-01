@@ -1,6 +1,21 @@
 /* Read-only public attractions directory. Isolated from restaurant/wallet databases. */
 const STATES=new Set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split(' '));
 const HEADERS={'Cache-Control':'public,max-age=90','Access-Control-Allow-Origin':'*','X-Content-Type-Options':'nosniff'};
+// Defense in depth: independently enforce the same four downloader tile bounds
+// as scripts/attractions-batch-validate.py before any scheduled D1 write.
+// Cron fetches shards in NW, NE, SW, SE order.
+const CO_TILES=Object.freeze({
+ nw:[-109.060,39.000,-105.550,41.010],
+ ne:[-105.550,39.000,-102.040,41.010],
+ sw:[-109.060,36.990,-105.550,39.000],
+ se:[-105.550,36.990,-102.040,39.000]
+});
+const insideShard=(row,shard)=>{
+ const box=CO_TILES[shard],lat=row?.latitude,lon=row?.longitude;
+ return !!box&&typeof lat==='number'&&typeof lon==='number'&&
+  Number.isFinite(lat)&&Number.isFinite(lon)&&
+  lon>=box[0]&&lon<=box[2]&&lat>=box[1]&&lat<=box[3];
+};
 const answer=(data,status=200)=>Response.json(data,{status,headers:HEADERS});
 const text=(v,n=120)=>String(v??'').trim().slice(0,n);
 export const validState=v=>STATES.has(String(v||'').toUpperCase());
@@ -9,7 +24,7 @@ export const safeSite=v=>{try{const u=new URL(v);return u.protocol==='https:'&&!
 export function cleanRecord(o,state,seen){
  if(!o||!validState(state)||String(o.state||'').toUpperCase()!==state)return null;
  const id=text(o.id,110),name=text(o.name,160),category=text(o.category,70);
- const latitude=Number(o.latitude),longitude=Number(o.longitude),source_url=safeSite(o.source_url);
+ const latitude=o.latitude,longitude=o.longitude,source_url=safeSite(o.source_url);
  if(!/^(curated|overture):[a-zA-Z0-9-]{8,100}$/.test(id)||!name||!category||!source_url||!o.source_name||!o.license||!Number.isFinite(latitude)||!Number.isFinite(longitude)||Math.abs(latitude)>90||Math.abs(longitude)>180)return null;
  const photo=safeSite(o.image_url),credit=text(o.image_attribution,200);
  return {id,name,city:text(o.city,100),state,category,address:text(o.address,240),latitude,longitude,
@@ -72,7 +87,8 @@ export async function importSnapshot(env,payload){
 export function validateColoradoShardBatch(payloads){
  if(!Array.isArray(payloads)||payloads.length!==4)throw Error('incomplete_colorado_shards');
  const ids=new Set(),closed=new Set();let release=null,total=0;
- for(const p of payloads){
+ for(const [index,p] of payloads.entries()){
+  const shard=['nw','ne','sw','se'][index];
   if(p?.schema_version!==1||p.state!=='CO'||p.source_name!=='Overture Maps'||
      p.license!=='CDLA-Permissive-2.0'||p.truncated!==false||
      !/^20\d{2}-\d{2}-\d{2}\.\d+$/.test(p.dataset_version||'')||
@@ -86,7 +102,7 @@ export function validateColoradoShardBatch(payloads){
    if(!row||typeof row.id!=='string'||!/^overture:[a-zA-Z0-9-]{10,100}$/.test(row.id)||ids.has(row.id)||
       row.state!=='CO'||row.source_name!=='Overture Maps'||
       row.source_url!=='https://overturemaps.org/'||row.license!=='CDLA-Permissive-2.0'||
-      row.image_url!==''||typeof row.confidence!=='number'||
+      row.image_url!==''||!insideShard(row,shard)||typeof row.confidence!=='number'||
       !Number.isFinite(row.confidence)||row.confidence<0.7||row.confidence>1||
       !cleanRecord(row,'CO',p.generated_at))throw Error('invalid_colorado_record');
    ids.add(row.id);total++;
