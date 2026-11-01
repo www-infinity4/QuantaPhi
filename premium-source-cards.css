@@ -33,3 +33,15 @@ body.oracle-shelf-open #premiumSourceCards[hidden],body.oracle-shelf-open #siteQ
 .premium-card>.premium-content:not(:empty){margin-top:12px}
 .premium-card.qcs-has-items>.qcs-panel{margin:0;border:0;border-radius:0;box-shadow:none}
 .premium-card.qcs-has-items>.premium-content:empty{display:none}
+
+/* Denver restaurant cards: content first, verified-source photography through existing spotlight feed. */
+.denver-dining-card .denver-dining-details{padding:2px 22px 10px;display:grid;gap:13px;color:#25343e}
+.denver-dining-card .denver-dining-place{font:650 13px/1.5 system-ui,sans-serif;color:#526674;margin:0}
+.denver-dining-card .denver-dining-description{font:500 17px/1.55 system-ui,sans-serif;color:#26343d;margin:0}
+.denver-dining-card .denver-dining-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:9px}
+.denver-dining-card .denver-dining-links a{min-height:46px;display:flex;align-items:center;justify-content:center;padding:10px 12px;border:1px solid #c8d1d8;border-radius:12px;background:#fff;color:#1e394d;font:750 13px/1.3 system-ui,sans-serif;text-decoration:none;text-align:center}
+.denver-dining-card .denver-dining-links a.denver-dining-main{background:#eff5f8;border-color:#9ab2c2}
+.denver-dining-card .denver-dining-links a:focus-visible{outline:3px solid #bb8435;outline-offset:2px}
+.denver-dining-card .denver-dining-note{margin:0;font:12px/1.5 system-ui,sans-serif;color:#63727b}
+.denver-dining-card .premium-footnote{padding-bottom:6px}
+@media(max-width:420px){.denver-dining-card .denver-dining-details{padding:2px 16px 8px}.denver-dining-card .denver-dining-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
