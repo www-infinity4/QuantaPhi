@@ -1,6 +1,11 @@
 name: Business directory city-by-city Overture import
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/business_directory_ingest.py'
+      - '.github/workflows/business-directory-import.yml'
   schedule:
     - cron: '27 */4 * * *'
 permissions:
