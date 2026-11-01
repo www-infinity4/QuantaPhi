@@ -22,7 +22,15 @@ for(const width of [320,393]){
   await form.locator('button[type="submit"]').click();
   await expect(page.locator('#cooperativePlan')).toContainText('$10000.00');
   await expect(page.locator('#cooperativePlan')).toContainText('up to 100 different merchants');
-  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+1);
-  expect(overflow).toBe(false);
+  const layout=await page.evaluate(()=>({
+   viewport:window.innerWidth,
+   documentWidth:document.documentElement.scrollWidth,
+   offenders:[...document.querySelectorAll('body *')].filter(el=>{
+    const r=el.getBoundingClientRect();
+    return r.width>0&&(r.right>window.innerWidth+1||r.left< -1);
+   }).slice(0,12).map(el=>({tag:el.tagName,id:el.id,className:String(el.className||'').slice(0,70),
+    left:Math.round(el.getBoundingClientRect().left),right:Math.round(el.getBoundingClientRect().right)}))
+  }));
+  expect(layout.documentWidth,JSON.stringify(layout)).toBeLessThanOrEqual(layout.viewport+1);
  });
 }
