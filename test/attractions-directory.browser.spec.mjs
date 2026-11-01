@@ -24,7 +24,7 @@ test('Attractions Quick Card opens the real API search field and source-backed C
 });
 test('Queued states cannot appear to contain invented attraction inventory',async({page})=>{
  await page.route(API+'/api/attractions/search**',route=>{
-  const u=new URL(route.request().url);
+  const u=new URL(route.request().url());
   route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},
    body:JSON.stringify({state:u.searchParams.get('state'),count:0,has_more:false,items:[]})});
  });
