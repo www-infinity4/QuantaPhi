@@ -52,3 +52,22 @@ test.describe('fine-pointer narrow desktop',()=>{
   expect(await page.evaluate(()=>window.scrollY)).toBeLessThan(20);
  });
 });
+
+test('Android returns to fully visible header after card navigation and can settle on carousel again',async({page})=>{
+ await ready(page);
+ const header=page.locator('main.app > .qtop');
+ const search=page.locator('main.app > .search');
+ await expect(header).toBeVisible();
+ await expect.poll(()=>header.evaluate(e=>getComputedStyle(e).scrollSnapAlign)).toBe('start');
+ await expect.poll(()=>search.evaluate(e=>getComputedStyle(e).scrollSnapAlign)).toBe('none');
+ await page.locator('#oracleCardNext').click();
+ const nav=page.locator('#oracleCardDeck .oracle-card-deck-nav');
+ await expect.poll(async()=>Math.abs(await nav.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:6000}).toBeLessThan(35);
+ await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
+ await expect.poll(()=>page.evaluate(()=>window.scrollY),{timeout:4000}).toBeLessThan(3);
+ await expect(header).toBeInViewport({ratio:0.95});
+ await expect(page.locator('#q')).toBeInViewport();
+ // The next nearby section anchor still lines up with the carousel navigation.
+ await nav.evaluate(e=>e.scrollIntoView({block:'start',behavior:'instant'}));
+ await expect.poll(async()=>Math.abs(await nav.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:4000}).toBeLessThan(35);
+});
