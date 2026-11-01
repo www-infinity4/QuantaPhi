@@ -44,7 +44,8 @@ def normalize(feature):
  if confidence<.70 or not (BBOX[0]<=lon<=BBOX[2] and BBOX[1]<=lat<=BBOX[3]):return None
  a=p.get('addresses') or []
  addr=a[0] if isinstance(a,list) and a and isinstance(a[0],dict) else {}
- if str(addr.get('region') or '').upper() not in ('','CO','COLORADO'):return None
+ # Missing address region cannot establish Colorado membership from a padded download box.
+ if str(addr.get('region') or '').upper() not in ('CO','COLORADO'):return None
  names=p.get('names') or {}
  name=names.get('primary','') if isinstance(names,dict) else ''
  if isinstance(name,dict):name=name.get('value','')
