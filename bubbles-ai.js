@@ -3360,6 +3360,17 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
     }
     return;
    }
+   // Every bounded watcher terminates with a visible terminal *observation*.
+   // This is a monitoring timeout, never a cancellation or a verified job end.
+   const report='GitHub has not returned a final receipt after repeated owner-authenticated checks. The request may still be running; no finished code, tests, merge or deployment can be verified. Check Work details before retrying a write.';
+   recordBrainNotice(report);
+   if(activeThread===receiptThread){
+    display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
+   }else if(keepChat){
+    const entry={id:crypto.randomUUID(),at:Date.now(),sessionId:receiptThread,role:'assistant',text:report};
+    save(THREAD_PREFIX+receiptThread,[...readThread(receiptThread),entry].slice(-160));
+    if(ownerReady)void syncCloudFolder(receiptThread,[entry]);
+   }
   }finally{pendingGithubReceipts.delete(requestId);}
  })();
 }
