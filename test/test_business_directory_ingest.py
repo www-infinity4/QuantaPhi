@@ -57,6 +57,27 @@ class BusinessIngestTests(unittest.TestCase):
             rows=list(ingest.parse_features(p))
             self.assertEqual(len(rows),2)
             self.assertEqual(rows[1]['properties']['id'],'another')
+    def test_same_name_address_is_deduplicated_within_one_chunk(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'two.geojsonseq'
+            path.write_text(json.dumps(feature(id='first-source-id'))+'\\n'+
+                            json.dumps(feature(id='second-source-id'))+'\\n',encoding='utf-8')
+            calls=[]
+            def fake_query(sql, params=None, batch=None):
+                calls.append({'sql':sql,'params':params,'batch':batch})
+                return [{'results':[]}]
+            original=ingest.api_query
+            try:
+                ingest.api_query=fake_query
+                accepted=ingest.ingest_file(path,{'job_id':'metro:CO:denver','city':'Denver',
+                                                   'state':'CO','cursor':''},max_items=10)
+            finally:
+                ingest.api_query=original
+            self.assertEqual(accepted,1)
+            batches=[x['batch'] for x in calls if x['batch'] is not None]
+            self.assertEqual(len(batches),1)
+            self.assertEqual(len(batches[0]),1)
+
     def test_api_checks_credentials_before_any_network(self):
         old_acc,old_token=ingest.ACCOUNT,ingest.TOKEN
         try:
