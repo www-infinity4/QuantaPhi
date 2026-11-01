@@ -34,20 +34,34 @@ async function search(url,env,feed=false){
 export async function importSnapshot(env,payload){
  const state=text(payload?.state,2).toUpperCase();
  if(payload?.schema_version!==1||!validState(state)||!Array.isArray(payload.items)||payload.items.length>5000||!payload.generated_at||!payload.source_name||!payload.dataset_version)throw Error('invalid_snapshot');
- const run_id=[state,text(payload.source_name,80),text(payload.dataset_version,90),text(payload.generated_at,45)].join('|');
+ const closedIds=Array.isArray(payload.closed_ids)?payload.closed_ids:[];
+ if(closedIds.length>5000||closedIds.some(id=>!/^overture:[a-zA-Z0-9-]{10,100}$/.test(id)))throw Error('invalid_closure_ids');
+ const run_id=[state,text(payload.source_name,80),text(payload.dataset_version,90),text(payload.generated_at,45)].join('|')+
+  (payload.shard?'|'+text(payload.shard,30):'');
  if(await env.ATTRACTIONS.prepare('SELECT run_id FROM attraction_ingest_runs WHERE run_id=?').bind(run_id).first())return {skipped:true,records:0};
  let records=0;
  for(let i=0;i<payload.items.length;i+=40){
   const batch=payload.items.slice(i,i+40).map(o=>cleanRecord(o,state,payload.generated_at)).filter(Boolean).map(o=>
-   env.ATTRACTIONS.prepare("INSERT INTO attractions(id,name,city,state,category,address,latitude,longitude,website,source_name,source_url,license,confidence,image_url,image_attribution,last_seen) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name,city=excluded.city,state=excluded.state,category=excluded.category,address=excluded.address,latitude=excluded.latitude,longitude=excluded.longitude,website=excluded.website,source_name=excluded.source_name,source_url=excluded.source_url,license=excluded.license,confidence=excluded.confidence,image_url=excluded.image_url,image_attribution=excluded.image_attribution,last_seen=excluded.last_seen,updated_at=CURRENT_TIMESTAMP")
+   env.ATTRACTIONS.prepare("INSERT INTO attractions(id,name,city,state,category,address,latitude,longitude,website,source_name,source_url,license,confidence,image_url,image_attribution,last_seen) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name,city=excluded.city,state=excluded.state,category=excluded.category,address=excluded.address,latitude=excluded.latitude,longitude=excluded.longitude,website=excluded.website,source_name=excluded.source_name,source_url=excluded.source_url,license=excluded.license,confidence=excluded.confidence,image_url=excluded.image_url,image_attribution=excluded.image_attribution,last_seen=excluded.last_seen,status='listed',updated_at=CURRENT_TIMESTAMP")
    .bind(o.id,o.name,o.city,o.state,o.category,o.address,o.latitude,o.longitude,o.website,o.source_name,o.source_url,o.license,o.confidence,o.image_url,o.image_attribution,o.last_seen));
   if(batch.length){await env.ATTRACTIONS.batch(batch);records+=batch.length}
+ }
+ // Closure changes require explicit source tombstones in a complete reviewed snapshot.
+ // Never close curated records, unrelated shards, or rows merely absent from a download.
+ let closureCandidates=0;
+ if(payload.source_name==='Overture Maps'&&!payload.truncated){
+  for(let i=0;i<closedIds.length;i+=40){
+   const batch=closedIds.slice(i,i+40).map(id=>env.ATTRACTIONS.prepare(
+    "UPDATE attractions SET status='closed',updated_at=CURRENT_TIMESTAMP WHERE id=? AND state=? AND source_name='Overture Maps' AND id LIKE 'overture:%'"
+   ).bind(id,state));
+   if(batch.length){await env.ATTRACTIONS.batch(batch);closureCandidates+=batch.length}
+  }
  }
  await env.ATTRACTIONS.batch([
   env.ATTRACTIONS.prepare('INSERT INTO attraction_ingest_runs(run_id,state,source_name,records) VALUES(?,?,?,?)').bind(run_id,state,text(payload.source_name,100),records),
   env.ATTRACTIONS.prepare("UPDATE attraction_states SET status='ingesting',last_snapshot=? WHERE state=?").bind(text(payload.generated_at,45),state)
  ]);
- return {skipped:false,records};
+ return {skipped:false,records,closureCandidates};
 }
 export default {
  async fetch(request,env){
