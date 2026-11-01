@@ -59,8 +59,14 @@ class IllinoisIDFPRTests(unittest.TestCase):
         sql = SQL.read_text(encoding="utf-8")
         for forbidden in ("primary_contact", "customer_rating", "age_verified", "ssn"):
             self.assertNotIn(forbidden, sql.lower())
+        db.execute("""INSERT INTO directory_jobs(job_id,state,status,phase)
+            VALUES ('il-chicago-next','IL','queued','source_discovery')""")
         for _ in range(2):
             db.executescript(sql)
+        self.assertEqual(
+            db.execute("SELECT status,records_added FROM directory_jobs WHERE job_id='il-chicago-next'").fetchone(),
+            ("queued", 0)
+        )
         rows = db.execute("""SELECT id,name,store,city,state,address,source_url,source_domain,
             record_status,paid_sponsor,license_status,official_source,license_verified,
             address_confirmed,rights_cleared,image_url,image_rights
@@ -80,7 +86,7 @@ class IllinoisIDFPRTests(unittest.TestCase):
             [(8, 8, 0)]
         )
         self.assertEqual(
-            db.execute("SELECT status,phase,records_added FROM directory_jobs").fetchone(),
+            db.execute("SELECT status,phase,records_added FROM directory_jobs WHERE job_id='first-review-il'").fetchone(),
             ("review", "license_and_site_review", 8)
         )
         self.assertEqual(db.execute("SELECT adult_use FROM state_policy WHERE state='IA'").fetchone()[0], "not_authorized")
@@ -94,6 +100,45 @@ class IllinoisIDFPRTests(unittest.TestCase):
                 self.assertEqual(db.execute("SELECT COUNT(*) FROM store_sources").fetchone()[0], 0)
                 self.assertEqual(db.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0], 0)
                 self.assertEqual(db.execute("SELECT status FROM directory_jobs").fetchone()[0], "queued")
+                db.close()
+
+
+    def test_preexisting_stores_cannot_create_receipt_after_approval_revocation(self):
+        sql = SQL.read_text(encoding="utf-8")
+        for removed in ("policy", "catalog"):
+            with self.subTest(removed=removed):
+                db = database()
+                db.executescript(sql)
+                db.execute("DELETE FROM import_receipts")
+                db.execute("""UPDATE directory_jobs SET status='queued',
+                    phase='source_discovery', records_added=0, updated_at='2099-01-01 00:00:00'
+                    WHERE job_id='first-review-il'""")
+                if removed == "policy":
+                    db.execute("DELETE FROM state_policy WHERE state='IL'")
+                else:
+                    db.execute("DELETE FROM regulator_source_catalog WHERE state='IL'")
+                db.executescript(sql)
+                self.assertEqual(db.execute("SELECT COUNT(*) FROM store_sources").fetchone()[0], 8)
+                self.assertEqual(db.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0], 0)
+                self.assertEqual(db.execute("SELECT status FROM directory_jobs WHERE job_id='first-review-il'").fetchone()[0], "queued")
+                db.close()
+
+    def test_old_receipt_cannot_advance_requeued_job(self):
+        sql = SQL.read_text(encoding="utf-8")
+        for removed in ("none", "policy", "catalog"):
+            with self.subTest(removed=removed):
+                db = database()
+                db.executescript(sql)
+                db.execute("""UPDATE directory_jobs SET status='queued',
+                    phase='source_discovery', records_added=0, updated_at='2099-01-01 00:00:00'
+                    WHERE job_id='first-review-il'""")
+                if removed == "policy":
+                    db.execute("DELETE FROM state_policy WHERE state='IL'")
+                elif removed == "catalog":
+                    db.execute("DELETE FROM regulator_source_catalog WHERE state='IL'")
+                db.executescript(sql)
+                self.assertEqual(db.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0], 1)
+                self.assertEqual(db.execute("SELECT status FROM directory_jobs WHERE job_id='first-review-il'").fetchone()[0], "queued")
                 db.close()
 
 if __name__ == "__main__":
