@@ -43,7 +43,8 @@ class TestAttractionImport(unittest.TestCase):
   for name in ('23rd Street East Apartments','1304 Apartments',
                '25 Broadmoor Apartments','Aspen Shadows Condominium',
                'Buffalo Ridge II Apartments','Vail Condo Association',
-               'Mountain View Townhomes','Main Street Leasing Office'):
+               'Mountain View Townhomes','Main Street Leasing Office',
+               'Residences at Market Station','A Pomeranz Realty'):
    with self.subTest(name=name):
     self.assertIsNone(imp.normalize(sample(kind='historic_site',name=name,confidence=.99)))
   # A genuine-looking historic site is not rejected solely for its category.
