@@ -26,7 +26,7 @@ export function safeListing(x){
 }
 export function normalizeSearch(url){
  const q=safeText(url.searchParams.get('q'),65).replace(/[\\%_]/g,' ').trim();
- const city=safeText(url.searchParams.get('city'),80),state=safeText(url.searchParams.get('state'),2).toUpperCase();
+ const city=safeText(url.searchParams.get('city'),80),state=safeText(url.searchParams.get('state'),20).toUpperCase();
  const category=safeText(url.searchParams.get('category'),60);
  const page=Math.min(200,Math.max(0,Number.parseInt(url.searchParams.get('page')||'0',10)||0));
  if(!state)return {error:'state_required'};
