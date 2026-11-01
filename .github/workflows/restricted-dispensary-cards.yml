@@ -1,0 +1,27 @@
+name: Twelve dispensary source card acceptance
+on:
+  pull_request:
+    paths:
+      - 'restricted-dispensary-directory.mjs'
+      - 'restricted-dispensary-cards.*'
+      - 'test/restricted-dispensary-directory.test.mjs'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - '.github/workflows/restricted-dispensary-cards.yml'
+jobs:
+  verify-sourced-cards:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check independent source card syntax
+        run: |
+          node --check restricted-dispensary-directory.mjs
+          node --check restricted-dispensary-cards.mjs
+          node --check oracle-card-deck.js
+      - name: Verify all real locations, 21+ consent, carousel registration and no invented offers
+        run: node --test test/restricted-dispensary-directory.test.mjs test/restricted-source-directory.test.mjs
