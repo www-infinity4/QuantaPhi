@@ -48,7 +48,7 @@
 .channelphi-kyou .channelphi-screen{display:block;aspect-ratio:16/9;min-height:0;border:1px solid #31546f;border-radius:15px;background:radial-gradient(circle at 50% 35%,#285a75 0%,#091925 76%);text-decoration:none}
 .channelphi-kyou .channelphi-art{inset:10% 16%;width:68%;height:80%;object-fit:contain;opacity:1}
 .channelphi-kyou .channelphi-screen-label{justify-content:flex-end;gap:8px;padding:12px;background:linear-gradient(0deg,#071923ed 0%,#07192322 62%,transparent 100%);text-shadow:none;color:#fff}
-.channelphi-kyou .channelphi-screen .channelphi-play-icon{display:grid;place-items:center;flex:none;width:54px;height:54px;margin:auto auto 2px;border:2px solid #f5faff;border-radius:50%;background:#f7fbff;color:#183c58;font-size:23px;box-shadow:0 3px 20px #0006}
+.channelphi-kyou .channelphi-screen .channelphi-play-icon{display:grid;place-items:center;flex:none;width:54px;height:54px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;border:2px solid #f5faff;border-radius:50%;background:#f7fbff;color:#183c58;font-size:23px;box-shadow:0 3px 20px #0006}
 .channelphi-kyou .channelphi-screen-label strong{font:700 13px/1.35 system-ui,sans-serif;color:#fff}
 .channelphi-kyou .channelphi-screen:focus-visible{outline:3px solid #2b88bd;outline-offset:3px}
 .channelphi-kyou .channelphi-screen:hover .channelphi-play-icon{background:#e7f3fb}
