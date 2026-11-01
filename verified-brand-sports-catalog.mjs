@@ -169,7 +169,63 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Official NFL game center','https://www.nfl.com/schedules/'],
   ['World Series game center','https://www.mlb.com/postseason'],
   ['FOX authorized viewing','https://www.fox.com/']
- ),icon('nfl.com'),{experimental:true})
+ ),icon('nfl.com'),{experimental:true}),
+ // Colorado Mountain Adventures — real visitor information and openly licensed images.
+ // The Arkansas River rafting photo is illustrative (Royal Gorge, NOT The Numbers).
+ entry('colorado-rocky-mountain','Rocky Mountain National Park · Emerald Lake','travel','Colorado · Alpine hikes',
+  'Explore the Bear Lake–Emerald Lake trail, subalpine forest, mountain lakes and wildlife. Choose a route based on current conditions; seasonal timed-entry permits apply during designated hours.',
+  'https://www.nps.gov/romo/index.htm',actions(
+   ['Official park & trails','https://www.nps.gov/romo/planyourvisit/index.htm'],
+   ['Timed-entry permits','https://www.nps.gov/romo/planyourvisit/timed-entry-permit-system.htm'],
+   ['Park alerts & conditions','https://www.nps.gov/romo/planyourvisit/conditions.htm']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Rocky_Mountain_N.P._1997_09.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Moderate day hike',season:'Best hiking: summer–early autumn',safety:'Bear Lake Road can require a separate Timed Entry+ reservation; snow, altitude and afternoon storms change trail conditions.',
+   photoCredit:{label:'Emerald Lake · LBM1948 · CC BY-SA 4.0',url:'https://commons.wikimedia.org/wiki/File:Rocky_Mountain_N.P._1997_09.jpg'}}),
+ entry('colorado-numbers-rafting','The Numbers · Buena Vista rafting','travel','Colorado · Whitewater',
+  'Advanced, continuous Arkansas River whitewater with a professional local outfitter. The photo depicts the Royal Gorge stretch of the same river, not The Numbers.',
+  'https://www.americanadventure.com/tour-category/the-numbers/',actions(
+   ['Choose The Numbers trip','https://www.americanadventure.com/tour-category/the-numbers/'],
+   ['Half-day trip details','https://www.americanadventure.com/tour/numbers-half-day-private-trip/'],
+   ['Full-day guided option','https://www.americanadventure.com/tour/the-numbers-deluxe-tour/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/White_Water_Rafting.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Advanced · Class IV water',season:'Typical rafting season: late spring–summer',safety:'Fast water is hazardous. Use an experienced guide, wear a properly fitted PFD/helmet and confirm age limits and river flows before booking.',
+   photoCredit:{label:'Arkansas River, Royal Gorge (illustrative) · Jimmyside · public domain',url:'https://commons.wikimedia.org/wiki/File:White_Water_Rafting.jpg'}}),
+ entry('colorado-breckenridge-trails','Breckenridge · Scenic trails','travel','Colorado · Easy hiking',
+  'Explore Blue River Rec Path and sections of Boreas Pass Road at your own pace. Some trails start in town; take local transit or drive to other trailheads.',
+  'https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/',actions(
+   ['Easy trails & maps','https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/'],
+   ['Hiking without a car','https://gobreck.com/guide/hiking/hiking-in-breckenridge-without-a-car/'],
+   ['Seasonal hiking guide','https://gobreck.com/summer/best-summer-hikes-in-breckenridge/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Boreas_Pass_Road.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Easy–moderate · choose your route',season:'Summer and autumn for dry trails',safety:'Boreas Pass Road allows vehicles in warmer months; winter snow and altitude can make routes harder. The gondola is not a shuttle to all trails.',
+   photoCredit:{label:'Boreas Pass Road · jaygannett · CC BY-SA 2.0',url:'https://commons.wikimedia.org/wiki/File:Boreas_Pass_Road.jpg'}}),
+ entry('colorado-glenwood-hot-springs','Glenwood Hot Springs · Mineral pools','travel','Colorado · Relaxation',
+  'Soak and swim at the historic mineral pool in Glenwood Springs. Check opening hours and current day-pass pricing at the resort; passes do not need advance reservations.',
+  'https://hotspringspool.com/',actions(
+   ['Pool tickets & rates','https://hotspringspool.com/hot_springs/rates/'],
+   ['Pools & facilities','https://hotspringspool.com/hot_springs/'],
+   ['Official resort website','https://hotspringspool.com/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Glenwood_Hot_Springs_Pool_2020.JPG?width=960',
+  {collection:'colorado-mountain-adventures',difficulty:'Low · swim and soak',season:'Year-round · check maintenance',safety:'Check posted pool temperatures, current hours and seasonal maintenance; keep hydrated and supervise children in the water.',
+   photoCredit:{label:'Glenwood Hot Springs Pool · Jeffrey Beall · CC BY 4.0',url:'https://commons.wikimedia.org/wiki/File:Glenwood_Hot_Springs_Pool_2020.JPG'}}),
+ entry('colorado-ouray-ice-park','Ouray Ice Park · Winter climbing','travel','Colorado · Technical ice',
+  'Climb naturally formed and farmed ice routes in the Uncompahgre Gorge, with instruction and specialist rental gear available locally. Park entry is free; guides and equipment are separate.',
+  'https://ourayicepark.com/',actions(
+   ['Ice Park conditions','https://ourayicepark.com/conditions'],
+   ['Park visitor FAQs','https://ourayicepark.com/faq'],
+   ['Official Ice Park','https://ourayicepark.com/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Ouray_Ice_Park.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Technical · trained climbers',season:'Weather-dependent: roughly Dec–Mar',safety:'Only climb during officially open conditions. A helmet, crampons, ice tools, rope systems and appropriate training are essential.',
+   photoCredit:{label:'Ouray Ice Park · Lvaughn7 · CC BY-SA 4.0',url:'https://commons.wikimedia.org/wiki/File:Ouray_Ice_Park.jpg'}}),
+ entry('colorado-ice-lakes-basin','Ice Lakes Basin · Silverton alpine hike','travel','Colorado · High alpine',
+  'A steep San Juan Mountains hike to vivid blue lakes above timberline near Silverton. Suitable for fit, acclimatized hikers with proper navigation and weather awareness.',
+  'https://www.fs.usda.gov/r02/sanjuan',actions(
+   ['National Forest planning','https://www.fs.usda.gov/r02/sanjuan'],
+   ['USFS Ice Lakes access guide','https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5417559.pdf'],
+   ['Regional weather alerts','https://www.weather.gov/gjt/']
+  ),'https://commons.wikimedia.org/wiki/Special:FilePath/Ice_Lake_Silverton.jpg',
+  {collection:'colorado-mountain-adventures',difficulty:'Strenuous · high altitude',season:'Typically July–September, snow-dependent',safety:'Steep exposed alpine terrain; begin early, turn back in lightning, pack layers/water, avoid shortcuts and confirm trail access.',
+   photoCredit:{label:'Ice Lake near Silverton · Dave Lyskawa · public domain',url:'https://commons.wikimedia.org/wiki/File:Ice_Lake_Silverton.jpg'}})
 ]);
 export const QUEUED_REQUESTS=Object.freeze([
  {name:'Crown Royal',reason:'Alcohol-related brand: age verification, audience controls and permitted informational artwork needed before publication'},
