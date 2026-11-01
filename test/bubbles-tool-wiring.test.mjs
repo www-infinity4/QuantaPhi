@@ -31,3 +31,23 @@ test('receipt explanation preserves actual answer and marks incomplete actions',
  assert.match(describe({receipt:{tool:'web.search',status:'complete'},answerStatus:'partial'},'Source results found'),/remains incomplete/);
  assert.equal(describe({output:'Model reply'},'Hello'),'Hello');
 });
+
+test('accepted voice is retained during owner context preflight and drained after lock release',async()=>{
+ const vm=await import('node:vm');
+ const start=source.indexOf('function drainVoiceTurns()');
+ const end=source.indexOf('let playbackVersion=',start);
+ assert.ok(start>=0&&end>start);
+ const context={busy:false,turnPending:true,voicePending:['first accepted voice'],Promise,seen:[]};
+ context.sendMessage=text=>context.seen.push(text);
+ vm.runInNewContext(source.slice(start,end)+';drainVoiceTurns();',context);
+ assert.equal(context.voicePending.length,1,'voice must not be shifted while preflight lock is held');
+ assert.deepEqual(context.seen,[]);
+ context.turnPending=false;
+ vm.runInNewContext('drainVoiceTurns()',context);
+ await Promise.resolve();await Promise.resolve();
+ assert.equal(context.voicePending.length,0);
+ assert.deepEqual(context.seen,['first accepted voice']);
+ const heard=source.slice(source.indexOf('function heardTranscript('),source.indexOf('async function startVoice()',source.indexOf('function heardTranscript(')));
+ assert.match(heard,/if\(turn\.type==='message'\)\{if\(busy\|\|turnPending\)enqueueVoiceTurn/);
+ assert.match(source,/finally\{turnPending=false;drainVoiceTurns\(\);\}/);
+});
