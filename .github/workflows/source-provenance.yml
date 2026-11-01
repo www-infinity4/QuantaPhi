@@ -1,0 +1,32 @@
+name: QuantaPhi source provenance directory
+on:
+  pull_request:
+    paths:
+      - 'quanta-sources.html'
+      - 'quanta-sources-data.mjs'
+      - 'quanta-sources-page.mjs'
+      - 'test/quanta-sources.test.mjs'
+      - '.github/workflows/source-provenance.yml'
+      - 'index.html'
+  push:
+    paths:
+      - 'quanta-sources.html'
+      - 'quanta-sources-data.mjs'
+      - 'quanta-sources-page.mjs'
+      - 'test/quanta-sources.test.mjs'
+      - '.github/workflows/source-provenance.yml'
+      - 'index.html'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  provenance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check syntax and truthful provenance
+        run: |
+          node --check quanta-sources-data.mjs
+          node --check quanta-sources-page.mjs
+          node --test test/quanta-sources.test.mjs
