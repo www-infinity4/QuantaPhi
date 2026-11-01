@@ -29,7 +29,7 @@ function envWith(rows=[record]){
         if(sql.includes('FROM store_sources'))return {results:rows};
         return {results:[]};
       },
-      async first(){return {ok:1}}};
+      async first(){return sql.includes('FROM state_policy WHERE state=') ? (b.args?.[0]==='IA'?{adult_use:'not_authorized',medical_program:1}:{adult_use:'unreviewed',medical_program:null}) : {ok:1}}};
     return b;
   }}};
   return {env,calls};
@@ -87,6 +87,19 @@ test('unverified visitor cannot see store details; acknowledgment never claims v
   assert.equal(data.items[0].price,null);
   assert.equal(ok.headers.get('Cache-Control'),'private, no-store, max-age=0');
   assert.equal(calls[0].args[0],'CO');
+});
+test('medical-only Iowa never becomes an adult-use listing',async()=>{
+  const ia={...record,id:'ia-medical-test',state:'IA',city:'Waterloo',
+    source_url:'https://hhs.iowa.gov/locations/iowa-cannabis-company',
+    source_domain:'hhs.iowa.gov',source_name:'Iowa HHS Medical Cannabis Dispensary'};
+  const {env}=envWith([ia]);
+  const r=await worker.fetch(get('/api/21-directory/stores?state=IA',{'X-Visitor-21-Acknowledged':'true'}),env);
+  assert.equal(r.status,200);
+  const data=await r.json();
+  assert.equal(data.medical_only,true);
+  assert.equal(data.access_type,'medical_only');
+  assert.equal(data.items[0].medical_only,true);
+  assert.match(data.disclosure,/NOT adult-use/);
 });
 test('invalid states/pages, mutation and missing D1 fail closed',async()=>{
   const {env}=envWith();
