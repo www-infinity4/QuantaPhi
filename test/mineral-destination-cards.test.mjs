@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {MINERAL_DESTINATIONS,validMineralDestination,officialMapsUrl} from '../mineral-destination-cards.mjs';
+import {MINERAL_DESTINATIONS,validMineralDestination,officialMapsUrl,imageAltForMineralDestination} from '../mineral-destination-cards.mjs';
 
 test('six individually registered mining and mineral Quick Cards use real official sites',()=>{
  const ids=['crater-of-diamonds','national-mining-hall-of-fame','gem-mountain-montana','western-mining-museum','last-chance-mine','mines-museum-earth-science'];
@@ -51,4 +51,10 @@ test('existing single-card carousel, shared tools and protected wallet remain in
  assert.match(home,/mineral-destination-cards\.mjs\?v=20261101-1/);
  assert.match(home,/mineral-destination-cards\.css\?v=20261101-1/);
  assert.doesNotMatch(code,/wallet|mint|quants\/collect|localStorage|sessionStorage|fetch\(/i);
+});
+
+test('illustrative mineral photos do not claim unverified mine provenance',()=>{
+ const chance=MINERAL_DESTINATIONS.find(x=>x.id==='last-chance-mine');
+ assert.equal(chance.image.file,'Quartz-258682.jpg');
+ assert.equal(imageAltForMineralDestination(chance),'Quartz specimen photograph; not verified as originating at Last Chance Mine');
 });
