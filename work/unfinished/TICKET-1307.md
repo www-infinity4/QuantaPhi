@@ -1,3 +1,32 @@
+---
+issue: 1307
+project: "Integra X guided tour and owner-authorized browser replies"
+source_requests:
+  - https://github.com/www-infinity4/QuantaPhi/issues/1307
+state: implementing
+dot: "🟡"
+progress_percent: 15
+progress_basis: "Source-linked public tour and tests written; PR CI/review, live UI and owner browser reply integration not yet accepted"
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: "ChatGPT (source-only; no coordinator lease)"
+lease_id: null
+lease_expires_at: null
+task_session_id: null
+fence: null
+repo: www-infinity4/QuantaPhi
+branch: feat/integra-x-tour-1307
+head_sha: null
+pr: https://github.com/www-infinity4/QuantaPhi/pull/1308
+tests:
+  - "Node and Android-width browser specs submitted for exact-head GitHub verification"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Owner-only browser profile deployment/authorization and X automation permissions not verified"
+next_action: "Verify exact-head CI and independent PR review, safely merge guided tour, then inspect live Android UI before owner-only browser readback"
+---
+
 # TICKET-1307 — Recovered Integra X tour / authorized browser replies
 
 Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1307
