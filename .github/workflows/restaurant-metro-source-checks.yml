@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'scripts/restaurant-directory-import.py'
+      - 'scripts/overture-release-guard.py'
+      - 'test/test_overture_release_guard.py'
       - 'data/restaurants/city-manifest.json'
       - '.github/workflows/restaurant-directory-import.yml'
       - 'restaurant-directory.mjs'
@@ -26,5 +28,7 @@ jobs:
           node-version: '22'
       - name: Verify Overture city manifest and importer boundaries
         run: python -m unittest discover -s test -p test_restaurant_directory_import.py -v
+      - name: Verify pinned Overture release provenance
+        run: python -m unittest discover -s test -p test_overture_release_guard.py -v
       - name: Verify data-backed Oracle restaurant card and safe pagination
         run: node --test test/restaurant-directory.test.mjs

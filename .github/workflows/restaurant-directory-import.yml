@@ -25,11 +25,13 @@ jobs:
         with:
           python-version: '3.12'
       - name: Verify importer regression tests before fetching data
-        run: python -m unittest discover -s test -p test_restaurant_directory_import.py -v
+        run: |
+          python -m unittest discover -s test -p test_restaurant_directory_import.py -v
+          python -m unittest discover -s test -p test_overture_release_guard.py -v
       - name: Resolve registered metro and pinned Overture release
         id: city
         env:
-          CITY_KEY: ${{ github.event.inputs.city_key || 'denver-co' }}
+          CITY_KEY: ${{ github.event.inputs.city_key || 'colorado-springs-co' }}
         run: |
           python - <<'PY'
           import importlib.util, os
@@ -46,10 +48,13 @@ jobs:
               out.write('release='+cfg['release']+'\n')
           PY
       - name: Install official Overture Maps download client
-        run: python -m pip install --disable-pip-version-check overturemaps
+        run: python -m pip install --disable-pip-version-check overturemaps==1.0.2
       - name: Download only registered metro place features
         run: |
-          overturemaps download --bbox="${{ steps.city.outputs.bbox }}" -f geojson --type=place -o /tmp/metro-overture.geojson
+          # Explicitly pin the download; guards also reject stale manifest latest.
+          python scripts/overture-release-guard.py --expected "${{ steps.city.outputs.release }}"
+          overturemaps download --stac --release="${{ steps.city.outputs.release }}" --bbox="${{ steps.city.outputs.bbox }}" -f geojson --type=place -o /tmp/metro-overture.geojson
+          python scripts/overture-release-guard.py --expected "${{ steps.city.outputs.release }}"
       - name: Deduplicate and retain high confidence source restaurants
         run: |
           python scripts/restaurant-directory-import.py \
@@ -64,16 +69,16 @@ jobs:
           print(f"Verified source record count: {len(d['items'])}")
           assert all(not x['sponsored'] and x['source_name']=='Overture Maps' for x in d['items'])
           PY
-      - name: Publish vetted source snapshot if changed
+      - name: Propose source snapshot branch for independent review
         run: |
           git add 'data/restaurants/${{ steps.city.outputs.key }}.json'
           if git diff --cached --quiet; then echo 'No snapshot changes'; exit 0; fi
-          git -c user.name='QuantaPhi Restaurant Directory' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: source-reviewed metro restaurant candidate from Overture'
+          git -c user.name='QuantaPhi Restaurant Directory' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: candidate metro restaurants from Overture'
           DATA_BRANCH="data/restaurant-directory-${{ steps.city.outputs.key }}-${GITHUB_RUN_ID}"
           git push origin "HEAD:refs/heads/${DATA_BRANCH}"
-          echo "Published reviewed-data candidate branch: ${DATA_BRANCH}"
+          echo "Published unreviewed source-data candidate branch: ${DATA_BRANCH}"
           GH_TOKEN="${{ github.token }}" gh pr create \
             --base main --head "${DATA_BRANCH}" \
-            --title "data: refresh vetted Denver restaurants from Overture" \
+            --title "data: review ${{ steps.city.outputs.key }} restaurants from Overture" \
             --body "Source: Overture Maps Places ${{ steps.city.outputs.release }} for ${{ steps.city.outputs.key }}. High-confidence restaurant taxonomy, registered bounding box and duplicate filters. Candidate data only: verify row count, source license and city coverage before merge. No automatic D1 ingestion or sponsorship." \
             || echo "A source-data branch exists; Continuity Builder must create/review PR manually."
