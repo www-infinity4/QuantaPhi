@@ -3,13 +3,16 @@ import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSou
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
 const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
+const isBrandIdentityImage=url=>/logo|favicon|brandmark|og[-_]?image|ogimage|opengraph|social[-_]?share|social[-_]?image/i.test(new URL(url).pathname);
 export function cardImageCandidates(card){
- return [...new Set([...(card.images||[]),card.image,card.logo].filter(value=>{
+ const images=[...new Set([...(card.images||[]),card.image,card.logo].filter(value=>{
   if(typeof value!=='string'||!value.trim())return false;
   try{const u=new URL(value,typeof location==='undefined'?'https://quantaphi.org':location.origin);
    return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&!/\.(gif|apng)(?:[?#]|$)/i.test(u.href);
   }catch{return false}
  }))];
+ // Actual source products and lifestyle photos should lead, not social OG art.
+ return [...images.filter(x=>!isBrandIdentityImage(x)),...images.filter(isBrandIdentityImage)];
 }
 export function mountAcceptedWebsiteActions(host,card,{reader=readCardWebsite}={}){
  const trusted=acceptedBrand(card?.id);if(!host||!trusted||trusted.official!==card.official)return null;
@@ -72,6 +75,7 @@ export function createAcceptedCard(card){
  heading.append(node('span','∞ Infinity accepted','iac-badge'),node('small',card.category,'iqc-kind'));
  const title=node('div',undefined,'iac-title');title.append(node('h2',card.name),node('p',card.feature,'iac-intro'));
  const media=node('div',undefined,'iac-media'),images=cardImageCandidates(card);let imageIndex=0;
+ if(images.length&&images.every(isBrandIdentityImage))media.classList.add('iac-logo-only');
  if(images.length){
   const img=node('img');img.alt=card.name+' — image from the original website';
   img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';

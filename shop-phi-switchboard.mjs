@@ -7,6 +7,15 @@ import {housingCompanions,housingResource} from './housing-help-catalog.mjs';
 import {createHousingHelpCard} from './housing-help-cards.mjs';
 
 export const SLOT_COUNT=6;
+// Companion pages can advance without fetching ads or changing the selected hero.
+export function nextCompanionPage(page,total){
+ const pages=Math.ceil(Math.max(0,Number(total)||0)/2);
+ const current=Number.isInteger(page)&&page>=0?page:0;
+ return pages>1?(current+1)%pages:0;
+}
+export function companionRotationAllowed({total=0,visible=false,pageHidden=false,focused=false,shelfOpen=false,paused=false,reducedMotion=false}={}){
+ return total>2&&visible&&!pageHidden&&!focused&&!shelfOpen&&!paused&&!reducedMotion;
+}
 const SENSITIVE=/\b(religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy)\b/i;
 const LANES=Object.freeze([
  {id:'coins',match:/\b(morgan|silver dollar|coin|numismatic|pcgs|ngc|gold eagle|bullion|mintmark|mercury dime)\b/i,
@@ -122,7 +131,7 @@ if(typeof document!=='undefined'){
   const before=document.createElement('aside');before.className='shopphi-flanks shopphi-flanks-left';before.setAttribute('aria-label','Related offers, positions one through three');
   const after=document.createElement('aside');after.className='shopphi-flanks shopphi-flanks-right';after.setAttribute('aria-label','Related offers, positions four through six');
   const heading=document.createElement('p');heading.className='shopphi-switchboard-heading';
-  heading.textContent='SHOPPHI × ADPHI · SIX CONNECTION SWITCHBOARD';
+  heading.textContent='Related source cards · ShopPhi';
   const receipt=document.createElement('p');receipt.className='shopphi-switchboard-receipt';receipt.setAttribute('role','status');
   stage.parentNode.insertBefore(heading,stage);
   stage.parentNode.insertBefore(grid,stage);
@@ -133,10 +142,14 @@ if(typeof document!=='undefined'){
   const prev=document.createElement('button');prev.type='button';prev.textContent='‹ Previous';
   const position=document.createElement('span');position.className='shopphi-flank-position';
   const next=document.createElement('button');next.type='button';next.textContent='Next ›';
-  navigation.append(prev,position,next);
+  const pause=document.createElement('button');pause.type='button';pause.textContent='Pause rotation';
+  pause.setAttribute('aria-label','Pause automatic companion card rotation');
+  navigation.append(prev,position,next,pause);
   grid.after(navigation);
   const exposure=Object.create(null),cache=new Map();
   let seq=0,rotation=0,active=null,visiblePage=0,visibleCards=[];
+  const reducedMotion=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches||false;
+  let rotationPaused=reducedMotion;
   function showPage(){
    const start=visiblePage*2,total=visibleCards.length;
    let index=0;
@@ -147,13 +160,34 @@ if(typeof document!=='undefined'){
    position.textContent=total?String(start+1)+'–'+Math.min(total,start+2)+' of '+total:'No offers';
    prev.disabled=visiblePage===0;next.disabled=start+2>=total;
    navigation.hidden=total<3;
+   pause.hidden=total<3;
+   pause.textContent=rotationPaused?'Resume rotation':'Pause rotation';
+   pause.setAttribute('aria-pressed',String(rotationPaused));
   }
   prev.addEventListener('click',()=>{visiblePage=Math.max(0,visiblePage-1);showPage()});
   next.addEventListener('click',()=>{visiblePage=Math.min(Math.floor((visibleCards.length-1)/2),visiblePage+1);showPage()});
+  pause.addEventListener('click',()=>{
+   rotationPaused=!rotationPaused;
+   showPage();
+  });
+  // Only advance pages while the hero is on screen and no controls are in use.
+  // No sponsor is charged and no coins are minted for an automatic change.
+  const rotateTimer=setInterval(()=>{
+   if(!active||grid.hidden)return;
+   const bounds=grid.getBoundingClientRect();
+   const visible=bounds.bottom>0&&bounds.top<window.innerHeight;
+   if(!companionRotationAllowed({total:visibleCards.length,visible,pageHidden:document.hidden,
+    focused:grid.contains(document.activeElement)||navigation.contains(document.activeElement),
+    shelfOpen:document.body.classList.contains('oracle-shelf-open'),
+    paused:rotationPaused,reducedMotion}))return;
+   visiblePage=nextCompanionPage(visiblePage,visibleCards.length);
+   showPage();
+  },18000);
+  window.addEventListener('pagehide',()=>clearInterval(rotateTimer),{once:true});
   const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
   function draw(list,lane){
    const housing=lane.id==='housing-help';grid.classList.toggle('housing-help-layout',housing);
-   heading.textContent=housing?'INFINITY® · SIX CONNECTIONS TO HOUSING HELP':'SHOPPHI × ADPHI · SIX CONNECTION SWITCHBOARD';
+   heading.textContent=housing?'Housing help · related resources':'Related source cards · ShopPhi';
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
    visiblePage=Math.min(visiblePage,Math.max(0,Math.ceil(visible.length/2)-1));
