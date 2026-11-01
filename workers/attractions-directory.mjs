@@ -73,12 +73,13 @@ export function validateColoradoShardBatch(payloads){
      p.license!=='CDLA-Permissive-2.0'||p.truncated!==false||
      !/^20\d{2}-\d{2}-\d{2}\.\d+$/.test(p.dataset_version||'')||
      !Array.isArray(p.items)||!Array.isArray(p.closed_ids)||
-     p.items.length>5000||p.closed_ids.length>5000||p.eligible_count!==p.items.length)
+     p.items.length>5000||p.closed_ids.length>5000||p.eligible_count!==p.items.length||
+     typeof p.generated_at!=='string'||!/^\d{4}-\d\d-\d\dT[\d:.]+Z$/.test(p.generated_at)||p.generated_at.length>45)
     throw Error('invalid_colorado_shard');
   if(release!==null&&release!==p.dataset_version)throw Error('mixed_colorado_release');
   release=p.dataset_version;
   for(const row of p.items){
-   if(!row||!/^overture:[a-zA-Z0-9-]{10,100}$/.test(row.id||'')||ids.has(row.id)||
+   if(!row||typeof row.id!=='string'||!/^overture:[a-zA-Z0-9-]{10,100}$/.test(row.id)||ids.has(row.id)||
       row.state!=='CO'||row.source_name!=='Overture Maps'||
       row.source_url!=='https://overturemaps.org/'||row.license!=='CDLA-Permissive-2.0'||
       row.image_url!==''||typeof row.confidence!=='number'||
@@ -127,10 +128,27 @@ export default {
     if(responses.some(r=>!r.ok))throw Error('colorado_shard_http_error');
     const payloads=await Promise.all(responses.map(r=>r.json()));
     validateColoradoShardBatch(payloads);
+    // Preflight the curated seed before any shard write: no partial ingestion if
+    // the final payload is missing or belongs to a different state.
+    const seedResponse=await fetch(base+'co-seed.json',{signal:AbortSignal.timeout(25000)});
+    if(!seedResponse.ok)throw Error('colorado_seed_http_'+seedResponse.status);
+    const seedPayload=await seedResponse.json();
+    if(seedPayload?.schema_version!==1||seedPayload.state!=='CO'||
+       seedPayload.source_name!=='QuantaPhi curated official visitor links'||
+       seedPayload.license!=='original_directory_entries'||
+       typeof seedPayload.generated_at!=='string'||!seedPayload.generated_at||
+       typeof seedPayload.dataset_version!=='string'||!seedPayload.dataset_version||
+       !Array.isArray(seedPayload.items)||seedPayload.items.length<1||
+       seedPayload.items.some(row=>!cleanRecord(row,'CO',seedPayload.generated_at)))
+      throw Error('invalid_colorado_seed');
     for(let i=0;i<4;i++)await importSnapshot(env,{...payloads[i],shard:shards[i]});
+    await importSnapshot(env,seedPayload);
+    return;
    }
    const seed=await fetch(base+'co-seed.json',{signal:AbortSignal.timeout(25000)});
    if(!seed.ok)throw Error('colorado_seed_http_'+seed.status);
-   await importSnapshot(env,await seed.json());
+   const seedPayload=await seed.json();
+   if(seedPayload?.state!=='CO')throw Error('invalid_colorado_seed');
+   await importSnapshot(env,seedPayload);
   })())}
 };
