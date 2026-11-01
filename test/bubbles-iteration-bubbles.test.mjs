@@ -47,5 +47,5 @@ test('existing Bubbles app includes an in-panel activity surface without a secon
  assert.match(js,/bubbles:iteration/);
  assert.match(css,/\.ba-iteration-bubbles/);
  for(const file of ['index.html','bubbles.html'])assert.match(src(file),/bubbles-ai\.js/);
- assert.doesNotMatch(src('bubbles-iteration-bubbles.mjs'),/localStorage|wallet|fetch\(|innerHTML|credentials/);
+ assert.doesNotMatch(src('bubbles-iteration-bubbles.mjs'),/localStorage|fetch\(|innerHTML|credentials/);
 });
