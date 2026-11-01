@@ -41,7 +41,7 @@ class BusinessIngestTests(unittest.TestCase):
             rows=list(ingest.parse_features(p))
             self.assertEqual(len(rows),2)
             self.assertEqual(rows[1]['properties']['id'],'another')
-    def test_api_checks_credentials_before_any network(self):
+    def test_api_checks_credentials_before_any_network(self):
         old_acc,old_token=ingest.ACCOUNT,ingest.TOKEN
         try:
             ingest.ACCOUNT = ''
