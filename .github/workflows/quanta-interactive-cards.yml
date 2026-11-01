@@ -100,6 +100,8 @@ on:
       - 'test/design-lab-bulk-allocator.test.mjs'
       - 'test/design-lab-power-chain.browser.spec.mjs'
       - 'test/design-lab-bulk-allocator.browser.spec.mjs'
+      - 'test/design-lab-cooperative.browser.spec.mjs'
+      - 'test/cooperative-power-chain.test.mjs'
       - '.github/workflows/quanta-interactive-cards.yml'
   workflow_dispatch:
 jobs:
@@ -153,7 +155,7 @@ jobs:
           node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
-        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-x-composer.test.mjs test/quanta-integra-x-tour.test.mjs test/integra-automation-router.test.mjs test/quick-card-single-search.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/design-lab-bulk-allocator.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/android-scroll-sections.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
+        run: node --test test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-x-composer.test.mjs test/quanta-integra-x-tour.test.mjs test/integra-automation-router.test.mjs test/quick-card-single-search.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/design-lab-bulk-allocator.test.mjs test/cooperative-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/android-scroll-sections.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
       - name: Check today's Infinity card freshness and real product media
         run: node --test test/infinity-cards-freshness.test.mjs
       - name: Check changing imagery, source prices, trends and sports data
@@ -181,4 +183,4 @@ jobs:
         run: |
           node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
-          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/android-scroll-sections.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs test/integra-x-tour.browser.spec.mjs test/integra-automation.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/design-lab-cooperative.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/android-scroll-sections.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs test/integra-x-tour.browser.spec.mjs test/integra-automation.browser.spec.mjs --reporter=line --workers=1
