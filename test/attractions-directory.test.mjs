@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import worker,{validState,cleanRecord,seedSources,importSnapshot,validateColoradoShardBatch} from '../workers/attractions-directory.mjs';
+import worker,{validState,cleanRecord,seedSources,importSnapshot,validateColoradoShardBatch,validateColoradoSeed} from '../workers/attractions-directory.mjs';
 const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root),'utf8');
 const seed=JSON.parse(read('data/attractions/co-seed.json'));
 test('50 US states queued, Colorado prioritized, isolated database schema',()=>{
@@ -131,4 +131,27 @@ test('Cron rejects a non-Colorado curated seed before any four-shard D1 write',a
   await assert.rejects(pending,/invalid_colorado_seed/);
   assert.equal(requested,5);
  }finally{globalThis.fetch=oldFetch}
+});
+
+test('curated Colorado seed rejects duplicate IDs and unlicensed/malformed records',()=>{
+ assert.equal(validateColoradoSeed(seed),seed);
+ assert.throws(()=>validateColoradoSeed({...seed,items:[...seed.items,seed.items[0]]}),/invalid_colorado_seed/);
+ assert.throws(()=>validateColoradoSeed({...seed,items:[{...seed.items[0],image_url:'https://example.com/unlicensed.jpg'}]}),/invalid_colorado_seed/);
+ assert.throws(()=>validateColoradoSeed({...seed,items:[{...seed.items[0],source_url:''}]}),/invalid_colorado_seed/);
+ assert.throws(()=>validateColoradoSeed({...seed,closed_ids:['overture:fake-closure-id']}),/invalid_colorado_seed/);
+});
+
+test('seed-only Cron validates source provenance before any D1 mutation',async()=>{
+ const previous=globalThis.fetch;let calls=0;
+ globalThis.fetch=async()=>{calls++;
+  if(calls<=4)return {status:404,ok:false};
+  return {status:200,ok:true,json:async()=>({...seed,items:[...seed.items,seed.items[0]]})};
+ };
+ try{
+  let pending;
+  await worker.scheduled({}, {ATTRACTIONS:{prepare(){throw Error('D1 must remain untouched')}}},
+   {waitUntil(p){pending=p}});
+  await assert.rejects(pending,/invalid_colorado_seed/);
+  assert.equal(calls,5);
+ }finally{globalThis.fetch=previous}
 });
