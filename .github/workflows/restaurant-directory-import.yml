@@ -48,12 +48,12 @@ jobs:
               out.write('release='+cfg['release']+'\n')
           PY
       - name: Install official Overture Maps download client
-        run: python -m pip install --disable-pip-version-check overturemaps
+        run: python -m pip install --disable-pip-version-check overturemaps==1.0.2
       - name: Download only registered metro place features
         run: |
           # The CLI reads STAC latest; fail closed rather than mislabel a newer release.
           python scripts/overture-release-guard.py --expected "${{ steps.city.outputs.release }}"
-          overturemaps download --bbox="${{ steps.city.outputs.bbox }}" -f geojson --type=place -o /tmp/metro-overture.geojson
+          overturemaps download --stac --bbox="${{ steps.city.outputs.bbox }}" -f geojson --type=place -o /tmp/metro-overture.geojson
           python scripts/overture-release-guard.py --expected "${{ steps.city.outputs.release }}"
       - name: Deduplicate and retain high confidence source restaurants
         run: |
@@ -73,10 +73,10 @@ jobs:
         run: |
           git add 'data/restaurants/${{ steps.city.outputs.key }}.json'
           if git diff --cached --quiet; then echo 'No snapshot changes'; exit 0; fi
-          git -c user.name='QuantaPhi Restaurant Directory' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: source-reviewed metro restaurant candidate from Overture'
+          git -c user.name='QuantaPhi Restaurant Directory' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: candidate metro restaurants from Overture'
           DATA_BRANCH="data/restaurant-directory-${{ steps.city.outputs.key }}-${GITHUB_RUN_ID}"
           git push origin "HEAD:refs/heads/${DATA_BRANCH}"
-          echo "Published reviewed-data candidate branch: ${DATA_BRANCH}"
+          echo "Published unreviewed source-data candidate branch: ${DATA_BRANCH}"
           GH_TOKEN="${{ github.token }}" gh pr create \
             --base main --head "${DATA_BRANCH}" \
             --title "data: review ${{ steps.city.outputs.key }} restaurants from Overture" \
