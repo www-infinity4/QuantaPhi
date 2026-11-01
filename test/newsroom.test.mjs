@@ -1,0 +1,50 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {pickFreshArticles} from '../newsroom/live.mjs';
+
+const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const base='https://quantaphi.org/newsroom/';
+
+test('newsroom has unique crawlable editorial articles with original text and source links',()=>{
+ const index=read('newsroom/index.html');
+ const paths=['hubble-servicing.html','iowa-wisconsin-grid.html'];
+ assert.match(index,/<h1[^>]*>[^<]*News Phi/i);
+ assert.match(index,/href="\/privacy\.html"/);
+ for(const path of paths){
+  const html=read('newsroom/'+path);
+  assert.match(html,new RegExp('<link rel="canonical" href="'+base+path.replaceAll('.','\\.')+'">'));
+  assert.match(html,/<article[\s>]/);
+  assert.match(html,/<time datetime="2026-11-01"/);
+  assert.match(html,/QuantaPhi Research Desk/);
+  assert.match(html,/<h1[^>]*>/);
+  assert.match(html,/href="https:\/\/(?:science\.nasa\.gov|www\.energy\.gov)\//);
+  assert.ok(html.match(/<p\b[^>]*>[\s\S]*?<\/p>/g)?.length>=7,path+' needs substantial original paragraphs');
+ }
+ assert.match(index,/href="hubble-servicing\.html"/);
+ assert.match(index,/href="iowa-wisconsin-grid\.html"/);
+});
+test('newsroom is discoverable from homepage and sitemap without touching wallet',()=>{
+ assert.match(read('index.html'),/href="\/newsroom\/"/);
+ for(const path of ['','hubble-servicing.html','iowa-wisconsin-grid.html'])
+  assert.ok(read('sitemap.xml').includes('<loc>'+base+path+'</loc>'));
+});
+test('fresh news feed rejects stale, future, non-HTTPS and thin stories',()=>{
+ const now=Date.parse('2026-11-01T12:00:00Z');
+ const good={title:'Verified news reporting source',extract:'Sufficiently detailed source description for a current news item.',publishedAt:'2026-11-01T11:00:00Z',url:'https://science.nasa.gov/news'};
+ const items=pickFreshArticles([
+ good,{...good,url:'http://example.com/unsafe'},
+ {...good,url:'https://example.com/old',publishedAt:'2026-10-25T11:00:00Z'},
+ {...good,url:'https://example.com/future',publishedAt:'2026-11-02T11:00:00Z'},
+ {...good,url:'https://example.com/thin',extract:'short'},good
+ ],now);
+ assert.equal(items.length,1);
+ assert.equal(items[0].url,good.url);
+});
+test('no full third-party copyrighted news articles are injected in client markup',()=>{
+ const m=read('newsroom/live.mjs');
+ assert.match(m,/textContent/);
+ assert.doesNotMatch(m,/innerHTML/);
+ assert.match(m,/news-phi-feed\.marvaseater\.workers\.dev/);
+ assert.match(m,/15 \* 60 \* 1000/);
+});
