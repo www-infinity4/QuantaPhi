@@ -56,11 +56,13 @@ if(root){
  });
  next.addEventListener('click',rotate);
  pause.addEventListener('click',()=>{paused=!paused;pause.textContent=paused?'Resume rotation':'Pause rotation';pause.setAttribute('aria-pressed',String(paused))});
- close.addEventListener('click',stop);
+ close.addEventListener('click',()=>{stop();gate.focus()});
  const timer=setInterval(()=>{
   if(!root.isConnected){clearInterval(timer);return}
   if(!acknowledged||paused||reduce||viewer.hidden||document.hidden)return;
-  if(root.getClientRects().length===0||viewer.contains(document.activeElement))return;
+  const bounds=root.getBoundingClientRect();
+  const visible=bounds.width>0&&bounds.height>0&&bounds.bottom>0&&bounds.top<(window.innerHeight||document.documentElement.clientHeight)&&bounds.right>0&&bounds.left<(window.innerWidth||document.documentElement.clientWidth);
+  if(!visible||viewer.contains(document.activeElement))return;
   rotate();
  },12000);
 }
