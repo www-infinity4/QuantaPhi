@@ -17,6 +17,8 @@ for(const [code,name] of Object.entries(states)){
  const option=document.createElement('option');option.value=code;option.textContent=name;state.append(option);
 }
 state.value='CO';let cursor=0,searchId=0;
+const readFilters=()=>({q:query.value.trim(),city:city.value.trim(),state:state.value,category:category.value});
+let submittedFilters=readFilters();
 const el=(tag,className,text)=>{const n=document.createElement(tag);if(className)n.className=className;
  if(text!==undefined)n.textContent=text;return n};
 const sourceUrl=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password?u.href:''}catch{return ''}};
@@ -36,6 +38,8 @@ function makeCard(business){
  const src=el('p','sources','Source: '+(business.source_name||'Public source')+
   ' · '+(business.sponsored?'Verified partner':'Independent listing'));
  article.append(kind,title,address,actions,src);
+ if(business.attribution)article.append(el('p','sources',business.attribution));
+ if(business.source_license)article.append(el('p','sources','Source terms: '+business.source_license));
  if(business.source_url&&business.source_url!==business.website){
   const source=document.createElement('p');source.className='sources';addLink(source,'View source record',business.source_url);
   article.append(source);
@@ -43,10 +47,9 @@ function makeCard(business){
  return article;
 }
 async function run(append=false){
- const id=++searchId;if(!append){cursor=0;results.replaceChildren()}
+ const id=++searchId;if(!append){cursor=0;results.replaceChildren();submittedFilters=readFilters()}
  const u=new URL('/api/business-directory/records',location.origin);
- for(const [k,v] of Object.entries({q:query.value.trim(),city:city.value.trim(),state:state.value,
-  category:category.value,offset:String(cursor),limit:'24'})){if(v)u.searchParams.set(k,v)}
+ for(const [k,v] of Object.entries({...submittedFilters,offset:String(cursor),limit:'24'})){if(v)u.searchParams.set(k,v)}
  status.textContent='Searching Cloudflare business records…';more.disabled=true;
  try{
   const response=await fetch(u,{credentials:'omit'});if(!response.ok)throw Error('API unavailable');
