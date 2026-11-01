@@ -43,4 +43,35 @@ class RestaurantDirectoryTests(unittest.TestCase):
         self.assertEqual([p['name'] for p in result['items']],['A Restaurant','Z Cafe'])
         self.assertTrue(all(p['source_url'].startswith('https://overturemaps.org/') for p in result['items']))
 
+
+    def test_registered_colorado_springs_uses_distinct_city_bounds_and_source(self):
+        config=directory.city_config('colorado-springs-co')
+        self.assertEqual(config['city'],'Colorado Springs')
+        self.assertEqual(config['state'],'CO')
+        self.assertIsNone(directory.normalize(example(),city=config['city'],state=config['state'],bbox=config['bbox']))
+        spring=example(name='Test Springs Cafe')
+        spring['geometry']['coordinates']=[-104.821,38.834]
+        self.assertIsNone(directory.normalize(spring))
+        row=directory.normalize(spring,city=config['city'],state=config['state'],bbox=config['bbox'])
+        self.assertEqual((row['city'],row['state']),('Colorado Springs','CO'))
+        self.assertFalse(row['sponsored'])
+        self.assertEqual(row['image_url'],'')
+        payload=directory.build([spring],city=config['city'],state=config['state'],
+                                bbox=config['bbox'],clock='2026-11-01T00:00:00Z')
+        self.assertEqual((payload['city'],payload['state'],len(payload['items'])),
+                         ('Colorado Springs','CO',1))
+
+    def test_manifest_refuses_unknown_city_and_invalid_boundaries(self):
+        import json
+        import tempfile
+        with self.assertRaises(ValueError): directory.city_config('../../denver-co')
+        with self.assertRaises(ValueError): directory.city_config('unknown-city')
+        config={'schema_version':1,'source_name':'Overture Maps Places',
+                'cities':{'bad':{'city':'Colorado Springs','state':'CO',
+                                 'bbox':[-104.5,38.9,-105.1,38.5],'min_records':100}}}
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'manifest.json'
+            path.write_text(json.dumps(config))
+            with self.assertRaises(ValueError): directory.city_config('bad',path)
+
 if __name__=='__main__': unittest.main()
