@@ -63,7 +63,7 @@ test('directory pagination retries, captures filters and reopens safely during p
   document,URL,URLSearchParams,AbortSignal,encodeURIComponent,
   fetch:(url,opts)=>new Promise((resolve,reject)=>pending.push({url,opts,resolve,reject}))
  });
- const [,,,,gate,form,status,listing,nav,hide]=root.children;
+ const [,,,gate,form,status,listing,nav,hide]=root.children;
  const [enter]=gate.children,[state,city,query,submit]=form.children;
  const [prev,count,next]=nav.children;
  const flush=()=>new Promise(resolve=>setImmediate(resolve));
