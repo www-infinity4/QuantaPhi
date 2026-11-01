@@ -427,3 +427,24 @@ body.ba-viewer-active{overflow:hidden}
  .ba-tools-viewer-content{padding:12px 10px 26px}
  .ba-tools-viewer-content .ba-tool-rail a{font-size:13px}
 }
+
+/* Bubbles iteration: small, legible role orbs INSIDE the existing messenger.
+   The color ring is activity status, not a simulation of independent agents. */
+.ba-iteration-bubbles{margin:7px 10px 10px;padding:9px;background:#fff;border:1px solid #d7dcdf;border-radius:13px;color:#263640;min-width:0}
+.ba-iteration-heading{display:flex;align-items:baseline;justify-content:space-between;gap:6px;flex-wrap:wrap;font:600 12px/1.4 system-ui,sans-serif;margin-bottom:8px}
+.ba-iteration-heading strong{font-weight:750}.ba-iteration-heading small{font-size:10px;color:#566874}
+.ba-iteration-row{display:flex;gap:5px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding:2px 1px 6px}
+.ba-iteration-button{min-width:52px;flex:1 0 52px;display:flex;align-items:center;flex-direction:column;gap:3px;text-align:center;padding:4px 2px 5px;background:#fff;color:#3b4b53;border:1px solid transparent;border-radius:10px;cursor:pointer;font:600 10px/1.25 system-ui,sans-serif}
+.ba-iteration-button[aria-pressed="true"]{background:#f0f5f8;border-color:#b9cbd7}
+.ba-iteration-button:focus-visible{outline:3px solid #23739d;outline-offset:1px}
+.ba-iteration-orb{display:block;width:28px;height:28px;border-radius:50%;border:2px solid #cbd3da;background:radial-gradient(circle at 30% 25%,#fff 2%,#e6eff4 24%,#afbfca 60%,#718aa0 100%);box-shadow:inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="active"] .ba-iteration-orb{border-color:#176e9e;box-shadow:0 0 0 3px #b4ddef,inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="verified"] .ba-iteration-orb{border-color:#26835b;box-shadow:0 0 0 3px #b5dfc8,inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="queued"] .ba-iteration-orb{border-color:#9c782f;box-shadow:0 0 0 3px #efdfa9,inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="review"] .ba-iteration-orb{border-color:#a47745;box-shadow:0 0 0 3px #efd8bb,inset -3px -3px 5px #1b344133}
+.ba-iteration-button[data-status="blocked"] .ba-iteration-orb{border-color:#a54c49;box-shadow:0 0 0 3px #ebc3bf,inset -3px -3px 5px #1b344133}
+.ba-iteration-state{color:#52636d;font:500 9px/1.25 system-ui,sans-serif}
+.ba-iteration-detail{margin:3px 0 0;padding:6px 8px;border-top:1px solid #e4e9ec;font:11px/1.45 system-ui,sans-serif;color:#3c505d;overflow-wrap:anywhere}
+.ba-iteration-detail a{color:#165b80;text-decoration:underline}
+@media(max-width:440px){.ba-iteration-button{min-width:48px;flex-basis:48px}.ba-iteration-bubbles{margin-inline:6px;padding:7px}}
+@media(prefers-reduced-motion:reduce){.ba-iteration-orb{animation:none!important}}
