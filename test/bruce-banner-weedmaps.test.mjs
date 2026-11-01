@@ -56,3 +56,26 @@ test('Bruce Banner has a real home page Quick Card, Android-safe layout and Orac
  assert.match(client,/prefers-reduced-motion/);
  assert.match(style,/max-width:480px/);
 });
+
+test('privacy opt-out blocks Oracle view/open persistence and personalized ranking',async()=>{
+ const fs=await import('node:fs/promises');
+ const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+ const card=await fs.readFile(new URL('../bruce-banner-card.mjs',import.meta.url),'utf8');
+ assert.match(card,/root\.dataset\.personalization='disabled'/);
+ assert.match(deck,/const personalizationDisabled=entry=>/);
+ assert.match(deck,/if\(!personalizationDisabled\(entry\)\)void import\('\/bubbles-project-discovery/);
+ assert.match(deck,/if\(!personalizationDisabled\(entry\)\)\{\s*entry\.count=/);
+ assert.match(deck,/if\(personalizationDisabled\(active\)\)return;/);
+ assert.match(deck,/selectedTab!=='for-you'\|\|!personalizationDisabled\(e\)/);
+});
+test('Bruce Banner card remains in one Oracle stage and respects mobile, keyboard and viewport',async()=>{
+ const fs=await import('node:fs/promises');
+ const card=await fs.readFile(new URL('../bruce-banner-card.mjs',import.meta.url),'utf8');
+ const css=await fs.readFile(new URL('../bruce-banner-card.css',import.meta.url),'utf8');
+ assert.match(css,/oracle-card-deck-active:not\(\.oracle-shelf-open\) main\.app>#bruceBannerWeedmapsCard\{display:none!important\}/);
+ assert.match(css,/\.bb-action\{flex:0 0 auto;min-height:44px\}/);
+ assert.match(card,/close\.addEventListener\('click',\(\)=>\{stop\(\);gate\.focus\(\)\}\)/);
+ assert.match(card,/root\.getBoundingClientRect\(\)/);
+ assert.match(card,/bounds\.bottom>0&&bounds\.top</);
+ assert.doesNotMatch(card,/root\.getClientRects\(\)\.length===0/);
+});
