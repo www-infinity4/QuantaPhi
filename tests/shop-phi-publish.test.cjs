@@ -101,3 +101,16 @@ test('seller editor exposes editing existing public items and prevents duplicate
  assert.match(src,/read\(KEY\)\.filter\(x=>x\.itemId!==item\.itemId\)/);
  assert.match(source('quant-ai-personal.js'),/publish\|remove\|edit/);
 });
+
+test('published edit attaches only newly chosen photos and preserves previous seller photos',async()=>{
+ const s=setup({photo:true});
+ s.item.publishState='public-edit-pending';s.item.confirmPublishedEdit=true;
+ const old='a1234567-1234-4234-8234-123456789098';
+ s.item.photoIds=[old];s.item.uploadedMediaIds=[];
+ await s.publish();
+ assert.deepEqual(s.calls[0].upload,['shopmedia-phone-1']);
+ assert.equal(s.calls[1].path,'/listings/'+s.item.itemId+'/edit');
+ assert.equal(s.calls[1].body.photoIds[0],old);
+ assert.equal(s.calls[1].body.photoIds[1],'a1234567-1234-4234-8234-123456789099');
+ assert.deepEqual(s.item.uploadedMediaIds,['shopmedia-phone-1']);
+});
