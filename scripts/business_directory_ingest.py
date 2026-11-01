@@ -11,6 +11,7 @@ import sys
 import tempfile
 import unicodedata
 import urllib.parse
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -145,8 +146,17 @@ def api_query(sql, params=None, batch=None):
         "Authorization": "Bearer " + TOKEN, "Content-Type": "application/json",
         "User-Agent": "QuantaPhi-Directory-Continuity/1.0"
     }, method="POST")
-    with urllib.request.urlopen(request, timeout=35) as response:
-        out = json.load(response)
+    try:
+        with urllib.request.urlopen(request, timeout=35) as response:
+            out = json.load(response)
+    except urllib.error.HTTPError as exc:
+        if exc.code in (401, 403):
+            raise RuntimeError(
+                f"Cloudflare D1 HTTP {exc.code} permission denied: verify the existing "
+                "GitHub Actions token is scoped to this account and has D1 read/write "
+                "access to quantaphi-business-directory; no token value logged"
+            ) from None
+        raise RuntimeError(f"Cloudflare D1 HTTP {exc.code} request failed") from None
     if not out.get("success") or any(x.get("success") is False for x in out.get("result", [])):
         raise RuntimeError("Cloudflare D1 rejected a directory batch")
     return out.get("result", [])
