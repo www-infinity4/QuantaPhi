@@ -50,7 +50,9 @@ export default {
    const r=await fetch(url,{headers:{'User-Agent':'QuantaPhi-Restaurant-Directory/1.0'},signal:AbortSignal.timeout(25000)});
    if(!r.ok)throw new Error('Restaurant snapshot unavailable '+r.status);
    const payload=await r.json();
-   if(payload.schema_version!==1||payload.source_name!=='Overture Maps'||!Array.isArray(payload.items)||payload.items.length>6500)throw new Error('Invalid directory snapshot');
+   if(payload.schema_version!==1||payload.source_name!=='Overture Maps'||!Array.isArray(payload.items)||payload.items.length>20000)throw new Error('Invalid directory snapshot');
+   const prior=await env.RESTAURANTS.prepare('SELECT run_id FROM restaurant_ingest_runs WHERE run_id=?').bind(safeText(payload.generated_at,40)).first();
+   if(prior)return; // Immutable source snapshot already fully imported; avoid repeated D1 writes.
    let updated=0;
    for(let i=0;i<payload.items.length;i+=50){
     const statements=[];
