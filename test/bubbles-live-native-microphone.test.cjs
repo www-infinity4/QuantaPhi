@@ -33,7 +33,7 @@ test('actual web lifecycle stop closes every local media resource and requests p
   close(){this.closed=true}
   createDataChannel(){channel={handlers:{},readyState:'open',sent:[],addEventListener(k,v){this.handlers[k]=v},send(v){this.sent.push(JSON.parse(v))},close(){this.closed=true}};return channel;}
  }
- const context={document:{getElementById:id=>nodes.get(id),createElement:node,createTextNode:s=>s},window:{addEventListener(){}},navigator:{mediaDevices:{getUserMedia:async()=>stream}},RTCPeerConnection:Peer,AbortController,setTimeout:()=>1,clearTimeout(){},fetch:async()=>({ok:true,json:async()=>({transport:{sdp:'v=0\nanswer'}})})};
+ const context={document:{getElementById:id=>nodes.get(id),createElement:node,createTextNode:s=>s},window:{addEventListener(){}},navigator:{mediaDevices:{getUserMedia:async()=>stream}},RTCPeerConnection:Peer,AbortController,AbortSignal,URL,setTimeout:()=>1,clearTimeout(){},fetch:async(input)=>String(input).endsWith('/health')?({ok:true,json:async()=>({ok:true,configured:true})}):({ok:true,json:async()=>({transport:{sdp:'v=0\nanswer'}})})};
  vm.createContext(context);vm.runInContext(fs.readFileSync('bubbles-gpt-live.js','utf8'),context);
  await nodes.get('liveStart').handlers.click();
  channel.handlers.message({data:JSON.stringify({type:'session.started'})});
