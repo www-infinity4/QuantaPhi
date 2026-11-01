@@ -1,0 +1,106 @@
+diff --git a/bubbles-gpt-live.js b/bubbles-gpt-live.js
+index 97465a3..f62d72d 100644
+--- a/bubbles-gpt-live.js
++++ b/bubbles-gpt-live.js
+@@ -72,14 +72,25 @@ function iceReady(peer){
+  });
+ }
+ start.addEventListener("click",async()=>{
+- if(pc)return;
++ if(pc||requestController)return;
+  const credential=secret.value.trim();
+  if(credential.length<32){show("Owner authorization must be configured on the gateway.");return;}
+  const generation=++attempt;
+  requestController=new AbortController();
+  const signal=requestController.signal;
+- start.disabled=true;stop.disabled=false;cancel.disabled=false;show("Requesting microphone permission…");
++ start.disabled=true;stop.disabled=false;cancel.disabled=false;show("Checking live voice connection…");
+  try{
++   const health=await fetch(new URL('/health',gateway),{
++     signal:AbortSignal.any([signal,AbortSignal.timeout(10000)]),cache:'no-store'
++   });
++   if(generation!==attempt)return;
++   if(!health.ok)throw Error('Live voice gateway is unavailable. Microphone remains off.');
++   let availability;
++   try{availability=await health.json()}catch{throw Error('Live voice gateway returned an invalid readiness response. Microphone remains off.')}
++   if(generation!==attempt)return;
++   if(availability.ok!==true||availability.configured!==true)
++     throw Error('Live voice is not configured on the gateway. Microphone remains off.');
++   show("Requesting microphone permission…");
+    pc=new RTCPeerConnection();
+    const peer=pc;
+    peer.addEventListener("connectionstatechange",()=>{
+@@ -111,7 +122,7 @@ start.addEventListener("click",async()=>{
+    if(generation!==attempt)return;
+    show("Establishing genuine GPT-Live session…");
+    const response=await fetch(gateway,{
+-     signal,method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+credential},
++     signal:AbortSignal.any([signal,AbortSignal.timeout(25000)]),method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+credential},
+      body:JSON.stringify({sdp:pc.localDescription.sdp})
+    });
+    // Never store or log the secret, not even in localStorage.
+diff --git a/test/bubbles-gpt-live.test.cjs b/test/bubbles-gpt-live.test.cjs
+index c271002..52da4c6 100644
+--- a/test/bubbles-gpt-live.test.cjs
++++ b/test/bubbles-gpt-live.test.cjs
+@@ -67,3 +67,36 @@ test('UI never stores owner token or promises free ChatGPT Live audio',()=>{
+  assert.doesNotMatch(frontend.split('\n').filter(line=>!line.trim().startsWith('//')).join('\n'),/localStorage|sessionStorage/);
+  assert.match(frontend,/secret\.value=""/);
+ });
++test('readiness is browser-readable only for trusted origin and rejects short owner secrets',async()=>{
++ const app=await load();
++ const health=origin=>new Request('https://bubbles-live.example/health',{headers:{Origin:origin}});
++ const good=await app.fetch(health('https://quantaphi.org'),configured);
++ assert.equal(good.headers.get('Access-Control-Allow-Origin'),'https://quantaphi.org');
++ assert.equal((await good.json()).configured,true);
++ const bad=await app.fetch(health('https://quantaphi.org'),{...configured,BUBBLES_LIVE_OWNER_TOKEN:'short'});
++ assert.equal((await bad.json()).configured,false);
++ const foreign=await app.fetch(health('https://evil.example'),configured);
++ assert.equal(foreign.headers.get('Access-Control-Allow-Origin'),null);
++});
++test('unconfigured gateway never opens microphone and cancellation cannot revive startup',async()=>{
++ const vm=require('node:vm');
++ async function scenario(cancel, duringJson=false){
++  const nodes=new Map();
++  function node(id){if(!nodes.has(id))nodes.set(id,{value:id==='liveOwner'?'A'.repeat(40):'',handlers:{},addEventListener(k,fn){this.handlers[k]=fn},setAttribute(){},after(){}});return nodes.get(id)}
++  let captures=0,peers=0,resolveHealth;
++  const health=new Promise(resolve=>{resolveHealth=resolve});
++  const context={document:{getElementById:node,createElement:()=>node('mute')},window:{addEventListener(){}},
++   URL,AbortController,AbortSignal,setTimeout,clearTimeout,
++   fetch:()=>health,navigator:{mediaDevices:{getUserMedia(){captures++;throw Error('must not capture')}}},
++   RTCPeerConnection:class{constructor(){peers++}}};
++  vm.runInNewContext(frontend,context);
++  const pending=node('liveStart').handlers.click();
++  if(cancel&&!duringJson)node('liveStop').handlers.click();
++  resolveHealth({ok:true,json:async()=>{if(duringJson)node('liveStop').handlers.click();return {ok:true,configured:cancel}}});
++  await pending;
++  assert.equal(captures,0);assert.equal(peers,0);
++  assert.equal(node('liveStart').disabled,false);
++  if(!cancel)assert.match(node('liveStatus').textContent,/not configured/);
++ }
++ await scenario(false);await scenario(true);await scenario(true,true);
++});
+diff --git a/workers/bubbles-gpt-live/index.js b/workers/bubbles-gpt-live/index.js
+index 9841a95..d2b7689 100644
+--- a/workers/bubbles-gpt-live/index.js
++++ b/workers/bubbles-gpt-live/index.js
+@@ -37,7 +37,7 @@ export default {
+   async fetch(request,env) {
+     const url=new URL(request.url),origin=request.headers.get("Origin");
+     if(request.method==="GET" && url.pathname==="/health")
+-      return reply(200,{ok:true,configured:Boolean(env.OPENAI_API_KEY&&env.BUBBLES_LIVE_OWNER_TOKEN)},null);
++      return reply(200,{ok:true,configured:Boolean(env.OPENAI_API_KEY&&String(env.BUBBLES_LIVE_OWNER_TOKEN||'').length>=32)},origin);
+     if(url.pathname!==path)return reply(404,{error:"Not found"},origin);
+     if(origin!==ORIGIN)return reply(403,{error:"Origin denied"},origin);
+     if(request.method==="OPTIONS")return new Response(null,{
+diff --git a/workers/bubbles-gpt-live/wrangler.toml b/workers/bubbles-gpt-live/wrangler.toml
+new file mode 100644
+index 0000000..069ffab
+--- /dev/null
++++ b/workers/bubbles-gpt-live/wrangler.toml
+@@ -0,0 +1,5 @@
++name = "bubbles-live"
++main = "index.js"
++compatibility_date = "2026-10-17"
++# Configure OPENAI_API_KEY and BUBBLES_LIVE_OWNER_TOKEN as Worker secrets.
++# Do not place credentials here. Deployment does not verify a paid voice session.
