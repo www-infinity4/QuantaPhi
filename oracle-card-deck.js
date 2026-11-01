@@ -46,6 +46,7 @@ const choices=[
  ['businessDirectoryCard','National Business Directory · Explore'],
  ['shopAdPhi','Discover products'],
  ['infinityAdultContentCard','21+ content preferences'],
+ ['cannabisDirectoryCard','21+ · National dispensary source directory'],
  ['dispensary-livwell-colorado','21+ · LivWell · Colorado Boulevard'],
  ['dispensary-livwell-central','21+ · LivWell · Central Park'],
  ['dispensary-native-roots-speer','21+ · Native Roots · Speer Boulevard'],
