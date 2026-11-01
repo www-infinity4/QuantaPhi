@@ -19,12 +19,13 @@ async function search(url,env){
  FROM restaurants WHERE state=? AND lower(city)=lower(?)
  AND (name LIKE ? OR category LIKE ?)
  AND (?='' OR category=?)
- ORDER BY name COLLATE NOCASE,id LIMIT 24 OFFSET ?`;
+ ORDER BY name COLLATE NOCASE,id LIMIT 25 OFFSET ?`;
  const bound=[state,city,terms,terms,category,category,page*limit];
  const {results}=await env.RESTAURANTS.prepare(sql).bind(...bound).all();
- const items=(results||[]).map(x=>({...x,website:validWebsite(x.website),
+ const rows=results||[];
+ const items=rows.slice(0,limit).map(x=>({...x,website:validWebsite(x.website),
   image_url:validWebsite(x.image_url),sponsored:false}));
- return Response.json({city,state,query:q,page,page_size:limit,count:items.length,has_more:items.length===limit,items,
+ return Response.json({city,state,query:q,page,page_size:limit,count:items.length,has_more:rows.length>limit,items,
   note:'Organic directory listings from named sources. No paid placements, real-time opening hours, booking availability, prices or sponsored endorsements.'},{headers:HEADERS});
 }
 async function stats(env){
