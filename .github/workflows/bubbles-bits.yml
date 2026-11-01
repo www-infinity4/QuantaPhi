@@ -4,6 +4,8 @@ on:
     paths:
       - 'workers/infinity-brain-clock/bubbles-bits.mjs'
       - 'test/bubbles-bits.test.mjs'
+      - 'bubbles-bit-session.mjs'
+      - 'test/bubbles-bit-session.test.mjs'
       - '.github/workflows/bubbles-bits.yml'
   push:
     branches: [main]
@@ -18,4 +20,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --test test/bubbles-bits.test.mjs
+      - run: node --test test/bubbles-bits.test.mjs test/bubbles-bit-session.test.mjs

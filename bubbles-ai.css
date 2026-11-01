@@ -448,3 +448,11 @@ body.ba-viewer-active{overflow:hidden}
 .ba-iteration-detail a{color:#165b80;text-decoration:underline}
 @media(max-width:440px){.ba-iteration-button{min-width:48px;flex-basis:48px}.ba-iteration-bubbles{margin-inline:6px;padding:7px}}
 @media(prefers-reduced-motion:reduce){.ba-iteration-orb{animation:none!important}}
+
+/* Receipt candidates share the existing Bubbles panel. No wallet buttons or mint actions. */
+.ba-iteration-bits{margin-top:8px;padding:8px 10px;border:1px solid #dce4e8;background:#f7fafc;border-radius:10px;display:flex;flex-direction:column;gap:3px}
+.ba-iteration-bits strong{font:750 12px/1.4 system-ui,sans-serif;color:#304454}
+.ba-iteration-bits .ba-bits-count{font:700 12px/1.5 system-ui,sans-serif;color:#263d49}
+.ba-iteration-bits .ba-bits-note{font:11px/1.4 system-ui,sans-serif;color:#52656c}
+.ba-iteration-bits .ba-bits-recent{display:flex;gap:4px;flex-wrap:wrap}
+.ba-iteration-bits .ba-bits-proof{font:10px/1.35 system-ui,sans-serif;background:#fff;border:1px solid #dde5e9;color:#435966;padding:3px 6px;border-radius:7px;overflow-wrap:anywhere}

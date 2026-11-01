@@ -1488,7 +1488,7 @@ if(!embedded){
 }
 document.body.append(launcher,panel);
 // One messenger with evidence-backed cognitive/activity bubbles; no extra AI session.
-void import('/bubbles-iteration-bubbles.mjs?v=20261031-iteration1')
+void import('/bubbles-iteration-bubbles.mjs?v=20261101-bits1')
  .then(({mountBubbleIterations})=>mountBubbleIterations({launcher,panel,status}))
  .catch(()=>{ /* The activity view must never interrupt chat, voice or wallet. */ });
 // Fit the visible phone viewport, including the space remaining above its keyboard.
@@ -1922,6 +1922,7 @@ async function openConversation(id){
  pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
  input.value='';
  activeThread=id;
+ if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'session_changed'}}));
  try{
   sessionStorage.setItem(TAB_THREAD,id);
   sessionStorage.setItem(EXPLICIT_THREAD,id===SHARED_MAIN_THREAD?'0':'1');
@@ -1973,6 +1974,7 @@ function startConversation({automatic=false}={}){
  threadIndex=nextIndex;
  pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
  activeThread=nextThread;
+ if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'session_changed'}}));
  try{
   sessionStorage.setItem(TAB_THREAD,activeThread);
   sessionStorage.setItem(EXPLICIT_THREAD,'1');
@@ -2301,6 +2303,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ // A new turn begins without granting credits; Personal Context must verify first.
+ if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_started'}}));
+ // Read the separately authenticated Bubbles owner archive BEFORE routing tools.
+ // It is not ChatGPT Personal Context, a permission grant or a completed job.
+ const firstOwnerContext=await currentOwnerContext(spoken);
+ if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'memory',state:firstOwnerContext.state}}));
  const aiConsult=/^(?:bubbles[, ]+)?ask (gemini then claude|gemini|claude)\s*:\s*([\s\S]{3,2400})$/i.exec(spoken);
  if(aiConsult){
   clearSentComposer();
@@ -2902,7 +2910,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // spend up to 15 seconds waiting on memory before calling a requested tool.
  // The latest successfully synced context remains available during this turn.
  void sharedMemory(spoken);
- const ownerContextPending=currentOwnerContext(spoken);
+ // The first owner-context read has already completed for this turn.
  // Optional IndexedDB context must never block a real tool or voice answer.
  let indexedHistory='';
  if(keepChat&&longMemory){
@@ -2914,8 +2922,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    ]);
   }finally{clearTimeout(memoryTimer)}
  }
- const ownerContext=await ownerContextPending;
- if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'memory',state:ownerContext.state}}));
+ const ownerContext=firstOwnerContext;
  const relevant=ownerContext.related.filter(m=>!messages.slice(-40).some(x=>x.id===m.id));
  // A card renderer error must not stop normal speech and work tools.
  if(activeCardEvidence){
@@ -3237,7 +3244,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    conversation.append(row);
   }
   if(json.receipt){
-   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status}}));
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+    type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status,receiptId:json.receipt.id
+   }}));
    status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
   }
   if(nativeOverlay){

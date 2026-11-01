@@ -2,6 +2,7 @@
  * Browser-only display; never a tool/permission grant, hidden reasoning stream,
  * wallet operation, extra floating assistant, or independent agent executor.
  */
+import {newBitSession,applyBitObservation} from './bubbles-bit-session.mjs?v=20261101-bits1';
 export const BUBBLE_ROLES=Object.freeze([
  {id:'listen',label:'Listen',help:'Actual voice capture state from the Bubbles orb.'},
  {id:'think',label:'Think',help:'A response is being processed. Private model reasoning is not displayed.'},
@@ -72,7 +73,7 @@ export function mountBubbleIterations({launcher,panel,status}={}){
  title.append(create('strong','','Bubbles · live iteration'),create('small','','One assistant · seven activity roles'));
  const buttons=create('div','ba-iteration-row');
  const details=create('p','ba-iteration-detail');details.setAttribute('role','status');details.setAttribute('aria-live','polite');
- const nodes=new Map();let selected='think',state=newIterationState();
+ const nodes=new Map();let selected='think',state=newIterationState(),bitsState=newBitSession();
  const labels={idle:'Idle',active:'Active',queued:'Queued',review:'Review',verified:'Verified',blocked:'Blocked'};
  for(const role of BUBBLE_ROLES){
   const button=create('button','ba-iteration-button');
@@ -81,18 +82,30 @@ export function mountBubbleIterations({launcher,panel,status}={}){
   button.addEventListener('click',()=>{selected=role.id;render()});
   buttons.append(button);nodes.set(role.id,button);
  }
- box.append(title,buttons,details);status.after(box);
+ const bitPanel=create('section','ba-iteration-bits');bitPanel.setAttribute('aria-label','Bubbles Bits verified action candidates');
+ const bitHeading=create('strong','','Bubbles Bits · verified source actions');
+ const bitCount=create('span','ba-bits-count','0 candidates · 0 credited');
+ const bitNote=create('small','ba-bits-note','Wallet settlement unavailable. These are receipt observations, not spendable credits.');
+ const bitRecent=create('div','ba-bits-recent');
+ bitPanel.append(bitHeading,bitCount,bitNote,bitRecent);
+ box.append(title,buttons,details,bitPanel);status.after(box);
  function render(){
   for(const role of BUBBLE_ROLES){
    const button=nodes.get(role.id),item=state[role.id];
    button.dataset.status=item.status;button.setAttribute('aria-pressed',String(role.id===selected));
    button.querySelector('.ba-iteration-state').textContent=labels[item.status];
   }
+  bitCount.textContent=bitsState.candidateCount+' candidate'+(bitsState.candidateCount===1?'':'s')+' · 0 credited · 0 spendable';
+  bitNote.textContent=bitsState.contextReady
+    ?'Owner context checked. Candidate receipts are not wallet credits.'
+    :'Owner context not verified this turn. Later actions will not count until checked.';
+  bitRecent.replaceChildren();
+  for(const item of bitsState.recent.slice(0,3))bitRecent.append(create('span','ba-bits-proof',item.tool+' · receipt …'+item.receiptTail));
   const role=BUBBLE_ROLES.find(x=>x.id===selected),item=state[selected];
   details.replaceChildren(create('strong','',role.label+': '+labels[item.status]+'. '),document.createTextNode(item.message+' '+role.help));
   if(item.url){const a=create('a','',' View receipt');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';details.append(a)}
  }
- function update(event){state=applyIterationEvent(state,event);render()}
+ function update(event){state=applyIterationEvent(state,event);bitsState=applyBitObservation(bitsState,event);render()}
  const observer=new MutationObserver(()=>update({type:'orb',state:launcher.dataset.state}));
  observer.observe(launcher,{attributes:true,attributeFilter:['data-state']});
  window.addEventListener('bubbles:iteration',event=>update(event.detail));
