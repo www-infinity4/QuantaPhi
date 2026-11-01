@@ -16,13 +16,6 @@ const reply=(body,status=200)=>Response.json(body,{status,headers:HEADERS});
 const fail=(error,status)=>reply({error,items:[]},status);
 const clean=(v,max=80)=>String(v??'').replace(/[<>]/g,'').replace(/\s+/g,' ').trim().slice(0,max);
 const stateOf=(v)=>clean(v,2).toUpperCase();
-const sourceCatalog=Object.freeze({
-  IA:{agency:'Iowa Health and Human Services',kind:'medical_only',url:'https://hhs.iowa.gov/health-prevention/medical-cannabis/dispensary-locations',note:'Five medical dispensaries; NOT adult-use. Medical authorization is required.'},
-  MO:{agency:'Missouri Division of Cannabis Regulation',kind:'license_and_ato',url:'https://health.mo.gov/business-professionals/cannabis-regulation/licensee-compliance-guidance/licensed-facilities',note:'A license entry alone does not prove approval to operate (ATO). Check status.'},
-  IL:{agency:'Illinois Cannabis Regulation Oversight Office',kind:'dispensary_map',url:'https://cannabis.illinois.gov/about/locations.html',note:'Official dispensary locations; check the regulator for updates.'},
-  NY:{agency:'New York Office of Cannabis Management',kind:'license_dataset',url:'https://data.ny.gov/d/jskf-tt3q',note:'Current OCM licenses; filter license type and status before listing.'},
-  ME:{agency:'Maine Office of Cannabis Policy',kind:'adult_use_license_search',url:'https://www1.maine.gov/dafs/ocp/open-data/adult-use/licensee-search',note:'Active licenses differ from pending and conditional applications.'}
-});
 const isState=s=>STATES.includes(s);
 const ack=req=>req.headers.get('X-Visitor-21-Acknowledged')==='true';
 const publicRow=row=>{
@@ -66,15 +59,30 @@ async function regulators(env,url){
     'SELECT state,adult_use,medical_program,reviewed_at FROM state_policy ORDER BY state'
   ).all();
   const policies=new Map((results||[]).map(r=>[r.state,r]));
+  const {results:official}=await env.DIRECTORY.prepare(
+    "SELECT state,agency,source_kind,source_url,verified_at,source_status,notes FROM regulator_source_catalog WHERE source_status='verified_official_url' ORDER BY state"
+  ).all();
+  const sources=new Map((official||[]).filter(r=>isState(r.state)).map(r=>[r.state,r]));
   const states=state?[state]:STATES;
   return reply({states:states.map(s=>{
-    const p=policies.get(s),src=sourceCatalog[s];
-    return {state:s,agency:src?.agency||null,source_url:src?.url||null,
-      source_kind:src?.kind||'source_pending',source_reviewed:!!src,
-      note:src?.note||'Regulator source not yet independently cataloged.',
+    const p=policies.get(s),src=sources.get(s);
+    return {state:s,agency:src?.agency||null,source_url:src?.source_url||null,
+      source_kind:src?.source_kind||'source_pending',source_reviewed:!!src,
+      source_reviewed_at:src?.verified_at||null,
+      note:src?.notes||'Regulator source not yet independently cataloged.',
       adult_use:p?.adult_use||'unreviewed',medical_program:p?.medical_program===null?null:!!p?.medical_program,
       policy_reviewed_at:p?.reviewed_at||null};
   }),disclosure:'Source catalog is not a claim that all 50 state store lists were imported or licenses verified.'});
+}
+async function receipts(env){
+  const {results:regulatorRuns}=await env.DIRECTORY.prepare(
+    'SELECT run_id,source_kind,inspected,accepted,rejected,created_at FROM regulator_source_ingest_runs ORDER BY created_at DESC LIMIT 10'
+  ).all();
+  const {results:storeRuns}=await env.DIRECTORY.prepare(
+    'SELECT state,city,inspected,accepted,rejected,created_at FROM import_receipts ORDER BY created_at DESC LIMIT 10'
+  ).all();
+  return reply({regulator_source_runs:regulatorRuns||[],store_ingest_runs:storeRuns||[],
+    disclosure:'Source catalog receipts are not store imports. A queued state is not populated; no paid campaigns or license approvals are inferred.'});
 }
 async function stores(req,env,url){
   // This is only a display acknowledgment for organic location information,
@@ -102,6 +110,7 @@ export default {
     try{
       if(url.pathname==='/api/21-directory/coverage')return await coverage(env);
       if(url.pathname==='/api/21-directory/regulators')return await regulators(env,url);
+      if(url.pathname==='/api/21-directory/receipts')return await receipts(env);
       if(url.pathname==='/api/21-directory/stores')return await stores(req,env,url);
       if(url.pathname==='/api/21-directory/health'){
         await env.DIRECTORY.prepare('SELECT 1 AS ok').first();
