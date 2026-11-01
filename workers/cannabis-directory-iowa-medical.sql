@@ -11,3 +11,13 @@ VALUES
 ('ia-hhs-iowa-cannabis-waterloo','Iowa Cannabis Company','Waterloo','Waterloo','IA','1955 La Porte Road, Waterloo, IA 50702','https://hhs.iowa.gov/locations/iowa-cannabis-company','hhs.iowa.gov','Iowa HHS medical cannabis dispensary locations','2026-11-01','listed',0,'medical_program_listed',1,0,1,0,'',''),
 ('ia-hhs-iowa-cannabis-east','Iowa Cannabis Company East','Iowa City','Iowa City','IA','322 Highway 1 W, Iowa City, IA 52245','https://hhs.iowa.gov/locations/iowa-cannabis-company-east','hhs.iowa.gov','Iowa HHS medical cannabis dispensary locations','2026-11-01','listed',0,'medical_program_listed',1,0,1,0,'',''),
 ('ia-hhs-iowa-cannabis-west','Iowa Cannabis Company West','Council Bluffs','Council Bluffs','IA','3615 9th Ave, Council Bluffs, IA 51501','https://hhs.iowa.gov/locations/iowa-cannabis-company-west','hhs.iowa.gov','Iowa HHS medical cannabis dispensary locations','2026-11-01','listed',0,'medical_program_listed',1,0,1,0,'','');
+
+-- Append only after five IA IDs were independently read back; repeat-safe.
+INSERT OR IGNORE INTO import_receipts
+(receipt_id,state,city,source_url,job_id,inspected,accepted,rejected)
+VALUES ('2026-11-01-ia-hhs-five-medical-v1','IA','statewide',
+'https://hhs.iowa.gov/health-prevention/medical-cannabis/dispensary-locations',
+'first-review-ia',5,5,0);
+UPDATE directory_jobs SET status='sourced',phase='medical_only_regulator_review',
+records_added=5,updated_at=CURRENT_TIMESTAMP
+WHERE job_id='first-review-ia' AND state='IA' AND records_added<=5;
