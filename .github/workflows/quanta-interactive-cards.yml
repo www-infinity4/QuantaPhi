@@ -55,6 +55,9 @@ on:
       - 'test/tinyfish-broker-bridge.test.mjs'
       - 'quanta-feed-card.html'
       - 'source-quick-cards.mjs'
+      - 'denver-retail-*.mjs'
+      - 'denver-retail-*.css'
+      - 'test/denver-retail-quick-cards.test.mjs'
       - 'brand-product-cards.mjs'
       - 'brand-product-cards.css'
       - 'test/brand-product-cards.test.mjs'
@@ -148,6 +151,8 @@ jobs:
           node --check workers/infinity-brain-clock/quick-card-browser.mjs
           node --check source-quick-cards.mjs
           node --check premium-source-cards.mjs
+          node --check denver-retail-catalog.mjs
+          node --check denver-retail-quick-cards.mjs
           node --check shop-phi-switchboard.mjs
           node --check brand-product-cards.mjs
           node --check quanta-card-provider.mjs
@@ -170,6 +175,8 @@ jobs:
         run: node --test test/assimilation-mobile-accessibility.test.mjs
       - name: Validate real-brand retail products and APK disclosure
         run: node --test test/brand-product-cards.test.mjs
+      - name: Validate Denver retail source and mobile card contracts
+        run: node --test test/denver-retail-quick-cards.test.mjs
       - name: Check World Series publisher stories and Cardone detail actions
         run: |
           python3 -m unittest discover -s test -p 'test_world_series_sync.py' -v
