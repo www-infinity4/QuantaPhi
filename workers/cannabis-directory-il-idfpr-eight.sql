@@ -91,8 +91,19 @@ INSERT OR IGNORE INTO import_receipts
 (receipt_id,state,city,source_url,job_id,inspected,accepted,rejected)
 SELECT '2026-11-01-il-idfpr-eight-active-adult-use-v1','IL','statewide',
  'https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/cannabis/all-cannabis-licenses.pdf','first-review-il',8,8,0
-WHERE (SELECT COUNT(*) FROM store_sources WHERE id IN ('il-idfpr:284.000001-AUDO','il-idfpr:284.000002-AUDO','il-idfpr:284.000003-AUDO','il-idfpr:284.000005-AUDO','il-idfpr:284.000006-AUDO','il-idfpr:284.000007-AUDO','il-idfpr:284.000008-AUDO','il-idfpr:284.000009-AUDO'))=8;
+WHERE (SELECT COUNT(*) FROM store_sources WHERE id IN ('il-idfpr:284.000001-AUDO','il-idfpr:284.000002-AUDO','il-idfpr:284.000003-AUDO','il-idfpr:284.000005-AUDO','il-idfpr:284.000006-AUDO','il-idfpr:284.000007-AUDO','il-idfpr:284.000008-AUDO','il-idfpr:284.000009-AUDO'))=8
+ AND EXISTS(SELECT 1 FROM state_policy WHERE state='IL' AND adult_use='legal_with_conditions')
+ AND EXISTS(SELECT 1 FROM regulator_source_catalog WHERE state='IL' AND source_status='verified_official_url')
+ AND EXISTS(SELECT 1 FROM directory_jobs WHERE job_id='first-review-il' AND state='IL' AND status='queued');
+-- The receipt belongs to ONE job. Never let a stale receipt advance another
+-- Illinois job, or a requeued original job after a later discovery update.
 UPDATE directory_jobs SET status='review',phase='license_and_site_review',
  records_added=8,updated_at=CURRENT_TIMESTAMP
-WHERE state='IL' AND status='queued'
- AND EXISTS(SELECT 1 FROM import_receipts WHERE receipt_id='2026-11-01-il-idfpr-eight-active-adult-use-v1');
+WHERE job_id='first-review-il' AND state='IL' AND status='queued' AND records_added=0
+ AND EXISTS(SELECT 1 FROM state_policy WHERE state='IL' AND adult_use='legal_with_conditions')
+ AND EXISTS(SELECT 1 FROM regulator_source_catalog WHERE state='IL' AND source_status='verified_official_url')
+ AND (SELECT COUNT(*) FROM store_sources WHERE id IN ('il-idfpr:284.000001-AUDO','il-idfpr:284.000002-AUDO','il-idfpr:284.000003-AUDO','il-idfpr:284.000005-AUDO','il-idfpr:284.000006-AUDO','il-idfpr:284.000007-AUDO','il-idfpr:284.000008-AUDO','il-idfpr:284.000009-AUDO'))=8
+ AND EXISTS(SELECT 1 FROM import_receipts
+   WHERE receipt_id='2026-11-01-il-idfpr-eight-active-adult-use-v1'
+     AND job_id='first-review-il' AND state='IL'
+     AND COALESCE(NULLIF(directory_jobs.updated_at,''),'1970-01-01 00:00:00') <= created_at);
