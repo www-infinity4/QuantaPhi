@@ -745,7 +745,11 @@ async function runChatModel(env,model,options){
  const usable=result=>{
   const text=result?.response??result?.choices?.[0]?.message?.content;
   const calls=result?.tool_calls??result?.choices?.[0]?.message?.tool_calls;
-  if((typeof text==='string'&&text.trim())||(Array.isArray(calls)&&calls.length))return result;
+  // A text-model tool_calls envelope is a request to run a function, not
+  // evidence that a registered read or owner action executed. Reject it here
+  // and retry for a spoken answer; only execute()/MCP adapters issue receipts.
+  if(Array.isArray(calls)&&calls.length)throw Error('unexecuted_model_tool_call');
+  if(typeof text==='string'&&text.trim())return result;
   throw Error('empty_gpt_response');
  };
  try{
