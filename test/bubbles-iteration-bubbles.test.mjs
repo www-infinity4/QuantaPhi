@@ -61,7 +61,7 @@ test('a new chat resets stale role statuses and a real turn begins with visible 
 test('the activity display lives inside the scrolling transcript, not in the composer',()=>{
  const module=src('bubbles-iteration-bubbles.mjs');
  const main=src('bubbles-ai.js');
- assert.match(module,/chatScroll\.insertBefore\(box,conversation\)/);
+ assert.match(module,/chatScroll\.insertBefore\(box,conversation\.nextSibling\)/);
  assert.doesNotMatch(module,/status\.after\(box\)/);
  assert.match(main,/mountBubbleIterations\(\{launcher,panel,status,chatScroll,conversation\}\)/);
 });
