@@ -14,7 +14,10 @@ on:
       - 'quanta-card-experience.*'
       - 'quanta-card-actions.mjs'
       - 'quanta-x-composer.mjs'
-      - 'test/quanta-x-composer.test.mjs'
+      - 'quanta-integra-x-tour.mjs'
+      - 'test/quanta-integra-x-tour.test.mjs'
+      - 'test/integra-x-tour.browser.spec.mjs'
+      - 'test/quanta-x-composer.test.mjs test/quanta-integra-x-tour.test.mjs'
       - 'art-museum-quick-cards.mjs'
       - 'verified-brand-sports-catalog.mjs'
       - 'verified-brand-sports-cards.mjs'
@@ -122,6 +125,7 @@ jobs:
           node --check design-lab/bulk-allocator-ui.mjs
           node --check quanta-card-actions.mjs
           node --check quanta-x-composer.mjs
+          node --check quanta-integra-x-tour.mjs
           node --check quick-card-preview.mjs
           node --check art-museum-quick-cards.mjs
           node --check verified-brand-sports-catalog.mjs
@@ -173,4 +177,4 @@ jobs:
         run: |
           node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
-          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/android-scroll-sections.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/android-scroll-sections.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs test/integra-x-tour.browser.spec.mjs --reporter=line --workers=1
