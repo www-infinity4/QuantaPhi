@@ -36,7 +36,7 @@ test('bulk importer requires source provenance, filters places and never labels 
 test('restaurant carousel preserves live per-city inventory and prevents navigation races',()=>{
  const code=read('restaurant-directory.mjs');
  assert.match(code,/const cityCounts=new Map\(\)/);
- assert.match(code,/cityCounts\.set\(item\.state\+'\\|'\+item\.city/);
+ assert.match(code,/cityCounts\.set\(item\.state\+'\|'\+item\.city/);
  assert.match(code,/cityTotal=cityCounts\.get\(place\.value\)\|\|0/);
  assert.match(code,/submit\.disabled=prev\.disabled=next\.disabled=discover\.disabled=true/);
  assert.match(code,/if\(loading\)return;if\(selected<items\.length-1\)/);
