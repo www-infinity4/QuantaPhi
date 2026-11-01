@@ -128,3 +128,19 @@ test('repository creation contract is explicit and does not report verified CI o
  assert.deepEqual(JSON.parse(calls[1].options.body).private,true);
  assert.ok(calls.every(c=>c.options.redirect==='manual'));
 });
+
+test('a bare completed status cannot claim passed checks or deployed code without verification',()=>{
+ const start=site.indexOf('const humanReplies=()=>({'),end=site.indexOf('const brainTools=',start);
+ const replies=new Function(site.slice(start,end)+'\nreturn humanReplies;')()();
+ for(const outcome of [
+  {ok:true,status:'completed'},
+  {ok:true,status:'completed',testsVerified:false},
+  {ok:true,status:'deployed_verified',deploymentVerified:false},
+  {ok:true,status:'success'}
+ ]){
+  const spoken=replies.githubReply(outcome);
+  assert.doesNotMatch(spoken,/checks passed|repair is finished|deployed successfully|what should we work on next/i);
+  assert.match(spoken,/not verified|not confirmed|unverified|awaiting/i);
+ }
+ assert.match(replies.githubReply({ok:true,status:'deployed_verified',deploymentVerified:true,testsVerified:true}),/verified|passed/i);
+});
