@@ -41,7 +41,7 @@ jobs:
           while read -r tile bbox; do
             test "$(release_from_stac)" = "${RELEASE}" || { echo "Overture release changed before ${tile}; refusing mixed batch"; exit 1; }
             echo "Fetching Colorado region ${tile} from Overture release ${RELEASE}"
-            overturemaps download --stac --bbox="${bbox}" -f geojson --type=place -o "/tmp/attractions-${tile}.geojson"
+            overturemaps download --stac --release="${RELEASE}" --bbox="${bbox}" -f geojson --type=place -o "/tmp/attractions-${tile}.geojson"
             test "$(release_from_stac)" = "${RELEASE}" || { echo "Overture release changed during ${tile}; refusing mixed batch"; exit 1; }
             python scripts/attractions-import.py \
               --input "/tmp/attractions-${tile}.geojson" \
