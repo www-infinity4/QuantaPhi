@@ -65,6 +65,7 @@ export const cards=Object.freeze([
  app('nasa-science','NASA Science','/science-quick-card.html?card=nasa-science','QuantaPhi',['science nasa','nasa research']),
  app('ars-science','Ars Science','/science-quick-card.html?card=ars-science','QuantaPhi',['science news','ars technica science']),
  app('ars-tech','Ars Technica News','/science-quick-card.html?card=ars-technology','QuantaPhi',['technology news','tech news','ars technica']),
+ app('restaurant-directory','Infinity Restaurant Directory','/?card=restaurant-directory','QuantaPhi',['restaurant directory','restaurants','food finder','Denver restaurants','vacation dining','local dining','food search','restaurants near my vacation','restaurant quick card','restaurant quick']),
  app('public-directory','Verified Contact Directory','/directory/','QuantaPhi',['phonebook','telephone book','directory','public phone','business contact','directory card']),
  app('website-directory','Website Directory','/directory/?kind=website','QuantaPhi',['website directory','website catalog']),
  app('fox-one-video','FOX One Original Advertisement','/source-quick-card.html?card=fox-one','QuantaPhi',['fox one','foxone','fox one ad','fox one advertisement']),
