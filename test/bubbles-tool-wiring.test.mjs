@@ -20,3 +20,14 @@ test('ordinary Bubbles replies distinguish partial/failed/blocked tool receipts 
  assert.match(file,/json\.receipt/);
  assert.match(file,/answerStatus/);
 });
+
+test('receipt explanation preserves actual answer and marks incomplete actions',()=>{
+ const start=source.indexOf('function describeBubblesToolOutcome(');
+ const end=source.indexOf('function normalizeOwnerAssistantReply(',start);
+ const describe=new Function(source.slice(start,end)+'\nreturn describeBubblesToolOutcome;')();
+ assert.equal(describe({receipt:{tool:'web.search',status:'complete'}},'Found three sources'),'Found three sources');
+ assert.match(describe({receipt:{tool:'web.search',status:'failed'}},'No sources'),/failed; no successful action/);
+ assert.match(describe({receipt:{tool:'github.read_file',status:'blocked'}},'Source is unavailable'),/blocked/);
+ assert.match(describe({receipt:{tool:'web.search',status:'complete'},answerStatus:'partial'},'Source results found'),/remains incomplete/);
+ assert.equal(describe({output:'Model reply'},'Hello'),'Hello');
+});
