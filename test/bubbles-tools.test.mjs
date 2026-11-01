@@ -375,3 +375,21 @@ test('traffic complaint invokes the real source reader before reporting findings
   assert.equal(result.receipt.sourceReadVerified,true);assert.equal(result.receipt.repositoryActionsVerified,false);assert.match(result.output,/GA4/);
  }finally{globalThis.fetch=original;}
 });
+
+test('structured tool-call envelopes without execution do not become blank Bubbles replies',async()=>{
+ let calls=0;
+ const req=new Request('https://bubbles-tools.marvaseater.workers.dev/v1/assist',{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({request:'Explain the difference between suggesting a search and actually running it.'})});
+ const res=await worker.fetch(req,{AI:{run:async()=>{
+  calls++;
+  return calls===1?{tool_calls:[{function:{name:'web_search',arguments:'{"query":"not executed"}'}}]}
+   :{response:'That was only a tool suggestion; this chat did not execute a search. A separate verified tool receipt is required.'};
+ }}});
+ const data=await res.json();
+ assert.equal(res.status,200);
+ assert.equal(calls,2);
+ assert.match(data.output,/did not execute a search/);
+ assert.equal(data.receipt.repositoryActionsVerified,false);
+ assert.doesNotMatch(data.output,/\{"query":"not executed"\}/);
+});
