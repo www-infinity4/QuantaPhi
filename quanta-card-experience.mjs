@@ -1,5 +1,6 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
 import {mountIntegraXTour} from './quanta-integra-x-tour.mjs';
+import {mountIntegraAutomationGuide} from './integra-automation-router.mjs';
 import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
 import {tinyfishCard} from './tinyfish-card-catalog.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
@@ -340,6 +341,7 @@ export function mountCardTools(root,card){
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
  if(id==='x')mountIntegraXTour(root);
+ if(id==='x')mountIntegraAutomationGuide(root);
  if(id==='chatgpt'){
   // This card is a real-website launch surface, not a fake site search,
   // local checklist or an imitation ChatGPT reply. The official viewer
