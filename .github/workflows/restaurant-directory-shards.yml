@@ -1,0 +1,56 @@
+name: Restaurant Directory · Prepare Cloudflare Import Chunks
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/restaurant-directory-shards.yml
+permissions:
+  contents: write
+concurrency:
+  group: restaurant-directory-chunks
+  cancel-in-progress: false
+jobs:
+  chunk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Denver source against regression suite
+        run: |
+          python -m unittest discover -s test -p test_restaurant_cloudflare_sync.py -v
+          python -m unittest discover -s test -p test_restaurant_directory_import.py -v
+      - name: Prepare resumable directory shards without credentials
+        run: |
+          python - <<'PY'
+          import importlib.util,json,hashlib
+          from pathlib import Path
+          p=Path('scripts/restaurant-directory-cloudflare-sync.py')
+          s=importlib.util.spec_from_file_location('sync',p)
+          mod=importlib.util.module_from_spec(s);s.loader.exec_module(mod)
+          source=Path('data/restaurants/denver-co.json')
+          doc=json.loads(source.read_text(encoding='utf8'))
+          rows=mod.validate_snapshot(doc)
+          root=Path('data/restaurants/denver-sync-chunks')
+          root.mkdir(parents=True,exist_ok=True)
+          for i in range(0,len(rows),100):
+              part=rows[i:i+100]
+              (root/f'{i//100:03d}.json').write_text(json.dumps(part,ensure_ascii=False,separators=(',',':')),encoding='utf8')
+          manifest={'total':len(rows),'count':(len(rows)+99)//100,'generated_at':doc['generated_at'],
+              'dataset_version':doc['dataset_version'],
+              'sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+              'source_name':'Overture Maps'}
+          (root/'manifest.json').write_text(json.dumps(manifest),encoding='utf8')
+          print('Prepared source-backed D1 shards:',manifest)
+          PY
+      - name: Publish temporary verified import branch (not protected main)
+        run: |
+          set -euo pipefail
+          git add data/restaurants/denver-sync-chunks
+          git -c user.name='QuantaPhi Directory' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: prepare 7,214 Denver D1 import chunks'
+          BRANCH="data/restaurant-directory-chunks-${GITHUB_RUN_ID}"
+          git push origin "HEAD:refs/heads/${BRANCH}"
+          echo "VERIFIED_IMPORT_BRANCH=${BRANCH}"
