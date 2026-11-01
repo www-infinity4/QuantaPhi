@@ -2,7 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {PREMIUM_CARDS,sourceURL,normalizeResults} from '../premium-source-cards.mjs';
 test('every added collector/source card has a unique fixed official HTTPS destination',()=>{
- assert.equal(PREMIUM_CARDS.length,17);assert.equal(new Set(PREMIUM_CARDS.map(x=>x.id)).size,17);
+ assert.equal(PREMIUM_CARDS.filter(x=>!x.id.startsWith('denver-')).length,17);
+ assert.equal(PREMIUM_CARDS.filter(x=>x.id.startsWith('denver-')).length,8);
+ assert.equal(new Set(PREMIUM_CARDS.map(x=>x.id)).size,PREMIUM_CARDS.length);
  for(const c of PREMIUM_CARDS){assert.ok(sourceURL(c.official));assert.ok(c.topics.length>=3);assert.ok(c.query);}
 });
 test('source result filtering rejects lookalike domains, unsafe links and unrelated publishers',()=>{
