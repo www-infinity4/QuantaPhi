@@ -458,8 +458,24 @@ for(const button of host.querySelectorAll('[data-oracle-family]')){
   show(chosen);host.scrollIntoView?.({block:'start',behavior:'smooth'});
  });
 }
-next.addEventListener('click',()=>advance(1));
-prev.addEventListener('click',()=>advance(-1));
+// Move the viewport only after a user changes cards, not when the deck
+// rotates automatically. Scroll to the deck (with arrows visible), not into
+// a tall card that could hide navigation above the phone viewport.
+function settleCardViewport(){
+ if(!window.matchMedia?.('(max-width: 650px)')?.matches)return;
+ const cardId=active?.id;
+ requestAnimationFrame(()=>{
+  if(active?.id!==cardId||expanded)return;
+  host.scrollIntoView?.({block:'start',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth'});
+ });
+}
+function moveAndSettle(direction){
+ const before=active;
+ advance(direction);
+ if(active&&active!==before)settleCardViewport();
+}
+next.addEventListener('click',()=>moveAndSettle(1));
+prev.addEventListener('click',()=>moveAndSettle(-1));
 document.getElementById('oracleCardLive')?.addEventListener('click',()=>{
  const live=eligible().find(livePriority);if(!live)return;
  viewerTouched=true;selectionVersion++;
