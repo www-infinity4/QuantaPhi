@@ -32,6 +32,20 @@ class BusinessIngestTests(unittest.TestCase):
         self.assertIsNone(ingest.business_from_feature(feature(names={'primary':''}),'Denver','CO'))
         bad=feature(websites=['javascript:alert(1)','https://user:pass@evil.test/'])
         self.assertEqual(ingest.business_from_feature(bad,'Denver','CO')['website'],'')
+    def test_rejects_restricted_categories_and_misclassified_rentals(self):
+        self.assertIsNone(ingest.business_from_feature(
+            feature(names={'primary':'Adult Vape Shop'},basic_category='vape_shop'),'Denver','CO'))
+        self.assertIsNone(ingest.business_from_feature(
+            feature(names={'primary':'Ace Rent To Own LLC'},basic_category='restaurant'),'Denver','CO'))
+
+    def test_preserves_per_feature_license_and_rejects_unknown_license(self):
+        row=ingest.business_from_feature(feature(sources=[
+            {'dataset':'Foursquare','license':'Apache-2.0'},
+            {'dataset':'Overture','license':'CDLA-Permissive-2.0'}]),'Denver','CO')
+        self.assertEqual(row['source_license'],'Apache-2.0; CDLA-Permissive-2.0')
+        self.assertIsNone(ingest.business_from_feature(
+            feature(sources=[{'dataset':'unknown','license':'restricted-proprietary'}]),'Denver','CO'))
+
     def test_geojsonseq_may_contain_separator_and_feature_collection(self):
         with tempfile.TemporaryDirectory() as tmp:
             p=Path(tmp)/'places.geojsonseq'
