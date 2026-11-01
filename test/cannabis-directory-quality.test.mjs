@@ -88,7 +88,7 @@ test('Worker only exposes corroborated ★ with source receipts and suppresses p
    return {results:[]};
   },async first(){return {adult_use:'unreviewed',medical_program:null}}};
   return q;
- }}}});
+ }}});
  const request=()=>new Request('https://quantaphi.org/api/21-directory/stores?state=CO',{
   headers:{'X-Visitor-21-Acknowledged':'true'}});
  const approved=await (await worker.fetch(request(),makeEnv(false))).json();
