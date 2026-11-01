@@ -28,5 +28,7 @@
 #bruceBannerWeedmapsCard .bb-close{border:0;background:transparent;padding:10px 0;font-size:12px;color:#537080;text-decoration:underline;cursor:pointer}
 #bruceBannerWeedmapsCard .bb-note{color:#68737b;font-size:12px;line-height:1.45;margin:12px 0 0}
 #bruceBannerWeedmapsCard button:focus-visible,#bruceBannerWeedmapsCard a:focus-visible{outline:3px solid #7db5d0;outline-offset:2px}
-@media(max-width:480px){#bruceBannerWeedmapsCard.bb-card{padding:14px}#bruceBannerWeedmapsCard .bb-art{min-height:190px;padding:15px}#bruceBannerWeedmapsCard .bb-controls{flex-direction:column}}
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app>#bruceBannerWeedmapsCard{display:none!important}
+.oracle-shelf-open main.app>#bruceBannerWeedmapsCard{display:block!important;margin:16px auto}
+@media(max-width:480px){#bruceBannerWeedmapsCard.bb-card{padding:14px}#bruceBannerWeedmapsCard .bb-art{min-height:190px;padding:15px}#bruceBannerWeedmapsCard .bb-controls{flex-direction:column}#bruceBannerWeedmapsCard .bb-action{flex:0 0 auto;min-height:44px}}
 @media(prefers-reduced-motion:reduce){#bruceBannerWeedmapsCard *{animation:none!important;transition:none!important}}
