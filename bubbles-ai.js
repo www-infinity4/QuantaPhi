@@ -334,7 +334,7 @@ if(!threadIndex.some(t=>t.id===activeThread)){
 const readThread=id=>(data(THREAD_PREFIX+id,[])||[]).filter(m=>m&&['user','assistant'].includes(m.role)&&typeof m.text==='string').slice(-400);
 let messages=keepChat?readThread(activeThread):[];
 messages=messages.map(m=>({...m,sessionId:activeThread,id:m.id||crypto.randomUUID(),at:m.at||Date.now(),text:m.text.slice(0,6000)}));
-let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
+let greeted=messages.length>0,busy=false,turnPending=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending=[],speaking=false,voiceRetry=null,tries=0;
 // Spoken turns must be FIFO; a second phrase must never overwrite the first.
@@ -2301,8 +2301,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let roomContext=nativeEvidence.startsWith(roomEvidencePrefix)?nativeEvidence.slice(roomEvidencePrefix.length,roomEvidencePrefix.length+900):'';
  let screenEvidence=roomContext?'':nativeEvidence;
  if(!spoken&&!pendingImage)return;
+ // Serialize from before the first asynchronous owner-memory or pairing read.
+ if(busy||turnPending)return;
+ turnPending=true;
+ try{
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
- if(busy)return;
  // A new turn begins without granting credits; Personal Context must verify first.
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_started'}}));
  // Read the separately authenticated Bubbles owner archive BEFORE routing tools.
@@ -3263,6 +3266,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
     drainVoiceTurns()
   }
+ }finally{turnPending=false;}
 }
 
  window.addEventListener('bubbles:chatgpt-ready',event=>{
