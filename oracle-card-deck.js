@@ -42,6 +42,7 @@ const choices=[
  ['radioClubhouse','Listen and research'],
  ['halloweenPhi','Watch a cinema'],
  ['phiProjectActions','Build a website'],
+ ['businessDirectoryCard','National Business Directory · Explore'],
  ['shopAdPhi','Discover products'],
  ['infinityAdultContentCard','21+ content preferences'],
  ['phiChannelCards','KYOU · Infinity live TV'],
@@ -85,6 +86,7 @@ const CARD_DIRECTIONS={
  radioClubhouse:['radio-clubhouse','Vintage radios','Read antique radio discussions and investigate repairs'],
  halloweenPhi:['deck-halloween','Television','Watch an original cinema card'],
  phiProjectActions:['deck-projects','Creation','Build or improve a real website project'],
+ businessDirectoryCard:['business-directory','Directory','Search source-backed businesses across states and territories'],
  shopAdPhi:['deck-shop','Shopping','Explore interactive product and advertising tools'],
  infinityAdultContentCard:['adult-content-preferences','Preferences','Manage optional 21+ ad viewing; no restricted creative without server verification'],
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
