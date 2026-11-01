@@ -46,10 +46,10 @@ async function coverage(env){
   const {results:jobs}=await env.DIRECTORY.prepare(
     "SELECT status,COUNT(*) AS jobs FROM directory_jobs GROUP BY status ORDER BY status"
   ).all();
-  const queued=await env.DIRECTORY.prepare(
+  const {results:queuedRows}=await env.DIRECTORY.prepare(
     "SELECT COUNT(DISTINCT state) AS queued_states FROM directory_jobs WHERE status='queued'"
-  ).first();
-  return reply({nationwide_target_states:50,states_queued:Number(queued?.queued_states)||0,states_with_policy_rows:rows.length,
+  ).all();
+  return reply({nationwide_target_states:50,states_queued:Number(queuedRows?.[0]?.queued_states)||0,states_with_policy_rows:rows.length,
     states_with_listings:rows.filter(r=>r.listed_records>0).length,
     total_listed:rows.reduce((n,r)=>n+r.listed_records,0),
     states:rows,job_statuses:jobs||[],
