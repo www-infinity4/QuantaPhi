@@ -71,13 +71,27 @@ class BusinessIngestTests(unittest.TestCase):
             try:
                 ingest.api_query=fake_query
                 accepted=ingest.ingest_file(path,{'job_id':'metro:CO:denver','city':'Denver',
-                                                   'state':'CO','cursor':''},max_items=10)
+                                                   'state':'CO','cursor':''},release='2026-10-21.0',max_items=10)
             finally:
                 ingest.api_query=original
             self.assertEqual(accepted,1)
             batches=[x['batch'] for x in calls if x['batch'] is not None]
             self.assertEqual(len(batches),1)
             self.assertEqual(len(batches[0]),1)
+            receipts=[x for x in calls if 'INSERT OR IGNORE INTO business_ingest_receipts' in x['sql']]
+            self.assertEqual(receipts[0]['params'][2],'2026-10-21.0')
+
+    def test_stac_release_is_validated_before_ingestion(self):
+        from unittest.mock import patch
+        from io import BytesIO
+        with patch.object(ingest.urllib.request,'urlopen',return_value=BytesIO(b'{"latest":"2026-10-21.0"}')):
+            self.assertEqual(ingest.overture_release(),'2026-10-21.0')
+        for invalid in ('latest','unknown','2026-10-21.0\\n'):
+            with patch.object(ingest.urllib.request,'urlopen',return_value=BytesIO(json.dumps({'latest':invalid}).encode())):
+                with self.assertRaisesRegex(RuntimeError,'Invalid Overture STAC release'):
+                    ingest.overture_release()
+        with self.assertRaisesRegex(RuntimeError,'Missing pinned Overture release'):
+            ingest.ingest_file('/nonexistent',{'job_id':'x'},release='STAC latest')
 
     def test_d1_forbidden_reports_scoped_permission_blocker_without_token(self):
         from unittest.mock import patch
