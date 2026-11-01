@@ -67,7 +67,14 @@ test('Android returns to fully visible header after card navigation and can sett
  await expect.poll(()=>page.evaluate(()=>window.scrollY),{timeout:4000}).toBeLessThan(3);
  await expect(header).toBeInViewport({ratio:0.95});
  await expect(page.locator('#q')).toBeInViewport();
- // The next nearby section anchor still lines up with the carousel navigation.
- await nav.evaluate(e=>e.scrollIntoView({block:'start',behavior:'instant'}));
- await expect.poll(async()=>Math.abs(await nav.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:4000}).toBeLessThan(35);
+ // Simulate a short downward user scroll from the restored top, without
+ // jumping to the destination programmatically. The nearby deck must settle
+ // with its controls visible; the search row must not steal the snap.
+ const deckDistance=await page.locator('#oracleCardDeck').evaluate(e=>e.getBoundingClientRect().top);
+ const gestureDistance=Math.max(120,Math.min(480,Math.round(deckDistance-18)));
+ await page.mouse.move(2,Math.min(420,page.viewportSize().height/2));
+ await page.mouse.wheel(0,gestureDistance);
+ await expect.poll(async()=>nav.evaluate(e=>e.getBoundingClientRect().top),{timeout:6000}).toBeLessThan(125);
+ await expect.poll(async()=>nav.evaluate(e=>e.getBoundingClientRect().bottom),{timeout:6000}).toBeGreaterThan(0);
+ await expect(nav).toBeInViewport();
 });
