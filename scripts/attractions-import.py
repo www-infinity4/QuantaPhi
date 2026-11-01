@@ -59,9 +59,34 @@ def normalize(feature):
  'source_url':'https://overturemaps.org/','license':'CDLA-Permissive-2.0',
  'confidence':confidence,'image_url':'','image_attribution':''}
 
+def closure_id(feature):
+ """Only explicit permanently closed Colorado Overture attractions yield tombstones."""
+ p=feature.get('properties') or {}
+ status=str(p.get('operating_status') or feature.get('operating_status') or '').lower()
+ if status not in ('permanently_closed','closed_permanently'):return None
+ tax=p.get('taxonomy') or {}
+ primary=str(tax.get('primary') or p.get('basic_category') or '').lower()
+ basic=str(p.get('basic_category') or '').lower()
+ if primary not in CATEGORIES and basic not in CATEGORIES:return None
+ addresses=p.get('addresses') or []
+ addr=addresses[0] if isinstance(addresses,list) and addresses and isinstance(addresses[0],dict) else {}
+ if str(addr.get('region') or '').upper() not in ('CO','COLORADO'):return None
+ try:
+  lon,lat=(feature.get('geometry') or {}).get('coordinates')[:2]
+  lon,lat=float(lon),float(lat)
+ except (IndexError,ValueError,TypeError):return None
+ if not (BBOX[0]<=lon<=BBOX[2] and BBOX[1]<=lat<=BBOX[3]):return None
+ identity=str(p.get('id') or feature.get('id') or '')
+ return 'overture:'+identity if re.fullmatch(r'[a-zA-Z0-9-]{10,100}',identity) else None
+
 def build(features,release='2026-10-21.0',generated_at=None,limit=5000):
  items,seen=[],set()
+ closed=set()
  for feature in features:
+  tombstone=closure_id(feature)
+  if tombstone:
+   closed.add(tombstone)
+   continue
   row=normalize(feature)
   if row is None:continue
   key=(row['name'].casefold(),round(row['latitude'],4),round(row['longitude'],4))
@@ -71,7 +96,8 @@ def build(features,release='2026-10-21.0',generated_at=None,limit=5000):
  return {'schema_version':1,'source_name':'Overture Maps','dataset_version':release,
  'generated_at':generated_at or datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),
  'state':'CO','license':'CDLA-Permissive-2.0','eligible_count':len(items),
- 'truncated':len(items)>limit,'items':items[:limit]}
+ 'truncated':len(items)>limit or len(closed)>limit,'items':items[:limit],
+ 'closed_ids':sorted(closed)[:limit]}
 
 def main():
  p=argparse.ArgumentParser()
