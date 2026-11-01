@@ -27,7 +27,12 @@ const humanReplies=()=>({
    return 'The source changes were saved.'+(pr?' Review: '+pr.url+'.':' A review link is not confirmed yet.')+' Tests and deployment are not verified.';
   }
   if(result.status==='tool_limit_reached')return 'The GitHub assistant reached its tool limit. Check the recorded receipts for any commits or pull requests; completion is unverified.';
-  if(result.status==='completed'||result.status==='deployed_verified')return 'The available completion checks passed. What should we work on next?';
+  if(result.status==='deployed_verified'&&result.deploymentVerified===true&&result.testsVerified===true)
+   return 'The verified source checks passed and deployment was confirmed by the authenticated service.';
+  if(result.status==='completed'&&result.completionVerified===true&&result.testsVerified===true)
+   return 'The recorded GitHub work completed and independent checks passed. Production deployment remains unverified unless separately confirmed.';
+  if(['completed','deployed_verified','success'].includes(result.status))
+   return 'GitHub returned a completion status, but independent completion and deployment checks are not verified yet.';
   return 'The result is not yet verified. The detailed receipt is saved.';
  },
  workReply(ticket){
