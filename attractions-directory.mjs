@@ -30,6 +30,7 @@ function mount(){
  const stateCodes='CO AL AK AZ AR CA CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split(' ');
  for(const state of stateCodes){const o=el('option','',stateName(state));o.value=state;select.append(o);}
  let state='CO',page=0,items=[],index=0,more=false,busy=false,loaded=false;
+ let applied={state:'CO',query:''};
  const record=()=>{
   body.replaceChildren();const item=items[index];
   if(!item){body.append(el('p','ad-empty','No verified attractions in this search yet. Choose another search or state.'));return;}
@@ -53,14 +54,15 @@ function mount(){
   if(/^curated:colorado-[a-z0-9-]+$/.test(item.id)){
    const a=el('a','ad-own-card','Open full Infinity Quick Card');a.href='/?card='+encodeURIComponent(item.id.slice('curated:'.length));btns.append(a);
   }else{
-   const build=el('button','ad-build','+1 Build destination card');build.type='button';
-   build.addEventListener('click',()=>{
-    const input=document.getElementById('robotDirectionsInput');
-    if(!input){status.textContent='Open Bubbles on QuantaPhi to build a source-backed destination card.';return;}
-    input.value='Build an Infinity destination Quick Card for '+item.name+', '+item.state+'. Provenance: '+item.source_url+'. Use original verified media, credit licenses, and preserve wallet isolation. Include planning actions, not fake bookings.';
-    input.dispatchEvent(new Event('input',{bubbles:true}));input.scrollIntoView({block:'center',behavior:'smooth'});input.focus();
-    status.textContent='Destination build request drafted in Bubbles; submit to start.';
-   });btns.append(build);
+   // Public visitors cannot submit to the owner-only Bubbles composer.
+   // Provide a visible, copyable brief instead of claiming a job was queued.
+   const details=el('details','ad-build-brief');
+   const summary=el('summary','','Prepare destination card brief');
+   const draft=el('textarea','ad-build-draft');
+   draft.readOnly=true;draft.rows=4;draft.setAttribute('aria-label','Copyable destination card build brief');
+   draft.value='Build an Infinity destination Quick Card for '+item.name+', '+item.state+'. Provenance: '+item.source_url+'. Use original verified media, credit licenses, and preserve wallet isolation. Include planning actions, not fake bookings.';
+   details.append(summary,draft,el('p','ad-note','Copy this brief into an authenticated Bubbles build session. This does not submit a job.'));
+   btns.append(details);
   }
   info.append(btns,el('p','ad-source','Source: '+item.source_name+' · '+item.license+' · last checked '+item.last_seen+' · Not sponsored'));
   body.append(art,info);
@@ -69,24 +71,28 @@ function mount(){
   record();prev.disabled=busy||(page===0&&index===0);next.disabled=busy||items.length===0||(!more&&index>=items.length-1);
   pos.textContent=items.length?'Attraction '+(page*24+index+1)+' · '+stateName(state):'No verified matches';
  }
- async function load(p=0){
-  if(busy)return;busy=true;go.disabled=true;state=select.value;page=p;index=0;card.setAttribute('aria-busy','true');
-  status.textContent='Searching '+stateName(state)+'…';
+ async function load(p=0,{submit=false,selectLast=false}={}){
+  if(busy)return;
+  const filters=submit||!loaded?{state:select.value,query:q.value.trim().slice(0,65)}:applied;
+  busy=true;go.disabled=prev.disabled=next.disabled=true;card.setAttribute('aria-busy','true');
+  status.textContent='Searching '+stateName(filters.state)+'…';
   try{
    const url=new URL('/api/attractions/search',API);
-   url.search=new URLSearchParams({state,q:q.value.trim().slice(0,65),page:String(page)}).toString();
+   url.search=new URLSearchParams({state:filters.state,q:filters.query,page:String(p)}).toString();
    const response=await fetch(url,{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(15000)});
    if(!response.ok)throw Error('network');
-   const data=await response.json();items=Array.isArray(data.items)?data.items:[];more=Boolean(data.has_more);
+   const data=await response.json();
+   items=Array.isArray(data.items)?data.items:[];more=Boolean(data.has_more);
+   applied=filters;state=filters.state;page=p;index=selectLast?Math.max(0,items.length-1):0;
    status.textContent=items.length?items.length+' sourced attractions · '+stateName(state):'No verified entries yet in '+stateName(state)+'. Other states remain queued.';
    loaded=true;
   }catch{items=[];more=false;status.textContent='Attractions database temporarily unavailable. Original Colorado attraction cards still work.'}
   finally{busy=false;go.disabled=false;card.removeAttribute('aria-busy');display()}
  }
- form.addEventListener('submit',event=>{event.preventDefault();void load(0)});
- next.addEventListener('click',()=>{if(index<items.length-1){index++;display()}else if(more)void load(page+1)});
- prev.addEventListener('click',()=>{if(index>0){index--;display()}else if(page>0)void load(page-1)});
- card.addEventListener('oracle:activate',()=>{if(!loaded&&!busy)void load(0)});
+ form.addEventListener('submit',event=>{event.preventDefault();void load(0,{submit:true})});
+ next.addEventListener('click',()=>{if(busy)return;if(index<items.length-1){index++;display()}else if(more)void load(page+1)});
+ prev.addEventListener('click',()=>{if(busy)return;if(index>0){index--;display()}else if(page>0)void load(page-1,{selectLast:true})});
+ card.addEventListener('oracle:activate',()=>{if(!loaded&&!busy)void load(0,{submit:true})});
  window.dispatchEvent(new Event('quantaphi:source-cards-ready'));
 }
 if(typeof document!=='undefined'){
