@@ -32,6 +32,84 @@ async function stats(env){
  'SELECT state,city,COUNT(*) AS total,MAX(last_seen) AS last_seen FROM restaurants GROUP BY state,city ORDER BY total DESC LIMIT 80').all();
  return Response.json({cities:results||[],source:'Overture Maps and individually sourced records'},{headers:HEADERS});
 }
+
+const SNAPSHOT_ROOT='https://raw.githubusercontent.com/www-infinity4/QuantaPhi/main/';
+/** Only reviewed, explicitly approved non-Denver source snapshots can enter cron. */
+export function approvedMetroSnapshots(manifest){
+ if(manifest?.schema_version!==1||manifest.source_name!=='Overture Maps Places'||
+    !/^20\d{2}-\d{2}-\d{2}\.\d+$/.test(manifest.release||''))throw Error('invalid_metro_manifest');
+ const entries=Object.entries(manifest.cities||{});
+ if(entries.length>100)throw Error('too_many_metros');
+ const approved=[];
+ for(const [key,cfg] of entries){
+  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(key)||!cfg||typeof cfg!=='object')throw Error('invalid_metro_key');
+  if(cfg.approved_snapshot==null)continue;
+  // Denver's completed 7,222-row import is immutable here; never retry it.
+  if(key==='denver-co')continue;
+  if(cfg.approved_snapshot!=='data/restaurants/'+key+'.json'||
+     !/^[A-Za-z .'-]{2,80}$/.test(cfg.city||'')||
+     !/^[A-Z]{2}$/.test(cfg.state||'')||
+     !Array.isArray(cfg.bbox)||cfg.bbox.length!==4||
+     !cfg.bbox.every(Number.isFinite)||
+     !(cfg.bbox[0]<cfg.bbox[2]&&cfg.bbox[1]<cfg.bbox[3])||
+     !Number.isSafeInteger(cfg.min_records)||cfg.min_records<1||cfg.min_records>20000)
+   throw Error('invalid_approved_metro');
+  approved.push({key,city:cfg.city,state:cfg.state,bbox:cfg.bbox,
+   minimum:cfg.min_records,release:manifest.release,path:cfg.approved_snapshot});
+ }
+ return approved;
+}
+/** Validate every row before the first D1 mutation; no partial bad source acceptance. */
+export function validateMetroSnapshot(payload,cfg){
+ if(payload?.schema_version!==1||payload.source_name!=='Overture Maps'||
+    payload.dataset_version!==cfg.release||payload.city!==cfg.city||payload.state!==cfg.state||
+    !/^\d{4}-\d\d-\d\dT[\d:.]+Z$/.test(payload.generated_at||'')||
+    payload.generated_at.length>40||!Array.isArray(payload.items)||
+    payload.items.length<cfg.minimum||payload.items.length>20000)throw Error('invalid_metro_snapshot');
+ const ids=new Set();
+ for(const row of payload.items){
+  if(!row||!/^overture:[a-zA-Z0-9-]{10,100}$/.test(row.id||'')||
+     ids.has(row.id)||!row.name||row.name.length>160||
+     row.city!==cfg.city||row.state!==cfg.state||
+     !/^[a-z_]{1,60}$/.test(row.category||'')||
+     row.source_name!=='Overture Maps'||row.source_url!=='https://overturemaps.org/'||
+     row.sponsored!==false||row.image_url!==''||
+     typeof row.confidence!=='number'||!Number.isFinite(row.confidence)||
+     row.confidence<0.72||row.confidence>1||
+     !Number.isFinite(row.latitude)||!Number.isFinite(row.longitude)||
+     row.longitude<cfg.bbox[0]||row.longitude>cfg.bbox[2]||
+     row.latitude<cfg.bbox[1]||row.latitude>cfg.bbox[3]||
+     (row.website&&!validWebsite(row.website)))throw Error('invalid_metro_row');
+  ids.add(row.id);
+ }
+ return payload.items;
+}
+export async function importApprovedMetro(env,cfg,payload){
+ const rows=validateMetroSnapshot(payload,cfg);
+ const runId=cfg.key+'|'+payload.generated_at;
+ if(await env.RESTAURANTS.prepare('SELECT run_id FROM restaurant_ingest_runs WHERE run_id=?').bind(runId).first())
+  return {skipped:true,records:0};
+ let records=0;
+ for(let i=0;i<rows.length;i+=50){
+  const batch=rows.slice(i,i+50).map(x=>env.RESTAURANTS.prepare(
+   "INSERT INTO restaurants(id,name,city,state,category,address,latitude,longitude,website,source_url,source_name,confidence,image_url,sponsored,last_seen) "+
+   "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,0,?) ON CONFLICT(id) DO UPDATE SET "+
+   "name=excluded.name,category=excluded.category,address=excluded.address,latitude=excluded.latitude,"+
+   "longitude=excluded.longitude,website=excluded.website,confidence=excluded.confidence,"+
+   "last_seen=excluded.last_seen,updated_at=CURRENT_TIMESTAMP "+
+   "WHERE restaurants.city=excluded.city AND restaurants.state=excluded.state AND restaurants.source_name='Overture Maps'"
+  ).bind(x.id,safeText(x.name,160),cfg.city,cfg.state,safeText(x.category,60),
+   safeText(x.address,240),x.latitude,x.longitude,validWebsite(x.website),
+   'https://overturemaps.org/','Overture Maps',x.confidence,'',safeText(payload.generated_at,40)));
+  await env.RESTAURANTS.batch(batch);
+  records+=batch.length;
+ }
+ await env.RESTAURANTS.prepare(
+  'INSERT INTO restaurant_ingest_runs(run_id,city,state,source_name,dataset_version,records) VALUES(?,?,?,?,?,?)'
+ ).bind(runId,cfg.city,cfg.state,'Overture Maps',cfg.release,records).run();
+ return {skipped:false,records};
+}
+
 export default {
  async fetch(request,env){
   if(request.method!=='GET')return err('Read-only restaurant directory',405);
@@ -44,36 +122,20 @@ export default {
   }catch{return err('Restaurant search temporarily unavailable',503)}
  },
  async scheduled(event,env,ctx){
-  // Only the authenticated Cloudflare Cron invokes this importer; visitors cannot write.
+  // Cloudflare-bound Cron is the sole writer. Reviewed main-branch snapshots only.
+  // Completed Denver is deliberately excluded; its existing D1 receipt is preserved.
+  if(!env.RESTAURANTS)return;
   ctx.waitUntil((async()=>{
-   const url='https://raw.githubusercontent.com/www-infinity4/QuantaPhi/main/data/restaurants/denver-co.json';
-   const r=await fetch(url,{headers:{'User-Agent':'QuantaPhi-Restaurant-Directory/1.0'},signal:AbortSignal.timeout(25000)});
-   if(!r.ok)throw new Error('Restaurant snapshot unavailable '+r.status);
-   const payload=await r.json();
-   if(payload.schema_version!==1||payload.source_name!=='Overture Maps'||!Array.isArray(payload.items)||payload.items.length>20000)throw new Error('Invalid directory snapshot');
-   const prior=await env.RESTAURANTS.prepare('SELECT run_id FROM restaurant_ingest_runs WHERE run_id=?').bind(safeText(payload.generated_at,40)).first();
-   if(prior)return; // Immutable source snapshot already fully imported; avoid repeated D1 writes.
-   let updated=0;
-   for(let i=0;i<payload.items.length;i+=50){
-    const statements=[];
-    for(const x of payload.items.slice(i,i+50)){
-     if(!x||!/^overture:[a-zA-Z0-9-]{10,}$/.test(x.id||'')||!x.name||x.city!=='Denver'||x.state!=='CO'||!String(x.source_url||'').startsWith('https://overturemaps.org/'))continue;
-     if(!Number.isFinite(x.latitude)||!Number.isFinite(x.longitude)||x.latitude<39.4||x.latitude>40.1||x.longitude< -105.5||x.longitude> -104.3)continue;
-     statements.push(env.RESTAURANTS.prepare(
-      `INSERT INTO restaurants(id,name,city,state,category,address,latitude,longitude,website,source_url,source_name,confidence,image_url,sponsored,last_seen)
-      VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,0,?)
-      ON CONFLICT(id) DO UPDATE SET name=excluded.name,category=excluded.category,address=excluded.address,
-      latitude=excluded.latitude,longitude=excluded.longitude,website=excluded.website,confidence=excluded.confidence,
-      last_seen=excluded.last_seen,updated_at=CURRENT_TIMESTAMP`
-     ).bind(x.id,safeText(x.name,160),'Denver','CO',safeText(x.category,60),safeText(x.address,240),
-      x.latitude,x.longitude,validWebsite(x.website),'https://overturemaps.org/','Overture Maps',
-      Number(x.confidence)||0,'',safeText(payload.generated_at,40)));
-    }
-    if(statements.length){await env.RESTAURANTS.batch(statements);updated+=statements.length}
+   const manifestResponse=await fetch(SNAPSHOT_ROOT+'data/restaurants/city-manifest.json',
+    {headers:{'User-Agent':'QuantaPhi-Restaurant-Directory/1.0'},signal:AbortSignal.timeout(25000)});
+   if(!manifestResponse.ok)throw Error('metro_manifest_http_'+manifestResponse.status);
+   const configs=approvedMetroSnapshots(await manifestResponse.json());
+   for(const cfg of configs){
+    const response=await fetch(SNAPSHOT_ROOT+cfg.path,
+     {headers:{'User-Agent':'QuantaPhi-Restaurant-Directory/1.0'},signal:AbortSignal.timeout(25000)});
+    if(!response.ok)throw Error('approved_metro_snapshot_http_'+response.status);
+    await importApprovedMetro(env,cfg,await response.json());
    }
-   await env.RESTAURANTS.prepare(
-    'INSERT OR REPLACE INTO restaurant_ingest_runs(run_id,city,state,source_name,dataset_version,records) VALUES(?,?,?,?,?,?)'
-   ).bind(safeText(payload.generated_at,40),'Denver','CO','Overture Maps',safeText(payload.dataset_version,60),updated).run();
   })());
  }
 };
