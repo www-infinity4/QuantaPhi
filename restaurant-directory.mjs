@@ -31,6 +31,7 @@ function mount(){
  const standard={id:'restaurant-directory',name:'Infinity Restaurant Directory',category:'Restaurants',official:'https://overturemaps.org/',featureUrl:'https://overturemaps.org/',route:'/?card=restaurant-directory'};
  mountCardActions(actions,standard);
  let city='Denver',state='CO',page=0,items=[],selected=0,loading=false,loaded=false,hasMore=false,requestNo=0,cityTotal=0;
+ const cityCounts=new Map();
  function details(item){
   result.replaceChildren();
   if(!item){result.append(el('p','rd-empty','No entries on this page. Try another name or cuisine.'));return}
@@ -59,10 +60,10 @@ function mount(){
   next.disabled=loading||(!hasMore&&selected>=items.length-1);
   position.textContent=items.length?'Result '+(page*24+selected+1)+' · '+city:'No matches';
  }
- async function find(p=0,randomItem=false){
+ async function find(p=0,randomItem=false,selectLast=false){
   if(loading)return;
   loading=true;page=p;selected=0;const serial=++requestNo;
-  submit.disabled=true;status.textContent='Loading '+city+' restaurants…';card.setAttribute('aria-busy','true');
+  submit.disabled=prev.disabled=next.disabled=discover.disabled=true;status.textContent='Loading '+city+' restaurants…';card.setAttribute('aria-busy','true');
   try{
    const params=new URLSearchParams({city,state,q:search.value.trim().slice(0,65),page:String(page)});
    const response=await fetch('/api/dining/search?'+params,{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(15000)});
@@ -70,16 +71,17 @@ function mount(){
    const data=await response.json();if(serial!==requestNo)return;
    items=Array.isArray(data.items)?data.items:[];hasMore=Boolean(data.has_more);
    if(randomItem&&items.length)selected=Math.floor(Math.random()*items.length);
+   else if(selectLast&&items.length)selected=items.length-1;
    status.textContent=items.length?('Displaying '+items.length+' sourced restaurants · '+city):'No matching restaurants found. Try a broader search.';
    loaded=true;
   }catch{
    if(serial===requestNo){items=[];hasMore=false;status.textContent='Restaurant database is unavailable at the moment. Existing individual restaurant cards remain accessible.'}
-  }finally{if(serial===requestNo){loading=false;submit.disabled=false;card.removeAttribute('aria-busy');show()}}
+  }finally{if(serial===requestNo){loading=false;submit.disabled=discover.disabled=false;card.removeAttribute('aria-busy');show()}}
  }
- form.addEventListener('submit',e=>{e.preventDefault();const [s,c]=place.value.split('|');state=s;city=c;cityTotal=0;void find(0)});
+ form.addEventListener('submit',e=>{e.preventDefault();const [s,c]=place.value.split('|');state=s;city=c;cityTotal=cityCounts.get(place.value)||0;void find(0)});
  discover.addEventListener('click',()=>{if(loading)return;const pages=Math.max(1,Math.ceil(cityTotal/24));search.value='';void find(Math.floor(Math.random()*pages),true)});
- next.addEventListener('click',()=>{if(selected<items.length-1){selected++;show()}else if(hasMore)void find(page+1)});
- prev.addEventListener('click',()=>{if(selected>0){selected--;show()}else if(page>0)void find(page-1)});
+ next.addEventListener('click',()=>{if(loading)return;if(selected<items.length-1){selected++;show()}else if(hasMore)void find(page+1)});
+ prev.addEventListener('click',()=>{if(loading)return;if(selected>0){selected--;show()}else if(page>0)void find(page-1,false,true)});
  card.addEventListener('oracle:activate',()=>{if(!loaded&&!loading)void find(0)});
  // Discover city inventory on activation only; never infer precise user location.
  let citiesLoaded=false;
@@ -89,6 +91,7 @@ function mount(){
    const r=await fetch('/api/dining/stats',{credentials:'omit',signal:AbortSignal.timeout(10000)});
    if(!r.ok)return;const data=await r.json();
    for(const item of data.cities||[]){
+    cityCounts.set(item.state+'|'+item.city,Number(item.total)||0);
     if(item.city===city&&item.state===state)cityTotal=Number(item.total)||0;
     if(!item.city||!/^[A-Z]{2}$/.test(item.state)||item.state==='CO'&&item.city==='Denver')continue;
     const o=el('option','',item.city+', '+item.state+' · '+item.total+' listings');
