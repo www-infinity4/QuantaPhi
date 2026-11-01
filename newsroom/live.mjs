@@ -104,5 +104,7 @@ if(typeof document!=='undefined'){
  }
  refreshButton?.addEventListener('click',load);
  load();
+ // A single displayed headline must also expire without a button press or news refresh.
+ setInterval(()=>{if(stories.length)render();},60 * 1000);
  setInterval(load,15 * 60 * 1000);
 }
