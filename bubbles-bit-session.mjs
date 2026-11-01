@@ -19,8 +19,9 @@ export function applyBitObservation(previous,event){
  if(state.seenReceiptIds.includes(event.receiptId)){state.duplicates++;return state;}
  // Bounded, private-memory-free projection. Backend receipt ID is for display,
  // not a financial capability or a proof that a wallet has settled.
+ if(state.seenReceiptIds.length>=500)return state;
  state.seenReceiptIds.push(event.receiptId);
- if(state.seenReceiptIds.length>100)state.seenReceiptIds.shift();
+ // Bound the view: never evict an ID and accidentally count a replay later.
  state.candidateCount++;
  state.recent.unshift({tool:event.tool,receiptTail:event.receiptId.slice(-8)});
  state.recent=state.recent.slice(0,6);
