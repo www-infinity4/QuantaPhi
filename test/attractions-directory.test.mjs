@@ -27,7 +27,7 @@ test('source feed is read-only, indexed and capped at 24 results per page',async
  const db={prepare(q){sql=q;return {bind(...b){params=b;return {all:async()=>({results:[{...seed.items[0],last_seen:seed.generated_at}]})}}}}};
  const env={ATTRACTIONS:db};
  const a=await worker.fetch(new Request('https://test.example/api/attractions/feed?state=CO&page=9000'),env);
- assert.equal(a.status,200);const body=await a.json();assert.equal(body.page,200);assert.equal(params.at(-1),4800);
+ assert.equal(a.status,200);const body=await a.json();assert.equal(body.page,9000);assert.equal(params.at(-1),216000);
  assert.equal(body.items[0].sponsored,false);assert.equal(body.items[0].card_kind,'attraction');
  assert.match(sql,/FROM attractions/);
  assert.equal((await worker.fetch(new Request('https://test.example/api/attractions/feed?state=ZZ'),env)).status,400);
@@ -38,4 +38,16 @@ test('cron is the only import writer and invalid source batches fail closed',asy
  const src=read('workers/attractions-directory.mjs');
  assert.match(src,/async scheduled/);
  assert.doesNotMatch(src,/request\.method==='POST'/);
+});
+test('lookahead reports more pages only when a 25th record exists, and deep pages do not repeat page 200',async()=>{
+ let params=[];
+ const rows=Array.from({length:25},(_,i)=>({...seed.items[0],id:'curated:colorado-'+String(i).padStart(8,'0'),last_seen:seed.generated_at}));
+ const env={ATTRACTIONS:{prepare(){return {bind(...args){params=args;return {all:async()=>({results:rows})}}}}}};
+ const a=await (await worker.fetch(new Request('https://test.example/api/attractions/search?state=CO&page=201'),env)).json();
+ assert.equal(a.page,201);assert.equal(params.at(-1),201*24);
+ assert.equal(a.count,24);assert.equal(a.items.length,24);assert.equal(a.has_more,true);
+ const cap=await (await worker.fetch(new Request('https://test.example/api/attractions/search?state=CO&page=100000'),env)).json();
+ assert.equal(cap.has_more,false);
+ const negative=await (await worker.fetch(new Request('https://test.example/api/attractions/search?state=CO&page=-1'),env)).json();
+ assert.equal(negative.page,0);
 });
