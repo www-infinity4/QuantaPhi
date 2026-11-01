@@ -11,7 +11,7 @@ async function search(url,env){
  const city=safeText(url.searchParams.get('city')||'Denver',80);
  const state=safeText(url.searchParams.get('state')||'CO',2).toUpperCase();
  const category=safeText(url.searchParams.get('category'),60);
- const page=Math.min(200,Math.max(0,Number.parseInt(url.searchParams.get('page')||'0',10)||0));
+ const page=Math.min(1000,Math.max(0,Number.parseInt(url.searchParams.get('page')||'0',10)||0));
  const limit=24;
  if(!/^[A-Z]{2}$/.test(state)||!/^[\w .'-]{2,80}$/.test(city))return err('Invalid city or state',400);
  const terms=q?('%'+q+'%'):'%';
