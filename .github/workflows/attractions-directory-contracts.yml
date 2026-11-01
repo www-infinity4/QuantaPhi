@@ -1,0 +1,60 @@
+name: Colorado Attractions D1 source and Oracle card contracts
+on:
+  pull_request:
+    paths:
+      - 'attractions-directory.*'
+      - 'workers/attractions-directory.mjs'
+      - 'data/attractions/**'
+      - 'scripts/attractions-import.py'
+      - 'scripts/attractions-batch-validate.py'
+      - 'test/test_attractions_batch_validate.py'
+      - 'test/attractions-directory.test.mjs'
+      - 'test/attractions-directory.browser.spec.mjs'
+      - 'test/test_attractions_import.py'
+      - 'index.html'
+      - '.github/workflows/attractions-directory-contracts.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'attractions-directory.*'
+      - 'workers/attractions-directory.mjs'
+      - 'data/attractions/**'
+      - 'scripts/attractions-import.py'
+      - 'scripts/attractions-batch-validate.py'
+      - 'test/test_attractions_batch_validate.py'
+      - 'test/attractions-directory.test.mjs'
+      - 'test/attractions-directory.browser.spec.mjs'
+      - 'test/test_attractions_import.py'
+      - 'index.html'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Node worker and browser module validation
+        run: |
+          node --check workers/attractions-directory.mjs
+          node --check attractions-directory.mjs
+          node --test test/attractions-directory.test.mjs
+      - name: Overture places and four-region provenance tests
+        run: |
+          python -m unittest discover -s test -p test_attractions_import.py -v
+          python -m unittest discover -s test -p test_attractions_batch_validate.py -v
+      - name: Install Chromium for mobile web QA
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify Oracle source card and empty state at 393px
+        run: |
+          python -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-attractions-browser.log 2>&1 &
+          npx playwright test test/attractions-directory.browser.spec.mjs --reporter=line --workers=1

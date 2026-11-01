@@ -1,0 +1,74 @@
+name: Attractions Directory · Colorado Overture source batches
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/attractions-import.py'
+      - 'test/test_attractions_import.py'
+      - 'scripts/attractions-batch-validate.py'
+      - 'test/test_attractions_batch_validate.py'
+      - '.github/workflows/attractions-directory-import.yml'
+  schedule:
+    - cron: '15 9 * * 2'
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: attraction-data-colorado
+  cancel-in-progress: false
+jobs:
+  colorado:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check normalization and provenance
+        run: |
+          python -m unittest discover -s test -p test_attractions_import.py -v
+          python -m unittest discover -s test -p test_attractions_batch_validate.py -v
+      - name: Install official Overture Places downloader
+        run: python -m pip install --disable-pip-version-check overturemaps==1.0.2
+      - name: Download Colorado's four regions
+        run: |
+          set -euo pipefail
+          mkdir -p data/attractions
+          release_from_stac() {
+            curl --fail --silent --show-error --location --max-time 20 https://stac.overturemaps.org/catalog.json |
+              python -c 'import json,re,sys; r=json.load(sys.stdin)["latest"]; assert re.fullmatch(r"20[0-9]{2}-[0-9]{2}-[0-9]{2}\.[0-9]+",r); print(r)'
+          }
+          RELEASE="$(release_from_stac)"
+          echo "Overture source release for all four tiles: ${RELEASE}"
+          while read -r tile bbox; do
+            test "$(release_from_stac)" = "${RELEASE}" || { echo "Overture release changed before ${tile}; refusing mixed batch"; exit 1; }
+            echo "Fetching Colorado region ${tile} from Overture release ${RELEASE}"
+            overturemaps download --stac --release="${RELEASE}" --bbox="${bbox}" -f geojson --type=place -o "/tmp/attractions-${tile}.geojson"
+            test "$(release_from_stac)" = "${RELEASE}" || { echo "Overture release changed during ${tile}; refusing mixed batch"; exit 1; }
+            python scripts/attractions-import.py \
+              --input "/tmp/attractions-${tile}.geojson" \
+              --output "data/attractions/co-overture-${tile}.json" \
+              --release "${RELEASE}"
+          done <<'TILES'
+          nw -109.060,39.000,-105.550,41.010
+          ne -105.550,39.000,-102.040,41.010
+          sw -109.060,36.990,-105.550,39.000
+          se -105.550,36.990,-102.040,39.000
+          TILES
+      - name: Reject duplicate, mixed-release or truncated four-region candidates
+        run: python scripts/attractions-batch-validate.py data/attractions/co-overture-{nw,ne,sw,se}.json
+      - name: Propose data-only PR for review, never auto-publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add data/attractions/co-overture-*.json
+          if git diff --cached --quiet; then echo 'No source changes'; exit 0; fi
+          git -c user.name='QuantaPhi Attractions Bot' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: Colorado attraction candidates'
+          BRANCH="data/colorado-attractions-${GITHUB_RUN_ID}"
+          git push origin "HEAD:refs/heads/${BRANCH}"
+          gh pr create --base main --head "${BRANCH}" \
+            --title "data: Colorado Overture attractions · four regional shards" \
+            --body "Official Overture Places CLI, category and provenance-filtered. Review counts, coverage and truncation. No sponsorship, bookings, image rights or full Colorado claim." \
+            || echo 'Branch created; create review PR manually if policy blocks gh.'
