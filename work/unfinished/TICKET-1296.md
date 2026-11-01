@@ -4,7 +4,7 @@ project: "Bubbles context-first iterations and Bits"
 state: implementing
 dot: "🟡"
 progress_percent: unknown
-progress_basis: "Phase 1 merged; Phase 2 receipt hardening and live read-only UI in review; spendable ledger remains unimplemented"
+progress_basis: "Phases 1 and 2 merged; real spendable Bits ledger and live production acceptance remain incomplete"
 sessions_spent: 3
 sessions_remaining_estimate: unknown
 agent: ChatGPT
@@ -13,16 +13,16 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: fix/bubbles-bits-receipts-iteration-20261101
-head_sha: null
+branch: main
+head_sha: 447a34be60229766a60f999e66bafbeda5916d59
 tests:
   - "Phase 1 receipt projection merged in PR #1297"
-  - "Phase 2: duplicate receipt identity, tool provenance, batch limits, per-chat UI, and context-first regression tests in review"
-merged: false # phase 2 branch only; phase 1 PR #1297 is merged
+  - "Phase 2 PR #1338 merged after seven required CI groups passed"
+merged: true # source Phases 1 and 2 only; spendable ledger is still incomplete
 deployed: false
 live_verified: false
 blocker: "Authentic wallet credit/debit settlement and server-minted proof still need an idempotent authenticated ledger"
-next_action: "Verify exact-head CI and merge read-only receipt UI; then build authenticated D1 Bits settlement and spend ledger without affecting existing wallet assets"
+next_action: "Implement owner-authenticated, server-verified D1 Bits settlement and spend ledger, and independently verify Cloudflare release without changing existing wallet balances"
 
 # Acceptance
 - Personal Context is first step for every authenticated iteration
@@ -44,3 +44,9 @@ Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1296
 - Added in-chat Bubbles Bits observation counter: actual tool receipt IDs, owner-memory-first gating, no private transcript persistence, and reset on chat change. All tallies remain non-spendable until a server ledger settles them.
 - Bubbles owner archive retrieval moved before current-turn tool routing. This does not access ChatGPT Personal Context.
 - The new activity view performs zero wallet writes and cannot claim an asset payout. Deployment and live wallet acceptance remain unverified.
+
+# Merge receipt · 2026-11-01
+- PR: https://github.com/www-infinity4/QuantaPhi/pull/1338
+- Exact merged source: `447a34be60229766a60f999e66bafbeda5916d59`
+- Required CI green: Bubbles Bits, unified interface, shared-memory, Android draft-safety, picture/story, Quanta wallet regressions and Brain full diagnostic.
+- Source merge verified. Cloudflare deployment, spendable Bits settlement and live phone acceptance are not verified.
