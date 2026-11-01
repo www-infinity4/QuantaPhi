@@ -1,0 +1,53 @@
+name: Restaurant Directory · Sync Cloudflare D1
+on:
+  pull_request:
+    paths:
+      - scripts/restaurant-directory-cloudflare-sync.py
+      - test/test_restaurant_cloudflare_sync.py
+      - .github/workflows/restaurant-directory-d1-sync.yml
+  push:
+    branches: [main]
+    paths:
+      - data/restaurants/denver-co.json
+      - scripts/restaurant-directory-cloudflare-sync.py
+      - test/test_restaurant_cloudflare_sync.py
+      - .github/workflows/restaurant-directory-d1-sync.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: restaurant-directory-d1-sync
+  cancel-in-progress: false
+jobs:
+  test-and-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify source and D1 write restrictions
+        run: |
+          python -m unittest discover -s test -p test_restaurant_directory_import.py -v
+          python -m unittest discover -s test -p test_restaurant_cloudflare_sync.py -v
+      - name: Import approved Denver snapshot into isolated D1
+        if: github.event_name != 'pull_request'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          python scripts/restaurant-directory-cloudflare-sync.py --input data/restaurants/denver-co.json
+      - name: Report safe record count
+        if: github.event_name != 'pull_request'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('data/restaurants/denver-co.json').read_text())
+          print('Vetted restaurant snapshot records:',len(data['items']))
+          print('Cloudflare sync completed only if preceding upload step succeeded.')
+          PY
