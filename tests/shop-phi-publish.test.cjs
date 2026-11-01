@@ -12,6 +12,7 @@ function setup({publicVisible=true,photo=false}={}){
   calls.push({path:p,body});
   if(p==='/listings')return {saved:'private-draft',published:false,listing:server};
   if(p.endsWith('/publish'))return {published:true,visibility:'unlisted',listing:server};
+  if(p.endsWith('/edit'))return {edited:true,published:true,visibility:'unlisted',listing:server};
   throw Error('unsupported');
  }}};
  const fetch=async(url,opts)=>{calls.push({path:url,method:opts.method});
@@ -74,4 +75,29 @@ test('public page and entrypoint both load publisher from verified wallet and no
  assert.doesNotMatch(page,/Purchase now|PayPal checkout/);
  for(const f of ['shop-phi-publish.js','shopphi-item.js','quant-ai-personal.js','shop-ad-phi.js','shop-phi-seller.js','shopphi-wallet-status.js'])
   assert.doesNotThrow(()=>new Function(source(f)));
+});
+
+test('existing public ShopPhi listing is edited in place only after explicit confirmation and public readback',async()=>{
+ const s=setup();s.item.publishState='public';s.item.confirmPublishedEdit=true;
+ const done=await s.publish();
+ assert.equal(done,true);
+ assert.equal(s.item.publishState,'public');
+ assert.equal(s.calls[0].path,'/listings/'+s.item.itemId+'/edit');
+ assert.equal(s.calls[0].body.confirmPublishedEdit,true);
+ assert.equal(s.calls[1].path,'/quant-ai/api/shopphi/public/'+s.item.itemId);
+ assert.equal(s.calls.some(c=>c.path==='/listings'),false,'must not create a duplicate item');
+ assert.equal(s.calls.some(c=>c.path.endsWith('/publish')),false,'must not republish');
+ assert.match(s.status.textContent,/updated and verified/);
+});
+test('public listing edits cannot be sent without explicit owner approval',async()=>{
+ const s=setup();s.item.publishState='public';s.item.confirmPublishedEdit=false;
+ await assert.rejects(s.publish(),/confirm/i);
+ assert.equal(s.calls.length,0);
+});
+test('seller editor exposes editing existing public items and prevents duplicate local IDs',()=>{
+ const src=source('shop-ad-phi.js');
+ assert.match(src,/Edit this saved listing/);
+ assert.match(src,/confirmPublishedEdit/);
+ assert.match(src,/read\(KEY\)\.filter\(x=>x\.itemId!==item\.itemId\)/);
+ assert.match(source('quant-ai-personal.js'),/publish\|remove\|edit/);
 });
