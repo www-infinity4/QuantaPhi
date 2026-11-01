@@ -79,6 +79,22 @@ class BusinessIngestTests(unittest.TestCase):
             self.assertEqual(len(batches),1)
             self.assertEqual(len(batches[0]),1)
 
+    def test_d1_forbidden_reports_scoped_permission_blocker_without_token(self):
+        from unittest.mock import patch
+        from urllib.error import HTTPError
+        old_acc,old_token=ingest.ACCOUNT,ingest.TOKEN
+        fake_token='fake_token_for_test_only_123456789'
+        try:
+            ingest.ACCOUNT='0'*32
+            ingest.TOKEN=fake_token
+            forbidden=HTTPError('https://api.cloudflare.com/client/v4/',403,'Forbidden',{},None)
+            with patch.object(ingest.urllib.request,'urlopen',side_effect=forbidden):
+                with self.assertRaisesRegex(RuntimeError,'D1.*403.*permission') as caught:
+                    ingest.api_query('SELECT 1')
+            self.assertNotIn(fake_token,str(caught.exception))
+        finally:
+            ingest.ACCOUNT,ingest.TOKEN=old_acc,old_token
+
     def test_api_checks_credentials_before_any_network(self):
         old_acc,old_token=ingest.ACCOUNT,ingest.TOKEN
         try:
