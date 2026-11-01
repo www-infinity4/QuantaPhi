@@ -1,4 +1,4 @@
-/* No remote scripts, localStorage, tracking, uploads or file reads.
+/* No remote scripts, persistent browser storage, tracking, uploads or file reads.
  * This is a short-lived planning UI, NOT a credential collection service. */
 import {DOCUMENT_KINDS,sessionReadiness,redactPreview} from './bubbles-identity-settings-core.mjs';
 const root=document.getElementById('bubblesIdentityWorkspace');
