@@ -1,6 +1,6 @@
 /* Public listings from explicitly followed original source cards.
  * Never claim a third-party login exposes a private feed or bid permissions. */
-import {fetchSpotlights,publicImageUrl,sourceUrl} from './quick-card-spotlights.mjs?v=20261031-source-ad-first1';
+import {fetchSpotlights,publicImageUrl,sourceUrl} from './quick-card-spotlights.mjs?v=20261101-freshest1';
 
 const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n;};
 const safeId=value=>typeof value==='string'&&/^[a-z0-9-]{1,70}$/.test(value);
