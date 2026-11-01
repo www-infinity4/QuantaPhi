@@ -24,6 +24,6 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Check out exact commit
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Check ticket and index contracts
         run: node --test test/unfinished-ledger.test.mjs
