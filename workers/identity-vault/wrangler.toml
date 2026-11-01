@@ -1,0 +1,14 @@
+name = "quantaphi-identity-vault"
+main = "./index.mjs"
+compatibility_date = "2026-11-01"
+workers_dev = false
+
+[[d1_databases]]
+binding = "IDENTITY_DB"
+database_name = "quantaphi-identity-vault"
+database_id = "b03d58f0-7a58-4ead-b740-b7ecf6a3a3e2"
+
+# No public routes or direct client access.
+# Future AUTH_SERVICE binding must authenticate the existing session.
+# Future secrets: IDENTITY_ENCRYPTION_KEY_B64 and IDENTITY_HMAC_KEY_B64.
+# Never put real keys, SSNs or ID documents in Git, D1 plaintext or chat.
