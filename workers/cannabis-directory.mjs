@@ -15,7 +15,7 @@ const HEADERS={
 const reply=(body,status=200)=>Response.json(body,{status,headers:HEADERS});
 const fail=(error,status)=>reply({error,items:[]},status);
 const clean=(v,max=80)=>String(v??'').replace(/[<>]/g,'').replace(/\s+/g,' ').trim().slice(0,max);
-const stateOf=(v)=>clean(v,2).toUpperCase();
+const stateOf=(v)=>String(v??'').trim().toUpperCase();
 const isState=s=>STATES.includes(s);
 const ack=req=>req.headers.get('X-Visitor-21-Acknowledged')==='true';
 const publicRow=row=>{
@@ -46,7 +46,10 @@ async function coverage(env){
   const {results:jobs}=await env.DIRECTORY.prepare(
     "SELECT status,COUNT(*) AS jobs FROM directory_jobs GROUP BY status ORDER BY status"
   ).all();
-  return reply({states_queued:50,states_with_policy_rows:rows.length,
+  const queued=await env.DIRECTORY.prepare(
+    "SELECT COUNT(DISTINCT state) AS queued_states FROM directory_jobs WHERE status='queued'"
+  ).first();
+  return reply({nationwide_target_states:50,states_queued:Number(queued?.queued_states)||0,states_with_policy_rows:rows.length,
     states_with_listings:rows.filter(r=>r.listed_records>0).length,
     total_listed:rows.reduce((n,r)=>n+r.listed_records,0),
     states:rows,job_statuses:jobs||[],
@@ -70,7 +73,7 @@ async function regulators(env,url){
       source_kind:src?.source_kind||'source_pending',source_reviewed:!!src,
       source_reviewed_at:src?.verified_at||null,
       note:src?.notes||'Regulator source not yet independently cataloged.',
-      adult_use:p?.adult_use||'unreviewed',medical_program:p?.medical_program===null?null:!!p?.medical_program,
+      adult_use:p?.adult_use||'unreviewed',medical_program:p?.medical_program==null?null:!!p.medical_program,
       policy_reviewed_at:p?.reviewed_at||null};
   }),disclosure:'Source catalog is not a claim that all 50 state store lists were imported or licenses verified.'});
 }
