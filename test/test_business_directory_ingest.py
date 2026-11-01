@@ -44,7 +44,8 @@ class BusinessIngestTests(unittest.TestCase):
     def test_api_checks_credentials_before_any network(self):
         old_acc,old_token=ingest.ACCOUNT,ingest.TOKEN
         try:
-            ingest.ACCOUNT='',ingest.TOKEN=''
+            ingest.ACCOUNT = ''
+            ingest.TOKEN = ''
             with self.assertRaisesRegex(RuntimeError,'not configured'):
                 ingest.api_query('SELECT 1')
         finally:
