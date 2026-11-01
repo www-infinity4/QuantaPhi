@@ -97,6 +97,29 @@ export function validateColoradoShardBatch(payloads){
  return {release,records:total,closures:closed.size};
 }
 
+/** Validate the reviewed curated seed in both full-shard and seed-only Cron paths. */
+export function validateColoradoSeed(payload){
+ if(payload?.schema_version!==1||payload.state!=='CO'||
+    payload.source_name!=='QuantaPhi curated official visitor links'||
+    payload.license!=='original_directory_entries'||
+    typeof payload.generated_at!=='string'||
+    !/^\\d{4}-\\d\\d-\\d\\dT[\\d:.]+Z$/.test(payload.generated_at)||
+    payload.generated_at.length>45||
+    typeof payload.dataset_version!=='string'||!payload.dataset_version||
+    !Array.isArray(payload.items)||payload.items.length<1||payload.items.length>5000||
+    (payload.closed_ids!==undefined&&(!Array.isArray(payload.closed_ids)||payload.closed_ids.length>0))||
+    payload.truncated===true)throw Error('invalid_colorado_seed');
+ const ids=new Set();
+ for(const row of payload.items){
+  if(!row||typeof row.id!=='string'||!row.id.startsWith('curated:')||
+     ids.has(row.id)||row.state!=='CO'||row.image_url!==''||
+     !cleanRecord(row,'CO',payload.generated_at))
+   throw Error('invalid_colorado_seed');
+  ids.add(row.id);
+ }
+ return payload;
+}
+
 export default {
  async fetch(request,env){
   if(request.method!=='GET')return answer({error:'Read-only directory'},405);
@@ -133,14 +156,7 @@ export default {
     const seedResponse=await fetch(base+'co-seed.json',{signal:AbortSignal.timeout(25000)});
     if(!seedResponse.ok)throw Error('colorado_seed_http_'+seedResponse.status);
     const seedPayload=await seedResponse.json();
-    if(seedPayload?.schema_version!==1||seedPayload.state!=='CO'||
-       seedPayload.source_name!=='QuantaPhi curated official visitor links'||
-       seedPayload.license!=='original_directory_entries'||
-       typeof seedPayload.generated_at!=='string'||!seedPayload.generated_at||
-       typeof seedPayload.dataset_version!=='string'||!seedPayload.dataset_version||
-       !Array.isArray(seedPayload.items)||seedPayload.items.length<1||
-       seedPayload.items.some(row=>!cleanRecord(row,'CO',seedPayload.generated_at)))
-      throw Error('invalid_colorado_seed');
+    validateColoradoSeed(seedPayload);
     for(let i=0;i<4;i++)await importSnapshot(env,{...payloads[i],shard:shards[i]});
     await importSnapshot(env,seedPayload);
     return;
@@ -148,7 +164,7 @@ export default {
    const seed=await fetch(base+'co-seed.json',{signal:AbortSignal.timeout(25000)});
    if(!seed.ok)throw Error('colorado_seed_http_'+seed.status);
    const seedPayload=await seed.json();
-   if(seedPayload?.state!=='CO')throw Error('invalid_colorado_seed');
+   validateColoradoSeed(seedPayload);
    await importSnapshot(env,seedPayload);
   })())}
 };
