@@ -88,6 +88,7 @@ test('Colorado shard batch must be complete, one release, duplicate-free and unt
  assert.equal(validateColoradoShardBatch(shards).records,24);
  assert.throws(()=>validateColoradoShardBatch(shards.slice(0,3)),/incomplete_colorado_shards/);
  assert.throws(()=>validateColoradoShardBatch([{...shards[0],truncated:true},...shards.slice(1)]),/invalid_colorado_shard/);
+ assert.throws(()=>validateColoradoShardBatch([...shards.slice(0,3),{...shards[3],generated_at:undefined}]),/invalid_colorado_shard/);
  assert.throws(()=>validateColoradoShardBatch([{...shards[0],dataset_version:'2026-11-01.0'},...shards.slice(1)]),/mixed_colorado_release/);
  assert.throws(()=>validateColoradoShardBatch([{...shards[0],items:[...shards[0].items.slice(0,5),shards[1].items[0]]},...shards.slice(1)]),/invalid_colorado_record/);
  assert.throws(()=>validateColoradoShardBatch([{...shards[0],closed_ids:[shards[1].items[0].id]},...shards.slice(1)]),/conflicting_colorado_closure/);
@@ -106,4 +107,28 @@ test('Cloudflare Cron refuses a partial four-region upload before any D1 write',
   await assert.rejects(pending,/incomplete_colorado_shards/);
   assert.equal(urls.length,4);
  }finally{globalThis.fetch=previous}
+});
+
+test('Cron rejects a non-Colorado curated seed before any four-shard D1 write',async()=>{
+ const oldFetch=globalThis.fetch;
+ const makeRow=i=>({id:'overture:colorado-test-'+String(i).padStart(10,'0'),
+  name:'Sourced attraction',city:'Denver',state:'CO',category:'museum',
+  latitude:39.7,longitude:-104.9,website:'',source_name:'Overture Maps',
+  source_url:'https://overturemaps.org/',license:'CDLA-Permissive-2.0',
+  confidence:.9,image_url:'',image_attribution:''});
+ const shards=Array.from({length:4},(_,s)=>({schema_version:1,state:'CO',source_name:'Overture Maps',
+  dataset_version:'2026-10-21.0',license:'CDLA-Permissive-2.0',
+  generated_at:'2026-11-01T12:00:00Z',truncated:false,eligible_count:6,
+  items:Array.from({length:6},(_,i)=>makeRow(s*6+i)),closed_ids:[]}));
+ let requested=0;
+ globalThis.fetch=async url=>{const n=requested++;
+  return {status:200,ok:true,json:async()=>n<4?shards[n]:{...seed,state:'WY'}};
+ };
+ try{
+  let pending;
+  await worker.scheduled({}, {ATTRACTIONS:{prepare(){throw Error('D1 must remain untouched')}}},
+   {waitUntil(p){pending=p}});
+  await assert.rejects(pending,/invalid_colorado_seed/);
+  assert.equal(requested,5);
+ }finally{globalThis.fetch=oldFetch}
 });
