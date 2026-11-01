@@ -76,6 +76,23 @@
  <div id="bulkAllocationResults"></div>
  <p class="bulk-disclosure">Research-only proposal. No buyer consent, payment, wallet charge, merchant inventory or shipping quote is implied. Confirm costs and storage before purchasing.</p>
 </section>
+<section class="lab-cooperative" id="cooperative-power-chain" aria-labelledby="cooperativeHeading">
+ <div class="lab-heading"><div><span class="lab-kicker">POWER CHAIN / COMPONENT 003</span><h2 id="cooperativeHeading">Cooperative shopping Power Chain</h2></div><p>Describe a gift or supplies mission. Design a practical research sequence before committing money or delivery plans.</p></div>
+ <form id="cooperativeIntentForm" class="co-op-form">
+  <label>Shopping purpose<select name="purpose"><option value="gift">Gifts and special occasions</option><option value="monthly-supplies">Monthly supplies</option></select></label>
+  <label>Maximum budget (USD)<input name="budget" inputmode="decimal" value="1000.00" required aria-label="Shopping budget in US dollars"></label>
+  <label>Items wanted<input name="itemCount" type="number" min="1" max="1000" value="10" required></label>
+  <label>Maximum merchants<input name="maxMerchants" type="number" min="1" max="100" value="4" required></label>
+  <label>Country or region (optional)<input name="region" maxlength="60" autocomplete="off" placeholder="For delivery research, not a live quote"></label>
+  <label>Optional interests, comma separated<input name="recipientInterests" maxlength="300" autocomplete="off" placeholder="art, music, gardening"></label>
+  <button type="submit">Prepare a cooperative research plan</button>
+ </form>
+ <p class="co-op-intro">The recipient's identity is not needed. If you choose to add interests, they're used only for this local research plan. Real merchant prices and stock, a contracted fulfillment hub, and each delivery quote must be verified later.</p>
+ <p id="cooperativeStatus" role="status" aria-live="polite">Ready to prepare your plan locally.</p>
+ <div id="cooperativePlan" class="co-op-output" aria-label="Shopping Power Chain plan"></div>
+ <button type="button" id="cooperativeResearch" class="co-op-advance" disabled>Use the existing Shop research circuit ↗</button>
+ <p class="co-op-intro">No customer payment, user profile, warehouse, 4-store fulfillment, green-freight claim or automatic order is connected here. This is a planning tool, not an offer from Macy's, Walmart, Kroger or JCPenney.</p>
+</section>
 <section class="lab-blueprint" id="blueprint" aria-labelledby="blueprintHeading">
  <div class="lab-heading"><div><span class="lab-kicker">WHY THIS CARD EXISTS</span><h2 id="blueprintHeading">A circuit with a purpose.</h2></div><p>Every new Quick Card begins with intent, an actual working mechanism, and proof.</p></div>
  <div class="lab-principles">
@@ -89,4 +106,5 @@
 <footer class="lab-footer"><span>INFINITY® 2026 · QUANTAPHI DESIGN LAB</span><span>Concept 001 · Functional prototype · Source-first design</span><a href="/">QUANTAPHI ↗</a></footer>
 <script type="module" src="/design-lab/app.mjs?v=1"></script>
 <script type="module" src="/design-lab/bulk-allocator-ui.mjs?v=1"></script>
+<script type="module" src="/design-lab/cooperative-ui.mjs?v=20261101-power003"></script>
 </body></html>
