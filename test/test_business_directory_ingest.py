@@ -60,8 +60,8 @@ class BusinessIngestTests(unittest.TestCase):
     def test_same_name_address_is_deduplicated_within_one_chunk(self):
         with tempfile.TemporaryDirectory() as tmp:
             path=Path(tmp)/'two.geojsonseq'
-            path.write_text(json.dumps(feature(id='first-source-id'))+'\\n'+
-                            json.dumps(feature(id='second-source-id'))+'\\n',encoding='utf-8')
+            path.write_text(json.dumps(feature(id='first-source-id'))+'\n'+
+                            json.dumps(feature(id='second-source-id'))+'\n',encoding='utf-8')
             calls=[]
             def fake_query(sql, params=None, batch=None):
                 calls.append({'sql':sql,'params':params,'batch':batch})
