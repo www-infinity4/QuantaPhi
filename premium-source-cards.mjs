@@ -1,4 +1,4 @@
-import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261031-source-ad-first1';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261031-heritage-signin1';
 // Real source searches, not invented inventory, account data or offers.
 const provider=(id,name,category,official,query,topics,color,extra={})=>({id,name,category,official,query,topics,color,...extra});
