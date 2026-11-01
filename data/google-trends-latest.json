@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-01T20:41:24.869619Z",
+  "checked_at": "2026-11-01T23:58:40.011908Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ps5",
+      "query": "is saquon barkley playing today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-01T23:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50330421/eagles-saquon-barkley-carries-no-injury-designation-commanders-matchup",
+        "https://sports.yahoo.com/articles/eagles-won-t-unleash-struggling-221631195.html",
+        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/eagles-injury-update-saquon-barkley-devonta-smith-dontayvion-wicks-commanders-week-8/762864/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGhSdeM0_T3wAQ5WUO55lldu9cG2SZxSvTBgJdCmWH8Sh6mzAJn7wf3LK_fwk",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50330421/eagles-saquon-barkley-carries-no-injury-designation-commanders-matchup",
+          "title": "Eagles' Saquon Barkley carries no injury designation for Commanders matchup",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGhSdeM0_T3wAQ5WUO55lldu9cG2SZxSvTBgJdCmWH8Sh6mzAJn7wf3LK_fwk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/eagles-won-t-unleash-struggling-221631195.html",
+          "title": "Eagles Won’t Unleash Struggling Saquon Barkley vs Commanders",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrdyHcKQqcs73l1PAaQR-BBJVFqk7hPU5oHsn9uV8Z6fEDv5Sw26XhDNa9sZ4"
+        },
+        {
+          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/eagles-injury-update-saquon-barkley-devonta-smith-dontayvion-wicks-commanders-week-8/762864/",
+          "title": "Eagles injury update: Saquon Barkley set to play against Commanders",
+          "publisher": "NBC Sports Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFkzI3LSmMCcvlOZPJr8vpBjexQ9KyYypwNq3yeCtY7SMVmV1x754cQhWA_ro"
+        }
+      ]
+    },
+    {
+      "query": "stock futures",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-01T23:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html",
+        "https://finance.yahoo.com/markets/article/a-big-sell-off-collides-with-more-big-tech-earnings-and-a-midterm-election-what-to-watch-this-week-110000657.html",
+        "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-stock-market-sells-off-apple-palantir-midterm-elections/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2EH9my-eulC0Jwe1ZC0Q93-R8ZRc3TRLjxLyKPKpsQsHO7o78dlNQ-9fHH8",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html",
+          "title": "Stock futures tick higher ahead of busy week of earnings, jobs data and the midterm elections: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2EH9my-eulC0Jwe1ZC0Q93-R8ZRc3TRLjxLyKPKpsQsHO7o78dlNQ-9fHH8"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/article/a-big-sell-off-collides-with-more-big-tech-earnings-and-a-midterm-election-what-to-watch-this-week-110000657.html",
+          "title": "A big sell-off collides with more Big Tech earnings and a midterm election: What to watch this week",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHPC1lIm9YIgvYFEOQHaWTeU-truTrPpoH10U5NXM2ZNCRUOhOLss9qT6U9NM"
+        },
+        {
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-stock-market-sells-off-apple-palantir-midterm-elections/",
+          "title": "Futures Due After Market Sell-Off; Elections On Deck",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQR9KVlXybKYJbgvSBOnyRsutoawL3eRy0Os6BZ2xW618f9Q9DBW1VGaFUcGdw"
+        }
+      ]
+    },
+    {
+      "query": "kyle williams",
       "approx_searches": "2000+",
-      "published_at": "2026-11-01T20:20:00Z",
+      "published_at": "2026-11-01T23:20:00Z",
       "related_news_urls": [
-        "https://mp1st.com/news/report-bend-studios-next-game-is-a-third-person-co-op-game-reveal-set-for-2027",
-        "https://wccftech.com/bend-studio-third-person-co-op-game-2027-report/",
-        "https://www.pushsquare.com/news/2026/11/rumour-days-gone-dev-to-announce-and-launch-new-ps5-game-in-2027"
+        "https://www.patriots.com/video/drake-maye-shakes-off-fumbled-snap-to-deliver-a-26-yard-dot-to-douglas",
+        "https://sports.yahoo.com/articles/mike-vrabel-first-hand-experience-204919461.html",
+        "https://www.facebook.com/Boston25News/videos/watch-live-patriots-head-coach-mike-vrabel-speaking-ahead-of-game-vs-dolphins/1446147104137912/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4kkkrrrdI6AtnUPpOcEQY4bPeFcqlZ6zvtSkfhNIJmBd-GwXNIB8KinCLPGc",
-      "image_credit": "MP1st",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkfkmIf5NX6PHsfKwIvTR1_lbX3Gnam8EsPfCSJFLoBODA5eAeeWOU8rCAPoE",
+      "image_credit": "New England Patriots",
       "news": [
         {
-          "url": "https://mp1st.com/news/report-bend-studios-next-game-is-a-third-person-co-op-game-reveal-set-for-2027",
-          "title": "Report: Bend Studio’s Next Game Is a Third-Person Co-op Game; Reveal Set for 2027",
-          "publisher": "MP1st",
+          "url": "https://www.patriots.com/video/drake-maye-shakes-off-fumbled-snap-to-deliver-a-26-yard-dot-to-douglas",
+          "title": "Drake Maye shakes off fumbled snap to deliver a 26-yard dot to Douglas",
+          "publisher": "New England Patriots",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4kkkrrrdI6AtnUPpOcEQY4bPeFcqlZ6zvtSkfhNIJmBd-GwXNIB8KinCLPGc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkfkmIf5NX6PHsfKwIvTR1_lbX3Gnam8EsPfCSJFLoBODA5eAeeWOU8rCAPoE"
         },
         {
-          "url": "https://wccftech.com/bend-studio-third-person-co-op-game-2027-report/",
-          "title": "Sony’s Bend Studio Reportedly Plans a 2027 Reveal and Possible Release for Its Third-Person Co-Op Game, Despite Starting the Project Only in Mid-2025",
-          "publisher": "Wccftech",
+          "url": "https://sports.yahoo.com/articles/mike-vrabel-first-hand-experience-204919461.html",
+          "title": "Mike Vrabel Has First-Hand Experience with Nightmares in Miami and How to Avoid Them",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7kj3o14_wQEkwZpdnYzeULIRKI9BLHsDUeqKi4GCO5aC-Ckst3-sDeLZyxW8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXuCwiU5wpUPjaNn3BUB6ke1tU2N-h2rrRX5RNMJlKiuAAeUgxDb6XG1EgNSk"
         },
         {
-          "url": "https://www.pushsquare.com/news/2026/11/rumour-days-gone-dev-to-announce-and-launch-new-ps5-game-in-2027",
-          "title": "Rumour: Days Gone Dev to Announce and Launch New PS5 Game in 2027",
-          "publisher": "Push Square",
+          "url": "https://www.facebook.com/Boston25News/videos/watch-live-patriots-head-coach-mike-vrabel-speaking-ahead-of-game-vs-dolphins/1446147104137912/",
+          "title": "Boston 25 News. . Patriots head coach Mike Vrabel speaking ahead of game vs. Dolphins.",
+          "publisher": "Facebook",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTU-CAhX816t76U5_63GAE8TmT--TC7pYFFgaR4i_UpmM0hCjOybKEuwBFufy8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNIIC_CFKT_rhN1RrC5AxH2iPo79OkBWWY7z-_D1_4hzKLBWcbIVeqaxhiSsU"
         }
       ]
     },
     {
-      "query": "seth mcgowan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-01T20:20:00Z",
+      "query": "russell wilson",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-01T23:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/colts-backup-rb-seth-mcgowan-151417833.html",
-        "https://www.fantasylife.com/articles/fantasy/running-back-handcuffs-update-for-week-8",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/mcgowan-sees-career-high-12-touches-in-week-7-loss"
+        "https://bleacherreport.com/articles/25528069-russell-wilson-video-picking-broncos-chiefs-goes-viral-after-sean-payton-saga",
+        "https://sports.yahoo.com/articles/got-kicked-russell-wilson-reveals-191759529.html",
+        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/01/nfl-russell-wilson-message-to-sean-payton/92550745007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiiw7rQZKGf_yh4WZ557bHJyNgkSVzw48SD2F6LBN_eWy1xOtzPohSLlE-yzo",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQf9QmAgidN9A7IGA93fi9mjr4FypF-bR1r04mV1hvS8r27-8mKZC0YvHKL1M8",
+      "image_credit": "Bleacher Report",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/colts-backup-rb-seth-mcgowan-151417833.html",
-          "title": "Colts’ Backup RB Seth McGowan is a Must-Add Fantasy Football Pickup",
+          "url": "https://bleacherreport.com/articles/25528069-russell-wilson-video-picking-broncos-chiefs-goes-viral-after-sean-payton-saga",
+          "title": "Russell Wilson Video Picking Broncos-Chiefs Goes Viral After Sean Payton Saga",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQf9QmAgidN9A7IGA93fi9mjr4FypF-bR1r04mV1hvS8r27-8mKZC0YvHKL1M8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/got-kicked-russell-wilson-reveals-191759529.html",
+          "title": "“Got Kicked Out of Here”: Russell Wilson Reveals His True Feelings on Broncos After Sean Payton Pushed Him Out",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiiw7rQZKGf_yh4WZ557bHJyNgkSVzw48SD2F6LBN_eWy1xOtzPohSLlE-yzo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNi5DH9q0KXgowqcJrIpf2wgT1DXioxnZFsIliiMhKHQwcxvgaqc-X4f8G9vk"
         },
         {
-          "url": "https://www.fantasylife.com/articles/fantasy/running-back-handcuffs-update-for-week-8",
-          "title": "Running Back Handcuffs Update for Week 8: Is Seth McGowan's Time Coming?",
-          "publisher": "FantasyLife",
+          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/01/nfl-russell-wilson-message-to-sean-payton/92550745007/",
+          "title": "Russell Wilson had a perfect message for Sean Payton before Broncos game",
+          "publisher": "Broncos Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhCxcrFBi0hgn7sO42IFhoaQjfBy7xN73cRoLeqt60f-mwXqVvotpFGBoJJOs"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/mcgowan-sees-career-high-12-touches-in-week-7-loss",
-          "title": "McGowan sees career-high 12 touches in Week 7 loss",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe2lpLh9SdVHSzgEBNI2viw1MQmSHzcF26fiWuDj7q0TLLP81NObousCzVPEI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZwqzMMY44M1BN1JpZvUXV7mghhYNfn4isbOVX-uh_jhvqQV3C8XaXj1_rVno"
         }
       ]
     },
     {
-      "query": "gardner minshew ii",
+      "query": "trent mcduffie",
       "approx_searches": "500+",
-      "published_at": "2026-11-01T20:20:00Z",
+      "published_at": "2026-11-01T23:20:00Z",
       "related_news_urls": [
-        "https://raisingzona.com/cardinals-eagles-perfect-trade-partners-gardner-minshew-reunion",
-        "https://sports.yahoo.com/articles/jacoby-brissett-benched-arizona-cardinals-202139141.html",
-        "https://sports.yahoo.com/nfl/breaking-news/article/jacoby-brissett-benched-in-favor-of-gardner-minshew-as-cardinals-struggle-vs-cowboys-202150118.html"
+        "https://www.chargers.com/news/rams-inactives-week-8-2026",
+        "https://www.cbssports.com/fantasy/football/news/rams-jaylen-watson-done-for-night-645452/",
+        "https://sports.yahoo.com/articles/rams-cb-trent-mcduffie-exits-232609586.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMqiQ3K66o1-PqjUi-Fj9hW0LOqAg1bz3PBuN_cLJpGjjhE5UG5x53_qpB6wA",
-      "image_credit": "Raising Zona",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-snVTbKIbvLamUcHwNEhNR0a5ktlADmWlTrmo64hX_gciOAsP6nknvHPWatM",
+      "image_credit": "Los Angeles Chargers",
       "news": [
         {
-          "url": "https://raisingzona.com/cardinals-eagles-perfect-trade-partners-gardner-minshew-reunion",
-          "title": "Cardinals and Eagles are perfect trade partners for a Gardner Minshew reunion",
-          "publisher": "Raising Zona",
+          "url": "https://www.chargers.com/news/rams-inactives-week-8-2026",
+          "title": "Chargers-Rams Week 8 Inactives: Donte Jackson Won't Play Against Rams",
+          "publisher": "Los Angeles Chargers",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMqiQ3K66o1-PqjUi-Fj9hW0LOqAg1bz3PBuN_cLJpGjjhE5UG5x53_qpB6wA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-snVTbKIbvLamUcHwNEhNR0a5ktlADmWlTrmo64hX_gciOAsP6nknvHPWatM"
         },
         {
-          "url": "https://sports.yahoo.com/articles/jacoby-brissett-benched-arizona-cardinals-202139141.html",
-          "title": "Jacoby Brissett benched by Arizona Cardinals vs. Cowboys",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrzbnReb0o0hhNvhg27BmDgONLnGazUrFabJLNtoZNciIgcGOz1HX5WCFgsrU"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/breaking-news/article/jacoby-brissett-benched-in-favor-of-gardner-minshew-as-cardinals-struggle-vs-cowboys-202150118.html",
-          "title": "Jacoby Brissett benched in favor of Gardner Minshew as Cardinals struggle vs. Cowboys",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyntdyguwrgoYnaNWmTPZNX5eZFQr_JigDxKkUqr7dClA-x-kTxeEx_lRu6yc"
-        }
-      ]
-    },
-    {
-      "query": "buffalo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-01T20:20:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/buffalo-bills-defense-horrible-team-cannot-win-super-bowl-terry-bradshaw-fox",
-        "https://www.buffalorumblings.com/buffalo-bills-analysis/143745/buffalo-bills-fans-concerned-josh-allen-will-be-let-down-by-defense-in-2026",
-        "https://www.democratandchronicle.com/story/sports/football/nfl/bills/2026/10/30/buffalo-bills-defense-stats-rankings-jim-leonhard/92457133007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYbcEMv0adgbWrmOVWxtEFMbEmDKMVDFlpip1RncRHisAneZKXB9coWBSQCfo",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/buffalo-bills-defense-horrible-team-cannot-win-super-bowl-terry-bradshaw-fox",
-          "title": "Buffalo Bills defense is 'horrible' and that means team cannot win the Super Bowl, Terry Bradshaw says on Fox",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYbcEMv0adgbWrmOVWxtEFMbEmDKMVDFlpip1RncRHisAneZKXB9coWBSQCfo"
-        },
-        {
-          "url": "https://www.buffalorumblings.com/buffalo-bills-analysis/143745/buffalo-bills-fans-concerned-josh-allen-will-be-let-down-by-defense-in-2026",
-          "title": "Buffalo Bills fans again concerned Josh Allen will be let down by defense",
-          "publisher": "Buffalo Rumblings",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuC_6RISjipElIHka7liNp-JmT0PbQdFD_CarBFlzLmro5aWe588NO9AQ1gE"
-        },
-        {
-          "url": "https://www.democratandchronicle.com/story/sports/football/nfl/bills/2026/10/30/buffalo-bills-defense-stats-rankings-jim-leonhard/92457133007/",
-          "title": "Buffalo Bills have NFL's best offense and one of its worst defenses",
-          "publisher": "Democrat and Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKAKbxHuaBNMX5xfSJnXFZVeDx64PSKLOXYVvzgdniAnDKzd7IMRMcjs3YY9Q"
-        }
-      ]
-    },
-    {
-      "query": "dallas game",
-      "approx_searches": "500+",
-      "published_at": "2026-11-01T20:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/cowboys-tight-end-jake-ferguson-182807149.html",
-        "https://www.thefantasyfootballers.com/news/645366/jake-ferguson-ruled-out-for-rest-of-game/",
-        "https://www.cbssports.com/fantasy/football/news/cowboys-jake-ferguson-injures-ankle-sunday/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoPDjJNnwnIaV8xg2s83HTIlQqhYiZB5K9cIA9bMZ044_dwb-lmZVHNXkvIt8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/cowboys-tight-end-jake-ferguson-182807149.html",
-          "title": "Cowboys tight end Jake Ferguson exits game vs. Cardinals, is questionable to return",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoPDjJNnwnIaV8xg2s83HTIlQqhYiZB5K9cIA9bMZ044_dwb-lmZVHNXkvIt8"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/645366/jake-ferguson-ruled-out-for-rest-of-game/",
-          "title": "Jake Ferguson Ruled out for rest of game",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR379hUnnLlHotAGSZ7QCLrcktWBdJdOGyRXchF0x9rDpNX2DkbvDgvIHCzRsc"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/cowboys-jake-ferguson-injures-ankle-sunday/",
-          "title": "Cowboys' Jake Ferguson: Injures ankle Sunday",
+          "url": "https://www.cbssports.com/fantasy/football/news/rams-jaylen-watson-done-for-night-645452/",
+          "title": "Rams' Jaylen Watson: Done for night",
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGI5fyhQ-VNoR5OjUJKA5HiGhRinx_c2mJspNiCm3HSxYFfCdA4QSeBF66Ofo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rams-cb-trent-mcduffie-exits-232609586.html",
+          "title": "Rams CB Trent McDuffie exits vs. Chargers due to back injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_VI4L8DcC_kR7LEkcXTTjsFF5AUb_HabNhAILssulj2C4uqWEmGaa8Teolkg"
         }
       ]
     },
     {
-      "query": "hunger games",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-01T20:10:00Z",
-      "related_news_urls": [
-        "https://people.com/mckenna-grace-hunger-games-press-tour-looks-12198907",
-        "https://www.vogue.com/article/elle-fanning-valentino-butterfly-skirt-suit-hunger-games-2026-10-30",
-        "https://variety.com/2026/film/columns/hunger-games-elizabeth-banks-sunrise-on-the-reaping-joseph-zada-1236934165/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzSScP-Nsgnfoh7a80Cz9W2eKjWqHlrNBjaT4PVyMvWWpuv1A91wTpR1Yi6HI",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/mckenna-grace-hunger-games-press-tour-looks-12198907",
-          "title": "See 7 Side-by-Side Photos of McKenna Grace Paying Tribute to The Hunger Games on the Sunrise on the Reaping Press Tour",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzSScP-Nsgnfoh7a80Cz9W2eKjWqHlrNBjaT4PVyMvWWpuv1A91wTpR1Yi6HI"
-        },
-        {
-          "url": "https://www.vogue.com/article/elle-fanning-valentino-butterfly-skirt-suit-hunger-games-2026-10-30",
-          "title": "Elle Fanning’s ‘Hunger Games’ Style Officially Takes Flight",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFEjtA3gdCDd09Kn9PC87swbG1U2IvNgxTJn6w6DVXNXoZfRAfnSmTSeJYonc"
-        },
-        {
-          "url": "https://variety.com/2026/film/columns/hunger-games-elizabeth-banks-sunrise-on-the-reaping-joseph-zada-1236934165/",
-          "title": "Elizabeth Banks on New \"Hunger Games\" Star Joseph Zada: \"Perfect\"",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pRxTKpHt8NcHyzzhwdsXPvqSMlitwmEN5eS3jGN4pBtRjX8fMvb70A4M43o"
-        }
-      ]
-    },
-    {
-      "query": "tyler allgeier",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-01T20:10:00Z",
-      "related_news_urls": [
-        "https://www.fantasypros.com/nfl/notes/481499/tyler-allgeier-2026-week-8-outlook.php",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-30/tyler-allgeier-off-injury-report-to-play-vs-dal",
-        "https://www.thefantasyfootballers.com/news/645119/tyler-allgeier-ready-for-sunday/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThPj4o5-TkvtlcZ7rJ1vHIdkzN4JdHCL8z5N4d2SQJDveil0bP47QFg8Ue4wo",
-      "image_credit": "FantasyPros",
-      "news": [
-        {
-          "url": "https://www.fantasypros.com/nfl/notes/481499/tyler-allgeier-2026-week-8-outlook.php",
-          "title": "Tyler Allgeier Week 8 Outlook - Cardinals at Cowboys",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThPj4o5-TkvtlcZ7rJ1vHIdkzN4JdHCL8z5N4d2SQJDveil0bP47QFg8Ue4wo"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-30/tyler-allgeier-off-injury-report-to-play-vs-dal",
-          "title": "Tyler Allgeier off injury report, to play vs. DAL",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW4TbuyFHbeR2Bmt51s3xID15_FLPsgmPAND24l0Xar_VPrMpDDNN9EzKLS-A"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/645119/tyler-allgeier-ready-for-sunday/",
-          "title": "Tyler Allgeier Ready for Sunday",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9yhVljvXQrgkeQFyGHYwwUvbJb12LhVaFAK03Ed8VhXdB3y4hAcUyR-ikB3o"
-        }
-      ]
-    },
-    {
-      "query": "atlético grau - universitario",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-01T20:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/peru/nota/_/id/17460280/universitario-vs-grau-ruidiaz-no-juega-liga-1-de-peru",
-        "https://libero.pe/futbol-peruano/universitario/2026/10/31/edison-flores-fue-sorprendido-en-plena-entrevista-exigencia-de-hincha-patea-de-afuera-2130134",
-        "https://as.com/apuestas/pronosticos/atletico-grau-vs-universitario-de-deportes-pronostico-01-11-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRwXwLUzuMiWic63y3L-aPknlAehWhC755uMzlDVvdyyuEySxsGL5ai_7Hjik",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/peru/nota/_/id/17460280/universitario-vs-grau-ruidiaz-no-juega-liga-1-de-peru",
-          "title": "Ruidíaz no jugará el Grau vs. Universitario por el Clausura de la Liga 1 2026",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRwXwLUzuMiWic63y3L-aPknlAehWhC755uMzlDVvdyyuEySxsGL5ai_7Hjik"
-        },
-        {
-          "url": "https://libero.pe/futbol-peruano/universitario/2026/10/31/edison-flores-fue-sorprendido-en-plena-entrevista-exigencia-de-hincha-patea-de-afuera-2130134",
-          "title": "Edison Flores fue sorprendido en plena entrevista por exigencia de un hincha: \"Patea de afuera\"",
-          "publisher": "Diario Líbero",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwyHcJTWaVdKxPDAoFftTuVk65gQG4so5IvvVilu1FVeZOnesCQFptWiW6IjI"
-        },
-        {
-          "url": "https://as.com/apuestas/pronosticos/atletico-grau-vs-universitario-de-deportes-pronostico-01-11-2026/",
-          "title": "Atlético Grau - Universitario de Deportes | Pronóstico y cuotas 01.11.2026",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6f02MTn0DMqTMPGjlZ7PvEleu2i5noTkhvpCH-Z53zYirPi34_2tUvqnfXec"
-        }
-      ]
-    },
-    {
-      "query": "pat freiermuth",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-01T20:10:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/videos/rodgers-finds-freiermuth-for-a-28-yard-gain-up-the-seam",
-        "https://www.thefantasyfootballers.com/news/644465/pat-freiermuth-two-catches-in-win-over-new-orleans/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/freiermuth-ineffective-in-week-7-vs-saints"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxKYQzfTXWFXfcPC-g-CsIkEIMRN4hOwT9E7lpbtcUFg9ipunNlh-Y3BLEmhM",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/videos/rodgers-finds-freiermuth-for-a-28-yard-gain-up-the-seam",
-          "title": "Pittsburgh Steelers quarterback Aaron Rodgers finds tight end Pat Freiermuth for a 28-yard gain up the seam",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxKYQzfTXWFXfcPC-g-CsIkEIMRN4hOwT9E7lpbtcUFg9ipunNlh-Y3BLEmhM"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/644465/pat-freiermuth-two-catches-in-win-over-new-orleans/",
-          "title": "Pat Freiermuth Two catches in win over New Orleans",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHBFfXZUD221g5myGVtI19FBdqpBnjMSQ1rLUMCZYp3LpAVpZtvPYv9CPI9dE"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/freiermuth-ineffective-in-week-7-vs-saints",
-          "title": "Freiermuth ineffective in Week 7 vs. Saints",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSci3f9kEim9YVLiC0QgpDTWM9dqMtn6dwyVzgHsObtzmN6DNTa0Jem9y8cyk"
-        }
-      ]
-    },
-    {
-      "query": "celtics - magic",
+      "query": "ram",
       "approx_searches": "500+",
-      "published_at": "2026-11-01T20:10:00Z",
+      "published_at": "2026-11-01T23:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-celtics-vs-magic-live-193000074.html",
-        "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5bmVwcHkuZ2l0aHViLmlvL2JhYnUvVGVhbWxhYi54bWwiLz48L2tycGFubz4=&id=video-orlando-boston-2026-tv-285",
-        "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2Jlbi1zdG9ja3MuZ2l0aHViLmlvL0JhbC9uZXdzL3NtNnMueG1sIi8+PC9rcnBhbm8+&id=video-celtics-v-magic-liv-on-nba-ustv-en_05"
+        "https://finance.yahoo.com/technology/ai/articles/quite-terrible-sam-altman-says-184500058.html",
+        "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
+        "https://www.pcmag.com/news/sam-altman-suggests-running-ai-locally-is-a-waste-of-memory"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_R0xPPN9vcH90f3IQPeXFCJvny-lUHoCcHAJ3-5RekZutZiWK6i3-SUm5ses",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVu--oiJ0FpKELFqy0LzThnJhnj-0_63fYMd2mucjycnu6zQXp4WXT_IideeE",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/quite-terrible-sam-altman-says-184500058.html",
+          "title": "‘Quite terrible’: Sam Altman says the RAM in your PC is a waste. OpenAI could soak up as much as 40% of supply",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVu--oiJ0FpKELFqy0LzThnJhnj-0_63fYMd2mucjycnu6zQXp4WXT_IideeE"
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
+          "title": "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
+          "publisher": "Tom's Hardware",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4_2iZL2GpBMx73yv_-n6z2hOIe8TqAixAqi7z6Up-dtPGP159d9DFr5gqzxg"
+        },
+        {
+          "url": "https://www.pcmag.com/news/sam-altman-suggests-running-ai-locally-is-a-waste-of-memory",
+          "title": "Sam Altman Suggests Running AI Locally Is a Waste of Memory",
+          "publisher": "PCMag",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6rnodfPPE8qqEG3u9ZVNwTphRoXLxeA09IZx2bUCAMAsLEJQNeW279jogMV8"
+        }
+      ]
+    },
+    {
+      "query": "myles garrett injury",
+      "approx_searches": "200+",
+      "published_at": "2026-11-01T23:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/la-rams-myles-garrett-chargers-215554698.html",
+        "https://bleacherreport.com/articles/25524551-myles-garrett-injury-status-return-timeline-updated-rams-sean-mcvay-amid-knee-issue",
+        "https://www.espn.com/nfl/story/_/id/50311303/rams-de-garrett-te-ferguson-practice-week"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpWYSxsWhT-11QcdUVA8H5iSI_n3owq4ipW3gDlt0qsWDGwMqcSJ16S1HfGLs",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-celtics-vs-magic-live-193000074.html",
-          "title": "How to watch Celtics vs Magic: Live stream NBA, TV channel",
+          "url": "https://sports.yahoo.com/articles/la-rams-myles-garrett-chargers-215554698.html",
+          "title": "LA Rams Get New Myles Garrett Update Before Chargers Game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_R0xPPN9vcH90f3IQPeXFCJvny-lUHoCcHAJ3-5RekZutZiWK6i3-SUm5ses"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpWYSxsWhT-11QcdUVA8H5iSI_n3owq4ipW3gDlt0qsWDGwMqcSJ16S1HfGLs"
         },
         {
-          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5bmVwcHkuZ2l0aHViLmlvL2JhYnUvVGVhbWxhYi54bWwiLz48L2tycGFubz4=&id=video-orlando-boston-2026-tv-285",
-          "title": "[𝐒𝐓ream]HERE'S*! Orlando - Boston National Basketball Association 2026 01 November 2026",
-          "publisher": "Pierce Manufacturing",
+          "url": "https://bleacherreport.com/articles/25524551-myles-garrett-injury-status-return-timeline-updated-rams-sean-mcvay-amid-knee-issue",
+          "title": "Myles Garrett Injury Status, Return Timeline Updated By Rams' Sean McVay Amid Knee Issue",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9u2xhdTnAS4jwM--ep9gIA7M1Y2-yP-K2NpzcaG6oNb0f67FMEseWfiV4gVM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfXN4CKgc4YZTmuccL-THOY-nx10Vp2lpsibkP2PnWiJ07oS-zEsOQJT3-oK4"
         },
         {
-          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2Jlbi1zdG9ja3MuZ2l0aHViLmlvL0JhbC9uZXdzL3NtNnMueG1sIi8+PC9rcnBhbm8+&id=video-celtics-v-magic-liv-on-nba-ustv-en_05",
-          "title": "+[#!LIVESTREAMs!]™ Celtics vs Magic Live Free Oct 27, 2026",
-          "publisher": "Pierce Manufacturing",
+          "url": "https://www.espn.com/nfl/story/_/id/50311303/rams-de-garrett-te-ferguson-practice-week",
+          "title": "Rams' DE Garrett, TE Ferguson won't practice this week",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvDJzJ5f4Jqk5GZqi0Nr7_bKgYzdHlow2TFm3p6d-p70nEU5LP1FKCeDw6PE8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgjSENX52mrus1Ol7BSjgZJUCHiH_AS66LXh_dfqFcLUKmbUiZaSURpiaTLXk"
+        }
+      ]
+    },
+    {
+      "query": "inter miami vs new england",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-01T23:10:00Z",
+      "related_news_urls": [
+        "https://www.mlssoccer.com/news/new-england-revolution-host-inter-miami-in-heavyweight-clash",
+        "https://www.revolutionsoccer.net/news/preview-revs-close-regular-season-home-slate-against-inter-miami-cf-on-sunday-night",
+        "https://www.intermiamicf.com/news/match-preview-inter-miami-cf-visits-the-new-england-revolution-on-sunday"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BDnsEAkXeNRXjhsOdvFDOxBxyiGUE9myooz4lqkbism6dLw4CnxMtcV0fW0",
+      "image_credit": "MLSsoccer.com",
+      "news": [
+        {
+          "url": "https://www.mlssoccer.com/news/new-england-revolution-host-inter-miami-in-heavyweight-clash",
+          "title": "New England Revolution host Inter Miami in heavyweight clash",
+          "publisher": "MLSsoccer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BDnsEAkXeNRXjhsOdvFDOxBxyiGUE9myooz4lqkbism6dLw4CnxMtcV0fW0"
+        },
+        {
+          "url": "https://www.revolutionsoccer.net/news/preview-revs-close-regular-season-home-slate-against-inter-miami-cf-on-sunday-night",
+          "title": "Preview | Revs close regular season home slate against Inter Miami CF on Sunday night",
+          "publisher": "revolutionsoccer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeCMEInrK_acViwGCpj57WGjEBuI64BFYN8lZQ89ECjnmumE3mPt8ruB3P6Tc"
+        },
+        {
+          "url": "https://www.intermiamicf.com/news/match-preview-inter-miami-cf-visits-the-new-england-revolution-on-sunday",
+          "title": "MATCH PREVIEW: Inter Miami CF Visits the New England Revolution on Sunday",
+          "publisher": "Inter Miami CF",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq0t-q-vka6ZY7IafCBP38HZ-zLPhlYYuptWvWk6iXZzsSp7rg1dZXJl1naJo"
+        }
+      ]
+    },
+    {
+      "query": "aaron donald",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-01T23:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/why-d-come-back-michael-172225072.html",
+        "https://nypost.com/2026/11/01/sports/aaron-donald-poised-for-breakout-game-against-chargers-battered-offensive-line/",
+        "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/10/30/rams-aaron-donald-stats-sacks-wins/92512346007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2N9BYHdw5ulq1QfQ6iiwZl9tA_ACDpnIxLYnLClCVoso6QM5AXIdw56ZvrGM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/why-d-come-back-michael-172225072.html",
+          "title": "“Why’d I Come Back?” Michael Strahan Questions Aaron Donald’s Unretirement Amid Rams’ Poor Start",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2N9BYHdw5ulq1QfQ6iiwZl9tA_ACDpnIxLYnLClCVoso6QM5AXIdw56ZvrGM"
+        },
+        {
+          "url": "https://nypost.com/2026/11/01/sports/aaron-donald-poised-for-breakout-game-against-chargers-battered-offensive-line/",
+          "title": "Aaron Donald will feast against Chargers’ battered offensive line",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvz11iatMq9xZqoyYsOf1uFM9bJPLAnIGGLbMecxVsutTFevFm8q91XE6Zoys"
+        },
+        {
+          "url": "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/10/30/rams-aaron-donald-stats-sacks-wins/92512346007/",
+          "title": "Aaron Donald doesn't care about stats: 'Only thing that excites me is winning'",
+          "publisher": "Rams Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWIzi_JDgcdqM6SJNypeKFieNQbns_moTsOr5o4UUmUbrB3xQs00bGZP-eGgg"
+        }
+      ]
+    },
+    {
+      "query": "nasdaq futures",
+      "approx_searches": "500+",
+      "published_at": "2026-11-01T23:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html",
+        "https://www.bloomberg.com/news/articles/2026-11-01/stock-market-today-dow-s-p-live-updates",
+        "https://www.nbcnews.com/business/markets/tech-stocks-nasdaq-ai-boom-fears-deepen-rcna606512"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuA09tPy8UXZp-o-RQFQVaAHzeDq5A44BefjO2tvmvVkh5FZzMHmX9EtdnRGE",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html",
+          "title": "Stock market rocked as investors dump tech shares; Nasdaq suffers worst day since June: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuA09tPy8UXZp-o-RQFQVaAHzeDq5A44BefjO2tvmvVkh5FZzMHmX9EtdnRGE"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-01/stock-market-today-dow-s-p-live-updates",
+          "title": "Asian Stocks to Fall as Tech Rout Fuels AI Fears: Markets Wrap",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpF4KX5NmecLOgHW2pEzDpjbEPHqJrt4i4T-mMdzA52Bg_OsVwatnx77nK_p8"
+        },
+        {
+          "url": "https://www.nbcnews.com/business/markets/tech-stocks-nasdaq-ai-boom-fears-deepen-rcna606512",
+          "title": "Tech stocks wipe out $1 trillion in value as concerns deepen about the AI boom",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1f0hXV5fEuW0q-1c3aM5S3T0bjsygtxJRuTkY-DG_tO5O--wevm8sRzqyvkk"
         }
       ]
     }
