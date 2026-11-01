@@ -2915,7 +2915,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }finally{clearTimeout(memoryTimer)}
  }
  const ownerContext=await ownerContextPending;
- window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'memory',state:ownerContext.state}}));
+ if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'memory',state:ownerContext.state}}));
  const relevant=ownerContext.related.filter(m=>!messages.slice(-40).some(x=>x.id===m.id));
  // A card renderer error must not stop normal speech and work tools.
  if(activeCardEvidence){
@@ -3237,7 +3237,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    conversation.append(row);
   }
   if(json.receipt){
-   window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status}}));
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status}}));
    status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
   }
   if(nativeOverlay){
@@ -3790,7 +3790,7 @@ async function pollBrainProgress(){
   // Authenticated Brain tickets are observed state; queued is never completed.
   const iterationTicket=result.tickets.find(ticket=>ticket?.status==='working'&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))||
    result.tickets.find(ticket=>['blocked','queued','ready','committed_unverified','merged_verified','deployed_verified'].includes(ticket?.status)&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''));
-  if(iterationTicket)window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+  if(iterationTicket)if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
    type:'job',repository:iterationTicket.repository,status:iterationTicket.status,
    url:iterationTicket.progress?.url||''}}));
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
