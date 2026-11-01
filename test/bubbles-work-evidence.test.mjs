@@ -100,5 +100,5 @@ test('an in-flight GitHub request never disappears silently when the receipt rem
  const answer=await Promise.race([shown,new Promise((_,reject)=>setTimeout(()=>reject(Error('silent_github_receipt_timeout')),1500))]);
  assert.equal(reads,120);
  assert.match(answer,/no final receipt|could not verify|unconfirmed/i);
- assert.doesNotMatch(answer,/finished|deployed successfully/i);
+ assert.doesNotMatch(answer,/work finished|deployed successfully|completion verified/i);
 });
