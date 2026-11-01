@@ -29,7 +29,7 @@ def address_text(value):
     if not text: return ''
     return re.sub(r'\s+', ' ', str(text).strip())[:240]
 
-def normalize(feature):
+def normalize(feature, *, city='Denver', state='CO', bbox=BBOX):
     p = feature.get('properties') or {}
     tax = p.get('taxonomy') or {}
     hierarchy = tax.get('hierarchy') or []
@@ -51,7 +51,7 @@ def normalize(feature):
         lat, lon = float(lat), float(lon)
     except (ValueError, TypeError, IndexError):
         return None
-    if conf < MIN_CONFIDENCE or not (BBOX[0] <= lon <= BBOX[2] and BBOX[1] <= lat <= BBOX[3]):
+    if conf < MIN_CONFIDENCE or not (bbox[0] <= lon <= bbox[2] and bbox[1] <= lat <= bbox[3]):
         return None
     name_field = p.get('names') or {}
     name = name_field.get('primary', '') if isinstance(name_field, dict) else ''
@@ -61,17 +61,17 @@ def normalize(feature):
     if not name or not re.fullmatch('[a-zA-Z0-9-]{10,}', identity): return None
     category = re.sub('[^a-z_]', '', str(primary).lower())[:60] or 'restaurant'
     return {
-        'id': 'overture:' + identity, 'name': name, 'city': 'Denver', 'state': 'CO',
+        'id': 'overture:' + identity, 'name': name, 'city': city, 'state': state,
         'category': category, 'address': address_text(p.get('addresses')),
         'latitude': lat, 'longitude': lon, 'website': safe_site(p.get('websites')),
         'source_name': 'Overture Maps', 'source_url': 'https://overturemaps.org/',
         'confidence': conf, 'image_url': '', 'sponsored': False,
     }
 
-def build(features, version='2026-10-21.0', clock=None):
+def build(features, version='2026-10-21.0', clock=None, *, city='Denver', state='CO', bbox=BBOX):
     result, seen = [], set()
     for feature in features:
-        row = normalize(feature)
+        row = normalize(feature, city=city, state=state, bbox=bbox)
         if row is None: continue
         fingerprint = (row['name'].lower(), round(row['latitude'], 4), round(row['longitude'], 4))
         if fingerprint in seen: continue
@@ -79,7 +79,7 @@ def build(features, version='2026-10-21.0', clock=None):
         result.append(row)
     result.sort(key=lambda x: (x['name'].casefold(), x['id']))
     return {'schema_version': 1, 'source_name': 'Overture Maps', 'dataset_version': version,
-            'city': 'Denver', 'state': 'CO',
+            'city': city, 'state': state,
             'generated_at': clock or datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
             'items': result}
 
@@ -89,18 +89,52 @@ def read_geojson(path):
         raise ValueError('Expected Overture GeoJSON FeatureCollection')
     return raw['features']
 
+def city_config(key, manifest_path=None):
+    """Return only explicitly registered metro bounds; never infer city from a feature."""
+    manifest_path = manifest_path or Path(__file__).parents[1] / 'data/restaurants/city-manifest.json'
+    catalog = json.loads(Path(manifest_path).read_text(encoding='utf-8'))
+    if catalog.get('schema_version') != 1 or catalog.get('source_name') != 'Overture Maps Places':
+        raise ValueError('Unsupported licensed city manifest')
+    if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', key or ''):
+        raise ValueError('Invalid city key')
+    entry = (catalog.get('cities') or {}).get(key)
+    if not isinstance(entry, dict): raise ValueError('Unregistered metro: ' + key)
+    city, state, bbox = entry.get('city'), entry.get('state'), entry.get('bbox')
+    if not isinstance(city, str) or not re.fullmatch(r"[A-Za-z .'-]{2,80}", city):
+        raise ValueError('Invalid city')
+    if not isinstance(state, str) or not re.fullmatch(r'[A-Z]{2}', state):
+        raise ValueError('Invalid state')
+    if not isinstance(bbox, list) or len(bbox) != 4 or any(type(n) not in (float, int) for n in bbox):
+        raise ValueError('Invalid bounding box')
+    west, south, east, north = bbox
+    if not (-180 <= west < east <= 180 and -90 <= south < north <= 90):
+        raise ValueError('Invalid bounding box order')
+    minimum = entry.get('min_records')
+    if type(minimum) is not int or not 1 <= minimum <= 20000:
+        raise ValueError('Invalid minimum source count')
+    return {'city': city, 'state': state, 'bbox': bbox, 'min_records': minimum,
+            'release': catalog.get('release')}
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', required=True)
     parser.add_argument('--output', default='data/restaurants/denver-co.json')
     parser.add_argument('--release', default='2026-10-21.0')
+    parser.add_argument('--city-key', default='denver-co',
+                        help='Registered discovery metro; default preserves Denver importer behavior')
+    parser.add_argument('--manifest', default=None)
     args = parser.parse_args()
-    payload = build(read_geojson(args.input), args.release)
-    if len(payload['items']) < 100:
-        raise SystemExit('Refusing to publish fewer than 100 high-confidence Denver restaurants')
+    config = city_config(args.city_key, args.manifest)
+    if args.release != config['release']:
+        raise SystemExit('Dataset release must match registered source manifest')
+    payload = build(read_geojson(args.input), args.release,
+                    city=config['city'], state=config['state'], bbox=config['bbox'])
+    if len(payload['items']) < config['min_records']:
+        raise SystemExit('Refusing to publish insufficient high-confidence source records for ' + config['city'])
     dest = Path(args.output)
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(json.dumps(payload, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
-    print(f'Denver source-backed records: {len(payload["items"])}')
+    print(f'{config["city"]} source-backed records: {len(payload["items"])}')
 
 if __name__ == '__main__': main()
