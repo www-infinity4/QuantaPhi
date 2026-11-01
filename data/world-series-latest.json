@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-11-01T12:41:06.026243Z",
+  "checked_at": "2026-11-01T18:16:01.188745Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
@@ -13,7 +13,7 @@
     {
       "publisher": "CBS Sports",
       "url": "https://www.cbssports.com/partners/feeds/rss/mlb_news",
-      "articles_selected": 28
+      "articles_selected": 27
     }
   ],
   "articles": [
