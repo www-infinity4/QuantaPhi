@@ -147,3 +147,19 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{margin-top:6px}
   scroll-margin-top:12px
  }
 }
+
+/* Android section settling · proximity only: long cards remain freely scrollable.
+ * Scope to the homepage and touch phones; desktop, keyboard input, modal viewers,
+ * overlays and nested card carousels keep native browser scrolling. */
+@media (max-width:650px) and (pointer:coarse){
+ html:has(body.oracle-quanta){scroll-snap-type:y proximity;scroll-padding-top:max(12px,env(safe-area-inset-top))}
+ body.oracle-quanta main.app>.search,
+ body.oracle-quanta #oracleCardDeck,
+ body.oracle-quanta.oracle-shelf-open main.app>section.card{
+  scroll-snap-align:start;scroll-snap-stop:normal;scroll-margin-top:12px;
+ }
+}
+/* Reduced-motion preference always wins, including for browser-driven snapping. */
+@media (max-width:650px) and (prefers-reduced-motion:reduce){
+ html:has(body.oracle-quanta){scroll-snap-type:none}
+}
