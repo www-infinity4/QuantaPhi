@@ -1,0 +1,25 @@
+name: Site health watcher safety regression
+on:
+  pull_request:
+    paths:
+      - 'scripts/site-health-watch.mjs'
+      - 'test/site-health-watch*.test.*'
+      - '.github/workflows/site-health-watch-verify.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/site-health-watch.mjs'
+      - 'test/site-health-watch*.test.*'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check scripts/site-health-watch.mjs
+      - run: node --test test/site-health-watch-security.test.mjs
+      - run: node --test test/site-health-watch.test.cjs
