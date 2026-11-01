@@ -30,6 +30,9 @@ blocker: "Chrome/System UI ANR in owner's recording not traced to a specific lon
 next_action: "Verify exact-head Node and mobile Chromium tests then request independent review before merge."
 ---
 
+## Canonical GitHub issue
+https://github.com/www-infinity4/QuantaPhi/issues/1190
+
 ## Observed footage / scope
 Four owner-provided Android screen recordings dated October 31 show a heavily scrolling rotating card deck, Chrome/System UI unresponsive dialogs near cards, some missing retailer art, unavailable LiveNOW playback and Media Star source/status warnings. Do not upload or publish the owner's videos without permission.
 
