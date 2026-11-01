@@ -23,8 +23,8 @@ LICENSE = "CDLA Permissive 2.0 / Apache 2.0"
 SOURCE_URL = "https://docs.overturemaps.org/guides/places/"
 MAX_PER_RUN = 400
 # Public directory never imports restricted-age venues or unverifiable source licenses.
-RESTRICTED = re.compile(r"cannabis|marijuana|dispensar|\\bthc\\b|hemp|vape|nicotine|tobacco|adult.?store|erotic|porn|sex.?shop|firearm|gun.?shop|weapon|liquor|smoke.?shop", re.I)
-FOOD_MISMATCH = re.compile(r"\\b(?:rent.to.own|rental.center|equipment.rental|car.rental)\\b", re.I)
+RESTRICTED = re.compile(r"cannabis|marijuana|dispensar|\bthc\b|hemp|vape|nicotine|tobacco|adult.?store|erotic|porn|sex.?shop|firearm|gun.?shop|weapon|liquor|smoke.?shop", re.I)
+FOOD_MISMATCH = re.compile(r"\b(?:rent.to.own|rental.center|equipment.rental|car.rental)\b", re.I)
 PERMITTED_LICENSES = {"CDLA-Permissive-2.0", "Apache-2.0", "CC0-1.0"}
 LICENSE_ALIASES = {"CDLA Permissive 2.0": "CDLA-Permissive-2.0", "CC0": "CC0-1.0"}
 
@@ -37,7 +37,7 @@ def feature_licenses(sources):
         if not isinstance(item, dict):
             return None
         license_name = LICENSE_ALIASES.get(item.get("license"), item.get("license"))
-        if license_name not in PERMITTED_LICENSES:
+        if not isinstance(license_name, str) or license_name not in PERMITTED_LICENSES:
             return None
         found.add(license_name)
     return "; ".join(sorted(found))
