@@ -36,8 +36,11 @@ def feature_licenses(sources):
     for item in sources:
         if not isinstance(item, dict):
             return None
-        license_name = LICENSE_ALIASES.get(item.get("license"), item.get("license"))
-        if not isinstance(license_name, str) or license_name not in PERMITTED_LICENSES:
+        raw_license = item.get("license")
+        if not isinstance(raw_license, str):
+            return None
+        license_name = LICENSE_ALIASES.get(raw_license, raw_license)
+        if license_name not in PERMITTED_LICENSES:
             return None
         found.add(license_name)
     return "; ".join(sorted(found))
