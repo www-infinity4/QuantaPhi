@@ -1,0 +1,27 @@
+name: Continuity actionable packet contracts
+on:
+  pull_request:
+    paths:
+      - 'continuity/work-packets.mjs'
+      - 'test/continuity-work-packets.test.mjs'
+      - 'docs/CONTINUITY-ACTION-PACKETS.md'
+      - '.github/workflows/continuity-work-packets.yml'
+  push:
+    paths:
+      - 'continuity/work-packets.mjs'
+      - 'test/continuity-work-packets.test.mjs'
+      - 'docs/CONTINUITY-ACTION-PACKETS.md'
+      - '.github/workflows/continuity-work-packets.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check pure packet selector and deterministic blocked rotation
+        run: |
+          node --check continuity/work-packets.mjs
+          node --test test/continuity-work-packets.test.mjs
