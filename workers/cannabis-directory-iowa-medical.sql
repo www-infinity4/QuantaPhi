@@ -18,6 +18,6 @@ INSERT OR IGNORE INTO import_receipts
 VALUES ('2026-11-01-ia-hhs-five-medical-v1','IA','statewide',
 'https://hhs.iowa.gov/health-prevention/medical-cannabis/dispensary-locations',
 'first-review-ia',5,5,0);
-UPDATE directory_jobs SET status='sourced',phase='medical_only_regulator_review',
+UPDATE directory_jobs SET status='review',phase='medical_only_regulator_review',
 records_added=5,updated_at=CURRENT_TIMESTAMP
 WHERE job_id='first-review-ia' AND state='IA' AND records_added<=5;
