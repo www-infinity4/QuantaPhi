@@ -66,18 +66,51 @@ class BusinessIngestTests(unittest.TestCase):
             calls=[]
             def fake_query(sql, params=None, batch=None):
                 calls.append({'sql':sql,'params':params,'batch':batch})
-                return [{'results':[]}]
+                return [{'success':True,'meta':{'changes':1}} for _ in batch] if batch is not None else [{'results':[]}]
             original=ingest.api_query
             try:
                 ingest.api_query=fake_query
                 accepted=ingest.ingest_file(path,{'job_id':'metro:CO:denver','city':'Denver',
-                                                   'state':'CO','cursor':''},max_items=10)
+                                                   'state':'CO','cursor':''},release='2026-10-21.0',max_items=10)
             finally:
                 ingest.api_query=original
             self.assertEqual(accepted,1)
             batches=[x['batch'] for x in calls if x['batch'] is not None]
             self.assertEqual(len(batches),1)
             self.assertEqual(len(batches[0]),1)
+            receipts=[x for x in calls if 'INSERT OR IGNORE INTO business_ingest_receipts' in x['sql']]
+            self.assertEqual(receipts[0]['params'][2],'2026-10-21.0')
+
+    def test_protected_conflict_never_records_a_false_import_receipt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'one.geojsonseq'
+            path.write_text(json.dumps(feature())+'\n',encoding='utf-8')
+            calls=[]
+            def fake_query(sql, params=None, batch=None):
+                calls.append({'sql':sql,'params':params,'batch':batch})
+                return [{'success':True,'meta':{'changes':0}} for _ in batch] if batch is not None else [{'results':[]}]
+            original=ingest.api_query
+            try:
+                ingest.api_query=fake_query
+                with self.assertRaisesRegex(RuntimeError,'write conflict'):
+                    ingest.ingest_file(path,{'job_id':'metro:CO:denver','city':'Denver',
+                                                 'state':'CO','cursor':''},release='2026-10-21.0')
+            finally:
+                ingest.api_query=original
+            self.assertFalse(any('INSERT OR IGNORE INTO business_ingest_receipts' in x['sql'] for x in calls))
+            self.assertFalse(any('UPDATE city_import_jobs SET cursor' in x['sql'] for x in calls))
+
+    def test_stac_release_is_validated_before_ingestion(self):
+        from unittest.mock import patch
+        from io import BytesIO
+        with patch.object(ingest.urllib.request,'urlopen',return_value=BytesIO(b'{"latest":"2026-10-21.0"}')):
+            self.assertEqual(ingest.overture_release(),'2026-10-21.0')
+        for invalid in ('latest','unknown','2026-10-21.0\\n'):
+            with patch.object(ingest.urllib.request,'urlopen',return_value=BytesIO(json.dumps({'latest':invalid}).encode())):
+                with self.assertRaisesRegex(RuntimeError,'Invalid Overture STAC release'):
+                    ingest.overture_release()
+        with self.assertRaisesRegex(RuntimeError,'Missing pinned Overture release'):
+            ingest.ingest_file('/nonexistent',{'job_id':'x'},release='STAC latest')
 
     def test_d1_forbidden_reports_scoped_permission_blocker_without_token(self):
         from unittest.mock import patch
@@ -104,6 +137,43 @@ class BusinessIngestTests(unittest.TestCase):
                 ingest.api_query('SELECT 1')
         finally:
             ingest.ACCOUNT,ingest.TOKEN=old_acc,old_token
+
+
+    def test_main_pins_download_and_ingest_to_same_stac_release(self):
+        from unittest.mock import patch
+        job={'job_id':'metro:CO:colorado-springs','city':'Colorado Springs','state':'CO',
+             'bbox':'-104.9,38.7,-104.6,38.95','cursor':''}
+        with patch.object(ingest,'api_query',return_value=[{'results':[job]}]) as query, \
+             patch.object(ingest,'overture_release',side_effect=['2026-10-21.0','2026-10-21.0']) as resolver, \
+             patch.object(ingest.subprocess,'run') as download, \
+             patch.object(ingest,'ingest_file',return_value=12) as import_rows:
+            ingest.main()
+        self.assertEqual(resolver.call_count,2)
+        download.assert_called_once()
+        command=download.call_args.args[0]
+        self.assertIn('--release=2026-10-21.0',command)
+        self.assertIn('--bbox='+job['bbox'],command)
+        self.assertEqual(command[0:2],['overturemaps','download'])
+        self.assertTrue(download.call_args.kwargs['check'])
+        import_rows.assert_called_once()
+        self.assertEqual(import_rows.call_args.args[1],job)
+        self.assertEqual(import_rows.call_args.args[2],'2026-10-21.0')
+        self.assertEqual(query.call_count,1)
+
+    def test_main_rejects_stac_release_change_before_ingest(self):
+        from unittest.mock import patch
+        job={'job_id':'metro:CO:colorado-springs','city':'Colorado Springs','state':'CO',
+             'bbox':'-104.9,38.7,-104.6,38.95','cursor':''}
+        with patch.object(ingest,'api_query',return_value=[{'results':[job]}]) as query, \
+             patch.object(ingest,'overture_release',side_effect=['2026-10-21.0','2026-11-01.0']) as resolver, \
+             patch.object(ingest.subprocess,'run') as download, \
+             patch.object(ingest,'ingest_file') as import_rows:
+            with self.assertRaisesRegex(RuntimeError,'release changed during download'):
+                ingest.main()
+        self.assertEqual(resolver.call_count,2)
+        self.assertIn('--release=2026-10-21.0',download.call_args.args[0])
+        import_rows.assert_not_called()
+        self.assertEqual(query.call_count,1)
 
 if __name__=='__main__':
     unittest.main()

@@ -23,6 +23,8 @@ SOURCE = "Overture Maps Places"
 LICENSE = "CDLA Permissive 2.0 / Apache 2.0"
 SOURCE_URL = "https://docs.overturemaps.org/guides/places/"
 MAX_PER_RUN = 400
+RELEASE_PATTERN = re.compile(r"20\d{2}-\d{2}-\d{2}\.\d+")
+STAC_CATALOG = "https://stac.overturemaps.org/catalog.json"
 # Public directory never imports restricted-age venues or unverifiable source licenses.
 RESTRICTED = re.compile(r"cannabis|marijuana|dispensar|\bthc\b|hemp|vape|nicotine|tobacco|adult.?store|erotic|porn|sex.?shop|firearm|gun.?shop|weapon|liquor|smoke.?shop", re.I)
 FOOD_MISMATCH = re.compile(r"\b(?:rent.to.own|rental.center|equipment.rental|car.rental)\b", re.I)
@@ -174,7 +176,17 @@ def geocode(city, state):
     lat, lon = float(match["latitude"]), float(match["longitude"])
     return f"{lon-0.09:.5f},{lat-0.07:.5f},{lon+0.09:.5f},{lat+0.07:.5f}"
 
-def ingest_file(path, job, max_items=MAX_PER_RUN):
+def overture_release():
+    """Resolve the official STAC release; never attribute an unknown 'latest'."""
+    with urllib.request.urlopen(STAC_CATALOG, timeout=20) as response:
+        release = json.load(response).get('latest')
+    if not isinstance(release, str) or not RELEASE_PATTERN.fullmatch(release):
+        raise RuntimeError('Invalid Overture STAC release; no source ingestion')
+    return release
+
+def ingest_file(path, job, release, max_items=MAX_PER_RUN):
+    if not isinstance(release, str) or not RELEASE_PATTERN.fullmatch(release):
+        raise RuntimeError('Missing pinned Overture release; no D1 writes')
     seen = int(job.get("cursor") or 0)
     source_rows = api_query("SELECT name,address,city FROM businesses WHERE state=? AND city=? AND status='listed' LIMIT 5000",
                             [job["state"], job["city"]])[0].get("results", [])
@@ -205,21 +217,28 @@ def ingest_file(path, job, max_items=MAX_PER_RUN):
               ") ON CONFLICT(id) DO UPDATE SET name=excluded.name,category=excluded.category,"
               "website=excluded.website,source_license=excluded.source_license,"
               "last_seen=excluded.last_seen,updated_at=CURRENT_TIMESTAMP WHERE businesses.claimed=0")
+    written = 0
     for i in range(0, len(accepted), 50):
         chunk = accepted[i:i+50]
-        api_query("", batch=[{"sql": insert, "params": [str(row[col]) for col in columns]} for row in chunk])
+        results = api_query("", batch=[{"sql": insert, "params": [str(row[col]) for col in columns]} for row in chunk])
+        # A protected/claimed existing ID may cause a successful no-op UPDATE.
+        # Never record attempted statements as completed D1 inserts.
+        if len(results) != len(chunk) or any(not isinstance(x.get('meta', {}).get('changes'), int)
+            or x['meta']['changes'] != 1 for x in results):
+            raise RuntimeError('D1 business write conflict or missing change receipts; job not advanced')
+        written += sum(x['meta']['changes'] for x in results)
     cursor = seen + examined
     status = "complete" if end_of_file else "queued"
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     receipt_id = job["job_id"] + ":" + now + ":" + str(cursor)
     api_query("INSERT OR IGNORE INTO business_ingest_receipts(receipt_id,source,dataset_version,city,state,inspected,accepted,duplicates,rejected,job_id) VALUES(?,?,?,?,?,?,?,?,?,?)",
-              [receipt_id,SOURCE,"STAC latest",job["city"],job["state"],str(examined),str(len(accepted)),
+              [receipt_id,SOURCE,release,job["city"],job["state"],str(examined),str(written),
                str(duplicates),str(rejected),job["job_id"]])
     api_query("UPDATE city_import_jobs SET cursor=?,imported=imported+?,status=?,phase=?,source=?,dataset_version=?,updated_at=CURRENT_TIMESTAMP WHERE job_id=?",
-              [str(cursor),str(len(accepted)),status,"expand" if end_of_file else "import",SOURCE,"STAC latest",job["job_id"]])
-    print(json.dumps({"job_id":job["job_id"],"inspected":examined,"accepted":len(accepted),
+              [str(cursor),str(written),status,"expand" if end_of_file else "import",SOURCE,release,job["job_id"]])
+    print(json.dumps({"job_id":job["job_id"],"inspected":examined,"accepted":written,
                       "duplicates":duplicates,"rejected":rejected,"cursor":cursor,"tile_complete":end_of_file}))
-    return len(accepted)
+    return written
 
 def main():
     rows = api_query("SELECT job_id,city,state,priority,status,bbox,cursor FROM city_import_jobs WHERE status='queued' ORDER BY priority ASC,imported ASC,updated_at ASC LIMIT 1")[0].get("results", [])
@@ -232,11 +251,15 @@ def main():
         raise RuntimeError("Invalid geographic bounding box")
     if not job.get("bbox"):
         api_query("UPDATE city_import_jobs SET bbox=?,updated_at=CURRENT_TIMESTAMP WHERE job_id=?", [bbox,job["job_id"]])
+    release = overture_release()
     with tempfile.TemporaryDirectory() as tmp:
         output = str(Path(tmp)/"places.geojsonseq")
-        subprocess.run(["overturemaps","download","--bbox="+bbox,"-f","geojsonseq",
-                        "--type=place","-o",output],check=True,timeout=1300)
-        ingest_file(output,job)
+        subprocess.run(["overturemaps","download","--stac","--release="+release,
+                        "--bbox="+bbox,"-f","geojsonseq","--type=place","-o",output],
+                       check=True,timeout=1300)
+        if overture_release()!=release:
+            raise RuntimeError('Overture release changed during download; no D1 writes')
+        ingest_file(output,job,release)
 if __name__ == "__main__":
     try:
         main()
