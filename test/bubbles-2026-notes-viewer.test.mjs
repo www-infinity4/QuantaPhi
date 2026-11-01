@@ -41,7 +41,7 @@ test('2026 viewer has green checked state, clear X, browser-focus support and ph
  assert.match(css,/overscroll-behavior:contain/);
  assert.match(css,/\.ba-tools-viewer-close/);
  for(const page of ['bubbles.html','bubbles/index.html','bubbles-chrome.html','index.html']){
-  assert.match(src(page),/bubbles-ai\.css\?v=20261101-bubble-bits-panel1/);
+  assert.match(src(page),/bubbles-ai\.css\?v=20261101-activity-contrast2/);
  }
 });
 test('private email setup never pre-populates aliases and remains server gated',()=>{

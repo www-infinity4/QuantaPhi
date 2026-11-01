@@ -49,3 +49,26 @@ test('existing Bubbles app includes an in-panel activity surface without a secon
  for(const file of ['index.html','bubbles.html'])assert.match(src(file),/bubbles-ai\.js/);
  assert.doesNotMatch(src('bubbles-iteration-bubbles.mjs'),/localStorage|fetch\(|innerHTML|credentials/);
 });
+test('a new chat resets stale role statuses and a real turn begins with visible processing',()=>{
+ const queued=applyIterationEvent(newIterationState(),{type:'job',status:'queued',repository:'www-infinity4/QuantaPhi'});
+ const changed=applyIterationEvent(queued,{type:'session_changed'});
+ assert.equal(changed.build.status,'idle');
+ const started=applyIterationEvent(changed,{type:'turn_started'});
+ assert.equal(started.think.status,'active');
+ assert.equal(started.research.status,'idle');
+});
+
+test('the activity display lives inside the scrolling transcript, not in the composer',()=>{
+ const module=src('bubbles-iteration-bubbles.mjs');
+ const main=src('bubbles-ai.js');
+ assert.match(module,/chatScroll\.insertBefore\(box,conversation\.nextSibling\)/);
+ assert.doesNotMatch(module,/status\.after\(box\)/);
+ assert.match(main,/mountBubbleIterations\(\{launcher,panel,status,chatScroll,conversation\}\)/);
+});
+
+test('activity controls are phone-legible despite the generic Bubbles button rule',()=>{
+ const css=src('bubbles-ai.css');
+ assert.match(css,/button\.ba-iteration-button\s*\{/);
+ assert.match(css,/\.ba-iteration-row\s*\{display:grid;grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
+ assert.match(css,/font:700 13px\/1\.25 system-ui,sans-serif!important/);
+});
