@@ -26,3 +26,6 @@
 .rd-card .rd-actions{margin:10px 20px 20px}
 .rd-card :is(input,select,button,a):focus-visible{outline:3px solid #bb893c;outline-offset:2px}
 @media(max-width:500px){.rd-card .rd-inputs{grid-template-columns:1fr 1fr}.rd-card .rd-inputs input{grid-column:1/-1}.rd-card .rd-inputs button{width:100%}.rd-card .rd-header{padding:15px 16px 7px}.rd-card :is(.rd-intro,.rd-form,.rd-status,.rd-result,.rd-nav,.rd-actions){margin-left:16px;margin-right:16px}.rd-card .rd-nav button{font-size:12px;padding:9px}}
+
+.rd-card .rd-inputs button:last-child{background:#fff;color:#31546a}
+@media(max-width:500px){.rd-card .rd-inputs{grid-template-columns:1fr 1fr}.rd-card .rd-inputs button{grid-column:auto}}
