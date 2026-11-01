@@ -1,0 +1,35 @@
+name: Infinity National Business Directory
+on:
+  pull_request:
+    paths:
+      - 'workers/business-directory/**'
+      - 'test/business-directory-*.test.mjs'
+      - 'businesses/**'
+      - 'index.html'
+      - 'directory/index.html'
+      - '.github/workflows/business-directory.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/business-directory/**'
+      - 'test/business-directory-*.test.mjs'
+      - 'businesses/**'
+      - 'directory/index.html'
+      - '.github/workflows/business-directory.yml'
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax checks
+        run: |
+          node --check workers/business-directory/worker.mjs
+          node --check businesses/directory-app.mjs
+      - name: Business directory and regression tests
+        run: |
+          node --test test/business-directory-worker.test.mjs test/business-directory-page.test.mjs test/public-directory-studio.test.mjs
