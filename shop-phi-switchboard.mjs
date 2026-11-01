@@ -7,6 +7,16 @@ import {housingCompanions,housingResource} from './housing-help-catalog.mjs';
 import {createHousingHelpCard} from './housing-help-cards.mjs';
 
 export const SLOT_COUNT=6;
+// Rotate only the compact companion offer viewer, never the main Quick Card.
+export const COMPANION_ROTATE_MS=12000;
+export const COMPANION_REFRESH_MS=180000;
+export function nextCompanionPage(page,count){
+ const pages=Math.ceil(Math.max(0,Number(count)||0)/2);
+ return pages<=1?0:(Math.max(0,Math.floor(Number(page)||0))+1)%pages;
+}
+export function canAutoRotateCompanions({count=0,visible=false,paused=false,hovering=false,focused=false,sensitive=false}={}){
+ return count>2&&visible&&!paused&&!hovering&&!focused&&!sensitive;
+}
 const SENSITIVE=/\b(religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy)\b/i;
 const LANES=Object.freeze([
  {id:'coins',match:/\b(morgan|silver dollar|coin|numismatic|pcgs|ngc|gold eagle|bullion|mintmark|mercury dime)\b/i,
@@ -133,10 +143,14 @@ if(typeof document!=='undefined'){
   const prev=document.createElement('button');prev.type='button';prev.textContent='‹ Previous';
   const position=document.createElement('span');position.className='shopphi-flank-position';
   const next=document.createElement('button');next.type='button';next.textContent='Next ›';
-  navigation.append(prev,position,next);
+  const pause=document.createElement('button');pause.type='button';pause.className='shopphi-rotation-toggle';
+  navigation.append(prev,position,next,pause);
   grid.after(navigation);
   const exposure=Object.create(null),cache=new Map();
-  let seq=0,rotation=0,active=null,visiblePage=0,visibleCards=[];
+  let seq=0,rotation=0,active=null,visiblePage=0,visibleCards=[],lastRefreshAt=0,hovering=false;
+  let paused=Boolean(window.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
+  const updatePause=()=>{pause.textContent=paused?'Resume rotation':'Pause rotation';pause.setAttribute('aria-pressed',String(paused));};
+  updatePause();
   function showPage(){
    const start=visiblePage*2,total=visibleCards.length;
    let index=0;
@@ -146,10 +160,19 @@ if(typeof document!=='undefined'){
    }
    position.textContent=total?String(start+1)+'–'+Math.min(total,start+2)+' of '+total:'No offers';
    prev.disabled=visiblePage===0;next.disabled=start+2>=total;
-   navigation.hidden=total<3;
+   navigation.hidden=total<3;pause.hidden=total<3;
+   // These are local rotation hints, not billable impressions or wallet events.
+   for(let i=start;i<Math.min(start+2,total);i++){
+    const id=visibleCards[i]?.id;if(id)exposure[id]=Math.min(200,(exposure[id]||0)+1);
+   }
   }
   prev.addEventListener('click',()=>{visiblePage=Math.max(0,visiblePage-1);showPage()});
   next.addEventListener('click',()=>{visiblePage=Math.min(Math.floor((visibleCards.length-1)/2),visiblePage+1);showPage()});
+  pause.addEventListener('click',()=>{paused=!paused;updatePause()});
+  for(const flank of [before,after]){
+   flank.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse')hovering=true});
+   flank.addEventListener('pointerleave',()=>{hovering=false});
+  }
   const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
   function draw(list,lane){
    const housing=lane.id==='housing-help';grid.classList.toggle('housing-help-layout',housing);
@@ -199,8 +222,6 @@ if(typeof document!=='undefined'){
      exposure[c.id]=Math.min(200,(exposure[c.id]||0)+1);
     });
     parent.append(link);
-    // A candidate being chosen isn't a paid impression, conversion or reward.
-    exposure[c.id]=Math.min(200,(exposure[c.id]||0)+1);
    }
    showPage();
    heading.hidden=false;receipt.hidden=false;
@@ -297,12 +318,31 @@ if(typeof document!=='undefined'){
     {connected:false,scores:{}};
    if(revision!==seq)return;
    const result=chooseCompanions(active,all,{quantScores:quant.scores,exposures:exposure,rotation:rotation++});
-   draw(result,lane);
+   draw(result,lane);lastRefreshAt=Date.now();
   }
   window.addEventListener('quantaphi:switchboard-change',e=>{void update(e.detail).catch(()=>{
    if(active){grid.hidden=false;navigation.hidden=true;before.replaceChildren();after.replaceChildren();
     receipt.textContent='Companion offers are temporarily unavailable. Original Quick Card is still usable.';}
   })});
+  // Rotate verified companion cards while they are on-screen. Do not navigate,
+  // change the central hero, interrupt keyboard focus, or rotate sensitive cards.
+  setInterval(()=>{
+   if(!active||grid.hidden||document.hidden||document.body.classList.contains('oracle-shelf-open'))return;
+   if(window.matchMedia?.('(min-width: 950px)').matches)return; // six cards already visible on desktop
+   const displayed=[...before.children,...after.children].filter(card=>!card.hidden);
+   const visible=displayed.some(card=>{
+    const rect=card.getBoundingClientRect();
+    return rect.bottom>0&&rect.top<window.innerHeight;
+   });
+   const sensitive=active.id==='disability-housing'||contextFor(active).sensitive;
+   const focused=grid.contains(document.activeElement)||navigation.contains(document.activeElement);
+   if(canAutoRotateCompanions({count:visibleCards.length,visible,paused,hovering,focused,sensitive})){
+    visiblePage=nextCompanionPage(visiblePage,visibleCards.length);showPage();
+   }
+   if(visible&&!sensitive&&Date.now()-lastRefreshAt>=COMPANION_REFRESH_MS){
+    lastRefreshAt=Date.now();void update(active).catch(()=>{});
+   }
+  },COMPANION_ROTATE_MS);
   // The deck may have selected its first card before this module finished loading.
   void update(detailFromStage());
  }
