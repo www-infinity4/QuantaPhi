@@ -32,7 +32,8 @@ def database(*, policy=True, catalog=True):
       CREATE TABLE import_receipts (
         receipt_id TEXT PRIMARY KEY, state TEXT NOT NULL, city TEXT NOT NULL,
         source_url TEXT NOT NULL, job_id TEXT NOT NULL DEFAULT '',
-        inspected INTEGER NOT NULL, accepted INTEGER NOT NULL, rejected INTEGER NOT NULL
+        inspected INTEGER NOT NULL, accepted INTEGER NOT NULL, rejected INTEGER NOT NULL,
+        created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
       );
       CREATE TABLE directory_jobs (
         job_id TEXT PRIMARY KEY, state TEXT NOT NULL, city TEXT NOT NULL DEFAULT '',
