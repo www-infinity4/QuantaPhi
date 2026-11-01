@@ -22,7 +22,7 @@ test('X card posts are local drafts; handoff uses only the real official web int
 
 test('only a provider-verified X card receives a local composer without a fake OAuth grant',()=>{
  const actions=read('quanta-card-actions.mjs');
- assert.match(actions,/provider\.id==='x'/);
+ assert.match(actions,/provider\?\.id==='x'/);
  assert.match(actions,/mountXComposer\(bar\)/);
  assert.match(actions,/provider\.compose&&provider\.id!=='x'/);
  const provider=read('quanta-card-provider.mjs');
