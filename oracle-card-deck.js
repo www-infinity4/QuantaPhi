@@ -462,11 +462,11 @@ for(const button of host.querySelectorAll('[data-oracle-family]')){
 // rotates automatically. Scroll to the deck (with arrows visible), not into
 // a tall card that could hide navigation above the phone viewport.
 function settleCardViewport(){
- if(!window.matchMedia?.('(max-width: 650px)')?.matches)return;
+ if(!window.matchMedia?.('(max-width: 650px) and (pointer: coarse)')?.matches)return;
  const cardId=active?.id;
  requestAnimationFrame(()=>{
   if(active?.id!==cardId||expanded)return;
-  host.scrollIntoView?.({block:'start',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth'});
+  host.querySelector('.oracle-card-deck-nav')?.scrollIntoView?.({block:'start',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth'});
  });
 }
 function moveAndSettle(direction){
