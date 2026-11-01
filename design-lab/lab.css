@@ -28,3 +28,22 @@
 .bulk-disclosure{font-size:11px;line-height:1.6;color:#5a6d7b;margin:12px 0 0}
 @media(max-width:620px){.lab-bulk{padding:47px 16px}.bulk-form{grid-template-columns:repeat(2,minmax(0,1fr));padding:13px;gap:9px}.bulk-form button{width:100%;justify-self:stretch}.bulk-table th,.bulk-table td{padding:9px 11px}}
 @media(max-width:360px){.bulk-form{grid-template-columns:1fr}}
+
+
+/* Power Chain component 003 · research intent before any merchant purchase. */
+.lab-cooperative{max-width:1500px;margin:auto;padding:72px clamp(18px,6vw,100px);background:#f3f6f7}
+.co-op-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:20px;border:1px solid #cdd9df;background:white;border-radius:18px}
+.co-op-form label{display:grid;gap:7px;min-width:0;font:750 12px/1.5 system-ui,sans-serif;color:#29495d}
+.co-op-form input,.co-op-form select{box-sizing:border-box;width:100%;min-height:45px;min-width:0;border:1px solid #afbfc9;border-radius:10px;padding:10px;color:#213844;background:white;font:500 15px/1.4 system-ui,sans-serif}
+.co-op-form button,.co-op-advance{min-height:46px;border:1px solid #406c88;border-radius:11px;background:#e7f1f5;color:#234d65;padding:11px 15px;font:750 13px/1.4 system-ui,sans-serif;cursor:pointer}
+.co-op-form button{grid-column:1/-1;justify-self:start}
+.co-op-advance:disabled{opacity:.55;cursor:default}
+.co-op-intro,.co-op-warning{font:450 12px/1.6 system-ui,sans-serif;color:#4b5a62}
+#cooperativeStatus{font:700 13px/1.5 system-ui,sans-serif;color:#29516a}
+.co-op-output{background:white;border:1px solid #d5dfe5;border-radius:13px;min-height:70px;padding:12px 17px;margin:14px 0}
+.co-op-lead{font:800 15px/1.5 system-ui,sans-serif;color:#283a42;margin:4px 0}
+.co-op-steps{padding-left:24px;color:#344950;font:500 13px/1.65 system-ui,sans-serif}
+.co-op-steps li{padding:3px 0}
+.co-op-form input:focus-visible,.co-op-form select:focus-visible,.co-op-form button:focus-visible,.co-op-advance:focus-visible{outline:3px solid #236c99;outline-offset:2px}
+@media(max-width:620px){.lab-cooperative{padding:47px 16px}.co-op-form{padding:13px;gap:9px}}
+@media(max-width:360px){.co-op-form{grid-template-columns:1fr}.co-op-form button{width:100%}}
