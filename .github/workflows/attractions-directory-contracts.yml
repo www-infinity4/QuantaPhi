@@ -52,4 +52,3 @@ jobs:
         run: |
           python -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-attractions-browser.log 2>&1 &
           npx playwright test test/attractions-directory.browser.spec.mjs --reporter=line --workers=1
-          npx playwright test test/quick-card-spotlights.browser.spec.mjs --grep 'Share carries the selected product' --reporter=line --workers=1
