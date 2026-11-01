@@ -40,7 +40,7 @@ export function reviewedQualityStar(decision, evidence=[], now=new Date(), appea
  // Provenance URLs may be regulators (e.g. Iowa HHS), not merchant sites.
  // A separately reviewed merchant domain is mandatory; otherwise unrated.
  const merchant=String(decision.merchant_domain||'').toLowerCase();
- if(!/^[a-z0-9-]+(?:\\.[a-z0-9-]+)+$/.test(merchant)||
+ if(!/^[a-z0-9-]+(?:\.[a-z0-9-]+)+$/.test(merchant)||
   !fresh(decision.merchant_domain_verified_at)||
   !HTTPS(decision.merchant_domain_source_url,merchant))return null;
  if(!Array.isArray(evidence)||!Array.isArray(appeals)||appeals.some(a=>a.status==='pending'))return null;
