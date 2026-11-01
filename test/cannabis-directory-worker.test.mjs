@@ -20,6 +20,12 @@ function envWith(rows=[record]){
         ]};
         if(sql.includes('FROM directory_jobs'))return {results:[{status:'queued',jobs:50}]};
         if(sql.includes('FROM state_policy ORDER'))return {results:[{state:'IA',adult_use:'not_authorized',medical_program:1,reviewed_at:'2026-11-01'}]};
+        if(sql.includes('FROM regulator_source_catalog'))return {results:[
+          {state:'IA',agency:'Iowa HHS',source_kind:'medical_only',source_url:'https://hhs.iowa.gov/health-prevention/medical-cannabis/dispensary-locations',verified_at:'2026-11-01',source_status:'verified_official_url',notes:'Five medical-only dispensaries'}
+        ]};
+        if(sql.includes('FROM regulator_source_ingest_runs'))return {results:[{run_id:'2026-11-01-official-regulator-catalog-v1',source_kind:'official_regulator_urls',inspected:5,accepted:5,rejected:0,created_at:'2026-11-01 16:25:13'}]};
+        if(sql.includes('FROM import_receipts'))return {results:[]};
+
         if(sql.includes('FROM store_sources'))return {results:rows};
         return {results:[]};
       },
@@ -54,6 +60,15 @@ test('Iowa medical-only regulator is distinguished from adult-use and unreviewed
   assert.match(data.states[0].source_url,/hhs\.iowa\.gov/);
   const unknown=await worker.fetch(get('/api/21-directory/regulators?state=UT'),env);
   assert.equal((await unknown.json()).states[0].source_kind,'source_pending');
+});
+test('receipts distinguish real regulator source catalog writes from unimported store queue',async()=>{
+  const {env}=envWith();
+  const r=await worker.fetch(get('/api/21-directory/receipts'),env);
+  assert.equal(r.status,200);
+  const data=await r.json();
+  assert.equal(data.regulator_source_runs.length,1);
+  assert.equal(data.regulator_source_runs[0].accepted,5);
+  assert.equal(data.store_ingest_runs.length,0);
 });
 test('unverified visitor cannot see store details; acknowledgment never claims verified age',async()=>{
   const {env,calls}=envWith();
