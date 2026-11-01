@@ -8,6 +8,8 @@ test('the real restaurant search Quick Card is discoverable through Bubbles by n
  for(const phrase of ['restaurants','restaurant directory','food finder','Denver restaurants','vacation dining']){
   assert.equal(findCard(phrase)?.id,'restaurant-directory',phrase);
  }
+ assert.equal(cardIntent('open restaurant quick card')?.card?.id,'restaurant-directory');
+ assert.equal(cardIntent('open restaurant quick card')?.action,'open');
  assert.equal(new Set(cards.map(x=>x.id)).size,cards.length);
 });
 test('restaurant card reuses existing browser route without authorization or phantom checkout',()=>{
