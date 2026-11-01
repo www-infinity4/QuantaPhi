@@ -4,7 +4,7 @@ const HEADERS={'Cache-Control':'public,max-age=90','Access-Control-Allow-Origin'
 const answer=(data,status=200)=>Response.json(data,{status,headers:HEADERS});
 const text=(v,n=120)=>String(v??'').trim().slice(0,n);
 export const validState=v=>STATES.has(String(v||'').toUpperCase());
-export const seedSources=s=>s==='CO'?['co-seed.json','co-overture.json']:[s.toLowerCase()+'-overture.json'];
+export const seedSources=s=>s==='CO'?['co-seed.json','co-overture-nw.json','co-overture-ne.json','co-overture-sw.json','co-overture-se.json']:[s.toLowerCase()+'-overture.json'];
 export const safeSite=v=>{try{const u=new URL(v);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&u.hostname.includes('.')&&u.hostname!=='localhost'&&u.href.length<401?u.href:''}catch{return ''}};
 export function cleanRecord(o,state,seen){
  if(!o||!validState(state)||String(o.state||'').toUpperCase()!==state)return null;
