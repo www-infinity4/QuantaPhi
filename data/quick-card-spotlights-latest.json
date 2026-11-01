@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T05:57:00.944977Z",
+  "checked_at": "2026-11-01T13:15:27.551142Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -2893,6 +2893,1055 @@
           "description": "",
           "checked_at": "2026-11-01T05:57:00.944977Z",
           "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-system76": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://system76.com/",
+          "image": "https://cdn11.bigcommerce.com/s-pywjnxrcr2/images/stencil/original/image-manager/homepage-section-feature-new-primer5.jpg?t=1793124731",
+          "title": "the New Thelio Prime",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://system76.com/",
+          "image": "https://cdn11.bigcommerce.com/s-pywjnxrcr2/images/stencil/original/image-manager/homepage-section-feature-new-mira-oranger4.jpg?t=1793124491",
+          "title": "the New Adder Pro",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://system76.com/",
+          "image": "https://cdn11.bigcommerce.com/s-pywjnxrcr2/images/stencil/original/image-manager/homepage-section-feature-lemur-pro-oranger3.jpg?t=1793124500",
+          "title": "the New Lemur Pro now in 14in and 16in sizes",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://system76.com/",
+          "image": "https://cdn11.bigcommerce.com/s-pywjnxrcr2/images/stencil/original/image-manager/homepage-section-feature-thelio-mira-2026.jpg?t=1773427695",
+          "title": "Thelio Mira desktop",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-pine64": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://pine64.org/",
+          "image": "https://pine64.org/img/opengraph_main.png",
+          "title": "PINE64",
+          "kind": "website",
+          "description": "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects. Founded in 2015, it is known for affordable devices that promote user freedom.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://pine64.org/",
+          "image": "https://pine64.org/img/start/rockpro64.png",
+          "title": "RockPro64",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://pine64.org/",
+          "image": "https://pine64.org/img/start/quartz64_modb.png",
+          "title": "Quartz64 Model B",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://pine64.org/",
+          "image": "https://pine64.org/img/start/star64.png",
+          "title": "Star64 featuring RISC-V",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-mnt-research": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://mntre.com/",
+          "image": "https://mntre.com/reform-family-opt.jpg",
+          "title": "MNT Research GmbH",
+          "kind": "website",
+          "description": "MNT Research makes open source hardware laptops, mobile devices and keyboards that are modular and repairable. Designed and assembled in Berlin, EU.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://shop.mntre.com/spree/products/576/original/P1040781-1.JPG?1738581998",
+          "image": "https://shop.mntre.com/spree/products/576/large/P1040781-1.JPG?1738581998",
+          "title": "MNT Pocket Reform - purple",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://shop.mntre.com/products/mnt-pocket-reform",
+          "image": "https://mntre.com/products-shop/1920-1080-magic.png",
+          "title": "space themed illustration of a magical Pocket Reform(3D shapes are coming out of the screen) with two tattooed hands typing",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://shop.mntre.com/products/mnt-pocket-reform",
+          "image": "https://mntre.com/products-shop/1920-1080-sofa.png",
+          "title": "an illustration of a person using MNT Pocket Reform on a sofa with their dog chilling nearby",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://shop.mntre.com/products/mnt-pocket-reform",
+          "image": "https://mntre.com/products-shop/1920-1080-cafe.png",
+          "title": "illustration of a cafe with two people using Pocket Reform and a cat sitting on a chair.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://shop.mntre.com/spree/products/318/original/zz9000-black-2023.jpg?1679928562",
+          "image": "https://shop.mntre.com/spree/products/318/large/zz9000-black-2023.jpg?1679928562",
+          "title": "MNT ZZ9000 R-3, Black Version",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://shop.mntre.com/products/zz9000ax-amiga-audio-expansion-for-zz9000",
+          "image": "https://shop.mntre.com/spree/products/232/product/z9ax-overview-1.jpg?1647450452",
+          "title": "MNT ZZ9000AX Audio Module (Back)",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://shop.mntre.com/products/zz9000-heatsink",
+          "image": "https://shop.mntre.com/spree/products/70/product/IMG_9397.JPG?1596545060",
+          "title": "MNT ZZ9000 Heatsink, Top",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-thinkpad-classic-t-series": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": []
+    },
+    "durable-noctua": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": []
+    },
+    "durable-seasonic": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://seasonic.com/atx3-prime-tx/",
+          "image": "https://seasonic.com/wp-content/uploads/2024/04/ATX3-PRIME-TX-1600-1300-PX-1600-back-panel-angled-300x222.webp",
+          "title": "ATX3-PRIME-TX-1600-1300-PX-1600-back",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://seasonic.com/atx3-1-prime-px/",
+          "image": "https://seasonic.com/wp-content/uploads/2024/02/atx3-prime-tx-1600-1300-px-1600-back-panel-angled_1.png",
+          "title": "ATX3 PRIME TX-1600-1300-PX-1600-back",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://seasonic.com/prime-fanless-tx/",
+          "image": "https://seasonic.com/wp-content/uploads/2024/04/PRIME-Fanless-TX-700-600-back-panel-angled-300x222.webp",
+          "title": "PRIME-Fanless-TX-700-600",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://seasonic.com/prime-fanless-px/",
+          "image": "https://seasonic.com/wp-content/uploads/2024/04/PRIME-Fanless-PX-500-450-back-panel-angled-300x222.webp",
+          "title": "PRIME Fanless PX-500-450 back",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-ifixit": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://www.ifixit.com/",
+          "image": "https://guide-images.cdn.ifixit.com/igi/YlogWMLVAtHbPF5J.full",
+          "title": "iFixit: The Free Repair Manual",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.ifixit.com/",
+          "image": "https://www.ifixit.com/_next/image?url=https%3A%2F%2Fifixit-strapi-uploads.s3.us-east-1.amazonaws.com%2FMac_Book_Air_Battery_Hero_Banner_2298fe726c.jpg&w=1920&q=75",
+          "title": "MacBook Air Battery",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.ifixit.com/Guide",
+          "image": "https://assets.cdn.ifixit.com/static/images/home/cta/left/720w.jpg",
+          "title": "A person repairing a laptop",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.ifixit.com/Store",
+          "image": "https://assets.cdn.ifixit.com/static/images/home/cta/center/720w.jpg",
+          "title": "Assortment of quality parts and tools",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.ifixit.com/products/repair-business-toolkit",
+          "image": "https://cdn.shopify.com/s/files/1/0045/4092/4007/files/1ReAq4CvbtPFehoY_dba5f566-9e01-493b-9bc3-433f07ce2407.jpg?v=1792693977",
+          "title": "iFixit Repair Business Toolkit: Phone, Laptop, Tablet Starter Tools",
+          "kind": "product",
+          "description": "A whole repair shop in one bag, featuring time-tested, high-quality tools specially curated alongside the latest and greatest in repair technology.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": {
+            "price": "299.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2027-11-01T13:15:32.607000+00:00"
+          }
+        },
+        {
+          "url": "https://www.ifixit.com/products/pro-tech-toolkit",
+          "image": "https://cdn.shopify.com/s/files/1/0045/4092/4007/files/ckpuwVFwUFVCivaY_886e6aeb-2f68-4886-8dd3-fc2c3c838c50.jpg?v=1788368294",
+          "title": "iFixit Pro Tech® Toolkit: Computer, Phone, Electronics Repair Kit",
+          "kind": "product",
+          "description": "The original electronics toolkit: Designed for computer, smartphone, tablet, and gaming repair, backed by thousands of free instructions.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": {
+            "price": "79.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2027-11-01T13:15:33.018000+00:00"
+          }
+        },
+        {
+          "url": "https://www.ifixit.com/Shop/Gear",
+          "image": "https://ifixit-strapi-uploads.s3.amazonaws.com/Collection_Page_Headers_Gear_2bf8d31210.jpg",
+          "title": "iFixit Gear: Shirts, Stickers, Posters, and Patches | iFixit",
+          "kind": "website",
+          "description": "Original iFixit shirts, stickers, posters, patches, and bags for people who'd rather fix it than toss it.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.ifixit.com/Shop/Gear",
+          "image": "https://www.ifixit.com/_next/image?url=https%3A%2F%2Fifixit-strapi-uploads.s3.us-east-1.amazonaws.com%2Fmedium_Gear_T_Shirts_5b165f0767.jpg&w=200&q=75",
+          "title": "iFixit Apparel",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-sony-professional-pro-audio": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": []
+    },
+    "durable-sennheiser-studio-monitor-series": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://www.sennheiser.com/en-us",
+          "image": "https://www.sennheiser.com/og/SennheiserDefaultOg.jpg",
+          "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
+          "kind": "website",
+          "description": "For over 75 years, our products come with a built-in mission: to stay true to the sound and soul the music was given by its artist.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.sennheiser.com/en-us/catalog/products/microphones",
+          "image": "https://assets.sennheiser.com/assets/Mega_Menu_Microphones.png/Zz03N2UyMzJhZWU3ZDExMWYwYjk1OWNlM2Q3NWM0MGYwNw==?width=1920&format=webp&quality=80",
+          "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.sennheiser.com/en-us/catalog/products/wireless-systems",
+          "image": "https://assets.sennheiser.com/assets/Mega_Menu_Wireless_2.png/Zz03YzAxNmEzMGU3ZDExMWYwODhkYjc2OGVlOGU5N2FlYQ==?width=1920&format=webp&quality=80",
+          "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.sennheiser.com/en-us/catalog/products/meeting-and-conference-systems",
+          "image": "https://assets.sennheiser.com/assets/meeting-and-conference_systems.png/Zz1iNmEzNThkYWU3YjExMWYwYmZiMmJlYjQzYzY2MTIyYQ==?width=1920&format=webp&quality=80",
+          "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.sennheiser.com/en-us/catalog/products/microphones",
+          "image": "https://www.sennheiser.com/og/SennheiserDefaultOg.jpg",
+          "title": "Microphones | Sennheiser",
+          "kind": "website",
+          "description": "Discover Sennheiser's microphones: Accentuate character, lend power to the voice, reach and touch the audience. Learn more now!",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.sennheiser.com/en-us/catalog/products/microphones",
+          "image": "https://assets.sennheiser.com/assets/category-microphones/Zz0zNjQ1MTQ3Y2QwNmQxMWYwYTE5ZDhhNmYxOGEzNTAzMQ==?width=1920&format=webp&quality=80",
+          "title": "Microphones | Sennheiser",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.sennheiser.com/en-us/catalog/products/microphones",
+          "image": "https://assets.sennheiser.com/images/assets/taa_filter_card_us.png/Zz0wMjUzMDYyODM5MGYxMWYxYjM5YTUyZmMxYjdlNGFiNw==?width=1920&format=webp&quality=80",
+          "title": "Looking for TAA-compliant products?",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.sennheiser.com/en-us/catalog/products/wireless-systems",
+          "image": "https://www.sennheiser.com/og/SennheiserDefaultOg.jpg",
+          "title": "Wireless Systems: Top Audio Solutions | Sennheiser",
+          "kind": "website",
+          "description": "Unleash superior sound with Sennheiser wireless systems. Experience unmatched audio quality and reliability for professional-grade performance.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-beyerdynamic": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://north-america.beyerdynamic.com/",
+          "image": "https://dfnqgzctqh74q.cloudfront.net/files/6adb10ff155b330002c43bda/beyerdynamic-MMX130Wireless-Startseite-XL-DATUM.jpg",
+          "title": "MMX 130 WIRELESS",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://north-america.beyerdynamic.com/",
+          "image": "https://dfnqgzctqh74q.cloudfront.net/files/6ab3cb3b3fc80500026b31df/beyerdynamic-AventhoY-Startseite-XL-Sept-2026.jpg",
+          "title": "AVENTHO Y",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://north-america.beyerdynamic.com/",
+          "image": "https://dfnqgzctqh74q.cloudfront.net/files/67c02f26904744000818f2e0/beyerdynamic-handmade-Saleskatalog-XL-L-DATUM.jpg",
+          "title": "Made in Germany | beyerdynamic",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://north-america.beyerdynamic.com/blog/made-in-germany-third-generation-t1-and-t5/",
+          "image": "https://dfnqgzctqh74q.cloudfront.net/files/67bc6825f2ea530008e8deb5/beyerdynamic-blog-T1-und-t5-made-in-germany-dritte-generation-blog-tile-1.jpg",
+          "title": "Made in Germany T1 & T5 in third generation",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-audio-technica-studio-line": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://www.audio-technica.com/en-us/",
+          "image": "https://www.audio-technica.com/media//wysiwyg/store_switcher/en_us.png",
+          "title": "English Flag",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.audio-technica.com/en-us/",
+          "image": "https://www.audio-technica.com/static/version1793272963/frontend/Aware/default/en_US/AudioTechnica_Reciteme/images/reciteme-btn.png",
+          "title": "Launch Recite Me assistive technology",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.audio-technica.com/en-us/headphones",
+          "image": "https://www.audio-technica.com/media/converted/wysiwyg/Headphones_1000x1000.webp",
+          "title": "ATH-M50x studio headphones resting on an audio mixer",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.audio-technica.com/en-us/commercial-audio",
+          "image": "https://www.audio-technica.com/media/converted/wysiwyg/PRO_AV_1000x1000.webp",
+          "title": "corporate conference room",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-genelec": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://www.genelec.com/studio-monitors",
+          "image": "https://images.ctfassets.net/4zjnzn055a4v/lviXWEsdmdSlVS7TsLG2v/0234c641c7a243beb548737b258bd79c/Genelec_Pro_Audio_segment2.jpg?fm=jpg&w=417&q=85",
+          "title": "Genelec Studio Monitors",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.genelec.com/studio-monitors",
+          "image": "https://images.ctfassets.net/4zjnzn055a4v/5a2wnuOHb6AVXJZhWrSMuZ/cd5352415ae96d1a3a8fa047c6143416/Genelec_Pro_Audio_segment_hover2.jpg?fm=jpg&w=417&q=85",
+          "title": "Genelec Studio Monitors",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.genelec.com/home-audio",
+          "image": "https://images.ctfassets.net/4zjnzn055a4v/7Kdl21ctUoKYKUYPP1k1I8/717b8b5503593d8af0218b53b2022107/Genelec_Home_Audio_segment2.jpg?fm=jpg&w=417&q=85",
+          "title": "Genelec Home Speakers",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.genelec.com/home-audio",
+          "image": "https://images.ctfassets.net/4zjnzn055a4v/16OnhUOuY6RuYTmRGcGv5B/0c69a404e5dfa13a4bcbdda17f637345/Genelec_Home_Audio_segment_hover2.jpg?fm=jpg&w=417&q=85",
+          "title": "Genelec Home Speakers",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-miele": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": []
+    },
+    "durable-speed-queen": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://speedqueen.com/",
+          "image": "https://speedqueen.com/wp-content/uploads/2019/01/TopLoad-no-badge.png",
+          "title": "Speed Queen Home - Speed Queen",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://speedqueen.com/",
+          "image": "https://speedqueen.com/wp-content/themes/speedqueen-24-v2-5/img/map-americas.png",
+          "title": "Speed Queen Home - Speed Queen",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://speedqueen.com/",
+          "image": "https://speedqueen.com/wp-content/themes/speedqueen-24-v2-5/img/map-apac.png",
+          "title": "Speed Queen Home - Speed Queen",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://speedqueen.com/products/front-load-washers/",
+          "image": "https://speedqueen.com/wp-content/uploads/2026/07/menu-dryer.jpg",
+          "title": "Speed Queen Home - Speed Queen",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://speedqueen.com/products/all-products/",
+          "image": "https://speedqueen.com/wp-content/uploads/2019/01/TopLoad-no-badge.png",
+          "title": "All Products - Speed Queen",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://speedqueen.com/products/top-load-washers/tr7006wn/",
+          "image": "https://speedqueen.com/wp-content/uploads/2026/07/TR7-W-GHS-Cropped-for-All-Products-Page.jpg",
+          "title": "TR7 TR7006WN",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://speedqueen.com/products/top-load-washers/tr7006bn/",
+          "image": "https://speedqueen.com/wp-content/uploads/2026/07/TR7-B-GHS-Cropped-for-All-Products-Page.jpg",
+          "title": "TR7 TR7006BN",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://speedqueen.com/products/top-load-washers/tc5003wn/",
+          "image": "https://speedqueen.com/wp-content/uploads/2026/07/TC5-W-GHS-Cropped-for-All-Products-Page.jpg",
+          "title": "TC5 TC5003WN",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-henry-numatic": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://numatic.com/",
+          "image": "https://numatic.com/wp-content/uploads/Numatic-International-Featured-Image-2024.jpg",
+          "title": "Home",
+          "kind": "website",
+          "description": "Numatic International the home of reliable, high performance, sustainable cleaning for all. UK’s No.1 in Professional Cleaning. Designed & Made in the UK. Committed to Sustainability.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://numatic.com/",
+          "image": "https://numatic.com/wp-content/uploads/2023/11/CleanCare-Range-Menu_o-1.png",
+          "title": "CleanCare Range Menu",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://numatic.com/",
+          "image": "https://numatic.com/wp-content/uploads/2023/11/ProCare-Range-Menu_o-1.png",
+          "title": "ProCare Range Menu",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://numatic.com/",
+          "image": "https://numatic.com/wp-content/uploads/2023/11/FloorCare-Range-1.png",
+          "title": "FloorCare Range",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://numatic.com/cleancare/wbv370nx-pro-cordless-wet-vacuum/",
+          "image": "https://numatic.com/wp-content/uploads/2024/01/WBV370NX-Pro-Cordless-Wet-Vacuum-Featured.jpg",
+          "title": "WBV370NX Pro Cordless Wet Vacuum",
+          "kind": "website",
+          "description": "The WBV370NX Pro Cordless Wet Vacuum. Eliminate the risk of slips, trips and falls with no cable. Perfect for cleaning up spills in high traffic areas.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://numatic.com/cleancare/wbv370nx-pro-cordless-wet-vacuum/",
+          "image": "https://numatic.com/wp-content/uploads/2023/11/CleanCare-Range-Menu_o-1.png",
+          "title": "CleanCare Range Menu",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://numatic.com/cleancare/wbv370nx-pro-cordless-wet-vacuum/",
+          "image": "https://numatic.com/wp-content/uploads/2023/11/ProCare-Range-Menu_o-1.png",
+          "title": "ProCare Range Menu",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://numatic.com/cleancare/wbv370nx-pro-cordless-wet-vacuum/",
+          "image": "https://numatic.com/wp-content/uploads/2023/11/FloorCare-Range-1.png",
+          "title": "FloorCare Range",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-leica-camera-m-series": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://leica-camera.com/en-US/photography/cameras/m",
+          "image": "https://leica-camera.com/sites/default/files/styles/menu_thumbnail_desktop/public/2025-09/1_Overview_Products_1000x1000.jpg.webp?itok=4xAbz1wi",
+          "title": "Leica Q3 and Q3 43",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://leica-camera.com/en-US/photography/cameras/m",
+          "image": "https://leica-camera.com/sites/default/files/styles/menu_thumbnail_desktop/public/2024-08/hero_camera_oververiew_3840x2560.jpg.webp?h=06f3c02d&itok=W8AAVTbf",
+          "title": "Leica Camera - M11 Monochrom",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://leica-camera.com/en-US/photography/cameras/m",
+          "image": "https://leica-camera.com/sites/default/files/styles/menu_thumbnail_desktop/public/2026-05/Leica_Metal_Gray_Navigation_1000x1000px.jpg.webp?itok=-zO79qgW",
+          "title": "Leica Metal Gray products on a podest",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://leica-camera.com/en-US/photography/cameras/m",
+          "image": "https://leica-camera.com/sites/default/files/styles/menu_product_thumbnail_desktop/public/2026-09/CameraProduct_Q3_43_f1.png?h=72d90b5d&itok=tGjh7jfP",
+          "title": "Leica Q3 43 Formula 1® Edition",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://leica-camera.com/en-US/product/leica-geovid-max-10x42",
+          "image": "https://leica-camera.com/sites/default/files/styles/meta_tag_product_image/public/pm-37832-PIM_product-image_Leica_GeovidMax_40831_flat-dark-earth_front_standing_sRGB_1920x1440.png?itok=YnLGDCRU",
+          "title": "Leica Geovid Max 10x42 | Leica Camera US",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://leica-camera.com/en-US/product/leica-geovid-max-10x42",
+          "image": "https://leica-camera.com/sites/default/files/styles/menu_thumbnail_desktop/public/2025-09/1_Overview_Products_1000x1000.jpg.webp?itok=4xAbz1wi",
+          "title": "Leica Q3 and Q3 43",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://leica-camera.com/en-US/product/leica-geovid-max-10x42",
+          "image": "https://leica-camera.com/sites/default/files/styles/menu_thumbnail_desktop/public/2024-08/hero_camera_oververiew_3840x2560.jpg.webp?h=06f3c02d&itok=W8AAVTbf",
+          "title": "Leica Camera - M11 Monochrom",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://leica-camera.com/en-US/product/leica-geovid-max-10x42",
+          "image": "https://leica-camera.com/sites/default/files/styles/menu_thumbnail_desktop/public/2026-05/Leica_Metal_Gray_Navigation_1000x1000px.jpg.webp?itok=-zO79qgW",
+          "title": "Leica Metal Gray products on a podest",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-garmin-handheld-gps-mariner": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://www.garmin.com/en-US/",
+          "image": "https://share-assets.fe.garmin.com/facebook-default.jpg",
+          "title": "Garmin",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.garmin.com/en-US/p/1953453/",
+          "image": "https://res.garmin.com/homepage/87582/87582-TN-NEW.jpg",
+          "title": "FĒNIX® 9",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.garmin.com/en-US/p/1937117/pn/010-04148-01/",
+          "image": "https://res.garmin.com/homepage/88129/88129-TN-NEW.jpg",
+          "title": "APPROACH® S72",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.garmin.com/en-US/p/1967830/",
+          "image": "https://res.garmin.com/homepage/87258/87258-TN-NEW.jpg",
+          "title": "EDGE® 1060",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.garmin.com/en-US/p/1937117/pn/010-04148-01/",
+          "image": "https://res.garmin.com/en/products/010-04148-01/v/cf-lg.jpg",
+          "title": "Approach® S72 – 47 mm",
+          "kind": "product",
+          "description": "Silver/Citron Titanium Bezel with Fog Gray/Citron ComfortFit Fabric Band",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": {
+            "price": "799.99",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": ""
+          }
+        },
+        {
+          "url": "https://www.garmin.com/en-US/p/1989182/pn/010-04675-00/",
+          "image": "https://res.garmin.com/en/products/010-04675-00/v/cf-lg.jpg",
+          "title": "CIRQA™ Smart Band",
+          "kind": "product",
+          "description": "Black",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": {
+            "price": "199.99",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": ""
+          }
+        }
+      ]
+    },
+    "durable-fujitsu-fi-series-scanners": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": []
+    },
+    "durable-brother-monochrome-laser-printers": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://www.brother-usa.com/c/shop/printers",
+          "image": "https://cdn.media.amplience.net/i/brother/MFC-L2807DW_front_output_png?fmt=auto&$card-image-mobile$",
+          "title": "Brother Printer mfc-l2807dw front view",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.brother-usa.com/c/shop/ink-toner",
+          "image": "https://cdn.media.amplience.net/i/brother/15288_1-LC406CXL_CartonCartridge-resized-resized?fmt=auto&$card-image-mobile$",
+          "title": "Brother cartridge image in blue",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.brother-usa.com/c/shop/sewing-embroidery",
+          "image": "https://cdn.media.amplience.net/i/brother/10_SE700_emb_front_resized?fmt=auto&$card-image-mobile$",
+          "title": "Brother sewing machine SE700",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.brother-usa.com/c/shop/label-makers-printers",
+          "image": "https://cdn.media.amplience.net/i/brother/PT-D610BT-front-resized?fmt=auto&$card-image-mobile$",
+          "title": "Brother pt-D610BT front view",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.brother-usa.com/c/shop/deals",
+          "image": "https://assets.brother.com/transform/e7c39825-07f7-4e91-82ff-c05a71309db8/19075_PTD215e-front-png",
+          "title": "Brother PT-D215EMIKR P-touch Embellish Ribbon and Tape Printer",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": null
+        },
+        {
+          "url": "https://www.brother-usa.com/c/shop/deals",
+          "image": "https://assets.brother.com/transform/7af0f020-eee3-457a-a213-ebc396245e46/40378_PTD220ccbund",
+          "title": "Brother PT-D220 Label Maker Bundle",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": null
+        },
+        {
+          "url": "https://www.brother-usa.com/c/shop/deals",
+          "image": "https://assets.brother.com/transform/2e9ead27-dcad-4e5f-84b3-49085832813a/20774_SDX230DIRBBNDL_Bundle-jpg",
+          "title": "Brother Disney ScanNCut DX SDX230DIRBBNDL Rotary Blade Bundle",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": null
+        },
+        {
+          "url": "https://www.brother-usa.com/c/shop/deals",
+          "image": "https://assets.brother.com/transform/ff92c1da-7fce-4421-983f-558839a12ec1/21345_DCP-L2640DW_TN830XL-jpg",
+          "title": "Brother DCP-L2640DW Compact Monochrome Laser Multi-Function Printer with Bundle",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": null
+        }
+      ]
+    },
+    "durable-texas-instruments-graphing-calculators": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://education.ti.com/",
+          "image": "https://education.ti.com/-/media/ti/education/images/bulletin-board/blog/blog_images/33040-aug-9-algebra-1/33040_topalgebratips_thumb.png?rev=169e1c9f-4e47-4933-8dcf-26cbc9bd4d6e&la=en&h=200&w=200&hash=0FC91A7288C050857E573143B5F9376A",
+          "title": "Algebra 1: Seven Important Calculator Functions",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
+        }
+      ]
+    },
+    "durable-casio-g-shock-classic-line": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": []
+    },
+    "durable-seiko-mechanical-automatic": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://www.seikowatches.com/us-en/products/diamondcollection",
+          "image": "https://www.seikowatches.com/us-en/-/media/Images/America/Seiko/Home/products/diamondcollection/Diamonds_SKK728_1000x1000.jpg?mh=440&mw=776&hash=3E5DE5FA7614FE498B73129E3E9255EF",
+          "title": "photo of diamond collection",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.seikowatches.com/us-en/watchfinder?new=true",
+          "image": "https://www.seikowatches.com/us-en/-/media/Images/GlobalEn/Seiko/Home/TOP/category/category_new.jpg?mh=240&mw=430&hash=F75318671D3956DB72048A775A0AFB8D",
+          "title": "image of new model",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.seikowatches.com/us-en/watchfinder?limited=true",
+          "image": "https://www.seikowatches.com/us-en/-/media/Images/GlobalEn/Seiko/Home/TOP/category/category_limited.jpg?mh=240&mw=430&hash=F90EE0FD908BD43324008E591F43DF16",
+          "title": "image of limited edition watch",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.seikowatches.com/us-en/watchfinder?use=Divers",
+          "image": "https://www.seikowatches.com/us-en/-/media/Images/GlobalEn/Seiko/Home/TOP/megamenu/category/megamenu_category_divers.jpg?mh=240&mw=430&hash=B5F4B9B47A3F00FAEFF1071217059278",
+          "title": "image of diver category",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.seikowatches.com/us-en/products/kingseiko",
+          "image": "https://www.seikowatches.com/us-en/-/media/Images/GlobalEn/Seiko/Home/TOP/megamenu/megamenu_kingseiko_2025.jpg?mh=440&mw=776&hash=6409628C624AA644CDB77F7D989CC220",
+          "title": "King Seiko | Seiko Watch Corporation",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.seikowatches.com/us-en/products/prospex",
+          "image": "https://www.seikowatches.com/us-en/-/media/Images/GlobalEn/Seiko/Home/TOP/megamenu/megamenu_prospex_2025.jpg?mh=440&mw=776&hash=69FA6C8F8C2FEA3748573E04E505187D",
+          "title": "Prospex | Seiko Watch Corporation",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.seikowatches.com/us-en/products/presage",
+          "image": "https://www.seikowatches.com/us-en/-/media/Images/GlobalEn/Seiko/Home/products/presage/2606_brand_update/Header_Brand_thumbnail_1280x960_260421mod4.jpg?mh=440&mw=776&hash=7D20DF51178D1664C80C91ED9C2B1B56",
+          "title": "Presage | Seiko Watch Corporation",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        }
+      ]
+    },
+    "durable-rolex": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": []
+    },
+    "durable-patek-philippe": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "items": [
+        {
+          "url": "https://www.patek.com/en",
+          "image": "https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/250169-51882/pp-manufacture-pp6-entrance-interior-calatrava-cross-symbol",
+          "title": "Patek Philippe Official Site | Luxury Watches for Men & Ladies",
+          "kind": "website",
+          "description": "Official website of the last family-owned Genevan luxury watch manufacturer. Enter the Patek Philippe universe to discover our watches and savoir-faire.",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.patek.com/en",
+          "image": "https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/256367-51882",
+          "title": "pp-manufacture-building-pp6-chemin-du-pont-centenaire-1",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.patek.com/en",
+          "image": "https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/282671-51882",
+          "title": "PP_plate-machinery-3",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://www.patek.com/en",
+          "image": "https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/282673-51882",
+          "title": "PP_bridge-beveling-15",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     }
