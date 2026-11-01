@@ -71,6 +71,11 @@ if(host){
   const open=make('a','Open '+entry.label+' on eBay','eqc-account-open');
   open.href=entry.url;open.target='_blank';open.rel='noopener noreferrer';
   accountContent.append(open);
+  if(entry.id==='selling'){
+   const prepare=make('a','Prepare a listing in ShopPhi','eqc-account-open eqc-shopphi-link');
+   prepare.href='/shopphi-sell.html';
+   accountContent.append(make('p','Cross-marketplace selling starts from one private ShopPhi listing draft. eBay and Etsy need owner-approved API access before remote publishing; Mercari US and Poshmark need separate permitted handoffs. Sale-sync is not active.'),prepare);
+  }
  }
  function showAccount(){
   view='account';controller?.abort();sequence++;
