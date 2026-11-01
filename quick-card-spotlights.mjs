@@ -41,6 +41,15 @@ export function visibleSpotlightPrice(row,now=Date.now()){
  const deadline=Math.min(Date.parse(row?.checked_at)+DAY,row?.price_expires_at||Infinity);
  return row?.price&&Number.isFinite(deadline)&&now<=deadline?row.price:'';
 }
+// The published static file can lag behind the hourly data branch.
+// Accept only recent, correctly shaped snapshots; always prefer the newest.
+export function newerSpotlightSnapshot(current,candidate,now=Date.now()){
+ const checked=Date.parse(candidate?.checked_at);
+ if(candidate?.schema_version!==1||!candidate.cards||typeof candidate.cards!=='object'||
+  !Number.isFinite(checked)||checked>now+300000||now-checked>7*DAY)return current;
+ const prior=Date.parse(current?.checked_at);
+ return !current||!Number.isFinite(prior)||checked>prior?candidate:current;
+}
 export function chooseSpotlight(items,{seen=[],interests=[],last=''}={}){
  const used=new Set(seen);let pool=items.filter(x=>x.id!==last&&!used.has(x.id));
  if(!pool.length)pool=items.filter(x=>x.id!==last);if(!pool.length)pool=items;
@@ -54,8 +63,8 @@ async function snapshot(){
   let newest=null;
   for(const endpoint of DATA){try{
    const r=await fetch(endpoint+'?checked='+Date.now(),{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(9000)});
-   if(!r.ok)continue;const d=await r.json(),t=Date.parse(d.checked_at);
-   if(d.schema_version===1&&d.cards&&Number.isFinite(t)&&t<=Date.now()+300000){return d;}
+   if(!r.ok)continue;const d=await r.json();
+   newest=newerSpotlightSnapshot(newest,d);
   }catch{}}
   return newest;
  })();return snapshotPromise;
