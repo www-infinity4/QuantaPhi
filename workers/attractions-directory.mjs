@@ -22,11 +22,13 @@ async function search(url,env,feed=false){
  if(!validState(state))return answer({error:'Invalid U.S. state'},400);
  const city=text(url.searchParams.get('city'),80),category=text(url.searchParams.get('category'),65);
  const q=text(url.searchParams.get('q'),65).replace(/[\\%_]/g,' ');
- const page=Math.max(0,Math.min(200,parseInt(url.searchParams.get('page')||'0',10)||0));
- const sql="SELECT id,name,city,state,category,address,latitude,longitude,website,source_name,source_url,license,confidence,image_url,image_attribution,last_seen FROM attractions WHERE state=? AND status='listed' AND (?='' OR lower(city)=lower(?)) AND (?='' OR category=?) AND (name LIKE ? OR category LIKE ?) ORDER BY name COLLATE NOCASE,id LIMIT 24 OFFSET ?";
+ const requestedPage=Number(url.searchParams.get('page')||'0');
+ const page=Number.isSafeInteger(requestedPage)&&requestedPage>=0?Math.min(100000,requestedPage):0;
+ const sql="SELECT id,name,city,state,category,address,latitude,longitude,website,source_name,source_url,license,confidence,image_url,image_attribution,last_seen FROM attractions WHERE state=? AND status='listed' AND (?='' OR lower(city)=lower(?)) AND (?='' OR category=?) AND (name LIKE ? OR category LIKE ?) ORDER BY name COLLATE NOCASE,id LIMIT 25 OFFSET ?";
  const {results}=await env.ATTRACTIONS.prepare(sql).bind(state,city,city,category,category,'%'+q+'%','%'+q+'%',page*24).all();
- const items=(results||[]).map(o=>({...o,website:safeSite(o.website),source_url:safeSite(o.source_url),image_url:safeSite(o.image_url),sponsored:false,card_eligible:!!(o.name&&o.source_url&&o.license),...(feed?{card_kind:'attraction'}:{})}));
- return answer({state,city,category,query:q,page,page_size:24,count:items.length,has_more:items.length===24,items,
+ const rows=results||[];
+ const items=rows.slice(0,24).map(o=>({...o,website:safeSite(o.website),source_url:safeSite(o.source_url),image_url:safeSite(o.image_url),sponsored:false,card_eligible:!!(o.name&&o.source_url&&o.license),...(feed?{card_kind:'attraction'}:{})}));
+ return answer({state,city,category,query:q,page,page_size:24,count:items.length,has_more:page<100000&&rows.length>24,items,
   note:'Organic source-backed directory, not advertising or live booking. No guaranteed prices, hours, reviews, slots, availability or sponsorship.'});
 }
 export async function importSnapshot(env,payload){
