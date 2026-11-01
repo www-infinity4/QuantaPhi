@@ -46,4 +46,9 @@ class TestAttractionImport(unittest.TestCase):
   rows=[sample(),sample(),sample(name='Other',identity='a397eed0-abb2-4575-97a5-32446bc81d14')]
   d=imp.build(rows,limit=1,generated_at='2026-11-01T00:00:00Z')
   self.assertEqual(d['eligible_count'],2);self.assertEqual(len(d['items']),1);self.assertTrue(d['truncated'])
+ def test_workflow_pins_all_four_overture_downloads_to_one_release(self):
+  workflow=(Path(__file__).parents[1]/'.github/workflows/attractions-directory-import.yml').read_text()
+  self.assertIn('overturemaps download --stac --release="${RELEASE}"',workflow)
+  self.assertIn('--release "${RELEASE}"',workflow)
+  self.assertIn('test "$(release_from_stac)" = "${RELEASE}"',workflow)
 if __name__=='__main__':unittest.main()
