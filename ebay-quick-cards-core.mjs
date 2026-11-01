@@ -70,11 +70,20 @@ export function normalizeEbayItem(raw,mode){
   amount===0?'Free shipping':new Intl.NumberFormat('en-US',{style:'currency',currency:shippingCost.currency}).format(amount)+' shipping':'Shipping: check eBay';
  const bidCount=Number.isSafeInteger(raw.bidCount)&&raw.bidCount>=0?raw.bidCount:null;
  const ends=raw.itemEndDate&&Number.isFinite(Date.parse(raw.itemEndDate))?raw.itemEndDate:'';
+ const bidPrice=raw.currentBidPrice;
+ const currentBidValue=Number(bidPrice?.value);
+ const bidCurrency=/^[A-Z]{3}$/.test(bidPrice?.currency||'')?bidPrice.currency:'';
+ const buyPrice=raw.price;
+ const buyValue=Number(buyPrice?.value);
+ const buyNowPrice=buy.includes('FIXED_PRICE')&&buyPrice&&Number.isFinite(buyValue)&&buyValue>=0&&/^[A-Z]{3}$/.test(buyPrice.currency||'')?
+  new Intl.NumberFormat('en-US',{style:'currency',currency:buyPrice.currency}).format(buyValue):'';
  return {
   id:clean(raw.itemId||url,180),url,title,
   image:safeEbayImageUrl(raw.image?.imageUrl||''),
   price,seller,shipping,bidCount,ends,
-  mode,condition:clean(raw.condition,70),
+  mode,canBid:buy.includes('AUCTION'),canBuyNow:buy.includes('FIXED_PRICE'),
+  buyNowPrice,bidCurrency,currentBidValue:Number.isFinite(currentBidValue)&&currentBidValue>=0?currentBidValue:null,
+  condition:clean(raw.condition,70),
   sellerFeedback:Number.isFinite(Number(raw.seller?.feedbackPercentage))&&raw.seller?.feedbackPercentage!==undefined?Number(raw.seller.feedbackPercentage):null,
   topRated:raw.topRatedBuyingExperience===true,
   // No paid-ad claim from a search result alone.
@@ -90,4 +99,27 @@ export function normalizeEbayFeed(data,mode){
  }
  if(mode==='auction')items.sort((a,b)=>(b.bidCount||0)-(a.bidCount||0)||String(a.ends).localeCompare(String(b.ends)));
  return items;
+}
+
+/* My eBay is a capability-gated view until an owner-authorized OAuth User
+ * token is proven on the server. eBay account pages are official handoffs,
+ * not a claim that QuantaPhi has read a private session. */
+export const ebayAccountViews=Object.freeze([
+ {id:'buying',label:'Buying',description:'Watchlist and saved items',url:'https://www.ebay.com/mye/myebay/watchlist'},
+ {id:'bidding',label:'Bidding',description:'Your bids and offers',url:'https://www.ebay.com/mye/myebay/bidsoffers'},
+ {id:'selling',label:'Selling',description:'Seller Hub listings and orders',url:'https://www.ebay.com/sh/ovw'},
+ {id:'purchases',label:'Purchases',description:'Your purchase history',url:'https://www.ebay.com/mye/myebay/purchase'}
+]);
+/** Never submit a bid here. This validates a draft for a user-visible handoff. */
+export function ebayBidDraft(item,amount){
+ if(!item?.canBid||item.bidCurrency!=='USD'||!Number.isFinite(item.currentBidValue))
+  return {ok:false,error:'Verified USD auction bidding data unavailable; use eBay directly.'};
+ const typed=String(amount||'').trim();
+ if(!/^(?:0|[1-9]\\d{0,6})(?:\\.\\d{1,2})?$/.test(typed))
+  return {ok:false,error:'Enter a maximum bid in USD with up to two decimal places.'};
+ const n=Number(typed);
+ if(!Number.isFinite(n)||n<=item.currentBidValue)
+  return {ok:false,error:'Your maximum must exceed the reported current bid; eBay sets the final minimum increment.'};
+ return {ok:true,amount:n.toFixed(2),currency:'USD',step:'provider_handoff',
+  message:'Review this amount on eBay. Infinity has not submitted a bid.'};
 }
