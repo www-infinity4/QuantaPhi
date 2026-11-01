@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta name="color-scheme" content="light">
+<title>Bubbles · Identity & Documents Settings | QuantaPhi</title>
+<link rel="stylesheet" href="/bubbles-identity-settings.css?v=20261101-id1">
+<script type="module" src="/bubbles-identity-settings.mjs?v=20261101-id1"></script>
+</head>
+<body class="is-page">
+<header class="is-top">
+ <a class="is-brand" href="/">Quanta<span>Phi</span></a>
+ <nav aria-label="Identity settings navigation"><a href="/bubbles.html">Bubbles</a><a href="/bubbles-accounts.html">Account Connections</a><a href="/robot-brain-account-security.html">Security</a></nav>
+</header>
+<main id="bubblesIdentityWorkspace" class="is-main" aria-label="Bubbles identity and personal document settings">
+ <header class="is-intro">
+  <p class="is-eyebrow">INFINITY® · BUBBLES PERSONAL SETTINGS</p>
+  <h1>Identity & Documents</h1>
+  <p>Prepare your personal profile, keep track of documents, and open the existing secure account, benefits and housing tools. This is an independent account settings workspace—not an SSA or bank login.</p>
+  <p class="is-warning" role="status">Sensitive cloud intake is not yet enabled. Don't enter Social Security numbers, credit card numbers, banking credentials, or upload ID documents here. Fields on this page stay in this browser tab and are not saved to the server.</p>
+ </header>
+ <section class="is-panel" aria-labelledby="profileHeading">
+  <div class="is-panel-head"><h2 id="profileHeading">Personal & household profile</h2><small>Temporary session worksheet · not submitted</small></div>
+  <form id="identityPlanningForm" autocomplete="off" novalidate>
+   <div class="is-grid">
+    <label>Full name<input name="name" maxlength="100" autocomplete="off" placeholder="Enter for this session only"></label>
+    <label>Business or organization<input name="business" maxlength="120" placeholder="Optional"></label>
+    <label>Phone number<input name="phone" type="tel" maxlength="28" placeholder="Optional"></label>
+    <label>Household members<input name="householdSize" type="number" min="1" max="30" step="1" value="1"></label>
+    <label>Monthly household income ($)<input name="income" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Optional"></label>
+    <label>Estimated household assets ($)<input name="assets" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Optional"></label>
+    <label>Benefits<select name="benefits">
+     <option value="unknown">Prefer not to say / unknown</option><option value="ssi">SSI</option>
+     <option value="ssdi">SSDI</option><option value="both">SSI and SSDI</option>
+     <option value="other">Other benefits</option><option value="none">None</option>
+    </select></label>
+   </div>
+   <div class="is-actions"><button type="submit" class="is-btn is-primary">Preview this session</button><button type="reset" class="is-btn">Clear this form</button></div>
+  </form>
+  <output id="identityProfileOutput" class="is-output" aria-live="polite"></output>
+  <p class="is-caption">Date of birth, Social Security number, government ID, payment cards and bank account numbers will use the separate locked-down verification vault when its authenticated private intake is ready. Nothing on this page can declare an account verified.</p>
+ </section>
+ <section class="is-panel" aria-labelledby="docsHeading">
+  <div class="is-panel-head"><h2 id="docsHeading">Document checklist</h2><small>Mark what you have · no files uploaded</small></div>
+  <div id="identityDocumentChecklist" class="is-checklist"></div>
+  <div class="is-actions"><button id="identityClearChecklist" class="is-btn" type="button">Clear selections</button><span id="identityDocumentCount" aria-live="polite"></span></div>
+  <p class="is-caption">For identity security, a government ID, Social Security card, bill, bank statement or credit card is not conclusive proof by itself. Verification requires corroboration and an authenticated applicant.</p>
+ </section>
+ <section class="is-panel" aria-labelledby="connectedHeading">
+  <h2 id="connectedHeading">Your existing settings & official benefits</h2>
+  <div class="is-link-grid">
+   <a class="is-link" href="/bubbles-accounts.html"><strong>Account connections</strong><span>GitHub, Google, Cloudflare and connected-provider permissions</span></a>
+   <a class="is-link" href="/robot-brain-account-security.html"><strong>Passkeys & account security</strong><span>Current owner verification and private sign-in controls</span></a>
+   <a class="is-link" href="/disability-housing.html"><strong>Housing & loans · Home Access</strong><span>Continue your existing SSI/SSDI housing intake</span></a>
+   <a class="is-link" href="https://www.ssa.gov/manage-benefits/get-benefit-letter" target="_blank" rel="noopener noreferrer"><strong>Get an official SSA benefit letter</strong><span>Use your own my Social Security account to save the PDF; no account password is shared with Bubbles</span></a>
+  </div>
+  <p class="is-caption">Future secure document import and authorized account integrations can be added to this same settings hub. No access to SSA records, financial accounts, or uploaded evidence is currently implied.</p>
+ </section>
+</main>
+<footer class="is-footer"><a href="/privacy.html">Privacy policy</a> · <a href="/bubbles.html">Back to Bubbles</a></footer>
+</body></html>
