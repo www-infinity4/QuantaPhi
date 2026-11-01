@@ -1,7 +1,9 @@
 /* Real public publisher destinations (not product offers, paid ads or licensed media).
  * All content is withheld from the UI until each-visit explicit 21+ acknowledgment.
  * A click is NOT third-party age verification and cannot unlock paid campaigns. */
+import {BRUCE_BANNER_SOURCES} from './bruce-banner-weedmaps.mjs';
 export const PUBLIC_21_SOURCES=Object.freeze([
+ ...BRUCE_BANNER_SOURCES,
  Object.freeze({id:'weedmaps-directory',kind:'independent-source',title:'Weedmaps',subtitle:'Official publisher',summary:'Explore the Weedmaps website and its independently operated location directory.',url:'https://weedmaps.com/',official_domain:'weedmaps.com'}),
  Object.freeze({id:'leafly-directory',kind:'independent-source',title:'Leafly',subtitle:'Official publisher',summary:'Open the original Leafly site for its published content and local directory.',url:'https://www.leafly.com/',official_domain:'leafly.com'}),
  Object.freeze({id:'weedmaps-learning',kind:'independent-source',title:'Weedmaps Learn',subtitle:'Publisher information',summary:'Read informational articles published on the original Weedmaps website.',url:'https://weedmaps.com/learn',official_domain:'weedmaps.com'}),
