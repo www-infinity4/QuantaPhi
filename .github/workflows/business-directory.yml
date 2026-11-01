@@ -33,3 +33,5 @@ jobs:
       - name: Business directory and regression tests
         run: |
           node --test test/business-directory-worker.test.mjs test/business-directory-page.test.mjs test/public-directory-studio.test.mjs
+      - name: Overture incremental importer unit verification
+        run: python3 -m unittest discover -s test -p 'test_business_directory_ingest.py' -v
