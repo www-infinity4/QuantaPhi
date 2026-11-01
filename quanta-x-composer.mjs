@@ -29,7 +29,7 @@ export function mountXComposer(host){
  const explanation=el('p','qca-x-note','Draft here, then confirm on X. No post is sent by QuantaPhi.');
  const fieldLabel=el('label','qca-x-label','Post text');
  const field=el('textarea','qca-x-text');
- field.rows=3;field.maxLength=X_DRAFT_LIMIT;field.placeholder='What would you like to share?';
+ field.rows=3;field.placeholder='What would you like to share?';
  field.setAttribute('aria-label','X post draft');
  fieldLabel.append(field);
  const actions=el('div','qca-x-footer');
@@ -45,10 +45,12 @@ export function mountXComposer(host){
   const len=Array.from(draft).length;
   count.textContent=len+' / '+X_DRAFT_LIMIT;
   if(!len||len>X_DRAFT_LIMIT){
+   status.textContent=len>X_DRAFT_LIMIT?'Shorten this draft before continuing. X will check its final post length.':'Type a post first; nothing is sent from this card.';
    link.removeAttribute('href');link.setAttribute('aria-disabled','true');link.tabIndex=-1;
    return;
   }
   link.href=xDraftIntentUrl(draft);
+  status.textContent='Draft ready. You will review and confirm on X before posting.';
   link.removeAttribute('aria-disabled');link.tabIndex=0;
  };
  link.addEventListener('click',event=>{
