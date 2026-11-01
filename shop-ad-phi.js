@@ -24,7 +24,7 @@ const button=(parent,text,fn)=>{const b=node('button',text);b.type='button';b.ad
 let current=null,sellerStudio=null,publishing=false,interactionRevision=0,editingSaved=null,query=new URL(location.href).searchParams.get('q')||'antique radio';
 async function publish(item){
  if(publishing){status.textContent='A Shop Phi post is already being submitted.';return false}
- if(!connected){
+ if(!connected||item.publishState==='public-edit-pending'){
   if(!window.ShopPhiPublish){
    status.textContent='The secure wallet-owned ShopPhi seller service is unavailable. Your local draft is safe.';
    return false;
