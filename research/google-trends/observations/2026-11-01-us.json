@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-01T16:28:54.796882Z",
+  "checked_at": "2026-11-01T20:41:24.869619Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "juan atkins",
-      "approx_searches": "500+",
-      "published_at": "2026-11-01T16:10:00Z",
-      "related_news_urls": [
-        "https://pitchfork.com/story/juan-atkins-co-founder-of-techno-music-dies-at-64/",
-        "https://ra.co/news/86327"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzi29k8atwW9GB5pf1K9lVMz0tSD7tL6U1QXUbHX86sttBDHf_Hr0vkmuyXBw",
-      "image_credit": "Pitchfork",
-      "news": [
-        {
-          "url": "https://pitchfork.com/story/juan-atkins-co-founder-of-techno-music-dies-at-64/",
-          "title": "Juan Atkins, Co-Founder of Techno Music, Dies at 64",
-          "publisher": "Pitchfork",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzi29k8atwW9GB5pf1K9lVMz0tSD7tL6U1QXUbHX86sttBDHf_Hr0vkmuyXBw"
-        },
-        {
-          "url": "https://ra.co/news/86327",
-          "title": "Juan Atkins, techno pioneer and Belleville Three member, dies aged 64 · News ⟋ RA",
-          "publisher": "Resident Advisor",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTy4hWIlCgUwMI0oFingyFcjku0oSKYZzGtTGQystJaq15HMZ2gxRfnIszfRMo"
-        }
-      ]
-    },
-    {
-      "query": "pippa middleton",
-      "approx_searches": "200+",
-      "published_at": "2026-11-01T16:10:00Z",
-      "related_news_urls": [
-        "https://www.thetimes.com/uk/environment/article/pippa-middleton-row-villagers-car-park-5npqfk7t6",
-        "https://www.telegraph.co.uk/news/2026/10/30/berkshire-village-shock-pippa-middleton-car-park/",
-        "https://www.gbnews.com/royal/pippa-middleton-husband-car-park-backlash"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTir-F2v-m_V7G3Yxu5niIz_YVH3BfkQPhem-u1KZ7OXifLWRgQ-u4_mWPc7Bo",
-      "image_credit": "The Times",
-      "news": [
-        {
-          "url": "https://www.thetimes.com/uk/environment/article/pippa-middleton-row-villagers-car-park-5npqfk7t6",
-          "title": "Pippa Middleton loses fresh row with villagers over car park",
-          "publisher": "The Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTir-F2v-m_V7G3Yxu5niIz_YVH3BfkQPhem-u1KZ7OXifLWRgQ-u4_mWPc7Bo"
-        },
-        {
-          "url": "https://www.telegraph.co.uk/news/2026/10/30/berkshire-village-shock-pippa-middleton-car-park/",
-          "title": "Berkshire villagers ‘shocked’ by Pippa Middleton’s unauthorised car park",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzdjlbBkWY7kcT8Ckl02jPBWSYnfw-G5hWrUnVZ1MhR7MdlwSdtWo7C5VYm7A"
-        },
-        {
-          "url": "https://www.gbnews.com/royal/pippa-middleton-husband-car-park-backlash",
-          "title": "Pippa Middleton's husband told to demolish car park after village backlash",
-          "publisher": "GB News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgsIj_BShCw-6NGOttCuc5rxMda1W41moYSH1LMs2vr3f_o5oxUsl6sVbWqTk"
-        }
-      ]
-    },
-    {
-      "query": "andreas almgren",
+      "query": "ps5",
       "approx_searches": "2000+",
-      "published_at": "2026-11-01T16:00:00Z",
+      "published_at": "2026-11-01T20:20:00Z",
       "related_news_urls": [
-        "https://www.aftonbladet.se/sportbladet/a/p1wJ2j/new-york-marathon-2026-andreas-almgren-har-startat",
-        "https://www.svtplay.se/video/Kv142Zg/new-york-marathon/idag-14-30",
-        "https://www.expressen.se/sport/friidrott/rasar-mot-detaljen-hur-kan-man-vara-sa-korkad/"
+        "https://mp1st.com/news/report-bend-studios-next-game-is-a-third-person-co-op-game-reveal-set-for-2027",
+        "https://wccftech.com/bend-studio-third-person-co-op-game-2027-report/",
+        "https://www.pushsquare.com/news/2026/11/rumour-days-gone-dev-to-announce-and-launch-new-ps5-game-in-2027"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKoOah-NjZPXVWQyUxlTwn8a9glLvVAtCpAAGAfJtTufFeRbBDtiq4gx4BqqY",
-      "image_credit": "Aftonbladet",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4kkkrrrdI6AtnUPpOcEQY4bPeFcqlZ6zvtSkfhNIJmBd-GwXNIB8KinCLPGc",
+      "image_credit": "MP1st",
       "news": [
         {
-          "url": "https://www.aftonbladet.se/sportbladet/a/p1wJ2j/new-york-marathon-2026-andreas-almgren-har-startat",
-          "title": "New York Marathon 2026: Andreas Almgren i tätklungan",
-          "publisher": "Aftonbladet",
+          "url": "https://mp1st.com/news/report-bend-studios-next-game-is-a-third-person-co-op-game-reveal-set-for-2027",
+          "title": "Report: Bend Studio’s Next Game Is a Third-Person Co-op Game; Reveal Set for 2027",
+          "publisher": "MP1st",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKoOah-NjZPXVWQyUxlTwn8a9glLvVAtCpAAGAfJtTufFeRbBDtiq4gx4BqqY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4kkkrrrdI6AtnUPpOcEQY4bPeFcqlZ6zvtSkfhNIJmBd-GwXNIB8KinCLPGc"
         },
         {
-          "url": "https://www.svtplay.se/video/Kv142Zg/new-york-marathon/idag-14-30",
-          "title": "New York Marathon – Idag 14:30",
-          "publisher": "SVT Play",
+          "url": "https://wccftech.com/bend-studio-third-person-co-op-game-2027-report/",
+          "title": "Sony’s Bend Studio Reportedly Plans a 2027 Reveal and Possible Release for Its Third-Person Co-Op Game, Despite Starting the Project Only in Mid-2025",
+          "publisher": "Wccftech",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReaP3zpu-8bKu1BA77uklVVvZxlgL8n6VJ4aWKCxwQMZLwH0J3-SobRG-Dih8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7kj3o14_wQEkwZpdnYzeULIRKI9BLHsDUeqKi4GCO5aC-Ckst3-sDeLZyxW8"
         },
         {
-          "url": "https://www.expressen.se/sport/friidrott/rasar-mot-detaljen-hur-kan-man-vara-sa-korkad/",
-          "title": "Svenska ikonen rasar över detaljen: ”Så in i bomben korkad”",
-          "publisher": "Expressen",
+          "url": "https://www.pushsquare.com/news/2026/11/rumour-days-gone-dev-to-announce-and-launch-new-ps5-game-in-2027",
+          "title": "Rumour: Days Gone Dev to Announce and Launch New PS5 Game in 2027",
+          "publisher": "Push Square",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSp1dTaj0LZ87CHguD9q0MtA81riZMwdzZ5gptlE0Egng-wvo7xWuzo8Rs4spc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTU-CAhX816t76U5_63GAE8TmT--TC7pYFFgaR4i_UpmM0hCjOybKEuwBFufy8"
         }
       ]
     },
     {
-      "query": "madrid vs",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-01T16:00:00Z",
-      "related_news_urls": [
-        "https://www.si.com/es-us/atletico-de-madrid-vs-bayern-munich-previa-predicciones-y-alineaciones",
-        "https://holanews.com/semana-imponente-confianza-total/",
-        "https://www.eldesmarque.com/futbol/liga-1a-division/20261031/giuliano-simeone-lidetaro-laliga-bayern_18_020589027.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiBF0WL4Kpz1GthGn6tPMVrs3t7OBP92b9CnRnqJuYdoXJuKdyj53tvdEVXFA",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/es-us/atletico-de-madrid-vs-bayern-munich-previa-predicciones-y-alineaciones",
-          "title": "Atlético de Madrid vs Bayern Múnich: previa, predicciones y alineaciones",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiBF0WL4Kpz1GthGn6tPMVrs3t7OBP92b9CnRnqJuYdoXJuKdyj53tvdEVXFA"
-        },
-        {
-          "url": "https://holanews.com/semana-imponente-confianza-total/",
-          "title": "Semana imponente, confianza total",
-          "publisher": "HolaNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnkg22KhSwj3ADM2e0XhISUk0vEYZYJ7fsysxat8Xs2oCq_flmurkdHzP8DhQ"
-        },
-        {
-          "url": "https://www.eldesmarque.com/futbol/liga-1a-division/20261031/giuliano-simeone-lidetaro-laliga-bayern_18_020589027.html",
-          "title": "Giuliano Simeone se fija en su padre y pasa del liderato de LALIGA EA Sports: \"Bayern\"",
-          "publisher": "El Desmarque",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-i2yJ4JNhC1erDkm6zvwy0gzkYXsD3Y7nM_qeTPViQ77JDPT6nnMQeptjH4g"
-        }
-      ]
-    },
-    {
-      "query": "you can see everything movie",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-01T16:00:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/10/box-office-you-can-see-everything-clayface-halloween-1237209579/",
-        "https://www.boxofficepro.com/weekend-preview-you-can-see-everything-looking-to-claim-top-spot-over-quiet-halloween-frame/",
-        "https://www.dc.com/blog/2026-10-30/connecting-with-clayface"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE_9BF4WOeibODab2zjuXckPSnGWNBGkKpCjq5vgYEuMV-v_NIYhdNeiHfIo4",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/10/box-office-you-can-see-everything-clayface-halloween-1237209579/",
-          "title": "Box Office: 'You Can See Everything' Has Edge Over 'Clayface' in Halloween Frame",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE_9BF4WOeibODab2zjuXckPSnGWNBGkKpCjq5vgYEuMV-v_NIYhdNeiHfIo4"
-        },
-        {
-          "url": "https://www.boxofficepro.com/weekend-preview-you-can-see-everything-looking-to-claim-top-spot-over-quiet-halloween-frame/",
-          "title": "Weekend Preview: YOU CAN SEE EVERYTHING Looking to Claim Top Spot Over Quiet Halloween Frame",
-          "publisher": "Boxoffice Pro",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnxsqRb5447YaSIoQTTfdU5zxTMGH6pbeHrpAYqGRy-JaOxSo2rGFz-AnVGus"
-        },
-        {
-          "url": "https://www.dc.com/blog/2026-10-30/connecting-with-clayface",
-          "title": "Connecting with “Clayface”",
-          "publisher": "DC Comics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSJhOMbBO4xaSJDV7eyspDzQAPbSRVdnSmAM_34V5aXfh36Mzrj1vSvKW4zoA"
-        }
-      ]
-    },
-    {
-      "query": "josh shapiro",
+      "query": "seth mcgowan",
       "approx_searches": "500+",
-      "published_at": "2026-11-01T16:00:00Z",
+      "published_at": "2026-11-01T20:20:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/news/josh-shapiro-pennsylvania-threats-campaign-rhetoric/",
-        "https://www.cbsnews.com/video/full-interview-pennsylvania-governor-josh-shapiro/",
-        "https://www.inquirer.com/politics/pennsylvania/josh-shapiro-bob-harvie-doylestown-rally-20261031.html"
+        "https://sports.yahoo.com/articles/colts-backup-rb-seth-mcgowan-151417833.html",
+        "https://www.fantasylife.com/articles/fantasy/running-back-handcuffs-update-for-week-8",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/mcgowan-sees-career-high-12-touches-in-week-7-loss"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScd9nMz_SE9iHSf2ImAC9rdnyFm_HODeFp50HEQqD2ilH9UcrxuTvGzzlJ8Yo",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiiw7rQZKGf_yh4WZ557bHJyNgkSVzw48SD2F6LBN_eWy1xOtzPohSLlE-yzo",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.cbsnews.com/news/josh-shapiro-pennsylvania-threats-campaign-rhetoric/",
-          "title": "Pennsylvania Gov. Josh Shapiro says officials must \"lead by example\" amid dangerous campaign rhetoric",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScd9nMz_SE9iHSf2ImAC9rdnyFm_HODeFp50HEQqD2ilH9UcrxuTvGzzlJ8Yo"
-        },
-        {
-          "url": "https://www.cbsnews.com/video/full-interview-pennsylvania-governor-josh-shapiro/",
-          "title": "Full Interview: Pennsylvania's Josh Shapiro",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpnCQ1ofCKKzXMmAapurT9CQvPCNTPjw0IA-UZg-YBr3MJ3kTrd6N6hMCGHqs"
-        },
-        {
-          "url": "https://www.inquirer.com/politics/pennsylvania/josh-shapiro-bob-harvie-doylestown-rally-20261031.html",
-          "title": "Gov. Josh Shapiro made his final stump for congressional candidate Bob Harvie, urging voters to ‘save the republic’",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAXfW5Wx260-4BPV5X4tn49mcEt_H9oe1wKysM1LSmdhRqKMGfUhDMJ6NWEnU"
-        }
-      ]
-    },
-    {
-      "query": "randy moss",
-      "approx_searches": "200+",
-      "published_at": "2026-11-01T16:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50342146/dolphins-wr-caleb-douglas-vs-pats-christian-gonzalez",
-        "https://www.thephinsider.com/miami-dolphins-news/124219/caleb-douglas-nominated-for-rookie-of-the-week-award",
-        "https://www.miamidolphins.com/video/caleb-douglas-first-nfl-touchdown-catch-opens-the-scoring-in-dolphins-jets-game"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk_gMbQQzIHyPcXS1tm8rbZAaDYGzSEAkNW8KUuwJJQ-OVYHFg2I7b7TvkAS0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50342146/dolphins-wr-caleb-douglas-vs-pats-christian-gonzalez",
-          "title": "Miami Dolphins WR Caleb Douglas rounding into form ahead of Pats matchup",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk_gMbQQzIHyPcXS1tm8rbZAaDYGzSEAkNW8KUuwJJQ-OVYHFg2I7b7TvkAS0"
-        },
-        {
-          "url": "https://www.thephinsider.com/miami-dolphins-news/124219/caleb-douglas-nominated-for-rookie-of-the-week-award",
-          "title": "Caleb Douglas nominated for Rookie of the Week award",
-          "publisher": "The Phinsider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJY005J2I4Jddziisen4y7g2KTfEYKPZzhf8sU2bdaTi1WaPZYMHYwdLuDRvQ"
-        },
-        {
-          "url": "https://www.miamidolphins.com/video/caleb-douglas-first-nfl-touchdown-catch-opens-the-scoring-in-dolphins-jets-game",
-          "title": "Caleb Douglas' first NFL touchdown catch opens the scoring in Dolphins-Jets game",
-          "publisher": "Miami Dolphins",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ_wm1JhdVesW_gRMfOe1j9CBKNvRcDsa1Q9rkIevP5x_wFPSBmy-J0zQrmh0"
-        }
-      ]
-    },
-    {
-      "query": "jessica mcclain",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-01T15:50:00Z",
-      "related_news_urls": [
-        "https://www.flotrack.org/articles/16341511-new-york-city-marathon-results-2026-elite-race-women",
-        "https://www.newsday.com/sports/olympics/marathon-nyc-u61741",
-        "https://www.nbcsports.com/olympics/news/new-york-city-marathon-2026-andreas-almgren-sheila-chepkirui"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPCgK4vR8u4PghiK6ysO364yTClAFcnWjOKQntO6ghm3uXzQrg1NxgADxxwuA",
-      "image_credit": "FloTrack",
-      "news": [
-        {
-          "url": "https://www.flotrack.org/articles/16341511-new-york-city-marathon-results-2026-elite-race-women",
-          "title": "2026 New York City Marathon Results: Sheila Chepkirui Wins Women's Elite Race",
-          "publisher": "FloTrack",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPCgK4vR8u4PghiK6ysO364yTClAFcnWjOKQntO6ghm3uXzQrg1NxgADxxwuA"
-        },
-        {
-          "url": "https://www.newsday.com/sports/olympics/marathon-nyc-u61741",
-          "title": "Sheila Chepkirui wins the women's race of the New York City Marathon for the 2nd time",
-          "publisher": "Newsday",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9oT4noZjImAfK0mUwh3rZwKcxK6MQAMt0m_Qkms9lSV_uq10XFTQHneF6d40"
-        },
-        {
-          "url": "https://www.nbcsports.com/olympics/news/new-york-city-marathon-2026-andreas-almgren-sheila-chepkirui",
-          "title": "New York City Marathon: Andreas Almgren, Sheila Chepkirui win; Jess McClain ends U.S. podium drought",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS17HV_zCgthqdlj7qymsF3e2-Dj82cS8kZ9bN6Ma_ndE6rYaBhnk2iiW9qKk"
-        }
-      ]
-    },
-    {
-      "query": "social security projected benefit cuts 2032",
-      "approx_searches": "500+",
-      "published_at": "2026-11-01T15:50:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/01/social-security-benefit-cuts-2032.html",
-        "https://finance.yahoo.com/economy/article/the-2032-blind-spot-many-americans-dont-know-a-22-social-security-cut-is-looming-164636093.html",
-        "https://www.ms.now/opinion/social-security-midterm-elections-senate-retirement"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwhX5WhLyyw-S3DDKkMAGyNKgu9THlRa3xi9pVFjrPUxPItpPV431UHQuJ66o",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/01/social-security-benefit-cuts-2032.html",
-          "title": "Social Security may have to cut retirement benefits in six years. Here's how much money is at stake for beneficiaries",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwhX5WhLyyw-S3DDKkMAGyNKgu9THlRa3xi9pVFjrPUxPItpPV431UHQuJ66o"
-        },
-        {
-          "url": "https://finance.yahoo.com/economy/article/the-2032-blind-spot-many-americans-dont-know-a-22-social-security-cut-is-looming-164636093.html",
-          "title": "The 2032 blind spot: Many Americans don't know a 22% Social Security cut is looming",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaiAs0jNw4-R-0MkYaBggb9KeLnkI2P1cKaMsQTbsyE30c3Taaf-U05RqeflY"
-        },
-        {
-          "url": "https://www.ms.now/opinion/social-security-midterm-elections-senate-retirement",
-          "title": "Opinion | The future of Social Security is on the line in the midterms",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-KIhNgd_IazZwsFwSxkTEn-zZ7ZF23bbIEifjb4gRLyhTvCBdR1agu0ocEgc"
-        }
-      ]
-    },
-    {
-      "query": "paris fc vs monaco",
-      "approx_searches": "500+",
-      "published_at": "2026-11-01T15:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cm87z59lgnq2t",
-        "https://www.getfootballnewsfrance.com/2026/paris-fc-predicted-xi-v-monaco-luca-koleosho-out/",
-        "https://sports.yahoo.com/articles/monaco-predicted-xi-v-paris-082100047.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRws_R-EFu6ATaSHyyJ5-r28sd4bMy0gv7oyuigsKxI2StTzIT1jsMbhMJf2tY",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cm87z59lgnq2t",
-          "title": "Paris FC vs Monaco: French Ligue 1 stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRws_R-EFu6ATaSHyyJ5-r28sd4bMy0gv7oyuigsKxI2StTzIT1jsMbhMJf2tY"
-        },
-        {
-          "url": "https://www.getfootballnewsfrance.com/2026/paris-fc-predicted-xi-v-monaco-luca-koleosho-out/",
-          "title": "Paris FC predicted XI v Monaco: Luca Koleosho out",
-          "publisher": "Get French Football News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJo9j9utIlxT7jYvRgzKQ2O_is0Cv9wZFEd_OO8yr32MP50EOUpZNIQd3U7O4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/monaco-predicted-xi-v-paris-082100047.html",
-          "title": "Monaco predicted XI v Paris FC: Matthis Abline to start alongside Paris Brunner",
+          "url": "https://sports.yahoo.com/articles/colts-backup-rb-seth-mcgowan-151417833.html",
+          "title": "Colts’ Backup RB Seth McGowan is a Must-Add Fantasy Football Pickup",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3u_4JubUyDndd4fWLbvBn3jhGtG-tihe40vPrNo1BxIVw-XdMG9KZPWkfZFg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiiw7rQZKGf_yh4WZ557bHJyNgkSVzw48SD2F6LBN_eWy1xOtzPohSLlE-yzo"
+        },
+        {
+          "url": "https://www.fantasylife.com/articles/fantasy/running-back-handcuffs-update-for-week-8",
+          "title": "Running Back Handcuffs Update for Week 8: Is Seth McGowan's Time Coming?",
+          "publisher": "FantasyLife",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhCxcrFBi0hgn7sO42IFhoaQjfBy7xN73cRoLeqt60f-mwXqVvotpFGBoJJOs"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/mcgowan-sees-career-high-12-touches-in-week-7-loss",
+          "title": "McGowan sees career-high 12 touches in Week 7 loss",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe2lpLh9SdVHSzgEBNI2viw1MQmSHzcF26fiWuDj7q0TLLP81NObousCzVPEI"
+        }
+      ]
+    },
+    {
+      "query": "gardner minshew ii",
+      "approx_searches": "500+",
+      "published_at": "2026-11-01T20:20:00Z",
+      "related_news_urls": [
+        "https://raisingzona.com/cardinals-eagles-perfect-trade-partners-gardner-minshew-reunion",
+        "https://sports.yahoo.com/articles/jacoby-brissett-benched-arizona-cardinals-202139141.html",
+        "https://sports.yahoo.com/nfl/breaking-news/article/jacoby-brissett-benched-in-favor-of-gardner-minshew-as-cardinals-struggle-vs-cowboys-202150118.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMqiQ3K66o1-PqjUi-Fj9hW0LOqAg1bz3PBuN_cLJpGjjhE5UG5x53_qpB6wA",
+      "image_credit": "Raising Zona",
+      "news": [
+        {
+          "url": "https://raisingzona.com/cardinals-eagles-perfect-trade-partners-gardner-minshew-reunion",
+          "title": "Cardinals and Eagles are perfect trade partners for a Gardner Minshew reunion",
+          "publisher": "Raising Zona",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMqiQ3K66o1-PqjUi-Fj9hW0LOqAg1bz3PBuN_cLJpGjjhE5UG5x53_qpB6wA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/jacoby-brissett-benched-arizona-cardinals-202139141.html",
+          "title": "Jacoby Brissett benched by Arizona Cardinals vs. Cowboys",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrzbnReb0o0hhNvhg27BmDgONLnGazUrFabJLNtoZNciIgcGOz1HX5WCFgsrU"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/breaking-news/article/jacoby-brissett-benched-in-favor-of-gardner-minshew-as-cardinals-struggle-vs-cowboys-202150118.html",
+          "title": "Jacoby Brissett benched in favor of Gardner Minshew as Cardinals struggle vs. Cowboys",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyntdyguwrgoYnaNWmTPZNX5eZFQr_JigDxKkUqr7dClA-x-kTxeEx_lRu6yc"
+        }
+      ]
+    },
+    {
+      "query": "buffalo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-01T20:20:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/buffalo-bills-defense-horrible-team-cannot-win-super-bowl-terry-bradshaw-fox",
+        "https://www.buffalorumblings.com/buffalo-bills-analysis/143745/buffalo-bills-fans-concerned-josh-allen-will-be-let-down-by-defense-in-2026",
+        "https://www.democratandchronicle.com/story/sports/football/nfl/bills/2026/10/30/buffalo-bills-defense-stats-rankings-jim-leonhard/92457133007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYbcEMv0adgbWrmOVWxtEFMbEmDKMVDFlpip1RncRHisAneZKXB9coWBSQCfo",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/buffalo-bills-defense-horrible-team-cannot-win-super-bowl-terry-bradshaw-fox",
+          "title": "Buffalo Bills defense is 'horrible' and that means team cannot win the Super Bowl, Terry Bradshaw says on Fox",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYbcEMv0adgbWrmOVWxtEFMbEmDKMVDFlpip1RncRHisAneZKXB9coWBSQCfo"
+        },
+        {
+          "url": "https://www.buffalorumblings.com/buffalo-bills-analysis/143745/buffalo-bills-fans-concerned-josh-allen-will-be-let-down-by-defense-in-2026",
+          "title": "Buffalo Bills fans again concerned Josh Allen will be let down by defense",
+          "publisher": "Buffalo Rumblings",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuC_6RISjipElIHka7liNp-JmT0PbQdFD_CarBFlzLmro5aWe588NO9AQ1gE"
+        },
+        {
+          "url": "https://www.democratandchronicle.com/story/sports/football/nfl/bills/2026/10/30/buffalo-bills-defense-stats-rankings-jim-leonhard/92457133007/",
+          "title": "Buffalo Bills have NFL's best offense and one of its worst defenses",
+          "publisher": "Democrat and Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKAKbxHuaBNMX5xfSJnXFZVeDx64PSKLOXYVvzgdniAnDKzd7IMRMcjs3YY9Q"
+        }
+      ]
+    },
+    {
+      "query": "dallas game",
+      "approx_searches": "500+",
+      "published_at": "2026-11-01T20:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/cowboys-tight-end-jake-ferguson-182807149.html",
+        "https://www.thefantasyfootballers.com/news/645366/jake-ferguson-ruled-out-for-rest-of-game/",
+        "https://www.cbssports.com/fantasy/football/news/cowboys-jake-ferguson-injures-ankle-sunday/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoPDjJNnwnIaV8xg2s83HTIlQqhYiZB5K9cIA9bMZ044_dwb-lmZVHNXkvIt8",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/cowboys-tight-end-jake-ferguson-182807149.html",
+          "title": "Cowboys tight end Jake Ferguson exits game vs. Cardinals, is questionable to return",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoPDjJNnwnIaV8xg2s83HTIlQqhYiZB5K9cIA9bMZ044_dwb-lmZVHNXkvIt8"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/645366/jake-ferguson-ruled-out-for-rest-of-game/",
+          "title": "Jake Ferguson Ruled out for rest of game",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR379hUnnLlHotAGSZ7QCLrcktWBdJdOGyRXchF0x9rDpNX2DkbvDgvIHCzRsc"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/cowboys-jake-ferguson-injures-ankle-sunday/",
+          "title": "Cowboys' Jake Ferguson: Injures ankle Sunday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGI5fyhQ-VNoR5OjUJKA5HiGhRinx_c2mJspNiCm3HSxYFfCdA4QSeBF66Ofo"
+        }
+      ]
+    },
+    {
+      "query": "hunger games",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-01T20:10:00Z",
+      "related_news_urls": [
+        "https://people.com/mckenna-grace-hunger-games-press-tour-looks-12198907",
+        "https://www.vogue.com/article/elle-fanning-valentino-butterfly-skirt-suit-hunger-games-2026-10-30",
+        "https://variety.com/2026/film/columns/hunger-games-elizabeth-banks-sunrise-on-the-reaping-joseph-zada-1236934165/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzSScP-Nsgnfoh7a80Cz9W2eKjWqHlrNBjaT4PVyMvWWpuv1A91wTpR1Yi6HI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/mckenna-grace-hunger-games-press-tour-looks-12198907",
+          "title": "See 7 Side-by-Side Photos of McKenna Grace Paying Tribute to The Hunger Games on the Sunrise on the Reaping Press Tour",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzSScP-Nsgnfoh7a80Cz9W2eKjWqHlrNBjaT4PVyMvWWpuv1A91wTpR1Yi6HI"
+        },
+        {
+          "url": "https://www.vogue.com/article/elle-fanning-valentino-butterfly-skirt-suit-hunger-games-2026-10-30",
+          "title": "Elle Fanning’s ‘Hunger Games’ Style Officially Takes Flight",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFEjtA3gdCDd09Kn9PC87swbG1U2IvNgxTJn6w6DVXNXoZfRAfnSmTSeJYonc"
+        },
+        {
+          "url": "https://variety.com/2026/film/columns/hunger-games-elizabeth-banks-sunrise-on-the-reaping-joseph-zada-1236934165/",
+          "title": "Elizabeth Banks on New \"Hunger Games\" Star Joseph Zada: \"Perfect\"",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pRxTKpHt8NcHyzzhwdsXPvqSMlitwmEN5eS3jGN4pBtRjX8fMvb70A4M43o"
+        }
+      ]
+    },
+    {
+      "query": "tyler allgeier",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-01T20:10:00Z",
+      "related_news_urls": [
+        "https://www.fantasypros.com/nfl/notes/481499/tyler-allgeier-2026-week-8-outlook.php",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-30/tyler-allgeier-off-injury-report-to-play-vs-dal",
+        "https://www.thefantasyfootballers.com/news/645119/tyler-allgeier-ready-for-sunday/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThPj4o5-TkvtlcZ7rJ1vHIdkzN4JdHCL8z5N4d2SQJDveil0bP47QFg8Ue4wo",
+      "image_credit": "FantasyPros",
+      "news": [
+        {
+          "url": "https://www.fantasypros.com/nfl/notes/481499/tyler-allgeier-2026-week-8-outlook.php",
+          "title": "Tyler Allgeier Week 8 Outlook - Cardinals at Cowboys",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThPj4o5-TkvtlcZ7rJ1vHIdkzN4JdHCL8z5N4d2SQJDveil0bP47QFg8Ue4wo"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-30/tyler-allgeier-off-injury-report-to-play-vs-dal",
+          "title": "Tyler Allgeier off injury report, to play vs. DAL",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW4TbuyFHbeR2Bmt51s3xID15_FLPsgmPAND24l0Xar_VPrMpDDNN9EzKLS-A"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/645119/tyler-allgeier-ready-for-sunday/",
+          "title": "Tyler Allgeier Ready for Sunday",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9yhVljvXQrgkeQFyGHYwwUvbJb12LhVaFAK03Ed8VhXdB3y4hAcUyR-ikB3o"
+        }
+      ]
+    },
+    {
+      "query": "atlético grau - universitario",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-01T20:10:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/peru/nota/_/id/17460280/universitario-vs-grau-ruidiaz-no-juega-liga-1-de-peru",
+        "https://libero.pe/futbol-peruano/universitario/2026/10/31/edison-flores-fue-sorprendido-en-plena-entrevista-exigencia-de-hincha-patea-de-afuera-2130134",
+        "https://as.com/apuestas/pronosticos/atletico-grau-vs-universitario-de-deportes-pronostico-01-11-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRwXwLUzuMiWic63y3L-aPknlAehWhC755uMzlDVvdyyuEySxsGL5ai_7Hjik",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/peru/nota/_/id/17460280/universitario-vs-grau-ruidiaz-no-juega-liga-1-de-peru",
+          "title": "Ruidíaz no jugará el Grau vs. Universitario por el Clausura de la Liga 1 2026",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRwXwLUzuMiWic63y3L-aPknlAehWhC755uMzlDVvdyyuEySxsGL5ai_7Hjik"
+        },
+        {
+          "url": "https://libero.pe/futbol-peruano/universitario/2026/10/31/edison-flores-fue-sorprendido-en-plena-entrevista-exigencia-de-hincha-patea-de-afuera-2130134",
+          "title": "Edison Flores fue sorprendido en plena entrevista por exigencia de un hincha: \"Patea de afuera\"",
+          "publisher": "Diario Líbero",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwyHcJTWaVdKxPDAoFftTuVk65gQG4so5IvvVilu1FVeZOnesCQFptWiW6IjI"
+        },
+        {
+          "url": "https://as.com/apuestas/pronosticos/atletico-grau-vs-universitario-de-deportes-pronostico-01-11-2026/",
+          "title": "Atlético Grau - Universitario de Deportes | Pronóstico y cuotas 01.11.2026",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6f02MTn0DMqTMPGjlZ7PvEleu2i5noTkhvpCH-Z53zYirPi34_2tUvqnfXec"
+        }
+      ]
+    },
+    {
+      "query": "pat freiermuth",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-01T20:10:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/videos/rodgers-finds-freiermuth-for-a-28-yard-gain-up-the-seam",
+        "https://www.thefantasyfootballers.com/news/644465/pat-freiermuth-two-catches-in-win-over-new-orleans/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/freiermuth-ineffective-in-week-7-vs-saints"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxKYQzfTXWFXfcPC-g-CsIkEIMRN4hOwT9E7lpbtcUFg9ipunNlh-Y3BLEmhM",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/videos/rodgers-finds-freiermuth-for-a-28-yard-gain-up-the-seam",
+          "title": "Pittsburgh Steelers quarterback Aaron Rodgers finds tight end Pat Freiermuth for a 28-yard gain up the seam",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxKYQzfTXWFXfcPC-g-CsIkEIMRN4hOwT9E7lpbtcUFg9ipunNlh-Y3BLEmhM"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/644465/pat-freiermuth-two-catches-in-win-over-new-orleans/",
+          "title": "Pat Freiermuth Two catches in win over New Orleans",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHBFfXZUD221g5myGVtI19FBdqpBnjMSQ1rLUMCZYp3LpAVpZtvPYv9CPI9dE"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/freiermuth-ineffective-in-week-7-vs-saints",
+          "title": "Freiermuth ineffective in Week 7 vs. Saints",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSci3f9kEim9YVLiC0QgpDTWM9dqMtn6dwyVzgHsObtzmN6DNTa0Jem9y8cyk"
+        }
+      ]
+    },
+    {
+      "query": "celtics - magic",
+      "approx_searches": "500+",
+      "published_at": "2026-11-01T20:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/watch-celtics-vs-magic-live-193000074.html",
+        "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5bmVwcHkuZ2l0aHViLmlvL2JhYnUvVGVhbWxhYi54bWwiLz48L2tycGFubz4=&id=video-orlando-boston-2026-tv-285",
+        "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2Jlbi1zdG9ja3MuZ2l0aHViLmlvL0JhbC9uZXdzL3NtNnMueG1sIi8+PC9rcnBhbm8+&id=video-celtics-v-magic-liv-on-nba-ustv-en_05"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_R0xPPN9vcH90f3IQPeXFCJvny-lUHoCcHAJ3-5RekZutZiWK6i3-SUm5ses",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/watch-celtics-vs-magic-live-193000074.html",
+          "title": "How to watch Celtics vs Magic: Live stream NBA, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_R0xPPN9vcH90f3IQPeXFCJvny-lUHoCcHAJ3-5RekZutZiWK6i3-SUm5ses"
+        },
+        {
+          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5bmVwcHkuZ2l0aHViLmlvL2JhYnUvVGVhbWxhYi54bWwiLz48L2tycGFubz4=&id=video-orlando-boston-2026-tv-285",
+          "title": "[𝐒𝐓ream]HERE'S*! Orlando - Boston National Basketball Association 2026 01 November 2026",
+          "publisher": "Pierce Manufacturing",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9u2xhdTnAS4jwM--ep9gIA7M1Y2-yP-K2NpzcaG6oNb0f67FMEseWfiV4gVM"
+        },
+        {
+          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2Jlbi1zdG9ja3MuZ2l0aHViLmlvL0JhbC9uZXdzL3NtNnMueG1sIi8+PC9rcnBhbm8+&id=video-celtics-v-magic-liv-on-nba-ustv-en_05",
+          "title": "+[#!LIVESTREAMs!]™ Celtics vs Magic Live Free Oct 27, 2026",
+          "publisher": "Pierce Manufacturing",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvDJzJ5f4Jqk5GZqi0Nr7_bKgYzdHlow2TFm3p6d-p70nEU5LP1FKCeDw6PE8"
         }
       ]
     }
