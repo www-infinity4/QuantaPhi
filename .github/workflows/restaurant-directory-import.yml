@@ -6,14 +6,14 @@ on:
         description: 'Reviewed source metro (candidate PR only)'
         required: true
         type: choice
-        default: denver-co
+        default: colorado-springs-co
         options:
           - denver-co
           - colorado-springs-co
 permissions:
   contents: write
 concurrency:
-  group: restaurant-directory-${{ github.event.inputs.city_key || 'denver-co' }}
+  group: restaurant-directory-${{ github.event.inputs.city_key || 'colorado-springs-co' }}
   cancel-in-progress: false
 jobs:
   import-metro:
