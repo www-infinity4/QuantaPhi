@@ -8,6 +8,14 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 BBOX=(-109.060,36.990,-102.040,41.010)
+# Overture's broad historic_site taxonomy can include ordinary residential
+# complexes. A high confidence score is not evidence of public visitor access.
+# Exclude clear residential facility names pending independent historic proof.
+RESIDENTIAL_FALSE_POSITIVE = re.compile(
+    r"\\b(?:apartments?|apartment homes?|condominiums?|condos?|townhomes?|"
+    r"townhouses?|leasing office|property management|self[- ]?storage|"
+    r"senior living|assisted living|residential rentals?)\\b", re.I
+)
 CATEGORIES=set("""museum art_museum history_museum science_museum natural_history_museum
 children_museum art_gallery tourist_attraction visitor_center welcome_center national_park
 state_park regional_park nature_reserve nature_preserve botanical_garden zoo aquarium
@@ -50,6 +58,8 @@ def normalize(feature):
  name=names.get('primary','') if isinstance(names,dict) else ''
  if isinstance(name,dict):name=name.get('value','')
  name=re.sub(r'\s+',' ',str(name).strip())[:160]
+ if (primary if primary in CATEGORIES else basic) == 'historic_site' and RESIDENTIAL_FALSE_POSITIVE.search(name):
+  return None
  identity=str(p.get('id') or feature.get('id') or '')
  if not name or not re.fullmatch(r'[a-zA-Z0-9-]{10,100}',identity):return None
  return {'id':'overture:'+identity,'name':name,'city':str(addr.get('locality') or '')[:100],
