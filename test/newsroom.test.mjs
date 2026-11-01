@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {pickFreshArticles} from '../newsroom/live.mjs';
+import {pickFreshArticles,pruneCurrentHeadlines,createRequestGate} from '../newsroom/live.mjs';
 
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const base='https://quantaphi.org/newsroom/';
@@ -53,4 +53,28 @@ test('ads.txt declares the exact AdSense publisher already installed on homepage
  const publisher=homepage.match(/client=ca-(pub-\d{16})/);
  assert.ok(publisher,'Home page must retain its existing AdSense publisher ID');
  assert.equal(read('ads.txt').trim(),'google.com, '+publisher[1]+', DIRECT, f08c47fec0942fa0');
+});
+
+test('already loaded headlines expire at the next display rather than remaining as old news',()=>{
+ const published=Date.parse('2026-11-01T12:00:00Z');
+ const headline={title:'Source-backed recent event',extract:'A reasonably long summary that has been supplied by the original source feed.',publishedAt:new Date(published).toISOString(),url:'https://example.org/source'};
+ assert.equal(pruneCurrentHeadlines([headline],published+47*60*60*1000).length,1);
+ assert.equal(pruneCurrentHeadlines([headline],published+49*60*60*1000).length,0);
+ assert.match(read('newsroom/live.mjs'),/stories=pruneCurrentHeadlines\(stories\)/);
+});
+test('newer request prevents older success or failure from replacing the current feed',()=>{
+ const gate=createRequestGate();
+ const older=gate.next(),newer=gate.next();
+ assert.equal(gate.isCurrent(older),false);
+ assert.equal(gate.isCurrent(newer),true);
+ assert.match(read('newsroom/live.mjs'),/if\(!requestGate\.isCurrent\(version\)\)return/);
+});
+test('rotation controls are stable keyboard buttons with a pause and resume action',()=>{
+ const html=read('newsroom/index.html');
+ const js=read('newsroom/live.mjs');
+ assert.match(html,/<button[^>]+id="fresh-next"/);
+ assert.match(html,/<button[^>]+id="fresh-pause"[^>]+aria-pressed="false"/);
+ assert.match(js,/pauseButton\.addEventListener\('click'/);
+ assert.match(js,/nextButton\.addEventListener\('click'/);
+ assert.doesNotMatch(js,/document\.createElement\('button'\)/);
 });
