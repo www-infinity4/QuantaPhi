@@ -91,7 +91,7 @@ jobs:
       - run: node --test test/bubbles-dispatch-catalog.test.mjs test/bubbles-work-evidence.test.mjs test/bubbles-image-conversation.test.mjs
       - run: node --check bubbles-cloud-wallet.js
       - run: node --test test/bubbles-cloud-wallet-history.test.cjs test/bubbles-owner-wallet-recovery.test.cjs
-      - run: node --test test/bubbles-unified.test.mjs test/bubbles-iteration-bubbles.test.mjs
+      - run: node --test test/bubbles-unified.test.mjs test/bubbles-iteration-bubbles.test.mjs test/bubbles-bit-session.test.mjs
       - name: Verify in-chat cards and repository ticket targets
         run: |
           node --check bubbles-card-workspace.mjs
