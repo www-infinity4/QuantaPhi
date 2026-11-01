@@ -18,7 +18,8 @@ class CannabisQualitySchemaTests(unittest.TestCase):
         db.executescript(script)
         db.executescript(script)
         tables = ("store_quality_evidence", "store_quality_decisions",
-                  "store_quality_appeals", "store_quality_events")
+                  "store_quality_merchant_domains", "store_quality_appeals",
+                  "store_quality_events")
         for table in tables:
             self.assertEqual(db.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0], 0)
         db.execute("INSERT INTO store_sources(id) VALUES ('synthetic')")
