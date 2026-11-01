@@ -155,7 +155,14 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{margin-top:6px}
  html:has(body.oracle-quanta){scroll-snap-type:y proximity;scroll-padding-top:max(12px,env(safe-area-inset-top))}
  body.oracle-quanta main.app>.search,
  body.oracle-quanta #oracleCardDeck,
- body.oracle-quanta.oracle-shelf-open main.app>section.card{
+ body.oracle-quanta.oracle-shelf-open main.app> :is(section.card,#coliseumZeusCard,#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){
+  scroll-snap-align:start;scroll-snap-stop:normal;scroll-margin-top:12px;
+ }
+}
+/* The populated Following feed sits above navigation; snap and reanchor the
+ * actual arrow row so it remains visible after changing cards. */
+@media (max-width:650px) and (pointer:coarse){
+ body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav{
   scroll-snap-align:start;scroll-snap-stop:normal;scroll-margin-top:12px;
  }
 }
