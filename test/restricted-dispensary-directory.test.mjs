@@ -35,3 +35,19 @@ test('refuse malformed, nonofficial, or disguised offsite store links',()=>{
   {...valid,source_url:'javascript:alert(1)'}
  ])assert.equal(eligibleDispensary(bad,true),null);
 });
+
+test('every dispensary card is actually mounted and discoverable in Oracle',async()=>{
+ const fs=await import('node:fs/promises');
+ const html=await fs.readFile(new URL('../index.html',import.meta.url),'utf8');
+ const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+ const client=await fs.readFile(new URL('../restricted-dispensary-cards.mjs',import.meta.url),'utf8');
+ for(const id of DISPENSARY_CARD_IDS){
+  assert.ok(html.includes('id="'+id+'"'),'Missing homepage mount '+id);
+  assert.ok(deck.includes("['"+id+"',"),'Missing Oracle deck option '+id);
+ }
+ assert.match(html,/restricted-dispensary-cards\.mjs/);
+ assert.match(html,/restricted-dispensary-cards\.css/);
+ assert.ok(client.includes('eligibleDispensary(row,acknowledged)'));
+ assert.ok(client.includes('if(!allowed)'));
+ assert.ok(client.includes('acknowledged=false'));
+});
