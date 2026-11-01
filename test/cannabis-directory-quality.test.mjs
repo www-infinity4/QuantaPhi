@@ -10,10 +10,10 @@ const decision={store_id:'synthetic',status:'star',review_status:'approved',
   expires_at:'2026-11-30T12:00:00Z'};
 const evidence=[
  {store_id:'synthetic',source_url:'https://independent-a.example/review',
-  source_domain:'independent-a.example',evidence_kind:'customer_experience',
+  source_domain:'independent-a.example',publisher_group:'publisher-a',evidence_kind:'customer_experience',
   assessment:'positive',observed_at:'2026-10-28',reviewed_at:'2026-10-30',review_status:'approved'},
  {store_id:'synthetic',source_url:'https://independent-b.example/conditions',
-  source_domain:'independent-b.example',evidence_kind:'store_conditions',
+  source_domain:'independent-b.example',publisher_group:'publisher-b',evidence_kind:'store_conditions',
   assessment:'positive',observed_at:'2026-10-27',reviewed_at:'2026-10-30',review_status:'approved'}
 ];
 test('quality star requires two fresh independently reviewed third-party sources',()=>{
@@ -30,6 +30,7 @@ test('no evidence, single domain, merchant source or unsafe URL stays unrated',(
  assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],source_domain:'merchant.example',
    source_url:'https://merchant.example/review'}],'merchant.example',now),null);
  assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],source_url:'javascript:alert(1)'}],'merchant.example',now),null);
+ assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],publisher_group:'publisher-a'}],'merchant.example',now),null);
 });
 test('pending appeal, negative corroboration, stale, expired or unapproved decisions suppress stars',()=>{
  for(const patch of [
@@ -40,6 +41,7 @@ test('pending appeal, negative corroboration, stale, expired or unapproved decis
   'merchant.example',now),null);
  assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],observed_at:'2026-01-01'}],
   'merchant.example',now),null);
+ assert.equal(reviewedQualityStar(decision,evidence,'merchant.example',now,[{status:'pending'}]),null);
  assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],evidence_kind:'lung_health'}],
   'merchant.example',now),null);
 });
