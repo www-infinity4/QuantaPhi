@@ -1,0 +1,9 @@
+name = "quantaphi-business-directory"
+main = "../business-directory.js"
+compatibility_date = "2026-11-01"
+workers_dev = false
+
+[[d1_databases]]
+binding = "BUSINESSES"
+database_name = "quantaphi-business-directory"
+database_id = "51bfedfd-15e0-4695-ab80-0416ff2ea133"
