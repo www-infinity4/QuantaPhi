@@ -16,7 +16,7 @@
 #ebayQuickCards button:disabled{opacity:.55;cursor:not-allowed}
 #ebayQuickCards :is(button,a,input,select):focus-visible{outline:3px solid #157bb6;outline-offset:3px}
 #ebayQuickCards .eqc-selected,#ebayQuickCards .eqc-search button,
-#ebayQuickCards .eqc-item-actions a{background:#07588e;color:white;border-color:#07588e}
+#ebayQuickCards .eqc-item-actions a{background:#3665f3;color:white;border-color:#3665f3}
 #ebayQuickCards .eqc-search{display:flex;gap:7px;min-width:0;flex:1 1 270px}
 #ebayQuickCards .eqc-search input{min-width:0;flex:1;font-weight:500;font-size:16px}
 #ebayQuickCards select{flex:1 1 165px}
@@ -49,3 +49,36 @@
  #ebayQuickCards .eqc-item-actions :is(button,a){font-size:12px;padding:8px}
  #ebayQuickCards h3{font-size:14px}#ebayQuickCards .eqc-price{font-size:17px}}
 @media(max-width:370px){#ebayQuickCards .eqc-grid{grid-template-columns:1fr}#ebayQuickCards .eqc-art{height:210px}}
+
+/* Account and auctions are one native card interface. A blue Search button is
+ * intentionally distinct from quiet, neutral account/navigation controls. */
+#ebayQuickCards .eqc-public-controls{display:flex;flex:1 1 280px;flex-wrap:wrap;align-items:center;gap:10px;min-width:0}
+#ebayQuickCards .eqc-public-controls[hidden]{display:none!important}
+#ebayQuickCards .eqc-modes{width:100%;gap:8px}
+#ebayQuickCards .eqc-modes button{flex:1 1 98px;min-width:0}
+#ebayQuickCards .eqc-search button{min-width:92px;border-radius:24px;background:#3665f3;color:#fff;font-weight:850}
+#ebayQuickCards .eqc-search input{border-radius:24px}
+#ebayQuickCards .eqc-item-actions .eqc-buy-now{background:#3665f3;border-color:#3665f3;color:#fff}
+#ebayQuickCards .eqc-my-ebay{margin:14px 0;padding:16px;border:1px solid #d6e1eb;border-radius:16px;background:#fbfdff}
+#ebayQuickCards .eqc-my-ebay[hidden]{display:none!important}
+#ebayQuickCards .eqc-my-ebay h3{font-size:21px;margin:0 0 8px}
+#ebayQuickCards .eqc-account-state{color:#465b71;font-size:13px}
+#ebayQuickCards .eqc-account-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:14px 0}
+#ebayQuickCards .eqc-account-tabs button{min-width:0;padding:10px 4px;font-size:12px}
+#ebayQuickCards .eqc-account-content{display:grid;justify-items:start;gap:9px}
+#ebayQuickCards .eqc-account-content p{margin:0}
+#ebayQuickCards .eqc-account-open{display:inline-flex;justify-content:center;align-items:center;min-height:46px;padding:10px 15px;border-radius:12px;background:#3665f3;color:#fff;text-decoration:none;font-weight:750}
+#ebayQuickCards .eqc-bid-panel{display:grid;gap:8px;padding:10px;border:1px solid #e0e7f5;border-radius:12px;background:#f8faff}
+#ebayQuickCards .eqc-bid-panel label{font-size:12px;font-weight:750;display:grid;gap:5px}
+#ebayQuickCards .eqc-bid-panel input{font-size:16px;width:100%;min-width:0}
+#ebayQuickCards .eqc-bid-review{min-height:44px;background:#fff;color:#21466e;font-weight:850}
+#ebayQuickCards .eqc-bid-panel .eqc-bid-note{margin:0;font-size:12px;color:#4d6178;line-height:1.5}
+#ebayQuickCards .eqc-bid-continue{display:flex;align-items:center;justify-content:center;text-align:center;min-height:46px;padding:10px;border-radius:12px;background:#3665f3;color:#fff;text-decoration:none;font-weight:850}
+#ebayQuickCards .eqc-bid-continue[hidden]{display:none!important}
+@media(max-width:540px){
+ #ebayQuickCards .eqc-account-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #ebayQuickCards .eqc-public-controls{flex-basis:100%}
+ #ebayQuickCards .eqc-search{flex-basis:100%}
+ #ebayQuickCards .eqc-modes button{font-size:13px;padding:9px 5px}
+ #ebayQuickCards .eqc-bid-panel{padding:9px}
+}
