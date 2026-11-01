@@ -26,6 +26,14 @@ class CannabisQualitySchemaTests(unittest.TestCase):
             db.execute("""INSERT INTO store_quality_decisions
               (store_id,status,review_status,appeal_status,reviewer_ref)
               VALUES ('synthetic','automatically_starred','approved','none','test')""")
+        db.execute("""INSERT INTO store_quality_events
+          (event_id,store_id,event_kind,actor_ref)
+          VALUES ('synthetic-event','synthetic','decision','test-reviewer')""")
+        with self.assertRaises(sqlite3.IntegrityError):
+            db.execute("UPDATE store_quality_events SET event_kind='appeal' WHERE event_id='synthetic-event'")
+        with self.assertRaises(sqlite3.IntegrityError):
+            db.execute("DELETE FROM store_quality_events WHERE event_id='synthetic-event'")
+        self.assertEqual(db.execute("SELECT COUNT(*) FROM store_quality_events").fetchone()[0], 1)
         db.close()
 
 if __name__ == "__main__":
