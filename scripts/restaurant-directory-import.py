@@ -34,8 +34,14 @@ def normalize(feature):
     tax = p.get('taxonomy') or {}
     hierarchy = tax.get('hierarchy') or []
     primary = tax.get('primary') or p.get('basic_category') or ''
-    if not (isinstance(hierarchy, list) and ('restaurant' in hierarchy or
-            p.get('basic_category') in FOOD_CATEGORIES or primary in FOOD_CATEGORIES)):
+    # The hierarchy is authoritative when supplied. A contradictory basic_category
+    # must never turn a school/clinic/retail store into a restaurant listing.
+    if isinstance(hierarchy, list) and hierarchy:
+        food = ('restaurant' in hierarchy or
+                (hierarchy[0] == 'food_and_drink' and primary in FOOD_CATEGORIES))
+    else:
+        food = primary in FOOD_CATEGORIES
+    if not food:
         return None
     if str(p.get('operating_status', '')).lower() in {'permanently_closed', 'closed_permanently'}:
         return None
