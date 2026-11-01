@@ -1,6 +1,6 @@
 import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261030-rotate2';
 import {mountCurrentSports} from './sports-card-data.mjs?v=20261030-rich1';
-import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from './verified-brand-sports-catalog.mjs';
+import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from './verified-brand-sports-catalog.mjs?v=20261101-colorado1340';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 
 /* An original, working quick-card body with a source identity, 3 relevant
@@ -37,6 +37,12 @@ function createVisual(card,article){
  let failed=false;
  const unavailable=()=>{
   if(failed)return;failed=true;article.dataset.sourceReady='false';
+  if(card.collection==='colorado-mountain-adventures'){
+   primary.remove();visual.classList.add('vbs-photo-fallback');
+   visual.append(el('p','vbs-photo-unavailable','Photo unavailable · Use the linked image credit below'));
+   article.dataset.sourceReady='true';
+   window.dispatchEvent(new Event('quantaphi:source-cards-ready'));return;
+  }
   article.remove();window.dispatchEvent(new Event('quantaphi:source-cards-ready'));
  };
  const sourceReady=()=>{
@@ -93,6 +99,7 @@ export function createVerifiedCard(card){
  node.dataset.kind=card.kind;
  node.dataset.category=card.category;
  node.dataset.checked=card.checked;
+ if(card.collection==='colorado-mountain-adventures')node.dataset.official=card.official;
  const archivedGame=isPastDatedGame(card);node.dataset.pastGame=String(archivedGame);
  if(card.nonTargeted)node.dataset.personalization='disabled';
  node.append(createVisual(card,node));
@@ -104,6 +111,11 @@ export function createVerifiedCard(card){
   info.append(p);
  }
  info.append(el('p','vbs-description',card.description));
+ if(card.collection==='colorado-mountain-adventures'){
+  const meta=el('div','vbs-travel-meta');
+  meta.append(el('span','vbs-travel-level',card.difficulty),el('span','vbs-travel-season',card.season));
+  info.append(meta,el('p','vbs-travel-safety',card.safety));
+ }
  if(archivedGame)info.append(el('p','vbs-archive-note','This dated event is in the past, not a live broadcast. Use the official game center for verified results and highlights.'));
  if(card.kind==='coupon'){
   if(card.offer){
@@ -133,6 +145,11 @@ export function createVerifiedCard(card){
  if(isEvent(card))appendSportsCoverage(card,info,node);
  if(card.kind==='announcer')appendAnnouncer(info);
  const notes=el('p','vbs-attribution','Verified source links · Checked '+card.checked+' · Independent QuantaPhi card, not an official endorsement or paid advertisement.');
+ if(card.photoCredit?.url&&card.photoCredit?.label){
+  const credit=el('p','vbs-photo-credit','Photo: ');
+  credit.append(link(card.photoCredit.label,card.photoCredit.url,'vbs-photo-link'));
+  info.append(credit);
+ }
  info.append(notes);
  const shared=el('div','vbs-shared-actions');
  mountCardActions(shared,{
@@ -141,7 +158,7 @@ export function createVerifiedCard(card){
  },{showSearch:false});
  info.append(shared);
  node.append(info);
- if(['food','retail','coupon','vehicle','wearable','travel'].includes(card.kind))mountRotatingSpotlights(node,card);
+ if(['food','retail','coupon','vehicle','wearable','travel'].includes(card.kind)&&card.collection!=='colorado-mountain-adventures')mountRotatingSpotlights(node,card);
  if(card.id==='fox-nfl-watch'||card.id==='world-series-future-games')mountCurrentSports(node,card);
  return node;
 }

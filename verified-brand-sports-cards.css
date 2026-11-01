@@ -81,3 +81,37 @@
 @media(max-width:420px){
  .vbs-card[data-source-id="tide-original-liquid"] .vbs-art{min-height:220px;padding:8px}
 }
+
+
+/* Colorado Mountain Adventures: photography-first original destination cards.
+   Neutral Infinity actions; verified Wikimedia Commons image licenses linked
+   in the card. No fake activity inventory or invented reservation slots. */
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-art{
+ padding:0;min-height:0;overflow:hidden;background:#e8eff3;
+}
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-identity{
+ width:100%;max-width:none;min-width:0;height:clamp(210px,58vw,360px);
+ max-height:none;object-fit:cover;object-position:center;filter:none;
+}
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-kicker{
+ color:#52677b!important;letter-spacing:.12em;
+}
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-source-action{
+ min-height:48px;background:#f7f9fb;border:1px solid #bac7d3;
+ color:#173c59!important;border-radius:11px;font-weight:750;
+}
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-source-action:hover,
+.vbs-kind-travel[data-source-id^="colorado-"] .vbs-source-action:focus-visible{
+ background:#e6f0f7;outline:2px solid #406889;outline-offset:2px;
+}
+.vbs-travel-meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.vbs-travel-meta span{display:inline-flex;padding:7px 10px;font-size:12px;line-height:1.35;font-weight:750;
+ background:#f0f5f7;border:1px solid #d7e1e8;border-radius:999px;color:#24475a}
+.vbs-travel-safety{font:500 13px/1.5 system-ui;margin:12px 0;color:#354b58;
+ border-left:3px solid #8da5b4;padding:9px 12px;background:#f8fafb}
+.vbs-photo-credit{font:500 11px/1.5 system-ui;color:#52606c;margin:13px 0 2px}
+.vbs-photo-link{font-weight:650;color:#245578!important;text-decoration:underline}
+.vbs-photo-fallback{display:flex;align-items:center;justify-content:center;padding:30px!important;min-height:180px!important}
+.vbs-photo-unavailable{margin:0;line-height:1.45;color:#415e73;font-size:13px;text-align:center}
+@media(max-width:410px){.vbs-kind-travel[data-source-id^="colorado-"] .vbs-topics{grid-template-columns:1fr 1fr}
+ .vbs-kind-travel[data-source-id^="colorado-"] .vbs-source-action:last-child{grid-column:1 / -1}}
