@@ -22,3 +22,38 @@ export function qualitySignal(row){
  // Proof completion, NOT merchant health/experience rating or THC potency.
  return [row?.official_source,row?.license_verified,row?.address_confirmed,row?.rights_cleared].filter(v=>v===1).length;
 }
+
+/* A ★ is a separately moderated customer-experience/conditions signal, NOT a
+ * license, product safety, potency, lung-health or advertising endorsement.
+ * Never infer a star from source completeness or merchant self-reporting.
+ * Two fresh, independently reviewed third-party sources and an unappealed,
+ * time-limited reviewer decision are required. No source evidence => unrated. */
+export function reviewedQualityStar(decision, evidence=[], merchantDomain='', now=new Date()){
+ const t=now instanceof Date?now.getTime():Date.parse(now);
+ if(!Number.isFinite(t)||!decision||decision.status!=='star'||
+  decision.review_status!=='approved'||decision.appeal_status!=='none')return null;
+ const day=86400000;
+ const fresh=value=>{const d=Date.parse(value||'');return Number.isFinite(d)&&d<=t+300000&&d>=t-90*day};
+ const expiry=Date.parse(decision.expires_at||'');
+ if(!fresh(decision.reviewed_at)||!Number.isFinite(expiry)||expiry<=t||expiry>t+90*day)return null;
+ if(!Array.isArray(evidence))return null;
+ // A corroborated adverse report suspends a positive star pending review;
+ // adverse reports themselves are not automatically published or scored.
+ if(evidence.some(e=>e.review_status==='approved'&&e.assessment==='negative'&&fresh(e.observed_at)))return null;
+ const domains=new Set(),sources=[];
+ const merchant=String(merchantDomain).toLowerCase();
+ for(const e of evidence){
+  if(e.review_status!=='approved'||e.assessment!=='positive'||
+   !['customer_experience','store_conditions'].includes(e.evidence_kind)||
+   !fresh(e.observed_at)||!fresh(e.reviewed_at))continue;
+  const domain=String(e.source_domain||'').toLowerCase();
+  if(!/^[a-z0-9-]+(?:\.[a-z0-9-]+)+$/.test(domain)||
+   domain===merchant||merchant.endsWith('.'+domain)||domain.endsWith('.'+merchant)||
+   !HTTPS(e.source_url,domain)||domains.has(domain))continue;
+  domains.add(domain);
+  sources.push(e.source_url);
+ }
+ if(domains.size<2)return null;
+ return {star:'★',reviewed_at:decision.reviewed_at,sources:sources.slice(0,3),
+  disclosure:'Independent recent customer-experience/conditions evidence; not a product, health, potency, licensing or merchant endorsement.'};
+}
