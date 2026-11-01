@@ -348,7 +348,7 @@ function enqueueVoiceTurn(text){
  voicePending.push(text);return true;
 }
 function drainVoiceTurns(){
- if(busy||!voicePending.length)return;
+ if(busy||turnPending||!voicePending.length)return;
  const next=voicePending.shift();
  Promise.resolve().then(()=>sendMessage(next,true));
 }
@@ -3288,7 +3288,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
     drainVoiceTurns()
   }
- }finally{turnPending=false;}
+ }finally{turnPending=false;drainVoiceTurns();}
 }
 
  window.addEventListener('bubbles:chatgpt-ready',event=>{
@@ -3476,7 +3476,7 @@ function heardTranscript(transcript){
  status.textContent='Heard: '+transcript;launcher.dataset.words=String(transcript.split(/\s+/).length);
  if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
  if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
- if(turn.type==='message'){if(busy)enqueueVoiceTurn(turn.text);else void sendMessage(turn.text,true)}
+ if(turn.type==='message'){if(busy||turnPending)enqueueVoiceTurn(turn.text);else void sendMessage(turn.text,true)}
 }
 async function startVoice(){
  // Android's foreground service already owns voice recognition. A WebView
