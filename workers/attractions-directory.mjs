@@ -63,6 +63,39 @@ export async function importSnapshot(env,payload){
  ]);
  return {skipped:false,records,closureCandidates};
 }
+
+/** Cross-shard source gate: all four reviewed Colorado files must agree before any D1 writes. */
+export function validateColoradoShardBatch(payloads){
+ if(!Array.isArray(payloads)||payloads.length!==4)throw Error('incomplete_colorado_shards');
+ const ids=new Set(),closed=new Set();let release=null,total=0;
+ for(const p of payloads){
+  if(p?.schema_version!==1||p.state!=='CO'||p.source_name!=='Overture Maps'||
+     p.license!=='CDLA-Permissive-2.0'||p.truncated!==false||
+     !/^20\d{2}-\d{2}-\d{2}\.\d+$/.test(p.dataset_version||'')||
+     !Array.isArray(p.items)||!Array.isArray(p.closed_ids)||
+     p.items.length>5000||p.closed_ids.length>5000||p.eligible_count!==p.items.length)
+    throw Error('invalid_colorado_shard');
+  if(release!==null&&release!==p.dataset_version)throw Error('mixed_colorado_release');
+  release=p.dataset_version;
+  for(const row of p.items){
+   if(!row||!/^overture:[a-zA-Z0-9-]{10,100}$/.test(row.id||'')||ids.has(row.id)||
+      row.state!=='CO'||row.source_name!=='Overture Maps'||
+      row.source_url!=='https://overturemaps.org/'||row.license!=='CDLA-Permissive-2.0'||
+      row.image_url!==''||typeof row.confidence!=='number'||
+      !Number.isFinite(row.confidence)||row.confidence<0.7||row.confidence>1||
+      !cleanRecord(row,'CO',p.generated_at))throw Error('invalid_colorado_record');
+   ids.add(row.id);total++;
+  }
+  for(const id of p.closed_ids){
+   if(!/^overture:[a-zA-Z0-9-]{10,100}$/.test(id)||closed.has(id))throw Error('invalid_colorado_closure');
+   closed.add(id);
+  }
+ }
+ if([...closed].some(id=>ids.has(id)))throw Error('conflicting_colorado_closure');
+ if(total<24)throw Error('insufficient_colorado_coverage');
+ return {release,records:total,closures:closed.size};
+}
+
 export default {
  async fetch(request,env){
   if(request.method!=='GET')return answer({error:'Read-only directory'},405);
@@ -84,12 +117,20 @@ export default {
   }catch{return answer({error:'Attractions search temporarily unavailable'},503)}
  },
  async scheduled(event,env,ctx){if(!env.ATTRACTIONS)return;ctx.waitUntil((async()=>{
-   for(const file of seedSources('CO')){
-    const url='https://raw.githubusercontent.com/www-infinity4/QuantaPhi/main/data/attractions/'+file;
-    const r=await fetch(url,{signal:AbortSignal.timeout(25000)});
-    if(r.status===404)continue;if(!r.ok)throw Error('snapshot_http_'+r.status);
-    const payload=await r.json();if(payload?.state!=='CO')throw Error('bad_state_snapshot');
-    await importSnapshot(env,payload);
+   const base='https://raw.githubusercontent.com/www-infinity4/QuantaPhi/main/data/attractions/';
+   const shards=['nw','ne','sw','se'];
+   const responses=await Promise.all(shards.map(shard=>fetch(base+'co-overture-'+shard+'.json',
+    {signal:AbortSignal.timeout(25000)})));
+   const present=responses.filter(r=>r.status!==404);
+   if(present.length&&present.length!==4)throw Error('incomplete_colorado_shards');
+   if(present.length===4){
+    if(responses.some(r=>!r.ok))throw Error('colorado_shard_http_error');
+    const payloads=await Promise.all(responses.map(r=>r.json()));
+    validateColoradoShardBatch(payloads);
+    for(let i=0;i<4;i++)await importSnapshot(env,{...payloads[i],shard:shards[i]});
    }
+   const seed=await fetch(base+'co-seed.json',{signal:AbortSignal.timeout(25000)});
+   if(!seed.ok)throw Error('colorado_seed_http_'+seed.status);
+   await importSnapshot(env,await seed.json());
   })())}
 };
