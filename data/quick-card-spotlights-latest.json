@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-31T23:21:58.598437Z",
+  "checked_at": "2026-11-01T05:57:00.944977Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -1753,6 +1753,1146 @@
           "description": "",
           "checked_at": "2026-10-31T23:21:58.598437Z",
           "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "denver-sams-no3": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://samsno3.com/",
+          "image": "https://samsno3.com/wp-content/uploads/2019/04/neon-menu-menu.png",
+          "title": "Sam's No. 3 - Denver's Best Diner",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://samsno3.com/",
+          "image": "https://samsno3.com/wp-content/plugins/sams3-neon-billboard/img/est.png",
+          "title": "Sam's No. 3 - Denver's Best Diner",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://samsno3.com/locations",
+          "image": "https://samsno3.com/wp-content/uploads/2019/04/neon-menu-locations.png",
+          "title": "Sam's No. 3 - Denver's Best Diner",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://samsno3.com/menu",
+          "image": "https://samsno3.com/wp-content/uploads/2017/02/menu-color.png",
+          "title": "Sam's No. 3 - Denver's Best Diner",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "denver-work-and-class": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": []
+    },
+    "denver-major-tom": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://majortomdenver.com/",
+          "image": "https://images.squarespace-cdn.com/content/v1/6721d0b5258bc625ac4619fa/22a34500-4214-4b2f-bca2-7ca22720695c/MajorTom_Mark_White_MT-TriCric.png?format=1500w",
+          "title": "Major Tom",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://majortomdenver.com/",
+          "image": "https://images.squarespace-cdn.com/content/v1/6721d0b5258bc625ac4619fa/6b30ed7f-7e99-4a1c-965f-f487e28ce7e4/MajorTom-jfreemond-507831+%281%29.jpg",
+          "title": "Major Tom | RiNo Restaurant, Dinner, Champagne & Cocktails | Denver",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "denver-steubens": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://steubens.com/",
+          "image": "https://static.spotapps.co/website_images/ab_websites/61023_website_v1/video_poster.jpg",
+          "title": "Steubens - Uptown, Denver, CO",
+          "kind": "website",
+          "description": "American Regional Classics, Steuben’s is named after a restaurant in Boston that my Great Uncles, Max and Joe, opened in 1945. Steuben's became a famous Boston restaurant, nightclub, ...",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://steubens.com/",
+          "image": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/0e/3eb0a59c124883b0591ce0fdf9a3ca/:original",
+          "title": "slideshow photo number 1",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://steubens.com/",
+          "image": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/98/ab4bd84a92479a88ca500dd2ef96e9/:original",
+          "title": "slideshow photo number 2",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://steubens.com/",
+          "image": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/cb/22fccd82b440a2a661ad949718cbf1/:original",
+          "title": "slideshow photo number 3",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "denver-hampton-social": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": []
+    },
+    "denver-rhein-haus": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://www.rheinhausdenver.com/",
+          "image": "https://images.squarespace-cdn.com/content/v1/60e4b6fe81b67b5f26456623/71cd3aa1-f6fc-4d64-a1ec-192bce7dcda3/RheinHausDenver-16.jpg",
+          "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://www.rheinhausdenver.com/",
+          "image": "https://images.squarespace-cdn.com/content/v1/60e4b6fe81b67b5f26456623/b4401e9c-2ce6-42ee-afad-47e1a31ecc73/RheinHaus-Exterior.png",
+          "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://www.rheinhausdenver.com/",
+          "image": "https://images.squarespace-cdn.com/content/v1/60e4b6fe81b67b5f26456623/d83afa96-5650-40bd-bf99-373a06a2d5fa/BOD+2026+READERS+CHOICE+-+BEST+GERMAN-EASTERN+EUROPEAN+RESTAURANT+-+RHEIN+HAUS+DENVER.jpg",
+          "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://www.rheinhausdenver.com/",
+          "image": "https://images.squarespace-cdn.com/content/v1/60e4b6fe81b67b5f26456623/b9bfccdc-a825-40e6-b276-6e5e0e5acdd9/BOD+2026+EDITORIAL+WINNER+-+BEST+BAR+FOR+WATCHING+SPORTS+-+RHEIN+HAUS.jpg",
+          "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "denver-atomic-cowboy": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": []
+    },
+    "denver-casa-bonita": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://www.casabonitadenver.com/",
+          "image": "https://www.casabonitadenver.com/opengraph-image.png?3f0772d37fe74c4f",
+          "title": "Casa Bonita",
+          "kind": "website",
+          "description": "The Greatest Restaurant in the World!",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://www.casabonitadenver.com/boonita",
+          "image": "https://cdn.sanity.io/images/658ae5m2/production/b2eaff41b12a255800378f0608761aecefe1cf07-6000x3376.png?w=3840&fm=webp&q=75",
+          "title": "Learn More About Casa BOOnita",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://www.casabonitadenver.com/menu",
+          "image": "https://cdn.sanity.io/images/658ae5m2/production/bc82ff729395cffc005c560021df6abd63eb0831-2400x2400.png?w=3840&fm=webp&q=75",
+          "title": "View Our Menu",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://shop.casabonitadenver.com/",
+          "image": "https://cdn.sanity.io/images/658ae5m2/production/fef297e09bf9de9d5123c9ffde1173ff70c71e1c-940x788.png?w=1920&fm=webp&q=75",
+          "title": "Shop Official Merchandise",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Restaurants"
+        }
+      ]
+    },
+    "colorado-rocky-mountain": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://www.nps.gov/romo/index.htm",
+          "image": "https://www.nps.gov/common/uploads/banner_image/imr/homepage/3146662C-B058-EBA9-3020EA2369ADCC81.jpg",
+          "title": "Rocky Mountain National Park (U.S. National Park Service)",
+          "kind": "website",
+          "description": "Located in northern Colorado, visitors to Rocky Mountain National Park can explore over 415 square miles (265,807 acres) within the Southern Rocky Mountains. From montane meadows to subalpine forests and mountain peaks in the alpine tundra, there is something ",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Alpine hikes"
+        },
+        {
+          "url": "https://www.nps.gov/common/uploads/structured_data/8824D3C2-F84D-A622-C2DE87AC4B9A8BC9.jpg",
+          "image": "https://www.nps.gov/common/uploads/structured_data/8824D3C2-F84D-A622-C2DE87AC4B9A8BC9.jpg?width=990&height=742&mode=crop&quality=90",
+          "title": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Alpine hikes"
+        },
+        {
+          "url": "https://www.nps.gov/common/uploads/structured_data/883337BE-AC11-BF00-9E8B290B38A30A7F.jpeg",
+          "image": "https://www.nps.gov/common/uploads/structured_data/883337BE-AC11-BF00-9E8B290B38A30A7F.jpeg?width=990&height=742&mode=crop&quality=90",
+          "title": "A man is standing on a bridge and looking up at a waterfall",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Alpine hikes"
+        },
+        {
+          "url": "https://www.nps.gov/common/uploads/structured_data/88439955-DB09-4F45-62A55C2E00A2C229.jpg",
+          "image": "https://www.nps.gov/common/uploads/structured_data/88439955-DB09-4F45-62A55C2E00A2C229.jpg?width=990&height=742&mode=crop&quality=90",
+          "title": "A pika has harvested a tundra thistle",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Alpine hikes"
+        },
+        {
+          "url": "https://www.nps.gov/romo/planyourvisit/index.htm",
+          "image": "https://www.nps.gov/common/uploads/grid_builder/romo/crop16_9/2987ED1C-00AB-90AC-BC7FC119E7189994.jpg?width=640&quality=80&mode=crop&format=webp",
+          "title": "Visitors are walking on the Tundra Communities trail in summer",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Alpine hikes"
+        },
+        {
+          "url": "https://www.nps.gov/romo/planyourvisit/index.htm",
+          "image": "https://www.nps.gov/common/uploads/grid_builder/romo/crop16_9/E3AEC125-F3F9-ECE8-AE829852752556EA.jpg?width=640&quality=80&mode=crop&format=webp",
+          "title": "The NPS Arrowhead appears on blue with text \"Rocky Mountain National Park Timed Entry Reservations\"",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Alpine hikes"
+        },
+        {
+          "url": "https://www.nps.gov/romo/planyourvisit/index.htm",
+          "image": "https://www.nps.gov/common/uploads/grid_builder/romo/crop16_9/B7D70CBB-C821-7D0D-4548D9EA96801147.jpg?width=640&quality=80&mode=crop&format=webp",
+          "title": "Park Entrance Fees and Passes",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Alpine hikes"
+        },
+        {
+          "url": "https://www.nps.gov/romo/planyourvisit/index.htm",
+          "image": "https://www.nps.gov/common/uploads/grid_builder/romo/crop16_9/86479A43-AE8F-9A24-B8A44F3BD1FE870E.jpg?width=640&quality=80&mode=crop&format=webp",
+          "title": "A park ranger is sharing a program inside Beaver Meadows Visitor Center",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Alpine hikes"
+        }
+      ]
+    },
+    "colorado-numbers-rafting": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://www.americanadventure.com/tour-category/the-numbers/",
+          "image": "https://www.americanadventure.com/wp-content/uploads/2022/05/AAE-060-2-1-1.png",
+          "title": "most-popular",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Whitewater"
+        },
+        {
+          "url": "https://www.americanadventure.com/tour-category/the-numbers/",
+          "image": "https://www.americanadventure.com/wp-content/uploads/2022/05/Asset-1-2-1.png",
+          "title": "Classic Colorado Whitewater",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Whitewater"
+        },
+        {
+          "url": "https://www.americanadventure.com/tour/the-numbers-classic-tour/",
+          "image": "https://www.americanadventure.com/wp-content/uploads/2022/04/aae-tile-418x223-1.png",
+          "title": "The Numbers Half Day",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Whitewater"
+        },
+        {
+          "url": "https://www.americanadventure.com/tour/the-numbers-deluxe-tour/",
+          "image": "https://www.americanadventure.com/wp-content/uploads/2022/04/Numbers_deluxe_raft_american_adventure.jpg",
+          "title": "The Numbers Full Day",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Whitewater"
+        },
+        {
+          "url": "https://www.americanadventure.com/tour/numbers-half-day-private-trip/",
+          "image": "https://www.americanadventure.com/wp-content/uploads/2022/04/aae-tile-418x223-1.png",
+          "title": "Numbers Half Day Rafting Adventure | American Adventure Expeditions",
+          "kind": "website",
+          "description": "Our classic half-day rafting adventure is great for experienced white water rafters looking for a challenging ride through The Numbers in Buena Vista, CO.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Whitewater"
+        },
+        {
+          "url": "https://www.americanadventure.com/tour/numbers-half-day-private-trip/",
+          "image": "https://www.americanadventure.com/wp-content/uploads/2022/04/numbers-2-1.png",
+          "title": "Numbers Half Day Private Trip",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Whitewater"
+        },
+        {
+          "url": "https://www.americanadventure.com/tour/the-numbers-raft-atv/",
+          "image": "https://www.americanadventure.com/wp-content/uploads/2022/05/Numbers_raft_and_atv_package_american_adventure.jpg",
+          "title": "The Numbers Raft + ATV",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Whitewater"
+        },
+        {
+          "url": "https://www.americanadventure.com/tour/the-numbers-deluxe-tour/",
+          "image": "https://www.americanadventure.com/wp-content/uploads/2022/10/The_Numbers_Rafting2.png",
+          "title": "The Numbers Full Day",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Whitewater"
+        }
+      ]
+    },
+    "colorado-breckenridge-trails": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2018/01/summer-in-breckenridge-girls-hiking-a-field-with-a-mountain-view.jpg",
+          "title": "Easy Hiking Trails in Breckenridge",
+          "kind": "website",
+          "description": "Enjoying one of the many easy hikes near Breckenridge is a great way to spend a summer day in the outdoors. Find the hike right for you and your crew.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/hiking-in-breckenridge-without-a-car/",
+          "image": "https://gobreck.com/wp-content/uploads/2019/04/Summer-Hiking-Women-Boreas-Pass-Views.jpg",
+          "title": "Hiking in Breckenridge Without A Car",
+          "kind": "website",
+          "description": "You don’t need a car to hike some spectacular trails in Breckenridge. Free public transportation can make hiking in without a car simple and easy.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/summer/best-summer-hikes-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2021/05/family-hiking-summer-aspen-alley.jpg",
+          "title": "Best Summer Hikes in Breckenridge",
+          "kind": "website",
+          "description": "When it comes to hiking, Breckenridge has it all — waterfalls, wildflowers, alpine lakes, and more. Check out our favorite summer hikes in Breckenridge!",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Easy hiking"
+        }
+      ]
+    },
+    "colorado-glenwood-hot-springs": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://hotspringspool.com/",
+          "image": "https://hotspringspool.com/wp-content/uploads/2024/12/GHSR_Pools_Yampah_Aerial-to-East.jpg",
+          "title": "Home Page",
+          "kind": "website",
+          "description": "Discover the ultimate Colorado destination with world famous hot springs pool, 107 room lodge and premier athletic club. Perfect for families & romantic getaways.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Relaxation"
+        },
+        {
+          "url": "https://hotspringspool.com/",
+          "image": "https://hotspringspool.com/wp-content/uploads/2024/11/TextMark-White-Text.png",
+          "title": "Glenwood Hot Springs Resort Logo White Text",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Relaxation"
+        },
+        {
+          "url": "https://hotspringspool.com/",
+          "image": "https://hotspringspool.com/wp-content/uploads/2024/08/GHSR_Blog_2024_Pools-from-Bridge-Fall.jpg",
+          "title": "View from the Bridge of Glenwood Hot Springs Resort Pools",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Relaxation"
+        },
+        {
+          "url": "https://hotspringspool.com/",
+          "image": "https://hotspringspool.com/wp-content/uploads/2024/12/GHSR_Specials_SkiSwimStay-e1763742497392.webp",
+          "title": "Glenwood Hot Springs Resort | Specials: Ski Swim Stay",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Relaxation"
+        },
+        {
+          "url": "https://hotspringspool.com/hot_springs/rates/",
+          "image": "https://hotspringspool.com/wp-content/uploads/2024/11/GHSR24_summer_GrandFountain_LR-1-1024x682.jpg",
+          "title": "Hot Springs Rates",
+          "kind": "website",
+          "description": "Enjoy the benefits of the largest hot springs pool for the day or all year long at Glenwood Hot Springs Resort.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Relaxation"
+        },
+        {
+          "url": "https://hotspringspool.com/hot_springs/rates/",
+          "image": "https://hotspringspool.com/wp-content/uploads/2025/03/GHSR_Yampah_Falls-2women_Short-1024x501.png",
+          "title": "Hot Springs Rates",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Relaxation"
+        },
+        {
+          "url": "https://hotspringspool.com/blogs/award-winning-colorado-hot-springs/",
+          "image": "https://hotspringspool.com/wp-content/uploads/2026/04/GHSR_GPI-Locals-Choice-2026.png",
+          "title": "Glenwood Hot Springs Resort Wins Seven 2026 Locals’ Choice Award",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Relaxation"
+        },
+        {
+          "url": "https://hotspringspool.com/hot_springs/",
+          "image": "https://hotspringspool.com/wp-content/uploads/2024/12/GHSR_Pools_FallingWaters_Woman-scaled.jpg",
+          "title": "Hot Springs",
+          "kind": "website",
+          "description": "Soak in mineral-rich, heated water to refresh tired muscles, swim laps, or enjoy summer with cabana rentals and the Sopris Splash Zone. Experience it all at Glenwood Hot Springs.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Relaxation"
+        }
+      ]
+    },
+    "colorado-ouray-ice-park": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://ourayicepark.com/events/2027/01/28/fest",
+          "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1761337787701-7WK847ICRVSBLYMO6O03/temp-icefest-banner.webp",
+          "title": "32nd Annual Ouray Ice Festival",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Technical ice"
+        },
+        {
+          "url": "https://ourayicepark.com/conditions-reports/2026/2/25",
+          "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1772047133259-3P4RPOLI9999ZBDBVCH3/PXL_20260224_172759276.MP.webp",
+          "title": "February 25th, 2026",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Technical ice"
+        },
+        {
+          "url": "https://ourayicepark.com/conditions-reports/2026/2/17",
+          "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1771887666815-R64UGVSN5FZY2VTKQ9ES/PXL_20260217_164425731.MP.webp",
+          "title": "February 17th, 2026",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Technical ice"
+        },
+        {
+          "url": "https://ourayicepark.com/conditions-reports/2026/2/11",
+          "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1770783162918-MT3VUYUH45EUPCYNWGAF/PXL_20260210_212157484.MP.webp",
+          "title": "February 11th, 2026",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Technical ice"
+        },
+        {
+          "url": "https://ourayicepark.com/conditions-reports/2026/2/4",
+          "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1770219836952-P5BYO9WEB38HBYCDYDFC/FiveFingys.webp",
+          "title": "February 4th, 2026",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · Technical ice"
+        }
+      ]
+    },
+    "colorado-ice-lakes-basin": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://www.fs.usda.gov/r02/sanjuan",
+          "image": "https://www.fs.usda.gov/sites/nfs/files/styles/hero/public/r02/sanjuan/image/DSC02813_1_1.jpg?h=cf451032&itok=_DcBlbD0",
+          "title": "San Juan National Forest",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · High alpine"
+        },
+        {
+          "url": "https://www.fs.usda.gov/r02/sanjuan",
+          "image": "https://www.fs.usda.gov/sites/nfs/files/styles/thumbnail/public/r02/sanjuan/image/202509_MissionaryRidge2.jpg?h=a42e190f",
+          "title": "Missionary Ridge",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · High alpine"
+        },
+        {
+          "url": "https://www.fs.usda.gov/r02/sanjuan",
+          "image": "https://www.fs.usda.gov/sites/nfs/files/styles/thumbnail/public/r02/sanjuan/image/Spring%20road%20conditions-SJNF-2019509-02.jpg?h=c7d97968",
+          "title": "Road Conditions",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · High alpine"
+        },
+        {
+          "url": "https://www.fs.usda.gov/r02/sanjuan",
+          "image": "https://www.fs.usda.gov/sites/nfs/files/styles/thumbnail/public/legacy-media/sanjuan/20240920_FS_RFish_0001_SMineralCampground.jpg?h=19f3906b",
+          "title": "South Mineral Campground",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Colorado · High alpine"
+        }
+      ]
+    },
+    "durable-vitamix": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://www.vitamix.com/us/en_us/",
+          "image": "https://www.vitamix.com/us/en_us/media_1358db48639a70eb1987d4b54ace313e18bfe6553.jpg?width=1200&format=pjpg&optimize=medium",
+          "title": "High Performance Blenders - Blending Machines | Vitamix",
+          "kind": "website",
+          "description": "Vitamix is one of the most trusted brands in high performance blending technology for your home and business. Experience a Vitamix machine today!",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.vitamix.com/us/en_us/shop/juicing",
+          "image": "https://www.vitamix.com/us/en_us/shop/media_1ee17a2fdcb77f99cb33abb2800924b37c2ac511f.jpg?width=1200&format=pjpg&optimize=medium",
+          "title": "Vitamix MaxExtract",
+          "kind": "website",
+          "description": "For the first time, Vitamix brings its trusted performance to cold press juicing. The Vitamix MaxExtract™ Cold Press Juicer is designed for maximum output, minimal prep, and simple clean-up, so you can enjoy fresh juice from whole fruits and vegetables with le",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.vitamix.com/us/en_us/products/max-extract",
+          "image": "https://www.vitamix.com/us/en_us/products/media_59947a16d54b95dce232e72e63dfd0ed59df3489.jpg",
+          "title": "MaxExtract™ Cold Press Juicer",
+          "kind": "product",
+          "description": "The Vitamix MaxExtract™ Cold Press Juicer is designed for maximum output, minimal prep, and simple clean-up, so you can enjoy fresh juice from whole fruits and vegetables with less effort.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "499.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.vitamix.com/us/en_us/shop/personal-blending",
+          "image": "https://www.vitamix.com/us/en_us/shop/media_1c7d5a11db85f146cc8b4d3891e363000f3b20e85.jpg?width=1200&format=pjpg&optimize=medium",
+          "title": "Personal Blending | Vitamix",
+          "kind": "website",
+          "description": "Blend, store, and take on the go – all in the same container. Blending Cups and Bowls are easy to use and designed to maximize the versatility and convenience of your blender.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-ankarsrum": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": []
+    },
+    "durable-bialetti": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://www.bialetti.com/us_en",
+          "image": "https://www.bialetti.com/media/slidebanner/b/a/banner-hp-caffe-freddo-desktop_3.jpg",
+          "title": "homepage-slider-US",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.bialetti.com/us_en/shop/dolce-gabbana/mediterranean-blue.html",
+          "image": "https://www.bialetti.com/media/slidebanner/s/i/signature-series-slider-02_2.jpg",
+          "title": "US_signature-series",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.bialetti.com/au_en/shop.html",
+          "image": "https://www.bialetti.com/media/slidebanner/s/i/signature-series-slider-01_2.jpg",
+          "title": "US_signature-series",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.bialetti.com/us_en",
+          "image": "https://www.bialetti.com/media/wysiwyg/1920x685_damier.jpg",
+          "title": "Moka express Bialetti",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.bialetti.com/us_en/shop/specialty-giftable.html",
+          "image": "https://www.bialetti.com/media/catalog/category/specialty-min.png",
+          "title": "Gift Ideas & Bundles",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.bialetti.com/us_en/dolce-gabbana-bialetti-moka-pot.html?cups=3&d_g_collection=carretto%2Bsiciliano",
+          "image": "https://www.bialetti.com/media/catalog/product/d/g/dg_carretto-3-0005327-min.png?format=jpeg",
+          "title": "Dolce & Gabbana Moka Pot 3 Cup Carretto – Italian stovetop espresso maker",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.bialetti.com/us_en/bialetti-ultimate-moka-collection.html",
+          "image": "https://www.bialetti.com/media/catalog/product/b/u/bundle3.1.2.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1500&width=1200&canvas=1200:1500",
+          "title": "Bialetti Ultimate Moka Collection",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.bialetti.com/us_en/bialetti-moka-essentials-bundle.html",
+          "image": "https://www.bialetti.com/media/catalog/product/e/s/essentials_bundle_v2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1500&width=1200&canvas=1200:1500",
+          "title": "Bialetti Moka Essentials Bundle",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-technivorm-moccamaster": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://us.moccamaster.com/",
+          "image": "https://us.moccamaster.com/cdn/shopifycloud/storefront/assets/no-image-2048-a2addb12_1200x.gif",
+          "title": "Moccamaster USA: Premium Pour-Over Coffee Brewers",
+          "kind": "website",
+          "description": "Coffee brewers handmade in the Netherlands out of high-quality, sustainable materials, built to last a lifetime. Dedicated to seeking the real taste of coffee.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://us.moccamaster.com/",
+          "image": "https://cdn.shopify.com/s/files/1/0633/1672/1913/files/zainMob_1.webp?v=1700645485",
+          "title": "layout",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://us.moccamaster.com/",
+          "image": "https://cdn.shopify.com/s/files/1/0633/1672/1913/files/zainDesk.webp?v=1700645485",
+          "title": "layout",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://us.moccamaster.com/collections/glass-carafe-brewers",
+          "image": "https://us.moccamaster.com/cdn/shop/files/Mega-Thumb-Glass-Carafe-600x428_1200x.jpg?v=1621022068",
+          "title": "Off-White KBGV Select glass carafe coffee brewer on a kitchen counter.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://us.moccamaster.com/products/burr-grinder-km5",
+          "image": "https://us.moccamaster.com/cdn/shop/products/PDP_Moccamaster_Grinder_PolishedSilver_Side-ATK-AA_1024x1024.jpg?v=1679340178",
+          "title": "Moccamaster KM5 Burr Grinder",
+          "kind": "product",
+          "description": "The Moccamaster KM5 Burr Grinder contains a powerful, direct-drive motor that grinds coffee quickly and efficiently, and its static-reducing dispensing spout creates a mess-free grinding experience. The stepless knob allows for the finest adjustment of the 50 ",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "349.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock",
+            "valid_until": "2027-10-28T23:59:59+00:00"
+          }
+        },
+        {
+          "url": "https://us.moccamaster.com/collections/glass-carafe-brewers/products/kbgv?variant=48110491435171",
+          "image": "https://us.moccamaster.com/cdn/shop/files/KBGV_Eucalyptus_web_1024x1024.jpg?v=1789502840",
+          "title": "Moccamaster KBGV Coffee Maker – SCA/ECBC Certified Filter Brewer",
+          "kind": "product",
+          "description": "The Moccamaster KBGV Coffee Maker is a premium SCA-certified filter coffee brewer designed to brew pour-over-quality coffee at home. Handmade in the Netherlands, the KBGV delivers precise brewing temperature, even water distribution, and exceptional durability",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": null
+        }
+      ]
+    },
+    "durable-rada-cutlery": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://radakitchenstore.com/",
+          "image": "https://radakitchenstore.com/cdn/shop/files/radafbbanner_1200x.jpg?v=1730296068",
+          "title": "Rada Kitchen Store | Rada Cutlery Personal Shopping & Gifts",
+          "kind": "website",
+          "description": "Shop for Rada Cutlery kitchen knives, cooking utensils, cookbooks and other 100% USA Made kitchen products from Rada Mfg. Co. Purchase for yourself or as gifts.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://radakitchenstore.com/",
+          "image": "https://radakitchenstore.com/cdn/shop/files/thumbnail_image001_1_410x.png?v=1613739896",
+          "title": "Rada Kitchen Store",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://radakitchenstore.com/",
+          "image": "https://radakitchenstore.com/cdn/shop/files/thumbnail_KitchenStoreMenu_410x.png?v=1616681943",
+          "title": "Rada Kitchen Store",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://radakitchenstore.com/collections/all-knives",
+          "image": "https://radakitchenstore.com/cdn/shop/files/shop-knives_1600x.jpg?v=1759502812",
+          "title": "Rada Kitchen Store | Rada Cutlery Personal Shopping & Gifts",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://radakitchenstore.com/products/wedding-knives",
+          "image": "https://radakitchenstore.com/cdn/shop/products/wedding-register-gift-set-S04-a_1024x1024.jpg?v=1601389755",
+          "title": "Wedding Register Gift Set",
+          "kind": "product",
+          "description": "$16.95 This four-piece Wedding Register Gift Set includes knives that make the future of any kitchen just a little bit brighter. All four knives were made with a specific purpose in mind, yet can be used on all kinds of foods, making them incredibly versatile ",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": null
+        },
+        {
+          "url": "https://radakitchenstore.com/products/housewarming-knives",
+          "image": "https://radakitchenstore.com/cdn/shop/products/housewarming-gift-set-S02-a_1024x1024.jpg?v=1617218034",
+          "title": "Housewarming Gift Set",
+          "kind": "product",
+          "description": "$16.95 Rada’s three-piece Housewarming Gift Set includes these incredible knives—Regular Paring, Utility/Steak, and Slicer. All are highly rated thanks to their high quality, usefulness, and good looks. In blade sizes 3¼ʺ, 4⅞ʺ, and 7ʺ, these multi-taskers are ",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": null
+        },
+        {
+          "url": "https://radakitchenstore.com/products/meal-prep-knives",
+          "image": "https://radakitchenstore.com/cdn/shop/products/meal-prep-gift-set-S05-b_1024x1024.jpg?v=1601389818",
+          "title": "Meal Prep Gift Set",
+          "kind": "product",
+          "description": "$16.95 If you know someone who loves to cook but is short on time, this is the set for them. It includes our Granny Paring, Heavy Duty Paring, Super Parer, and Vegetable Peeler. These are the go-to items for tasks that require precision, dependable control, an",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": null
+        }
+      ]
+    },
+    "durable-wusthof": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://wusthof.com/",
+          "image": "https://wusthof.com/cdn/shop/files/handle-amici-1.png?v=1755738263&width=700",
+          "title": "a Wusthof Amici series knife",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://wusthof.com/",
+          "image": "https://wusthof.com/cdn/shop/files/handle-amici1814-1.png?v=1742847005&width=700",
+          "title": "a Wusthof amici 1814 knife",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://wusthof.com/",
+          "image": "https://wusthof.com/cdn/shop/files/knife-handel-classic.png?v=1742847004&width=700",
+          "title": "a Classic Wusthof knife",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://wusthof.com/",
+          "image": "https://wusthof.com/cdn/shop/files/knife-handel-classiccolor-blueberry.png?v=1742846671&width=700",
+          "title": "A Wusthof Classic knife handle in the Wild Blueberry",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://wusthof.com/products/wusthof-giftcard",
+          "image": "https://wusthof.com/cdn/shop/products/919686d7f86947578cf9ddef35bc2910.png?v=1762439466&width=480",
+          "title": "WÜSTHOF Digital Gift Card",
+          "kind": "product",
+          "description": "Whatever the occasion — birthday, wedding, housewarming, or holiday — give a WÜSTHOF Digital Gift Card, the best choice for any special event. The lucky recipient will make the right choice from a wonderful selection of the world’s best knives from a company w",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "25.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://wusthof.com/products/ikon-knife-sharpener-3050388001",
+          "image": "https://wusthof.com/cdn/shop/products/3050388001_front-01.png?v=1762439901&width=480",
+          "title": "Classic Ikon Hand-Held Knife Sharpener",
+          "kind": "product",
+          "description": "The easiest way to sharpen knives and to keep them sharp. This 2-stage pull-through, V-shaped Knife Sharpener with diamond rods and ceramic steels is particularly suitable for those who do not feel comfortable using Sharpening Steels or Whetstones. With this S",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "85.0",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://wusthof.com/products/universal-hand-held-knife-sharpener",
+          "image": "https://wusthof.com/cdn/shop/files/handle-amici-1.png?v=1755738263&width=700",
+          "title": "a Wusthof Amici series knife",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://wusthof.com/products/universal-hand-held-knife-sharpener",
+          "image": "https://wusthof.com/cdn/shop/files/handle-amici1814-1.png?v=1742847005&width=700",
+          "title": "a Wusthof amici 1814 knife",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-zwilling-j-a-henckels": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://www.zwilling.com/us/",
+          "image": "https://www.zwilling.com/on/demandware.static/-/Library-Sites-ZwillingSharedLibrary/default/dw3517839e/ZWILLING-Culinary-World.png",
+          "title": "ZWILLING, It's a culinary world",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.zwilling.com/us/",
+          "image": "https://www.zwilling.com/on/demandware.static/-/Library-Sites-ZwillingSharedLibrary/default/dw7b03d629/ZWILLING-Culinary-World_black.png",
+          "title": "Zwilling",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.zwilling.com/us/black-friday-deals/",
+          "image": "https://www.zwilling.com/dw/image/v2/BCGV_PRD/on/demandware.static/-/Sites-zwilling-us-Library/en_US/dw8ca58453/Page-Designer-Category-Pages/root/hero-banners/ZOL_Homepages_FOURSTAR_BF_FS_mobile_2.jpg?sw=768",
+          "title": "Image of ZWILLING Four Star 8-inch Chef's Knife on a sleek black background",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.zwilling.com/us/black-friday-deals/",
+          "image": "https://www.zwilling.com/dw/image/v2/BCGV_PRD/on/demandware.static/-/Sites-zwilling-us-Library/en_US/dwdd89c947/Page-Designer-Category-Pages/root/hero-banners/ZOL_Homepages_COOKWARE_BF_mobile_1.jpg?sw=768",
+          "title": "Image of ZWILLING Peak Fry Pan on a black background",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        }
+      ]
+    },
+    "durable-mauviel": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://mauviel-usa.com/",
+          "image": "https://mauviel-usa.com/cdn/shop/files/Captura_de_pantalla_2024-06-24_a_la_s_10.45.47_a._m..png?v=1719240363&width=570",
+          "title": "Mauviel 1830",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://mauviel-usa.com",
+          "image": "https://mauviel-usa.com/cdn/shop/files/2024-M150B-670014-SET7PIECES-THEINSTANTONATIME-LIFESTYLE-SHOOTINGBORDEAUX-HD3-JPG_1.jpg?v=1737391879&width=2400",
+          "title": "Gifts for every cook, every budget",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://mauviel-usa.com/collections/best-sellers/products/mauviel-mheritage-m250-b-10-piece-cookware-set-brass-handles",
+          "image": "https://mauviel-usa.com/cdn/shop/files/680001.jpg?v=1774623706&width=1200",
+          "title": "Mauviel M'Heritage M'250 B 10-piece cookware set with brass handles, including pots and pans in stainless steel finish.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://mauviel-usa.com/collections/best-sellers/products/mauviel-mheritage-m250-b-10-piece-cookware-set-brass-handles",
+          "image": "https://mauviel-usa.com/cdn/shop/files/680001.png?v=1775050239&width=1024",
+          "title": "Mauviel M'Heritage M'250 B 10-piece cookware set with brass handles, includes saucepans, frying pans, and stockpots on a kitchen countertop.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://mauviel-usa.com/products/mauviel-mheritage-m250-b-10-piece-cookware-set-brass-handles",
+          "image": "https://mauviel-usa.com/cdn/shop/files/680001.jpg?v=1774623706&width=1200",
+          "title": "Mauviel 1830 M'Heritage M'250 B 10-Piece Cookware Set, Brass Handles",
+          "kind": "product",
+          "description": "The 10-Piece set Includes: 2.7-Qt Sauce Pan With Lid 3.3-Qt Sauce Pan With Lid 3.3-Qt Saute Pan With Lid 10.2-In Frying Pan 11.8-In Frying Pan 6.1-Qt Stewpan With Lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainless steel inside 10%.",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "2999.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://mauviel-usa.com/products/mauviel-mheritage-m150-b-12-piece-copper-cookware-set-with-brass-handles",
+          "image": "https://mauviel-usa.com/cdn/shop/files/Untitleddesign_74.png?v=1695657194&width=1000",
+          "title": "Mauviel 1830 M'Heritage M'150 B 12-Piece Copper Cookware Set With Brass Handles",
+          "kind": "product",
+          "description": "Set includes: 1.9-qt Sauce Pan with lid 2.8-qt Sauce Pan with lid 3.5-qt Sauce Pan with lid 3.3-qt Saute pan 3.7-qt Chef Pan 7.9 in Frying pan 10.2-in Frying pan 6.3-qt Stewpan with lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainles",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "2499.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://mauviel-usa.com/products/mauviel-mheritage-m150-b-10-piece-copper-cookware-set-with-brass-handles",
+          "image": "https://mauviel-usa.com/cdn/shop/files/641014_3.png?v=1685475839&width=1000",
+          "title": "Mauviel 1830 M'Heritage M'150 B 10-Piece Copper Cookware Set With Brass Handles",
+          "kind": "product",
+          "description": "Set includes 1.9-qt Sauce pan With Lid 3.5-qt Sauce pan With Lid 3.3-qt Sauté pan With Lid 10.2-in Frying Pan 11.8-in Frying Pan 6.3-qt Stewpan With Lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainless steel inside 10%. Copper Thickn",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "2149.95",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+      ]
+    },
+    "durable-framework-computers": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": []
+    },
+    "durable-fairphone": {
+      "schema_version": 1,
+      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "items": [
+        {
+          "url": "https://www.fairphone.com/",
+          "image": "https://www.fairphone.com/theme_fairphone/static/src/img/image_ds/imapct-81f4e2.webp",
+          "title": "Hand holding a blue Fairphone Gen 6+ in front of pink spring blossom",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.fairphone.com/",
+          "image": "https://www.fairphone.com/theme_fairphone/static/src/img/image_ds/impact-innovation-green-fp6-3163369.webp",
+          "title": "Hand holding a green Fairphone Gen 6+, rear view, in front of sunlit grass",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.fairphone.com/",
+          "image": "https://www.fairphone.com/theme_fairphone/static/src/img/image_ds/fairtrade-gold-mark-368.webp",
+          "title": "Fairtrade certification mark",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.fairphone.com/",
+          "image": "https://www.fairphone.com/theme_fairphone/static/src/img/webp/449.webp",
+          "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.fairphone.com/shop/cart",
+          "image": "https://www.fairphone.com/theme_fairphone/static/src/img/webp/449.webp",
+          "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.fairphone.com/shop/30w-usb-c-fast-charger-1884?category=5",
+          "image": "https://www.fairphone.com/web/image/product.template/1884/image_512",
+          "title": "30W USB-C Fast Charger",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.fairphone.com/shop/long-life-charging-cable-1m-1947?category=5",
+          "image": "https://www.fairphone.com/web/image/product.product/2138/image_512",
+          "title": "USB-C Long Life Charging Cable",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.fairphone.com/shop/fairbuds-xl-headphones-usb-c-mini-jack-3-5mm-cable-64?category=5",
+          "image": "https://www.fairphone.com/web/image/product.template/64/image_512",
+          "title": "Fairbuds XL Headphones USB-C - mini jack 3.5mm Cable",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "category": "Hardware, Electronics & Enclosures"
         }
       ]
     }
