@@ -82,7 +82,7 @@ test('explicit complete Overture tombstones close only source-matched IDs; trunc
 test('Colorado shard batch must be complete, one release, duplicate-free and untruncated',()=>{
  const row=(i)=>({id:'overture:colorado-test-'+String(i).padStart(10,'0'),
   name:'Sourced attraction',city:'Denver',state:'CO',category:'museum',
-  latitude:39.7,longitude:-104.9,website:'',source_name:'Overture Maps',
+  latitude:Math.floor(i/6)<2?40:38,longitude:Math.floor(i/6)%2===0?-106:-104,website:'',source_name:'Overture Maps',
   source_url:'https://overturemaps.org/',license:'CDLA-Permissive-2.0',
   confidence:.9,image_url:'',image_attribution:''});
  const shards=Array.from({length:4},(_,s)=>({
@@ -92,6 +92,21 @@ test('Colorado shard batch must be complete, one release, duplicate-free and unt
   items:Array.from({length:6},(_,i)=>row(s*6+i)),closed_ids:[]
  }));
  assert.equal(validateColoradoShardBatch(shards).records,24);
+ // A CO label is not sufficient: the Worker must independently reject wrong
+ // regional coordinates, missing coordinates, and non-numeric input before D1.
+ for(const bad of [
+  {...shards[0].items[0],latitude:38},
+  {...shards[0].items[0],longitude:-104},
+  {...shards[0].items[0],latitude:null},
+  {...shards[0].items[0],longitude:undefined},
+  {...shards[0].items[0],latitude:'40'},
+  {...shards[0].items[0],longitude:true},
+  {...shards[0].items[0],latitude:Infinity}
+ ]){
+  assert.throws(()=>validateColoradoShardBatch([
+   {...shards[0],items:[bad,...shards[0].items.slice(1)]},...shards.slice(1)
+  ]),/invalid_colorado_record/);
+ }
  assert.throws(()=>validateColoradoShardBatch(shards.slice(0,3)),/incomplete_colorado_shards/);
  assert.throws(()=>validateColoradoShardBatch([{...shards[0],truncated:true},...shards.slice(1)]),/invalid_colorado_shard/);
  assert.throws(()=>validateColoradoShardBatch([...shards.slice(0,3),{...shards[3],generated_at:undefined}]),/invalid_colorado_shard/);
@@ -117,15 +132,15 @@ test('Cloudflare Cron refuses a partial four-region upload before any D1 write',
 
 test('Cron rejects a non-Colorado curated seed before any four-shard D1 write',async()=>{
  const oldFetch=globalThis.fetch;
- const makeRow=i=>({id:'overture:colorado-test-'+String(i).padStart(10,'0'),
+ const makeRow=(i,shard)=>({id:'overture:colorado-test-'+String(i).padStart(10,'0'),
   name:'Sourced attraction',city:'Denver',state:'CO',category:'museum',
-  latitude:39.7,longitude:-104.9,website:'',source_name:'Overture Maps',
+  latitude:shard<2?40:38,longitude:shard%2===0?-106:-104,website:'',source_name:'Overture Maps',
   source_url:'https://overturemaps.org/',license:'CDLA-Permissive-2.0',
   confidence:.9,image_url:'',image_attribution:''});
  const shards=Array.from({length:4},(_,s)=>({schema_version:1,state:'CO',source_name:'Overture Maps',
   dataset_version:'2026-10-21.0',license:'CDLA-Permissive-2.0',
   generated_at:'2026-11-01T12:00:00Z',truncated:false,eligible_count:6,
-  items:Array.from({length:6},(_,i)=>makeRow(s*6+i)),closed_ids:[]}));
+  items:Array.from({length:6},(_,i)=>makeRow(s*6+i,s)),closed_ids:[]}));
  let requested=0;
  globalThis.fetch=async url=>{const n=requested++;
   return {status:200,ok:true,json:async()=>n<4?shards[n]:{...seed,state:'WY'}};
