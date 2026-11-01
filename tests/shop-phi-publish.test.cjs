@@ -112,5 +112,13 @@ test('published edit attaches only newly chosen photos and preserves previous se
  assert.equal(s.calls[1].path,'/listings/'+s.item.itemId+'/edit');
  assert.equal(s.calls[1].body.photoIds[0],old);
  assert.equal(s.calls[1].body.photoIds[1],'a1234567-1234-4234-8234-123456789099');
- assert.deepEqual(s.item.uploadedMediaIds,['shopmedia-phone-1']);
+ assert.deepEqual(Array.from(s.item.uploadedMediaIds),['shopmedia-phone-1']);
+});
+
+test('unapproved published edit cannot upload any private photographs before rejecting',async()=>{
+ const s=setup({photo:true});
+ s.item.publishState='public-edit-pending';
+ s.item.confirmPublishedEdit=false;
+ await assert.rejects(s.publish(),/confirm/i);
+ assert.equal(s.calls.length,0,'denied edit must not upload or call seller API');
 });
