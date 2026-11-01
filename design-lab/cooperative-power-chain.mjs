@@ -1,6 +1,6 @@
 /* Infinity Cooperative Power Chain: deterministic, read-only plans and quote comparisons.
  * Existing public-index search and bulk allocator remain authoritative for their tasks.
- * No merchant auth, inventory, partner warehouse, checkout, wallet, Quant AI profile,
+ * No merchant auth, inventory, partner warehouse, checkout, balance state, Quant AI profile,
  * energy claim, tax determination, or transaction is established by this source.
  */
 import {moneyCents,formatCents} from './bulk-allocator.mjs';
