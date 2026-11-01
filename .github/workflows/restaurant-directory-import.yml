@@ -47,4 +47,11 @@ jobs:
           git add data/restaurants/denver-co.json
           if git diff --cached --quiet; then echo 'No snapshot changes'; exit 0; fi
           git -c user.name='QuantaPhi Restaurant Directory' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'data: refresh Denver restaurant directory from Overture'
-          git push origin HEAD:main
+          DATA_BRANCH="data/restaurant-directory-denver-${GITHUB_RUN_ID}"
+          git push origin "HEAD:refs/heads/${DATA_BRANCH}"
+          echo "Published reviewed-data candidate branch: ${DATA_BRANCH}"
+          GH_TOKEN="${{ github.token }}" gh pr create \
+            --base main --head "${DATA_BRANCH}" \
+            --title "data: refresh vetted Denver restaurants from Overture" \
+            --body "Source: Overture Maps Places 2026-10-21.0. High-confidence restaurant taxonomy, bounding box and duplicate filters. Never merchant-sponsored. Source snapshot generated and locally tested by this workflow; review/count before merge." \
+            || echo "A source-data branch exists; Continuity Builder must create/review PR manually."
