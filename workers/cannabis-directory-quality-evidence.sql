@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS store_quality_evidence (
  store_id TEXT NOT NULL REFERENCES store_sources(id),
  source_url TEXT NOT NULL,
  source_domain TEXT NOT NULL,
+ publisher_group TEXT NOT NULL,
  evidence_kind TEXT NOT NULL CHECK(evidence_kind IN ('customer_experience','store_conditions')),
  assessment TEXT NOT NULL CHECK(assessment IN ('positive','negative')),
  observed_at TEXT NOT NULL,
