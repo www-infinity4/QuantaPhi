@@ -5,8 +5,8 @@ source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1394
 state: live_partial_nationwide
 dot: "🟡"
-progress_percent: 45
-progress_basis: "Fresh public GET and isolated D1: 33 organic listings in four states (CO 12, IA medical-only 5, IL 8, NY 8), 50 state policy rows, 47 queued jobs, 14 regulator source URLs, 3 store receipts; read-only Worker live, zero approved stars or ads. Most states remain unpopulated."
+progress_percent: 8
+progress_basis: "Populated-state coverage 4/50 = 8%; infrastructure independently live. Fresh public GET and isolated D1: 33 organic listings in four states (CO 12, IA medical-only 5, IL 8, NY 8), 50 state policy rows, 47 queued jobs, 14 regulator source URLs, 3 store receipts; read-only Worker live, zero approved stars or ads. Most states remain unpopulated."
 sessions_spent: 1
 sessions_remaining_estimate: unknown
 agent: "ChatGPT source and Cloudflare, no verified coordinator lease"
