@@ -51,3 +51,11 @@ test('accepted voice is retained during owner context preflight and drained afte
  assert.match(heard,/if\(turn\.type==='message'\)\{if\(busy\|\|turnPending\)enqueueVoiceTurn/);
  assert.match(source,/finally\{turnPending=false;drainVoiceTurns\(\);\}/);
 });
+
+test('ChatGPT bridge and AI consultation cannot falsely advertise readiness while preflight is occupied',()=>{
+ assert.match(source,/event\.detail\?\.respond\?\.\(!embedded&&!busy&&!turnPending&&ownerReady/);
+ assert.match(source,/if\(embedded\|\|busy\|\|turnPending\|\|!text\)/);
+ const start=source.indexOf("window.addEventListener('bubbles:ai-consult'");
+ assert.ok(start>0);
+ assert.match(source.slice(start,start+250),/embedded\|\|busy\|\|turnPending/);
+});
