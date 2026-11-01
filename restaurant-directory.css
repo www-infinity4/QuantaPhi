@@ -1,0 +1,28 @@
+/* Restaurant directory: a single data-driven Oracle Quick Card, no 1,000-tile DOM. */
+.rd-card{--rd-ink:#203646;--rd-line:#d7e0e7;background:#fff!important;color:var(--rd-ink)!important}
+.rd-card .rd-header{margin:0;padding:18px 20px 8px;background:#fff;border:0;display:grid;gap:5px}
+.rd-card .rd-header h2{font:750 clamp(20px,5vw,27px)/1.2 system-ui,sans-serif;margin:0;color:#172b3a}
+.rd-card .rd-header .iqc-kind{font:750 11px system-ui;color:#596b77}
+.rd-card .rd-intro{font:14px/1.6 system-ui;margin:0 20px 12px;color:#586b78}
+.rd-card .rd-form{margin:0 20px}.rd-card .rd-inputs{display:grid;grid-template-columns:minmax(120px,2fr) minmax(120px,1fr) auto;gap:8px}
+.rd-card :is(input,select,button){min-height:45px;min-width:0;border-radius:11px;border:1px solid #c8d3db;background:#fff;color:#203646;font:650 14px system-ui;padding:10px 12px}
+.rd-card .rd-inputs button{background:#eef4f7}
+.rd-card .rd-status{min-height:20px;font:13px/1.5 system-ui;color:#5b6976;margin:9px 20px}
+.rd-card .rd-result{margin:0 20px;border:1px solid var(--rd-line);border-radius:17px;overflow:hidden;background:#fff;min-height:210px}
+.rd-card .rd-media:empty{display:none}.rd-card .rd-media img{width:100%;max-height:340px;object-fit:cover;display:block}
+.rd-card .rd-content{padding:18px;display:grid;gap:10px}
+.rd-card .rd-eyebrow{font:750 12px system-ui;color:#516d7a;text-transform:capitalize;margin:0}
+.rd-card .rd-content h3{font:750 clamp(23px,5.5vw,30px)/1.2 system-ui;margin:0;color:#182c38}
+.rd-card .rd-address{font:15px/1.45 system-ui;margin:0;color:#4a5964}
+.rd-card .rd-photo-note{font:13px/1.5 system-ui;color:#697a86;margin:0}
+.rd-card .rd-links{display:flex;flex-wrap:wrap;gap:8px}
+.rd-card .rd-links a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 12px;background:#fff;border:1px solid #c8d3db;color:#1f4b67;border-radius:10px;font:700 13px system-ui;text-decoration:none}
+.rd-card .rd-links a.rd-primary{background:#edf5f8;border-color:#9eb8c8}
+.rd-card .rd-source{font:12px/1.5 system-ui;color:#667780;margin:0}
+.rd-card .rd-empty{font:14px/1.5 system-ui;padding:25px 18px}
+.rd-card .rd-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:11px 20px}
+.rd-card .rd-nav .rd-position{font:650 12px system-ui;color:#687984;text-align:center}
+.rd-card .rd-nav button:disabled{opacity:.4;cursor:not-allowed}
+.rd-card .rd-actions{margin:10px 20px 20px}
+.rd-card :is(input,select,button,a):focus-visible{outline:3px solid #bb893c;outline-offset:2px}
+@media(max-width:500px){.rd-card .rd-inputs{grid-template-columns:1fr 1fr}.rd-card .rd-inputs input{grid-column:1/-1}.rd-card .rd-inputs button{width:100%}.rd-card .rd-header{padding:15px 16px 7px}.rd-card :is(.rd-intro,.rd-form,.rd-status,.rd-result,.rd-nav,.rd-actions){margin-left:16px;margin-right:16px}.rd-card .rd-nav button{font-size:12px;padding:9px}}
