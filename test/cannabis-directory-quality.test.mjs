@@ -7,7 +7,8 @@ import worker from '../workers/cannabis-directory.mjs';
 const now='2026-11-01T20:00:00Z';
 const decision={store_id:'synthetic',status:'star',review_status:'approved',
   appeal_status:'none',reviewed_at:'2026-10-30T12:00:00Z',
-  expires_at:'2026-11-30T12:00:00Z'};
+  expires_at:'2026-11-30T12:00:00Z',merchant_domain:'merchant.example',
+  merchant_domain_source_url:'https://merchant.example',merchant_domain_verified_at:'2026-10-30'};
 const evidence=[
  {store_id:'synthetic',source_url:'https://independent-a.example/review',
   source_domain:'independent-a.example',publisher_group:'publisher-a',evidence_kind:'customer_experience',
@@ -17,33 +18,36 @@ const evidence=[
   assessment:'positive',observed_at:'2026-10-27',reviewed_at:'2026-10-30',review_status:'approved'}
 ];
 test('quality star requires two fresh independently reviewed third-party sources',()=>{
- const ok=reviewedQualityStar(decision,evidence,'merchant.example',now);
+ const ok=reviewedQualityStar(decision,evidence,now);
  assert.equal(ok?.star,'★');
  assert.equal(ok?.sources.length,2);
  assert.match(ok.disclosure,/not a product, health, potency/);
 });
 test('no evidence, single domain, merchant source or unsafe URL stays unrated',()=>{
- assert.equal(reviewedQualityStar(decision,[],'merchant.example',now),null);
- assert.equal(reviewedQualityStar(decision,[evidence[0]],'merchant.example',now),null);
+ assert.equal(reviewedQualityStar(decision,[],now),null);
+ assert.equal(reviewedQualityStar(decision,[evidence[0]],now),null);
  assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],source_domain:evidence[0].source_domain,
-   source_url:'https://independent-a.example/second'}],'merchant.example',now),null);
+   source_url:'https://independent-a.example/second'}],now),null);
  assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],source_domain:'merchant.example',
-   source_url:'https://merchant.example/review'}],'merchant.example',now),null);
- assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],source_url:'javascript:alert(1)'}],'merchant.example',now),null);
- assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],publisher_group:'publisher-a'}],'merchant.example',now),null);
+   source_url:'https://merchant.example/review'}],now),null);
+ assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],source_url:'javascript:alert(1)'}],now),null);
+ assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],publisher_group:'publisher-a'}],now),null);
+ assert.equal(reviewedQualityStar({...decision,merchant_domain:''},evidence,now),null);
+ assert.equal(reviewedQualityStar({...decision,merchant_domain_source_url:'https://hhs.iowa.gov'},evidence,now),null);
+ assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],
+  source_domain:'reviews.independent-a.example',source_url:'https://independent-a.example/review'}],now),null);
+ assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],
+  source_domain:'blog.independent-a.example',source_url:'https://blog.independent-a.example/another'}],now),null);
 });
 test('pending appeal, negative corroboration, stale, expired or unapproved decisions suppress stars',()=>{
  for(const patch of [
   {appeal_status:'pending'},{appeal_status:'reversed'},{review_status:'pending'},
   {status:'unrated'},{reviewed_at:'2026-01-01'},{expires_at:'2026-10-31'}
- ])assert.equal(reviewedQualityStar({...decision,...patch},evidence,'merchant.example',now),null);
- assert.equal(reviewedQualityStar(decision,[...evidence,{...evidence[0],assessment:'negative'}],
-  'merchant.example',now),null);
- assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],observed_at:'2026-01-01'}],
-  'merchant.example',now),null);
- assert.equal(reviewedQualityStar(decision,evidence,'merchant.example',now,[{status:'pending'}]),null);
- assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],evidence_kind:'lung_health'}],
-  'merchant.example',now),null);
+ ])assert.equal(reviewedQualityStar({...decision,...patch},evidence,now),null);
+ assert.equal(reviewedQualityStar(decision,[...evidence,{...evidence[0],assessment:'negative'}],now),null);
+ assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],observed_at:'2026-01-01'}],now),null);
+ assert.equal(reviewedQualityStar(decision,evidence,now,[{status:'pending'}]),null);
+ assert.equal(reviewedQualityStar(decision,[evidence[0],{...evidence[1],evidence_kind:'lung_health'}],now),null);
 });
 test('Worker exposes no ★ if quality tables are unavailable, without hiding organic listings',async()=>{
  const record={id:'synthetic',name:'Synthetic Source',store:'Test Location',city:'Testville',
@@ -81,7 +85,7 @@ test('Worker only exposes corroborated ★ with source receipts and suppresses p
   const q={bind(){return q;},async all(){
    if(sql.includes('FROM store_sources'))return {results:[record]};
    if(sql.includes('FROM store_quality_decisions'))return {results:[{
-    ...decision,reviewed_at:recent,expires_at:expiry}]};
+    ...decision,reviewed_at:recent,expires_at:expiry,merchant_domain_verified_at:recent}]};
    if(sql.includes('FROM store_quality_evidence'))return {results:evidence.map(e=>({
     ...e,observed_at:recent,reviewed_at:recent}))};
    if(sql.includes('FROM store_quality_appeals'))return {results:pending?[{store_id:'synthetic',status:'pending'}]:[]};
