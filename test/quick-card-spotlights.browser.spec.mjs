@@ -30,7 +30,17 @@ test('Share carries the selected product and reopens it despite saved no-repeat 
  await page.goto(base+'/?card=levis-501-dark',{waitUntil:'domcontentloaded'});
  const card=page.locator('#oracleCardStage [data-source-id="levis-501-dark"]'),hero=card.locator('.qcs-panel');
  await expect(hero.locator('.qcs-title')).toHaveText('Fixture denim jacket');
- await hero.getByRole('button',{name:'Next offer'}).click();await expect(hero.locator('.qcs-title')).toHaveText('Fixture straight jeans');
+ await hero.getByRole('button',{name:'Next offer'}).click();
+ console.log('NEXT_OFFER_DIAGNOSTIC',JSON.stringify(await card.evaluate(node=>({
+  id:node.dataset.sourceId,spotlightManual:node.dataset.spotlightManual,
+  count:node.querySelector('.qcs-count')?.textContent,
+  title:node.querySelector('.qcs-title')?.textContent,
+  image:node.querySelector('.qcs-photo')?.getAttribute('src'),
+  currentUrl:node.dataset.currentSpotlight,
+  nextDisabled:node.querySelector('.qcs-nav button:last-of-type')?.disabled,
+  history:localStorage.getItem('quanta:spotlight:levis-501-dark:v1')
+ }))));
+ await expect(hero.locator('.qcs-title')).toHaveText('Fixture straight jeans');
  await card.getByRole('button',{name:'↗ Share',exact:true}).click();
  const payload=await page.evaluate(()=>window.__spotlightShare),shared=new URL(payload.url),destination=new URL(shared.searchParams.get('dest'));
  expect(payload.title).toBe('Fixture straight jeans');expect(shared.searchParams.get('image')).toContain('fixture-b.jpg');
