@@ -8,7 +8,7 @@ const home=read('index.html'),deck=read('oracle-card-deck.js'),module=read('bran
 
 test('ten distinct original product spotlights across five verified brands are represented',()=>{
  assert.equal(BRAND_PRODUCT_CARDS.length,10);
- assert.equal(new Set(BRAND_PRODUCT_CARDS.map(p=>p.id)).size,6);
+ assert.equal(new Set(BRAND_PRODUCT_CARDS.map(p=>p.id)).size,10);
  assert.deepEqual(new Set(BRAND_PRODUCT_CARDS.map(p=>p.brand)),new Set(['Pepe Jeans','GUESS JEANS','Levi’s','Carhartt','Oakley']));
  assert.equal(BRAND_PRODUCT_CARDS.filter(p=>p.brand==='Pepe Jeans').length,2);
  for(const p of BRAND_PRODUCT_CARDS){
