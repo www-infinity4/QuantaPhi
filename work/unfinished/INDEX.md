@@ -4,6 +4,7 @@ Read [README](README.md) and root [AGENTS.md](../../AGENTS.md) before editing co
 
 | Project | Canonical issue | Linked source | Dot | Progress | Sessions spent / remaining | Next verified action |
 | --- | --- | --- | --- | --- | --- | --- |
+| Integra X guided tour + owner-authorized replies | [#1307](https://github.com/www-infinity4/QuantaPhi/issues/1307) | [TICKET-1307](TICKET-1307.md) · [X composer #1306](https://github.com/www-infinity4/QuantaPhi/pull/1306) | 🟡 | 15% source milestone estimate; full auth/replies incomplete | 1 / unknown | Finish exact-head guided-tour QA, review, merge and mobile readback; then gated owner browser receipt |
 | X #bubbles intake / build receipts | [#1210](https://github.com/www-infinity4/QuantaPhi/issues/1210) | [signed-in Integra intake receipt](https://github.com/www-infinity4/QuantaPhi/issues/1210#issuecomment-6539823684) | 🔴 | unknown | unknown / unknown | Deduplicate new Panasonic Power Chain request; implement one bounded card slice |
 | Continuity Builder / agent orchestration | [#1145](https://github.com/www-infinity4/QuantaPhi/issues/1145) | [coordinator PR #1171](https://github.com/www-infinity4/QuantaPhi/pull/1171) | 🔴 | unknown | unknown / unknown | Verify current coordinator receipts and authenticated runners; continue safe source repair |
 | Brain execution | [#1192](https://github.com/www-infinity4/QuantaPhi/issues/1192) | issue checkpoint | 🔴 | unknown | unknown / unknown | Obtain actual execution/result receipt, not just accepted status |
