@@ -15,6 +15,8 @@ function validOwnItem(item){
 async function publish(item,studio,status,onUpdate,saveDraft){
  validOwnItem(item);
  if(!api())throw Error('The secure seller service is not loaded; your local draft was preserved.');
+ if(item.publishState==='public-edit-pending'&&(!item.ownItem||!item.publishConsent||item.confirmPublishedEdit!==true))
+  throw Error('Confirm ownership and approve changes to this already-public listing.');
  const uploaded=Array.isArray(item.uploadedMediaIds)?item.uploadedMediaIds:(item.photoIds?.length?item.mediaIds||[]:[]);
  const pending=(item.mediaIds||[]).filter(id=>!uploaded.includes(id));
  if(pending.length){
