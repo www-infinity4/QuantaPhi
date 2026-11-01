@@ -25,8 +25,8 @@ test('newsroom has unique crawlable editorial articles with original text and so
  assert.match(index,/href="iowa-wisconsin-grid\.html"/);
 });
 test('newsroom is discoverable from homepage and sitemap without touching wallet',()=>{
- assert.match(read('index.html'),/href="\/newsroom\/"/);
- for(const path of ['','hubble-servicing.html','iowa-wisconsin-grid.html'])
+ assert.match(read('index.html'),/href="\/newsroom\/index\.html"/);
+ for(const path of ['index.html','hubble-servicing.html','iowa-wisconsin-grid.html'])
   assert.ok(read('sitemap.xml').includes('<loc>'+base+path+'</loc>'));
 });
 test('fresh news feed rejects stale, future, non-HTTPS and thin stories',()=>{
@@ -77,4 +77,12 @@ test('rotation controls are stable keyboard buttons with a pause and resume acti
  assert.match(js,/pauseButton\?\.addEventListener\('click'/);
  assert.match(js,/nextButton\?\.addEventListener\('click'/);
  assert.doesNotMatch(js,/document\.createElement\('button'\)/);
+});
+
+test('public newsroom navigation uses the concrete index URL verified on Cloudflare',()=>{
+ const homepage=read('index.html'),hub=read('newsroom/index.html');
+ const first=read('newsroom/hubble-servicing.html'),second=read('newsroom/iowa-wisconsin-grid.html');
+ for(const doc of [homepage,hub,first,second]) assert.doesNotMatch(doc,/href="\/newsroom\/"/);
+ assert.match(hub,/<link rel="canonical" href="https:\/\/quantaphi\.org\/newsroom\/index\.html">/);
+ assert.ok(!read('sitemap.xml').includes('<loc>'+base+'</loc>'));
 });
