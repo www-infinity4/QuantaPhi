@@ -11,7 +11,8 @@ spec.loader.exec_module(ingest)
 
 def feature(**overrides):
     p = {'id':'a7c8-1234','names':{'primary':'Hammond Candies'},'basic_category':'food_and_drink',
-         'websites':['https://candy.example/'],'addresses':[{'freeform':'1 Washington St, Denver, CO'}]}
+         'websites':['https://candy.example/'],'addresses':[{'freeform':'1 Washington St, Denver, CO'}],
+         'sources':[{'dataset':'Overture','license':'CDLA-Permissive-2.0'}]}
     p.update(overrides)
     return {'type':'Feature','properties':p,'geometry':{'type':'Point','coordinates':[-104.98,39.75]}}
 
@@ -45,6 +46,7 @@ class BusinessIngestTests(unittest.TestCase):
         self.assertEqual(row['source_license'],'Apache-2.0; CDLA-Permissive-2.0')
         self.assertIsNone(ingest.business_from_feature(
             feature(sources=[{'dataset':'unknown','license':'restricted-proprietary'}]),'Denver','CO'))
+        self.assertIsNone(ingest.business_from_feature(feature(sources=[]),'Denver','CO'))
 
     def test_geojsonseq_may_contain_separator_and_feature_collection(self):
         with tempfile.TemporaryDirectory() as tmp:
