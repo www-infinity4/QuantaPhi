@@ -2308,7 +2308,7 @@ async function consultExternalAi(question,mode='gemini_first',fromVoice=false,re
  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();
 }
 window.addEventListener('bubbles:ai-consult',event=>{
- if(embedded||busy||!event?.detail?.question)return;
+ if(embedded||busy||turnPending||!event?.detail?.question)return;
  if(!['gemini_first','gemini_claude_review','claude_only'].includes(event.detail.mode))return;
  event.preventDefault();void consultExternalAi(event.detail.question,event.detail.mode,false,event.detail.respond);
 });
@@ -3292,7 +3292,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
 }
 
  window.addEventListener('bubbles:chatgpt-ready',event=>{
-  event.detail?.respond?.(!embedded&&!busy&&ownerReady&&Boolean(ownerHeaders?.Authorization));
+  event.detail?.respond?.(!embedded&&!busy&&!turnPending&&ownerReady&&Boolean(ownerHeaders?.Authorization));
  });
  // Owner approved ChatGPT bridge: a message arrives only after the Cloudflare
  // browser Worker verifies the owner session and an active five-day grant.
@@ -3301,7 +3301,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const detail=event.detail||{};
   const respond=typeof detail.respond==='function'?detail.respond:()=>{};
   const text=String(detail.text||'').slice(0,1800).trim();
-  if(embedded||busy||!text){respond({ok:false,error:'bubbles_chat_not_ready'});return}
+  if(embedded||busy||turnPending||!text){respond({ok:false,error:'bubbles_chat_not_ready'});return}
   const before=messages.length;
   Promise.resolve(sendMessage(text,false)).then(()=>{
    const replies=messages.slice(before).filter(x=>x.role==='assistant');
