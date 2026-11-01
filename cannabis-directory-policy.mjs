@@ -28,31 +28,40 @@ export function qualitySignal(row){
  * Never infer a star from source completeness or merchant self-reporting.
  * Two fresh, independently reviewed third-party sources and an unappealed,
  * time-limited reviewer decision are required. No source evidence => unrated. */
-export function reviewedQualityStar(decision, evidence=[], merchantDomain='', now=new Date(), appeals=[]){
+export function reviewedQualityStar(decision, evidence=[], now=new Date(), appeals=[]){
  const t=now instanceof Date?now.getTime():Date.parse(now);
  if(!Number.isFinite(t)||!decision||decision.status!=='star'||
   decision.review_status!=='approved'||decision.appeal_status!=='none')return null;
  const day=86400000;
+ const family=domain=>String(domain).toLowerCase().split('.').slice(-2).join('.');
  const fresh=value=>{const d=Date.parse(value||'');return Number.isFinite(d)&&d<=t+300000&&d>=t-90*day};
  const expiry=Date.parse(decision.expires_at||'');
  if(!fresh(decision.reviewed_at)||!Number.isFinite(expiry)||expiry<=t||expiry>t+90*day)return null;
+ // Provenance URLs may be regulators (e.g. Iowa HHS), not merchant sites.
+ // A separately reviewed merchant domain is mandatory; otherwise unrated.
+ const merchant=String(decision.merchant_domain||'').toLowerCase();
+ if(!/^[a-z0-9-]+(?:\\.[a-z0-9-]+)+$/.test(merchant)||
+  !fresh(decision.merchant_domain_verified_at)||
+  !HTTPS(decision.merchant_domain_source_url,merchant))return null;
  if(!Array.isArray(evidence)||!Array.isArray(appeals)||appeals.some(a=>a.status==='pending'))return null;
  // A corroborated adverse report suspends a positive star pending review;
  // adverse reports themselves are not automatically published or scored.
  if(evidence.some(e=>e.review_status==='approved'&&e.assessment==='negative'&&fresh(e.observed_at)))return null;
- const domains=new Set(),groups=new Set(),sources=[];
- const merchant=String(merchantDomain).toLowerCase();
+ const domains=new Set(),groups=new Set(),families=new Set(),urls=new Set(),sources=[];
  for(const e of evidence){
   if(e.review_status!=='approved'||e.assessment!=='positive'||
    !['customer_experience','store_conditions'].includes(e.evidence_kind)||
    !fresh(e.observed_at)||!fresh(e.reviewed_at))continue;
   const domain=String(e.source_domain||'').toLowerCase();
   const group=String(e.publisher_group||'').toLowerCase();
+  const normalized=new URL(e.source_url||'https://invalid.example');
+  normalized.hash='';
+  const href=normalized.href;
   if(!/^[a-z0-9-]+(?:\.[a-z0-9-]+)+$/.test(domain)||
    !/^[a-z0-9][a-z0-9._-]{2,100}$/.test(group)||groups.has(group)||
-   domain===merchant||merchant.endsWith('.'+domain)||domain.endsWith('.'+merchant)||
+   family(domain)===family(merchant)||families.has(family(domain))||urls.has(href)||
    !HTTPS(e.source_url,domain)||domains.has(domain))continue;
-  domains.add(domain);groups.add(group);
+  domains.add(domain);groups.add(group);families.add(family(domain));urls.add(href);
   sources.push(e.source_url);
  }
  if(domains.size<2)return null;
