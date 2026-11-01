@@ -1,0 +1,10 @@
+name = "quantaphi-business-directory"
+main = "worker.mjs"
+compatibility_date = "2026-11-01"
+workers_dev = true
+keep_vars = true
+routes = [{ pattern = "quantaphi.org/api/business-directory*", zone_name = "quantaphi.org" }]
+[[d1_databases]]
+binding = "BUSINESS_DB"
+database_name = "quantaphi-business-directory"
+database_id = "51bfedfd-15e0-4695-ab80-0416ff2ea133"
