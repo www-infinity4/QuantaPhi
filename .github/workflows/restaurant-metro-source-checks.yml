@@ -8,6 +8,8 @@ on:
       - 'data/restaurants/city-manifest.json'
       - '.github/workflows/restaurant-directory-import.yml'
       - 'restaurant-directory.mjs'
+      - 'workers/restaurant-directory.js'
+      - 'test/restaurant-approved-metro-cron.test.mjs'
       - 'test/test_restaurant_directory_import.py'
       - 'test/restaurant-directory.test.mjs'
       - '.github/workflows/restaurant-metro-source-checks.yml'
@@ -31,4 +33,4 @@ jobs:
       - name: Verify pinned Overture release provenance
         run: python -m unittest discover -s test -p test_overture_release_guard.py -v
       - name: Verify data-backed Oracle restaurant card and safe pagination
-        run: node --test test/restaurant-directory.test.mjs
+        run: node --test test/restaurant-directory.test.mjs test/restaurant-approved-metro-cron.test.mjs
