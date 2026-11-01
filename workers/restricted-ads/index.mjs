@@ -12,7 +12,7 @@ const validJurisdiction=v=>typeof v==='string'&&/^US-[A-Z]{2}$/.test(v);
 const ageWindow=(value,now,maxDays)=>{const t=Date.parse(value);return Number.isFinite(t)&&t>now&&t<=now+maxDays*DAY};
 export function verifyVerdict(data,now=Date.now()){
  if(!data||data.authenticated!==true||typeof data.subject!=='string'||data.subject.length<3||data.subject.length>220
-  ||data.verified_over_21!==true||data.proof_kind!=='third_party_verified'
+  ||data.verified_over_21!==true||!['infinity_verified','third_party_verified'].includes(data.proof_kind)
   ||!validJurisdiction(data.jurisdiction)||!ageWindow(data.expires_at,now,7))return null;
  return {subject:data.subject,jurisdiction:data.jurisdiction};
 }
