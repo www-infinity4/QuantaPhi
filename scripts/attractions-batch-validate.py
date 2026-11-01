@@ -11,6 +11,25 @@ from pathlib import Path
 
 RELEASE = re.compile(r"20\d{2}-\d{2}-\d{2}\.\d+\Z")
 SHARDS = {"nw", "ne", "sw", "se"}
+# Match the exact four downloader boxes; a CO label alone does not establish
+# the geographic provenance of a source row in its claimed region.
+TILE_BOUNDS = {
+    "nw": (-109.060, 39.000, -105.550, 41.010),
+    "ne": (-105.550, 39.000, -102.040, 41.010),
+    "sw": (-109.060, 36.990, -105.550, 39.000),
+    "se": (-105.550, 36.990, -102.040, 39.000),
+}
+
+
+def inside_region(row, region):
+    lat, lon = row.get("latitude"), row.get("longitude")
+    if type(lat) not in (int, float) or type(lon) not in (int, float):
+        return False
+    if not math.isfinite(lat) or not math.isfinite(lon):
+        return False
+    west, south, east, north = TILE_BOUNDS[region]
+    return west <= lon <= east and south <= lat <= north
+
 
 
 def validate(files, minimum=24):
@@ -21,7 +40,8 @@ def validate(files, minimum=24):
     release = None
     listed, closed = set(), set()
     total = 0
-    for path in files:
+    for path, match in zip(files, names):
+        region = match.group(1)
         data = json.loads(path.read_text(encoding="utf-8"))
         version = data.get("dataset_version")
         if not isinstance(version, str) or not RELEASE.fullmatch(version):
@@ -50,6 +70,7 @@ def validate(files, minimum=24):
                 or row.get("source_url") != "https://overturemaps.org/"
                 or row.get("license") != "CDLA-Permissive-2.0"
                 or row.get("image_url") not in ("", None)
+                or not inside_region(row, region)
                 or isinstance(confidence, bool)
                 or not isinstance(confidence, (int, float))
                 or not math.isfinite(confidence)
