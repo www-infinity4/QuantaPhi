@@ -28,6 +28,15 @@ CREATE TABLE IF NOT EXISTS store_quality_decisions (
  rationale TEXT NOT NULL DEFAULT '',
  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+-- Separate reviewer-verified merchant domain: the listing source may be a
+-- regulator rather than the merchant's own website. Empty by default.
+CREATE TABLE IF NOT EXISTS store_quality_merchant_domains (
+ store_id TEXT PRIMARY KEY REFERENCES store_sources(id),
+ domain TEXT NOT NULL,
+ source_url TEXT NOT NULL,
+ verified_at TEXT NOT NULL,
+ reviewer_ref TEXT NOT NULL
+);
 CREATE TABLE IF NOT EXISTS store_quality_appeals (
  appeal_id TEXT PRIMARY KEY,
  store_id TEXT NOT NULL REFERENCES store_sources(id),
