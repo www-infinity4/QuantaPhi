@@ -31,6 +31,9 @@ async function search(url,env,feed=false){
  return answer({state,city,category,query:q,page,page_size:24,count:items.length,has_more:page<100000&&rows.length>24,items,
   note:'Organic source-backed directory, not advertising or live booking. No guaranteed prices, hours, reviews, slots, availability or sponsorship.'});
 }
+// D1 Free allows 50 queries per Worker invocation; db.batch counts once.
+// Four source shards + curated seed must stay under that budget.
+const D1_BATCH_ROWS=250;
 export async function importSnapshot(env,payload){
  const state=text(payload?.state,2).toUpperCase();
  if(payload?.schema_version!==1||!validState(state)||!Array.isArray(payload.items)||payload.items.length>5000||!payload.generated_at||!payload.source_name||!payload.dataset_version)throw Error('invalid_snapshot');
@@ -40,18 +43,19 @@ export async function importSnapshot(env,payload){
   (payload.shard?'|'+text(payload.shard,30):'');
  if(await env.ATTRACTIONS.prepare('SELECT run_id FROM attraction_ingest_runs WHERE run_id=?').bind(run_id).first())return {skipped:true,records:0};
  let records=0;
- for(let i=0;i<payload.items.length;i+=40){
-  const batch=payload.items.slice(i,i+40).map(o=>cleanRecord(o,state,payload.generated_at)).filter(Boolean).map(o=>
-   env.ATTRACTIONS.prepare("INSERT INTO attractions(id,name,city,state,category,address,latitude,longitude,website,source_name,source_url,license,confidence,image_url,image_attribution,last_seen) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name,city=excluded.city,state=excluded.state,category=excluded.category,address=excluded.address,latitude=excluded.latitude,longitude=excluded.longitude,website=excluded.website,source_name=excluded.source_name,source_url=excluded.source_url,license=excluded.license,confidence=excluded.confidence,image_url=excluded.image_url,image_attribution=excluded.image_attribution,last_seen=excluded.last_seen,status='listed',updated_at=CURRENT_TIMESTAMP")
-   .bind(o.id,o.name,o.city,o.state,o.category,o.address,o.latitude,o.longitude,o.website,o.source_name,o.source_url,o.license,o.confidence,o.image_url,o.image_attribution,o.last_seen));
+ for(let i=0;i<payload.items.length;i+=D1_BATCH_ROWS){
+  const batch=payload.items.slice(i,i+D1_BATCH_ROWS).map(o=>cleanRecord(o,state,payload.generated_at)).filter(Boolean).map(o=>
+   env.ATTRACTIONS.prepare("INSERT INTO attractions(id,name,city,state,category,address,latitude,longitude,website,source_name,source_url,license,confidence,image_url,image_attribution,last_seen,status) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name,city=excluded.city,state=excluded.state,category=excluded.category,address=excluded.address,latitude=excluded.latitude,longitude=excluded.longitude,website=excluded.website,source_name=excluded.source_name,source_url=excluded.source_url,license=excluded.license,confidence=excluded.confidence,image_url=excluded.image_url,image_attribution=excluded.image_attribution,last_seen=excluded.last_seen,status=excluded.status,updated_at=CURRENT_TIMESTAMP")
+   .bind(o.id,o.name,o.city,o.state,o.category,o.address,o.latitude,o.longitude,o.website,o.source_name,o.source_url,o.license,o.confidence,o.image_url,o.image_attribution,o.last_seen,
+    o.source_name==='Overture Maps'&&o.category==='historic_site'?'needs_review':'listed'));
   if(batch.length){await env.ATTRACTIONS.batch(batch);records+=batch.length}
  }
  // Closure changes require explicit source tombstones in a complete reviewed snapshot.
  // Never close curated records, unrelated shards, or rows merely absent from a download.
  let closureCandidates=0;
  if(payload.source_name==='Overture Maps'&&!payload.truncated){
-  for(let i=0;i<closedIds.length;i+=40){
-   const batch=closedIds.slice(i,i+40).map(id=>env.ATTRACTIONS.prepare(
+  for(let i=0;i<closedIds.length;i+=D1_BATCH_ROWS){
+   const batch=closedIds.slice(i,i+D1_BATCH_ROWS).map(id=>env.ATTRACTIONS.prepare(
     "UPDATE attractions SET status='closed',updated_at=CURRENT_TIMESTAMP WHERE id=? AND state=? AND source_name='Overture Maps' AND id LIKE 'overture:%'"
    ).bind(id,state));
    if(batch.length){await env.ATTRACTIONS.batch(batch);closureCandidates+=batch.length}
@@ -134,8 +138,9 @@ export default {
     return answer({states:b.results||[],populated:a.results||[],first_state:'CO',note:'Queued states are not populated until verified records are ingested.'});
    }
    if(url.pathname==='/api/attractions/health'){
-    const row=await env.ATTRACTIONS.prepare('SELECT COUNT(*) AS total FROM attractions').first();
-    return answer({ok:true,database:'connected',service:'Infinity Attractions Directory',records:row?.total||0});
+    const row=await env.ATTRACTIONS.prepare("SELECT COUNT(*) AS total,SUM(CASE WHEN status='listed' THEN 1 ELSE 0 END) AS listed,SUM(CASE WHEN status='needs_review' THEN 1 ELSE 0 END) AS needs_review FROM attractions").first();
+    return answer({ok:true,database:'connected',service:'Infinity Attractions Directory',
+     records:row?.listed||0,review_pending:row?.needs_review||0,total_records:row?.total||0});
    }
    return answer({error:'Unknown route'},404);
   }catch{return answer({error:'Attractions search temporarily unavailable'},503)}
