@@ -22,6 +22,26 @@ SOURCE = "Overture Maps Places"
 LICENSE = "CDLA Permissive 2.0 / Apache 2.0"
 SOURCE_URL = "https://docs.overturemaps.org/guides/places/"
 MAX_PER_RUN = 400
+# Public directory never imports restricted-age venues or unverifiable source licenses.
+RESTRICTED = re.compile(r"cannabis|marijuana|dispensar|\\bthc\\b|hemp|vape|nicotine|tobacco|adult.?store|erotic|porn|sex.?shop|firearm|gun.?shop|weapon|liquor|smoke.?shop", re.I)
+FOOD_MISMATCH = re.compile(r"\\b(?:rent.to.own|rental.center|equipment.rental|car.rental)\\b", re.I)
+PERMITTED_LICENSES = {"CDLA-Permissive-2.0", "Apache-2.0", "CC0-1.0"}
+LICENSE_ALIASES = {"CDLA Permissive 2.0": "CDLA-Permissive-2.0", "CC0": "CC0-1.0"}
+
+def feature_licenses(sources):
+    """Require explicit per-feature upstream licenses, never invent a blanket grant."""
+    if not isinstance(sources, list) or not sources:
+        return None
+    found = set()
+    for item in sources:
+        if not isinstance(item, dict):
+            return None
+        license_name = LICENSE_ALIASES.get(item.get("license"), item.get("license"))
+        if license_name not in PERMITTED_LICENSES:
+            return None
+        found.add(license_name)
+    return "; ".join(sorted(found))
+
 STATES = dict(zip(
  "AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY".split(),
  "Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|Wisconsin|Wyoming".split("|")
@@ -59,6 +79,14 @@ def business_from_feature(feature, fallback_city, state):
     name = names.get("primary") if isinstance(names, dict) else ""
     if not source_id or not isinstance(name, str) or len(name.strip()) < 2:
         return None
+    category_raw = str(p.get("basic_category") or "Business")
+    if RESTRICTED.search(name + " " + category_raw):
+        return None
+    if ("restaurant" in category_raw.lower() or "food" in category_raw.lower()) and FOOD_MISMATCH.search(name):
+        return None
+    licenses = feature_licenses(p.get("sources"))
+    if licenses is None:
+        return None
     geometry = feature.get("geometry") or {}
     coords = geometry.get("coordinates") if geometry.get("type") == "Point" else None
     if not isinstance(coords, list) or len(coords) < 2:
@@ -88,8 +116,8 @@ def business_from_feature(feature, fallback_city, state):
         "city": city or fallback_city, "state": state, "category": category or "Business",
         "address": address[:250], "latitude": str(latitude), "longitude": str(longitude),
         "website": first_website(p.get("websites")), "source_url": SOURCE_URL,
-        "source_name": SOURCE, "source_license": LICENSE, "confidence": confidence,
-        "attribution": "© Overture Maps Foundation; verify source and current status",
+        "source_name": SOURCE, "source_license": licenses, "confidence": confidence,
+        "attribution": "Overture Maps Foundation; provider licenses: https://docs.overturemaps.org/attribution/",
         "last_seen": datetime.now(timezone.utc).strftime("%Y-%m-%d")
     }
 
