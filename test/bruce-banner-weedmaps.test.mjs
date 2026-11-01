@@ -61,12 +61,14 @@ test('privacy opt-out blocks Oracle view/open persistence and personalized ranki
  const fs=await import('node:fs/promises');
  const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
  const card=await fs.readFile(new URL('../bruce-banner-card.mjs',import.meta.url),'utf8');
+ const html=await fs.readFile(new URL('../index.html',import.meta.url),'utf8');
+ assert.match(html,/id="bruceBannerWeedmapsCard" data-personalization="disabled"/);
  assert.match(card,/root\.dataset\.personalization='disabled'/);
- assert.match(deck,/const personalizationDisabled=entry=>/);
- assert.match(deck,/if\(!personalizationDisabled\(entry\)\)void import\('\/bubbles-project-discovery/);
- assert.match(deck,/if\(!personalizationDisabled\(entry\)\)\{\s*entry\.count=/);
- assert.match(deck,/if\(personalizationDisabled\(active\)\)return;/);
- assert.match(deck,/selectedTab!=='for-you'\|\|!personalizationDisabled\(e\)/);
+ assert.match(deck,/function nonProfiling\(entry\)/);
+ assert.match(deck,/if\(!nonProfiling\(entry\)\)void import\('\/bubbles-project-discovery/);
+ assert.match(deck,/if\(!nonProfiling\(entry\)\)\{\s*entry\.count=/);
+ assert.match(deck,/if\(!active\|\|nonProfiling\(active\)\|\|/);
+ assert.match(deck,/selectedTab!=='for-you'\|\|!nonProfiling\(e\)/);
 });
 test('Bruce Banner card remains in one Oracle stage and respects mobile, keyboard and viewport',async()=>{
  const fs=await import('node:fs/promises');
