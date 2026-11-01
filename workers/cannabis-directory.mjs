@@ -100,17 +100,24 @@ async function enrichQuality(items,env){
     ).bind(...ids).all();
     if(!decisions?.length)return items;
     const {results:evidence}=await env.DIRECTORY.prepare(
-      `SELECT store_id,source_url,source_domain,evidence_kind,assessment,observed_at,reviewed_at,review_status FROM store_quality_evidence WHERE store_id IN (${placeholders})`
+      `SELECT store_id,source_url,source_domain,publisher_group,evidence_kind,assessment,observed_at,reviewed_at,review_status FROM store_quality_evidence WHERE store_id IN (${placeholders})`
     ).bind(...ids).all();
-    const byId=new Map(),evidenceById=new Map();
+    const {results:appeals}=await env.DIRECTORY.prepare(
+      `SELECT store_id,status FROM store_quality_appeals WHERE status='pending' AND store_id IN (${placeholders})`
+    ).bind(...ids).all();
+    const byId=new Map(),evidenceById=new Map(),appealsById=new Map();
     for(const row of decisions||[])byId.set(row.store_id,row);
     for(const row of evidence||[]){
       if(!evidenceById.has(row.store_id))evidenceById.set(row.store_id,[]);
       evidenceById.get(row.store_id).push(row);
     }
+    for(const row of appeals||[]){
+      if(!appealsById.has(row.store_id))appealsById.set(row.store_id,[]);
+      appealsById.get(row.store_id).push(row);
+    }
     return items.map(item=>{
       const merchantDomain=new URL(item.source_url).hostname;
-      const reviewed=reviewedQualityStar(byId.get(item.id),evidenceById.get(item.id)||[],merchantDomain);
+      const reviewed=reviewedQualityStar(byId.get(item.id),evidenceById.get(item.id)||[],merchantDomain,new Date(),appealsById.get(item.id)||[]);
       return reviewed?{...item,quality_star:reviewed.star,quality_sources:reviewed.sources,
         quality_reviewed_at:reviewed.reviewed_at,quality_disclosure:reviewed.disclosure}:item;
     });
