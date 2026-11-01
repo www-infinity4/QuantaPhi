@@ -99,6 +99,6 @@ test('an in-flight GitHub request never disappears silently when the receipt rem
  ctx.watchDirectGithubReceipt('fixture-unconfirmed-receipt',{action:'assist',mode:'write',repository:'www-infinity4/QuantaPhi'},'Fix Bubbles');
  const answer=await Promise.race([shown,new Promise((_,reject)=>setTimeout(()=>reject(Error('silent_github_receipt_timeout')),1500))]);
  assert.equal(reads,120);
- assert.match(answer,/no final receipt|could not verify|unconfirmed/i);
+ assert.match(answer,/not returned a final receipt|could not verify|unconfirmed/i);
  assert.doesNotMatch(answer,/work finished|deployed successfully|completion verified/i);
 });
