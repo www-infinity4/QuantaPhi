@@ -111,7 +111,7 @@ test('Colorado shard batch must be complete, one release, duplicate-free and unt
  assert.throws(()=>validateColoradoShardBatch([{...shards[0],truncated:true},...shards.slice(1)]),/invalid_colorado_shard/);
  assert.throws(()=>validateColoradoShardBatch([...shards.slice(0,3),{...shards[3],generated_at:undefined}]),/invalid_colorado_shard/);
  assert.throws(()=>validateColoradoShardBatch([{...shards[0],dataset_version:'2026-11-01.0'},...shards.slice(1)]),/mixed_colorado_release/);
- assert.throws(()=>validateColoradoShardBatch([{...shards[0],items:[...shards[0].items.slice(0,5),shards[1].items[0]]},...shards.slice(1)]),/invalid_colorado_record/);
+ assert.throws(()=>validateColoradoShardBatch([{...shards[0],items:[...shards[0].items.slice(0,5),{...shards[0].items[5],id:shards[1].items[0].id}]},...shards.slice(1)]),/invalid_colorado_record/);
  assert.throws(()=>validateColoradoShardBatch([{...shards[0],closed_ids:[shards[1].items[0].id]},...shards.slice(1)]),/conflicting_colorado_closure/);
 });
 test('Cloudflare Cron refuses a partial four-region upload before any D1 write',async()=>{
