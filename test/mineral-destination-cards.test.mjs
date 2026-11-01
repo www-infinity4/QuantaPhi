@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {MINERAL_DESTINATIONS,validMineralDestination,officialMapsUrl,imageAltForMineralDestination} from '../mineral-destination-cards.mjs';
+import {MINERAL_DESTINATIONS,validMineralDestination,officialMapsUrl,imageAltForMineralDestination,destinationActions} from '../mineral-destination-cards.mjs';
 
 test('six individually registered mining and mineral Quick Cards use real official sites',()=>{
  const ids=['crater-of-diamonds','national-mining-hall-of-fame','gem-mountain-montana','western-mining-museum','last-chance-mine','mines-museum-earth-science'];
@@ -57,4 +57,15 @@ test('illustrative mineral photos do not claim unverified mine provenance',()=>{
  const chance=MINERAL_DESTINATIONS.find(x=>x.id==='last-chance-mine');
  assert.equal(chance.image.file,'Quartz-258682.jpg');
  assert.equal(imageAltForMineralDestination(chance),'Quartz specimen photograph; not verified as originating at Last Chance Mine');
+});
+
+test('missing or null action lists keep destination Directions link renderable',()=>{
+ const base=MINERAL_DESTINATIONS[0];
+ for(const actions of [undefined,null]){
+  const item={...base,actions};
+  assert.equal(validMineralDestination(item),true);
+  assert.deepEqual(destinationActions(item),[]);
+  assert.match(officialMapsUrl(item),/^https:\/\/www\.google\.com\/maps\/search\//);
+ }
+ assert.deepEqual(destinationActions(base),base.actions);
 });
