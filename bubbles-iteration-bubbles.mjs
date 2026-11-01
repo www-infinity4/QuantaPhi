@@ -97,7 +97,7 @@ export function mountBubbleIterations({launcher,panel,status,chatScroll,conversa
  const bitRecent=create('div','ba-bits-recent');
  bitPanel.append(bitHeading,bitCount,bitNote,bitRecent);
  // Keep activity in the thread's scroll budget, never in the height-limited composer.
- box.append(title,buttons,details,bitPanel);chatScroll.insertBefore(box,conversation);
+ box.append(title,buttons,details,bitPanel);chatScroll.insertBefore(box,conversation.nextSibling);
  function render(){
   for(const role of BUBBLE_ROLES){
    const button=nodes.get(role.id),item=state[role.id];
