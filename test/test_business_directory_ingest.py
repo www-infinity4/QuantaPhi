@@ -47,6 +47,7 @@ class BusinessIngestTests(unittest.TestCase):
         self.assertIsNone(ingest.business_from_feature(
             feature(sources=[{'dataset':'unknown','license':'restricted-proprietary'}]),'Denver','CO'))
         self.assertIsNone(ingest.business_from_feature(feature(sources=[]),'Denver','CO'))
+        self.assertIsNone(ingest.business_from_feature(feature(sources=[{'license': []}]),'Denver','CO'))
 
     def test_geojsonseq_may_contain_separator_and_feature_collection(self):
         with tempfile.TemporaryDirectory() as tmp:
