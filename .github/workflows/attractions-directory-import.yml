@@ -6,6 +6,8 @@ on:
     paths:
       - 'scripts/attractions-import.py'
       - 'test/test_attractions_import.py'
+      - 'scripts/attractions-batch-validate.py'
+      - 'test/test_attractions_batch_validate.py'
       - '.github/workflows/attractions-directory-import.yml'
   schedule:
     - cron: '15 9 * * 2'
@@ -25,7 +27,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Check normalization and provenance
-        run: python -m unittest discover -s test -p test_attractions_import.py -v
+        run: |
+          python -m unittest discover -s test -p test_attractions_import.py -v
+          python -m unittest discover -s test -p test_attractions_batch_validate.py -v
       - name: Install official Overture Places downloader
         run: python -m pip install --disable-pip-version-check overturemaps==1.0.2
       - name: Download Colorado's four regions
@@ -53,21 +57,8 @@ jobs:
           sw -109.060,36.990,-105.550,39.000
           se -105.550,36.990,-102.040,39.000
           TILES
-      - name: Validate provenance, images and bounded import size
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          total=0
-          for file in sorted(Path('data/attractions').glob('co-overture-*.json')):
-              d=json.loads(file.read_text())
-              assert d['state']=='CO' and d['source_name']=='Overture Maps'
-              assert all(r['license']=='CDLA-Permissive-2.0' and r['source_url']=='https://overturemaps.org/' for r in d['items'])
-              assert all(not r['image_url'] for r in d['items'])
-              print(file.name, 'eligible:',d['eligible_count'], 'stored:',len(d['items']), 'truncated:',d['truncated'])
-              total+=len(d['items'])
-          assert total>=24, 'Too few source-backed attractions to submit the batch'
-          PY
+      - name: Reject duplicate, mixed-release or truncated four-region candidates
+        run: python scripts/attractions-batch-validate.py data/attractions/co-overture-{nw,ne,sw,se}.json
       - name: Propose data-only PR for review, never auto-publish
         env:
           GH_TOKEN: ${{ github.token }}
