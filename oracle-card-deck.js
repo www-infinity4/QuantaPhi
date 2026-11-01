@@ -46,6 +46,7 @@ const choices=[
  ['businessDirectoryCard','National Business Directory · Explore'],
  ['shopAdPhi','Discover products'],
  ['infinityAdultContentCard','21+ content preferences'],
+ ['cannabisDirectoryCard','21+ · National dispensary source directory'],
  ['dispensary-livwell-colorado','21+ · LivWell · Colorado Boulevard'],
  ['dispensary-livwell-central','21+ · LivWell · Central Park'],
  ['dispensary-native-roots-speer','21+ · Native Roots · Speer Boulevard'],
@@ -384,9 +385,11 @@ function returnActive(){
  delete stage.dataset.switchboardCategory;delete stage.dataset.switchboardTab;
  window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:null}));
 }
+// Organic 21+ directory browsing must not become persistent engagement profiling.
+function nonProfiling(entry){return entry?.id==='cannabisDirectoryCard'||entry?.node?.dataset.personalization==='disabled'}
 function show(entry,remember=true){
  if(!entry||expanded||entry===active)return;
- if(remember&&active)visited.push(active.id);
+ if(remember&&active&&!nonProfiling(active))visited.push(active.id);
  if(visited.length>45)visited.shift();
  returnActive();
  // Preserve exactly one original node and every listener, media control and data store.
@@ -401,10 +404,10 @@ function show(entry,remember=true){
   id:entry.feedId,title:entry.title,category:entry.category,tab:selectedTab
  }}));
  entry.node.dispatchEvent(new Event('oracle:activate'));
- void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
+ if(!nonProfiling(entry))void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // Every original Oracle widget receives the same five real actions.
  // Source cards already own the toolbar inside mountCardTools.
- if(!entry.id.startsWith('source-')&&entry.id!=='coliseumZeusCard'){
+ if(!nonProfiling(entry)&&!entry.id.startsWith('source-')&&entry.id!=='coliseumZeusCard'){
   const displayed=entry;
   import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
    if(active!==displayed||!stage.contains(displayed.node)||displayed.node.querySelector('.qca-toolbar'))return;
@@ -417,10 +420,12 @@ function show(entry,remember=true){
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
- entry.count=Math.min(1000,entry.count+1);counts[entry.id]=entry.count;
- try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
- if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
- seenByTab[selectedTab].add(entry.feedId);
+ if(!nonProfiling(entry)){
+  entry.count=Math.min(1000,entry.count+1);counts[entry.id]=entry.count;
+  try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
+  if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
+  seenByTab[selectedTab].add(entry.feedId);
+ }
  now.textContent=entry.title;updateTabs();predict();
  status.textContent='Live interactive card · '+entry.title+
   '. '+(selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
@@ -488,6 +493,34 @@ for(const button of host.querySelectorAll('[data-oracle-family]')){
   show(chosen);host.scrollIntoView?.({block:'start',behavior:'smooth'});
  });
 }
+// A deliberate short downward gesture from the restored Android header should
+// settle on the deck, even when Chromium's proximity snap threshold is too
+// small for the gap above the carousel. Do not intercept, preventDefault, or
+// modify scrolling when the user is already browsing below the top.
+let topGestureTimer=0;
+function settleTopGesture(deltaY,startedAtTop){
+ if(!startedAtTop||deltaY<85||expanded||
+    !window.matchMedia?.('(max-width: 650px) and (pointer: coarse)')?.matches)return;
+ const distance=host.getBoundingClientRect().top;
+ if(distance<100||distance>1200)return;
+ clearTimeout(topGestureTimer);
+ topGestureTimer=setTimeout(()=>{
+  if(expanded||window.scrollY<20||window.scrollY>1200)return;
+  const top=host.getBoundingClientRect().top;
+  if(top>45&&top<700)host.scrollIntoView?.({block:'start',behavior:'smooth'});
+ },160);
+}
+window.addEventListener('wheel',e=>settleTopGesture(e.deltaY,window.scrollY<35),{passive:true});
+let touchStartY=0,touchStartedAtTop=false;
+window.addEventListener('touchstart',e=>{
+ touchStartedAtTop=window.scrollY<35;
+ touchStartY=e.touches?.[0]?.clientY??0;
+},{passive:true});
+window.addEventListener('touchend',e=>{
+ const endY=e.changedTouches?.[0]?.clientY??touchStartY;
+ settleTopGesture(touchStartY-endY,touchStartedAtTop);
+ touchStartedAtTop=false;
+},{passive:true});
 // Move the viewport only after a user changes cards, not when the deck
 // rotates automatically. Scroll to the deck (with arrows visible), not into
 // a tall card that could hide navigation above the phone viewport.
@@ -532,7 +565,7 @@ scroll.addEventListener('click',()=>{
 host.addEventListener('pointerdown',()=>{viewerTouched=true},{capture:true,passive:true});
 host.addEventListener('keydown',()=>{viewerTouched=true},true);
 host.addEventListener('click',e=>{
- if(!active||!stage.contains(e.target)||!e.target.closest?.('button,a,[role="button"],input[type="submit"]'))return;
+ if(!active||nonProfiling(active)||!stage.contains(e.target)||!e.target.closest?.('button,a,[role="button"],input[type="submit"]'))return;
  viewerTouched=true;
  counts[active.id]=Math.min(1000,(counts[active.id]||0)+1);
  if(directionApi&&feedState){

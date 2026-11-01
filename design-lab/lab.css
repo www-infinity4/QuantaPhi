@@ -47,3 +47,12 @@
 .co-op-form input:focus-visible,.co-op-form select:focus-visible,.co-op-form button:focus-visible,.co-op-advance:focus-visible{outline:3px solid #236c99;outline-offset:2px}
 @media(max-width:620px){.lab-cooperative{padding:47px 16px}.co-op-form{padding:13px;gap:9px}}
 @media(max-width:360px){.co-op-form{grid-template-columns:1fr}.co-op-form button{width:100%}}
+
+/* 2026-11-01 Android regression: the bulk allocator is intentionally
+ * horizontally scrollable inside its own wrapper, but decorative 3-D
+ * orbit transforms must not widen the entire document by 8-9 pixels. */
+@media(max-width:620px){
+ html,body{max-width:100%;overflow-x:clip}
+ .bulk-table-scroll{width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+ .lab-hero{overflow-x:clip}
+}
