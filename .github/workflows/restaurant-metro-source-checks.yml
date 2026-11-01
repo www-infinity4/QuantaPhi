@@ -1,0 +1,30 @@
+name: Restaurant metro source and Quick Card checks
+on:
+  pull_request:
+    paths:
+      - 'scripts/restaurant-directory-import.py'
+      - 'data/restaurants/city-manifest.json'
+      - '.github/workflows/restaurant-directory-import.yml'
+      - 'restaurant-directory.mjs'
+      - 'test/test_restaurant_directory_import.py'
+      - 'test/restaurant-directory.test.mjs'
+      - '.github/workflows/restaurant-metro-source-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  metro-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Overture city manifest and importer boundaries
+        run: python -m unittest discover -s test -p test_restaurant_directory_import.py -v
+      - name: Verify data-backed Oracle restaurant card and safe pagination
+        run: node --test test/restaurant-directory.test.mjs
