@@ -13,4 +13,15 @@ test('Google and CNN source hero images are compact only in the Oracle viewer on
  assert.match(css,/\.qcx-google-wordmark/);
  assert.doesNotMatch(css,/display:none/);
  assert.doesNotMatch(css,/\.qca-controls/);
+ // Every selector that changes a source-art element must be restricted to
+ // the Oracle stage and exactly the Google/CNN brand; never affect other cards.
+ const selectors=[...css.matchAll(/([^{}]+)\{/g)]
+  .flatMap(m=>m[1].split(',').map(s=>s.trim()))
+  .filter(s=>s.includes('.qcx-art'));
+ assert.ok(selectors.length>=8);
+ for(const selector of selectors){
+  assert.ok(selector.startsWith('body.oracle-quanta .oracle-card-deck-stage>article.iqc-card '),selector);
+  assert.match(selector,/\.qcx-art\[data-brand="(?:google|cnn)"\]/);
+  assert.doesNotMatch(selector,/\[data-brand="(?:facebook|youtube|ebay)"\]/);
+ }
 });
