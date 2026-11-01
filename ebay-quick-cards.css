@@ -1,0 +1,84 @@
+/* Infinity-branded, image-first eBay listing carousel/grid.
+ * Independent of ShopPhi seller forms and safely mobile accessible. */
+#ebayQuickCards{margin:18px 0;padding:clamp(13px,3vw,24px);border-radius:22px;
+ border:1px solid #d6e1eb;background:#fff;color:#183147;
+ box-shadow:0 8px 25px #17334d14;font:15px/1.45 system-ui,sans-serif}
+#ebayQuickCards [hidden]{display:none!important}
+#ebayQuickCards .eqc-header small{color:#225c85;font-size:11px;font-weight:900;letter-spacing:.07em}
+#ebayQuickCards h2{font-size:clamp(23px,5vw,32px);margin:7px 0;color:#17344b;line-height:1.15}
+#ebayQuickCards p{margin:8px 0 13px}
+#ebayQuickCards .eqc-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:14px 0}
+#ebayQuickCards .eqc-modes{display:flex;flex-wrap:wrap;gap:8px}
+#ebayQuickCards :is(button,select,input,.eqc-original,.eqc-item-actions a){box-sizing:border-box;border:1px solid #b9cbd9;
+ border-radius:13px;min-height:46px;padding:10px 13px;font:700 14px system-ui,sans-serif;
+ background:white;color:#17436a;max-width:100%;text-decoration:none}
+#ebayQuickCards button{cursor:pointer}
+#ebayQuickCards button:disabled{opacity:.55;cursor:not-allowed}
+#ebayQuickCards :is(button,a,input,select):focus-visible{outline:3px solid #157bb6;outline-offset:3px}
+#ebayQuickCards .eqc-selected,#ebayQuickCards .eqc-search button,
+#ebayQuickCards .eqc-item-actions a{background:#3665f3;color:white;border-color:#3665f3}
+#ebayQuickCards .eqc-search{display:flex;gap:7px;min-width:0;flex:1 1 270px}
+#ebayQuickCards .eqc-search input{min-width:0;flex:1;font-weight:500;font-size:16px}
+#ebayQuickCards select{flex:1 1 165px}
+#ebayQuickCards .eqc-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px}
+#ebayQuickCards .eqc-note{font-size:12px;color:#4e687d;flex:1 1 240px}
+#ebayQuickCards .eqc-original{display:inline-flex;align-items:center;background:#f1f7fb}
+#ebayQuickCards .eqc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px;margin:14px 0}
+#ebayQuickCards .eqc-listing{display:flex;flex-direction:column;min-width:0;overflow:hidden;
+ border:1px solid #d7e0e9;border-radius:17px;background:#fff;box-shadow:0 3px 12px #15304612}
+#ebayQuickCards .eqc-art{height:195px;display:flex;align-items:center;justify-content:center;background:#f6f8fb}
+#ebayQuickCards .eqc-art img{display:block;width:100%;height:100%;object-fit:contain}
+#ebayQuickCards .eqc-placeholder{padding:15px;color:#59748b;text-align:center;font-size:12px}
+#ebayQuickCards .eqc-body{display:flex;flex-direction:column;gap:9px;padding:13px;flex:1}
+#ebayQuickCards .eqc-tag{font-size:10px;letter-spacing:.055em;color:#315c7a;font-weight:900}
+#ebayQuickCards h3{font-size:16px;line-height:1.3;margin:0;overflow-wrap:anywhere}
+#ebayQuickCards h3 a{color:#173b55;text-decoration:none}
+#ebayQuickCards .eqc-price{font-size:20px;color:#9b3031}
+#ebayQuickCards .eqc-meta{display:grid;gap:3px;color:#576879;font-size:12px}
+#ebayQuickCards .eqc-item-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+#ebayQuickCards .eqc-item-actions :is(a,button){flex:1 1 100px;display:flex;justify-content:center;align-items:center;text-align:center;min-height:48px}
+#ebayQuickCards .eqc-paging{display:flex;align-items:center;justify-content:center;gap:13px;flex-wrap:wrap;margin:16px 0}
+#ebayQuickCards .eqc-trends{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:13px;
+ background:#f5f8fb;border-radius:14px}
+#ebayQuickCards .eqc-trends strong{flex-basis:100%;font-size:13px}
+#ebayQuickCards .eqc-trends a{font-size:13px;color:#1a5b85}
+#ebayQuickCards .eqc-trends button{font-size:12px;min-height:38px}
+#ebayQuickCards .eqc-disclaimer{font-size:12px;color:#566f80;margin:12px 0 0}
+@media(max-width:540px){#ebayQuickCards .eqc-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ #ebayQuickCards .eqc-art{height:145px}#ebayQuickCards .eqc-body{padding:10px}
+ #ebayQuickCards .eqc-item-actions :is(button,a){font-size:12px;padding:8px}
+ #ebayQuickCards h3{font-size:14px}#ebayQuickCards .eqc-price{font-size:17px}}
+@media(max-width:370px){#ebayQuickCards .eqc-grid{grid-template-columns:1fr}#ebayQuickCards .eqc-art{height:210px}}
+
+/* Account and auctions are one native card interface. A blue Search button is
+ * intentionally distinct from quiet, neutral account/navigation controls. */
+#ebayQuickCards .eqc-public-controls{display:flex;flex:1 1 280px;flex-wrap:wrap;align-items:center;gap:10px;min-width:0}
+#ebayQuickCards .eqc-public-controls[hidden]{display:none!important}
+#ebayQuickCards .eqc-modes{width:100%;gap:8px}
+#ebayQuickCards .eqc-modes button{flex:1 1 98px;min-width:0}
+#ebayQuickCards .eqc-search button{min-width:92px;border-radius:24px;background:#3665f3;color:#fff;font-weight:850}
+#ebayQuickCards .eqc-search input{border-radius:24px}
+#ebayQuickCards .eqc-item-actions .eqc-buy-now{background:#3665f3;border-color:#3665f3;color:#fff}
+#ebayQuickCards .eqc-my-ebay{margin:14px 0;padding:16px;border:1px solid #d6e1eb;border-radius:16px;background:#fbfdff}
+#ebayQuickCards .eqc-my-ebay[hidden]{display:none!important}
+#ebayQuickCards .eqc-my-ebay h3{font-size:21px;margin:0 0 8px}
+#ebayQuickCards .eqc-account-state{color:#465b71;font-size:13px}
+#ebayQuickCards .eqc-account-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:14px 0}
+#ebayQuickCards .eqc-account-tabs button{min-width:0;padding:10px 4px;font-size:12px}
+#ebayQuickCards .eqc-account-content{display:grid;justify-items:start;gap:9px}
+#ebayQuickCards .eqc-account-content p{margin:0}
+#ebayQuickCards .eqc-account-open{display:inline-flex;justify-content:center;align-items:center;min-height:46px;padding:10px 15px;border-radius:12px;background:#3665f3;color:#fff;text-decoration:none;font-weight:750}
+#ebayQuickCards .eqc-bid-panel{display:grid;gap:8px;padding:10px;border:1px solid #e0e7f5;border-radius:12px;background:#f8faff}
+#ebayQuickCards .eqc-bid-panel label{font-size:12px;font-weight:750;display:grid;gap:5px}
+#ebayQuickCards .eqc-bid-panel input{font-size:16px;width:100%;min-width:0}
+#ebayQuickCards .eqc-bid-review{min-height:44px;background:#fff;color:#21466e;font-weight:850}
+#ebayQuickCards .eqc-bid-panel .eqc-bid-note{margin:0;font-size:12px;color:#4d6178;line-height:1.5}
+#ebayQuickCards .eqc-bid-continue{display:flex;align-items:center;justify-content:center;text-align:center;min-height:46px;padding:10px;border-radius:12px;background:#3665f3;color:#fff;text-decoration:none;font-weight:850}
+#ebayQuickCards .eqc-bid-continue[hidden]{display:none!important}
+@media(max-width:540px){
+ #ebayQuickCards .eqc-account-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #ebayQuickCards .eqc-public-controls{flex-basis:100%}
+ #ebayQuickCards .eqc-search{flex-basis:100%}
+ #ebayQuickCards .eqc-modes button{font-size:13px;padding:9px 5px}
+ #ebayQuickCards .eqc-bid-panel{padding:9px}
+}
