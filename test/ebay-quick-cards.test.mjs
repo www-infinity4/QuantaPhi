@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {EBAY_TOPICS,EBAY_REPORTED_TRENDS,EBAY_TREND_SOURCE,
  ebayQuantCards,preferredEbayTopics,ebaySearchUrl,safeEbayListingUrl,
- safeEbayImageUrl,normalizeEbayItem,normalizeEbayFeed} from '../ebay-quick-cards-core.mjs';
+ safeEbayImageUrl,normalizeEbayItem,normalizeEbayFeed,ebayBidDraft,ebayAccountViews} from '../ebay-quick-cards-core.mjs';
 import {ebayQuickCardsAPI} from '../workers/quantaphi-site/ebay-api.mjs';
 const sample={
  itemId:'v1|123|0',itemWebUrl:'https://www.ebay.com/itm/176734829110?var=1',
@@ -94,4 +94,40 @@ test('homepage and edge references are wired to the same endpoint and no private
  assert.match(app,/fetchLiveSourceResults/);
  assert.match(app,/Open eBay to bid/);
  assert.doesNotMatch(app,/placeProxyBid|place_proxy_bid|EBAY_CLIENT_SECRET/);
+});
+
+test('bid review uses verified seller currency and never claims an offsite bid is placed',()=>{
+ const item=normalizeEbayItem(sample,'auction');
+ assert.equal(item.canBid,true);
+ assert.equal(item.bidCurrency,'USD');
+ assert.equal(item.currentBidValue,72.5);
+ assert.equal(ebayBidDraft(item,'74.00').ok,true);
+ assert.equal(ebayBidDraft(item,'72.50').ok,false);
+ assert.equal(ebayBidDraft(item,'not a price').ok,false);
+ assert.equal(ebayBidDraft(item,'10000000000').ok,false);
+ assert.equal(ebayBidDraft(item,'74.009').ok,false);
+ assert.equal(ebayBidDraft(item,'74.00').step,'provider_handoff');
+ const intl=normalizeEbayItem({...sample,currentBidPrice:{currency:'GBP',value:'40.00'}},'auction');
+ assert.equal(ebayBidDraft(intl,'41.00').ok,false,'No local max bid review for unsupported region');
+});
+test('buy now is offered on auctions only when eBay reports FIXED_PRICE as still available',()=>{
+ const mixed=normalizeEbayItem({...sample,buyingOptions:['AUCTION','FIXED_PRICE'],price:{currency:'USD',value:'159.00'}},'auction');
+ assert.equal(mixed.canBuyNow,true);
+ assert.equal(mixed.canBid,true);
+ assert.equal(mixed.buyNowPrice,'$159.00');
+ assert.equal(normalizeEbayItem(sample,'auction').canBuyNow,false);
+ assert.equal(normalizeEbayItem({...sample,buyingOptions:['FIXED_PRICE'],price:{currency:'USD',value:'21.00'}},'buy').canBuyNow,true);
+});
+test('My eBay navigation is an account-shaped UI, not a fabricated authenticated session',()=>{
+ assert.deepEqual(ebayAccountViews.map(x=>x.id),['buying','bidding','selling','purchases']);
+ const app=read('ebay-quick-cards.mjs'),css=read('ebay-quick-cards.css');
+ for(const text of ['My eBay','Buying','Bidding','Selling','Purchases','Maximum bid','Continue on eBay'])assert.ok(app.includes(text),text);
+ assert.match(app,/eqc-my-ebay/);
+ assert.match(app,/eqc-bid-review/);
+ assert.match(app,/Not connected/);
+ assert.match(app,/Get eBay account permission/);
+ assert.match(css,/\.eqc-search button/);
+ assert.match(css,/#3665f3/);
+ assert.match(css,/eqc-my-ebay/);
+ assert.doesNotMatch(app,/place_proxy_bid|placeProxyBid|collectPassword|EBAY_CLIENT_SECRET/);
 });
