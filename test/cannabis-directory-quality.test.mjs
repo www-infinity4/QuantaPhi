@@ -68,3 +68,34 @@ test('Worker exposes no ★ if quality tables are unavailable, without hiding or
  assert.equal(body.items[0].sponsored,false);
  assert.equal(body.items[0].verified_age,false);
 });
+
+test('Worker only exposes corroborated ★ with source receipts and suppresses pending appeals',async()=>{
+ const t=new Date();
+ const recent=new Date(t.getTime()-86400000).toISOString();
+ const expiry=new Date(t.getTime()+30*86400000).toISOString();
+ const record={id:'synthetic',name:'Synthetic Source',store:'Test Location',city:'Testville',
+  state:'CO',address:'123 Example Road',source_url:'https://merchant.example/location',
+  source_domain:'merchant.example',source_name:'Synthetic merchant',verified_at:recent,
+  record_status:'listed',paid_sponsor:0,license_status:'unverified'};
+ const makeEnv=(pending)=>({DIRECTORY:{prepare(sql){
+  const q={bind(){return q;},async all(){
+   if(sql.includes('FROM store_sources'))return {results:[record]};
+   if(sql.includes('FROM store_quality_decisions'))return {results:[{
+    ...decision,reviewed_at:recent,expires_at:expiry}]};
+   if(sql.includes('FROM store_quality_evidence'))return {results:evidence.map(e=>({
+    ...e,observed_at:recent,reviewed_at:recent}))};
+   if(sql.includes('FROM store_quality_appeals'))return {results:pending?[{store_id:'synthetic',status:'pending'}]:[]};
+   return {results:[]};
+  },async first(){return {adult_use:'unreviewed',medical_program:null}}};
+  return q;
+ }}}});
+ const request=()=>new Request('https://quantaphi.org/api/21-directory/stores?state=CO',{
+  headers:{'X-Visitor-21-Acknowledged':'true'}});
+ const approved=await (await worker.fetch(request(),makeEnv(false))).json();
+ assert.equal(approved.items[0].quality_star,'★');
+ assert.equal(approved.items[0].quality_sources.length,2);
+ assert.equal(approved.items[0].customer_rating,null);
+ const contested=await (await worker.fetch(request(),makeEnv(true))).json();
+ assert.equal(contested.items[0].quality_star,null);
+ assert.deepEqual(contested.items[0].quality_sources,[]);
+});
