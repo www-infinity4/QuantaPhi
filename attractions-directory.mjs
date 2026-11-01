@@ -66,7 +66,7 @@ function mount(){
   body.append(art,info);
  };
  function display(){
-  record();prev.disabled=busy||(page===0&&index===0);next.disabled=busy||(!more&&index===items.length-1);
+  record();prev.disabled=busy||(page===0&&index===0);next.disabled=busy||items.length===0||(!more&&index>=items.length-1);
   pos.textContent=items.length?'Attraction '+(page*24+index+1)+' · '+stateName(state):'No verified matches';
  }
  async function load(p=0){
