@@ -1922,6 +1922,7 @@ async function openConversation(id){
  pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
  input.value='';
  activeThread=id;
+ if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'session_changed'}}));
  try{
   sessionStorage.setItem(TAB_THREAD,id);
   sessionStorage.setItem(EXPLICIT_THREAD,id===SHARED_MAIN_THREAD?'0':'1');
@@ -1973,6 +1974,7 @@ function startConversation({automatic=false}={}){
  threadIndex=nextIndex;
  pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
  activeThread=nextThread;
+ if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'session_changed'}}));
  try{
   sessionStorage.setItem(TAB_THREAD,activeThread);
   sessionStorage.setItem(EXPLICIT_THREAD,'1');
@@ -2301,6 +2303,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ // A new turn begins without granting credits; Personal Context must verify first.
+ if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_started'}}));
  const aiConsult=/^(?:bubbles[, ]+)?ask (gemini then claude|gemini|claude)\s*:\s*([\s\S]{3,2400})$/i.exec(spoken);
  if(aiConsult){
   clearSentComposer();
@@ -3237,7 +3241,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    conversation.append(row);
   }
   if(json.receipt){
-   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status}}));
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+    type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status,receiptId:json.receipt.id
+   }}));
    status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
   }
   if(nativeOverlay){
