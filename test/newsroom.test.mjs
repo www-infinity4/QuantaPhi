@@ -74,7 +74,7 @@ test('rotation controls are stable keyboard buttons with a pause and resume acti
  const js=read('newsroom/live.mjs');
  assert.match(html,/<button[^>]+id="fresh-next"/);
  assert.match(html,/<button[^>]+id="fresh-pause"[^>]+aria-pressed="false"/);
- assert.match(js,/pauseButton\.addEventListener\('click'/);
- assert.match(js,/nextButton\.addEventListener\('click'/);
+ assert.match(js,/pauseButton\?\.addEventListener\('click'/);
+ assert.match(js,/nextButton\?\.addEventListener\('click'/);
  assert.doesNotMatch(js,/document\.createElement\('button'\)/);
 });
