@@ -18,7 +18,10 @@ export function verifyVerdict(data,now=Date.now()){
 }
 export function allowJurisdiction(row,now=Date.now()){
  const at=Date.parse(row?.reviewed_at);
- return row?.enabled===1&&Number.isFinite(at)&&at<=now&&now-at<=30*DAY;
+ return row?.enabled===1&&typeof row.reviewer==='string'&&row.reviewer.trim().length>2
+  &&typeof row.audience_evidence==='string'&&row.audience_evidence.trim().length>8
+  &&typeof row.legal_evidence==='string'&&row.legal_evidence.trim().length>8
+  &&Number.isFinite(at)&&at<=now&&now-at<=30*DAY;
 }
 export function allowCreative(row,jurisdiction,now=Date.now()){
  if(!row||row.approved!==1||row.rights_cleared!==1||!validJurisdiction(jurisdiction))return null;
@@ -95,7 +98,7 @@ export default {
    ).bind(user_key,'cannabis').first();
    if(consent?.enabled!==1)return deny('explicit_consent_required',403);
    const jurisdiction=await env.ADS_DB.prepare(
-    'SELECT enabled,reviewed_at FROM restricted_ad_jurisdictions WHERE jurisdiction=? AND category=?'
+    'SELECT enabled,reviewed_at,reviewer,audience_evidence,legal_evidence FROM restricted_ad_jurisdictions WHERE jurisdiction=? AND category=?'
    ).bind(verified.jurisdiction,'cannabis').first();
    if(!allowJurisdiction(jurisdiction))return deny('jurisdiction_not_approved',403);
    const {results}=await env.ADS_DB.prepare(
