@@ -1,6 +1,6 @@
 # QuantaPhi business partner outreach — verified routes and owner-review drafts
 
-**Snapshot:** November 1, 2026. Source: official public provider pages, not inferred personal addresses. **Nothing has been sent, submitted, agreed, signed, or funded.** Canonical work tickets: [#1312](https://github.com/www-infinity4/QuantaPhi/issues/1312)–[#1317](https://github.com/www-infinity4/QuantaPhi/issues/1317). Related [#1282](https://github.com/www-infinity4/QuantaPhi/issues/1282) reusable developer kit and [#1309](https://github.com/www-infinity4/QuantaPhi/issues/1309) Integra routing.
+**Snapshot:** November 1, 2026. Source: official public provider pages, not inferred personal addresses. **Campaign update:** Two individually tailored official-contact inquiries were sent from the previously established QuantaPhi partner-outreach Gmail account: TinyFish and AWWG/Pepe Jeans. No application approved, funding received, partner license signed or API grant verified. Exact private Gmail send receipts stay in the sending mailbox and are not copied to public GitHub. Canonical work tickets: [#1312](https://github.com/www-infinity4/QuantaPhi/issues/1312)–[#1317](https://github.com/www-infinity4/QuantaPhi/issues/1317). Related [#1282](https://github.com/www-infinity4/QuantaPhi/issues/1282) reusable developer kit and [#1309](https://github.com/www-infinity4/QuantaPhi/issues/1309) Integra routing.
 
 ## First-source contact and developer matrix
 
@@ -13,7 +13,8 @@
 | 5 | Cloudflare Technology Partners | https://www.cloudflare.com/partners/technology-partners/ · https://developers.cloudflare.com/tenant/get-started/ | Official technology-partner application, tenant/agency provisioned API capabilities, isolation, no global partner root credentials | Tenant entitlements need signed partner agreement; no partner status claimed |
 | 6 | eBay Developers Program | https://developer.ebay.com/signin?tab=register · https://developer.ebay.com/support/developer-technical-support | Verified free developer tier, sanctioned product catalog and Buy/Sell APIs, approved native search/BIN/bid/listing flows, seller-controlled account links | Developer signup separate from eBay member login; premium support may require activation and eligibility |
 | 7 | YouTube / Google | https://developers.google.com/youtube/v3 · https://developers.google.com/identity/protocols/oauth2 | Permitted search/media, official OAuth, source attribution, YouTube quota and approved link/embed rather than re-host | No account-specific API entitlement or third-party video usage right verified |
-| 8 | Original website/media/retail partners | Only named company's official developer/press/partnership contact, once verified | Real catalog/price/media and asset licenses; native user-approved buy, bid, booking; partner-owned GitHub and Cloudflare setup optional | No address/relationship invented; research each business independently before drafting |
+| 8 | AWWG / Pepe Jeans | Official https://www.awwg.com/ and corporate contact `corporateweb@awwg.com` (website inquiries) | Source-approved product imagery, catalog/variant/offer feed, mobile layout and optional scoped Bubbles/GitHub/Cloudflare collaboration | **Individual partner/website inquiry sent**, response not yet verified; no endorsement or license implied |
+| 9 | Original website/media/retail partners | Only named company's official developer/press/partnership contact, once verified | Real catalog/price/media and asset licenses; native user-approved buy, bid, booking; partner-owned GitHub and Cloudflare setup optional | No address/relationship invented; research each business independently before drafting |
 
 **Funding differentiation:** TinyFish referrals are *credits* and approved Bounties are generally *gift cards*, not assured advertising cash. X [Original Content Rewards](https://help.x.com/en/using-x/original-content-rewards) are conditional on eligible original content; creator monetization is **not** the same as licensing tweets to QuantaPhi or buying ad space here. OpenAI [startup credits](https://openai.com/startups) are subject to partner/eligibility requirements. A sponsor can compensate QuantaPhi only through a separate signed ad/co-marketing deal.
 
@@ -23,10 +24,10 @@ Request the applicable official SDK/API, developer programme registration, OAuth
 
 A partner may connect **its own** Bubbles business tenant, select specific GitHub repositories and Cloudflare zones for delegated read access, and separately approve a PR/deployment. They can alternatively provide a screened export or API feed. Do **not** ask them to share passwords, globally transfer administrator access, upload private customer datasets, or hand over control of a provider's main website. Every change needs a preview, consent, rollback and verifiable receipt. QuantaPhi's Quant feed and sponsored cards rank/display first-party content; they do not take control of Facebook/X/ChatGPT ranking or their protected content.
 
-## Five unsent outreach versions
+## Five original outreach templates and current sending ledger
 
 ### TinyFish — funding, build bounty and paid placement inquiry
-To: `community@tinyfish.ai` **(publicly listed, not yet sent)**
+To: `community@tinyfish.ai` **(publicly listed; a revised, expanded individually tailored message has now been sent)**
 
 Subject: QuantaPhi x TinyFish — Ambassador build, bounty and developer-credit partnership
 
@@ -105,6 +106,11 @@ QuantaPhi business partnerships
 
 ## Controlled send and tracking
 
-The first batch is **draft-only**, with a maximum 5–10 verified provider contacts. Check correct sender identity, sender-domain authentication and applicable commercial-email obligations; add real postal identity and opt-out where required, avoiding invented addresses. Use a company-specific subject/body and verify the intended department. Obtain owner approval of exact recipients and text before sending. On receipt, log message ID, send status, provider response, approved API endpoints/scopes, costs, contract and any actual grants. Do not treat silence as permission.
+Two individually targeted emails have been sent: TinyFish at `community@tinyfish.ai` and AWWG/Pepe Jeans at `corporateweb@awwg.com`. The remaining larger commercial mailing batch is **draft-only**, with a maximum 5–10 newly verified contacts at a time. Check correct sender identity, sender-domain authentication and applicable commercial-email obligations; add real postal identity and opt-out where required, avoiding invented addresses. Use a company-specific subject/body and verify the intended department. Obtain owner approval of exact recipients and text before sending. On receipt, log message ID, send status, provider response, approved API endpoints/scopes, costs, contract and any actual grants. Do not treat silence as permission.
 
-Contact-research status at this snapshot: TinyFish community email verified; other routes are official web portals or developer programmes, **not** verified recipient email addresses. None of the templates has been sent.
+Contact-research status at this snapshot: TinyFish community email verified; other routes are official web portals or developer programmes, **not** verified recipient email addresses. Two tailored messages have been sent as verified by Gmail's SENT confirmation. No additional mass email, form submission, partnership acceptance, funded grant or customer-data sharing has occurred. No duplicate re-send should be made to prior partner recipients without a real follow-up reason.
+
+
+### New commercial/product positioning (see issues #1326–#1328)
+
+QuantaPhi's Infinity Merchant Standard proposes a content-rich Quick Card that can expand into a full website layout under merchant control. Ask for approved high-quality images, product angles, size/specification descriptions, current authorized product feeds and optional promotions; merchant alone controls actual prices, SKU, checkout and inventory. Bubbles can be hired for an optional site-upgrade project after selected GitHub and Cloudflare permissions, private preview, tests and explicit merge/deploy approval. First-party quantdata must be consented and purpose-limited. An illustration of 1 Quant or 1 Star Coin per $1 remains a proposed merchant-unit display, **not** a live cash-redeemable settlement promise or payment method. Partner options, prices and rights are individually negotiated; see `docs/INFINITY-MERCHANT-PARTNER-STANDARD.md` and `docs/QUANTS-STARCOIN-MERCHANT-UNIT-PROPOSAL.md`.
