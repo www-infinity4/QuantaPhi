@@ -1,0 +1,25 @@
+/* Neutral Oracle Octaves 21+ preference card: never teaser imagery to minors. */
+#infinityAdultContentCard.rac-card{
+ max-width:820px;margin:16px auto;padding:18px;border:1px solid #d7dadd;
+ border-radius:20px;background:#fff;color:#242729;box-shadow:0 6px 22px #18222a12;
+ font-family:system-ui,-apple-system,Roboto,sans-serif;line-height:1.5;
+}
+.rac-head{display:flex;flex-direction:column;gap:3px;margin-bottom:8px}
+.rac-kicker{font-size:11px;letter-spacing:.11em;font-weight:800;color:#62686c}
+.rac-heading{margin:0!important;font-size:21px!important;line-height:1.25!important;color:#1d252d}
+.rac-intro,.rac-status{margin:9px 0;font-size:14px;color:#404a50}
+.rac-status{font-weight:650}
+.rac-frame{border:1px solid #d8dce0;border-radius:15px;padding:12px;margin:12px 0;overflow:hidden}
+.rac-frame[hidden],.rac-image[hidden],.rac-button[hidden]{display:none!important}
+.rac-image{display:block;width:100%;max-height:390px;aspect-ratio:16/10;object-fit:contain;background:#f4f5f6;border-radius:10px}
+.rac-title{font-size:17px!important;margin:9px 0 4px!important}
+.rac-description,.rac-sponsor{font-size:13px;margin:5px 0;color:#4c5358}
+.rac-sponsor{font-weight:700}
+.rac-out{display:inline-block;margin:7px 0;color:#174e7d;font-weight:700}
+.rac-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+#infinityAdultContentCard .rac-button{min-height:43px;padding:9px 15px;border:1px solid #cbd1d5;border-radius:12px;background:#fff;color:#1e3548;font-size:14px;font-weight:700;cursor:pointer;box-shadow:none}
+#infinityAdultContentCard .rac-button:focus-visible{outline:3px solid #7ca7cd;outline-offset:2px}
+#infinityAdultContentCard .rac-button:disabled{opacity:.6;cursor:wait}
+.rac-note{font-size:12px;color:#606970;line-height:1.45;margin:12px 0 0}
+@media(max-width:460px){#infinityAdultContentCard.rac-card{padding:14px}.rac-heading{font-size:19px!important}.rac-actions>.rac-button{flex:1 1 auto}}
+@media(prefers-reduced-motion:reduce){#infinityAdultContentCard *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

@@ -43,6 +43,7 @@ const choices=[
  ['halloweenPhi','Watch a cinema'],
  ['phiProjectActions','Build a website'],
  ['shopAdPhi','Discover products'],
+ ['infinityAdultContentCard','21+ content preferences'],
  ['phiChannelCards','KYOU · Infinity live TV'],
  ['publicCardTrends','Explore what is trending']
 ];
@@ -85,6 +86,7 @@ const CARD_DIRECTIONS={
  halloweenPhi:['deck-halloween','Television','Watch an original cinema card'],
  phiProjectActions:['deck-projects','Creation','Build or improve a real website project'],
  shopAdPhi:['deck-shop','Shopping','Explore interactive product and advertising tools'],
+ infinityAdultContentCard:['adult-content-preferences','Preferences','Manage optional 21+ ad viewing; no restricted creative without server verification'],
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
 };
 
