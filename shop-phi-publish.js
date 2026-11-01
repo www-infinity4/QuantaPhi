@@ -15,9 +15,14 @@ function validOwnItem(item){
 async function publish(item,studio,status,onUpdate,saveDraft){
  validOwnItem(item);
  if(!api())throw Error('The secure seller service is not loaded; your local draft was preserved.');
- if(hasMedia(item)&&!item.photoIds?.length){
-  status.textContent='Uploading your real photographs to your private wallet-owned ShopPhi storage…';
-  item.photoIds=await studio.uploadPhotos(item.mediaIds);
+ const uploaded=Array.isArray(item.uploadedMediaIds)?item.uploadedMediaIds:(item.photoIds?.length?item.mediaIds||[]:[]);
+ const pending=(item.mediaIds||[]).filter(id=>!uploaded.includes(id));
+ if(pending.length){
+  if((item.photoIds?.length||0)+pending.length>8)throw Error('ShopPhi allows up to eight photographs per listing.');
+  status.textContent='Uploading newly selected photographs to your private wallet-owned ShopPhi storage…';
+  const receipts=await studio.uploadPhotos(pending);
+  item.photoIds=[...(item.photoIds||[]),...receipts];
+  item.uploadedMediaIds=[...new Set([...uploaded,...pending])];
   saveDraft(item);
  }
  const body={
