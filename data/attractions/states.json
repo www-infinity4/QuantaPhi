@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "priority_first": "CO",
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "status": "queued"
+    },
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "status": "queued"
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "status": "queued"
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "status": "queued"
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "status": "queued"
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "status": "seeded"
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "status": "queued"
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "status": "queued"
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "status": "queued"
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "status": "queued"
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "status": "queued"
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "status": "queued"
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "status": "queued"
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "status": "queued"
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "status": "queued"
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "status": "queued"
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "status": "queued"
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "status": "queued"
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "status": "queued"
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "status": "queued"
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "status": "queued"
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "status": "queued"
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "status": "queued"
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "status": "queued"
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "status": "queued"
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "status": "queued"
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "status": "queued"
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "status": "queued"
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "status": "queued"
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "status": "queued"
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "status": "queued"
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "status": "queued"
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "status": "queued"
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "status": "queued"
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "status": "queued"
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "status": "queued"
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "status": "queued"
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "status": "queued"
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "status": "queued"
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "status": "queued"
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "status": "queued"
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "status": "queued"
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "status": "queued"
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "status": "queued"
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "status": "queued"
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "status": "queued"
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "status": "queued"
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "status": "queued"
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "status": "queued"
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "status": "queued"
+    }
+  ]
+}
