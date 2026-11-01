@@ -456,3 +456,26 @@ body.ba-viewer-active{overflow:hidden}
 .ba-iteration-bits .ba-bits-note{font:11px/1.4 system-ui,sans-serif;color:#52656c}
 .ba-iteration-bits .ba-bits-recent{display:flex;gap:4px;flex-wrap:wrap}
 .ba-iteration-bits .ba-bits-proof{font:10px/1.35 system-ui,sans-serif;background:#fff;border:1px solid #dde5e9;color:#435966;padding:3px 6px;border-radius:7px;overflow-wrap:anywhere}
+
+/* Readable mobile iteration controls: override the generic 16px/48px button reset.
+   Seven real role states remain selectable without horizontal clipping or clipping chat input. */
+body .ba-panel .ba-iteration-bubbles{flex:0 0 auto;max-width:100%;margin:8px 4px 10px;padding:10px}
+body .ba-panel .ba-iteration-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;overflow:visible;padding:2px 0 5px}
+body .ba-panel button.ba-iteration-button{
+ display:flex!important;flex-direction:column!important;align-items:center!important;
+ min-width:0!important;min-height:64px!important;padding:7px 3px!important;
+ border:1px solid #aebcc7!important;border-radius:10px!important;
+ background:#fff!important;background-image:none!important;
+ color:#21313a!important;-webkit-text-fill-color:#21313a!important;
+ font:700 13px/1.25 system-ui,sans-serif!important;line-height:1.25!important;
+ opacity:1!important;text-align:center!important;white-space:normal!important;
+}
+body .ba-panel button.ba-iteration-button[aria-pressed="true"]{background:#eaf3f9!important;border-color:#317295!important}
+body .ba-panel .ba-iteration-name{font-size:13px!important;font-weight:750;color:#21313a!important;-webkit-text-fill-color:#21313a!important}
+body .ba-panel .ba-iteration-state{font-size:11px!important;color:#43535d!important;-webkit-text-fill-color:#43535d!important}
+body .ba-panel .ba-iteration-detail{font-size:13px;line-height:1.5;color:#263640;margin-top:7px}
+body .ba-panel .ba-iteration-heading{font-size:14px}
+body .ba-panel .ba-iteration-heading small,body .ba-panel .ba-bits-note{font-size:12px;line-height:1.4}
+body .ba-panel .ba-iteration-bits strong,body .ba-panel .ba-bits-count{font-size:13px}
+body .ba-panel .ba-bits-proof{font-size:12px}
+@media(max-width:350px){body .ba-panel .ba-iteration-row{grid-template-columns:repeat(3,minmax(0,1fr))}}
