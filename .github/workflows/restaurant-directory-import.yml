@@ -10,15 +10,6 @@ on:
         options:
           - denver-co
           - colorado-springs-co
-  push:
-    branches: [main]
-    paths:
-      - scripts/restaurant-directory-import.py
-      - data/restaurants/city-manifest.json
-      - test/test_restaurant_directory_import.py
-      - .github/workflows/restaurant-directory-import.yml
-  schedule:
-    - cron: '15 9 * * 1'
 permissions:
   contents: write
 concurrency:
