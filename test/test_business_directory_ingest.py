@@ -84,7 +84,7 @@ class BusinessIngestTests(unittest.TestCase):
     def test_protected_conflict_never_records_a_false_import_receipt(self):
         with tempfile.TemporaryDirectory() as tmp:
             path=Path(tmp)/'one.geojsonseq'
-            path.write_text(json.dumps(feature())+'\\n',encoding='utf-8')
+            path.write_text(json.dumps(feature())+'\n',encoding='utf-8')
             calls=[]
             def fake_query(sql, params=None, batch=None):
                 calls.append({'sql':sql,'params':params,'batch':batch})
