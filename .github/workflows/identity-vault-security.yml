@@ -1,0 +1,32 @@
+name: First-party identity vault security
+on:
+  pull_request:
+    paths:
+      - 'workers/identity-vault/**'
+      - 'workers/restricted-ads/index.mjs'
+      - 'test/identity-vault.test.mjs'
+      - 'test/restricted-ads-worker.test.mjs'
+      - '.github/workflows/identity-vault-security.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/identity-vault/**'
+      - 'workers/restricted-ads/index.mjs'
+      - 'test/identity-vault.test.mjs'
+jobs:
+  test-identity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify private service and encryption syntax
+        run: |
+          node --check workers/identity-vault/security.mjs
+          node --check workers/identity-vault/index.mjs
+          node --check workers/restricted-ads/index.mjs
+      - name: Test AES-GCM evidence security, age decisions, and fail-closed privacy
+        run: node --test test/identity-vault.test.mjs test/restricted-ads-worker.test.mjs
