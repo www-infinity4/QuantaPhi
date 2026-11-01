@@ -72,10 +72,12 @@ test('Android returns to fully visible header after card navigation and can sett
  // jumping to the destination programmatically. The nearby deck must settle
  // with its controls visible; the search row must not steal the snap.
  const deckDistance=await page.locator('#oracleCardDeck').evaluate(e=>e.getBoundingClientRect().top);
- const gestureDistance=Math.max(120,Math.min(480,Math.round(deckDistance-18)));
+ const gestureDistance=Math.max(120,Math.min(480,Math.round(deckDistance-75)));
  await page.mouse.move(2,Math.min(420,page.viewportSize().height/2));
  await page.mouse.wheel(0,gestureDistance);
- await expect.poll(async()=>nav.evaluate(e=>e.getBoundingClientRect().top),{timeout:6000}).toBeLessThan(125);
- await expect.poll(async()=>nav.evaluate(e=>e.getBoundingClientRect().bottom),{timeout:6000}).toBeGreaterThan(0);
+ // The tabs and family shortcuts precede the arrow row inside the deck;
+ // the correct resting point is the deck section start, not the arrows.
+ const deck=page.locator('#oracleCardDeck');
+ await expect.poll(async()=>Math.abs(await deck.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:6000}).toBeLessThan(40);
  await expect(nav).toBeInViewport();
 });
