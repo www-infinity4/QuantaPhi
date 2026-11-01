@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'workers/business-directory/**'
+      - 'scripts/build-business-directory-page-worker.mjs'
       - 'test/business-directory-*.test.mjs'
       - 'businesses/**'
       - 'index.html'
@@ -29,6 +30,8 @@ jobs:
       - name: Syntax checks
         run: |
           node --check workers/business-directory/worker.mjs
+          node --check workers/business-directory/page-worker.mjs
+          node scripts/build-business-directory-page-worker.mjs --check
           node --check businesses/directory-app.mjs
       - name: Business directory and regression tests
         run: |
