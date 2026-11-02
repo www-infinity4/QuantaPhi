@@ -31,7 +31,7 @@ export function directoryCardView(row,acknowledged){
   !/^[a-z0-9-]{3,110}$/.test(String(row.id||''))||
   !/^[A-Z]{2}$/.test(String(row.state||''))||!str(row.name)||!str(row.city))return null;
  const source=https(row.source_url);
- if(!source||!sourceLinkAllowed(row.source_url,row.source_domain))return null;
+ if(!source||!sourceLinkAllowed(row.source_url,row.source_domain||source.hostname))return null;
  const star=row.quality_star==='★'&&Array.isArray(row.quality_sources)&&row.quality_sources.length>=2;
  return {id:'directory-store-'+row.id,sourceId:row.id,name:str(row.name,140),
   store:str(row.store,100),city:str(row.city,90),state:row.state,
@@ -40,7 +40,7 @@ export function directoryCardView(row,acknowledged){
   accessType:row.access_type==='medical_only'?'medical_only':'unreviewed',
   qualityLabel:star?'★ Independently reviewed customer-experience evidence':'Unrated',
   qualitySources:star?row.quality_sources.filter(u=>!!https(u)).slice(0,3):[],
-  sponsorLabel:'Independent directory listing',imageUrl:reviewMedia(row.media,row.source_domain),
+  sponsorLabel:'Independent directory listing',imageUrl:reviewMedia(row.media,row.source_domain||source.hostname),
   testimonial:reviewQuote(row.testimonial)};
 }
 export function uniqueStoreCards(rows,existing=[]){
