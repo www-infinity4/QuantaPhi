@@ -43,7 +43,14 @@ async function recordScan(env,{status,visible=0,added=0,candidates=0,error='',ch
  // original scan start and never let an old failure or stale result roll back
  // a newer receipt. On equal timestamps, prefer a successful public read.
  const lastSuccess=status==='public_posts_observed'?now():null;
- await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(k) DO UPDATE SET last_checked=excluded.last_checked,last_success=COALESCE(excluded.last_success,owner_x_scans.last_success),status=excluded.status,visible_count=excluded.visible_count,new_count=excluded.new_count,candidate_count=excluded.candidate_count,error=excluded.error WHERE excluded.last_checked>owner_x_scans.last_checked OR (excluded.last_checked=owner_x_scans.last_checked AND excluded.status='public_posts_observed' AND owner_x_scans.status!='public_posts_observed')").bind(scanKey,checkedAt,lastSuccess,status,visible,added,candidates,error.slice(0,180)).run();
+ const params=[checkedAt,lastSuccess,status,visible,added,candidates,error.slice(0,180)];
+ const update=" ON CONFLICT(k) DO UPDATE SET last_checked=excluded.last_checked,last_success=COALESCE(excluded.last_success,owner_x_scans.last_success),status=excluded.status,visible_count=excluded.visible_count,new_count=excluded.new_count,candidate_count=excluded.candidate_count,error=excluded.error WHERE excluded.last_checked>owner_x_scans.last_checked OR (excluded.last_checked=owner_x_scans.last_checked AND excluded.status='public_posts_observed' AND owner_x_scans.status!='public_posts_observed')";
+ if(account===OWNER){
+  // Preserve the legacy owner binding order for existing receipt consumers.
+  await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES ('main',?,?,?,?,?,?,?)"+update).bind(...params).run();
+ }else{
+  await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES (?,?,?,?,?,?,?,?)"+update).bind(scanKey,...params).run();
+ }
 }
 async function renderedProfileHTML(response){
  const reader=response.body?.getReader();
