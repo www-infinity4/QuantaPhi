@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T10:56:22.659926Z",
+  "checked_at": "2026-11-02T20:45:00.365754Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -873,7 +873,7 @@
     },
     "durable-lie-nielsen": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
@@ -881,7 +881,7 @@
           "title": "Boggs Concave Spokeshave",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -890,7 +890,7 @@
           "title": "1-SP-Boggs-Con.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -899,7 +899,7 @@
           "title": "boggs-concave-2021-iso.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -908,7 +908,7 @@
           "title": "concave-boggs-spokeshave-2019.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -917,7 +917,7 @@
           "title": "Small Router Plane - Open Throat",
           "kind": "website",
           "description": "Small Router Plane Loosely based on the Stanley No. 271, these small Router Planes are perfect for shallow mortise and small relief work. The compact design makes it easy to guide along narrow edges and fit into tight spaces. 4\" long x 2\" wide O1 blade with 1/",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -926,7 +926,7 @@
           "title": "small-router-plane-ot-front.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -935,7 +935,7 @@
           "title": "small-router-plane-ot-iso-l.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -944,14 +944,14 @@
           "title": "small-router-plane-ot-iso-r.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-starrett": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.starrett.com/",
@@ -959,7 +959,7 @@
           "title": "Premium Starrett micrometer resting on an American flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -968,7 +968,7 @@
           "title": "W4900 Animated Gif",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -977,7 +977,7 @@
           "title": "Starrett Carbide Tipped Reciprocating Saw Blade",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -986,7 +986,7 @@
           "title": "Starrett and Roush Yates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -995,7 +995,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1004,7 +1004,7 @@
           "title": "HG Electronic Height Gages and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1013,7 +1013,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1022,14 +1022,14 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-mitutoyo": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.mitutoyo.com/services/calibration-repair/calibration-lab/",
@@ -1037,7 +1037,7 @@
           "title": "Mitutoyo Metrology Calibration Lab",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1046,7 +1046,7 @@
           "title": "precision measurement services",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1055,14 +1055,14 @@
           "title": "Coordinate Measuring Machines | Mitutoyo America Corporation",
           "kind": "website",
           "description": "Mitutoyo manufactures top-quality coordinate measuring machines (CMM) that lead the industry in precision. Find the perfect solution for you.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-leatherman": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.leatherman.com/collections/bestsellers/products/arc",
@@ -1070,7 +1070,7 @@
           "title": "Black DLC and stainless steel Leatherman ARC® multi-tool opened showcasing the many tools and features included.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1079,7 +1079,7 @@
           "title": "Leatherman ARC® Talos multi-tool opened showcasing the many tools and features included.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1088,7 +1088,7 @@
           "title": "Black DLC and stainless steel Leatherman ARC® multi-tool closed showcasing its compact design.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1097,7 +1097,7 @@
           "title": "Leatherman ARC® Talos closed showcasing the Bronze Cerakote coating and compact design.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1106,7 +1106,7 @@
           "title": "Leatherman Gift Card",
           "kind": "product",
           "description": "Leatherman's Digital Gift Card is perfect for any occasion. This e-gift card lets recipients pick their favorite products from our online store. Choose how you deliver — email right away, schedule for later, or send to yourself to pass along personally. Simple",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "10.0",
@@ -1121,7 +1121,7 @@
           "title": "ARC®",
           "kind": "product",
           "description": "The ARC is our most advanced multi-tool, built to be both durable and easier to use. It features a MagnaCut steel blade that holds its edge longer and resists rust, making it perfect for both daily tasks and hard outdoor jobs. Every feature is outside-accessib",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "249.95",
@@ -1136,7 +1136,7 @@
           "title": "Skeletool® CX",
           "kind": "product",
           "description": "The Leatherman Skeletool CX packs only the most essential features into a lightweight, portable design. It’s made for people who want serious function without carrying extra bulk. The premium 154CM stainless steel straight-edge blade has a great balance of cor",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.95",
@@ -1149,7 +1149,7 @@
     },
     "durable-victorinox": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.victorinox.com/en-US/",
@@ -1157,7 +1157,7 @@
           "title": "Victorinox (USA) | Victorinox Homepage",
           "kind": "website",
           "description": "Victorinox ✚ Makers of the Original Swiss Army Knife ✚ High quality products ✚ Watches, Cutlery, Travel Gear and Fragrances ✚ Order online now!",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1166,7 +1166,7 @@
           "title": "Swiss Army Knife™ & Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1175,7 +1175,7 @@
           "title": "CUTLERY",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1184,16 +1184,16 @@
           "title": "WATCHES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
-          "url": "https://www.victorinox.com/en-US/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Synergy-Winter-Magic-Limited-Edition-2026/p/0.8211.22E1",
+          "url": "https://www.victorinox.com/en-US/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Synergy-Winter-Magic-Limited-Edition-2026/p/0.8211.22E1?j=493490&amp;sfmc_sub=112459028&amp;l=98_HTML&amp;u=10064664&amp;mid=536009998&amp;jb=5001&amp;utm_source=sfmc&amp;utm_medium=email&amp;utm_campaign=20261019_Newsletter_B2C_SAK_Winter_Magic_Launch_US&amp;utm_term=CUT&amp;utm_id=493490&amp;sfmc_id=003NN00000MQlczYAD/",
           "image": "https://imageengine.victorinox.com/transform/14a60efe-ff70-43fe-a1cf-b07b617fe08c/SAK_0_8211_22E1_S1",
           "title": "Synergy Winter Magic Limited Edition 2026",
           "kind": "product",
           "description": "Based on the Synergy pocket knife, this Swiss Made limited edition combines nine functions, including a large lockable blade, box opener, two screwdrivers, nail file, nail cleaner, bottle opener and wire stripper. Its distinctive Alox scales complete the desig",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "85",
@@ -1209,7 +1209,7 @@
           "title": "Swiss Army Knives / Pocket Knives from Victorinox | Victorinox (USA)",
           "kind": "website",
           "description": "Since 1897, the Swiss Army Knife has been a trusted tool of adventurers around the world. The Swiss Army Knife is the companion you can count on.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1218,7 +1218,7 @@
           "title": "Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1227,19 +1227,19 @@
           "title": "Trades & Crafts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-stabila": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": []
     },
     "durable-klein-tools": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.kleintools.com/",
@@ -1247,7 +1247,7 @@
           "title": "Klein Tools - For Professionals since 1857 | Klein Tools",
           "kind": "website",
           "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1256,7 +1256,7 @@
           "title": "Klein Tools logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1265,7 +1265,7 @@
           "title": "Bites Fast. Holds Tight.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1274,7 +1274,7 @@
           "title": "Bites Fast. Holds Tight.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1283,7 +1283,7 @@
           "title": "Products by Industry",
           "kind": "website",
           "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1292,7 +1292,7 @@
           "title": "Contractor Supply & Jobsite Materials",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1301,7 +1301,7 @@
           "title": "Steel, Concrete, Construction and Iron Worker",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1310,14 +1310,14 @@
           "title": "Most Popular | Klein Tools",
           "kind": "website",
           "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-lodge-cast-iron": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.lodgecastiron.com/collections/luxe-enamel",
@@ -1325,50 +1325,35 @@
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
           "url": "https://www.lodgecastiron.com/",
-          "image": "https://www.lodgecastiron.com/cdn/shop/files/3_Customization_Hero-Headers_WORKING.webp?v=1759856155&width=2760",
-          "title": "Cast iron skillet with a tree design on a white wall",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
-          "category": "Infrastructure & Physical Tools"
-        },
-        {
-          "url": "https://www.lodgecastiron.com/",
-          "image": "https://www.lodgecastiron.com/cdn/shop/files/Luxe_Option_1.jpg?v=1789495049&width=3218",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/1030_Cybersale_Desktop.jpg?v=1793388614&width=2760",
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
           "url": "https://www.lodgecastiron.com/",
-          "image": "https://www.lodgecastiron.com/cdn/shop/files/1001_Jumanji_Desktop.jpg?v=1790791934&width=2760",
-          "title": "Jumanji Hero",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/Holiday-Custom_Desktop_Header.webp?v=1793636726&width=2414",
+          "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
-          "url": "https://www.lodgecastiron.com/products/blacklock-skillet?variant=56078547550580",
-          "image": "https://www.lodgecastiron.com/cdn/shop/files/BL39SK_9W2A2367.jpg?v=1743778226&width=1920",
-          "title": "Blacklock Lightweight Skillet - 7\"",
-          "kind": "product",
+          "url": "https://www.lodgecastiron.com/",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/DekstopHeader-ChefMAP.jpg?v=1793634228&width=2414",
+          "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
+          "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
-          "category": "Infrastructure & Physical Tools",
-          "offer": {
-            "price": "40.00",
-            "currency": "USD",
-            "evidence": "jsonld-offer",
-            "availability": "http://schema.org/InStock"
-          }
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Infrastructure & Physical Tools"
         },
         {
           "url": "https://www.lodgecastiron.com/products/nutcracker-2026-holiday-mini-skillet",
@@ -1376,7 +1361,7 @@
           "title": "Nutcracker 2026 Holiday Mini Skillet",
           "kind": "product",
           "description": "Our annual Holiday Mini Skillet tradition continues with a limited-edition nutcracker design! Packed in a special holiday gift box, this skillet is the ultimate stocking stuffer. Complete with a yellow ribbon, the piece can be displayed in your kitchen or even",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "16.95",
@@ -1391,7 +1376,7 @@
           "title": "Custom Skillets - Engraved Text",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.99",
@@ -1406,7 +1391,22 @@
           "title": "Custom Skillets - Engraved Award",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "99.99",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "http://schema.org/InStock"
+          }
+        },
+        {
+          "url": "https://www.lodgecastiron.com/products/custom-skillets",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/Star_Template_3_3000x3000_980e3a52-ff50-40e5-a638-12497300077e.jpg?v=1774973759&width=1920",
+          "title": "Custom Skillets - Engraved Honor",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.99",
@@ -1419,24 +1419,24 @@
     },
     "durable-le-creuset": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
-          "url": "https://www.lecreuset.com/featured-collections/harvest-collection",
-          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dw584aedf4/images/megamenu/100126-harvest.jpg",
+          "url": "https://www.lecreuset.com/signature-roaster/20184US.html?psize=5-1/4-qt.",
+          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dw482b73d7/images/megamenu/110126-roaster.jpg",
           "title": "provence",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
           "url": "https://www.lecreuset.com/specials",
-          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dw04cc90b8/images/megamenu/100126-gwp.jpg",
+          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dw7bf3167e/images/megamenu/110126-gwp.jpg",
           "title": "All products with special offers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1445,13 +1445,22 @@
           "title": "oval oven",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
           "url": "https://www.lecreuset.com/specials",
-          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dw2fe69c5a/images/homepage/oct26/100126-gwp.jpg",
+          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dwee736800/images/homepage/nov26/110126-gwp.jpg",
           "title": "Products with special offers",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.lecreuset.com/featured-collections/harvest-collection",
+          "image": "https://www.lecreuset.com/on/demandware.static/-/Sites-LeCreuset-Library/default/dw584aedf4/images/megamenu/100126-harvest.jpg",
+          "title": "provence",
           "kind": "website",
           "description": "",
           "checked_at": "2026-10-31T23:21:58.598437Z",
@@ -1461,7 +1470,7 @@
     },
     "durable-smithey-ironware": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://smithey.com",
@@ -1469,7 +1478,7 @@
           "title": "Smithey Ironware Company | Premium Cast Iron Cookware",
           "kind": "website",
           "description": "Smithey Ironware Co. designs and manufactures heirloom quality cast iron and carbon steel cookware in Charleston, SC. From skillets to Dutch ovens, roasters to our hand-forged wok, Smithey crafts tools for your kitchen that will last a lifetime.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1478,7 +1487,7 @@
           "title": "Seasoned: The Art and Craft of Cast Iron Cooking by Smithey, a hardcover cookbook with a cast iron skillet on its green cover.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1487,7 +1496,7 @@
           "title": "Seasoning Oil",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1496,7 +1505,7 @@
           "title": "Mighty Spatula",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1505,7 +1514,7 @@
           "title": "Glass Lids",
           "kind": "product",
           "description": "Carefully crafted to fit our core skillets, Smithey’s glass lids are thoughtfully designed using high-quality tempered glass and complete with a gold finished cast stainless steel knob and rim. Use them for steaming, braising, reducing sauces, and saving your ",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "30.0",
@@ -1520,7 +1529,7 @@
           "title": "Seasoned: The Art and Craft of Cast Iron Cooking",
           "kind": "product",
           "description": "It’s no surprise that Smithey is a company of food lovers, home cooks, and cast iron aficionados. We believe everyone should fall in love with cooking in cast iron. When we set out to write Seasoned, we wanted to create a book that would inspire the cast iron-",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "40.0",
@@ -1535,7 +1544,7 @@
           "title": "No. 12 Skillet",
           "kind": "product",
           "description": "Our best-selling cast iron skillet, the No. 12, will elevate your cast iron cooking. Designed with slightly more surface area and depth than the No. 10, the No. 12 is the perfect size for families of four or those who cook to have leftovers. With our signature",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "220.0",
@@ -1548,7 +1557,7 @@
     },
     "durable-all-clad": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.all-clad.com/fall-cooking-with-all-clad",
@@ -1556,7 +1565,7 @@
           "title": "Fall Cooking with All-Clad. Shop Now.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1565,7 +1574,7 @@
           "title": "Graphite Core Lightness and precision. Explore.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1574,7 +1583,7 @@
           "title": "Cleaning and Care. Learn More.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1583,14 +1592,14 @@
           "title": "Built to Outlast. Explore the Legacy.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-fissler": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://us.fissler.com/",
@@ -1598,7 +1607,7 @@
           "title": "The Fissler logo is shown in red on a white background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1607,7 +1616,7 @@
           "title": "AST_SA_2369652;1dd0cc2993126794fc10d80bc365c38a;PROD_997233",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1616,7 +1625,7 @@
           "title": "AST_SA_2734561;70d876d44e546ec50f3350fbd59cddca;PROD_2612542,SI_2578497",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1625,7 +1634,7 @@
           "title": "AST_SA_2734581;e47f96176d2797ffa4d2cbd14373db7d;SETI_2588966",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1634,7 +1643,7 @@
           "title": "The World of Pressure Cooking –The Ultimate Guide to The Healthy Cooker® with 150+ Recipes, Techniques & History –Hardcover",
           "kind": "product",
           "description": "Unlock the full potential of The Healthy Cooker™ — the smarter way to pressure cook! The World of Pressure Cooking offers over 150 mouthwatering recipes, expert tips, and an in - depth look at the science and history behind this game - changing cooking method.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "39.95",
@@ -1650,7 +1659,7 @@
           "title": "Pan Protector, 2 Piece Set",
           "kind": "product",
           "description": "​Safeguard your cookware with the Fissler Pan Protector, 2 Piece Set. Designed to prevent damage from stacking, these polyester felt protectors create a cushioned layer between pots, pans, and other cookware. Slip-resistant and heat-resistant, they are ideal f",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "29.95",
@@ -1666,7 +1675,7 @@
           "title": "Vitavit® Premium Pressure Cooker",
           "kind": "product",
           "description": "Discover The Healthy Cooker®, the award-winning Vitavit® Premium by Fissler, made in Germany for fast, healthy, and safe stovetop cooking. Designed to help you eat better with less effort, it cooks up to 70% faster than traditional methods while preserving up ",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "369.95",
@@ -1680,7 +1689,7 @@
     },
     "durable-zojirushi": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://store.zojirushi.com/",
@@ -1688,7 +1697,7 @@
           "title": "Zojirushi x Lundberg Family Farms Bundle Campaign Banner: With every purchase of a Pressure IH, IH, or Micom Rice Cooker, claim two 2lb. packs of Lundberg Organic Rice Bundle for f",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1697,16 +1706,7 @@
           "title": "Woman in a city, taking out a Zojirushi GoCafe mug in turquoise white gradient color, from her purse.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
-          "category": "Infrastructure & Physical Tools"
-        },
-        {
-          "url": "https://store.zojirushi.com/",
-          "image": "https://store.zojirushi.com/cdn/shop/files/GoCafe-20OFF-Sliding-Banner4.png?v=1791588211&width=3840",
-          "title": "Zojirushi GoCafe® Mugs are 20% off. Now through Saturday, October 31, 2026, or while supplies last.",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1715,7 +1715,16 @@
           "title": "Zojirushi Collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://store.zojirushi.com/",
+          "image": "https://store.zojirushi.com/cdn/shop/files/Livestream_Thumbnail_-_Lundberg_Rice_GWP.png?v=1792016933&width=3000",
+          "title": "Zojirushi x Lundberg Family Farms Rice Bundle Campaign - Sale from 10/8 - 11/17, Claim two 2lb. packs of Lundberg Organic Rice Bundle with every purchase of a Pressure IH, IH, or M",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1724,7 +1733,7 @@
           "title": "Induction Heating System Rice Cooker & Warmer NP-GBC05",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1733,7 +1742,7 @@
           "title": "Accessories include rice measuring cup, rinse-free rice measuring cup, nonstick rice spatula and spatula stand",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1742,7 +1751,7 @@
           "title": "Induction Heating (IH) system for precise temperature control",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1751,14 +1760,14 @@
           "title": "Easy-to-read colored LCD control panel with Clock and Timer functions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "denver-sams-no3": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://samsno3.com/",
@@ -1766,7 +1775,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1775,7 +1784,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1784,7 +1793,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1793,19 +1802,19 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-work-and-class": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": []
     },
     "denver-major-tom": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://majortomdenver.com/",
@@ -1813,7 +1822,7 @@
           "title": "Major Tom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1822,14 +1831,14 @@
           "title": "Major Tom | RiNo Restaurant, Dinner, Champagne & Cocktails | Denver",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-steubens": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://steubens.com/",
@@ -1837,7 +1846,7 @@
           "title": "Steubens - Uptown, Denver, CO",
           "kind": "website",
           "description": "American Regional Classics, Steuben’s is named after a restaurant in Boston that my Great Uncles, Max and Joe, opened in 1945. Steuben's became a famous Boston restaurant, nightclub, ...",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1846,7 +1855,7 @@
           "title": "slideshow photo number 1",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1855,7 +1864,7 @@
           "title": "slideshow photo number 2",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1864,19 +1873,19 @@
           "title": "slideshow photo number 3",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-hampton-social": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": []
     },
     "denver-rhein-haus": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.rheinhausdenver.com/",
@@ -1884,7 +1893,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1893,7 +1902,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1902,7 +1911,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1911,19 +1920,19 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-atomic-cowboy": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": []
     },
     "denver-casa-bonita": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.casabonitadenver.com/",
@@ -1931,7 +1940,34 @@
           "title": "Casa Bonita",
           "kind": "website",
           "description": "The Greatest Restaurant in the World!",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://shop.casabonitadenver.com/",
+          "image": "https://cdn.sanity.io/images/658ae5m2/production/47292a959986249558ffd1230ebdef5762150cf9-1200x1200.png?w=3840&fm=webp&q=75",
+          "title": "Shop Official Merchandise",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://www.casabonitadenver.com/menu",
+          "image": "https://cdn.sanity.io/images/658ae5m2/production/bc82ff729395cffc005c560021df6abd63eb0831-2400x2400.png?w=3840&fm=webp&q=75",
+          "title": "View Our Menu",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Restaurants"
+        },
+        {
+          "url": "https://www.casabonitadenver.com/faq",
+          "image": "https://cdn.sanity.io/images/658ae5m2/production/fc5344ee1b3387340700f0498dcc0f3a5b800069-1200x1200.png?w=3840&fm=webp&q=75",
+          "title": "Prepare For Your Visit",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Restaurants"
         },
         {
@@ -1942,30 +1978,12 @@
           "description": "",
           "checked_at": "2026-11-01T05:57:00.944977Z",
           "category": "Restaurants"
-        },
-        {
-          "url": "https://www.casabonitadenver.com/menu",
-          "image": "https://cdn.sanity.io/images/658ae5m2/production/bc82ff729395cffc005c560021df6abd63eb0831-2400x2400.png?w=3840&fm=webp&q=75",
-          "title": "View Our Menu",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
-          "category": "Restaurants"
-        },
-        {
-          "url": "https://shop.casabonitadenver.com/",
-          "image": "https://cdn.sanity.io/images/658ae5m2/production/fef297e09bf9de9d5123c9ffde1173ff70c71e1c-940x788.png?w=1920&fm=webp&q=75",
-          "title": "Shop Official Merchandise",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
-          "category": "Restaurants"
         }
       ]
     },
     "colorado-rocky-mountain": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.nps.gov/romo/index.htm",
@@ -1973,7 +1991,7 @@
           "title": "Rocky Mountain National Park (U.S. National Park Service)",
           "kind": "website",
           "description": "Located in northern Colorado, visitors to Rocky Mountain National Park can explore over 415 square miles (265,807 acres) within the Southern Rocky Mountains. From montane meadows to subalpine forests and mountain peaks in the alpine tundra, there is something ",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -1982,7 +2000,7 @@
           "title": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -1991,7 +2009,7 @@
           "title": "A man is standing on a bridge and looking up at a waterfall",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2000,7 +2018,7 @@
           "title": "A pika has harvested a tundra thistle",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2009,7 +2027,7 @@
           "title": "Visitors are walking on the Tundra Communities trail in summer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2018,7 +2036,7 @@
           "title": "The NPS Arrowhead appears on blue with text \"Rocky Mountain National Park Timed Entry Reservations\"",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2027,7 +2045,7 @@
           "title": "Park Entrance Fees and Passes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2036,14 +2054,14 @@
           "title": "A park ranger is sharing a program inside Beaver Meadows Visitor Center",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Alpine hikes"
         }
       ]
     },
     "colorado-numbers-rafting": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://www.americanadventure.com/tour-category/the-numbers/",
@@ -2051,7 +2069,7 @@
           "title": "most-popular",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2060,7 +2078,7 @@
           "title": "Classic Colorado Whitewater",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2069,7 +2087,7 @@
           "title": "The Numbers Half Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2078,7 +2096,7 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2087,7 +2105,7 @@
           "title": "Numbers Half Day Rafting Adventure | American Adventure Expeditions",
           "kind": "website",
           "description": "Our classic half-day rafting adventure is great for experienced white water rafters looking for a challenging ride through The Numbers in Buena Vista, CO.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2096,7 +2114,7 @@
           "title": "Numbers Half Day Private Trip",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2105,7 +2123,7 @@
           "title": "The Numbers Raft + ATV",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2114,14 +2132,14 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Whitewater"
         }
       ]
     },
     "colorado-breckenridge-trails": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-02T20:45:00.365754Z",
       "items": [
         {
           "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
@@ -2129,7 +2147,34 @@
           "title": "Easy Hiking Trails in Breckenridge",
           "kind": "website",
           "description": "Enjoying one of the many easy hikes near Breckenridge is a great way to spend a summer day in the outdoors. Find the hike right for you and your crew.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2018/03/Sapphire-Point-sunset-sept-9-Edit.jpg",
+          "title": "Sunset view from the Sapphire Point Loop, one of the easy hiking trails in Breckenridge.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2017/12/Sallie-Barber-Trail-3-1.jpg",
+          "title": "Dog on Sallie Barber Trail: a perfect hike for your four-legged friend!",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2017/12/Blue-River-Rec-Path.jpg",
+          "title": "The Blue River Rec Path right through the heart of Breckenridge.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2138,16 +2183,34 @@
           "title": "Hiking in Breckenridge Without A Car",
           "kind": "website",
           "description": "You don’t need a car to hike some spectacular trails in Breckenridge. Free public transportation can make hiking in without a car simple and easy.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Easy hiking"
         },
         {
-          "url": "https://gobreck.com/summer/best-summer-hikes-in-breckenridge/",
-          "image": "https://gobreck.com/wp-content/uploads/2021/05/family-hiking-summer-aspen-alley.jpg",
-          "title": "Best Summer Hikes in Breckenridge",
+          "url": "https://gobreck.com/guide/hiking/hiking-in-breckenridge-without-a-car/",
+          "image": "https://gobreck.com/wp-content/uploads/2018/05/Troll-Hike-Family-Fall-1024x682.jpg",
+          "title": "family hiking to see the Breckenridge Troll",
           "kind": "website",
-          "description": "When it comes to hiking, Breckenridge has it all — waterfalls, wildflowers, alpine lakes, and more. Check out our favorite summer hikes in Breckenridge!",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/hiking-in-breckenridge-without-a-car/",
+          "image": "https://gobreck.com/wp-content/uploads/2019/09/Gold-Hill-scenic-to-north-1024x768.jpg",
+          "title": "View from Gold Hill Trail in Breckenridge",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/hiking-in-breckenridge-without-a-car/",
+          "image": "https://gobreck.com/wp-content/uploads/2022/09/20191009_BTO_Family_Hike_0070-1024x682.jpg",
+          "title": "family walking the dog by a lake",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-02T20:45:00.365754Z",
           "category": "Colorado · Easy hiking"
         }
       ]
