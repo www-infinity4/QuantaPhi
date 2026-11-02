@@ -72,8 +72,8 @@ test('reasoning and preflight failures are tagged as failed assistant replies ra
 
 
 test('invalid calculation inputs and partial research cannot be reported as completed GPT work',()=>{
- const main=source.slice(source.indexOf('const finalAnswer=describeBubblesToolOutcome'),source.indexOf('if(json.receipt?.tool===',source.indexOf('const finalAnswer=describeBubblesToolOutcome')+350));
- assert.match(main,/\\['failed','blocked','invalid_input'\\]/);
+ const main=source.slice(source.indexOf('const finalAnswer=describeBubblesToolOutcome'),source.indexOf('// Search sources remain tappable',source.indexOf('const finalAnswer=describeBubblesToolOutcome')));
+ assert.ok(main.includes("['failed','blocked','invalid_input']"));
  assert.match(main,/json\.answerStatus==='partial'/);
  assert.match(main,/if\(receiptFailed\)failedTurn=true/);
 });
