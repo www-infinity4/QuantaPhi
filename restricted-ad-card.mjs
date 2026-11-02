@@ -48,6 +48,7 @@ if(root){
  const kitPlanButton=el('button','rac-button rac-plan-open','Build a kit research plan');kitPlanButton.type='button';
  const kitPlanBox=el('section','rac-plan');kitPlanBox.hidden=true;kitPlanBox.setAttribute('aria-label','Local multi-source kit planning');
  const kitPlanForm=el('form','rac-plan-form');
+ kitPlanForm.noValidate=true; // centralize even empty-field errors in the fail-closed planner validator
  const budgetLabel=el('label','rac-plan-field','Your budget ceiling (USD)'),kitPlanBudget=el('input','rac-plan-budget');
  kitPlanBudget.name='budget';kitPlanBudget.type='text';kitPlanBudget.inputMode='decimal';kitPlanBudget.value='300.00';kitPlanBudget.required=true;
  budgetLabel.append(kitPlanBudget);
