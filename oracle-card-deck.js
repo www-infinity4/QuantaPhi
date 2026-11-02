@@ -6,6 +6,11 @@
 const host=document.getElementById('oracleCardDeck'),stage=document.getElementById('oracleCardStage');
 if(!host||!stage)return;
 const TV_FRONT_BOOTSTRAP=(()=>{try{const api=window.QuantaTVFrontPriority;return !!api?.shouldPin(null,Date.now(),api.readFinal(localStorage))}catch{return false}})();
+const departmentApi=window.OracleDepartments;
+// Fail closed for restricted items even if the category helper cannot load.
+const fallbackRestricted=e=>/21\\+|22\\+|adult|cannabis|dispensar|weedmaps|bruce.?banner|playboy|ammunition|firearms|gun shop|vape|tobacco|nicotine/i.test([e?.id,e?.feedId,e?.title,e?.category,e?.node?.dataset?.sourceCategory].join(' '));
+let selectedDepartment='mixed';
+const departmentMatches=e=>departmentApi?.matches?departmentApi.matches(e,selectedDepartment):selectedDepartment==='mixed'&&!fallbackRestricted(e);
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
@@ -178,8 +183,8 @@ function registerSourceCards(){
   updateTabs();predict();
   // Honor deep links and visitor interaction. Before interaction, newly loaded
   // accepted brands receive their requested priority over ordinary brands.
-  const requested=entries.find(e=>e.id===spotlightRequested||e.feedId===spotlightRequested);
-  if(!expanded&&!viewerTouched&&requested&&available(requested))show(requested,false);
+  const requested=entries.find(e=>(e.id===spotlightRequested||e.feedId===spotlightRequested)&&departmentMatches(e));
+  if(!expanded&&!viewerTouched&&requested&&available(requested)&&departmentMatches(requested))show(requested,false);
   else if(!active&&!expanded)start();
   // A newly loaded brand must not steal focus from an active website card.
  }
@@ -224,13 +229,13 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
+function liveCatalog(){return entries.filter(available).filter(departmentMatches).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function livePriority(e){
  if(e?.id!=='phiChannelCards')return 0;
  const priority=document.getElementById('liveFoxGameCard')?.dataset.tvFrontPriority;
  return (priority===undefined?TV_FRONT_BOOTSTRAP:priority==='1')?1:0;
 }
-function eligible(){const cards=entries.filter(available).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
+function eligible(){const cards=entries.filter(available).filter(departmentMatches).sort((a,b)=>livePriority(b)-livePriority(a));return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
  updateInventory();
@@ -408,9 +413,9 @@ function returnActive(){
  window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:null}));
 }
 // Organic 21+ directory browsing must not become persistent engagement profiling.
-function nonProfiling(entry){return entry?.id==='cannabisDirectoryCard'||entry?.node?.dataset.personalization==='disabled'}
+function nonProfiling(entry){return Boolean(departmentApi?.isRestricted?.(entry)||fallbackRestricted(entry)||entry?.node?.dataset.personalization==='disabled')}
 function show(entry,remember=true,automatic=false){
- if(!entry||expanded||entry===active)return;
+ if(!entry||!departmentMatches(entry)||expanded||entry===active)return;
  if(remember&&active&&!nonProfiling(active))visited.push(active.id);
  if(visited.length>45)visited.shift();
  returnActive();
@@ -472,6 +477,38 @@ function advance(direction){
  const i=active?list.indexOf(active):-1;
  show(list[(i+1+list.length)%list.length]);
 }
+// Changing the top carousel reuses original card nodes and their working events.
+// No card is cloned, no wallet action occurs and 21+ never leaks into Mixed.
+const departmentPicker=document.getElementById('oracleDepartment');
+const nationwideRestaurants=document.getElementById('oracleNationwideRestaurants');
+function selectDepartment(value){
+ if(!departmentApi?.DEPARTMENTS?.some(d=>d.id===value)){
+  status.textContent='Department catalog unavailable. Mixed remains age-restricted-content free.';
+  if(departmentPicker)departmentPicker.value=selectedDepartment;return;
+ }
+ viewerTouched=true;selectionVersion++;visited.length=0;
+ selectedDepartment=value;
+ document.body.dataset.oracleDepartment=value;
+ if(departmentPicker)departmentPicker.value=value;
+ if(nationwideRestaurants)nationwideRestaurants.hidden=value!=='restaurants';
+ if(expanded){expanded=false;document.body.classList.remove('oracle-shelf-open');scroll.setAttribute('aria-expanded','false');scroll.textContent='↓ Scroll interactive cards / widgets';}
+ const matches=eligible();
+ const message=document.getElementById('oracleDeptStatus');
+ const label=departmentApi.DEPARTMENTS.find(d=>d.id===value)?.label||value;
+ if(message)message.textContent=label+' · '+matches.length+' currently loaded cards'+(value==='restaurants'?' · Phone location requires permission':'');
+ if(!matches.length){returnActive();now.textContent='No loaded cards in '+label;status.textContent='This department has no available source cards yet; choose Mixed or another section.';updateTabs();predict();return;}
+ const preferred=value==='restaurants'?matches.find(e=>e.feedId==='restaurant-directory')||matches[0]:matches[0];
+ if(preferred!==active)show(preferred,false);
+ updateTabs();predict();
+ if(value==='restaurants')document.dispatchEvent(new CustomEvent('oracle:restaurant-nearby-request',{detail:{trigger:'department-selection'}}));
+}
+document.body.dataset.oracleDepartment=selectedDepartment;
+departmentPicker?.addEventListener('change',event=>selectDepartment(event.target.value));
+nationwideRestaurants?.addEventListener('click',()=>{
+ if(selectedDepartment!=='restaurants')return;
+ document.dispatchEvent(new CustomEvent('oracle:restaurant-nationwide'));
+ document.getElementById('oracleDeptStatus').textContent='Nationwide restaurant directory · choose any currently indexed city';
+});
 // Continue a *visual shopping* sequence only after its verified companion
 // offers have been presented. Media, forms, followed feeds and user engagement
 // counters must not be consumed by passive auto-advance.
@@ -691,7 +728,7 @@ function chooseOpening(){
  return pool[openingCursor%pool.length]||ready[0];
 }
 function start(){if(!active&&!expanded){
- const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
+ const request=entries.find(x=>(x.id===spotlightRequested||x.feedId===spotlightRequested)&&departmentMatches(x));
  const tv=entries.find(livePriority);
  if(!spotlightRequested&&tv&&!available(tv)){now.textContent='Infinity TV · Loading channels…';status.textContent='Loading the game-night TV viewer…';return;}
  // Keep an explicitly requested original card in front of generic rotation.
