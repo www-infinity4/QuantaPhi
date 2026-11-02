@@ -1202,7 +1202,7 @@ async function suggestRepositoryTargets(request,preview=false){
   try{
    if(!repositoryCatalogComplete)await loadRepositoryCatalog();
    if(repositoryCatalogComplete){
-    const discovery=await import('/bubbles-project-discovery.mjs?v=20261026-card-move1');
+    const discovery=await import('/bubbles-project-discovery.mjs?v=20261102-cardonay1');
     const ownerTurns=messages.filter(m=>m.role==='user'&&typeof m.text==='string'&&m.text!==request).slice(-8);
     const searchRequest=discovery.sourceQueryFor(request,ownerTurns);
     const key=searchRequest.toLowerCase().trim();
@@ -1259,7 +1259,7 @@ async function suggestRepositoryTargets(request,preview=false){
  if(result.requiresReview&&!result.allTargets&&!repositorySelectionExplicit&&!repositorySourceSearch){
   try{
    if(!repositoryCatalogComplete)await loadRepositoryCatalog();
-   const discovery=await import('/bubbles-project-discovery.mjs?v=20261026-card-move1');
+   const discovery=await import('/bubbles-project-discovery.mjs?v=20261102-cardonay1');
    const evidence=repositoryCatalogComplete?await discovery.discoverProject({request,catalog:repositoryCatalog,
     views:discovery.relevantProjectViews(request),invoke:async operation=>{
      let read=await directGithubOperation(operation,{quiet:true});
@@ -2973,7 +2973,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  })||{related:ownerContext.related,recent:messages.slice(nativeOverlay?-12:-40),
   indexedHistory:String(indexedHistory),instructions:userRules,note:''};
  const relevant=continuity.related.filter(m=>!messages.slice(-40).some(x=>x.id===m.id));
- const projectContextModule=await import('/bubbles-project-discovery.mjs?v=20261026-card-move1').catch(()=>null);
+ const projectContextModule=await import('/bubbles-project-discovery.mjs?v=20261102-cardonay1').catch(()=>null);
  const observedViews=projectContextModule?.relevantProjectViews(request)||[];
  // This resolves ordinary phrases like "fix Gary Cardone's Sunday promotion"
  // and "fix that card" from the connected card catalog and recent user turns.
