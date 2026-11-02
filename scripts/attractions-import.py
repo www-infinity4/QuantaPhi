@@ -20,7 +20,7 @@ RESIDENTIAL_FALSE_POSITIVE = re.compile(
 # Keep these out of recreational park listings; do not broadly reject museum
 # or historical railway attractions on the basis of a word in their title.
 TRANSIT_PARK_FALSE_POSITIVE = re.compile(
-    r"\b(?:park[\s-]?(?:n|and)[\s-]?ride|"
+    r"\b(?:park[\s-]?(?:n|and|&)[\s-]?ride|"
     r"(?:bus|rail|train|transit)\s+(?:station|terminal|center)|"
     r"park\s+station)\b", re.I
 )
