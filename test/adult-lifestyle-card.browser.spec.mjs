@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 const base='http://127.0.0.1:8799';
 test.use({viewport:{width:360,height:800}});
 async function openAdultCard(page){
- await openAdultCard(page);
+ await page.goto(base+'/?card=infinityAdultContentCard',{waitUntil:'domcontentloaded'});
  // A deep link cannot bypass the visitor-selected restricted department.
  await expect(page.locator('#oracleCardStage #infinityAdultContentCard')).toHaveCount(0);
  await page.locator('#oracleDepartment').selectOption('adult');
