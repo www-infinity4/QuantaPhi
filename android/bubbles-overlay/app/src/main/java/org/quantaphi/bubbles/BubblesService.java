@@ -146,17 +146,16 @@ public final class BubblesService extends Service {
      * to execute local Python. Android presents a real user-confirmation dialog.
      */
     private boolean handleTermuxProbe(String addressed, boolean typed) {
-        if (addressed == null || !addressed.trim().matches(
-                "(?i)^(?:bubbles[, ]+)?(?:please\\s+)?(?:(?:test|check|verify)(?:\\s+the)?\\s+(?:python(?:\\s+(?:in|with))?\\s+termux|python|termux(?:\\s+python)?)|(?:run|start|try)(?:\\s+a)?\\s+python\\s+(?:test|diagnostic)|(?:does\\s+python\\s+work|is\\s+python\\s+(?:working|ready))(?:\\s+in\\s+termux)?)[.!?]*$"))
-            return false;
+        String kind = TermuxProbeKind.fromUserText(addressed);
+        if (kind == null) return false;
         Intent intent = new Intent(this, MainActivity.class)
-            .putExtra("termux_python_probe", true)
+            .putExtra("termux_probe_kind", kind)
             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         try {
             startActivity(intent);
-            screenStatus("Python test requested. Android owner approval is required before Termux runs.", typed);
+            screenStatus("Termux " + kind + " check requested. Android owner approval is required; nothing has run yet.", typed);
         } catch (RuntimeException error) {
-            screenStatus("Android could not open the Python approval screen. No test ran.", typed);
+            screenStatus("Android could not open the Termux approval screen. No check ran.", typed);
         }
         return true;
     }
