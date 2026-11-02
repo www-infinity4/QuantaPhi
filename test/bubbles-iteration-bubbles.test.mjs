@@ -72,3 +72,16 @@ test('activity controls are phone-legible despite the generic Bubbles button rul
  assert.match(css,/\.ba-iteration-row\s*\{display:grid;grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
  assert.match(css,/font:700 13px\/1\.25 system-ui,sans-serif!important/);
 });
+
+test('the real chat turn emits completion and Think cannot remain permanently active',()=>{
+ let state=applyIterationEvent(newIterationState(),{type:'turn_started'});
+ assert.equal(state.think.status,'active');
+ state=applyIterationEvent(state,{type:'memory',state:'retrieved'});
+ state=applyIterationEvent(state,{type:'turn_finished',failed:false});
+ assert.equal(state.think.status,'idle');
+ assert.equal(state.memory.status,'verified');
+ const failed=applyIterationEvent(applyIterationEvent(newIterationState(),{type:'turn_started'}),{type:'turn_finished',failed:true});
+ assert.equal(failed.think.status,'blocked');
+ assert.match(failed.think.message,/failed|could not/i);
+ assert.match(src('bubbles-ai.js'),/type:'turn_finished',failed:failedTurn/);
+});
