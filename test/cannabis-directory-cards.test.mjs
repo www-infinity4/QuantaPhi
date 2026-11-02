@@ -69,18 +69,23 @@ test('older server-validated Cloudflare rows remain cardable before Worker cache
  assert.equal(card?.sourceUrl,'https://store.example.com/locations');
 });
 
-test('real D1 regulator license IDs with colons dots and uppercase register safely',async()=>{
+test('real D1 regulator IDs encode to unique feed-safe card IDs and retain follows',async()=>{
  const ids=['il-idfpr:284.000001-AUDO','ma-ccc:MR281240','nj-crc:RE000012','ny-ocm:OCM-RETL-24-000003'];
- for(const id of ids){
-  const model=directoryCardView({...base,id},true);
-  assert.equal(model?.id,'directory-store-'+id);
-  assert.equal(model?.sourceId,id);
+ const models=ids.map(id=>directoryCardView({...base,id},true));
+ for(let i=0;i<ids.length;i++){
+  assert.equal(models[i]?.sourceId,ids[i]);
+  assert.match(models[i]?.id||'',/^directory-store-[a-z2-7]+$/);
+  assert.ok(models[i].id.length<=70);
  }
+ assert.equal(new Set(models.map(m=>m.id)).size,ids.length);
+ const {cleanFeedState}=await import('../quanta-feed-rank.mjs');
+ const follow=cleanFeedState({following:models.map(m=>m.id)});
+ assert.deepEqual(follow.following,models.map(m=>m.id));
  for(const id of ['../unsafe','x/y','<script>','x%20y','bad id','x#y','x?y']){
   assert.equal(directoryCardView({...base,id},true),null);
  }
  const fs=await import('node:fs/promises');
  const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
- assert.match(deck,/directory-store-\[A-Za-z0-9/);
- assert.match(deck,/\[A-Za-z0-9:._-\]/);
+ assert.match(deck,/directory-store-/);
+ assert.match(deck,/data-directory-store-id/);
 });
