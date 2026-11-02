@@ -32,7 +32,7 @@ class TestConnecticutDCP(unittest.TestCase):
         self.assertEqual(len(m['records']), 10)
         self.assertEqual(len({r['license_number'] for r in m['records']}), 10)
         for r in m['records']:
-            self.assertRegex(r['license_number'], r'^AMHF\.\d{7})
+            self.assertRegex(r['license_number'], r'^AMHF\.\d{7}$')
             self.assertEqual(r['license_type'], 'Hybrid Retailer')
             self.assertEqual(r['state'], 'CT')
             self.assertIn(', CT 0', r['address'])
