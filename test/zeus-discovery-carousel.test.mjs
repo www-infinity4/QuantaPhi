@@ -35,12 +35,15 @@ test('creator GPT listings only enter the carousel with verified source, rights 
  }
 });
 test('tabs and movement are deterministic and never invent unpublished creators',()=>{
+ const at=Date.parse('2026-11-02T02:00:00Z');
+ const cards=tab=>cardsForTab(tab,undefined,at);
  assert.equal(APPROVED_PUBLIC_GPT_LINKS.length,2);
- assert.equal(cardsForTab('creator').length,6);
- assert.ok(cardsForTab('creator').some(x=>x.kind==='creator-gpt'&&x.name==='Mr. Lump the code tutor'));
- assert.ok(cardsForTab('creator').some(x=>x.kind==='creator-gpt'&&x.name==='Data Analyst Career Guide'));
- assert.equal(cardsForTab('infinity').length,4);
- assert.equal(cardsForTab('all').length,10);
+ assert.equal(cards('creator').length,6);
+ assert.ok(cards('creator').some(x=>x.kind==='creator-gpt'&&x.name==='Mr. Lump the code tutor'));
+ assert.ok(cards('creator').some(x=>x.kind==='creator-gpt'&&x.name==='Data Analyst Career Guide'));
+ assert.equal(cards('infinity').length,4);
+ assert.equal(cards('all').length,10);
+ assert.equal(cardsForTab('creator',undefined,Date.parse('2027-06-01T00:00:00Z')).length,4,'stale creator links expire without breaking the directory');
  assert.equal(advanceIndex(0,6,-1),5);
  assert.equal(advanceIndex(5,6,1),0);
  assert.equal(advanceIndex(9,0,1),0);
