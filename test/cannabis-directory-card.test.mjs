@@ -96,4 +96,12 @@ test('directory pagination retries, captures filters and reopens safely during p
  assert.equal(listing.children[1].textContent,'Iowa medical');
  assert.match(status.textContent,/IA.*Medical program only/);
  assert.equal(submit.disabled,false);
+ const maps=listing.children[5].children[1];
+ assert.equal(maps.hidden,false); // Address-backed directions still work.
+ form.listeners.submit({preventDefault(){}});
+ assert.equal(pending.length,6);
+ respond(5,[{...item('Montana source'),address:'',city:'Acton',state:'MT'}]);
+ await flush();
+ assert.equal(maps.hidden,true); // Official MT roster publishes only city, not street.
+ assert.equal(maps.href,undefined); // Never offer invented store directions.
 });
