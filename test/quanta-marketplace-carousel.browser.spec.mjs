@@ -42,3 +42,23 @@ test('original external marketplace links remain available when the listing inde
  await expect(panel.getByRole('link',{name:'Search Etsy'})).toHaveAttribute('href',/etsy\.com\/search/);
  await expect(panel.getByRole('link',{name:'Search Mercari'})).toHaveAttribute('href',/mercari\.com\/search/);
 });
+
+test('new search removes previous seller links before asynchronous results arrive',async({page})=>{
+ let release;const hold=new Promise(resolve=>{release=resolve});
+ await page.route(broker,async route=>{
+  const term=new URL(route.request().url()).searchParams.get('q')||'';
+  if(term.includes('second'))await hold;
+  const items=term.includes('ebay.com')?[{title:term.includes('first')?'Old listing':'New listing',
+   url:'https://www.ebay.com/itm/176734829110'}]:[];
+  await route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:JSON.stringify({results:items})});
+ });
+ await page.goto(base+'/quanta-feed-card.html?card=ebay',{waitUntil:'domcontentloaded'});
+ const panel=page.locator('.qcm-panel'),field=panel.getByRole('searchbox');
+ await field.fill('first radio');await panel.getByRole('button',{name:'Search listings'}).click();
+ await expect(panel.getByText('Old listing')).toBeVisible();
+ await field.fill('second radio');await panel.getByRole('button',{name:'Search listings'}).click();
+ await expect(panel.getByText('Old listing')).toHaveCount(0);
+ await expect(panel.getByRole('link',{name:'View listing on eBay'})).toHaveCount(0);
+ release();
+ await expect(panel.getByText('New listing')).toBeVisible();
+});
