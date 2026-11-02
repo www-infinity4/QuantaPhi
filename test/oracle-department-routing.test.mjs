@@ -31,3 +31,13 @@ test('Top dropdown routes normal department cards without showing age-restricted
  assert.match(deck,/oracle:restaurant-nationwide/);
  assert.match(deck,/const request=entries\.find\(x=>x\.id===spotlightRequested.*departmentMatches/);
 });
+
+
+test('Source imagery leads; merchant actions remain accessible and neutral, not fake big blue ad buttons',()=>{
+ const css=read('oracle-department-picker.css'),brands=read('infinity-accepted-cards.mjs');
+ assert.match(brands,/cardImageCandidates\(card\)/);
+ assert.match(css,/\.iac-media:not\(\.iac-logo-only\)/);
+ assert.match(css,/\.iac-website-actions :is\(button,a\)/);
+ assert.match(css,/background:#f8f9fa!important/);
+ assert.match(css,/min-height:44px!important/);
+});
