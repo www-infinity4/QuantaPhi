@@ -124,9 +124,9 @@ test('owner and Integra public readers report independently when one profile fai
   const success=rows.filter(item=>item.sql.includes('owner_x_scans')&&item.args.includes('public_posts_observed'));
   const blocked=rows.filter(item=>item.sql.includes('owner_x_scans')&&item.args.includes('blocked'));
   assert.equal(success.length,1);assert.equal(blocked.length,1);
-  if(good==='YahooPingcwlz')assert.match(success[0].sql,/VALUES \\('main',/);
+  if(good==='YahooPingcwlz')assert.match(success[0].sql,/VALUES \('main',/);
   else assert.equal(success[0].args[0],'IntegraAI');
-  if(bad==='YahooPingcwlz')assert.match(blocked[0].sql,/VALUES \\('main',/);
+  if(bad==='YahooPingcwlz')assert.match(blocked[0].sql,/VALUES \('main',/);
   else assert.equal(blocked[0].args[0],'IntegraAI');
  }
 });
