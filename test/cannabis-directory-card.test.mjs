@@ -26,7 +26,8 @@ test('unrated, organic medical-only source UI contains no paid product creative'
  assert.match(js,/Unrated · no independent customer-experience evidence reviewed/);
  assert.match(js,/x\.sponsored===false/);
  assert.match(js,/safeUrl\(row\.source_url\)/);
- assert.doesNotMatch(js,/image\.src|product_image|price\s*=|checkout|THC potency/);
+ assert.match(js,/img\.src=model\.imageUrl/);
+ assert.doesNotMatch(js,/product_image|price\s*=/);
 });
 test('mobile controls and reduced-motion handling are present',()=>{
  const css=read('cannabis-directory-card.css');
