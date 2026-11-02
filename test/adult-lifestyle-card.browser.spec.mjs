@@ -60,4 +60,9 @@ test('Android kit budget and source checklist work locally and vanish after the 
  await card.getByRole('button',{name:'Close 21+ websites'}).click();
  await expect(plan).toBeHidden();
  await expect(card.locator('.rac-kit-link')).toHaveCount(0);
+ await card.getByRole('button',{name:'I am 21+ · Browse original websites'}).click();
+ await card.locator('.rac-kit-select').selectOption('room-party');
+ await card.getByRole('button',{name:'Build a kit research plan'}).click();
+ await expect(plan.locator('input[name="budget"]')).toHaveValue('300.00');
+ await expect(plan.locator('input[name="region"]')).toHaveValue('');
 });
