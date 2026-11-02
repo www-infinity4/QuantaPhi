@@ -192,3 +192,30 @@ test('a duplicate signed server executor cannot cancel the in-flight GPT-to-Bubb
  assert.equal(JSON.parse(row.result).output,'The verified answer arrived.');
  assert.equal((await serverAssist({...f.args,body:{operation:'result'}})).state,'complete');
 });
+
+
+test('signed multi-step weather retains actual step outcomes without leaking arguments or source text',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'Weather verified in two towns',answerStatus:'complete',
+  receipt:{tool:'agent.read_sequence',status:'complete',steps:[
+   {tool:'weather.current',status:'complete',arguments:{location:'Private home address',token:'secret'}},
+   {tool:'weather.current',status:'complete',output:'private weather discussion'},
+   {tool:'owner.delete_wallet',status:'complete',details:'must never propagate'}
+  ]}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Weather in two named towns'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete');
+ assert.deepEqual(r.result.receipt.steps,[{tool:'weather.current',status:'complete'},{tool:'weather.current',status:'complete'}]);
+ assert.doesNotMatch(JSON.stringify(r.result),/Private home address|secret|private weather discussion|owner\.delete_wallet/);
+});
+test('signed partial multi-step research retains failed step status instead of greenwashing it',async()=>{
+ const f=setup();f.args.fetcher=async()=>Response.json({ok:true,output:'Partial observed results',answerStatus:'partial',
+  receipt:{tool:'agent.read_sequence',status:'partial',steps:[
+   {tool:'github.read_repository',status:'failed'},{tool:'github.read_file',status:'complete'}]}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Read repo and README'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete','transport itself finished');
+ assert.equal(r.result.answerStatus,'partial');
+ assert.equal(r.result.receipt.status,'partial');
+ assert.deepEqual(r.result.receipt.steps,[{tool:'github.read_repository',status:'failed'},{tool:'github.read_file',status:'complete'}]);
+});
