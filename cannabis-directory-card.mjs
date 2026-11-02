@@ -2,7 +2,16 @@
  * Not a product advertisement, age-verification system or medical recommendation.
  * No store data is requested before per-visit display acknowledgment.
  * No cookies, wallet, ID, user profiling or persistent consent storage. */
-import {directoryCardView,uniqueStoreCards} from './cannabis-directory-cards.mjs';
+// The publisher model is imported only after the user elects 21+ browsing.
+// This keeps the original directory script compatible with older browsers.
+let directoryCardView=null,uniqueStoreCards=null;
+async function sourceCardModel(){
+ if(!directoryCardView){
+  const module=await import('./cannabis-directory-cards.mjs');
+  directoryCardView=module.directoryCardView;
+  uniqueStoreCards=module.uniqueStoreCards;
+ }
+}
 const root=document.getElementById('cannabisDirectoryCard');
 if(root){
  const make=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n};
@@ -33,7 +42,7 @@ if(root){
  const nav=make('div','icd-nav'),prev=make('button','icd-control','‹ Previous'),next=make('button','icd-control','Next ›'),count=make('span','icd-count');
  prev.type=next.type='button';nav.append(prev,count,next);nav.hidden=true;
  const hide=make('button','icd-quiet','Hide 21+ directory');hide.type='button';hide.hidden=true;
- root.append(kicker,title,intro,gate,form,status,nationwide,listing,nav,hide);
+ root.append(kicker,title,intro,gate,form,status,listing,nav,hide,nationwide);
  let acknowledged=false,rows=[],index=0,page=0,hasMore=false,loading=false,version=0,filters=null;
  const cardHost=document.getElementById('cannabisDirectoryCards');
  let nationalSession=0;
@@ -82,6 +91,7 @@ if(root){
    const response=await fetch('/api/21-directory/coverage',{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(12000)});
    if(!response.ok)throw Error('coverage_unavailable');
    const data=await response.json();if(!acknowledged||session!==nationalSession)return;
+   await sourceCardModel();if(!acknowledged||session!==nationalSession)return;
    const populated=(Array.isArray(data.states)?data.states:[]).filter(r=>Number(r.listed_records)>0&&STATES.includes(r.state));
    let accepted=0;
    // One state page at a time: mobile friendly, no huge 50-state DOM at startup.
@@ -97,7 +107,7 @@ if(root){
      const known=cardChildren().map(c=>c.id);
      const fresh=uniqueStoreCards(result.items||[],known);
      for(const row of fresh)if(buildIndividual(row))accepted++;
-     window.dispatchEvent(new CustomEvent('quantaphi:directory-cards-ready'));
+     globalThis.window?.dispatchEvent?.(new CustomEvent('quantaphi:directory-cards-ready'));
      more=result.has_more===true;page++;
     }
     nationwide.textContent='Cloudflare sources: '+Number(data.total_listed||0)+
@@ -153,7 +163,7 @@ if(root){
  }
  function close(){
   nationalSession++;for(const c of cardChildren())c.hidden=true;
-  window.dispatchEvent(new CustomEvent('quantaphi:directory-cards-ready'));
+  globalThis.window?.dispatchEvent?.(new CustomEvent('quantaphi:directory-cards-ready'));
   nationwide.hidden=true;
   acknowledged=false;version++;loading=false;submit.disabled=false;filters=null;
   rows=[];index=0;page=0;hasMore=false;
