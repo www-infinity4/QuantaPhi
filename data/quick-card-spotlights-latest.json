@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T02:28:22.004326Z",
+  "checked_at": "2026-11-02T10:56:22.659926Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -197,7 +197,7 @@
     },
     "burger-king-chicken-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://news.bk.com/",
@@ -205,7 +205,7 @@
           "title": "Burger King® Expands Its Iconic Original Chicken Sandwich Lineup with Two Bold New Flavors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Restaurants"
         },
         {
@@ -214,7 +214,7 @@
           "title": "Hello Kitty® and Friends Are Coming to Burger King®",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Restaurants"
         },
         {
@@ -223,7 +223,7 @@
           "title": "Burger King® Serves Up Game Day Flavor with New Stadium-Inspired Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Restaurants"
         },
         {
@@ -232,14 +232,14 @@
           "title": "Burger King® Gives New Chicken Nuggets The High-Fashion Treatment With “Le Nugguette”",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Restaurants"
         }
       ]
     },
     "kraft-mac-cheese": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.kraftheinz.com/kraft-mac-and-cheese",
@@ -247,7 +247,7 @@
           "title": "Site Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Food & recipes"
         },
         {
@@ -256,7 +256,7 @@
           "title": "An image displaying two Kraft Mac & Cheese products. On the left, against a solid blue background, the word \"products\" is written in large white text. To the right, on a split blue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Food & recipes"
         },
         {
@@ -265,7 +265,7 @@
           "title": "An image featuring two limited-edition Kraft Mac & Cheese boxes: a red \"Pizza Flavored\" box with pizza slice graphics and a green \"Jalapeño Flavored\" box with a jalapeño pepper gra",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Food & recipes"
         },
         {
@@ -274,7 +274,7 @@
           "title": "Kraft PowerMac and Original Mac & Cheese boxes next to a prepared bowl of macaroni on a blue and yellow background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Food & recipes"
         },
         {
@@ -283,7 +283,7 @@
           "title": "Kraft Heinz logo on a purple background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Food & recipes"
         },
         {
@@ -292,7 +292,7 @@
           "title": "Collage with packages from all the Kraft Heinz brands on a red background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Food & recipes"
         },
         {
@@ -301,7 +301,7 @@
           "title": "A plate of pasta and meat on a yellow background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Food & recipes"
         },
         {
@@ -310,69 +310,69 @@
           "title": "A slice of pumpkin cheesecake topped with whipped cream, served on a plate next to a gold fork.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T19:59:11.592933Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Food & recipes"
         }
       ]
     },
     "heritage": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "topps": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "beckett": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "christies": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "shoplc-premium": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "kohls-coupons": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "honda-vehicles": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "oakley-meta": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "gmc-trucks": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "gmc-sierra-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "gmc-denali-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T19:59:11.592933Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "carhartt-shop": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.carhartt.com/product/107726?icid=2026-10-21_hp__1up_none_clickable_pdp_grt-lnds_great-lands-107726_allvisitors_lifestyle_20788",
@@ -380,7 +380,7 @@
           "title": "Coverall",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing"
         },
         {
@@ -389,7 +389,7 @@
           "title": "Jacket",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing"
         },
         {
@@ -398,14 +398,14 @@
           "title": "Jacket",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing"
         }
       ]
     },
     "hurley-surfwear": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.hurley.com/",
@@ -413,7 +413,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing"
         },
         {
@@ -422,7 +422,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing"
         },
         {
@@ -431,7 +431,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing"
         },
         {
@@ -440,7 +440,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing"
         },
         {
@@ -449,7 +449,7 @@
           "title": "Phantom Eco Weekender Slub 20\" - Black / 26IN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing",
           "offer": {
             "price": "59.95",
@@ -464,7 +464,7 @@
           "title": "Phantom Naturals Tailgate 18\" - Brown / 26IN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing",
           "offer": {
             "price": "59.95",
@@ -479,7 +479,7 @@
           "title": "Bottlecap Short Sleeve - Destroyer / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Clothing",
           "offer": {
             "price": "36.00",
@@ -492,7 +492,7 @@
     },
     "royal-caribbean-cruises": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.royalcaribbean.com/",
@@ -500,7 +500,7 @@
           "title": "Best Cruise, Vacation and Travel Deals | Royal Caribbean Official Site",
           "kind": "website",
           "description": "Book cruises and vacation deals on the official Royal Caribbean site. Sail to the Caribbean, Bahamas, Perfect Day CocoCay, Mexico, Alaska and Europe.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Travel"
         },
         {
@@ -509,7 +509,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Travel"
         },
         {
@@ -518,7 +518,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Travel"
         },
         {
@@ -527,14 +527,14 @@
           "title": "lg banner 640 480 1x",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Travel"
         }
       ]
     },
     "durable-channellock": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.channellock.com",
@@ -542,7 +542,7 @@
           "title": "CHANNELLOCK®: High-Quality Hand Tools - Channellock, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -551,7 +551,7 @@
           "title": "CHANNELLOCK® adjustable pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -560,7 +560,7 @@
           "title": "CHANNELLOCK® groove-joint pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -569,14 +569,14 @@
           "title": "CHANNELLOCK® locking pliers with blue and black handles and serrated jaws.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-wright-tool": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.wrighttool.com/",
@@ -584,7 +584,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -593,7 +593,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -602,7 +602,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -611,14 +611,14 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-estwing": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.estwing.com/",
@@ -626,7 +626,7 @@
           "title": "Home - Estwing",
           "kind": "website",
           "description": "ProfessionalOutdoorHome Who’s Behind Your Swing? When it’s an Estwing, every strike, every detail counts. https://vimeo.com/1091256749 Estwing 100 Years of a Genuine American Icon How a true American legend grew to become the hand tool of choice for generation",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -635,7 +635,7 @@
           "title": "Shop - Estwing",
           "kind": "website",
           "description": "Select CategorySure Strike— Specialty— Roofing Tools— Pry Tools— Nail HammersSpecialty— Welding & Tinner’s— Lineman’s— Drywall— Drilling & Engineer’s— Bricklayer— Ball PeenSafetyRoofing— Shingler’s Hatchet— Shingler’s Hammer— Rigger’s Axes— Carpenter’s Hatchet",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -644,7 +644,7 @@
           "title": "Titanium Hammer (Black) - Estwing",
           "kind": "website",
           "description": "Power meets precision in a lightweight design as this titanium hammer delivers the striking force of a heavier steel hammer without the added weight. Its magnetic nail starter makes setting nails quick and easy. The Shock Reduction Grip® offers the utmost in b",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -653,7 +653,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -662,7 +662,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_02_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -671,7 +671,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_03_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -680,7 +680,7 @@
           "title": "Timber Titan™ Splitting Tool (Blue) - Estwing",
           "kind": "website",
           "description": "Estwing’s Timber Titan™ Splitting Tool is the ultimate long-handle splitting tool, designed for fast, efficient, and precise wood splitting.",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -689,24 +689,24 @@
           "title": "prod_outdoor_splitting_tools_E6-TT4_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-knipex": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "durable-wera": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": []
     },
     "durable-wiha": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.wihatools.com/account/login",
@@ -714,7 +714,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -723,7 +723,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -732,7 +732,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -741,7 +741,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -750,14 +750,14 @@
           "title": "158 piece Overlanding Kit in Rolling Tool Box",
           "kind": "product",
           "description": "Introducing the 158 Piece Industrial MRO Rolling Case Kit; a masterclass in tool storage, protection, and versatility. This premium case is custom molded to perfection, featuring custom foam tray compartments for each tool, ensuring they are securely held in p",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "1614.09",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock",
-            "valid_until": "2026-11-10T23:59:59+00:00"
+            "valid_until": "2026-11-12T23:59:59+00:00"
           }
         },
         {
@@ -766,21 +766,21 @@
           "title": "194 Piece Premium Kit In Rolling Tool Box",
           "kind": "product",
           "description": "The Wiha 194 Piece Premium Tool Kit In Rolling Tool Box is designed to empower contractors and professionals with a comprehensive set of high-quality tools for all their needs. With an extensive array of 194 must-have pieces, Wiha’s Premium Tool Kit is the per",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "1199.99",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock",
-            "valid_until": "2026-11-10T23:59:59+00:00"
+            "valid_until": "2026-11-12T23:59:59+00:00"
           }
         }
       ]
     },
     "durable-pb-swiss-tools": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
@@ -788,7 +788,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -797,7 +797,7 @@
           "title": "PB 6464",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -806,7 +806,7 @@
           "title": "PB 900 V01",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -815,7 +815,7 @@
           "title": "PB C6 192",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -824,7 +824,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -833,7 +833,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -842,7 +842,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -851,14 +851,14 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-snap-on": {
       "schema_version": 1,
-      "attempted_at": "2026-10-31T23:21:58.598437Z",
+      "attempted_at": "2026-11-02T10:56:22.659926Z",
       "items": [
         {
           "url": "https://www.snapon.com/EN/Makers-and-Fixers",
@@ -866,7 +866,7 @@
           "title": "Snap-on Makers and Fixers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-10-31T23:21:58.598437Z",
+          "checked_at": "2026-11-02T10:56:22.659926Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
