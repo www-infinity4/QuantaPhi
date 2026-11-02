@@ -85,3 +85,16 @@ test('the real chat turn emits completion and Think cannot remain permanently ac
  assert.match(failed.think.message,/failed|could not/i);
  assert.match(src('bubbles-ai.js'),/type:'turn_finished',failed:failedTurn/);
 });
+
+test('a failed turn remains visibly blocked after queued orb mutations until a fresh turn',()=>{
+ let state=applyIterationEvent(newIterationState(),{type:'turn_started'});
+ state=applyIterationEvent(state,{type:'turn_finished',failed:true});
+ assert.equal(state.think.status,'blocked');
+ state=applyIterationEvent(state,{type:'orb',state:'idle'});
+ assert.equal(state.think.status,'blocked','late idle orb cannot erase a failed turn');
+ state=applyIterationEvent(state,{type:'orb',state:'listening'});
+ assert.equal(state.think.status,'blocked');
+ assert.equal(state.listen.status,'active');
+ state=applyIterationEvent(state,{type:'turn_started'});
+ assert.equal(state.think.status,'active','a new turn clears the old failure');
+});
