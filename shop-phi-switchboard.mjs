@@ -226,7 +226,7 @@ if(typeof document!=='undefined'){
     paused:rotationPaused,reducedMotion})||!visibleCards.length||contextFor(active).sensitive)return;
    const lastPage=Math.ceil(visibleCards.length/2)-1;
    if(visiblePage>=lastPage){
-    const chapter=chapterFor([active.title,active.description].join(' '));
+    const chapter=chapterFor([active.title,active.category,active.description].join(' '));
     if(visibleCards.some(c=>c.image)&&chapter){
      window.dispatchEvent(new CustomEvent('quantaphi:showcase-chapter-complete',
       {detail:{id:active.id,chapter}}));
