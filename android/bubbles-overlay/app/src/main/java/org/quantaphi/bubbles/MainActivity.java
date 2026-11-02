@@ -802,9 +802,10 @@ public final class MainActivity extends Activity {
         boolean shell = "shell".equals(kind);
         new AlertDialog.Builder(this)
             .setTitle(shell ? "Check Termux shell" : "Test Python with Termux")
-            .setMessage(shell
-                ? "Run a fixed sh built-in printf diagnostic in the installed Termux app? No Python, temp files or packages are required. No installation or other commands will run."
-                : "Run a fixed Python 2 + 2 diagnostic in the real Termux app? No packages will be installed. Below 16 MiB free, no test file is created. Otherwise the one temporary test directory is removed after execution. Python, projects and credentials stay intact.")
+            .setMessage((shell
+                ? "Run this sh built-in diagnostic in the installed Termux app? No Python, temp files or packages are required."
+                : "Run this Python diagnostic in Termux? No packages are installed. Below 16 MiB free, no test files are created. Otherwise its one temporary test directory is cleaned after execution.")
+                + "\n\nExact code to run:\n" + (shell ? TermuxProbe.SHELL_SCRIPT : TermuxProbe.SCRIPT))
             .setNegativeButton("Cancel", (dialog, which) -> { TermuxProbe.cancel(this, kind); state.setText("Termux check cancelled. Nothing was executed."); })
             .setPositiveButton(shell ? "Check Termux" : "Test Python", (dialog, which) -> state.setText(TermuxProbe.run(this, kind)))
             .show();
