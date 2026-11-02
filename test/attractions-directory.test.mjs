@@ -11,8 +11,8 @@ test('50 US states queued, Colorado prioritized, isolated database schema',()=>{
  assert.match(read('data/attractions/schema.sql'),/CREATE TABLE IF NOT EXISTS attractions/);
  assert.doesNotMatch(read('data/attractions/schema.sql'),/CREATE TABLE IF NOT EXISTS restaurants/);
 });
-test('ten licensed source-backed original entries and safe normalization',()=>{
- assert.equal(seed.items.length,10);
+test('twelve licensed source-backed original entries and safe normalization',()=>{
+ assert.equal(seed.items.length,12);
  const blackCanyon=seed.items.find(x=>x.id==='curated:colorado-black-canyon-south-rim');
  assert.ok(blackCanyon);
  assert.equal(blackCanyon.source_url,'https://www.nps.gov/blca/planyourvisit/southrim.htm');
@@ -23,7 +23,7 @@ test('ten licensed source-backed original entries and safe normalization',()=>{
   assert.equal(row.state,'CO');assert.equal(row.image_url,'');assert.equal('price' in row,false);assert.equal('sponsored' in row,false);
  }
  const npsNew=['great-sand-dunes','mesa-verde','florissant-fossil-beds'];
- assert.equal(new Set(seed.items.map(x=>x.id)).size,10);
+ assert.equal(new Set(seed.items.map(x=>x.id)).size,12);
  for(const suffix of npsNew){
   const item=seed.items.find(x=>x.id==='curated:colorado-'+suffix);
   assert.ok(item,'missing NPS-sourced park: '+suffix);
@@ -31,6 +31,17 @@ test('ten licensed source-backed original entries and safe normalization',()=>{
   assert.match(item.source_url,/^https:\/\/www\.nps\.gov\/(grsa|meve|flfo)\/index\.htm$/);
   assert.equal(item.image_url,'');assert.equal(item.image_attribution,'');
   assert.ok(item.confidence<=0.9,'park point is approximate, not a visitor entrance');
+ }
+ for(const [id,latitude,longitude,source] of [
+  ['curated:colorado-saddlehorn-visitor-center',39.10075,-108.73445,'https://www.nps.gov/colm/planyourvisit/directions.htm'],
+  ['curated:colorado-bents-old-fort',38.039775,-103.42665,'https://www.nps.gov/beol/planyourvisit/basicinfo.htm']
+ ]) {
+  const item=seed.items.find(x=>x.id===id);
+  assert.ok(item,'missing independently sourced NPS visitor site: '+id);
+  assert.equal(item.latitude,latitude);assert.equal(item.longitude,longitude);
+  assert.equal(item.source_url,source);
+  assert.equal(item.image_url,'');assert.equal(item.image_attribution,'');
+  assert.equal(item.source_name,'National Park Service');
  }
  const a=seed.items[0];
  assert.equal(cleanRecord({...a,website:'javascript:alert(1)'},'CO',seed.generated_at).website,'');
