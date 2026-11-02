@@ -12,6 +12,9 @@ test('Midwest law profiles keep Iowa distinct from Illinois and Missouri',()=>{
  assert.equal(policy('MO').adult_use,'legal_with_conditions');
  assert.equal(policy('MN').adult_use,'unreviewed');
  assert.equal(policy('MN').medical_program,true);
+ assert.equal(policy('FL').adult_use,'not_authorized');
+ assert.equal(policy('FL').medical_program,true);
+ assert.equal(policy('FL').source_url,'https://knowthefactsmmj.com/mmtc/');
  assert.equal(policy('NH').adult_use,'not_authorized');
  assert.equal(policy('NH').medical_program,true);
  assert.equal(policy('NH').source_url,'https://www.dhhs.nh.gov/sites/g/files/ehbemt476/files/documents/2021-11/tcp-infosheetpatient.pdf');
@@ -29,6 +32,21 @@ test('a site is a sourced organic listing, never automatically a paid offer',()=
  assert.equal(eligibleStore(row,false),null);
  assert.equal(eligibleStore({...row,source_url:'https://evil.example.com/'},true),null);
  assert.equal(eligibleStore({...row,record_status:'review'},true),null);
+ assert.equal(eligibleStore({...row,paid_sponsor:1},true),null);
+});
+test('Florida official medical-only listing never asserts license approval, paid advertising, or adult-use eligibility',()=>{
+ const row={id:'fl-ommu:sample',name:'Sample medical MMTC location',state:'FL',city:'Gainesville',
+  source_url:'https://knowthefactsmmj.com/mmtc/',source_domain:'knowthefactsmmj.com',
+  source_name:'Florida DOH Office of Medical Marijuana Use',record_status:'listed',paid_sponsor:0,
+  license_status:'medical_only_ommu_location_individual_license_unverified',license_verified:0,
+  rights_cleared:0,official_source:1};
+ assert.equal(policy('FL').adult_use,'not_authorized');
+ assert.equal(eligibleStore(row,false),null);
+ const visible=eligibleStore(row,true);
+ assert.equal(visible.sponsored,false);
+ assert.equal(visible.license_verified,0);
+ assert.equal(visible.product_image,'');
+ assert.equal(visible.price,null);
  assert.equal(eligibleStore({...row,paid_sponsor:1},true),null);
 });
 test('quality signals use source evidence, never health or potency guesses',()=>{
