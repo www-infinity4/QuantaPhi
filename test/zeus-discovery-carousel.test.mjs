@@ -18,8 +18,11 @@ test('Infinity edition cards reuse existing four Coliseum editions with truthful
 test('public directory cards open truthful provider destinations; no fake GPT IDs or prices',()=>{
  const dirs=DISCOVERY_CARDS.filter(x=>x.kind==='directory');
  assert.deepEqual(dirs.map(x=>x.id),['existing-gpts','creator-plugins']);
+ const verified=DISCOVERY_CARDS.filter(x=>x.kind==='verified-plugin');
+ assert.deepEqual(verified.map(x=>x.id),['consensus-plugin','data-analytics-plugin']);
+ assert.ok(verified.every(x=>x.status==='verified-link'&&x.url.startsWith('https://chatgpt.com/plugins/')));
  assert.equal(dirs[0].url,'https://chatgpt.com/gpts');
- assert.equal(dirs[1].url,'https://learn.chatgpt.com/docs/plugins');
+ assert.equal(dirs[1].url,'https://chatgpt.com/plugins');
  assert.ok(DISCOVERY_CARDS.every(x=>!x.members&&x.priceCharged===undefined));
 });
 test('creator GPT listings only enter the carousel with verified source, rights and HTTPS links',()=>{
@@ -30,9 +33,9 @@ test('creator GPT listings only enter the carousel with verified source, rights 
  }
 });
 test('tabs and movement are deterministic and never invent unpublished creators',()=>{
- assert.equal(cardsForTab('creator').length,2);
+ assert.equal(cardsForTab('creator').length,4);
  assert.equal(cardsForTab('infinity').length,4);
- assert.equal(cardsForTab('all').length,6);
+ assert.equal(cardsForTab('all').length,8);
  assert.equal(advanceIndex(0,6,-1),5);
  assert.equal(advanceIndex(5,6,1),0);
  assert.equal(advanceIndex(9,0,1),0);
