@@ -170,3 +170,15 @@ test('Bubbles owner prompts use curated continuity and public embeds keep their 
  assert.match(js,/continuity\.note/);
  assert.match(js,/embedded\|\|!ownerReady/);
 });
+
+test('owner closure phrased as "is fixed" or "we have fixed" stops stale Cardonay replay, without swallowing new defects',async()=>{
+ for(const note of ['The Cardonay card is fixed now.',"We've fixed Gary Cardone already.",'Cardone has been repaired.']){
+  assert.equal(cardWorkTargetFor('Fix that card',[{role:'user',text:'The Gary Cardone card was broken'},{role:'user',text:note}]),null,note);
+ }
+ const {curateOwnerTaskContext}=await import('../bubbles-task-context.mjs');
+ const capital=curateOwnerTaskContext('Explain the Cardone Capital Westshore investment',{related:[],recent:[]});
+ assert.match(capital.note,/Cardone Capital/i);
+ assert.doesNotMatch(capital.note,/#1079/,'Gary Cardone carousel evidence is not Grant Cardone fund evidence');
+ const owner=curateOwnerTaskContext("We've fixed Cardonay. Stop opening that repair.",{related:[],recent:[]});
+ assert.match(owner.note,/do not dispatch a Cardone repair/);
+});
