@@ -54,3 +54,9 @@
   .holiday-navigation { justify-content: space-between; }
 }
 @media (prefers-reduced-motion: reduce) { #holidayPhi * { animation: none !important; scroll-behavior: auto !important; } }
+
+/* The preserved PhiCinemaReel mounts legacy hphi-* classes within this card. */
+.holiday-reel .hphi-studio { margin-top: 14px; padding: 12px; border: 1px solid #dedbd5; border-radius: 14px; background: white; }
+.holiday-reel .hphi-player-host iframe, .holiday-reel .hphi-player-host video,
+.holiday-reel .hphi-studio > video { display: block; width: 100%; max-height: 55vh; aspect-ratio: 16/9; border: 0; border-radius: 10px; background: #111; }
+.holiday-reel .hphi-studio input { max-width: 100%; }
