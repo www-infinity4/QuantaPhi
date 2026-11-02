@@ -50,3 +50,24 @@
 .rac-kit-link{display:flex;align-items:center;justify-content:center;padding:9px;min-height:48px;border-radius:11px;background:#f5f7f8;color:#223b4d!important;border:1px solid #d9dfe4;text-decoration:none;text-align:center;font-size:13px;font-weight:700;overflow-wrap:anywhere}
 .rac-kit-link:focus-visible{outline:3px solid #77abc9;outline-offset:2px}
 @media(max-width:390px){.rac-kit-links{grid-template-columns:1fr}#infinityAdultContentCard .rac-kitbar .rac-button{width:100%}}
+
+/* Local purpose-kit checklist: restrained, readable and not a fabricated shopping cart. */
+#infinityAdultContentCard .rac-plan-open{width:100%;margin:0 0 12px;min-height:48px}
+#infinityAdultContentCard .rac-plan[hidden],#infinityAdultContentCard .rac-plan-summary[hidden]{display:none!important}
+.rac-plan{border:1px solid #d8dfe3;border-radius:13px;padding:12px;background:#fbfcfc;margin:0 0 14px}
+.rac-plan-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.rac-plan-field{font-size:13px;font-weight:700;color:#354651;display:flex;flex-direction:column;gap:4px}
+#infinityAdultContentCard .rac-plan-field input{width:100%;min-width:0;box-sizing:border-box;min-height:46px;padding:10px 11px;border:1px solid #b8c4cc;border-radius:10px;background:#fff;color:#203742;font:inherit;font-weight:400}
+#infinityAdultContentCard .rac-plan-field input:focus-visible{outline:3px solid #77abc9;outline-offset:2px}
+#infinityAdultContentCard .rac-plan-submit{grid-column:1/-1;min-height:48px}
+.rac-plan-status,.rac-plan-evidence{font-size:13px;line-height:1.5;color:#465760;margin:10px 0}
+.rac-plan-summary{margin:8px 0;padding:12px;background:#fff;border:1px solid #e1e6e9;border-radius:12px}
+.rac-plan-title{font-size:16px!important;margin:0 0 10px!important;color:#223743}
+.rac-plan-list{padding-left:20px;margin:0;display:grid;gap:9px}
+.rac-plan-item{padding:4px 0;font-size:14px;line-height:1.4}
+.rac-plan-item strong{display:block;color:#243d4b}
+.rac-plan-role{display:block;font-size:12px;color:#62737c}
+.rac-plan-link,.rac-plan-power{display:inline-block;font-size:13px;font-weight:700;color:#185781!important;padding:4px 0}
+.rac-plan-power{margin:8px 0 0}
+#infinityAdultContentCard .rac-kit-active{border-color:#4a7a91;background:#eaf2f5;color:#163e53!important}
+@media(max-width:420px){.rac-plan-form{grid-template-columns:1fr}.rac-plan-field{grid-column:1/-1}}
