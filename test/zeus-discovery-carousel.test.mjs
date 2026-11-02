@@ -27,10 +27,11 @@ test('public directory cards open truthful provider destinations; no fake GPT ID
  assert.ok(DISCOVERY_CARDS.every(x=>!x.members&&x.priceCharged===undefined));
 });
 test('creator GPT listings only enter the carousel with verified source, rights and HTTPS links',()=>{
+ const fixedAt=Date.parse('2026-11-02T02:00:00Z');
  const proposal={id:'writer-helper',kind:'gpt',name:'Writer helper',creator:'Example publisher',description:'A short description',url:'https://chatgpt.com/g/g-abc123-writer',reviewedAt:'2026-11-01T20:00:00Z',sourceStatus:'verified',permission:'public-link'};
- assert.equal(approveCreatorEntry(proposal)?.id,'writer-helper');
+ assert.equal(approveCreatorEntry(proposal,fixedAt)?.id,'writer-helper');
  for(const patch of [{url:'javascript:alert(1)'},{url:'https://evil.example/g/g-foo'},{url:'https://chatgpt.com.evil.example/g/g-foo'},{url:'https://chatgpt.com/gpts'},{sourceStatus:'pending'},{permission:'unknown'},{creator:''},{name:''},{reviewedAt:'not-a-date'},{id:'../evil'}]){
-  assert.equal(approveCreatorEntry({...proposal,...patch}),null,JSON.stringify(patch));
+  assert.equal(approveCreatorEntry({...proposal,...patch},fixedAt),null,JSON.stringify(patch));
  }
 });
 test('tabs and movement are deterministic and never invent unpublished creators',()=>{
