@@ -34,7 +34,7 @@ test('holiday sources show actual images, in-card video, and rights/source links
   assert.match(js, /commons\.wikimedia\.org\/w\/api\.php/);
   assert.match(js, /archive\.org\/advancedsearch\.php/);
   assert.match(js, /▶ Play here/);
-  assert.match(js, /createElement\('iframe'\)/);
+  assert.match(js, /create\('iframe'\)/);
   assert.match(js, /Original source/);
 });
 
