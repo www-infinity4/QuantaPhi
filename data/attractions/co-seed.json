@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "source_name": "QuantaPhi curated official visitor links",
-  "dataset_version": "2026-11-01-seven-colorado-cards",
-  "generated_at": "2026-11-01T16:34:00Z",
+  "dataset_version": "2026-11-02-ten-colorado-cards",
+  "generated_at": "2026-11-02T00:27:33Z",
   "state": "CO",
   "license": "original_directory_entries",
   "items": [
@@ -118,6 +118,54 @@
       "image_url": "",
       "image_attribution": "",
       "confidence": 1
+    },
+    {
+      "id": "curated:colorado-great-sand-dunes",
+      "name": "Great Sand Dunes National Park & Preserve",
+      "city": "Mosca",
+      "state": "CO",
+      "category": "national_park",
+      "latitude": 37.74794,
+      "longitude": -105.612999,
+      "website": "https://www.nps.gov/grsa/index.htm",
+      "source_name": "National Park Service",
+      "source_url": "https://www.nps.gov/grsa/index.htm",
+      "license": "US-government-information",
+      "image_url": "",
+      "image_attribution": "",
+      "confidence": 0.9
+    },
+    {
+      "id": "curated:colorado-mesa-verde",
+      "name": "Mesa Verde National Park",
+      "city": "Mesa Verde National Park",
+      "state": "CO",
+      "category": "national_park",
+      "latitude": 37.223499,
+      "longitude": -108.500999,
+      "website": "https://www.nps.gov/meve/index.htm",
+      "source_name": "National Park Service",
+      "source_url": "https://www.nps.gov/meve/index.htm",
+      "license": "US-government-information",
+      "image_url": "",
+      "image_attribution": "",
+      "confidence": 0.9
+    },
+    {
+      "id": "curated:colorado-florissant-fossil-beds",
+      "name": "Florissant Fossil Beds National Monument",
+      "city": "Florissant",
+      "state": "CO",
+      "category": "national_monument",
+      "latitude": 38.912601,
+      "longitude": -105.279999,
+      "website": "https://www.nps.gov/flfo/index.htm",
+      "source_name": "National Park Service",
+      "source_url": "https://www.nps.gov/flfo/index.htm",
+      "license": "US-government-information",
+      "image_url": "",
+      "image_attribution": "",
+      "confidence": 0.9
     }
   ]
 }

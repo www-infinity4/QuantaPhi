@@ -11,8 +11,8 @@ test('50 US states queued, Colorado prioritized, isolated database schema',()=>{
  assert.match(read('data/attractions/schema.sql'),/CREATE TABLE IF NOT EXISTS attractions/);
  assert.doesNotMatch(read('data/attractions/schema.sql'),/CREATE TABLE IF NOT EXISTS restaurants/);
 });
-test('seven licensed source-backed original entries and safe normalization',()=>{
- assert.equal(seed.items.length,7);
+test('ten licensed source-backed original entries and safe normalization',()=>{
+ assert.equal(seed.items.length,10);
  const blackCanyon=seed.items.find(x=>x.id==='curated:colorado-black-canyon-south-rim');
  assert.ok(blackCanyon);
  assert.equal(blackCanyon.source_url,'https://www.nps.gov/blca/planyourvisit/southrim.htm');
@@ -21,6 +21,16 @@ test('seven licensed source-backed original entries and safe normalization',()=>
  assert.equal(blackCanyon.image_url,'');assert.deepEqual(seedSources('CO'),['co-seed.json','co-overture-nw.json','co-overture-ne.json','co-overture-sw.json','co-overture-se.json']);
  for(const item of seed.items){const row=cleanRecord(item,'CO',seed.generated_at);assert.ok(row,item.id);
   assert.equal(row.state,'CO');assert.equal(row.image_url,'');assert.equal('price' in row,false);assert.equal('sponsored' in row,false);
+ }
+ const npsNew=['great-sand-dunes','mesa-verde','florissant-fossil-beds'];
+ assert.equal(new Set(seed.items.map(x=>x.id)).size,10);
+ for(const suffix of npsNew){
+  const item=seed.items.find(x=>x.id==='curated:colorado-'+suffix);
+  assert.ok(item,'missing NPS-sourced park: '+suffix);
+  assert.equal(item.source_name,'National Park Service');
+  assert.match(item.source_url,/^https:\/\/www\.nps\.gov\/(grsa|meve|flfo)\/index\.htm$/);
+  assert.equal(item.image_url,'');assert.equal(item.image_attribution,'');
+  assert.ok(item.confidence<=0.9,'park point is approximate, not a visitor entrance');
  }
  const a=seed.items[0];
  assert.equal(cleanRecord({...a,website:'javascript:alert(1)'},'CO',seed.generated_at).website,'');
