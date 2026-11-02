@@ -1,0 +1,56 @@
+/* Neutral Oracle Octaves holiday quick card, mobile-first.
+   The artwork belongs to the sourced media, not decorative fake advertisements. */
+#holidayPhi { margin: 18px 0; color: #302b28; }
+#holidayPhi [hidden] { display: none !important; }
+.holiday-card { width: 100%; box-sizing: border-box; background: #fffdfa; border: 1px solid #dedbd5;
+  border-radius: 22px; padding: clamp(14px, 3vw, 24px); box-shadow: 0 8px 28px #29231a12;
+  overflow-wrap: anywhere; }
+.holiday-header h2 { color: #262522; margin: 6px 0; font-size: clamp(25px, 4.5vw, 36px); line-height: 1.18; }
+.holiday-eyebrow { font-size: 11px; letter-spacing: .1em; color: #756a5f; font-weight: 800; }
+.holiday-intro { color: #504c46; line-height: 1.5; margin: 8px 0 14px; max-width: 780px; }
+.holiday-subtitle { font-size: 13px; color: #6c6257; font-weight: 700; margin: 7px 0; }
+.holiday-tabs, .holiday-types, .holiday-navigation, .holiday-actions { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; margin: 12px 0; }
+.holiday-card button, .holiday-card .holiday-link { appearance: none; min-height: 44px; border: 1px solid #d3d1cb;
+  border-radius: 11px; background: #f8f8f6; color: #302c28; padding: 10px 14px; font: 700 13px/1.35 system-ui, sans-serif;
+  cursor: pointer; display: inline-flex; justify-content: center; align-items: center; text-align: center; text-decoration: none; }
+.holiday-card button:hover, .holiday-card .holiday-link:hover { background: #ebebe9; }
+.holiday-card button[aria-pressed="true"] { background: #373a38; color: white; border-color: #373a38; }
+.holiday-card button:disabled { opacity: .55; cursor: default; }
+.holiday-card button:focus-visible, .holiday-card input:focus-visible,
+.holiday-card textarea:focus-visible, .holiday-card a:focus-visible,
+.holiday-card summary:focus-visible { outline: 3px solid #496f9a; outline-offset: 2px; }
+.holiday-search { display: flex; flex-wrap: wrap; gap: 9px; margin: 13px 0; }
+.holiday-card input, .holiday-card textarea { box-sizing: border-box; border: 1px solid #cfcac3; border-radius: 11px;
+  padding: 11px 12px; background: white; color: #2f2d2a; min-height: 44px; max-width: 100%; font: 14px/1.4 system-ui, sans-serif; }
+.holiday-search input { flex: 1 1 210px; min-width: 0; }
+.holiday-status { min-height: 20px; color: #4d5a4f; font-size: 13px; line-height: 1.5; margin: 8px 0; }
+.holiday-feature { background: white; border: 1px solid #e2dfda; border-radius: 18px; padding: 14px;
+  margin: 14px 0 9px; min-width: 0; }
+.holiday-feature h3 { font-size: clamp(18px, 3vw, 23px); margin: 10px 0; color: #2a2824; }
+.holiday-feature p { line-height: 1.55; font-size: 14px; }
+.holiday-image { display: block; width: 100%; max-height: min(54vh, 480px); object-fit: contain;
+  border-radius: 12px; background: #f4f2ee; }
+.holiday-feature iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px; margin: 10px 0; background: #111; }
+.holiday-feature button { width: 100%; font-size: 15px; }
+.holiday-rights { color: #6b625b; font-size: 12px !important; }
+.holiday-progress { font: 750 13px system-ui, sans-serif; padding: 0 4px; }
+.holiday-build, .holiday-studio { margin-top: 19px; padding: clamp(13px, 2vw, 19px); border: 1px solid #ddd9d2;
+  border-radius: 16px; background: #fbfaf8; }
+.holiday-build h3 { font-size: 21px; margin: 2px 0 8px; }
+.holiday-instructions { font-size: 14px; line-height: 1.55; color: #504e49; }
+.holiday-build > input[type="text"] { width: 100%; }
+.holiday-note { font-size: 12px; line-height: 1.5; color: #66635e; }
+.holiday-build label { font-size: 14px; font-weight: 700; display: block; margin-top: 14px; }
+.holiday-build label input { display: block; width: 100%; margin-top: 6px; }
+.holiday-studio summary { cursor: pointer; font-weight: 750; min-height: 38px; }
+.holiday-studio textarea { display: block; width: 100%; margin: 12px 0; min-height: 90px; }
+.holiday-generated { width: 100%; max-height: 440px; object-fit: contain; border-radius: 12px; background: #f1efea; }
+.holiday-reel { margin-top: 14px; }
+@media (max-width: 600px) {
+  .holiday-card { border-radius: 16px; }
+  .holiday-search > button { flex: 1 1 120px; }
+  .holiday-actions > button, .holiday-actions > a { flex: 1 1 150px; }
+  .holiday-feature { padding: 10px; }
+  .holiday-navigation { justify-content: space-between; }
+}
+@media (prefers-reduced-motion: reduce) { #holidayPhi * { animation: none !important; scroll-behavior: auto !important; } }
