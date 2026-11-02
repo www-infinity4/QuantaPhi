@@ -117,7 +117,7 @@ export function chooseCompanions(hero,inventory,{quantScores={},exposures={},rot
    lane.id==='denim'?'Complements denim shopping':
    lane.id==='grocery'?'Related grocery discovery':'Related to this card')});
  }
- const sorted=[...unique.values()].sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));
+ const sorted=[...unique.values()].sort((a,b)=>Number(Boolean(b.image))-Number(Boolean(a.image))||b.score-a.score||a.id.localeCompare(b.id));
  const selected=[],sponsors=new Set(),sourceCounts=new Map();
  for(const c of sorted){
   // QuantaPhi hosts thousands of independent published website cards on one
@@ -166,7 +166,7 @@ if(typeof document!=='undefined'){
   const prev=document.createElement('button');prev.type='button';prev.textContent='‹ Previous';
   const position=document.createElement('span');position.className='shopphi-flank-position';
   const next=document.createElement('button');next.type='button';next.textContent='Next ›';
-  const pause=document.createElement('button');pause.type='button';pause.textContent='Pause rotation';
+  const pause=document.createElement('button');pause.type='button';pause.className='shopphi-rotation-toggle';pause.textContent='Pause rotation';
   pause.setAttribute('aria-label','Pause automatic companion card rotation');
   navigation.append(prev,position,next,pause);
   grid.after(navigation);
@@ -245,7 +245,7 @@ if(typeof document!=='undefined'){
    heading.textContent=housing?'Housing help · related resources':'Related source cards · ShopPhi';
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
-   grid.classList.toggle('shopphi-showcase-mode',!housing&&!lane.sensitive&&visible.some(c=>c.image)&&
+   grid.classList.toggle('shopphi-showcase-mode',!housing&&!lane.sensitive&&visible.length>0&&visible.slice(0,2).every(c=>c.image)&&
     ['cookout','movie-night','kitchen','family','tools','outdoors','coins','denim','grocery','shopping'].includes(lane.id));
    visiblePage=Math.min(visiblePage,Math.max(0,Math.ceil(visible.length/2)-1));
    if(!visible.length){
