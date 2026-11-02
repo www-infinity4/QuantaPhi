@@ -16,6 +16,14 @@ RESIDENTIAL_FALSE_POSITIVE = re.compile(
     r"townhouses?|leasing office|property management|self[- ]?storage|"
     r"senior living|assisted living|residences?|realty|residential rentals?)\b", re.I
 )
+# Overture occasionally labels transit stations and park-and-ride lots as parks.
+# Keep these out of recreational park listings; do not broadly reject museum
+# or historical railway attractions on the basis of a word in their title.
+TRANSIT_PARK_FALSE_POSITIVE = re.compile(
+    r"\\b(?:park[\\s-]?(?:n|and)[\\s-]?ride|"
+    r"(?:bus|rail|train|transit)\\s+(?:station|terminal|center)|"
+    r"park\\s+station)\\b", re.I
+)
 CATEGORIES=set("""museum art_museum history_museum science_museum natural_history_museum
 children_museum art_gallery tourist_attraction visitor_center welcome_center national_park
 state_park regional_park nature_reserve nature_preserve botanical_garden zoo aquarium
@@ -58,7 +66,10 @@ def normalize(feature):
  name=names.get('primary','') if isinstance(names,dict) else ''
  if isinstance(name,dict):name=name.get('value','')
  name=re.sub(r'\s+',' ',str(name).strip())[:160]
- if (primary if primary in CATEGORIES else basic) in ('historic_site', 'park') and RESIDENTIAL_FALSE_POSITIVE.search(name):
+ category = primary if primary in CATEGORIES else basic
+ if category in ('historic_site', 'park') and RESIDENTIAL_FALSE_POSITIVE.search(name):
+  return None
+ if category == 'park' and TRANSIT_PARK_FALSE_POSITIVE.search(name):
   return None
  identity=str(p.get('id') or feature.get('id') or '')
  if not name or not re.fullmatch(r'[a-zA-Z0-9-]{10,100}',identity):return None
