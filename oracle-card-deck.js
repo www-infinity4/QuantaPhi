@@ -495,7 +495,18 @@ window.addEventListener('quantaphi:showcase-chapter-complete',async event=>{
   showcaseTransition=true;
   stage.classList.add('shopphi-hero-fading');
   setTimeout(()=>{
-   if(active===selected&&!document.hidden&&!expanded&&selectedTab==='public'){
+   // A visitor can focus a form or start media *during* the fade.
+   // The same safety checks must pass immediately before changing cards.
+   const rect=host.getBoundingClientRect();
+   const nowFocused=Boolean(stage.querySelector('input:focus,textarea:focus,select:focus,[contenteditable="true"]:focus'));
+   const nowPlaying=[...stage.querySelectorAll('video,audio')].some(m=>!m.paused&&!m.ended);
+   const safeNow=canShowcaseAdvance({
+    visible:rect.bottom>0&&rect.top<innerHeight,hidden:document.hidden,
+    paused:false,reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches,
+    focused:nowFocused,editing:nowFocused,playing:nowPlaying,
+    recencyMs:Date.now()-showcaseLastInteraction
+   });
+   if(safeNow&&active===selected&&!expanded&&selectedTab==='public'){
     showcaseVisited.add(next.id);
     show(next.entry,true,true);
    }
