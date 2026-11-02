@@ -1,22 +1,33 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-11-02T08:53:03.018541Z",
+  "checked_at": "2026-11-02T19:11:36.524401Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 1
+      "articles_selected": 0
     },
     {
       "publisher": "CBS Sports",
       "url": "https://www.cbssports.com/partners/feeds/rss/mlb_news",
-      "articles_selected": 26
+      "articles_selected": 22
     }
   ],
   "articles": [
+    {
+      "title": "MLB Power Rankings: Brewers end 2026 season at No. 1 as World Series champions",
+      "url": "https://www.cbssports.com/mlb/news/mlb-power-rankings-final-2026-brewers-world-series/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-11-02T13:30:33Z",
+      "summary": "Major League Baseball has played its last game of 2026 and we're closing up shop with a final round of Power Rankings",
+      "author": "Matt Snyder",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/29/d854b6e0-9027-4365-9fda-261a88a1630d/mlb-power-rankings-11022026.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
     {
       "title": "Mets legend Jerry Koosman dies at 83: Pitcher helped New York win 1969 World Series",
       "url": "https://www.cbssports.com/mlb/news/mets-legend-jerry-koosman-dies-at-83/",
@@ -27,17 +38,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/11/01/bbf872b0-3e6a-40fe-b019-ee91977115fa/koosman-mets-getty.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Live from New York, it's the Brewers on Saturday Night Live!",
-      "url": "https://www.mlb.com/news/christian-yelich-brice-turang-pat-murphy-saturday-night-live-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-11-01T05:12:53Z",
-      "summary": "",
-      "author": "Adam McCalvy",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "Brewers set World Series parade for Friday, two days after winning 2026 title",
@@ -256,61 +256,6 @@
       "summary": "Misiorowski has been good but not his usual level of great in the playoffs ... will that change in World Series Game 5?",
       "author": "Julian McWilliams",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/ef010e72-e146-4436-9c52-bcfac493e930/misiorowski-getty-2.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Rays stay alive vs. Brewers in extra-innings World Series classic; Colts begin NFL trade deadline sale",
-      "url": "https://www.cbssports.com/mlb/news/rays-brewers-world-series-classic-mlb-colts-nfl-trade-deadline-sale/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T12:44:32Z",
-      "summary": "Plus the Top 100 And 1 college basketball teams for the 2026-27 season",
-      "author": "Carter Bahns",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/8f773b61-3ae0-40e5-9e7e-8f3e6e71bdd3/gettyimages-2301840807-1.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Nick Martinez, bullpen save the Rays from World Series elimination, but Game 4 win merely a stay of execution",
-      "url": "https://www.cbssports.com/mlb/news/world-series-game-4-rays-bullpen-elimination-nick-martinez/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T05:04:16Z",
-      "summary": "The Rays had to use their Game 5 starter in relief in Game 4, but they got the win and for now, that's what matters",
-      "author": "Matt Snyder",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/96d77e2a-d212-46a0-96a5-4e50c685734e/martinez-getty-1.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Brewers vs. Rays World Series odds, Game 4 predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-      "url": "https://www.cbssports.com/prediction/news/brewers-vs-rays-world-series-odds-game-4-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T22:40:38Z",
-      "summary": "Here's a look at the trading markets at Kalshi for World Series Game 4 as the Tampa Bay Rays host the Milwaukee Brewers in World Series Game 4",
-      "author": "James Holliman",
-      "image_url": "https://sportshub.cbsistatic.com/i/2025/07/22/a594e72b-49e5-4ca9-8d82-a96a092ea054/jackson-chourio-brewers.png",
-      "kind": "Analysis",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Game 4 Brewers vs. Rays MLB picks: Expect Tampa Bay to show pulse Tuesday on verge of being swept at home",
-      "url": "https://www.cbssports.com/betting/news/game-4-brewers-vs-rays-mlb-picks-expect-tampa-bay-to-show-pulse-tuesday-on-verge-of-being-swept-at-home/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T22:30:47Z",
-      "summary": "Can the Rays avoid a sweep at home tonight vs. the Brewers in the 2026 World Series?",
-      "author": "Matt Severance",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/06/22/1878cf49-ac13-4ea9-a42c-b90968e53258/brewers.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Today's top games to watch, best bets, odds: Brewers at Rays World Series Game 4, Blazers at Lakers and more",
-      "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-at-rays-world-series-game-4-blazers-at-lakers-and-more/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-27T19:30:52Z",
-      "summary": "Find best bets and props for the biggest games in sports on Tuesday from the SportsLine Projection Model and top CBS Sports experts",
-      "author": "Gene Menez",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/27/df14fc97-9be7-4e5a-adec-17903ef08f44/brewers-imagn-1.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
