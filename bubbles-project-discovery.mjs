@@ -38,12 +38,13 @@ export function namedCardFor(request){
 export function sourceQueryFor(request,history=[]){
  const q=String(request||'').trim();
  if(discoveryTerms(q).length||!/\b(?:it|that|this|card|one|thing)\b/i.test(q))return q;
- for(const row of (Array.isArray(history)?history:[]).slice(-8).reverse()){
-  if(row?.role!=='user'||typeof row.text!=='string')continue;
-  const card=namedCardFor(row.text);
-  if(card)return q+' '+card.title;
- }
- return q;
+ // Only the latest owner's utterance is relevant. An older card name
+ // must not be revived after the owner corrected or closed that repair.
+ const last=(Array.isArray(history)?[...history].reverse():[]).find(row=>row?.role==='user'&&typeof row.text==='string');
+ if(!last)return q;
+ if(/\b(?:already|now|was|has been)\s+(?:fixed|resolved|repaired|completed|working)\b|\bstop\s+(?:reopening|repairing|fixing)\b/i.test(last.text))return q;
+ const card=namedCardFor(last.text);
+ return card?q+' '+card.title:q;
 }
 // A named card can be a direct engineering target even when the owner does
 // not mention GitHub, repository, source, code, or the word "card".
