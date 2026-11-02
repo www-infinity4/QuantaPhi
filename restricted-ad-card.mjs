@@ -5,6 +5,7 @@
 import {eligibleCreative,chooseNextCreative} from './restricted-ad-policy.mjs';
 import {PUBLIC_21_SOURCES,eligiblePublisher,selectPublisher} from './restricted-source-directory.mjs?v=20261101-banner1';
 import {ADULT_LIFESTYLE_KITS,sourcesForKit} from './adult-lifestyle-catalog.mjs?v=20261101-kits1';
+import {prepareAdultKitResearch,formatAdultKitChecklist} from './adult-kit-research.mjs?v=20261102-plan1';
 const root=document.getElementById('infinityAdultContentCard');
 if(root){
  const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n};
@@ -44,19 +45,45 @@ if(root){
  const kitNext=el('button','rac-button','Next kit ›');kitNext.type='button';
  const kitDesc=el('p','rac-kit-desc'),kitLinks=el('div','rac-kit-links');
  kitBar.append(kitLabel,kitSelect,kitNext);
- publisher.append(publisherHead,kitBar,kitDesc,kitLinks,publisherArt,publisherDesc,publisherLink,publisherControls,publisherNote);
+ const kitPlanButton=el('button','rac-button rac-plan-open','Build a kit research plan');kitPlanButton.type='button';
+ const kitPlanBox=el('section','rac-plan');kitPlanBox.hidden=true;kitPlanBox.setAttribute('aria-label','Local multi-source kit planning');
+ const kitPlanForm=el('form','rac-plan-form');
+ const budgetLabel=el('label','rac-plan-field','Your budget ceiling (USD)'),kitPlanBudget=el('input','rac-plan-budget');
+ kitPlanBudget.name='budget';kitPlanBudget.type='text';kitPlanBudget.inputMode='decimal';kitPlanBudget.value='300.00';kitPlanBudget.required=true;
+ budgetLabel.append(kitPlanBudget);
+ const regionLabel=el('label','rac-plan-field','Delivery or visit region (optional)'),kitPlanRegion=el('input','rac-plan-region');
+ kitPlanRegion.name='region';kitPlanRegion.maxLength=60;kitPlanRegion.autocomplete='off';kitPlanRegion.placeholder='City, state or country';
+ regionLabel.append(kitPlanRegion);
+ const planSubmit=el('button','rac-button rac-plan-submit','Prepare research checklist');planSubmit.type='submit';
+ const kitPlanStatus=el('p','rac-plan-status','Nothing will be booked, purchased or stored.');
+ kitPlanStatus.setAttribute('role','status');kitPlanStatus.setAttribute('aria-live','polite');
+ const kitPlanSummary=el('section','rac-plan-summary');kitPlanSummary.hidden=true;
+ const kitPlanCopy=el('button','rac-button','Copy checklist');kitPlanCopy.type='button';kitPlanCopy.hidden=true;
+ const kitPlanPower=el('a','rac-plan-power','Open Infinity Power Chain planner');
+ kitPlanPower.href='/design-lab/index.html#cooperative-power-chain';
+ kitPlanPower.target='_blank';kitPlanPower.rel='noopener noreferrer';
+ kitPlanForm.append(budgetLabel,regionLabel,planSubmit);
+ kitPlanBox.append(kitPlanForm,kitPlanStatus,kitPlanSummary,kitPlanCopy,kitPlanPower);
+ publisher.append(publisherHead,kitBar,kitDesc,kitLinks,kitPlanButton,kitPlanBox,publisherArt,publisherDesc,publisherLink,publisherControls,publisherNote);
  root.append(browse,closeBrowse,browseHint,publisher,message);
  let acknowledged=false,publisherLast='',publisherSeen=[],publisherPaused=false;
- let selectedKitId=ADULT_LIFESTYLE_KITS[0].id;
+ let selectedKitId=ADULT_LIFESTYLE_KITS[0].id,lastKitPlan=null;
+ function resetPlan(){
+  lastKitPlan=null;kitPlanBox.hidden=true;kitPlanSummary.hidden=true;
+  kitPlanSummary.replaceChildren();kitPlanCopy.hidden=true;
+  kitPlanStatus.textContent='Nothing will be booked, purchased or stored.';
+ }
  function activeKitSources(){return selectedKitId==='cannabis-sources'?PUBLIC_21_SOURCES:sourcesForKit(selectedKitId)}
  function paintKit(){
   if(!acknowledged)return;
+  resetPlan();kitPlanButton.hidden=selectedKitId==='cannabis-sources';
   const kit=ADULT_LIFESTYLE_KITS.find(x=>x.id===selectedKitId);
   kitDesc.textContent=kit?kit.description:'Independent original cannabis publisher references only. Not an advertisement or product checkout.';
   kitLinks.replaceChildren();
   for(const row of activeKitSources().slice(0,6)){
    if(!eligiblePublisher(row,true))continue;
    const link=el('a','rac-kit-link',row.title);
+   link.dataset.sourceId=row.id;
    link.href=row.url;link.target='_blank';link.rel='noopener noreferrer';
    link.setAttribute('aria-label','Open original website for '+row.title);
    kitLinks.append(link);
@@ -71,6 +98,11 @@ if(root){
   publisherLast=item.id;publisherSeen.push(item.id);
   publisherName.textContent=item.title;publisherSmall.textContent=item.subtitle;
   publisherDesc.textContent=item.summary;publisherLink.href=item.url;
+  for(const link of kitLinks.querySelectorAll('.rac-kit-link')){
+   const current=link.dataset.sourceId===item.id;
+   link.classList.toggle('rac-kit-active',current);
+   if(current)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');
+  }
   publisher.hidden=false;publisherNext.disabled=sources.length<2;publisherPause.hidden=sources.length<2;
  }
  browse.addEventListener('click',()=>{
@@ -85,8 +117,42 @@ if(root){
  });
  closeBrowse.addEventListener('click',()=>{
   acknowledged=false;publisherLast='';publisherSeen=[];publisher.hidden=true;
-  publisherLink.removeAttribute('href');publisherName.textContent='';publisherDesc.textContent='';kitLinks.replaceChildren();
+  publisherLink.removeAttribute('href');publisherName.textContent='';publisherDesc.textContent='';kitLinks.replaceChildren();resetPlan();
   browse.hidden=false;closeBrowse.hidden=true;
+ });
+ kitPlanButton.addEventListener('click',()=>{
+  if(!acknowledged||selectedKitId==='cannabis-sources')return;
+  kitPlanBox.hidden=!kitPlanBox.hidden;
+  if(!kitPlanBox.hidden)kitPlanBudget.focus();
+ });
+ kitPlanForm.addEventListener('submit',event=>{
+  event.preventDefault();if(!acknowledged||selectedKitId==='cannabis-sources')return;
+  try{
+   lastKitPlan=prepareAdultKitResearch({kitId:selectedKitId,budget:kitPlanBudget.value,region:kitPlanRegion.value});
+   const heading=el('h3','rac-plan-title',lastKitPlan.title+' · '+lastKitPlan.budgetLabel+' ceiling');
+   const list=el('ol','rac-plan-list');
+   for(const item of lastKitPlan.sources){
+    const li=el('li','rac-plan-item'),name=el('strong','',item.title);
+    const role=el('span','rac-plan-role',item.role.replace(/-/g,' ')+' · source research only');
+    const link=el('a','rac-plan-link','Visit original site');link.href=item.officialUrl;
+    link.target='_blank';link.rel='noopener noreferrer';
+    li.append(name,role,link);list.append(li);
+   }
+   const evidence=el('p','rac-plan-evidence','No live prices or stock verified. Direct shipping and consolidated shipping are not quoted; no checkout or payment was started.');
+   kitPlanSummary.replaceChildren(heading,list,evidence);kitPlanSummary.hidden=false;
+   kitPlanCopy.hidden=false;
+   kitPlanStatus.textContent='Research checklist prepared locally for '+lastKitPlan.sources.length+' sources. Your budget is a limit, not a price quote.';
+  }catch(error){
+   lastKitPlan=null;kitPlanSummary.hidden=true;kitPlanSummary.replaceChildren();kitPlanCopy.hidden=true;
+   kitPlanStatus.textContent=String(error?.message||'Please check the research plan inputs.').slice(0,150);
+  }
+ });
+ kitPlanCopy.addEventListener('click',async()=>{
+  if(!lastKitPlan)return;
+  try{
+   await navigator.clipboard.writeText(formatAdultKitChecklist(lastKitPlan));
+   kitPlanStatus.textContent='Checklist copied to your clipboard. No site account or shopping cart was changed.';
+  }catch{kitPlanStatus.textContent='Clipboard unavailable. The checklist remains visible here.';}
  });
  publisherNext.addEventListener('click',paintPublisher);
  publisherPause.addEventListener('click',()=>{
