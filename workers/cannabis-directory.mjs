@@ -123,6 +123,57 @@ async function enrichQuality(items,env){
   }catch{return items;}
 }
 
+// Licensed and reviewed storefront media and testimonial attribution may
+// enrich organic profiles. Unreviewed source material never becomes ad copy.
+// This cannot expose product inventory, paid pricing or checkout capability.
+export async function enrichCatalogEvidence(items,env,now=Date.now()){
+ if(!items.length)return items;
+ try{
+  const ids=items.map(x=>x.id),slots=ids.map(()=>'?').join(',');
+  const [media,quotes,connections]=await Promise.all([
+   env.DIRECTORY.prepare(
+    `SELECT store_id,image_url,source_url,publisher,rights_evidence_url,rights_cleared,review_state,reviewed_at,expires_at FROM store_source_media WHERE store_id IN (${slots}) AND rights_cleared=1 AND review_state='approved'`
+   ).bind(...ids).all(),
+   env.DIRECTORY.prepare(
+    `SELECT store_id,quote_text,author_display,publisher,source_url,consent_evidence,consent_verified,review_state,published_at,reviewed_at,expires_at FROM store_review_quotes WHERE store_id IN (${slots}) AND consent_verified=1 AND review_state='approved'`
+   ).bind(...ids).all(),
+   env.DIRECTORY.prepare(
+    `SELECT store_id,provider,connection_state,license_review_state,last_sync_at,last_items_seen FROM store_inventory_connections WHERE store_id IN (${slots})`
+   ).bind(...ids).all()
+  ]);
+  const acceptable=(value)=>{
+   const t=Date.parse(value||'');return Number.isFinite(t)&&t<=now&&t>=now-180*86400000;
+  };
+  const current=value=>{const t=Date.parse(value||'');return Number.isFinite(t)&&t>now};
+  const urlOk=(v)=>{try{const u=new URL(v);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port}catch{return false}};
+  const photos=new Map(),reviews=new Map(),feeds=new Map();
+  for(const asset of media.results||[]){
+   if(photos.has(asset.store_id)||!asset.rights_evidence_url||!urlOk(asset.rights_evidence_url)||
+    !urlOk(asset.image_url)||!urlOk(asset.source_url)||!acceptable(asset.reviewed_at)||
+    !current(asset.expires_at))continue;
+   photos.set(asset.store_id,asset);
+  }
+  for(const quote of quotes.results||[]){
+   if(reviews.has(quote.store_id)||!quote.consent_evidence||!urlOk(quote.source_url)||
+    !acceptable(quote.reviewed_at)||!current(quote.expires_at)||
+    !quote.publisher||!quote.author_display||!quote.quote_text)continue;
+   reviews.set(quote.store_id,quote);
+  }
+  for(const feed of connections.results||[])if(!feeds.has(feed.store_id))feeds.set(feed.store_id,feed);
+  return items.map(row=>{
+   const pic=photos.get(row.id),review=reviews.get(row.id),feed=feeds.get(row.id);
+   return {...row,media:pic?{
+    url:pic.image_url,source_url:pic.source_url,publisher:pic.publisher,
+    reviewed_at:pic.reviewed_at,status:'approved',rights_cleared:true}:null,
+    testimonial:review?{
+    text:review.quote_text,reviewer:review.author_display,publisher:review.publisher,
+    published_at:review.published_at,source_url:review.source_url,approved:true,consented:true}:null,
+    inventory_connection:feed?.connection_state==='authorized'&&feed.license_review_state==='verified'
+      ?'authorized_source_not_live_stock':'not_connected'};
+  });
+ }catch{return items.map(row=>({...row,media:null,testimonial:null,inventory_connection:'not_connected'}));}
+}
+
 async function stores(req,env,url){
   // This is only a display acknowledgment for organic location information,
   // never a government-ID check or a 21+ advertising eligibility assertion.
@@ -144,9 +195,10 @@ async function stores(req,env,url){
   const accessType=medicalOnly?'medical_only':(legal?.adult_use||'unreviewed');
   const eligible=rows.slice(0,24).map(publicRow).filter(Boolean);
   const qualityChecked=await enrichQuality(eligible,env);
+  const evidenceChecked=await enrichCatalogEvidence(qualityChecked,env);
   return reply({state,city,query:q,page:n,page_size:24,has_more:rows.length>24,
     access_type:accessType,medical_only:medicalOnly,
-    items:qualityChecked.map(item=>({...item,
+    items:evidenceChecked.map(item=>({...item,
       access_type:accessType,medical_only:medicalOnly})),
     disclosure:medicalOnly
       ? 'Medical-program dispensaries only; NOT adult-use. State patient eligibility applies. No age verification, product offers or paid ads.'
