@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {directoryCardView,uniqueStoreCards,sourceLinkAllowed} from '../cannabis-directory-cards.mjs';
+import {directoryCardView,directoryCardId,uniqueStoreCards,sourceLinkAllowed} from '../cannabis-directory-cards.mjs';
 const base={id:'ny-sample-1',name:'Example Dispensary',store:'Downtown',
  state:'NY',city:'Albany',address:'100 Main Street',source_url:'https://store.example.com/locations',
  source_name:'Official store listing',source_domain:'store.example.com',sponsored:false,license_status:'unverified',quality_star:null,
@@ -8,7 +8,7 @@ const base={id:'ny-sample-1',name:'Example Dispensary',store:'Downtown',
 test('factual individual store cards require deliberate acknowledgement and real source data',()=>{
  assert.equal(directoryCardView(base,false),null);
  const x=directoryCardView(base,true);
- assert.equal(x.id,'directory-store-ny-sample-1');
+ assert.equal(x.id,directoryCardId(base.id));
  assert.equal(x.state,'NY');assert.equal(x.sponsorLabel,'Independent directory listing');
  assert.equal(x.imageUrl,null);assert.equal(x.testimonial,null);
  assert.equal(x.qualityLabel,'Unrated');
@@ -65,7 +65,7 @@ test('actual Oracle can register data-backed cards and avoids misleading public 
 test('older server-validated Cloudflare rows remain cardable before Worker cache refresh',()=>{
  const old={...base};delete old.source_domain;
  const card=directoryCardView(old,true);
- assert.equal(card?.id,'directory-store-ny-sample-1');
+ assert.equal(card?.id,directoryCardId(base.id));
  assert.equal(card?.sourceUrl,'https://store.example.com/locations');
 });
 
