@@ -5,8 +5,8 @@ source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1394
 state: live_partial_nationwide
 dot: "🟡"
-progress_percent: 8
-progress_basis: "Populated-state coverage 4/50 = 8%; infrastructure independently live. Fresh public GET and isolated D1: 33 organic listings in four states (CO 12, IA medical-only 5, IL 8, NY 8), 50 state policy rows, 47 queued jobs, 14 regulator source URLs, 3 store receipts; read-only Worker live, zero approved stars or ads. Most states remain unpopulated."
+progress_percent: 12
+progress_basis: "Populated-state coverage 6/50 = 12%; 49 distinct organic sources (CO 12, IA medical-only 5, IL 8, NY 8, OR 8, NJ 8), 50 policy rows, 45 queued and 5 review jobs, 14 regulator URLs, 5 store receipts; live GET, zero approved stars or ads. Other 44 states remain unpopulated."
 sessions_spent: 1
 sessions_remaining_estimate: unknown
 agent: "ChatGPT source and Cloudflare, no verified coordinator lease"
@@ -15,17 +15,17 @@ fence: null
 lease_expires_at: null
 task_session_id: null
 repo: www-infinity4/QuantaPhi
-branch: feat/nationwide-cannabis-directory-bruce-banner-20261101
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/1412"
+branch: feat/1394-nj-crc-eight-class5-20261102
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1417"
 merged: true
 deployed: true
 live_verified: true
-next_action: "Missouri DCR: independently extract active dispensary license + approved-to-operate + public address records before bounded D1 import; preserve 47 queued states, no paid ads or invented stars. Attractions Cron separately awaits Nov 2 review."
+next_action: "Missouri DCR: obtain active license + approved-to-operate + public address before import; or next independently verifiable state. Oregon snapshot is dated Oct 5; NJ permit snapshots do not prove present operation. Preserve 45 queued states, zero ads/stars; attractions Cron Nov 2."
 ---
 
 # TICKET-1394 · 50-state organic cannabis source directory
-
-## CURRENT VERIFIED CHECKPOINT — 2026-11-01 (supersedes historical notes below)
+\n## CURRENT VERIFIED CHECKPOINT — 2026-11-02 (supersedes all older totals)\n- Exact-head PR #1416 merged \`d430ed914fb66045b1684b259a8ee9fcc24a0144\` with five successful workflows: eight official Oregon OLCC retailer source records, snapshot last updated **2026-10-05**. PR #1417 merged \`c5e426ac3e03f0285b0f7307e53b8d8a13b47703\` with five successful workflows: eight individual NJ CRC Class 5 permit PDFs expiring in 2027. No APPROVED review claimed.\n- Both idempotent SQL manifests actually applied to isolated US D1 \`quantaphi-cannabis-directory\`, with append-only receipts \`2026-11-02-or-olcc-eight-active-retailers-v1\` and \`2026-11-02-nj-crc-eight-class5-permits-v1\` (8 accepted each). **49 unique organic listings across 6 states**: CO 12, IA 5 **medical-only**, IL 8, NY 8, OR 8, NJ 8. **45 queued / 5 review jobs**, 50 policy rows, 14 regulator source URLs, 5 store receipts.\n- Independently re-read D1 and public \`/api/21-directory/coverage\`, \`/receipts\`, \`/health\`; 49/6/45 matched. Zero sponsored, zero license_verified flags, zero quality evidence/decisions, zero ★, and ads/age verification disabled. Custom-header acknowledged store GET not independently verified by the public reader.\n- NJ permits and Oregon dataset are historical public sources, not a promise of current store operation or approved advertising. Missouri remains queued until current license + ATO evidence is available. Protect wallet, identity vault, passkeys, all other D1 databases and no 911/Broadcastify identity checks.\n- Append-only issue receipts: #1394 comments 6566263589 (Oregon) and 6566293821 (NJ). Colorado Attractions now separately has **10** live CO records, with 6,527 reviewed Overture candidates still awaiting the scheduled Cron.\n\n
+## PRIOR VERIFIED CHECKPOINT — 2026-11-01 (superseded by Nov 2 checkpoint above)
 - Organic read-only Worker `quantaphi-cannabis-directory` is deployed to apex/www `/api/21-directory/*`, Cloudflare deployment `c82d4a810d5d40bf826d3646527ca669`, with isolated `DIRECTORY` D1 binding. Independent public GET health/coverage/regulator/receipts readbacks succeeded. Ads and first-party age verification remain disabled.
 - Source Worker PR #1395 merged `c4efec7bd4964d956aacec0c3c1abe27f9c969f2`; quality ★ evidence/appeal gate PR #1412 merged `8f7528c08c92cb8cbfcc9977334c240942c3d892`. Five final-head workflows passed on #1412, independent Copilot COMMENTED review findings repaired and threads resolved. No fabricated APPROVED review.
 - Fresh isolated D1: 33 distinct organic store sources (CO 12, IA **five medical-only**, IL 8, NY 8); **4 populated states**, **47 queued** and **3 review** jobs; **50 policy rows**, **14 official regulator source URLs**, **3 store import receipts**. Zero paid sponsors. Queued states are NOT populated.
