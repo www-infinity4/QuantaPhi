@@ -86,5 +86,5 @@ test('source-backed shopping companions lead the mobile card with a real photo, 
  expect(bounds.ad).toBeLessThan(bounds.hero);
  const titles=await page.locator('#oracleCardDeck .shopphi-flank:visible .shopphi-flank-title').allTextContents();
  expect(titles.join(' ')).not.toMatch(/Art studios|museum originals/i);
- await expect(page.getByRole('button',{name:'Pause rotation'})).toBeVisible();
+ await expect(page.getByRole('button',{name:/Pause automatic companion card rotation/})).toBeVisible();
 });
