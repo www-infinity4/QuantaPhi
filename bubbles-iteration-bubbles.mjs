@@ -27,6 +27,12 @@ export function applyIterationEvent(previous,event){
  const state={...previous};
  if(!event||typeof event!=='object')return state;
  if(event.type==='session_changed')return newIterationState();
+ if(event.type==='turn_finished'){
+  state.think=event.failed===true
+   ?{status:'blocked',message:'This chat turn failed. No tool execution or completed work is being claimed.',url:''}
+   :{status:'idle',message:'Chat turn ended. Verified work receipts remain visible below.',url:''};
+  return state;
+ }
  if(event.type==='turn_started'){
   const fresh=newIterationState();
   fresh.listen=state.listen;
