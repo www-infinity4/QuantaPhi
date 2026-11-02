@@ -3,6 +3,7 @@
  * Existing third-party GPTs/plugins are linked out only after public-source review.
  */
 import {MODEL_CARDS} from './coliseum/coliseum-core.mjs';
+import {APPROVED_PUBLIC_GPT_LINKS} from './zeus-community-verified.mjs';
 const source=MODEL_CARDS.map(m=>Object.freeze({
  id:m.id,kind:'infinity',category:'Infinity editions',
  name:m.name+' '+m.version,provider:'Infinity / QuantaPhi',
@@ -54,7 +55,7 @@ export function approveCreatorEntry(entry,at=Date.now()){
   isOfficialOpenAIModel:false,glyph:'✦',
   detail:'Public link checked '+new Date(when).toISOString().slice(0,10)+' · opens ChatGPT; access may vary'});
 }
-export function cardsForTab(tab='all',reviewed=[]){
+export function cardsForTab(tab='all',reviewed=APPROVED_PUBLIC_GPT_LINKS){
  const verified=Array.isArray(reviewed)?reviewed.map(x=>approveCreatorEntry(x)).filter(Boolean):[];
  const all=[...DISCOVERY_CARDS,...verified];
  if(tab==='infinity')return all.filter(x=>x.kind==='infinity');
