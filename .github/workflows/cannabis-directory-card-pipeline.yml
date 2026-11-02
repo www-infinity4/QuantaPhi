@@ -4,6 +4,8 @@ on:
     paths:
       - 'cannabis-directory-cards*'
       - 'cannabis-directory-card.mjs'
+      - 'cannabis-directory-policy.mjs'
+      - 'test/cannabis-directory.test.mjs'
       - 'workers/cannabis-directory.mjs'
       - 'workers/cannabis-directory/migrations/004-catalog-media-feedback.sql'
       - 'oracle-card-deck.js'
@@ -16,6 +18,8 @@ on:
     paths:
       - 'cannabis-directory-cards*'
       - 'cannabis-directory-card.mjs'
+      - 'cannabis-directory-policy.mjs'
+      - 'test/cannabis-directory.test.mjs'
       - 'workers/cannabis-directory.mjs'
       - 'test/cannabis-directory-cards.test.mjs'
       - 'test/cannabis-directory-evidence.test.mjs'
