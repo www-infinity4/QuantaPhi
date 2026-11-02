@@ -137,8 +137,8 @@ test('Cardonay resolves Gary Cardone only for a CURRENT explicit request, not a 
  const history=[{role:'user',text:'Fix Gary Cardone carousel; it is broken'},
    {role:'user',text:'We already fixed the Cardone card. Stop reopening it.'}];
  assert.equal(cardWorkTargetFor('Fix that card',history),null,'resolved work must stop deictic replay');
- const stillCurrent=[{role:'user',text:'The Walmart card navigation is broken now'}];
- assert.equal(cardWorkTargetFor('Fix that card',stillCurrent)?.id,'walmart-shopping');
+ const stillCurrent=[{role:'user',text:'The Infinity Radio card navigation is broken now'}];
+ assert.equal(cardWorkTargetFor('Fix that card',stillCurrent)?.id,'infinity-radio');
 });
 test('Cardone closure context filters stale complaints from unrelated owner work without deleting real history',async()=>{
  const {curateOwnerTaskContext}=await import('../bubbles-task-context.mjs');
