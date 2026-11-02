@@ -185,6 +185,26 @@ function registerSourceCards(){
  }
 }
 window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
+// Dynamically mount every loaded, original Cloudflare store listing as its own
+// Oracle card. No personal browsing telemetry, sale controls, or fake ratings.
+function registerDirectoryCards(){
+ let added=false;
+ for(const node of document.querySelectorAll('[data-directory-store-id]')){
+  const id=node.id;
+  if(!/^directory-store-[a-z0-9-]+$/.test(id)||entries.some(e=>e.id===id))continue;
+  const name=node.dataset.directoryStoreName||'Source-backed dispensary';
+  const sourceId=node.dataset.directoryStoreId;
+  if(!/^[a-z0-9-]+$/.test(sourceId||''))continue;
+  entries.push({id,title:'21+ · '+name,feedId:id,category:'21+ Directory',
+   feature:'Independent Cloudflare source listing; no checkout or unverified reviews',
+   study:'Source-backed business directory',node,marker:null,count:0});
+  observe.observe(node,{childList:true,attributes:true,attributeFilter:['hidden']});
+  added=true;
+ }
+ if(added||entries.some(e=>e.id.startsWith('directory-store-'))){updateTabs();predict();}
+}
+window.addEventListener('quantaphi:directory-cards-ready',registerDirectoryCards);
+
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
 function registerLateWidgets(){
@@ -219,7 +239,7 @@ function updateTabs(){
  for(const button of host.querySelectorAll('[data-oracle-family]')){
   const count=eligible().filter(e=>cardFamily(e)===button.dataset.oracleFamily).length;
   button.disabled=count===0;
-  const total=button.querySelector('[data-family-count]');if(total)total.textContent=String(count);
+  const total=button.querySelector('[data-family-count]');if(total){total.textContent='';total.hidden=true;}
  }
  tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
  followingPublisherFeed?.sync({tab:selectedTab});
@@ -249,7 +269,7 @@ function updateInventory(){
   chooser.dataset.inventory=signature;
  }
  chooser.value=active?.id||'';
- if(inventory)inventory.textContent='Choose a card · '+cards.length+' available';
+ if(inventory)inventory.textContent='Choose a real interactive card';
 }
 document.getElementById('oracleCardChooser')?.addEventListener('change',event=>{
  const entry=eligible().find(e=>e.id===event.target.value);

@@ -1,0 +1,39 @@
+name: National dispensary source card pipeline
+on:
+  pull_request:
+    paths:
+      - 'cannabis-directory-cards*'
+      - 'cannabis-directory-card.mjs'
+      - 'workers/cannabis-directory.mjs'
+      - 'workers/cannabis-directory/migrations/004-catalog-media-feedback.sql'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'test/cannabis-directory-cards.test.mjs'
+      - 'test/cannabis-directory-evidence.test.mjs'
+      - '.github/workflows/cannabis-directory-card-pipeline.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'cannabis-directory-cards*'
+      - 'cannabis-directory-card.mjs'
+      - 'workers/cannabis-directory.mjs'
+      - 'test/cannabis-directory-cards.test.mjs'
+      - 'test/cannabis-directory-evidence.test.mjs'
+jobs:
+  verified-card-pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify safe modules and main carousel
+        run: |
+          node --check cannabis-directory-cards.mjs
+          node --check cannabis-directory-card.mjs
+          node --check workers/cannabis-directory.mjs
+          node --check oracle-card-deck.js
+      - name: Run national card, media consent and existing source worker tests
+        run: node --test test/cannabis-directory-cards.test.mjs test/cannabis-directory-evidence.test.mjs test/cannabis-directory-worker.test.mjs test/cannabis-directory.test.mjs
