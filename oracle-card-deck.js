@@ -402,9 +402,10 @@ function show(entry,remember=true,automatic=false){
  stage.dataset.switchboardTitle=entry.title;
  stage.dataset.switchboardCategory=entry.category;
  stage.dataset.switchboardTab=selectedTab;
+ stage.dataset.switchboardDescription=entry.node.querySelector('.iac-intro,.qbp-description,.iqc-description')?.textContent||entry.feature||'';
  window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
   id:entry.feedId,title:entry.title,category:entry.category,tab:selectedTab,
-  description:entry.node.querySelector('.iac-intro,.qbp-description,.iqc-description')?.textContent||entry.feature
+  description:stage.dataset.switchboardDescription
  }}));
  entry.node.dispatchEvent(new Event('oracle:activate'));
  if(!automatic&&!nonProfiling(entry))void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
@@ -477,7 +478,13 @@ window.addEventListener('quantaphi:showcase-chapter-complete',async event=>{
   const {pickNextShowcase,canShowcaseAdvance}=await import('/shopphi-showcase-core.mjs?v=20261101-connected1');
   const media=[...stage.querySelectorAll('video,audio')];
   const focused=Boolean(stage.querySelector('input:focus,textarea:focus,select:focus,[contenteditable="true"]:focus'));
-  const next=pickNextShowcase(eligibleSources,selected.feedId,showcaseVisited);
+  let next=pickNextShowcase(eligibleSources,selected.feedId,showcaseVisited);
+  // The playlist is circular, but no offer repeats until the current round
+  // exhausts its genuine, image-backed companions.
+  if(!next){
+   showcaseVisited.clear();
+   next=pickNextShowcase(eligibleSources,selected.feedId,showcaseVisited);
+  }
   const playable=media.some(m=>!m.paused&&!m.ended);
   const stillVisible=host.getBoundingClientRect().bottom>0&&host.getBoundingClientRect().top<innerHeight;
   if(!next||!canShowcaseAdvance({visible:stillVisible,hidden:document.hidden,
