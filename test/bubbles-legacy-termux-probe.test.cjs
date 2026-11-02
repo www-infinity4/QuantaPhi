@@ -22,9 +22,9 @@ test('owner approval and Android permission precede any diagnostic dispatch',()=
  const probe=read(java+'TermuxProbe.java');
  const main=read(java+'MainActivity.java');
  const service=read(java+'BubblesService.java');
- assert.match(main,/offerTermuxPythonProbe\(/);
+ assert.match(main,/offerTermuxProbe\(/);
  assert.match(main,/\.setNegativeButton\("Cancel"/);
- assert.match(main,/\.setPositiveButton\("Test Python"/);
+ assert.match(main,/\.setPositiveButton\(shell \? "Check Termux" : "Test Python"/);
  assert.match(main,/requestPermissions\(new String\[\]\{TermuxProbe.PERMISSION\}/);
  assert.match(probe,/if \(!permitted\(context\)\)/);
  assert.match(probe,/context.startService\(request\)/);
@@ -62,7 +62,7 @@ test('callback separates dispatch, exit, failed cleanup, and absent results',()=
 test('identical Bubbles website chat requests and receives the Termux receipt',()=>{
  const site=read('bubbles-ai.js');
  const floating=read(java+'FloatingOracleWindow.java');
- assert.match(site,/nativeTermuxProbeRequests\.push\(\{action:'probe'\}\)/);
+ assert.match(site,/nativeTermuxProbeRequests\.push\(\{action:'probe',kind\}\)/);
  assert.match(site,/drainNativeTermuxProbe:/);
  assert.match(site,/syncNativeTermuxProbe:/);
  assert.match(floating,/trustedChat\(website\)/);
@@ -149,23 +149,15 @@ test('low storage creates no job directory and retains the Python environment',(
  }finally{fs.rmSync(f.dir,{recursive:true,force:true})}
 });
 
-test('natural spoken and typed Python checks share a bounded diagnostic, not arbitrary commands',()=>{
+test('natural spoken and typed shell/Python checks reject arbitrary commands',()=>{
  const site=read('bubbles-ai.js');
  const javaService=read(java+'BubblesService.java');
- const line=site.split('\n').find(x=>x.includes('if(nativeOverlay && /^')&&x.includes('test(spoken)'));
- assert.ok(line,'first-party Android WebView intercepts local diagnostic requests');
- const m=line.match(/&& (\/\^.*\$\/i)\.test\(spoken\)/);
- assert.ok(m,'the actual website interpreter must be executable as a regular expression');
- const matches=Function('return '+m[1])();
- for(const utterance of [
-  'test python in termux','please check python','Bubbles, verify termux python',
-  'run python test','is python working in termux?','does python work'
- ]) assert.equal(matches.test(utterance),true,utterance);
- for(const utterance of [
-  'do not run python','please install python packages',
-  'delete files from termux','run rm -rf /','execute arbitrary python',
-  'explain what a python test is'
- ]) assert.equal(matches.test(utterance),false,utterance);
- assert.match(javaService,/does.*python.*work/);
- assert.match(javaService,/TermuxProbe/);
+ const kind=read(java+'TermuxProbeKind.java');
+ assert.match(site,/function nativeTermuxProbeKind\(spoken\)/);
+ assert.match(site,/nativeTermuxProbeRequests\.push\(\{action:'probe',kind\}\)/);
+ assert.match(javaService,/TermuxProbeKind\.fromUserText\(addressed\)/);
+ assert.match(kind,/if \(q\.matches\(PREFIX \+ CHECK \+ "termux/);
+ assert.match(kind,/return "shell"/);
+ assert.match(kind,/return "python"/);
+ assert.doesNotMatch(kind,/install packages|rm -rf|execute arbitrary/);
 });
