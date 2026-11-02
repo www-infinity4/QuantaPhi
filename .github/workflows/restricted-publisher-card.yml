@@ -4,6 +4,8 @@ on:
     paths:
       - 'restricted-source-directory.mjs'
       - 'adult-lifestyle-catalog.mjs'
+      - 'adult-kit-research.mjs'
+      - 'test/adult-kit-research.test.mjs'
       - 'test/adult-lifestyle-catalog.test.mjs'
       - 'restricted-ad-card.mjs'
       - 'restricted-ad-card.css'
@@ -14,6 +16,8 @@ on:
     paths:
       - 'restricted-source-directory.mjs'
       - 'adult-lifestyle-catalog.mjs'
+      - 'adult-kit-research.mjs'
+      - 'test/adult-kit-research.test.mjs'
       - 'test/adult-lifestyle-catalog.test.mjs'
       - 'restricted-ad-card.mjs'
       - 'test/restricted-source-directory.test.mjs'
@@ -28,9 +32,10 @@ jobs:
         with:
           node-version: '22'
       - name: Source correctness and eligibility tests
-        run: node --test test/restricted-source-directory.test.mjs test/restricted-ad-policy.test.mjs test/adult-lifestyle-catalog.test.mjs
+        run: node --test test/restricted-source-directory.test.mjs test/restricted-ad-policy.test.mjs test/adult-lifestyle-catalog.test.mjs test/adult-kit-research.test.mjs
       - name: UI and JavaScript syntax
         run: |
           node --check restricted-ad-card.mjs
           node --check restricted-source-directory.mjs
           node --check adult-lifestyle-catalog.mjs
+          node --check adult-kit-research.mjs
