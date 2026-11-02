@@ -137,6 +137,13 @@ function startNativeTurn(value,fromVoice,id,evidence=''){
 let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
 const nativeScreenRequests=[];
 const nativeCaptureRequests=[]; // FIFO: Android polls requests; never replace a subsequent stop/start command.
+// Only explicit local diagnostic requests can reach Android's owner-approval dialog.
+function nativeTermuxProbeKind(spoken){
+ const q=String(spoken||'').trim().replace(/^(?:(?:hey[, ]+)?bubbles[, ]+)?(?:please\s+)?/i,'');
+ if(/^(?:check|test|verify)(?:\s+the)?\s+(?:my\s+)?termux[.!?]*$/i.test(q))return 'shell';
+ if(/^(?:(?:test|check|verify)(?:\s+the)?\s+(?:python(?:\s+(?:in|with))?\s+termux|python|termux\s+python)|(?:run|start|try)(?:\s+a)?\s+python\s+(?:test|diagnostic)|(?:does\s+python\s+work|is\s+python\s+(?:working|ready))(?:\s+in\s+termux)?)[.!?]*$/i.test(q))return 'python';
+ return null;
+}
 const nativeTermuxProbeRequests=[]; // Fixed diagnostic only; no arbitrary code to Android.
 let lastNativeTermuxReceipt='';
 let nativeRecordingActive=false,nativeScreenStatus='';
@@ -2375,11 +2382,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }
  // Keep the existing Bubbles chat. A typed command on Android requests a
  // native confirmation dialog, not a second chat or remote Linux sandbox.
- if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\s+)?(?:(?:test|check|verify)(?:\s+the)?\s+(?:python(?:\s+(?:in|with))?\s+termux|python|termux(?:\s+python)?)|(?:run|start|try)(?:\s+a)?\s+python\s+(?:test|diagnostic)|(?:does\s+python\s+work|is\s+python\s+(?:working|ready))(?:\s+in\s+termux)?)[.!?]*$/i.test(spoken)){
+ const kind=nativeOverlay?nativeTermuxProbeKind(spoken):null;
+ if(kind){
   display(spoken,'you');clearSentComposer();
   messages.push({role:'user',text:spoken});
-  nativeTermuxProbeRequests.push({action:'probe'});
-  const answer='Python diagnostic requested on this phone. Approve the Android prompt; execution is not confirmed yet.';
+  nativeTermuxProbeRequests.push({action:'probe',kind});
+  const answer='Termux '+(kind==='shell'?'shell check':'Python test')+' requested on this phone. Approve the Android prompt; execution is not confirmed yet.';
   display(answer,'ai');messages.push({role:'assistant',text:answer});persistChat();
   if(fromVoice)nativeSpeechReply=answer;
   return;
@@ -4191,18 +4199,19 @@ window.QuantaBubbles={
  syncNativeTermuxProbe:(receipt)=>{
   if(!nativeOverlay||!receipt||typeof receipt!=='object'||!receipt.state)return false;
   const state=String(receipt.state);
-  const key=String(receipt.id||0)+'|'+state+'|'+String(receipt.at||0);
+   const kind=receipt.kind==='shell'?'shell':'python';
+  const key=String(receipt.id||0)+'|'+kind+'|'+state+'|'+String(receipt.at||0);
   if(key===lastNativeTermuxReceipt)return true;
   lastNativeTermuxReceipt=key;
   const detail=String(receipt.detail||'').slice(0,1700);
-  const answer='Termux Python test — '+state.replaceAll('_',' ')+'. '+detail;
+  const answer='Termux '+(kind==='shell'?'shell check':'Python test')+' — '+state.replaceAll('_',' ')+'. '+detail;
   display(answer,'ai');messages.push({role:'assistant',text:answer});
   messages=messages.slice(-400);persistChat();
   if(state!=='queued'&&state!=='requested'){
    // Chat retains exit/error receipts, but speech is ordinary English.
    // Never read raw shell diagnostics, tokens or internal numbers aloud.
    const spoken=state==='passed'
-    ? 'Python works in Termux. Its temporary test files were cleaned up.'
+    ? (kind==='shell'?'The Termux shell check passed. Python was not required.':'Python works in Termux. Its temporary test files were cleaned up.')
     : state==='setup_required' ? 'Termux needs one-time external command permission before Bubbles can use it.'
     : state==='storage_low' ? 'Your phone needs more free storage before this Python test can run.'
     : state==='python_missing' ? 'Python is not available inside Termux yet.'
