@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'zeus-discovery-core.mjs'
+      - 'zeus-community-verified.mjs'
       - 'zeus-discovery-carousel.mjs'
       - 'zeus-discovery-carousel.css'
       - 'quick-card-modernize.css'
@@ -14,6 +15,7 @@ on:
     branches: [main]
     paths:
       - 'zeus-discovery-core.mjs'
+      - 'zeus-community-verified.mjs'
       - 'zeus-discovery-carousel.mjs'
       - 'zeus-discovery-carousel.css'
       - 'quick-card-modernize.css'
@@ -36,6 +38,7 @@ jobs:
       - name: Validate independent Zeus carousel source
         run: |
           node --check zeus-discovery-core.mjs
+          node --check zeus-community-verified.mjs
           node --check zeus-discovery-carousel.mjs
           node --test test/zeus-discovery-carousel.test.mjs
       - name: Check whitespace and conflict markers
