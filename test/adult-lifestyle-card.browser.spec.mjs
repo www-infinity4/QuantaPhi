@@ -26,3 +26,38 @@ test('21+ lifestyle Quick Card gates publisher links and rotates multi-source ki
  await expect(card.locator('.rac-kit-link')).toHaveCount(0);
  await expect(card.getByRole('button',{name:'I am 21+ · Browse original websites'})).toBeVisible();
 });
+
+test('Android kit budget and source checklist work locally and vanish after the 21+ shelf closes',async({page})=>{
+ await page.goto(base+'/?card=infinityAdultContentCard',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage #infinityAdultContentCard');
+ await expect(card).toBeVisible({timeout:20000});
+ const plan=card.locator('.rac-plan');
+ await expect(plan).toBeHidden();
+ await card.getByRole('button',{name:'I am 21+ · Browse original websites'}).click();
+ await card.locator('.rac-kit-select').selectOption('room-party');
+ await card.getByRole('button',{name:'Build a kit research plan'}).click();
+ await expect(plan).toBeVisible();
+ await plan.locator('input[name="budget"]').fill('450.00');
+ await plan.locator('input[name="region"]').fill('Colorado');
+ await plan.getByRole('button',{name:'Prepare research checklist'}).click();
+ const result=card.locator('.rac-plan-summary');
+ await expect(result).toBeVisible();
+ await expect(result).toContainText('Room and party setup · $450.00 ceiling');
+ await expect(result.locator('.rac-plan-item')).toHaveCount(4);
+ await expect(result).toContainText('No live prices or stock verified');
+ await expect(result.getByRole('link',{name:'Visit original site'})).toHaveCount(4);
+ await expect(card.locator('.rac-plan-power')).toHaveAttribute('href','/design-lab/index.html#cooperative-power-chain');
+ await card.locator('.rac-kit-select').selectOption('amsterdam-after-dark');
+ await expect(plan).toBeHidden();
+ await card.getByRole('button',{name:'Build a kit research plan'}).click();
+ await plan.locator('input[name="budget"]').fill('0');
+ await plan.getByRole('button',{name:'Prepare research checklist'}).click();
+ await expect(result).toBeHidden();
+ await expect(card.locator('.rac-plan-status')).toContainText('greater than zero');
+ await card.locator('.rac-kit-select').selectOption('cannabis-sources');
+ await expect(card.getByRole('button',{name:'Build a kit research plan'})).toBeHidden();
+ await expect(plan).toBeHidden();
+ await card.getByRole('button',{name:'Close 21+ websites'}).click();
+ await expect(plan).toBeHidden();
+ await expect(card.locator('.rac-kit-link')).toHaveCount(0);
+});
