@@ -46,7 +46,7 @@ for attempt in range(10):
     controls=snapshot(attempt)
     system_wait=launcher_anr_wait_target(controls)
     if system_wait:
-        bounds=list(map(int,re.findall(r'\\d+',system_wait.get('bounds',''))))
+        bounds=list(map(int,re.findall(r'\d+',system_wait.get('bounds',''))))
         if len(bounds)==4:
             subprocess.run(['adb','shell','input','tap',str((bounds[0]+bounds[2])//2),str((bounds[1]+bounds[3])//2)],check=True)
             time.sleep(3)
