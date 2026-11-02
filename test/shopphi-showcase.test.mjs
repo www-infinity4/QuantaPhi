@@ -10,6 +10,8 @@ test('cookout, movie night and kitchen form an ordered contextual shopping story
  assert.equal(chapterFor('Stove, recipe and kitchen appliances'),'kitchen');
  assert.equal(chapterFor('Starrett precision micrometers'),'tools');
  assert.equal(chapterFor('Art studios discover museum originals'),null);
+ assert.equal(chapterFor('Noctua PC cooling fans, CPU coolers and mounting accessories'),null);
+ assert.equal(chapterFor('Cooler for food and drinks at a picnic'),'cookout');
 });
 
 test('showcase finishes its current shopping theme before moving to the next one',()=>{
