@@ -38,3 +38,34 @@ test('the verified five-day ChatGPT bridge still uses replies from the current s
  assert.match(body,/bubbles_did_not_return_a_confirmed_answer/);
  assert.doesNotMatch(body,/refresh.*token|write.*wallet|checkout/i);
 });
+
+
+test('five-day GPT bridge treats a displayed failed chat response as failed, not completed',async()=>{
+ const start=source.indexOf("window.addEventListener('bubbles:chatgpt-bridge'");
+ const end=source.indexOf("if(!embedded)tools.append(repositoryPicker)",start);
+ assert.ok(start>0&&end>start);
+ const listener=source.slice(start,end);
+ const check=async assistant=>{
+  const messages=[];let handler;
+  const context={window:{addEventListener:(event,fn)=>{if(event==='bubbles:chatgpt-bridge')handler=fn}},
+   embedded:false,busy:false,turnPending:false,messages,
+   sendMessage:async()=>{messages.push(assistant)},Promise,String};
+  vm.runInNewContext(listener,context);
+  return new Promise(resolve=>handler({detail:{text:'Check Bubbles tool work',respond:resolve}}));
+ };
+ const failure=await check({role:'assistant',text:'I could not complete the response: network down.',failed:true});
+ assert.equal(failure.ok,false);
+ assert.equal(failure.error,'bubbles_chat_request_failed');
+ const success=await check({role:'assistant',text:'Verified weather results',failed:false});
+ assert.equal(success.ok,true);
+ assert.equal(success.reply,'Verified weather results');
+});
+
+test('reasoning and preflight failures are tagged as failed assistant replies rather than successful GPT bridge work',()=>{
+ const start=source.indexOf("}catch(error){\n  failedTurn=true;\n  const message=workEvidence||(");
+ const end=source.indexOf('\n finally{',start);
+ const reasoning=source.slice(start,end);
+ const preflight=source.slice(source.indexOf('Bubbles could not finish the chat turn'),source.indexOf("window.addEventListener('bubbles:chatgpt-ready'"));
+ assert.match(reasoning,/messages\.push\(\{role:'assistant',text:message,failed:true\}\)/);
+ assert.match(preflight,/messages\.push\(\{role:'assistant',text:message,failed:true\}\)/);
+});
