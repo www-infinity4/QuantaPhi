@@ -33,7 +33,7 @@ class NevadaCCB(unittest.TestCase):
         for flag in ('license_verified', 'merchant_urls_verified', 'advertising_approved', 'media_rights'):
             self.assertFalse(m[flag])
         for r in m['records']:
-            self.assertRegex(r['license_number'], r'^\d{20})
+            self.assertRegex(r['license_number'], r'^\d{20}$')
             self.assertEqual(r['source_url'], SOURCE)
             self.assertEqual(r['state'], 'NV')
             self.assertEqual(set(r), {'license_number','name','city','state','street_address','source_url'})
