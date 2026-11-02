@@ -196,8 +196,9 @@ if(typeof document!=='undefined'){
    }
    position.textContent=total?String(start+1)+'–'+Math.min(total,start+2)+' of '+total:'No offers';
    prev.disabled=visiblePage===0;next.disabled=start+2>=total;
-   navigation.hidden=total<3;
-   pause.hidden=total<3;
+   navigation.hidden=total===0;
+   prev.hidden=next.hidden=position.hidden=total<3;
+   pause.hidden=total===0;
    pause.textContent=rotationPaused?'Resume rotation':'Pause rotation';
    pause.setAttribute('aria-label',rotationPaused?'Resume automatic companion card rotation':'Pause automatic companion card rotation');
    pause.setAttribute('aria-pressed',String(rotationPaused));
@@ -233,7 +234,7 @@ if(typeof document!=='undefined'){
     }
     visiblePage=0;
    }else visiblePage=nextCompanionPage(visiblePage,visibleCards.length);
-   showPage({fade:true});
+   if(lastPage>0)showPage({fade:true});
   },18000);
   window.addEventListener('pagehide',()=>clearInterval(rotateTimer),{once:true});
   const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
