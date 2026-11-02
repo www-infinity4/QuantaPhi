@@ -16,10 +16,10 @@ def database():
     CREATE TABLE state_policy(state TEXT PRIMARY KEY,adult_use TEXT,source_url TEXT DEFAULT '',reviewed_at TEXT DEFAULT '',notes TEXT DEFAULT '');
     CREATE TABLE regulator_source_catalog(state TEXT PRIMARY KEY,agency TEXT,source_kind TEXT,source_url TEXT,verified_at TEXT,source_status TEXT,notes TEXT);
     CREATE TABLE store_sources(id TEXT PRIMARY KEY,name TEXT,store TEXT,city TEXT,state TEXT,address TEXT,source_url TEXT,source_domain TEXT,source_name TEXT,verified_at TEXT,record_status TEXT,paid_sponsor INTEGER,license_status TEXT,official_source INTEGER,license_verified INTEGER,address_confirmed INTEGER,rights_cleared INTEGER,image_url TEXT,image_rights TEXT,updated_at TEXT DEFAULT CURRENT_TIMESTAMP);
-    CREATE TABLE import_receipts(receipt_id TEXT PRIMARY KEY,state TEXT,city TEXT,source_url TEXT,inspected INTEGER,accepted INTEGER,rejected INTEGER);
+    CREATE TABLE import_receipts(receipt_id TEXT PRIMARY KEY,state TEXT,city TEXT,source_url TEXT,inspected INTEGER,accepted INTEGER,rejected INTEGER,job_id TEXT,created_at TEXT DEFAULT CURRENT_TIMESTAMP);
     CREATE TABLE directory_jobs(job_id TEXT PRIMARY KEY,state TEXT,status TEXT,phase TEXT,records_added INTEGER DEFAULT 0,updated_at TEXT DEFAULT '');
     INSERT INTO state_policy(state,adult_use) VALUES('NV','unreviewed'),('IA','not_authorized');
-    INSERT INTO directory_jobs(job_id,state,status,phase) VALUES('review-nv','NV','queued','source_discovery');
+    INSERT INTO directory_jobs(job_id,state,status,phase) VALUES('first-review-nv','NV','queued','source_discovery');
     """)
     return db
 
@@ -49,10 +49,29 @@ class NevadaCCB(unittest.TestCase):
         self.assertEqual(len(rows), 8)
         for r in rows:
             self.assertEqual(r[1:9], ('listed',0,1,0,1,0,'','ccb.nv.gov'))
-            self.assertEqual(r[9], 'nv_ccb_roster_2026_10_02_current_status_unverified')
+            self.assertEqual(r[9], 'nv_ccb_2026_10_02_license_unverified')
         self.assertEqual(db.execute('SELECT receipt_id,accepted FROM import_receipts').fetchall(), [(RECEIPT,8)])
         self.assertEqual(db.execute("SELECT status,phase,records_added FROM directory_jobs WHERE state='NV'").fetchone(), ('review','license_and_local_review',8))
         self.assertEqual(db.execute("SELECT adult_use FROM state_policy WHERE state='IA'").fetchone()[0], 'not_authorized')
+
+    def test_existing_stores_cannot_create_receipt_after_policy_revocation(self):
+        db = database()
+        db.executescript(SQL.read_text())
+        db.execute("DELETE FROM import_receipts")
+        db.execute("UPDATE state_policy SET adult_use='not_authorized' WHERE state='NV'")
+        db.execute("UPDATE directory_jobs SET status='queued',phase='source_discovery',records_added=0 WHERE state='NV'")
+        db.executescript(SQL.read_text())
+        self.assertEqual(db.execute('SELECT COUNT(*) FROM store_sources').fetchone()[0], 8)
+        self.assertEqual(db.execute('SELECT COUNT(*) FROM import_receipts').fetchone()[0], 0)
+        self.assertEqual(db.execute("SELECT status FROM directory_jobs WHERE state='NV'").fetchone()[0], 'queued')
+
+    def test_old_receipt_does_not_advance_requeued_job(self):
+        db = database()
+        db.executescript(SQL.read_text())
+        db.execute("UPDATE directory_jobs SET status='queued',phase='source_discovery',records_added=0,updated_at='9999-01-01 00:00:00' WHERE state='NV'")
+        db.executescript(SQL.read_text())
+        self.assertEqual(db.execute('SELECT COUNT(*) FROM import_receipts').fetchone()[0], 1)
+        self.assertEqual(db.execute("SELECT status,records_added FROM directory_jobs WHERE state='NV'").fetchone(), ('queued',0))
 
     def test_missing_state_policy_fails_closed(self):
         db = database()
