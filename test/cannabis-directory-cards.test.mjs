@@ -61,3 +61,10 @@ test('actual Oracle can register data-backed cards and avoids misleading public 
  assert.match(client,/directoryCardView/);
  assert.doesNotMatch(deck,/cards\.length\+' available'/);
 });
+
+test('older server-validated Cloudflare rows remain cardable before Worker cache refresh',()=>{
+ const old={...base};delete old.source_domain;
+ const card=directoryCardView(old,true);
+ assert.equal(card?.id,'directory-store-ny-sample-1');
+ assert.equal(card?.sourceUrl,'https://store.example.com/locations');
+});
