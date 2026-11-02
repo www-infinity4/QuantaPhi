@@ -1,8 +1,18 @@
 import {test,expect} from '@playwright/test';
 const base='http://127.0.0.1:8799';
 test.use({viewport:{width:360,height:800}});
-test('21+ lifestyle Quick Card gates publisher links and rotates multi-source kits inside one card',async({page})=>{
+async function openAdultCard(page){
  await page.goto(base+'/?card=infinityAdultContentCard',{waitUntil:'domcontentloaded'});
+ // A deep link cannot bypass the visitor-selected restricted department.
+ await expect(page.locator('#oracleCardStage #infinityAdultContentCard')).toHaveCount(0);
+ await page.locator('#oracleDepartment').selectOption('adult');
+ await page.locator('.oracle-card-library summary').click();
+ const chooser=page.locator('#oracleCardChooser');
+ await expect(chooser.locator('option[value="infinityAdultContentCard"]')).toHaveCount(1,{timeout:20000});
+ await chooser.selectOption('infinityAdultContentCard');
+}
+test('21+ lifestyle Quick Card gates publisher links and rotates multi-source kits inside one card',async({page})=>{
+ await openAdultCard(page);
  const card=page.locator('#oracleCardStage #infinityAdultContentCard');
  await expect(card).toBeVisible({timeout:20000});
  const publisher=card.locator('.rac-publisher');
@@ -28,7 +38,7 @@ test('21+ lifestyle Quick Card gates publisher links and rotates multi-source ki
 });
 
 test('Android kit budget and source checklist work locally and vanish after the 21+ shelf closes',async({page})=>{
- await page.goto(base+'/?card=infinityAdultContentCard',{waitUntil:'domcontentloaded'});
+ await openAdultCard(page);
  const card=page.locator('#oracleCardStage #infinityAdultContentCard');
  await expect(card).toBeVisible({timeout:20000});
  const plan=card.locator('.rac-plan');

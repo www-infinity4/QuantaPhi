@@ -21,7 +21,8 @@ function mount(){
  const denver=el('option','','Denver, Colorado');denver.value='CO|Denver';place.append(denver);
  const submit=el('button','','Find restaurants');submit.type='submit';
  const discover=el('button','','Surprise me');discover.type='button';discover.setAttribute('aria-label','Discover a random local restaurant');
- const inputs=el('div','rd-inputs');inputs.append(search,place,submit,discover);form.append(inputs);
+ const locate=el('button','rd-nearby','Use phone location');locate.type='button';locate.setAttribute('aria-label','Find restaurants using my current phone location');
+ const inputs=el('div','rd-inputs');inputs.append(search,place,submit,discover,locate);form.append(inputs);
  const status=el('p','rd-status','Choose Denver to browse its restaurants.');status.setAttribute('role','status');
  const result=el('section','rd-result');result.setAttribute('aria-label','Restaurant discovery result');
  const control=el('nav','rd-nav');control.setAttribute('aria-label','Browse restaurants');
@@ -32,6 +33,7 @@ function mount(){
  mountCardActions(actions,standard);
  let city='Denver',state='CO',page=0,items=[],selected=0,loading=false,loaded=false,hasMore=false,requestNo=0,cityTotal=0;
  const cityCounts=new Map();
+ let nearbyCoords=null,locationAttempted=false; // Ephemeral, never stored in wallet/browser storage.
  function details(item){
   result.replaceChildren();
   if(!item){result.append(el('p','rd-empty','No entries on this page. Try another name or cuisine.'));return}
@@ -58,34 +60,55 @@ function mount(){
  function show(){
   const row=items[selected];details(row);prev.disabled=loading||(page===0&&selected===0);
   next.disabled=loading||(!hasMore&&selected>=items.length-1);
-  position.textContent=items.length?'Result '+(page*24+selected+1)+' · '+city:'No matches';
+  position.textContent=items.length?'Result '+(page*24+selected+1)+' · '+(nearbyCoords?'Near your phone':city):'No matches';
  }
  async function find(p=0,randomItem=false,selectLast=false){
   if(loading)return;
   loading=true;page=p;selected=0;const serial=++requestNo;
-  submit.disabled=prev.disabled=next.disabled=discover.disabled=true;status.textContent='Loading '+city+' restaurants…';card.setAttribute('aria-busy','true');
+  submit.disabled=prev.disabled=next.disabled=discover.disabled=true;locate.disabled=true;status.textContent='Loading '+(nearbyCoords?'nearby':'in '+city)+' restaurants…';card.setAttribute('aria-busy','true');
   try{
-   const params=new URLSearchParams({city,state,q:search.value.trim().slice(0,65),page:String(page)});
-   const response=await fetch('/api/dining/search?'+params,{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(15000)});
+   const params=nearbyCoords?new URLSearchParams({...nearbyCoords,q:search.value.trim().slice(0,65),page:String(page)}):
+    new URLSearchParams({city,state,q:search.value.trim().slice(0,65),page:String(page)});
+   const endpoint=nearbyCoords?'/api/dining/nearby?':'/api/dining/search?';
+   const response=await fetch(endpoint+params,{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(15000)});
    if(!response.ok)throw new Error('Directory API unavailable');
    const data=await response.json();if(serial!==requestNo)return;
    items=Array.isArray(data.items)?data.items:[];hasMore=Boolean(data.has_more);
    if(randomItem&&items.length)selected=Math.floor(Math.random()*items.length);
    else if(selectLast&&items.length)selected=items.length-1;
-   status.textContent=items.length?('Displaying '+items.length+' sourced restaurants · '+city):'No matching restaurants found. Try a broader search.';
+   status.textContent=items.length?('Displaying '+items.length+' sourced restaurants · '+(nearbyCoords?'near your phone':city)):
+     (nearbyCoords?'No sourced restaurants near your phone in this database yet. Choose Nationwide restaurants for an indexed city.':'No matching restaurants found. Try a broader search.');
    loaded=true;
   }catch{
    if(serial===requestNo){items=[];hasMore=false;status.textContent='Restaurant database is unavailable at the moment. Existing individual restaurant cards remain accessible.'}
-  }finally{if(serial===requestNo){loading=false;submit.disabled=discover.disabled=false;card.removeAttribute('aria-busy');show()}}
+  }finally{if(serial===requestNo){loading=false;submit.disabled=discover.disabled=locate.disabled=false;card.removeAttribute('aria-busy');show()}}
  }
- form.addEventListener('submit',e=>{e.preventDefault();const [s,c]=place.value.split('|');state=s;city=c;cityTotal=cityCounts.get(place.value)||0;void find(0)});
- discover.addEventListener('click',()=>{if(loading)return;const pages=Math.max(1,Math.ceil(cityTotal/24));search.value='';void find(Math.floor(Math.random()*pages),true)});
+ form.addEventListener('submit',e=>{e.preventDefault();nearbyCoords=null;const [s,c]=place.value.split('|');state=s;city=c;cityTotal=cityCounts.get(place.value)||0;void find(0)});
+ discover.addEventListener('click',()=>{if(loading)return;nearbyCoords=null;const pages=Math.max(1,Math.ceil(cityTotal/24));search.value='';void find(Math.floor(Math.random()*pages),true)});
  next.addEventListener('click',()=>{if(loading)return;if(selected<items.length-1){selected++;show()}else if(hasMore)void find(page+1)});
  prev.addEventListener('click',()=>{if(loading)return;if(selected>0){selected--;show()}else if(page>0)void find(page-1,false,true)});
- card.addEventListener('oracle:activate',()=>{if(!loaded&&!loading)void find(0)});
+ card.addEventListener('oracle:activate',()=>{
+  // Let the category picker request location first; do not render Denver as "local".
+  setTimeout(()=>{if(!loaded&&!loading&&!locationAttempted)void find(0)},0);
+ });
+ function usePhoneLocation(){
+  if(!navigator.geolocation){status.textContent='Location service is unavailable. Select a city instead.';return;}
+  locationAttempted=true;
+  status.textContent='Your phone may ask for location permission. Coordinates are used for this search only.';
+  navigator.geolocation.getCurrentPosition(position=>{
+   const lat=position?.coords?.latitude,lon=position?.coords?.longitude;
+   if(!Number.isFinite(lat)||!Number.isFinite(lon)){status.textContent='Phone location unavailable. Select a city instead.';return;}
+   nearbyCoords={lat:String(lat.toFixed(5)),lon:String(lon.toFixed(5))};
+   if(loading){status.textContent='Restaurant search is still loading. Choose Use phone location again.';return;}
+   void find(0);
+  },()=>{status.textContent='Location permission unavailable or declined. Select a city or Nationwide restaurants.';},
+  {enableHighAccuracy:false,timeout:10000,maximumAge:300000});
+ }
+ locate.addEventListener('click',usePhoneLocation);
+ document.addEventListener('oracle:restaurant-nearby-request',()=>{if(card.isConnected&&!locationAttempted)usePhoneLocation()});
  // Discover city inventory on activation only; never infer precise user location.
  let citiesLoaded=false;
- card.addEventListener('oracle:activate',async()=>{
+ async function loadCities(){
   if(citiesLoaded)return;citiesLoaded=true;
   try{
    const r=await fetch('/api/dining/stats',{credentials:'omit',signal:AbortSignal.timeout(10000)});
@@ -98,6 +121,13 @@ function mount(){
     o.value=item.state+'|'+item.city;place.append(o);
    }
   }catch{}
+ }
+ card.addEventListener('oracle:activate',()=>void loadCities());
+ document.addEventListener('oracle:restaurant-nationwide',()=>{
+  if(!card.isConnected)return;
+  nearbyCoords=null;locationAttempted=true;
+  status.textContent='Nationwide restaurant directory · select an indexed city, then Find restaurants.';
+  void loadCities();place.focus();
  });
  bank.append(card);
  window.dispatchEvent(new Event('quantaphi:source-cards-ready'));
