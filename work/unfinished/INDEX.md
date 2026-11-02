@@ -3,6 +3,8 @@
 Read [README](README.md) and root [AGENTS.md](../../AGENTS.md) before editing code. Entries below are routing pointers, **not** verified current percent-complete estimates. Each ticket's issue comments and latest exact-head PR/CI are authoritative. Agents must verify and update after each work session.
 
 | Project | Canonical issue | Linked source | Dot | Progress | Sessions spent / remaining | Next verified action |
+
+| Bubbles / Robot Brain research evidence server | [#1489](https://github.com/www-infinity4/QuantaPhi/issues/1489) | [TICKET-1489](TICKET-1489.md) · isolated live D1 / Worker | 🟡 | 55% estimated; 8 curated entries, 11 categories, read API live | 1 / 2–4 estimate | Exact-head CI/review; verify first cron ingest; then wire read-only tool into Bubbles and Robot Brain |
 | --- | --- | --- | --- | --- | --- | --- |
 | 50-state cannabis directory · organic source Worker | [#1394](https://github.com/www-infinity4/QuantaPhi/issues/1394) | [TICKET-1394](TICKET-1394.md) · isolated D1 + regulator catalog | 🟡 | ~40% estimated; 17 stores (CO12, IA5 medical), 5 regulator sources, 49 queued, 1 review | 1 / unknown | Exact-head #1395 CI/review; merge/deploy/readback, then verified medical-only Iowa source import |
 | Attractions Directory · Colorado→50 states | [#1359](https://github.com/www-infinity4/QuantaPhi/issues/1359) | [TICKET-1359](TICKET-1359.md) · D1 Worker + Overture source feed | 🟡 | 65% backend & public feed implemented; Colorado coverage pending | 1 / unknown | Exact-head CI, mobile card readback and reviewed source imports |
