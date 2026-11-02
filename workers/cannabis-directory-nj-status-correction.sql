@@ -4,7 +4,7 @@
 -- Preserve IDs, original import receipt, policy, addresses and source URLs.
 -- Do not assert active license, authorize advertising, or touch wallet/identity.
 UPDATE store_sources
-SET license_status='nj_crc_class5_permit_current_status_unverified'
+SET license_status='nj_crc_class5_permit_status_unverified'
 WHERE state='NJ'
   AND official_source=1
   AND license_verified=0
