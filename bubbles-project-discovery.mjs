@@ -23,6 +23,7 @@ export function relevantProjectViews(request,storage=globalThis.localStorage,now
 }
 // A card's registered title/aliases are evidence of which project the owner
 // means, not permission to edit it. Prefer the longest named match.
+import {hasResolvedWorkNotice} from './bubbles-task-context.mjs?v=20261102-cardone-closure1';
 import {cards} from './bubbles-card-catalog.mjs?v=20261102-cardonay1';
 const normalized=s=>' '+String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim()+' ';
 export function namedCardFor(request){
@@ -42,7 +43,7 @@ export function sourceQueryFor(request,history=[]){
  // must not be revived after the owner corrected or closed that repair.
  const last=(Array.isArray(history)?[...history].reverse():[]).find(row=>row?.role==='user'&&typeof row.text==='string');
  if(!last)return q;
- if(/\b(?:already|now|was|has been)\s+(?:fixed|resolved|repaired|completed|working)\b|\bstop\s+(?:reopening|repairing|fixing)\b/i.test(last.text))return q;
+ if(hasResolvedWorkNotice(last.text))return q;
  const card=namedCardFor(last.text);
  return card?q+' '+card.title:q;
 }
