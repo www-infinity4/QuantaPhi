@@ -22,3 +22,32 @@ test('QuantaPhi edge reads current main before a potentially stale Pages copy',a
  assert.equal(response.status,200);assert.equal(await response.text(),'current source');
  assert.equal(requests.length,1);const source=new URL(requests[0]);assert.equal(source.origin,'https://raw.githubusercontent.com');assert.equal(source.pathname,'/www-infinity4/QuantaPhi/main/cloud-wallet-client.js');assert.ok(source.searchParams.get('__qpedge'));
 });
+
+test('only the public cannabis policy prefers published Pages when raw main is stale',async()=>{
+ const requests=[],context={URL,URLSearchParams,Request,Response,Headers,AbortController,setTimeout,clearTimeout,
+  fetch:async request=>{
+   const url=String(request.url||request);requests.push(url);
+   if(url.startsWith('https://www-infinity4.github.io/'))return new Response('published policy',{headers:{'content-type':'application/javascript'}});
+   return new Response('stale raw',{headers:{'content-type':'application/javascript'}});
+  }};
+ vm.createContext(context);vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace(/^import \{videoAPI\} from '\.\/video-api\.mjs';\s*/m,"const videoAPI=()=>{throw Error('Video route requires its dedicated API fixture')};\\n").replace('export default','globalThis.worker='),context);
+ const response=await context.worker.fetch(new Request('https://quantaphi.org/cannabis-directory-policy.mjs'));
+ assert.equal(response.status,200);assert.equal(await response.text(),'published policy');
+ assert.equal(requests.length,1);assert.equal(new URL(requests[0]).origin,'https://www-infinity4.github.io');
+ assert.equal(new URL(requests[0]).pathname,'/QuantaPhi/cannabis-directory-policy.mjs');
+});
+
+test('public policy Pages outage falls back to raw source without affecting unrelated routes',async()=>{
+ const requests=[],context={URL,URLSearchParams,Request,Response,Headers,AbortController,setTimeout,clearTimeout,
+  fetch:async request=>{
+   const url=String(request.url||request);requests.push(url);
+   if(url.startsWith('https://www-infinity4.github.io/'))return new Response('unavailable',{status:503});
+   return new Response('raw fallback',{headers:{'content-type':'application/javascript'}});
+  }};
+ vm.createContext(context);vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace(/^import \{videoAPI\} from '\.\/video-api\.mjs';\s*/m,"const videoAPI=()=>{throw Error('Video route requires its dedicated API fixture')};\\n").replace('export default','globalThis.worker='),context);
+ const response=await context.worker.fetch(new Request('https://quantaphi.org/cannabis-directory-policy.mjs'));
+ assert.equal(response.status,200);assert.equal(await response.text(),'raw fallback');
+ assert.equal(requests.length,2);
+ assert.equal(new URL(requests[0]).origin,'https://www-infinity4.github.io');
+ assert.equal(new URL(requests[1]).origin,'https://raw.githubusercontent.com');
+});
