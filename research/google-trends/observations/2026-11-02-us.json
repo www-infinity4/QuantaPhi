@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-02T04:10:04.681835Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "yaxel lendeborg",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-02T03:50:00Z",
+      "related_news_urls": [
+        "https://nypost.com/2026/11/01/sports/yaxel-lendeborg-dunks-girlfriend-basketball-beatdown/",
+        "https://www.complex.com/sports/a/backwoodsaltar/yaxel-lendeborg-plans-warriors-stay-girlfriend-update",
+        "https://heavy.com/sports/nba/golden-state-warriors/yaxel-lendeborg-girlfriend/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQO2qWPXTPcD5VG4EHQjWvcJD8PqFDBBID1leg3mVZuLyiRLW2POvaYO4PxzkY",
+      "image_credit": "New York Post",
+      "news": [
+        {
+          "url": "https://nypost.com/2026/11/01/sports/yaxel-lendeborg-dunks-girlfriend-basketball-beatdown/",
+          "title": "Yaxel Lendeborg dunking on girlfriend during basketball beatdown turns heads",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQO2qWPXTPcD5VG4EHQjWvcJD8PqFDBBID1leg3mVZuLyiRLW2POvaYO4PxzkY"
+        },
+        {
+          "url": "https://www.complex.com/sports/a/backwoodsaltar/yaxel-lendeborg-plans-warriors-stay-girlfriend-update",
+          "title": "Yaxel Lendeborg's Girlfriend Anticipates a Bright Future With the Warriors",
+          "publisher": "Complex",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVabk0h4MiUqgLU0ozEaic1haupgPIlk1Rce3WQ7PvJ7emhy-J6f9wgArDXL4"
+        },
+        {
+          "url": "https://heavy.com/sports/nba/golden-state-warriors/yaxel-lendeborg-girlfriend/",
+          "title": "Yaxel Lendeborg’s Girlfriend Sends Clear Message Amid Historic Warriors Start",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8MdUt-1YtoK8oQ0MWgV9AMiCqFREs91utTeGUbhDb4OWqzCyv29V6Qpnwl8Q"
+        }
+      ]
+    },
+    {
+      "query": "hollywood brown",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-02T03:50:00Z",
+      "related_news_urls": [
+        "https://www.tsn.ca/betting/video/2026/11/01/fanduel-sunday-why-hollywood-brown-is-the-best-bet-for-sunday-night-football/",
+        "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-qb-rb-wr-te-flex-week-8-150719566.html",
+        "https://www.nytimes.com/athletic/7729315/2026/10/27/fantasy-football-market-share-week-7-targets-touches/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTS3WsrWv4_H4KcVBbydjYd5R8FmsW_YGTFYzHHwnCw0ovwzeenGjCQtYNGaF8",
+      "image_credit": "TSN",
+      "news": [
+        {
+          "url": "https://www.tsn.ca/betting/video/2026/11/01/fanduel-sunday-why-hollywood-brown-is-the-best-bet-for-sunday-night-football/",
+          "title": "FanDuel Sunday: Why Hollywood Brown is the best bet for Sunday Night Football",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTS3WsrWv4_H4KcVBbydjYd5R8FmsW_YGTFYzHHwnCw0ovwzeenGjCQtYNGaF8"
+        },
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-qb-rb-wr-te-flex-week-8-150719566.html",
+          "title": "Week 8 Fantasy Football Rankings",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7uyB737yxl4ZFNCNc7Hf6KfPkgY9IeJNLwiWu47e__APMAELmad7wBbsotKA"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7729315/2026/10/27/fantasy-football-market-share-week-7-targets-touches/",
+          "title": "Fantasy football market share report: Week 7’s volume kings illustrate a crucial lesson",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD4L9YhXCo3wp-gcxwWDpiZWSq8fKJooJ3v5Nu81wu_b2kIrFy7RGEHyg5Sdo"
+        }
+      ]
+    },
+    {
+      "query": "luka dončić",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-02T03:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50333810/stephen-curry-leads-warriors-25-point-comeback-lakers",
+        "https://sports.yahoo.com/articles/luka-don-knows-lakers-way-011326623.html",
+        "https://www.nba.com/news/4-takeaways-warriors-open-group-play-with-historic-comeback-win"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjJNB9k3nja0B4QMEmwOhcCRWo23boyv1oLBxtQ6tDAaOUQ81zlTclmsLhbvI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50333810/stephen-curry-leads-warriors-25-point-comeback-lakers",
+          "title": "Curry's ankle-breaker on Luka highlights Warriors' stunning 25-point comeback",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjJNB9k3nja0B4QMEmwOhcCRWo23boyv1oLBxtQ6tDAaOUQ81zlTclmsLhbvI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/luka-don-knows-lakers-way-011326623.html",
+          "title": "Luka Dončić knows the Lakers have to be ‘way better’ when teams blitz him",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0UEyRYVK8ttccRmAqCJjYAmbTSc6m-Bh68OXign6hFHa8TkslTvw9gClKzjg"
+        },
+        {
+          "url": "https://www.nba.com/news/4-takeaways-warriors-open-group-play-with-historic-comeback-win",
+          "title": "4 Takeaways: Warriors open Group Play with historic comeback win",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ3CkVxwfDS38t9-lLcKQMguwjFt4eFxQcLLm9XEz5xWUSB7b1tnwQwibAgfo"
+        }
+      ]
+    },
+    {
+      "query": "sonny styles",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-02T03:50:00Z",
+      "related_news_urls": [
+        "https://www.commanders.com/news/commanders-stock-exchange-sonny-styles-joshua-josephs-jayden-daniels",
+        "https://sports.yahoo.com/articles/commanders-lb-sonny-styles-ranked-160132571.html",
+        "https://riggosrag.com/washington-commanders-rookie-stock-report-puts-early-promise-under-bye-week-scrutiny/2"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGM0AOS026wbK1MhFDJjQNLCL5Jnq3ggB2zAoHzXwl3hbr-C3wGNfN3Wy4ADk",
+      "image_credit": "Washington Commanders",
+      "news": [
+        {
+          "url": "https://www.commanders.com/news/commanders-stock-exchange-sonny-styles-joshua-josephs-jayden-daniels",
+          "title": "Question of the week: Which Commanders player is going 'to the moon'?",
+          "publisher": "Washington Commanders",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGM0AOS026wbK1MhFDJjQNLCL5Jnq3ggB2zAoHzXwl3hbr-C3wGNfN3Wy4ADk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/commanders-lb-sonny-styles-ranked-160132571.html",
+          "title": "Commanders LB Sonny Styles ranked No. 1 rookie in the NFL by ESPN",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVNmBGixNu4Obw8dRpqUiroI3phQreb30-cWOPkokGO7LbQLI0jUnTKU8Rnhw"
+        },
+        {
+          "url": "https://riggosrag.com/washington-commanders-rookie-stock-report-puts-early-promise-under-bye-week-scrutiny/2",
+          "title": "Commanders rookie stock report puts early promise under bye-week scrutiny",
+          "publisher": "Riggo's Rag",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8GOyuxs8MtGe-7XhdoXGHnhiGBzrhjNOWeB9NFmwzIsx2B2lcztqxEp2PujE"
+        }
+      ]
+    },
+    {
+      "query": "rj barrett",
+      "approx_searches": "200+",
+      "published_at": "2026-11-02T03:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909864",
+        "https://www.startribune.com/minnesota-timberwolves-toronto-raptors-score-today-wolves-updates-anthony-edwards-lamelo-ball-stats/601902966",
+        "https://torontosun.com/sports/basketball/nba/toronto-raptors/kawhi-raptors-unbeaten-litmus-test-timberwolves"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQw19n0W7msf4Q8nhpUstrfp2bwoMjh7P9Xzv_mn8RZr6RJgypAwYiWcpW9QZo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909864",
+          "title": "Timberwolves 117-94 Raptors (Oct 25, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQw19n0W7msf4Q8nhpUstrfp2bwoMjh7P9Xzv_mn8RZr6RJgypAwYiWcpW9QZo"
+        },
+        {
+          "url": "https://www.startribune.com/minnesota-timberwolves-toronto-raptors-score-today-wolves-updates-anthony-edwards-lamelo-ball-stats/601902966",
+          "title": "Wolves deliver third straight blowout, overwhelm Raptors in home opener",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTugVmSQ28HFN1NbtByoNCLaqzZhSNqDafkAJrr8DGPWmSxK08i7Tby6rbXp8"
+        },
+        {
+          "url": "https://torontosun.com/sports/basketball/nba/toronto-raptors/kawhi-raptors-unbeaten-litmus-test-timberwolves",
+          "title": "Kawhi worry? Raptors unbeaten heading into litmus test vs. Timberwolves",
+          "publisher": "Toronto Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJpNzR7CnB0sNcXy3YbVGREYJv6zXDkjJ59IuZcj7V4ldoZ5uiRF5gchpWkg"
+        }
+      ]
+    },
+    {
+      "query": "sean mannion",
+      "approx_searches": "200+",
+      "published_at": "2026-11-02T03:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/future-eagles-fits-tight-ends-2027-nfl-draft/762884/",
+        "https://www.9news.com/video/sports/locked-on/lo-philadelphia/locked-on-eagles-hit/nick-sirianni-and-sean-mannion-made-some-great-offensive-changes-against-dallas/535-e8c19f24-5f25-4c7d-8fd4-bad5561eb985",
+        "https://www.nfl.com/videos/nick-sirianni-on-eagles-addressing-challenges-it-s-never-just-one-thing"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlJnwKuDa08HBVIp5lFAGeTK2fsF78TBRIbXnOSD1005qJpr3q-IFc2UdFQWY",
+      "image_credit": "NBC Sports Philadelphia",
+      "news": [
+        {
+          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/future-eagles-fits-tight-ends-2027-nfl-draft/762884/",
+          "title": "Future Eagles Fits: Dynamic tight ends to know in the 2027 NFL Draft",
+          "publisher": "NBC Sports Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlJnwKuDa08HBVIp5lFAGeTK2fsF78TBRIbXnOSD1005qJpr3q-IFc2UdFQWY"
+        },
+        {
+          "url": "https://www.9news.com/video/sports/locked-on/lo-philadelphia/locked-on-eagles-hit/nick-sirianni-and-sean-mannion-made-some-great-offensive-changes-against-dallas/535-e8c19f24-5f25-4c7d-8fd4-bad5561eb985",
+          "title": "Nick Sirianni and Sean Mannion Made Some GREAT OFFENSIVE CHANGES Against Dallas!",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMnYG9W6Ptba9molG7dg01pSaBvQo5J9nSOqyNJv_HZYOMbR_JwbylDvpzQhc"
+        },
+        {
+          "url": "https://www.nfl.com/videos/nick-sirianni-on-eagles-addressing-challenges-it-s-never-just-one-thing",
+          "title": "Philadelphia Eagles head coach Nick Sirianni on Eagles addressing challenges: 'It's never just one thing'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJvC4u7HSF_1BHoQMhPCFMYwt2n2DC80kf_5CLxOLPIyKaHIlCjW-Mdc7Kw8s"
+        }
+      ]
+    },
+    {
+      "query": "scottie barnes",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-02T03:40:00Z",
+      "related_news_urls": [
+        "https://www.rotowire.com/basketball/article/best-nba-bets-player-props-picks-sunday-nov-1-144893",
+        "https://www.covers.com/nba/top-parlays-combos-nov-1-2026",
+        "https://www.actionnetwork.com/nba/nba-best-bets-for-celtics-vs-magic-raptors-vs-lakers-more-sunday-november-1"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-H3MfXsPlZKes2n9qSLE7uMgOZTa3D4UgrUXvgkZBIGgN3fLBmyzQUf8-Zuo",
+      "image_credit": "RotoWire",
+      "news": [
+        {
+          "url": "https://www.rotowire.com/basketball/article/best-nba-bets-player-props-picks-sunday-nov-1-144893",
+          "title": "NBA Best Bets and Predictions Today: Player Props & Picks for Sunday, Nov. 1",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-H3MfXsPlZKes2n9qSLE7uMgOZTa3D4UgrUXvgkZBIGgN3fLBmyzQUf8-Zuo"
+        },
+        {
+          "url": "https://www.covers.com/nba/top-parlays-combos-nov-1-2026",
+          "title": "Best NBA Parlays Today: Top Same-Game Parlays & Combos for Sunday, Nov. 1",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCGVIQExcJHmtgz9-8_r0V1ncDjYcS7QoB5cAoCvSe1Ikv46osxnST3SWXLYM"
+        },
+        {
+          "url": "https://www.actionnetwork.com/nba/nba-best-bets-for-celtics-vs-magic-raptors-vs-lakers-more-sunday-november-1",
+          "title": "NBA Best Bets for Celtics vs Magic, Raptors vs Lakers, More (Sunday, November 1)",
+          "publisher": "Action Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw5Wbkt10qmpw8-ktCNr3IH-XpIE0ugNA_KGRdM-kZBsM7Na_lwGYeGagfxMA"
+        }
+      ]
+    },
+    {
+      "query": "justin hartley",
+      "approx_searches": "500+",
+      "published_at": "2026-11-02T03:40:00Z",
+      "related_news_urls": [
+        "https://www.goodhousekeeping.com/entertainment/celebrity-news/a74286942/tracker-season-4-cast-justin-hartley-newport-beach-film-festival-news/",
+        "https://ca.news.yahoo.com/justin-hartley-exciting-news-tracker-122400309.html",
+        "https://www.aol.com/articles/justin-hartley-exciting-news-tracker-122400000.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhzQ7l0rzMwxyeJSGDsNU-scUs2DMXSqmyw_qLmpqx_Atu8MbLueh8msjlkJg",
+      "image_credit": "Good Housekeeping",
+      "news": [
+        {
+          "url": "https://www.goodhousekeeping.com/entertainment/celebrity-news/a74286942/tracker-season-4-cast-justin-hartley-newport-beach-film-festival-news/",
+          "title": "‘Tracker’ Fans, You Must See This Incredible Justin Hartley News",
+          "publisher": "Good Housekeeping",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhzQ7l0rzMwxyeJSGDsNU-scUs2DMXSqmyw_qLmpqx_Atu8MbLueh8msjlkJg"
+        },
+        {
+          "url": "https://ca.news.yahoo.com/justin-hartley-exciting-news-tracker-122400309.html",
+          "title": "Justin Hartley Has Exciting News That ‘Tracker’ Fans Will Love",
+          "publisher": "Yahoo News Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzioXZjalyhJe25Cz5iF_mDMTqZw9KMGq8wlp-J5PzDJQJVGheYG-69m1pP0U"
+        },
+        {
+          "url": "https://www.aol.com/articles/justin-hartley-exciting-news-tracker-122400000.html",
+          "title": "Justin Hartley Has Exciting News That ‘Tracker’ Fans Will Love",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVrVmPpT_O0iKdBXTjPyx8h-ogcmjpYdB3MVQRJBdZ6dY-oBAd4qX0RycXBFE"
+        }
+      ]
+    },
+    {
+      "query": "marquise brown",
+      "approx_searches": "500+",
+      "published_at": "2026-11-02T03:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/rapoport-links-josh-downs-and-btj-to-the-chiefs",
+        "https://sports.yahoo.com/articles/chiefs-trade-worthy-jaguars-thomas-210016911.html",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-analysis/214577/which-receiver-trades-could-chiefs-consider-before-deadline"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPUltWeawqI-13KCjpQ0gFErTXjKnw6oAoAF0QZBnJN7mEddXAlNXalOVbwWo",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/rapoport-links-josh-downs-and-btj-to-the-chiefs",
+          "title": "Rapoport links Josh Downs and BTJ to the Chiefs",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPUltWeawqI-13KCjpQ0gFErTXjKnw6oAoAF0QZBnJN7mEddXAlNXalOVbwWo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/chiefs-trade-worthy-jaguars-thomas-210016911.html",
+          "title": "Chiefs Trade Worthy For Jaguars’ Thomas In Bold Swap",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyMLyKNE97iByJi466BKUuLpLc4i5Zh33e-BdKJjPFcKLmVwtmo_Gh-aOxEvI"
+        },
+        {
+          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-analysis/214577/which-receiver-trades-could-chiefs-consider-before-deadline",
+          "title": "Which receiver trades could the Chiefs consider before the deadline?",
+          "publisher": "Arrowhead Pride",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMKvDnvvP3UHja38rzKHQhV9UlM0UkvV61eG0d5IkXzDQXar295p7oA3MylGk"
+        }
+      ]
+    },
+    {
+      "query": "tyson bagent",
+      "approx_searches": "200+",
+      "published_at": "2026-11-02T03:30:00Z",
+      "related_news_urls": [
+        "https://www.windycitygridiron.com/chicago-bears-rumors/126652/chicago-bears-trade-deadline-rumors-on-tyson-bagent-and-khalil-mack-ravens-chargers",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-may-explore-trading-for-tyson-bagent",
+        "https://sports.yahoo.com/articles/report-ravens-targeting-bears-qb-022609091.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjFRjPcTfYRssXDgoTQimgR7ZxKLrrH9RsxLnCpgMxrSEsOxejfEngqk0P1rM",
+      "image_credit": "Windy City Gridiron",
+      "news": [
+        {
+          "url": "https://www.windycitygridiron.com/chicago-bears-rumors/126652/chicago-bears-trade-deadline-rumors-on-tyson-bagent-and-khalil-mack-ravens-chargers",
+          "title": "Chicago Bears Trade Deadline Rumors on Khalil Mack and Tyson Bagent",
+          "publisher": "Windy City Gridiron",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjFRjPcTfYRssXDgoTQimgR7ZxKLrrH9RsxLnCpgMxrSEsOxejfEngqk0P1rM"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-may-explore-trading-for-tyson-bagent",
+          "title": "Ravens may explore trading for Tyson Bagent",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiG_ZObgCB_NY-yruLjUK3vw_fLRbCLe2Ju6jA1IFFUUVcawWfJR1tP4oby9k"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/report-ravens-targeting-bears-qb-022609091.html",
+          "title": "Report: Ravens targeting Bears QB Tyson Bagent in potential trade",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX3JHWl6HP9hDj7W2IeQqM7eoGPnVDPNxtIhOoMfimxy290s88xOTICFutBlE"
+        }
+      ]
+    }
+  ]
+}
