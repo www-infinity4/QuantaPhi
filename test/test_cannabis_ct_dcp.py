@@ -70,5 +70,21 @@ class TestConnecticutDCP(unittest.TestCase):
         self.assertEqual(expected, actual)
         self.assertEqual(c.execute('SELECT COUNT(*) FROM regulator_source_catalog WHERE state="CT"').fetchone()[0], 1)
 
+    def test_official_groton_name_and_guarded_old_row_correction(self):
+        m = json.loads(MANIFEST.read_text())
+        groton = [r for r in m['records'] if r['license_number']=='AMHF.0008270']
+        self.assertEqual(len(groton), 1)
+        self.assertEqual(groton[0]['name'], 'CURALEAF GROTON LLC')
+        c = db()
+        c.executescript(SQL.read_text())
+        self.assertEqual(c.execute("SELECT name FROM store_sources WHERE id='ct-dcp:AMHF.0008270'").fetchone()[0], 'CURALEAF GROTON LLC')
+        c.execute("UPDATE store_sources SET name='CURALEAF GROTON INC',store='CURALEAF GROTON INC' WHERE id='ct-dcp:AMHF.0008270'")
+        before = c.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0]
+        correction = ROOT / 'workers/cannabis-directory-ct-dcp-groton-name-correction.sql'
+        for _ in range(2):
+            c.executescript(correction.read_text())
+        self.assertEqual(c.execute("SELECT name,store FROM store_sources WHERE id='ct-dcp:AMHF.0008270'").fetchone(), ('CURALEAF GROTON LLC','CURALEAF GROTON LLC'))
+        self.assertEqual(c.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0], before)
+
 if __name__ == '__main__':
     unittest.main()
