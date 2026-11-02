@@ -43,6 +43,7 @@ test('Android service, approval screen and callback keep the requested probe kin
  assert.match(probe,/"shell"\.equals\(kind\) \? SHELL_SCRIPT : SCRIPT/);
  assert.match(probe,/putExtra\("probe_kind", kind\)/);
  assert.match(probe,/"queued", "Command sent; execution is not yet verified/);
+ assert.match(probe,/if \("queued"\.equals\(receipt\(context\)\.optString\("state"\)\)\) return/);
  assert.match(receiver,/output\.getInt\("exitCode"/);
  assert.match(receiver,/output\.getString\("stdout"/);
  assert.match(receiver,/output\.getString\("stderr"/);
