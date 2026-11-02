@@ -55,6 +55,17 @@ class TestAttractionImport(unittest.TestCase):
   self.assertEqual(imp.normalize(sample(kind='historic_site',name='Historic Railroad Depot'))['category'],'historic_site')
   # The same words in a legitimate museum title should not cause a broad category ban.
   self.assertEqual(imp.normalize(sample(kind='museum',name='Apartment Living History Museum'))['category'],'museum')
+ def test_transit_stations_not_recreational_parks(self):
+  # Official RTD facility records identified these two Overture park false positives.
+  # Only park-category transit terms are excluded, not legitimate parks or museums.
+  for name in ('RTD University of Denver Station Park-n-Ride',
+               'RTD Central Park Station',
+               'Downtown Bus Terminal',
+               'North Transit Center'):
+   with self.subTest(name=name):
+    self.assertIsNone(imp.normalize(sample(kind='park',name=name,confidence=.99)))
+  self.assertEqual(imp.normalize(sample(kind='park',name='Central Park'))['category'],'park')
+  self.assertEqual(imp.normalize(sample(kind='museum',name='Rail Station Museum'))['category'],'museum')
  def test_no_unsafe_website(self):
   x=sample();x['properties']['websites']=['javascript:alert(1)']
   self.assertEqual(imp.normalize(x)['website'],'')
