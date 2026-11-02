@@ -6,7 +6,7 @@ const fs=require('node:fs');
 const source=fs.readFileSync('bubbles-ai.js','utf8');
 
 test('reasoning-service failures become persisted assistant replies for the GPT bridge',async()=>{
- const start=source.indexOf("}catch(error){const message=workEvidence||(");
+ const start=source.indexOf("}catch(error){\n  failedTurn=true;\n  const message=workEvidence||(");
  const end=source.indexOf('\n  finally{',start);
  assert.ok(start>0&&end>start,'main reasoning catch remains inspectable');
  const handler=source.slice(start,end);
