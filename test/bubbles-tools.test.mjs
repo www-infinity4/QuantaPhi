@@ -393,3 +393,39 @@ test('structured tool-call envelopes without execution do not become blank Bubbl
  assert.equal(data.receipt.repositoryActionsVerified,false);
  assert.doesNotMatch(data.output,/\{"query":"not executed"\}/);
 });
+
+test('failed live news tools return the observed failure rather than a fabricated model summary',async()=>{
+ const saved=globalThis.fetch;let aiCalls=0,sourceCalls=0;
+ globalThis.fetch=async()=>{sourceCalls++;return Response.json({error:'service unavailable'},{status:503})};
+ try{
+  const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Check the latest news headlines'})});
+  const r=await worker.fetch(req,{AI:{run:async()=>{aiCalls++;return {response:'Five excellent current headlines were retrieved.'}}}});
+  const body=await r.json();
+  assert.ok(sourceCalls>=2);
+  assert.equal(body.receipt.tool,'news.headlines');
+  assert.equal(body.receipt.status,'failed');
+  assert.equal(aiCalls,0,'a failed tool is never passed through synthetic success narration');
+  assert.match(body.output,/could not retrieve current headlines/i);
+  assert.doesNotMatch(body.output,/five excellent/i);
+ }finally{globalThis.fetch=saved}
+});
+
+test('verified headlines survive a summary model outage with unchanged source receipts',async()=>{
+ const saved=globalThis.fetch;let aiCalls=0;
+ const date=new Date().toUTCString();
+ globalThis.fetch=async()=>new Response(
+  '<rss><channel><item><title>Verified headline from source</title><link>https://news.google.com/rss/articles/123</link><pubDate>'+date+'</pubDate><source>Publisher</source></item></channel></rss>',
+  {headers:{'Content-Type':'application/rss+xml'}});
+ try{
+  const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Check the latest news headlines'})});
+  const r=await worker.fetch(req,{AI:{run:async()=>{aiCalls++;throw Error('model is down')}}});
+  const body=await r.json();
+  assert.equal(body.receipt.tool,'news.headlines');
+  assert.equal(body.receipt.status,'complete');
+  assert.ok(aiCalls>0);
+  assert.match(body.output,/Verified headline from source/);
+  assert.equal(body.sources.length,1);
+  assert.equal(body.sources[0].title,'Verified headline from source');
+  assert.equal(r.status,200,'news adapter succeeded even if optional summarization failed');
+ }finally{globalThis.fetch=saved}
+});
