@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "source_name": "QuantaPhi curated official visitor links",
-  "dataset_version": "2026-11-02-ten-colorado-cards",
-  "generated_at": "2026-11-02T00:27:33Z",
+  "dataset_version": "2026-11-02-twelve-colorado-cards",
+  "generated_at": "2026-11-02T08:42:00Z",
   "state": "CO",
   "license": "original_directory_entries",
   "items": [
@@ -166,6 +166,40 @@
       "image_url": "",
       "image_attribution": "",
       "confidence": 0.9
+    },
+    {
+      "id": "curated:colorado-saddlehorn-visitor-center",
+      "name": "Colorado National Monument - Saddlehorn Visitor Center",
+      "city": "Fruita",
+      "state": "CO",
+      "category": "national_monument",
+      "address": "1750 Rim Rock Drive, Fruita, CO 81521",
+      "latitude": 39.10075,
+      "longitude": -108.73445,
+      "website": "https://www.nps.gov/colm/index.htm",
+      "source_name": "National Park Service",
+      "source_url": "https://www.nps.gov/colm/planyourvisit/directions.htm",
+      "license": "US-government-information",
+      "image_url": "",
+      "image_attribution": "",
+      "confidence": 0.95
+    },
+    {
+      "id": "curated:colorado-bents-old-fort",
+      "name": "Bent's Old Fort National Historic Site",
+      "city": "La Junta",
+      "state": "CO",
+      "category": "national_historic_site",
+      "address": "35110 State Highway 194 E., La Junta, CO 81050",
+      "latitude": 38.039775,
+      "longitude": -103.42665,
+      "website": "https://www.nps.gov/beol/index.htm",
+      "source_name": "National Park Service",
+      "source_url": "https://www.nps.gov/beol/planyourvisit/basicinfo.htm",
+      "license": "US-government-information",
+      "image_url": "",
+      "image_attribution": "",
+      "confidence": 0.95
     }
   ]
 }
