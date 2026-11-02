@@ -126,3 +126,37 @@
 #oracleCardDeck .shopphi-flank-navigation{flex-wrap:wrap}
 #oracleCardDeck .shopphi-flank-navigation button:last-child{flex:1 1 100%;min-height:42px;background:#f5f7f9;color:#344a59;border-color:#d4dde5}
 @media(prefers-reduced-motion:reduce){#oracleCardDeck .shopphi-flank{scroll-behavior:auto;transition:none;animation:none}}
+
+/* Image-led ad chapters: the two real, attributed offers appear before the
+ * shopping hero on phones; other app cards keep their original composition. */
+@media(max-width:949px){
+ #oracleCardDeck .shopphi-switchboard-grid.shopphi-showcase-mode>.oracle-card-deck-stage{
+  grid-row:2;grid-column:1/-1
+ }
+ #oracleCardDeck .shopphi-switchboard-grid.shopphi-showcase-mode .shopphi-flank:not([hidden]){
+  min-height:0;padding:12px;box-shadow:0 5px 22px #172c4521
+ }
+ #oracleCardDeck .shopphi-switchboard-grid.shopphi-showcase-mode .shopphi-flank-visual{
+  height:clamp(160px,46vw,245px);background:#fff
+ }
+ #oracleCardDeck .shopphi-showcase-mode .shopphi-flank-visual img{object-fit:contain}
+}
+#oracleCardDeck .shopphi-flank{
+ transition:opacity .26s ease,transform .26s ease
+}
+#oracleCardDeck .shopphi-switchboard-grid.shopphi-is-fading .shopphi-flank:not([hidden]){
+ opacity:0;transform:translateY(6px)
+}
+@keyframes shopphi-offer-arrive{
+ from{opacity:0;transform:translateY(8px)}
+ to{opacity:1;transform:translateY(0)}
+}
+#oracleCardDeck .shopphi-showcase-mode:not(.shopphi-is-fading) .shopphi-flank:not([hidden]){
+ animation:shopphi-offer-arrive .38s ease both
+}
+#oracleCardDeck .oracle-card-deck-stage{transition:opacity .32s ease}
+#oracleCardDeck .oracle-card-deck-stage.shopphi-hero-fading{opacity:0}
+@media(prefers-reduced-motion:reduce){
+ #oracleCardDeck .shopphi-flank,
+ #oracleCardDeck .oracle-card-deck-stage{animation:none!important;transition:none!important;transform:none!important}
+}
