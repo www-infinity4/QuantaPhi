@@ -105,7 +105,7 @@ test('merged is still unverified until deployment evidence exists',()=>{
 
 test('a signed runner ACK is the only event that may mark a continuation queued',async()=>{
  const {continuationActivity}=await import('../bubbles-star-continuation.mjs');
- const result={selected:{target:{ticketId:'IW-20261025-AAAABBBB',jobId:'TASK-1',repository:a}},dispatch:{status:'queued_for_runner'}};
+ const result={ok:true,selected:{target:{ticketId:'IW-20261025-AAAABBBB',jobId:'TASK-1',repository:a}},dispatch:{status:'queued_for_runner'}};
  assert.deepEqual(continuationActivity(result),{type:'job',repository:a,status:'queued'});
  assert.equal(continuationActivity({...result,dispatch:{status:'runner_dispatch_unverified'}}),null);
  assert.equal(continuationActivity({...result,dispatch:null}),null);
