@@ -26,8 +26,9 @@ export function pickNextShowcase(cards,currentId,seen=new Set()){
  const eligible=cards.filter(c=>c?.id&&c?.id!==currentId&&c.photo===true&&!seen.has(c.id)&&
    /^https?:\/\//.test(c.url||'https://quantaphi.org/')&&
    chapterFor([c.title,c.category,c.description].join(' ')));
- for(let i=position;i<SHOWCASE_CHAPTERS.length;i++){
-  const next=eligible.find(c=>chapterFor([c.title,c.category,c.description].join(' '))===SHOWCASE_CHAPTERS[i]);
+ for(let step=0;step<SHOWCASE_CHAPTERS.length;step++){
+  const chapter=SHOWCASE_CHAPTERS[(position+step)%SHOWCASE_CHAPTERS.length];
+  const next=eligible.find(c=>chapterFor([c.title,c.category,c.description].join(' '))===chapter);
   if(next)return next;
  }
  return null;
