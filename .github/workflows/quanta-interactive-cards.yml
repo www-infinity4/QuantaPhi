@@ -82,6 +82,11 @@ on:
       - 'test/home-mobile-first.browser.spec.mjs'
       - 'test/android-scroll-sections.test.mjs'
       - 'test/android-scroll-sections.browser.spec.mjs'
+      - 'restricted-ad-card.mjs'
+      - 'restricted-ad-card.css'
+      - 'adult-kit-research.mjs'
+      - 'test/adult-kit-research.test.mjs'
+      - 'test/adult-lifestyle-card.browser.spec.mjs'
       - 'world-series-news.mjs'
       - 'church-iam-card.js'
       - 'church-iam-card.css'
@@ -201,4 +206,4 @@ jobs:
         run: |
           node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
-          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/quanta-marketplace-carousel.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/design-lab-cooperative.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/android-scroll-sections.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs test/integra-x-tour.browser.spec.mjs test/integra-automation.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/quick-card-spotlights.browser.spec.mjs test/infinity-accepted-browser.spec.mjs test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/quanta-card-live-source.browser.spec.mjs test/quanta-marketplace-carousel.browser.spec.mjs test/design-lab-power-chain.browser.spec.mjs test/design-lab-bulk-allocator.browser.spec.mjs test/design-lab-cooperative.browser.spec.mjs test/premium-card-browser.spec.mjs test/shopphi-flanks.browser.spec.mjs test/shopphi-seller-live.browser.spec.mjs test/home-mobile-first.browser.spec.mjs test/android-scroll-sections.browser.spec.mjs test/share-shopphi-browser.spec.mjs test/infinity-affiliates.browser.spec.mjs test/world-series-browser.spec.mjs test/quick-card-preview.browser.spec.mjs test/adult-lifestyle-card.browser.spec.mjs test/integra-x-tour.browser.spec.mjs test/integra-automation.browser.spec.mjs --reporter=line --workers=1
