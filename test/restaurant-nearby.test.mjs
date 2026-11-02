@@ -26,7 +26,7 @@ test('Nearby query uses bounded coordinates and source-backed organic listings',
  assert.match(sql,/latitude BETWEEN/);
  assert.match(sql,/longitude BETWEEN/);
  assert.match(sql,/LIMIT 25 OFFSET/);
- assert.equal(args.length,11);
+ assert.equal(args.length,12);
  assert.equal(r.headers.get('Cache-Control'),'no-store');
 });
 test('Phone location is permission-based and nationwide path reuses real city inventory',()=>{
