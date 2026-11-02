@@ -14,6 +14,13 @@ adb shell pm grant "$PKG" android.permission.RECORD_AUDIO
 adb shell pm grant "$PKG" android.permission.POST_NOTIFICATIONS
 adb shell appops set "$PKG" SYSTEM_ALERT_WINDOW allow
 adb logcat -c
+# Preserve diagnostics even if the early UI assertion fails (previous artifact
+# lacked logcat because collection happened only after the assertion).
+save_early_diagnostics() {
+    adb logcat -d -v threadtime > /tmp/bubbles-emulator/logcat.txt 2>/dev/null || true
+    adb shell dumpsys activity activities > /tmp/bubbles-emulator/activities.txt 2>/dev/null || true
+}
+trap save_early_diagnostics EXIT
 adb shell am start -W -n "$PKG/org.quantaphi.bubbles.MainActivity" | tee /tmp/bubbles-emulator/launch.txt
 sleep 5
 # Save the first frame before the assertion, including failed launches.
@@ -21,7 +28,13 @@ adb shell screencap -p /sdcard/bubbles-initial.png
 adb pull /sdcard/bubbles-initial.png /tmp/bubbles-emulator/initial.png
 python3 - <<'PY'
 from xml.etree import ElementTree as ET
-import re, subprocess
+import re, subprocess, time
+def launcher_anr_wait_target(controls):
+    # A Pixel Launcher ANR is an emulator/system-process problem, not proof
+    # that the Bubbles app froze. Only dismiss that exact system dialog.
+    if not any(row.get('text') == "Pixel Launcher isn't responding" for row in controls):
+        return None
+    return next((row for row in controls if row.get('text') == 'Wait' and row.get('clickable') == 'true'), None)
 def snapshot(n):
     subprocess.run(['adb','shell','uiautomator','dump','/sdcard/bubbles-initial.xml'],check=True)
     subprocess.run(['adb','pull','/sdcard/bubbles-initial.xml',f'/tmp/bubbles-emulator/initial-{n}.xml'],check=True)
@@ -29,8 +42,15 @@ def snapshot(n):
     return [node.attrib for node in root.iter('node')]
 controls=[]
 button=None
-for attempt in range(6):
+for attempt in range(10):
     controls=snapshot(attempt)
+    system_wait=launcher_anr_wait_target(controls)
+    if system_wait:
+        bounds=list(map(int,re.findall(r'\\d+',system_wait.get('bounds',''))))
+        if len(bounds)==4:
+            subprocess.run(['adb','shell','input','tap',str((bounds[0]+bounds[2])//2),str((bounds[1]+bounds[3])//2)],check=True)
+            time.sleep(3)
+            continue
     # UIAutomator omits some off-screen ScrollView controls. The actual
     # first-party Open chat button also starts the same foreground voice service.
     button=next((row for row in controls if any(label in row.get('text','') or
