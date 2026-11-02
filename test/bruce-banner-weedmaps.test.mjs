@@ -65,8 +65,8 @@ test('privacy opt-out blocks Oracle view/open persistence and personalized ranki
  assert.match(html,/id="bruceBannerWeedmapsCard" data-personalization="disabled"/);
  assert.match(card,/root\.dataset\.personalization='disabled'/);
  assert.match(deck,/function nonProfiling\(entry\)/);
- assert.match(deck,/if\(!nonProfiling\(entry\)\)void import\('\/bubbles-project-discovery/);
- assert.match(deck,/if\(!nonProfiling\(entry\)\)\{\s*entry\.count=/);
+ assert.match(deck,/if\(!automatic&&!nonProfiling\(entry\)\)void import\('\/bubbles-project-discovery/);
+ assert.match(deck,/if\(!automatic&&!nonProfiling\(entry\)\)\{\s*entry\.count=/);
  assert.match(deck,/if\(!active\|\|nonProfiling\(active\)\|\|/);
  assert.match(deck,/selectedTab!=='for-you'\|\|!nonProfiling\(e\)/);
 });
