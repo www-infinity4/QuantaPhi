@@ -1,0 +1,21 @@
+/* Original, source-backed Cloudflare directory cards. No merchant promotions
+ * before licensed rights/verified age controls; no fake testimonials. */
+#cannabisDirectoryCards:empty{display:none!important}
+#cannabisDirectoryCards{max-width:850px;margin:0 auto}
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app > #cannabisDirectoryCards{display:none!important}
+.icd-store-card{background:#fff;color:#283b47;border:1px solid #d7e1e6;border-radius:18px;padding:17px;
+ box-shadow:0 4px 18px #19304110;max-width:800px;margin:15px auto;
+ font:16px/1.5 system-ui,-apple-system,Roboto,sans-serif}
+.icd-store-card[hidden]{display:none!important}
+.icd-store-photo{border:1px solid #d5e0e5;background:#f4f7f8;border-radius:12px;min-height:175px;
+ display:flex;align-items:center;justify-content:center;overflow:hidden;margin-top:12px}
+.icd-store-image{width:100%;height:auto;max-height:330px;object-fit:contain;display:block}
+.icd-photo-placeholder{color:#71838d;font-size:13px;text-align:center;padding:15px}
+.icd-store-name{font-size:clamp(22px,4vw,30px)!important;line-height:1.2!important;color:#233e50!important;margin:12px 0 5px!important}
+.icd-store-location{color:#405969;font-size:15px;font-weight:800}
+.icd-store-address,.icd-store-testimonial{color:#334c5b;font-size:14px}
+.icd-store-testimonial{border-left:3px solid #a1b7c3;padding-left:13px;margin:13px 0}
+.icd-testimonial-link{display:block;color:#205d7c;font-size:12px;margin:6px 0 12px}
+.icd-store-card .icd-control{display:flex;margin:13px 0 0;width:100%;min-height:46px}
+@media(max-width:480px){.icd-store-card{padding:13px}.icd-store-photo{min-height:142px}}
+@media(prefers-reduced-motion:reduce){.icd-store-card *{animation:none!important;transition:none!important}}
