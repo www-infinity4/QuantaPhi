@@ -1,0 +1,90 @@
+{
+  "source": "New Jersey Cannabis Regulatory Commission",
+  "source_index": "https://www.nj.gov/cannabis/businesses/permitted/",
+  "queried_at": "2026-11-02",
+  "scope": "Eight individually issued public Class 5 annual retailer permit PDFs with future expiration; no suspension/operational guarantee",
+  "license_verified": false,
+  "advertising_approved": false,
+  "records": [
+    {
+      "license_number": "RE000035",
+      "name": "1634 Funk",
+      "facility_name": "1634 FUNK LLC",
+      "city": "Jersey City",
+      "address": "394 COMMUNIPAW AVE, JERSEY CITY, NJ 07304",
+      "expiration_date": "2027-10-26",
+      "license_class": "Class 5 - Retailer",
+      "permit_url": "https://www.nj.gov/cannabis/documents/businesses/Permits%20and%20Renewals/Funk%20Recreational%20License.pdf"
+    },
+    {
+      "license_number": "RE000252",
+      "name": "4Twenty Somewhere",
+      "facility_name": "4TWENTY SOMEWHERE",
+      "city": "Hewitt",
+      "address": "1938 UNION VALLEY RD STE D, HEWITT, NJ 07421",
+      "expiration_date": "2027-08-14",
+      "license_class": "Class 5 - Retailer",
+      "permit_url": "https://www.nj.gov/cannabis/documents/businesses/Permits%20and%20Renewals/4Twenty%20Somewhere%20Recreational%20License.pdf"
+    },
+    {
+      "license_number": "RE000943",
+      "name": "A-Z Supply",
+      "facility_name": "A-Z SUPPLY INC",
+      "city": "Bloomfield",
+      "address": "1283 BROAD ST, BLOOMFIELD, NJ 07003",
+      "expiration_date": "2027-03-06",
+      "license_class": "Class 5 - Retailer",
+      "permit_url": "https://www.nj.gov/cannabis/documents/businesses/Permits%20and%20Renewals/A-Z%20Supply%20Recreational%20License.pdf"
+    },
+    {
+      "license_number": "RE000527",
+      "name": "AC Leef",
+      "facility_name": "AC LEEF LLC",
+      "city": "Atlantic City",
+      "address": "470 N ALBANY AVE, ATLANTIC CITY, NJ 08401",
+      "expiration_date": "2027-12-09",
+      "license_class": "Class 5 - Retailer",
+      "permit_url": "https://www.nj.gov/cannabis/documents/businesses/Permits%20and%20Renewals/AC%20Leef%20Recreational%20License.pdf"
+    },
+    {
+      "license_number": "RE000395",
+      "name": "Altalune",
+      "facility_name": "ALTALUNE, INC.",
+      "city": "Jersey City",
+      "address": "433 PALISADE AVE, JERSEY CITY, NJ 07307",
+      "expiration_date": "2027-05-14",
+      "license_class": "Class 5 - Retailer",
+      "permit_url": "https://www.nj.gov/cannabis/documents/businesses/Permits%20and%20Renewals/Altalune%20Recreational%20License.pdf"
+    },
+    {
+      "license_number": "RE000216",
+      "name": "Altius NJ",
+      "facility_name": "ALTIUS NJ LLC",
+      "city": "Glassboro",
+      "address": "60 DELSEA DR N, GLASSBORO, NJ 08028",
+      "expiration_date": "2027-10-01",
+      "license_class": "Class 5 - Retailer",
+      "permit_url": "https://www.nj.gov/cannabis/documents/businesses/Permits%20and%20Renewals/Altius%20NJ%20Recreational%20License.pdf"
+    },
+    {
+      "license_number": "RE000587",
+      "name": "Andover Cannabis",
+      "facility_name": "ANDOVER CANNABIS, LLC",
+      "city": "Andover",
+      "address": "144 MAIN ST #146, ANDOVER, NJ 07821",
+      "expiration_date": "2027-05-05",
+      "license_class": "Class 5 - Retailer",
+      "permit_url": "https://www.nj.gov/cannabis/documents/businesses/Permits%20and%20Renewals/Andover%20Cannabis%20Recreational%20License.pdf"
+    },
+    {
+      "license_number": "RE000012",
+      "name": "Ascend New Jersey - Rochelle Park",
+      "facility_name": "ASCEND NEW JERSEY, LLC",
+      "city": "Rochelle Park",
+      "address": "174 ROUTE 17 N, ROCHELLE PARK, NJ 07662",
+      "expiration_date": "2027-04-20",
+      "license_class": "Class 5 - Retailer",
+      "permit_url": "https://www.nj.gov/cannabis/documents/businesses/Permits%20and%20Renewals/Ascend%20Rec%20Packet.pdf"
+    }
+  ]
+}
