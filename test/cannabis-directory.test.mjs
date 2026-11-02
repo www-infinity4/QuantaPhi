@@ -12,6 +12,9 @@ test('Midwest law profiles keep Iowa distinct from Illinois and Missouri',()=>{
  assert.equal(policy('MO').adult_use,'legal_with_conditions');
  assert.equal(policy('MN').adult_use,'unreviewed');
  assert.equal(policy('MN').medical_program,true);
+ assert.equal(policy('NH').adult_use,'not_authorized');
+ assert.equal(policy('NH').medical_program,true);
+ assert.ok(policy('NH').source_url.startsWith('https://www.dhhs.nh.gov/'));
  assert.match(policy('MN').source_url,/mn\.gov\/ocm\/dmc\/patients/);
  assert.equal(policy('DE').adult_use,'legal_with_conditions');
  assert.equal(policy('DE').medical_program,true);
