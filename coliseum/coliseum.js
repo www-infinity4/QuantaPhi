@@ -88,11 +88,30 @@ function renderChat(){
   const div=node('div','chat-note');div.append(node('small','You · '+formatDate(note.createdAt)),node('p','',note.text));root.append(div);
  }
 }
+// Open the existing Bubbles chat once, inside Zeus' actual Chat tab.
+// The iframe never receives wallet credentials, owner powers or fake replies.
+let zeusAssistantStarted=false;
+function mountZeusAssistant(){
+ if(zeusAssistantStarted)return;
+ const iframe=el('zeusAssistantFrame'),status=el('zeusAssistantStatus');
+ if(!iframe||!status)return;
+ zeusAssistantStarted=true;
+ const id='coliseum-zeus-assistant';
+ const query=new URLSearchParams({embed:'1',id,role:'builder',name:'Zeus AI',
+  instructions:'You are Zeus AI, the Infinity Coliseum builder, using the existing Bubbles assistant service. Give useful answers, identify tool limitations honestly, and ask before publishing, charging or running owner jobs.'});
+ iframe.addEventListener('load',()=>{
+  iframe.contentWindow?.postMessage({type:'quantaphi:bubbles:open',id},window.location.origin);
+  status.textContent='Bubbles chat loaded. Send a message to check the connected AI response service.';
+ });
+ iframe.addEventListener('error',()=>{status.textContent='Bubbles chat could not load. Use the full Bubbles chat link below.';});
+ iframe.src='/bubbles.html?'+query.toString();
+}
 function setMode(next){
  el('chatPane').hidden=next!=='chat';el('buildPane').hidden=next!=='build';
+ if(next==='chat')mountZeusAssistant();
  el('chatTab').setAttribute('aria-pressed',String(next==='chat'));
  el('buildTab').setAttribute('aria-pressed',String(next==='build'));
- notify((next==='chat'?'Chat':'Build')+' mode is a private prototype; no people or AI providers are connected.');
+ notify(next==='chat'?'Zeus chat uses Bubbles AI. Send a message to check live responses.':'Build mode keeps project drafts on your device; shared rooms are still a prototype.');
 }
 el('pitchForm').addEventListener('submit',event=>{
  event.preventDefault();
@@ -121,4 +140,4 @@ el('resetDemo').addEventListener('click',()=>{
  if(!confirm('Clear local Coliseum ideas, votes and notes from this browser?'))return;
  store={ideas:[],notes:[],votes:{}};write();renderIdeas();renderChat();notify('Local demo cleared. No wallet or cloud account was changed.');
 });
-renderModels();renderRooms();renderSectors();renderIdeas();renderChat();setMode('build');
+renderModels();renderRooms();renderSectors();renderIdeas();renderChat();setMode('chat');
