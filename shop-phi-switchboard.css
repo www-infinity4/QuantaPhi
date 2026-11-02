@@ -160,3 +160,15 @@
  #oracleCardDeck .shopphi-flank,
  #oracleCardDeck .oracle-card-deck-stage{animation:none!important;transition:none!important;transform:none!important}
 }
+
+/* An automatic page change must always have an accessible Pause control. */
+@media(min-width:950px){
+ #oracleCardDeck .shopphi-flank-navigation:not([hidden]){display:flex!important;justify-content:flex-end}
+ #oracleCardDeck .shopphi-flank-navigation .shopphi-flank-position,
+ #oracleCardDeck .shopphi-flank-navigation button:not(.shopphi-rotation-toggle){display:none!important}
+}
+@media(max-width:340px){
+ #oracleCardDeck .shopphi-switchboard-grid.shopphi-showcase-mode>.oracle-card-deck-stage{
+  grid-row:3;grid-column:1
+ }
+}
