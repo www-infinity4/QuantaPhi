@@ -45,3 +45,40 @@ test('GitHub 429 and missing repo never become fake balances or commit receipts'
   assert.notEqual(data.receipt.status,'complete');
  }
 });
+
+
+test('public GitHub Atom and SHA patch recover a verified commit when REST returns 403',async()=>{
+ const commit='b'.repeat(40),repo='www-infinity4/QuantaPhi',seen=[];
+ const fetcher=async(url,opts)=>{
+  seen.push({url,redirect:opts?.redirect});
+  if(url.startsWith('https://api.github.com/'))return Response.json({message:'rate limit'},{status:403});
+  if(url==='https://github.com/'+repo+'/commits/main.atom')
+   return new Response('<feed><entry><link href="https://github.com/'+repo+'/commit/'+commit+'" rel="alternate"/></entry></feed>',{headers:{'Content-Type':'application/atom+xml'}});
+  if(url==='https://github.com/'+repo+'/commit/'+commit+'.patch')
+   return new Response('From '+commit+' Mon Sep 17 00:00:00 2001\nSubject: [PATCH] Fix real Bubbles\n\n---\ndiff --git a/bubbles-ai.js b/bubbles-ai.js\nindex 123..234 100644\n--- a/bubbles-ai.js\n+++ b/bubbles-ai.js\n@@ -1 +1 @@\n-old\n+new\n',{headers:{'Content-Type':'text/plain'}});
+  throw Error('unexpected '+url);
+ };
+ const res=await readGithubCommit(new Request('https://tools'),{request:'Show latest commit in '+repo},{id:'s'},fetcher);
+ const v=await res.json();
+ assert.equal(v.receipt.status,'complete');assert.equal(v.receipt.sourceReadVerified,true);
+ assert.equal(v.receipt.provider,'github-public-patch');
+ assert.equal(v.commitSha,commit);assert.equal(v.files[0].path,'bubbles-ai.js');
+ assert.equal(v.walletCredited,false);
+ assert.ok(seen.every(x=>x.redirect==='manual'),'never follow untrusted redirect');
+});
+test('public patch fallback rejects forged SHA, redirects, empty files and foreign feed links',async()=>{
+ const commit='c'.repeat(40),bad='d'.repeat(40),repo='www-infinity4/QuantaPhi';
+ for(const mode of ['spoofed','redirect','empty','foreign-feed']){
+  const fetcher=async(url)=>{
+   if(url.startsWith('https://api.github.com/'))return Response.json({message:'limited'},{status:429});
+   if(url.endsWith('.atom'))return new Response('<feed><entry><link href="'+(mode==='foreign-feed'?'https://evil.example/x':'https://github.com/'+repo+'/commit/'+commit)+'"/></entry></feed>');
+   if(url.endsWith('.patch'))return mode==='redirect'?new Response(null,{status:302,headers:{Location:'https://evil.example/'}}):new Response(mode==='empty'?'From '+commit+' Mon Sep 17 00:00:00 2001\nSubject: [PATCH] Missing diff':'From '+bad+' Mon Sep 17 00:00:00 2001\nSubject: [PATCH] forged\n\ndiff --git a/evil.js b/evil.js\n');
+   throw Error('unapproved url '+url);
+  };
+  const res=await readGithubCommit(new Request('https://tools'),{request:'Show latest commit in '+repo},{id:'f'},fetcher);
+  const v=await res.json();
+  assert.notEqual(v.receipt.status,'complete',mode);
+  assert.equal(v.receipt.sourceReadVerified,false,mode);
+  assert.equal(v.walletCredited,undefined,mode);
+ }
+});
