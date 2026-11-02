@@ -43,3 +43,5 @@
  #coliseumZeusCard .zc-links{grid-template-columns:1fr}
  #coliseumZeusCard .zc-main{padding:14px}
 }
+
+#coliseumZeusCard .zc-discovery-shortcut{display:inline-flex;align-items:center;min-height:44px;padding:8px 2px;color:#245e7d;font-weight:750;font-size:.91rem;text-underline-offset:3px}
