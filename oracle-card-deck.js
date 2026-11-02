@@ -191,10 +191,10 @@ function registerDirectoryCards(){
  let added=false;
  for(const node of document.querySelectorAll('[data-directory-store-id]')){
   const id=node.id;
-  if(!/^directory-store-[A-Za-z0-9][A-Za-z0-9:._-]{2,109}$/.test(id)||entries.some(e=>e.id===id))continue;
+  if(!/^directory-store-[a-z2-7]{5,52}$/.test(id)||entries.some(e=>e.id===id))continue;
   const name=node.dataset.directoryStoreName||'Source-backed dispensary';
   const sourceId=node.dataset.directoryStoreId;
-  if(!/^[A-Za-z0-9][A-Za-z0-9:._-]{2,109}$/.test(sourceId||''))continue;
+  if(!/^[A-Za-z0-9][A-Za-z0-9:._-]{2,31}$/.test(sourceId||''))continue;
   entries.push({id,title:'21+ · '+name,feedId:id,category:'21+ Directory',
    feature:'Independent Cloudflare source listing; no checkout or unverified reviews',
    study:'Source-backed business directory',node,marker:null,count:0});
