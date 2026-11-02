@@ -4,6 +4,9 @@ on:
     paths:
       - 'zeus-discovery-core.mjs'
       - 'zeus-community-verified.mjs'
+      - 'playwright.zeus-discovery.config.mjs'
+      - 'test/fixtures/zeus-discovery.html'
+      - 'test/zeus-discovery-carousel-browser.spec.mjs'
       - 'zeus-discovery-carousel.mjs'
       - 'zeus-discovery-carousel.css'
       - 'quick-card-modernize.css'
@@ -16,6 +19,9 @@ on:
     paths:
       - 'zeus-discovery-core.mjs'
       - 'zeus-community-verified.mjs'
+      - 'playwright.zeus-discovery.config.mjs'
+      - 'test/fixtures/zeus-discovery.html'
+      - 'test/zeus-discovery-carousel-browser.spec.mjs'
       - 'zeus-discovery-carousel.mjs'
       - 'zeus-discovery-carousel.css'
       - 'quick-card-modernize.css'
@@ -43,3 +49,17 @@ jobs:
           node --test test/zeus-discovery-carousel.test.mjs
       - name: Check whitespace and conflict markers
         run: git diff --check HEAD~1 HEAD
+
+  browser-zeus:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Chromium browser tests
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Android viewport and creator link acceptance
+        run: npx playwright test --config=playwright.zeus-discovery.config.mjs --reporter=line
