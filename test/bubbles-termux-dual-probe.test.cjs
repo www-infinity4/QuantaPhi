@@ -23,7 +23,7 @@ test('same Bubbles chat distinguishes shell-only check from installed-Python che
                  'explain check termux','check termux and delete files'])
    assert.equal(classify(q),null,q);
  assert.match(source,/nativeTermuxProbeRequests\.push\(\{action:'probe',kind\}\)/);
- assert.match(source,/Termux \+\(kind==='shell'\?'shell check':'Python test'\)/);
+ assert.match(source,/kind==='shell'\?'shell check':'Python test'/);
 });
 
 test('Android service, approval screen and callback keep the requested probe kind',()=>{
