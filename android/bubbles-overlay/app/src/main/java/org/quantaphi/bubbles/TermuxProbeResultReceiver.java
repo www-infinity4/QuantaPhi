@@ -30,11 +30,7 @@ public final class TermuxProbeResultReceiver extends BroadcastReceiver {
         String stderr = limited(output.getString("stderr", ""));
         String error = limited(output.getString("errmsg", ""));
         boolean cleaned = "python".equals(kind) && stdout.contains("cleanup=verified_job_directory_removed");
-        boolean success = code == 0 && serviceError == -1 && (
-            ("shell".equals(kind) && stdout.contains("probe=termux-shell-v1")
-                && stdout.contains("termux=ok")) ||
-            ("python".equals(kind) && cleaned
-                && stdout.contains("Bubbles Python works: 2 + 2 = 4")));
+        boolean success = TermuxReceiptPolicy.succeeded(kind, code, serviceError, stdout);
         String detail = "exit=" + code + "; service=" + serviceError
             + "; cleanup=" + ("shell".equals(kind) ? "not_applicable" : cleaned ? "confirmed" : "not_verified")
             + (stdout.isEmpty() ? "" : "\n" + stdout)
