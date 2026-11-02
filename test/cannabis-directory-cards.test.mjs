@@ -81,6 +81,6 @@ test('real D1 regulator license IDs with colons dots and uppercase register safe
  }
  const fs=await import('node:fs/promises');
  const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
- assert.match(deck,/directory-store-\[a-zA-Z0-9/);
- assert.match(deck,/\[a-zA-Z0-9:._-\]/);
+ assert.match(deck,/directory-store-\[A-Za-z0-9/);
+ assert.match(deck,/\[A-Za-z0-9:._-\]/);
 });
