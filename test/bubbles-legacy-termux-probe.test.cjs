@@ -53,9 +53,10 @@ test('callback separates dispatch, exit, failed cleanup, and absent results',()=
  assert.match(receiver,/getBundleExtra\("result"\)/);
  assert.match(receiver,/getInt\("exitCode"/);
  assert.match(receiver,/getInt\("err"/);
- assert.match(receiver,/code == 0 && serviceError == -1/);
- assert.match(receiver,/"python"\.equals\(kind\) && cleaned/);
- assert.match(receiver,/"shell"\.equals\(kind\)/);
+ assert.match(receiver,/TermuxReceiptPolicy\.succeeded\(kind, code, serviceError, stdout\)/);
+ const policy=read(java+'TermuxReceiptPolicy.java');
+ assert.match(policy,/exitCode != 0 \|\| serviceCode != -1/);
+ assert.match(policy,/cleanup=verified_job_directory_removed/);
  assert.match(receiver,/cleanup=" \+ \("shell"\.equals\(kind\) \? "not_applicable" : cleaned \? "confirmed" : "not_verified"\)/);
  assert.match(probe,/timed_out_unverified/);
  assert.match(probe,/if \("queued"\.equals\(current.optString\("state"\)\)\)/);
