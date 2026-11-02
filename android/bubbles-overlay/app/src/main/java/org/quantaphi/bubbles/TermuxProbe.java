@@ -141,6 +141,8 @@ final class TermuxProbe {
         record(context, state, detail, id, kind);
     }
     static void cancel(Context context, String kind) {
+        // A second dismissed dialog must not erase the first command's pending receipt.
+        if ("queued".equals(receipt(context).optString("state"))) return;
         record(context, "owner_cancelled", "The owner did not approve the Termux " + kind + " check.", 0, kind);
     }
 }
