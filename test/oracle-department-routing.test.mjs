@@ -29,5 +29,5 @@ test('Top dropdown routes normal department cards without showing age-restricted
  assert.match(deck,/departmentApi\.matches/);
  assert.match(deck,/oracle:restaurant-nearby-request/);
  assert.match(deck,/oracle:restaurant-nationwide/);
- assert.match(deck,/const request=entries\.find\(x=>.*departmentMatches/);
+ assert.match(deck,/const request=entries\.find\(x=>x\.id===spotlightRequested.*departmentMatches/);
 });
