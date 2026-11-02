@@ -1,0 +1,114 @@
+{
+  "source": "Connecticut Department of Consumer Protection — Licensed Cannabis and Medical Marijuana Retail Locations",
+  "source_url": "https://data.ct.gov/d/42yd-3x3d",
+  "source_dataset_id": "42yd-3x3d",
+  "official_dataset_updated": "2026-10-27",
+  "inspected_at": "2026-11-02",
+  "scope": "10 hybrid retail records from the public DCP operating-location dataset; not a live license-status lookup",
+  "license_verified": false,
+  "merchant_urls_verified": false,
+  "advertising_approved": false,
+  "media_rights": false,
+  "records": [
+    {
+      "license_number": "AMHF.0008257",
+      "license_type": "Hybrid Retailer",
+      "name": "ZEN LEAF",
+      "city": "Norwich",
+      "state": "CT",
+      "address": "606 West Main Street, Norwich, CT 06360",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    },
+    {
+      "license_number": "AMHF.0008258",
+      "license_type": "Hybrid Retailer",
+      "name": "ZEN LEAF",
+      "city": "Newington",
+      "state": "CT",
+      "address": "2903 BERLIN TPKE, Newington, CT 06111-4115",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    },
+    {
+      "license_number": "AMHF.0008250",
+      "license_type": "Hybrid Retailer",
+      "name": "RISE",
+      "city": "Branford",
+      "state": "CT",
+      "address": "471 E MAIN ST, Branford, CT 06405-2961",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    },
+    {
+      "license_number": "AMHF.0008268",
+      "license_type": "Hybrid Retailer",
+      "name": "BUDR CANNABIS",
+      "city": "Danbury",
+      "state": "CT",
+      "address": "105 MILL PLAIN RD, Danbury, CT 06811-5198",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    },
+    {
+      "license_number": "AMHF.0008283",
+      "license_type": "Hybrid Retailer",
+      "name": "BUDR CANNABIS",
+      "city": "Vernon Rockville",
+      "state": "CT",
+      "address": "234 TALCOTTVILLE RD, Vernon Rockville, CT 06066-4617",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    },
+    {
+      "license_number": "AMHF.0008251",
+      "license_type": "Hybrid Retailer",
+      "name": "BUDR CANNABIS",
+      "city": "Uncasville",
+      "state": "CT",
+      "address": "887 NORWICH NEW LONDON TPKE, Uncasville, CT 06382-1917",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    },
+    {
+      "license_number": "AMHF.0008263",
+      "license_type": "Hybrid Retailer",
+      "name": "TRULIEVE CANNABIS DISPENSARY",
+      "city": "Bristol",
+      "state": "CT",
+      "address": "820 FARMINGTON AVE, Bristol, CT 06010-3921",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    },
+    {
+      "license_number": "AMHF.0008262",
+      "license_type": "Hybrid Retailer",
+      "name": "ZEN LEAF",
+      "city": "Naugatuck",
+      "state": "CT",
+      "address": "585 South Main Street, Naugatuck, CT 06770",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    },
+    {
+      "license_number": "AMHF.0008287",
+      "license_type": "Hybrid Retailer",
+      "name": "ZEN LEAF",
+      "city": "Waterbury",
+      "state": "CT",
+      "address": "237 E AURORA ST, Waterbury, CT 06708-2044",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    },
+    {
+      "license_number": "AMHF.0008270",
+      "license_type": "Hybrid Retailer",
+      "name": "CURALEAF GROTON INC",
+      "city": "Groton",
+      "state": "CT",
+      "address": "79 GOLD STAR HWY, Groton, CT 06340-3429",
+      "official_source_url": "https://data.ct.gov/d/42yd-3x3d",
+      "source_url": "https://data.ct.gov/d/42yd-3x3d"
+    }
+  ]
+}
