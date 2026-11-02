@@ -23,8 +23,7 @@ if(root){
  const advance=(step,manual=false)=>{
   if(!cards.length)return;
   index=advanceIndex(index,cards.length,step);
-  const slide=track.children[index];
-  if(slide)slide.scrollIntoView({behavior:reduced?.matches?'instant':'smooth',block:'nearest',inline:'center'});
+  if(track.children[index])track.scrollTo({left:index*track.clientWidth,behavior:reduced?.matches?'instant':'smooth'});
   if(manual){playing=false;syncClock()}
   describe();
  };
