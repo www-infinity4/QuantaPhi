@@ -37,4 +37,4 @@ jobs:
           node --check zeus-discovery-carousel.mjs
           node --test test/zeus-discovery-carousel.test.mjs
       - name: Check whitespace and conflict markers
-        run: git diff --check HEAD~1 HEAD || true
+        run: git diff --check HEAD~1 HEAD
