@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-02T04:10:04.681835Z",
+  "checked_at": "2026-11-02T12:41:29.060308Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "yaxel lendeborg",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-02T03:50:00Z",
+      "query": "voting",
+      "approx_searches": "500+",
+      "published_at": "2026-11-02T12:20:00Z",
       "related_news_urls": [
-        "https://nypost.com/2026/11/01/sports/yaxel-lendeborg-dunks-girlfriend-basketball-beatdown/",
-        "https://www.complex.com/sports/a/backwoodsaltar/yaxel-lendeborg-plans-warriors-stay-girlfriend-update",
-        "https://heavy.com/sports/nba/golden-state-warriors/yaxel-lendeborg-girlfriend/"
+        "https://www.nbcnews.com/politics/2026-election/poll-voters-demand-change-check-trump-fueling-steep-democratic-midterm-rcna606183",
+        "https://finance.yahoo.com/economy/article/more-and-more-disenchanted-a-final-check-in-on-trumps-economic-approval-ratings-before-midterms-100000424.html",
+        "https://www.forbes.com/sites/saradorn/2026/10/27/trump-approval-rating-net19-a-week-before-election-day/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQO2qWPXTPcD5VG4EHQjWvcJD8PqFDBBID1leg3mVZuLyiRLW2POvaYO4PxzkY",
-      "image_credit": "New York Post",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShEnJ29ean07XDj_ARrYbLcRC0wu5JQ_x9UxF_Lh8QTPTZUMEfBMrksFVCGTE",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://nypost.com/2026/11/01/sports/yaxel-lendeborg-dunks-girlfriend-basketball-beatdown/",
-          "title": "Yaxel Lendeborg dunking on girlfriend during basketball beatdown turns heads",
-          "publisher": "New York Post",
+          "url": "https://www.nbcnews.com/politics/2026-election/poll-voters-demand-change-check-trump-fueling-steep-democratic-midterm-rcna606183",
+          "title": "Poll: Voters demand change and a check on Trump, fueling a steep Democratic midterm advantage",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQO2qWPXTPcD5VG4EHQjWvcJD8PqFDBBID1leg3mVZuLyiRLW2POvaYO4PxzkY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShEnJ29ean07XDj_ARrYbLcRC0wu5JQ_x9UxF_Lh8QTPTZUMEfBMrksFVCGTE"
         },
         {
-          "url": "https://www.complex.com/sports/a/backwoodsaltar/yaxel-lendeborg-plans-warriors-stay-girlfriend-update",
-          "title": "Yaxel Lendeborg's Girlfriend Anticipates a Bright Future With the Warriors",
-          "publisher": "Complex",
+          "url": "https://finance.yahoo.com/economy/article/more-and-more-disenchanted-a-final-check-in-on-trumps-economic-approval-ratings-before-midterms-100000424.html",
+          "title": "'More and more disenchanted': A final check-in on Trump's economic approval ratings before midterms",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVabk0h4MiUqgLU0ozEaic1haupgPIlk1Rce3WQ7PvJ7emhy-J6f9wgArDXL4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3vayVmC8xNTpce9YjYqrc7mFiPWxVaW1Sqg70lkUd_KeDabHjBXc1a00Zz5E"
         },
         {
-          "url": "https://heavy.com/sports/nba/golden-state-warriors/yaxel-lendeborg-girlfriend/",
-          "title": "Yaxel Lendeborg’s Girlfriend Sends Clear Message Amid Historic Warriors Start",
-          "publisher": "Heavy.com",
+          "url": "https://www.forbes.com/sites/saradorn/2026/10/27/trump-approval-rating-net19-a-week-before-election-day/",
+          "title": "Trump’s Approval Rating: 44% Say Their Midterm Votes For Congress Are A Rebuke Of Trump",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8MdUt-1YtoK8oQ0MWgV9AMiCqFREs91utTeGUbhDb4OWqzCyv29V6Qpnwl8Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLl_SZuyxh4Ec6oNYSZIPy3MwzDI1pA9X8wYOUJgKL6hh3IKFM9yMQyc4rsSU"
         }
       ]
     },
     {
-      "query": "hollywood brown",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-02T03:50:00Z",
+      "query": "bill hader",
+      "approx_searches": "200+",
+      "published_at": "2026-11-02T12:20:00Z",
       "related_news_urls": [
-        "https://www.tsn.ca/betting/video/2026/11/01/fanduel-sunday-why-hollywood-brown-is-the-best-bet-for-sunday-night-football/",
-        "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-qb-rb-wr-te-flex-week-8-150719566.html",
-        "https://www.nytimes.com/athletic/7729315/2026/10/27/fantasy-football-market-share-week-7-targets-touches/"
+        "https://www.npr.org/2026/11/02/nx-s1-5453763/bill-hader-talks-about-his-latest-role-as-the-cat-in-the-hat",
+        "https://thenerdsofcolor.org/2026/10/30/chaos-with-cat-in-the-hat-stars-america-ferrera-xochitl-gomez-and-bill-hader/",
+        "https://www.hollywoodreporter.com/movies/movie-news/bill-hader-cat-in-the-hat-different-snl-version-1236740085/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTS3WsrWv4_H4KcVBbydjYd5R8FmsW_YGTFYzHHwnCw0ovwzeenGjCQtYNGaF8",
-      "image_credit": "TSN",
+      "image_url": null,
+      "image_credit": "NPR",
       "news": [
         {
-          "url": "https://www.tsn.ca/betting/video/2026/11/01/fanduel-sunday-why-hollywood-brown-is-the-best-bet-for-sunday-night-football/",
-          "title": "FanDuel Sunday: Why Hollywood Brown is the best bet for Sunday Night Football",
-          "publisher": "TSN",
+          "url": "https://www.npr.org/2026/11/02/nx-s1-5453763/bill-hader-talks-about-his-latest-role-as-the-cat-in-the-hat",
+          "title": "Bill Hader talks about his latest role as 'The Cat in the Hat'",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTS3WsrWv4_H4KcVBbydjYd5R8FmsW_YGTFYzHHwnCw0ovwzeenGjCQtYNGaF8"
+          "image_url": null
         },
         {
-          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-qb-rb-wr-te-flex-week-8-150719566.html",
-          "title": "Week 8 Fantasy Football Rankings",
-          "publisher": "Yahoo Sports",
+          "url": "https://thenerdsofcolor.org/2026/10/30/chaos-with-cat-in-the-hat-stars-america-ferrera-xochitl-gomez-and-bill-hader/",
+          "title": "Chaos with ‘Cat in the Hat’ Stars America Ferrera, Xochitl Gomez, and Bill Hader",
+          "publisher": "The Nerds of Color",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7uyB737yxl4ZFNCNc7Hf6KfPkgY9IeJNLwiWu47e__APMAELmad7wBbsotKA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtPqGwd8WlcfrMvwdxcKJ6UHP7jw5SFLjg1hIGyRAkoXl9fE7jO4jKzlxmCSk"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7729315/2026/10/27/fantasy-football-market-share-week-7-targets-touches/",
-          "title": "Fantasy football market share report: Week 7’s volume kings illustrate a crucial lesson",
-          "publisher": "The New York Times",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/bill-hader-cat-in-the-hat-different-snl-version-1236740085/",
+          "title": "Bill Hader Is the Cat in the Hat — This Time a “Much Different Version” Than He Played on ‘SNL’",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD4L9YhXCo3wp-gcxwWDpiZWSq8fKJooJ3v5Nu81wu_b2kIrFy7RGEHyg5Sdo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJbF8_pq4DhF4s7Y9D_3qw3OZGgnIH7GeoejFtPUrVBt8FcihVb1Vyfy4K_zY"
         }
       ]
     },
     {
-      "query": "luka dončić",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-02T03:50:00Z",
+      "query": "when is voting day 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-02T12:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50333810/stephen-curry-leads-warriors-25-point-comeback-lakers",
-        "https://sports.yahoo.com/articles/luka-don-knows-lakers-way-011326623.html",
-        "https://www.nba.com/news/4-takeaways-warriors-open-group-play-with-historic-comeback-win"
+        "https://www.npr.org/2026/11/02/nx-s1-6025451/midterms-what-to-watch-election-night",
+        "https://www.ms.now/the-weekend/watch/ms-now-s-kabir-khanna-talks-key-races-to-watch-on-election-night-2519281219689",
+        "https://www.axios.com/2026/10/31/your-election-night-cheat-sheet"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjJNB9k3nja0B4QMEmwOhcCRWo23boyv1oLBxtQ6tDAaOUQ81zlTclmsLhbvI",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfjrca8_slQvyQHGAW2vSCUBP4zyc_ffAl1czmNt-N9ugw8FPI-QiX3jFYiDU",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/02/nx-s1-6025451/midterms-what-to-watch-election-night",
+          "title": "6 things to watch for on election night",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfjrca8_slQvyQHGAW2vSCUBP4zyc_ffAl1czmNt-N9ugw8FPI-QiX3jFYiDU"
+        },
+        {
+          "url": "https://www.ms.now/the-weekend/watch/ms-now-s-kabir-khanna-talks-key-races-to-watch-on-election-night-2519281219689",
+          "title": "MS NOW’s Kabir Khanna talks key races to watch on election night",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvFBOOufrSZ5CDQwi8xK1a_1gqFWBHWN-U06IiWERteYOc6wHQJIIoJhRe4yw"
+        },
+        {
+          "url": "https://www.axios.com/2026/10/31/your-election-night-cheat-sheet",
+          "title": "Election cheat sheet: These early races could tell us where the midterms are headed",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0WDFVX0fRhD3fxrk4_YG8jC11ZH7Fazf_kF4pqsgFcxMG3ge36RNwhIPcuvI"
+        }
+      ]
+    },
+    {
+      "query": "voter registration",
+      "approx_searches": "200+",
+      "published_at": "2026-11-02T12:20:00Z",
+      "related_news_urls": [
+        "https://usustatesman.com/usu-hosts-site-for-early-voting/",
+        "https://www.idahostatesman.com/news/politics-government/election/article317857028.html",
+        "https://www.ncwlife.com/news/northwest/more-than-200-000-idahoans-vote-early-for-midterms/article_f4703483-2b77-5d9e-93c0-c99fde146145.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBVsFnqyKGOnka-mbeYbMQaR6qzA0oapp3BkXTUBLexRIIMeJFKYxzKPP43-I",
+      "image_credit": "The Utah Statesman",
+      "news": [
+        {
+          "url": "https://usustatesman.com/usu-hosts-site-for-early-voting/",
+          "title": "USU hosts site for early voting",
+          "publisher": "The Utah Statesman",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBVsFnqyKGOnka-mbeYbMQaR6qzA0oapp3BkXTUBLexRIIMeJFKYxzKPP43-I"
+        },
+        {
+          "url": "https://www.idahostatesman.com/news/politics-government/election/article317857028.html",
+          "title": "It’s almost Election Day in Idaho. Here’s your last-minute guide to voting",
+          "publisher": "Idaho Statesman",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ6Hw0TdIm1DDkVb4nnfUO-PxJBf9Ds3GksCa3r8GIvxiKyZp3bR92cMHtaLY"
+        },
+        {
+          "url": "https://www.ncwlife.com/news/northwest/more-than-200-000-idahoans-vote-early-for-midterms/article_f4703483-2b77-5d9e-93c0-c99fde146145.html",
+          "title": "More than 200,000 Idahoans vote early for midterms",
+          "publisher": "ncwlife.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdMn1rXuNiFR-93DsKjKLMbHEq8Jphw3Jpm0zhfeASJhDSh16jG1Rjl-ZUOyo"
+        }
+      ]
+    },
+    {
+      "query": "when do polls open on election day",
+      "approx_searches": "100+",
+      "published_at": "2026-11-02T12:20:00Z",
+      "related_news_urls": [
+        "https://www.kcci.com/article/iowa-voters-brave-hourslong-lines-to-cast-ballots-ahead-of-election-day/74303985",
+        "https://www.desmoinesregister.com/story/news/politics/elections/2026/11/02/voting-hours-on-election-day-voter-registration/92137295007/",
+        "https://cbs2iowa.com/news/local/as-election-day-nears-democrats-focus-on-on-one-one-conversations-energizing-voters"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRD4r30oJ92getxd31vcO5N2-z7hTwTkEtQTeZypalFKCwn1HMTDlFDmGAIyk",
+      "image_credit": "KCCI",
+      "news": [
+        {
+          "url": "https://www.kcci.com/article/iowa-voters-brave-hourslong-lines-to-cast-ballots-ahead-of-election-day/74303985",
+          "title": "Iowa voters brave hourslong lines to cast ballots ahead of Election Day",
+          "publisher": "KCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRD4r30oJ92getxd31vcO5N2-z7hTwTkEtQTeZypalFKCwn1HMTDlFDmGAIyk"
+        },
+        {
+          "url": "https://www.desmoinesregister.com/story/news/politics/elections/2026/11/02/voting-hours-on-election-day-voter-registration/92137295007/",
+          "title": "Voting in Iowa? Poll hours, ID rules and what to bring on Nov. 3",
+          "publisher": "The Des Moines Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnrfMHw_eh0R-nPs3syDCQkdoVIPz-gMZ_qOGQU6FWWq6_b9RVSrRQBKyxj8w"
+        },
+        {
+          "url": "https://cbs2iowa.com/news/local/as-election-day-nears-democrats-focus-on-on-one-one-conversations-energizing-voters",
+          "title": "As Election Day nears, Democrats focus on on-one-one conversations, energizing voters",
+          "publisher": "KGAN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqrxWmLHmTCrRLWfVcvULGeU41fzyZDnVNAvkQtSXiRWLVYFtpuHiaTIAQDv0"
+        }
+      ]
+    },
+    {
+      "query": "russia rassvet constellation orbit failure",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-02T12:20:00Z",
+      "related_news_urls": [
+        "https://united24media.com/war-in-ukraine/russias-starlink-dream-goes-up-in-flames-as-second-satellite-burns-up-23973",
+        "https://en.defence-ua.com/news/another_satellite_for_russias_starlink_rival_falls_out_of_orbit_how_are_other_rassvet_3_satellites_doing-20275.html",
+        "https://newsukraine.rbc.ua/news/burned-up-after-launch-russia-s-starlink-1793522198.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6vwgjrqDr2x7rQ_Gv_C3YJ02TLgDbuG3OFVvTKrf6vR0ke6byMxskvE91o5A",
+      "image_credit": "UNITED24 Media",
+      "news": [
+        {
+          "url": "https://united24media.com/war-in-ukraine/russias-starlink-dream-goes-up-in-flames-as-second-satellite-burns-up-23973",
+          "title": "Russia’s Starlink Dream Goes Up in Flames as Second Satellite Burns Up",
+          "publisher": "UNITED24 Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6vwgjrqDr2x7rQ_Gv_C3YJ02TLgDbuG3OFVvTKrf6vR0ke6byMxskvE91o5A"
+        },
+        {
+          "url": "https://en.defence-ua.com/news/another_satellite_for_russias_starlink_rival_falls_out_of_orbit_how_are_other_rassvet_3_satellites_doing-20275.html",
+          "title": "Another Satellite for russia's Starlink Rival Falls Out of Orbit: How Are Other Rassvet-3 Satellites Doing?",
+          "publisher": "Defense Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfS3nYSSiP04Rx7_ozga3wOroa5-WhLCY0JiWGG15CRDd00E8u_1e4uAUaNUg"
+        },
+        {
+          "url": "https://newsukraine.rbc.ua/news/burned-up-after-launch-russia-s-starlink-1793522198.html",
+          "title": "Burned up after launch: Russia's Starlink rival runs into trouble again",
+          "publisher": "RBC-Ukraine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgf-hytqvg_dDlR_R8WLP-EoEZTrqGinqXCA5zGWwGYp2o2ZK2q6iNDcKoI5s"
+        }
+      ]
+    },
+    {
+      "query": "lite stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-02T12:10:00Z",
+      "related_news_urls": [
+        "https://www.businesswire.com/news/home/20261102374788/en/Marvell-and-Lumentum-to-Combine-Creating-a-Category-Leader-in-AI-Connectivity",
+        "https://www.tikr.com/blog/piper-sandlers-400-target-says-marvells-selloff-went-too-far",
+        "https://www.bloomberg.com/news/articles/2026-11-02/marvell-reaches-115-billion-deal-for-lumentum-holdings"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGEb7d59VJy7H5Im2uJAKz_3GhbB6P_h8t8UIpOq2g0R3vIcTOwsYLirQHZ0",
+      "image_credit": "Business Wire",
+      "news": [
+        {
+          "url": "https://www.businesswire.com/news/home/20261102374788/en/Marvell-and-Lumentum-to-Combine-Creating-a-Category-Leader-in-AI-Connectivity",
+          "title": "Marvell and Lumentum to Combine, Creating a Category Leader in AI Connectivity",
+          "publisher": "Business Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGEb7d59VJy7H5Im2uJAKz_3GhbB6P_h8t8UIpOq2g0R3vIcTOwsYLirQHZ0"
+        },
+        {
+          "url": "https://www.tikr.com/blog/piper-sandlers-400-target-says-marvells-selloff-went-too-far",
+          "title": "Piper Sandler’s $400 Target Says Marvell’s Selloff Went Too Far",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsdxXwxOlmY0S_ke_Q15SUE0XoC9RBqXCfXqydGcl5P-paJgm94ea66sOIkRE"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-02/marvell-reaches-115-billion-deal-for-lumentum-holdings",
+          "title": "Marvell Reaches $115 Billion Deal for Lumentum Holdings",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVDhn1WF9RK3z3FKklvqSz0OSOMA-5tRNLcELBC4tvzw8MK1wNf5xlZzZoaOM"
+        }
+      ]
+    },
+    {
+      "query": "cedric doumbe",
+      "approx_searches": "200+",
+      "published_at": "2026-11-02T12:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/boxing/story/_/id/50316376/jake-paul-ready-next-chapter-books-return-dubai",
+        "https://sports.yahoo.com/boxing/breaking-news/article/jake-paul-set-for-boxing-return-on-christmas-eve-will-face-cedric-doumbe-a-year-after-suffering-broken-jaw-vs-anthony-joshua-121933745.html",
+        "https://bleacherreport.com/articles/25528338-jake-paul-vs-cedric-doumbe-set-latest-rules-schedule-location-return-fight-injury"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCQt3cEUNMqrSa9X5MO5Us1dJWPQn5HEtXTYuy8LxCAFoXiXF9z1nFqOAe5g",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50333810/stephen-curry-leads-warriors-25-point-comeback-lakers",
-          "title": "Curry's ankle-breaker on Luka highlights Warriors' stunning 25-point comeback",
+          "url": "https://www.espn.com/boxing/story/_/id/50316376/jake-paul-ready-next-chapter-books-return-dubai",
+          "title": "Jake Paul ready for 'next chapter,' books return from broken jaw",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjJNB9k3nja0B4QMEmwOhcCRWo23boyv1oLBxtQ6tDAaOUQ81zlTclmsLhbvI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCQt3cEUNMqrSa9X5MO5Us1dJWPQn5HEtXTYuy8LxCAFoXiXF9z1nFqOAe5g"
         },
         {
-          "url": "https://sports.yahoo.com/articles/luka-don-knows-lakers-way-011326623.html",
-          "title": "Luka Dončić knows the Lakers have to be ‘way better’ when teams blitz him",
+          "url": "https://sports.yahoo.com/boxing/breaking-news/article/jake-paul-set-for-boxing-return-on-christmas-eve-will-face-cedric-doumbe-a-year-after-suffering-broken-jaw-vs-anthony-joshua-121933745.html",
+          "title": "Jake Paul set for boxing return on Christmas Eve, will face Cedric Doumbé a year after suffering broken jaw vs. Anthony Joshua",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0UEyRYVK8ttccRmAqCJjYAmbTSc6m-Bh68OXign6hFHa8TkslTvw9gClKzjg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbhY2sZBhmjr_8Llx6ZGna3kXZwzAkFaY_rhS5U8Cmq8ejBhUwNOwJkdEPr10"
         },
         {
-          "url": "https://www.nba.com/news/4-takeaways-warriors-open-group-play-with-historic-comeback-win",
-          "title": "4 Takeaways: Warriors open Group Play with historic comeback win",
-          "publisher": "NBA.com",
+          "url": "https://bleacherreport.com/articles/25528338-jake-paul-vs-cedric-doumbe-set-latest-rules-schedule-location-return-fight-injury",
+          "title": "Jake Paul vs. Cedric Doumbe Set, Latest on Rules, Schedule, Location for Return Fight from Injury",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ3CkVxwfDS38t9-lLcKQMguwjFt4eFxQcLLm9XEz5xWUSB7b1tnwQwibAgfo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_WEUL9HiqcAV3jHB5fapZY0QjhzVVSVMufFZo0KSHOWLaj8j2XIvxDbvC26o"
         }
       ]
     },
     {
-      "query": "sonny styles",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-02T03:50:00Z",
-      "related_news_urls": [
-        "https://www.commanders.com/news/commanders-stock-exchange-sonny-styles-joshua-josephs-jayden-daniels",
-        "https://sports.yahoo.com/articles/commanders-lb-sonny-styles-ranked-160132571.html",
-        "https://riggosrag.com/washington-commanders-rookie-stock-report-puts-early-promise-under-bye-week-scrutiny/2"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGM0AOS026wbK1MhFDJjQNLCL5Jnq3ggB2zAoHzXwl3hbr-C3wGNfN3Wy4ADk",
-      "image_credit": "Washington Commanders",
-      "news": [
-        {
-          "url": "https://www.commanders.com/news/commanders-stock-exchange-sonny-styles-joshua-josephs-jayden-daniels",
-          "title": "Question of the week: Which Commanders player is going 'to the moon'?",
-          "publisher": "Washington Commanders",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGM0AOS026wbK1MhFDJjQNLCL5Jnq3ggB2zAoHzXwl3hbr-C3wGNfN3Wy4ADk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/commanders-lb-sonny-styles-ranked-160132571.html",
-          "title": "Commanders LB Sonny Styles ranked No. 1 rookie in the NFL by ESPN",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVNmBGixNu4Obw8dRpqUiroI3phQreb30-cWOPkokGO7LbQLI0jUnTKU8Rnhw"
-        },
-        {
-          "url": "https://riggosrag.com/washington-commanders-rookie-stock-report-puts-early-promise-under-bye-week-scrutiny/2",
-          "title": "Commanders rookie stock report puts early promise under bye-week scrutiny",
-          "publisher": "Riggo's Rag",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8GOyuxs8MtGe-7XhdoXGHnhiGBzrhjNOWeB9NFmwzIsx2B2lcztqxEp2PujE"
-        }
-      ]
-    },
-    {
-      "query": "rj barrett",
+      "query": "luca van assche",
       "approx_searches": "200+",
-      "published_at": "2026-11-02T03:50:00Z",
+      "published_at": "2026-11-02T12:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909864",
-        "https://www.startribune.com/minnesota-timberwolves-toronto-raptors-score-today-wolves-updates-anthony-edwards-lamelo-ball-stats/601902966",
-        "https://torontosun.com/sports/basketball/nba/toronto-raptors/kawhi-raptors-unbeaten-litmus-test-timberwolves"
+        "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3RhcmVxaml5YTYtc3ZnLmdpdGh1Yi5pby9zdHJlYW0yMDI2L3hkLnhtbCIvPjwva3JwYW5vPg==&id=watch-free-tennis-match-xdgfhjffff",
+        "https://www.dimers.com/tennis/news/luca-van-assche-vs-mariano-navone-tennis-prediction-atp-paris-masters-2026-ac",
+        "https://www.flashscore.com/match/tennis/navone-mariano-YoPUeL3o/van-assche-luca-nP9K42Bg/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQw19n0W7msf4Q8nhpUstrfp2bwoMjh7P9Xzv_mn8RZr6RJgypAwYiWcpW9QZo",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrNLKK18rWsOjbcVbr4TTPtx0D1oGYUt6YhmLhbrKfwhXC1qBOca0aqw_TP6Q",
+      "image_credit": "Pierce Manufacturing",
       "news": [
         {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909864",
-          "title": "Timberwolves 117-94 Raptors (Oct 25, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3RhcmVxaml5YTYtc3ZnLmdpdGh1Yi5pby9zdHJlYW0yMDI2L3hkLnhtbCIvPjwva3JwYW5vPg==&id=watch-free-tennis-match-xdgfhjffff",
+          "title": "̳̳̳+[#!WATCHLIVE-Tv!]™Luca Van Assche vs Mariano Navone Live Free 02 November 2026",
+          "publisher": "Pierce Manufacturing",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQw19n0W7msf4Q8nhpUstrfp2bwoMjh7P9Xzv_mn8RZr6RJgypAwYiWcpW9QZo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrNLKK18rWsOjbcVbr4TTPtx0D1oGYUt6YhmLhbrKfwhXC1qBOca0aqw_TP6Q"
         },
         {
-          "url": "https://www.startribune.com/minnesota-timberwolves-toronto-raptors-score-today-wolves-updates-anthony-edwards-lamelo-ball-stats/601902966",
-          "title": "Wolves deliver third straight blowout, overwhelm Raptors in home opener",
-          "publisher": "Star Tribune",
+          "url": "https://www.dimers.com/tennis/news/luca-van-assche-vs-mariano-navone-tennis-prediction-atp-paris-masters-2026-ac",
+          "title": "Luca Van Assche vs. Mariano Navone prediction, odds, picks for ATP Paris Masters 2026",
+          "publisher": "Dimers",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTugVmSQ28HFN1NbtByoNCLaqzZhSNqDafkAJrr8DGPWmSxK08i7Tby6rbXp8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT65qdqH-s8cpzxthwk0282DNDvszswQensb3ShrJ5y0xoyRt-k0sOKoyR9gXU"
         },
         {
-          "url": "https://torontosun.com/sports/basketball/nba/toronto-raptors/kawhi-raptors-unbeaten-litmus-test-timberwolves",
-          "title": "Kawhi worry? Raptors unbeaten heading into litmus test vs. Timberwolves",
-          "publisher": "Toronto Sun",
+          "url": "https://www.flashscore.com/match/tennis/navone-mariano-YoPUeL3o/van-assche-luca-nP9K42Bg/",
+          "title": "Luca van Assche v Mariano Navone (02/11/2026)",
+          "publisher": "Flashscore.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJpNzR7CnB0sNcXy3YbVGREYJv6zXDkjJ59IuZcj7V4ldoZ5uiRF5gchpWkg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrgN9KHlYFSeIaqtw4JiIeq_12cfx4c8s7baaSEf38ZmMLtG1sNfJRCN_4zw"
         }
       ]
     },
     {
-      "query": "sean mannion",
-      "approx_searches": "200+",
-      "published_at": "2026-11-02T03:50:00Z",
+      "query": "harley davidson stock",
+      "approx_searches": "100+",
+      "published_at": "2026-11-02T12:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/future-eagles-fits-tight-ends-2027-nfl-draft/762884/",
-        "https://www.9news.com/video/sports/locked-on/lo-philadelphia/locked-on-eagles-hit/nick-sirianni-and-sean-mannion-made-some-great-offensive-changes-against-dallas/535-e8c19f24-5f25-4c7d-8fd4-bad5561eb985",
-        "https://www.nfl.com/videos/nick-sirianni-on-eagles-addressing-challenges-it-s-never-just-one-thing"
+        "https://simplywall.st/stocks/us/automobiles/nyse-hog/harley-davidson/news/harley-davidson-hog-shares-climbed-what-is-behind-the-fresh",
+        "https://www.investing.com/news/company-news/harley-davidson-stock-hits-52week-high-at-3113-usd-93CH-4988576",
+        "https://www.gurufocus.com/news/9159345/hog-maintained-by-wells-fargo-price-target-raised-to-2500"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlJnwKuDa08HBVIp5lFAGeTK2fsF78TBRIbXnOSD1005qJpr3q-IFc2UdFQWY",
-      "image_credit": "NBC Sports Philadelphia",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj6sAhohLFALV6ETZnuluQH_pDO7_hEvJTYH_NeFUF9qA528Sb0dfqDDg4Ekw",
+      "image_credit": "Simply Wall St",
       "news": [
         {
-          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/future-eagles-fits-tight-ends-2027-nfl-draft/762884/",
-          "title": "Future Eagles Fits: Dynamic tight ends to know in the 2027 NFL Draft",
-          "publisher": "NBC Sports Philadelphia",
+          "url": "https://simplywall.st/stocks/us/automobiles/nyse-hog/harley-davidson/news/harley-davidson-hog-shares-climbed-what-is-behind-the-fresh",
+          "title": "Harley Davidson (HOG) Shares Climbed, What Is Behind The Fresh Attention?",
+          "publisher": "Simply Wall St",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlJnwKuDa08HBVIp5lFAGeTK2fsF78TBRIbXnOSD1005qJpr3q-IFc2UdFQWY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj6sAhohLFALV6ETZnuluQH_pDO7_hEvJTYH_NeFUF9qA528Sb0dfqDDg4Ekw"
         },
         {
-          "url": "https://www.9news.com/video/sports/locked-on/lo-philadelphia/locked-on-eagles-hit/nick-sirianni-and-sean-mannion-made-some-great-offensive-changes-against-dallas/535-e8c19f24-5f25-4c7d-8fd4-bad5561eb985",
-          "title": "Nick Sirianni and Sean Mannion Made Some GREAT OFFENSIVE CHANGES Against Dallas!",
-          "publisher": "9News",
+          "url": "https://www.investing.com/news/company-news/harley-davidson-stock-hits-52week-high-at-3113-usd-93CH-4988576",
+          "title": "Harley Davidson stock hits 52-week high at 31.13 USD",
+          "publisher": "Investing.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMnYG9W6Ptba9molG7dg01pSaBvQo5J9nSOqyNJv_HZYOMbR_JwbylDvpzQhc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSgbQgh9ie-94vxTz8jbiANNtpIInpfDkQbsr7qiOJymVGHt1kPV9TKyirFzM"
         },
         {
-          "url": "https://www.nfl.com/videos/nick-sirianni-on-eagles-addressing-challenges-it-s-never-just-one-thing",
-          "title": "Philadelphia Eagles head coach Nick Sirianni on Eagles addressing challenges: 'It's never just one thing'",
-          "publisher": "NFL.com",
+          "url": "https://www.gurufocus.com/news/9159345/hog-maintained-by-wells-fargo-price-target-raised-to-2500",
+          "title": "HOG Maintained by Wells Fargo -- Price Target Raised to $25.00",
+          "publisher": "GuruFocus",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJvC4u7HSF_1BHoQMhPCFMYwt2n2DC80kf_5CLxOLPIyKaHIlCjW-Mdc7Kw8s"
-        }
-      ]
-    },
-    {
-      "query": "scottie barnes",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-02T03:40:00Z",
-      "related_news_urls": [
-        "https://www.rotowire.com/basketball/article/best-nba-bets-player-props-picks-sunday-nov-1-144893",
-        "https://www.covers.com/nba/top-parlays-combos-nov-1-2026",
-        "https://www.actionnetwork.com/nba/nba-best-bets-for-celtics-vs-magic-raptors-vs-lakers-more-sunday-november-1"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-H3MfXsPlZKes2n9qSLE7uMgOZTa3D4UgrUXvgkZBIGgN3fLBmyzQUf8-Zuo",
-      "image_credit": "RotoWire",
-      "news": [
-        {
-          "url": "https://www.rotowire.com/basketball/article/best-nba-bets-player-props-picks-sunday-nov-1-144893",
-          "title": "NBA Best Bets and Predictions Today: Player Props & Picks for Sunday, Nov. 1",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-H3MfXsPlZKes2n9qSLE7uMgOZTa3D4UgrUXvgkZBIGgN3fLBmyzQUf8-Zuo"
-        },
-        {
-          "url": "https://www.covers.com/nba/top-parlays-combos-nov-1-2026",
-          "title": "Best NBA Parlays Today: Top Same-Game Parlays & Combos for Sunday, Nov. 1",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCGVIQExcJHmtgz9-8_r0V1ncDjYcS7QoB5cAoCvSe1Ikv46osxnST3SWXLYM"
-        },
-        {
-          "url": "https://www.actionnetwork.com/nba/nba-best-bets-for-celtics-vs-magic-raptors-vs-lakers-more-sunday-november-1",
-          "title": "NBA Best Bets for Celtics vs Magic, Raptors vs Lakers, More (Sunday, November 1)",
-          "publisher": "Action Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw5Wbkt10qmpw8-ktCNr3IH-XpIE0ugNA_KGRdM-kZBsM7Na_lwGYeGagfxMA"
-        }
-      ]
-    },
-    {
-      "query": "justin hartley",
-      "approx_searches": "500+",
-      "published_at": "2026-11-02T03:40:00Z",
-      "related_news_urls": [
-        "https://www.goodhousekeeping.com/entertainment/celebrity-news/a74286942/tracker-season-4-cast-justin-hartley-newport-beach-film-festival-news/",
-        "https://ca.news.yahoo.com/justin-hartley-exciting-news-tracker-122400309.html",
-        "https://www.aol.com/articles/justin-hartley-exciting-news-tracker-122400000.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhzQ7l0rzMwxyeJSGDsNU-scUs2DMXSqmyw_qLmpqx_Atu8MbLueh8msjlkJg",
-      "image_credit": "Good Housekeeping",
-      "news": [
-        {
-          "url": "https://www.goodhousekeeping.com/entertainment/celebrity-news/a74286942/tracker-season-4-cast-justin-hartley-newport-beach-film-festival-news/",
-          "title": "‘Tracker’ Fans, You Must See This Incredible Justin Hartley News",
-          "publisher": "Good Housekeeping",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhzQ7l0rzMwxyeJSGDsNU-scUs2DMXSqmyw_qLmpqx_Atu8MbLueh8msjlkJg"
-        },
-        {
-          "url": "https://ca.news.yahoo.com/justin-hartley-exciting-news-tracker-122400309.html",
-          "title": "Justin Hartley Has Exciting News That ‘Tracker’ Fans Will Love",
-          "publisher": "Yahoo News Canada",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzioXZjalyhJe25Cz5iF_mDMTqZw9KMGq8wlp-J5PzDJQJVGheYG-69m1pP0U"
-        },
-        {
-          "url": "https://www.aol.com/articles/justin-hartley-exciting-news-tracker-122400000.html",
-          "title": "Justin Hartley Has Exciting News That ‘Tracker’ Fans Will Love",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVrVmPpT_O0iKdBXTjPyx8h-ogcmjpYdB3MVQRJBdZ6dY-oBAd4qX0RycXBFE"
-        }
-      ]
-    },
-    {
-      "query": "marquise brown",
-      "approx_searches": "500+",
-      "published_at": "2026-11-02T03:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/rapoport-links-josh-downs-and-btj-to-the-chiefs",
-        "https://sports.yahoo.com/articles/chiefs-trade-worthy-jaguars-thomas-210016911.html",
-        "https://www.arrowheadpride.com/kansas-city-chiefs-analysis/214577/which-receiver-trades-could-chiefs-consider-before-deadline"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPUltWeawqI-13KCjpQ0gFErTXjKnw6oAoAF0QZBnJN7mEddXAlNXalOVbwWo",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/rapoport-links-josh-downs-and-btj-to-the-chiefs",
-          "title": "Rapoport links Josh Downs and BTJ to the Chiefs",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPUltWeawqI-13KCjpQ0gFErTXjKnw6oAoAF0QZBnJN7mEddXAlNXalOVbwWo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/chiefs-trade-worthy-jaguars-thomas-210016911.html",
-          "title": "Chiefs Trade Worthy For Jaguars’ Thomas In Bold Swap",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyMLyKNE97iByJi466BKUuLpLc4i5Zh33e-BdKJjPFcKLmVwtmo_Gh-aOxEvI"
-        },
-        {
-          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-analysis/214577/which-receiver-trades-could-chiefs-consider-before-deadline",
-          "title": "Which receiver trades could the Chiefs consider before the deadline?",
-          "publisher": "Arrowhead Pride",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMKvDnvvP3UHja38rzKHQhV9UlM0UkvV61eG0d5IkXzDQXar295p7oA3MylGk"
-        }
-      ]
-    },
-    {
-      "query": "tyson bagent",
-      "approx_searches": "200+",
-      "published_at": "2026-11-02T03:30:00Z",
-      "related_news_urls": [
-        "https://www.windycitygridiron.com/chicago-bears-rumors/126652/chicago-bears-trade-deadline-rumors-on-tyson-bagent-and-khalil-mack-ravens-chargers",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-may-explore-trading-for-tyson-bagent",
-        "https://sports.yahoo.com/articles/report-ravens-targeting-bears-qb-022609091.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjFRjPcTfYRssXDgoTQimgR7ZxKLrrH9RsxLnCpgMxrSEsOxejfEngqk0P1rM",
-      "image_credit": "Windy City Gridiron",
-      "news": [
-        {
-          "url": "https://www.windycitygridiron.com/chicago-bears-rumors/126652/chicago-bears-trade-deadline-rumors-on-tyson-bagent-and-khalil-mack-ravens-chargers",
-          "title": "Chicago Bears Trade Deadline Rumors on Khalil Mack and Tyson Bagent",
-          "publisher": "Windy City Gridiron",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjFRjPcTfYRssXDgoTQimgR7ZxKLrrH9RsxLnCpgMxrSEsOxejfEngqk0P1rM"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-may-explore-trading-for-tyson-bagent",
-          "title": "Ravens may explore trading for Tyson Bagent",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiG_ZObgCB_NY-yruLjUK3vw_fLRbCLe2Ju6jA1IFFUUVcawWfJR1tP4oby9k"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/report-ravens-targeting-bears-qb-022609091.html",
-          "title": "Report: Ravens targeting Bears QB Tyson Bagent in potential trade",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX3JHWl6HP9hDj7W2IeQqM7eoGPnVDPNxtIhOoMfimxy290s88xOTICFutBlE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqMoMoDp9U63TrkfJnXYthzxaTI-pnSatL-LFxbATR9m_xRP4C2ExprY6n38"
         }
       ]
     }
