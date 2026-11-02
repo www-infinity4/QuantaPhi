@@ -21,7 +21,7 @@ public final class TermuxProbeResultReceiver extends BroadcastReceiver {
         Bundle output = intent.getBundleExtra("result");
         if (output == null) {
             TermuxProbe.saveResult(context, id, kind, "no_callback_result",
-                "Termux callback had no result bundle; Python/cleanup not verified.");
+                "Termux callback had no result bundle; execution is unverified.");
             return;
         }
         int code = output.getInt("exitCode", -999);
@@ -36,7 +36,7 @@ public final class TermuxProbeResultReceiver extends BroadcastReceiver {
             ("python".equals(kind) && cleaned
                 && stdout.contains("Bubbles Python works: 2 + 2 = 4")));
         String detail = "exit=" + code + "; service=" + serviceError
-            + "; cleanup=" + (cleaned ? "confirmed" : "not_verified")
+            + "; cleanup=" + ("shell".equals(kind) ? "not_applicable" : cleaned ? "confirmed" : "not_verified")
             + (stdout.isEmpty() ? "" : "\n" + stdout)
             + (stderr.isEmpty() ? "" : "\nstderr: " + stderr)
             + (error.isEmpty() ? "" : "\nTermux: " + error);
@@ -47,7 +47,7 @@ public final class TermuxProbeResultReceiver extends BroadcastReceiver {
             : "The Termux " + kind + " check did not complete successfully.";
         if (!success && (error.contains("allow-external-apps") || stderr.contains("allow-external-apps"))) {
             state = "setup_required";
-            plain = "Termux needs one-time permission for external app commands. Python was not run.";
+            plain = "Termux needs one-time permission for external app commands. No check was verified.";
         } else if (!success && "python".equals(kind) && (code == 127 || stdout.contains("python=not_installed"))) {
             state = "python_missing";
             plain = "Python is not available inside Termux. No package installation was attempted.";
