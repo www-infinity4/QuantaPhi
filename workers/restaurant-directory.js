@@ -28,6 +28,33 @@ async function search(url,env){
  return Response.json({city,state,query:q,page,page_size:limit,count:items.length,has_more:rows.length>limit,items,
   note:'Organic directory listings from named sources. No paid placements, real-time opening hours, booking availability, prices or sponsored endorsements.'},{headers:HEADERS});
 }
+// Precise coordinates are used only for this read-only request, never echoed or cached.
+async function nearby(url,env){
+ const rawLat=url.searchParams.get('lat'),rawLon=url.searchParams.get('lon');
+ if(!rawLat?.trim()||!rawLon?.trim())return err('Location coordinates required',400);
+ const lat=Number(rawLat),lon=Number(rawLon);
+ if(!Number.isFinite(lat)||!Number.isFinite(lon)||lat < -90||lat > 90||lon < -180||lon > 180)
+  return err('Invalid location coordinates',400);
+ const q=safeText(url.searchParams.get('q'),65).replace(/[\\\\%_]/g,' ').trim();
+ const page=Math.min(1000,Math.max(0,Number.parseInt(url.searchParams.get('page')||'0',10)||0));
+ const radius=0.65,limit=24,terms=q?('%'+q+'%'):'%';
+ const cos2=Math.max(0.01,Math.cos(lat*Math.PI/180)**2);
+ const sql=`SELECT id,name,city,state,category,address,latitude,longitude,website,source_url,source_name,confidence,image_url,last_seen
+ FROM restaurants WHERE latitude BETWEEN ? AND ? AND longitude BETWEEN ? AND ?
+ AND (name LIKE ? OR category LIKE ?)
+ ORDER BY ((latitude-?)*(latitude-?)+(longitude-?)*(longitude-?)*?) ASC,id
+ LIMIT 25 OFFSET ?`;
+ const {results}=await env.RESTAURANTS.prepare(sql).bind(
+  Math.max(-90,lat-radius),Math.min(90,lat+radius),Math.max(-180,lon-radius),Math.min(180,lon+radius),
+  terms,terms,lat,lat,lon,lon,cos2,page*limit).all();
+ const rows=results||[];
+ const items=rows.slice(0,limit).map(x=>({...x,website:validWebsite(x.website),
+  image_url:validWebsite(x.image_url),sponsored:false}));
+ return Response.json({page,page_size:limit,count:items.length,has_more:rows.length>limit,items,
+  note:'Nearest sourced entries only where indexed. No inventory, endorsement, price, hours, reservation or sponsored listing is verified.'},
+  {headers:{...HEADERS,'Cache-Control':'no-store'}});
+}
+
 async function stats(env){
  const {results}=await env.RESTAURANTS.prepare(
  'SELECT state,city,COUNT(*) AS total,MAX(last_seen) AS last_seen FROM restaurants GROUP BY state,city ORDER BY total DESC LIMIT 80').all();
@@ -125,6 +152,7 @@ export default {
   const url=new URL(request.url);
   try{
    if(url.pathname==='/api/dining/search')return await search(url,env);
+   if(url.pathname==='/api/dining/nearby')return await nearby(url,env);
    if(url.pathname==='/api/dining/stats')return await stats(env);
    return err('No such restaurant endpoint',404);
   }catch{return err('Restaurant search temporarily unavailable',503)}
