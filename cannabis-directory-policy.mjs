@@ -7,6 +7,9 @@ const REVIEWED={
  DE:{adult_use:'legal_with_conditions',medical_program:true,source_url:'https://omc.delaware.gov/adult-use/',reviewed_at:'2026-11-02'},
  IA:{adult_use:'not_authorized',medical_program:true,source_url:'https://hhs.iowa.gov/health-prevention/medical-cannabis/patients',reviewed_at:'2026-11-01'},
  IL:{adult_use:'legal_with_conditions',medical_program:true,source_url:'https://cannabis.illinois.gov/about/faqs',reviewed_at:'2026-11-01'},
+ // Minnesota OCM's official list is a medical-program source. It does not
+ // independently establish adult-use eligibility for any listed location.
+ MN:{adult_use:'unreviewed',medical_program:true,source_url:'https://mn.gov/ocm/dmc/patients/the-basics/medical-cannabis-dispensary-locations.jsp',reviewed_at:'2026-11-02'},
  MO:{adult_use:'legal_with_conditions',medical_program:true,source_url:'https://health.mo.gov/business-professionals/cannabis-regulation/cannabis-rules-and-law',reviewed_at:'2026-11-01'}
 };
 export const policy=state=>({state,adult_use:'unreviewed',medical_program:null,source_url:'',reviewed_at:'',...(REVIEWED[state]||{})});

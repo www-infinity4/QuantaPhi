@@ -57,7 +57,8 @@ if(root){
   const item=make('section','icd-store-card');item.id=model.id;
   item.dataset.directoryStoreId=model.sourceId;item.dataset.directoryStoreName=model.name;
   item.dataset.personalization='disabled';
-  const meta=make('small','icd-kicker',model.sponsorLabel+' · '+model.state);
+  const medicalProgram=String(model.licenseStatus||'').startsWith('medical_program_listed');
+  const meta=make('small','icd-kicker',(model.accessType==='medical_only'?'Medical program only · not adult-use':medicalProgram?'Medical-program source · adult-use not verified':model.sponsorLabel)+' · '+model.state);
   const photo=make('div','icd-store-photo');
   if(model.imageUrl){
    const img=make('img','icd-store-image');img.alt='Approved source image for '+model.name;
@@ -125,7 +126,9 @@ if(root){
   if(!row)return;
   name.textContent=row.name+(row.store&&row.store!==row.name?' · '+row.store:'');
   address.textContent=[row.address||'',row.city&&row.state?row.city+', '+row.state:''].filter(Boolean).join(' · ');
-  badge.textContent=row.medical_only?'MEDICAL PROGRAM ONLY · NOT ADULT-USE':'ORGANIC SOURCE LISTING · LICENSE STATUS NOT GUARANTEED';
+  badge.textContent=row.medical_only?'MEDICAL PROGRAM ONLY · NOT ADULT-USE':
+   String(row.license_status||'').startsWith('medical_program_listed')?'MEDICAL-PROGRAM SOURCE · ADULT-USE NOT VERIFIED':
+   'ORGANIC SOURCE LISTING · LICENSE STATUS NOT GUARANTEED';
   source.textContent='Source: '+row.source_name+' · '+(row.license_status==='unverified'?'License not independently verified':row.license_status);
   quality.textContent='Unrated · no independent customer-experience evidence reviewed';
   const href=safeUrl(row.source_url);
