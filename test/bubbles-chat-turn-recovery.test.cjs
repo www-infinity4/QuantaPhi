@@ -80,7 +80,8 @@ test('invalid calculation inputs and partial research cannot be reported as comp
 
 test('failed memory saves and failed public source reads carry explicit unsuccessful reply metadata',()=>{
  const memory=source.slice(source.indexOf('if(rememberMatch){'),source.indexOf('const nativeDirective=',source.indexOf('if(rememberMatch){')));
- const reader=source.slice(source.indexOf('if(!embedded&&(sourceReadRequested||publicPageReadRequested))'),source.indexOf('// Explicit code discovery is a read-only tool call',source.indexOf('if(!embedded&&(sourceReadRequested||publicPageReadRequested))'));
+ const readStart=source.indexOf('if(!embedded&&(sourceReadRequested||publicPageReadRequested))');
+ const reader=source.slice(readStart,source.indexOf('// Explicit code discovery is a read-only tool call',readStart));
  assert.match(memory,/memorySaved/);
  assert.match(memory,/failed:true/);
  assert.match(reader,/readVerified\?\{\}:\{failed:true\}/);
