@@ -39,8 +39,8 @@ test('mobile controls and reduced-motion handling are present',()=>{
 test('21+ directory does not persist a view or click in Oracle telemetry',()=>{
  const deck=read('oracle-card-deck.js'),css=read('cannabis-directory-card.css');
  assert.match(deck,/function nonProfiling\(entry\)/);
- assert.match(deck,/if\(!nonProfiling\(entry\)\)void import/);
- assert.match(deck,/if\(!nonProfiling\(entry\)\)\{/);
+ assert.match(deck,/if\(!automatic&&!nonProfiling\(entry\)\)void import/);
+ assert.match(deck,/if\(!automatic&&!nonProfiling\(entry\)\)\{/);
  assert.match(deck,/if\(!active\|\|nonProfiling\(active\)/);
  assert.match(css,/\.oracle-card-deck-active:not\(\.oracle-shelf-open\) main\.app > #cannabisDirectoryCard\{display:none!important\}/);
  assert.doesNotMatch(read('cannabis-directory-card.mjs'),/setInterval\(/);

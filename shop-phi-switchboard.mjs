@@ -5,6 +5,7 @@
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {housingCompanions,housingResource} from './housing-help-catalog.mjs';
 import {createHousingHelpCard} from './housing-help-cards.mjs';
+import {chapterFor} from './shopphi-showcase-core.mjs';
 
 export const SLOT_COUNT=6;
 // Companion pages can advance without fetching ads or changing the selected hero.
@@ -18,6 +19,24 @@ export function companionRotationAllowed({total=0,visible=false,pageHidden=false
 }
 const SENSITIVE=/\b(religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy)\b/i;
 const LANES=Object.freeze([
+ {id:'cookout',match:/\b(oscar mayer|hot dogs?|grills?|charcoal|barbecue|bbq|picnic|patio|cookout|lawn games?)\b/i,
+  topics:['hot dogs and picnic food','charcoal grills','picnic tables','outdoor cooking','cookout accessories','coolers and yard games'],
+  clues:['hot dog','sausage','grill','charcoal','barbecue','picnic','patio','outdoor','cooler','cookout','bbq','lawn']},
+ {id:'movie-night',match:/\b(movies?|movie night|popcorn|candy|dvd|blu.ray|sofa|couch|home theater|television|tv screen)\b/i,
+  topics:['family movie night','living room sofas','televisions','popcorn and candy','movie accessories','home entertainment'],
+  clues:['movie','popcorn','candy','dvd','blu-ray','sofa','couch','tv','television','theater','entertainment','living room']},
+ {id:'kitchen',match:/\b(recipes?|kitchens?|stoves?|ovens?|refrigerators?|cookware|appliances?|rent.a.center|rent.to.own)\b/i,
+  topics:['recipes and ingredients','kitchen cookware','stoves and ranges','refrigerators','home appliances','rent-to-own home goods'],
+  clues:['recipe','kitchen','stove','oven','refrigerator','cookware','appliance','range','dishwasher','rent-to-own']},
+ {id:'family',match:/\b(strollers?|pushchairs?|nursery|baby gear|car seats?)\b/i,
+  topics:['strollers','stroller accessories','baby bags','nursery accessories','family travel','stroller covers'],
+  clues:['stroller','pushchair','nursery','baby','infant','toddler','family','travel']},
+ {id:'tools',match:/\b(micrometers?|calipers?|precision measuring|wrenches?|socket sets?|tools?)\b/i,
+  topics:['precision measuring tools','wrenches and sockets','workshop tools','tool accessories','industrial parts','tool support'],
+  clues:['micrometer','caliper','measuring','wrench','socket','tools','workshop','precision','saw','gage']},
+ {id:'outdoors',match:/\b(camping|hiking|backpack|outdoor clothing|tents?|trail gear)\b/i,
+  topics:['camping gear','outdoor clothing','tents','hiking backpacks','water treatment','trail accessories'],
+  clues:['camp','hiking','backpack','outdoor','tent','trail','mountain','gear']},
  {id:'coins',match:/\b(morgan|silver dollar|coin|numismatic|pcgs|ngc|gold eagle|bullion|mintmark|mercury dime)\b/i,
   topics:['gold coins','coin grading pcgs','coin collecting supplies','jeweler loupe','coin albums','silver dollars'],
   clues:['coin','gold','silver','dollar','numismatic','pcgs','ngc','loupes','loupe','album','grading','supplies','bullion']},
@@ -71,8 +90,13 @@ function relation(candidate,hero,lane){
  let match=0;
  for(const clue of clues){const key=clue.toLowerCase();if(words.has(key)||text.includes(key))match++;}
  if(lane.id==='discovery'||lane.id==='neutral'){
-  const a=tokenize([hero.title,hero.category].join(' '));
-  for(const w of a)if(words.has(w))match++;
+  // Generic category labels do not establish an actual merchant relationship.
+  const noise=new Set(['interactive','source','website','original','brand','card','cards',
+   'related','products','product','infinity','accepted','shopphi','transport',
+   'environmental','systems','tactical','and','from','with']);
+  const anchor=tokenize([hero.title,hero.description].join(' '));
+  for(const w of anchor)if(!noise.has(w)&&words.has(w))match++;
+  return Math.min(7,match)>=2?Math.min(7,match):0;
  }
  return Math.min(7,match);
 }
@@ -87,13 +111,13 @@ export function chooseCompanions(hero,inventory,{quantScores={},exposures={},rot
   const quant=Math.min(30,Math.max(0,Number(quantScores[c.id])||0));
   const count=Math.min(200,Math.max(0,Number(exposures[c.id])||0));
   const fairness=(stable(c.id+'|'+String(rotation))%11);
-  const score=match*22+quant/2+fairness-Math.min(100,count*8);
+  const score=match*22+quant/2+fairness+(c.image?16:0)-Math.min(100,count*8);
   unique.set(c.url,{...c,score,reason:c.contextTopic||(
    lane.id==='coins'?'Useful for coin collecting':
    lane.id==='denim'?'Complements denim shopping':
    lane.id==='grocery'?'Related grocery discovery':'Related to this card')});
  }
- const sorted=[...unique.values()].sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));
+ const sorted=[...unique.values()].sort((a,b)=>Number(Boolean(b.image))-Number(Boolean(a.image))||b.score-a.score||a.id.localeCompare(b.id));
  const selected=[],sponsors=new Set(),sourceCounts=new Map();
  for(const c of sorted){
   // QuantaPhi hosts thousands of independent published website cards on one
@@ -142,15 +166,28 @@ if(typeof document!=='undefined'){
   const prev=document.createElement('button');prev.type='button';prev.textContent='‹ Previous';
   const position=document.createElement('span');position.className='shopphi-flank-position';
   const next=document.createElement('button');next.type='button';next.textContent='Next ›';
-  const pause=document.createElement('button');pause.type='button';pause.textContent='Pause rotation';
+  const pause=document.createElement('button');pause.type='button';pause.className='shopphi-rotation-toggle';pause.textContent='Pause rotation';
   pause.setAttribute('aria-label','Pause automatic companion card rotation');
   navigation.append(prev,position,next,pause);
   grid.after(navigation);
   const exposure=Object.create(null),cache=new Map();
-  let seq=0,rotation=0,active=null,visiblePage=0,visibleCards=[];
+  let seq=0,rotation=0,active=null,visiblePage=0,visibleCards=[],notifiedChapter=false;
+  let pageTransition=0,fadeTimer=null;
   const reducedMotion=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches||false;
   let rotationPaused=reducedMotion;
-  function showPage(){
+  function showPage({fade=false}={}){
+   const generation=++pageTransition;
+   if(fade&&!reducedMotion&&!grid.hidden){
+    grid.classList.add('shopphi-is-fading');
+    clearTimeout(fadeTimer);
+    fadeTimer=setTimeout(()=>{
+     if(generation!==pageTransition)return;
+     grid.classList.remove('shopphi-is-fading');
+     showPage();
+    },260);
+    return;
+   }
+   grid.classList.remove('shopphi-is-fading');
    const start=visiblePage*2,total=visibleCards.length;
    let index=0;
    for(const card of [...before.children,...after.children]){
@@ -159,13 +196,15 @@ if(typeof document!=='undefined'){
    }
    position.textContent=total?String(start+1)+'–'+Math.min(total,start+2)+' of '+total:'No offers';
    prev.disabled=visiblePage===0;next.disabled=start+2>=total;
-   navigation.hidden=total<3;
-   pause.hidden=total<3;
+   navigation.hidden=total===0;
+   prev.hidden=next.hidden=position.hidden=total<3;
+   pause.hidden=total===0;
    pause.textContent=rotationPaused?'Resume rotation':'Pause rotation';
+   pause.setAttribute('aria-label',rotationPaused?'Resume automatic companion card rotation':'Pause automatic companion card rotation');
    pause.setAttribute('aria-pressed',String(rotationPaused));
   }
-  prev.addEventListener('click',()=>{visiblePage=Math.max(0,visiblePage-1);showPage()});
-  next.addEventListener('click',()=>{visiblePage=Math.min(Math.floor((visibleCards.length-1)/2),visiblePage+1);showPage()});
+  prev.addEventListener('click',()=>{visiblePage=Math.max(0,visiblePage-1);showPage({fade:true})});
+  next.addEventListener('click',()=>{visiblePage=Math.min(Math.floor((visibleCards.length-1)/2),visiblePage+1);showPage({fade:true})});
   pause.addEventListener('click',()=>{
    rotationPaused=!rotationPaused;
    showPage();
@@ -174,22 +213,40 @@ if(typeof document!=='undefined'){
   // No sponsor is charged and no coins are minted for an automatic change.
   const rotateTimer=setInterval(()=>{
    if(!active||grid.hidden)return;
-   const bounds=grid.getBoundingClientRect();
-   const visible=bounds.bottom>0&&bounds.top<window.innerHeight;
-   if(!companionRotationAllowed({total:visibleCards.length,visible,pageHidden:document.hidden,
+   const displayed=[...before.children,...after.children].filter(node=>!node.hidden);
+   const visible=displayed.some(node=>{
+    const bounds=node.getBoundingClientRect();
+    return bounds.bottom>0&&bounds.top<window.innerHeight;
+   });
+   // A single verified offer may finish its chapter too; the older pure
+   // page-rotation helper still correctly returns false for 1–2 offers.
+   if(!companionRotationAllowed({total:Math.max(3,visibleCards.length),visible,
+    pageHidden:document.hidden,
     focused:grid.contains(document.activeElement)||navigation.contains(document.activeElement),
     shelfOpen:document.body.classList.contains('oracle-shelf-open'),
-    paused:rotationPaused,reducedMotion}))return;
-   visiblePage=nextCompanionPage(visiblePage,visibleCards.length);
-   showPage();
+    paused:rotationPaused,reducedMotion})||!visibleCards.length||contextFor(active).sensitive)return;
+   const lastPage=Math.ceil(visibleCards.length/2)-1;
+   if(visiblePage>=lastPage){
+    const chapter=chapterFor([active.title,active.category,active.description].join(' '));
+    if(visibleCards.some(c=>c.image)&&chapter){
+     window.dispatchEvent(new CustomEvent('quantaphi:showcase-chapter-complete',
+      {detail:{id:active.id,chapter}}));
+    }
+    visiblePage=0;
+   }else visiblePage=nextCompanionPage(visiblePage,visibleCards.length);
+   if(lastPage>0)showPage({fade:true});
   },18000);
   window.addEventListener('pagehide',()=>clearInterval(rotateTimer),{once:true});
   const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
   function draw(list,lane){
-   const housing=lane.id==='housing-help';grid.classList.toggle('housing-help-layout',housing);
+   const housing=lane.id==='housing-help';
+   clearTimeout(fadeTimer);pageTransition++;grid.classList.remove('shopphi-is-fading');
+   grid.classList.toggle('housing-help-layout',housing);
    heading.textContent=housing?'Housing help · related resources':'Related source cards · ShopPhi';
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
+   grid.classList.toggle('shopphi-showcase-mode',!housing&&!lane.sensitive&&visible.length>=2&&visible.slice(0,2).every(c=>c.image)&&
+    ['cookout','movie-night','kitchen','family','tools','outdoors','coins','denim','grocery','shopping'].includes(lane.id));
    visiblePage=Math.min(visiblePage,Math.max(0,Math.ceil(visible.length/2)-1));
    if(!visible.length){
     // The original Oracle stage lives INSIDE grid. Never hide the hero merely
@@ -245,7 +302,7 @@ if(typeof document!=='undefined'){
   }
   function siteCards(){
    const result=[];
-   for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id]')){
+   for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
     if(node.dataset.sourceReady!=='true'||node.hidden)continue;
     const id=node.dataset.sourceId;
     if(!/^[a-z0-9-]{2,100}$/.test(id||''))continue;
@@ -304,11 +361,12 @@ if(typeof document!=='undefined'){
   function detailFromStage(){
    if(!stage.dataset.switchboardId)return null;
    return {id:stage.dataset.switchboardId,title:stage.dataset.switchboardTitle,
-    category:stage.dataset.switchboardCategory,tab:stage.dataset.switchboardTab};
+    category:stage.dataset.switchboardCategory,tab:stage.dataset.switchboardTab,
+    description:stage.dataset.switchboardDescription||''};
   }
   async function update(detail){
    const revision=++seq;const changed=(detail?.id||null)!==(active?.id||null);
-   active=detail||null;if(changed)visiblePage=0;
+   active=detail||null;if(changed){visiblePage=0;notifiedChapter=false;}
    if(!active||document.body.classList.contains('oracle-shelf-open')){
     grid.hidden=true;heading.hidden=true;receipt.hidden=true;navigation.hidden=true;
     before.replaceChildren();after.replaceChildren();return;
