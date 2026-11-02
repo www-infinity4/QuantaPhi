@@ -231,7 +231,7 @@ jobs:
       # This cache contains ONLY a throwaway preview signer, never a production key.
       # GitHub's normal ~/.android/debug.keystore location was not preserved.
       - name: Restore preview-5 test signing key
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: android/bubbles-overlay/preview-debug.keystore
           key: bubbles-preview5-signing-v1

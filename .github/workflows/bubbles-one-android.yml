@@ -34,7 +34,7 @@ jobs:
       - name: Contract checks
         run: node --test test/bubbles-one-contract.test.mjs
       - name: Restore preview-only signing identity
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: android/bubbles-one/preview-one.keystore
           key: bubbles-one-preview-key-v1
