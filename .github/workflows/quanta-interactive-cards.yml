@@ -35,6 +35,8 @@ on:
       - 'oracle-card-deck.js'
       - 'oracle-card-deck.css'
       - 'shop-phi-switchboard.*'
+      - 'shopphi-showcase-core.mjs'
+      - 'test/shopphi-showcase.test.mjs'
       - 'test/shopphi-flanks.browser.spec.mjs'
       - 'test/shopphi-seller-live.browser.spec.mjs'
       - 'shop-phi-publish.js'
@@ -164,6 +166,8 @@ jobs:
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
         run: node --test tests/colorado-mountain-cards.test.mjs test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-x-composer.test.mjs test/quanta-integra-x-tour.test.mjs test/integra-automation-router.test.mjs test/quick-card-single-search.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/design-lab-power-chain.test.mjs test/design-lab-bulk-allocator.test.mjs test/cooperative-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/quick-card-brand-compact.test.mjs test/android-scroll-sections.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
+      - name: Verify connected source-backed ShopPhi slideshow
+        run: node --test test/shopphi-showcase.test.mjs tests/shop-phi-switchboard.test.mjs tests/quick-card-mobile-revamp.test.mjs
       - name: Check today's Infinity card freshness and real product media
         run: node --test test/infinity-cards-freshness.test.mjs
       - name: Check changing imagery, source prices, trends and sports data
