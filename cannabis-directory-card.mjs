@@ -39,7 +39,7 @@ if(root){
  let nationalSession=0;
  const cardChildren=()=>{
   if(!cardHost)return [];
-  return [...cardHost.querySelectorAll('[data-directory-store-id]')];
+  return [...document.querySelectorAll('[data-directory-store-id]')];
  };
  function buildIndividual(row){
   if(!cardHost||!acknowledged)return false;
