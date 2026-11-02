@@ -63,6 +63,19 @@ test('native Java command classifier rejects unsafe and non-request messages',()
  }finally{fs.rmSync(temp,{recursive:true,force:true})}
 });
 
+test('actual callback decision rejects dispatch-only and incorrect output markers',()=>{
+ const temp=fs.mkdtempSync(path.join(os.tmpdir(),'bubbles-termux-result-'));
+ try {
+  const src=path.join(root,java+'TermuxReceiptPolicy.java');
+  const check=path.join(root,'android/bubbles-overlay/checks/TermuxReceiptPolicyCheck.java');
+  const compile=spawnSync('javac',['-d',temp,src,check],{encoding:'utf8'});
+  assert.equal(compile.status,0,compile.stderr||compile.stdout);
+  const run=spawnSync('java',['-cp',temp,'org.quantaphi.bubbles.TermuxReceiptPolicyCheck'],{encoding:'utf8'});
+  assert.equal(run.status,0,run.stderr||run.stdout);
+  assert.match(read(java+'TermuxProbeResultReceiver.java'),/TermuxReceiptPolicy\.succeeded\(kind, code, serviceError, stdout\)/);
+ }finally{fs.rmSync(temp,{recursive:true,force:true})}
+});
+
 test('shell probe is fixed and independent of Python installations',()=>{
  const source=read(java+'TermuxProbe.java');
  assert.match(source,/SHELL_SCRIPT\s*=\s*"printf /);
