@@ -11,12 +11,26 @@ const quote={store_id:'s-1',quote_text:'The staff were patient and helpful.',aut
  consent_evidence:'review-consent-file-123',consent_verified:1,review_state:'approved',
  published_at:'2026-10-24',reviewed_at:'2026-10-31',expires_at:'2026-12-01'};
 const feed={store_id:'s-1',provider:'weedmaps',connection_state:'not_connected',license_review_state:'unreviewed'};
-const makeDB=(m=[media],q=[quote],f=[feed])=>({DIRECTORY:{prepare(sql){return{bind(){return{async all(){
- if(sql.includes('store_source_media'))return{results:m};
- if(sql.includes('store_review_quotes'))return{results:q};
- if(sql.includes('store_inventory_connections'))return{results:f};
- throw Error('unexpected SQL');
- }}}}}}}});
+function makeDB(m=[media],q=[quote],f=[feed]) {
+ return {
+  DIRECTORY: {
+   prepare(sql) {
+    return {
+     bind() {
+      return {
+       async all() {
+        if(sql.includes('store_source_media'))return {results:m};
+        if(sql.includes('store_review_quotes'))return {results:q};
+        if(sql.includes('store_inventory_connections'))return {results:f};
+        throw Error('unexpected SQL');
+       }
+      };
+     }
+    };
+   }
+  }
+ };
+}
 test('future approved source photo and consented customer quote are optional, dated and attributed',async()=>{
  const [x]=await enrichCatalogEvidence([{id:'s-1'}],makeDB(),now);
  assert.equal(x.media.url,media.image_url);
