@@ -55,8 +55,8 @@ export function approveCreatorEntry(entry,at=Date.now()){
   isOfficialOpenAIModel:false,glyph:'✦',
   detail:'Public link checked '+new Date(when).toISOString().slice(0,10)+' · opens ChatGPT; access may vary'});
 }
-export function cardsForTab(tab='all',reviewed=APPROVED_PUBLIC_GPT_LINKS){
- const verified=Array.isArray(reviewed)?reviewed.map(x=>approveCreatorEntry(x)).filter(Boolean):[];
+export function cardsForTab(tab='all',reviewed=APPROVED_PUBLIC_GPT_LINKS,at=Date.now()){
+ const verified=Array.isArray(reviewed)?reviewed.map(x=>approveCreatorEntry(x,at)).filter(Boolean):[];
  const all=[...DISCOVERY_CARDS,...verified];
  if(tab==='infinity')return all.filter(x=>x.kind==='infinity');
  if(tab==='creator')return all.filter(x=>x.kind!=='infinity');
