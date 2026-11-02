@@ -61,6 +61,8 @@ final class TermuxProbe {
         "exit \"$code\""
     );
 
+    /** Shell-only verification never requires Python, creates files or installs packages. */
+    static final String SHELL_SCRIPT = "printf 'probe=termux-shell-v1\\ntermux=ok\\n'";
     private TermuxProbe() {}
     static boolean installed(Context context) {
         return context.getPackageManager().getLaunchIntentForPackage("com.termux") != null;
@@ -68,10 +70,10 @@ final class TermuxProbe {
     static boolean permitted(Context context) {
         return context.checkSelfPermission(PERMISSION) == PackageManager.PERMISSION_GRANTED;
     }
-    private static void record(Context context, String state, String detail, int requestId) {
+    private static void record(Context context, String state, String detail, int requestId, String kind) {
         try {
             JSONObject receipt = new JSONObject()
-                .put("id", requestId).put("state", state)
+                .put("id", requestId).put("state", state).put("kind", kind)
                 .put("detail", detail).put("at", System.currentTimeMillis());
             BrainNotes.prefs(context).edit().putString("termux_probe_receipt", receipt.toString()).apply();
         } catch (Exception ignored) {}
@@ -82,60 +84,63 @@ final class TermuxProbe {
             if ("queued".equals(value.optString("state")) &&
                 System.currentTimeMillis() - value.optLong("at") > CALLBACK_DEADLINE_MS) {
                 record(context, "timed_out_unverified",
-                    "No Termux callback arrived. Python execution and cleanup are unverified.", value.optInt("id", 0));
+                    "No Termux callback arrived. Execution is unverified.", value.optInt("id", 0), value.optString("kind", "python"));
                 value = new JSONObject(BrainNotes.prefs(context).getString("termux_probe_receipt", "{}"));
             }
             return value;
         } catch (Exception ignored) { return new JSONObject(); }
     }
-    static String run(Context context) {
+    static String run(Context context, String kind) {
+        if (!"shell".equals(kind) && !"python".equals(kind))
+            return "Unsupported Termux check. No command was dispatched.";
         if (!installed(context)) {
-            record(context, "not_installed", "Termux is not visible or installed on this phone.", 0);
+            record(context, "not_installed", "Termux is not visible or installed on this phone.", 0, kind);
             return "Termux isn't installed or launchable. No test ran.";
         }
         if (!permitted(context)) {
             record(context, "permission_blocked",
-                "Grant Bubbles 'Run commands in Termux environment' in Android Additional permissions.", 0);
+                "Grant Bubbles 'Run commands in Termux environment' in Android Additional permissions.", 0, kind);
             return "Bubbles does not have Android's Termux command permission. No test ran.";
         }
         JSONObject current = receipt(context);
         if ("queued".equals(current.optString("state")))
-            return "A Python test was already sent. Waiting for Termux's real result.";
+            return "A Termux check was already sent. Waiting for Termux's real result.";
         // Only a freshly acknowledged Android owner dialog calls this method.
         int id = (int)(System.currentTimeMillis() & 0x7fffffff);
         Intent callback = new Intent(context, TermuxProbeResultReceiver.class).setAction(RESULT_ACTION);
-        callback.putExtra("probe_request_id", id);
+        callback.putExtra("probe_request_id", id).putExtra("probe_kind", kind);
         PendingIntent pending = PendingIntent.getBroadcast(context, id, callback,
             PendingIntent.FLAG_ONE_SHOT | (Build.VERSION.SDK_INT >= 31 ? PendingIntent.FLAG_MUTABLE : 0));
         Intent request = new Intent("com.termux.RUN_COMMAND");
         request.setClassName("com.termux", "com.termux.app.RunCommandService");
         request.putExtra("com.termux.RUN_COMMAND_PATH", PREFIX + "sh");
-        request.putExtra("com.termux.RUN_COMMAND_ARGUMENTS", new String[]{"-c", SCRIPT});
+        request.putExtra("com.termux.RUN_COMMAND_ARGUMENTS", new String[]{"-c", "shell".equals(kind) ? SHELL_SCRIPT : SCRIPT});
         request.putExtra("com.termux.RUN_COMMAND_WORKDIR", HOME);
         request.putExtra("com.termux.RUN_COMMAND_BACKGROUND", true);
-        request.putExtra("com.termux.RUN_COMMAND_COMMAND_LABEL", "Bubbles owner-approved Python test");
+        request.putExtra("com.termux.RUN_COMMAND_COMMAND_LABEL", "Bubbles owner-approved " + kind + " check");
         request.putExtra("com.termux.RUN_COMMAND_PENDING_INTENT", pending);
-        record(context, "queued", "Command sent; execution is not yet verified.", id);
+        record(context, "queued", "Command sent; execution is not yet verified.", id, kind);
         try {
             context.startService(request);
-            return "Python diagnostic sent to Termux. Waiting for output and a cleanup receipt.";
+            return "Termux " + kind + " check dispatched. Waiting for verified exit/output receipt.";
         } catch (SecurityException error) {
             pending.cancel();
             record(context, "permission_blocked",
-                "Termux denied external command. Set allow-external-apps=true in ~/.termux/termux.properties.", id);
+                "Termux denied external command. Set allow-external-apps=true in ~/.termux/termux.properties.", id, kind);
             return "Termux blocked external commands. No test was confirmed.";
         } catch (RuntimeException error) {
             pending.cancel();
-            record(context, "dispatch_failed", "Android did not dispatch the Termux command.", id);
-            return "Android couldn't send the Python diagnostic to Termux.";
+            record(context, "dispatch_failed", "Android did not dispatch the Termux command.", id, kind);
+            return "Android couldn't dispatch the Termux check.";
         }
     }
-    static void saveResult(Context context, int id, String state, String detail) {
+    static void saveResult(Context context, int id, String kind, String state, String detail) {
         JSONObject latest = receipt(context);
-        if (id == 0 || id != latest.optInt("id") || !"queued".equals(latest.optString("state"))) return;
-        record(context, state, detail, id);
+        if (id == 0 || id != latest.optInt("id") || !"queued".equals(latest.optString("state"))
+                || kind == null || !kind.equals(latest.optString("kind"))) return;
+        record(context, state, detail, id, kind);
     }
-    static void cancel(Context context) {
-        record(context, "owner_cancelled", "The owner did not approve the Python diagnostic.", 0);
+    static void cancel(Context context, String kind) {
+        record(context, "owner_cancelled", "The owner did not approve the Termux " + kind + " check.", 0, kind);
     }
 }
