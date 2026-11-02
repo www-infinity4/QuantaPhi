@@ -15,7 +15,7 @@ test('reasoning-service failures become persisted assistant replies for the GPT 
   display:(message,kind)=>events.push({message,kind}),messages:replies,
   persistChat:()=>{},String,Error};
  vm.createContext(context);
- await vm.runInContext("(async()=>{try{throw Error('reasoning offline')}"+handler+"})()",context);
+ await vm.runInContext("(async()=>{try{throw Error('reasoning offline')"+handler+"})()",context);
  assert.ok(replies.some(x=>x.role==='assistant'&&/could not complete/i.test(x.text)));
  assert.equal(events.length,1);
 });
