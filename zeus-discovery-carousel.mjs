@@ -23,7 +23,8 @@ if(root){
  const advance=(step,manual=false)=>{
   if(!cards.length)return;
   index=advanceIndex(index,cards.length,step);
-  if(track.children[index])track.scrollTo({left:index*track.clientWidth,behavior:reduced?.matches?'instant':'smooth'});
+  // Manual changes are immediate so an in-flight smooth scroll cannot fight a tab switch.
+  if(track.children[index])track.scrollTo({left:index*track.clientWidth,behavior:(manual||reduced?.matches)?'instant':'smooth'});
   if(manual){playing=false;syncClock()}
   describe();
  };
