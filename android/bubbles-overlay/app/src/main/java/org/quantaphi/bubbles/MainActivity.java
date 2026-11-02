@@ -806,7 +806,7 @@ public final class MainActivity extends Activity {
                 ? "Run this sh built-in diagnostic in the installed Termux app? No Python, temp files or packages are required."
                 : "Run this Python diagnostic in Termux? No packages are installed. Below 16 MiB free, no test files are created. Otherwise its one temporary test directory is cleaned after execution.")
                 + "\n\nExact code to run:\n" + (shell ? TermuxProbe.SHELL_SCRIPT : TermuxProbe.SCRIPT))
-            .setNegativeButton("Cancel", (dialog, which) -> { TermuxProbe.cancel(this, kind); state.setText("Termux check cancelled. Nothing was executed."); })
+            .setNegativeButton("Cancel", (dialog, which) -> { TermuxProbe.cancel(this, kind); state.setText("This check was cancelled. No new command was dispatched."); })
             .setPositiveButton(shell ? "Check Termux" : "Test Python", (dialog, which) -> state.setText(TermuxProbe.run(this, kind)))
             .show();
     }
