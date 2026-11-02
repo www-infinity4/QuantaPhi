@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {directoryCardView,uniqueStoreCards,sourceLinkAllowed} from '../cannabis-directory-cards.mjs';
 const base={id:'ny-sample-1',name:'Example Dispensary',store:'Downtown',
  state:'NY',city:'Albany',address:'100 Main Street',source_url:'https://store.example.com/locations',
- source_name:'Official store listing',sponsored:false,license_status:'unverified',quality_star:null,
+ source_name:'Official store listing',source_domain:'store.example.com',sponsored:false,license_status:'unverified',quality_star:null,
  image_url:'',price:null,inventory:null};
 test('factual individual store cards require deliberate acknowledgement and real source data',()=>{
  assert.equal(directoryCardView(base,false),null);
