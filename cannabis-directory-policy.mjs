@@ -16,6 +16,9 @@ const REVIEWED={
  // New Hampshire DHHS lists seven therapeutic-cannabis ATCs, not adult-use stores.
  // This source is a public medical-program roster, not individual license approval.
  NH:{adult_use:'not_authorized',medical_program:true,source_url:'https://www.dhhs.nh.gov/sites/g/files/ehbemt476/files/documents/2021-11/tcp-infosheetpatient.pdf',reviewed_at:'2026-11-02'},
+ // Pennsylvania DOH publishes medical dispensary locations, not adult-use retailers.
+ // This monthly dataset is NOT independent individual license/operating-status verification.
+ PA:{adult_use:'not_authorized',medical_program:true,source_url:'https://data.pa.gov/Services-Near-You/Medical-Marijuana-Dispensaries-Current-State-Healt/4uxb-pw5i',reviewed_at:'2026-11-02'},
  MO:{adult_use:'legal_with_conditions',medical_program:true,source_url:'https://health.mo.gov/business-professionals/cannabis-regulation/cannabis-rules-and-law',reviewed_at:'2026-11-01'}
 };
 export const policy=state=>({state,adult_use:'unreviewed',medical_program:null,source_url:'',reviewed_at:'',...(REVIEWED[state]||{})});
