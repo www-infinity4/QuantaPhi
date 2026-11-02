@@ -116,5 +116,5 @@ test('long official Louisiana medical retailer IDs remain unique Oracle cards',a
  assert.equal(directoryCardId('x'.repeat(111)),null,'reject oversized source keys');
  const fs=await import('node:fs/promises');
  const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
- assert.match(deck,/\\{2,109\\}/,'Oracle registrar must accept the same bounded source IDs');
+ assert.match(deck,/\{2,109\}/,'Oracle registrar must accept the same bounded source IDs');
 });
