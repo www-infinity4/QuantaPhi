@@ -26,7 +26,7 @@ const publicRow=row=>{
   return {
     id:clean(safe.id,110),name:clean(safe.name,160),store:clean(safe.store,120),
     city:clean(safe.city,90),state:safe.state,address:clean(safe.address,240),
-    source_url:safe.source_url,source_name:clean(safe.source_name,120),
+    source_url:safe.source_url,source_domain:clean(safe.source_domain,140),source_name:clean(safe.source_name,120),
     source_checked_at:clean(safe.verified_at,35),
     license_status:clean(safe.license_status,45)||'unverified',
     sponsored:false,verified_age:false,quality_star:null,quality_sources:[],quality_reviewed_at:null,customer_rating:null,
