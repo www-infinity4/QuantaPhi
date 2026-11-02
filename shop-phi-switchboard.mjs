@@ -199,6 +199,7 @@ if(typeof document!=='undefined'){
    navigation.hidden=total<3;
    pause.hidden=total<3;
    pause.textContent=rotationPaused?'Resume rotation':'Pause rotation';
+   pause.setAttribute('aria-label',rotationPaused?'Resume automatic companion card rotation':'Pause automatic companion card rotation');
    pause.setAttribute('aria-pressed',String(rotationPaused));
   }
   prev.addEventListener('click',()=>{visiblePage=Math.max(0,visiblePage-1);showPage({fade:true})});
@@ -226,8 +227,7 @@ if(typeof document!=='undefined'){
    const lastPage=Math.ceil(visibleCards.length/2)-1;
    if(visiblePage>=lastPage){
     const chapter=chapterFor([active.title,active.description].join(' '));
-    if(!notifiedChapter&&visibleCards.some(c=>c.image)&&chapter){
-     notifiedChapter=true;
+    if(visibleCards.some(c=>c.image)&&chapter){
      window.dispatchEvent(new CustomEvent('quantaphi:showcase-chapter-complete',
       {detail:{id:active.id,chapter}}));
     }
@@ -238,7 +238,9 @@ if(typeof document!=='undefined'){
   window.addEventListener('pagehide',()=>clearInterval(rotateTimer),{once:true});
   const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
   function draw(list,lane){
-   const housing=lane.id==='housing-help';grid.classList.toggle('housing-help-layout',housing);
+   const housing=lane.id==='housing-help';
+   clearTimeout(fadeTimer);pageTransition++;grid.classList.remove('shopphi-is-fading');
+   grid.classList.toggle('housing-help-layout',housing);
    heading.textContent=housing?'Housing help · related resources':'Related source cards · ShopPhi';
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
