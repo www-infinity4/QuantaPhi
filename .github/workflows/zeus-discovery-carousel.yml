@@ -1,0 +1,40 @@
+name: Zeus discovery and legacy card quality
+on:
+  pull_request:
+    paths:
+      - 'zeus-discovery-core.mjs'
+      - 'zeus-discovery-carousel.mjs'
+      - 'zeus-discovery-carousel.css'
+      - 'quick-card-modernize.css'
+      - 'coliseum/coliseum-core.mjs'
+      - 'index.html'
+      - 'test/zeus-discovery-carousel.test.mjs'
+      - '.github/workflows/zeus-discovery-carousel.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'zeus-discovery-core.mjs'
+      - 'zeus-discovery-carousel.mjs'
+      - 'zeus-discovery-carousel.css'
+      - 'quick-card-modernize.css'
+      - 'coliseum/coliseum-core.mjs'
+      - 'index.html'
+      - 'test/zeus-discovery-carousel.test.mjs'
+      - '.github/workflows/zeus-discovery-carousel.yml'
+permissions:
+  contents: read
+jobs:
+  test-zeus-discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate independent Zeus carousel source
+        run: |
+          node --check zeus-discovery-core.mjs
+          node --check zeus-discovery-carousel.mjs
+          node --test test/zeus-discovery-carousel.test.mjs
+      - name: Check whitespace and conflict markers
+        run: git diff --check HEAD~1 HEAD || true
