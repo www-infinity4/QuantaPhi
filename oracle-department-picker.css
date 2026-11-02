@@ -9,3 +9,16 @@ body.oracle-quanta #oracleCardDeck .oracle-department-picker{display:grid;grid-t
 @media(max-width:550px){body.oracle-quanta #oracleCardDeck .oracle-department-picker{grid-template-columns:1fr auto}.oracle-department-picker label{grid-column:1/-1}.oracle-department-picker select{font-size:16px}.oracle-department-picker #oracleNationwideRestaurants{min-width:100px}}
 /* Restricted cards cannot appear in the ordinary shelf even before JS loads. */
 body:not([data-oracle-department="adult"]) :is(#bruceBannerWeedmapsCard,#infinityAdultContentCard,#cannabisDirectoryCard,[id^="dispensary-"],[data-directory-store-id],[data-age-restricted="true"]){display:none!important}
+
+/* Product image leads. Real merchant controls stay functional but never masquerade
+ * as large blue advertisements. Source images only; no artificial ad artwork. */
+body.oracle-quanta #oracleCardStage .iac-card .iac-media:not(.iac-logo-only){height:clamp(190px,36vw,340px);background:#fff}
+body.oracle-quanta #oracleCardStage .iac-card .iac-media img{max-width:100%;object-fit:contain}
+body.oracle-quanta #oracleCardStage .iac-card .iac-website-actions :is(button,a){
+ background:#f8f9fa!important;color:#39454f!important;border:1px solid #d9e0e6!important;
+ border-radius:9px!important;min-height:44px!important;padding:7px 8px!important;
+ font:600 12px/1.25 system-ui,sans-serif!important;box-shadow:none!important
+}
+body.oracle-quanta #oracleCardStage .iac-card .iac-website-actions :is(button,a):focus-visible{
+ outline:3px solid #327b98!important;outline-offset:2px
+}
