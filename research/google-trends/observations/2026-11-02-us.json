@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-02T12:41:29.060308Z",
+  "checked_at": "2026-11-02T21:58:05.785142Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "voting",
+      "query": "border report",
       "approx_searches": "500+",
-      "published_at": "2026-11-02T12:20:00Z",
+      "published_at": "2026-11-02T21:40:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-election/poll-voters-demand-change-check-trump-fueling-steep-democratic-midterm-rcna606183",
-        "https://finance.yahoo.com/economy/article/more-and-more-disenchanted-a-final-check-in-on-trumps-economic-approval-ratings-before-midterms-100000424.html",
-        "https://www.forbes.com/sites/saradorn/2026/10/27/trump-approval-rating-net19-a-week-before-election-day/"
+        "https://www.wane.com/news/national-world/virtual-reality-brings-mexican-tradition-to-el-pasos-day-of-dead-celebration/",
+        "https://www.krqe.com/news/border-report/el-paso-summit-showcases-nearshoring-opportunities-amid-trade-challenges/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShEnJ29ean07XDj_ARrYbLcRC0wu5JQ_x9UxF_Lh8QTPTZUMEfBMrksFVCGTE",
-      "image_credit": "NBC News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRp4yK57oVaJmOo3BQLwnIzmEq0rOQSGyH2SHw3JRks3VHJI_Dq1jF7vSjNDc0",
+      "image_credit": "WANE 15",
       "news": [
         {
-          "url": "https://www.nbcnews.com/politics/2026-election/poll-voters-demand-change-check-trump-fueling-steep-democratic-midterm-rcna606183",
-          "title": "Poll: Voters demand change and a check on Trump, fueling a steep Democratic midterm advantage",
-          "publisher": "NBC News",
+          "url": "https://www.wane.com/news/national-world/virtual-reality-brings-mexican-tradition-to-el-pasos-day-of-dead-celebration/",
+          "title": "Virtual reality brings Mexican tradition to El Paso’s Day of Dead celebration",
+          "publisher": "WANE 15",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShEnJ29ean07XDj_ARrYbLcRC0wu5JQ_x9UxF_Lh8QTPTZUMEfBMrksFVCGTE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRp4yK57oVaJmOo3BQLwnIzmEq0rOQSGyH2SHw3JRks3VHJI_Dq1jF7vSjNDc0"
         },
         {
-          "url": "https://finance.yahoo.com/economy/article/more-and-more-disenchanted-a-final-check-in-on-trumps-economic-approval-ratings-before-midterms-100000424.html",
-          "title": "'More and more disenchanted': A final check-in on Trump's economic approval ratings before midterms",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.krqe.com/news/border-report/el-paso-summit-showcases-nearshoring-opportunities-amid-trade-challenges/",
+          "title": "El Paso summit highlights cross-border supply chains, infrastructure needs",
+          "publisher": "KRQE",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3vayVmC8xNTpce9YjYqrc7mFiPWxVaW1Sqg70lkUd_KeDabHjBXc1a00Zz5E"
-        },
-        {
-          "url": "https://www.forbes.com/sites/saradorn/2026/10/27/trump-approval-rating-net19-a-week-before-election-day/",
-          "title": "Trump’s Approval Rating: 44% Say Their Midterm Votes For Congress Are A Rebuke Of Trump",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLl_SZuyxh4Ec6oNYSZIPy3MwzDI1pA9X8wYOUJgKL6hh3IKFM9yMQyc4rsSU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiJps0pvwz2nH4JfeW3xmTH-4kQbOApQcEqLGT1h4W7Wiz92Pvsl_gceoZdg"
         }
       ]
     },
     {
-      "query": "bill hader",
-      "approx_searches": "200+",
-      "published_at": "2026-11-02T12:20:00Z",
+      "query": "mta",
+      "approx_searches": "500+",
+      "published_at": "2026-11-02T21:40:00Z",
       "related_news_urls": [
-        "https://www.npr.org/2026/11/02/nx-s1-5453763/bill-hader-talks-about-his-latest-role-as-the-cat-in-the-hat",
-        "https://thenerdsofcolor.org/2026/10/30/chaos-with-cat-in-the-hat-stars-america-ferrera-xochitl-gomez-and-bill-hader/",
-        "https://www.hollywoodreporter.com/movies/movie-news/bill-hader-cat-in-the-hat-different-snl-version-1236740085/"
+        "https://nypost.com/2026/11/01/opinion/this-mta-retreat-could-doom-all-nyc-public-transit/",
+        "https://gothamist.com/news/who-is-enforcing-the-mtas-3-bus-fare-for-the-moment-no-one",
+        "https://www.amny.com/news/fare-evasion-nyc-transit-boss-eagle-agents-probe/"
       ],
-      "image_url": null,
-      "image_credit": "NPR",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYzD0lvZ2-SH1mYnU6v1DizntcRN8YsEnOFRnWEStCM3gMCU4_STZOfzvarxk",
+      "image_credit": "New York Post",
       "news": [
         {
-          "url": "https://www.npr.org/2026/11/02/nx-s1-5453763/bill-hader-talks-about-his-latest-role-as-the-cat-in-the-hat",
-          "title": "Bill Hader talks about his latest role as 'The Cat in the Hat'",
-          "publisher": "NPR",
+          "url": "https://nypost.com/2026/11/01/opinion/this-mta-retreat-could-doom-all-nyc-public-transit/",
+          "title": "MTA bus-fare retreat could doom all NYC public transit",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYzD0lvZ2-SH1mYnU6v1DizntcRN8YsEnOFRnWEStCM3gMCU4_STZOfzvarxk"
         },
         {
-          "url": "https://thenerdsofcolor.org/2026/10/30/chaos-with-cat-in-the-hat-stars-america-ferrera-xochitl-gomez-and-bill-hader/",
-          "title": "Chaos with ‘Cat in the Hat’ Stars America Ferrera, Xochitl Gomez, and Bill Hader",
-          "publisher": "The Nerds of Color",
+          "url": "https://gothamist.com/news/who-is-enforcing-the-mtas-3-bus-fare-for-the-moment-no-one",
+          "title": "NYPD won't enforce NYC's bus fare while MTA security force is suspended",
+          "publisher": "Gothamist",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtPqGwd8WlcfrMvwdxcKJ6UHP7jw5SFLjg1hIGyRAkoXl9fE7jO4jKzlxmCSk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdbPpVXR0Cjt96PfP0QevAVAC4fG6hNGnmM7Ow24EAogINKmdXGj1qYFgu0u4"
         },
         {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/bill-hader-cat-in-the-hat-different-snl-version-1236740085/",
-          "title": "Bill Hader Is the Cat in the Hat — This Time a “Much Different Version” Than He Played on ‘SNL’",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.amny.com/news/fare-evasion-nyc-transit-boss-eagle-agents-probe/",
+          "title": "Fare evasion: NYC Transit boss says probe of EAGLE agents altercations with riders will soon conclude | amNewYork",
+          "publisher": "amNewYork",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJbF8_pq4DhF4s7Y9D_3qw3OZGgnIH7GeoejFtPUrVBt8FcihVb1Vyfy4K_zY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROyUnKY5DB1cUDN39Ecz6dDyKOmU9cxZetL3K9WUpwmQBy_4p4hdvppbgG-Vo"
         }
       ]
     },
     {
-      "query": "when is voting day 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-02T12:20:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/02/nx-s1-6025451/midterms-what-to-watch-election-night",
-        "https://www.ms.now/the-weekend/watch/ms-now-s-kabir-khanna-talks-key-races-to-watch-on-election-night-2519281219689",
-        "https://www.axios.com/2026/10/31/your-election-night-cheat-sheet"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfjrca8_slQvyQHGAW2vSCUBP4zyc_ffAl1czmNt-N9ugw8FPI-QiX3jFYiDU",
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/02/nx-s1-6025451/midterms-what-to-watch-election-night",
-          "title": "6 things to watch for on election night",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfjrca8_slQvyQHGAW2vSCUBP4zyc_ffAl1czmNt-N9ugw8FPI-QiX3jFYiDU"
-        },
-        {
-          "url": "https://www.ms.now/the-weekend/watch/ms-now-s-kabir-khanna-talks-key-races-to-watch-on-election-night-2519281219689",
-          "title": "MS NOW’s Kabir Khanna talks key races to watch on election night",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvFBOOufrSZ5CDQwi8xK1a_1gqFWBHWN-U06IiWERteYOc6wHQJIIoJhRe4yw"
-        },
-        {
-          "url": "https://www.axios.com/2026/10/31/your-election-night-cheat-sheet",
-          "title": "Election cheat sheet: These early races could tell us where the midterms are headed",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0WDFVX0fRhD3fxrk4_YG8jC11ZH7Fazf_kF4pqsgFcxMG3ge36RNwhIPcuvI"
-        }
-      ]
-    },
-    {
-      "query": "voter registration",
-      "approx_searches": "200+",
-      "published_at": "2026-11-02T12:20:00Z",
-      "related_news_urls": [
-        "https://usustatesman.com/usu-hosts-site-for-early-voting/",
-        "https://www.idahostatesman.com/news/politics-government/election/article317857028.html",
-        "https://www.ncwlife.com/news/northwest/more-than-200-000-idahoans-vote-early-for-midterms/article_f4703483-2b77-5d9e-93c0-c99fde146145.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBVsFnqyKGOnka-mbeYbMQaR6qzA0oapp3BkXTUBLexRIIMeJFKYxzKPP43-I",
-      "image_credit": "The Utah Statesman",
-      "news": [
-        {
-          "url": "https://usustatesman.com/usu-hosts-site-for-early-voting/",
-          "title": "USU hosts site for early voting",
-          "publisher": "The Utah Statesman",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBVsFnqyKGOnka-mbeYbMQaR6qzA0oapp3BkXTUBLexRIIMeJFKYxzKPP43-I"
-        },
-        {
-          "url": "https://www.idahostatesman.com/news/politics-government/election/article317857028.html",
-          "title": "It’s almost Election Day in Idaho. Here’s your last-minute guide to voting",
-          "publisher": "Idaho Statesman",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ6Hw0TdIm1DDkVb4nnfUO-PxJBf9Ds3GksCa3r8GIvxiKyZp3bR92cMHtaLY"
-        },
-        {
-          "url": "https://www.ncwlife.com/news/northwest/more-than-200-000-idahoans-vote-early-for-midterms/article_f4703483-2b77-5d9e-93c0-c99fde146145.html",
-          "title": "More than 200,000 Idahoans vote early for midterms",
-          "publisher": "ncwlife.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdMn1rXuNiFR-93DsKjKLMbHEq8Jphw3Jpm0zhfeASJhDSh16jG1Rjl-ZUOyo"
-        }
-      ]
-    },
-    {
-      "query": "when do polls open on election day",
-      "approx_searches": "100+",
-      "published_at": "2026-11-02T12:20:00Z",
-      "related_news_urls": [
-        "https://www.kcci.com/article/iowa-voters-brave-hourslong-lines-to-cast-ballots-ahead-of-election-day/74303985",
-        "https://www.desmoinesregister.com/story/news/politics/elections/2026/11/02/voting-hours-on-election-day-voter-registration/92137295007/",
-        "https://cbs2iowa.com/news/local/as-election-day-nears-democrats-focus-on-on-one-one-conversations-energizing-voters"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRD4r30oJ92getxd31vcO5N2-z7hTwTkEtQTeZypalFKCwn1HMTDlFDmGAIyk",
-      "image_credit": "KCCI",
-      "news": [
-        {
-          "url": "https://www.kcci.com/article/iowa-voters-brave-hourslong-lines-to-cast-ballots-ahead-of-election-day/74303985",
-          "title": "Iowa voters brave hourslong lines to cast ballots ahead of Election Day",
-          "publisher": "KCCI",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRD4r30oJ92getxd31vcO5N2-z7hTwTkEtQTeZypalFKCwn1HMTDlFDmGAIyk"
-        },
-        {
-          "url": "https://www.desmoinesregister.com/story/news/politics/elections/2026/11/02/voting-hours-on-election-day-voter-registration/92137295007/",
-          "title": "Voting in Iowa? Poll hours, ID rules and what to bring on Nov. 3",
-          "publisher": "The Des Moines Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnrfMHw_eh0R-nPs3syDCQkdoVIPz-gMZ_qOGQU6FWWq6_b9RVSrRQBKyxj8w"
-        },
-        {
-          "url": "https://cbs2iowa.com/news/local/as-election-day-nears-democrats-focus-on-on-one-one-conversations-energizing-voters",
-          "title": "As Election Day nears, Democrats focus on on-one-one conversations, energizing voters",
-          "publisher": "KGAN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqrxWmLHmTCrRLWfVcvULGeU41fzyZDnVNAvkQtSXiRWLVYFtpuHiaTIAQDv0"
-        }
-      ]
-    },
-    {
-      "query": "russia rassvet constellation orbit failure",
+      "query": "mario morales ice agent",
       "approx_searches": "1000+",
-      "published_at": "2026-11-02T12:20:00Z",
+      "published_at": "2026-11-02T21:40:00Z",
       "related_news_urls": [
-        "https://united24media.com/war-in-ukraine/russias-starlink-dream-goes-up-in-flames-as-second-satellite-burns-up-23973",
-        "https://en.defence-ua.com/news/another_satellite_for_russias_starlink_rival_falls_out_of_orbit_how_are_other_rassvet_3_satellites_doing-20275.html",
-        "https://newsukraine.rbc.ua/news/burned-up-after-launch-russia-s-starlink-1793522198.html"
+        "https://www.cnn.com/2026/11/02/us/indicted-ice-officer-surrenders-texas",
+        "https://www.bostonglobe.com/2026/11/02/nation/ice-officer-houston-suv-assault/",
+        "https://www.click2houston.com/news/local/2026/11/02/ice-agent-indicted-in-harris-county-crash-expected-to-surrender-monday-morning/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6vwgjrqDr2x7rQ_Gv_C3YJ02TLgDbuG3OFVvTKrf6vR0ke6byMxskvE91o5A",
-      "image_credit": "UNITED24 Media",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQpAOOyXd-duELk8Tm7oterSYf4MfQEG1ckjqiFfqrsTVLUOY6yg-9rimkKY",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://united24media.com/war-in-ukraine/russias-starlink-dream-goes-up-in-flames-as-second-satellite-burns-up-23973",
-          "title": "Russia’s Starlink Dream Goes Up in Flames as Second Satellite Burns Up",
-          "publisher": "UNITED24 Media",
+          "url": "https://www.cnn.com/2026/11/02/us/indicted-ice-officer-surrenders-texas",
+          "title": "ICE officer indicted on allegations he ran over undocumented Mexican immigrant released on bond",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6vwgjrqDr2x7rQ_Gv_C3YJ02TLgDbuG3OFVvTKrf6vR0ke6byMxskvE91o5A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQpAOOyXd-duELk8Tm7oterSYf4MfQEG1ckjqiFfqrsTVLUOY6yg-9rimkKY"
         },
         {
-          "url": "https://en.defence-ua.com/news/another_satellite_for_russias_starlink_rival_falls_out_of_orbit_how_are_other_rassvet_3_satellites_doing-20275.html",
-          "title": "Another Satellite for russia's Starlink Rival Falls Out of Orbit: How Are Other Rassvet-3 Satellites Doing?",
-          "publisher": "Defense Express",
+          "url": "https://www.bostonglobe.com/2026/11/02/nation/ice-officer-houston-suv-assault/",
+          "title": "ICE officer accused of hitting immigrant in Houston with an SUV turns himself in",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfS3nYSSiP04Rx7_ozga3wOroa5-WhLCY0JiWGG15CRDd00E8u_1e4uAUaNUg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtilixU9iQCe-Wpps6RLHsiOrpXiTMAUHdQSMIW34Y9w-7hgQjnIozaLq6Mf0"
         },
         {
-          "url": "https://newsukraine.rbc.ua/news/burned-up-after-launch-russia-s-starlink-1793522198.html",
-          "title": "Burned up after launch: Russia's Starlink rival runs into trouble again",
-          "publisher": "RBC-Ukraine",
+          "url": "https://www.click2houston.com/news/local/2026/11/02/ice-agent-indicted-in-harris-county-crash-expected-to-surrender-monday-morning/",
+          "title": "ICE agent indicted in Houston crash that injured man expected to surrender Monday",
+          "publisher": "Click2Houston",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgf-hytqvg_dDlR_R8WLP-EoEZTrqGinqXCA5zGWwGYp2o2ZK2q6iNDcKoI5s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqA6X-JvqeEus0HniJhQZ5SpCYW31AnR8iBADSNWksQC_4JxA_fXJc0TACXRQ"
         }
       ]
     },
     {
-      "query": "lite stock",
+      "query": "freighter sinks off bulgarian coast",
       "approx_searches": "500+",
-      "published_at": "2026-11-02T12:10:00Z",
+      "published_at": "2026-11-02T21:30:00Z",
       "related_news_urls": [
-        "https://www.businesswire.com/news/home/20261102374788/en/Marvell-and-Lumentum-to-Combine-Creating-a-Category-Leader-in-AI-Connectivity",
-        "https://www.tikr.com/blog/piper-sandlers-400-target-says-marvells-selloff-went-too-far",
-        "https://www.bloomberg.com/news/articles/2026-11-02/marvell-reaches-115-billion-deal-for-lumentum-holdings"
+        "https://www.euronews.com/2026/11/02/watch-unseen-images-of-drone-sinking-greek-tanker-off-bulgarian-coast",
+        "https://www.bbc.com/news/videos/cm70pv9jlev7o",
+        "https://www.autonocion.com/us/19960-ton-freighter-421-containers-drone-boats-three-hits-black-sea-sank-midnight/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGEb7d59VJy7H5Im2uJAKz_3GhbB6P_h8t8UIpOq2g0R3vIcTOwsYLirQHZ0",
-      "image_credit": "Business Wire",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0f2w4J5874jflBltJJct81tN8ghKlV31_8W6CQP8d4JTNAEXxCAHZSSMj4fA",
+      "image_credit": "Euronews.com",
       "news": [
         {
-          "url": "https://www.businesswire.com/news/home/20261102374788/en/Marvell-and-Lumentum-to-Combine-Creating-a-Category-Leader-in-AI-Connectivity",
-          "title": "Marvell and Lumentum to Combine, Creating a Category Leader in AI Connectivity",
-          "publisher": "Business Wire",
+          "url": "https://www.euronews.com/2026/11/02/watch-unseen-images-of-drone-sinking-greek-tanker-off-bulgarian-coast",
+          "title": "Watch: Unseen images of drone sinking Greek tanker off Bulgarian coast",
+          "publisher": "Euronews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGEb7d59VJy7H5Im2uJAKz_3GhbB6P_h8t8UIpOq2g0R3vIcTOwsYLirQHZ0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0f2w4J5874jflBltJJct81tN8ghKlV31_8W6CQP8d4JTNAEXxCAHZSSMj4fA"
         },
         {
-          "url": "https://www.tikr.com/blog/piper-sandlers-400-target-says-marvells-selloff-went-too-far",
-          "title": "Piper Sandler’s $400 Target Says Marvell’s Selloff Went Too Far",
-          "publisher": "TIKR.com",
+          "url": "https://www.bbc.com/news/videos/cm70pv9jlev7o",
+          "title": "Mystery sea drones sink container ship in Black Sea",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsdxXwxOlmY0S_ke_Q15SUE0XoC9RBqXCfXqydGcl5P-paJgm94ea66sOIkRE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMGy5dwKGsVXrsWV-A6njCuiVkyK9-RnhldS1IQmRQk4NxaSCKhjwGLEcoXos"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-02/marvell-reaches-115-billion-deal-for-lumentum-holdings",
-          "title": "Marvell Reaches $115 Billion Deal for Lumentum Holdings",
-          "publisher": "Bloomberg",
+          "url": "https://www.autonocion.com/us/19960-ton-freighter-421-containers-drone-boats-three-hits-black-sea-sank-midnight/",
+          "title": "A 19,960-ton freighter hauling 421 containers to Romania took three hits from drone boats 21 nautical miles off a NATO country's Black Sea coast, its 18 sailors abandoned ship 12 m",
+          "publisher": "Autonocion.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVDhn1WF9RK3z3FKklvqSz0OSOMA-5tRNLcELBC4tvzw8MK1wNf5xlZzZoaOM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNVkws1mIfcKX3GUdXq35VeK4jN8BnqQzWjwwsokN6Q6O_w-kDEhPWAXyOWU"
         }
       ]
     },
     {
-      "query": "cedric doumbe",
-      "approx_searches": "200+",
-      "published_at": "2026-11-02T12:10:00Z",
+      "query": "zach charbonnet",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-02T21:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/boxing/story/_/id/50316376/jake-paul-ready-next-chapter-books-return-dubai",
-        "https://sports.yahoo.com/boxing/breaking-news/article/jake-paul-set-for-boxing-return-on-christmas-eve-will-face-cedric-doumbe-a-year-after-suffering-broken-jaw-vs-anthony-joshua-121933745.html",
-        "https://bleacherreport.com/articles/25528338-jake-paul-vs-cedric-doumbe-set-latest-rules-schedule-location-return-fight-injury"
+        "https://www.seahawks.com/news/seahawks-activate-rb-jadarian-price-from-injured-reserve",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-02/price-activated-from-ir-will-play-vs-chi",
+        "https://komonews.com/sports/nikos-sports-zone/monday-night-matchup-what-mike-macdonald-is-saying-about-hawks-showdown-with-bears"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCQt3cEUNMqrSa9X5MO5Us1dJWPQn5HEtXTYuy8LxCAFoXiXF9z1nFqOAe5g",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIQzkY22W-x12Wr-FtV2NfT_cA-kP9X3eyGjYg1HyX7qUF4j8_0PkISax42ww",
+      "image_credit": "Seattle Seahawks",
+      "news": [
+        {
+          "url": "https://www.seahawks.com/news/seahawks-activate-rb-jadarian-price-from-injured-reserve",
+          "title": "Seahawks Activate RB Jadarian Price From Injured Reserve",
+          "publisher": "Seattle Seahawks",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIQzkY22W-x12Wr-FtV2NfT_cA-kP9X3eyGjYg1HyX7qUF4j8_0PkISax42ww"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-02/price-activated-from-ir-will-play-vs-chi",
+          "title": "Price activated from IR, will play vs. CHI",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDv0X28d7DztRvHmUBvRj-5IVPHpKQZ-mnfpqAJjx786mpHEg6jVtcRlEdDG0"
+        },
+        {
+          "url": "https://komonews.com/sports/nikos-sports-zone/monday-night-matchup-what-mike-macdonald-is-saying-about-hawks-showdown-with-bears",
+          "title": "Monday Night Matchup: What Mike Macdonald is saying about Hawks' showdown with Bears",
+          "publisher": "KOMO",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8ISf9atqMAfXpk4Ep6-crrKQOGuQdLAiJ8_PdHzFo1Dx8vQ1bJm9VvdkUjt8"
+        }
+      ]
+    },
+    {
+      "query": "usc vs unlv",
+      "approx_searches": "500+",
+      "published_at": "2026-11-02T21:20:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/ncaaw/2026/11/02/usc-vs-unlv-womens-basketball-time-tv-results-highlights--live/92566198007/",
+        "https://unlvrebels.com/news/2026/10/31/womens-basketball-lady-rebels-open-season-against-no-3-usc-in-hall-of-fame-womens-showcase-in-las-vegas",
+        "https://news3lv.com/sports/content/sports-raiders-prepare"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-B9aCLJpv1N7UVHwbrdYtzY86YlxYl0M6ELDelTZL0L76rrw9K9iTNi2Qqk",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaw/2026/11/02/usc-vs-unlv-womens-basketball-time-tv-results-highlights--live/92566198007/",
+          "title": "UNLV women's basketball live: highlights, score",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-B9aCLJpv1N7UVHwbrdYtzY86YlxYl0M6ELDelTZL0L76rrw9K9iTNi2Qqk"
+        },
+        {
+          "url": "https://unlvrebels.com/news/2026/10/31/womens-basketball-lady-rebels-open-season-against-no-3-usc-in-hall-of-fame-womens-showcase-in-las-vegas",
+          "title": "Lady Rebels Open Season Against No. 3 USC In Hall Of Fame Women's Showcase In Las Vegas",
+          "publisher": "University of Nevada Las Vegas Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcRYJSS-JsvrbggJ1Z_8FYUecy0ANBgjbaxFMWz4s58_4_hYVdThF-kjqVCfo"
+        },
+        {
+          "url": "https://news3lv.com/sports/content/sports-raiders-prepare",
+          "title": "SPORTS: Klint Kubiak looks to secure rushing attack for Jets & Lady Rebels prep #3 USC",
+          "publisher": "KSNV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FW7ihfVEW5LGAyjx75IlPNgRPfgsVUTvEl0Hje--YbuXwgKqpvLnX0gExwc"
+        }
+      ]
+    },
+    {
+      "query": "usc women's basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-02T21:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/womens-college-basketball/story/_/id/50353736/juju-watkins-usc-return-knee-injury-player-year-wnba",
+        "https://www.nytimes.com/athletic/7741914/2026/11/02/womens-college-basketball-top-25-uconn-south-carolina/",
+        "https://www.usatoday.com/story/sports/ncaaw/bigten/2026/11/02/juju-watkins-returns-acl-injury-ready-usc-title-chase/92386959007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjTRtH2e4qhou8ypZyaygQO3pEuL3sGjoUbnUCbhPBWn1glaiEIbT627qQ3Pw",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/boxing/story/_/id/50316376/jake-paul-ready-next-chapter-books-return-dubai",
-          "title": "Jake Paul ready for 'next chapter,' books return from broken jaw",
+          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50353736/juju-watkins-usc-return-knee-injury-player-year-wnba",
+          "title": "USC's JuJu Watkins is back and maybe better than ever, 588 days after injury",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCQt3cEUNMqrSa9X5MO5Us1dJWPQn5HEtXTYuy8LxCAFoXiXF9z1nFqOAe5g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjTRtH2e4qhou8ypZyaygQO3pEuL3sGjoUbnUCbhPBWn1glaiEIbT627qQ3Pw"
         },
         {
-          "url": "https://sports.yahoo.com/boxing/breaking-news/article/jake-paul-set-for-boxing-return-on-christmas-eve-will-face-cedric-doumbe-a-year-after-suffering-broken-jaw-vs-anthony-joshua-121933745.html",
-          "title": "Jake Paul set for boxing return on Christmas Eve, will face Cedric Doumbé a year after suffering broken jaw vs. Anthony Joshua",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nytimes.com/athletic/7741914/2026/11/02/womens-college-basketball-top-25-uconn-south-carolina/",
+          "title": "Women’s college basketball top 25: Who really deserves No. 1? South Carolina or UConn?",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbhY2sZBhmjr_8Llx6ZGna3kXZwzAkFaY_rhS5U8Cmq8ejBhUwNOwJkdEPr10"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI0-RSzUTwi7S4M5FughKVyZ1uCOrJwE7Y9AtaIQNoPYvlk6Xxg083U0eeptU"
         },
         {
-          "url": "https://bleacherreport.com/articles/25528338-jake-paul-vs-cedric-doumbe-set-latest-rules-schedule-location-return-fight-injury",
-          "title": "Jake Paul vs. Cedric Doumbe Set, Latest on Rules, Schedule, Location for Return Fight from Injury",
-          "publisher": "Bleacher Report",
+          "url": "https://www.usatoday.com/story/sports/ncaaw/bigten/2026/11/02/juju-watkins-returns-acl-injury-ready-usc-title-chase/92386959007/",
+          "title": "JuJu Watkins is back after 589 days. Why USC says she’s even better now",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_WEUL9HiqcAV3jHB5fapZY0QjhzVVSVMufFZo0KSHOWLaj8j2XIvxDbvC26o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ4NamMmAjTDhfmeOYqjEA8aTMMFNF8b-4O3OrOL1X-U56h7PE5uPwIgzO6o4"
         }
       ]
     },
     {
-      "query": "luca van assche",
+      "query": "gates mcfadden",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-02T21:20:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/obituaries-people-news/patrick-stewart-star-trek-gates-mcfadden-tribute-1236937177/",
+        "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+        "https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Db4rkyarhnYYDRYi4Yq_FwfQuocF37lUJ2HYJIgAoyEZwK2Ip4fg_JJ0X-8",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/obituaries-people-news/patrick-stewart-star-trek-gates-mcfadden-tribute-1236937177/",
+          "title": "‘Star Trek’ Star Gates McFadden Pays Tribute to Patrick Stewart: His Portrayal of Jean-Luc Picard Gave People Hope Around the World",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Db4rkyarhnYYDRYi4Yq_FwfQuocF37lUJ2HYJIgAoyEZwK2Ip4fg_JJ0X-8"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+          "title": "Patrick Stewart, Master of Shakespeare, ‘Star Trek’ and More, Has Died",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJM20IS6PoRxTS7KdXeSnSLwPdZ-JQVDaGtKuoZ_lVr6A25GMeq0ZDiXdJZV8"
+        },
+        {
+          "url": "https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism",
+          "title": "Patrick Stewart taught us what good men do with power",
+          "publisher": "Vox",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98xBtl5Rt3zQ7uwHTmTZjZrf0Le8N6p3mwf2p1cxmtpiYlDqiu5yD9_wy7GQ"
+        }
+      ]
+    },
+    {
+      "query": "heston kjerstad",
       "approx_searches": "200+",
-      "published_at": "2026-11-02T12:10:00Z",
+      "published_at": "2026-11-02T21:20:00Z",
       "related_news_urls": [
-        "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3RhcmVxaml5YTYtc3ZnLmdpdGh1Yi5pby9zdHJlYW0yMDI2L3hkLnhtbCIvPjwva3JwYW5vPg==&id=watch-free-tennis-match-xdgfhjffff",
-        "https://www.dimers.com/tennis/news/luca-van-assche-vs-mariano-navone-tennis-prediction-atp-paris-masters-2026-ac",
-        "https://www.flashscore.com/match/tennis/navone-mariano-YoPUeL3o/van-assche-luca-nP9K42Bg/"
+        "https://www.mlb.com/news/orioles-decline-ryan-mountcastle-option-heston-kjerstad-clears-waivers-becomes-free-agent",
+        "https://www.mlbtraderumors.com/2026/11/orioles-release-heston-kjerstad.html",
+        "https://www.cbssports.com/fantasy/baseball/news/heston-kjerstad-clears-waivers-enters-free-agency/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrNLKK18rWsOjbcVbr4TTPtx0D1oGYUt6YhmLhbrKfwhXC1qBOca0aqw_TP6Q",
-      "image_credit": "Pierce Manufacturing",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7QlZaBHmQzxALU3zYjEKw4orSBAQBdHmBPvndTs8AOJeUEvT4DPCHtE1M1GA",
+      "image_credit": "MLB.com",
       "news": [
         {
-          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3RhcmVxaml5YTYtc3ZnLmdpdGh1Yi5pby9zdHJlYW0yMDI2L3hkLnhtbCIvPjwva3JwYW5vPg==&id=watch-free-tennis-match-xdgfhjffff",
-          "title": "̳̳̳+[#!WATCHLIVE-Tv!]™Luca Van Assche vs Mariano Navone Live Free 02 November 2026",
-          "publisher": "Pierce Manufacturing",
+          "url": "https://www.mlb.com/news/orioles-decline-ryan-mountcastle-option-heston-kjerstad-clears-waivers-becomes-free-agent",
+          "title": "O's decline Mountcastle's option; Kjerstad clears waivers, becomes free agent (sources)",
+          "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrNLKK18rWsOjbcVbr4TTPtx0D1oGYUt6YhmLhbrKfwhXC1qBOca0aqw_TP6Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7QlZaBHmQzxALU3zYjEKw4orSBAQBdHmBPvndTs8AOJeUEvT4DPCHtE1M1GA"
         },
         {
-          "url": "https://www.dimers.com/tennis/news/luca-van-assche-vs-mariano-navone-tennis-prediction-atp-paris-masters-2026-ac",
-          "title": "Luca Van Assche vs. Mariano Navone prediction, odds, picks for ATP Paris Masters 2026",
-          "publisher": "Dimers",
+          "url": "https://www.mlbtraderumors.com/2026/11/orioles-release-heston-kjerstad.html",
+          "title": "Orioles Release Heston Kjerstad",
+          "publisher": "MLB Trade Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT65qdqH-s8cpzxthwk0282DNDvszswQensb3ShrJ5y0xoyRt-k0sOKoyR9gXU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5LfiHCk56lFGvI9dXQonSsm8R6cXFg2uUht49j5WTHumYl0L65f1S14YxBc4"
         },
         {
-          "url": "https://www.flashscore.com/match/tennis/navone-mariano-YoPUeL3o/van-assche-luca-nP9K42Bg/",
-          "title": "Luca van Assche v Mariano Navone (02/11/2026)",
-          "publisher": "Flashscore.com",
+          "url": "https://www.cbssports.com/fantasy/baseball/news/heston-kjerstad-clears-waivers-enters-free-agency/",
+          "title": "Heston Kjerstad: Clears waivers, enters free agency",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrgN9KHlYFSeIaqtw4JiIeq_12cfx4c8s7baaSEf38ZmMLtG1sNfJRCN_4zw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb-dHKNsdou0CJAyfO2uiKbjrzubKKAMWBnjhMIMjCEgbjbnrznwi0Zd56RZ0"
         }
       ]
     },
     {
-      "query": "harley davidson stock",
-      "approx_searches": "100+",
-      "published_at": "2026-11-02T12:10:00Z",
+      "query": "sunday rose kidman urban halloween costume",
+      "approx_searches": "500+",
+      "published_at": "2026-11-02T21:10:00Z",
       "related_news_urls": [
-        "https://simplywall.st/stocks/us/automobiles/nyse-hog/harley-davidson/news/harley-davidson-hog-shares-climbed-what-is-behind-the-fresh",
-        "https://www.investing.com/news/company-news/harley-davidson-stock-hits-52week-high-at-3113-usd-93CH-4988576",
-        "https://www.gurufocus.com/news/9159345/hog-maintained-by-wells-fargo-price-target-raised-to-2500"
+        "https://www.instyle.com/nicole-kidman-daughter-sunday-rose-pink-hair-halloween-costume-adela-12207386",
+        "https://people.com/sunday-rose-cheeky-nod-mom-nicole-kidman-halloween-costume-12207041",
+        "https://twaslnews1.twaslnews.com/7046371/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj6sAhohLFALV6ETZnuluQH_pDO7_hEvJTYH_NeFUF9qA528Sb0dfqDDg4Ekw",
-      "image_credit": "Simply Wall St",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdAcxZ9UpcT-p_bWSeG4SrU8tOGmU4lsU9Xx56uSehhyk5L5qE3DK1DYab2zE",
+      "image_credit": "InStyle",
       "news": [
         {
-          "url": "https://simplywall.st/stocks/us/automobiles/nyse-hog/harley-davidson/news/harley-davidson-hog-shares-climbed-what-is-behind-the-fresh",
-          "title": "Harley Davidson (HOG) Shares Climbed, What Is Behind The Fresh Attention?",
-          "publisher": "Simply Wall St",
+          "url": "https://www.instyle.com/nicole-kidman-daughter-sunday-rose-pink-hair-halloween-costume-adela-12207386",
+          "title": "Nicole Kidman’s Daughter Sunday Rose Debuts Halloween Hair Transformation",
+          "publisher": "InStyle",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj6sAhohLFALV6ETZnuluQH_pDO7_hEvJTYH_NeFUF9qA528Sb0dfqDDg4Ekw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdAcxZ9UpcT-p_bWSeG4SrU8tOGmU4lsU9Xx56uSehhyk5L5qE3DK1DYab2zE"
         },
         {
-          "url": "https://www.investing.com/news/company-news/harley-davidson-stock-hits-52week-high-at-3113-usd-93CH-4988576",
-          "title": "Harley Davidson stock hits 52-week high at 31.13 USD",
-          "publisher": "Investing.com",
+          "url": "https://people.com/sunday-rose-cheeky-nod-mom-nicole-kidman-halloween-costume-12207041",
+          "title": "Sunday Rose, 18, Makes Cheeky Nod to Mom Nicole Kidman with Viral 2026 Halloween Costume: ‘Babygirl in Control’",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSgbQgh9ie-94vxTz8jbiANNtpIInpfDkQbsr7qiOJymVGHt1kPV9TKyirFzM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7dpcEcEvUuslhThVMjSfoQOkLfDi6jnSJ0CSZ3tLS0vF578SHvusJIzIh9LA"
         },
         {
-          "url": "https://www.gurufocus.com/news/9159345/hog-maintained-by-wells-fargo-price-target-raised-to-2500",
-          "title": "HOG Maintained by Wells Fargo -- Price Target Raised to $25.00",
-          "publisher": "GuruFocus",
+          "url": "https://twaslnews1.twaslnews.com/7046371/",
+          "title": "Sunday Rose Kidman Urban Halloween Costume Spotlights Pink-Hair Tribute to Adéla",
+          "publisher": "شبكة تواصل الإخبارية",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqMoMoDp9U63TrkfJnXYthzxaTI-pnSatL-LFxbATR9m_xRP4C2ExprY6n38"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlDXDDTAocePhKmzL0STLixasOQw2uY22HhgvwCiPmv6RGfZkN56bnTmqw-8U"
         }
       ]
     }
