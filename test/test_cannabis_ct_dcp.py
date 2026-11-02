@@ -13,7 +13,7 @@ def db():
     c.executescript("""
     CREATE TABLE state_policy(state TEXT PRIMARY KEY,adult_use TEXT,source_url TEXT DEFAULT '',reviewed_at TEXT DEFAULT '',notes TEXT DEFAULT '');
     CREATE TABLE regulator_source_catalog(state TEXT PRIMARY KEY,agency TEXT,source_kind TEXT,source_url TEXT,verified_at TEXT,source_status TEXT,notes TEXT);
-    CREATE TABLE store_sources(id TEXT PRIMARY KEY,name TEXT,store TEXT,city TEXT,state TEXT,address TEXT,source_url TEXT,source_domain TEXT,source_name TEXT,verified_at TEXT,record_status TEXT,paid_sponsor INTEGER,license_status TEXT,official_source INTEGER,license_verified INTEGER,address_confirmed INTEGER,rights_cleared INTEGER,image_url TEXT,image_rights TEXT);
+    CREATE TABLE store_sources(id TEXT PRIMARY KEY,name TEXT,store TEXT,city TEXT,state TEXT,address TEXT,source_url TEXT,source_domain TEXT,source_name TEXT,verified_at TEXT,record_status TEXT,paid_sponsor INTEGER,license_status TEXT,official_source INTEGER,license_verified INTEGER,address_confirmed INTEGER,rights_cleared INTEGER,image_url TEXT,image_rights TEXT,updated_at TEXT DEFAULT CURRENT_TIMESTAMP);
     CREATE TABLE import_receipts(receipt_id TEXT PRIMARY KEY,state TEXT,city TEXT,source_url TEXT,inspected INTEGER,accepted INTEGER,rejected INTEGER);
     CREATE TABLE directory_jobs(job_id TEXT PRIMARY KEY,state TEXT,status TEXT,phase TEXT,records_added INTEGER DEFAULT 0,updated_at TEXT DEFAULT '');
     INSERT INTO state_policy(state,adult_use) VALUES('CT','unreviewed'),('IA','not_authorized');
@@ -69,6 +69,22 @@ class TestConnecticutDCP(unittest.TestCase):
         actual = {r[0] for r in c.execute('SELECT id FROM store_sources')}
         self.assertEqual(expected, actual)
         self.assertEqual(c.execute('SELECT COUNT(*) FROM regulator_source_catalog WHERE state="CT"').fetchone()[0], 1)
+
+    def test_official_groton_name_and_guarded_old_row_correction(self):
+        m = json.loads(MANIFEST.read_text())
+        groton = [r for r in m['records'] if r['license_number']=='AMHF.0008270']
+        self.assertEqual(len(groton), 1)
+        self.assertEqual(groton[0]['name'], 'CURALEAF GROTON LLC')
+        c = db()
+        c.executescript(SQL.read_text())
+        self.assertEqual(c.execute("SELECT name FROM store_sources WHERE id='ct-dcp:AMHF.0008270'").fetchone()[0], 'CURALEAF GROTON LLC')
+        c.execute("UPDATE store_sources SET name='CURALEAF GROTON INC',store='CURALEAF GROTON INC' WHERE id='ct-dcp:AMHF.0008270'")
+        before = c.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0]
+        correction = ROOT / 'workers/cannabis-directory-ct-dcp-groton-name-correction.sql'
+        for _ in range(2):
+            c.executescript(correction.read_text())
+        self.assertEqual(c.execute("SELECT name,store FROM store_sources WHERE id='ct-dcp:AMHF.0008270'").fetchone(), ('CURALEAF GROTON LLC','CURALEAF GROTON LLC'))
+        self.assertEqual(c.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0], before)
 
 if __name__ == '__main__':
     unittest.main()
