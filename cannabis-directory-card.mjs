@@ -130,7 +130,10 @@ if(root){
   quality.textContent='Unrated · no independent customer-experience evidence reviewed';
   const href=safeUrl(row.source_url);
   visit.hidden=!href;if(href)visit.href=href;else visit.removeAttribute('href');
-  maps.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(row.address||row.city+', '+row.state);
+  const streetAddress=typeof row.address==='string'?row.address.trim():'';
+  maps.hidden=!streetAddress;
+  if(streetAddress)maps.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(streetAddress+', '+row.city+', '+row.state);
+  else maps.removeAttribute('href');
   count.textContent=(index+1)+' / '+rows.length+(hasMore?' · more available':'');
   prev.disabled=index===0;next.disabled=index===rows.length-1&&!hasMore;
  }
