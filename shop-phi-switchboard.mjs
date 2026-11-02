@@ -171,10 +171,23 @@ if(typeof document!=='undefined'){
   navigation.append(prev,position,next,pause);
   grid.after(navigation);
   const exposure=Object.create(null),cache=new Map();
-  let seq=0,rotation=0,active=null,visiblePage=0,visibleCards=[];
+  let seq=0,rotation=0,active=null,visiblePage=0,visibleCards=[],notifiedChapter=false;
+  let pageTransition=0,fadeTimer=null;
   const reducedMotion=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches||false;
   let rotationPaused=reducedMotion;
-  function showPage(){
+  function showPage({fade=false}={}){
+   const generation=++pageTransition;
+   if(fade&&!reducedMotion&&!grid.hidden){
+    grid.classList.add('shopphi-is-fading');
+    clearTimeout(fadeTimer);
+    fadeTimer=setTimeout(()=>{
+     if(generation!==pageTransition)return;
+     grid.classList.remove('shopphi-is-fading');
+     showPage();
+    },260);
+    return;
+   }
+   grid.classList.remove('shopphi-is-fading');
    const start=visiblePage*2,total=visibleCards.length;
    let index=0;
    for(const card of [...before.children,...after.children]){
@@ -188,8 +201,8 @@ if(typeof document!=='undefined'){
    pause.textContent=rotationPaused?'Resume rotation':'Pause rotation';
    pause.setAttribute('aria-pressed',String(rotationPaused));
   }
-  prev.addEventListener('click',()=>{visiblePage=Math.max(0,visiblePage-1);showPage()});
-  next.addEventListener('click',()=>{visiblePage=Math.min(Math.floor((visibleCards.length-1)/2),visiblePage+1);showPage()});
+  prev.addEventListener('click',()=>{visiblePage=Math.max(0,visiblePage-1);showPage({fade:true})});
+  next.addEventListener('click',()=>{visiblePage=Math.min(Math.floor((visibleCards.length-1)/2),visiblePage+1);showPage({fade:true})});
   pause.addEventListener('click',()=>{
    rotationPaused=!rotationPaused;
    showPage();
@@ -198,14 +211,29 @@ if(typeof document!=='undefined'){
   // No sponsor is charged and no coins are minted for an automatic change.
   const rotateTimer=setInterval(()=>{
    if(!active||grid.hidden)return;
-   const bounds=grid.getBoundingClientRect();
-   const visible=bounds.bottom>0&&bounds.top<window.innerHeight;
-   if(!companionRotationAllowed({total:visibleCards.length,visible,pageHidden:document.hidden,
+   const displayed=[...before.children,...after.children].filter(node=>!node.hidden);
+   const visible=displayed.some(node=>{
+    const bounds=node.getBoundingClientRect();
+    return bounds.bottom>0&&bounds.top<window.innerHeight;
+   });
+   // A single verified offer may finish its chapter too; the older pure
+   // page-rotation helper still correctly returns false for 1–2 offers.
+   if(!companionRotationAllowed({total:Math.max(3,visibleCards.length),visible,
+    pageHidden:document.hidden,
     focused:grid.contains(document.activeElement)||navigation.contains(document.activeElement),
     shelfOpen:document.body.classList.contains('oracle-shelf-open'),
-    paused:rotationPaused,reducedMotion}))return;
-   visiblePage=nextCompanionPage(visiblePage,visibleCards.length);
-   showPage();
+    paused:rotationPaused,reducedMotion})||!visibleCards.length||contextFor(active).sensitive)return;
+   const lastPage=Math.ceil(visibleCards.length/2)-1;
+   if(visiblePage>=lastPage){
+    const chapter=chapterFor([active.title,active.description].join(' '));
+    if(!notifiedChapter&&visibleCards.some(c=>c.image)&&chapter){
+     notifiedChapter=true;
+     window.dispatchEvent(new CustomEvent('quantaphi:showcase-chapter-complete',
+      {detail:{id:active.id,chapter}}));
+    }
+    visiblePage=0;
+   }else visiblePage=nextCompanionPage(visiblePage,visibleCards.length);
+   showPage({fade:true});
   },18000);
   window.addEventListener('pagehide',()=>clearInterval(rotateTimer),{once:true});
   const span=(text,cls)=>{const el=document.createElement('span');el.className=cls;el.textContent=text;return el};
@@ -214,6 +242,8 @@ if(typeof document!=='undefined'){
    heading.textContent=housing?'Housing help · related resources':'Related source cards · ShopPhi';
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
+   grid.classList.toggle('shopphi-showcase-mode',!housing&&!lane.sensitive&&visible.some(c=>c.image)&&
+    ['cookout','movie-night','kitchen','family','tools','outdoors','coins','denim','grocery','shopping'].includes(lane.id));
    visiblePage=Math.min(visiblePage,Math.max(0,Math.ceil(visible.length/2)-1));
    if(!visible.length){
     // The original Oracle stage lives INSIDE grid. Never hide the hero merely
@@ -332,7 +362,7 @@ if(typeof document!=='undefined'){
   }
   async function update(detail){
    const revision=++seq;const changed=(detail?.id||null)!==(active?.id||null);
-   active=detail||null;if(changed)visiblePage=0;
+   active=detail||null;if(changed){visiblePage=0;notifiedChapter=false;}
    if(!active||document.body.classList.contains('oracle-shelf-open')){
     grid.hidden=true;heading.hidden=true;receipt.hidden=true;navigation.hidden=true;
     before.replaceChildren();after.replaceChildren();return;
