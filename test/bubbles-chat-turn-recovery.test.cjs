@@ -69,3 +69,19 @@ test('reasoning and preflight failures are tagged as failed assistant replies ra
  assert.match(reasoning,/messages\.push\(\{role:'assistant',text:message,failed:true\}\)/);
  assert.match(preflight,/messages\.push\(\{role:'assistant',text:message,failed:true\}\)/);
 });
+
+
+test('invalid calculation inputs and partial research cannot be reported as completed GPT work',()=>{
+ const main=source.slice(source.indexOf('const finalAnswer=describeBubblesToolOutcome'),source.indexOf('if(json.receipt?.tool===',source.indexOf('const finalAnswer=describeBubblesToolOutcome')+350));
+ assert.match(main,/\\['failed','blocked','invalid_input'\\]/);
+ assert.match(main,/json\.answerStatus==='partial'/);
+ assert.match(main,/if\(receiptFailed\)failedTurn=true/);
+});
+
+test('failed memory saves and failed public source reads carry explicit unsuccessful reply metadata',()=>{
+ const memory=source.slice(source.indexOf('if(rememberMatch){'),source.indexOf('const nativeDirective=',source.indexOf('if(rememberMatch){')));
+ const reader=source.slice(source.indexOf('if(!embedded&&(sourceReadRequested||publicPageReadRequested))'),source.indexOf('// Explicit code discovery is a read-only tool call',source.indexOf('if(!embedded&&(sourceReadRequested||publicPageReadRequested))'));
+ assert.match(memory,/memorySaved/);
+ assert.match(memory,/failed:true/);
+ assert.match(reader,/readVerified\?\{\}:\{failed:true\}/);
+});
