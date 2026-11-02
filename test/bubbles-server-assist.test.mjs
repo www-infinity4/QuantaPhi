@@ -169,3 +169,26 @@ test('unverified, credential-bearing or foreign source URLs cannot cross signed 
  assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid,receipt:{tool:'github.read_file',status:'partial',sourceReadVerified:true}}),null);
  assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid,receipt:{tool:'github.read_file',status:'complete',sourceReadVerified:false}}),null);
 });
+
+test('a duplicate signed server executor cannot cancel the in-flight GPT-to-Bubbles answer',async()=>{
+ const f=setup();let notifyStarted,release;
+ const started=new Promise(resolve=>{notifyStarted=resolve});
+ f.args.fetcher=async()=>{
+  notifyStarted();
+  await new Promise(resolve=>{release=resolve});
+  return Response.json({ok:true,output:'The verified answer arrived.',receipt:{tool:'oracle.chat',status:'complete'}});
+ };
+ const first=serverAssist({...f.args,body:{operation:'assist',text:'Check Bubbles reply transport'}}); 
+ await started;
+ const row=f.rows.get('chatgpt_assist_123_0');
+ assert.equal(row.status,'working');
+ // Two concurrent serverAssist calls can both observe server_pending before
+ // either claims the operation; a delayed second executor must never block the first.
+ await executeServerAssist({...f.args,id:'chatgpt_assist_123_0'});
+ assert.equal(row.status,'working','an already claimed request must not be changed to blocked');
+ release();
+ await first;
+ assert.equal(row.status,'complete');
+ assert.equal(JSON.parse(row.result).output,'The verified answer arrived.');
+ assert.equal((await serverAssist({...f.args,body:{operation:'result'}})).state,'complete');
+});

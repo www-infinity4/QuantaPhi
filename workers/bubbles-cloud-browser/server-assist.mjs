@@ -103,8 +103,13 @@ export function publicGithubSourceReceipt(data){
 export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.now()}){
  const row=await db.prepare("SELECT payload,status,expires_ms FROM bubbles_chatgpt_bridge WHERE id=? AND action='server_assist'").bind(id).first();
  if(!row||['complete','blocked'].includes(row.status))return;
- if(row.status==='working'||row.expires_ms<=now){
-  await db.prepare("UPDATE bubbles_chatgpt_bridge SET status=?,result=?,updated_ms=? WHERE id=? AND action='server_assist'").bind('blocked',JSON.stringify({ok:false,error:row.status==='working'?'execution_interrupted':'assist_result_expired'}),now,id).run();
+ // A concurrent signed retry can have seen server_pending before the
+ // first executor claimed it. "working" is evidence of an active claim, not
+ // proof of a crash; never cancel the valid first response from here.
+ if(row.status==='working')return;
+ if(row.expires_ms<=now){
+  await db.prepare("UPDATE bubbles_chatgpt_bridge SET status=?,result=?,updated_ms=? WHERE id=? AND action='server_assist' AND status='server_pending'")
+   .bind('blocked',JSON.stringify({ok:false,error:'assist_result_expired'}),now,id).run();
   return;
  }
  const claimed=await db.prepare("UPDATE bubbles_chatgpt_bridge SET status='working' WHERE id=? AND action='server_assist' AND status='server_pending'").bind(id).run();
