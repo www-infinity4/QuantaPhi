@@ -245,7 +245,7 @@ if(typeof document!=='undefined'){
    heading.textContent=housing?'Housing help · related resources':'Related source cards · ShopPhi';
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
-   grid.classList.toggle('shopphi-showcase-mode',!housing&&!lane.sensitive&&visible.length>0&&visible.slice(0,2).every(c=>c.image)&&
+   grid.classList.toggle('shopphi-showcase-mode',!housing&&!lane.sensitive&&visible.length>=2&&visible.slice(0,2).every(c=>c.image)&&
     ['cookout','movie-night','kitchen','family','tools','outdoors','coins','denim','grocery','shopping'].includes(lane.id));
    visiblePage=Math.min(visiblePage,Math.max(0,Math.ceil(visible.length/2)-1));
    if(!visible.length){
