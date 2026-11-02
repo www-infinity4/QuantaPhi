@@ -19,10 +19,20 @@ const directories=[
  detail:'Opens ChatGPT · sign-in may be required'},
  {id:'creator-plugins',kind:'directory',category:'Creator plugins',name:'Explore creator plugins',provider:'ChatGPT',
  headline:'Use creator-built tools',description:'Explore how plugins are discovered, installed and connected in ChatGPT. Use its Plugins directory for tools available to your account.',
- status:'external',isOfficialOpenAIModel:false,url:'https://learn.chatgpt.com/docs/plugins',cta:'How to find plugins',glyph:'◈',
+ status:'external',isOfficialOpenAIModel:false,url:'https://chatgpt.com/plugins',cta:'Browse creator plugins',glyph:'◈',
  detail:'Guidance from ChatGPT Learn · plugin installation stays in ChatGPT'}
 ];
-export const DISCOVERY_CARDS=Object.freeze([...source,...directories.map(x=>Object.freeze(x))]);
+const verifiedPluginExamples=[
+ {id:'consensus-plugin',kind:'verified-plugin',category:'Creator plugins',name:'Consensus',provider:'Consensus',
+  headline:'Explore scientific research',description:'Find and synthesize peer-reviewed studies through a ChatGPT plugin. Installation and connected accounts depend on your access.',
+  status:'verified-link',isOfficialOpenAIModel:false,url:'https://chatgpt.com/plugins/consensus',cta:'Use Consensus',glyph:'✦',
+  detail:'Official public plugin listing checked Nov 2026 · installs inside ChatGPT'},
+ {id:'data-analytics-plugin',kind:'verified-plugin',category:'Creator plugins',name:'Data Analytics',provider:'ChatGPT plugin listing',
+  headline:'Analyze product and business data',description:'A data-analysis plugin for business questions, root-cause research and evidence-backed reports. Access and connections depend on your account.',
+  status:'verified-link',isOfficialOpenAIModel:false,url:'https://chatgpt.com/plugins/Plugin_fc9843a6fb34819195d6c7802398a8a7',cta:'Use Data Analytics',glyph:'◈',
+  detail:'Official public plugin listing checked Nov 2026 · no linked data accessed here'}
+];
+export const DISCOVERY_CARDS=Object.freeze([...source,...directories,...verifiedPluginExamples].map(x=>Object.freeze(x)));
 const allowed=(value,kind)=>{
  try{
   const u=new URL(value);
