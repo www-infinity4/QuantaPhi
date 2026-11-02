@@ -26,7 +26,10 @@ function reviewMedia(m,sourceHost){
  if(!/\.(?:jpg|jpeg|png|webp)(?:$|\?)/i.test(u.href))return null;
  return u.href;
 }
-// Official license IDs can contain colons, dots and uppercase (e.g. NJ/IL).\n// Strictly disallow whitespace, slashes, CSS fragments and HTML metacharacters.\n// IDs are assigned via DOM APIs/getElementById, never interpolated into selectors.\nexport function directoryCardView(row,acknowledged){
+// Official license IDs can contain colons, dots and uppercase (e.g. NJ/IL).
+// Strictly disallow whitespace, slashes, CSS fragments and HTML metacharacters.
+// IDs are assigned via DOM APIs/getElementById, never interpolated into selectors.
+export function directoryCardView(row,acknowledged){
  if(acknowledged!==true||!row||row.sponsored!==false||
   !/^[A-Za-z0-9][A-Za-z0-9:._-]{2,109}$/.test(String(row.id||''))||
   !/^[A-Z]{2}$/.test(String(row.state||''))||!str(row.name)||!str(row.city))return null;
