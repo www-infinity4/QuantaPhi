@@ -410,7 +410,11 @@ export default {
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
-  if (((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || route.repo === 'Alien-Radio' || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || route.repo === 'StarQuest' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && (textual || shareArtwork) && readRequest) {
+  // The public cannabis policy is source-only; GitHub raw can lag the published Pages
+  // origin even after a merge. Prefer Pages for this ONE neutral module only;
+  // existing raw fallback remains if Pages is unavailable. Never alter wallet/auth paths.
+  const preferPagesForCannabisPolicy = route.repo === 'QuantaPhi' && route.sourcePath === '/cannabis-directory-policy.mjs';
+  if (!preferPagesForCannabisPolicy && ((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || route.repo === 'Alien-Radio' || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || route.repo === 'StarQuest' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && (textual || shareArtwork) && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
