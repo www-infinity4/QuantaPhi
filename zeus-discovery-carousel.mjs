@@ -53,6 +53,8 @@ if(root){
    slide.append(art,text);
    track.append(slide);
   }
+  // Switching tabs must not keep the previous collection's horizontal offset.
+  track.scrollTo({left:0,behavior:'instant'});
   index=0;
   root.querySelectorAll('[data-zeus-tab]').forEach(b=>{const active=b.dataset.zeusTab===tab;
    b.setAttribute('aria-pressed',String(active));b.classList.toggle('is-current',active)});
@@ -61,6 +63,10 @@ if(root){
  }
  function chooseTab(next){if(!['all','infinity','creator'].includes(next))return;tab=next;render();}
  root.querySelectorAll('[data-zeus-tab]').forEach(button=>button.addEventListener('click',()=>chooseTab(button.dataset.zeusTab)));
+ // A focused creator link must not be moved out from under the keyboard.
+ root.addEventListener('focusin',event=>{
+  if(track.contains(event.target)){playing=false;syncClock()}
+ });
  back?.addEventListener('click',()=>advance(-1,true));
  forward?.addEventListener('click',()=>advance(1,true));
  play?.addEventListener('click',()=>{playing=!playing;syncClock()});
