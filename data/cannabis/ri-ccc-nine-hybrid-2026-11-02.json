@@ -1,0 +1,93 @@
+{
+  "source": "Rhode Island Cannabis Control Commission",
+  "source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers",
+  "regulator_page_updated": "2026-09-09",
+  "queried_at": "2026-11-02",
+  "scope": "Nine listed hybrid retail compassion centers; current operation, renewal and suspension status unverified",
+  "license_verified": false,
+  "advertising_approved": false,
+  "media_rights": false,
+  "records": [
+    {
+      "license_number": "MMP CC 001",
+      "name": "Thomas C. Slater Compassion Center",
+      "city": "Providence",
+      "state": "RI",
+      "address": "1 Corliss Street, Providence, RI 02904",
+      "website": "https://slatercenter.com/",
+      "official_source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+    },
+    {
+      "license_number": "MMP CC 002",
+      "name": "Newport Cannabis Co.",
+      "city": "Portsmouth",
+      "state": "RI",
+      "address": "1637 West Main Road, Portsmouth, RI 02871",
+      "website": "https://newportcanna.com/",
+      "official_source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+    },
+    {
+      "license_number": "MMP CC 003",
+      "name": "RISE Warwick",
+      "city": "Warwick",
+      "state": "RI",
+      "address": "444 Quaker Lane, Warwick, RI 02886",
+      "website": "https://risecannabis.com/dispensaries/rhode-island/warwick/",
+      "official_source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+    },
+    {
+      "license_number": "MMP CC 004",
+      "name": "Sweetspot Dispensary",
+      "city": "Exeter",
+      "state": "RI",
+      "address": "560 South County Trail, Bldg. B, Exeter, RI 02822",
+      "website": "https://sweetspotfarms.com/",
+      "official_source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+    },
+    {
+      "license_number": "MMP CC 005",
+      "name": "Aura of Rhode Island",
+      "city": "Central Falls",
+      "state": "RI",
+      "address": "1136 Lonsdale Avenue, Central Falls, RI 02806",
+      "website": "https://auracannaco.com/central-falls-ri-dispensary/",
+      "official_source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+    },
+    {
+      "license_number": "MMP CC 006",
+      "name": "Mother Earth Wellness",
+      "city": "Pawtucket",
+      "state": "RI",
+      "address": "125 Esten Avenue, Pawtucket, RI 02860",
+      "website": "https://motherearthri.com/",
+      "official_source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+    },
+    {
+      "license_number": "MMP CC 007",
+      "name": "Solar Cannabis Co.",
+      "city": "Warwick",
+      "state": "RI",
+      "address": "65 Meadow Street, Unit A, Warwick, RI 02886",
+      "website": "https://solarthera.com/",
+      "official_source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+    },
+    {
+      "license_number": "MMP CC 008",
+      "name": "Green Wave CC",
+      "city": "Foster",
+      "state": "RI",
+      "address": "187 Danielson Pike, Foster, RI 02825",
+      "website": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers",
+      "official_source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+    },
+    {
+      "license_number": "MMP CC 009",
+      "name": "Reef Wellness",
+      "city": "Woonsocket",
+      "state": "RI",
+      "address": "2000 Diamond Hill Road, Woonsocket, RI 02895",
+      "website": "https://www.reefwellness.com/",
+      "official_source_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+    }
+  ]
+}
