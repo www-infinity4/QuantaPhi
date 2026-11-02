@@ -183,7 +183,7 @@ function registerSourceCards(){
   updateTabs();predict();
   // Honor deep links and visitor interaction. Before interaction, newly loaded
   // accepted brands receive their requested priority over ordinary brands.
-  const requested=entries.find(e=>(e.id===spotlightRequested||e.feedId===spotlightRequested)&&departmentMatches(e));
+  const requested=entries.find(e=>e.id===spotlightRequested&&departmentMatches(e)||e.feedId===spotlightRequested&&departmentMatches(e));
   if(!expanded&&!viewerTouched&&requested&&available(requested)&&departmentMatches(requested))show(requested,false);
   else if(!active&&!expanded)start();
   // A newly loaded brand must not steal focus from an active website card.
@@ -728,7 +728,7 @@ function chooseOpening(){
  return pool[openingCursor%pool.length]||ready[0];
 }
 function start(){if(!active&&!expanded){
- const request=entries.find(x=>(x.id===spotlightRequested||x.feedId===spotlightRequested)&&departmentMatches(x));
+ const request=entries.find(x=>x.id===spotlightRequested&&departmentMatches(x)||x.feedId===spotlightRequested&&departmentMatches(x));
  const tv=entries.find(livePriority);
  if(!spotlightRequested&&tv&&!available(tv)){now.textContent='Infinity TV · Loading channels…';status.textContent='Loading the game-night TV viewer…';return;}
  // Keep an explicitly requested original card in front of generic rotation.
