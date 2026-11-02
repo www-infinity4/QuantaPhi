@@ -37,3 +37,19 @@ test('reduced motion starts paused, selection and keyboard do not navigate page 
  await page.getByRole('button',{name:'Infinity editions'}).click();
  await expect(page.locator('#zeusDiscoverStage .zdc-slide')).toHaveCount(4);
 });
+
+test('tab changes reset the visible slide to the first card, not a stale scroll offset',async({page})=>{
+ await page.goto(base+'/test/fixtures/zeus-discovery.html',{waitUntil:'domcontentloaded'});
+ await page.getByRole('button',{name:'Next Zeus discovery card'}).click();
+ await expect(page.locator('#zeusDiscoverStatus')).toContainText('2 of 10');
+ await page.getByRole('button',{name:'Creator GPTs & plugins'}).click();
+ await expect(page.locator('#zeusDiscoverStatus')).toContainText('1 of 6');
+ const offset=await page.locator('#zeusDiscoverStage').evaluate(el=>el.scrollLeft);
+ expect(offset).toBe(0);
+});
+test('keyboard focus on a creator CTA pauses automatic rotation',async({page})=>{
+ await page.goto(base+'/test/fixtures/zeus-discovery.html',{waitUntil:'domcontentloaded'});
+ await page.locator('#zeusDiscoverStage .zdc-cta').first().focus();
+ await expect(page.locator('#zeusDiscoverPlay')).toHaveText('Watch');
+ await expect(page.locator('#zeusDiscoverPlay')).toHaveAttribute('aria-pressed','false');
+});
