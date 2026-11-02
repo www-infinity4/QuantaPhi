@@ -25,6 +25,7 @@ import android.app.AlertDialog;
 public final class MainActivity extends Activity {
     private static final int OVERLAY_REQUEST = 61;
     private static final int TERMUX_PERMISSION_REQUEST = 68;
+    private String pendingTermuxKind = "python";
     private static final int PERMISSIONS_REQUEST = 62;
     private TextView state;
     private final android.os.Handler ui = new android.os.Handler(android.os.Looper.getMainLooper());
@@ -674,9 +675,13 @@ public final class MainActivity extends Activity {
             getIntent().setData(null);
             if (state != null) state.setText("Welcome back to Bubbles. Your secure sign-in is finishing; the account status will update when verified.");
         }
-        if (getIntent().getBooleanExtra("termux_python_probe", false)) {
+        String probeKind = getIntent().getStringExtra("termux_probe_kind");
+        if ("shell".equals(probeKind) || "python".equals(probeKind)
+                || getIntent().getBooleanExtra("termux_python_probe", false)) {
+            pendingTermuxKind = "shell".equals(probeKind) ? "shell" : "python";
+            getIntent().removeExtra("termux_probe_kind");
             getIntent().removeExtra("termux_python_probe");
-            ui.post(this::offerTermuxPythonProbe);
+            ui.post(this::offerTermuxProbe);
         }
         // Only the user's explicit first-party Bubbles button can request this flow.
         // Tokens are encrypted in Android Keystore and never passed to WebView.
@@ -745,9 +750,15 @@ public final class MainActivity extends Activity {
     @Override protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
-        if (intent != null && intent.getBooleanExtra("termux_python_probe", false)) {
-            intent.removeExtra("termux_python_probe");
-            ui.post(this::offerTermuxPythonProbe);
+        if (intent != null) {
+            String probeKind = intent.getStringExtra("termux_probe_kind");
+            if ("shell".equals(probeKind) || "python".equals(probeKind)
+                    || intent.getBooleanExtra("termux_python_probe", false)) {
+                pendingTermuxKind = "shell".equals(probeKind) ? "shell" : "python";
+                intent.removeExtra("termux_probe_kind");
+                intent.removeExtra("termux_python_probe");
+                ui.post(this::offerTermuxProbe);
+            }
         }
         // A notification tap can reach an ALREADY RESUMED singleTop activity.
         // onResume is not guaranteed to run a second time in that case, so
@@ -773,7 +784,7 @@ public final class MainActivity extends Activity {
             ui.post(() -> handleVoiceCapture(action, seconds, duration));
         }
     }
-    private void offerTermuxPythonProbe() {
+    private void offerTermuxProbe() {
         if (state == null) return;
         if (!TermuxProbe.installed(this)) {
             state.setText("Termux is not installed or isn't visible. No test was run.");
@@ -787,11 +798,15 @@ public final class MainActivity extends Activity {
             }
             return;
         }
+        final String kind = pendingTermuxKind;
+        boolean shell = "shell".equals(kind);
         new AlertDialog.Builder(this)
-            .setTitle("Test Python with Termux")
-            .setMessage("Run a fixed Python 2 + 2 diagnostic in the real Termux app? No packages will be installed. Below 16 MiB free, no test file is created. Otherwise the one temporary test directory is removed after execution. Python, projects and credentials stay intact.")
-            .setNegativeButton("Cancel", (dialog, which) -> { TermuxProbe.cancel(this); state.setText("Python test cancelled."); })
-            .setPositiveButton("Test Python", (dialog, which) -> state.setText(TermuxProbe.run(this)))
+            .setTitle(shell ? "Check Termux shell" : "Test Python with Termux")
+            .setMessage(shell
+                ? "Run a fixed sh built-in printf diagnostic in the installed Termux app? No Python, temp files or packages are required. No installation or other commands will run."
+                : "Run a fixed Python 2 + 2 diagnostic in the real Termux app? No packages will be installed. Below 16 MiB free, no test file is created. Otherwise the one temporary test directory is removed after execution. Python, projects and credentials stay intact.")
+            .setNegativeButton("Cancel", (dialog, which) -> { TermuxProbe.cancel(this, kind); state.setText("Termux check cancelled. Nothing was executed."); })
+            .setPositiveButton(shell ? "Check Termux" : "Test Python", (dialog, which) -> state.setText(TermuxProbe.run(this, kind)))
             .show();
     }
     private void openBubblesDocumentPicker(boolean historyJson) {
@@ -1019,7 +1034,7 @@ public final class MainActivity extends Activity {
     @Override public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] results) {
         super.onRequestPermissionsResult(requestCode, permissions, results);
         if (requestCode == TERMUX_PERMISSION_REQUEST) {
-            if (TermuxProbe.permitted(this)) ui.post(this::offerTermuxPythonProbe);
+            if (TermuxProbe.permitted(this)) ui.post(this::offerTermuxProbe);
             else state.setText("Termux command permission not granted. Nothing was run. Check Bubbles Additional permissions.");
             return;
         }
