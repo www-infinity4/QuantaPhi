@@ -34,7 +34,9 @@ test('Following keeps only opted-in sources and shelf mode reveals restored card
  await fixtures(page);await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#oracleCardStage [data-source-id="pcgs"]')).toBeVisible();
  await page.locator('#oracleCardFollow').click();await page.getByRole('tab',{name:'Following',exact:true}).click();
- await expect(page.locator('#oracleCardInventory')).toHaveText('Choose a card · 1 available');
+ await expect(page.locator('#oracleCardInventory')).toHaveText('Choose a real interactive card');
+ await expect(page.locator('#oracleCardChooser option[value="source-pcgs"]')).toHaveCount(1);
+ await expect(page.locator('#oracleCardChooser option[value="source-heritage"]')).toHaveCount(0);
  await page.getByRole('tab',{name:'Public',exact:true}).click();await page.locator('#oracleCardScroll').click();
  await expect(page.locator('#premiumSourceCards')).toBeVisible();await expect(page.locator('#siteQuickCards')).toBeVisible();
 });
