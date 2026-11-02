@@ -53,6 +53,16 @@ export function selectContinuation(tickets,{maxSlots=8,now=Date.now()}={}){
    jobStage(job,ticket.context.color_jobs,now)==='dispatch_eligible').map(job=>({ticketId:ticket.id,jobId:job.id,repository:ticket.repository,stage:'dispatch_eligible'})))[0]||null;
  return {scanned:rows.length,slots,counts,target,maximum:bounded(maxSlots),dispatchBudget:1};
 }
+
+// The UI may reflect a signed dispatch acknowledgement, never completion.
+// Events are read-only observations, not authority, payment or wallet credits.
+export function continuationActivity(result){
+ const target=result?.selected?.target;
+ if(!result?.ok||result?.dispatch?.status!=='queued_for_runner'||!target)return null;
+ if(!ID.test(target.ticketId||'')||!JOB.test(target.jobId||'')||!REPO.test(target.repository||''))return null;
+ return {type:'job',repository:target.repository,status:'queued'};
+}
+
 export async function continueSavedWork({fetcher,ownerHeaders,base,now=Date.now(),maxSlots=8}){
  if(typeof fetcher!=='function'||typeof ownerHeaders!=='function'||!/^https:\/\//.test(base||''))throw Error('continuation_adapter_invalid');
  const headers=await ownerHeaders();
