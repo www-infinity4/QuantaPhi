@@ -360,7 +360,8 @@ if(typeof document!=='undefined'){
   function detailFromStage(){
    if(!stage.dataset.switchboardId)return null;
    return {id:stage.dataset.switchboardId,title:stage.dataset.switchboardTitle,
-    category:stage.dataset.switchboardCategory,tab:stage.dataset.switchboardTab};
+    category:stage.dataset.switchboardCategory,tab:stage.dataset.switchboardTab,
+    description:stage.dataset.switchboardDescription||''};
   }
   async function update(detail){
    const revision=++seq;const changed=(detail?.id||null)!==(active?.id||null);
