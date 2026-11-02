@@ -284,3 +284,8 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcm-links{display:flex;flex-wrap:wrap;gap:6px}
 .qcm-source-link{font:700 12px/1.4 system-ui,sans-serif;color:#23547a;text-decoration:underline;padding:7px 3px;overflow-wrap:anywhere}
 @media(max-width:380px){.qcm-form .qcm-search{flex:1 1 100%}.qcm-filter{flex:1 0 auto}.qcm-step{padding:9px 11px}.qcm-panel{padding:12px}}
+
+.qcx-ebay-direct{min-width:0;max-width:100%;border:1px solid #d9dfe4;border-radius:12px;background:#fff;overflow:hidden}
+.qcx-ebay-direct>summary{list-style:revert;cursor:pointer;min-height:46px;display:list-item;margin:0 13px;padding:12px 4px;color:#273f50;font:750 13px/1.45 system-ui,sans-serif}
+.qcx-ebay-direct[open]{padding-bottom:10px}
+.qcx-ebay-direct .qcx-tool{margin:0 10px}
