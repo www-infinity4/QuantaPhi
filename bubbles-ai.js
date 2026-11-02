@@ -2350,11 +2350,15 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   let reply,spokenResult='Blocked.';
   try{
    if(embedded)throw Error('verified_owner_session_required');
-   const module=await import('/bubbles-star-continuation.mjs?v=20261025-star1');
+   const module=await import('/bubbles-star-continuation.mjs?v=20261101-star-proof1');
    const result=await module.continueSavedWork({
     fetcher:bubblesFetch,ownerHeaders:verifiedOwnerHeaders,base:BRAIN,maxSlots:8
    });
    reply=module.continuationReply(result);
+   // Only a signed accepted dispatch may mark Build queued. No GitHub write or
+   // verified deployment is inferred from scheduling a runner.
+   const activity=module.continuationActivity(result);
+   if(activity&&typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:activity}));
    spokenResult=result.dispatch?.status==='queued_for_runner'?'Runner requested.':
     result.dispatch?.status==='job_not_dispatchable'?'Blocked.':
     result.selected?.target?'Checking runner.':'No eligible job.';
@@ -2834,9 +2838,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }
  // Clock and alarm requests stay in Bubbles' normal conversation. Owner access
  // is checked by Brain on every call; a schedule NEVER starts a new repo write.
- if(!embedded&&/\\b(?:schedule|scheduled|scheduler|alarm|clock)\\b/i.test(request)){
+ if(!embedded&&/\b(?:schedule|scheduled|scheduler|alarms?|clock)\b|\bclock_[0-9a-f-]{36}\b/i.test(request)){
   try{
-   const module=await import('/bubbles-cloud-clock.mjs?v=20261020-clock1');
+   const module=await import('/bubbles-cloud-clock.mjs?v=20261101-voice-clock-fix1');
    const clockIntent=module.parseClockIntent(request);
    if(clockIntent){
     busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
