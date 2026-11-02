@@ -4,13 +4,14 @@
  * No wallet, Quants, inferred interests or browsing telemetry are read. */
 import {eligibleCreative,chooseNextCreative} from './restricted-ad-policy.mjs';
 import {PUBLIC_21_SOURCES,eligiblePublisher,selectPublisher} from './restricted-source-directory.mjs?v=20261101-banner1';
+import {ADULT_LIFESTYLE_KITS,sourcesForKit} from './adult-lifestyle-catalog.mjs?v=20261101-kits1';
 const root=document.getElementById('infinityAdultContentCard');
 if(root){
  const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n};
  root.classList.add('rac-card');root.dataset.personalization='disabled';
  const head=el('div','rac-head'),kicker=el('small','rac-kicker','INFINITY® · CONTENT PREFERENCES'),
-   heading=el('h2','rac-heading','21+ content settings'),
-   intro=el('p','rac-intro','Browse original 21+ websites after acknowledging your age. Sponsored product ads are separate and require approved verification and campaigns.'),
+   heading=el('h2','rac-heading','21+ lifestyle · curated kits'),
+   intro=el('p','rac-intro','Explore original publishers and plan date nights, room parties or Amsterdam outings in one rotating card. Independent source links are not paid ads, combined checkout or a promise of shipping savings.'),
    message=el('p','rac-status','Sponsored cannabis advertisements are not active.');
  message.setAttribute('role','status');message.setAttribute('aria-live','polite');
  head.append(kicker,heading);root.append(head,intro);
@@ -32,12 +33,39 @@ if(root){
  const publisherNext=el('button','rac-button','Next website ›');
  const publisherPause=el('button','rac-button','Pause');
  publisherNext.type=publisherPause.type='button';publisherControls.append(publisherPause,publisherNext);
- const publisherNote=el('p','rac-note','You are opening the publisher’s real website. Any sign-in, location or additional age check happens there. QuantaPhi does not reproduce a retailer’s live deals or claim sponsorship.');
- publisher.append(publisherHead,publisherArt,publisherDesc,publisherLink,publisherControls,publisherNote);
+ const publisherNote=el('p','rac-note','You are opening each publisher’s original website. Any merchant age check, prescription review, purchase, booking or delivery stays with that provider. No live pricing, stock, licensed ads or consolidated freight is implied.');
+ const kitBar=el('div','rac-kitbar'),kitLabel=el('label','rac-kit-label','Choose a purpose-built kit');
+ const kitSelect=el('select','rac-kit-select');
+ const kitSelectId='rac-kit-select';kitSelect.id=kitSelectId;kitLabel.htmlFor=kitSelectId;
+ for(const kit of ADULT_LIFESTYLE_KITS){
+  const option=el('option','',kit.title);option.value=kit.id;kitSelect.append(option);
+ }
+ const cannabisOption=el('option','','Cannabis publisher directory');cannabisOption.value='cannabis-sources';kitSelect.append(cannabisOption);
+ const kitNext=el('button','rac-button','Next kit ›');kitNext.type='button';
+ const kitDesc=el('p','rac-kit-desc'),kitLinks=el('div','rac-kit-links');
+ kitBar.append(kitLabel,kitSelect,kitNext);
+ publisher.append(publisherHead,kitBar,kitDesc,kitLinks,publisherArt,publisherDesc,publisherLink,publisherControls,publisherNote);
  root.append(browse,closeBrowse,browseHint,publisher,message);
  let acknowledged=false,publisherLast='',publisherSeen=[],publisherPaused=false;
+ let selectedKitId=ADULT_LIFESTYLE_KITS[0].id;
+ function activeKitSources(){return selectedKitId==='cannabis-sources'?PUBLIC_21_SOURCES:sourcesForKit(selectedKitId)}
+ function paintKit(){
+  if(!acknowledged)return;
+  const kit=ADULT_LIFESTYLE_KITS.find(x=>x.id===selectedKitId);
+  kitDesc.textContent=kit?kit.description:'Independent original cannabis publisher references only. Not an advertisement or product checkout.';
+  kitLinks.replaceChildren();
+  for(const row of activeKitSources().slice(0,6)){
+   if(!eligiblePublisher(row,true))continue;
+   const link=el('a','rac-kit-link',row.title);
+   link.href=row.url;link.target='_blank';link.rel='noopener noreferrer';
+   link.setAttribute('aria-label','Open original website for '+row.title);
+   kitLinks.append(link);
+  }
+  publisherLast='';publisherSeen=[];
+  paintPublisher();
+ }
  function paintPublisher(){
-  const sources=PUBLIC_21_SOURCES.map(x=>eligiblePublisher(x,acknowledged)).filter(Boolean);
+  const sources=activeKitSources().map(x=>eligiblePublisher(x,acknowledged)).filter(Boolean);
   const item=selectPublisher(sources,publisherLast,publisherSeen);if(!item)return;
   if(publisherSeen.length>=sources.length)publisherSeen=[];
   publisherLast=item.id;publisherSeen.push(item.id);
@@ -47,11 +75,17 @@ if(root){
  }
  browse.addEventListener('click',()=>{
   acknowledged=true;publisherLast='';publisherSeen=[];browse.hidden=true;closeBrowse.hidden=false;
-  paintPublisher();
+  kitSelect.value=selectedKitId;paintKit();
+ });
+ kitSelect.addEventListener('change',()=>{selectedKitId=kitSelect.value;paintKit()});
+ kitNext.addEventListener('click',()=>{
+  const ids=[...ADULT_LIFESTYLE_KITS.map(x=>x.id),'cannabis-sources'];
+  selectedKitId=ids[(ids.indexOf(selectedKitId)+1)%ids.length];
+  kitSelect.value=selectedKitId;paintKit();
  });
  closeBrowse.addEventListener('click',()=>{
   acknowledged=false;publisherLast='';publisherSeen=[];publisher.hidden=true;
-  publisherLink.removeAttribute('href');publisherName.textContent='';publisherDesc.textContent='';
+  publisherLink.removeAttribute('href');publisherName.textContent='';publisherDesc.textContent='';kitLinks.replaceChildren();
   browse.hidden=false;closeBrowse.hidden=true;
  });
  publisherNext.addEventListener('click',paintPublisher);

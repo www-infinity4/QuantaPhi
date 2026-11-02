@@ -38,3 +38,15 @@
 .rac-publisher-open{display:block;padding:12px 15px;min-height:45px;text-align:center;border-radius:12px;color:#fff!important;background:#214b65;text-decoration:none;font-weight:750}
 .rac-publisher-open:focus-visible{outline:3px solid #77abc9;outline-offset:2px}
 .rac-publisher .rac-actions{margin-top:10px}
+
+/* One purpose-built kit shows several independent source links without recreating their ads. */
+.rac-kitbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:5px 0 10px}
+.rac-kit-label{font-size:13px;font-weight:700;color:#394a55;flex-basis:100%}
+#infinityAdultContentCard .rac-kit-select{min-height:46px;min-width:0;flex:1 1 200px;padding:8px 12px;color:#253847;background:#fff;border:1px solid #aab8c2;border-radius:11px;font:inherit;font-size:14px}
+#infinityAdultContentCard .rac-kit-select:focus-visible{outline:3px solid #77abc9;outline-offset:2px}
+#infinityAdultContentCard .rac-kitbar .rac-button{flex:0 0 auto}
+.rac-kit-desc{margin:4px 0 10px;font-size:13px;line-height:1.45;color:#475a67}
+.rac-kit-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-bottom:12px}
+.rac-kit-link{display:flex;align-items:center;justify-content:center;padding:9px;min-height:48px;border-radius:11px;background:#f5f7f8;color:#223b4d!important;border:1px solid #d9dfe4;text-decoration:none;text-align:center;font-size:13px;font-weight:700;overflow-wrap:anywhere}
+.rac-kit-link:focus-visible{outline:3px solid #77abc9;outline-offset:2px}
+@media(max-width:390px){.rac-kit-links{grid-template-columns:1fr}#infinityAdultContentCard .rac-kitbar .rac-button{width:100%}}

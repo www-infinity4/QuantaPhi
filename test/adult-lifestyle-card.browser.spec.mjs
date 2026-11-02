@@ -1,0 +1,28 @@
+import {test,expect} from '@playwright/test';
+const base='http://127.0.0.1:8799';
+test.use({viewport:{width:360,height:800}});
+test('21+ lifestyle Quick Card gates publisher links and rotates multi-source kits inside one card',async({page})=>{
+ await page.goto(base+'/?card=infinityAdultContentCard',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage #infinityAdultContentCard');
+ await expect(card).toBeVisible({timeout:20000});
+ const publisher=card.locator('.rac-publisher');
+ await expect(publisher).toBeHidden();
+ await expect(card.locator('.rac-kit-link')).toHaveCount(0);
+ await card.getByRole('button',{name:'I am 21+ · Browse original websites'}).click();
+ await expect(publisher).toBeVisible();
+ await expect(card.locator('.rac-kit-link')).toHaveCount(4);
+ await expect(card.locator('.rac-publisher-name')).toHaveText("Victoria's Secret");
+ await card.locator('.rac-kit-select').selectOption('amsterdam-after-dark');
+ await expect(card.locator('.rac-publisher-name')).toHaveText('De Wallen · Amsterdam');
+ await expect(card.locator('.rac-kit-link')).toHaveCount(4);
+ await expect(card.locator('.rac-kit-link').first()).toHaveAttribute('href',/iamsterdam\.com/);
+ await card.getByRole('button',{name:'Next kit ›'}).click();
+ await expect(card.locator('.rac-kit-select')).toHaveValue('room-party');
+ await expect(card.locator('.rac-publisher-name')).toHaveText('Philips Hue');
+ await card.getByRole('button',{name:'Pause',exact:true}).click();
+ await expect(card.getByRole('button',{name:'Resume',exact:true})).toBeVisible();
+ await card.getByRole('button',{name:'Close 21+ websites'}).click();
+ await expect(publisher).toBeHidden();
+ await expect(card.locator('.rac-kit-link')).toHaveCount(0);
+ await expect(card.getByRole('button',{name:'I am 21+ · Browse original websites'})).toBeVisible();
+});
