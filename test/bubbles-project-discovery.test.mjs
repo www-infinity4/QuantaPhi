@@ -128,3 +128,45 @@ test('card movement resolves named and follow-up targets without making question
  for(const request of ['Do not move the Gary Cardone card','Why move the Gary Cardone card?',
   'Explain how to place Gary Cardone in the carousel'])assert.equal(cardWorkTargetFor(request,history),null,request);
 });
+
+
+test('Cardonay resolves Gary Cardone only for a CURRENT explicit request, not a stale repair',()=>{
+ assert.equal(cardWorkTargetFor('Please fix Cardonay')?.id,'church-of-i-am');
+ assert.equal(cardWorkTargetFor('Check Cardonay new broken button')?.id,undefined,'check is not a write command');
+ assert.equal(cardWorkTargetFor('Do not fix Cardonay again'),null);
+ const history=[{role:'user',text:'Fix Gary Cardone carousel; it is broken'},
+   {role:'user',text:'We already fixed the Cardone card. Stop reopening it.'}];
+ assert.equal(cardWorkTargetFor('Fix that card',history),null,'resolved work must stop deictic replay');
+ const stillCurrent=[{role:'user',text:'The Walmart card navigation is broken now'}];
+ assert.equal(cardWorkTargetFor('Fix that card',stillCurrent)?.id,'walmart-shopping');
+});
+test('Cardone closure context filters stale complaints from unrelated owner work without deleting real history',async()=>{
+ const {curateOwnerTaskContext}=await import('../bubbles-task-context.mjs');
+ const prior=[
+  {role:'user',text:'Cardonay card is broken. Repair it.'},
+  {role:'assistant',text:'Old Cardone repair was urgent.'},
+  {role:'user',text:'Please fix the microphone in Bubbles'}];
+ const related=[{role:'user',text:'Cardone card failed yesterday'}, {role:'user',text:'Bubbles Android mic fails today'}];
+ const unrelated=curateOwnerTaskContext('Fix my microphone',{related,recent:prior,indexedHistory:'Cardonay broken\nMicrophone issue in APK'});
+ assert.equal(unrelated.related.length,1);
+ assert.equal(unrelated.recent.length,1);
+ assert.doesNotMatch(unrelated.indexedHistory,/cardonay/i);
+ assert.match(unrelated.indexedHistory,/Microphone issue/);
+ assert.equal(unrelated.note,'');
+ const current=curateOwnerTaskContext('The Cardonay card has a new missing button',{related,recent:prior,indexedHistory:'Old Cardone discussion'});
+ assert.equal(current.related.length,2);
+ assert.match(current.note,/merged.*#964.*#1035.*#1079/i);
+ assert.match(current.note,/current.*evidence/i);
+ const summary=curateOwnerTaskContext('How is Bubbles doing?',{related:[],recent:[{role:'user',text:'I am unhappy with earlier Cardone repairs'}]});
+ assert.equal(summary.recent.length,0);
+ assert.deepEqual(prior[0],{role:'user',text:'Cardonay card is broken. Repair it.'},'no destructive history mutation');
+});
+test('Bubbles owner prompts use curated continuity and public embeds keep their own isolated conversations',()=>{
+ const js=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(js,/curateOwnerTaskContext/);
+ assert.match(js,/continuity\.related/);
+ assert.match(js,/continuity\.recent/);
+ assert.match(js,/continuity\.indexedHistory/);
+ assert.match(js,/continuity\.note/);
+ assert.match(js,/embedded\|\|!ownerReady/);
+});
