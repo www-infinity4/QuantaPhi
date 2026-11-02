@@ -1,4 +1,5 @@
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261031-heritage-signin1';
+import {attractionQuickCardRoute} from './attractions-card-routing.mjs';
 /* One scalable attractions directory Quick Card; no thousands of DOM tiles. */
 const API='https://quantaphi-attractions-directory.marvaseater.workers.dev';
 const el=(tag,cls,value)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(value!==undefined)node.textContent=value;return node};
@@ -50,9 +51,10 @@ function mount(){
   maps.searchParams.set('query',[item.name,item.city,item.state].filter(Boolean).join(', '));
   link(btns,'Directions',maps.href);
   link(btns,'Source & provenance',item.source_url);
-  // Only seeded cards that actually exist get a live Quick Card deep link.
-  if(/^curated:colorado-[a-z0-9-]+$/.test(item.id)){
-   const a=el('a','ad-own-card','Open full Infinity Quick Card');a.href='/?card='+encodeURIComponent(item.id.slice('curated:'.length));btns.append(a);
+  // A curated seed is not necessarily a mounted Oracle card.
+  const verifiedCardRoute=attractionQuickCardRoute(item.id);
+  if(verifiedCardRoute){
+   const a=el('a','ad-own-card','Open full Infinity Quick Card');a.href=verifiedCardRoute;btns.append(a);
   }else{
    // Public visitors cannot submit to the owner-only Bubbles composer.
    // Provide a visible, copyable brief instead of claiming a job was queued.
