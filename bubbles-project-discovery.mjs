@@ -23,7 +23,7 @@ export function relevantProjectViews(request,storage=globalThis.localStorage,now
 }
 // A card's registered title/aliases are evidence of which project the owner
 // means, not permission to edit it. Prefer the longest named match.
-import {cards} from './bubbles-card-catalog.mjs';
+import {cards} from './bubbles-card-catalog.mjs?v=20261102-cardonay1';
 const normalized=s=>' '+String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim()+' ';
 export function namedCardFor(request){
  const q=normalized(request);
