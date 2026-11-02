@@ -64,34 +64,3 @@ class NevadaCCB(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-)
-            self.assertEqual(r['source_url'], SOURCE)
-            self.assertEqual(r['state'], 'NV')
-            self.assertEqual(set(r), {'license_number','name','city','state','street_address','source_url'})
-
-    def test_idempotent_sql_receipt_and_safe_flags(self):
-        db = database()
-        for _ in range(2):
-            db.executescript(SQL.read_text())
-        m = json.loads(MANIFEST.read_text())
-        ids = {'nv-ccb:'+r['license_number'] for r in m['records']}
-        rows = db.execute('SELECT id,record_status,paid_sponsor,official_source,license_verified,address_confirmed,rights_cleared,image_url,source_domain,license_status FROM store_sources').fetchall()
-        self.assertEqual({r[0] for r in rows}, ids)
-        self.assertEqual(len(rows), 8)
-        for r in rows:
-            self.assertEqual(r[1:9], ('listed',0,1,0,1,0,'','ccb.nv.gov'))
-            self.assertEqual(r[9], 'nv_ccb_roster_2026_10_02_current_status_unverified')
-        self.assertEqual(db.execute('SELECT receipt_id,accepted FROM import_receipts').fetchall(), [(RECEIPT,8)])
-        self.assertEqual(db.execute("SELECT status,phase,records_added FROM directory_jobs WHERE state='NV'").fetchone(), ('review','license_and_local_review',8))
-        self.assertEqual(db.execute("SELECT adult_use FROM state_policy WHERE state='IA'").fetchone()[0], 'not_authorized')
-
-    def test_missing_state_policy_fails_closed(self):
-        db = database()
-        db.execute("DELETE FROM state_policy WHERE state='NV'")
-        db.executescript(SQL.read_text())
-        self.assertEqual(db.execute('SELECT COUNT(*) FROM store_sources').fetchone()[0], 0)
-        self.assertEqual(db.execute('SELECT COUNT(*) FROM import_receipts').fetchone()[0], 0)
-        self.assertEqual(db.execute("SELECT status FROM directory_jobs WHERE state='NV'").fetchone()[0], 'queued')
-
-if __name__ == '__main__':
-    unittest.main()
