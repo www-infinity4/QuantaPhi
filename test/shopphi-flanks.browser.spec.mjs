@@ -69,3 +69,22 @@ test('404 paid ad service does not create fake sponsored ads or six empty boxes'
  }
  expect(await page.locator('.shopphi-flank-empty').count()).toBe(0);
 });
+
+test('source-backed shopping companions lead the mobile card with a real photo, not an unrelated museum',async({page})=>{
+ await page.setViewportSize({width:360,height:800});await setup(page);
+ await page.goto(base+'/?card=source-pcgs',{waitUntil:'domcontentloaded'});
+ const hero=page.locator('#oracleCardStage [data-source-id="pcgs"]');
+ await expect(hero).toBeVisible({timeout:30000});
+ const grid=page.locator('#oracleCardDeck .shopphi-switchboard-grid');
+ await expect(grid).toHaveClass(/shopphi-showcase-mode/);
+ const photos=page.locator('#oracleCardDeck .shopphi-flank:visible img');
+ await expect(photos).toHaveCount(2);
+ const bounds=await page.evaluate(()=>{
+  const visible=[...document.querySelectorAll('#oracleCardDeck .shopphi-flank')].find(x=>!x.hidden);
+  return {ad:visible?.getBoundingClientRect().top,hero:document.getElementById('oracleCardStage')?.getBoundingClientRect().top};
+ });
+ expect(bounds.ad).toBeLessThan(bounds.hero);
+ const titles=await page.locator('#oracleCardDeck .shopphi-flank:visible .shopphi-flank-title').allTextContents();
+ expect(titles.join(' ')).not.toMatch(/Art studios|museum originals/i);
+ await expect(page.getByRole('button',{name:'Pause rotation'})).toBeVisible();
+});
