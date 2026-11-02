@@ -26,17 +26,29 @@ function reviewMedia(m,sourceHost){
  if(!/\.(?:jpg|jpeg|png|webp)(?:$|\?)/i.test(u.href))return null;
  return u.href;
 }
-// Official license IDs can contain colons, dots and uppercase (e.g. NJ/IL).
-// Strictly disallow whitespace, slashes, CSS fragments and HTML metacharacters.
-// IDs are assigned via DOM APIs/getElementById, never interpolated into selectors.
+// Official license IDs contain punctuation and uppercase. Encode their exact
+// ASCII bytes as reversible, collision-free lowercase base32 for DOM/feed IDs.
+// The resulting directory-store- ID is <=70 chars, matching feed persistence.
+const BASE32='abcdefghijklmnopqrstuvwxyz234567';
+export function directoryCardId(raw){
+ if(typeof raw!=='string'||!/^[A-Za-z0-9][A-Za-z0-9:._-]{2,31}$/.test(raw))return null;
+ let bits=0,value=0,encoded='';
+ for(let i=0;i<raw.length;i++){
+  value=(value<<8)|raw.charCodeAt(i);bits+=8;
+  while(bits>=5){bits-=5;encoded+=BASE32[(value>>bits)&31]}
+  value&=(1<<bits)-1;
+ }
+ if(bits)encoded+=BASE32[(value<<(5-bits))&31];
+ return 'directory-store-'+encoded;
+}
 export function directoryCardView(row,acknowledged){
- if(acknowledged!==true||!row||row.sponsored!==false||
-  !/^[A-Za-z0-9][A-Za-z0-9:._-]{2,109}$/.test(String(row.id||''))||
+ const cardId=directoryCardId(row?.id);
+ if(acknowledged!==true||!row||row.sponsored!==false||!cardId||
   !/^[A-Z]{2}$/.test(String(row.state||''))||!str(row.name)||!str(row.city))return null;
  const source=https(row.source_url);
  if(!source||!sourceLinkAllowed(row.source_url,row.source_domain||source.hostname))return null;
  const star=row.quality_star==='★'&&Array.isArray(row.quality_sources)&&row.quality_sources.length>=2;
- return {id:'directory-store-'+row.id,sourceId:row.id,name:str(row.name,140),
+ return {id:cardId,sourceId:row.id,name:str(row.name,140),
   store:str(row.store,100),city:str(row.city,90),state:row.state,
   address:str(row.address,240),sourceName:str(row.source_name,120),sourceUrl:source.href,
   licenseStatus:str(row.license_status,60)||'unverified',
@@ -49,8 +61,9 @@ export function directoryCardView(row,acknowledged){
 export function uniqueStoreCards(rows,existing=[]){
  const seen=new Set(existing),out=[];
  for(const row of Array.isArray(rows)?rows:[]){
-  if(!row||!row.id||seen.has('dispensary-'+row.id)||seen.has('directory-store-'+row.id))continue;
-  seen.add('directory-store-'+row.id);
+  const cardId=directoryCardId(row?.id);
+  if(!cardId||seen.has('dispensary-'+row.id)||seen.has(cardId))continue;
+  seen.add(cardId);
   out.push(row);
  }
  return out;
