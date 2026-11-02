@@ -362,6 +362,7 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
    <a class="zc-cta" href="/coliseum/index.html#arena">Open Zeus builder →</a>
    <a class="zc-cta-secondary" href="/coliseum/index.html#models">Explore editions →</a>
   </div>
+  <a class="zc-discovery-shortcut" href="#zeusDiscoveryCarousel">↓ Watch Zeus &amp; creator tools</a>
   <p class="iac-provenance zc-legal">Independent Infinity-built experience · Free Zeus prototype · No third-party AI model, public room or paid membership activated.</p>
   <div id="coliseumZeusActions"></div>
  </div>
@@ -451,6 +452,30 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
   <details class="oracle-card-library"><summary id="oracleCardInventory">Choose a card</summary><label for="oracleCardChooser">Jump to an available card</label><select id="oracleCardChooser"><option value="">Choose a card…</option></select><p>Select any original interactive card or source experience.</p></details>
   <button id="oracleCardScroll" type="button" class="oracle-card-scroll" aria-expanded="false">↓ Scroll interactive cards / widgets</button>
   <p id="oracleCardStatus" class="oracle-card-deck-status" role="status" aria-live="polite"></p>
+</section>
+<section id="zeusDiscoveryCarousel" aria-labelledby="zeusDiscoveryHeading" aria-roledescription="carousel" class="zeus-discovery-carousel">
+ <div class="zdc-head">
+  <div>
+   <p class="zdc-eyebrow">INFINITY® · MODELS & CREATOR TOOLS</p>
+   <h2 id="zeusDiscoveryHeading">Zeus · Watch and choose an AI experience</h2>
+   <p>Scroll into a second, independent carousel. Watch Infinity editions and discover existing creator GPTs or plugins. Choose an experience to open its real destination.</p>
+  </div>
+ </div>
+ <div class="zdc-tabs" role="group" aria-label="Choose Zeus discovery collection">
+  <button type="button" data-zeus-tab="all" aria-pressed="true">All</button>
+  <button type="button" data-zeus-tab="infinity" aria-pressed="false">Infinity editions</button>
+  <button type="button" data-zeus-tab="creator" aria-pressed="false">Creator GPTs &amp; plugins</button>
+ </div>
+ <div class="zdc-controls" role="group" aria-label="Zeus carousel controls">
+  <button id="zeusDiscoverPrevious" type="button" aria-label="Previous Zeus discovery card">‹ Previous</button>
+  <p id="zeusDiscoverStatus" role="status" aria-live="polite">Loading Zeus discovery…</p>
+  <button id="zeusDiscoverNext" type="button" aria-label="Next Zeus discovery card">Next ›</button>
+  <button id="zeusDiscoverPlay" type="button" aria-pressed="false">Watch</button>
+  <button id="zeusDiscoverFullscreen" type="button">Fullscreen for screen cast</button>
+ </div>
+ <div id="zeusDiscoverStage" class="zdc-track" role="region" aria-label="Zeus and verified creator discovery slides" tabindex="0" aria-live="off"></div>
+ <p class="zdc-cast-note">To put this carousel on a TV, start Screen Cast or screen mirroring on your Android device, then use fullscreen here. Third-party GPTs and plugins open in their own provider app; no external accounts or AI replies are imported into this page.</p>
+ <span id="zeusDiscoverChoose" class="zdc-visually-hidden" aria-live="off" hidden></span>
 </section>
 <details class="q-install-details" aria-label="Android APK and Chrome app downloads"><summary>Apps, Android APK &amp; account connections</summary>
 <nav aria-label="Bubbles and app installers"><a href="/bubbles.html">Open Bubbles AI</a><a href="/downloads/bubbles.apk" data-apk-download="bubbles">Bubbles Android APK <span data-apk-version="bubbles"></span></a><a href="/bubbles-chrome.html">Install Bubbles in Chrome</a><a href="/bubbles-accounts.html">Bubbles account connections</a><a href="/apps/index.html">Other QuantaPhi apps</a></nav>
@@ -1990,6 +2015,9 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <link rel="stylesheet" href="/infinity-accepted-cards.css?v=20261101-brand1">
 <script type="module" src="/infinity-accepted-cards.mjs?v=20261101-brand-freshest1"></script>
 <link rel="stylesheet" href="/coliseum/zeus-card.css?v=20261028-brand1">
+<link rel="stylesheet" href="/quick-card-modernize.css?v=20261101-first-pass1">
+<link rel="stylesheet" href="/zeus-discovery-carousel.css?v=20261101-first-pass1">
+<script type="module" src="/zeus-discovery-carousel.mjs?v=20261101-first-pass1"></script>
 <script type="module" src="/coliseum/zeus-quick-card.mjs?v=20261028-rc1"></script>
 <script type="module" src="/live-tv-cards.mjs?v=20261028-front1"></script>
 <script defer src="/oracle-card-deck.js?v=20261101-showcase1"></script>
