@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-11-01T22:14:55.063220Z",
+  "checked_at": "2026-11-02T01:42:06.103992Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 8
+      "articles_selected": 6
     },
     {
       "publisher": "CBS Sports",
@@ -90,28 +90,6 @@
       "published_at": "2026-10-31T02:26:02Z",
       "summary": "",
       "author": "David Adler",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Dustin May has been traded to or from the last 2 World Series winners. How rare is that?",
-      "url": "https://www.mlb.com/news/dustin-may-s-journey-being-traded-to-and-from-world-series-winners",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-31T01:17:12Z",
-      "summary": "",
-      "author": "Sarah Langs",
-      "image_url": "",
-      "kind": "Analysis",
-      "image_credit": ""
-    },
-    {
-      "title": "A parade 44 years in the making, Brewers celebrate title with fans",
-      "url": "https://www.mlb.com/news/brewers-2026-world-series-championship-parade",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-30T22:20:00Z",
-      "summary": "",
-      "author": "Adam McCalvy",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -345,6 +323,28 @@
       "author": "Carter Bahns",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/8f773b61-3ae0-40e5-9e7e-8f3e6e71bdd3/gettyimages-2301840807-1.jpg",
       "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Nick Martinez, bullpen save the Rays from World Series elimination, but Game 4 win merely a stay of execution",
+      "url": "https://www.cbssports.com/mlb/news/world-series-game-4-rays-bullpen-elimination-nick-martinez/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-28T05:04:16Z",
+      "summary": "The Rays had to use their Game 5 starter in relief in Game 4, but they got the win and for now, that's what matters",
+      "author": "Matt Snyder",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/96d77e2a-d212-46a0-96a5-4e50c685734e/martinez-getty-1.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Brewers vs. Rays World Series odds, Game 4 predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
+      "url": "https://www.cbssports.com/prediction/news/brewers-vs-rays-world-series-odds-game-4-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-27T22:40:38Z",
+      "summary": "Here's a look at the trading markets at Kalshi for World Series Game 4 as the Tampa Bay Rays host the Milwaukee Brewers in World Series Game 4",
+      "author": "James Holliman",
+      "image_url": "https://sportshub.cbsistatic.com/i/2025/07/22/a594e72b-49e5-4ca9-8d82-a96a092ea054/jackson-chourio-brewers.png",
+      "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
     }
   ],
