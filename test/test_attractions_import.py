@@ -60,6 +60,8 @@ class TestAttractionImport(unittest.TestCase):
   # Only park-category transit terms are excluded, not legitimate parks or museums.
   for name in ('RTD University of Denver Station Park-n-Ride',
                'RTD Central Park Station',
+               'Park & Ride Alameda & Havana',
+               'Park & Ride Aspen Park',
                'Downtown Bus Terminal',
                'North Transit Center'):
    with self.subTest(name=name):
