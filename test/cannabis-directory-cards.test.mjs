@@ -92,3 +92,29 @@ test('real D1 regulator IDs encode to unique feed-safe card IDs and retain follo
  assert.match(deck,/directory-store-/);
  assert.match(deck,/data-directory-store-id/);
 });
+
+test('long official Louisiana medical retailer IDs remain unique Oracle cards',async()=>{
+ // 2026-11-02 Louisiana DHSS source import uses stable public facility keys.
+ const ids=[
+  'la-ldh-medical:baton-rouge-70809-8037-picardy-avenue',
+  'la-ldh-medical:baton-rouge-70816-1940-o-neal-lane',
+  'la-ldh-medical:new-orleans-70130-1667-tchoupitoulas-blvd',
+  'la-ldh-medical:new-orleans-70130-429-bourbon-street'
+ ];
+ const models=ids.map(id=>directoryCardView({...base,id,state:'LA',city:'Baton Rouge',access_type:'medical_only'},true));
+ assert.ok(models.every(Boolean),'every official long ID must produce a card');
+ assert.equal(new Set(models.map(x=>x.id)).size,ids.length);
+ for(let i=0;i<models.length;i++){
+  assert.equal(models[i].sourceId,ids[i]);
+  assert.equal(models[i].accessType,'medical_only');
+  assert.match(models[i].id,/^directory-store-[a-z2-7]+$/);
+  assert.ok(models[i].id.length<=70,'feed-safe DOM id');
+  assert.equal(directoryCardId(ids[i]),models[i].id,'stable across refresh');
+ }
+ const {cleanFeedState}=await import('../quanta-feed-rank.mjs');
+ assert.deepEqual(cleanFeedState({following:models.map(x=>x.id)}).following,models.map(x=>x.id));
+ assert.equal(directoryCardId('x'.repeat(111)),null,'reject oversized source keys');
+ const fs=await import('node:fs/promises');
+ const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+ assert.match(deck,/\\{2,109\\}/,'Oracle registrar must accept the same bounded source IDs');
+});
