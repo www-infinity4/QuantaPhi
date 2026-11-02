@@ -389,7 +389,7 @@ function returnActive(){
 }
 // Organic 21+ directory browsing must not become persistent engagement profiling.
 function nonProfiling(entry){return entry?.id==='cannabisDirectoryCard'||entry?.node?.dataset.personalization==='disabled'}
-function show(entry,remember=true){
+function show(entry,remember=true,automatic=false){
  if(!entry||expanded||entry===active)return;
  if(remember&&active&&!nonProfiling(active))visited.push(active.id);
  if(visited.length>45)visited.shift();
@@ -403,10 +403,11 @@ function show(entry,remember=true){
  stage.dataset.switchboardCategory=entry.category;
  stage.dataset.switchboardTab=selectedTab;
  window.dispatchEvent(new CustomEvent('quantaphi:switchboard-change',{detail:{
-  id:entry.feedId,title:entry.title,category:entry.category,tab:selectedTab
+  id:entry.feedId,title:entry.title,category:entry.category,tab:selectedTab,
+  description:entry.node.querySelector('.iac-intro,.qbp-description,.iqc-description')?.textContent||entry.feature
  }}));
  entry.node.dispatchEvent(new Event('oracle:activate'));
- if(!nonProfiling(entry))void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
+ if(!automatic&&!nonProfiling(entry))void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // Every original Oracle widget receives the same five real actions.
  // Source cards already own the toolbar inside mountCardTools.
  if(!nonProfiling(entry)&&!entry.id.startsWith('source-')&&entry.id!=='coliseumZeusCard'){
@@ -422,7 +423,7 @@ function show(entry,remember=true){
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
- if(!nonProfiling(entry)){
+ if(!automatic&&!nonProfiling(entry)){
   entry.count=Math.min(1000,entry.count+1);counts[entry.id]=entry.count;
   try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
   if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
@@ -450,6 +451,52 @@ function advance(direction){
  const i=active?list.indexOf(active):-1;
  show(list[(i+1+list.length)%list.length]);
 }
+// Continue a *visual shopping* sequence only after its verified companion
+// offers have been presented. Media, forms, followed feeds and user engagement
+// counters must not be consumed by passive auto-advance.
+const showcaseVisited=new Set();
+let showcaseLastInteraction=0,showcaseTransition=false;
+document.addEventListener('pointerdown',event=>{
+ if(host.contains(event.target))showcaseLastInteraction=Date.now();
+},{capture:true,passive:true});
+document.addEventListener('keydown',event=>{
+ if(host.contains(event.target))showcaseLastInteraction=Date.now();
+},true);
+window.addEventListener('quantaphi:showcase-chapter-complete',async event=>{
+ const selected=active;
+ if(!selected||selected.feedId!==event.detail?.id||!selected.id.startsWith('source-')||
+  selectedTab!=='public'||expanded||showcaseTransition||document.hidden)return;
+ const eligibleSources=eligible().filter(e=>e.id.startsWith('source-')&&
+  e.node?.dataset?.sourceReady==='true').map(e=>({
+   id:e.feedId,title:e.title,category:e.category,
+   description:e.node.querySelector('.iac-intro,.qbp-description,.iqc-description')?.textContent||e.feature,
+   photo:Boolean(e.node.querySelector('.iac-media img[src],.premium-selected img[src],.iqc-media img[src],img[src]')),
+   entry:e
+ }));
+ try{
+  const {pickNextShowcase,canShowcaseAdvance}=await import('/shopphi-showcase-core.mjs?v=20261101-connected1');
+  const media=[...stage.querySelectorAll('video,audio')];
+  const focused=Boolean(stage.querySelector('input:focus,textarea:focus,select:focus,[contenteditable="true"]:focus'));
+  const next=pickNextShowcase(eligibleSources,selected.feedId,showcaseVisited);
+  const playable=media.some(m=>!m.paused&&!m.ended);
+  const stillVisible=host.getBoundingClientRect().bottom>0&&host.getBoundingClientRect().top<innerHeight;
+  if(!next||!canShowcaseAdvance({visible:stillVisible,hidden:document.hidden,
+   paused:false,reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches,
+   focused,playing:playable,editing:focused,
+   recencyMs:Date.now()-showcaseLastInteraction})||active!==selected)return;
+  showcaseVisited.add(selected.feedId);
+  showcaseTransition=true;
+  stage.classList.add('shopphi-hero-fading');
+  setTimeout(()=>{
+   if(active===selected&&!document.hidden&&!expanded&&selectedTab==='public'){
+    showcaseVisited.add(next.id);
+    show(next.entry,true,true);
+   }
+   stage.classList.remove('shopphi-hero-fading');
+   showcaseTransition=false;
+  },340);
+ }catch{stage.classList.remove('shopphi-hero-fading');showcaseTransition=false;}
+});
 cardoneButton?.addEventListener('click',()=>{
  viewerTouched=true;
  const entry=entries.find(x=>x.id===CARDONE_ID);
