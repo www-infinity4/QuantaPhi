@@ -2641,14 +2641,16 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(rememberMatch){
   const noteText=rememberMatch[1].trim(),radio=/^(?:in|under) (?:the )?radio[ -]clubhouse(?: repository| repo)?[:\s]+(.+)$/i.exec(noteText);
   const textToSave=radio?radio[1].trim():noteText;
-  let answer;
+  let answer,memorySaved=false;
   try{
    if(!longMemory?.cloudConnected)throw Error('Private synced memory is not connected in this Bubbles session.');
    const saved=await longMemory.remember(textToSave,radio?{repository:'www-infinity4/Radio-Clubhouse'}:{});
    answer='Saved to private Bubbles memory under '+saved.topic.replaceAll('_',' ')+'. The note will be available for contextual recall on your connected devices.';
+   memorySaved=true;
   }catch(error){answer='That long-term memory was not saved: '+String(error.message||error).slice(0,145)+' Enable private memory sync in Bubbles settings.';}
+  if(!memorySaved)failedTurn=true;
   display(spoken,'you');display(answer,'ai');clearSentComposer();
-  messages.push({role:'user',text:spoken},{role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
+  messages.push({role:'user',text:spoken},{role:'assistant',text:answer,...(memorySaved?{}:{failed:true})});messages=messages.slice(-400);persistChat();
   status.textContent=answer;
   if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(fromVoice&&config.voice&&!nativeOverlay)speakText(answer);
   nativeSpeechPending=false;return;
@@ -2845,11 +2847,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const clockIntent=module.parseClockIntent(request);
    if(clockIntent){
     busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
-    let reply;
+    let reply,clockFailed=false;
     try{reply=await module.clockConversation(clockIntent,{
      ownerHeaders:verifiedOwnerHeaders,fetcher:bubblesFetch,base:BRAIN
-    })}catch(error){reply='Cloudflare clock action not verified: '+String(error.message||error).slice(0,150)+'. No schedule change is being claimed.'}
-    display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+    })}catch(error){clockFailed=true;reply='Cloudflare clock action not verified: '+String(error.message||error).slice(0,150)+'. No schedule change is being claimed.'}
+    if(clockFailed)failedTurn=true;
+    display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply,...(clockFailed?{failed:true}:{})});messages=messages.slice(-400);persistChat();
     status.textContent=reply.slice(0,250);
     if(nativeOverlay&&fromVoice)nativeSpeechReply=reply;else if(fromVoice&&config.voice&&!nativeOverlay)speakText(reply);
     nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();return;
@@ -2888,8 +2891,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    answer='I could not verify '+(publicPageReadRequested?'the public webpage':'the GitHub file')+': '+String(error.message||error).slice(0,150)+'. No source content or repository change is being claimed.';
    status.textContent='Bubbles · '+expectedReadTool+' · unverified';
   }
+  if(!readVerified)failedTurn=true;
   display(answer,'ai');
-  messages.push({role:'user',text:spoken},{role:'assistant',text:answer});
+  messages.push({role:'user',text:spoken},{role:'assistant',text:answer,...(readVerified?{}:{failed:true})});
   messages=messages.slice(-400);persistChat();
   if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;
   else if(fromVoice&&config.voice&&!nativeOverlay)speakText(answer);
@@ -3242,7 +3246,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      json.receipt?.tool==='web.search'&&json.receipt?.status!=='complete')
      ?cardoneSourceFallback(request):answer);
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
-  messages.push({role:'assistant',text:finalAnswer});messages=messages.slice(-400);persistChat();
+  const receiptFailed=['failed','blocked','invalid_input','unconfirmed'].includes(json.receipt?.status)||json.answerStatus==='partial';
+  if(receiptFailed)failedTurn=true;
+  messages.push({role:'assistant',text:finalAnswer,...(receiptFailed?{failed:true}:{})});messages=messages.slice(-400);persistChat();
   display(finalAnswer,'ai');status.textContent=config.alias+' · response received';
   // Search sources remain tappable in this same Bubbles chat; voice never reads raw URLs.
   if(json.receipt?.tool==='web.search'){
@@ -3288,7 +3294,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }catch(error){
   failedTurn=true;
   const message=workEvidence||(cardoneResearch?cardoneSourceFallback(request):'I could not complete the response: '+String(error?.message||error).slice(0,150));
-  display(message,'ai');messages.push({role:'assistant',text:message});messages=messages.slice(-400);persistChat();
+  display(message,'ai');messages.push({role:'assistant',text:message,failed:true});messages=messages.slice(-400);persistChat();
   status.textContent=message;
   if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false}
   else if(fromVoice&&config.voice&&!nativeOverlay)speakText(message);
@@ -3307,7 +3313,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   failedTurn=true;
   const message='Bubbles could not finish the chat turn. The requested action has not been confirmed. Check verified tool receipts before retrying.';
   try{
-   display(message,'ai');messages.push({role:'assistant',text:message});messages=messages.slice(-400);persistChat();
+   display(message,'ai');messages.push({role:'assistant',text:message,failed:true});messages=messages.slice(-400);persistChat();
    status.textContent=message;
    if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false;}
    else if(fromVoice&&config.voice&&!nativeOverlay)speakText(message);
@@ -3335,7 +3341,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   Promise.resolve(sendMessage(text,false)).then(()=>{
    const replies=messages.slice(before).filter(x=>x.role==='assistant');
    const answer=String(replies.at(-1)?.text||'');
-   if(answer)respond({ok:true,reply:answer.slice(0,8000)});
+   // A displayed error is not evidence that the requested GPT tool ran.
+   if(replies.at(-1)?.failed===true)respond({ok:false,error:'bubbles_chat_request_failed'});
+   else if(answer)respond({ok:true,reply:answer.slice(0,8000)});
    else respond({ok:false,error:'bubbles_did_not_return_a_confirmed_answer'});
   }).catch(()=>respond({ok:false,error:'bubbles_chat_request_failed'}));
  });
