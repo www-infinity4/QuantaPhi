@@ -48,7 +48,9 @@ export function applyIterationEvent(previous,event){
   const value=String(event.state||'');
   set('listen',['listening','hearing'].includes(value)?'active':'idle',
    ['listening','hearing'].includes(value)?'Microphone listening.':'Not capturing speech.');
-  set('think',['thinking','busy'].includes(value)?'active':'idle',
+  // MutationObserver can deliver a delayed idle/listening state after a
+  // failed turn. Keep the failure visible until a new turn or session begins.
+  if(state.think.status!=='blocked')set('think',['thinking','busy'].includes(value)?'active':'idle',
    ['thinking','busy'].includes(value)?'Processing the current request; no hidden thoughts exposed.':'No request processing observed.');
   set('speak',value==='speaking'?'active':'idle',value==='speaking'?'Speaking a reply.':'Not speaking.');
  }else if(event.type==='memory'){
