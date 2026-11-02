@@ -2,8 +2,26 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import worker,{validState,cleanRecord,seedSources,importSnapshot,validateColoradoShardBatch,validateColoradoSeed} from '../workers/attractions-directory.mjs';
+import {attractionQuickCardRoute} from '../attractions-card-routing.mjs';
+import {REQUESTED_PUBLIC_CARDS} from '../verified-brand-sports-catalog.mjs';
 const root=new URL('../',import.meta.url),read=p=>readFileSync(new URL(p,root),'utf8');
 const seed=JSON.parse(read('data/attractions/co-seed.json'));
+
+test('directory deep links only route to registered Oracle catalog entries',()=>{
+ const registered=new Set(REQUESTED_PUBLIC_CARDS.map(card=>card.id));
+ assert.equal(registered.has('colorado-rocky-mountain'),true);
+ assert.equal(attractionQuickCardRoute('curated:colorado-rocky-mountain'),'/?card=colorado-rocky-mountain');
+ for(const id of ['curated:colorado-saddlehorn-visitor-center','curated:colorado-bents-old-fort',
+  'curated:colorado-black-canyon-south-rim','curated:colorado-fake','overture:colorado-test','../bad']){
+  assert.equal(attractionQuickCardRoute(id),null,'must offer destination brief, not phantom card: '+id);
+ }
+ const ui=read('attractions-directory.mjs');
+ assert.match(ui,/attractionQuickCardRoute\(item\.id\)/);
+ assert.match(ui,/if\(verifiedCardRoute\)/);
+ assert.match(ui,/Prepare destination card brief/);
+ assert.doesNotMatch(ui,/if\(\/\^curated:colorado-\[a-z0-9-\]\+\$\/\.test\(item\.id\)\)/);
+});
+
 test('50 US states queued, Colorado prioritized, isolated database schema',()=>{
  const states=JSON.parse(read('data/attractions/states.json'));
  assert.equal(states.states.length,50);assert.equal(new Set(states.states.map(s=>s.code)).size,50);
