@@ -3,7 +3,7 @@
  * manufactures an advertisement nor creates a merchant claim, impression or coin.
  */
 const CHAPTERS=[
- ['cookout',/\b(oscar mayer|hot dogs?|barbecues?|bbq|grills?|charcoal|picnic|patio|lawn games?|outdoor dining|cookouts?|coolers?)\b/i],
+ ['cookout',/\b(oscar mayer|hot dogs?|barbecues?|bbq|grills?|charcoal|picnic|patio|lawn games?|outdoor dining|cookouts?)\b/i],
  ['movie-night',/\b(movie nights?|films?|movies?|dvd|blu[ -]?ray|popcorn|candy|sodas?|couches?|sofas?|televisions?|tv screens?|home theaters?|streaming entertainment)\b/i],
  ['kitchen',/\b(recipes?|kitchen|stoves?|cookware|ovens?|refrigerators?|appliances?|ranges?|dishwashers?|rent.a.center|rent.to.own)\b/i],
  ['tools',/\b(tools?|micrometers?|calipers?|wrenches?|socket sets?|precision measuring|workshop)\b/i],
@@ -15,6 +15,7 @@ const CHAPTERS=[
 export const SHOWCASE_CHAPTERS=Object.freeze(CHAPTERS.map(([name])=>name));
 export function chapterFor(input){
  const value=String(input||'').slice(0,750);
+ if(/\bcoolers?\b/i.test(value)&&/\b(picnic|camping|food|beverages?|drinks?|ice chest|grill|outdoor)\b/i.test(value))return 'cookout';
  return CHAPTERS.find(([,pattern])=>pattern.test(value))?.[0]||null;
 }
 export function pickNextShowcase(cards,currentId,seen=new Set()){
