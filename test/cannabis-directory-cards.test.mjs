@@ -68,3 +68,19 @@ test('older server-validated Cloudflare rows remain cardable before Worker cache
  assert.equal(card?.id,'directory-store-ny-sample-1');
  assert.equal(card?.sourceUrl,'https://store.example.com/locations');
 });
+
+test('real D1 regulator license IDs with colons dots and uppercase register safely',async()=>{
+ const ids=['il-idfpr:284.000001-AUDO','ma-ccc:MR281240','nj-crc:RE000012','ny-ocm:OCM-RETL-24-000003'];
+ for(const id of ids){
+  const model=directoryCardView({...base,id},true);
+  assert.equal(model?.id,'directory-store-'+id);
+  assert.equal(model?.sourceId,id);
+ }
+ for(const id of ['../unsafe','x/y','<script>','x%20y','bad id','x#y','x?y']){
+  assert.equal(directoryCardView({...base,id},true),null);
+ }
+ const fs=await import('node:fs/promises');
+ const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+ assert.match(deck,/directory-store-\[a-zA-Z0-9/);
+ assert.match(deck,/\[a-zA-Z0-9:._-\]/);
+});
