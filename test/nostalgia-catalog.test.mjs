@@ -5,6 +5,7 @@ const reviewed={
   candidateId:'eastland-shoes',kind:'offer',sourceStatus:'verified',rightsStatus:'licensed',reviewStatus:'approved',
   sourceUrl:'https://merchant.example/item',imageUrl:'https://merchant.example/photo.jpg',
   checkedAt:'2026-11-01T12:00:00Z',listingStatus:'in-stock',price:42,currency:'USD',
+  listingExpiresAt:'2026-11-10T00:00:00Z',priceExpiresAt:'2026-11-10T00:00:00Z',rightsExpiresAt:'2026-11-10T00:00:00Z',
   promotionType:'independent'
 };
 const time=new Date('2026-11-01T20:00:00Z');
@@ -32,4 +33,14 @@ test('archival entries can be informative but never presented as in-stock offers
  assert.equal(isPublishableNostalgiaOffer({...reviewed,kind:'archive'},time),false);
  assert.equal(isPublishableNostalgiaOffer({...reviewed,checkedAt:'2026-11-04T00:00:00Z'},time),false);
  assert.equal(isPublishableNostalgiaOffer({...reviewed,candidateId:'not-a-ticket'},time),false);
+});
+
+test('offer expiration beats a recent checkedAt and missing validity fails closed',()=>{
+ for(const field of ['listingExpiresAt','priceExpiresAt','rightsExpiresAt']){
+  assert.equal(isPublishableNostalgiaOffer({...reviewed,[field]:'2026-11-01T19:00:00Z'},time),false,field+' expired');
+  assert.equal(isPublishableNostalgiaOffer({...reviewed,[field]:'not-a-date'},time),false,field+' invalid');
+  assert.equal(isPublishableNostalgiaOffer({...reviewed,[field]:undefined},time),false,field+' missing');
+ }
+ assert.equal(isPublishableNostalgiaOffer({...reviewed,listingExpiresAt:'2026-11-01T20:00:00Z'},time),false,'at exact deadline');
+ assert.equal(isPublishableNostalgiaOffer(reviewed,time),true);
 });
