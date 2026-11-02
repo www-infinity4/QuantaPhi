@@ -46,6 +46,15 @@ test('Android kit budget and source checklist work locally and vanish after the 
  await expect(result.locator('.rac-plan-item')).toHaveCount(4);
  await expect(result).toContainText('No live prices or stock verified');
  await expect(result.getByRole('link',{name:'Visit original site'})).toHaveCount(4);
+ // Regression: an emptied required input must not leave the older checklist actionable.
+ await plan.locator('input[name="budget"]').fill('');
+ await plan.getByRole('button',{name:'Prepare research checklist'}).click();
+ await expect(result).toBeHidden();
+ await expect(card.getByRole('button',{name:'Copy checklist'})).toBeHidden();
+ await expect(card.locator('.rac-plan-status')).toContainText('nonnegative amount');
+ await plan.locator('input[name="budget"]').fill('450.00');
+ await plan.getByRole('button',{name:'Prepare research checklist'}).click();
+ await expect(result).toBeVisible();
  await expect(card.locator('.rac-plan-power')).toHaveAttribute('href','/design-lab/index.html#cooperative-power-chain');
  await card.locator('.rac-kit-select').selectOption('amsterdam-after-dark');
  await expect(plan).toBeHidden();
