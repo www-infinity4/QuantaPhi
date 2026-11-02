@@ -11,8 +11,8 @@ test('same Bubbles turn is guarded before asynchronous owner code and memory loo
  const pairing=code.indexOf('await consumeOwnerCodeFromChat(');
  const context=code.indexOf('await currentOwnerContext(');
  assert.ok(guard>0&&guard<pairing&&pairing<context);
- assert.match(code,/turnPending=true;\s*try\{/);
- assert.match(code,/finally\s*\{turnPending=false;drainVoiceTurns\(\);\}/);
+ assert.match(code,/turnPending=true;\s*let failedTurn=false;\s*try\{/);
+ assert.match(code,/finally\s*\{[\s\S]*?busy=false;send\.disabled=false;turnPending=false;[\s\S]*?drainVoiceTurns\(\);/);
 });
 test('ordinary Bubbles replies distinguish partial/failed/blocked tool receipts from verified actions',()=>{
  const file=source;
@@ -49,7 +49,7 @@ test('accepted voice is retained during owner context preflight and drained afte
  assert.deepEqual(context.seen,['first accepted voice']);
  const heard=source.slice(source.indexOf('function heardTranscript('),source.indexOf('async function startVoice()',source.indexOf('function heardTranscript(')));
  assert.match(heard,/if\(turn\.type==='message'\)\{if\(busy\|\|turnPending\)enqueueVoiceTurn/);
- assert.match(source,/finally\{turnPending=false;drainVoiceTurns\(\);\}/);
+ assert.match(source,/finally\s*\{[\s\S]*?busy=false;send\.disabled=false;turnPending=false;[\s\S]*?drainVoiceTurns\(\);/);
 });
 
 test('ChatGPT bridge and AI consultation cannot falsely advertise readiness while preflight is occupied',()=>{

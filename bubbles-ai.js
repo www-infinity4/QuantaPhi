@@ -1493,7 +1493,7 @@ if(!embedded){
 }
 document.body.append(launcher,panel);
 // One messenger with evidence-backed cognitive/activity bubbles; no extra AI session.
-void import('/bubbles-iteration-bubbles.mjs?v=20261101-activity2')
+void import('/bubbles-iteration-bubbles.mjs?v=20261101-turn-end1')
  .then(({mountBubbleIterations})=>mountBubbleIterations({launcher,panel,status,chatScroll,conversation}))
  .catch(()=>{ /* The activity view must never interrupt chat, voice or wallet. */ });
 // Fit the visible phone viewport, including the space remaining above its keyboard.
@@ -2326,6 +2326,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Serialize from before the first asynchronous owner-memory or pairing read.
  if(busy||turnPending)return;
  turnPending=true;
+ let failedTurn=false;
  try{
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  // A new turn begins without granting credits; Personal Context must verify first.
@@ -3284,7 +3285,14 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     if(nativeSpeechPending)nativeSpeechReply=finalAnswer;
     nativeSpeechPending=false;
    }else if(config.voice)speakText(finalAnswer);
- }catch(error){const message=workEvidence||(cardoneResearch?cardoneSourceFallback(request):'I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message;if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false}else if(fromVoice&&config.voice)speakText(message)}
+ }catch(error){
+  failedTurn=true;
+  const message=workEvidence||(cardoneResearch?cardoneSourceFallback(request):'I could not complete the response: '+String(error?.message||error).slice(0,150));
+  display(message,'ai');messages.push({role:'assistant',text:message});messages=messages.slice(-400);persistChat();
+  status.textContent=message;
+  if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false}
+  else if(fromVoice&&config.voice&&!nativeOverlay)speakText(message);
+ }
  finally{if(nativeOverlay&&nativeSpeechPending){
      nativeSpeechReply=workEvidence||'The assistant could not complete that request.';
      nativeSpeechPending=false;
@@ -3292,7 +3300,24 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
     drainVoiceTurns()
   }
- }finally{turnPending=false;drainVoiceTurns();}
+ }catch(error){
+  // Unexpected failures before the model request (memory, discovery or tool
+  // adapter initialization) must not strand Send or return an empty GPT bridge
+  // acknowledgement. Do not repeat untrusted screen text or pairing codes.
+  failedTurn=true;
+  const message='Bubbles could not finish the chat turn. The requested action has not been confirmed. Check verified tool receipts before retrying.';
+  try{
+   display(message,'ai');messages.push({role:'assistant',text:message});messages=messages.slice(-400);persistChat();
+   status.textContent=message;
+   if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false;}
+   else if(fromVoice&&config.voice&&!nativeOverlay)speakText(message);
+  }catch{ /* Always release the send lock even when a view or storage fails. */ }
+ }finally{
+  busy=false;send.disabled=false;turnPending=false;
+  try{if(!speaking)setOrbState(voiceEnabled?'listening':'idle');}catch{}
+  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_finished',failed:failedTurn}}));
+  drainVoiceTurns();
+ }
 }
 
  window.addEventListener('bubbles:chatgpt-ready',event=>{

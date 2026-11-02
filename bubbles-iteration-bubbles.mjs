@@ -27,6 +27,12 @@ export function applyIterationEvent(previous,event){
  const state={...previous};
  if(!event||typeof event!=='object')return state;
  if(event.type==='session_changed')return newIterationState();
+ if(event.type==='turn_finished'){
+  state.think=event.failed===true
+   ?{status:'blocked',message:'This chat turn failed. No tool execution or completed work is being claimed.',url:''}
+   :{status:'idle',message:'Chat turn ended. Verified work receipts remain visible below.',url:''};
+  return state;
+ }
  if(event.type==='turn_started'){
   const fresh=newIterationState();
   fresh.listen=state.listen;
@@ -42,7 +48,9 @@ export function applyIterationEvent(previous,event){
   const value=String(event.state||'');
   set('listen',['listening','hearing'].includes(value)?'active':'idle',
    ['listening','hearing'].includes(value)?'Microphone listening.':'Not capturing speech.');
-  set('think',['thinking','busy'].includes(value)?'active':'idle',
+  // MutationObserver can deliver a delayed idle/listening state after a
+  // failed turn. Keep the failure visible until a new turn or session begins.
+  if(state.think.status!=='blocked')set('think',['thinking','busy'].includes(value)?'active':'idle',
    ['thinking','busy'].includes(value)?'Processing the current request; no hidden thoughts exposed.':'No request processing observed.');
   set('speak',value==='speaking'?'active':'idle',value==='speaking'?'Speaking a reply.':'Not speaking.');
  }else if(event.type==='memory'){
