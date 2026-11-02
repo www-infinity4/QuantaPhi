@@ -375,7 +375,7 @@ void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountF
  const target=document.getElementById('oracleFollowingFeed');
  followingPublisherFeed=mountFollowingPublisherFeed(target,{
   getFollowing:()=>directionApi?readDirections().following:[],
-  getProfiles:()=>entries.filter(e=>e.id.startsWith('source-')&&e.node?.dataset?.official).map(e=>({
+  getProfiles:()=>entries.filter(e=>e.id.startsWith('source-')&&e.node?.dataset?.official&&departmentMatches(e)).map(e=>({
    id:e.feedId,name:e.node.dataset.sourceName||e.title,official:e.node.dataset.official,
    category:e.node.dataset.sourceCategory||e.category,query:e.node.dataset.sourceQuery||e.title
   }))
