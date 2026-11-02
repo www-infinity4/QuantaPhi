@@ -18,7 +18,7 @@ test('PA DOH medical source manifest is a 15-row distinct provenance snapshot, n
  assert.equal(new Set(manifest.records.map(r=>r.address)).size,15);
  for(const row of manifest.records){
   assert.match(row.id,/^pa-doh-4uxb-pw5i-[0-9]+$/);
-  assert.ok(row.name&&row.city&&row.street&&/^\\d{5}$/.test(row.zip));
+  assert.ok(row.name&&row.city&&row.street&&/^\d{5}$/.test(row.zip));
   assert.ok(row.address.endsWith('PA '+row.zip));
  }
 });
