@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {DISCOVERY_CARDS,approveCreatorEntry,cardsForTab,advanceIndex,shouldAdvance} from '../zeus-discovery-core.mjs';
+import {APPROVED_PUBLIC_GPT_LINKS} from '../zeus-community-verified.mjs';
 const read=path=>readFile(new URL(path,import.meta.url),'utf8');
 test('Infinity edition cards reuse existing four Coliseum editions with truthful readiness',()=>{
  const editions=DISCOVERY_CARDS.filter(card=>card.kind==='infinity');
@@ -33,9 +34,12 @@ test('creator GPT listings only enter the carousel with verified source, rights 
  }
 });
 test('tabs and movement are deterministic and never invent unpublished creators',()=>{
- assert.equal(cardsForTab('creator').length,4);
+ assert.equal(APPROVED_PUBLIC_GPT_LINKS.length,2);
+ assert.equal(cardsForTab('creator').length,6);
+ assert.ok(cardsForTab('creator').some(x=>x.kind==='creator-gpt'&&x.name==='Mr. Lump the code tutor'));
+ assert.ok(cardsForTab('creator').some(x=>x.kind==='creator-gpt'&&x.name==='Data Analyst Career Guide'));
  assert.equal(cardsForTab('infinity').length,4);
- assert.equal(cardsForTab('all').length,8);
+ assert.equal(cardsForTab('all').length,10);
  assert.equal(advanceIndex(0,6,-1),5);
  assert.equal(advanceIndex(5,6,1),0);
  assert.equal(advanceIndex(9,0,1),0);
