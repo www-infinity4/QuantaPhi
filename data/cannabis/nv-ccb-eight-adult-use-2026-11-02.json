@@ -1,0 +1,77 @@
+{
+  "source": "Nevada Cannabis Compliance Board — Licensed Nevada Cannabis Stores/Dispensaries",
+  "source_url": "https://ccb.nv.gov/list-of-licensees/",
+  "official_roster_as_of": "2026-10-02",
+  "inspected_at": "2026-11-02",
+  "scope": "Eight Southern Nevada adult-use retail rows; roster is dated, individual current license status and local authorization not independently reverified",
+  "license_verified": false,
+  "merchant_urls_verified": false,
+  "advertising_approved": false,
+  "media_rights": false,
+  "records": [
+    {
+      "license_number": "56859471821919325427",
+      "name": "BEYOND/HELLO",
+      "city": "Las Vegas",
+      "state": "NV",
+      "street_address": "7885 W Sahara Ave, Suite 111-112",
+      "source_url": "https://ccb.nv.gov/list-of-licensees/"
+    },
+    {
+      "license_number": "54588636135598286871",
+      "name": "BEYOND/HELLO",
+      "city": "Las Vegas",
+      "state": "NV",
+      "street_address": "430 E Twain Ave",
+      "source_url": "https://ccb.nv.gov/list-of-licensees/"
+    },
+    {
+      "license_number": "00170400460138702033",
+      "name": "CANNA STARZ",
+      "city": "Las Vegas",
+      "state": "NV",
+      "street_address": "631 S Las Vegas Blvd",
+      "source_url": "https://ccb.nv.gov/list-of-licensees/"
+    },
+    {
+      "license_number": "11679863451946958412",
+      "name": "THE CANNABIS CO.",
+      "city": "Las Vegas",
+      "state": "NV",
+      "street_address": "200 E Charleston Blvd",
+      "source_url": "https://ccb.nv.gov/list-of-licensees/"
+    },
+    {
+      "license_number": "01359449685112111637",
+      "name": "COOKIES LAS VEGAS",
+      "city": "Las Vegas",
+      "state": "NV",
+      "street_address": "4240 W Flamingo Rd, Suite 100",
+      "source_url": "https://ccb.nv.gov/list-of-licensees/"
+    },
+    {
+      "license_number": "01653343486142530020",
+      "name": "CULTIVATE",
+      "city": "Las Vegas",
+      "state": "NV",
+      "street_address": "3615 Spring Mountain Rd",
+      "source_url": "https://ccb.nv.gov/list-of-licensees/"
+    },
+    {
+      "license_number": "58417803212814915538",
+      "name": "CULTIVATE",
+      "city": "Las Vegas",
+      "state": "NV",
+      "street_address": "7105 N Durango Dr, Suite 120",
+      "source_url": "https://ccb.nv.gov/list-of-licensees/"
+    },
+    {
+      "license_number": "11058209030610809158",
+      "name": "CURALEAF",
+      "city": "Las Vegas",
+      "state": "NV",
+      "street_address": "2320 Western Ave",
+      "source_url": "https://ccb.nv.gov/list-of-licensees/"
+    }
+  ]
+}
