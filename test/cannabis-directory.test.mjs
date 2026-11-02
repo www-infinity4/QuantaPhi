@@ -22,6 +22,9 @@ test('Midwest law profiles keep Iowa distinct from Illinois and Missouri',()=>{
  assert.equal(policy('DE').adult_use,'legal_with_conditions');
  assert.equal(policy('DE').medical_program,true);
  assert.equal(policy('DE').source_url,'https://omc.delaware.gov/adult-use/');
+ assert.equal(policy('PA').adult_use,'not_authorized');
+ assert.equal(policy('PA').medical_program,true);
+ assert.equal(policy('PA').source_url,'https://data.pa.gov/Services-Near-You/Medical-Marijuana-Dispensaries-Current-State-Healt/4uxb-pw5i');
  assert.equal(policy('UT').adult_use,'unreviewed');
 });
 test('a site is a sourced organic listing, never automatically a paid offer',()=>{

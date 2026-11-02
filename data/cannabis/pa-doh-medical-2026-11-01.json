@@ -1,0 +1,149 @@
+{
+  "receipt_id": "2026-11-02-pa-doh-fifteen-medical-dispensaries-v1",
+  "state": "PA",
+  "program": "medical_only",
+  "dataset": "4uxb-pw5i",
+  "dataset_updated_at": "2026-11-01",
+  "source_url": "https://data.pa.gov/Services-Near-You/Medical-Marijuana-Dispensaries-Current-State-Healt/4uxb-pw5i",
+  "verified_at": "2026-11-02",
+  "review_state": "individual_license_and_operating_status_unverified",
+  "rights_cleared": false,
+  "authorized_inventory_feeds": 0,
+  "records": [
+    {
+      "id": "pa-doh-4uxb-pw5i-70",
+      "objectid": "70",
+      "name": "Harvest of Whitehall",
+      "city": "Whitehall",
+      "street": "1809 MacArthur Rd",
+      "zip": "18052",
+      "address": "1809 MacArthur Rd, Whitehall, PA 18052"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-139",
+      "objectid": "139",
+      "name": "Delta 9 PA",
+      "city": "Greensburg",
+      "street": "305 East Pittsburgh Street",
+      "zip": "15601",
+      "address": "305 East Pittsburgh Street, Greensburg, PA 15601"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-89",
+      "objectid": "89",
+      "name": "Zen Leaf Philadelphia",
+      "city": "Philadelphia",
+      "street": "2504 Welsh Road",
+      "zip": "19152",
+      "address": "2504 Welsh Road, Philadelphia, PA 19152"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-171",
+      "objectid": "171",
+      "name": "Rise-Philadelphia",
+      "city": "Philadelphia",
+      "street": "3903 Aramingo Ave",
+      "zip": "19137",
+      "address": "3903 Aramingo Ave, Philadelphia, PA 19137"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-116",
+      "objectid": "116",
+      "name": "Curaleaf - Erie",
+      "city": "Erie",
+      "street": "7891 Peach St",
+      "zip": "16509",
+      "address": "7891 Peach St, Erie, PA 16509"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-6",
+      "objectid": "6",
+      "name": "Keystone Shops - Devon",
+      "city": "Devon",
+      "street": "420 West Lancaster Ave",
+      "zip": "19333",
+      "address": "420 West Lancaster Ave, Devon, PA 19333"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-121",
+      "objectid": "121",
+      "name": "Maitri Medicinals-Greensburg",
+      "city": "Greensburg",
+      "street": "1075 S Main St. Suites 104 &106",
+      "zip": "15601",
+      "address": "1075 S Main St. Suites 104 &106, Greensburg, PA 15601"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-11",
+      "objectid": "11",
+      "name": "Cure Pennsylvania",
+      "city": "Phoenixville",
+      "street": "500 Kimberton Road",
+      "zip": "19460",
+      "address": "500 Kimberton Road, Phoenixville, PA 19460"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-57",
+      "objectid": "57",
+      "name": "Vytal Options - Lancaster",
+      "city": "Lancaster",
+      "street": "39 E Chestnut Street",
+      "zip": "17602",
+      "address": "39 E Chestnut Street, Lancaster, PA 17602"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-154",
+      "objectid": "154",
+      "name": "Herbology Brookville",
+      "city": "Brookville",
+      "street": "240 W Main Street",
+      "zip": "15825",
+      "address": "240 W Main Street, Brookville, PA 15825"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-175",
+      "objectid": "175",
+      "name": "Sunnyside-Altoona",
+      "city": "Altoona",
+      "street": "534 W Plank Rd",
+      "zip": "16602",
+      "address": "534 W Plank Rd, Altoona, PA 16602"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-43",
+      "objectid": "43",
+      "name": "RISE - Cranberry",
+      "city": "Cranberry Township",
+      "street": "20808 Route 19",
+      "zip": "16066",
+      "address": "20808 Route 19, Cranberry Township, PA 16066"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-25",
+      "objectid": "25",
+      "name": "Liberty - Norristown",
+      "city": "Norristown",
+      "street": "2030 West Main Street",
+      "zip": "19403",
+      "address": "2030 West Main Street, Norristown, PA 19403"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-38",
+      "objectid": "38",
+      "name": "RISE - New Castle",
+      "city": "New Castle",
+      "street": "2622 W. State Street",
+      "zip": "16101",
+      "address": "2622 W. State Street, New Castle, PA 16101"
+    },
+    {
+      "id": "pa-doh-4uxb-pw5i-26",
+      "objectid": "26",
+      "name": "Liberty - Philadelphia",
+      "city": "Philadelphia",
+      "street": "8900 Krewstown Road",
+      "zip": "19115",
+      "address": "8900 Krewstown Road, Philadelphia, PA 19115"
+    }
+  ]
+}
