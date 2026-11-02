@@ -3242,7 +3242,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      json.receipt?.tool==='web.search'&&json.receipt?.status!=='complete')
      ?cardoneSourceFallback(request):answer);
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
-  messages.push({role:'assistant',text:finalAnswer});messages=messages.slice(-400);persistChat();
+  const receiptFailed=['failed','blocked'].includes(json.receipt?.status);
+  if(receiptFailed)failedTurn=true;
+  messages.push({role:'assistant',text:finalAnswer,...(receiptFailed?{failed:true}:{})});messages=messages.slice(-400);persistChat();
   display(finalAnswer,'ai');status.textContent=config.alias+' · response received';
   // Search sources remain tappable in this same Bubbles chat; voice never reads raw URLs.
   if(json.receipt?.tool==='web.search'){
@@ -3288,7 +3290,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }catch(error){
   failedTurn=true;
   const message=workEvidence||(cardoneResearch?cardoneSourceFallback(request):'I could not complete the response: '+String(error?.message||error).slice(0,150));
-  display(message,'ai');messages.push({role:'assistant',text:message});messages=messages.slice(-400);persistChat();
+  display(message,'ai');messages.push({role:'assistant',text:message,failed:true});messages=messages.slice(-400);persistChat();
   status.textContent=message;
   if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false}
   else if(fromVoice&&config.voice&&!nativeOverlay)speakText(message);
@@ -3307,7 +3309,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   failedTurn=true;
   const message='Bubbles could not finish the chat turn. The requested action has not been confirmed. Check verified tool receipts before retrying.';
   try{
-   display(message,'ai');messages.push({role:'assistant',text:message});messages=messages.slice(-400);persistChat();
+   display(message,'ai');messages.push({role:'assistant',text:message,failed:true});messages=messages.slice(-400);persistChat();
    status.textContent=message;
    if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false;}
    else if(fromVoice&&config.voice&&!nativeOverlay)speakText(message);
@@ -3335,7 +3337,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   Promise.resolve(sendMessage(text,false)).then(()=>{
    const replies=messages.slice(before).filter(x=>x.role==='assistant');
    const answer=String(replies.at(-1)?.text||'');
-   if(answer)respond({ok:true,reply:answer.slice(0,8000)});
+   // A displayed error is not evidence that the requested GPT tool ran.
+   if(replies.at(-1)?.failed===true)respond({ok:false,error:'bubbles_chat_request_failed'});
+   else if(answer)respond({ok:true,reply:answer.slice(0,8000)});
    else respond({ok:false,error:'bubbles_did_not_return_a_confirmed_answer'});
   }).catch(()=>respond({ok:false,error:'bubbles_chat_request_failed'}));
  });
