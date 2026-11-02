@@ -199,7 +199,7 @@ function openBuilder(mode) {
     const result = capture(item, state.type);
     if (!result.ok) return report('Cannot save selected media: ' + result.reason);
   }
-  const destination = pkg().seed(mode);
+  const destination = mode === 'code' ? pkg().seed('code') : pkg().seed('create');
   if (!destination || !destination.startsWith('/omni-phi/code/')) {
     return report('Code Phi could not prepare this project.');
   }
@@ -277,7 +277,7 @@ function renderSelection() {
   add(featured, create('h3', m.title));
   if (m.description) add(featured, create('p', m.description));
   if (state.type === 'video' && url(m.embedUrl)?.startsWith('https://archive.org/embed/')) {
-    btn(featured, '▶ Play here', () => {
+    const playButton = btn(featured, '▶ Play here', () => {
       const player = add(featured, create('iframe'));
       player.src = m.embedUrl;
       player.title = m.title + ' · Archive player';
@@ -287,7 +287,6 @@ function renderSelection() {
       player.referrerPolicy = 'strict-origin-when-cross-origin';
       playButton.disabled = true;
     });
-    const playButton = featured.querySelector('button');
   }
   add(featured, create('p', m.license || m.rightsNote || 'Rights depend on the original uploader and item. Review before reusing.', 'holiday-rights'));
   sourceLink(featured, 'Original source', m.source);
@@ -378,7 +377,9 @@ fetch('/holiday-phi-content.json?v=20261102-holidays1', { cache: 'no-cache' })
     if (window.PhiCinemaReel?.mount) {
       window.PhiCinemaReel.mount(reelMount, {
         title: 'Christmas & Thanksgiving',
-        current: () => state.type === 'video' ? selected() : activeHoliday()?.videos?.[0]
+        // Archive embeds are for watching; the reel tool needs a genuine video file.
+        // It can edit a visitor-uploaded file without inventing download URLs.
+        current: () => null
       });
     }
  })
