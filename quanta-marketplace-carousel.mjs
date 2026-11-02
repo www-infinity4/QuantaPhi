@@ -114,6 +114,9 @@ export function mountMarketplaceCarousel(root,card,{search=searchMarketplaceList
  form.addEventListener('submit',async event=>{
   event.preventDefault();const q=boundedQuery(field.value);if(q.length<2)return;
   const current=++requestId;lastQuery=q;submit.disabled=true;
+  // A new query invalidates prior listings immediately. Never show a stale
+  // seller link beside search shortcuts for a different item.
+  items=[];active='all';index=0;
   notice.textContent='Checking independently indexed seller pages…';viewer.replaceChildren();
   render();
   shortcuts.replaceChildren();
