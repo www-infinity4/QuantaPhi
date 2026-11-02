@@ -2,6 +2,7 @@
  * Not a product advertisement, age-verification system or medical recommendation.
  * No store data is requested before per-visit display acknowledgment.
  * No cookies, wallet, ID, user profiling or persistent consent storage. */
+import {directoryCardView,uniqueStoreCards} from './cannabis-directory-cards.mjs';
 const root=document.getElementById('cannabisDirectoryCard');
 if(root){
  const make=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n};
@@ -22,6 +23,7 @@ if(root){
  const submit=make('button','icd-control','Search sources');submit.type='submit';
  form.append(state,city,query,submit);
  const status=make('p','icd-status','Choose a state to search.');status.setAttribute('role','status');
+ const nationwide=make('p','icd-status','Nationwide individual cards load after this visit’s age acknowledgment.');nationwide.hidden=true;
  const listing=make('article','icd-listing');listing.hidden=true;
  const badge=make('p','icd-badge'),name=make('h3','icd-name'),address=make('p','icd-address'),
   source=make('p','icd-source'),quality=make('p','icd-quality','Unrated · no independent customer-experience evidence reviewed');
@@ -31,8 +33,83 @@ if(root){
  const nav=make('div','icd-nav'),prev=make('button','icd-control','‹ Previous'),next=make('button','icd-control','Next ›'),count=make('span','icd-count');
  prev.type=next.type='button';nav.append(prev,count,next);nav.hidden=true;
  const hide=make('button','icd-quiet','Hide 21+ directory');hide.type='button';hide.hidden=true;
- root.append(kicker,title,intro,gate,form,status,listing,nav,hide);
+ root.append(kicker,title,intro,gate,form,status,nationwide,listing,nav,hide);
  let acknowledged=false,rows=[],index=0,page=0,hasMore=false,loading=false,version=0,filters=null;
+ const cardHost=document.getElementById('cannabisDirectoryCards');
+ let nationalSession=0;
+ const cardChildren=()=>{
+  if(!cardHost)return [];
+  return [...cardHost.querySelectorAll('[data-directory-store-id]')];
+ };
+ function buildIndividual(row){
+  if(!cardHost||!acknowledged)return false;
+  const model=directoryCardView(row,true);if(!model||document.getElementById(model.id)||
+   document.getElementById('dispensary-'+model.sourceId))return false;
+  const item=make('section','icd-store-card');item.id=model.id;
+  item.dataset.directoryStoreId=model.sourceId;item.dataset.directoryStoreName=model.name;
+  item.dataset.personalization='disabled';
+  const meta=make('small','icd-kicker',model.sponsorLabel+' · '+model.state);
+  const photo=make('div','icd-store-photo');
+  if(model.imageUrl){
+   const img=make('img','icd-store-image');img.alt='Approved source image for '+model.name;
+   img.src=model.imageUrl;img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';
+   img.addEventListener('error',()=>{img.remove();photo.textContent='Source image unavailable';},{once:true});
+   photo.append(img);
+  }else{
+   photo.append(make('p','icd-photo-placeholder','Original store image pending documented rights'));
+  }
+  const h=make('h2','icd-store-name',model.name);
+  const loc=make('p','icd-store-location',[model.store,model.city+', '+model.state].filter(Boolean).join(' · '));
+  const address=make('p','icd-store-address',model.address);
+  const quality=make('p','icd-quality',model.qualityLabel);
+  const source=make('p','icd-source','Store source: '+model.sourceName+' · License: '+model.licenseStatus);
+  const link=make('a','icd-control','View original store source');link.href=model.sourceUrl;
+  link.target='_blank';link.rel='noopener noreferrer nofollow';link.referrerPolicy='no-referrer';
+  item.append(meta,photo,h,loc,address,quality,source);
+  if(model.testimonial){
+   const quotation=make('blockquote','icd-store-testimonial',model.testimonial.text);
+   const citation=make('a','icd-testimonial-link','Attributed customer statement · '+model.testimonial.publisher);
+   citation.href=model.testimonial.sourceUrl;citation.target='_blank';citation.rel='noopener noreferrer nofollow';
+   item.append(quotation,citation);
+  }else item.append(make('p','icd-note','No consented, independently reviewed customer testimonial available.'));
+  item.append(link,make('p','icd-note','Independent location directory; no asserted current stock, price, product benefits, paid sponsorship or purchase checkout.'));
+  cardHost.append(item);return true;
+ }
+ async function expandNationwide(session){
+  if(!cardHost||!acknowledged)return;
+  nationwide.hidden=false;nationwide.textContent='Preparing individually browsable Cloudflare store cards…';
+  try{
+   const response=await fetch('/api/21-directory/coverage',{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(12000)});
+   if(!response.ok)throw Error('coverage_unavailable');
+   const data=await response.json();if(!acknowledged||session!==nationalSession)return;
+   const populated=(Array.isArray(data.states)?data.states:[]).filter(r=>Number(r.listed_records)>0&&STATES.includes(r.state));
+   let accepted=0;
+   // One state page at a time: mobile friendly, no huge 50-state DOM at startup.
+   for(const stateRow of populated){
+    if(!acknowledged||session!==nationalSession)return;
+    let page=0,more=true;
+    while(more&&page<3&&cardChildren().length<150){
+     const p=new URLSearchParams({state:stateRow.state,page:String(page)});
+     const found=await fetch('/api/21-directory/stores?'+p,{
+       headers:{'X-Visitor-21-Acknowledged':'true'},credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(12000)});
+     if(!found.ok)break;
+     const result=await found.json();if(!acknowledged||session!==nationalSession)return;
+     const known=cardChildren().map(c=>c.id);
+     const fresh=uniqueStoreCards(result.items||[],known);
+     for(const row of fresh)if(buildIndividual(row))accepted++;
+     window.dispatchEvent(new CustomEvent('quantaphi:directory-cards-ready'));
+     more=result.has_more===true;page++;
+    }
+    nationwide.textContent='Cloudflare sources: '+Number(data.total_listed||0)+
+      ' entries in '+populated.length+' populated states · '+cardChildren().filter(x=>!x.hidden).length+
+      ' newly loaded individual cards. Open Oracle’s card chooser to view them. Unimported states are not cards.';
+   }
+   if(!populated.length)nationwide.textContent='No source-backed dispensaries imported yet. State jobs do not count as cards.';
+  }catch{
+   if(acknowledged&&session===nationalSession)nationwide.textContent='National card expansion unavailable; no stores or testimonials were invented.';
+  }
+ }
+
  function render(){
   const row=rows[index];listing.hidden=!row;nav.hidden=!row;
   if(!row)return;
@@ -75,11 +152,17 @@ if(root){
   finally{if(request===version){loading=false;submit.disabled=false}}
  }
  function close(){
+  nationalSession++;for(const c of cardChildren())c.hidden=true;
+  window.dispatchEvent(new CustomEvent('quantaphi:directory-cards-ready'));
+  nationwide.hidden=true;
   acknowledged=false;version++;loading=false;submit.disabled=false;filters=null;
   rows=[];index=0;page=0;hasMore=false;
   gate.hidden=false;form.hidden=true;hide.hidden=true;status.textContent='Directory hidden for this visit.';render();
  }
- enter.addEventListener('click',()=>{acknowledged=true;gate.hidden=true;form.hidden=false;hide.hidden=false;void search()});
+ enter.addEventListener('click',()=>{acknowledged=true;gate.hidden=true;form.hidden=false;hide.hidden=false;
+  nationalSession++;for(const c of cardChildren())c.hidden=false;
+  void search();void expandNationwide(nationalSession);
+ });
  form.addEventListener('submit',e=>{e.preventDefault();version++;loading=false;submit.disabled=false;page=0;void search()});
  prev.addEventListener('click',()=>{if(index>0){index--;render()}});
  next.addEventListener('click',()=>{if(index<rows.length-1){index++;render()}else if(hasMore&&!loading){void search(true)}});
