@@ -118,6 +118,7 @@ if(root){
  closeBrowse.addEventListener('click',()=>{
   acknowledged=false;publisherLast='';publisherSeen=[];publisher.hidden=true;
   publisherLink.removeAttribute('href');publisherName.textContent='';publisherDesc.textContent='';kitLinks.replaceChildren();resetPlan();
+  kitPlanBudget.value='300.00';kitPlanRegion.value='';
   browse.hidden=false;closeBrowse.hidden=true;
  });
  kitPlanButton.addEventListener('click',()=>{
