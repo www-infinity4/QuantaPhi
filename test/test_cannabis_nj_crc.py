@@ -85,7 +85,8 @@ class NewJerseyPermitTests(unittest.TestCase):
             self.assertTrue(row[2].startswith("https://www.nj.gov/cannabis/documents/"))
             self.assertEqual(row[3:6], ("listed",0,1))
             self.assertEqual(row[6:10], (0,0,0,""))
-            self.assertEqual(row[10], "nj_crc_class5_permit_status_unverified")\n            self.assertLessEqual(len(row[10]), 45)
+            self.assertEqual(row[10], "nj_crc_class5_permit_status_unverified")
+            self.assertLessEqual(len(row[10]), 45)
         self.assertEqual(db.execute("SELECT inspected,accepted,rejected FROM import_receipts").fetchall(),[(8,8,0)])
         self.assertEqual(db.execute("SELECT status,phase,records_added FROM directory_jobs WHERE state='NJ'").fetchone(),
                          ("review","license_and_local_review",8))
