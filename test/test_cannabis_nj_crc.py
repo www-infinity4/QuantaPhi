@@ -85,11 +85,44 @@ class NewJerseyPermitTests(unittest.TestCase):
             self.assertTrue(row[2].startswith("https://www.nj.gov/cannabis/documents/"))
             self.assertEqual(row[3:6], ("listed",0,1))
             self.assertEqual(row[6:10], (0,0,0,""))
-            self.assertEqual(row[10], "nj_crc_class5_2027_snapshot")
+            self.assertEqual(row[10], "nj_crc_class5_permit_status_unverified")
+            self.assertLessEqual(len(row[10]), 45)
         self.assertEqual(db.execute("SELECT inspected,accepted,rejected FROM import_receipts").fetchall(),[(8,8,0)])
         self.assertEqual(db.execute("SELECT status,phase,records_added FROM directory_jobs WHERE state='NJ'").fetchone(),
                          ("review","license_and_local_review",8))
         self.assertEqual(db.execute("SELECT adult_use FROM state_policy WHERE state='IA'").fetchone()[0],"not_authorized")
+        db.close()
+
+    def test_future_2027_expiration_is_not_mislabeled_as_2027_snapshot(self):
+        """2027 describes permit expiration, not the date the regulator was checked."""
+        snapshot = json.loads(SNAP.read_text(encoding="utf-8"))
+        self.assertEqual(snapshot["queried_at"], "2026-11-02")
+        self.assertTrue(all(r["expiration_date"].startswith("2027-") for r in snapshot["records"]))
+        self.assertNotIn("2027_snapshot", SQL.read_text(encoding="utf-8"))
+
+    def test_existing_eight_rows_are_corrected_without_reimport_or_receipt_rewrite(self):
+        """Migration must preserve store IDs, imported records, and original receipt."""
+        migration = ROOT / "workers/cannabis-directory-nj-status-correction.sql"
+        db = database()
+        db.executescript(SQL.read_text(encoding="utf-8"))
+        db.execute(
+            "UPDATE store_sources SET license_status='nj_crc_class5_2027_snapshot' "
+            "WHERE state='NJ'"
+        )
+        before = db.execute("SELECT id,source_url FROM store_sources ORDER BY id").fetchall()
+        receipts = db.execute("SELECT * FROM import_receipts").fetchall()
+        db.executescript(migration.read_text(encoding="utf-8"))
+        db.executescript(migration.read_text(encoding="utf-8"))
+        after = db.execute("SELECT id,source_url FROM store_sources ORDER BY id").fetchall()
+        self.assertEqual(before, after)
+        self.assertEqual(receipts, db.execute("SELECT * FROM import_receipts").fetchall())
+        self.assertEqual(
+            db.execute(
+                "SELECT COUNT(*) FROM store_sources WHERE state='NJ' AND "
+                "license_status='nj_crc_class5_permit_status_unverified' "
+                "AND license_verified=0"
+            ).fetchone()[0], 8
+        )
         db.close()
 
     def test_missing_policy_fails_closed(self):

@@ -128,3 +128,19 @@ test('untrusted, paid, malformed and unreviewed rows cannot enter source cards',
   const r=await worker.fetch(get('/api/21-directory/stores?state=CO',{'X-Visitor-21-Acknowledged':'true'}),env);
   assert.equal((await r.json()).items.length,1);
 });
+
+test('NJ permit label is not truncated by public store API serializer',async()=>{
+ const status='nj_crc_class5_permit_status_unverified';
+ const nj={...record,id:'nj-crc:RE000012',state:'NJ',city:'Rochelle Park',
+   source_url:'https://www.nj.gov/cannabis/documents/businesses/Permits%20and%20Renewals/Ascend%20Rec%20Packet.pdf',
+   source_domain:'www.nj.gov',source_name:'New Jersey Cannabis Regulatory Commission',
+   license_status:status};
+ const {env}=envWith([nj]);
+ const r=await worker.fetch(get('/api/21-directory/stores?state=NJ',{'X-Visitor-21-Acknowledged':'true'}),env);
+ assert.equal(r.status,200);
+ const data=await r.json();
+ assert.equal(data.items.length,1);
+ assert.equal(data.items[0].license_status,status);
+ assert.equal(data.items[0].sponsored,false);
+ assert.equal(data.items[0].verified_age,false);
+});
