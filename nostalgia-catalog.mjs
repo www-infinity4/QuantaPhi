@@ -33,6 +33,13 @@ export function isPublishableNostalgiaOffer(item,now=new Date()){
  if(!Number.isFinite(item.price)||item.price<0||!/^[A-Z]{3}$/.test(item.currency||''))return false;
  const age=Date.parse(item.checkedAt),current=new Date(now).getTime();
  if(!Number.isFinite(age)||!Number.isFinite(current)||age>current||current-age>30*86400000)return false;
+ // All three independent validity deadlines must be explicit and unexpired.
+ // A fresh observation cannot revive expired listing, price or image rights.
+ for(const field of ['listingExpiresAt','priceExpiresAt','rightsExpiresAt']){
+  if(typeof item[field]!=='string'||!/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d+)?Z$/.test(item[field]))return false;
+  const deadline=Date.parse(item[field]);
+  if(!Number.isFinite(deadline)||deadline<=current)return false;
+ }
  if(item.promotionType==='independent')return true;
  return item.promotionType==='sponsored'&&safeHttps(item.sponsorEvidenceUrl);
 }
