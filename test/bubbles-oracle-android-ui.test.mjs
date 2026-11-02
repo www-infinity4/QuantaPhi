@@ -27,3 +27,16 @@ test('Android chat scroll and composer remain distinct, readable surfaces',()=>{
  assert.match(app,/quickButton\.dataset\.connected='true'/);
  assert.match(css,/Preserve Bubbles' original blue animated orb/);
 });
+
+
+test('optional GPT session grant stays in Settings on every first-party Bubbles page',()=>{
+ for(const page of ['bubbles.html','bubbles/index.html','bubbles-chrome.html']){
+  const html=fs.readFileSync(page,'utf8');
+  assert.match(html,/<details\\s+class="bubbles-chatgpt-entry"[^>]*\\bhidden\\b/,
+   page+' must not display a second top-of-page approval gate');
+  assert.match(html,/id="bubblesChatGPTTopAccess"/,
+   page+' must preserve the existing optional approval hook');
+ }
+ const ui=fs.readFileSync('bubbles-ai.js','utf8');
+ assert.ok(ui.includes('tools.append(quick)'),'five-day consent belongs in Settings');
+});
