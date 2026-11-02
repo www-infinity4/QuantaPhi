@@ -65,7 +65,7 @@ function mount(){
  async function find(p=0,randomItem=false,selectLast=false){
   if(loading)return;
   loading=true;page=p;selected=0;const serial=++requestNo;
-  submit.disabled=prev.disabled=next.disabled=discover.disabled=locate.disabled=true;status.textContent='Loading '+(nearbyCoords?'nearby':'in '+city)+' restaurants…';card.setAttribute('aria-busy','true');
+  submit.disabled=prev.disabled=next.disabled=discover.disabled=true;locate.disabled=true;status.textContent='Loading '+(nearbyCoords?'nearby':'in '+city)+' restaurants…';card.setAttribute('aria-busy','true');
   try{
    const params=nearbyCoords?new URLSearchParams({...nearbyCoords,q:search.value.trim().slice(0,65),page:String(page)}):
     new URLSearchParams({city,state,q:search.value.trim().slice(0,65),page:String(page)});
