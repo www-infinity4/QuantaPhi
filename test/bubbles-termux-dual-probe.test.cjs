@@ -36,6 +36,8 @@ test('Android service, approval screen and callback keep the requested probe kin
  assert.match(service,/putExtra\("termux_probe_kind", kind\)/);
  assert.match(overlay,/putExtra\("termux_probe_kind", kind\)/);
  assert.match(activity,/TermuxProbe\.run\(this, kind\)/);
+ assert.match(activity,/Exact code to run/);
+ assert.match(activity,/TermuxProbe\.SHELL_SCRIPT : TermuxProbe\.SCRIPT/);
  assert.match(activity,/TermuxProbe\.permitted\(this\)/);
  assert.match(activity,/\.setNegativeButton\("Cancel"/);
  assert.match(probe,/"shell"\.equals\(kind\) \? SHELL_SCRIPT : SCRIPT/);
