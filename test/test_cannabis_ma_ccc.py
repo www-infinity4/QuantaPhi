@@ -25,14 +25,20 @@ def database(with_ma=True):
         address_confirmed INTEGER DEFAULT 0, rights_cleared INTEGER DEFAULT 0,
         image_url TEXT DEFAULT '', image_rights TEXT DEFAULT '');
       CREATE TABLE import_receipts (receipt_id TEXT PRIMARY KEY, state TEXT NOT NULL,
-        city TEXT NOT NULL, source_url TEXT NOT NULL, inspected INTEGER NOT NULL,
-        accepted INTEGER NOT NULL, rejected INTEGER NOT NULL);
+        city TEXT NOT NULL, source_url TEXT NOT NULL, job_id TEXT NOT NULL DEFAULT '',
+        inspected INTEGER NOT NULL, accepted INTEGER NOT NULL, rejected INTEGER NOT NULL,
+        created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+      CREATE TABLE regulator_source_catalog (state TEXT PRIMARY KEY, source_status TEXT NOT NULL);
       CREATE TABLE directory_jobs (job_id TEXT PRIMARY KEY, state TEXT NOT NULL,
         city TEXT DEFAULT '', status TEXT NOT NULL, phase TEXT NOT NULL,
         records_added INTEGER DEFAULT 0, updated_at TEXT DEFAULT '');
       INSERT INTO state_policy(state,adult_use) VALUES ('IA','not_authorized');
       INSERT INTO directory_jobs(job_id,state,status,phase)
         VALUES ('first-review-ma','MA','queued','source_discovery');
+      INSERT INTO directory_jobs(job_id,state,status,phase)
+        VALUES ('boston-discovery','MA','queued','source_discovery');
+      INSERT INTO regulator_source_catalog(state,source_status)
+        VALUES ('MA','verified_official_url');
     """)
     if with_ma:
         db.execute("INSERT INTO state_policy(state,adult_use) VALUES ('MA','unreviewed')")
@@ -78,10 +84,34 @@ class MassachusettsCCCImportTests(unittest.TestCase):
             self.assertTrue(row[0].startswith("ma-ccc:MR"))
             self.assertEqual(row[1:6], ("MA",SOURCE,"listed",0,1))
             self.assertEqual(row[6:10], (0,0,0,""))
-        self.assertEqual(db.execute("SELECT inspected,accepted,rejected FROM import_receipts").fetchall(), [(4,4,0)])
+        self.assertEqual(db.execute("SELECT job_id,inspected,accepted,rejected FROM import_receipts").fetchall(), [("first-review-ma",4,4,0)])
+        self.assertEqual(db.execute("SELECT status,records_added FROM directory_jobs WHERE job_id='boston-discovery'").fetchone(),
+                         ("queued",0))
         self.assertEqual(db.execute("SELECT status,phase,records_added FROM directory_jobs WHERE state='MA'").fetchone(),
                          ("review","license_and_local_review",4))
         self.assertEqual(db.execute("SELECT adult_use FROM state_policy WHERE state='IA'").fetchone()[0], "not_authorized")
+        db.close()
+
+    def test_revoked_policy_cannot_recreate_receipt_or_advance_job(self):
+        db = database()
+        sql = SQL.read_text(encoding="utf-8")
+        db.executescript(sql)
+        db.execute("DELETE FROM import_receipts")
+        db.execute("UPDATE directory_jobs SET status='queued',records_added=0,updated_at='2026-11-02 01:00:00' WHERE job_id='first-review-ma'")
+        db.execute("UPDATE state_policy SET adult_use='not_authorized' WHERE state='MA'")
+        db.executescript(sql)
+        self.assertEqual(db.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0], 0)
+        self.assertEqual(db.execute("SELECT status FROM directory_jobs WHERE job_id='first-review-ma'").fetchone()[0], "queued")
+        db.close()
+
+    def test_old_receipt_cannot_advance_requeued_job(self):
+        db = database()
+        sql = SQL.read_text(encoding="utf-8")
+        db.executescript(sql)
+        db.execute("UPDATE directory_jobs SET status='queued',records_added=0,updated_at='2099-01-01 00:00:00' WHERE job_id='first-review-ma'")
+        db.executescript(sql)
+        self.assertEqual(db.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0], 1)
+        self.assertEqual(db.execute("SELECT status,records_added FROM directory_jobs WHERE job_id='first-review-ma'").fetchone(), ("queued",0))
         db.close()
 
     def test_missing_policy_fails_closed(self):
@@ -89,7 +119,7 @@ class MassachusettsCCCImportTests(unittest.TestCase):
         db.executescript(SQL.read_text(encoding="utf-8"))
         self.assertEqual(db.execute("SELECT COUNT(*) FROM store_sources").fetchone()[0], 0)
         self.assertEqual(db.execute("SELECT COUNT(*) FROM import_receipts").fetchone()[0], 0)
-        self.assertEqual(db.execute("SELECT status FROM directory_jobs WHERE state='MA'").fetchone()[0], "queued")
+        self.assertEqual(db.execute("SELECT status FROM directory_jobs WHERE job_id='first-review-ma'").fetchone()[0], "queued")
         db.close()
 
 
