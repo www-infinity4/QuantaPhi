@@ -53,7 +53,9 @@ test('callback separates dispatch, exit, failed cleanup, and absent results',()=
  assert.match(receiver,/getBundleExtra\("result"\)/);
  assert.match(receiver,/getInt\("exitCode"/);
  assert.match(receiver,/getInt\("err"/);
- assert.match(receiver,/code == 0 && serviceError == -1 && cleaned/);
+ assert.match(receiver,/code == 0 && serviceError == -1/);
+ assert.match(receiver,/"python"\.equals\(kind\) && cleaned/);
+ assert.match(receiver,/"shell"\.equals\(kind\)/);
  assert.match(receiver,/cleanup=" \+ \(cleaned \? "confirmed" : "not_verified"\)/);
  assert.match(probe,/timed_out_unverified/);
  assert.match(probe,/if \("queued"\.equals\(current.optString\("state"\)\)\)/);
