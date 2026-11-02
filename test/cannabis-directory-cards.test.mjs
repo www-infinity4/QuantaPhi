@@ -59,6 +59,9 @@ test('actual Oracle can register data-backed cards and avoids misleading public 
  assert.match(html,/id="cannabisDirectoryCards"/);
  assert.match(client,/quantaphi:directory-cards-ready/);
  assert.match(client,/directoryCardView/);
+ assert.match(client,/medical_program_listed/);
+ assert.match(client,/MEDICAL-PROGRAM SOURCE · ADULT-USE NOT VERIFIED/);
+ assert.match(client,/Medical program only · not adult-use/);
  assert.doesNotMatch(deck,/cards\.length\+' available'/);
 });
 
