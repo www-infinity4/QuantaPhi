@@ -434,8 +434,9 @@ function saveThread(){
  const first=messages.find(m=>m.role==='user')?.text?.trim().replace(/\s+/g,' ').slice(0,65);
  if(row){row.updated=Date.now();if(row.title==='New conversation'&&first)row.title=first;}
  threadIndex.sort((a,b)=>b.updated-a.updated);
- save(THREAD_INDEX,threadIndex.slice(0,150));
- return true;
+ // A transcript without a saved History index may be lost after a PWA reload.
+ // Fail closed so update and conversation switches cannot claim a safe save.
+ return save(THREAD_INDEX,threadIndex.slice(0,150));
 }
 function persistChat(){
  for(const m of messages){if(!m.id)m.id=crypto.randomUUID();if(!m.at)m.at=Date.now();m.sessionId=activeThread;}
