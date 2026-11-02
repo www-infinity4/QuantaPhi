@@ -32,7 +32,7 @@ test('Android chat scroll and composer remain distinct, readable surfaces',()=>{
 test('optional GPT session grant stays in Settings on every first-party Bubbles page',()=>{
  for(const page of ['bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs.readFileSync(page,'utf8');
-  assert.match(html,/<details\\s+class="bubbles-chatgpt-entry"[^>]*\\bhidden\\b/,
+  assert.match(html,/<details\s+class="bubbles-chatgpt-entry"[^>]*\bhidden\b/,
    page+' must not display a second top-of-page approval gate');
   assert.match(html,/id="bubblesChatGPTTopAccess"/,
    page+' must preserve the existing optional approval hook');
