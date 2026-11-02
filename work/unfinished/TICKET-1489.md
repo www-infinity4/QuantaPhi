@@ -16,11 +16,12 @@ fence: null
 last_observed_at_utc: "2026-11-02T23:38:15Z"
 repo: "www-infinity4/QuantaPhi"
 branch: "agent/evidence-catalog-1489"
-head_sha: null
-pr: null
+head_sha: "93f01090e878d9a5feea8a55ec29eca108d86a48"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1490"
 tests:
   - "Local node --test: 6/6 passing against local API implementation; branch includes 8 test cases but full exact-head CI remains pending."
-ci: []
+ci:
+  - "GitHub Actions #41547378858 (agent-evidence-tests.yml): started; check for final result before claiming CI passed."
 merged: false
 deployed: true
 live_verified: true
