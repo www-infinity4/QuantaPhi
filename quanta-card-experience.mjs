@@ -4,6 +4,7 @@ import {mountIntegraAutomationGuide} from './integra-automation-router.mjs';
 import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
 import {tinyfishCard} from './tinyfish-card-catalog.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
+import {mountMarketplaceCarousel} from './quanta-marketplace-carousel.mjs?v=20261101-unified-market1';
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
@@ -87,6 +88,7 @@ export function createCardArtwork(card,small=false){
  return art;
 }
 function searchTool(root,card,options={}){
+ if(['ebay','vintage-toys','antique-collectibles'].includes(card.id))return mountMarketplaceCarousel(root,card);
  const spec=searchBase[card.id];if(!spec)return false;
  const direct=card.id==='google'||card.id==='bing';
  if(!direct&&!tinyfishCard(card.id))return false;
