@@ -5,6 +5,7 @@ on:
       - 'workers/bubbles-tools/**'
       - 'scripts/verify-bubbles-live-tools.mjs'
       - 'test/bubbles-live-tool-acceptance.test.mjs'
+      - 'test/bubbles-tools.test.mjs'
       - 'test/bubbles-github-raw-fallback.test.mjs'
       - 'test/bubbles-github-public-root.test.mjs'
       - 'test/bubbles-owner-github-auth-read.test.mjs'
