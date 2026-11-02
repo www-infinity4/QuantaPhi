@@ -187,3 +187,20 @@ test('automatic site revision reload uses the same safe conversation checkpoint 
  assert.doesNotMatch(autoUpdater,/sessionStorage\.setItem\(UPDATE_RELOAD_THREAD/);
  assert.match(autoUpdater,/location\.reload\(\)/);
 });
+
+
+test('conversation History index storage failure blocks a claimed successful save',()=>{
+ const a=ui.indexOf('function saveThread(){');
+ const b=ui.indexOf('function persistChat(){',a);
+ assert.ok(a>0&&b>a,'actual conversation History save path must exist');
+ const writes=[];
+ const ctx={
+  keepChat:true,embedded:false,THREAD_PREFIX:'threads:',THREAD_INDEX:'threads',
+  activeThread:'old',messages:[{role:'user',text:'Important earlier turn'}],
+  threadIndex:[{id:'old',title:'New conversation',updated:1}],
+  save:(key)=>{writes.push(key);return key!=='threads';}
+ };
+ const result=vm.runInNewContext(ui.slice(a,b)+';saveThread()',ctx);
+ assert.equal(result,false,'the transcript alone is insufficient without its History index');
+ assert.deepEqual(writes,['threads:old','threads']);
+});
