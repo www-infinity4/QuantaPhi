@@ -26,9 +26,9 @@ function reviewMedia(m,sourceHost){
  if(!/\.(?:jpg|jpeg|png|webp)(?:$|\?)/i.test(u.href))return null;
  return u.href;
 }
-export function directoryCardView(row,acknowledged){
+// Official license IDs can contain colons, dots and uppercase (e.g. NJ/IL).\n// Strictly disallow whitespace, slashes, CSS fragments and HTML metacharacters.\n// IDs are assigned via DOM APIs/getElementById, never interpolated into selectors.\nexport function directoryCardView(row,acknowledged){
  if(acknowledged!==true||!row||row.sponsored!==false||
-  !/^[a-z0-9-]{3,110}$/.test(String(row.id||''))||
+  !/^[A-Za-z0-9][A-Za-z0-9:._-]{2,109}$/.test(String(row.id||''))||
   !/^[A-Z]{2}$/.test(String(row.state||''))||!str(row.name)||!str(row.city))return null;
  const source=https(row.source_url);
  if(!source||!sourceLinkAllowed(row.source_url,row.source_domain||source.hostname))return null;
