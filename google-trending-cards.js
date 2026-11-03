@@ -119,7 +119,7 @@ function mlbCard(host){
    ui.status.textContent=shown.length+' of '+data.games.length+' MLB games shown · source checked '+new Date(data.checked).toLocaleTimeString()+' · MLB schedule';
   }catch(error){if(own!==controller)return;ui.setGames([],null);empty(ui.list,'MLB schedule unavailable. Use the official scores link.');ui.status.textContent='MLB refresh failed · '+safeStatus(error.message)}
  }
- dayControls(ui,refresh,day=>{date=day;void refresh()},()=>date);select();watchCard(host,refresh);
+ dayControls(ui,refresh,day=>{date=day;void refresh()},()=>date);watchCard(host,refresh);
 }
 const mediaTopics=[
  {id:'ethan',title:'Ethan Klein',volume:'200K+',question:'Why is Ethan Klein trending?',options:['Latest reporting','Videos and interviews','Search timeline'],query:'Ethan Klein'},
