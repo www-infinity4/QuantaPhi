@@ -3,6 +3,7 @@
  * matching, and never infers somebody's private purchases or location. */
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261031-heritage-signin1';
 const API='https://quantaphi-attractions-directory.marvaseater.workers.dev';
+const STATES=new Set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split(' '));
 const TAGS=Object.freeze({
  glacier:{glacier:44,national_park:16,scenic_lookout:13},
  history:{historic_site:46,history_museum:45,museum:33,visitor_center:10},
@@ -16,7 +17,7 @@ const create=(tag,cls,label)=>{const e=document.createElement(tag);if(cls)e.clas
 export const interestTags=raw=>[...new Set((Array.isArray(raw)?raw:[raw]).flatMap(x=>String(x||'').toLowerCase().split(/[^a-z]+/)).filter(x=>Object.hasOwn(TAGS,x)))].slice(0,3);
 export function attractionSourceId(item){
  const id=String(item?.id||'');
- if(!/^(?:curated:(?:alaska|colorado)-[a-z0-9-]{5,90}|overture:[a-zA-Z0-9-]{10,100})$/.test(id))return null;
+ if(!STATES.has(item?.state)||!/^(?:curated:[a-z][a-z0-9-]{8,100}|overture:[a-zA-Z0-9-]{10,100})$/.test(id))return null;
  let hash=2166136261;
  for(const c of id)hash=Math.imul(hash^c.charCodeAt(0),16777619)>>>0;
  return 'attraction-'+String(item?.state||'').toLowerCase()+'-'+hash.toString(36).padStart(7,'0');
@@ -26,7 +27,7 @@ export function rankAttractions(items,{interests=[],seen=[],limit=8}={}){
  const ignored=new Set(Array.isArray(seen)?seen:[]);
  const unique=new Set();
  const rows=(Array.isArray(items)?items:[]).filter(x=>{
-  if(!x||!['AK','CO'].includes(x.state)||!x.name||!safeSite(x.source_url)||!x.license||
+  if(!x||!STATES.has(x.state)||!x.name||!safeSite(x.source_url)||!x.license||
     !attractionSourceId(x)||unique.has(x.id))return false;
   unique.add(x.id);return true;
  });
@@ -79,7 +80,8 @@ export function makeAttractionCard(row,reason){
  const body=create('div','ad-rec-body');
  const reasonText=create('p','ad-rec-match',reason||'Independent, source-backed public recommendation');
  const links=create('nav','ad-rec-links');links.setAttribute('aria-label',row.name+' visitor actions');
- anchor(links,'Original visitor site',row.website||row.source_url);
+ if(safeSite(row.website))anchor(links,'Original visitor site',row.website);
+ else anchor(links,'Source listing',row.source_url);
  anchor(links,'Directions',directions(row));
  anchor(links,'Verified source',row.source_url);
  const notice=create('p','ad-rec-disclosure','Location may be approximate · Check official access, seasonal closures and availability. No paid placement.');
