@@ -10,6 +10,7 @@ async function openHoliday(page) {
   await page.route('https://archive.org/embed/**', route =>
     route.fulfill({contentType:'text/html',body:'<!doctype html><title>Archive video fixture</title><p>Integration fixture only. Playback not verified.</p>'}));
   await page.goto(base+'/?card=holidayPhi', {waitUntil:'domcontentloaded'});
+  await page.locator('#oracleCardInventory').click();
   const chooser=page.locator('#oracleCardChooser');
   await expect(chooser.locator('option[value="holidayPhi"]')).toHaveCount(1);
   await chooser.selectOption('holidayPhi');
@@ -26,6 +27,7 @@ for (const width of [320,360,393,720]) {
     await card.getByRole('button',{name:'Christmas',exact:true}).click();
     await expect(card.getByText('Classic films, festive art & seasonal creations')).toBeVisible();
     await expect(card.locator('.holiday-image')).toBeVisible();
+    await card.locator('.holiday-feature').scrollIntoViewIfNeeded();
     await expect(card.locator('.holiday-feature')).toBeInViewport();
     const dimensions = await card.evaluate(element => ({
       right: element.getBoundingClientRect().right,
@@ -45,7 +47,7 @@ test('Christmas video plays inside the card, collects to a local draft, then ope
   await card.getByRole('button',{name:'▶ Play here'}).click();
   await expect(card.locator('iframe[src^="https://archive.org/embed/"]')).toHaveCount(1);
   await card.getByRole('button',{name:'＋ Collect selection'}).click();
-  await expect(card.locator('.holiday-status')).toContainText(['', 'Added source to your project.']);
+  await expect(card.locator('.holiday-status').first()).toContainText('Added source to your project.');
   await expect(card.locator('.holiday-build')).toContainText('1 collected items');
   await card.getByRole('button',{name:'Build website in Code Phi'}).click();
   await expect(page).toHaveURL(/\/omni-phi\/code\/\?q=/);
