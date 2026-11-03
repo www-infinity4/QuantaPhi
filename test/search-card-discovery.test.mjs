@@ -29,6 +29,7 @@ test('unsafe URL and lookalike search results cannot create website cards',()=>{
   'https://ge.com:8443','https://ge.com.evil.example/','https://ge.local/','javascript:alert(1)'
  ])assert.equal(createDiscoveredCard(value),null,value);
  assert.equal(discoverWebsiteCard('GE',[{title:'GE official',url:'https://ge.com.evil.example/'}]),null);
+ assert.equal(discoverWebsiteCard('GE',[{title:'GE official',url:'https://ge.com.evil.com/'}]),null);
  assert.equal(discoverWebsiteCard('GE',[{title:'GE official',url:'https://ge.com:8080/'}]),null);
 });
 
