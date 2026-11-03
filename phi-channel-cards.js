@@ -148,6 +148,10 @@ function showProgram(playback,program,token){
  playback.program=program;
  playback.productionLogged=null;
  playback.title.textContent=program.title+(program.year?' · '+program.year:'');
+ if(playback.programHeading)playback.programHeading.textContent=playback.channel==='shoplc'?'Live shopping · current item at Shop LC':'Infinity selected: '+program.title;
+ if(playback.description)playback.description.textContent=catalog.programDescription(playback.channel,program);
+ if(playback.sourceLink)playback.sourceLink.href=playback.channel==='shoplc'?'https://www.shoplc.com/pages/live-tv':
+  'https://www.youtube.com/watch?v='+encodeURIComponent(program.videoId);
  playback.status.textContent='Preparing '+program.title+'…';
  if(playback.channel==='shoplc'){void playShopLC(playback,token,0);return}
  if(!catalog.valid(program.videoId)){playback.status.textContent='Invalid media ID. Playback cancelled.';return}
@@ -244,7 +248,7 @@ async function playShopLC(playback,token,index){
  await feed();
 }
 function open(playback){
- document.dispatchEvent(new CustomEvent('quantaphi:tv-playback-request',{detail:{owner:'phiChannelCards'}}));
+ document.dispatchEvent(new CustomEvent('quantaphi:tv-playback-request',{detail:{owner:playback.owner}}));
  stop();const token=generation;
  playback.screen.hidden=true;playback.screen.setAttribute('aria-expanded','true');
  playback.viewer.hidden=false;playback.card.classList.add('channelphi-playing');
@@ -289,7 +293,7 @@ for(const c of channels){
  if(c.key==='kyou')continue;
  const viewer=card.appendChild(el('div','channelphi-viewer'));viewer.hidden=true;
  const screenSlot=viewer.appendChild(el('div','channelphi-video-slot'));screenSlot.setAttribute('aria-label','Video screen');
- const now=viewer.appendChild(el('strong','channelphi-now','On air'));
+ const now=viewer.appendChild(el('strong','channelphi-now','Selected program'));
  const status=viewer.appendChild(el('p','channelphi-status','Ready'));status.setAttribute('role','status');
  const controls=viewer.appendChild(el('div','channelphi-controls'));
  const previous=controls.appendChild(el('button','channelphi-prev','◀ CH−'));previous.type='button';
@@ -297,15 +301,26 @@ for(const c of channels){
  const sound=controls.appendChild(el('button','channelphi-sound','🔊 Sound'));sound.type='button';
  const close=controls.appendChild(el('button','channelphi-stop','■ Stop'));close.type='button';
  const playback={key:c.key,owner:owner.id,card,screen,viewer,screenSlot,status,title:now,programHeading,programNote,description:detail,sourceLink,sound,video:null,frame:null,yt:null,hls:null,program:null,channel:c.key,remoteChannel:c.key};
+  // Channel metadata reflects the pick on card activation, not a stale page-load snapshot.
+  owner.addEventListener('oracle:activate',()=>{
+    if(active?.owner===owner.id)return;
+    const current=catalog.preview(c.key,new Date());
+    programHeading.textContent=c.key==='shoplc'?'Live shopping · current item at Shop LC':'Infinity selected: '+current.title;
+    programNote.textContent=current.availabilityNote;
+    detail.textContent=current.description;
+    sourceLink.href=current.providerUrl;
+    image.src=current.poster;
+    image.loading='eager';image.fetchPriority='high';
+  });
  screen.addEventListener('click',()=>open(playback));
  previous.addEventListener('click',()=>changeProgram(playback,-1));
  next.addEventListener('click',()=>changeProgram(playback,1));
  sound.addEventListener('click',()=>setSound(playback));
  close.addEventListener('click',()=>{stop();screen.focus()});
 }
-document.addEventListener('quantaphi:tv-playback-request',event=>{if(event.detail?.owner!=='phiChannelCards')stop()});
+document.addEventListener('quantaphi:tv-playback-request',event=>{if(active&&event.detail?.owner!==active.owner)stop()});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
-document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id==='phiChannelCards')stop()});
+document.addEventListener('oracle:card-deactivated',event=>{if(active&&(event.detail?.id===active.owner||event.detail?.id==='phiChannelCards'))stop()});
 window.addEventListener('pagehide',stop);
 host.append(el('p','channelphi-foot',separateMode?'Select one channel card to watch. This guide never embeds a full external website.':'One active in-card player at a time. KYOU opens its official stream in a new tab until the station supplies a supported embedded player. Online KYOU programming can differ from FOX 15.1 over the air; this viewer does not confirm game access. Other channels keep their direct video controls.'));
 })();
