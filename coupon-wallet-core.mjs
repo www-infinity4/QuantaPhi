@@ -63,6 +63,15 @@ export function filterVerifiedOffers(rows,at=new Date().toISOString()){
  }
  return valid;
 }
+export function sanitizeDeviceCouponWallet(raw,at=new Date().toISOString()){
+ const r=raw&&typeof raw==='object'&&!Array.isArray(raw)?raw:{};
+ return {
+  autoSave:r.autoSave===true,
+  saved:filterVerifiedOffers(r.saved,at),
+  checkedAt:typeof r.checkedAt==='string'&&Number.isFinite(Date.parse(r.checkedAt))?r.checkedAt:'',
+  error:typeof r.error==='string'?r.error.slice(0,200):''
+ };
+}
 export function collectFollowedOffers(saved,verified,following,at=new Date().toISOString()){
  const current=filterVerifiedOffers(verified,at);
  const followed=new Set(Array.isArray(following)?following:[]);
