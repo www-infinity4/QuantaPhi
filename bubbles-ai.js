@@ -2388,17 +2388,6 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');drainVoiceTurns();
   return;
  }
- // Cloudflare network probes use the actual Android-to-Termux callback; they
- // never replace the assistant's HTTPS chat gateway or authorize Cloudflare APIs.
- if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\s+)?(?:check|test|verify)\s+(?:the\s+)?(?:cloudflare(?:\s+(?:network|connection))?\s+(?:in|with|using|via)\s+termux|termux\s+cloudflare)[.!?]*$/i.test(spoken)){
-  display(spoken,'you');clearSentComposer();
-  messages.push({role:'user',text:spoken});
-  nativeTermuxProbeRequests.push({action:'cloudflare'});
-  const answer='Cloudflare network check requested from Termux. Approve the Android prompt; no result or speed improvement has been confirmed yet.';
-  display(answer,'ai');messages.push({role:'assistant',text:answer});persistChat();
-  if(fromVoice)nativeSpeechReply=answer;
-  return;
- }
  // Keep the existing Bubbles chat. A typed command on Android requests a
  // native confirmation dialog, not a second chat or remote Linux sandbox.
  if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\s+)?(?:(?:test|check|verify)(?:\s+the)?\s+(?:python(?:\s+(?:in|with))?\s+termux|python|termux(?:\s+python)?)|(?:run|start|try)(?:\s+a)?\s+python\s+(?:test|diagnostic)|(?:does\s+python\s+work|is\s+python\s+(?:working|ready))(?:\s+in\s+termux)?)[.!?]*$/i.test(spoken)){
@@ -2406,6 +2395,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   messages.push({role:'user',text:spoken});
   nativeTermuxProbeRequests.push({action:'probe'});
   const answer='Python diagnostic requested on this phone. Approve the Android prompt; execution is not confirmed yet.';
+  display(answer,'ai');messages.push({role:'assistant',text:answer});persistChat();
+  if(fromVoice)nativeSpeechReply=answer;
+  return;
+ }
+ // Cloudflare network probes use the actual Android-to-Termux callback; they
+ // never replace the assistant's HTTPS chat gateway or authorize Cloudflare APIs.
+ if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\s+)?(?:check|test|verify)\s+(?:the\s+)?(?:cloudflare(?:\s+(?:network|connection))?\s+(?:in|with|using|via)\s+termux|termux\s+cloudflare)[.!?]*$/i.test(spoken)){
+  display(spoken,'you');clearSentComposer();
+  messages.push({role:'user',text:spoken});
+  nativeTermuxProbeRequests.push({action:'cloudflare'});
+  const answer='Cloudflare network check requested from Termux. Approve the Android prompt; no result or speed improvement has been confirmed yet.';
   display(answer,'ai');messages.push({role:'assistant',text:answer});persistChat();
   if(fromVoice)nativeSpeechReply=answer;
   return;
