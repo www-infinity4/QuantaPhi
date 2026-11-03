@@ -1,5 +1,5 @@
 import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
-import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs';
+import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs?v=20261103-photos1';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
 import {websiteFaviconUrl} from './card-source-images.mjs';
