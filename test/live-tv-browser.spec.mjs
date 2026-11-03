@@ -57,3 +57,48 @@ test('the separate FOX viewer never frames entire FOX website or shows an old ga
  const player=root.locator('iframe');await expect(player).toHaveCount(1);
  expect(await player.getAttribute('src')).toContain('youtube-nocookie.com/embed/live_stream');
 });
+
+test('every Infinity player owns a separate carousel card and stops when another one is selected',async({page})=>{
+ await prepare(page);
+ await page.goto(base+'/?card=infinityStarQuestCard',{waitUntil:'domcontentloaded'});
+ const star=page.locator('#infinityStarQuestCard'),chiller=page.locator('#infinityChillerCard');
+ await expect(page.locator('#oracleCardStage #infinityStarQuestCard')).toBeVisible();
+ await expect(star.locator('.channelphi-independent .channelphi-screen')).toBeVisible();
+ await expect(star.locator('.channelphi-airing')).toContainText('Infinity selected:');
+ await expect(star.locator('.channelphi-source-links a').first()).toHaveAttribute('href','/infinity-tv/guide.html#starquest');
+ await expect(star.locator('.channelphi-art')).toHaveAttribute('src',/^https:\/\/i\.ytimg\.com\/vi\//);
+ await expect(star.locator('iframe')).toHaveCount(0);
+ await star.getByRole('button',{name:'Watch StarQuest video in this card'}).click();
+ await expect(star.locator('iframe')).toHaveCount(1);
+ await page.locator('#oracleCardInventory').click();
+ await page.locator('#oracleCardChooser').selectOption('infinityChillerCard');
+ await expect(star.locator('iframe')).toHaveCount(0);
+ await expect(page.locator('#oracleCardStage #infinityChillerCard')).toBeVisible();
+ await expect(chiller.locator('.channelphi-airing')).toContainText('Infinity selected:');
+ await expect(chiller.locator('.channelphi-source-links a').first()).toHaveAttribute('href','/infinity-tv/guide.html#chiller');
+ for(const id of ['infinityOmniTvCard','infinityShopLcCard']){
+  await page.locator('#oracleCardChooser').selectOption(id);
+  await expect(page.locator('#oracleCardStage #'+id+' .channelphi-screen')).toBeVisible();
+  await expect(page.locator('#'+id+' .channelphi-art')).toHaveAttribute('src',/^https:/);
+ }
+ await expect(page.locator('#phiChannelCards .channelphi-grid')).toHaveCount(0);
+});
+test('TV Guide filters real Infinity program references by day, time and network',async({page})=>{
+ await prepare(page);
+ await page.goto(base+'/infinity-tv/guide.html#chiller',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#tvGuideNetwork')).toHaveValue('chiller');
+ await expect(page.locator('#tvGuidePrograms .itvg-item')).toHaveCount(10);
+ await expect(page.locator('#tvGuidePrograms .itvg-poster').first()).toHaveAttribute('src',/^https:\/\/i\.ytimg\.com\/vi\//);
+ await page.locator('#tvGuideMore').click();
+ await expect(page.locator('#tvGuidePrograms .itvg-item')).toHaveCount(20);
+ await page.locator('#tvGuideTime').selectOption('morning');
+ await expect(page.locator('#tvGuideStatus')).toContainText('12 entries');
+ await page.locator('#tvGuideDay').selectOption('1');
+ await expect(page.locator('#tvGuidePrograms .itvg-item').first()).toBeVisible();
+ await page.locator('#tvGuideNetwork').selectOption('kyou');
+ await expect(page.locator('#tvGuidePrograms .itvg-title')).toHaveText('Check KYOU TV Guide');
+ await expect(page.locator('#tvGuidePrograms')).toContainText('Broadcaster schedule not imported');
+ await expect(page.locator('#tvGuidePrograms a[href="https://www.kyoutv.com/programming/schedule/"]')).toBeVisible();
+ await page.locator('#tvGuideNetwork').selectOption('shoplc');
+ await expect(page.locator('#tvGuidePrograms a[href="https://www.shoplc.com/pages/live-tv-program-guide"]')).toBeVisible();
+});

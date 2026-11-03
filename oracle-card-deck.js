@@ -27,7 +27,11 @@ const choices=[
  ['infinityReaderFame','Touts of Fame · Biographies'],
  ['infinityReaderSports','Sports Almanac · Records'],
  ['infinityReaderCosmic','Beyond the Signal · Read'],
- ['phiChannelCards','KYOU · Infinity live TV'],
+ ['phiChannelCards','Infinity TV Guide'],
+  ['infinityStarQuestCard','StarQuest · Infinity TV'],
+  ['infinityOmniTvCard','Omni TV · Channel remote'],
+  ['infinityChillerCard','Chiller · Classic suspense TV'],
+  ['infinityShopLcCard','Shop LC · Live shopping TV'],
  ['liveFoxGameCard','KYOU · FOX 15.1 · Iowa'],
  ['liveFoxNewsCard','LiveNOW from FOX · Live news'],
  ['phiStoryWriter','Write a story'],
@@ -62,7 +66,7 @@ const choices=[
  ['dispensary-star-buds-lakeside','21+ · Star Buds · Lakeside'],
  ['dispensary-green-solution-wewatta','21+ · The Green Solution · Wewatta'],
  ['dispensary-maikoh-broadway','21+ · Maikoh Holistics · North Broadway'],
- ['phiChannelCards','KYOU · Infinity live TV'],
+ ['phiChannelCards','Infinity TV Guide'],
  ['publicCardTrends','Explore what is trending']
 ];
 
@@ -91,7 +95,11 @@ const CARD_DIRECTIONS={
  infinityReaderFame:['reader-fame','Biographies','Discover pathways to fame and overlooked innovators'],
  infinityReaderSports:['reader-sports','Sports','Read historical games, milestones and athletic records'],
  infinityReaderCosmic:['reader-cosmic','Stories','Read original cosmic fiction and public-domain space adventures'],
- phiChannelCards:['channels','Television','Watch a channel'],
+ phiChannelCards:['channels','Television','Browse the Infinity TV Guide and select a channel'],
+  infinityStarQuestCard:['infinity-tv-starquest','Television','Play the current StarQuest selected movie and browse the guide'],
+  infinityOmniTvCard:['infinity-tv-omni','Television','Use Omni TV’s remote to select verified source channels'],
+  infinityChillerCard:['infinity-tv-chiller','Television','Watch a Chiller selected suspense program with original source details'],
+  infinityShopLcCard:['infinity-tv-shoplc','Television','Watch Shop LC live and open its official program guide'],
  phiStoryWriter:['story-writer','Stories','Write or continue a story'],
  phiMediaBuilder:['image-builder','Media','Create images and video'],
  result:['deck-research','Research','Explore sources and a current AI overview'],
@@ -136,7 +144,7 @@ const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ const names={zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
  names.housing='disabilityHousingCard';names['disability-housing']='disabilityHousingCard';names['home-access']='disabilityHousingCard';
  const requested=url.searchParams.get('card');
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
