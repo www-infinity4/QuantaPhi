@@ -73,3 +73,15 @@ test('Bubbles keeps provider ordering for topics with no source covering all que
  const found=await webSearch('search emerging liberty coin',{SEARCH});
  assert.deepEqual(found.results.map(x=>x.url),['https://example.org/weather','https://example.org/recipes']);
 });
+
+
+test('Bubbles can elevate a full-subject source beyond the first seven broker rows while returning only seven',async()=>{
+ const unrelated=Array.from({length:9},(_,i)=>({title:'General trend '+i,url:'https://example.org/trend-'+i,content:'Liberty insurance today',engine:'brave'}));
+ const SEARCH={async fetch(){return Response.json({results:[...unrelated,
+  {title:'Liberty Coin source details',url:'https://example.org/liberty-coin-source',content:'Coin issuer record',engine:'brave'}
+ ]});}};
+ const result=await webSearch('search emerging liberty coin',{SEARCH});
+ assert.equal(result.ok,true);
+ assert.equal(result.results[0].url,'https://example.org/liberty-coin-source');
+ assert.equal(result.results.length,7,'keep existing visible seven-result limit');
+});
