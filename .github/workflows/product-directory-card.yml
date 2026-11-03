@@ -27,3 +27,11 @@ jobs:
           node --check workers/product-directory/worker.mjs
       - name: Verify catalog and homepage integration contracts
         run: node --test test/product-directory-core.test.mjs test/product-directory-site.test.mjs test/product-directory-worker.test.mjs
+      - name: Install Chromium for targeted browser acceptance
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check Android-width catalog browsing
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/product-directory-browser.log 2>&1 &
+          npx playwright test test/product-directory-card.browser.spec.mjs --reporter=line --workers=1
