@@ -3,16 +3,156 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T19:41:19.461154Z",
+  "checked_at": "2026-11-03T20:01:37.450075Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "qpr vs burnley",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T19:40:00Z",
+      "related_news_urls": [
+        "https://www.burnleyexpress.net/sport/football/burnley-fc/burnleys-predicted-xi-qpr-fabio-celestini-9323203",
+        "https://insights.betfred.com/football/football-bet-of-the-day/daily-football-bet-tuesday-3-november-2026/",
+        "https://mrfixitstips.co.uk/mft-10-1000-betting-challenge-burnley-to-concede-against-qpr-for-bet-1/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvMJMay7la0M41l8lBXauw9WgyDsfOIVp7U7jUr_YSTFDFaThkYRP6MKIns9s",
+      "image_credit": "Burnley Express",
+      "news": [
+        {
+          "url": "https://www.burnleyexpress.net/sport/football/burnley-fc/burnleys-predicted-xi-qpr-fabio-celestini-9323203",
+          "title": "Burnley's predicted XI to face QPR in Fabio Celestini's first away game",
+          "publisher": "Burnley Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvMJMay7la0M41l8lBXauw9WgyDsfOIVp7U7jUr_YSTFDFaThkYRP6MKIns9s"
+        },
+        {
+          "url": "https://insights.betfred.com/football/football-bet-of-the-day/daily-football-bet-tuesday-3-november-2026/",
+          "title": "Football Bet of the Day: Kone to trouble Burnley’s fragile defence",
+          "publisher": "Betfred Insights",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaD_xcbwk0jr4bEOde4XPU88mAdnHFgC89hcl8CtYS13z5Kc-v2B68jUtbK9w"
+        },
+        {
+          "url": "https://mrfixitstips.co.uk/mft-10-1000-betting-challenge-burnley-to-concede-against-qpr-for-bet-1/",
+          "title": "MFT 10 – 1000 Betting Challenge: Burnley to concede against QPR for bet 1",
+          "publisher": "MrFixitsTips",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4ar3lLHxlMF5d2o13hz_M-38CO8hVwhPqGhTlrNPlTCA6Q4SxWps_YzRc2JA"
+        }
+      ]
+    },
+    {
+      "query": "jeremiyah love",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T19:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50370763/sources-cards-jeremiyah-love-headed-ir-4-5-weeks",
+        "https://bleacherreport.com/articles/25528726-jeremiyah-love-injury-update-latest-rumors-and-timeline-return-cardinals-rb",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-03/jeremiyah-love-ankle-headed-to-injured-reserve"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTekB8PCP8Y0GT7WgT7lZE-6Uuu4UQKD8wNipmHfuRIkYIlkrL96OkROzaIiOc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50370763/sources-cards-jeremiyah-love-headed-ir-4-5-weeks",
+          "title": "Sources: Cardinals' Jeremiyah Love to IR, out 4-5 weeks with high ankle sprain",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTekB8PCP8Y0GT7WgT7lZE-6Uuu4UQKD8wNipmHfuRIkYIlkrL96OkROzaIiOc"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25528726-jeremiyah-love-injury-update-latest-rumors-and-timeline-return-cardinals-rb",
+          "title": "Jeremiyah Love Injury Update, Latest Rumors and Timeline to Return for Cardinals RB",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8NxHFf7rDRIDdRR8FTRdwOrrp0n0k5KoEbjDeaZ_s8niirGIt6vwr-kpqhw"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-03/jeremiyah-love-ankle-headed-to-injured-reserve",
+          "title": "Jeremiyah Love (ankle) headed to injured reserve",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9EFlyI44ljoErSY801b2uIEvLx4TnTlQ18Zz5DlJKmVs8GhYYHW5Wew4KqnA"
+        }
+      ]
+    },
+    {
+      "query": "barcelone – aston villa",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T19:30:00Z",
+      "related_news_urls": [
+        "https://www.fotmob.com/news/xxwul1w1gm2816i36jhq30ixo_fr-mcginn-assure-que-villa-ne-se-fait-aucune-illusion-avant-le-defi-barcelonais?utm_source=fotmob",
+        "https://www.legossip.net/prince-william-george-voyage-barcelone-prolonge-tradition-pere-fils-chere,626813.html",
+        "https://www.anayasa.gov.tr/galeri360/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vc2Fnb3JtaWEwMDQ3LmdpdGh1Yi5pby9qb3JpbmEvbWIueG1sIi8+PC9rcnBhbm8+&id=video-barca-aston-villa-en-vivo-gratuit-dextvc-0101-apgd321"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6jEM8yq31scn91nVSh7MDtGmKm0SddHtca-Zm6oDLntB4mQefkKG94dBMjhE",
+      "image_credit": "FotMob",
+      "news": [
+        {
+          "url": "https://www.fotmob.com/news/xxwul1w1gm2816i36jhq30ixo_fr-mcginn-assure-que-villa-ne-se-fait-aucune-illusion-avant-le-defi-barcelonais?utm_source=fotmob",
+          "title": "McGinn assure que Villa ne se fait aucune illusion avant le défi barcelonais",
+          "publisher": "FotMob",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6jEM8yq31scn91nVSh7MDtGmKm0SddHtca-Zm6oDLntB4mQefkKG94dBMjhE"
+        },
+        {
+          "url": "https://www.legossip.net/prince-william-george-voyage-barcelone-prolonge-tradition-pere-fils-chere,626813.html",
+          "title": "Prince William et George : ce voyage à Barcelone qui prolonge un rituel très personnel",
+          "publisher": "Legossip.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS63NZAXh_dwbl9Fm8DstiaVRKE-5oK4wqvu3DX0y4Y8b5de8zU4bHpBxHzHes"
+        },
+        {
+          "url": "https://www.anayasa.gov.tr/galeri360/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vc2Fnb3JtaWEwMDQ3LmdpdGh1Yi5pby9qb3JpbmEvbWIueG1sIi8+PC9rcnBhbm8+&id=video-barca-aston-villa-en-vivo-gratuit-dextvc-0101-apgd321",
+          "title": "@![EN[DIRECT]! Barca-Aston Villa en direct et gratuit - Supercoupe Finale, 4 novembre 2026",
+          "publisher": "Anayasa.gov.tr",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm3dB25_EkA15kF1jEOPbrepMltyc-jptaWyQp6EoKIuQGcd8yF9mxlh8DIv0"
+        }
+      ]
+    },
+    {
+      "query": "hallie shoffner",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T19:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-arkansas.html",
+        "https://thehill.com/homenews/senate/6140995-arkansas-live-results-2026-senate-election/",
+        "https://www.nplusonemag.com/online-only/election-special/rally-for-hallie/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMcx3F8vaRkRhl_aNK8Ya30SyaiL1aPwmJ-knJgM6oIP4MkZtg4ZBFY_Mksck",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-arkansas.html",
+          "title": "Arkansas 2026: Live Election Results",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMcx3F8vaRkRhl_aNK8Ya30SyaiL1aPwmJ-knJgM6oIP4MkZtg4ZBFY_Mksck"
+        },
+        {
+          "url": "https://thehill.com/homenews/senate/6140995-arkansas-live-results-2026-senate-election/",
+          "title": "Arkansas live results: 2026 Senate election",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSD9nQ-K3pc4sKuaSvyku59f37YcP8yKV-VZ7riM812jvwSGbaMyhcpf3mCh4"
+        },
+        {
+          "url": "https://www.nplusonemag.com/online-only/election-special/rally-for-hallie/",
+          "title": "Rally for Hallie",
+          "publisher": "N+1",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXMrjrElI2Y989i3NDj56WZP27-OZvms1jQbSxj5ZXDqqjqtb2j2HsvMOvJbQ"
+        }
+      ]
+    },
     {
       "query": "josh turek",
       "approx_searches": "1000+",
       "published_at": "2026-11-03T19:20:00Z",
       "related_news_urls": [
         "https://www.nbcnews.com/politics/2026-elections/iowa-senate-results",
-        "https://www.cbsnews.com/news/josh-turek-generational-change-iowa-senate-midterms-ashley-hinson/",
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-iowa-us-senate.html",
         "https://www.c-span.org/program/campaign-2026/us-senate-candidate-rep-ashley-hinson-r-ia-speaks-to-reporters-in-des-moines/687348"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ9ESX1elFKzWLJMB4g-x-YvSDJkh90gr2lBx3rycgwdTX7JzyDv8xh2bVRJw",
@@ -26,11 +166,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ9ESX1elFKzWLJMB4g-x-YvSDJkh90gr2lBx3rycgwdTX7JzyDv8xh2bVRJw"
         },
         {
-          "url": "https://www.cbsnews.com/news/josh-turek-generational-change-iowa-senate-midterms-ashley-hinson/",
-          "title": "Josh Turek pitches \"generational change\" in tight Senate race as Iowa faces crushing health and affordability issues",
-          "publisher": "CBS News",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-iowa-us-senate.html",
+          "title": "Iowa U.S. Senate 2026: Live Midterm Election Results, Turek vs. Hinson",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfYp13U0EeaZEh0kEo8tCltuYzIIbiBrrJnPDrFg9fbiUSTZ3GqUZWKOSJZ4M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxmyMjQ46Sl9yYOJdQzYbzOVKWBDTC-1bBstvcyzWSeAGnqZsufnMcKrx9obc"
         },
         {
           "url": "https://www.c-span.org/program/campaign-2026/us-senate-candidate-rep-ashley-hinson-r-ia-speaks-to-reporters-in-des-moines/687348",
@@ -42,43 +182,8 @@
       ]
     },
     {
-      "query": "psg vs villarreal",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T19:20:00Z",
-      "related_news_urls": [
-        "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/136311/gossip-psg-ez-abde-khvicha-kvaratskheli-replacement-windfall",
-        "https://www.ysscores.com/en/news/14085073/fabrizio-rules-out-ezzalzouli-transfer-to-paris-saint-germain",
-        "https://www.goal.com/en/news/a-moroccan-star-on-paris-s-table-barcelona-waits/bltceb03078223eafa5"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBfnSSVwFbQT4Ph8UZEuCJAPLtTQrTQ8RVRdoEJ2_dPbXCwZu7uwCw-CYUJW8",
-      "image_credit": "Barca Blaugranes",
-      "news": [
-        {
-          "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/136311/gossip-psg-ez-abde-khvicha-kvaratskheli-replacement-windfall",
-          "title": "Gossip: PSG eye Ez Abde as Khvicha Kvaratskhelia replacement as Barcelona hope for windfall",
-          "publisher": "Barca Blaugranes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBfnSSVwFbQT4Ph8UZEuCJAPLtTQrTQ8RVRdoEJ2_dPbXCwZu7uwCw-CYUJW8"
-        },
-        {
-          "url": "https://www.ysscores.com/en/news/14085073/fabrizio-rules-out-ezzalzouli-transfer-to-paris-saint-germain",
-          "title": "Fabrizio rules out Ezzalzouli transfer to Paris Saint-Germain",
-          "publisher": "YSscores",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufn5wuyeYMTxPrRhENW9gm7UsIS8MTlvS6ZRAT7Xi_rWOTCI2Qdp67ZNOdaI"
-        },
-        {
-          "url": "https://www.goal.com/en/news/a-moroccan-star-on-paris-s-table-barcelona-waits/bltceb03078223eafa5",
-          "title": "A Moroccan star on Paris's table: Barcelona waits!",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVUDj642qGr8GIGqkOmgm-oQdsXc_EbtM_11rgnMliwwCAEATQj7i1fWEI0c"
-        }
-      ]
-    },
-    {
       "query": "everett wess",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-03T19:20:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-alabama.html",
@@ -117,8 +222,8 @@
       "published_at": "2026-11-03T19:10:00Z",
       "related_news_urls": [
         "https://www.espn.com/soccer/story/_/id/50359895/psg-luis-enrique-warns-overconfidence-ucl-clash-villarreal",
-        "https://sports.yahoo.com/articles/villarreal-vs-psg-official-line-184900234.html",
-        "https://www.oregonlive.com/tv/2026/11/todays-champions-league-match-between-paris-saint-germain-and-villarreal-could-be-a-game-changer-heres-your-complete-viewing-guide.html"
+        "https://www.rotowire.com/soccer/article/villarreal-vs-psg-prediction-predicted-lineups-team-news-champions-league-144955",
+        "https://sports.yahoo.com/articles/psg-manager-demands-one-thing-151600345.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQTjfURDHqJArkBYT_ClMzOqOT_q1-_mZ7iv1rautLnx3rMIBLR2PiCRS0COc",
       "image_credit": "ESPN",
@@ -131,18 +236,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQTjfURDHqJArkBYT_ClMzOqOT_q1-_mZ7iv1rautLnx3rMIBLR2PiCRS0COc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/villarreal-vs-psg-official-line-184900234.html",
-          "title": "🚨 Villarreal vs PSG: official line-ups, Mayulu starts!",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.rotowire.com/soccer/article/villarreal-vs-psg-prediction-predicted-lineups-team-news-champions-league-144955",
+          "title": "Villarreal vs PSG Prediction, Predicted Lineups & Team News",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0bH836e12VI7HoSLJ56TvE4LK7UlOdcUZ39xSAKSNULWUWokKTzdCpQIw9P0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUtxWKJdoUUZH9TrB3CVdSWbyz_Y-0mmC7prYERdikRVJrB4Am-1sg5j0Nam4"
         },
         {
-          "url": "https://www.oregonlive.com/tv/2026/11/todays-champions-league-match-between-paris-saint-germain-and-villarreal-could-be-a-game-changer-heres-your-complete-viewing-guide.html",
-          "title": "Today’s Champions League match between Paris Saint-Germain and Villarreal could be a game-changer — here’s yo",
-          "publisher": "OregonLive.com",
+          "url": "https://sports.yahoo.com/articles/psg-manager-demands-one-thing-151600345.html",
+          "title": "PSG manager demands one thing from his team in trap game against Villarreal",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5xpXNn9m8u7_NR0szrwr0D0PavnWSV2aXXkST3OtT4clG4jlw74IrYhGdCQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQz-y753ulzCHldl0ZvWzJU7g4OeF0fktKay_RMzhlFfgvOL4NEdxnZ5fVYotQ"
         }
       ]
     },
@@ -153,7 +258,7 @@
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t",
         "https://sports.yahoo.com/articles/confirmed-lineups-atl-tico-madrid-185700125.html",
-        "https://www.goal.com/en/news/officially-bayern-munich-settle-olise-s-fate-for-the-atletico-madrid-clash/bltf26a17dacb2c515c"
+        "https://www.bavarianfootballworks.com/bayern-munich-champions-league/276610/bayern-munich-boss-aaron-danks-still-sorting-through-big-decisions-ahead-of-atletico-madrid-tilt"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
       "image_credit": "BBC",
@@ -173,22 +278,22 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS96wRIbKvOse-SCiTYknSXBB6f_rzuqO4sehtkInlwcqfxBhx1G_r6xmm0xJg"
         },
         {
-          "url": "https://www.goal.com/en/news/officially-bayern-munich-settle-olise-s-fate-for-the-atletico-madrid-clash/bltf26a17dacb2c515c",
-          "title": "Officially: Bayern Munich settles Olise's fate for the clash with Atletico Madrid",
-          "publisher": "Goal.com",
+          "url": "https://www.bavarianfootballworks.com/bayern-munich-champions-league/276610/bayern-munich-boss-aaron-danks-still-sorting-through-big-decisions-ahead-of-atletico-madrid-tilt",
+          "title": "Bayern Munich boss Aaron Danks still sorting through big decisions ahead of Atlético Madrid tilt",
+          "publisher": "Bavarian Football Works",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGXEKBArMfZs3_RzJktO73KMziu4qPzIbE5esTInbd4V84Zg0lV6rzz35rqA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEf9QnL-C23HuiUUElddSjFUJe-y4xuNupTSiW9HX1PUeIwcYjsBN-ak6-Abo"
         }
       ]
     },
     {
-      "query": "feyenoord - inter",
-      "approx_searches": "500+",
+      "query": "feyenoord vs inter",
+      "approx_searches": "2000+",
       "published_at": "2026-11-03T19:10:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cmn9rpxy8899t",
-        "https://onefootball.com/en/news/chivu-i-believe-in-this-team-were-ready-for-a-big-game-43716618",
-        "https://www.goal.com/en/news/giovanni-van-bronckhorst-feyenoord-inter-champions-league/blt33962fe459785650"
+        "https://sports.yahoo.com/articles/chivu-inter-intensity-determination-grit-191800530.html",
+        "https://football-italia.net/thuram-inter-need-a-change-of-mentality/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
       "image_credit": "BBC",
@@ -201,18 +306,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://onefootball.com/en/news/chivu-i-believe-in-this-team-were-ready-for-a-big-game-43716618",
-          "title": "Chivu: \"I Believe in This Team: We're Ready for a Big Game\"",
-          "publisher": "OneFootball",
+          "url": "https://sports.yahoo.com/articles/chivu-inter-intensity-determination-grit-191800530.html",
+          "title": "Chivu: ‘Inter need intensity, determination and grit’ against Feyenoord",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA_lNX8o3kSLGZERp07oYGVAkjptB6IgPKUXfElpwV436-Ren1Te8Qcjub1GI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmUtJZEianCCK7ph9WuITRAV29wvrjBGp0_MDQZ67OpRbi4gUhl6yYIQ5R-xA"
         },
         {
-          "url": "https://www.goal.com/en/news/giovanni-van-bronckhorst-feyenoord-inter-champions-league/blt33962fe459785650",
-          "title": "De Kuip trap! Van Bronckhorst vows to exploit battered Inter in front of wild home fans",
-          "publisher": "Goal.com",
+          "url": "https://football-italia.net/thuram-inter-need-a-change-of-mentality/",
+          "title": "Thuram: ‘Inter need a change of mentality, I agree with Barella and Bastoni’",
+          "publisher": "Football Italia",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHOwyTlTfz3UrjYcfCvnTyOKGUKOxXeXXrQE-Plnu0-XnPB5lRTBIarZwUZiM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlPJSAyP-s-1hbWEx3kYzXkhhvoIzXcmlWVKMxzVMw8EIRPj1LKSdSehowYU"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "The Topeka Capital-Journal",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOC5OSfXDG5qS5yuseZEuLMjxZkrT-8S6OnWYksxAl4iQ9gVgUZZmkzpukB8o"
-        }
-      ]
-    },
-    {
-      "query": "barcelona - aston villa",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-03T19:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50370533/barcelona-aston-villa-live-champions-league-latest-updates-commentary-score-result",
-        "https://sports.yahoo.com/articles/confirmed-barcelona-starting-lineup-face-185500044.html",
-        "https://www.bbc.com/sport/football/articles/c5ev3m9ddzgmo"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMIfda313W9irTt4NiqjhHHAsLLZmvkMpI_vQsOU-_FfuZtMkHa7mi2jlM910",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50370533/barcelona-aston-villa-live-champions-league-latest-updates-commentary-score-result",
-          "title": "Barcelona vs. Aston Villa LIVE: Champions League updates as Emery's side visit Camp Nou",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMIfda313W9irTt4NiqjhHHAsLLZmvkMpI_vQsOU-_FfuZtMkHa7mi2jlM910"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/confirmed-barcelona-starting-lineup-face-185500044.html",
-          "title": "Confirmed: Barcelona starting lineup to face Aston Villa",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShwVSdIg3jGas6Fjk3Z5hKhXwsKuLozyjuLB51d7kI0rRMHqTS7CdBpayytNA"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/articles/c5ev3m9ddzgmo",
-          "title": "Aston Villa: Unai Emery aims to prove Villa's worth among the elite against Barcelona in the Champions League",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQKwRK_I04qlL9kPSISD4h8nwoD1uBAfBpqApPNcMu7hBfzfxMJYvyP5P-e7c"
-        }
-      ]
-    },
-    {
-      "query": "houston weather",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T19:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
-        "https://www.cnn.com/2026/11/02/weather/storm-flooding-arizona-colorado-election-day-climate",
-        "https://weather.com/2026/11/03/forecast/national/election-day-maps-tracker"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7BASRUEFLRN7J-Hc_VLcFjCvFAdRv-RWQFq2Pez_GEIz7mdh7knlGh_Z_GJk",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
-          "title": "Floods and severe weather beset parts of the U.S. on Election Day",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7BASRUEFLRN7J-Hc_VLcFjCvFAdRv-RWQFq2Pez_GEIz7mdh7knlGh_Z_GJk"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/02/weather/storm-flooding-arizona-colorado-election-day-climate",
-          "title": "Storm soaks central US on Election Day after causing deadly flooding, voting disruptions in Southwest",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVqaoG-Uu7zqdCWv3dJJONsb-GxjO5VoCNKy1HLU1b_Cjo1B_AARSWQRFo-Ow"
-        },
-        {
-          "url": "https://weather.com/2026/11/03/forecast/national/election-day-maps-tracker",
-          "title": "Election Day 2026 weather forecast: Nov. 3 maps and tracker",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-7lAs_marqVYNXqjxqmNXLN26KKsEmTjGtwcQpnwcUliRklncOquc6Z49rw"
-        }
-      ]
-    },
-    {
-      "query": "kendall puryear free throw",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T19:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/college-basketball-player-bizarre-foul-shot-goes-viral-season-opener-diabolical",
-        "https://sports.yahoo.com/articles/usf-forwards-free-throw-form-125440451.html",
-        "https://www.al.com/sports/2026/11/college-basketball-player-goes-viral-for-awful-free-throw-shooting-form.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwtaoIsycPq0bnCDa20ibYwarxa_SgtIjWgN7qwnMui82l5PiaoQ7OSNZ6YLI",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/college-basketball-player-bizarre-foul-shot-goes-viral-season-opener-diabolical",
-          "title": "College basketball player's bizarre foul shot goes viral in season-opener: 'Diabolical' | OutKick",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwtaoIsycPq0bnCDa20ibYwarxa_SgtIjWgN7qwnMui82l5PiaoQ7OSNZ6YLI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/usf-forwards-free-throw-form-125440451.html",
-          "title": "USF forward's free throw form goes viral for looking like a shot put toss",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33d8VzYBDFijquzOX4X9hcy75QMGlFJQpRiePVM2ZStmlrZhHeGKSOzpuZHk"
-        },
-        {
-          "url": "https://www.al.com/sports/2026/11/college-basketball-player-goes-viral-for-awful-free-throw-shooting-form.html",
-          "title": "College basketball player goes viral for awful free-throw shooting form",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWWDUzzWwAh88c7HqECuyA7pxH623q3tjFBQCinRIxKTGS0ZKxgR3RA3YFXc0"
         }
       ]
     }
