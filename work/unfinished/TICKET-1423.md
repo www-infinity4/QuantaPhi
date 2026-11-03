@@ -31,6 +31,8 @@ next_action: "Review draft PR #1492 and merge only after exact-head CI, reproduc
 
 # Nov 2 source-catalog checkpoint
 
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1423
+
 ## Actual Cloudflare receipts
 
 - Created **new isolated D1** `quantaphi-product-directory` (UUID `18f1b8da-ec20-45e4-8c19-c9037439949c`) without touching existing Quick Cards, WidgetPhi, wallets or identities.
