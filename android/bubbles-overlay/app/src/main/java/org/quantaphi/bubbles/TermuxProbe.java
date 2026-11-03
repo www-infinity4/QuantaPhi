@@ -93,6 +93,11 @@ final class TermuxProbe {
     static String run(Context context, String kind) {
         if (!"shell".equals(kind) && !"python".equals(kind))
             return "Unsupported Termux check. No command was dispatched.";
+        // A second check must not erase the first command's pending receipt
+        // even if Termux is temporarily unavailable or its permission was revoked.
+        JSONObject current = receipt(context);
+        if ("queued".equals(current.optString("state")))
+            return "A Termux check was already sent. Waiting for Termux's real result.";
         if (!installed(context)) {
             record(context, "not_installed", "Termux is not visible or installed on this phone.", 0, kind);
             return "Termux isn't installed or launchable. No test ran.";
@@ -102,9 +107,6 @@ final class TermuxProbe {
                 "Grant Bubbles 'Run commands in Termux environment' in Android Additional permissions.", 0, kind);
             return "Bubbles does not have Android's Termux command permission. No test ran.";
         }
-        JSONObject current = receipt(context);
-        if ("queued".equals(current.optString("state")))
-            return "A Termux check was already sent. Waiting for Termux's real result.";
         // Only a freshly acknowledged Android owner dialog calls this method.
         int id = (int)(System.currentTimeMillis() & 0x7fffffff);
         Intent callback = new Intent(context, TermuxProbeResultReceiver.class).setAction(RESULT_ACTION);
