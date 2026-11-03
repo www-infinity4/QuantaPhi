@@ -4022,7 +4022,7 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||'No confirmed request'));
    activeIterationTicketId=result.ticket.id;
-   activeIterationThreadId=activeThread;
+   activeIterationThreadId=typeof activeThread==='string'?activeThread:'';
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
     type:'job',repository,status:result.ticket.status,url:result.ticket.progress?.url||''}}));
   if(String(workText.value||'').trim()===request)workText.value='';
