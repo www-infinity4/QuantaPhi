@@ -49,3 +49,38 @@ test('actual page includes no SSN collection input or client-side storage script
   assert.doesNotMatch(x,/localStorage|sessionStorage|indexedDB|sendBeacon|gtag\(/);
  }
 });
+
+test('session preview supports additional ordinary identity and contact planning fields',()=>{
+ const p=redactPreview({preferredName:'Kris',email:'owner@example.test',city:'Des Moines',region:'IA',postalCode:'50309',country:'United States',
+  name:'Example Person',householdSize:'2',benefits:'unknown'});
+ assert.equal(p.preferredName,'Kris');
+ assert.equal(p.email,'owner@example.test');
+ assert.equal(p.city,'Des Moines');
+ assert.equal(p.region,'IA');
+ assert.equal(p.postalCode,'50309');
+ assert.equal(p.country,'United States');
+ assert.equal(p.verified_21,false);
+ assert.match(p.note,/not saved or transmitted/);
+});
+test('session preview suppresses SSNs and payment cards accidentally pasted into ordinary fields',()=>{
+ const p=redactPreview({name:'123-45-6789',preferredName:'123456789',business:'4111 1111 1111 1111',email:'owner@example.test',phone:'555-1212'});
+ for(const field of ['name','preferredName','business'])assert.equal(p[field],'');
+ assert.equal(p.email,'owner@example.test');
+ assert.equal(p.sensitiveInputRejected,true);
+ assert.ok(!JSON.stringify(p).includes('123-45-6789'));
+ assert.ok(!JSON.stringify(p).includes('4111 1111 1111 1111'));
+});
+test('identity settings have a useful session-only profile flow with a visible verification hold',async()=>{
+ const fs=await import('node:fs/promises');
+ const page=await fs.readFile(new URL('../bubbles-identity-settings.html',import.meta.url),'utf8');
+ const ui=await fs.readFile(new URL('../bubbles-identity-settings.mjs',import.meta.url),'utf8');
+ for(const field of ['preferredName','email','city','region','postalCode','country']){
+  assert.match(page,new RegExp('name="'+field+'"'));
+  assert.match(ui,new RegExp("p\\."+field));
+ }
+ assert.match(page,/Identity verification is not enabled/);
+ assert.match(ui,/sensitiveInputRejected/);
+ assert.doesNotMatch(page,/<input[^>]+name="ssn"/i);
+ assert.doesNotMatch(page,/<input[^>]+type="file"/i);
+ assert.doesNotMatch(ui,/fetch\s*\(|localStorage|sessionStorage|indexedDB/);
+});
