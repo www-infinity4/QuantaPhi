@@ -61,6 +61,20 @@ final class TermuxProbe {
         "exit \"$code\""
     );
 
+    // Fixed, credential-free HTTPS diagnostics, with timing from the actual phone.
+    // Network connectivity is NOT a Cloudflare owner login or permission grant.
+    static final String CLOUDFLARE_SCRIPT = String.join("\n",
+        "set -u",
+        "if ! command -v curl >/dev/null 2>&1; then echo 'curl=not_installed'; exit 127; fi",
+        "for item in 'quantaphi https://quantaphi.org/' 'cloudflare https://www.cloudflare.com/'; do",
+        "  label=${item%% *}",
+        "  url=${item#* }",
+        "  stats=$(curl --silent --show-error --output /dev/null --connect-timeout 4 --max-time 12 --write-out 'http=%{http_code};dns=%{time_namelookup};tls=%{time_appconnect};total=%{time_total}' \"$url\") || exit 70",
+        "  printf 'target=%s;%s\\n' \"$label\" \"$stats\"",
+        "done",
+        "echo 'cloudflare_probe=complete'"
+    );
+
     private TermuxProbe() {}
     static boolean installed(Context context) {
         return context.getPackageManager().getLaunchIntentForPackage("com.termux") != null;
@@ -69,9 +83,16 @@ final class TermuxProbe {
         return context.checkSelfPermission(PERMISSION) == PackageManager.PERMISSION_GRANTED;
     }
     private static void record(Context context, String state, String detail, int requestId) {
+        String mode = "python";
+        try { mode = new JSONObject(BrainNotes.prefs(context).getString("termux_probe_receipt", "{}"))
+                .optString("mode", "python"); } catch (Exception ignored) {}
+        record(context, state, detail, requestId, mode);
+    }
+    private static void record(Context context, String state, String detail, int requestId, String mode) {
         try {
             JSONObject receipt = new JSONObject()
                 .put("id", requestId).put("state", state)
+                .put("mode", "cloudflare".equals(mode) ? "cloudflare" : "python")
                 .put("detail", detail).put("at", System.currentTimeMillis());
             BrainNotes.prefs(context).edit().putString("termux_probe_receipt", receipt.toString()).apply();
         } catch (Exception ignored) {}
@@ -88,19 +109,21 @@ final class TermuxProbe {
             return value;
         } catch (Exception ignored) { return new JSONObject(); }
     }
-    static String run(Context context) {
+    static String run(Context context) { return run(context, "python"); }
+    static String runCloudflare(Context context) { return run(context, "cloudflare"); }
+    private static String run(Context context, String mode) {
         if (!installed(context)) {
-            record(context, "not_installed", "Termux is not visible or installed on this phone.", 0);
+            record(context, "not_installed", "Termux is not visible or installed on this phone.", 0, mode);
             return "Termux isn't installed or launchable. No test ran.";
         }
         if (!permitted(context)) {
             record(context, "permission_blocked",
-                "Grant Bubbles 'Run commands in Termux environment' in Android Additional permissions.", 0);
+                "Grant Bubbles 'Run commands in Termux environment' in Android Additional permissions.", 0, mode);
             return "Bubbles does not have Android's Termux command permission. No test ran.";
         }
         JSONObject current = receipt(context);
         if ("queued".equals(current.optString("state")))
-            return "A Python test was already sent. Waiting for Termux's real result.";
+            return "A Termux check is already running. Waiting for the actual result.";
         // Only a freshly acknowledged Android owner dialog calls this method.
         int id = (int)(System.currentTimeMillis() & 0x7fffffff);
         Intent callback = new Intent(context, TermuxProbeResultReceiver.class).setAction(RESULT_ACTION);
@@ -110,23 +133,23 @@ final class TermuxProbe {
         Intent request = new Intent("com.termux.RUN_COMMAND");
         request.setClassName("com.termux", "com.termux.app.RunCommandService");
         request.putExtra("com.termux.RUN_COMMAND_PATH", PREFIX + "sh");
-        request.putExtra("com.termux.RUN_COMMAND_ARGUMENTS", new String[]{"-c", SCRIPT});
+        request.putExtra("com.termux.RUN_COMMAND_ARGUMENTS", new String[]{"-c", "cloudflare".equals(mode) ? CLOUDFLARE_SCRIPT : SCRIPT});
         request.putExtra("com.termux.RUN_COMMAND_WORKDIR", HOME);
         request.putExtra("com.termux.RUN_COMMAND_BACKGROUND", true);
-        request.putExtra("com.termux.RUN_COMMAND_COMMAND_LABEL", "Bubbles owner-approved Python test");
+        request.putExtra("com.termux.RUN_COMMAND_COMMAND_LABEL", "cloudflare".equals(mode) ? "Bubbles Cloudflare network check" : "Bubbles owner-approved Python test");
         request.putExtra("com.termux.RUN_COMMAND_PENDING_INTENT", pending);
-        record(context, "queued", "Command sent; execution is not yet verified.", id);
+        record(context, "queued", "Command sent; execution is not yet verified.", id, mode);
         try {
             context.startService(request);
-            return "Python diagnostic sent to Termux. Waiting for output and a cleanup receipt.";
+            return "cloudflare".equals(mode) ? "Cloudflare network check sent to Termux; waiting for a real result." : "Python diagnostic sent to Termux. Waiting for output and a cleanup receipt.";
         } catch (SecurityException error) {
             pending.cancel();
             record(context, "permission_blocked",
-                "Termux denied external command. Set allow-external-apps=true in ~/.termux/termux.properties.", id);
+                "Termux denied external command. Set allow-external-apps=true in ~/.termux/termux.properties.", id, mode);
             return "Termux blocked external commands. No test was confirmed.";
         } catch (RuntimeException error) {
             pending.cancel();
-            record(context, "dispatch_failed", "Android did not dispatch the Termux command.", id);
+            record(context, "dispatch_failed", "Android did not dispatch the Termux command.", id, mode);
             return "Android couldn't send the Python diagnostic to Termux.";
         }
     }
@@ -136,6 +159,9 @@ final class TermuxProbe {
         record(context, state, detail, id);
     }
     static void cancel(Context context) {
-        record(context, "owner_cancelled", "The owner did not approve the Python diagnostic.", 0);
+        record(context, "owner_cancelled", "The owner did not approve the Python diagnostic.", 0, "python");
+    }
+    static void cancelCloudflare(Context context) {
+        record(context, "owner_cancelled", "The owner did not approve the Cloudflare connectivity check.", 0, "cloudflare");
     }
 }
