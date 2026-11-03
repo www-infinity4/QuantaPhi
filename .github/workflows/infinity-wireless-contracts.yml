@@ -1,0 +1,32 @@
+name: Infinity Wireless planning intake contracts
+on:
+  pull_request:
+    paths:
+      - 'wireless/**'
+      - 'workers/infinity-wireless/**'
+      - 'test/infinity-wireless.test.mjs'
+      - '.github/workflows/infinity-wireless-contracts.yml'
+  push:
+    branches: [main, 'feature/bubbles-wireless-card-20261102']
+    paths:
+      - 'wireless/**'
+      - 'workers/infinity-wireless/**'
+      - 'test/infinity-wireless.test.mjs'
+      - '.github/workflows/infinity-wireless-contracts.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and fail-closed contract tests
+        run: |
+          node --check workers/infinity-wireless/worker.mjs
+          node --check wireless/order.mjs
+          node --test test/infinity-wireless.test.mjs
