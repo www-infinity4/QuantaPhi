@@ -10,7 +10,8 @@
 .qcs-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:7px;padding:10px 15px;background:#f5f9fc;border-top:1px solid #dfebf4}
 .qcs-count{font-size:11px;color:#4c6479;flex:1 1 80px}.qcs-nav button{border:1px solid #c9dbe9;border-radius:10px;background:white;color:#15527d;font:750 12px system-ui;min-height:44px;padding:10px;cursor:pointer}
 .qcs-nav button:disabled{opacity:.5;cursor:default}.qcs-panel a:focus-visible,.qcs-panel button:focus-visible{outline:3px solid #e7ad37;outline-offset:2px}
-.qcs-has-items>.iac-media,.qcs-has-items>.qbp-image-link,.qcs-has-items>.vbs-art,
+/* Preserve the accepted-brand source photo while its rotating spotlight is active. */
+.qcs-has-items>.qbp-image-link,.qcs-has-items>.vbs-art,
 .qcs-has-items>.qbp-info>.qbp-title,.qcs-has-items>.qbp-info>.qbp-desc,.qcs-has-items>.qbp-info>.qbp-price{display:none}
 .qcs-has-items>.qbp-info>.qbp-links{display:none}
 @media(max-width:360px){.qcs-meta,.qcs-title,.qcs-desc,.qcs-price{margin-left:11px!important;margin-right:11px!important}.qcs-nav{padding:9px}}
