@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T20:45:00.365754Z",
+  "checked_at": "2026-11-03T02:53:28.579695Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -2217,7 +2217,7 @@
     },
     "colorado-glenwood-hot-springs": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://hotspringspool.com/",
@@ -2225,7 +2225,7 @@
           "title": "Home Page",
           "kind": "website",
           "description": "Discover the ultimate Colorado destination with world famous hot springs pool, 107 room lodge and premier athletic club. Perfect for families & romantic getaways.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2234,7 +2234,7 @@
           "title": "Glenwood Hot Springs Resort Logo White Text",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2243,7 +2243,7 @@
           "title": "View from the Bridge of Glenwood Hot Springs Resort Pools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2252,7 +2252,7 @@
           "title": "Glenwood Hot Springs Resort | Specials: Ski Swim Stay",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2261,7 +2261,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "Enjoy the benefits of the largest hot springs pool for the day or all year long at Glenwood Hot Springs Resort.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2270,7 +2270,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2279,7 +2279,7 @@
           "title": "Glenwood Hot Springs Resort Wins Seven 2026 Locals’ Choice Award",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2288,14 +2288,14 @@
           "title": "Hot Springs",
           "kind": "website",
           "description": "Soak in mineral-rich, heated water to refresh tired muscles, swim laps, or enjoy summer with cabana rentals and the Sopris Splash Zone. Experience it all at Glenwood Hot Springs.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Relaxation"
         }
       ]
     },
     "colorado-ouray-ice-park": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://ourayicepark.com/events/2027/01/28/fest",
@@ -2303,7 +2303,7 @@
           "title": "32nd Annual Ouray Ice Festival",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2312,7 +2312,7 @@
           "title": "February 25th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2321,7 +2321,7 @@
           "title": "February 17th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2330,7 +2330,7 @@
           "title": "February 11th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2339,14 +2339,14 @@
           "title": "February 4th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · Technical ice"
         }
       ]
     },
     "colorado-ice-lakes-basin": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://www.fs.usda.gov/r02/sanjuan",
@@ -2354,16 +2354,16 @@
           "title": "San Juan National Forest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · High alpine"
         },
         {
           "url": "https://www.fs.usda.gov/r02/sanjuan",
-          "image": "https://www.fs.usda.gov/sites/nfs/files/styles/thumbnail/public/r02/sanjuan/image/202509_MissionaryRidge2.jpg?h=a42e190f",
-          "title": "Missionary Ridge",
+          "image": "https://www.fs.usda.gov/sites/nfs/files/styles/thumbnail/public/r02/sanjuan/image/20261027_FS_Lyon_0036_EastForkDamage_Photo.jpeg?h=49de03db",
+          "title": "A road is washed out by a river",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2372,7 +2372,7 @@
           "title": "Road Conditions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2381,14 +2381,14 @@
           "title": "South Mineral Campground",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Colorado · High alpine"
         }
       ]
     },
     "durable-vitamix": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://www.vitamix.com/us/en_us/",
@@ -2396,7 +2396,7 @@
           "title": "High Performance Blenders - Blending Machines | Vitamix",
           "kind": "website",
           "description": "Vitamix is one of the most trusted brands in high performance blending technology for your home and business. Experience a Vitamix machine today!",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2405,7 +2405,7 @@
           "title": "Vitamix MaxExtract",
           "kind": "website",
           "description": "For the first time, Vitamix brings its trusted performance to cold press juicing. The Vitamix MaxExtract™ Cold Press Juicer is designed for maximum output, minimal prep, and simple clean-up, so you can enjoy fresh juice from whole fruits and vegetables with le",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2414,7 +2414,7 @@
           "title": "MaxExtract™ Cold Press Juicer",
           "kind": "product",
           "description": "The Vitamix MaxExtract™ Cold Press Juicer is designed for maximum output, minimal prep, and simple clean-up, so you can enjoy fresh juice from whole fruits and vegetables with less effort.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "499.95",
@@ -2422,6 +2422,42 @@
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock"
           }
+        },
+        {
+          "url": "https://www.vitamix.com/us/en_us/shop/ascent-x-series-blenders",
+          "image": "https://www.vitamix.com/us/en_us/shop/media_1148e75cb773e519c82458b242d7c813e79013e86.png?width=1200&format=pjpg&optimize=medium",
+          "title": "Ascent X Series Blenders | Vitamix",
+          "kind": "website",
+          "description": "The Ascent X Series is Vitamix’s premium blender line. Its reimagined design combines an intuitive touch interface with a sophisticated, timeless look that feels at home in any home. It’s the best in blending, enhanced by customer feedback and updated for the ",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.vitamix.com/us/en_us/shop/ascent-x-series-blenders",
+          "image": "https://www.vitamix.com/us/en_us/shop/media_115e2602d5a710cb7c39b67c10720547d27c5ed70.avif?width=750&format=avif&optimize=medium",
+          "title": "Image of Blenders",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.vitamix.com/us/en_us/shop/ascent-x-series-blenders",
+          "image": "https://www.vitamix.com/us/en_us/shop/media_19a6cabe5a06fa0ae06643f090660209be8c46a85.avif?width=750&format=avif&optimize=medium",
+          "title": "Image of Food Processor",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.vitamix.com/us/en_us/shop/ascent-x-series-blenders",
+          "image": "https://www.vitamix.com/us/en_us/shop/media_1202dda54b5dac6a7a944e07b52e7025c22c3151d.avif?width=750&format=avif&optimize=medium",
+          "title": "Image of Accessories",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "category": "Infrastructure & Physical Tools"
         },
         {
           "url": "https://www.vitamix.com/us/en_us/shop/personal-blending",
@@ -2436,12 +2472,12 @@
     },
     "durable-ankarsrum": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": []
     },
     "durable-bialetti": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://www.bialetti.com/us_en",
@@ -2449,7 +2485,7 @@
           "title": "homepage-slider-US",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2458,7 +2494,7 @@
           "title": "US_signature-series",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2467,7 +2503,7 @@
           "title": "US_signature-series",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2476,7 +2512,7 @@
           "title": "Moka express Bialetti",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2485,7 +2521,7 @@
           "title": "Gift Ideas & Bundles",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2494,7 +2530,7 @@
           "title": "Dolce & Gabbana Moka Pot 3 Cup Carretto – Italian stovetop espresso maker",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2503,7 +2539,7 @@
           "title": "Bialetti Ultimate Moka Collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2512,14 +2548,14 @@
           "title": "Bialetti Moka Essentials Bundle",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-technivorm-moccamaster": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://us.moccamaster.com/",
@@ -2527,7 +2563,7 @@
           "title": "Moccamaster USA: Premium Pour-Over Coffee Brewers",
           "kind": "website",
           "description": "Coffee brewers handmade in the Netherlands out of high-quality, sustainable materials, built to last a lifetime. Dedicated to seeking the real taste of coffee.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2536,7 +2572,7 @@
           "title": "layout",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2545,7 +2581,7 @@
           "title": "layout",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2554,7 +2590,7 @@
           "title": "Off-White KBGV Select glass carafe coffee brewer on a kitchen counter.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2563,15 +2599,9 @@
           "title": "Moccamaster KM5 Burr Grinder",
           "kind": "product",
           "description": "The Moccamaster KM5 Burr Grinder contains a powerful, direct-drive motor that grinds coffee quickly and efficiently, and its static-reducing dispensing spout creates a mess-free grinding experience. The stepless knob allows for the finest adjustment of the 50 ",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
-          "offer": {
-            "price": "349.0",
-            "currency": "USD",
-            "evidence": "jsonld-offer",
-            "availability": "http://schema.org/InStock",
-            "valid_until": "2027-10-28T23:59:59+00:00"
-          }
+          "offer": null
         },
         {
           "url": "https://us.moccamaster.com/collections/glass-carafe-brewers/products/kbgv?variant=48110491435171",
@@ -2579,7 +2609,7 @@
           "title": "Moccamaster KBGV Coffee Maker – SCA/ECBC Certified Filter Brewer",
           "kind": "product",
           "description": "The Moccamaster KBGV Coffee Maker is a premium SCA-certified filter coffee brewer designed to brew pour-over-quality coffee at home. Handmade in the Netherlands, the KBGV delivers precise brewing temperature, even water distribution, and exceptional durability",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         }
@@ -2587,7 +2617,7 @@
     },
     "durable-rada-cutlery": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://radakitchenstore.com/",
@@ -2595,7 +2625,7 @@
           "title": "Rada Kitchen Store | Rada Cutlery Personal Shopping & Gifts",
           "kind": "website",
           "description": "Shop for Rada Cutlery kitchen knives, cooking utensils, cookbooks and other 100% USA Made kitchen products from Rada Mfg. Co. Purchase for yourself or as gifts.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2604,7 +2634,7 @@
           "title": "Rada Kitchen Store",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2613,7 +2643,7 @@
           "title": "Rada Kitchen Store",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2622,7 +2652,7 @@
           "title": "Rada Kitchen Store | Rada Cutlery Personal Shopping & Gifts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2631,7 +2661,7 @@
           "title": "Wedding Register Gift Set",
           "kind": "product",
           "description": "$16.95 This four-piece Wedding Register Gift Set includes knives that make the future of any kitchen just a little bit brighter. All four knives were made with a specific purpose in mind, yet can be used on all kinds of foods, making them incredibly versatile ",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         },
@@ -2641,7 +2671,7 @@
           "title": "Housewarming Gift Set",
           "kind": "product",
           "description": "$16.95 Rada’s three-piece Housewarming Gift Set includes these incredible knives—Regular Paring, Utility/Steak, and Slicer. All are highly rated thanks to their high quality, usefulness, and good looks. In blade sizes 3¼ʺ, 4⅞ʺ, and 7ʺ, these multi-taskers are ",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         },
@@ -2651,7 +2681,7 @@
           "title": "Meal Prep Gift Set",
           "kind": "product",
           "description": "$16.95 If you know someone who loves to cook but is short on time, this is the set for them. It includes our Granny Paring, Heavy Duty Paring, Super Parer, and Vegetable Peeler. These are the go-to items for tasks that require precision, dependable control, an",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         }
@@ -2659,7 +2689,7 @@
     },
     "durable-wusthof": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://wusthof.com/",
@@ -2667,7 +2697,7 @@
           "title": "a Wusthof Amici series knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2676,7 +2706,7 @@
           "title": "a Wusthof amici 1814 knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2685,7 +2715,7 @@
           "title": "a Classic Wusthof knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2694,7 +2724,7 @@
           "title": "A Wusthof Classic knife handle in the Wild Blueberry",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2703,7 +2733,7 @@
           "title": "WÜSTHOF Digital Gift Card",
           "kind": "product",
           "description": "Whatever the occasion — birthday, wedding, housewarming, or holiday — give a WÜSTHOF Digital Gift Card, the best choice for any special event. The lucky recipient will make the right choice from a wonderful selection of the world’s best knives from a company w",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "25.0",
@@ -2718,7 +2748,7 @@
           "title": "Classic Ikon Hand-Held Knife Sharpener",
           "kind": "product",
           "description": "The easiest way to sharpen knives and to keep them sharp. This 2-stage pull-through, V-shaped Knife Sharpener with diamond rods and ceramic steels is particularly suitable for those who do not feel comfortable using Sharpening Steels or Whetstones. With this S",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "85.0",
@@ -2733,7 +2763,7 @@
           "title": "a Wusthof Amici series knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2742,14 +2772,14 @@
           "title": "a Wusthof amici 1814 knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-zwilling-j-a-henckels": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://www.zwilling.com/us/",
@@ -2757,7 +2787,7 @@
           "title": "ZWILLING, It's a culinary world",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2766,7 +2796,7 @@
           "title": "Zwilling",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2775,7 +2805,7 @@
           "title": "Image of ZWILLING Four Star 8-inch Chef's Knife on a sleek black background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2784,14 +2814,14 @@
           "title": "Image of ZWILLING Peak Fry Pan on a black background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-mauviel": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://mauviel-usa.com/",
@@ -2799,7 +2829,7 @@
           "title": "Mauviel 1830",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2808,7 +2838,7 @@
           "title": "Gifts for every cook, every budget",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2817,7 +2847,7 @@
           "title": "Mauviel M'Heritage M'250 B 10-piece cookware set with brass handles, including pots and pans in stainless steel finish.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2826,7 +2856,7 @@
           "title": "Mauviel M'Heritage M'250 B 10-piece cookware set with brass handles, includes saucepans, frying pans, and stockpots on a kitchen countertop.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2835,7 +2865,7 @@
           "title": "Mauviel 1830 M'Heritage M'250 B 10-Piece Cookware Set, Brass Handles",
           "kind": "product",
           "description": "The 10-Piece set Includes: 2.7-Qt Sauce Pan With Lid 3.3-Qt Sauce Pan With Lid 3.3-Qt Saute Pan With Lid 10.2-In Frying Pan 11.8-In Frying Pan 6.1-Qt Stewpan With Lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainless steel inside 10%.",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "2999.95",
@@ -2850,7 +2880,7 @@
           "title": "Mauviel 1830 M'Heritage M'150 B 12-Piece Copper Cookware Set With Brass Handles",
           "kind": "product",
           "description": "Set includes: 1.9-qt Sauce Pan with lid 2.8-qt Sauce Pan with lid 3.5-qt Sauce Pan with lid 3.3-qt Saute pan 3.7-qt Chef Pan 7.9 in Frying pan 10.2-in Frying pan 6.3-qt Stewpan with lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainles",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "2499.95",
@@ -2865,7 +2895,7 @@
           "title": "Mauviel 1830 M'Heritage M'150 B 10-Piece Copper Cookware Set With Brass Handles",
           "kind": "product",
           "description": "Set includes 1.9-qt Sauce pan With Lid 3.5-qt Sauce pan With Lid 3.3-qt Sauté pan With Lid 10.2-in Frying Pan 11.8-in Frying Pan 6.3-qt Stewpan With Lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainless steel inside 10%. Copper Thickn",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "2149.95",
@@ -2878,12 +2908,12 @@
     },
     "durable-framework-computers": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": []
     },
     "durable-fairphone": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T05:57:00.944977Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://www.fairphone.com/",
@@ -2891,7 +2921,7 @@
           "title": "Hand holding a blue Fairphone Gen 6+ in front of pink spring blossom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2900,7 +2930,7 @@
           "title": "Hand holding a green Fairphone Gen 6+, rear view, in front of sunlit grass",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2909,7 +2939,7 @@
           "title": "Fairtrade certification mark",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2918,7 +2948,7 @@
           "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2927,7 +2957,7 @@
           "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2936,7 +2966,7 @@
           "title": "30W USB-C Fast Charger",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2945,7 +2975,7 @@
           "title": "USB-C Long Life Charging Cable",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2954,14 +2984,14 @@
           "title": "Fairbuds XL Headphones USB-C - mini jack 3.5mm Cable",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T05:57:00.944977Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-system76": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://system76.com/",
@@ -2969,7 +2999,7 @@
           "title": "the New Thelio Prime",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2978,7 +3008,7 @@
           "title": "the New Adder Pro",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2987,7 +3017,7 @@
           "title": "the New Lemur Pro now in 14in and 16in sizes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2996,14 +3026,14 @@
           "title": "Thelio Mira desktop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-pine64": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://pine64.org/",
@@ -3011,7 +3041,7 @@
           "title": "PINE64",
           "kind": "website",
           "description": "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects. Founded in 2015, it is known for affordable devices that promote user freedom.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3020,7 +3050,7 @@
           "title": "RockPro64",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3029,7 +3059,7 @@
           "title": "Quartz64 Model B",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3038,14 +3068,14 @@
           "title": "Star64 featuring RISC-V",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-mnt-research": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://mntre.com/",
@@ -3053,7 +3083,7 @@
           "title": "MNT Research GmbH",
           "kind": "website",
           "description": "MNT Research makes open source hardware laptops, mobile devices and keyboards that are modular and repairable. Designed and assembled in Berlin, EU.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3062,7 +3092,7 @@
           "title": "MNT Pocket Reform - purple",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3071,7 +3101,7 @@
           "title": "space themed illustration of a magical Pocket Reform(3D shapes are coming out of the screen) with two tattooed hands typing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3080,7 +3110,7 @@
           "title": "an illustration of a person using MNT Pocket Reform on a sofa with their dog chilling nearby",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3089,7 +3119,7 @@
           "title": "illustration of a cafe with two people using Pocket Reform and a cat sitting on a chair.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3098,7 +3128,7 @@
           "title": "MNT ZZ9000 R-3, Black Version",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3107,7 +3137,7 @@
           "title": "MNT ZZ9000AX Audio Module (Back)",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3116,24 +3146,24 @@
           "title": "MNT ZZ9000 Heatsink, Top",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-thinkpad-classic-t-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": []
     },
     "durable-noctua": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": []
     },
     "durable-seasonic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://seasonic.com/atx3-prime-tx/",
@@ -3141,7 +3171,7 @@
           "title": "ATX3-PRIME-TX-1600-1300-PX-1600-back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3150,7 +3180,7 @@
           "title": "ATX3 PRIME TX-1600-1300-PX-1600-back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3159,7 +3189,7 @@
           "title": "PRIME-Fanless-TX-700-600",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3168,14 +3198,14 @@
           "title": "PRIME Fanless PX-500-450 back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-ifixit": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://www.ifixit.com/",
@@ -3183,7 +3213,7 @@
           "title": "iFixit: The Free Repair Manual",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3192,7 +3222,7 @@
           "title": "MacBook Air Battery",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3201,7 +3231,7 @@
           "title": "A person repairing a laptop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3210,7 +3240,7 @@
           "title": "Assortment of quality parts and tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3219,14 +3249,14 @@
           "title": "iFixit Repair Business Toolkit: Phone, Laptop, Tablet Starter Tools",
           "kind": "product",
           "description": "A whole repair shop in one bag, featuring time-tested, high-quality tools specially curated alongside the latest and greatest in repair technology.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "299.95",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock",
-            "valid_until": "2027-11-01T13:15:32.607000+00:00"
+            "valid_until": "2027-11-03T02:53:53.414000+00:00"
           }
         },
         {
@@ -3235,14 +3265,14 @@
           "title": "iFixit Pro Tech® Toolkit: Computer, Phone, Electronics Repair Kit",
           "kind": "product",
           "description": "The original electronics toolkit: Designed for computer, smartphone, tablet, and gaming repair, backed by thousands of free instructions.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "79.95",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock",
-            "valid_until": "2027-11-01T13:15:33.018000+00:00"
+            "valid_until": "2027-11-03T02:53:53.786000+00:00"
           }
         },
         {
@@ -3251,7 +3281,7 @@
           "title": "iFixit Gear: Shirts, Stickers, Posters, and Patches | iFixit",
           "kind": "website",
           "description": "Original iFixit shirts, stickers, posters, patches, and bags for people who'd rather fix it than toss it.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3260,19 +3290,19 @@
           "title": "iFixit Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-sony-professional-pro-audio": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": []
     },
     "durable-sennheiser-studio-monitor-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://www.sennheiser.com/en-us",
@@ -3280,7 +3310,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "For over 75 years, our products come with a built-in mission: to stay true to the sound and soul the music was given by its artist.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3289,7 +3319,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3298,7 +3328,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3307,7 +3337,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3316,7 +3346,7 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "Discover Sennheiser's microphones: Accentuate character, lend power to the voice, reach and touch the audience. Learn more now!",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3325,16 +3355,16 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
-          "url": "https://www.sennheiser.com/en-us/catalog/products/microphones",
-          "image": "https://assets.sennheiser.com/images/assets/taa_filter_card_us.png/Zz0wMjUzMDYyODM5MGYxMWYxYjM5YTUyZmMxYjdlNGFiNw==?width=1920&format=webp&quality=80",
-          "title": "Looking for TAA-compliant products?",
+          "url": "https://www.sennheiser.com/en-us/product-families/microphones-evolution",
+          "image": "https://assets.sennheiser.com/assets/CROPPED-Product-Series-Tile-Evolution.png/Zz00ZDUzNzJhY2U3ZDkxMWYwYmIyMWNlM2Q3NWM0MGYwNw==?width=1920&format=webp&quality=80",
+          "title": "evolution",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3343,14 +3373,14 @@
           "title": "Wireless Systems: Top Audio Solutions | Sennheiser",
           "kind": "website",
           "description": "Unleash superior sound with Sennheiser wireless systems. Experience unmatched audio quality and reliability for professional-grade performance.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-beyerdynamic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://north-america.beyerdynamic.com/",
@@ -3358,7 +3388,7 @@
           "title": "MMX 130 WIRELESS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3367,7 +3397,7 @@
           "title": "AVENTHO Y",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3376,7 +3406,7 @@
           "title": "Made in Germany | beyerdynamic",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3385,14 +3415,14 @@
           "title": "Made in Germany T1 & T5 in third generation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-audio-technica-studio-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T02:53:28.579695Z",
       "items": [
         {
           "url": "https://www.audio-technica.com/en-us/",
@@ -3400,16 +3430,16 @@
           "title": "English Flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
           "url": "https://www.audio-technica.com/en-us/",
-          "image": "https://www.audio-technica.com/static/version1793272963/frontend/Aware/default/en_US/AudioTechnica_Reciteme/images/reciteme-btn.png",
+          "image": "https://www.audio-technica.com/static/version1793628648/frontend/Aware/default/en_US/AudioTechnica_Reciteme/images/reciteme-btn.png",
           "title": "Launch Recite Me assistive technology",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3418,7 +3448,7 @@
           "title": "ATH-M50x studio headphones resting on an audio mixer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3427,7 +3457,7 @@
           "title": "corporate conference room",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T02:53:28.579695Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
