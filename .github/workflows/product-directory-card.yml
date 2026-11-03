@@ -1,0 +1,29 @@
+name: Product directory Quick Card · original Oracle viewer
+on:
+  pull_request:
+    paths:
+      - 'product-directory-*'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - 'workers/product-directory/**'
+      - 'test/product-directory-*'
+      - '.github/workflows/product-directory-card.yml'
+  workflow_dispatch:
+jobs:
+  source-contract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify JavaScript syntax
+        run: |
+          node --check product-directory-core.mjs
+          node --check product-directory-card.mjs
+          node --check oracle-card-deck.js
+          node --check workers/product-directory/worker.mjs
+      - name: Verify catalog and homepage integration contracts
+        run: node --test test/product-directory-core.test.mjs test/product-directory-site.test.mjs test/product-directory-worker.test.mjs
