@@ -116,3 +116,12 @@ test('shell probe is fixed and independent of Python installations',()=>{
  assert.match(source,/context.startService\(request\)/);
  assert.match(source,/timed_out_unverified/);
 });
+
+test('a timed-out probe cannot be overwritten by a second dispatch before its callback',()=>{
+ const source=read(java+'TermuxProbe.java');
+ const start=source.indexOf('static String run(Context context, String kind)');
+ const end=source.indexOf('static void saveResult(',start);
+ const method=source.slice(start,end);
+ assert.match(method,/"timed_out_unverified"\.equals\(current\.optString\("state"\)\)/,
+   'late callback eligibility must be preserved until an explicit safe resolution');
+});
