@@ -90,7 +90,7 @@ test('second check cannot overwrite a queued receipt if Termux permission or vis
  assert.ok(queued>=0&&available>=0&&permission>=0);
  assert.ok(queued<available&&queued<permission,
    'the queued command must be protected before a second attempt records permission/app failure');
- assert.match(method,/if \("queued"\.equals\(current\.optString\("state"\)\)\)\s+return/);
+ assert.match(method,/if \\(\"queued\"\\.equals\\(current\\.optString\\(\"state\"\\)\\) \\|\\|\\s*\"timed_out_unverified\"\\.equals\\(current\\.optString\\(\"state\"\\)\\)\\)\\s+return/);
 });
 
 test('actual fixed shell probe completes without Python or external commands',()=>{
