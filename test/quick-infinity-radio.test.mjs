@@ -60,7 +60,7 @@ function playerFixture(){
   status:all.find(node=>node.className==='ir-quick-status'),next:document.getElementById('irQuickNext'),pending,store};
 }
 
-const catalogReady=async()=>{await Promise.resolve();await Promise.resolve();await Promise.resolve()};
+const catalogReady=async()=>{await new Promise(resolve=>setImmediate(resolve))};
 test('delayed media events cannot restart playback after a person presses Pause',async()=>{
  const f=playerFixture();await catalogReady();
  assert.equal(f.pending.length,0);
