@@ -24,7 +24,13 @@
     "worker": "quantaphi-quick-card-publisher",
     "expectedRoute": "https://quantaphi.org/cards/ge-appliances-official",
     "databaseReadbackVerified": true,
-    "publicHttpReadbackVerified": false
+    "publicHttpReadbackVerified": true,
+    "liveBrowserCheck": {
+      "date": "2026-11-03",
+      "status": 200,
+      "result": "Page loaded; logo rendered; title, source link and controls visible; interactions not exercised",
+      "evidenceUrl": "https://agent.tinyfish.ai/runs/8b5221ae-ad5e-4215-a5ee-9af9075b210c"
+    }
   },
-  "editorialNotes": "Independent third-party navigation card. Do not present as GE sponsorship, invent pricing, or claim QuantaPhi checkout. Review before main-carousel placement."
+  "editorialNotes": "Independent third-party navigation card. Do not present as GE sponsorship, invent pricing, or claim QuantaPhi checkout. Review before main-carousel placement. Live browser checks do not establish merchant sponsorship, prices, image rights for paid advertising, or completed retailer checkout."
 }
