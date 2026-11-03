@@ -38,6 +38,7 @@ public final class MainActivity extends Activity {
         PHONE_AUDIO_REQUEST = 66, CAPCUT_MEDIA_REQUEST = 67;
     private boolean screenshot;
     private boolean pendingNativeScreenVideo;
+    private boolean pendingCloudflareTermuxPermission;
     private int screenIntervalSeconds, screenDurationSeconds;
     private String extracted = "";
 
@@ -678,6 +679,10 @@ public final class MainActivity extends Activity {
             getIntent().removeExtra("termux_python_probe");
             ui.post(this::offerTermuxPythonProbe);
         }
+        if (getIntent().getBooleanExtra("termux_cloudflare_probe", false)) {
+            getIntent().removeExtra("termux_cloudflare_probe");
+            ui.post(this::offerTermuxCloudflareProbe);
+        }
         // Only the user's explicit first-party Bubbles button can request this flow.
         // Tokens are encrypted in Android Keystore and never passed to WebView.
         if(getIntent().getBooleanExtra("open_chatgpt_signin",false)){
@@ -749,6 +754,10 @@ public final class MainActivity extends Activity {
             intent.removeExtra("termux_python_probe");
             ui.post(this::offerTermuxPythonProbe);
         }
+        if (intent != null && intent.getBooleanExtra("termux_cloudflare_probe", false)) {
+            intent.removeExtra("termux_cloudflare_probe");
+            ui.post(this::offerTermuxCloudflareProbe);
+        }
         // A notification tap can reach an ALREADY RESUMED singleTop activity.
         // onResume is not guaranteed to run a second time in that case, so
         // the Android screen-sharing permission dialog must be opened here too.
@@ -792,6 +801,32 @@ public final class MainActivity extends Activity {
             .setMessage("Run a fixed Python 2 + 2 diagnostic in the real Termux app? No packages will be installed. Below 16 MiB free, no test file is created. Otherwise the one temporary test directory is removed after execution. Python, projects and credentials stay intact.")
             .setNegativeButton("Cancel", (dialog, which) -> { TermuxProbe.cancel(this); state.setText("Python test cancelled."); })
             .setPositiveButton("Test Python", (dialog, which) -> state.setText(TermuxProbe.run(this)))
+            .show();
+    }
+    private void offerTermuxCloudflareProbe() {
+        if (state == null) return;
+        if (!TermuxProbe.installed(this)) {
+            state.setText("Termux is not installed or visible. No Cloudflare check ran.");
+            return;
+        }
+        if (!TermuxProbe.permitted(this)) {
+            pendingCloudflareTermuxPermission = true;
+            state.setText("Allow Bubbles to run commands in Termux; no Cloudflare check has run.");
+            try { requestPermissions(new String[]{TermuxProbe.PERMISSION}, TERMUX_PERMISSION_REQUEST); }
+            catch (RuntimeException error) {
+                pendingCloudflareTermuxPermission = false;
+                state.setText("Open Android Settings > Apps > Bubbles > Additional permissions to allow Termux commands, then retry.");
+            }
+            return;
+        }
+        new AlertDialog.Builder(this)
+            .setTitle("Check Cloudflare via Termux")
+            .setMessage("Run a read-only HTTPS connection and timing check from Termux to QuantaPhi and Cloudflare? No keys, sign-in, account access, deployments or package installations are used. Results return to the Bubbles chat.")
+            .setNegativeButton("Cancel", (dialog, which) -> {
+                TermuxProbe.cancelCloudflare(this); state.setText("Cloudflare connection check cancelled.");
+            })
+            .setPositiveButton("Test Cloudflare network", (dialog, which) ->
+                state.setText(TermuxProbe.runCloudflare(this)))
             .show();
     }
     private void openBubblesDocumentPicker(boolean historyJson) {
@@ -1019,7 +1054,9 @@ public final class MainActivity extends Activity {
     @Override public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] results) {
         super.onRequestPermissionsResult(requestCode, permissions, results);
         if (requestCode == TERMUX_PERMISSION_REQUEST) {
-            if (TermuxProbe.permitted(this)) ui.post(this::offerTermuxPythonProbe);
+            boolean cloudflare = pendingCloudflareTermuxPermission;
+            pendingCloudflareTermuxPermission = false;
+            if (TermuxProbe.permitted(this)) ui.post(cloudflare ? this::offerTermuxCloudflareProbe : this::offerTermuxPythonProbe);
             else state.setText("Termux command permission not granted. Nothing was run. Check Bubbles Additional permissions.");
             return;
         }
