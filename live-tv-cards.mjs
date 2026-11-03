@@ -9,6 +9,15 @@ function stationEvent(name,destination){
  if(typeof window.gtag==='function')window.gtag('event',name,detail);
  window.dispatchEvent(new CustomEvent('quantaphi:partner-referral',{detail:{event:name,...detail}}));
 }
+function guideLinks(root,channel,website,guide){
+ const nav=node('nav','ltv-links');
+ for(const [label,href] of [['TV Guide',guide],['Watch at official website',website]]){
+  const a=node('a','',label);a.href=href;
+  if(href.startsWith('https://')){a.target='_blank';a.rel='noopener noreferrer'}
+  nav.append(a);
+ }
+ root.append(nav);
+}
 function posterImage(url,alt,klass=''){
  const img=node('img','ltv-poster-image '+klass);img.src=url;img.alt=alt;
  img.width=1280;img.height=720;img.loading='eager';img.decoding='async';
@@ -29,7 +38,10 @@ export function mountLiveGame(root){
  screen.referrerPolicy='strict-origin-when-cross-origin';screen.dataset.stationDestination='live';
  screen.addEventListener('click',()=>stationEvent('partner_referral_click','live'));
  root.addEventListener('oracle:activate',()=>stationEvent('partner_card_open'));
- root.append(screen,node('p','ltv-note','KYOU’s news stream opens in the broadcaster’s player. A permitted in-card KYOU live feed has not been verified; FOX 15.1 broadcast television is not represented as a news stream.'));
+ root.append(screen,node('p','ltv-program','KYOU · Official FOX 15.1 schedule and news stream'),
+  node('p','ltv-summary','Check the KYOU TV Guide for the exact program airing. The station news stream does not establish that FOX 15.1 broadcast programming is available online.'));
+ guideLinks(root,'kyou',kyouReferralUrl('live'),kyouReferralUrl('schedule'));
+ root.append(node('p','ltv-note','The broadcaster controls the schedule and stream. No whole external website is embedded.'));
  return {root};
 }
 export function mountLiveNews(root){
@@ -39,7 +51,11 @@ export function mountLiveNews(root){
  const screen=node('div','ltv-screen');const status=node('p','ltv-playback','Tap ▶ to play LiveNOW from FOX.');status.setAttribute('role','status');
  // The poster is from the official LiveNOW from FOX YouTube broadcast.
  const poster=posterAction('button','Play LiveNOW from FOX news video','https://i.ytimg.com/vi/qoytj8mNq7s/hqdefault.jpg','Watch LiveNOW');
- poster.type='button';screen.append(poster);root.append(screen,status);
+ poster.type='button';screen.append(poster);root.append(screen,
+ node('p','ltv-program','LiveNOW from FOX · News coverage'),
+ node('p','ltv-summary','Live headlines change throughout the day. No current segment title is verified here.'));
+ guideLinks(root,'livenow','https://www.livenowfox.com/live','/infinity-tv/guide.html#livenow');
+ root.append(status);
  let frame=null;
  function stop(){
   if(frame){frame.src='about:blank';frame.remove();frame=null}
