@@ -86,6 +86,11 @@
   let generation = 0;
   let playbackRequested = false;
   let newArrivalWaiting = false;
+  function notifyAlbumShop(kind) {
+    if(typeof window==='undefined'||!window.dispatchEvent||typeof CustomEvent==='undefined')return;
+    const track=tracks[trackIndex];
+    if(track)window.dispatchEvent(new CustomEvent(kind,{detail:{track:{title:track.title,url:track.url},surface:'quick-radio'}}));
+  }
   const songCount = () => tracks.length+' songs · newest first';
   function applyCatalog(incoming,origin) {
     const before = new Set(tracks.map(track=>track.url));
@@ -152,6 +157,7 @@
       failures = 0;
       setPlaying(true);
       status.textContent = tracks[trackIndex].title+' · '+songCount();
+      notifyAlbumShop('infinityradio:track-start');
     }).catch(() => {
       if (current !== generation) return;
       playbackRequested = false;
@@ -178,7 +184,7 @@
       ++generation;
       trackIndex=newArrivalWaiting?0:(trackIndex+1)%tracks.length;
       newArrivalWaiting=false;setTrack();start();
-    }else{trackIndex=(trackIndex+1)%tracks.length;setTrack();}
+    }else{trackIndex=(trackIndex+1)%tracks.length;setTrack();notifyAlbumShop('infinityradio:track-selected');}
   });
   play.addEventListener('click',() => {
     if (playbackRequested) {
