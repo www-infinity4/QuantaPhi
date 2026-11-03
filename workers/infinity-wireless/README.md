@@ -20,20 +20,44 @@ Infinity control. No customer's emergency calling or existing mobile service is 
 - The event ledger records request receipt and **screening pending** only.
   An AI plan, carrier partnership, SIM activation or radio signal is NOT implied.
 
-## Required pre-deploy steps (not automatically completed by this PR)
+## Verified infrastructure and remaining production gates
 
-1. Create a new D1 database named `quantaphi-infinity-wireless-orders`.
-2. Apply `schema.sql` to that database (migration, not just a local test).
-3. Prepare a Wrangler config with worker name `quantaphi-infinity-wireless-orders`,
-   entry `worker.mjs`, D1 binding `WIRELESS_DB` and the *actual* D1 database ID.
-   Reserve the route `quantaphi.org/api/wireless/*` and confirm route priority.
-   Do **not** guess IDs or overwrite the QuantaPhi site worker.
-4. Set worker secret `RATE_SALT` to independently generated 32+ random bytes.
-   Do not commit it. Verify Cloudflare bot/WAF/rate rules for public order intake.
-5. Test post + authenticated readback, invalid/no token, wrong-origin rejection,
-   duplicate idempotency, over-limit and D1-down results against a staging route.
-6. Browser-verify mobile widths, keyboard navigation, and failure behavior. Then
-   review/merge and deploy the distinct Worker and site assets separately.
+### Verified on 2026-11-02 (Central Time)
+
+- Cloudflare account: dedicated U.S.-jurisdiction D1 database
+  `quantaphi-infinity-wireless-orders` (ID `230c8dde-fc97-485b-94ad-4b092684bf76`),
+  read replication disabled.
+- All three SQL tables created and verified through the Cloudflare D1 API.
+- Worker `quantaphi-infinity-wireless-orders` uploaded, bound to this D1,
+  with securely generated private `RATE_SALT` Worker secret.
+- Separate staging address enabled:
+  `https://quantaphi-infinity-wireless-orders.marvaseater.workers.dev`.
+- GitHub Actions contract run:
+  https://github.com/www-infinity4/QuantaPhi/actions/runs/41556019029
+  (Node syntax/contract tests and live D1 Worker health readback passed).
+- GitHub Actions end-to-end staging smoke:
+  https://github.com/www-infinity4/QuantaPhi/actions/runs/41556165978
+  (actual write, private token readback, denied cross-origin request,
+  unauthorized status lookup, idempotent retry, conflicting retry rejection passed).
+- Synthetic test order and test rate-limit hash deleted. Cloudflare D1 readback:
+  zero orders, zero events, zero daily-limit rows after cleanup.
+
+### Still required before public activation
+
+1. Review card accessibility, responsive layout and copy in a real browser
+   using the exact merged site assets. CI alone is not browser verification.
+2. Publish privacy and retention policy; configure sustained abuse protection,
+   rate-limit cleanup and operational review for planning requests.
+3. Merge the PR only after review and checks. The Worker staging endpoint and
+   D1 are real, but the production `quantaphi.org/api/wireless/*` route has
+   **not** been added. Confirm route priority against the existing site Worker.
+4. Deploy site assets and production route separately; submit a non-customer
+   planning test through the live site, verify same-origin write and token
+   readback, and delete the synthetic test data.
+5. A ticket only requests network development. Actual cellular service would
+   additionally require lawful radio authorization, backhaul, certified
+   equipment, operator agreements, appropriate emergency-service plans
+   and physical device testing.
 
 ## Operational policy
 
