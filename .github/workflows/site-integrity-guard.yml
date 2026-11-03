@@ -1,0 +1,111 @@
+name: QuantaPhi autonomous site integrity
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'scripts/site-integrity-guard.mjs'
+      - 'scripts/site-integrity-publish.mjs'
+      - 'test/site-integrity-guard.test.mjs'
+      - 'test/site-integrity-publish.test.mjs'
+      - '.github/workflows/site-integrity-guard.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'scripts/site-integrity-guard.mjs'
+      - 'scripts/site-integrity-publish.mjs'
+      - 'test/site-integrity-guard.test.mjs'
+      - 'test/site-integrity-publish.test.mjs'
+      - '.github/workflows/site-integrity-guard.yml'
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write # Only dispatch this fixed self-check workflow on an isolated branch.
+  checks: read   # Verify exact-head CI before guarded promotion.
+concurrency:
+  group: quanta-site-integrity-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    name: site-integrity-source-and-browser
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run focused scanner and promotion contract tests before mutation
+        run: node --test test/site-integrity-guard.test.mjs test/site-integrity-publish.test.mjs
+      - name: Install mobile browser for public-page scan
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Inspect public pages and repair only recognized safe source defects
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            node scripts/site-integrity-guard.mjs --live
+          else
+            node scripts/site-integrity-guard.mjs --apply --live
+          fi
+      - name: Verify generated changes and existing homepage regression
+        run: |
+          git diff --check
+          node --check scripts/site-integrity-guard.mjs
+          node --check scripts/site-integrity-publish.mjs
+          node --test test/site-integrity-guard.test.mjs test/site-integrity-publish.test.mjs test/index-escaped-newline.test.cjs
+      - name: Open bounded repair pull request when exact patch exists
+        if: ${{ github.event_name != 'pull_request' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- index.html; then
+            echo 'No provably safe repair needed; browser findings are report-only.'
+            exit 0
+          fi
+          paths="$(git diff --name-only)"
+          if [ "$paths" != 'index.html' ]; then
+            echo 'Unexpected paths modified; refusing publication.' >&2
+            exit 1
+          fi
+          base="$(git rev-parse HEAD)"
+          git fetch origin main
+          if [ "$(git rev-parse origin/main)" != "$base" ]; then
+            echo 'Main moved since scan; retry from fresh source on next run.' >&2
+            exit 1
+          fi
+          branch="site-integrity/autofix-${base:0:12}"
+          if gh pr list --state open --head "$branch" --json number --jq 'length' | grep -qx 1; then
+            echo 'A repair PR already exists for this main commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -b "$branch"
+          git add -- index.html
+          git commit -m 'fix(site): recover literal escaped HTML newline after verified scan'
+          git push origin "HEAD:refs/heads/$branch"
+          gh pr create --head "$branch" --base main \
+            --title 'Automated safe homepage text-node repair' \
+            --body "Deterministic rule: replace only literal escaped newline text between HTML siblings in index.html. Scan and Node/browser validation are recorded in the workflow artifact. No wallet, auth, payment, database or Cloudflare mutation. Promotion is gated on exact source diff, CI and branch rules; source merge is not live deployment verification. Base SHA: $base"
+          # Workflows triggered by the Actions token do not automatically start.
+          gh workflow run site-integrity-guard.yml --ref "$branch"
+      - name: Promote previously verified narrow repairs only when every merge gate passes
+        if: ${{ github.event_name != 'pull_request' && success() }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/site-integrity-publish.mjs
+      - name: Store source/browser evidence even when blocked
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: site-integrity-evidence
+          path: site-integrity-evidence/
+          retention-days: 14

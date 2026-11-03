@@ -2,6 +2,7 @@ import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-fr
 import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
+import {websiteFaviconUrl} from './card-source-images.mjs';
 const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
 const isBrandIdentityImage=url=>/logo|favicon|brandmark|og[-_]?image|ogimage|opengraph|social[-_]?share|social[-_]?image/i.test(new URL(url).pathname);
 export function cardImageCandidates(card){
@@ -79,12 +80,26 @@ export function createAcceptedCard(card){
  if(images.length){
   const img=node('img');img.alt=card.name+' — image from the original website';
   img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';
+  const fallback=()=>{
+   img.remove();media.classList.add('iac-logo-only');
+   const sourceIcon=websiteFaviconUrl(card);
+   const mark=node('img');mark.alt=card.name+' official website icon';
+   const label=node('span','Source photograph unavailable · open the original site','iac-source-icon-note');
+   if(!sourceIcon){media.replaceChildren(label);return}
+   mark.addEventListener('error',()=>{mark.remove();label.textContent='Website image unavailable · open original source'},{once:true});
+   mark.src=sourceIcon;media.replaceChildren(mark,label);
+  };
   img.addEventListener('error',()=>{
    if(++imageIndex<images.length){img.src=images[imageIndex];return}
-   // Collapse exhausted media instead of leaving a large empty moving viewer.
-   img.remove();media.hidden=true;
+   fallback();
   });img.src=images[0];media.append(img);
- }else media.hidden=true;
+ }else{
+  // The website icon is a real source asset, never a fabricated product image.
+  const sourceIcon=websiteFaviconUrl(card),mark=node('img');mark.alt=card.name+' official website icon';
+  media.classList.add('iac-logo-only');
+  if(sourceIcon){mark.src=sourceIcon;mark.addEventListener('error',()=>mark.remove(),{once:true});media.append(mark)}
+  media.append(node('span','Source product photo not yet available','iac-source-icon-note'));
+ }
  const content=node('div',undefined,'iac-content');mountAcceptedWebsiteActions(content,card);
  const tools=node('div');mountCardActions(tools,{...card,route:'/?card='+card.id},
   {showSearch:false,websiteReader:false,showPreview:false,showOriginal:false});content.append(tools);

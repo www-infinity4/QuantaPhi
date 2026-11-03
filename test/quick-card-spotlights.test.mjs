@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {normalizeSpotlights,chooseSpotlight,sourceUrl,publicImageUrl,fetchSpotlights,visibleSpotlightPrice,newerSpotlightSnapshot} from '../quick-card-spotlights.mjs';
+import {normalizeSpotlights,chooseSpotlight,sourceUrl,publicImageUrl,fetchSpotlights,visibleSpotlightPrice,newerSpotlightSnapshot,readLatestSpotlightSnapshot} from '../quick-card-spotlights.mjs';
 const now=Date.parse('2026-10-31T01:00:00Z');
 const card={id:'fixture-store',name:'Source',official:'https://www.levi.com/',category:'Denim'};
 const item=(extra={})=>({url:'https://www.levi.com/p/123',image:'https://lsco.scene7.com/is/image/123',title:'Denim jacket',checked_at:new Date(now-1000).toISOString(),...extra});
@@ -52,4 +52,29 @@ test('source feed chooses the freshest valid snapshot instead of the first stale
  assert.equal(newerSpotlightSnapshot(fresh,{...old,checked_at:'2026-11-01T08:00:00Z'},then),fresh,
   'future-dated content must never override a verified current feed');
  assert.equal(newerSpotlightSnapshot(null,{...old,cards:null},then),null);
+});
+
+test('the freshest public feed starts in parallel with the site feed, not after its timeout',async()=>{
+ const when=Date.parse('2026-11-02T16:00:00Z');
+ const old={schema_version:1,checked_at:new Date(when-300000).toISOString(),cards:{old:{items:[]}}};
+ const fresh={schema_version:1,checked_at:new Date(when-15000).toISOString(),cards:{fresh:{items:[]}}};
+ const called=[];
+ let releaseFirst;
+ const stalled=new Promise(resolve=>{releaseFirst=resolve;});
+ const pending=readLatestSpotlightSnapshot(async url=>{
+  called.push(url);
+  return url.startsWith('/data/')?stalled:{ok:true,json:async()=>fresh};
+ },when);
+ assert.equal(called.length,2,'both sources must start immediately instead of serially');
+ releaseFirst({ok:true,json:async()=>old});
+ assert.equal(await pending,fresh);
+});
+test('feed failures do not hide a healthy source or manufacture photos',async()=>{
+ const when=Date.parse('2026-11-02T16:00:00Z');
+ const fresh={schema_version:1,checked_at:new Date(when-20000).toISOString(),cards:{}};
+ const result=await readLatestSpotlightSnapshot(async url=>{
+  if(url.startsWith('/data/'))throw Error('site feed down');
+  return {ok:true,json:async()=>fresh};
+ },when);
+ assert.equal(result,fresh);
 });

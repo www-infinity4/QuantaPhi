@@ -7,7 +7,7 @@ import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1
  * on-card actions, and the shared collection toolbar. No synthetic brand art.
  * A card is only rotation-ready AFTER its actual source icon/image loads.
  */
-export const VERIFIED_CARD_COUNT=REQUESTED_PUBLIC_CARDS.filter(validBrandSportsCard).length;
+export const VERIFIED_CARD_COUNT=REQUESTED_PUBLIC_CARDS.filter(c=>!c.id.startsWith('world-series-')).filter(validBrandSportsCard).length;
 export function isSafeCardUrl(value){
  try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password}catch{return false}
 }
@@ -86,9 +86,9 @@ function distinctLead(card){
  }
 }
 const sampleAnnouncerFacts=Object.freeze([
- 'Today’s NFL matchup is Green Bay at Detroit. The original FOX broadcast and official game center are one tap away.',
- 'In baseball, Milwaukee won World Series Game 2 by five runs to four on October twenty-fourth. Tampa Bay and Milwaukee meet again for Game 3.',
- 'This is original QuantaPhi commentary from dated public facts, not a live broadcast. Check the official game center for the latest plays.'
+ 'Sports videos and live channels are provided by their original publishers, subject to broadcaster access.',
+ 'Current MLB schedules and verified results can be checked through the generic MLB Match Center.',
+ 'This is original QuantaPhi commentary, not a live broadcast. Visit official sources for highlights and current events.'
 ]);
 export function createVerifiedCard(card){
  if(!validBrandSportsCard(card))throw Error('unverified_card_source');
@@ -264,7 +264,7 @@ export function mountVerifiedCards(){
  const bank=document.getElementById('verifiedBrandSportsCards');
  if(!bank||bank.dataset.mounted==='true')return;
  bank.dataset.mounted='true';
- const valid=REQUESTED_PUBLIC_CARDS.filter(validBrandSportsCard);
+ const valid=REQUESTED_PUBLIC_CARDS.filter(c=>!c.id.startsWith('world-series-')).filter(validBrandSportsCard);
  // Keep source widgets in their original hidden bank. The Oracle top viewer
  // moves the same DOM node into the spotlight and preserves all click handlers.
  bank.append(...valid.map(createVerifiedCard));

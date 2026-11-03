@@ -26,3 +26,20 @@
 .ad-card button:disabled{opacity:.42;cursor:default}
 .ad-card .ad-actions{margin-top:10px;margin-bottom:16px}
 @media(max-width:480px){.ad-card .ad-inputs{grid-template-columns:1fr 1fr}.ad-card .ad-inputs input{grid-column:1/-1}.ad-card .ad-header{padding:16px}.ad-card :is(.ad-note,.ad-form,.ad-status,.ad-result,.ad-nav,.ad-actions){margin-left:16px;margin-right:16px}}
+
+/* Genuine D1-backed Quant AI picks. One independently actionable Oracle card
+   per sourced attraction; neutral controls, original photography only. */
+.ad-rec-card{background:#fff!important;border:1px solid #d8e1e6!important;color:#1d3545!important;overflow:hidden}
+.ad-rec-media img{display:block;width:100%;height:min(40vw,290px);min-height:180px;object-fit:cover}
+.ad-rec-media .ad-rec-credit{display:block;padding:8px 16px;font:11px/1.4 system-ui;color:#566979;background:#f7fafb}
+.ad-rec-fallback{font:14px/1.5 system-ui;margin:0;padding:28px 20px;background:#edf3f7;color:#455e70}
+.ad-rec-body{display:grid;gap:10px;padding:18px}
+.ad-rec-title{font:750 clamp(23px,5.4vw,30px)/1.16 system-ui;margin:0!important;color:#173246!important}
+.ad-rec-category{font:650 12px/1.5 system-ui;text-transform:capitalize;color:#516b78;margin:0}
+.ad-rec-match{font:14px/1.5 system-ui;color:#4d6778;margin:0}
+.ad-rec-links{display:flex;gap:8px;flex-wrap:wrap}
+.ad-rec-source-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border:1px solid #ccd9e1;border-radius:10px;padding:8px 11px;background:#fff;color:#1a526e!important;font:700 12px/1.3 system-ui;text-decoration:none}
+.ad-rec-disclosure{font:12px/1.5 system-ui;color:#627785;margin:0}
+.ad-rec-actions{margin-top:4px}
+.ad-rec-card :is(a,button):focus-visible{outline:3px solid #a57a36;outline-offset:2px}
+@media(max-width:430px){.ad-rec-media img{height:210px;min-height:170px}.ad-rec-body{padding:16px}}

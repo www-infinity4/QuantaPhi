@@ -1,4 +1,5 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardSourceImage,websiteFaviconUrl} from './card-source-images.mjs';
 import {mountIntegraXTour} from './quanta-integra-x-tour.mjs';
 import {mountIntegraAutomationGuide} from './integra-automation-router.mjs';
 import {showCardWebsiteResults} from './tinyfish-card-reader.mjs';
@@ -84,6 +85,21 @@ export function createCardArtwork(card,small=false){
  }else{
   art.append(node('strong','qcx-art-mark',mark),node('span','qcx-art-name',title));
  }
+ // Every source/catalog card gets an authentic site image when available;
+ // unknown sources retain the genuine publisher/favicon identity rather than a blank.
+ if(!card.official){
+  const icon=websiteFaviconUrl(card);
+  const internal=typeof card.url==='string'&&card.url.startsWith('/')&&!card.url.startsWith('//');
+  if(icon||internal){
+   const badge=node('img','qcx-website-mark');
+   badge.alt=icon?title+' source website icon':'QuantaPhi original site artwork';
+   badge.loading='lazy';badge.decoding='async';
+   badge.src=icon||'/preview.png';
+   badge.addEventListener('error',()=>{badge.remove()},{once:true});
+   art.append(badge);
+  }
+ }
+ mountCardSourceImage(art,card,{small});
  art.setAttribute('aria-label',title+' '+category+' cover');
  return art;
 }

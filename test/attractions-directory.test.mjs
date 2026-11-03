@@ -256,3 +256,17 @@ test('health distinguishes publicly listed attractions from review-held source c
  const body=await response.json();
  assert.equal(body.records,80);assert.equal(body.review_pending,20);assert.equal(body.total_records,100);
 });
+
+test('public single-attraction endpoint hydrates only listed source records using bound ID',async()=>{
+ const doc=JSON.parse(read('data/attractions/ak-seed.json')),row=doc.items[0];
+ let sql='',bound='';
+ const env={ATTRACTIONS:{prepare(query){sql=query;return {bind(id){bound=id;return {first:async()=>({...row,last_seen:doc.generated_at,status:'listed'})}}}}}};
+ const url='https://test.example/api/attractions/item?id='+encodeURIComponent(row.id);
+ const response=await worker.fetch(new Request(url),env),data=await response.json();
+ assert.equal(response.status,200);assert.equal(bound,row.id);assert.match(sql,/status='listed'/);
+ assert.equal(data.item.id,row.id);assert.equal(data.item.sponsored,false);
+ const bad=await worker.fetch(new Request('https://test.example/api/attractions/item?id='+encodeURIComponent('../../secrets')),env);
+ assert.equal(bad.status,400);
+ const unavailable=await worker.fetch(new Request(url),{ATTRACTIONS:{prepare(){return {bind(){return {first:async()=>null}}}}}});
+ assert.equal(unavailable.status,404);
+});

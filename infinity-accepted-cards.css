@@ -37,3 +37,7 @@ body.oracle-quanta #oracleCardStage > .iac-card{max-height:none;height:auto;over
 @media(max-width:420px){.iac-heading,.iac-title,.iac-content{padding-left:12px;padding-right:12px}.iac-media{height:148px;margin-inline:12px}.iac-website-actions{gap:6px}.iac-website-actions :is(button,a){font-size:.78rem;padding:10px 5px}}
 
 @media(max-width:420px){.iac-media.iac-logo-only{height:96px}.iac-media.iac-logo-only img{height:70px}}
+
+.iac-source-icon-note{display:block;color:#526774;text-align:center;font:650 11px/1.35 system-ui,sans-serif;padding:0 8px}
+.iac-media.iac-logo-only{grid-template-rows:minmax(0,1fr) auto;gap:0;padding:6px;min-height:94px}
+.iac-media.iac-logo-only img{height:64px;max-width:75%;width:auto;object-fit:contain;margin:auto}

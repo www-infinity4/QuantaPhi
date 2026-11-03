@@ -58,8 +58,8 @@ test('ads.txt declares the exact AdSense publisher already installed on homepage
 test('already loaded headlines expire at the next display rather than remaining as old news',()=>{
  const published=Date.parse('2026-11-01T12:00:00Z');
  const headline={title:'Source-backed recent event',extract:'A reasonably long summary that has been supplied by the original source feed.',publishedAt:new Date(published).toISOString(),url:'https://example.org/source'};
- assert.equal(pruneCurrentHeadlines([headline],published+47*60*60*1000).length,1);
- assert.equal(pruneCurrentHeadlines([headline],published+49*60*60*1000).length,0);
+ assert.equal(pruneCurrentHeadlines([headline],published+23*60*60*1000).length,1);
+ assert.equal(pruneCurrentHeadlines([headline],published+25*60*60*1000).length,0);
  assert.match(read('newsroom/live.mjs'),/stories=pruneCurrentHeadlines\(stories\)/);
 });
 test('newer request prevents older success or failure from replacing the current feed',()=>{
