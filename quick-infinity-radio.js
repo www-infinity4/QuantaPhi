@@ -9,6 +9,7 @@
   // One shared catalog for QuantaPhi, Oracle Octaves, and the full station.
   const CATALOG_URL = '/infinity-radio/oracle-track-feed.json?v=20261102-full-catalog1';
   const CACHE_KEY = 'infinityRadio:quickFullCatalog:v1';
+  const STABLE_CATALOG='https://raw.githubusercontent.com/www-infinity4/Alien-Radio/2a9476cf50fe8c2a2a2f7aa6a4d6ce27ab6aae66/oracle-track-feed.json';
   const allowedHosts = new Set(['archive.org','www.archive.org','orangefreesounds.com','www.orangefreesounds.com']);
   let tracks = [];
   function validTrack(track) {
@@ -107,8 +108,20 @@
       if(!response.ok)throw Error('catalog_http_'+response.status);
       const json=await response.json();
       if(!Array.isArray(json.tracks))throw Error('missing_catalog_tracks');
-      const valid=mergeTracks(json.tracks,[]);
+      let valid=mergeTracks(json.tracks,[]);
       if(!valid.length)throw Error('empty_catalog');
+      if(valid.length<274){
+        // A verified additive snapshot fills the gap while GitHub's moving
+        // main branch and the edge JSON cache are still propagating.
+        try{
+          const stable=await fetch(STABLE_CATALOG,{cache:'no-store'});
+          if(stable.ok){
+            const snapshot=await stable.json();
+            if(Array.isArray(snapshot.tracks)&&snapshot.tracks.length>=274)
+              valid=mergeTracks(snapshot.tracks,valid);
+          }
+        }catch(error){console.warn('Quick radio snapshot unavailable',error)}
+      }
       applyCatalog(valid,'live');
     }catch(error){
       if(!tracks.length)status.textContent='Song catalog unavailable · open Full station';
