@@ -1250,6 +1250,7 @@ async function regularWebSearch(query,run){
  host.innerHTML='<h2>Search results</h2>'+(fallback?'<p>Research source results · web search gateway unavailable.</p>':'')+
  rows.map(x=>'<article class="web-search-item"><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">'+esc(x.title||x.url)+'</a><p>'+esc(String(x.content||x.description||'').replace(/<[^>]*>/g,'').slice(0,600))+'</p></article>').join('');
  if(!rows.length)host.innerHTML+='<p>Search sources are temporarily unavailable. Try again, or <a href="https://www.google.com/search?q='+encodeURIComponent(query)+'" target="_blank" rel="noopener noreferrer">search this topic on Google</a>.</p>';
+ window.dispatchEvent(new CustomEvent('quantaphi:web-search-results',{detail:{query,run,results:rows.map(row=>({title:String(row.title||'').slice(0,180),url:row.url}))}}));
  return data;
 }
 
@@ -2006,7 +2007,7 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script type="module" src="/art-museum-quick-cards.mjs?v=20261025-gallery1"></script>
 <script type="module" src="/verified-brand-sports-cards.mjs?v=20261101-moving-feed1"></script>
 <script type="module" src="/source-quick-cards.mjs?v=20261102-cardimages1"></script>
-<script type="module" src="/quick-card-search.mjs?v=20261029-housing1"></script>
+<script type="module" src="/quick-card-search.mjs?v=20261102-discovery1502"></script>
 <link rel="stylesheet" href="/disability-housing.css?v=20261029-1">
 <link rel="stylesheet" href="/housing-help.css?v=20261029-1">
 <script type="module" src="/disability-housing-card.mjs?v=20261029-1"></script>
