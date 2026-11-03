@@ -23,19 +23,19 @@ export const GIFT_LANES=Object.freeze([
    {name:'Walmart · gifting',url:'https://www.walmart.com/'}]}
 ].map(lane=>Object.freeze({...lane,interests:Object.freeze(lane.interests),links:Object.freeze(lane.links.map(x=>Object.freeze(x)))})));
 const INTERESTS=Object.freeze([
- ['books',/\b(?:book|books|reading|novel|library)\b/],
- ['garden',/\b(?:garden|gardening|plants?|flowers?|outdoors)\b/],
- ['music',/\b(?:music|guitar|singing|songs?|instruments?|radio|vinyl)\b/],
- ['fashion',/\b(?:fashion|clothes|clothing|style|sweaters?|shoes?|accessor(?:y|ies))\b/],
- ['fragrance',/\b(?:perfume|cologne|fragrance|scent|aftershave)\b/],
- ['keepsakes',/\b(?:photos?|memories|handmade|sentimental|keepsakes?|custom)\b/]
+ ['books',/\b(?:book|books|reading|novel|library)\b/i],
+ ['garden',/\b(?:garden|gardening|plants?|flowers?|outdoors)\b/i],
+ ['music',/\b(?:music|guitar|singing|songs?|instruments?|radio|vinyl)\b/i],
+ ['fashion',/\b(?:fashion|clothes|clothing|style|sweaters?|shoes?|accessor(?:y|ies))\b/i],
+ ['fragrance',/\b(?:perfume|cologne|fragrance|scent|aftershave)\b/i],
+ ['keepsakes',/\b(?:photos?|memories|handmade|sentimental|keepsakes?|custom)\b/i]
 ]);
 const RECIPIENTS=Object.freeze([
- ['mother',/\b(?:mother|mom|mum|mama)\b/],
- ['father',/\b(?:father|dad|daddy|papa)\b/],
- ['partner',/\b(?:wife|husband|spouse|partner|boyfriend|girlfriend)\b/],
- ['friend',/\b(?:friend|buddy|bestie)\b/],
- ['child',/\b(?:daughter|son|child|kid)\b/]
+ ['mother',/\b(?:mother|mom|mum|mama)\b/i],
+ ['father',/\b(?:father|dad|daddy|papa)\b/i],
+ ['partner',/\b(?:wife|husband|spouse|partner|boyfriend|girlfriend)\b/i],
+ ['friend',/\b(?:friend|buddy|bestie)\b/i],
+ ['child',/\b(?:daughter|son|child|kid)\b/i]
 ]);
 export function interpretGiftRequest(value){
  const raw=String(value??'').replace(/[\u0000-\u001f]/g,' ').slice(0,600).trim();
