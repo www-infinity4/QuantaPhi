@@ -72,10 +72,10 @@ function atomText(xml, tag) {
 }
 function atomReleases(xml, repository) {
   if (xml.length > 512000 || !xml.includes('<feed')) throw new Error('invalid_atom_feed');
-  const entries = [...xml.matchAll(/<entry(?:\\s[^>]*)?>([\\s\\S]*?)<\\/entry>/g)].slice(0, 3);
+  const entries = [...xml.matchAll(/<entry(?:\s[^>]*)?>([\s\S]*?)<\/entry>/g)].slice(0, 3);
   return entries.map(([, entry]) => {
-    const href = entry.match(/<link\\b[^>]*\\brel="alternate"[^>]*\\bhref="([^"]+)"/)?.[1] ||
-      entry.match(/<link\\b[^>]*\\bhref="([^"]+)"[^>]*\\brel="alternate"/)?.[1] || '';
+    const href = entry.match(/<link\b[^>]*\brel="alternate"[^>]*\bhref="([^"]+)"/)?.[1] ||
+      entry.match(/<link\b[^>]*\bhref="([^"]+)"[^>]*\brel="alternate"/)?.[1] || '';
     const expected = `https://github.com/${repository}/releases/tag/`;
     if (!href.startsWith(expected) || !href.slice(expected.length)) return null;
     return { id: 'atom:' + href.slice(expected.length), html_url: href,
