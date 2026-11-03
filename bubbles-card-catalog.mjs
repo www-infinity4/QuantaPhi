@@ -1,3 +1,4 @@
+import {findRememberedCard} from './search-card-discovery.mjs';
 // Repository-backed card definitions. Only these declared modules/routes may run in chat.
 import {HOUSING_HELP_RESOURCES,housingResourceRoute} from './housing-help-catalog.mjs';
 const local=(id,title,mount,scripts,styles=[],aliases=[],extraMounts=[])=>({id,title,mount,scripts,styles,aliases,extraMounts,repository:'www-infinity4/QuantaPhi',pageUrl:'/#'+mount,url:'/bubbles-card-host.html?card='+id});
@@ -89,7 +90,10 @@ export const cards=Object.freeze([
 ].map(card=>Object.freeze(card)));
 export function findCard(name){
  const q=String(name||'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').trim();
- return cards.find(card=>[card.id,card.title,...card.aliases].some(alias=>alias.toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').trim()===q));
+ const registered=cards.find(card=>[card.id,card.title,...card.aliases].some(alias=>alias.toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').trim()===q));
+ if(registered)return registered;
+ const saved=findRememberedCard(name);
+ return saved?{id:saved.id,title:saved.name,url:saved.route,repository:'www-infinity4/QuantaPhi',aliases:[saved.official],surface:'main'}:undefined;
 }
 // Registered card requests are UI commands, not an invitation to hallucinate tool access.
 export function cardIntent(text){
