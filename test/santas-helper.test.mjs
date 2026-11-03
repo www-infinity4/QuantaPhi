@@ -21,6 +21,12 @@ test('no personality or fragrance preference is inferred just from a relative',(
  assert.ok(recommendGiftLanes('gift for my dad').length>=4);
 });
 
+test('recipient and hobby matching is case-insensitive for ordinary text entry',()=>{
+ const result=interpretGiftRequest('Christmas present for MOM, she likes BOOKS and Gardening');
+ assert.equal(result.recipient,'mother');
+ assert.deepEqual(result.interests,['books','garden']);
+});
+
 test('bounded user requests do not invent a budget or include HTML',()=>{
  assert.equal(interpretGiftRequest('hello').budgetCents,null);
  assert.equal(interpretGiftRequest('gift under $90').budgetCents,9000);
