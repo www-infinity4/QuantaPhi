@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-11-03T03:08:33.562964Z",
+  "checked_at": "2026-11-03T03:34:27.706749Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 1
+      "articles_selected": 2
     },
     {
       "publisher": "CBS Sports",
@@ -17,6 +17,17 @@
     }
   ],
   "articles": [
+    {
+      "title": "Brewers pick up WS MVP Contreras' option, extend QO to NLCS MVP Bauers",
+      "url": "https://www.mlb.com/news/brewers-pick-up-william-contreras-option-extend-jake-bauers-qualifying-offer",
+      "publisher": "MLB.com",
+      "published_at": "2026-11-03T02:53:40Z",
+      "summary": "",
+      "author": "Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
     {
       "title": "Rays well represented with 3 finalists for BBWAA Awards",
       "url": "https://www.mlb.com/news/junior-caminero-kevin-cash-bryan-baker-finalists-2026-bbwaa-awards",
