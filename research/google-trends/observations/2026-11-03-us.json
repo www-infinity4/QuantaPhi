@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T19:01:40.761859Z",
+  "checked_at": "2026-11-03T19:41:19.461154Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "carson hocevar",
+      "query": "josh turek",
       "approx_searches": "1000+",
-      "published_at": "2026-11-03T18:40:00Z",
+      "published_at": "2026-11-03T19:20:00Z",
       "related_news_urls": [
-        "https://www.jayski.com/2026/11/03/spire-motorsports-suspends-carson-hocevar-for-nascar-championship-weekend/",
-        "https://www.nascar.com/news-media/2026/11/03/spire-motorsports-suspends-carson-hocevar-for-homestead-finale/",
-        "https://www.motorsport.com/nascar-cup/news/harvick-nascar-may-penalize-hocevar-for-dirtiest-of-dirty-tricks/10871293/"
+        "https://www.nbcnews.com/politics/2026-elections/iowa-senate-results",
+        "https://www.cbsnews.com/news/josh-turek-generational-change-iowa-senate-midterms-ashley-hinson/",
+        "https://www.c-span.org/program/campaign-2026/us-senate-candidate-rep-ashley-hinson-r-ia-speaks-to-reporters-in-des-moines/687348"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdFaOWOu0uT8CfFO3_cyDdcuAlbahbS-0ytOukiK4y1VF95Q07AkNi89AKeNc",
-      "image_credit": "Jayski",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ9ESX1elFKzWLJMB4g-x-YvSDJkh90gr2lBx3rycgwdTX7JzyDv8xh2bVRJw",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://www.jayski.com/2026/11/03/spire-motorsports-suspends-carson-hocevar-for-nascar-championship-weekend/",
-          "title": "Spire Motorsports Suspends Carson Hocevar for NASCAR Championship Weekend",
-          "publisher": "Jayski",
+          "url": "https://www.nbcnews.com/politics/2026-elections/iowa-senate-results",
+          "title": "Iowa U.S. Senate Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdFaOWOu0uT8CfFO3_cyDdcuAlbahbS-0ytOukiK4y1VF95Q07AkNi89AKeNc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ9ESX1elFKzWLJMB4g-x-YvSDJkh90gr2lBx3rycgwdTX7JzyDv8xh2bVRJw"
         },
         {
-          "url": "https://www.nascar.com/news-media/2026/11/03/spire-motorsports-suspends-carson-hocevar-for-homestead-finale/",
-          "title": "Spire Motorsports suspends Carson Hocevar for Homestead finale",
-          "publisher": "NASCAR.com",
+          "url": "https://www.cbsnews.com/news/josh-turek-generational-change-iowa-senate-midterms-ashley-hinson/",
+          "title": "Josh Turek pitches \"generational change\" in tight Senate race as Iowa faces crushing health and affordability issues",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUJaeW4pORA7cANnGTrOrJbmX-nhHu44ioYSaTyqWbtkCaDNJ8HJ2ZNCr2MSw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfYp13U0EeaZEh0kEo8tCltuYzIIbiBrrJnPDrFg9fbiUSTZ3GqUZWKOSJZ4M"
         },
         {
-          "url": "https://www.motorsport.com/nascar-cup/news/harvick-nascar-may-penalize-hocevar-for-dirtiest-of-dirty-tricks/10871293/",
-          "title": "Harvick: NASCAR may penalize Hocevar for 'dirtiest of dirty tricks'",
-          "publisher": "Motorsport.com",
+          "url": "https://www.c-span.org/program/campaign-2026/us-senate-candidate-rep-ashley-hinson-r-ia-speaks-to-reporters-in-des-moines/687348",
+          "title": "U.S. Senate Candidate Rep. Ashley Hinson (R-IA) Speaks to Reporters in Des Moines",
+          "publisher": "C-SPAN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5NWbBDuZxCVY7vIkZo7gqsB5UBP0GjRro2bgVa5Av_fq5xqSKTN33F1zvNZs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-GH0rmLA1RuFg8pmiySg9bOEJNq8SXOHUhck2MwvcR71RnqVbCLut71nqHns"
         }
       ]
     },
     {
-      "query": "ben shelton",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T18:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/tennis/articles/crz654jdzdqpo",
-        "https://www.atptour.com/en/news/shelton-ferrero-coaching-news-2026",
-        "https://sports.yahoo.com/articles/john-isner-predicts-may-happen-160000574.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl5x0Km4IoOTTscPGQcGnaVNfB1rR_hHHlj-oNNd4GbYCTXOpQzpRZb_fi7Bo",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/tennis/articles/crz654jdzdqpo",
-          "title": "Juan Carlos Ferrero: Ben Shelton appoints Carlos Alcaraz's former coach - will it work?",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl5x0Km4IoOTTscPGQcGnaVNfB1rR_hHHlj-oNNd4GbYCTXOpQzpRZb_fi7Bo"
-        },
-        {
-          "url": "https://www.atptour.com/en/news/shelton-ferrero-coaching-news-2026",
-          "title": "Shelton to add Juan Carlos Ferrero to coaching team",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCZcgjg8OVOTSTrqkzIF3PMondAf474Wr1ku6vKVGt4sFAwLjZa5l9OkHS0YU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/john-isner-predicts-may-happen-160000574.html",
-          "title": "John Isner predicts what may happen if Ben Shelton plays Carlos Alcaraz with Juan Carlos Ferrero as his coach next year",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCfhHUcyEItxNsdFs0IikMHJBpt8X0nv89ji6XN2jqOOG0NjJ_raQfb-RJQFs"
-        }
-      ]
-    },
-    {
-      "query": "jamie davis",
+      "query": "psg vs villarreal",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T18:40:00Z",
+      "published_at": "2026-11-03T19:20:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-louisiana-us-senate.html",
-        "https://lailluminator.com/2026/11/03/trump-tele-rally/",
-        "https://www.wsj.com/livecoverage/midterm-election-news-2026/card/exclusive-kamala-harris-to-endorse-democratic-louisiana-senate-candidate-jamie-davis-TqCGZ3nLNynau0dUGVX1"
+        "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/136311/gossip-psg-ez-abde-khvicha-kvaratskheli-replacement-windfall",
+        "https://www.ysscores.com/en/news/14085073/fabrizio-rules-out-ezzalzouli-transfer-to-paris-saint-germain",
+        "https://www.goal.com/en/news/a-moroccan-star-on-paris-s-table-barcelona-waits/bltceb03078223eafa5"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBkt24FbBE10_bpxi0WQ2n2PafjKtQ86iZBGm5JATAeRE7x7vGo5NKBw3A82c",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBfnSSVwFbQT4Ph8UZEuCJAPLtTQrTQ8RVRdoEJ2_dPbXCwZu7uwCw-CYUJW8",
+      "image_credit": "Barca Blaugranes",
+      "news": [
+        {
+          "url": "https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/136311/gossip-psg-ez-abde-khvicha-kvaratskheli-replacement-windfall",
+          "title": "Gossip: PSG eye Ez Abde as Khvicha Kvaratskhelia replacement as Barcelona hope for windfall",
+          "publisher": "Barca Blaugranes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBfnSSVwFbQT4Ph8UZEuCJAPLtTQrTQ8RVRdoEJ2_dPbXCwZu7uwCw-CYUJW8"
+        },
+        {
+          "url": "https://www.ysscores.com/en/news/14085073/fabrizio-rules-out-ezzalzouli-transfer-to-paris-saint-germain",
+          "title": "Fabrizio rules out Ezzalzouli transfer to Paris Saint-Germain",
+          "publisher": "YSscores",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufn5wuyeYMTxPrRhENW9gm7UsIS8MTlvS6ZRAT7Xi_rWOTCI2Qdp67ZNOdaI"
+        },
+        {
+          "url": "https://www.goal.com/en/news/a-moroccan-star-on-paris-s-table-barcelona-waits/bltceb03078223eafa5",
+          "title": "A Moroccan star on Paris's table: Barcelona waits!",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVUDj642qGr8GIGqkOmgm-oQdsXc_EbtM_11rgnMliwwCAEATQj7i1fWEI0c"
+        }
+      ]
+    },
+    {
+      "query": "everett wess",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T19:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-alabama.html",
+        "https://www.wsfa.com/2026/10/28/meet-candidates-alabamas-race-us-senate/",
+        "https://www.wvua23.com/news/local/u-s-senator-election-day-information/video_eb511040-dc4f-50c8-a17c-bac7361b8660.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrTzUwrUeyhvi7PZ7SfJyTUxcqvI7Zuo-6Yct9rsbpAX3HEYZZllGQffDjZ08",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-louisiana-us-senate.html",
-          "title": "Louisiana U.S. Senate 2026: Live Election Results, Davis vs. Letlow",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-alabama.html",
+          "title": "Alabama 2026: Live Election Results",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBkt24FbBE10_bpxi0WQ2n2PafjKtQ86iZBGm5JATAeRE7x7vGo5NKBw3A82c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrTzUwrUeyhvi7PZ7SfJyTUxcqvI7Zuo-6Yct9rsbpAX3HEYZZllGQffDjZ08"
         },
         {
-          "url": "https://lailluminator.com/2026/11/03/trump-tele-rally/",
-          "title": "Trump targets Louisiana with election eve tele-rally: ‘I don’t see how Julia can possibly lose’",
-          "publisher": "Louisiana Illuminator",
+          "url": "https://www.wsfa.com/2026/10/28/meet-candidates-alabamas-race-us-senate/",
+          "title": "Meet the candidates: Alabama’s race for U.S. Senate",
+          "publisher": "WSFA",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK8bqoo_A8K7hIEm3oCk3KFbmGPLxY0PBphLQn7YNsHaPrvxuZZYgyiUzuvUA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmPPZoOsUXM610lDA6ZtNoOuuaeJoYDa-R3ElYUTjiO-uC6ENFZbkfmUUjKMo"
         },
         {
-          "url": "https://www.wsj.com/livecoverage/midterm-election-news-2026/card/exclusive-kamala-harris-to-endorse-democratic-louisiana-senate-candidate-jamie-davis-TqCGZ3nLNynau0dUGVX1",
-          "title": "Exclusive: Kamala Harris to Endorse Democratic Louisiana Senate Candidate Jamie Davis",
-          "publisher": "WSJ",
+          "url": "https://www.wvua23.com/news/local/u-s-senator-election-day-information/video_eb511040-dc4f-50c8-a17c-bac7361b8660.html",
+          "title": "U.S. Senator election day information",
+          "publisher": "WVUA 23",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVzUqrGzSad0zkB5NrD9xP5_DWJ37mIC4JdqQm76LIZoaiKqTHVKg4fLFol4U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_NOTO3i_W9fTLAxJkgu7BWo9hqeIfTACf3T0Wyie1T47DmEd333hBs_IZQo"
         }
       ]
     },
     {
-      "query": "earthquake today",
+      "query": "villarreal vs psg",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-03T19:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50359895/psg-luis-enrique-warns-overconfidence-ucl-clash-villarreal",
+        "https://sports.yahoo.com/articles/villarreal-vs-psg-official-line-184900234.html",
+        "https://www.oregonlive.com/tv/2026/11/todays-champions-league-match-between-paris-saint-germain-and-villarreal-could-be-a-game-changer-heres-your-complete-viewing-guide.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQTjfURDHqJArkBYT_ClMzOqOT_q1-_mZ7iv1rautLnx3rMIBLR2PiCRS0COc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50359895/psg-luis-enrique-warns-overconfidence-ucl-clash-villarreal",
+          "title": "PSG's Luis Enrique warns against overconfidence in UCL clash vs. Villarreal",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQTjfURDHqJArkBYT_ClMzOqOT_q1-_mZ7iv1rautLnx3rMIBLR2PiCRS0COc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/villarreal-vs-psg-official-line-184900234.html",
+          "title": "🚨 Villarreal vs PSG: official line-ups, Mayulu starts!",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0bH836e12VI7HoSLJ56TvE4LK7UlOdcUZ39xSAKSNULWUWokKTzdCpQIw9P0"
+        },
+        {
+          "url": "https://www.oregonlive.com/tv/2026/11/todays-champions-league-match-between-paris-saint-germain-and-villarreal-could-be-a-game-changer-heres-your-complete-viewing-guide.html",
+          "title": "Today’s Champions League match between Paris Saint-Germain and Villarreal could be a game-changer — here’s yo",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5xpXNn9m8u7_NR0szrwr0D0PavnWSV2aXXkST3OtT4clG4jlw74IrYhGdCQ"
+        }
+      ]
+    },
+    {
+      "query": "atlético vs bayern",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-03T19:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t",
+        "https://sports.yahoo.com/articles/confirmed-lineups-atl-tico-madrid-185700125.html",
+        "https://www.goal.com/en/news/officially-bayern-munich-settle-olise-s-fate-for-the-atletico-madrid-clash/bltf26a17dacb2c515c"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmy0r2lw77r1t",
+          "title": "Atlético Madrid vs Bayern Munich: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/confirmed-lineups-atl-tico-madrid-185700125.html",
+          "title": "Confirmed lineups: Atlético Madrid vs. Bayern Munich",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS96wRIbKvOse-SCiTYknSXBB6f_rzuqO4sehtkInlwcqfxBhx1G_r6xmm0xJg"
+        },
+        {
+          "url": "https://www.goal.com/en/news/officially-bayern-munich-settle-olise-s-fate-for-the-atletico-madrid-clash/bltf26a17dacb2c515c",
+          "title": "Officially: Bayern Munich settles Olise's fate for the clash with Atletico Madrid",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGXEKBArMfZs3_RzJktO73KMziu4qPzIbE5esTInbd4V84Zg0lV6rzz35rqA"
+        }
+      ]
+    },
+    {
+      "query": "feyenoord - inter",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T18:40:00Z",
+      "published_at": "2026-11-03T19:10:00Z",
       "related_news_urls": [
-        "https://news.sbs.co.kr/english/article.do?news_id=N1008824729",
-        "https://m.economictimes.com/news/international/world-news/japan-earthquake-6-0-magnitude-tremors-strikes-shima-region/articleshow/135416042.cms",
-        "https://www.bhaskarenglish.in/international/news/japan-mie-coast-earthquake-shaking-tsunami-alert-latest-updates-139555956.html"
+        "https://www.bbc.com/sport/football/live/cmn9rpxy8899t",
+        "https://onefootball.com/en/news/chivu-i-believe-in-this-team-were-ready-for-a-big-game-43716618",
+        "https://www.goal.com/en/news/giovanni-van-bronckhorst-feyenoord-inter-champions-league/blt33962fe459785650"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvjaQhfv7q86wT2h8PNf1LWXjTa7kquZ76s3Tc6e6jTU7O8z4CS24f232ep0",
-      "image_credit": "news.sbs.co.kr",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008824729",
-          "title": "Magnitude 6.1 Earthquake Strikes Off Coast of Toyohashi, Aichi Prefecture, Japan",
-          "publisher": "news.sbs.co.kr",
+          "url": "https://www.bbc.com/sport/football/live/cmn9rpxy8899t",
+          "title": "Feyenoord vs Inter Milan: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvjaQhfv7q86wT2h8PNf1LWXjTa7kquZ76s3Tc6e6jTU7O8z4CS24f232ep0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://m.economictimes.com/news/international/world-news/japan-earthquake-6-0-magnitude-tremors-strikes-shima-region/articleshow/135416042.cms",
-          "title": "Japan earthquake: 6.0 magnitude tremors strikes Shima region",
-          "publisher": "The Economic Times",
+          "url": "https://onefootball.com/en/news/chivu-i-believe-in-this-team-were-ready-for-a-big-game-43716618",
+          "title": "Chivu: \"I Believe in This Team: We're Ready for a Big Game\"",
+          "publisher": "OneFootball",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGv5zcNGePp_FYzKGLGWGG1QDsqclr34dWRrGDb4SY_OmurB4G1WMKzZkVp4M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA_lNX8o3kSLGZERp07oYGVAkjptB6IgPKUXfElpwV436-Ren1Te8Qcjub1GI"
         },
         {
-          "url": "https://www.bhaskarenglish.in/international/news/japan-mie-coast-earthquake-shaking-tsunami-alert-latest-updates-139555956.html",
-          "title": "6.0-magnitude earthquake strikes off Japan's coast: Epicentre located 352 km deep beneath the sea; no tsuna...",
-          "publisher": "Bhaskar English",
+          "url": "https://www.goal.com/en/news/giovanni-van-bronckhorst-feyenoord-inter-champions-league/blt33962fe459785650",
+          "title": "De Kuip trap! Van Bronckhorst vows to exploit battered Inter in front of wild home fans",
+          "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW5g3qqvg2MO_5qhGlIWOiYP1nU1C078h3-NvgtAnt_-s5lcgJhIKpRZcS5qE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHOwyTlTfz3UrjYcfCvnTyOKGUKOxXeXXrQE-Plnu0-XnPB5lRTBIarZwUZiM"
         }
       ]
     },
     {
-      "query": "earthquake",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T18:30:00Z",
-      "related_news_urls": [
-        "https://www.sfchronicle.com/earthquakes/article/magnitude-4-7-earthquake-strikes-ciudad-guadalupe-22509419.php",
-        "https://www.sacbee.com/news/california/earthquakes/article317905068.html",
-        "https://thebaptistpaper.org/former-missionary-raises-funds-for-earthquake-victims/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwtvrXbLe9vE7juBbo4Ih4HxIplmBu3tmU4Nf8nWl73xEJJswEHp51CSEcyEo",
-      "image_credit": "San Francisco Chronicle",
-      "news": [
-        {
-          "url": "https://www.sfchronicle.com/earthquakes/article/magnitude-4-7-earthquake-strikes-ciudad-guadalupe-22509419.php",
-          "title": "Magnitude 4.7 earthquake strikes Ciudad Guadalupe Victoria area",
-          "publisher": "San Francisco Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwtvrXbLe9vE7juBbo4Ih4HxIplmBu3tmU4Nf8nWl73xEJJswEHp51CSEcyEo"
-        },
-        {
-          "url": "https://www.sacbee.com/news/california/earthquakes/article317905068.html",
-          "title": "Update: Earthquake of 4.7 magnitude detected close to Delta, B.C., MX on Nov. 3",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJbDRguR53JYCTyM5K6pnx34HWFbmUngo9j2pEzZaub-VAzQTfIhJqrkanB2w"
-        },
-        {
-          "url": "https://thebaptistpaper.org/former-missionary-raises-funds-for-earthquake-victims/",
-          "title": "Former missionary raises funds for earthquake victims",
-          "publisher": "The Baptist Paper",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfm936rDB8SqV7krKbm59WS1PR7z_kFGJlLNTPMYhZuvLpxaajk2tfhZn7Ork"
-        }
-      ]
-    },
-    {
-      "query": "earthquakes today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T18:30:00Z",
-      "related_news_urls": [
-        "https://www.newsweek.com/dozens-of-tremors-hit-san-andreas-fault-12654202",
-        "https://www.sacbee.com/news/california/earthquakes/article317871388.html",
-        "https://mycharisma.com/news/california-earthquake-swarm-strikes-as-scientists-warn-of-san-andreas-threat/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmdlVkZrGqp5ELKBCctZVPPKc6bv2EKXSvtLa00LnoEKOUhr-Sum3HrTxvwb8",
-      "image_credit": "Newsweek",
-      "news": [
-        {
-          "url": "https://www.newsweek.com/dozens-of-tremors-hit-san-andreas-fault-12654202",
-          "title": "Dozens Of Tremors Hit San Andreas Fault",
-          "publisher": "Newsweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmdlVkZrGqp5ELKBCctZVPPKc6bv2EKXSvtLa00LnoEKOUhr-Sum3HrTxvwb8"
-        },
-        {
-          "url": "https://www.sacbee.com/news/california/earthquakes/article317871388.html",
-          "title": "Update: Seismic activity on Nov. 1 - 2.6 magnitude earthquake close to Santa Barbara Is., CA registered",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8dHHwI4THAJd9BHXdUbQkcNj-gr4tUqA8VLCgpdVnlcBs-Iackcz3LkpgRSo"
-        },
-        {
-          "url": "https://mycharisma.com/news/california-earthquake-swarm-strikes-as-scientists-warn-of-san-andreas-threat/",
-          "title": "California Earthquake Swarm Strikes as Scientists Warn of San Andreas Threat",
-          "publisher": "Charisma Magazine Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGtiQwND1AJiSI-owGg0ljT3muGmv-CBr0dCXrI-1T9RCA91VkMeFJ4PWGu-E"
-        }
-      ]
-    },
-    {
-      "query": "earthquake near me",
+      "query": "kansas senate race",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T18:30:00Z",
+      "published_at": "2026-11-03T19:10:00Z",
       "related_news_urls": [
-        "https://www.volcanodiscovery.com/region/587480/earthquakes/lam-dong.html",
-        "https://colombiaone.com/2026/11/03/tremor-jolts-half-of-colombia-in-early-morning-hours/",
-        "https://www.volcanodiscovery.com/erdbeben/news/399617/seismisches-ereignis-moeglicherweise-ein-erdbeben-vor-wenigen-minuten-nahe-villavicencio-departamento-meta-kolumbien-gemeldet.html"
+        "https://www.nbcnews.com/politics/2026-elections/kansas-senate-results",
+        "https://www.kansascity.com/news/politics-government/election/article317886916.html",
+        "https://www.cjonline.com/story/news/politics/elections/2026/11/03/live-updates-topeka-kansas-2026-midterm-elections-results--live/92567099007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaFjJTt88yPQL9nr35roWP6-l8LS18PXW-OSk-4HgosOgWGkdsHRiMIFvRtLU",
-      "image_credit": "Volcano Discovery",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzJBUSFITcDd2dsIauDDuI8kRAVvKQjHZrm6b9_teBMo5fxPEa_8drWyl4NqI",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://www.volcanodiscovery.com/region/587480/earthquakes/lam-dong.html",
-          "title": "Lam Dong, Vietnam, Earthquakes: Latest Quakes",
-          "publisher": "Volcano Discovery",
+          "url": "https://www.nbcnews.com/politics/2026-elections/kansas-senate-results",
+          "title": "Kansas U.S. Senate Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaFjJTt88yPQL9nr35roWP6-l8LS18PXW-OSk-4HgosOgWGkdsHRiMIFvRtLU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzJBUSFITcDd2dsIauDDuI8kRAVvKQjHZrm6b9_teBMo5fxPEa_8drWyl4NqI"
         },
         {
-          "url": "https://colombiaone.com/2026/11/03/tremor-jolts-half-of-colombia-in-early-morning-hours/",
-          "title": "Tremor Jolts Half of Colombia in Early Morning Hours",
-          "publisher": "ColombiaOne.com",
+          "url": "https://www.kansascity.com/news/politics-government/election/article317886916.html",
+          "title": "Live updates: Final efforts on abortion vote in KC area; rainy weather on Election Day",
+          "publisher": "Kansas City Star",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStMvEy9Eval7iG_zMS14q4YHW613lM069kzRTJZXC0HjLSbp4UZjgMuQ2IJzY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTogeR3RPSCOLQTbB0unJlDUSVLf69JOHwLh1V3RKxIOmSivPMi4JL6daYoYwc"
         },
         {
-          "url": "https://www.volcanodiscovery.com/erdbeben/news/399617/seismisches-ereignis-moeglicherweise-ein-erdbeben-vor-wenigen-minuten-nahe-villavicencio-departamento-meta-kolumbien-gemeldet.html",
-          "title": "Seismic-like event, possible earthquake, reported minutes ago near Villavicencio, Meta Department, Colombia",
-          "publisher": "Volcano Discovery",
+          "url": "https://www.cjonline.com/story/news/politics/elections/2026/11/03/live-updates-topeka-kansas-2026-midterm-elections-results--live/92567099007/",
+          "title": "Live updates from Election Day in Topeka as Kansas votes in midterms",
+          "publisher": "The Topeka Capital-Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzBreKGANdzzMSSRRMvlgFoyJjaQxr2H3JvCzAqkfeWmgDs6hnFrsSeuY5H28"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOC5OSfXDG5qS5yuseZEuLMjxZkrT-8S6OnWYksxAl4iQ9gVgUZZmkzpukB8o"
         }
       ]
     },
     {
-      "query": "jacob morley",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T18:30:00Z",
+      "query": "barcelona - aston villa",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-03T19:00:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/03/us/tennessee-escaped-murderer-captured",
-        "https://www.kmbc.com/article/escaped-inmate-tennessee-missouri-captured-chase/74324171",
-        "https://www.foxnews.com/us/missouri-state-highway-patrol-recaptures-convicted-murderer-escaped-tennessee-prison"
+        "https://www.espn.com/soccer/story/_/id/50370533/barcelona-aston-villa-live-champions-league-latest-updates-commentary-score-result",
+        "https://sports.yahoo.com/articles/confirmed-barcelona-starting-lineup-face-185500044.html",
+        "https://www.bbc.com/sport/football/articles/c5ev3m9ddzgmo"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZx-geEsgDCMKvqmvCwr9fdt_-BaLAK9_p1tyBNmkqIBylIOwpeM5CjJzLudw",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMIfda313W9irTt4NiqjhHHAsLLZmvkMpI_vQsOU-_FfuZtMkHa7mi2jlM910",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/03/us/tennessee-escaped-murderer-captured",
-          "title": "Convicted murderer who escaped through Tennessee prison fence is captured, officials say",
+          "url": "https://www.espn.com/soccer/story/_/id/50370533/barcelona-aston-villa-live-champions-league-latest-updates-commentary-score-result",
+          "title": "Barcelona vs. Aston Villa LIVE: Champions League updates as Emery's side visit Camp Nou",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMIfda313W9irTt4NiqjhHHAsLLZmvkMpI_vQsOU-_FfuZtMkHa7mi2jlM910"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/confirmed-barcelona-starting-lineup-face-185500044.html",
+          "title": "Confirmed: Barcelona starting lineup to face Aston Villa",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShwVSdIg3jGas6Fjk3Z5hKhXwsKuLozyjuLB51d7kI0rRMHqTS7CdBpayytNA"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/articles/c5ev3m9ddzgmo",
+          "title": "Aston Villa: Unai Emery aims to prove Villa's worth among the elite against Barcelona in the Champions League",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQKwRK_I04qlL9kPSISD4h8nwoD1uBAfBpqApPNcMu7hBfzfxMJYvyP5P-e7c"
+        }
+      ]
+    },
+    {
+      "query": "houston weather",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T19:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
+        "https://www.cnn.com/2026/11/02/weather/storm-flooding-arizona-colorado-election-day-climate",
+        "https://weather.com/2026/11/03/forecast/national/election-day-maps-tracker"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7BASRUEFLRN7J-Hc_VLcFjCvFAdRv-RWQFq2Pez_GEIz7mdh7knlGh_Z_GJk",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
+          "title": "Floods and severe weather beset parts of the U.S. on Election Day",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7BASRUEFLRN7J-Hc_VLcFjCvFAdRv-RWQFq2Pez_GEIz7mdh7knlGh_Z_GJk"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/02/weather/storm-flooding-arizona-colorado-election-day-climate",
+          "title": "Storm soaks central US on Election Day after causing deadly flooding, voting disruptions in Southwest",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZx-geEsgDCMKvqmvCwr9fdt_-BaLAK9_p1tyBNmkqIBylIOwpeM5CjJzLudw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVqaoG-Uu7zqdCWv3dJJONsb-GxjO5VoCNKy1HLU1b_Cjo1B_AARSWQRFo-Ow"
         },
         {
-          "url": "https://www.kmbc.com/article/escaped-inmate-tennessee-missouri-captured-chase/74324171",
-          "title": "Authorities capture escaped Tennessee inmate near Kansas City, Missouri, after weeklong manhunt",
-          "publisher": "KMBC",
+          "url": "https://weather.com/2026/11/03/forecast/national/election-day-maps-tracker",
+          "title": "Election Day 2026 weather forecast: Nov. 3 maps and tracker",
+          "publisher": "The Weather Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRoI9lVunEdzDED9wxlxFSW_CquQDfbzzr65pFFgA2peSR4OeJ5PkDdsZmZpTY"
-        },
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-7lAs_marqVYNXqjxqmNXLN26KKsEmTjGtwcQpnwcUliRklncOquc6Z49rw"
+        }
+      ]
+    },
+    {
+      "query": "kendall puryear free throw",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T19:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/college-basketball-player-bizarre-foul-shot-goes-viral-season-opener-diabolical",
+        "https://sports.yahoo.com/articles/usf-forwards-free-throw-form-125440451.html",
+        "https://www.al.com/sports/2026/11/college-basketball-player-goes-viral-for-awful-free-throw-shooting-form.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwtaoIsycPq0bnCDa20ibYwarxa_SgtIjWgN7qwnMui82l5PiaoQ7OSNZ6YLI",
+      "image_credit": "Fox News",
+      "news": [
         {
-          "url": "https://www.foxnews.com/us/missouri-state-highway-patrol-recaptures-convicted-murderer-escaped-tennessee-prison",
-          "title": "Missouri State Highway Patrol recaptures convicted murderer who escaped Tennessee prison",
+          "url": "https://www.foxnews.com/outkick-sports/college-basketball-player-bizarre-foul-shot-goes-viral-season-opener-diabolical",
+          "title": "College basketball player's bizarre foul shot goes viral in season-opener: 'Diabolical' | OutKick",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaRwy5u0pksLTkzptRscRGYjltJCsNaMX0fKJEAEg7153ulvq3JkLpojGI2w4"
-        }
-      ]
-    },
-    {
-      "query": "arthur gea",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T18:30:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/video/highlights-paul-downs-rune-in-paris-2026-opener",
-        "https://www.i24news.tv/en/news/international/artc-brazilian-president-luiz-inacio-lula-da-silva-wins-runoff-election-against-flavio-bolsonaro-live-blog",
-        "https://www.rolexparismasters.com/en/news/video/2026-edition-pre-tournament-interview-tommy-paul-feeling-ambitions"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjJW-DhPuFsCOW2OCl33vDFN5ZXUzAmba653v7zQbA50RbHLOt5agyx04n6rY",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/video/highlights-paul-downs-rune-in-paris-2026-opener",
-          "title": "Highlights: Paul downs Rune in Paris 2026 opener",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjJW-DhPuFsCOW2OCl33vDFN5ZXUzAmba653v7zQbA50RbHLOt5agyx04n6rY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwtaoIsycPq0bnCDa20ibYwarxa_SgtIjWgN7qwnMui82l5PiaoQ7OSNZ6YLI"
         },
         {
-          "url": "https://www.i24news.tv/en/news/international/artc-brazilian-president-luiz-inacio-lula-da-silva-wins-runoff-election-against-flavio-bolsonaro-live-blog",
-          "title": "Brazilian President Luiz Inacio Lula da Silva wins runoff election against Flavio Bolsonaro | LIVE BLOG",
-          "publisher": "i24NEWS",
+          "url": "https://sports.yahoo.com/articles/usf-forwards-free-throw-form-125440451.html",
+          "title": "USF forward's free throw form goes viral for looking like a shot put toss",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqfQVVJeBdMhnokaFp_cieNT7Y9nFAF73058NkOQZfHQnFtGfmXTfDIoKSmFk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33d8VzYBDFijquzOX4X9hcy75QMGlFJQpRiePVM2ZStmlrZhHeGKSOzpuZHk"
         },
         {
-          "url": "https://www.rolexparismasters.com/en/news/video/2026-edition-pre-tournament-interview-tommy-paul-feeling-ambitions",
-          "title": "Pre-Tournament Interview: Tommy Paul",
-          "publisher": "Rolex Paris Masters",
+          "url": "https://www.al.com/sports/2026/11/college-basketball-player-goes-viral-for-awful-free-throw-shooting-form.html",
+          "title": "College basketball player goes viral for awful free-throw shooting form",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSap_oiRnTPl3frIgB_rkqsrxwoM9tJLBXR48_tW11ITUqeJS8qt--b1SFQwlQ"
-        }
-      ]
-    },
-    {
-      "query": "sudden stratospheric warming",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T18:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/news/weather/2026/11/03/polar-vortex-update-november/92559579007/",
-        "https://www.bostonglobe.com/2026/10/28/metro/polar-vortex-new-england-winter-weather/",
-        "https://www.centralillinoisproud.com/weather/weather-blog/polar-vortex-split-weather-impacts/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDAC8V1NPbcoMpqYHhKNWuI6a8EumfCBM1tS2GW0w7UBDmKAXOrKgXUORqXHg",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/news/weather/2026/11/03/polar-vortex-update-november/92559579007/",
-          "title": "The polar vortex is doing something extraordinary",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDAC8V1NPbcoMpqYHhKNWuI6a8EumfCBM1tS2GW0w7UBDmKAXOrKgXUORqXHg"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/10/28/metro/polar-vortex-new-england-winter-weather/",
-          "title": "The polar vortex shows signs of a rare early weakening. Here’s what that means for New England.",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRx2xdxA6ZWmaIy6tcc7jo6gkxof0orSIv-6Kb_afi4Gsv47rIXLQdDRoVoELM"
-        },
-        {
-          "url": "https://www.centralillinoisproud.com/weather/weather-blog/polar-vortex-split-weather-impacts/",
-          "title": "A sudden stratospheric warming event is occurring, what it means for us",
-          "publisher": "CIProud.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgz5sxR4pr-VmEZc1BV2rhuVKNnvqcSKMMocmDZwkofoWptubh0hPJ-nIOp30"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWWDUzzWwAh88c7HqECuyA7pxH623q3tjFBQCinRIxKTGS0ZKxgR3RA3YFXc0"
         }
       ]
     }
