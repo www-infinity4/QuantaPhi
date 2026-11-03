@@ -1,22 +1,33 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-11-02T19:11:36.524401Z",
+  "checked_at": "2026-11-03T01:43:13.116937Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 0
+      "articles_selected": 1
     },
     {
       "publisher": "CBS Sports",
       "url": "https://www.cbssports.com/partners/feeds/rss/mlb_news",
-      "articles_selected": 22
+      "articles_selected": 20
     }
   ],
   "articles": [
+    {
+      "title": "Rays well represented with 3 finalists for BBWAA Awards",
+      "url": "https://www.mlb.com/news/junior-caminero-kevin-cash-bryan-baker-finalists-2026-bbwaa-awards",
+      "publisher": "MLB.com",
+      "published_at": "2026-11-03T00:56:30Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
     {
       "title": "MLB Power Rankings: Brewers end 2026 season at No. 1 as World Series champions",
       "url": "https://www.cbssports.com/mlb/news/mlb-power-rankings-final-2026-brewers-world-series/",
@@ -234,28 +245,6 @@
       "summary": "Jacob Misiorowski leads all action on player props for World Series Game 5 on Wednesday",
       "author": "Matt Severance",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/af71a311-93bf-4540-86d6-6d52ed0e2f29/jacob-misiorowski-milwaukee-brewers-imagn-images.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Yankees legend Jorge Posada reveals rift with team: 'I don't feel welcome when I go there'",
-      "url": "https://www.cbssports.com/mlb/news/yankees-legend-jorge-posada-rift-with-team-dont-feel-welcome/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T16:37:21Z",
-      "summary": "The Yankees' stalwart catcher during the Joe Torre dynasty years won four World Series rings in New York",
-      "author": "Dayn Perry",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/c1aa6667-c427-452a-84f4-f31a1ca26ae9/jorge-posada-getty.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Jacob Misiorowski's moment? MLB's most electric starter can pitch the Brewers to their first title",
-      "url": "https://www.cbssports.com/mlb/news/jacob-misiorowski-moment-mlb-most-electric-starter-brewers-world-series/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-28T15:15:43Z",
-      "summary": "Misiorowski has been good but not his usual level of great in the playoffs ... will that change in World Series Game 5?",
-      "author": "Julian McWilliams",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/28/ef010e72-e146-4436-9c52-bcfac493e930/misiorowski-getty-2.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
