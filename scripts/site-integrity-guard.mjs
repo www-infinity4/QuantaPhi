@@ -10,9 +10,10 @@ import crypto from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 
-const SAFE_AUTO_FILES = new Set(['index.html']);
+const SAFE_AUTO_FILES = new Set(['index.html','platinum/index.html']);
 const LIVE_ORIGIN = 'https://quantaphi.org';
-const LIVE_PATHS = ['/', '/disability-housing.html', '/coliseum/index.html', '/quick-card-builder.html'];
+const LIVE_PATHS = ['/', '/platinum/', '/physics-card.html', '/storybook/', '/disability-housing.html', '/coliseum/index.html', '/quick-card-builder.html'];
+const PUBLIC_ASSET_PROBES = ['/TV-Database/js/auth.js','/TV-Database/js/starquest-cloud-ledger.js','/physics-card.css'];
 const REPORT_DIR = 'site-integrity-evidence';
 const digest = s => crypto.createHash('sha256').update(s).digest('hex');
 export const isRepairableFile = file => SAFE_AUTO_FILES.has(file);
@@ -59,7 +60,7 @@ export function scanHtml(source,file,trackedPaths=null) {
   if(type==='link'&&!/\bstylesheet\b/i.test(attribute(tag,'rel')||''))continue;
   const local=src.split(/[?#]/,1)[0];
   const normalized=path.posix.normalize(local.startsWith('/')?local.slice(1):path.posix.join(path.posix.dirname(file),local));
-  if(normalized.startsWith('../')||!trackedPaths.has(normalized))findings.push({kind:'missing_local_asset',severity:'review',file,asset:local,offset:m.index});
+  if(normalized.startsWith('../')||!trackedPaths.has(normalized))findings.push({kind:'untracked_local_asset',severity:'review',file,asset:local,offset:m.index});
  }
  return findings;
 }
@@ -110,7 +111,7 @@ export async function scanLiveSite({origin=LIVE_ORIGIN,paths=LIVE_PATHS}={}) {
  if(origin!==LIVE_ORIGIN)throw Error('origin_not_allowlisted');
  const {chromium}=await import('playwright');
  const browser=await chromium.launch({headless:true});
- const result={pages:[],findings:[]};
+ const result={pages:[],assets:[],findings:[]};
  try {
   const context=await browser.newContext({viewport:{width:393,height:850},isMobile:true,hasTouch:true,serviceWorkers:'block'});
   for(const route of paths.slice(0,8)) {
@@ -129,6 +130,16 @@ export async function scanLiveSite({origin=LIVE_ORIGIN,paths=LIVE_PATHS}={}) {
    }catch(error){result.findings.push({kind:'navigation_failure',severity:'review',url:url.href,error:String(error.message).slice(0,180)});result.pages.push({url:url.href,checked:false});}
    finally{await page.close()}
   }
+  // Source checkout may not include assets served by a Cloudflare mapping or
+  // another repository. HTTP response is the authority for live availability.
+  for(const route of PUBLIC_ASSET_PROBES){
+   const url=new URL(route,origin);
+   try{
+    const response=await context.request.get(url.href,{timeout:12000,failOnStatusCode:false});
+    result.assets.push({url:url.href,status:response.status()});
+    if(response.status()>=400)result.findings.push({kind:'public_asset_http_failure',severity:'review',url:url.href,status:response.status()});
+   }catch(error){result.findings.push({kind:'public_asset_check_unavailable',severity:'review',url:url.href,error:String(error.message).slice(0,160)});}
+  }
  }finally{await browser.close()}
  return result;
 }
@@ -140,7 +151,7 @@ export async function main(args=process.argv.slice(2)) {
  const report={checkedAt:new Date().toISOString(),mode:apply?'guarded_autofix':'read_only',source,browser,confirmedDeployment:false};
  const dir=path.join(root,REPORT_DIR);await fs.mkdir(dir,{recursive:true});
  await fs.writeFile(path.join(dir,'report.json'),JSON.stringify(report,null,2));
- console.log(JSON.stringify({files:source.filesChecked,sourceFindings:source.findings.length,autoFixed:source.fixes.length,livePages:browser.pages.length,liveFindings:browser.findings.length}));
+ console.log(JSON.stringify({files:source.filesChecked,sourceFindings:source.findings.length,autoFixed:source.fixes.length,livePages:browser.pages.length,assetProbes:browser.assets?.length||0,liveFindings:browser.findings.length}));
  return report;
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))main().catch(e=>{console.error(e.message);process.exitCode=1});

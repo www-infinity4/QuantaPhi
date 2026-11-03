@@ -7,6 +7,11 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'platinum/index.html'
+      - 'physics-card.html'
+      - 'physics-card.js'
+      - 'physics-card.css'
+      - 'test/site-integrity-page-coverage.test.mjs'
       - 'scripts/site-integrity-guard.mjs'
       - 'scripts/site-integrity-publish.mjs'
       - 'test/site-integrity-guard.test.mjs'
@@ -15,6 +20,11 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'platinum/index.html'
+      - 'physics-card.html'
+      - 'physics-card.js'
+      - 'physics-card.css'
+      - 'test/site-integrity-page-coverage.test.mjs'
       - 'scripts/site-integrity-guard.mjs'
       - 'scripts/site-integrity-publish.mjs'
       - 'test/site-integrity-guard.test.mjs'
@@ -58,7 +68,7 @@ jobs:
           git diff --check
           node --check scripts/site-integrity-guard.mjs
           node --check scripts/site-integrity-publish.mjs
-          node --test test/site-integrity-guard.test.mjs test/site-integrity-publish.test.mjs test/index-escaped-newline.test.cjs
+          node --test test/site-integrity-guard.test.mjs test/site-integrity-publish.test.mjs test/site-integrity-page-coverage.test.mjs test/physics-card.test.cjs test/index-escaped-newline.test.cjs
       - name: Open bounded repair pull request when exact patch exists
         if: ${{ github.event_name != 'pull_request' }}
         env:
@@ -66,12 +76,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- index.html; then
+          if git diff --quiet -- index.html platinum/index.html; then
             echo 'No provably safe repair needed; browser findings are report-only.'
             exit 0
           fi
           paths="$(git diff --name-only)"
-          if [ "$paths" != 'index.html' ]; then
+          if [ "$paths" != 'index.html' ] && [ "$paths" != 'platinum/index.html' ]; then
             echo 'Unexpected paths modified; refusing publication.' >&2
             exit 1
           fi
@@ -89,12 +99,12 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git checkout -b "$branch"
-          git add -- index.html
+          git add -- "$paths"
           git commit -m 'fix(site): recover literal escaped HTML newline after verified scan'
           git push origin "HEAD:refs/heads/$branch"
           gh pr create --head "$branch" --base main \
-            --title 'Automated safe homepage text-node repair' \
-            --body "Deterministic rule: replace only literal escaped newline text between HTML siblings in index.html. Scan and Node/browser validation are recorded in the workflow artifact. No wallet, auth, payment, database or Cloudflare mutation. Promotion is gated on exact source diff, CI and branch rules; source merge is not live deployment verification. Base SHA: $base"
+            --title 'Automated safe HTML text-node repair' \
+            --body "Deterministic rule: replace only literal escaped newline text between HTML siblings in $paths. Scan and Node/browser validation are recorded in the workflow artifact. No wallet, auth, payment, database or Cloudflare mutation. Promotion is gated on exact source diff, CI and branch rules; source merge is not live deployment verification. Base SHA: $base"
           # Workflows triggered by the Actions token do not automatically start.
           gh workflow run site-integrity-guard.yml --ref "$branch"
       - name: Promote previously verified narrow repairs only when every merge gate passes
