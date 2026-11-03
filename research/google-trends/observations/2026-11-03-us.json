@@ -3,21 +3,195 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T15:31:34.541645Z",
+  "checked_at": "2026-11-03T16:31:29.212922Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "elder scrolls 6",
+      "query": "jiri lehecka",
       "approx_searches": "500+",
+      "published_at": "2026-11-03T16:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50348821/vacherot-rallies-beat-lehecka-swiss-indoors-final",
+        "https://www.atptour.com/en/news/lehecka-vacherot-basel-2026-final-sunday",
+        "https://tenngrand.com/basel-tennis-previews-picks-predictions-fritz-vs-vacherot-lehecka-struff/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3oQ4Z0Svs8pwCkeohZrfNyWCYHI66pzPqHcm9dvrS9OmgCKbrRkYTuRMQGc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50348821/vacherot-rallies-beat-lehecka-swiss-indoors-final",
+          "title": "Valentin Vacherot rallies to beat Jiri Lehecka to win Swiss Indoors title",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3oQ4Z0Svs8pwCkeohZrfNyWCYHI66pzPqHcm9dvrS9OmgCKbrRkYTuRMQGc"
+        },
+        {
+          "url": "https://www.atptour.com/en/news/lehecka-vacherot-basel-2026-final-sunday",
+          "title": "Vacherot rallies past Lehecka to capture Basel crown, make Monegasque history",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa2SkabfRQpV6sRo8AZ5KbBCXMpUq2ncnhiM7jqHmgmJe0CZoox29u8gyFSpA"
+        },
+        {
+          "url": "https://tenngrand.com/basel-tennis-previews-picks-predictions-fritz-vs-vacherot-lehecka-struff/",
+          "title": "Basel SF previews and predictions: Fritz vs. Vacherot, Lehecka vs. Struff",
+          "publisher": "The Grandstand",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJm4vpxji9p1NBSv35uLYcBiS9_PLxgBHve7Zjdh_y5qpXZOkI_CPfzPzvZiA"
+        }
+      ]
+    },
+    {
+      "query": "mardi gras 2027",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T15:50:00Z",
+      "related_news_urls": [
+        "https://www.wbrz.com/news/zachary-mardi-gras-set-to-return-in-2027-with-music-culture-and-community/",
+        "https://www.newsherald.com/story/entertainment/events/2026/11/03/parade-details-and-more-announced-for-mardi-gras-2027-in-panama-city/92562454007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnt4-uLwa_yhJ08bkRAmW3SJb6yDrW5RW0ztbkV9-xerJS1QLjaClrX7s42Mo",
+      "image_credit": "WBRZ",
+      "news": [
+        {
+          "url": "https://www.wbrz.com/news/zachary-mardi-gras-set-to-return-in-2027-with-music-culture-and-community/",
+          "title": "Zachary Mardi Gras set to return in 2027 with music, culture and community",
+          "publisher": "WBRZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnt4-uLwa_yhJ08bkRAmW3SJb6yDrW5RW0ztbkV9-xerJS1QLjaClrX7s42Mo"
+        },
+        {
+          "url": "https://www.newsherald.com/story/entertainment/events/2026/11/03/parade-details-and-more-announced-for-mardi-gras-2027-in-panama-city/92562454007/",
+          "title": "Not too soon to think about Mardi Gras. Krewe of St. Andrews has plans.",
+          "publisher": "Panama City News Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaGdOYLvJP3CCDhhcfEqZ_EMuvDkKTrM1TetZWL0D0J12AksbsURri7zcLPaE"
+        }
+      ]
+    },
+    {
+      "query": "school building",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T15:40:00Z",
+      "related_news_urls": [
+        "https://www.daytondailynews.com/local/education/kettering-schools-spends-over-15-000-on-two-day-trip-to-minnesota-to-tour-school/article_ba9c304b-6b9d-58d0-8e3e-f9033f0f084d.html",
+        "https://mynewberrynews.com/features/former-high-school-building-faces-potential-demolition-due-to-mold/",
+        "https://www.longislandpress.com/2026/11/03/syosset-public-library/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKaTyzJsHi8-VfOPSJBCy5prq0eNnaEEd6NYvTLkJLoDLlp_FAIlUV_6Pzb9o",
+      "image_credit": "Dayton Daily News",
+      "news": [
+        {
+          "url": "https://www.daytondailynews.com/local/education/kettering-schools-spends-over-15-000-on-two-day-trip-to-minnesota-to-tour-school/article_ba9c304b-6b9d-58d0-8e3e-f9033f0f084d.html",
+          "title": "Kettering Schools spent over $15K on two-day trip to Minnesota to tour school buildings",
+          "publisher": "Dayton Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKaTyzJsHi8-VfOPSJBCy5prq0eNnaEEd6NYvTLkJLoDLlp_FAIlUV_6Pzb9o"
+        },
+        {
+          "url": "https://mynewberrynews.com/features/former-high-school-building-faces-potential-demolition-due-to-mold/",
+          "title": "Former high school building faces potential demolition due to mold",
+          "publisher": "The Newberry News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnsjurhbqq1SoPwy-batTE9kUq5Xzi-iForyh99z5ImZE6KvyA_ozQorGKPzI"
+        },
+        {
+          "url": "https://www.longislandpress.com/2026/11/03/syosset-public-library/",
+          "title": "Syosset Public Library hopes to expand programming if community votes to approve Woodbury School building project",
+          "publisher": "LI Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0XwkKqZFFzbPNuWFbWEehlsQlgxiHh8uUfoEOA5bKBiwKyfjFO0Ud4X62Y3A"
+        }
+      ]
+    },
+    {
+      "query": "how to vote online",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T15:30:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/when-polls-open-close-2026-midterm-elections/",
+        "https://www.npr.org/2026/10/30/g-s1-149560/2026-vote-midterm-election-local-voter-guides",
+        "https://bikepacking.com/news/time-to-vote-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw-AVy_cN0BWzEdM6VqgaW9oRwC4yo749USRXf1VXrz_pMVyDj7eM74d4rzzk",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/when-polls-open-close-2026-midterm-elections/",
+          "title": "Here's when polls open and close for 2026 midterm elections today",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw-AVy_cN0BWzEdM6VqgaW9oRwC4yo749USRXf1VXrz_pMVyDj7eM74d4rzzk"
+        },
+        {
+          "url": "https://www.npr.org/2026/10/30/g-s1-149560/2026-vote-midterm-election-local-voter-guides",
+          "title": "Still need to finish your midterm ballot? Find your local voter guide here",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC2-sqcaj5F3oe2e-kJ2bFU79IYJacvOebjIXvNwGus4jpYbgxJlBmrQ-qaIE"
+        },
+        {
+          "url": "https://bikepacking.com/news/time-to-vote-2026/",
+          "title": "It’s Time to Vote!",
+          "publisher": "BIKEPACKING.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIlpIYbchrDhI9Rawxmp4yuidNCpkl48kMq57nTJEZxzs14OXB5kZbwikgpXw"
+        }
+      ]
+    },
+    {
+      "query": "voting centers near me",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T15:20:00Z",
+      "related_news_urls": [
+        "https://www.wusa9.com/article/news/politics/elections/polls-open-and-close-dc-midterm-elections-2026/65-35b6b911-57e9-4192-8d76-cd6ddc0dba56",
+        "https://wtop.com/elections/2026/11/what-to-watch-as-high-stakes-midterm-elections-unfold-across-dc-region/",
+        "https://wamu.org/story/26/10/28/dc-2026-midterm-voter-guide/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWNSO56tok95G0Mc1iDK1GCA0qm7Nu0ZarOsTiznSFPP_cjPS8z6I_ijczelE",
+      "image_credit": "WUSA9",
+      "news": [
+        {
+          "url": "https://www.wusa9.com/article/news/politics/elections/polls-open-and-close-dc-midterm-elections-2026/65-35b6b911-57e9-4192-8d76-cd6ddc0dba56",
+          "title": "When do polls open and close in DC?",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWNSO56tok95G0Mc1iDK1GCA0qm7Nu0ZarOsTiznSFPP_cjPS8z6I_ijczelE"
+        },
+        {
+          "url": "https://wtop.com/elections/2026/11/what-to-watch-as-high-stakes-midterm-elections-unfold-across-dc-region/",
+          "title": "What to watch as high-stakes midterm elections unfold across DC region",
+          "publisher": "WTOP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNletj1fvKtgYDqt3B31NjPwPePtSdJMd28qliWqZk8vdUb83vv8oCq0AWrw0"
+        },
+        {
+          "url": "https://wamu.org/story/26/10/28/dc-2026-midterm-voter-guide/",
+          "title": "D.C. 2026 Midterm Voter Guide",
+          "publisher": "WAMU",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkgJ79NklFLV64Mudr532C3exGPlnZ623pQjWPmbWLA_vJR1HrBAGDp6zg0w"
+        }
+      ]
+    },
+    {
+      "query": "elder scrolls 6",
+      "approx_searches": "10000+",
       "published_at": "2026-11-03T15:10:00Z",
       "related_news_urls": [
+        "https://www.theverge.com/news/1025273/the-elder-scrolls-vi-sentinel-name-announcement",
         "https://www.ign.com/articles/the-elder-scrolls-6-sentinel-name-logo-officially-revealed-as-bethesda-marks-40th-anniversary",
-        "https://www.techpowerup.com/354377/the-elder-scrolls-vi-reportedly-titled-sentinel-set-in-hammerfell",
-        "https://www.theverge.com/news/1025273/the-elder-scrolls-vi-sentinel-name-announcement"
+        "https://news.xbox.com/en-us/2026/11/03/the-elder-scrolls-vi-official-name-reveal/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp_3_CFd8PlcrebVIcpYEn6woBUTGgwKp09Db-MrEGzSfTUgvHxrFkPqVpjlE",
-      "image_credit": "IGN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPicUlsawmEtaGT_Zc-v2cYa1uA_Fgmnh4M_e487gs8wMtMUstudfGT6Z7rkQ",
+      "image_credit": "The Verge",
       "news": [
+        {
+          "url": "https://www.theverge.com/news/1025273/the-elder-scrolls-vi-sentinel-name-announcement",
+          "title": "The Elder Scrolls VI officially has a name: Sentinel",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPicUlsawmEtaGT_Zc-v2cYa1uA_Fgmnh4M_e487gs8wMtMUstudfGT6Z7rkQ"
+        },
         {
           "url": "https://www.ign.com/articles/the-elder-scrolls-6-sentinel-name-logo-officially-revealed-as-bethesda-marks-40th-anniversary",
           "title": "The Elder Scrolls 6: Sentinel Name, Logo, Officially Revealed as Bethesda Marks 40th Anniversary",
@@ -26,59 +200,52 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp_3_CFd8PlcrebVIcpYEn6woBUTGgwKp09Db-MrEGzSfTUgvHxrFkPqVpjlE"
         },
         {
-          "url": "https://www.techpowerup.com/354377/the-elder-scrolls-vi-reportedly-titled-sentinel-set-in-hammerfell",
-          "title": "The Elder Scrolls VI Reportedly Titled Sentinel, Set in Hammerfell",
-          "publisher": "TechPowerUp",
+          "url": "https://news.xbox.com/en-us/2026/11/03/the-elder-scrolls-vi-official-name-reveal/",
+          "title": "The Elder Scrolls VI: Official Name Reveal",
+          "publisher": "XBOX Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCJRBesQ_F2wmK1yA_RLd7nmbBmrcjCh3jCvdZAQpC8RyUPeg3MYShlsHFIL0"
-        },
-        {
-          "url": "https://www.theverge.com/news/1025273/the-elder-scrolls-vi-sentinel-name-announcement",
-          "title": "The Elder Scrolls VI officially has a name: Sentinel",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPicUlsawmEtaGT_Zc-v2cYa1uA_Fgmnh4M_e487gs8wMtMUstudfGT6Z7rkQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRog0BC9bpmXcBtk8iKccQ3ejdk4yvM1RTn-h7CJ0s5AF65FULYtJCy-d3H11s"
         }
       ]
     },
     {
       "query": "lego godzilla",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-03T14:50:00Z",
       "related_news_urls": [
-        "https://jaysbrickblog.com/news/massive-lego-21375-godzilla-stomps-into-your-collection-on-black-friday-2026/",
-        "https://www.jedinews.com/lego/articles/lego-ideas-godzilla-and-gift-with-purchase-available-november-27th/",
-        "https://stonewars.com/news/lego-40888-godzilla-logo-gwp-revealed/"
+        "https://www.theverge.com/tech/1025293/lego-godzilla-set-model-posable-heat-ray",
+        "https://www.ign.com/articles/lego-godzilla-announced-releases-on-black-friday",
+        "https://jaysbrickblog.com/news/massive-lego-21375-godzilla-stomps-into-your-collection-on-black-friday-2026/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5Va3KgJLOCdMeKrb1EO1fXmGhm9LnemWtEz7E8VATCsExUHXsAguWASA9CDM",
-      "image_credit": "Jay's Brick Blog",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRc467o95eCph6H0-X0I0vvPbOocqMkXp8gffz0XlpHxGjB0u-CYUJre_dpAT0",
+      "image_credit": "The Verge",
       "news": [
+        {
+          "url": "https://www.theverge.com/tech/1025293/lego-godzilla-set-model-posable-heat-ray",
+          "title": "Lego’s 5,363-piece Godzilla stands over 27-inches tall.",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRc467o95eCph6H0-X0I0vvPbOocqMkXp8gffz0XlpHxGjB0u-CYUJre_dpAT0"
+        },
+        {
+          "url": "https://www.ign.com/articles/lego-godzilla-announced-releases-on-black-friday",
+          "title": "LEGO Godzilla Announced, Releases on Black Friday",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk5HWeyJxKNp0KRWLRsNWHeIb16Tm9jgd-DlUh-dmfJAyuuPzbgRCs0O_wgsU"
+        },
         {
           "url": "https://jaysbrickblog.com/news/massive-lego-21375-godzilla-stomps-into-your-collection-on-black-friday-2026/",
           "title": "Massive LEGO 21375 Godzilla stomps into your collection on Black Friday 2026",
           "publisher": "Jay's Brick Blog",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5Va3KgJLOCdMeKrb1EO1fXmGhm9LnemWtEz7E8VATCsExUHXsAguWASA9CDM"
-        },
-        {
-          "url": "https://www.jedinews.com/lego/articles/lego-ideas-godzilla-and-gift-with-purchase-available-november-27th/",
-          "title": "LEGO Ideas Godzilla and Gift with Purchase, Available November 27th",
-          "publisher": "Jedi News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnclf-pRTeKJ41o002-SETTbA558W_b74_EXOD_f0riR1wpaof-k4w3puqpu4"
-        },
-        {
-          "url": "https://stonewars.com/news/lego-40888-godzilla-logo-gwp-revealed/",
-          "title": "LEGO Godzilla Logo with Footprint (40888) GWP Revealed",
-          "publisher": "StoneWars.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYK7WKF1Qls2ecQTljP7dCFvrxfPDAIyMM29nVe2Lm-ELi3mcugi1VqvSKlK4"
         }
       ]
     },
     {
       "query": "playstation store black friday 2026",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-03T14:40:00Z",
       "related_news_urls": [
         "https://blog.playstation.com/2026/11/03/playstations-black-friday-deals-2026/",
@@ -113,46 +280,46 @@
     },
     {
       "query": "where can i drop off my ballot",
-      "approx_searches": "200+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-03T14:40:00Z",
       "related_news_urls": [
-        "https://www.nbcchicago.com/illinois-election-2026/still-have-a-mail-in-ballot-for-this-years-election-heres-what-to-do/4010398/",
-        "https://www.miamistudent.net/article/2026/11/students-at-miami-university-navigate-ohios-new-voting-laws-ahead-of-2026-election",
-        "https://www.dispatch.com/story/news/politics/elections/2026/11/02/ohio-mail-in-ballots-due-election-day-2026-drop-off-locations/92561885007/"
+        "https://www.modbee.com/news/politics-government/election/voter-guide/article317891480.html",
+        "https://www.abc10.com/video/news/politics/elections/stanislaus-county-voters/103-7f46251e-20ea-4fb5-ba82-f48ab5be5545",
+        "https://www.yahoo.com/news/politics/articles/stanislaus-county-prepares-election-day-020202575.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MH227XtiVSEabGjEWi1vJUzsu6liNMYu0WPsbpoyCFPVdlx6sgBA1Vb0A8E",
-      "image_credit": "NBC 5 Chicago",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpPjSvp5ZUJRfIHAfA8UcymJMdwX2_IWExMZxkkAVJ9jzigQ8YOdg9l3u3Rws",
+      "image_credit": "Modesto Bee",
       "news": [
         {
-          "url": "https://www.nbcchicago.com/illinois-election-2026/still-have-a-mail-in-ballot-for-this-years-election-heres-what-to-do/4010398/",
-          "title": "Still have a mail-in ballot for this year's election? Here's what to do",
-          "publisher": "NBC 5 Chicago",
+          "url": "https://www.modbee.com/news/politics-government/election/voter-guide/article317891480.html",
+          "title": "Voting in Stanislaus County? Where to find polling places, ballot drop-off sites",
+          "publisher": "Modesto Bee",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MH227XtiVSEabGjEWi1vJUzsu6liNMYu0WPsbpoyCFPVdlx6sgBA1Vb0A8E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpPjSvp5ZUJRfIHAfA8UcymJMdwX2_IWExMZxkkAVJ9jzigQ8YOdg9l3u3Rws"
         },
         {
-          "url": "https://www.miamistudent.net/article/2026/11/students-at-miami-university-navigate-ohios-new-voting-laws-ahead-of-2026-election",
-          "title": "Students at Miami University navigate Ohio’s new voting laws ahead of 2026 election",
-          "publisher": "The Miami Student",
+          "url": "https://www.abc10.com/video/news/politics/elections/stanislaus-county-voters/103-7f46251e-20ea-4fb5-ba82-f48ab5be5545",
+          "title": "Stanislaus County prepares for Election Day as early voting climbs 28%",
+          "publisher": "ABC10",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO18yswF0IrRBDNq36PH6vFfdLq4NZ13APdCvc_b55k9WJOsdEOI6HM5_mLhI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnsSJJ-iahiw3r9aoI9m_lWcavVlvnZfLEhT8JKeGV1Np37-QlH85X-PfMI1A"
         },
         {
-          "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/02/ohio-mail-in-ballots-due-election-day-2026-drop-off-locations/92561885007/",
-          "title": "Why you should plan to drop off your Ohio mail-in ballot on Election Day",
-          "publisher": "The Columbus Dispatch",
+          "url": "https://www.yahoo.com/news/politics/articles/stanislaus-county-prepares-election-day-020202575.html",
+          "title": "Stanislaus County prepares for Election Day",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSazpLypJcmAJ27cfWd1RSmlqzCGhda0YquyO8mOf-yxjla-LHb3p0KfMDZK3A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQudlYlfkNHXKve3meLyL_M0Sjn1mHsXe9JUInDVCc5Emi8KJ2owwe76LbqPxs"
         }
       ]
     },
     {
       "query": "senate election results today",
-      "approx_searches": "10000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-03T14:30:00Z",
       "related_news_urls": [
         "https://www.nbcnews.com/politics/2026-elections/senate-results",
-        "https://www.nytimes.com/2026/11/01/us/politics/times-siena-poll-senate.html",
+        "https://www.bbc.com/news/articles/cqy7ljkprvjko",
         "https://edition.cnn.com/2026/11/02/politics/live-news/midterm-election-congress"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSae5cL1NQMpcSF4zen8MIg4QYvMmrD5EatzybzYjtHCrOYMUm5Wfoq7I_EC5I",
@@ -166,11 +333,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSae5cL1NQMpcSF4zen8MIg4QYvMmrD5EatzybzYjtHCrOYMUm5Wfoq7I_EC5I"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/01/us/politics/times-siena-poll-senate.html",
-          "title": "Democrats Show Strength in Final Days of Race for the Senate, New Polls Find",
-          "publisher": "The New York Times",
+          "url": "https://www.bbc.com/news/articles/cqy7ljkprvjko",
+          "title": "The US Senate races to watch in this year's midterm elections",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkbuLYVmaTI89TjldZDwQ6RGvnB-ZYYXnHK8lihZsw6RCnKiYMzVskoB4Tw04"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwq883vAJtuSDIaBrE5WdVn9dLHIIPVXsn4nintKIjmohy7TYU7O_DgAip-lQ"
         },
         {
           "url": "https://edition.cnn.com/2026/11/02/politics/live-news/midterm-election-congress",
@@ -178,181 +345,6 @@
           "publisher": "CNN",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwqSqs9B0I8sfo727VvlYjfJ-cRv2SO25RAhKSjxJMdUQfD1Bcdp7ciPTE6WM"
-        }
-      ]
-    },
-    {
-      "query": "anthem",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-03T14:30:00Z",
-      "related_news_urls": [
-        "https://www.aol.com/articles/seahawks-slammed-over-national-atrocity-012713000.html",
-        "https://therockrevival.com/rock-news/watch-anthrax-frontman-joey-belladonna-sings-national-anthem-on-monday-night-football/",
-        "https://en.as.com/nfl/who-is-singing-the-national-anthem-at-the-bears-vs-seahawks-monday-night-football-game-f202611-n/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFYMKzc1OM7PrFDI-6mgGqtC6Jx8xSXeoly_gPr3T0NQdNCags-v1GmMp3TA0",
-      "image_credit": "AOL.com",
-      "news": [
-        {
-          "url": "https://www.aol.com/articles/seahawks-slammed-over-national-atrocity-012713000.html",
-          "title": "Seahawks slammed over 'national atrocity' as metal singer performs Star-Spangled Banner on MNF",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFYMKzc1OM7PrFDI-6mgGqtC6Jx8xSXeoly_gPr3T0NQdNCags-v1GmMp3TA0"
-        },
-        {
-          "url": "https://therockrevival.com/rock-news/watch-anthrax-frontman-joey-belladonna-sings-national-anthem-on-monday-night-football/",
-          "title": "WATCH: Anthrax Frontman Joey Belladonna Sings National Anthem on Monday Night Football",
-          "publisher": "The Rock Revival",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoKu3mMuofsXRuZVtad2vR3ZQVTq07x5ckzCadcFUIrPU5iBD4FhXDu3mG6I"
-        },
-        {
-          "url": "https://en.as.com/nfl/who-is-singing-the-national-anthem-at-the-bears-vs-seahawks-monday-night-football-game-f202611-n/",
-          "title": "Who is singing the national anthem at the Bears vs Seahawks Monday Night Football game?",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaSD691EKAss5qoRXIKQwhe9oEw6BAjn8Af60-X35wUCj97KFYSqvvDz8uk5M"
-        }
-      ]
-    },
-    {
-      "query": "scott colom",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T14:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-mississippi-us-senate.html",
-        "https://www.pbs.org/newshour/politics/live-results-mississippi-senate-midterm-election",
-        "https://www.wlox.com/2026/11/02/what-know-before-voting-mississippis-midterm-election/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUXghYAtcnqsR_vJJOHde7v1z9wk-RVaGet5Qrzng88svChOxp51d11eXGa0w",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-mississippi-us-senate.html",
-          "title": "Mississippi U.S. Senate 2026: Live Election Results, Hyde-Smith vs. Colom",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUXghYAtcnqsR_vJJOHde7v1z9wk-RVaGet5Qrzng88svChOxp51d11eXGa0w"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/politics/live-results-mississippi-senate-midterm-election",
-          "title": "Live Results: Mississippi Senate midterm election",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeSyZZ5ZfXpRHzaPi8mJsNZfVwobUrDMxH0bmSS0S7AUmsRkYJ48iRRJQXbfA"
-        },
-        {
-          "url": "https://www.wlox.com/2026/11/02/what-know-before-voting-mississippis-midterm-election/",
-          "title": "POLLS OPEN: What to know before voting in Mississippi’s midterm election",
-          "publisher": "WLOX",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoMZ2-87W_hldk-BKwTY_jWodWpfSxJSu2k21x8VCEJo--qlJpzlbVbs6q7es"
-        }
-      ]
-    },
-    {
-      "query": "emma roberts",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T14:20:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1437754/emma-roberts-husband-cody-john-start-trading-card-channel-summer-breaks",
-        "https://www.aol.com/articles/emma-roberts-son-rhodes-walked-195400000.html",
-        "https://abc.com/video/1ebd8a36-f969-4955-b805-2ab24a8f4395/playlist/pl5523099034"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRqDE4q8P_ELlMTNbUVFFOWj7chxAB3hV_xDmAt5hSUuf5u3olm88-LNMfc8k",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1437754/emma-roberts-husband-cody-john-start-trading-card-channel-summer-breaks",
-          "title": "Emma Roberts Is in a New League Debuting Trading Card Business With Husband Cody John",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRqDE4q8P_ELlMTNbUVFFOWj7chxAB3hV_xDmAt5hSUuf5u3olm88-LNMfc8k"
-        },
-        {
-          "url": "https://www.aol.com/articles/emma-roberts-son-rhodes-walked-195400000.html",
-          "title": "Emma Roberts' Son Rhodes Walked Her Down the Aisle at Summer Wedding in Idaho",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1aSzERLlFH_KxfsijQ6hQkdyHYPHdQmJSM2IF8OYal_O4Ajg0wew6FJ_X8UM"
-        },
-        {
-          "url": "https://abc.com/video/1ebd8a36-f969-4955-b805-2ab24a8f4395/playlist/pl5523099034",
-          "title": "Emma Roberts on Getting Married, American Horror Story and She Breaks Baseball Cards with Jimmy Kimmel",
-          "publisher": "ABC Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwo5ZScRAIv13lGlaM5XvhAqhMVcJFphosm9ld6UL2nmoRabRr-uGQiZcdEjc"
-        }
-      ]
-    },
-    {
-      "query": "kedon slovis",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-03T14:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-adding-qb-kedon-slovis-off-packers-practice-squad",
-        "https://www.baltimoreravens.com/news/kedon-slovis-reportedly-signs-with-ravens-as-backup-quarterback",
-        "https://www.baltimorebeatdown.com/baltimore-ravens-news/87363/ravens-sign-qb-austin-reed-to-practice-squad"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVMHHylJGEh5rrVqicx_NLkeUsMcEQ33eHUJZTvUyvi5LXoKpMwgSXxMrZiDk",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-adding-qb-kedon-slovis-off-packers-practice-squad",
-          "title": "Ravens adding QB Kedon Slovis off Packers’ practice squad",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVMHHylJGEh5rrVqicx_NLkeUsMcEQ33eHUJZTvUyvi5LXoKpMwgSXxMrZiDk"
-        },
-        {
-          "url": "https://www.baltimoreravens.com/news/kedon-slovis-reportedly-signs-with-ravens-as-backup-quarterback",
-          "title": "Reports: Ravens to Sign Quarterback Kedon Slovis",
-          "publisher": "Baltimore Ravens",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIcQKzR0UAa78EUUbsXjb9LKc_kAumSEbCutChokaeGgJssMzKdCZSoDKx1Ho"
-        },
-        {
-          "url": "https://www.baltimorebeatdown.com/baltimore-ravens-news/87363/ravens-sign-qb-austin-reed-to-practice-squad",
-          "title": "Ravens sign QB Austin Reed to practice squad",
-          "publisher": "Baltimore Beatdown",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLO34X8OYTXv5FXNPs9YfXowAWEieQX_iD9JrMxPPx0m_MBrGSreie3mTrWS8"
-        }
-      ]
-    },
-    {
-      "query": "djokovic",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T14:20:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/vacherot-feature-paris-2026-r1",
-        "https://tenngrand.com/paris-tennis-previews-picks-predictions-djokovic-vs-vacherot-paul-rune/",
-        "https://www.tennisworldusa.org/tennis/news/Novak_Djokovic/171133/decoding-the-djokovic-paradox-pioline-questions-the-serbians-lateseason-logic/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3Rg2mWvJz37hf67BD0NhGXbz13Fr0W4izavNIGfa7MhsCl4uRXAQBgWNe3II",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/vacherot-feature-paris-2026-r1",
-          "title": "Vacherot ahead of Djokovic clash in Paris: 'My season could be over, I'm giving 100%'",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3Rg2mWvJz37hf67BD0NhGXbz13Fr0W4izavNIGfa7MhsCl4uRXAQBgWNe3II"
-        },
-        {
-          "url": "https://tenngrand.com/paris-tennis-previews-picks-predictions-djokovic-vs-vacherot-paul-rune/",
-          "title": "Paris R1 previews and predictions: Djokovic vs. Vacherot, Paul vs. Rune",
-          "publisher": "The Grandstand",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC5yDHjf8EiL6N_xHIakDAithDvrJbs6rKJWTZFoEYVXkxcI3UZ8rwLh6x9v0"
-        },
-        {
-          "url": "https://www.tennisworldusa.org/tennis/news/Novak_Djokovic/171133/decoding-the-djokovic-paradox-pioline-questions-the-serbians-lateseason-logic/",
-          "title": "Decoding the Djokovic paradox: Pioline questions the Serbian’s late-season logic",
-          "publisher": "Tennis World USA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUdELViP-eUrnh_oZZPQ_qVlKlfty6-qk8ua1ydfwgjuxcBzspEX94JSPzoKQ"
         }
       ]
     }
