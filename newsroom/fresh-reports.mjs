@@ -37,6 +37,30 @@ export function isVerifiedFullReport(payload,url){
   paragraphs.every(x=>typeof x==='string'&&tidy(x,1800).length>=75)&&
   paragraphs.join(' ').length>=1500;
 }
+
+export function rankReaderSources(rows,now=Date.now()){
+ const seen=new Set();
+ const priority=row=>{
+  const host=new URL(row.url).hostname.toLowerCase();
+  if(host==='nasa.gov'||host.endsWith('.nasa.gov'))return 4;
+  if(host==='energy.gov'||host.endsWith('.energy.gov'))return 3;
+  if(host==='noaa.gov'||host.endsWith('.noaa.gov'))return 2;
+  return 0;
+ };
+ return (Array.isArray(rows)?rows:[]).filter(row=>{
+  if(!pickFreshSource([row],now))return false;
+  const url=https(row.url);if(!url||seen.has(url))return false;
+  seen.add(url);return true;
+ }).sort((a,b)=>priority(b)-priority(a)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,15);
+}
+export function createReadFailureBackoff(ttlMs=5*60*1000){
+ const retryAt=new Map();
+ return {
+  allowed(url,now=Date.now()){return (retryAt.get(url)||0)<=now;},
+  mark(url,now=Date.now()){retryAt.set(url,now+ttlMs);},
+  clear(url){retryAt.delete(url);}
+ };
+}
 if(typeof document!=='undefined'){
  const featured=document.getElementById('featured-articles');
  const status=document.getElementById('editorial-fresh-status');
@@ -47,6 +71,7 @@ if(typeof document!=='undefined'){
  const archive=document.getElementById('archive-articles');
  let sources=[],position=0,paused=false,rotation=null,revision=0,feedVersion=0,originalLookup=0,originalFallback=null,fullFromLive=false;
  const articleCache=new Map();
+ const readBackoff=createReadFailureBackoff();
  function el(tag,text,cls){
   const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;
  }
@@ -133,31 +158,26 @@ if(typeof document!=='undefined'){
   report.replaceChildren();
   reportStatus.textContent=message;
  };
- function sourceList(rows){
-  const seen=new Set(),now=Date.now();
-  return (Array.isArray(rows)?rows:[]).filter(item=>{
-   if(!pickFreshSource([item],now))return false;
-   const u=https(item.url);
-   if(!u||seen.has(u))return false;
-   seen.add(u);return true;
-  }).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,15);
- }
+ function sourceList(rows){return rankReaderSources(rows);}
  async function displayReport(){
   const turn=++revision;
   sources=sourceList(sources); // discard source as soon as it goes stale
   if(position>=sources.length)position=0;
   if(!sources.length){fullFromLive=false;if(!showOriginalFull())reportUnavailable('No verified new full article is available from the Cloudflare news desk. Older reports remain archived.');return;}
   const article=sources[position],url=https(article.url);
-  reportStatus.textContent='Reading a newly published original source…';
+  // Keep the complete published story visible while checking another publisher source.
+  if(!originalFallback||!freshFeatures({articles:[originalFallback]}).length)
+   reportStatus.textContent='Reading a newly published original source…';
   let payload=articleCache.get(url);
-  if(!payload){
+  if(!payload&&readBackoff.allowed(url)){
    try{
     const response=await fetch(READ_API,{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},
      body:JSON.stringify({url}),signal:AbortSignal.timeout(28000)});
     if(!response.ok)throw Error('read_failed');
     payload=await response.json();
-    if(isVerifiedFullReport(payload,url))articleCache.set(url,payload);
-   }catch{payload=null;}
+    if(isVerifiedFullReport(payload,url)){articleCache.set(url,payload);readBackoff.clear(url);}
+    else readBackoff.mark(url);
+   }catch{payload=null;readBackoff.mark(url);}
   }
   if(turn!==revision)return;
   report.replaceChildren();
