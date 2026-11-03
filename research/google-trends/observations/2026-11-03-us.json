@@ -3,41 +3,216 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T09:31:23.882045Z",
+  "checked_at": "2026-11-03T10:01:18.256300Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "美国中期选举",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T08:40:00Z",
+      "query": "did anyone win the powerball",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-03T09:30:00Z",
       "related_news_urls": [
-        "https://cn.wsj.com/articles/what-the-midterms-campaign-tells-us-about-where-our-politics-are-headed-bba5ec63",
-        "https://www.bbc.com/zhongwen/articles/cw99z83yxg4jo/simp",
-        "https://news.ifeng.com/c/8xkM97nXIi9"
+        "https://abc7ny.com/post/powerball-jackpot-soars-803-million-monday-11226-drawing/20008814/",
+        "https://www.forbes.com/sites/siladityaray/2026/11/03/powerball-jackpot-soars-to-835-million-heres-what-the-winner-could-take-home/",
+        "https://nclottery.com/NewsBlogDetails/2026/11/1/Cabarrus-County-ticket-scores-2-million-win-in-Halloween-Powerball-drawing"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXrlx6q4whvb_-skZ1dWDGXB0nGxcnEnOaPLWPU4cc5HGqJQS9cOoizv7Vcik",
-      "image_credit": "华尔街日报中文网",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5tM1ID9WaEYVrHQur-Hv26DN--BXCRgijBGvkc_dxyIVMELqy7Km32mYwAuk",
+      "image_credit": "ABC7 New York",
       "news": [
         {
-          "url": "https://cn.wsj.com/articles/what-the-midterms-campaign-tells-us-about-where-our-politics-are-headed-bba5ec63",
-          "title": "从中期选举选战看美国政治走向",
-          "publisher": "华尔街日报中文网",
+          "url": "https://abc7ny.com/post/powerball-jackpot-soars-803-million-monday-11226-drawing/20008814/",
+          "title": "Powerball winning numbers 11/2/26: $803.9M jackpot up for grabs",
+          "publisher": "ABC7 New York",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXrlx6q4whvb_-skZ1dWDGXB0nGxcnEnOaPLWPU4cc5HGqJQS9cOoizv7Vcik"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5tM1ID9WaEYVrHQur-Hv26DN--BXCRgijBGvkc_dxyIVMELqy7Km32mYwAuk"
         },
         {
-          "url": "https://www.bbc.com/zhongwen/articles/cw99z83yxg4jo/simp",
-          "title": "美国中期选举：竞选开支120亿美元“打破”纪录，马斯克已花5亿",
-          "publisher": "BBC",
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/03/powerball-jackpot-soars-to-835-million-heres-what-the-winner-could-take-home/",
+          "title": "Powerball Jackpot Soars To $835 Million—Here’s What The Winner Could Take Home",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwZc1_BnIhMNNr1G4XtblIIYK0ugqqMlF6uH1CZpSXVyZ-yAjIRGZHMVSji7k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAJONcPsmtmyj9ghoOB_pSbuRGCmdjVuQ91KVOGW0aueQ10ldVMVfBVKxFxbw"
         },
         {
-          "url": "https://news.ifeng.com/c/8xkM97nXIi9",
-          "title": "美国中期选举今日投票，民调：民主党参议院候选人在七个关键州领先",
-          "publisher": "凤凰网",
+          "url": "https://nclottery.com/NewsBlogDetails/2026/11/1/Cabarrus-County-ticket-scores-2-million-win-in-Halloween-Powerball-drawing",
+          "title": "Cabarrus County ticket scores $2 million win in Halloween Powerball drawing",
+          "publisher": "NC Education Lottery",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdhRZRxcyfYdU7v_bqqrvcf3pKddU-K49eh1D_ZExkSjfoBYkY2wdNH_6ogVg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNlZgtKCP1gw8gmCiHqtdEgU5yvjkq85aGTznyLp5EV89zxeqEWOfs-0bRKJU"
+        }
+      ]
+    },
+    {
+      "query": "are schools closed on election day",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T09:30:00Z",
+      "related_news_urls": [
+        "https://www.tennessean.com/story/news/politics/elections/2026/11/02/middle-tennessee-nashville-schools-closed-election-day/92571900007/",
+        "https://www.usatoday.com/story/news/politics/2026/11/02/2026-election-day-federal-holiday/92561740007/",
+        "https://thehill.com/homenews/education/6184369-public-schools-closing-midterm-voters-ohio-texas/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUI0Hm1EIHo-oBVVdM2dpz9uZrZZvLn55CjLsrF7r2pAfM81NTuC3pYtuZTQY",
+      "image_credit": "The Tennessean",
+      "news": [
+        {
+          "url": "https://www.tennessean.com/story/news/politics/elections/2026/11/02/middle-tennessee-nashville-schools-closed-election-day/92571900007/",
+          "title": "Are Nashville-area schools off on Election Day? What to know",
+          "publisher": "The Tennessean",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUI0Hm1EIHo-oBVVdM2dpz9uZrZZvLn55CjLsrF7r2pAfM81NTuC3pYtuZTQY"
+        },
+        {
+          "url": "https://www.usatoday.com/story/news/politics/2026/11/02/2026-election-day-federal-holiday/92561740007/",
+          "title": "Is Election Day 2026 a federal holiday? What to know",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDH1EQD93jx1qdsCDpOJwMwSeomViNwJAzNwF398psqthRi_idfa9qDO9Y01g"
+        },
+        {
+          "url": "https://thehill.com/homenews/education/6184369-public-schools-closing-midterm-voters-ohio-texas/",
+          "title": "More public schools are closing. Will the midterms speed or slow the process?",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQ968718CDyfd7NlC5i4ovmXQx91g562L17oZfBy0PFRgIxH9WxZhBBmq5SQ"
+        }
+      ]
+    },
+    {
+      "query": "austin weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T09:20:00Z",
+      "related_news_urls": [
+        "https://www.kxan.com/weather/weather-blog/final-november-forecast-released-for-central-texas/",
+        "https://www.fox4news.com/weather/dallas-weather-severe-storms-target-dfw-overnight-ahead-election-day",
+        "https://www.kxan.com/weather/forecast/warm-and-humid-overnight-storms-on-monday-with-front/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg2oOofGuuB5wtK2xIGJPPGeDrzFg-KkCxVRUSaxkKijGJm1VxRRFhXSXb_TU",
+      "image_credit": "KXAN Austin",
+      "news": [
+        {
+          "url": "https://www.kxan.com/weather/weather-blog/final-november-forecast-released-for-central-texas/",
+          "title": "Final November Forecast released for Central Texas",
+          "publisher": "KXAN Austin",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg2oOofGuuB5wtK2xIGJPPGeDrzFg-KkCxVRUSaxkKijGJm1VxRRFhXSXb_TU"
+        },
+        {
+          "url": "https://www.fox4news.com/weather/dallas-weather-severe-storms-target-dfw-overnight-ahead-election-day",
+          "title": "Dallas weather: Storms move across North Texas overnight before 2026 elections",
+          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROK6pMlZ9rRfXi63WplMuJ9ocMV73QLnyBDZmzyrFKwP-aEHAIMIJckjqQTDs"
+        },
+        {
+          "url": "https://www.kxan.com/weather/forecast/warm-and-humid-overnight-storms-on-monday-with-front/",
+          "title": "Warm Monday, front arrives Monday night into Tuesday",
+          "publisher": "KXAN Austin",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTha5q5HZVIuJKVgp5uxnEX9ii9amjKL_0zrEQzKZG4NKKlb3ggDJ1d-DRldrY"
+        }
+      ]
+    },
+    {
+      "query": "kimi",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T09:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/racing/f1/story/_/id/50353525/formula-1-2026-mexico-city-grand-prix",
+        "https://www.nytimes.com/athletic/7745045/2026/11/01/mexican-grand-prix-briefing/",
+        "https://www.nbcnews.com/sports/formula-1/kimi-antonelli-becomes-youngest-formula-1-champion-ever-20-years-old-rcna606726"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlqB296Lti4dK8QfugxYOxAJVFFqJ4FcEqq3eqjaI6y6I9OlrTBLx0tzznyIU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/racing/f1/story/_/id/50353525/formula-1-2026-mexico-city-grand-prix",
+          "title": "The families that built Kimi Antonelli, F1 world champion",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlqB296Lti4dK8QfugxYOxAJVFFqJ4FcEqq3eqjaI6y6I9OlrTBLx0tzznyIU"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7745045/2026/11/01/mexican-grand-prix-briefing/",
+          "title": "Mexican Grand Prix briefing: Antonelli seals F1 title with third place, Verstappen wins - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz85SK2DtgGQGXUJZpff2T3aTnr9gsmE-LfBKNhRNi1hP7el8xCGMue3wcUHA"
+        },
+        {
+          "url": "https://www.nbcnews.com/sports/formula-1/kimi-antonelli-becomes-youngest-formula-1-champion-ever-20-years-old-rcna606726",
+          "title": "Kimi Antonelli becomes youngest Formula 1 champion ever at 20 years old",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNhLwW7Oi7rUjDM0rTpaNopU7a2SZLKfd2vk2x_bqDynfHUJ-WVeOphknsOM0"
+        }
+      ]
+    },
+    {
+      "query": "polls open time",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T08:50:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/10/30/g-s1-149560/2026-vote-midterm-election-local-voter-guides",
+        "https://mashable.com/life/how-to-vote-2026-midterm-elections",
+        "https://upnorthlive.com/news/local/poll-how-are-you-voting-for-the-midterms"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC2-sqcaj5F3oe2e-kJ2bFU79IYJacvOebjIXvNwGus4jpYbgxJlBmrQ-qaIE",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/10/30/g-s1-149560/2026-vote-midterm-election-local-voter-guides",
+          "title": "Still need to finish your midterm ballot? Find your local voter guide here",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC2-sqcaj5F3oe2e-kJ2bFU79IYJacvOebjIXvNwGus4jpYbgxJlBmrQ-qaIE"
+        },
+        {
+          "url": "https://mashable.com/life/how-to-vote-2026-midterm-elections",
+          "title": "How to vote in the US midterm elections: Find when polls open, close, and other details",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbe7DitvjzWwXaSLWSTUVkf61-8i0LsqQp3acuj-TVSD9m7CQVn9XT5LWKemo"
+        },
+        {
+          "url": "https://upnorthlive.com/news/local/poll-how-are-you-voting-for-the-midterms",
+          "title": "Poll: How are you voting for the midterms?",
+          "publisher": "WPBN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQa0ZTpD4RIXP8qBUo_atISGUaNfR1vsE55ACPsHInphG20o2WicMPUuzGsp1s"
+        }
+      ]
+    },
+    {
+      "query": "pirates of the caribbean 6",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T08:50:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/johnny-depp-explains-pirates-of-the-caribbean-6-return-jack-sparrow-1236937928/",
+        "https://people.com/johnny-depp-reacts-to-orlando-bloom-wanting-to-reunite-for-pirates-exclusive-12207058",
+        "https://deadline.com/2026/11/johnny-depp-reprising-pirates-of-the-caribbean-role-1237211975/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK0QejM4URQBcJwptVL95QIGYKN8YIzd5BP_gkB9mmq_ha97SkMAOqbEp89zQ",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/johnny-depp-explains-pirates-of-the-caribbean-6-return-jack-sparrow-1236937928/",
+          "title": "Johnny Depp Says He’d Return as Jack Sparrow in ‘Pirates of the Caribbean 6’ for Only One Reason: ‘I Want to Send Them Off on a Better Note’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK0QejM4URQBcJwptVL95QIGYKN8YIzd5BP_gkB9mmq_ha97SkMAOqbEp89zQ"
+        },
+        {
+          "url": "https://people.com/johnny-depp-reacts-to-orlando-bloom-wanting-to-reunite-for-pirates-exclusive-12207058",
+          "title": "Johnny Depp Reacts to Orlando Bloom Wanting to Reunite for Another Pirates of the Caribbean Movie (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuVTXXIh-c3s7AI9YnZgxmhxMuw0KSVNvOvBget7M2jNnGMBPNEpGG4jpSvi8"
+        },
+        {
+          "url": "https://deadline.com/2026/11/johnny-depp-reprising-pirates-of-the-caribbean-role-1237211975/",
+          "title": "Johnny Depp Open To Reprising 'Pirates Of The Caribbean' Role To \"Send Them Off On A Better Note\"",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtBI3rSJBT57musD8fJbVlHPa8Qivlt4o3q6KZKDrtL_OGq4DPJcMRQyEwsAE"
         }
       ]
     },
@@ -77,282 +252,107 @@
       ]
     },
     {
+      "query": "stargate sg-1 upcoming project",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T08:40:00Z",
+      "related_news_urls": [
+        "https://collider.com/stargate-sg-1-bluebrixx-new-goauld-jaffa-sets/",
+        "https://www.imdb.com/news/ni66089664/?ref_=ttnw_art_perm",
+        "https://movieweb.com/stargate-sg-1-bluebrixx/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6svUhs8pArZBtRvFJDQigNp6OIcN-nVoca3JR4A7yOeAH5qbR4JMIXAgJig",
+      "image_credit": "Collider",
+      "news": [
+        {
+          "url": "https://collider.com/stargate-sg-1-bluebrixx-new-goauld-jaffa-sets/",
+          "title": "19 Years Later, ‘Stargate SG-1’ Officially Returns With New Release",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6svUhs8pArZBtRvFJDQigNp6OIcN-nVoca3JR4A7yOeAH5qbR4JMIXAgJig"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66089664/?ref_=ttnw_art_perm",
+          "title": "Stargate Sg-1 Has Officially Switched Genres, But Not Every Fan Is On Board",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIrGHa20bXetKpB3eoNNy5uDZtqMRntqtoo9_FUTPai7X4N-Lo4guK2jvNeKg"
+        },
+        {
+          "url": "https://movieweb.com/stargate-sg-1-bluebrixx/",
+          "title": "19 Years Later, the 'Stargate SG-1' Franchise Officially Returns With New Release",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0COsH4dAo7rJ5WwcFaMat-CXEp-G4MZbHmIwfX8YYIC9VDLYlFgyBjKGluJA"
+        }
+      ]
+    },
+    {
       "query": "am",
       "approx_searches": "100+",
       "published_at": "2026-11-03T08:40:00Z",
       "related_news_urls": [
-        "https://seguintoday.com/2026/11/03/election-day-arrives-in-guadalupe-county-polls-open-from-7-a-m-to-7-p-m/",
-        "https://seguingazette.com/opinion/editorials/more-voices-need-to-be-heard/article_43e1beb9-aa02-4168-a9cc-11167cff012a.html",
-        "https://seguintoday.com/2026/11/02/guadalupe-county-early-voting-tops-52000-as-election-day-approaches/"
+        "https://www.insideradio.com/free/am-fm-radio-maintains-dominance-in-car-as-commuting-increases/article_ae81f724-4774-47dd-9bf6-e750482dbe10.html",
+        "https://news.radio-online.com/articles/n49594/AM-FM-Radio-Leads-In-Car-Listening-Among-EV-Users",
+        "https://www.niemanlab.org/reading/electric-vehicle-drivers-listen-to-am-fm-radio-much-less-than-the-average-american/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTJkSSUC3HvpdjPpNZ-7os_hlmnsYoecQUBmhvCOvvSqCY4Ghszb6aKGBBuJ0",
-      "image_credit": "Seguin Today",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA964QOsvCqmPWCkghdcFv31fFX5QHILzC74QW_0wlIcR9X_perJcShT03sNc",
+      "image_credit": "Insideradio.com",
       "news": [
         {
-          "url": "https://seguintoday.com/2026/11/03/election-day-arrives-in-guadalupe-county-polls-open-from-7-a-m-to-7-p-m/",
-          "title": "Election Day arrives in Guadalupe County; polls open from 7 a.m. to 7 p.m.",
-          "publisher": "Seguin Today",
+          "url": "https://www.insideradio.com/free/am-fm-radio-maintains-dominance-in-car-as-commuting-increases/article_ae81f724-4774-47dd-9bf6-e750482dbe10.html",
+          "title": "AM/FM Radio Maintains Dominance In Car As Commuting Increases.",
+          "publisher": "Insideradio.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTJkSSUC3HvpdjPpNZ-7os_hlmnsYoecQUBmhvCOvvSqCY4Ghszb6aKGBBuJ0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA964QOsvCqmPWCkghdcFv31fFX5QHILzC74QW_0wlIcR9X_perJcShT03sNc"
         },
         {
-          "url": "https://seguingazette.com/opinion/editorials/more-voices-need-to-be-heard/article_43e1beb9-aa02-4168-a9cc-11167cff012a.html",
-          "title": "More voices need to be heard",
-          "publisher": "Seguin Gazette",
+          "url": "https://news.radio-online.com/articles/n49594/AM-FM-Radio-Leads-In-Car-Listening-Among-EV-Users",
+          "title": "AM/FM Radio Leads In-Car Listening Among EV Users",
+          "publisher": "RADIO ONLINE",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXmonFHCgGEyBAafxAQGtrmfiC1b2g62wuRVVHxetDtXNNDRxznVhLg0DdHI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7Fkhix8dEJSubDArLVo95A_qroUH9ipEJCK2V5rBUuPP1_pGiHIPx0WJ8pQ"
         },
         {
-          "url": "https://seguintoday.com/2026/11/02/guadalupe-county-early-voting-tops-52000-as-election-day-approaches/",
-          "title": "Guadalupe County early voting tops 52,000 as Election Day approaches",
-          "publisher": "Seguin Today",
+          "url": "https://www.niemanlab.org/reading/electric-vehicle-drivers-listen-to-am-fm-radio-much-less-than-the-average-american/",
+          "title": "Electric vehicle drivers listen to AM/FM radio much less than the average American →",
+          "publisher": "Nieman Journalism Lab",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaJEk1dUDbF56UzpTVublxHEGdJN1R68S65SaPmbh9jAEyBB0YfyUo-qfCuZM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMjR9t5cTUJEiCXuV62HgZY5O4nAwKDAkjA_xm1kP9H8fRbhN5uKQS2wVFPhw"
         }
       ]
     },
     {
-      "query": "haití",
-      "approx_searches": "100+",
+      "query": "rachel apa marathon",
+      "approx_searches": "5000+",
       "published_at": "2026-11-03T08:30:00Z",
       "related_news_urls": [
-        "https://www.expressnews.com/news/world/article/l-der-de-pandilla-haitiana-escribe-a-la-onu-22507043.php",
-        "https://www.thehour.com/news/world/article/l-der-de-pandilla-haitiana-escribe-a-la-onu-22507043.php",
-        "https://listindiario.com/la-republica/20261103/pandillas-haitianas-enfrentan-dilema-negociar-paz-morir_928591.html"
+        "https://www.nytimes.com/2026/11/02/nyregion/marathon-runner-dies-rachel-apa.html",
+        "https://nypost.com/2026/11/03/us-news/nyc-marathon-runner-rachel-apa-dies-after-collapsing-in-central-park-two-miles-from-finish-line/",
+        "https://www.the-sun.com/news/17246457/nyc-marathon-runner-dies-finish-line-rachel-apa-bucknell/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmT_FH1KIuTqTdUdx7dCt-IGi_nEUgSjnpzGXHqMXMLOoi2r5uNFenNld4Od0",
-      "image_credit": "San Antonio Express-News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTwaDp-u2295G7eXUadBYXgjQQPBVOCgd1Pt3D5HukwMSbsmcY9gKTew2vljg",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.expressnews.com/news/world/article/l-der-de-pandilla-haitiana-escribe-a-la-onu-22507043.php",
-          "title": "Líder de pandilla haitiana escribe a la ONU pidiendo diálogo",
-          "publisher": "San Antonio Express-News",
+          "url": "https://www.nytimes.com/2026/11/02/nyregion/marathon-runner-dies-rachel-apa.html",
+          "title": "Runner, 24, Dies During Her First Marathon",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmT_FH1KIuTqTdUdx7dCt-IGi_nEUgSjnpzGXHqMXMLOoi2r5uNFenNld4Od0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTwaDp-u2295G7eXUadBYXgjQQPBVOCgd1Pt3D5HukwMSbsmcY9gKTew2vljg"
         },
         {
-          "url": "https://www.thehour.com/news/world/article/l-der-de-pandilla-haitiana-escribe-a-la-onu-22507043.php",
-          "title": "Líder de pandilla haitiana dice a la AP que escribió a la ONU para proponer diálogo",
-          "publisher": "Norwalk Hour",
+          "url": "https://nypost.com/2026/11/03/us-news/nyc-marathon-runner-rachel-apa-dies-after-collapsing-in-central-park-two-miles-from-finish-line/",
+          "title": "NYC Marathon runner Rachel Apa dies after collapsing in Central Park two miles from finish line",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmT_FH1KIuTqTdUdx7dCt-IGi_nEUgSjnpzGXHqMXMLOoi2r5uNFenNld4Od0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3sUE5D8f9m-F1BsjGhv0hVNFjdvkl5-BkgftAZ73zTinjaEvs63aHy4p8gHk"
         },
         {
-          "url": "https://listindiario.com/la-republica/20261103/pandillas-haitianas-enfrentan-dilema-negociar-paz-morir_928591.html",
-          "title": "Las pandillas haitianas se enfrentan al dilema de negociar la paz o morir",
-          "publisher": "Listín Diario",
+          "url": "https://www.the-sun.com/news/17246457/nyc-marathon-runner-dies-finish-line-rachel-apa-bucknell/",
+          "title": "Marathon runner, 24, collapses and dies just 2 MILES from finish line",
+          "publisher": "The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGIFSvtuoUeFBGh9NZNVsxXbAL2nOoCnKUOcL7L5TDLj44YisiZS8I8kFDhP8"
-        }
-      ]
-    },
-    {
-      "query": "maya joint",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T08:20:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/talia-gibson-vs-aliaksandra-sasnovich-set-1-winner-nov-04-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/elena-pridankina-vs-paula-badosa-set-2-winner-nov-03-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/alycia-parks-vs-alexandra-eala-set-2-winner-nov-03-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD4Ueau45kp7CNqQojOTzA1WIRR_RwV3cB_6HHR1K2JOOBrPZ7UVzglEMx9_E",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/talia-gibson-vs-aliaksandra-sasnovich-set-1-winner-nov-04-2026/",
-          "title": "November 4, 2026: Talia Gibson vs Aliaksandra Sasnovich: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD4Ueau45kp7CNqQojOTzA1WIRR_RwV3cB_6HHR1K2JOOBrPZ7UVzglEMx9_E"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/elena-pridankina-vs-paula-badosa-set-2-winner-nov-03-2026/",
-          "title": "November 3, 2026: Elena Pridankina vs Paula Badosa: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEROviVGOuCGzUMSmIsm-oNiug5Uwnk5APQQliB1ljK4r6kJfxNEcCkALUams"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alycia-parks-vs-alexandra-eala-set-2-winner-nov-03-2026/",
-          "title": "November 3, 2026: Alycia Parks vs Alexandra Eala: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_-HPl4K-sORDhFWKCwnf7PL86Bd7OCw0lOmGXr2yMa4_Z-GWKpMOl27avi6A"
-        }
-      ]
-    },
-    {
-      "query": "spacex stock price 2027 forecast",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T08:20:00Z",
-      "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/02/prediction-this-will-be-spacex-s-stock-price-by-the-end-of-2027/",
-        "https://seekingalpha.com/article/4961027-spacex-just-changed-what-investors-are-really-buying",
-        "https://www.morningstar.com/stocks/spacex-earnings-we-raise-our-fair-value-estimate-scaling-data-centers-is-stock-buy"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4rMFNRboT-NziHOu1j-JwRkJ-JHNKaEUo7jNxYVCtWYzyhvsgT8YLhyKFLI",
-      "image_credit": "The Motley Fool",
-      "news": [
-        {
-          "url": "https://www.fool.com/investing/2026/11/02/prediction-this-will-be-spacex-s-stock-price-by-the-end-of-2027/",
-          "title": "Prediction: This Will Be SpaceX’s Stock Price by the End of 2027",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4rMFNRboT-NziHOu1j-JwRkJ-JHNKaEUo7jNxYVCtWYzyhvsgT8YLhyKFLI"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4961027-spacex-just-changed-what-investors-are-really-buying",
-          "title": "SpaceX Just Changed What Investors Are Really Buying (NASDAQ:SPCX)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnuZgE7E2hrzPV8Af3BTKt1CNp3tIPI7T26PSlL5t3xzGlTJC5HECY9TbCbo"
-        },
-        {
-          "url": "https://www.morningstar.com/stocks/spacex-earnings-we-raise-our-fair-value-estimate-scaling-data-centers-is-stock-buy",
-          "title": "SpaceX Earnings: We Raise Our Fair Value Estimate on Scaling Data Centers, But Is the Stock a Buy?",
-          "publisher": "Morningstar",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrXwVp8sGWj1NTWRUGeNab0VCUxM4HsEWM2E2X00xiF5iF7JH89IF670PovqE"
-        }
-      ]
-    },
-    {
-      "query": "laura bozzo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T08:10:00Z",
-      "related_news_urls": [
-        "https://www.elnuevodia.com/entretenimiento/farandula/notas/hija-de-laura-bozzo-revela-que-su-madre-tenia-solo-un-10-de-posibilidades-de-sobrevivir-tras-emergencia-medica/",
-        "https://www.infobae.com/peru/2026/11/01/laura-bozzo-continua-internada-en-habitacion-privada-y-siendo-vigilada-es-un-milagro-que-siga-viva/",
-        "https://www.univision.com/shows/hoy/asistente-de-laurabozzo-desmiente-categoricamente-el-fallecimiento-de-la-conductora-video-vertical"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOz4npCu0Npss0ff9BskuUOW7h_P1n1rbkrE4Vr5B2FVHoNvTMH09WOt6Vc5k",
-      "image_credit": "El Nuevo Día",
-      "news": [
-        {
-          "url": "https://www.elnuevodia.com/entretenimiento/farandula/notas/hija-de-laura-bozzo-revela-que-su-madre-tenia-solo-un-10-de-posibilidades-de-sobrevivir-tras-emergencia-medica/",
-          "title": "Hija de Laura Bozzo revela que su madre tenía solo un 10 % de posibilidades de sobrevivir tras emergencia médica",
-          "publisher": "El Nuevo Día",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOz4npCu0Npss0ff9BskuUOW7h_P1n1rbkrE4Vr5B2FVHoNvTMH09WOt6Vc5k"
-        },
-        {
-          "url": "https://www.infobae.com/peru/2026/11/01/laura-bozzo-continua-internada-en-habitacion-privada-y-siendo-vigilada-es-un-milagro-que-siga-viva/",
-          "title": "Laura Bozzo continúa internada, en habitación privada y siendo vigilada: “Es un milagro que siga viva”",
-          "publisher": "Infobae",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQI_t0F7nepUiY9aJMgfuJ6O0BOrikKp_ZW74Fk1TiR5IxfsHHo4BIBM-GhUc"
-        },
-        {
-          "url": "https://www.univision.com/shows/hoy/asistente-de-laurabozzo-desmiente-categoricamente-el-fallecimiento-de-la-conductora-video-vertical",
-          "title": "Asistente de #LauraBozzo DESMIENTE CATEGÓRICAMENTE el fallecimiento de la conductora",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRykCfcVb5RuJUv_VRa8rtKCBRud82N2QI4J7n1_6iKchPYduiEHikE4sMJD0A"
-        }
-      ]
-    },
-    {
-      "query": "jeline vandromme",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T08:10:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/wendelken-vs-andrade-nov-03-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/yamalapalli-vs-waltert-nov-03-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/grenier-vs-moeller-nov-03-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY0om1Y8cVXFaae0prK8ktAqscjbUq3smAvkzsfoqXME8anyt56ESqz1MtLBQ",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/wendelken-vs-andrade-nov-03-2026/",
-          "title": "November 3, 2026: Wendelken vs Andrade Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY0om1Y8cVXFaae0prK8ktAqscjbUq3smAvkzsfoqXME8anyt56ESqz1MtLBQ"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/yamalapalli-vs-waltert-nov-03-2026/",
-          "title": "November 3, 2026: Yamalapalli vs Waltert Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7ozrDCSPFfW3Zkvp2aEK_DnMiAUn-gawI5RE_sKptrbFeoEPNwNX1nxBoc3Q"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/grenier-vs-moeller-nov-03-2026/",
-          "title": "November 3, 2026: Grenier vs Moeller Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_H5UXMcJpPC7lMWuLMSjSmElq-KQUFtjJQFLdgnBLu2Hm-LcS71cHd7InP9k"
-        }
-      ]
-    },
-    {
-      "query": "keith lee",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T08:00:00Z",
-      "related_news_urls": [
-        "https://www.complex.com/pop-culture/a/markelibert/2-chainz-keith-lee-restaurant-review-debate",
-        "https://eurweb.com/?p=1182315",
-        "https://www.hotnewhiphop.com/1015371-2-chainz-keith-lee-response-illuminati"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAs1AVA2ruq5n4zlu3pQ_3GtCdGSZ30h9dxHmgPVIVXIlaYVV0TX_QmbSjLhA",
-      "image_credit": "Complex",
-      "news": [
-        {
-          "url": "https://www.complex.com/pop-culture/a/markelibert/2-chainz-keith-lee-restaurant-review-debate",
-          "title": "2 Chainz Talks to Keith Lee About Bad Review He Gave His Restaurant, Celebrity Special Treatment",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAs1AVA2ruq5n4zlu3pQ_3GtCdGSZ30h9dxHmgPVIVXIlaYVV0TX_QmbSjLhA"
-        },
-        {
-          "url": "https://eurweb.com/?p=1182315",
-          "title": "2 Chainz Defends Celebrity Perks – Keith Lee Stands Up for Regular Customers | WATCH the Debate",
-          "publisher": "EURweb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0wknjHSnv5Kdv36gMO6U7yqjandHrVUKR1JRsHcnmu3ImlAAeRXo79KUDAGw"
-        },
-        {
-          "url": "https://www.hotnewhiphop.com/1015371-2-chainz-keith-lee-response-illuminati",
-          "title": "2 Chainz Appears To Respond To Keith Lee Debate With Questions About The Illuminati",
-          "publisher": "HotNewHipHop",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkHqSjpwOdIVUPfrZMpBsmq9Q-HUnkM0qyiug97vQTRqowsN2CyVPfqZu2q-8"
-        }
-      ]
-    },
-    {
-      "query": "maria timofeeva",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T07:50:00Z",
-      "related_news_urls": [
-        "https://www.skysports.com/tennis/watch/6468795692364360112/prudential-hong-kong-tennis-open-2026",
-        "https://lastwordonsports.com/tennis/2026/11/02/wta-hong-kong-day-2-predictions-cirstea-timofeeva/",
-        "https://www.dimers.com/tennis/news/sorana-cirstea-vs-maria-timofeeva-tennis-prediction-wta-hong-kong-open-2026-ac"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLX9Pr2gyYDrziI7tAzMej-eIpKbzv0wHqiHwkUR1B9xBYnp45JjrCZcNwcXs",
-      "image_credit": "Sky Sports",
-      "news": [
-        {
-          "url": "https://www.skysports.com/tennis/watch/6468795692364360112/prudential-hong-kong-tennis-open-2026",
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLX9Pr2gyYDrziI7tAzMej-eIpKbzv0wHqiHwkUR1B9xBYnp45JjrCZcNwcXs"
-        },
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/02/wta-hong-kong-day-2-predictions-cirstea-timofeeva/",
-          "title": "WTA Hong Kong Day 2 Predictions Including Sorana Cirstea vs Maria Timofeeva",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyK_o3AZ1mx6p5RZl0H4mFFYxBaDrVNyInVUh53eh9SEhKDLxX_tsl9QZwtAk"
-        },
-        {
-          "url": "https://www.dimers.com/tennis/news/sorana-cirstea-vs-maria-timofeeva-tennis-prediction-wta-hong-kong-open-2026-ac",
-          "title": "Sorana Cirstea vs. Maria Timofeeva prediction, odds, picks for WTA Hong Kong Open 2026",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRa9JQUJDwZAXDNhSfRIq6eKYCmpoLAgZ1m5pAfA61hZD1i4x9VfVyer_JV-oc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAvLphGTh_3xYlD8kkrv9LnuV8RxMTwMtutq7ByGJz_h1FgIaodvit5_auK-g"
         }
       ]
     }
