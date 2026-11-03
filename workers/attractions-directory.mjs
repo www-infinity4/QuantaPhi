@@ -19,7 +19,7 @@ const insideShard=(row,shard)=>{
 const answer=(data,status=200)=>Response.json(data,{status,headers:HEADERS});
 const text=(v,n=120)=>String(v??'').trim().slice(0,n);
 export const validState=v=>STATES.has(String(v||'').toUpperCase());
-export const seedSources=s=>s==='CO'?['co-seed.json','co-overture-nw.json','co-overture-ne.json','co-overture-sw.json','co-overture-se.json']:[s.toLowerCase()+'-overture.json'];
+export const seedSources=s=>s==='CO'?['co-seed.json','co-overture-nw.json','co-overture-ne.json','co-overture-sw.json','co-overture-se.json']:s==='AK'?['ak-seed.json']:[s.toLowerCase()+'-overture.json'];
 export const safeSite=v=>{try{const u=new URL(v);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&u.hostname.includes('.')&&u.hostname!=='localhost'&&u.href.length<401?u.href:''}catch{return ''}};
 export function cleanRecord(o,state,seen){
  if(!o||!validState(state)||String(o.state||'').toUpperCase()!==state)return null;
@@ -140,6 +140,40 @@ export function validateColoradoSeed(payload){
  return payload;
 }
 
+/** Alaska is the second state. Only vetted NPS destinations with explicit,
+ * source-backed locations and media credit can enter its curated seed.
+ * No generic Overture state-wide import or inferred visitor availability. */
+export function validateAlaskaSeed(payload){
+ if(payload?.schema_version!==1||payload.state!=='AK'||
+    payload.source_name!=='QuantaPhi curated official visitor links'||
+    payload.license!=='original_directory_entries'||!/^20\d{2}-\d\d-\d\dT[\d:.]+Z$/.test(payload.generated_at||'')||
+    typeof payload.dataset_version!=='string'||!payload.dataset_version||
+    !Array.isArray(payload.items)||payload.items.length<1||payload.items.length>250||
+    payload.truncated===true||payload.closed_ids?.length)throw Error('invalid_alaska_seed');
+ const ids=new Set();
+ for(const row of payload.items){
+  const normalized=cleanRecord(row,'AK',payload.generated_at);
+  if(!row||!/^curated:alaska-[a-z0-9-]{5,90}$/.test(row.id||'')||ids.has(row.id)||
+    row.state!=='AK'||row.source_name!=='National Park Service'||
+    !/^https:\/\/www\.nps\.gov\//.test(row.source_url||'')||
+    !/^https:\/\/www\.nps\.gov\//.test(row.website||'')||
+    row.license!=='US-government-information'||!normalized||
+    row.latitude<51||row.latitude>72||row.longitude< -180||row.longitude> -129||
+    !(row.confidence>0&&row.confidence<=0.95)||
+    (row.image_url&&(!/^https:\/\/www\.nps\.gov\//.test(row.image_url)||!row.image_attribution)))
+   throw Error('invalid_alaska_record');
+  ids.add(row.id);
+ }
+ return payload;
+}
+async function importAlaskaSeed(env,base){
+ const response=await fetch(base+'ak-seed.json',{signal:AbortSignal.timeout(25000)});
+ if(response.status===404)return {skipped:'alaska_seed_missing'};
+ if(!response.ok)throw Error('alaska_seed_http_'+response.status);
+ const payload=validateAlaskaSeed(await response.json());
+ return importSnapshot(env,payload);
+}
+
 export default {
  async fetch(request,env){
   if(request.method!=='GET')return answer({error:'Read-only directory'},405);
@@ -180,6 +214,7 @@ export default {
     validateColoradoSeed(seedPayload);
     for(let i=0;i<4;i++)await importSnapshot(env,{...payloads[i],shard:shards[i]});
     await importSnapshot(env,seedPayload);
+    await importAlaskaSeed(env,base);
     return;
    }
    const seed=await fetch(base+'co-seed.json',{signal:AbortSignal.timeout(25000)});
@@ -187,5 +222,6 @@ export default {
    const seedPayload=await seed.json();
    validateColoradoSeed(seedPayload);
    await importSnapshot(env,seedPayload);
+   await importAlaskaSeed(env,base);
   })())}
 };
