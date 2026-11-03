@@ -52,3 +52,7 @@ https://github.com/www-infinity4/QuantaPhi/issues/1489
 - Fixed the canonical issue-link contract; PR #1490 head `9e359d1ae34271ac14f42ab9e4ba7f568f357dbb` passed all five observed GitHub Actions groups, including the previously failing unfinished-ledger workflow.
 - Follow-up source-only commits: `ba3b2384ef80e95b0c23e154c9630974ba9a39e4` (official release Atom fallback), `10eb83724015eb4942f123276e31271b39b6adb5` (regex correction), `07c7b8987a1b455ed3ffe6cc37cc7af0c912f690` (success/failure regression tests). The fallback has **not** been deployed or proven to bypass the Cloudflare 403.
 - Next: require green exact-head CI, independent source review, then separately deploy the isolated Worker and verify a real new `ingest_runs` success receipt. Do not touch wallet, identity or Bubbles production wiring.
+
+### Exact-head CI readback
+- At PR #1490 head `4a4e547cfe5dbc341e04a98c055700119d144e6c`, five GitHub Actions workflows passed: Agent evidence catalog tests (run 41553134588, **10/10** focused tests), Unfinished work ledger contracts (41553134573), Quanta search and wallet regressions (41553134595), Intelligent Image Context Checks (41553134607), and Quanta StarCoin payout connection (41553134740).
+- This proves source/test readiness only. The currently deployed Worker still has the three `http_403` cron failures until an independently reviewed release and successful new Cloudflare D1 ingestion receipt. No app integration or production release is claimed.
