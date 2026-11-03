@@ -32,10 +32,13 @@ for (const width of [320,360,393,720]) {
     const dimensions = await card.evaluate(element => ({
       right: element.getBoundingClientRect().right,
       viewport: document.documentElement.clientWidth,
-      horizontalOverflow: document.documentElement.scrollWidth>document.documentElement.clientWidth+2
+      childOverflow: Array.from(element.querySelectorAll('*')).filter(child => {
+        const r=child.getBoundingClientRect(), parent=element.getBoundingClientRect();
+        return r.width>0 && (r.left<parent.left-2 || r.right>parent.right+2);
+      }).map(child=>child.tagName.toLowerCase()+'.'+String(child.className||'').slice(0,50)).slice(0,8)
     }));
     expect(dimensions.right).toBeLessThanOrEqual(width+2);
-    expect(dimensions.horizontalOverflow).toBe(false);
+    expect(dimensions.childOverflow).toEqual([]);
   });
 }
 
