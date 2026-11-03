@@ -48,9 +48,10 @@ const make=(tag,className)=>{const e=document.createElement(tag);e.className=cla
 export async function firstAvailableImage(urls,attempt,{batchSize=3,limit=6}={}){
  if(!Array.isArray(urls)||!urls.length)return false;
  const count=Math.min(urls.length,Math.max(0,Math.min(12,limit)));
+ const eligible=urls.slice(0,count);
  const width=Math.max(1,Math.min(3,batchSize));
- for(let i=0;i<count;i+=width){
-  const group=urls.slice(i,i+width);
+ for(let i=0;i<eligible.length;i+=width){
+  const group=eligible.slice(i,i+width);
   const success=await Promise.any(group.map(url=>Promise.resolve().then(()=>attempt(url)).then(ok=>{
    if(!ok)throw new Error('source_image_unavailable');
    return true;
