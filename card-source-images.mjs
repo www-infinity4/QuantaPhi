@@ -55,14 +55,19 @@ export function mountCardSourceImage(art,card,{small=false,discover=fetchSpotlig
   image.alt=title?'Source image: '+title:'Image from '+String(card.name||'the original website');
   image.loading='eager';image.decoding='async';image.referrerPolicy='no-referrer';
   image.style.visibility='hidden';art.prepend(image);
-  const fail=()=>{image.remove();resolve(false)};
+  let settled=false;
+  const finish=(ok)=>{if(settled)return;settled=true;clearTimeout(timer);
+   if(!ok)image.remove();resolve(ok);
+  };
+  const timer=setTimeout(()=>finish(false),7000);
+  const fail=()=>finish(false);
   const ready=()=>{
    if(shown)return fail();
    shown=true;image.style.visibility='';art.classList.add('qcx-has-source-photo');
    const credit=make('a','qcx-photo-credit');
    const dest=publicWebsiteUrl(source||card.official||card.url);
    if(dest){credit.href=dest;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent='Photo source · '+new URL(dest).hostname;art.append(credit)}
-   resolve(true);
+   finish(true);
   };
   image.addEventListener('load',()=>{if(image.naturalWidth>0)ready();else fail()},{once:true});
   image.addEventListener('error',fail,{once:true});
@@ -70,7 +75,8 @@ export function mountCardSourceImage(art,card,{small=false,discover=fetchSpotlig
  });
  const run=async()=>{
   for(const url of candidates){if(await show(url,card.official||card.url))return}
-  if(small||!shouldDiscoverSourcePhoto(card))return;
+  const inOracleStage=Boolean(art.closest?.('#oracleCardStage,.oracle-card-deck-stage'));
+  if((small&&!inOracleStage)||!shouldDiscoverSourcePhoto(card))return;
   try{
    const rows=await discover({...card,category:card.category||card.kind});
    for(const row of rows.slice(0,5)){
