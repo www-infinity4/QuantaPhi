@@ -1,0 +1,92 @@
+/* Original coupon cards — warm Android typography, product-first artwork,
+   brand-specific layouts, neutral controls, and isolated spendable-wallet state. */
+#couponDiscoveryCards{display:none}
+.qcw-card{--qcw-ink:#252b33;--qcw-dim:#4e5967;--qcw-line:#d3d8df;color:var(--qcw-ink)!important;
+ font:500 17px/1.52 system-ui,-apple-system,Roboto,Arial,sans-serif;letter-spacing:.22px;
+ border:1px solid #d9dfe6;border-radius:22px;overflow:hidden;background:#f8f9fb;padding:0;
+ max-width:100%;box-shadow:0 9px 32px #172a3815}
+.qcw-card *{box-sizing:border-box}
+.qcw-card :is(p,h2,h3,h4){margin:0}
+.qcw-card p{line-height:1.53}
+.qcw-card .qcw-intro{padding:20px 21px 14px}
+.qcw-card h2{font:750 clamp(27px,5.2vw,39px)/1.1 system-ui,sans-serif;letter-spacing:.35px;color:var(--qcw-ink)!important;margin:5px 0 8px}
+.qcw-card h3{font-size:23px;letter-spacing:.3px}
+.qcw-card h4{font-size:20px;letter-spacing:.25px;margin:0 0 7px}
+.qcw-eyebrow{font-size:12px;font-weight:800;letter-spacing:1.05px;color:#4d5c68}
+.qcw-secondary,.qcw-disclaimer{color:var(--qcw-dim);font-size:15px;line-height:1.57}
+.qcw-showcase{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:8px;
+ min-height:264px;padding:12px 20px 18px;align-items:center}
+.qcw-pepsi .qcw-showcase{background:radial-gradient(circle at 90% 15%,#b9e8fa 0%,transparent 40%),linear-gradient(140deg,#e8f3fc,#f2f5f7)}
+.qcw-mello-yello .qcw-showcase{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);
+ background:radial-gradient(circle at 15% 80%,#f6e572 0%,transparent 48%),linear-gradient(140deg,#f9f8db,#e9f3d7)}
+.qcw-feature{min-width:0}
+.qcw-display{display:block;color:#193953;font-size:clamp(19px,4.3vw,32px);font-weight:850;line-height:1.05;letter-spacing:.18px}
+.qcw-mello-yello .qcw-display{color:#314324}
+.qcw-feature p{font-size:15px;color:#41546b;margin-top:12px}
+.qcw-product-image{display:grid;place-items:center;min-height:220px;aspect-ratio:1/1;width:100%;max-width:285px;
+ justify-self:center;border-radius:20px;background:#ffffffad;overflow:hidden;
+ box-shadow:inset 0 0 0 1px #ffffffba}
+.qcw-product-image img{display:block;width:100%;height:100%;max-height:310px;object-fit:contain}
+.qcw-product-image .qcw-image-fallback{padding:24px;font-size:16px;color:#314d66;text-align:center}
+.qcw-card :is(.qcw-controls,.qcw-shared){padding:0 20px 12px}
+.qcw-controls{display:flex;flex-wrap:wrap;align-items:center;gap:9px}
+.qcw-card :is(.qcw-btn,.qcw-link,.qca-button){
+ appearance:none!important;background:#eff2f4!important;color:#24303a!important;
+ border:1px solid #aeb9c3!important;border-radius:13px!important;
+ padding:11px 14px!important;min-height:48px;font:700 15px/1.35 system-ui,Arial,sans-serif!important;
+ text-decoration:none!important;box-shadow:none!important;cursor:pointer;overflow-wrap:anywhere;
+ display:inline-flex;align-items:center;justify-content:center;white-space:normal;text-align:center;
+}
+.qcw-card .qcw-btn{margin:0 20px 12px}
+.qcw-card .qcw-controls .qcw-btn{margin:0}
+.qcw-card .qcw-link{background:#fff!important}
+.qcw-card :is(.qcw-btn,.qcw-link,.qca-button):hover{background:#dce6ed!important}
+.qcw-card :is(button,a,input,select,textarea):focus-visible{outline:3px solid #326899!important;outline-offset:3px}
+.qcw-card button[disabled]{opacity:.55;cursor:wait}
+.qcw-status{margin:0 20px 10px!important;color:#385a40;font-size:14px;font-weight:700;min-height:19px}
+.qcw-disclaimer{margin:0 20px 18px!important;font-size:13px}
+.qcw-shared{border-top:1px solid var(--qcw-line);padding-top:13px!important;background:#fff}
+.qcw-shared .qca-toolbar{padding:0;border:0;background:transparent}
+.qcw-shared .qca-controls{display:flex;flex-wrap:wrap;gap:7px}
+.qcw-shared .qca-status{font-size:14px;line-height:1.5}
+.qcw-wallet-card{background:#f9faf7}
+.qcw-wallet-hero{padding:19px 21px 13px;background:linear-gradient(125deg,#eaf5f1,#f5f3e6)}
+.qcw-wallet-art{display:flex;height:114px;align-items:center;gap:10px;padding-top:10px}
+.qcw-wallet-art img{height:106px;max-width:40%;object-fit:contain;mix-blend-mode:multiply;border-radius:11px}
+.qcw-wallet-body{padding:18px 18px 8px}
+.qcw-wallet-heading{display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap;margin-bottom:9px}
+.qcw-tally{font-size:15px;font-weight:800;padding:7px 11px;border:1px solid #bbc7c1;border-radius:999px;background:#edf5f1}
+.qcw-switch{display:flex;align-items:center;gap:12px;padding:15px 12px;margin:13px 0;
+ border:1px solid #becbc7;border-radius:14px;background:#eef5f2;color:#293b35;font-weight:750;line-height:1.4;cursor:pointer}
+.qcw-switch input{width:22px;min-width:22px;height:22px;accent-color:#27594a;flex:0 0 auto}
+.qcw-wallet-body .qcw-controls{padding:10px 0}
+.qcw-wallet-body .qcw-status{margin:7px 0 10px!important}
+.qcw-offer-list{list-style:none;display:grid;gap:10px;padding:0;margin:9px 0 19px}
+.qcw-offer{display:grid;gap:5px;padding:14px;background:#fff;border:1px solid #d7dedc;border-radius:13px}
+.qcw-offer .qcw-link{justify-self:start;margin-top:4px}
+.qcw-empty{padding:15px;color:#4a5b55;background:#f0f4f2;border:1px dashed #bdcbc4;border-radius:13px;font-size:15px}
+.qcw-checkout{padding:15px 13px;margin:12px 0 15px;background:#fff;border-radius:16px;border:1px solid #d6e0dc}
+.qcw-select,.qcw-copy-output{border:1px solid #a9b9b3!important;border-radius:12px;padding:12px!important;
+ background:#fff!important;color:#2d3935!important;font-size:16px!important;line-height:1.5!important;width:100%;max-width:100%;height:auto}
+.qcw-advice{border-left:4px solid #627e75;background:#f0f6f3;padding:12px;margin:12px 0!important;color:#304b41;font-size:15px}
+.qcw-copy-output{margin-top:10px;min-height:88px}
+.qcw-copy-output[hidden]{display:none}
+.qcw-mello-yello .qcw-product-image{transform:rotate(-1.5deg)}
+.qcw-pepsi .qcw-product-image{transform:rotate(1.5deg)}
+@media(max-width:480px){
+ .qcw-card{font-size:17px;letter-spacing:.26px}
+ .qcw-showcase{grid-template-columns:minmax(0,1fr) minmax(0,.95fr)!important;padding:10px 13px 16px;min-height:220px}
+ .qcw-product-image{min-height:170px;max-width:210px;border-radius:15px}
+ .qcw-product-image img{max-height:245px}
+ .qcw-display{font-size:21px}
+ .qcw-feature p{font-size:14px}
+ .qcw-card .qcw-intro{padding:18px 16px 10px}
+ .qcw-card .qcw-controls{padding:0 15px 12px}
+ .qcw-card .qcw-controls :is(.qcw-btn,.qcw-link){flex:1 1 135px}
+ .qcw-card .qcw-btn{margin:0 15px 12px}
+ .qcw-card .qcw-disclaimer,.qcw-card .qcw-status{margin-left:15px!important;margin-right:15px!important}
+ .qcw-wallet-body{padding:16px 13px 8px}
+ .qcw-wallet-body .qcw-status{margin:7px 0 10px!important}
+ .qcw-wallet-body .qcw-controls{padding:10px 0}
+}
+@media(prefers-reduced-motion:reduce){.qcw-card *{animation:none!important;transition:none!important}}
