@@ -48,3 +48,11 @@ test('personal context Bubble Bits stay observed only and never claim a spendabl
  assert.match(activity,/0 credited · 0 spendable/);
  assert.match(activity,/contextReady/);
 });
+
+test('all Bubbles website entrypoints request the repaired scripts instead of stale cached versions',()=>{
+ const revision='20261103-work-first1';
+ for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
+  assert.match(source(path),new RegExp('/bubbles-ai\\.js\\?v='+revision));
+ }
+ assert.match(source('bubbles-ai.js'),new RegExp('/bubbles-iteration-bubbles\\.mjs\\?v='+revision));
+});
