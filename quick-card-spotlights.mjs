@@ -104,7 +104,7 @@ const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.classNam
 function css(){if(document.querySelector('link[data-quick-spotlights]'))return;
  const link=el('link');link.rel='stylesheet';link.href=new URL('./quick-card-spotlights.css?v=20261031-source-ad-first1',import.meta.url).href;link.dataset.quickSpotlights='true';document.head.append(link);
 }
-export function mountRotatingSpotlights(article,card,{onEmpty}={}){
+export function mountRotatingSpotlights(article,card,{onEmpty,onItems}={}){
  if(!article||card.nonTargeted||article.dataset.personalization==='disabled')return;css();
  const panel=el('section','qcs-panel');panel.hidden=true;panel.setAttribute('aria-label',card.name+' changing source spotlights');
  const visual=el('div','qcs-visual'),meta=el('p','qcs-meta'),title=el('h3','qcs-title'),desc=el('p','qcs-desc'),price=el('p','qcs-price');
@@ -147,7 +147,7 @@ export function mountRotatingSpotlights(article,card,{onEmpty}={}){
  }
  function updatePrice(){const amount=visibleSpotlightPrice(current);price.textContent=amount?amount+' · source price':'See current price and availability at the source'}
  async function refresh(){if(loading||Date.now()-lastFetch<TTL)return;loading=true;
-  try{const result=await fetchSpotlights(card);lastFetch=Date.now();if(result.length){items=result;if(isVisible()&&!panel.contains(document.activeElement))show({preserve:Boolean(current)})}else onEmpty?.()}
+  try{const result=await fetchSpotlights(card);lastFetch=Date.now();if(result.length){items=result;onItems?.(items);if(isVisible()&&!panel.contains(document.activeElement))show({preserve:Boolean(current)})}else onEmpty?.()}
   finally{loading=false}
  }
  function activate(){active=true;if(!items.length||Date.now()-lastFetch>=TTL)void refresh();else if(!current&&!panel.contains(document.activeElement))show()}
