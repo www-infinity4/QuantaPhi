@@ -23,7 +23,13 @@ export function createDiscoveredCard(website,name){
  const site=safeWebsite(website);if(!site)return null;
  const readable=plain(name||site.hostname.split('.')[0].replace(/[-_]+/g,' '));
  if(!readable)return null;
- const id='discovered-'+site.hostname.replace(/[^a-z0-9]+/g,'-').slice(0,70);
+ const slug=site.hostname.replace(/[^a-z0-9]+/g,'-');
+ let id='discovered-'+slug;
+ if(id.length>70){
+  let hash=2166136261;
+  for(const char of site.hostname)hash=Math.imul(hash^char.charCodeAt(0),16777619)>>>0;
+  id='discovered-'+slug.slice(0,45)+'-'+hash.toString(36);
+ }
  return Object.freeze({
   id,name:readable,kind:'Website',category:'Websites',official:site.official,
   feature:'Open original website',sourceStatus:'typed-domain',
@@ -37,7 +43,7 @@ export function discoverWebsiteCard(query,results,existingCards=[]){
  if(!original||original.length>90)return null;
  // A complete domain is the visitor's own explicitly chosen site.
  const direct=createDiscoveredCard(original);
- if(direct&&/^[a-z0-9.-]+$/i.test(original.replace(/^https:\/\//i,'')))return direct;
+ if(direct&&(/^[a-z0-9.-]+\/?$/i.test(original)||/^https:\/\/[^\s]+$/i.test(original)))return direct;
  const q=clean(original),compact=q.replace(/ /g,'');
  if(q.length<2||q.length>55||compact.length>35||!Array.isArray(results))return null;
  const matches=[];
