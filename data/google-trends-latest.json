@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-02T21:58:05.785142Z",
+  "checked_at": "2026-11-03T03:16:24.404296Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "border report",
-      "approx_searches": "500+",
-      "published_at": "2026-11-02T21:40:00Z",
+      "query": "hunger games sunrise on the reaping",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-03T03:00:00Z",
       "related_news_urls": [
-        "https://www.wane.com/news/national-world/virtual-reality-brings-mexican-tradition-to-el-pasos-day-of-dead-celebration/",
-        "https://www.krqe.com/news/border-report/el-paso-summit-showcases-nearshoring-opportunities-amid-trade-challenges/"
+        "https://deadline.com/gallery/hunger-games-mckenna-grace-jennifer-lawrence-photos/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/mckenna-grace-channels-katniss-girl-003246457.html",
+        "https://people.com/mckenna-grace-hunger-games-press-tour-looks-12198907"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRp4yK57oVaJmOo3BQLwnIzmEq0rOQSGyH2SHw3JRks3VHJI_Dq1jF7vSjNDc0",
-      "image_credit": "WANE 15",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYyEIEX7uXZcoejk6swTv-YD7MABYbg4x8_XOuOSaWLE-L7o6QZQFSa9uF_4",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://www.wane.com/news/national-world/virtual-reality-brings-mexican-tradition-to-el-pasos-day-of-dead-celebration/",
-          "title": "Virtual reality brings Mexican tradition to El Paso’s Day of Dead celebration",
-          "publisher": "WANE 15",
+          "url": "https://deadline.com/gallery/hunger-games-mckenna-grace-jennifer-lawrence-photos/",
+          "title": "McKenna Grace Channels Jennifer Lawrence & 'Hunger Games' Past During 'Sunrise On The Reaping' Press Tour",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRp4yK57oVaJmOo3BQLwnIzmEq0rOQSGyH2SHw3JRks3VHJI_Dq1jF7vSjNDc0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYyEIEX7uXZcoejk6swTv-YD7MABYbg4x8_XOuOSaWLE-L7o6QZQFSa9uF_4"
         },
         {
-          "url": "https://www.krqe.com/news/border-report/el-paso-summit-showcases-nearshoring-opportunities-amid-trade-challenges/",
-          "title": "El Paso summit highlights cross-border supply chains, infrastructure needs",
-          "publisher": "KRQE",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/mckenna-grace-channels-katniss-girl-003246457.html",
+          "title": "Mckenna Grace Channels Katniss’ ‘Girl on Fire’ Look at ‘Sunrise on the Reaping’ Berlin Premiere",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiJps0pvwz2nH4JfeW3xmTH-4kQbOApQcEqLGT1h4W7Wiz92Pvsl_gceoZdg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6fJqlw-ykSRGEEjeYbVwy3u2YcCEuu_lO2N5r3DwEwMPk-C7YKRzd8BlK76o"
+        },
+        {
+          "url": "https://people.com/mckenna-grace-hunger-games-press-tour-looks-12198907",
+          "title": "See 7 Side-by-Side Photos of Mckenna Grace Paying Tribute to The Hunger Games on the Sunrise on the Reaping Press Tour",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzSScP-Nsgnfoh7a80Cz9W2eKjWqHlrNBjaT4PVyMvWWpuv1A91wTpR1Yi6HI"
         }
       ]
     },
     {
-      "query": "mta",
-      "approx_searches": "500+",
-      "published_at": "2026-11-02T21:40:00Z",
+      "query": "hunger games",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T03:00:00Z",
       "related_news_urls": [
-        "https://nypost.com/2026/11/01/opinion/this-mta-retreat-could-doom-all-nyc-public-transit/",
-        "https://gothamist.com/news/who-is-enforcing-the-mtas-3-bus-fare-for-the-moment-no-one",
-        "https://www.amny.com/news/fare-evasion-nyc-transit-boss-eagle-agents-probe/"
+        "https://www.billboard.com/music/music-news/the-hunger-games-sunrise-on-the-reaping-album-ella-langley-1236371836/",
+        "https://variety.com/2026/music/news/hunger-games-album-jennifer-lawrence-ella-langley-1236937594/",
+        "https://www.yahoo.com/entertainment/music/articles/mckenna-graces-song-half-alive-164418285.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYzD0lvZ2-SH1mYnU6v1DizntcRN8YsEnOFRnWEStCM3gMCU4_STZOfzvarxk",
-      "image_credit": "New York Post",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1WdfW2r3UZZVoLHsxTprBDGb0elGzaMsdefGLOwcX92-yB1K_SP4hej9zPc",
+      "image_credit": "Billboard",
       "news": [
         {
-          "url": "https://nypost.com/2026/11/01/opinion/this-mta-retreat-could-doom-all-nyc-public-transit/",
-          "title": "MTA bus-fare retreat could doom all NYC public transit",
-          "publisher": "New York Post",
+          "url": "https://www.billboard.com/music/music-news/the-hunger-games-sunrise-on-the-reaping-album-ella-langley-1236371836/",
+          "title": "‘The Hunger Games: Sunrise on the Reaping (The Album)’ to Feature Ella Langley, Tyler Childers, Stevie Nicks & More: ‘Great Artists & Great Music’",
+          "publisher": "Billboard",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYzD0lvZ2-SH1mYnU6v1DizntcRN8YsEnOFRnWEStCM3gMCU4_STZOfzvarxk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1WdfW2r3UZZVoLHsxTprBDGb0elGzaMsdefGLOwcX92-yB1K_SP4hej9zPc"
         },
         {
-          "url": "https://gothamist.com/news/who-is-enforcing-the-mtas-3-bus-fare-for-the-moment-no-one",
-          "title": "NYPD won't enforce NYC's bus fare while MTA security force is suspended",
-          "publisher": "Gothamist",
+          "url": "https://variety.com/2026/music/news/hunger-games-album-jennifer-lawrence-ella-langley-1236937594/",
+          "title": "'Hunger Games' Album Includes Songs by Jennifer Lawrence, Ella Langley",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdbPpVXR0Cjt96PfP0QevAVAC4fG6hNGnmM7Ow24EAogINKmdXGj1qYFgu0u4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-teamaUfUyGW5TYGk5iCEQR4wBw5BjolV2RHby3wEHh3VFFabPjW1ZYt5HPE"
         },
         {
-          "url": "https://www.amny.com/news/fare-evasion-nyc-transit-boss-eagle-agents-probe/",
-          "title": "Fare evasion: NYC Transit boss says probe of EAGLE agents altercations with riders will soon conclude | amNewYork",
-          "publisher": "amNewYork",
+          "url": "https://www.yahoo.com/entertainment/music/articles/mckenna-graces-song-half-alive-164418285.html",
+          "title": "McKenna Grace's New Song 'Half Alive' Moves Co-Star to Tears in Hunger Games Soundtrack",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROyUnKY5DB1cUDN39Ecz6dDyKOmU9cxZetL3K9WUpwmQBy_4p4hdvppbgG-Vo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAC0XtGXgxIyXAYeMKD9F_8R_q77Kn34pmgHQTA97FACWhaan1AzeGHNBlhPI"
         }
       ]
     },
     {
-      "query": "mario morales ice agent",
+      "query": "new hunger games movie",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T03:00:00Z",
+      "related_news_urls": [
+        "https://people.com/the-new-hunger-games-movie-getting-a-3d-release-plus-new-way-to-watch-at-home-12208171",
+        "https://www.hollywoodreporter.com/business/digital/hunger-games-sunrise-on-the-reaping-1236745888/",
+        "https://deadline.com/2026/11/hunger-games-sunrise-on-the-reaping-meta-vr-glasses-1237211422/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPL0t5hubf1Tm-r6UDomoVZ6uktn-TScm0FqHRQR6KHwhCsMD_QVPDiFMvqEw",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/the-new-hunger-games-movie-getting-a-3d-release-plus-new-way-to-watch-at-home-12208171",
+          "title": "The New Hunger Games Movie Is Getting a 3D Release — Plus a New Way to Watch at Home",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPL0t5hubf1Tm-r6UDomoVZ6uktn-TScm0FqHRQR6KHwhCsMD_QVPDiFMvqEw"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/business/digital/hunger-games-sunrise-on-the-reaping-1236745888/",
+          "title": "Lionsgate Inks Deal With Meta to Bring New ‘Hunger Games’ Movie to VR Glasses",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7Li6SBHXgAZJmkk2MBZCEJ2vJg_fH2oXgvQme5UHpszTNRfJmENuERfAoMX0"
+        },
+        {
+          "url": "https://deadline.com/2026/11/hunger-games-sunrise-on-the-reaping-meta-vr-glasses-1237211422/",
+          "title": "'Hunger Games: Sunrise On The Reaping' To Play On Meta VR Glasses",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_2WN1u8_9JNUesDmcGxgxxgKyJ6pWfckWthNiFGtWmgbep75Nasf5_VwmkGY"
+        }
+      ]
+    },
+    {
+      "query": "dwts elimination tonight",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T02:50:00Z",
+      "related_news_urls": [
+        "https://lifestyle.si.com/celebrities/dancing-with-the-stars-season-35-week-8-recap-who-was-eliminated",
+        "https://www.northjersey.com/story/news/2026/11/02/who-went-home-dwts-tonight-who-voted-off-eliminated-disney-night-scores/92567803007/",
+        "https://abcnews.com/GMA/Culture/tyler-cameron-reflects-dancing-stars-elimination-stormed-off/story?id=137646445"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFiU4bZYgiIVt9BGMrp9xbJ8uNuyafeJf40LqoYUYVYEv9eFr6OXDeKDdlvUM",
+      "image_credit": "Sports Illustrated Lifestyle",
+      "news": [
+        {
+          "url": "https://lifestyle.si.com/celebrities/dancing-with-the-stars-season-35-week-8-recap-who-was-eliminated",
+          "title": "‘Dancing With the Stars’ Season 35 Week 8 Live Recap: Dances, Scores and Elimination",
+          "publisher": "Sports Illustrated Lifestyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFiU4bZYgiIVt9BGMrp9xbJ8uNuyafeJf40LqoYUYVYEv9eFr6OXDeKDdlvUM"
+        },
+        {
+          "url": "https://www.northjersey.com/story/news/2026/11/02/who-went-home-dwts-tonight-who-voted-off-eliminated-disney-night-scores/92567803007/",
+          "title": "Who went home on 'Dancing with the Stars' tonight? Who was eliminated?",
+          "publisher": "Bergen Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY9j8Asxrj4gtKW3KNJ9HtLUVVYBlizd8KqC91F7OyWaxaAf6pc_nyzQ-P66c"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/tyler-cameron-reflects-dancing-stars-elimination-stormed-off/story?id=137646445",
+          "title": "Tyler Cameron reflects on 'Dancing with the Stars' elimination, why he walked off-camera",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS3lgaCMcjMx-Zf5CqKc6VKvGLFA_35dmZR1AwezzR02Qy4yuy1KD0fmgFdfI"
+        }
+      ]
+    },
+    {
+      "query": "aclu",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T02:50:00Z",
+      "related_news_urls": [
+        "https://forward.com/news/859769/indiana-aclu-nikkita-oliver-ken-falk-free-speech/",
+        "https://pro.stateaffairs.com/in/around-the-state/external-review-aclu-indiana",
+        "https://indianacitizen.org/kennedy-commentary-indianas-aclu-collapse/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxFuRIzXnympJd-8C2xEYc5DR4DGvVG6padvN30fw9Agu6ruxkejh_V6mt8iI",
+      "image_credit": "The Forward",
+      "news": [
+        {
+          "url": "https://forward.com/news/859769/indiana-aclu-nikkita-oliver-ken-falk-free-speech/",
+          "title": "Top Jewish lawyers quit Indiana ACLU amid controversy over new director",
+          "publisher": "The Forward",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxFuRIzXnympJd-8C2xEYc5DR4DGvVG6padvN30fw9Agu6ruxkejh_V6mt8iI"
+        },
+        {
+          "url": "https://pro.stateaffairs.com/in/around-the-state/external-review-aclu-indiana",
+          "title": "ACLU of Indiana Delays Nikkita Oliver's Start Date",
+          "publisher": "State Affairs Pro",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMQT_YVYVDJF9W8XJsE5lf_r5UKaTGy-80NRRrW3h9yd5wqe9mzzO4f9tKc3Y"
+        },
+        {
+          "url": "https://indianacitizen.org/kennedy-commentary-indianas-aclu-collapse/",
+          "title": "Kennedy Commentary: Indiana’s ACLU Collapse",
+          "publisher": "the indiana citizen",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBrzaOdsQRotGwlardy_Nz7e3chZHSpQT6f81sHDAa1-bIYMCK-dBoVWTu0s4"
+        }
+      ]
+    },
+    {
+      "query": "iran war",
       "approx_searches": "1000+",
-      "published_at": "2026-11-02T21:40:00Z",
+      "published_at": "2026-11-03T02:50:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/02/us/indicted-ice-officer-surrenders-texas",
-        "https://www.bostonglobe.com/2026/11/02/nation/ice-officer-houston-suv-assault/",
-        "https://www.click2houston.com/news/local/2026/11/02/ice-agent-indicted-in-harris-county-crash-expected-to-surrender-monday-morning/"
+        "https://www.wsj.com/world/middle-east/u-s-warns-gulf-of-possible-short-intense-renewal-of-iran-war-after-midterms-cd1a55e1",
+        "https://www.theatlantic.com/national-security/2026/11/trump-advisers-iran-war/689247/",
+        "https://apnews.com/article/mideast-news-november-2-2026-8722c8b5a9deb228e7a188d4760ea8ed"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQpAOOyXd-duELk8Tm7oterSYf4MfQEG1ckjqiFfqrsTVLUOY6yg-9rimkKY",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUSwS1cIJkcHqpey6n4fe0zga_E5c1C4NFKMz5V5EC5Kzz2CrrUHkJhjBjxyY",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/02/us/indicted-ice-officer-surrenders-texas",
-          "title": "ICE officer indicted on allegations he ran over undocumented Mexican immigrant released on bond",
-          "publisher": "CNN",
+          "url": "https://www.wsj.com/world/middle-east/u-s-warns-gulf-of-possible-short-intense-renewal-of-iran-war-after-midterms-cd1a55e1",
+          "title": "U.S. Warns Gulf of Possible Short, Intense Renewal of Iran War After Midterms",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQpAOOyXd-duELk8Tm7oterSYf4MfQEG1ckjqiFfqrsTVLUOY6yg-9rimkKY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUSwS1cIJkcHqpey6n4fe0zga_E5c1C4NFKMz5V5EC5Kzz2CrrUHkJhjBjxyY"
         },
         {
-          "url": "https://www.bostonglobe.com/2026/11/02/nation/ice-officer-houston-suv-assault/",
-          "title": "ICE officer accused of hitting immigrant in Houston with an SUV turns himself in",
-          "publisher": "The Boston Globe",
+          "url": "https://www.theatlantic.com/national-security/2026/11/trump-advisers-iran-war/689247/",
+          "title": "Trump Searches for a Fall Guy to Blame for Iran",
+          "publisher": "The Atlantic",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtilixU9iQCe-Wpps6RLHsiOrpXiTMAUHdQSMIW34Y9w-7hgQjnIozaLq6Mf0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC7YUTRY5n1rBVBYly17E21rzlE4BSODiRXdePLrQ8dJrVArcmwPEVDRDSmMs"
         },
         {
-          "url": "https://www.click2houston.com/news/local/2026/11/02/ice-agent-indicted-in-harris-county-crash-expected-to-surrender-monday-morning/",
-          "title": "ICE agent indicted in Houston crash that injured man expected to surrender Monday",
-          "publisher": "Click2Houston",
+          "url": "https://apnews.com/article/mideast-news-november-2-2026-8722c8b5a9deb228e7a188d4760ea8ed",
+          "title": "Netanyahu pushes for new strikes on Iran, officials tell AP, and other Mideast news",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqA6X-JvqeEus0HniJhQZ5SpCYW31AnR8iBADSNWksQC_4JxA_fXJc0TACXRQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEIo8VFhn9NnvVyJb6ESlaa2-sju2zUsK6jr4BH23To8zLTFAMqpyxxQ6JFQc"
         }
       ]
     },
     {
-      "query": "freighter sinks off bulgarian coast",
-      "approx_searches": "500+",
-      "published_at": "2026-11-02T21:30:00Z",
-      "related_news_urls": [
-        "https://www.euronews.com/2026/11/02/watch-unseen-images-of-drone-sinking-greek-tanker-off-bulgarian-coast",
-        "https://www.bbc.com/news/videos/cm70pv9jlev7o",
-        "https://www.autonocion.com/us/19960-ton-freighter-421-containers-drone-boats-three-hits-black-sea-sank-midnight/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0f2w4J5874jflBltJJct81tN8ghKlV31_8W6CQP8d4JTNAEXxCAHZSSMj4fA",
-      "image_credit": "Euronews.com",
-      "news": [
-        {
-          "url": "https://www.euronews.com/2026/11/02/watch-unseen-images-of-drone-sinking-greek-tanker-off-bulgarian-coast",
-          "title": "Watch: Unseen images of drone sinking Greek tanker off Bulgarian coast",
-          "publisher": "Euronews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0f2w4J5874jflBltJJct81tN8ghKlV31_8W6CQP8d4JTNAEXxCAHZSSMj4fA"
-        },
-        {
-          "url": "https://www.bbc.com/news/videos/cm70pv9jlev7o",
-          "title": "Mystery sea drones sink container ship in Black Sea",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMGy5dwKGsVXrsWV-A6njCuiVkyK9-RnhldS1IQmRQk4NxaSCKhjwGLEcoXos"
-        },
-        {
-          "url": "https://www.autonocion.com/us/19960-ton-freighter-421-containers-drone-boats-three-hits-black-sea-sank-midnight/",
-          "title": "A 19,960-ton freighter hauling 421 containers to Romania took three hits from drone boats 21 nautical miles off a NATO country's Black Sea coast, its 18 sailors abandoned ship 12 m",
-          "publisher": "Autonocion.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNVkws1mIfcKX3GUdXq35VeK4jN8BnqQzWjwwsokN6Q6O_w-kDEhPWAXyOWU"
-        }
-      ]
-    },
-    {
-      "query": "zach charbonnet",
+      "query": "oklahoma basketball",
       "approx_searches": "1000+",
-      "published_at": "2026-11-02T21:30:00Z",
+      "published_at": "2026-11-03T02:50:00Z",
       "related_news_urls": [
-        "https://www.seahawks.com/news/seahawks-activate-rb-jadarian-price-from-injured-reserve",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-02/price-activated-from-ir-will-play-vs-chi",
-        "https://komonews.com/sports/nikos-sports-zone/monday-night-matchup-what-mike-macdonald-is-saying-about-hawks-showdown-with-bears"
+        "https://247sports.com/college/oklahoma/article/oklahoma-basketball-rotation-projection-season-opener-292079182/",
+        "https://www.mcalesternews.com/oklahoma/porter-moser-s-best-team-on-paper-ready-to-turn-around-his-tenure-with-ou/article_75873add-e90d-56a3-85e0-83a9000d90ff.html",
+        "https://krmg.com/2026/11/02/oklahoma-sooners-open-season-at-home-against-the-east-texas-am-lions/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIQzkY22W-x12Wr-FtV2NfT_cA-kP9X3eyGjYg1HyX7qUF4j8_0PkISax42ww",
-      "image_credit": "Seattle Seahawks",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRVSMmw70ytupKuNH_grkDBeRuCqdwSzPl1we8htn2ZIqt6B163G92At_1Pwc",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.seahawks.com/news/seahawks-activate-rb-jadarian-price-from-injured-reserve",
-          "title": "Seahawks Activate RB Jadarian Price From Injured Reserve",
-          "publisher": "Seattle Seahawks",
+          "url": "https://247sports.com/college/oklahoma/article/oklahoma-basketball-rotation-projection-season-opener-292079182/",
+          "title": "Projecting Oklahoma’s basketball rotation ahead of the season opener",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIQzkY22W-x12Wr-FtV2NfT_cA-kP9X3eyGjYg1HyX7qUF4j8_0PkISax42ww"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRVSMmw70ytupKuNH_grkDBeRuCqdwSzPl1we8htn2ZIqt6B163G92At_1Pwc"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-02/price-activated-from-ir-will-play-vs-chi",
-          "title": "Price activated from IR, will play vs. CHI",
-          "publisher": "NBC Sports",
+          "url": "https://www.mcalesternews.com/oklahoma/porter-moser-s-best-team-on-paper-ready-to-turn-around-his-tenure-with-ou/article_75873add-e90d-56a3-85e0-83a9000d90ff.html",
+          "title": "Porter Moser’s ‘best team on paper’ ready to turn around his tenure with OU basketball",
+          "publisher": "McAlester News-Capital",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDv0X28d7DztRvHmUBvRj-5IVPHpKQZ-mnfpqAJjx786mpHEg6jVtcRlEdDG0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO0usRlnU_WcP0xYg6bgAtV7w1nUBpwg7Gme9gNhLvh_S7Ec3Zv4-3_-7Fz8Y"
         },
         {
-          "url": "https://komonews.com/sports/nikos-sports-zone/monday-night-matchup-what-mike-macdonald-is-saying-about-hawks-showdown-with-bears",
-          "title": "Monday Night Matchup: What Mike Macdonald is saying about Hawks' showdown with Bears",
-          "publisher": "KOMO",
+          "url": "https://krmg.com/2026/11/02/oklahoma-sooners-open-season-at-home-against-the-east-texas-am-lions/",
+          "title": "Oklahoma Sooners open season at home against the East Texas A&M Lions",
+          "publisher": "KRMG",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8ISf9atqMAfXpk4Ep6-crrKQOGuQdLAiJ8_PdHzFo1Dx8vQ1bJm9VvdkUjt8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRu7qGLvwXUT6NNhEbJ-WPPoqqUATqJR2OCAV4JkDH8C6-8oIMW8e4CmXEiasM"
         }
       ]
     },
     {
-      "query": "usc vs unlv",
-      "approx_searches": "500+",
-      "published_at": "2026-11-02T21:20:00Z",
+      "query": "diego pavia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T02:50:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/sports/ncaaw/2026/11/02/usc-vs-unlv-womens-basketball-time-tv-results-highlights--live/92566198007/",
-        "https://unlvrebels.com/news/2026/10/31/womens-basketball-lady-rebels-open-season-against-no-3-usc-in-hall-of-fame-womens-showcase-in-las-vegas",
-        "https://news3lv.com/sports/content/sports-raiders-prepare"
+        "https://www.espn.com/nfl/story/_/id/50349558/ravens-lamar-jackson-rest-game-thumb-injury",
+        "https://www.nfl.com/news/nfl-week-8-sunday-aftermath-ravens-cowboys-vikings",
+        "https://www.nytimes.com/athletic/7746072/2026/11/01/lamar-jackson-future-ravens-injury-bills/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-B9aCLJpv1N7UVHwbrdYtzY86YlxYl0M6ELDelTZL0L76rrw9K9iTNi2Qqk",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaw/2026/11/02/usc-vs-unlv-womens-basketball-time-tv-results-highlights--live/92566198007/",
-          "title": "UNLV women's basketball live: highlights, score",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-B9aCLJpv1N7UVHwbrdYtzY86YlxYl0M6ELDelTZL0L76rrw9K9iTNi2Qqk"
-        },
-        {
-          "url": "https://unlvrebels.com/news/2026/10/31/womens-basketball-lady-rebels-open-season-against-no-3-usc-in-hall-of-fame-womens-showcase-in-las-vegas",
-          "title": "Lady Rebels Open Season Against No. 3 USC In Hall Of Fame Women's Showcase In Las Vegas",
-          "publisher": "University of Nevada Las Vegas Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcRYJSS-JsvrbggJ1Z_8FYUecy0ANBgjbaxFMWz4s58_4_hYVdThF-kjqVCfo"
-        },
-        {
-          "url": "https://news3lv.com/sports/content/sports-raiders-prepare",
-          "title": "SPORTS: Klint Kubiak looks to secure rushing attack for Jets & Lady Rebels prep #3 USC",
-          "publisher": "KSNV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FW7ihfVEW5LGAyjx75IlPNgRPfgsVUTvEl0Hje--YbuXwgKqpvLnX0gExwc"
-        }
-      ]
-    },
-    {
-      "query": "usc women's basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-02T21:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/womens-college-basketball/story/_/id/50353736/juju-watkins-usc-return-knee-injury-player-year-wnba",
-        "https://www.nytimes.com/athletic/7741914/2026/11/02/womens-college-basketball-top-25-uconn-south-carolina/",
-        "https://www.usatoday.com/story/sports/ncaaw/bigten/2026/11/02/juju-watkins-returns-acl-injury-ready-usc-title-chase/92386959007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjTRtH2e4qhou8ypZyaygQO3pEuL3sGjoUbnUCbhPBWn1glaiEIbT627qQ3Pw",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMOfC9DqTvDMjjZ58LEUQQqrDNUyfzgiScWYWw373xMsXAjXiue02Gyc45HFQ",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50353736/juju-watkins-usc-return-knee-injury-player-year-wnba",
-          "title": "USC's JuJu Watkins is back and maybe better than ever, 588 days after injury",
+          "url": "https://www.espn.com/nfl/story/_/id/50349558/ravens-lamar-jackson-rest-game-thumb-injury",
+          "title": "Ravens' Lamar Jackson needs thumb surgery, will be placed on IR",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjTRtH2e4qhou8ypZyaygQO3pEuL3sGjoUbnUCbhPBWn1glaiEIbT627qQ3Pw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMOfC9DqTvDMjjZ58LEUQQqrDNUyfzgiScWYWw373xMsXAjXiue02Gyc45HFQ"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7741914/2026/11/02/womens-college-basketball-top-25-uconn-south-carolina/",
-          "title": "Women’s college basketball top 25: Who really deserves No. 1? South Carolina or UConn?",
+          "url": "https://www.nfl.com/news/nfl-week-8-sunday-aftermath-ravens-cowboys-vikings",
+          "title": "NFL Week 8 Sunday aftermath: Ravens' season on the brink; can Vikings trust Kyler Murray?",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyhkR-87w4T8X6opxRwAZHyQAHlJ1lyA6PCrwriGAdCSWkK9j_23XOUBwb79Y"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7746072/2026/11/01/lamar-jackson-future-ravens-injury-bills/",
+          "title": "Lamar Jackson’s injury could doom Ravens’ season. Did we just see his last snap in Baltimore?",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI0-RSzUTwi7S4M5FughKVyZ1uCOrJwE7Y9AtaIQNoPYvlk6Xxg083U0eeptU"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaw/bigten/2026/11/02/juju-watkins-returns-acl-injury-ready-usc-title-chase/92386959007/",
-          "title": "JuJu Watkins is back after 589 days. Why USC says she’s even better now",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ4NamMmAjTDhfmeOYqjEA8aTMMFNF8b-4O3OrOL1X-U56h7PE5uPwIgzO6o4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE8LYU34YZDAkSVDDOcWTSjhfZTG59Bwf5mulbU9-URc8LmmU-FVy5k_072dg"
         }
       ]
     },
     {
-      "query": "gates mcfadden",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-02T21:20:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/obituaries-people-news/patrick-stewart-star-trek-gates-mcfadden-tribute-1236937177/",
-        "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
-        "https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Db4rkyarhnYYDRYi4Yq_FwfQuocF37lUJ2HYJIgAoyEZwK2Ip4fg_JJ0X-8",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/obituaries-people-news/patrick-stewart-star-trek-gates-mcfadden-tribute-1236937177/",
-          "title": "‘Star Trek’ Star Gates McFadden Pays Tribute to Patrick Stewart: His Portrayal of Jean-Luc Picard Gave People Hope Around the World",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Db4rkyarhnYYDRYi4Yq_FwfQuocF37lUJ2HYJIgAoyEZwK2Ip4fg_JJ0X-8"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
-          "title": "Patrick Stewart, Master of Shakespeare, ‘Star Trek’ and More, Has Died",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJM20IS6PoRxTS7KdXeSnSLwPdZ-JQVDaGtKuoZ_lVr6A25GMeq0ZDiXdJZV8"
-        },
-        {
-          "url": "https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism",
-          "title": "Patrick Stewart taught us what good men do with power",
-          "publisher": "Vox",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98xBtl5Rt3zQ7uwHTmTZjZrf0Le8N6p3mwf2p1cxmtpiYlDqiu5yD9_wy7GQ"
-        }
-      ]
-    },
-    {
-      "query": "heston kjerstad",
+      "query": "iranian strike selat storm tug",
       "approx_searches": "200+",
-      "published_at": "2026-11-02T21:20:00Z",
+      "published_at": "2026-11-03T02:50:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/orioles-decline-ryan-mountcastle-option-heston-kjerstad-clears-waivers-becomes-free-agent",
-        "https://www.mlbtraderumors.com/2026/11/orioles-release-heston-kjerstad.html",
-        "https://www.cbssports.com/fantasy/baseball/news/heston-kjerstad-clears-waivers-enters-free-agency/"
+        "https://www.reuters.com/world/middle-east/irans-irgc-navy-says-two-tankers-stopped-south-hormuz-after-incidents-2026-10-30/",
+        "https://www.bloomberg.com/news/articles/2026-10-30/rare-speedboat-attack-in-hormuz-ignites-tanker-s-engine-room",
+        "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7QlZaBHmQzxALU3zYjEKw4orSBAQBdHmBPvndTs8AOJeUEvT4DPCHtE1M1GA",
-      "image_credit": "MLB.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCR6L-phclX_hxdSbUpJtY0XF8-Z9-cdAAyX64yemy5uMja0OY4hoBN_fHhtY",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.mlb.com/news/orioles-decline-ryan-mountcastle-option-heston-kjerstad-clears-waivers-becomes-free-agent",
-          "title": "O's decline Mountcastle's option; Kjerstad clears waivers, becomes free agent (sources)",
-          "publisher": "MLB.com",
+          "url": "https://www.reuters.com/world/middle-east/irans-irgc-navy-says-two-tankers-stopped-south-hormuz-after-incidents-2026-10-30/",
+          "title": "Iran's IRGC Navy says four tankers catch fire in Strait of Hormuz",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7QlZaBHmQzxALU3zYjEKw4orSBAQBdHmBPvndTs8AOJeUEvT4DPCHtE1M1GA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCR6L-phclX_hxdSbUpJtY0XF8-Z9-cdAAyX64yemy5uMja0OY4hoBN_fHhtY"
         },
         {
-          "url": "https://www.mlbtraderumors.com/2026/11/orioles-release-heston-kjerstad.html",
-          "title": "Orioles Release Heston Kjerstad",
-          "publisher": "MLB Trade Rumors",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-30/rare-speedboat-attack-in-hormuz-ignites-tanker-s-engine-room",
+          "title": "Rare Speedboat Attack in Hormuz Ignites Tanker’s Engine Room",
+          "publisher": "Bloomberg",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5LfiHCk56lFGvI9dXQonSsm8R6cXFg2uUht49j5WTHumYl0L65f1S14YxBc4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSgZrI-fFx3XZX74tYOekc85KG1gX477xDR8OEw_Sx1ya1VqxCxs5zvl1XNUI"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/baseball/news/heston-kjerstad-clears-waivers-enters-free-agency/",
-          "title": "Heston Kjerstad: Clears waivers, enters free agency",
-          "publisher": "CBS Sports",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/",
+          "title": "Tankers strike mines in Strait of Hormuz, Iran says, as Hegseth fires top general",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb-dHKNsdou0CJAyfO2uiKbjrzubKKAMWBnjhMIMjCEgbjbnrznwi0Zd56RZ0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjYqIuNisZ_AWGxsY9Zb1X5j3OJQaRaMPvaairaNb1Hj3MfwtlJD8E6vb-lXw"
         }
       ]
     },
     {
-      "query": "sunday rose kidman urban halloween costume",
-      "approx_searches": "500+",
-      "published_at": "2026-11-02T21:10:00Z",
+      "query": "kelli evans",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T02:50:00Z",
       "related_news_urls": [
-        "https://www.instyle.com/nicole-kidman-daughter-sunday-rose-pink-hair-halloween-costume-adela-12207386",
-        "https://people.com/sunday-rose-cheeky-nod-mom-nicole-kidman-halloween-costume-12207041",
-        "https://twaslnews1.twaslnews.com/7046371/"
+        "https://calmatters.org/justice/2026/10/porac-judicial-election/",
+        "https://hsjchronicle.com/police-union-launches-campaign-challenging-california-supreme-court-justice/",
+        "https://www.edhat.com/california/news/california-police-union-targets-justice-kelli-evans-retention/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdAcxZ9UpcT-p_bWSeG4SrU8tOGmU4lsU9Xx56uSehhyk5L5qE3DK1DYab2zE",
-      "image_credit": "InStyle",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGqmTgKu8ashzdl38IXYNw3wYpltMgsr2i4jMu3dh4aO0yblAZpop8GDFHMOM",
+      "image_credit": "CalMatters",
       "news": [
         {
-          "url": "https://www.instyle.com/nicole-kidman-daughter-sunday-rose-pink-hair-halloween-costume-adela-12207386",
-          "title": "Nicole Kidman’s Daughter Sunday Rose Debuts Halloween Hair Transformation",
-          "publisher": "InStyle",
+          "url": "https://calmatters.org/justice/2026/10/porac-judicial-election/",
+          "title": "California police union takes on a Supreme Court justice in new campaign",
+          "publisher": "CalMatters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdAcxZ9UpcT-p_bWSeG4SrU8tOGmU4lsU9Xx56uSehhyk5L5qE3DK1DYab2zE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGqmTgKu8ashzdl38IXYNw3wYpltMgsr2i4jMu3dh4aO0yblAZpop8GDFHMOM"
         },
         {
-          "url": "https://people.com/sunday-rose-cheeky-nod-mom-nicole-kidman-halloween-costume-12207041",
-          "title": "Sunday Rose, 18, Makes Cheeky Nod to Mom Nicole Kidman with Viral 2026 Halloween Costume: ‘Babygirl in Control’",
-          "publisher": "People.com",
+          "url": "https://hsjchronicle.com/police-union-launches-campaign-challenging-california-supreme-court-justice/",
+          "title": "Police Union Launches Campaign Challenging California Supreme Court Justice",
+          "publisher": "The Hemet & San Jacinto Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7dpcEcEvUuslhThVMjSfoQOkLfDi6jnSJ0CSZ3tLS0vF578SHvusJIzIh9LA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAQHOf1cEvgHlDAvinE1DiUGGZEQZqUJAb-hmpQuds4bILhLwZ1dl_L8Ck8i4"
         },
         {
-          "url": "https://twaslnews1.twaslnews.com/7046371/",
-          "title": "Sunday Rose Kidman Urban Halloween Costume Spotlights Pink-Hair Tribute to Adéla",
-          "publisher": "شبكة تواصل الإخبارية",
+          "url": "https://www.edhat.com/california/news/california-police-union-targets-justice-kelli-evans-retention/",
+          "title": "California police union takes on a Supreme Court justice in new campaign",
+          "publisher": "edhat",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlDXDDTAocePhKmzL0STLixasOQw2uY22HhgvwCiPmv6RGfZkN56bnTmqw-8U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqcs5hUJFDUtFeAYDdMkkCqDVroT99YmvZByUgGoe7nnJ8ihKkKXT1TvgLzLQ"
         }
       ]
     }
