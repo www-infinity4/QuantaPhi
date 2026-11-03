@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T23:01:29.718317Z",
+  "checked_at": "2026-11-03T23:31:33.093661Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ken burns",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T22:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/03/opinion/midterm-elections-politics-ken-burns.html",
-        "https://thehill.com/homenews/campaign/6193309-ken-burns-democracy-crisis/",
-        "https://www.france24.com/en/tv-shows/the-debate/20261102-free-and-fair-the-midterms-and-the-state-of-us-democracy"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGkLQCRGkzpiTjdPF6JbPTQAu1JqeM5UMqsvQDiEg9khdE2k7KQungejRCz00",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/03/opinion/midterm-elections-politics-ken-burns.html",
-          "title": "Opinion | Ken Burns: Why I’m Optimistic About the Midterms",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGkLQCRGkzpiTjdPF6JbPTQAu1JqeM5UMqsvQDiEg9khdE2k7KQungejRCz00"
-        },
-        {
-          "url": "https://thehill.com/homenews/campaign/6193309-ken-burns-democracy-crisis/",
-          "title": "Ken Burns: ‘Something more fundamental at stake’ in this election",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyK4oyFXmq9Y942RvIS_gn0xmfyUb5_E0vXYfst6B31B8VMI9fSXzM5oF1K0Y"
-        },
-        {
-          "url": "https://www.france24.com/en/tv-shows/the-debate/20261102-free-and-fair-the-midterms-and-the-state-of-us-democracy",
-          "title": "The Debate - Free and fair? The Midterms and the state of US democracy",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ09RNswwNk9ThxyUC3Qu_ob0yMe8wF-W41i7Z4qBxAXKkSAeFsK44lKgAt7Ok"
-        }
-      ]
-    },
-    {
-      "query": "tennessee basketball",
+      "query": "wild vs flyers",
       "approx_searches": "1000+",
-      "published_at": "2026-11-03T22:40:00Z",
+      "published_at": "2026-11-03T23:10:00Z",
       "related_news_urls": [
-        "https://utsports.com/news/2026/11/2/mens-basketball-hoops-central-wofford-vs-8-9-tennessee",
-        "https://sports.yahoo.com/articles/watch-tennessee-home-opener-against-213047659.html",
-        "https://www.knoxnews.com/story/sports/college/university-of-tennessee/mens-basketball/2026/11/03/tennessee-vols-basketball-wofford-tv-channel-today-time/92485645007/"
+        "https://www.nhl.com/flyers/news/rav4-things-flyers-vs-wild-x8648",
+        "https://www.startribune.com/minnesota-wild-philadelphia-flyers-score-today-nhl-updates-bobby-brink-trade-jesper-wallstedt-stats/601904567",
+        "https://sports.yahoo.com/articles/wild-vs-flyers-prediction-picks-163255672.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7a8SaQYPr4RR5HTQSRgd8T07Sy79Zvr_IL_XylKxGBkv-SnKgHVM7dQ1lHzw",
-      "image_credit": "University of Tennessee Athletics",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTd4qZDEFsOgfqUZ1FRVy7dQkXlg3PKpCWhlA19OtyMhMDfujScDwaGP0ofP84",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://utsports.com/news/2026/11/2/mens-basketball-hoops-central-wofford-vs-8-9-tennessee",
-          "title": "HOOPS CENTRAL: Wofford vs. #8/9 Tennessee",
-          "publisher": "University of Tennessee Athletics",
+          "url": "https://www.nhl.com/flyers/news/rav4-things-flyers-vs-wild-x8648",
+          "title": "RAV4 Things: Flyers vs. Wild",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7a8SaQYPr4RR5HTQSRgd8T07Sy79Zvr_IL_XylKxGBkv-SnKgHVM7dQ1lHzw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTd4qZDEFsOgfqUZ1FRVy7dQkXlg3PKpCWhlA19OtyMhMDfujScDwaGP0ofP84"
         },
         {
-          "url": "https://sports.yahoo.com/articles/watch-tennessee-home-opener-against-213047659.html",
-          "title": "How to watch: Tennessee’s home opener against Wofford",
+          "url": "https://www.startribune.com/minnesota-wild-philadelphia-flyers-score-today-nhl-updates-bobby-brink-trade-jesper-wallstedt-stats/601904567",
+          "title": "Live: Wild look to finish road trip with sweep as Bobby Brink faces former team",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjukH3gLLyglHcu8aFM6FtQFO1NIZlJG1Z4WIUrjyuaHytWppz8XDAQfc443Q"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/wild-vs-flyers-prediction-picks-163255672.html",
+          "title": "Wild vs Flyers Prediction, Picks, NHL Odds for Tuesday, November 3",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZKhMjnTKiwaYqNOPUBSSli1WkgZ3bHnlx6xDiRK6M8n7axYvT521cMUnE1UM"
-        },
-        {
-          "url": "https://www.knoxnews.com/story/sports/college/university-of-tennessee/mens-basketball/2026/11/03/tennessee-vols-basketball-wofford-tv-channel-today-time/92485645007/",
-          "title": "What channel is Tennessee basketball vs Wofford on today? Time, TV schedule",
-          "publisher": "Knoxville News Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjyUi4OhPn3FuFtYQDmULn7ZjRVrxS-6WwZZKLGXIkD8-CTsl_cqepPcBeNos"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7d7wLKA-XxkrypECqhkSPaG1ib93psdq_ih0zCGCNzcnCSsTC6r6vVixF_hc"
         }
       ]
     },
     {
-      "query": "bridget fonda",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T22:40:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/03/photos/reclusive-hollywood-legend-bridget-fonda-62-flaunts-trim-figure-during-la-outing/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/bridget-fonda-62-makes-rare-202026728.html",
-        "https://www.eonline.com/news/1437789/bridget-fonda-makes-rare-appearance-24-years-after-leaving-hollywood"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1n3z75vOU6PVUVK1GfZkbW-yzDs8u753V6rs3RUImVOOPzc0dyia0vURaxNo",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/03/photos/reclusive-hollywood-legend-bridget-fonda-62-flaunts-trim-figure-during-la-outing/",
-          "title": "Reclusive Hollywood legend Bridget Fonda, 62, flaunts trim figure during LA outing",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1n3z75vOU6PVUVK1GfZkbW-yzDs8u753V6rs3RUImVOOPzc0dyia0vURaxNo"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/bridget-fonda-62-makes-rare-202026728.html",
-          "title": "Bridget Fonda, 62, Makes Rare Public Appearance as ‘90s Hollywood Star Shows Off a New Look in L.A.",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6fHe71QwjUHSfW_zZ2vSaCdP5ohBPjXaBvPOjBqPkKdM7Dam1dwRJP0VbC4M"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437789/bridget-fonda-makes-rare-appearance-24-years-after-leaving-hollywood",
-          "title": "Bridget Fonda Steps Out for Rare Appearance in Los Angeles 24 Years After Last Acting Role",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgzHuwiI_I9Wi9bK-G7X_IpPHXb5IIfpbhyZksCQcmQrxXRabtyMGcUxUNQAg"
-        }
-      ]
-    },
-    {
-      "query": "david hatley",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T22:40:00Z",
-      "related_news_urls": [
-        "https://tennesseelookout.com/2026/10/30/nearly-10m-spent-by-outside-groups-attacking-independent-tn-gubernatorial-candidate/",
-        "https://johnsoncitypress.com/news/443148/gov-hopeful-hatley-heads-home-for-wrap-up-rallies/",
-        "https://www.tennessean.com/story/news/politics/elections/2026/10/31/governor-election-david-hatley/92448319007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZkZnJlKPOzMkNWhU27IY6H5HgIY1mPhc4wUQxu5hva0Hr8-oNCpnDEh1pAl8",
-      "image_credit": "Tennessee Lookout",
-      "news": [
-        {
-          "url": "https://tennesseelookout.com/2026/10/30/nearly-10m-spent-by-outside-groups-attacking-independent-tn-gubernatorial-candidate/",
-          "title": "Nearly $10M spent by outside groups attacking independent TN gubernatorial candidate",
-          "publisher": "Tennessee Lookout",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZkZnJlKPOzMkNWhU27IY6H5HgIY1mPhc4wUQxu5hva0Hr8-oNCpnDEh1pAl8"
-        },
-        {
-          "url": "https://johnsoncitypress.com/news/443148/gov-hopeful-hatley-heads-home-for-wrap-up-rallies/",
-          "title": "Gov. hopeful Hatley heads home for wrap up rallies",
-          "publisher": "Johnson City Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdvtdYI0FKQhk_YaVjv76knzx47s0oiYR_Pwx1tFmqm_mobT2ee6h0kYwRWKs"
-        },
-        {
-          "url": "https://www.tennessean.com/story/news/politics/elections/2026/10/31/governor-election-david-hatley/92448319007/",
-          "title": "Previously unknown, what's behind independent David Hatley's rise?",
-          "publisher": "The Tennessean",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSatIal2rJtH9t8lOZ2nuaNHtMUonERUsPDYK3taR787ihDUMHRBxr2dcroedM"
-        }
-      ]
-    },
-    {
-      "query": "dan s. sullivan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T22:40:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/alaska-justice-department-dan-sullivan-f596907344729817193646490432e7eb",
-        "https://www.nytimes.com/2026/10/28/us/politics/alaska-dan-sullivan-conspiracy-peltola.html",
-        "https://www.cbsnews.com/news/alaska-ballot-investigation-democrats-marc-elias/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLF6u0yWQYRa7SAq3Mj518KoSC5MskQ0GBDl7K7xOyVYkr40eCR0Eg_GCDy-A",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/alaska-justice-department-dan-sullivan-f596907344729817193646490432e7eb",
-          "title": "Justice Department identifies potential targets as it escalates Alaska Senate criminal probe",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLF6u0yWQYRa7SAq3Mj518KoSC5MskQ0GBDl7K7xOyVYkr40eCR0Eg_GCDy-A"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/10/28/us/politics/alaska-dan-sullivan-conspiracy-peltola.html",
-          "title": "Inside Democrats’ Secret Effort to Stack Alaska’s Midterm Ballot With Another Dan Sullivan",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHq72Csc3pFgLBF2RlEV37sBq4mrg7zJkIdBAdGfe99d34c33Cf2bYRNA-i0"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/alaska-ballot-investigation-democrats-marc-elias/",
-          "title": "Democratic attorney and Trump foe Marc Elias is a target of DOJ's Alaska ballot investigation, sources say",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9bIFjo6zEZ-l-t9mVrWoxydM_-eS5M7SpZ_n9LBh4Huw-GR2MtCEPOqX-gBQ"
-        }
-      ]
-    },
-    {
-      "query": "ohio vs akron prediction",
+      "query": "golden knights vs penguins",
       "approx_searches": "1000+",
-      "published_at": "2026-11-03T22:30:00Z",
+      "published_at": "2026-11-03T23:10:00Z",
       "related_news_urls": [
-        "https://sportsbook.fanduel.com/football/ncaa-football-games/ohio-@-akron-36248772",
-        "https://www.cbssports.com/prediction/news/ohio-vs-akron-odds-picks-college-football-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-        "https://nypost.com/2026/11/03/betting/ohio-vs-akron-prediction-tuesday-night-maction-best-bet-pick-odds/"
+        "https://www.nhl.com/news/vegas-golden-knights-pittsburgh-penguins-game-preview-november-3-2026",
+        "https://www.pensburgh.com/penguins-lines-game-time-watch/82699/game-preview-vegas-golden-knights-pittsburgh-penguins-11-3-2026",
+        "https://sports.yahoo.com/articles/golden-knights-vs-penguins-prediction-182135367.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3VnYzYqI_rFs_w6UNwKwekPzs91TDC7oqxv4aqx5Va0iYDC7m9U_WkMCZeeQ",
-      "image_credit": "FanDuel Sportsbook",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/ohio-@-akron-36248772",
-          "title": "Ohio @ Akron Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://www.nhl.com/news/vegas-golden-knights-pittsburgh-penguins-game-preview-november-3-2026",
+          "title": "Golden Knights at Penguins projected lineups",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3VnYzYqI_rFs_w6UNwKwekPzs91TDC7oqxv4aqx5Va0iYDC7m9U_WkMCZeeQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://www.cbssports.com/prediction/news/ohio-vs-akron-odds-picks-college-football-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-          "title": "Ohio vs. Akron odds, picks, college football predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-          "publisher": "CBS Sports",
+          "url": "https://www.pensburgh.com/penguins-lines-game-time-watch/82699/game-preview-vegas-golden-knights-pittsburgh-penguins-11-3-2026",
+          "title": "Game Preview: Vegas Golden Knights @ Pittsburgh Penguins 11/3/2026",
+          "publisher": "PensBurgh",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6h8g1_9OlOfDsKVm2kwXjmj1Xc1MZ7t-DLuC0rLZ3NCgRS0LMUcNgVqM430"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8Bk6A7K0gBdjX44yAwooNIUc_6ecQTgn4vJMs4ufv09hqM3-oVARnVRqi6Vk"
         },
         {
-          "url": "https://nypost.com/2026/11/03/betting/ohio-vs-akron-prediction-tuesday-night-maction-best-bet-pick-odds/",
-          "title": "Ohio vs. Akron prediction: Tuesday night MACtion best bet, pick, odds",
-          "publisher": "New York Post",
+          "url": "https://sports.yahoo.com/articles/golden-knights-vs-penguins-prediction-182135367.html",
+          "title": "Golden Knights vs Penguins Prediction, Picks, NHL Odds for Tuesday, November 3",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg68rKu7u47Uv_b57466UCovUpCP5aBZgfQ4RnvueprVONMo5qR6Njmez0f3A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv1WRol2u3gFqtEDmxM-ZrxLEf6u4w4G-BN-Ldh9cjZeCzy2-gN4k0UP2WDuM"
         }
       ]
     },
     {
-      "query": "embark studios arc raiders ai voice",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T22:30:00Z",
-      "related_news_urls": [
-        "https://kotaku.com/arc-raiders-ai-voice-acting-embark-studios-video-shani-celeste-2000752744",
-        "https://www.voiceoverherald.com/opinion-arc-raiders-actors-go-crazy-reading-every-line/",
-        "https://www.rockpapershotgun.com/arc-raiders-devs-embark-insist-that-using-genai-for-voice-lines-was-necessary-as-actors-would-just-go-crazy-if-they-had-to-read-all-of-that"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGSLKnWghcBdVWA_y-SXLhkn0oLwjqbKne09XDbNUQUC9n1iXleS43l_OsRPA",
-      "image_credit": "Kotaku",
-      "news": [
-        {
-          "url": "https://kotaku.com/arc-raiders-ai-voice-acting-embark-studios-video-shani-celeste-2000752744",
-          "title": "Arc Raiders Developers Try To Rationalize Using AI Voice Actors In Peculiar New Video",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGSLKnWghcBdVWA_y-SXLhkn0oLwjqbKne09XDbNUQUC9n1iXleS43l_OsRPA"
-        },
-        {
-          "url": "https://www.voiceoverherald.com/opinion-arc-raiders-actors-go-crazy-reading-every-line/",
-          "title": "Opinion: ARC Raiders Says Actors Would “Go Crazy” Reading Every Line. Have They Met a Voice Actor?",
-          "publisher": "Voice Over Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUUAbyI62wZblDeZgjhkhNsKaRGQ5b5xKP96BE6qutRvb0TnndqzlBvWgBAg"
-        },
-        {
-          "url": "https://www.rockpapershotgun.com/arc-raiders-devs-embark-insist-that-using-genai-for-voice-lines-was-necessary-as-actors-would-just-go-crazy-if-they-had-to-read-all-of-that",
-          "title": "Arc Raiders devs Embark insist that using genAI for voice lines was necessary, as \"actors would just go crazy if they had to read all of that\"",
-          "publisher": "Rock Paper Shotgun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSTNzBC9oFbG1Z0fS1ZYnTehCqXXCoSb-RzB9lo6KmTWIJSW-QlVD92A5psbo"
-        }
-      ]
-    },
-    {
-      "query": "nj election results",
+      "query": "red wings vs lightning",
       "approx_searches": "1000+",
-      "published_at": "2026-11-03T22:30:00Z",
+      "published_at": "2026-11-03T23:10:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/new-jersey-house-results",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-jersey-us-house-7.html",
-        "https://newjerseyglobe.com/congress/bennett-family-arrived-in-n-j-decades-before-the-keans/"
+        "https://www.espn.com/nhl/story/_/id/50360065/lightning-star-nikita-kucherov-says-trade-request-not-money",
+        "https://sports.yahoo.com/articles/lightning-kucherov-crisis-more-money-224053611.html",
+        "https://www.prohockeyrumors.com/2026/11/poll-which-team-will-acquire-nikita-kucherov.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVSupvaUhTFA69MirU7FasK0epMWhFWVkjpuUlB2ChJf1enfGaFEcMI-avSI",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-house-results",
-          "title": "New Jersey U.S. House Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVSupvaUhTFA69MirU7FasK0epMWhFWVkjpuUlB2ChJf1enfGaFEcMI-avSI"
-        },
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-jersey-us-house-7.html",
-          "title": "New Jersey Seventh Congressional District 2026: Live Election Results, Kean vs. Bennett",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLHgVjvO6vJmmbIL2BnSAvr_8oD5qOmBw3Fqj9KSqZJvSO0JPbkqyzDrriF5M"
-        },
-        {
-          "url": "https://newjerseyglobe.com/congress/bennett-family-arrived-in-n-j-decades-before-the-keans/",
-          "title": "Bennett family arrived in N.J. decades before the Keans",
-          "publisher": "New Jersey Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8_FPFZiBWLRH9HA0n4wpwhvPUj8AqlaJhPSJRpVtw0iqZwIfomtq9TAkbvYU"
-        }
-      ]
-    },
-    {
-      "query": "babysitter",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T22:30:00Z",
-      "related_news_urls": [
-        "https://dailydot.com/mom-says-babysitting-costs-have-gotten-out-of-hand-says-babysitters-shouldnt-earn-minimum-wage",
-        "https://www.yahoo.com/lifestyle/articles/mom-needs-babysitter-10-hours-184500663.html",
-        "https://www.yahoo.com/lifestyle/articles/babysitters-rates-skyrocketed-recent-years-191655990.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJBF7WvZJBs_aOeqLIV2dbbU5N3K3ha9uqxBHLKdWunS3oQJP_UnM8QsLe3JE",
-      "image_credit": "The Daily Dot",
-      "news": [
-        {
-          "url": "https://dailydot.com/mom-says-babysitting-costs-have-gotten-out-of-hand-says-babysitters-shouldnt-earn-minimum-wage",
-          "title": "Mom Says Babysitting Costs Have Gotten Out of Hand, Says Babysitters Shouldn’t Earn Minimum Wage",
-          "publisher": "The Daily Dot",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJBF7WvZJBs_aOeqLIV2dbbU5N3K3ha9uqxBHLKdWunS3oQJP_UnM8QsLe3JE"
-        },
-        {
-          "url": "https://www.yahoo.com/lifestyle/articles/mom-needs-babysitter-10-hours-184500663.html",
-          "title": "Mom needs a babysitter for 10 hours, then says sitters shouldn’t get minimum wage per child and $40 to $50 is fair: ‘It’s so backwards in the U.S.’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmx0dtRhQxY0UFTaiE91hu8K5VVFEeMopvXllnO-olSpNEZJA1rnis62887vM"
-        },
-        {
-          "url": "https://www.yahoo.com/lifestyle/articles/babysitters-rates-skyrocketed-recent-years-191655990.html",
-          "title": "Babysitters' rates have skyrocketed in recent years. Is it unfair to parents or totally justified?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcqcoc0Dap_zgyRCQQOMMPK-hbkDkHOu3ugUwo3fFDFk9lzf87_6Nft5BXFg0"
-        }
-      ]
-    },
-    {
-      "query": "salary",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T22:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50370860/mlb-proposes-delaying-salary-cap-2028-season",
-        "https://www.bostonglobe.com/2026/11/03/sports/mlb-labor-salary-cap-floor/",
-        "https://www.phillyvoice.com/phillies-fans-mlb-cba-negotiations-salary-cap-shortened-season-expanded-playoffs-free-agency-news-rumors/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_nDMVSJ_NqcUH4J3qQ-eQCFMi7pFD-fGhRoLyrKY7uHlWeDhAo3i6swqMPaQ",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTI7rMMhhLGvA0tAY1FVuMURK8oIFQZ6-KQC7NIU27sp5zHVqobta4AhDuoK_g",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/mlb/story/_/id/50370860/mlb-proposes-delaying-salary-cap-2028-season",
-          "title": "MLB proposes delaying salary cap until 2028 season",
+          "url": "https://www.espn.com/nhl/story/_/id/50360065/lightning-star-nikita-kucherov-says-trade-request-not-money",
+          "title": "Lightning star Nikita Kucherov says trade request not about money",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_nDMVSJ_NqcUH4J3qQ-eQCFMi7pFD-fGhRoLyrKY7uHlWeDhAo3i6swqMPaQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTI7rMMhhLGvA0tAY1FVuMURK8oIFQZ6-KQC7NIU27sp5zHVqobta4AhDuoK_g"
         },
         {
-          "url": "https://www.bostonglobe.com/2026/11/03/sports/mlb-labor-salary-cap-floor/",
-          "title": "Major League Baseball proposes delaying salary cap and floor for one year to the start of the 2028 season",
-          "publisher": "The Boston Globe",
+          "url": "https://sports.yahoo.com/articles/lightning-kucherov-crisis-more-money-224053611.html",
+          "title": "Lightning’s Kucherov Crisis About More Than Money",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwUYCZuCSoRrnFBmBUB_xfdSfX3Ho6pibmK6PBAB3BId4Xam4r0bg0eGg8gmA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwztrDAWngrKX2tD2f-LAMLBuRvi5NVvmn6ULil05X04CPq6eMSs6Xk8lM-IM"
         },
         {
-          "url": "https://www.phillyvoice.com/phillies-fans-mlb-cba-negotiations-salary-cap-shortened-season-expanded-playoffs-free-agency-news-rumors/",
-          "title": "What Phillies fans should root for as MLB's labor war approaches",
-          "publisher": "PhillyVoice",
+          "url": "https://www.prohockeyrumors.com/2026/11/poll-which-team-will-acquire-nikita-kucherov.html",
+          "title": "Poll: Which Team Will Acquire Nikita Kucherov?",
+          "publisher": "Pro Hockey Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToaq3TLOks_iv0Omuqc5xjX009lSt1w1z5YHLKByDwiToUm62zH3vc-qkA0dI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX2_1gzthTO0l8smnNQgRkmeqOVGlnPdnnZNSENYNvhMeQdXqzQFBmeg_3vI8"
+        }
+      ]
+    },
+    {
+      "query": "avalanche vs blue jackets",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T23:10:00Z",
+      "related_news_urls": [
+        "https://www.denverpost.com/2026/11/01/avalanche-nichushkin-reunion-suspensions/",
+        "https://www.nhl.com/news/colorado-avalanche-columbus-blue-jackets-game-preview-november-3-2026",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/colorado-avalanche-vs-columbus-blue-jackets-prediction-odds-2026-11-03/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQ3yIU3BBBv5igEXXhOeoFClkUztS3AqBUwc7zk_LUoYnZyj1VaFiuuMx9zE",
+      "image_credit": "The Denver Post",
+      "news": [
+        {
+          "url": "https://www.denverpost.com/2026/11/01/avalanche-nichushkin-reunion-suspensions/",
+          "title": "As reunion approaches, why the Avalanche supported Valeri Nichushkin after multiple off-ice incidents",
+          "publisher": "The Denver Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQ3yIU3BBBv5igEXXhOeoFClkUztS3AqBUwc7zk_LUoYnZyj1VaFiuuMx9zE"
+        },
+        {
+          "url": "https://www.nhl.com/news/colorado-avalanche-columbus-blue-jackets-game-preview-november-3-2026",
+          "title": "Avalanche at Blue Jackets projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/colorado-avalanche-vs-columbus-blue-jackets-prediction-odds-2026-11-03/",
+          "title": "Colorado Avalanche vs Columbus Blue Jackets Prediction, Picks & Odds | 03 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgNIlljOohQxAAmsZyIG-p0KtwqvOdukyV0pUg1dy96m973gDLKfXBAI5vB0g"
+        }
+      ]
+    },
+    {
+      "query": "stars vs capitals",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/dallas-stars-washington-capitals-game-preview-november-3-2026",
+        "https://russianmachineneverbreaks.com/2026/11/03/capitals-morning-skate-update-timothy-liljegren-status-goaltending-setup-projected-lineup-stars/",
+        "https://sports.yahoo.com/articles/line-combinations-stars-capitals-171137253.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/dallas-stars-washington-capitals-game-preview-november-3-2026",
+          "title": "Stars at Capitals projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://russianmachineneverbreaks.com/2026/11/03/capitals-morning-skate-update-timothy-liljegren-status-goaltending-setup-projected-lineup-stars/",
+          "title": "Capitals morning skate: Timothy Liljegren good to go, projected lineups, and why the Stars wil be ‘another good test’",
+          "publisher": "RMNB",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY1yydDqZ4Rw0y4vShUk0gfmm8XVaNxOwS457OtQe0dTnJAk8J4QlHk2voGfY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/line-combinations-stars-capitals-171137253.html",
+          "title": "Line Combinations: Stars at Capitals",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5g26MvXXnXq1doCtChdRxSgbp2QFlF-d2g06yTuvQigGS2Ah0QoOLS41RFlI"
+        }
+      ]
+    },
+    {
+      "query": "nbc news",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/2026-election/battlegrounds-journalists-are-reporting-rcna607299",
+        "https://www.nbc.com/nbc-insider/nbc-peacock-2026-election-night-programming-schedule",
+        "https://www.nbcuniversal.com/article/nbcuniversal-brings-together-nbc-news-telemundo-and-peacock-comprehensive-2026-midterm-election"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAGJkh8VvCr7LvXHjtiyBndkElw6NqQI05tOJXERceis3Sf1uuHNhbgLXxo3w",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-election/battlegrounds-journalists-are-reporting-rcna607299",
+          "title": "The battlegrounds our journalists are reporting from",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAGJkh8VvCr7LvXHjtiyBndkElw6NqQI05tOJXERceis3Sf1uuHNhbgLXxo3w"
+        },
+        {
+          "url": "https://www.nbc.com/nbc-insider/nbc-peacock-2026-election-night-programming-schedule",
+          "title": "Your Guide to NBC & Peacock's Election Night Coverage: How to Watch, Schedule, More",
+          "publisher": "NBC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0"
+        },
+        {
+          "url": "https://www.nbcuniversal.com/article/nbcuniversal-brings-together-nbc-news-telemundo-and-peacock-comprehensive-2026-midterm-election",
+          "title": "NBCUniversal Brings Together NBC News, Telemundo, and Peacock for Comprehensive 2026 Midterm Election Coverage",
+          "publisher": "nbcuniversal media",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqKpXeFTK8Rq5o7HlVgGWQBj02sY5E6033mWaut8zyVh2kGUkHS4DJIDZd1Uw"
+        }
+      ]
+    },
+    {
+      "query": "blues vs rangers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/blues/news/preview-blues-at-rangers-11032026",
+        "https://sports.yahoo.com/articles/11-3-26-blues-rangers-173707591.html",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/st-louis-blues-vs-new-york-rangers-prediction-odds-2026-11-03/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7MhedXQIJxXrCoapSZ7Tw9wB4tNxc09QLFocprVr8bTKufXsGVlncwaCWns4",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/blues/news/preview-blues-at-rangers-11032026",
+          "title": "Preview: Blues at Rangers | St. Louis Blues",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7MhedXQIJxXrCoapSZ7Tw9wB4tNxc09QLFocprVr8bTKufXsGVlncwaCWns4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/11-3-26-blues-rangers-173707591.html",
+          "title": "(11-3-26) Blues-Rangers Gameday Lineup",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdOn-ppndpIoKyfBRRYeOvqAkVOwmBC7Dlpq5IoubEffJOrKnMkC1DDLMu6kI"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/st-louis-blues-vs-new-york-rangers-prediction-odds-2026-11-03/",
+          "title": "St Louis Blues vs New York Rangers Prediction, Picks & Odds | 03 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1O7IJOvBkn72GTIioAfv4_RpCT73yMf5H3BnjbdYH19LcVAtbKZPOPQ_VJFU"
+        }
+      ]
+    },
+    {
+      "query": "victoria spartz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T23:10:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/elections/results/2026/11/03/indiana-5th-house-district-live-updates/",
+        "https://www.wfyi.org/statewide/2026-10-31/indianas-5th-congressional-district-victoria-spartz-jd-ford-final-stretch",
+        "https://www.indystar.com/story/news/politics/2026/11/03/all-indiana-congressional-seats-are-up-for-grabs-who-will-win/92465256007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMErlLVbWYgkrtKc5rC_y9AsIcPSeBbRJUdxenlcqSXsR8inNG1I4SGPFsg-o",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/indiana-5th-house-district-live-updates/",
+          "title": "Indiana 5th Congressional District election results 2026",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMErlLVbWYgkrtKc5rC_y9AsIcPSeBbRJUdxenlcqSXsR8inNG1I4SGPFsg-o"
+        },
+        {
+          "url": "https://www.wfyi.org/statewide/2026-10-31/indianas-5th-congressional-district-victoria-spartz-jd-ford-final-stretch",
+          "title": "Indiana's 5th District race tightens but Spartz still leads Ford",
+          "publisher": "WFYI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr5LFIo_xhKXvwsynyMPah25AxvkEPE8lcsegopJc9nTJsOXxO-EnOiVfKxVk"
+        },
+        {
+          "url": "https://www.indystar.com/story/news/politics/2026/11/03/all-indiana-congressional-seats-are-up-for-grabs-who-will-win/92465256007/",
+          "title": "All Indiana congressional seats are up for grabs. Who will win?",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSv_p3Huv1-35TdbRYixzip85gPcoQPaKWHG4CqEVSzqIyBJUj6ENUUeBnmNjQ"
+        }
+      ]
+    },
+    {
+      "query": "susan collins",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T23:10:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/storyline/live/2026/11/03/midterm-election-results",
+        "https://www.boston.com/news/politics/2026/11/03/susan-collins-office-in-maine-vandalized-hours-before-election-day/",
+        "https://www.foxnews.com/politics/susan-collins-maine-senate-office-vandalized-disturbing-graffiti-night-before-election-day"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1cbKceZFnjCBuWZniu4bKCMsyPMr95zg1Md2UNaAi7BDxAlLrkxUgYhkqOC0",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/storyline/live/2026/11/03/midterm-election-results",
+          "title": "2026 Midterm Election Results: Latest Updates",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1cbKceZFnjCBuWZniu4bKCMsyPMr95zg1Md2UNaAi7BDxAlLrkxUgYhkqOC0"
+        },
+        {
+          "url": "https://www.boston.com/news/politics/2026/11/03/susan-collins-office-in-maine-vandalized-hours-before-election-day/",
+          "title": "Susan Collins’ office in Maine vandalized hours before election day",
+          "publisher": "Boston.com",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.foxnews.com/politics/susan-collins-maine-senate-office-vandalized-disturbing-graffiti-night-before-election-day",
+          "title": "Susan Collins' Maine Senate office vandalized with 'disturbing' graffiti on night before Election Day",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFWTz3086RwUKH8W999I5QdH3Gfeplz7YbQwj1Ynf0apANQV3skkHlQiIx2ZE"
+        }
+      ]
+    },
+    {
+      "query": "fbi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T23:10:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/03/kylie-arellano-missing-found-oregon-utah",
+        "https://www.ksl.com/article/51643219/fbi-points-to-nihilistic-extremists-as-missing-garden-city-teen-is-found-safe-after-nearly-18-months",
+        "https://www.oregonlive.com/crime/2026/11/oregon-man-who-kidnapped-utah-teen-girl-kept-her-in-a-basement-for-over-a-year-assaulted-her-fbi-says.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRStR9bM7RpAbhQ3L0AxsPoGqPRahSvzqXU0YcPtUUIbF5Wl5N0Op2KWmfbLak",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/03/kylie-arellano-missing-found-oregon-utah",
+          "title": "Man arrested as girl, 17, found in Oregon after disappearing from Utah last year",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRStR9bM7RpAbhQ3L0AxsPoGqPRahSvzqXU0YcPtUUIbF5Wl5N0Op2KWmfbLak"
+        },
+        {
+          "url": "https://www.ksl.com/article/51643219/fbi-points-to-nihilistic-extremists-as-missing-garden-city-teen-is-found-safe-after-nearly-18-months",
+          "title": "FBI points to nihilistic extremists as missing Garden City teen is found safe after nearly 18 months",
+          "publisher": "KSL News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8n8Hu3Rk8XYu3LpQ21VZr6CvqDTwPyvNG5c9MNJlIoyeFBWAjS79axfhO66Q"
+        },
+        {
+          "url": "https://www.oregonlive.com/crime/2026/11/oregon-man-who-kidnapped-utah-teen-girl-kept-her-in-a-basement-for-over-a-year-assaulted-her-fbi-says.html",
+          "title": "Oregon man who kidnapped Utah teen girl kept her in a basement for over a year, assaulted her, FBI says",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUvbEWGtPqfikl-FbIL7_FQOpNRu31TSWR8dKTf5pJKkHtwx-cQhrLKh7Jy3E"
         }
       ]
     }
