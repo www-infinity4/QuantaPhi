@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {cardImageCandidates,websiteFaviconUrl,shouldDiscoverSourcePhoto} from '../card-source-images.mjs';
+import {cardImageCandidates,websiteFaviconUrl,shouldDiscoverSourcePhoto,firstAvailableImage} from '../card-source-images.mjs';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 
 test('product photographs are ordered before OG brand logos, URLs are sanitized and unique',()=>{
@@ -46,4 +46,29 @@ test('existing card renderers use shared photo pipeline and preserve the source 
  const css=read('card-source-images.css');
  assert.match(css,/\.qcx-source-photo/);
  assert.match(css,/object-fit:cover/);
+});
+
+test('visible source photos race a bounded first batch instead of waiting for a broken photo',async()=>{
+ const started=[];let releaseSlow;
+ const slow=new Promise(resolve=>{releaseSlow=resolve;});
+ const result=await firstAvailableImage(['broken','working','not-needed'],async url=>{
+  started.push(url);
+  if(url==='broken')return slow;
+  if(url==='working')return true;
+  return false;
+ },{batchSize:2,limit:3});
+ assert.equal(result,true,'working source should render without waiting for the broken source');
+ assert.deepEqual(started,['broken','working']);
+ releaseSlow(false);
+});
+test('source photo discovery never fans out beyond its cap and retries a second batch on errors',async()=>{
+ const started=[];
+ const answer=await firstAvailableImage(['bad1','bad2','real','ignored'],async url=>{
+  started.push(url);
+  if(url==='bad1')throw Error('image blocked');
+  return url==='real';
+ },{batchSize:2,limit:3});
+ assert.equal(answer,true);
+ assert.deepEqual(started,['bad1','bad2','real']);
+ assert.equal(await firstAvailableImage([],async()=>true),false);
 });

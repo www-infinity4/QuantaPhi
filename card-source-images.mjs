@@ -43,6 +43,23 @@ export function shouldDiscoverSourcePhoto(card){
  return true;
 }
 const make=(tag,className)=>{const e=document.createElement(tag);e.className=className;return e;};
+/* Race only a bounded batch of public image URLs: one broken host should not
+ * delay the first valid, attributed source photograph. */
+export async function firstAvailableImage(urls,attempt,{batchSize=3,limit=6}={}){
+ if(!Array.isArray(urls)||!urls.length)return false;
+ const count=Math.min(urls.length,Math.max(0,Math.min(12,limit)));
+ const eligible=urls.slice(0,count);
+ const width=Math.max(1,Math.min(3,batchSize));
+ for(let i=0;i<eligible.length;i+=width){
+  const group=eligible.slice(i,i+width);
+  const success=await Promise.any(group.map(url=>Promise.resolve().then(()=>attempt(url)).then(ok=>{
+   if(!ok)throw new Error('source_image_unavailable');
+   return true;
+  }))).catch(()=>false);
+  if(success)return true;
+ }
+ return false;
+}
 /* Called for the featured/large card only. Small grid cards use catalog photos
  * or the official favicon without launching scores of background image queries. */
 export function mountCardSourceImage(art,card,{small=false,discover=fetchSpotlights}={}){
@@ -57,12 +74,12 @@ export function mountCardSourceImage(art,card,{small=false,discover=fetchSpotlig
   image.style.visibility='hidden';art.prepend(image);
   let settled=false;
   const finish=(ok)=>{if(settled)return;settled=true;clearTimeout(timer);
-   if(!ok)image.remove();resolve(ok);
+   if(!ok){image.removeAttribute('src');image.remove()}resolve(ok);
   };
-  const timer=setTimeout(()=>finish(false),7000);
+  const timer=setTimeout(()=>finish(false),3200);
   const fail=()=>finish(false);
   const ready=()=>{
-   if(shown)return fail();
+   if(settled||!image.isConnected||shown)return fail();
    shown=true;image.style.visibility='';art.classList.add('qcx-has-source-photo');
    const credit=make('a','qcx-photo-credit');
    const dest=publicWebsiteUrl(source||card.official||card.url);
@@ -76,22 +93,16 @@ export function mountCardSourceImage(art,card,{small=false,discover=fetchSpotlig
  const run=async()=>{
   // OG logos are useful fallback identity, but never block discovery of an
   // actual product/press/attraction photograph.
-  for(const url of candidates.filter(url=>!isIdentityImage(url))){
-   if(await show(url,card.official||card.url))return;
-  }
+  if(await firstAvailableImage(candidates.filter(url=>!isIdentityImage(url)),url=>show(url,card.official||card.url)))return;
   const inOracleStage=Boolean(art.closest?.('#oracleCardStage,.oracle-card-deck-stage'));
   if((!small||inOracleStage)&&shouldDiscoverSourcePhoto(card)){
    try{
     const rows=await discover({...card,category:card.category||card.kind});
-    for(const row of rows.slice(0,5)){
-     if(!publicWebsiteUrl(row.url)||!sourceImageUrl(row.image))continue;
-     if(await show(row.image,row.url,row.title))return;
-    }
+    const verified=rows.slice(0,6).filter(row=>publicWebsiteUrl(row.url)&&sourceImageUrl(row.image));
+    if(await firstAvailableImage(verified,row=>show(row.image,row.url,row.title)))return;
    }catch{/* Source search is best-effort; never remove working card controls. */}
   }
-  for(const url of candidates.filter(isIdentityImage)){
-   if(await show(url,card.official||card.url))return;
-  }
+  await firstAvailableImage(candidates.filter(isIdentityImage),url=>show(url,card.official||card.url),{batchSize:2,limit:4});
  };
  if(typeof IntersectionObserver==='undefined'){if(!small)void run();else if(candidates.length)void run();return}
  const observer=new IntersectionObserver(entries=>{
