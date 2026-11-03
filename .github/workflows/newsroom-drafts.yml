@@ -42,6 +42,6 @@ jobs:
             This is an editorial research DRAFT, not published news.
             Before publication, check every statement against the primary source, rewrite where needed,
             review image rights, check publication dates, and run newsroom tests.
-            **Do not auto-merge.** A source article's date is NOT the QuantaPhi publication date.
+            **Require editorial approval before merging.** A source article's date is NOT the QuantaPhi publication date.
             Use the verified source URL in the draft; do not publish unreviewed model text.
             Tracks #1350.
