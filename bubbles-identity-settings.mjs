@@ -35,7 +35,18 @@ if(root){
  form?.addEventListener('submit',event=>{
   event.preventDefault();const vals=Object.fromEntries(new FormData(form).entries());
   const p=redactPreview(vals);preview.replaceChildren();
+  if(p.sensitiveInputRejected){
+   const notice=document.createElement('p');notice.className='is-preview-alert';
+   notice.textContent='A possible Social Security or card number was excluded from the preview. Do not enter sensitive identifiers here.';
+   preview.append(notice);
+  }
   outputRow(preview,'Name',p.name||'Not provided');
+  outputRow(preview,'Preferred name',p.preferredName||'Not provided');
+  outputRow(preview,'Contact email',p.email||'Not provided');
+  outputRow(preview,'City',p.city||'Not provided');
+  outputRow(preview,'State / province',p.region||'Not provided');
+  outputRow(preview,'Postal code',p.postalCode||'Not provided');
+  outputRow(preview,'Country',p.country||'Not provided');
   outputRow(preview,'Business',p.business||'Not provided');
   outputRow(preview,'Phone',p.phone||'Not provided');
   outputRow(preview,'Household',p.householdSize);
