@@ -17,6 +17,12 @@ export function showQuickCardMatches(query){
  for(const card of cards){
   const article=el('article','qsr-card');article.dataset.quickCardMatch=card.id;
   if(card.internal&&card.shareImage){const image=el('img','qsr-housing-image');image.src=card.shareImage;image.alt='Home Access · Disability Housing';image.style.cssText='width:100%;height:auto;border-radius:12px;display:block';article.append(image);}
+  else if(card.id.startsWith('discovered-')){
+   const art=el('div','qsr-source-art');
+   const image=el('img','qsr-source-icon');image.alt=card.name+' website icon';
+   image.src='https://www.google.com/s2/favicons?domain='+encodeURIComponent(new URL(card.official).hostname)+'&sz=128';
+   image.loading='lazy';image.decoding='async';art.append(image);article.append(art);
+  }
   else article.append(createCardArtwork(card,true));
   const body=el('div','qsr-body'),heading=el('h3'),title=el('a','qsr-title',card.name);
   title.href=card.route;
