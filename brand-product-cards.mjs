@@ -1,4 +1,4 @@
-import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261103-photo-reuse1';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 
 /* Independently curated product spotlights: original merchandise, publisher-hosted
