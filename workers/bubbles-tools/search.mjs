@@ -64,7 +64,7 @@ export async function webSearch(message,env={},fetcher=fetch){
   const raw=Array.isArray(data.results)?data.results:[];
   return raw.map(x=>({title:trim(x.title,220),url:safeUrl(x.url),snippet:trim(x.content||x.description,600),
    engine:trim(x.engine||((Array.isArray(x.engines)&&x.engines.includes('google'))?'google':'web'),45)}))
-   .filter(x=>x.title&&x.url).filter((x,i,all)=>all.findIndex(y=>y.url===x.url)===i).slice(0,7);
+   .filter(x=>x.title&&x.url).filter((x,i,all)=>all.findIndex(y=>y.url===x.url)===i).slice(0,20);
  };
  if(!results.length&&googleIntent){
   try{const googleRows=(await brokerQuery(true)).filter(x=>x.engine.toLowerCase()==='google');if(googleRows.length){results=googleRows;provider='Google via Infinity SearXNG';}}
@@ -74,7 +74,7 @@ export async function webSearch(message,env={},fetcher=fetch){
   try{results=await brokerQuery(false);provider='Infinity Phi / QuantaPhi search';}
   catch{attempts.push('infinity_search_unavailable');}
  }
- results=rankSearchResults(query,results);
+ results=rankSearchResults(query,results).slice(0,7);
  return {ok:results.length>0,query,results,provider:results.length?provider:'unavailable',googleSearchUrl,
   googleVerified:results.length>0&&/google/i.test(provider),requestedGoogle:googleIntent,attempts};
 }
