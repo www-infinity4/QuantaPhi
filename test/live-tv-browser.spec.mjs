@@ -32,6 +32,8 @@ test('FOX news shows poster first and swaps only that screen for the actual vide
  await page.locator('#oracleCardInventory').click();
  await page.locator('#oracleCardChooser').selectOption('liveFoxGameCard');
  await expect(root.locator('iframe')).toHaveCount(0);
+ await expect(root.locator('.ltv-poster')).not.toHaveAttribute('hidden');
+ await page.locator('#oracleCardChooser').selectOption('liveFoxNewsCard');
  await expect(root.locator('.ltv-poster')).toBeVisible();
 });
 test('the KYOU TV wall has immediate publisher art and only plays actual in-card video for supported channels',async({page})=>{
