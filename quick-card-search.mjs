@@ -1,13 +1,18 @@
 import {searchQuickCards} from './quick-card-search-core.mjs?v=20261029-housing1';
+import {discoverWebsiteCard,findRememberedCard,rememberDiscoveredCard} from './search-card-discovery.mjs';
 import {createCardArtwork} from './quanta-card-experience.mjs?v=20261027-karaoke1';
 import {mountCardActions} from './quanta-card-actions.mjs';
 import {openQuickCardPreview} from './quick-card-preview.mjs';
 const el=(tag,cls,label)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(label!==undefined)n.textContent=label;return n};
 export function showQuickCardMatches(query){
  const host=document.getElementById('quickCardSearchResults');if(!host)return [];
- const cards=searchQuickCards(query);host.replaceChildren();host.hidden=!cards.length;
+ const registered=searchQuickCards(query);
+ const saved=registered.length?null:findRememberedCard(query);
+ const cards=registered.length?registered:saved?[saved]:[];
+ host.replaceChildren();host.hidden=!cards.length;
  if(!cards.length)return cards;
  host.append(el('h2','','Matching Quick Cards'),el('p','qsr-query','For “'+String(query).slice(0,160)+'”'));
+ if(cards.some(c=>c.id.startsWith('discovered-')))host.append(el('p','qsr-discovery-note','Website preview saved on this device from a search result. Independent, not publisher-authorized or a live checkout.'));
  const grid=el('div','qsr-grid');host.append(grid);
  for(const card of cards){
   const article=el('article','qsr-card');article.dataset.quickCardMatch=card.id;
@@ -18,12 +23,29 @@ export function showQuickCardMatches(query){
   title.addEventListener('click',event=>{if(openQuickCardPreview({url:card.route,title:card.name,description:card.description,official:card.official}))event.preventDefault()});
   heading.append(title);body.append(heading,el('p','qsr-domain',new URL(card.official).hostname));
   const visit=el('a','qsr-visit',card.internal?'Start housing intake →':'Visit '+card.name+' ↗');visit.href=card.internal?card.route:card.official;visit.target=card.internal?'_self':'_blank';visit.rel='noopener';visit.referrerPolicy='strict-origin-when-cross-origin';body.append(visit);
-  const actions=el('div','qsr-actions');mountCardActions(actions,card,card.internal?{websiteReader:false,showOriginal:false}:{});body.append(actions);article.append(body);grid.append(article);
+  const actions=el('div','qsr-actions');mountCardActions(actions,card,card.internal?{websiteReader:false,showOriginal:false}:card.id.startsWith('discovered-')?{websiteReader:false}:{});body.append(actions);article.append(body);grid.append(article);
  }
  return cards;
 }
 if(typeof document!=='undefined'){
- window.addEventListener('quantaphi:query-start',event=>showQuickCardMatches(event.detail?.query||''));
+ let activeQuery='',activeRun=null;
+ window.addEventListener('quantaphi:query-start',event=>{
+  activeQuery=String(event.detail?.query||'');activeRun=event.detail?.run;
+  const existing=searchQuickCards(activeQuery);
+  if(!existing.length&&!findRememberedCard(activeQuery)){
+   const direct=discoverWebsiteCard(activeQuery,[],existing);
+   if(direct)rememberDiscoveredCard(direct);
+  }
+  showQuickCardMatches(activeQuery);
+ });
+ window.addEventListener('quantaphi:web-search-results',event=>{
+  const detail=event.detail||{};
+  if(detail.run!==activeRun||String(detail.query)!==activeQuery)return;
+  const existing=searchQuickCards(activeQuery);
+  if(existing.length||findRememberedCard(activeQuery))return;
+  const card=discoverWebsiteCard(activeQuery,detail.results,existing);
+  if(card&&rememberDiscoveredCard(card))showQuickCardMatches(activeQuery);
+ });
  const ready=()=>{
   document.getElementById('qNewSearch')?.addEventListener('click',()=>{const root=document.getElementById('quickCardSearchResults');if(root){root.replaceChildren();root.hidden=true}});
   const q=new URLSearchParams(location.search).get('q');if(q)showQuickCardMatches(q);
