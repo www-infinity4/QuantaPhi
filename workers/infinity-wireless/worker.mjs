@@ -98,4 +98,14 @@ export default {async fetch(req,env={}){
   }catch{return json({ok:false,error:'Tracking unavailable.'},503)}
  }
  return json({ok:false,error:'Route not found.'},404);
+},
+async scheduled(event,env={}){
+ if(!env.WIRELESS_DB)throw Error('wireless_retention_binding_unavailable');
+ const now=Number.isFinite(event?.scheduledTime)?event.scheduledTime:Date.now();
+ const expired=new Date(now-30*24*60*60*1000).toISOString();
+ const oldBuckets=new Date(now-2*24*60*60*1000).toISOString().slice(0,10);
+ // Child events before parent rows; only 30+ day pending planning records expire.
+ await env.WIRELESS_DB.prepare('DELETE FROM wireless_events WHERE order_id IN (SELECT id FROM wireless_orders WHERE created_at < ?)').bind(expired).run();
+ await env.WIRELESS_DB.prepare('DELETE FROM wireless_orders WHERE created_at < ?').bind(expired).run();
+ await env.WIRELESS_DB.prepare('DELETE FROM wireless_daily_limits WHERE day < ?').bind(oldBuckets).run();
 }};
