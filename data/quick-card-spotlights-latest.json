@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-03T13:19:10.959391Z",
+  "checked_at": "2026-11-03T14:19:40.222888Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -441,7 +441,7 @@
     },
     "hurley-surfwear": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.hurley.com/",
@@ -449,7 +449,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Clothing"
         },
         {
@@ -458,7 +458,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Clothing"
         },
         {
@@ -467,7 +467,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Clothing"
         },
         {
@@ -476,7 +476,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Clothing"
         },
         {
@@ -485,7 +485,7 @@
           "title": "Phantom Eco Weekender Slub 20\" - Black / 26IN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Clothing",
           "offer": {
             "price": "59.95",
@@ -500,7 +500,7 @@
           "title": "Phantom Naturals Tailgate 18\" - Brown / 26IN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Clothing",
           "offer": {
             "price": "59.95",
@@ -515,7 +515,7 @@
           "title": "Bottlecap Short Sleeve - Destroyer / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Clothing",
           "offer": {
             "price": "36.00",
@@ -528,7 +528,7 @@
     },
     "royal-caribbean-cruises": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.royalcaribbean.com/",
@@ -536,7 +536,7 @@
           "title": "Best Cruise, Vacation and Travel Deals | Royal Caribbean Official Site",
           "kind": "website",
           "description": "Book cruises and vacation deals on the official Royal Caribbean site. Sail to the Caribbean, Bahamas, Perfect Day CocoCay, Mexico, Alaska and Europe.",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Travel"
         },
         {
@@ -545,7 +545,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Travel"
         },
         {
@@ -554,7 +554,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Travel"
         },
         {
@@ -563,14 +563,14 @@
           "title": "lg banner 640 480 1x",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Travel"
         }
       ]
     },
     "durable-channellock": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.channellock.com",
@@ -578,7 +578,7 @@
           "title": "CHANNELLOCK®: High-Quality Hand Tools - Channellock, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -587,7 +587,7 @@
           "title": "CHANNELLOCK® adjustable pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -596,7 +596,7 @@
           "title": "CHANNELLOCK® groove-joint pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -605,14 +605,14 @@
           "title": "CHANNELLOCK® locking pliers with blue and black handles and serrated jaws.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-wright-tool": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.wrighttool.com/",
@@ -620,7 +620,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -629,7 +629,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -638,7 +638,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -647,14 +647,14 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-estwing": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.estwing.com/",
@@ -662,7 +662,7 @@
           "title": "Home - Estwing",
           "kind": "website",
           "description": "ProfessionalOutdoorHome Who’s Behind Your Swing? When it’s an Estwing, every strike, every detail counts. https://vimeo.com/1091256749 Estwing 100 Years of a Genuine American Icon How a true American legend grew to become the hand tool of choice for generation",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -671,7 +671,7 @@
           "title": "Shop - Estwing",
           "kind": "website",
           "description": "Select CategorySure Strike— Specialty— Roofing Tools— Pry Tools— Nail HammersSpecialty— Welding & Tinner’s— Lineman’s— Drywall— Drilling & Engineer’s— Bricklayer— Ball PeenSafetyRoofing— Shingler’s Hatchet— Shingler’s Hammer— Rigger’s Axes— Carpenter’s Hatchet",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -680,7 +680,7 @@
           "title": "Titanium Hammer (Black) - Estwing",
           "kind": "website",
           "description": "Power meets precision in a lightweight design as this titanium hammer delivers the striking force of a heavier steel hammer without the added weight. Its magnetic nail starter makes setting nails quick and easy. The Shock Reduction Grip® offers the utmost in b",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -689,7 +689,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -698,7 +698,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_02_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -707,7 +707,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_03_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -716,7 +716,7 @@
           "title": "Timber Titan™ Splitting Tool (Blue) - Estwing",
           "kind": "website",
           "description": "Estwing’s Timber Titan™ Splitting Tool is the ultimate long-handle splitting tool, designed for fast, efficient, and precise wood splitting.",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -725,24 +725,24 @@
           "title": "prod_outdoor_splitting_tools_E6-TT4_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-knipex": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": []
     },
     "durable-wera": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": []
     },
     "durable-wiha": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.wihatools.com/account/login",
@@ -750,7 +750,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -759,7 +759,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -768,7 +768,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -777,7 +777,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -786,7 +786,7 @@
           "title": "158 piece Overlanding Kit in Rolling Tool Box",
           "kind": "product",
           "description": "Introducing the 158 Piece Industrial MRO Rolling Case Kit; a masterclass in tool storage, protection, and versatility. This premium case is custom molded to perfection, featuring custom foam tray compartments for each tool, ensuring they are securely held in p",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "1614.09",
@@ -802,7 +802,7 @@
           "title": "194 Piece Premium Kit In Rolling Tool Box",
           "kind": "product",
           "description": "The Wiha 194 Piece Premium Tool Kit In Rolling Tool Box is designed to empower contractors and professionals with a comprehensive set of high-quality tools for all their needs. With an extensive array of 194 must-have pieces, Wiha’s Premium Tool Kit is the per",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "1199.99",
@@ -816,7 +816,7 @@
     },
     "durable-pb-swiss-tools": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
@@ -824,7 +824,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -833,7 +833,7 @@
           "title": "PB 6464",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -842,7 +842,7 @@
           "title": "PB 900 V01",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -851,7 +851,7 @@
           "title": "PB C6 192",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -860,7 +860,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -869,7 +869,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -878,7 +878,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -887,14 +887,14 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-snap-on": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.snapon.com/EN/Makers-and-Fixers",
@@ -902,14 +902,14 @@
           "title": "Snap-on Makers and Fixers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-lie-nielsen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
@@ -917,7 +917,7 @@
           "title": "Boggs Concave Spokeshave",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -926,7 +926,7 @@
           "title": "1-SP-Boggs-Con.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -935,7 +935,7 @@
           "title": "boggs-concave-2021-iso.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -944,7 +944,7 @@
           "title": "concave-boggs-spokeshave-2019.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -953,7 +953,7 @@
           "title": "Small Router Plane - Open Throat",
           "kind": "website",
           "description": "Small Router Plane Loosely based on the Stanley No. 271, these small Router Planes are perfect for shallow mortise and small relief work. The compact design makes it easy to guide along narrow edges and fit into tight spaces. 4\" long x 2\" wide O1 blade with 1/",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -962,7 +962,7 @@
           "title": "small-router-plane-ot-front.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -971,7 +971,7 @@
           "title": "small-router-plane-ot-iso-l.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -980,14 +980,14 @@
           "title": "small-router-plane-ot-iso-r.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-starrett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.starrett.com/",
@@ -995,7 +995,7 @@
           "title": "Premium Starrett micrometer resting on an American flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1004,7 +1004,7 @@
           "title": "W4900 Animated Gif",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1013,7 +1013,7 @@
           "title": "Starrett Carbide Tipped Reciprocating Saw Blade",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1022,7 +1022,7 @@
           "title": "Starrett and Roush Yates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1031,7 +1031,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1040,7 +1040,7 @@
           "title": "HG Electronic Height Gages and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1049,7 +1049,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1058,14 +1058,14 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-mitutoyo": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.mitutoyo.com/services/calibration-repair/calibration-lab/",
@@ -1073,7 +1073,7 @@
           "title": "Mitutoyo Metrology Calibration Lab",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1082,7 +1082,7 @@
           "title": "precision measurement services",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1091,14 +1091,14 @@
           "title": "Coordinate Measuring Machines | Mitutoyo America Corporation",
           "kind": "website",
           "description": "Mitutoyo manufactures top-quality coordinate measuring machines (CMM) that lead the industry in precision. Find the perfect solution for you.",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-leatherman": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.leatherman.com/collections/bestsellers/products/arc",
@@ -1106,7 +1106,7 @@
           "title": "Black DLC and stainless steel Leatherman ARC® multi-tool opened showcasing the many tools and features included.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1115,7 +1115,7 @@
           "title": "Leatherman ARC® Talos multi-tool opened showcasing the many tools and features included.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1124,7 +1124,7 @@
           "title": "Black DLC and stainless steel Leatherman ARC® multi-tool closed showcasing its compact design.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1133,7 +1133,7 @@
           "title": "Leatherman ARC® Talos closed showcasing the Bronze Cerakote coating and compact design.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1142,7 +1142,7 @@
           "title": "Leatherman Gift Card",
           "kind": "product",
           "description": "Leatherman's Digital Gift Card is perfect for any occasion. This e-gift card lets recipients pick their favorite products from our online store. Choose how you deliver — email right away, schedule for later, or send to yourself to pass along personally. Simple",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "10.0",
@@ -1157,7 +1157,7 @@
           "title": "ARC®",
           "kind": "product",
           "description": "The ARC is our most advanced multi-tool, built to be both durable and easier to use. It features a MagnaCut steel blade that holds its edge longer and resists rust, making it perfect for both daily tasks and hard outdoor jobs. Every feature is outside-accessib",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "249.95",
@@ -1172,7 +1172,7 @@
           "title": "Skeletool® CX",
           "kind": "product",
           "description": "The Leatherman Skeletool CX packs only the most essential features into a lightweight, portable design. It’s made for people who want serious function without carrying extra bulk. The premium 154CM stainless steel straight-edge blade has a great balance of cor",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.95",
@@ -1185,7 +1185,7 @@
     },
     "durable-victorinox": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.victorinox.com/en-US/",
@@ -1193,7 +1193,7 @@
           "title": "Victorinox (USA) | Victorinox Homepage",
           "kind": "website",
           "description": "Victorinox ✚ Makers of the Original Swiss Army Knife ✚ High quality products ✚ Watches, Cutlery, Travel Gear and Fragrances ✚ Order online now!",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1202,7 +1202,7 @@
           "title": "Swiss Army Knife™ & Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1211,7 +1211,7 @@
           "title": "CUTLERY",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1220,7 +1220,7 @@
           "title": "WATCHES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1229,7 +1229,7 @@
           "title": "Synergy Winter Magic Limited Edition 2026",
           "kind": "product",
           "description": "Based on the Synergy pocket knife, this Swiss Made limited edition combines nine functions, including a large lockable blade, box opener, two screwdrivers, nail file, nail cleaner, bottle opener and wire stripper. Its distinctive Alox scales complete the desig",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "85",
@@ -1245,7 +1245,7 @@
           "title": "Swiss Army Knives / Pocket Knives from Victorinox | Victorinox (USA)",
           "kind": "website",
           "description": "Since 1897, the Swiss Army Knife has been a trusted tool of adventurers around the world. The Swiss Army Knife is the companion you can count on.",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1254,7 +1254,7 @@
           "title": "Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1263,19 +1263,19 @@
           "title": "Trades & Crafts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-stabila": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": []
     },
     "durable-klein-tools": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.kleintools.com/",
@@ -1283,7 +1283,7 @@
           "title": "Klein Tools - For Professionals since 1857 | Klein Tools",
           "kind": "website",
           "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1292,7 +1292,7 @@
           "title": "Klein Tools logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1301,7 +1301,7 @@
           "title": "Bites Fast. Holds Tight.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1310,7 +1310,7 @@
           "title": "Bites Fast. Holds Tight.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1319,7 +1319,7 @@
           "title": "Products by Industry",
           "kind": "website",
           "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1328,7 +1328,7 @@
           "title": "Contractor Supply & Jobsite Materials",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1337,7 +1337,7 @@
           "title": "Steel, Concrete, Construction and Iron Worker",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1346,14 +1346,14 @@
           "title": "Most Popular | Klein Tools",
           "kind": "website",
           "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-lodge-cast-iron": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.lodgecastiron.com/collections/luxe-enamel",
@@ -1361,7 +1361,7 @@
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1370,7 +1370,7 @@
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1379,7 +1379,7 @@
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1388,7 +1388,7 @@
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1397,7 +1397,7 @@
           "title": "Nutcracker 2026 Holiday Mini Skillet",
           "kind": "product",
           "description": "Our annual Holiday Mini Skillet tradition continues with a limited-edition nutcracker design! Packed in a special holiday gift box, this skillet is the ultimate stocking stuffer. Complete with a yellow ribbon, the piece can be displayed in your kitchen or even",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "16.95",
@@ -1412,7 +1412,7 @@
           "title": "Custom Skillets - Engraved Text",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.99",
@@ -1427,7 +1427,7 @@
           "title": "Custom Skillets - Engraved Award",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.99",
@@ -1442,7 +1442,7 @@
           "title": "Custom Skillets - Engraved Honor",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.99",
@@ -2019,7 +2019,7 @@
     },
     "colorado-rocky-mountain": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.nps.gov/romo/index.htm",
@@ -2027,7 +2027,7 @@
           "title": "Rocky Mountain National Park (U.S. National Park Service)",
           "kind": "website",
           "description": "Located in northern Colorado, visitors to Rocky Mountain National Park can explore over 415 square miles (265,807 acres) within the Southern Rocky Mountains. From montane meadows to subalpine forests and mountain peaks in the alpine tundra, there is something ",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2036,7 +2036,7 @@
           "title": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2045,7 +2045,7 @@
           "title": "A man is standing on a bridge and looking up at a waterfall",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2054,7 +2054,7 @@
           "title": "A pika has harvested a tundra thistle",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2063,7 +2063,7 @@
           "title": "Visitors are walking on the Tundra Communities trail in summer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2072,7 +2072,7 @@
           "title": "The NPS Arrowhead appears on blue with text \"Rocky Mountain National Park Timed Entry Reservations\"",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2081,7 +2081,7 @@
           "title": "Park Entrance Fees and Passes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2090,14 +2090,14 @@
           "title": "A park ranger is sharing a program inside Beaver Meadows Visitor Center",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Alpine hikes"
         }
       ]
     },
     "colorado-numbers-rafting": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.americanadventure.com/tour-category/the-numbers/",
@@ -2105,7 +2105,7 @@
           "title": "most-popular",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2114,7 +2114,7 @@
           "title": "Classic Colorado Whitewater",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2123,7 +2123,7 @@
           "title": "The Numbers Half Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2132,7 +2132,7 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2141,7 +2141,7 @@
           "title": "Numbers Half Day Rafting Adventure | American Adventure Expeditions",
           "kind": "website",
           "description": "Our classic half-day rafting adventure is great for experienced white water rafters looking for a challenging ride through The Numbers in Buena Vista, CO.",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2150,7 +2150,7 @@
           "title": "Numbers Half Day Private Trip",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2159,7 +2159,7 @@
           "title": "The Numbers Raft + ATV",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2168,14 +2168,14 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Whitewater"
         }
       ]
     },
     "colorado-breckenridge-trails": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T07:19:07.365698Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
@@ -2183,7 +2183,7 @@
           "title": "Easy Hiking Trails in Breckenridge",
           "kind": "website",
           "description": "Enjoying one of the many easy hikes near Breckenridge is a great way to spend a summer day in the outdoors. Find the hike right for you and your crew.",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2192,7 +2192,7 @@
           "title": "Sunset view from the Sapphire Point Loop, one of the easy hiking trails in Breckenridge.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2201,7 +2201,7 @@
           "title": "Dog on Sallie Barber Trail: a perfect hike for your four-legged friend!",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2210,7 +2210,7 @@
           "title": "The Blue River Rec Path right through the heart of Breckenridge.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2219,7 +2219,7 @@
           "title": "Hiking in Breckenridge Without A Car",
           "kind": "website",
           "description": "You don’t need a car to hike some spectacular trails in Breckenridge. Free public transportation can make hiking in without a car simple and easy.",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2228,14 +2228,14 @@
           "title": "Best Summer Hikes in Breckenridge",
           "kind": "website",
           "description": "When it comes to hiking, Breckenridge has it all — waterfalls, wildflowers, alpine lakes, and more. Check out our favorite summer hikes in Breckenridge!",
-          "checked_at": "2026-11-03T07:19:07.365698Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Easy hiking"
         }
       ]
     },
     "colorado-glenwood-hot-springs": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://hotspringspool.com/",
@@ -2243,7 +2243,7 @@
           "title": "Home Page",
           "kind": "website",
           "description": "Discover the ultimate Colorado destination with world famous hot springs pool, 107 room lodge and premier athletic club. Perfect for families & romantic getaways.",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2252,7 +2252,7 @@
           "title": "Glenwood Hot Springs Resort Logo White Text",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2261,7 +2261,7 @@
           "title": "View from the Bridge of Glenwood Hot Springs Resort Pools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2270,7 +2270,7 @@
           "title": "Glenwood Hot Springs Resort | Specials: Ski Swim Stay",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2279,7 +2279,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "Enjoy the benefits of the largest hot springs pool for the day or all year long at Glenwood Hot Springs Resort.",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2288,7 +2288,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2297,7 +2297,7 @@
           "title": "Glenwood Hot Springs Resort Wins Seven 2026 Locals’ Choice Award",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2306,14 +2306,14 @@
           "title": "Hot Springs",
           "kind": "website",
           "description": "Soak in mineral-rich, heated water to refresh tired muscles, swim laps, or enjoy summer with cabana rentals and the Sopris Splash Zone. Experience it all at Glenwood Hot Springs.",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Relaxation"
         }
       ]
     },
     "colorado-ouray-ice-park": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://ourayicepark.com/events/2027/01/28/fest",
@@ -2321,7 +2321,7 @@
           "title": "32nd Annual Ouray Ice Festival",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2330,7 +2330,7 @@
           "title": "February 25th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2339,7 +2339,7 @@
           "title": "February 17th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2348,7 +2348,7 @@
           "title": "February 11th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2357,14 +2357,14 @@
           "title": "February 4th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · Technical ice"
         }
       ]
     },
     "colorado-ice-lakes-basin": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T08:22:56.247451Z",
+      "attempted_at": "2026-11-03T14:19:40.222888Z",
       "items": [
         {
           "url": "https://www.fs.usda.gov/r02/sanjuan",
@@ -2372,7 +2372,7 @@
           "title": "San Juan National Forest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2381,7 +2381,7 @@
           "title": "A road is washed out by a river",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2390,7 +2390,7 @@
           "title": "Road Conditions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2399,7 +2399,7 @@
           "title": "South Mineral Campground",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T08:22:56.247451Z",
+          "checked_at": "2026-11-03T14:19:40.222888Z",
           "category": "Colorado · High alpine"
         }
       ]
