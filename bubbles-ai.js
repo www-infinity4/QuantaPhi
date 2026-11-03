@@ -3457,6 +3457,34 @@ async function directGithubOperation(operation,{quiet=false,ownerRequest='',imag
  }
  return {...result,requestId};
 }
+// Zeus quick-quest bridge: only the same-origin, explicit host Send can deliver
+// a visitor question here. Reuse the normal Bubbles message pipeline unchanged.
+const acceptedZeusQuests=new Set();
+if(embedded&&bubbleId==='coliseum-zeus-assistant')window.addEventListener('message',event=>{
+ if(event.source!==window.parent||event.origin!==window.location.origin)return;
+ const data=event.data;
+ if(data?.type!=='quantaphi:bubbles:quest'||data.id!==bubbleId)return;
+ const requestId=data.requestId;
+ if(typeof requestId!=='string'||!/^quest_[a-f0-9-]{36}$/.test(requestId))return;
+ const acknowledge=state=>window.parent.postMessage({
+  type:'quantaphi:bubbles:quest-ack',id:bubbleId,requestId,status:state
+ },window.location.origin);
+ if(acceptedZeusQuests.has(requestId)){acknowledge('accepted');return;}
+ const prompt=typeof data.prompt==='string'?data.prompt.trim():'';
+ if(!prompt||prompt.length>1800){acknowledge('invalid');return;}
+ if(busy||turnPending){acknowledge('busy');return;}
+ acceptedZeusQuests.add(requestId);
+ if(acceptedZeusQuests.size>100)acceptedZeusQuests.delete(acceptedZeusQuests.values().next().value);
+ toggle(true);
+ // Acknowledgment means Bubbles accepted the turn, NOT that an AI replied
+ // or that any repository, wallet, or device tool executed.
+ acknowledge('accepted');
+ void sendMessage(prompt).catch(error=>{
+  const message='Zeus could not finish this message: '+String(error?.message||error||'unknown failure').slice(0,120);
+  status.textContent=message;
+  display(message,'ai');
+ });
+});
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});
 function queueRepositoryPreview(value){
  if(repositorySearchTimer)clearTimeout(repositorySearchTimer);
