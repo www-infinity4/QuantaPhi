@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "slug": "ge-appliances-official",
+  "title": "GE Appliances",
+  "category": "Home appliances",
+  "website": "https://www.geappliances.com/",
+  "image": "https://iprsoftwaremedia.com/112/files/20262/69a5f62a3d6332de6c041399_GE%20Appliances%20Logo/GE%20Appliances%20Logo_d655e67e-dd7a-4d98-8a02-c81175925609-prv.png?v=d655e67e-dd7a-4d98-8a02-c81175925609",
+  "imageAlt": "GE Appliances blue emblem and wordmark",
+  "description": "Browse official GE Appliances refrigerators, ranges, dishwashers and other home appliances. This independent QuantaPhi directory card is not affiliated with GE Appliances.",
+  "interactionRequest": "Open the official GE Appliances catalog. Product selection and checkout remain on the official website.",
+  "kind": "visit",
+  "searchTemplate": "",
+  "videoId": "",
+  "previewMode": "interactive",
+  "status": "approved",
+  "sourceEvidence": {
+    "officialWebsite": "https://www.geappliances.com/",
+    "officialPressroomLogo": "https://pressroom.geappliances.com/file/ge-appliances-logo",
+    "verifiedOn": "2026-11-03"
+  },
+  "storage": {
+    "cloudflareD1": "quantaphi-quick-cards",
+    "table": "quick_cards",
+    "worker": "quantaphi-quick-card-publisher",
+    "expectedRoute": "https://quantaphi.org/cards/ge-appliances-official",
+    "databaseReadbackVerified": true,
+    "publicHttpReadbackVerified": true,
+    "liveBrowserCheck": {
+      "date": "2026-11-03",
+      "status": 200,
+      "result": "Page loaded; logo rendered; title, source link and controls visible; interactions not exercised",
+      "evidenceUrl": "https://agent.tinyfish.ai/runs/8b5221ae-ad5e-4215-a5ee-9af9075b210c"
+    },
+    "databaseApprovalReadbackVerified": true,
+    "discoverability": "eligible_for_approved_feed_not_guaranteed_rotation"
+  },
+  "editorialNotes": "Independent third-party navigation card. Do not present as GE sponsorship, invent pricing, or claim QuantaPhi checkout. Source and live card rendering reviewed; approved for discovery on 2026-11-03. Carousel placement is Quant-ranked and remains to be tested. Live browser checks do not establish merchant sponsorship, prices, image rights for paid advertising, or completed retailer checkout."
+}
