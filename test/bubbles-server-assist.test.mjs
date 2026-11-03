@@ -219,3 +219,60 @@ test('signed partial multi-step research retains failed step status instead of g
  assert.equal(r.result.receipt.status,'partial');
  assert.deepEqual(r.result.receipt.steps,[{tool:'github.read_repository',status:'failed'},{tool:'github.read_file',status:'complete'}]);
 });
+
+
+test('signed GPT bridge does not count a failed live tool as a successful answer even though transport finished',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({
+  ok:true,output:'Search could not retrieve current results. No sources verified.',
+  answerStatus:'partial',receipt:{tool:'web.search',status:'failed'},
+  sources:[]
+ });
+ await serverAssist({...f.args,body:{operation:'assist',text:'Search the web for the latest news'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete','the request was transported and answered with a failure report');
+ assert.equal(r.result.ok,false,'a failed tool must not be credited as completed GPT work');
+ assert.equal(r.result.outcome,'tool_failed');
+ assert.equal(r.result.receipt.tool,'web.search');
+ assert.equal(r.result.receipt.status,'failed');
+ assert.match(r.result.output,/could not retrieve/);
+});
+
+test('signed GPT bridge preserves partial research but never marks partial answers as complete work',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({
+  ok:true,output:'Source excerpts obtained; a full explanation could not be verified.',
+  answerStatus:'partial',receipt:{tool:'web.search',status:'complete'},
+  sources:[{title:'Public research',url:'https://example.org/research'}]
+ });
+ await serverAssist({...f.args,body:{operation:'assist',text:'Research a public project'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete');
+ assert.equal(r.result.ok,false);
+ assert.equal(r.result.outcome,'answer_partial');
+ assert.equal(r.result.receipt.status,'complete','actual source lookup remains recorded');
+ assert.equal(r.result.answerStatus,'partial');
+ assert.equal(r.result.sources.length,1);
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:1000}),'','a failed/partial prior answer must not be reused as verified work');
+});
+
+test('signed tool completion requires a real complete receipt; observed success stays successful',async()=>{
+ for(const status of ['missing','needs_input','invalid_input','blocked','partial','unverified']){
+  const f=setup();
+  f.args.fetcher=async()=>Response.json({ok:true,output:'I can explain the limitation.',
+   answerStatus:'complete',receipt:{tool:'github.read_file',status:status==='missing'?undefined:status}});
+  await serverAssist({...f.args,body:{operation:'assist',text:'Read a public source'}});
+  const result=await serverAssist({...f.args,body:{operation:'result'}});
+  assert.equal(result.state,'complete');
+  assert.equal(result.result.ok,false,status);
+  assert.equal(result.result.outcome,'tool_'+(status==='missing'?'unverified':status),status);
+ }
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'Verified page read',
+  answerStatus:'complete',receipt:{tool:'web.read_page',status:'complete',sourceReadVerified:true}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Read the Bubbles public home page'}});
+ const done=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(done.state,'complete');
+ assert.equal(done.result.ok,true);
+ assert.equal(done.result.outcome,'complete');
+});
