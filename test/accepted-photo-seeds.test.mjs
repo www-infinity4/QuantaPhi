@@ -38,3 +38,13 @@ test('image gap seed links remain source-specific, not arbitrary third party ads
  assert.match(BRAND_PHOTO_SEEDS['durable-coleman-classic-camp-stoves'].sourceUrl,/backcountry\.com/);
  assert.match(BRAND_PHOTO_SEEDS['durable-fritz-hansen'].sourceUrl,/mynordicliving\.co\.uk/);
 });
+
+test('when a catalog brand has only a logo, it can recover a real verified photo on activation without blanking the card',()=>{
+ const renderer=code('infinity-accepted-cards.mjs');
+ assert.match(renderer,/fetchSpotlights\(card\)/);
+ assert.match(renderer,/oracle:activate/);
+ assert.match(renderer,/Promise\.any/);
+ assert.match(renderer,/iac-source-discovered/);
+ assert.match(renderer,/sourcePhotoRecovered/);
+ assert.doesNotMatch(renderer,/media\.hidden=true/);
+});
