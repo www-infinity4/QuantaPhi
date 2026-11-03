@@ -44,3 +44,12 @@ test('automatic news writer is a review-gated draft workflow, never silent unver
  assert.match(workflow,/pull-requests:\s*write/);
  assert.doesNotMatch(workflow,/auto-merge/);
 });
+test('reader falls back to a truly current first-party FULL report, never an expired fake article',()=>{
+ const js=read('newsroom/fresh-reports.mjs');
+ assert.match(js,/function showOriginalFull\(/);
+ assert.match(js,/new DOMParser\(\)\.parseFromString/);
+ assert.match(js,/querySelectorAll\('article\.story > p'\)/);
+ assert.match(js,/freshFeatures\(\{articles:\[originalFallback\]\}\)/);
+ assert.match(js,/if\(!showOriginalFull\(\)\)reportUnavailable/);
+ assert.doesNotMatch(js,/innerHTML/);
+});
