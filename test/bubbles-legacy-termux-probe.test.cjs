@@ -59,7 +59,7 @@ test('callback separates dispatch, exit, failed cleanup, and absent results',()=
  assert.match(policy,/cleanup=verified_job_directory_removed/);
  assert.match(receiver,/cleanup=" \+ \("shell"\.equals\(kind\) \? "not_applicable" : cleaned \? "confirmed" : "not_verified"\)/);
  assert.match(probe,/timed_out_unverified/);
- assert.match(probe,/if \\(\"queued\"\\.equals\\(current\\.optString\\(\"state\"\\)\\) \\|\\|\\s*\"timed_out_unverified\"\\.equals\\(current\\.optString\\(\"state\"\\)\\)\\)\\s+return/);
+ assert.match(probe,/if \("queued"\.equals\(current\.optString\("state"\)\) \|\|\s*"timed_out_unverified"\.equals\(current\.optString\("state"\)\)\)\s+return/);
 });
 
 test('identical Bubbles website chat requests and receives the Termux receipt',()=>{
