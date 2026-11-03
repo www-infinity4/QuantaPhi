@@ -1,5 +1,10 @@
 name: Bubbles independent evidence rig
 on:
+  pull_request:
+    paths:
+      - 'scripts/bubbles_rig.py'
+      - 'test/bubbles_rig_test.py'
+      - '.github/workflows/bubbles-independent-rig.yml'
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
