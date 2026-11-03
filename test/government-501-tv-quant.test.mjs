@@ -60,6 +60,8 @@ test('consented Quant read ranks existing movie IDs only, with science preferenc
 test('TV extension shows actual in-card movies with one player, cast instructions and opt-in read',()=>{
  const ui=read('tv-501-expansion.mjs'),home=read('index.html');
  assert.match(home,/tv-501-expansion\.mjs/);
+ assert.match(home,/id="tvQuantExpansion"/);
+ assert.match(ui,/getElementById\('tvQuantExpansion'\)/);
  assert.match(ui,/quantaphi:tv-playback-request/);
  assert.match(ui,/host\.appendChild\(el\('div','channelphi-grid'\)\)/);
  assert.match(ui,/youtube-nocookie\.com\/embed\//);
