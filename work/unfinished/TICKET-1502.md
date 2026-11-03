@@ -17,12 +17,15 @@ fence: null
 last_observed_at_utc: "2026-11-03T02:30:00Z"
 repo: "www-infinity4/QuantaPhi"
 branch: "feat/search-discovered-quick-cards-1502"
-head_sha: null
-pr: null
+head_sha: "8d0b5d56b03fe9820cdb162cd103c663347a6dcf (source head before checkpoint update)"
+pr: 1503
 tests:
   - "test/search-card-discovery.test.mjs authored; execution not yet confirmed"
-  - "test/quick-card-search.browser.spec.mjs GE Android path authored; execution not yet confirmed"
-ci: []
+  - "test/quick-card-search.browser.spec.mjs GE Android path authored; exact-final-head execution pending"
+  - "Search returns working Quick Cards CI passed for pre-final head 16fae7c; not acceptance for later commits"
+ci:
+  - "https://github.com/www-infinity4/QuantaPhi/actions/runs/41566832569: success on earlier head 16fae7c, not final"
+  - "https://github.com/www-infinity4/QuantaPhi/actions/runs/41566949217: pending on source head 8d0b5d56"
 merged: false
 deployed: false
 live_verified: false
@@ -33,6 +36,11 @@ next_action: "Run exact-branch Node and Playwright tests, review spoofing/follow
 # Search creates missing Quick Cards · first source checkpoint
 
 Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1502
+
+## PR and verified evidence
+
+- Draft PR: https://github.com/www-infinity4/QuantaPhi/pull/1503
+- Focused Quick Card CI succeeded at earlier head 16fae7c; the newer source head requires exact-head recheck. This checkpoint commit also changes PR head.
 
 ## Authored in this branch
 
