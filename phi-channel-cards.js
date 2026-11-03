@@ -5,6 +5,15 @@
 'use strict';
 const host=document.getElementById('phiChannelCards'),catalog=window.PhiTVPrograms;
 if(!host||!catalog)return;
+// The standalone KYOU guide retains the familiar multi-channel wall, while
+// each homepage player is registered as its own Oracle Quick Card.
+const individualRoots={
+ starquest:document.getElementById('infinityStarQuestCard'),
+ omni:document.getElementById('infinityOmniTvCard'),
+ chiller:document.getElementById('infinityChillerCard'),
+ shoplc:document.getElementById('infinityShopLcCard')
+};
+const separateMode=Object.values(individualRoots).every(Boolean);
 const channels=[
  {name:'KYOU · FOX 15.1',eyebrow:'IOWA · OFFICIAL LIVESTREAM',description:'KYOU’s live channels and newscasts are on the official station website. Use the play screen to watch there; FOX 15.1 programming may differ.',key:'kyou',poster:'https://webpubcontent.gray.tv/gray/arc-fusion-assets/images/logo-off-site/kyou.png?d=602&mxId=00000000',icon:'KY',tone:'kyou'},
  {name:'StarQuest',eyebrow:'CLASSIC MOVIES · WATCH NOW',description:'Direct movie player · daily feature or next title.',key:'starquest',poster:catalog.now('starquest',new Date()).poster,icon:'SQ',tone:'starquest'},
@@ -15,9 +24,19 @@ const channels=[
 const remoteChannels=['starquest','chiller','shoplc'];
 const el=(tag,cls,label)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(label!==undefined)node.textContent=label;return node};
 const heading=host.appendChild(el('div','channelphi-heading'));
-heading.append(el('span','channelphi-kicker','INFINITY 2026® · ORACLE OCTAVES'),el('h2',null,'Watch · Infinity Channels'),
- el('p',null,'KYOU opens at the station’s official player. Other channels play directly in the TV screen below.'));
-const grid=host.appendChild(el('div','channelphi-grid'));
+heading.append(el('span','channelphi-kicker','INFINITY 2026® · ORACLE OCTAVES'),el('h2',null,separateMode?'Infinity TV Guide':'Watch · Infinity Channels'),
+ el('p',null,separateMode?'Each station has its own carousel card. Open the day, time and network guide to find a player.':'KYOU opens at the station’s official player. Other channels play directly in the TV screen below.'));
+if(separateMode){
+ host.classList.add('channelphi-guide-home');
+ const cover=host.appendChild(el('img','channelphi-guide-poster'));cover.src=catalog.preview('starquest',new Date()).poster;cover.alt='StarQuest feature video preview';cover.loading='eager';cover.decoding='async';cover.width=1280;cover.height=720;
+ const links=host.appendChild(el('nav','channelphi-guide-links'));
+ const add=(label,href)=>{const a=links.appendChild(el('a','',label));a.href=href;return a};
+ add('TV Guide · Day / Time / Network','/infinity-tv/guide.html');
+ add('StarQuest','/?card=infinityStarQuestCard');add('Chiller','/?card=infinityChillerCard');
+ add('Omni TV','/?card=infinityOmniTvCard');add('Shop LC','/?card=infinityShopLcCard');
+ add('KYOU · FOX 15.1','/?card=liveFoxGameCard');add('LiveNOW from FOX','/?card=liveFoxNewsCard');
+}
+const grid=separateMode?null:host.appendChild(el('div','channelphi-grid'));
 let active=null,generation=0,ytReady=null,hlsReady=null;
 function kyouSource(){
  const url=new URL('https://www.kyoutv.com/livestream/');
@@ -234,12 +253,26 @@ function open(playback){
  active=playback;showProgram(playback,programFor(playback),token);
 }
 for(const c of channels){
- const card=grid.appendChild(el('article','channelphi-card channelphi-'+c.tone));card.setAttribute('aria-label',c.name+' channel');
+ if(separateMode&&c.key==='kyou')continue;
+  const owner=separateMode?individualRoots[c.key]:host;
+  const card=(separateMode?owner:grid).appendChild(el('article','channelphi-card channelphi-'+c.tone));
+  if(separateMode){card.classList.add('channelphi-independent');owner.classList.add('channelphi-standalone-root');}
+  card.setAttribute('aria-label',c.name+' channel');
+  const info=catalog.preview(c.key,new Date());
  const mast=card.appendChild(el('div','channelphi-mast'));
  if(c.key==='kyou'){const logo=el('img','channelphi-kyou-logo');logo.src=c.poster;logo.alt='KYOU';logo.width=90;logo.height=48;mast.append(logo)}
  else mast.append(el('span','channelphi-monogram',c.icon));
  const title=mast.appendChild(el('div','channelphi-name'));title.append(el('span','channelphi-kicker',c.eyebrow),el('h3',null,c.name));
- card.append(el('p','channelphi-description',c.description));
+ const detail=card.appendChild(el('p','channelphi-description',info.description));
+  const programHeading=card.appendChild(el('p','channelphi-airing',c.key==='shoplc'?'Live shopping · current item at Shop LC':'Infinity selected: '+info.title));
+  const programNote=card.appendChild(el('p','channelphi-program-note',info.availabilityNote));
+  const guideLinks=card.appendChild(el('nav','channelphi-source-links'));
+  const addGuideLink=(label,href)=>{const a=guideLinks.appendChild(el('a','',label));a.href=href;
+   if(/^https:\/\//.test(href)){a.target='_blank';a.rel='noopener noreferrer'}return a};
+  addGuideLink('TV Guide',info.guideUrl);
+  const sourceLink=addGuideLink(c.key==='shoplc'?'Watch on Shop LC':'Watch source video / channel',info.providerUrl);
+  if(c.key==='kyou')addGuideLink('KYOU official schedule','https://www.kyoutv.com/programming/schedule/');
+  if(c.key==='shoplc')addGuideLink('Shop LC program guide','https://www.shoplc.com/pages/live-tv-program-guide');
  const screen=card.appendChild(el(c.key==='kyou'?'a':'button','channelphi-screen'));
  if(c.key==='kyou'){
   // A verified publisher-owned standalone embed is not available. Link to the
@@ -251,7 +284,7 @@ for(const c of channels){
   screen.type='button';screen.setAttribute('aria-label','Watch '+c.name+' video in this card');
   screen.setAttribute('aria-expanded','false');
  }
- const image=screen.appendChild(el('img','channelphi-art'));image.src=c.poster;image.alt='';image.loading='eager';image.decoding='async';if(c.key==='kyou')image.fetchPriority='high';image.addEventListener('error',()=>screen.classList.add('channelphi-image-unavailable'),{once:true});
+ const image=screen.appendChild(el('img','channelphi-art'));image.src=info.poster||c.poster;image.alt='';image.loading=separateMode?'lazy':'eager';image.decoding='async';if(c.key==='kyou')image.fetchPriority='high';image.addEventListener('error',()=>screen.classList.add('channelphi-image-unavailable'),{once:true});
  const shade=screen.appendChild(el('span','channelphi-screen-label'));shade.append(el('span','channelphi-play-icon','▶'),el('strong',null,c.key==='kyou'?'Play on KYOU ↗':'Watch '+c.name));
  if(c.key==='kyou')continue;
  const viewer=card.appendChild(el('div','channelphi-viewer'));viewer.hidden=true;
@@ -263,7 +296,7 @@ for(const c of channels){
  const next=controls.appendChild(el('button','channelphi-next','CH+ ▶'));next.type='button';
  const sound=controls.appendChild(el('button','channelphi-sound','🔊 Sound'));sound.type='button';
  const close=controls.appendChild(el('button','channelphi-stop','■ Stop'));close.type='button';
- const playback={key:c.key,card,screen,viewer,screenSlot,status,title:now,sound,video:null,frame:null,yt:null,hls:null,program:null,channel:c.key,remoteChannel:c.key};
+ const playback={key:c.key,owner:owner.id,card,screen,viewer,screenSlot,status,title:now,programHeading,programNote,description:detail,sourceLink,sound,video:null,frame:null,yt:null,hls:null,program:null,channel:c.key,remoteChannel:c.key};
  screen.addEventListener('click',()=>open(playback));
  previous.addEventListener('click',()=>changeProgram(playback,-1));
  next.addEventListener('click',()=>changeProgram(playback,1));
@@ -274,5 +307,5 @@ document.addEventListener('quantaphi:tv-playback-request',event=>{if(event.detai
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
 document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id==='phiChannelCards')stop()});
 window.addEventListener('pagehide',stop);
-host.append(el('p','channelphi-foot','One active in-card player at a time. KYOU opens its official stream in a new tab until the station supplies a supported embedded player. Online KYOU programming can differ from FOX 15.1 over the air; this viewer does not confirm game access. Other channels keep their direct video controls.'));
+host.append(el('p','channelphi-foot',separateMode?'Select one channel card to watch. This guide never embeds a full external website.':'One active in-card player at a time. KYOU opens its official stream in a new tab until the station supplies a supported embedded player. Online KYOU programming can differ from FOX 15.1 over the air; this viewer does not confirm game access. Other channels keep their direct video controls.'));
 })();
