@@ -7,7 +7,7 @@ import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1
  * on-card actions, and the shared collection toolbar. No synthetic brand art.
  * A card is only rotation-ready AFTER its actual source icon/image loads.
  */
-export const VERIFIED_CARD_COUNT=REQUESTED_PUBLIC_CARDS.filter(validBrandSportsCard).length;
+export const VERIFIED_CARD_COUNT=REQUESTED_PUBLIC_CARDS.filter(c=>!c.id.startsWith('world-series-')).filter(validBrandSportsCard).length;
 export function isSafeCardUrl(value){
  try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password}catch{return false}
 }
@@ -264,7 +264,7 @@ export function mountVerifiedCards(){
  const bank=document.getElementById('verifiedBrandSportsCards');
  if(!bank||bank.dataset.mounted==='true')return;
  bank.dataset.mounted='true';
- const valid=REQUESTED_PUBLIC_CARDS.filter(validBrandSportsCard);
+ const valid=REQUESTED_PUBLIC_CARDS.filter(c=>!c.id.startsWith('world-series-')).filter(validBrandSportsCard);
  // Keep source widgets in their original hidden bank. The Oracle top viewer
  // moves the same DOM node into the spotlight and preserves all click handlers.
  bank.append(...valid.map(createVerifiedCard));

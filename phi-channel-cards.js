@@ -251,7 +251,7 @@ for(const c of channels){
   screen.type='button';screen.setAttribute('aria-label','Watch '+c.name+' video in this card');
   screen.setAttribute('aria-expanded','false');
  }
- const image=screen.appendChild(el('img','channelphi-art'));image.src=c.poster;image.alt='';image.loading='lazy';
+ const image=screen.appendChild(el('img','channelphi-art'));image.src=c.poster;image.alt='';image.loading='eager';image.decoding='async';if(c.key==='kyou')image.fetchPriority='high';image.addEventListener('error',()=>screen.classList.add('channelphi-image-unavailable'),{once:true});
  const shade=screen.appendChild(el('span','channelphi-screen-label'));shade.append(el('span','channelphi-play-icon','▶'),el('strong',null,c.key==='kyou'?'Play on KYOU ↗':'Watch '+c.name));
  if(c.key==='kyou')continue;
  const viewer=card.appendChild(el('div','channelphi-viewer'));viewer.hidden=true;

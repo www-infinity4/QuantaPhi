@@ -102,20 +102,18 @@ function nbaCard(host){
    ui.status.textContent=shown.length+' of '+data.games.length+' NBA games shown · source checked '+new Date(data.checked).toLocaleTimeString()+' · ESPN data';
   }catch(error){if(own!==controller)return;ui.setGames([],null);empty(ui.list,'Scores unavailable right now. Use the source scoreboard link.');ui.status.textContent='NBA refresh failed · '+safeStatus(error.message)}
  }
- dayControls(ui,refresh,day=>{date=day;void refresh()},()=>date);select();watchCard(host,refresh);
+ dayControls(ui,refresh,day=>{date=day;void refresh()},()=>date);watchCard(host,refresh);
 }
 function mlbCard(host){
- const ui=scoreboardShell(host,'MLB & World Series Match Center','BASEBALL','scores',SOURCES.mlb);
- let date=localDate(),controller,mode='all';
- const tabs=make(host,'div','gt-tabs'),defs=[['all','All MLB games'],['world-series','World Series']];
- const buttons=defs.map(([id,label])=>button(tabs,label,()=>{mode=id;select();void refresh()}));
- function select(){buttons.forEach((b,i)=>{const yes=defs[i][0]===mode;b.classList.toggle('selected',yes);b.setAttribute('aria-pressed',String(yes))})}
+ const ui=scoreboardShell(host,'MLB Match Center','BASEBALL','scores',SOURCES.mlb);
+ let date=localDate(),controller;
+ const tabs=make(host,'div','gt-tabs');button(tabs,'All MLB games',()=>void refresh()).disabled=true;
  async function refresh(){
   controller?.abort();const own=controller=new AbortController();ui.day.textContent=dateLabel(date);ui.status.textContent='Checking MLB schedule for '+date+'…';
   try{
    const api=await sports(),data=await api.fetchScoreboard('mlb',date,{signal:AbortSignal.any([own.signal,AbortSignal.timeout(14000)])});
    if(own!==controller)return;
-   const shown=mode==='world-series'?data.games.filter(g=>/world series/i.test(g.series)):data.games;
+   const shown=data.games;
    ui.setGames(shown,api.renderSportsGame);
    if(!shown.length)empty(ui.list,'No MLB games in this view. Switch days or choose All MLB games.');
    ui.status.textContent=shown.length+' of '+data.games.length+' MLB games shown · source checked '+new Date(data.checked).toLocaleTimeString()+' · MLB schedule';
