@@ -57,3 +57,13 @@ test('future states enter the same public source-card algorithm, without hard-co
  assert.equal(rankAttractions([next],{limit:1}).length,1);
  assert.match(attractionSourceId(next),/^attraction-al-/);
 });
+
+test('diversity picks may extend beyond selected interests but must never falsely claim a match',()=>{
+ const picks=rankAttractions(alaska.items,{interests:['history'],limit:8});
+ assert.equal(picks.length,8);
+ for(const item of picks){
+  if(['historic_site','history_museum','museum','visitor_center'].includes(item.category))
+   assert.match(item.match_reason,/^Matched your selected history interest/);
+  else assert.doesNotMatch(item.match_reason,/^Matched your selected history interest/);
+ }
+});
