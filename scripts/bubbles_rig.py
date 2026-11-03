@@ -52,7 +52,17 @@ def run(args):
     elif any(r["status"] in ("in_progress", "queued", "waiting") for r in report["runs"]):
         report["result"] = "CI_PENDING_END_TO_END_UNVERIFIED"
     elif report["runs"] and all(r["status"] == "completed" and r["conclusion"] == "success" for r in report["runs"]):
-        report["result"] = "CI_PASSED_END_TO_END_UNVERIFIED"
+        # A successful CI run only applies to the exact commit it tested.
+        # When PRs are supplied, every PR must have a readable head with a
+        # matching successful run. A stale run cannot approve a changed PR.
+        if report["prs"] and (any(not p["head_sha"] or p["error"] for p in report["prs"])
+                              or any(not r["head_sha"] for r in report["runs"])):
+            report["result"] = "CI_HEAD_UNVERIFIED_END_TO_END_UNVERIFIED"
+        elif report["prs"] and any(p["head_sha"] not in {r["head_sha"] for r in report["runs"]}
+                                   for p in report["prs"]):
+            report["result"] = "CI_STALE_HEAD_END_TO_END_UNVERIFIED"
+        else:
+            report["result"] = "CI_PASSED_END_TO_END_UNVERIFIED"
     with open(args.output, "w", encoding="utf-8") as handle:
         json.dump(report, handle, indent=2)
         handle.write("\n")
