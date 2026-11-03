@@ -29,5 +29,6 @@ jobs:
           node-version: '22'
       - name: Syntax
         run: node --check newsroom/live.mjs
+          node --check newsroom/fresh-reports.mjs
       - name: Original article, discovery, news freshness and existing privacy tests
-        run: node --test test/newsroom.test.mjs test/privacy-policy.test.mjs test/audience-audit.test.mjs
+        run: node --test test/newsroom-freshness.test.mjs test/newsroom.test.mjs test/privacy-policy.test.mjs test/audience-audit.test.mjs
