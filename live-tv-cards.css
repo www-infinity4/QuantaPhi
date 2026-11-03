@@ -15,3 +15,9 @@
 .ltv-poster:focus-visible{outline:3px solid #dfad33;outline-offset:-3px}
 .oracle-card-deck-active:not(.oracle-shelf-open) main.app>:is(#liveFoxGameCard,#liveFoxNewsCard){display:none!important}
 .oracle-shelf-open main.app>:is(#liveFoxGameCard,#liveFoxNewsCard){display:block;margin:16px 0}
+
+.ltv-program{margin:9px 14px 3px;color:#203d54;font:750 15px/1.5 system-ui,sans-serif;letter-spacing:.01em}
+.ltv-summary{margin:3px 14px 10px;color:#526677;font:400 14px/1.55 system-ui,sans-serif}
+.ltv-links{display:flex;flex-wrap:wrap;gap:8px;padding:0 14px 10px}
+.ltv-links a{display:inline-flex;align-items:center;min-height:44px;padding:9px 12px;border:1px solid #b8cbd6;border-radius:9px;background:#fff;color:#22587d;text-decoration:none;font:650 13px/1.35 system-ui,sans-serif}
+.ltv-links a:focus-visible{outline:3px solid #d7aa60;outline-offset:2px}
