@@ -3,34 +3,174 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T03:16:24.404296Z",
+  "checked_at": "2026-11-03T03:31:26.336720Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "landry shamet",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T03:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/julius-randle-posts-21-11-2-1-line-vs-knicks",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/karl-anthony-towns-grabs-16-rebounds-vs-brooklyn",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/landry-shamet-drops-in-game-high-22-points-monday"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOcfZToqOQV2h2xFS8ESqo2g8QysKkjUjizXlkY22TSf6qdGkA5ST8R3GPvXU",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/julius-randle-posts-21-11-2-1-line-vs-knicks",
+          "title": "Julius Randle posts 21/11/2/1 line vs. Knicks",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOcfZToqOQV2h2xFS8ESqo2g8QysKkjUjizXlkY22TSf6qdGkA5ST8R3GPvXU"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/karl-anthony-towns-grabs-16-rebounds-vs-brooklyn",
+          "title": "Karl-Anthony Towns grabs 16 rebounds vs. Brooklyn",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaGSnOv0oIK0UdIyBIXHuP-jk-4XlBXyDVfxPK0MUiiUTJ3lRS90ARGvp94D0"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/landry-shamet-drops-in-game-high-22-points-monday",
+          "title": "Landry Shamet drops in game-high 22 points Monday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMJNc9WLxzpYiMhcgGyNiDaVGbBpao_yS9zssFi-YY0T_7JD8knnXFagM7EsI"
+        }
+      ]
+    },
+    {
+      "query": "savannah chrisley husband",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T03:10:00Z",
+      "related_news_urls": [
+        "https://people.com/pregnant-savannah-chrisley-bares-her-bump-in-nature-inspired-halloween-costume-12207221",
+        "https://www.eonline.com/news/1437714/pregnant-savannah-chrisley-confirms-wedding-with-husband-jason-galanis",
+        "https://www.tmz.com/2026/10/28/savannah-chrisley-buys-nashville-home/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4KqCZr19NpjutCeLyVba1X8YgVW9nlm31gX55UboDDnnUSNpdSaTvKxqeHOg",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/pregnant-savannah-chrisley-bares-her-bump-in-nature-inspired-halloween-costume-12207221",
+          "title": "Pregnant Savannah Chrisley Bares Her Bump in Nature-Inspired Halloween Costume",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4KqCZr19NpjutCeLyVba1X8YgVW9nlm31gX55UboDDnnUSNpdSaTvKxqeHOg"
+        },
+        {
+          "url": "https://www.eonline.com/news/1437714/pregnant-savannah-chrisley-confirms-wedding-with-husband-jason-galanis",
+          "title": "Pregnant Savannah Chrisley Confirms Private Cayman Islands Wedding With Husband Jason Galanis",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlgtvN6p-HIuihCfb7HCimC1_-KJ07r38E7ndAr9xv-p198fNkJjWR5bZx4pc"
+        },
+        {
+          "url": "https://www.tmz.com/2026/10/28/savannah-chrisley-buys-nashville-home/",
+          "title": "Savannah Chrisley Bought $2.2M Nashville Home, Lives There With Fiancé Jason Galanis",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5tlgQcEw9W1gJDBRQjAS3KCj1hgclOEHrFWG28vMwObUOKih8FAhDIexrCkY"
+        }
+      ]
+    },
+    {
+      "query": "malik monk",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T03:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/kings-bench-production-improve-winless-195411737.html",
+        "https://www.si.com/nba/kings-found-their-franchise-star",
+        "https://lindyssports.com/nba/sacramento-kings/kings-0-5-start-turns-up-heat-on-doug-christie"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSX8Ln8Cb_8OuW0QMSUvxkqiQPmSW__ihxqWWiAtEQ-RWFDxNVG4Z1RUiizWgY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/kings-bench-production-improve-winless-195411737.html",
+          "title": "Will Kings’ Bench Production Improve in Winless Streak?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSX8Ln8Cb_8OuW0QMSUvxkqiQPmSW__ihxqWWiAtEQ-RWFDxNVG4Z1RUiizWgY"
+        },
+        {
+          "url": "https://www.si.com/nba/kings-found-their-franchise-star",
+          "title": "The Kings Might Not Win a Game for a While, But They Found Their Franchise Star",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR578Gxk1haXs2zX13YIBMWJpZHwwLO3RP_NZaP14XALaAAMnogPg7Cb0TLNzI"
+        },
+        {
+          "url": "https://lindyssports.com/nba/sacramento-kings/kings-0-5-start-turns-up-heat-on-doug-christie",
+          "title": "Sacramento Kings 0-5 start turns up heat on Doug Christie",
+          "publisher": "Lyndy's Sports Annuals",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAiZxHMUd25cbNWyI0-hOO-_1OZPhnAUUOPPvM7COklStkv4nXW5m6Dld7Bqw"
+        }
+      ]
+    },
+    {
+      "query": "who got eliminated on dancing with the stars",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-03T03:00:00Z",
+      "related_news_urls": [
+        "https://lifestyle.si.com/celebrities/dancing-with-the-stars-season-35-week-8-recap-who-was-eliminated",
+        "https://www.northjersey.com/story/news/2026/11/02/who-went-home-dwts-tonight-who-voted-off-eliminated-disney-night-scores/92567803007/",
+        "https://abcnews.com/GMA/Culture/tyler-cameron-reflects-dancing-stars-elimination-stormed-off/story?id=137646445"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFiU4bZYgiIVt9BGMrp9xbJ8uNuyafeJf40LqoYUYVYEv9eFr6OXDeKDdlvUM",
+      "image_credit": "Sports Illustrated Lifestyle",
+      "news": [
+        {
+          "url": "https://lifestyle.si.com/celebrities/dancing-with-the-stars-season-35-week-8-recap-who-was-eliminated",
+          "title": "‘Dancing With the Stars’ Season 35 Week 8 Live Recap: Dances, Scores and Elimination",
+          "publisher": "Sports Illustrated Lifestyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFiU4bZYgiIVt9BGMrp9xbJ8uNuyafeJf40LqoYUYVYEv9eFr6OXDeKDdlvUM"
+        },
+        {
+          "url": "https://www.northjersey.com/story/news/2026/11/02/who-went-home-dwts-tonight-who-voted-off-eliminated-disney-night-scores/92567803007/",
+          "title": "Who went home on 'Dancing with the Stars' tonight? Who was eliminated?",
+          "publisher": "Bergen Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY9j8Asxrj4gtKW3KNJ9HtLUVVYBlizd8KqC91F7OyWaxaAf6pc_nyzQ-P66c"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/tyler-cameron-reflects-dancing-stars-elimination-stormed-off/story?id=137646445",
+          "title": "Tyler Cameron reflects on 'Dancing with the Stars' elimination, why he walked off-camera",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS3lgaCMcjMx-Zf5CqKc6VKvGLFA_35dmZR1AwezzR02Qy4yuy1KD0fmgFdfI"
+        }
+      ]
+    },
     {
       "query": "hunger games sunrise on the reaping",
       "approx_searches": "5000+",
       "published_at": "2026-11-03T03:00:00Z",
       "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/mckenna-grace-girl-fire-hunger-201511848.html",
         "https://deadline.com/gallery/hunger-games-mckenna-grace-jennifer-lawrence-photos/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/mckenna-grace-channels-katniss-girl-003246457.html",
         "https://people.com/mckenna-grace-hunger-games-press-tour-looks-12198907"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYyEIEX7uXZcoejk6swTv-YD7MABYbg4x8_XOuOSaWLE-L7o6QZQFSa9uF_4",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCu0etwnG_5qkXDO6x_fBxqRa16_A3Vdx2jABZTDGEfB64duqE5dMeyHH6U_o",
+      "image_credit": "Yahoo",
       "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/mckenna-grace-girl-fire-hunger-201511848.html",
+          "title": "Mckenna Grace Is the Girl on Fire at ‘The Hunger Games’ Berlin Premiere",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCu0etwnG_5qkXDO6x_fBxqRa16_A3Vdx2jABZTDGEfB64duqE5dMeyHH6U_o"
+        },
         {
           "url": "https://deadline.com/gallery/hunger-games-mckenna-grace-jennifer-lawrence-photos/",
           "title": "McKenna Grace Channels Jennifer Lawrence & 'Hunger Games' Past During 'Sunrise On The Reaping' Press Tour",
           "publisher": "Deadline",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYyEIEX7uXZcoejk6swTv-YD7MABYbg4x8_XOuOSaWLE-L7o6QZQFSa9uF_4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/mckenna-grace-channels-katniss-girl-003246457.html",
-          "title": "Mckenna Grace Channels Katniss’ ‘Girl on Fire’ Look at ‘Sunrise on the Reaping’ Berlin Premiere",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6fJqlw-ykSRGEEjeYbVwy3u2YcCEuu_lO2N5r3DwEwMPk-C7YKRzd8BlK76o"
         },
         {
           "url": "https://people.com/mckenna-grace-hunger-games-press-tour-looks-12198907",
@@ -112,37 +252,37 @@
       ]
     },
     {
-      "query": "dwts elimination tonight",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T02:50:00Z",
+      "query": "ou basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T03:00:00Z",
       "related_news_urls": [
-        "https://lifestyle.si.com/celebrities/dancing-with-the-stars-season-35-week-8-recap-who-was-eliminated",
-        "https://www.northjersey.com/story/news/2026/11/02/who-went-home-dwts-tonight-who-voted-off-eliminated-disney-night-scores/92567803007/",
-        "https://abcnews.com/GMA/Culture/tyler-cameron-reflects-dancing-stars-elimination-stormed-off/story?id=137646445"
+        "https://sports.yahoo.com/articles/oklahoma-womens-basketball-guard-keeley-161150047.html",
+        "https://www.oklahoman.com/story/sports/college/sooners/2026/11/02/keeley-parks-injury-update-ou-womens-basketball-guard-season-ending-surgery/92563128007/",
+        "https://www.yardbarker.com/college_basketball_w/articles/were_heartbroken_oklahoma_sooners_suffer_early_season_blow_as_rising_guard_faces_season_ending_injury/s1_17730_44507810"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFiU4bZYgiIVt9BGMrp9xbJ8uNuyafeJf40LqoYUYVYEv9eFr6OXDeKDdlvUM",
-      "image_credit": "Sports Illustrated Lifestyle",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgMy8zzEF5wHu2fXTYilVypM3UINjmql3e1NjR_dWzx-6Vt_tys2dO0SWOXfg",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://lifestyle.si.com/celebrities/dancing-with-the-stars-season-35-week-8-recap-who-was-eliminated",
-          "title": "‘Dancing With the Stars’ Season 35 Week 8 Live Recap: Dances, Scores and Elimination",
-          "publisher": "Sports Illustrated Lifestyle",
+          "url": "https://sports.yahoo.com/articles/oklahoma-womens-basketball-guard-keeley-161150047.html",
+          "title": "Oklahoma Women's Basketball guard Keeley Parks to miss season",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFiU4bZYgiIVt9BGMrp9xbJ8uNuyafeJf40LqoYUYVYEv9eFr6OXDeKDdlvUM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgMy8zzEF5wHu2fXTYilVypM3UINjmql3e1NjR_dWzx-6Vt_tys2dO0SWOXfg"
         },
         {
-          "url": "https://www.northjersey.com/story/news/2026/11/02/who-went-home-dwts-tonight-who-voted-off-eliminated-disney-night-scores/92567803007/",
-          "title": "Who went home on 'Dancing with the Stars' tonight? Who was eliminated?",
-          "publisher": "Bergen Record",
+          "url": "https://www.oklahoman.com/story/sports/college/sooners/2026/11/02/keeley-parks-injury-update-ou-womens-basketball-guard-season-ending-surgery/92563128007/",
+          "title": "Keeley Parks injury update: OU women's basketball guard to undergo season-ending surgery",
+          "publisher": "The Oklahoman",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY9j8Asxrj4gtKW3KNJ9HtLUVVYBlizd8KqC91F7OyWaxaAf6pc_nyzQ-P66c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmi4tS187v7C-phPv2YafcLa144b7MTitXS_ZNYqPX3Rlf-B1EZJzkMuRievU"
         },
         {
-          "url": "https://abcnews.com/GMA/Culture/tyler-cameron-reflects-dancing-stars-elimination-stormed-off/story?id=137646445",
-          "title": "Tyler Cameron reflects on 'Dancing with the Stars' elimination, why he walked off-camera",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://www.yardbarker.com/college_basketball_w/articles/were_heartbroken_oklahoma_sooners_suffer_early_season_blow_as_rising_guard_faces_season_ending_injury/s1_17730_44507810",
+          "title": "'We’re Heartbroken': Oklahoma Sooners Suffer Early-Season Blow as Rising Guard Faces Season-Ending Injury",
+          "publisher": "Yardbarker",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS3lgaCMcjMx-Zf5CqKc6VKvGLFA_35dmZR1AwezzR02Qy4yuy1KD0fmgFdfI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToQMzDV02meRpfrHgtCsjP7vlS-rAPZAV_SxiFOcTW2aGV0svyI3-g_dsgks4"
         }
       ]
     },
@@ -182,41 +322,6 @@
       ]
     },
     {
-      "query": "iran war",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T02:50:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/world/middle-east/u-s-warns-gulf-of-possible-short-intense-renewal-of-iran-war-after-midterms-cd1a55e1",
-        "https://www.theatlantic.com/national-security/2026/11/trump-advisers-iran-war/689247/",
-        "https://apnews.com/article/mideast-news-november-2-2026-8722c8b5a9deb228e7a188d4760ea8ed"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUSwS1cIJkcHqpey6n4fe0zga_E5c1C4NFKMz5V5EC5Kzz2CrrUHkJhjBjxyY",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/world/middle-east/u-s-warns-gulf-of-possible-short-intense-renewal-of-iran-war-after-midterms-cd1a55e1",
-          "title": "U.S. Warns Gulf of Possible Short, Intense Renewal of Iran War After Midterms",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUSwS1cIJkcHqpey6n4fe0zga_E5c1C4NFKMz5V5EC5Kzz2CrrUHkJhjBjxyY"
-        },
-        {
-          "url": "https://www.theatlantic.com/national-security/2026/11/trump-advisers-iran-war/689247/",
-          "title": "Trump Searches for a Fall Guy to Blame for Iran",
-          "publisher": "The Atlantic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC7YUTRY5n1rBVBYly17E21rzlE4BSODiRXdePLrQ8dJrVArcmwPEVDRDSmMs"
-        },
-        {
-          "url": "https://apnews.com/article/mideast-news-november-2-2026-8722c8b5a9deb228e7a188d4760ea8ed",
-          "title": "Netanyahu pushes for new strikes on Iran, officials tell AP, and other Mideast news",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEIo8VFhn9NnvVyJb6ESlaa2-sju2zUsK6jr4BH23To8zLTFAMqpyxxQ6JFQc"
-        }
-      ]
-    },
-    {
       "query": "oklahoma basketball",
       "approx_searches": "1000+",
       "published_at": "2026-11-03T02:50:00Z",
@@ -248,111 +353,6 @@
           "publisher": "KRMG",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRu7qGLvwXUT6NNhEbJ-WPPoqqUATqJR2OCAV4JkDH8C6-8oIMW8e4CmXEiasM"
-        }
-      ]
-    },
-    {
-      "query": "diego pavia",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T02:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50349558/ravens-lamar-jackson-rest-game-thumb-injury",
-        "https://www.nfl.com/news/nfl-week-8-sunday-aftermath-ravens-cowboys-vikings",
-        "https://www.nytimes.com/athletic/7746072/2026/11/01/lamar-jackson-future-ravens-injury-bills/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMOfC9DqTvDMjjZ58LEUQQqrDNUyfzgiScWYWw373xMsXAjXiue02Gyc45HFQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50349558/ravens-lamar-jackson-rest-game-thumb-injury",
-          "title": "Ravens' Lamar Jackson needs thumb surgery, will be placed on IR",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMOfC9DqTvDMjjZ58LEUQQqrDNUyfzgiScWYWw373xMsXAjXiue02Gyc45HFQ"
-        },
-        {
-          "url": "https://www.nfl.com/news/nfl-week-8-sunday-aftermath-ravens-cowboys-vikings",
-          "title": "NFL Week 8 Sunday aftermath: Ravens' season on the brink; can Vikings trust Kyler Murray?",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyhkR-87w4T8X6opxRwAZHyQAHlJ1lyA6PCrwriGAdCSWkK9j_23XOUBwb79Y"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7746072/2026/11/01/lamar-jackson-future-ravens-injury-bills/",
-          "title": "Lamar Jackson’s injury could doom Ravens’ season. Did we just see his last snap in Baltimore?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE8LYU34YZDAkSVDDOcWTSjhfZTG59Bwf5mulbU9-URc8LmmU-FVy5k_072dg"
-        }
-      ]
-    },
-    {
-      "query": "iranian strike selat storm tug",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T02:50:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/middle-east/irans-irgc-navy-says-two-tankers-stopped-south-hormuz-after-incidents-2026-10-30/",
-        "https://www.bloomberg.com/news/articles/2026-10-30/rare-speedboat-attack-in-hormuz-ignites-tanker-s-engine-room",
-        "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCR6L-phclX_hxdSbUpJtY0XF8-Z9-cdAAyX64yemy5uMja0OY4hoBN_fHhtY",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/middle-east/irans-irgc-navy-says-two-tankers-stopped-south-hormuz-after-incidents-2026-10-30/",
-          "title": "Iran's IRGC Navy says four tankers catch fire in Strait of Hormuz",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCR6L-phclX_hxdSbUpJtY0XF8-Z9-cdAAyX64yemy5uMja0OY4hoBN_fHhtY"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-10-30/rare-speedboat-attack-in-hormuz-ignites-tanker-s-engine-room",
-          "title": "Rare Speedboat Attack in Hormuz Ignites Tanker’s Engine Room",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSgZrI-fFx3XZX74tYOekc85KG1gX477xDR8OEw_Sx1ya1VqxCxs5zvl1XNUI"
-        },
-        {
-          "url": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/",
-          "title": "Tankers strike mines in Strait of Hormuz, Iran says, as Hegseth fires top general",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjYqIuNisZ_AWGxsY9Zb1X5j3OJQaRaMPvaairaNb1Hj3MfwtlJD8E6vb-lXw"
-        }
-      ]
-    },
-    {
-      "query": "kelli evans",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T02:50:00Z",
-      "related_news_urls": [
-        "https://calmatters.org/justice/2026/10/porac-judicial-election/",
-        "https://hsjchronicle.com/police-union-launches-campaign-challenging-california-supreme-court-justice/",
-        "https://www.edhat.com/california/news/california-police-union-targets-justice-kelli-evans-retention/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGqmTgKu8ashzdl38IXYNw3wYpltMgsr2i4jMu3dh4aO0yblAZpop8GDFHMOM",
-      "image_credit": "CalMatters",
-      "news": [
-        {
-          "url": "https://calmatters.org/justice/2026/10/porac-judicial-election/",
-          "title": "California police union takes on a Supreme Court justice in new campaign",
-          "publisher": "CalMatters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGqmTgKu8ashzdl38IXYNw3wYpltMgsr2i4jMu3dh4aO0yblAZpop8GDFHMOM"
-        },
-        {
-          "url": "https://hsjchronicle.com/police-union-launches-campaign-challenging-california-supreme-court-justice/",
-          "title": "Police Union Launches Campaign Challenging California Supreme Court Justice",
-          "publisher": "The Hemet & San Jacinto Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAQHOf1cEvgHlDAvinE1DiUGGZEQZqUJAb-hmpQuds4bILhLwZ1dl_L8Ck8i4"
-        },
-        {
-          "url": "https://www.edhat.com/california/news/california-police-union-targets-justice-kelli-evans-retention/",
-          "title": "California police union takes on a Supreme Court justice in new campaign",
-          "publisher": "edhat",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqcs5hUJFDUtFeAYDdMkkCqDVroT99YmvZByUgGoe7nnJ8ihKkKXT1TvgLzLQ"
         }
       ]
     }
