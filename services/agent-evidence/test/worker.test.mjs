@@ -65,3 +65,33 @@ test('collector labels upstream releases unreviewed', async () => {
   assert.equal(added.length,3);
   assert.ok(added.every(c=>c.sql.includes("'unreviewed'")));
 });
+
+test('collector falls back to official Atom when GitHub API returns 403', async () => {
+  const fake=db();
+  const previous=globalThis.fetch;
+  const calls=[];
+  globalThis.fetch=async url => {
+    calls.push(String(url));
+    if (String(url).startsWith('https://api.github.com/')) return {ok:false,status:403};
+    return {ok:true,text:async()=>'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>v1 &amp; fixes</title><link rel="alternate" type="text/html" href="https://github.com/All-Hands-AI/OpenHands/releases/tag/v1"/><published>2026-11-02T00:00:00Z</published></entry></feed>'};
+  };
+  try { await worker.scheduled({}, {EVIDENCE_DB:fake}, {}); }
+  finally { globalThis.fetch=previous; }
+  assert.equal(calls.filter(url=>url.endsWith('/releases.atom')).length,3);
+  const added=fake.calls.filter(c=>c.sql.includes('INSERT OR IGNORE INTO evidence'));
+  assert.equal(added.length,1);
+  assert.match(added[0].args[2],/v1 & fixes/);
+  assert.ok(added[0].sql.includes("'unreviewed'"));
+});
+
+test('collector records both-source failure without inventing imported releases', async () => {
+  const fake=db();
+  const previous=globalThis.fetch;
+  globalThis.fetch=async url=>({ok:false,status:String(url).includes('api.github.com')?403:429});
+  try { await worker.scheduled({}, {EVIDENCE_DB:fake}, {}); }
+  finally { globalThis.fetch=previous; }
+  assert.equal(fake.calls.filter(c=>c.sql.includes('INSERT OR IGNORE INTO evidence')).length,0);
+  const failures=fake.calls.filter(c=>c.sql.includes("'failure'"));
+  assert.equal(failures.length,3);
+  assert.ok(failures.every(c=>c.args[1]==='github_api_403_atom_429'));
+});
