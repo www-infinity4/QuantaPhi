@@ -2388,6 +2388,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');drainVoiceTurns();
   return;
  }
+ // Cloudflare network probes use the actual Android-to-Termux callback; they
+ // never replace the assistant's HTTPS chat gateway or authorize Cloudflare APIs.
+ if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\s+)?(?:check|test|verify)\s+(?:the\s+)?(?:cloudflare(?:\s+(?:network|connection))?\s+(?:in|with|using|via)\s+termux|termux\s+cloudflare)[.!?]*$/i.test(spoken)){
+  display(spoken,'you');clearSentComposer();
+  messages.push({role:'user',text:spoken});
+  nativeTermuxProbeRequests.push({action:'cloudflare'});
+  const answer='Cloudflare network check requested from Termux. Approve the Android prompt; no result or speed improvement has been confirmed yet.';
+  display(answer,'ai');messages.push({role:'assistant',text:answer});persistChat();
+  if(fromVoice)nativeSpeechReply=answer;
+  return;
+ }
  // Keep the existing Bubbles chat. A typed command on Android requests a
  // native confirmation dialog, not a second chat or remote Linux sandbox.
  if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\s+)?(?:(?:test|check|verify)(?:\s+the)?\s+(?:python(?:\s+(?:in|with))?\s+termux|python|termux(?:\s+python)?)|(?:run|start|try)(?:\s+a)?\s+python\s+(?:test|diagnostic)|(?:does\s+python\s+work|is\s+python\s+(?:working|ready))(?:\s+in\s+termux)?)[.!?]*$/i.test(spoken)){
@@ -4230,21 +4241,24 @@ window.QuantaBubbles={
  syncNativeTermuxProbe:(receipt)=>{
   if(!nativeOverlay||!receipt||typeof receipt!=='object'||!receipt.state)return false;
   const state=String(receipt.state);
-  const key=String(receipt.id||0)+'|'+state+'|'+String(receipt.at||0);
+  const mode=receipt.mode==='cloudflare'?'cloudflare':'python';
+  const key=mode+'|'+String(receipt.id||0)+'|'+state+'|'+String(receipt.at||0);
   if(key===lastNativeTermuxReceipt)return true;
   lastNativeTermuxReceipt=key;
   const detail=String(receipt.detail||'').slice(0,1700);
-  const answer='Termux Python test — '+state.replaceAll('_',' ')+'. '+detail;
+  const answer=(mode==='cloudflare'?'Termux Cloudflare network check':'Termux Python test')+' — '+state.replaceAll('_',' ')+'. '+detail;
   display(answer,'ai');messages.push({role:'assistant',text:answer});
   messages=messages.slice(-400);persistChat();
   if(state!=='queued'&&state!=='requested'){
    // Chat retains exit/error receipts, but speech is ordinary English.
    // Never read raw shell diagnostics, tokens or internal numbers aloud.
    const spoken=state==='passed'
-    ? 'Python works in Termux. Its temporary test files were cleaned up.'
+    ? (mode==='cloudflare'?'QuantaPhi and Cloudflare responded from Termux. Account access and build speed were not verified.':'Python works in Termux. Its temporary test files were cleaned up.')
     : state==='setup_required' ? 'Termux needs one-time external command permission before Bubbles can use it.'
     : state==='storage_low' ? 'Your phone needs more free storage before this Python test can run.'
     : state==='python_missing' ? 'Python is not available inside Termux yet.'
+    : state==='curl_missing' ? 'Curl is not installed in Termux. No Cloudflare check ran.'
+    : mode==='cloudflare' ? 'The Cloudflare check was not verified. I saved the actual Termux receipt here.'
     : 'The Termux Python test needs attention. I saved the details in this Bubbles chat.';
    progressVoiceQueue.push(spoken);
    if(progressVoiceQueue.length>5)progressVoiceQueue.shift();
