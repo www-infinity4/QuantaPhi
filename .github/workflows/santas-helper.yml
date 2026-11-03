@@ -1,0 +1,49 @@
+name: Santa's Helper Christmas carousel
+on:
+  pull_request:
+    paths:
+      - 'santas-helper*'
+      - 'assets/santas-helper-*'
+      - 'oracle-card-departments.js'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'test/santas-helper.test.mjs'
+      - 'test/santas-helper.browser.spec.mjs'
+      - '.github/workflows/santas-helper.yml'
+  push:
+    branches:
+      - 'feat/santas-helper-carousel-1333-20261103'
+    paths:
+      - 'santas-helper*'
+      - 'assets/santas-helper-*'
+      - 'oracle-card-departments.js'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'test/santas-helper.test.mjs'
+      - '.github/workflows/santas-helper.yml'
+permissions:
+  contents: read
+jobs:
+  gift-cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and contract checks
+        run: |
+          node --check santas-helper-core.mjs
+          node --check santas-helper.mjs
+          node --check oracle-card-deck.js
+          node --check oracle-card-departments.js
+          node --test test/santas-helper.test.mjs test/oracle-department-routing.test.mjs test/oracle-deck-cycle.test.mjs
+      - name: Test-only browser setup
+        run: |
+          npm install --no-save --package-lock=false @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Android-width Santa cards and privacy UI acceptance
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 &
+          npx playwright test test/santas-helper.browser.spec.mjs --reporter=line --workers=1

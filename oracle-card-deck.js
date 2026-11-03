@@ -163,6 +163,24 @@ const ORIGINAL_COVERS={
  phiProjectActions:['Code Phi · Create Phi','Take an idea into a working project.','/assets/phi-data-analyst.webp'],
  radioClubhouse:['Radio Clubhouse','History, restoration and the next discovery.','/apps/icons/infinity-radio-512.png']
 };
+function registerSantaCards(){
+ // Each Christmas card is its own original, interactive deck entry; never clone it.
+ let added=false;
+ for(const node of document.querySelectorAll('#santasHelperCards [data-santa-card]')){
+  if(!/^santa-(?:welcome|fragrance|fashion|hobbies|keepsakes)$/.test(node.id)||entries.some(e=>e.id===node.id))continue;
+  const title=node.querySelector('h2')?.textContent?.trim()||'Santa’s Helper';
+  entries.push({id:node.id,feedId:node.id,title,category:'Holidays · Santa’s Helper',
+   feature:'Explore thoughtful, user-directed Christmas gift ideas and original store links',
+   study:'Gift inspiration, not live product stock, advertising or AI photo analysis',
+   node,marker:null,count:0});
+  added=true;
+ }
+ if(added){updateTabs();predict();
+  const opening=entries.find(e=>e.id==='santa-welcome');
+  if(selectedDepartment==='santas-helper'&&!expanded&&opening&&eligible().includes(opening))show(opening,false);
+ }
+}
+window.addEventListener('quantaphi:santa-cards-ready',registerSantaCards);
 function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
@@ -222,6 +240,7 @@ function registerLateWidgets(){
   observe.observe(node,{childList:true});added=true;
  }
  registerSourceCards();
+ registerSantaCards();
  if(added){updateTabs();predict();if(!active)start();}
 }
 
@@ -504,6 +523,15 @@ function selectDepartment(value){
 }
 document.body.dataset.oracleDepartment=selectedDepartment;
 departmentPicker?.addEventListener('change',event=>selectDepartment(event.target.value));
+window.addEventListener('quantaphi:santa-open-card',event=>{
+ const id=event.detail?.id;
+ if(!/^santa-(?:welcome|fragrance|fashion|hobbies|keepsakes)$/.test(id||''))return;
+ if(selectedDepartment!=='santas-helper')selectDepartment('santas-helper');
+ const entry=eligible().find(e=>e.id===id);
+ if(entry&&available(entry)&&entry!==active)show(entry);
+ host.scrollIntoView?.({block:'start',behavior:'smooth'});
+});
+
 nationwideRestaurants?.addEventListener('click',()=>{
  if(selectedDepartment!=='restaurants')return;
  document.dispatchEvent(new CustomEvent('oracle:restaurant-nationwide'));
