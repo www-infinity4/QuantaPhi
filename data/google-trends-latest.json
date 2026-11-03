@@ -3,21 +3,265 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T14:01:26.840293Z",
+  "checked_at": "2026-11-03T14:31:40.628816Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "awkwafina",
+      "query": "dalen terry",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T14:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50368707/sources-thunder-agree-2-year-deal-dalen-terry",
+        "https://basketball.realgm.com/wiretap/288020/Dalen-Terry-Thunder-Agree-To-Two-Year-Contract"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw7_EiM9T6iN5irQoUDfbXc26l_moPXWdzJorXynAGM4IUMMcgnqqRsGXXQO0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50368707/sources-thunder-agree-2-year-deal-dalen-terry",
+          "title": "Sources: Injury-plagued Thunder agree to 2-year deal with veteran Dalen Terry",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw7_EiM9T6iN5irQoUDfbXc26l_moPXWdzJorXynAGM4IUMMcgnqqRsGXXQO0"
+        },
+        {
+          "url": "https://basketball.realgm.com/wiretap/288020/Dalen-Terry-Thunder-Agree-To-Two-Year-Contract",
+          "title": "Dalen Terry, Thunder Agree To Two-Year Contract",
+          "publisher": "RealGM",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmevu2l1AOSFLaLkSX2o-hxfEVsgeeUVLDWnGOoH5jjysTnCExVkvVVYPUfhc"
+        }
+      ]
+    },
+    {
+      "query": "trump israel",
       "approx_searches": "500+",
+      "published_at": "2026-11-03T14:00:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/2026/11/3/trump-announces-that-us-will-stop-paying-israel-after-year-end",
+        "https://www.reuters.com/world/middle-east/trump-says-us-will-stop-paying-israel-after-year-end-2026-11-03/",
+        "https://www.jpost.com/international/article-913711"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSihSJYHQAZwaNqRWYvnj9MwlFJTb6mjYK3MbECF4q5gLlrEzs3mjD34Yb4F1o",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/3/trump-announces-that-us-will-stop-paying-israel-after-year-end",
+          "title": "Trump says that US will stop paying Israel aid after year-end",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSihSJYHQAZwaNqRWYvnj9MwlFJTb6mjYK3MbECF4q5gLlrEzs3mjD34Yb4F1o"
+        },
+        {
+          "url": "https://www.reuters.com/world/middle-east/trump-says-us-will-stop-paying-israel-after-year-end-2026-11-03/",
+          "title": "Trump says US will stop $4 billion funding to Israel at end of 2026",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXFAL08v21ELkH1zRm3aK0-B60KEGQAH0k633nsk2nRGLSMFT4KR7oiNO9jf8"
+        },
+        {
+          "url": "https://www.jpost.com/international/article-913711",
+          "title": "Donald Trump: Agreed with Benjamin Netanyahu to stop US funding to Israel at the end of 2026",
+          "publisher": "The Jerusalem Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6pjJZ5QUSs3TiCME_sHqezXZj4eJfhjCnBqV8JtdqcRf1veD-FXzow1_dYtk"
+        }
+      ]
+    },
+    {
+      "query": "peggy flanagan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T14:00:00Z",
+      "related_news_urls": [
+        "https://www.kttc.com/2026/11/01/flanagan-tafoya-name-different-top-voter-issues-minnesota-us-senate-race/",
+        "https://www.startribune.com/minnesota-blue-wave-purple-ripple/601904009",
+        "https://www.twincities.com/2026/10/31/mn-senate-race-flanagan-tafoya-election/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2oYgGj6XMhPMTI9LEHXSbCwpWH0E5ZXZQABHZAFtZad_hzPc0fZYbQB791PA",
+      "image_credit": "KTTC | Rochester, MN",
+      "news": [
+        {
+          "url": "https://www.kttc.com/2026/11/01/flanagan-tafoya-name-different-top-voter-issues-minnesota-us-senate-race/",
+          "title": "Flanagan, Tafoya name different top voter issues in Minnesota U.S. Senate race",
+          "publisher": "KTTC | Rochester, MN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2oYgGj6XMhPMTI9LEHXSbCwpWH0E5ZXZQABHZAFtZad_hzPc0fZYbQB791PA"
+        },
+        {
+          "url": "https://www.startribune.com/minnesota-blue-wave-purple-ripple/601904009",
+          "title": "Why the blue wave could turn out to be a purple ripple in Minnesota",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCTHLlEHX9stSumCJ5HS5L5Pre37j-QlrQWWyyqy9p2VBcOpkDZEd8EJ_AKCA"
+        },
+        {
+          "url": "https://www.twincities.com/2026/10/31/mn-senate-race-flanagan-tafoya-election/",
+          "title": "Where does Senate race between Flanagan, Tafoya stand days before election?",
+          "publisher": "Pioneer Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSvxOM3-GMPzFc9t7mXfWO4PRoWxCztRNL1UDKkXjnVC2wEDvjyixyUL_SsfA"
+        }
+      ]
+    },
+    {
+      "query": "novak djokovic",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T13:50:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/vacherot-feature-paris-2026-r1",
+        "https://tenngrand.com/paris-tennis-previews-picks-predictions-djokovic-vs-vacherot-paul-rune/",
+        "https://www.tennisworldusa.org/tennis/news/Novak_Djokovic/171133/decoding-the-djokovic-paradox-pioline-questions-the-serbians-lateseason-logic/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3Rg2mWvJz37hf67BD0NhGXbz13Fr0W4izavNIGfa7MhsCl4uRXAQBgWNe3II",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/vacherot-feature-paris-2026-r1",
+          "title": "Vacherot ahead of Djokovic clash in Paris: 'My season could be over, I'm giving 100%'",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3Rg2mWvJz37hf67BD0NhGXbz13Fr0W4izavNIGfa7MhsCl4uRXAQBgWNe3II"
+        },
+        {
+          "url": "https://tenngrand.com/paris-tennis-previews-picks-predictions-djokovic-vs-vacherot-paul-rune/",
+          "title": "Paris R1 previews and predictions: Djokovic vs. Vacherot, Paul vs. Rune",
+          "publisher": "The Grandstand",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC5yDHjf8EiL6N_xHIakDAithDvrJbs6rKJWTZFoEYVXkxcI3UZ8rwLh6x9v0"
+        },
+        {
+          "url": "https://www.tennisworldusa.org/tennis/news/Novak_Djokovic/171133/decoding-the-djokovic-paradox-pioline-questions-the-serbians-lateseason-logic/",
+          "title": "Decoding the Djokovic paradox: Pioline questions the Serbian’s late-season logic",
+          "publisher": "Tennis World USA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUdELViP-eUrnh_oZZPQ_qVlKlfty6-qk8ua1ydfwgjuxcBzspEX94JSPzoKQ"
+        }
+      ]
+    },
+    {
+      "query": "illinois governor race",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T13:50:00Z",
+      "related_news_urls": [
+        "https://www.chicagotribune.com/2026/11/01/final-campaign-weekend-illinois-democrats-republicans/",
+        "https://www.fox32chicago.com/news/pritzker-urges-illinois-voters-send-message-washington",
+        "https://abc7chicago.com/post/2026-election-news-jb-pritzker-darren-bailey-face-off-day-rematch-illinois-governor/20011489/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqUMAY-6GLmvkEl4Yef-8CF7Fvd6LBWSu84PdW9mO5ZTQ25tDF7lPNiIIj-Dk",
+      "image_credit": "Chicago Tribune",
+      "news": [
+        {
+          "url": "https://www.chicagotribune.com/2026/11/01/final-campaign-weekend-illinois-democrats-republicans/",
+          "title": "On final campaign weekend, Illinois Democrats rally while top Republicans stay quiet",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqUMAY-6GLmvkEl4Yef-8CF7Fvd6LBWSu84PdW9mO5ZTQ25tDF7lPNiIIj-Dk"
+        },
+        {
+          "url": "https://www.fox32chicago.com/news/pritzker-urges-illinois-voters-send-message-washington",
+          "title": "Pritzker urges Illinois voters to send a message to Washington",
+          "publisher": "FOX 32 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR04hd8wUWCd_KUL0QSKbuwUhki-Y618exHJaNZFVrCMVESOJ4viF6psKAkwjI"
+        },
+        {
+          "url": "https://abc7chicago.com/post/2026-election-news-jb-pritzker-darren-bailey-face-off-day-rematch-illinois-governor/20011489/",
+          "title": "2026 election news: JB Pritzker, Darren Bailey face off in Election Day rematch for Illinois governor",
+          "publisher": "ABC7 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQylfVO-kjYl_cGzXdpiTJx3dcmScWH6qi5qzv6YIqbcxFhp5TaBUMDzAYufrg"
+        }
+      ]
+    },
+    {
+      "query": "exit polls",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T13:50:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/03/politics/exit-polls-voter-poll",
+        "https://www.nbcnews.com/politics/2026-elections/exit-polls",
+        "https://apnews.com/article/2026-election-exit-poll-election-poll-voter-poll-voting-midterms-elections-d48c530693af9eecac859fe30ef19d02"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfSMj76TxWlPVTaR8N7b9wIn_UXs-22aoW5zYKQDrvoJSNbzSMzM0ZSJ4odd4",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/03/politics/exit-polls-voter-poll",
+          "title": "Exit polls have become the CNN Voter Poll. Here’s what that means",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfSMj76TxWlPVTaR8N7b9wIn_UXs-22aoW5zYKQDrvoJSNbzSMzM0ZSJ4odd4"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/exit-polls",
+          "title": "National Exit Polls: Election 2026 Results",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ652P67krRkUZNoX1gpuJYy4E90fLX7ApLDD7BP1HnkGj-k7dZupJa2cSHz4Q"
+        },
+        {
+          "url": "https://apnews.com/article/2026-election-exit-poll-election-poll-voter-poll-voting-midterms-elections-d48c530693af9eecac859fe30ef19d02",
+          "title": "What to know about The AP Voter Poll",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6teMJWwfR1tyn7q9czK43-h1ZD2IyxK_rVq6VIVBFKrXOk6giB3J39_BjnA4"
+        }
+      ]
+    },
+    {
+      "query": "pete buttigieg",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T13:50:00Z",
+      "related_news_urls": [
+        "https://time.com/article/2026/11/02/how-pete-buttigieg-and-rafael-warnock-became-democrats-midterm-mvps/",
+        "https://www.9and10news.com/video/2026/11/02/barr-and-buttigieg-rally-in-traverse-city-ahead-of-election-day/",
+        "https://www.wcmu.org/local-regional-news/2026-10-30/democrats-say-mis-first-congressional-district-is-in-play-gop-isnt-buying-it"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQs4USagr5yEHUj9NAeXXG5mYTiQMa6FQCSBC54lblTKfekMi0lxit1U4YVp4",
+      "image_credit": "Time Magazine",
+      "news": [
+        {
+          "url": "https://time.com/article/2026/11/02/how-pete-buttigieg-and-rafael-warnock-became-democrats-midterm-mvps/",
+          "title": "2 of the Most Effective Democrats of the Midterms Aren't on the Ballot, Campaign Operatives Say",
+          "publisher": "Time Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQs4USagr5yEHUj9NAeXXG5mYTiQMa6FQCSBC54lblTKfekMi0lxit1U4YVp4"
+        },
+        {
+          "url": "https://www.9and10news.com/video/2026/11/02/barr-and-buttigieg-rally-in-traverse-city-ahead-of-election-day/",
+          "title": "Barr and Buttigieg rally in Traverse City ahead of Election Day",
+          "publisher": "9and10News.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Ml-bE2vKCIVMU5P46zOz5CbmEw7i2be9Wzju-JDIuSAJMVavk1foyPiXqYE"
+        },
+        {
+          "url": "https://www.wcmu.org/local-regional-news/2026-10-30/democrats-say-mis-first-congressional-district-is-in-play-gop-isnt-buying-it",
+          "title": "Democrats say MI’s First Congressional District is ‘in play.’ GOP isn't buying it",
+          "publisher": "WCMU Public Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpkkzMaZvZyUkJv81I4WxIQB1ODgl8DOlJZwsWsxvCWJk3spM7MctVaqu9t40"
+        }
+      ]
+    },
+    {
+      "query": "awkwafina",
+      "approx_searches": "1000+",
       "published_at": "2026-11-03T13:40:00Z",
       "related_news_urls": [
+        "https://www.today.com/video/awkwafina-on-reopening-family-restaurant-lum-s-272756293522",
         "https://www.theguardian.com/tv-and-radio/2026/oct/30/i-felt-bad-for-my-exes-awkwafina-on-making-deeply-personal-tv-with-her-grandma",
-        "https://www.sfchronicle.com/entertainment/movies-tv/article/awkwafina-house-of-nanking-22501593.php",
-        "https://charactermedia.com/awkwafina-cant-cook-her-grandma-will-be-the-judge/"
+        "https://www.sfchronicle.com/entertainment/movies-tv/article/awkwafina-house-of-nanking-22501593.php"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMq0n3AEaU2IPzctSSBVvzlYmCSeMBiiAk98TQhP43xizPf-LvXrjSyh1L1Hk",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwwIbvVCd_M9Joe1cSC4-2UtXctTG-9zvSv_oGrvdeHXwj-pdYizyc4d7hKJo",
+      "image_credit": "TODAY.com",
       "news": [
+        {
+          "url": "https://www.today.com/video/awkwafina-on-reopening-family-restaurant-lum-s-272756293522",
+          "title": "Awkwafina Talks 'The Unlikely Cook,' Reviving Family Restaurant",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwwIbvVCd_M9Joe1cSC4-2UtXctTG-9zvSv_oGrvdeHXwj-pdYizyc4d7hKJo"
+        },
         {
           "url": "https://www.theguardian.com/tv-and-radio/2026/oct/30/i-felt-bad-for-my-exes-awkwafina-on-making-deeply-personal-tv-with-her-grandma",
           "title": "‘I felt bad for my exes’: Awkwafina on making deeply personal TV – with her grandma",
@@ -31,13 +275,6 @@
           "publisher": "San Francisco Chronicle",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDaYRRa4A-cE7UqNSYfM3ynzkkKER1GHrva1b4mtvy1Adf01Y6Z7pzrmEHl2o"
-        },
-        {
-          "url": "https://charactermedia.com/awkwafina-cant-cook-her-grandma-will-be-the-judge/",
-          "title": "Awkwafina Can’t Cook. Her Grandma Will Be the Judge.",
-          "publisher": "Character Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_-Be-1mHSQkRR50pCafUf5wm6ffdTnh4BI_zzVcEon9ZuibEJb5nw2SAF4gI"
         }
       ]
     },
@@ -108,251 +345,6 @@
           "publisher": "Yahoo Finance",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSB_VdCMwzA5nH6Erdv6TgdAVyga0BzKmX2Qwbui5D9JnwYN_EwLlP4IDCuTJM"
-        }
-      ]
-    },
-    {
-      "query": "amy klobuchar",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:30:00Z",
-      "related_news_urls": [
-        "https://www.mprnews.org/story/2026/11/03/minnesota-voters-set-to-hire-their-next-governor-and-make-a-little-history",
-        "https://www.cbsnews.com/minnesota/news/who-is-running-for-governor-in-minnesota/",
-        "https://www.yahoo.com/news/videos/mn-race-watch-next-governor-130416294.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnshl7inVtRuNIJtD4kFTZPU97MdlaNH6MgIoxfsVdMVf2n7ihrGhg4AXI14",
-      "image_credit": "MPR News",
-      "news": [
-        {
-          "url": "https://www.mprnews.org/story/2026/11/03/minnesota-voters-set-to-hire-their-next-governor-and-make-a-little-history",
-          "title": "Minnesota voters set to hire their next governor — and make a little history",
-          "publisher": "MPR News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnshl7inVtRuNIJtD4kFTZPU97MdlaNH6MgIoxfsVdMVf2n7ihrGhg4AXI14"
-        },
-        {
-          "url": "https://www.cbsnews.com/minnesota/news/who-is-running-for-governor-in-minnesota/",
-          "title": "Who is running for governor in Minnesota? Meet the candidates Amy Klobuchar, Lisa Demuth and Steven Young",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQIYoojhMhkGki_cHfPPXkltwSnbGYL2Mb8GGwSnFs8eVyTRaKeikgOEy7v0M"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/mn-race-watch-next-governor-130416294.html",
-          "title": "MN Race to Watch: Who will be the next Governor?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP498KtxOaRHEFfBE42O0gBKPxRL937m8udQ_niV-GZ5CcU9INCJH-NsHuYlA"
-        }
-      ]
-    },
-    {
-      "query": "north royalton fire",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:30:00Z",
-      "related_news_urls": [
-        "https://www.wkyc.com/article/news/local/cuyahoga-county/2-broadview-heights-firefighters-hospitalized-blaze-west-royalton-road/95-534d8666-53c2-48e0-9e20-89d104988b86",
-        "https://fox8.com/news/i-team/i-team-local-firefighter-dies-battling-house-fire/",
-        "https://www.cleveland19.com/2026/11/03/several-northeast-ohio-fire-departments-battle-blaze-broadview-heights/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmK9sC42Yto36ATvnDF6mEIgRcuglCStjypBJwEk_CM4Lcq05pIzgxytemQis",
-      "image_credit": "WKYC",
-      "news": [
-        {
-          "url": "https://www.wkyc.com/article/news/local/cuyahoga-county/2-broadview-heights-firefighters-hospitalized-blaze-west-royalton-road/95-534d8666-53c2-48e0-9e20-89d104988b86",
-          "title": "2 firefighters hospitalized after battling blaze in Broadview Heights",
-          "publisher": "WKYC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmK9sC42Yto36ATvnDF6mEIgRcuglCStjypBJwEk_CM4Lcq05pIzgxytemQis"
-        },
-        {
-          "url": "https://fox8.com/news/i-team/i-team-local-firefighter-dies-battling-house-fire/",
-          "title": "I-Team: Local firefighter dies battling house fire",
-          "publisher": "FOX 8 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCoMuL3RKqmBPB0S8yTtWggY1oXq8x02Do7unuMZ6gATojIBz8IW7YnHnnPo4"
-        },
-        {
-          "url": "https://www.cleveland19.com/2026/11/03/several-northeast-ohio-fire-departments-battle-blaze-broadview-heights/",
-          "title": "Broadview Heights road remains closed after Monday house fire",
-          "publisher": "Cleveland 19 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQg6lp-Xu9lRD1E2qrH8l_cPF8w1GugNWAUqOnB9UyDz4Mg6Rzar2SJqETE7w4"
-        }
-      ]
-    },
-    {
-      "query": "david crowley",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:30:00Z",
-      "related_news_urls": [
-        "https://www.fox6now.com/news/wisconsin-governor-crowley-tiffany-102626",
-        "https://www.jsonline.com/story/news/politics/elections/2026/11/01/crowley-tiffany-crisscross-wisconsin-in-final-pitches-to-voters/92541756007/",
-        "https://www.wkow.com/news/tiffany-makes-campaign-stop-in-cottage-grove-ahead-of-election-day/article_4695ba19-3cec-4601-b8cd-3bac256f8a69.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0EEhedQCn6u2wxGlpe8GowdUs7BwCsMqC4-RuGWnePa1IUz-032omneDhNvE",
-      "image_credit": "FOX6 News Milwaukee",
-      "news": [
-        {
-          "url": "https://www.fox6now.com/news/wisconsin-governor-crowley-tiffany-102626",
-          "title": "Who's running for Wisconsin governor? Where Crowley, Tiffany stand on key issues",
-          "publisher": "FOX6 News Milwaukee",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0EEhedQCn6u2wxGlpe8GowdUs7BwCsMqC4-RuGWnePa1IUz-032omneDhNvE"
-        },
-        {
-          "url": "https://www.jsonline.com/story/news/politics/elections/2026/11/01/crowley-tiffany-crisscross-wisconsin-in-final-pitches-to-voters/92541756007/",
-          "title": "Crowley, Tiffany crisscross Wisconsin in final pitches to voters",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZgLt6AMqL3sG55DDKqa2kfvvzIO9lFBriacCqT864f0e8fXbq7oTjLc-G0kI"
-        },
-        {
-          "url": "https://www.wkow.com/news/tiffany-makes-campaign-stop-in-cottage-grove-ahead-of-election-day/article_4695ba19-3cec-4601-b8cd-3bac256f8a69.html",
-          "title": "Tiffany makes campaign stop in Cottage Grove ahead of Election Day",
-          "publisher": "WKOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfrP-5IlZWlzWVkROmJtw41hAk3FWsBzu5lOLuRiG-BeNkW9zi6x_KM4ZGR9I"
-        }
-      ]
-    },
-    {
-      "query": "gerrymandering",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/opinion/when-does-a-dirty-trick-become-a-crime-10e0b585",
-        "https://www.foxnews.com/video/6407841255112",
-        "https://www.yahoo.com/news/politics/articles/comer-says-big-possibility-peltola-182824477.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmt7XzYDpTKQTjIhDRgDmubvQVLj544_au_BrvlVUWqPrTLMvDAoc9mNDFGKk",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/opinion/when-does-a-dirty-trick-become-a-crime-10e0b585",
-          "title": "Opinion | When Does a Dirty Trick Become a Crime?",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmt7XzYDpTKQTjIhDRgDmubvQVLj544_au_BrvlVUWqPrTLMvDAoc9mNDFGKk"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6407841255112",
-          "title": "FBI agents reportedly visit donors of Alaska's 'decoy Dan'",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1JeowIEzgBHEEAUTeLoU0sjyWftbX_WJkETsOxDbu2BF1xA6VoY6cPEDMjzs"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/comer-says-big-possibility-peltola-182824477.html",
-          "title": "Comer says there’s a ‘big possibility’ Peltola won’t be seated if she wins",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpM5zgEVrOnpj3F22as9o7EZ2p2kF6dgOOhVGyRDMTSahpSfAEaOe02Pao9R8"
-        }
-      ]
-    },
-    {
-      "query": "mike lawler",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:30:00Z",
-      "related_news_urls": [
-        "https://news.bloomberglaw.com/daily-labor-report/canvassers-sue-mike-lawler-for-unpaid-wages-discrimination",
-        "https://www.thedailybeast.com/trump-backed-maga-rep-mike-lawler-hit-by-sweat-shop-racism-claims",
-        "https://www.rawstory.com/mike-lawler-2678193358/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfh7pB9Eoo9eXgqPyeK1KVqBCZZFksZR2cWsASvm4Jgr2BSP4wj2Ht86h5AvY",
-      "image_credit": "Bloomberg Law News",
-      "news": [
-        {
-          "url": "https://news.bloomberglaw.com/daily-labor-report/canvassers-sue-mike-lawler-for-unpaid-wages-discrimination",
-          "title": "Canvassers Sue Mike Lawler for Unpaid Wages, Discrimination",
-          "publisher": "Bloomberg Law News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfh7pB9Eoo9eXgqPyeK1KVqBCZZFksZR2cWsASvm4Jgr2BSP4wj2Ht86h5AvY"
-        },
-        {
-          "url": "https://www.thedailybeast.com/trump-backed-maga-rep-mike-lawler-hit-by-sweat-shop-racism-claims",
-          "title": "Trump-Backed MAGA Rep Mike Lawler Hit by ‘Sweat Shop’ Racism Claims",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6cNg37Eig2jShhEoytQocne_pMPZ8whr90C-v2vIW4iOBZ8lSUKTIcJ0UYCY"
-        },
-        {
-          "url": "https://www.rawstory.com/mike-lawler-2678193358/",
-          "title": "MAGA lawmaker yanked Bloomberg's access after it reported on campaign scandal: report",
-          "publisher": "Raw Story",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSusyCuKtgnZnd2xl6_I2Wa4JEHu4WGzorevRk4OjlVxNdBA349SwdtrCt6J4o"
-        }
-      ]
-    },
-    {
-      "query": "msc poesia cruise ship",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T13:20:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
-        "https://www.local10.com/news/local/2026/11/03/coast-guard-detains-msc-poesia-at-portmiami-during-expanded-inspection-authorities-say/",
-        "https://cruiseindustrynews.com/cruise-news/2026/11/msc-poesia-kicks-off-winter-season-in-miami/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
-          "title": "Coast Guard detains cruise ship in Miami, officials say",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE"
-        },
-        {
-          "url": "https://www.local10.com/news/local/2026/11/03/coast-guard-detains-msc-poesia-at-portmiami-during-expanded-inspection-authorities-say/",
-          "title": "Coast Guard detains MSC Poesia at PortMiami during expanded inspection, authorities say",
-          "publisher": "WPLG Local 10",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQK6keURceznjYnaFPf29G2VRH7UzUwnz8ZxGCNSQzLb6ilSVwxnB68OXTpR0"
-        },
-        {
-          "url": "https://cruiseindustrynews.com/cruise-news/2026/11/msc-poesia-kicks-off-winter-season-in-miami/",
-          "title": "MSC Poesia Kicks Off Winter Season in Miami",
-          "publisher": "Cruise Industry News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4mmYzSaDftYST-V9qD0_BQMEOpA5jb0RZBmrDfS-S-9cOitolJrPikUw4jg"
-        }
-      ]
-    },
-    {
-      "query": "brandon nakashima",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:20:00Z",
-      "related_news_urls": [
-        "https://sportsbook.fanduel.com/tennis/atp-paris-2026/tommy-paul-v-holger-rune-36260856",
-        "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-paul-rune/",
-        "https://www.dimers.com/tennis/news/tommy-paul-vs-holger-rune-tennis-prediction-atp-paris-masters-2026-ac"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA",
-      "image_credit": "FanDuel Sportsbook",
-      "news": [
-        {
-          "url": "https://sportsbook.fanduel.com/tennis/atp-paris-2026/tommy-paul-v-holger-rune-36260856",
-          "title": "Tommy Paul v Holger Rune Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
-        },
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-paul-rune/",
-          "title": "ATP Paris Day 2 Predictions Including Tommy Paul vs Holger Rune",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVAWHmu9IYU0RT2JKMmQEhyrundAvXOG-khuSjpRoiG72fEtBAeoKf7pgHzJk"
-        },
-        {
-          "url": "https://www.dimers.com/tennis/news/tommy-paul-vs-holger-rune-tennis-prediction-atp-paris-masters-2026-ac",
-          "title": "Tommy Paul vs. Holger Rune prediction, odds, picks for ATP Paris Masters 2026",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT60Uj7sCak8gGeJ_zNOSbuCWL6W1z_g0iwt4OI-X_ozZziS0BbjrlJ3dy93Kw"
         }
       ]
     }
