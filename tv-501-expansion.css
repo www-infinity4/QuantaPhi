@@ -1,21 +1,22 @@
+#tvQuantExpansion{margin:16px 0;padding:14px;border:1px solid #d9c8e8;border-radius:22px;background:#f7f3fb;color:#332347;box-shadow:0 8px 28px #6b339e17}
 /* Expanded Infinity TV source handoffs and privacy-first movie recommendation */
-#phiChannelCards .channelphi-source .channelphi-monogram{background:linear-gradient(145deg,#204b62,#152737);font-size:12px;letter-spacing:.02em}
-#phiChannelCards .channelphi-cnn .channelphi-monogram{background:#ae1e2d}
-#phiChannelCards .channelphi-cnbc .channelphi-monogram{background:#286478}
-#phiChannelCards .channelphi-nasa-plus .channelphi-monogram{background:#14365c}
-#phiChannelCards .channelphi-source-screen{background:radial-gradient(circle at 50% 25%,#304e64,#0b1523 80%);text-decoration:none}
-#phiChannelCards .channelphi-source .channelphi-art{width:40%;height:55%;left:30%;top:12%;inset:auto;object-fit:contain;opacity:1}
-#phiChannelCards .channelphi-source .channelphi-screen-label{justify-content:flex-end;padding:10px;background:linear-gradient(transparent 35%,#040b17e8)}
-#phiChannelCards .channelphi-source .channelphi-play-icon{width:39px;height:39px;font-size:24px}
-#phiChannelCards .channelphi-source .channelphi-screen-label strong{font-size:14px}
-#phiChannelCards .channelphi-provider-note{font-size:12px;color:#435768;line-height:1.55}
-#phiChannelCards .channelphi-quant-movies{border-color:#a5b7d1;background:#fcfcff}
-#phiChannelCards .channelphi-quant-movies .channelphi-monogram{background:#123e61}
-#phiChannelCards .channelphi-quant-movies .channelphi-art{object-fit:cover}
-#phiChannelCards .channelphi-quant-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-#phiChannelCards .channelphi-quant-controls button{box-sizing:border-box;min-height:46px;padding:9px 8px;border-radius:10px;border:1px solid #849bb5;background:#eef3f8;color:#253c52;font-size:13px;font-weight:800;touch-action:manipulation}
-#phiChannelCards .channelphi-quant-controls button[aria-pressed="true"]{background:#d9eee0;border-color:#77b28b}
-#phiChannelCards .channelphi-quant-status{font-size:13px;color:#364c5f;line-height:1.5}
-#phiChannelCards .channelphi-movie-official{font-size:13px;font-weight:800;color:#185479}
-#phiChannelCards .channelphi-quant-movies .channelphi-now{color:#1a3650;font-size:16px}
-@media(max-width:430px){#phiChannelCards .channelphi-quant-controls button{font-size:13px;padding:8px 5px}}
+#tvQuantExpansion .channelphi-source .channelphi-monogram{background:linear-gradient(145deg,#204b62,#152737);font-size:12px;letter-spacing:.02em}
+#tvQuantExpansion .channelphi-cnn .channelphi-monogram{background:#ae1e2d}
+#tvQuantExpansion .channelphi-cnbc .channelphi-monogram{background:#286478}
+#tvQuantExpansion .channelphi-nasa-plus .channelphi-monogram{background:#14365c}
+#tvQuantExpansion .channelphi-source-screen{background:radial-gradient(circle at 50% 25%,#304e64,#0b1523 80%);text-decoration:none}
+#tvQuantExpansion .channelphi-source .channelphi-art{width:40%;height:55%;left:30%;top:12%;inset:auto;object-fit:contain;opacity:1}
+#tvQuantExpansion .channelphi-source .channelphi-screen-label{justify-content:flex-end;padding:10px;background:linear-gradient(transparent 35%,#040b17e8)}
+#tvQuantExpansion .channelphi-source .channelphi-play-icon{width:39px;height:39px;font-size:24px}
+#tvQuantExpansion .channelphi-source .channelphi-screen-label strong{font-size:14px}
+#tvQuantExpansion .channelphi-provider-note{font-size:12px;color:#435768;line-height:1.55}
+#tvQuantExpansion .channelphi-quant-movies{border-color:#a5b7d1;background:#fcfcff}
+#tvQuantExpansion .channelphi-quant-movies .channelphi-monogram{background:#123e61}
+#tvQuantExpansion .channelphi-quant-movies .channelphi-art{object-fit:cover}
+#tvQuantExpansion .channelphi-quant-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#tvQuantExpansion .channelphi-quant-controls button{box-sizing:border-box;min-height:46px;padding:9px 8px;border-radius:10px;border:1px solid #849bb5;background:#eef3f8;color:#253c52;font-size:13px;font-weight:800;touch-action:manipulation}
+#tvQuantExpansion .channelphi-quant-controls button[aria-pressed="true"]{background:#d9eee0;border-color:#77b28b}
+#tvQuantExpansion .channelphi-quant-status{font-size:13px;color:#364c5f;line-height:1.5}
+#tvQuantExpansion .channelphi-movie-official{font-size:13px;font-weight:800;color:#185479}
+#tvQuantExpansion .channelphi-quant-movies .channelphi-now{color:#1a3650;font-size:16px}
+@media(max-width:430px){#tvQuantExpansion .channelphi-quant-controls button{font-size:13px;padding:8px 5px}}
