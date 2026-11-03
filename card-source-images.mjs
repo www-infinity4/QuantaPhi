@@ -53,20 +53,20 @@ export function mountCardSourceImage(art,card,{small=false,discover=fetchSpotlig
   if(shown||!sourceImageUrl(url))return resolve(false);
   const image=make('img','qcx-source-photo');
   image.alt=title?'Source image: '+title:'Image from '+String(card.name||'the original website');
-  image.loading='lazy';image.decoding='async';image.referrerPolicy='no-referrer';image.src=url;
+  image.loading='eager';image.decoding='async';image.referrerPolicy='no-referrer';
+  image.style.visibility='hidden';art.prepend(image);
+  const fail=()=>{image.remove();resolve(false)};
   const ready=()=>{
-   if(shown||!art.isConnected&&typeof document!=='undefined'&&document.readyState==='complete'){} // detached card is still valid
-   if(shown)return resolve(false);
-   shown=true;art.classList.add('qcx-has-source-photo');
+   if(shown)return fail();
+   shown=true;image.style.visibility='';art.classList.add('qcx-has-source-photo');
    const credit=make('a','qcx-photo-credit');
    const dest=publicWebsiteUrl(source||card.official||card.url);
-   if(dest){credit.href=dest;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent='Photo source · '+new URL(dest).hostname;art.append(image,credit);}
-   else art.append(image);
+   if(dest){credit.href=dest;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent='Photo source · '+new URL(dest).hostname;art.append(credit)}
    resolve(true);
   };
-  image.addEventListener('load',()=>{if(image.naturalWidth>0)ready();else resolve(false)},{once:true});
-  image.addEventListener('error',()=>resolve(false),{once:true});
-  // Start loading once assigned. Failure leaves the existing website identity intact.
+  image.addEventListener('load',()=>{if(image.naturalWidth>0)ready();else fail()},{once:true});
+  image.addEventListener('error',fail,{once:true});
+  image.src=url;
  });
  const run=async()=>{
   for(const url of candidates){if(await show(url,card.official||card.url))return}
