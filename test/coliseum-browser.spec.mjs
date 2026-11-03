@@ -21,6 +21,7 @@ test('Zeus Coliseum supports private idea creation, a local Joust, branching and
  await page.getByRole('button',{name:'Save local note'}).click();
  await expect(page.locator('#chatLog')).toContainText('Testing a version for radio enthusiasts.');
  await page.reload({waitUntil:'domcontentloaded'});
+ await page.getByRole('button',{name:'Build',exact:true}).click();
  await expect(page.locator('#ideaList .idea-card')).toHaveCount(2);
  await page.getByRole('button',{name:'Find the next arena'}).click();
  await expect(page.locator('#currentRoom')).toHaveText('HERMES 6.6');
