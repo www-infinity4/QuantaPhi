@@ -6,7 +6,7 @@ import {VERIFIED_CARD_COUNT,isSafeCardUrl,safeSportsArticle} from '../verified-b
 const read=x=>readFileSync(new URL('../'+x,import.meta.url),'utf8');
 test('all curated sources have real image URLs and exactly three source-aware interactions',()=>{
  assert.ok(REQUESTED_PUBLIC_CARDS.length>=25);
- assert.equal(VERIFIED_CARD_COUNT,REQUESTED_PUBLIC_CARDS.length);
+ assert.equal(VERIFIED_CARD_COUNT,REQUESTED_PUBLIC_CARDS.filter(c=>!c.id.startsWith('world-series-')).length);
  assert.equal(new Set(REQUESTED_PUBLIC_CARDS.map(x=>x.id)).size,REQUESTED_PUBLIC_CARDS.length);
  for(const item of REQUESTED_PUBLIC_CARDS){
   assert.ok(validBrandSportsCard(item),item.id);
@@ -55,6 +55,7 @@ test('same Oracle viewer, no useless generic search bar, original narration',()=
  assert.match(js,/sourceReady='false'/);
  assert.match(js,/sourceReady='true'/);
  assert.match(js,/sampleAnnouncerFacts/);
+ assert.match(js,/!c.id.startsWith/);
  assert.match(js,/speechSynthesis/);
 });
 

@@ -13,6 +13,11 @@ test('all four QuantaPhi cards display video-only players, not TV websites',()=>
  assert.match(css,/channelphi-video-slot/);
  assert.doesNotThrow(()=>new vm.Script(code));
 });
+test('StarQuest and Omni player posters use current source-backed video artwork, not missing local files',()=>{
+ assert.doesNotMatch(code,/\/TV-Database\/assets\/starquest-share-card\.jpg|\/omni-tv\/preview\.png/);
+ assert.match(code,/catalog\.now\('starquest',new Date\(\)\)\.poster/);
+ assert.match(programs.starquestNow(new Date()).poster,/^https:\/\/i\.ytimg\.com\/vi\/[^/]+\/hqdefault\.jpg$/);
+});
 test('existing TV sources are exact media identifiers and live ShopLC HLS URLs',()=>{
  assert.ok(programs.STARQUEST.length>=6);
  assert.ok(programs.CHILLER.length>=8);

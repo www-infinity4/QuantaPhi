@@ -23,7 +23,8 @@ export function relevantProjectViews(request,storage=globalThis.localStorage,now
 }
 // A card's registered title/aliases are evidence of which project the owner
 // means, not permission to edit it. Prefer the longest named match.
-import {cards} from './bubbles-card-catalog.mjs';
+import {hasResolvedWorkNotice} from './bubbles-task-context.mjs?v=20261102-cardone-closure1';
+import {cards} from './bubbles-card-catalog.mjs?v=20261102-cardonay1';
 const normalized=s=>' '+String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim()+' ';
 export function namedCardFor(request){
  const q=normalized(request);
@@ -38,12 +39,13 @@ export function namedCardFor(request){
 export function sourceQueryFor(request,history=[]){
  const q=String(request||'').trim();
  if(discoveryTerms(q).length||!/\b(?:it|that|this|card|one|thing)\b/i.test(q))return q;
- for(const row of (Array.isArray(history)?history:[]).slice(-8).reverse()){
-  if(row?.role!=='user'||typeof row.text!=='string')continue;
-  const card=namedCardFor(row.text);
-  if(card)return q+' '+card.title;
- }
- return q;
+ // Only the latest owner's utterance is relevant. An older card name
+ // must not be revived after the owner corrected or closed that repair.
+ const last=(Array.isArray(history)?[...history].reverse():[]).find(row=>row?.role==='user'&&typeof row.text==='string');
+ if(!last)return q;
+ if(hasResolvedWorkNotice(last.text))return q;
+ const card=namedCardFor(last.text);
+ return card?q+' '+card.title:q;
 }
 // A named card can be a direct engineering target even when the owner does
 // not mention GitHub, repository, source, code, or the word "card".

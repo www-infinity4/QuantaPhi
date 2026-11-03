@@ -30,15 +30,43 @@ function reviewMedia(m,sourceHost){
 // ASCII bytes as reversible, collision-free lowercase base32 for DOM/feed IDs.
 // The resulting directory-store- ID is <=70 chars, matching feed persistence.
 const BASE32='abcdefghijklmnopqrstuvwxyz234567';
-export function directoryCardId(raw){
- if(typeof raw!=='string'||!/^[A-Za-z0-9][A-Za-z0-9:._-]{2,31}$/.test(raw))return null;
+function base32Bytes(bytes){
  let bits=0,value=0,encoded='';
- for(let i=0;i<raw.length;i++){
-  value=(value<<8)|raw.charCodeAt(i);bits+=8;
+ for(const byte of bytes){
+  value=(value<<8)|byte;bits+=8;
   while(bits>=5){bits-=5;encoded+=BASE32[(value>>bits)&31]}
   value&=(1<<bits)-1;
  }
  if(bits)encoded+=BASE32[(value<<(5-bits))&31];
+ return encoded;
+}
+// Official regulator-derived keys can exceed 31 ASCII bytes. Use a compact,
+// deterministic 128-bit non-cryptographic digest for DOM/feed identity only;
+// this is not an authentication token or a license verification.
+// 'z' is outside the first base32 symbol for an ASCII alphanumeric raw ID,
+// so long-key IDs cannot alias the legacy reversible short-key namespace.
+function longKeyDigest(raw){
+ const mask=0xffffffffffffffffn,prime=0x100000001b3n;
+ const fnv=(input,seed)=>{
+  let hash=seed;
+  for(let i=0;i<input.length;i++){
+   hash^=BigInt(input.charCodeAt(i));
+   hash=(hash*prime)&mask;
+  }
+  return hash;
+ };
+ const hashes=[fnv(raw,0xcbf29ce484222325n),fnv([...raw].reverse().join(''),0x84222325cbf29ce4n)];
+ const bytes=[];
+ for(const hash of hashes){
+  for(let shift=56n;shift>=0n;shift-=8n)bytes.push(Number((hash>>shift)&255n));
+ }
+ return 'z'+base32Bytes(bytes);
+}
+export function directoryCardId(raw){
+ if(typeof raw!=='string'||!/^[A-Za-z0-9][A-Za-z0-9:._-]{2,109}$/.test(raw))return null;
+ const encoded=raw.length<=31
+  ?base32Bytes(Array.from(raw,c=>c.charCodeAt(0)))
+  :longKeyDigest(raw);
  return 'directory-store-'+encoded;
 }
 export function directoryCardView(row,acknowledged){

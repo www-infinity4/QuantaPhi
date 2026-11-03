@@ -6,6 +6,10 @@ on:
       - 'index.html'
       - 'sitemap.xml'
       - 'test/newsroom.test.mjs'
+      - 'test/newsroom-freshness.test.mjs'
+      - 'test/newsroom-daily.test.mjs'
+      - 'scripts/newsroom-draft.mjs'
+      - '.github/workflows/newsroom-drafts.yml'
       - '.github/workflows/newsroom.yml'
   push:
     branches: [main, 'feat/newsroom-adsense-readiness-20261101']
@@ -14,6 +18,10 @@ on:
       - 'index.html'
       - 'sitemap.xml'
       - 'test/newsroom.test.mjs'
+      - 'test/newsroom-freshness.test.mjs'
+      - 'test/newsroom-daily.test.mjs'
+      - 'scripts/newsroom-draft.mjs'
+      - '.github/workflows/newsroom-drafts.yml'
       - '.github/workflows/newsroom.yml'
   workflow_dispatch:
 permissions:
@@ -28,6 +36,9 @@ jobs:
         with:
           node-version: '22'
       - name: Syntax
-        run: node --check newsroom/live.mjs
+        run: |
+          node --check newsroom/live.mjs
+          node --check newsroom/fresh-reports.mjs
+          node --check scripts/newsroom-draft.mjs
       - name: Original article, discovery, news freshness and existing privacy tests
-        run: node --test test/newsroom.test.mjs test/privacy-policy.test.mjs test/audience-audit.test.mjs
+        run: node --test test/newsroom-daily.test.mjs test/newsroom-freshness.test.mjs test/newsroom.test.mjs test/privacy-policy.test.mjs test/audience-audit.test.mjs

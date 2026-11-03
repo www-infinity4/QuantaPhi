@@ -8,6 +8,7 @@ import {lookupKind,webSearch,currentWeather,compareWeather} from './search.mjs';
 import {needsReadAgent,runReadAgent,planReadSteps} from './read-agent.mjs';
 import {cardSourcePlanFor} from './card-source.mjs';
 import {readPublicGithubRoot,githubRootSummary} from './github-public-root.mjs';
+import {readPublicCommitFallback} from './public-commit-fallback.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
 const VISION_MODEL='@cf/google/gemma-4-26b-a4b-it';
@@ -497,7 +498,25 @@ export async function readGithubCommit(request,body,receipt,fetcher=fetch){
   return response(request,{ok:true,output,title,repository,commitSha:exact,sourceUrl:commitUrl,files,
    candidateAsset:siteCandidate?'INFINITY':'STARCOIN',rewardStatus:'not_verified_paid',walletCredited:false,
    receipt:{...receipt,tool:'github.read_commit',status:'complete',provider:'github-rest-public',sourceReadVerified:true,repositoryActionsVerified:false,walletCredited:false}});
- }catch(error){return fail(clean(error?.message,110))}
+ }catch(error){
+  if(/^github_http_(?:403|429)$/.test(String(error?.message||''))){
+   try{
+    const found=await readPublicCommitFallback(repository,sha,fetcher);
+    const siteCandidate=found.files.some(x=>x.status==='added'&&/(?:^|\/)index\.html$/i.test(x.path));
+    const commitUrl='https://github.com/'+repository+'/commit/'+found.sha;
+    const output='GitHub verified public patch '+found.sha.slice(0,12)+' in '+repository+': '+found.title+
+     '. Changed files: '+found.files.slice(0,9).map(x=>x.path+' ('+x.status+')').join(', ')+'. '+
+     (siteCandidate?'An Infinity site token needs separate search, published HTML and verified build receipts. ':
+      'A repair StarCoin needs an authenticated Robot Brain job and wallet ledger receipt. ')+
+     'This read did not pay a token. Commit: '+commitUrl;
+    return response(request,{ok:true,output,title:found.title,repository,commitSha:found.sha,sourceUrl:commitUrl,files:found.files,
+     candidateAsset:siteCandidate?'INFINITY':'STARCOIN',rewardStatus:'not_verified_paid',walletCredited:false,
+     receipt:{...receipt,tool:'github.read_commit',status:'complete',provider:'github-public-patch',
+      sourceReadVerified:true,repositoryActionsVerified:false,walletCredited:false}});
+   }catch{return fail('github_public_commit_fallback_unverified')}
+  }
+  return fail(clean(error?.message,110));
+ }
 }
 
 // Safe, bounded reader for public QuantaPhi HTML. This does not load client
