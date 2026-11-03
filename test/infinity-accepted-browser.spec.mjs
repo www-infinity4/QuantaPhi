@@ -107,9 +107,12 @@ test('an image failure tries another observed photo without inserting the old em
  await expect(card.locator('.iac-media img')).toHaveAttribute('src',/\/promotions\//);
  await expect(card.locator('.iac-media')).toBeVisible();await expect(card.getByText('See original website for product photos.')).toHaveCount(0);
 });
-test('exhausted image sources collapse cleanly without hiding product actions',async({page})=>{
+test('exhausted source photos use a truthful identity fallback and preserve product actions',async({page})=>{
  await page.route('**/images/default-source/**',r=>r.abort());
  await page.goto(base+'/infinity-accepted.html?card=durable-starrett',{waitUntil:'domcontentloaded'});
- const card=page.locator('.iac-card');await expect(card.locator('.iac-media')).toBeHidden();
+ const card=page.locator('.iac-card'),media=card.locator('.iac-media');
+ await expect(media).toHaveClass(/iac-logo-only/);
+ await expect(media.locator('.iac-source-icon-note')).toContainText(/Source photograph unavailable|Website image unavailable/);
+ await expect(media.locator('img[src*="default-source"]')).toHaveCount(0);
  await expect(card.getByRole('button',{name:'Thread gages on Starrett'})).toBeVisible();
 });
