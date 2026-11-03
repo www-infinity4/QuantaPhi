@@ -1,3 +1,36 @@
+---
+issue: 1481
+project: "Universal Coupon Wallet and original Pepsi/Mello Yello Quick Cards"
+source_requests:
+  - "2026-11-03 owner request to engineer distinct product coupon cards and Follow-to-Wallet experience"
+state: source_tested
+dot: "🟡"
+progress_percent: 25
+progress_basis: "Source pilot and 7/7 focused unit tests passed; no live issuer offer, account D1 sync, merchant redemption or production mobile acceptance"
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: "ChatGPT · interactive owner-requested source engineering"
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+last_observed_at_utc: "2026-11-03T18:20:00Z"
+repo: "www-infinity4/QuantaPhi"
+branch: "feat/coupon-quick-cards-20261103"
+head_sha: null
+pr: 1621
+tests:
+  - "Coupon card Node tests 7/7 PASS at source head cf5363429e538e328196722fff0a6397bb50de3c"
+  - "JavaScript syntax and empty-default verified feed schema PASS"
+ci:
+  - "https://github.com/www-infinity4/QuantaPhi/actions/runs/41692497694 - SUCCESS on code head cf536342"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Reviewed issuer offer feed, real image usage approval, signed-in D1 sync, merchant authorization, independent browser review and release gates remain outstanding"
+next_action: "Run exact-head coupon and unfinished-ledger CI for PR #1621, then independently verify mobile card controls and original artwork rights before any merge"
+---
+
 # TICKET-1481 · Verified Coupon Wallet and original-source cards
 
 - **Canonical issue:** https://github.com/www-infinity4/QuantaPhi/issues/1481
