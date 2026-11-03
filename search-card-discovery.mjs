@@ -43,6 +43,8 @@ export function discoverWebsiteCard(query,results,existingCards=[]){
  const matches=[];
  for(const result of results.slice(0,20)){
   const url=safeWebsite(result?.url);if(!url)continue;
+  // Require an apex domain for inferred brand identity; ge.com.evil.com is not GE.
+  if(url.hostname.split('.').length!==2)continue;
   const firstLabel=url.hostname.split('.')[0].replace(/-/g,'');
   const title=clean(result?.title);
   // Search title AND exact brand-domain match. A random result or ad is not authority.
