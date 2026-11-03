@@ -86,9 +86,9 @@ function distinctLead(card){
  }
 }
 const sampleAnnouncerFacts=Object.freeze([
- 'Today’s NFL matchup is Green Bay at Detroit. The original FOX broadcast and official game center are one tap away.',
- 'In baseball, Milwaukee won World Series Game 2 by five runs to four on October twenty-fourth. Tampa Bay and Milwaukee meet again for Game 3.',
- 'This is original QuantaPhi commentary from dated public facts, not a live broadcast. Check the official game center for the latest plays.'
+ 'Sports videos and live channels are provided by their original publishers, subject to broadcaster access.',
+ 'Current MLB schedules and verified results can be checked through the generic MLB Match Center.',
+ 'This is original QuantaPhi commentary, not a live broadcast. Visit official sources for highlights and current events.'
 ]);
 export function createVerifiedCard(card){
  if(!validBrandSportsCard(card))throw Error('unverified_card_source');
