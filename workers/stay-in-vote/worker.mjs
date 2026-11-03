@@ -39,7 +39,7 @@ async function anonID(username,pepper){
 }
 async function readPolls(db,now){
  const [published,choices,tallies,editorial]=await Promise.all([
-  db.prepare("SELECT id,kind,title,details,source_url,open_at,closes_at FROM vote_polls WHERE status='open' AND kind='community' AND open_at <= ? AND closes_at > ? ORDER BY open_at DESC LIMIT 12").bind(now,now).all(),
+  db.prepare("SELECT id,kind,title,details,source_url,open_at,closes_at,status FROM vote_polls WHERE status='open' AND kind='community' AND open_at <= ? AND closes_at > ? ORDER BY open_at DESC LIMIT 12").bind(now,now).all(),
   db.prepare('SELECT poll_id,id,label FROM vote_choices ORDER BY position ASC').all(),
   db.prepare('SELECT poll_id,choice_id,COUNT(*) AS n FROM vote_ballots GROUP BY poll_id,choice_id').all(),
   db.prepare('SELECT poll_id,voice,choice_id,summary,evidence_url,reviewed_at FROM vote_editorial WHERE published=1').all()
