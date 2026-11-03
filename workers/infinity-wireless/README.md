@@ -59,6 +59,22 @@ Infinity control. No customer's emergency calling or existing mobile service is 
    equipment, operator agreements, appropriate emergency-service plans
    and physical device testing.
 
+## Public data minimization and retention
+
+Users submit only a city, two-letter state, usage goal and possible backhaul category.
+An unguessable 256-bit tracking key remains in their browser, while D1 stores only
+its SHA-256 digest. Client-side data can be removed by clearing this site's local
+storage. No emails, phone numbers, exact locations, account identities, payments or
+SIM credentials are requested or stored in the planning orders.
+
+Planning orders and event history are retained **30 days** from submission, then
+removed by the D1 daily scheduled cleanup at 07:15 UTC. Daily salted IP
+rate-limit buckets are retained no longer than **two days**. The automatic job
+needs a deployed Worker with `[triggers]` and cron configured; adding it in source
+does not prove the Cloudflare trigger is already deployed. Cloudflare operational
+logs may be governed by separate platform retention settings. Anonymous planning
+requests do not constitute subscriptions or promises of future coverage.
+
 ## Operational policy
 
 Only city and state are collected; no exact GPS, address, phone, email, SIM,
