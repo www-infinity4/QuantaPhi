@@ -3,63 +3,266 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T10:01:18.256300Z",
+  "checked_at": "2026-11-03T10:31:39.958931Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "did anyone win the powerball",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-03T09:30:00Z",
+      "query": "yard signs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T10:10:00Z",
       "related_news_urls": [
-        "https://abc7ny.com/post/powerball-jackpot-soars-803-million-monday-11226-drawing/20008814/",
-        "https://www.forbes.com/sites/siladityaray/2026/11/03/powerball-jackpot-soars-to-835-million-heres-what-the-winner-could-take-home/",
-        "https://nclottery.com/NewsBlogDetails/2026/11/1/Cabarrus-County-ticket-scores-2-million-win-in-Halloween-Powerball-drawing"
+        "https://www.nytimes.com/2026/11/02/nyregion/connecticut-stolen-election-yard-sign-airtag.html",
+        "https://www.nbcconnecticut.com/news/local/state-representative-anne-hughes-arrested-for-theft-of-political-signs/3790833/",
+        "https://www.yahoo.com/news/politics/articles/no-discipline-connecticut-lawmaker-accused-000229209.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5tM1ID9WaEYVrHQur-Hv26DN--BXCRgijBGvkc_dxyIVMELqy7Km32mYwAuk",
-      "image_credit": "ABC7 New York",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHbk-OAJwjUVjXSaFqCM9zF-nFy1VUzhl0Xm21qmOA6kPHCzpo5mj2V4dtow4",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://abc7ny.com/post/powerball-jackpot-soars-803-million-monday-11226-drawing/20008814/",
-          "title": "Powerball winning numbers 11/2/26: $803.9M jackpot up for grabs",
-          "publisher": "ABC7 New York",
+          "url": "https://www.nytimes.com/2026/11/02/nyregion/connecticut-stolen-election-yard-sign-airtag.html",
+          "title": "Who Stole a Candidate’s Yard Signs? An AirTag Ping Offered an Answer.",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5tM1ID9WaEYVrHQur-Hv26DN--BXCRgijBGvkc_dxyIVMELqy7Km32mYwAuk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHbk-OAJwjUVjXSaFqCM9zF-nFy1VUzhl0Xm21qmOA6kPHCzpo5mj2V4dtow4"
         },
         {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/03/powerball-jackpot-soars-to-835-million-heres-what-the-winner-could-take-home/",
-          "title": "Powerball Jackpot Soars To $835 Million—Here’s What The Winner Could Take Home",
-          "publisher": "Forbes",
+          "url": "https://www.nbcconnecticut.com/news/local/state-representative-anne-hughes-arrested-for-theft-of-political-signs/3790833/",
+          "title": "CT State Representative Anne Hughes issued summons for theft of political signs",
+          "publisher": "NBC Connecticut",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAJONcPsmtmyj9ghoOB_pSbuRGCmdjVuQ91KVOGW0aueQ10ldVMVfBVKxFxbw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRnLU_dxams4N8B2X1W_8DX7dS_HG6O2KNOQaz0grJXPFxV2w8BSoFxM-vDQs"
         },
         {
-          "url": "https://nclottery.com/NewsBlogDetails/2026/11/1/Cabarrus-County-ticket-scores-2-million-win-in-Halloween-Powerball-drawing",
-          "title": "Cabarrus County ticket scores $2 million win in Halloween Powerball drawing",
-          "publisher": "NC Education Lottery",
+          "url": "https://www.yahoo.com/news/politics/articles/no-discipline-connecticut-lawmaker-accused-000229209.html",
+          "title": "No discipline for Connecticut lawmaker accused of taking campaign signs, House speaker says",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNlZgtKCP1gw8gmCiHqtdEgU5yvjkq85aGTznyLp5EV89zxeqEWOfs-0bRKJU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyzTwkmxJT5nv9dsZHm5VKrFFgV5Xr-66URjDKs0Ha0QAzMvW6DA38yAfIXM"
         }
       ]
     },
     {
-      "query": "are schools closed on election day",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T09:30:00Z",
+      "query": "ferguson",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T10:10:00Z",
       "related_news_urls": [
-        "https://www.tennessean.com/story/news/politics/elections/2026/11/02/middle-tennessee-nashville-schools-closed-election-day/92571900007/",
-        "https://www.usatoday.com/story/news/politics/2026/11/02/2026-election-day-federal-holiday/92561740007/",
-        "https://thehill.com/homenews/education/6184369-public-schools-closing-midterm-voters-ohio-texas/"
+        "https://people.com/sarah-ferguson-lying-low-remain-contact-ex-prince-andrew-amid-epstein-fallout-exclusive-12207145",
+        "https://www.yahoo.com/entertainment/celebrity/articles/sarah-ferguson-lies-low-uk-061221047.html",
+        "https://www.hola.com/us/royals/20261030932329/sarah-ferguson-returns-uk-daughters-year-hiding-emotional-reason/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUI0Hm1EIHo-oBVVdM2dpz9uZrZZvLn55CjLsrF7r2pAfM81NTuC3pYtuZTQY",
-      "image_credit": "The Tennessean",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlQrxLG7fHRl44RxKwrDk8yKfcG7Jiap1neAhT0ydjkMvT12mULj9K1-EuZoA",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.tennessean.com/story/news/politics/elections/2026/11/02/middle-tennessee-nashville-schools-closed-election-day/92571900007/",
-          "title": "Are Nashville-area schools off on Election Day? What to know",
-          "publisher": "The Tennessean",
+          "url": "https://people.com/sarah-ferguson-lying-low-remain-contact-ex-prince-andrew-amid-epstein-fallout-exclusive-12207145",
+          "title": "Sarah Ferguson Is ‘Lying Low’ in U.K. but Remains in Contact with Ex Andrew amid Epstein Fallout (Exclusive)",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUI0Hm1EIHo-oBVVdM2dpz9uZrZZvLn55CjLsrF7r2pAfM81NTuC3pYtuZTQY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlQrxLG7fHRl44RxKwrDk8yKfcG7Jiap1neAhT0ydjkMvT12mULj9K1-EuZoA"
         },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/sarah-ferguson-lies-low-uk-061221047.html",
+          "title": "Sarah Ferguson ‘Lies Low’ in UK, but Keeps Ex-Prince Andrew in Her Orbit — Report",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHMmgADHjL7jyJ7qS4HrnEx4HngDATU89NnbWRLSbvDYbj6wcqjKUsDpnYlVg"
+        },
+        {
+          "url": "https://www.hola.com/us/royals/20261030932329/sarah-ferguson-returns-uk-daughters-year-hiding-emotional-reason/",
+          "title": "Sarah Ferguson returns to the UK with her daughters after a year in hiding for an emotional reason",
+          "publisher": "HOLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1U-PLdDJrX0hXBBdE_EMU_EjXo5JWd5EB1O3vJXJ02vVuiY9mXFUpvgcavVU"
+        }
+      ]
+    },
+    {
+      "query": "jordan mason",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T10:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/jordan-mason-has-20-yards-in-loss-to-lions",
+        "https://www.fantasypros.com/nfl/news/617069/jordan-mason-bottled-up-week-8-loss.php",
+        "https://www.thefantasyfootballers.com/news/645477/jordan-mason-does-little-with-eight-carries/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc2o6k4CheeqLC1aVNNI-XkdVH41MTV9l_kAjPA14v0RLOyhINlxR3MDA0ySU",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/jordan-mason-has-20-yards-in-loss-to-lions",
+          "title": "Jordan Mason has 20 yards in loss to Lions",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc2o6k4CheeqLC1aVNNI-XkdVH41MTV9l_kAjPA14v0RLOyhINlxR3MDA0ySU"
+        },
+        {
+          "url": "https://www.fantasypros.com/nfl/news/617069/jordan-mason-bottled-up-week-8-loss.php",
+          "title": "Jordan Mason bottled up in Week 8 loss",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dQWSR-8XSdXssbA7tJMbKoDWFnoBhpBAcK1EWkXRgOVl9Og6nkWLa2mhtHI"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/645477/jordan-mason-does-little-with-eight-carries/",
+          "title": "Jordan Mason Does little with eight carries",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT090L0WA22U_9iVnuqkfrkmNAWbuyBCLQa88q7-PjQ4H4nWHG6fggF7XYvK_8"
+        }
+      ]
+    },
+    {
+      "query": "playstation 5",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T10:10:00Z",
+      "related_news_urls": [
+        "https://www.shanethegamer.com/news/sony-offers-up-to-us400-for-unused-ps5s-via-back-market-trade-in-push/",
+        "https://www.pushsquare.com/news/2026/11/sony-wants-you-to-trade-in-your-ps5-for-usd400-if-youre-not-using-it",
+        "https://www.notebookcheck.net/Sony-offers-400-for-used-PS5-consoles-as-GTA-6-buyers-crave-lower-priced-systems.1440435.0.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTokFS7pf3f6lZSYE8R6VoHetqUtfZlOx9mJHNFUZD77P7vUXWfsqxdGWB2s8I",
+      "image_credit": "Shane the Gamer",
+      "news": [
+        {
+          "url": "https://www.shanethegamer.com/news/sony-offers-up-to-us400-for-unused-ps5s-via-back-market-trade-in-push/",
+          "title": "Sony Offers Up to US$400 for Unused PS5s via Back Market Trade-In Push",
+          "publisher": "Shane the Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTokFS7pf3f6lZSYE8R6VoHetqUtfZlOx9mJHNFUZD77P7vUXWfsqxdGWB2s8I"
+        },
+        {
+          "url": "https://www.pushsquare.com/news/2026/11/sony-wants-you-to-trade-in-your-ps5-for-usd400-if-youre-not-using-it",
+          "title": "Sony Wants You to Trade In Your PS5 for $400 if You're Not Using It",
+          "publisher": "Push Square",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnSFdzaVqwlNNtTlp5lECJEt98ZQw4CrxSjGARiZmUXJIJAwKEaZyBn0shJwA"
+        },
+        {
+          "url": "https://www.notebookcheck.net/Sony-offers-400-for-used-PS5-consoles-as-GTA-6-buyers-crave-lower-priced-systems.1440435.0.html",
+          "title": "Sony offers $400 for used PS5 consoles, as GTA 6 buyers crave lower-priced systems",
+          "publisher": "Notebookcheck",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoSY4arEOHt9zXw-piaUL45CP4PeaTivO9TVcxgExM5o33d88YyKuhk6YfKTU"
+        }
+      ]
+    },
+    {
+      "query": "illinois lottery",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T10:00:00Z",
+      "related_news_urls": [
+        "https://www.pjstar.com/story/news/local/2026/11/02/illinois-lottery-results-monday-november-2-2026/92579609007/",
+        "https://www.pjstar.com/story/news/local/2026/10/30/illinois-lottery-results-friday-october-30-2026/92528366007/",
+        "https://www.pjstar.com/story/news/local/2026/11/01/illinois-lottery-results-sunday-november-1-2026/92558918007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0st-0ym5qaMhss_iCqbD63kMDbonumvwkExSHMJKk071y4TsMDE22o1eguUc",
+      "image_credit": "Peoria Journal Star",
+      "news": [
+        {
+          "url": "https://www.pjstar.com/story/news/local/2026/11/02/illinois-lottery-results-monday-november-2-2026/92579609007/",
+          "title": "Illinois Lottery Powerball, Pick 3 results for Nov. 2, 2026",
+          "publisher": "Peoria Journal Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0st-0ym5qaMhss_iCqbD63kMDbonumvwkExSHMJKk071y4TsMDE22o1eguUc"
+        },
+        {
+          "url": "https://www.pjstar.com/story/news/local/2026/10/30/illinois-lottery-results-friday-october-30-2026/92528366007/",
+          "title": "Illinois Lottery Mega Millions, Pick 3 results for Oct. 30, 2026",
+          "publisher": "Peoria Journal Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0st-0ym5qaMhss_iCqbD63kMDbonumvwkExSHMJKk071y4TsMDE22o1eguUc"
+        },
+        {
+          "url": "https://www.pjstar.com/story/news/local/2026/11/01/illinois-lottery-results-sunday-november-1-2026/92558918007/",
+          "title": "Illinois Lottery Pick 3, Pick 4 results for Nov. 1, 2026",
+          "publisher": "Peoria Journal Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0st-0ym5qaMhss_iCqbD63kMDbonumvwkExSHMJKk071y4TsMDE22o1eguUc"
+        }
+      ]
+    },
+    {
+      "query": "jesús de miguel",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T09:50:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17470227/tenerife-murio-jesus-de-miguel-choque-partido",
+        "https://www.clubdeportivotenerife.es/noticias/comunicado-oficial-fallecimiento-de-jesus-de-miguel",
+        "https://as.com/futbol/segunda/jesus-de-miguel-una-carrera-de-perseverancia-con-un-final-injusto-f202611-n/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFMj9FpFqSzFT9fToC1IygcEW1b3IBR9aHgO44CULpq1PZHeA4GMGLl_N5fM4",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17470227/tenerife-murio-jesus-de-miguel-choque-partido",
+          "title": "Muere Jesús de Miguel, jugador de Tenerife, tras choque en partido",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFMj9FpFqSzFT9fToC1IygcEW1b3IBR9aHgO44CULpq1PZHeA4GMGLl_N5fM4"
+        },
+        {
+          "url": "https://www.clubdeportivotenerife.es/noticias/comunicado-oficial-fallecimiento-de-jesus-de-miguel",
+          "title": "Comunicado oficial: fallecimiento de Jesús de Miguel",
+          "publisher": "CD Tenerife",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToT_pq7glDLWJ4qopAVqE8MkNBXW6SoTSiC3fNhBt46townG-zix99HXl9Fiw"
+        },
+        {
+          "url": "https://as.com/futbol/segunda/jesus-de-miguel-una-carrera-de-perseverancia-con-un-final-injusto-f202611-n/",
+          "title": "Jesús de Miguel, una carrera de perseverancia con un final injusto",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPFqqNBe-Jxcwya2zcvIPs1gRuVoedVIpBZeJ6pe3cR5vcl86j2QH1u925uxk"
+        }
+      ]
+    },
+    {
+      "query": "temblor en colombia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T09:50:00Z",
+      "related_news_urls": [
+        "https://www.eltiempo.com/colombia/otras-ciudades/terremoto-de-5-6-sacude-a-colombia-en-la-madrugada-del-3-de-noviembre-conozca-los-detalles-3598022",
+        "https://redmas.com.co/colombia/fuerte-temblor-hoy-en-colombia-duro-sismo-en-bogota-cali-y-otras-ciudades-este-martes-3-de-noviembre-20261103-0001.html",
+        "https://www.elcolombiano.com/colombia/temblor-hoy-en-colombia-con-epicentro-en-tolima-se-sintio-en-medellin-GO43090060"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGMEptu3QICzogbzDrf5XchtNr4PtJEeOmBm8Mrlvp_FbAUPmBybplTqa9DXI",
+      "image_credit": "El Tiempo",
+      "news": [
+        {
+          "url": "https://www.eltiempo.com/colombia/otras-ciudades/terremoto-de-5-6-sacude-a-colombia-en-la-madrugada-del-3-de-noviembre-conozca-los-detalles-3598022",
+          "title": "Temblor de 5,6 sacude a Colombia en la madrugada del martes 3 de noviembre: conozca los detalles",
+          "publisher": "El Tiempo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGMEptu3QICzogbzDrf5XchtNr4PtJEeOmBm8Mrlvp_FbAUPmBybplTqa9DXI"
+        },
+        {
+          "url": "https://redmas.com.co/colombia/fuerte-temblor-hoy-en-colombia-duro-sismo-en-bogota-cali-y-otras-ciudades-este-martes-3-de-noviembre-20261103-0001.html",
+          "title": "Fuerte temblor HOY en Colombia: Duro sismo en Bogotá, Cali, y otras ciudades este martes 3 de noviembre",
+          "publisher": "RED+ Noticias",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6tCJucf5wlnScETf5mj2W_V4VPfks67PG-IjgKTyjkdtl2pgYXN_diXmUwA"
+        },
+        {
+          "url": "https://www.elcolombiano.com/colombia/temblor-hoy-en-colombia-con-epicentro-en-tolima-se-sintio-en-medellin-GO43090060",
+          "title": "Temblor hoy en Colombia con epicentro en Tolima se sintió en Medellín y el Valle de Aburrá | El Colombiano",
+          "publisher": "El Colombiano",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgk5O-grA58Q0nxMjRYPSfBOsUV6a69YiSGQlsGdevqKbQ3uzirwxvn_YEwu0"
+        }
+      ]
+    },
+    {
+      "query": "is there school on election day",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T09:40:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/news/politics/2026/11/02/2026-election-day-federal-holiday/92561740007/",
+        "https://thehill.com/homenews/education/6184369-public-schools-closing-midterm-voters-ohio-texas/",
+        "https://www.al.com/news/2026/11/alabama-schools-election-day-2026-which-districts-are-closed-and-why.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDH1EQD93jx1qdsCDpOJwMwSeomViNwJAzNwF398psqthRi_idfa9qDO9Y01g",
+      "image_credit": "USA Today",
+      "news": [
         {
           "url": "https://www.usatoday.com/story/news/politics/2026/11/02/2026-election-day-federal-holiday/92561740007/",
           "title": "Is Election Day 2026 a federal holiday? What to know",
@@ -73,286 +276,83 @@
           "publisher": "The Hill",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQ968718CDyfd7NlC5i4ovmXQx91g562L17oZfBy0PFRgIxH9WxZhBBmq5SQ"
+        },
+        {
+          "url": "https://www.al.com/news/2026/11/alabama-schools-election-day-2026-which-districts-are-closed-and-why.html",
+          "title": "Alabama schools Election Day 2026: Which districts are closed and why",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPTVKEpcS-W3C4NxYwVf5SnxNkVnb_8H-P17sxOzbgY2wZBzXIPyaShArQ_Bw"
         }
       ]
     },
     {
-      "query": "austin weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T09:20:00Z",
+      "query": "kentucky state police",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T09:40:00Z",
       "related_news_urls": [
-        "https://www.kxan.com/weather/weather-blog/final-november-forecast-released-for-central-texas/",
-        "https://www.fox4news.com/weather/dallas-weather-severe-storms-target-dfw-overnight-ahead-election-day",
-        "https://www.kxan.com/weather/forecast/warm-and-humid-overnight-storms-on-monday-with-front/"
+        "https://lakercountry.com/2026/11/six-area-residents-complete-ksp-academy-begin-service-at-post-15/",
+        "https://www.wkdzradio.com/2026/10/30/five-area-cadets-graduate-academy-join-ksp-post-2/news-edge/",
+        "https://www.wnky.com/kentucky-state-police-post-3-welcomes-new-troopers-from-glasgow-scottsville/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg2oOofGuuB5wtK2xIGJPPGeDrzFg-KkCxVRUSaxkKijGJm1VxRRFhXSXb_TU",
-      "image_credit": "KXAN Austin",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRTwNXQ9Qu7rrg0LCRibilFpTtFAz5qztp8GH1biFilfCRQmsPvPsKGgN6f8I",
+      "image_credit": "Laker Country 104.9 WJRS",
       "news": [
         {
-          "url": "https://www.kxan.com/weather/weather-blog/final-november-forecast-released-for-central-texas/",
-          "title": "Final November Forecast released for Central Texas",
-          "publisher": "KXAN Austin",
+          "url": "https://lakercountry.com/2026/11/six-area-residents-complete-ksp-academy-begin-service-at-post-15/",
+          "title": "Six Area Residents Complete KSP Academy, Begin Service at Post 15",
+          "publisher": "Laker Country 104.9 WJRS",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg2oOofGuuB5wtK2xIGJPPGeDrzFg-KkCxVRUSaxkKijGJm1VxRRFhXSXb_TU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRTwNXQ9Qu7rrg0LCRibilFpTtFAz5qztp8GH1biFilfCRQmsPvPsKGgN6f8I"
         },
         {
-          "url": "https://www.fox4news.com/weather/dallas-weather-severe-storms-target-dfw-overnight-ahead-election-day",
-          "title": "Dallas weather: Storms move across North Texas overnight before 2026 elections",
-          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "url": "https://www.wkdzradio.com/2026/10/30/five-area-cadets-graduate-academy-join-ksp-post-2/news-edge/",
+          "title": "Five Area Cadets Graduate Academy, Join KSP Post 2",
+          "publisher": "WKDZ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROK6pMlZ9rRfXi63WplMuJ9ocMV73QLnyBDZmzyrFKwP-aEHAIMIJckjqQTDs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMVoOu9pVYMPGEa5CKz-zYj77gc1UjhaL46ve6Jtjfu_YVrCfSCUWD_Q9lWk0"
         },
         {
-          "url": "https://www.kxan.com/weather/forecast/warm-and-humid-overnight-storms-on-monday-with-front/",
-          "title": "Warm Monday, front arrives Monday night into Tuesday",
-          "publisher": "KXAN Austin",
+          "url": "https://www.wnky.com/kentucky-state-police-post-3-welcomes-new-troopers-from-glasgow-scottsville/",
+          "title": "Kentucky State Police Post 3 welcomes new troopers from Glasgow, Scottsville",
+          "publisher": "WNKY",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTha5q5HZVIuJKVgp5uxnEX9ii9amjKL_0zrEQzKZG4NKKlb3ggDJ1d-DRldrY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHxsDFWI1fGpwMlqkCLO4WNJIR1xWGUnMiwfCnKsTzaQh1psJ6GpRL0Q7Z0r0"
         }
       ]
     },
     {
-      "query": "kimi",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T09:20:00Z",
+      "query": "nfl power rankings week 9",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T09:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/racing/f1/story/_/id/50353525/formula-1-2026-mexico-city-grand-prix",
-        "https://www.nytimes.com/athletic/7745045/2026/11/01/mexican-grand-prix-briefing/",
-        "https://www.nbcnews.com/sports/formula-1/kimi-antonelli-becomes-youngest-formula-1-champion-ever-20-years-old-rcna606726"
+        "https://www.espn.com/nfl/story/_/id/50288293/nfl-power-rankings-week-8-teams-best-offseason-additions",
+        "https://www.cbssports.com/nfl/news/nfl-week-9-power-rankings-bills-steelers/",
+        "https://www.nfl.com/news/nfl-power-rankings-week-8-2026-nfl-season"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlqB296Lti4dK8QfugxYOxAJVFFqJ4FcEqq3eqjaI6y6I9OlrTBLx0tzznyIU",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6dl4T2yk9rutEldaGWGNyF1rij4q2hlLeOuMrj79aObuE3iHH5hBMDxAK_mw",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/racing/f1/story/_/id/50353525/formula-1-2026-mexico-city-grand-prix",
-          "title": "The families that built Kimi Antonelli, F1 world champion",
+          "url": "https://www.espn.com/nfl/story/_/id/50288293/nfl-power-rankings-week-8-teams-best-offseason-additions",
+          "title": "NFL Power Rankings: How all 32 teams stack up for Week 8, plus offseason adds",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlqB296Lti4dK8QfugxYOxAJVFFqJ4FcEqq3eqjaI6y6I9OlrTBLx0tzznyIU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6dl4T2yk9rutEldaGWGNyF1rij4q2hlLeOuMrj79aObuE3iHH5hBMDxAK_mw"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7745045/2026/11/01/mexican-grand-prix-briefing/",
-          "title": "Mexican Grand Prix briefing: Antonelli seals F1 title with third place, Verstappen wins - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.cbssports.com/nfl/news/nfl-week-9-power-rankings-bills-steelers/",
+          "title": "Prisco's NFL Week 9 Power Rankings: Bills take over top spot, Steelers on the rise",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz85SK2DtgGQGXUJZpff2T3aTnr9gsmE-LfBKNhRNi1hP7el8xCGMue3wcUHA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0gMCW9A8rIdhOoaVinTQbnRE58Ma-cPY15NnWWiMnRGTUDVVDJr400V5dFY4"
         },
         {
-          "url": "https://www.nbcnews.com/sports/formula-1/kimi-antonelli-becomes-youngest-formula-1-champion-ever-20-years-old-rcna606726",
-          "title": "Kimi Antonelli becomes youngest Formula 1 champion ever at 20 years old",
-          "publisher": "NBC News",
+          "url": "https://www.nfl.com/news/nfl-power-rankings-week-8-2026-nfl-season",
+          "title": "NFL Power Rankings, Week 8: Vikings claim No. 1 spot; Browns, Falcons nearing top 10",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNhLwW7Oi7rUjDM0rTpaNopU7a2SZLKfd2vk2x_bqDynfHUJ-WVeOphknsOM0"
-        }
-      ]
-    },
-    {
-      "query": "polls open time",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T08:50:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/10/30/g-s1-149560/2026-vote-midterm-election-local-voter-guides",
-        "https://mashable.com/life/how-to-vote-2026-midterm-elections",
-        "https://upnorthlive.com/news/local/poll-how-are-you-voting-for-the-midterms"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC2-sqcaj5F3oe2e-kJ2bFU79IYJacvOebjIXvNwGus4jpYbgxJlBmrQ-qaIE",
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/10/30/g-s1-149560/2026-vote-midterm-election-local-voter-guides",
-          "title": "Still need to finish your midterm ballot? Find your local voter guide here",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC2-sqcaj5F3oe2e-kJ2bFU79IYJacvOebjIXvNwGus4jpYbgxJlBmrQ-qaIE"
-        },
-        {
-          "url": "https://mashable.com/life/how-to-vote-2026-midterm-elections",
-          "title": "How to vote in the US midterm elections: Find when polls open, close, and other details",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbe7DitvjzWwXaSLWSTUVkf61-8i0LsqQp3acuj-TVSD9m7CQVn9XT5LWKemo"
-        },
-        {
-          "url": "https://upnorthlive.com/news/local/poll-how-are-you-voting-for-the-midterms",
-          "title": "Poll: How are you voting for the midterms?",
-          "publisher": "WPBN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQa0ZTpD4RIXP8qBUo_atISGUaNfR1vsE55ACPsHInphG20o2WicMPUuzGsp1s"
-        }
-      ]
-    },
-    {
-      "query": "pirates of the caribbean 6",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T08:50:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/johnny-depp-explains-pirates-of-the-caribbean-6-return-jack-sparrow-1236937928/",
-        "https://people.com/johnny-depp-reacts-to-orlando-bloom-wanting-to-reunite-for-pirates-exclusive-12207058",
-        "https://deadline.com/2026/11/johnny-depp-reprising-pirates-of-the-caribbean-role-1237211975/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK0QejM4URQBcJwptVL95QIGYKN8YIzd5BP_gkB9mmq_ha97SkMAOqbEp89zQ",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/johnny-depp-explains-pirates-of-the-caribbean-6-return-jack-sparrow-1236937928/",
-          "title": "Johnny Depp Says He’d Return as Jack Sparrow in ‘Pirates of the Caribbean 6’ for Only One Reason: ‘I Want to Send Them Off on a Better Note’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK0QejM4URQBcJwptVL95QIGYKN8YIzd5BP_gkB9mmq_ha97SkMAOqbEp89zQ"
-        },
-        {
-          "url": "https://people.com/johnny-depp-reacts-to-orlando-bloom-wanting-to-reunite-for-pirates-exclusive-12207058",
-          "title": "Johnny Depp Reacts to Orlando Bloom Wanting to Reunite for Another Pirates of the Caribbean Movie (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuVTXXIh-c3s7AI9YnZgxmhxMuw0KSVNvOvBget7M2jNnGMBPNEpGG4jpSvi8"
-        },
-        {
-          "url": "https://deadline.com/2026/11/johnny-depp-reprising-pirates-of-the-caribbean-role-1237211975/",
-          "title": "Johnny Depp Open To Reprising 'Pirates Of The Caribbean' Role To \"Send Them Off On A Better Note\"",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtBI3rSJBT57musD8fJbVlHPa8Qivlt4o3q6KZKDrtL_OGq4DPJcMRQyEwsAE"
-        }
-      ]
-    },
-    {
-      "query": "houston astros",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T08:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50360039/astros-introduce-jim-crane-new-general-manager",
-        "https://www.houstonchronicle.com/sports/astros/article/astros-randy-flores-hire-22505708.php",
-        "https://www.mlbtraderumors.com/2026/10/astros-hire-randy-flores-as-general-manager.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp8n8NjiUqi3xH4CuDUfuOHtHm6z4Yhz8yoBN3WsHdf9D1s4w1Pgfcg9EHPlI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50360039/astros-introduce-jim-crane-new-general-manager",
-          "title": "Astros owner Jim Crane hails Randy Flores as a 'perfect fit' as team's GM",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp8n8NjiUqi3xH4CuDUfuOHtHm6z4Yhz8yoBN3WsHdf9D1s4w1Pgfcg9EHPlI"
-        },
-        {
-          "url": "https://www.houstonchronicle.com/sports/astros/article/astros-randy-flores-hire-22505708.php",
-          "title": "What new Astros GM Randy Flores said about urgency, analytics and a new manager",
-          "publisher": "Houston Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDwT8JqmEr4jFyjtK53HZ6CrHxROGqXyuScx3yb6FHjtbD_gkeZ37nhakMK4E"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/10/astros-hire-randy-flores-as-general-manager.html",
-          "title": "Astros Hire Randy Flores As General Manager",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHEYICpYLqNpVXwKynvMiOkZnvCrwUUV-ieO09BdDebaMf04G1M0dpsQwOOY0"
-        }
-      ]
-    },
-    {
-      "query": "stargate sg-1 upcoming project",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T08:40:00Z",
-      "related_news_urls": [
-        "https://collider.com/stargate-sg-1-bluebrixx-new-goauld-jaffa-sets/",
-        "https://www.imdb.com/news/ni66089664/?ref_=ttnw_art_perm",
-        "https://movieweb.com/stargate-sg-1-bluebrixx/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6svUhs8pArZBtRvFJDQigNp6OIcN-nVoca3JR4A7yOeAH5qbR4JMIXAgJig",
-      "image_credit": "Collider",
-      "news": [
-        {
-          "url": "https://collider.com/stargate-sg-1-bluebrixx-new-goauld-jaffa-sets/",
-          "title": "19 Years Later, ‘Stargate SG-1’ Officially Returns With New Release",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6svUhs8pArZBtRvFJDQigNp6OIcN-nVoca3JR4A7yOeAH5qbR4JMIXAgJig"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66089664/?ref_=ttnw_art_perm",
-          "title": "Stargate Sg-1 Has Officially Switched Genres, But Not Every Fan Is On Board",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIrGHa20bXetKpB3eoNNy5uDZtqMRntqtoo9_FUTPai7X4N-Lo4guK2jvNeKg"
-        },
-        {
-          "url": "https://movieweb.com/stargate-sg-1-bluebrixx/",
-          "title": "19 Years Later, the 'Stargate SG-1' Franchise Officially Returns With New Release",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0COsH4dAo7rJ5WwcFaMat-CXEp-G4MZbHmIwfX8YYIC9VDLYlFgyBjKGluJA"
-        }
-      ]
-    },
-    {
-      "query": "am",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T08:40:00Z",
-      "related_news_urls": [
-        "https://www.insideradio.com/free/am-fm-radio-maintains-dominance-in-car-as-commuting-increases/article_ae81f724-4774-47dd-9bf6-e750482dbe10.html",
-        "https://news.radio-online.com/articles/n49594/AM-FM-Radio-Leads-In-Car-Listening-Among-EV-Users",
-        "https://www.niemanlab.org/reading/electric-vehicle-drivers-listen-to-am-fm-radio-much-less-than-the-average-american/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA964QOsvCqmPWCkghdcFv31fFX5QHILzC74QW_0wlIcR9X_perJcShT03sNc",
-      "image_credit": "Insideradio.com",
-      "news": [
-        {
-          "url": "https://www.insideradio.com/free/am-fm-radio-maintains-dominance-in-car-as-commuting-increases/article_ae81f724-4774-47dd-9bf6-e750482dbe10.html",
-          "title": "AM/FM Radio Maintains Dominance In Car As Commuting Increases.",
-          "publisher": "Insideradio.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA964QOsvCqmPWCkghdcFv31fFX5QHILzC74QW_0wlIcR9X_perJcShT03sNc"
-        },
-        {
-          "url": "https://news.radio-online.com/articles/n49594/AM-FM-Radio-Leads-In-Car-Listening-Among-EV-Users",
-          "title": "AM/FM Radio Leads In-Car Listening Among EV Users",
-          "publisher": "RADIO ONLINE",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7Fkhix8dEJSubDArLVo95A_qroUH9ipEJCK2V5rBUuPP1_pGiHIPx0WJ8pQ"
-        },
-        {
-          "url": "https://www.niemanlab.org/reading/electric-vehicle-drivers-listen-to-am-fm-radio-much-less-than-the-average-american/",
-          "title": "Electric vehicle drivers listen to AM/FM radio much less than the average American →",
-          "publisher": "Nieman Journalism Lab",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMjR9t5cTUJEiCXuV62HgZY5O4nAwKDAkjA_xm1kP9H8fRbhN5uKQS2wVFPhw"
-        }
-      ]
-    },
-    {
-      "query": "rachel apa marathon",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-03T08:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/02/nyregion/marathon-runner-dies-rachel-apa.html",
-        "https://nypost.com/2026/11/03/us-news/nyc-marathon-runner-rachel-apa-dies-after-collapsing-in-central-park-two-miles-from-finish-line/",
-        "https://www.the-sun.com/news/17246457/nyc-marathon-runner-dies-finish-line-rachel-apa-bucknell/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTwaDp-u2295G7eXUadBYXgjQQPBVOCgd1Pt3D5HukwMSbsmcY9gKTew2vljg",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/02/nyregion/marathon-runner-dies-rachel-apa.html",
-          "title": "Runner, 24, Dies During Her First Marathon",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTwaDp-u2295G7eXUadBYXgjQQPBVOCgd1Pt3D5HukwMSbsmcY9gKTew2vljg"
-        },
-        {
-          "url": "https://nypost.com/2026/11/03/us-news/nyc-marathon-runner-rachel-apa-dies-after-collapsing-in-central-park-two-miles-from-finish-line/",
-          "title": "NYC Marathon runner Rachel Apa dies after collapsing in Central Park two miles from finish line",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3sUE5D8f9m-F1BsjGhv0hVNFjdvkl5-BkgftAZ73zTinjaEvs63aHy4p8gHk"
-        },
-        {
-          "url": "https://www.the-sun.com/news/17246457/nyc-marathon-runner-dies-finish-line-rachel-apa-bucknell/",
-          "title": "Marathon runner, 24, collapses and dies just 2 MILES from finish line",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAvLphGTh_3xYlD8kkrv9LnuV8RxMTwMtutq7ByGJz_h1FgIaodvit5_auK-g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpHz3VIifGaKKwQzkknJ3N97hJxBUBfnLB5HCJvJDFCxP7ougC3uhnz_pmx7U"
         }
       ]
     }
