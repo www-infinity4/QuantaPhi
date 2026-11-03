@@ -50,3 +50,38 @@ test('search never retries authorization errors and never invents results when t
  assert.deepEqual(unavailable.results,[]);
  assert.ok(unavailable.attempts.includes('infinity_search_unavailable'));
 });
+
+
+test('Bubbles promotes sourced Liberty Coin entity matches above unrelated trending results',async()=>{
+ const SEARCH={async fetch(){return Response.json({results:[
+  {title:'Trending Liberty insurance',url:'https://example.org/insurance',content:'Insurance trends',engine:'brave'},
+  {title:'Liberty Coin · original issuer details',url:'https://example.org/libertycoin',content:'Coin history and terms',engine:'brave'},
+  {title:'Coin collecting guide',url:'https://example.org/coins',content:'Collectible coin trends',engine:'brave'}
+ ]});}};
+ const found=await webSearch('search emerging liberty coin',{SEARCH},()=>{throw Error('must use existing bound broker')});
+ assert.equal(found.ok,true);
+ assert.equal(found.results[0].url,'https://example.org/libertycoin');
+ assert.equal(found.results.length,3,'all real broker sources retained');
+ assert.equal(found.results[0].engine,'brave','do not mislabel provider or fabricate trending verification');
+});
+
+test('Bubbles keeps provider ordering for topics with no source covering all query terms',async()=>{
+ const SEARCH={async fetch(){return Response.json({results:[
+  {title:'Weather report',url:'https://example.org/weather',content:'Rain'},
+  {title:'Recipe archive',url:'https://example.org/recipes',content:'Food'}
+ ]});}};
+ const found=await webSearch('search emerging liberty coin',{SEARCH});
+ assert.deepEqual(found.results.map(x=>x.url),['https://example.org/weather','https://example.org/recipes']);
+});
+
+
+test('Bubbles can elevate a full-subject source beyond the first seven broker rows while returning only seven',async()=>{
+ const unrelated=Array.from({length:9},(_,i)=>({title:'General trend '+i,url:'https://example.org/trend-'+i,content:'Liberty insurance today',engine:'brave'}));
+ const SEARCH={async fetch(){return Response.json({results:[...unrelated,
+  {title:'Liberty Coin source details',url:'https://example.org/liberty-coin-source',content:'Coin issuer record',engine:'brave'}
+ ]});}};
+ const result=await webSearch('search emerging liberty coin',{SEARCH});
+ assert.equal(result.ok,true);
+ assert.equal(result.results[0].url,'https://example.org/liberty-coin-source');
+ assert.equal(result.results.length,7,'keep existing visible seven-result limit');
+});
