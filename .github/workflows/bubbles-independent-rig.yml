@@ -1,0 +1,29 @@
+name: Bubbles independent evidence rig
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+permissions:
+  contents: read
+  actions: read
+  pull-requests: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run evidence rig tests
+        run: python -m unittest discover -s test -p 'bubbles_rig_test.py' -v
+      - name: Read-only PR audit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/bubbles_rig.py --pr 1144 --pr 1476 --pr 1490 --output bubbles-rig-receipt.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bubbles-rig-receipt
+          path: bubbles-rig-receipt.json
