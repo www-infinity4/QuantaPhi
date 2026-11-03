@@ -3,41 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T07:30:43.596868Z",
+  "checked_at": "2026-11-03T08:01:33.052200Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "dayana yastremska",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T07:10:00Z",
+      "query": "matt damon",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T07:40:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/andrey-rublev-vs-tomas-martin-etcheverry-total-games-nov-03-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/novak-djokovic-vs-valentin-vacherot-set-1-winner-nov-03-2026/"
+        "https://deadline.com/2026/11/matt-damon-david-letterman-cast-the-gilded-age-season-4-1237211033/",
+        "https://www.bostonglobe.com/2026/11/02/arts/matt-damon-gilded-age/",
+        "https://people.com/the-gilded-age-season-4-premiere-recap-12203323"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY",
-      "image_credit": "Robinhood",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmDWOzv-NXbaiwu1xDrzbU2tHikbvozYj5A369oJUrPsRkq5tL8KqnHJOEj8g",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
-          "title": "November 4, 2026: Claire Liu vs Katie Boulter: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://deadline.com/2026/11/matt-damon-david-letterman-cast-the-gilded-age-season-4-1237211033/",
+          "title": "Matt Damon & David Letterman Make Blink & You Missed It Cameos On ‘The Gilded Age’ Season 4 Premiere",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmDWOzv-NXbaiwu1xDrzbU2tHikbvozYj5A369oJUrPsRkq5tL8KqnHJOEj8g"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/andrey-rublev-vs-tomas-martin-etcheverry-total-games-nov-03-2026/",
-          "title": "November 3, 2026: Andrey Rublev vs Tomas Martin Etcheverry: Total Games Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.bostonglobe.com/2026/11/02/arts/matt-damon-gilded-age/",
+          "title": "Yes, that was Matt Damon and David Letterman in ‘The Gilded Age’ season premiere",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQvSLNvu3IqIqpg4j8pk-D7v215HQTApXGxCUlhHc2s0RGLpr6LumxZbYayj4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3QuSbIArAV1eEteKvhhJrxoWWa3xDp2ZZC0gnLNZLlHHLapjktqxzpErZ-Q4"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/novak-djokovic-vs-valentin-vacherot-set-1-winner-nov-03-2026/",
-          "title": "November 3, 2026: Novak Djokovic vs Valentin Vacherot: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://people.com/the-gilded-age-season-4-premiere-recap-12203323",
+          "title": "‘The Gilded Age’ Season 4 Premieres with a Scandalous Affair and Blink-and-You-Miss It Cameo from 2 Shocking Celeb Guests",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIm-cnrO5gMuVXIIgsEd-dt7ptoXLu8pz1Zb7JkEW6MY7PqEbOFhTbF-onaRo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3DFcNF_1iuS9h-HQftJxHM870lajLF_IBSL_V9GUuG3H2f9hHjb-EHwi4qjM"
+        }
+      ]
+    },
+    {
+      "query": "ca lottery",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T07:40:00Z",
+      "related_news_urls": [
+        "https://www.desertsun.com/story/news/local/2026/11/02/california-lottery-results-monday-november-2-2026/92580771007/",
+        "https://www.desertsun.com/story/news/local/2026/11/01/california-lottery-results-sunday-november-1-2026/92559462007/",
+        "https://www.desertsun.com/story/news/local/2026/10/29/california-lottery-results-thursday-october-29-2026/92510651007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfi7GQfayw9ShJ0hpy0SehkUHS7uERlyZcfWrjFTaQJDYhw55yH1qdriDCaz0",
+      "image_credit": "The Desert Sun",
+      "news": [
+        {
+          "url": "https://www.desertsun.com/story/news/local/2026/11/02/california-lottery-results-monday-november-2-2026/92580771007/",
+          "title": "California Lottery Powerball, Daily 3 Midday winning numbers for Nov. 2, 2026",
+          "publisher": "The Desert Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfi7GQfayw9ShJ0hpy0SehkUHS7uERlyZcfWrjFTaQJDYhw55yH1qdriDCaz0"
+        },
+        {
+          "url": "https://www.desertsun.com/story/news/local/2026/11/01/california-lottery-results-sunday-november-1-2026/92559462007/",
+          "title": "California Lottery Daily 3 Midday, Daily Derby winning numbers for Nov. 1, 2026",
+          "publisher": "The Desert Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDj3J2uCVgkPtWOGd5NAqNbrj13H_4VfEOk9oZuOMewWHc9KXAYTmEt3MGCWk"
+        },
+        {
+          "url": "https://www.desertsun.com/story/news/local/2026/10/29/california-lottery-results-thursday-october-29-2026/92510651007/",
+          "title": "California Lottery Daily 3 Midday, Daily Derby winning numbers for Oct. 29, 2026",
+          "publisher": "The Desert Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDj3J2uCVgkPtWOGd5NAqNbrj13H_4VfEOk9oZuOMewWHc9KXAYTmEt3MGCWk"
+        }
+      ]
+    },
+    {
+      "query": "sadie sink",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T07:20:00Z",
+      "related_news_urls": [
+        "https://thedirect.com/article/spider-man-brand-new-day-sadie-sink-follow-up-movie",
+        "https://deadline.com/2026/11/ben-wang-circling-iceman-role-x-men-1237211516/",
+        "https://variety.com/2026/film/news/x-men-hunger-games-ben-wang-iceman-marvel-reboot-1236937787/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHrLCEwG-W6zngdOpmSGZXJiclRqxw0VqC2VVnREdMJo4ryZ_btEDnKwurEu0",
+      "image_credit": "The Direct",
+      "news": [
+        {
+          "url": "https://thedirect.com/article/spider-man-brand-new-day-sadie-sink-follow-up-movie",
+          "title": "Sadie Sink Chooses Perfect Follow-Up Movie to 'Spider-Man: Brand New Day'",
+          "publisher": "The Direct",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHrLCEwG-W6zngdOpmSGZXJiclRqxw0VqC2VVnREdMJo4ryZ_btEDnKwurEu0"
+        },
+        {
+          "url": "https://deadline.com/2026/11/ben-wang-circling-iceman-role-x-men-1237211516/",
+          "title": "Ben Wang Circling Iceman Role In Marvel’s ‘X-Men’",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMqKtYoyi6_jeRQf_BMAO3i8Jf0YsIR61TMbalYAa0yMdFZEjhvjmo_1OiI0"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/x-men-hunger-games-ben-wang-iceman-marvel-reboot-1236937787/",
+          "title": "‘X-Men’: ‘Hunger Games’ Actor Ben Wang Circling Iceman Role in Marvel’s Reboot",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSIjXYa66lHfNA1qQ3AEtMDZVCY5p4vEpMzpp8wIyjHvnC0b0lBdSs7uJpJAc"
+        }
+      ]
+    },
+    {
+      "query": "barcelona vs aston villa",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T07:20:00Z",
+      "related_news_urls": [
+        "https://www.avfc.co.uk/news/2026/november/02/prematch-unai-emery-pre-barcelona/",
+        "https://www.bbc.com/sport/football/articles/c5ev3m9ddzgmo",
+        "https://www.aljazeera.com/sports/2026/11/2/barcelona-vs-aston-villa-champions-league-predictions-news"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXiI0icNyID8r0pwfTxOUOaT-ITjIrVKuUPbmE9oxA0ez9TMVx0mu4R-6k58U",
+      "image_credit": "Aston Villa",
+      "news": [
+        {
+          "url": "https://www.avfc.co.uk/news/2026/november/02/prematch-unai-emery-pre-barcelona/",
+          "title": "Aston Villa Football Club - The Official Club Website",
+          "publisher": "Aston Villa",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXiI0icNyID8r0pwfTxOUOaT-ITjIrVKuUPbmE9oxA0ez9TMVx0mu4R-6k58U"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/articles/c5ev3m9ddzgmo",
+          "title": "Aston Villa: Unai Emery aims to prove Villa's worth among the elite against Barcelona in the Champions League",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwxWOx5ar6fhRTLfpJYCHdanAAS1WpN8jcf86rQKgmif2L3l-tX3txLTwarlw"
+        },
+        {
+          "url": "https://www.aljazeera.com/sports/2026/11/2/barcelona-vs-aston-villa-champions-league-predictions-news",
+          "title": "Barcelona vs Aston Villa: Champions League – Predictions, news, lineups",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6dY1UArT4Hv1y5t8hwCCkLHrqjxLobobstTILn3R1g3E-YgQnheMEHz6hq8Q"
+        }
+      ]
+    },
+    {
+      "query": "zeynep sonmez",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T07:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50353100/alex-eala-hong-kong-finale-breakout-season",
+        "https://www.yardbarker.com/tennis/articles/i_definitely_think_it_was_more_than_i_expected_to_achieve_alexandra_eala_looks_back_on_2026_campaign_with_pride_ahead_of_final_tournament/s1_17460_44502374",
+        "https://sports.yahoo.com/articles/alex-eala-reaches-career-milestone-021734313.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2zDJY616KW01Yraxq57H7Ru1ANDm9vPS8ACs7KIsl8L-KtLHc3itvDC-vcKY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50353100/alex-eala-hong-kong-finale-breakout-season",
+          "title": "Alex Eala targets strong Hong Kong finale after breakout WTA season",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2zDJY616KW01Yraxq57H7Ru1ANDm9vPS8ACs7KIsl8L-KtLHc3itvDC-vcKY"
+        },
+        {
+          "url": "https://www.yardbarker.com/tennis/articles/i_definitely_think_it_was_more_than_i_expected_to_achieve_alexandra_eala_looks_back_on_2026_campaign_with_pride_ahead_of_final_tournament/s1_17460_44502374",
+          "title": "'I definitely think it was more than I expected to achieve' - Alexandra Eala looks back on 2026 campaign with pride ahead of final tournament",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpOdfJrti2oa5M8nkH78o54rMa6g950z8foHuAamYzO2jR_CucDHeL3qh_2jk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/alex-eala-reaches-career-milestone-021734313.html",
+          "title": "Alex Eala Reaches Career Milestone, Moves Within 26 Points of 4-Time Grand Slam Champion",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuUYH5RL_mroan_Q-1FGW0syne-O_UYekZ9D-plm55AB0qookJSZroOwH49Jc"
+        }
+      ]
+    },
+    {
+      "query": "中期选举",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T07:20:00Z",
+      "related_news_urls": [
+        "https://cn.nytimes.com/usa/20261103/midterms-election-2026-senate-house-congress/",
+        "https://wallstreetcn.com/articles/3785069",
+        "https://news.ifeng.com/c/8xkM97nXIi9"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdSbw5suD745_Jsa2k89wJ_d-GpE4eNuOcuYVovoGvjNl8O3dSu3b_yAMPpQo",
+      "image_credit": "纽约时报中文网",
+      "news": [
+        {
+          "url": "https://cn.nytimes.com/usa/20261103/midterms-election-2026-senate-house-congress/",
+          "title": "一文读懂美国中期选举：两党各持何种立场，选情如何",
+          "publisher": "纽约时报中文网",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdSbw5suD745_Jsa2k89wJ_d-GpE4eNuOcuYVovoGvjNl8O3dSu3b_yAMPpQo"
+        },
+        {
+          "url": "https://wallstreetcn.com/articles/3785069",
+          "title": "美国中选“最可能剧本”，将是美股“最危险剧本”？",
+          "publisher": "华尔街见闻",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1GtCXBblvKXqKu8gaPQOeVkC76x4yipgmoYf0JkaESEfXeu_hADGr4dzVVCw"
+        },
+        {
+          "url": "https://news.ifeng.com/c/8xkM97nXIi9",
+          "title": "美国中期选举今日投票，民调：民主党参议院候选人在七个关键州领先",
+          "publisher": "凤凰网",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdhRZRxcyfYdU7v_bqqrvcf3pKddU-K49eh1D_ZExkSjfoBYkY2wdNH_6ogVg"
+        }
+      ]
+    },
+    {
+      "query": "seattle basketball",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T07:20:00Z",
+      "related_news_urls": [
+        "https://golobos.com/news/2026/11/2/lobos-drop-season-opener-to-seattle",
+        "https://www.krqe.com/news/community/unm-womens-basketball-falls-short-in-amy-eagan-debut/",
+        "https://933kjr.iheart.com/content/2026-11-02-seattle-u-vs-new-mexico-tv-stream-nov-2/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzwt1tHpdC1iOr_dtwjT2jOjQxnDyJwdEwJTpe6SMawqNn8-JstOC7KnHZZGU",
+      "image_credit": "New Mexico Lobos",
+      "news": [
+        {
+          "url": "https://golobos.com/news/2026/11/2/lobos-drop-season-opener-to-seattle",
+          "title": "Lobos Drop Season Opener to Seattle - New Mexico Lobos - Official Athletics Website",
+          "publisher": "New Mexico Lobos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzwt1tHpdC1iOr_dtwjT2jOjQxnDyJwdEwJTpe6SMawqNn8-JstOC7KnHZZGU"
+        },
+        {
+          "url": "https://www.krqe.com/news/community/unm-womens-basketball-falls-short-in-amy-eagan-debut/",
+          "title": "UNM women’s basketball falls short in Amy Eagan debut",
+          "publisher": "KRQE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT42MwYJjJv9r6-H0BNKIoPOffYKTP2e2WwbnNp9KHiFwa3QqcyptAhYXJ7wbg"
+        },
+        {
+          "url": "https://933kjr.iheart.com/content/2026-11-02-seattle-u-vs-new-mexico-tv-stream-nov-2/",
+          "title": "Seattle U vs. New Mexico TV & Stream – Nov. 2",
+          "publisher": "Sports Radio 93.3 KJR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKj3YXAUU1a8Ggfj9X3iGLjQFwOhegrE3G2p6DMX9V8pDmYHqX2AskPCQBfOc"
         }
       ]
     },
@@ -77,282 +287,72 @@
       ]
     },
     {
-      "query": "severance",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T07:00:00Z",
+      "query": "dayana yastremska",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T07:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/severance-season-3-release-date-143000903.html",
-        "https://artsfuse.org/336910/film-review-the-only-living-pickpocket-in-new-york-a-love-letter-to-a-city-that-wont-love-you-back/",
-        "https://www.npr.org/2026/11/02/nx-s1-6023217/john-turturro-pickpocket"
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/maaya-rajeshwaran-revathi-vs-katarzyna-kawa-set-2-winner-nov-03-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/talia-gibson-vs-oleksandra-oliynykova-set-1-winner-nov-03-2026/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSSxfojOY6hezwo36ne2FOk4eoCRweQKg74wqT75zxPdaNMd9AezEtUX-vwQ4",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY",
+      "image_credit": "Robinhood",
       "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/severance-season-3-release-date-143000903.html",
-          "title": "‘Severance’ Season 3 Release Date Info: When Is Season 3 Of ‘Severance’ Coming Out?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSSxfojOY6hezwo36ne2FOk4eoCRweQKg74wqT75zxPdaNMd9AezEtUX-vwQ4"
-        },
-        {
-          "url": "https://artsfuse.org/336910/film-review-the-only-living-pickpocket-in-new-york-a-love-letter-to-a-city-that-wont-love-you-back/",
-          "title": "Film Review: \"The Only Living Pickpocket in New York\" - A Love Letter to a City That Won’t Love You Back",
-          "publisher": "The Arts Fuse",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG4mk1Ps-hPJouaRxezNIUk_ZWAHrXKguD1HEpmxe37k1-jcBH5xt8moBeWiA"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/02/nx-s1-6023217/john-turturro-pickpocket",
-          "title": "John Turturro says he likes trying new things (even pickpocketing)",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSPNQSkHocM1OF_43GRZ45ZvofqocyoPNUDCiBRPfmloQ8UGx7y4IVpcTU7lI"
-        }
-      ]
-    },
-    {
-      "query": "when is the presidential election",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T07:00:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/02/nx-s1-6019547/coal-no-longer-king-in-navajo-nation-presidential-election",
-        "https://nit.com.au/29-10-2026/27245/crystalyne-curley-justin-jones-vie-to-become-next-navajo-nation-president",
-        "https://www.fresnobee.com/news/nation-world/national/article317813239.html"
-      ],
-      "image_url": null,
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/02/nx-s1-6019547/coal-no-longer-king-in-navajo-nation-presidential-election",
-          "title": "Coal no longer king in Navajo Nation presidential election",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://nit.com.au/29-10-2026/27245/crystalyne-curley-justin-jones-vie-to-become-next-navajo-nation-president",
-          "title": "Crystalyne Curley, Justin Jones vie to become next Navajo Nation President",
-          "publisher": "National Indigenous Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZmlkqmR1_bf0zaKjuEZfJ_cZuShzxUxDbgpRGpcim2TqGX60v1_sZZgvc7-g"
-        },
-        {
-          "url": "https://www.fresnobee.com/news/nation-world/national/article317813239.html",
-          "title": "Uranium cleanup method is a 'scheme and a scam,' critics say",
-          "publisher": "Fresno Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9JcFZI5JDk0NnrsxQC2sJvPS3MJ67qR1h5GxziHRGcFSTetAcYmd89R4f13w"
-        }
-      ]
-    },
-    {
-      "query": "talia gibson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T06:40:00Z",
-      "related_news_urls": [
-        "https://www.dimers.com/tennis/news/sorana-cirstea-vs-maria-timofeeva-tennis-prediction-wta-hong-kong-open-2026-ac",
-        "https://lastwordonsports.com/tennis/2026/11/02/wta-hong-kong-day-2-predictions-cirstea-timofeeva/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRa9JQUJDwZAXDNhSfRIq6eKYCmpoLAgZ1m5pAfA61hZD1i4x9VfVyer_JV-oc",
-      "image_credit": "Dimers",
-      "news": [
-        {
-          "url": "https://www.dimers.com/tennis/news/sorana-cirstea-vs-maria-timofeeva-tennis-prediction-wta-hong-kong-open-2026-ac",
-          "title": "Sorana Cirstea vs. Maria Timofeeva prediction, odds, picks for WTA Hong Kong Open 2026",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRa9JQUJDwZAXDNhSfRIq6eKYCmpoLAgZ1m5pAfA61hZD1i4x9VfVyer_JV-oc"
-        },
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/02/wta-hong-kong-day-2-predictions-cirstea-timofeeva/",
-          "title": "WTA Hong Kong Day 2 Predictions Including Sorana Cirstea vs Maria Timofeeva",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyK_o3AZ1mx6p5RZl0H4mFFYxBaDrVNyInVUh53eh9SEhKDLxX_tsl9QZwtAk"
-        },
         {
           "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
           "title": "November 4, 2026: Claire Liu vs Katie Boulter: Set 2 Winner Tennis Prediction Market",
           "publisher": "Robinhood",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/maaya-rajeshwaran-revathi-vs-katarzyna-kawa-set-2-winner-nov-03-2026/",
+          "title": "November 3, 2026: Maaya Rajeshwaran Revathi vs Katarzyna Kawa: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9pUhadKzoFXK0sVYfCI4FKxlI0CqnOYlyIAA1AjD9TF2rKMYhS7J8EsBLMZ8"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/talia-gibson-vs-oleksandra-oliynykova-set-1-winner-nov-03-2026/",
+          "title": "November 3, 2026: Talia Gibson vs Oleksandra Oliynykova: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8-CMs8KG3YCRWAFaK_w55UXliJl_IjK8QKs1YZmQOmatZfVan3FKfQ0KM3-k"
         }
       ]
     },
     {
-      "query": "kamala harris",
+      "query": "severance",
       "approx_searches": "100+",
-      "published_at": "2026-11-03T06:40:00Z",
+      "published_at": "2026-11-03T07:00:00Z",
       "related_news_urls": [
-        "https://www.washingtonpost.com/politics/2026/11/02/kamala-harris-gavin-newsom-weighing-2028-runs-rally-together-california/",
-        "https://www.foxnews.com/video/6407765833112",
-        "https://www.nytimes.com/2026/11/02/us/elections/newsom-harris-becerra-rally.html"
+        "https://www.vulture.com/article/dark-matter-recap-season-2-episode-10-finale-apple-tv.html",
+        "https://reactormag.com/blake-crouch-explains-dark-matter-season-2-finale-and-teases-season-3/",
+        "https://decider.com/2026/10/29/dark-matter-season-3-apple-tv/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgby18v1dg-f2nqpNFRDEvcJmcc349GmV5YjAqOE-n-8R9eTWRx7VWL7-2DZI",
-      "image_credit": "The Washington Post",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTk8h3Bd_8Vh99R3bZ5qmO-rPGlxMWSsA3UHx3LtDcs0NYeswWXTZG2usUN05I",
+      "image_credit": "Vulture",
       "news": [
         {
-          "url": "https://www.washingtonpost.com/politics/2026/11/02/kamala-harris-gavin-newsom-weighing-2028-runs-rally-together-california/",
-          "title": "Kamala Harris and Gavin Newsom, weighing 2028 runs, rally together in California",
-          "publisher": "The Washington Post",
+          "url": "https://www.vulture.com/article/dark-matter-recap-season-2-episode-10-finale-apple-tv.html",
+          "title": "Dark Matter Season-Finale Recap: Into the Great Unknown",
+          "publisher": "Vulture",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgby18v1dg-f2nqpNFRDEvcJmcc349GmV5YjAqOE-n-8R9eTWRx7VWL7-2DZI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTk8h3Bd_8Vh99R3bZ5qmO-rPGlxMWSsA3UHx3LtDcs0NYeswWXTZG2usUN05I"
         },
         {
-          "url": "https://www.foxnews.com/video/6407765833112",
-          "title": "WATCH LIVE: Top Democrats hold 'Stop the Power Grab' rally in California",
-          "publisher": "Fox News",
+          "url": "https://reactormag.com/blake-crouch-explains-dark-matter-season-2-finale-and-teases-season-3/",
+          "title": "Blake Crouch Explains Dark Matter Season 2 Finale and Teases Season 3",
+          "publisher": "reactormag.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVLYpvKsGKWjx3eHbB8h5Flqg7yV9uPOTtawdnsWPwKMC6dQ2rE_12FX3K32M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYFzzspeh1qdVy7f4w3wvXuHIowuKg5TVDjYKP5ZumfwBka3QmZ0v83qF97w8"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/02/us/elections/newsom-harris-becerra-rally.html",
-          "title": "Newsom and Harris Campaign in Los Angeles, With Little Hint of What’s to Come",
-          "publisher": "The New York Times",
+          "url": "https://decider.com/2026/10/29/dark-matter-season-3-apple-tv/",
+          "title": "‘Dark Matter’ Season 3 premiere date info: Will there be a ‘Dark Matter’ Season 3 on Apple TV? Everything we know",
+          "publisher": "Decider",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaRPxtph0JpiRUQpPYk5uT6KAFRlEM4poU_10RCHBZ-x9_ixBh9v0Ohkk2QM4"
-        }
-      ]
-    },
-    {
-      "query": "nba stats",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T06:30:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/emirates-nba-cup-live-updates-october-30",
-        "https://sports.yahoo.com/articles/not-fault-kevin-durant-heated-073838857.html",
-        "https://www.si.com/nba/biggest-winners-losers-from-first-night-of-2026-nba-cup"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4hAGcgRilBGjjYn8Qsmlhbn2DU2VNZRVLKZgXXBEDxcAmWnXYac8O1ZEQSbE",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/emirates-nba-cup-live-updates-october-30",
-          "title": "Emirates NBA Cup: live updates, top moments from first night",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4hAGcgRilBGjjYn8Qsmlhbn2DU2VNZRVLKZgXXBEDxcAmWnXYac8O1ZEQSbE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/not-fault-kevin-durant-heated-073838857.html",
-          "title": "‘That’s not my fault’- Kevin Durant’s heated exchange headlines fiery NBA Cup opener",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRMUe_JYinmAWr6OnD6JhANnZCqN4BnLMtc9xUpXHuG9K3t2WqejFKnMdHnu0"
-        },
-        {
-          "url": "https://www.si.com/nba/biggest-winners-losers-from-first-night-of-2026-nba-cup",
-          "title": "The Biggest Winners and Losers From First Night of the 2026 NBA Cup",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWjyCEjy0wsdS8ZOrRIb2MjdJ6Mbfh_co7Y3Qitw4AstmKJfrsDOS12C0yCLs"
-        }
-      ]
-    },
-    {
-      "query": "polymarket midterms",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T06:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/politics/elections/prediction-markets-keep-whiffing-on-elections-will-they-miss-on-the-midterms-9809c8c9",
-        "https://www.nytimes.com/2026/10/29/technology/polymarket-kalshi-midterm-election-betting-wagers.html",
-        "https://www.sportico.com/business/sports-betting/2026/prediction-markets-donald-trump-election-odds-1234957187/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0JIHqhRy-77Yj6Z9n95T95OpuhYiOi0JLlDin0JJIpALRSewHZQkYfmjBelI",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/politics/elections/prediction-markets-keep-whiffing-on-elections-will-they-miss-on-the-midterms-9809c8c9",
-          "title": "Prediction Markets Keep Whiffing on Elections. Will They Miss on the Midterms?",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0JIHqhRy-77Yj6Z9n95T95OpuhYiOi0JLlDin0JJIpALRSewHZQkYfmjBelI"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/10/29/technology/polymarket-kalshi-midterm-election-betting-wagers.html",
-          "title": "He Bet $1.5 Million on the Midterms. Will He Win Big?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8Pplwucnc7chKYC7D2tcnnAZ114GR07AuWXiTW0Kci9Kojjfteyd8LX6HKZw"
-        },
-        {
-          "url": "https://www.sportico.com/business/sports-betting/2026/prediction-markets-donald-trump-election-odds-1234957187/",
-          "title": "Prediction Markets Need Trump. Their Election Odds Risk His Fury",
-          "publisher": "Sportico.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTu2kDusmT1WL4mSFeL_Q5C8NzF4bCBBzcZPKzA_jU7cYBu04HF5fyv9nQtd20"
-        }
-      ]
-    },
-    {
-      "query": "dead by daylight",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T06:20:00Z",
-      "related_news_urls": [
-        "https://www.polygon.com/dead-by-daylight-theburntpeanut-controversy-explained/",
-        "https://insider-gaming.com/dead-by-daylight-peanut-behaviour-interactive/",
-        "https://sports.ndtv.com/us/us-streamers/theburntpeanut-s-dead-by-daylight-giveaway-controversy-explained-after-developer-issues-public-apology-12270132"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwKUd9sx0mauKmlXrx7XBayoD9tGhcy0BjaL2UU2W67NfGctQtGZo-opz6CRI",
-      "image_credit": "Polygon.com",
-      "news": [
-        {
-          "url": "https://www.polygon.com/dead-by-daylight-theburntpeanut-controversy-explained/",
-          "title": "Dead by Daylight fans are uninstalling the game in protest — here's why",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwKUd9sx0mauKmlXrx7XBayoD9tGhcy0BjaL2UU2W67NfGctQtGZo-opz6CRI"
-        },
-        {
-          "url": "https://insider-gaming.com/dead-by-daylight-peanut-behaviour-interactive/",
-          "title": "Dead by Daylight Devs Address TheBurntPeanut Scandal",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7dYQVUlqWbPhMFcnGBSmIhlz29UH2yT85udhBqK08wXQl23qWTnN4G87l5EU"
-        },
-        {
-          "url": "https://sports.ndtv.com/us/us-streamers/theburntpeanut-s-dead-by-daylight-giveaway-controversy-explained-after-developer-issues-public-apology-12270132",
-          "title": "TheBurntPeanut’s Dead By Daylight Giveaway Controversy Explained After Developer Issues Public Apology",
-          "publisher": "NDTV Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKO0D0UoeDvnHgECLdEN2CN8_NCHMwR9xEOXpFKkygrPXgM5WsgDJjV_cuwts"
-        }
-      ]
-    },
-    {
-      "query": "la county measure a",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T06:10:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-10-31/2026-california-election-los-angeles-county-charter-amendment-a-last-minute-voter-guide",
-        "https://www.yahoo.com/news/politics/articles/los-angeles-county-considers-labor-182000186.html",
-        "https://www.magzter.com/stories/newspaper/Los-Angeles-Times/MEASURE-TO-ALTER-LABOR-TALKS-LEADS-TO-LITTLE-DEBATE"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD34taoX9tbnsmhVSKrB1E2Xyd8PUsnOnH79Y4oozymH3-kfo7ZmCYItbFmJI",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/california/story/2026-10-31/2026-california-election-los-angeles-county-charter-amendment-a-last-minute-voter-guide",
-          "title": "Your last-minute guide to L.A. County Charter Amendment A",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD34taoX9tbnsmhVSKrB1E2Xyd8PUsnOnH79Y4oozymH3-kfo7ZmCYItbFmJI"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/los-angeles-county-considers-labor-182000186.html",
-          "title": "Los Angeles County considers labor measure for public safety",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEmonsibEEqP-893gG376X1MypDP9Jz4xbXGqTXpKKhBPnKe5d_7-Ay8jKrQg"
-        },
-        {
-          "url": "https://www.magzter.com/stories/newspaper/Los-Angeles-Times/MEASURE-TO-ALTER-LABOR-TALKS-LEADS-TO-LITTLE-DEBATE",
-          "title": "Measure to alter labor talks leads to little debate | Los Angeles Times - newspaper",
-          "publisher": "Magzter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeUca2_mZ4gF33W99sx78_ELcxiKK1bsUkOi6zbEMocVpL8PADmaqQ0L71f78"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlKvTkINVpnKcVOKnp8AzEMiXfluPHF138uwHy7FlBZumoxCIiuR18jV95-gs"
         }
       ]
     }
