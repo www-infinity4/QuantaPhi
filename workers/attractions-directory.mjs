@@ -182,6 +182,18 @@ export default {
   try{
    if(url.pathname==='/api/attractions/search')return await search(url,env);
    if(url.pathname==='/api/attractions/feed')return await search(url,env,true);
+   if(url.pathname==='/api/attractions/item'){
+    const id=text(url.searchParams.get('id'),110);
+    if(!/^(?:curated:[a-z][a-z0-9-]{8,100}|overture:[a-zA-Z0-9-]{10,100})$/.test(id))
+     return answer({error:'Invalid attraction ID'},400);
+    const item=await env.ATTRACTIONS.prepare(
+     "SELECT id,name,city,state,category,address,latitude,longitude,website,source_name,source_url,license,confidence,image_url,image_attribution,last_seen FROM attractions WHERE id=? AND status='listed' LIMIT 1"
+    ).bind(id).first();
+    if(!item)return answer({error:'Attraction not found'},404);
+    return answer({item:{...item,website:safeSite(item.website),source_url:safeSite(item.source_url),
+     image_url:safeSite(item.image_url),sponsored:false,card_eligible:!!(item.name&&item.source_url&&item.license),
+     card_kind:'attraction'},note:'Source-backed directory entry, not a live booking or paid advertisement.'});
+   }
    if(url.pathname==='/api/attractions/stats'){
     const a=await env.ATTRACTIONS.prepare("SELECT state,COUNT(*) total,MAX(last_seen) last_seen FROM attractions WHERE status='listed' GROUP BY state ORDER BY CASE state WHEN 'CO' THEN 0 ELSE 1 END,state").all();
     const b=await env.ATTRACTIONS.prepare("SELECT state,display_name,status,last_snapshot FROM attraction_states ORDER BY CASE state WHEN 'CO' THEN 0 ELSE 1 END,state").all();
