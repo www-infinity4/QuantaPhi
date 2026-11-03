@@ -1,7 +1,7 @@
 // Original News Phi articles are static first-party writing. Live cards only link to sources.
 // No wallet/auth/session reads. Never copy full third-party articles.
 const ENDPOINT='https://news-phi-feed.marvaseater.workers.dev/v1/news/feed';
-const MAX_AGE=48*60*60*1000;
+const MAX_AGE=24*60*60*1000;
 export function pickFreshArticles(rows,now=Date.now()){
  const output=[],seen=new Set();
  for(const item of Array.isArray(rows)?rows:[]){
@@ -46,7 +46,7 @@ if(typeof document!=='undefined'){
   if(controls)controls.hidden=stories.length<=1;
   if(counter)counter.textContent=stories.length?(active+1)+' / '+stories.length:'';
   if(!stories.length){
-   if(previousCount&&status)status.textContent='Headlines have passed the 48-hour freshness window. Refresh to check for new stories.';
+   if(previousCount&&status)status.textContent='Headlines have passed the 24-hour freshness window. Refresh to check for new stories.';
    if(rotation){clearInterval(rotation);rotation=null;}
    return;
   }
