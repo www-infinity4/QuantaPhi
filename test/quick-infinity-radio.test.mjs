@@ -35,7 +35,7 @@ test('original cover has a known bundled image and fails gracefully',()=>{
 });
 
 function playerFixture(snapshotCount=129){
- const all=[],pending=[];
+ const all=[],pending=[],events=[];
  const element=tag=>{
   const listeners=new Map(),attrs=new Map();
   const node={tagName:tag,children:[],paused:true,ended:false,
@@ -55,10 +55,12 @@ function playerFixture(snapshotCount=129){
  const store=new Map();
  const document={head:element('head'),createElement:element,getElementById:id=>all.find(node=>node.id===id)||null};
  vm.runInNewContext(player,{document,URL,console,navigator:{},setInterval(){},
+   window:{dispatchEvent(event){events.push(event)}},
+   CustomEvent:class{constructor(type,{detail}){this.type=type;this.detail=detail}},
    localStorage:{getItem(key){return store.get(key)||null},setItem(key,value){store.set(key,value)}},
    fetch:async(url)=>({ok:true,json:async()=>({tracks:String(url).includes('raw.githubusercontent.com')?stableCatalog:catalog})})});
  return {audio:all.find(node=>node.tagName==='audio'),play:document.getElementById('irQuickPlay'),
-  status:all.find(node=>node.className==='ir-quick-status'),next:document.getElementById('irQuickNext'),pending,store};
+  status:all.find(node=>node.className==='ir-quick-status'),next:document.getElementById('irQuickNext'),pending,store,events};
 }
 
 const catalogReady=async()=>{await new Promise(resolve=>setImmediate(resolve))};
@@ -126,4 +128,23 @@ test('stale public 129-song catalog is supplemented by verified 274-song bootstr
  assert.equal(JSON.parse(f.store.get('infinityRadio:quickFullCatalog:v1')).length,274);
  f.play.emit('click');
  assert.match(f.audio.src,/catalog-274\.mp3$/);
+});
+
+test('homepage radio offers load same approved album shelf and style as full station',()=>{
+ assert.match(home,/\/infinity-radio\/radio-album-offers\.css\?v=/);
+ assert.match(home,/\/infinity-radio\/radio-album-offers\.js\?v=/);
+ assert.equal((home.match(/\/infinity-radio\/radio-album-offers\.js\?v=/g)||[]).length,1);
+});
+test('a verified play notifies album offers, but pause and delayed results do not fabricate a new track',async()=>{
+ const f=playerFixture();await catalogReady();
+ f.play.emit('click');
+ assert.equal(f.events.filter(x=>x.type==='infinityradio:track-start').length,0);
+ f.pending[0].resolve();await catalogReady();
+ const starts=f.events.filter(x=>x.type==='infinityradio:track-start');
+ assert.equal(starts.length,1);
+ assert.match(starts[0].detail.track.title,/Catalog song 129/);
+ f.play.emit('click');
+ f.audio.emit('error');
+ f.audio.emit('ended');
+ assert.equal(f.events.filter(x=>x.type==='infinityradio:track-start').length,1);
 });
