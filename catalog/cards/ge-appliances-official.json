@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "slug": "ge-appliances-official",
+  "title": "GE Appliances",
+  "category": "Home appliances",
+  "website": "https://www.geappliances.com/",
+  "image": "https://iprsoftwaremedia.com/112/files/20262/69a5f62a3d6332de6c041399_GE%20Appliances%20Logo/GE%20Appliances%20Logo_d655e67e-dd7a-4d98-8a02-c81175925609-prv.png?v=d655e67e-dd7a-4d98-8a02-c81175925609",
+  "imageAlt": "GE Appliances blue emblem and wordmark",
+  "description": "Browse official GE Appliances refrigerators, ranges, dishwashers and other home appliances. This independent QuantaPhi directory card is not affiliated with GE Appliances.",
+  "interactionRequest": "Open the official GE Appliances catalog. Product selection and checkout remain on the official website.",
+  "kind": "visit",
+  "searchTemplate": "",
+  "videoId": "",
+  "previewMode": "interactive",
+  "status": "unlisted",
+  "sourceEvidence": {
+    "officialWebsite": "https://www.geappliances.com/",
+    "officialPressroomLogo": "https://pressroom.geappliances.com/file/ge-appliances-logo",
+    "verifiedOn": "2026-11-03"
+  },
+  "storage": {
+    "cloudflareD1": "quantaphi-quick-cards",
+    "table": "quick_cards",
+    "worker": "quantaphi-quick-card-publisher",
+    "expectedRoute": "https://quantaphi.org/cards/ge-appliances-official",
+    "databaseReadbackVerified": true,
+    "publicHttpReadbackVerified": false
+  },
+  "editorialNotes": "Independent third-party navigation card. Do not present as GE sponsorship, invent pricing, or claim QuantaPhi checkout. Review before main-carousel placement."
+}
