@@ -22,6 +22,7 @@ test('one server-side ballot per verified voter and community-only editorial lay
  assert.match(sql,/CHECK\s*\(length\(voter_hash\)=64\)/i);
  const worker=read('workers/stay-in-vote/worker.mjs');
  assert.match(worker,/ON CONFLICT\(poll_id,voter_hash\)/);
+ assert.match(worker,/SELECT id,kind,title,details,source_url,open_at,closes_at,status FROM vote_polls/);
  assert.match(worker,/crypto\.subtle\.sign\('HMAC'/);
  assert.doesNotMatch(worker,/winnerOfOfficialElection|autoCertify|mintToken|wallet_balance|new URL\(req.url\).searchParams.get\('winner'\)/);
 });
