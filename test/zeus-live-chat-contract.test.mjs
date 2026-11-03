@@ -35,7 +35,7 @@ test('Zeus provides one visible quest composer that sends to the real embedded A
  assert.match(js,/quantaphi:bubbles:quest/);
  assert.match(js,/quantaphi:bubbles:quest-ack/);
  assert.match(js,/event\.origin!==window\.location\.origin/);
- assert.match(js,/event\.source===.*contentWindow/);
+ assert.match(js,/event\.source!==iframe\?\.contentWindow/);
  assert.match(js,/setMode\('chat'\)/);
 });
 test('Bubbles accepts Zeus user text with the same sendMessage engine and no owner-tool bypass',()=>{
