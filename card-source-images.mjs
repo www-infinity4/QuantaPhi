@@ -74,16 +74,24 @@ export function mountCardSourceImage(art,card,{small=false,discover=fetchSpotlig
   image.src=url;
  });
  const run=async()=>{
-  for(const url of candidates){if(await show(url,card.official||card.url))return}
+  // OG logos are useful fallback identity, but never block discovery of an
+  // actual product/press/attraction photograph.
+  for(const url of candidates.filter(url=>!isIdentityImage(url))){
+   if(await show(url,card.official||card.url))return;
+  }
   const inOracleStage=Boolean(art.closest?.('#oracleCardStage,.oracle-card-deck-stage'));
-  if((small&&!inOracleStage)||!shouldDiscoverSourcePhoto(card))return;
-  try{
-   const rows=await discover({...card,category:card.category||card.kind});
-   for(const row of rows.slice(0,5)){
-    if(!publicWebsiteUrl(row.url)||!sourceImageUrl(row.image))continue;
-    if(await show(row.image,row.url,row.title))return;
-   }
-  }catch{/* Source search is best-effort; never remove working card controls. */}
+  if((!small||inOracleStage)&&shouldDiscoverSourcePhoto(card)){
+   try{
+    const rows=await discover({...card,category:card.category||card.kind});
+    for(const row of rows.slice(0,5)){
+     if(!publicWebsiteUrl(row.url)||!sourceImageUrl(row.image))continue;
+     if(await show(row.image,row.url,row.title))return;
+    }
+   }catch{/* Source search is best-effort; never remove working card controls. */}
+  }
+  for(const url of candidates.filter(isIdentityImage)){
+   if(await show(url,card.official||card.url))return;
+  }
  };
  if(typeof IntersectionObserver==='undefined'){if(!small)void run();else if(candidates.length)void run();return}
  const observer=new IntersectionObserver(entries=>{
