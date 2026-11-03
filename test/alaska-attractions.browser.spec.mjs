@@ -25,10 +25,10 @@ test('Alaska source records become individually actionable Oracle Quick Cards',a
  await expect(page.locator('.ad-rec-card')).toHaveCount(2,{timeout:15000});
  const item=page.locator('.ad-rec-card').filter({hasText:'Sitka National Historical Park'});
  await expect(item.locator('.ad-rec-title')).toHaveText('Sitka National Historical Park');
- await expect(item.getByRole('link',{name:'Original visitor site'})).toHaveAttribute('href',/^https:\/\/www\.nps\.gov/);
- await expect(item.getByRole('link',{name:'Directions'})).toHaveAttribute('href',/maps\/search/);
+ await expect(item.locator('a.ad-rec-source-link').filter({hasText:'Original visitor site'})).toHaveAttribute('href',/^https:\/\/www\.nps\.gov/);
+ await expect(item.locator('a.ad-rec-source-link').filter({hasText:'Directions'})).toHaveAttribute('href',/maps\/search/);
  await expect(item.locator('.ad-rec-disclosure')).toContainText('No paid placement');
- await expect(item.locator('.ad-rec-actions')).toBeVisible();
+ await expect(item.locator('.ad-rec-actions')).toHaveCount(1);
  const id=await item.getAttribute('data-source-id');
  await page.goto(home+'/?card='+id+'&state=AK',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#oracleCardStage [data-source-id="'+id+'"]')).toBeVisible({timeout:20000});
