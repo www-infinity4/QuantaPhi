@@ -12,9 +12,10 @@ if(root){
  root.append(warning);
  const actions=el('div',undefined,'siv-actions');
  const refresh=el('button','Refresh community votes');refresh.type='button';refresh.className='siv-button';
+ const signin=el('a','Connect StarQuest account');signin.href='/wallet-recovery.html';signin.className='siv-button siv-secondary';
  const bubble=el('a','Research with Bubbles');bubble.href='/bubbles.html';bubble.className='siv-button siv-secondary';
  const official=el('a','How results become official');official.href='https://www.eac.gov/election-officials/election-results-canvass-and-certification';official.target='_blank';official.rel='noopener noreferrer';official.className='siv-source';
- actions.append(refresh,bubble,official);root.append(actions);
+ actions.append(refresh,signin,bubble,official);root.append(actions);
  const status=el('p','Checking the independent community ballot service…','siv-status');status.setAttribute('role','status');root.append(status);
  const board=el('div',undefined,'siv-board');root.append(board);
  const safeUrl=value=>{try{const u=new URL(value);return u.protocol==='https:'?u.href:null}catch{return null}};
