@@ -80,9 +80,10 @@ test('homepage mounts the original moving-card source bank with distinct layouts
   assert.match(home,/coupon-quick-cards\.mjs/);
   assert.match(home,/coupon-quick-cards\.css/);
   assert.match(deck,/#couponDiscoveryCards \.iqc-card\[data-source-id\]/);
-  for(const id of ['pepsi','mello-yello','coupon-wallet']){
-    assert.match(ui,new RegExp(id));
-  }
+  // The card instances are generated from the verified two-brand catalog;
+  // don't require brand ids to be duplicated as UI string literals.
+  assert.match(ui,/COUPON_BRANDS\.map\(createBrandCard\)/);
+  assert.match(ui,/coupon-wallet/);
   assert.match(ui,/quantaphi:source-cards-ready/);
   assert.match(ui,/mountCardActions/);
   assert.match(ui,/data|sourceReady/);
