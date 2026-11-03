@@ -3,7 +3,7 @@ issue: 1626
 project: "QuantaPhi autonomous site integrity — Platinum and physics follow-through"
 state: implementing
 dot: "🟡"
-progress_percent: "60 estimated — verified source reproductions and repairs, CI/production still pending"
+progress_percent: 60
 progress_basis: "2 source defects repaired on branch, 1 guarded scanner enhancement; 0/2 release gates complete"
 sessions_spent: 1
 sessions_remaining_estimate: "1–2 focused CI/acceptance sessions; unknown deployment timing"
