@@ -1,0 +1,50 @@
+name: Infinity Wireless production readback
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/infinity-wireless-production-readback.yml'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/infinity-wireless-production-readback.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-readback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Confirm public Cloudflare wireless Worker routes and page assets
+        run: |
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          const base='https://quantaphi.org';
+          async function get(path){
+            const response=await fetch(base+path,{redirect:'follow',signal:AbortSignal.timeout(12000),headers:{'User-Agent':'QuantaPhi-Release-Readback/1.0'}});
+            const text=await response.text();
+            assert.equal(response.status,200,path+': '+response.status+' '+text.slice(0,200));
+            return {response,text};
+          }
+          const health=await get('/api/wireless/health');
+          const status=JSON.parse(health.text);
+          assert.equal(status.ok,true);
+          assert.equal(status.service,'infinity-wireless-intake');
+          assert.equal(status.storage,'connected');
+          assert.equal(status.serviceActive,false);
+          const page=await get('/wireless/');
+          assert.ok(page.text.includes('id="order-form"'));
+          assert.ok(page.text.includes('Issue Build Order'));
+          assert.match(page.text,/not live|not active|not verified/i);
+          const js=await get('/wireless/order.mjs');
+          assert.ok(js.text.includes('/api/wireless/orders'));
+          const artwork=await get('/wireless/switchboard.svg');
+          assert.ok(artwork.text.includes('<svg '));
+          const home=await get('/');
+          assert.ok(home.text.includes('id="infinityWirelessCard"'));
+          console.log('Production readback verified the D1 API, page, script, illustration and homepage card.');
+          console.log('This verifies website transport only; no cellular network was activated.');
+          NODE
