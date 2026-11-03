@@ -18,17 +18,24 @@ fence: null
 last_observed_at_utc: "2026-11-03"
 repo: www-infinity4/QuantaPhi
 branch: fix/identity-session-profile-1506-20261103
-head_sha: null
-pr: null
+head_sha: 315f7431be3224ba46d00fc37bf7888ce1294886
+pr: https://github.com/www-infinity4/QuantaPhi/pull/1636
 tests:
-  - "Focused preview tests: RED observed locally before implementation; CI pending"
-ci: []
-merged: false
-deployed: false
-live_verified: false
+  - "Focused preview RED locally before implementation; exact-head identity-settings CI passed"
+ci:
+  - "PR #1636: seven GitHub Actions workflow runs successful"
+merged: true
+deployed: true
+live_verified: true
 blocker: "No authenticated private intake Worker or security release approval; user-facing SSN, ID photo, bank and card intake stays disabled"
-next_action: "Verify exact-head identity-settings CI and independent diff review; merge safe session UI only if green"
+next_action: "Implement and test authenticated ordinary-profile persistence with scoped consent; keep SSN/ID intake locked"
 ---
+
+## November 3 merge and production readback
+- Scoped session-only profile UI merged via PR #1636 on main: `315f7431be3224ba46d00fc37bf7888ce1294886`.
+- Seven exact-head GitHub Actions workflows reported success, including the identity settings and unfinished-work contracts.
+- Public readback of `https://quantaphi.org/bubbles-identity-settings.html` confirmed new normal profile fields and the explicit verification hold, with `www` routing to the same page.
+- **The merged/deployed/live flags above describe this limited page milestone only, not a deployed identity proofing service.** No real SSN/ID proof intake and no authenticated profile storage.
 
 ## November 3 bounded implementation
 - Ordinary session-only profile adds optional preferred name, contact email, city, region, postal and country.
