@@ -29,6 +29,14 @@ export function pickFreshSource(rows,now=Date.now()){
   seen.add(url);return true;
  }).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt))[0]||null;
 }
+export function isVerifiedFullReport(payload,url){
+ const paragraphs=Array.isArray(payload?.paragraphs)?payload.paragraphs:[];
+ return payload?.ok===true&&payload?.researchMode==='gpt-source-grounded'&&
+  !!https(payload?.sourceUrl)&&https(payload.sourceUrl)===https(url)&&
+  paragraphs.length>=6&&paragraphs.length<=12&&
+  paragraphs.every(x=>typeof x==='string'&&tidy(x,1800).length>=75)&&
+  paragraphs.join(' ').length>=1500;
+}
 if(typeof document!=='undefined'){
  const featured=document.getElementById('featured-articles');
  const status=document.getElementById('editorial-fresh-status');
@@ -37,7 +45,7 @@ if(typeof document!=='undefined'){
  const next=document.getElementById('full-next');
  const pause=document.getElementById('full-pause');
  const archive=document.getElementById('archive-articles');
- let sources=[],position=0,paused=false,rotation=null,revision=0;
+ let sources=[],position=0,paused=false,rotation=null,revision=0,feedVersion=0;
  const articleCache=new Map();
  function el(tag,text,cls){
   const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;
@@ -103,7 +111,7 @@ if(typeof document!=='undefined'){
      body:JSON.stringify({url}),signal:AbortSignal.timeout(28000)});
     if(!response.ok)throw Error('read_failed');
     payload=await response.json();
-    if(payload.ok&&payload.sourceUrl===url&&Array.isArray(payload.paragraphs))articleCache.set(url,payload);
+    if(isVerifiedFullReport(payload,url))articleCache.set(url,payload);
    }catch{payload=null;}
   }
   if(turn!==revision)return;
@@ -111,7 +119,7 @@ if(typeof document!=='undefined'){
   const h=el('h3');h.append(link(tidy(article.title,200),url));
   report.append(h,el('p',new Date(article.publishedAt).toLocaleString()+' · '+new URL(url).hostname,'meta'));
   const paragraphs=Array.isArray(payload?.paragraphs)?payload.paragraphs.filter(x=>tidy(x,1800).length>=75):[];
-  if(payload?.sourceUrl===url&&payload.researchMode==='gpt-source-grounded'&&paragraphs.length>=6&&paragraphs.join(' ').length>=1500){
+  if(isVerifiedFullReport(payload,url)){
    for(const paragraph of paragraphs.slice(0,12))report.append(el('p',tidy(paragraph,1800)));
    report.append(el('p','Fresh original-source explanation generated from publisher reporting; verify details with the linked primary source.','meta'));
    reportStatus.textContent='New source-backed long-form reader · original publisher linked';
@@ -123,16 +131,18 @@ if(typeof document!=='undefined'){
  }
  function step(){if(!sources.length)return;position=(position+1)%sources.length;void displayReport();}
  async function updateSources(){
+  const feedTurn=++feedVersion;
   try{
    const response=await fetch(LIVE_API+'/feed',{cache:'no-store',signal:AbortSignal.timeout(20000)});
    if(!response.ok)throw Error('no_feed');
    const payload=await response.json();
    if(payload.cloud!==true||!Array.isArray(payload.articles))throw Error('invalid_feed');
+   if(feedTurn!==feedVersion)return;
    const old=sources[position]?.url;
    sources=sourceList(payload.articles);
    position=Math.max(0,sources.findIndex(a=>a.url===old));
    await displayReport();
-  }catch{sources=[];reportUnavailable('Current verified publisher reporting is unavailable. Old articles remain archived, not featured.');}
+  }catch{if(feedTurn!==feedVersion)return;revision++;sources=[];position=0;reportUnavailable('Current verified publisher reporting is unavailable. Old articles remain archived, not featured.');}
  }
  next?.addEventListener('click',step);
  pause?.addEventListener('click',()=>{
@@ -143,6 +153,8 @@ if(typeof document!=='undefined'){
  updateSources();
  setInterval(loadOriginal,15*60*1000);
  setInterval(updateSources,15*60*1000);
+ // Independently expire a displayed report while the tab is open; never rely on a successful network request.
+ setInterval(()=>{const current=sources[position];sources=sourceList(sources);if(!sources.length){revision++;reportUnavailable('No new verified full report within the last 24 hours. Older articles are archived.');return;}if(!current||!sources.some(x=>x.url===current.url)){position=0;void displayReport();}},60*1000);
  rotation=setInterval(()=>{
   if(!document.hidden&&!paused&&sources.length>1&&!(typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches))step();
  },30000);
