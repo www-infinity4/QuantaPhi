@@ -32,7 +32,11 @@ test('Alaska source records become individually actionable Oracle Quick Cards',a
  await expect(item.locator('.ad-rec-actions')).toHaveCount(1);
  const id=await item.getAttribute('data-source-id');
  await page.goto(home+'/?card='+id+'&state=AK',{waitUntil:'domcontentloaded'});
- await expect(page.locator('#oracleCardStage [data-source-id="'+id+'"]')).toBeVisible({timeout:20000});
+ const opened=page.locator('#oracleCardStage [data-source-id="'+id+'"]');
+ await expect(opened).toBeVisible({timeout:20000});
+ await expect(opened.getByRole('link',{name:'Original visitor site'})).toHaveAttribute('href',/^https:\/\/www\.nps\.gov/);
+ await expect(opened.getByRole('link',{name:'Directions'})).toHaveAttribute('href',/maps\/search/);
+ await expect(opened.locator('.ad-rec-actions')).toBeVisible();
 });
 
 test('Quant AI fetches Alaska once, reopens shared Colorado source cards and never duplicates the active card',async({page})=>{
