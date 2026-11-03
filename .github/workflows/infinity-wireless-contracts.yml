@@ -4,8 +4,10 @@ on:
     paths:
       - 'wireless/**'
       - 'workers/infinity-wireless/**'
+      - 'workers/infinity-wireless-page/**'
       - 'test/infinity-wireless.test.mjs'
       - 'test/infinity-wireless-site.test.mjs'
+      - 'test/infinity-wireless-page.test.mjs'
       - 'test/infinity-wireless.browser.spec.mjs'
       - '.github/workflows/infinity-wireless-contracts.yml'
   push:
@@ -13,8 +15,10 @@ on:
     paths:
       - 'wireless/**'
       - 'workers/infinity-wireless/**'
+      - 'workers/infinity-wireless-page/**'
       - 'test/infinity-wireless.test.mjs'
       - 'test/infinity-wireless-site.test.mjs'
+      - 'test/infinity-wireless-page.test.mjs'
       - 'test/infinity-wireless.browser.spec.mjs'
       - '.github/workflows/infinity-wireless-contracts.yml'
   workflow_dispatch:
@@ -35,6 +39,7 @@ jobs:
           node --check wireless/order.mjs
           node --test test/infinity-wireless.test.mjs
           node --test test/infinity-wireless-site.test.mjs
+          node --test test/infinity-wireless-page.test.mjs
       - name: Read back isolated Cloudflare staging health
         run: |
           node --input-type=module -e '
