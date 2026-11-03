@@ -1,6 +1,7 @@
 // Fresh editorial and source-backed full-story reader, separate from archival pages.
 // No stale-as-current fallback; never copies publisher HTML into our page.
 const LIVE_API='https://news-phi-feed.marvaseater.workers.dev/v1/news';
+const READ_API=LIVE_API+'/read'; // https://news-phi-feed.marvaseater.workers.dev/v1/news/read
 const FRESH_SOURCE_MS=24*60*60*1000;
 const FRESH_EDITORIAL_MS=36*60*60*1000;
 const tidy=(s,n=300)=>String(s||'').replace(/\s+/g,' ').trim().slice(0,n);
@@ -98,7 +99,7 @@ if(typeof document!=='undefined'){
   let payload=articleCache.get(url);
   if(!payload){
    try{
-    const response=await fetch(LIVE_API+'/read',{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},
+    const response=await fetch(READ_API,{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},
      body:JSON.stringify({url}),signal:AbortSignal.timeout(28000)});
     if(!response.ok)throw Error('read_failed');
     payload=await response.json();
