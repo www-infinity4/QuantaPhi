@@ -1146,7 +1146,17 @@ const importLabel=create('label','ba-privacy-label','Import ChatGPT or Gemini hi
 const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
 importGPT.setAttribute('aria-label','Import ChatGPT conversations.json or Gemini Apps MyActivity.json from Google Takeout');
 const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Choose each ChatGPT conversations.json or Google Takeout Gemini Apps MyActivity.json file. Bubbles indexes only the records actually present in that export.');
-privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
+// Deleting an owner backup is separate from clearing the visible chat.
+const advancedDeletion=create('details','ba-danger-zone');
+const deletePhraseLabel=create('label','ba-privacy-label','Type ERASE BACKUP to delete only the optional Bubbles transcript backup');
+const deletePhrase=create('input','ba-field');deletePhrase.type='text';
+deletePhrase.autocomplete='off';deletePhrase.spellcheck=false;
+deletePhrase.setAttribute('aria-label','Type ERASE BACKUP to confirm transcript backup deletion');
+deletePhraseLabel.append(deletePhrase);
+cloudDelete.disabled=true;
+deletePhrase.addEventListener('input',()=>{cloudDelete.disabled=deletePhrase.value!=='ERASE BACKUP';});
+advancedDeletion.append(create('summary','','Advanced · delete saved backup'),deletePhraseLabel,cloudDelete);
+privacy.append(privacyLabel,cloudLabel,clearChat,advancedDeletion,importLabel,importGPT,importStatus);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
@@ -2147,10 +2157,18 @@ cloudToggle.addEventListener('change',async()=>{
 clearChat.textContent=embedded?'New card chat':'Start new chat';
 clearChat.addEventListener('click',()=>void startConversation());
 cloudDelete.addEventListener('click',async()=>{
- if(!cloudChat||!confirm('Erase the extra Bubbles transcript stored under your verified wallet? This will not erase the separate Robot Brain job records.'))return;
- try{await longMemory.clear({cloudToo:true});cloudChat=false;cloudToggle.checked=false;cloudDelete.hidden=true;
-  save(CLOUD_MEMORY_KEY,false);memoryHint.textContent='Optional wallet-scoped transcript erased. Owner Brain archive is unchanged.'}
- catch(error){memoryHint.textContent='Could not erase wallet archive: '+String(error.message||error)}
+ if(!cloudChat)return;
+ if(deletePhrase.value!=='ERASE BACKUP'){
+  memoryHint.textContent='Backup unchanged. Type ERASE BACKUP exactly in Advanced settings first.';
+  return;
+ }
+ try{
+  await longMemory.clear({cloudToo:true});
+  cloudChat=false;cloudToggle.checked=false;cloudDelete.hidden=true;
+  deletePhrase.value='';cloudDelete.disabled=true;advancedDeletion.open=false;
+  save(CLOUD_MEMORY_KEY,false);
+  memoryHint.textContent='Optional wallet-scoped transcript erased. Owner Brain archive is unchanged.';
+ }catch(error){memoryHint.textContent='Could not erase wallet archive: '+String(error.message||error)}
 });
 let panelWasOpened=false;
 function toggle(open){
