@@ -25,8 +25,8 @@ ci:
 merged: false
 deployed: true
 live_verified: true
-blocker: "Cron first live ingestion, exact PR head CI/security review, app integration unverified."
-next_action: "Run exact-PR-head tests in GitHub CI and inspect D1 ingest_runs after first scheduled collector event."
+blocker: "First actual cron at 2026-11-03 00:00:54 UTC failed http_403 for all three GitHub API feeds. Atom fallback is source-only and unverified until exact-head CI and a later Cloudflare deploy/cron readback; independent review and app integration remain pending."
+next_action: "Confirm exact-head CI for the official Atom fallback, obtain independent review, deploy only the isolated evidence Worker, and inspect new D1 ingest_runs receipts."
 ---
 
 ## Canonical issue
@@ -46,3 +46,9 @@ https://github.com/www-infinity4/QuantaPhi/issues/1489
 - Run reproducible exact-head Node tests, security review, and optional independent browser test; merge reviewed branch.
 - Integrate as read-only Bubbles and Robot Brain research tool, with source citations shown in the same conversation and no false execution claims.
 - Preserve public/private separation; never insert owner personal context, tokens, sensitive receipts into public evidence database.
+
+## Continuity repair checkpoint · 2026-11-03 00:00–00:30 UTC
+- Read-only Cloudflare D1 check: 8 evidence rows, 11 category rows. First actual scheduled collector wrote three failure receipts at 2026-11-03 00:00:54 UTC: OpenHands, LangGraph, SWE-agent each `http_403`, imported 0. This is a **verified collector blocker**, not a zero-row catalog or successful ingestion.
+- Fixed the canonical issue-link contract; PR #1490 head `9e359d1ae34271ac14f42ab9e4ba7f568f357dbb` passed all five observed GitHub Actions groups, including the previously failing unfinished-ledger workflow.
+- Follow-up source-only commits: `ba3b2384ef80e95b0c23e154c9630974ba9a39e4` (official release Atom fallback), `10eb83724015eb4942f123276e31271b39b6adb5` (regex correction), `07c7b8987a1b455ed3ffe6cc37cc7af0c912f690` (success/failure regression tests). The fallback has **not** been deployed or proven to bypass the Cloudflare 403.
+- Next: require green exact-head CI, independent source review, then separately deploy the isolated Worker and verify a real new `ingest_runs` success receipt. Do not touch wallet, identity or Bubbles production wiring.
