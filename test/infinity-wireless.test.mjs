@@ -39,7 +39,7 @@ test('fails closed without real D1 storage and does not fake a receipt',async()=
 test('rejects cross-site submission and returns no private receipt without its token',async()=>{
  const denied=await worker.fetch(request('/api/wireless/orders','POST',base,{Origin:'https://example.net'}),{WIRELESS_DB:{}});
  assert.equal(denied.status,403);
- const unauthed=await worker.fetch(request('/api/wireless/orders/IW-ABCDEF1234567890'),{WIRELESS_DB:{}});
+ const unauthed=await worker.fetch(request('/api/wireless/orders/IW-ABCDEF1234567890ABCD'),{WIRELESS_DB:{}});
  assert.equal(unauthed.status,401);
 });
 
