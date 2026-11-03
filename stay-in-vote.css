@@ -1,0 +1,33 @@
+/* Scoped, mobile-first styling. Original licensed-free SVG, neutral controls and readable text. */
+#stayInVoteCard{box-sizing:border-box;max-width:100%;padding:16px;background:#f5f6f4;color:#233239;border:1px solid #d0d9d9;border-radius:20px;font:500 16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:.12px}
+#stayInVoteCard *{box-sizing:border-box}
+#stayInVoteCard .siv-head{display:grid;gap:12px}
+#stayInVoteCard .siv-head img{display:block;width:100%;height:auto;max-height:270px;aspect-ratio:7/4;object-fit:cover;border-radius:14px;background:#e2ecf1}
+#stayInVoteCard .siv-intro small{display:block;color:#536c73;font-size:12px;font-weight:850;letter-spacing:1px}
+#stayInVoteCard h2{margin:4px 0;font:850 26px/1.22 system-ui,sans-serif;letter-spacing:.18px;color:#213b42}
+#stayInVoteCard h3{margin:0 0 5px;font:800 19px/1.3 system-ui,sans-serif;color:#213b42}
+#stayInVoteCard h4{margin:0 0 6px;font-size:16px}
+#stayInVoteCard p{margin:8px 0;line-height:1.65}
+#stayInVoteCard small{color:#526671;font-size:13px;line-height:1.5}
+#stayInVoteCard .siv-disclaimer{border-left:3px solid #607885;padding:10px 12px;background:#e9eef0;border-radius:0 10px 10px 0;font-size:14px}
+#stayInVoteCard .siv-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}
+#stayInVoteCard .siv-actions :is(button,a),#stayInVoteCard .siv-vote{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:9px 13px;border:1px solid #a3b1b7;border-radius:11px;text-decoration:none;font:800 14px/1.35 system-ui,sans-serif;cursor:pointer;color:#253940;background:#fff}
+#stayInVoteCard .siv-actions .siv-button{background:#e4eaeb}
+#stayInVoteCard .siv-actions .siv-source{border:none;background:none;padding:5px 0;text-decoration:underline}
+#stayInVoteCard .siv-status{font-size:14px;min-height:1.4em;color:#42575f}
+#stayInVoteCard .siv-board{display:grid;gap:14px}
+#stayInVoteCard .siv-poll{padding:14px;background:#fff;border:1px solid #d5dddf;border-radius:14px}
+#stayInVoteCard .siv-poll>.siv-source{display:inline-block;margin:7px 0;color:#28566f}
+#stayInVoteCard .siv-options{display:grid;gap:11px;margin:14px 0}
+#stayInVoteCard .siv-choice{display:grid;gap:5px;padding:11px;background:#f2f6f7;border-radius:12px}
+#stayInVoteCard .siv-choice-title{font-size:16px;font-weight:750;line-height:1.35}
+#stayInVoteCard .siv-bar{height:9px;overflow:hidden;border-radius:12px;background:#d9e1e4}
+#stayInVoteCard .siv-bar>div{height:100%;background:#4c8291;border-radius:12px}
+#stayInVoteCard .siv-vote{justify-self:start;margin-top:6px;background:#e7eef0}
+#stayInVoteCard .siv-lead{font-size:14px;font-weight:750}
+#stayInVoteCard .siv-research{display:grid;gap:11px;margin-top:12px}
+#stayInVoteCard .siv-editorial{padding:12px;border:1px solid #d0dade;border-radius:12px;background:#f7f9f9}
+#stayInVoteCard .siv-editorial a{color:#245974;font-size:14px}
+#stayInVoteCard :is(a,button):focus-visible{outline:3px solid #376fce;outline-offset:3px}
+#stayInVoteCard button:disabled{opacity:.65;cursor:wait}
+@media(min-width:690px){#stayInVoteCard .siv-head{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}#stayInVoteCard .siv-research{grid-template-columns:repeat(2,minmax(0,1fr))}}
