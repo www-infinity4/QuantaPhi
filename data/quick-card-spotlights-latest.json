@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-03T02:53:28.579695Z",
+  "checked_at": "2026-11-03T03:20:11.175222Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -3464,7 +3464,7 @@
     },
     "durable-genelec": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://www.genelec.com/studio-monitors",
@@ -3472,7 +3472,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3481,7 +3481,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3490,7 +3490,7 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3499,19 +3499,19 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-miele": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": []
     },
     "durable-speed-queen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://speedqueen.com/",
@@ -3519,7 +3519,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3528,7 +3528,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3537,7 +3537,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3546,7 +3546,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3555,7 +3555,7 @@
           "title": "All Products - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3564,7 +3564,7 @@
           "title": "TR7 TR7006WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3573,7 +3573,7 @@
           "title": "TR7 TR7006BN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3582,14 +3582,14 @@
           "title": "TC5 TC5003WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-henry-numatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://numatic.com/",
@@ -3597,7 +3597,7 @@
           "title": "Home",
           "kind": "website",
           "description": "Numatic International the home of reliable, high performance, sustainable cleaning for all. UK’s No.1 in Professional Cleaning. Designed & Made in the UK. Committed to Sustainability.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3606,7 +3606,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3615,7 +3615,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3624,7 +3624,7 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3633,7 +3633,7 @@
           "title": "WBV370NX Pro Cordless Wet Vacuum",
           "kind": "website",
           "description": "The WBV370NX Pro Cordless Wet Vacuum. Eliminate the risk of slips, trips and falls with no cable. Perfect for cleaning up spills in high traffic areas.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3642,7 +3642,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3651,7 +3651,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3660,14 +3660,14 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-leica-camera-m-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://leica-camera.com/en-US/photography/cameras/m",
@@ -3675,7 +3675,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3684,7 +3684,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3693,7 +3693,7 @@
           "title": "Leica Metal Gray products on a podest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3702,7 +3702,7 @@
           "title": "Leica Q3 43 Formula 1® Edition",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3711,7 +3711,7 @@
           "title": "Leica Geovid Max 10x42 | Leica Camera US",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3720,7 +3720,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3729,7 +3729,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3738,14 +3738,14 @@
           "title": "Leica Metal Gray products on a podest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-garmin-handheld-gps-mariner": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://www.garmin.com/en-US/",
@@ -3753,7 +3753,16 @@
           "title": "Garmin",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "category": "Hardware, Electronics & Enclosures"
+        },
+        {
+          "url": "https://www.garmin.com/en-US/c/holiday-gift-guide-americas/",
+          "image": "https://res.garmin.com/homepage/2025-HOLIDAY/1-HOLIDAY-GIFT-GUIDE/HOLIDAY-GIFT-GUIDE-TOP-NAV.jpg",
+          "title": "Holiday Gift Guide",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3762,7 +3771,7 @@
           "title": "FĒNIX® 9",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3771,16 +3780,7 @@
           "title": "APPROACH® S72",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
-          "category": "Hardware, Electronics & Enclosures"
-        },
-        {
-          "url": "https://www.garmin.com/en-US/p/1967830/",
-          "image": "https://res.garmin.com/homepage/87258/87258-TN-NEW.jpg",
-          "title": "EDGE® 1060",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3789,7 +3789,7 @@
           "title": "Approach® S72 – 47 mm",
           "kind": "product",
           "description": "Silver/Citron Titanium Bezel with Fog Gray/Citron ComfortFit Fabric Band",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "799.99",
@@ -3804,7 +3804,7 @@
           "title": "CIRQA™ Smart Band",
           "kind": "product",
           "description": "Black",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "199.99",
@@ -3812,91 +3812,100 @@
             "evidence": "jsonld-offer",
             "availability": ""
           }
+        },
+        {
+          "url": "https://www.garmin.com/en-US/p/1967830/",
+          "image": "https://res.garmin.com/homepage/87258/87258-TN-NEW.jpg",
+          "title": "EDGE® 1060",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-fujitsu-fi-series-scanners": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": []
     },
     "durable-brother-monochrome-laser-printers": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://www.brother-usa.com/c/shop/printers",
-          "image": "https://cdn.media.amplience.net/i/brother/MFC-L2807DW_front_output_png?fmt=auto&$card-image-mobile$",
-          "title": "Brother Printer mfc-l2807dw front view",
+          "image": "https://cdn.media.amplience.net/i/brother/Brother_Image_-_Printers_-_1080_x_1080__1_?fmt=auto&$card-image-mobile$",
+          "title": "Printer on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
           "url": "https://www.brother-usa.com/c/shop/ink-toner",
-          "image": "https://cdn.media.amplience.net/i/brother/15288_1-LC406CXL_CartonCartridge-resized-resized?fmt=auto&$card-image-mobile$",
-          "title": "Brother cartridge image in blue",
+          "image": "https://cdn.media.amplience.net/i/brother/Brother_Image_-_Ink___Toner_-_1080_x_1080__1_?fmt=auto&$card-image-mobile$",
+          "title": "Ink Cartridge box on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
           "url": "https://www.brother-usa.com/c/shop/sewing-embroidery",
-          "image": "https://cdn.media.amplience.net/i/brother/10_SE700_emb_front_resized?fmt=auto&$card-image-mobile$",
-          "title": "Brother sewing machine SE700",
+          "image": "https://cdn.media.amplience.net/i/brother/Brother_Image_-_Sewing___Embroidery_-_1080_x_1080?fmt=auto&$card-image-mobile$",
+          "title": "Sewing machine on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
           "url": "https://www.brother-usa.com/c/shop/label-makers-printers",
-          "image": "https://cdn.media.amplience.net/i/brother/PT-D610BT-front-resized?fmt=auto&$card-image-mobile$",
-          "title": "Brother pt-D610BT front view",
+          "image": "https://cdn.media.amplience.net/i/brother/Brother_Image_-_Label_Makers___Printers_-_1080_x_1080_copy__1_?fmt=auto&$card-image-mobile$",
+          "title": "P-touch label maker on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
-          "url": "https://www.brother-usa.com/c/shop/deals",
+          "url": "https://www.brother-usa.com/c/shop/holiday-gift-guide",
+          "image": "https://assets.brother.com/transform/59426f30-1b72-498f-98fb-353dce0ff130/40516_MFC-J5010DW_Spinner_1",
+          "title": "Brother MFC-J5010DW INKvestment Wireless Color Inkjet All-in-One Printer",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": null
+        },
+        {
+          "url": "https://www.brother-usa.com/c/shop/holiday-gift-guide",
+          "image": "https://assets.brother.com/transform/7b38aedb-0555-424b-826b-11aac479e2aa/19658_Spinner_MFC-L3780CDW_1-jpg",
+          "title": "Brother MFC-L3780CDW Digital Color All-in-One Printer",
+          "kind": "product",
+          "description": "",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "category": "Hardware, Electronics & Enclosures",
+          "offer": null
+        },
+        {
+          "url": "https://www.brother-usa.com/c/shop/holiday-gift-guide",
           "image": "https://assets.brother.com/transform/e7c39825-07f7-4e91-82ff-c05a71309db8/19075_PTD215e-front-png",
           "title": "Brother PT-D215EMIKR P-touch Embellish Ribbon and Tape Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
         {
-          "url": "https://www.brother-usa.com/c/shop/deals",
-          "image": "https://assets.brother.com/transform/7af0f020-eee3-457a-a213-ebc396245e46/40378_PTD220ccbund",
-          "title": "Brother PT-D220 Label Maker Bundle",
+          "url": "https://www.brother-usa.com/c/shop/holiday-gift-guide",
+          "image": "https://assets.brother.com/transform/db9a19ed-c3d8-44bd-8e88-5738cbd6ee59/MFC-J1360DW_Spinners_1-jpg",
+          "title": "Brother MFC-J1360DW Wireless Color Inkjet All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
-          "category": "Hardware, Electronics & Enclosures",
-          "offer": null
-        },
-        {
-          "url": "https://www.brother-usa.com/c/shop/deals",
-          "image": "https://assets.brother.com/transform/2e9ead27-dcad-4e5f-84b3-49085832813a/20774_SDX230DIRBBNDL_Bundle-jpg",
-          "title": "Brother Disney ScanNCut DX SDX230DIRBBNDL Rotary Blade Bundle",
-          "kind": "product",
-          "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
-          "category": "Hardware, Electronics & Enclosures",
-          "offer": null
-        },
-        {
-          "url": "https://www.brother-usa.com/c/shop/deals",
-          "image": "https://assets.brother.com/transform/ff92c1da-7fce-4421-983f-558839a12ec1/21345_DCP-L2640DW_TN830XL-jpg",
-          "title": "Brother DCP-L2640DW Compact Monochrome Laser Multi-Function Printer with Bundle",
-          "kind": "product",
-          "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         }
@@ -3904,7 +3913,7 @@
     },
     "durable-texas-instruments-graphing-calculators": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://education.ti.com/",
@@ -3912,19 +3921,19 @@
           "title": "Algebra 1: Seven Important Calculator Functions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-casio-g-shock-classic-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": []
     },
     "durable-seiko-mechanical-automatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://www.seikowatches.com/us-en/products/diamondcollection",
@@ -3932,7 +3941,7 @@
           "title": "photo of diamond collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3941,7 +3950,7 @@
           "title": "image of new model",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3950,7 +3959,7 @@
           "title": "image of limited edition watch",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3959,7 +3968,7 @@
           "title": "image of diver category",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3968,7 +3977,7 @@
           "title": "King Seiko | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3977,7 +3986,7 @@
           "title": "Prospex | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3986,69 +3995,42 @@
           "title": "Presage | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-rolex": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": []
     },
     "durable-patek-philippe": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T13:15:27.551142Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://www.patek.com/en",
-          "image": "https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/250169-51882/pp-manufacture-pp6-entrance-interior-calatrava-cross-symbol",
+          "image": "https://patek-res.cloudinary.com/media/250169/51882",
           "title": "Patek Philippe Official Site | Luxury Watches for Men & Ladies",
           "kind": "website",
           "description": "Official website of the last family-owned Genevan luxury watch manufacturer. Enter the Patek Philippe universe to discover our watches and savoir-faire.",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
-          "category": "Tactical, Environmental & Transport Systems"
-        },
-        {
-          "url": "https://www.patek.com/en",
-          "image": "https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/256367-51882",
-          "title": "pp-manufacture-building-pp6-chemin-du-pont-centenaire-1",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
-          "category": "Tactical, Environmental & Transport Systems"
-        },
-        {
-          "url": "https://www.patek.com/en",
-          "image": "https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/282671-51882",
-          "title": "PP_plate-machinery-3",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
-          "category": "Tactical, Environmental & Transport Systems"
-        },
-        {
-          "url": "https://www.patek.com/en",
-          "image": "https://patek-res.cloudinary.com/dfsmedia/0906caea301d42b3b8bd23bd656d1711/282673-51882",
-          "title": "PP_bridge-beveling-15",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-pelican-cases": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://www.pelican.com/us/en",
-          "image": "https://pelicanweb-prod.s3.us-west-1.amazonaws.com/public/promos/hero/images/gift-guide-hero-c.jpg",
-          "title": "Return to Basecamp",
+          "image": "https://pelicanweb-prod.s3.us-west-1.amazonaws.com/public/promos/hero/images/deep-ember-desktop-c.jpg",
+          "title": "Deep Ember Has Arrived",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4057,7 +4039,7 @@
           "title": "pelican atx30 angled black 02",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4066,7 +4048,7 @@
           "title": "pelican 1615 air case check in airline case",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4075,7 +4057,7 @@
           "title": "pelican atx22 angled black 02",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4084,7 +4066,7 @@
           "title": "1615 Air",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4093,7 +4075,7 @@
           "title": "1535 Air",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4102,7 +4084,7 @@
           "title": "1510 Protector",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4111,14 +4093,14 @@
           "title": "V300PF5 Vault",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-nanuk": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://nanuk.com",
@@ -4126,7 +4108,7 @@
           "title": "NANUK Hard Cases - Durable, Protective Cases for Your Gear",
           "kind": "website",
           "description": "Discover NANUK hard cases in various sizes and colors, perfect for drones, cameras, medical equipment, and more. Made in North America for ultimate protection. Shop Online Now.",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4135,7 +4117,7 @@
           "title": "A tan Nanuk 935 best selling protection case, a rugged rolling hard case with its telescoping handle extended and wheels visible, floats against a light grey background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4144,7 +4126,7 @@
           "title": "A black Nanuk N-EDC 20 bag with a roll-top buckle closure and a water bottle in its side pocket is presented floating against a light gray background, highlighting its functionalit",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4153,7 +4135,7 @@
           "title": "A black Nanuk 905 hard case, part of the Nanuk bags and cases line, floats at an angle on a clean white background, highlighting its textured surface, handle, and latches.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4162,7 +4144,7 @@
           "title": "NANUK 935 - Black / Cubed Foam / Regular Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "254.95",
@@ -4177,7 +4159,7 @@
           "title": "NANUK 935 - Black / Cubed Foam / Heavy Duty Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "289.95",
@@ -4192,7 +4174,7 @@
           "title": "NANUK 935 - Black / Padded Divider / Regular Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "319.95",
@@ -4207,7 +4189,7 @@
           "title": "NANUK 935 - Black / Padded Divider / Heavy Duty Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "349.95",
@@ -4220,7 +4202,7 @@
     },
     "durable-zippo": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://zippo.com/collections/refillable-butane-inserts",
@@ -4228,7 +4210,7 @@
           "title": "Four butane inserts in colorful cases.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4237,7 +4219,7 @@
           "title": "Two classic Pipe Inserts - Brass and Chrome",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4246,7 +4228,7 @@
           "title": "Zippo Bit Safe 4-in-1 Screwdriver Lighter Insert standing at a 3/4 angle with the Phillips head and other screw bits displayed.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4255,7 +4237,7 @@
           "title": "Three packages each of Zippo wicks and flints on a white background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4264,7 +4246,7 @@
           "title": "Double Arc Rechargeable Lighter Insert",
           "kind": "product",
           "description": "Take the customization process one step further with your choice of flame type. The Double Arc Rechargeable Insert features two powerful plasma beams that ignite at the press of a button, offering a flameless and windproof flame source that can easily be recha",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "26.95",
@@ -4279,7 +4261,7 @@
           "title": "Bit Safe Screwdriver Insert",
           "kind": "product",
           "description": "The Bit Safe Lighter Insert packs a functional screwdriver into your favorite Zippo case*, adding compact utility to your everyday carry. Remove the 4-in-1 insert from your case and quickly and easily swap between the onboard Phillips, flathead and Torx screwd",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "19.95",
@@ -4294,7 +4276,7 @@
           "title": "Cotton and Felt Replacement Kit",
           "kind": "product",
           "description": "Keep your windproof lighter working at optimal performance with Zippo's Cotton and Felt Replacement Kit. Kit includes enough absorbent cotton for one windproof lighter fuel reservoir and a replacement felt pad. Genuine Zippo cotton and felt replacement kit for",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "6.95",
@@ -4307,7 +4289,7 @@
     },
     "durable-ronson": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://kb.zippo.com/?hsLang=en",
@@ -4315,7 +4297,7 @@
           "title": "Zippo Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4324,14 +4306,14 @@
           "title": "Z-Lo-Br_ZippoLockupHorizontal-2cReverse",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-maglite": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://maglite.com/collections/everyday",
@@ -4339,7 +4321,7 @@
           "title": "Home & Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4348,7 +4330,7 @@
           "title": "Outdoors & Travel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4357,7 +4339,7 @@
           "title": "Duty & Professional",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4366,7 +4348,7 @@
           "title": "Tactical & Military",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4375,7 +4357,7 @@
           "title": "Maglite® ML300L® 4-Cell D LED Flashlight –511-Meter Beam, Up to 434-Hour Runtime, 1,002 Lumens, 4 D-Cell Power, Quick Focus®, QuickClik® Multi-Mode Operation",
           "kind": "product",
           "description": "The Maglite® ML300L® 4D LED Flashlight is a full-size, high-performance flashlight built for home emergency preparedness, professional work, security, roadside use, camping, outdoor activities, and other situations where dependable long-range illumination and ",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "59.99",
@@ -4390,7 +4372,7 @@
           "title": "Maglite® Complete Home Flashlight Bundle - ML300L 4D Full Size, Mini Maglite Pro LED Compact Size, and Solitaire LED Small Keychain Size Flashlights - Black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "80.72",
@@ -4405,7 +4387,7 @@
           "title": "Maglite® ML150LR Rechargeable LED Flashlight – 458-Meter Beam, 1,082 Lumens, 52,555 Candela & Up to 79-Hour Runtime, Quick Focus®, QuickClik® & Fast-Charging LiFePO4 Power - Black ",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "129.99",
@@ -4420,7 +4402,7 @@
           "title": "Maglite® ML150LR Rechargeable LED Flashlight – 458-Meter Beam, 1,082 Lumens, 52,555 Candela & Up to 79-Hour Runtime, Quick Focus®, QuickClik® & Fast-Charging LiFePO4 Power - Black ",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "119.99",
@@ -4433,7 +4415,7 @@
     },
     "durable-surefire": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://www.surefire.com/categories/illumination/",
@@ -4441,7 +4423,7 @@
           "title": "Illumination",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4450,7 +4432,7 @@
           "title": "Suppressors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4459,7 +4441,7 @@
           "title": "EarPro",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4468,14 +4450,14 @@
           "title": "Parts & Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-toyota-land-cruiser-hilux-industrial-platforms": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://global.toyota/en/",
@@ -4483,7 +4465,7 @@
           "title": "Toyota Motor Corporation Official Global Website",
           "kind": "website",
           "description": "Toyota Motor Corporation Official Global Website―company, ir, newsroom, mobility, sustainability.",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4492,7 +4474,7 @@
           "title": "Toyota Launches New Hilux in Japan",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4501,7 +4483,7 @@
           "title": "Toyota Launches New Hilux in Japan",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4510,14 +4492,14 @@
           "title": "Welfare Initiatives",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-chris-king": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://chrisking.com",
@@ -4525,7 +4507,7 @@
           "title": "Chris King Precision Components",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4534,7 +4516,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4543,7 +4525,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4552,7 +4534,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4561,7 +4543,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4570,7 +4552,7 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4579,7 +4561,7 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4588,19 +4570,19 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-shimano-deore-xt-xtr-mechanical": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": []
     },
     "durable-phil-wood": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://philwood.com/",
@@ -4608,7 +4590,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4617,7 +4599,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4626,7 +4608,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4635,7 +4617,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4644,7 +4626,7 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4653,7 +4635,7 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4662,7 +4644,7 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4671,14 +4653,14 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-ortlieb": {
       "schema_version": 1,
-      "attempted_at": "2026-11-01T18:26:10.113191Z",
+      "attempted_at": "2026-11-03T03:20:11.175222Z",
       "items": [
         {
           "url": "https://de.ortlieb.com/collections/panniers-and-bike-bags",
@@ -4686,7 +4668,7 @@
           "title": "Fahrradtaschen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4695,7 +4677,7 @@
           "title": "Bikepacking",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4704,7 +4686,7 @@
           "title": "Gepäckträger",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4713,7 +4695,7 @@
           "title": "Satteltaschen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4722,7 +4704,7 @@
           "title": "BACK-ROLLER 20L Zip-Pocket - lavender / QL2.2",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "110.00",
@@ -4737,7 +4719,7 @@
           "title": "BACK-ROLLER 20L Zip-Pocket - black / QL2.2",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "110.00",
@@ -4752,7 +4734,7 @@
           "title": "DAYPACK 23L - dark sand",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "140.00",
@@ -4767,7 +4749,7 @@
           "title": "DAYPACK 23L - black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-01T18:26:10.113191Z",
+          "checked_at": "2026-11-03T03:20:11.175222Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "140.00",
