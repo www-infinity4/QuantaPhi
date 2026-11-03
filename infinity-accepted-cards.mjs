@@ -1,4 +1,4 @@
-import {mountRotatingSpotlights,fetchSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
+import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
 import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs?v=20261103-photos1';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
@@ -111,12 +111,11 @@ export function createAcceptedCard(card){
  }
  // The catalog image bank can contain only logos or blocked source images.
  // Retry authentic source listings ONLY when this card becomes active.
- const recoverSourcePhoto=async()=>{
-  if(sourceRecoveryAttempted||productPhotoLoaded||!article.isConnected)return;
+ const recoverSourcePhoto=async(entries)=>{
+  if(sourceRecoveryAttempted||productPhotoLoaded||!article.isConnected||!Array.isArray(entries)||!entries.length)return;
   sourceRecoveryAttempted=true;
   try{
-   const entries=(await fetchSpotlights(card)).slice(0,3);
-   if(!entries.length)return;
+   entries=entries.slice(0,3);
    const probe=row=>new Promise((resolve,reject)=>{
     const image=new Image();image.alt=row.title+' · photograph from '+row.source;
     image.decoding='async';image.referrerPolicy='no-referrer';image.loading='eager';
@@ -140,13 +139,6 @@ export function createAcceptedCard(card){
    productPhotoLoaded=true;
   }catch{/* no verified public product photo: preserve original brand identity */}
  };
- article.addEventListener('oracle:activate',()=>{if(!productPhotoLoaded)void recoverSourcePhoto()});
- if(typeof IntersectionObserver!=='undefined'){
-  const observer=new IntersectionObserver(entries=>{
-   if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();if(!productPhotoLoaded)void recoverSourcePhoto()}
-  },{rootMargin:'120px'});
-  observer.observe(article);
- }
  const content=node('div',undefined,'iac-content');mountAcceptedWebsiteActions(content,card);
  const tools=node('div');mountCardActions(tools,{...card,route:'/?card='+card.id},
   {showSearch:false,websiteReader:false,showPreview:false,showOriginal:false});content.append(tools);
@@ -158,7 +150,9 @@ export function createAcceptedCard(card){
  affiliate.href='/infinity-affiliates.html?brand='+encodeURIComponent(card.id);
  affiliate.setAttribute('aria-label','Request affiliation for '+card.name+' products');more.append(official,affiliate,source);content.append(more);
  article.append(heading,title,media,content);
- mountRotatingSpotlights(article,card);return article;
+ mountRotatingSpotlights(article,card,{onItems:entries=>{
+  if(!productPhotoLoaded)void recoverSourcePhoto(entries);
+ }});return article;
 }
 function mount(){
  const bank=document.getElementById('infinityAcceptedCards');
