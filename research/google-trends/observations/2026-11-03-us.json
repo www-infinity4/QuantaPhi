@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T07:01:43.583797Z",
+  "checked_at": "2026-11-03T07:30:43.596868Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "dayana yastremska",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T07:10:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/andrey-rublev-vs-tomas-martin-etcheverry-total-games-nov-03-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/novak-djokovic-vs-valentin-vacherot-set-1-winner-nov-03-2026/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
+          "title": "November 4, 2026: Claire Liu vs Katie Boulter: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/andrey-rublev-vs-tomas-martin-etcheverry-total-games-nov-03-2026/",
+          "title": "November 3, 2026: Andrey Rublev vs Tomas Martin Etcheverry: Total Games Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQvSLNvu3IqIqpg4j8pk-D7v215HQTApXGxCUlhHc2s0RGLpr6LumxZbYayj4"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/novak-djokovic-vs-valentin-vacherot-set-1-winner-nov-03-2026/",
+          "title": "November 3, 2026: Novak Djokovic vs Valentin Vacherot: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIm-cnrO5gMuVXIIgsEd-dt7ptoXLu8pz1Zb7JkEW6MY7PqEbOFhTbF-onaRo"
+        }
+      ]
+    },
+    {
+      "query": "disneyland paris ride closing 2027",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T07:10:00Z",
+      "related_news_urls": [
+        "https://www.thestreet.com/retail/disneyland-paris-ride-to-close-after-33-years",
+        "https://www.nytimes.com/2026/11/02/climate/disneyland-autopia-gas-electric.html",
+        "https://www.ocregister.com/2026/11/02/disneyland-to-electrify-autopia-track-on-classic-1955-ride-report-says/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH9zN50eGHMozQQoCsaeddjRcusJrwV9lKksksbUvHUsPdopSrZQKz3hH3Cgs",
+      "image_credit": "TheStreet",
+      "news": [
+        {
+          "url": "https://www.thestreet.com/retail/disneyland-paris-ride-to-close-after-33-years",
+          "title": "Beloved Disney ride to close after 33 years",
+          "publisher": "TheStreet",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH9zN50eGHMozQQoCsaeddjRcusJrwV9lKksksbUvHUsPdopSrZQKz3hH3Cgs"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/02/climate/disneyland-autopia-gas-electric.html",
+          "title": "Disneyland’s Autopia Ride Will Switch to Electric Vehicles",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0eDBwCv9hD242N_JGrzPA4JNHIqn5Bknw3Sg2fu4zVHidSckEZwWd7rCjg_E"
+        },
+        {
+          "url": "https://www.ocregister.com/2026/11/02/disneyland-to-electrify-autopia-track-on-classic-1955-ride-report-says/",
+          "title": "Disneyland to electrify Autopia track on classic 1955 ride, report says",
+          "publisher": "Orange County Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3hWI3UQoX-4WcPYetNJ8_CBs5rejcG7mGJHJAr-gn-B-NDgC23JIpknAPY9k"
+        }
+      ]
+    },
+    {
+      "query": "severance",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T07:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/severance-season-3-release-date-143000903.html",
+        "https://artsfuse.org/336910/film-review-the-only-living-pickpocket-in-new-york-a-love-letter-to-a-city-that-wont-love-you-back/",
+        "https://www.npr.org/2026/11/02/nx-s1-6023217/john-turturro-pickpocket"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSSxfojOY6hezwo36ne2FOk4eoCRweQKg74wqT75zxPdaNMd9AezEtUX-vwQ4",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/severance-season-3-release-date-143000903.html",
+          "title": "‘Severance’ Season 3 Release Date Info: When Is Season 3 Of ‘Severance’ Coming Out?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSSxfojOY6hezwo36ne2FOk4eoCRweQKg74wqT75zxPdaNMd9AezEtUX-vwQ4"
+        },
+        {
+          "url": "https://artsfuse.org/336910/film-review-the-only-living-pickpocket-in-new-york-a-love-letter-to-a-city-that-wont-love-you-back/",
+          "title": "Film Review: \"The Only Living Pickpocket in New York\" - A Love Letter to a City That Won’t Love You Back",
+          "publisher": "The Arts Fuse",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG4mk1Ps-hPJouaRxezNIUk_ZWAHrXKguD1HEpmxe37k1-jcBH5xt8moBeWiA"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/02/nx-s1-6023217/john-turturro-pickpocket",
+          "title": "John Turturro says he likes trying new things (even pickpocketing)",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSPNQSkHocM1OF_43GRZ45ZvofqocyoPNUDCiBRPfmloQ8UGx7y4IVpcTU7lI"
+        }
+      ]
+    },
+    {
+      "query": "when is the presidential election",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T07:00:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/02/nx-s1-6019547/coal-no-longer-king-in-navajo-nation-presidential-election",
+        "https://nit.com.au/29-10-2026/27245/crystalyne-curley-justin-jones-vie-to-become-next-navajo-nation-president",
+        "https://www.fresnobee.com/news/nation-world/national/article317813239.html"
+      ],
+      "image_url": null,
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/02/nx-s1-6019547/coal-no-longer-king-in-navajo-nation-presidential-election",
+          "title": "Coal no longer king in Navajo Nation presidential election",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://nit.com.au/29-10-2026/27245/crystalyne-curley-justin-jones-vie-to-become-next-navajo-nation-president",
+          "title": "Crystalyne Curley, Justin Jones vie to become next Navajo Nation President",
+          "publisher": "National Indigenous Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZmlkqmR1_bf0zaKjuEZfJ_cZuShzxUxDbgpRGpcim2TqGX60v1_sZZgvc7-g"
+        },
+        {
+          "url": "https://www.fresnobee.com/news/nation-world/national/article317813239.html",
+          "title": "Uranium cleanup method is a 'scheme and a scam,' critics say",
+          "publisher": "Fresno Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9JcFZI5JDk0NnrsxQC2sJvPS3MJ67qR1h5GxziHRGcFSTetAcYmd89R4f13w"
+        }
+      ]
+    },
     {
       "query": "talia gibson",
       "approx_searches": "200+",
@@ -77,13 +217,48 @@
       ]
     },
     {
+      "query": "nba stats",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T06:30:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/news/emirates-nba-cup-live-updates-october-30",
+        "https://sports.yahoo.com/articles/not-fault-kevin-durant-heated-073838857.html",
+        "https://www.si.com/nba/biggest-winners-losers-from-first-night-of-2026-nba-cup"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4hAGcgRilBGjjYn8Qsmlhbn2DU2VNZRVLKZgXXBEDxcAmWnXYac8O1ZEQSbE",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/news/emirates-nba-cup-live-updates-october-30",
+          "title": "Emirates NBA Cup: live updates, top moments from first night",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4hAGcgRilBGjjYn8Qsmlhbn2DU2VNZRVLKZgXXBEDxcAmWnXYac8O1ZEQSbE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/not-fault-kevin-durant-heated-073838857.html",
+          "title": "‘That’s not my fault’- Kevin Durant’s heated exchange headlines fiery NBA Cup opener",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRMUe_JYinmAWr6OnD6JhANnZCqN4BnLMtc9xUpXHuG9K3t2WqejFKnMdHnu0"
+        },
+        {
+          "url": "https://www.si.com/nba/biggest-winners-losers-from-first-night-of-2026-nba-cup",
+          "title": "The Biggest Winners and Losers From First Night of the 2026 NBA Cup",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWjyCEjy0wsdS8ZOrRIb2MjdJ6Mbfh_co7Y3Qitw4AstmKJfrsDOS12C0yCLs"
+        }
+      ]
+    },
+    {
       "query": "polymarket midterms",
       "approx_searches": "100+",
       "published_at": "2026-11-03T06:30:00Z",
       "related_news_urls": [
         "https://www.wsj.com/politics/elections/prediction-markets-keep-whiffing-on-elections-will-they-miss-on-the-midterms-9809c8c9",
         "https://www.nytimes.com/2026/10/29/technology/polymarket-kalshi-midterm-election-betting-wagers.html",
-        "https://www.theguardian.com/commentisfree/2026/nov/02/prediction-markets-voters-elections"
+        "https://www.sportico.com/business/sports-betting/2026/prediction-markets-donald-trump-election-odds-1234957187/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0JIHqhRy-77Yj6Z9n95T95OpuhYiOi0JLlDin0JJIpALRSewHZQkYfmjBelI",
       "image_credit": "WSJ",
@@ -103,46 +278,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8Pplwucnc7chKYC7D2tcnnAZ114GR07AuWXiTW0Kci9Kojjfteyd8LX6HKZw"
         },
         {
-          "url": "https://www.theguardian.com/commentisfree/2026/nov/02/prediction-markets-voters-elections",
-          "title": "Prediction market bettors are the new political pundits. Why are we listening to them? | Judith Levine",
-          "publisher": "The Guardian",
+          "url": "https://www.sportico.com/business/sports-betting/2026/prediction-markets-donald-trump-election-odds-1234957187/",
+          "title": "Prediction Markets Need Trump. Their Election Odds Risk His Fury",
+          "publisher": "Sportico.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOEsw77mLpOTyyk8hg7JD6dKR3bHmcBAuHS7_NS9qh_ohsqMY9t__KIDUstSM"
-        }
-      ]
-    },
-    {
-      "query": "jil teichmann",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T06:20:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/andrey-rublev-vs-tomas-martin-etcheverry-total-games-nov-03-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/novak-djokovic-vs-valentin-vacherot-set-1-winner-nov-03-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
-          "title": "November 4, 2026: Claire Liu vs Katie Boulter: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/andrey-rublev-vs-tomas-martin-etcheverry-total-games-nov-03-2026/",
-          "title": "November 3, 2026: Andrey Rublev vs Tomas Martin Etcheverry: Total Games Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQvSLNvu3IqIqpg4j8pk-D7v215HQTApXGxCUlhHc2s0RGLpr6LumxZbYayj4"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/novak-djokovic-vs-valentin-vacherot-set-1-winner-nov-03-2026/",
-          "title": "November 3, 2026: Novak Djokovic vs Valentin Vacherot: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIm-cnrO5gMuVXIIgsEd-dt7ptoXLu8pz1Zb7JkEW6MY7PqEbOFhTbF-onaRo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTu2kDusmT1WL4mSFeL_Q5C8NzF4bCBBzcZPKzA_jU7cYBu04HF5fyv9nQtd20"
         }
       ]
     },
@@ -183,14 +323,14 @@
     },
     {
       "query": "la county measure a",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-03T06:10:00Z",
       "related_news_urls": [
         "https://www.latimes.com/california/story/2026-10-31/2026-california-election-los-angeles-county-charter-amendment-a-last-minute-voter-guide",
         "https://www.yahoo.com/news/politics/articles/los-angeles-county-considers-labor-182000186.html",
         "https://www.magzter.com/stories/newspaper/Los-Angeles-Times/MEASURE-TO-ALTER-LABOR-TALKS-LEADS-TO-LITTLE-DEBATE"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLabMu59Owo41q6phTycLkxmZauLfKSBNUbpEzV6Ls5BHW2eL1SHMreZB9bI4",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD34taoX9tbnsmhVSKrB1E2Xyd8PUsnOnH79Y4oozymH3-kfo7ZmCYItbFmJI",
       "image_credit": "Los Angeles Times",
       "news": [
         {
@@ -198,7 +338,7 @@
           "title": "Your last-minute guide to L.A. County Charter Amendment A",
           "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLabMu59Owo41q6phTycLkxmZauLfKSBNUbpEzV6Ls5BHW2eL1SHMreZB9bI4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD34taoX9tbnsmhVSKrB1E2Xyd8PUsnOnH79Y4oozymH3-kfo7ZmCYItbFmJI"
         },
         {
           "url": "https://www.yahoo.com/news/politics/articles/los-angeles-county-considers-labor-182000186.html",
@@ -213,146 +353,6 @@
           "publisher": "Magzter",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeUca2_mZ4gF33W99sx78_ELcxiKK1bsUkOi6zbEMocVpL8PADmaqQ0L71f78"
-        }
-      ]
-    },
-    {
-      "query": "robin montgomery",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T06:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7746330/2026/11/01/womens-chennai-open-stream-how-to-watch-november-3/",
-        "https://www.bleachernation.com/picks/2026/11/01/udvardy-vs-montgomery-prediction-at-the-chennai-open-monday-november-2/",
-        "https://lastwordonsports.com/tennis/2026/11/02/wta-chennai-day-2-predictions-udvardy-montgomery/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2xOmTxgmr-XSgarWE8As0EJ2mA-v5dt9FUZOYEYMuc-IffxXuF0H91-cDaCU",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7746330/2026/11/01/womens-chennai-open-stream-how-to-watch-november-3/",
-          "title": "How to watch the women’s Chennai Open: Streaming options for the Round of 32",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2xOmTxgmr-XSgarWE8As0EJ2mA-v5dt9FUZOYEYMuc-IffxXuF0H91-cDaCU"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/01/udvardy-vs-montgomery-prediction-at-the-chennai-open-monday-november-2/",
-          "title": "Udvardy vs. Montgomery Prediction at the Chennai Open – Monday, November 2",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2AqfIxLVYjKB6CzKl-_zqPaD9maLWp4gER1slBqqm7N1hEb3nQphDRGSAqo"
-        },
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/02/wta-chennai-day-2-predictions-udvardy-montgomery/",
-          "title": "WTA Chennai Day 2 Predictions Including Panna Udvardy vs Robin Montgomery",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0GDxKQpCvUaedk6NiUS7xi4RcUU1FCSxMs3NMX146ek6JA2Gis05BaWHi3P4"
-        }
-      ]
-    },
-    {
-      "query": "nba standings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-03T05:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
-        "https://www.nba.com/news/starting-5-november-2-2026",
-        "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
-          "title": "Luka Doncic touts his improved defense, draws praise from Lakers, Raptors",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI"
-        },
-        {
-          "url": "https://www.nba.com/news/starting-5-november-2-2026",
-          "title": "Starting 5: Luka makes history, Celtics and Warriors extend streaks",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7H6XxpJ6I1hoPWn5saQQMxprBWwsCGV69zUJWzffiPMBUQXsmk1i1cie312A"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html",
-          "title": "The Lakers 'live on a spaceship,' and Luka Dončić looks like the best damn pilot in the galaxy",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScnsxQpaHTYRjEizaUIeYG-oMsC6_CxA53JAciDXyyTF2VkzviY43lcsa4LzM"
-        }
-      ]
-    },
-    {
-      "query": "brandin podziemski",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-03T05:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/devin-booker-scores-26-points-fouls-out-late",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/miles-bridges-records-21-6-3-4-1-line-vs-gsw",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/dillon-brooks-records-18-points-eight-rebounds"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT5NS1gdjNyy6zIjDfslMB9oUGTudXfQc6OQvS53K9VRJoBQkpw2xymELbbcw",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/devin-booker-scores-26-points-fouls-out-late",
-          "title": "Devin Booker scores 26 points, fouls out late",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT5NS1gdjNyy6zIjDfslMB9oUGTudXfQc6OQvS53K9VRJoBQkpw2xymELbbcw"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/miles-bridges-records-21-6-3-4-1-line-vs-gsw",
-          "title": "Miles Bridges records 21/6/3/4/1 line vs. GSW",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU_Jy1lWpKWOmNkpqsP-tml7q6FTXZESNtwjXFm_30YUj3apLFrEI9ciZmMPU"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/dillon-brooks-records-18-points-eight-rebounds",
-          "title": "Dillon Brooks records 18 points, eight rebounds",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU_Jy1lWpKWOmNkpqsP-tml7q6FTXZESNtwjXFm_30YUj3apLFrEI9ciZmMPU"
-        }
-      ]
-    },
-    {
-      "query": "california lottery",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T05:50:00Z",
-      "related_news_urls": [
-        "https://www.desertsun.com/story/news/local/2026/10/28/california-lottery-results-wednesday-october-28-2026/92492556007/",
-        "https://nclottery.com/NewsBlogDetails/2026/11/1/Cabarrus-County-ticket-scores-2-million-win-in-Halloween-Powerball-drawing",
-        "https://www.forbes.com/sites/siladityaray/2026/11/03/powerball-jackpot-soars-to-835-million-heres-what-the-winner-could-take-home/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfi7GQfayw9ShJ0hpy0SehkUHS7uERlyZcfWrjFTaQJDYhw55yH1qdriDCaz0",
-      "image_credit": "The Desert Sun",
-      "news": [
-        {
-          "url": "https://www.desertsun.com/story/news/local/2026/10/28/california-lottery-results-wednesday-october-28-2026/92492556007/",
-          "title": "California Lottery Powerball, Daily 3 Midday winning numbers for Oct. 28, 2026",
-          "publisher": "The Desert Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfi7GQfayw9ShJ0hpy0SehkUHS7uERlyZcfWrjFTaQJDYhw55yH1qdriDCaz0"
-        },
-        {
-          "url": "https://nclottery.com/NewsBlogDetails/2026/11/1/Cabarrus-County-ticket-scores-2-million-win-in-Halloween-Powerball-drawing",
-          "title": "Cabarrus County ticket scores $2 million win in Halloween Powerball drawing",
-          "publisher": "NC Education Lottery",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNlZgtKCP1gw8gmCiHqtdEgU5yvjkq85aGTznyLp5EV89zxeqEWOfs-0bRKJU"
-        },
-        {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/03/powerball-jackpot-soars-to-835-million-heres-what-the-winner-could-take-home/",
-          "title": "Powerball Jackpot Soars To $835 Million—Here’s What The Winner Could Take Home",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAJONcPsmtmyj9ghoOB_pSbuRGCmdjVuQ91KVOGW0aueQ10ldVMVfBVKxFxbw"
         }
       ]
     }
