@@ -174,6 +174,7 @@ window.addEventListener('message',event=>{
  questPending=null;questSend.disabled=false;
 });
 function setMode(next){
+ document.body.dataset.zeusMode=next;
  el('chatPane').hidden=next!=='chat';el('buildPane').hidden=next!=='build';
  if(next==='chat')mountZeusAssistant();
  el('chatTab').setAttribute('aria-pressed',String(next==='chat'));
