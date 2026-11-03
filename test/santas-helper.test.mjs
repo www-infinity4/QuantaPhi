@@ -50,9 +50,9 @@ test('Santa has its own department in the existing selector and five image-ready
  assert.match(deck,/quantaphi:santa-cards-ready/);
  assert.match(deck,/registerSantaCards/);
  assert.match(ui,/data-santa-card/);
+ assert.match(ui,/host\\.append\\(renderWelcome\\(\\),\\.\\.\\.GIFT_LANES\\.map\\(renderLane\\)\\)/);
  for(const name of ['welcome','fragrance','fashion','hobbies','keepsakes']){
-  assert.match(ui,new RegExp("santa-"+name));
-  assert.match(read('assets/santas-helper-'+name+'.svg'),/<svg[\s\S]*<\/svg>/);
+  assert.match(read('assets/santas-helper-'+name+'.svg'),/<svg[\\s\\S]*<\\/svg>/);
  }
 });
 
