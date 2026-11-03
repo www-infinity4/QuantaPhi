@@ -134,3 +134,10 @@ test('homepage loads the independent notification module after carousel, keeping
  assert.match(ui,/Dismiss Quick Ads for 10 minutes/);
  assert.match(css,/prefers-reduced-motion/);
 });
+
+test('no retired World Series advertising copy or outdated game links remain in public Quick Ads',()=>{
+ for(const a of [...QUICK_ADS,...HOUSE_ADS]){
+  assert.doesNotMatch(a.name+' '+a.tagline,/world series|game 5|brewers vs rays/i);
+  if(a.id==='mlb')assert.equal(a.href,'https://www.mlb.com/scores');
+ }
+});
