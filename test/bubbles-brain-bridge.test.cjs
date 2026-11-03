@@ -39,7 +39,8 @@ test('copies each user and assistant message in the shared Android/web chat',asy
  assert.ok(start>0&&end>start,'copy function must appear before display');
  const display=source.slice(end,source.indexOf('for(const item of messages)',end));
  assert.match(display,/row\.append\(copy\)/);
- assert.match(display,/line\.append\(actionMenu\)/);\n assert.match(display,/actionMenu\.append\(actionSummary,row\)/);
+ assert.match(display,/line\.append\(actionMenu\)/);
+ assert.match(display,/actionMenu\.append\(actionSummary,row\)/);
  assert.match(display,/copyBubblesMessage\(text,bubble,copy\)/);
  const writes=[],status={},button={textContent:'Copy',isConnected:true};
  const sandbox={navigator:{clipboard:{writeText:async value=>writes.push(value)}},status,setTimeout(){}};
