@@ -77,6 +77,35 @@ test('actual callback decision rejects dispatch-only and incorrect output marker
  }finally{fs.rmSync(temp,{recursive:true,force:true})}
 });
 
+test('second check cannot overwrite a queued receipt if Termux permission or visibility changes',()=>{
+ const source=read(java+'TermuxProbe.java');
+ const start=source.indexOf('static String run(Context context, String kind)');
+ const end=source.indexOf('static void saveResult(',start);
+ assert.ok(start>=0&&end>start);
+ const method=source.slice(start,end);
+ const queued=method.indexOf('JSONObject current = receipt(context);');
+ const available=method.indexOf('if (!installed(context))');
+ const permission=method.indexOf('if (!permitted(context))');
+ assert.ok(queued>=0&&available>=0&&permission>=0);
+ assert.ok(queued<available&&queued<permission,
+   'the queued command must be protected before a second attempt records permission/app failure');
+ assert.match(method,/if \("queued"\.equals\(current\.optString\("state"\)\)\)\s+return/);
+});
+
+test('actual fixed shell probe completes without Python or external commands',()=>{
+ const source=read(java+'TermuxProbe.java');
+ const match=source.match(/static final String SHELL_SCRIPT = ("(?:\\.|[^"\\])*");/);
+ assert.ok(match,'check source must contain the actual shell probe');
+ const command=JSON.parse(match[1]);
+ assert.doesNotMatch(command,/\bpython\b|\bpkg\b|\bpip\b/i);
+ const run=spawnSync('/bin/sh',['-c',command],{
+  encoding:'utf8',timeout:3000,env:{...process.env,PATH:'/nonexistent'}
+ });
+ assert.equal(run.status,0,run.stderr||run.error?.message);
+ assert.equal(run.stdout,'probe=termux-shell-v1\ntermux=ok\n');
+ assert.equal(run.stderr,'');
+});
+
 test('shell probe is fixed and independent of Python installations',()=>{
  const source=read(java+'TermuxProbe.java');
  assert.match(source,/SHELL_SCRIPT\s*=\s*"printf /);
