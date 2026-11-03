@@ -16,7 +16,7 @@
     try {
       const url = new URL(track.url);
       return url.protocol==='https:' && allowedHosts.has(url.hostname) &&
-        !url.username && !url.password && /\\.(mp3|ogg)$/i.test(url.pathname);
+        !url.username && !url.password && /\.(mp3|ogg)$/i.test(url.pathname);
     } catch (_) { return false; }
   }
   function mergeTracks(incoming,old) {
