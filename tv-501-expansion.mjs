@@ -8,7 +8,7 @@ const storageKey='quanta:discovery:anonymous:v1';
 function localSignals(){
  try{const raw=JSON.parse(localStorage.getItem(storageKey)||'{}');return raw&&typeof raw==='object'?raw:{}}catch{return{}}
 }
-export function mountQuantTvExpansion(host=document.getElementById('phiChannelCards')){
+export function mountQuantTvExpansion(host=document.getElementById('tvQuantExpansion')){
  if(!host||host.dataset.quantTvReady||!window.PhiTVPrograms)return;
  // Current Infinity TV uses separate original channel cards; the guide has no grid.
  // Create the expansion shelf there instead of silently dropping every new station.
@@ -95,7 +95,7 @@ export function mountQuantTvExpansion(host=document.getElementById('phiChannelCa
  cast.addEventListener('click',()=>{status.textContent='Android: open Screen Cast or screen mirroring, choose your TV, then use fullscreen on the video player. Casting requires a compatible device/TV.';
   if(!viewer.hidden&&typeof viewer.requestFullscreen==='function')void viewer.requestFullscreen().catch(()=>{})});
  document.addEventListener('quantaphi:tv-playback-request',event=>{if(event.detail?.owner!=='quant-tv-movies')stop()});
- document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id==='phiChannelCards')stop()});
+ document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id==='tvQuantExpansion')stop()});
  document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
  window.addEventListener('pagehide',stop);
  render();if(allowed)void refreshQuant();
