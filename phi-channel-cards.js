@@ -7,8 +7,8 @@ const host=document.getElementById('phiChannelCards'),catalog=window.PhiTVProgra
 if(!host||!catalog)return;
 const channels=[
  {name:'KYOU · FOX 15.1',eyebrow:'IOWA · OFFICIAL LIVESTREAM',description:'KYOU’s live channels and newscasts are on the official station website. Use the play screen to watch there; FOX 15.1 programming may differ.',key:'kyou',poster:'https://webpubcontent.gray.tv/gray/arc-fusion-assets/images/logo-off-site/kyou.png?d=602&mxId=00000000',icon:'KY',tone:'kyou'},
- {name:'StarQuest',eyebrow:'CLASSIC MOVIES · WATCH NOW',description:'Direct movie player · daily feature or next title.',key:'starquest',poster:'/TV-Database/assets/starquest-share-card.jpg',icon:'SQ',tone:'starquest'},
- {name:'Omni TV',eyebrow:'ONE REMOTE · THREE CHANNELS',description:'Actual video only. CH− / CH+ switches between StarQuest, Chiller and Shop LC.',key:'omni',poster:'/omni-tv/preview.png',icon:'TV',tone:'omni'},
+ {name:'StarQuest',eyebrow:'CLASSIC MOVIES · WATCH NOW',description:'Direct movie player · daily feature or next title.',key:'starquest',poster:catalog.now('starquest',new Date()).poster,icon:'SQ',tone:'starquest'},
+ {name:'Omni TV',eyebrow:'ONE REMOTE · THREE CHANNELS',description:'Actual video only. CH− / CH+ switches between StarQuest, Chiller and Shop LC.',key:'omni',poster:catalog.now('starquest',new Date()).poster,icon:'TV',tone:'omni'},
  {name:'Chiller',eyebrow:'1980s SUSPENSE · ON AIR',description:'Current scheduled Hitchcock or Twilight Zone episode in the screen.',key:'chiller',poster:'https://i.ytimg.com/vi/YD5xBeGeX5w/hqdefault.jpg',icon:'C',tone:'chiller'},
  {name:'ShopLC',eyebrow:'SHOPPING TV · LIVE',description:'The live Shop LC video broadcast, directly in the screen.',key:'shoplc',poster:'https://i.ytimg.com/vi/eqpG55UKM8M/hqdefault.jpg',icon:'LC',tone:'shoplc'}
 ];
