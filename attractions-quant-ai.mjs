@@ -44,8 +44,12 @@ export function rankAttractions(items,{interests=[],seen=[],limit=8}={}){
   let index=remaining.findIndex(row=>!categories.has(row.category));
   if(index<0){categories.clear();index=0}
   const [row]=remaining.splice(index,1);
-  selected.push({...row,match_reason:tags.length?
-   ('Matched your selected '+tags.join(' / ')+' interests'):'Source-backed public attraction; no personal profile used'});
+  const matched=tags.filter(t=>(TAGS[t][row.category]||0)>0);
+  const match_reason=matched.length?
+   'Matched your selected '+matched.join(' / ')+' interest'+(matched.length===1?'':'s'):
+   tags.length?'Additional source-backed choice beyond your selected interests':
+   'Source-backed public attraction; no personal profile used';
+  selected.push({...row,match_reason});
   categories.add(row.category);
  }
  return selected;
@@ -88,7 +92,7 @@ export function makeAttractionCard(row,reason){
  const controls=create('div','ad-rec-actions');
  mountCardActions(controls,{
   id,name:row.name,category:'Travel & adventure',official:row.website||row.source_url,
-  featureUrl:row.website||row.source_url,route:'/?card='+encodeURIComponent(id),
+  featureUrl:row.website||row.source_url,route:'/?card='+encodeURIComponent(id)+'&attraction='+encodeURIComponent(row.id),
   description:row.name+' in '+row.state+' · public, source-backed travel discovery'
  });
  body.append(type,title,category,reasonText,links,notice,controls);
@@ -98,12 +102,12 @@ export function makeAttractionCard(row,reason){
 const MAX_SOURCE_CARDS=12;
 export function mountAttractionCards(bank,items,{interests=[],limit=8}={}){
  if(!bank||typeof document==='undefined')return 0;
- let mounted=bank.querySelectorAll('.ad-rec-card[data-source-id]').length;
+ let mounted=document.querySelectorAll('.ad-rec-card[data-source-id]').length;
  let count=0;
  for(const row of rankAttractions(items,{interests,limit})){
   if(mounted>=MAX_SOURCE_CARDS)break;
   const id=attractionSourceId(row);
-  if(!id||bank.querySelector('[data-source-id="'+id+'"]'))continue;
+  if(!id||document.querySelector('[data-source-id="'+id+'"]'))continue;
   const card=makeAttractionCard(row,row.match_reason);
   if(card){bank.append(card);count++;mounted++}
  }
@@ -114,8 +118,23 @@ export function mountAttractionCards(bank,items,{interests=[],limit=8}={}){
 // through the existing directory search. No bulk DOM rendering or profile sync.
 async function start(){
  const bank=document.getElementById('premiumSourceCards');if(!bank)return;
- const chosen=new URLSearchParams(location.search).get('interest')||'';
+ const params=new URLSearchParams(location.search);
+ const chosen=params.get('interest')||'';
  const interests=interestTags(chosen);
+ const requestedId=params.get('attraction')||'';
+ const requestedCard=params.get('card')||'';
+ if(/^(?:curated:[a-z][a-z0-9-]{8,100}|overture:[a-zA-Z0-9-]{10,100})$/.test(requestedId)&&
+    /^attraction-[a-z]{2}-[a-z0-9]{7,8}$/.test(requestedCard)){
+  try{
+   const u=API+'/api/attractions/item?id='+encodeURIComponent(requestedId);
+   const response=await fetch(u,{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(10000)});
+   if(response.ok){
+    const payload=await response.json();
+    if(attractionSourceId(payload?.item)===requestedCard)
+     mountAttractionCards(bank,[payload.item],{limit:1});
+   }
+  }catch{}
+ }
  try{
   const res=await fetch(API+'/api/attractions/feed?state=AK&page=0',{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(12000)});
   if(!res.ok)return;
