@@ -1,4 +1,4 @@
-import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
+import {mountRotatingSpotlights,fetchSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
 import {INFINITY_ACCEPTED_BRANDS,acceptedBrand,isInfinityAccepted,hasAcceptedSource} from './infinity-accepted-catalog.mjs?v=20261103-photos1';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1';
 import {readCardWebsite,renderWebsiteResults} from './tinyfish-card-reader.mjs';
@@ -76,13 +76,17 @@ export function createAcceptedCard(card){
  heading.append(node('span','∞ Infinity accepted','iac-badge'),node('small',card.category,'iqc-kind'));
  const title=node('div',undefined,'iac-title');title.append(node('h2',card.name),node('p',card.feature,'iac-intro'));
  const media=node('div',undefined,'iac-media'),images=cardImageCandidates(card);let imageIndex=0;
+ let productPhotoLoaded=false,sourceRecoveryAttempted=false;
  if(images.length&&images.every(isBrandIdentityImage))media.classList.add('iac-logo-only');
  if(images.length){
   const img=node('img');img.alt=card.photoCaption||card.name+' — image from the original website';
   const credit=card.photoSource?node('a','Photo source · '+new URL(card.photoSource).hostname,'iac-image-credit'):null;
   if(credit){credit.href=card.photoSource;credit.target='_blank';credit.rel='noopener noreferrer';credit.hidden=true;
    credit.setAttribute('aria-label','Open original photo source for '+card.name);}
-  img.addEventListener('load',()=>{if(credit)credit.hidden=!(imageIndex===0&&images[0]===card.image)},{once:false});
+  img.addEventListener('load',()=>{
+   if(credit)credit.hidden=!(imageIndex===0&&images[0]===card.image);
+   if(img.naturalWidth>=180&&img.naturalHeight>=120&&!isBrandIdentityImage(images[imageIndex]))productPhotoLoaded=true;
+  },{once:false});
   img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';
   const fallback=()=>{
    img.remove();media.classList.add('iac-logo-only');
@@ -105,6 +109,38 @@ export function createAcceptedCard(card){
   if(sourceIcon){mark.src=sourceIcon;mark.addEventListener('error',()=>mark.remove(),{once:true});media.append(mark)}
   media.append(node('span','Source product photo not yet available','iac-source-icon-note'));
  }
+ // The catalog image bank can contain only logos or blocked source images.
+ // Retry authentic source listings ONLY when this card becomes active.
+ const recoverSourcePhoto=async()=>{
+  if(sourceRecoveryAttempted||productPhotoLoaded||!article.isConnected)return;
+  sourceRecoveryAttempted=true;
+  try{
+   const entries=(await fetchSpotlights(card)).slice(0,3);
+   if(!entries.length)return;
+   const probe=row=>new Promise((resolve,reject)=>{
+    const image=new Image();image.alt=row.title+' · photograph from '+row.source;
+    image.decoding='async';image.referrerPolicy='no-referrer';image.loading='eager';
+    let complete=false;const settle=ok=>{
+     if(complete)return;complete=true;clearTimeout(timeout);
+     if(ok)resolve({image,row});else reject(Error('source_preview_unavailable'));
+    };
+    const timeout=setTimeout(()=>settle(false),2800);
+    image.onload=()=>settle(image.naturalWidth>=180&&image.naturalHeight>=120);
+    image.onerror=()=>settle(false);
+    image.src=row.image;
+   });
+   const found=await Promise.any(entries.map(probe)).catch(()=>null);
+   if(!found||!article.isConnected||productPhotoLoaded)return;
+   const link=node('a','Source photo · '+new URL(found.row.url).hostname,'iac-image-credit');
+   link.href=found.row.url;link.target='_blank';link.rel='noopener noreferrer';
+   link.setAttribute('aria-label','Open original source photograph for '+card.name);
+   media.replaceChildren(found.image,link);
+   media.classList.remove('iac-logo-only');media.classList.add('iac-source-discovered');
+   article.dataset.sourcePhotoRecovered='true';
+   productPhotoLoaded=true;
+  }catch{/* no verified public product photo: preserve original brand identity */}
+ };
+ article.addEventListener('oracle:activate',()=>{if(!productPhotoLoaded)void recoverSourcePhoto()});
  const content=node('div',undefined,'iac-content');mountAcceptedWebsiteActions(content,card);
  const tools=node('div');mountCardActions(tools,{...card,route:'/?card='+card.id},
   {showSearch:false,websiteReader:false,showPreview:false,showOriginal:false});content.append(tools);
