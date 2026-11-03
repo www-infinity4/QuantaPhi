@@ -65,3 +65,11 @@ footer,footer a{color:#52616a}
 #zeusQuestSend:disabled{opacity:.6;cursor:wait}
 .zeus-quest-status{font:500 13px/1.5 system-ui,sans-serif;color:#52616b!important;margin:0!important;min-height:19px}
 @media(max-width:420px){.zeus-quest-compose{grid-template-columns:minmax(0,1fr) 75px;gap:7px}#zeusQuestInput{font-size:17px}#zeusQuestSend{font-size:16px;padding:6px}}
+
+/* Keep Zeus a chat, not six different prototype cards competing for attention. */
+body[data-zeus-mode="chat"] .rooms,
+body[data-zeus-mode="chat"] .switchline,
+body[data-zeus-mode="chat"] .coliseum-live{display:none!important}
+body[data-zeus-mode="chat"] #chatPane{display:block;min-width:0}
+body[data-zeus-mode="chat"] .arena-layout{display:block}
+body[data-zeus-mode="build"] .zeus-assistant-mount{display:none}
