@@ -4,6 +4,12 @@ package org.quantaphi.bubbles;
 final class TermuxReceiptPolicy {
     private TermuxReceiptPolicy() {}
 
+    /** Only the still-pending or timed-out SAME request may receive a late result. */
+    static boolean acceptsCallback(int id, String kind, int savedId, String savedKind, String savedState) {
+        return id > 0 && id == savedId && kind != null && kind.equals(savedKind)
+            && ("queued".equals(savedState) || "timed_out_unverified".equals(savedState));
+    }
+
     static boolean succeeded(String kind, int exitCode, int serviceCode, String stdout) {
         if (exitCode != 0 || serviceCode != -1 || stdout == null) return false;
         if ("shell".equals(kind))
