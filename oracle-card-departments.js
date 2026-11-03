@@ -7,7 +7,7 @@ const DEPARTMENTS=Object.freeze([
  ['fashion','Shopping · Fashion'],['department-stores','Shopping · Department stores'],
  ['auctions','Shopping · Auctions & collectibles'],['home','Shopping · Home & furniture'],
  ['electronics','Shopping · Electronics'],['toys','Shopping · Toys & hobbies'],
- ['gifts','Shopping · Gifts'],['automotive','Shopping · Automotive'],
+ ['gifts','Shopping · Gifts'],['santas-helper','Holidays · Santa’s Helper'],['automotive','Shopping · Automotive'],
  ['television','Entertainment · Television'],['movies','Entertainment · Movies'],
  ['music','Entertainment · Music & radio'],['games','Entertainment · Games'],
  ['sports','Entertainment · Sports'],['books','Entertainment · Books'],
@@ -55,6 +55,7 @@ function matches(entry,department='mixed'){
  if(!DEPARTMENTS.some(x=>x.id===department))return false;
  if(department==='adult')return isRestricted(entry);
  if(isRestricted(entry))return false;
+ if(department==='santas-helper')return typeof entry?.id==='string'&&/^santa-(?:welcome|fragrance|fashion|hobbies|keepsakes)$/.test(entry.id);
  if(department==='mixed')return true;
  return (TERMS[department]||[]).some(term=>textOf(entry).includes(term));
 }
