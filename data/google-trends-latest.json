@@ -3,340 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T21:01:31.668050Z",
+  "checked_at": "2026-11-03T21:31:30.105723Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "todd chrisley",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T20:40:00Z",
-      "related_news_urls": [
-        "https://people.com/pregnant-savannah-chrisley-reacts-to-backlash-surrounding-husband-father-of-baby-jason-galanis-12204292",
-        "https://www.yahoo.com/entertainment/celebrity/articles/todd-chrisley-defends-daughter-savannah-195425698.html",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/02/savannah-chrisley-married-jason-galanis-pregnancy/92505257007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdQfrTH_TZs6c8CMzkqc2r4nC08Uthw23EzKtgAaeIvrIj1zkciamOBEy1ngQ",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/pregnant-savannah-chrisley-reacts-to-backlash-surrounding-husband-father-of-baby-jason-galanis-12204292",
-          "title": "Pregnant Savannah Chrisley Reacts to Backlash Surrounding the Reveal of Her Mystery Husband, Father of Her Baby",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdQfrTH_TZs6c8CMzkqc2r4nC08Uthw23EzKtgAaeIvrIj1zkciamOBEy1ngQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/todd-chrisley-defends-daughter-savannah-195425698.html",
-          "title": "Todd Chrisley Defends Daughter Savannah Against Gold Digger Accusations Amid Jason Galanis Engagement",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDYNkLpvRklIv80QjFLc1qiVYWzdUo0ZJkWILjWvaiUQ5o97LR2K5hlrLATQ0"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/02/savannah-chrisley-married-jason-galanis-pregnancy/92505257007/",
-          "title": "Savannah Chrisley married Jason Galanis before revealing pregnancy",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm1TviH53VbWX5V6C4egUoeThoEhryhKERuYI98q8yYxmBgxWzFCh3eJb1tvM"
-        }
-      ]
-    },
-    {
-      "query": "donyell malen",
+      "query": "earnings today",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T20:40:00Z",
+      "published_at": "2026-11-03T21:10:00Z",
       "related_news_urls": [
-        "https://www.idahostatejournal.com/sports/national/aptopix-britain-champions-league-soccer/image_41826423-33bb-513d-88d7-49bf5b54c22d.html"
+        "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html",
+        "https://apnews.com/article/stock-markets-ai-earnings-oil-0d235af127a92c68da0cc2c45c028cef",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-03-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMLRnI3Z9dvprdwmZptlCMTQa6Mr66z3llYmbRruVWvOYhGZGR7wgVdTeUJ8",
-      "image_credit": "Idaho State Journal",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAaGoF4-b-JuL2i8kz5WjNgPC2p6zn3ga4oPPYcX7_PDNyIOHadmNmjcNY9BM",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.idahostatejournal.com/sports/national/aptopix-britain-champions-league-soccer/image_41826423-33bb-513d-88d7-49bf5b54c22d.html",
-          "title": "APTOPIX Britain Champions League Soccer",
-          "publisher": "Idaho State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMLRnI3Z9dvprdwmZptlCMTQa6Mr66z3llYmbRruVWvOYhGZGR7wgVdTeUJ8"
-        }
-      ]
-    },
-    {
-      "query": "manchester united",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-03T20:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7750801/2026/11/03/manchester-united-fans-balloon-protest-roma/",
-        "https://sports.yahoo.com/articles/man-united-fans-release-balloons-202021508.html",
-        "https://www.aol.co.uk/articles/man-utd-vs-roma-suddenly-202400000.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGvmFEdZobgwkkrmMxzkUiHcOxUBaXxvG38U_SL6AXUDd8Z7YUNJPMEZ8SEYw",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7750801/2026/11/03/manchester-united-fans-balloon-protest-roma/",
-          "title": "Manchester United fans plan balloon protest before kick-off against Roma",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGvmFEdZobgwkkrmMxzkUiHcOxUBaXxvG38U_SL6AXUDd8Z7YUNJPMEZ8SEYw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/man-united-fans-release-balloons-202021508.html",
-          "title": "Man United fans release balloons in protest against ownership ahead of Champions League match at Old Trafford",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV-x89fVKqEoup3ik21vgUt5r87h5u0rhrM6CyrONOx5gCnMkm_cGhIWx39Ls"
-        },
-        {
-          "url": "https://www.aol.co.uk/articles/man-utd-vs-roma-suddenly-202400000.html",
-          "title": "Man Utd vs Roma suddenly halted as referee forced to stop Champions League tie",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIl7oyiBJ6TU2LG9NMZXoGTDubPOkNxflmmRFJzclLUp-Xyv1gk1nfXeGNhIE"
-        }
-      ]
-    },
-    {
-      "query": "bayern",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T20:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50360295/harry-kane-hopes-bayern-munich-pass-tough-champions-league-test-madrid",
-        "https://sports.yahoo.com/articles/matter-days-harry-kane-shares-063900259.html",
-        "https://sports.yahoo.com/articles/tottenham-didn-t-ballon-d-000000446.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnZzcpr-b8Lwn_xX5nIZcxcFwKvlMpUDMo6Lwlbfzog4unNU7Z4NRpm38X3vM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50360295/harry-kane-hopes-bayern-munich-pass-tough-champions-league-test-madrid",
-          "title": "Kane says new Bayern deal 'extremely close,' will happen in coming days",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnZzcpr-b8Lwn_xX5nIZcxcFwKvlMpUDMo6Lwlbfzog4unNU7Z4NRpm38X3vM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/matter-days-harry-kane-shares-063900259.html",
-          "title": "‘Matter of days’ – Harry Kane shares Bayern contract update",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8ozyByO1lLzFst5D72wE3e9AKvpa0Yh5-VVXqpbe0OPMzaEyhpvncKd9CuFg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/tottenham-didn-t-ballon-d-000000446.html",
-          "title": "Tottenham didn’t include a Ballon d’Or clause in Harry Kane’s move to Bayern Munich",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXt9IRjawZtkDG6a35tYN40u65UmxGIe0lR1fPhRuLhAhUVhRa1etyGTlTm7A"
-        }
-      ]
-    },
-    {
-      "query": "psg game",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T20:30:00Z",
-      "related_news_urls": [
-        "https://www.lequipe.fr/Football/Video/Bundesliga-kane-a-deux-doigts-de-signer-un-nouveau-contrat-avec-son-club/20244737",
-        "https://www.lefigaro.fr/sports/football/foot-kane-echangerait-volontiers-son-ballon-d-or-contre-la-prochaine-ligue-des-champions-20261102",
-        "https://www.leparisien.fr/sports/football/ballon-dor-2026-la-direction-de-france-football-va-porter-plainte-apres-des-paris-suspects-31-10-2026-6YYC6OMT4NCGTFM65NVCMLA2GU.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkub5ihHarnGj9ERkkck90b9Rdbor8y8aQl0GK2zeMbxFAOwbdF2AO1zieifM",
-      "image_credit": "L'Équipe",
-      "news": [
-        {
-          "url": "https://www.lequipe.fr/Football/Video/Bundesliga-kane-a-deux-doigts-de-signer-un-nouveau-contrat-avec-son-club/20244737",
-          "title": "Kane « à deux doigts » de signer un nouveau contrat avec son club | Foot - Bundesliga",
-          "publisher": "L'Équipe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkub5ihHarnGj9ERkkck90b9Rdbor8y8aQl0GK2zeMbxFAOwbdF2AO1zieifM"
-        },
-        {
-          "url": "https://www.lefigaro.fr/sports/football/foot-kane-echangerait-volontiers-son-ballon-d-or-contre-la-prochaine-ligue-des-champions-20261102",
-          "title": "Foot: Kane échangerait volontiers son Ballon d'Or contre la prochaine Ligue des champions",
-          "publisher": "Le Figaro",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEu5AVivXr8J1M4NOrRu23uFL7gx7BJck3h8632dbePsyRlkJybXX_sE_yulc"
-        },
-        {
-          "url": "https://www.leparisien.fr/sports/football/ballon-dor-2026-la-direction-de-france-football-va-porter-plainte-apres-des-paris-suspects-31-10-2026-6YYC6OMT4NCGTFM65NVCMLA2GU.php",
-          "title": "Ballon d'or 2026 : la direction de France Football va porter plainte après des paris suspects",
-          "publisher": "Le Parisien",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wtGw-aG6K8gJXt95KrrKI5wbntDjNiwo_rzQSf2MHS6ndO_HUsrnfOg02fs"
-        }
-      ]
-    },
-    {
-      "query": "retirement",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T20:30:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/business/2026/11/03/heres-how-much-you-should-have-saved-by-time-you-retire/",
-        "https://www.kiplinger.com/retirement/retirement-planning/is-two-million-enough-to-retire",
-        "https://www.spokesman.com/stories/2026/nov/01/can-you-invest-too-much-in-your-retirement/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSisqXbrCtSmXPYDHLMWV0WmTejxSbupMpYdr_ri10TIqzuCUU1JRnbdLHsgsA",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/business/2026/11/03/heres-how-much-you-should-have-saved-by-time-you-retire/",
-          "title": "Column | Here’s how much you should have saved by the time you retire",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSisqXbrCtSmXPYDHLMWV0WmTejxSbupMpYdr_ri10TIqzuCUU1JRnbdLHsgsA"
-        },
-        {
-          "url": "https://www.kiplinger.com/retirement/retirement-planning/is-two-million-enough-to-retire",
-          "title": "Having a $2 Million Nest Egg Puts You in the Top 10% — But Can You Actually Retire on It?",
-          "publisher": "Kiplinger",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzRxAl4rym1QnIoYRuIA7mkBKANy3mDNeiw7fvpdDG1rUbZ1DzhSkfh0UO_aU"
-        },
-        {
-          "url": "https://www.spokesman.com/stories/2026/nov/01/can-you-invest-too-much-in-your-retirement/",
-          "title": "Can you invest too much in your retirement?",
-          "publisher": "The Spokesman-Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5CqmVRDTWi3hM6RWg-bCDHfHI5MnqhMABwHDFjC6dkf3_vxn0vs8RMmbNZvc"
-        }
-      ]
-    },
-    {
-      "query": "casper ruud",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T20:30:00Z",
-      "related_news_urls": [
-        "https://www.dimers.com/tennis/news/casper-ruud-vs-rafael-jodar-tennis-prediction-atp-paris-masters-2026-ac",
-        "https://tenngrand.com/paris-r2-previews-and-predictions-jodar-vs-ruud-shelton-vs-norrie/",
-        "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-jodar-ruud/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcSxAqTMcenqitSpV1BDavEu3vn8hOloQ3U-Oz-_wLtvHew2-XiszsWOUmJw",
-      "image_credit": "Dimers",
-      "news": [
-        {
-          "url": "https://www.dimers.com/tennis/news/casper-ruud-vs-rafael-jodar-tennis-prediction-atp-paris-masters-2026-ac",
-          "title": "Casper Ruud vs. Rafael Jodar prediction, odds, picks for ATP Paris Masters 2026",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcSxAqTMcenqitSpV1BDavEu3vn8hOloQ3U-Oz-_wLtvHew2-XiszsWOUmJw"
-        },
-        {
-          "url": "https://tenngrand.com/paris-r2-previews-and-predictions-jodar-vs-ruud-shelton-vs-norrie/",
-          "title": "Paris R2 previews and predictions: Jodar vs. Ruud, Shelton vs. Norrie",
-          "publisher": "The Grandstand",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSa1F7WIaPgNY_OminuJCikHQUI0PlshjPl7Io_Bv28JQVBUd9CR9aaV8rF5H8"
-        },
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-jodar-ruud/",
-          "title": "ATP Paris Day 2 Predictions Including Rafael Jodar vs Casper Ruud",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzyieey79O6SKwImzhfVeNPeemE2LR1cSyccYw5enL2J8Rx47OJSrKtDTibX4"
-        }
-      ]
-    },
-    {
-      "query": "kevin warsh ai stock market comments",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T20:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/economy/central-banking/the-feds-ai-puzzle-will-high-rates-slow-the-boom-c9c43ce2",
-        "https://www.cnbc.com/video/2026/10/28/fundstrats-tom-lee-we-can-say-big-beats-are-great-because-the-fed-wont-try-and-slow-growth.html",
-        "https://www.fool.com/investing/2026/11/03/fed-chair-kevin-warsh-just-drove-dagger-through-wall-street-ai-driven-rally-6-words/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT23T8FpTIa6LDBMFejZnwQg4qqvezlFF-kfjeawgTASz1sF2i2znMY_5YNKqg",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/economy/central-banking/the-feds-ai-puzzle-will-high-rates-slow-the-boom-c9c43ce2",
-          "title": "The Fed’s AI Puzzle: Will High Rates Slow the Boom?",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT23T8FpTIa6LDBMFejZnwQg4qqvezlFF-kfjeawgTASz1sF2i2znMY_5YNKqg"
-        },
-        {
-          "url": "https://www.cnbc.com/video/2026/10/28/fundstrats-tom-lee-we-can-say-big-beats-are-great-because-the-fed-wont-try-and-slow-growth.html",
-          "title": "Fundstrat's Tom Lee: We can say big beats are great because the Fed won't try and slow growth",
+          "url": "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html",
+          "title": "S&P 500 snaps 3-day skid on Election Day as chip stocks rebound",
           "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwMitIFWzHHMKeU-KP5rHmynmnFgcoflvCC6FgnW2ZXqQqQIxwTPCDaMSkJ8Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAaGoF4-b-JuL2i8kz5WjNgPC2p6zn3ga4oPPYcX7_PDNyIOHadmNmjcNY9BM"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/03/fed-chair-kevin-warsh-just-drove-dagger-through-wall-street-ai-driven-rally-6-words/",
-          "title": "Fed Chair Kevin Warsh Just Drove a Dagger Through Wall Street's AI-Driven Rally With 6 Blunt Words",
-          "publisher": "The Motley Fool",
+          "url": "https://apnews.com/article/stock-markets-ai-earnings-oil-0d235af127a92c68da0cc2c45c028cef",
+          "title": "Nvidia and other Big Tech stocks lift Wall Street and make up for a drop by Apple",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhLtlUfzSWVqrwsKL5ZgWg0tE-23HF22TNsLsH_9h3KbX8D6Jf9AQNTOBdq3w"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHiLTd505dJ_iNtt6rs9snU5y-8nfuiUDZSKgLMi5hrtiOqzPaXba8lp8e4o"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-03-2026",
+          "title": "Stock Market Today: Dow Opens Lower; Apple Stock Falls After Earnings Disappoint",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
         }
       ]
     },
     {
-      "query": "psg",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-03T20:20:00Z",
+      "query": "amd stock",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-03T21:00:00Z",
       "related_news_urls": [
-        "https://www.lemonde.fr/sport/live/2026/11/03/en-direct-villarreal-psg-et-bodo-glimt-lille-suivez-les-matchs-de-ligue-des-champions_6805646_3242.html",
-        "https://www.lequipe.fr/Football/Actualites/Senny-mayulu-en-pointe-lucas-hernandez-dans-le-couloir-gauche-la-composition-du-psg-contre-villarreal-en-ligue-des-champions/1740888",
-        "https://www.france24.com/fr/info-en-continu/20261103-ligue-des-champions-%C3%A0-villarreal-premier-test-europ%C3%A9en-pour-ce-psg-diminu%C3%A9"
+        "https://www.cnbc.com/2026/11/03/amd-has-been-crushed-into-earnings-heres-one-way-to-trade-it.html",
+        "https://finance.yahoo.com/technology/article/amd-to-report-q3-results-as-chip-stocks-rebound-following-last-weeks-steep-selloff-150210938.html",
+        "https://www.bloomberg.com/news/articles/2026-11-03/amd-needs-a-huge-outlook-to-avoid-intel-s-fate-as-ai-fears-rise"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFhZ2oHhMAigSUmXS0spLAIewdHn9xc7x7X4T-OW65qzBLljTvJ8YJFLYzdI",
-      "image_credit": "Le Monde.fr",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKm43kXepbYFCSOIbmXvCp1trfifaXYvtBCem5IZ8Dm7TD4qWicQOYpIMcBsg",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.lemonde.fr/sport/live/2026/11/03/en-direct-villarreal-psg-et-bodo-glimt-lille-suivez-les-matchs-de-ligue-des-champions_6805646_3242.html",
-          "title": "EN DIRECT, Villarreal-PSG et Bodo Glimt-Lille : Désiré Doué et Maghnes Akliouche pour emmener l’attaque parisienne",
-          "publisher": "Le Monde.fr",
+          "url": "https://www.cnbc.com/2026/11/03/amd-has-been-crushed-into-earnings-heres-one-way-to-trade-it.html",
+          "title": "AMD has been crushed into earnings. Here’s one way to trade it",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFhZ2oHhMAigSUmXS0spLAIewdHn9xc7x7X4T-OW65qzBLljTvJ8YJFLYzdI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKm43kXepbYFCSOIbmXvCp1trfifaXYvtBCem5IZ8Dm7TD4qWicQOYpIMcBsg"
         },
         {
-          "url": "https://www.lequipe.fr/Football/Actualites/Senny-mayulu-en-pointe-lucas-hernandez-dans-le-couloir-gauche-la-composition-du-psg-contre-villarreal-en-ligue-des-champions/1740888",
-          "title": "Senny Mayulu en pointe, Lucas Hernandez dans le couloir gauche : la composition du PSG contre Villarreal en Ligue des champions",
-          "publisher": "L'Équipe",
+          "url": "https://finance.yahoo.com/technology/article/amd-to-report-q3-results-as-chip-stocks-rebound-following-last-weeks-steep-selloff-150210938.html",
+          "title": "AMD to report Q3 results as chip stocks rebound following last week's steep selloff",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlC1hteEra5fqbXaCrEKYPDVv1_N4Cp1ZyYbraTbYShUGaUr8o9qMTjk2JFxs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3fY_eQVoDxDO6SCyZ0pYs5bOioPwAcAN6gRRuhsA10arUIKUHpqua7NiYN6E"
         },
         {
-          "url": "https://www.france24.com/fr/info-en-continu/20261103-ligue-des-champions-%C3%A0-villarreal-premier-test-europ%C3%A9en-pour-ce-psg-diminu%C3%A9",
-          "title": "Ligue des champions : à Villarreal, premier test européen pour ce PSG diminué",
-          "publisher": "France 24",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-03/amd-needs-a-huge-outlook-to-avoid-intel-s-fate-as-ai-fears-rise",
+          "title": "AMD Needs a Huge Outlook to Avoid Intel’s Fate as AI Fears Rise",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-2XQUkBrSGBLqOI65wqDJUl49OOEq6d8sKtR0VKmxQOByXtnIIS_P6jraPiU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6Y846c-Fx60jUPdK8XXmbBUoFWhFP8zySooaCj4qS1ugAnpSP11-zomHUrlw"
         }
       ]
     },
     {
-      "query": "rafael jodar",
+      "query": "smci stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T21:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/article/super-micro-to-report-q1-earnings-as-ai-trade-attempts-comeback-195315844.html",
+        "https://www.bloomberg.com/news/articles/2026-11-03/super-micro-gives-outlook-that-tops-estimates-on-server-demand",
+        "https://www.tikr.com/blog/super-micro-rises-4-dell-up-4-amd-up-5-as-ai-stocks-rebound-ahead-of-earnings?"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyXj7S_iq05OijGK_tkP_oHHt8DsaZLzq9aPlvr5SuzvDRcfSzM7rR8wNIG1E",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/article/super-micro-to-report-q1-earnings-as-ai-trade-attempts-comeback-195315844.html",
+          "title": "Super Micro to report Q1 earnings as AI trade attempts comeback",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyXj7S_iq05OijGK_tkP_oHHt8DsaZLzq9aPlvr5SuzvDRcfSzM7rR8wNIG1E"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-03/super-micro-gives-outlook-that-tops-estimates-on-server-demand",
+          "title": "Super Micro Gives Outlook That Tops Estimates on Server Demand",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBXf3XcNgEZwgmxRbO2XHj01lqLTcX8fC39B-LnGpAj_SaiDs1AyizpODHMtU"
+        },
+        {
+          "url": "https://www.tikr.com/blog/super-micro-rises-4-dell-up-4-amd-up-5-as-ai-stocks-rebound-ahead-of-earnings?",
+          "title": "Super Micro Rises 4%, Dell Up 4%, AMD Up 5% as AI Stocks Rebound Ahead of Earnings",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWs6a-bWN-Ez14qBIYjcmP1a6YGVrZn7w2nNVLhVcp6d4NjAG6kKWp62IxZH0"
+        }
+      ]
+    },
+    {
+      "query": "mn election results",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T20:20:00Z",
+      "published_at": "2026-11-03T21:00:00Z",
       "related_news_urls": [
-        "https://malaysia.news.yahoo.com/rafael-jodar-just-broken-time-090000394.html",
-        "https://www.puntodebreak.com/en/2026/10/31/rafael-jodar-top10-tenistas-espa%C3%B1oles-10-mejores-ranking-atp",
-        "https://www.thetennisgazette.com/news/carlos-alcaraz-names-the-player-who-has-surprised-him-most-this-season-its-unbelievable/"
+        "https://www.cbsnews.com/minnesota/live-updates/minnesotas-midterm-election-2026-follow-the-latest-updates/",
+        "https://www.mprnews.org/story/2026/11/03/voters-energized-and-heading-to-the-polls-in-minneapolis-and-moorhead",
+        "https://www.pbs.org/newshour/politics/live-results-minnesota-senate-midterm-election"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRszbHcdkDJiVDVOs7pHNChbQXODsi1ZJDbmTpwxFk_fuRwl9v8u0Ci8wiuQH0",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQpH8kWGn85dROuZb09-KmU184h6Gy-qP1XdVFoRvszOHjyjX67-nacw7P3OA",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://malaysia.news.yahoo.com/rafael-jodar-just-broken-time-090000394.html",
-          "title": "Rafael Jodar has just broken an all-time tennis record at the Basel Open without even playing",
-          "publisher": "Yahoo",
+          "url": "https://www.cbsnews.com/minnesota/live-updates/minnesotas-midterm-election-2026-follow-the-latest-updates/",
+          "title": "Minnesota's midterm election 2026: Follow the latest updates",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRszbHcdkDJiVDVOs7pHNChbQXODsi1ZJDbmTpwxFk_fuRwl9v8u0Ci8wiuQH0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQpH8kWGn85dROuZb09-KmU184h6Gy-qP1XdVFoRvszOHjyjX67-nacw7P3OA"
         },
         {
-          "url": "https://www.puntodebreak.com/en/2026/10/31/rafael-jodar-top10-tenistas-espa%C3%B1oles-10-mejores-ranking-atp",
-          "title": "Rafael Jódar joins the top-10 club and is now the 21st Spaniard to achieve it",
-          "publisher": "Punto de Break",
+          "url": "https://www.mprnews.org/story/2026/11/03/voters-energized-and-heading-to-the-polls-in-minneapolis-and-moorhead",
+          "title": "Voters energized and heading to the polls in Minneapolis and Moorhead",
+          "publisher": "MPR News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWt_KsChNo5uomx-HK0RZPZfLum4mTJdiJ_6yJEfbVYcBlt_VI-ehcnFCJQoc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-oJ6yqGz_e8wymEgokmPCr_SMVuu04FSghNGSy8usJSc593tqLyHu6rs6kw"
         },
         {
-          "url": "https://www.thetennisgazette.com/news/carlos-alcaraz-names-the-player-who-has-surprised-him-most-this-season-its-unbelievable/",
-          "title": "Carlos Alcaraz names the player who has surprised him most this season, ‘it’s unbelievable’",
-          "publisher": "The Tennis Gazette",
+          "url": "https://www.pbs.org/newshour/politics/live-results-minnesota-senate-midterm-election",
+          "title": "Live Results: Minnesota Senate midterm election",
+          "publisher": "PBS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4DY3bUm9jQq2SRcHBU_rvHroH6zdJ7AvmTDiom7aSNYVHR7FBSfpL8FhlvfE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsIpVrCl8O7HeGs93gRIUWmrONc919XJfGgSRwV8jJPgL2BtNqvWMrLHCT4wc"
+        }
+      ]
+    },
+    {
+      "query": "uefa nations league",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T21:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/articles/c3vgx8qxge7zo",
+        "https://www.irishtimes.com/sport/soccer/2026/11/03/ireland-drawn-in-nations-league-group-with-world-champions-spain/",
+        "https://www.rte.ie/sport/soccer/2026/1101/1597048-nations-league-could-offer-ireland-ticket-to-the-la-games/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1wffGB4Oj4WaWnLScQnfOit0IZsZW8EQ8oajppkchTuyZTBNyGmFYBrM3Wg",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/articles/c3vgx8qxge7zo",
+          "title": "Lionesses to face France and Portugal in Nations League",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1wffGB4Oj4WaWnLScQnfOit0IZsZW8EQ8oajppkchTuyZTBNyGmFYBrM3Wg"
+        },
+        {
+          "url": "https://www.irishtimes.com/sport/soccer/2026/11/03/ireland-drawn-in-nations-league-group-with-world-champions-spain/",
+          "title": "Ireland drawn in Nations League group with world champions Spain",
+          "publisher": "The Irish Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyTNAdbUm_YDBtrmmXbHoyR4bJwsY6QoHiBvwBetHvc7hMSvXk72zOWqtBlxM"
+        },
+        {
+          "url": "https://www.rte.ie/sport/soccer/2026/1101/1597048-nations-league-could-offer-ireland-ticket-to-the-la-games/",
+          "title": "Nations League could offer Ireland ticket to the LA Games",
+          "publisher": "RTE.ie",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZGRQ7FpVn92LjbyBRfVf9pcxwxsp_iX1gOOODPYaGufhr-VXQR0LPf80u5Zo"
+        }
+      ]
+    },
+    {
+      "query": "kansas election results",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T20:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/2026-elections/kansas-senate-results",
+        "https://www.kcur.org/politics-elections-and-government/2026-11-03/kansas-election-results-2026-november-senate-governor-congress",
+        "https://www.kctv5.com/2026/11/03/live-updates-voting-underway-across-kansas-missouri-doj-says-theyre-monitoring-elections-across-kansas-city/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzJBUSFITcDd2dsIauDDuI8kRAVvKQjHZrm6b9_teBMo5fxPEa_8drWyl4NqI",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/kansas-senate-results",
+          "title": "Kansas U.S. Senate Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzJBUSFITcDd2dsIauDDuI8kRAVvKQjHZrm6b9_teBMo5fxPEa_8drWyl4NqI"
+        },
+        {
+          "url": "https://www.kcur.org/politics-elections-and-government/2026-11-03/kansas-election-results-2026-november-senate-governor-congress",
+          "title": "Here are the key 2026 election results from Kansas",
+          "publisher": "KCUR",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUfjyeiJwsybGZ953znxW5lTfOqKu-zzp_5m5V8CNWY5AziYEzbIldrVDrZxU"
+        },
+        {
+          "url": "https://www.kctv5.com/2026/11/03/live-updates-voting-underway-across-kansas-missouri-doj-says-theyre-monitoring-elections-across-kansas-city/",
+          "title": "🔴 LIVE UPDATES: Voting underway across Kansas, Missouri as DOJ says it’s monitoring elections",
+          "publisher": "KCTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_1ZTs8pCxfNinQB8Kd0jYOdfl3F-rzxQjLG-tYzpMwWXrsZgzdk72foEz2rU"
+        }
+      ]
+    },
+    {
+      "query": "jensen ackles",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T20:50:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1300923/tracker-season-4-episode-5-recap-jensen-ackles-return-russell-colter/",
+        "https://www.aol.com/articles/tracker-season-4-episode-6-123158000.html",
+        "https://www.givememyremote.com/remote/tag/tracker-need-to-know-spoilers/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHfV-DLLLHj-OqHK88SCS5BSA84kGj44IV8Is2TTvoV1LoNZyezPnywhIRvno",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1300923/tracker-season-4-episode-5-recap-jensen-ackles-return-russell-colter/",
+          "title": "‘Tracker’: Did Jensen Ackles’ Return as Russell Address Colter Mystery?",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHfV-DLLLHj-OqHK88SCS5BSA84kGj44IV8Is2TTvoV1LoNZyezPnywhIRvno"
+        },
+        {
+          "url": "https://www.aol.com/articles/tracker-season-4-episode-6-123158000.html",
+          "title": "Tracker Season 4 Episode 6 Trailer Shows Colter’s Next Conspiracy Without Russell",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDSKIYbG70XpZpK4kj_yKTLDH3vsBWmDTOJ4DcUQUehEK-pDN26xJSBSvZwhs"
+        },
+        {
+          "url": "https://www.givememyremote.com/remote/tag/tracker-need-to-know-spoilers/",
+          "title": "TRACKER: 'Need to Know' spoilers",
+          "publisher": "Give Me My Remote",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxkbh7FSEDmVIloSPrD9CVdDmxYBWQ-4XXTqhdrU4ZRbgH9qDVd8iTAyz90J4"
+        }
+      ]
+    },
+    {
+      "query": "ryan fazio",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T20:50:00Z",
+      "related_news_urls": [
+        "https://www.wtnh.com/news/elections/lamont-fazio-make-final-push-as-election-day-arrives/",
+        "https://www.wfsb.com/2026/11/03/lamont-fazio-face-off-connecticut-governors-race/",
+        "https://hartfordbusiness.com/article/bordonaro-five-priorities-for-connecticuts-next-governor/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvCLP61FvD9MKDJAiNbibWeLMWiIX4iaLQRIGpFmGV2k-6vQ3dYfMtEWFm05k",
+      "image_credit": "WTNH.com",
+      "news": [
+        {
+          "url": "https://www.wtnh.com/news/elections/lamont-fazio-make-final-push-as-election-day-arrives/",
+          "title": "Lamont, Fazio make final push as Election Day arrives",
+          "publisher": "WTNH.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvCLP61FvD9MKDJAiNbibWeLMWiIX4iaLQRIGpFmGV2k-6vQ3dYfMtEWFm05k"
+        },
+        {
+          "url": "https://www.wfsb.com/2026/11/03/lamont-fazio-face-off-connecticut-governors-race/",
+          "title": "Lamont, Fazio face off in Connecticut governor’s race on Election Day",
+          "publisher": "WFSB",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw-Gg2XPG5MZfkCb-kq36Ict5jfX60c3ZQQlyjchGYyyzJDfKoh8jm8oMW-xg"
+        },
+        {
+          "url": "https://hartfordbusiness.com/article/bordonaro-five-priorities-for-connecticuts-next-governor/",
+          "title": "Bordonaro: Five priorities for Connecticut’s next governor",
+          "publisher": "Hartford Business Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpCv9a3TlUq4sAdL3kLe8y3iBEgFLKucfhU2iExhTSxIitnUkdvBkLn-64bUg"
+        }
+      ]
+    },
+    {
+      "query": "pandilla",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T20:50:00Z",
+      "related_news_urls": [
+        "https://www.chicagotribune.com/2026/11/02/lder-de-pandilla-haitiana-dice-a-ap-que-escribi-a-la-onu-para-proponer-dilogo/",
+        "https://news.un.org/es/story/2026/11/1542137",
+        "https://www.dw.com/es/jefe-de-banda-en-hait%C3%AD-pedir%C3%ADa-mediaci%C3%B3n-de-la-onu-para-un-di%C3%A1logo-de-paz/a-79828193"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAjrIaSHpn4eK7EwWWj6sW90AoYUIOUEAzbcQ829aNaSWWwT38COBaSeHp3MI",
+      "image_credit": "Chicago Tribune",
+      "news": [
+        {
+          "url": "https://www.chicagotribune.com/2026/11/02/lder-de-pandilla-haitiana-dice-a-ap-que-escribi-a-la-onu-para-proponer-dilogo/",
+          "title": "Líder de pandilla haitiana dice a AP que escribió a la ONU para proponer diálogo",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAjrIaSHpn4eK7EwWWj6sW90AoYUIOUEAzbcQ829aNaSWWwT38COBaSeHp3MI"
+        },
+        {
+          "url": "https://news.un.org/es/story/2026/11/1542137",
+          "title": "Haití: la ONU, entre los llamados al diálogo de las pandillas y la ofensiva militar de El Salvador",
+          "publisher": "UN News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpE0bOiai3LGM08uXX4-PB4ZkcIEtu6Gd88tUqY_U9yuMhCtahUqa1DKtiMlY"
+        },
+        {
+          "url": "https://www.dw.com/es/jefe-de-banda-en-hait%C3%AD-pedir%C3%ADa-mediaci%C3%B3n-de-la-onu-para-un-di%C3%A1logo-de-paz/a-79828193",
+          "title": "Jefe de banda en Haití pediría mediación de la ONU para un diálogo de paz",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS0mSL0iPiiZKISD77zvrNPdoS9LfQwZxdOjPzQhsix-8x-Bvp1L0iCnfVcY0"
+        }
+      ]
+    },
+    {
+      "query": "maratón de nueva york",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T20:50:00Z",
+      "related_news_urls": [
+        "https://www.univision.com/local/nueva-york-wxtv/completar-maraton-de-nueva-york-meta-mujer-joven-sin-vida-otra-peleando-vivir",
+        "https://www.telemundo47.com/noticias/local/corredora-muere-maraton-nueva-york/2663632/",
+        "https://us.marca.com/mas-deporte/2026/11/03/rachel-apa-joven-corredora-murio-intentando-terminar-maraton-nueva-york-24-anos.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYTGrgVbbbXh_zt0lU_jlM3Enmzd61xpuiGTm9HIJ7rIOYNs_dsQWxcym7eyk",
+      "image_credit": "Univision",
+      "news": [
+        {
+          "url": "https://www.univision.com/local/nueva-york-wxtv/completar-maraton-de-nueva-york-meta-mujer-joven-sin-vida-otra-peleando-vivir",
+          "title": "Completar el maratón de Nueva York, la meta que dejó a una mujer sin vida y a otra peleando por vivir",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYTGrgVbbbXh_zt0lU_jlM3Enmzd61xpuiGTm9HIJ7rIOYNs_dsQWxcym7eyk"
+        },
+        {
+          "url": "https://www.telemundo47.com/noticias/local/corredora-muere-maraton-nueva-york/2663632/",
+          "title": "Joven corredora muere tras desplomarse a 2 millas de la meta del maratón de NY",
+          "publisher": "Telemundo New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqOz_72aaE5RQDy0rtcdzjhKiJDjOe_Ui9X9BdPnaZb-OuMzADtUlOGqR0fBo"
+        },
+        {
+          "url": "https://us.marca.com/mas-deporte/2026/11/03/rachel-apa-joven-corredora-murio-intentando-terminar-maraton-nueva-york-24-anos.html",
+          "title": "¿Quién era Rachel Apa? La joven corredora que murió intentando terminar la Maratón de Nueva York a sus 24 años",
+          "publisher": "marca usa",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAuSl4pRnSTamJ3c5R15O9qudWzShdZig6N0VJRn4-17kiY9NhQ8VHJUGniKw"
         }
       ]
     }
