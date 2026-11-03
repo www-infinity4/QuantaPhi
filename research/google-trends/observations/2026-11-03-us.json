@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T11:01:30.551664Z",
+  "checked_at": "2026-11-03T11:31:28.027309Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "bruins score",
+      "query": "is there mail delivery on election day",
       "approx_searches": "100+",
-      "published_at": "2026-11-03T10:40:00Z",
+      "published_at": "2026-11-03T11:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nhl/recap/_/gameId/401892614",
-        "https://www.nhl.com/video/chi-bos-lindholm-scores-goal-against-arvid-soderblom-6407722024112",
-        "https://www.stanleycupofchowder.com/gameday-open-threads/59594/public-skate-bruins-vs-blackhawks"
+        "https://www.reuters.com/legal/government/inside-us-postal-service-sprint-deliver-millions-ballots-by-tuesday-2026-11-02/",
+        "https://www.nbcchicago.com/illinois-election-2026/still-have-a-mail-in-ballot-for-this-years-election-heres-what-to-do/4010398/",
+        "https://news.usps.com/2026/11/02/pmg-gives-support-for-election-mail-delivery-in-new-video/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFRsp_odaeGvYIdaXQVUf1tepXkwsU562ItjBe08kBTVFHFNAYnK5eYx-i0ZQ",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl4T40Bm345eo96H0seJpGPIdeyesH5deR45LuctJYDDR4ujJ0tcIVJ0Lyr_I",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892614",
-          "title": "Bruins 5-4 Blackhawks (Oct 31, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.reuters.com/legal/government/inside-us-postal-service-sprint-deliver-millions-ballots-by-tuesday-2026-11-02/",
+          "title": "Inside the US Postal Service sprint to deliver millions of ballots by Tuesday",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFRsp_odaeGvYIdaXQVUf1tepXkwsU562ItjBe08kBTVFHFNAYnK5eYx-i0ZQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl4T40Bm345eo96H0seJpGPIdeyesH5deR45LuctJYDDR4ujJ0tcIVJ0Lyr_I"
         },
         {
-          "url": "https://www.nhl.com/video/chi-bos-lindholm-scores-goal-against-arvid-soderblom-6407722024112",
-          "title": "Lindholm nets overtime winner",
-          "publisher": "NHL.com",
+          "url": "https://www.nbcchicago.com/illinois-election-2026/still-have-a-mail-in-ballot-for-this-years-election-heres-what-to-do/4010398/",
+          "title": "Still have a mail-in ballot for this year's election? Here's what to do",
+          "publisher": "NBC 5 Chicago",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQTzEErT-nEBSCM4-MoyvGl_GXscFX6Krp7ncYt1ANfEjTaDvRtYCwdBZpmY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MH227XtiVSEabGjEWi1vJUzsu6liNMYu0WPsbpoyCFPVdlx6sgBA1Vb0A8E"
         },
         {
-          "url": "https://www.stanleycupofchowder.com/gameday-open-threads/59594/public-skate-bruins-vs-blackhawks",
-          "title": "Public Skate: Bruins vs. Blackhawks",
-          "publisher": "Stanley Cup of Chowder",
+          "url": "https://news.usps.com/2026/11/02/pmg-gives-support-for-election-mail-delivery-in-new-video/",
+          "title": "PMG gives support for Election Mail delivery in new video",
+          "publisher": "USPS",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMJlAMfErG_251rtQlSxgeyKJxLgDKWNDTRUoGq39NcEgX-VKbYD3kQLGrbyM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTWfEivAxPtZW9BSFkMXlzUIDZxDiRyEaVf3UVJV2pyAxgL8EMHPcn11yT4UY"
         }
       ]
     },
     {
-      "query": "strands hint today",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T10:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/02/crosswords/strands-sidekick-975.html",
-        "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-3-975/",
-        "https://parade.com/living/nyt-strands-hints-answers-today-spangram-monday-november-2-2026"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3URhzpDsLzns_G724qG_kzhaDbfv6aKsj_WRe0J8UZQW67vbOuArCssL4RJ8",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/02/crosswords/strands-sidekick-975.html",
-          "title": "NYT Strands Hints for November 3, 2026",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3URhzpDsLzns_G724qG_kzhaDbfv6aKsj_WRe0J8UZQW67vbOuArCssL4RJ8"
-        },
-        {
-          "url": "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-3-975/",
-          "title": "Today’s NYT Strands Hints, Spangram and Answers for Tuesday, Nov. 3, #975",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-JCWL-geJx4ZmEuJSL2MbatsaViOuWBrYsFoL_UcSGxPWQxX7f99YbDZYeQ"
-        },
-        {
-          "url": "https://parade.com/living/nyt-strands-hints-answers-today-spangram-monday-november-2-2026",
-          "title": "Today’s NYT ‘Strands’ Hints, Spangram and Answers for Monday, November 2, 2026",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKT7N-NENi-M1urPRqYiuOG0BccxyNP6xTizjmpyXv-fngfMCGZtebUyv2HAM"
-        }
-      ]
-    },
-    {
-      "query": "wptv",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T10:40:00Z",
-      "related_news_urls": [
-        "https://www.witn.com/2026/11/02/national-hurricane-center-is-monitoring-an-area-off-east-coast/",
-        "https://www.wtok.com/2026/11/02/first-alert-one-area-interest-monitor-atlantic/",
-        "https://www.news4jax.com/news/local/2026/11/02/tracking-the-tropics-watching-a-spot-in-the-atlantic/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEJYfu6Xy8r3o5xIVc9FrYBMRkP01FmMYZldHgLlx2r6brL6PujJe2r7c4D0k",
-      "image_credit": "WITN",
-      "news": [
-        {
-          "url": "https://www.witn.com/2026/11/02/national-hurricane-center-is-monitoring-an-area-off-east-coast/",
-          "title": "National Hurricane Center is monitoring an area off the East Coast",
-          "publisher": "WITN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEJYfu6Xy8r3o5xIVc9FrYBMRkP01FmMYZldHgLlx2r6brL6PujJe2r7c4D0k"
-        },
-        {
-          "url": "https://www.wtok.com/2026/11/02/first-alert-one-area-interest-monitor-atlantic/",
-          "title": "First Alert: One area of interest to monitor in the Atlantic",
-          "publisher": "WTOK",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDVCvk2adjv1ND1Nqi8C5rJhcXDupmSxnaZmYK8vGlhO2w7zUlPsj_uoPKPSI"
-        },
-        {
-          "url": "https://www.news4jax.com/news/local/2026/11/02/tracking-the-tropics-watching-a-spot-in-the-atlantic/",
-          "title": "Tracking the Tropics: Watching a spot in the Atlantic",
-          "publisher": "News4JAX",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRz29YP2tlkCjIfeoPk-ld06w9Z3t3JvfvcMGB5QKCniWjLAj6hjcOd1yZoUs"
-        }
-      ]
-    },
-    {
-      "query": "the new york times",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T10:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/02/opinion/trump-midterms-history.html",
-        "https://www.usatoday.com/story/news/politics/2026/11/03/trump-republicans-midterm-reckoning-blue-wave-election/92497949007/",
-        "https://english.elpais.com/usa/2026-11-02/united-states-holds-referendum-on-the-end-of-trumpism.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQs9xFJtuYGvZu9-nZVPMGB-yde0pnnrunLGU_afuc6-hE3yB-wLR8mnmaOwZQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/02/opinion/trump-midterms-history.html",
-          "title": "Opinion | Don’t Be a Haley Stevens",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQs9xFJtuYGvZu9-nZVPMGB-yde0pnnrunLGU_afuc6-hE3yB-wLR8mnmaOwZQ"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/politics/2026/11/03/trump-republicans-midterm-reckoning-blue-wave-election/92497949007/",
-          "title": "Trump's midterm reckoning: A repudiation or triumph awaits",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZiPEFL6-2AeJn2elPEZqwvMpEpPyXrjTfHJIkEfpIBcZ8CYLVXX9tSd3NJYs"
-        },
-        {
-          "url": "https://english.elpais.com/usa/2026-11-02/united-states-holds-referendum-on-the-end-of-trumpism.html",
-          "title": "United States holds referendum on the end of Trumpism",
-          "publisher": "EL PAÍS English",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREP_QkGpFoQCTSuMdSzRdR2VoEQZH0j0GG4ucEqNvpJ093_kJjS62Ls2XdDmM"
-        }
-      ]
-    },
-    {
-      "query": "samsung vs kt",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T10:20:00Z",
-      "related_news_urls": [
-        "https://www.chosun.com/english/sports-en/2026/11/03/JQWFFOMDJZEQHMORKBGC3ZKZGQ/",
-        "https://www.starnewskorea.com/en/sports/2026/11/03/2026110213022342219",
-        "https://biz.chosun.com/en/en-sports/2026/11/03/FKLAKZE7QJE3HGF66LB3XRWWCU/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQraYiRiwsLB28jPFtm-mMk8kYKVyaIjT3TonDNgw30OVsh9ciVHaxz_XCHP5U",
-      "image_credit": "조선일보",
-      "news": [
-        {
-          "url": "https://www.chosun.com/english/sports-en/2026/11/03/JQWFFOMDJZEQHMORKBGC3ZKZGQ/",
-          "title": "Samsung Manager Persuades Injured Veterans to Play",
-          "publisher": "조선일보",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQraYiRiwsLB28jPFtm-mMk8kYKVyaIjT3TonDNgw30OVsh9ciVHaxz_XCHP5U"
-        },
-        {
-          "url": "https://www.starnewskorea.com/en/sports/2026/11/03/2026110213022342219",
-          "title": "\"(In a) poor condition, largely unchanged\" Kang Min-ho, KS Game 1: We'll see when the time comes! With Koo Ja-wook's injury and 43-year-old Choi Hyeong-woo even at left field, 'Wha",
-          "publisher": "스타뉴스",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFD6c5S51pkmvNc5XITYFqgtSyZ-LJHBE8lPRWUqr5D0Ze5ou6SWbFWmxEHbA"
-        },
-        {
-          "url": "https://biz.chosun.com/en/en-sports/2026/11/03/FKLAKZE7QJE3HGF66LB3XRWWCU/",
-          "title": "Woo Kyu-min reaches Korea Series and vows to beat former team Samsung",
-          "publisher": "Chosunbiz",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7F8i8YOADQ_6K-qpOmYg4BYI76-X1WaCxWwZQmJA4A5YODHANWxw-tUaTQFE"
-        }
-      ]
-    },
-    {
-      "query": "bert mizusawa",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T10:20:00Z",
-      "related_news_urls": [
-        "https://www.alexandriabrief.com/warner-closes-his-last-campaign-at-home-in-alexandria/",
-        "https://www.roanokerambler.com/what-mark-warners-record-means-for-roanoke/",
-        "https://www.cavalierdaily.com/article/2026/10/gop-senate-candidate-bert-mizusawa-makes-stop-at-uva"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQmIO1Fo0sC_bn3MuIe7OQ2EEVyuQk3Bvmdjs6geLxeA2iIvH-H7m4n7fU0so",
-      "image_credit": "The Alexandria Brief",
-      "news": [
-        {
-          "url": "https://www.alexandriabrief.com/warner-closes-his-last-campaign-at-home-in-alexandria/",
-          "title": "Warner closes his last campaign at home in Alexandria",
-          "publisher": "The Alexandria Brief",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQmIO1Fo0sC_bn3MuIe7OQ2EEVyuQk3Bvmdjs6geLxeA2iIvH-H7m4n7fU0so"
-        },
-        {
-          "url": "https://www.roanokerambler.com/what-mark-warners-record-means-for-roanoke/",
-          "title": "What Mark Warner's Record Means for Roanoke",
-          "publisher": "The Roanoke Rambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFIiX4G5sbhmCpdAHcD6KiI5kJsPaLR-JRGx29E1E6Hiula7eOLdUEJyZNNsc"
-        },
-        {
-          "url": "https://www.cavalierdaily.com/article/2026/10/gop-senate-candidate-bert-mizusawa-makes-stop-at-uva",
-          "title": "GOP Senate Candidate Bert Mizusawa makes stop at U.Va.",
-          "publisher": "The Cavalier Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzEcgKIZbsaAPHg-sECf5j7-3grnc_E-oCJHuMNh502xva0r0T1GfKil73fQw"
-        }
-      ]
-    },
-    {
-      "query": "west ham",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T10:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7741703/2026/11/03/west-ham-nuno-sacked/",
-        "https://www.whufc.com/en/news/club-statement-nov-2026",
-        "https://www.theguardian.com/football/2026/nov/03/west-ham-sack-nuno-espirito-santo-as-head-coach"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmbl5iI8jVESFXiUz1kn_gFC2Ubrsjluh9D5MMcABfIG3NJ7sU0O8AHAxMaig",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7741703/2026/11/03/west-ham-nuno-sacked/",
-          "title": "West Ham sack head coach Nuno Espirito Santo",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmbl5iI8jVESFXiUz1kn_gFC2Ubrsjluh9D5MMcABfIG3NJ7sU0O8AHAxMaig"
-        },
-        {
-          "url": "https://www.whufc.com/en/news/club-statement-nov-2026",
-          "title": "Club Statement",
-          "publisher": "West Ham United",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSD18CHgzTzJhFit2zJQV4Na9cXYrTm1arwJ9Nh7kSOluoQq-vcz4wLsjA_qYo"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/03/west-ham-sack-nuno-espirito-santo-as-head-coach",
-          "title": "West Ham turn to Scott Parker after sacking Nuno Espírito Santo as head coach",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmDTlCVi979MQXDN3o1mFIgePOFk4ti7QcbtKDAwwTUdcCWq5ERaEoJhO3sjg"
-        }
-      ]
-    },
-    {
-      "query": "jesús de miguel alameda",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T10:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17470227/tenerife-murio-jesus-de-miguel-choque-partido",
-        "https://elpais.com/deportes/futbol/2026-11-03/jesus-de-miguel-el-fanatico-del-real-madrid-que-decidio-quedarse-en-tenerife.html",
-        "https://www.marca.com/futbol/2026/11/03/suspenden-partidos-copa-rey-reina-muerte-jesus-miguel.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFMj9FpFqSzFT9fToC1IygcEW1b3IBR9aHgO44CULpq1PZHeA4GMGLl_N5fM4",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17470227/tenerife-murio-jesus-de-miguel-choque-partido",
-          "title": "Muere Jesús de Miguel, jugador de Tenerife, tras choque en partido",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFMj9FpFqSzFT9fToC1IygcEW1b3IBR9aHgO44CULpq1PZHeA4GMGLl_N5fM4"
-        },
-        {
-          "url": "https://elpais.com/deportes/futbol/2026-11-03/jesus-de-miguel-el-fanatico-del-real-madrid-que-decidio-quedarse-en-tenerife.html",
-          "title": "Jesús de Miguel, el fanático del Real Madrid que decidió quedarse en Tenerife",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLAnyY8QuKuRfsQbbT4xu06ae00MvlouahDzZAEt-oxFc7FndFYfBhrxRqAlk"
-        },
-        {
-          "url": "https://www.marca.com/futbol/2026/11/03/suspenden-partidos-copa-rey-reina-muerte-jesus-miguel.html",
-          "title": "Se suspenden los partidos de la Copa del Rey y de la Reina por la muerte de Jesús de Miguel",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGorwldX7uUVELXvMe2BsreOlP8CwuBfQaRUI7KGLD1FlZA1R5u97pP_F9KI"
-        }
-      ]
-    },
-    {
-      "query": "yard signs",
+      "query": "andrey rublev",
       "approx_searches": "200+",
-      "published_at": "2026-11-03T10:10:00Z",
+      "published_at": "2026-11-03T11:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/02/nyregion/connecticut-stolen-election-yard-sign-airtag.html",
-        "https://www.nbcconnecticut.com/news/local/state-representative-anne-hughes-arrested-for-theft-of-political-signs/3790833/",
-        "https://www.yahoo.com/news/politics/articles/no-discipline-connecticut-lawmaker-accused-000229209.html"
+        "https://vsin.com/tennis/rolex-paris-masters-predictions-tennis-best-bets-and-picks-for-tuesday-november-3/",
+        "https://tenngrand.com/paris-tennis-previews-picks-predictions-tien-vs-tsitsipas-nakashima-berrettini/",
+        "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-tsitsipas-tien/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHbk-OAJwjUVjXSaFqCM9zF-nFy1VUzhl0Xm21qmOA6kPHCzpo5mj2V4dtow4",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjmmoLWxSbIGrpU0f5HDAxZrjVmcrYtZkP5Zlc6CtgBgc_eYdCfn8EhlCdkU4",
+      "image_credit": "VSiN",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/02/nyregion/connecticut-stolen-election-yard-sign-airtag.html",
-          "title": "Who Stole a Candidate’s Yard Signs? An AirTag Ping Offered an Answer.",
-          "publisher": "The New York Times",
+          "url": "https://vsin.com/tennis/rolex-paris-masters-predictions-tennis-best-bets-and-picks-for-tuesday-november-3/",
+          "title": "Rolex Paris Masters Predictions: Tennis best bets and picks for Tuesday, November 3",
+          "publisher": "VSiN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHbk-OAJwjUVjXSaFqCM9zF-nFy1VUzhl0Xm21qmOA6kPHCzpo5mj2V4dtow4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjmmoLWxSbIGrpU0f5HDAxZrjVmcrYtZkP5Zlc6CtgBgc_eYdCfn8EhlCdkU4"
         },
         {
-          "url": "https://www.nbcconnecticut.com/news/local/state-representative-anne-hughes-arrested-for-theft-of-political-signs/3790833/",
-          "title": "CT State Representative Anne Hughes issued summons for theft of political signs",
-          "publisher": "NBC Connecticut",
+          "url": "https://tenngrand.com/paris-tennis-previews-picks-predictions-tien-vs-tsitsipas-nakashima-berrettini/",
+          "title": "Paris R1 previews and predictions: Tien vs. Tsitsipas, Nakashima vs. Berrettini",
+          "publisher": "The Grandstand",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRnLU_dxams4N8B2X1W_8DX7dS_HG6O2KNOQaz0grJXPFxV2w8BSoFxM-vDQs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHrl_xALOrRhOjMoHjd55nXWJ_xhC7xG_IpBylKqefy_GumbxRA7etDKMD8vA"
         },
         {
-          "url": "https://www.yahoo.com/news/politics/articles/no-discipline-connecticut-lawmaker-accused-000229209.html",
-          "title": "No discipline for Connecticut lawmaker accused of taking campaign signs, House speaker says",
-          "publisher": "Yahoo",
+          "url": "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-tsitsipas-tien/",
+          "title": "ATP Paris Day 2 Predictions Including Stefanos Tsitsipas vs Learner Tien",
+          "publisher": "Last Word On Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyzTwkmxJT5nv9dsZHm5VKrFFgV5Xr-66URjDKs0Ha0QAzMvW6DA38yAfIXM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmYQ9jV4C8oT6ub87_K8wKGmsMS4f89fl9wyhpBVnEAEFseeBnbRWuZgotMZA"
         }
       ]
     },
     {
-      "query": "ferguson",
+      "query": "tiempo de hoy",
       "approx_searches": "100+",
-      "published_at": "2026-11-03T10:10:00Z",
+      "published_at": "2026-11-03T11:10:00Z",
       "related_news_urls": [
-        "https://people.com/sarah-ferguson-pictured-first-time-in-6-months-joins-daughters-beatrice-eugenie-at-memorial-for-ex-boyfriend-12202124",
-        "https://www.yahoo.com/entertainment/celebrity/articles/sarah-ferguson-lies-low-uk-061221047.html",
-        "https://www.hola.com/us/royals/20261030932329/sarah-ferguson-returns-uk-daughters-year-hiding-emotional-reason/"
+        "https://www.univision.com/local/miami-wltv/aviso-por-inundaciones-repentinas-afecta-deerfield-beach-y-sectores-cercanos-a-la-i-95-video",
+        "https://www.telemundo51.com/video/el-tiempo/noticias-del-tiempo/alerta-de-tiempo/2843903/",
+        "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/clima/video/ron-desantis-declara-estado-de-emergencia-en-florida-por-las-inundaciones-historicas-tmvo13240831"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIj8YH-3OXZe8N2r1CBhMtH4uZVoxeGaB38ccrdIui3361Wm6eo8v1JVPCOmw",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHnWcAPiglY4ZpYfwM91qUnldIey0wHaixvv0abpRNQYqFfY_X9GpSwDn90U",
+      "image_credit": "Univision",
       "news": [
         {
-          "url": "https://people.com/sarah-ferguson-pictured-first-time-in-6-months-joins-daughters-beatrice-eugenie-at-memorial-for-ex-boyfriend-12202124",
-          "title": "Sarah Ferguson Pictured for the First Time in 6 Months as She Joins Daughters Beatrice and Eugenie at Memorial for Ex",
-          "publisher": "People.com",
+          "url": "https://www.univision.com/local/miami-wltv/aviso-por-inundaciones-repentinas-afecta-deerfield-beach-y-sectores-cercanos-a-la-i-95-video",
+          "title": "Aviso por inundaciones repentinas afecta Deerfield Beach y sectores cercanos a la I-95",
+          "publisher": "Univision",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIj8YH-3OXZe8N2r1CBhMtH4uZVoxeGaB38ccrdIui3361Wm6eo8v1JVPCOmw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHnWcAPiglY4ZpYfwM91qUnldIey0wHaixvv0abpRNQYqFfY_X9GpSwDn90U"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/sarah-ferguson-lies-low-uk-061221047.html",
-          "title": "Sarah Ferguson ‘Lies Low’ in UK, but Keeps Ex-Prince Andrew in Her Orbit — Report",
+          "url": "https://www.telemundo51.com/video/el-tiempo/noticias-del-tiempo/alerta-de-tiempo/2843903/",
+          "title": "Alerta de tiempo para partes del condado Miami-Dade",
+          "publisher": "Telemundo Miami (51)",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGlR0OgDbLOgUfIjGxMheQUayoYYcdxskPiX3Qr1JaHdmkvvpSj2GSOlHbJU8"
+        },
+        {
+          "url": "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/clima/video/ron-desantis-declara-estado-de-emergencia-en-florida-por-las-inundaciones-historicas-tmvo13240831",
+          "title": "Ron DeSantis declara estado de emergencia en Florida por las inundaciones históricas",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSp_1JjcQniIgPcEYpM1ZEULwuLD8sP6XV6K0_JctEeEUxuJ2UKsSkiDHy0Oxc"
+        }
+      ]
+    },
+    {
+      "query": "alexandra eala",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T11:00:00Z",
+      "related_news_urls": [
+        "https://sports.inquirer.net/704861/live-alex-eala-vs-alycia-parks-hong-kong-open-round-of-32",
+        "https://www.tennisworldusa.org/tennis/news/WTA_Tennis/171099/alexandra-eala-has-no-regrets-over-her-2026-season-amid-rough-asian-swing/",
+        "https://www.skysports.com/tennis/watch/6543206222515308112/prudential-hong-kong-tennis-open-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiOT6T8ZXoitK7Lfrpb3xXT_82BlNeXhqqQAh6yRtWinUKeO8EAJzeD8173I",
+      "image_credit": "Inquirer.net",
+      "news": [
+        {
+          "url": "https://sports.inquirer.net/704861/live-alex-eala-vs-alycia-parks-hong-kong-open-round-of-32",
+          "title": "LIVE: Alex Eala vs Alycia Parks – Hong Kong Open Round of 32",
+          "publisher": "Inquirer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiOT6T8ZXoitK7Lfrpb3xXT_82BlNeXhqqQAh6yRtWinUKeO8EAJzeD8173I"
+        },
+        {
+          "url": "https://www.tennisworldusa.org/tennis/news/WTA_Tennis/171099/alexandra-eala-has-no-regrets-over-her-2026-season-amid-rough-asian-swing/",
+          "title": "Alexandra Eala has 'no regrets' over her 2026 season amid rough Asian swing",
+          "publisher": "Tennis World USA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAWdpZ-ViBeVz5-sf1OObN6HHHHNB7ODAerGA9OdtbF-RO_jZSKbfj2m7IJfI"
+        },
+        {
+          "url": "https://www.skysports.com/tennis/watch/6543206222515308112/prudential-hong-kong-tennis-open-2026",
+          "title": "Sports News, Transfers, Scores | Watch Live Sport",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLX9Pr2gyYDrziI7tAzMej-eIpKbzv0wHqiHwkUR1B9xBYnp45JjrCZcNwcXs"
+        }
+      ]
+    },
+    {
+      "query": "dólar estadounidense",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T11:00:00Z",
+      "related_news_urls": [
+        "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-lunes-2-noviembre-tipo-de-cambio-22505859.php",
+        "https://www.informador.mx/economia/dolar-hoy-el-peso-mexicano-pierde-fuerza-ante-el-billete-verde-en-este-inicio-de-noviembre-analistas-esperan-otra-semana-de-perdidas-20261102-0032.html",
+        "https://www.fxstreet.es/news/el-peso-mexicano-se-recupera-con-fuerza-mientras-la-sorpresa-del-pib-de-mexico-empuja-al-usd-mxn-a-la-baja-202611021930"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOoUObQ51rxlEwCBZWfxT4c96oYSoTycCkgsJy5JdvUBCXWmc41u4EwCwadFY",
+      "image_credit": "Dallas News",
+      "news": [
+        {
+          "url": "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-lunes-2-noviembre-tipo-de-cambio-22505859.php",
+          "title": "Así está el dólar en México hoy: tipo de cambio y cotizaciones en bancos",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOoUObQ51rxlEwCBZWfxT4c96oYSoTycCkgsJy5JdvUBCXWmc41u4EwCwadFY"
+        },
+        {
+          "url": "https://www.informador.mx/economia/dolar-hoy-el-peso-mexicano-pierde-fuerza-ante-el-billete-verde-en-este-inicio-de-noviembre-analistas-esperan-otra-semana-de-perdidas-20261102-0032.html",
+          "title": "El peso mexicano pierde fuerza ante el dólar en este inicio de noviembre; analistas esperan otra semana de pérdidas",
+          "publisher": "El Informador",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ7Ajb2vE-dkvGBH8K3BxdkekibI1AS_zCksAbvjhjvrn1tprzQPo-h8eKmLM"
+        },
+        {
+          "url": "https://www.fxstreet.es/news/el-peso-mexicano-se-recupera-con-fuerza-mientras-la-sorpresa-del-pib-de-mexico-empuja-al-usd-mxn-a-la-baja-202611021930",
+          "title": "El Peso mexicano se recupera con fuerza tras caer a mínimos de una semana",
+          "publisher": "FXStreet",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiKbJ8hXbaTTLEavwSFnF2cxfRdo_ftvFKR1mk0sWkwWZXxZVi6ai4uPB2PKs"
+        }
+      ]
+    },
+    {
+      "query": "what do you need to bring to vote",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T11:00:00Z",
+      "related_news_urls": [
+        "https://fox17.com/features/nashville-in-focus/nashville-in-focus-tn-govs-race-the-numbers-you-should-notice-tennessee-midterm-election",
+        "https://www.yahoo.com/news/politics/articles/knoxville-election-results-2026-local-100938494.html",
+        "https://www.timesfreepress.com/news/2026/nov/02/what-to-know-before-you-head-to-the-polls-in-the-chattanooga-area-tuesday/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaIftm_sJmDF0CVm8gzEkOeO9Dp3byFO63eTa-3dGpRFvRKGgg7WookWAiO8E",
+      "image_credit": "WZTV",
+      "news": [
+        {
+          "url": "https://fox17.com/features/nashville-in-focus/nashville-in-focus-tn-govs-race-the-numbers-you-should-notice-tennessee-midterm-election",
+          "title": "Nashville in Focus: Tennessee governor's race, the numbers you should notice",
+          "publisher": "WZTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaIftm_sJmDF0CVm8gzEkOeO9Dp3byFO63eTa-3dGpRFvRKGgg7WookWAiO8E"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/knoxville-election-results-2026-local-100938494.html",
+          "title": "Knoxville election results 2026: Get local, state and federal updates",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHMmgADHjL7jyJ7qS4HrnEx4HngDATU89NnbWRLSbvDYbj6wcqjKUsDpnYlVg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr5SfDOxE9FI-EHjH11nu_IFMCnkxAnCDDQrHBiKrGGsM0HW_KD-7f0TvdUr4"
         },
         {
-          "url": "https://www.hola.com/us/royals/20261030932329/sarah-ferguson-returns-uk-daughters-year-hiding-emotional-reason/",
-          "title": "Sarah Ferguson returns to the UK with her daughters after a year in hiding for an emotional reason",
-          "publisher": "HOLA",
+          "url": "https://www.timesfreepress.com/news/2026/nov/02/what-to-know-before-you-head-to-the-polls-in-the-chattanooga-area-tuesday/",
+          "title": "What to know before you head to the polls in the Chattanooga area Tuesday",
+          "publisher": "Chattanooga Times Free Press",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1U-PLdDJrX0hXBBdE_EMU_EjXo5JWd5EB1O3vJXJ02vVuiY9mXFUpvgcavVU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4pYhaMNA47s5BMdnTZhA8B83beEZf8krQqySZhGkRa83SkHvR9y2uI5vHOkY"
+        }
+      ]
+    },
+    {
+      "query": "google android botnet takedown",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T11:00:00Z",
+      "related_news_urls": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet",
+        "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+        "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA",
+      "image_credit": "Google Cloud",
+      "news": [
+        {
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet",
+          "title": "Shutting the Door on the XCPE Botnet",
+          "publisher": "Google Cloud",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA"
+        },
+        {
+          "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+          "title": "One of Google’s Android partners turned 1.3 million set-top boxes into a botnet",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE5g41GyuleQTazjxSjwh7XJvwSWgJ36YglV30BhxVr_hYbFf7_xdnGwLgFlU"
+        },
+        {
+          "url": "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045",
+          "title": "Cops bust botnet of 1.3M infected Android TV boxes",
+          "publisher": "The Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEdT5Zvr5udJUo72sESJnOb1-vW6w02j8LpwPW7OQ7MLe6weeokI5BaGGjKUM"
+        }
+      ]
+    },
+    {
+      "query": "learner tien",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-03T11:00:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/video/highlights-musetti-fends-off-hurkacz-in-nervy-paris-2026-opener",
+        "https://tenngrand.com/paris-tennis-previews-picks-predictions-musetti-vs-hurkacz-khachanov-shapovalov/",
+        "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-best-bets-djokovic-vacherot/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM08u2LWo0UVUoJ5mKzaKbGE8z0Uut2ySpwVlhUTcU5USUa-TEDyvlO0Fxm-0",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/video/highlights-musetti-fends-off-hurkacz-in-nervy-paris-2026-opener",
+          "title": "Highlights: Musetti fends off Hurkacz in nervy Paris 2026 opener",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM08u2LWo0UVUoJ5mKzaKbGE8z0Uut2ySpwVlhUTcU5USUa-TEDyvlO0Fxm-0"
+        },
+        {
+          "url": "https://tenngrand.com/paris-tennis-previews-picks-predictions-musetti-vs-hurkacz-khachanov-shapovalov/",
+          "title": "Paris R1 previews and predictions: Musetti vs. Hurkacz, Khachanov vs. Shapovalov",
+          "publisher": "The Grandstand",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVw7L6t4HPC2uVfFdUawY5DZ43D1onI_QRaWfcezpFgaGv0bz3Cq17iBTc01A"
+        },
+        {
+          "url": "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-best-bets-djokovic-vacherot/",
+          "title": "ATP Paris Best Bets Including Novak Djokovic Vs Valentin Vacherot",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlnAIDs3LQ-44yC1E5GxVC2yU44qj1P4OwIWRAPyS0TgPCmw7nSr_XlbYgspk"
+        }
+      ]
+    },
+    {
+      "query": "san antonio weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T11:00:00Z",
+      "related_news_urls": [
+        "https://www.ksat.com/weather/2026/11/01/muggy-sunday-but-a-cool-front-arrives-tuesday-morning/",
+        "https://www.kgns.tv/2026/11/03/chance-morning-shower-then-clearing-with-low-humidity/",
+        "https://www.kens5.com/video/weather/forecast/muggy-conditions-expected-on-sunday-kens-5-weather-impact-forecast/273-a7fb6faf-ad88-4beb-9c48-42cc7dda2d19"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqwcOHR8wJd3Rdjc6iJO_QNS5enyMCeMZbQqLWL3LMX-TD1Wd208uXbU6X6Ms",
+      "image_credit": "KSAT",
+      "news": [
+        {
+          "url": "https://www.ksat.com/weather/2026/11/01/muggy-sunday-but-a-cool-front-arrives-tuesday-morning/",
+          "title": "Muggy Sunday, but a cool front arrives Tuesday morning",
+          "publisher": "KSAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqwcOHR8wJd3Rdjc6iJO_QNS5enyMCeMZbQqLWL3LMX-TD1Wd208uXbU6X6Ms"
+        },
+        {
+          "url": "https://www.kgns.tv/2026/11/03/chance-morning-shower-then-clearing-with-low-humidity/",
+          "title": "Chance of a Morning Shower, Then Clearing With Low Humidity",
+          "publisher": "KGNS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR88wVMUcRlUpKD1jGsdRoXbA2nVnMt_XnMOmt6AVoYCDvzC9KoiVu8SmmWmIo"
+        },
+        {
+          "url": "https://www.kens5.com/video/weather/forecast/muggy-conditions-expected-on-sunday-kens-5-weather-impact-forecast/273-a7fb6faf-ad88-4beb-9c48-42cc7dda2d19",
+          "title": "Muggy conditions expected on Sunday | KENS 5 Weather Impact Forecast",
+          "publisher": "kens5.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4hFl5ghJyq51UkNt6Pm4rIR3HE5ImomHdWHw2VRG-hFDrjILZZEfY8CXnq8"
+        }
+      ]
+    },
+    {
+      "query": "cowboys media availability after cardinals",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T11:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/whole-organization-rotten-team-cooked-101152454.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/most-cowboys-players-left-facility-on-monday-before-locker-room-media-availability",
+        "https://www.aol.com/articles/roster-team-staff-organization-cooked-083826000.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRN9u5UdaB4AOPcBBx129k_vVNdcOlp6E38oLWWeOOG5C4fsbeVTNpnpMyclI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/whole-organization-rotten-team-cooked-101152454.html",
+          "title": "“Whole Organization Is Rotten,” “The Team Is Cooked”: NFL Fans Rip Dak Prescott-Led Cowboys for Leaving Team Facility Before Arrival of Reporters",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRN9u5UdaB4AOPcBBx129k_vVNdcOlp6E38oLWWeOOG5C4fsbeVTNpnpMyclI"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/most-cowboys-players-left-facility-on-monday-before-locker-room-media-availability",
+          "title": "Most Cowboys players left facility on Monday before locker-room media availability",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAiu_Ka9nCZ4N-6NGL6Qi9_ZygAbqSM0RoSGlQtvqpy_zTdle50Nqjqjh3yME"
+        },
+        {
+          "url": "https://www.aol.com/articles/roster-team-staff-organization-cooked-083826000.html",
+          "title": "“Roster/Team/Staff/Organization Is Cooked”: Cowboys Analyst Calls Out Jerry Jones’ Team After Players Leave Facility Before Reporters Arrive",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfn6iKgH5lbSFJcufg3jjicFXmT0uE57wPBoRu7Y4PkwB0Q2Cpl928X06K6Nk"
         }
       ]
     }
