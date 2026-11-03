@@ -51,3 +51,9 @@ test('Database-powered cards have stable safe Oracle IDs',()=>{
  assert.equal(new Set(alaska.items.map(attractionSourceId)).size,alaska.items.length);
  assert.equal(attractionSourceId({...alaska.items[0],id:'garbage'}),null);
 });
+
+test('future states enter the same public source-card algorithm, without hard-coded Colorado/Alaska exclusion',()=>{
+ const next={...alaska.items[0],id:'curated:alabama-example-source',state:'AL',city:'Test City'};
+ assert.equal(rankAttractions([next],{limit:1}).length,1);
+ assert.match(attractionSourceId(next),/^attraction-al-/);
+});
