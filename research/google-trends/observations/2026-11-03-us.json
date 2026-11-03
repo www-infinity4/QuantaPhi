@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T05:31:37.071617Z",
+  "checked_at": "2026-11-03T06:01:36.152890Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "luka dončić",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T05:10:00Z",
+      "query": "georges niang",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T05:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
-        "https://www.nba.com/news/starting-5-november-2-2026",
-        "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html"
+        "https://www.cbssports.com/fantasy/basketball/news/warriors-georges-niang-reverting-to-bench-role/",
+        "https://www.rotowire.com/basketball/headlines/georges-niang-news-will-start-sunday-537142",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/gsw-starts-curry-podz-niang-lendeborg-green"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMi-dEkRy0UmecxQztWM5OUrrnk3QTko6eG2OiiyPoVsnmylVJHS_w23ejvX8",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/warriors-georges-niang-reverting-to-bench-role/",
+          "title": "Warriors' Georges Niang: Reverting to bench role",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMi-dEkRy0UmecxQztWM5OUrrnk3QTko6eG2OiiyPoVsnmylVJHS_w23ejvX8"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/georges-niang-news-will-start-sunday-537142",
+          "title": "Georges Niang News: Will start Sunday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSElJp5ZT4MYt8KK0cEvtdGA5gTj8LIDbAannpr1ozsHwcnYzK69vPMe4FPYO4"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/gsw-starts-curry-podz-niang-lendeborg-green",
+          "title": "GSW starts Curry, Podz, Niang, Lendeborg, Green",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc4nN4xg5xUOoZWVAZG71YQmT7UBIKHwBdNjGswK7bjSShwwnacaAowX8_bJA"
+        }
+      ]
+    },
+    {
+      "query": "clippers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T05:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/match/_/gameId/401916258/united-states-u17-north-korea-u17",
+        "https://www.espn.com/wnba/game/_/gameId/401918310/valkyries-dream",
+        "https://www.espn.com/soccer/match/_/gameId/401928495/espanyol-sestao"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfRCdL-BWcy0REdNJ9uXRaNhZ-Wm4BuIuO7mdwSYP6zElQYA1WoaUL6UlBMp4",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
-          "title": "Luka Doncic touts his improved defense, draws praise from Lakers, Raptors",
+          "url": "https://www.espn.com/soccer/match/_/gameId/401916258/united-states-u17-north-korea-u17",
+          "title": "North Korea 3-0 United States (Nov 1, 2026) Final Score",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfRCdL-BWcy0REdNJ9uXRaNhZ-Wm4BuIuO7mdwSYP6zElQYA1WoaUL6UlBMp4"
         },
         {
-          "url": "https://www.nba.com/news/starting-5-november-2-2026",
-          "title": "Starting 5: Luka makes history, Celtics and Warriors extend streaks",
-          "publisher": "NBA.com",
+          "url": "https://www.espn.com/wnba/game/_/gameId/401918310/valkyries-dream",
+          "title": "Dream 80-69 Valkyries (Oct 29, 2026) Final Score",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7H6XxpJ6I1hoPWn5saQQMxprBWwsCGV69zUJWzffiPMBUQXsmk1i1cie312A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReVAMdPjde9NhvD-S_EiI25HLx88HvrcoCfsFU_LNwjOLB7u8jxQ81gNtitPo"
         },
         {
-          "url": "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html",
-          "title": "The Lakers 'live on a spaceship,' and Luka Dončić looks like the best damn pilot in the galaxy",
+          "url": "https://www.espn.com/soccer/match/_/gameId/401928495/espanyol-sestao",
+          "title": "Sestao 4-3 Espanyol (Oct 27, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRBkCcgXTL9RVAGVBn--cgpeIRMRCy3CcRqradTu87qzeKGEBoiJXIGa9rWX0"
+        }
+      ]
+    },
+    {
+      "query": "oso ighodaro",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T05:30:00Z",
+      "related_news_urls": [
+        "https://arizonasports.com/nba/phoenix-suns/oso-ighodaro-cam-johnson",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/10/23/pretty-good-report-overall-its-an-oblique-strain/92403111007/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-24/kyrie-irving-knee-downgraded-to-out"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGO2HvjOW_Bj4-DA_JrUEW5TFkemz6tuxY5Gw19E9CMw_UIzJxr6jTRixw73g",
+      "image_credit": "Arizona Sports",
+      "news": [
+        {
+          "url": "https://arizonasports.com/nba/phoenix-suns/oso-ighodaro-cam-johnson",
+          "title": "Oso Ighodaro upgraded to available, Denver’s Cam Johnson available for return to Phoenix",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGO2HvjOW_Bj4-DA_JrUEW5TFkemz6tuxY5Gw19E9CMw_UIzJxr6jTRixw73g"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/10/23/pretty-good-report-overall-its-an-oblique-strain/92403111007/",
+          "title": "\"Pretty good report overall. It's an oblique strain. …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS809govML768cRFoQjZI_juTM3E2-EDkawVcUdqeHEYxbnmgkAhErzqsotSuU"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-24/kyrie-irving-knee-downgraded-to-out",
+          "title": "Kyrie Irving (knee) downgraded to out",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_1WAY8NWYt7Cqw0fdza_-qPxCIdhawEuCPQUnMNSfu9TubvwYFym_Tvs-1xA"
+        }
+      ]
+    },
+    {
+      "query": "tim hardaway jr.",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T05:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/tim-hardaway-jr-joined-heat-203455471.html",
+        "https://heatnation.com/team-news/full-injury-report-released-for-heat-vs-lakers-matchup-on-monday/",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/01/the-heat-ruled-out-tre-donaldson-g-league-and-vlad/92556807007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLLpFkBaVwHBUt8RLYlGkajSPWQtJZK7UgiD0MPGbbXYFy-ZYG-nRpgza2At4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/tim-hardaway-jr-joined-heat-203455471.html",
+          "title": "Tim Hardaway Jr. has joined the Heat in Los Angeles. …",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScnsxQpaHTYRjEizaUIeYG-oMsC6_CxA53JAciDXyyTF2VkzviY43lcsa4LzM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLLpFkBaVwHBUt8RLYlGkajSPWQtJZK7UgiD0MPGbbXYFy-ZYG-nRpgza2At4"
+        },
+        {
+          "url": "https://heatnation.com/team-news/full-injury-report-released-for-heat-vs-lakers-matchup-on-monday/",
+          "title": "Full injury report released for Heat vs. Lakers matchup on Monday",
+          "publisher": "Heat Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZS_XXU1nuBu1VNFXchPEgPwOha4IOyQlMHSy3rdXAGhYTEfTEgdwQQ2VAILI"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/01/the-heat-ruled-out-tre-donaldson-g-league-and-vlad/92556807007/",
+          "title": "The Heat ruled out Tre Donaldson (G League) and Vlad …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQi-GGdFUQtYDTh_kBnNLzWo2I1-Ov0XsTOBtPKyOCdg8wjg5F9KBTRqmFynHw"
         }
       ]
     },
     {
-      "query": "dónde votar",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T05:10:00Z",
+      "query": "max strus",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T05:30:00Z",
       "related_news_urls": [
-        "https://www.univision.com/local/nueva-york-wxtv/politica-new-york/gobernadora-de-nueva-york-celebra-con-mamdani-y-ocasio-cortez-en-queens-dos-dias-antes-de-saber-si-sera-reelecta-fotos",
-        "https://eldiariony.com/2026/11/02/ultimo-llamado-a-votar-guia-util-de-elecciones-en-ny/",
-        "https://nuevoleon.quadratin.com.mx/internacional/cierran-hochul-y-blakeman-sus-campanas-con-llamados-a-movilizar-el-voto/"
+        "https://www.rotowire.com/basketball/headlines/max-strus-news-cleared-to-return-537227",
+        "https://www.rotoballer.com/player-news/max-strus-set-to-make-clippers-debut-monday/1982426",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/max-strus-foot-wont-travel-on-upcoming-trip"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrA2JEfTzpygl3wcuMzUG6z9U-NnbNI3RTb6Yz1oM5iFGfFh4GsHDJbxqZYz4",
-      "image_credit": "Univision",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUVZkfoZNhhFLlGqifWM1C1rolggCfVwlM0YcJxn7Bki0ijAV49-JWn8iHwtw",
+      "image_credit": "RotoWire",
       "news": [
         {
-          "url": "https://www.univision.com/local/nueva-york-wxtv/politica-new-york/gobernadora-de-nueva-york-celebra-con-mamdani-y-ocasio-cortez-en-queens-dos-dias-antes-de-saber-si-sera-reelecta-fotos",
-          "title": "Gobernadora de Nueva York celebra en Queens, dos días antes de saber si será reelecta",
-          "publisher": "Univision",
+          "url": "https://www.rotowire.com/basketball/headlines/max-strus-news-cleared-to-return-537227",
+          "title": "Max Strus News: Cleared to return",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrA2JEfTzpygl3wcuMzUG6z9U-NnbNI3RTb6Yz1oM5iFGfFh4GsHDJbxqZYz4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUVZkfoZNhhFLlGqifWM1C1rolggCfVwlM0YcJxn7Bki0ijAV49-JWn8iHwtw"
         },
         {
-          "url": "https://eldiariony.com/2026/11/02/ultimo-llamado-a-votar-guia-util-de-elecciones-en-ny/",
-          "title": "Último llamado a votar: Guía útil de elecciones en NY",
-          "publisher": "El Diario NY",
+          "url": "https://www.rotoballer.com/player-news/max-strus-set-to-make-clippers-debut-monday/1982426",
+          "title": "Max Strus Set to Make Clippers Debut Monday - NBA News | Fantasy Basketball",
+          "publisher": "RotoBaller",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbKAoOWZHd3rJiQlMztYwDlq4f5hZ0_F5QYvuKI4ayUqV6XsLZqjs6m7FfKU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7uv9K6eCGxpL1j2jh90Zux3kLqj2p20jP96f1Mdh85syLifkN8qGvslf-lKI"
         },
         {
-          "url": "https://nuevoleon.quadratin.com.mx/internacional/cierran-hochul-y-blakeman-sus-campanas-con-llamados-a-movilizar-el-voto/",
-          "title": "Cierran Hochul y Blakeman sus campañas con llamados a movilizar el voto",
-          "publisher": "Quadratín Nuevo León",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/max-strus-foot-wont-travel-on-upcoming-trip",
+          "title": "Max Strus (foot) won’t travel on upcoming trip",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVpkqtZKToCa3IgxGcA5JBpP1Pii6v9YIR8ODq7fTvfQN34a_fGLPM76LHofo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDOmpP3W_bNueCfnEd-OfWz-VNXIgnEHwH8yGB-YSgrkwMrM07tovkOVdvz7I"
         }
       ]
     },
     {
-      "query": "warriors score",
+      "query": "jesus de miguel",
       "approx_searches": "200+",
-      "published_at": "2026-11-03T05:10:00Z",
+      "published_at": "2026-11-03T05:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50356142/yaxel-lendeborg-scores-37-points-most-warriors-rookie-stephen-curry",
-        "https://www.nytimes.com/athletic/7746646/2026/11/01/yaxel-lendeborg-37-points-steph-curry-wilt-chamberlain-warriors-rookie/",
-        "https://www.nba.com/watch/video/game-recap-warriors-124-clippers-112"
+        "https://www.espn.com/soccer/story/_/id/50361749/tenerife-de-miguel-stable-cardiac-arrest",
+        "https://www.bbc.com/sport/football/articles/ck62yvz046pjo",
+        "https://www.nytimes.com/athletic/7748117/2026/11/02/tenerife-player-injury-andorra-spain/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDMEzNci2jT28OZrJgXit80Na4GraRweplfrKc1tPHTkU36vKaJrG1uSh6MqA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzUGLnJi8MGCArn_SUrMNywDZQtR9akMS24UacCJI_NWWuRuhyLE5sPoPibI",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50356142/yaxel-lendeborg-scores-37-points-most-warriors-rookie-stephen-curry",
-          "title": "Yaxel Lendeborg scores 37 points, most by a Warriors rookie since Stephen Curry",
+          "url": "https://www.espn.com/soccer/story/_/id/50361749/tenerife-de-miguel-stable-cardiac-arrest",
+          "title": "Tenerife forward Jesús De Miguel 'stable' after in-game cardiac arrest",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDMEzNci2jT28OZrJgXit80Na4GraRweplfrKc1tPHTkU36vKaJrG1uSh6MqA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzUGLnJi8MGCArn_SUrMNywDZQtR9akMS24UacCJI_NWWuRuhyLE5sPoPibI"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7746646/2026/11/01/yaxel-lendeborg-37-points-steph-curry-wilt-chamberlain-warriors-rookie/",
-          "title": "Yaxel Lendeborg nets 37 in highest scoring game by Warriors rookie since Steph Curry in 2010",
+          "url": "https://www.bbc.com/sport/football/articles/ck62yvz046pjo",
+          "title": "Tenerife striker Jesus de Miguel stable after serious head injury during Segunda Division match with Andorra",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz_vhqBwa-6nYvV_LozYW1gWJwPbp7MwgFwAvN8jhWeb8QsYeEPRPUste0V6w"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7748117/2026/11/02/tenerife-player-injury-andorra-spain/",
+          "title": "Tenerife’s Jesus de Miguel in ‘serious but stable’ condition in hospital as game abandoned",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYNRQMrlzsX_8esfqQ-vnUzkl5ZuVtvFb-81J4vKaAGmV2hN8Rh-jp-ZjnCKk"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/game-recap-warriors-124-clippers-112",
-          "title": "Game Recap: Warriors 124, Clippers 112",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRe_--QNsC7fc7XgHbtwqyLO3RwWliyRwK2Qa8GrQ4vqyyN6sZaH5bdfuKWCUQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYI00gqUyTUbTo7O4Uca1HexbLbUeTnXmoUzmpzKtCyjUEmeQYPxxxhUFy73s"
         }
       ]
     },
     {
-      "query": "cameron carr",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T05:10:00Z",
+      "query": "warriors",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-03T05:20:00Z",
       "related_news_urls": [
-        "https://lakersnation.com/lakers-injury-report-cameron-carr-available-vs-raptors/",
-        "https://lakeshowlife.com/cameron-carr-should-be-given-some-of-quentin-grimes-minutes-for-lakers",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/isaiah-joe-hip-questionable-vs-brooklyn"
+        "https://sports.yahoo.com/articles/preview-warriors-suns-chase-center-020000737.html",
+        "https://www.nba.com/warriors/news/gameday-preview-20261102",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/gsw-starts-curry-podz-richard-lendeborg-green"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQphZg4gpPCCOO1lK5sKo4QAp1IqJKvgvvoYa9d8Ag6VZEkPtx1K3rg71u9jQ",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6Gsgen0NuackE90qrqOBdn72CiNmQrjWDXNTk1joHmZEha9HjHR7Z8_dbpq8",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/preview-warriors-suns-chase-center-020000737.html",
+          "title": "Preview: Warriors take on Suns in Chase Center with Curry, Green back",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6Gsgen0NuackE90qrqOBdn72CiNmQrjWDXNTk1joHmZEha9HjHR7Z8_dbpq8"
+        },
+        {
+          "url": "https://www.nba.com/warriors/news/gameday-preview-20261102",
+          "title": "Game Preview: Warriors vs. Suns - 11/2/26",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzuNyIlgARywwTRcOJgPahMhw7KQr0uTI6XNA2fwlvicSUOw99bb4fMyRSn9A"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/gsw-starts-curry-podz-richard-lendeborg-green",
+          "title": "GSW starts Curry, Podz, Richard, Lendeborg, Green",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9pAcKJWBfHhN7CxgRt2LXE-frV5frUlir0acoq4qT1zyrKXqVZZKMJMC7Ekc"
+        }
+      ]
+    },
+    {
+      "query": "miles bridges",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T05:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/sincere-remorse-michael-jordan-hornets-045800757.html",
+        "https://www.espn.com/fantasy/basketball/story/_/id/50312576/fantasy-basketball-preseason-assumptions-being-challenged",
+        "https://sports.yahoo.com/fantasy/article/fantasy-basketball-waiver-wire-the-playlist-for-your-week-3-lineup-160632625.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStzJ2qJEwH4LyxXHmYe1HFuMEY31EqqdoD_0tMNh6lY1XQT3u8nlTPbgDsVqU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/sincere-remorse-michael-jordan-hornets-045800757.html",
+          "title": "“Is this sincere remorse?” - Michael Jordan and Hornets faced a difficult decision on Miles Bridges amid domestic violence charge",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStzJ2qJEwH4LyxXHmYe1HFuMEY31EqqdoD_0tMNh6lY1XQT3u8nlTPbgDsVqU"
+        },
+        {
+          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50312576/fantasy-basketball-preseason-assumptions-being-challenged",
+          "title": "Fantasy basketball: Seven preseason assumptions already being challenged",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgFTP_a_vO-LkxD5u2d5wm7CnvT48XbB9r3XAObKUJe9tT6k0njsKV5MllRzA"
+        },
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-basketball-waiver-wire-the-playlist-for-your-week-3-lineup-160632625.html",
+          "title": "Fantasy Basketball Waiver Wire: The Playlist for your Week 3 lineup",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR99VTjZykjaC27oNUQHAOPGsjsvtFKIDsc092ueowpY3Bv-V-6MOz8Bg7AWD8"
+        }
+      ]
+    },
+    {
+      "query": "klay thompson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T05:20:00Z",
+      "related_news_urls": [
+        "https://www.sun-sentinel.com/2026/11/02/ask-ira-is-the-complete-klay-something-the-heat-yet-can-realize/",
+        "https://bleacherreport.com/articles/25527377-klay-thompsons-struggles-addressed-heats-erik-spoelstra-amid-1-4-start-nba-season",
+        "https://bluemanhoop.com/warriors-legend-klay-thompson-risks-quickly-wearing-out-heat-patience"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiC6qdH3QMV4_5wcm8VAaukGjHnZgOrnAwieDmhWivBXZeLxhjzqEFf5wP2o",
+      "image_credit": "Sun Sentinel",
+      "news": [
+        {
+          "url": "https://www.sun-sentinel.com/2026/11/02/ask-ira-is-the-complete-klay-something-the-heat-yet-can-realize/",
+          "title": "ASK IRA: Is the complete Klay something the Heat yet can realize?",
+          "publisher": "Sun Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiC6qdH3QMV4_5wcm8VAaukGjHnZgOrnAwieDmhWivBXZeLxhjzqEFf5wP2o"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25527377-klay-thompsons-struggles-addressed-heats-erik-spoelstra-amid-1-4-start-nba-season",
+          "title": "Klay Thompson's Struggles Addressed By Heat's Erik Spoelstra Amid 1-4 Start to NBA Season",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyDc766yIX7j_VGTHNEMLcoPBsnPqxjTdWeXVrlX2tuEvkduf6hqXr2QpwWpQ"
+        },
+        {
+          "url": "https://bluemanhoop.com/warriors-legend-klay-thompson-risks-quickly-wearing-out-heat-patience",
+          "title": "Warriors legend Klay Thompson risks quickly wearing out Heat’s patience",
+          "publisher": "Blue Man Hoop",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnJzB-AiiL-GbyBdIavwKc-iF9-b5Z76CUrsm_beZdfWMtTX8z9j2_H-FADoc"
+        }
+      ]
+    },
+    {
+      "query": "austin reaves",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T05:20:00Z",
+      "related_news_urls": [
+        "https://lakersnation.com/lakers-news-jj-redick-warns-bench-players-after-poor-finish-against-raptors/",
+        "https://nypost.com/2026/11/02/sports/lakers-austin-reaves-take-headband-away-from-fan/",
+        "https://www.foxsports.com.au/basketball/nba/nba-2026-boston-celtics-win-fifth-straight-jayson-tatum-praises-paul-george-yaxel-lendeborg-scores-37-for-golden-state-warriors-nba-wrap/news-story/d24bb04c1222a1ebd133b78c34f13bb9"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAaxOqXx8vRhEisoWzmXtowP8Bdd9mIaRBJfcgxAbwBsqrpoo56AUkNQN9D24",
       "image_credit": "Lakers Nation",
       "news": [
         {
-          "url": "https://lakersnation.com/lakers-injury-report-cameron-carr-available-vs-raptors/",
-          "title": "Lakers Injury Report: Cameron Carr Available Vs Raptors",
+          "url": "https://lakersnation.com/lakers-news-jj-redick-warns-bench-players-after-poor-finish-against-raptors/",
+          "title": "JJ Redick sent a warning to his team after almost collapsing against Raptors",
           "publisher": "Lakers Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQphZg4gpPCCOO1lK5sKo4QAp1IqJKvgvvoYa9d8Ag6VZEkPtx1K3rg71u9jQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAaxOqXx8vRhEisoWzmXtowP8Bdd9mIaRBJfcgxAbwBsqrpoo56AUkNQN9D24"
         },
         {
-          "url": "https://lakeshowlife.com/cameron-carr-should-be-given-some-of-quentin-grimes-minutes-for-lakers",
-          "title": "Cameron Carr should be given some of Quentin Grimes' minutes for Lakers",
-          "publisher": "Lake Show Life",
+          "url": "https://nypost.com/2026/11/02/sports/lakers-austin-reaves-take-headband-away-from-fan/",
+          "title": "Lakers’ Austin Reaves forced to take headband away from fan for most understandable reason",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6FhsvxSt_qP3-v5Oc7ZBFEzCLuI5plPP1vntye4gfFbefTRqEX8qQyPR72iU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8lGGvPvqRZJdreSKr6m2LjKObYqTMgrOFPEuqK69jR-VN_fxYbJnUns0dxYk"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/isaiah-joe-hip-questionable-vs-brooklyn",
-          "title": "Isaiah Joe (hip) questionable vs. Brooklyn",
-          "publisher": "NBC Sports",
+          "url": "https://www.foxsports.com.au/basketball/nba/nba-2026-boston-celtics-win-fifth-straight-jayson-tatum-praises-paul-george-yaxel-lendeborg-scores-37-for-golden-state-warriors-nba-wrap/news-story/d24bb04c1222a1ebd133b78c34f13bb9",
+          "title": "Lakers collapse forces star into wild fan request in bizarre late-game drama: NBA Wrap",
+          "publisher": "Fox Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTofIqe1JdAQZAbrq92tjI3BFVQ0zKI_VuV4gqXWMcnoWsTdSg8GMH711kViqQ"
-        }
-      ]
-    },
-    {
-      "query": "gavin newsom",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T05:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/newsom-ca-film-tv-tax-incentive-hike-1-billion-1237211227/",
-        "https://www.politico.com/news/2026/11/02/newsom-california-film-tv-tax-credit-01144896",
-        "https://www.gov.ca.gov/2026/11/02/governor-newsom-proposes-historic-1-billion-california-film-and-television-tax-credit-building-on-the-nations-most-generous-capped-credit/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcVVA2gFJlD_VqkyC44AubAlEeSJLywri44YxPmJzsbeV0ZYAUijhEtIzBhoY",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/newsom-ca-film-tv-tax-incentive-hike-1-billion-1237211227/",
-          "title": "Newsom’s November Surprise: Boost CA Film & TV Tax Incentives To $1B ASAP, Says Exiting Governor",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcVVA2gFJlD_VqkyC44AubAlEeSJLywri44YxPmJzsbeV0ZYAUijhEtIzBhoY"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/02/newsom-california-film-tv-tax-credit-01144896",
-          "title": "Newsom proposes $1 billion California film and TV tax credit",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjLWwjo-42y1wiE8nB-RvyAY-1zMp9RAhCw3dprnO5tD2dLWgMjmO2_Xlr4rk"
-        },
-        {
-          "url": "https://www.gov.ca.gov/2026/11/02/governor-newsom-proposes-historic-1-billion-california-film-and-television-tax-credit-building-on-the-nations-most-generous-capped-credit/",
-          "title": "Governor Newsom proposes historic $1 billion California film and television tax credit – building on the nation’s most generous capped credit",
-          "publisher": "California State Portal | CA.gov",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStgCHlWJfFFdj9PTIK-sIJM-5TK-8chX8WAxDYmJZyolDuvgKUmpys41lcMXk"
-        }
-      ]
-    },
-    {
-      "query": "illinois state basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T05:10:00Z",
-      "related_news_urls": [
-        "https://www.videtteonline.com/sports/a-new-flight-path-illinois-state-men-s-basketball-2026-27-season-preview/article_10bd3f37-930b-452b-ae7c-e3a9458549ff.html",
-        "https://ats.io/matchup/college-basketball/illinois-st-redbirds-vs-saint-mary-s-gaels-prediction-02-11-2026/",
-        "https://smcgaels.com/news/2026/10/29/mens-basketball-mbb-hoops-season-has-arrived-gaels-host-illinois-state-and-north-dakota-state-in-two-game-homestand"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrGCSYkH_PlW9oO3qdNLlgBI50wamhvkxG6IkQr72K--bkyK2BVDH2pS9itQo",
-      "image_credit": "Vidette Online",
-      "news": [
-        {
-          "url": "https://www.videtteonline.com/sports/a-new-flight-path-illinois-state-men-s-basketball-2026-27-season-preview/article_10bd3f37-930b-452b-ae7c-e3a9458549ff.html",
-          "title": "A new flight path: Illinois State men’s basketball 2026-27 season preview",
-          "publisher": "Vidette Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrGCSYkH_PlW9oO3qdNLlgBI50wamhvkxG6IkQr72K--bkyK2BVDH2pS9itQo"
-        },
-        {
-          "url": "https://ats.io/matchup/college-basketball/illinois-st-redbirds-vs-saint-mary-s-gaels-prediction-02-11-2026/",
-          "title": "Illinois St vs Saint Mary's Prediction | Nov. 2, 2026",
-          "publisher": "ATS.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDglZiXicSHBJGWYDqRSi77oxkE7tCbWdq3em1aM4CTR4rCxhk5HDhLNHX2P0"
-        },
-        {
-          "url": "https://smcgaels.com/news/2026/10/29/mens-basketball-mbb-hoops-season-has-arrived-gaels-host-illinois-state-and-north-dakota-state-in-two-game-homestand",
-          "title": "MBB | Hoops Season Has Arrived! Gaels Host Illinois State and North Dakota State in Two-Game Homestand",
-          "publisher": "smcgaels.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7jguw-_SPCJD35LgRC5vdF-75LXkxn_UkQN13FBiKYmBVeA5JHiHipYaGGI"
-        }
-      ]
-    },
-    {
-      "query": "uc davis basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T05:10:00Z",
-      "related_news_urls": [
-        "https://www.dimers.com/cbb/news/north-alabama-vs-uc-davis-prediction-11-02-2026-ac",
-        "https://ats.io/matchup/college-basketball/north-alabama-lions-vs-uc-davis-aggies-prediction-02-11-2026/",
-        "https://ucdavisaggies.com/news/2026/11/1/mens-basketball-tips-off-mountain-west-era-with-monday-doubleheader.aspx"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiDtLZ5fL_RajYnrHbJlDUw9q3W0N6tzkFM0hcA0hAuSMfoCleU0UoLW-H-Q",
-      "image_credit": "Dimers",
-      "news": [
-        {
-          "url": "https://www.dimers.com/cbb/news/north-alabama-vs-uc-davis-prediction-11-02-2026-ac",
-          "title": "North Alabama vs. UC Davis prediction, odds, pick for Nov. 2, 2026",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiDtLZ5fL_RajYnrHbJlDUw9q3W0N6tzkFM0hcA0hAuSMfoCleU0UoLW-H-Q"
-        },
-        {
-          "url": "https://ats.io/matchup/college-basketball/north-alabama-lions-vs-uc-davis-aggies-prediction-02-11-2026/",
-          "title": "North Alabama Lions vs UC Davis Aggies Prediction - November 2, 2026",
-          "publisher": "ATS.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpi5NRfCW12i2cThoKVTSfStb-ucIaVWmK_OgXnbM5VUwMxrdOXPfaRuWJw4E"
-        },
-        {
-          "url": "https://ucdavisaggies.com/news/2026/11/1/mens-basketball-tips-off-mountain-west-era-with-monday-doubleheader.aspx",
-          "title": "Men's Basketball Tips Off Mountain West Era With Monday Doubleheader",
-          "publisher": "UC Davis Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRys3uyd86mRdZv_RqifYdSyiqxFdznUSyG0QH2cJQn0KdjRUd1gFjCe-EJZJE"
-        }
-      ]
-    },
-    {
-      "query": "john mulaney",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T05:10:00Z",
-      "related_news_urls": [
-        "https://www.thehour.com/connecticutmagazine/arts-events/article/things-to-do-november-ct-22449433.php",
-        "https://www.yahoo.com/lifestyle/articles/things-ct-november-metallica-england-100000601.html",
-        "https://www.ctinsider.com/living/article/connecticut-arts-events-november-22474762.php"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTalztXea-AzdGQVUXvUV067JweFNvo79kM7c90dOmQosvtK34hXqTk9ufph1o",
-      "image_credit": "Norwalk Hour",
-      "news": [
-        {
-          "url": "https://www.thehour.com/connecticutmagazine/arts-events/article/things-to-do-november-ct-22449433.php",
-          "title": "Things to do in Connecticut this November",
-          "publisher": "Norwalk Hour",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTalztXea-AzdGQVUXvUV067JweFNvo79kM7c90dOmQosvtK34hXqTk9ufph1o"
-        },
-        {
-          "url": "https://www.yahoo.com/lifestyle/articles/things-ct-november-metallica-england-100000601.html",
-          "title": "Things to do in CT this November: Metallica and the New England Christmas Festival",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj4RwjjU6LnMCQ4vMdMeTLo09JWSDbFGw3H8oMlW02xwOfOHBUN_pAfNOnSsw"
-        },
-        {
-          "url": "https://www.ctinsider.com/living/article/connecticut-arts-events-november-22474762.php",
-          "title": "CT Culture Corner:John Mulaney, Metallica and Betty Boop lead Connecticut arts events",
-          "publisher": "CT Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSQstlRBvTOW0cU-odIk2tbOW4yXbGu8S_E3Uiv3UpqLoGkc5Sybf6bmjaB_k"
-        }
-      ]
-    },
-    {
-      "query": "bill hader",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T05:00:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/02/nx-s1-5453763/bill-hader-talks-about-his-latest-role-as-the-cat-in-the-hat",
-        "https://www.animationmagazine.net/2026/11/how-the-cat-in-the-hat-creative-time-shared-its-suessian-message-of-living-in-the-here-and-meow/",
-        "https://www.cruisecritic.com/news/carnival-cat-in-the-hat-movie-themed-experiences"
-      ],
-      "image_url": null,
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/02/nx-s1-5453763/bill-hader-talks-about-his-latest-role-as-the-cat-in-the-hat",
-          "title": "Bill Hader talks about his latest role as 'The Cat in the Hat'",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.animationmagazine.net/2026/11/how-the-cat-in-the-hat-creative-time-shared-its-suessian-message-of-living-in-the-here-and-meow/",
-          "title": "How 'The Cat in the Hat' Creative Team Shared Its Seussian Message of Living in the Here and Meow",
-          "publisher": "Animation Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPPpOpSi3cBn6MA2eUiGRzPbzP_FzoxN_AcHGyH8WD0an9ZiM1pY0J0MQt_gg"
-        },
-        {
-          "url": "https://www.cruisecritic.com/news/carnival-cat-in-the-hat-movie-themed-experiences",
-          "title": "Carnival Launches New Cat in The Hat Experiences",
-          "publisher": "Cruise Critic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTi5IXRjFdAoGrXVlLAeYTeb7_0_zp4pMTdc5O-VIl-vxdCFPh6qGZDOkhpWYQ"
-        }
-      ]
-    },
-    {
-      "query": "niecy nash",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T05:00:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/it/news/ni66088996/",
-        "https://gomag.com/article/lesbian-and-sapphic-celebrity-halloween-costumes-that-had-us-screaming/",
-        "https://www.queerty.com/scott-hoying-niecy-nash-andy-cohen-the-best-halloween-outfits-from-queer-celebs-20261102/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqBQNXi7hhsrpUidT7XGQATju010J7wl-NcJ2dMhzNG1Hzi0thJ9At01Uc04U",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/it/news/ni66088996/",
-          "title": "Pentatonix’s Scott Hoying & Husband Mark Dress as ‘Heated Rivalry’ Characters for Halloween with Their Daughter as a Puck!",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqBQNXi7hhsrpUidT7XGQATju010J7wl-NcJ2dMhzNG1Hzi0thJ9At01Uc04U"
-        },
-        {
-          "url": "https://gomag.com/article/lesbian-and-sapphic-celebrity-halloween-costumes-that-had-us-screaming/",
-          "title": "23 Lesbian and Sapphic Celebrity Halloween Costumes That Had Us Screaming",
-          "publisher": "GO Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWQ8zI0VoPNWByHL4Z0FBvIDqeby14kdnyg1eWAi3p1lXRhK6pbjZ_tcAbtgE"
-        },
-        {
-          "url": "https://www.queerty.com/scott-hoying-niecy-nash-andy-cohen-the-best-halloween-outfits-from-queer-celebs-20261102/",
-          "title": "Scott Hoying, Niecy Nash, Andy Cohen & the best Halloween outfits from queer celebs",
-          "publisher": "Queerty",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSf7F85vQp0n-uL4XcwRfsFVav-N-0n5OLt7_eilSW_NS4GYYJVvT1c2Hj86Ro"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcQUmnouxr7k1YDE2jvzPE2jSU1OTSMF8VxZgRRsxBTKyG8oREeaA4R7IOg5o"
         }
       ]
     }
