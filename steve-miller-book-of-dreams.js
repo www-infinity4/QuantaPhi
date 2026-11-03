@@ -50,8 +50,10 @@
   row.append(button, status);
   const frame = create('div', 'smb-player-frame');
   frame.id = 'smbAlbumFrame';
+  const mount = create('div', '', '');
+  mount.id = 'smbAlbumYoutubeMount';
   const placeholder = create('div', 'smb-player-placeholder', 'Book of Dreams · YouTube album player');
-  frame.appendChild(placeholder);
+  frame.append(mount, placeholder);
   const open = create('a', '', 'Open full album on YouTube ↗');
   open.id = 'smbAlbumOpen';
   open.href = playlistURL;
@@ -107,7 +109,7 @@
     loadYouTube().then(yt => {
       if (!isActive()) return;
       placeholder.remove();
-      player = new yt.Player(frame.id, {
+      player = new yt.Player(mount.id, {
         videoId: FIRST_VIDEO_ID,
         width: '100%',
         height: '100%',
