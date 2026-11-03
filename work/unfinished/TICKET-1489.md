@@ -29,6 +29,10 @@ blocker: "Cron first live ingestion, exact PR head CI/security review, app integ
 next_action: "Run exact-PR-head tests in GitHub CI and inspect D1 ingest_runs after first scheduled collector event."
 ---
 
+## Canonical issue
+
+https://github.com/www-infinity4/QuantaPhi/issues/1489
+
 ## Work completed in this session
 - New standalone D1 database `quantaphi-agent-evidence`; no changes to existing wallet, memory, identity or chat databases.
 - Schema with 11 nested categories, evidence provenance and explicit unreviewed/curated labels; eight source-linked records.
