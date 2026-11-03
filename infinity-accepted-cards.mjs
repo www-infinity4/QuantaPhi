@@ -78,7 +78,11 @@ export function createAcceptedCard(card){
  const media=node('div',undefined,'iac-media'),images=cardImageCandidates(card);let imageIndex=0;
  if(images.length&&images.every(isBrandIdentityImage))media.classList.add('iac-logo-only');
  if(images.length){
-  const img=node('img');img.alt=card.name+' — image from the original website';
+  const img=node('img');img.alt=card.photoCaption||card.name+' — image from the original website';
+  const credit=card.photoSource?node('a','Photo source · '+new URL(card.photoSource).hostname,'iac-image-credit'):null;
+  if(credit){credit.href=card.photoSource;credit.target='_blank';credit.rel='noopener noreferrer';credit.hidden=true;
+   credit.setAttribute('aria-label','Open original photo source for '+card.name);}
+  img.addEventListener('load',()=>{if(credit)credit.hidden=!(imageIndex===0&&images[0]===card.image)},{once:false});
   img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';
   const fallback=()=>{
    img.remove();media.classList.add('iac-logo-only');
@@ -90,9 +94,10 @@ export function createAcceptedCard(card){
    mark.src=sourceIcon;media.replaceChildren(mark,label);
   };
   img.addEventListener('error',()=>{
+   if(credit)credit.hidden=true;
    if(++imageIndex<images.length){img.src=images[imageIndex];return}
    fallback();
-  });img.src=images[0];media.append(img);
+  });img.src=images[0];media.append(img);if(credit)media.append(credit);
  }else{
   // The website icon is a real source asset, never a fabricated product image.
   const sourceIcon=websiteFaviconUrl(card),mark=node('img');mark.alt=card.name+' official website icon';
