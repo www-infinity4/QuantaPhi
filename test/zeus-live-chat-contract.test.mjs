@@ -24,3 +24,28 @@ test('Zeus keeps draft tools but puts chat ahead of concept marketing in a light
  assert.match(css,/color:\s*#263238/);
  assert.match(html,/No paid subscriptions or third-party-model access/);
 });
+
+test('Zeus provides one visible quest composer that sends to the real embedded AI path',()=>{
+ const html=read('coliseum/index.html'),js=read('coliseum/coliseum.js');
+ assert.match(html,/id="zeusQuestForm"/);
+ assert.match(html,/id="zeusQuestInput"/);
+ assert.match(html,/id="zeusQuestSend"/);
+ assert.match(html,/id="zeusQuestStatus"/);
+ assert.match(js,/zeusQuestForm/);
+ assert.match(js,/quantaphi:bubbles:quest/);
+ assert.match(js,/quantaphi:bubbles:quest-ack/);
+ assert.match(js,/event\.origin===window\.location\.origin/);
+ assert.match(js,/event\.source===.*contentWindow/);
+ assert.match(js,/setMode\('chat'\)/);
+});
+test('Bubbles accepts Zeus user text with the same sendMessage engine and no owner-tool bypass',()=>{
+ const bubbles=read('bubbles-ai.js');
+ assert.match(bubbles,/quantaphi:bubbles:quest/);
+ assert.match(bubbles,/quantaphi:bubbles:quest-ack/);
+ assert.match(bubbles,/event\.origin!==window\.location\.origin/);
+ assert.match(bubbles,/event\.source!==window\.parent/);
+ assert.match(bubbles,/bubbleId!=='coliseum-zeus-assistant'/);
+ assert.match(bubbles,/sendMessage\(prompt\)/);
+ assert.match(bubbles,/busy\|\|turnPending/);
+ assert.doesNotMatch(bubbles,/sendNativeText\(prompt/);
+});
