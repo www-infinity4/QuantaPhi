@@ -1,6 +1,6 @@
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
 import {INFINITY_ACCEPTED_BRANDS} from './infinity-accepted-catalog.mjs';
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261101-marketplaces1';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
 import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
@@ -11,7 +11,7 @@ import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,ne
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
  id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
- official:c.official,url:c.featureUrl,route:'/source-quick-card.html?card='+encodeURIComponent(c.id),origin:'source'
+ official:c.official,url:c.featureUrl,image:c.image||'',images:c.images||[],logo:c.logo||'',route:'/source-quick-card.html?card='+encodeURIComponent(c.id),origin:'source'
 }));
 const fromScience=SCIENCE_CARDS.map(c=>({
  id:c.id,name:c.name,category:c.category,feature:c.feature,study:c.description,
