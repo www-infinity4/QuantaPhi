@@ -1,3 +1,4 @@
+import {rankSearchResults} from './relevance.mjs';
 // Public, read-only lookup tools for Bubbles. No user-provided network destination is fetched.
 const trim=(v,n=260)=>String(v??'').replace(/\s+/g,' ').trim().slice(0,n);
 const SAFE_HOST=/^(?!localhost$)(?!.*\.localhost$)(?!.*\.local$)(?!127\.)(?!10\.)(?!192\.168\.)(?!169\.254\.)(?!172\.(?:1[6-9]|2\d|3[01])\.)(?!0\.)(?!\[)(?!.*\.internal$)[a-z0-9.-]+$/i;
@@ -73,6 +74,7 @@ export async function webSearch(message,env={},fetcher=fetch){
   try{results=await brokerQuery(false);provider='Infinity Phi / QuantaPhi search';}
   catch{attempts.push('infinity_search_unavailable');}
  }
+ results=rankSearchResults(query,results);
  return {ok:results.length>0,query,results,provider:results.length?provider:'unavailable',googleSearchUrl,
   googleVerified:results.length>0&&/google/i.test(provider),requestedGoogle:googleIntent,attempts};
 }
