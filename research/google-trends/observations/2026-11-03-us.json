@@ -3,356 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T20:31:57.474437Z",
+  "checked_at": "2026-11-03T21:01:31.668050Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "bodo glimt",
+      "query": "todd chrisley",
       "approx_searches": "1000+",
-      "published_at": "2026-11-03T20:10:00Z",
+      "published_at": "2026-11-03T20:40:00Z",
       "related_news_urls": [
-        "https://www.oregonlive.com/tv/2026/11/how-to-watch-lille-vs-bodoglimt-champions-league-match-streaming-live-preview-start-time-betting-lines.html",
-        "https://sports.yahoo.com/articles/fk-bod-glimt-squad-battling-114400802.html",
-        "https://www.sportsmole.co.uk/football/bodo-glimt/champions-league/preview/bodoglimt-vs-lille-prediction-team-news-lineups_608214.html"
+        "https://people.com/pregnant-savannah-chrisley-reacts-to-backlash-surrounding-husband-father-of-baby-jason-galanis-12204292",
+        "https://www.yahoo.com/entertainment/celebrity/articles/todd-chrisley-defends-daughter-savannah-195425698.html",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/02/savannah-chrisley-married-jason-galanis-pregnancy/92505257007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRinprR-lax1zZON_Nw6b1uNnWXxj_bbitzq44ckihM2SR32WleSpgkEpdQQT8",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-lille-vs-bodoglimt-champions-league-match-streaming-live-preview-start-time-betting-lines.html",
-          "title": "How to watch Lille vs. Bodo/Glimt Champions League match streaming live: Preview, start time, betting lines",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRinprR-lax1zZON_Nw6b1uNnWXxj_bbitzq44ckihM2SR32WleSpgkEpdQQT8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/fk-bod-glimt-squad-battling-114400802.html",
-          "title": "FK Bodø/Glimt squad battling illness ahead of Lille tie",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR680zLEMNOsoWs583KdGzgU2s4ToBx3emnYL0-TQHWNFwYJ2G6rFyuNjojM2M"
-        },
-        {
-          "url": "https://www.sportsmole.co.uk/football/bodo-glimt/champions-league/preview/bodoglimt-vs-lille-prediction-team-news-lineups_608214.html",
-          "title": "Preview: Bodo/Glimt vs Lille - prediction, team news, lineups",
-          "publisher": "Sports Mole",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_DNKf_zgIA4UR3Q7U3XYipCqJjKp8j5NQOhsmwCng6Q4DZe3S84K1DWODLSA"
-        }
-      ]
-    },
-    {
-      "query": "game of thrones",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T20:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/it/news/ni66091348/?ref_=tt_nwr_1",
-        "https://tbreak.com/game-of-thrones-legends-daenerys-robbs-war/",
-        "https://collider.com/game-of-thrones-legends-daenerys-targaryen-return-new-update/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPdymkaEngI143veLdAxQ-3IdoaTADq-PYESCEVSjCobdK7xxEJGOp-DtyuPw",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/it/news/ni66091348/?ref_=tt_nwr_1",
-          "title": "Game Of Thrones: The Old Raven Officially Brings Back Daenerys Targaryen",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPdymkaEngI143veLdAxQ-3IdoaTADq-PYESCEVSjCobdK7xxEJGOp-DtyuPw"
-        },
-        {
-          "url": "https://tbreak.com/game-of-thrones-legends-daenerys-robbs-war/",
-          "title": "Game of Thrones: Legends brings back Daenerys",
-          "publisher": "Tbreak UAE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy2SywyvLWqnxWSlRa-tzSvdtjMj-zJZGii6pxVWXOwv6po14-tRj6aW3pv64"
-        },
-        {
-          "url": "https://collider.com/game-of-thrones-legends-daenerys-targaryen-return-new-update/",
-          "title": "7 Years Later, ‘Game of Thrones’ Officially Revives Daenerys Targaryen",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWwpif-YXYYmPK81XWE7CAtNQ4atRjhW20NEHgrO8zXehj9Z4z1qKCFwtU9J4"
-        }
-      ]
-    },
-    {
-      "query": "roma vs",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T20:10:00Z",
-      "related_news_urls": [
-        "https://athlonsports.com/soccer/why-paulo-dybala-not-playing-roma-vs-manchester-united",
-        "https://www.goal.com/en/news/gian-piero-gasperini-reacts-massimiliano-allegri-tunnel-outburst-roma-napoli/blt426f5a47169185bc",
-        "https://www.asroma.com/en/news/76138/gasperinis-comments-before-cagliari-clash"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjOLfowIbo1lYKPPOy88aS8p7g6u8IUa9xhnKA9MiNgpES8-SIvLJsX3SGYtc",
-      "image_credit": "Athlon Sports",
-      "news": [
-        {
-          "url": "https://athlonsports.com/soccer/why-paulo-dybala-not-playing-roma-vs-manchester-united",
-          "title": "Why Is Paulo Dybala Not Playing for Roma vs. Manchester United?",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjOLfowIbo1lYKPPOy88aS8p7g6u8IUa9xhnKA9MiNgpES8-SIvLJsX3SGYtc"
-        },
-        {
-          "url": "https://www.goal.com/en/news/gian-piero-gasperini-reacts-massimiliano-allegri-tunnel-outburst-roma-napoli/blt426f5a47169185bc",
-          "title": "'Unfortunate' - Gian Piero Gasperini reacts to Massimiliano Allegri's furious tunnel outburst following Roma's 3-3 draw with Napoli",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfAypDmJf2aCIfotyt6jJWvEmDcfj5JxYMRF1tgRgKpL0fsKD8R73HROZqeAg"
-        },
-        {
-          "url": "https://www.asroma.com/en/news/76138/gasperinis-comments-before-cagliari-clash",
-          "title": "Gasperini's comments before Cagliari clash",
-          "publisher": "AS Roma",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Tje6wpoProwwKIhY26nHx9MUMZMrCH6pNgg-7WjyL3D7GbATCB3YLEiOGmE"
-        }
-      ]
-    },
-    {
-      "query": "marjorie taylor greene",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T20:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/02/politics/video/marjorie-taylor-green-very-disappointed-in-trumps-closing-midterms-message-digvid",
-        "https://www.newsweek.com/marjorie-taylor-greene-says-midterms-referendum-on-donald-trump-betrayal-12653469",
-        "https://www.al.com/politics/2026/11/former-maga-darling-rips-trumps-closing-midterm-message-i-was-very-disappointed.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSW4W2ii8vyYnco6SI9nXuDUpZXvCEnxaxK17_tuEU8WHi46ZpdAkMbNOliUuA",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/02/politics/video/marjorie-taylor-green-very-disappointed-in-trumps-closing-midterms-message-digvid",
-          "title": "‘Very disappointed’: Marjorie Taylor Greene on Trump’s closing midterms message",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSW4W2ii8vyYnco6SI9nXuDUpZXvCEnxaxK17_tuEU8WHi46ZpdAkMbNOliUuA"
-        },
-        {
-          "url": "https://www.newsweek.com/marjorie-taylor-greene-says-midterms-referendum-on-donald-trump-betrayal-12653469",
-          "title": "Marjorie Taylor Greene Says Midterms Are Referendum on Trump’s ‘Betrayal’",
-          "publisher": "Newsweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf7hcnLIAqzSYyHJgecvS-N7NlN7y0qStthRfaiZqBr6Ndn3k2co2dmXC6b54"
-        },
-        {
-          "url": "https://www.al.com/politics/2026/11/former-maga-darling-rips-trumps-closing-midterm-message-i-was-very-disappointed.html",
-          "title": "Former MAGA darling rips Trump’s closing midterm message: ‘I was very disappointed’",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbS93rEegL4qDnYWJvDersmkLyL_4Qnfr_NHQ2QlxYutCL_l5o0FRAAUwjDPE"
-        }
-      ]
-    },
-    {
-      "query": "gta6 ps5",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-03T20:00:00Z",
-      "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
-        "https://www.forbes.com/sites/paultassi/2026/11/03/gta-6-pre-load-date-and-time-revealed-huge-file-size-confirmed/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP0RNbrUaCSVCdZe1TVTMe96jHPbUGQXSxS_CtqnL_8ndAnx9F8JGQLuStNtU",
-      "image_credit": "Rockstar Games",
-      "news": [
-        {
-          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP0RNbrUaCSVCdZe1TVTMe96jHPbUGQXSxS_CtqnL_8ndAnx9F8JGQLuStNtU"
-        },
-        {
-          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
-          "title": "Grand Theft Auto VI pre-download begins November 10",
-          "publisher": "PlayStation.Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
-        },
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/03/gta-6-pre-load-date-and-time-revealed-huge-file-size-confirmed/",
-          "title": "‘GTA 6’ Pre-Load Date And Time Revealed, Huge File Size Confirmed",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlb_ph_9fQu4iDTmlnkFzX7nfE7pot6DukUSTxqC1yIBlG7CGq0mLAqeZ7GU4"
-        }
-      ]
-    },
-    {
-      "query": "roma",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T19:50:00Z",
-      "related_news_urls": [
-        "https://www.gazzetta.it/Calcio/Champions-League/03-11-2026/manchester-united-roma-live-risultato-e-gol-in-diretta-champions-league.shtml",
-        "https://www.corrieredellosport.it/news/calcio/champions-league/2026/11/03-152345684/gollini_si_ferma_durante_la_rifinitura_in_dubbio_per_manchester_united-roma",
-        "https://www.gazzetta.it/Calcio/Serie-A/Roma/03-11-2026/roma-chi-e-davis-vasquez-il-portiere-escluso-da-gasperini.shtml"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyMcpYunh_mje5MGtP5nWVRHsq0IVQ8Q_d6Eqnp1qEa04wcHFXgp-NoM7pX8Y",
-      "image_credit": "La Gazzetta dello Sport",
-      "news": [
-        {
-          "url": "https://www.gazzetta.it/Calcio/Champions-League/03-11-2026/manchester-united-roma-live-risultato-e-gol-in-diretta-champions-league.shtml",
-          "title": "LIVE alle 21 Manchester Utd-Roma: le ufficiali. Gasp con Soulé e Mora dietro a Malen, para Vasquez",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyMcpYunh_mje5MGtP5nWVRHsq0IVQ8Q_d6Eqnp1qEa04wcHFXgp-NoM7pX8Y"
-        },
-        {
-          "url": "https://www.corrieredellosport.it/news/calcio/champions-league/2026/11/03-152345684/gollini_si_ferma_durante_la_rifinitura_in_dubbio_per_manchester_united-roma",
-          "title": "Gollini si ferma durante la rifinitura: è in dubbio per Manchester United-Roma",
-          "publisher": "Corriere dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRvMhcJlfPbxqqS32b-91uz49vIazYfnRiZjGKQcwc0aEcbBUE37PN9iuGQ0Q"
-        },
-        {
-          "url": "https://www.gazzetta.it/Calcio/Serie-A/Roma/03-11-2026/roma-chi-e-davis-vasquez-il-portiere-escluso-da-gasperini.shtml",
-          "title": "Dal Milan all'esclusione di Gasp: chi è Davis Vasquez, portiere con una sola gara nell'ultimo anno",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSws3GmL4L_W8sR8dbsIUlPSiA_z7Uw67qeSsC7tfYvnl0qKuVL3qMIEHDjhvo"
-        }
-      ]
-    },
-    {
-      "query": "ncis",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T19:50:00Z",
-      "related_news_urls": [
-        "https://people.com/is-ncis-on-tonight-12207739",
-        "https://hiddenremote.com/cbs-pulling-entire-ncis-lineup-from-schedule-tuesday-night",
-        "https://screenrant.com/ncis-new-york-origins-no-new-episodes-november-3-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1yqJ26cf8OME2Sdo0txjJvE7txGO7bZd3W_ANazc3RZVudUrXNQp9X-NV70c",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdQfrTH_TZs6c8CMzkqc2r4nC08Uthw23EzKtgAaeIvrIj1zkciamOBEy1ngQ",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/is-ncis-on-tonight-12207739",
-          "title": "Is ‘NCIS’ on Tonight? Here’s When New Episodes Will Air Again",
+          "url": "https://people.com/pregnant-savannah-chrisley-reacts-to-backlash-surrounding-husband-father-of-baby-jason-galanis-12204292",
+          "title": "Pregnant Savannah Chrisley Reacts to Backlash Surrounding the Reveal of Her Mystery Husband, Father of Her Baby",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1yqJ26cf8OME2Sdo0txjJvE7txGO7bZd3W_ANazc3RZVudUrXNQp9X-NV70c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdQfrTH_TZs6c8CMzkqc2r4nC08Uthw23EzKtgAaeIvrIj1zkciamOBEy1ngQ"
         },
         {
-          "url": "https://hiddenremote.com/cbs-pulling-entire-ncis-lineup-from-schedule-tuesday-night",
-          "title": "CBS is pulling its entire NCIS lineup from the schedule this Tuesday night",
-          "publisher": "Hidden Remote",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/todd-chrisley-defends-daughter-savannah-195425698.html",
+          "title": "Todd Chrisley Defends Daughter Savannah Against Gold Digger Accusations Amid Jason Galanis Engagement",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC95X-XpEmZKwB-u8iXiMK-c5FwbEVJihgXHtFqxL9B-beMJT5mPERDOvsJ-c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDYNkLpvRklIv80QjFLc1qiVYWzdUo0ZJkWILjWvaiUQ5o97LR2K5hlrLATQ0"
         },
         {
-          "url": "https://screenrant.com/ncis-new-york-origins-no-new-episodes-november-3-2026/",
-          "title": "CBS Officially Announces NCIS’s First Major Disappointment Of 2026",
-          "publisher": "ScreenRant",
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/02/savannah-chrisley-married-jason-galanis-pregnancy/92505257007/",
+          "title": "Savannah Chrisley married Jason Galanis before revealing pregnancy",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt7QwhszxUjcI_8kdmVPfLHnSJrMgh9dQ6uhjXFGqe3gNic0oXWdZ0J8vgbIk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm1TviH53VbWX5V6C4egUoeThoEhryhKERuYI98q8yYxmBgxWzFCh3eJb1tvM"
         }
       ]
     },
     {
-      "query": "barcelona vs. aston villa",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T19:50:00Z",
+      "query": "donyell malen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T20:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c5x2v48lvzgkt",
-        "https://www.espn.com/soccer/story/_/id/50371059/lisandro-martinez-man-united-roma-dropped-red-card",
-        "https://www.theguardian.com/football/2026/nov/02/michael-carrick-lisandro-martinez-manchester-united-roma-champions-league"
+        "https://www.idahostatejournal.com/sports/national/aptopix-britain-champions-league-soccer/image_41826423-33bb-513d-88d7-49bf5b54c22d.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVfZ00bTYZZqzymHr5CyNY4h1Mu96nO7ca5aU96qTrlmmW02pPNdkk7U8tGEM",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMLRnI3Z9dvprdwmZptlCMTQa6Mr66z3llYmbRruVWvOYhGZGR7wgVdTeUJ8",
+      "image_credit": "Idaho State Journal",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c5x2v48lvzgkt",
-          "title": "Champions League LIVE: Man Utd vs Roma & Barcelona vs Aston Villa - scores, commentary & updates",
-          "publisher": "BBC",
+          "url": "https://www.idahostatejournal.com/sports/national/aptopix-britain-champions-league-soccer/image_41826423-33bb-513d-88d7-49bf5b54c22d.html",
+          "title": "APTOPIX Britain Champions League Soccer",
+          "publisher": "Idaho State Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVfZ00bTYZZqzymHr5CyNY4h1Mu96nO7ca5aU96qTrlmmW02pPNdkk7U8tGEM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMLRnI3Z9dvprdwmZptlCMTQa6Mr66z3llYmbRruVWvOYhGZGR7wgVdTeUJ8"
+        }
+      ]
+    },
+    {
+      "query": "manchester united",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-03T20:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7750801/2026/11/03/manchester-united-fans-balloon-protest-roma/",
+        "https://sports.yahoo.com/articles/man-united-fans-release-balloons-202021508.html",
+        "https://www.aol.co.uk/articles/man-utd-vs-roma-suddenly-202400000.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGvmFEdZobgwkkrmMxzkUiHcOxUBaXxvG38U_SL6AXUDd8Z7YUNJPMEZ8SEYw",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7750801/2026/11/03/manchester-united-fans-balloon-protest-roma/",
+          "title": "Manchester United fans plan balloon protest before kick-off against Roma",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGvmFEdZobgwkkrmMxzkUiHcOxUBaXxvG38U_SL6AXUDd8Z7YUNJPMEZ8SEYw"
         },
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50371059/lisandro-martinez-man-united-roma-dropped-red-card",
-          "title": "Martínez drops to Man United bench for Roma clash after struggles at Chelsea",
+          "url": "https://sports.yahoo.com/articles/man-united-fans-release-balloons-202021508.html",
+          "title": "Man United fans release balloons in protest against ownership ahead of Champions League match at Old Trafford",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV-x89fVKqEoup3ik21vgUt5r87h5u0rhrM6CyrONOx5gCnMkm_cGhIWx39Ls"
+        },
+        {
+          "url": "https://www.aol.co.uk/articles/man-utd-vs-roma-suddenly-202400000.html",
+          "title": "Man Utd vs Roma suddenly halted as referee forced to stop Champions League tie",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIl7oyiBJ6TU2LG9NMZXoGTDubPOkNxflmmRFJzclLUp-Xyv1gk1nfXeGNhIE"
+        }
+      ]
+    },
+    {
+      "query": "bayern",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T20:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50360295/harry-kane-hopes-bayern-munich-pass-tough-champions-league-test-madrid",
+        "https://sports.yahoo.com/articles/matter-days-harry-kane-shares-063900259.html",
+        "https://sports.yahoo.com/articles/tottenham-didn-t-ballon-d-000000446.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnZzcpr-b8Lwn_xX5nIZcxcFwKvlMpUDMo6Lwlbfzog4unNU7Z4NRpm38X3vM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50360295/harry-kane-hopes-bayern-munich-pass-tough-champions-league-test-madrid",
+          "title": "Kane says new Bayern deal 'extremely close,' will happen in coming days",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRILupFremQ4tfaCy8XkFsNfdKm6N7_PPtnHBtxb3NjNuQZiKI6vjHDaw1Lzvw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnZzcpr-b8Lwn_xX5nIZcxcFwKvlMpUDMo6Lwlbfzog4unNU7Z4NRpm38X3vM"
         },
         {
-          "url": "https://www.theguardian.com/football/2026/nov/02/michael-carrick-lisandro-martinez-manchester-united-roma-champions-league",
-          "title": "Carrick not concerned about Martínez’s attitude as United prepare for Roma visit",
-          "publisher": "The Guardian",
+          "url": "https://sports.yahoo.com/articles/matter-days-harry-kane-shares-063900259.html",
+          "title": "‘Matter of days’ – Harry Kane shares Bayern contract update",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQREWWctpCS70JJ6BL9BcSV26aTRvK21B-BGpqrwmapALFIfchq7CNznL80cws"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8ozyByO1lLzFst5D72wE3e9AKvpa0Yh5-VVXqpbe0OPMzaEyhpvncKd9CuFg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/tottenham-didn-t-ballon-d-000000446.html",
+          "title": "Tottenham didn’t include a Ballon d’Or clause in Harry Kane’s move to Bayern Munich",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXt9IRjawZtkDG6a35tYN40u65UmxGIe0lR1fPhRuLhAhUVhRa1etyGTlTm7A"
         }
       ]
     },
     {
-      "query": "roma vs man united",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T19:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmj47pveql18t",
-        "https://www.skysports.com/football/live-blog/13607403/man-utd-vs-roma-live-champions-league-lineups-match-updates-news-score-and-analysis",
-        "https://www.manutd.com/en/news/fitness-boost-ahead-of-roma-encounter-patrick-chinazaekpere-dorgu-back"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFGuWiJ_jDiGxT7EQf__yc2sJz3xxth15vkArD2djosbbdbrl2_sSGxDwzMxk",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmj47pveql18t",
-          "title": "Manchester United vs Roma: UEFA Champions League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFGuWiJ_jDiGxT7EQf__yc2sJz3xxth15vkArD2djosbbdbrl2_sSGxDwzMxk"
-        },
-        {
-          "url": "https://www.skysports.com/football/live-blog/13607403/man-utd-vs-roma-live-champions-league-lineups-match-updates-news-score-and-analysis",
-          "title": "Man Utd vs Roma LIVE! Champions League lineups, match updates, news, score and analysis",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQ3EVq-sclO85d4nfmqxqTQRi-HHw3_J5pc-8isreTIdiojR0_giagqD43wc"
-        },
-        {
-          "url": "https://www.manutd.com/en/news/fitness-boost-ahead-of-roma-encounter-patrick-chinazaekpere-dorgu-back",
-          "title": "Fitness boost ahead of Roma encounter",
-          "publisher": "Manchester United",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9GIclEh2chjwaisJJc5xLewMIExI9yLNGxdBpgOB7uj2QrzYjkTJFIaPohQk"
-        }
-      ]
-    },
-    {
-      "query": "brian fariñas",
+      "query": "psg game",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T19:50:00Z",
+      "published_at": "2026-11-03T20:30:00Z",
       "related_news_urls": [
-        "https://www.marca.com/futbol/barcelona/2026/11/03/brian-farinas-joven-medio-barcelona-flick-pone-lateral-aston-villa-champions.html",
-        "https://www.elperiodic.com/benicarlo/acostarse-pronto-para-entrenar-jugar-camp-brian-farinas-nino-benicarlo-cumple-sueno_1100662",
-        "https://www.elnacional.cat/es/deportes/clasico-confirma-peores-sospechas-deco-debera-pedir-por-su-bien-barca-no-siga_1714111_102.html"
+        "https://www.lequipe.fr/Football/Video/Bundesliga-kane-a-deux-doigts-de-signer-un-nouveau-contrat-avec-son-club/20244737",
+        "https://www.lefigaro.fr/sports/football/foot-kane-echangerait-volontiers-son-ballon-d-or-contre-la-prochaine-ligue-des-champions-20261102",
+        "https://www.leparisien.fr/sports/football/ballon-dor-2026-la-direction-de-france-football-va-porter-plainte-apres-des-paris-suspects-31-10-2026-6YYC6OMT4NCGTFM65NVCMLA2GU.php"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNR0VgJEAvqL-ONr3vlulrQ88orJc2jy3ReXH-LwPUIe87Ab7G_5M8Eqbxxdk",
-      "image_credit": "MARCA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkub5ihHarnGj9ERkkck90b9Rdbor8y8aQl0GK2zeMbxFAOwbdF2AO1zieifM",
+      "image_credit": "L'Équipe",
       "news": [
         {
-          "url": "https://www.marca.com/futbol/barcelona/2026/11/03/brian-farinas-joven-medio-barcelona-flick-pone-lateral-aston-villa-champions.html",
-          "title": "Brian Fariñas, el joven medio del Barcelona al que Flick pone de lateral contra el Aston Villa en Champions",
-          "publisher": "MARCA",
+          "url": "https://www.lequipe.fr/Football/Video/Bundesliga-kane-a-deux-doigts-de-signer-un-nouveau-contrat-avec-son-club/20244737",
+          "title": "Kane « à deux doigts » de signer un nouveau contrat avec son club | Foot - Bundesliga",
+          "publisher": "L'Équipe",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNR0VgJEAvqL-ONr3vlulrQ88orJc2jy3ReXH-LwPUIe87Ab7G_5M8Eqbxxdk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkub5ihHarnGj9ERkkck90b9Rdbor8y8aQl0GK2zeMbxFAOwbdF2AO1zieifM"
         },
         {
-          "url": "https://www.elperiodic.com/benicarlo/acostarse-pronto-para-entrenar-jugar-camp-brian-farinas-nino-benicarlo-cumple-sueno_1100662",
-          "title": "De acostarse pronto para ir a entrenar a jugar en el Camp Nou: Brian Fariñas, el niño de Benicarló que cumple su sueño",
-          "publisher": "elperiodic.com",
+          "url": "https://www.lefigaro.fr/sports/football/foot-kane-echangerait-volontiers-son-ballon-d-or-contre-la-prochaine-ligue-des-champions-20261102",
+          "title": "Foot: Kane échangerait volontiers son Ballon d'Or contre la prochaine Ligue des champions",
+          "publisher": "Le Figaro",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTir93yXqV-3p2c29Eb9EptNsEpoH2lwO5ybmFfE6sXmHponIUrN2wKh-Kk2Kk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEu5AVivXr8J1M4NOrRu23uFL7gx7BJck3h8632dbePsyRlkJybXX_sE_yulc"
         },
         {
-          "url": "https://www.elnacional.cat/es/deportes/clasico-confirma-peores-sospechas-deco-debera-pedir-por-su-bien-barca-no-siga_1714111_102.html",
-          "title": "El Clásico confirma la peores sospechas y Deco le deberá pedir, por su bien, y el del Barça, que no siga",
-          "publisher": "El Nacional.cat",
+          "url": "https://www.leparisien.fr/sports/football/ballon-dor-2026-la-direction-de-france-football-va-porter-plainte-apres-des-paris-suspects-31-10-2026-6YYC6OMT4NCGTFM65NVCMLA2GU.php",
+          "title": "Ballon d'or 2026 : la direction de France Football va porter plainte après des paris suspects",
+          "publisher": "Le Parisien",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6_gcXzx5euBOQETIQJVKRWvj0zKcsLP2IJDFxD0Wseff8z1c-mFf-0-Mf-s4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wtGw-aG6K8gJXt95KrrKI5wbntDjNiwo_rzQSf2MHS6ndO_HUsrnfOg02fs"
+        }
+      ]
+    },
+    {
+      "query": "retirement",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T20:30:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/business/2026/11/03/heres-how-much-you-should-have-saved-by-time-you-retire/",
+        "https://www.kiplinger.com/retirement/retirement-planning/is-two-million-enough-to-retire",
+        "https://www.spokesman.com/stories/2026/nov/01/can-you-invest-too-much-in-your-retirement/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSisqXbrCtSmXPYDHLMWV0WmTejxSbupMpYdr_ri10TIqzuCUU1JRnbdLHsgsA",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/business/2026/11/03/heres-how-much-you-should-have-saved-by-time-you-retire/",
+          "title": "Column | Here’s how much you should have saved by the time you retire",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSisqXbrCtSmXPYDHLMWV0WmTejxSbupMpYdr_ri10TIqzuCUU1JRnbdLHsgsA"
+        },
+        {
+          "url": "https://www.kiplinger.com/retirement/retirement-planning/is-two-million-enough-to-retire",
+          "title": "Having a $2 Million Nest Egg Puts You in the Top 10% — But Can You Actually Retire on It?",
+          "publisher": "Kiplinger",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzRxAl4rym1QnIoYRuIA7mkBKANy3mDNeiw7fvpdDG1rUbZ1DzhSkfh0UO_aU"
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/01/can-you-invest-too-much-in-your-retirement/",
+          "title": "Can you invest too much in your retirement?",
+          "publisher": "The Spokesman-Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5CqmVRDTWi3hM6RWg-bCDHfHI5MnqhMABwHDFjC6dkf3_vxn0vs8RMmbNZvc"
+        }
+      ]
+    },
+    {
+      "query": "casper ruud",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T20:30:00Z",
+      "related_news_urls": [
+        "https://www.dimers.com/tennis/news/casper-ruud-vs-rafael-jodar-tennis-prediction-atp-paris-masters-2026-ac",
+        "https://tenngrand.com/paris-r2-previews-and-predictions-jodar-vs-ruud-shelton-vs-norrie/",
+        "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-jodar-ruud/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcSxAqTMcenqitSpV1BDavEu3vn8hOloQ3U-Oz-_wLtvHew2-XiszsWOUmJw",
+      "image_credit": "Dimers",
+      "news": [
+        {
+          "url": "https://www.dimers.com/tennis/news/casper-ruud-vs-rafael-jodar-tennis-prediction-atp-paris-masters-2026-ac",
+          "title": "Casper Ruud vs. Rafael Jodar prediction, odds, picks for ATP Paris Masters 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcSxAqTMcenqitSpV1BDavEu3vn8hOloQ3U-Oz-_wLtvHew2-XiszsWOUmJw"
+        },
+        {
+          "url": "https://tenngrand.com/paris-r2-previews-and-predictions-jodar-vs-ruud-shelton-vs-norrie/",
+          "title": "Paris R2 previews and predictions: Jodar vs. Ruud, Shelton vs. Norrie",
+          "publisher": "The Grandstand",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSa1F7WIaPgNY_OminuJCikHQUI0PlshjPl7Io_Bv28JQVBUd9CR9aaV8rF5H8"
+        },
+        {
+          "url": "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-jodar-ruud/",
+          "title": "ATP Paris Day 2 Predictions Including Rafael Jodar vs Casper Ruud",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzyieey79O6SKwImzhfVeNPeemE2LR1cSyccYw5enL2J8Rx47OJSrKtDTibX4"
+        }
+      ]
+    },
+    {
+      "query": "kevin warsh ai stock market comments",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T20:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/economy/central-banking/the-feds-ai-puzzle-will-high-rates-slow-the-boom-c9c43ce2",
+        "https://www.cnbc.com/video/2026/10/28/fundstrats-tom-lee-we-can-say-big-beats-are-great-because-the-fed-wont-try-and-slow-growth.html",
+        "https://www.fool.com/investing/2026/11/03/fed-chair-kevin-warsh-just-drove-dagger-through-wall-street-ai-driven-rally-6-words/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT23T8FpTIa6LDBMFejZnwQg4qqvezlFF-kfjeawgTASz1sF2i2znMY_5YNKqg",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/economy/central-banking/the-feds-ai-puzzle-will-high-rates-slow-the-boom-c9c43ce2",
+          "title": "The Fed’s AI Puzzle: Will High Rates Slow the Boom?",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT23T8FpTIa6LDBMFejZnwQg4qqvezlFF-kfjeawgTASz1sF2i2znMY_5YNKqg"
+        },
+        {
+          "url": "https://www.cnbc.com/video/2026/10/28/fundstrats-tom-lee-we-can-say-big-beats-are-great-because-the-fed-wont-try-and-slow-growth.html",
+          "title": "Fundstrat's Tom Lee: We can say big beats are great because the Fed won't try and slow growth",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwMitIFWzHHMKeU-KP5rHmynmnFgcoflvCC6FgnW2ZXqQqQIxwTPCDaMSkJ8Q"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/03/fed-chair-kevin-warsh-just-drove-dagger-through-wall-street-ai-driven-rally-6-words/",
+          "title": "Fed Chair Kevin Warsh Just Drove a Dagger Through Wall Street's AI-Driven Rally With 6 Blunt Words",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhLtlUfzSWVqrwsKL5ZgWg0tE-23HF22TNsLsH_9h3KbX8D6Jf9AQNTOBdq3w"
+        }
+      ]
+    },
+    {
+      "query": "psg",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-03T20:20:00Z",
+      "related_news_urls": [
+        "https://www.lemonde.fr/sport/live/2026/11/03/en-direct-villarreal-psg-et-bodo-glimt-lille-suivez-les-matchs-de-ligue-des-champions_6805646_3242.html",
+        "https://www.lequipe.fr/Football/Actualites/Senny-mayulu-en-pointe-lucas-hernandez-dans-le-couloir-gauche-la-composition-du-psg-contre-villarreal-en-ligue-des-champions/1740888",
+        "https://www.france24.com/fr/info-en-continu/20261103-ligue-des-champions-%C3%A0-villarreal-premier-test-europ%C3%A9en-pour-ce-psg-diminu%C3%A9"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFhZ2oHhMAigSUmXS0spLAIewdHn9xc7x7X4T-OW65qzBLljTvJ8YJFLYzdI",
+      "image_credit": "Le Monde.fr",
+      "news": [
+        {
+          "url": "https://www.lemonde.fr/sport/live/2026/11/03/en-direct-villarreal-psg-et-bodo-glimt-lille-suivez-les-matchs-de-ligue-des-champions_6805646_3242.html",
+          "title": "EN DIRECT, Villarreal-PSG et Bodo Glimt-Lille : Désiré Doué et Maghnes Akliouche pour emmener l’attaque parisienne",
+          "publisher": "Le Monde.fr",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFhZ2oHhMAigSUmXS0spLAIewdHn9xc7x7X4T-OW65qzBLljTvJ8YJFLYzdI"
+        },
+        {
+          "url": "https://www.lequipe.fr/Football/Actualites/Senny-mayulu-en-pointe-lucas-hernandez-dans-le-couloir-gauche-la-composition-du-psg-contre-villarreal-en-ligue-des-champions/1740888",
+          "title": "Senny Mayulu en pointe, Lucas Hernandez dans le couloir gauche : la composition du PSG contre Villarreal en Ligue des champions",
+          "publisher": "L'Équipe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlC1hteEra5fqbXaCrEKYPDVv1_N4Cp1ZyYbraTbYShUGaUr8o9qMTjk2JFxs"
+        },
+        {
+          "url": "https://www.france24.com/fr/info-en-continu/20261103-ligue-des-champions-%C3%A0-villarreal-premier-test-europ%C3%A9en-pour-ce-psg-diminu%C3%A9",
+          "title": "Ligue des champions : à Villarreal, premier test européen pour ce PSG diminué",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-2XQUkBrSGBLqOI65wqDJUl49OOEq6d8sKtR0VKmxQOByXtnIIS_P6jraPiU"
+        }
+      ]
+    },
+    {
+      "query": "rafael jodar",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T20:20:00Z",
+      "related_news_urls": [
+        "https://malaysia.news.yahoo.com/rafael-jodar-just-broken-time-090000394.html",
+        "https://www.puntodebreak.com/en/2026/10/31/rafael-jodar-top10-tenistas-espa%C3%B1oles-10-mejores-ranking-atp",
+        "https://www.thetennisgazette.com/news/carlos-alcaraz-names-the-player-who-has-surprised-him-most-this-season-its-unbelievable/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRszbHcdkDJiVDVOs7pHNChbQXODsi1ZJDbmTpwxFk_fuRwl9v8u0Ci8wiuQH0",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://malaysia.news.yahoo.com/rafael-jodar-just-broken-time-090000394.html",
+          "title": "Rafael Jodar has just broken an all-time tennis record at the Basel Open without even playing",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRszbHcdkDJiVDVOs7pHNChbQXODsi1ZJDbmTpwxFk_fuRwl9v8u0Ci8wiuQH0"
+        },
+        {
+          "url": "https://www.puntodebreak.com/en/2026/10/31/rafael-jodar-top10-tenistas-espa%C3%B1oles-10-mejores-ranking-atp",
+          "title": "Rafael Jódar joins the top-10 club and is now the 21st Spaniard to achieve it",
+          "publisher": "Punto de Break",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWt_KsChNo5uomx-HK0RZPZfLum4mTJdiJ_6yJEfbVYcBlt_VI-ehcnFCJQoc"
+        },
+        {
+          "url": "https://www.thetennisgazette.com/news/carlos-alcaraz-names-the-player-who-has-surprised-him-most-this-season-its-unbelievable/",
+          "title": "Carlos Alcaraz names the player who has surprised him most this season, ‘it’s unbelievable’",
+          "publisher": "The Tennis Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4DY3bUm9jQq2SRcHBU_rvHroH6zdJ7AvmTDiom7aSNYVHR7FBSfpL8FhlvfE"
         }
       ]
     }
