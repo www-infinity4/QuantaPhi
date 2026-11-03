@@ -53,3 +53,15 @@ body{color:#263238;background:#f8f9fb}
 .how-grid h3,.how-grid p{color:#263238}
 footer,footer a{color:#52616a}
 @media(max-width:500px){.hero{padding:12px 0 4px}.hero-buttons a{width:auto;flex:1}.arena{padding-top:8px}.workzone-top{flex-wrap:wrap}.mode-toggle{width:100%}.mode-toggle button{flex:1}#zeusAssistantFrame{height:calc(100dvh - 218px);min-height:440px}}
+
+/* Instant Zeus quest entry: one real textbox with a compact Send action. */
+.zeus-quest-form{display:grid;gap:8px;margin:17px 0 10px;max-width:850px}
+.zeus-quest-form label{font:700 16px/1.4 system-ui,sans-serif;color:#263238;letter-spacing:.01em}
+.zeus-quest-compose{display:grid;grid-template-columns:minmax(0,1fr) 86px;align-items:stretch;gap:9px}
+#zeusQuestInput{width:100%;min-width:0;min-height:62px;resize:vertical;border:1px solid #b5c1cb;border-radius:12px;background:#fff;color:#263238;padding:13px 14px;font:500 18px/1.45 system-ui,sans-serif;letter-spacing:.012em;box-shadow:none}
+#zeusQuestInput::placeholder{color:#687983;opacity:1}
+#zeusQuestInput:focus-visible,#zeusQuestSend:focus-visible{outline:3px solid #427c98;outline-offset:2px}
+#zeusQuestSend{min-height:54px;align-self:stretch;padding:8px 11px;background:#fff;color:#263238;border:1px solid #9babb6;border-radius:12px;font:750 17px system-ui,sans-serif}
+#zeusQuestSend:disabled{opacity:.6;cursor:wait}
+.zeus-quest-status{font:500 13px/1.5 system-ui,sans-serif;color:#52616b!important;margin:0!important;min-height:19px}
+@media(max-width:420px){.zeus-quest-compose{grid-template-columns:minmax(0,1fr) 75px;gap:7px}#zeusQuestInput{font-size:17px}#zeusQuestSend{font-size:16px;padding:6px}}
