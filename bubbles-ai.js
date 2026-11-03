@@ -3899,6 +3899,7 @@ let progressStorage;try{progressStorage=localStorage;}catch{}
 const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker({storage:progressStorage}):null;
 let progressPolling=false,progressUnavailable=false;
 let activeIterationTicketId=''; // Only jobs submitted in this chat can determine its Build state.
+let activeIterationThreadId='';
 async function pollBrainProgress(){
  if(embedded||!ownerReady||!progressTracker||progressPolling)return;
  progressPolling=true;
@@ -3909,7 +3910,7 @@ async function pollBrainProgress(){
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
   // Do not project a historical or unrelated blocked ticket onto this conversation.
   // Only the exact authenticated ticket returned by this chat's submission can update Build.
-  const iterationTicket=activeIterationTicketId
+  const iterationTicket=activeIterationTicketId&&activeIterationThreadId===activeThread
    ?result.tickets.find(ticket=>ticket?.id===activeIterationTicketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
    :null;
   if(iterationTicket)if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
@@ -4021,6 +4022,7 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||'No confirmed request'));
    activeIterationTicketId=result.ticket.id;
+   activeIterationThreadId=activeThread;
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
     type:'job',repository,status:result.ticket.status,url:result.ticket.progress?.url||''}}));
   if(String(workText.value||'').trim()===request)workText.value='';
