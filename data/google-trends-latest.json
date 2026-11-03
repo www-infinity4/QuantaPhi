@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T21:31:30.105723Z",
+  "checked_at": "2026-11-03T22:01:47.224989Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "earnings today",
+      "query": "virginia election results",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T21:10:00Z",
+      "published_at": "2026-11-03T21:40:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html",
-        "https://apnews.com/article/stock-markets-ai-earnings-oil-0d235af127a92c68da0cc2c45c028cef",
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-03-2026"
+        "https://www.nbcnews.com/politics/2026-elections/virginia-house-results",
+        "https://cardinalnews.org/2026/11/03/election-live-updates-and-analysis-from-the-2026-elections/",
+        "https://www.washingtonpost.com/elections/results/2026/11/03/virginia-live-updates/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAaGoF4-b-JuL2i8kz5WjNgPC2p6zn3ga4oPPYcX7_PDNyIOHadmNmjcNY9BM",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html",
-          "title": "S&P 500 snaps 3-day skid on Election Day as chip stocks rebound",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAaGoF4-b-JuL2i8kz5WjNgPC2p6zn3ga4oPPYcX7_PDNyIOHadmNmjcNY9BM"
-        },
-        {
-          "url": "https://apnews.com/article/stock-markets-ai-earnings-oil-0d235af127a92c68da0cc2c45c028cef",
-          "title": "Nvidia and other Big Tech stocks lift Wall Street and make up for a drop by Apple",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHiLTd505dJ_iNtt6rs9snU5y-8nfuiUDZSKgLMi5hrtiOqzPaXba8lp8e4o"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-03-2026",
-          "title": "Stock Market Today: Dow Opens Lower; Apple Stock Falls After Earnings Disappoint",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
-        }
-      ]
-    },
-    {
-      "query": "amd stock",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-03T21:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/03/amd-has-been-crushed-into-earnings-heres-one-way-to-trade-it.html",
-        "https://finance.yahoo.com/technology/article/amd-to-report-q3-results-as-chip-stocks-rebound-following-last-weeks-steep-selloff-150210938.html",
-        "https://www.bloomberg.com/news/articles/2026-11-03/amd-needs-a-huge-outlook-to-avoid-intel-s-fate-as-ai-fears-rise"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKm43kXepbYFCSOIbmXvCp1trfifaXYvtBCem5IZ8Dm7TD4qWicQOYpIMcBsg",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/03/amd-has-been-crushed-into-earnings-heres-one-way-to-trade-it.html",
-          "title": "AMD has been crushed into earnings. Here’s one way to trade it",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKm43kXepbYFCSOIbmXvCp1trfifaXYvtBCem5IZ8Dm7TD4qWicQOYpIMcBsg"
-        },
-        {
-          "url": "https://finance.yahoo.com/technology/article/amd-to-report-q3-results-as-chip-stocks-rebound-following-last-weeks-steep-selloff-150210938.html",
-          "title": "AMD to report Q3 results as chip stocks rebound following last week's steep selloff",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3fY_eQVoDxDO6SCyZ0pYs5bOioPwAcAN6gRRuhsA10arUIKUHpqua7NiYN6E"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-03/amd-needs-a-huge-outlook-to-avoid-intel-s-fate-as-ai-fears-rise",
-          "title": "AMD Needs a Huge Outlook to Avoid Intel’s Fate as AI Fears Rise",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6Y846c-Fx60jUPdK8XXmbBUoFWhFP8zySooaCj4qS1ugAnpSP11-zomHUrlw"
-        }
-      ]
-    },
-    {
-      "query": "smci stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T21:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/technology/article/super-micro-to-report-q1-earnings-as-ai-trade-attempts-comeback-195315844.html",
-        "https://www.bloomberg.com/news/articles/2026-11-03/super-micro-gives-outlook-that-tops-estimates-on-server-demand",
-        "https://www.tikr.com/blog/super-micro-rises-4-dell-up-4-amd-up-5-as-ai-stocks-rebound-ahead-of-earnings?"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyXj7S_iq05OijGK_tkP_oHHt8DsaZLzq9aPlvr5SuzvDRcfSzM7rR8wNIG1E",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/technology/article/super-micro-to-report-q1-earnings-as-ai-trade-attempts-comeback-195315844.html",
-          "title": "Super Micro to report Q1 earnings as AI trade attempts comeback",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyXj7S_iq05OijGK_tkP_oHHt8DsaZLzq9aPlvr5SuzvDRcfSzM7rR8wNIG1E"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-03/super-micro-gives-outlook-that-tops-estimates-on-server-demand",
-          "title": "Super Micro Gives Outlook That Tops Estimates on Server Demand",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBXf3XcNgEZwgmxRbO2XHj01lqLTcX8fC39B-LnGpAj_SaiDs1AyizpODHMtU"
-        },
-        {
-          "url": "https://www.tikr.com/blog/super-micro-rises-4-dell-up-4-amd-up-5-as-ai-stocks-rebound-ahead-of-earnings?",
-          "title": "Super Micro Rises 4%, Dell Up 4%, AMD Up 5% as AI Stocks Rebound Ahead of Earnings",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWs6a-bWN-Ez14qBIYjcmP1a6YGVrZn7w2nNVLhVcp6d4NjAG6kKWp62IxZH0"
-        }
-      ]
-    },
-    {
-      "query": "mn election results",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T21:00:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/minnesota/live-updates/minnesotas-midterm-election-2026-follow-the-latest-updates/",
-        "https://www.mprnews.org/story/2026/11/03/voters-energized-and-heading-to-the-polls-in-minneapolis-and-moorhead",
-        "https://www.pbs.org/newshour/politics/live-results-minnesota-senate-midterm-election"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQpH8kWGn85dROuZb09-KmU184h6Gy-qP1XdVFoRvszOHjyjX67-nacw7P3OA",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/minnesota/live-updates/minnesotas-midterm-election-2026-follow-the-latest-updates/",
-          "title": "Minnesota's midterm election 2026: Follow the latest updates",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQpH8kWGn85dROuZb09-KmU184h6Gy-qP1XdVFoRvszOHjyjX67-nacw7P3OA"
-        },
-        {
-          "url": "https://www.mprnews.org/story/2026/11/03/voters-energized-and-heading-to-the-polls-in-minneapolis-and-moorhead",
-          "title": "Voters energized and heading to the polls in Minneapolis and Moorhead",
-          "publisher": "MPR News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-oJ6yqGz_e8wymEgokmPCr_SMVuu04FSghNGSy8usJSc593tqLyHu6rs6kw"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/politics/live-results-minnesota-senate-midterm-election",
-          "title": "Live Results: Minnesota Senate midterm election",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsIpVrCl8O7HeGs93gRIUWmrONc919XJfGgSRwV8jJPgL2BtNqvWMrLHCT4wc"
-        }
-      ]
-    },
-    {
-      "query": "uefa nations league",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T21:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/c3vgx8qxge7zo",
-        "https://www.irishtimes.com/sport/soccer/2026/11/03/ireland-drawn-in-nations-league-group-with-world-champions-spain/",
-        "https://www.rte.ie/sport/soccer/2026/1101/1597048-nations-league-could-offer-ireland-ticket-to-the-la-games/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1wffGB4Oj4WaWnLScQnfOit0IZsZW8EQ8oajppkchTuyZTBNyGmFYBrM3Wg",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/articles/c3vgx8qxge7zo",
-          "title": "Lionesses to face France and Portugal in Nations League",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1wffGB4Oj4WaWnLScQnfOit0IZsZW8EQ8oajppkchTuyZTBNyGmFYBrM3Wg"
-        },
-        {
-          "url": "https://www.irishtimes.com/sport/soccer/2026/11/03/ireland-drawn-in-nations-league-group-with-world-champions-spain/",
-          "title": "Ireland drawn in Nations League group with world champions Spain",
-          "publisher": "The Irish Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyTNAdbUm_YDBtrmmXbHoyR4bJwsY6QoHiBvwBetHvc7hMSvXk72zOWqtBlxM"
-        },
-        {
-          "url": "https://www.rte.ie/sport/soccer/2026/1101/1597048-nations-league-could-offer-ireland-ticket-to-the-la-games/",
-          "title": "Nations League could offer Ireland ticket to the LA Games",
-          "publisher": "RTE.ie",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZGRQ7FpVn92LjbyBRfVf9pcxwxsp_iX1gOOODPYaGufhr-VXQR0LPf80u5Zo"
-        }
-      ]
-    },
-    {
-      "query": "kansas election results",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T20:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/kansas-senate-results",
-        "https://www.kcur.org/politics-elections-and-government/2026-11-03/kansas-election-results-2026-november-senate-governor-congress",
-        "https://www.kctv5.com/2026/11/03/live-updates-voting-underway-across-kansas-missouri-doj-says-theyre-monitoring-elections-across-kansas-city/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzJBUSFITcDd2dsIauDDuI8kRAVvKQjHZrm6b9_teBMo5fxPEa_8drWyl4NqI",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqwACVBvsZiLOYXouz04EDNP-W7r0tygC-8TPTEoWs0Y95C03UuOHbr3CqhOQ",
       "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://www.nbcnews.com/politics/2026-elections/kansas-senate-results",
-          "title": "Kansas U.S. Senate Midterm Election 2026: Live Results",
+          "url": "https://www.nbcnews.com/politics/2026-elections/virginia-house-results",
+          "title": "Virginia U.S. House Midterm Election 2026: Live Results",
           "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzJBUSFITcDd2dsIauDDuI8kRAVvKQjHZrm6b9_teBMo5fxPEa_8drWyl4NqI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqwACVBvsZiLOYXouz04EDNP-W7r0tygC-8TPTEoWs0Y95C03UuOHbr3CqhOQ"
         },
         {
-          "url": "https://www.kcur.org/politics-elections-and-government/2026-11-03/kansas-election-results-2026-november-senate-governor-congress",
-          "title": "Here are the key 2026 election results from Kansas",
-          "publisher": "KCUR",
+          "url": "https://cardinalnews.org/2026/11/03/election-live-updates-and-analysis-from-the-2026-elections/",
+          "title": "Election Live: Data site says Virginia Democrats are voting at higher rate than Republicans",
+          "publisher": "Cardinal News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUfjyeiJwsybGZ953znxW5lTfOqKu-zzp_5m5V8CNWY5AziYEzbIldrVDrZxU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJkLPw7tAmfEvYrp-ntUThxTzU97ZwXcDbyN_1t7AlkO4PDVnj-8fQsC598zE"
         },
         {
-          "url": "https://www.kctv5.com/2026/11/03/live-updates-voting-underway-across-kansas-missouri-doj-says-theyre-monitoring-elections-across-kansas-city/",
-          "title": "🔴 LIVE UPDATES: Voting underway across Kansas, Missouri as DOJ says it’s monitoring elections",
-          "publisher": "KCTV",
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/virginia-live-updates/",
+          "title": "Virginia election results 2026: Live updates",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_1ZTs8pCxfNinQB8Kd0jYOdfl3F-rzxQjLG-tYzpMwWXrsZgzdk72foEz2rU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk7EqhXruxCWyp1bl0F4_BV4UgLEQBHKHHLN5_IO4iPEacPmd0d3dgtxM_5_M"
         }
       ]
     },
     {
-      "query": "jensen ackles",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T20:50:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1300923/tracker-season-4-episode-5-recap-jensen-ackles-return-russell-colter/",
-        "https://www.aol.com/articles/tracker-season-4-episode-6-123158000.html",
-        "https://www.givememyremote.com/remote/tag/tracker-need-to-know-spoilers/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHfV-DLLLHj-OqHK88SCS5BSA84kGj44IV8Is2TTvoV1LoNZyezPnywhIRvno",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1300923/tracker-season-4-episode-5-recap-jensen-ackles-return-russell-colter/",
-          "title": "‘Tracker’: Did Jensen Ackles’ Return as Russell Address Colter Mystery?",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHfV-DLLLHj-OqHK88SCS5BSA84kGj44IV8Is2TTvoV1LoNZyezPnywhIRvno"
-        },
-        {
-          "url": "https://www.aol.com/articles/tracker-season-4-episode-6-123158000.html",
-          "title": "Tracker Season 4 Episode 6 Trailer Shows Colter’s Next Conspiracy Without Russell",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDSKIYbG70XpZpK4kj_yKTLDH3vsBWmDTOJ4DcUQUehEK-pDN26xJSBSvZwhs"
-        },
-        {
-          "url": "https://www.givememyremote.com/remote/tag/tracker-need-to-know-spoilers/",
-          "title": "TRACKER: 'Need to Know' spoilers",
-          "publisher": "Give Me My Remote",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxkbh7FSEDmVIloSPrD9CVdDmxYBWQ-4XXTqhdrU4ZRbgH9qDVd8iTAyz90J4"
-        }
-      ]
-    },
-    {
-      "query": "ryan fazio",
+      "query": "pepsi holiday soda flavor release",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T20:50:00Z",
+      "published_at": "2026-11-03T21:40:00Z",
       "related_news_urls": [
-        "https://www.wtnh.com/news/elections/lamont-fazio-make-final-push-as-election-day-arrives/",
-        "https://www.wfsb.com/2026/11/03/lamont-fazio-face-off-connecticut-governors-race/",
-        "https://hartfordbusiness.com/article/bordonaro-five-priorities-for-connecticuts-next-governor/"
+        "https://www.allrecipes.com/walmart-pepsi-vanilla-cream-holiday-kit-12207690",
+        "https://www.allrecipes.com/poppi-cranberry-fizz-returns-2026-12198694",
+        "https://www.yahoo.com/lifestyle/articles/poppis-cranberry-fizz-returns-holidays-160000891.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvCLP61FvD9MKDJAiNbibWeLMWiIX4iaLQRIGpFmGV2k-6vQ3dYfMtEWFm05k",
-      "image_credit": "WTNH.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0Gt8Td4YX2E0RK8HUo9R4GprHAU8iVT0lZ0HtAUreMEipkjTIKiItOfAwWr8",
+      "image_credit": "Allrecipes",
       "news": [
         {
-          "url": "https://www.wtnh.com/news/elections/lamont-fazio-make-final-push-as-election-day-arrives/",
-          "title": "Lamont, Fazio make final push as Election Day arrives",
-          "publisher": "WTNH.com",
+          "url": "https://www.allrecipes.com/walmart-pepsi-vanilla-cream-holiday-kit-12207690",
+          "title": "Pepsi Just Dropped a New Product Exclusively at Walmart and We’re Racing To Find It",
+          "publisher": "Allrecipes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvCLP61FvD9MKDJAiNbibWeLMWiIX4iaLQRIGpFmGV2k-6vQ3dYfMtEWFm05k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0Gt8Td4YX2E0RK8HUo9R4GprHAU8iVT0lZ0HtAUreMEipkjTIKiItOfAwWr8"
         },
         {
-          "url": "https://www.wfsb.com/2026/11/03/lamont-fazio-face-off-connecticut-governors-race/",
-          "title": "Lamont, Fazio face off in Connecticut governor’s race on Election Day",
-          "publisher": "WFSB",
+          "url": "https://www.allrecipes.com/poppi-cranberry-fizz-returns-2026-12198694",
+          "title": "Costco Just Brought Back the Rare PepsiCo Seasonal Soda Fans Stockpile ‘For Emergencies’",
+          "publisher": "Allrecipes",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw-Gg2XPG5MZfkCb-kq36Ict5jfX60c3ZQQlyjchGYyyzJDfKoh8jm8oMW-xg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRJrDAwIZ5Gr_BtZiIrHc_JIdK-dd1Sm3QayPbMH3qjdVHZIrxoJy73rfJ_CU"
         },
         {
-          "url": "https://hartfordbusiness.com/article/bordonaro-five-priorities-for-connecticuts-next-governor/",
-          "title": "Bordonaro: Five priorities for Connecticut’s next governor",
-          "publisher": "Hartford Business Journal",
+          "url": "https://www.yahoo.com/lifestyle/articles/poppis-cranberry-fizz-returns-holidays-160000891.html",
+          "title": "Poppi's Cranberry Fizz Returns for the Holidays",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpCv9a3TlUq4sAdL3kLe8y3iBEgFLKucfhU2iExhTSxIitnUkdvBkLn-64bUg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXbmVF3woI070fB4jSkML3ni0zC0Q2gy4wpAFX9-TcIVA9SIygRhUqTWawZQE"
         }
       ]
     },
     {
-      "query": "pandilla",
+      "query": "greg newsome",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T20:50:00Z",
+      "published_at": "2026-11-03T21:30:00Z",
       "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/02/lder-de-pandilla-haitiana-dice-a-ap-que-escribi-a-la-onu-para-proponer-dilogo/",
-        "https://news.un.org/es/story/2026/11/1542137",
-        "https://www.dw.com/es/jefe-de-banda-en-hait%C3%AD-pedir%C3%ADa-mediaci%C3%B3n-de-la-onu-para-un-di%C3%A1logo-de-paz/a-79828193"
+        "https://www.espn.com/nfl/story/_/id/50372281/giants-cb-greg-newsome-ii-agree-3-year-46m-extension",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/greg-newsome-giants-agree-on-three-year-extension",
+        "https://www.bigblueview.com/new-york-giants-news/178409/greg-newsome-signing-contract-extension"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAjrIaSHpn4eK7EwWWj6sW90AoYUIOUEAzbcQ829aNaSWWwT38COBaSeHp3MI",
-      "image_credit": "Chicago Tribune",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7nBLB6l675SxMHRFn16nYzGdNWjjBpulWJ5WQJ8uCIAZCKZTJSjSUgH1PUgM",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.chicagotribune.com/2026/11/02/lder-de-pandilla-haitiana-dice-a-ap-que-escribi-a-la-onu-para-proponer-dilogo/",
-          "title": "Líder de pandilla haitiana dice a AP que escribió a la ONU para proponer diálogo",
-          "publisher": "Chicago Tribune",
+          "url": "https://www.espn.com/nfl/story/_/id/50372281/giants-cb-greg-newsome-ii-agree-3-year-46m-extension",
+          "title": "Giants, CB Greg Newsome II agree to 3-year, $46M extension",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAjrIaSHpn4eK7EwWWj6sW90AoYUIOUEAzbcQ829aNaSWWwT38COBaSeHp3MI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7nBLB6l675SxMHRFn16nYzGdNWjjBpulWJ5WQJ8uCIAZCKZTJSjSUgH1PUgM"
         },
         {
-          "url": "https://news.un.org/es/story/2026/11/1542137",
-          "title": "Haití: la ONU, entre los llamados al diálogo de las pandillas y la ofensiva militar de El Salvador",
-          "publisher": "UN News",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/greg-newsome-giants-agree-on-three-year-extension",
+          "title": "Greg Newsome, Giants agree on three-year extension",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpE0bOiai3LGM08uXX4-PB4ZkcIEtu6Gd88tUqY_U9yuMhCtahUqa1DKtiMlY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYn0c-M0WmLdNbwlvCVJXhEHC8i1yFrtWwMyJBnMJoYPxlph9SiexlEgyzfvg"
         },
         {
-          "url": "https://www.dw.com/es/jefe-de-banda-en-hait%C3%AD-pedir%C3%ADa-mediaci%C3%B3n-de-la-onu-para-un-di%C3%A1logo-de-paz/a-79828193",
-          "title": "Jefe de banda en Haití pediría mediación de la ONU para un diálogo de paz",
-          "publisher": "DW.com",
+          "url": "https://www.bigblueview.com/new-york-giants-news/178409/greg-newsome-signing-contract-extension",
+          "title": "NY Giants give veteran cornerback 3-year contract extension",
+          "publisher": "Big Blue View",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRS0mSL0iPiiZKISD77zvrNPdoS9LfQwZxdOjPzQhsix-8x-Bvp1L0iCnfVcY0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5TwaLvGSRstuSMTp4Fod9hf5NRzrEpvdV6hyy4mzfjZ-f-ARtv0Vs_pYC2qo"
         }
       ]
     },
     {
-      "query": "maratón de nueva york",
+      "query": "bodø/glimt - losc",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T20:50:00Z",
+      "published_at": "2026-11-03T21:30:00Z",
       "related_news_urls": [
-        "https://www.univision.com/local/nueva-york-wxtv/completar-maraton-de-nueva-york-meta-mujer-joven-sin-vida-otra-peleando-vivir",
-        "https://www.telemundo47.com/noticias/local/corredora-muere-maraton-nueva-york/2663632/",
-        "https://us.marca.com/mas-deporte/2026/11/03/rachel-apa-joven-corredora-murio-intentando-terminar-maraton-nueva-york-24-anos.html"
+        "https://www.oregonlive.com/tv/2026/11/how-to-watch-lille-vs-bodoglimt-champions-league-match-streaming-live-preview-start-time-betting-lines.html",
+        "https://www.sportsmole.co.uk/football/bodo-glimt/champions-league/preview/bodoglimt-vs-lille-prediction-team-news-lineups_608214.html",
+        "https://www.whoscored.com/news/uDhmbhPWvECbTErMpfBXlQ/show/cng112-20261103-bodoe-glimt-vs-lille-confirmed-lineup-1793732626"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYTGrgVbbbXh_zt0lU_jlM3Enmzd61xpuiGTm9HIJ7rIOYNs_dsQWxcym7eyk",
-      "image_credit": "Univision",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRinprR-lax1zZON_Nw6b1uNnWXxj_bbitzq44ckihM2SR32WleSpgkEpdQQT8",
+      "image_credit": "OregonLive.com",
       "news": [
         {
-          "url": "https://www.univision.com/local/nueva-york-wxtv/completar-maraton-de-nueva-york-meta-mujer-joven-sin-vida-otra-peleando-vivir",
-          "title": "Completar el maratón de Nueva York, la meta que dejó a una mujer sin vida y a otra peleando por vivir",
-          "publisher": "Univision",
+          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-lille-vs-bodoglimt-champions-league-match-streaming-live-preview-start-time-betting-lines.html",
+          "title": "How to watch Lille vs. Bodo/Glimt Champions League match streaming live: Preview, start time, betting lines",
+          "publisher": "OregonLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYTGrgVbbbXh_zt0lU_jlM3Enmzd61xpuiGTm9HIJ7rIOYNs_dsQWxcym7eyk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRinprR-lax1zZON_Nw6b1uNnWXxj_bbitzq44ckihM2SR32WleSpgkEpdQQT8"
         },
         {
-          "url": "https://www.telemundo47.com/noticias/local/corredora-muere-maraton-nueva-york/2663632/",
-          "title": "Joven corredora muere tras desplomarse a 2 millas de la meta del maratón de NY",
-          "publisher": "Telemundo New York",
+          "url": "https://www.sportsmole.co.uk/football/bodo-glimt/champions-league/preview/bodoglimt-vs-lille-prediction-team-news-lineups_608214.html",
+          "title": "Preview: Bodo/Glimt vs Lille - prediction, team news, lineups",
+          "publisher": "Sports Mole",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqOz_72aaE5RQDy0rtcdzjhKiJDjOe_Ui9X9BdPnaZb-OuMzADtUlOGqR0fBo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_DNKf_zgIA4UR3Q7U3XYipCqJjKp8j5NQOhsmwCng6Q4DZe3S84K1DWODLSA"
         },
         {
-          "url": "https://us.marca.com/mas-deporte/2026/11/03/rachel-apa-joven-corredora-murio-intentando-terminar-maraton-nueva-york-24-anos.html",
-          "title": "¿Quién era Rachel Apa? La joven corredora que murió intentando terminar la Maratón de Nueva York a sus 24 años",
-          "publisher": "marca usa",
+          "url": "https://www.whoscored.com/news/uDhmbhPWvECbTErMpfBXlQ/show/cng112-20261103-bodoe-glimt-vs-lille-confirmed-lineup-1793732626",
+          "title": "Bodoe/Glimt vs Lille Confirmed Lineups",
+          "publisher": "WhoScored.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAuSl4pRnSTamJ3c5R15O9qudWzShdZig6N0VJRn4-17kiY9NhQ8VHJUGniKw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCw20GrpbZAhwRVjmJSGLY058oId1YgCRDRIIrnAWUfMVDQ3zbTl_HRkIj7Sg"
+        }
+      ]
+    },
+    {
+      "query": "cj gardner johnson",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T21:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50372292/bills-release-safety-cj-gardner-johnson",
+        "https://bleacherreport.com/articles/25529041-cjgj-reportedly-released-bills-after-serving-1-game-suspension-spitting-raiders",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bills-release-s-c-j-gardner-johnson-after-one-game-suspension"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTBtG05-e-dw1usZV0G-DR_pWaHr8yMcH7ZyUMAvVPfFwoMNL7r9AjtEqOWEA",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50372292/bills-release-safety-cj-gardner-johnson",
+          "title": "Bills release C.J. Gardner-Johnson after one-game spitting suspension",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTBtG05-e-dw1usZV0G-DR_pWaHr8yMcH7ZyUMAvVPfFwoMNL7r9AjtEqOWEA"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529041-cjgj-reportedly-released-bills-after-serving-1-game-suspension-spitting-raiders",
+          "title": "CJGJ Reportedly Released by Bills After Serving 1-Game Suspension for Spitting at Raiders",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFjQth3AL29Pj1rQ-UOPKoLoKnUORWTbb11phljXHN1djKOEymDj3q_YBaaso"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bills-release-s-c-j-gardner-johnson-after-one-game-suspension",
+          "title": "Bills release S C.J. Gardner-Johnson after one-game suspension",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRe0D_hMLI4LLAQy3fpqrVVpsxRVBkavY3Uxtp9E55Y9DITV7uGqpPmX-cLSUI"
+        }
+      ]
+    },
+    {
+      "query": "alab stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T21:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/articles/astera-labs-reports-third-quarter-210500020.html",
+        "https://seekingalpha.com/news/4663598-astera-labs-slides-even-as-q3-results-guidance-top-estimates",
+        "https://www.tikr.com/blog/astera-labs-stock-fell-after-its-last-3-revenue-beats-heres-what-could-change-on-nov-3"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCobP1xpx1QVz8zOWN_RsJyNC4531RmMYCME8DoMnPC2o8V45Ds--CL0HpRA",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/articles/astera-labs-reports-third-quarter-210500020.html",
+          "title": "Astera Labs Reports Third Quarter 2026 Financial Results",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCobP1xpx1QVz8zOWN_RsJyNC4531RmMYCME8DoMnPC2o8V45Ds--CL0HpRA"
+        },
+        {
+          "url": "https://seekingalpha.com/news/4663598-astera-labs-slides-even-as-q3-results-guidance-top-estimates",
+          "title": "Astera Labs slides even as Q3 results, guidance top estimates (ALAB:NASDAQ)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbo52NVjC1NqW-YhTY00eV4QDWpR-CBfcGvGVpMMw3bmTkt_5BGRUwigJyMyM"
+        },
+        {
+          "url": "https://www.tikr.com/blog/astera-labs-stock-fell-after-its-last-3-revenue-beats-heres-what-could-change-on-nov-3",
+          "title": "Astera Labs Stock Fell After Its Last 3 Revenue Beats. Here’s What Could Change on Nov. 3",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_5hTzQLxtBga-WuRXqmfz6POWqMBwRX6gAPqo9iwD3kFbzZc7no4xtRpBpYk"
+        }
+      ]
+    },
+    {
+      "query": "lille fc",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T21:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/lille-predicted-xi-v-bodo-100600919.html",
+        "https://www.ysscores.com/en/news/14086018/illness-rules-out-nabil-bentaleb-for-lille-against-bodo",
+        "https://www.getfootballnewsfrance.com/2026/lille-predicted-xi-v-bodo-glimt-nabil-bentaleb-and-ayase-ueda-out/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiuMUl1LZw4ZFXUAwV79Zeyn8nW6OODE-1q8u-DIhQWDTA6MJmMJ7G9GqPi7M",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/lille-predicted-xi-v-bodo-100600919.html",
+          "title": "Lille predicted XI v Bodo/Glimt: Nabil Bentaleb and Ayase Ueda out",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiuMUl1LZw4ZFXUAwV79Zeyn8nW6OODE-1q8u-DIhQWDTA6MJmMJ7G9GqPi7M"
+        },
+        {
+          "url": "https://www.ysscores.com/en/news/14086018/illness-rules-out-nabil-bentaleb-for-lille-against-bodo",
+          "title": "Illness rules out Nabil Bentaleb for Lille against Bo…",
+          "publisher": "YSscores",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPg08Cq8lLaTYVW9AaPGCBkVoAEuuEbbRrpwVOZh76tB9EEMNygMgxtfGPUmo"
+        },
+        {
+          "url": "https://www.getfootballnewsfrance.com/2026/lille-predicted-xi-v-bodo-glimt-nabil-bentaleb-and-ayase-ueda-out/",
+          "title": "Lille predicted XI v Bodo/Glimt: Nabil Bentaleb and Ayase Ueda out",
+          "publisher": "Get French Football News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKx_sv4HRxjbHOkLDXaCSw2ERynifkUMV87yPxbdyFFfjDeXh3eWAX34Vh4dM"
+        }
+      ]
+    },
+    {
+      "query": "dan osborn",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T21:20:00Z",
+      "related_news_urls": [
+        "https://www.pbs.org/newshour/politics/live-results-nebraska-senate-midterm-election",
+        "https://nebraskaexaminer.com/2026/11/03/nebraska-races-to-watch-for-the-2026-midterms/",
+        "https://www.wowt.com/2026/11/03/election-day-2026-voters-nebraska-iowa-head-polls/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ923VuRHWG1PxB3t7aR6EngsxBTbe9zr4EKBAZYvxrK5S9fNa4D233Y_1dqqE",
+      "image_credit": "PBS",
+      "news": [
+        {
+          "url": "https://www.pbs.org/newshour/politics/live-results-nebraska-senate-midterm-election",
+          "title": "Live Results: Nebraska Senate midterm election",
+          "publisher": "PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ923VuRHWG1PxB3t7aR6EngsxBTbe9zr4EKBAZYvxrK5S9fNa4D233Y_1dqqE"
+        },
+        {
+          "url": "https://nebraskaexaminer.com/2026/11/03/nebraska-races-to-watch-for-the-2026-midterms/",
+          "title": "Nebraska races to watch for the 2026 midterms",
+          "publisher": "Nebraska Examiner",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcJQlQfanaD26JOncIIh2w2ZrV4S1zIMOZ4QFwFE9OfCRQM0WUizOZy7SLJ9g"
+        },
+        {
+          "url": "https://www.wowt.com/2026/11/03/election-day-2026-voters-nebraska-iowa-head-polls/",
+          "title": "Election Day 2026: Voters in Nebraska & Iowa head to the polls",
+          "publisher": "WOWT",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNfaoM6OU2IY9RgfEiBRRhyLitgPGelUM-7y4TRCDfJe9Lki-LfQtsetW_lPY"
+        }
+      ]
+    },
+    {
+      "query": "cj stroud contract negotiation texans",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T21:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50360444/cj-stroud-texans-contract",
+        "https://sports.yahoo.com/articles/texans-rumors-could-c-j-201552587.html",
+        "https://www.fantasyguru.com/texans-stroud-turned-down-deal-similar-to-lawrences-in-line-for-a-bigger-one"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCyqvyPTdE89nKOXWDdEJB425gksNutpTzKfif1VuvhPlbeZJnVD5USraukVQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50360444/cj-stroud-texans-contract",
+          "title": "C.J. Stroud turned down a big contract. A bigger one awaits",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCyqvyPTdE89nKOXWDdEJB425gksNutpTzKfif1VuvhPlbeZJnVD5USraukVQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/texans-rumors-could-c-j-201552587.html",
+          "title": "Texans rumors: Could C.J. Stroud get $70 million a year? Don’t count it out",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEsgQ_a3BtgLEscvKPxoKMZBwZo9oju-S5MTj4T8vRFiqNgiWQcRLD_ASbLxs"
+        },
+        {
+          "url": "https://www.fantasyguru.com/texans-stroud-turned-down-deal-similar-to-lawrences-in-line-for-a-bigger-one",
+          "title": "Texans | Stroud turned down deal similar to Lawrence’s, in line for ‘a bigger one’",
+          "publisher": "Fantasy Guru",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC9pKeDEcs9YLEYyEJ6Bkvk-60T56d4yxHG5Q1fVjNt3bU-J8MLu0DzpDaAKo"
+        }
+      ]
+    },
+    {
+      "query": "bayern munich",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-03T21:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50360295/harry-kane-hopes-bayern-munich-pass-tough-champions-league-test-madrid",
+        "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/276026/harry-kane-proclaims-pride-at-being-a-bayern-munich-player",
+        "https://sports.yahoo.com/articles/alan-shearer-urges-harry-kane-114700098.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnZzcpr-b8Lwn_xX5nIZcxcFwKvlMpUDMo6Lwlbfzog4unNU7Z4NRpm38X3vM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50360295/harry-kane-hopes-bayern-munich-pass-tough-champions-league-test-madrid",
+          "title": "Kane says new Bayern deal 'extremely close,' will happen in coming days",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnZzcpr-b8Lwn_xX5nIZcxcFwKvlMpUDMo6Lwlbfzog4unNU7Z4NRpm38X3vM"
+        },
+        {
+          "url": "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/276026/harry-kane-proclaims-pride-at-being-a-bayern-munich-player",
+          "title": "Harry Kane proclaims pride at being a Bayern Munich player",
+          "publisher": "Bavarian Football Works",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXRr_2XXr75519mqobdf4J80t1KtARrsuuZn3lCT-wOP3TgbMl5wUJL0kI-EY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/alan-shearer-urges-harry-kane-114700098.html",
+          "title": "Alan Shearer urges Harry Kane to sign new Bayern Munich deal",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyq9BjDYFCqY32rEWxhc27WoXdjKIuF80c55AthV14ccEPTon6DTFi5XG8z3Q"
         }
       ]
     }
