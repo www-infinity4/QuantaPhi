@@ -1,5 +1,6 @@
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261031-heritage-signin1';
 import {attractionQuickCardRoute} from './attractions-card-routing.mjs';
+import {mountAttractionCards} from './attractions-quant-ai.mjs?v=20261102-ak-quantai1';
 /* One scalable attractions directory Quick Card; no thousands of DOM tiles. */
 const API='https://quantaphi-attractions-directory.marvaseater.workers.dev';
 const el=(tag,cls,value)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(value!==undefined)node.textContent=value;return node};
@@ -30,6 +31,8 @@ function mount(){
  card.append(header,note,form,status,body,nav,actions);bank.append(card);
  const stateCodes='CO AL AK AZ AR CA CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split(' ');
  for(const state of stateCodes){const o=el('option','',stateName(state));o.value=state;select.append(o);}
+ const requestedState=new URLSearchParams(location.search).get('state');
+ if(['CO','AK'].includes(requestedState))select.value=requestedState;
  let state='CO',page=0,items=[],index=0,more=false,busy=false,loaded=false;
  let applied={state:'CO',query:''};
  const record=()=>{
@@ -85,6 +88,9 @@ function mount(){
    if(!response.ok)throw Error('network');
    const data=await response.json();
    items=Array.isArray(data.items)?data.items:[];more=Boolean(data.has_more);
+   // One source-verified item becomes one actual Oracle Quick Card; bounded
+   // nationally to avoid creating thousands of DOM cards.
+   mountAttractionCards(bank,items,{interests:filters.query,limit:4});
    applied=filters;state=filters.state;page=p;index=selectLast?Math.max(0,items.length-1):0;
    status.textContent=items.length?items.length+' sourced attractions · '+stateName(state):'No verified entries yet in '+stateName(state)+'. Other states remain queued.';
    loaded=true;

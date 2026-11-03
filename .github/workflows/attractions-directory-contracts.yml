@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'attractions-directory.*'
+      - 'attractions-quant-ai.mjs'
+      - 'test/alaska-attractions-cards.test.mjs'
+      - 'test/alaska-attractions.browser.spec.mjs'
       - 'workers/attractions-directory.mjs'
       - 'data/attractions/**'
       - 'scripts/attractions-import.py'
@@ -45,6 +48,8 @@ jobs:
         run: |
           node --check workers/attractions-directory.mjs
           node --check attractions-directory.mjs
+          node --check attractions-quant-ai.mjs
+          node --test test/alaska-attractions-cards.test.mjs
           node --test test/attractions-directory.test.mjs
       - name: Overture places and four-region provenance tests
         run: |
@@ -57,4 +62,4 @@ jobs:
       - name: Verify Oracle source card and empty state at 393px
         run: |
           python -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-attractions-browser.log 2>&1 &
-          npx playwright test test/attractions-directory.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/attractions-directory.browser.spec.mjs test/alaska-attractions.browser.spec.mjs --reporter=line --workers=1
