@@ -1,0 +1,31 @@
+name: Coupon Quick Cards safety and wiring
+on:
+  pull_request:
+    paths:
+      - 'coupon-wallet-core.mjs'
+      - 'coupon-quick-cards.mjs'
+      - 'coupon-quick-cards.css'
+      - 'data/verified-coupon-offers.json'
+      - 'test/coupon-quick-cards.test.mjs'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - '.github/workflows/coupon-quick-cards.yml'
+  workflow_dispatch:
+jobs:
+  coupon-acceptance:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Coupon data and behavior contract
+        run: node --test test/coupon-quick-cards.test.mjs
+      - name: JavaScript syntax
+        run: |
+          node --check coupon-wallet-core.mjs
+          node --check coupon-quick-cards.mjs
+      - name: Validate empty-by-default reviewed feed
+        run: node --input-type=module -e "import fs from 'node:fs'; const d=JSON.parse(fs.readFileSync('data/verified-coupon-offers.json')); if(d.version!==1||!Array.isArray(d.offers)) process.exit(1)"
