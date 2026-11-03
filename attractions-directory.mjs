@@ -1,6 +1,6 @@
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261031-heritage-signin1';
 import {attractionQuickCardRoute} from './attractions-card-routing.mjs';
-import {mountAttractionCards} from './attractions-quant-ai.mjs';
+import {mountAttractionCards} from './attractions-quant-ai.mjs?v=20261102-ak-quantai1';
 /* One scalable attractions directory Quick Card; no thousands of DOM tiles. */
 const API='https://quantaphi-attractions-directory.marvaseater.workers.dev';
 const el=(tag,cls,value)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(value!==undefined)node.textContent=value;return node};
