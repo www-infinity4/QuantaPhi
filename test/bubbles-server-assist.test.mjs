@@ -138,7 +138,7 @@ test('signed chat distinguishes completed web search from incomplete answer',asy
  assert.equal(result.result.analysisVerified,false);
  assert.equal(result.result.sources.length,1);
  const context=await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:1000});
- assert.match(context,/tool complete, answer partial/);
+ assert.equal(context,'','a partial answer must not masquerade as verified prior work');
 });
 
 test('signed transport keeps real GitHub README source and read proof for graders',async()=>{
@@ -275,4 +275,16 @@ test('signed tool completion requires a real complete receipt; observed success 
  assert.equal(done.state,'complete');
  assert.equal(done.result.ok,true);
  assert.equal(done.result.outcome,'complete');
+});
+
+test('signed GPT bridge explicitly rejects a model failure even after a successful tool receipt',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'The source succeeded, but no reliable answer could be generated.',
+  answerStatus:'failed',receipt:{tool:'web.read_page',status:'complete',sourceReadVerified:true}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Explain the page'}});
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'complete');
+ assert.equal(r.result.ok,false);
+ assert.equal(r.result.outcome,'answer_failed');
+ assert.equal(r.result.receipt.status,'complete');
 });
