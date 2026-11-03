@@ -27,8 +27,17 @@
   <p class="eyebrow">THE FIRST ARENA · ZEUS 6.2</p>
   <h1 id="hero-title">Zeus AI</h1>
   <p class="hero-lead">A real conversation, powered by the existing Bubbles AI service.</p>
+  <form id="zeusQuestForm" class="zeus-quest-form" aria-label="Start a quest with Zeus AI">
+    <label for="zeusQuestInput">Ask Zeus anything</label>
+    <div class="zeus-quest-compose">
+      <textarea id="zeusQuestInput" rows="2" maxlength="1800" placeholder="Type your question or describe what you want to build…" autocomplete="off" required></textarea>
+      <button id="zeusQuestSend" type="submit">Send</button>
+    </div>
+    <p id="zeusQuestStatus" class="zeus-quest-status" role="status" aria-live="polite">Write a message and press Send to start your AI conversation.</p>
+  </form>
+
   <p>Ask questions and work on ideas in the chat. The separate Build tab keeps your private local project drafts. Replies depend on the connected Bubbles service; this page does not invent a Zeus model.</p>
-  <div class="hero-buttons"><a class="primary" href="#arena">Open Zeus chat</a><a class="secondary" href="/">Quick Cards</a></div>
+  <div class="hero-buttons"><a class="secondary" href="#arena">View conversation</a><a class="secondary" href="/">Quick Cards</a></div>
   <p class="disclosure">Zeus is an Infinity experience using Bubbles AI, not a separate trained model. Local project drafts stay on this device. No paid access or shared room is activated.</p>
  </div>
 </section>
@@ -50,7 +59,7 @@
    </section>
    <section id="chatPane" hidden aria-labelledby="chatHeading">
     <h4 id="chatHeading">Zeus AI · Live chat</h4><p class="fineprint">Uses the actual Bubbles conversation engine, including its connected AI reply service. This is not a newly trained model or a shared public room.</p>
-    <div class="zeus-assistant-mount" id="zeusAssistantMount"><p id="zeusAssistantStatus" role="status">Opening the Bubbles AI conversation…</p><iframe id="zeusAssistantFrame" title="Zeus AI · Bubbles conversation" allow="microphone" sandbox="allow-scripts allow-same-origin allow-forms allow-popups" referrerpolicy="same-origin"></iframe><p class="fineprint">If the assistant cannot load, <a href="/bubbles.html">open the full Bubbles chat</a>. Unavailable AI connections must report an error, never a fabricated answer.</p></div>
+    <div class="zeus-assistant-mount" id="zeusAssistantMount"><p id="zeusAssistantStatus" role="status">Connecting Zeus to Bubbles chat…</p><iframe id="zeusAssistantFrame" title="Zeus AI · Bubbles conversation" allow="microphone" sandbox="allow-scripts allow-same-origin allow-forms allow-popups" referrerpolicy="same-origin"></iframe><p class="fineprint">If the assistant cannot load, <a href="/bubbles.html">open the full Bubbles chat</a>. Unavailable AI connections must report an error, never a fabricated answer.</p></div>
     <details id="zeusLocalNotes"><summary>Local planning notes (offline)</summary><p class="fineprint">These older scratchpad notes are separate from AI messages and remain on this device.</p>
     <div id="chatLog" class="chat-log" aria-live="polite"></div>
     <form id="chatForm" class="pitch-form"><label for="chatMessage">Your note for this local group draft</label><textarea id="chatMessage" rows="3" maxlength="1000" required placeholder="What could the group improve or test next?"></textarea><button class="primary" type="submit">Save local note</button></form></details>
