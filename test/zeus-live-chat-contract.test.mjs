@@ -34,7 +34,7 @@ test('Zeus provides one visible quest composer that sends to the real embedded A
  assert.match(js,/zeusQuestForm/);
  assert.match(js,/quantaphi:bubbles:quest/);
  assert.match(js,/quantaphi:bubbles:quest-ack/);
- assert.match(js,/event\.origin===window\.location\.origin/);
+ assert.match(js,/event\.origin!==window\.location\.origin/);
  assert.match(js,/event\.source===.*contentWindow/);
  assert.match(js,/setMode\('chat'\)/);
 });
@@ -44,7 +44,7 @@ test('Bubbles accepts Zeus user text with the same sendMessage engine and no own
  assert.match(bubbles,/quantaphi:bubbles:quest-ack/);
  assert.match(bubbles,/event\.origin!==window\.location\.origin/);
  assert.match(bubbles,/event\.source!==window\.parent/);
- assert.match(bubbles,/bubbleId!=='coliseum-zeus-assistant'/);
+ assert.match(bubbles,/bubbleId==='coliseum-zeus-assistant'/);
  assert.match(bubbles,/sendMessage\(prompt\)/);
  assert.match(bubbles,/busy\|\|turnPending/);
  assert.doesNotMatch(bubbles,/sendNativeText\(prompt/);
