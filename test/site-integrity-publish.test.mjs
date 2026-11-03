@@ -20,3 +20,12 @@ test('blocks missing, running, and failed checks plus nonclean merge state',()=>
  assert.equal(eligibleRepair({...args,checks:[...checks,{name:'another',status:'completed',conclusion:'failure'}]}),'pending_or_failed_checks');
  assert.equal(eligibleRepair({...args,pr:{...pr,mergeable_state:'blocked'}}),'unmergeable_or_stale');
 });
+
+test('Platinum text-only repair has the same exact SHA and diff protection',()=>{
+ const baseSource='<section></section>\\n<section></section>';
+ const headSource='<section></section>\n<section></section>';
+ const files=[{filename:'platinum/index.html',status:'modified'}];
+ assert.equal(eligibleRepair({...args,files,baseSource,headSource}),null);
+ assert.equal(eligibleRepair({...args,files:[...files,{filename:'physics-card.js',status:'modified'}],baseSource,headSource}),'unsafe_changed_files');
+ assert.equal(eligibleRepair({...args,files:[{filename:'platinum/offline-sw.js',status:'modified'}],baseSource,headSource}),'unsafe_changed_files');
+});

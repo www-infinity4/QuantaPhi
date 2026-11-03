@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {freshFeatures,pickFreshSource,isVerifiedFullReport} from '../newsroom/fresh-reports.mjs';
+import {freshFeatures,pickFreshSource,isVerifiedFullReport,rankReaderSources,createReadFailureBackoff} from '../newsroom/fresh-reports.mjs';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const now=Date.parse('2026-11-02T20:00:00Z');
 const source={title:'New independent research results published this morning',extract:'Detailed explanatory source reporting with original findings and references.',url:'https://science.nasa.gov/missions/hubble/sample-new-research',publishedAt:'2026-11-02T16:00:00Z'};
@@ -61,4 +61,35 @@ test('expired live articles and pending reads cannot revive old content after er
  assert.match(code,/revision\+\+;\s*sources=\[\]/);
  assert.match(code,/setInterval\([^]*sourceList\(sources\)/);
  assert.match(code,/if\(turn!==revision\)return/);
+});
+
+test('full-story reader prioritizes current NASA primary sources without excluding credible global headlines',()=>{
+ const now=Date.parse('2026-11-03T18:20:00Z');
+ const extract='Verified fresh publisher reporting with sufficient detail for a source-grounded original explanation.';
+ const rows=[
+  {title:'A current BBC report with verified details',extract,url:'https://www.bbc.co.uk/news/new',publishedAt:'2026-11-03T18:10:00Z'},
+  {title:'NASA science publishes fresh study',extract,url:'https://science.nasa.gov/earth/research',publishedAt:'2026-11-03T18:00:00Z'},
+  {title:'An old NASA report on spacecraft',extract,url:'https://www.nasa.gov/news/old',publishedAt:'2026-10-30T12:00:00Z'},
+  {title:'DOE announces new research awards',extract,url:'https://www.energy.gov/articles/research',publishedAt:'2026-11-03T17:55:00Z'}
+ ];
+ assert.deepEqual(rankReaderSources(rows,now).map(x=>new URL(x.url).hostname),[
+  'science.nasa.gov','www.energy.gov','www.bbc.co.uk'
+ ]);
+});
+test('failed full-story reads back off briefly and retry after expiration rather than being cached forever',()=>{
+ const retry=createReadFailureBackoff(5*60*1000);
+ const now=Date.parse('2026-11-03T18:20:00Z');
+ assert.equal(retry.allowed('https://science.nasa.gov/new',now),true);
+ retry.mark('https://science.nasa.gov/new',now);
+ assert.equal(retry.allowed('https://science.nasa.gov/new',now+60000),false);
+ assert.equal(retry.allowed('https://science.nasa.gov/new',now+5*60000+1),true);
+ retry.clear('https://science.nasa.gov/new');
+ assert.equal(retry.allowed('https://science.nasa.gov/new',now+60000),true);
+});
+test('full current original is never replaced by a misleading loading status',()=>{
+ const js=read('newsroom/fresh-reports.mjs');
+ assert.match(js,/if\(!originalFallback\|\|!freshFeatures\(\{articles:\[originalFallback\]\}\)\.length\)/);
+ assert.match(js,/readBackoff\.mark\(url\)/);
+ assert.match(js,/readBackoff\.allowed\(url\)/);
+ assert.match(js,/readBackoff\.clear\(url\)/);
 });

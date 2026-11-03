@@ -37,6 +37,30 @@ export function isVerifiedFullReport(payload,url){
   paragraphs.every(x=>typeof x==='string'&&tidy(x,1800).length>=75)&&
   paragraphs.join(' ').length>=1500;
 }
+
+export function rankReaderSources(rows,now=Date.now()){
+ const seen=new Set();
+ const priority=row=>{
+  const host=new URL(row.url).hostname.toLowerCase();
+  if(host==='nasa.gov'||host.endsWith('.nasa.gov'))return 4;
+  if(host==='energy.gov'||host.endsWith('.energy.gov'))return 3;
+  if(host==='noaa.gov'||host.endsWith('.noaa.gov'))return 2;
+  return 0;
+ };
+ return (Array.isArray(rows)?rows:[]).filter(row=>{
+  if(!pickFreshSource([row],now))return false;
+  const url=https(row.url);if(!url||seen.has(url))return false;
+  seen.add(url);return true;
+ }).sort((a,b)=>priority(b)-priority(a)||Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,15);
+}
+export function createReadFailureBackoff(ttlMs=5*60*1000){
+ const retryAt=new Map();
+ return {
+  allowed(url,now=Date.now()){return (retryAt.get(url)||0)<=now;},
+  mark(url,now=Date.now()){retryAt.set(url,now+ttlMs);},
+  clear(url){retryAt.delete(url);}
+ };
+}
 if(typeof document!=='undefined'){
  const featured=document.getElementById('featured-articles');
  const status=document.getElementById('editorial-fresh-status');
@@ -45,8 +69,9 @@ if(typeof document!=='undefined'){
  const next=document.getElementById('full-next');
  const pause=document.getElementById('full-pause');
  const archive=document.getElementById('archive-articles');
- let sources=[],position=0,paused=false,rotation=null,revision=0,feedVersion=0;
+ let sources=[],position=0,paused=false,rotation=null,revision=0,feedVersion=0,originalLookup=0,originalFallback=null,fullFromLive=false;
  const articleCache=new Map();
+ const readBackoff=createReadFailureBackoff();
  function el(tag,text,cls){
   const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;
  }
@@ -55,6 +80,41 @@ if(typeof document!=='undefined'){
   a.href=href;
   if(href.startsWith('https://')){a.target='_blank';a.rel='noopener noreferrer';}
   return a;
+ }
+
+ // Read our own current complete article when a live publisher cannot supply enough reliable text.
+ // Never place stale originals in the live reader. Parse same-origin HTML as inert text, not injected markup.
+ function showOriginalFull(){
+  if(!originalFallback||!freshFeatures({articles:[originalFallback]}).length)return false;
+  const p=originalFallback.paragraphs;
+  if(!Array.isArray(p)||p.length<7)return false;
+  report.replaceChildren();
+  const h=el('h3');h.append(link(tidy(originalFallback.title,200),originalFallback.url));
+  report.append(h,el('p','Complete QuantaPhi original report · '+tidy(originalFallback.publishedAt,48),'meta'));
+  for(const paragraph of p)report.append(el('p',tidy(paragraph,1800)));
+  report.append(link('Read the independently accessible original article',originalFallback.url));
+  report.append(el('p','Primary source and publication date are documented on the original article page.','meta'));
+  reportStatus.textContent='Current complete original QuantaPhi report · '+tidy(originalFallback.publishedAt,48);
+  return true;
+ }
+ async function loadOriginalFallback(current){
+  const version=++originalLookup;
+  const item=Array.isArray(current)?current[0]:null;
+  if(!item){originalFallback=null;return;}
+  if(originalFallback?.url===item.url){if(!fullFromLive)showOriginalFull();return;}
+  try{
+   const response=await fetch('/newsroom/'+item.url,{cache:'no-store',signal:AbortSignal.timeout(12000)});
+   if(!response.ok)throw Error('missing_original');
+   const parsed=new DOMParser().parseFromString(await response.text(),'text/html');
+   const paragraphs=[...parsed.querySelectorAll('article.story > p')].map(n=>tidy(n.textContent,1800)).filter(x=>x.length>=90);
+   if(paragraphs.length<7)throw Error('thin_original');
+   if(version!==originalLookup)return;
+   originalFallback={...item,paragraphs};
+   if(!fullFromLive)showOriginalFull();
+  }catch{
+   if(version!==originalLookup)return;
+   originalFallback=null;
+  }
  }
  async function loadOriginal(){
   try{
@@ -66,10 +126,20 @@ if(typeof document!=='undefined'){
    for(const story of current.slice(0,8)){
     const item=el('article',undefined,'feature');
     item.append(el('p',tidy(story.category,80)+' · Published '+story.publishedAt,'eyebrow'));
+    // Only original licensed/credited first-party editorial imagery or NASA source assets.
+    const imgUrl=https(story.imageUrl);
+    if(imgUrl&&new URL(imgUrl).hostname==='assets.science.nasa.gov'&&tidy(story.imageAlt,180)){
+     const image=document.createElement('img');
+     image.src=imgUrl;image.alt=tidy(story.imageAlt,180);image.loading='eager';image.decoding='async';
+     image.width=1024;image.height=576;
+     image.style.cssText='display:block;width:100%;height:auto;max-height:320px;object-fit:cover;border-radius:12px;margin:12px 0';
+     item.append(image);
+    }
     const h=el('h3');h.append(link(tidy(story.title,200),story.url));
     item.append(h,el('p',tidy(story.description,550)),link('Read our complete original article',story.url));
     featured.append(item);
    }
+   void loadOriginalFallback(current);
    status.textContent=current.length?
     current.length+' newly published original QuantaPhi article'+(current.length===1?'':'s')+' · newest first':
     'No new original QuantaPhi article published within the current window. Older reports are in the archive.';
@@ -88,31 +158,26 @@ if(typeof document!=='undefined'){
   report.replaceChildren();
   reportStatus.textContent=message;
  };
- function sourceList(rows){
-  const seen=new Set(),now=Date.now();
-  return (Array.isArray(rows)?rows:[]).filter(item=>{
-   if(!pickFreshSource([item],now))return false;
-   const u=https(item.url);
-   if(!u||seen.has(u))return false;
-   seen.add(u);return true;
-  }).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)).slice(0,15);
- }
+ function sourceList(rows){return rankReaderSources(rows);}
  async function displayReport(){
   const turn=++revision;
   sources=sourceList(sources); // discard source as soon as it goes stale
   if(position>=sources.length)position=0;
-  if(!sources.length){reportUnavailable('No verified new full article is available from the Cloudflare news desk. We will not substitute old stories.');return;}
+  if(!sources.length){fullFromLive=false;if(!showOriginalFull())reportUnavailable('No verified new full article is available from the Cloudflare news desk. Older reports remain archived.');return;}
   const article=sources[position],url=https(article.url);
-  reportStatus.textContent='Reading a newly published original source…';
+  // Keep the complete published story visible while checking another publisher source.
+  if(!originalFallback||!freshFeatures({articles:[originalFallback]}).length)
+   reportStatus.textContent='Reading a newly published original source…';
   let payload=articleCache.get(url);
-  if(!payload){
+  if(!payload&&readBackoff.allowed(url)){
    try{
     const response=await fetch(READ_API,{method:'POST',cache:'no-store',headers:{'content-type':'application/json'},
      body:JSON.stringify({url}),signal:AbortSignal.timeout(28000)});
     if(!response.ok)throw Error('read_failed');
     payload=await response.json();
-    if(isVerifiedFullReport(payload,url))articleCache.set(url,payload);
-   }catch{payload=null;}
+    if(isVerifiedFullReport(payload,url)){articleCache.set(url,payload);readBackoff.clear(url);}
+    else readBackoff.mark(url);
+   }catch{payload=null;readBackoff.mark(url);}
   }
   if(turn!==revision)return;
   report.replaceChildren();
@@ -120,10 +185,13 @@ if(typeof document!=='undefined'){
   report.append(h,el('p',new Date(article.publishedAt).toLocaleString()+' · '+new URL(url).hostname,'meta'));
   const paragraphs=Array.isArray(payload?.paragraphs)?payload.paragraphs.filter(x=>tidy(x,1800).length>=75):[];
   if(isVerifiedFullReport(payload,url)){
+   fullFromLive=true;
    for(const paragraph of paragraphs.slice(0,12))report.append(el('p',tidy(paragraph,1800)));
    report.append(el('p','Fresh original-source explanation generated from publisher reporting; verify details with the linked primary source.','meta'));
    reportStatus.textContent='New source-backed long-form reader · original publisher linked';
   }else{
+   fullFromLive=false;
+   if(showOriginalFull())return;
    report.append(el('p','This newly published headline has not yet produced a verified full-length explanation. Open the original publisher report instead.'));
    reportStatus.textContent='Full report unavailable; no invented or stale article shown';
   }
@@ -142,7 +210,7 @@ if(typeof document!=='undefined'){
    sources=sourceList(payload.articles);
    position=Math.max(0,sources.findIndex(a=>a.url===old));
    await displayReport();
-  }catch{if(feedTurn!==feedVersion)return;revision++;sources=[];position=0;reportUnavailable('Current verified publisher reporting is unavailable. Old articles remain archived, not featured.');}
+  }catch{if(feedTurn!==feedVersion)return;revision++;sources=[];position=0;fullFromLive=false;if(!showOriginalFull())reportUnavailable('Current verified publisher reporting is unavailable. Old articles remain archived, not featured.');}
  }
  next?.addEventListener('click',step);
  pause?.addEventListener('click',()=>{
@@ -154,7 +222,7 @@ if(typeof document!=='undefined'){
  setInterval(loadOriginal,15*60*1000);
  setInterval(updateSources,15*60*1000);
  // Independently expire a displayed report while the tab is open; never rely on a successful network request.
- setInterval(()=>{const current=sources[position];sources=sourceList(sources);if(!sources.length){revision++;reportUnavailable('No new verified full report within the last 24 hours. Older articles are archived.');return;}if(!current||!sources.some(x=>x.url===current.url)){position=0;void displayReport();}},60*1000);
+ setInterval(()=>{if(originalFallback&&!freshFeatures({articles:[originalFallback]}).length){originalFallback=null;if(!fullFromLive)reportUnavailable('Newest original has moved to the archive; awaiting new verified reporting.');}const current=sources[position];sources=sourceList(sources);if(!sources.length){revision++;fullFromLive=false;if(!showOriginalFull())reportUnavailable('No new verified full report within the last 24 hours. Older articles are archived.');return;}if(!current||!sources.some(x=>x.url===current.url)){position=0;void displayReport();}},60*1000);
  rotation=setInterval(()=>{
   if(!document.hidden&&!paused&&sources.length>1&&!(typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches))step();
  },30000);

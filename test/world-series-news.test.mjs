@@ -38,21 +38,15 @@ test('show World Series publisher articles with feed-supplied photography, dates
  assert.match(styles,/min-height:44px/);
 });
 
-test('report cards are wired into both QuantaPhi and standalone trending explorer',()=>{
+test('archived World Series reporter is no longer loaded in cards or scheduled daily',()=>{
  for(const html of [home,detail]){
   assert.match(html,/id="googleTrendMlb"/);
-  assert.match(html,/world-series-news\.mjs\?v=20261024-rss1/);
-  assert.match(html,/world-series-news\.css\?v=20261024-rss1/);
+  assert.doesNotMatch(html,/world-series-news\.mjs|world-series-news\.css|World Series/);
  }
- assert.match(workflow,/scripts\/sync_world_series\.py/);
- assert.match(workflow,/test_world_series_sync\.py/);
- assert.match(workflow,/data\/world-series-latest\.json/);
- assert.match(workflow,/trends-rss-data/);
- assert.match(workflow,/\*\/30 \* \* \* \*/);
+ assert.doesNotMatch(workflow,/cron:/);
+ assert.match(workflow,/workflow_dispatch/);
  assert.match(code,/last checked /);
- assert.match(code,/OLDER VERIFIED FEED/);
 });
-
 test('Cardone existing source-backed property is collectable/shareable and retains Bubbles research specialist',()=>{
  const page=read('cardone-capital.html');
  assert.match(page,/id="cardoneQuickActions"/);

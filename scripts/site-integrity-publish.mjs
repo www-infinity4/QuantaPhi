@@ -3,7 +3,7 @@
  * Never merges arbitrary bot changes. All conditions fail closed.
  * Does NOT deploy or claim live verification.
  */
-import { repairHtml } from './site-integrity-guard.mjs';
+import { repairHtml, isRepairableFile } from './site-integrity-guard.mjs';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 const REPO='www-infinity4/QuantaPhi';
@@ -13,8 +13,8 @@ export function eligibleRepair({pr,files,baseSource,headSource,checks,mainSha}) 
  if(!pr||!BRANCH.test(pr.head?.ref||'')||pr.head?.repo?.full_name!==REPO||pr.base?.ref!=='main')return 'untrusted_branch';
  if(pr.base.sha!==mainSha||pr.state!=='open'||pr.draft||pr.mergeable!==true||pr.mergeable_state!=='clean')return 'unmergeable_or_stale';
  if(pr.user?.login!=='github-actions[bot]')return 'untrusted_author';
- if(!Array.isArray(files)||files.length!==1||files[0].filename!=='index.html'||files[0].status!=='modified')return 'unsafe_changed_files';
- const patch=repairHtml(baseSource,'index.html');
+ if(!Array.isArray(files)||files.length!==1||!isRepairableFile(files[0].filename)||files[0].status!=='modified')return 'unsafe_changed_files';
+ const patch=repairHtml(baseSource,files[0].filename);
  if(patch.fixes.length<1||patch.fixes.length>10||patch.source!==headSource)return 'unverified_source_delta';
  // The protected check that verifies the scanner itself must pass on this SHA.
  if(!Array.isArray(checks)||checks.length<1||!checks.some(c=>c.name==='site-integrity-source-and-browser'&&c.status==='completed'&&c.conclusion==='success'))return 'guard_ci_not_green';
@@ -37,10 +37,15 @@ async function main(){
   const pr=await api(API+'/pulls/'+item.number);
   const base=pr.base?.sha,head=pr.head?.sha;
   if(!/^[a-f0-9]{40}$/.test(head||'')||base!==mainSha){result.items.push({number:pr.number,status:'stale_or_invalid'});continue;}
-  const [files,baseBlob,headBlob,checkData]=await Promise.all([
-   api(API+'/pulls/'+pr.number+'/files?per_page=100'),
-   api(API+'/contents/index.html?ref='+base),
-   api(API+'/contents/index.html?ref='+head),
+  const files=await api(API+'/pulls/'+pr.number+'/files?per_page=100');
+  if(files.length!==1||!isRepairableFile(files[0].filename)||files[0].status!=='modified'){
+   result.items.push({number:pr.number,status:'blocked',reason:'unsafe_changed_files'});continue;
+  }
+  const filename=files[0].filename;
+  const safePath=filename.split('/').map(encodeURIComponent).join('/');
+  const [baseBlob,headBlob,checkData]=await Promise.all([
+   api(API+'/contents/'+safePath+'?ref='+base),
+   api(API+'/contents/'+safePath+'?ref='+head),
    api(API+'/commits/'+head+'/check-runs?per_page=100')
   ]);
   const decode=b=>b.encoding==='base64'?Buffer.from(b.content.replace(/\s/g,''),'base64').toString('utf8'):'';
@@ -48,7 +53,7 @@ async function main(){
   if(reason){result.items.push({number:pr.number,status:'blocked',reason});continue;}
   // Exact expected-head lease: no forced or unchecked merges.
   try{
-   const merged=await api(API+'/pulls/'+pr.number+'/merge',{method:'PUT',body:JSON.stringify({sha:head,merge_method:'squash',commit_title:'Fix verified literal homepage escape (#'+pr.number+')'})});
+   const merged=await api(API+'/pulls/'+pr.number+'/merge',{method:'PUT',body:JSON.stringify({sha:head,merge_method:'squash',commit_title:'Fix verified literal HTML escape in '+filename+' (#'+pr.number+')'})});
    result.items.push({number:pr.number,status:merged.merged===true?'source_merged_deployment_pending':'merge_unverified',mergeSha:merged.sha||null});
   }catch(error){result.items.push({number:pr.number,status:'merge_blocked',reason:String(error.message).slice(0,160)});}
  }

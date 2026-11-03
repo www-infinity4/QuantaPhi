@@ -158,7 +158,7 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{margin-top:6px}
   * Treat search as part of that first section, then settle on the deck. */
  body.oracle-quanta main.app>.qtop{scroll-snap-align:start;scroll-snap-stop:normal;scroll-margin-top:0}
  body.oracle-quanta #oracleCardDeck,
- body.oracle-quanta.oracle-shelf-open main.app> :is(section.card,#coliseumZeusCard,#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){
+ body.oracle-quanta.oracle-shelf-open main.app> :is(section.card,#coliseumZeusCard,#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#holidayPhi){
   scroll-snap-align:start;scroll-snap-stop:normal;scroll-margin-top:12px;
  }
 }

@@ -1,8 +1,18 @@
 {
   "schemaVersion": 1,
   "origin": "QuantaPhi editorial",
-  "updatedOn": "2026-11-02",
+  "updatedOn": "2026-11-03",
   "articles": [
+    {
+      "title": "NASA's Pacific storm images reveal two very different cyclone systems",
+      "url": "pacific-storms-2026.html",
+      "publishedAt": "2026-11-03",
+      "category": "Earth science · NASA",
+      "description": "NASA's newest Earth Observatory report compares unusually circular Typhoon In-fa with the changing structure of ex-typhoon Champi in Alaskan waters.",
+      "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/the-pacifics-busy-storm-season/",
+      "imageUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/the-pacific's-busy-storm-season/storminfa_epic_20261029_th.jpg?w=1024",
+      "imageAlt": "NASA EPIC satellite view of Pacific storm systems on October 29, 2026"
+    },
     {
       "title": "Why Hubble's missing oxygen matters to the history of small galaxies",
       "url": "hubble-missing-oxygen.html",
