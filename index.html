@@ -505,6 +505,50 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
 <section id="cannabisDirectoryCard" aria-label="21 plus national organic dispensary source directory Quick Card"></section>
 <div id="cannabisDirectoryCards" aria-label="Individual source-backed dispensary Quick Cards"></div>
 <section id="businessDirectoryCard" aria-label="National business directory Quick Card"></section>
+<section id="infinityWirelessCard" aria-label="Infinity Wireless · Bubbles network planning quick card">
+ <article class="iw-card" aria-labelledby="iw-card-title">
+  <style>
+   #infinityWirelessCard .iw-card{background:#f9fbfd;color:#233548;border:1px solid #c7d5df;border-radius:18px;padding:clamp(14px,4vw,23px);max-width:740px;margin:auto;font:400 17px/1.58 system-ui,-apple-system,sans-serif;letter-spacing:.012em}
+   #infinityWirelessCard .iw-cover{display:block;width:100%;height:auto;aspect-ratio:1200/520;object-fit:cover;border-radius:12px;background:#e1edf5}
+   #infinityWirelessCard h2{font-size:clamp(1.45rem,5vw,1.95rem);line-height:1.2;letter-spacing:.01em;color:#223d55;margin:13px 0}
+   #infinityWirelessCard p{margin:10px 0;color:#3d5368}
+   #infinityWirelessCard .iw-tag{font-size:.83rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#4d677e}
+   #infinityWirelessCard .iw-rows{display:grid;grid-template-columns:2fr 1fr;gap:10px}
+   #infinityWirelessCard label{display:block;font-weight:600;margin:12px 0 4px;color:#20374c}
+   #infinityWirelessCard input:not([type=checkbox]),#infinityWirelessCard select{font:inherit;display:block;width:100%;padding:11px 12px;border-radius:9px;border:1px solid #93aab9;background:#fff;color:#223548}
+   #infinityWirelessCard .iw-check{display:flex;align-items:flex-start;gap:9px;font-weight:450;line-height:1.45}
+   #infinityWirelessCard .iw-check input{margin-top:5px}
+   #infinityWirelessCard button{font:inherit;border-radius:9px;padding:12px 16px;cursor:pointer}
+   #infinityWirelessCard .iw-submit{width:100%;border:0;background:#185b94;color:#fff;font-weight:700}
+   #infinityWirelessCard .iw-secondary{border:1px solid #9db3c2;background:#fff;color:#205b87}
+   #infinityWirelessCard :is(button,input,select,a):focus-visible{outline:3px solid #e7a53c;outline-offset:3px}
+   #infinityWirelessCard #order-status[data-error=true]{color:#a12633}
+   #infinityWirelessCard #receipt:not([hidden]){padding:12px;border:1px solid #bfd3e2;border-radius:12px;background:#eef5fb}
+   #infinityWirelessCard .iw-fine{font-size:.85rem;color:#50677a}
+   @media(max-width:370px){#infinityWirelessCard .iw-rows{grid-template-columns:1fr}}
+  </style>
+  <img class="iw-cover" src="/wireless/switchboard.svg" alt="Illustrated Bubbles switchboard: request, coordination and authorized network review; conceptual, not live coverage" width="1200" height="520" decoding="async">
+  <p class="iw-tag">Infinity Wireless · Powered by Bubbles</p>
+  <h2 id="iw-card-title">The Air Is Our Network. Go Build It.</h2>
+  <p>Request an AI-supported wireless connection plan for your city. Bubbles records a traceable build request; authorized infrastructure review follows.</p>
+  <form id="order-form" aria-label="Issue an Infinity Wireless planning build order">
+   <div class="iw-rows">
+    <div><label for="iw-city">City, not street address</label><input id="iw-city" name="city" autocomplete="address-level2" required minlength="2" maxlength="60" placeholder="Example: Oskaloosa"></div>
+    <div><label for="iw-state">State</label><input id="iw-state" name="state" autocomplete="address-level1" required minlength="2" maxlength="2" pattern="[A-Za-z]{2}" placeholder="IA"></div>
+   </div>
+   <label for="iw-goal">Connection goal</label>
+   <select id="iw-goal" name="goal" required><option value="home">Home</option><option value="community">Community</option><option value="business">Business</option><option value="pilot">Engineering pilot</option></select>
+   <label for="iw-backhaul">Potential lawful Internet uplink</label>
+   <select id="iw-backhaul" name="backhaul" required><option value="unknown">Not identified</option><option value="fiber">Fiber</option><option value="fixed-wireless">Authorized fixed wireless</option><option value="carrier-partner">Carrier partnership</option></select>
+   <label class="iw-check" for="iw-planning"><input id="iw-planning" type="checkbox" name="acceptedPlanningOnly" required><span>This is a network-planning request, not live service or control of another provider's towers.</span></label>
+   <button id="build-order" class="iw-submit" type="submit">Issue Build Order</button>
+   <p id="order-status" role="status" aria-live="polite">Planning service not yet live. No request sent.</p>
+  </form>
+  <button id="refresh-order" class="iw-secondary" type="button" hidden>Check saved planning order</button>
+  <section id="receipt" aria-label="Verified planning receipt" aria-live="polite" hidden></section>
+  <p class="iw-fine">Coverage is not verified, and cellular service is not active. No street address, SIM credentials, or payment is requested. Planning requests expire after 30 days. <a href="/wireless/">More about Infinity Wireless</a> · <a href="/cellular/">Engineering checklist</a></p>
+ </article>
+</section>
 <section id="shopAdPhi" aria-label="Shop Phi and Ad Phi"></section>
 <section id="radioClubhouse" aria-label="Radio Clubhouse · new Antique Radio Forums discussions"></section>
 <section class="card" id="result" hidden><div id="field"></div><article id="overview"></article><button class="overviewShare" id="overviewShare" type="button">Share AI Overview +0.1 ★</button><div class="meter" id="meter"></div></section>
@@ -2025,6 +2069,7 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script type="module" src="/coliseum/zeus-quick-card.mjs?v=20261028-rc1"></script>
 <script type="module" src="/live-tv-cards.mjs?v=20261102-player1"></script>
 <script defer src="/steve-miller-book-of-dreams.js?v=20261102-album1"></script>
+<script type="module" src="/wireless/order.mjs?v=20261103-intake1"></script>
 <script defer src="/oracle-card-deck.js?v=20261101-showcase1"></script>
 <link rel="stylesheet" href="/restricted-ad-card.css?v=20261102-plan1">
 <script type="module" src="/restricted-ad-card.mjs?v=20261102-plan1"></script>

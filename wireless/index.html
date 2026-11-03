@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f8fa">
+<title>Infinity Wireless · Powered by Bubbles</title>
+<meta name="description" content="Issue a traceable Infinity Wireless network planning request through the Bubbles digital switchboard.">
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#172334;background:#f6f8fa}*{box-sizing:border-box}
+body{margin:0;min-height:100vh;padding:24px 16px}main{width:min(100%,690px);margin:auto}
+.back{display:inline-block;margin-bottom:18px;color:#40536a;text-decoration:none}
+article{background:#fff;border:1px solid #dce3e9;border-radius:22px;padding:clamp(20px,5vw,40px);box-shadow:0 10px 30px #1232}
+.eyebrow{font-size:.83rem;letter-spacing:.09em;text-transform:uppercase;color:#5a6e82}
+h1{font-size:clamp(2rem,7vw,3.4rem);line-height:1.08;margin:15px 0 8px}h2{font-size:1.28rem;color:#23558a}
+.lead{font-size:1.2rem;font-weight:650;line-height:1.45}p{line-height:1.6}
+.switch{display:flex;align-items:center;gap:6px;justify-content:space-between;margin:24px 0;padding:16px 8px;border:1px solid #dfe7ed;border-radius:14px;background:#f8fafc}
+.node{display:grid;place-items:center;min-height:56px;flex:1;text-align:center;font-size:.85rem;font-weight:650}
+.line{flex:.35;height:2px;background:#96b4d4}fieldset{border:0;padding:0;margin:24px 0 12px}
+legend{font-weight:750;font-size:1.15rem;margin-bottom:10px}label{display:block;font-weight:600;margin:14px 0 6px}
+input:not([type=checkbox]),select{display:block;width:100%;font:inherit;border:1px solid #a7b7c4;border-radius:10px;background:white;padding:13px;color:#172334}
+.columns{display:grid;grid-template-columns:2fr 1fr;gap:12px}.check{display:flex;gap:10px;align-items:flex-start;line-height:1.5;font-weight:450}
+.check input{margin-top:5px;flex-shrink:0}button{font:inherit;cursor:pointer}
+.cta{display:block;width:100%;background:#145ca8;color:white;border:0;border-radius:12px;padding:16px;font-weight:750}
+button:disabled{opacity:.6;cursor:wait}.secondary{background:#fff;color:#145ca8;border:1px solid #9db2c5;border-radius:10px;padding:11px;margin-top:10px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #ffae39;outline-offset:3px}
+.fine{font-size:.85rem;color:#536476}#order-status{padding:12px 0;min-height:32px}#order-status[data-error=true]{color:#a12d2d}
+#receipt{border:1px solid #cedfeb;background:#f8fbff;padding:18px;border-radius:12px;margin-top:16px}
+#receipt h3{margin:0}#receipt p{overflow-wrap:anywhere}
+@media(max-width:400px){.switch{padding:10px 4px}.node{font-size:.74rem}.columns{grid-template-columns:1fr}}
+</style>
+</head>
+<body><main>
+<a class="back" href="/">← QuantaPhi</a>
+<article aria-labelledby="title">
+<p class="eyebrow">Infinity Wireless · Powered by Bubbles</p>
+<h1 id="title">The Air Is Our Network. Go Build It.</h1>
+<h2>Wireless, coordinated intelligently.</h2>
+<p class="lead">You request the connection. Bubbles records the plan. We evaluate how to build toward coverage.</p>
+<p>Infinity Wireless is developing an AI-supported digital switchboard for planning authorized wireless connectivity. Start with your city. No exact address or phone number is needed.</p>
+<div class="switch" role="img" aria-label="Proposed network path: customer request, Bubbles switchboard planning, authorized infrastructure review">
+<span class="node">Your request</span><span class="line"></span><span class="node">Bubbles planning</span><span class="line"></span><span class="node">Infrastructure review</span>
+</div>
+<form id="order-form" aria-label="Wireless planning build order">
+<fieldset><legend>Request a wireless build plan</legend>
+<div class="columns">
+<div><label for="city">City only</label><input id="city" name="city" autocomplete="address-level2" maxlength="60" minlength="2" required placeholder="Example: Oskaloosa"></div>
+<div><label for="state">State (two letters)</label><input id="state" name="state" autocomplete="address-level1" maxlength="2" minlength="2" required placeholder="IA" autocapitalize="characters" pattern="[A-Za-z]{2}"></div>
+</div>
+<label for="goal">What should Bubbles evaluate?</label>
+<select id="goal" name="goal" required>
+<option value="home">Home connectivity</option><option value="community">Community coverage</option><option value="business">Business connection</option><option value="pilot">Engineering pilot</option>
+</select>
+<label for="backhaul">Possible authorized Internet uplink</label>
+<select id="backhaul" name="backhaul" required>
+<option value="unknown">Not identified yet</option><option value="fiber">Potential fiber provider</option>
+<option value="fixed-wireless">Potential authorized fixed wireless</option>
+<option value="carrier-partner">Potential carrier partnership</option>
+</select>
+<label class="check" for="planning-only"><input id="planning-only" name="acceptedPlanningOnly" type="checkbox" required>
+<span>I understand this creates a planning request only. It does not purchase service, activate Internet, or authorize use of another carrier's towers.</span></label>
+</fieldset>
+<button id="build-order" class="cta" type="submit">Issue Build Order</button>
+<p id="order-status" role="status" aria-live="polite">No request sent.</p>
+</form>
+<button id="refresh-order" class="secondary" type="button" hidden>Check my saved planning order</button>
+<section id="receipt" hidden aria-live="polite" aria-label="Verified planning receipt"></section>
+<p class="fine">The intake requires a connected Cloudflare database; if it is unavailable, the card will not invent a confirmation. The wireless service is not live. An order receipt is not proof of active coverage. Planning requests and status history expire after 30 days; salted daily rate-limit buckets expire after two days. Your secret tracking key stays in this browser, not in the database.</p>
+<p class="fine">For the equipment and spectrum readiness checklist, see <a href="/cellular/#pilot-form">Infinity Cellular engineering</a>.</p>
+<noscript><p class="fine">JavaScript is needed to submit a planning request. You can still use the engineering checklist linked above.</p></noscript>
+</article></main>
+<script type="module" src="/wireless/order.mjs"></script>
+</body></html>
