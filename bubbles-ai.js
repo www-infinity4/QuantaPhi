@@ -20,7 +20,7 @@ const humanReplies=()=>({
   if(result.status==='repository_already_exists')return 'This repository already exists: '+result.repository+'. '+(result.url||'')+' I can continue work there without creating a duplicate.';
   if(result.status==='credential_verified_read')return 'GitHub verified read access. File creation and deployment were not attempted.';
   if(result.status==='inspected')return 'I checked the source. No changes were made.';
-  if(result.status==='working'||result.status==='in_progress')return 'Started. I’m checking the saved result.';
+  if(result.status==='working'||result.status==='in_progress')return 'GitHub is processing your request. A final result has not been verified; Bubbles will report the saved execution receipt when it arrives.';
   if(result.status==='committed_unverified'){
    const pr=Array.isArray(result.receipts)?result.receipts.find(r=>r.status==='pull_request_open'&&r.url):null;
    const commit=Array.isArray(result.receipts)?result.receipts.find(r=>r.status==='committed_unverified'&&r.commitSha):null;
@@ -1037,7 +1037,7 @@ const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mi
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
 const send=create('button','ba-send','Send');send.type='submit';
 actions.append(photoRow,mic,speak,send);composer.append(input,photoPreview,actions);
-// Account connector pairing stays beside the message box in website and APK chat.
+// Optional account connector pairing stays in Notes and work, not the message composer.
 const connectorCodeButton=create('button','ba-control ba-connector-code','Create one-time connection code');
 connectorCodeButton.type='button';
 const connectorCodeStatus=create('p','ba-muted','');connectorCodeStatus.setAttribute('role','status');connectorCodeStatus.hidden=true;
@@ -1067,7 +1067,7 @@ connectorCodeButton.addEventListener('click',async()=>{
  }catch(error){connectorCodeStatus.textContent=module?module.connectionCodeMessage(error):'The connection controls could not load. Try again.';}
  finally{connectorCodeButton.disabled=false;}
 });
-if(!embedded)composer.prepend(connectorCodeButton,connectorCodeOutput,connectorCodeStatus);
+// Pairing controls mount in owner Options below; they do not obstruct Send.
 
 
 
@@ -1412,8 +1412,9 @@ if(nativeOverlay&&!embedded){
 // Moving the original controls preserves the existing verified handlers.
 if(!embedded){
  tools.append(create('h3','ba-section-heading','Connections & pairing'),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus);
+ tools.append(connectorCodeButton,connectorCodeOutput,connectorCodeStatus);
 }
-// One big, visible button above the chat transcript on Android and mobile web.
+// Actual five-day grant remains in owner Options, not above every chat message.
 // It calls the real owner-authenticated five-day grant, not a fake UI toggle.
 if(!embedded){
  const quick=create('section','ba-chatgpt-quick');
@@ -1430,7 +1431,7 @@ if(!embedded){
  });
  // Fix the original bug: the Cloud Browser belongs inside this scroll owner.
  chatScroll.prepend(browserHome);
- panel.insertBefore(quick,chatScroll);
+ tools.append(quick);
  const loadBrowser=async()=>{
   const module=await import('/bubbles-cloud-browser.mjs?v=20261026-ai-collab-browser1');
   return module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
@@ -1508,6 +1509,16 @@ body .ba-panel :is(button,summary),#bubblesAICard :is(button,summary){
  line-height:1.4!important;min-height:48px!important;text-shadow:none!important;
  white-space:normal!important;overflow-wrap:anywhere!important;letter-spacing:normal!important;
 }
+/* A compact disclosure replaces four oversized controls below every message. */
+body .ba-panel .ba-reply-actions{margin:1px 0 3px;max-width:100%}
+body .ba-panel .ba-reply-actions>summary{
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ min-height:30px!important;padding:3px 12px!important;border-radius:15px!important;
+ font-size:13px!important;font-weight:600!important;line-height:1.2!important;
+ color:#435564!important;-webkit-text-fill-color:#435564!important;
+ border:1px solid #c9d2d8!important;background:#f9fbfc!important;
+}
+body .ba-panel .ba-reply-actions>.ba-message-actions{margin-top:5px}
 body .ba-panel button:disabled,#bubblesAICard button:disabled{
  color:#65536f!important;-webkit-text-fill-color:#65536f!important;
  background:#f1eaf5!important;opacity:.58!important;cursor:not-allowed!important;
@@ -1797,7 +1808,11 @@ function display(text,who,greeting=false){
   if(nativeOverlay)row.append(say);
   else row.append(remember,task,say);
  }
- line.append(row);
+ const actionMenu=create('details','ba-reply-actions');
+ const actionSummary=create('summary','','Actions');
+ actionSummary.setAttribute('aria-label','Message actions');
+ actionMenu.append(actionSummary,row);
+ line.append(actionMenu);
  const wasNearBottom=chatScroll.scrollHeight-chatScroll.scrollTop-chatScroll.clientHeight<96;
  conversation.append(line);
  // New replies follow the bottom; reading older messages doesn't jump away.
@@ -3180,7 +3195,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(workEvidence){
   // The authenticated tool result is final; a second chat-only service cannot
   // contradict it or invent another submit step.
-  display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240);
+  display(workEvidence,'ai');status.textContent='';
   messages.push({role:'assistant',text:workEvidence});messages=messages.slice(-400);persistChat();
   try{
    if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=workEvidence;
@@ -3872,6 +3887,7 @@ function showOwnerApprovalRequests(tickets){
 let progressStorage;try{progressStorage=localStorage;}catch{}
 const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker({storage:progressStorage}):null;
 let progressPolling=false,progressUnavailable=false;
+let activeIterationTicketId=''; // Only jobs submitted in this chat can determine its Build state.
 async function pollBrainProgress(){
  if(embedded||!ownerReady||!progressTracker||progressPolling)return;
  progressPolling=true;
@@ -3880,9 +3896,11 @@ async function pollBrainProgress(){
   const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
-  // Authenticated Brain tickets are observed state; queued is never completed.
-  const iterationTicket=result.tickets.find(ticket=>ticket?.status==='working'&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))||
-   result.tickets.find(ticket=>['blocked','queued','ready','committed_unverified','merged_verified','deployed_verified'].includes(ticket?.status)&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''));
+  // Do not project a historical or unrelated blocked ticket onto this conversation.
+  // Only the exact authenticated ticket returned by this chat's submission can update Build.
+  const iterationTicket=activeIterationTicketId
+   ?result.tickets.find(ticket=>ticket?.id===activeIterationTicketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
+   :null;
   if(iterationTicket)if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
    type:'job',repository:iterationTicket.repository,status:iterationTicket.status,
    url:iterationTicket.progress?.url||''}}));
@@ -3991,6 +4009,9 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   const response=await bubblesFetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({start_immediately:true,source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,repository,context:{kind:'robot-directions',card_workspace:cardEvidence,image_observations:imagePacket,repositories:[repository],submission_id:submission,requested_role:config.role,approval,color_jobs:jobs,plan,repository_writes:'require-github-authorization'}})},30000);
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||'No confirmed request'));
+   activeIterationTicketId=result.ticket.id;
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+    type:'job',repository,status:result.ticket.status,url:result.ticket.progress?.url||''}}));
   if(String(workText.value||'').trim()===request)workText.value='';
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs:result.ticket.context?.color_jobs||jobs}}));
   const execution=result.execution||{};
