@@ -103,6 +103,8 @@ const routeFor = incoming => {
  if (path === '/story/' || path === '/story/index.html') return { repo: 'QuantaPhi', sourcePath: '/story/index.html', publicPath: '/story/' };
  if (path === '/platinum') return { redirect: '/platinum/' + incoming.search };
  if (path === '/platinum/' || path === '/platinum/index.html') return { repo: 'QuantaPhi', sourcePath: '/platinum/index.html', publicPath: '/platinum/' };
+ if (path === '/wireless') return { redirect: '/wireless/' + incoming.search };
+ if (path === '/wireless/' || path === '/wireless/index.html') return { repo: 'QuantaPhi', sourcePath: '/wireless/index.html', publicPath: '/wireless/' };
  if (path === '/cellular') return { redirect: '/cellular/' + incoming.search };
  if (path === '/cellular/' || path === '/cellular/index.html') return { repo: 'QuantaPhi', sourcePath: '/cellular/index.html', publicPath: '/cellular/' };
  if (path === '/phone') return { redirect: '/phone/' + incoming.search };
