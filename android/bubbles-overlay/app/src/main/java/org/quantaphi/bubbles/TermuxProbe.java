@@ -96,8 +96,9 @@ final class TermuxProbe {
         // A second check must not erase the first command's pending receipt
         // even if Termux is temporarily unavailable or its permission was revoked.
         JSONObject current = receipt(context);
-        if ("queued".equals(current.optString("state")))
-            return "A Termux check was already sent. Waiting for Termux's real result.";
+        if ("queued".equals(current.optString("state")) ||
+            "timed_out_unverified".equals(current.optString("state")))
+            return "The previous Termux check has no verified callback yet. Its receipt is preserved; no second command was sent.";
         if (!installed(context)) {
             record(context, "not_installed", "Termux is not visible or installed on this phone.", 0, kind);
             return "Termux isn't installed or launchable. No test ran.";
