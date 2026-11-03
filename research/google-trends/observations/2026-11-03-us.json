@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T04:01:43.000220Z",
+  "checked_at": "2026-11-03T04:31:37.210369Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "colston loveland",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T03:40:00Z",
+      "query": "nfc north standings",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T04:10:00Z",
       "related_news_urls": [
-        "https://chicago.suntimes.com/bears/2026/10/31/bears-report-te-colston-loveland-good-to-go-vs-seahawks-despite-neck-injury",
-        "https://athlonsports.com/nfl/chicago-bears/bears-week-8-fantasy-start-sit-seahawks-luther-burden-colston-loveland",
-        "https://www.thefantasyfootballers.com/news/645225/colston-loveland-cleared-for-monday-night-football/"
+        "https://bearswire.usatoday.com/story/sports/nfl/bears/2026/11/02/bears-nfc-north-recap-lions-vikings-packers-week-8/92553432007/",
+        "https://sports.yahoo.com/articles/minnesota-vikings-suddenly-within-reach-164539368.html",
+        "https://www.nytimes.com/athletic/live-blogs/nfl-live-updates-news-week-8-results/VQBe42PnrZeo/kcAaXELaUTxr/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRALaxHHMuqUMidRNRoZiXEQc7ctBcDX3cKa7oKpzxNrmXJpFMlnGOh6ZPrVcM",
-      "image_credit": "Chicago Sun-Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIdtwzLcRrlPqzaf32QLlHJOScPJGQSG5RqQDzgTuZ9npbC0N5lOwsmTJwv9Y",
+      "image_credit": "Bears Wire",
       "news": [
         {
-          "url": "https://chicago.suntimes.com/bears/2026/10/31/bears-report-te-colston-loveland-good-to-go-vs-seahawks-despite-neck-injury",
-          "title": "Bears report: TE Colston Loveland good to go vs. Seahawks despite neck injury",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRALaxHHMuqUMidRNRoZiXEQc7ctBcDX3cKa7oKpzxNrmXJpFMlnGOh6ZPrVcM"
-        },
-        {
-          "url": "https://athlonsports.com/nfl/chicago-bears/bears-week-8-fantasy-start-sit-seahawks-luther-burden-colston-loveland",
-          "title": "Bears Week 8 Fantasy Start/Sit: Why Colston Loveland Should Sit Against the Seahawks",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREjhjq9gu8lsftlVOzTW300QgKVssSWPkLyM0Rn_bJX8FX4QrQKpZAzOkR33c"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/645225/colston-loveland-cleared-for-monday-night-football/",
-          "title": "Colston Loveland Cleared for Monday Night Football",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRtaRA8qQhnqse03dpPnAfPt5vz9zUkpgrqRDbhcUR2sOl8E64F7LvpqETj4Y"
-        }
-      ]
-    },
-    {
-      "query": "bears schedule 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T03:40:00Z",
-      "related_news_urls": [
-        "https://www.windycitygridiron.com/chicago-bears-rumors/126691/nfl-trade-deadline-rumors-bears-want-pass-rush-and-secondary-help-khalil-mack-chargers-49ers",
-        "https://bearswire.usatoday.com/story/sports/nfl/bears/2026/11/02/bears-trade-rumors-edge-rusher-secondary-help/92570823007/",
-        "https://sports.yahoo.com/articles/bears-reportedly-market-secondary-help-212814374.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpbCE09csX-V_yfVzZOOsRRTy2w-bkIZvDGLuEXMZPbsWt2hoJmoKAEflwun4",
-      "image_credit": "Windy City Gridiron",
-      "news": [
-        {
-          "url": "https://www.windycitygridiron.com/chicago-bears-rumors/126691/nfl-trade-deadline-rumors-bears-want-pass-rush-and-secondary-help-khalil-mack-chargers-49ers",
-          "title": "NFL Trade Deadline Rumors: Bears want pass rush and secondary help",
-          "publisher": "Windy City Gridiron",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpbCE09csX-V_yfVzZOOsRRTy2w-bkIZvDGLuEXMZPbsWt2hoJmoKAEflwun4"
-        },
-        {
-          "url": "https://bearswire.usatoday.com/story/sports/nfl/bears/2026/11/02/bears-trade-rumors-edge-rusher-secondary-help/92570823007/",
-          "title": "Bears are targeting these positions ahead of NFL trade deadline",
+          "url": "https://bearswire.usatoday.com/story/sports/nfl/bears/2026/11/02/bears-nfc-north-recap-lions-vikings-packers-week-8/92553432007/",
+          "title": "How the NFC North fared while Bears wait for Monday Night Football",
           "publisher": "Bears Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ97j7NJIoitIZNxuduDIG6CmeNgF8AkqM7-g_Yf2Q4Qm2D5-PQvNRjHfgqKdM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIdtwzLcRrlPqzaf32QLlHJOScPJGQSG5RqQDzgTuZ9npbC0N5lOwsmTJwv9Y"
         },
         {
-          "url": "https://sports.yahoo.com/articles/bears-reportedly-market-secondary-help-212814374.html",
-          "title": "Bears Reportedly in the Market for Secondary Help as Trade Deadline Approaches",
+          "url": "https://sports.yahoo.com/articles/minnesota-vikings-suddenly-within-reach-164539368.html",
+          "title": "The Minnesota Vikings are suddenly within reach for the Chicago Bears",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSoQe0R1I6P51Y8R-8Qw14bb8l0NxFAlHnaZV1V6vIAsddr_4HeYOe28ToTj4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfpkQBSamP-YOEwhAxxzdeHfqJ9sYtQr7nxR_HRxyxoC6WGeRJLio_aCXBYgQ"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/nfl-live-updates-news-week-8-results/VQBe42PnrZeo/kcAaXELaUTxr/",
+          "title": "NFC North standings",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7BcXmbEkZ5Gga6VQITu1MxfhFqDcLL20GM_kKgJ5KMDESRQKWOv84U6tLAw8"
         }
       ]
     },
     {
-      "query": "dustin hoffman",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T03:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/03/dustin-hoffman-memoir-look-at-me-the-graduate-mike-nichols",
-        "https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate",
-        "https://www.yahoo.com/entertainment/movies/articles/dustin-hoffman-says-graduate-director-234445146.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsf3ZQgUeRXXCPwFaV5WS0VrI5JDT8Jg8udcfHxgauiKKNWLl-WqKiGcH_Zxg",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/03/dustin-hoffman-memoir-look-at-me-the-graduate-mike-nichols",
-          "title": "Dustin Hoffman says filming The Graduate was ‘a terrible experience’ due to Mike Nichols’ ‘sadism’",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsf3ZQgUeRXXCPwFaV5WS0VrI5JDT8Jg8udcfHxgauiKKNWLl-WqKiGcH_Zxg"
-        },
-        {
-          "url": "https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate",
-          "title": "Dustin Hoffman on Surviving “The Graduate”",
-          "publisher": "The New Yorker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXSxC0o_qh8bGWu9_3T5I4YiEBiXl4g0y9oUs9rHyOHu9kUhtXp50nu4zUqF4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/dustin-hoffman-says-graduate-director-234445146.html",
-          "title": "Dustin Hoffman says “The Graduate” director Mike Nichols made Katharine Ross slap him 27 times: ‘A certain sadism seemed to creep in’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmei0248sroVIuk0jCJ8GsBQHDNhsklFDfxH-0wsW4EOJFGjjKRJ-Q2S1X6_s"
-        }
-      ]
-    },
-    {
-      "query": "colgate vs washington",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T03:40:00Z",
-      "related_news_urls": [
-        "https://www.seattletimes.com/sports/uw-husky-basketball/washington-huskies-men-have-low-expectations-for-2026-27-5-things/",
-        "https://sports.mynorthwest.com/ncaa/uw/uw-huskies-mens-basketball-preview-2026-27",
-        "https://www.bleachernation.com/how-to-watch/2026/11/02/washington-vs-colgate-free-live-stream-tv-channel-how-to-watch/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqeH6a6MRiOEsubxHccgms7heyfSbVQbrLA2_ZhBMp2Nzv1pu6hRwn9-f-CDw",
-      "image_credit": "The Seattle Times",
-      "news": [
-        {
-          "url": "https://www.seattletimes.com/sports/uw-husky-basketball/washington-huskies-men-have-low-expectations-for-2026-27-5-things/",
-          "title": "Brace yourself, it might be a long winter for UW men's basketball",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqeH6a6MRiOEsubxHccgms7heyfSbVQbrLA2_ZhBMp2Nzv1pu6hRwn9-f-CDw"
-        },
-        {
-          "url": "https://sports.mynorthwest.com/ncaa/uw/uw-huskies-mens-basketball-preview-2026-27",
-          "title": "UW Huskies men’s basketball preview for the 2026-27 season",
-          "publisher": "Seattle Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY05I9HivEze5ryg94GDMa3jvsBtU4qmbiKMiE9wNlbK7l77wR3pcEYQLG1jo"
-        },
-        {
-          "url": "https://www.bleachernation.com/how-to-watch/2026/11/02/washington-vs-colgate-free-live-stream-tv-channel-how-to-watch/",
-          "title": "Washington vs. Colgate: Free Live Stream, TV Channel, How to Watch",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQx6U37IjU_XTPwxXTIG3YnGoPSg-diXgSGZFOUnsXY1PIMkKjyn6ZPSuuSY5s"
-        }
-      ]
-    },
-    {
-      "query": "ian birk vs sean o'donnell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T03:40:00Z",
-      "related_news_urls": [
-        "https://komonews.com/news/politics/what-some-say-is-at-stake-in-washington-supreme-court-races-this-year-autonomy-gender-reproductive-lgbtq-rights-voting-ballot-federal-nonpartisan",
-        "https://www.king5.com/article/news/politics/state-politics/record-53-million-flows-historic-washington-supreme-court-election/281-8ce540b0-de66-4fae-93cf-4b1b53c1c668",
-        "https://www.seattletimes.com/seattle-news/in-wa-supreme-court-race-debate-focuses-on-political-influence/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqu7StXPlv1Za6uw0NB8cJmfxDf9DjYhrphdGZjeHr07oUkCKoiX5V14_K6hk",
-      "image_credit": "KOMO",
-      "news": [
-        {
-          "url": "https://komonews.com/news/politics/what-some-say-is-at-stake-in-washington-supreme-court-races-this-year-autonomy-gender-reproductive-lgbtq-rights-voting-ballot-federal-nonpartisan",
-          "title": "What some say is at stake in Washington Supreme Court races this year",
-          "publisher": "KOMO",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqu7StXPlv1Za6uw0NB8cJmfxDf9DjYhrphdGZjeHr07oUkCKoiX5V14_K6hk"
-        },
-        {
-          "url": "https://www.king5.com/article/news/politics/state-politics/record-53-million-flows-historic-washington-supreme-court-election/281-8ce540b0-de66-4fae-93cf-4b1b53c1c668",
-          "title": "Record $5.3 million flows into historic Washington Supreme Court election",
-          "publisher": "KING5.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjvwfJkpcB0NxH_mq6YoijY-kZwSVe2JwAgc1qjbu9BPxzShu5RYGT71hX6qs"
-        },
-        {
-          "url": "https://www.seattletimes.com/seattle-news/in-wa-supreme-court-race-debate-focuses-on-political-influence/",
-          "title": "In expensive WA Supreme Court race, debate focuses on political influence",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwB_tLUr-7_2k1bIhMFLjyIYrip6fT-WsyUs0gFPLIEkiVWjikFTBf6uvIlk"
-        }
-      ]
-    },
-    {
-      "query": "ethan klein hila klein",
+      "query": "charles bassey",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T03:30:00Z",
+      "published_at": "2026-11-03T04:10:00Z",
       "related_news_urls": [
-        "https://pagesix.com/2026/11/02/celebrity-news/h3-podcaster-hila-klein-divorcing-husband-ethan-in-wake-of-bombshell-cheating-scandal/",
-        "https://www.imdb.com/news/ni66078558/",
-        "https://www.fashiontimes.co.uk/mia-khalifa-post-hila-klein-ethan-klein-speculation-1766563"
+        "https://sports.yahoo.com/articles/warriors-announce-6th-different-starting-011139603.html",
+        "https://www.rotowire.com/basketball/headlines/charles-bassey-news-sliding-back-to-bench-monday-537298",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-01/gsw-starts-melton-podz-niang-yaxel-bassey"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0VqtpSEd-3IgxZcnko0OmPNiWGMhEHIjICBQHjgI0R5WMUinPaKRF4lxtmEI",
-      "image_credit": "Page Six",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTww4PjfMbhx6TGnNXPgb33HPdxChNemki_sS869x8HL4HXCA0uf_vMMdnTQmg",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://pagesix.com/2026/11/02/celebrity-news/h3-podcaster-hila-klein-divorcing-husband-ethan-in-wake-of-bombshell-cheating-scandal/",
-          "title": "H3 Podcaster Hila Klein divorcing husband Ethan in wake of bombshell cheating scandal",
-          "publisher": "Page Six",
+          "url": "https://sports.yahoo.com/articles/warriors-announce-6th-different-starting-011139603.html",
+          "title": "Warriors Announce 6th Different Starting Lineup of Regular Season vs. Clippers",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0VqtpSEd-3IgxZcnko0OmPNiWGMhEHIjICBQHjgI0R5WMUinPaKRF4lxtmEI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTww4PjfMbhx6TGnNXPgb33HPdxChNemki_sS869x8HL4HXCA0uf_vMMdnTQmg"
         },
         {
-          "url": "https://www.imdb.com/news/ni66078558/",
-          "title": "What’s Happening With the ‘H3’ Podcast? Hila & Ethan Klein’s Separation, Crew Response & Ethan’s Latest Move",
-          "publisher": "IMDb",
+          "url": "https://www.rotowire.com/basketball/headlines/charles-bassey-news-sliding-back-to-bench-monday-537298",
+          "title": "Charles Bassey News: Sliding back to bench Monday",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrlyWPCLI1EOX9bvnOOEfGEHOmAJ5k_uxiXJ7qlQKUgF-F7VLWDzZa4vlWVJg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1btgn53ELFEGxXLcinvjy8LqmkG87qH-eqit3yRaunCiN3otnemC3Og-cvAo"
         },
         {
-          "url": "https://www.fashiontimes.co.uk/mia-khalifa-post-hila-klein-ethan-klein-speculation-1766563",
-          "title": "'Get That IDF Cuck Wife Off My Timeline': Mia Khalifa Sparks Speculation About Hila Klein Amid Marriage Drama",
-          "publisher": "Fashion Times UK",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-01/gsw-starts-melton-podz-niang-yaxel-bassey",
+          "title": "GSW starts Melton, Podz, Niang, Yaxel, Bassey",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQqTx3U4ov75pC7v6vc7Q6P8JVLe0KezKLVGdiptEehX__yoWCgaL9rzGz3r0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc4nN4xg5xUOoZWVAZG71YQmT7UBIKHwBdNjGswK7bjSShwwnacaAowX8_bJA"
         }
       ]
     },
     {
-      "query": "tulane basketball",
+      "query": "bears standings",
       "approx_searches": "200+",
-      "published_at": "2026-11-03T03:30:00Z",
+      "published_at": "2026-11-03T04:10:00Z",
       "related_news_urls": [
-        "https://www.theadvocate.com/no-tulanebasketball-110326-262-jpg/image_41513bf8-2b32-5b8f-b597-71a6e2e663c8.html",
-        "https://www.nola.com/multimedia/photos/see-photos-tulane-men-tip-off-new-season-against-ut-martin/collection_886c553a-3f7a-44b4-9162-79d09f9654b4.html",
-        "https://tulanegreenwave.com/news/2026/11/1/mens-basketball-tulane-hosts-ut-martin-for-season-opener-monday-night"
+        "https://www.espn.com/nfl/story/_/id/50343312/source-caleb-williams-spat-cleats-principle",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-nfl-caleb-williams-shoe-dispute-takes-center-stage-on-monday-night",
+        "https://www.usatoday.com/story/sports/nfl/bears/2026/11/02/caleb-williams-caddix-cleats-fine-joe-flacco-bears/92555827007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMh5RPjLghE3ExFgqxECsr-5CPZjig2WZ4MyJ1cLLZOKrAXvoVKMD4UWKk9oQ",
-      "image_credit": "The Advocate",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIxHCD_puujVMSoLG9U3G4RsfXZTcg6ZlL7_gmfuCoTHlNVsXmMhmyh1zVv6c",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.theadvocate.com/no-tulanebasketball-110326-262-jpg/image_41513bf8-2b32-5b8f-b597-71a6e2e663c8.html",
-          "title": "no.tulanebasketball.110326.262.jpg",
-          "publisher": "The Advocate",
+          "url": "https://www.espn.com/nfl/story/_/id/50343312/source-caleb-williams-spat-cleats-principle",
+          "title": "Bears QB Caleb Williams won't 'spat' custom cleats out of principle, source says",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMh5RPjLghE3ExFgqxECsr-5CPZjig2WZ4MyJ1cLLZOKrAXvoVKMD4UWKk9oQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIxHCD_puujVMSoLG9U3G4RsfXZTcg6ZlL7_gmfuCoTHlNVsXmMhmyh1zVv6c"
         },
         {
-          "url": "https://www.nola.com/multimedia/photos/see-photos-tulane-men-tip-off-new-season-against-ut-martin/collection_886c553a-3f7a-44b4-9162-79d09f9654b4.html",
-          "title": "See photos: Tulane men tip off new season against UT Martin",
-          "publisher": "NOLA.com",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-nfl-caleb-williams-shoe-dispute-takes-center-stage-on-monday-night",
+          "title": "The NFL, Caleb Williams shoe dispute takes center stage on Monday night",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgXcxjEvQJ2wEb5KpLy1dEyiqxKdD76NqH0VL30NMviMnNm_t45GANwbV0AfY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-B0gbLbQCnBYbvURbwyesz4GCtTNzyTa-VX0FCdUh1Pde9xVEQoQQ76HhAAw"
         },
         {
-          "url": "https://tulanegreenwave.com/news/2026/11/1/mens-basketball-tulane-hosts-ut-martin-for-season-opener-monday-night",
-          "title": "Tulane Hosts UT Martin for Season-Opener Monday Night",
-          "publisher": "Tulane University Athletics",
+          "url": "https://www.usatoday.com/story/sports/nfl/bears/2026/11/02/caleb-williams-caddix-cleats-fine-joe-flacco-bears/92555827007/",
+          "title": "Caleb Williams won't stop wearing Caddix cleats. Why Bears QB continues to be fined",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT35t004W83w12LqJu_50HWcCZotddGYhunSY71XeP5Tp-FekrI_VXYi3AXzGc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1kenTrgHMYC_MKaSemavXKALtxiFY9owa5ExPjjfaktnBGgIXP4UEZu_bSgE"
         }
       ]
     },
     {
-      "query": "steve buscemi",
+      "query": "nikola kusturica",
       "approx_searches": "200+",
-      "published_at": "2026-11-03T03:30:00Z",
+      "published_at": "2026-11-03T04:10:00Z",
       "related_news_urls": [
-        "https://www.ft.com/content/2440cf90-5dea-426c-b115-7f912ce21c37",
-        "https://people.com/steve-buscemi-into-the-unknown-documentary-first-responders-trailer-exclusive-12207624",
-        "https://keyt.com/news/santa-barbara-s-county/2026/10/30/special-film-screening-takes-you-behind-the-scenes-with-paramedics/"
+        "https://247sports.com/college/basketball/article/the-breakfast-buffet-notre-dame-florida-miami-nikola-kusturica-292064444/",
+        "https://247sports.com/college/memphis/article/the-breakfast-buffet-notre-dame-florida-miami-nikola-kusturica-292064444/",
+        "https://247sports.com/college/clemson/article/the-breakfast-buffet-notre-dame-florida-miami-nikola-kusturica-292064444/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovhU4t_w-lZVlmv1fJK30byF4KNfldUMuOvLKtKf1lGGGxPqpQEBs2NKwg9o",
-      "image_credit": "Financial Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-FeagdzkM_8zWvxCiMZuA4gQWGhNk2sB_hg3UQDzz2rLplnYSYWsiVu46qXQ",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.ft.com/content/2440cf90-5dea-426c-b115-7f912ce21c37",
-          "title": "Steve Buscemi on being the bad guy: ‘You have to care about these characters’",
-          "publisher": "Financial Times",
+          "url": "https://247sports.com/college/basketball/article/the-breakfast-buffet-notre-dame-florida-miami-nikola-kusturica-292064444/",
+          "title": "The Breakfast Buffet: Notre Dame, Florida/Miami, Nikola Kusturica",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovhU4t_w-lZVlmv1fJK30byF4KNfldUMuOvLKtKf1lGGGxPqpQEBs2NKwg9o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-FeagdzkM_8zWvxCiMZuA4gQWGhNk2sB_hg3UQDzz2rLplnYSYWsiVu46qXQ"
         },
         {
-          "url": "https://people.com/steve-buscemi-into-the-unknown-documentary-first-responders-trailer-exclusive-12207624",
-          "title": "Steve Buscemi-Produced Documentary Gives ‘Unprecedented Access’ to Paramedics’ Lives: See the Trailer (Exclusive)",
+          "url": "https://247sports.com/college/memphis/article/the-breakfast-buffet-notre-dame-florida-miami-nikola-kusturica-292064444/",
+          "title": "The Breakfast Buffet: Notre Dame, Florida/Miami, Nikola Kusturica",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC0oQTaRhixg4G93eyxPPzwMngpvawkTDyfkPsmJm5h1auJnOErHFcA8mCtyk"
+        },
+        {
+          "url": "https://247sports.com/college/clemson/article/the-breakfast-buffet-notre-dame-florida-miami-nikola-kusturica-292064444/",
+          "title": "The Breakfast Buffet: Notre Dame, Florida/Miami, Nikola Kusturica",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC0oQTaRhixg4G93eyxPPzwMngpvawkTDyfkPsmJm5h1auJnOErHFcA8mCtyk"
+        }
+      ]
+    },
+    {
+      "query": "nfc north",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T04:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50349483/week-8-barnwell-lamar-bengals-cowboys-buccaneers-chiefs",
+        "https://sports.yahoo.com/videos/week-8-reaction-broncos-soaring-013232411.html",
+        "https://www.nfl.com/news/2026-nfl-season-week-8-what-we-learned-from-sunday-s-games"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSF1_0j4sVnKdd5WpZxej_oUnXkldRvuVW9kW3_-sgVS_eEoXKO2-SGpTnxk5Y",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50349483/week-8-barnwell-lamar-bengals-cowboys-buccaneers-chiefs",
+          "title": "Sizing up wild NFL Week 8: Lamar Jackson's injury, Bucs' win, Cowboys' collapse",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSF1_0j4sVnKdd5WpZxej_oUnXkldRvuVW9kW3_-sgVS_eEoXKO2-SGpTnxk5Y"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/week-8-reaction-broncos-soaring-013232411.html",
+          "title": "Week 8 reaction: Broncos soaring, Cowboys slumping",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsX5NGWJZv4eDVjhYzUAfvjDMhDhEBs71V3ZoMwWIyCZlbWUIo0q2ftw3XxWM"
+        },
+        {
+          "url": "https://www.nfl.com/news/2026-nfl-season-week-8-what-we-learned-from-sunday-s-games",
+          "title": "2026 NFL season, Week 8: What We Learned from Sunday's games",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3f7v6Ag0HGhBP3vVSHUCoemTtTpbaj8dhbr1OLNSa_UycLpFCYpP8S-RLhuA"
+        }
+      ]
+    },
+    {
+      "query": "erin andrews",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T04:00:00Z",
+      "related_news_urls": [
+        "https://people.com/erin-andrews-laments-her-inappropriate-appearance-during-packers-lions-game-12198368",
+        "https://littlethings.com/entertainment/erin-andrews-embarrassing-halftime-report-tom-brady-reaction",
+        "https://www.irishstar.com/sport/nfl/erin-andrews-admits-im-struggling-37821204"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0F-4Zm4BhIxwT8MY4CPxX1_D0A0jAtA7Kom_KQQAQS7KqP-hUIEl2AHarO3Y",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/erin-andrews-laments-her-inappropriate-appearance-during-packers-lions-game-12198368",
+          "title": "Erin Andrews Laments Her ‘Inappropriate’ Appearance During Packers-Lions Game",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYPOe9tMn4dHuxLhMCXTWcCvePSUDjQMCPp9uwnZvjZjSnStv0RxUrbHHY5BM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0F-4Zm4BhIxwT8MY4CPxX1_D0A0jAtA7Kom_KQQAQS7KqP-hUIEl2AHarO3Y"
         },
         {
-          "url": "https://keyt.com/news/santa-barbara-s-county/2026/10/30/special-film-screening-takes-you-behind-the-scenes-with-paramedics/",
-          "title": "Special Film Screening Takes You Behind The Scenes with Paramedics",
-          "publisher": "News Channel 3-12",
+          "url": "https://littlethings.com/entertainment/erin-andrews-embarrassing-halftime-report-tom-brady-reaction",
+          "title": "Erin Andrews Reveals She Panicked During Awkward Live TV Moment & Tom Brady Made It Worse",
+          "publisher": "LittleThings.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQJ-AduNYiwgReY9PW3crpKM2VCNJpud52CxOHrl1gpDBNJXRdYBe4gPDwjWE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUUbIHNPHIPBmIqQIlGRUNMicygtjWhiy5sombFNPoR1GT_RovBva7e6SnMKE"
+        },
+        {
+          "url": "https://www.irishstar.com/sport/nfl/erin-andrews-admits-im-struggling-37821204",
+          "title": "Erin Andrews admits 'I'm struggling' as impact of FOX NFL role sparks concern",
+          "publisher": "Irish Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1CnVbnFFiF1Ti7LkYUJ7eHQlJCE74dodMxh-oF4oe5tQi-WMzWiUrFV5lDNc"
         }
       ]
     },
     {
-      "query": "prop 3",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T03:30:00Z",
+      "query": "alperen şengün",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T04:00:00Z",
       "related_news_urls": [
-        "https://www.sfgate.com/politics/article/proposition-3-elections-22501511.php",
-        "https://www.sacbee.com/news/politics-government/capitol-alert/article317892047.html",
-        "https://www.yahoo.com/news/politics/articles/california-prop-3-tax-top-204145695.html"
+        "https://www.houstonchronicle.com/sports/rockets/article/alperen-sengun-out-back-soreness-22499021.php",
+        "https://www.fantasypros.com/nba/news/616782/alperen-sengun-back-returns-to-lineup-saturday.php",
+        "https://sports.yahoo.com/articles/rockets-vs-thunder-injury-report-221521504.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ03E6mj4tlUPb-KOXgni5lURgPKSyVyKi5QjZ5Py9LW9OLedwntehi7-ZEzfw",
-      "image_credit": "SFGATE",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6PQKpNVklsMCHRoXn0nxvfSz8ilERNFsKfQF4tPR0i9UQTn-rM_M0ZMpO_xg",
+      "image_credit": "Houston Chronicle",
       "news": [
         {
-          "url": "https://www.sfgate.com/politics/article/proposition-3-elections-22501511.php",
-          "title": "While Prop. 40 flounders, another progressive tax in Calif. is looking likely",
-          "publisher": "SFGATE",
+          "url": "https://www.houstonchronicle.com/sports/rockets/article/alperen-sengun-out-back-soreness-22499021.php",
+          "title": "Rockets center Alperen Şengün to be sidelined with back soreness",
+          "publisher": "Houston Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ03E6mj4tlUPb-KOXgni5lURgPKSyVyKi5QjZ5Py9LW9OLedwntehi7-ZEzfw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6PQKpNVklsMCHRoXn0nxvfSz8ilERNFsKfQF4tPR0i9UQTn-rM_M0ZMpO_xg"
         },
         {
-          "url": "https://www.sacbee.com/news/politics-government/capitol-alert/article317892047.html",
-          "title": "Should top earners continue to pay for public education? Prop. 3 explained (Video)",
-          "publisher": "Sacramento Bee",
+          "url": "https://www.fantasypros.com/nba/news/616782/alperen-sengun-back-returns-to-lineup-saturday.php",
+          "title": "Alperen Sengun (back) returns to lineup Saturday",
+          "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTubxcWS-YwqGLXFlHvmTPlQwR6sq487Ci9pENBLXEymKQRaE-VWQ4ydXuG-9Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzk0NeH4GVycVChY0YDKJDkB_94hFafGQq479CvrPwoWQbun-QnJhMMCYJleQ"
         },
         {
-          "url": "https://www.yahoo.com/news/politics/articles/california-prop-3-tax-top-204145695.html",
-          "title": "California’s Prop. 3 tax on top earners holds strong days before election, new poll shows",
-          "publisher": "Yahoo",
+          "url": "https://sports.yahoo.com/articles/rockets-vs-thunder-injury-report-221521504.html",
+          "title": "Rockets vs Thunder Injury Report Sengun Returns as VanVleet Sits",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaC30xMezDd3pmUkS1i4l8vh-6RGrkbwkLjtWjtMI13EIAXilpxeWKzls-pR8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUwwa5tlIuWzrUeBTe4j1C1J290c3pFWqThsyp9tlbY1TtCfVQJYb4T4T4reI"
         }
       ]
     },
     {
-      "query": "justine lupe",
+      "query": "drew lock",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T03:30:00Z",
+      "published_at": "2026-11-03T04:00:00Z",
       "related_news_urls": [
-        "https://www.tvline.com/2301806/justine-lupe-morgan-nobody-wants-this-season-3-episode-8-performance/",
-        "https://www.imdb.com/news/ni66088922/?ref_=nwc_art_perm",
-        "https://www.imdb.com/fr/news/ni66088922/?ref_=nwc_art_perm"
+        "https://www.cbssports.com/fantasy/football/news/seahawks-drew-lock-serving-as-emergency-qb/",
+        "https://www.rotowire.com/football/headlines/drew-lock-injury-questionable-for-mnf-645257",
+        "https://heavy.com/sports/nfl/seattle-seahawks/drew-lock-inactive-jalen-milroe-bears/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTozDbowGFamG8IcNw9oqWWhNz-xiMSphLKz1AhAZSoS9-gZ9Ff3f0UcwuPBNI",
-      "image_credit": "TVLine",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGI5fyhQ-VNoR5OjUJKA5HiGhRinx_c2mJspNiCm3HSxYFfCdA4QSeBF66Ofo",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.tvline.com/2301806/justine-lupe-morgan-nobody-wants-this-season-3-episode-8-performance/",
-          "title": "Nobody Wants This Season 3: Justine Lupe's Morgan Is The Performance Of The Week",
-          "publisher": "TVLine",
+          "url": "https://www.cbssports.com/fantasy/football/news/seahawks-drew-lock-serving-as-emergency-qb/",
+          "title": "Seahawks' Drew Lock: Serving as emergency QB",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTozDbowGFamG8IcNw9oqWWhNz-xiMSphLKz1AhAZSoS9-gZ9Ff3f0UcwuPBNI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGI5fyhQ-VNoR5OjUJKA5HiGhRinx_c2mJspNiCm3HSxYFfCdA4QSeBF66Ofo"
         },
         {
-          "url": "https://www.imdb.com/news/ni66088922/?ref_=nwc_art_perm",
-          "title": "TVLine's Performer Of The Week: Justine Lupe",
-          "publisher": "IMDb",
+          "url": "https://www.rotowire.com/football/headlines/drew-lock-injury-questionable-for-mnf-645257",
+          "title": "Drew Lock Injury: Questionable for MNF",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrb5KUiqHajfgPseOr-95mK6lggXukLZepZyRo7xSbxKR4Szejs8wfppWSx18"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLSqpRmBRXFHZxQ7ObPhmw3ZZXqBUzqs3FPqlQjevBtYW2SVvUzBWVowM7TM4"
         },
         {
-          "url": "https://www.imdb.com/fr/news/ni66088922/?ref_=nwc_art_perm",
-          "title": "TVLine's Performer Of The Week: Justine Lupe",
-          "publisher": "IMDb",
+          "url": "https://heavy.com/sports/nfl/seattle-seahawks/drew-lock-inactive-jalen-milroe-bears/",
+          "title": "Seattle Seahawks Announce Late QB Injury News Before Bears MNF Game",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrb5KUiqHajfgPseOr-95mK6lggXukLZepZyRo7xSbxKR4Szejs8wfppWSx18"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqOps7W7Kqv75yWZY5X_dB2I89eF__ZAkDNO8aTtYflCvHAFwQCJIXP4JtYiE"
+        }
+      ]
+    },
+    {
+      "query": "powerball drawing",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T04:00:00Z",
+      "related_news_urls": [
+        "https://www.wkyc.com/article/news/lottery/powerball-winner-ohio-hits-prize-worth-150k-see-where-winning-ticket-was-sold-check-lucky-numbers-oct-31-ohio-lottery-results/95-de04cc2b-4bc1-422d-ba93-793b6c16d824",
+        "https://www.detroitnews.com/story/news/lottery/2026/11/02/powerball-numbers-for-mondays-drawing/92556605007/",
+        "https://www.forbes.com/sites/zacharyfolk/2026/11/01/powerball-jackpot-nears-800-million-but-a-winner-would-take-home-much-less-after-taxes/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQF-BY4XE7bj5x7nuCJgzWIQduoQMaHfUOv2WheYjijZDHNZGVIJ61t0OOA4",
+      "image_credit": "WKYC",
+      "news": [
+        {
+          "url": "https://www.wkyc.com/article/news/lottery/powerball-winner-ohio-hits-prize-worth-150k-see-where-winning-ticket-was-sold-check-lucky-numbers-oct-31-ohio-lottery-results/95-de04cc2b-4bc1-422d-ba93-793b6c16d824",
+          "title": "Powerball winner in Ohio hits prize worth $150K: See where the winning ticket was sold and check the lucky numbers for Oct. 31",
+          "publisher": "WKYC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQF-BY4XE7bj5x7nuCJgzWIQduoQMaHfUOv2WheYjijZDHNZGVIJ61t0OOA4"
+        },
+        {
+          "url": "https://www.detroitnews.com/story/news/lottery/2026/11/02/powerball-numbers-for-mondays-drawing/92556605007/",
+          "title": "Powerball numbers for Monday's drawing",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQufOn5pI2oOR7_MtLQkniPKl8e_-jsgtHVAtDAfM6G3qNNTVO42qqBVUVpKRw"
+        },
+        {
+          "url": "https://www.forbes.com/sites/zacharyfolk/2026/11/01/powerball-jackpot-nears-800-million-but-a-winner-would-take-home-much-less-after-taxes/",
+          "title": "Powerball Jackpot Grows to $793 Million—Here’s What a Winner Could Take Home After Taxes",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP5jrjglMlRKagetE3WouKdnBvuC8iL5yb36sbVhS3XwVVSyCh90EnZtxFQ8E"
+        }
+      ]
+    },
+    {
+      "query": "nba games tomorrow",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T04:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/live-blogs/nba-news-games-scores-stats-schedule-analysis-live-updates/HBD7r0ZK2u47/",
+        "https://www.pressreader.com/usa/usa-today-sports-weekly/20261021/281496463265753",
+        "https://www.thejustice.org/article/2026/10/nba-performance-forecast"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlpf9Z-JA_pH-mUWkordH4XecPlJd_RXPvUrzFfCyGkJZZxnR03ifbd32_PQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-games-scores-stats-schedule-analysis-live-updates/HBD7r0ZK2u47/",
+          "title": "NBA season live updates: Latest news, league chatter with 15-game slate underway",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlpf9Z-JA_pH-mUWkordH4XecPlJd_RXPvUrzFfCyGkJZZxnR03ifbd32_PQ"
+        },
+        {
+          "url": "https://www.pressreader.com/usa/usa-today-sports-weekly/20261021/281496463265753",
+          "title": "NBA 2026-27 tip-off",
+          "publisher": "PressReader",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRju94P_lRJ_N2GNy3ICzQrplkEwcHplAcLvT0lHmDAExB2dq-VWrNVjo_g8kE"
+        },
+        {
+          "url": "https://www.thejustice.org/article/2026/10/nba-performance-forecast",
+          "title": "NBA Performance Forecast",
+          "publisher": "The Justice",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2Gg-3w2EVoqwc6V3RoEePOAJ03J8XooJaVG5v_qSIBFOxeBSg4ef-ZDDZ4hg"
         }
       ]
     }
