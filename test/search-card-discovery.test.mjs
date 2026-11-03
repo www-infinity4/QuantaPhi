@@ -18,6 +18,7 @@ test('GE search result becomes a source-backed reusable Quick Card without decla
 
 test('exact domain input creates a preview, but unrelated research queries do not guess an official site',()=>{
  assert.equal(createDiscoveredCard('geappliances.com')?.official,'https://geappliances.com/');
+ assert.equal(discoverWebsiteCard('https://geappliances.com/',[])?.official,'https://geappliances.com/');
  assert.equal(discoverWebsiteCard('washing machines',[
   {title:'Latest washing machines',url:'https://example-shop.com/category/washers'}
  ]),null);
@@ -46,4 +47,13 @@ test('device-local discovery is domain-idempotent and searchable by name without
  assert.equal(saved.length,1);
  assert.equal(findRememberedCard('GE',storage)?.official,'https://ge.com/');
  assert.equal(findRememberedCard('missing',storage),null);
+});
+
+test('long independent domains have bounded stable IDs suitable for Follow and distinct domain identities',()=>{
+ const first=createDiscoveredCard('a'.repeat(58)+'.brand-catalog.example.org','Catalog A');
+ const second=createDiscoveredCard('a'.repeat(58)+'.brand-catalog2.example.org','Catalog B');
+ assert.ok(first&&second);
+ assert.ok(first.id.length<=70);
+ assert.ok(second.id.length<=70);
+ assert.notEqual(first.id,second.id);
 });
