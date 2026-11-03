@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {
   COUPON_BRANDS,filterVerifiedOffers,collectFollowedOffers,
-  checkoutAdvice,COUPON_WALLET_KEY
+  checkoutAdvice,sanitizeDeviceCouponWallet,COUPON_WALLET_KEY
 } from '../coupon-wallet-core.mjs';
 
 const at='2026-11-03T18:00:00.000Z';
@@ -90,4 +90,15 @@ test('homepage mounts the original moving-card source bank with distinct layouts
   assert.match(ui,/fetch\(/);
   assert.match(css,/@media\s*\(max-width:\s*480px\)/);
   assert.match(css,/:focus-visible/);
+});
+
+test('reopening the device wallet cannot resurrect expired, stale or unreviewed coupons',()=>{
+ const raw={autoSave:true,checkedAt:'2026-11-01T10:00:00.000Z',saved:[
+  offer({id:'expired',expiresAt:'2026-11-02T00:00:00.000Z'}),
+  offer({id:'fresh'})
+ ]};
+ const clean=sanitizeDeviceCouponWallet(raw,at);
+ assert.equal(clean.autoSave,true);
+ assert.deepEqual(clean.saved.map(x=>x.id),['fresh']);
+ assert.deepEqual(sanitizeDeviceCouponWallet({saved:[offer({reviewStatus:'pending'})]},at).saved,[]);
 });
