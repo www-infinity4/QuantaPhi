@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import org.json.JSONObject;
 
 /** Reads Termux's actual result bundle, never confuses dispatch with success. */
 public final class TermuxProbeResultReceiver extends BroadcastReceiver {
@@ -16,10 +17,12 @@ public final class TermuxProbeResultReceiver extends BroadcastReceiver {
     @Override public void onReceive(Context context, Intent intent) {
         if (intent == null || !TermuxProbe.RESULT_ACTION.equals(intent.getAction())) return;
         int id = intent.getIntExtra("probe_request_id", 0);
+        JSONObject latest = TermuxProbe.receipt(context);
+        String mode = latest.optString("mode", "python");
         Bundle output = intent.getBundleExtra("result");
         if (output == null) {
             TermuxProbe.saveResult(context, id, "no_callback_result",
-                "Termux callback had no result bundle; Python/cleanup not verified.");
+                "Termux callback had no result bundle; command execution not verified.");
             return;
         }
         int code = output.getInt("exitCode", -999);
@@ -27,6 +30,31 @@ public final class TermuxProbeResultReceiver extends BroadcastReceiver {
         String stdout = limited(output.getString("stdout", ""));
         String stderr = limited(output.getString("stderr", ""));
         String error = limited(output.getString("errmsg", ""));
+        if ("cloudflare".equals(mode)) {
+            // Only actual Termux output for both fixed HTTPS endpoints is proof.
+            // A 403/404 from a public API is not account login, and dispatch is not success.
+            boolean complete = code == 0 && serviceError == -1
+                && stdout.contains("target=quantaphi;http=")
+                && stdout.contains("target=cloudflare;http=")
+                && stdout.contains("cloudflare_probe=complete");
+            String detail = "exit=" + code + "; service=" + serviceError
+                + (stdout.isEmpty() ? "" : "\\n" + stdout)
+                + (stderr.isEmpty() ? "" : "\\nstderr: " + stderr)
+                + (error.isEmpty() ? "" : "\\nTermux: " + error);
+            String state = complete ? "passed" : "failed";
+            String plain = complete
+                ? "Cloudflare network endpoints responded from Termux. This does not verify account authorization or deployment."
+                : "Cloudflare network check was not verified. Bubbles still uses its normal secured chat service.";
+            if (!complete && (error.contains("allow-external-apps") || stderr.contains("allow-external-apps"))) {
+                state = "setup_required";
+                plain = "Termux needs external-app permission. No Cloudflare test completed.";
+            } else if (!complete && (code == 127 || stdout.contains("curl=not_installed"))) {
+                state = "curl_missing";
+                plain = "Termux does not have curl available. No packages were installed.";
+            }
+            TermuxProbe.saveResult(context, id, state, plain + "\\nTechnical receipt: " + detail);
+            return;
+        }
         boolean cleaned = stdout.contains("cleanup=verified_job_directory_removed");
         boolean success = code == 0 && serviceError == -1 && cleaned
             && stdout.contains("Bubbles Python works: 2 + 2 = 4");
