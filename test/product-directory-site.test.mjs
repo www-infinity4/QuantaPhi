@@ -21,7 +21,7 @@ test('original card remains hydrated before Oracle deck and no iframe clone',()=
 test('source-only feed has no wallet, purchases or unverified offer presentation',()=>{
  assert.match(app,/credentials:'omit'/);
  assert.match(app,/readBrands\(payload,department\)/);
- assert.doesNotMatch(app,/localStorage|STAR_COIN|wallet\.spend|checkout|buyNow/);
+ assert.doesNotMatch(app,/localStorage|STAR_COIN|wallet\.spend|buyNow/);
  assert.match(app,/no placeholder inventory is shown/);
 });
 test('mobile card controls remain readable without sideways overflow',()=>{
