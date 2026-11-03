@@ -3,41 +3,270 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T22:01:47.224989Z",
+  "checked_at": "2026-11-03T22:31:29.266496Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "virginia election results",
+      "query": "nikki haley",
       "approx_searches": "500+",
-      "published_at": "2026-11-03T21:40:00Z",
+      "published_at": "2026-11-03T22:10:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/virginia-house-results",
-        "https://cardinalnews.org/2026/11/03/election-live-updates-and-analysis-from-the-2026-elections/",
-        "https://www.washingtonpost.com/elections/results/2026/11/03/virginia-live-updates/"
+        "https://www.hindustantimes.com/world-news/indian-american-politicians-past-and-present-nikki-haley-bobby-jindal-raja-krishnamoorthi-101793613576316.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqwACVBvsZiLOYXouz04EDNP-W7r0tygC-8TPTEoWs0Y95C03UuOHbr3CqhOQ",
-      "image_credit": "NBC News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs__J9VFf8oCuv8GBosUKzMAAXDSNZ97gmaXRAStsr3MhIun29e-AqcRWmBvM",
+      "image_credit": "Hindustan Times",
       "news": [
         {
-          "url": "https://www.nbcnews.com/politics/2026-elections/virginia-house-results",
-          "title": "Virginia U.S. House Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
+          "url": "https://www.hindustantimes.com/world-news/indian-american-politicians-past-and-present-nikki-haley-bobby-jindal-raja-krishnamoorthi-101793613576316.html",
+          "title": "Indian-American politicians: Past and present | World News",
+          "publisher": "Hindustan Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqwACVBvsZiLOYXouz04EDNP-W7r0tygC-8TPTEoWs0Y95C03UuOHbr3CqhOQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs__J9VFf8oCuv8GBosUKzMAAXDSNZ97gmaXRAStsr3MhIun29e-AqcRWmBvM"
+        }
+      ]
+    },
+    {
+      "query": "miami ohio football",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T22:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-football/news/polymarket-promo-code-cbssports-get-25-bonus-buffalo-miami-oh-ohio-akron-college-football-tuesday/",
+        "https://www.cbssports.com/college-football/news/best-kalshi-promo-code-cbssports55-land-55-bonus-maction-ohio-vs-akron-college-football-election/",
+        "https://www.foxnews.com/outkick-betting/maction-college-football-picks-favor-bulls-spread-miami-ohio-tonight"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-football/news/polymarket-promo-code-cbssports-get-25-bonus-buffalo-miami-oh-ohio-akron-college-football-tuesday/",
+          "title": "Polymarket promo code CBSSPORTS: Get $25 bonus for Buffalo-Miami (OH), Ohio-Akron, college football Tuesday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg"
         },
         {
-          "url": "https://cardinalnews.org/2026/11/03/election-live-updates-and-analysis-from-the-2026-elections/",
-          "title": "Election Live: Data site says Virginia Democrats are voting at higher rate than Republicans",
-          "publisher": "Cardinal News",
+          "url": "https://www.cbssports.com/college-football/news/best-kalshi-promo-code-cbssports55-land-55-bonus-maction-ohio-vs-akron-college-football-election/",
+          "title": "Best Kalshi promo code CBSSPORTS55: Land $55 bonus for MACtion, Ohio vs. Akron, college football, election",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJkLPw7tAmfEvYrp-ntUThxTzU97ZwXcDbyN_1t7AlkO4PDVnj-8fQsC598zE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnrfzmZeWglIoRznqZnGDqP0LJKBcEunIHzysQ9EYeI8BAqcU6PX5jiZaY_pI"
         },
         {
-          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/virginia-live-updates/",
-          "title": "Virginia election results 2026: Live updates",
-          "publisher": "The Washington Post",
+          "url": "https://www.foxnews.com/outkick-betting/maction-college-football-picks-favor-bulls-spread-miami-ohio-tonight",
+          "title": "MACtion college football picks favor the Bulls plus the spread against Miami (Ohio) tonight",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk7EqhXruxCWyp1bl0F4_BV4UgLEQBHKHHLN5_IO4iPEacPmd0d3dgtxM_5_M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx2M0-d93LPy27AgvzbgcKJ8z9cy2rqmErUC60lG2xO-VVCINs8y_olZo7h-k"
+        }
+      ]
+    },
+    {
+      "query": "cfp rankings",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-03T22:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50348637/connelly-cfp-tiers-contenders-week-9",
+        "https://www.usatoday.com/story/sports/ncaaf/college-football-playoffs/2026/11/03/cfp-football-rankings-show-time-live-updates-college-football-playoff/92575263007/",
+        "https://www.cbssports.com/college-football/news/college-football-playoff-rankings-top-25-prediction-2026-first-release/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBXozn0ZQIRciE5D1De7sHZc_pZaep8OV4_6mH_-Jw7JM_PJyrfQuvOUopkGE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50348637/connelly-cfp-tiers-contenders-week-9",
+          "title": "Connelly's CFP tiers: How 29 contenders stack up after Week 9",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBXozn0ZQIRciE5D1De7sHZc_pZaep8OV4_6mH_-Jw7JM_PJyrfQuvOUopkGE"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/college-football-playoffs/2026/11/03/cfp-football-rankings-show-time-live-updates-college-football-playoff/92575263007/",
+          "title": "First CFP football rankings live updates: When is CFP rankings show?",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFlhJm42pe6qj3VW73xscgtukwKv3YpMKIm5szSHQv-yLScm4_P9MHw3FJGT0"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-playoff-rankings-top-25-prediction-2026-first-release/",
+          "title": "College Football Playoff Rankings prediction: Miami on top, surprise SEC team begins in top four",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7CITj9ZsU36jWPiJ7Rg5n1QvJR7HzN8zWFOIJrBsAQYjOZUZZMU-7ippUmM"
+        }
+      ]
+    },
+    {
+      "query": "ohio football",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T22:00:00Z",
+      "related_news_urls": [
+        "https://www.dispatch.com/story/sports/college/football/2026/11/02/what-joel-klatt-said-about-luke-fahey-after-ohio-states-usc-loss/92566901007/",
+        "https://www.10tv.com/video/sports/football/ohio-state-football/snap-judgments-ohio-state-looking-for-urgency-program-wide-fixes-with-2026-season-on-the-line/530-75b8e3b5-1fcd-48d7-a563-b34dc34f779c",
+        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165071/ryan-day-wouldn-t-change-decision-to-go-for-two-late-in-fourth-quarter-vs-usc"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvCJU7Q_SpC9mXGJNUuIYmfzB-3EjO38aaSi_de1V2OHvnIDP6OtCu8uWk5u8",
+      "image_credit": "The Columbus Dispatch",
+      "news": [
+        {
+          "url": "https://www.dispatch.com/story/sports/college/football/2026/11/02/what-joel-klatt-said-about-luke-fahey-after-ohio-states-usc-loss/92566901007/",
+          "title": "Offensive line 'really poor'. Joel Klatt reveals what doomed Ohio State in upset loss to USC",
+          "publisher": "The Columbus Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvCJU7Q_SpC9mXGJNUuIYmfzB-3EjO38aaSi_de1V2OHvnIDP6OtCu8uWk5u8"
+        },
+        {
+          "url": "https://www.10tv.com/video/sports/football/ohio-state-football/snap-judgments-ohio-state-looking-for-urgency-program-wide-fixes-with-2026-season-on-the-line/530-75b8e3b5-1fcd-48d7-a563-b34dc34f779c",
+          "title": "Snap Judgments: Ohio State looking for urgency, program-wide fixes with 2026 season on the line",
+          "publisher": "10tv.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtTZbI1CflNmh-bkt6D0VFScBU6WxPj90cOGgy34pgqDGIhRw_xR4miXdqqJs"
+        },
+        {
+          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165071/ryan-day-wouldn-t-change-decision-to-go-for-two-late-in-fourth-quarter-vs-usc",
+          "title": "Ryan Day Wouldn’t Change Decision to Go For Two Late in Fourth Quarter vs. USC",
+          "publisher": "Eleven Warriors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQHuj3pHafzdDahl_A10bsY9jh9dQUtCs1YflpZzzH2Ar0RQgJPNwdQQIfYFY"
+        }
+      ]
+    },
+    {
+      "query": "matheus cunha",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T21:50:00Z",
+      "related_news_urls": [
+        "https://ge.globo.com/futebol/futebol-internacional/liga-dos-campeoes/noticia/2026/11/03/matheus-cunha-faz-dois-gols-no-fim-e-united-vence-a-roma-de-virada-pela-champions.ghtml",
+        "https://www.fotmob.com/pt-BR/news/19no7q513l1211iudwx8snfzdi_pt-BR-gasperini-alerta-roma-para-nao-se-iludir-com-ma-fase-do-manchester-united",
+        "https://www.vietnam.vn/pt/ket-qua-lich-thi-dau-bong-da-hom-nay-3-11-2026-mu-gap-roma"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnHWvfT74cCSYuk_9ghT6h1TL-0Osh6GfMJc8R7N6oRwEM2K_S-waSx1bVL6I",
+      "image_credit": "ge",
+      "news": [
+        {
+          "url": "https://ge.globo.com/futebol/futebol-internacional/liga-dos-campeoes/noticia/2026/11/03/matheus-cunha-faz-dois-gols-no-fim-e-united-vence-a-roma-de-virada-pela-champions.ghtml",
+          "title": "Matheus Cunha faz dois gols no fim, e United vence a Roma de virada pela Champions",
+          "publisher": "ge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnHWvfT74cCSYuk_9ghT6h1TL-0Osh6GfMJc8R7N6oRwEM2K_S-waSx1bVL6I"
+        },
+        {
+          "url": "https://www.fotmob.com/pt-BR/news/19no7q513l1211iudwx8snfzdi_pt-BR-gasperini-alerta-roma-para-nao-se-iludir-com-ma-fase-do-manchester-united",
+          "title": "Gasperini alerta a Roma para não se distrair com as dificuldades do Man Utd",
+          "publisher": "FotMob",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDnX8sT1BE18FQXSbNaOtdWX_lnLyKx651h13XdogKbChPRZCFZYNz8Ul8PA4"
+        },
+        {
+          "url": "https://www.vietnam.vn/pt/ket-qua-lich-thi-dau-bong-da-hom-nay-3-11-2026-mu-gap-roma",
+          "title": "Resultados e calendário da partida de futebol de hoje, 3 de novembro de 2026: Manchester United x Roma",
+          "publisher": "Vietnam.vn",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTju4t0r9RKzsjIQgYlz4a6Rp5TQkOtiiZ33LGf7PnsQsXTGuQSLacWXFE4WSo"
+        }
+      ]
+    },
+    {
+      "query": "deb haaland",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T21:50:00Z",
+      "related_news_urls": [
+        "https://www.kob.com/news/top-news/new-mexico-gubernatorial-candidates-to-each-rally-ahead-of-election-day/",
+        "https://www.motherjones.com/politics/2026/10/deb-haaland-new-mexico-governors-race/",
+        "https://www.yahoo.com/news/politics/articles/haaland-makes-closing-argument-albuquerque-165442559.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRv2jiQ1TPJLABE7OzZTL9m2u-JapfQyVQearyG3-J3M0e9Ym0V8wx_sWmjPA",
+      "image_credit": "KOB 4",
+      "news": [
+        {
+          "url": "https://www.kob.com/news/top-news/new-mexico-gubernatorial-candidates-to-each-rally-ahead-of-election-day/",
+          "title": "New Mexico gubernatorial candidates give last pitch on eve of election",
+          "publisher": "KOB 4",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRv2jiQ1TPJLABE7OzZTL9m2u-JapfQyVQearyG3-J3M0e9Ym0V8wx_sWmjPA"
+        },
+        {
+          "url": "https://www.motherjones.com/politics/2026/10/deb-haaland-new-mexico-governors-race/",
+          "title": "Deb Haaland Was a Climate Hero of the Left. Now She Wants to Govern Oil-Rich New Mexico.",
+          "publisher": "Mother Jones",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiJaLSOZgkPt9MMB9ynv5SepXDxMq_6-NfdrvnvC3F6OQxegVdD23ZBnp8Rfo"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/haaland-makes-closing-argument-albuquerque-165442559.html",
+          "title": "Haaland Makes Closing Argument at Albuquerque Rally Ahead of Election Day",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS-tbpSBQoHI87r62rAlew65CLkrRBmRu0mtWDvCIqESIUYcn7WyY8MaUM4KE"
+        }
+      ]
+    },
+    {
+      "query": "how late can i vote today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T21:50:00Z",
+      "related_news_urls": [
+        "https://www.seattletimes.com/seattle-news/midterm-election-day-in-wa-is-here-and-its-not-too-late-to-vote/",
+        "https://www.cascadepbs.org/all/2026/11/washington-election-tracker/",
+        "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-king-county/281-81e4d50f-2304-48e5-8da1-fbc18bc24d2d"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHrUMvt2WWkn0PyIUxHp1coAxQQpaxJZkGEjfyodfmL5EeQh7BCIr1lHwq0mM",
+      "image_credit": "The Seattle Times",
+      "news": [
+        {
+          "url": "https://www.seattletimes.com/seattle-news/midterm-election-day-in-wa-is-here-and-its-not-too-late-to-vote/",
+          "title": "National spotlight on WA election: How you can still vote today",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHrUMvt2WWkn0PyIUxHp1coAxQQpaxJZkGEjfyodfmL5EeQh7BCIr1lHwq0mM"
+        },
+        {
+          "url": "https://www.cascadepbs.org/all/2026/11/washington-election-tracker/",
+          "title": "Washington Election Tracker",
+          "publisher": "Cascade PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCZJtXXZwioX2M1DRjZvP2Kdr3gNj5dJTTx0vGgwwb1If2ur6eXHN-wH3i170"
+        },
+        {
+          "url": "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-king-county/281-81e4d50f-2304-48e5-8da1-fbc18bc24d2d",
+          "title": "2026 general election results for King County",
+          "publisher": "KING5.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc91H4LIBZ5ij_6JJeYnK7-w2N88Vvr5lz1NKDALqpU-PnyPTxCaDudf_k4SM"
+        }
+      ]
+    },
+    {
+      "query": "ct governor race",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-03T21:40:00Z",
+      "related_news_urls": [
+        "https://ctmirror.org/2026/11/03/ct-governor-2026-live-election-results/",
+        "https://www.nbcconnecticut.com/news/local/connecticut-early-voter-turnout-so-far-key-races-to-watch/3791519/",
+        "https://www.wtnh.com/news/elections/connecticut-congressional-races-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdofULI3nS3bQ1o00SqOIrWa93FZImfxUQu7-bbZFu3aAyoQIlXoZS6kDhrdQ",
+      "image_credit": "CT Mirror",
+      "news": [
+        {
+          "url": "https://ctmirror.org/2026/11/03/ct-governor-2026-live-election-results/",
+          "title": "CT Governor 2026: Live election results",
+          "publisher": "CT Mirror",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdofULI3nS3bQ1o00SqOIrWa93FZImfxUQu7-bbZFu3aAyoQIlXoZS6kDhrdQ"
+        },
+        {
+          "url": "https://www.nbcconnecticut.com/news/local/connecticut-early-voter-turnout-so-far-key-races-to-watch/3791519/",
+          "title": "Connecticut early voter turnout so far; key races to watch",
+          "publisher": "NBC Connecticut",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbQ91x7X_Mrs8Jg4vgqY9TPn_R3qz6NlX2gixXTAx4pDtYxW2KjbfshnCHm2g"
+        },
+        {
+          "url": "https://www.wtnh.com/news/elections/connecticut-congressional-races-2026/",
+          "title": "Voters to decide Connecticut’s 5 U.S. House seats",
+          "publisher": "WTNH.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzGVJPtG6mhR6kfn63ZTTfspLyoN0dk3cg4wX6Vqj-wlSutyHlH5VuvCreqzA"
         }
       ]
     },
@@ -78,12 +307,12 @@
     },
     {
       "query": "greg newsome",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-03T21:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50372281/giants-cb-greg-newsome-ii-agree-3-year-46m-extension",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/greg-newsome-giants-agree-on-three-year-extension",
-        "https://www.bigblueview.com/new-york-giants-news/178409/greg-newsome-signing-contract-extension"
+        "https://www.bigblueview.com/new-york-giants-news/178409/greg-newsome-signing-contract-extension",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/greg-newsome-giants-agree-on-three-year-extension"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7nBLB6l675SxMHRFn16nYzGdNWjjBpulWJ5WQJ8uCIAZCKZTJSjSUgH1PUgM",
       "image_credit": "ESPN",
@@ -96,263 +325,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7nBLB6l675SxMHRFn16nYzGdNWjjBpulWJ5WQJ8uCIAZCKZTJSjSUgH1PUgM"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/greg-newsome-giants-agree-on-three-year-extension",
-          "title": "Greg Newsome, Giants agree on three-year extension",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYn0c-M0WmLdNbwlvCVJXhEHC8i1yFrtWwMyJBnMJoYPxlph9SiexlEgyzfvg"
-        },
-        {
           "url": "https://www.bigblueview.com/new-york-giants-news/178409/greg-newsome-signing-contract-extension",
           "title": "NY Giants give veteran cornerback 3-year contract extension",
           "publisher": "Big Blue View",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5TwaLvGSRstuSMTp4Fod9hf5NRzrEpvdV6hyy4mzfjZ-f-ARtv0Vs_pYC2qo"
-        }
-      ]
-    },
-    {
-      "query": "bodø/glimt - losc",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T21:30:00Z",
-      "related_news_urls": [
-        "https://www.oregonlive.com/tv/2026/11/how-to-watch-lille-vs-bodoglimt-champions-league-match-streaming-live-preview-start-time-betting-lines.html",
-        "https://www.sportsmole.co.uk/football/bodo-glimt/champions-league/preview/bodoglimt-vs-lille-prediction-team-news-lineups_608214.html",
-        "https://www.whoscored.com/news/uDhmbhPWvECbTErMpfBXlQ/show/cng112-20261103-bodoe-glimt-vs-lille-confirmed-lineup-1793732626"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRinprR-lax1zZON_Nw6b1uNnWXxj_bbitzq44ckihM2SR32WleSpgkEpdQQT8",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-lille-vs-bodoglimt-champions-league-match-streaming-live-preview-start-time-betting-lines.html",
-          "title": "How to watch Lille vs. Bodo/Glimt Champions League match streaming live: Preview, start time, betting lines",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRinprR-lax1zZON_Nw6b1uNnWXxj_bbitzq44ckihM2SR32WleSpgkEpdQQT8"
         },
         {
-          "url": "https://www.sportsmole.co.uk/football/bodo-glimt/champions-league/preview/bodoglimt-vs-lille-prediction-team-news-lineups_608214.html",
-          "title": "Preview: Bodo/Glimt vs Lille - prediction, team news, lineups",
-          "publisher": "Sports Mole",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_DNKf_zgIA4UR3Q7U3XYipCqJjKp8j5NQOhsmwCng6Q4DZe3S84K1DWODLSA"
-        },
-        {
-          "url": "https://www.whoscored.com/news/uDhmbhPWvECbTErMpfBXlQ/show/cng112-20261103-bodoe-glimt-vs-lille-confirmed-lineup-1793732626",
-          "title": "Bodoe/Glimt vs Lille Confirmed Lineups",
-          "publisher": "WhoScored.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCw20GrpbZAhwRVjmJSGLY058oId1YgCRDRIIrnAWUfMVDQ3zbTl_HRkIj7Sg"
-        }
-      ]
-    },
-    {
-      "query": "cj gardner johnson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T21:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50372292/bills-release-safety-cj-gardner-johnson",
-        "https://bleacherreport.com/articles/25529041-cjgj-reportedly-released-bills-after-serving-1-game-suspension-spitting-raiders",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bills-release-s-c-j-gardner-johnson-after-one-game-suspension"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTBtG05-e-dw1usZV0G-DR_pWaHr8yMcH7ZyUMAvVPfFwoMNL7r9AjtEqOWEA",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50372292/bills-release-safety-cj-gardner-johnson",
-          "title": "Bills release C.J. Gardner-Johnson after one-game spitting suspension",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTBtG05-e-dw1usZV0G-DR_pWaHr8yMcH7ZyUMAvVPfFwoMNL7r9AjtEqOWEA"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529041-cjgj-reportedly-released-bills-after-serving-1-game-suspension-spitting-raiders",
-          "title": "CJGJ Reportedly Released by Bills After Serving 1-Game Suspension for Spitting at Raiders",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFjQth3AL29Pj1rQ-UOPKoLoKnUORWTbb11phljXHN1djKOEymDj3q_YBaaso"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bills-release-s-c-j-gardner-johnson-after-one-game-suspension",
-          "title": "Bills release S C.J. Gardner-Johnson after one-game suspension",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/greg-newsome-giants-agree-on-three-year-extension",
+          "title": "Greg Newsome, Giants agree on three-year extension",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRe0D_hMLI4LLAQy3fpqrVVpsxRVBkavY3Uxtp9E55Y9DITV7uGqpPmX-cLSUI"
-        }
-      ]
-    },
-    {
-      "query": "alab stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T21:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/technology/articles/astera-labs-reports-third-quarter-210500020.html",
-        "https://seekingalpha.com/news/4663598-astera-labs-slides-even-as-q3-results-guidance-top-estimates",
-        "https://www.tikr.com/blog/astera-labs-stock-fell-after-its-last-3-revenue-beats-heres-what-could-change-on-nov-3"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCobP1xpx1QVz8zOWN_RsJyNC4531RmMYCME8DoMnPC2o8V45Ds--CL0HpRA",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/technology/articles/astera-labs-reports-third-quarter-210500020.html",
-          "title": "Astera Labs Reports Third Quarter 2026 Financial Results",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCobP1xpx1QVz8zOWN_RsJyNC4531RmMYCME8DoMnPC2o8V45Ds--CL0HpRA"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4663598-astera-labs-slides-even-as-q3-results-guidance-top-estimates",
-          "title": "Astera Labs slides even as Q3 results, guidance top estimates (ALAB:NASDAQ)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbo52NVjC1NqW-YhTY00eV4QDWpR-CBfcGvGVpMMw3bmTkt_5BGRUwigJyMyM"
-        },
-        {
-          "url": "https://www.tikr.com/blog/astera-labs-stock-fell-after-its-last-3-revenue-beats-heres-what-could-change-on-nov-3",
-          "title": "Astera Labs Stock Fell After Its Last 3 Revenue Beats. Here’s What Could Change on Nov. 3",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_5hTzQLxtBga-WuRXqmfz6POWqMBwRX6gAPqo9iwD3kFbzZc7no4xtRpBpYk"
-        }
-      ]
-    },
-    {
-      "query": "lille fc",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T21:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/lille-predicted-xi-v-bodo-100600919.html",
-        "https://www.ysscores.com/en/news/14086018/illness-rules-out-nabil-bentaleb-for-lille-against-bodo",
-        "https://www.getfootballnewsfrance.com/2026/lille-predicted-xi-v-bodo-glimt-nabil-bentaleb-and-ayase-ueda-out/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiuMUl1LZw4ZFXUAwV79Zeyn8nW6OODE-1q8u-DIhQWDTA6MJmMJ7G9GqPi7M",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/lille-predicted-xi-v-bodo-100600919.html",
-          "title": "Lille predicted XI v Bodo/Glimt: Nabil Bentaleb and Ayase Ueda out",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiuMUl1LZw4ZFXUAwV79Zeyn8nW6OODE-1q8u-DIhQWDTA6MJmMJ7G9GqPi7M"
-        },
-        {
-          "url": "https://www.ysscores.com/en/news/14086018/illness-rules-out-nabil-bentaleb-for-lille-against-bodo",
-          "title": "Illness rules out Nabil Bentaleb for Lille against Bo…",
-          "publisher": "YSscores",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPg08Cq8lLaTYVW9AaPGCBkVoAEuuEbbRrpwVOZh76tB9EEMNygMgxtfGPUmo"
-        },
-        {
-          "url": "https://www.getfootballnewsfrance.com/2026/lille-predicted-xi-v-bodo-glimt-nabil-bentaleb-and-ayase-ueda-out/",
-          "title": "Lille predicted XI v Bodo/Glimt: Nabil Bentaleb and Ayase Ueda out",
-          "publisher": "Get French Football News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKx_sv4HRxjbHOkLDXaCSw2ERynifkUMV87yPxbdyFFfjDeXh3eWAX34Vh4dM"
-        }
-      ]
-    },
-    {
-      "query": "dan osborn",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T21:20:00Z",
-      "related_news_urls": [
-        "https://www.pbs.org/newshour/politics/live-results-nebraska-senate-midterm-election",
-        "https://nebraskaexaminer.com/2026/11/03/nebraska-races-to-watch-for-the-2026-midterms/",
-        "https://www.wowt.com/2026/11/03/election-day-2026-voters-nebraska-iowa-head-polls/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ923VuRHWG1PxB3t7aR6EngsxBTbe9zr4EKBAZYvxrK5S9fNa4D233Y_1dqqE",
-      "image_credit": "PBS",
-      "news": [
-        {
-          "url": "https://www.pbs.org/newshour/politics/live-results-nebraska-senate-midterm-election",
-          "title": "Live Results: Nebraska Senate midterm election",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ923VuRHWG1PxB3t7aR6EngsxBTbe9zr4EKBAZYvxrK5S9fNa4D233Y_1dqqE"
-        },
-        {
-          "url": "https://nebraskaexaminer.com/2026/11/03/nebraska-races-to-watch-for-the-2026-midterms/",
-          "title": "Nebraska races to watch for the 2026 midterms",
-          "publisher": "Nebraska Examiner",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcJQlQfanaD26JOncIIh2w2ZrV4S1zIMOZ4QFwFE9OfCRQM0WUizOZy7SLJ9g"
-        },
-        {
-          "url": "https://www.wowt.com/2026/11/03/election-day-2026-voters-nebraska-iowa-head-polls/",
-          "title": "Election Day 2026: Voters in Nebraska & Iowa head to the polls",
-          "publisher": "WOWT",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNfaoM6OU2IY9RgfEiBRRhyLitgPGelUM-7y4TRCDfJe9Lki-LfQtsetW_lPY"
-        }
-      ]
-    },
-    {
-      "query": "cj stroud contract negotiation texans",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T21:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50360444/cj-stroud-texans-contract",
-        "https://sports.yahoo.com/articles/texans-rumors-could-c-j-201552587.html",
-        "https://www.fantasyguru.com/texans-stroud-turned-down-deal-similar-to-lawrences-in-line-for-a-bigger-one"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCyqvyPTdE89nKOXWDdEJB425gksNutpTzKfif1VuvhPlbeZJnVD5USraukVQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50360444/cj-stroud-texans-contract",
-          "title": "C.J. Stroud turned down a big contract. A bigger one awaits",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCyqvyPTdE89nKOXWDdEJB425gksNutpTzKfif1VuvhPlbeZJnVD5USraukVQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/texans-rumors-could-c-j-201552587.html",
-          "title": "Texans rumors: Could C.J. Stroud get $70 million a year? Don’t count it out",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEsgQ_a3BtgLEscvKPxoKMZBwZo9oju-S5MTj4T8vRFiqNgiWQcRLD_ASbLxs"
-        },
-        {
-          "url": "https://www.fantasyguru.com/texans-stroud-turned-down-deal-similar-to-lawrences-in-line-for-a-bigger-one",
-          "title": "Texans | Stroud turned down deal similar to Lawrence’s, in line for ‘a bigger one’",
-          "publisher": "Fantasy Guru",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC9pKeDEcs9YLEYyEJ6Bkvk-60T56d4yxHG5Q1fVjNt3bU-J8MLu0DzpDaAKo"
-        }
-      ]
-    },
-    {
-      "query": "bayern munich",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-03T21:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50360295/harry-kane-hopes-bayern-munich-pass-tough-champions-league-test-madrid",
-        "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/276026/harry-kane-proclaims-pride-at-being-a-bayern-munich-player",
-        "https://sports.yahoo.com/articles/alan-shearer-urges-harry-kane-114700098.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnZzcpr-b8Lwn_xX5nIZcxcFwKvlMpUDMo6Lwlbfzog4unNU7Z4NRpm38X3vM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50360295/harry-kane-hopes-bayern-munich-pass-tough-champions-league-test-madrid",
-          "title": "Kane says new Bayern deal 'extremely close,' will happen in coming days",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnZzcpr-b8Lwn_xX5nIZcxcFwKvlMpUDMo6Lwlbfzog4unNU7Z4NRpm38X3vM"
-        },
-        {
-          "url": "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/276026/harry-kane-proclaims-pride-at-being-a-bayern-munich-player",
-          "title": "Harry Kane proclaims pride at being a Bayern Munich player",
-          "publisher": "Bavarian Football Works",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXRr_2XXr75519mqobdf4J80t1KtARrsuuZn3lCT-wOP3TgbMl5wUJL0kI-EY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/alan-shearer-urges-harry-kane-114700098.html",
-          "title": "Alan Shearer urges Harry Kane to sign new Bayern Munich deal",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyq9BjDYFCqY32rEWxhc27WoXdjKIuF80c55AthV14ccEPTon6DTFi5XG8z3Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYn0c-M0WmLdNbwlvCVJXhEHC8i1yFrtWwMyJBnMJoYPxlph9SiexlEgyzfvg"
         }
       ]
     }
