@@ -3,30 +3,30 @@ issue: 1423
 project: "Source-backed Quick Card merchandise directory"
 source_requests:
   - "2026-11-02 owner X screenshots: Eastland, Jarritos, Comet, Walmart bettergoods and comparable brands"
-state: deployed
+state: implementing
 dot: "🟡"
-progress_percent: 45
-progress_basis: "4/9 weighted acceptance milestones: authenticated D1 schema/seed, API upload & binding, focused local tests, independent GET readback; frontend integration, licensed offers, exact-head CI, PR merge and mobile approval remain"
-sessions_spent: 1
+progress_percent: 58
+progress_basis: "5/9 milestones: D1 catalog, API binding, live source readback, Oracle frontend source, local tests; CI/review/merge, mobile and actual photo/offer approvals remain"
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: "ChatGPT · scoped owner request"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: "2026-11-03T00:52:25.930Z"
+last_observed_at_utc: "2026-11-03T19:19:35Z"
 repo: "www-infinity4/QuantaPhi"
-branch: "feat/source-product-directory-20261102"
+branch: "feat/product-directory-oracle-card-20261103"
 head_sha: null
-pr: 1492
+pr: 1627
 tests:
   - "Local node --test worker.test.mjs: 5/5 pass after RED expiration regression"
 ci: []
 merged: false
-deployed: true
-live_verified: true
-blocker: "Cloudflare API verified, but no original QuantaPhi homepage adapter, source-licensed images/live offers, exact-head CI or Android acceptance"
-next_action: "Review draft PR #1492 and merge only after exact-head CI, reproducible migration and independent review; then integrate source feed with PR #1485 and mobile-check rendered cards"
+deployed: false
+live_verified: false
+blocker: "Worker API live, but homepage adapter is source-only until exact-head CI, independent review, merge, Pages and Android readback; licensed product photographs/offers not yet available"
+next_action: "Review exact-head PR #1627 CI and mobile browser results; address concrete failures before merger and Pages production readback"
 ---
 
 # Nov 2 source-catalog checkpoint
@@ -61,3 +61,11 @@ The screenshot's pizza anecdote is user-reported, not evidence of a currently av
 - `/v1/offers` returned `data=[]` (no approved merchandise/sponsor ads), as intended.
 - **Live API verified, not main QuantaPhi homepage/app release verified.**
 - Draft PR created at https://github.com/www-infinity4/QuantaPhi/pull/1492 .
+
+## Nov 3 2026 · second engineering session
+- Confirmed source PR #1492 **merged** at `3d572569c9bca880434af665ca8ac43efbcb1412`; API previously live-verified (8 brands, 9 collections, 0 approved offers).
+- Created branch `feat/product-directory-oracle-card-20261103` and **draft PR #1627**. One original `productDirectoryCard` root added to homepage, Oracle `choices` and `CARD_DIRECTIONS` registration, read-only Cloudflare D1 frontend module, CSS and tests.
+- Six core tests RED before code (missing implementation), then GREEN locally: Mixed/department routing, 21+ exclusion, safe URLs, collection source matching, deduplication, no-repeat rotation.
+- Added dedicated GitHub Actions workflow for syntax, source, DOM integration and existing Worker tests. At session note time exact-head CI is queued; completion/merger and live Pages readback not asserted.
+- No wallet/identity, advertiser checkout or subscription changes. Original abstract visual is **not** licensed product photography; separate rights gate retained.
+- PR #1485 global 27-department selector remains draft/unmergeable, deliberately untouched; new card has its own bounded department filter while preserving existing Oracle structure.
