@@ -9,6 +9,7 @@ const brands=[
 ];
 brands[3].adult_restricted=1;
 async function routeCatalog(page,{unavailable=false}={}){
+ await page.route('**/favicon.ico',route=>route.fulfill({status:404}));
  await page.route('https://quantaphi-product-directory.marvaseater.workers.dev/**',route=>{
   if(unavailable)return route.fulfill({status:503,headers:{'access-control-allow-origin':'*'},json:{error:'source_offline'}});
   const url=new URL(route.request().url);
