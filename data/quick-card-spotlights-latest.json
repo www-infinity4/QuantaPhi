@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-03T08:22:56.247451Z",
+  "checked_at": "2026-11-03T09:19:32.794461Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -2926,12 +2926,12 @@
     },
     "durable-framework-computers": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": []
     },
     "durable-fairphone": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://www.fairphone.com/",
@@ -2939,7 +2939,7 @@
           "title": "Hand holding a blue Fairphone Gen 6+ in front of pink spring blossom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2948,7 +2948,7 @@
           "title": "Hand holding a green Fairphone Gen 6+, rear view, in front of sunlit grass",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2957,7 +2957,7 @@
           "title": "Fairtrade certification mark",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2966,7 +2966,7 @@
           "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2975,7 +2975,7 @@
           "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2984,7 +2984,7 @@
           "title": "30W USB-C Fast Charger",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2993,7 +2993,7 @@
           "title": "USB-C Long Life Charging Cable",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3002,14 +3002,14 @@
           "title": "Fairbuds XL Headphones USB-C - mini jack 3.5mm Cable",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-system76": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://system76.com/",
@@ -3017,7 +3017,7 @@
           "title": "the New Thelio Prime",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3026,7 +3026,7 @@
           "title": "the New Adder Pro",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3035,7 +3035,7 @@
           "title": "the New Lemur Pro now in 14in and 16in sizes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3044,14 +3044,14 @@
           "title": "Thelio Mira desktop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-pine64": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://pine64.org/",
@@ -3059,7 +3059,7 @@
           "title": "PINE64",
           "kind": "website",
           "description": "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects. Founded in 2015, it is known for affordable devices that promote user freedom.",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3068,7 +3068,7 @@
           "title": "RockPro64",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3077,7 +3077,7 @@
           "title": "Quartz64 Model B",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3086,14 +3086,14 @@
           "title": "Star64 featuring RISC-V",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-mnt-research": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://mntre.com/",
@@ -3101,7 +3101,7 @@
           "title": "MNT Research GmbH",
           "kind": "website",
           "description": "MNT Research makes open source hardware laptops, mobile devices and keyboards that are modular and repairable. Designed and assembled in Berlin, EU.",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3110,7 +3110,7 @@
           "title": "MNT Pocket Reform - purple",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3119,7 +3119,7 @@
           "title": "space themed illustration of a magical Pocket Reform(3D shapes are coming out of the screen) with two tattooed hands typing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3128,7 +3128,7 @@
           "title": "an illustration of a person using MNT Pocket Reform on a sofa with their dog chilling nearby",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3137,7 +3137,7 @@
           "title": "illustration of a cafe with two people using Pocket Reform and a cat sitting on a chair.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3146,7 +3146,7 @@
           "title": "MNT ZZ9000 R-3, Black Version",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3155,7 +3155,7 @@
           "title": "MNT ZZ9000AX Audio Module (Back)",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3164,24 +3164,24 @@
           "title": "MNT ZZ9000 Heatsink, Top",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-thinkpad-classic-t-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": []
     },
     "durable-noctua": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": []
     },
     "durable-seasonic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://seasonic.com/atx3-prime-tx/",
@@ -3189,7 +3189,7 @@
           "title": "ATX3-PRIME-TX-1600-1300-PX-1600-back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3198,7 +3198,7 @@
           "title": "ATX3 PRIME TX-1600-1300-PX-1600-back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3207,7 +3207,7 @@
           "title": "PRIME-Fanless-TX-700-600",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3216,14 +3216,14 @@
           "title": "PRIME Fanless PX-500-450 back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-ifixit": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://www.ifixit.com/",
@@ -3231,16 +3231,16 @@
           "title": "iFixit: The Free Repair Manual",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
           "url": "https://www.ifixit.com/",
-          "image": "https://www.ifixit.com/_next/image?url=https%3A%2F%2Fifixit-strapi-uploads.s3.us-east-1.amazonaws.com%2FMac_Book_Air_Battery_Hero_Banner_2298fe726c.jpg&w=1920&q=75",
-          "title": "MacBook Air Battery",
+          "image": "https://www.ifixit.com/_next/image?url=https%3A%2F%2Fifixit-strapi-uploads.s3.us-east-1.amazonaws.com%2FDyson_vacuum_filter_hero_banner_31570e80a7.jpg&w=1920&q=75",
+          "title": "Dyson Vacuum Filter",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3249,7 +3249,7 @@
           "title": "A person repairing a laptop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3258,7 +3258,7 @@
           "title": "Assortment of quality parts and tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3267,14 +3267,14 @@
           "title": "iFixit Repair Business Toolkit: Phone, Laptop, Tablet Starter Tools",
           "kind": "product",
           "description": "A whole repair shop in one bag, featuring time-tested, high-quality tools specially curated alongside the latest and greatest in repair technology.",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "299.95",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock",
-            "valid_until": "2027-11-03T02:53:53.414000+00:00"
+            "valid_until": "2027-11-03T09:19:42.735000+00:00"
           }
         },
         {
@@ -3283,14 +3283,14 @@
           "title": "iFixit Pro Tech® Toolkit: Computer, Phone, Electronics Repair Kit",
           "kind": "product",
           "description": "The original electronics toolkit: Designed for computer, smartphone, tablet, and gaming repair, backed by thousands of free instructions.",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "79.95",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock",
-            "valid_until": "2027-11-03T02:53:53.786000+00:00"
+            "valid_until": "2027-11-03T09:19:43.053000+00:00"
           }
         },
         {
@@ -3299,7 +3299,7 @@
           "title": "iFixit Gear: Shirts, Stickers, Posters, and Patches | iFixit",
           "kind": "website",
           "description": "Original iFixit shirts, stickers, posters, patches, and bags for people who'd rather fix it than toss it.",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3308,19 +3308,19 @@
           "title": "iFixit Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-sony-professional-pro-audio": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": []
     },
     "durable-sennheiser-studio-monitor-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://www.sennheiser.com/en-us",
@@ -3328,7 +3328,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "For over 75 years, our products come with a built-in mission: to stay true to the sound and soul the music was given by its artist.",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3337,7 +3337,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3346,7 +3346,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3355,7 +3355,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3364,7 +3364,7 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "Discover Sennheiser's microphones: Accentuate character, lend power to the voice, reach and touch the audience. Learn more now!",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3373,7 +3373,7 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3382,7 +3382,7 @@
           "title": "evolution",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3391,14 +3391,14 @@
           "title": "Wireless Systems: Top Audio Solutions | Sennheiser",
           "kind": "website",
           "description": "Unleash superior sound with Sennheiser wireless systems. Experience unmatched audio quality and reliability for professional-grade performance.",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-beyerdynamic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://north-america.beyerdynamic.com/",
@@ -3406,7 +3406,7 @@
           "title": "MMX 130 WIRELESS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3415,7 +3415,7 @@
           "title": "AVENTHO Y",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3424,7 +3424,7 @@
           "title": "Made in Germany | beyerdynamic",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3433,14 +3433,14 @@
           "title": "Made in Germany T1 & T5 in third generation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-audio-technica-studio-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T02:53:28.579695Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://www.audio-technica.com/en-us/",
@@ -3448,7 +3448,7 @@
           "title": "English Flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3457,7 +3457,7 @@
           "title": "Launch Recite Me assistive technology",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3466,7 +3466,7 @@
           "title": "ATH-M50x studio headphones resting on an audio mixer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3475,14 +3475,14 @@
           "title": "corporate conference room",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T02:53:28.579695Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-genelec": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://www.genelec.com/studio-monitors",
@@ -3490,7 +3490,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3499,7 +3499,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3508,7 +3508,7 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3517,19 +3517,19 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-miele": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": []
     },
     "durable-speed-queen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://speedqueen.com/",
@@ -3537,7 +3537,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3546,7 +3546,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3555,7 +3555,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3564,7 +3564,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3573,7 +3573,7 @@
           "title": "All Products - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3582,7 +3582,7 @@
           "title": "TR7 TR7006WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3591,7 +3591,7 @@
           "title": "TR7 TR7006BN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3600,14 +3600,14 @@
           "title": "TC5 TC5003WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-henry-numatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://numatic.com/",
@@ -3615,7 +3615,7 @@
           "title": "Home",
           "kind": "website",
           "description": "Numatic International the home of reliable, high performance, sustainable cleaning for all. UK’s No.1 in Professional Cleaning. Designed & Made in the UK. Committed to Sustainability.",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3624,7 +3624,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3633,7 +3633,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3642,7 +3642,7 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3651,7 +3651,7 @@
           "title": "WBV370NX Pro Cordless Wet Vacuum",
           "kind": "website",
           "description": "The WBV370NX Pro Cordless Wet Vacuum. Eliminate the risk of slips, trips and falls with no cable. Perfect for cleaning up spills in high traffic areas.",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3660,7 +3660,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3669,7 +3669,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3678,14 +3678,14 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-leica-camera-m-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://leica-camera.com/en-US/photography/cameras/m",
@@ -3693,7 +3693,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3702,7 +3702,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3711,7 +3711,7 @@
           "title": "Leica Metal Gray products on a podest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3720,7 +3720,7 @@
           "title": "Leica Q3 43 Formula 1® Edition",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3729,7 +3729,7 @@
           "title": "Leica Geovid Max 10x42 | Leica Camera US",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3738,7 +3738,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3747,7 +3747,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3756,14 +3756,14 @@
           "title": "Leica Metal Gray products on a podest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-garmin-handheld-gps-mariner": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://www.garmin.com/en-US/",
@@ -3771,7 +3771,7 @@
           "title": "Garmin",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3780,7 +3780,7 @@
           "title": "Holiday Gift Guide",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3789,7 +3789,7 @@
           "title": "FĒNIX® 9",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3798,7 +3798,7 @@
           "title": "APPROACH® S72",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3807,7 +3807,7 @@
           "title": "Approach® S72 – 47 mm",
           "kind": "product",
           "description": "Silver/Citron Titanium Bezel with Fog Gray/Citron ComfortFit Fabric Band",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "799.99",
@@ -3822,7 +3822,7 @@
           "title": "CIRQA™ Smart Band",
           "kind": "product",
           "description": "Black",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "199.99",
@@ -3844,12 +3844,12 @@
     },
     "durable-fujitsu-fi-series-scanners": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": []
     },
     "durable-brother-monochrome-laser-printers": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://www.brother-usa.com/c/shop/printers",
@@ -3857,7 +3857,7 @@
           "title": "Printer on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3866,7 +3866,7 @@
           "title": "Ink Cartridge box on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3875,7 +3875,7 @@
           "title": "Sewing machine on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3884,7 +3884,7 @@
           "title": "P-touch label maker on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3893,7 +3893,7 @@
           "title": "Brother MFC-J5010DW INKvestment Wireless Color Inkjet All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -3903,7 +3903,7 @@
           "title": "Brother MFC-L3780CDW Digital Color All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -3913,7 +3913,7 @@
           "title": "Brother PT-D215EMIKR P-touch Embellish Ribbon and Tape Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -3923,7 +3923,7 @@
           "title": "Brother MFC-J1360DW Wireless Color Inkjet All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         }
@@ -3931,7 +3931,7 @@
     },
     "durable-texas-instruments-graphing-calculators": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://education.ti.com/",
@@ -3939,19 +3939,19 @@
           "title": "Algebra 1: Seven Important Calculator Functions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-casio-g-shock-classic-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": []
     },
     "durable-seiko-mechanical-automatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-03T03:20:11.175222Z",
+      "attempted_at": "2026-11-03T09:19:32.794461Z",
       "items": [
         {
           "url": "https://www.seikowatches.com/us-en/products/diamondcollection",
@@ -3959,7 +3959,7 @@
           "title": "photo of diamond collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3968,7 +3968,7 @@
           "title": "image of new model",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3977,7 +3977,7 @@
           "title": "image of limited edition watch",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3986,7 +3986,7 @@
           "title": "image of diver category",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3995,7 +3995,7 @@
           "title": "King Seiko | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4004,7 +4004,7 @@
           "title": "Prospex | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4013,7 +4013,7 @@
           "title": "Presage | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-03T03:20:11.175222Z",
+          "checked_at": "2026-11-03T09:19:32.794461Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
