@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T15:01:33.536923Z",
+  "checked_at": "2026-11-03T15:31:34.541645Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "elder scrolls 6",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T15:10:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/articles/the-elder-scrolls-6-sentinel-name-logo-officially-revealed-as-bethesda-marks-40th-anniversary",
+        "https://www.techpowerup.com/354377/the-elder-scrolls-vi-reportedly-titled-sentinel-set-in-hammerfell",
+        "https://www.theverge.com/news/1025273/the-elder-scrolls-vi-sentinel-name-announcement"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp_3_CFd8PlcrebVIcpYEn6woBUTGgwKp09Db-MrEGzSfTUgvHxrFkPqVpjlE",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/articles/the-elder-scrolls-6-sentinel-name-logo-officially-revealed-as-bethesda-marks-40th-anniversary",
+          "title": "The Elder Scrolls 6: Sentinel Name, Logo, Officially Revealed as Bethesda Marks 40th Anniversary",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp_3_CFd8PlcrebVIcpYEn6woBUTGgwKp09Db-MrEGzSfTUgvHxrFkPqVpjlE"
+        },
+        {
+          "url": "https://www.techpowerup.com/354377/the-elder-scrolls-vi-reportedly-titled-sentinel-set-in-hammerfell",
+          "title": "The Elder Scrolls VI Reportedly Titled Sentinel, Set in Hammerfell",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCJRBesQ_F2wmK1yA_RLd7nmbBmrcjCh3jCvdZAQpC8RyUPeg3MYShlsHFIL0"
+        },
+        {
+          "url": "https://www.theverge.com/news/1025273/the-elder-scrolls-vi-sentinel-name-announcement",
+          "title": "The Elder Scrolls VI officially has a name: Sentinel",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPicUlsawmEtaGT_Zc-v2cYa1uA_Fgmnh4M_e487gs8wMtMUstudfGT6Z7rkQ"
+        }
+      ]
+    },
+    {
+      "query": "lego godzilla",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T14:50:00Z",
+      "related_news_urls": [
+        "https://jaysbrickblog.com/news/massive-lego-21375-godzilla-stomps-into-your-collection-on-black-friday-2026/",
+        "https://www.jedinews.com/lego/articles/lego-ideas-godzilla-and-gift-with-purchase-available-november-27th/",
+        "https://stonewars.com/news/lego-40888-godzilla-logo-gwp-revealed/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5Va3KgJLOCdMeKrb1EO1fXmGhm9LnemWtEz7E8VATCsExUHXsAguWASA9CDM",
+      "image_credit": "Jay's Brick Blog",
+      "news": [
+        {
+          "url": "https://jaysbrickblog.com/news/massive-lego-21375-godzilla-stomps-into-your-collection-on-black-friday-2026/",
+          "title": "Massive LEGO 21375 Godzilla stomps into your collection on Black Friday 2026",
+          "publisher": "Jay's Brick Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5Va3KgJLOCdMeKrb1EO1fXmGhm9LnemWtEz7E8VATCsExUHXsAguWASA9CDM"
+        },
+        {
+          "url": "https://www.jedinews.com/lego/articles/lego-ideas-godzilla-and-gift-with-purchase-available-november-27th/",
+          "title": "LEGO Ideas Godzilla and Gift with Purchase, Available November 27th",
+          "publisher": "Jedi News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnclf-pRTeKJ41o002-SETTbA558W_b74_EXOD_f0riR1wpaof-k4w3puqpu4"
+        },
+        {
+          "url": "https://stonewars.com/news/lego-40888-godzilla-logo-gwp-revealed/",
+          "title": "LEGO Godzilla Logo with Footprint (40888) GWP Revealed",
+          "publisher": "StoneWars.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYK7WKF1Qls2ecQTljP7dCFvrxfPDAIyMM29nVe2Lm-ELi3mcugi1VqvSKlK4"
+        }
+      ]
+    },
+    {
+      "query": "playstation store black friday 2026",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T14:40:00Z",
+      "related_news_urls": [
+        "https://blog.playstation.com/2026/11/03/playstations-black-friday-deals-2026/",
+        "https://www.pushsquare.com/features/last-chance-to-buy-these-50plus-ps5-ps4-games-in-ps-stores-planet-of-the-deals-sale",
+        "https://www.nj.com/shopping-deals/2026/10/should-you-wait-for-the-playstation-black-friday-sale-what-shoppers-should-know.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA74Sc0lGgJWVMTaISRLxub9jiyffENotHRJeJ3Ai87fzHIddV224yLV-e_JQ",
+      "image_credit": "PlayStation.Blog",
+      "news": [
+        {
+          "url": "https://blog.playstation.com/2026/11/03/playstations-black-friday-deals-2026/",
+          "title": "PlayStation Store’s Black Friday Deals 2026",
+          "publisher": "PlayStation.Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA74Sc0lGgJWVMTaISRLxub9jiyffENotHRJeJ3Ai87fzHIddV224yLV-e_JQ"
+        },
+        {
+          "url": "https://www.pushsquare.com/features/last-chance-to-buy-these-50plus-ps5-ps4-games-in-ps-stores-planet-of-the-deals-sale",
+          "title": "Last Chance to Buy These 50+ PS5, PS4 Games in PS Store's Planet of the Deals Sale",
+          "publisher": "Push Square",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR02yH63qXB9KDyvWVHjIpIXAobDhHaqd97cZRevfd9abSFOI-AYwTTh7sbjCs"
+        },
+        {
+          "url": "https://www.nj.com/shopping-deals/2026/10/should-you-wait-for-the-playstation-black-friday-sale-what-shoppers-should-know.html",
+          "title": "Should you wait for the PlayStation Black Friday sale? What shoppers should know",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ihbasjpq3ahdLdqTn9qmlU3UreOH2t3urDmSIA8NdTsiJJL59LcBLGHr_bY"
+        }
+      ]
+    },
+    {
+      "query": "where can i drop off my ballot",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T14:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcchicago.com/illinois-election-2026/still-have-a-mail-in-ballot-for-this-years-election-heres-what-to-do/4010398/",
+        "https://www.miamistudent.net/article/2026/11/students-at-miami-university-navigate-ohios-new-voting-laws-ahead-of-2026-election",
+        "https://www.dispatch.com/story/news/politics/elections/2026/11/02/ohio-mail-in-ballots-due-election-day-2026-drop-off-locations/92561885007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MH227XtiVSEabGjEWi1vJUzsu6liNMYu0WPsbpoyCFPVdlx6sgBA1Vb0A8E",
+      "image_credit": "NBC 5 Chicago",
+      "news": [
+        {
+          "url": "https://www.nbcchicago.com/illinois-election-2026/still-have-a-mail-in-ballot-for-this-years-election-heres-what-to-do/4010398/",
+          "title": "Still have a mail-in ballot for this year's election? Here's what to do",
+          "publisher": "NBC 5 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MH227XtiVSEabGjEWi1vJUzsu6liNMYu0WPsbpoyCFPVdlx6sgBA1Vb0A8E"
+        },
+        {
+          "url": "https://www.miamistudent.net/article/2026/11/students-at-miami-university-navigate-ohios-new-voting-laws-ahead-of-2026-election",
+          "title": "Students at Miami University navigate Ohio’s new voting laws ahead of 2026 election",
+          "publisher": "The Miami Student",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO18yswF0IrRBDNq36PH6vFfdLq4NZ13APdCvc_b55k9WJOsdEOI6HM5_mLhI"
+        },
+        {
+          "url": "https://www.dispatch.com/story/news/politics/elections/2026/11/02/ohio-mail-in-ballots-due-election-day-2026-drop-off-locations/92561885007/",
+          "title": "Why you should plan to drop off your Ohio mail-in ballot on Election Day",
+          "publisher": "The Columbus Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSazpLypJcmAJ27cfWd1RSmlqzCGhda0YquyO8mOf-yxjla-LHb3p0KfMDZK3A"
+        }
+      ]
+    },
+    {
+      "query": "senate election results today",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-03T14:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/2026-elections/senate-results",
+        "https://www.nytimes.com/2026/11/01/us/politics/times-siena-poll-senate.html",
+        "https://edition.cnn.com/2026/11/02/politics/live-news/midterm-election-congress"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSae5cL1NQMpcSF4zen8MIg4QYvMmrD5EatzybzYjtHCrOYMUm5Wfoq7I_EC5I",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/senate-results",
+          "title": "U.S. Senate Midterm Election Live Results 2026",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSae5cL1NQMpcSF4zen8MIg4QYvMmrD5EatzybzYjtHCrOYMUm5Wfoq7I_EC5I"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/01/us/politics/times-siena-poll-senate.html",
+          "title": "Democrats Show Strength in Final Days of Race for the Senate, New Polls Find",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkbuLYVmaTI89TjldZDwQ6RGvnB-ZYYXnHK8lihZsw6RCnKiYMzVskoB4Tw04"
+        },
+        {
+          "url": "https://edition.cnn.com/2026/11/02/politics/live-news/midterm-election-congress",
+          "title": "From Alaska to Michigan, candidates highlight critical stakes of Senate control in closing messages",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwqSqs9B0I8sfo727VvlYjfJ-cRv2SO25RAhKSjxJMdUQfD1Bcdp7ciPTE6WM"
+        }
+      ]
+    },
     {
       "query": "anthem",
       "approx_searches": "5000+",
@@ -112,176 +287,44 @@
       ]
     },
     {
-      "query": "taxes",
+      "query": "kedon slovis",
       "approx_searches": "10000+",
       "published_at": "2026-11-03T14:20:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/03/poison-pill-ballot-measure-could-kill-california-billionaire-tax-.html",
-        "https://www.cbsnews.com/sanfrancisco/news/california-proposition-40-billionaire-wealth-tax/",
-        "https://www.washingtonpost.com/opinions/2026/11/01/massachusetts-has-warning-california-washington-about-taxes/"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-adding-qb-kedon-slovis-off-packers-practice-squad",
+        "https://www.baltimoreravens.com/news/kedon-slovis-reportedly-signs-with-ravens-as-backup-quarterback",
+        "https://www.baltimorebeatdown.com/baltimore-ravens-news/87363/ravens-sign-qb-austin-reed-to-practice-squad"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1zPZaFLLrozWMbqju-xf2aSCO-TJUKEexKBsG-7LWc5RhwSr38lYdaPSM2Wo",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVMHHylJGEh5rrVqicx_NLkeUsMcEQ33eHUJZTvUyvi5LXoKpMwgSXxMrZiDk",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/03/poison-pill-ballot-measure-could-kill-california-billionaire-tax-.html",
-          "title": "The 'poison pill' ballot measure that could kill the California billionaire tax",
-          "publisher": "CNBC",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-adding-qb-kedon-slovis-off-packers-practice-squad",
+          "title": "Ravens adding QB Kedon Slovis off Packers’ practice squad",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1zPZaFLLrozWMbqju-xf2aSCO-TJUKEexKBsG-7LWc5RhwSr38lYdaPSM2Wo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVMHHylJGEh5rrVqicx_NLkeUsMcEQ33eHUJZTvUyvi5LXoKpMwgSXxMrZiDk"
         },
         {
-          "url": "https://www.cbsnews.com/sanfrancisco/news/california-proposition-40-billionaire-wealth-tax/",
-          "title": "Californians to decide whether to tax billionaires with Proposition 40 vote",
-          "publisher": "CBS News",
+          "url": "https://www.baltimoreravens.com/news/kedon-slovis-reportedly-signs-with-ravens-as-backup-quarterback",
+          "title": "Reports: Ravens to Sign Quarterback Kedon Slovis",
+          "publisher": "Baltimore Ravens",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSknOvTw-_9HrofzIRoIXG6C2gJuwzLb-jSpJzc7ef9ZapjMs5PZByBXt41XbQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIcQKzR0UAa78EUUbsXjb9LKc_kAumSEbCutChokaeGgJssMzKdCZSoDKx1Ho"
         },
         {
-          "url": "https://www.washingtonpost.com/opinions/2026/11/01/massachusetts-has-warning-california-washington-about-taxes/",
-          "title": "Opinion | Massachusetts has a warning for California and Washington voters",
-          "publisher": "The Washington Post",
+          "url": "https://www.baltimorebeatdown.com/baltimore-ravens-news/87363/ravens-sign-qb-austin-reed-to-practice-squad",
+          "title": "Ravens sign QB Austin Reed to practice squad",
+          "publisher": "Baltimore Beatdown",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7aHZaIUKg9GyladMLoSshQCC3v_Q2wTweGb9VlvRrZyWzjGLZLY90By90cdA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLO34X8OYTXv5FXNPs9YfXowAWEieQX_iD9JrMxPPx0m_MBrGSreie3mTrWS8"
         }
       ]
     },
     {
-      "query": "spectrum outage",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T14:20:00Z",
-      "related_news_urls": [
-        "https://www.bhpioneer.com/local_news/internet-outage-prompts-auditors-to-make-calls-to-verify-voters/article_9719d335-b359-4d2a-82c9-b9baba1989e4.html",
-        "https://z1077fm.com/basin-wide-frontier-internet-outage-blamed-on-vandals-cutting-cables/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2EfBKQqq7Y-okWG_V-Pioc5venh_0A9xG9R38niT6tl_wl6YVsx5A-bH1fcQ",
-      "image_credit": "Black Hills Pioneer",
-      "news": [
-        {
-          "url": "https://www.bhpioneer.com/local_news/internet-outage-prompts-auditors-to-make-calls-to-verify-voters/article_9719d335-b359-4d2a-82c9-b9baba1989e4.html",
-          "title": "Internet outage prompts auditors to make calls to verify voters",
-          "publisher": "Black Hills Pioneer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2EfBKQqq7Y-okWG_V-Pioc5venh_0A9xG9R38niT6tl_wl6YVsx5A-bH1fcQ"
-        },
-        {
-          "url": "https://z1077fm.com/basin-wide-frontier-internet-outage-blamed-on-vandals-cutting-cables/",
-          "title": "Basin-wide Frontier internet outage blamed on vandals cutting cables",
-          "publisher": "Z107.7 FM Joshua Tree",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZAXBN71pS35nvpZ_VdaPEsPAflGAJfr0bUSpK_wx7iXXn1vDa61i5A24SrPI"
-        }
-      ]
-    },
-    {
-      "query": "jon ossoff",
+      "query": "djokovic",
       "approx_searches": "1000+",
       "published_at": "2026-11-03T14:20:00Z",
-      "related_news_urls": [
-        "https://www.ajc.com/politics/2026/11/jon-ossoff-commanding-win-mike-collins/",
-        "https://www.pbs.org/newshour/politics/live-results-georgia-senate-midterm-election",
-        "https://www.nbcnews.com/politics/2026-election/jon-ossoff-builds-senate-race-lead-georgia-governor-candidates-voters-rcna604857"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtn07ocChuo9mtu60OWNzL_Qhm-0Ntoax_IFr38VhfAURd46A2-zJTltuznVM",
-      "image_credit": "The Atlanta Journal-Constitution",
-      "news": [
-        {
-          "url": "https://www.ajc.com/politics/2026/11/jon-ossoff-commanding-win-mike-collins/",
-          "title": "Jon Ossoff, once vulnerable, seeks a commanding win over Mike Collins",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtn07ocChuo9mtu60OWNzL_Qhm-0Ntoax_IFr38VhfAURd46A2-zJTltuznVM"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/politics/live-results-georgia-senate-midterm-election",
-          "title": "Live Results: Georgia Senate midterm election",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRylDFnHYLy-9RfCusLcfN4NajVqKq6SqXYSyQyHhLJuPZW2kZEZxxzyfGvS8"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/2026-election/jon-ossoff-builds-senate-race-lead-georgia-governor-candidates-voters-rcna604857",
-          "title": "As Jon Ossoff builds a Senate race lead, Georgia governor candidates vie for his backers",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTImti8RoHDtA_w4gbmKfoQ5BVkNWCbsHT2qr-YeXO5kq9-X9I8Nm6E5GsMHkw"
-        }
-      ]
-    },
-    {
-      "query": "lawsuit",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-03T14:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/education/2026/nov/03/harvard-trump-lawsuit-dismissed-admissions-data",
-        "https://www.yahoo.com/news/politics/articles/federal-judge-dismisses-lawsuit-against-131346942.html",
-        "https://www.washingtonpost.com/education/2026/11/02/judge-dismisses-trump-administration-lawsuit-against-harvard-admissions/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaPRM_TFQqAZAews_NQLx_8KANcAD3Jvxmzs9m_HxOcBhPnLrmX4xeP8x9jY0",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/education/2026/nov/03/harvard-trump-lawsuit-dismissed-admissions-data",
-          "title": "Federal judge dismisses Trump lawsuit seeking Harvard admissions data",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaPRM_TFQqAZAews_NQLx_8KANcAD3Jvxmzs9m_HxOcBhPnLrmX4xeP8x9jY0"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/federal-judge-dismisses-lawsuit-against-131346942.html",
-          "title": "Federal judge dismisses lawsuit against Harvard over federal demand for admissions data",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzhMiNoFRIpu2a-TdZTJnakh3DWITe2c-aq0wRE9VOIR6NBRuQ01Hb4zNf5JQ"
-        },
-        {
-          "url": "https://www.washingtonpost.com/education/2026/11/02/judge-dismisses-trump-administration-lawsuit-against-harvard-admissions/",
-          "title": "Judge dismisses Trump administration lawsuit against Harvard on admissions",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiNH2KxKpcfXVg8iwNnYJCNswYj7Gw3rrQFr_l1y6F7h89MqWBWCcCIRqzwjo"
-        }
-      ]
-    },
-    {
-      "query": "roger marshall",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T14:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/01/us/elections/roger-marshall-ad-kansas-senate-race.html",
-        "https://www.theatlantic.com/newsletters/2026/11/who-thought-this-ad-was-a-good-idea/689258/",
-        "https://www.washingtonpost.com/politics/2026/11/01/roger-marshalls-closing-message-kansas-is-defense-patient-lawsuits/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAXblW6Rg6RPk-nD0BZtbOwHHMM7h_TQMQdDiWVyxJ02Zlg-VOp8OKK-kTarY",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/01/us/elections/roger-marshall-ad-kansas-senate-race.html",
-          "title": "Roger Marshall Goes Rogue in Kansas Senate Race With a Video",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAXblW6Rg6RPk-nD0BZtbOwHHMM7h_TQMQdDiWVyxJ02Zlg-VOp8OKK-kTarY"
-        },
-        {
-          "url": "https://www.theatlantic.com/newsletters/2026/11/who-thought-this-ad-was-a-good-idea/689258/",
-          "title": "Who Thought This Ad Was a Good Idea?",
-          "publisher": "The Atlantic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmxOxyRjYWSXUw_iJQQTNBTbuW8fjgM1q28YZX9DPs6KC8o1VGNlXWJY6dcoU"
-        },
-        {
-          "url": "https://www.washingtonpost.com/politics/2026/11/01/roger-marshalls-closing-message-kansas-is-defense-patient-lawsuits/",
-          "title": "Marshall’s closing message in Kansas is a defense of his lawsuits against patients",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJZos050UgY97QLtliTgZewRHJsxQTs_nKfVz5BbxwyoOBgL_c1pzbBTTvymk"
-        }
-      ]
-    },
-    {
-      "query": "valentin vacherot",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T14:10:00Z",
       "related_news_urls": [
         "https://www.atptour.com/en/news/vacherot-feature-paris-2026-r1",
         "https://tenngrand.com/paris-tennis-previews-picks-predictions-djokovic-vs-vacherot-paul-rune/",
@@ -310,41 +353,6 @@
           "publisher": "Tennis World USA",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUdELViP-eUrnh_oZZPQ_qVlKlfty6-qk8ua1ydfwgjuxcBzspEX94JSPzoKQ"
-        }
-      ]
-    },
-    {
-      "query": "dalen terry",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T14:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50368707/sources-thunder-agree-2-year-deal-dalen-terry",
-        "https://sports.yahoo.com/articles/dalen-terry-departs-warriors-g-141958779.html",
-        "https://bleacherreport.com/articles/25528883-thunder-reportedly-sign-former-1st-round-nba-draft-pick-amid-holmgren-williams-wallace-injuries"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw7_EiM9T6iN5irQoUDfbXc26l_moPXWdzJorXynAGM4IUMMcgnqqRsGXXQO0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50368707/sources-thunder-agree-2-year-deal-dalen-terry",
-          "title": "Sources: Injury-plagued Thunder agree to 2-year deal with veteran Dalen Terry",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw7_EiM9T6iN5irQoUDfbXc26l_moPXWdzJorXynAGM4IUMMcgnqqRsGXXQO0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/dalen-terry-departs-warriors-g-141958779.html",
-          "title": "Dalen Terry departs the Warriors' G League team in …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoHLPAQ2pjXDnA16c5279NWOZK0ZCHd5NUaYpC85HQKj_PzigU1FrscD5pKiE"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25528883-thunder-reportedly-sign-former-1st-round-nba-draft-pick-amid-holmgren-williams-wallace-injuries",
-          "title": "Thunder Reportedly Sign Former 1st-Round NBA Draft Pick Amid Holmgren, Williams, Wallace Injuries",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRRmV8wd-Y5NgqxrpXdwhzXHe7Cg1w757L_sIMOdlBmRO9lVhTZru7WRilKc4"
         }
       ]
     }
