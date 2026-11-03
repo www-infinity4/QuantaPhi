@@ -6,8 +6,8 @@
 <meta http-equiv="Cache-Control" content="no-store">
 <meta name="color-scheme" content="light">
 <title>Bubbles · Identity & Documents Settings | QuantaPhi</title>
-<link rel="stylesheet" href="/bubbles-identity-settings.css?v=20261101-id1">
-<script type="module" src="/bubbles-identity-settings.mjs?v=20261101-id1"></script>
+<link rel="stylesheet" href="/bubbles-identity-settings.css?v=20261103-id2">
+<script type="module" src="/bubbles-identity-settings.mjs?v=20261103-id2"></script>
 </head>
 <body class="is-page">
 <header class="is-top">
@@ -26,8 +26,14 @@
   <form id="identityPlanningForm" autocomplete="off" novalidate>
    <div class="is-grid">
     <label>Full name<input name="name" maxlength="100" autocomplete="off" placeholder="Enter for this session only"></label>
+    <label>Preferred name<input name="preferredName" maxlength="100" autocomplete="off" placeholder="Optional · session only"></label>
+    <label>Contact email<input name="email" type="email" inputmode="email" maxlength="140" autocomplete="off" placeholder="Optional · not saved"></label>
     <label>Business or organization<input name="business" maxlength="120" placeholder="Optional"></label>
-    <label>Phone number<input name="phone" type="tel" maxlength="28" placeholder="Optional"></label>
+    <label>Phone number<input name="phone" type="tel" maxlength="28" autocomplete="off" placeholder="Optional"></label>
+    <label>City<input name="city" maxlength="90" autocomplete="off" placeholder="Optional"></label>
+    <label>State / province<input name="region" maxlength="80" autocomplete="off" placeholder="Optional"></label>
+    <label>Postal code<input name="postalCode" maxlength="18" autocomplete="off" placeholder="Optional"></label>
+    <label>Country<input name="country" maxlength="80" autocomplete="off" placeholder="Optional"></label>
     <label>Household members<input name="householdSize" type="number" min="1" max="30" step="1" value="1"></label>
     <label>Monthly household income ($)<input name="income" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Optional"></label>
     <label>Estimated household assets ($)<input name="assets" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Optional"></label>
@@ -40,13 +46,22 @@
    <div class="is-actions"><button type="submit" class="is-btn is-primary">Preview this session</button><button type="reset" class="is-btn">Clear this form</button></div>
   </form>
   <output id="identityProfileOutput" class="is-output" aria-live="polite"></output>
-  <p class="is-caption">Date of birth, Social Security number, government ID, payment cards and bank account numbers will use the separate locked-down verification vault when its authenticated private intake is ready. Nothing on this page can declare an account verified.</p>
+  <p class="is-caption">This is an unsaved contact and household worksheet, not an account profile update. Full street addresses, date of birth, Social Security numbers, government IDs, payment cards and bank details require a separately authenticated private service. Nothing on this page can declare an account verified.</p>
  </section>
  <section class="is-panel" aria-labelledby="docsHeading">
   <div class="is-panel-head"><h2 id="docsHeading">Document checklist</h2><small>Mark what you have · no files uploaded</small></div>
   <div id="identityDocumentChecklist" class="is-checklist"></div>
   <div class="is-actions"><button id="identityClearChecklist" class="is-btn" type="button">Clear selections</button><span id="identityDocumentCount" aria-live="polite"></span></div>
   <p class="is-caption">For identity security, a government ID, Social Security card, bill, bank statement or credit card is not conclusive proof by itself. Verification requires corroboration and an authenticated applicant.</p>
+ </section>
+ <section class="is-panel" aria-labelledby="verificationHeading">
+  <h2 id="verificationHeading">Identity verification is not enabled</h2>
+  <p class="is-caption">Your Cloudflare identity vault has database tables, but the private document intake and verification workflow have not passed their release checks. Nothing you type in the worksheet is uploaded, stored, reviewed, or used to verify an account.</p>
+  <div class="is-link-grid">
+   <div class="is-link"><strong>Government ID and age</strong><span>Locked until authenticated document intake and independent security review are complete.</span></div>
+   <div class="is-link"><strong>Social Security and benefits</strong><span>Not collected here. Only request the minimum necessary in a separate protected, consented process.</span></div>
+   <div class="is-link"><strong>Payment and bank connections</strong><span>Use authorized provider connections; no card or account numbers go in this worksheet.</span></div>
+  </div>
  </section>
  <section class="is-panel" aria-labelledby="connectedHeading">
   <h2 id="connectedHeading">Your existing settings & official benefits</h2>
