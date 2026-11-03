@@ -12,7 +12,7 @@ export function showQuickCardMatches(query){
  host.replaceChildren();host.hidden=!cards.length;
  if(!cards.length)return cards;
  host.append(el('h2','','Matching Quick Cards'),el('p','qsr-query','For “'+String(query).slice(0,160)+'”'));
- if(cards.some(c=>c.id.startsWith('discovered-')))host.append(el('p','qsr-discovery-note','Website preview saved on this device from a search result. Independent, not publisher-authorized or a live checkout.'));
+ if(cards.some(c=>c.id.startsWith('discovered-')))host.append(el('p','qsr-discovery-note','Website preview saved on this device from a search result or a website you entered. Independent, not publisher-authorized or a live checkout.'));
  const grid=el('div','qsr-grid');host.append(grid);
  for(const card of cards){
   const article=el('article','qsr-card');article.dataset.quickCardMatch=card.id;
