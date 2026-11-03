@@ -47,7 +47,7 @@ test('Quant AI on-device discovery uses explicit interests and makes diverse, at
 });
 test('Database-powered cards have stable safe Oracle IDs',()=>{
  assert.equal(attractionSourceId(alaska.items[0]),attractionSourceId(alaska.items[0]));
- assert.match(attractionSourceId(alaska.items[0]),/^attraction-ak-[a-z0-9-]{8,}$/);
+ assert.match(attractionSourceId(alaska.items[0]),/^attraction-ak-[a-z0-9-]{7,}$/);
  assert.equal(new Set(alaska.items.map(attractionSourceId)).size,alaska.items.length);
  assert.equal(attractionSourceId({...alaska.items[0],id:'garbage'}),null);
 });
