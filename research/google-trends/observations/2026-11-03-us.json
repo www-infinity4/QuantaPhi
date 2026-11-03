@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T10:31:39.958931Z",
+  "checked_at": "2026-11-03T11:01:30.551664Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "bruins score",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T10:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/recap/_/gameId/401892614",
+        "https://www.nhl.com/video/chi-bos-lindholm-scores-goal-against-arvid-soderblom-6407722024112",
+        "https://www.stanleycupofchowder.com/gameday-open-threads/59594/public-skate-bruins-vs-blackhawks"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFRsp_odaeGvYIdaXQVUf1tepXkwsU562ItjBe08kBTVFHFNAYnK5eYx-i0ZQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892614",
+          "title": "Bruins 5-4 Blackhawks (Oct 31, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFRsp_odaeGvYIdaXQVUf1tepXkwsU562ItjBe08kBTVFHFNAYnK5eYx-i0ZQ"
+        },
+        {
+          "url": "https://www.nhl.com/video/chi-bos-lindholm-scores-goal-against-arvid-soderblom-6407722024112",
+          "title": "Lindholm nets overtime winner",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQTzEErT-nEBSCM4-MoyvGl_GXscFX6Krp7ncYt1ANfEjTaDvRtYCwdBZpmY"
+        },
+        {
+          "url": "https://www.stanleycupofchowder.com/gameday-open-threads/59594/public-skate-bruins-vs-blackhawks",
+          "title": "Public Skate: Bruins vs. Blackhawks",
+          "publisher": "Stanley Cup of Chowder",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMJlAMfErG_251rtQlSxgeyKJxLgDKWNDTRUoGq39NcEgX-VKbYD3kQLGrbyM"
+        }
+      ]
+    },
+    {
+      "query": "strands hint today",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T10:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/02/crosswords/strands-sidekick-975.html",
+        "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-3-975/",
+        "https://parade.com/living/nyt-strands-hints-answers-today-spangram-monday-november-2-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3URhzpDsLzns_G724qG_kzhaDbfv6aKsj_WRe0J8UZQW67vbOuArCssL4RJ8",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/02/crosswords/strands-sidekick-975.html",
+          "title": "NYT Strands Hints for November 3, 2026",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3URhzpDsLzns_G724qG_kzhaDbfv6aKsj_WRe0J8UZQW67vbOuArCssL4RJ8"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-3-975/",
+          "title": "Today’s NYT Strands Hints, Spangram and Answers for Tuesday, Nov. 3, #975",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-JCWL-geJx4ZmEuJSL2MbatsaViOuWBrYsFoL_UcSGxPWQxX7f99YbDZYeQ"
+        },
+        {
+          "url": "https://parade.com/living/nyt-strands-hints-answers-today-spangram-monday-november-2-2026",
+          "title": "Today’s NYT ‘Strands’ Hints, Spangram and Answers for Monday, November 2, 2026",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKT7N-NENi-M1urPRqYiuOG0BccxyNP6xTizjmpyXv-fngfMCGZtebUyv2HAM"
+        }
+      ]
+    },
+    {
+      "query": "wptv",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T10:40:00Z",
+      "related_news_urls": [
+        "https://www.witn.com/2026/11/02/national-hurricane-center-is-monitoring-an-area-off-east-coast/",
+        "https://www.wtok.com/2026/11/02/first-alert-one-area-interest-monitor-atlantic/",
+        "https://www.news4jax.com/news/local/2026/11/02/tracking-the-tropics-watching-a-spot-in-the-atlantic/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEJYfu6Xy8r3o5xIVc9FrYBMRkP01FmMYZldHgLlx2r6brL6PujJe2r7c4D0k",
+      "image_credit": "WITN",
+      "news": [
+        {
+          "url": "https://www.witn.com/2026/11/02/national-hurricane-center-is-monitoring-an-area-off-east-coast/",
+          "title": "National Hurricane Center is monitoring an area off the East Coast",
+          "publisher": "WITN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEJYfu6Xy8r3o5xIVc9FrYBMRkP01FmMYZldHgLlx2r6brL6PujJe2r7c4D0k"
+        },
+        {
+          "url": "https://www.wtok.com/2026/11/02/first-alert-one-area-interest-monitor-atlantic/",
+          "title": "First Alert: One area of interest to monitor in the Atlantic",
+          "publisher": "WTOK",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDVCvk2adjv1ND1Nqi8C5rJhcXDupmSxnaZmYK8vGlhO2w7zUlPsj_uoPKPSI"
+        },
+        {
+          "url": "https://www.news4jax.com/news/local/2026/11/02/tracking-the-tropics-watching-a-spot-in-the-atlantic/",
+          "title": "Tracking the Tropics: Watching a spot in the Atlantic",
+          "publisher": "News4JAX",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRz29YP2tlkCjIfeoPk-ld06w9Z3t3JvfvcMGB5QKCniWjLAj6hjcOd1yZoUs"
+        }
+      ]
+    },
+    {
+      "query": "the new york times",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T10:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/02/opinion/trump-midterms-history.html",
+        "https://www.usatoday.com/story/news/politics/2026/11/03/trump-republicans-midterm-reckoning-blue-wave-election/92497949007/",
+        "https://english.elpais.com/usa/2026-11-02/united-states-holds-referendum-on-the-end-of-trumpism.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQs9xFJtuYGvZu9-nZVPMGB-yde0pnnrunLGU_afuc6-hE3yB-wLR8mnmaOwZQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/02/opinion/trump-midterms-history.html",
+          "title": "Opinion | Don’t Be a Haley Stevens",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQs9xFJtuYGvZu9-nZVPMGB-yde0pnnrunLGU_afuc6-hE3yB-wLR8mnmaOwZQ"
+        },
+        {
+          "url": "https://www.usatoday.com/story/news/politics/2026/11/03/trump-republicans-midterm-reckoning-blue-wave-election/92497949007/",
+          "title": "Trump's midterm reckoning: A repudiation or triumph awaits",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZiPEFL6-2AeJn2elPEZqwvMpEpPyXrjTfHJIkEfpIBcZ8CYLVXX9tSd3NJYs"
+        },
+        {
+          "url": "https://english.elpais.com/usa/2026-11-02/united-states-holds-referendum-on-the-end-of-trumpism.html",
+          "title": "United States holds referendum on the end of Trumpism",
+          "publisher": "EL PAÍS English",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREP_QkGpFoQCTSuMdSzRdR2VoEQZH0j0GG4ucEqNvpJ093_kJjS62Ls2XdDmM"
+        }
+      ]
+    },
+    {
+      "query": "samsung vs kt",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T10:20:00Z",
+      "related_news_urls": [
+        "https://www.chosun.com/english/sports-en/2026/11/03/JQWFFOMDJZEQHMORKBGC3ZKZGQ/",
+        "https://www.starnewskorea.com/en/sports/2026/11/03/2026110213022342219",
+        "https://biz.chosun.com/en/en-sports/2026/11/03/FKLAKZE7QJE3HGF66LB3XRWWCU/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQraYiRiwsLB28jPFtm-mMk8kYKVyaIjT3TonDNgw30OVsh9ciVHaxz_XCHP5U",
+      "image_credit": "조선일보",
+      "news": [
+        {
+          "url": "https://www.chosun.com/english/sports-en/2026/11/03/JQWFFOMDJZEQHMORKBGC3ZKZGQ/",
+          "title": "Samsung Manager Persuades Injured Veterans to Play",
+          "publisher": "조선일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQraYiRiwsLB28jPFtm-mMk8kYKVyaIjT3TonDNgw30OVsh9ciVHaxz_XCHP5U"
+        },
+        {
+          "url": "https://www.starnewskorea.com/en/sports/2026/11/03/2026110213022342219",
+          "title": "\"(In a) poor condition, largely unchanged\" Kang Min-ho, KS Game 1: We'll see when the time comes! With Koo Ja-wook's injury and 43-year-old Choi Hyeong-woo even at left field, 'Wha",
+          "publisher": "스타뉴스",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFD6c5S51pkmvNc5XITYFqgtSyZ-LJHBE8lPRWUqr5D0Ze5ou6SWbFWmxEHbA"
+        },
+        {
+          "url": "https://biz.chosun.com/en/en-sports/2026/11/03/FKLAKZE7QJE3HGF66LB3XRWWCU/",
+          "title": "Woo Kyu-min reaches Korea Series and vows to beat former team Samsung",
+          "publisher": "Chosunbiz",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7F8i8YOADQ_6K-qpOmYg4BYI76-X1WaCxWwZQmJA4A5YODHANWxw-tUaTQFE"
+        }
+      ]
+    },
+    {
+      "query": "bert mizusawa",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T10:20:00Z",
+      "related_news_urls": [
+        "https://www.alexandriabrief.com/warner-closes-his-last-campaign-at-home-in-alexandria/",
+        "https://www.roanokerambler.com/what-mark-warners-record-means-for-roanoke/",
+        "https://www.cavalierdaily.com/article/2026/10/gop-senate-candidate-bert-mizusawa-makes-stop-at-uva"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQmIO1Fo0sC_bn3MuIe7OQ2EEVyuQk3Bvmdjs6geLxeA2iIvH-H7m4n7fU0so",
+      "image_credit": "The Alexandria Brief",
+      "news": [
+        {
+          "url": "https://www.alexandriabrief.com/warner-closes-his-last-campaign-at-home-in-alexandria/",
+          "title": "Warner closes his last campaign at home in Alexandria",
+          "publisher": "The Alexandria Brief",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQmIO1Fo0sC_bn3MuIe7OQ2EEVyuQk3Bvmdjs6geLxeA2iIvH-H7m4n7fU0so"
+        },
+        {
+          "url": "https://www.roanokerambler.com/what-mark-warners-record-means-for-roanoke/",
+          "title": "What Mark Warner's Record Means for Roanoke",
+          "publisher": "The Roanoke Rambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFIiX4G5sbhmCpdAHcD6KiI5kJsPaLR-JRGx29E1E6Hiula7eOLdUEJyZNNsc"
+        },
+        {
+          "url": "https://www.cavalierdaily.com/article/2026/10/gop-senate-candidate-bert-mizusawa-makes-stop-at-uva",
+          "title": "GOP Senate Candidate Bert Mizusawa makes stop at U.Va.",
+          "publisher": "The Cavalier Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzEcgKIZbsaAPHg-sECf5j7-3grnc_E-oCJHuMNh502xva0r0T1GfKil73fQw"
+        }
+      ]
+    },
+    {
+      "query": "west ham",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T10:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7741703/2026/11/03/west-ham-nuno-sacked/",
+        "https://www.whufc.com/en/news/club-statement-nov-2026",
+        "https://www.theguardian.com/football/2026/nov/03/west-ham-sack-nuno-espirito-santo-as-head-coach"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmbl5iI8jVESFXiUz1kn_gFC2Ubrsjluh9D5MMcABfIG3NJ7sU0O8AHAxMaig",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7741703/2026/11/03/west-ham-nuno-sacked/",
+          "title": "West Ham sack head coach Nuno Espirito Santo",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmbl5iI8jVESFXiUz1kn_gFC2Ubrsjluh9D5MMcABfIG3NJ7sU0O8AHAxMaig"
+        },
+        {
+          "url": "https://www.whufc.com/en/news/club-statement-nov-2026",
+          "title": "Club Statement",
+          "publisher": "West Ham United",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSD18CHgzTzJhFit2zJQV4Na9cXYrTm1arwJ9Nh7kSOluoQq-vcz4wLsjA_qYo"
+        },
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/03/west-ham-sack-nuno-espirito-santo-as-head-coach",
+          "title": "West Ham turn to Scott Parker after sacking Nuno Espírito Santo as head coach",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmDTlCVi979MQXDN3o1mFIgePOFk4ti7QcbtKDAwwTUdcCWq5ERaEoJhO3sjg"
+        }
+      ]
+    },
+    {
+      "query": "jesús de miguel alameda",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T10:10:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17470227/tenerife-murio-jesus-de-miguel-choque-partido",
+        "https://elpais.com/deportes/futbol/2026-11-03/jesus-de-miguel-el-fanatico-del-real-madrid-que-decidio-quedarse-en-tenerife.html",
+        "https://www.marca.com/futbol/2026/11/03/suspenden-partidos-copa-rey-reina-muerte-jesus-miguel.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFMj9FpFqSzFT9fToC1IygcEW1b3IBR9aHgO44CULpq1PZHeA4GMGLl_N5fM4",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17470227/tenerife-murio-jesus-de-miguel-choque-partido",
+          "title": "Muere Jesús de Miguel, jugador de Tenerife, tras choque en partido",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFMj9FpFqSzFT9fToC1IygcEW1b3IBR9aHgO44CULpq1PZHeA4GMGLl_N5fM4"
+        },
+        {
+          "url": "https://elpais.com/deportes/futbol/2026-11-03/jesus-de-miguel-el-fanatico-del-real-madrid-que-decidio-quedarse-en-tenerife.html",
+          "title": "Jesús de Miguel, el fanático del Real Madrid que decidió quedarse en Tenerife",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLAnyY8QuKuRfsQbbT4xu06ae00MvlouahDzZAEt-oxFc7FndFYfBhrxRqAlk"
+        },
+        {
+          "url": "https://www.marca.com/futbol/2026/11/03/suspenden-partidos-copa-rey-reina-muerte-jesus-miguel.html",
+          "title": "Se suspenden los partidos de la Copa del Rey y de la Reina por la muerte de Jesús de Miguel",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGorwldX7uUVELXvMe2BsreOlP8CwuBfQaRUI7KGLD1FlZA1R5u97pP_F9KI"
+        }
+      ]
+    },
     {
       "query": "yard signs",
       "approx_searches": "200+",
@@ -46,19 +326,19 @@
       "approx_searches": "100+",
       "published_at": "2026-11-03T10:10:00Z",
       "related_news_urls": [
-        "https://people.com/sarah-ferguson-lying-low-remain-contact-ex-prince-andrew-amid-epstein-fallout-exclusive-12207145",
+        "https://people.com/sarah-ferguson-pictured-first-time-in-6-months-joins-daughters-beatrice-eugenie-at-memorial-for-ex-boyfriend-12202124",
         "https://www.yahoo.com/entertainment/celebrity/articles/sarah-ferguson-lies-low-uk-061221047.html",
         "https://www.hola.com/us/royals/20261030932329/sarah-ferguson-returns-uk-daughters-year-hiding-emotional-reason/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlQrxLG7fHRl44RxKwrDk8yKfcG7Jiap1neAhT0ydjkMvT12mULj9K1-EuZoA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIj8YH-3OXZe8N2r1CBhMtH4uZVoxeGaB38ccrdIui3361Wm6eo8v1JVPCOmw",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/sarah-ferguson-lying-low-remain-contact-ex-prince-andrew-amid-epstein-fallout-exclusive-12207145",
-          "title": "Sarah Ferguson Is ‘Lying Low’ in U.K. but Remains in Contact with Ex Andrew amid Epstein Fallout (Exclusive)",
+          "url": "https://people.com/sarah-ferguson-pictured-first-time-in-6-months-joins-daughters-beatrice-eugenie-at-memorial-for-ex-boyfriend-12202124",
+          "title": "Sarah Ferguson Pictured for the First Time in 6 Months as She Joins Daughters Beatrice and Eugenie at Memorial for Ex",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlQrxLG7fHRl44RxKwrDk8yKfcG7Jiap1neAhT0ydjkMvT12mULj9K1-EuZoA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIj8YH-3OXZe8N2r1CBhMtH4uZVoxeGaB38ccrdIui3361Wm6eo8v1JVPCOmw"
         },
         {
           "url": "https://www.yahoo.com/entertainment/celebrity/articles/sarah-ferguson-lies-low-uk-061221047.html",
@@ -73,286 +353,6 @@
           "publisher": "HOLA",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1U-PLdDJrX0hXBBdE_EMU_EjXo5JWd5EB1O3vJXJ02vVuiY9mXFUpvgcavVU"
-        }
-      ]
-    },
-    {
-      "query": "jordan mason",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T10:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/jordan-mason-has-20-yards-in-loss-to-lions",
-        "https://www.fantasypros.com/nfl/news/617069/jordan-mason-bottled-up-week-8-loss.php",
-        "https://www.thefantasyfootballers.com/news/645477/jordan-mason-does-little-with-eight-carries/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc2o6k4CheeqLC1aVNNI-XkdVH41MTV9l_kAjPA14v0RLOyhINlxR3MDA0ySU",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/jordan-mason-has-20-yards-in-loss-to-lions",
-          "title": "Jordan Mason has 20 yards in loss to Lions",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc2o6k4CheeqLC1aVNNI-XkdVH41MTV9l_kAjPA14v0RLOyhINlxR3MDA0ySU"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/news/617069/jordan-mason-bottled-up-week-8-loss.php",
-          "title": "Jordan Mason bottled up in Week 8 loss",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dQWSR-8XSdXssbA7tJMbKoDWFnoBhpBAcK1EWkXRgOVl9Og6nkWLa2mhtHI"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/645477/jordan-mason-does-little-with-eight-carries/",
-          "title": "Jordan Mason Does little with eight carries",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT090L0WA22U_9iVnuqkfrkmNAWbuyBCLQa88q7-PjQ4H4nWHG6fggF7XYvK_8"
-        }
-      ]
-    },
-    {
-      "query": "playstation 5",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T10:10:00Z",
-      "related_news_urls": [
-        "https://www.shanethegamer.com/news/sony-offers-up-to-us400-for-unused-ps5s-via-back-market-trade-in-push/",
-        "https://www.pushsquare.com/news/2026/11/sony-wants-you-to-trade-in-your-ps5-for-usd400-if-youre-not-using-it",
-        "https://www.notebookcheck.net/Sony-offers-400-for-used-PS5-consoles-as-GTA-6-buyers-crave-lower-priced-systems.1440435.0.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTokFS7pf3f6lZSYE8R6VoHetqUtfZlOx9mJHNFUZD77P7vUXWfsqxdGWB2s8I",
-      "image_credit": "Shane the Gamer",
-      "news": [
-        {
-          "url": "https://www.shanethegamer.com/news/sony-offers-up-to-us400-for-unused-ps5s-via-back-market-trade-in-push/",
-          "title": "Sony Offers Up to US$400 for Unused PS5s via Back Market Trade-In Push",
-          "publisher": "Shane the Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTokFS7pf3f6lZSYE8R6VoHetqUtfZlOx9mJHNFUZD77P7vUXWfsqxdGWB2s8I"
-        },
-        {
-          "url": "https://www.pushsquare.com/news/2026/11/sony-wants-you-to-trade-in-your-ps5-for-usd400-if-youre-not-using-it",
-          "title": "Sony Wants You to Trade In Your PS5 for $400 if You're Not Using It",
-          "publisher": "Push Square",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnSFdzaVqwlNNtTlp5lECJEt98ZQw4CrxSjGARiZmUXJIJAwKEaZyBn0shJwA"
-        },
-        {
-          "url": "https://www.notebookcheck.net/Sony-offers-400-for-used-PS5-consoles-as-GTA-6-buyers-crave-lower-priced-systems.1440435.0.html",
-          "title": "Sony offers $400 for used PS5 consoles, as GTA 6 buyers crave lower-priced systems",
-          "publisher": "Notebookcheck",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoSY4arEOHt9zXw-piaUL45CP4PeaTivO9TVcxgExM5o33d88YyKuhk6YfKTU"
-        }
-      ]
-    },
-    {
-      "query": "illinois lottery",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T10:00:00Z",
-      "related_news_urls": [
-        "https://www.pjstar.com/story/news/local/2026/11/02/illinois-lottery-results-monday-november-2-2026/92579609007/",
-        "https://www.pjstar.com/story/news/local/2026/10/30/illinois-lottery-results-friday-october-30-2026/92528366007/",
-        "https://www.pjstar.com/story/news/local/2026/11/01/illinois-lottery-results-sunday-november-1-2026/92558918007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0st-0ym5qaMhss_iCqbD63kMDbonumvwkExSHMJKk071y4TsMDE22o1eguUc",
-      "image_credit": "Peoria Journal Star",
-      "news": [
-        {
-          "url": "https://www.pjstar.com/story/news/local/2026/11/02/illinois-lottery-results-monday-november-2-2026/92579609007/",
-          "title": "Illinois Lottery Powerball, Pick 3 results for Nov. 2, 2026",
-          "publisher": "Peoria Journal Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0st-0ym5qaMhss_iCqbD63kMDbonumvwkExSHMJKk071y4TsMDE22o1eguUc"
-        },
-        {
-          "url": "https://www.pjstar.com/story/news/local/2026/10/30/illinois-lottery-results-friday-october-30-2026/92528366007/",
-          "title": "Illinois Lottery Mega Millions, Pick 3 results for Oct. 30, 2026",
-          "publisher": "Peoria Journal Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0st-0ym5qaMhss_iCqbD63kMDbonumvwkExSHMJKk071y4TsMDE22o1eguUc"
-        },
-        {
-          "url": "https://www.pjstar.com/story/news/local/2026/11/01/illinois-lottery-results-sunday-november-1-2026/92558918007/",
-          "title": "Illinois Lottery Pick 3, Pick 4 results for Nov. 1, 2026",
-          "publisher": "Peoria Journal Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0st-0ym5qaMhss_iCqbD63kMDbonumvwkExSHMJKk071y4TsMDE22o1eguUc"
-        }
-      ]
-    },
-    {
-      "query": "jesús de miguel",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T09:50:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17470227/tenerife-murio-jesus-de-miguel-choque-partido",
-        "https://www.clubdeportivotenerife.es/noticias/comunicado-oficial-fallecimiento-de-jesus-de-miguel",
-        "https://as.com/futbol/segunda/jesus-de-miguel-una-carrera-de-perseverancia-con-un-final-injusto-f202611-n/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFMj9FpFqSzFT9fToC1IygcEW1b3IBR9aHgO44CULpq1PZHeA4GMGLl_N5fM4",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17470227/tenerife-murio-jesus-de-miguel-choque-partido",
-          "title": "Muere Jesús de Miguel, jugador de Tenerife, tras choque en partido",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFMj9FpFqSzFT9fToC1IygcEW1b3IBR9aHgO44CULpq1PZHeA4GMGLl_N5fM4"
-        },
-        {
-          "url": "https://www.clubdeportivotenerife.es/noticias/comunicado-oficial-fallecimiento-de-jesus-de-miguel",
-          "title": "Comunicado oficial: fallecimiento de Jesús de Miguel",
-          "publisher": "CD Tenerife",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToT_pq7glDLWJ4qopAVqE8MkNBXW6SoTSiC3fNhBt46townG-zix99HXl9Fiw"
-        },
-        {
-          "url": "https://as.com/futbol/segunda/jesus-de-miguel-una-carrera-de-perseverancia-con-un-final-injusto-f202611-n/",
-          "title": "Jesús de Miguel, una carrera de perseverancia con un final injusto",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPFqqNBe-Jxcwya2zcvIPs1gRuVoedVIpBZeJ6pe3cR5vcl86j2QH1u925uxk"
-        }
-      ]
-    },
-    {
-      "query": "temblor en colombia",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T09:50:00Z",
-      "related_news_urls": [
-        "https://www.eltiempo.com/colombia/otras-ciudades/terremoto-de-5-6-sacude-a-colombia-en-la-madrugada-del-3-de-noviembre-conozca-los-detalles-3598022",
-        "https://redmas.com.co/colombia/fuerte-temblor-hoy-en-colombia-duro-sismo-en-bogota-cali-y-otras-ciudades-este-martes-3-de-noviembre-20261103-0001.html",
-        "https://www.elcolombiano.com/colombia/temblor-hoy-en-colombia-con-epicentro-en-tolima-se-sintio-en-medellin-GO43090060"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGMEptu3QICzogbzDrf5XchtNr4PtJEeOmBm8Mrlvp_FbAUPmBybplTqa9DXI",
-      "image_credit": "El Tiempo",
-      "news": [
-        {
-          "url": "https://www.eltiempo.com/colombia/otras-ciudades/terremoto-de-5-6-sacude-a-colombia-en-la-madrugada-del-3-de-noviembre-conozca-los-detalles-3598022",
-          "title": "Temblor de 5,6 sacude a Colombia en la madrugada del martes 3 de noviembre: conozca los detalles",
-          "publisher": "El Tiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGMEptu3QICzogbzDrf5XchtNr4PtJEeOmBm8Mrlvp_FbAUPmBybplTqa9DXI"
-        },
-        {
-          "url": "https://redmas.com.co/colombia/fuerte-temblor-hoy-en-colombia-duro-sismo-en-bogota-cali-y-otras-ciudades-este-martes-3-de-noviembre-20261103-0001.html",
-          "title": "Fuerte temblor HOY en Colombia: Duro sismo en Bogotá, Cali, y otras ciudades este martes 3 de noviembre",
-          "publisher": "RED+ Noticias",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6tCJucf5wlnScETf5mj2W_V4VPfks67PG-IjgKTyjkdtl2pgYXN_diXmUwA"
-        },
-        {
-          "url": "https://www.elcolombiano.com/colombia/temblor-hoy-en-colombia-con-epicentro-en-tolima-se-sintio-en-medellin-GO43090060",
-          "title": "Temblor hoy en Colombia con epicentro en Tolima se sintió en Medellín y el Valle de Aburrá | El Colombiano",
-          "publisher": "El Colombiano",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgk5O-grA58Q0nxMjRYPSfBOsUV6a69YiSGQlsGdevqKbQ3uzirwxvn_YEwu0"
-        }
-      ]
-    },
-    {
-      "query": "is there school on election day",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T09:40:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/news/politics/2026/11/02/2026-election-day-federal-holiday/92561740007/",
-        "https://thehill.com/homenews/education/6184369-public-schools-closing-midterm-voters-ohio-texas/",
-        "https://www.al.com/news/2026/11/alabama-schools-election-day-2026-which-districts-are-closed-and-why.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDH1EQD93jx1qdsCDpOJwMwSeomViNwJAzNwF398psqthRi_idfa9qDO9Y01g",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/news/politics/2026/11/02/2026-election-day-federal-holiday/92561740007/",
-          "title": "Is Election Day 2026 a federal holiday? What to know",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDH1EQD93jx1qdsCDpOJwMwSeomViNwJAzNwF398psqthRi_idfa9qDO9Y01g"
-        },
-        {
-          "url": "https://thehill.com/homenews/education/6184369-public-schools-closing-midterm-voters-ohio-texas/",
-          "title": "More public schools are closing. Will the midterms speed or slow the process?",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQ968718CDyfd7NlC5i4ovmXQx91g562L17oZfBy0PFRgIxH9WxZhBBmq5SQ"
-        },
-        {
-          "url": "https://www.al.com/news/2026/11/alabama-schools-election-day-2026-which-districts-are-closed-and-why.html",
-          "title": "Alabama schools Election Day 2026: Which districts are closed and why",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPTVKEpcS-W3C4NxYwVf5SnxNkVnb_8H-P17sxOzbgY2wZBzXIPyaShArQ_Bw"
-        }
-      ]
-    },
-    {
-      "query": "kentucky state police",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T09:40:00Z",
-      "related_news_urls": [
-        "https://lakercountry.com/2026/11/six-area-residents-complete-ksp-academy-begin-service-at-post-15/",
-        "https://www.wkdzradio.com/2026/10/30/five-area-cadets-graduate-academy-join-ksp-post-2/news-edge/",
-        "https://www.wnky.com/kentucky-state-police-post-3-welcomes-new-troopers-from-glasgow-scottsville/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRTwNXQ9Qu7rrg0LCRibilFpTtFAz5qztp8GH1biFilfCRQmsPvPsKGgN6f8I",
-      "image_credit": "Laker Country 104.9 WJRS",
-      "news": [
-        {
-          "url": "https://lakercountry.com/2026/11/six-area-residents-complete-ksp-academy-begin-service-at-post-15/",
-          "title": "Six Area Residents Complete KSP Academy, Begin Service at Post 15",
-          "publisher": "Laker Country 104.9 WJRS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRTwNXQ9Qu7rrg0LCRibilFpTtFAz5qztp8GH1biFilfCRQmsPvPsKGgN6f8I"
-        },
-        {
-          "url": "https://www.wkdzradio.com/2026/10/30/five-area-cadets-graduate-academy-join-ksp-post-2/news-edge/",
-          "title": "Five Area Cadets Graduate Academy, Join KSP Post 2",
-          "publisher": "WKDZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMVoOu9pVYMPGEa5CKz-zYj77gc1UjhaL46ve6Jtjfu_YVrCfSCUWD_Q9lWk0"
-        },
-        {
-          "url": "https://www.wnky.com/kentucky-state-police-post-3-welcomes-new-troopers-from-glasgow-scottsville/",
-          "title": "Kentucky State Police Post 3 welcomes new troopers from Glasgow, Scottsville",
-          "publisher": "WNKY",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHxsDFWI1fGpwMlqkCLO4WNJIR1xWGUnMiwfCnKsTzaQh1psJ6GpRL0Q7Z0r0"
-        }
-      ]
-    },
-    {
-      "query": "nfl power rankings week 9",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-03T09:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50288293/nfl-power-rankings-week-8-teams-best-offseason-additions",
-        "https://www.cbssports.com/nfl/news/nfl-week-9-power-rankings-bills-steelers/",
-        "https://www.nfl.com/news/nfl-power-rankings-week-8-2026-nfl-season"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6dl4T2yk9rutEldaGWGNyF1rij4q2hlLeOuMrj79aObuE3iHH5hBMDxAK_mw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50288293/nfl-power-rankings-week-8-teams-best-offseason-additions",
-          "title": "NFL Power Rankings: How all 32 teams stack up for Week 8, plus offseason adds",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6dl4T2yk9rutEldaGWGNyF1rij4q2hlLeOuMrj79aObuE3iHH5hBMDxAK_mw"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/nfl-week-9-power-rankings-bills-steelers/",
-          "title": "Prisco's NFL Week 9 Power Rankings: Bills take over top spot, Steelers on the rise",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0gMCW9A8rIdhOoaVinTQbnRE58Ma-cPY15NnWWiMnRGTUDVVDJr400V5dFY4"
-        },
-        {
-          "url": "https://www.nfl.com/news/nfl-power-rankings-week-8-2026-nfl-season",
-          "title": "NFL Power Rankings, Week 8: Vikings claim No. 1 spot; Browns, Falcons nearing top 10",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpHz3VIifGaKKwQzkknJ3N97hJxBUBfnLB5HCJvJDFCxP7ougC3uhnz_pmx7U"
         }
       ]
     }
