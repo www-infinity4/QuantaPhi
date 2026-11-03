@@ -30,6 +30,7 @@ jobs:
           node --check workers/infinity-wireless/worker.mjs
           node --check wireless/order.mjs
           node --test test/infinity-wireless.test.mjs
+          node --test test/infinity-wireless-site.test.mjs
       - name: Read back isolated Cloudflare staging health
         run: |
           node --input-type=module -e '
