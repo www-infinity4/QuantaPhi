@@ -68,3 +68,5 @@ test('trending feed has real scheduled ingestion, source-freshness handling and 
  assert.ok(js.includes('setInterval'));
  assert.ok(page.includes('RSS importer'));
 });
+
+test('retired MLB tab removal does not crash later image-backed Trends cards at startup',()=>{const mlb=js.slice(js.indexOf('function mlbCard('),js.indexOf('const mediaTopics='));assert.doesNotMatch(mlb,/;select\(\);/);assert.match(mlb,/watchCard\(host,refresh\)/);assert.match(js,/\['googleTrendCulture',cultureCard\]/);});
