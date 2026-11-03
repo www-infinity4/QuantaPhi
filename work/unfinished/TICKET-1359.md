@@ -3,11 +3,11 @@ issue: 1359
 project: "Cloudflare Attractions Directory · Colorado then all 50 states"
 source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1359
-state: live_partial_colorado
+state: alaska_live_d1_card_ci_pending
 dot: "🟡"
-progress_percent: 2
-progress_basis: "Populated-state coverage 1/50 = 2%; 10 distinct live Colorado attractions, 50 state rows, two ingest receipts, read-only Worker and Oracle source merged. Reviewed 6,527 Overture candidates remain NOT ingested."
-sessions_spent: 1
+progress_percent: 4
+progress_basis: "Two states with listed records out of 50 = 4% geographic reach; CO 5,035 listed and 1,505 needs review, AK 8 listed; Alaska source card UI PR #1498 awaiting exact-head CI/merge/site readback."
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: "ChatGPT source and Cloudflare, no coordinator lease"
 lease_id: null
@@ -15,9 +15,9 @@ fence: null
 lease_expires_at: null
 task_session_id: null
 repo: www-infinity4/QuantaPhi
-branch: feat/1359-three-nps-colorado-seeds-20261102
+branch: feat/1359-alaska-quant-ai-attraction-cards-20261102
 head_sha: 5bba783371e3c22f28f93e154be8a6618db2411d
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/1415"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1498"
 tests:
   - "Live Cloudflare D1 and public Worker health returned records=10, 10 unique IDs"
   - "Five exact-head GitHub workflows passed for source PR #1415; public search readback verified new parks."
@@ -26,8 +26,8 @@ ci:
 merged: true
 deployed: true
 live_verified: true
-blocker: "Reviewed 6,527 Overture candidates have not been D1-ingested; scheduled Cron 2026-11-02 10:37 UTC requires independent batch/error/count verification."
-next_action: "After 2026-11-02 10:37 UTC Cron, verify four Overture shard receipts, listed versus needs_review, distinct IDs, closure handling and live pagination; repair actual errors, do not claim Colorado complete."
+blocker: "Alaska D1 imported and public feed verified; new Quant AI ranked individual Oracle Quick Cards are not yet merged or live-verified. Remaining 48 states need source-backed imports."
+next_action: "Finish exact-head PR #1498 CI, safely merge, deploy isolated Worker AK cron and independently confirm live homepage Alaska source cards."
 ---
 
 # Colorado-first attractions directory
@@ -48,3 +48,12 @@ Next: exact-head tests and browser release gate, PR merge and homepage verificat
 - Six actual Colorado attractions and 50-state queue remain live in isolated Cloudflare D1. No reviewed Overture bulk snapshot yet ingested; no homepage merge or live UI release yet claimed.
 - Existing hourly Continuity Builder was updated successfully to include #1359 alongside current business/restaurant priorities.
 - Next: exact-head CI, then merge only when actual gate passes; verify public script and UI and import reviewed Colorado Overture batches.
+
+## Alaska next-state checkpoint — November 2, 2026 Central
+
+- Existing Cloudflare D1 `quantaphi-attractions-directory` `31164408-0b9f-4e5f-84f3-02e8de3254c6`: 5,035 Colorado listed, 1,505 Colorado under review; 8 Alaska listed and unique after verified direct D1 read and public Worker search. Total listed 5,043, 48 states not yet populated. Colorado is not represented as 100% complete.
+- Eight National Park Service public entries in `data/attractions/ak-seed.json`, official visitor URLs, coordinate accuracy notes and two attributed NPS-hosted photo references. Where location geotags are approximate, users must follow the official source instead of treating map points as entrance directions. No fabricated booking availability, hours, prices or paid ads.
+- D1 receipt: `AK|QuantaPhi curated official visitor links|2026-11-02-eight-alaska-nps|2026-11-03T01:26:00Z`. `attraction_states.AK=seeded`, no writes to restaurant, wallet, personal data or other Cloudflare D1.
+- Independent public Cloudflare endpoint `/api/attractions/search?state=AK` yielded 8 real listing records; `/api/attractions/health` yielded 5,043 listed, 1,505 review and 6,548 total records.
+- PR #1498 adds bounded individually registered Oracle source cards from live D1, anonymous explicit interest-driven Quant AI discovery algorithm (not connected authenticated private Quant AI matching), safe first-party links and Follow/Star/Collect/Share/+1 Build via existing toolbars. Source visitor links are always genuine; absent photos use an honest fallback.
+- Required checks: exact-head Node/Android CI, independent review, merge, update deployed Cloudflare Worker Cron from reviewed main and site readback on quantaphi.org; verify actual selected source card controls on a live browser. Do not count code or seeded data as proof of public UI release.
