@@ -54,5 +54,5 @@ test('a malformed approved card does not prevent the rest of the batch from appe
 
 test('homepage pins the current creator feed revision so old cached modules are not served',()=>{
  const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
- assert.match(html, /<script type="module" src="\\/published-quick-cards-feed\\.js\\?v=20261103-creator-batch1"><\\/script>/);
+ assert.ok(html.includes('<script type="module" src="/published-quick-cards-feed.js?v=20261103-creator-batch1"></script>'), 'expected fresh creator-feed script URL in homepage');
 });
