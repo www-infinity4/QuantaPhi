@@ -138,8 +138,8 @@ final class TermuxProbe {
     }
     static void saveResult(Context context, int id, String kind, String state, String detail) {
         JSONObject latest = receipt(context);
-        if (id == 0 || id != latest.optInt("id") || !"queued".equals(latest.optString("state"))
-                || kind == null || !kind.equals(latest.optString("kind"))) return;
+        if (!TermuxReceiptPolicy.acceptsCallback(id, kind, latest.optInt("id"),
+                latest.optString("kind"), latest.optString("state"))) return;
         record(context, state, detail, id, kind);
     }
     static void cancel(Context context, String kind) {
