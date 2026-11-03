@@ -10,7 +10,9 @@ function localSignals(){
 }
 export function mountQuantTvExpansion(host=document.getElementById('phiChannelCards')){
  if(!host||host.dataset.quantTvReady||!window.PhiTVPrograms)return;
- const grid=host.querySelector('.channelphi-grid');if(!grid)return;
+ // Current Infinity TV uses separate original channel cards; the guide has no grid.
+ // Create the expansion shelf there instead of silently dropping every new station.
+ const grid=host.querySelector('.channelphi-grid')||host.appendChild(el('div','channelphi-grid'));
  host.dataset.quantTvReady='true';
  for(const entry of TV_EXPANSION_CHANNELS){
   const article=grid.appendChild(el('article','channelphi-card channelphi-source channelphi-'+entry.id));
