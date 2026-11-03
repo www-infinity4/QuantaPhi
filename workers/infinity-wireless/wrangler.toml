@@ -11,4 +11,7 @@ binding = "WIRELESS_DB"
 database_name = "quantaphi-infinity-wireless-orders"
 database_id = "230c8dde-fc97-485b-94ad-4b092684bf76"
 
+[triggers]
+crons = ["15 7 * * *"]
+
 # RATE_SALT is a Worker secret, never stored here.
