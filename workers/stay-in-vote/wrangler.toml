@@ -1,0 +1,9 @@
+name = "quantaphi-stay-in-vote"
+main = "worker.mjs"
+compatibility_date = "2026-11-03"
+account_id = "ef25728c096c6ba92cf510caa2058003"
+routes = [{ pattern = "quantaphi.org/api/stay-in-vote*", zone_name = "quantaphi.org" }]
+[[d1_databases]]
+binding = "VOTES_DB"
+database_name = "quantaphi-stay-in-vote"
+database_id = "f67e6066-f449-4be0-b544-380d5a584d36"
