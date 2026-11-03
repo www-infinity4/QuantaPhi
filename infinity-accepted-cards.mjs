@@ -141,6 +141,12 @@ export function createAcceptedCard(card){
   }catch{/* no verified public product photo: preserve original brand identity */}
  };
  article.addEventListener('oracle:activate',()=>{if(!productPhotoLoaded)void recoverSourcePhoto()});
+ if(typeof IntersectionObserver!=='undefined'){
+  const observer=new IntersectionObserver(entries=>{
+   if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();if(!productPhotoLoaded)void recoverSourcePhoto()}
+  },{rootMargin:'120px'});
+  observer.observe(article);
+ }
  const content=node('div',undefined,'iac-content');mountAcceptedWebsiteActions(content,card);
  const tools=node('div');mountCardActions(tools,{...card,route:'/?card='+card.id},
   {showSearch:false,websiteReader:false,showPreview:false,showOriginal:false});content.append(tools);
