@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T11:31:28.027309Z",
+  "checked_at": "2026-11-03T12:01:45.562426Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "is there mail delivery on election day",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T11:10:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/legal/government/inside-us-postal-service-sprint-deliver-millions-ballots-by-tuesday-2026-11-02/",
-        "https://www.nbcchicago.com/illinois-election-2026/still-have-a-mail-in-ballot-for-this-years-election-heres-what-to-do/4010398/",
-        "https://news.usps.com/2026/11/02/pmg-gives-support-for-election-mail-delivery-in-new-video/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl4T40Bm345eo96H0seJpGPIdeyesH5deR45LuctJYDDR4ujJ0tcIVJ0Lyr_I",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/legal/government/inside-us-postal-service-sprint-deliver-millions-ballots-by-tuesday-2026-11-02/",
-          "title": "Inside the US Postal Service sprint to deliver millions of ballots by Tuesday",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl4T40Bm345eo96H0seJpGPIdeyesH5deR45LuctJYDDR4ujJ0tcIVJ0Lyr_I"
-        },
-        {
-          "url": "https://www.nbcchicago.com/illinois-election-2026/still-have-a-mail-in-ballot-for-this-years-election-heres-what-to-do/4010398/",
-          "title": "Still have a mail-in ballot for this year's election? Here's what to do",
-          "publisher": "NBC 5 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MH227XtiVSEabGjEWi1vJUzsu6liNMYu0WPsbpoyCFPVdlx6sgBA1Vb0A8E"
-        },
-        {
-          "url": "https://news.usps.com/2026/11/02/pmg-gives-support-for-election-mail-delivery-in-new-video/",
-          "title": "PMG gives support for Election Mail delivery in new video",
-          "publisher": "USPS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTWfEivAxPtZW9BSFkMXlzUIDZxDiRyEaVf3UVJV2pyAxgL8EMHPcn11yT4UY"
-        }
-      ]
-    },
-    {
-      "query": "andrey rublev",
+      "query": "bruce blakeman",
       "approx_searches": "200+",
-      "published_at": "2026-11-03T11:10:00Z",
+      "published_at": "2026-11-03T11:40:00Z",
       "related_news_urls": [
-        "https://vsin.com/tennis/rolex-paris-masters-predictions-tennis-best-bets-and-picks-for-tuesday-november-3/",
-        "https://tenngrand.com/paris-tennis-previews-picks-predictions-tien-vs-tsitsipas-nakashima-berrettini/",
-        "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-tsitsipas-tien/"
+        "https://abc7ny.com/post/gov-hochul-bruce-blakeman-make-closing-arguments-before-election-day/20007490/",
+        "https://www.cbsnews.com/newyork/video/hochul-faces-blakeman-as-new-york-voters-head-to-the-polls/",
+        "https://gothamist.com/news/how-nyc-voters-could-determine-outcome-of-race-for-governor"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjmmoLWxSbIGrpU0f5HDAxZrjVmcrYtZkP5Zlc6CtgBgc_eYdCfn8EhlCdkU4",
-      "image_credit": "VSiN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSThfBOTzMnikMQbXgP7MREXCojfNGa5pMOMO6CCj0ibAw1t2nb_8e4dKsxzJs",
+      "image_credit": "ABC7 New York",
       "news": [
         {
-          "url": "https://vsin.com/tennis/rolex-paris-masters-predictions-tennis-best-bets-and-picks-for-tuesday-november-3/",
-          "title": "Rolex Paris Masters Predictions: Tennis best bets and picks for Tuesday, November 3",
-          "publisher": "VSiN",
+          "url": "https://abc7ny.com/post/gov-hochul-bruce-blakeman-make-closing-arguments-before-election-day/20007490/",
+          "title": "Gov. Hochul, Bruce Blakeman make closing arguments before Election Day",
+          "publisher": "ABC7 New York",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjmmoLWxSbIGrpU0f5HDAxZrjVmcrYtZkP5Zlc6CtgBgc_eYdCfn8EhlCdkU4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSThfBOTzMnikMQbXgP7MREXCojfNGa5pMOMO6CCj0ibAw1t2nb_8e4dKsxzJs"
         },
         {
-          "url": "https://tenngrand.com/paris-tennis-previews-picks-predictions-tien-vs-tsitsipas-nakashima-berrettini/",
-          "title": "Paris R1 previews and predictions: Tien vs. Tsitsipas, Nakashima vs. Berrettini",
-          "publisher": "The Grandstand",
+          "url": "https://www.cbsnews.com/newyork/video/hochul-faces-blakeman-as-new-york-voters-head-to-the-polls/",
+          "title": "Hochul faces Blakeman as New York voters head to the polls",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHrl_xALOrRhOjMoHjd55nXWJ_xhC7xG_IpBylKqefy_GumbxRA7etDKMD8vA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNTgC9TNzUwjgFpZtMv0xzEcLb7UdO6f-LTyd7pyNJ1j1S0r9uPTW2EoI81Zs"
         },
         {
-          "url": "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-tsitsipas-tien/",
-          "title": "ATP Paris Day 2 Predictions Including Stefanos Tsitsipas vs Learner Tien",
-          "publisher": "Last Word On Sports",
+          "url": "https://gothamist.com/news/how-nyc-voters-could-determine-outcome-of-race-for-governor",
+          "title": "How NYC voters could determine outcome of race for governor",
+          "publisher": "Gothamist",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmYQ9jV4C8oT6ub87_K8wKGmsMS4f89fl9wyhpBVnEAEFseeBnbRWuZgotMZA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1EvnchZd6_pIf-sa4sMm1N9CB1dg4Ab7H8NfbT8LKcuIkTOXV76rme4pvqOY"
         }
       ]
     },
     {
-      "query": "tiempo de hoy",
+      "query": "virginia elections 2026",
       "approx_searches": "100+",
-      "published_at": "2026-11-03T11:10:00Z",
+      "published_at": "2026-11-03T11:40:00Z",
       "related_news_urls": [
-        "https://www.univision.com/local/miami-wltv/aviso-por-inundaciones-repentinas-afecta-deerfield-beach-y-sectores-cercanos-a-la-i-95-video",
-        "https://www.telemundo51.com/video/el-tiempo/noticias-del-tiempo/alerta-de-tiempo/2843903/",
-        "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/clima/video/ron-desantis-declara-estado-de-emergencia-en-florida-por-las-inundaciones-historicas-tmvo13240831"
+        "https://www.nbcnews.com/politics/2026-elections/virginia-house-results",
+        "https://www.newsleader.com/story/news/politics/elections/2026/11/03/election-2026-results-in-staunton-waynesboro-augusta-county-virginia/92477845007/",
+        "https://www.wsls.com/decision-2026/2026/10/30/2026-virginia-general-election-results-for-bedford-county/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHnWcAPiglY4ZpYfwM91qUnldIey0wHaixvv0abpRNQYqFfY_X9GpSwDn90U",
-      "image_credit": "Univision",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqwACVBvsZiLOYXouz04EDNP-W7r0tygC-8TPTEoWs0Y95C03UuOHbr3CqhOQ",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://www.univision.com/local/miami-wltv/aviso-por-inundaciones-repentinas-afecta-deerfield-beach-y-sectores-cercanos-a-la-i-95-video",
-          "title": "Aviso por inundaciones repentinas afecta Deerfield Beach y sectores cercanos a la I-95",
-          "publisher": "Univision",
+          "url": "https://www.nbcnews.com/politics/2026-elections/virginia-house-results",
+          "title": "Virginia U.S. House Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStHnWcAPiglY4ZpYfwM91qUnldIey0wHaixvv0abpRNQYqFfY_X9GpSwDn90U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqwACVBvsZiLOYXouz04EDNP-W7r0tygC-8TPTEoWs0Y95C03UuOHbr3CqhOQ"
         },
         {
-          "url": "https://www.telemundo51.com/video/el-tiempo/noticias-del-tiempo/alerta-de-tiempo/2843903/",
-          "title": "Alerta de tiempo para partes del condado Miami-Dade",
-          "publisher": "Telemundo Miami (51)",
+          "url": "https://www.newsleader.com/story/news/politics/elections/2026/11/03/election-2026-results-in-staunton-waynesboro-augusta-county-virginia/92477845007/",
+          "title": "Live election results from Staunton, Waynesboro, Augusta County",
+          "publisher": "The News Leader | Staunton, VA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGlR0OgDbLOgUfIjGxMheQUayoYYcdxskPiX3Qr1JaHdmkvvpSj2GSOlHbJU8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzk4BWRdhJB7Vt14vc-iRyn7vjWy6OxVTAv5C0pl64fhNKnC2eLoJu7QAbIVQ"
         },
         {
-          "url": "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/clima/video/ron-desantis-declara-estado-de-emergencia-en-florida-por-las-inundaciones-historicas-tmvo13240831",
-          "title": "Ron DeSantis declara estado de emergencia en Florida por las inundaciones históricas",
-          "publisher": "Telemundo",
+          "url": "https://www.wsls.com/decision-2026/2026/10/30/2026-virginia-general-election-results-for-bedford-county/",
+          "title": "Virginia general election results for Bedford County - Nov. 3, 2026",
+          "publisher": "WSLS",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSp_1JjcQniIgPcEYpM1ZEULwuLD8sP6XV6K0_JctEeEUxuJ2UKsSkiDHy0Oxc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTr-tzKZZxpXzB3YogolIuGJspJkLC4B86UxQ4a2arxRwuRdIw85TFE-NoGtQI"
         }
       ]
     },
     {
-      "query": "alexandra eala",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T11:00:00Z",
+      "query": "michigan ballot 2026",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T11:40:00Z",
       "related_news_urls": [
-        "https://sports.inquirer.net/704861/live-alex-eala-vs-alycia-parks-hong-kong-open-round-of-32",
-        "https://www.tennisworldusa.org/tennis/news/WTA_Tennis/171099/alexandra-eala-has-no-regrets-over-her-2026-season-amid-rough-asian-swing/",
-        "https://www.skysports.com/tennis/watch/6543206222515308112/prudential-hong-kong-tennis-open-2026"
+        "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
+        "https://www.kcci.com/article/iowa-politics-what-to-expect-in-iowa-on-election-day/74298295",
+        "https://www.desmoinesregister.com/story/news/politics/elections/2026/11/03/iowa-election-results-2026-midterms-governor-race-congress-preview/92266348007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiOT6T8ZXoitK7Lfrpb3xXT_82BlNeXhqqQAh6yRtWinUKeO8EAJzeD8173I",
-      "image_credit": "Inquirer.net",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://sports.inquirer.net/704861/live-alex-eala-vs-alycia-parks-hong-kong-open-round-of-32",
-          "title": "LIVE: Alex Eala vs Alycia Parks – Hong Kong Open Round of 32",
-          "publisher": "Inquirer.net",
+          "url": "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
+          "title": "Alaska Governor Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiOT6T8ZXoitK7Lfrpb3xXT_82BlNeXhqqQAh6yRtWinUKeO8EAJzeD8173I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI"
         },
         {
-          "url": "https://www.tennisworldusa.org/tennis/news/WTA_Tennis/171099/alexandra-eala-has-no-regrets-over-her-2026-season-amid-rough-asian-swing/",
-          "title": "Alexandra Eala has 'no regrets' over her 2026 season amid rough Asian swing",
-          "publisher": "Tennis World USA",
+          "url": "https://www.kcci.com/article/iowa-politics-what-to-expect-in-iowa-on-election-day/74298295",
+          "title": "What to expect in Iowa on Election Day",
+          "publisher": "KCCI",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAWdpZ-ViBeVz5-sf1OObN6HHHHNB7ODAerGA9OdtbF-RO_jZSKbfj2m7IJfI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCpSas6Q49CO3g8WYc0FmTXtBNEcCgFZzyBPekbTOpr7p9FdpYYuJZl3VVXgU"
         },
         {
-          "url": "https://www.skysports.com/tennis/watch/6543206222515308112/prudential-hong-kong-tennis-open-2026",
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "publisher": "Sky Sports",
+          "url": "https://www.desmoinesregister.com/story/news/politics/elections/2026/11/03/iowa-election-results-2026-midterms-governor-race-congress-preview/92266348007/",
+          "title": "Blue wave or red wall in Iowa? Key factors to watch on election night",
+          "publisher": "The Des Moines Register",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLX9Pr2gyYDrziI7tAzMej-eIpKbzv0wHqiHwkUR1B9xBYnp45JjrCZcNwcXs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSJC3sXdjN5VeG0VeER-vCnGtLNLq-6hrWcmlzDqy8fDU6MNcBmvSv6AtQ5Vs"
         }
       ]
     },
     {
-      "query": "dólar estadounidense",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T11:00:00Z",
+      "query": "brianna cameron the voice",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T11:40:00Z",
       "related_news_urls": [
-        "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-lunes-2-noviembre-tipo-de-cambio-22505859.php",
-        "https://www.informador.mx/economia/dolar-hoy-el-peso-mexicano-pierde-fuerza-ante-el-billete-verde-en-este-inicio-de-noviembre-analistas-esperan-otra-semana-de-perdidas-20261102-0032.html",
-        "https://www.fxstreet.es/news/el-peso-mexicano-se-recupera-con-fuerza-mientras-la-sorpresa-del-pib-de-mexico-empuja-al-usd-mxn-a-la-baja-202611021930"
+        "https://ew.com/13-year-old-singer-on-the-voice-compared-to-whitney-houston-12208471",
+        "https://www.yahoo.com/entertainment/tv/articles/kelly-clarkson-compares-13-old-051517232.html",
+        "https://americansongwriter.com/were-watching-a-young-whitney-houston-the-voices-youngest-contestant-makes-kelly-clarkson-emotional-with-epic-cut-week-showing/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOoUObQ51rxlEwCBZWfxT4c96oYSoTycCkgsJy5JdvUBCXWmc41u4EwCwadFY",
-      "image_credit": "Dallas News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVGjbBpD_uQtlCbbcbt-EKG8PC94-IPkCE7Z5JS7T-e1-iFjaZkitpRLWzNAg",
+      "image_credit": "Entertainment Weekly",
       "news": [
         {
-          "url": "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-lunes-2-noviembre-tipo-de-cambio-22505859.php",
-          "title": "Así está el dólar en México hoy: tipo de cambio y cotizaciones en bancos",
-          "publisher": "Dallas News",
+          "url": "https://ew.com/13-year-old-singer-on-the-voice-compared-to-whitney-houston-12208471",
+          "title": "13-year-old singer on ‘The Voice’ compared to Whitney Houston",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOoUObQ51rxlEwCBZWfxT4c96oYSoTycCkgsJy5JdvUBCXWmc41u4EwCwadFY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVGjbBpD_uQtlCbbcbt-EKG8PC94-IPkCE7Z5JS7T-e1-iFjaZkitpRLWzNAg"
         },
         {
-          "url": "https://www.informador.mx/economia/dolar-hoy-el-peso-mexicano-pierde-fuerza-ante-el-billete-verde-en-este-inicio-de-noviembre-analistas-esperan-otra-semana-de-perdidas-20261102-0032.html",
-          "title": "El peso mexicano pierde fuerza ante el dólar en este inicio de noviembre; analistas esperan otra semana de pérdidas",
-          "publisher": "El Informador",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ7Ajb2vE-dkvGBH8K3BxdkekibI1AS_zCksAbvjhjvrn1tprzQPo-h8eKmLM"
-        },
-        {
-          "url": "https://www.fxstreet.es/news/el-peso-mexicano-se-recupera-con-fuerza-mientras-la-sorpresa-del-pib-de-mexico-empuja-al-usd-mxn-a-la-baja-202611021930",
-          "title": "El Peso mexicano se recupera con fuerza tras caer a mínimos de una semana",
-          "publisher": "FXStreet",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiKbJ8hXbaTTLEavwSFnF2cxfRdo_ftvFKR1mk0sWkwWZXxZVi6ai4uPB2PKs"
-        }
-      ]
-    },
-    {
-      "query": "what do you need to bring to vote",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T11:00:00Z",
-      "related_news_urls": [
-        "https://fox17.com/features/nashville-in-focus/nashville-in-focus-tn-govs-race-the-numbers-you-should-notice-tennessee-midterm-election",
-        "https://www.yahoo.com/news/politics/articles/knoxville-election-results-2026-local-100938494.html",
-        "https://www.timesfreepress.com/news/2026/nov/02/what-to-know-before-you-head-to-the-polls-in-the-chattanooga-area-tuesday/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaIftm_sJmDF0CVm8gzEkOeO9Dp3byFO63eTa-3dGpRFvRKGgg7WookWAiO8E",
-      "image_credit": "WZTV",
-      "news": [
-        {
-          "url": "https://fox17.com/features/nashville-in-focus/nashville-in-focus-tn-govs-race-the-numbers-you-should-notice-tennessee-midterm-election",
-          "title": "Nashville in Focus: Tennessee governor's race, the numbers you should notice",
-          "publisher": "WZTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaIftm_sJmDF0CVm8gzEkOeO9Dp3byFO63eTa-3dGpRFvRKGgg7WookWAiO8E"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/knoxville-election-results-2026-local-100938494.html",
-          "title": "Knoxville election results 2026: Get local, state and federal updates",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/kelly-clarkson-compares-13-old-051517232.html",
+          "title": "Kelly Clarkson Compares 13-Year-Old ‘The Voice’ Singer to Whitney Houston",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr5SfDOxE9FI-EHjH11nu_IFMCnkxAnCDDQrHBiKrGGsM0HW_KD-7f0TvdUr4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8WwL36etpOXtaQlMn2Ha8-xYF0EP_LnXSss2P1Z2kV6LiWVcMaz_EBi15kTM"
         },
         {
-          "url": "https://www.timesfreepress.com/news/2026/nov/02/what-to-know-before-you-head-to-the-polls-in-the-chattanooga-area-tuesday/",
-          "title": "What to know before you head to the polls in the Chattanooga area Tuesday",
-          "publisher": "Chattanooga Times Free Press",
+          "url": "https://americansongwriter.com/were-watching-a-young-whitney-houston-the-voices-youngest-contestant-makes-kelly-clarkson-emotional-with-epic-cut-week-showing/",
+          "title": "“We’re Watching a Young Whitney Houston”: ‘The Voice’s Youngest Contestant Makes Kelly Clarkson Emotional With Epic Cut Week Showing",
+          "publisher": "American Songwriter",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4pYhaMNA47s5BMdnTZhA8B83beEZf8krQqySZhGkRa83SkHvR9y2uI5vHOkY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3j_Zliv0Trtu6iqgTZ13xCj_VxlFcxSGMj_j0HV-ZylQI8lWvy8wEZ_7Ct8A"
         }
       ]
     },
     {
-      "query": "google android botnet takedown",
+      "query": "weather san antonio",
       "approx_searches": "100+",
-      "published_at": "2026-11-03T11:00:00Z",
+      "published_at": "2026-11-03T11:40:00Z",
       "related_news_urls": [
-        "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet",
-        "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
-        "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045"
+        "https://www.ksat.com/weather/2026/10/30/another-round-of-rain-today-drier-for-halloween/",
+        "https://www.fox7austin.com/weather/austin-weather-scattered-showers-more-rain-way",
+        "https://www.mysanantonio.com/news/weather/article/cold-front-texas-22494311.php"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA",
-      "image_credit": "Google Cloud",
-      "news": [
-        {
-          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet",
-          "title": "Shutting the Door on the XCPE Botnet",
-          "publisher": "Google Cloud",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA"
-        },
-        {
-          "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
-          "title": "One of Google’s Android partners turned 1.3 million set-top boxes into a botnet",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE5g41GyuleQTazjxSjwh7XJvwSWgJ36YglV30BhxVr_hYbFf7_xdnGwLgFlU"
-        },
-        {
-          "url": "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045",
-          "title": "Cops bust botnet of 1.3M infected Android TV boxes",
-          "publisher": "The Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEdT5Zvr5udJUo72sESJnOb1-vW6w02j8LpwPW7OQ7MLe6weeokI5BaGGjKUM"
-        }
-      ]
-    },
-    {
-      "query": "learner tien",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-03T11:00:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/video/highlights-musetti-fends-off-hurkacz-in-nervy-paris-2026-opener",
-        "https://tenngrand.com/paris-tennis-previews-picks-predictions-musetti-vs-hurkacz-khachanov-shapovalov/",
-        "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-best-bets-djokovic-vacherot/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM08u2LWo0UVUoJ5mKzaKbGE8z0Uut2ySpwVlhUTcU5USUa-TEDyvlO0Fxm-0",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/video/highlights-musetti-fends-off-hurkacz-in-nervy-paris-2026-opener",
-          "title": "Highlights: Musetti fends off Hurkacz in nervy Paris 2026 opener",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM08u2LWo0UVUoJ5mKzaKbGE8z0Uut2ySpwVlhUTcU5USUa-TEDyvlO0Fxm-0"
-        },
-        {
-          "url": "https://tenngrand.com/paris-tennis-previews-picks-predictions-musetti-vs-hurkacz-khachanov-shapovalov/",
-          "title": "Paris R1 previews and predictions: Musetti vs. Hurkacz, Khachanov vs. Shapovalov",
-          "publisher": "The Grandstand",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVw7L6t4HPC2uVfFdUawY5DZ43D1onI_QRaWfcezpFgaGv0bz3Cq17iBTc01A"
-        },
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-best-bets-djokovic-vacherot/",
-          "title": "ATP Paris Best Bets Including Novak Djokovic Vs Valentin Vacherot",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlnAIDs3LQ-44yC1E5GxVC2yU44qj1P4OwIWRAPyS0TgPCmw7nSr_XlbYgspk"
-        }
-      ]
-    },
-    {
-      "query": "san antonio weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T11:00:00Z",
-      "related_news_urls": [
-        "https://www.ksat.com/weather/2026/11/01/muggy-sunday-but-a-cool-front-arrives-tuesday-morning/",
-        "https://www.kgns.tv/2026/11/03/chance-morning-shower-then-clearing-with-low-humidity/",
-        "https://www.kens5.com/video/weather/forecast/muggy-conditions-expected-on-sunday-kens-5-weather-impact-forecast/273-a7fb6faf-ad88-4beb-9c48-42cc7dda2d19"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqwcOHR8wJd3Rdjc6iJO_QNS5enyMCeMZbQqLWL3LMX-TD1Wd208uXbU6X6Ms",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVG0H_f2SBfvLEPe0F2zXjJwNBL3ZS0sSf9aI3yCBKAMyiy89KFPbPCPGTWWg",
       "image_credit": "KSAT",
       "news": [
         {
-          "url": "https://www.ksat.com/weather/2026/11/01/muggy-sunday-but-a-cool-front-arrives-tuesday-morning/",
-          "title": "Muggy Sunday, but a cool front arrives Tuesday morning",
+          "url": "https://www.ksat.com/weather/2026/10/30/another-round-of-rain-today-drier-for-halloween/",
+          "title": "Small rain chances tonight, pleasant for trick-or-treating",
           "publisher": "KSAT",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqwcOHR8wJd3Rdjc6iJO_QNS5enyMCeMZbQqLWL3LMX-TD1Wd208uXbU6X6Ms"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVG0H_f2SBfvLEPe0F2zXjJwNBL3ZS0sSf9aI3yCBKAMyiy89KFPbPCPGTWWg"
         },
         {
-          "url": "https://www.kgns.tv/2026/11/03/chance-morning-shower-then-clearing-with-low-humidity/",
-          "title": "Chance of a Morning Shower, Then Clearing With Low Humidity",
-          "publisher": "KGNS",
+          "url": "https://www.fox7austin.com/weather/austin-weather-scattered-showers-more-rain-way",
+          "title": "Austin weather: Scattered showers with more rain on the way",
+          "publisher": "FOX 7 Austin",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR88wVMUcRlUpKD1jGsdRoXbA2nVnMt_XnMOmt6AVoYCDvzC9KoiVu8SmmWmIo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRepP4on6SjensyxsSMllLpkZ4ZTuFecdvPIhbn6Se0SRgkz5KsS5m0oew2rwo"
         },
         {
-          "url": "https://www.kens5.com/video/weather/forecast/muggy-conditions-expected-on-sunday-kens-5-weather-impact-forecast/273-a7fb6faf-ad88-4beb-9c48-42cc7dda2d19",
-          "title": "Muggy conditions expected on Sunday | KENS 5 Weather Impact Forecast",
-          "publisher": "kens5.com",
+          "url": "https://www.mysanantonio.com/news/weather/article/cold-front-texas-22494311.php",
+          "title": "Cold front headed to San Antonio within days. Here's when.",
+          "publisher": "MySA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4hFl5ghJyq51UkNt6Pm4rIR3HE5ImomHdWHw2VRG-hFDrjILZZEfY8CXnq8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Zn2YF5qDRMdtEFs7Rl6iSc3Lb-PwCcyq1l_nQ_GQLsUhDlh5UL3v1ahtzKE"
         }
       ]
     },
     {
-      "query": "cowboys media availability after cardinals",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T11:00:00Z",
+      "query": "pfe stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T11:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/whole-organization-rotten-team-cooked-101152454.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/most-cowboys-players-left-facility-on-monday-before-locker-room-media-availability",
-        "https://www.aol.com/articles/roster-team-staff-organization-cooked-083826000.html"
+        "https://finance.yahoo.com/healthcare/articles/expect-pfizer-pfe-q3-earnings-071736931.html",
+        "https://seekingalpha.com/news/4662428-pfizer-q3-preview-analysts-look-to-obesity-pipeline-amid-diverging-growth-expectations",
+        "https://www.benzinga.com/analyst-stock-ratings/price-target/26/11/62807667/top-wall-street-forecasters-revamp-pfizer-expectations-ahead-of-q3-earnings"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRN9u5UdaB4AOPcBBx129k_vVNdcOlp6E38oLWWeOOG5C4fsbeVTNpnpMyclI",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCqZ8whlUF8nEvYVEDnClobn-Q2aDH74do8W0nmYKejgm-Rv35BLwWnXF8ywg",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/whole-organization-rotten-team-cooked-101152454.html",
-          "title": "“Whole Organization Is Rotten,” “The Team Is Cooked”: NFL Fans Rip Dak Prescott-Led Cowboys for Leaving Team Facility Before Arrival of Reporters",
-          "publisher": "Yahoo Sports",
+          "url": "https://finance.yahoo.com/healthcare/articles/expect-pfizer-pfe-q3-earnings-071736931.html",
+          "title": "What to expect from Pfizer’s (PFE) Q3 earnings",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRN9u5UdaB4AOPcBBx129k_vVNdcOlp6E38oLWWeOOG5C4fsbeVTNpnpMyclI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCqZ8whlUF8nEvYVEDnClobn-Q2aDH74do8W0nmYKejgm-Rv35BLwWnXF8ywg"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/most-cowboys-players-left-facility-on-monday-before-locker-room-media-availability",
-          "title": "Most Cowboys players left facility on Monday before locker-room media availability",
-          "publisher": "NBC Sports",
+          "url": "https://seekingalpha.com/news/4662428-pfizer-q3-preview-analysts-look-to-obesity-pipeline-amid-diverging-growth-expectations",
+          "title": "Pfizer Q3 preview: Analysts look to obesity pipeline amid diverging growth expectations (PFE:NYSE)",
+          "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAiu_Ka9nCZ4N-6NGL6Qi9_ZygAbqSM0RoSGlQtvqpy_zTdle50Nqjqjh3yME"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1JwCuFj1uXk6uLAEJ0UOoS7HfeXTjTwDAKbtPDnKezK1yoqo80lFvd1pl_5c"
         },
         {
-          "url": "https://www.aol.com/articles/roster-team-staff-organization-cooked-083826000.html",
-          "title": "“Roster/Team/Staff/Organization Is Cooked”: Cowboys Analyst Calls Out Jerry Jones’ Team After Players Leave Facility Before Reporters Arrive",
-          "publisher": "AOL.com",
+          "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/11/62807667/top-wall-street-forecasters-revamp-pfizer-expectations-ahead-of-q3-earnings",
+          "title": "Top Wall Street Forecasters Revamp Pfizer Expectations Ahead Of Q3 Earnings",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfn6iKgH5lbSFJcufg3jjicFXmT0uE57wPBoRu7Y4PkwB0Q2Cpl928X06K6Nk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmhtSP4TVr_98dcU6TiTnMRUiG7BeDckNu8hdIwYxOuGk7niIKjHdBwvnOfpc"
+        }
+      ]
+    },
+    {
+      "query": "emerson jones",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T11:30:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/emerson-jones-vs-alexandra-eala-set-1-winner-nov-03-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/elena-pridankina-vs-paula-badosa-set-1-winner-nov-03-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/sorana-cirstea-vs-maria-timofeeva-set-1-winner-nov-03-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnyaHIpEWKCIk1kSDUh_nDZT8MLLaqWeOjpVV99_tWHNOuLZh0Z3RKA-YVw4Y",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/emerson-jones-vs-alexandra-eala-set-1-winner-nov-03-2026/",
+          "title": "November 3, 2026: Emerson Jones vs Alexandra Eala: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnyaHIpEWKCIk1kSDUh_nDZT8MLLaqWeOjpVV99_tWHNOuLZh0Z3RKA-YVw4Y"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/elena-pridankina-vs-paula-badosa-set-1-winner-nov-03-2026/",
+          "title": "November 3, 2026: Elena Pridankina vs Paula Badosa: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZg4k1shbImFWwQyudFMmuAT7xOf_Bo7hIA-LkDcXSbyp0wSZ65mdygkej44A"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/sorana-cirstea-vs-maria-timofeeva-set-1-winner-nov-03-2026/",
+          "title": "November 3, 2026: Sorana Cirstea vs Maria Timofeeva: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSawKrW8UVCDFIU6l2Wp9f-TohJuDliYfxFWjc5Hpu2RfGGXLcCKIrrnsQUgAw"
+        }
+      ]
+    },
+    {
+      "query": "where do i vote in georgia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T11:30:00Z",
+      "related_news_urls": [
+        "https://www.wabe.org/what-to-know-about-key-races-and-candidates-for-georgias-2026-midterm-election/",
+        "https://www.pbs.org/newshour/politics/live-results-georgia-governor-midterm-election",
+        "https://www.yahoo.com/news/politics/articles/georgia-election-2026-voter-guide-085752166.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFFdiP8yFTWx89lA6OZyyevl9MmkJxlseykGZeICLSyAqZeBK7BukLIEUNqGc",
+      "image_credit": "WABE",
+      "news": [
+        {
+          "url": "https://www.wabe.org/what-to-know-about-key-races-and-candidates-for-georgias-2026-midterm-election/",
+          "title": "What to know about key races and candidates for Georgia’s 2026 midterm election",
+          "publisher": "WABE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFFdiP8yFTWx89lA6OZyyevl9MmkJxlseykGZeICLSyAqZeBK7BukLIEUNqGc"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/live-results-georgia-governor-midterm-election",
+          "title": "Live Results: Georgia governor midterm election",
+          "publisher": "PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfItE5Od1T9ZxAYHNrfS3jaRHuooqwVKgwPjJ_L-02iAz8R0LSrl77XCrGg0I"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/georgia-election-2026-voter-guide-085752166.html",
+          "title": "Georgia Election 2026: Voter’s guide to Election Day for Governor, Congress and other key races",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ePB9G6B-0b2kky3AFpIO1lB2Mhizv1juxGCenI2X7j8k7vR5Yr7JK4Y-IMQ"
+        }
+      ]
+    },
+    {
+      "query": "star trek: the next generation",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-03T11:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7747038/2026/11/03/patrick-stewart-huddersfield-town-fan/",
+        "https://variety.com/2026/tv/obituaries-people-news/patrick-stewart-star-trek-gates-mcfadden-tribute-1236937177/",
+        "https://www.washingtonpost.com/health/2026/10/31/patrick-stewart-died-after-brief-journey-with-dementia-is-that-common/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLwabo6E6ODMS2r3ikNbbhsESfr-3Z3V4uluhWtfqOF0FWz2dIFq_Tcy1BqP4",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7747038/2026/11/03/patrick-stewart-huddersfield-town-fan/",
+          "title": "Sir Patrick Stewart and the football team he loved all his life: ‘It was his connection to Earth’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLwabo6E6ODMS2r3ikNbbhsESfr-3Z3V4uluhWtfqOF0FWz2dIFq_Tcy1BqP4"
+        },
+        {
+          "url": "https://variety.com/2026/tv/obituaries-people-news/patrick-stewart-star-trek-gates-mcfadden-tribute-1236937177/",
+          "title": "‘Star Trek’ Star Gates McFadden Pays Tribute to Patrick Stewart: His Portrayal of Jean-Luc Picard Gave People Hope Around the World",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Db4rkyarhnYYDRYi4Yq_FwfQuocF37lUJ2HYJIgAoyEZwK2Ip4fg_JJ0X-8"
+        },
+        {
+          "url": "https://www.washingtonpost.com/health/2026/10/31/patrick-stewart-died-after-brief-journey-with-dementia-is-that-common/",
+          "title": "What Patrick Stewart’s ‘brief’ dementia journey reveals about lifespans after diagnosis",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOzWUC98y_Tm7be25qA8myVr363GWTRS7KElP-zcUoPP_ArL-Kh165_HNCGo8"
+        }
+      ]
+    },
+    {
+      "query": "polymarket",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T11:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/world/2026/nov/03/election-betting-polymarket-kalshi-accurate",
+        "https://www.reuters.com/business/finance/prediction-markets-face-us-midterms-test-election-bets-soar-2026-11-03/",
+        "https://finance.yahoo.com/economy/article/prediction-markets-vs-polls-election-forecasting-industry-faces-midterm-test-100000463.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEL2I4m3sAQaLCkjMV7Y9bhcLqC-eqoRLayPw77qOkFSWM0J-YixYOiXAfyCA",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/03/election-betting-polymarket-kalshi-accurate",
+          "title": "Are prediction markets accurate on elections? The US midterms are a big test",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEL2I4m3sAQaLCkjMV7Y9bhcLqC-eqoRLayPw77qOkFSWM0J-YixYOiXAfyCA"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/prediction-markets-face-us-midterms-test-election-bets-soar-2026-11-03/",
+          "title": "Prediction markets face US midterms test as election bets soar",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzmzPWAyMp8ETVrPoxjZ3ieNDLYhCt_zsgmi114uoBxf8-9mcaLtLswaFxfSw"
+        },
+        {
+          "url": "https://finance.yahoo.com/economy/article/prediction-markets-vs-polls-election-forecasting-industry-faces-midterm-test-100000463.html",
+          "title": "Prediction markets vs. polls: Election forecasting industry faces midterm test",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtYK_ygxD-lJ258pzlOO0Ug7SEiiTnzq8mGsjfprXMNOKT_llFDM4IH3RlYB8"
         }
       ]
     }
