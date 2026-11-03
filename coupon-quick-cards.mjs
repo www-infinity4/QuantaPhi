@@ -2,7 +2,7 @@ import {mountCardActions} from './quanta-card-actions.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
 import {
  COUPON_BRANDS,COUPON_WALLET_KEY,COUPON_FEED,
- filterVerifiedOffers,collectFollowedOffers,checkoutAdvice
+ filterVerifiedOffers,collectFollowedOffers,sanitizeDeviceCouponWallet,checkoutAdvice
 } from './coupon-wallet-core.mjs';
 
 /* Original QuantaPhi coupon experiences: 3 distinct moving Quick Cards.
@@ -25,13 +25,7 @@ const save=(key,value)=>{
  try{localStorage.setItem(key,JSON.stringify(value));return true;}catch{return false;}
 };
 function localWallet(){
- const raw=safeRead(COUPON_WALLET_KEY,{});
- return {
-  autoSave:raw?.autoSave===true,
-  saved:Array.isArray(raw?.saved)?raw.saved.slice(0,400):[],
-  checkedAt:typeof raw?.checkedAt==='string'?raw.checkedAt:'',
-  error:typeof raw?.error==='string'?raw.error:''
- };
+ return sanitizeDeviceCouponWallet(safeRead(COUPON_WALLET_KEY,{}),new Date().toISOString());
 }
 const followed=()=>cleanFeedState(safeRead(FEED_STORAGE_KEY,{})).following;
 const cards=new Map();
