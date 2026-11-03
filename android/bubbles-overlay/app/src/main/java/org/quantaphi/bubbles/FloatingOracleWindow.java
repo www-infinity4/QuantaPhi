@@ -848,9 +848,10 @@ final class FloatingOracleWindow {
                         Object decoded = new JSONTokener(payload).nextValue();
                         if (!(decoded instanceof String) || ((String) decoded).isEmpty()) return;
                         JSONObject request = new JSONObject((String) decoded);
-                        if (!"probe".equals(request.optString("action"))) return;
+                        String action = request.optString("action");
+                        if (!"probe".equals(action) && !"cloudflare".equals(action)) return;
                         Intent ownerDialog = new Intent(service, MainActivity.class)
-                            .putExtra("termux_python_probe", true)
+                            .putExtra("cloudflare".equals(action) ? "termux_cloudflare_probe" : "termux_python_probe", true)
                             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                         service.startActivity(ownerDialog);
                     } catch (RuntimeException error) {

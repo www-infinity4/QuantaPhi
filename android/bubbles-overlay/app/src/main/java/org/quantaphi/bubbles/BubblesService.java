@@ -145,6 +145,24 @@ public final class BubblesService extends Service {
     /** Fixed diagnostic only; never treats an AI plan or ambient speech as permission
      * to execute local Python. Android presents a real user-confirmation dialog.
      */
+    /** A fixed, owner-confirmed Cloudflare network diagnostic. This is not cloud login or deployment. */
+    private boolean handleTermuxCloudflare(String addressed, boolean typed) {
+        if (addressed == null) return false;
+        String phrase = addressed.trim()
+            .replaceFirst("(?i)^(?:bubbles[, ]+)?(?:please\\s+)?", "")
+            .replaceAll("[.!?]+$", "");
+        if (!phrase.matches("(?i)^(?:check|test|verify)\\s+(?:the\\s+)?(?:cloudflare(?:\\s+(?:network|connection))?\\s+(?:in|with|using|via)\\s+termux|termux\\s+cloudflare)$")) return false;
+        Intent intent = new Intent(this, MainActivity.class)
+            .putExtra("termux_cloudflare_probe", true)
+            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        try {
+            startActivity(intent);
+            screenStatus("Cloudflare connection check requested from Termux. Android owner approval required; no result yet.", typed);
+        } catch (RuntimeException error) {
+            screenStatus("Android could not open Termux network approval. No test ran.", typed);
+        }
+        return true;
+    }
     private boolean handleTermuxProbe(String addressed, boolean typed) {
         if (addressed == null || !addressed.trim().matches(
                 "(?i)^(?:bubbles[, ]+)?(?:please\\s+)?(?:(?:test|check|verify)(?:\\s+the)?\\s+(?:python(?:\\s+(?:in|with))?\\s+termux|python|termux(?:\\s+python)?)|(?:run|start|try)(?:\\s+a)?\\s+python\\s+(?:test|diagnostic)|(?:does\\s+python\\s+work|is\\s+python\\s+(?:working|ready))(?:\\s+in\\s+termux)?)[.!?]*$"))
@@ -1172,6 +1190,7 @@ public final class BubblesService extends Service {
         if (!typed && addressed.length() < 3) return;
         BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
         if (directed && handleWorkflowRequest(addressed, false)) return;
+        if (directed && handleTermuxCloudflare(addressed, false)) return;
         if (directed && handleTermuxProbe(addressed, false)) return;
         if (SimNetworkCommands.matches(addressed)) {
             screenStatus(CellularInspector.capture(this), false);
@@ -1404,6 +1423,7 @@ public final class BubblesService extends Service {
         }
         if (panelCommand(text, true, SystemClock.elapsedRealtime())) return;
         if (handleWorkflowRequest(text, true)) return;
+        if (handleTermuxCloudflare(text, true)) return;
         if (handleTermuxProbe(text, true)) return;
         if (handleChatGPTAppRequest(text, true)) return;
         String localLaunch = AppControlBridge.tryLaunch(this, text);

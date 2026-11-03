@@ -72,6 +72,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify work-first Bubbles UI and real Android Termux Cloudflare callback
+        run: |
+          node --test test/bubbles-work-first-chat.test.mjs test/bubbles-cloudflare-termux.test.cjs test/bubbles-legacy-termux-probe.test.cjs test/bubbles-iteration-bubbles.test.mjs test/bubbles-chatgpt-bridge.test.mjs test/bubbles-oracle-android-ui.test.mjs
       - name: Verify XRecorder-style partial edge docking and native voice continuity
         run: |
           node --test test/bubbles-orb-semantic.test.mjs
