@@ -1,0 +1,47 @@
+name: News Phi original article draft intake
+on:
+  schedule:
+    # One review-ready batch each morning (13:00 UTC); source headlines refresh on Cloudflare more often.
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: news-phi-editorial-drafts
+  cancel-in-progress: false
+jobs:
+  prepare-source-draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify writer and safeguards
+        run: |
+          node --check scripts/newsroom-draft.mjs
+          node --test test/newsroom-daily.test.mjs
+      - name: Prepare a NEW NASA sourced draft, never publish without review
+        run: node scripts/newsroom-draft.mjs
+      - name: Create a draft pull request for independent editorial fact checking
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          add-paths: newsroom/drafts/*.json
+          branch: automation/news-phi-source-drafts
+          base: main
+          delete-branch: false
+          draft: true
+          commit-message: "newsroom: stage current original-source research for editorial review"
+          title: "News Phi: review current NASA source before first-party article publication"
+          body: |
+            This is an editorial research DRAFT, not published news.
+            Before publication, check every statement against the primary source, rewrite where needed,
+            review image rights, check publication dates, and run newsroom tests.
+            **Require editorial approval before merging.** A source article's date is NOT the QuantaPhi publication date.
+            Use the verified source URL in the draft; do not publish unreviewed model text.
+            Tracks #1350.
