@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T06:35:23.251985Z",
+  "checked_at": "2026-11-03T07:01:43.583797Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "talia gibson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T06:40:00Z",
+      "related_news_urls": [
+        "https://www.dimers.com/tennis/news/sorana-cirstea-vs-maria-timofeeva-tennis-prediction-wta-hong-kong-open-2026-ac",
+        "https://lastwordonsports.com/tennis/2026/11/02/wta-hong-kong-day-2-predictions-cirstea-timofeeva/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRa9JQUJDwZAXDNhSfRIq6eKYCmpoLAgZ1m5pAfA61hZD1i4x9VfVyer_JV-oc",
+      "image_credit": "Dimers",
+      "news": [
+        {
+          "url": "https://www.dimers.com/tennis/news/sorana-cirstea-vs-maria-timofeeva-tennis-prediction-wta-hong-kong-open-2026-ac",
+          "title": "Sorana Cirstea vs. Maria Timofeeva prediction, odds, picks for WTA Hong Kong Open 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRa9JQUJDwZAXDNhSfRIq6eKYCmpoLAgZ1m5pAfA61hZD1i4x9VfVyer_JV-oc"
+        },
+        {
+          "url": "https://lastwordonsports.com/tennis/2026/11/02/wta-hong-kong-day-2-predictions-cirstea-timofeeva/",
+          "title": "WTA Hong Kong Day 2 Predictions Including Sorana Cirstea vs Maria Timofeeva",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyK_o3AZ1mx6p5RZl0H4mFFYxBaDrVNyInVUh53eh9SEhKDLxX_tsl9QZwtAk"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
+          "title": "November 4, 2026: Claire Liu vs Katie Boulter: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY"
+        }
+      ]
+    },
+    {
+      "query": "kamala harris",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T06:40:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/politics/2026/11/02/kamala-harris-gavin-newsom-weighing-2028-runs-rally-together-california/",
+        "https://www.foxnews.com/video/6407765833112",
+        "https://www.nytimes.com/2026/11/02/us/elections/newsom-harris-becerra-rally.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgby18v1dg-f2nqpNFRDEvcJmcc349GmV5YjAqOE-n-8R9eTWRx7VWL7-2DZI",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/11/02/kamala-harris-gavin-newsom-weighing-2028-runs-rally-together-california/",
+          "title": "Kamala Harris and Gavin Newsom, weighing 2028 runs, rally together in California",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgby18v1dg-f2nqpNFRDEvcJmcc349GmV5YjAqOE-n-8R9eTWRx7VWL7-2DZI"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6407765833112",
+          "title": "WATCH LIVE: Top Democrats hold 'Stop the Power Grab' rally in California",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVLYpvKsGKWjx3eHbB8h5Flqg7yV9uPOTtawdnsWPwKMC6dQ2rE_12FX3K32M"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/02/us/elections/newsom-harris-becerra-rally.html",
+          "title": "Newsom and Harris Campaign in Los Angeles, With Little Hint of What’s to Come",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaRPxtph0JpiRUQpPYk5uT6KAFRlEM4poU_10RCHBZ-x9_ixBh9v0Ohkk2QM4"
+        }
+      ]
+    },
+    {
+      "query": "polymarket midterms",
+      "approx_searches": "100+",
+      "published_at": "2026-11-03T06:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/politics/elections/prediction-markets-keep-whiffing-on-elections-will-they-miss-on-the-midterms-9809c8c9",
+        "https://www.nytimes.com/2026/10/29/technology/polymarket-kalshi-midterm-election-betting-wagers.html",
+        "https://www.theguardian.com/commentisfree/2026/nov/02/prediction-markets-voters-elections"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0JIHqhRy-77Yj6Z9n95T95OpuhYiOi0JLlDin0JJIpALRSewHZQkYfmjBelI",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/politics/elections/prediction-markets-keep-whiffing-on-elections-will-they-miss-on-the-midterms-9809c8c9",
+          "title": "Prediction Markets Keep Whiffing on Elections. Will They Miss on the Midterms?",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0JIHqhRy-77Yj6Z9n95T95OpuhYiOi0JLlDin0JJIpALRSewHZQkYfmjBelI"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/10/29/technology/polymarket-kalshi-midterm-election-betting-wagers.html",
+          "title": "He Bet $1.5 Million on the Midterms. Will He Win Big?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8Pplwucnc7chKYC7D2tcnnAZ114GR07AuWXiTW0Kci9Kojjfteyd8LX6HKZw"
+        },
+        {
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/02/prediction-markets-voters-elections",
+          "title": "Prediction market bettors are the new political pundits. Why are we listening to them? | Judith Levine",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOEsw77mLpOTyyk8hg7JD6dKR3bHmcBAuHS7_NS9qh_ohsqMY9t__KIDUstSM"
+        }
+      ]
+    },
     {
       "query": "jil teichmann",
       "approx_searches": "2000+",
       "published_at": "2026-11-03T06:20:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/ben-shelton-vs-cameron-norrie-set-1-winner-nov-03-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/maaya-rajeshwaran-revathi-vs-katarzyna-kawa-set-2-winner-nov-03-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/alycia-parks-vs-alexandra-eala-set-2-winner-nov-03-2026/"
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/andrey-rublev-vs-tomas-martin-etcheverry-total-games-nov-03-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/novak-djokovic-vs-valentin-vacherot-set-1-winner-nov-03-2026/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCkZGXS-RQhaylrPt6YLxPHDv3Ansyb5yBKLts4QRljYnkK_e90WRgs9auWw",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY",
       "image_credit": "Robinhood",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/ben-shelton-vs-cameron-norrie-set-1-winner-nov-03-2026/",
-          "title": "November 3, 2026: Ben Shelton vs Cameron Norrie: Set 1 Winner Tennis Prediction Market",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/claire-liu-vs-katie-boulter-set-2-winner-nov-04-2026/",
+          "title": "November 4, 2026: Claire Liu vs Katie Boulter: Set 2 Winner Tennis Prediction Market",
           "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCkZGXS-RQhaylrPt6YLxPHDv3Ansyb5yBKLts4QRljYnkK_e90WRgs9auWw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR859RcZe0EpJaCVTvHKQZfOm8APWEt7ZQ1dEBicORIN0pMH6MVt98IQ_jLpbY"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/maaya-rajeshwaran-revathi-vs-katarzyna-kawa-set-2-winner-nov-03-2026/",
-          "title": "November 3, 2026: Maaya Rajeshwaran Revathi vs Katarzyna Kawa: Set 2 Winner Tennis Prediction Market",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/andrey-rublev-vs-tomas-martin-etcheverry-total-games-nov-03-2026/",
+          "title": "November 3, 2026: Andrey Rublev vs Tomas Martin Etcheverry: Total Games Tennis Prediction Market",
           "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9pUhadKzoFXK0sVYfCI4FKxlI0CqnOYlyIAA1AjD9TF2rKMYhS7J8EsBLMZ8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQvSLNvu3IqIqpg4j8pk-D7v215HQTApXGxCUlhHc2s0RGLpr6LumxZbYayj4"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alycia-parks-vs-alexandra-eala-set-2-winner-nov-03-2026/",
-          "title": "November 3, 2026: Alycia Parks vs Alexandra Eala: Set 2 Winner Tennis Prediction Market",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/novak-djokovic-vs-valentin-vacherot-set-1-winner-nov-03-2026/",
+          "title": "November 3, 2026: Novak Djokovic vs Valentin Vacherot: Set 1 Winner Tennis Prediction Market",
           "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_-HPl4K-sORDhFWKCwnf7PL86Bd7OCw0lOmGXr2yMa4_Z-GWKpMOl27avi6A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIm-cnrO5gMuVXIIgsEd-dt7ptoXLu8pz1Zb7JkEW6MY7PqEbOFhTbF-onaRo"
         }
       ]
     },
@@ -77,41 +182,6 @@
       ]
     },
     {
-      "query": "2026 united states elections results",
-      "approx_searches": "100+",
-      "published_at": "2026-11-03T06:20:00Z",
-      "related_news_urls": [
-        "https://apnews.com/projects/elections-2026/us-house-results/",
-        "https://www.bloomberg.com/graphics/2026-us-election-results/house/",
-        "https://www.ms.now/opinion/vote-midterm-election-data"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0iGUExpK3axsj2wD-Xe4WtdsMQiXZZHLloqXD7vr7EjJ-X5siA9x6d-s5T2k",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/projects/elections-2026/us-house-results/",
-          "title": "2026 U.S. House Election Results",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0iGUExpK3axsj2wD-Xe4WtdsMQiXZZHLloqXD7vr7EjJ-X5siA9x6d-s5T2k"
-        },
-        {
-          "url": "https://www.bloomberg.com/graphics/2026-us-election-results/house/",
-          "title": "Live Results and Map: 2026 US House Elections | Key Races to Watch",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs3gn_LAwXlu-rw5fSZr3F8-dFLNJ6ZG3TGRNDrVuej941Ovyk-n28TFbFac8"
-        },
-        {
-          "url": "https://www.ms.now/opinion/vote-midterm-election-data",
-          "title": "Opinion | Non-voters tend to think their vote won’t make a difference. The data says otherwise.",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9HbdEZES92I40L9SUpNi-I98IL5jOuUGOnFEaWf5ERt2DQKdu7Vz_OcRN1rY"
-        }
-      ]
-    },
-    {
       "query": "la county measure a",
       "approx_searches": "100+",
       "published_at": "2026-11-03T06:10:00Z",
@@ -147,43 +217,8 @@
       ]
     },
     {
-      "query": "luka doncic stats",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T06:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
-        "https://www.nba.com/news/starting-5-november-2-2026",
-        "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
-          "title": "Luka Doncic touts his improved defense, draws praise from Lakers, Raptors",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI"
-        },
-        {
-          "url": "https://www.nba.com/news/starting-5-november-2-2026",
-          "title": "Starting 5: Luka makes history, Celtics and Warriors extend streaks",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7H6XxpJ6I1hoPWn5saQQMxprBWwsCGV69zUJWzffiPMBUQXsmk1i1cie312A"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html",
-          "title": "The Lakers 'live on a spaceship,' and Luka Dončić looks like the best damn pilot in the galaxy",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScnsxQpaHTYRjEizaUIeYG-oMsC6_CxA53JAciDXyyTF2VkzviY43lcsa4LzM"
-        }
-      ]
-    },
-    {
       "query": "robin montgomery",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-03T06:00:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/athletic/7746330/2026/11/01/womens-chennai-open-stream-how-to-watch-november-3/",
@@ -221,33 +256,68 @@
       "approx_searches": "5000+",
       "published_at": "2026-11-03T05:50:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50365929/lebron-james-takes-sip-wine-crashing-76ers-fan",
-        "https://sports.yahoo.com/articles/framing-cup-nba-fans-t-050809660.html",
-        "https://www.10tv.com/article/syndication/associatedpress/a-toast-to-a-win-lebron-james-takes-a-sip-of-wine-after-crashing-into-76ers-fan/616-6d4fb6bc-7d3f-4143-92fd-48b716484bf2"
+        "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
+        "https://www.nba.com/news/starting-5-november-2-2026",
+        "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKVe3qthcZxrCrqqbyJ3VKnVG4SQke6sCQBlcBHjKLenDB1IN1nkWFRD8AkmU",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50365929/lebron-james-takes-sip-wine-crashing-76ers-fan",
-          "title": "LeBron James takes sip of wine after crashing into 76ers fan",
+          "url": "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
+          "title": "Luka Doncic touts his improved defense, draws praise from Lakers, Raptors",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKVe3qthcZxrCrqqbyJ3VKnVG4SQke6sCQBlcBHjKLenDB1IN1nkWFRD8AkmU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/framing-cup-nba-fans-t-050809660.html",
-          "title": "‘Framing the cup’ – NBA fans can’t believe LeBron James sipped a fan’s drink during a game",
+          "url": "https://www.nba.com/news/starting-5-november-2-2026",
+          "title": "Starting 5: Luka makes history, Celtics and Warriors extend streaks",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7H6XxpJ6I1hoPWn5saQQMxprBWwsCGV69zUJWzffiPMBUQXsmk1i1cie312A"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html",
+          "title": "The Lakers 'live on a spaceship,' and Luka Dončić looks like the best damn pilot in the galaxy",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaq-tyWBZamTTd8GwggUJyZ5JykAQyhArKe5I8-3HjqS0iViOGvWLhywkSN3E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScnsxQpaHTYRjEizaUIeYG-oMsC6_CxA53JAciDXyyTF2VkzviY43lcsa4LzM"
+        }
+      ]
+    },
+    {
+      "query": "brandin podziemski",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-03T05:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/devin-booker-scores-26-points-fouls-out-late",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/miles-bridges-records-21-6-3-4-1-line-vs-gsw",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/dillon-brooks-records-18-points-eight-rebounds"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT5NS1gdjNyy6zIjDfslMB9oUGTudXfQc6OQvS53K9VRJoBQkpw2xymELbbcw",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/devin-booker-scores-26-points-fouls-out-late",
+          "title": "Devin Booker scores 26 points, fouls out late",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT5NS1gdjNyy6zIjDfslMB9oUGTudXfQc6OQvS53K9VRJoBQkpw2xymELbbcw"
         },
         {
-          "url": "https://www.10tv.com/article/syndication/associatedpress/a-toast-to-a-win-lebron-james-takes-a-sip-of-wine-after-crashing-into-76ers-fan/616-6d4fb6bc-7d3f-4143-92fd-48b716484bf2",
-          "title": "A toast to a win? LeBron James takes a sip of wine after crashing into 76ers fan",
-          "publisher": "10TV",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/miles-bridges-records-21-6-3-4-1-line-vs-gsw",
+          "title": "Miles Bridges records 21/6/3/4/1 line vs. GSW",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-eiooycUBSEvRVWk4QdqJwYIDU4-P3IQ1ahNSnu6zhOqx88iPZ1DXii8hMk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU_Jy1lWpKWOmNkpqsP-tml7q6FTXZESNtwjXFm_30YUj3apLFrEI9ciZmMPU"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/dillon-brooks-records-18-points-eight-rebounds",
+          "title": "Dillon Brooks records 18 points, eight rebounds",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU_Jy1lWpKWOmNkpqsP-tml7q6FTXZESNtwjXFm_30YUj3apLFrEI9ciZmMPU"
         }
       ]
     },
@@ -283,76 +353,6 @@
           "publisher": "Forbes",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAJONcPsmtmyj9ghoOB_pSbuRGCmdjVuQ91KVOGW0aueQ10ldVMVfBVKxFxbw"
-        }
-      ]
-    },
-    {
-      "query": "georges niang",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-03T05:40:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/warriors-georges-niang-reverting-to-bench-role/",
-        "https://www.rotowire.com/basketball/headlines/georges-niang-news-will-start-sunday-537142",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/gsw-starts-curry-podz-niang-lendeborg-green"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMi-dEkRy0UmecxQztWM5OUrrnk3QTko6eG2OiiyPoVsnmylVJHS_w23ejvX8",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/warriors-georges-niang-reverting-to-bench-role/",
-          "title": "Warriors' Georges Niang: Reverting to bench role",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMi-dEkRy0UmecxQztWM5OUrrnk3QTko6eG2OiiyPoVsnmylVJHS_w23ejvX8"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/georges-niang-news-will-start-sunday-537142",
-          "title": "Georges Niang News: Will start Sunday",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSElJp5ZT4MYt8KK0cEvtdGA5gTj8LIDbAannpr1ozsHwcnYzK69vPMe4FPYO4"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/gsw-starts-curry-podz-niang-lendeborg-green",
-          "title": "GSW starts Curry, Podz, Niang, Lendeborg, Green",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc4nN4xg5xUOoZWVAZG71YQmT7UBIKHwBdNjGswK7bjSShwwnacaAowX8_bJA"
-        }
-      ]
-    },
-    {
-      "query": "warriors standings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T05:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50356142/yaxel-lendeborg-scores-37-points-most-warriors-rookie-stephen-curry",
-        "https://www.nytimes.com/athletic/7746646/2026/11/01/yaxel-lendeborg-37-points-steph-curry-wilt-chamberlain-warriors-rookie/",
-        "https://www.nba.com/watch/video/game-recap-warriors-124-clippers-112"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDMEzNci2jT28OZrJgXit80Na4GraRweplfrKc1tPHTkU36vKaJrG1uSh6MqA",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50356142/yaxel-lendeborg-scores-37-points-most-warriors-rookie-stephen-curry",
-          "title": "Yaxel Lendeborg scores 37 points, most by a Warriors rookie since Stephen Curry",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDMEzNci2jT28OZrJgXit80Na4GraRweplfrKc1tPHTkU36vKaJrG1uSh6MqA"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7746646/2026/11/01/yaxel-lendeborg-37-points-steph-curry-wilt-chamberlain-warriors-rookie/",
-          "title": "Yaxel Lendeborg nets 37 in highest scoring game by Warriors rookie since Steph Curry in 2010",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf_gjK0fonpSgVeZ66QeaYskwfOeZh-Nv18Tya_6fY3V9owOU0VsH9HpyiViE"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/game-recap-warriors-124-clippers-112",
-          "title": "Game Recap: Warriors 124, Clippers 112",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRe_--QNsC7fc7XgHbtwqyLO3RwWliyRwK2Qa8GrQ4vqyyN6sZaH5bdfuKWCUQ"
         }
       ]
     }
