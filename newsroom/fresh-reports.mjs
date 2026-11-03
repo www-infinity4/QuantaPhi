@@ -66,6 +66,15 @@ if(typeof document!=='undefined'){
    for(const story of current.slice(0,8)){
     const item=el('article',undefined,'feature');
     item.append(el('p',tidy(story.category,80)+' · Published '+story.publishedAt,'eyebrow'));
+    // Only original licensed/credited first-party editorial imagery or NASA source assets.
+    const imgUrl=https(story.imageUrl);
+    if(imgUrl&&new URL(imgUrl).hostname==='assets.science.nasa.gov'&&tidy(story.imageAlt,180)){
+     const image=document.createElement('img');
+     image.src=imgUrl;image.alt=tidy(story.imageAlt,180);image.loading='eager';image.decoding='async';
+     image.width=1024;image.height=576;
+     image.style.cssText='display:block;width:100%;height:auto;max-height:320px;object-fit:cover;border-radius:12px;margin:12px 0';
+     item.append(image);
+    }
     const h=el('h3');h.append(link(tidy(story.title,200),story.url));
     item.append(h,el('p',tidy(story.description,550)),link('Read our complete original article',story.url));
     featured.append(item);
