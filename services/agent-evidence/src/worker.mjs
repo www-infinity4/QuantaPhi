@@ -62,15 +62,47 @@ export async function readEvidence(request, db) {
   return error('not_found', 404);
 }
 
+// Public GitHub API calls can return 403 from shared Worker egress. Use the
+// repository's own Atom release feed as a bounded, untrusted fallback.
+function atomText(xml, tag) {
+  const match = xml.match(new RegExp('<' + tag + '(?:\\s[^>]*)?>([\\s\\S]*?)<\\/' + tag + '>'));
+  return match ? match[1].replace(/<[^>]*>/g, '').replace(/&(?:amp|lt|gt|quot|apos|#(\\d+));/g,
+    (entity, decimal) => decimal ? String.fromCodePoint(Math.min(Number(decimal), 0x10ffff)) :
+      ({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'"})[entity] || '').trim() : '';
+}
+function atomReleases(xml, repository) {
+  if (xml.length > 512000 || !xml.includes('<feed')) throw new Error('invalid_atom_feed');
+  const entries = [...xml.matchAll(/<entry(?:\\s[^>]*)?>([\\s\\S]*?)<\\/entry>/g)].slice(0, 3);
+  return entries.map(([, entry]) => {
+    const href = entry.match(/<link\\b[^>]*\\brel="alternate"[^>]*\\bhref="([^"]+)"/)?.[1] ||
+      entry.match(/<link\\b[^>]*\\bhref="([^"]+)"[^>]*\\brel="alternate"/)?.[1] || '';
+    const expected = `https://github.com/${repository}/releases/tag/`;
+    if (!href.startsWith(expected) || !href.slice(expected.length)) return null;
+    return { id: 'atom:' + href.slice(expected.length), html_url: href,
+      name: atomText(entry, 'title'), body: 'Official upstream release feed; inspect the linked release notes.',
+      published_at: atomText(entry, 'published') || atomText(entry, 'updated') };
+  }).filter(Boolean);
+}
+async function fetchReleases(item) {
+  const response = await fetch(`https://api.github.com/repos/${item.repository}/releases?per_page=3`, {
+    headers: { 'User-Agent': 'QuantaPhi-AgentEvidence-Collector', Accept: 'application/vnd.github+json' },
+  });
+  if (response.ok) {
+    const releases = await response.json();
+    if (!Array.isArray(releases)) throw new Error('invalid_feed');
+    return releases;
+  }
+  if (response.status !== 403 && response.status !== 429) throw new Error(`http_${response.status}`);
+  const fallback = await fetch(`https://github.com/${item.repository}/releases.atom`, {
+    headers: { 'User-Agent': 'QuantaPhi-AgentEvidence-Collector', Accept: 'application/atom+xml' },
+  });
+  if (!fallback.ok) throw new Error(`github_api_${response.status}_atom_${fallback.status}`);
+  return atomReleases(await fallback.text(), item.repository);
+}
 async function collectReleases(db, item) {
   let imported = 0;
   try {
-    const response = await fetch(`https://api.github.com/repos/${item.repository}/releases?per_page=3`, {
-      headers: { 'User-Agent': 'QuantaPhi-AgentEvidence-Collector', Accept: 'application/vnd.github+json' },
-    });
-    if (!response.ok) throw new Error(`http_${response.status}`);
-    const releases = await response.json();
-    if (!Array.isArray(releases)) throw new Error('invalid_feed');
+    const releases = await fetchReleases(item);
     for (const release of releases.slice(0, 3)) {
       if (!/^https:\/\/github\.com\//.test(release.html_url || '')) continue;
       const id = `release:${item.repository}:${release.id}`;
