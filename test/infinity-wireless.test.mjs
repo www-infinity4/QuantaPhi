@@ -54,3 +54,22 @@ test('HTML is a genuine form with only authorized network intent and truthful st
  assert.match(js,/\/api\/wireless\/orders/);
  assert.doesNotMatch(html+js,/Infrastructure hijacked|DARPA-grade|Your high-speed air connection is live/i);
 });
+
+test('scheduled retention cleanup only deletes expired planning rows and rate buckets',async()=>{
+ const calls=[];
+ const db={prepare(sql){return {bind(...params){return {run:async()=>{calls.push({sql,params});return {success:true}}}}}}};
+ await worker.scheduled({scheduledTime:Date.parse('2026-11-03T07:15:00.000Z')},{WIRELESS_DB:db});
+ assert.equal(calls.length,3);
+ assert.match(calls[0].sql,/DELETE FROM wireless_events WHERE order_id IN/);
+ assert.match(calls[1].sql,/DELETE FROM wireless_orders WHERE created_at </);
+ assert.match(calls[2].sql,/DELETE FROM wireless_daily_limits WHERE day </);
+ assert.equal(calls[0].params[0],'2026-10-04T07:15:00.000Z');
+ assert.equal(calls[1].params[0],'2026-10-04T07:15:00.000Z');
+ assert.equal(calls[2].params[0],'2026-11-01');
+});
+test('private planning retention and scheduled trigger are documented for production',()=>{
+ const config=read('workers/infinity-wireless/wrangler.toml'),readme=read('workers/infinity-wireless/README.md');
+ assert.match(config,/\[triggers\]/);
+ assert.match(config,/crons\s*=\s*\[/);
+ assert.match(readme,/30 days/i);
+});
