@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {freshFeatures,pickFreshSource} from '../newsroom/fresh-reports.mjs';
+import {freshFeatures,pickFreshSource,isVerifiedFullReport} from '../newsroom/fresh-reports.mjs';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const now=Date.parse('2026-11-02T20:00:00Z');
 const source={title:'New independent research results published this morning',extract:'Detailed explanatory source reporting with original findings and references.',url:'https://science.nasa.gov/missions/hubble/sample-new-research',publishedAt:'2026-11-02T16:00:00Z'};
@@ -47,4 +47,18 @@ test('Cloudflare full report source is never presented as authored when report i
  assert.match(js,/reportUnavailable/);
  assert.match(js,/paragraphs\.length/);
  assert.doesNotMatch(js,/innerHTML/);
+});
+test('live full report is cached only after source, mode, length and paragraph validation',()=>{
+ const source='https://science.nasa.gov/research/current';
+ const complete=Array.from({length:7},(_,i)=>('Paragraph '+i+' reports sourced evidence and limits of the research results. ').repeat(6));
+ assert.equal(isVerifiedFullReport({ok:true,sourceUrl:source,researchMode:'gpt-source-grounded',paragraphs:complete},source),true);
+ assert.equal(isVerifiedFullReport({ok:true,sourceUrl:source,researchMode:'gpt-source-grounded',paragraphs:['One summary.','Another summary.']},source),false);
+ assert.equal(isVerifiedFullReport({ok:true,sourceUrl:'https://example.com/wrong',researchMode:'gpt-source-grounded',paragraphs:complete},source),false);
+ assert.equal(isVerifiedFullReport({ok:true,sourceUrl:source,researchMode:'AI_unverified',paragraphs:complete},source),false);
+});
+test('expired live articles and pending reads cannot revive old content after errors',()=>{
+ const code=read('newsroom/fresh-reports.mjs');
+ assert.match(code,/revision\+\+;\s*sources=\[\]/);
+ assert.match(code,/setInterval\([^]*sourceList\(sources\)/);
+ assert.match(code,/if\(turn!==revision\)return/);
 });
