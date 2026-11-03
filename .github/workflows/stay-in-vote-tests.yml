@@ -1,0 +1,34 @@
+name: Stay In Vote safety checks
+on:
+  push:
+    paths:
+      - 'workers/stay-in-vote/**'
+      - 'stay-in-vote.mjs'
+      - 'stay-in-vote.css'
+      - 'assets/stay-in-vote-ballot.svg'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'test/stay-in-vote.test.mjs'
+      - '.github/workflows/stay-in-vote-tests.yml'
+  pull_request:
+    paths:
+      - 'workers/stay-in-vote/**'
+      - 'stay-in-vote.mjs'
+      - 'stay-in-vote.css'
+      - 'assets/stay-in-vote-ballot.svg'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'test/stay-in-vote.test.mjs'
+      - '.github/workflows/stay-in-vote-tests.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check workers/stay-in-vote/worker.mjs
+      - run: node --check stay-in-vote.mjs
+      - run: node --test test/stay-in-vote.test.mjs

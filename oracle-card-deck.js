@@ -9,6 +9,7 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
  ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
+ ['stayInVoteCard','Stay In & Vote · Community ballot'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
@@ -71,6 +72,7 @@ const CARD_DIRECTIONS={
  liveFoxGameCard:['fox-live-game','Television','Watch KYOU news in the official station player'],
  liveFoxNewsCard:['fox-live-news','Television','Watch the official LiveNOW from FOX news player'],
  coliseumZeusCard:['coliseum-zeus','Collaboration','Pitch, vote, branch and build in the Zeus arena'],
+ stayInVoteCard:['stay-in-vote','Civic information','Cast a verified community ballot and compare distinct Infinity and Bubbles research notes'],
  walmartShoppingCard:['walmart-shopping','Shopping','Shop Walmart pizza, groceries and related products'],
  cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
  quantaDirectoryCards:['public-directory','Directory','Search verified names, businesses and websites'],
