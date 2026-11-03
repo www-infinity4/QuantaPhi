@@ -25,5 +25,5 @@ test('Original switchboard artwork is non-fabricated illustration rather than a 
  const svg=read('wireless/switchboard.svg');
  assert.match(svg,/<svg /);
  assert.match(svg,/Planning concept/);
- assert.doesNotMatch(svg,/live coverage|tower connected|DARPA-grade/i);
+ assert.doesNotMatch(svg,/Your high-speed air connection is live|tower connected|DARPA-grade/i);
 });
