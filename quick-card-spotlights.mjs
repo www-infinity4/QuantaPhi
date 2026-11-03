@@ -57,17 +57,28 @@ export function chooseSpotlight(items,{seen=[],interests=[],last=''}={}){
  const score=x=>(x.kind==='Product'?2:0)+words.reduce((n,w)=>n+Number((x.title+' '+x.category+' '+x.description).toLowerCase().includes(w)),0);
  return [...pool].sort((a,b)=>score(b)-score(a)||Date.parse(b.checked_at)-Date.parse(a.checked_at))[0]||null;
 }
+/* Do not wait for a slow GitHub/raw host before asking the local snapshot.
+ * Select the newest properly validated, source-backed result after bounded
+ * concurrent reads; one failed source must not suppress the other. */
+export async function readLatestSpotlightSnapshot(fetcher=fetch,now=Date.now()){
+ const candidates=await Promise.all(DATA.map(async endpoint=>{
+  try{
+   const response=await fetcher(endpoint+'?checked='+now,{
+    cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(3500)
+   });
+   return response.ok?await response.json():null;
+  }catch{return null}
+ }));
+ return candidates.reduce((best,item)=>newerSpotlightSnapshot(best,item,now),null);
+}
 async function snapshot(){
  if(snapshotPromise&&Date.now()-snapshotAt<TTL)return snapshotPromise;
- snapshotAt=Date.now();snapshotPromise=(async()=>{
-  let newest=null;
-  for(const endpoint of DATA){try{
-   const r=await fetch(endpoint+'?checked='+Date.now(),{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(9000)});
-   if(!r.ok)continue;const d=await r.json();
-   newest=newerSpotlightSnapshot(newest,d);
-  }catch{}}
-  return newest;
- })();return snapshotPromise;
+ snapshotAt=Date.now();
+ snapshotPromise=readLatestSpotlightSnapshot().then(value=>{
+  if(!value)snapshotAt=Date.now()-TTL+45000;
+  return value;
+ });
+ return snapshotPromise;
 }
 export async function fetchSpotlights(card,fetcher=fetch){
  const previous=cache.get(card.id);if(previous&&Date.now()-previous.at<TTL)return previous.items;
@@ -81,7 +92,7 @@ export async function fetchSpotlights(card,fetcher=fetch){
   const intent=['Shopping','Restaurants','Auctions','Trading cards'].includes(card.category)?' listings':' source photos';
   const q='site:'+new URL(card.official).hostname.replace(/^www\./,'')+' '+text(card.query||card.feature||card.name,100)+intent;
   const url=BROKER+'?'+new URLSearchParams({q,format:'json',categories:'images',safesearch:'1'});
-  const r=await fetcher(url,{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(10000)});
+  const r=await fetcher(url,{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(4500)});
   if(r.ok){const data=await r.json();const indexed=normalizeSpotlights({schema_version:1,items:(data.results||[]).slice(0,35).map(row=>({
    url:row.url,image:row.img_src||row.thumbnail_src||row.thumbnail,title:row.title,
    description:row.content||row.description,category:card.category,checked_at:new Date().toISOString(),method:'indexed'
