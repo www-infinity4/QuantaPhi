@@ -33,3 +33,29 @@ test('a search permalink restores the matching card without relying on a paid lo
  await page.goto(base+'/?q=Burger%20King',{waitUntil:'domcontentloaded'});
  await expect(page.locator('[data-quick-card-match="burger-king"]')).toBeVisible();expect(jobs).toBe(0);
 });
+
+test('a new GE web search builds a device-local card, returns on follow-up and opens the real source preview',async({page})=>{
+ await prepare(page);
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search?*',route=>route.fulfill({
+  status:200,contentType:'application/json',body:JSON.stringify({results:[
+   {title:'GE - Once, Now, Forever',url:'https://www.ge.com/about-us'},
+   {title:'GE Appliances',url:'https://www.geappliances.com/'}
+  ]})
+ }));
+ await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+ const q=page.getByRole('searchbox',{name:'Search anything',exact:true});
+ await q.fill('GE');await q.press('Enter');
+ const card=page.locator('#quickCardSearchResults [data-quick-card-match="discovered-ge-com"]');
+ await expect(card).toBeVisible();
+ await expect(card.getByRole('link',{name:'Visit GE ↗'})).toHaveAttribute('href','https://www.ge.com/');
+ await expect(card.getByRole('button',{name:'+ Follow'})).toBeVisible();
+ await card.getByRole('button',{name:'+ Follow'}).click();
+ await expect(card.getByRole('button',{name:'✓ Following'})).toBeVisible();
+ const localCard=await page.evaluate(async()=>{const m=await import('/bubbles-card-catalog.mjs');return m.findCard('GE')});
+ expect(localCard?.url).toContain('/discovered-quick-card.html?site=');
+ await page.goto(base+localCard.url,{waitUntil:'domcontentloaded'});
+ await expect(page.getByRole('heading',{name:'GE',exact:true})).toBeVisible();
+ await expect(page.getByRole('link',{name:'Visit GE website ↗'})).toHaveAttribute('href','https://www.ge.com/');
+ await expect(page.getByRole('button',{name:'✓ Following'})).toBeVisible();
+ await expect(page.getByRole('button',{name:'Buy It Now'})).toHaveCount(0);
+});
