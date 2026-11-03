@@ -1,0 +1,73 @@
+/* Santa's Helper: original Christmas illustrations and high-contrast, mobile-first cards.
+ * Does not imply a Santa-branded merchant partnership or live Christmas sale. */
+#santasHelperCards .santa-card{display:none}
+body.oracle-shelf-open #santasHelperCards .santa-card{display:block}
+body.oracle-card-deck-active:not(.oracle-shelf-open) main.app > #santasHelperCards{display:none!important}
+#oracleCardStage>.santa-card{display:block}
+.santa-card{--santa-forest:#173d32;--santa-red:#a72733;--santa-gold:#d2a65e;box-sizing:border-box;
+ width:100%;min-width:0;max-width:100%;overflow:hidden;color:#27372f;
+ background:#fcf7ec;border:1px solid #d5bf8d;border-radius:22px;
+ box-shadow:0 16px 36px #233e3224;font:400 17px/1.55 system-ui,-apple-system,Roboto,sans-serif;
+ letter-spacing:.2px}
+.santa-card *{box-sizing:border-box}
+.santa-card .santa-art{position:relative;width:100%;overflow:hidden;background:#133d30;border-bottom:5px solid #d2a65e}
+.santa-card .santa-art:after{content:"";position:absolute;left:16px;right:16px;bottom:8px;height:4px;
+ border-radius:99px;background:linear-gradient(90deg,transparent,#fbdf9a,transparent);opacity:.85}
+.santa-card .santa-hero{display:block;width:100%;height:auto;aspect-ratio:1200/680;object-fit:cover}
+.santa-card .santa-content{padding:clamp(16px,4vw,27px);min-width:0}
+.santa-card .santa-kicker{margin:0 0 5px;font:800 11px/1.5 system-ui,sans-serif;letter-spacing:.08em;color:#8a4938}
+.santa-card h2{margin:0 0 8px;color:#193b2f;font:800 clamp(23px,5vw,32px)/1.2 system-ui,sans-serif;letter-spacing:.2px}
+.santa-card h3{margin:22px 0 8px;font-size:19px;color:#193b2f}
+.santa-card .santa-subtitle{margin:0 0 17px;color:#4d5d53;line-height:1.55}
+.santa-card .santa-fact,.santa-card .santa-note,.santa-card .santa-disclosure{font-size:14px;color:#526257;line-height:1.55}
+.santa-card .santa-disclosure{border-top:1px solid #ddd2b7;padding-top:11px;margin:13px 0}
+.santa-card .santa-form{display:grid;gap:10px;margin:13px 0 0;min-width:0}
+.santa-card .santa-prompt,.santa-card .santa-photo-label{display:block;color:#283f33;font-size:15px;font-weight:750}
+.santa-card .santa-input{width:100%;min-width:0;min-height:100px;max-height:240px;resize:vertical;
+ border:2px solid #c9b991;border-radius:13px;padding:14px;background:#fffdf7;color:#26392c;
+ font:500 16px/1.55 system-ui,sans-serif;letter-spacing:.25px}
+.santa-card .santa-hints{display:flex;gap:6px;flex-wrap:wrap;min-width:0}
+.santa-card .santa-action{min-height:44px;padding:9px 13px;border:1px solid #c4cbbf;border-radius:11px;
+ background:#f3f2e8;color:#253d33;font:700 14px/1.25 system-ui,sans-serif;
+ cursor:pointer;white-space:normal}
+.santa-card .santa-action.santa-primary{background:#9e3037;border-color:#872b32;color:#fff3e0;
+ box-shadow:0 3px 0 #6a253014;min-height:48px}
+.santa-card .santa-action.santa-mini{font-size:12px;background:#fffaf0;min-height:39px;padding:7px 9px}
+.santa-card .santa-action.santa-quiet{background:#f5f1e8;color:#385149}
+.santa-card .santa-action[aria-pressed="true"]{background:#e1efe5;border-color:#608d71;color:#1d5934}
+.santa-card .santa-action:hover,.santa-card .santa-retailer:hover{filter:brightness(.96)}
+.santa-card :is(input,textarea,button,a):focus-visible{outline:3px solid #cc9a2f;outline-offset:3px}
+.santa-card .santa-results{padding:12px 14px;background:#f2ede0;border:1px solid #d6c8a3;border-radius:13px;margin:14px 0}
+.santa-card .santa-outcome{font-weight:730;margin:0 0 8px;color:#244b36}
+.santa-card .santa-recommendations{display:grid;gap:9px}
+.santa-card .santa-recommendation{padding:10px 12px;border:1px solid #e1d6c1;background:#fffbf1;border-radius:12px}
+.santa-card .santa-recommendation p{margin:5px 0 9px;font-size:13px;color:#536255}
+.santa-card .santa-retailers{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr));gap:8px;margin:13px 0 18px}
+.santa-card .santa-retailer{display:flex;align-items:center;justify-content:space-between;gap:8px;
+ background:#f8f5ec;color:#264539!important;border:1px solid #c7ceb9;border-radius:11px;
+ padding:13px 12px;text-decoration:none!important;min-height:54px;font-size:14px;font-weight:750}
+.santa-card .santa-retailer:after{content:"↗";font-size:18px;color:#718474}
+.santa-card .santa-card-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.santa-card .santa-idea-status{font-size:13px;color:#366d45;width:100%;margin:0}
+.santa-card .santa-photo-input{display:block;width:100%;margin:5px 0 8px;color:#2c4338;font-size:14px}
+.santa-card .santa-photo-note{font-size:13px;color:#5c695b;margin:3px 0 10px;line-height:1.5}
+.santa-card .santa-photo-thumb{display:block;width:min(240px,100%);max-height:300px;object-fit:contain;
+ border:4px solid #dfc992;border-radius:14px;margin:9px 0}
+.santa-card .santa-shortlist{border:1px solid #d3c8ac;background:#f7f3e8;padding:13px;border-radius:13px}
+.santa-card .santa-shortlist p{margin:0 0 8px}
+.santa-card .santa-saved-list{padding:0 0 0 22px;margin:8px 0;list-style:disc}
+.santa-card .santa-saved-list li{margin:8px 0}
+.santa-card .santa-saved-list button{margin-left:7px}
+body[data-oracle-department="santas-helper"] #oracleCardDeck .oracle-department-picker select{
+ border-color:#c8a362;background:#faf3e4;color:#234132}
+body[data-oracle-department="santas-helper"] #oracleCardDeck .oracle-card-deck-nav button{
+ border-color:#bfa56b;color:#36513d}
+@media(max-width:430px){
+ .santa-card{border-radius:16px;font-size:16px}
+ .santa-card .santa-content{padding:16px}
+ .santa-card .santa-retailers{grid-template-columns:1fr}
+ .santa-card .santa-action{font-size:13px}
+ .santa-card .santa-hints{gap:5px}
+ .santa-card .santa-input{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){.santa-card *{scroll-behavior:auto!important;transition:none!important}}
