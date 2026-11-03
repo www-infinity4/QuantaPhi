@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-03T13:31:25.837847Z",
+  "checked_at": "2026-11-03T14:01:26.840293Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jerri green",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:10:00Z",
+      "query": "awkwafina",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T13:40:00Z",
       "related_news_urls": [
-        "https://www.wjhl.com/news/local/tennessee-republican-gubernatorial-candidate-sen-marsha-blackburn-attends-etsu-homecoming/",
-        "https://fox17.com/news/local/tennessee-is-growing-and-changing-how-will-the-next-governor-handle-it-sen-marsha-blackburn-councilwoman-jerri-green-david-hatley-lauren-pinkston-november-midterm-2026",
-        "https://www.themoorecountynews.com/news/2026/10/30/mock-election-picks-blackburn-in-landslide/"
+        "https://www.theguardian.com/tv-and-radio/2026/oct/30/i-felt-bad-for-my-exes-awkwafina-on-making-deeply-personal-tv-with-her-grandma",
+        "https://www.sfchronicle.com/entertainment/movies-tv/article/awkwafina-house-of-nanking-22501593.php",
+        "https://charactermedia.com/awkwafina-cant-cook-her-grandma-will-be-the-judge/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCvqEFv5t2n7ITNJrBDlRrgTHPsFcr53x48IAAF-8D4XIUVMtvREKjO0uYxZY",
-      "image_credit": "WJHL",
-      "news": [
-        {
-          "url": "https://www.wjhl.com/news/local/tennessee-republican-gubernatorial-candidate-sen-marsha-blackburn-attends-etsu-homecoming/",
-          "title": "Tennessee Republican gubernatorial candidate Sen. Marsha Blackburn attends ETSU homecoming",
-          "publisher": "WJHL",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCvqEFv5t2n7ITNJrBDlRrgTHPsFcr53x48IAAF-8D4XIUVMtvREKjO0uYxZY"
-        },
-        {
-          "url": "https://fox17.com/news/local/tennessee-is-growing-and-changing-how-will-the-next-governor-handle-it-sen-marsha-blackburn-councilwoman-jerri-green-david-hatley-lauren-pinkston-november-midterm-2026",
-          "title": "Tennessee is growing and changing; how will the next governor handle it?",
-          "publisher": "WZTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5is_fNHqYQ9L7GCmyuHSbSUUlOYu2_9xu0MLj0AJSlEN28klkoZrMH9c9YEM"
-        },
-        {
-          "url": "https://www.themoorecountynews.com/news/2026/10/30/mock-election-picks-blackburn-in-landslide/",
-          "title": "Mock election picks Blackburn in landslide",
-          "publisher": "themoorecountynews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTJlA8ihkwF2kPeSU4y2sTnw09TGfhulvAxEyVciC4LRaOtdBvTVmLccwkSsE"
-        }
-      ]
-    },
-    {
-      "query": "when do they start counting votes",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:10:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/03/midterm-elections-2026-how-are-votes-counted-and-when-will-we-know-the-results",
-        "https://www.usatoday.com/story/news/politics/elections/2026/11/03/when-will-we-know-midterm-election-results/92567488007/",
-        "https://www.nytimes.com/video/us/elections/100000011253864/how-we-model-election-results-with-the-needle.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSZRNnEDVXZpRDEQg-JgsxcOe1vyxkPHRmWPYCyhf0GeYTP0x_GcU_9_CrXfw",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMq0n3AEaU2IPzctSSBVvzlYmCSeMBiiAk98TQhP43xizPf-LvXrjSyh1L1Hk",
       "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/03/midterm-elections-2026-how-are-votes-counted-and-when-will-we-know-the-results",
-          "title": "Midterm elections 2026: how are votes counted and when will we know the results?",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/oct/30/i-felt-bad-for-my-exes-awkwafina-on-making-deeply-personal-tv-with-her-grandma",
+          "title": "‘I felt bad for my exes’: Awkwafina on making deeply personal TV – with her grandma",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSZRNnEDVXZpRDEQg-JgsxcOe1vyxkPHRmWPYCyhf0GeYTP0x_GcU_9_CrXfw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMq0n3AEaU2IPzctSSBVvzlYmCSeMBiiAk98TQhP43xizPf-LvXrjSyh1L1Hk"
         },
         {
-          "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/03/when-will-we-know-midterm-election-results/92567488007/",
-          "title": "When will we know midterm election results? Details on the process",
-          "publisher": "USA Today",
+          "url": "https://www.sfchronicle.com/entertainment/movies-tv/article/awkwafina-house-of-nanking-22501593.php",
+          "title": "This comic filmed her new TV show at a famed S.F. restaurant",
+          "publisher": "San Francisco Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQ5rD4jCxCMY7IdXMyJQmH7ZH9c2-NFEW2GGnFTrfyUCQ4BzOHyqruAy9wSM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDaYRRa4A-cE7UqNSYfM3ynzkkKER1GHrva1b4mtvy1Adf01Y6Z7pzrmEHl2o"
         },
         {
-          "url": "https://www.nytimes.com/video/us/elections/100000011253864/how-we-model-election-results-with-the-needle.html",
-          "title": "Video: How We Model Election Results With the Needle",
-          "publisher": "The New York Times",
+          "url": "https://charactermedia.com/awkwafina-cant-cook-her-grandma-will-be-the-judge/",
+          "title": "Awkwafina Can’t Cook. Her Grandma Will Be the Judge.",
+          "publisher": "Character Media",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqppfoIgnoilcfbMrTVcxPPCJ79uMx_Yr-Yw7MdHgX32gnlEoDw88z6RCfdB0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_-Be-1mHSQkRR50pCafUf5wm6ffdTnh4BI_zzVcEon9ZuibEJb5nw2SAF4gI"
         }
       ]
     },
     {
-      "query": "chris demarco",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:10:00Z",
+      "query": "lisa rinna",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-03T13:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/wnba/story/_/id/50368306/sources-new-york-liberty-not-retaining-coach-chris-demarco",
-        "https://nypost.com/2026/11/03/sports/liberty-fire-chris-demarco-as-head-coach-after-one-year/"
+        "https://people.com/delilah-belle-parents-lisa-rinna-harry-hamlin-star-express-holiday-campaign-exclusive-12202655",
+        "https://www.marketingdive.com/news/express-unwraps-holiday-campaign-to-build-on-brand-metric-gains/873124/",
+        "https://www.bustle.com/style/lisa-rinna-holiday-style-party-survival-guide"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ0egovT0gE4ZaD_Lu5I3ElbQvkSa21cwdbHhkJaG3nnli1g84y9c7pGs5xHY",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoTf0rjQTXvEhHF6VYeg9cV9lHz4nLsg_1mIbuvgnE-yTEhAGEJha4OUBsee4",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.espn.com/wnba/story/_/id/50368306/sources-new-york-liberty-not-retaining-coach-chris-demarco",
-          "title": "Sources: New York Liberty not retaining coach Chris DeMarco after 1 year at helm",
-          "publisher": "ESPN",
+          "url": "https://people.com/delilah-belle-parents-lisa-rinna-harry-hamlin-star-express-holiday-campaign-exclusive-12202655",
+          "title": "Delilah Belle Hamlin, Lisa Rinna and Harry Hamlin Star in Express Holiday Campaign (Exclusive)",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ0egovT0gE4ZaD_Lu5I3ElbQvkSa21cwdbHhkJaG3nnli1g84y9c7pGs5xHY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoTf0rjQTXvEhHF6VYeg9cV9lHz4nLsg_1mIbuvgnE-yTEhAGEJha4OUBsee4"
         },
         {
-          "url": "https://nypost.com/2026/11/03/sports/liberty-fire-chris-demarco-as-head-coach-after-one-year/",
-          "title": "Liberty fire coach Chris DeMarco after only one season",
-          "publisher": "New York Post",
+          "url": "https://www.marketingdive.com/news/express-unwraps-holiday-campaign-to-build-on-brand-metric-gains/873124/",
+          "title": "Express unwraps holiday campaign to build on brand metric gains",
+          "publisher": "Marketing Dive",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-jWIO2GpVfHpwpoMzge1zd1saGDWWadz1I7vCfnFaMbhtT_tB4JFsNBrXRxU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEr1QfOyaD94vf4i4pL7LPIzVzIeeD8TpPI7LPGhI2AalnLWilNVewIHwAnY"
+        },
+        {
+          "url": "https://www.bustle.com/style/lisa-rinna-holiday-style-party-survival-guide",
+          "title": "Exclusive: Lisa Rinna's No. 1 Holiday Party Survival Tip: \"I Don't Say Goodbye\"",
+          "publisher": "Bustle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBdxnhy2Tc3tVjXYbEJUlj7qEDtd8lKPJECdZ1NtnVHv8tadjGwP41oog3RJo"
         }
       ]
     },
     {
-      "query": "charles booker",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:10:00Z",
+      "query": "bill ackman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T13:30:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/news/obama-charles-booker-kentucky-midterms/",
-        "https://www.whas11.com/article/news/local/kentucky-republicans-dismiss-obamas-endorsement-of-charles-booker-in-race-for-mcconnells-seat-andy-barr/417-311142a2-ca06-4a68-b93d-bbf836147c26",
-        "https://www.courier-journal.com/story/news/politics/elections/2026/11/01/barack-obama-endorses-charles-booker-us-senate-kentucky/92541075007/"
+        "https://seekingalpha.com/news/4663189-ackmans-pershing-square-says-wall-street-estimates-penalize-hyperscalers-for-ai-spending",
+        "https://investinglive.com/stocks/pershing-square-says-big-tech-s-740-billion-capex-is-offensive-not-defensive/",
+        "https://finance.yahoo.com/markets/stocks/articles/bill-ackmans-pershing-square-says-054146550.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEGsapjBkryttqy3PM514kV7iztqE62ujcORNVKU57mpG4je-MjtDpr1OVeKQ",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnyXPgmQlTmZ_4Yu1R_avTPB_NjAt830Ow-hOCVPQ_jTDrJnUm0Zb9PBGiZg",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/news/4663189-ackmans-pershing-square-says-wall-street-estimates-penalize-hyperscalers-for-ai-spending",
+          "title": "Ackman's Pershing Square says Wall Street estimates penalize hyperscalers for AI spending (META:NASDAQ)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnyXPgmQlTmZ_4Yu1R_avTPB_NjAt830Ow-hOCVPQ_jTDrJnUm0Zb9PBGiZg"
+        },
+        {
+          "url": "https://investinglive.com/stocks/pershing-square-says-big-tech-s-740-billion-capex-is-offensive-not-defensive/",
+          "title": "Pershing Square says Big Tech’s $740 billion capex is offensive, not defensive",
+          "publisher": "investingLive",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZz9N8sdK3fw92GEdcODQINsgvs_1iEntpE9CiZMX93JvC5YgWPuqPdnQrI-g"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/bill-ackmans-pershing-square-says-054146550.html",
+          "title": "Bill Ackman's Pershing Square Says Wall Street Is 'Penalizing Hyperscalers' For Build-Out Costs, Ignoring Growth Potential",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSB_VdCMwzA5nH6Erdv6TgdAVyga0BzKmX2Qwbui5D9JnwYN_EwLlP4IDCuTJM"
+        }
+      ]
+    },
+    {
+      "query": "amy klobuchar",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T13:30:00Z",
+      "related_news_urls": [
+        "https://www.mprnews.org/story/2026/11/03/minnesota-voters-set-to-hire-their-next-governor-and-make-a-little-history",
+        "https://www.cbsnews.com/minnesota/news/who-is-running-for-governor-in-minnesota/",
+        "https://www.yahoo.com/news/videos/mn-race-watch-next-governor-130416294.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnshl7inVtRuNIJtD4kFTZPU97MdlaNH6MgIoxfsVdMVf2n7ihrGhg4AXI14",
+      "image_credit": "MPR News",
+      "news": [
+        {
+          "url": "https://www.mprnews.org/story/2026/11/03/minnesota-voters-set-to-hire-their-next-governor-and-make-a-little-history",
+          "title": "Minnesota voters set to hire their next governor — and make a little history",
+          "publisher": "MPR News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnshl7inVtRuNIJtD4kFTZPU97MdlaNH6MgIoxfsVdMVf2n7ihrGhg4AXI14"
+        },
+        {
+          "url": "https://www.cbsnews.com/minnesota/news/who-is-running-for-governor-in-minnesota/",
+          "title": "Who is running for governor in Minnesota? Meet the candidates Amy Klobuchar, Lisa Demuth and Steven Young",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQIYoojhMhkGki_cHfPPXkltwSnbGYL2Mb8GGwSnFs8eVyTRaKeikgOEy7v0M"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/mn-race-watch-next-governor-130416294.html",
+          "title": "MN Race to Watch: Who will be the next Governor?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP498KtxOaRHEFfBE42O0gBKPxRL937m8udQ_niV-GZ5CcU9INCJH-NsHuYlA"
+        }
+      ]
+    },
+    {
+      "query": "north royalton fire",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T13:30:00Z",
+      "related_news_urls": [
+        "https://www.wkyc.com/article/news/local/cuyahoga-county/2-broadview-heights-firefighters-hospitalized-blaze-west-royalton-road/95-534d8666-53c2-48e0-9e20-89d104988b86",
+        "https://fox8.com/news/i-team/i-team-local-firefighter-dies-battling-house-fire/",
+        "https://www.cleveland19.com/2026/11/03/several-northeast-ohio-fire-departments-battle-blaze-broadview-heights/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmK9sC42Yto36ATvnDF6mEIgRcuglCStjypBJwEk_CM4Lcq05pIzgxytemQis",
+      "image_credit": "WKYC",
+      "news": [
+        {
+          "url": "https://www.wkyc.com/article/news/local/cuyahoga-county/2-broadview-heights-firefighters-hospitalized-blaze-west-royalton-road/95-534d8666-53c2-48e0-9e20-89d104988b86",
+          "title": "2 firefighters hospitalized after battling blaze in Broadview Heights",
+          "publisher": "WKYC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmK9sC42Yto36ATvnDF6mEIgRcuglCStjypBJwEk_CM4Lcq05pIzgxytemQis"
+        },
+        {
+          "url": "https://fox8.com/news/i-team/i-team-local-firefighter-dies-battling-house-fire/",
+          "title": "I-Team: Local firefighter dies battling house fire",
+          "publisher": "FOX 8 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCoMuL3RKqmBPB0S8yTtWggY1oXq8x02Do7unuMZ6gATojIBz8IW7YnHnnPo4"
+        },
+        {
+          "url": "https://www.cleveland19.com/2026/11/03/several-northeast-ohio-fire-departments-battle-blaze-broadview-heights/",
+          "title": "Broadview Heights road remains closed after Monday house fire",
+          "publisher": "Cleveland 19 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQg6lp-Xu9lRD1E2qrH8l_cPF8w1GugNWAUqOnB9UyDz4Mg6Rzar2SJqETE7w4"
+        }
+      ]
+    },
+    {
+      "query": "david crowley",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T13:30:00Z",
+      "related_news_urls": [
+        "https://www.fox6now.com/news/wisconsin-governor-crowley-tiffany-102626",
+        "https://www.jsonline.com/story/news/politics/elections/2026/11/01/crowley-tiffany-crisscross-wisconsin-in-final-pitches-to-voters/92541756007/",
+        "https://www.wkow.com/news/tiffany-makes-campaign-stop-in-cottage-grove-ahead-of-election-day/article_4695ba19-3cec-4601-b8cd-3bac256f8a69.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0EEhedQCn6u2wxGlpe8GowdUs7BwCsMqC4-RuGWnePa1IUz-032omneDhNvE",
+      "image_credit": "FOX6 News Milwaukee",
+      "news": [
+        {
+          "url": "https://www.fox6now.com/news/wisconsin-governor-crowley-tiffany-102626",
+          "title": "Who's running for Wisconsin governor? Where Crowley, Tiffany stand on key issues",
+          "publisher": "FOX6 News Milwaukee",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0EEhedQCn6u2wxGlpe8GowdUs7BwCsMqC4-RuGWnePa1IUz-032omneDhNvE"
+        },
+        {
+          "url": "https://www.jsonline.com/story/news/politics/elections/2026/11/01/crowley-tiffany-crisscross-wisconsin-in-final-pitches-to-voters/92541756007/",
+          "title": "Crowley, Tiffany crisscross Wisconsin in final pitches to voters",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZgLt6AMqL3sG55DDKqa2kfvvzIO9lFBriacCqT864f0e8fXbq7oTjLc-G0kI"
+        },
+        {
+          "url": "https://www.wkow.com/news/tiffany-makes-campaign-stop-in-cottage-grove-ahead-of-election-day/article_4695ba19-3cec-4601-b8cd-3bac256f8a69.html",
+          "title": "Tiffany makes campaign stop in Cottage Grove ahead of Election Day",
+          "publisher": "WKOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfrP-5IlZWlzWVkROmJtw41hAk3FWsBzu5lOLuRiG-BeNkW9zi6x_KM4ZGR9I"
+        }
+      ]
+    },
+    {
+      "query": "gerrymandering",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T13:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/opinion/when-does-a-dirty-trick-become-a-crime-10e0b585",
+        "https://www.foxnews.com/video/6407841255112",
+        "https://www.yahoo.com/news/politics/articles/comer-says-big-possibility-peltola-182824477.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmt7XzYDpTKQTjIhDRgDmubvQVLj544_au_BrvlVUWqPrTLMvDAoc9mNDFGKk",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/opinion/when-does-a-dirty-trick-become-a-crime-10e0b585",
+          "title": "Opinion | When Does a Dirty Trick Become a Crime?",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmt7XzYDpTKQTjIhDRgDmubvQVLj544_au_BrvlVUWqPrTLMvDAoc9mNDFGKk"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6407841255112",
+          "title": "FBI agents reportedly visit donors of Alaska's 'decoy Dan'",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1JeowIEzgBHEEAUTeLoU0sjyWftbX_WJkETsOxDbu2BF1xA6VoY6cPEDMjzs"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/comer-says-big-possibility-peltola-182824477.html",
+          "title": "Comer says there’s a ‘big possibility’ Peltola won’t be seated if she wins",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpM5zgEVrOnpj3F22as9o7EZ2p2kF6dgOOhVGyRDMTSahpSfAEaOe02Pao9R8"
+        }
+      ]
+    },
+    {
+      "query": "mike lawler",
+      "approx_searches": "200+",
+      "published_at": "2026-11-03T13:30:00Z",
+      "related_news_urls": [
+        "https://news.bloomberglaw.com/daily-labor-report/canvassers-sue-mike-lawler-for-unpaid-wages-discrimination",
+        "https://www.thedailybeast.com/trump-backed-maga-rep-mike-lawler-hit-by-sweat-shop-racism-claims",
+        "https://www.rawstory.com/mike-lawler-2678193358/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfh7pB9Eoo9eXgqPyeK1KVqBCZZFksZR2cWsASvm4Jgr2BSP4wj2Ht86h5AvY",
+      "image_credit": "Bloomberg Law News",
+      "news": [
+        {
+          "url": "https://news.bloomberglaw.com/daily-labor-report/canvassers-sue-mike-lawler-for-unpaid-wages-discrimination",
+          "title": "Canvassers Sue Mike Lawler for Unpaid Wages, Discrimination",
+          "publisher": "Bloomberg Law News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfh7pB9Eoo9eXgqPyeK1KVqBCZZFksZR2cWsASvm4Jgr2BSP4wj2Ht86h5AvY"
+        },
+        {
+          "url": "https://www.thedailybeast.com/trump-backed-maga-rep-mike-lawler-hit-by-sweat-shop-racism-claims",
+          "title": "Trump-Backed MAGA Rep Mike Lawler Hit by ‘Sweat Shop’ Racism Claims",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6cNg37Eig2jShhEoytQocne_pMPZ8whr90C-v2vIW4iOBZ8lSUKTIcJ0UYCY"
+        },
+        {
+          "url": "https://www.rawstory.com/mike-lawler-2678193358/",
+          "title": "MAGA lawmaker yanked Bloomberg's access after it reported on campaign scandal: report",
+          "publisher": "Raw Story",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSusyCuKtgnZnd2xl6_I2Wa4JEHu4WGzorevRk4OjlVxNdBA349SwdtrCt6J4o"
+        }
+      ]
+    },
+    {
+      "query": "msc poesia cruise ship",
+      "approx_searches": "500+",
+      "published_at": "2026-11-03T13:20:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
+        "https://www.local10.com/news/local/2026/11/03/coast-guard-detains-msc-poesia-at-portmiami-during-expanded-inspection-authorities-say/",
+        "https://cruiseindustrynews.com/cruise-news/2026/11/msc-poesia-kicks-off-winter-season-in-miami/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE",
       "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://www.cbsnews.com/news/obama-charles-booker-kentucky-midterms/",
-          "title": "Former President Obama endorses Charles Booker in Kentucky Senate race",
+          "url": "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
+          "title": "Coast Guard detains cruise ship in Miami, officials say",
           "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEGsapjBkryttqy3PM514kV7iztqE62ujcORNVKU57mpG4je-MjtDpr1OVeKQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE"
         },
         {
-          "url": "https://www.whas11.com/article/news/local/kentucky-republicans-dismiss-obamas-endorsement-of-charles-booker-in-race-for-mcconnells-seat-andy-barr/417-311142a2-ca06-4a68-b93d-bbf836147c26",
-          "title": "Kentucky Republicans dismiss Obama's endorsement of Booker in race for McConnell's seat",
-          "publisher": "WHAS11",
+          "url": "https://www.local10.com/news/local/2026/11/03/coast-guard-detains-msc-poesia-at-portmiami-during-expanded-inspection-authorities-say/",
+          "title": "Coast Guard detains MSC Poesia at PortMiami during expanded inspection, authorities say",
+          "publisher": "WPLG Local 10",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQL9QRp_-4MeeiLz-VHdHjGygMZEK59g4jVQPdQZ-J9gftq4q53TO0f2rBBCpU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQK6keURceznjYnaFPf29G2VRH7UzUwnz8ZxGCNSQzLb6ilSVwxnB68OXTpR0"
         },
         {
-          "url": "https://www.courier-journal.com/story/news/politics/elections/2026/11/01/barack-obama-endorses-charles-booker-us-senate-kentucky/92541075007/",
-          "title": "Former President Barack Obama endorses Charles Booker in U.S. Senate race",
-          "publisher": "The Courier-Journal",
+          "url": "https://cruiseindustrynews.com/cruise-news/2026/11/msc-poesia-kicks-off-winter-season-in-miami/",
+          "title": "MSC Poesia Kicks Off Winter Season in Miami",
+          "publisher": "Cruise Industry News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ751v5mqCzA3rxt91hwLwG0iyXduuaoI-6agJnuSPDlcXx658vWbl41o2sQg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4mmYzSaDftYST-V9qD0_BQMEOpA5jb0RZBmrDfS-S-9cOitolJrPikUw4jg"
         }
       ]
     },
     {
-      "query": "ohio senate race",
+      "query": "brandon nakashima",
       "approx_searches": "200+",
-      "published_at": "2026-11-03T13:10:00Z",
+      "published_at": "2026-11-03T13:20:00Z",
       "related_news_urls": [
-        "https://www.politico.com/news/2026/11/02/big-tech-ohio-sherrod-brown-husted-01144504",
-        "https://www.coindesk.com/opinion/2026/11/02/big-crypto-wants-the-one-thing-it-can-t-buy-your-vote",
-        "https://cryptonews.net/news/legal/33684908/"
+        "https://sportsbook.fanduel.com/tennis/atp-paris-2026/tommy-paul-v-holger-rune-36260856",
+        "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-paul-rune/",
+        "https://www.dimers.com/tennis/news/tommy-paul-vs-holger-rune-tennis-prediction-atp-paris-masters-2026-ac"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeJDGq-WS6kgxMOEh8Asdtlp3P3UPxbmW9Po9wjxAeRL3Oh8cTRIeaqqRY9a4",
-      "image_credit": "Politico",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA",
+      "image_credit": "FanDuel Sportsbook",
       "news": [
         {
-          "url": "https://www.politico.com/news/2026/11/02/big-tech-ohio-sherrod-brown-husted-01144504",
-          "title": "The Senate race giving Big Tech the chills",
-          "publisher": "Politico",
+          "url": "https://sportsbook.fanduel.com/tennis/atp-paris-2026/tommy-paul-v-holger-rune-36260856",
+          "title": "Tommy Paul v Holger Rune Odds",
+          "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeJDGq-WS6kgxMOEh8Asdtlp3P3UPxbmW9Po9wjxAeRL3Oh8cTRIeaqqRY9a4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
         },
         {
-          "url": "https://www.coindesk.com/opinion/2026/11/02/big-crypto-wants-the-one-thing-it-can-t-buy-your-vote",
-          "title": "Big crypto wants the one thing it can’t buy: your vote",
-          "publisher": "CoinDesk",
+          "url": "https://lastwordonsports.com/tennis/2026/11/02/atp-paris-day-2-predictions-paul-rune/",
+          "title": "ATP Paris Day 2 Predictions Including Tommy Paul vs Holger Rune",
+          "publisher": "Last Word On Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn61i_7Uh4r5lO-_GaqaSesbCN1PTDQjlha34flU0514MXQg4dnLgYdIPKPEc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVAWHmu9IYU0RT2JKMmQEhyrundAvXOG-khuSjpRoiG72fEtBAeoKf7pgHzJk"
         },
         {
-          "url": "https://cryptonews.net/news/legal/33684908/",
-          "title": "Sherrod Brown's Ohio edge threatens a rough go for crypto next year",
-          "publisher": "Cryptonews.net",
+          "url": "https://www.dimers.com/tennis/news/tommy-paul-vs-holger-rune-tennis-prediction-atp-paris-masters-2026-ac",
+          "title": "Tommy Paul vs. Holger Rune prediction, odds, picks for ATP Paris Masters 2026",
+          "publisher": "Dimers",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREBdTvOhJAfNOX9axJ7EnCe7RhS-9cQhoJhkVJmR1Po4ONNFtN9_SnuFpnLWQ"
-        }
-      ]
-    },
-    {
-      "query": "maryland question 3",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T13:00:00Z",
-      "related_news_urls": [
-        "https://www.wusa9.com/article/news/politics/elections/maryland-question-3-redistricting-explained-what-a-yes-or-no-vote-means/65-5b2932f3-e766-4675-b9a6-a2986b909ec3",
-        "https://www.wbaltv.com/article/maryland-question-3-redistricting-ballot-referendum-faq/73652277",
-        "https://marylandmatters.org/2026/10/30/voters-have-questions-on-question-3-the-congressional-redistricting-amendment/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl8Mz7ROYnJozBQxjQGwnP8DFIDBtxm5MVSFeCwH_UFCQ7Fn6taAjWPB-ST7A",
-      "image_credit": "WUSA9",
-      "news": [
-        {
-          "url": "https://www.wusa9.com/article/news/politics/elections/maryland-question-3-redistricting-explained-what-a-yes-or-no-vote-means/65-5b2932f3-e766-4675-b9a6-a2986b909ec3",
-          "title": "Maryland Question 3 explained: What a yes or no vote means for congressional redistricting",
-          "publisher": "WUSA9",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl8Mz7ROYnJozBQxjQGwnP8DFIDBtxm5MVSFeCwH_UFCQ7Fn6taAjWPB-ST7A"
-        },
-        {
-          "url": "https://www.wbaltv.com/article/maryland-question-3-redistricting-ballot-referendum-faq/73652277",
-          "title": "Question 3 Explainer | Maryland redistricting ballot question",
-          "publisher": "WBAL-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLnuwNQm_K9wKbR7YYOYfL-ZDxBzGROZbMhnftKHyDiUQKn5rpmUdFwmggflc"
-        },
-        {
-          "url": "https://marylandmatters.org/2026/10/30/voters-have-questions-on-question-3-the-congressional-redistricting-amendment/",
-          "title": "Voters have questions on Question 3, the congressional redistricting amendment",
-          "publisher": "Maryland Matters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_axAggj-0bioHK9ww1WwR6zvehfIrTkap1nR3CyqvLfWscfveoapSzc4sCMU"
-        }
-      ]
-    },
-    {
-      "query": "tony butala",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T12:50:00Z",
-      "related_news_urls": [
-        "https://www.wkbn.com/news/local-news/sharon-news/sharon-native-hollywood-walk-of-fame-star-recipient-the-lettermen-founding-member-tony-butala-dies-at-87/",
-        "https://www.al.com/politics/2026/11/legendary-singer-iconic-groups-founding-member-dead-at-87-his-spirit-will-live-on.html",
-        "https://www.seehafernews.com/2026/11/02/the-letterman-announce-the-passing-of-a-founding-member/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9VIT7_xDIUkXzK9a8QWWghsNBjY_stqDOgMcL-MeEoJtldRY8N8acmV0Nh-8",
-      "image_credit": "WKBN.com",
-      "news": [
-        {
-          "url": "https://www.wkbn.com/news/local-news/sharon-news/sharon-native-hollywood-walk-of-fame-star-recipient-the-lettermen-founding-member-tony-butala-dies-at-87/",
-          "title": "Sharon native, Hollywood Walk of Fame star recipient, ‘The Lettermen’ founding member Tony Butala dies at 87",
-          "publisher": "WKBN.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9VIT7_xDIUkXzK9a8QWWghsNBjY_stqDOgMcL-MeEoJtldRY8N8acmV0Nh-8"
-        },
-        {
-          "url": "https://www.al.com/politics/2026/11/legendary-singer-iconic-groups-founding-member-dead-at-87-his-spirit-will-live-on.html",
-          "title": "Legendary singer, iconic group’s founding member, dead at 87: ‘His spirit will live on’",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMyL90vvRdnvnbaj1INxd7k-fpYKteS3ybTbt3Och7fZE_ncDt0YDlZGCcmU8"
-        },
-        {
-          "url": "https://www.seehafernews.com/2026/11/02/the-letterman-announce-the-passing-of-a-founding-member/",
-          "title": "The Letterman Announces the Passing of a Founding Member",
-          "publisher": "Seehafer News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtZA9-E72ecr-tLD8AxhFgvVu8-Q29-P8YWgLpmRFdwqD1sTPYzV95bVp4oLw"
-        }
-      ]
-    },
-    {
-      "query": "alabama amendments 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T12:50:00Z",
-      "related_news_urls": [
-        "https://www.wvtm13.com/article/election-day-guide-alabama-2026-voter/74314149",
-        "https://www.waff.com/2026/11/02/decision-2026-al-sample-ballots-polling-locations-need-to-knows/",
-        "https://whnt.com/news/politics/your-local-election-headquarters/what-you-need-to-know-before-heading-to-the-polls-for-the-2026-general-election/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3iOjECA6K_46imuWjS3YS-CdANJBsWppOafUAO_Yy9gwpesT1b8F5mwoDgRQ",
-      "image_credit": "wvtm",
-      "news": [
-        {
-          "url": "https://www.wvtm13.com/article/election-day-guide-alabama-2026-voter/74314149",
-          "title": "Alabama Election Day Guide: 2026",
-          "publisher": "wvtm",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3iOjECA6K_46imuWjS3YS-CdANJBsWppOafUAO_Yy9gwpesT1b8F5mwoDgRQ"
-        },
-        {
-          "url": "https://www.waff.com/2026/11/02/decision-2026-al-sample-ballots-polling-locations-need-to-knows/",
-          "title": "DECISION 2026: AL Sample Ballots, Polling Locations, Need-to-Knows",
-          "publisher": "WAFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK8aSOD9Idrf3ggF-5l1udpxi2-GL82RPX13XbAdoCa49gpyQbZZWiYtKFvCg"
-        },
-        {
-          "url": "https://whnt.com/news/politics/your-local-election-headquarters/what-you-need-to-know-before-heading-to-the-polls-for-the-2026-general-election/",
-          "title": "What you need to know before heading to the polls for the 2026 General Election",
-          "publisher": "WHNT.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPOxLr0W214WG862JejJTSaq5ouQaPXMpFAZvJOQmlMgkBKZMzyDyorbfqPTc"
-        }
-      ]
-    },
-    {
-      "query": "doug jones",
-      "approx_searches": "500+",
-      "published_at": "2026-11-03T12:50:00Z",
-      "related_news_urls": [
-        "https://www.wsfa.com/2026/10/29/meet-candidates-alabamas-race-governor/",
-        "https://www.al.com/politics/2026/10/alabama-governors-race-new-poll-finds-genuine-toss-up-between-tuberville-jones.html",
-        "https://alabamareflector.com/2026/10/29/how-would-tommy-tuberville-govern-alabama/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBGtKXh_KsapkSj905a3_2VfsgGg6roNs01z-_yKNYE6iezJuoAfas8KhHk-M",
-      "image_credit": "WSFA",
-      "news": [
-        {
-          "url": "https://www.wsfa.com/2026/10/29/meet-candidates-alabamas-race-governor/",
-          "title": "Meet the candidates: Alabama’s race for governor",
-          "publisher": "WSFA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBGtKXh_KsapkSj905a3_2VfsgGg6roNs01z-_yKNYE6iezJuoAfas8KhHk-M"
-        },
-        {
-          "url": "https://www.al.com/politics/2026/10/alabama-governors-race-new-poll-finds-genuine-toss-up-between-tuberville-jones.html",
-          "title": "Alabama governor’s race: New poll finds ‘genuine toss up’ between Tuberville, Jones",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC1Ze_MelaM7UlFk4jWxuRYjSWFHEtHSEDsQiiz49A-HLaqeVoubHEAqUPJdk"
-        },
-        {
-          "url": "https://alabamareflector.com/2026/10/29/how-would-tommy-tuberville-govern-alabama/",
-          "title": "How would Tommy Tuberville govern Alabama?",
-          "publisher": "Alabama Reflector",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb0igiecXCJ9n72_lnjwr4kJvrfDCOdc2QyhcaQnRMMRlH1ObXtzBIIf_lOdQ"
-        }
-      ]
-    },
-    {
-      "query": "i voted sticker",
-      "approx_searches": "200+",
-      "published_at": "2026-11-03T12:50:00Z",
-      "related_news_urls": [
-        "https://www.axios.com/local/kansas-city/2026/11/03/kansas-missouri-i-voted-stickers-2026",
-        "https://apnews.com/article/voting-sticker-election-american-objects-8c72c16491ba79234b8e9d83011944e1",
-        "https://www.alaskasnewssource.com/2026/11/03/i-voted-stickers-featuring-alaskan-artist-are-hit/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7IRlTDVuB98k8GBJ8-oVFmsBB5_XqjTeYjt4zHwBaAQUcIelgP4NziGjfzjI",
-      "image_credit": "Axios",
-      "news": [
-        {
-          "url": "https://www.axios.com/local/kansas-city/2026/11/03/kansas-missouri-i-voted-stickers-2026",
-          "title": "The art behind your \"I Voted\" sticker",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7IRlTDVuB98k8GBJ8-oVFmsBB5_XqjTeYjt4zHwBaAQUcIelgP4NziGjfzjI"
-        },
-        {
-          "url": "https://apnews.com/article/voting-sticker-election-american-objects-8c72c16491ba79234b8e9d83011944e1",
-          "title": "A sliver of Election Day swag: ‘I voted’ — and I got a sticker, too",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz82J7wxnze3auUry_7kJhV_2E1NPOlfMC-HpFChZe0hiWyCugtgsgTNMk7bs"
-        },
-        {
-          "url": "https://www.alaskasnewssource.com/2026/11/03/i-voted-stickers-featuring-alaskan-artist-are-hit/",
-          "title": "‘I Voted’ stickers featuring Alaskan artist are a hit",
-          "publisher": "Alaska's News Source",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4YhrIPt8eiCrJZyEP0XRnWWt2Cz9w1nw9yV4Ngd1i14ZpPNeMAEClhasBurw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT60Uj7sCak8gGeJ_zNOSbuCWL6W1z_g0iwt4OI-X_ozZziS0BbjrlJ3dy93Kw"
         }
       ]
     }
