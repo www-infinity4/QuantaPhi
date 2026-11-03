@@ -21,7 +21,7 @@ function artwork(name,description){
 }
 function cardBase(id,title,caption,art){
  const item=create('article','santa-card');
- item.id='santa-'+id;item.dataset.santaCard=id;item.dataset.personalization='disabled';
+ item.id='santa-'+id;item.setAttribute('data-santa-card',id);item.dataset.personalization='disabled';
  item.setAttribute('aria-label',title+' · Santa’s Helper Quick Card');
  item.append(artwork(art,caption));
  const area=create('div','santa-content'),eyebrow=create('p','santa-kicker','SANTA’S HELPER · ORIGINAL CHRISTMAS CARD'),
@@ -135,6 +135,7 @@ function mount(){
  if(!host||host.dataset.santaMounted==='true')return;
  host.dataset.santaMounted='true';
  host.append(renderWelcome(),...GIFT_LANES.map(renderLane));
+ renderList();
  window.dispatchEvent(new Event('quantaphi:santa-cards-ready'));
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});
