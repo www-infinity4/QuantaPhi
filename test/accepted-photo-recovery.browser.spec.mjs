@@ -18,9 +18,10 @@ test('a brand whose source pictures fail recovers an indexed public item photo w
   if(route.request().resourceType()==='image'&&route.request().url.startsWith('https://'))return route.abort();
   return route.continue();
  });
- await page.route('**/quick-card-spotlights-latest.json*',r=>r.fulfill({json:{
-  schema_version:1,checked_at:new Date().toISOString(),cards:{}
- }}));
+ await page.route('**/quick-card-spotlights-latest.json*',r=>r.fulfill({
+  headers:{'access-control-allow-origin':'*'},
+  json:{schema_version:1,checked_at:new Date().toISOString(),cards:{}}
+ }));
  await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search?*',r=>r.fulfill({
   headers:{'access-control-allow-origin':'*'},json:{results:[{
    title:'PK22 chair · official source listing',
