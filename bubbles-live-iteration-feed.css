@@ -1,0 +1,31 @@
+/* Compact, readable, nonintrusive live iteration line beneath Bubbles status. */
+#bubblesAICard .ba-live-bit-feed {
+ box-sizing:border-box; margin:4px 10px 8px; padding:6px 9px;
+ border:1px solid #d5e0e6; border-radius:9px; background:#f3f7f9;
+ color:#2d4351; font:500 13px/1.5 system-ui,sans-serif;
+ letter-spacing:.12px; overflow-wrap:anywhere;
+}
+#bubblesAICard .ba-live-bit-line { font-weight:650; min-height:20px; }
+#bubblesAICard .ba-live-bit-details { margin-top:3px; }
+#bubblesAICard .ba-live-bit-details > summary {
+ cursor:pointer; color:#4b616f; font-size:12px; line-height:1.5;
+ font-weight:600; list-style-position:inside;
+}
+#bubblesAICard .ba-live-bit-details > summary:focus-visible {
+ outline:2px solid #236792; outline-offset:2px;
+}
+#bubblesAICard .ba-live-bit-record {
+ margin:7px 0 0; padding-left:22px; max-height:220px;
+ overflow:auto; overscroll-behavior:contain;
+}
+#bubblesAICard .ba-live-bit-entry {
+ padding:4px 0 7px; border-bottom:1px solid #dfe7ec;
+ line-height:1.45; font-size:12px;
+}
+#bubblesAICard .ba-live-bit-entry strong {display:block;font-weight:700}
+#bubblesAICard .ba-live-bit-entry small {
+ display:block; color:#425967; font-size:12px;
+}
+@media(max-width:390px){
+ #bubblesAICard .ba-live-bit-feed {margin-inline:7px;font-size:13px}
+}
