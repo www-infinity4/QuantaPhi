@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T13:01:28.924247Z",
+  "checked_at": "2026-11-04T13:30:58.747962Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "alexander zverev",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T12:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/lorenzo-musetti-admits-having-extra-030000561.html",
+        "https://tenngrand.com/paris-tennis-previews-picks-predictions-zverev-vs-musetti-fils-machac/",
+        "https://tennisuptodate.com/atp/live-paris-masters-new-world-no1-alexander-zverev-in-blockbuster-showdown-against-lorenzo-musetti"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3p3KaUStfo0ct_DCOck5G8QPhURb-vzYzMfLCfZxWlHRv81Zn6lYtzPeqv5c",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/lorenzo-musetti-admits-having-extra-030000561.html",
+          "title": "Lorenzo Musetti admits having ‘extra motivation’ to beat Alexander Zverev now",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3p3KaUStfo0ct_DCOck5G8QPhURb-vzYzMfLCfZxWlHRv81Zn6lYtzPeqv5c"
+        },
+        {
+          "url": "https://tenngrand.com/paris-tennis-previews-picks-predictions-zverev-vs-musetti-fils-machac/",
+          "title": "Paris Masters tennis picks: Zverev vs. Musetti, Fils vs. Machac",
+          "publisher": "The Grandstand",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgARtw_pcKhD7LJo4eD3qbmTGYeLeYMk806W7iKwCY8nPvpAxFogs-p57z7Jk"
+        },
+        {
+          "url": "https://tennisuptodate.com/atp/live-paris-masters-new-world-no1-alexander-zverev-in-blockbuster-showdown-against-lorenzo-musetti",
+          "title": "LIVE Paris Masters | New World No.1 Alexander Zverev in blockbuster showdown against Lorenzo Musetti",
+          "publisher": "Tennisuptodate.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdJj8dGw8u7elxGXEw3gVRFnX2lV-lp6zOKBicDDTHDbTqnPw8V3lKVlivKho"
+        }
+      ]
+    },
+    {
+      "query": "urban meyer ohio state comments",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T12:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nothing-quarterback-situation-urban-meyer-115711753.html",
+        "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-football-coach-ryan-day-recaps-usc-trojans-loss-292150041/",
+        "https://www.nytimes.com/athletic/7743698/2026/11/01/usc-lincoln-riley-ohio-state-cfp/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi4JbdTE-a0zoHiyv9LrxYOvf1VuVyO52qbXJA6EXS_zx_zZ-czaks_1EeOcY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nothing-quarterback-situation-urban-meyer-115711753.html",
+          "title": "“Has Nothing To Do With the Quarterback Situation”: Urban Meyer Calls on Ryan Day to Address Ohio State’s Issues After Embarrassing Defeat",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi4JbdTE-a0zoHiyv9LrxYOvf1VuVyO52qbXJA6EXS_zx_zZ-czaks_1EeOcY"
+        },
+        {
+          "url": "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-football-coach-ryan-day-recaps-usc-trojans-loss-292150041/",
+          "title": "Day Full Video: Ohio State coach on Fahey ‘We've got to do a better job around him’",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-zblsDoETBKj2skFZcd885pxvOwvbdDPtC74LlTnGmyTpT0poTY_cNEQb-yg"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7743698/2026/11/01/usc-lincoln-riley-ohio-state-cfp/",
+          "title": "USC and Lincoln Riley are finally giving people a reason to believe. Should you buy it? - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIv4shKxrdOGcLr27YCmjGaNb1L17ktdwFAPBcOjKCyqpqaJkg2WTAo_kfhhc"
+        }
+      ]
+    },
     {
       "query": "emma walmsley",
       "approx_searches": "200+",
@@ -42,17 +112,59 @@
       ]
     },
     {
+      "query": "ddog stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T12:40:00Z",
+      "related_news_urls": [
+        "https://www.investors.com/news/technology/datadog-stock-ddog-datadog-earnings-news-q32026/",
+        "https://www.10tv.com/article/syndication/associatedpress/datadog-q3-earnings-snapshot/616-99f3ee19-4f6e-437c-ba8c-855eadccf057",
+        "https://news.futunn.com/en/post/1003126886/bernstein-datadog-ddogus-and-cloudflare-netus-shares-have-been-oversold"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWdfter32VfJB9WGVBAMQZT3FJmfXzd9GV69bnW8hPZqj67hdMUuqH_GqBHWQ",
+      "image_credit": "Investor's Business Daily",
+      "news": [
+        {
+          "url": "https://www.investors.com/news/technology/datadog-stock-ddog-datadog-earnings-news-q32026/",
+          "title": "Datadog Earnings Top Views. Shares Plunge On Weak Sales Outlook.",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWdfter32VfJB9WGVBAMQZT3FJmfXzd9GV69bnW8hPZqj67hdMUuqH_GqBHWQ"
+        },
+        {
+          "url": "https://www.10tv.com/article/syndication/associatedpress/datadog-q3-earnings-snapshot/616-99f3ee19-4f6e-437c-ba8c-855eadccf057",
+          "title": "Datadog: Q3 Earnings Snapshot",
+          "publisher": "10tv.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTitSAuOA5LaWItcsQHBWj1iyd8TZEuGvp9hfjIq-olDmp96co4ErJWIkYPr_E"
+        },
+        {
+          "url": "https://news.futunn.com/en/post/1003126886/bernstein-datadog-ddogus-and-cloudflare-netus-shares-have-been-oversold",
+          "title": "Bernstein: Datadog (DDOG.US) and Cloudflare (NET.US) shares have been oversold; strong growth in AI businesses is expected to drive Q3 results above expectations.",
+          "publisher": "富途牛牛",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_tsUMUEih7TgR4my2IRV47kvowh3Q8Pg-t5cRy0wTwegKdGKyiO3CSdmsw8s"
+        }
+      ]
+    },
+    {
       "query": "today show",
       "approx_searches": "200+",
       "published_at": "2026-11-04T12:40:00Z",
       "related_news_urls": [
+        "https://www.goodhousekeeping.com/entertainment/celebrity-news/a74322223/today-show-sheinelle-jones-northwestern-university-2026-instagram/",
         "https://www.nytimes.com/2026/11/02/style/martha-stewart-homeless-halloween-costume-apology.html",
-        "https://pagesix.com/2026/11/02/society/infamous-dupont-twins-defend-former-boss-martha-stewart-over-homeless-halloween-costume/",
-        "https://ew.com/jimmy-kimmel-martha-stewart-halloween-costume-12222382"
+        "https://pagesix.com/2026/11/02/society/infamous-dupont-twins-defend-former-boss-martha-stewart-over-homeless-halloween-costume/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbfXj1toJ1TfEQkbfWWjL937cZeHHX8eKdXMIqdjl1JPlFcaOpy_TG1kOcCe0",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9CMO29ylWkeqx5Kn9GiG0TMbpW7brUX7cejy_k35-1fwNMEp-M4iPJNK0k-w",
+      "image_credit": "Good Housekeeping",
       "news": [
+        {
+          "url": "https://www.goodhousekeeping.com/entertainment/celebrity-news/a74322223/today-show-sheinelle-jones-northwestern-university-2026-instagram/",
+          "title": "‘Today’ Star Sheinelle Jones Shares Poignant Note About Her Latest Accomplishment",
+          "publisher": "Good Housekeeping",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9CMO29ylWkeqx5Kn9GiG0TMbpW7brUX7cejy_k35-1fwNMEp-M4iPJNK0k-w"
+        },
         {
           "url": "https://www.nytimes.com/2026/11/02/style/martha-stewart-homeless-halloween-costume-apology.html",
           "title": "Martha Stewart Apologizes for Homeless Halloween Costume",
@@ -66,94 +178,17 @@
           "publisher": "Page Six",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAfvw-gHcKe9hN0DTvF1IBicxFu-H85roUkYK_73uz9POV3JrqFTmrJTK--iM"
-        },
-        {
-          "url": "https://ew.com/jimmy-kimmel-martha-stewart-halloween-costume-12222382",
-          "title": "Jimmy Kimmel reacts to Martha Stewart’s controversial Halloween costume: ‘How does this happen?’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEUR5iI1PPYvcE6vZaUgfHFE-H2O1Cy2kKgHcurKvsd-dHOctJA240rdCvUQc"
-        }
-      ]
-    },
-    {
-      "query": "ralph macchio",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T12:40:00Z",
-      "related_news_urls": [
-        "https://www.guitarworld.com/artists/guitarists/crossroads-sequel-in-the-works",
-        "https://www.ultimate-guitar.com/news/general_music_news/crossroads-sequel-is-in-the-works-ralph-macchio-steve-vai--screenwriter-john-fusco-all-willing-to-reprise-their-roles-weve-got-a-plan",
-        "https://www.yahoo.com/entertainment/movies/articles/sequel-cult-guitar-movie-crossroads-155237703.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuuRLHPhAso2SGxcayKN9rcFk06JSJHzQHkZ006i52QjfXE1q7LThkEQRxQr4",
-      "image_credit": "Guitar World",
-      "news": [
-        {
-          "url": "https://www.guitarworld.com/artists/guitarists/crossroads-sequel-in-the-works",
-          "title": "“Ralph Macchio and I have talked about it. We’ve got a plan”: A sequel to cult guitar movie Crossroads is in the works – and Steve Vai is up for reprising his role",
-          "publisher": "Guitar World",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuuRLHPhAso2SGxcayKN9rcFk06JSJHzQHkZ006i52QjfXE1q7LThkEQRxQr4"
-        },
-        {
-          "url": "https://www.ultimate-guitar.com/news/general_music_news/crossroads-sequel-is-in-the-works-ralph-macchio-steve-vai--screenwriter-john-fusco-all-willing-to-reprise-their-roles-weve-got-a-plan",
-          "title": "'Crossroads' Sequel Is in the Works, Ralph Macchio, Steve Vai & Screenwriter John Fusco Confirm",
-          "publisher": "Ultimate Guitar",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFWwhh_sbxz1bikKXL2ZmzIKCWPPXOBuODNxBb7_c0_bGcKxSXK67gWF1g--0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/sequel-cult-guitar-movie-crossroads-155237703.html",
-          "title": "A sequel to cult guitar movie Crossroads is in the works – and Steve Vai is up for reprising his role",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9KzyWk4rvvJyVQB9gTGlDJgkmGNDMeU7sX7LgzJYRoGq8gCjXdea-DddPBpE"
-        }
-      ]
-    },
-    {
-      "query": "red cup day 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T12:40:00Z",
-      "related_news_urls": [
-        "https://about.starbucks.com/press/2026/mark-your-calendars-starbucks-bearista-glass-cold-cups-are-returning-with-a-twist/",
-        "https://www.tasteofhome.com/article/starbucks-bearista-cup-2026/",
-        "https://www.newsnationnow.com/entertainment-news/food/starbucks-2026-holiday-drinks-bearista-redcupday/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQED_5v9b9GR75qB17I4q8AKn3XW5MZhj89KMqGQJ1V5lUteamEUOxfUTQHk4A",
-      "image_credit": "Starbucks",
-      "news": [
-        {
-          "url": "https://about.starbucks.com/press/2026/mark-your-calendars-starbucks-bearista-glass-cold-cups-are-returning-with-a-twist/",
-          "title": "Mark your calendars: Starbucks Bearista™ Glass Cold Cups are returning with a twist",
-          "publisher": "Starbucks",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQED_5v9b9GR75qB17I4q8AKn3XW5MZhj89KMqGQJ1V5lUteamEUOxfUTQHk4A"
-        },
-        {
-          "url": "https://www.tasteofhome.com/article/starbucks-bearista-cup-2026/",
-          "title": "The Starbucks Bearista Cup Is Coming Back—with an Early Surprise Edition",
-          "publisher": "Taste of Home",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUH3GY6rB9dgoL9eR2l18Up8m_qMdnrS2J-sQgrNw8P-DzWk4vaQwJ6FdNa1o"
-        },
-        {
-          "url": "https://www.newsnationnow.com/entertainment-news/food/starbucks-2026-holiday-drinks-bearista-redcupday/",
-          "title": "Starbucks holiday drinks start Nov. 5; Red Cup Day announced",
-          "publisher": "NewsNation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMu718tlWuLQwwk4xB8QI02VzrkZpKNNKRAvCUIjQ9tDWNZ2y_Ou_coWpzpZc"
         }
       ]
     },
     {
       "query": "christmas forecast",
-      "approx_searches": "200+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-04T12:30:00Z",
       "related_news_urls": [
         "https://www.foxweather.com/lifestyle/old-farmers-almanac-white-christmas-16-states-2026",
         "https://weather.com/2026/11/04/holiday/christmas/white-christmas-super-el-nino-odds",
-        "https://www.yahoo.com/news/weather-news/articles/dreaming-white-christmas-old-farmers-175049558.html"
+        "https://www.southernliving.com/old-farmers-almanac-2026-white-christmas-forecast-12207946"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjKSTQiAjqcvpCjmVNcCCGNbR_Y13dvmfJ7-2hKAMaNe1huOFbBc28t0NKBAg",
       "image_credit": "FOX Weather",
@@ -173,11 +208,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyEhnSUmR9fzlO93EaWVmoo0lpMvGcy3Sx_e2kCqxBhyVW70IcWCqtkZLSZXA"
         },
         {
-          "url": "https://www.yahoo.com/news/weather-news/articles/dreaming-white-christmas-old-farmers-175049558.html",
-          "title": "Dreaming of a white Christmas? Old Farmer's Almanac releases forecast",
-          "publisher": "Yahoo",
+          "url": "https://www.southernliving.com/old-farmers-almanac-2026-white-christmas-forecast-12207946",
+          "title": "Will You Get A White Christmas In 2026? The Old Farmer’s Almanac Has Some Surprises",
+          "publisher": "Southern Living",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZaVmPxhz6p6EP7cRuxiB5lSBH48_GTdBMczUqlPHBBrais5C4-YOaEM2C53U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVviSoiHqbdmY8IIXVc7_8PFipTzPYAspPGFyV3GdadH_vPIDKH69pDtVunVM"
         }
       ]
     },
@@ -187,8 +222,8 @@
       "published_at": "2026-11-04T12:30:00Z",
       "related_news_urls": [
         "https://www.foxbusiness.com/lifestyle/outback-steakhouse-franchisee-files-bankruptcy",
-        "https://www.latimes.com/business/story/2026-11-04/outback-franchisee-files-for-bankruptcy-citing-california-labor-costs",
-        "https://finance.yahoo.com/small-business/articles/outback-steakhouse-restaurant-franchisee-files-165324293.html"
+        "https://finance.yahoo.com/small-business/articles/socal-outback-steakhouse-franchisee-files-110000194.html",
+        "https://www.restaurantdive.com/news/outback-steakhouse-franchisee-bankruptcy-61-units/873481/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8tYzyc9EIPzA5G07co_Lx6FpXngiaVCfUop1t-20FJ2-FRVbrWacKIceGJpc",
       "image_credit": "Fox Business",
@@ -201,18 +236,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8tYzyc9EIPzA5G07co_Lx6FpXngiaVCfUop1t-20FJ2-FRVbrWacKIceGJpc"
         },
         {
-          "url": "https://www.latimes.com/business/story/2026-11-04/outback-franchisee-files-for-bankruptcy-citing-california-labor-costs",
-          "title": "SoCal Outback Steakhouse franchisee files for bankruptcy, citing California’s labor costs",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHh9YbNYOTqURFFhn34pXz2rkiyNAbhAQccQbi0KvA-GIeo-5xEEPk8_skY1w"
-        },
-        {
-          "url": "https://finance.yahoo.com/small-business/articles/outback-steakhouse-restaurant-franchisee-files-165324293.html",
-          "title": "Outback Steakhouse restaurant franchisee files for Chapter 11 bankruptcy",
+          "url": "https://finance.yahoo.com/small-business/articles/socal-outback-steakhouse-franchisee-files-110000194.html",
+          "title": "SoCal Outback Steakhouse franchisee files for bankruptcy, citing California's labor costs",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM-9pD0o1m1plo4xUkVR6AzdpDFxFFwP0trmi3SS1iGE6j0KYubc8qUxS4FE8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKFoz6uW-v0PF-kiufMbsqlhXJm9wa1fB3O_1nrl3k95FLy6s5iOyZ43pdpmU"
+        },
+        {
+          "url": "https://www.restaurantdive.com/news/outback-steakhouse-franchisee-bankruptcy-61-units/873481/",
+          "title": "Outback’s largest U.S. franchisee goes bankrupt",
+          "publisher": "Restaurant Dive",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLDBS2hBnOUwiFT2Fs2Hb6f9fHv9imDCk8G5WOS-UELBw2f52fJ8fyEg2CSUI"
         }
       ]
     },
@@ -318,41 +353,6 @@
           "publisher": "Washington Examiner",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhuNmAIe_f7yK6T7vWg5psg6ogPoOFJRmtAGgnOVl4wwlu83FiuVDNJvPS7ZM"
-        }
-      ]
-    },
-    {
-      "query": "dupage county election results 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T12:30:00Z",
-      "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/03/2026-illinois-election-day-results-6th-congressional-district/",
-        "https://southwestregionalpublishing.com/2026/11/04/casten-defeats-conforti-in-6th-congressional-district-again/",
-        "https://www.clintonherald.com/news/national_news/democrat-sean-casten-wins-reelection-to-u-s-house-in-illinois-6th-congressional-district/article_921576ea-9596-5238-a878-dcea29f566a4.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf6W_nO69UMJVcrlS4W09TkkQw--3jPCytGq9PhuIbiMWUQSnG6HRFaCY9NsU",
-      "image_credit": "Chicago Tribune",
-      "news": [
-        {
-          "url": "https://www.chicagotribune.com/2026/11/03/2026-illinois-election-day-results-6th-congressional-district/",
-          "title": "2026 Illinois Election Day results: 6th Congressional District",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf6W_nO69UMJVcrlS4W09TkkQw--3jPCytGq9PhuIbiMWUQSnG6HRFaCY9NsU"
-        },
-        {
-          "url": "https://southwestregionalpublishing.com/2026/11/04/casten-defeats-conforti-in-6th-congressional-district-again/",
-          "title": "Casten defeats Conforti in 6th Congressional District — again",
-          "publisher": "Southwest Regional Publishing",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4F1dkRhsmgrZaFtQUKDNPnbpQimLJsw8s6sD2sOw45cuZIKyTN4SOUwBSMpc"
-        },
-        {
-          "url": "https://www.clintonherald.com/news/national_news/democrat-sean-casten-wins-reelection-to-u-s-house-in-illinois-6th-congressional-district/article_921576ea-9596-5238-a878-dcea29f566a4.html",
-          "title": "Democrat Sean Casten wins reelection to U.S. House in Illinois' 6th Congressional District",
-          "publisher": "Clinton Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRsLhFoHG1N9u40lS7u-llBSDCXtqyCxl7Q3sPWwSIv5zDh_y3EOuVm2-9cgE"
         }
       ]
     }
