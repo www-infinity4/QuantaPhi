@@ -40,7 +40,16 @@
     else visible.delete(cardId);
    }
   },{threshold:[0,.5,1]});
-  for(const [id] of mounts){const root=document.getElementById(id);if(root)observer.observe(root)}
+  const mutation=new MutationObserver(()=>{
+   for(const [id,cardId] of mounts){
+    const root=document.getElementById(id);
+    if(root&&visible.has(cardId)&&!once.has(cardId))observeCard(root,cardId,observer);
+   }
+  });
+  for(const [id] of mounts){
+   const root=document.getElementById(id);
+   if(root){observer.observe(root);mutation.observe(root,{childList:true,subtree:true})}
+  }
   document.addEventListener('visibilitychange',()=>{
    if(document.visibilityState==='hidden'){visible.clear();for(const t of pending.values())clearTimeout(t)}
   });
