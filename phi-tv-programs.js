@@ -57,7 +57,9 @@ function chillerNow(now=new Date()){
  const slot=now.getHours()*2+Math.floor(now.getMinutes()/30);
  const program=chillerSchedule(now)[slot];if(!program)return null;
  const elapsed=(now.getMinutes()%30)*60+now.getSeconds();
- return {...program,channel:'chiller',start:Math.min(5000,(program.startOffset||0)+elapsed),slot,
+ // Curated in-card playback starts at the beginning so every selection has
+ // a chance to play the full episode, even if the guide slot is nearly over.
+ return {...program,channel:'chiller',start:0,scheduledOffsetSeconds:(program.startOffset||0)+elapsed,slot,
   poster:'https://i.ytimg.com/vi/'+program.videoId+'/hqdefault.jpg'};
 }
 function starquestNow(now=new Date()){
