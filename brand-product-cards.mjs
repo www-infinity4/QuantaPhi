@@ -5,9 +5,9 @@ import {mountCardActions} from './quanta-card-actions.mjs?v=20261030-live-share1
  * photos and exact product links verified 2026-10-24. NOT paid retailer ads.
  * Never invent a sale or imply a checkout was performed on QuantaPhi.
  * Keep model/colour/image matched; refuse unsafe or mismatched sources. */
-const product=(id,brand,title,price,region,description,url,image,shop,accent)=>Object.freeze({
+const product=(id,brand,title,price,region,description,url,image,shop,accent,extra={})=>Object.freeze({
  id,brand,title,price,region,description,url,image,shop,accent,
- checked:'2026-10-24',category:'Denim & fashion'
+ checked:'2026-10-24',category:'Denim & fashion',...extra
 });
 export const BRAND_PRODUCT_CARDS=Object.freeze([
  product('pepe-brooke','Pepe Jeans','Iconic Brooke · Low-Rise Slim Fit',
@@ -39,8 +39,37 @@ export const BRAND_PRODUCT_CARDS=Object.freeze([
   '$84.95','US','A medium-wash version of the original straight-leg 501® denim silhouette.',
   'https://www.levi.com/US/en_US/clothing/men/jeans/straight/501-original-fit-mens-jeans/p/005013306',
   'https://lsco.scene7.com/is/image/lsco/005013306-front-pdp?fit=crop%2C1&fmt=jpeg&hei=1840&op_usm=0.6%2C0.6%2C8&qlt=70&resMode=sharp2&wid=2000',
-  'https://www.levi.com/US/en_US/','#a32928')
+  'https://www.levi.com/US/en_US/','#a32928'),
+ // New October 31 source-linked entries: actual exact manufacturer pages/photos.
+ // These are discovery cards, not stock assertions or provider payment APIs.
+ product('carhartt-dearborn-black','Carhartt','Dearborn Relaxed · Heavyweight Pocket Tee · Black',
+  '', 'US','Heavyweight cotton pocket tee. Choose your size and confirm stock at Carhartt.',
+  'https://www.carhartt.com/product/103296-001XSREG',
+  'https://imgcdn.carhartt.com/is/image/Carhartt/103296_001',
+  'https://www.carhartt.com/','#5b4a34',{checked:'2026-10-31',category:'Workwear'}),
+ product('levis-501-womens-light','Levi’s','Women’s 501® Original Fit · Light Wash',
+  '', 'US','Original straight-leg 501® jeans in a light wash, with a button fly. Select your size at Levi’s.',
+  'https://www.levi.com/US/en_US/clothing/women/jeans/straight/501-original-fit-womens-jeans/p/125010373',
+  'https://lsco.scene7.com/is/image/lsco/125010373-dynamic1-pdp?fit=crop%2C0&fmt=jpeg&hei=968&op_usm=0.6%2C0.6%2C8&qlt=70&resMode=bisharp&wid=880',
+  'https://www.levi.com/US/en_US/','#a32928',{checked:'2026-10-31'}),
+ product('levis-501-womens-medium','Levi’s','Women’s 501® Original Fit · Medium Wash',
+  '', 'US','Classic medium-wash 501® fit with original five-pocket styling and button fly.',
+  'https://www.levi.com/US/en_US/clothing/women/jeans/straight/501-original-fit-womens-jeans/p/125010667',
+  'https://lscoglobal.scene7.com/is/image/lscoglobal/WB_12501-0667_GLO_CL_FV?fit=crop%2C1&fmt=jpeg&hei=2500&op_usm=0.6%2C0.6%2C8&qlt=70&resMode=sharp2&wid=2000',
+  'https://www.levi.com/US/en_US/','#a32928',{checked:'2026-10-31'}),
+ product('oakley-holbrook-black','Oakley','Holbrook™ · Matte Black · Prizm Black Polarized',
+  '', 'US','Original Holbrook sunglasses, high-bridge fit. Check current availability and lens options at Oakley.',
+  'https://www.oakley.com/en-us/product/888392260109',
+  'https://assets.oakley.com/is/image/OakleyEYE/888392260109_holbrook_matte-black-prizm-black-polarized_main_001.png?impolicy=SEO_1x1',
+  'https://www.oakley.com/en-us/','#272c31',{checked:'2026-10-31',category:'Eyewear & accessories'})
 ]);
+// Exact product and photograph codes must agree for new merchant entries.
+const EXACT_MEDIA_CODES=Object.freeze({
+ 'carhartt-dearborn-black':['103296-001','103296_001'],
+ 'levis-501-womens-light':['125010373','125010373'],
+ 'levis-501-womens-medium':['125010667','12501-0667'],
+ 'oakley-holbrook-black':['888392260109','888392260109']
+});
 export function validBrandProduct(card){
  if(!card||!/^[a-z0-9-]{3,70}$/.test(card.id||'')||!card.title||!card.brand)return false;
  try{
@@ -48,10 +77,14 @@ export function validBrandProduct(card){
   if([main,photo,shop].some(u=>u.protocol!=='https:'||u.username||u.password))return false;
   const retailer=main.hostname.toLowerCase();
   const owned=retailer.endsWith('pepejeans.com')||retailer.endsWith('pepejeans.in')||
-   retailer==='www.guess.com'||retailer==='www.levi.com';
+   retailer==='www.guess.com'||retailer==='www.levi.com'||
+   retailer==='www.carhartt.com'||retailer==='www.oakley.com';
   const allowedImages=['images.pepejeans.com','d1pdzcnm6xgxlz.cloudfront.net',
-   'img.guess.com','guess.com.au','lsco.scene7.com'];
-  return owned&&allowedImages.includes(photo.hostname)&&shop.hostname===retailer;
+   'img.guess.com','guess.com.au','lsco.scene7.com',
+   'lscoglobal.scene7.com','imgcdn.carhartt.com','assets.oakley.com'];
+  const codes=EXACT_MEDIA_CODES[card.id];
+  return owned&&allowedImages.includes(photo.hostname)&&shop.hostname===retailer&&
+   (!codes||(main.pathname.includes(codes[0])&&photo.pathname.includes(codes[1])));
  }catch{return false}
 }
 const create=(tag,cls,content)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(content!==undefined)el.textContent=content;return el};
@@ -90,7 +123,7 @@ export function createBrandProductCard(card){
   outlet('Browse '+card.brand,card.shop,'qbp-more'));
  const activity=create('div','qbp-actions');
  mountCardActions(activity,{
-  id:card.id,name:card.brand+' · '+card.title,category:'Shopping · denim',
+  id:card.id,name:card.brand+' · '+card.title,category:'Shopping · '+card.category,
   featureUrl:card.url,official:card.url,route:'/?card='+encodeURIComponent(card.id)
  });
  const associate=outlet('Request Infinity affiliate review ↗',
@@ -99,7 +132,7 @@ export function createBrandProductCard(card){
  associate.removeAttribute('target');
  info.append(title,description,price,links,associate,detail,activity);
  article.append(kicker,imageLink,info);
- mountRotatingSpotlights(article,{id:card.id,name:card.brand,category:card.category,official:card.shop,query:'denim jeans new arrivals'});
+ mountRotatingSpotlights(article,{id:card.id,name:card.brand,category:card.category,official:card.shop,query:card.title});
  return article;
 }
 function mount(){
