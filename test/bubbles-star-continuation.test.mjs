@@ -14,6 +14,7 @@ test('explicit star or short continue request resumes saved owner work, never ar
  const send=ui.slice(ui.indexOf('async function sendMessage('),ui.indexOf('input.addEventListener(\'keydown\''));
  assert.ok(send.includes("if(spoken==='*'||"),'short natural-language continuation must use the same owner-scoped dispatch path');
  assert.match(send,/module\.continueSavedWork/);
+ assert.match(send,/bubbles-star-continuation\.mjs\?v=20261104-owner-continue2/,'new owner continuation module must not reuse an earlier cached implementation');
  assert.match(send,/ownerHeaders:verifiedOwnerHeaders/);
  assert.match(send,/nativeSpeechReply=spokenResult/);
  assert.match(send,/Runner requested\./);
