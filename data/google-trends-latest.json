@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T17:01:14.989749Z",
+  "checked_at": "2026-11-04T17:31:21.537210Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "fenerbahçe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T17:00:00Z",
+      "related_news_urls": [
+        "https://www.fanatik.com.tr/fenerbahce/live-fenerbahce-liverpool-maci-ne-zaman-saat-kacta-hangi-kanalda-2643330",
+        "https://www.hurriyet.com.tr/sporarena/galeri-trt-1-canli-mac-izleme-ekrani-fenerbahce-sampiyonlar-ligi-maci-hangi-kanalda-sifresiz-mi-nereden-izlenir-trt-1-yayin-akisi-ve-43366078",
+        "https://www.kayserihaber.com/4-kasim-2026-bu-aksam-hangi-maclar-var-mac-programi-saat-kacta"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtvxhJ3ZofKZ6vP5PVTVRZ9De6leOXlRt16YWf605UVC786SaJUj3K6xtiKcY",
+      "image_credit": "Fanatik",
+      "news": [
+        {
+          "url": "https://www.fanatik.com.tr/fenerbahce/live-fenerbahce-liverpool-maci-ne-zaman-saat-kacta-hangi-kanalda-2643330",
+          "title": "🚨 İLK 11'LER BELLİ OLDU! | Fenerbahçe - Liverpool maçı ne zaman, saat kaçta, hangi kanalda? (Şampiyonlar Ligi)",
+          "publisher": "Fanatik",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtvxhJ3ZofKZ6vP5PVTVRZ9De6leOXlRt16YWf605UVC786SaJUj3K6xtiKcY"
+        },
+        {
+          "url": "https://www.hurriyet.com.tr/sporarena/galeri-trt-1-canli-mac-izleme-ekrani-fenerbahce-sampiyonlar-ligi-maci-hangi-kanalda-sifresiz-mi-nereden-izlenir-trt-1-yayin-akisi-ve-43366078",
+          "title": "TRT 1 CANLI MAÇ İZLEME EKRANI || Fenerbahçe Şampiyonlar Ligi maçı hangi kanalda, şifresiz mi, nereden izlenir? TRT 1 yayın akışı ve güncel frekans ayarı...",
+          "publisher": "Hürriyet",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhbAILfbgZ6Uvh_jW046ExNUS0-s9JA_w4c2jZ0n7MGJ9rorTiMhDK6_Yb4I"
+        },
+        {
+          "url": "https://www.kayserihaber.com/4-kasim-2026-bu-aksam-hangi-maclar-var-mac-programi-saat-kacta",
+          "title": "4 Kasım 2026 bu akşam hangi maçlar var, maç programı saat kaçta? Fenerbahçe Liverpool maçı saat kaçta, hangi kanalda?",
+          "publisher": "kayserihaber.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ95GUUXe3O7B7glqnEZ3SeNhBdAAPHn0ROjDNqDsezXG671hiMse2Frl64Sk"
+        }
+      ]
+    },
+    {
+      "query": "aek vs real madrid",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-04T16:50:00Z",
+      "related_news_urls": [
+        "https://www.si.com/soccer/aek-athens-vs-real-madrid-preview-predictions-lineups-11-4-26",
+        "https://www.managingmadrid.com/115097/aek-athens-vs-real-madrid-2026-champions-league-live-online-stream",
+        "https://www.realmadrid.com/en-US/news/football/first-team/press-conference/mourinho-xxxx-03-11-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJgDEf1WeK6G4YsSUaZf_M6tEbpTN3hJYv1FhczxA69sGfpc9R2bNbVgVjbrw",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/soccer/aek-athens-vs-real-madrid-preview-predictions-lineups-11-4-26",
+          "title": "AEK Athens vs. Real Madrid: Preview, Predictions and Lineups",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJgDEf1WeK6G4YsSUaZf_M6tEbpTN3hJYv1FhczxA69sGfpc9R2bNbVgVjbrw"
+        },
+        {
+          "url": "https://www.managingmadrid.com/115097/aek-athens-vs-real-madrid-2026-champions-league-live-online-stream",
+          "title": "CONFIRMED lineups: AEK Athens vs Real Madrid, 2026 Champions League",
+          "publisher": "Managing Madrid",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3QV0hBKqX27mJcoG7JbJF1Qe09RBXSbB5BvZ-0JYNo5B2jkhFWXBA7Oa3sBQ"
+        },
+        {
+          "url": "https://www.realmadrid.com/en-US/news/football/first-team/press-conference/mourinho-xxxx-03-11-2026",
+          "title": "Mourinho: \"We need to play at our best, stay focused, and maintain our level of play\"",
+          "publisher": "Real Madrid CF | Web Oficial",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXg5-8MIr7TcexTX2JvuYOt5cdoAtH0WMdmBO5YBPBIFs_A7OTioKz5uVA_Kg"
+        }
+      ]
+    },
+    {
+      "query": "fenerbahçe vs liverpool",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-04T16:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c6rmy8zvwnryt",
+        "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-fenerbahce",
+        "https://www.usatoday.com/story/sports/soccer/ucl/2026/11/04/florian-wirtz-liverpool-fenerbahce-lineup-bench/92610751007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWRvs4WutdiH7dZXajL3vcI9c-9ZdivLWau3vmU1gn1Fhu0KuJy0onD3R0XAw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c6rmy8zvwnryt",
+          "title": "Champions League: Liverpool visit Fenerbahce before Arsenal and Man City in action",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWRvs4WutdiH7dZXajL3vcI9c-9ZdivLWau3vmU1gn1Fhu0KuJy0onD3R0XAw"
+        },
+        {
+          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-fenerbahce",
+          "title": "Team news: Confirmed Liverpool line-up v Fenerbahce",
+          "publisher": "Liverpool FC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9vny2c0YqKdwjbkoY7BjeM3aGBN8epURBZRL_EoP9UA_yQAoFcb2LBOTC2Io"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/soccer/ucl/2026/11/04/florian-wirtz-liverpool-fenerbahce-lineup-bench/92610751007/",
+          "title": "Why isn't Florian Wirtz starting for Liverpool vs. Fenerbahçe today?",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHCxgDC397Bru7tgBwj_g7zgnjFqq2zL6VgaPUXVrLXHl4tA8c0SoTqw1IAfM"
+        }
+      ]
+    },
+    {
+      "query": "fenerbahçe - liverpool",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T16:50:00Z",
+      "related_news_urls": [
+        "https://www.sozcu.com.tr/fenerbahce-liverpool-macinda-gol-yagmuru-p375988",
+        "https://www.ntvspor.net/futbol/galeri-uefa-genclik-ligindeki-fenerbahce-liverpool-macinda-8-gol-432454",
+        "https://www.sondakika.com/spor/haber-fenerbahcede-cagri-baltadan-olay-hareket-20395705/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQosKrrNogzxkiq2Et5Z9TfMnu60gsQ7vXsIsRbJMStcQqC-U7Ia2NAxLRw88M",
+      "image_credit": "Sözcü Gazetesi",
+      "news": [
+        {
+          "url": "https://www.sozcu.com.tr/fenerbahce-liverpool-macinda-gol-yagmuru-p375988",
+          "title": "Fenerbahçe-Liverpool maçında gol yağmuru",
+          "publisher": "Sözcü Gazetesi",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQosKrrNogzxkiq2Et5Z9TfMnu60gsQ7vXsIsRbJMStcQqC-U7Ia2NAxLRw88M"
+        },
+        {
+          "url": "https://www.ntvspor.net/futbol/galeri-uefa-genclik-ligindeki-fenerbahce-liverpool-macinda-8-gol-432454",
+          "title": "UEFA Gençlik Ligi'ndeki Fenerbahçe-Liverpool maçında 8 gol",
+          "publisher": "NTVSpor",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmLfTau5GGm_doaOkZxxeSfYUlim9vaqh9yOS8adOmm0tIub8Phr2LvcJCiEc"
+        },
+        {
+          "url": "https://www.sondakika.com/spor/haber-fenerbahcede-cagri-baltadan-olay-hareket-20395705/",
+          "title": "Fenerbahçe'de Çağrı Balta'dan olay hareket! Formasını çıkarıp gitti",
+          "publisher": "Son Dakika",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSww6CU_k5_JoieVHDty6tgqCBOZQuena2BZuELRiolKYmqPXmb6XVrh2GpWYw"
+        }
+      ]
+    },
+    {
+      "query": "djokovic",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T16:50:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/djokovic-vacherot-paris-2026-tuesday",
+        "https://www.bbc.com/sport/tennis/articles/c3n04nzv1n21o",
+        "https://www.reuters.com/sports/tennis/djokovic-becomes-oldest-paris-masters-match-winner-keeps-atp-finals-hopes-alive-2026-11-03/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzyZkUH94_jLzLzedqZhMDtlph0GhQWYW9sEVzSVOQd01LSdoyjJvo8uXIoq4",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/djokovic-vacherot-paris-2026-tuesday",
+          "title": "Djokovic battles past Vacherot in Paris, maintains Turin hopes",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzyZkUH94_jLzLzedqZhMDtlph0GhQWYW9sEVzSVOQd01LSdoyjJvo8uXIoq4"
+        },
+        {
+          "url": "https://www.bbc.com/sport/tennis/articles/c3n04nzv1n21o",
+          "title": "Paris Masters: Novak Djokovic through to keep alive bid for place at ATP Finals",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnGOc_dFSXH8-RbW5-M5RBhbI-HnXJeY-__pPOpCmv1pSAAzweK0rQs2kCc2g"
+        },
+        {
+          "url": "https://www.reuters.com/sports/tennis/djokovic-becomes-oldest-paris-masters-match-winner-keeps-atp-finals-hopes-alive-2026-11-03/",
+          "title": "Djokovic becomes oldest Paris Masters match winner, keeps ATP Finals hopes alive",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-28W5dpZLjdmdyEOys_j57kWuPXLQaMx8xvKOvlrVCklDadh18UPbsh5CyPI"
+        }
+      ]
+    },
+    {
+      "query": "rinky hijikata",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T16:50:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/video/hot-shot-how-did-hijikata-win-this-point-vs-djokovic-in-paris-2026",
+        "https://sports.yahoo.com/articles/novak-djokovic-atp-finals-hopes-170644321.html",
+        "https://www.syracuse.com/tv/2026/11/where-to-watch-novak-djokovics-second-round-match-at-rolex-paris-masters-for-free-today.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn1VqKN5ANDUZkX4MKN5krJLh2Lq6y40_Z6SPct72fZpK-NXGCvpLJPF7PH5Q",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/video/hot-shot-how-did-hijikata-win-this-point-vs-djokovic-in-paris-2026",
+          "title": "Hot Shot: How did Hijikata win this point vs. Djokovic in Paris 2026",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn1VqKN5ANDUZkX4MKN5krJLh2Lq6y40_Z6SPct72fZpK-NXGCvpLJPF7PH5Q"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/novak-djokovic-atp-finals-hopes-170644321.html",
+          "title": "Novak Djokovic’s ATP Finals hopes brought to stunning end in huge Paris shock",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSM_RqzyM-O2Aafx3jqBuZf5zoVdMKal488iAqMZa02_rSddE2TzvqX8UfYIM"
+        },
+        {
+          "url": "https://www.syracuse.com/tv/2026/11/where-to-watch-novak-djokovics-second-round-match-at-rolex-paris-masters-for-free-today.html",
+          "title": "Where to watch Novak Djokovic’s second round match at Rolex Paris Masters for free today",
+          "publisher": "Syracuse.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8plbkWmTSlWTezWYXsAMtLSKV2wm7n0tARH_nqkOn0BvPgp5aHVhNbz6yCvY"
+        }
+      ]
+    },
     {
       "query": "jessica chastain",
       "approx_searches": "1000+",
@@ -46,13 +256,20 @@
       "approx_searches": "500+",
       "published_at": "2026-11-04T16:40:00Z",
       "related_news_urls": [
+        "https://www.fox4news.com/news/day-7-testimony-underway-yella-beezy-murder-for-hire-trial",
         "https://www.wfaa.com/article/news/crime/yella-beezy-trial/yella-beezys-childhood-friend-says-he-lied-in-second-week-of-trial/287-250ce194-a856-4df8-beca-555b7ed9e464",
-        "https://www.nbcdfw.com/news/local/yella-beezy-murder-trial-enters-seventh-day-as-prosecution-continues-to-call-witnesses/4101308/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/yella-beezy-trial-testimony-continues-135538430.html"
+        "https://www.nbcdfw.com/news/local/yella-beezy-murder-trial-enters-seventh-day-as-prosecution-continues-to-call-witnesses/4101308/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxYyyvxB0FQwbZDHtnXHcuWcB9CB_OFD2jYp6o6DKu0kQjtyh74-gcSugjuDA",
-      "image_credit": "WFAA",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDx-m6VtTaVG3PZOx5FwGFDch6NC9ilc4tb5exLqJzvwwQwD4_UhiXw40sWaw",
+      "image_credit": "FOX 4 News Dallas-Fort Worth",
       "news": [
+        {
+          "url": "https://www.fox4news.com/news/day-7-testimony-underway-yella-beezy-murder-for-hire-trial",
+          "title": "Day 7 of testimony underway in the Yella Beezy murder-for-hire trial",
+          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDx-m6VtTaVG3PZOx5FwGFDch6NC9ilc4tb5exLqJzvwwQwD4_UhiXw40sWaw"
+        },
         {
           "url": "https://www.wfaa.com/article/news/crime/yella-beezy-trial/yella-beezys-childhood-friend-says-he-lied-in-second-week-of-trial/287-250ce194-a856-4df8-beca-555b7ed9e464",
           "title": "Yella Beezy's childhood friend says on the stand he lied in second week of trial",
@@ -66,13 +283,6 @@
           "publisher": "NBC 5 Dallas-Fort Worth",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6SF74j5DmdJkVfyLacwXynuztn_swN7x2fnS3Y9z-3KP3-iQkcqamObCdcLE"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/yella-beezy-trial-testimony-continues-135538430.html",
-          "title": "Yella Beezy trial: Testimony continues in Mo3 murder case | Live updates",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTedJgTHVVl6zGvy8QdbVhboZnhX2t8hc38ydqi5I4RA28NivDXqAh3ikSdlxI"
         }
       ]
     },
@@ -82,8 +292,8 @@
       "published_at": "2026-11-04T16:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/wnba/story/_/id/50379540/wnba-finals-saw-surge-attendance-record-ratings",
-        "https://www.gq.com/story/gabby-williams-interview",
-        "https://www.sf.gov/event-20261104-golden-state-valkyries-championship-parade-2026"
+        "https://www.sf.gov/event-20261104-golden-state-valkyries-championship-parade-2026",
+        "https://www.nytimes.com/athletic/7751875/2026/11/03/wnba-finals-game-7-record-viewership-valkyries-dream/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK7LvPaaqiu2ghwpUe6sLcXo7h4g0rwNCLG7H1aylUilL_uaUacwEeJhvbOY",
       "image_credit": "ESPN",
@@ -96,18 +306,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK7LvPaaqiu2ghwpUe6sLcXo7h4g0rwNCLG7H1aylUilL_uaUacwEeJhvbOY"
         },
         {
-          "url": "https://www.gq.com/story/gabby-williams-interview",
-          "title": "WNBA Finals MVP Gabby Williams Takes Us Inside Her Outrageously Clutch Game Seven",
-          "publisher": "GQ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZSjtbBjnlEnooK8KZXT_FvZOD53Mv7N24sQp3KoJoM2KwIbJpo-h5_En7fqE"
-        },
-        {
           "url": "https://www.sf.gov/event-20261104-golden-state-valkyries-championship-parade-2026",
           "title": "Golden State Valkyries Championship Parade 2026",
           "publisher": "SF.gov",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKZV9EwP-qttEhGOYRwF5r4OTtDiRWa-EGgwuEFy8UawwJh_iENABsLVOU6r0"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7751875/2026/11/03/wnba-finals-game-7-record-viewership-valkyries-dream/",
+          "title": "WNBA Finals Game 7 draws record 3.3 million viewers, most in playoff history",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx5bfNsQ46GweYzPhNnUoug0gp7sUw-ZJ-FKh-L9jhTbcb5WKtd_ntuheKK_Y"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "World Uyghur Congress",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZGVuR4n30_t4KVD-oTcP8ikfhiH-XzRyeYne15HKmeXR3tfHju9yfttKaiw"
-        }
-      ]
-    },
-    {
-      "query": "the view",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T16:20:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1301287/the-view-hillary-clinton-predictions-2026-midterm-elections/",
-        "https://www.nj.com/politics/2026/11/hillary-clinton-warns-trump-will-be-out-of-control-if-this-party-wins.html",
-        "https://www.wionews.com/videos/will-trump-with-a-minority-be-out-of-control-1793725127222"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqX59kVSWnKHLwrsIcj3OgbVKg7mm03MLjOBL69VSUwGhjYP5lfCj4HKLvXYk",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1301287/the-view-hillary-clinton-predictions-2026-midterm-elections/",
-          "title": "Hillary Clinton Predicts What Trump Will Do After Midterm Loss on ‘The View’",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqX59kVSWnKHLwrsIcj3OgbVKg7mm03MLjOBL69VSUwGhjYP5lfCj4HKLvXYk"
-        },
-        {
-          "url": "https://www.nj.com/politics/2026/11/hillary-clinton-warns-trump-will-be-out-of-control-if-this-party-wins.html",
-          "title": "Hillary Clinton 'optimistic' but 'worried' ahead of midterms",
-          "publisher": "NJ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcebpkB9_Ny1tdv4DzAhslK354gBYGXDEDGXvJurNIWUlTdNdWXLjhm58Iv2U"
-        },
-        {
-          "url": "https://www.wionews.com/videos/will-trump-with-a-minority-be-out-of-control-1793725127222",
-          "title": "Will Trump with a minority be out of control?",
-          "publisher": "WION",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc5yq1NRCV9zAQ_OcpNGEbCHEQdY1HxISS0hxH6maUKr4wnzkeyhN_QxAqBuE"
-        }
-      ]
-    },
-    {
-      "query": "alex molcan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T16:20:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/lorenzo-musetti-vs-luca-van-assche-set-1-winner-nov-05-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/oksana-selekhmeteva-vs-polina-kudermetova-set-1-winner-nov-04-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/janice-tjen-vs-joanna-garland-set-2-winner-nov-04-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUnA0jeYKOZPnLztXb2UrhsoXARKxHVQtYCfOcw4gr4bHeXdUbVo75G-GlxYE",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/lorenzo-musetti-vs-luca-van-assche-set-1-winner-nov-05-2026/",
-          "title": "November 5, 2026: Lorenzo Musetti vs Luca Van Assche: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUnA0jeYKOZPnLztXb2UrhsoXARKxHVQtYCfOcw4gr4bHeXdUbVo75G-GlxYE"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/oksana-selekhmeteva-vs-polina-kudermetova-set-1-winner-nov-04-2026/",
-          "title": "November 4, 2026: Oksana Selekhmeteva vs Polina Kudermetova: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScyByMr991uQ6NgUv3H8sSQ1NBiEknYP-o6yNNuDIQUkb8tBFd7dmB11y9zqE"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/janice-tjen-vs-joanna-garland-set-2-winner-nov-04-2026/",
-          "title": "November 4, 2026: Janice Tjen vs Joanna Garland: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1aMRNctgoeAonw2gcsFzQW7YAI0NJvYPZJuT9qsangI2mC4XlkvCnpqwgJ_E"
-        }
-      ]
-    },
-    {
-      "query": "marketwatch",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T16:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-        "https://www.bloomberg.com/news/articles/2026-11-04/wall-street-sees-risks-to-ai-boom-after-the-democratic-sweep",
-        "https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkAcNHCfb4tp0CKsW6St9ml_8-__RbRdVtmj0zxMHA0BdJt2nvRVPYU7NbPOY",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-          "title": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkAcNHCfb4tp0CKsW6St9ml_8-__RbRdVtmj0zxMHA0BdJt2nvRVPYU7NbPOY"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-04/wall-street-sees-risks-to-ai-boom-after-the-democratic-sweep",
-          "title": "Wall Street Sees Risks to AI Boom After the Democratic Sweep",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdr6FcldLrz6q9hu1A_k1mcdC_OWgFDMfb76V_gDJBehn9IpLnZGmcZZdHhCM"
-        },
-        {
-          "url": "https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/",
-          "title": "Voters reject data centers across the country as the AI backlash grows",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQbV-13Sz_HuHGI0y0RaUbBihDkMzOgXxvGSYzbM7Sb-voL3c9p16Aw_BgQY"
-        }
-      ]
-    },
-    {
-      "query": "kristaps porzingis",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T15:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say",
-        "https://bleacherreport.com/articles/25529283-warriors-reportedly-not-delivering-payments-kristaps-porzingis-star-contemplates-nba-future",
-        "https://www.usatoday.com/story/sports/nba/rumors/2026/11/04/warriors-not-delivering-salary-payments-kristaps-porzingis-ruling-that-not-rendering-services-team/92609918007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvlgC-SNcSJBXKbFdfsQY8_91Cfa_dPPjjgp4MAhZmACIyUmYNNDlePyTVRMc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say",
-          "title": "Warriors withholding payments to Porzingis, sources say",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvlgC-SNcSJBXKbFdfsQY8_91Cfa_dPPjjgp4MAhZmACIyUmYNNDlePyTVRMc"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529283-warriors-reportedly-not-delivering-payments-kristaps-porzingis-star-contemplates-nba-future",
-          "title": "Warriors Reportedly 'Not Delivering Payments' to Kristaps Porzingis as Star Contemplates NBA Future",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMqiiT1MoVqmuMFH4FopZJZwwOSgo0B4DxBse8lXHz8zvJZgxsvdj1HBUnUkg"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nba/rumors/2026/11/04/warriors-not-delivering-salary-payments-kristaps-porzingis-ruling-that-not-rendering-services-team/92609918007/",
-          "title": "Warriors not delivering salary payments to Kristaps Porzingis, ruling that he is not rendering services to team",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMPCJEl9IbUX9DcoIPL_qGAGmiAaOg07yFeDbtNZ5vaKtarrdBf7_nTdO9qmU"
-        }
-      ]
-    },
-    {
-      "query": "angel reese caitlin clark",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T15:40:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/why-isnt-angel-reese-held-caitlin-clark-standard-when-fans-attack-her-teammates",
-        "https://theshadowleague.com/jordin-canada-atlanta-dream-fans-wnba-finals-loss-angel-reese-golden-state-valkyries/",
-        "https://mezha.net/eng/news/mezha-f0b5bd67077cd446b817ba72_why_isn-t_angel/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRft021NdUZ-UEPKvej_HVXwLxOKGJf7Axqvnt-9nCbeb3kmYtDUNlqaRfoCkM",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/why-isnt-angel-reese-held-caitlin-clark-standard-when-fans-attack-her-teammates",
-          "title": "Why isn’t Angel Reese held to the Caitlin Clark standard when fans attack her teammates?",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRft021NdUZ-UEPKvej_HVXwLxOKGJf7Axqvnt-9nCbeb3kmYtDUNlqaRfoCkM"
-        },
-        {
-          "url": "https://theshadowleague.com/jordin-canada-atlanta-dream-fans-wnba-finals-loss-angel-reese-golden-state-valkyries/",
-          "title": "'I Kept Receipts': Atlanta Dream's Jordin Canada Takes Parting Shot At 'Heartless' WNBA Fans After Game 7 Finals Loss",
-          "publisher": "The Shadow League",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpsahXuGxREBHuL5f2MxFWziql_BRIdVzKxAWASHsAOrWG9dnyEexl4I1IkAo"
-        },
-        {
-          "url": "https://mezha.net/eng/news/mezha-f0b5bd67077cd446b817ba72_why_isn-t_angel/",
-          "title": "Why isn’t Angel Reese held to the Caitlin Clark standard when fans attack her teammates?",
-          "publisher": "Mezha.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2cUexFUwN5ekeIHG0tz3rsBrPGngC398uEYod46PV9G0ELv-4_yVjsuJAFE"
-        }
-      ]
-    },
-    {
-      "query": "nintendo switch cartridge rom manufacturer leaves",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T15:40:00Z",
-      "related_news_urls": [
-        "https://gizmodo.com/nintendos-switch-2-game-cards-matronix-2000834832",
-        "https://www.gamespot.com/articles/nintendo-could-have-a-new-cartridge-problem-on-its-hands/",
-        "https://nintendoeverything.com/nintendos-main-manufacturer-for-switch-2-and-switch-cartridges-is-quitting-the-business/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwGHqwBHJ2JH_tyhvUwlg3WuKlqTc4FscQYjlgPvPq81Nh432Cirtns3uX2YY",
-      "image_credit": "Gizmodo",
-      "news": [
-        {
-          "url": "https://gizmodo.com/nintendos-switch-2-game-cards-matronix-2000834832",
-          "title": "Nintendo’s Switch 2 Game Card Situation Just Became Dire",
-          "publisher": "Gizmodo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwGHqwBHJ2JH_tyhvUwlg3WuKlqTc4FscQYjlgPvPq81Nh432Cirtns3uX2YY"
-        },
-        {
-          "url": "https://www.gamespot.com/articles/nintendo-could-have-a-new-cartridge-problem-on-its-hands/",
-          "title": "Nintendo Could Have A New Cartridge Problem On Its Hands",
-          "publisher": "GameSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnTyuq6Gu9ISzkxuPRauxNCmylzo3ckg4GJTSQtBR0uHk1M1rObHMOphBWbig"
-        },
-        {
-          "url": "https://nintendoeverything.com/nintendos-main-manufacturer-for-switch-2-and-switch-cartridges-is-quitting-the-business/",
-          "title": "Nintendo’s main manufacturer for Switch 2 and Switch cartridges is quitting the business",
-          "publisher": "Nintendo Everything",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSssaef9LrUlXnQwu2qqLICJnEbqwQuqhyoI-Kiw86d3J9Wz7zC8D5xj9U3GrA"
         }
       ]
     }
