@@ -134,7 +134,7 @@ test('Search & Listen plays a matching verified catalog song inside the existing
  assert.ok(f.searchInput,'radio search input should be mounted in the card');
  f.searchInput.value='catalog song 128';
  f.search.emit('submit');
- assert.match(f.audio.src,/catalog-128\\.mp3$/);
+ assert.ok(f.audio.src.endsWith('/catalog-128.mp3'),'searched song must play in the same audio element');
  assert.equal(f.pending.length,1,'the radio must attempt one in-card audio play');
  assert.ok(!player.includes('youtube.com/results'),'search should not redirect to YouTube');
 });
