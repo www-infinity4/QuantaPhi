@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 test('artist music uses one page-level dock and no per-card iframe or outbound music links',()=>{
  const home=read('index.html'), steve=read('steve-miller-book-of-dreams.js'), rock=read('classic-rock-official-card.mjs');
@@ -30,4 +31,58 @@ test('radio yields to artist selection and artist yields to radio selection',()=
  assert.match(js,/infinity:music-focus/);
  assert.match(js,/player:\s*'radio'/);
  assert.match(js,/audio\.pause\(\)/);
+});
+
+test('shared player survives carousel switching and pauses for Infinity Radio without redirecting',async()=>{
+ const node=tag=>({
+  tag,children:[],attributes:{},handlers:{},
+  append(...children){this.children.push(...children)},
+  appendChild(child){this.children.push(child)},
+  setAttribute(name,value){this.attributes[name]=value},
+  addEventListener(name,handler){this.handlers[name]=handler}
+ });
+ const document={
+  hidden:false,head:node('head'),body:node('body'),handlers:{},
+  createElement:node,addEventListener(name,handler){this.handlers[name]=handler}
+ };
+ const window={
+  location:{origin:'https://quantaphi.org'},handlers:{},
+  addEventListener(name,handler){this.handlers[name]=handler},
+  dispatchEvent(event){this.handlers[event.type]?.(event)},
+  YT:{PlayerState:{PLAYING:1,PAUSED:2,ENDED:0}}
+ };
+ const events=[],loads=[];
+ class FakePlayer{
+  constructor(host,options){
+   assert.equal(host,'infinityArtistMediaFrame');
+   this.handlers=options.events;
+   Promise.resolve().then(()=>this.handlers.onReady());
+  }
+  getIframe(){return node('iframe')}
+  loadPlaylist(payload){loads.push(payload.list);this.playVideo()}
+  loadVideoById(videoId){loads.push(videoId);this.playVideo()}
+  playVideo(){events.push('play');this.handlers.onStateChange({data:1})}
+  pauseVideo(){events.push('pause');this.handlers.onStateChange({data:2})}
+  stopVideo(){events.push('stop');this.handlers.onStateChange({data:0})}
+ }
+ window.YT.Player=FakePlayer;
+ const CustomEvent=function(type,options){this.type=type;this.detail=options.detail};
+ vm.runInNewContext(read('infinity-artist-music.js'),{window,document,CustomEvent,console,Promise});
+ assert.equal(document.body.children.length,0,'no media loaded before a user tap');
+ window.InfinityArtistMusic.toggle('steve-miller');
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(loads[0],'PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k');
+ assert.equal(window.InfinityArtistMusic.isPlaying(),true);
+ assert.equal(document.body.children.length,1,'one player dock is created');
+ assert.equal(document.handlers['oracle:card-deactivated'],undefined,'card switching cannot pause playback');
+ window.InfinityArtistMusic.toggle('pink-floyd');
+ assert.equal(loads.at(-1),'K6qj09OHvjw');
+ assert.equal(document.body.children.length,1,'band changes reuse the dock');
+ window.InfinityArtistMusic.toggle('pink-floyd');
+ assert.equal(window.InfinityArtistMusic.isPlaying(),false,'second tap pauses');
+ window.InfinityArtistMusic.toggle('pink-floyd');
+ assert.equal(window.InfinityArtistMusic.isPlaying(),true,'third tap resumes');
+ window.dispatchEvent(new CustomEvent('infinity:music-focus',{detail:{player:'radio'}}));
+ assert.equal(window.InfinityArtistMusic.isPlaying(),false,'Infinity Radio takes audio focus');
+ assert.ok(events.includes('pause'));
 });
