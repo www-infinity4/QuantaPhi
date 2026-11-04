@@ -103,7 +103,7 @@ test('full catalog is loaded, visible and newest song plays first, not old four-
  assert.match(f.audio.src,/catalog-129\.mp3$/);
  f.pending[0].resolve();await catalogReady();
  f.audio.emit('ended');
- assert.match(f.audio.src,/catalog-128\.mp3$/);
+ assert.ok(f.audio.src.endsWith('/catalog-128.mp3'),'matched track must load the existing in-card audio source');
  assert.equal(f.pending.length,2);
 });
 
