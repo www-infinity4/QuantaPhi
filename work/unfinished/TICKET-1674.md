@@ -29,6 +29,8 @@ blocker: "No verified live D1 migration, Worker endpoint, bot controls or indepe
 next_action: "Run exact-head CI and obtain security review before Cloudflare staging"
 ---
 
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1674
+
 ## Session 1 — source implementation
 
 - Created owner-authenticated read-only executor evidence summary and a first-party Media Star engagement Worker, plus isolated D1 schema and unique impression guard.
