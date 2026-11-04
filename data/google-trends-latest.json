@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T00:42:51.927528Z",
+  "checked_at": "2026-11-04T01:01:29.366510Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "florida",
+      "query": "new york times",
       "approx_searches": "10000+",
-      "published_at": "2026-11-04T00:20:00Z",
+      "published_at": "2026-11-04T00:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/03/us/florida-plane-crash-wreckage-recovered.html",
-        "https://www.newser.com/story/399346/important-evidence-found-miles-from-florida-crash-site.html",
-        "https://www.wsj.com/us-news/the-final-seconds-before-a-learjet-plunged-into-a-florida-street-315b0c97"
+        "https://www.cnn.com/2026/11/03/politics/justice-department-target-letters-dan-sullivan-alaska-democratic-party",
+        "https://www.usatoday.com/story/news/politics/elections/2026/11/03/alaska-dan-sullivan-ballot-probe-justice-department-letters/92595476007/",
+        "https://www.nytimes.com/2026/10/28/us/politics/alaska-dan-sullivan-conspiracy-peltola.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpEPNXyxXzWWZZ-sD-ru6eGF_TyspN-GJPsn9ruTB-uu8b_MS9JxHJmB2mGQg",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/03/us/florida-plane-crash-wreckage-recovered.html",
-          "title": "Key Part of Jet in Deadly Florida Crash Found Far From Impact Site",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpEPNXyxXzWWZZ-sD-ru6eGF_TyspN-GJPsn9ruTB-uu8b_MS9JxHJmB2mGQg"
-        },
-        {
-          "url": "https://www.newser.com/story/399346/important-evidence-found-miles-from-florida-crash-site.html",
-          "title": "Important Evidence Found Miles From Florida Crash Site",
-          "publisher": "Newser",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqEKGRTiC72FZ6FYLqoCPS1pJiHffObph4A33GDlSazSWnxPxufTx3Ct6vsps"
-        },
-        {
-          "url": "https://www.wsj.com/us-news/the-final-seconds-before-a-learjet-plunged-into-a-florida-street-315b0c97",
-          "title": "The Final Seconds Before a Learjet Plunged Into a Florida Street",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN3iHOU7U21TBo_Ejci_RpQMQOy34reJW_cOY0zz9218Gm1BvdJEsAgsqpkT4"
-        }
-      ]
-    },
-    {
-      "query": "jake tapper",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T00:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/01/us/politics/trump-speeches-rallies-age.html",
-        "https://www.huffpost.com/entry/cnn-donald-trump-repeats-same-story-willie-horton_n_6ae9b248e4b0816eae6104af",
-        "https://www.thedailybeast.com/cnn-anchor-jake-tapper-exposes-trump-80-over-bizarre-rally-glitch"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHKX10t_sbUp7zL7FNb68ghGTcAjvr3kaYMFOldUXa2dpf9QPLzgYNszWihGQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/01/us/politics/trump-speeches-rallies-age.html",
-          "title": "Gaffes and Men’s Bodies: Analysis of Trump’s Speeches at Age 80",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHKX10t_sbUp7zL7FNb68ghGTcAjvr3kaYMFOldUXa2dpf9QPLzgYNszWihGQ"
-        },
-        {
-          "url": "https://www.huffpost.com/entry/cnn-donald-trump-repeats-same-story-willie-horton_n_6ae9b248e4b0816eae6104af",
-          "title": "CNN Lasers In On 1 Trump Speaking Gaffe In Damning Segment",
-          "publisher": "HuffPost",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqGwZteKlGV2LApO9wljFmWSNp4CtYo32E0yBam3WfDGYTDjj835tjQXlQBt0"
-        },
-        {
-          "url": "https://www.thedailybeast.com/cnn-anchor-jake-tapper-exposes-trump-80-over-bizarre-rally-glitch",
-          "title": "CNN Anchor Jake Tapper Exposes Trump, 80, Over Bizarre Rally Glitch",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBGedAAkVUM5dTBn5FnOPP9NuD-xFBbGDONFbCnJtKeI8TvqAY7n4eKDBKdMA"
-        }
-      ]
-    },
-    {
-      "query": "david jolly policies",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T00:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/florida-governor-results",
-        "https://mynews13.com/fl/orlando/politics/2026/11/03/donalds-and-jolly-at-watch-parties-awaiting-results",
-        "https://www.news4jax.com/news/local/2026/11/03/byron-donalds-david-jolly-offer-sharply-different-visions-in-florida-governors-race/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYvPeMA3yneyujbLPEOVXCA8ADhB62q8Hqkipjbd3_iJPCVZaywjcSLQe6LL0",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/florida-governor-results",
-          "title": "Florida Governor Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYvPeMA3yneyujbLPEOVXCA8ADhB62q8Hqkipjbd3_iJPCVZaywjcSLQe6LL0"
-        },
-        {
-          "url": "https://mynews13.com/fl/orlando/politics/2026/11/03/donalds-and-jolly-at-watch-parties-awaiting-results",
-          "title": "Donalds in Hollywood, Jolly in Tampa at watch parties awaiting results",
-          "publisher": "Spectrum News 13",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyEZ8AqvYvWyXe_yAm8HjW0KBh0EGUSFKBpWnJw5JMiwEb1a67MsfqF7IvFRs"
-        },
-        {
-          "url": "https://www.news4jax.com/news/local/2026/11/03/byron-donalds-david-jolly-offer-sharply-different-visions-in-florida-governors-race/",
-          "title": "Byron Donalds, David Jolly offer sharply different visions in Florida governor’s race",
-          "publisher": "News4JAX",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnw5_zwvX1VN3LrfS9XI8NNh4UMPG7eiNEH35iK3EprSkMXZ8ws_yqW0YqVMU"
-        }
-      ]
-    },
-    {
-      "query": "uva basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T00:20:00Z",
-      "related_news_urls": [
-        "https://virginiasports.com/news/2026/11/2/no-9-mens-basketball-opens-season-against-drexel-on-tuesday-night",
-        "https://sports.yahoo.com/articles/watch-uva-basketball-vs-drexel-230539501.html",
-        "https://augustafreepress.com/news/uva-basketball-three-guys-to-watch-in-this-weeks-buy-games/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6jm6y4DGKIOdw9kexBvwh1mXBnEeqjmeyMeKnoQPZJARXoJNgwLqSk0jqg4c",
-      "image_credit": "Virginia Sports",
-      "news": [
-        {
-          "url": "https://virginiasports.com/news/2026/11/2/no-9-mens-basketball-opens-season-against-drexel-on-tuesday-night",
-          "title": "No. 9 Men’s Basketball Opens Season Against Drexel on Tuesday Night",
-          "publisher": "Virginia Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6jm6y4DGKIOdw9kexBvwh1mXBnEeqjmeyMeKnoQPZJARXoJNgwLqSk0jqg4c"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-uva-basketball-vs-drexel-230539501.html",
-          "title": "How to watch UVA basketball vs. Drexel and GAME THREAD",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUXImLIjFifF8s_c0u80h34C9ffnYRgijW6M3Ag2G0iQfekeSvSslgm_aIlFc"
-        },
-        {
-          "url": "https://augustafreepress.com/news/uva-basketball-three-guys-to-watch-in-this-weeks-buy-games/",
-          "title": "UVA Basketball: Three guys to watch for in this week’s buy games",
-          "publisher": "Augusta Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQux-Kfsk2UvmD81sWG5iH0Mc-ICFCMT_8XYGZxZF1eygzCxzUIZub-33gGV20"
-        }
-      ]
-    },
-    {
-      "query": "stetson vs south carolina",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T00:20:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-basketball-preview-stetson-hatters-292144529/",
-        "https://www.on3.com/teams/south-carolina-gamecocks/news/roundtable-gamecockcentral-predicts-previews-2026-27-south-carolina-mens-basketball-season/",
-        "https://www.thestate.com/sports/college/university-of-south-carolina/usc-mens-basketball/article317813750.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-68shci_RvERgdwbwa-s6542xniWPdxYt0ozDfSstN-cIGJaZMgN5a96eSrA",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-basketball-preview-stetson-hatters-292144529/",
-          "title": "Countdown to tipoff: South Carolina vs. Stetson",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-68shci_RvERgdwbwa-s6542xniWPdxYt0ozDfSstN-cIGJaZMgN5a96eSrA"
-        },
-        {
-          "url": "https://www.on3.com/teams/south-carolina-gamecocks/news/roundtable-gamecockcentral-predicts-previews-2026-27-south-carolina-mens-basketball-season/",
-          "title": "Roundtable: GamecockCentral predicts, previews 2026-27 South Carolina men's basketball season",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL6xnInB3ThrRxTCzbtF5RrnThL0HZJplmiFrgfwP64qedhriOJOphecacm0Q"
-        },
-        {
-          "url": "https://www.thestate.com/sports/college/university-of-south-carolina/usc-mens-basketball/article317813750.html",
-          "title": "First impressions of South Carolina MBB’s overhauled roster as new season begins",
-          "publisher": "The State",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MQDFpEbM_v5pwI-c1Kv_x1pG9CBOmD4LvNZzLH4YdljQThvIfJTOrZHr9Co"
-        }
-      ]
-    },
-    {
-      "query": "nick fuentes",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T00:20:00Z",
-      "related_news_urls": [
-        "https://www.wbur.org/cognoscenti/2026/11/03/heritage-americans-groypers-nick-fuentes-jd-vance-andrew-getrear",
-        "https://www.washingtontimes.com/news/2026/oct/27/extremist-nick-fuentes-tells-voters-stay-home-vote-democrat/",
-        "https://forward.com/news/860210/nick-fuentes-2026-midterms-democrats-endorsement-antisemitism-groyper/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxly4eWslCs9FuPKH0wmYqLrwpQYOfGtK7udhXgLOg3pmWhr2RKlYYcNOnwrQ",
-      "image_credit": "WBUR",
-      "news": [
-        {
-          "url": "https://www.wbur.org/cognoscenti/2026/11/03/heritage-americans-groypers-nick-fuentes-jd-vance-andrew-getrear",
-          "title": "What the phrase ‘Heritage American’ gets wrong",
-          "publisher": "WBUR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxly4eWslCs9FuPKH0wmYqLrwpQYOfGtK7udhXgLOg3pmWhr2RKlYYcNOnwrQ"
-        },
-        {
-          "url": "https://www.washingtontimes.com/news/2026/oct/27/extremist-nick-fuentes-tells-voters-stay-home-vote-democrat/",
-          "title": "Extremist Nick Fuentes tells voters ‘stay home or vote Democrat’",
-          "publisher": "Washington Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRt8Hi9rYuJbD7-aTl9u_w3FMxfNZ3U1o49_5YaXfTBb1UyxRWF8WDSZY6qwAs"
-        },
-        {
-          "url": "https://forward.com/news/860210/nick-fuentes-2026-midterms-democrats-endorsement-antisemitism-groyper/",
-          "title": "Why Nick Fuentes endorsed Democrats in the midterms",
-          "publisher": "The Forward",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuSOy7lqgf5GPt-pdt9LAbpywyA0E_j--FxV7tpQcMJDGv-Em7HT7jxh7EjmQ"
-        }
-      ]
-    },
-    {
-      "query": "kathy castor",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T00:20:00Z",
-      "related_news_urls": [
-        "https://floridapolitics.com/archives/828635-hillsborough-early-vote-turnout-strongest-sign-yet-that-cd-14-was-a-dummymander/",
-        "https://www.wfla.com/news/battleground-florida/beltran-hopes-to-unseat-castor-in-district-14-race/",
-        "https://www.washingtonpost.com/elections/results/2026/11/03/florida-14th-house-district-live-updates/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu2tgzK3l2TFaN-QJKzHn_s-BJLKpLBq17oAIqa4x2_0OY760BlWiUAbg5jTU",
-      "image_credit": "Florida Politics",
-      "news": [
-        {
-          "url": "https://floridapolitics.com/archives/828635-hillsborough-early-vote-turnout-strongest-sign-yet-that-cd-14-was-a-dummymander/",
-          "title": "Hillsborough early vote turnout strongest sign yet that CD 14 was a ‘dummymander’",
-          "publisher": "Florida Politics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu2tgzK3l2TFaN-QJKzHn_s-BJLKpLBq17oAIqa4x2_0OY760BlWiUAbg5jTU"
-        },
-        {
-          "url": "https://www.wfla.com/news/battleground-florida/beltran-hopes-to-unseat-castor-in-district-14-race/",
-          "title": "Beltran hopes to unseat Castor in District 14 race",
-          "publisher": "WFLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpWmaKR1hyof_LMiJ-2CQouLdRV9IuQDiAltP4hqKGedDsGmxWJzjbf4QvZ44"
-        },
-        {
-          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/florida-14th-house-district-live-updates/",
-          "title": "Florida 14th Congressional District election results 2026",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSJSEk1Goe0dEb85CbDUs9wA-6CqkM-334apTDjuz2uoa2IX3pckBjWeL8qGI"
-        }
-      ]
-    },
-    {
-      "query": "visionquest episodes",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T00:10:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/erikkain/2026/11/02/visionquest-episode-7-release-date-time-disney-plus-finale-schedule/",
-        "https://www.npr.org/2026/11/02/nx-s1-6022490/visionquest-is-marvel-at-its-talkiest-and-thinkiest",
-        "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2j-nurPI_zQhC8GKjkiuruMR1RqfPGXe3Nzgc7A4glBuF4rrWD44J2ZM6sSM",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/erikkain/2026/11/02/visionquest-episode-7-release-date-time-disney-plus-finale-schedule/",
-          "title": "‘VisionQuest’ Episode 7 Release Date And Preview: Ultron’s Endgame Is Coming Into Focus",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2j-nurPI_zQhC8GKjkiuruMR1RqfPGXe3Nzgc7A4glBuF4rrWD44J2ZM6sSM"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/02/nx-s1-6022490/visionquest-is-marvel-at-its-talkiest-and-thinkiest",
-          "title": "‘VisionQuest’ is Marvel at its talkiest and thinkiest : Pop Culture Happy Hour",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuifVUNko0g6ecSwDooOU5Rk_MbUDCpXAFI7KYVUa90yFn7poEdYXmvk6by4c"
-        },
-        {
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
-          "title": "VisionQuest is what happens when AI really goes rogue",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIw5EdTdc7o6lgdZomSAwqwy9DOqcn6JtwbiGNzaP3DuW1rfyf_CVvxIZChLU"
-        }
-      ]
-    },
-    {
-      "query": "silver rail elementary shooting",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T00:10:00Z",
-      "related_news_urls": [
-        "https://www.kptv.com/2026/11/03/authorities-release-911-call-man-who-killed-bend-elementary-shooter/",
-        "https://www.cnn.com/2026/11/01/us/bend-oregon-hero-teacher",
-        "https://www.cbsnews.com/news/oregon-school-shooting-hero-dad-911-call/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmAC4UKzMdBUQXXi-CyZl-YkdKBapHe2O3E2aR9ouXr_8ml-G8Q8vGYcAVbPs",
-      "image_credit": "KPTV",
-      "news": [
-        {
-          "url": "https://www.kptv.com/2026/11/03/authorities-release-911-call-man-who-killed-bend-elementary-shooter/",
-          "title": "Authorities release 911 call from father who killed Bend elementary shooter",
-          "publisher": "KPTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmAC4UKzMdBUQXXi-CyZl-YkdKBapHe2O3E2aR9ouXr_8ml-G8Q8vGYcAVbPs"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/01/us/bend-oregon-hero-teacher",
-          "title": "Hero teacher who tackled Bend gunman speaks out as community prepares to reopen school",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThE3BHabNZaDu_O9gMY562tc1xczCioMntmfDo7WbI954AmHNeIba-AEjP7O4"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/oregon-school-shooting-hero-dad-911-call/",
-          "title": "Hero dad in Oregon school shooting told 911 he'd shoot gunman \"right now if I have to\" before killing him",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_dPrqYJOt4DxXW5HYyynxbJvvHBtGc2e5K5YE4fl0S4OVsn1phxtmNimIDiA"
-        }
-      ]
-    },
-    {
-      "query": "cnn live election coverage",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T00:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/03/politics/video/cnn-sightline-jennifer-agiesta-anderson-cooper-digvid",
-        "https://www.bbc.com/news/live/cj1dw0ydn595t",
-        "https://variety.com/2026/shopping/news/how-to-watch-cnn-midterm-election-coverage-2026-live-online-1236937321/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTkH0hE5sWJrjUly8efwAJ5hHZFV8ZYfCu3FvkpFLKr9csrRoqBNa9lF7XXv8",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ76gR9KaRZf0YB0uA7frph-mZefQgaY-FpzEEpfhj8bf8IQEuwEaT_vObuCLI",
       "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/03/politics/video/cnn-sightline-jennifer-agiesta-anderson-cooper-digvid",
-          "title": "CNN Sightline: A real-time read on key races",
+          "url": "https://www.cnn.com/2026/11/03/politics/justice-department-target-letters-dan-sullivan-alaska-democratic-party",
+          "title": "Justice Department sends criminal target letters in Alaska probe to people aligned with Democratic party",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTkH0hE5sWJrjUly8efwAJ5hHZFV8ZYfCu3FvkpFLKr9csrRoqBNa9lF7XXv8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ76gR9KaRZf0YB0uA7frph-mZefQgaY-FpzEEpfhj8bf8IQEuwEaT_vObuCLI"
         },
         {
-          "url": "https://www.bbc.com/news/live/cj1dw0ydn595t",
-          "title": "Live updates: 2026 US midterm elections and results",
-          "publisher": "BBC",
+          "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/03/alaska-dan-sullivan-ballot-probe-justice-department-letters/92595476007/",
+          "title": "Justice Department sends 20 letters in expanded Alaska ballot probe",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEzFO6lPQq-9LN17cXwdLqWzAVfjhT-TDcvqgFM8dAvSWhfwzszpwhqiKz5nk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmQU-NNNcxojA_u9E6LLjZVZYBjee71qwgFVTN1_7CZN2Py6XsR4Pq_l44zK8"
         },
         {
-          "url": "https://variety.com/2026/shopping/news/how-to-watch-cnn-midterm-election-coverage-2026-live-online-1236937321/",
-          "title": "How to Watch CNN Midterm Election Coverage Live Online",
-          "publisher": "Variety",
+          "url": "https://www.nytimes.com/2026/10/28/us/politics/alaska-dan-sullivan-conspiracy-peltola.html",
+          "title": "Inside Democrats’ Secret Effort to Stack Alaska’s Midterm Ballot With Another Dan Sullivan",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo_4F3sqtyRcN_1tJr_AvFSOGxUkbELrk9wcbHhOpGeK8gnSvKyrVAzvDacJY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHq72Csc3pFgLBF2RlEV37sBq4mrg7zJkIdBAdGfe99d34c33Cf2bYRNA-i0"
+        }
+      ]
+    },
+    {
+      "query": "cbs news",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T00:40:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/trump-midterm-election-2026-interview/",
+        "https://www.reuters.com/legal/government/trump-white-house-maps-path-govern-without-congress-if-democrats-win-2026-11-01/",
+        "https://www.telegraph.co.uk/us/politics/2026/11/02/white-house-ready-battle-as-trump-facing-midterms-defeat/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHI9_dpD7R3J0gawj77byNXrIfWE4XdAeO8HRx8prSIdcKberyVmAWH2GHNO0",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/trump-midterm-election-2026-interview/",
+          "title": "Trump says he is prepared to use \"tremendous powers\" if Democrats take control",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHI9_dpD7R3J0gawj77byNXrIfWE4XdAeO8HRx8prSIdcKberyVmAWH2GHNO0"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/trump-white-house-maps-path-govern-without-congress-if-democrats-win-2026-11-01/",
+          "title": "Trump White House maps path to govern without Congress if Democrats win",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu-OIeTrasQ-53usE93mM2gVuL9xSU87b1r5br3hoC-7MxCIa1uNICjWkb_LY"
+        },
+        {
+          "url": "https://www.telegraph.co.uk/us/politics/2026/11/02/white-house-ready-battle-as-trump-facing-midterms-defeat/",
+          "title": "Nervous White House plans for life after midterms defeat",
+          "publisher": "The Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzqrFfBH50uk3ql5YiLvbRWYjl0DnWo4Gog8jBBv-u9QaTEDN1Z5bvYXo8W-k"
+        }
+      ]
+    },
+    {
+      "query": "chris christie",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T00:40:00Z",
+      "related_news_urls": [
+        "https://newjerseyglobe.com/governor/christie-racks-up-six-parking-tickets-in-less-than-a-year/",
+        "https://apnews.com/projects/elections-2026/ohio-governor-results/",
+        "https://fox8.com/news/acton-or-ramaswamy-latest-election-results/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU5BcP-o_ZCc4eqi1oxgtinH8eWbhGj9gVXlZe_AWhQ6j-6sT4J9cMxaLeaUc",
+      "image_credit": "New Jersey Globe",
+      "news": [
+        {
+          "url": "https://newjerseyglobe.com/governor/christie-racks-up-six-parking-tickets-in-less-than-a-year/",
+          "title": "Christie racks up six parking tickets in less than a year",
+          "publisher": "New Jersey Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU5BcP-o_ZCc4eqi1oxgtinH8eWbhGj9gVXlZe_AWhQ6j-6sT4J9cMxaLeaUc"
+        },
+        {
+          "url": "https://apnews.com/projects/elections-2026/ohio-governor-results/",
+          "title": "Ohio Governor Election Live Results 2026",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCYxnXrw1FlKHJNjO6ziZXC1tt6KHCrgqdjIRpGESrbfRW4tIK4mQbzyj_ZF8"
+        },
+        {
+          "url": "https://fox8.com/news/acton-or-ramaswamy-latest-election-results/",
+          "title": "Acton or Ramaswamy? Latest election results",
+          "publisher": "FOX 8 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREZJ4Q3TCGhCdmo179njJky_PB-CAKgfuKnzXlNl2KyAP_JCcX8HiJunUHkKk"
+        }
+      ]
+    },
+    {
+      "query": "nc board of elections",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T00:40:00Z",
+      "related_news_urls": [
+        "https://www.wral.com/news/nccapitol/nc-voting-election-polls-races-ballot-north-carolina-midterm-updates-results-november-2026/",
+        "https://www.wsj.com/livecoverage/midterm-election-results-2026-latest-updates/card/technical-issues-to-delay-some-n-c-pa-results-aQKrLLSrZLljo2qcaemw",
+        "https://www.wbtv.com/2026/11/03/north-carolina-election-officials-extend-voting-4-counties-what-we-know/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQFCyvShI_fe9g_5J5KfC1xkIbVkKMHvr_XYU_gXfGOp3ybDmBGB15kkiAgE0",
+      "image_credit": "WRAL",
+      "news": [
+        {
+          "url": "https://www.wral.com/news/nccapitol/nc-voting-election-polls-races-ballot-north-carolina-midterm-updates-results-november-2026/",
+          "title": "Election Day latest: Polling issues in 4 counties, results delayed",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQFCyvShI_fe9g_5J5KfC1xkIbVkKMHvr_XYU_gXfGOp3ybDmBGB15kkiAgE0"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/midterm-election-results-2026-latest-updates/card/technical-issues-to-delay-some-n-c-pa-results-aQKrLLSrZLljo2qcaemw",
+          "title": "Technical Issues to Delay Some N.C., Pa. Results",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRankEwwuWIkxrtEgGZJiMdheQbwEkx7spjblSJGMqC-ZaAtbNx6jnEN5Wf_KA"
+        },
+        {
+          "url": "https://www.wbtv.com/2026/11/03/north-carolina-election-officials-extend-voting-4-counties-what-we-know/",
+          "title": "North Carolina election officials extend voting in 4 counties: What we know",
+          "publisher": "WBTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGtRJUXLbxVQNpWiruSUa7Es7PPMD-9NREjIpxLrgRPorYcuhdIWRX5AgYnq4"
+        }
+      ]
+    },
+    {
+      "query": "desantis not running for governor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T00:40:00Z",
+      "related_news_urls": [
+        "https://floridapolitics.com/archives/828842-ron-desantis-says-democrats-are-tying-donald-trump-to-byron-donalds-and-its-juicing-turnout/",
+        "https://www.aljazeera.com/news/2026/11/3/how-florida-governor-ron-desantis-will-shape-his-states-2026-midterm-race",
+        "https://www.hernandosun.com/2026/11/02/defending-the-florida-dream-tour-stops-in-brooksville-ahead-of-election-day/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFMtgmHuRCaJBJP8_VphJ0Z4glKVpAxGS_uHQTO2t38c0kMWm1L6rRLft7bEA",
+      "image_credit": "Florida Politics",
+      "news": [
+        {
+          "url": "https://floridapolitics.com/archives/828842-ron-desantis-says-democrats-are-tying-donald-trump-to-byron-donalds-and-its-juicing-turnout/",
+          "title": "Ron DeSantis says Democrats are tying Donald Trump to Byron Donalds. And it's juicing turnout.",
+          "publisher": "Florida Politics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFMtgmHuRCaJBJP8_VphJ0Z4glKVpAxGS_uHQTO2t38c0kMWm1L6rRLft7bEA"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/3/how-florida-governor-ron-desantis-will-shape-his-states-2026-midterm-race",
+          "title": "How Florida Governor Ron DeSantis will shape his state’s 2026 midterm race",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCEQTD-8vLC28EO4_SnxB3WFRsviH2QyBqaSwx0daF58dw_rdi1ZPqBfX0tA"
+        },
+        {
+          "url": "https://www.hernandosun.com/2026/11/02/defending-the-florida-dream-tour-stops-in-brooksville-ahead-of-election-day/",
+          "title": "‘Defending the Florida Dream’ Tour Stops in Brooksville Ahead of Election Day",
+          "publisher": "Hernando Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrwZuR1hgs4YPxVidkGd-TyH5mtrCk-GdRUdXg9HjIP2JDOF8AVnr5UC9fsa0"
+        }
+      ]
+    },
+    {
+      "query": "new mexico governor race",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-mexico.html",
+        "https://www.koat.com/article/voter-turnout-rises-in-new-mexico-gubernatorial-elections/74320704",
+        "https://www.krqe.com/news/politics-government/elections/bernalillo-county-clerk-says-in-person-voting-is-up-this-year/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDVA9EhF3ulfpIjATJtvyRlsRkdN7RaYQ4T_m-o-6fThN10VHoQP-_5CJqS0Q",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-mexico.html",
+          "title": "New Mexico 2026: Live Midterm Election Results",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDVA9EhF3ulfpIjATJtvyRlsRkdN7RaYQ4T_m-o-6fThN10VHoQP-_5CJqS0Q"
+        },
+        {
+          "url": "https://www.koat.com/article/voter-turnout-rises-in-new-mexico-gubernatorial-elections/74320704",
+          "title": "Strong voter turnout in New Mexico for midterm election",
+          "publisher": "KOAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2pE1slDjWc6Jb_akPA6jYCB2wvLRCnsPmumrt5laGrVncwhN_8Ua5Y_Yw1pU"
+        },
+        {
+          "url": "https://www.krqe.com/news/politics-government/elections/bernalillo-county-clerk-says-in-person-voting-is-up-this-year/",
+          "title": "Bernalillo County Clerk says in-person voting is up this year",
+          "publisher": "KRQE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnzSm3oBZtPbtiMVntiRAkaSShclfrYUFktRtnHKmGas-_LBiIbBWIl4_qNWU"
+        }
+      ]
+    },
+    {
+      "query": "stacey abrams",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T00:40:00Z",
+      "related_news_urls": [
+        "https://www.ajc.com/politics/2026/11/stacey-abrams-uses-her-star-power-to-boost-democrats-in-georgia-and-beyond/",
+        "https://milwaukeecourier.com/news/2026/11/03/stacey-abrams-connects-black-leadership-to-americas-political-future",
+        "https://www.lawfaremedia.org/article/live-from-emory-law--stacey-abrams-joins-alex-bores---kevin-frazier"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5iNWa_6MkArU9hRPtmJ_DEsDyzqjpDRc3aokc5UE60Huc4VQcaSmNHy2W_Ps",
+      "image_credit": "The Atlanta Journal-Constitution",
+      "news": [
+        {
+          "url": "https://www.ajc.com/politics/2026/11/stacey-abrams-uses-her-star-power-to-boost-democrats-in-georgia-and-beyond/",
+          "title": "Stacey Abrams uses her star power to boost Democrats in Georgia and beyond.",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5iNWa_6MkArU9hRPtmJ_DEsDyzqjpDRc3aokc5UE60Huc4VQcaSmNHy2W_Ps"
+        },
+        {
+          "url": "https://milwaukeecourier.com/news/2026/11/03/stacey-abrams-connects-black-leadership-to-americas-political-future",
+          "title": "Stacey Abrams Connects Black Leadership to America's Political Future",
+          "publisher": "The Milwaukee Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKlDMkLDEHmSFXOR9agEtpQTHG8K3rdfyCVzeX9kZJx9uXgMkGfgxIt2lpb9Q"
+        },
+        {
+          "url": "https://www.lawfaremedia.org/article/live-from-emory-law--stacey-abrams-joins-alex-bores---kevin-frazier",
+          "title": "Live from Emory Law: Stacey Abrams joins Alex Bores & Kevin Frazier",
+          "publisher": "Lawfare",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBhQaZSust3ZqTk6oSOJGcVDsaGa0qoGPjyAFSwCrGdJXYrua1IvV6_IV6LVI"
+        }
+      ]
+    },
+    {
+      "query": "wdbj7",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
+        "https://www.cbsnews.com/atlanta/video/rain-chances-rising-across-georgia-as-week-continues/",
+        "https://weather.com/2026/11/03/forecast/national/election-day-maps-tracker"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB2txBGZBcEWESNNKNGy9Pe15c5IXp1c-W6wUyzyVYq_W28R2ZSEAnz8T0nN0",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
+          "title": "Floods and severe weather beset parts of the U.S. on Election Day",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB2txBGZBcEWESNNKNGy9Pe15c5IXp1c-W6wUyzyVYq_W28R2ZSEAnz8T0nN0"
+        },
+        {
+          "url": "https://www.cbsnews.com/atlanta/video/rain-chances-rising-across-georgia-as-week-continues/",
+          "title": "Rain chances rising across Georgia as week continues",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLNGTGCfp_LLctLPr47NfMZ924ItkJU4mzidEpYfMYzM-gY75y84PjLl3DQFM"
+        },
+        {
+          "url": "https://weather.com/2026/11/03/forecast/national/election-day-maps-tracker",
+          "title": "Election Day 2026 weather forecast: Nov. 3 maps and tracker",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-7lAs_marqVYNXqjxqmNXLN26KKsEmTjGtwcQpnwcUliRklncOquc6Z49rw"
+        }
+      ]
+    },
+    {
+      "query": "wesh 2 news",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T00:40:00Z",
+      "related_news_urls": [
+        "https://www.mercurynews.com/2026/11/03/bay-area-weather-light-rain-right-on-schedule/",
+        "https://www.wesh.com/article/lowering-rain-chances-this-weekend/74326951",
+        "https://www.wfxg.com/news/next-system-moves-in-mid-week-more-dry-air-with-mild-conditions-afterwards/article_613e4f14-d2fe-4b40-ba2e-3d9ccb8bf06d.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJ77JsgmWWhXvTMQhddLHA_1gm3Pg9dsjpM34zZzFxEOQTVXO7Ba2rgx-2CEY",
+      "image_credit": "The Mercury News",
+      "news": [
+        {
+          "url": "https://www.mercurynews.com/2026/11/03/bay-area-weather-light-rain-right-on-schedule/",
+          "title": "Next soaking for Bay Area will be from the sun",
+          "publisher": "The Mercury News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJ77JsgmWWhXvTMQhddLHA_1gm3Pg9dsjpM34zZzFxEOQTVXO7Ba2rgx-2CEY"
+        },
+        {
+          "url": "https://www.wesh.com/article/lowering-rain-chances-this-weekend/74326951",
+          "title": "Lowering rain chances should help jumpstart cleanup efforts through the weekend! 11.3.2026",
+          "publisher": "WESH",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbc98B7q6BrUZLhAu-CZ0PEh2fMjSBw6zRz9xCjYpJB7WY9IWPg9k5UONEHk"
+        },
+        {
+          "url": "https://www.wfxg.com/news/next-system-moves-in-mid-week-more-dry-air-with-mild-conditions-afterwards/article_613e4f14-d2fe-4b40-ba2e-3d9ccb8bf06d.html",
+          "title": "Next system moves in mid-week; more dry air with mild conditions afterwards",
+          "publisher": "WFXG",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgbPZOicMjqOa-oDKgACx5QxJE3hTiDklokZYtWhz7udzO_tDMpeEUr4ypv0s"
+        }
+      ]
+    },
+    {
+      "query": "raphael warnock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T00:40:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/news/magazine/2026/11/01/raphael-warnock-midterms-2028-south-democrats-01144066",
+        "https://www.cnn.com/2026/11/01/politics/video/warnock-2028-sotu",
+        "https://katu.com/news/nation-world/georgia-senator-says-2028-may-be-theoretical-if-democrats-lose-the-midterms?teaserSource=databricks"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-ZxZJ8SKlezbZX4KP71qXzMUFI51AFhKYPnbZZqw4a_uACFTyZsC_9Irocw",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/news/magazine/2026/11/01/raphael-warnock-midterms-2028-south-democrats-01144066",
+          "title": "Faith, the South and Jon Ossoff: Raphael Warnock on Democrats’ Next Chapter",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-ZxZJ8SKlezbZX4KP71qXzMUFI51AFhKYPnbZZqw4a_uACFTyZsC_9Irocw"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/01/politics/video/warnock-2028-sotu",
+          "title": "Senator Warnock says he'll be running for 'high office' in 2028 ... but doesn't specify which high office",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpozpATYk_42St4vkpo3l86_-43_iTTSmL1VewLtm7Fkyak_LKVYJHyyVW5k"
+        },
+        {
+          "url": "https://katu.com/news/nation-world/georgia-senator-says-2028-may-be-theoretical-if-democrats-lose-the-midterms?teaserSource=databricks",
+          "title": "Georgia senator says 2028 may be 'theoretical' if Democrats lose the midterms",
+          "publisher": "KATU",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDlLXW4DMW9NkqOoTOF_Y06eIErskuL13JOUwSKpXkUXqDGLq_a74OmlS48Mk"
         }
       ]
     }
