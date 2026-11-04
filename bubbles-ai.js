@@ -3460,6 +3460,7 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
     try{result=await githubReceipt(requestId);}catch{continue;}
     if(result.status==='working'||result.error==='receipt_not_found')continue;
     clearPendingGithubWork(requestId);
+    if(typeof publishDirectGithubIteration==='function')
     publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
@@ -3476,7 +3477,8 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
    }
    // Every bounded watcher terminates with a visible terminal *observation*.
    // This is a monitoring timeout, never a cancellation or a verified job end.
-   publishDirectGithubIteration(operation,requestId,'tool_receipt',{status:'unconfirmed'},receiptThread);
+   if(typeof publishDirectGithubIteration==='function')
+    publishDirectGithubIteration(operation,requestId,'tool_receipt',{status:'unconfirmed'},receiptThread);
    const report='GitHub has not returned a final receipt after repeated owner-authenticated checks. The request may still be running; no finished code, tests, merge or deployment can be verified. Check Work details before retrying a write.';
    recordBrainNotice(report);
    if(activeThread===receiptThread){
@@ -3492,12 +3494,13 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
 // Only real owner-authenticated direct GitHub READ calls may create these
 // in-chat iterations. A browser request ID is merely a correlation key;
 // neither an accepted request nor model narration is a verified tool receipt.
-function publishDirectGithubIteration(operation,requestId,phase,result=null,thread=activeThread){
+function publishDirectGithubIteration(operation,requestId,phase,result=null,thread=''){
+ const currentThread=typeof activeThread==='string'?activeThread:'';
  const actionTools={read_file:'github.read_file',read_repository:'github.read_repository',
   read_repo:'github.read_repo',search:'github.search',search_code:'github.search'};
  const tool=actionTools[operation?.action];
  if(!tool||!/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/.test(operation?.repository||'')||
-    !/^[a-f0-9-]{36}$/i.test(requestId||'')||thread!==activeThread||
+    !/^[a-f0-9-]{36}$/i.test(requestId||'')||!thread||thread!==currentThread||
     typeof CustomEvent!=='function')return;
  if(!['tool_started','tool_progress','tool_receipt'].includes(phase))return;
  const detail={type:phase,tool,operationId:requestId,resource:operation.repository,
@@ -3521,15 +3524,17 @@ function publishDirectGithubIteration(operation,requestId,phase,result=null,thre
 async function directGithubOperation(operation,{quiet=false,ownerRequest='',imageEvidence=''}={}){
  if(embedded)throw Error('owner_tools_unavailable_in_embed');
  const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
- const receiptThread=activeThread;
- publishDirectGithubIteration(operation,requestId,'tool_started',null,receiptThread);
+ const receiptThread=typeof activeThread==='string'?activeThread:'';
+ if(typeof publishDirectGithubIteration==='function')
+  publishDirectGithubIteration(operation,requestId,'tool_started',null,receiptThread);
  let result;
  try{
   const response=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
    body:JSON.stringify({...operation,requestId})},18000);
   result=await response.json();
   if(!response.ok){
-   publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
+   if(typeof publishDirectGithubIteration==='function')
+    publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
    return {...result,requestId};
   }
  }catch(error){
@@ -3537,11 +3542,13 @@ async function directGithubOperation(operation,{quiet=false,ownerRequest='',imag
   result={ok:true,status:'unconfirmed',requestId,error:'response_missing_or_timed_out',detail:String(error.message||error).slice(0,100)};
  }
  if(result.status==='working'||result.status==='unconfirmed'){
-  publishDirectGithubIteration(operation,requestId,'tool_progress',result,receiptThread);
+  if(typeof publishDirectGithubIteration==='function')
+    publishDirectGithubIteration(operation,requestId,'tool_progress',result,receiptThread);
   if(!quiet)watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'',imageEvidence);
   return {...result,requestId,next:'Checking the durable receipt using this request ID. Tests, merge and deployment remain unverified.'};
  }
- publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
+ if(typeof publishDirectGithubIteration==='function')
+    publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
  return {...result,requestId};
 }
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});
