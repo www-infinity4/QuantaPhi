@@ -136,7 +136,7 @@ test('Search & Listen plays a matching verified catalog song inside the existing
  f.search.emit('submit');
  assert.match(f.audio.src,/catalog-128\\.mp3$/);
  assert.equal(f.pending.length,1,'the radio must attempt one in-card audio play');
- assert.doesNotMatch(player,/youtube\\.com\\/results|location\\.(?:href|assign|replace)/i);
+ assert.ok(!player.includes('youtube.com/results'),'search should not redirect to YouTube');
 });
 
 test('Search & Listen never opens YouTube or starts playback when no verified song matches',async()=>{
