@@ -3,8 +3,8 @@ issue: 1674
 project: "Executor earnings attribution and Media Star engagement"
 source_requests:
   - "Owner message 2026-11-04: executor earnings in personal wallet, real Media Star card clicks"
-state: implementing
-dot: "🔴"
+state: review_pending
+dot: "🟡"
 progress_percent: unknown
 progress_basis: "Source files staged; exact-head CI, independent review, D1, deployment, live data and wallet settlement remain"
 sessions_spent: 1
@@ -17,10 +17,10 @@ fence: null
 last_observed_at_utc: "2026-11-04T22:41:45Z"
 repo: www-infinity4/QuantaPhi
 branch: feature/executor-media-star-receipts-1674
-head_sha: null
-pr: null
+head_sha: 4def2d2b86680c7bcf23ca591b1349659b54a9d8
+pr: https://github.com/www-infinity4/QuantaPhi/pull/1676
 tests:
-  - "node --test test/executor-insights.test.mjs (not yet run)"
+  - "PR #1676 focused GitHub Actions test workflow queued; result pending"
 ci: []
 merged: false
 deployed: false
