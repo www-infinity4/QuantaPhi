@@ -787,3 +787,31 @@ test('Continuity route preserves owner auth, origin guards and revoked-session d
  }
  assert.equal(writes,0);assert.ok(clockPaths.every(p=>p.endsWith('/owner/session-check')));
 });
+
+
+test('signed Bubbles continuation lists older ready work ahead of blocked backlog without widening owner scope',async()=>{
+ const queries=[],ownerHash='a'.repeat(64);
+ const rows=Array.from({length:101},(_,i)=>({
+  id:'IW-20261010-'+String(i+1).padStart(8,'0'),title:'Synthetic owner work',
+  repository:'www-infinity4/QuantaPhi',status:i<3?'ready':'blocked',
+  context_json:JSON.stringify({kind:'robot-directions',color_jobs:[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',status:'queued',instructions:'Restore saved owner work'}]}),
+  created_at:1791700000000,updated_at:1791700000000-i
+ }));
+ const db={prepare:sql=>({bind(...params){queries.push({sql,params});return this;},all:async()=>({results:rows})})};
+ const env={WORK_DB:db,WRITER_OWNER_HASH:ownerHash};
+ const r=await ownerTickets(env,'/work/tickets/list',{continuation:true});
+ assert.equal(r.status,200);
+ assert.equal(r.result.continuationScope,'owner_robot_directions');
+ assert.equal(r.result.truncated,true);
+ assert.equal(r.result.tickets.length,100);
+ assert.deepEqual(queries[0].params,[ownerHash]);
+ assert.match(queries[0].sql,/WHERE owner_hash=\?/);
+ assert.match(queries[0].sql,/json_extract\(context_json,'\$\.kind'\)='robot-directions'/);
+ assert.match(queries[0].sql,/CASE status WHEN 'ready' THEN 0 WHEN 'working' THEN 1 ELSE 2 END/);
+ assert.match(queries[0].sql,/LIMIT 101/);
+ const ordinary=await ownerTickets(env,'/work/tickets/list',{});
+ assert.equal(ordinary.result.continuationScope,undefined);
+ assert.doesNotMatch(queries[1].sql,/CASE status/);
+ assert.deepEqual(queries[1].params,[ownerHash]);
+ assert.equal(JSON.stringify(r).includes('Bearer'),false);
+});
