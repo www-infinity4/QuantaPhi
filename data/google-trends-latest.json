@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T12:32:27.091914Z",
+  "checked_at": "2026-11-04T13:01:28.924247Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "learner tien",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T12:10:00Z",
+      "query": "emma walmsley",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T12:40:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-carlos-alcaraz-round-of-32-match-nov-04-2026/",
-        "https://en.tennistemple.com/actu/rolex-paris-masters-rinderknech-advances-as/sbJS",
-        "https://www.bleachernation.com/picks/2026/11/01/rinderknech-vs-cerundolo-prediction-at-the-rolex-paris-masters-tuesday-november-3/"
+        "https://www.reuters.com/business/hp-names-emma-walmsley-ceo-2026-11-04/",
+        "https://www.bloomberg.com/news/articles/2026-11-04/hp-names-emma-walmsley-as-new-ceo-ending-monthlong-search",
+        "https://seekingalpha.com/news/4664628-hp-names-emma-walmsley-as-new-ceo"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXZgWwnRGEEOtZHky2Q_TMXow8vBDyJR6wNRdCtqKgFK5KINC2TQKkdJidyq0",
-      "image_credit": "Robinhood",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4B2R68zg60rQ73IxTvHXD4lLuNhxpBomvFo21owbywu3B1rhBGntegO-kY8c",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-carlos-alcaraz-round-of-32-match-nov-04-2026/",
-          "title": "November 4, 2026: Alex Michelsen vs Carlos Alcaraz Round of 32 match Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.reuters.com/business/hp-names-emma-walmsley-ceo-2026-11-04/",
+          "title": "HP names former GSK chief Emma Walmsley as CEO",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXZgWwnRGEEOtZHky2Q_TMXow8vBDyJR6wNRdCtqKgFK5KINC2TQKkdJidyq0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4B2R68zg60rQ73IxTvHXD4lLuNhxpBomvFo21owbywu3B1rhBGntegO-kY8c"
         },
         {
-          "url": "https://en.tennistemple.com/actu/rolex-paris-masters-rinderknech-advances-as/sbJS",
-          "title": "Rolex Paris Masters: Rinderknech advances as Cerundolo retires, Halys takes down Fery",
-          "publisher": "TennisTemple",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWPqtyQHAxzgvj4c__I3dO0CJpcVX_r1buUIuYT0Zu4hZ7k6C0NCov83sbH0U"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/01/rinderknech-vs-cerundolo-prediction-at-the-rolex-paris-masters-tuesday-november-3/",
-          "title": "Rinderknech vs. Cerundolo Prediction at the Rolex Paris Masters – Tuesday, November 3",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVtp20yqurEoQCpOIaW10SX2rXi0fKfNna0AXonattclXinTKtPw4cuZwX4oI"
-        }
-      ]
-    },
-    {
-      "query": "dupage county election results",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T12:00:00Z",
-      "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/03/2026-election-day-results-dupage-county-board-chair/",
-        "https://patch.com/illinois/burrridge/dupage-county-chair-election-results-2026-conroy-vs-grasso-live-updates",
-        "https://www.chicagotribune.com/2026/11/03/democrats-dupage-county-board-races-election-winners/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD2I8_NFL6Gmu4F9uUxVUl0q0UBPcq772miL6OS-V5cH-zIohjpui_MLBMtjQ",
-      "image_credit": "Chicago Tribune",
-      "news": [
-        {
-          "url": "https://www.chicagotribune.com/2026/11/03/2026-election-day-results-dupage-county-board-chair/",
-          "title": "2026 Election Day results: DuPage County Board chair",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD2I8_NFL6Gmu4F9uUxVUl0q0UBPcq772miL6OS-V5cH-zIohjpui_MLBMtjQ"
-        },
-        {
-          "url": "https://patch.com/illinois/burrridge/dupage-county-chair-election-results-2026-conroy-vs-grasso-live-updates",
-          "title": "DuPage County Chair Trouncing Republican Rival From Burr Ridge: Unofficial Results",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrmE1W2uRKbkDF3FK8xRlV3IFKrlfjoUmiAfyM5sxxJTJD2DARFs8E4IJi_bU"
-        },
-        {
-          "url": "https://www.chicagotribune.com/2026/11/03/democrats-dupage-county-board-races-election-winners/",
-          "title": "Democrats leading in DuPage County Board election races",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrYG_o9z9ZIq2Ufy3wwEIp4NVamnrGJ-1loBpF69ablI-CGj5gf4mSmiTgyx8"
-        }
-      ]
-    },
-    {
-      "query": "cvs stock",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-04T11:50:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/04/cvs-to-split-off-drugstore-business.html",
-        "https://www.wsj.com/health/healthcare/cvs-will-break-off-its-namesake-pharmacies-9c7dd05e",
-        "https://www.bloomberg.com/news/articles/2026-11-04/cvs-plans-to-break-up-117-billion-healthcare-conglomerate"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCkOnSm9HACnMDtH1Y1YGPCm0NMB7RfDgy3-jaJmjNLe4VUG3URt2EfmDwqfI",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/04/cvs-to-split-off-drugstore-business.html",
-          "title": "CVS to split off drugstore business in major breakup of healthcare giant",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCkOnSm9HACnMDtH1Y1YGPCm0NMB7RfDgy3-jaJmjNLe4VUG3URt2EfmDwqfI"
-        },
-        {
-          "url": "https://www.wsj.com/health/healthcare/cvs-will-break-off-its-namesake-pharmacies-9c7dd05e",
-          "title": "CVS Will Break Off Its Namesake Pharmacies",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXwIqmaKOt_l8PRXx9XPX_xiv4gIc3KaJ1UpqXhlO4rd6q4WCuUb_mKO7nKxY"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-04/cvs-plans-to-break-up-117-billion-healthcare-conglomerate",
-          "title": "CVS Plans to Break Up $117 Billion Healthcare Conglomerate",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-04/hp-names-emma-walmsley-as-new-ceo-ending-monthlong-search",
+          "title": "HP Names Emma Walmsley as New CEO, Ending Monthlong Search",
           "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRx9vIQE_bzFDZHWvzDaET3uAflv2u6b9l2kbpKgIRnMgKz3Y8MQKvLRq74eP4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsNIKy-dA8enC6QWo-8CJjfF78-tLjeWBXpWo4oYmMM79f93ebM60CpFdf_w4"
+        },
+        {
+          "url": "https://seekingalpha.com/news/4664628-hp-names-emma-walmsley-as-new-ceo",
+          "title": "HP names Emma Walmsley as new CEO (HPQ:NYSE)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh7aWaJpXj3JkBiCkMNLEK0uqrLNl7DjobatJheZMd1AgqEpoPNQXs1Iz54Yg"
         }
       ]
     },
     {
-      "query": "nick lalota",
+      "query": "today show",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T11:50:00Z",
+      "published_at": "2026-11-04T12:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-york-us-house-1.html",
-        "https://longisland.news12.com/2026/11/04/long-islands-republican-congressmen-hold-narrow-leads-with-results-closer-than-expected/5nbgQktiXBGTfOOScaZY23",
-        "https://suffolktimes.timesreview.com/2026/11/electionliveblog/"
+        "https://www.nytimes.com/2026/11/02/style/martha-stewart-homeless-halloween-costume-apology.html",
+        "https://pagesix.com/2026/11/02/society/infamous-dupont-twins-defend-former-boss-martha-stewart-over-homeless-halloween-costume/",
+        "https://ew.com/jimmy-kimmel-martha-stewart-halloween-costume-12222382"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC3EZlqMTkpl3Hz183ZW3Ic5LTKBJzixzYgxdXPfbt2hNx6JjsHM1lrP3p1Fw",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbfXj1toJ1TfEQkbfWWjL937cZeHHX8eKdXMIqdjl1JPlFcaOpy_TG1kOcCe0",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-york-us-house-1.html",
-          "title": "New York First Congressional District 2026: Live Election Results, LaLota vs. Gallant",
+          "url": "https://www.nytimes.com/2026/11/02/style/martha-stewart-homeless-halloween-costume-apology.html",
+          "title": "Martha Stewart Apologizes for Homeless Halloween Costume",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC3EZlqMTkpl3Hz183ZW3Ic5LTKBJzixzYgxdXPfbt2hNx6JjsHM1lrP3p1Fw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbfXj1toJ1TfEQkbfWWjL937cZeHHX8eKdXMIqdjl1JPlFcaOpy_TG1kOcCe0"
         },
         {
-          "url": "https://longisland.news12.com/2026/11/04/long-islands-republican-congressmen-hold-narrow-leads-with-results-closer-than-expected/5nbgQktiXBGTfOOScaZY23",
-          "title": "Long Islands Republican Congressmen Hold Narrow Leads With Results Closer Than Expected",
-          "publisher": "News12 | Long Island",
+          "url": "https://pagesix.com/2026/11/02/society/infamous-dupont-twins-defend-former-boss-martha-stewart-over-homeless-halloween-costume/",
+          "title": "Exclusive | Infamous Dupont twins defend former boss Martha Stewart amid homeless costume backlash",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX4BR3Lp74FM4TB87qmnMddcq0tmqLt5YBsXPkHZ-sausaNjVRJcdCnY08cwg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAfvw-gHcKe9hN0DTvF1IBicxFu-H85roUkYK_73uz9POV3JrqFTmrJTK--iM"
         },
         {
-          "url": "https://suffolktimes.timesreview.com/2026/11/electionliveblog/",
-          "title": "LIVEBLOG: Palumbo on brink of defeat, LaLota declares victory amid blue tsunami",
-          "publisher": "The Suffolk Times",
+          "url": "https://ew.com/jimmy-kimmel-martha-stewart-halloween-costume-12222382",
+          "title": "Jimmy Kimmel reacts to Martha Stewart’s controversial Halloween costume: ‘How does this happen?’",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhXb_cI_xuc4OEtKX0jfUMuRFgag7gU3HcCtvhJUIM_wuUYPC5re9XtwRmXBM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEUR5iI1PPYvcE6vZaUgfHFE-H2O1Cy2kKgHcurKvsd-dHOctJA240rdCvUQc"
         }
       ]
     },
     {
-      "query": "cobb county election results",
+      "query": "ralph macchio",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T11:50:00Z",
+      "published_at": "2026-11-04T12:40:00Z",
       "related_news_urls": [
-        "https://www.fox5atlanta.com/news/map-cobb-county-election-results-2026-nt-ap",
-        "https://www.news8000.com/news/politics/national-politics/republican-rich-mccormick-wins-reelection-to-u-s-house-in-georgias-7th-congressional-district/article_01c7def8-e43f-5cc3-af61-c4b6285521a1.html",
-        "https://www.tribuneledgernews.com/local_news/election/mccormick-reelected-to-represent-georgia-s-7th-district/article_dfdefb4d-e66b-4b6a-879d-cef5f82dd45c.html"
+        "https://www.guitarworld.com/artists/guitarists/crossroads-sequel-in-the-works",
+        "https://www.ultimate-guitar.com/news/general_music_news/crossroads-sequel-is-in-the-works-ralph-macchio-steve-vai--screenwriter-john-fusco-all-willing-to-reprise-their-roles-weve-got-a-plan",
+        "https://www.yahoo.com/entertainment/movies/articles/sequel-cult-guitar-movie-crossroads-155237703.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMrN0ZtURLImBzQGuloFEzf8AZSJz4DLl-HoQvw2_ZFFNhmudeOgfXFlYR34",
-      "image_credit": "FOX 5 Atlanta",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuuRLHPhAso2SGxcayKN9rcFk06JSJHzQHkZ006i52QjfXE1q7LThkEQRxQr4",
+      "image_credit": "Guitar World",
       "news": [
         {
-          "url": "https://www.fox5atlanta.com/news/map-cobb-county-election-results-2026-nt-ap",
-          "title": "MAP: Why Cobb County proved decisive in Georgia's high-stakes showdown",
-          "publisher": "FOX 5 Atlanta",
+          "url": "https://www.guitarworld.com/artists/guitarists/crossroads-sequel-in-the-works",
+          "title": "“Ralph Macchio and I have talked about it. We’ve got a plan”: A sequel to cult guitar movie Crossroads is in the works – and Steve Vai is up for reprising his role",
+          "publisher": "Guitar World",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMrN0ZtURLImBzQGuloFEzf8AZSJz4DLl-HoQvw2_ZFFNhmudeOgfXFlYR34"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuuRLHPhAso2SGxcayKN9rcFk06JSJHzQHkZ006i52QjfXE1q7LThkEQRxQr4"
         },
         {
-          "url": "https://www.news8000.com/news/politics/national-politics/republican-rich-mccormick-wins-reelection-to-u-s-house-in-georgias-7th-congressional-district/article_01c7def8-e43f-5cc3-af61-c4b6285521a1.html",
-          "title": "Republican Rich McCormick wins reelection to U.S. House in Georgia's 7th Congressional District",
-          "publisher": "news8000.com",
+          "url": "https://www.ultimate-guitar.com/news/general_music_news/crossroads-sequel-is-in-the-works-ralph-macchio-steve-vai--screenwriter-john-fusco-all-willing-to-reprise-their-roles-weve-got-a-plan",
+          "title": "'Crossroads' Sequel Is in the Works, Ralph Macchio, Steve Vai & Screenwriter John Fusco Confirm",
+          "publisher": "Ultimate Guitar",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUeEdrUctG-2qu2qJTVc0jRkSD6e7NMVbMVAJemI6lXMiTSW3qLsGdZK6YRcA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFWwhh_sbxz1bikKXL2ZmzIKCWPPXOBuODNxBb7_c0_bGcKxSXK67gWF1g--0"
         },
         {
-          "url": "https://www.tribuneledgernews.com/local_news/election/mccormick-reelected-to-represent-georgia-s-7th-district/article_dfdefb4d-e66b-4b6a-879d-cef5f82dd45c.html",
-          "title": "McCormick reelected to represent Georgia’s 7th District",
-          "publisher": "Cherokee Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkPZwK57F57vBUVZvz4i1HGYbTqCNQyUbgHPHYhSzgPMlom8lzxNzOcnxIp24"
-        }
-      ]
-    },
-    {
-      "query": "nj governor",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T11:50:00Z",
-      "related_news_urls": [
-        "https://unn.ua/en/news/russian-tankers-carrying-diesel-have-sharply-changed-course-and-are-no-longer-heading-to-the-united-states",
-        "https://www.nytimes.com/2026/11/02/nyregion/new-jersey-russian-fuel-sherrill-ports.html",
-        "https://www.bloomberg.com/news/articles/2026-11-03/nj-governor-warns-ports-against-russian-diesel-allowed-by-trump"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUIDmK1eSFw_T-dMRHSpaq9_vNgE_tG7_0c5k_9JKODisMlOBdt1hlP4fQ2Gc",
-      "image_credit": "Українські Національні Новини (УНН)",
-      "news": [
-        {
-          "url": "https://unn.ua/en/news/russian-tankers-carrying-diesel-have-sharply-changed-course-and-are-no-longer-heading-to-the-united-states",
-          "title": "Russian tankers carrying diesel have sharply changed course and are no longer heading to the United States",
-          "publisher": "Українські Національні Новини (УНН)",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUIDmK1eSFw_T-dMRHSpaq9_vNgE_tG7_0c5k_9JKODisMlOBdt1hlP4fQ2Gc"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/02/nyregion/new-jersey-russian-fuel-sherrill-ports.html",
-          "title": "Governor Warns New Jersey Ports to Turn Away Russian Fuel",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMBNCvRfogs1oh0Ia5D3ouOmNlCf5u9Tz3keZI93Ib1jQf9A0HBmlzbNJhnfM"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-03/nj-governor-warns-ports-against-russian-diesel-allowed-by-trump",
-          "title": "NJ Governor Warns Ports Against Russian Diesel Allowed by Trump",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZBy0TWJTv0KQREkWvRN_FA7lBrzQdwgyWtf2_At5sTuFzsNXB2j_BdmgsWzM"
-        }
-      ]
-    },
-    {
-      "query": "uber stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T11:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/article/uber-q3-earnings-preview-gross-bookings-user-growth-key-for-investors-as-robotaxi-spending-ramps-up-171553701.html",
-        "https://www.bloomberg.com/news/articles/2026-11-04/uber-s-ride-hail-bookings-trips-miss-on-overseas-driver-crunch",
-        "https://www.barchart.com/story/news/8630298/dear-uber-stock-fans-mark-your-calendars-for-november-4"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZshjbJ7V81xn0_42tNweHYoq92GfL6Q875QhiNVhpGHqsukuVY4aTvO5i68",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/article/uber-q3-earnings-preview-gross-bookings-user-growth-key-for-investors-as-robotaxi-spending-ramps-up-171553701.html",
-          "title": "Uber Q3 earnings preview: Gross bookings, user growth key for investors as robotaxi spending ramps up",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZshjbJ7V81xn0_42tNweHYoq92GfL6Q875QhiNVhpGHqsukuVY4aTvO5i68"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-04/uber-s-ride-hail-bookings-trips-miss-on-overseas-driver-crunch",
-          "title": "Uber’s Ride-Hail Bookings, Trips Miss on Overseas Driver Crunch",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYRROD-MiFD7hH4MQhL7sa6NxACTZT7TYqqG93PEkZf0N-LkZ7FurI6TxD8hI"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8630298/dear-uber-stock-fans-mark-your-calendars-for-november-4",
-          "title": "Dear Uber Stock Fans, Mark Your Calendars for November 4",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBiSySymoBGV2i2XqnCr1ZOKtBsxeDbar3UHsyfrhJ4XdIjUNvyFPF-at3L20"
-        }
-      ]
-    },
-    {
-      "query": "clima de hoy",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T11:40:00Z",
-      "related_news_urls": [
-        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-chicago-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/",
-        "https://eldiariony.com/2026/11/02/pronostico-del-tiempo-en-chicago-para-este-lunes-2-de-noviembre/",
-        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-aurora-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic",
-      "image_credit": "La Nación",
-      "news": [
-        {
-          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-chicago-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/",
-          "title": "Clima en Chicago, Illinois hoy: cuál es el pronóstico del tiempo para hoy 4 de noviembre",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
-        },
-        {
-          "url": "https://eldiariony.com/2026/11/02/pronostico-del-tiempo-en-chicago-para-este-lunes-2-de-noviembre/",
-          "title": "Pronóstico del tiempo en Chicago para este lunes 2 de noviembre",
-          "publisher": "El Diario NY",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4hDvds0eeIHGVYgWoBLo9uoS1v6OnyAGnKmbTf6kctxiNS7-BpJAGs8v29EI"
-        },
-        {
-          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-aurora-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/",
-          "title": "Clima en Aurora, Illinois hoy: cuál es el pronóstico del tiempo para hoy 4 de noviembre",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
-        }
-      ]
-    },
-    {
-      "query": "luke murray",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T11:40:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/02/sports/luke-murray-bc-mens-basketball/",
-        "https://www.bcinterruption.com/boston-college-mens-basketball/52719/boston-college-mens-basketball-roundtable-a-new-era-dawns",
-        "https://bceagles.com/news/2026/11/2/mens-basketball-hosts-wagner-in-2026-27-season-opener"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8U_A0mpPfFpsDYVnZ6hEwQrso-XqpSizmMJEfjMej4WHGnetnZuk-NXMTBmI",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/02/sports/luke-murray-bc-mens-basketball/",
-          "title": "Boston College men’s basketball building around Luke Murray’s offense, and more to know as Eagles tip off",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8U_A0mpPfFpsDYVnZ6hEwQrso-XqpSizmMJEfjMej4WHGnetnZuk-NXMTBmI"
-        },
-        {
-          "url": "https://www.bcinterruption.com/boston-college-mens-basketball/52719/boston-college-mens-basketball-roundtable-a-new-era-dawns",
-          "title": "Boston College Men’s Basketball Roundtable: A New Era Dawns",
-          "publisher": "BC Interruption",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS74ATzGHUGGKIqh1I53uVvK58QE9LgTna8RPzwJum-OH5Zm7tWpq2WnfhSOrs"
-        },
-        {
-          "url": "https://bceagles.com/news/2026/11/2/mens-basketball-hosts-wagner-in-2026-27-season-opener",
-          "title": "Men's Basketball Hosts Wagner in 2026-27 Season Opener",
-          "publisher": "Boston College Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJPxr7GZFZ9wNbBcQ5M_RiHr69DeyP0lGJDgTK6FMkCZwEiTSXluKdcGHc5g"
-        }
-      ]
-    },
-    {
-      "query": "when does the new congress get sworn in",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T11:40:00Z",
-      "related_news_urls": [
-        "https://www.ms.now/news/republicans-sights-last-reconciliation-bill",
-        "https://www.yahoo.com/news/politics/articles/congress-faces-long-lame-duck-101517134.html",
-        "https://thehill.com/homenews/house/6185340-gop-lame-duck-congress-2026-midterms-trump-agenda/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoMzOUSnLbncnHzMaVNY_BoSUIE5O0WRrdod0zyrutF1KefR2M3_mSRV63DtE",
-      "image_credit": "MS NOW",
-      "news": [
-        {
-          "url": "https://www.ms.now/news/republicans-sights-last-reconciliation-bill",
-          "title": "Republicans set their sights on one last reconciliation bill before Democrats take over",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoMzOUSnLbncnHzMaVNY_BoSUIE5O0WRrdod0zyrutF1KefR2M3_mSRV63DtE"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/congress-faces-long-lame-duck-101517134.html",
-          "title": "Congress faces long lame-duck to-do list",
+          "url": "https://www.yahoo.com/entertainment/movies/articles/sequel-cult-guitar-movie-crossroads-155237703.html",
+          "title": "A sequel to cult guitar movie Crossroads is in the works – and Steve Vai is up for reprising his role",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRurRyKszZg_VhFZdLLvG7g_EAoRmY7PK53qXOs4iMvg8HlIw4bojlHmxJ7fno"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9KzyWk4rvvJyVQB9gTGlDJgkmGNDMeU7sX7LgzJYRoGq8gCjXdea-DddPBpE"
+        }
+      ]
+    },
+    {
+      "query": "red cup day 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T12:40:00Z",
+      "related_news_urls": [
+        "https://about.starbucks.com/press/2026/mark-your-calendars-starbucks-bearista-glass-cold-cups-are-returning-with-a-twist/",
+        "https://www.tasteofhome.com/article/starbucks-bearista-cup-2026/",
+        "https://www.newsnationnow.com/entertainment-news/food/starbucks-2026-holiday-drinks-bearista-redcupday/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQED_5v9b9GR75qB17I4q8AKn3XW5MZhj89KMqGQJ1V5lUteamEUOxfUTQHk4A",
+      "image_credit": "Starbucks",
+      "news": [
+        {
+          "url": "https://about.starbucks.com/press/2026/mark-your-calendars-starbucks-bearista-glass-cold-cups-are-returning-with-a-twist/",
+          "title": "Mark your calendars: Starbucks Bearista™ Glass Cold Cups are returning with a twist",
+          "publisher": "Starbucks",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQED_5v9b9GR75qB17I4q8AKn3XW5MZhj89KMqGQJ1V5lUteamEUOxfUTQHk4A"
         },
         {
-          "url": "https://thehill.com/homenews/house/6185340-gop-lame-duck-congress-2026-midterms-trump-agenda/",
-          "title": "GOP plan for lame-duck sprint runs into votes, rules and the calendar",
-          "publisher": "The Hill",
+          "url": "https://www.tasteofhome.com/article/starbucks-bearista-cup-2026/",
+          "title": "The Starbucks Bearista Cup Is Coming Back—with an Early Surprise Edition",
+          "publisher": "Taste of Home",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjE8YXj-ptFufhGjJykkLAOqZYQZWtX9LMsWFleY8IXEoEj39okEDXtTJtayI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUH3GY6rB9dgoL9eR2l18Up8m_qMdnrS2J-sQgrNw8P-DzWk4vaQwJ6FdNa1o"
+        },
+        {
+          "url": "https://www.newsnationnow.com/entertainment-news/food/starbucks-2026-holiday-drinks-bearista-redcupday/",
+          "title": "Starbucks holiday drinks start Nov. 5; Red Cup Day announced",
+          "publisher": "NewsNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMu718tlWuLQwwk4xB8QI02VzrkZpKNNKRAvCUIjQ9tDWNZ2y_Ou_coWpzpZc"
+        }
+      ]
+    },
+    {
+      "query": "christmas forecast",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T12:30:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/lifestyle/old-farmers-almanac-white-christmas-16-states-2026",
+        "https://weather.com/2026/11/04/holiday/christmas/white-christmas-super-el-nino-odds",
+        "https://www.yahoo.com/news/weather-news/articles/dreaming-white-christmas-old-farmers-175049558.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjKSTQiAjqcvpCjmVNcCCGNbR_Y13dvmfJ7-2hKAMaNe1huOFbBc28t0NKBAg",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/lifestyle/old-farmers-almanac-white-christmas-16-states-2026",
+          "title": "Dreaming of a White Christmas? Old Farmer's Almanac predicts 16 states could have a wintry holiday",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjKSTQiAjqcvpCjmVNcCCGNbR_Y13dvmfJ7-2hKAMaNe1huOFbBc28t0NKBAg"
+        },
+        {
+          "url": "https://weather.com/2026/11/04/holiday/christmas/white-christmas-super-el-nino-odds",
+          "title": "Will super El Niño melt your white Christmas this year?",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyEhnSUmR9fzlO93EaWVmoo0lpMvGcy3Sx_e2kCqxBhyVW70IcWCqtkZLSZXA"
+        },
+        {
+          "url": "https://www.yahoo.com/news/weather-news/articles/dreaming-white-christmas-old-farmers-175049558.html",
+          "title": "Dreaming of a white Christmas? Old Farmer's Almanac releases forecast",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZaVmPxhz6p6EP7cRuxiB5lSBH48_GTdBMczUqlPHBBrais5C4-YOaEM2C53U"
+        }
+      ]
+    },
+    {
+      "query": "outback steakhouse",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T12:30:00Z",
+      "related_news_urls": [
+        "https://www.foxbusiness.com/lifestyle/outback-steakhouse-franchisee-files-bankruptcy",
+        "https://www.latimes.com/business/story/2026-11-04/outback-franchisee-files-for-bankruptcy-citing-california-labor-costs",
+        "https://finance.yahoo.com/small-business/articles/outback-steakhouse-restaurant-franchisee-files-165324293.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8tYzyc9EIPzA5G07co_Lx6FpXngiaVCfUop1t-20FJ2-FRVbrWacKIceGJpc",
+      "image_credit": "Fox Business",
+      "news": [
+        {
+          "url": "https://www.foxbusiness.com/lifestyle/outback-steakhouse-franchisee-files-bankruptcy",
+          "title": "Outback Steakhouse franchisee files for bankruptcy",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8tYzyc9EIPzA5G07co_Lx6FpXngiaVCfUop1t-20FJ2-FRVbrWacKIceGJpc"
+        },
+        {
+          "url": "https://www.latimes.com/business/story/2026-11-04/outback-franchisee-files-for-bankruptcy-citing-california-labor-costs",
+          "title": "SoCal Outback Steakhouse franchisee files for bankruptcy, citing California’s labor costs",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHh9YbNYOTqURFFhn34pXz2rkiyNAbhAQccQbi0KvA-GIeo-5xEEPk8_skY1w"
+        },
+        {
+          "url": "https://finance.yahoo.com/small-business/articles/outback-steakhouse-restaurant-franchisee-files-165324293.html",
+          "title": "Outback Steakhouse restaurant franchisee files for Chapter 11 bankruptcy",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM-9pD0o1m1plo4xUkVR6AzdpDFxFFwP0trmi3SS1iGE6j0KYubc8qUxS4FE8"
+        }
+      ]
+    },
+    {
+      "query": "is lamar jackson out for the season",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T12:30:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/nfl-week-8-sunday-aftermath-ravens-cowboys-vikings",
+        "https://www.cbssports.com/nfl/news/could-tyson-bagent-save-ravens-playoff-hopes-lamar-jackson-injury/",
+        "https://sports.yahoo.com/nfl/article/the-nfl-has-a-quarterback-problem-the-ravens-just-became-exhibit-a-160758215.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyhkR-87w4T8X6opxRwAZHyQAHlJ1lyA6PCrwriGAdCSWkK9j_23XOUBwb79Y",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/nfl-week-8-sunday-aftermath-ravens-cowboys-vikings",
+          "title": "NFL Week 8 Sunday aftermath: Ravens' season on the brink; can Vikings trust Kyler Murray?",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyhkR-87w4T8X6opxRwAZHyQAHlJ1lyA6PCrwriGAdCSWkK9j_23XOUBwb79Y"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/could-tyson-bagent-save-ravens-playoff-hopes-lamar-jackson-injury/",
+          "title": "Could Tyson Bagent save Ravens' playoff hopes? Lamar Jackson injury raises a costly trade question",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2bNndBMROy7ruo4Fxh-d7H0bgVaVHkKgSaQHInIHrJJwy-SVW4_9U9C-mq6o"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/article/the-nfl-has-a-quarterback-problem-the-ravens-just-became-exhibit-a-160758215.html",
+          "title": "The NFL has a quarterback problem. The Ravens just became Exhibit A",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX64ik-ISESZIHi1F-8V2z1cBzpuurp0RIXx_x3sRZs-I-BZOEWooEkwKyxqc"
+        }
+      ]
+    },
+    {
+      "query": "samuel alito",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T12:30:00Z",
+      "related_news_urls": [
+        "https://nymag.com/intelligencer/article/samuel-alito-retirement-senate-democrats.html",
+        "https://www.scotusblog.com/2026/10/the-supreme-court-and-prediction-markets/",
+        "https://msmagazine.com/2026/10/29/senate-republicans-supreme-court-vacancy-lame-duck-alito-thomas-trump/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQQ8qrzeN7CGGAja4UMUuyf03TPqg-fuR1r35BZRyp_o54WbkCuF7RCCnD6FQ",
+      "image_credit": "New York Magazine",
+      "news": [
+        {
+          "url": "https://nymag.com/intelligencer/article/samuel-alito-retirement-senate-democrats.html",
+          "title": "Alito’s Refusal to Retire May Haunt Republicans",
+          "publisher": "New York Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQQ8qrzeN7CGGAja4UMUuyf03TPqg-fuR1r35BZRyp_o54WbkCuF7RCCnD6FQ"
+        },
+        {
+          "url": "https://www.scotusblog.com/2026/10/the-supreme-court-and-prediction-markets/",
+          "title": "The Supreme Court and prediction markets",
+          "publisher": "SCOTUSblog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5vNeE9Wm9vnb3JI5yzcIOnYjCMi5nx395z5chm8eWVCBhULWPRifA9X3wsbA"
+        },
+        {
+          "url": "https://msmagazine.com/2026/10/29/senate-republicans-supreme-court-vacancy-lame-duck-alito-thomas-trump/",
+          "title": "A Lame-Duck Supreme Court Showdown Could Be Coming",
+          "publisher": "Ms. Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXF8JdTmQzHYH9Ho08NzxOgvfEUmnd_iQQoxx1VHPURg50M3UFEWgrBYZ5lTs"
+        }
+      ]
+    },
+    {
+      "query": "big beautiful bill",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T12:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/politics/articles/trumps-big-accomplishment-ugly-everyone-090114867.html",
+        "https://www.foxnews.com/video/6407619690112",
+        "https://www.washingtonexaminer.com/daily-memo/4786062/has-no-tax-tips-overtime-social-security-helped-gop/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLVSimYpwtpVXzSMypjN7vu3cUMjeZi6Km38KRghWfh6sHaXKwSkQrl40GMIk",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/trumps-big-accomplishment-ugly-everyone-090114867.html",
+          "title": "Trump's big 'accomplishment' is ugly for everyone but the rich | Opinion",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLVSimYpwtpVXzSMypjN7vu3cUMjeZi6Km38KRghWfh6sHaXKwSkQrl40GMIk"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6407619690112",
+          "title": "President Donald Trump touts no tax on tips and Social Security",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnG-rGYjuquupjoA3TUTChhVKg91A_AzGgSmnPEBsBd_lr2HPuLEBeamauLs"
+        },
+        {
+          "url": "https://www.washingtonexaminer.com/daily-memo/4786062/has-no-tax-tips-overtime-social-security-helped-gop/",
+          "title": "Has no tax on tips/overtime/Social Security helped the GOP?",
+          "publisher": "Washington Examiner",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhuNmAIe_f7yK6T7vWg5psg6ogPoOFJRmtAGgnOVl4wwlu83FiuVDNJvPS7ZM"
+        }
+      ]
+    },
+    {
+      "query": "dupage county election results 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T12:30:00Z",
+      "related_news_urls": [
+        "https://www.chicagotribune.com/2026/11/03/2026-illinois-election-day-results-6th-congressional-district/",
+        "https://southwestregionalpublishing.com/2026/11/04/casten-defeats-conforti-in-6th-congressional-district-again/",
+        "https://www.clintonherald.com/news/national_news/democrat-sean-casten-wins-reelection-to-u-s-house-in-illinois-6th-congressional-district/article_921576ea-9596-5238-a878-dcea29f566a4.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf6W_nO69UMJVcrlS4W09TkkQw--3jPCytGq9PhuIbiMWUQSnG6HRFaCY9NsU",
+      "image_credit": "Chicago Tribune",
+      "news": [
+        {
+          "url": "https://www.chicagotribune.com/2026/11/03/2026-illinois-election-day-results-6th-congressional-district/",
+          "title": "2026 Illinois Election Day results: 6th Congressional District",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf6W_nO69UMJVcrlS4W09TkkQw--3jPCytGq9PhuIbiMWUQSnG6HRFaCY9NsU"
+        },
+        {
+          "url": "https://southwestregionalpublishing.com/2026/11/04/casten-defeats-conforti-in-6th-congressional-district-again/",
+          "title": "Casten defeats Conforti in 6th Congressional District — again",
+          "publisher": "Southwest Regional Publishing",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4F1dkRhsmgrZaFtQUKDNPnbpQimLJsw8s6sD2sOw45cuZIKyTN4SOUwBSMpc"
+        },
+        {
+          "url": "https://www.clintonherald.com/news/national_news/democrat-sean-casten-wins-reelection-to-u-s-house-in-illinois-6th-congressional-district/article_921576ea-9596-5238-a878-dcea29f566a4.html",
+          "title": "Democrat Sean Casten wins reelection to U.S. House in Illinois' 6th Congressional District",
+          "publisher": "Clinton Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRsLhFoHG1N9u40lS7u-llBSDCXtqyCxl7Q3sPWwSIv5zDh_y3EOuVm2-9cgE"
         }
       ]
     }
