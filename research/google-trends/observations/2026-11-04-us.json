@@ -3,145 +3,188 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T04:31:29.999414Z",
+  "checked_at": "2026-11-04T05:01:42.151816Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "king county elections",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T04:10:00Z",
+      "query": "alex pretti",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-04T04:40:00Z",
       "related_news_urls": [
-        "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-king-county/281-81e4d50f-2304-48e5-8da1-fbc18bc24d2d",
-        "https://westseattleblog.com/2026/11/happening-now-election-night-scenes-in-west-seattle/",
-        "https://www.cascadepbs.org/all/2026/11/washington-election-tracker/"
+        "https://www.theguardian.com/us-news/2026/nov/03/minneapolis-i-voted-stickers-alex-pretti-memorial",
+        "https://www.houstonchronicle.com/politics/article/latino-voters-ice-outrage-midterms-22509811.php",
+        "https://www.axios.com/2026/11/03/i-voted-stickers-ice-memorials"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc91H4LIBZ5ij_6JJeYnK7-w2N88Vvr5lz1NKDALqpU-PnyPTxCaDudf_k4SM",
-      "image_credit": "KING5.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxbydXhZR-P_lb6P3HfiShazyo69fjHMd_ae6aXyGI1f3poq4Vpksz0PRawOs",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-king-county/281-81e4d50f-2304-48e5-8da1-fbc18bc24d2d",
-          "title": "2026 general election results for King County",
-          "publisher": "KING5.com",
+          "url": "https://www.theguardian.com/us-news/2026/nov/03/minneapolis-i-voted-stickers-alex-pretti-memorial",
+          "title": "Minnesotans leave ‘I Voted’ stickers at Alex Pretti and Renee Good memorials as ‘democracy guardians’ watch polls",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc91H4LIBZ5ij_6JJeYnK7-w2N88Vvr5lz1NKDALqpU-PnyPTxCaDudf_k4SM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxbydXhZR-P_lb6P3HfiShazyo69fjHMd_ae6aXyGI1f3poq4Vpksz0PRawOs"
         },
         {
-          "url": "https://westseattleblog.com/2026/11/happening-now-election-night-scenes-in-west-seattle/",
-          "title": "HAPPENING NOW: Election Night scenes in West Seattle",
-          "publisher": "West Seattle Blog...",
+          "url": "https://www.houstonchronicle.com/politics/article/latino-voters-ice-outrage-midterms-22509811.php",
+          "title": "Houston Latino voters take ICE outrage to the polls on Election Day",
+          "publisher": "Houston Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5qIYFc2WzSmNtdF5wCTQTg-B_Zoyi0KXtc0oxZIuq8eW70b-ZcY5kU9ufltI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHoZD3aDngVfB1naB3anmD6ot1AWAirR5806lPPi6SM3qc1Ziy_XiUI71BRZk"
         },
         {
-          "url": "https://www.cascadepbs.org/all/2026/11/washington-election-tracker/",
-          "title": "Washington Election Tracker",
-          "publisher": "Cascade PBS",
+          "url": "https://www.axios.com/2026/11/03/i-voted-stickers-ice-memorials",
+          "title": "\"I Voted\" stickers become tributes at ICE memorials",
+          "publisher": "Axios",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCZJtXXZwioX2M1DRjZvP2Kdr3gNj5dJTTx0vGgwwb1If2ur6eXHN-wH3i170"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKlJol_q4foyuNF5QzX-X4fPHlPRTITpDa4oHy0y7j89MOO07i3hSIQEcbprM"
         }
       ]
     },
     {
-      "query": "mai vang",
+      "query": "mileage tax california",
       "approx_searches": "500+",
-      "published_at": "2026-11-04T04:10:00Z",
+      "published_at": "2026-11-04T04:40:00Z",
       "related_news_urls": [
-        "https://fox40.com/2026-election-2/california-congressional-district-7-doris-matsui-mai-vang/",
-        "https://www.cbsnews.com/sacramento/news/california-attorney-general-rob-bonta-michael-gates/"
+        "https://www.kcra.com/article/xavier-becerra-california-wealth-tax-plans/74277677",
+        "https://www.yahoo.com/news/videos/california-drivers-furious-over-xavier-192900675.html",
+        "https://www.foxla.com/news/california-governor-candidates-debate-mileage-tax-fund-road-repairs"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI04h5hG-iAn5hEmOoTfGj5qtGd1mm_DnABJ7a04ypvYuXHMUyZk75z9PKMSI",
-      "image_credit": "FOX40",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMSe4OIABY6pB_ovNBR2oAOgRWYoRhORwVSwKd2ZvGQ5e8kQ6jRpJ2g46J2I",
+      "image_credit": "KCRA",
       "news": [
         {
-          "url": "https://fox40.com/2026-election-2/california-congressional-district-7-doris-matsui-mai-vang/",
-          "title": "California’s 7th Congressional District: Campaign pits longtime incumbent against progressive councilmember",
-          "publisher": "FOX40",
+          "url": "https://www.kcra.com/article/xavier-becerra-california-wealth-tax-plans/74277677",
+          "title": "Xavier Becerra talks new wealth tax, High-Speed Rail changes and other plans for California",
+          "publisher": "KCRA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI04h5hG-iAn5hEmOoTfGj5qtGd1mm_DnABJ7a04ypvYuXHMUyZk75z9PKMSI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMSe4OIABY6pB_ovNBR2oAOgRWYoRhORwVSwKd2ZvGQ5e8kQ6jRpJ2g46J2I"
         },
         {
-          "url": "https://www.cbsnews.com/sacramento/news/california-attorney-general-rob-bonta-michael-gates/",
-          "title": "California attorney general race pits Rob Bonta against Michael Gates",
-          "publisher": "CBS News",
+          "url": "https://www.yahoo.com/news/videos/california-drivers-furious-over-xavier-192900675.html",
+          "title": "California drivers furious over Xavier Becerra’s mileage tax pitch",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQm-xFlpTkQ9bGbZMNTmvVY7wZ6SG8W7GRxKTvDWhzoWqdADxj6YphVRwFjATk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfJZSKfVkwToVsOqRRD2ELY02g2LXWhoSDVgi5br8C6Eu1NTZ8os92qZKSO8g"
+        },
+        {
+          "url": "https://www.foxla.com/news/california-governor-candidates-debate-mileage-tax-fund-road-repairs",
+          "title": "Debate over mileage tax surfaces in California governor's race",
+          "publisher": "FOX 11 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DPBbdF6RCbtYXkeevJ-eLGxBSfZ9APKwu62ZByvKcR4Kw_JWAKQeDmoizag"
         }
       ]
     },
     {
-      "query": "gavin newsom not running for governor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T04:10:00Z",
+      "query": "elon musk net worth",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T04:40:00Z",
       "related_news_urls": [
-        "https://www.washingtonpost.com/politics/2026/11/03/gavin-newsom-is-almost-out-office-will-he-empty-californias-death-row-first/",
-        "https://www.sacbee.com/news/politics-government/capitol-alert/article317856717.html",
-        "https://www.foxnews.com/video/6407560906112"
+        "https://finance.yahoo.com/markets/stocks/articles/heres-spacex-stock-worth-2027-213800101.html",
+        "https://seekingalpha.com/article/4961027-spacex-just-changed-what-investors-are-really-buying",
+        "https://www.latintimes.com/epa-xai-unpermitted-methane-turbines-memphis-colossus-600811"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFHUnnrSungr-_YQT1vix1824cmo2HFPd8TsbCvRrHIIYxANGeUkcuB1VnGas",
-      "image_credit": "The Washington Post",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9b34ZMV4VZ1D35rCEVpIYcUkPBQaE2n_6UlWxpFhD5UxWV8hy_4VXlgMQEeU",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.washingtonpost.com/politics/2026/11/03/gavin-newsom-is-almost-out-office-will-he-empty-californias-death-row-first/",
-          "title": "Gavin Newsom is almost out of office. Will he empty California’s death row first?",
-          "publisher": "The Washington Post",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-spacex-stock-worth-2027-213800101.html",
+          "title": "Here's What SpaceX Stock Will Be Worth by 2027 if Elon Musk's $1 Trillion Revenue Call Is Correct",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFHUnnrSungr-_YQT1vix1824cmo2HFPd8TsbCvRrHIIYxANGeUkcuB1VnGas"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9b34ZMV4VZ1D35rCEVpIYcUkPBQaE2n_6UlWxpFhD5UxWV8hy_4VXlgMQEeU"
         },
         {
-          "url": "https://www.sacbee.com/news/politics-government/capitol-alert/article317856717.html",
-          "title": "Death row adviser asks Gov. Gavin Newsom to spare prisoners. ‘A moral moment’",
-          "publisher": "Sacramento Bee",
+          "url": "https://seekingalpha.com/article/4961027-spacex-just-changed-what-investors-are-really-buying",
+          "title": "SpaceX Just Changed What Investors Are Really Buying (NASDAQ:SPCX)",
+          "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuMpq2_hWuNh7LzZ_2K-Oy_l_OdXHm0SGbzTEdtZX32Ti6UvTnYuMwWkZcmrk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnuZgE7E2hrzPV8Af3BTKt1CNp3tIPI7T26PSlL5t3xzGlTJC5HECY9TbCbo"
         },
         {
-          "url": "https://www.foxnews.com/video/6407560906112",
-          "title": "Father of Polly Klaas criticizes Gavin Newsom over potential mass death row commutations",
+          "url": "https://www.latintimes.com/epa-xai-unpermitted-methane-turbines-memphis-colossus-600811",
+          "title": "xAI's Memphis AI data centers face EPA action and a Clean Air Act lawsuit over dozens of methane turbines",
+          "publisher": "Latin Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8T0o0JtYLlphmVken_nSiXlsW2qN0SNJzW-fPgW0Z3j3aWdAAPk2W6e7NtFs"
+        }
+      ]
+    },
+    {
+      "query": "steven miller",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T04:40:00Z",
+      "related_news_urls": [
+        "https://sonomasun.com/2026/11/03/david-bolling-why-i-killed-stephen-miller/",
+        "https://edition.cnn.com/2026/11/02/politics/jason-turkish-haley-stevens-michigan-senate-mike-rogers-abdul-el-sayed",
+        "https://www.foxnews.com/video/6407877381112"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp5jUV6LUe5aQyydgHP2nl4yMjHVFq8cek4kxJUgKHCupWkYsnODexPu5avFg",
+      "image_credit": "Sonoma Valley Sun",
+      "news": [
+        {
+          "url": "https://sonomasun.com/2026/11/03/david-bolling-why-i-killed-stephen-miller/",
+          "title": "David Bolling: Why I Killed Stephen Miller",
+          "publisher": "Sonoma Valley Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp5jUV6LUe5aQyydgHP2nl4yMjHVFq8cek4kxJUgKHCupWkYsnODexPu5avFg"
+        },
+        {
+          "url": "https://edition.cnn.com/2026/11/02/politics/jason-turkish-haley-stevens-michigan-senate-mike-rogers-abdul-el-sayed",
+          "title": "‘He would wind her up’: Democratic anger at Haley Stevens’ fiancé boils over after her endorsement reversal",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZCa3yGkBuNIEYzuYEZemSSVXSxnQ5rO9001NiURLZNCtbvUcuDUUOjfSRO0M"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6407877381112",
+          "title": "Democrats predict Haley Stevens endorsement will ‘backfire’",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6K9qFoXzGU_Eq1v3GrZX8QVFwIdMMdEsEXe_HvW-pBnvHb7omPsaUkHIIbpE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ1YoDW1-r1IHwcmkblI-PCvSfr97HPK_0Rd0ClRjpBlN0Ruj6AP3PVDP5JJ0"
         }
       ]
     },
     {
-      "query": "rick perry",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T04:10:00Z",
+      "query": "san bernardino county election results",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T04:40:00Z",
       "related_news_urls": [
-        "https://theeagle.com/news/local/government-politics/elections/article_edf846c5-3084-57c5-96eb-14197d5a27c2.html",
-        "https://theeagle.com/news/nation-world/government-politics/elections/article_bfc87c1b-467d-5539-adb6-8cd5abb73fbe.html",
-        "https://theeagle.com/image_24506fc9-2f30-4cd9-9ebd-8af5801b1e50.html"
+        "https://www.recordnet.com/story/news/politics/elections/2026/11/03/live-election-results-stockton-san-joaquin-county-races/92515134007/",
+        "https://www.sbsun.com/2026/11/03/election-results-san-bernardino-voters-have-their-say-on-3-city-council-seats/",
+        "https://www.communityforwardredlands.com/san-bernardino-election-results-2026/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0MugLKKrbX_osPt-EmYR0__a7FA4GPy15KdKGDGYn0gwK-NLDvPU745tWDE0",
-      "image_credit": "Bryan College Station Eagle",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVOmAKDhqnUvs30jA5afdqzxhvi2IkBYVD1fZa2QNzi_XuvEH5KsD-xUA8e-k",
+      "image_credit": "The Stockton Record",
       "news": [
         {
-          "url": "https://theeagle.com/news/local/government-politics/elections/article_edf846c5-3084-57c5-96eb-14197d5a27c2.html",
-          "title": "From voter anger to a blue wave, three takeaways from the 2026 midterms",
-          "publisher": "Bryan College Station Eagle",
+          "url": "https://www.recordnet.com/story/news/politics/elections/2026/11/03/live-election-results-stockton-san-joaquin-county-races/92515134007/",
+          "title": "Live election results for key San Joaquin County races",
+          "publisher": "The Stockton Record",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0MugLKKrbX_osPt-EmYR0__a7FA4GPy15KdKGDGYn0gwK-NLDvPU745tWDE0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVOmAKDhqnUvs30jA5afdqzxhvi2IkBYVD1fZa2QNzi_XuvEH5KsD-xUA8e-k"
         },
         {
-          "url": "https://theeagle.com/news/nation-world/government-politics/elections/article_bfc87c1b-467d-5539-adb6-8cd5abb73fbe.html",
-          "title": "Democrats close in on congressional control as voters rebuke Trump",
-          "publisher": "Bryan College Station Eagle",
+          "url": "https://www.sbsun.com/2026/11/03/election-results-san-bernardino-voters-have-their-say-on-3-city-council-seats/",
+          "title": "Election results: San Bernardino voters have their say on 3 City Council seats",
+          "publisher": "San Bernardino Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3senOc1Zin2OrHmPU3KUf8TKBmf2mrUTAAjpvGaYk0JhOPcU7l1GMJL4qTCY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvqYK1--ydTwlvk1k6XgS1kpYCkNtkKIkBaY1_E03ujaK5rujiWNBy7QdxWs8"
         },
         {
-          "url": "https://theeagle.com/image_24506fc9-2f30-4cd9-9ebd-8af5801b1e50.html",
-          "title": "110426-bcs-news-ElectionDay-009.JPG",
-          "publisher": "Bryan College Station Eagle",
+          "url": "https://www.communityforwardredlands.com/san-bernardino-election-results-2026/",
+          "title": "San Bernardino Election Results 2026: City Council, school board and local races",
+          "publisher": "Community Forward Redlands",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyX8vpIWL0VUeTZ7UOKozPa7GKF5BxICyOWld62mhNAbjS7D00vK_O3pQPHn4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYWfJejiGY4D4Xzk8gxaSdu47rUiOTTSggI3ZyVuotaR5WTijMLwwRy-rlXg"
         }
       ]
     },
     {
-      "query": "trump impeachment",
+      "query": "impeach",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T04:10:00Z",
+      "published_at": "2026-11-04T04:40:00Z",
       "related_news_urls": [
         "https://www.forbes.com/sites/saradorn/2026/10/30/will-democrats-impeach-trump-if-they-win-midterms-heres-why-appetite-may-be-limited/",
         "https://www.newsweek.com/could-trump-be-impeached-if-democrats-win-midterms-12656715",
@@ -174,151 +217,142 @@
       ]
     },
     {
-      "query": "james gallagher",
+      "query": "placer county election results",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T04:10:00Z",
+      "published_at": "2026-11-04T04:40:00Z",
       "related_news_urls": [
-        "https://www.washingtonpost.com/elections/results/2026/11/03/california-1st-house-district-live-updates/",
-        "https://www.kqed.org/elections/results/sonoma/congress-1st-district",
-        "https://www.cbsnews.com/sacramento/news/california-congressional-district-1-james-gallagher-mike-mcguire/"
+        "https://www.sacbee.com/news/politics-government/election/article317883402.html",
+        "https://www.capradio.org/articles/2026/11/03/heres-what-we-know-so-far-about-the-sacramento-regions-local-election-results/",
+        "https://www.cbsnews.com/sacramento/news/sacramento-county-supervisor-district-1-flo-cofer-eric-guerra/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStCOf0UWye1ZTWskSs4dLEizw9umbdJhIq_T4pkjutiSNe14m3ZEIZO65M5OQ",
-      "image_credit": "The Washington Post",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVZPr6qU6F68GhCJkCIkhbHSTHrd1WoiKCVN3Xu9yrya1IVX8pWM4n6FG_Iow",
+      "image_credit": "Sacramento Bee",
       "news": [
         {
-          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/california-1st-house-district-live-updates/",
-          "title": "California 1st Congressional District election live results 2026",
-          "publisher": "The Washington Post",
+          "url": "https://www.sacbee.com/news/politics-government/election/article317883402.html",
+          "title": "Sacramento County election results 2026: Live supervisor and city races",
+          "publisher": "Sacramento Bee",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStCOf0UWye1ZTWskSs4dLEizw9umbdJhIq_T4pkjutiSNe14m3ZEIZO65M5OQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVZPr6qU6F68GhCJkCIkhbHSTHrd1WoiKCVN3Xu9yrya1IVX8pWM4n6FG_Iow"
         },
         {
-          "url": "https://www.kqed.org/elections/results/sonoma/congress-1st-district",
-          "title": "2026 Election Results for the U.S. House District 1",
-          "publisher": "KQED",
+          "url": "https://www.capradio.org/articles/2026/11/03/heres-what-we-know-so-far-about-the-sacramento-regions-local-election-results/",
+          "title": "Here’s what we know so far about the Sacramento region’s local election results",
+          "publisher": "capradio.org",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuNwUw1eVq79te-8cYTKdkwEXUGeakSJBbQrzZhCHGVcf-uggNp6Lrd1UM18E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtxUg4tHiiacED7S3BoaFICXNhOALCswTJa4FDVNrcCRTksuBP4FDWzNPrqwY"
         },
         {
-          "url": "https://www.cbsnews.com/sacramento/news/california-congressional-district-1-james-gallagher-mike-mcguire/",
-          "title": "James Gallagher, Mike McGuire face off for California's 1st Congressional District",
+          "url": "https://www.cbsnews.com/sacramento/news/sacramento-county-supervisor-district-1-flo-cofer-eric-guerra/",
+          "title": "Flo Cofer faces Eric Guerra in Sacramento County District 1 supervisor race",
           "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8NUwBEKwOzAzxDL0ZweVJpUJWwy4a9zLL8_tqA7smMMOBDM4-DAIH-tftK1o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6TF8xKQ-SLRXx-qz1-1Wd1fsGOEzH1H5qrfXEEJ9__BmJzNkq3gxhZwZEwyk"
         }
       ]
     },
     {
-      "query": "matt little",
+      "query": "kitsap county election results 2026",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T04:10:00Z",
+      "published_at": "2026-11-04T04:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-minnesota-us-house-2.html",
-        "https://www.mprnews.org/story/2026/11/03/minnesotas-1st-and-2nd-districts-headline-us-house-races",
-        "https://www.yahoo.com/news/videos/race-2nd-congressional-district-heats-231917676.html"
+        "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-kitsap-county/281-c0cfb309-6f8e-4c42-8bfb-1cbf79b7e336",
+        "https://www.spokesman.com/stories/2026/nov/03/live-coverage-2026-midterm-election/",
+        "https://www.kitsapsun.com/story/news/politics/elections/2026/11/03/live-kitsap-county-2026-election-updates-results--live/92573442007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRKfPclIn4n7513OfnoCWEc4dgJPhtsreewpBN38nKib4hLgPUGCex7aCkbEk",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc91H4LIBZ5ij_6JJeYnK7-w2N88Vvr5lz1NKDALqpU-PnyPTxCaDudf_k4SM",
+      "image_credit": "KING5.com",
       "news": [
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-minnesota-us-house-2.html",
-          "title": "Minnesota Second Congressional District 2026: Live Election Results, Little vs. Pratt",
-          "publisher": "The New York Times",
+          "url": "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-kitsap-county/281-c0cfb309-6f8e-4c42-8bfb-1cbf79b7e336",
+          "title": "2026 general election results for Kitsap County",
+          "publisher": "KING5.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRKfPclIn4n7513OfnoCWEc4dgJPhtsreewpBN38nKib4hLgPUGCex7aCkbEk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc91H4LIBZ5ij_6JJeYnK7-w2N88Vvr5lz1NKDALqpU-PnyPTxCaDudf_k4SM"
         },
         {
-          "url": "https://www.mprnews.org/story/2026/11/03/minnesotas-1st-and-2nd-districts-headline-us-house-races",
-          "title": "Minnesota’s 1st and 2nd districts headline U.S. House races",
-          "publisher": "MPR News",
+          "url": "https://www.spokesman.com/stories/2026/nov/03/live-coverage-2026-midterm-election/",
+          "title": "Live Coverage: 2026 Midterm Election",
+          "publisher": "The Spokesman-Review",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsOwSbODew3jnkBH0XDy1MfMnLLTVag1DAlvyBOYfqlOHc3kMY4iOMXWrqMug"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTh9WRLZO83xHTRfcHSYC-q66iF-QLOL_mLgs6n1HPXJJsdWlfEyyLnA5bnRIo"
         },
         {
-          "url": "https://www.yahoo.com/news/videos/race-2nd-congressional-district-heats-231917676.html",
-          "title": "Race for 2nd Congressional District heats up",
-          "publisher": "Yahoo",
+          "url": "https://www.kitsapsun.com/story/news/politics/elections/2026/11/03/live-kitsap-county-2026-election-updates-results--live/92573442007/",
+          "title": "Live updates as Kitsap County votes in 2026 midterm elections",
+          "publisher": "Kitsap Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9TvJkJUS19tLgesENtW3aNFaZ5lawy7EAMaOyTs-zYtWto9IMiNttFMNQ8wY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcW0AWOAwdG-FZLVKZjfeLCVgAYrEj96F-deUd4oYBFXNl_x3nEq7MCT0aqNI"
         }
       ]
     },
     {
-      "query": "filibuster",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T04:00:00Z",
+      "query": "iowa amendment 1",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T04:40:00Z",
       "related_news_urls": [
-        "https://www.chosun.com/english/national-en/2026/11/04/52AEXROQB5A6RBBKEJHRO6PSS4/",
-        "https://www.mk.co.kr/en/politics/12196199",
-        "https://en.fnnews.com/news/202611031942303664"
+        "https://www.kcci.com/article/iowa-election-results-2026-constitutional-amendment-1-tax-policy/74286464",
+        "https://www.ktiv.com/2026/11/02/what-would-iowas-amendment-1-change-guide-income-tax-ballot-question/",
+        "https://www.bleedingheartland.com/2026/10/31/voting-like-my-life-depends-on-it/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrQTtOk0xzLjZDXLbdWk8G999fjE5PkQtviEP2S2qUQLaGIgfTdG3JSY2qYGM",
-      "image_credit": "조선일보",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjxO3KuqxjJvsPcuUJJ7kpsm23pWqUpLJoUv8MCYkPCsGy8JNo4r73EE5C-bo",
+      "image_credit": "KCCI",
       "news": [
         {
-          "url": "https://www.chosun.com/english/national-en/2026/11/04/52AEXROQB5A6RBBKEJHRO6PSS4/",
-          "title": "People Power Party Denounces Democratic Party's Crime Erasure Bill",
-          "publisher": "조선일보",
+          "url": "https://www.kcci.com/article/iowa-election-results-2026-constitutional-amendment-1-tax-policy/74286464",
+          "title": "Iowa election results: Constitutional Amendment 1",
+          "publisher": "KCCI",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrQTtOk0xzLjZDXLbdWk8G999fjE5PkQtviEP2S2qUQLaGIgfTdG3JSY2qYGM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjxO3KuqxjJvsPcuUJJ7kpsm23pWqUpLJoUv8MCYkPCsGy8JNo4r73EE5C-bo"
         },
         {
-          "url": "https://www.mk.co.kr/en/politics/12196199",
-          "title": "Seo Young-kyo and Park Hyung-soo, chairman of the National Assembly's Legislation and Judiciary Comm..",
-          "publisher": "매일경제",
+          "url": "https://www.ktiv.com/2026/11/02/what-would-iowas-amendment-1-change-guide-income-tax-ballot-question/",
+          "title": "What would Iowa’s Amendment 1 change? A guide to the Income Tax Ballot Question",
+          "publisher": "KTIV",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu3FeW9h4RdW9lo3b6z_wQU0keaiGWSXJ8gFOQh6KeCQqOpw6bada_S_sbQ3s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3v4No1sJzdpmmMqfdiHMZB60Tru-EvHq_ECXOuDvTPrlN0ejNaD9shhV2qBk"
         },
         {
-          "url": "https://en.fnnews.com/news/202611031942303664",
-          "title": "Opposition: Filibuster All Bills if Special Prosecutor Bill to Drop Charges Against Lee Is Put on the Agenda",
-          "publisher": "파이낸셜뉴스",
+          "url": "https://www.bleedingheartland.com/2026/10/31/voting-like-my-life-depends-on-it/",
+          "title": "Voting like my life depends on it",
+          "publisher": "Bleeding Heartland",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGQfmFj9bLdLAF_3et5AShI4BVnbjMg2OEBbuHlNHFeuxHqAbswEPOCmAcxmQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVA57GWTHBQNi8zYHiQSmDC8bOlGapsqRE3SCKr1YHr8lZtttUe42SfQzgOkI"
         }
       ]
     },
     {
-      "query": "vicki goodwin",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T04:00:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "la times",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T04:00:00Z",
+      "query": "john kennedy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T04:40:00Z",
       "related_news_urls": [
-        "https://www.yakimaherald.com/crosswords/la-times-crossword-nov-3-2026/pdf_d5f65ee2-e493-4289-b7fb-d091827c48a2.html",
-        "https://www.yakimaherald.com/crosswords/la-times-crossword-answers-nov-1-2026/pdf_7728139f-1a20-4d6f-af57-02a5e0f6bc49.html",
-        "https://www.latimes.com/business/story/2026-11-03/utilities-lobby-for-shield-from-wildfire-costs"
+        "https://breakingdefense.com/2026/10/pentagon-will-pick-new-us-base-location-by-june-2027-prioritizing-4-requirements/",
+        "https://www.war.gov/News/News-Stories/Article/Article/4635071/assistant-secretary-says-theres-exceptional-interest-in-the-next-great-american/",
+        "https://louisianaradionetwork.com/2026/11/02/48763/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHnRwVU4wcS3HXHZZLPABnSLFdQwdFnSBBtmlsEQh3NHOD-zWBA3mM0P7PQIY",
-      "image_credit": "Yakima Herald-Republic",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0Vjrq_GCzKG8KUUEoBLReJgqJtx4S-Ou9hfaqnWcxzCdLMYGRpTQhE4OvsGQ",
+      "image_credit": "Breaking Defense",
       "news": [
         {
-          "url": "https://www.yakimaherald.com/crosswords/la-times-crossword-nov-3-2026/pdf_d5f65ee2-e493-4289-b7fb-d091827c48a2.html",
-          "title": "LA Times Crossword: Nov. 3, 2026",
-          "publisher": "Yakima Herald-Republic",
+          "url": "https://breakingdefense.com/2026/10/pentagon-will-pick-new-us-base-location-by-june-2027-prioritizing-4-requirements/",
+          "title": "Pentagon will pick new US base location by June 2027, prioritizing 4 requirements",
+          "publisher": "Breaking Defense",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHnRwVU4wcS3HXHZZLPABnSLFdQwdFnSBBtmlsEQh3NHOD-zWBA3mM0P7PQIY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0Vjrq_GCzKG8KUUEoBLReJgqJtx4S-Ou9hfaqnWcxzCdLMYGRpTQhE4OvsGQ"
         },
         {
-          "url": "https://www.yakimaherald.com/crosswords/la-times-crossword-answers-nov-1-2026/pdf_7728139f-1a20-4d6f-af57-02a5e0f6bc49.html",
-          "title": "LA Times Crossword answers: Nov. 1, 2026",
-          "publisher": "Yakima Herald-Republic",
+          "url": "https://www.war.gov/News/News-Stories/Article/Article/4635071/assistant-secretary-says-theres-exceptional-interest-in-the-next-great-american/",
+          "title": "Assistant Secretary Says There's 'Exceptional Interest' in the Next Great American Base",
+          "publisher": "U.S. Department of War (.gov)",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT38CzwtC2YXveBJd1LbgdKZAyEw-NNWP_jvx4N8l3qUohgTtYNpv_26a0N964"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAcwD_RrQht4H_LYJM3H5sWe7eGgoWRvFTpyhWeerqig1p0TCI4UkpFyRUxCg"
         },
         {
-          "url": "https://www.latimes.com/business/story/2026-11-03/utilities-lobby-for-shield-from-wildfire-costs",
-          "title": "Utilities lobby for shield from wildfire costs",
-          "publisher": "Los Angeles Times",
+          "url": "https://louisianaradionetwork.com/2026/11/02/48763/",
+          "title": "State lawmaker believes Louisiana would be an ideal candidate for “Next Great American Base”",
+          "publisher": "louisianaradionetwork.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUsxv2x0resVz6-LrmeJ3u3lZ2-Q97THvn1UcNIFAKUbdaUBwKcGUcUiiA3kk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR79-H_bEJTAA7ULQRmVOZ6MdsnzP2TFrG_Js1xxhFK2weX4OUKUQNVleLS9Eg"
         }
       ]
     }
