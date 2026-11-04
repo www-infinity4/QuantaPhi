@@ -41,7 +41,7 @@ test('click-through rate derives from unique observed sessions, not plays or wal
  assert.equal(summary['media-star'].clickEvents,4);
  assert.equal(summary['media-star'].playIntents,1);
  assert.equal(summary['media-star'].ctrPercent,20);
- assert.equal(summary['media-star'].salesVerified,0);
+ assert.equal(summary['media-star'].salesVerified,null);
  assert.equal(summarizeMedia([])['media-star'].ctrPercent,null);
 });
 test('public click endpoint cannot mint Quant, GIT or Bubble Bit assets',async()=>{
