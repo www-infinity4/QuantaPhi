@@ -317,8 +317,8 @@ test('stale successful ledger cannot hide newer, source-validated Cloudflare fal
 });
 
 test('manual refresh asks server to recheck Cloudflare rather than just reread cached totals',async()=>{
- const first=trafficPayload(1000,500,'2026-10-26T16:28:24.621Z');
- const checked=trafficPayload(1010,505,'2026-10-26T16:29:24.621Z');
+ const first=trafficPayload(1000,500,'2026-10-31T04:23:24.621Z');
+ const checked=trafficPayload(1010,505,'2026-10-31T04:24:24.621Z');
  checked.refreshStatus='refreshed';
  const nodes=await runClientOnce(new Map(),[first,checked]);
  await nodes.qtrafficRefresh.click();
