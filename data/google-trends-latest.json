@@ -3,13 +3,188 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T16:01:32.785259Z",
+  "checked_at": "2026-11-04T16:31:27.922274Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "qqqm",
+      "query": "kristaps porzingis",
       "approx_searches": "2000+",
+      "published_at": "2026-11-04T15:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say",
+        "https://bleacherreport.com/articles/25529283-warriors-reportedly-not-delivering-payments-kristaps-porzingis-star-contemplates-nba-future",
+        "https://sports.yahoo.com/articles/failure-render-services-costing-kristaps-155458094.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEGWz1obSQsao_REDBGew2trW_cpMConbOaH1HFFB1VCTRBwhVJQ0gybUu-ZI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say",
+          "title": "Warriors withholding payments to Porzingis, sources say",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEGWz1obSQsao_REDBGew2trW_cpMConbOaH1HFFB1VCTRBwhVJQ0gybUu-ZI"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529283-warriors-reportedly-not-delivering-payments-kristaps-porzingis-star-contemplates-nba-future",
+          "title": "Warriors Reportedly 'Not Delivering Payments' to Kristaps Porzingis as Star Contemplates NBA Future",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMqiiT1MoVqmuMFH4FopZJZwwOSgo0B4DxBse8lXHz8zvJZgxsvdj1HBUnUkg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/failure-render-services-costing-kristaps-155458094.html",
+          "title": "Failure to render services is costing Kristaps …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPbJO0NTHDWwqtJKh9C793YVmWs-IVRBn5wlNCjLBHad5sO9e8mAuqSZ6qCkA"
+        }
+      ]
+    },
+    {
+      "query": "angel reese caitlin clark",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T15:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/why-isnt-angel-reese-held-caitlin-clark-standard-when-fans-attack-her-teammates",
+        "https://theshadowleague.com/jordin-canada-atlanta-dream-fans-wnba-finals-loss-angel-reese-golden-state-valkyries/",
+        "https://mezha.net/eng/news/mezha-f0b5bd67077cd446b817ba72_why_isn-t_angel/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRft021NdUZ-UEPKvej_HVXwLxOKGJf7Axqvnt-9nCbeb3kmYtDUNlqaRfoCkM",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/why-isnt-angel-reese-held-caitlin-clark-standard-when-fans-attack-her-teammates",
+          "title": "Why isn’t Angel Reese held to the Caitlin Clark standard when fans attack her teammates?",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRft021NdUZ-UEPKvej_HVXwLxOKGJf7Axqvnt-9nCbeb3kmYtDUNlqaRfoCkM"
+        },
+        {
+          "url": "https://theshadowleague.com/jordin-canada-atlanta-dream-fans-wnba-finals-loss-angel-reese-golden-state-valkyries/",
+          "title": "'I Kept Receipts': Atlanta Dream's Jordin Canada Takes Parting Shot At 'Heartless' WNBA Fans After Game 7 Finals Loss",
+          "publisher": "The Shadow League",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpsahXuGxREBHuL5f2MxFWziql_BRIdVzKxAWASHsAOrWG9dnyEexl4I1IkAo"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-f0b5bd67077cd446b817ba72_why_isn-t_angel/",
+          "title": "Why isn’t Angel Reese held to the Caitlin Clark standard when fans attack her teammates?",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2cUexFUwN5ekeIHG0tz3rsBrPGngC398uEYod46PV9G0ELv-4_yVjsuJAFE"
+        }
+      ]
+    },
+    {
+      "query": "nintendo switch cartridge rom manufacturer leaves",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T15:40:00Z",
+      "related_news_urls": [
+        "https://gizmodo.com/nintendos-switch-2-game-cards-matronix-2000834832",
+        "https://kotaku.com/nintendo-switch-cart-rom-physical-media-data-centers-manufacture-2000753293",
+        "https://www.gamespot.com/articles/nintendo-could-have-a-new-cartridge-problem-on-its-hands/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwGHqwBHJ2JH_tyhvUwlg3WuKlqTc4FscQYjlgPvPq81Nh432Cirtns3uX2YY",
+      "image_credit": "Gizmodo",
+      "news": [
+        {
+          "url": "https://gizmodo.com/nintendos-switch-2-game-cards-matronix-2000834832",
+          "title": "Nintendo’s Switch 2 Game Card Situation Just Became Dire",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwGHqwBHJ2JH_tyhvUwlg3WuKlqTc4FscQYjlgPvPq81Nh432Cirtns3uX2YY"
+        },
+        {
+          "url": "https://kotaku.com/nintendo-switch-cart-rom-physical-media-data-centers-manufacture-2000753293",
+          "title": "Another Blow For Physical Media As Nintendo’s Switch Cartridge Chip Manufacturer Pivots To Data Centers",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZlA7344Dl0GauJZyz_wlR5ioxndSjRfq_Qs2LuD2wLWARlobGwLrInki9IoU"
+        },
+        {
+          "url": "https://www.gamespot.com/articles/nintendo-could-have-a-new-cartridge-problem-on-its-hands/",
+          "title": "Nintendo Could Have A New Cartridge Problem On Its Hands",
+          "publisher": "GameSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnTyuq6Gu9ISzkxuPRauxNCmylzo3ckg4GJTSQtBR0uHk1M1rObHMOphBWbig"
+        }
+      ]
+    },
+    {
+      "query": "walmart stock",
+      "approx_searches": "500+",
       "published_at": "2026-11-04T15:20:00Z",
+      "related_news_urls": [
+        "https://www.barchart.com/story/news/8593078/walmart-stock-is-wall-street-bullish-or-bearish",
+        "https://seekingalpha.com/article/4961204-walmart-back-to-the-strong-sell-rating",
+        "https://in.investing.com/news/stock-market-news/why-is-walmart-stock-rallying-today-93CH-5679843"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSmFOGAGwabMH_EAmaBCQsozJu6PenkSWCuvv19zIWkYHfXj-dQcTx9eLAxhE",
+      "image_credit": "Barchart.com",
+      "news": [
+        {
+          "url": "https://www.barchart.com/story/news/8593078/walmart-stock-is-wall-street-bullish-or-bearish",
+          "title": "Walmart Stock: Is Wall Street Bullish or Bearish?",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSmFOGAGwabMH_EAmaBCQsozJu6PenkSWCuvv19zIWkYHfXj-dQcTx9eLAxhE"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4961204-walmart-back-to-the-strong-sell-rating",
+          "title": "Walmart Stock: Back To The Strong Sell Rating (NASDAQ:WMT)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTD-26FMuypDOABgXe53wPrvLnJD_QU0eJhIAbyUKhoOmkAW9A1TfGnDd6OeQA"
+        },
+        {
+          "url": "https://in.investing.com/news/stock-market-news/why-is-walmart-stock-rallying-today-93CH-5679843",
+          "title": "Why is Walmart stock rallying today? By Investing.com",
+          "publisher": "Investing.com India",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBhS9-QXAThpphk25YdPvoqtJqpdhh4i2kYGQgfg9U9RZtwuPeDxBrZblGoDU"
+        }
+      ]
+    },
+    {
+      "query": "nvda stock",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T15:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/nvidia-rises-3-despite-ai-184852243.html",
+        "https://www.barchart.com/story/news/8597937/nvidia-stock-looks-surprisingly-cheap-why-nvda-could-rise-61",
+        "https://www.investors.com/research/nvidia-nvda-stock-buy-now-november-2026-earnings/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_Noah6aFJQUedA-UqJfKTw3X1BOx0UyxWAtuRAeKjxkzXpb1tF9xn8gcbTV0",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-rises-3-despite-ai-184852243.html",
+          "title": "NVIDIA Rises 3% Despite AI CEO’s Warning on Chinese Chip Competition; AMD Climbs 5%, Broadcom Gains 3%",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_Noah6aFJQUedA-UqJfKTw3X1BOx0UyxWAtuRAeKjxkzXpb1tF9xn8gcbTV0"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8597937/nvidia-stock-looks-surprisingly-cheap-why-nvda-could-rise-61",
+          "title": "Nvidia Stock Looks Surprisingly Cheap. Why NVDA Could Rise 61%.",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaY8OifZRrIm6F950Qlk4WgmFWVRy_mlbvVuwsynu80ldj47lmqjfMxIpv2i4"
+        },
+        {
+          "url": "https://www.investors.com/research/nvidia-nvda-stock-buy-now-november-2026-earnings/",
+          "title": "Nvidia Flashes Sell Signals As Earnings Loom; Is Nvidia A Buy Now?",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQXaV_xmyM9evrrTEkFoOHlXrCclNTYierfr3W-YTb8ljUVAjJA4N65JbZx1M"
+        }
+      ]
+    },
+    {
+      "query": "qqq",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T15:10:00Z",
       "related_news_urls": [
         "https://seekingalpha.com/article/4960901-qqq-after-a-minus-6-7-percent-october-what-history-says-about-november",
         "https://pluang.com/en/news-feed/qqqm-nasdaq-100-pullback-peluang-beli",
@@ -42,9 +217,79 @@
       ]
     },
     {
-      "query": "nvda stock",
-      "approx_searches": "5000+",
+      "query": "covid tests",
+      "approx_searches": "1000+",
       "published_at": "2026-11-04T15:10:00Z",
+      "related_news_urls": [
+        "https://www.miamiherald.com/living/travel/article317892300.html",
+        "https://www.fodors.com/news/photos/starting-today-you-must-complete-this-new-form-to-fly-to-the-u-s",
+        "https://www.reuters.com/legal/government/airline-groups-urge-us-cdc-reconsider-ebola-declaration-requirements-2026-10-29/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcAlPeL8uyvhzItNRg6hcmOhYcN-M723FSsE-hAAdVJzntc8ELZr7uPiT0NrE",
+      "image_credit": "Miami Herald",
+      "news": [
+        {
+          "url": "https://www.miamiherald.com/living/travel/article317892300.html",
+          "title": "Health alert: Overseas travelers face new requirement at MIA, other airports",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcAlPeL8uyvhzItNRg6hcmOhYcN-M723FSsE-hAAdVJzntc8ELZr7uPiT0NrE"
+        },
+        {
+          "url": "https://www.fodors.com/news/photos/starting-today-you-must-complete-this-new-form-to-fly-to-the-u-s",
+          "title": "Starting Today, You Must Complete This New Form to Fly to the U.S.",
+          "publisher": "Fodors Travel Guide",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnzlBfRkEUC3gzuImXIbr3AvOdF38D4CCg2PeHVJt0WoyIQXDWSJXSgG5KojE"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/airline-groups-urge-us-cdc-reconsider-ebola-declaration-requirements-2026-10-29/",
+          "title": "Airline groups urge US CDC to reconsider Ebola declaration requirements",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK437fHgCIzOhEvSBdQEl_wUCo3S0fUzHIIU_UiyIbciRqdcOtmfk6aMX32FE"
+        }
+      ]
+    },
+    {
+      "query": "dell stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T15:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/dell-crashed-20-over-last-134508986.html",
+        "https://www.tikr.com/blog/memory-trade-warnings-pile-up-dells-tripled-inventory-says-chip-supply-is-a-lot-closer-to-demand",
+        "https://www.gurufocus.com/news/9163405/dell-technologies-inc-dell-stock-down-74-but-still-overvalued-gf-score-71100"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-JFIlYkf_LU8JHHDDAtXBCjtR16erI6xlfXZ-H5r9_JrRNnllxcNzKUhH_mo",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/dell-crashed-20-over-last-134508986.html",
+          "title": "Dell Crashed by 20% Over The Last Month: A Respected Wall Street Analyst Says 65% Gains Are Incoming",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-JFIlYkf_LU8JHHDDAtXBCjtR16erI6xlfXZ-H5r9_JrRNnllxcNzKUhH_mo"
+        },
+        {
+          "url": "https://www.tikr.com/blog/memory-trade-warnings-pile-up-dells-tripled-inventory-says-chip-supply-is-a-lot-closer-to-demand",
+          "title": "Memory Trade Warnings Pile Up: Dell’s Tripled Inventory Says Chip Supply Is “a Lot Closer” to Demand",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0UMm3iC_TmwgM1wDNlspjFoSWLd9-5FflnCxPB_MyLRccK-tPNNqgqFNtwtk"
+        },
+        {
+          "url": "https://www.gurufocus.com/news/9163405/dell-technologies-inc-dell-stock-down-74-but-still-overvalued-gf-score-71100",
+          "title": "Dell Technologies Inc (DELL) Stock Down 7.4% but Still Overvalued -- GF Score: 71/100",
+          "publisher": "GuruFocus",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS12km4p4cGb5KRfCIE9RPqbZwSPS8R6vmz2nO9fRS_ImFbHVZmtmveVenCsWk"
+        }
+      ]
+    },
+    {
+      "query": "nvda",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T15:00:00Z",
       "related_news_urls": [
         "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html",
         "https://markets.financialcontent.com/stocks/article/stockstory-2026-11-3-allegro-microsystems-entegris-photronics-and-amtech-shares-skyrocket-what-you-need-to-know"
@@ -69,84 +314,23 @@
       ]
     },
     {
-      "query": "covid tests",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T15:10:00Z",
-      "related_news_urls": [
-        "https://broadandliberty.com/2026/11/03/six-years-later-chester-countys-20-million-covid-test-debacle-continues/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS64IDFIq6ytX_2zUT6a5_qZPKC-MdRUTWmJgsCgd3aTs7QQYZzeyYS45DkA_A",
-      "image_credit": "Broad + Liberty",
-      "news": [
-        {
-          "url": "https://broadandliberty.com/2026/11/03/six-years-later-chester-countys-20-million-covid-test-debacle-continues/",
-          "title": "Six years later, Chester County’s $20 Million Covid test debacle continues",
-          "publisher": "Broad + Liberty",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS64IDFIq6ytX_2zUT6a5_qZPKC-MdRUTWmJgsCgd3aTs7QQYZzeyYS45DkA_A"
-        }
-      ]
-    },
-    {
-      "query": "dell stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T15:10:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/article/4960857-refreshing-thoughts-ahead-of-dells-q3-earnings",
-        "https://www.trefis.com/stock/dell/articles/621542/what-are-dell-investors-betting-on/2026-10-30",
-        "https://www.tradingkey.com/analysis/stocks/us-stocks/262273595-dell-stock-forecast-ai-backlog-423-resistance-tradingkey"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcqrq537kzM1LcY1bWw23u7M-I_a9_HSzS8QlNHka9ASVjfMwBZEFX6r8qv8",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/article/4960857-refreshing-thoughts-ahead-of-dells-q3-earnings",
-          "title": "Refreshing Thoughts Ahead Of Dell's Q3 Earnings",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcqrq537kzM1LcY1bWw23u7M-I_a9_HSzS8QlNHka9ASVjfMwBZEFX6r8qv8"
-        },
-        {
-          "url": "https://www.trefis.com/stock/dell/articles/621542/what-are-dell-investors-betting-on/2026-10-30",
-          "title": "What Are Dell Investors Betting On?",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbWYO5qWswELvl7b6La5bKub6CygMqJZtI0JxkUXP2KB0Oij-D5f_cjk_yQZs"
-        },
-        {
-          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262273595-dell-stock-forecast-ai-backlog-423-resistance-tradingkey",
-          "title": "Dell Stock Forecast: Enterprise AI Push Meets $423.36 Resistance",
-          "publisher": "TradingKey",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn53ROZ9os-1OqE53IesnIluEsrJeZLzvJlZobcNC_ZGVPOSvULLTDEOJAYcI"
-        }
-      ]
-    },
-    {
       "query": "nvidia stock price",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-04T15:00:00Z",
       "related_news_urls": [
         "https://www.barrons.com/articles/nvidia-stock-price-data-centers-5b4a74a1",
-        "https://www.theinformation.com/briefings/chip-stocks-neoclouds-sell-election-results",
-        "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3"
+        "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3",
+        "https://seekingalpha.com/news/4664849-data-center-chip-shares-drop-but-hyperscalers-gain-as-democrats-win-congress"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaDJocz5YJ7nSJWThvGPc1PwWdUVl5uot8MD1pQBUTuGE0bUkfxxph4CH_Hy4",
       "image_credit": "Barron's",
       "news": [
         {
           "url": "https://www.barrons.com/articles/nvidia-stock-price-data-centers-5b4a74a1",
-          "title": "Why Nvidia Stock Can Ride a Democrat AI Data-Center Crackdown",
+          "title": "Why Nvidia Stock Can Ride Out a Data-Center Crackdown",
           "publisher": "Barron's",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaDJocz5YJ7nSJWThvGPc1PwWdUVl5uot8MD1pQBUTuGE0bUkfxxph4CH_Hy4"
-        },
-        {
-          "url": "https://www.theinformation.com/briefings/chip-stocks-neoclouds-sell-election-results",
-          "title": "Chip Stocks and Neoclouds Sell Off on Election Results",
-          "publisher": "The Information",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2Xhh66lOPKR4YS_Y-lMTzkfQ8vpgmFIF0fMEv1XUYgzOI322S8mnpgERL7sw"
         },
         {
           "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3",
@@ -154,181 +338,13 @@
           "publisher": "MarketWatch",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSn4MshXWghx2EDm-PrGkc31-vmqFTeII9ugkkN9UGMtiU_RWYWJYn8qf-baA"
-        }
-      ]
-    },
-    {
-      "query": "ignacio buse",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T15:00:00Z",
-      "related_news_urls": [
-        "https://www.bleachernation.com/picks/2026/11/02/buse-vs-medvedev-prediction-at-the-rolex-paris-masters-wednesday-november-4/",
-        "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-day-3-predictions-medvedev-buse/",
-        "https://www.dimers.com/tennis/news/ignacio-buse-vs-daniil-medvedev-tennis-prediction-atp-paris-masters-2026-ac"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfO11jXZwhrawDlNj9a3DegnOpW6zho6ySw6gTfhCBGMKyY3dSWueBk5Y_-I4",
-      "image_credit": "Bleacher Nation",
-      "news": [
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/02/buse-vs-medvedev-prediction-at-the-rolex-paris-masters-wednesday-november-4/",
-          "title": "Buse vs. Medvedev Prediction at the Rolex Paris Masters – Wednesday, November 4",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfO11jXZwhrawDlNj9a3DegnOpW6zho6ySw6gTfhCBGMKyY3dSWueBk5Y_-I4"
         },
         {
-          "url": "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-day-3-predictions-medvedev-buse/",
-          "title": "ATP Paris Day 3 Predictions Including Daniil Medvedev vs Ignacio Buse",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD3wbfac7ysmBGi2AeRz_Sud7uB_KeQw4Rn7G5zWi3CHPrnqRdLZxCd4FwTE8"
-        },
-        {
-          "url": "https://www.dimers.com/tennis/news/ignacio-buse-vs-daniil-medvedev-tennis-prediction-atp-paris-masters-2026-ac",
-          "title": "Ignacio Buse vs. Daniil Medvedev prediction, odds, picks for ATP Paris Masters 2026",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSt7_t6l9wGvD0tir0nFtM9FHfK_w1Vc4spgMLp8Yt0QuHL-sXC34Q2lps62sQ"
-        }
-      ]
-    },
-    {
-      "query": "apple stock price",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-04T15:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
-        "https://www.nytimes.com/2026/11/02/technology/apple-earnings.html",
-        "https://www.cnbc.com/2026/11/03/apple-margin-oil-iran.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
-          "title": "Apple beats Q4 estimates on strong iPhone sales but misses on China revenue, stock falls",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/02/technology/apple-earnings.html",
-          "title": "Apple’s Profit Grows 12% Despite Component Price Worries",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72kAQgt8BWAldURzZ4grCiVJNqaDkLroD9weR6h1JGxSLbr7xouIMDRBagkI"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/03/apple-margin-oil-iran.html",
-          "title": "Apple margin outlook pressures tech as reported U.S. strike lifts oil",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCLOxdtbzMmaL5ohrwiscluY5OVldBerfZwbVZJZupDkDoXk2bWidCHf6k77w"
-        }
-      ]
-    },
-    {
-      "query": "vti",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T14:50:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/voo-vs-vti-vanguard-fund-134400510.html",
-        "https://www.tipranks.com/news/voo-vs-vti-one-vanguard-etf-covers-nearly-the-entire-us-stock-market-is-it-better",
-        "https://www.fool.com/investing/2026/11/02/voo-vs-vti-which-vanguard-fund-better-buy-now/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rpkx6oKqu1-QmQTcXzXiyL2p2JcJdA9D66ze5ctPhUV_lYzn68WB5WNfkxg",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/voo-vs-vti-vanguard-fund-134400510.html",
-          "title": "VOO vs. VTI: Which Vanguard Fund Is the Better Buy Right Now?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rpkx6oKqu1-QmQTcXzXiyL2p2JcJdA9D66ze5ctPhUV_lYzn68WB5WNfkxg"
-        },
-        {
-          "url": "https://www.tipranks.com/news/voo-vs-vti-one-vanguard-etf-covers-nearly-the-entire-us-stock-market-is-it-better",
-          "title": "VOO vs. VTI: One Vanguard ETF Covers Nearly the Entire US Stock Market – Is It Better?",
-          "publisher": "TipRanks",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIAJyGhITO0HZ1fMxjAw0e7Dpx8NgVZkHSt20pbYXNq-Cqx6sF20N6vbyMQA"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/02/voo-vs-vti-which-vanguard-fund-better-buy-now/",
-          "title": "VOO vs. VTI: Which Vanguard Fund Is the Better Buy Right Now?",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFIQoxHbfhuifQ687LU0H4lbnE5hFCqcTDHVLoqaXGpGh3or2Cq1jDhqlwy1w"
-        }
-      ]
-    },
-    {
-      "query": "spx",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T14:50:00Z",
-      "related_news_urls": [
-        "https://www.investopedia.com/5-things-to-know-stock-market-november-04-2026-12209181",
-        "https://seekingalpha.com/news/4664613-at-a-glance-stocks-gapping-up-premarket",
-        "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-4-132500586.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtsWERaWp7GxDHu4qF4l6n0vUfAY12yNMMtmnEGH-Fu_LbZXHd0ZYwAz2uNGQ",
-      "image_credit": "Investopedia",
-      "news": [
-        {
-          "url": "https://www.investopedia.com/5-things-to-know-stock-market-november-04-2026-12209181",
-          "title": "5 Things Investors Need to Know About Wednesday’s Markets",
-          "publisher": "Investopedia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtsWERaWp7GxDHu4qF4l6n0vUfAY12yNMMtmnEGH-Fu_LbZXHd0ZYwAz2uNGQ"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4664613-at-a-glance-stocks-gapping-up-premarket",
-          "title": "At a glance: stocks gapping up premarket (SPX:)",
+          "url": "https://seekingalpha.com/news/4664849-data-center-chip-shares-drop-but-hyperscalers-gain-as-democrats-win-congress",
+          "title": "AI infrastructure stocks drop, hyperscalers gain as Democrats win Congress (NVDA:NASDAQ)",
           "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwwyxkeiTrlPy3ekF6jVa8nPtl6ULui7U-aMyZ2Z3qlAwX2uEJpxtMfZEGcu8"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-4-132500586.html",
-          "title": "Stock Market News for Nov 4, 2026",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIJ18_Wl3DZQz2kgjIctMRy3gsWAJqAQONTJRUoUPqj2Qcaa-tvoLSvuzQ4kU"
-        }
-      ]
-    },
-    {
-      "query": "rennes vs olympiacos",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T14:40:00Z",
-      "related_news_urls": [
-        "https://www.oregonlive.com/tv/2026/11/how-to-watch-olympiacos-vs-stade-rennais-today-europa-league-streaming-guide-time-betting-lines.html",
-        "https://sports.yahoo.com/articles/rennes-predicted-xi-v-olympiacos-100200022.html",
-        "https://www.coinbase.com/en-es/predictions/event/KXCS2TOTALMAPS-26NOV020400AZUWAL"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ilObQpBmmyuY3OVeIlpRIsM-dnZnVlpoTISIPK-XeKEFZ5ZyCmuQC_aHmPo",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-olympiacos-vs-stade-rennais-today-europa-league-streaming-guide-time-betting-lines.html",
-          "title": "How to watch Olympiacos vs. Stade Rennais today: Europa League streaming guide, time, betting lines",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ilObQpBmmyuY3OVeIlpRIsM-dnZnVlpoTISIPK-XeKEFZ5ZyCmuQC_aHmPo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/rennes-predicted-xi-v-olympiacos-100200022.html",
-          "title": "Rennes predicted XI v Olympiacos: Esteban Lepaul remains sidelined",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnYnNVIocvENW0bbg6CplCyuY85tSj4CTBjUktTGEW6cek304Nc_btgDVbV-o"
-        },
-        {
-          "url": "https://www.coinbase.com/en-es/predictions/event/KXCS2TOTALMAPS-26NOV020400AZUWAL",
-          "title": "Azuolas vs. Walczaki: Total Maps",
-          "publisher": "Coinbase",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtP_w6oIJff-RhMKZkkNrpvB72mwxN0I5zjbVNjvlCZyNZxubnVZbBOb9Te60"
         }
       ]
     }
