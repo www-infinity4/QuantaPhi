@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {newLiveBitsState,advanceLiveBits} from '../bubbles-live-iteration-feed.mjs';
 
 const turn = () => advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
@@ -49,3 +50,19 @@ test('completion retains the visible history and switching conversations clears 
  assert.equal(s.entries.length,0);
  assert.equal(s.candidates,0);
 });
+
+test('the same live status line loads on every Bubbles website entrypoint without changing chat transport',()=>{
+ const fs=requireSource();
+ for(const page of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
+  const html=fs(page);
+  assert.match(html,/bubbles-live-iteration-feed\.mjs\?v=20261104-live-bits1/);
+  assert.match(html,/bubbles-live-iteration-feed\.css\?v=20261104-live-bits1/);
+  assert.match(html,/bubbles-ai\.js\?v=20261103-work-first1/);
+ }
+ const module=fs('bubbles-live-iteration-feed.mjs');
+ assert.match(module,/status\.after\(wrapper\)/);
+ assert.doesNotMatch(module,/fetch\(|localStorage|walletWrites|innerHTML/);
+});
+function requireSource(){
+ return file=>readFileSync(new URL('../'+file,import.meta.url),'utf8');
+}
