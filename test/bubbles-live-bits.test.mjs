@@ -141,3 +141,75 @@ test('the pulse never calls a technical operation complete without a receipt ID'
  assert.equal(s.candidates,0);
  assert.equal(s.credits,0);
 });
+
+
+test('authenticated direct GitHub read displays real start and pending states without minting a receipt',async()=>{
+ const vm=await import('node:vm');
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const begin=source.indexOf('function publishDirectGithubIteration(');
+ const end=source.indexOf("\ninput.addEventListener('keydown'",begin);
+ assert.ok(begin>0&&end>begin,'the real Bubbles GitHub adapter must publish iterations');
+ const events=[];
+ const ctx={
+  embedded:false,activeThread:'conversation-A',
+  verifiedOwnerHeaders:async()=>({Authorization:'Bearer synthetic-owner'}),
+  BRAIN:'https://brain.fixture',crypto:{randomUUID:()=> '11111111-1111-4111-8111-111111111111'},
+  CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},
+  window:{dispatchEvent:event=>events.push(event.detail)},
+  bubblesFetch:async()=>({ok:true,json:async()=>({ok:true,status:'working'})}),
+  watchDirectGithubReceipt:()=>{}
+ };
+ vm.createContext(ctx);
+ vm.runInContext(source.slice(begin,end)+'\nthis.runDirect=directGithubOperation;',ctx);
+ const answer=await ctx.runDirect({action:'read_file',repository:'www-infinity4/QuantaPhi',path:'bubbles-ai.js'},{ownerRequest:'Inspect real chat source'});
+ assert.equal(answer.status,'working');
+ assert.deepEqual(events.map(event=>event.type),['tool_started','tool_progress']);
+ assert.ok(events.every(event=>event.tool==='github.read_file'));
+ assert.equal(events[0].operationId,events[1].operationId);
+ assert.ok(!events.some(event=>event.type==='tool_receipt'));
+ let s=advanceLiveBits(newLiveBitsState(),{type:'memory',state:'retrieved'});
+ for(const event of events)s=advanceLiveBits(s,event);
+ assert.equal(s.entries.length,1,'the same real operation updates one status line');
+ assert.equal(s.entries[0].state,'running');
+ assert.equal(s.candidates,0);
+ assert.equal(s.credits,0);
+});
+
+test('direct GitHub read reports server receipt only for matching verified backend evidence',async()=>{
+ const vm=await import('node:vm');
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const begin=source.indexOf('function publishDirectGithubIteration(');
+ const end=source.indexOf("\ninput.addEventListener('keydown'",begin);
+ assert.ok(begin>0&&end>begin);
+ const events=[];
+ let backend={ok:true,status:'inspected',receipt:{id:'real_github_receipt_12345678',tool:'github.read_file',status:'complete'}};
+ const ctx={
+  embedded:false,activeThread:'conversation-A',
+  verifiedOwnerHeaders:async()=>({Authorization:'Bearer synthetic-owner'}),
+  BRAIN:'https://brain.fixture',crypto:{randomUUID:()=> '22222222-2222-4222-8222-222222222222'},
+  CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},
+  window:{dispatchEvent:event=>events.push(event.detail)},
+  bubblesFetch:async()=>({ok:true,json:async()=>backend}),
+  watchDirectGithubReceipt:()=>{}
+ };
+ vm.createContext(ctx);
+ vm.runInContext(source.slice(begin,end)+'\nthis.runDirect=directGithubOperation;',ctx);
+ const op={action:'read_file',repository:'www-infinity4/QuantaPhi',path:'bubbles-ai.js'};
+ await ctx.runDirect(op,{ownerRequest:'Inspect real chat source'});
+ assert.deepEqual(events.map(event=>event.type),['tool_started','tool_receipt']);
+ assert.equal(events.at(-1).status,'complete');
+ assert.equal(events.at(-1).receiptId,'real_github_receipt_12345678');
+ let s=advanceLiveBits(newLiveBitsState(),{type:'memory',state:'retrieved'});
+ for(const event of events)s=advanceLiveBits(s,event);
+ assert.equal(s.candidates,1);
+ assert.equal(s.credits,0);
+ events.length=0;
+ backend={ok:true,status:'inspected',receipt:{id:'wrong_tool_receipt_12345678',tool:'web.search',status:'complete'}};
+ await ctx.runDirect(op,{ownerRequest:'Inspect real chat source'});
+ assert.equal(events.at(-1).status,'unverified','a receipt from another tool is not valid evidence');
+ assert.equal(events.at(-1).receiptId,undefined);
+ events.length=0;
+ backend={ok:true,status:'inspected'};
+ await ctx.runDirect(op,{ownerRequest:'Inspect real chat source'});
+ assert.equal(events.at(-1).status,'unverified','text-only outcome is not a verified tool receipt');
+});
