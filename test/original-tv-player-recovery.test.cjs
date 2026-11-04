@@ -11,6 +11,7 @@ test('Chiller card exposes next title recovery instead of hiding CH+',()=>{
 test('Chiller starts complete episodes rather than seeking past their ending',()=>{
  const late=new Date(2026,10,3,12,29,50);
  const p=programs.chillerNow(late);
- assert.equal(p.start,0);
+ assert.equal(p.playbackStartSeconds,0,'in-card playback begins with the full video');
+ assert.ok(p.start>=0,'guide offset remains available separately');
  assert.ok(programs.valid(p.videoId));
 });
