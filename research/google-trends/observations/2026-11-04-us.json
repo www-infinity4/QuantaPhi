@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T09:31:12.940206Z",
+  "checked_at": "2026-11-04T10:01:39.449200Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "mass ballot questions 2026 results",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T09:40:00Z",
+      "related_news_urls": [
+        "https://www.wgbh.org/news/politics/2026-11-03/recreational-cannabis-to-stay-legal-in-mass-ap-calls",
+        "https://www.thecrimson.com/article/2026/11/3/2026-ballot-question-8/",
+        "https://www.bostonherald.com/2026/11/03/massachusetts-ballot-question-results-pour-in-with-voters-favoring-keeping-pot-legal-rejecting-all-party-primaries/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPl8oqAGgVxGVMTuec_0SKfTmW7fRonhcZPjCDqZQ16ydOzZdZ1R5RxPNb1yU",
+      "image_credit": "WGBH",
+      "news": [
+        {
+          "url": "https://www.wgbh.org/news/politics/2026-11-03/recreational-cannabis-to-stay-legal-in-mass-ap-calls",
+          "title": "Recreational cannabis to stay legal; public records law to expand in Mass., AP calls",
+          "publisher": "WGBH",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPl8oqAGgVxGVMTuec_0SKfTmW7fRonhcZPjCDqZQ16ydOzZdZ1R5RxPNb1yU"
+        },
+        {
+          "url": "https://www.thecrimson.com/article/2026/11/3/2026-ballot-question-8/",
+          "title": "Ballot Question 8 Could Turn Back the Clock on Recreational Marijuana Sales",
+          "publisher": "The Harvard Crimson",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGNCnRnyudjJLjbFqrAyeuRPFeFZozIzcscxjtXpBUONwDOs4TMTV56UlaFX0"
+        },
+        {
+          "url": "https://www.bostonherald.com/2026/11/03/massachusetts-ballot-question-results-pour-in-with-voters-favoring-keeping-pot-legal-rejecting-all-party-primaries/",
+          "title": "Massachusetts ballot question results pour in with voters favoring keeping pot legal, rejecting all-party primaries",
+          "publisher": "Boston Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyBYGqkJO8ekuSN7WaZ8bg8cpqRBlWtI5La7X1rctBfeHxzUjk823S212Z_4s"
+        }
+      ]
+    },
+    {
+      "query": "aircraft",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T09:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/c6x2wd4v04eeo",
+        "https://www.theguardian.com/world/2026/nov/03/four-planes-flying-across-europe-targeted-by-bomb-threats",
+        "https://www.reuters.com/business/aerospace-defense/europe-wide-bomb-threats-disrupt-air-travel-2026-11-03/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFKDYctt_wK0vcRBnpfHxJQ3jJymJxpsdJ_dPUlBHT07bdCDC837x403QxFYM",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/c6x2wd4v04eeo",
+          "title": "Seven flights across Europe targeted by suspected bomb threats",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFKDYctt_wK0vcRBnpfHxJQ3jJymJxpsdJ_dPUlBHT07bdCDC837x403QxFYM"
+        },
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/03/four-planes-flying-across-europe-targeted-by-bomb-threats",
+          "title": "Seven planes across Europe searched or diverted after ‘malicious hoax’ bomb threats",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLTMpqLi-_D9jEWwpMludHKMQBwqNlVBNnbxxBy8QhUGTNpoB7H8QAyn92lAo"
+        },
+        {
+          "url": "https://www.reuters.com/business/aerospace-defense/europe-wide-bomb-threats-disrupt-air-travel-2026-11-03/",
+          "title": "Bomb threats cause flight disruptions across Europe",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjk0YzLB_pt1X-47WMdyFIQqIr5vU6Mez7cuVZoU7DvJRhBL7AZ6zUXAmbBms"
+        }
+      ]
+    },
     {
       "query": "usa today",
       "approx_searches": "100+",
@@ -43,7 +113,7 @@
     },
     {
       "query": "katie boulter",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-04T09:00:00Z",
       "related_news_urls": [
         "https://www.wtatennis.com/videos/4602834/liu-opens-hong-kong-main-draw-with-straight-sets-win-over-prozorova",
@@ -77,43 +147,78 @@
       ]
     },
     {
-      "query": "hong kong open",
-      "approx_searches": "2000+",
+      "query": "financial services",
+      "approx_searches": "500+",
       "published_at": "2026-11-04T08:40:00Z",
       "related_news_urls": [
-        "https://www.wtatennis.com/news/4603701/eala-holds-firm-against-jones-to-reach-hong-kong-second-round",
-        "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
-        "https://www.abs-cbn.com/sports/othersports/2026/11/4/tennis-eala-eyes-breakthrough-against-familiar-foe-valentova-in-hong-kong-1502"
+        "https://thequantuminsider.com/2026/11/04/crypto-agility-post-quantum-security-banks/",
+        "https://www.marketscreener.com/news/equinix-is-your-infrastructure-ready-to-adapt-when-quantum-computing-arrives-ce785fdedf8bf525",
+        "https://www.fdd.org/in_the_news/quantapocalypse/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDaDoeF-4z10C28fKYTuyF51vTa-sKdN1gHFFRyMQRO1dcyUfUr3Rgaqw9aow",
-      "image_credit": "WTA Tennis",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_54mbQc7rw1pyogZ0vo9Ff7WuhYI2tm-TwCQII8tjx5kBjeJueMpcAahG4Ag",
+      "image_credit": "The Quantum Insider",
       "news": [
         {
-          "url": "https://www.wtatennis.com/news/4603701/eala-holds-firm-against-jones-to-reach-hong-kong-second-round",
-          "title": "Eala holds firm against Jones to reach Hong Kong second round",
-          "publisher": "WTA Tennis",
+          "url": "https://thequantuminsider.com/2026/11/04/crypto-agility-post-quantum-security-banks/",
+          "title": "Guest Post: Why Crypto-Agility Matters for Financial Institutions Preparing for PQC",
+          "publisher": "The Quantum Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDaDoeF-4z10C28fKYTuyF51vTa-sKdN1gHFFRyMQRO1dcyUfUr3Rgaqw9aow"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_54mbQc7rw1pyogZ0vo9Ff7WuhYI2tm-TwCQII8tjx5kBjeJueMpcAahG4Ag"
         },
         {
-          "url": "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
-          "title": "Alex Eala brushes aside late replacement Emerson Jones to reach Hong Kong Open round of 16",
-          "publisher": "ESPN",
+          "url": "https://www.marketscreener.com/news/equinix-is-your-infrastructure-ready-to-adapt-when-quantum-computing-arrives-ce785fdedf8bf525",
+          "title": "Equinix : Is Your Infrastructure Ready to Adapt When Quantum Computing Arrives",
+          "publisher": "www.marketscreener.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_V_tHPZFARO0peA7efoB1_hzTaL0D1-fo27a-HRwKcGaUjv49cwH1HiDm_mU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmYzgiuRJh_WDfIuy8ec963NlCEMmGpR4sGsYzWAggNHs1Nh1jGdAuij6FRjE"
         },
         {
-          "url": "https://www.abs-cbn.com/sports/othersports/2026/11/4/tennis-eala-eyes-breakthrough-against-familiar-foe-valentova-in-hong-kong-1502",
-          "title": "Tennis: Eala eyes breakthrough against familiar foe Valentova in Hong Kong",
-          "publisher": "ABS-CBN",
+          "url": "https://www.fdd.org/in_the_news/quantapocalypse/",
+          "title": "Quantapocalypse",
+          "publisher": "Foundation for Defense of Democracies",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhSNp2zZ5zS7EnMkeD_99k6rOakVlp36V8gG8MYIIermG6VYfbknbH1A8pb08"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-yO-cSigRj2nXfK-b2BQZucgO4-oLvKO3iijXtg3Vpf3Lu5Dd2ZrOJE7lSiI"
+        }
+      ]
+    },
+    {
+      "query": "hong kong open",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T08:40:00Z",
+      "related_news_urls": [
+        "https://www.yardbarker.com/tennis/articles/paula_badosas_season_ends_in_retirement_as_health_struggles_strike_again_in_hong_kong/s1_17730_44512679",
+        "https://www.tennis365.com/tennis-news/former-world-no-2-ends-season-tears-body-betrays-wta-star-again",
+        "https://en.tennistemple.com/actu/paula-badosa-in-tears-her-ordeal-continues-in-hong/DY6P"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQV78Cm7qkOcjaVX5VDs5fxvnSyESKneLNvLoDCKZRFr_3tY5mZPJTM2Zpkz4I",
+      "image_credit": "Yardbarker",
+      "news": [
+        {
+          "url": "https://www.yardbarker.com/tennis/articles/paula_badosas_season_ends_in_retirement_as_health_struggles_strike_again_in_hong_kong/s1_17730_44512679",
+          "title": "Paula Badosa’s Season Ends in Retirement As Health Struggles Strike Again in Hong Kong",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQV78Cm7qkOcjaVX5VDs5fxvnSyESKneLNvLoDCKZRFr_3tY5mZPJTM2Zpkz4I"
+        },
+        {
+          "url": "https://www.tennis365.com/tennis-news/former-world-no-2-ends-season-tears-body-betrays-wta-star-again",
+          "title": "Former world No 2 ends her season in tears as body betrays WTA star again",
+          "publisher": "Tennis365",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7Oh1N9_zR5G99Wt4uR3abx2JNPONf5MQM4L2gpKOBK1RbA_dsQCniZDyDN48"
+        },
+        {
+          "url": "https://en.tennistemple.com/actu/paula-badosa-in-tears-her-ordeal-continues-in-hong/DY6P",
+          "title": "Paula Badosa in Tears: Her Ordeal Continues in Hong Kong",
+          "publisher": "TennisTemple",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQE7sE-P6vVPTkSeDuqTBV4veQ68PcMwPL34m5ejIA_DL4qBNGV3B0wT-cmb20"
         }
       ]
     },
     {
       "query": "nadia ferreira",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-04T08:30:00Z",
       "related_news_urls": [
         "https://www.ultimahora.com/el-paso-de-nadia-ferreira-y-su-familia-por-paraguay",
@@ -148,22 +253,22 @@
     },
     {
       "query": "susie lee",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-04T08:30:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/politics/articles/republicans-angling-congress-runs-nevada-234225126.html",
+        "https://www.washingtonexaminer.com/news/campaigns/congressional/4774347/susie-lee-marty-odonnell-nevada-election-result-after-shift-toward-democrat/",
         "https://www.washingtonpost.com/elections/results/2026/11/03/nevada-3rd-house-district-live-updates/",
-        "https://www.8newsnow.com/news/politics/daily-voting-guide/republican-marty-odonnell-running-for-congress-challenging-susie-lee-in-cd3/"
+        "https://www.yahoo.com/news/videos/republican-marty-odonnell-running-nevadas-004500991.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzTRV_z4v0UVHOst8Q7v_AMfHDvaifDwi3QiYMWugHqG6WwB7WNUrzvMUZrYI",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9ahGmYuDj7LpzHtDXdYG9XLPSR09Ctj7NKnkglCgWLltfogzdDvoJtyqOvIA",
+      "image_credit": "Washington Examiner",
       "news": [
         {
-          "url": "https://www.yahoo.com/news/politics/articles/republicans-angling-congress-runs-nevada-234225126.html",
-          "title": "Republicans angling for Congress with runs at Nevada seats held by Lee, Titus, Horsford",
-          "publisher": "Yahoo",
+          "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4774347/susie-lee-marty-odonnell-nevada-election-result-after-shift-toward-democrat/",
+          "title": "[Lee/O’Donnell] wins Nevada’s 3rd District",
+          "publisher": "Washington Examiner",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzTRV_z4v0UVHOst8Q7v_AMfHDvaifDwi3QiYMWugHqG6WwB7WNUrzvMUZrYI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9ahGmYuDj7LpzHtDXdYG9XLPSR09Ctj7NKnkglCgWLltfogzdDvoJtyqOvIA"
         },
         {
           "url": "https://www.washingtonpost.com/elections/results/2026/11/03/nevada-3rd-house-district-live-updates/",
@@ -173,17 +278,17 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp6QNHFEh6H4p6zkmLYCZjqF6L6Ll5aBPz8dptuwO78XTS0Wru0OPDLyLit3s"
         },
         {
-          "url": "https://www.8newsnow.com/news/politics/daily-voting-guide/republican-marty-odonnell-running-for-congress-challenging-susie-lee-in-cd3/",
-          "title": "Republican Marty O’Donnell running for Congress, challenging Susie Lee in CD3",
-          "publisher": "KLAS 8 News Now",
+          "url": "https://www.yahoo.com/news/videos/republican-marty-odonnell-running-nevadas-004500991.html",
+          "title": "Republican Marty O'Donnell running for Nevada's Congressional District 3 (full interview)",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4AY5oHATlCtr5FCmMJaB45n_Gn5DVnpe-TldLeARUfB6Ht88h9gNGWlO3RGk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4OpbGdMvzIlhNU_cmcBIP6aZWgjxYKXVvqRppSuc6e8U2vNMHU8dUrrXNwas"
         }
       ]
     },
     {
       "query": "tesla autopilot",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-04T08:20:00Z",
       "related_news_urls": [
         "https://www.reuters.com/business/autos-transportation/tesla-misled-south-korean-customers-about-automated-driving-tech-consumer-group-2026-11-04/",
@@ -222,8 +327,8 @@
       "published_at": "2026-11-04T08:10:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/fantasy/article/fantasy-football-waiver-wire-week-9-mike-washington-jr-among-slew-of-good-rb-pickups-to-consider-155157280.html",
-        "https://www.seahawks.com/news/fantasy-football-week-9-guide-top-starts-and-waiver-wire-rankings",
-        "https://www.nytimes.com/athletic/7751225/2026/11/04/fantasy-football-week-9-player-rankings-legend-of-zelda/"
+        "https://www.nytimes.com/athletic/7751225/2026/11/04/fantasy-football-week-9-player-rankings-legend-of-zelda/",
+        "https://www.fantasylife.com/articles/guillotine-leagues/week-9-guillotine-leagues-bidding-advice-how-much-faab-to-bid-on"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjrpzLca1_iXmRW2iINE98Ub2RWz9NVyCEJR1vfndqpbjz9ySo8OQdaUwjRE",
       "image_credit": "Yahoo Sports",
@@ -236,123 +341,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjrpzLca1_iXmRW2iINE98Ub2RWz9NVyCEJR1vfndqpbjz9ySo8OQdaUwjRE"
         },
         {
-          "url": "https://www.seahawks.com/news/fantasy-football-week-9-guide-top-starts-and-waiver-wire-rankings",
-          "title": "Fantasy Football Week 9 Guide: Top Starts And Waiver Wire Rankings",
-          "publisher": "Seattle Seahawks",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2wxQMKx7TIpPVzhHEtkmf_1SQcYLo8Zah2Y_SldSVhh6bMutddc74yu3yZGI"
-        },
-        {
           "url": "https://www.nytimes.com/athletic/7751225/2026/11/04/fantasy-football-week-9-player-rankings-legend-of-zelda/",
           "title": "NFL Week 9 fantasy football rankings and the much-anticipated Legend of Zelda top-20",
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkQPfF5v8ExUh61j5jwPt8lhxzXK1HTf-j0bdGE0Ajp_4HtwmtYHPd0mmwk4"
-        }
-      ]
-    },
-    {
-      "query": "jake bauers qualifying offer brewers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T08:00:00Z",
-      "related_news_urls": [
-        "https://www.si.com/mlb/brewers/onsi/brewers-cut-ties-with-two-veterans-including-fan-favorite-slugger-pat3",
-        "https://heavy.com/sports/mlb/new-york-yankees/ex-yankees-catcher-available-free-agent-85-million-decision/",
-        "https://www.cbssports.com/fantasy/baseball/news/gary-sanchez-mutual-option-not-picked-up/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBGJOefKlZ1Xea06nDfnjQVcVj9Ve_-goWCZSpXUB8_SIz4Zs3NMW7benmL-I",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/mlb/brewers/onsi/brewers-cut-ties-with-two-veterans-including-fan-favorite-slugger-pat3",
-          "title": "Brewers Cut Ties With Two Veterans, Including Fan Favorite Slugger",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBGJOefKlZ1Xea06nDfnjQVcVj9Ve_-goWCZSpXUB8_SIz4Zs3NMW7benmL-I"
         },
         {
-          "url": "https://heavy.com/sports/mlb/new-york-yankees/ex-yankees-catcher-available-free-agent-85-million-decision/",
-          "title": "Ex-Yankees Catcher Available as Free Agent After $8.5 Million Decision",
-          "publisher": "Heavy.com",
+          "url": "https://www.fantasylife.com/articles/guillotine-leagues/week-9-guillotine-leagues-bidding-advice-how-much-faab-to-bid-on",
+          "title": "Week 9 Guillotine Leagues™ Bidding Advice: How Much FAAB To Bid On Bijan Robinson & More",
+          "publisher": "FantasyLife",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSi2lPRBrffxg9T0Q4yl4ED7KEUzKZdXbgwUcAbz7jV9sYxZw1i4oleIo4puQ4"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/baseball/news/gary-sanchez-mutual-option-not-picked-up/",
-          "title": "Gary Sanchez: Mutual option not picked up",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb-dHKNsdou0CJAyfO2uiKbjrzubKKAMWBnjhMIMjCEgbjbnrznwi0Zd56RZ0"
-        }
-      ]
-    },
-    {
-      "query": "chicago transit authority",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T08:00:00Z",
-      "related_news_urls": [
-        "https://chi.streetsblog.org/2026/10/28/todays-headlines-for-wednesday-october-28-3",
-        "https://www.rtands.com/passenger/rapid-transit-light-rail/cta-clears-path-for-two-rehab-projects-announces-completion-of-a-third/",
-        "https://www.oakpark.com/2026/11/03/blue-line-forest-park-branch-construction/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVUFvvzNSQlfH7XTQjWGxIFaFEf2T02Qj_bVYlSxZCz9GdDFpc1nzLSjw3r4I",
-      "image_credit": "Streetsblog Chicago",
-      "news": [
-        {
-          "url": "https://chi.streetsblog.org/2026/10/28/todays-headlines-for-wednesday-october-28-3",
-          "title": "Today’s Headlines for Wednesday, October 28",
-          "publisher": "Streetsblog Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVUFvvzNSQlfH7XTQjWGxIFaFEf2T02Qj_bVYlSxZCz9GdDFpc1nzLSjw3r4I"
-        },
-        {
-          "url": "https://www.rtands.com/passenger/rapid-transit-light-rail/cta-clears-path-for-two-rehab-projects-announces-completion-of-a-third/",
-          "title": "CTA Clears Path for Two Rehab Projects, Announces Completion of Third",
-          "publisher": "Railway Track and Structures",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJpE4UkC3FSvY97SRAVWABHZ2rekApaVcxNrGcmw-cejOxrIQVsvBMRyV_9J8"
-        },
-        {
-          "url": "https://www.oakpark.com/2026/11/03/blue-line-forest-park-branch-construction/",
-          "title": "Blue Line renovations work their way to Forest Park",
-          "publisher": "Wednesday Journal of Oak Park and River Forest",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjqEYJoMyncpcMJ7o1uS0wiZtj-zV5xzp1aFUjaCq7lhxCOaFlOf7JLQXNif4"
-        }
-      ]
-    },
-    {
-      "query": "washington dc",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T08:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/district-of-columbia-results",
-        "https://www.washingtonpost.com/elections/results/2026/11/03/dc-mayor-hamilton-lewis-george-live-updates/",
-        "https://www.axios.com/local/washington-dc/2026/11/04/janeese-lewis-george-dc-mayor-election"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTATDSQghojE3iGD7rnWkDvm1FKXt68qvRgcnza8ccTHC2qNjxgiSSTaW0qn4A",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/district-of-columbia-results",
-          "title": "District of Columbia Midterm Elections 2026: Live Results",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTATDSQghojE3iGD7rnWkDvm1FKXt68qvRgcnza8ccTHC2qNjxgiSSTaW0qn4A"
-        },
-        {
-          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/dc-mayor-hamilton-lewis-george-live-updates/",
-          "title": "D.C. mayor election results 2026",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrcq6itayrtoxy6VQ8OWh1l9zQGT1mugdWK0_8uKW9tLhDCSYwfPjo5qmO6Sg"
-        },
-        {
-          "url": "https://www.axios.com/local/washington-dc/2026/11/04/janeese-lewis-george-dc-mayor-election",
-          "title": "The biggest task ahead for D.C.'s new mayor",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQViJlC5bte7F6JCL-1sEU8QhsZnKK95TX52dRK1hw52g2wqh6lqdqpF41cWIs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqnDwBKK00Yz3LZXS2-MXDBtbeZgyqn046ODKYJWaCjrCG_Dj4SQLWX4BcxaQ"
         }
       ]
     }
