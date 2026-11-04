@@ -13,10 +13,25 @@ const TOOL_NAMES=Object.freeze({
  'bubbles.image_read':['Bubbles','reading image','image read'],
  'cloudflare.d1.create':['Cloudflare','creating D1 database','D1 creation reported'],
  'cloudflare.d1.query':['Cloudflare','querying D1','D1 query reported'],
- 'cloudflare.d1.write':['Cloudflare','writing D1 records','D1 write reported']
+ 'cloudflare.d1.write':['Cloudflare','writing D1 records','D1 write reported'],
+ // The work pulse is a trail of distinct authenticated-tool observations,
+ // never a rhythm-based claim that the Brain moved code or minted currency.
+ 'github.commit':['GitHub','committing reviewed changes','commit receipt received'],
+ 'github.update_file':['GitHub','updating reviewed source','source update receipt received'],
+ 'github.workflow_checks':['GitHub','checking exact-head tests','test results received'],
+ 'github.test_result':['GitHub','verifying tests','test receipt received'],
+ 'github.merge_pull_request':['GitHub','merging an approved PR','merge receipt received'],
+ 'github.pr_merge_receipt':['GitHub','reading PR merge confirmation','merge confirmation received'],
+ 'cloudflare.worker.stage':['Cloudflare','staging Worker version','staging receipt received'],
+ 'cloudflare.worker.deploy':['Cloudflare','deploying Worker version','deployment receipt received'],
+ 'cloudflare.worker.verify':['Cloudflare','checking active Worker version','deployment readback received'],
+ 'brain.runner_receipt':['Brain','checking signed runner result','runner receipt received']
 });
 const clean=(v,n=160)=>typeof v==='string'?v.replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,n):'';
 const idOkay=v=>typeof v==='string'&&/^[A-Za-z0-9_-]{8,100}$/.test(v);
+const TECHNICAL_TOOLS=new Set(['github.commit','github.update_file','github.workflow_checks',
+ 'github.test_result','github.merge_pull_request','github.pr_merge_receipt',
+ 'cloudflare.worker.stage','cloudflare.worker.deploy','cloudflare.worker.verify','brain.runner_receipt']);
 const toolTitle=(tool,phase,provider)=>{
  const info=TOOL_NAMES[tool];if(!info)return '';
  const name=tool.startsWith('web.')&&provider==='google'?'Google':info[0];
@@ -87,7 +102,7 @@ export function advanceLiveBits(previous,event){
  if(event.type==='tool_progress'&&!existing)return s; // Don't invent a start from loose progress text.
  const phase=event.type==='tool_receipt'?(event.status==='complete'?'complete':event.status==='failed'?'failed':'unverified'):'running';
  const headline=toolTitle(tool,phase,clean(event.provider,30));
- const extra={tool,operationId:opId,criteria:clean(event.criteriaSummary,220),criteriaKey:clean(event.criteriaKey,100),resource:clean(event.resource,140),detail:clean(event.detail,220),receiptTail:idOkay(receipt)?receipt.slice(-8):''};
+ const extra={tool,operationId:opId,criteria:clean(event.criteriaSummary,220),criteriaKey:clean(event.criteriaKey,100),resource:clean(event.resource,140),detail:clean(event.detail,220),receiptTail:idOkay(receipt)?receipt.slice(-8):'',evidenceKind:TECHNICAL_TOOLS.has(tool)?'technical_execution':'activity_observation'};
  let row;
  if(existing){
   Object.assign(existing,{headline,state:phase,criteria:extra.criteria||existing.criteria,criteriaKey:extra.criteriaKey||existing.criteriaKey,resource:extra.resource||existing.resource,detail:extra.detail||existing.detail,receiptTail:extra.receiptTail||existing.receiptTail});
@@ -118,7 +133,7 @@ function mountLiveView(){
   for(const entry of state.entries){
    const li=document.createElement('li');li.className='ba-live-bit-entry';
    const heading=document.createElement('strong');heading.textContent='Iteration '+entry.number+' · '+entry.headline+' ('+entry.state+')';li.append(heading);
-   for(const [label,value] of [['Criteria',entry.criteria],['Criteria key',entry.criteriaKey],['Resource',entry.resource],['Detail',entry.detail],['Tool',entry.tool],['Receipt suffix',entry.receiptTail]]){
+   for(const [label,value] of [['Criteria',entry.criteria],['Criteria key',entry.criteriaKey],['Resource',entry.resource],['Detail',entry.detail],['Tool',entry.tool],['Evidence class',entry.evidenceKind],['Receipt suffix',entry.receiptTail]]){
     if(!value)continue;
     const small=document.createElement('small');small.textContent=label+': '+value;li.append(small);
    }
