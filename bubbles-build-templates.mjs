@@ -87,7 +87,7 @@ const NO_ACTION=/^\s*(?:(?:please|bubbles|hey bubbles)[,\s:]*)?(?:do\s+not|don't
 export function findBuildTemplate(request){
  if(typeof request!=='string'||request.length>3500)return null;
  const text=request.toLowerCase().replace(/\s+/g,' ').trim();
- if(!ACTION.test(text)||NO_ACTION.test(text))return null;
+ if(!ACTION.test(text)||NO_ACTION.test(text)||/^\s*(?:(?:please|bubbles)[,\s:]*)?(?:i|we)\s+(?:don't|do not|never)\s+(?:want|need)\b/.test(text))return null;
  for(const [id,matches] of MATCHERS)if(matches(text))return BUILD_TEMPLATES.find(x=>x.id===id)||null;
  return null;
 }
