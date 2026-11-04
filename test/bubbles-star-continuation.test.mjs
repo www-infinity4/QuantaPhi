@@ -113,3 +113,16 @@ test('a signed runner ACK is the only event that may mark a continuation queued'
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(ui,/module\.continuationActivity\(result\)/);
 });
+
+
+test('continuation makes incomplete owner queue coverage explicit instead of claiming all jobs were scanned',async()=>{
+ const fetcher=async url=>{
+  if(url.endsWith('/owner/conversation'))return {ok:true,json:async()=>({ok:true,candidates:[]})};
+  if(url.endsWith('/work/tickets/list'))return {ok:true,json:async()=>({ok:true,continuationScope:'owner_robot_directions',truncated:true,tickets:[]})};
+  throw Error('No dispatch expected for empty page');
+ };
+ const result=await continueSavedWork({fetcher,ownerHeaders:async()=>({Authorization:'Bearer synthetic-owner'}),base:'https://brain.example.test'});
+ assert.equal(result.selected.inventoryTruncated,true);
+ assert.match(continuationReply(result),/partial queue view/i);
+ assert.equal(result.dispatch,null);
+});
