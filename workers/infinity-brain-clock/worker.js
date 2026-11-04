@@ -343,7 +343,7 @@ export class BrainClock extends DurableObject{
    // IDs, owner hashes, instructions or raw blocker strings.
    const adapterMatches=admission.allowed.filter(({job})=>
     !['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status)&&
-    (engine?/^www-infinity4\\/[\\w.-]+$/.test(job.repository||''):supported(job))
+    (engine?/^www-infinity4\/[\w.-]+$/.test(job.repository||''):supported(job))
     .length;
    const idle=describeRunnerIdle({candidateCount:candidates.length,admission,
     adapterMatches,scanLimited:(rows.results||[]).length>=100});
