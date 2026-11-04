@@ -3,117 +3,327 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T20:01:35.475931Z",
+  "checked_at": "2026-11-04T20:31:00.315293Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jacoby brissett",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-04T19:40:00Z",
+      "query": "trader joe's mystery bag release",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T20:10:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25528679-nfl-insider-floats-jacoby-brissett-potential-ravens-trade-target-amid-lamar-jackson-injury",
-        "https://sports.yahoo.com/articles/ravens-expected-jacoby-brissett-week-153949413.html",
-        "https://arizonasports.com/nfl/arizona-cardinals/ravens-jacoby-brissett"
+        "https://www.ctinsider.com/news/article/trader-joes-mystery-bag-pack-22509500.php",
+        "https://people.com/trader-joes-is-bringing-back-mystery-bag-packs-with-new-designs-heres-when-12207740",
+        "https://www.silive.com/business/2026/11/why-trader-joes-3-mystery-bags-have-shoppers-buying-armfuls-every-single-time-they-hit-shelves.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQf394u8I3KHYlr2i6DIBOOWdb6diPGfvDG_wG_boXLyi00s8KsJMLFd70jW98",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6pphwBIRIxeZYqOmw50pBaBtP-oBnSHjqaSGpOPXOG-x8vuiFpTS1WLHd4k",
+      "image_credit": "CT Insider",
       "news": [
         {
-          "url": "https://bleacherreport.com/articles/25528679-nfl-insider-floats-jacoby-brissett-potential-ravens-trade-target-amid-lamar-jackson-injury",
-          "title": "NFL Insider Floats Jacoby Brissett As Potential Ravens Trade Target Amid Lamar Jackson Injury",
-          "publisher": "Bleacher Report",
+          "url": "https://www.ctinsider.com/news/article/trader-joes-mystery-bag-pack-22509500.php",
+          "title": "Trader Joe’s brings back its viral mystery tote packs, featuring two new designs",
+          "publisher": "CT Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQf394u8I3KHYlr2i6DIBOOWdb6diPGfvDG_wG_boXLyi00s8KsJMLFd70jW98"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6pphwBIRIxeZYqOmw50pBaBtP-oBnSHjqaSGpOPXOG-x8vuiFpTS1WLHd4k"
         },
         {
-          "url": "https://sports.yahoo.com/articles/ravens-expected-jacoby-brissett-week-153949413.html",
-          "title": "Ravens Expected To Go After Jacoby Brissett Before Week 10",
-          "publisher": "Yahoo Sports",
+          "url": "https://people.com/trader-joes-is-bringing-back-mystery-bag-packs-with-new-designs-heres-when-12207740",
+          "title": "Trader Joe’s Is Bringing Back Mystery Packs (with New Bag Designs) — Here’s When",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_aGiM06VtjQa6Pbub8qc2U6ZHZqbh87RT1XPLtW5CEdMCQlFbS1g9JtdQC5Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaSgbZu4UbCBzp9GevDNT8ikcUy3KCtnuG3-JFZ4-NjSMSO02hw6f5gpS18e0"
         },
         {
-          "url": "https://arizonasports.com/nfl/arizona-cardinals/ravens-jacoby-brissett",
-          "title": "Will the Ravens trade for Cardinals' Jacoby Brissett?",
-          "publisher": "Arizona Sports",
+          "url": "https://www.silive.com/business/2026/11/why-trader-joes-3-mystery-bags-have-shoppers-buying-armfuls-every-single-time-they-hit-shelves.html",
+          "title": "The Trader Joe's mystery bags that cause a frenzy every November are almost here",
+          "publisher": "SILive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSM1uwUgUvAGqACIN9PvXZzsyPCB87-wUzJN50MLbY_KT1p712aIED4Wl4SW-g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRgsFCvvtn8VFWmqGLg0tc-2p-dcYxqbPn80c0UAJvPRvMY_J1-XZAiU9Q1yA"
         }
       ]
     },
     {
-      "query": "real madrid standings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T19:40:00Z",
+      "query": "champions league schedule",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-04T20:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50377365/jj-gabriel-close-joining-real-madrid-sources",
-        "https://www.bbc.com/sport/football/articles/cq146dnrn541o",
-        "https://www.theguardian.com/football/2026/nov/04/real-madrid-jj-gabriel-manchester-united-close-agreement-sign"
+        "https://www.nytimes.com/athletic/7747489/2026/11/03/psg-villa-liverpool-madrid-betis-champions-league-analysis/",
+        "https://www.uefa.com/uefachampionsleague/news/02ab-21fc4afdbe57-11bbecf54b40-1000--champions-league-highlights-and-round-up-paris-remain-per/",
+        "https://onefootball.com/en/news/man-utd-barcelona-psg-in-ucl-action-galatasaray-sporting-win-43719685"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-7kGPKrjQNWN25JVtvZWtYfOMIF54uleSxPk3P8rk5sNIIMpdZp97u5BiMlI",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDRcdRyfTpXPBKngpxAfghusqnV6IfWrVmnKbgthmH1rIH7oQiydfrLsp_iAY",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7747489/2026/11/03/psg-villa-liverpool-madrid-betis-champions-league-analysis/",
+          "title": "PSG, Aston Villa, Liverpool, Real Madrid and Betis: The Champions League’s flawless five - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDRcdRyfTpXPBKngpxAfghusqnV6IfWrVmnKbgthmH1rIH7oQiydfrLsp_iAY"
+        },
+        {
+          "url": "https://www.uefa.com/uefachampionsleague/news/02ab-21fc4afdbe57-11bbecf54b40-1000--champions-league-highlights-and-round-up-paris-remain-per/",
+          "title": "Champions League highlights and round-up: Paris remain perfect as Barcelona, Manchester United and Bayern win",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIsOmKGN0-yYZsxC6dOT89akxNx4Kt3-eHpZCHpqoG-rTBGjqlDOSyZcOrSA"
+        },
+        {
+          "url": "https://onefootball.com/en/news/man-utd-barcelona-psg-in-ucl-action-galatasaray-sporting-win-43719685",
+          "title": "Man Utd, Barcelona, PSG in UCL action; Galatasaray & Sporting win",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpnX4_iUQYGXgUzOb3o8XqNsTigh6YTx78CTzS9D5JGKgIl5FGYvw9QMcne1E"
+        }
+      ]
+    },
+    {
+      "query": "dortmund",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T20:00:00Z",
+      "related_news_urls": [
+        "https://www.kicker.de/dortmund-gegen-betis-2026-champions-league-5264399/ticker",
+        "https://www.bild.de/sport/fussball/bvb-die-emotionale-bartra-rueckkehr-neun-jahre-nach-dem-bombenanschlag-6ae8e50eb3f0fa60211d6aca",
+        "https://www.skysportaustria.at/mediathek/zu-beginn-ohne-oesterreicher-sky-reporter-berger-ueber-bvb-aufstellung/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx86c9LULfbkg5VFHIcot72elpwcnrp3rb4lu5PcOUwimdDLPjGLt0HWZcEvc",
+      "image_credit": "Kicker",
+      "news": [
+        {
+          "url": "https://www.kicker.de/dortmund-gegen-betis-2026-champions-league-5264399/ticker",
+          "title": "Liveticker | Borussia Dortmund - Real Betis Sevilla 0:0 | 4. Spieltag | Champions League 2026/27",
+          "publisher": "Kicker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx86c9LULfbkg5VFHIcot72elpwcnrp3rb4lu5PcOUwimdDLPjGLt0HWZcEvc"
+        },
+        {
+          "url": "https://www.bild.de/sport/fussball/bvb-die-emotionale-bartra-rueckkehr-neun-jahre-nach-dem-bombenanschlag-6ae8e50eb3f0fa60211d6aca",
+          "title": "BVB: Die emotionale Bartra-Rückkehr neun Jahre nach dem Bombenanschlag",
+          "publisher": "BILD",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTlSBL94KVKZGM4aMiku6X9YpLLHC-4fdXgOupQm7ni2bi5UD6-bk_HiYaRE4"
+        },
+        {
+          "url": "https://www.skysportaustria.at/mediathek/zu-beginn-ohne-oesterreicher-sky-reporter-berger-ueber-bvb-aufstellung/",
+          "title": "\"Zu Beginn ohne Österreicher\": Sky-Reporter Berger über BVB-Aufstellung",
+          "publisher": "Sky Sport Austria",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdMZumvGIkw2aM3oSV9NtrNmtiwLDkmsgJLxhCL3Q3X-nQ0Dir1Fgo0j7NO_U"
+        }
+      ]
+    },
+    {
+      "query": "psv vs club brugge",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-04T20:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/team-stats/_/gameId/401915304/league/uefa.champions",
+        "https://www.espn.com/video/clip/_/id/50359520",
+        "https://www.espn.com/soccer/team-stats/_/gameId/401915382/league/uefa.champions"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdeR73MSZs3iSfegyGnPR0Oxs-WOl-DcW9KlVqgOd_6p9u9T-VUBdW4eEbpKA",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50377365/jj-gabriel-close-joining-real-madrid-sources",
-          "title": "JJ Gabriel close to joining Real Madrid - sources",
+          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401915304/league/uefa.champions",
+          "title": "Dortmund vs. Betis (Nov 4, 2026) Team Stats",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-7kGPKrjQNWN25JVtvZWtYfOMIF54uleSxPk3P8rk5sNIIMpdZp97u5BiMlI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdeR73MSZs3iSfegyGnPR0Oxs-WOl-DcW9KlVqgOd_6p9u9T-VUBdW4eEbpKA"
         },
         {
-          "url": "https://www.bbc.com/sport/football/articles/cq146dnrn541o",
-          "title": "JJ Gabriel transfer news: Real Madrid confident of signing Manchester United forward",
-          "publisher": "BBC",
+          "url": "https://www.espn.com/video/clip/_/id/50359520",
+          "title": "Jerzy Robinson's lob attempt ends up going in for a South Carolina trey",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3wm7hFnZBBfvR8EV8JhpojiCrLAjnVs4c1x4gzgxCmV6UFNyCiYfI-iTRjDE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9O25BkRWrR-cIc09eDWjgikXp0r7lIlmEjMuT54ECEgQtQym7-RIsg6YzPAo"
         },
         {
-          "url": "https://www.theguardian.com/football/2026/nov/04/real-madrid-jj-gabriel-manchester-united-close-agreement-sign",
-          "title": "Real Madrid close on agreement to sign Manchester United 16-year-old JJ Gabriel",
-          "publisher": "The Guardian",
+          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401915382/league/uefa.champions",
+          "title": "Fenerbahce vs. Liverpool (Nov 4, 2026) Team Stats",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuadWqjEHHGa4VuKPfdDONTbLmAGGXSChZnQTuOQWH54P_3hfDz3osEvbGCGU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOWDMAo03hOAbGR8_ynkqviMEjz_WWpx_0rTMHoClHBgj6GzO6ZlFasHgX39I"
         }
       ]
     },
     {
-      "query": "federico valverde",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T19:40:00Z",
+      "query": "champions league standings",
+      "approx_searches": "100000+",
+      "published_at": "2026-11-04T19:50:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17474982/mourinho-valverde-posicion-responsabilidad-capitan-real-madrid",
-        "https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo/ruedas-de-prensa/mourinho-xxxx-03-11-2026",
-        "https://es-us.noticias.yahoo.com/deportes/real-madrid-confirma-alineaci%C3%B3n-enfrentar-174333363.html"
+        "https://www.espn.com/soccer/story/_/id/50372373/did-man-united-champions-league-comeback-save-carrick-job",
+        "https://sports.yahoo.com/articles/haven-t-done-shea-lacey-181300375.html",
+        "https://www.bbc.com/sport/football/articles/cqx28zjxdxxzo"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3q4HKddBd6gxaMtpNiPAD8xSKBZQwgZ233IRMDNhNcQE2la3d7OiRb4sNJBM",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAGsZSa3C2BIda4DuEP5NzyNNocRbzCOAilUbPs7JjyFAN8dFVIp3hlz31jQM",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17474982/mourinho-valverde-posicion-responsabilidad-capitan-real-madrid",
-          "title": "Mourinho: la posición de Federico Valverde y la responsabilidad de ser capitán",
-          "publisher": "ESPN Deportes",
+          "url": "https://www.espn.com/soccer/story/_/id/50372373/did-man-united-champions-league-comeback-save-carrick-job",
+          "title": "Did Man United's Champions League comeback save Carrick's job?",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3q4HKddBd6gxaMtpNiPAD8xSKBZQwgZ233IRMDNhNcQE2la3d7OiRb4sNJBM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAGsZSa3C2BIda4DuEP5NzyNNocRbzCOAilUbPs7JjyFAN8dFVIp3hlz31jQM"
         },
         {
-          "url": "https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo/ruedas-de-prensa/mourinho-xxxx-03-11-2026",
-          "title": "Mourinho: \"Hay que jugar a tope, serios y mantener nuestro nivel de juego\"",
-          "publisher": "Real Madrid CF | Web Oficial",
+          "url": "https://sports.yahoo.com/articles/haven-t-done-shea-lacey-181300375.html",
+          "title": "“Haven’t done it before”: Shea Lacey opens up on surprise role change in Man United’s 3-2 win over AS Roma",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXg5-8MIr7TcexTX2JvuYOt5cdoAtH0WMdmBO5YBPBIFs_A7OTioKz5uVA_Kg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY2TAO3TJDX_zSAsJFdisMSaBpWbUG2_ZPN22HqNRnwYAx3tU_MGW1lmPtSaQ"
         },
         {
-          "url": "https://es-us.noticias.yahoo.com/deportes/real-madrid-confirma-alineaci%C3%B3n-enfrentar-174333363.html",
-          "title": "Real Madrid confirma su alineación para enfrentar al AEK: Mbappé y Vinícius titulares",
-          "publisher": "Yahoo",
+          "url": "https://www.bbc.com/sport/football/articles/cqx28zjxdxxzo",
+          "title": "Man Utd: Michael Carrick run has echoes of Jose Mourinho and Ole Gunnar Solskjaer",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBca3nEQI4IzwLC7XS_9fGP9qhPtlomFUpXe08onDnS7oYK_G6LG1VyPJLJFI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpFiRV3HfH_FwL9Q20mE52burETi1iDOOMZ8jnQDm90ljftoqtGhW4XldwkLM"
+        }
+      ]
+    },
+    {
+      "query": "raising cane's new store openings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T19:50:00Z",
+      "related_news_urls": [
+        "https://nypost.com/2026/11/04/lifestyle/raising-canes-opening-12-new-stores-this-month/",
+        "https://www.usatoday.com/story/money/food/2026/11/03/raising-canes-openings-list-new-states/92566655007/",
+        "https://shorebeat.com/brick/2026/11/raising-canes-opens-first-jersey-shore-store-in-brick-monday/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZuNP3yKVmvvQZnwjQ-Q46VV6vFWoemCFeT0UeZR7yF-XFHDbWdrcsueIBAqo",
+      "image_credit": "New York Post",
+      "news": [
+        {
+          "url": "https://nypost.com/2026/11/04/lifestyle/raising-canes-opening-12-new-stores-this-month/",
+          "title": "Cult favorite fried chicken chain opening 12 new stores this month",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZuNP3yKVmvvQZnwjQ-Q46VV6vFWoemCFeT0UeZR7yF-XFHDbWdrcsueIBAqo"
+        },
+        {
+          "url": "https://www.usatoday.com/story/money/food/2026/11/03/raising-canes-openings-list-new-states/92566655007/",
+          "title": "Raising Cane's has 12 new restaurants opening this November",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiQ1gjunSf3gpQnJjkZCtzH3j9T8340DJWauxcKSAoZ6DWqrrTnnuVxsitetQ"
+        },
+        {
+          "url": "https://shorebeat.com/brick/2026/11/raising-canes-opens-first-jersey-shore-store-in-brick-monday/",
+          "title": "Raising Cane’s Opens First Jersey Shore Store in Brick Monday",
+          "publisher": "Shorebeat",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTForXE-sSlSNuVWNi34hnQmM_tiOBb7cuFg8vO1RBd3Oi18RNtVx6VF-EZdE4"
+        }
+      ]
+    },
+    {
+      "query": "michael jackson family trust funding",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T19:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/03/arts/paris-jackson-michael-jackson-estate.html",
+        "https://ca.news.yahoo.com/michael-jackson-daughter-seeks-600-070203962.html",
+        "https://www.cbc.ca/news/entertainment/paris-jackson-michael-jackson-estate-trust-fund-9.7407499"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNdIpaBuhCbHQPRFWzNaj7Ew1I4DsJpb6G2KDMfgOxRYTCKwfai-HxLXRjhgU",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/03/arts/paris-jackson-michael-jackson-estate.html",
+          "title": "Paris Jackson Asks Father’s Estate to Fund $600M to Family Trust",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNdIpaBuhCbHQPRFWzNaj7Ew1I4DsJpb6G2KDMfgOxRYTCKwfai-HxLXRjhgU"
+        },
+        {
+          "url": "https://ca.news.yahoo.com/michael-jackson-daughter-seeks-600-070203962.html",
+          "title": "Michael Jackson’s Daughter Seeks $600 Million From His Estate, Says Trust Remains Unfunded",
+          "publisher": "Yahoo News Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQERITMiFTESyDh9Y3hQs-1gHLLZAk_risNWoUx6EWjPoXSj38yhRM9KsC8H8w"
+        },
+        {
+          "url": "https://www.cbc.ca/news/entertainment/paris-jackson-michael-jackson-estate-trust-fund-9.7407499",
+          "title": "Paris Jackson asks court to move $600M US from Michael Jackson estate into family trust",
+          "publisher": "CBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-zqTc4OV7Vmj5J0XAgm7EMKVuONdvQkDWbXuuThOds-S1z33U-et-BXKnvM8"
+        }
+      ]
+    },
+    {
+      "query": "vinícius júnior",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T19:50:00Z",
+      "related_news_urls": [
+        "https://www.uol.com.br/splash/noticias/2026/11/03/vini-jr-convida-sadie-sink-a-camarote-e-recebe-resposta-negativa.ghtm",
+        "https://entretenimento.r7.com/prisma/fabiola-reipert/xaveco-deu-errado-vini-jr-leva-toco-da-atriz-sadie-sink-03112026/",
+        "https://revistamonet.globo.com/celebridades/noticia/2026/11/o-que-tem-de-verdade-nos-rumores-de-que-vini-jr-teria-tomado-um-fora-da-atriz-sadie-sink-de-stranger-things.ghtml"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUtfkYYLvYQkg7B3B0A_gcv9KaTYaxukaTwclK91q-MHtp0RKJj5X6xe-wU0",
+      "image_credit": "UOL",
+      "news": [
+        {
+          "url": "https://www.uol.com.br/splash/noticias/2026/11/03/vini-jr-convida-sadie-sink-a-camarote-e-recebe-resposta-negativa.ghtm",
+          "title": "Vini Jr. leva fora de atriz de 'Stranger Things', diz jornal",
+          "publisher": "UOL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUtfkYYLvYQkg7B3B0A_gcv9KaTYaxukaTwclK91q-MHtp0RKJj5X6xe-wU0"
+        },
+        {
+          "url": "https://entretenimento.r7.com/prisma/fabiola-reipert/xaveco-deu-errado-vini-jr-leva-toco-da-atriz-sadie-sink-03112026/",
+          "title": "Xaveco deu errado! Vini Jr. leva toco da atriz Sadie Sink",
+          "publisher": "R7 Entretenimento",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4vPkQCfE3JVvxGs9EUAh6lm2z_maE2uYe9aD_I2c6A4gtiscV_Mu5r9CQj68"
+        },
+        {
+          "url": "https://revistamonet.globo.com/celebridades/noticia/2026/11/o-que-tem-de-verdade-nos-rumores-de-que-vini-jr-teria-tomado-um-fora-da-atriz-sadie-sink-de-stranger-things.ghtml",
+          "title": "O que tem de verdade nos rumores de que Vini Jr. teria tomado um fora da atriz Sadie Sink, de 'Stranger Things'",
+          "publisher": "Globo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt0ENkRD7I8xoLfs4uxLeJu-Mn2PmdY8lvuR3tQIXNoxsogrU5tX01AkfH1Ts"
+        }
+      ]
+    },
+    {
+      "query": "jacoby brissett",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-04T19:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50381318/sources-ravens-finalizing-trade-cardinals-qb-brissett",
+        "https://www.nfl.com/news/jacoby-brissett-trade-ravens-cardinals",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-ravens-finalizing-trade-for-jacoby-brissett"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpnxXfs-CAu3arsg-cFxBY7cM377-P_mNO3zjvmb2UW5eGNdSd1AsaEWNCxZY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50381318/sources-ravens-finalizing-trade-cardinals-qb-brissett",
+          "title": "Sources - Ravens finalizing trade with Cardinals for QB Brissett",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpnxXfs-CAu3arsg-cFxBY7cM377-P_mNO3zjvmb2UW5eGNdSd1AsaEWNCxZY"
+        },
+        {
+          "url": "https://www.nfl.com/news/jacoby-brissett-trade-ravens-cardinals",
+          "title": "NFL Network: Cardinals to trade QB Jacoby Brissett to Ravens",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUo968ZXGpWJ4cN61qVg8ZaVectnQ4KgIPBrfBOxjAyPj9y05YkocuaYTDGIU"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-ravens-finalizing-trade-for-jacoby-brissett",
+          "title": "Report: Ravens finalizing trade for Jacoby Brissett",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2Qf-JI-MmdXpyHJbuniQp0BwbA2Vklz_VrxdKUiWkyG1Lpai6ztFWQ13g2LY"
         }
       ]
     },
     {
       "query": "cardinals depth chart",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-04T19:40:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/arizona-cardinals-week-9-depth-123132946.html",
@@ -143,216 +353,6 @@
           "publisher": "Raising Zona",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZa20FLT_1NAswEFQQcj-ejl2F_6faziBeKhUO9klXJ25Ndsr18gSmSo2Ri_g"
-        }
-      ]
-    },
-    {
-      "query": "uic",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T19:40:00Z",
-      "related_news_urls": [
-        "https://www.fox32chicago.com/news/uic-student-alert",
-        "https://www.cbsnews.com/chicago/news/uic-warns-police-activity-student-center/",
-        "https://abc7chicago.com/post/chicago-news-today-public-urged-avoid-uic-student-center-east-due-police-activity-second-floor-say/20015610/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv3L2eLV7Bj-jsxWUHVopymMUl1lRtEJss-R87dDe_c6kexhWSrhTTwHrH_HY",
-      "image_credit": "FOX 32 Chicago",
-      "news": [
-        {
-          "url": "https://www.fox32chicago.com/news/uic-student-alert",
-          "title": "UIC urges students to avoid part of campus amid police activity",
-          "publisher": "FOX 32 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv3L2eLV7Bj-jsxWUHVopymMUl1lRtEJss-R87dDe_c6kexhWSrhTTwHrH_HY"
-        },
-        {
-          "url": "https://www.cbsnews.com/chicago/news/uic-warns-police-activity-student-center/",
-          "title": "UIC warns of police activity at student center",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_lp45XmyCAi5wSxw5Cmio5OUYbs4EW3OWe35Psn4qtmpARGy94Ffegp6r6g"
-        },
-        {
-          "url": "https://abc7chicago.com/post/chicago-news-today-public-urged-avoid-uic-student-center-east-due-police-activity-second-floor-say/20015610/",
-          "title": "Chicago news, today: Public urged to avoid UIC Student Center East due to police activity on second floor, police say",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_5JQkiuAaztdj-75LCCAyrD8PDztsJ_w40A6UA4rsVaWXF4Yj6o1-eE6I3Ho"
-        }
-      ]
-    },
-    {
-      "query": "bristol city vs wolves",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T19:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c9m26p5gxy25t",
-        "https://www.wolves.co.uk/news/mens-first-team/20261103-peixoto-we-have-to-maintain-our-focus-on-our-big-goal/",
-        "https://onefootball.com/en/news/elokobi-afobe-and-keogh-wolves-and-bristol-city-played-for-both-xi-43722147"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1DjQCVpnnIH4YoVyYB3hoIBgZNDnFMsITKKgxaQ4Ldbo7Ze06F2lMx2EgdZQ",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c9m26p5gxy25t",
-          "title": "Bristol City v Wolverhampton Wanderers: Championship stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1DjQCVpnnIH4YoVyYB3hoIBgZNDnFMsITKKgxaQ4Ldbo7Ze06F2lMx2EgdZQ"
-        },
-        {
-          "url": "https://www.wolves.co.uk/news/mens-first-team/20261103-peixoto-we-have-to-maintain-our-focus-on-our-big-goal/",
-          "title": "Peixoto | 'We have to maintain our focus on our big goal' | Men's First-Team | Latest News",
-          "publisher": "Wolverhampton Wanderers FC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRb7WH9joym7KSZhJBaaB0ffvBquTPMRkx4edvdVU_E0s575g3VH8qaOnTbTR0"
-        },
-        {
-          "url": "https://onefootball.com/en/news/elokobi-afobe-and-keogh-wolves-and-bristol-city-played-for-both-xi-43722147",
-          "title": "Elokobi, Afobe and Keogh: Wolves and Bristol City played-for-both XI",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMqFloP9g_LjlgFnmm7ZmYIM6VgHvXcHJZ1MfHbKznetKJkb_QMb2PVaD48Zo"
-        }
-      ]
-    },
-    {
-      "query": "malachi toney",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T19:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/betting/article/college-football-playoff-ranking-odds-no-1-miami-fl-will-be-historic-underdog-against-notre-dame-on-saturday-192430244.html",
-        "https://www.cbssports.com/college-football/news/cj-carr-defining-moment-notre-dames-cfp-hopes-miami/",
-        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article317886345.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6xe2z67VvOZa3YD9Be-_405aTqm8cwn7sSNxOUJjlfaR0vUumSjazZsu5ah0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/betting/article/college-football-playoff-ranking-odds-no-1-miami-fl-will-be-historic-underdog-against-notre-dame-on-saturday-192430244.html",
-          "title": "College Football Playoff ranking, odds: No. 1 Miami (FL) will be historic underdog against Notre Dame on Saturday",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6xe2z67VvOZa3YD9Be-_405aTqm8cwn7sSNxOUJjlfaR0vUumSjazZsu5ah0"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/cj-carr-defining-moment-notre-dames-cfp-hopes-miami/",
-          "title": "CJ Carr faces defining moment as Notre Dame's CFP hopes ride on showdown vs. No. 1 Miami",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ27zsCMWm8QUjzzsO9U9i_YvKUc57x_2xPgR747w2hazRkq9fomgBesChC3CA"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article317886345.html",
-          "title": "Miami-Notre Dame put Malachi Toney on college football’s radar. It’s time for Round 2",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmzBVgPxJRNLHCd1xQHMJ3DGQnn9-nkWuJNWQDkwkDrcjGjTUY0iYDwVrm0PI"
-        }
-      ]
-    },
-    {
-      "query": "police",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T19:30:00Z",
-      "related_news_urls": [
-        "https://www.wral.com/news/local/durham-police-investigation-holloway-street-november-2026/",
-        "https://www.cbs17.com/news/local-news/durham-county-news/man-shot-in-durham-dispute-over-money-k-9-team-and-officers-swarm-exum-street-police/",
-        "https://hoodline.com/2026/11/man-shot-in-money-dispute-as-k-9-unit-officers-swarm-durham-s-exum-street/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOUR4K1FHaYzFCgNmJ9k0NRfJen6-_kMlWlUiY5AUuxRsg4HCpYBPN1iuPlaQ",
-      "image_credit": "WRAL",
-      "news": [
-        {
-          "url": "https://www.wral.com/news/local/durham-police-investigation-holloway-street-november-2026/",
-          "title": "Man shot in east Durham taken to hospital with serious injuries",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOUR4K1FHaYzFCgNmJ9k0NRfJen6-_kMlWlUiY5AUuxRsg4HCpYBPN1iuPlaQ"
-        },
-        {
-          "url": "https://www.cbs17.com/news/local-news/durham-county-news/man-shot-in-durham-dispute-over-money-k-9-team-and-officers-swarm-exum-street-police/",
-          "title": "Man shot in Durham dispute over money; K-9 team and officers swarm Exum Street: Police",
-          "publisher": "CBS 17",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiteYD-hy9y8pX5NY6HwUTBzjAN55wG7Qb0lJIyVm4uY_RhtbE7GPt9svm2u8"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/man-shot-in-money-dispute-as-k-9-unit-officers-swarm-durham-s-exum-street/",
-          "title": "Durham Shooting on Exum Street Leaves Man Hospitalized",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQijmwQ6h-RBcGNi4XIUppZe6ri490fGfl5toyGQ6GLNPtLr5KyXlSMy2en4A"
-        }
-      ]
-    },
-    {
-      "query": "jalen milroe",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T19:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/seattle-seahawks-announce-qb-injury-025515725.html",
-        "https://www.cbssports.com/fantasy/football/news/seahawks-drew-lock-limited-to-open-week/",
-        "https://www.rotowire.com/football/headlines/drew-lock-injury-serving-as-emergency-qb-645638"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLYCMIBuJ8upkUrGHPh5LP2jQu9wbsEiF2zhOvfM31xKvWwTEq2raPLTHcr5g",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/seattle-seahawks-announce-qb-injury-025515725.html",
-          "title": "Seattle Seahawks Announce Late QB Injury News Before Bears MNF Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLYCMIBuJ8upkUrGHPh5LP2jQu9wbsEiF2zhOvfM31xKvWwTEq2raPLTHcr5g"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/seahawks-drew-lock-limited-to-open-week/",
-          "title": "Seahawks' Drew Lock: Limited to open week",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGI5fyhQ-VNoR5OjUJKA5HiGhRinx_c2mJspNiCm3HSxYFfCdA4QSeBF66Ofo"
-        },
-        {
-          "url": "https://www.rotowire.com/football/headlines/drew-lock-injury-serving-as-emergency-qb-645638",
-          "title": "Drew Lock Injury: Serving as emergency QB",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiDlhxxO9uRbDVCAw7Upkn8Wk4Npg0cWH3CURaVeGvIDNrrT60fm6gaRxuME4"
-        }
-      ]
-    },
-    {
-      "query": "lens vs como",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T19:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/champions-league-line-ups-rc-185500788.html",
-        "https://www.goal.com/en-us/news/watch-lens-vs-como-live-today-who-is-showing-the-match-on-tv-and-via-live-stream/blt0c5998ac1a4f286d",
-        "https://www.oddschecker.com/us/soccer/cng202-20261104-lens-vs-como-confirmed-lineups-game-prediction"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-jkhncSkuL0wDgKrrEwHFeO94MFHDAQ9oDsiKiSN4FspfNVZYZ2_skq2mQU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/champions-league-line-ups-rc-185500788.html",
-          "title": "Champions League line-ups: RC Lens vs. Como",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-jkhncSkuL0wDgKrrEwHFeO94MFHDAQ9oDsiKiSN4FspfNVZYZ2_skq2mQU"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/watch-lens-vs-como-live-today-who-is-showing-the-match-on-tv-and-via-live-stream/blt0c5998ac1a4f286d",
-          "title": "Watch Lens vs Como live today: Who is showing the match on TV and via live stream?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdT8NvevEcYbiXpmAaDyi-eGg-MR1XjM7G9NoZT9V_ApIUmtO2e4zN1NUBXgY"
-        },
-        {
-          "url": "https://www.oddschecker.com/us/soccer/cng202-20261104-lens-vs-como-confirmed-lineups-game-prediction",
-          "title": "Lens vs Como: Confirmed Lineups & Game Prediction",
-          "publisher": "Oddschecker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfrLv2C2USeDdwrnL5J1P_KHKwU-3RAh68aL9yOgKsH0asEeo_ivoS6KvHCUA"
         }
       ]
     }
