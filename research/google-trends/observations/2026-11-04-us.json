@@ -3,12 +3,257 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T22:01:38.048511Z",
+  "checked_at": "2026-11-04T22:31:33.013691Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "flamengo vs grêmio",
+      "query": "stick season 2",
       "approx_searches": "1000+",
+      "published_at": "2026-11-04T22:10:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/2026/nov/04/stick-review-owen-wilson-golf-rhea-seehorn-season-two",
+        "https://people.com/meet-stick-season-2-new-characters-cast-12199298",
+        "https://www.rogerebert.com/streaming/stick-season-2-owen-wilson-apple-tv-review-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0VvhgGLY50KIpz2Rdwx4RJU3eZUmwCeLZPDDAjmDg8MGWUusWKD91EhqbvM",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/04/stick-review-owen-wilson-golf-rhea-seehorn-season-two",
+          "title": "Stick review – you really need Owen Wilson’s beautiful golf comedy in your life",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0VvhgGLY50KIpz2Rdwx4RJU3eZUmwCeLZPDDAjmDg8MGWUusWKD91EhqbvM"
+        },
+        {
+          "url": "https://people.com/meet-stick-season-2-new-characters-cast-12199298",
+          "title": "Meet the New Characters in ‘Stick’ Season 2",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTP7wZiudUDQr6FXQ3cEoCIWhN612HEMlNgjwSpAZxP38_WUnZaStx1A8rjdN4"
+        },
+        {
+          "url": "https://www.rogerebert.com/streaming/stick-season-2-owen-wilson-apple-tv-review-2026",
+          "title": "Apple TV’s “Stick” Stays On Par For Its Second Season",
+          "publisher": "Roger Ebert",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvafLDM44Ea1sT5Dp1LcRTai10DJixuy096eD7LgldhC_94mXu5Ssf0S25SCw"
+        }
+      ]
+    },
+    {
+      "query": "jaylen watson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T22:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaylen-watson-to-undergo-season-ending-shoulder-surgery",
+        "https://sports.yahoo.com/articles/rams-cb-jaylen-watson-season-221121768.html",
+        "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/04/former-kansas-city-chiefs-jaylen-watson-season-ending-shoulder-surgery-los-angeles-rams-nfl-week-9/92616657007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxpjy4q2Su2TngpYLKsqjNbfHD8wmkA1VyHOhSfYUaZ2jTQksFEyDn-GCN5U",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaylen-watson-to-undergo-season-ending-shoulder-surgery",
+          "title": "Jaylen Watson to undergo season-ending shoulder surgery",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxpjy4q2Su2TngpYLKsqjNbfHD8wmkA1VyHOhSfYUaZ2jTQksFEyDn-GCN5U"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rams-cb-jaylen-watson-season-221121768.html",
+          "title": "Rams CB Jaylen Watson out for season due to shoulder injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf6riDWbgClS243bqFR1KV7A_koohLxupAEnRQWrNNfA3x0r8vGGVAJ5_3Eqc"
+        },
+        {
+          "url": "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/04/former-kansas-city-chiefs-jaylen-watson-season-ending-shoulder-surgery-los-angeles-rams-nfl-week-9/92616657007/",
+          "title": "Ex-Chiefs DB Jaylen Watson to have season-ending shoulder surgery",
+          "publisher": "Chiefs Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKhZR8TJMCHYOjbEsUhtmi724fk1UNFUSR15kaZ3oBorgvzSFHpYDVooRiBOg"
+        }
+      ]
+    },
+    {
+      "query": "beckett sennecke",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T21:50:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/hockey/news/ducks-beckett-sennecke-rounds-up-bushel-of-apples/",
+        "https://www.rotowire.com/hockey/headlines/beckett-sennecke-news-rounds-up-bushel-of-apples-598432",
+        "https://www.tsn.ca/nhl/article/penalty-kill-problems-continue-to-plague-canucks-its-cost-us-the-whole-year/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt_Fy4SpLyXe6U5dQQoJZl0E8C4TABq7hY3EzUPT6vV9G4tGMJC2HjcsAJsAo",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/hockey/news/ducks-beckett-sennecke-rounds-up-bushel-of-apples/",
+          "title": "Ducks' Beckett Sennecke: Rounds up bushel of apples",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt_Fy4SpLyXe6U5dQQoJZl0E8C4TABq7hY3EzUPT6vV9G4tGMJC2HjcsAJsAo"
+        },
+        {
+          "url": "https://www.rotowire.com/hockey/headlines/beckett-sennecke-news-rounds-up-bushel-of-apples-598432",
+          "title": "Beckett Sennecke News: Rounds up bushel of apples",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgFlC23hiI9rcxai53opAg4IuiOXI6DIwweelugYgLoCA2Hb8YBqKwZyCzKbU"
+        },
+        {
+          "url": "https://www.tsn.ca/nhl/article/penalty-kill-problems-continue-to-plague-canucks-its-cost-us-the-whole-year/",
+          "title": "Penalty kill problems continue to plague Canucks: ‘It’s cost us the whole year’",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMpH10kQgsbri6YB45O-dzwJ1hRT9xEMk9hbPdjzMzAVtfsVVaUjEkC0SOz0M"
+        }
+      ]
+    },
+    {
+      "query": "viking fk",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T21:50:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/soccer/news/vikings-ucl-journey-and-the-rise-of-co-head-coaches/",
+        "https://www.oregonlive.com/tv/2026/11/how-to-watch-viking-fk-vs-sabah-fk-today-champions-league-preview-start-time-odds.html",
+        "https://en.apa.az/football/champions-league-sabah-returns-from-norway-without-points-534103"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROe8vYc9W93ajCYkem02JAKLW_Bbg-9YZ9IxautHNkoBQlT5dEcyADNnJxisY",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/soccer/news/vikings-ucl-journey-and-the-rise-of-co-head-coaches/",
+          "title": "Viking's UCL journey and the rise of co-head coaches: Why two managers might be better than one",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROe8vYc9W93ajCYkem02JAKLW_Bbg-9YZ9IxautHNkoBQlT5dEcyADNnJxisY"
+        },
+        {
+          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-viking-fk-vs-sabah-fk-today-champions-league-preview-start-time-odds.html",
+          "title": "How to watch Viking FK vs. Sabah FK today: Champions League preview, start time, odds",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_VDeyJSCSk89B7Pa61SrFDRGv-OwdwGogi8Uw9mCHsiblqaiVn8sW1-ZP0Q"
+        },
+        {
+          "url": "https://en.apa.az/football/champions-league-sabah-returns-from-norway-without-points-534103",
+          "title": "Champions League: Sabah returns from Norway without points",
+          "publisher": "Apa.az",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMUTd36X7tuM0PfAlaFbiONbvMWIp-VERFUR64vKhwDaFE7c7SwOnehXUiuI"
+        }
+      ]
+    },
+    {
+      "query": "porto",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T21:50:00Z",
+      "related_news_urls": [
+        "https://www.rtp.pt/noticias/desporto/fc-porto-goleia-napoles-e-conquista-primeiros-pontos-na-champions_e1776916",
+        "https://www.abola.pt/noticias/diogo-costa-travou-duas-vezes-mas-mctominay-gelou-o-dragao-video-2026110420503678829",
+        "https://www.record.pt/multimedia/videos/detalhe/presenca-da-claque-do-napoles-obriga-a-reforco-policial-nas-imediacoes-do-estadio-do-dragao"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8bMiKXXDy82fFGcrQGDILO47VmcIuSETNX3CEcMryY1-Ed9PkJI5fVs5hBw",
+      "image_credit": "RTP",
+      "news": [
+        {
+          "url": "https://www.rtp.pt/noticias/desporto/fc-porto-goleia-napoles-e-conquista-primeiros-pontos-na-champions_e1776916",
+          "title": "FC Porto goleia Nápoles e conquista primeiros pontos na Champions",
+          "publisher": "RTP",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8bMiKXXDy82fFGcrQGDILO47VmcIuSETNX3CEcMryY1-Ed9PkJI5fVs5hBw"
+        },
+        {
+          "url": "https://www.abola.pt/noticias/diogo-costa-travou-duas-vezes-mas-mctominay-gelou-o-dragao-video-2026110420503678829",
+          "title": "Diogo Costa travou duas vezes, mas McTominay gelou o Dragão (vídeo)",
+          "publisher": "A Bola",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTkWDmqVKEUZE5HQpcaafmWTtoS9hlkAN_tnWDVJs5H4U-Sfk_S-PwVh_PWOk"
+        },
+        {
+          "url": "https://www.record.pt/multimedia/videos/detalhe/presenca-da-claque-do-napoles-obriga-a-reforco-policial-nas-imediacoes-do-estadio-do-dragao",
+          "title": "Presença da claque do Nápoles obriga a reforço policial nas imediações do Estádio do Dragão",
+          "publisher": "Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNKQgYeQxB_yucdiH6qliwBMMAblb3oE8_i3_kyYwbnszb_rJpkLoklpnaM9s"
+        }
+      ]
+    },
+    {
+      "query": "antonio nusa",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T21:50:00Z",
+      "related_news_urls": [
+        "https://www.idahostatejournal.com/sports/national/germany-champions-league-soccer/image_58ca9094-8864-5dee-9abd-42ea4d2ff1e1.html",
+        "https://www.idahopress.com/sports/national/germany-champions-league-soccer/image_12de13b7-5ad7-553f-a452-7e6988b96dd6.html",
+        "https://www.idahopress.com/sports/national/germany-champions-league-soccer/image_1c3c9cee-3c2d-5b5b-bc00-14edaaf7600b.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWeJv5cRAyKTVwTntuciN3yryXTZONkhqeqOmZXIhhbkalWlmS_RCMD_OayvI",
+      "image_credit": "Idaho State Journal",
+      "news": [
+        {
+          "url": "https://www.idahostatejournal.com/sports/national/germany-champions-league-soccer/image_58ca9094-8864-5dee-9abd-42ea4d2ff1e1.html",
+          "title": "Germany Champions League Soccer",
+          "publisher": "Idaho State Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWeJv5cRAyKTVwTntuciN3yryXTZONkhqeqOmZXIhhbkalWlmS_RCMD_OayvI"
+        },
+        {
+          "url": "https://www.idahopress.com/sports/national/germany-champions-league-soccer/image_12de13b7-5ad7-553f-a452-7e6988b96dd6.html",
+          "title": "Germany Champions League Soccer",
+          "publisher": "Idaho Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv07-nHdo8hXseOGb30ujWj-aTzB2hG-doBXhiLVAxJ1qbaI_faf8hs7dvaSk"
+        },
+        {
+          "url": "https://www.idahopress.com/sports/national/germany-champions-league-soccer/image_1c3c9cee-3c2d-5b5b-bc00-14edaaf7600b.html",
+          "title": "Germany Champions League Soccer",
+          "publisher": "Idaho Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuEYI86MzO-3fWxWXXQ8UqD1RzIxYM6fJl6LhU0iI2wXL3gKEvWcVUR4nOCs"
+        }
+      ]
+    },
+    {
+      "query": "meli stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T21:50:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-falls-earnings-miss-margin-214342800.html",
+        "https://seekingalpha.com/news/4665383-mercadolibre-slides-as-tech-investments-drag-on-profits",
+        "https://www.tikr.com/blog/mercadolibres-bulls-are-counting-on-profit-growth-heres-what-we-learn-tonight"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-falls-earnings-miss-margin-214342800.html",
+          "title": "MercadoLibre falls on earnings miss, margin pressure",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://seekingalpha.com/news/4665383-mercadolibre-slides-as-tech-investments-drag-on-profits",
+          "title": "MercadoLibre slides as tech investments drag on profits (MELI:NASDAQ)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHXD11WsRR3nUyhyFbmEGLH4TjUbfKBZ6bx1tJeGTsnG0ijLXcIgiBunfVMc0"
+        },
+        {
+          "url": "https://www.tikr.com/blog/mercadolibres-bulls-are-counting-on-profit-growth-heres-what-we-learn-tonight",
+          "title": "MercadoLibre’s Bulls Are Counting on Profit Growth. Here’s What We Learn Tonight",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5u0JeWEEG-j7UxxCjX2iX8yWhsWL7iyQuKp7OMVBxEQlRVvi-sGWUz-6Ngxo"
+        }
+      ]
+    },
+    {
+      "query": "flamengo vs grêmio",
+      "approx_searches": "2000+",
       "published_at": "2026-11-04T21:40:00Z",
       "related_news_urls": [
         "https://ge.globo.com/futebol/times/flamengo/noticia/2026/11/04/achei-na-ativa-aos-39-david-braz-ve-flamengo-x-gremio-como-2009-e-alerta-para-armadilha-do-mistao.ghtml",
@@ -42,93 +287,23 @@
       ]
     },
     {
-      "query": "nico paz",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T21:30:00Z",
-      "related_news_urls": [
-        "https://es-us.noticias.yahoo.com/deportes/nico-paz-marc%C3%B3-champions-league-204900800.html",
-        "https://www.goal.com/es-mx/listados/lens-como-0-4-en-directo-da-cunha-marca-el-cuarto-gol-al-inicio-de-la-segunda-parte-nico-paz-dedica-el-gol-a-jesus-de-miguel/blt35926e084c44a07d",
-        "https://la100.cienradios.com/videos/video-el-gesto-de-nico-paz-por-la-muerte-del-futbolista-jesus-de-miguel-tras-anotar-un-gol/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMQh2hiFmKtP3xEmjNd2qa1tuE1epSTG1KXfCf6c73y5hFfgU5XTs9EryYwIE",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/nico-paz-marc%C3%B3-champions-league-204900800.html",
-          "title": "Nico Paz marcó por Champions League y recordó a Miguel de Jesús",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMQh2hiFmKtP3xEmjNd2qa1tuE1epSTG1KXfCf6c73y5hFfgU5XTs9EryYwIE"
-        },
-        {
-          "url": "https://www.goal.com/es-mx/listados/lens-como-0-4-en-directo-da-cunha-marca-el-cuarto-gol-al-inicio-de-la-segunda-parte-nico-paz-dedica-el-gol-a-jesus-de-miguel/blt35926e084c44a07d",
-          "title": "Lens-Como 0-4 EN DIRECTO: Da Cunha marca el cuarto gol al inicio de la segunda parte. Nico Paz dedica el gol a Jesus de Miguel",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJfPKy3wUt_y8K59vFrr-KcVKMYOOJ6WnhxuMEYU3TtA6h3hMfXyKo8nqR28w"
-        },
-        {
-          "url": "https://la100.cienradios.com/videos/video-el-gesto-de-nico-paz-por-la-muerte-del-futbolista-jesus-de-miguel-tras-anotar-un-gol/",
-          "title": "Video: el gesto de Nico Paz por la muerte del futbolista Jesús de Miguel tras anotar un gol",
-          "publisher": "La 100",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfC17q1hhpbdFtgkJXtl7P-sNicrPx8hjIc2b5dUaF0XbTYQqeuWdgdGb5IXM"
-        }
-      ]
-    },
-    {
-      "query": "cohr stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T21:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/coherent-cohr-stock-sees-modest-043500086.html",
-        "https://www.barchart.com/story/news/8648579/dear-coherent-stock-fans-mark-your-calendars-for-november-4",
-        "https://www.tikr.com/blog/coherent-soars-6-as-fabrinets-51-revenue-jump-lifts-optics-stocks-ahead-of-earnings?"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ21yj8XRfrtY0jB0DNmU9X4baA696epNbjlT1vFUfTf8CQU5iZmqbZoDNa3Yw",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/coherent-cohr-stock-sees-modest-043500086.html",
-          "title": "Coherent (COHR) Stock Sees Modest Fair Value Cut As Analysts Weigh AI Demand Risks",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ21yj8XRfrtY0jB0DNmU9X4baA696epNbjlT1vFUfTf8CQU5iZmqbZoDNa3Yw"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8648579/dear-coherent-stock-fans-mark-your-calendars-for-november-4",
-          "title": "Dear Coherent Stock Fans, Mark Your Calendars for November 4",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-0Ny1ocicWgSArPPP1CnmnzvBal6mGJUtbNG68XM5n4-8-Wz8PlNyZtWFe2k"
-        },
-        {
-          "url": "https://www.tikr.com/blog/coherent-soars-6-as-fabrinets-51-revenue-jump-lifts-optics-stocks-ahead-of-earnings?",
-          "title": "Coherent Soars 6% as Fabrinet’s 51% Revenue Jump Lifts Optics Stocks Ahead of Earnings",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtdKaaCBmmRHPUDqvJjhtZ7ztp5JJeTz0U5X2aJo2LjvAbcqkENXjPR3l1REI"
-        }
-      ]
-    },
-    {
       "query": "rc lens",
       "approx_searches": "500+",
       "published_at": "2026-11-04T21:30:00Z",
       "related_news_urls": [
-        "https://www.eurosport.fr/football/ligue-des-champions/2026-2027/live-rc-lens-come_mtc21878484/live-commentary.shtml",
+        "https://rmcsport.bfmtv.com/football/ligue-des-champions/direct-lens-come-suivez-le-mach-de-la-4e-journee-de-la-ligue-des-champions-en-live_LS-202611040738.html",
         "https://www.lequipe.fr/Football/Article/Decryptage-les-frappes-de-loin-du-milieu-offensif-de-come-nico-paz-une-serieuse-menace-pour-lens/1741013",
         "https://www.france24.com/fr/info-en-continu/20261104-ligue-des-champions-lens-esp%C3%A8re-un-rebond-face-%C3%A0-c%C3%B4me"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNvOUEg-IFd6zYZNcu3k-5161iyX5BlMGTyIpg50Uy7ga8w6-dGWmw24iiDqE",
-      "image_credit": "Eurosport",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYCHF1IR7YoD0_8YOXylGI-nlDDE6qlhRmgRvLItbYsWsEnDB5VtleaO7chIk",
+      "image_credit": "RMC Sport",
       "news": [
         {
-          "url": "https://www.eurosport.fr/football/ligue-des-champions/2026-2027/live-rc-lens-come_mtc21878484/live-commentary.shtml",
-          "title": "Ligue des Champions 2026/2027 : Suivez le match de la 4e journée entre le RC Lens et Côme EN DIRECT",
-          "publisher": "Eurosport",
+          "url": "https://rmcsport.bfmtv.com/football/ligue-des-champions/direct-lens-come-suivez-le-mach-de-la-4e-journee-de-la-ligue-des-champions-en-live_LS-202611040738.html",
+          "title": "Lens-Côme: les Sang et Or sombrent dans une débâcle historique",
+          "publisher": "RMC Sport",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNvOUEg-IFd6zYZNcu3k-5161iyX5BlMGTyIpg50Uy7ga8w6-dGWmw24iiDqE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYCHF1IR7YoD0_8YOXylGI-nlDDE6qlhRmgRvLItbYsWsEnDB5VtleaO7chIk"
         },
         {
           "url": "https://www.lequipe.fr/Football/Article/Decryptage-les-frappes-de-loin-du-milieu-offensif-de-come-nico-paz-une-serieuse-menace-pour-lens/1741013",
@@ -147,212 +322,37 @@
       ]
     },
     {
-      "query": "como",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T21:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/biggest-win-ever-cards-champions-213700986.html",
-        "https://www.goal.com/en-us/news/watch-lens-vs-como-live-today-who-is-showing-the-match-on-tv-and-via-live-stream/blt0c5998ac1a4f286d",
-        "https://www.oddschecker.com/us/soccer/cng202-20261104-lens-vs-como-confirmed-lineups-game-prediction"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw2kd2mV7skBQeGfY5f-8gfy1QV2A8aPcZeqSuGxS6JKEPj04nZy4S7r65pbs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/biggest-win-ever-cards-champions-213700986.html",
-          "title": "😱 Biggest win ever on the cards?! Champions League newcomers run riot",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw2kd2mV7skBQeGfY5f-8gfy1QV2A8aPcZeqSuGxS6JKEPj04nZy4S7r65pbs"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/watch-lens-vs-como-live-today-who-is-showing-the-match-on-tv-and-via-live-stream/blt0c5998ac1a4f286d",
-          "title": "Watch Lens vs Como live today: Who is showing the match on TV and via live stream?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdT8NvevEcYbiXpmAaDyi-eGg-MR1XjM7G9NoZT9V_ApIUmtO2e4zN1NUBXgY"
-        },
-        {
-          "url": "https://www.oddschecker.com/us/soccer/cng202-20261104-lens-vs-como-confirmed-lineups-game-prediction",
-          "title": "Lens vs Como: Confirmed Lineups & Game Prediction",
-          "publisher": "Oddschecker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfrLv2C2USeDdwrnL5J1P_KHKwU-3RAh68aL9yOgKsH0asEeo_ivoS6KvHCUA"
-        }
-      ]
-    },
-    {
-      "query": "snap stock",
+      "query": "college gameday week 10 location",
       "approx_searches": "500+",
-      "published_at": "2026-11-04T21:20:00Z",
+      "published_at": "2026-11-04T21:30:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/04/snap-q3-earnings-report-2026.html",
-        "https://www.barrons.com/articles/snap-stock-earnings-revenue-miss-74f40b15",
-        "https://deadline.com/2026/11/snap-swings-to-profit-as-specs-set-to-roll-out-1237213487/"
+        "https://www.espn.com/espn/betting/story/_/id/50371741/college-football-betting-week-10-notre-dame-miami-points",
+        "https://www.cbssports.com/college-football/news/cj-carr-defining-moment-notre-dames-cfp-hopes-miami/",
+        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article317886345.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtdEL7l5t1fibLFfnm0xgRyY8dbP05K-b6h-oBcpj3oel2AzduDhwuvhH3lqk",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2hfAWZ459BojbHW_a6dOKVLuatu0G2ZtiMnfi57jZjIwtvrAiYd8C0GOk_lg",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/04/snap-q3-earnings-report-2026.html",
-          "title": "Snap shares fall over 10% on third-quarter revenue miss",
-          "publisher": "CNBC",
+          "url": "https://www.espn.com/espn/betting/story/_/id/50371741/college-football-betting-week-10-notre-dame-miami-points",
+          "title": "Miami-Notre Dame best bets: Is the over the smart play in South Bend?",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtdEL7l5t1fibLFfnm0xgRyY8dbP05K-b6h-oBcpj3oel2AzduDhwuvhH3lqk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2hfAWZ459BojbHW_a6dOKVLuatu0G2ZtiMnfi57jZjIwtvrAiYd8C0GOk_lg"
         },
         {
-          "url": "https://www.barrons.com/articles/snap-stock-earnings-revenue-miss-74f40b15",
-          "title": "Snap Stock Falls Hard On Revenue Miss",
-          "publisher": "Barron's",
+          "url": "https://www.cbssports.com/college-football/news/cj-carr-defining-moment-notre-dames-cfp-hopes-miami/",
+          "title": "CJ Carr faces defining moment as Notre Dame's CFP hopes ride on showdown vs. No. 1 Miami",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT29j1Ai1c_zM_7hZsYVXjawI6ATlZPBh00HYZao_WZImzIj-EVUJgRMOIRCL0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ27zsCMWm8QUjzzsO9U9i_YvKUc57x_2xPgR747w2hazRkq9fomgBesChC3CA"
         },
         {
-          "url": "https://deadline.com/2026/11/snap-swings-to-profit-as-specs-set-to-roll-out-1237213487/",
-          "title": "Snap Swings To Profit As SPECS Set To Roll Out; Stock Takes A Hit",
-          "publisher": "Deadline",
+          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article317886345.html",
+          "title": "Miami-Notre Dame put Malachi Toney on college football’s radar. It’s time for Round 2",
+          "publisher": "Miami Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRgikODya0sX7ls3wELjA-c-lAl2w6HH2Beo4tshTorhjaar7tkg_-Yb3zBcE"
-        }
-      ]
-    },
-    {
-      "query": "liv golf",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T21:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7733136/2026/11/04/liv-golf-bc-partners-bankruptcy-liquidation/",
-        "https://www.axios.com/2026/11/04/liv-golf-liquidation-bankruptcy",
-        "https://www.bloomberg.com/news/articles/2026-11-04/liv-golf-turnaround-derailed-with-league-nearing-liquidation"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjtvIKBruGXL9C9DEwdSQ5RomZNR62cR2L2TmTwuHg6jj8b8QpSjb-6b9NgoQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7733136/2026/11/04/liv-golf-bc-partners-bankruptcy-liquidation/",
-          "title": "LIV Golf could be forced to liquidate assets after losing financial backer BC Partners",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjtvIKBruGXL9C9DEwdSQ5RomZNR62cR2L2TmTwuHg6jj8b8QpSjb-6b9NgoQ"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/04/liv-golf-liquidation-bankruptcy",
-          "title": "LIV Golf collapse imminent after BC Partners withdraws",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZUK1htb8bsdWUUSqnHzMb_dOQRU4Vl7vf10oRTjXhYn8R3w5kYsY7Wm16BgQ"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-04/liv-golf-turnaround-derailed-with-league-nearing-liquidation",
-          "title": "LIV Golf Turnaround Derailed With League Nearing Liquidation",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKle9O9NFnOB1AWaESm6xM5vXO_i2XrJglHRRfBuzxl8O57QMxRWt1f4HOLP8"
-        }
-      ]
-    },
-    {
-      "query": "como 1907",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T21:10:00Z",
-      "related_news_urls": [
-        "https://as.com/futbol/champions/lens-como-en-directo-champions-league-hoy-en-vivo-f202611-d/",
-        "https://bolavip.com/ar/champions-league/alineaciones-de-lens-y-como-1907-para-el-duelo-de-la-jornada-4-de-la-champions-league",
-        "https://www.corrienteshoy.com/deportes/las-cenicientas-de-la-champions.htm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKlPI02Uba81AJtiS_gAPx8-fb7QPkTCiUi-9SMy9jJmEnJ4S-VtY7imyy_Kg",
-      "image_credit": "Diario AS",
-      "news": [
-        {
-          "url": "https://as.com/futbol/champions/lens-como-en-directo-champions-league-hoy-en-vivo-f202611-d/",
-          "title": "Lens - Como, en directo: Champions League hoy en vivo",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKlPI02Uba81AJtiS_gAPx8-fb7QPkTCiUi-9SMy9jJmEnJ4S-VtY7imyy_Kg"
-        },
-        {
-          "url": "https://bolavip.com/ar/champions-league/alineaciones-de-lens-y-como-1907-para-el-duelo-de-la-jornada-4-de-la-champions-league",
-          "title": "Alineaciones de Lens y Como 1907 para el duelo de la jornada 4 de la Champions League",
-          "publisher": "Bolavip Argentina",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3unBcpy7h6vIGfL3SWkdKFRnm4gOTco8K3yHqiIjM78S8Au7592PhzmK0DHM"
-        },
-        {
-          "url": "https://www.corrienteshoy.com/deportes/las-cenicientas-de-la-champions.htm",
-          "title": "Las cenicientas de la Champions",
-          "publisher": "Corrientes Hoy",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_oxWEbso7JXzK-dGueeDpOIQJ_3zfC0l374y0RtHd5kMPTqOa5zjP42geKHY"
-        }
-      ]
-    },
-    {
-      "query": "oil prices",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-04T21:10:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/energy-oil/oil-prices-rise-as-investors-weigh-u-s-midterm-results-iran-risks-1d97da8a",
-        "https://www.cnbc.com/2026/11/04/oil-us-midterm-election-results.html",
-        "https://www.reuters.com/business/energy/oil-edges-down-investors-await-us-midterm-election-results-2026-11-04/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGpXAGKYHvK3iT-i4L3c56QId1ps2SRiJm-TsLfpNk8wTDmNJTFtAAYITVe8U",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/energy-oil/oil-prices-rise-as-investors-weigh-u-s-midterm-results-iran-risks-1d97da8a",
-          "title": "Oil Prices Sink as U.S. Midterms Raise Market Hopes for Middle East Solution",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGpXAGKYHvK3iT-i4L3c56QId1ps2SRiJm-TsLfpNk8wTDmNJTFtAAYITVe8U"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/04/oil-us-midterm-election-results.html",
-          "title": "Oil falls on Iran war uncertainty, US Democrats' midterm sweep",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwZ4Qq1ewLbksDHP3mfCKr2C7DAH0VfdljQqQnlTn4k19Z3F8Q_bdAb8pbkis"
-        },
-        {
-          "url": "https://www.reuters.com/business/energy/oil-edges-down-investors-await-us-midterm-election-results-2026-11-04/",
-          "title": "Oil slumps after midterm election rebuke to Trump raises bets on Iran war exit",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqNRx-Om8kcYpvNzWfo834McLaLoPZCs5wP9JuDnzK-0uQew03MYTLRnEJF0c"
-        }
-      ]
-    },
-    {
-      "query": "hubert aiwanger",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T21:10:00Z",
-      "related_news_urls": [
-        "https://www.tagesschau.de/inland/innenpolitik/hubert-aiwanger-tot-100.html",
-        "https://www.zeit.de/politik/deutschland/2026-11/freie-waehler-chef-hubert-aiwanger-ist-tot",
-        "https://www.bild.de/news/freie-waehler-chef-hubert-aiwanger-tot-in-berliner-hotel-entdeckt-6aeb904709e0301c03e7faf3"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRk-egK-G4oWHWEzVIiQB1ekgm7bQ7XQCn8rOb6PsTvkkK2KUp6UV9UT57Vy6M",
-      "image_credit": "tagesschau.de",
-      "news": [
-        {
-          "url": "https://www.tagesschau.de/inland/innenpolitik/hubert-aiwanger-tot-100.html",
-          "title": "Bayerns Wirtschaftsminister Hubert Aiwanger ist tot",
-          "publisher": "tagesschau.de",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRk-egK-G4oWHWEzVIiQB1ekgm7bQ7XQCn8rOb6PsTvkkK2KUp6UV9UT57Vy6M"
-        },
-        {
-          "url": "https://www.zeit.de/politik/deutschland/2026-11/freie-waehler-chef-hubert-aiwanger-ist-tot",
-          "title": "Hubert Aiwanger: Freie-Wähler-Chef Hubert Aiwanger ist tot",
-          "publisher": "DIE ZEIT",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3BZWAnhbheJtRV2CjHw3H68ZPoBkY3gUbU4PvATBaacKce_-ry-j_Tei9Mpc"
-        },
-        {
-          "url": "https://www.bild.de/news/freie-waehler-chef-hubert-aiwanger-tot-in-berliner-hotel-entdeckt-6aeb904709e0301c03e7faf3",
-          "title": "Wie starb der Freie-Wähler-Chef?: Hubert Aiwanger tot in Berliner Hotel",
-          "publisher": "BILD",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfVxbD1HfF94CxxGa3ZNBaZbDmUbtE0zAoh5UzdKTU9ZHCVHCvSfQ3-ecfsS0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmzBVgPxJRNLHCd1xQHMJ3DGQnn9-nkWuJNWQDkwkDrcjGjTUY0iYDwVrm0PI"
         }
       ]
     }
