@@ -3,12 +3,187 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T10:01:39.449200Z",
+  "checked_at": "2026-11-04T10:31:25.185416Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mass ballot questions 2026 results",
+      "query": "new zealand vs india",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-04T10:10:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-odi-1539437/match-report",
+        "https://sports.yahoo.com/articles/rohit-sharma-sets-fitness-goals-043400242.html",
+        "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand-live-score-ind-vs-nz-1st-odi-2026-match-scorecard-today-playing-xi-virat-kohli-rohit-sharma-shubman-live-streaming-auckland/liveblog/135506408.cms"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCDMfr2ALyhw8_XndkWdwAYcKQfhKnKSumDPJIVVqHoxFD-xGPxwUGR-kylIY",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-odi-1539437/match-report",
+          "title": "India's seamers and Kohli 74 power them to 1-0 lead in rain-hit match",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCDMfr2ALyhw8_XndkWdwAYcKQfhKnKSumDPJIVVqHoxFD-xGPxwUGR-kylIY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rohit-sharma-sets-fitness-goals-043400242.html",
+          "title": "Rohit Sharma sets fitness goals: Fans react as India veteran pulls off a diving effort to run out Daryl Mitchell during 1st ODI",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY1WaLUlTfpzXPiZOJnKzVfHTL9LGJgXXb4UvEgWqp6WYdNeZlbdzt6_eaoh8"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand-live-score-ind-vs-nz-1st-odi-2026-match-scorecard-today-playing-xi-virat-kohli-rohit-sharma-shubman-live-streaming-auckland/liveblog/135506408.cms",
+          "title": "India vs New Zealand Live Score, 1st ODI: Virat Kohli's 74 guides India to five-wicket victory in first ODI",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU6kTpC8tJhSmrlUtAwCB4INsNJIfPeO78woyVD_5eDI30PQpS2pfdsiDOsK4"
+        }
+      ]
+    },
+    {
+      "query": "palm beach county election results",
       "approx_searches": "100+",
+      "published_at": "2026-11-04T10:00:00Z",
+      "related_news_urls": [
+        "https://www.miamiherald.com/news/politics-government/election/article317889973.html",
+        "https://www.sun-sentinel.com/2026/11/03/broward-palm-beach-county-officials-confident-about-election-day-heres-how-to-vote-if-you-havent-already/",
+        "https://www.local10.com/news/politics/2026/11/03/vote-2026-nov-3-general-election-results-in-broward-county/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxFMMCNWfIf6UA1hDWfLFcgUPQryXb-_Xsk6Mq1fj8HbNvruiUeUzC-H9Qzl8",
+      "image_credit": "Miami Herald",
+      "news": [
+        {
+          "url": "https://www.miamiherald.com/news/politics-government/election/article317889973.html",
+          "title": "Live election updates: Who won and who lost in South Florida? Check results",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxFMMCNWfIf6UA1hDWfLFcgUPQryXb-_Xsk6Mq1fj8HbNvruiUeUzC-H9Qzl8"
+        },
+        {
+          "url": "https://www.sun-sentinel.com/2026/11/03/broward-palm-beach-county-officials-confident-about-election-day-heres-how-to-vote-if-you-havent-already/",
+          "title": "South Florida sloshes to polls on rainy Election Day, technical glitch hits Broward",
+          "publisher": "Sun Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlthD5pDsSy-bclflVqIw6yx2LPC2dAQZys9EMM17r2sRIL2WKz43oHaenVek"
+        },
+        {
+          "url": "https://www.local10.com/news/politics/2026/11/03/vote-2026-nov-3-general-election-results-in-broward-county/",
+          "title": "VIEW RESULTS: Nov. 3 midterm election results in Broward County",
+          "publisher": "WPLG Local 10",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIa1HX_75U5--VQ2ubnI3tzlTv3m6welFI3Etw2nKhPjkMpYNdvbIqCbLzvvs"
+        }
+      ]
+    },
+    {
+      "query": "battlestar galactica",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T09:50:00Z",
+      "related_news_urls": [
+        "https://collider.com/battlestar-galactica-board-game-new-edition-2027-return/",
+        "https://screenrant.com/battlestar-galactica-board-game-2027-official-return-confirmed/",
+        "https://screenrant.com/battlestar-galactica-2027-classic-game-return/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwxWLTHBBO7boLJd2tLCwE--YoyeJb2i2xKJ5Uj0Rli3o5VWa3BP0odDAmNc",
+      "image_credit": "Collider",
+      "news": [
+        {
+          "url": "https://collider.com/battlestar-galactica-board-game-new-edition-2027-return/",
+          "title": "The Battlestar Galactica Franchise Officially Returns In 2027",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwxWLTHBBO7boLJd2tLCwE--YoyeJb2i2xKJ5Uj0Rli3o5VWa3BP0odDAmNc"
+        },
+        {
+          "url": "https://screenrant.com/battlestar-galactica-board-game-2027-official-return-confirmed/",
+          "title": "The Battlestar Galactica Franchise Officially Returns In 2027",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTad6TbVHIQgEI2QO7x1Z74o8e_PLT1RSRpZsVhp9LM_C9aIad8vcoxSiLO37o"
+        },
+        {
+          "url": "https://screenrant.com/battlestar-galactica-2027-classic-game-return/",
+          "title": "Battlestar Galactica Franchise Is Bringing Back Multiple Familiar Faces In 2027",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0bgIebJPgGJhfjfTmmQOVIkOlooym_8MWPK-PkqplW8gWvhHB-74KID0gT2U"
+        }
+      ]
+    },
+    {
+      "query": "kentucky state police",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T09:50:00Z",
+      "related_news_urls": [
+        "https://www.wsaz.com/2026/11/02/missing-child-lawrence-county-ky/",
+        "https://www.kentucky.com/news/state/kentucky/article317902747.html",
+        "https://www.wkyt.com/2026/11/02/missing-kentucky-boy-found-safe/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPvhI_--vew1bhmBQCkUp4U8D_DNiXMEibkrddtNPIu-LGOjZ8AdjJhJt-sK8",
+      "image_credit": "WSAZ",
+      "news": [
+        {
+          "url": "https://www.wsaz.com/2026/11/02/missing-child-lawrence-county-ky/",
+          "title": "Volunteers asked to help search for missing child",
+          "publisher": "WSAZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPvhI_--vew1bhmBQCkUp4U8D_DNiXMEibkrddtNPIu-LGOjZ8AdjJhJt-sK8"
+        },
+        {
+          "url": "https://www.kentucky.com/news/state/kentucky/article317902747.html",
+          "title": "‘He came out of the bushes with a dog.’ KY Boy, 6, safe after 3-day search in mountains",
+          "publisher": "Lexington Herald Leader",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdIyWUvkh0GPlEM6otwyx970icIXkV_YcoRBgQ9qgEBCryd4onwBlmjR_df4k"
+        },
+        {
+          "url": "https://www.wkyt.com/2026/11/02/missing-kentucky-boy-found-safe/",
+          "title": "Missing Kentucky boy found safe after nearly two-day search",
+          "publisher": "WKYT",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9kxY6AN12BuMQE4r4xJCgtmE1hXJ9Qttu9YnfR5-9HW5W_lmgusH3L6_1HTU"
+        }
+      ]
+    },
+    {
+      "query": "eli savit",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T09:50:00Z",
+      "related_news_urls": [
+        "https://www.fox2detroit.com/news/michigan-attorney-general-results-eli-savit-doug-lloyd",
+        "https://www.cbsnews.com/detroit/news/doug-lloyd-eli-savit-michigan-attorney-general-results/",
+        "https://www.michiganpublic.org/politics-government/2026-10-23/michigan-attorney-general-candidates-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ41miaav-B1n4VxDOQkQmrugrtNxfpLOf-Ci-Cf5RAo0_G98-CSHXaOXFfhhQ",
+      "image_credit": "FOX 2 Detroit",
+      "news": [
+        {
+          "url": "https://www.fox2detroit.com/news/michigan-attorney-general-results-eli-savit-doug-lloyd",
+          "title": "Attorney general race results",
+          "publisher": "FOX 2 Detroit",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ41miaav-B1n4VxDOQkQmrugrtNxfpLOf-Ci-Cf5RAo0_G98-CSHXaOXFfhhQ"
+        },
+        {
+          "url": "https://www.cbsnews.com/detroit/news/doug-lloyd-eli-savit-michigan-attorney-general-results/",
+          "title": "2 county prosecutors, Doug Lloyd and Eli Savit, face off in Michigan attorney general race",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhW8AE73GSMO6wehxzWPPkWPnFJ1AYYXl9DhphiJOSKOA13oFzaRGrf95MGXs"
+        },
+        {
+          "url": "https://www.michiganpublic.org/politics-government/2026-10-23/michigan-attorney-general-candidates-2026",
+          "title": "How Michigan Attorney General candidates would approach the job",
+          "publisher": "Michigan Public",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLCx0vPhB31XZGPpcpqrHEnUJZzRUDMMnYeDo7gVp4ZbvALB0VgSJOyUcWhrY"
+        }
+      ]
+    },
+    {
+      "query": "mass ballot questions 2026 results",
+      "approx_searches": "200+",
       "published_at": "2026-11-04T09:40:00Z",
       "related_news_urls": [
         "https://www.wgbh.org/news/politics/2026-11-03/recreational-cannabis-to-stay-legal-in-mass-ap-calls",
@@ -38,6 +213,41 @@
           "publisher": "Boston Herald",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyBYGqkJO8ekuSN7WaZ8bg8cpqRBlWtI5La7X1rctBfeHxzUjk823S212Z_4s"
+        }
+      ]
+    },
+    {
+      "query": "samsung vs kt",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T09:40:00Z",
+      "related_news_urls": [
+        "https://www.koreajoongangdaily.com/sports/live-samsung-lions-vs-kt-wiz-in-korean-series-game-2/12955903",
+        "https://www.sportschosun.com/en/culture/2026-11-03/202611030100018130001644",
+        "https://en.yna.co.kr/view/PYH20261102153300315"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsiwJK9uR3AhO96675t_uT-3ZxTByOh1O42FiGwZk87cMrDBxt9puoT6EXEWE",
+      "image_credit": "Korea JoongAng Daily",
+      "news": [
+        {
+          "url": "https://www.koreajoongangdaily.com/sports/live-samsung-lions-vs-kt-wiz-in-korean-series-game-2/12955903",
+          "title": "LIVE: Samsung Lions vs. KT Wiz in Korean Series Game 2",
+          "publisher": "Korea JoongAng Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsiwJK9uR3AhO96675t_uT-3ZxTByOh1O42FiGwZk87cMrDBxt9puoT6EXEWE"
+        },
+        {
+          "url": "https://www.sportschosun.com/en/culture/2026-11-03/202611030100018130001644",
+          "title": "Seasonal fall persimmons are a “perfect match” with yogurt and nuts... What should you watch out for?",
+          "publisher": "스포츠조선",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5u54sq1WgStKyC_BObst5hknnyxSQbkjxInu7k6o7lPgZb8laq2DsyvO17Lw"
+        },
+        {
+          "url": "https://en.yna.co.kr/view/PYH20261102153300315",
+          "title": "Dried persimmons",
+          "publisher": "Yonhap News Agency",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7uG9TqJBJ3EIpvKuWE1oyGUB76MrXi6LPXhMiDGB_lg8yj0tQijZWVP_6nck"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "Dimers",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZVqS6aNLeoQXcxVFj6VZRPt2oEsDbEj9wTy0VmybbCTE8O5ZmRhY-hiJSfA"
-        }
-      ]
-    },
-    {
-      "query": "financial services",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T08:40:00Z",
-      "related_news_urls": [
-        "https://thequantuminsider.com/2026/11/04/crypto-agility-post-quantum-security-banks/",
-        "https://www.marketscreener.com/news/equinix-is-your-infrastructure-ready-to-adapt-when-quantum-computing-arrives-ce785fdedf8bf525",
-        "https://www.fdd.org/in_the_news/quantapocalypse/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_54mbQc7rw1pyogZ0vo9Ff7WuhYI2tm-TwCQII8tjx5kBjeJueMpcAahG4Ag",
-      "image_credit": "The Quantum Insider",
-      "news": [
-        {
-          "url": "https://thequantuminsider.com/2026/11/04/crypto-agility-post-quantum-security-banks/",
-          "title": "Guest Post: Why Crypto-Agility Matters for Financial Institutions Preparing for PQC",
-          "publisher": "The Quantum Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_54mbQc7rw1pyogZ0vo9Ff7WuhYI2tm-TwCQII8tjx5kBjeJueMpcAahG4Ag"
-        },
-        {
-          "url": "https://www.marketscreener.com/news/equinix-is-your-infrastructure-ready-to-adapt-when-quantum-computing-arrives-ce785fdedf8bf525",
-          "title": "Equinix : Is Your Infrastructure Ready to Adapt When Quantum Computing Arrives",
-          "publisher": "www.marketscreener.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmYzgiuRJh_WDfIuy8ec963NlCEMmGpR4sGsYzWAggNHs1Nh1jGdAuij6FRjE"
-        },
-        {
-          "url": "https://www.fdd.org/in_the_news/quantapocalypse/",
-          "title": "Quantapocalypse",
-          "publisher": "Foundation for Defense of Democracies",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-yO-cSigRj2nXfK-b2BQZucgO4-oLvKO3iijXtg3Vpf3Lu5Dd2ZrOJE7lSiI"
-        }
-      ]
-    },
-    {
-      "query": "hong kong open",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T08:40:00Z",
-      "related_news_urls": [
-        "https://www.yardbarker.com/tennis/articles/paula_badosas_season_ends_in_retirement_as_health_struggles_strike_again_in_hong_kong/s1_17730_44512679",
-        "https://www.tennis365.com/tennis-news/former-world-no-2-ends-season-tears-body-betrays-wta-star-again",
-        "https://en.tennistemple.com/actu/paula-badosa-in-tears-her-ordeal-continues-in-hong/DY6P"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQV78Cm7qkOcjaVX5VDs5fxvnSyESKneLNvLoDCKZRFr_3tY5mZPJTM2Zpkz4I",
-      "image_credit": "Yardbarker",
-      "news": [
-        {
-          "url": "https://www.yardbarker.com/tennis/articles/paula_badosas_season_ends_in_retirement_as_health_struggles_strike_again_in_hong_kong/s1_17730_44512679",
-          "title": "Paula Badosa’s Season Ends in Retirement As Health Struggles Strike Again in Hong Kong",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQV78Cm7qkOcjaVX5VDs5fxvnSyESKneLNvLoDCKZRFr_3tY5mZPJTM2Zpkz4I"
-        },
-        {
-          "url": "https://www.tennis365.com/tennis-news/former-world-no-2-ends-season-tears-body-betrays-wta-star-again",
-          "title": "Former world No 2 ends her season in tears as body betrays WTA star again",
-          "publisher": "Tennis365",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7Oh1N9_zR5G99Wt4uR3abx2JNPONf5MQM4L2gpKOBK1RbA_dsQCniZDyDN48"
-        },
-        {
-          "url": "https://en.tennistemple.com/actu/paula-badosa-in-tears-her-ordeal-continues-in-hong/DY6P",
-          "title": "Paula Badosa in Tears: Her Ordeal Continues in Hong Kong",
-          "publisher": "TennisTemple",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQE7sE-P6vVPTkSeDuqTBV4veQ68PcMwPL34m5ejIA_DL4qBNGV3B0wT-cmb20"
-        }
-      ]
-    },
-    {
-      "query": "nadia ferreira",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T08:30:00Z",
-      "related_news_urls": [
-        "https://www.ultimahora.com/el-paso-de-nadia-ferreira-y-su-familia-por-paraguay",
-        "https://www.extra.com.py/fama/marc-anthony-comio-asadacho-con-la-familia-de-nadia",
-        "https://www.hola.com/us-es/celebrities/20261104932917/nadia-ferreira-marc-anthony-bebe-myla-marquito-viaje-paraguay/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFyx50I3CyN-STqx1DVDaUT3CLdzgDExYg4TCHRnAgR4gvyNl7UtFq2ioXDpw",
-      "image_credit": "Última Hora",
-      "news": [
-        {
-          "url": "https://www.ultimahora.com/el-paso-de-nadia-ferreira-y-su-familia-por-paraguay",
-          "title": "El paso de Nadia Ferreira y su familia por Paraguay",
-          "publisher": "Última Hora",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFyx50I3CyN-STqx1DVDaUT3CLdzgDExYg4TCHRnAgR4gvyNl7UtFq2ioXDpw"
-        },
-        {
-          "url": "https://www.extra.com.py/fama/marc-anthony-comio-asadacho-con-la-familia-de-nadia",
-          "title": "Marc Anthony comió asadacho con la familia de Nadia",
-          "publisher": "Extra",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCSwkgYFBFzqth_cQOOcArIi3b--_Jid8qPww3r9h1r0JwF4b1aryUinO48AI"
-        },
-        {
-          "url": "https://www.hola.com/us-es/celebrities/20261104932917/nadia-ferreira-marc-anthony-bebe-myla-marquito-viaje-paraguay/",
-          "title": "Nadia Ferreira, la más feliz de llevar a la pequeña Myla a Paraguay a conocer a su familia",
-          "publisher": "HOLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFhU8qeoBr2zhzteGe0nl0ZKqYa6-C4jHCVr9MEn3ngoykrYf3qlkPywMCs3Q"
-        }
-      ]
-    },
-    {
-      "query": "susie lee",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T08:30:00Z",
-      "related_news_urls": [
-        "https://www.washingtonexaminer.com/news/campaigns/congressional/4774347/susie-lee-marty-odonnell-nevada-election-result-after-shift-toward-democrat/",
-        "https://www.washingtonpost.com/elections/results/2026/11/03/nevada-3rd-house-district-live-updates/",
-        "https://www.yahoo.com/news/videos/republican-marty-odonnell-running-nevadas-004500991.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9ahGmYuDj7LpzHtDXdYG9XLPSR09Ctj7NKnkglCgWLltfogzdDvoJtyqOvIA",
-      "image_credit": "Washington Examiner",
-      "news": [
-        {
-          "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4774347/susie-lee-marty-odonnell-nevada-election-result-after-shift-toward-democrat/",
-          "title": "[Lee/O’Donnell] wins Nevada’s 3rd District",
-          "publisher": "Washington Examiner",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9ahGmYuDj7LpzHtDXdYG9XLPSR09Ctj7NKnkglCgWLltfogzdDvoJtyqOvIA"
-        },
-        {
-          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/nevada-3rd-house-district-live-updates/",
-          "title": "Nevada 3rd Congressional District election results 2026",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp6QNHFEh6H4p6zkmLYCZjqF6L6Ll5aBPz8dptuwO78XTS0Wru0OPDLyLit3s"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/republican-marty-odonnell-running-nevadas-004500991.html",
-          "title": "Republican Marty O'Donnell running for Nevada's Congressional District 3 (full interview)",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4OpbGdMvzIlhNU_cmcBIP6aZWgjxYKXVvqRppSuc6e8U2vNMHU8dUrrXNwas"
-        }
-      ]
-    },
-    {
-      "query": "tesla autopilot",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T08:20:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/autos-transportation/tesla-misled-south-korean-customers-about-automated-driving-tech-consumer-group-2026-11-04/",
-        "https://www.koreajoongangdaily.com/korea/police-book-80-people-for-illegally-activating-teslas-full-selfdriving-mode/12940799",
-        "https://www.tomshardware.com/tech-industry/cyber-security/south-korea-clamps-down-on-tesla-drivers-for-unlocking-restricted-fsd-usd15-000-fines-and-prison-possible-sentences-suspects-imported-hardware-from-europe-and-china-then-traded-tips-on-concealing-activation-logs"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXhhJRmv1Nbk_9Ak5_ufFI_OFBYKt6ivRC2gy77WhtyFSa0ZMXQiHdaTWxqlk",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/autos-transportation/tesla-misled-south-korean-customers-about-automated-driving-tech-consumer-group-2026-11-04/",
-          "title": "EXCLUSIVE: Tesla misled South Korean customers about automated-driving tech, consumer group alleges",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXhhJRmv1Nbk_9Ak5_ufFI_OFBYKt6ivRC2gy77WhtyFSa0ZMXQiHdaTWxqlk"
-        },
-        {
-          "url": "https://www.koreajoongangdaily.com/korea/police-book-80-people-for-illegally-activating-teslas-full-selfdriving-mode/12940799",
-          "title": "Police book 80 people for illegally activating Tesla’s Full Self-Driving mode",
-          "publisher": "Korea JoongAng Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStRKLM1i_nsMNW4EDncuipoi14fqumpB9DeuoTc6N7hrvFWg5_HvAJuzCmycg"
-        },
-        {
-          "url": "https://www.tomshardware.com/tech-industry/cyber-security/south-korea-clamps-down-on-tesla-drivers-for-unlocking-restricted-fsd-usd15-000-fines-and-prison-possible-sentences-suspects-imported-hardware-from-europe-and-china-then-traded-tips-on-concealing-activation-logs",
-          "title": "South Korea clamps down on Tesla drivers for unlocking restricted full self-driving feature, $15,000 fines and prison possible sentences — suspects imported hardware from Europe an",
-          "publisher": "Tom's Hardware",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSjH6y0AW-yB-WglJ5J-jcMBSXFCmxAqkLda_eB0tkTsDJIm2GeE-YSmpN3eQ"
-        }
-      ]
-    },
-    {
-      "query": "week 9 defense rankings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T08:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/fantasy/article/fantasy-football-waiver-wire-week-9-mike-washington-jr-among-slew-of-good-rb-pickups-to-consider-155157280.html",
-        "https://www.nytimes.com/athletic/7751225/2026/11/04/fantasy-football-week-9-player-rankings-legend-of-zelda/",
-        "https://www.fantasylife.com/articles/guillotine-leagues/week-9-guillotine-leagues-bidding-advice-how-much-faab-to-bid-on"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjrpzLca1_iXmRW2iINE98Ub2RWz9NVyCEJR1vfndqpbjz9ySo8OQdaUwjRE",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-waiver-wire-week-9-mike-washington-jr-among-slew-of-good-rb-pickups-to-consider-155157280.html",
-          "title": "Fantasy Football Waiver Wire, Week 9: Mike Washington Jr. among slew of good RB pickups to consider",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjrpzLca1_iXmRW2iINE98Ub2RWz9NVyCEJR1vfndqpbjz9ySo8OQdaUwjRE"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7751225/2026/11/04/fantasy-football-week-9-player-rankings-legend-of-zelda/",
-          "title": "NFL Week 9 fantasy football rankings and the much-anticipated Legend of Zelda top-20",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkQPfF5v8ExUh61j5jwPt8lhxzXK1HTf-j0bdGE0Ajp_4HtwmtYHPd0mmwk4"
-        },
-        {
-          "url": "https://www.fantasylife.com/articles/guillotine-leagues/week-9-guillotine-leagues-bidding-advice-how-much-faab-to-bid-on",
-          "title": "Week 9 Guillotine Leagues™ Bidding Advice: How Much FAAB To Bid On Bijan Robinson & More",
-          "publisher": "FantasyLife",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqnDwBKK00Yz3LZXS2-MXDBtbeZgyqn046ODKYJWaCjrCG_Dj4SQLWX4BcxaQ"
         }
       ]
     }
