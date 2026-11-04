@@ -3,40 +3,13 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T15:31:36.168311Z",
+  "checked_at": "2026-11-04T16:01:32.785259Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nvda stock",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-04T15:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html",
-        "https://stockstory.org/us/stocks/nasdaq/mtsi/news/why-up-down/macom-vishay-intertechnology-semtech-penguin-solutions-and-power-integrations-shares-skyrocket-what-you-need-to-know"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvFPffksrCyp3T6WI9iQDekHrd7U_9KjKoEOdmwz44jY7j0AXnkMftc4AdO_E",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html",
-          "title": "Micron, Nvidia, and AMD lead chip stocks' rebound",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvFPffksrCyp3T6WI9iQDekHrd7U_9KjKoEOdmwz44jY7j0AXnkMftc4AdO_E"
-        },
-        {
-          "url": "https://stockstory.org/us/stocks/nasdaq/mtsi/news/why-up-down/macom-vishay-intertechnology-semtech-penguin-solutions-and-power-integrations-shares-skyrocket-what-you-need-to-know",
-          "title": "MACOM, Vishay Intertechnology, Semtech, Penguin Solutions, and Power Integrations shares skyrocket, what you need to know",
-          "publisher": "StockStory",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWPRjNRM5cAH7G_NHmk4_JUmM3orIrPNyClrSFR4GtFPIf5GXoFAe7x8DoC68"
-        }
-      ]
-    },
-    {
-      "query": "qqq",
+      "query": "qqqm",
       "approx_searches": "2000+",
-      "published_at": "2026-11-04T15:10:00Z",
+      "published_at": "2026-11-04T15:20:00Z",
       "related_news_urls": [
         "https://seekingalpha.com/article/4960901-qqq-after-a-minus-6-7-percent-october-what-history-says-about-november",
         "https://pluang.com/en/news-feed/qqqm-nasdaq-100-pullback-peluang-beli",
@@ -69,6 +42,33 @@
       ]
     },
     {
+      "query": "nvda stock",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-04T15:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html",
+        "https://markets.financialcontent.com/stocks/article/stockstory-2026-11-3-allegro-microsystems-entegris-photronics-and-amtech-shares-skyrocket-what-you-need-to-know"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvFPffksrCyp3T6WI9iQDekHrd7U_9KjKoEOdmwz44jY7j0AXnkMftc4AdO_E",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html",
+          "title": "Micron, Nvidia, and AMD lead chip stocks' rebound",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvFPffksrCyp3T6WI9iQDekHrd7U_9KjKoEOdmwz44jY7j0AXnkMftc4AdO_E"
+        },
+        {
+          "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-11-3-allegro-microsystems-entegris-photronics-and-amtech-shares-skyrocket-what-you-need-to-know",
+          "title": "Allegro MicroSystems, Entegris, Photronics, and Amtech shares skyrocket, what you need to know",
+          "publisher": "FinancialContent",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPGDdkpD0L6DbAIr9TQMJnNtvjY9uNeFfBqnS18dDTKBawA83H40l6G7Xvx_s"
+        }
+      ]
+    },
+    {
       "query": "covid tests",
       "approx_searches": "500+",
       "published_at": "2026-11-04T15:10:00Z",
@@ -94,7 +94,7 @@
       "related_news_urls": [
         "https://seekingalpha.com/article/4960857-refreshing-thoughts-ahead-of-dells-q3-earnings",
         "https://www.trefis.com/stock/dell/articles/621542/what-are-dell-investors-betting-on/2026-10-30",
-        "https://www.marketwatch.com/data-news/h-r-block-inc-stock-underperforms-tuesday-when-compared-to-competitors-f45c8e9f-1c7bf3ef80dd"
+        "https://www.tradingkey.com/analysis/stocks/us-stocks/262273595-dell-stock-forecast-ai-backlog-423-resistance-tradingkey"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcqrq537kzM1LcY1bWw23u7M-I_a9_HSzS8QlNHka9ASVjfMwBZEFX6r8qv8",
       "image_credit": "Seeking Alpha",
@@ -114,11 +114,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbWYO5qWswELvl7b6La5bKub6CygMqJZtI0JxkUXP2KB0Oij-D5f_cjk_yQZs"
         },
         {
-          "url": "https://www.marketwatch.com/data-news/h-r-block-inc-stock-underperforms-tuesday-when-compared-to-competitors-f45c8e9f-1c7bf3ef80dd",
-          "title": "H&R Block Inc. stock underperforms Tuesday when compared to competitors",
-          "publisher": "MarketWatch",
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262273595-dell-stock-forecast-ai-backlog-423-resistance-tradingkey",
+          "title": "Dell Stock Forecast: Enterprise AI Push Meets $423.36 Resistance",
+          "publisher": "TradingKey",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTELrZBk2oHD-lb3LayGayxt_pw8CWnBT0_GDiNlf45HykrttzSBTNjguhmF9w"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn53ROZ9os-1OqE53IesnIluEsrJeZLzvJlZobcNC_ZGVPOSvULLTDEOJAYcI"
         }
       ]
     },
@@ -128,8 +128,8 @@
       "published_at": "2026-11-04T15:00:00Z",
       "related_news_urls": [
         "https://www.barrons.com/articles/nvidia-stock-price-data-centers-5b4a74a1",
-        "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3",
-        "https://www.tipranks.com/news/ai-chip-stocks-nvda-amd-and-others-rise-despite-democratic-win-amds-strong-forecast-fuels-optimism"
+        "https://www.theinformation.com/briefings/chip-stocks-neoclouds-sell-election-results",
+        "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaDJocz5YJ7nSJWThvGPc1PwWdUVl5uot8MD1pQBUTuGE0bUkfxxph4CH_Hy4",
       "image_credit": "Barron's",
@@ -142,53 +142,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaDJocz5YJ7nSJWThvGPc1PwWdUVl5uot8MD1pQBUTuGE0bUkfxxph4CH_Hy4"
         },
         {
+          "url": "https://www.theinformation.com/briefings/chip-stocks-neoclouds-sell-election-results",
+          "title": "Chip Stocks and Neoclouds Sell Off on Election Results",
+          "publisher": "The Information",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2Xhh66lOPKR4YS_Y-lMTzkfQ8vpgmFIF0fMEv1XUYgzOI322S8mnpgERL7sw"
+        },
+        {
           "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3",
           "title": "Micron and other chip stocks slip as election results strike at the core of data-center optimism",
           "publisher": "MarketWatch",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSn4MshXWghx2EDm-PrGkc31-vmqFTeII9ugkkN9UGMtiU_RWYWJYn8qf-baA"
-        },
-        {
-          "url": "https://www.tipranks.com/news/ai-chip-stocks-nvda-amd-and-others-rise-despite-democratic-win-amds-strong-forecast-fuels-optimism",
-          "title": "AI Chip Stocks NVDA, AMD, and Others Rise Despite Democratic Win; AMD’s Strong Forecast Fuels Optimism",
-          "publisher": "TipRanks",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFoU7bwFYbUtbn2mS9n6BWGt4hmYP0ngGi4HXjIJkrajllP9PL6x4dWTmakZc"
-        }
-      ]
-    },
-    {
-      "query": "apple stock price",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-04T15:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
-        "https://www.nytimes.com/2026/11/02/technology/apple-earnings.html",
-        "https://www.cnbc.com/2026/11/03/apple-margin-oil-iran.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
-          "title": "Apple beats Q4 estimates on strong iPhone sales but misses on China revenue, stock falls",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/02/technology/apple-earnings.html",
-          "title": "Apple’s Profit Grows 12% Despite Component Price Worries",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72kAQgt8BWAldURzZ4grCiVJNqaDkLroD9weR6h1JGxSLbr7xouIMDRBagkI"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/03/apple-margin-oil-iran.html",
-          "title": "Apple margin outlook pressures tech as reported U.S. strike lifts oil",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCLOxdtbzMmaL5ohrwiscluY5OVldBerfZwbVZJZupDkDoXk2bWidCHf6k77w"
         }
       ]
     },
@@ -228,7 +193,42 @@
       ]
     },
     {
-      "query": "voo stock",
+      "query": "apple stock price",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-04T15:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
+        "https://www.nytimes.com/2026/11/02/technology/apple-earnings.html",
+        "https://www.cnbc.com/2026/11/03/apple-margin-oil-iran.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
+          "title": "Apple beats Q4 estimates on strong iPhone sales but misses on China revenue, stock falls",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/02/technology/apple-earnings.html",
+          "title": "Apple’s Profit Grows 12% Despite Component Price Worries",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72kAQgt8BWAldURzZ4grCiVJNqaDkLroD9weR6h1JGxSLbr7xouIMDRBagkI"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/03/apple-margin-oil-iran.html",
+          "title": "Apple margin outlook pressures tech as reported U.S. strike lifts oil",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCLOxdtbzMmaL5ohrwiscluY5OVldBerfZwbVZJZupDkDoXk2bWidCHf6k77w"
+        }
+      ]
+    },
+    {
+      "query": "vti",
       "approx_searches": "2000+",
       "published_at": "2026-11-04T14:50:00Z",
       "related_news_urls": [
@@ -267,33 +267,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-04T14:50:00Z",
       "related_news_urls": [
-        "https://www.investors.com/news/vix-stock-market-fear-gauge-sp-500/",
-        "https://www.cnbc.com/2026/11/02/wall-streets-fear-index-is-doing-something-strange-heres-what-it-means-for-stocks.html",
-        "https://pro.thestreet.com/market-commentary/is-a-jumpy-vix-trying-to-tell-us-where-the-market-is-headed-next"
+        "https://www.investopedia.com/5-things-to-know-stock-market-november-04-2026-12209181",
+        "https://seekingalpha.com/news/4664613-at-a-glance-stocks-gapping-up-premarket",
+        "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-4-132500586.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT6tcSSRKR9L9x5qdSE_NZtdV6hXGLlB0_yx5UGuJbFz9cgqRWTwmPEQBI8rw",
-      "image_credit": "Investor's Business Daily",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtsWERaWp7GxDHu4qF4l6n0vUfAY12yNMMtmnEGH-Fu_LbZXHd0ZYwAz2uNGQ",
+      "image_credit": "Investopedia",
       "news": [
         {
-          "url": "https://www.investors.com/news/vix-stock-market-fear-gauge-sp-500/",
-          "title": "Investor Fear Spikes Ahead Of Midterms. It May Not Be So Bad For Stocks.",
-          "publisher": "Investor's Business Daily",
+          "url": "https://www.investopedia.com/5-things-to-know-stock-market-november-04-2026-12209181",
+          "title": "5 Things Investors Need to Know About Wednesday’s Markets",
+          "publisher": "Investopedia",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT6tcSSRKR9L9x5qdSE_NZtdV6hXGLlB0_yx5UGuJbFz9cgqRWTwmPEQBI8rw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtsWERaWp7GxDHu4qF4l6n0vUfAY12yNMMtmnEGH-Fu_LbZXHd0ZYwAz2uNGQ"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/02/wall-streets-fear-index-is-doing-something-strange-heres-what-it-means-for-stocks.html",
-          "title": "Wall Street's Fear Index is doing something strange. Here's what it means for stocks",
-          "publisher": "CNBC",
+          "url": "https://seekingalpha.com/news/4664613-at-a-glance-stocks-gapping-up-premarket",
+          "title": "At a glance: stocks gapping up premarket (SPX:)",
+          "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj7nCr2r1LGnhSxggGskTX7_UyxmRE7ZalmvXPEl_yRYIdlLr7R9lt3WvyBLY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwwyxkeiTrlPy3ekF6jVa8nPtl6ULui7U-aMyZ2Z3qlAwX2uEJpxtMfZEGcu8"
         },
         {
-          "url": "https://pro.thestreet.com/market-commentary/is-a-jumpy-vix-trying-to-tell-us-where-the-market-is-headed-next",
-          "title": "Is a Jumpy VIX Trying to Tell Us Where the Market Is Headed Next?",
-          "publisher": "RealMoney Pro",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-4-132500586.html",
+          "title": "Stock Market News for Nov 4, 2026",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9YWi8xKVolQfpWVpd77jNgBu9I3_ySi30kXSuU5FNUlS9cb89uM4RL61LrAM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIJ18_Wl3DZQz2kgjIctMRy3gsWAJqAQONTJRUoUPqj2Qcaa-tvoLSvuzQ4kU"
         }
       ]
     },
