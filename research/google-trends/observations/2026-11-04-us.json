@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T06:01:24.408201Z",
+  "checked_at": "2026-11-04T06:35:41.095218Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cedrick frazier",
+      "query": "street fighter film theater count drop",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T05:40:00Z",
+      "published_at": "2026-11-04T06:20:00Z",
       "related_news_urls": [
-        "https://www.fox9.com/news/hennepin-county-attorney-election-results-2026",
-        "https://mndaily.com/city/folk-versus-frazier-the-hennepin-county-attorneys-race-could-mean-the-difference-between-life-and-death/11/02/2026/eicmndaily-com/",
-        "https://kstp.com/politics/hennepin-county-attorney-race-ex-prosecutor-or-state-lawmaker-to-succeed-moriarty/"
+        "https://www.yahoo.com/entertainment/movies/articles/jason-momoa-latest-flop-continues-043305832.html",
+        "https://www.ign.com/articles/capcom-doubles-down-on-movie-strategy-after-street-fighter-films-box-office-debut",
+        "https://collider.com/street-fighter-removed-from-750-theaters-box-office-milestone/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtlv_lNOY6he-AS6SJlkrrH_alfKJ3lJgv4TlEfHrk0KtE4G7Y6esQAK3b_NI",
-      "image_credit": "FOX 9 Minneapolis-St. Paul",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzpMGwDUdPIJ7HCt47t9SeI3TzzhT_KyMKiwxjwyVF5J23qeb8lRklDhvV5O8",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.fox9.com/news/hennepin-county-attorney-election-results-2026",
-          "title": "Live election results: Hennepin County Attorney",
-          "publisher": "FOX 9 Minneapolis-St. Paul",
+          "url": "https://www.yahoo.com/entertainment/movies/articles/jason-momoa-latest-flop-continues-043305832.html",
+          "title": "Jason Momoa’s Latest Flop Continues To Crash at Box Office",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtlv_lNOY6he-AS6SJlkrrH_alfKJ3lJgv4TlEfHrk0KtE4G7Y6esQAK3b_NI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzpMGwDUdPIJ7HCt47t9SeI3TzzhT_KyMKiwxjwyVF5J23qeb8lRklDhvV5O8"
         },
         {
-          "url": "https://mndaily.com/city/folk-versus-frazier-the-hennepin-county-attorneys-race-could-mean-the-difference-between-life-and-death/11/02/2026/eicmndaily-com/",
-          "title": "Folk versus Frazier: The Hennepin County Attorney’s race could mean the difference between life and death",
-          "publisher": "The Minnesota Daily",
+          "url": "https://www.ign.com/articles/capcom-doubles-down-on-movie-strategy-after-street-fighter-films-box-office-debut",
+          "title": "Capcom Still 'Firmly Committed' to Expanding IP After Street Fighter Movie's Worrying Theatrical Run",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUImy7uvuh9SdTp0VWcXV3oOgCLDh3qn6QPEQ4tG58X9Jp7hV0VtEUVu1Q4cg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPhY79RP0WdBtGvkoc8bKoM6zck0R1tN8xVpQ6KPuopPkgBnF3b-kVDkZSCkY"
         },
         {
-          "url": "https://kstp.com/politics/hennepin-county-attorney-race-ex-prosecutor-or-state-lawmaker-to-succeed-moriarty/",
-          "title": "Hennepin County Attorney race: Ex-prosecutor or state lawmaker to succeed Moriarty",
-          "publisher": "5 EYEWITNESS NEWS",
+          "url": "https://collider.com/street-fighter-removed-from-750-theaters-box-office-milestone/",
+          "title": "Removed From 750 Theaters, 'Street Fighter' Officially Passes Final Box-Office Milestone",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwALbG1XFrncOtnQWe0uFg6gROcM0urb3SETfhuAY4WQ2U4GMuB4p4pifvlP8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTy0qsTaV5LzvlaqJ8jSgWiAx-q9bsQjHmtDaIwVysIJ74dkP82k43CfIHEI84"
         }
       ]
     },
     {
-      "query": "mark penn",
+      "query": "brenton awa",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T05:40:00Z",
+      "published_at": "2026-11-04T06:20:00Z",
       "related_news_urls": [
-        "https://www.quantisnow.com/insight/chief-executive-officer-penn-mark-jeffery-exercised-1000000-shares-at-6768010",
-        "https://ca.investing.com/news/stock-market-news/form-4-stagwell-inc-mark-jeffery-penn-director-10-owner-ceo-for-29-october-93CH-4923693",
-        "https://www.benzinga.com/news/26/11/62824804/insider-selling-mark-penn-unloads-10-21m-stagwell-stock"
+        "https://www.civilbeat.org/2026/11/case-tokuda-win-easily-as-democrats-take-house-senate/",
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-hawaii-us-house-1.html",
+        "https://www.yahoo.com/news/politics/articles/tokuda-awa-battle-u-house-233934922.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDPcMoH5rP3OuoS5xhdcm884FAf1sg6D8_zNsCpQtOAU5_lf_6hgOiiKaHFg",
-      "image_credit": "Quantisnow",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPs9YFK3rUByFmhT8YbtQszaM3PfOiDhlCumqo-cUG6WTnvIGXY2Ezpxw7wzs",
+      "image_credit": "Honolulu Civil Beat",
       "news": [
         {
-          "url": "https://www.quantisnow.com/insight/chief-executive-officer-penn-mark-jeffery-exercised-1000000-shares-at-6768010",
-          "title": "Stagwell (STGW): Chief Executive Officer Penn Mark Jeffery...",
-          "publisher": "Quantisnow",
+          "url": "https://www.civilbeat.org/2026/11/case-tokuda-win-easily-as-democrats-take-house-senate/",
+          "title": "Case, Tokuda Win Easily, Add To Democrats’ Upcoming Majority In Congress/The House xx",
+          "publisher": "Honolulu Civil Beat",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDPcMoH5rP3OuoS5xhdcm884FAf1sg6D8_zNsCpQtOAU5_lf_6hgOiiKaHFg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPs9YFK3rUByFmhT8YbtQszaM3PfOiDhlCumqo-cUG6WTnvIGXY2Ezpxw7wzs"
         },
         {
-          "url": "https://ca.investing.com/news/stock-market-news/form-4-stagwell-inc-mark-jeffery-penn-director-10-owner-ceo-for-29-october-93CH-4923693",
-          "title": "Form 4 Stagwell Inc: Mark Jeffery Penn (Director, 10% Owner, CEO) For: 29 October",
-          "publisher": "Investing.com Canada",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-hawaii-us-house-1.html",
+          "title": "Hawaii First Congressional District 2026: Live Election Results, Case vs. Lam",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX2Z5vi3vqnwE6V8dQ9vxdc4S2VGt7O2a5i2a6pdq4DZJ3F_Jm1tKNH-ThmtM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnSyflTRTGnyAMZ0wTgGbvYx7g0GbCGR-E-4Oe3vCDZVxaoQ2qxddY_qLjkJU"
         },
         {
-          "url": "https://www.benzinga.com/news/26/11/62824804/insider-selling-mark-penn-unloads-10-21m-stagwell-stock",
-          "title": "Insider Selling: Mark Penn Unloads $10.21M Of Stagwell Stock",
-          "publisher": "Benzinga",
+          "url": "https://www.yahoo.com/news/politics/articles/tokuda-awa-battle-u-house-233934922.html",
+          "title": "Tokuda, Awa battle for U.S. House Hawaii District 2 seat: What to know",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9F0Qg6i9kK6BWuiHJjwJoyhSz3-uqPfL0EXQ7N-tG9AozvJuh8giCbVoWhI8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyFgyjc1xocSSKJ1Jd2xrOgQY8JS6bkqxQDCGiqhZu4XWPSYApGJCTpXCB8rg"
         }
       ]
     },
     {
-      "query": "james talarico family",
+      "query": "alina charaeva",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T06:10:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/sorana-cirstea-vs-mary-stoiana-set-1-winner-nov-05-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-carlos-alcaraz-game-spread-nov-04-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/emerson-jones-vs-alexandra-eala-set-1-winner-nov-03-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96xnKy-8jCsOwYOYhi8zYLrHLSvoT6fQp9xoPG0zcylWAHoiktZ7_fhx8fBo",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/sorana-cirstea-vs-mary-stoiana-set-1-winner-nov-05-2026/",
+          "title": "November 5, 2026: Sorana Cirstea vs Mary Stoiana: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96xnKy-8jCsOwYOYhi8zYLrHLSvoT6fQp9xoPG0zcylWAHoiktZ7_fhx8fBo"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-carlos-alcaraz-game-spread-nov-04-2026/",
+          "title": "November 4, 2026: Alex Michelsen vs Carlos Alcaraz: Game Spread Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKrykmkaRhRkUBp8wuBfKVOh1r_VPJNA17maQ2tgKRPrsMuXxaccGGi86FqCU"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/emerson-jones-vs-alexandra-eala-set-1-winner-nov-03-2026/",
+          "title": "November 3, 2026: Emerson Jones vs Alexandra Eala: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnyaHIpEWKCIk1kSDUh_nDZT8MLLaqWeOjpVV99_tWHNOuLZh0Z3RKA-YVw4Y"
+        }
+      ]
+    },
+    {
+      "query": "katy tur",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T06:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/tony-dokoupil-wife-meet-katy-204806919.html",
+        "https://www.imdb.com/news/ni66094109/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPwYQWS_KhcARBxOpDmizZu_4YYjnocnUSAqETEGmyXo5f_KXBFMQPpc6LpkM",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/tony-dokoupil-wife-meet-katy-204806919.html",
+          "title": "Who Is Tony Dokoupil’s Wife? Meet Katy Tur, the Fellow News Anchor He’s Been Married to Since 2017",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPwYQWS_KhcARBxOpDmizZu_4YYjnocnUSAqETEGmyXo5f_KXBFMQPpc6LpkM"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66094109/?ref_=nwc_art_perm",
+          "title": "Who Is Tony Dokoupil’s Wife? Meet Katy Tur, the Fellow News Anchor He’s Been Married to Since 2017",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpqydyePRZHQP69n51yBsOqt0iak5fDguoRNOAwwjHqAp5xApkdFo9YgOgegE"
+        }
+      ]
+    },
+    {
+      "query": "runoff election",
       "approx_searches": "500+",
-      "published_at": "2026-11-04T05:20:00Z",
+      "published_at": "2026-11-04T06:00:00Z",
       "related_news_urls": [
-        "https://people.com/who-is-brianna-menard-james-talarico-12212588",
-        "https://baptistnews.com/article/in-texas-senate-race-the-girlfriends-are-silent/",
-        "https://www.themirror.com/entertainment/celebrity-news/james-talarico-girlfriend-brianna-menard-2096117"
+        "https://www.wdsu.com/article/louisiana-sixth-congressional-district-election-results-2026/74109238",
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-louisiana-us-house-6.html",
+        "https://www.nola.com/news/politics/elections/louisiana-6th-congressional-district-race-results/article_7596bdca-895e-4a23-bd13-65c3c01b0db6.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJm0qn2H2g352P7FfjDsHww-ux555NzofOuNi0YuD2gxj_lkQkdL3XlHplGSc",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlC2_XSEguPrQG_OWHvwPEzJ3zR4ZX7bneEKQJFEePUoEzYJP40kU5fhFuOqU",
+      "image_credit": "WDSU",
       "news": [
         {
-          "url": "https://people.com/who-is-brianna-menard-james-talarico-12212588",
-          "title": "Who Is Texas Senate Candidate James Talarico’s Girlfriend? What to Know About Brianna Menard",
-          "publisher": "People.com",
+          "url": "https://www.wdsu.com/article/louisiana-sixth-congressional-district-election-results-2026/74109238",
+          "title": "Louisiana 6th Congressional District election results",
+          "publisher": "WDSU",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJm0qn2H2g352P7FfjDsHww-ux555NzofOuNi0YuD2gxj_lkQkdL3XlHplGSc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlC2_XSEguPrQG_OWHvwPEzJ3zR4ZX7bneEKQJFEePUoEzYJP40kU5fhFuOqU"
         },
         {
-          "url": "https://baptistnews.com/article/in-texas-senate-race-the-girlfriends-are-silent/",
-          "title": "In Texas Senate race, the girlfriends are silent",
-          "publisher": "Baptist News Global",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-louisiana-us-house-6.html",
+          "title": "Louisiana Sixth Congressional District 2026: Live Election Results, Banks vs. Appeaning",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFi-qVbCRPcSFrrpjWty22Ee1pg8TC3nwoSRdNKHLbtjB7_TQLH_A61jPC7_I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVL50Y8GTw88e0l03usbYY_oBF3NWTFWfN0yNsXHeLCIo4RIb4nn6RsiPHEl4"
         },
         {
-          "url": "https://www.themirror.com/entertainment/celebrity-news/james-talarico-girlfriend-brianna-menard-2096117",
-          "title": "Who is James Talarico’s girlfriend? Ex-employee Brianna Menard who once caused BBQ controversy",
-          "publisher": "The Mirror US",
+          "url": "https://www.nola.com/news/politics/elections/louisiana-6th-congressional-district-race-results/article_7596bdca-895e-4a23-bd13-65c3c01b0db6.html",
+          "title": "See who is advancing to a runoff for Louisiana’s 6th Congressional District",
+          "publisher": "NOLA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcI8JF7H0q6VZRJacIJAklZObpJQrUZhOW9qMfJCe-8zAIp2UDx5riDO3xeVs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzIqNaTnIzvDMcVpFuDgNTICTIWnrw2-C5eiBwH5fbefoM_emNQqR3YYzTEpU"
         }
       ]
     },
     {
-      "query": "adam gray",
+      "query": "mississippi senators",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T05:20:00Z",
+      "published_at": "2026-11-04T06:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-california-us-house-13.html",
-        "https://abc30.com/post/adam-gray-maintains-fundraising-edge-californias-13th-congressional-district-race/19992058/",
-        "https://www.kvpr.org/government-politics/2026-11-02/as-progressive-campaigns-grow-more-popular-democrat-adam-gray-is-focused-on-the-center"
+        "https://www.theatlantic.com/culture/2026/11/protect-college-sports-act/689235/",
+        "https://lawliberty.org/forum/governing-games/",
+        "https://www.app.com/story/sports/college/2026/11/02/nj-college-athletic-directors-geo-baker-protect-college-sports-act-rutgers-seton-hall-monmouth/92476854007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6TjSZRbISN1bl4bTjd3fMi6SOG6_XRyUxLf_0crglN1tIMx_6gNPvQzPBNaA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvAac7WqB_3-F13ZgGJiiuoAQHhGygra3pUOZvLbCjkdfCuDonN33WFFmWgWI",
+      "image_credit": "The Atlantic",
+      "news": [
+        {
+          "url": "https://www.theatlantic.com/culture/2026/11/protect-college-sports-act/689235/",
+          "title": "The Protect College Sports Act Isn’t Enough",
+          "publisher": "The Atlantic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvAac7WqB_3-F13ZgGJiiuoAQHhGygra3pUOZvLbCjkdfCuDonN33WFFmWgWI"
+        },
+        {
+          "url": "https://lawliberty.org/forum/governing-games/",
+          "title": "Governing Games – Neal McCluskey",
+          "publisher": "Law & Liberty",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeh34SmFWDE-nkfiz13lRifIB31Xs0x0KVKT0onIqYsXjCmIYp0CxRwmIGD8M"
+        },
+        {
+          "url": "https://www.app.com/story/sports/college/2026/11/02/nj-college-athletic-directors-geo-baker-protect-college-sports-act-rutgers-seton-hall-monmouth/92476854007/",
+          "title": "NJ college athletic directors, Geo Baker on the Protect College Sports Act | Exclusive",
+          "publisher": "Asbury Park Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOxjddP06IASCZubyJD4_YP34k2noWzjmhppH0Vl6VGP6IzkN31Wv_xzCFTfs"
+        }
+      ]
+    },
+    {
+      "query": "hawaii news now",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T06:00:00Z",
+      "related_news_urls": [
+        "https://www.hawaiinewsnow.com/2026/11/04/election-day-oahu-inside-final-hours-in-person-voting/",
+        "https://www.hawaiipublicradio.org/local-news/2026-11-02/6-things-to-watch-on-election-day-in-hawaii",
+        "https://www.staradvertiser.com/2026/11/03/hawaii-news/isle-election-officials-urge-putting-ballots-in-drop-boxes-today/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiCQhU3T1xzBhE0jTbybe9AMwaLZR7dyxV_si-Yp4JuiF437Gzz6qLUfLEvA",
+      "image_credit": "Hawaii News Now",
+      "news": [
+        {
+          "url": "https://www.hawaiinewsnow.com/2026/11/04/election-day-oahu-inside-final-hours-in-person-voting/",
+          "title": "Election Day on Oahu: Inside the final hours of in-person voting",
+          "publisher": "Hawaii News Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiCQhU3T1xzBhE0jTbybe9AMwaLZR7dyxV_si-Yp4JuiF437Gzz6qLUfLEvA"
+        },
+        {
+          "url": "https://www.hawaiipublicradio.org/local-news/2026-11-02/6-things-to-watch-on-election-day-in-hawaii",
+          "title": "Will Republicans make more gains in Hawaiʻi? 6 things to watch on Election Day",
+          "publisher": "Hawaii Public Radio",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhoGn0PN7QiAi4D6dONRUAvtSUvnkcIrv6F_J7r75MToV3MXercHFWMZJGxBU"
+        },
+        {
+          "url": "https://www.staradvertiser.com/2026/11/03/hawaii-news/isle-election-officials-urge-putting-ballots-in-drop-boxes-today/",
+          "title": "Hawaii election officials urge putting ballots in drop boxes today",
+          "publisher": "Honolulu Star-Advertiser",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8u5B0diyEvCqZE9-t0d5HLjbkhRJ9IkiwKAroSKhaxUl_2fCOzuottOfZ4Zo"
+        }
+      ]
+    },
+    {
+      "query": "riverside county election results",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T05:50:00Z",
+      "related_news_urls": [
+        "https://riversiderecord.org/california-general-election-2026-riverside-county-results/",
+        "https://kesq.com/your-vote/2026/11/03/live-blog-first-local-results-released-democrats-take-control-of-senate-house-becerra-projected-as-next-california-governor/",
+        "https://www.desertsun.com/story/news/politics/elections/2026/11/02/live-election-results-riverside-county-races/92487096007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUdE6B72o9Tquy2Zy_Iav-NG3oU510gWjk81NoeSaBMLdQqq-E4SH0q72vftM",
+      "image_credit": "The Riverside Record",
+      "news": [
+        {
+          "url": "https://riversiderecord.org/california-general-election-2026-riverside-county-results/",
+          "title": "California General Election 2026: Riverside County Results",
+          "publisher": "The Riverside Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUdE6B72o9Tquy2Zy_Iav-NG3oU510gWjk81NoeSaBMLdQqq-E4SH0q72vftM"
+        },
+        {
+          "url": "https://kesq.com/your-vote/2026/11/03/live-blog-first-local-results-released-democrats-take-control-of-senate-house-becerra-projected-as-next-california-governor/",
+          "title": "Live Blog: First local results released, Democrats take control of Senate & House, Becerra projected as next California Governor",
+          "publisher": "KESQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQn5SE5Phrue3UMLR4ZWkvUmTYl0AXLZKlr1Wl-BBILvYo0R182b2LdU4tY18"
+        },
+        {
+          "url": "https://www.desertsun.com/story/news/politics/elections/2026/11/02/live-election-results-riverside-county-races/92487096007/",
+          "title": "Live election results for key Riverside County races",
+          "publisher": "The Desert Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTktpKK5ML2tvFDWK_9-GMwgIkBZ0JfN2R_qpBd22--bl5XD3YhHVgE1f36Wbc"
+        }
+      ]
+    },
+    {
+      "query": "robert luna",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T05:50:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/california/story/2026-11-03/la-county-sheriff-robert-luna-alex-villanueva-returns-measure-a",
+        "https://laist.com/news/politics/voter-guides/2026-election-california-general-la-county-sheriff-results-luna-villanueva",
+        "https://www.foxla.com/news/election-results-la-county-sheriff"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfyK0dixAWpc2mPeidfZNGTlwMbxowjJdfo9ilpsuBjlPKOWQd45U70Om0W9I",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-03/la-county-sheriff-robert-luna-alex-villanueva-returns-measure-a",
+          "title": "Sheriff Luna leads challenger Villanueva in early returns; Measure A ahead",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfyK0dixAWpc2mPeidfZNGTlwMbxowjJdfo9ilpsuBjlPKOWQd45U70Om0W9I"
+        },
+        {
+          "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-la-county-sheriff-results-luna-villanueva",
+          "title": "Live election results: LA County sheriff",
+          "publisher": "LAist",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbeJ5oenjJ_lxLGTddswQ0Ow57M8kIeNPkQabXs2RJ6D042GJU4QhOz-PutaI"
+        },
+        {
+          "url": "https://www.foxla.com/news/election-results-la-county-sheriff",
+          "title": "Live Election Results: 2026 LA County Sheriff race - Luna v Villanueva",
+          "publisher": "FOX 11 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSz_YsxGMLp1Kxet8YxVJWxxYAXeI68rURIL-w2igXYCZ2sVjDgbivUNcqTf1U"
+        }
+      ]
+    },
+    {
+      "query": "first native american senator",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T05:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/04/us/elections/haaland-flanagan-native-american-women-elected.html",
+        "https://www.cbc.ca/news/indigenous/native-american-women-us-midterms-9.7392308",
+        "https://ictnews.org/politics/election-2026/by-the-numbers-a-historic-year-for-indigenous-candidates/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScBlLIaJhoc3BZpybs7xP1yrqVge9p5adn4Vywm4Ta5jGCe4p6AJzHd_0UNWE",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-california-us-house-13.html",
-          "title": "California 13th Congressional District 2026: Live Election Results, Gray vs. Lincoln",
+          "url": "https://www.nytimes.com/2026/11/04/us/elections/haaland-flanagan-native-american-women-elected.html",
+          "title": "Two Native American Women Break Political Barriers This Election",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6TjSZRbISN1bl4bTjd3fMi6SOG6_XRyUxLf_0crglN1tIMx_6gNPvQzPBNaA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScBlLIaJhoc3BZpybs7xP1yrqVge9p5adn4Vywm4Ta5jGCe4p6AJzHd_0UNWE"
         },
         {
-          "url": "https://abc30.com/post/adam-gray-maintains-fundraising-edge-californias-13th-congressional-district-race/19992058/",
-          "title": "Campaign spending surges in race for California's 13th Congressional District",
-          "publisher": "ABC30 Fresno",
+          "url": "https://www.cbc.ca/news/indigenous/native-american-women-us-midterms-9.7392308",
+          "title": "Indigenous women could make history in upcoming U.S. midterm elections",
+          "publisher": "CBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtQAGw82VOTXTFBE5oeI1ypBGsiUxpSDYKmUMT3G3hFVSHMNuis0v6xQcNPAw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5L9E95utCR3HPbZQqFli3biSurdJO_6wa62FXkyEas2PNpPYy67D_WMWI9k0"
         },
         {
-          "url": "https://www.kvpr.org/government-politics/2026-11-02/as-progressive-campaigns-grow-more-popular-democrat-adam-gray-is-focused-on-the-center",
-          "title": "As progressive campaigns grow more popular, Democrat Adam Gray is focused on the center",
-          "publisher": "KVPR",
+          "url": "https://ictnews.org/politics/election-2026/by-the-numbers-a-historic-year-for-indigenous-candidates/",
+          "title": "By the numbers: A historic year for Indigenous candidates",
+          "publisher": "ICT News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL1BJFI_VrPhBUMrqKr9uPEfW0VRcK66zIDPePfEfLv6YWaDKbnjKFc4TJxNs"
-        }
-      ]
-    },
-    {
-      "query": "utah amendment b",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T05:20:00Z",
-      "related_news_urls": [
-        "https://www.ksl.com/article/51643478/preliminary-election-results-across-utah-indicate-amendment-a-will-pass",
-        "https://www.sltrib.com/news/politics/2026/11/03/utah-2026-election-results/",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-utah-constitutional-amendment-a-publication-of-proposed-amendments.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNtbCWEkrRm_5OgBGXA_nftE-yh_v5aSQwEFseJETdAwo1nJpH-EAdlWLjfpU",
-      "image_credit": "KSL News",
-      "news": [
-        {
-          "url": "https://www.ksl.com/article/51643478/preliminary-election-results-across-utah-indicate-amendment-a-will-pass",
-          "title": "Preliminary election results across Utah indicate Amendment A will pass",
-          "publisher": "KSL News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNtbCWEkrRm_5OgBGXA_nftE-yh_v5aSQwEFseJETdAwo1nJpH-EAdlWLjfpU"
-        },
-        {
-          "url": "https://www.sltrib.com/news/politics/2026/11/03/utah-2026-election-results/",
-          "title": "Controversial Utah constitutional amendment losing big across the state",
-          "publisher": "The Salt Lake Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgUjBsUK5fOAAm1EZBucj8zC6Rh2nkgVFieQw58ZSCIWetlLN_NzBH9SKR5Dk"
-        },
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-utah-constitutional-amendment-a-publication-of-proposed-amendments.html",
-          "title": "Utah Constitutional Amendment A Election Results 2026: Publication of Proposed Amendments",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToaOJXr6piisLK_jARzg9YjMBXM_XM1ixKImUl-Ff_1oLEk1mtFFR8aE8y_OE"
-        }
-      ]
-    },
-    {
-      "query": "greenland",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T05:10:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/greenland-trump-denmark-us-33824857ac4312c5ebd53821187ecc13",
-        "https://www.politico.eu/article/greenland-greatest-gift-ever-donald-trump-us-europe/",
-        "https://www.aljazeera.com/news/2026/11/3/greenland-parliament-approves-security-deal-with-us-denmark"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbM8rw46zO0HRu9j3qJkK-RLRCfp01gJJSkSMJqHZ8spRdy4mRw72lFBp3dm8",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/greenland-trump-denmark-us-33824857ac4312c5ebd53821187ecc13",
-          "title": "Greenland approves security deal with Denmark and US following months of Trump's pressure",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbM8rw46zO0HRu9j3qJkK-RLRCfp01gJJSkSMJqHZ8spRdy4mRw72lFBp3dm8"
-        },
-        {
-          "url": "https://www.politico.eu/article/greenland-greatest-gift-ever-donald-trump-us-europe/",
-          "title": "Trump says Europe gave Greenland to US as ‘greatest gift’ ever",
-          "publisher": "POLITICO.eu",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqbMpS3UDg6y3dyrLyoF6zKtoqsqme6VkkQU2xiJYadJFJEEfbtolWTUEuUEU"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/3/greenland-parliament-approves-security-deal-with-us-denmark",
-          "title": "Greenland parliament approves security deal with US, Denmark",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSa3JACvGy1zh6oJiWLvQBtCnKAiN3zmKt1GPliA38NuRkKFowqck77BtP-6I"
-        }
-      ]
-    },
-    {
-      "query": "robert white",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T05:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcwashington.com/video/news/local/henderson-rejoins-dc-democrats-after-white-resigns-from-dc-council/4176142/",
-        "https://wtop.com/dc/2026/11/robert-white-resigns-from-the-dc-council/",
-        "https://www.yahoo.com/news/politics/articles/sources-dc-democrats-name-robert-022135779.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtG9o-JE33HmDsI3Qju3xhVU8MrhYyoOW1pF_C_y5KlPQiB2dJon35B7dXrs",
-      "image_credit": "NBC4 Washington",
-      "news": [
-        {
-          "url": "https://www.nbcwashington.com/video/news/local/henderson-rejoins-dc-democrats-after-white-resigns-from-dc-council/4176142/",
-          "title": "DC Council member changes parties after Robert White resigns from seat",
-          "publisher": "NBC4 Washington",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtG9o-JE33HmDsI3Qju3xhVU8MrhYyoOW1pF_C_y5KlPQiB2dJon35B7dXrs"
-        },
-        {
-          "url": "https://wtop.com/dc/2026/11/robert-white-resigns-from-the-dc-council/",
-          "title": "Robert White thanks supporters after resigning from the DC Council ahead of midterm election",
-          "publisher": "WTOP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREXgvsZPgsdMXJLcZk19ah5-QNl-VsRqaXRKrgDEO5GqhDBf8VB_epx14trzE"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/sources-dc-democrats-name-robert-022135779.html",
-          "title": "Sources: DC Democrats name Robert White's interim successor to DC Council",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7oP9IaK63_mUFzuNlwSEtoiFR0ImNebgYHd2eqnq4j0PCAtVytZTXRYCMnOU"
-        }
-      ]
-    },
-    {
-      "query": "jay obernolte",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T05:10:00Z",
-      "related_news_urls": [
-        "https://obernolte.house.gov/media/press-releases/rep-obernolte-demands-answers-medi-cal-oversight",
-        "https://www.gridleyherald.com/2026/11/03/590215/audit-raises-questions-over-billions-in-medi-cal-billing",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-governor.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThYn7u0vTnZA1GYuE_5HXmv3RjUHYabI3NoCkVRYj04iEyujNMQUevEuArtjI",
-      "image_credit": "Representative Jay Obernolte | (.gov)",
-      "news": [
-        {
-          "url": "https://obernolte.house.gov/media/press-releases/rep-obernolte-demands-answers-medi-cal-oversight",
-          "title": "Rep. Obernolte Demands Answers on Medi-Cal Oversight",
-          "publisher": "Representative Jay Obernolte | (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThYn7u0vTnZA1GYuE_5HXmv3RjUHYabI3NoCkVRYj04iEyujNMQUevEuArtjI"
-        },
-        {
-          "url": "https://www.gridleyherald.com/2026/11/03/590215/audit-raises-questions-over-billions-in-medi-cal-billing",
-          "title": "Audit Raises Questions Over Billions in Medi-Cal Billing",
-          "publisher": "Gridley Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8KMl52p-cs42brcQPdq60rt8wbqN5ayHbEKT6aJlnyBnhh7u0ji1r5quxpM"
-        },
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-governor.html",
-          "title": "U.S. Governor Midterm Elections 2026: Live Results",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eAN7UbnOaOyZMgN1ApQP_FEPg5u5BREID_8FDO3605Fr9Im__uy1BVzoyp4"
-        }
-      ]
-    },
-    {
-      "query": "detroit county",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T05:10:00Z",
-      "related_news_urls": [
-        "https://www.detroitnews.com/story/news/politics/elections/2026/11/03/detroit-zoo-millage-renewal-voters-support/92516515007/",
-        "https://www.freep.com/story/news/politics/elections/2026/11/02/ballot-proposals-in-oakland-macomb-wayne-counties/92565092007/",
-        "https://wdet.org/2026/10/28/the-metro-oakland-and-wayne-county-museum-funding-proposal-leaves-out-macomb/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRblvy3gSihuOV2c4yqmun4BWZTDmjdIC4HwQeXsg7BU8mQ8zLU-iAHQtYakO8",
-      "image_credit": "The Detroit News",
-      "news": [
-        {
-          "url": "https://www.detroitnews.com/story/news/politics/elections/2026/11/03/detroit-zoo-millage-renewal-voters-support/92516515007/",
-          "title": "Voters show strong support for Detroit Zoo millage in early results",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRblvy3gSihuOV2c4yqmun4BWZTDmjdIC4HwQeXsg7BU8mQ8zLU-iAHQtYakO8"
-        },
-        {
-          "url": "https://www.freep.com/story/news/politics/elections/2026/11/02/ballot-proposals-in-oakland-macomb-wayne-counties/92565092007/",
-          "title": "Here's what proposals voters will see on ballot in Detroit-area counties",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArgEoS7MN3KVs1haKMerCFfmojXFCHHxzlyMKE044e1f2faph_PGbx-roNEA"
-        },
-        {
-          "url": "https://wdet.org/2026/10/28/the-metro-oakland-and-wayne-county-museum-funding-proposal-leaves-out-macomb/",
-          "title": "Oakland and Wayne County museum funding proposal leaves out Macomb | The Metro",
-          "publisher": "WDET 101.9 FM",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ9F8ltNCeWPYDwxobIzx0RuQxRh5tmbzLPczB5CJQDBjdGDAASxjMwRVuK2A"
-        }
-      ]
-    },
-    {
-      "query": "detroit",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T05:10:00Z",
-      "related_news_urls": [
-        "https://www.freep.com/videos/opinion/2026/11/03/democrats-watch-party-at-downtown-detroits-hudsons-nov-3-2026/92603336007/",
-        "https://www.foxnews.com/video/6407888038112",
-        "https://www.detroitnews.com/picture-gallery/news/politics/elections/2026/11/03/michigan-democratic-party-abdul-el-sayed-jocelyn-benson-garlin-gilchrist-eli-savit/92599311007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO2Jv5pECTm_npO57kVwiQHrhuzybJOegkTB9Gh43QPo3qFc2m4yBcDI-PcvM",
-      "image_credit": "Detroit Free Press",
-      "news": [
-        {
-          "url": "https://www.freep.com/videos/opinion/2026/11/03/democrats-watch-party-at-downtown-detroits-hudsons-nov-3-2026/92603336007/",
-          "title": "Democrats are freaking out",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO2Jv5pECTm_npO57kVwiQHrhuzybJOegkTB9Gh43QPo3qFc2m4yBcDI-PcvM"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6407888038112",
-          "title": "Michigan Dems demand accountability for Trump, spending shake up as Congress swings left",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDwkSQEp0sFme-MzAPKuMuoURkbh0HgHWpyV6UFOBoyaHe3ILsfRrRvfS7ixc"
-        },
-        {
-          "url": "https://www.detroitnews.com/picture-gallery/news/politics/elections/2026/11/03/michigan-democratic-party-abdul-el-sayed-jocelyn-benson-garlin-gilchrist-eli-savit/92599311007/",
-          "title": "Michigan Democrats gather in Detroit to watch midterm election results",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr3dUB4ZuvH66mN8fEpBHT2BygRGHjKd5dWljcq1ywVYm8ks-x8gKhfdO6IcI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_2UFy31DOdfWp9v7EwN5YZUUA4h1ApNu5i8hi-Igzb3A9Arm8P07ARD-w2ow"
         }
       ]
     }
