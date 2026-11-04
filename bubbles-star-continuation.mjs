@@ -88,7 +88,9 @@ export async function continueSavedWork({fetcher,ownerHeaders,base,now=Date.now(
    unmatched:(audit.candidates||[]).filter(c=>!Array.isArray(c.linkedTickets)||c.linkedTickets.length===0).length,
    readOnly:true};
  }catch(error){archive={checked:false,error:String(error.message||error).slice(0,100)}}
- const inventory=await call('/work/tickets/list',{},15000);
+ // Ask Brain for the older owner jobs prioritized by readiness, instead of
+ // the generic newest-100 timeline (which can hide all ready work).
+ const inventory=await call('/work/tickets/list',{continuation:true},15000);
  const selected=selectContinuation(inventory.tickets,{now,maxSlots});
  if(!selected.target)return {ok:true,selected,archive,dispatch:null,executionVerified:false};
  // One real signed GitHub runner request, with its exact existing ticket/job.
