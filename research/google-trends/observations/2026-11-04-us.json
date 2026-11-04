@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T13:30:58.747962Z",
+  "checked_at": "2026-11-04T14:01:57.595424Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "alls fair",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T13:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/04/style/glenn-close-alexis-stone-lotw",
+        "https://wwd.com/pop-culture/celebrity-news/gallery/alls-fair-season-2-new-york-city-premiere-photos-1239397980/",
+        "https://www.elle.com/culture/celebrities/a74323282/kim-kardashian-ashi-studio-500-hour-couture-gown-alls-fair-premiere-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDIIGc6-1CqzZEqVKGHhBaFWxADhkyeff0cudZILQmuWgpWemXVEkUhbTFNRE",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/04/style/glenn-close-alexis-stone-lotw",
+          "title": "Look of the Week: Glenn Close and her six-foot impersonator demand a double take",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDIIGc6-1CqzZEqVKGHhBaFWxADhkyeff0cudZILQmuWgpWemXVEkUhbTFNRE"
+        },
+        {
+          "url": "https://wwd.com/pop-culture/celebrity-news/gallery/alls-fair-season-2-new-york-city-premiere-photos-1239397980/",
+          "title": "‘All’s Fair’ Season 2 New York City Premiere: Kim Kardashian, Naomi Watts and More Celebrity Style, Photos",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjEZHyitCfME6foSGdUrO_nCbs3576EXkMh3MhzqLxE1WA3KU2Iwxa7JK78G8"
+        },
+        {
+          "url": "https://www.elle.com/culture/celebrities/a74323282/kim-kardashian-ashi-studio-500-hour-couture-gown-alls-fair-premiere-2026/",
+          "title": "Kim Kardashian’s Latest Red Carpet Corset Gown Took 500 Hours to Make",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT1L6OOeXE7SdXWWnh96kogFwunC-UZVGZGH9BfAQrmsT2nsnfbUPtfm36r_M"
+        }
+      ]
+    },
     {
       "query": "alexander zverev",
       "approx_searches": "1000+",
@@ -13,7 +48,7 @@
       "related_news_urls": [
         "https://sports.yahoo.com/articles/lorenzo-musetti-admits-having-extra-030000561.html",
         "https://tenngrand.com/paris-tennis-previews-picks-predictions-zverev-vs-musetti-fils-machac/",
-        "https://tennisuptodate.com/atp/live-paris-masters-new-world-no1-alexander-zverev-in-blockbuster-showdown-against-lorenzo-musetti"
+        "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-day-3-predictions-zverev-musetti/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3p3KaUStfo0ct_DCOck5G8QPhURb-vzYzMfLCfZxWlHRv81Zn6lYtzPeqv5c",
       "image_credit": "Yahoo Sports",
@@ -33,11 +68,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgARtw_pcKhD7LJo4eD3qbmTGYeLeYMk806W7iKwCY8nPvpAxFogs-p57z7Jk"
         },
         {
-          "url": "https://tennisuptodate.com/atp/live-paris-masters-new-world-no1-alexander-zverev-in-blockbuster-showdown-against-lorenzo-musetti",
-          "title": "LIVE Paris Masters | New World No.1 Alexander Zverev in blockbuster showdown against Lorenzo Musetti",
-          "publisher": "Tennisuptodate.com",
+          "url": "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-day-3-predictions-zverev-musetti/",
+          "title": "ATP Paris Day 3 Predictions Including Alexander Zverev vs Lorenzo Musetti",
+          "publisher": "Last Word On Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdJj8dGw8u7elxGXEw3gVRFnX2lV-lp6zOKBicDDTHDbTqnPw8V3lKVlivKho"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAYaLu6HatOsHVXaB1o-w8XEq3cXYo058d-yBl9bfMALhU_jcMy5tSNxw1Hog"
         }
       ]
     },
@@ -77,15 +112,50 @@
       ]
     },
     {
+      "query": "ralph macchio",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T12:40:00Z",
+      "related_news_urls": [
+        "https://www.guitarworld.com/artists/guitarists/crossroads-sequel-in-the-works",
+        "https://ultimateclassicrock.com/crossroads-movie-sequel-is-set-to-feature-steve-vai/",
+        "https://www.ultimate-guitar.com/news/general_music_news/crossroads-sequel-is-in-the-works-ralph-macchio-steve-vai--screenwriter-john-fusco-all-willing-to-reprise-their-roles-weve-got-a-plan"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuuRLHPhAso2SGxcayKN9rcFk06JSJHzQHkZ006i52QjfXE1q7LThkEQRxQr4",
+      "image_credit": "Guitar World",
+      "news": [
+        {
+          "url": "https://www.guitarworld.com/artists/guitarists/crossroads-sequel-in-the-works",
+          "title": "“Ralph Macchio and I have talked about it. We’ve got a plan”: A sequel to cult guitar movie Crossroads is in the works – and Steve Vai is up for reprising his role",
+          "publisher": "Guitar World",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuuRLHPhAso2SGxcayKN9rcFk06JSJHzQHkZ006i52QjfXE1q7LThkEQRxQr4"
+        },
+        {
+          "url": "https://ultimateclassicrock.com/crossroads-movie-sequel-is-set-to-feature-steve-vai/",
+          "title": "‘Crossroads’ Movie Sequel Is Set to Feature Steve Vai",
+          "publisher": "Ultimate Classic Rock",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ94LToGAAZybexyeGgP4kdPt0SbKvLuimKhBlsMZBES2k_VQxEdwHVKBvbIko"
+        },
+        {
+          "url": "https://www.ultimate-guitar.com/news/general_music_news/crossroads-sequel-is-in-the-works-ralph-macchio-steve-vai--screenwriter-john-fusco-all-willing-to-reprise-their-roles-weve-got-a-plan",
+          "title": "'Crossroads' Sequel Is in the Works, Ralph Macchio, Steve Vai & Screenwriter John Fusco Confirm",
+          "publisher": "Ultimate Guitar",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFWwhh_sbxz1bikKXL2ZmzIKCWPPXOBuODNxBb7_c0_bGcKxSXK67gWF1g--0"
+        }
+      ]
+    },
+    {
       "query": "emma walmsley",
       "approx_searches": "200+",
       "published_at": "2026-11-04T12:40:00Z",
       "related_news_urls": [
         "https://www.reuters.com/business/hp-names-emma-walmsley-ceo-2026-11-04/",
         "https://www.bloomberg.com/news/articles/2026-11-04/hp-names-emma-walmsley-as-new-ceo-ending-monthlong-search",
-        "https://seekingalpha.com/news/4664628-hp-names-emma-walmsley-as-new-ceo"
+        "https://www.wsj.com/tech/hp-taps-former-gsk-executive-emma-walmsley-as-next-ceo-18165d93"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4B2R68zg60rQ73IxTvHXD4lLuNhxpBomvFo21owbywu3B1rhBGntegO-kY8c",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTImPjeHltcWNd19IuxeF1oQorshcXpzfQBRB8tHEkV1HXv5d81CiUoh3tmFLQ",
       "image_credit": "Reuters",
       "news": [
         {
@@ -93,7 +163,7 @@
           "title": "HP names former GSK chief Emma Walmsley as CEO",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4B2R68zg60rQ73IxTvHXD4lLuNhxpBomvFo21owbywu3B1rhBGntegO-kY8c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTImPjeHltcWNd19IuxeF1oQorshcXpzfQBRB8tHEkV1HXv5d81CiUoh3tmFLQ"
         },
         {
           "url": "https://www.bloomberg.com/news/articles/2026-11-04/hp-names-emma-walmsley-as-new-ceo-ending-monthlong-search",
@@ -103,11 +173,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsNIKy-dA8enC6QWo-8CJjfF78-tLjeWBXpWo4oYmMM79f93ebM60CpFdf_w4"
         },
         {
-          "url": "https://seekingalpha.com/news/4664628-hp-names-emma-walmsley-as-new-ceo",
-          "title": "HP names Emma Walmsley as new CEO (HPQ:NYSE)",
-          "publisher": "Seeking Alpha",
+          "url": "https://www.wsj.com/tech/hp-taps-former-gsk-executive-emma-walmsley-as-next-ceo-18165d93",
+          "title": "HP Taps Former GSK Executive Emma Walmsley as Next CEO",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh7aWaJpXj3JkBiCkMNLEK0uqrLNl7DjobatJheZMd1AgqEpoPNQXs1Iz54Yg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkblWgX-7ewKPG0FpO9KuHV3g8PEoPxOJqioUhT9c6t2-Q-QnwR0J87SScPBI"
         }
       ]
     },
@@ -117,8 +187,8 @@
       "published_at": "2026-11-04T12:40:00Z",
       "related_news_urls": [
         "https://www.investors.com/news/technology/datadog-stock-ddog-datadog-earnings-news-q32026/",
-        "https://www.10tv.com/article/syndication/associatedpress/datadog-q3-earnings-snapshot/616-99f3ee19-4f6e-437c-ba8c-855eadccf057",
-        "https://news.futunn.com/en/post/1003126886/bernstein-datadog-ddogus-and-cloudflare-netus-shares-have-been-oversold"
+        "https://seekingalpha.com/news/4664674-datadog-shares-fall-18-after-in-line-fourth-quarter-revenue-outlook",
+        "https://www.10tv.com/article/syndication/associatedpress/datadog-q3-earnings-snapshot/616-99f3ee19-4f6e-437c-ba8c-855eadccf057"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWdfter32VfJB9WGVBAMQZT3FJmfXzd9GV69bnW8hPZqj67hdMUuqH_GqBHWQ",
       "image_credit": "Investor's Business Daily",
@@ -131,18 +201,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWdfter32VfJB9WGVBAMQZT3FJmfXzd9GV69bnW8hPZqj67hdMUuqH_GqBHWQ"
         },
         {
+          "url": "https://seekingalpha.com/news/4664674-datadog-shares-fall-18-after-in-line-fourth-quarter-revenue-outlook",
+          "title": "Datadog shares fall 18% after in-line fourth-quarter revenue outlook (DDOG:NASDAQ)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbislNcAx6TPAbwbFZIhmMkXL9k2Y2wj4pSGX0GoF_eojOHSNNQRtgZFXYnTU"
+        },
+        {
           "url": "https://www.10tv.com/article/syndication/associatedpress/datadog-q3-earnings-snapshot/616-99f3ee19-4f6e-437c-ba8c-855eadccf057",
           "title": "Datadog: Q3 Earnings Snapshot",
           "publisher": "10tv.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTitSAuOA5LaWItcsQHBWj1iyd8TZEuGvp9hfjIq-olDmp96co4ErJWIkYPr_E"
-        },
-        {
-          "url": "https://news.futunn.com/en/post/1003126886/bernstein-datadog-ddogus-and-cloudflare-netus-shares-have-been-oversold",
-          "title": "Bernstein: Datadog (DDOG.US) and Cloudflare (NET.US) shares have been oversold; strong growth in AI businesses is expected to drive Q3 results above expectations.",
-          "publisher": "富途牛牛",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_tsUMUEih7TgR4my2IRV47kvowh3Q8Pg-t5cRy0wTwegKdGKyiO3CSdmsw8s"
         }
       ]
     },
@@ -152,7 +222,7 @@
       "published_at": "2026-11-04T12:40:00Z",
       "related_news_urls": [
         "https://www.goodhousekeeping.com/entertainment/celebrity-news/a74322223/today-show-sheinelle-jones-northwestern-university-2026-instagram/",
-        "https://www.nytimes.com/2026/11/02/style/martha-stewart-homeless-halloween-costume-apology.html",
+        "https://abcnews.com/GMA/Culture/martha-stewart-apologizes-homeless-person-halloween-costume/story?id=137770962",
         "https://pagesix.com/2026/11/02/society/infamous-dupont-twins-defend-former-boss-martha-stewart-over-homeless-halloween-costume/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9CMO29ylWkeqx5Kn9GiG0TMbpW7brUX7cejy_k35-1fwNMEp-M4iPJNK0k-w",
@@ -166,11 +236,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9CMO29ylWkeqx5Kn9GiG0TMbpW7brUX7cejy_k35-1fwNMEp-M4iPJNK0k-w"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/02/style/martha-stewart-homeless-halloween-costume-apology.html",
-          "title": "Martha Stewart Apologizes for Homeless Halloween Costume",
-          "publisher": "The New York Times",
+          "url": "https://abcnews.com/GMA/Culture/martha-stewart-apologizes-homeless-person-halloween-costume/story?id=137770962",
+          "title": "Martha Stewart apologizes for homeless person Halloween costume",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbfXj1toJ1TfEQkbfWWjL937cZeHHX8eKdXMIqdjl1JPlFcaOpy_TG1kOcCe0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmvDgFaTZApsp3uqpRJ7sCN2hr6j08ypYI4gcyfA0yHOnRrHUA0a-3OVoWTG8"
         },
         {
           "url": "https://pagesix.com/2026/11/02/society/infamous-dupont-twins-defend-former-boss-martha-stewart-over-homeless-halloween-costume/",
@@ -187,8 +257,8 @@
       "published_at": "2026-11-04T12:30:00Z",
       "related_news_urls": [
         "https://www.foxweather.com/lifestyle/old-farmers-almanac-white-christmas-16-states-2026",
-        "https://weather.com/2026/11/04/holiday/christmas/white-christmas-super-el-nino-odds",
-        "https://www.southernliving.com/old-farmers-almanac-2026-white-christmas-forecast-12207946"
+        "https://www.southernliving.com/old-farmers-almanac-2026-white-christmas-forecast-12207946",
+        "https://www.aol.com/articles/dreaming-white-christmas-old-farmers-170901000.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjKSTQiAjqcvpCjmVNcCCGNbR_Y13dvmfJ7-2hKAMaNe1huOFbBc28t0NKBAg",
       "image_credit": "FOX Weather",
@@ -201,64 +271,29 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjKSTQiAjqcvpCjmVNcCCGNbR_Y13dvmfJ7-2hKAMaNe1huOFbBc28t0NKBAg"
         },
         {
-          "url": "https://weather.com/2026/11/04/holiday/christmas/white-christmas-super-el-nino-odds",
-          "title": "Will super El Niño melt your white Christmas this year?",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyEhnSUmR9fzlO93EaWVmoo0lpMvGcy3Sx_e2kCqxBhyVW70IcWCqtkZLSZXA"
-        },
-        {
           "url": "https://www.southernliving.com/old-farmers-almanac-2026-white-christmas-forecast-12207946",
           "title": "Will You Get A White Christmas In 2026? The Old Farmer’s Almanac Has Some Surprises",
           "publisher": "Southern Living",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVviSoiHqbdmY8IIXVc7_8PFipTzPYAspPGFyV3GdadH_vPIDKH69pDtVunVM"
-        }
-      ]
-    },
-    {
-      "query": "outback steakhouse",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T12:30:00Z",
-      "related_news_urls": [
-        "https://www.foxbusiness.com/lifestyle/outback-steakhouse-franchisee-files-bankruptcy",
-        "https://finance.yahoo.com/small-business/articles/socal-outback-steakhouse-franchisee-files-110000194.html",
-        "https://www.restaurantdive.com/news/outback-steakhouse-franchisee-bankruptcy-61-units/873481/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8tYzyc9EIPzA5G07co_Lx6FpXngiaVCfUop1t-20FJ2-FRVbrWacKIceGJpc",
-      "image_credit": "Fox Business",
-      "news": [
-        {
-          "url": "https://www.foxbusiness.com/lifestyle/outback-steakhouse-franchisee-files-bankruptcy",
-          "title": "Outback Steakhouse franchisee files for bankruptcy",
-          "publisher": "Fox Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8tYzyc9EIPzA5G07co_Lx6FpXngiaVCfUop1t-20FJ2-FRVbrWacKIceGJpc"
         },
         {
-          "url": "https://finance.yahoo.com/small-business/articles/socal-outback-steakhouse-franchisee-files-110000194.html",
-          "title": "SoCal Outback Steakhouse franchisee files for bankruptcy, citing California's labor costs",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.aol.com/articles/dreaming-white-christmas-old-farmers-170901000.html",
+          "title": "Dreaming of a White Christmas? Old Farmer's Almanac predicts 16 states could have a wintry holiday",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKFoz6uW-v0PF-kiufMbsqlhXJm9wa1fB3O_1nrl3k95FLy6s5iOyZ43pdpmU"
-        },
-        {
-          "url": "https://www.restaurantdive.com/news/outback-steakhouse-franchisee-bankruptcy-61-units/873481/",
-          "title": "Outback’s largest U.S. franchisee goes bankrupt",
-          "publisher": "Restaurant Dive",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLDBS2hBnOUwiFT2Fs2Hb6f9fHv9imDCk8G5WOS-UELBw2f52fJ8fyEg2CSUI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR-mvJhGlMeSGMl6kpwKppPHxWDc-nj6PB4IXZ9wMXzWaqoEB3yez1qPYTB-U"
         }
       ]
     },
     {
       "query": "is lamar jackson out for the season",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-04T12:30:00Z",
       "related_news_urls": [
         "https://www.nfl.com/news/nfl-week-8-sunday-aftermath-ravens-cowboys-vikings",
-        "https://www.cbssports.com/nfl/news/could-tyson-bagent-save-ravens-playoff-hopes-lamar-jackson-injury/",
-        "https://sports.yahoo.com/nfl/article/the-nfl-has-a-quarterback-problem-the-ravens-just-became-exhibit-a-160758215.html"
+        "https://sports.yahoo.com/articles/shannon-sharpe-names-39-old-131500795.html",
+        "https://www.cbssports.com/nfl/news/could-tyson-bagent-save-ravens-playoff-hopes-lamar-jackson-injury/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyhkR-87w4T8X6opxRwAZHyQAHlJ1lyA6PCrwriGAdCSWkK9j_23XOUBwb79Y",
       "image_credit": "NFL.com",
@@ -271,24 +306,24 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyhkR-87w4T8X6opxRwAZHyQAHlJ1lyA6PCrwriGAdCSWkK9j_23XOUBwb79Y"
         },
         {
+          "url": "https://sports.yahoo.com/articles/shannon-sharpe-names-39-old-131500795.html",
+          "title": "Shannon Sharpe names the 39-year-old QB the Ravens should sign after Lamar Jackson injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrjtQ6ElrjGFyOLhhGi4wO66Oa-im9o-dg8Et6jlYqFbQ7jYOJmsdzmoQNS-8"
+        },
+        {
           "url": "https://www.cbssports.com/nfl/news/could-tyson-bagent-save-ravens-playoff-hopes-lamar-jackson-injury/",
           "title": "Could Tyson Bagent save Ravens' playoff hopes? Lamar Jackson injury raises a costly trade question",
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2bNndBMROy7ruo4Fxh-d7H0bgVaVHkKgSaQHInIHrJJwy-SVW4_9U9C-mq6o"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/article/the-nfl-has-a-quarterback-problem-the-ravens-just-became-exhibit-a-160758215.html",
-          "title": "The NFL has a quarterback problem. The Ravens just became Exhibit A",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX64ik-ISESZIHi1F-8V2z1cBzpuurp0RIXx_x3sRZs-I-BZOEWooEkwKyxqc"
         }
       ]
     },
     {
       "query": "samuel alito",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-04T12:30:00Z",
       "related_news_urls": [
         "https://nymag.com/intelligencer/article/samuel-alito-retirement-senate-democrats.html",
@@ -318,41 +353,6 @@
           "publisher": "Ms. Magazine",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXF8JdTmQzHYH9Ho08NzxOgvfEUmnd_iQQoxx1VHPURg50M3UFEWgrBYZ5lTs"
-        }
-      ]
-    },
-    {
-      "query": "big beautiful bill",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T12:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/politics/articles/trumps-big-accomplishment-ugly-everyone-090114867.html",
-        "https://www.foxnews.com/video/6407619690112",
-        "https://www.washingtonexaminer.com/daily-memo/4786062/has-no-tax-tips-overtime-social-security-helped-gop/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLVSimYpwtpVXzSMypjN7vu3cUMjeZi6Km38KRghWfh6sHaXKwSkQrl40GMIk",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/trumps-big-accomplishment-ugly-everyone-090114867.html",
-          "title": "Trump's big 'accomplishment' is ugly for everyone but the rich | Opinion",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLVSimYpwtpVXzSMypjN7vu3cUMjeZi6Km38KRghWfh6sHaXKwSkQrl40GMIk"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6407619690112",
-          "title": "President Donald Trump touts no tax on tips and Social Security",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnG-rGYjuquupjoA3TUTChhVKg91A_AzGgSmnPEBsBd_lr2HPuLEBeamauLs"
-        },
-        {
-          "url": "https://www.washingtonexaminer.com/daily-memo/4786062/has-no-tax-tips-overtime-social-security-helped-gop/",
-          "title": "Has no tax on tips/overtime/Social Security helped the GOP?",
-          "publisher": "Washington Examiner",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhuNmAIe_f7yK6T7vWg5psg6ogPoOFJRmtAGgnOVl4wwlu83FiuVDNJvPS7ZM"
         }
       ]
     }
