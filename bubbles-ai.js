@@ -2356,9 +2356,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    aiConsult[1].toLowerCase()==='claude'?'claude_only':'gemini_first';
   await consultExternalAi(aiConsult[2],mode,fromVoice);return;
  }
- // One character from the owner or the Android Bubbles bridge resumes
- // existing work. Archived text is context, NEVER new build authorization.
- if(spoken==='*'){
+ // An explicit short owner command (including '*') resumes existing saved work.
+ // Context and archived text NEVER grant new build permission. The existing
+ // signed owner session and Brain eligibility gates still control dispatch.
+ if(spoken==='*'||/^(?:continue|resume)(?:\s+(?:engineering|work))?(?:\s+please)?[.!]?$/i.test(spoken)){
   display(spoken,'you');clearSentComposer();
   messages.push({role:'user',text:spoken});persistChat();
   busy=true;send.disabled=true;setOrbState('busy');
