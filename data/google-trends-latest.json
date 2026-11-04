@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T22:31:33.013691Z",
+  "checked_at": "2026-11-04T23:01:17.989708Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "wow forever addons",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T22:40:00Z",
+      "related_news_urls": [
+        "https://www.gamespot.com/articles/best-wow-forever-addons-to-download-in-2026/",
+        "https://www.404media.co/world-of-warcraft-forever-is-already-overrun-with-ai-slop/",
+        "https://tech.yahoo.com/gaming/articles/best-wow-forever-add-ons-185818902.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXfrEqEns1PBVryfvJhE9Gc03uPV0unCrFQxeK0GjJTKYcQglmejpnDC_0tGY",
+      "image_credit": "GameSpot",
+      "news": [
+        {
+          "url": "https://www.gamespot.com/articles/best-wow-forever-addons-to-download-in-2026/",
+          "title": "Best WoW: Forever Addons To Download In 2026",
+          "publisher": "GameSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXfrEqEns1PBVryfvJhE9Gc03uPV0unCrFQxeK0GjJTKYcQglmejpnDC_0tGY"
+        },
+        {
+          "url": "https://www.404media.co/world-of-warcraft-forever-is-already-overrun-with-ai-slop/",
+          "title": "World of Warcraft: Forever Is Already Overrun with AI Slop",
+          "publisher": "404 Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_qjyrnhSE9gmuRRVM9djSg9YgFEWGpn5_LkGFYI5uRp7zQA3RrAyNtG8LDtU"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/best-wow-forever-add-ons-185818902.html",
+          "title": "Best WoW Forever add-ons to avoid AI slop",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbA3nX59M32R7b2ujEpeQcQK0H8bAc2Jj5Krmyu8K11KiOs5Di18m0s7I-Dk8"
+        }
+      ]
+    },
+    {
+      "query": "michael douglas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T22:20:00Z",
+      "related_news_urls": [
+        "https://ew.com/cher-responds-michael-douglas-shade-oscars-win-12222815",
+        "https://www.usatoday.com/story/entertainment/movies/2026/11/03/cher-michael-douglas-glenn-close-oscars/92601038007/",
+        "https://pagesix.com/2026/11/04/celebrity-news/cher-responds-to-michael-douglas-claim-glenn-close-deserved-her-oscar-for-moonstruck/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_HzcDf3QXBMtw-FflHXgcfgLwWYYuIaEceXEy2lLnZTw19emzkp-QrIyUqG4",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/cher-responds-michael-douglas-shade-oscars-win-12222815",
+          "title": "Cher responds after Michael Douglas shaded her 1988 Oscars victory over Glenn Close",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_HzcDf3QXBMtw-FflHXgcfgLwWYYuIaEceXEy2lLnZTw19emzkp-QrIyUqG4"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/03/cher-michael-douglas-glenn-close-oscars/92601038007/",
+          "title": "Cher reacts after Michael Douglas shades her Oscar win over Glenn Close",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFKlH0601JYPw5q_0Y4PA9PkoLpdUfzYgAQmEm-sm3iVNfMt1T_LQfYkSyGCs"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/04/celebrity-news/cher-responds-to-michael-douglas-claim-glenn-close-deserved-her-oscar-for-moonstruck/",
+          "title": "Cher responds to Michael Douglas’ claim Glenn Close deserved her Oscar for ‘Moonstruck’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0JsS-xVWQYfl5sNe7--dw4zexTlwMbAwgSyMmNJoPBYymNQpT1P7b58TMldA"
+        }
+      ]
+    },
+    {
+      "query": "athletico-pr vs vasco",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T22:10:00Z",
+      "related_news_urls": [
+        "https://ge.globo.com/pr/futebol/brasileirao-serie-a/noticia/2026/11/04/athletico-x-vasco-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://www.netvasco.com.br/n/395695/vasco-divulga-boletim-medico-de-marino-que-esta-fora-do-jogo-contra-o-athletico-pr-e-os-relacionados",
+        "https://www.goal.com/br/not%C3%ADcias/onde-assistir-a-athletico-paranaense-x-vasco-da-gama-ao-vivo-hoje-quem-transmite-o-jogo-na-tv-e-pela-internet/bltcdacdbcfc6a4151f"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaAsWbsEGfrGzDNccaJyXu0CWaND-ry6LE1HkkjzOl3D6oOW-HdhU05bCgkoM",
+      "image_credit": "ge",
+      "news": [
+        {
+          "url": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/noticia/2026/11/04/athletico-x-vasco-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Athletico x Vasco: onde assistir ao vivo, horário e escalações",
+          "publisher": "ge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaAsWbsEGfrGzDNccaJyXu0CWaND-ry6LE1HkkjzOl3D6oOW-HdhU05bCgkoM"
+        },
+        {
+          "url": "https://www.netvasco.com.br/n/395695/vasco-divulga-boletim-medico-de-marino-que-esta-fora-do-jogo-contra-o-athletico-pr-e-os-relacionados",
+          "title": "Vasco divulga boletim médico de Marino, que está fora do jogo contra o Athletico-PR, e os relacionados",
+          "publisher": "NETVASCO",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnq0XtPCGQyTpXUq372WsqDmqcxEIoB4HW_i9zXoIXSly-Ly7t6VqmOJirOPc"
+        },
+        {
+          "url": "https://www.goal.com/br/not%C3%ADcias/onde-assistir-a-athletico-paranaense-x-vasco-da-gama-ao-vivo-hoje-quem-transmite-o-jogo-na-tv-e-pela-internet/bltcdacdbcfc6a4151f",
+          "title": "Onde assistir a Athletico Paranaense x Vasco da Gama ao vivo hoje: quem transmite o jogo na TV e pela internet?",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlOux15lDTGe_rEIH9vCSX6ShR-RPco8H6Gln0bO7V406JJJK2xbi-FP9pX4Y"
+        }
+      ]
+    },
     {
       "query": "stick season 2",
       "approx_searches": "1000+",
@@ -42,17 +147,94 @@
       ]
     },
     {
-      "query": "jaylen watson",
+      "query": "lil durk bond hearing",
       "approx_searches": "500+",
+      "published_at": "2026-11-04T22:10:00Z",
+      "related_news_urls": [
+        "https://www.tmz.com/2026/11/02/lil-durk-placed-in-solitary-confinement/",
+        "https://www.hotnewhiphop.com/1015578-lil-durk-new-charges-bail-opposition-filing",
+        "https://thatgrapejuice.net/2026/11/lil-durk-moved-to-solitary-confinement-in-jail-days-before-bond-hearing/?utm_source=rss&utm_medium=rss&utm_campaign=lil-durk-moved-to-solitary-confinement-in-jail-days-before-bond-hearing"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxy5saEURL2fyfykX1KZ40ZWNgW_oR7u8QMzpAQJGxIlL6f2-EWjORkwot2fY",
+      "image_credit": "TMZ",
+      "news": [
+        {
+          "url": "https://www.tmz.com/2026/11/02/lil-durk-placed-in-solitary-confinement/",
+          "title": "Lil Durk Placed in Solitary Confinement While Awaiting Racketeering Trial",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxy5saEURL2fyfykX1KZ40ZWNgW_oR7u8QMzpAQJGxIlL6f2-EWjORkwot2fY"
+        },
+        {
+          "url": "https://www.hotnewhiphop.com/1015578-lil-durk-new-charges-bail-opposition-filing",
+          "title": "Lil Durk Could Face New Charges As Feds Reveal Prison Investigation In Bail Opposition Filing",
+          "publisher": "HotNewHipHop",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHVQhhA5J4oq4LB1bsD-ZJM9NpkHGolMgUWya9_GtJHWmaGeSX3IfOe7g98HU"
+        },
+        {
+          "url": "https://thatgrapejuice.net/2026/11/lil-durk-moved-to-solitary-confinement-in-jail-days-before-bond-hearing/?utm_source=rss&utm_medium=rss&utm_campaign=lil-durk-moved-to-solitary-confinement-in-jail-days-before-bond-hearing",
+          "title": "Lil Durk Moved to Solitary Confinement in Jail Days Before Bond Hearing",
+          "publisher": "That Grape Juice.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRE1Hjo4x1PrivUm_auNS0IfYwxYKJBf0L6m6hSyvpM0tHBuU5lAOBM8nq6D6I"
+        }
+      ]
+    },
+    {
+      "query": "outback steakhouse location closures list",
+      "approx_searches": "2000+",
       "published_at": "2026-11-04T22:00:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaylen-watson-to-undergo-season-ending-shoulder-surgery",
-        "https://sports.yahoo.com/articles/rams-cb-jaylen-watson-season-221121768.html",
-        "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/04/former-kansas-city-chiefs-jaylen-watson-season-ending-shoulder-surgery-los-angeles-rams-nfl-week-9/92616657007/"
+        "https://www.foxbusiness.com/lifestyle/outback-steakhouse-franchisee-files-bankruptcy",
+        "https://www.fastcompany.com/91635468/outback-steakhouse-closing-stores-2026-list-of-doomed-locations",
+        "https://www.restaurantdive.com/news/outback-steakhouse-franchisee-bankruptcy-61-units/873481/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxpjy4q2Su2TngpYLKsqjNbfHD8wmkA1VyHOhSfYUaZ2jTQksFEyDn-GCN5U",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8tYzyc9EIPzA5G07co_Lx6FpXngiaVCfUop1t-20FJ2-FRVbrWacKIceGJpc",
+      "image_credit": "Fox Business",
       "news": [
+        {
+          "url": "https://www.foxbusiness.com/lifestyle/outback-steakhouse-franchisee-files-bankruptcy",
+          "title": "Outback Steakhouse franchisee files for bankruptcy",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8tYzyc9EIPzA5G07co_Lx6FpXngiaVCfUop1t-20FJ2-FRVbrWacKIceGJpc"
+        },
+        {
+          "url": "https://www.fastcompany.com/91635468/outback-steakhouse-closing-stores-2026-list-of-doomed-locations",
+          "title": "Outback Steakhouse store closures: See a list of doomed locations as franchisee files for bankruptcy",
+          "publisher": "Fast Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVur3nvgRP6SeS6ay-x5JdakHAYYpqFddvWhKGLAGNs2GWsdz8a1aA1YC1JYk"
+        },
+        {
+          "url": "https://www.restaurantdive.com/news/outback-steakhouse-franchisee-bankruptcy-61-units/873481/",
+          "title": "Outback’s largest U.S. franchisee goes bankrupt",
+          "publisher": "Restaurant Dive",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLDBS2hBnOUwiFT2Fs2Hb6f9fHv9imDCk8G5WOS-UELBw2f52fJ8fyEg2CSUI"
+        }
+      ]
+    },
+    {
+      "query": "jaylen watson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T22:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50382837/rams-cb-jaylen-watson-needs-season-ending-shoulder-surgery",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaylen-watson-to-undergo-season-ending-shoulder-surgery",
+        "https://bleacherreport.com/articles/25529374-jaylen-watson-undergo-surgery-injury-latest-news-rams-cbs-status-and-return-timeline"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbFDjkKMN9iFyYMoUV3CwfydyByfyro_P5KIAEBr1BCu8Tj2CQQtCUgUX1to8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50382837/rams-cb-jaylen-watson-needs-season-ending-shoulder-surgery",
+          "title": "Rams CB Jaylen Watson needs season-ending shoulder surgery, Sean Mcvay says",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbFDjkKMN9iFyYMoUV3CwfydyByfyro_P5KIAEBr1BCu8Tj2CQQtCUgUX1to8"
+        },
         {
           "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaylen-watson-to-undergo-season-ending-shoulder-surgery",
           "title": "Jaylen Watson to undergo season-ending shoulder surgery",
@@ -61,18 +243,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxpjy4q2Su2TngpYLKsqjNbfHD8wmkA1VyHOhSfYUaZ2jTQksFEyDn-GCN5U"
         },
         {
-          "url": "https://sports.yahoo.com/articles/rams-cb-jaylen-watson-season-221121768.html",
-          "title": "Rams CB Jaylen Watson out for season due to shoulder injury",
-          "publisher": "Yahoo Sports",
+          "url": "https://bleacherreport.com/articles/25529374-jaylen-watson-undergo-surgery-injury-latest-news-rams-cbs-status-and-return-timeline",
+          "title": "Jaylen Watson to Undergo Surgery on Injury, Latest News on Rams CB's Status and Return Timeline",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf6riDWbgClS243bqFR1KV7A_koohLxupAEnRQWrNNfA3x0r8vGGVAJ5_3Eqc"
-        },
-        {
-          "url": "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/04/former-kansas-city-chiefs-jaylen-watson-season-ending-shoulder-surgery-los-angeles-rams-nfl-week-9/92616657007/",
-          "title": "Ex-Chiefs DB Jaylen Watson to have season-ending shoulder surgery",
-          "publisher": "Chiefs Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKhZR8TJMCHYOjbEsUhtmi724fk1UNFUSR15kaZ3oBorgvzSFHpYDVooRiBOg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnr5rsXwyoSAH4NBTXUbbGg-VzNe-U-RPgGbHCdpYvLvBwHZQmulra9aEgd58"
         }
       ]
     },
@@ -112,107 +287,29 @@
       ]
     },
     {
-      "query": "viking fk",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T21:50:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/soccer/news/vikings-ucl-journey-and-the-rise-of-co-head-coaches/",
-        "https://www.oregonlive.com/tv/2026/11/how-to-watch-viking-fk-vs-sabah-fk-today-champions-league-preview-start-time-odds.html",
-        "https://en.apa.az/football/champions-league-sabah-returns-from-norway-without-points-534103"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROe8vYc9W93ajCYkem02JAKLW_Bbg-9YZ9IxautHNkoBQlT5dEcyADNnJxisY",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/soccer/news/vikings-ucl-journey-and-the-rise-of-co-head-coaches/",
-          "title": "Viking's UCL journey and the rise of co-head coaches: Why two managers might be better than one",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROe8vYc9W93ajCYkem02JAKLW_Bbg-9YZ9IxautHNkoBQlT5dEcyADNnJxisY"
-        },
-        {
-          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-viking-fk-vs-sabah-fk-today-champions-league-preview-start-time-odds.html",
-          "title": "How to watch Viking FK vs. Sabah FK today: Champions League preview, start time, odds",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_VDeyJSCSk89B7Pa61SrFDRGv-OwdwGogi8Uw9mCHsiblqaiVn8sW1-ZP0Q"
-        },
-        {
-          "url": "https://en.apa.az/football/champions-league-sabah-returns-from-norway-without-points-534103",
-          "title": "Champions League: Sabah returns from Norway without points",
-          "publisher": "Apa.az",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCMUTd36X7tuM0PfAlaFbiONbvMWIp-VERFUR64vKhwDaFE7c7SwOnehXUiuI"
-        }
-      ]
-    },
-    {
-      "query": "porto",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T21:50:00Z",
-      "related_news_urls": [
-        "https://www.rtp.pt/noticias/desporto/fc-porto-goleia-napoles-e-conquista-primeiros-pontos-na-champions_e1776916",
-        "https://www.abola.pt/noticias/diogo-costa-travou-duas-vezes-mas-mctominay-gelou-o-dragao-video-2026110420503678829",
-        "https://www.record.pt/multimedia/videos/detalhe/presenca-da-claque-do-napoles-obriga-a-reforco-policial-nas-imediacoes-do-estadio-do-dragao"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8bMiKXXDy82fFGcrQGDILO47VmcIuSETNX3CEcMryY1-Ed9PkJI5fVs5hBw",
-      "image_credit": "RTP",
-      "news": [
-        {
-          "url": "https://www.rtp.pt/noticias/desporto/fc-porto-goleia-napoles-e-conquista-primeiros-pontos-na-champions_e1776916",
-          "title": "FC Porto goleia Nápoles e conquista primeiros pontos na Champions",
-          "publisher": "RTP",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8bMiKXXDy82fFGcrQGDILO47VmcIuSETNX3CEcMryY1-Ed9PkJI5fVs5hBw"
-        },
-        {
-          "url": "https://www.abola.pt/noticias/diogo-costa-travou-duas-vezes-mas-mctominay-gelou-o-dragao-video-2026110420503678829",
-          "title": "Diogo Costa travou duas vezes, mas McTominay gelou o Dragão (vídeo)",
-          "publisher": "A Bola",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTkWDmqVKEUZE5HQpcaafmWTtoS9hlkAN_tnWDVJs5H4U-Sfk_S-PwVh_PWOk"
-        },
-        {
-          "url": "https://www.record.pt/multimedia/videos/detalhe/presenca-da-claque-do-napoles-obriga-a-reforco-policial-nas-imediacoes-do-estadio-do-dragao",
-          "title": "Presença da claque do Nápoles obriga a reforço policial nas imediações do Estádio do Dragão",
-          "publisher": "Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNKQgYeQxB_yucdiH6qliwBMMAblb3oE8_i3_kyYwbnszb_rJpkLoklpnaM9s"
-        }
-      ]
-    },
-    {
       "query": "antonio nusa",
       "approx_searches": "500+",
       "published_at": "2026-11-04T21:50:00Z",
       "related_news_urls": [
-        "https://www.idahostatejournal.com/sports/national/germany-champions-league-soccer/image_58ca9094-8864-5dee-9abd-42ea4d2ff1e1.html",
-        "https://www.idahopress.com/sports/national/germany-champions-league-soccer/image_12de13b7-5ad7-553f-a452-7e6988b96dd6.html",
-        "https://www.idahopress.com/sports/national/germany-champions-league-soccer/image_1c3c9cee-3c2d-5b5b-bc00-14edaaf7600b.html"
+        "https://www.idahostatejournal.com/sports/national/aptopix-germany-champions-league-soccer/image_d5bd6883-5f04-58e8-bc58-a9be615d4cdb.html",
+        "https://www.corsicanadailysun.com/sports/national_sports/germany-champions-league-soccer/image_2819894a-519d-5057-8000-b6b899bd891c.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWeJv5cRAyKTVwTntuciN3yryXTZONkhqeqOmZXIhhbkalWlmS_RCMD_OayvI",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv07-nHdo8hXseOGb30ujWj-aTzB2hG-doBXhiLVAxJ1qbaI_faf8hs7dvaSk",
       "image_credit": "Idaho State Journal",
       "news": [
         {
-          "url": "https://www.idahostatejournal.com/sports/national/germany-champions-league-soccer/image_58ca9094-8864-5dee-9abd-42ea4d2ff1e1.html",
-          "title": "Germany Champions League Soccer",
+          "url": "https://www.idahostatejournal.com/sports/national/aptopix-germany-champions-league-soccer/image_d5bd6883-5f04-58e8-bc58-a9be615d4cdb.html",
+          "title": "APTOPIX Germany Champions League Soccer",
           "publisher": "Idaho State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWeJv5cRAyKTVwTntuciN3yryXTZONkhqeqOmZXIhhbkalWlmS_RCMD_OayvI"
-        },
-        {
-          "url": "https://www.idahopress.com/sports/national/germany-champions-league-soccer/image_12de13b7-5ad7-553f-a452-7e6988b96dd6.html",
-          "title": "Germany Champions League Soccer",
-          "publisher": "Idaho Press",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv07-nHdo8hXseOGb30ujWj-aTzB2hG-doBXhiLVAxJ1qbaI_faf8hs7dvaSk"
         },
         {
-          "url": "https://www.idahopress.com/sports/national/germany-champions-league-soccer/image_1c3c9cee-3c2d-5b5b-bc00-14edaaf7600b.html",
+          "url": "https://www.corsicanadailysun.com/sports/national_sports/germany-champions-league-soccer/image_2819894a-519d-5057-8000-b6b899bd891c.html",
           "title": "Germany Champions League Soccer",
-          "publisher": "Idaho Press",
+          "publisher": "Corsicana Daily Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuEYI86MzO-3fWxWXXQ8UqD1RzIxYM6fJl6LhU0iI2wXL3gKEvWcVUR4nOCs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeW-KqG_ailN4RCAufvxWZQ8QNDFxzJTd5DWzzlO2jV-5f7h05c51inPOfSlc"
         }
       ]
     },
@@ -222,8 +319,8 @@
       "published_at": "2026-11-04T21:50:00Z",
       "related_news_urls": [
         "https://finance.yahoo.com/markets/stocks/articles/mercadolibre-falls-earnings-miss-margin-214342800.html",
-        "https://seekingalpha.com/news/4665383-mercadolibre-slides-as-tech-investments-drag-on-profits",
-        "https://www.tikr.com/blog/mercadolibres-bulls-are-counting-on-profit-growth-heres-what-we-learn-tonight"
+        "https://www.bloomberg.com/news/articles/2026-11-04/mercadolibre-results-meet-estimates-as-fintech-e-commerce-grow",
+        "https://seekingalpha.com/news/4665383-mercadolibre-slides-as-tech-investments-drag-on-profits"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
       "image_credit": "Yahoo Finance",
@@ -236,123 +333,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
         },
         {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-04/mercadolibre-results-meet-estimates-as-fintech-e-commerce-grow",
+          "title": "MercadoLibre Shares Drop As Investments Weigh on Profit",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlmGBqmo-WWUIGCvSmssqUZDwiFQSDmqkU7Uy-H_uhvHPshfdva85YsMSpysg"
+        },
+        {
           "url": "https://seekingalpha.com/news/4665383-mercadolibre-slides-as-tech-investments-drag-on-profits",
           "title": "MercadoLibre slides as tech investments drag on profits (MELI:NASDAQ)",
           "publisher": "Seeking Alpha",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHXD11WsRR3nUyhyFbmEGLH4TjUbfKBZ6bx1tJeGTsnG0ijLXcIgiBunfVMc0"
-        },
-        {
-          "url": "https://www.tikr.com/blog/mercadolibres-bulls-are-counting-on-profit-growth-heres-what-we-learn-tonight",
-          "title": "MercadoLibre’s Bulls Are Counting on Profit Growth. Here’s What We Learn Tonight",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5u0JeWEEG-j7UxxCjX2iX8yWhsWL7iyQuKp7OMVBxEQlRVvi-sGWUz-6Ngxo"
-        }
-      ]
-    },
-    {
-      "query": "flamengo vs grêmio",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T21:40:00Z",
-      "related_news_urls": [
-        "https://ge.globo.com/futebol/times/flamengo/noticia/2026/11/04/achei-na-ativa-aos-39-david-braz-ve-flamengo-x-gremio-como-2009-e-alerta-para-armadilha-do-mistao.ghtml",
-        "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/04/malvadao-flamengo-ve-rivais-poupando-titulares-contra-si-na-reta-final.ghtm",
-        "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-do-sul/gremio/comentarista-do-sportv-critica-weverton-por-forcar-amarelo-e-desfalcar-gremio/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL4dsJT_EK8YJmj9q_HRxUgSyeTBDHqhotqoA1ESxTG7ySj3AKt_ISwreKQJk",
-      "image_credit": "ge",
-      "news": [
-        {
-          "url": "https://ge.globo.com/futebol/times/flamengo/noticia/2026/11/04/achei-na-ativa-aos-39-david-braz-ve-flamengo-x-gremio-como-2009-e-alerta-para-armadilha-do-mistao.ghtml",
-          "title": "Achei! Na ativa aos 39, David Braz vê Flamengo x Grêmio como 2009 e alerta para \"armadilha\" do mistão",
-          "publisher": "ge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL4dsJT_EK8YJmj9q_HRxUgSyeTBDHqhotqoA1ESxTG7ySj3AKt_ISwreKQJk"
-        },
-        {
-          "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/04/malvadao-flamengo-ve-rivais-poupando-titulares-contra-si-na-reta-final.ghtm",
-          "title": "Fla encara novo rival que poupa titulares enquanto diretoria blinda Jardim",
-          "publisher": "UOL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTemc_PlMw_2PABqgqPCAhQ7qvRfes0ycz8xvZ5OdLnBD2kJ2cSd4Bk9GYey7w"
-        },
-        {
-          "url": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-do-sul/gremio/comentarista-do-sportv-critica-weverton-por-forcar-amarelo-e-desfalcar-gremio/",
-          "title": "Comentarista do sportv critica Weverton por forçar amarelo e desfalcar Grêmio",
-          "publisher": "Rádio Itatiaia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnzGtLyKIIwZzAStsoh_ORJ8UOemNxMsQtRSFoLhflncvHDncosKY7X2vk-74"
-        }
-      ]
-    },
-    {
-      "query": "rc lens",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T21:30:00Z",
-      "related_news_urls": [
-        "https://rmcsport.bfmtv.com/football/ligue-des-champions/direct-lens-come-suivez-le-mach-de-la-4e-journee-de-la-ligue-des-champions-en-live_LS-202611040738.html",
-        "https://www.lequipe.fr/Football/Article/Decryptage-les-frappes-de-loin-du-milieu-offensif-de-come-nico-paz-une-serieuse-menace-pour-lens/1741013",
-        "https://www.france24.com/fr/info-en-continu/20261104-ligue-des-champions-lens-esp%C3%A8re-un-rebond-face-%C3%A0-c%C3%B4me"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYCHF1IR7YoD0_8YOXylGI-nlDDE6qlhRmgRvLItbYsWsEnDB5VtleaO7chIk",
-      "image_credit": "RMC Sport",
-      "news": [
-        {
-          "url": "https://rmcsport.bfmtv.com/football/ligue-des-champions/direct-lens-come-suivez-le-mach-de-la-4e-journee-de-la-ligue-des-champions-en-live_LS-202611040738.html",
-          "title": "Lens-Côme: les Sang et Or sombrent dans une débâcle historique",
-          "publisher": "RMC Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYCHF1IR7YoD0_8YOXylGI-nlDDE6qlhRmgRvLItbYsWsEnDB5VtleaO7chIk"
-        },
-        {
-          "url": "https://www.lequipe.fr/Football/Article/Decryptage-les-frappes-de-loin-du-milieu-offensif-de-come-nico-paz-une-serieuse-menace-pour-lens/1741013",
-          "title": "Décryptage : les frappes de loin du milieu offensif de Côme Nico Paz, une sérieuse menace pour Lens",
-          "publisher": "L'Équipe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzjlODfFkAswiMfbzDFP4I5Au-uQGJSCiXmPQMYnuNFedSZMAxITq1c7xOKMk"
-        },
-        {
-          "url": "https://www.france24.com/fr/info-en-continu/20261104-ligue-des-champions-lens-esp%C3%A8re-un-rebond-face-%C3%A0-c%C3%B4me",
-          "title": "Ligue des champions : Lens espère un rebond face à Côme",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfkpldvCk4r78Iotn3JBQ95WzfLiA9DmP7YqTgI7lJTwUzGEyS54WLYZ33h_Y"
-        }
-      ]
-    },
-    {
-      "query": "college gameday week 10 location",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T21:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/espn/betting/story/_/id/50371741/college-football-betting-week-10-notre-dame-miami-points",
-        "https://www.cbssports.com/college-football/news/cj-carr-defining-moment-notre-dames-cfp-hopes-miami/",
-        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article317886345.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2hfAWZ459BojbHW_a6dOKVLuatu0G2ZtiMnfi57jZjIwtvrAiYd8C0GOk_lg",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/espn/betting/story/_/id/50371741/college-football-betting-week-10-notre-dame-miami-points",
-          "title": "Miami-Notre Dame best bets: Is the over the smart play in South Bend?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2hfAWZ459BojbHW_a6dOKVLuatu0G2ZtiMnfi57jZjIwtvrAiYd8C0GOk_lg"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/cj-carr-defining-moment-notre-dames-cfp-hopes-miami/",
-          "title": "CJ Carr faces defining moment as Notre Dame's CFP hopes ride on showdown vs. No. 1 Miami",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ27zsCMWm8QUjzzsO9U9i_YvKUc57x_2xPgR747w2hazRkq9fomgBesChC3CA"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article317886345.html",
-          "title": "Miami-Notre Dame put Malachi Toney on college football’s radar. It’s time for Round 2",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmzBVgPxJRNLHCd1xQHMJ3DGQnn9-nkWuJNWQDkwkDrcjGjTUY0iYDwVrm0PI"
         }
       ]
     }
