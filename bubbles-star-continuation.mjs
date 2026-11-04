@@ -9,7 +9,14 @@ const DEPENDENCY_DONE=new Set(['complete','deployed_verified','merged_verified']
 const DENIAL=/owner_input_required|owner_authorization_required|owner_approval_required|security_hold|permission_denied|password|secret|credential|wallet|payment|biometric|consent_required|account_connection_required/i;
 const VERIFY=/commit_verification_required|deployment_not_verified|deployed_unverified|merge_verification_required/i;
 const bounded=n=>Number.isFinite(n)?Math.max(1,Math.min(8,Math.trunc(n))):8;
-export function isStarContinuation(value){return typeof value==='string'&&value.trim()==='*';}
+export function isStarContinuation(value){
+ if(typeof value!=='string')return false;
+ const command=value.trim();
+ // Treat only short owner commands as an instruction to resume saved work.
+ // Longer sentences remain ordinary chat: never authorize builds from a quote,
+ // arbitrary page content, external messages or a model's interpretation.
+ return command==='*'||/^(?:continue|resume)(?:\s+(?:engineering|work))?(?:\s+please)?[.!]?$/i.test(command);
+}
 const time=v=>Number.isFinite(Number(v))?Number(v):Date.parse(v||'')||0;
 function jobStage(job,jobs,now){
  const status=String(job?.status||'');
