@@ -5,7 +5,7 @@ const STOP=new Set(['the','and','for','what','how','you','are','with','this','th
 const norm=s=>String(s).toLowerCase().replace(/[^a-z0-9]+/g,'');
 const words=s=>(String(s).toLowerCase().match(/[a-z0-9]{3,}/g)||[]).filter(w=>!STOP.has(w));
 const ASKS=/\b(?:ecosystem|repos?|repositor(?:y|ies)|github pages|live (?:site|url|page)|what (?:have|has) (?:we|i|you) (?:built|made|created)|what(?:'s| is) (?:been )?(?:built|made)|everything (?:built|made))\b/i;
-export function ecosystemContextFor(userRequest){
+function buildEcosystemContext(userRequest){
  const q=typeof userRequest==='string'?userRequest.slice(0,1200):'';
  if(!q||!DATA.length)return '';
  const nq=norm(q);
@@ -26,4 +26,8 @@ export function ecosystemContextFor(userRequest){
   ...pick.map(line),
   'All public repositories: '+DATA.map(r=>r.name).join(', ').slice(0,1800)
  ].join('\n').slice(0,4800);
+}
+// A failure here must never break normal chat.
+export function ecosystemContextFor(userRequest){
+ try{return buildEcosystemContext(userRequest)}catch{return ''}
 }
