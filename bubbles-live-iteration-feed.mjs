@@ -56,10 +56,14 @@ export function advanceLiveBits(previous,event){
   if(!['queued','ready','working','blocked','committed_unverified','merged_verified','deployed_verified','complete','completed','superseded'].includes(status))return s;
   const agent=clean(event.agent,40),stage=clean(event.stage,100);
   const summary=clean(event.summary,180);
-  const label=status==='blocked'?'blocked':status==='working'?'working':status==='deployed_verified'?'deployment recorded':status==='merged_verified'?'merge recorded':status==='committed_unverified'?'commit awaiting verification':status==='ready'||status==='queued'?'waiting for runner':status==='superseded'?'superseded':'result recorded';
+  // Only show exact HTTPS GitHub run URLs from the validated owner ticket.
+  const evidence=typeof event.runUrl==='string'&&
+    /^https:\/\/github\.com\/www-infinity4\/[A-Za-z0-9_.-]+\/actions\/runs\/[0-9]+$/.test(event.runUrl)
+    ?event.runUrl:'';
+  const label=status==='blocked'?'blocked':status==='working'?'working reported (result pending)':status==='deployed_verified'?'deployment recorded':status==='merged_verified'?'merge recorded':status==='committed_unverified'?'commit awaiting verification':status==='ready'||status==='queued'?'waiting for runner':status==='superseded'?'superseded':'result recorded';
   add('GitHub · '+(agent||'Brain')+' · '+label,status==='blocked'?'failed':status==='working'?'running':'observed',{
    resource:repo,criteria:stage,detail:summary||'Stage recorded in the owner Brain ledger; result evidence remains separate.',
-   tool:'robot_brain.job',receiptTail:''
+   tool:'robot_brain.job',receiptTail:'',url:evidence
   });
   return s;
  }
@@ -117,6 +121,10 @@ function mountLiveView(){
    for(const [label,value] of [['Criteria',entry.criteria],['Criteria key',entry.criteriaKey],['Resource',entry.resource],['Detail',entry.detail],['Tool',entry.tool],['Receipt suffix',entry.receiptTail]]){
     if(!value)continue;
     const small=document.createElement('small');small.textContent=label+': '+value;li.append(small);
+   }
+   if(entry.url){
+    const link=document.createElement('a');link.textContent='Inspect actual GitHub run';
+    link.href=entry.url;link.target='_blank';link.rel='noopener noreferrer';li.append(link);
    }
    record.append(li);
   }
