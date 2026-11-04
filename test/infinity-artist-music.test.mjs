@@ -6,8 +6,9 @@ const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 test('artist music uses one page-level dock and no per-card iframe or outbound music links',()=>{
  const home=read('index.html'), steve=read('steve-miller-book-of-dreams.js'), rock=read('classic-rock-official-card.mjs');
  assert.match(home,/infinity-artist-music\.js/);
- assert.match(steve,/InfinityArtistMusic\.toggle/);
- assert.match(rock,/InfinityArtistMusic\.toggle/);
+ assert.match(steve,/InfinityArtistMusic/);
+ assert.match(steve,/music\.toggle\('steve-miller'\)/);
+ assert.match(rock,/InfinityArtistMusic\?\.toggle/);
  assert.doesNotMatch(steve,/target\s*=\s*['_"]_blank|new yt\.Player|smb-player-frame|oracle:card-deactivated/);
  assert.doesNotMatch(rock,/artistLink\.href\s*=|artistLink\.target\s*=|window\.open\(/);
 });
