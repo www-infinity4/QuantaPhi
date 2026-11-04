@@ -3,356 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T05:01:42.151816Z",
+  "checked_at": "2026-11-04T05:31:35.519014Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "alex pretti",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-04T04:40:00Z",
+      "query": "greenland",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T05:10:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/03/minneapolis-i-voted-stickers-alex-pretti-memorial",
-        "https://www.houstonchronicle.com/politics/article/latino-voters-ice-outrage-midterms-22509811.php",
-        "https://www.axios.com/2026/11/03/i-voted-stickers-ice-memorials"
+        "https://apnews.com/article/greenland-trump-denmark-us-33824857ac4312c5ebd53821187ecc13",
+        "https://www.politico.eu/article/greenland-greatest-gift-ever-donald-trump-us-europe/",
+        "https://www.aljazeera.com/news/2026/11/3/greenland-parliament-approves-security-deal-with-us-denmark"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxbydXhZR-P_lb6P3HfiShazyo69fjHMd_ae6aXyGI1f3poq4Vpksz0PRawOs",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbM8rw46zO0HRu9j3qJkK-RLRCfp01gJJSkSMJqHZ8spRdy4mRw72lFBp3dm8",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/greenland-trump-denmark-us-33824857ac4312c5ebd53821187ecc13",
+          "title": "Greenland approves security deal with Denmark and US following months of Trump's pressure",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbM8rw46zO0HRu9j3qJkK-RLRCfp01gJJSkSMJqHZ8spRdy4mRw72lFBp3dm8"
+        },
+        {
+          "url": "https://www.politico.eu/article/greenland-greatest-gift-ever-donald-trump-us-europe/",
+          "title": "Trump says Europe gave Greenland to US as ‘greatest gift’ ever",
+          "publisher": "POLITICO.eu",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqbMpS3UDg6y3dyrLyoF6zKtoqsqme6VkkQU2xiJYadJFJEEfbtolWTUEuUEU"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/3/greenland-parliament-approves-security-deal-with-us-denmark",
+          "title": "Greenland parliament approves security deal with US, Denmark",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSa3JACvGy1zh6oJiWLvQBtCnKAiN3zmKt1GPliA38NuRkKFowqck77BtP-6I"
+        }
+      ]
+    },
+    {
+      "query": "jay obernolte",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T05:10:00Z",
+      "related_news_urls": [
+        "https://obernolte.house.gov/media/press-releases/rep-obernolte-demands-answers-medi-cal-oversight",
+        "https://www.gridleyherald.com/2026/11/03/590215/audit-raises-questions-over-billions-in-medi-cal-billing",
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-governor.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThYn7u0vTnZA1GYuE_5HXmv3RjUHYabI3NoCkVRYj04iEyujNMQUevEuArtjI",
+      "image_credit": "Representative Jay Obernolte | (.gov)",
+      "news": [
+        {
+          "url": "https://obernolte.house.gov/media/press-releases/rep-obernolte-demands-answers-medi-cal-oversight",
+          "title": "Rep. Obernolte Demands Answers on Medi-Cal Oversight",
+          "publisher": "Representative Jay Obernolte | (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThYn7u0vTnZA1GYuE_5HXmv3RjUHYabI3NoCkVRYj04iEyujNMQUevEuArtjI"
+        },
+        {
+          "url": "https://www.gridleyherald.com/2026/11/03/590215/audit-raises-questions-over-billions-in-medi-cal-billing",
+          "title": "Audit Raises Questions Over Billions in Medi-Cal Billing",
+          "publisher": "Gridley Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8KMl52p-cs42brcQPdq60rt8wbqN5ayHbEKT6aJlnyBnhh7u0ji1r5quxpM"
+        },
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-governor.html",
+          "title": "U.S. Governor Midterm Elections 2026: Live Results",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eAN7UbnOaOyZMgN1ApQP_FEPg5u5BREID_8FDO3605Fr9Im__uy1BVzoyp4"
+        }
+      ]
+    },
+    {
+      "query": "detroit county",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T05:10:00Z",
+      "related_news_urls": [
+        "https://www.detroitnews.com/story/news/politics/elections/2026/11/03/detroit-zoo-millage-renewal-voters-support/92516515007/",
+        "https://www.freep.com/story/news/politics/elections/2026/11/02/ballot-proposals-in-oakland-macomb-wayne-counties/92565092007/",
+        "https://wdet.org/2026/10/28/the-metro-oakland-and-wayne-county-museum-funding-proposal-leaves-out-macomb/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRblvy3gSihuOV2c4yqmun4BWZTDmjdIC4HwQeXsg7BU8mQ8zLU-iAHQtYakO8",
+      "image_credit": "The Detroit News",
+      "news": [
+        {
+          "url": "https://www.detroitnews.com/story/news/politics/elections/2026/11/03/detroit-zoo-millage-renewal-voters-support/92516515007/",
+          "title": "Voters show strong support for Detroit Zoo millage in early results",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRblvy3gSihuOV2c4yqmun4BWZTDmjdIC4HwQeXsg7BU8mQ8zLU-iAHQtYakO8"
+        },
+        {
+          "url": "https://www.freep.com/story/news/politics/elections/2026/11/02/ballot-proposals-in-oakland-macomb-wayne-counties/92565092007/",
+          "title": "Here's what proposals voters will see on ballot in Detroit-area counties",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArgEoS7MN3KVs1haKMerCFfmojXFCHHxzlyMKE044e1f2faph_PGbx-roNEA"
+        },
+        {
+          "url": "https://wdet.org/2026/10/28/the-metro-oakland-and-wayne-county-museum-funding-proposal-leaves-out-macomb/",
+          "title": "Oakland and Wayne County museum funding proposal leaves out Macomb | The Metro",
+          "publisher": "WDET 101.9 FM",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ9F8ltNCeWPYDwxobIzx0RuQxRh5tmbzLPczB5CJQDBjdGDAASxjMwRVuK2A"
+        }
+      ]
+    },
+    {
+      "query": "jimmy kimmel live",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T05:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/02/us/politics/trump-reflecting-pool-midterms.html",
+        "https://www.cnn.com/2026/11/02/politics/trump-reflecting-pool-midterm-message",
+        "https://www.motherjones.com/politics/2026/11/on-the-eve-of-the-midterms-trumps-closing-argument-is-about-algae/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUYI1imCFYmazhsV0p0A0Hp40nV0KBJ8ghvfiNuLyxqkfSfVTRkhg8PmnR4FY",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/02/us/politics/trump-reflecting-pool-midterms.html",
+          "title": "Trump Delivers a Closing Midterm Message. Mostly About Landscaping.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUYI1imCFYmazhsV0p0A0Hp40nV0KBJ8ghvfiNuLyxqkfSfVTRkhg8PmnR4FY"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/02/politics/trump-reflecting-pool-midterm-message",
+          "title": "Trump’s closing message hits a topic close to his heart — but not voters’ minds",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI24YhStcDO1dyOF5IC6BzbgluL35UfkxURWu_q_0cVK6PFY_ogSfpBfl66DM"
+        },
+        {
+          "url": "https://www.motherjones.com/politics/2026/11/on-the-eve-of-the-midterms-trumps-closing-argument-is-about-algae/",
+          "title": "Trump’s Closing Argument Is About Algae",
+          "publisher": "Mother Jones",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKE4_gf8O0a8lU2qYXx2D1jw4zHb49rIHxmpWD-eJ0I4xnmAIt8MfJa3e81AI"
+        }
+      ]
+    },
+    {
+      "query": "measure 638",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T05:10:00Z",
+      "related_news_urls": [
+        "https://www.seattletimes.com/seattle-news/politics/wa-initiative-638-to-ban-trans-girls-in-school-sports-leads/",
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-washington-measure-638-trans-athletes-participation-in-school-sports.html",
+        "https://mynorthwest.com/mynorthwest-politics/transgender-sports/4286805"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9bN7Gprj7RnqttuYVoBjYWurZhTRHGHDO05ZCy8K6UiDduYFUUyb4OVBxOds",
+      "image_credit": "The Seattle Times",
+      "news": [
+        {
+          "url": "https://www.seattletimes.com/seattle-news/politics/wa-initiative-638-to-ban-trans-girls-in-school-sports-leads/",
+          "title": "Effort to ban trans girls in K-12 school sports leads Tuesday night",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9bN7Gprj7RnqttuYVoBjYWurZhTRHGHDO05ZCy8K6UiDduYFUUyb4OVBxOds"
+        },
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-washington-measure-638-trans-athletes-participation-in-school-sports.html",
+          "title": "Washington Measure 638 Election Results 2026: Trans Athletes’ Participation in School Sports",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST0yU7H55tt0K3UrgaHehtrOU3AlZl8TpNy0FzOAfg20TdBQdZYPGJVWi2spw"
+        },
+        {
+          "url": "https://mynorthwest.com/mynorthwest-politics/transgender-sports/4286805",
+          "title": "I-638 narrowly leads in initial results, would bar transgender girls from girls’ school sports",
+          "publisher": "MyNorthwest.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBSjHRuBwaO5pOdImIpMja5K6wO9-Oh7RshqfIf5m0EeRD3_DLpaGSSS89ZZU"
+        }
+      ]
+    },
+    {
+      "query": "josh hawley",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T05:10:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/oct/21/abdul-el-sayed-michigan-senate-democrats",
+        "https://www.nytimes.com/2026/10/21/us/politics/abdul-el-sayed-muslim-brotherhood-mother-half-sister.html",
+        "https://www.motherjones.com/politics/2026/10/the-el-sayed-hecklers-dad-got-250000-to-campaign-against-el-sayed/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdxmXUdqXUdDs32AlrNhq9Es6o2_94bDgRrG8QOu-TXOLoRV_MfcYo-E2Yks",
       "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/03/minneapolis-i-voted-stickers-alex-pretti-memorial",
-          "title": "Minnesotans leave ‘I Voted’ stickers at Alex Pretti and Renee Good memorials as ‘democracy guardians’ watch polls",
+          "url": "https://www.theguardian.com/us-news/2026/oct/21/abdul-el-sayed-michigan-senate-democrats",
+          "title": "‘What are you implying?’: El-Sayed confronts critics head-on as attacks ramp up | Democrats",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxbydXhZR-P_lb6P3HfiShazyo69fjHMd_ae6aXyGI1f3poq4Vpksz0PRawOs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdxmXUdqXUdDs32AlrNhq9Es6o2_94bDgRrG8QOu-TXOLoRV_MfcYo-E2Yks"
         },
         {
-          "url": "https://www.houstonchronicle.com/politics/article/latino-voters-ice-outrage-midterms-22509811.php",
-          "title": "Houston Latino voters take ICE outrage to the polls on Election Day",
-          "publisher": "Houston Chronicle",
+          "url": "https://www.nytimes.com/2026/10/21/us/politics/abdul-el-sayed-muslim-brotherhood-mother-half-sister.html",
+          "title": "Abdul El-Sayed Confronts Attacks on His Faith and Family Ties",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHoZD3aDngVfB1naB3anmD6ot1AWAirR5806lPPi6SM3qc1Ziy_XiUI71BRZk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3wLj7GATdXDhb_AimIQhiDPWmlArta6ppI-OdqtLCeIaQGc3VfcasuM1Mjao"
         },
         {
-          "url": "https://www.axios.com/2026/11/03/i-voted-stickers-ice-memorials",
-          "title": "\"I Voted\" stickers become tributes at ICE memorials",
-          "publisher": "Axios",
+          "url": "https://www.motherjones.com/politics/2026/10/the-el-sayed-hecklers-dad-got-250000-to-campaign-against-el-sayed/",
+          "title": "Abdul El-Sayed keeps getting questioned by manufactured opposition",
+          "publisher": "Mother Jones",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKlJol_q4foyuNF5QzX-X4fPHlPRTITpDa4oHy0y7j89MOO07i3hSIQEcbprM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvDRopfoyBMLFZSDu_9MrWG9iz9FE3CgsLwlha7pHVd7IQN__zSIxK3Rwdgs0"
         }
       ]
     },
     {
-      "query": "mileage tax california",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T04:40:00Z",
+      "query": "obama",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T05:00:00Z",
       "related_news_urls": [
-        "https://www.kcra.com/article/xavier-becerra-california-wealth-tax-plans/74277677",
-        "https://www.yahoo.com/news/videos/california-drivers-furious-over-xavier-192900675.html",
-        "https://www.foxla.com/news/california-governor-candidates-debate-mileage-tax-fund-road-repairs"
+        "https://barackobama.medium.com/my-remarks-at-a-detroit-rally-in-support-of-jocelyn-benson-and-abdul-el-sayed-9ea65d77b0ef",
+        "https://www.theguardian.com/us-news/live/2026/oct/24/obama-abdul-el-sayed-midterms-rally-michigan-live-updates",
+        "https://www.foxnews.com/outkick-sports/nba-champ-takes-issue-obama-pitch-michigan-voters-hotly-contested-senate-race"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMSe4OIABY6pB_ovNBR2oAOgRWYoRhORwVSwKd2ZvGQ5e8kQ6jRpJ2g46J2I",
-      "image_credit": "KCRA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWpw8-1eornA_npZhNHjPXi3uTj0_vIWltGwPzdXd8Y0ozklO7oAOAfw3SbAY",
+      "image_credit": "Barack Obama – Medium",
       "news": [
         {
-          "url": "https://www.kcra.com/article/xavier-becerra-california-wealth-tax-plans/74277677",
-          "title": "Xavier Becerra talks new wealth tax, High-Speed Rail changes and other plans for California",
-          "publisher": "KCRA",
+          "url": "https://barackobama.medium.com/my-remarks-at-a-detroit-rally-in-support-of-jocelyn-benson-and-abdul-el-sayed-9ea65d77b0ef",
+          "title": "My Remarks at a Detroit Rally in Support of Jocelyn Benson and Abdul El-Sayed",
+          "publisher": "Barack Obama – Medium",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMSe4OIABY6pB_ovNBR2oAOgRWYoRhORwVSwKd2ZvGQ5e8kQ6jRpJ2g46J2I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWpw8-1eornA_npZhNHjPXi3uTj0_vIWltGwPzdXd8Y0ozklO7oAOAfw3SbAY"
         },
         {
-          "url": "https://www.yahoo.com/news/videos/california-drivers-furious-over-xavier-192900675.html",
-          "title": "California drivers furious over Xavier Becerra’s mileage tax pitch",
-          "publisher": "Yahoo",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/24/obama-abdul-el-sayed-midterms-rally-michigan-live-updates",
+          "title": "‘Change is in the air’: Obama praises El-Sayed and attacks Trump at Michigan rally – as it happened",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfJZSKfVkwToVsOqRRD2ELY02g2LXWhoSDVgi5br8C6Eu1NTZ8os92qZKSO8g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-uZgAGSkmc6Mgy7y8XEZXSO1aL3H-Jf1uAthnG9RbqjWumIhC9yQuM2CcfKY"
         },
         {
-          "url": "https://www.foxla.com/news/california-governor-candidates-debate-mileage-tax-fund-road-repairs",
-          "title": "Debate over mileage tax surfaces in California governor's race",
-          "publisher": "FOX 11 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DPBbdF6RCbtYXkeevJ-eLGxBSfZ9APKwu62ZByvKcR4Kw_JWAKQeDmoizag"
-        }
-      ]
-    },
-    {
-      "query": "elon musk net worth",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T04:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/heres-spacex-stock-worth-2027-213800101.html",
-        "https://seekingalpha.com/article/4961027-spacex-just-changed-what-investors-are-really-buying",
-        "https://www.latintimes.com/epa-xai-unpermitted-methane-turbines-memphis-colossus-600811"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9b34ZMV4VZ1D35rCEVpIYcUkPBQaE2n_6UlWxpFhD5UxWV8hy_4VXlgMQEeU",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-spacex-stock-worth-2027-213800101.html",
-          "title": "Here's What SpaceX Stock Will Be Worth by 2027 if Elon Musk's $1 Trillion Revenue Call Is Correct",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9b34ZMV4VZ1D35rCEVpIYcUkPBQaE2n_6UlWxpFhD5UxWV8hy_4VXlgMQEeU"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4961027-spacex-just-changed-what-investors-are-really-buying",
-          "title": "SpaceX Just Changed What Investors Are Really Buying (NASDAQ:SPCX)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnuZgE7E2hrzPV8Af3BTKt1CNp3tIPI7T26PSlL5t3xzGlTJC5HECY9TbCbo"
-        },
-        {
-          "url": "https://www.latintimes.com/epa-xai-unpermitted-methane-turbines-memphis-colossus-600811",
-          "title": "xAI's Memphis AI data centers face EPA action and a Clean Air Act lawsuit over dozens of methane turbines",
-          "publisher": "Latin Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8T0o0JtYLlphmVken_nSiXlsW2qN0SNJzW-fPgW0Z3j3aWdAAPk2W6e7NtFs"
-        }
-      ]
-    },
-    {
-      "query": "steven miller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T04:40:00Z",
-      "related_news_urls": [
-        "https://sonomasun.com/2026/11/03/david-bolling-why-i-killed-stephen-miller/",
-        "https://edition.cnn.com/2026/11/02/politics/jason-turkish-haley-stevens-michigan-senate-mike-rogers-abdul-el-sayed",
-        "https://www.foxnews.com/video/6407877381112"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp5jUV6LUe5aQyydgHP2nl4yMjHVFq8cek4kxJUgKHCupWkYsnODexPu5avFg",
-      "image_credit": "Sonoma Valley Sun",
-      "news": [
-        {
-          "url": "https://sonomasun.com/2026/11/03/david-bolling-why-i-killed-stephen-miller/",
-          "title": "David Bolling: Why I Killed Stephen Miller",
-          "publisher": "Sonoma Valley Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp5jUV6LUe5aQyydgHP2nl4yMjHVFq8cek4kxJUgKHCupWkYsnODexPu5avFg"
-        },
-        {
-          "url": "https://edition.cnn.com/2026/11/02/politics/jason-turkish-haley-stevens-michigan-senate-mike-rogers-abdul-el-sayed",
-          "title": "‘He would wind her up’: Democratic anger at Haley Stevens’ fiancé boils over after her endorsement reversal",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZCa3yGkBuNIEYzuYEZemSSVXSxnQ5rO9001NiURLZNCtbvUcuDUUOjfSRO0M"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6407877381112",
-          "title": "Democrats predict Haley Stevens endorsement will ‘backfire’",
+          "url": "https://www.foxnews.com/outkick-sports/nba-champ-takes-issue-obama-pitch-michigan-voters-hotly-contested-senate-race",
+          "title": "NBA champ takes issue with Obama's pitch to Michigan voters amid hotly contested Senate race",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ1YoDW1-r1IHwcmkblI-PCvSfr97HPK_0Rd0ClRjpBlN0Ruj6AP3PVDP5JJ0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDzlDgSrMpPC_vTM_w9b_IFuv-8TvPRRgVHwDWxiz_EiI7hSW2k4xcl9MkI9U"
         }
       ]
     },
     {
-      "query": "san bernardino county election results",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T04:40:00Z",
+      "query": "hillary clinton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T05:00:00Z",
       "related_news_urls": [
-        "https://www.recordnet.com/story/news/politics/elections/2026/11/03/live-election-results-stockton-san-joaquin-county-races/92515134007/",
-        "https://www.sbsun.com/2026/11/03/election-results-san-bernardino-voters-have-their-say-on-3-city-council-seats/",
-        "https://www.communityforwardredlands.com/san-bernardino-election-results-2026/"
+        "https://www.tvinsider.com/1301287/the-view-hillary-clinton-predictions-2026-midterm-elections/",
+        "https://www.foxnews.com/media/hillary-clinton-warns-dems-may-squander-midterm-victory-fail-stay-focused-after-election",
+        "https://www.nj.com/politics/2026/11/hillary-clinton-warns-trump-will-be-out-of-control-if-this-party-wins.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVOmAKDhqnUvs30jA5afdqzxhvi2IkBYVD1fZa2QNzi_XuvEH5KsD-xUA8e-k",
-      "image_credit": "The Stockton Record",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqX59kVSWnKHLwrsIcj3OgbVKg7mm03MLjOBL69VSUwGhjYP5lfCj4HKLvXYk",
+      "image_credit": "TV Insider",
       "news": [
         {
-          "url": "https://www.recordnet.com/story/news/politics/elections/2026/11/03/live-election-results-stockton-san-joaquin-county-races/92515134007/",
-          "title": "Live election results for key San Joaquin County races",
-          "publisher": "The Stockton Record",
+          "url": "https://www.tvinsider.com/1301287/the-view-hillary-clinton-predictions-2026-midterm-elections/",
+          "title": "Hillary Clinton Predicts What Trump Will Do After Midterm Loss on ‘The View’",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVOmAKDhqnUvs30jA5afdqzxhvi2IkBYVD1fZa2QNzi_XuvEH5KsD-xUA8e-k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqX59kVSWnKHLwrsIcj3OgbVKg7mm03MLjOBL69VSUwGhjYP5lfCj4HKLvXYk"
         },
         {
-          "url": "https://www.sbsun.com/2026/11/03/election-results-san-bernardino-voters-have-their-say-on-3-city-council-seats/",
-          "title": "Election results: San Bernardino voters have their say on 3 City Council seats",
-          "publisher": "San Bernardino Sun",
+          "url": "https://www.foxnews.com/media/hillary-clinton-warns-dems-may-squander-midterm-victory-fail-stay-focused-after-election",
+          "title": "Hillary Clinton warns Dems may squander midterm victory if they fail to stay focused after election",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvqYK1--ydTwlvk1k6XgS1kpYCkNtkKIkBaY1_E03ujaK5rujiWNBy7QdxWs8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0fHLt1SUEur-Z3nQVHILz8Sp8F1RqLUCE8eSk2eteTas82NG-QNoejnV5Az0"
         },
         {
-          "url": "https://www.communityforwardredlands.com/san-bernardino-election-results-2026/",
-          "title": "San Bernardino Election Results 2026: City Council, school board and local races",
-          "publisher": "Community Forward Redlands",
+          "url": "https://www.nj.com/politics/2026/11/hillary-clinton-warns-trump-will-be-out-of-control-if-this-party-wins.html",
+          "title": "Hillary Clinton 'optimistic' but 'worried' ahead of midterms",
+          "publisher": "NJ.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYWfJejiGY4D4Xzk8gxaSdu47rUiOTTSggI3ZyVuotaR5WTijMLwwRy-rlXg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcebpkB9_Ny1tdv4DzAhslK354gBYGXDEDGXvJurNIWUlTdNdWXLjhm58Iv2U"
         }
       ]
     },
     {
-      "query": "impeach",
+      "query": "wayne county election results",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T04:40:00Z",
+      "published_at": "2026-11-04T05:00:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/saradorn/2026/10/30/will-democrats-impeach-trump-if-they-win-midterms-heres-why-appetite-may-be-limited/",
-        "https://www.newsweek.com/could-trump-be-impeached-if-democrats-win-midterms-12656715",
-        "https://www.yahoo.com/news/politics/articles/democrats-squabbling-over-contain-trump-110000288.html"
+        "https://www.clickondetroit.com/decision-2026/2026/11/02/2026-general-election-results-for-oakland-county-school-district-boards-millages/",
+        "https://www.clickondetroit.com/decision-2026/2026/11/04/interactive-map-2026-michigan-us-senate-general-election-results/",
+        "https://www.detroitnews.com/story/news/politics/elections/oakland-county/2026/11/03/oakland-county-election-results-november-3-2026/92566476007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ30ccKqlS0Qg1LVfxTFvstxV2yJsuLAD9HgjDo0gAj6uWW47X6bvUtYTyq5gs",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXw2pej92EEd3vCreXBoccBjEcvK_ksWPUAjcfXwDxdNWk4npdPrbsDJMa4i8",
+      "image_credit": "ClickOnDetroit | WDIV Local 4",
       "news": [
         {
-          "url": "https://www.forbes.com/sites/saradorn/2026/10/30/will-democrats-impeach-trump-if-they-win-midterms-heres-why-appetite-may-be-limited/",
-          "title": "Will Democrats Impeach Trump If They Win Midterms? Here’s Why Appetite May Be Limited",
-          "publisher": "Forbes",
+          "url": "https://www.clickondetroit.com/decision-2026/2026/11/02/2026-general-election-results-for-oakland-county-school-district-boards-millages/",
+          "title": "2026 General Election Results for Oakland County School District Boards, Millages",
+          "publisher": "ClickOnDetroit | WDIV Local 4",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ30ccKqlS0Qg1LVfxTFvstxV2yJsuLAD9HgjDo0gAj6uWW47X6bvUtYTyq5gs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXw2pej92EEd3vCreXBoccBjEcvK_ksWPUAjcfXwDxdNWk4npdPrbsDJMa4i8"
         },
         {
-          "url": "https://www.newsweek.com/could-trump-be-impeached-if-democrats-win-midterms-12656715",
-          "title": "Could Trump Be Impeached If Democrats Win Midterms?",
-          "publisher": "Newsweek",
+          "url": "https://www.clickondetroit.com/decision-2026/2026/11/04/interactive-map-2026-michigan-us-senate-general-election-results/",
+          "title": "Interactive map: 2026 Michigan U.S. Senate general election results",
+          "publisher": "ClickOnDetroit | WDIV Local 4",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUJJc56xrWegtOOZEbFOkfQaRkn1DEh_xxpdLkYfKRzCOria0YmPCU0-4E7VI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtiW8xgEdEBmONkNqa4m4L4ctVgYOOzRy8oQJ9NJcCeOw4B0ww7bGGohGClus"
         },
         {
-          "url": "https://www.yahoo.com/news/politics/articles/democrats-squabbling-over-contain-trump-110000288.html",
-          "title": "Democrats squabbling over how to contain Trump after Election Day",
-          "publisher": "Yahoo",
+          "url": "https://www.detroitnews.com/story/news/politics/elections/oakland-county/2026/11/03/oakland-county-election-results-november-3-2026/92566476007/",
+          "title": "2026 Michigan election results for Oakland County races and proposals",
+          "publisher": "The Detroit News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcSAaG0q4GtsHaH4m4XxrtSMg2myXwFOf5_v-9Fc4uuryVArzP-HgeDEH-Hd0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr-jrf2YTpCJu-4NgJXuyuBVtxgSO7Xa-bjNU3_HrM-dkGuACuQVnS-phEoJw"
         }
       ]
     },
     {
-      "query": "placer county election results",
+      "query": "fontana mayor race",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T04:40:00Z",
+      "published_at": "2026-11-04T05:00:00Z",
       "related_news_urls": [
-        "https://www.sacbee.com/news/politics-government/election/article317883402.html",
-        "https://www.capradio.org/articles/2026/11/03/heres-what-we-know-so-far-about-the-sacramento-regions-local-election-results/",
-        "https://www.cbsnews.com/sacramento/news/sacramento-county-supervisor-district-1-flo-cofer-eric-guerra/"
+        "https://iecn.com/fontana-mayoral-challenger-joz-sida-warehouse-moratorium/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVZPr6qU6F68GhCJkCIkhbHSTHrd1WoiKCVN3Xu9yrya1IVX8pWM4n6FG_Iow",
-      "image_credit": "Sacramento Bee",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPh7Zw7H1Hzg-SDNPvEfDBN0Q9W4jmSX5k49Ldo-bgLbqj8u5KWN64MriqptY",
+      "image_credit": "ie community news",
       "news": [
         {
-          "url": "https://www.sacbee.com/news/politics-government/election/article317883402.html",
-          "title": "Sacramento County election results 2026: Live supervisor and city races",
-          "publisher": "Sacramento Bee",
+          "url": "https://iecn.com/fontana-mayoral-challenger-joz-sida-warehouse-moratorium/",
+          "title": "Fontana Mayoral Challenger Joz Sida Calls for Warehouse Moratorium and Sanctuary City Status",
+          "publisher": "ie community news",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVZPr6qU6F68GhCJkCIkhbHSTHrd1WoiKCVN3Xu9yrya1IVX8pWM4n6FG_Iow"
-        },
-        {
-          "url": "https://www.capradio.org/articles/2026/11/03/heres-what-we-know-so-far-about-the-sacramento-regions-local-election-results/",
-          "title": "Here’s what we know so far about the Sacramento region’s local election results",
-          "publisher": "capradio.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtxUg4tHiiacED7S3BoaFICXNhOALCswTJa4FDVNrcCRTksuBP4FDWzNPrqwY"
-        },
-        {
-          "url": "https://www.cbsnews.com/sacramento/news/sacramento-county-supervisor-district-1-flo-cofer-eric-guerra/",
-          "title": "Flo Cofer faces Eric Guerra in Sacramento County District 1 supervisor race",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6TF8xKQ-SLRXx-qz1-1Wd1fsGOEzH1H5qrfXEEJ9__BmJzNkq3gxhZwZEwyk"
-        }
-      ]
-    },
-    {
-      "query": "kitsap county election results 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T04:40:00Z",
-      "related_news_urls": [
-        "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-kitsap-county/281-c0cfb309-6f8e-4c42-8bfb-1cbf79b7e336",
-        "https://www.spokesman.com/stories/2026/nov/03/live-coverage-2026-midterm-election/",
-        "https://www.kitsapsun.com/story/news/politics/elections/2026/11/03/live-kitsap-county-2026-election-updates-results--live/92573442007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc91H4LIBZ5ij_6JJeYnK7-w2N88Vvr5lz1NKDALqpU-PnyPTxCaDudf_k4SM",
-      "image_credit": "KING5.com",
-      "news": [
-        {
-          "url": "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-kitsap-county/281-c0cfb309-6f8e-4c42-8bfb-1cbf79b7e336",
-          "title": "2026 general election results for Kitsap County",
-          "publisher": "KING5.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc91H4LIBZ5ij_6JJeYnK7-w2N88Vvr5lz1NKDALqpU-PnyPTxCaDudf_k4SM"
-        },
-        {
-          "url": "https://www.spokesman.com/stories/2026/nov/03/live-coverage-2026-midterm-election/",
-          "title": "Live Coverage: 2026 Midterm Election",
-          "publisher": "The Spokesman-Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTh9WRLZO83xHTRfcHSYC-q66iF-QLOL_mLgs6n1HPXJJsdWlfEyyLnA5bnRIo"
-        },
-        {
-          "url": "https://www.kitsapsun.com/story/news/politics/elections/2026/11/03/live-kitsap-county-2026-election-updates-results--live/92573442007/",
-          "title": "Live updates as Kitsap County votes in 2026 midterm elections",
-          "publisher": "Kitsap Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcW0AWOAwdG-FZLVKZjfeLCVgAYrEj96F-deUd4oYBFXNl_x3nEq7MCT0aqNI"
-        }
-      ]
-    },
-    {
-      "query": "iowa amendment 1",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T04:40:00Z",
-      "related_news_urls": [
-        "https://www.kcci.com/article/iowa-election-results-2026-constitutional-amendment-1-tax-policy/74286464",
-        "https://www.ktiv.com/2026/11/02/what-would-iowas-amendment-1-change-guide-income-tax-ballot-question/",
-        "https://www.bleedingheartland.com/2026/10/31/voting-like-my-life-depends-on-it/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjxO3KuqxjJvsPcuUJJ7kpsm23pWqUpLJoUv8MCYkPCsGy8JNo4r73EE5C-bo",
-      "image_credit": "KCCI",
-      "news": [
-        {
-          "url": "https://www.kcci.com/article/iowa-election-results-2026-constitutional-amendment-1-tax-policy/74286464",
-          "title": "Iowa election results: Constitutional Amendment 1",
-          "publisher": "KCCI",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjxO3KuqxjJvsPcuUJJ7kpsm23pWqUpLJoUv8MCYkPCsGy8JNo4r73EE5C-bo"
-        },
-        {
-          "url": "https://www.ktiv.com/2026/11/02/what-would-iowas-amendment-1-change-guide-income-tax-ballot-question/",
-          "title": "What would Iowa’s Amendment 1 change? A guide to the Income Tax Ballot Question",
-          "publisher": "KTIV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3v4No1sJzdpmmMqfdiHMZB60Tru-EvHq_ECXOuDvTPrlN0ejNaD9shhV2qBk"
-        },
-        {
-          "url": "https://www.bleedingheartland.com/2026/10/31/voting-like-my-life-depends-on-it/",
-          "title": "Voting like my life depends on it",
-          "publisher": "Bleeding Heartland",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVA57GWTHBQNi8zYHiQSmDC8bOlGapsqRE3SCKr1YHr8lZtttUe42SfQzgOkI"
-        }
-      ]
-    },
-    {
-      "query": "john kennedy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T04:40:00Z",
-      "related_news_urls": [
-        "https://breakingdefense.com/2026/10/pentagon-will-pick-new-us-base-location-by-june-2027-prioritizing-4-requirements/",
-        "https://www.war.gov/News/News-Stories/Article/Article/4635071/assistant-secretary-says-theres-exceptional-interest-in-the-next-great-american/",
-        "https://louisianaradionetwork.com/2026/11/02/48763/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0Vjrq_GCzKG8KUUEoBLReJgqJtx4S-Ou9hfaqnWcxzCdLMYGRpTQhE4OvsGQ",
-      "image_credit": "Breaking Defense",
-      "news": [
-        {
-          "url": "https://breakingdefense.com/2026/10/pentagon-will-pick-new-us-base-location-by-june-2027-prioritizing-4-requirements/",
-          "title": "Pentagon will pick new US base location by June 2027, prioritizing 4 requirements",
-          "publisher": "Breaking Defense",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0Vjrq_GCzKG8KUUEoBLReJgqJtx4S-Ou9hfaqnWcxzCdLMYGRpTQhE4OvsGQ"
-        },
-        {
-          "url": "https://www.war.gov/News/News-Stories/Article/Article/4635071/assistant-secretary-says-theres-exceptional-interest-in-the-next-great-american/",
-          "title": "Assistant Secretary Says There's 'Exceptional Interest' in the Next Great American Base",
-          "publisher": "U.S. Department of War (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAcwD_RrQht4H_LYJM3H5sWe7eGgoWRvFTpyhWeerqig1p0TCI4UkpFyRUxCg"
-        },
-        {
-          "url": "https://louisianaradionetwork.com/2026/11/02/48763/",
-          "title": "State lawmaker believes Louisiana would be an ideal candidate for “Next Great American Base”",
-          "publisher": "louisianaradionetwork.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR79-H_bEJTAA7ULQRmVOZ6MdsnzP2TFrG_Js1xxhFK2weX4OUKUQNVleLS9Eg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPh7Zw7H1Hzg-SDNPvEfDBN0Q9W4jmSX5k49Ldo-bgLbqj8u5KWN64MriqptY"
         }
       ]
     }
