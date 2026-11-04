@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T17:18:49.185714Z",
+  "checked_at": "2026-11-04T18:20:53.998790Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -197,7 +197,7 @@
     },
     "burger-king-chicken-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://news.bk.com/",
@@ -205,7 +205,7 @@
           "title": "Burger King® Expands Its Iconic Original Chicken Sandwich Lineup with Two Bold New Flavors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Restaurants"
         },
         {
@@ -214,7 +214,7 @@
           "title": "Hello Kitty® and Friends Are Coming to Burger King®",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Restaurants"
         },
         {
@@ -223,7 +223,7 @@
           "title": "Burger King® Serves Up Game Day Flavor with New Stadium-Inspired Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Restaurants"
         },
         {
@@ -232,14 +232,14 @@
           "title": "Burger King® Gives New Chicken Nuggets The High-Fashion Treatment With “Le Nugguette”",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Restaurants"
         }
       ]
     },
     "kraft-mac-cheese": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://www.kraftheinz.com/kraft-mac-and-cheese",
@@ -247,7 +247,7 @@
           "title": "Site Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Food & recipes"
         },
         {
@@ -256,7 +256,7 @@
           "title": "An image displaying two Kraft Mac & Cheese products. On the left, against a solid blue background, the word \"products\" is written in large white text. To the right, on a split blue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Food & recipes"
         },
         {
@@ -265,7 +265,7 @@
           "title": "An image featuring two limited-edition Kraft Mac & Cheese boxes: a red \"Pizza Flavored\" box with pizza slice graphics and a green \"Jalapeño Flavored\" box with a jalapeño pepper gra",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Food & recipes"
         },
         {
@@ -274,7 +274,7 @@
           "title": "Kraft PowerMac and Original Mac & Cheese boxes next to a prepared bowl of macaroni on a blue and yellow background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Food & recipes"
         },
         {
@@ -283,7 +283,7 @@
           "title": "Kraft Heinz logo on a purple background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Food & recipes"
         },
         {
@@ -292,7 +292,7 @@
           "title": "Collage with packages from all the Kraft Heinz brands on a red background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Food & recipes"
         },
         {
@@ -301,7 +301,7 @@
           "title": "A plate of pasta and meat on a yellow background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Food & recipes"
         },
         {
@@ -310,54 +310,54 @@
           "title": "A slice of pumpkin cheesecake topped with whipped cream, served on a plate next to a gold fork.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T12:24:07.801066Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Food & recipes"
         }
       ]
     },
     "heritage": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "topps": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "beckett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "christies": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "shoplc-premium": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "kohls-coupons": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "honda-vehicles": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "oakley-meta": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "gmc-trucks": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T12:24:07.801066Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "gmc-sierra-2026": {
@@ -2662,7 +2662,7 @@
     },
     "durable-rada-cutlery": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://radakitchenstore.com/",
@@ -2670,7 +2670,7 @@
           "title": "Rada Kitchen Store | Rada Cutlery Personal Shopping & Gifts",
           "kind": "website",
           "description": "Shop for Rada Cutlery kitchen knives, cooking utensils, cookbooks and other 100% USA Made kitchen products from Rada Mfg. Co. Purchase for yourself or as gifts.",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2679,7 +2679,7 @@
           "title": "Rada Kitchen Store",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2688,7 +2688,7 @@
           "title": "Rada Kitchen Store",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2697,7 +2697,7 @@
           "title": "Rada Kitchen Store | Rada Cutlery Personal Shopping & Gifts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2706,7 +2706,7 @@
           "title": "Wedding Register Gift Set",
           "kind": "product",
           "description": "$16.95 This four-piece Wedding Register Gift Set includes knives that make the future of any kitchen just a little bit brighter. All four knives were made with a specific purpose in mind, yet can be used on all kinds of foods, making them incredibly versatile ",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         },
@@ -2716,7 +2716,7 @@
           "title": "Housewarming Gift Set",
           "kind": "product",
           "description": "$16.95 Rada’s three-piece Housewarming Gift Set includes these incredible knives—Regular Paring, Utility/Steak, and Slicer. All are highly rated thanks to their high quality, usefulness, and good looks. In blade sizes 3¼ʺ, 4⅞ʺ, and 7ʺ, these multi-taskers are ",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         },
@@ -2726,7 +2726,7 @@
           "title": "Meal Prep Gift Set",
           "kind": "product",
           "description": "$16.95 If you know someone who loves to cook but is short on time, this is the set for them. It includes our Granny Paring, Heavy Duty Paring, Super Parer, and Vegetable Peeler. These are the go-to items for tasks that require precision, dependable control, an",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         }
@@ -2734,7 +2734,7 @@
     },
     "durable-wusthof": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://wusthof.com/",
@@ -2742,7 +2742,7 @@
           "title": "a Wusthof Amici series knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2751,7 +2751,7 @@
           "title": "a Wusthof amici 1814 knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2760,7 +2760,7 @@
           "title": "a Classic Wusthof knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2769,7 +2769,7 @@
           "title": "A Wusthof Classic knife handle in the Wild Blueberry",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2778,7 +2778,7 @@
           "title": "WÜSTHOF Digital Gift Card",
           "kind": "product",
           "description": "Whatever the occasion — birthday, wedding, housewarming, or holiday — give a WÜSTHOF Digital Gift Card, the best choice for any special event. The lucky recipient will make the right choice from a wonderful selection of the world’s best knives from a company w",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "25.0",
@@ -2793,7 +2793,7 @@
           "title": "Classic Ikon Hand-Held Knife Sharpener",
           "kind": "product",
           "description": "The easiest way to sharpen knives and to keep them sharp. This 2-stage pull-through, V-shaped Knife Sharpener with diamond rods and ceramic steels is particularly suitable for those who do not feel comfortable using Sharpening Steels or Whetstones. With this S",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "85.0",
@@ -2808,7 +2808,7 @@
           "title": "a Wusthof Amici series knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2817,14 +2817,14 @@
           "title": "a Wusthof amici 1814 knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-zwilling-j-a-henckels": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://www.zwilling.com/us/",
@@ -2832,7 +2832,7 @@
           "title": "ZWILLING, It's a culinary world",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2841,7 +2841,7 @@
           "title": "Zwilling",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2850,7 +2850,7 @@
           "title": "Image of ZWILLING Four Star 8-inch Chef's Knife on a sleek black background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2859,14 +2859,14 @@
           "title": "Image of ZWILLING Peak Fry Pan on a black background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-mauviel": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://mauviel-usa.com/",
@@ -2874,7 +2874,7 @@
           "title": "Mauviel 1830",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2883,7 +2883,7 @@
           "title": "Gifts for every cook, every budget",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2892,7 +2892,7 @@
           "title": "Mauviel M'Heritage M'250 B 10-piece cookware set with brass handles, including pots and pans in stainless steel finish.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2901,7 +2901,7 @@
           "title": "Mauviel M'Heritage M'250 B 10-piece cookware set with brass handles, includes saucepans, frying pans, and stockpots on a kitchen countertop.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2910,7 +2910,7 @@
           "title": "Mauviel 1830 M'Heritage M'250 B 10-Piece Cookware Set, Brass Handles",
           "kind": "product",
           "description": "The 10-Piece set Includes: 2.7-Qt Sauce Pan With Lid 3.3-Qt Sauce Pan With Lid 3.3-Qt Saute Pan With Lid 10.2-In Frying Pan 11.8-In Frying Pan 6.1-Qt Stewpan With Lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainless steel inside 10%.",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "2999.95",
@@ -2925,7 +2925,7 @@
           "title": "Mauviel 1830 M'Heritage M'150 B 12-Piece Copper Cookware Set With Brass Handles",
           "kind": "product",
           "description": "Set includes: 1.9-qt Sauce Pan with lid 2.8-qt Sauce Pan with lid 3.5-qt Sauce Pan with lid 3.3-qt Saute pan 3.7-qt Chef Pan 7.9 in Frying pan 10.2-in Frying pan 6.3-qt Stewpan with lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainles",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "2499.95",
@@ -2940,7 +2940,7 @@
           "title": "Mauviel 1830 M'Heritage M'150 B 10-Piece Copper Cookware Set With Brass Handles",
           "kind": "product",
           "description": "Set includes 1.9-qt Sauce pan With Lid 3.5-qt Sauce pan With Lid 3.3-qt Sauté pan With Lid 10.2-in Frying Pan 11.8-in Frying Pan 6.3-qt Stewpan With Lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainless steel inside 10%. Copper Thickn",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "2149.95",
@@ -2953,12 +2953,12 @@
     },
     "durable-framework-computers": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "durable-fairphone": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://www.fairphone.com/",
@@ -2966,7 +2966,7 @@
           "title": "Hand holding a blue Fairphone Gen 6+ in front of pink spring blossom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2975,7 +2975,7 @@
           "title": "Hand holding a green Fairphone Gen 6+, rear view, in front of sunlit grass",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2984,7 +2984,7 @@
           "title": "Fairtrade certification mark",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2993,7 +2993,7 @@
           "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3002,7 +3002,7 @@
           "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3011,7 +3011,7 @@
           "title": "30W USB-C Fast Charger",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3020,7 +3020,7 @@
           "title": "USB-C Long Life Charging Cable",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3029,14 +3029,14 @@
           "title": "Fairbuds XL Headphones USB-C - mini jack 3.5mm Cable",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-system76": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://system76.com/",
@@ -3044,7 +3044,7 @@
           "title": "the New Thelio Prime",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3053,7 +3053,7 @@
           "title": "the New Adder Pro",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3062,7 +3062,7 @@
           "title": "the New Lemur Pro now in 14in and 16in sizes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3071,14 +3071,14 @@
           "title": "Thelio Mira desktop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-pine64": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://pine64.org/",
@@ -3086,7 +3086,7 @@
           "title": "PINE64",
           "kind": "website",
           "description": "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects. Founded in 2015, it is known for affordable devices that promote user freedom.",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3095,7 +3095,7 @@
           "title": "RockPro64",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3104,7 +3104,7 @@
           "title": "Quartz64 Model B",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3113,14 +3113,14 @@
           "title": "Star64 featuring RISC-V",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-mnt-research": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://mntre.com/",
@@ -3128,7 +3128,7 @@
           "title": "MNT Research GmbH",
           "kind": "website",
           "description": "MNT Research makes open source hardware laptops, mobile devices and keyboards that are modular and repairable. Designed and assembled in Berlin, EU.",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3137,7 +3137,7 @@
           "title": "MNT Pocket Reform - purple",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3146,7 +3146,7 @@
           "title": "space themed illustration of a magical Pocket Reform(3D shapes are coming out of the screen) with two tattooed hands typing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3155,7 +3155,7 @@
           "title": "an illustration of a person using MNT Pocket Reform on a sofa with their dog chilling nearby",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3164,7 +3164,7 @@
           "title": "illustration of a cafe with two people using Pocket Reform and a cat sitting on a chair.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3173,7 +3173,7 @@
           "title": "MNT ZZ9000 R-3, Black Version",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3182,7 +3182,7 @@
           "title": "MNT ZZ9000AX Audio Module (Back)",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3191,24 +3191,24 @@
           "title": "MNT ZZ9000 Heatsink, Top",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-thinkpad-classic-t-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "durable-noctua": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": []
     },
     "durable-seasonic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://seasonic.com/atx3-prime-tx/",
@@ -3216,7 +3216,7 @@
           "title": "ATX3-PRIME-TX-1600-1300-PX-1600-back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3225,7 +3225,7 @@
           "title": "ATX3 PRIME TX-1600-1300-PX-1600-back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3234,7 +3234,7 @@
           "title": "PRIME-Fanless-TX-700-600",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3243,14 +3243,14 @@
           "title": "PRIME Fanless PX-500-450 back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-ifixit": {
       "schema_version": 1,
-      "attempted_at": "2026-11-04T11:19:22.258488Z",
+      "attempted_at": "2026-11-04T18:20:53.998790Z",
       "items": [
         {
           "url": "https://www.ifixit.com/",
@@ -3258,16 +3258,16 @@
           "title": "iFixit: The Free Repair Manual",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
           "url": "https://www.ifixit.com/",
-          "image": "https://www.ifixit.com/_next/image?url=https%3A%2F%2Fifixit-strapi-uploads.s3.us-east-1.amazonaws.com%2FDyson_vacuum_filter_hero_banner_31570e80a7.jpg&w=1920&q=75",
-          "title": "Dyson Vacuum Filter",
+          "image": "https://www.ifixit.com/_next/image?url=https%3A%2F%2Fifixit-strapi-uploads.s3.us-east-1.amazonaws.com%2Fsteam_deck_hero_banner_eae2cc1cac.jpg&w=1920&q=75",
+          "title": "Steam Deck AC Adapter",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3276,7 +3276,7 @@
           "title": "A person repairing a laptop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3285,7 +3285,7 @@
           "title": "Assortment of quality parts and tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3294,7 +3294,7 @@
           "title": "iFixit Gear: Shirts, Stickers, Posters, and Patches | iFixit",
           "kind": "website",
           "description": "Original iFixit shirts, stickers, posters, patches, and bags for people who'd rather fix it than toss it.",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3303,7 +3303,7 @@
           "title": "iFixit Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3312,7 +3312,7 @@
           "title": "iFixit Stickers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3321,7 +3321,7 @@
           "title": "iFixit Posters",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-04T11:19:22.258488Z",
+          "checked_at": "2026-11-04T18:20:53.998790Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
