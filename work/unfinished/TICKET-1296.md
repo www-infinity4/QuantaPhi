@@ -1,11 +1,11 @@
 ---
 issue: 1296
 project: "Bubbles context-first iterations and Bits"
-state: implementing
+state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Phases 1 and 2 merged; real spendable Bits ledger and live production acceptance remain incomplete"
-sessions_spent: 3
+sessions_spent: 5
 sessions_remaining_estimate: unknown
 agent: ChatGPT
 lease_id: null
@@ -13,8 +13,8 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: main
-head_sha: 447a34be60229766a60f999e66bafbeda5916d59
+branch: feature/bubbles-pulse-evidence-tiers-20261104
+head_sha: 79739a2338bbb93c563b2f39d7d56f48e5ec11df
 tests:
   - "Phase 1 receipt projection merged in PR #1297"
   - "Phase 2 PR #1338 merged after seven required CI groups passed"
@@ -62,3 +62,13 @@ Owner clarified that every Bubble Bit describes a **distinct, user-criteria-driv
 - The current browser-to-Worker adapter emits turn start, owner-context result, final tool receipt and job states. It does not yet emit all real in-flight provider switching or criteria metadata. D1 create/fetch/store labels are display-capable but absent until authenticated backend events exist. Never synthesize activity from model narration.
 - Existing issue remains open and dot YELLOW. No coordinator lease was claimed. Source-only frontend progress is staged; the wallet settlement portion remains incomplete and overall acceptance percentage unknown.
 - Next action: wire authenticated backend tool_started/tool_progress/tool_receipt events to the same signed per-turn operation ID and user-criteria fingerprint, then independently verify live status updates on phone. Authenticated transactional D1 settlement is separate.
+
+
+# Session 5 · 2026-11-04 UTC · pulse and multi-tier evidence contract
+
+Owner's heartbeat metaphor mapped to the existing Bubbles/Brain signal: a pulse is a **real observed state transition**, not a mechanical motor command, a screen redraw or a minted reward. Recorded the owner-originated conceptual distinctions between Bubble Bits, GPT Bits and technical Gits in `docs/BUBBLES-PULSE-AND-BIT-TIERS.md`, without making external legal/financial adoption claims.
+
+- Updated `bubbles-live-iteration-feed.mjs` to recognize approved GitHub code edits, commits, test results and merges, Cloudflare Worker stage/deploy/live-readback, and Brain runner receipts as separately observable steps. Classifies technical event rows without granting any wallet rights.
+- Added regression tests for sequence, deduplication, failure handling and missing technical receipt IDs. A completed technical step without a valid receipt stays **unverified**.
+- No new backend action emitters, settlement records, hardware control or external API permissions were added. Actual Cloudflare/GitHub operations must still produce authenticated receipts via existing or future tools. The Gits ledger remains a distinct proposed policy, not spendable currency or an assertion that all providers recognize it.
+- Work issue: https://github.com/www-infinity4/QuantaPhi/issues/1296. Source only; no verified real Bubbles Android receipt of these new tool labels, no deployment. Next action: check exact-head CI, and wire authenticated backend stage events if provider stage receipts exist; owner identity/wallet rollout remains separately gated.
