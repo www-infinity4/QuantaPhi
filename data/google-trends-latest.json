@@ -3,111 +3,286 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T12:01:29.446107Z",
+  "checked_at": "2026-11-04T12:32:27.091914Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "learner tien",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T12:10:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-carlos-alcaraz-round-of-32-match-nov-04-2026/",
+        "https://en.tennistemple.com/actu/rolex-paris-masters-rinderknech-advances-as/sbJS",
+        "https://www.bleachernation.com/picks/2026/11/01/rinderknech-vs-cerundolo-prediction-at-the-rolex-paris-masters-tuesday-november-3/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXZgWwnRGEEOtZHky2Q_TMXow8vBDyJR6wNRdCtqKgFK5KINC2TQKkdJidyq0",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-carlos-alcaraz-round-of-32-match-nov-04-2026/",
+          "title": "November 4, 2026: Alex Michelsen vs Carlos Alcaraz Round of 32 match Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXZgWwnRGEEOtZHky2Q_TMXow8vBDyJR6wNRdCtqKgFK5KINC2TQKkdJidyq0"
+        },
+        {
+          "url": "https://en.tennistemple.com/actu/rolex-paris-masters-rinderknech-advances-as/sbJS",
+          "title": "Rolex Paris Masters: Rinderknech advances as Cerundolo retires, Halys takes down Fery",
+          "publisher": "TennisTemple",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWPqtyQHAxzgvj4c__I3dO0CJpcVX_r1buUIuYT0Zu4hZ7k6C0NCov83sbH0U"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/01/rinderknech-vs-cerundolo-prediction-at-the-rolex-paris-masters-tuesday-november-3/",
+          "title": "Rinderknech vs. Cerundolo Prediction at the Rolex Paris Masters – Tuesday, November 3",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVtp20yqurEoQCpOIaW10SX2rXi0fKfNna0AXonattclXinTKtPw4cuZwX4oI"
+        }
+      ]
+    },
+    {
+      "query": "dupage county election results",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T12:00:00Z",
+      "related_news_urls": [
+        "https://www.chicagotribune.com/2026/11/03/2026-election-day-results-dupage-county-board-chair/",
+        "https://patch.com/illinois/burrridge/dupage-county-chair-election-results-2026-conroy-vs-grasso-live-updates",
+        "https://www.chicagotribune.com/2026/11/03/democrats-dupage-county-board-races-election-winners/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD2I8_NFL6Gmu4F9uUxVUl0q0UBPcq772miL6OS-V5cH-zIohjpui_MLBMtjQ",
+      "image_credit": "Chicago Tribune",
+      "news": [
+        {
+          "url": "https://www.chicagotribune.com/2026/11/03/2026-election-day-results-dupage-county-board-chair/",
+          "title": "2026 Election Day results: DuPage County Board chair",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD2I8_NFL6Gmu4F9uUxVUl0q0UBPcq772miL6OS-V5cH-zIohjpui_MLBMtjQ"
+        },
+        {
+          "url": "https://patch.com/illinois/burrridge/dupage-county-chair-election-results-2026-conroy-vs-grasso-live-updates",
+          "title": "DuPage County Chair Trouncing Republican Rival From Burr Ridge: Unofficial Results",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrmE1W2uRKbkDF3FK8xRlV3IFKrlfjoUmiAfyM5sxxJTJD2DARFs8E4IJi_bU"
+        },
+        {
+          "url": "https://www.chicagotribune.com/2026/11/03/democrats-dupage-county-board-races-election-winners/",
+          "title": "Democrats leading in DuPage County Board election races",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrYG_o9z9ZIq2Ufy3wwEIp4NVamnrGJ-1loBpF69ablI-CGj5gf4mSmiTgyx8"
+        }
+      ]
+    },
+    {
+      "query": "cvs stock",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-04T11:50:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/04/cvs-to-split-off-drugstore-business.html",
+        "https://www.wsj.com/health/healthcare/cvs-will-break-off-its-namesake-pharmacies-9c7dd05e",
+        "https://www.bloomberg.com/news/articles/2026-11-04/cvs-plans-to-break-up-117-billion-healthcare-conglomerate"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCkOnSm9HACnMDtH1Y1YGPCm0NMB7RfDgy3-jaJmjNLe4VUG3URt2EfmDwqfI",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/04/cvs-to-split-off-drugstore-business.html",
+          "title": "CVS to split off drugstore business in major breakup of healthcare giant",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCkOnSm9HACnMDtH1Y1YGPCm0NMB7RfDgy3-jaJmjNLe4VUG3URt2EfmDwqfI"
+        },
+        {
+          "url": "https://www.wsj.com/health/healthcare/cvs-will-break-off-its-namesake-pharmacies-9c7dd05e",
+          "title": "CVS Will Break Off Its Namesake Pharmacies",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXwIqmaKOt_l8PRXx9XPX_xiv4gIc3KaJ1UpqXhlO4rd6q4WCuUb_mKO7nKxY"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-04/cvs-plans-to-break-up-117-billion-healthcare-conglomerate",
+          "title": "CVS Plans to Break Up $117 Billion Healthcare Conglomerate",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRx9vIQE_bzFDZHWvzDaET3uAflv2u6b9l2kbpKgIRnMgKz3Y8MQKvLRq74eP4"
+        }
+      ]
+    },
+    {
+      "query": "nick lalota",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T11:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-york-us-house-1.html",
+        "https://longisland.news12.com/2026/11/04/long-islands-republican-congressmen-hold-narrow-leads-with-results-closer-than-expected/5nbgQktiXBGTfOOScaZY23",
+        "https://suffolktimes.timesreview.com/2026/11/electionliveblog/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC3EZlqMTkpl3Hz183ZW3Ic5LTKBJzixzYgxdXPfbt2hNx6JjsHM1lrP3p1Fw",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-york-us-house-1.html",
+          "title": "New York First Congressional District 2026: Live Election Results, LaLota vs. Gallant",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC3EZlqMTkpl3Hz183ZW3Ic5LTKBJzixzYgxdXPfbt2hNx6JjsHM1lrP3p1Fw"
+        },
+        {
+          "url": "https://longisland.news12.com/2026/11/04/long-islands-republican-congressmen-hold-narrow-leads-with-results-closer-than-expected/5nbgQktiXBGTfOOScaZY23",
+          "title": "Long Islands Republican Congressmen Hold Narrow Leads With Results Closer Than Expected",
+          "publisher": "News12 | Long Island",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX4BR3Lp74FM4TB87qmnMddcq0tmqLt5YBsXPkHZ-sausaNjVRJcdCnY08cwg"
+        },
+        {
+          "url": "https://suffolktimes.timesreview.com/2026/11/electionliveblog/",
+          "title": "LIVEBLOG: Palumbo on brink of defeat, LaLota declares victory amid blue tsunami",
+          "publisher": "The Suffolk Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhXb_cI_xuc4OEtKX0jfUMuRFgag7gU3HcCtvhJUIM_wuUYPC5re9XtwRmXBM"
+        }
+      ]
+    },
+    {
+      "query": "cobb county election results",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T11:50:00Z",
+      "related_news_urls": [
+        "https://www.fox5atlanta.com/news/map-cobb-county-election-results-2026-nt-ap",
+        "https://www.news8000.com/news/politics/national-politics/republican-rich-mccormick-wins-reelection-to-u-s-house-in-georgias-7th-congressional-district/article_01c7def8-e43f-5cc3-af61-c4b6285521a1.html",
+        "https://www.tribuneledgernews.com/local_news/election/mccormick-reelected-to-represent-georgia-s-7th-district/article_dfdefb4d-e66b-4b6a-879d-cef5f82dd45c.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMrN0ZtURLImBzQGuloFEzf8AZSJz4DLl-HoQvw2_ZFFNhmudeOgfXFlYR34",
+      "image_credit": "FOX 5 Atlanta",
+      "news": [
+        {
+          "url": "https://www.fox5atlanta.com/news/map-cobb-county-election-results-2026-nt-ap",
+          "title": "MAP: Why Cobb County proved decisive in Georgia's high-stakes showdown",
+          "publisher": "FOX 5 Atlanta",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMrN0ZtURLImBzQGuloFEzf8AZSJz4DLl-HoQvw2_ZFFNhmudeOgfXFlYR34"
+        },
+        {
+          "url": "https://www.news8000.com/news/politics/national-politics/republican-rich-mccormick-wins-reelection-to-u-s-house-in-georgias-7th-congressional-district/article_01c7def8-e43f-5cc3-af61-c4b6285521a1.html",
+          "title": "Republican Rich McCormick wins reelection to U.S. House in Georgia's 7th Congressional District",
+          "publisher": "news8000.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUeEdrUctG-2qu2qJTVc0jRkSD6e7NMVbMVAJemI6lXMiTSW3qLsGdZK6YRcA"
+        },
+        {
+          "url": "https://www.tribuneledgernews.com/local_news/election/mccormick-reelected-to-represent-georgia-s-7th-district/article_dfdefb4d-e66b-4b6a-879d-cef5f82dd45c.html",
+          "title": "McCormick reelected to represent Georgia’s 7th District",
+          "publisher": "Cherokee Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkPZwK57F57vBUVZvz4i1HGYbTqCNQyUbgHPHYhSzgPMlom8lzxNzOcnxIp24"
+        }
+      ]
+    },
+    {
+      "query": "nj governor",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T11:50:00Z",
+      "related_news_urls": [
+        "https://unn.ua/en/news/russian-tankers-carrying-diesel-have-sharply-changed-course-and-are-no-longer-heading-to-the-united-states",
+        "https://www.nytimes.com/2026/11/02/nyregion/new-jersey-russian-fuel-sherrill-ports.html",
+        "https://www.bloomberg.com/news/articles/2026-11-03/nj-governor-warns-ports-against-russian-diesel-allowed-by-trump"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUIDmK1eSFw_T-dMRHSpaq9_vNgE_tG7_0c5k_9JKODisMlOBdt1hlP4fQ2Gc",
+      "image_credit": "Українські Національні Новини (УНН)",
+      "news": [
+        {
+          "url": "https://unn.ua/en/news/russian-tankers-carrying-diesel-have-sharply-changed-course-and-are-no-longer-heading-to-the-united-states",
+          "title": "Russian tankers carrying diesel have sharply changed course and are no longer heading to the United States",
+          "publisher": "Українські Національні Новини (УНН)",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUIDmK1eSFw_T-dMRHSpaq9_vNgE_tG7_0c5k_9JKODisMlOBdt1hlP4fQ2Gc"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/02/nyregion/new-jersey-russian-fuel-sherrill-ports.html",
+          "title": "Governor Warns New Jersey Ports to Turn Away Russian Fuel",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMBNCvRfogs1oh0Ia5D3ouOmNlCf5u9Tz3keZI93Ib1jQf9A0HBmlzbNJhnfM"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-03/nj-governor-warns-ports-against-russian-diesel-allowed-by-trump",
+          "title": "NJ Governor Warns Ports Against Russian Diesel Allowed by Trump",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZBy0TWJTv0KQREkWvRN_FA7lBrzQdwgyWtf2_At5sTuFzsNXB2j_BdmgsWzM"
+        }
+      ]
+    },
+    {
+      "query": "uber stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T11:40:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/article/uber-q3-earnings-preview-gross-bookings-user-growth-key-for-investors-as-robotaxi-spending-ramps-up-171553701.html",
+        "https://www.bloomberg.com/news/articles/2026-11-04/uber-s-ride-hail-bookings-trips-miss-on-overseas-driver-crunch",
+        "https://www.barchart.com/story/news/8630298/dear-uber-stock-fans-mark-your-calendars-for-november-4"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZshjbJ7V81xn0_42tNweHYoq92GfL6Q875QhiNVhpGHqsukuVY4aTvO5i68",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/article/uber-q3-earnings-preview-gross-bookings-user-growth-key-for-investors-as-robotaxi-spending-ramps-up-171553701.html",
+          "title": "Uber Q3 earnings preview: Gross bookings, user growth key for investors as robotaxi spending ramps up",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZshjbJ7V81xn0_42tNweHYoq92GfL6Q875QhiNVhpGHqsukuVY4aTvO5i68"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-04/uber-s-ride-hail-bookings-trips-miss-on-overseas-driver-crunch",
+          "title": "Uber’s Ride-Hail Bookings, Trips Miss on Overseas Driver Crunch",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYRROD-MiFD7hH4MQhL7sa6NxACTZT7TYqqG93PEkZf0N-LkZ7FurI6TxD8hI"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8630298/dear-uber-stock-fans-mark-your-calendars-for-november-4",
+          "title": "Dear Uber Stock Fans, Mark Your Calendars for November 4",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBiSySymoBGV2i2XqnCr1ZOKtBsxeDbar3UHsyfrhJ4XdIjUNvyFPF-at3L20"
+        }
+      ]
+    },
     {
       "query": "clima de hoy",
       "approx_searches": "500+",
       "published_at": "2026-11-04T11:40:00Z",
       "related_news_urls": [
-        "https://eldiariony.com/2026/11/02/pronostico-del-tiempo-en-nueva-york-para-este-lunes-2-de-noviembre/",
-        "https://www.identidadcorrentina.com.ar/noticia/44893_new-york-domingo-fresco-con-cielo-cubierto-y-presin-alta.htm",
-        "https://tn.com.ar/estados-unidos/clima/2026/11/04/como-estara-el-clima-en-new-york-este-miercoles-4-de-noviembre/"
+        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-chicago-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/",
+        "https://eldiariony.com/2026/11/02/pronostico-del-tiempo-en-chicago-para-este-lunes-2-de-noviembre/",
+        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-aurora-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiZIgfag67jKOq4moKjnRwua24cd2glQeDFFP-ulY3sn0WmR1UWYe1pg9WwJE",
-      "image_credit": "El Diario NY",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic",
+      "image_credit": "La Nación",
       "news": [
         {
-          "url": "https://eldiariony.com/2026/11/02/pronostico-del-tiempo-en-nueva-york-para-este-lunes-2-de-noviembre/",
-          "title": "Pronóstico del tiempo en Nueva York para este lunes 2 de noviembre",
+          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-chicago-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/",
+          "title": "Clima en Chicago, Illinois hoy: cuál es el pronóstico del tiempo para hoy 4 de noviembre",
+          "publisher": "La Nación",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
+        },
+        {
+          "url": "https://eldiariony.com/2026/11/02/pronostico-del-tiempo-en-chicago-para-este-lunes-2-de-noviembre/",
+          "title": "Pronóstico del tiempo en Chicago para este lunes 2 de noviembre",
           "publisher": "El Diario NY",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiZIgfag67jKOq4moKjnRwua24cd2glQeDFFP-ulY3sn0WmR1UWYe1pg9WwJE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4hDvds0eeIHGVYgWoBLo9uoS1v6OnyAGnKmbTf6kctxiNS7-BpJAGs8v29EI"
         },
         {
-          "url": "https://www.identidadcorrentina.com.ar/noticia/44893_new-york-domingo-fresco-con-cielo-cubierto-y-presin-alta.htm",
-          "title": "New York: domingo fresco, con cielo cubierto y presión alta",
-          "publisher": "Identidad Correntina",
+          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-aurora-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/",
+          "title": "Clima en Aurora, Illinois hoy: cuál es el pronóstico del tiempo para hoy 4 de noviembre",
+          "publisher": "La Nación",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsB6NVLREAMzWGVn9uDcBbSgSAJMs4tCup32hsaTgYQbZIvgoGgNh3oTIjaSI"
-        },
-        {
-          "url": "https://tn.com.ar/estados-unidos/clima/2026/11/04/como-estara-el-clima-en-new-york-este-miercoles-4-de-noviembre/",
-          "title": "¿Cómo estará el clima en New York este miércoles 4 de noviembre?",
-          "publisher": "TN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToEQIg7WQS7WKAR2UxKIzpQBvoNSWYpAvVaHr2D9GQmyW3nKga3ytEhvbosPs"
-        }
-      ]
-    },
-    {
-      "query": "virginia beach election results",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T11:40:00Z",
-      "related_news_urls": [
-        "https://www.13newsnow.com/article/news/politics/elections/virginia-beach-city-council-race-results-2026-election-live/291-f19d4a5e-0595-4aca-9b41-09df31ddc512",
-        "https://www.wavy.com/news/local-news/virginia-beach/virginia-beach-november-2026-election-results/",
-        "https://www.whro.org/elections/2026-11-03/heres-who-won-local-elections-around-hampton-roads"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmeraj0snoXccvYBDasg-QByQ4M-6CenbGOPI4lQsawUnBUftj3Qheyn0F7HQ",
-      "image_credit": "13newsnow.com",
-      "news": [
-        {
-          "url": "https://www.13newsnow.com/article/news/politics/elections/virginia-beach-city-council-race-results-2026-election-live/291-f19d4a5e-0595-4aca-9b41-09df31ddc512",
-          "title": "Who won on Virginia Beach City Council?",
-          "publisher": "13newsnow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmeraj0snoXccvYBDasg-QByQ4M-6CenbGOPI4lQsawUnBUftj3Qheyn0F7HQ"
-        },
-        {
-          "url": "https://www.wavy.com/news/local-news/virginia-beach/virginia-beach-november-2026-election-results/",
-          "title": "Virginia Beach: November 2026 Election Results",
-          "publisher": "WAVY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ23-j6RHRHZ1PkZxONgFQ8d-Re9imIe6cyoHh0WbV54PjLtLj1n2iuprogplY"
-        },
-        {
-          "url": "https://www.whro.org/elections/2026-11-03/heres-who-won-local-elections-around-hampton-roads",
-          "title": "Here’s who won local elections around Hampton Roads",
-          "publisher": "WHRO",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpPn84i0GpUr_ZmFQV0V8bH3wZfpyfopDNxM1YrVBhnmua5unMw8Zo5jrcMvs"
-        }
-      ]
-    },
-    {
-      "query": "natalee holloway",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T11:40:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/04/entertainment/the-biggest-revelations-from-netflixs-natalee-holloway-doc/",
-        "https://people.com/what-to-know-natalee-holloway-disappearance-killed-12208054",
-        "https://www.yahoo.com/entertainment/tv/articles/natalee-holloway-doc-reveals-unseen-080125580.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdRBhMH_PsrdAmYHehIgiMp9okT2WLPAtlC84-eG-7obFSyc8dHjPETs6bXP8",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/04/entertainment/the-biggest-revelations-from-netflixs-natalee-holloway-doc/",
-          "title": "The biggest revelations from Netflix’s Natalee Holloway doc",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdRBhMH_PsrdAmYHehIgiMp9okT2WLPAtlC84-eG-7obFSyc8dHjPETs6bXP8"
-        },
-        {
-          "url": "https://people.com/what-to-know-natalee-holloway-disappearance-killed-12208054",
-          "title": "Was Natalee Holloway Ever Found? Inside Her Disappearance and Murder",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWz6YjOXA83Uy0YUR7AFnrZxDk7ssW4e1Oanf1E7jLONcpf8NdzOuOJ1u9siQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/natalee-holloway-doc-reveals-unseen-080125580.html",
-          "title": "Natalee Holloway Doc Reveals Unseen Footage of Joran van der Sloot",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT20lbk8oqB8MW3yHN64jhIeLOzcfiHJCUS1PXyROHcFycmy5dKsDGGxcqyWAs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
         }
       ]
     },
@@ -147,212 +322,37 @@
       ]
     },
     {
-      "query": "gloucester county election results",
-      "approx_searches": "100+",
+      "query": "when does the new congress get sworn in",
+      "approx_searches": "2000+",
       "published_at": "2026-11-04T11:40:00Z",
       "related_news_urls": [
-        "https://newjerseyglobe.com/local/democratic-wave-sweeps-atlantic-county-ousting-republican-incumbents/",
-        "https://www.nj.com/atlantic/2026/11/nj-election-day-2026-atlantic-county-live-results.html",
-        "https://pressofatlanticcity.com/news/video_fd48fca3-2c4c-5540-995f-d21be757e26a.html"
+        "https://www.ms.now/news/republicans-sights-last-reconciliation-bill",
+        "https://www.yahoo.com/news/politics/articles/congress-faces-long-lame-duck-101517134.html",
+        "https://thehill.com/homenews/house/6185340-gop-lame-duck-congress-2026-midterms-trump-agenda/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3_P93gyRY5zZksUlOVT4KaOseUg-H0UYJlTtcRtKjaORBfZ1knON2HcscYg",
-      "image_credit": "New Jersey Globe",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoMzOUSnLbncnHzMaVNY_BoSUIE5O0WRrdod0zyrutF1KefR2M3_mSRV63DtE",
+      "image_credit": "MS NOW",
       "news": [
         {
-          "url": "https://newjerseyglobe.com/local/democratic-wave-sweeps-atlantic-county-ousting-republican-incumbents/",
-          "title": "Democratic wave sweeps Atlantic County, ousting Republican incumbents",
-          "publisher": "New Jersey Globe",
+          "url": "https://www.ms.now/news/republicans-sights-last-reconciliation-bill",
+          "title": "Republicans set their sights on one last reconciliation bill before Democrats take over",
+          "publisher": "MS NOW",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3_P93gyRY5zZksUlOVT4KaOseUg-H0UYJlTtcRtKjaORBfZ1knON2HcscYg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoMzOUSnLbncnHzMaVNY_BoSUIE5O0WRrdod0zyrutF1KefR2M3_mSRV63DtE"
         },
         {
-          "url": "https://www.nj.com/atlantic/2026/11/nj-election-day-2026-atlantic-county-live-results.html",
-          "title": "N.J. election day 2026: Atlantic County live results",
-          "publisher": "NJ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbqE-R9BATwt7LOu8_7LEJXLQAvSVMTQ2mVyldBVbHFAUhtDOM-vHOtSCPVpo"
-        },
-        {
-          "url": "https://pressofatlanticcity.com/news/video_fd48fca3-2c4c-5540-995f-d21be757e26a.html",
-          "title": "Atlantic County Democrats celebrate election results",
-          "publisher": "Press of Atlantic City",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLPO_sDMzOqztK_Pptfmothez0QzfeoFEguwziBpvrmd3yQrElTWUBBlDBEAY"
-        }
-      ]
-    },
-    {
-      "query": "new york state elections 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T11:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcnewyork.com/elections/live-updates-election-day-nyc-nj-poll-vote-governor-congress/6566156/",
-        "https://www.democratandchronicle.com/story/news/2026/11/04/new-york-election-results-2026-who-won-big-races/92606742007/",
-        "https://www.fox5ny.com/election/ny-election-results-2026-vote-ballot-new-york"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcJD-CGNwNkzKuhFle2DHtdeeAYc36JfXmEX_tTK3WsfqSajBYqQEQYoVyMI",
-      "image_credit": "NBC New York",
-      "news": [
-        {
-          "url": "https://www.nbcnewyork.com/elections/live-updates-election-day-nyc-nj-poll-vote-governor-congress/6566156/",
-          "title": "Midterm elections blog: Democrats pick up House seats in NY and NJ, Hochul reelected",
-          "publisher": "NBC New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcJD-CGNwNkzKuhFle2DHtdeeAYc36JfXmEX_tTK3WsfqSajBYqQEQYoVyMI"
-        },
-        {
-          "url": "https://www.democratandchronicle.com/story/news/2026/11/04/new-york-election-results-2026-who-won-big-races/92606742007/",
-          "title": "Who won the big races in NY? Where the governor, Congress races stand",
-          "publisher": "Democrat and Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmbhoEdq0zUXY-0k3GPrbrGhSD35OBLXRH_o_Z74W68wE_ZMnXR294fEj9DVs"
-        },
-        {
-          "url": "https://www.fox5ny.com/election/ny-election-results-2026-vote-ballot-new-york",
-          "title": "New York election results 2026: State Senate, Assembly, more l LIVE",
-          "publisher": "FOX 5 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVDhW5MLjPBAC2A_QHM7pxhn_pt243ydYSlwyueK9EpMFNrAoJanEg5Rk1m0Y"
-        }
-      ]
-    },
-    {
-      "query": "lake county election results",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T11:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/politics/articles/democrats-sweep-lake-county-races-062146617.html",
-        "https://gary.capitalbnews.org/jerry-williams-lake-county-first-black-sheriff/",
-        "https://www.chicagotribune.com/2026/11/03/democrat-jerry-williams-leads-republican-david-crane-in-lake-county-sheriff-race/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShQa_D2nM3tHdYDasDopPqjd6rFAb_uYQR-PD69poqnWV-oP7DCa4hA_ZM0GQ",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/democrats-sweep-lake-county-races-062146617.html",
-          "title": "Democrats Sweep Lake County Races",
+          "url": "https://www.yahoo.com/news/politics/articles/congress-faces-long-lame-duck-101517134.html",
+          "title": "Congress faces long lame-duck to-do list",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShQa_D2nM3tHdYDasDopPqjd6rFAb_uYQR-PD69poqnWV-oP7DCa4hA_ZM0GQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRurRyKszZg_VhFZdLLvG7g_EAoRmY7PK53qXOs4iMvg8HlIw4bojlHmxJ7fno"
         },
         {
-          "url": "https://gary.capitalbnews.org/jerry-williams-lake-county-first-black-sheriff/",
-          "title": "Jerry Williams Elected Lake County’s First Black Sheriff",
-          "publisher": "Capital B Gary",
+          "url": "https://thehill.com/homenews/house/6185340-gop-lame-duck-congress-2026-midterms-trump-agenda/",
+          "title": "GOP plan for lame-duck sprint runs into votes, rules and the calendar",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwy5UTL49cX_LIR4GRmg_04lRY3eO-X-VmyGDVQQPrm-acr-55VmWVV-nbzCw"
-        },
-        {
-          "url": "https://www.chicagotribune.com/2026/11/03/democrat-jerry-williams-leads-republican-david-crane-in-lake-county-sheriff-race/",
-          "title": "Democrat Jerry Williams leads Republican David Crane in Lake County sheriff race",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUk0x5U2ojfIdyF2A1NLhWd5okxkFLQR7nWYIR26gLsYO6SjevbxmruatYW9I"
-        }
-      ]
-    },
-    {
-      "query": "nintendo switch zelda ocarina of time",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T11:30:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/04/nx-s1-6026597/review-legend-of-zelda-ocarina-of-time-remake-switch-2",
-        "https://www.theverge.com/games/1025415/the-legend-of-zelda-ocarina-of-time-review-nintendo-switch-2",
-        "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-3/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRKs1-ByFmk6GooMU8gfEY5u22GpGszCeK_MLBE7-AfeZADayJlnO-CUV0Y5o",
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/04/nx-s1-6026597/review-legend-of-zelda-ocarina-of-time-remake-switch-2",
-          "title": "Review: The Legend of Zelda: Ocarina of Time remake is superb, streamlined and safe",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRKs1-ByFmk6GooMU8gfEY5u22GpGszCeK_MLBE7-AfeZADayJlnO-CUV0Y5o"
-        },
-        {
-          "url": "https://www.theverge.com/games/1025415/the-legend-of-zelda-ocarina-of-time-review-nintendo-switch-2",
-          "title": "The Legend of Zelda: Ocarina of Time never gets old",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgwUCOaufOYx71bZ3TK6P_bdrZlqIVON5ltEhwOuIwW_9CxBQS9Rw4telXCEM"
-        },
-        {
-          "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-3/",
-          "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 3",
-          "publisher": "Nintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHm55IKYx3CGV3D3v-CkERgYtDZ6OoPHse90qS2ea6XG2mxQmLqOk4cQypz6U"
-        }
-      ]
-    },
-    {
-      "query": "orange county ny election results",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T11:30:00Z",
-      "related_news_urls": [
-        "https://www.chroniclenewspaper.com/news/local-news/orange-county-election-results-FX6356513",
-        "https://laist.com/news/politics/voter-guides/2026-election-general-la-county-live-results",
-        "https://www.ocregister.com/2026/11/03/election-day-2026-live-election-results-in-orange-county-2/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwVF27L6WwKtiFqh8skjgNQ6lYQCgzrEohW_7wa_jVrcU7ZfiYBwHEkFbRpu4",
-      "image_credit": "chroniclenewspaper.com",
-      "news": [
-        {
-          "url": "https://www.chroniclenewspaper.com/news/local-news/orange-county-election-results-FX6356513",
-          "title": "Orange County Election Results",
-          "publisher": "chroniclenewspaper.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwVF27L6WwKtiFqh8skjgNQ6lYQCgzrEohW_7wa_jVrcU7ZfiYBwHEkFbRpu4"
-        },
-        {
-          "url": "https://laist.com/news/politics/voter-guides/2026-election-general-la-county-live-results",
-          "title": "Live election results for races in LA County",
-          "publisher": "LAist",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmKqNTi7VmaVe2UNouffggcsqAe5R9_VR61Z3-xONMyHCIuseyH40Hsg7M2I8"
-        },
-        {
-          "url": "https://www.ocregister.com/2026/11/03/election-day-2026-live-election-results-in-orange-county-2/",
-          "title": "Election Day 2026: Live election results in Orange County",
-          "publisher": "Orange County Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQUcwXo5YV53oJkHXbBnfuW_4Ngq4FXbr4oTAsEWeEw6Lf1MqeCwMSemtpjas"
-        }
-      ]
-    },
-    {
-      "query": "who won in indiana",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T11:30:00Z",
-      "related_news_urls": [
-        "https://fox59.com/news/politics/dems-break-republican-supermajority-in-indiana-statehouse-preliminary-results/",
-        "https://indianacapitalchronicle.com/2026/11/03/indiana-dems-break-gop-supermajority-in-house/",
-        "https://www.indystar.com/picture-gallery/news/politics/2026/11/03/indiana-house-gop-leader-todd-huston-loses-seat-see-his-career-over-the-years-republican-speaker/92598088007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5-JztPZ0dNbYvplggjx_z0yU0CF3dfTjqoeXYR_xF-xKsFomb0cCYibnmvx0",
-      "image_credit": "Fox 59",
-      "news": [
-        {
-          "url": "https://fox59.com/news/politics/dems-break-republican-supermajority-in-indiana-statehouse-preliminary-results/",
-          "title": "Dems break Republican supermajority in Indiana Statehouse: preliminary results",
-          "publisher": "Fox 59",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5-JztPZ0dNbYvplggjx_z0yU0CF3dfTjqoeXYR_xF-xKsFomb0cCYibnmvx0"
-        },
-        {
-          "url": "https://indianacapitalchronicle.com/2026/11/03/indiana-dems-break-gop-supermajority-in-house/",
-          "title": "Indiana Dems break GOP supermajority in House, notch Senate wins",
-          "publisher": "Indiana Capital Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpb0EZsL5_FrLqK8HNZi_ldk5PiVO62mKsSNJH6XpI2dgTEjIUdQmeMfQv_qo"
-        },
-        {
-          "url": "https://www.indystar.com/picture-gallery/news/politics/2026/11/03/indiana-house-gop-leader-todd-huston-loses-seat-see-his-career-over-the-years-republican-speaker/92598088007/",
-          "title": "Indiana House Speaker Todd Huston trailing Democratic challenger. See his career",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkY5jJBPuxONUjIuDreHuovOWdi83yd2rEbv9SbNoVKS0gRQDkM9CQKDn1PZM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjE8YXj-ptFufhGjJykkLAOqZYQZWtX9LMsWFleY8IXEoEj39okEDXtTJtayI"
         }
       ]
     }
