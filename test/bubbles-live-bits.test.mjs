@@ -170,7 +170,7 @@ test('authenticated direct GitHub read displays real start and pending states wi
  let s=advanceLiveBits(newLiveBitsState(),{type:'memory',state:'retrieved'});
  for(const event of events)s=advanceLiveBits(s,event);
  assert.equal(s.entries.filter(entry=>entry.tool==='github.read_file').length,1,'the same real operation updates one status line');
- assert.equal(s.entries[0].state,'running');
+ assert.equal(s.entries.find(entry=>entry.tool==='github.read_file').state,'running');
  assert.equal(s.candidates,0);
  assert.equal(s.credits,0);
 });
