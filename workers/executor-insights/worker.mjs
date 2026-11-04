@@ -94,7 +94,7 @@ async function recordEvent(req,env){
 export default {async fetch(req,env){
  try{
   const path=new URL(req.url).pathname;
-  if(req.method==='OPTIONS'&&eventOriginAllowed(req.headers.get('Origin')||''))return json(req,{ok:true},204);
+  if(req.method==='OPTIONS'&&eventOriginAllowed(req.headers.get('Origin')||''))return json(req,{ok:true},200);
   if(req.method==='GET'&&path==='/health')return json(req,{ok:true,service:'executor-insights',walletSettlement:false,clickTrackingConfigured:Boolean(env.DB&&env.MEDIA_STAR_OWNER_ID)});
   if(req.method==='GET'&&path==='/v1/executor/summary')return await readSummary(req,env);
   if(req.method==='POST'&&path==='/v1/media-star/event')return await recordEvent(req,env);
