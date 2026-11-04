@@ -3,356 +3,322 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T04:01:27.782773Z",
+  "checked_at": "2026-11-04T04:31:29.999414Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "gurnoor brar",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T03:40:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-odi-1539437/match-preview",
-        "https://sports.yahoo.com/articles/india-wins-toss-chooses-bowl-023817194.html",
-        "https://www.indiatoday.in/sports/cricket/story/virat-kohli-sachin-tendulkar-ricky-ponting-records-new-zealand-odi-series-3031705-2026-11-03"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaPBs73RMhcqn6hvrfmFP5tyvv-AsnXqMqyDkPsR9G1clbqm3J9X5pLXePqJA",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-odi-1539437/match-preview",
-          "title": "India, New Zealand switch to World Cup prep at bouncy Eden Park",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaPBs73RMhcqn6hvrfmFP5tyvv-AsnXqMqyDkPsR9G1clbqm3J9X5pLXePqJA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/india-wins-toss-chooses-bowl-023817194.html",
-          "title": "India wins the toss and chooses to bowl in the 1st ODI against New Zealand as Gil, Kohli return",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4b2og8xGkLX_MmHpcpaLxzfqxp4ZwHKJbS3SyAEgEdLAl_rrBXhIxkGzBmng"
-        },
-        {
-          "url": "https://www.indiatoday.in/sports/cricket/story/virat-kohli-sachin-tendulkar-ricky-ponting-records-new-zealand-odi-series-3031705-2026-11-03",
-          "title": "Virat Kohli eyes Sachin Tendulkar, Ricky Ponting's records in New Zealand ODI series",
-          "publisher": "India Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjMXgOruhEIgdmuaAuWb9LpoG_ih-rFl7A3iTO5TuHLuxM22sn2ZbPFc3pBCY"
-        }
-      ]
-    },
-    {
-      "query": "aaron flint",
+      "query": "king county elections",
       "approx_searches": "500+",
-      "published_at": "2026-11-04T03:40:00Z",
+      "published_at": "2026-11-04T04:10:00Z",
       "related_news_urls": [
-        "https://helenair.com/opinion/letters/article_fb57ed6f-ec37-408d-8f57-1fd8610c2501.html",
-        "https://billingsgazette.com/opinion/letters/article_f5b76ce6-b212-4955-bd6a-2ebb3eb0ad94.html",
-        "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-kurt-alme-aaron-flint-montana-october-29-2026/"
+        "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-king-county/281-81e4d50f-2304-48e5-8da1-fbc18bc24d2d",
+        "https://westseattleblog.com/2026/11/happening-now-election-night-scenes-in-west-seattle/",
+        "https://www.cascadepbs.org/all/2026/11/washington-election-tracker/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEdvDW0beyaAONJOlDxoyFEN46Ff9J41aEealPd2bogOu5vhMrcP1vN_abvYs",
-      "image_credit": "The Independent Record",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc91H4LIBZ5ij_6JJeYnK7-w2N88Vvr5lz1NKDALqpU-PnyPTxCaDudf_k4SM",
+      "image_credit": "KING5.com",
       "news": [
         {
-          "url": "https://helenair.com/opinion/letters/article_fb57ed6f-ec37-408d-8f57-1fd8610c2501.html",
-          "title": "Letter to the editor: Sam Forstag knows how to listen",
-          "publisher": "The Independent Record",
+          "url": "https://www.king5.com/article/news/politics/elections/2026-general-election-results-for-king-county/281-81e4d50f-2304-48e5-8da1-fbc18bc24d2d",
+          "title": "2026 general election results for King County",
+          "publisher": "KING5.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEdvDW0beyaAONJOlDxoyFEN46Ff9J41aEealPd2bogOu5vhMrcP1vN_abvYs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc91H4LIBZ5ij_6JJeYnK7-w2N88Vvr5lz1NKDALqpU-PnyPTxCaDudf_k4SM"
         },
         {
-          "url": "https://billingsgazette.com/opinion/letters/article_f5b76ce6-b212-4955-bd6a-2ebb3eb0ad94.html",
-          "title": "Veteran pledges support to Aaron Flint",
-          "publisher": "Billings Gazette",
+          "url": "https://westseattleblog.com/2026/11/happening-now-election-night-scenes-in-west-seattle/",
+          "title": "HAPPENING NOW: Election Night scenes in West Seattle",
+          "publisher": "West Seattle Blog...",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3vxg1N1DZ41agU6SSaThQ1oxEO6I5tFTJmUyqMQ9svY0OEIGRQaRUarmI6tE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5qIYFc2WzSmNtdF5wCTQTg-B_Zoyi0KXtc0oxZIuq8eW70b-ZcY5kU9ufltI"
         },
         {
-          "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-kurt-alme-aaron-flint-montana-october-29-2026/",
-          "title": "Remarks: Donald Trump Holds a Virtual Tele-Rally for Kurt Alme and Aaron Flint - October 29, 2026",
-          "publisher": "Roll Call",
+          "url": "https://www.cascadepbs.org/all/2026/11/washington-election-tracker/",
+          "title": "Washington Election Tracker",
+          "publisher": "Cascade PBS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWGn2givKFbscCubOnM_EIrV98GTOhoKGuEAHwKUHx9YX4qDK9qtoyN3i6B88"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCZJtXXZwioX2M1DRjZvP2Kdr3gNj5dJTTx0vGgwwb1If2ur6eXHN-wH3i170"
         }
       ]
     },
     {
-      "query": "aaron ford",
+      "query": "mai vang",
       "approx_searches": "500+",
-      "published_at": "2026-11-04T03:40:00Z",
+      "published_at": "2026-11-04T04:10:00Z",
       "related_news_urls": [
-        "https://thenevadaindependent.com/article/a-blue-wave-beckons-in-nevada-can-lombardo-hold-on",
-        "https://lasvegassun.com/news/2026/nov/02/a-democratic-win-in-the-nevada-governor-race-could/",
-        "https://apnews.com/article/nevada-governor-race-2026-lombardo-ford-07bca480a52cedc4148e0cd1f11e6248"
+        "https://fox40.com/2026-election-2/california-congressional-district-7-doris-matsui-mai-vang/",
+        "https://www.cbsnews.com/sacramento/news/california-attorney-general-rob-bonta-michael-gates/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFZZF7fKz5V9P776VYonXdOGmycZwY3zx450BI4idm2iMyV9hIRmNKbPnYiZc",
-      "image_credit": "The Nevada Independent",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI04h5hG-iAn5hEmOoTfGj5qtGd1mm_DnABJ7a04ypvYuXHMUyZk75z9PKMSI",
+      "image_credit": "FOX40",
       "news": [
         {
-          "url": "https://thenevadaindependent.com/article/a-blue-wave-beckons-in-nevada-can-lombardo-hold-on",
-          "title": "A blue wave beckons in Nevada. Will Lombardo be the last Republican standing?",
-          "publisher": "The Nevada Independent",
+          "url": "https://fox40.com/2026-election-2/california-congressional-district-7-doris-matsui-mai-vang/",
+          "title": "California’s 7th Congressional District: Campaign pits longtime incumbent against progressive councilmember",
+          "publisher": "FOX40",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFZZF7fKz5V9P776VYonXdOGmycZwY3zx450BI4idm2iMyV9hIRmNKbPnYiZc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI04h5hG-iAn5hEmOoTfGj5qtGd1mm_DnABJ7a04ypvYuXHMUyZk75z9PKMSI"
         },
         {
-          "url": "https://lasvegassun.com/news/2026/nov/02/a-democratic-win-in-the-nevada-governor-race-could/",
-          "title": "A Democratic win in the Nevada governor race could unlock dozens of twice-vetoed bills",
-          "publisher": "Las Vegas Sun",
+          "url": "https://www.cbsnews.com/sacramento/news/california-attorney-general-rob-bonta-michael-gates/",
+          "title": "California attorney general race pits Rob Bonta against Michael Gates",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQONAhpDRQPmm-puA4WO0ScxIfopbEE5rhpEhf7JWJO8U-uxxpoOot-nxI1jrM"
-        },
-        {
-          "url": "https://apnews.com/article/nevada-governor-race-2026-lombardo-ford-07bca480a52cedc4148e0cd1f11e6248",
-          "title": "Democrats seek to flip Nevada governor’s seat in a key test for the party’s chances in 2028",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfECrNIOTXZfhcPqKk4W0LfiSllcNC9J5_NVDqgwpRA-C3XR4a-JG4Bg4HTNQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQm-xFlpTkQ9bGbZMNTmvVY7wZ6SG8W7GRxKTvDWhzoWqdADxj6YphVRwFjATk"
         }
       ]
     },
     {
-      "query": "north florida basketball",
+      "query": "gavin newsom not running for governor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T04:10:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/politics/2026/11/03/gavin-newsom-is-almost-out-office-will-he-empty-californias-death-row-first/",
+        "https://www.sacbee.com/news/politics-government/capitol-alert/article317856717.html",
+        "https://www.foxnews.com/video/6407560906112"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFHUnnrSungr-_YQT1vix1824cmo2HFPd8TsbCvRrHIIYxANGeUkcuB1VnGas",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/11/03/gavin-newsom-is-almost-out-office-will-he-empty-californias-death-row-first/",
+          "title": "Gavin Newsom is almost out of office. Will he empty California’s death row first?",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFHUnnrSungr-_YQT1vix1824cmo2HFPd8TsbCvRrHIIYxANGeUkcuB1VnGas"
+        },
+        {
+          "url": "https://www.sacbee.com/news/politics-government/capitol-alert/article317856717.html",
+          "title": "Death row adviser asks Gov. Gavin Newsom to spare prisoners. ‘A moral moment’",
+          "publisher": "Sacramento Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuMpq2_hWuNh7LzZ_2K-Oy_l_OdXHm0SGbzTEdtZX32Ti6UvTnYuMwWkZcmrk"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6407560906112",
+          "title": "Father of Polly Klaas criticizes Gavin Newsom over potential mass death row commutations",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6K9qFoXzGU_Eq1v3GrZX8QVFwIdMMdEsEXe_HvW-pBnvHb7omPsaUkHIIbpE"
+        }
+      ]
+    },
+    {
+      "query": "rick perry",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T04:10:00Z",
+      "related_news_urls": [
+        "https://theeagle.com/news/local/government-politics/elections/article_edf846c5-3084-57c5-96eb-14197d5a27c2.html",
+        "https://theeagle.com/news/nation-world/government-politics/elections/article_bfc87c1b-467d-5539-adb6-8cd5abb73fbe.html",
+        "https://theeagle.com/image_24506fc9-2f30-4cd9-9ebd-8af5801b1e50.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0MugLKKrbX_osPt-EmYR0__a7FA4GPy15KdKGDGYn0gwK-NLDvPU745tWDE0",
+      "image_credit": "Bryan College Station Eagle",
+      "news": [
+        {
+          "url": "https://theeagle.com/news/local/government-politics/elections/article_edf846c5-3084-57c5-96eb-14197d5a27c2.html",
+          "title": "From voter anger to a blue wave, three takeaways from the 2026 midterms",
+          "publisher": "Bryan College Station Eagle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0MugLKKrbX_osPt-EmYR0__a7FA4GPy15KdKGDGYn0gwK-NLDvPU745tWDE0"
+        },
+        {
+          "url": "https://theeagle.com/news/nation-world/government-politics/elections/article_bfc87c1b-467d-5539-adb6-8cd5abb73fbe.html",
+          "title": "Democrats close in on congressional control as voters rebuke Trump",
+          "publisher": "Bryan College Station Eagle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3senOc1Zin2OrHmPU3KUf8TKBmf2mrUTAAjpvGaYk0JhOPcU7l1GMJL4qTCY"
+        },
+        {
+          "url": "https://theeagle.com/image_24506fc9-2f30-4cd9-9ebd-8af5801b1e50.html",
+          "title": "110426-bcs-news-ElectionDay-009.JPG",
+          "publisher": "Bryan College Station Eagle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyX8vpIWL0VUeTZ7UOKozPa7GKF5BxICyOWld62mhNAbjS7D00vK_O3pQPHn4"
+        }
+      ]
+    },
+    {
+      "query": "trump impeachment",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T03:40:00Z",
+      "published_at": "2026-11-04T04:10:00Z",
       "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/north-florida-ospreys-vs-california-baptist-lancers-prediction-odds-2026-11-03/",
-        "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/north-florida-ospreys-vs-california-baptist-lancers-prediction-11-3-2026-college-basketball-picks-best-bets-odds.html",
-        "https://ats.io/matchup/college-basketball/north-florida-ospreys-vs-cal-baptist-lancers-prediction-03-11-2026/"
+        "https://www.forbes.com/sites/saradorn/2026/10/30/will-democrats-impeach-trump-if-they-win-midterms-heres-why-appetite-may-be-limited/",
+        "https://www.newsweek.com/could-trump-be-impeached-if-democrats-win-midterms-12656715",
+        "https://www.yahoo.com/news/politics/articles/democrats-squabbling-over-contain-trump-110000288.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk",
-      "image_credit": "Sportsgambler",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ30ccKqlS0Qg1LVfxTFvstxV2yJsuLAD9HgjDo0gAj6uWW47X6bvUtYTyq5gs",
+      "image_credit": "Forbes",
       "news": [
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/north-florida-ospreys-vs-california-baptist-lancers-prediction-odds-2026-11-03/",
-          "title": "North Florida vs Cal Baptist Prediction, Picks & Odds | 03 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.forbes.com/sites/saradorn/2026/10/30/will-democrats-impeach-trump-if-they-win-midterms-heres-why-appetite-may-be-limited/",
+          "title": "Will Democrats Impeach Trump If They Win Midterms? Here’s Why Appetite May Be Limited",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ30ccKqlS0Qg1LVfxTFvstxV2yJsuLAD9HgjDo0gAj6uWW47X6bvUtYTyq5gs"
         },
         {
-          "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/north-florida-ospreys-vs-california-baptist-lancers-prediction-11-3-2026-college-basketball-picks-best-bets-odds.html",
-          "title": "North Florida Ospreys vs California Baptist Lancers Prediction, 11/3/2026 College Basketball Picks, Best Bets & Odds",
-          "publisher": "Doc's Sports",
+          "url": "https://www.newsweek.com/could-trump-be-impeached-if-democrats-win-midterms-12656715",
+          "title": "Could Trump Be Impeached If Democrats Win Midterms?",
+          "publisher": "Newsweek",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2guzj13OY9tfrBHknJT-Fb_DnwZ3t7OFTNepJ0T1deqad4mU9jPcpBurMMNk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUJJc56xrWegtOOZEbFOkfQaRkn1DEh_xxpdLkYfKRzCOria0YmPCU0-4E7VI"
         },
         {
-          "url": "https://ats.io/matchup/college-basketball/north-florida-ospreys-vs-cal-baptist-lancers-prediction-03-11-2026/",
-          "title": "North Florida vs Cal Baptist Prediction | Nov. 3, 2026",
-          "publisher": "ATS.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsip9N-6dK9-mCS6RxSXCV-poPR50E5amPfLtm53fZAQfNF6kcfHgS2ygDG-0"
-        }
-      ]
-    },
-    {
-      "query": "cvs health",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T03:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/health/healthcare/cvs-will-break-off-its-namesake-pharmacies-9c7dd05e",
-        "https://www.reuters.com/legal/litigation/cvs-health-explores-splitting-retail-pharmacy-insurance-businesses-ft-reports-2026-11-03/",
-        "https://www.bloomberg.com/news/articles/2026-11-03/cvs-jumps-on-report-it-plans-to-break-up-health-conglomerate"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXwIqmaKOt_l8PRXx9XPX_xiv4gIc3KaJ1UpqXhlO4rd6q4WCuUb_mKO7nKxY",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/health/healthcare/cvs-will-break-off-its-namesake-pharmacies-9c7dd05e",
-          "title": "CVS Will Break Off Its Namesake Pharmacies",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXwIqmaKOt_l8PRXx9XPX_xiv4gIc3KaJ1UpqXhlO4rd6q4WCuUb_mKO7nKxY"
-        },
-        {
-          "url": "https://www.reuters.com/legal/litigation/cvs-health-explores-splitting-retail-pharmacy-insurance-businesses-ft-reports-2026-11-03/",
-          "title": "CVS tests breakup of retail, insurance businesses, source says",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlJ-6f6WIDS3HIITe5sNoDCrPush7pdAVbvqVDV0l5hLet1p8Pon2-8xT54cU"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-03/cvs-jumps-on-report-it-plans-to-break-up-health-conglomerate",
-          "title": "CVS Plans to Break Up Healthcare Conglomerate, Reports Say",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9CFwiJpHuQaQ8JqoBoFAB8jvW71QQtx71oRqT-ODWVkTmJfRxBj8WJoBXRD0"
-        }
-      ]
-    },
-    {
-      "query": "ktvb",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T03:30:00Z",
-      "related_news_urls": [
-        "https://www.ktvb.com/article/news/local/crane-used-rescue-woman-new-plymouth-crash/277-9bf2a45a-8bdb-4c9b-9f86-20304e9e19df",
-        "https://idahonews.com/news/local/passing-crane-crew-helps-eescue-trapped-driver-after-crash-in-new-plymouth",
-        "https://www.yahoo.com/news/videos/ktvb-election-night-012439904.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYNP5bpOsiXYBc3Z8LkEFfQ4Lyc_aSmoJlE3qJXkS0rlGGfGAQ8ntExLcOC8o",
-      "image_credit": "KTVB",
-      "news": [
-        {
-          "url": "https://www.ktvb.com/article/news/local/crane-used-rescue-woman-new-plymouth-crash/277-9bf2a45a-8bdb-4c9b-9f86-20304e9e19df",
-          "title": "Crane used to rescue woman after New Plymouth crash",
-          "publisher": "KTVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYNP5bpOsiXYBc3Z8LkEFfQ4Lyc_aSmoJlE3qJXkS0rlGGfGAQ8ntExLcOC8o"
-        },
-        {
-          "url": "https://idahonews.com/news/local/passing-crane-crew-helps-eescue-trapped-driver-after-crash-in-new-plymouth",
-          "title": "Passing crane crew helps rescue trapped driver after crash in New Plymouth",
-          "publisher": "KBOI",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfxfTLN8IbG2JWlhhc4yDLcwThYxGSvb-MrWh9IUdHZMOOn4_lAB_j1Z_B8wk"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/ktvb-election-night-012439904.html",
-          "title": "KTVB Election Night",
+          "url": "https://www.yahoo.com/news/politics/articles/democrats-squabbling-over-contain-trump-110000288.html",
+          "title": "Democrats squabbling over how to contain Trump after Election Day",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxy_BYbrfmN0bWqNOGriIgoknkjZUVgsV6meEsxmJ36f4B8w5opaX1V6Vqu08"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcSAaG0q4GtsHaH4m4XxrtSMg2myXwFOf5_v-9Fc4uuryVArzP-HgeDEH-Hd0"
         }
       ]
     },
     {
-      "query": "guardian",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T03:30:00Z",
+      "query": "james gallagher",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T04:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/world/article/uk-celebrity-accused-of-sexual-misconduct-loses-legal-battle-to-keep-identity-secret-despite-risk-of-suicide-what-happens-next-170422134.html",
-        "https://www.theguardian.com/uk-news/2026/nov/03/well-known-individual-fails-injunction-bid-guardian-itn",
-        "https://www.bbc.com/news/articles/cqglwjdgg045o"
+        "https://www.washingtonpost.com/elections/results/2026/11/03/california-1st-house-district-live-updates/",
+        "https://www.kqed.org/elections/results/sonoma/congress-1st-district",
+        "https://www.cbsnews.com/sacramento/news/california-congressional-district-1-james-gallagher-mike-mcguire/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzzfjtNfbwwb-kAOat9ug0Zef2jfSMiA4ukNj9oZwtjcJ9LQZxfJ8VfYzixAs",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStCOf0UWye1ZTWskSs4dLEizw9umbdJhIq_T4pkjutiSNe14m3ZEIZO65M5OQ",
+      "image_credit": "The Washington Post",
       "news": [
         {
-          "url": "https://www.yahoo.com/news/world/article/uk-celebrity-accused-of-sexual-misconduct-loses-legal-battle-to-keep-identity-secret-despite-risk-of-suicide-what-happens-next-170422134.html",
-          "title": "U.K. celebrity accused of sexual misconduct loses legal battle to keep identity secret despite risk of suicide. What happens next?",
-          "publisher": "Yahoo",
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/california-1st-house-district-live-updates/",
+          "title": "California 1st Congressional District election live results 2026",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzzfjtNfbwwb-kAOat9ug0Zef2jfSMiA4ukNj9oZwtjcJ9LQZxfJ8VfYzixAs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStCOf0UWye1ZTWskSs4dLEizw9umbdJhIq_T4pkjutiSNe14m3ZEIZO65M5OQ"
         },
         {
-          "url": "https://www.theguardian.com/uk-news/2026/nov/03/well-known-individual-fails-injunction-bid-guardian-itn",
-          "title": "‘Well-known’ man fails in legal attempt to block Guardian and ITN publishing sexual allegations",
-          "publisher": "The Guardian",
+          "url": "https://www.kqed.org/elections/results/sonoma/congress-1st-district",
+          "title": "2026 Election Results for the U.S. House District 1",
+          "publisher": "KQED",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScu0wcnIte2ZWiSyGtdLNCOLWf9XGRd4YRl9z9ii3SEdTA5DCAe7pmpptdMp4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuNwUw1eVq79te-8cYTKdkwEXUGeakSJBbQrzZhCHGVcf-uggNp6Lrd1UM18E"
         },
         {
-          "url": "https://www.bbc.com/news/articles/cqglwjdgg045o",
-          "title": "Celebrity loses injunction bid but will stay anonymous pending appeal",
-          "publisher": "BBC",
+          "url": "https://www.cbsnews.com/sacramento/news/california-congressional-district-1-james-gallagher-mike-mcguire/",
+          "title": "James Gallagher, Mike McGuire face off for California's 1st Congressional District",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxuyMSjA17zaB3iQ0xl9dfSbLtshTxIRSjtrA2gvJQYaCr1jhL3eq9Jm045JY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8NUwBEKwOzAzxDL0ZweVJpUJWwy4a9zLL8_tqA7smMMOBDM4-DAIH-tftK1o"
         }
       ]
     },
     {
-      "query": "john thune",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T03:30:00Z",
+      "query": "matt little",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T04:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/02/us/politics/trump-husted-body-comments.html",
-        "https://www.cnn.com/2026/10/26/politics/trump-nicki-minaj-jon-husted",
-        "https://www.salon.com/2026/10/30/ohios-jon-husted-object-of-trumps-leering-is-just-an-empty-pair-of-pants/"
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-minnesota-us-house-2.html",
+        "https://www.mprnews.org/story/2026/11/03/minnesotas-1st-and-2nd-districts-headline-us-house-races",
+        "https://www.yahoo.com/news/videos/race-2nd-congressional-district-heats-231917676.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYW-BdFHiZFB8z50vnbazhHESvVas4vfsfaTtSQmmO3aEjG6sfUNOP_YaTrfQ",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRKfPclIn4n7513OfnoCWEc4dgJPhtsreewpBN38nKib4hLgPUGCex7aCkbEk",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/02/us/politics/trump-husted-body-comments.html",
-          "title": "Will Trump’s Comments About Jon Husted’s Physique Help Him Win the Ohio Senate Race?",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-minnesota-us-house-2.html",
+          "title": "Minnesota Second Congressional District 2026: Live Election Results, Little vs. Pratt",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYW-BdFHiZFB8z50vnbazhHESvVas4vfsfaTtSQmmO3aEjG6sfUNOP_YaTrfQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRKfPclIn4n7513OfnoCWEc4dgJPhtsreewpBN38nKib4hLgPUGCex7aCkbEk"
         },
         {
-          "url": "https://www.cnn.com/2026/10/26/politics/trump-nicki-minaj-jon-husted",
-          "title": "Trump can’t stop talking about the male physique. Here’s why",
-          "publisher": "CNN",
+          "url": "https://www.mprnews.org/story/2026/11/03/minnesotas-1st-and-2nd-districts-headline-us-house-races",
+          "title": "Minnesota’s 1st and 2nd districts headline U.S. House races",
+          "publisher": "MPR News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4ZYwFK_IkgsHawpAfHNjRYPRFs9XYfu03u-d4UUq1AYKCYTL0BC60Mleo3gE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsOwSbODew3jnkBH0XDy1MfMnLLTVag1DAlvyBOYfqlOHc3kMY4iOMXWrqMug"
         },
         {
-          "url": "https://www.salon.com/2026/10/30/ohios-jon-husted-object-of-trumps-leering-is-just-an-empty-pair-of-pants/",
-          "title": "Ohio’s Jon Husted, object of Trump’s leering, is just an empty pair of pants",
-          "publisher": "Salon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw_kKGbMuU2FhP1J5zqoLdE0FpFqkheqtXlAX_BJw-7GAk0I5X6xumqI6ahK4"
-        }
-      ]
-    },
-    {
-      "query": "supreme court justices",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T03:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/03/politics/supreme-court-prepared-rule-religious-schools-gay-couples",
-        "https://www.nbcnews.com/politics/supreme-court/supreme-court-hears-catholic-colorado-preschool-program-case-rcna605703",
-        "https://www.newsweek.com/brett-kavanaugh-asks-trump-doj-lawyer-if-religious-exemptions-offer-favor-12658038"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOIT31oZPWpdFA_-cuVJsE28fQkkDLE5_G4_AkBKt2Cr_NuotlQ7KjFkiMbfY",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/03/politics/supreme-court-prepared-rule-religious-schools-gay-couples",
-          "title": "Supreme Court prepared to rule that publicly funded religious schools can reject children of same-sex couples",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOIT31oZPWpdFA_-cuVJsE28fQkkDLE5_G4_AkBKt2Cr_NuotlQ7KjFkiMbfY"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/supreme-court/supreme-court-hears-catholic-colorado-preschool-program-case-rcna605703",
-          "title": "Supreme Court sympathetic to Catholic plea to participate in Colorado preschool program",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLMImdTJX6qERXMLWhkD_adxhYC9e_mdJATJ2TQVCyFrFS5NidZ6tWQi9dU_8"
-        },
-        {
-          "url": "https://www.newsweek.com/brett-kavanaugh-asks-trump-doj-lawyer-if-religious-exemptions-offer-favor-12658038",
-          "title": "Brett Kavanaugh Asks Trump DOJ Lawyer If Religious Exemptions Offer ‘Favor’",
-          "publisher": "Newsweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2pwryb5YcY_12epaKDovi00YqkQ2-qOXjHjQvMA_WCnS0CbsT0T1HegppIzI"
-        }
-      ]
-    },
-    {
-      "query": "elon musk x",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T03:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/politics/articles/fact-check-elon-musk-did-020441582.html",
-        "https://www.ibtimes.co.uk/billionaire-tinder-bill-paying-app-elon-musk-link-1829744",
-        "https://www.vietnam.vn/en/su-that-ve-de-xuat-ty-phu-tra-no-cho-nguoi-ngheo-cua-elon-musk"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT55712rNmD7kYggLIoWuxe006xu-HmLisb3nbTTLS2xvF9MlKgmD-kvo1qk9o",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/fact-check-elon-musk-did-020441582.html",
-          "title": "Fact Check: Elon Musk Did NOT Make X Post Saying He's Developing App For 'Bored Billionaires' to Pay Other People's Bills",
+          "url": "https://www.yahoo.com/news/videos/race-2nd-congressional-district-heats-231917676.html",
+          "title": "Race for 2nd Congressional District heats up",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT55712rNmD7kYggLIoWuxe006xu-HmLisb3nbTTLS2xvF9MlKgmD-kvo1qk9o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9TvJkJUS19tLgesENtW3aNFaZ5lawy7EAMaOyTs-zYtWto9IMiNttFMNQ8wY"
+        }
+      ]
+    },
+    {
+      "query": "filibuster",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T04:00:00Z",
+      "related_news_urls": [
+        "https://www.chosun.com/english/national-en/2026/11/04/52AEXROQB5A6RBBKEJHRO6PSS4/",
+        "https://www.mk.co.kr/en/politics/12196199",
+        "https://en.fnnews.com/news/202611031942303664"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrQTtOk0xzLjZDXLbdWk8G999fjE5PkQtviEP2S2qUQLaGIgfTdG3JSY2qYGM",
+      "image_credit": "조선일보",
+      "news": [
+        {
+          "url": "https://www.chosun.com/english/national-en/2026/11/04/52AEXROQB5A6RBBKEJHRO6PSS4/",
+          "title": "People Power Party Denounces Democratic Party's Crime Erasure Bill",
+          "publisher": "조선일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrQTtOk0xzLjZDXLbdWk8G999fjE5PkQtviEP2S2qUQLaGIgfTdG3JSY2qYGM"
         },
         {
-          "url": "https://www.ibtimes.co.uk/billionaire-tinder-bill-paying-app-elon-musk-link-1829744",
-          "title": "Is Elon Musk's 'Billionaire Tinder' App That Could Pay Your Rent, Mortgage and Debts Real? The Truth Behind the Viral Claim",
-          "publisher": "International Business Times UK",
+          "url": "https://www.mk.co.kr/en/politics/12196199",
+          "title": "Seo Young-kyo and Park Hyung-soo, chairman of the National Assembly's Legislation and Judiciary Comm..",
+          "publisher": "매일경제",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaf27MW0hvJiZ_o9lJvvhTtKrU2O1LFJG64e5RgZ8YfYeY88SSqXDOYI-kku8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu3FeW9h4RdW9lo3b6z_wQU0keaiGWSXJ8gFOQh6KeCQqOpw6bada_S_sbQ3s"
         },
         {
-          "url": "https://www.vietnam.vn/en/su-that-ve-de-xuat-ty-phu-tra-no-cho-nguoi-ngheo-cua-elon-musk",
-          "title": "The truth about Elon Musk's proposal for 'billionaires to pay off the poor'",
-          "publisher": "Vietnam.vn",
+          "url": "https://en.fnnews.com/news/202611031942303664",
+          "title": "Opposition: Filibuster All Bills if Special Prosecutor Bill to Drop Charges Against Lee Is Put on the Agenda",
+          "publisher": "파이낸셜뉴스",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMlIZmbAd2SxrRtBmuPFt9CWJn5vG3zDESibNWS0l8eP_jF4Lqq_bcX-tsWMY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGQfmFj9bLdLAF_3et5AShI4BVnbjMg2OEBbuHlNHFeuxHqAbswEPOCmAcxmQ"
+        }
+      ]
+    },
+    {
+      "query": "vicki goodwin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T04:00:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "la times",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T04:00:00Z",
+      "related_news_urls": [
+        "https://www.yakimaherald.com/crosswords/la-times-crossword-nov-3-2026/pdf_d5f65ee2-e493-4289-b7fb-d091827c48a2.html",
+        "https://www.yakimaherald.com/crosswords/la-times-crossword-answers-nov-1-2026/pdf_7728139f-1a20-4d6f-af57-02a5e0f6bc49.html",
+        "https://www.latimes.com/business/story/2026-11-03/utilities-lobby-for-shield-from-wildfire-costs"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHnRwVU4wcS3HXHZZLPABnSLFdQwdFnSBBtmlsEQh3NHOD-zWBA3mM0P7PQIY",
+      "image_credit": "Yakima Herald-Republic",
+      "news": [
+        {
+          "url": "https://www.yakimaherald.com/crosswords/la-times-crossword-nov-3-2026/pdf_d5f65ee2-e493-4289-b7fb-d091827c48a2.html",
+          "title": "LA Times Crossword: Nov. 3, 2026",
+          "publisher": "Yakima Herald-Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHnRwVU4wcS3HXHZZLPABnSLFdQwdFnSBBtmlsEQh3NHOD-zWBA3mM0P7PQIY"
+        },
+        {
+          "url": "https://www.yakimaherald.com/crosswords/la-times-crossword-answers-nov-1-2026/pdf_7728139f-1a20-4d6f-af57-02a5e0f6bc49.html",
+          "title": "LA Times Crossword answers: Nov. 1, 2026",
+          "publisher": "Yakima Herald-Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT38CzwtC2YXveBJd1LbgdKZAyEw-NNWP_jvx4N8l3qUohgTtYNpv_26a0N964"
+        },
+        {
+          "url": "https://www.latimes.com/business/story/2026-11-03/utilities-lobby-for-shield-from-wildfire-costs",
+          "title": "Utilities lobby for shield from wildfire costs",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUsxv2x0resVz6-LrmeJ3u3lZ2-Q97THvn1UcNIFAKUbdaUBwKcGUcUiiA3kk"
         }
       ]
     }
