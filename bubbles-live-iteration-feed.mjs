@@ -100,7 +100,7 @@ export function advanceLiveBits(previous,event){
  const existing=opId?s.entries.find(e=>e.operationId===opId&&e.tool===tool):null;
  if(event.type==='tool_receipt'&&idOkay(receipt)&&s.seenReceipts.includes(receipt))return s;
  if(event.type==='tool_progress'&&!existing)return s; // Don't invent a start from loose progress text.
- const phase=event.type==='tool_receipt'?(event.status==='complete'?'complete':event.status==='failed'?'failed':'unverified'):'running';
+ const phase=event.type==='tool_receipt'?(event.status==='failed'?'failed':event.status==='complete'&&idOkay(receipt)?'complete':'unverified'):'running';
  const headline=toolTitle(tool,phase,clean(event.provider,30));
  const extra={tool,operationId:opId,criteria:clean(event.criteriaSummary,220),criteriaKey:clean(event.criteriaKey,100),resource:clean(event.resource,140),detail:clean(event.detail,220),receiptTail:idOkay(receipt)?receipt.slice(-8):'',evidenceKind:TECHNICAL_TOOLS.has(tool)?'technical_execution':'activity_observation'};
  let row;
