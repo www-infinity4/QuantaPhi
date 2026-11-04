@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T09:01:50.378344Z",
+  "checked_at": "2026-11-04T09:31:12.940206Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "usa today",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T09:10:00Z",
+      "related_news_urls": [
+        "https://www.fox21news.com/news/cmzoos-electric-safari-nominated-for-usa-today-award/",
+        "https://www.usatodayco.com/pr/usa-today-studio-ix-seicon-and-osprey-collective-launch-studio-ix-collective/",
+        "https://www.businesswire.com/news/home/20261103447710/en/USA-TODAY-Studio-IX-SEICon-and-Osprey-Collective-Launch-Studio-IX-Collective"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRikodWsrQso3o5CSWh3K-M9xlRPKvlYx1i_eObecJFoufo7n6dnBRIYgjyv6Y",
+      "image_credit": "FOX21 News Colorado",
+      "news": [
+        {
+          "url": "https://www.fox21news.com/news/cmzoos-electric-safari-nominated-for-usa-today-award/",
+          "title": "CMZoo’s Electric Safari nominated for USA TODAY award",
+          "publisher": "FOX21 News Colorado",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRikodWsrQso3o5CSWh3K-M9xlRPKvlYx1i_eObecJFoufo7n6dnBRIYgjyv6Y"
+        },
+        {
+          "url": "https://www.usatodayco.com/pr/usa-today-studio-ix-seicon-and-osprey-collective-launch-studio-ix-collective/",
+          "title": "USA TODAY Studio IX, SEICon and Osprey Collective Launch STUDIO IX Collective",
+          "publisher": "USA TODAY Co.",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRECPLnG0di9fja-7ZkPbOwme_QJTQl8jsHFt7z_67WNe13ji9aVKkP4q7bBw"
+        },
+        {
+          "url": "https://www.businesswire.com/news/home/20261103447710/en/USA-TODAY-Studio-IX-SEICon-and-Osprey-Collective-Launch-Studio-IX-Collective",
+          "title": "USA TODAY Studio IX, SEICon and Osprey Collective Launch Studio IX Collective",
+          "publisher": "Business Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR78h8_bHxwH5gbCzR3CG5tHe0rdUmjxGUh9i2GafJb6wI8_byoaa9L8YUXnN0"
+        }
+      ]
+    },
+    {
+      "query": "katie boulter",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T09:00:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/videos/4602834/liu-opens-hong-kong-main-draw-with-straight-sets-win-over-prozorova",
+        "https://lastwordonsports.com/tennis/2026/11/03/wta-hong-kong-liu-boulter/",
+        "https://www.dimers.com/tennis/news/claire-liu-vs-katie-boulter-tennis-prediction-wta-hong-kong-open-2026-ac"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsNMkDR_VErN8pDpqzQf-UbagFdZgr16h2toQbG9HAuYZwweBKaCoQ-9OO4oU",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/videos/4602834/liu-opens-hong-kong-main-draw-with-straight-sets-win-over-prozorova",
+          "title": "Liu opens Hong Kong main draw with straight-sets win over Prozorova",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsNMkDR_VErN8pDpqzQf-UbagFdZgr16h2toQbG9HAuYZwweBKaCoQ-9OO4oU"
+        },
+        {
+          "url": "https://lastwordonsports.com/tennis/2026/11/03/wta-hong-kong-liu-boulter/",
+          "title": "WTA Hong Kong Round of 16 Best Bets Including Claire Liu vs Katie Boulter",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvKFAXyZSEhnhQeG07GGhDL7NP_MoB4AtQ7SA8hGa2XdAQJp2G7hlBFvMLEBs"
+        },
+        {
+          "url": "https://www.dimers.com/tennis/news/claire-liu-vs-katie-boulter-tennis-prediction-wta-hong-kong-open-2026-ac",
+          "title": "Claire Liu vs. Katie Boulter prediction, odds, picks for WTA Hong Kong Open 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZVqS6aNLeoQXcxVFj6VZRPt2oEsDbEj9wTy0VmybbCTE8O5ZmRhY-hiJSfA"
+        }
+      ]
+    },
     {
       "query": "hong kong open",
       "approx_searches": "2000+",
@@ -77,6 +147,41 @@
       ]
     },
     {
+      "query": "susie lee",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T08:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/politics/articles/republicans-angling-congress-runs-nevada-234225126.html",
+        "https://www.washingtonpost.com/elections/results/2026/11/03/nevada-3rd-house-district-live-updates/",
+        "https://www.8newsnow.com/news/politics/daily-voting-guide/republican-marty-odonnell-running-for-congress-challenging-susie-lee-in-cd3/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzTRV_z4v0UVHOst8Q7v_AMfHDvaifDwi3QiYMWugHqG6WwB7WNUrzvMUZrYI",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/republicans-angling-congress-runs-nevada-234225126.html",
+          "title": "Republicans angling for Congress with runs at Nevada seats held by Lee, Titus, Horsford",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzTRV_z4v0UVHOst8Q7v_AMfHDvaifDwi3QiYMWugHqG6WwB7WNUrzvMUZrYI"
+        },
+        {
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/nevada-3rd-house-district-live-updates/",
+          "title": "Nevada 3rd Congressional District election results 2026",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp6QNHFEh6H4p6zkmLYCZjqF6L6Ll5aBPz8dptuwO78XTS0Wru0OPDLyLit3s"
+        },
+        {
+          "url": "https://www.8newsnow.com/news/politics/daily-voting-guide/republican-marty-odonnell-running-for-congress-challenging-susie-lee-in-cd3/",
+          "title": "Republican Marty O’Donnell running for Congress, challenging Susie Lee in CD3",
+          "publisher": "KLAS 8 News Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4AY5oHATlCtr5FCmMJaB45n_Gn5DVnpe-TldLeARUfB6Ht88h9gNGWlO3RGk"
+        }
+      ]
+    },
+    {
       "query": "tesla autopilot",
       "approx_searches": "100+",
       "published_at": "2026-11-04T08:20:00Z",
@@ -108,6 +213,41 @@
           "publisher": "Tom's Hardware",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSjH6y0AW-yB-WglJ5J-jcMBSXFCmxAqkLda_eB0tkTsDJIm2GeE-YSmpN3eQ"
+        }
+      ]
+    },
+    {
+      "query": "week 9 defense rankings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T08:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/fantasy/article/fantasy-football-waiver-wire-week-9-mike-washington-jr-among-slew-of-good-rb-pickups-to-consider-155157280.html",
+        "https://www.seahawks.com/news/fantasy-football-week-9-guide-top-starts-and-waiver-wire-rankings",
+        "https://www.nytimes.com/athletic/7751225/2026/11/04/fantasy-football-week-9-player-rankings-legend-of-zelda/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjrpzLca1_iXmRW2iINE98Ub2RWz9NVyCEJR1vfndqpbjz9ySo8OQdaUwjRE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-waiver-wire-week-9-mike-washington-jr-among-slew-of-good-rb-pickups-to-consider-155157280.html",
+          "title": "Fantasy Football Waiver Wire, Week 9: Mike Washington Jr. among slew of good RB pickups to consider",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjrpzLca1_iXmRW2iINE98Ub2RWz9NVyCEJR1vfndqpbjz9ySo8OQdaUwjRE"
+        },
+        {
+          "url": "https://www.seahawks.com/news/fantasy-football-week-9-guide-top-starts-and-waiver-wire-rankings",
+          "title": "Fantasy Football Week 9 Guide: Top Starts And Waiver Wire Rankings",
+          "publisher": "Seattle Seahawks",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2wxQMKx7TIpPVzhHEtkmf_1SQcYLo8Zah2Y_SldSVhh6bMutddc74yu3yZGI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7751225/2026/11/04/fantasy-football-week-9-player-rankings-legend-of-zelda/",
+          "title": "NFL Week 9 fantasy football rankings and the much-anticipated Legend of Zelda top-20",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkQPfF5v8ExUh61j5jwPt8lhxzXK1HTf-j0bdGE0Ajp_4HtwmtYHPd0mmwk4"
         }
       ]
     },
@@ -148,12 +288,12 @@
     },
     {
       "query": "chicago transit authority",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-04T08:00:00Z",
       "related_news_urls": [
         "https://chi.streetsblog.org/2026/10/28/todays-headlines-for-wednesday-october-28-3",
-        "https://www.oakpark.com/2026/11/03/blue-line-forest-park-branch-construction/",
-        "https://www.rtands.com/passenger/rapid-transit-light-rail/cta-clears-path-for-two-rehab-projects-announces-completion-of-a-third/"
+        "https://www.rtands.com/passenger/rapid-transit-light-rail/cta-clears-path-for-two-rehab-projects-announces-completion-of-a-third/",
+        "https://www.oakpark.com/2026/11/03/blue-line-forest-park-branch-construction/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVUFvvzNSQlfH7XTQjWGxIFaFEf2T02Qj_bVYlSxZCz9GdDFpc1nzLSjw3r4I",
       "image_credit": "Streetsblog Chicago",
@@ -166,18 +306,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVUFvvzNSQlfH7XTQjWGxIFaFEf2T02Qj_bVYlSxZCz9GdDFpc1nzLSjw3r4I"
         },
         {
-          "url": "https://www.oakpark.com/2026/11/03/blue-line-forest-park-branch-construction/",
-          "title": "Blue Line renovations work their way to Forest Park",
-          "publisher": "Wednesday Journal of Oak Park and River Forest",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjqEYJoMyncpcMJ7o1uS0wiZtj-zV5xzp1aFUjaCq7lhxCOaFlOf7JLQXNif4"
-        },
-        {
           "url": "https://www.rtands.com/passenger/rapid-transit-light-rail/cta-clears-path-for-two-rehab-projects-announces-completion-of-a-third/",
           "title": "CTA Clears Path for Two Rehab Projects, Announces Completion of Third",
           "publisher": "Railway Track and Structures",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJpE4UkC3FSvY97SRAVWABHZ2rekApaVcxNrGcmw-cejOxrIQVsvBMRyV_9J8"
+        },
+        {
+          "url": "https://www.oakpark.com/2026/11/03/blue-line-forest-park-branch-construction/",
+          "title": "Blue Line renovations work their way to Forest Park",
+          "publisher": "Wednesday Journal of Oak Park and River Forest",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjqEYJoMyncpcMJ7o1uS0wiZtj-zV5xzp1aFUjaCq7lhxCOaFlOf7JLQXNif4"
         }
       ]
     },
@@ -187,7 +327,7 @@
       "published_at": "2026-11-04T08:00:00Z",
       "related_news_urls": [
         "https://www.nbcnews.com/politics/2026-elections/district-of-columbia-results",
-        "https://www.washingtonpost.com/dc-md-va/2026/11/03/janeese-lewis-george-declares-victory-dc-race-mayor/",
+        "https://www.washingtonpost.com/elections/results/2026/11/03/dc-mayor-hamilton-lewis-george-live-updates/",
         "https://www.axios.com/local/washington-dc/2026/11/04/janeese-lewis-george-dc-mayor-election"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTATDSQghojE3iGD7rnWkDvm1FKXt68qvRgcnza8ccTHC2qNjxgiSSTaW0qn4A",
@@ -201,11 +341,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTATDSQghojE3iGD7rnWkDvm1FKXt68qvRgcnza8ccTHC2qNjxgiSSTaW0qn4A"
         },
         {
-          "url": "https://www.washingtonpost.com/dc-md-va/2026/11/03/janeese-lewis-george-declares-victory-dc-race-mayor/",
-          "title": "Janeese Lewis George wins D.C. mayor’s race, becoming its first democratic socialist leader",
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/dc-mayor-hamilton-lewis-george-live-updates/",
+          "title": "D.C. mayor election results 2026",
           "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_XyRVI56NL0MvY1efDS0IIRW-qRltjhOLjKXEPRU8DzmlAOqIxpTHfsttmBQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrcq6itayrtoxy6VQ8OWh1l9zQGT1mugdWK0_8uKW9tLhDCSYwfPjo5qmO6Sg"
         },
         {
           "url": "https://www.axios.com/local/washington-dc/2026/11/04/janeese-lewis-george-dc-mayor-election",
@@ -213,146 +353,6 @@
           "publisher": "Axios",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQViJlC5bte7F6JCL-1sEU8QhsZnKK95TX52dRK1hw52g2wqh6lqdqpF41cWIs"
-        }
-      ]
-    },
-    {
-      "query": "bay area election results",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T08:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcbayarea.com/news/local/california-bay-area-november-election-live-results-updates/4164908/",
-        "https://www.ocregister.com/2026/11/03/a-quick-look-at-early-ballot-return-numbers-in-southern-california/",
-        "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/entry/20012595/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIJuhI_dffzb36mECOLZtVOFllZbWZHRvoyBiA_72EzIT-KfE9_QMNSuaAUmY",
-      "image_credit": "NBC Bay Area",
-      "news": [
-        {
-          "url": "https://www.nbcbayarea.com/news/local/california-bay-area-november-election-live-results-updates/4164908/",
-          "title": "Bay Area election 2026: Key takeaways, winners and Election Day results",
-          "publisher": "NBC Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIJuhI_dffzb36mECOLZtVOFllZbWZHRvoyBiA_72EzIT-KfE9_QMNSuaAUmY"
-        },
-        {
-          "url": "https://www.ocregister.com/2026/11/03/a-quick-look-at-early-ballot-return-numbers-in-southern-california/",
-          "title": "A quick look at early ballot return numbers in Southern California",
-          "publisher": "Orange County Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR82ZigMYFS3w1aEhB0ce3XSGWSORDgiC9bXVeco3hTm91BBw4h37IpuMi5OT4"
-        },
-        {
-          "url": "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/entry/20012595/",
-          "title": "High turnout expected for CA midterm, nearly 6.5M early voted",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSztDOwcTfKdyIDs6oYoJTdp7Idz1FA-R5pYQjn5OCM1LBOV-kgC6jU2LD8nDQ"
-        }
-      ]
-    },
-    {
-      "query": "ind vs nz odi",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T07:30:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-odi-1539437/ball-by-ball-commentary",
-        "https://sports.yahoo.com/articles/virat-kohli-milestone-fans-react-075251810.html",
-        "https://www.wral.com/news/ap/eb0bf-india-bowls-out-new-zealand-for-185-in-the-1st-one-day-cricket-international/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTt-mCIhpNWM49GmEkyX20NHmOjyKFJ2tWYsgmY_zp_YYeg9AjCbcDi3ty8XUw",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-odi-1539437/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 1st ODI",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTt-mCIhpNWM49GmEkyX20NHmOjyKFJ2tWYsgmY_zp_YYeg9AjCbcDi3ty8XUw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/virat-kohli-milestone-fans-react-075251810.html",
-          "title": "Virat Kohli milestone: Fans react as India star becomes first player in history to score 13,000 ODI runs at No.3",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvRd-v6jvsoc4B6wnjt7F8g7Uh1QzIRfDwK1iQMOkJTjJkmhqisKRrPtHbtd4"
-        },
-        {
-          "url": "https://www.wral.com/news/ap/eb0bf-india-bowls-out-new-zealand-for-185-in-the-1st-one-day-cricket-international/",
-          "title": "India bowls out New Zealand for 185 in the 1st one-day cricket international",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2yMXwvCMtGVS2Opkl9H0zRrFGOmTfc6nr92DvIYo0Hpf4Qm1zG_MIcXtJoeY"
-        }
-      ]
-    },
-    {
-      "query": "maui election results",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T07:30:00Z",
-      "related_news_urls": [
-        "https://www.khon2.com/hawaii-elections-2026/bissen-sugimura-hawaii-elections-2026/",
-        "https://www.civilbeat.org/2026/11/maui-election-results-bissen-blasts-past-sugimura-in-mayors-race/",
-        "https://www.yahoo.com/news/politics/articles/bissen-sugimura-ballot-maui-mayor-011952059.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGqct7fQjIo1j25y_UB8sz1vLZzh0y79jhunjcLdjZA-QVI8AYVnTzvrsF-w",
-      "image_credit": "KHON2",
-      "news": [
-        {
-          "url": "https://www.khon2.com/hawaii-elections-2026/bissen-sugimura-hawaii-elections-2026/",
-          "title": "Richard Bissen leads race for Maui mayor",
-          "publisher": "KHON2",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGqct7fQjIo1j25y_UB8sz1vLZzh0y79jhunjcLdjZA-QVI8AYVnTzvrsF-w"
-        },
-        {
-          "url": "https://www.civilbeat.org/2026/11/maui-election-results-bissen-blasts-past-sugimura-in-mayors-race/",
-          "title": "Maui Election Results: Bissen Blasts Past Sugimura In Mayor’s Race",
-          "publisher": "Honolulu Civil Beat",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsPqoD8UHlqkNxpkAIzzm88ZQg4RrN4BeI8TBRy7Vpj_53ZmuNLup0XaUASBc"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/bissen-sugimura-ballot-maui-mayor-011952059.html",
-          "title": "Bissen, Sugimura on the ballot for Maui mayor: Who will win the office?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpi6EwYZeLdpFbUcnCKmLJlApAXfa0BFB7-0eInpnCOcxffd_eG92oO_z3K7M"
-        }
-      ]
-    },
-    {
-      "query": "david flippo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T07:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-nevada-us-house-2.html",
-        "https://news3lv.com/news/local/meet-the-candidates-running-for-nevadas-four-seats-in-congress",
-        "https://www.reviewjournal.com/news/politics-and-government/nevada/democrats-lead-all-four-nevada-congressional-races-in-early-returns-3909531/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAdfTqxz7OyKkSmNt0fjOiBzHmqD5YU6G4PIdVv7q5l2wncHd3zIILEwyamwI",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-nevada-us-house-2.html",
-          "title": "Nevada Second Congressional District 2026: Live Election Results, Benitez-Thompson vs. Flippo",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAdfTqxz7OyKkSmNt0fjOiBzHmqD5YU6G4PIdVv7q5l2wncHd3zIILEwyamwI"
-        },
-        {
-          "url": "https://news3lv.com/news/local/meet-the-candidates-running-for-nevadas-four-seats-in-congress",
-          "title": "Meet the candidates running for Nevada’s four seats in Congress",
-          "publisher": "KSNV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzb1n1Rb0M-e8PxYe2oT2G3AGHl6ObiuNU_SuvjehltreHu6UNaNUXHmNnr18"
-        },
-        {
-          "url": "https://www.reviewjournal.com/news/politics-and-government/nevada/democrats-lead-all-four-nevada-congressional-races-in-early-returns-3909531/",
-          "title": "Democrats lead all four Nevada congressional races in early returns",
-          "publisher": "Las Vegas Review-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOIhiB-l7pOBxLawQvmCaxh4RFcfA4F_X0JOA0DqNrQYVt6ahWdRLd3qV9vwQ"
         }
       ]
     }
