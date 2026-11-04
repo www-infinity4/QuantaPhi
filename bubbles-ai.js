@@ -3888,6 +3888,7 @@ const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker
 let progressPolling=false,progressUnavailable=false;
 let activeIterationTicketId=''; // Only a ticket submitted by this chat can update its Build role.
 let activeIterationThreadId='';
+let ownerJobMarkers={}; // Dedup real signed per-job changes, never count polling as work.
 async function pollBrainProgress(){
  if(embedded||!ownerReady||!progressTracker||progressPolling)return;
  progressPolling=true;
@@ -3900,9 +3901,21 @@ async function pollBrainProgress(){
   const iterationTicket=activeIterationTicketId&&activeIterationThreadId===activeThread
    ?result.tickets.find(ticket=>ticket?.id===activeIterationTicketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
    :null;
-  if(iterationTicket)if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
-   type:'job',repository:iterationTicket.repository,status:iterationTicket.status,
-   url:iterationTicket.progress?.url||''}}));
+  if(iterationTicket){
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+    type:'job',repository:iterationTicket.repository,status:iterationTicket.status,
+    url:iterationTicket.progress?.url||''}}));
+   try{
+    // Verified owner ticket list, not a model answer, supplies these steps.
+    const {projectVerifiedJobTransitions}=await import('/bubbles-brain-job-steps.mjs?v=20261104-owner-steps1');
+    const projection=projectVerifiedJobTransitions(iterationTicket,ownerJobMarkers);
+    ownerJobMarkers=projection.markers;
+    if(typeof CustomEvent==='function')for(const step of projection.events){
+     if(activeIterationThreadId!==activeThread)break;
+     window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:step}));
+    }
+   }catch{/* Optional display must not interrupt authenticated ticket polling. */}
+  }
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
   brainConnectionState('Connected · Work status available in Options', 'connected');
   if(!brainInboxInitialized){
@@ -4010,6 +4023,7 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||'No confirmed request'));
   activeIterationTicketId=result.ticket.id;
   activeIterationThreadId=typeof activeThread==='string'?activeThread:'';
+  ownerJobMarkers={};
   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
    type:'job',repository,status:result.ticket.status,url:result.ticket.progress?.url||''}}));
   if(String(workText.value||'').trim()===request)workText.value='';
