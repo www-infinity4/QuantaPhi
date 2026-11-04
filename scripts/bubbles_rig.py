@@ -47,7 +47,11 @@ def run(args):
         submitted = isinstance(item, dict) and item.get("observed") is True and isinstance(item.get("receipt_url"), str) and item["receipt_url"].startswith("https://")
         report["execution"][stage] = {"status": "EVIDENCE_SUBMITTED" if submitted else "UNVERIFIED",
                                        "receipt_url": item["receipt_url"] if submitted else None}
-    if any(r["conclusion"] == "failure" for r in report["runs"]):
+    if any(p["error"] for p in report["prs"]):
+        report["result"] = "PR_READ_FAILED_END_TO_END_UNVERIFIED"
+    elif any(r["error"] for r in report["runs"]):
+        report["result"] = "CI_READ_FAILED_END_TO_END_UNVERIFIED"
+    elif any(r["conclusion"] == "failure" for r in report["runs"]):
         report["result"] = "CI_FAILURE_END_TO_END_UNVERIFIED"
     elif any(r["status"] in ("in_progress", "queued", "waiting") for r in report["runs"]):
         report["result"] = "CI_PENDING_END_TO_END_UNVERIFIED"
@@ -63,6 +67,12 @@ def run(args):
             report["result"] = "CI_STALE_HEAD_END_TO_END_UNVERIFIED"
         else:
             report["result"] = "CI_PASSED_END_TO_END_UNVERIFIED"
+    # PR metadata alone is not an acceptance test; preserve explicit blockers.
+    report["release_gates"] = {str(p["number"]): {
+        "eligible_for_merge": bool(p["merged"] is False and p["draft"] is False and p["mergeable"] is True),
+        "requires_independent_ci": True,
+        "requires_live_acceptance": True,
+    } for p in report["prs"]}
     with open(args.output, "w", encoding="utf-8") as handle:
         json.dump(report, handle, indent=2)
         handle.write("\n")
