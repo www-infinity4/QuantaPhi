@@ -7,13 +7,12 @@ const ticket=(id,repository,job,status='ready',updated=2000)=>({
  context:{kind:'robot-directions',color_jobs:[{id:'TASK-1',repository,instructions:'Repair the approved existing app',dependencies:[],status:job.status,...job}]}
 });
 const a='www-infinity4/QuantaPhi',b='www-infinity4/RecordB';
-test('literal star only, not wildcard text, unlocks continuation',()=>{
- assert.equal(isStarContinuation('*'),true);
- assert.equal(isStarContinuation(' * '),true);
- for(const invalid of ['**','start *','* fix it','','  ','continue'])assert.equal(isStarContinuation(invalid),false);
+test('explicit star or short continue request resumes saved owner work, never arbitrary content',()=>{
+ for(const command of ['*',' * ','Continue','continue please','Continue engineering','continue work','Resume work','resume engineering please.'])assert.equal(isStarContinuation(command),true,command);
+ for(const invalid of ['**','start *','* fix it','','  ','continue shopping','continue reading #bubbles','continue the movie','continue and merge everything','remember to continue'])assert.equal(isStarContinuation(invalid),false,invalid);
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  const send=ui.slice(ui.indexOf('async function sendMessage('),ui.indexOf('input.addEventListener(\'keydown\''));
- assert.match(send,/if\(spoken==='\*'\)/);
+ assert.ok(send.includes("if(spoken==='*'||"),'short natural-language continuation must use the same owner-scoped dispatch path');
  assert.match(send,/module\.continueSavedWork/);
  assert.match(send,/ownerHeaders:verifiedOwnerHeaders/);
  assert.match(send,/nativeSpeechReply=spokenResult/);
