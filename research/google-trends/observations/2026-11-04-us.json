@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T16:31:27.922274Z",
+  "checked_at": "2026-11-04T17:01:14.989749Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "jessica chastain",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T16:40:00Z",
+      "related_news_urls": [
+        "https://www.thatericalper.com/2026/11/03/carter-faith-makes-her-acting-debut-alongside-jessica-chastain-in-netflixs-heartland-and-shares-new-song-still-the-sparrow-sings/",
+        "https://www.universalmusic.ca/2026/10/30/carter-faith-unveils-still-the-sparrow-sings-written-and-performed-for-her-role-in-netflixs-heartland/",
+        "https://www.antimusic.com/p/26/c1030watch_carter_faith_perform_new_song_still_the_sparrow_sings_at_the_bluebird_cafe.shtml"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZg5a_bc6YKb5jd-V8-UVJidMnG_tPkvOjzJPsMAa0mRLzhZsJL0wnUIa3CYg",
+      "image_credit": "That Eric Alper",
+      "news": [
+        {
+          "url": "https://www.thatericalper.com/2026/11/03/carter-faith-makes-her-acting-debut-alongside-jessica-chastain-in-netflixs-heartland-and-shares-new-song-still-the-sparrow-sings/",
+          "title": "Carter Faith Makes Her Acting Debut Alongside Jessica Chastain in Netflix's 'Heartland' and Shares New Song \"Still the Sparrow Sings\"",
+          "publisher": "That Eric Alper",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZg5a_bc6YKb5jd-V8-UVJidMnG_tPkvOjzJPsMAa0mRLzhZsJL0wnUIa3CYg"
+        },
+        {
+          "url": "https://www.universalmusic.ca/2026/10/30/carter-faith-unveils-still-the-sparrow-sings-written-and-performed-for-her-role-in-netflixs-heartland/",
+          "title": "CARTER FAITH UNVEILS “STILL THE SPARROW SINGS,” WRITTEN AND PERFORMED FOR HER ROLE IN NETFLIX’S HEARTLAND",
+          "publisher": "Umusic",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAraJXJLR6CNdp6kVUWCW-Pd-xf1gHOtFcqK1usnnFFMLqwih5yXNfuuX3d9w"
+        },
+        {
+          "url": "https://www.antimusic.com/p/26/c1030watch_carter_faith_perform_new_song_still_the_sparrow_sings_at_the_bluebird_cafe.shtml",
+          "title": "Watch Carter Faith Perform New Song 'Still The Sparrow Sings' At The Bluebird Cafe",
+          "publisher": "antiMusic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDgb1s6KfE3iqNINxnYURqfDh70s4DP0AsgfZwCJf24UvFUG859v31DPlnZg"
+        }
+      ]
+    },
+    {
+      "query": "yella beezy",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T16:40:00Z",
+      "related_news_urls": [
+        "https://www.wfaa.com/article/news/crime/yella-beezy-trial/yella-beezys-childhood-friend-says-he-lied-in-second-week-of-trial/287-250ce194-a856-4df8-beca-555b7ed9e464",
+        "https://www.nbcdfw.com/news/local/yella-beezy-murder-trial-enters-seventh-day-as-prosecution-continues-to-call-witnesses/4101308/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/yella-beezy-trial-testimony-continues-135538430.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxYyyvxB0FQwbZDHtnXHcuWcB9CB_OFD2jYp6o6DKu0kQjtyh74-gcSugjuDA",
+      "image_credit": "WFAA",
+      "news": [
+        {
+          "url": "https://www.wfaa.com/article/news/crime/yella-beezy-trial/yella-beezys-childhood-friend-says-he-lied-in-second-week-of-trial/287-250ce194-a856-4df8-beca-555b7ed9e464",
+          "title": "Yella Beezy's childhood friend says on the stand he lied in second week of trial",
+          "publisher": "WFAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxYyyvxB0FQwbZDHtnXHcuWcB9CB_OFD2jYp6o6DKu0kQjtyh74-gcSugjuDA"
+        },
+        {
+          "url": "https://www.nbcdfw.com/news/local/yella-beezy-murder-trial-enters-seventh-day-as-prosecution-continues-to-call-witnesses/4101308/",
+          "title": "Yella Beezy murder trial enters seventh day as prosecution continues to call witnesses",
+          "publisher": "NBC 5 Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6SF74j5DmdJkVfyLacwXynuztn_swN7x2fnS3Y9z-3KP3-iQkcqamObCdcLE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/yella-beezy-trial-testimony-continues-135538430.html",
+          "title": "Yella Beezy trial: Testimony continues in Mo3 murder case | Live updates",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTedJgTHVVl6zGvy8QdbVhboZnhX2t8hc38ydqi5I4RA28NivDXqAh3ikSdlxI"
+        }
+      ]
+    },
+    {
+      "query": "valkyries parade",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T16:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/wnba/story/_/id/50379540/wnba-finals-saw-surge-attendance-record-ratings",
+        "https://www.gq.com/story/gabby-williams-interview",
+        "https://www.sf.gov/event-20261104-golden-state-valkyries-championship-parade-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK7LvPaaqiu2ghwpUe6sLcXo7h4g0rwNCLG7H1aylUilL_uaUacwEeJhvbOY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/wnba/story/_/id/50379540/wnba-finals-saw-surge-attendance-record-ratings",
+          "title": "WNBA Finals saw surge in attendance and record ratings",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK7LvPaaqiu2ghwpUe6sLcXo7h4g0rwNCLG7H1aylUilL_uaUacwEeJhvbOY"
+        },
+        {
+          "url": "https://www.gq.com/story/gabby-williams-interview",
+          "title": "WNBA Finals MVP Gabby Williams Takes Us Inside Her Outrageously Clutch Game Seven",
+          "publisher": "GQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZSjtbBjnlEnooK8KZXT_FvZOD53Mv7N24sQp3KoJoM2KwIbJpo-h5_En7fqE"
+        },
+        {
+          "url": "https://www.sf.gov/event-20261104-golden-state-valkyries-championship-parade-2026",
+          "title": "Golden State Valkyries Championship Parade 2026",
+          "publisher": "SF.gov",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKZV9EwP-qttEhGOYRwF5r4OTtDiRWa-EGgwuEFy8UawwJh_iENABsLVOU6r0"
+        }
+      ]
+    },
+    {
+      "query": "amnesty",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T16:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/us/articles/china-must-extradition-request-wants-092717341.html",
+        "https://www.bangkokpost.com/thailand/politics/3348314/opposition-mp-warns-against-deporting-two-uyghur-detainees-to-china",
+        "https://www.uyghurcongress.org/en/press-release-thailand-must-not-deport-two-uyghurs-it-holds-in-immigration-detention/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBIUPWMrfxXq32Xywr1RDvef0hFlP_xcyyKCEWvNJ7PYCoTCOX8Nfuq8W4Uk",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/us/articles/china-must-extradition-request-wants-092717341.html",
+          "title": "2 Uyghur men held in Thailand plead not be sent back to China",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBIUPWMrfxXq32Xywr1RDvef0hFlP_xcyyKCEWvNJ7PYCoTCOX8Nfuq8W4Uk"
+        },
+        {
+          "url": "https://www.bangkokpost.com/thailand/politics/3348314/opposition-mp-warns-against-deporting-two-uyghur-detainees-to-china",
+          "title": "Opposition MP warns against deporting two Uyghur detainees to China",
+          "publisher": "Bangkok Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK9fJlHWOvc6ti4C_UsOKU5PJZPSZmlx_ZV_ScLiUkbSM9nJTbgTqSgad0G8k"
+        },
+        {
+          "url": "https://www.uyghurcongress.org/en/press-release-thailand-must-not-deport-two-uyghurs-it-holds-in-immigration-detention/",
+          "title": "PRESS RELEASE: Thailand must not deport two Uyghurs it holds in immigration detention!",
+          "publisher": "World Uyghur Congress",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZGVuR4n30_t4KVD-oTcP8ikfhiH-XzRyeYne15HKmeXR3tfHju9yfttKaiw"
+        }
+      ]
+    },
+    {
+      "query": "the view",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T16:20:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1301287/the-view-hillary-clinton-predictions-2026-midterm-elections/",
+        "https://www.nj.com/politics/2026/11/hillary-clinton-warns-trump-will-be-out-of-control-if-this-party-wins.html",
+        "https://www.wionews.com/videos/will-trump-with-a-minority-be-out-of-control-1793725127222"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqX59kVSWnKHLwrsIcj3OgbVKg7mm03MLjOBL69VSUwGhjYP5lfCj4HKLvXYk",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1301287/the-view-hillary-clinton-predictions-2026-midterm-elections/",
+          "title": "Hillary Clinton Predicts What Trump Will Do After Midterm Loss on ‘The View’",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqX59kVSWnKHLwrsIcj3OgbVKg7mm03MLjOBL69VSUwGhjYP5lfCj4HKLvXYk"
+        },
+        {
+          "url": "https://www.nj.com/politics/2026/11/hillary-clinton-warns-trump-will-be-out-of-control-if-this-party-wins.html",
+          "title": "Hillary Clinton 'optimistic' but 'worried' ahead of midterms",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcebpkB9_Ny1tdv4DzAhslK354gBYGXDEDGXvJurNIWUlTdNdWXLjhm58Iv2U"
+        },
+        {
+          "url": "https://www.wionews.com/videos/will-trump-with-a-minority-be-out-of-control-1793725127222",
+          "title": "Will Trump with a minority be out of control?",
+          "publisher": "WION",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc5yq1NRCV9zAQ_OcpNGEbCHEQdY1HxISS0hxH6maUKr4wnzkeyhN_QxAqBuE"
+        }
+      ]
+    },
+    {
+      "query": "alex molcan",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T16:20:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/lorenzo-musetti-vs-luca-van-assche-set-1-winner-nov-05-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/oksana-selekhmeteva-vs-polina-kudermetova-set-1-winner-nov-04-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/janice-tjen-vs-joanna-garland-set-2-winner-nov-04-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUnA0jeYKOZPnLztXb2UrhsoXARKxHVQtYCfOcw4gr4bHeXdUbVo75G-GlxYE",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/lorenzo-musetti-vs-luca-van-assche-set-1-winner-nov-05-2026/",
+          "title": "November 5, 2026: Lorenzo Musetti vs Luca Van Assche: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUnA0jeYKOZPnLztXb2UrhsoXARKxHVQtYCfOcw4gr4bHeXdUbVo75G-GlxYE"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/oksana-selekhmeteva-vs-polina-kudermetova-set-1-winner-nov-04-2026/",
+          "title": "November 4, 2026: Oksana Selekhmeteva vs Polina Kudermetova: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScyByMr991uQ6NgUv3H8sSQ1NBiEknYP-o6yNNuDIQUkb8tBFd7dmB11y9zqE"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/janice-tjen-vs-joanna-garland-set-2-winner-nov-04-2026/",
+          "title": "November 4, 2026: Janice Tjen vs Joanna Garland: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1aMRNctgoeAonw2gcsFzQW7YAI0NJvYPZJuT9qsangI2mC4XlkvCnpqwgJ_E"
+        }
+      ]
+    },
+    {
+      "query": "marketwatch",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T16:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
+        "https://www.bloomberg.com/news/articles/2026-11-04/wall-street-sees-risks-to-ai-boom-after-the-democratic-sweep",
+        "https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkAcNHCfb4tp0CKsW6St9ml_8-__RbRdVtmj0zxMHA0BdJt2nvRVPYU7NbPOY",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
+          "title": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkAcNHCfb4tp0CKsW6St9ml_8-__RbRdVtmj0zxMHA0BdJt2nvRVPYU7NbPOY"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-04/wall-street-sees-risks-to-ai-boom-after-the-democratic-sweep",
+          "title": "Wall Street Sees Risks to AI Boom After the Democratic Sweep",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdr6FcldLrz6q9hu1A_k1mcdC_OWgFDMfb76V_gDJBehn9IpLnZGmcZZdHhCM"
+        },
+        {
+          "url": "https://www.washingtonpost.com/technology/2026/11/04/voters-pass-over-20-ballot-measures-ban-or-restrict-data-centers/",
+          "title": "Voters reject data centers across the country as the AI backlash grows",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQbV-13Sz_HuHGI0y0RaUbBihDkMzOgXxvGSYzbM7Sb-voL3c9p16Aw_BgQY"
+        }
+      ]
+    },
     {
       "query": "kristaps porzingis",
       "approx_searches": "2000+",
@@ -13,9 +258,9 @@
       "related_news_urls": [
         "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say",
         "https://bleacherreport.com/articles/25529283-warriors-reportedly-not-delivering-payments-kristaps-porzingis-star-contemplates-nba-future",
-        "https://sports.yahoo.com/articles/failure-render-services-costing-kristaps-155458094.html"
+        "https://www.usatoday.com/story/sports/nba/rumors/2026/11/04/warriors-not-delivering-salary-payments-kristaps-porzingis-ruling-that-not-rendering-services-team/92609918007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEGWz1obSQsao_REDBGew2trW_cpMConbOaH1HFFB1VCTRBwhVJQ0gybUu-ZI",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvlgC-SNcSJBXKbFdfsQY8_91Cfa_dPPjjgp4MAhZmACIyUmYNNDlePyTVRMc",
       "image_credit": "ESPN",
       "news": [
         {
@@ -23,7 +268,7 @@
           "title": "Warriors withholding payments to Porzingis, sources say",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEGWz1obSQsao_REDBGew2trW_cpMConbOaH1HFFB1VCTRBwhVJQ0gybUu-ZI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvlgC-SNcSJBXKbFdfsQY8_91Cfa_dPPjjgp4MAhZmACIyUmYNNDlePyTVRMc"
         },
         {
           "url": "https://bleacherreport.com/articles/25529283-warriors-reportedly-not-delivering-payments-kristaps-porzingis-star-contemplates-nba-future",
@@ -33,17 +278,17 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMqiiT1MoVqmuMFH4FopZJZwwOSgo0B4DxBse8lXHz8zvJZgxsvdj1HBUnUkg"
         },
         {
-          "url": "https://sports.yahoo.com/articles/failure-render-services-costing-kristaps-155458094.html",
-          "title": "Failure to render services is costing Kristaps …",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.usatoday.com/story/sports/nba/rumors/2026/11/04/warriors-not-delivering-salary-payments-kristaps-porzingis-ruling-that-not-rendering-services-team/92609918007/",
+          "title": "Warriors not delivering salary payments to Kristaps Porzingis, ruling that he is not rendering services to team",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPbJO0NTHDWwqtJKh9C793YVmWs-IVRBn5wlNCjLBHad5sO9e8mAuqSZ6qCkA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMPCJEl9IbUX9DcoIPL_qGAGmiAaOg07yFeDbtNZ5vaKtarrdBf7_nTdO9qmU"
         }
       ]
     },
     {
       "query": "angel reese caitlin clark",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-04T15:40:00Z",
       "related_news_urls": [
         "https://www.foxnews.com/outkick-sports/why-isnt-angel-reese-held-caitlin-clark-standard-when-fans-attack-her-teammates",
@@ -82,8 +327,8 @@
       "published_at": "2026-11-04T15:40:00Z",
       "related_news_urls": [
         "https://gizmodo.com/nintendos-switch-2-game-cards-matronix-2000834832",
-        "https://kotaku.com/nintendo-switch-cart-rom-physical-media-data-centers-manufacture-2000753293",
-        "https://www.gamespot.com/articles/nintendo-could-have-a-new-cartridge-problem-on-its-hands/"
+        "https://www.gamespot.com/articles/nintendo-could-have-a-new-cartridge-problem-on-its-hands/",
+        "https://nintendoeverything.com/nintendos-main-manufacturer-for-switch-2-and-switch-cartridges-is-quitting-the-business/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwGHqwBHJ2JH_tyhvUwlg3WuKlqTc4FscQYjlgPvPq81Nh432Cirtns3uX2YY",
       "image_credit": "Gizmodo",
@@ -96,255 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwGHqwBHJ2JH_tyhvUwlg3WuKlqTc4FscQYjlgPvPq81Nh432Cirtns3uX2YY"
         },
         {
-          "url": "https://kotaku.com/nintendo-switch-cart-rom-physical-media-data-centers-manufacture-2000753293",
-          "title": "Another Blow For Physical Media As Nintendo’s Switch Cartridge Chip Manufacturer Pivots To Data Centers",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZlA7344Dl0GauJZyz_wlR5ioxndSjRfq_Qs2LuD2wLWARlobGwLrInki9IoU"
-        },
-        {
           "url": "https://www.gamespot.com/articles/nintendo-could-have-a-new-cartridge-problem-on-its-hands/",
           "title": "Nintendo Could Have A New Cartridge Problem On Its Hands",
           "publisher": "GameSpot",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnTyuq6Gu9ISzkxuPRauxNCmylzo3ckg4GJTSQtBR0uHk1M1rObHMOphBWbig"
-        }
-      ]
-    },
-    {
-      "query": "walmart stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T15:20:00Z",
-      "related_news_urls": [
-        "https://www.barchart.com/story/news/8593078/walmart-stock-is-wall-street-bullish-or-bearish",
-        "https://seekingalpha.com/article/4961204-walmart-back-to-the-strong-sell-rating",
-        "https://in.investing.com/news/stock-market-news/why-is-walmart-stock-rallying-today-93CH-5679843"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSmFOGAGwabMH_EAmaBCQsozJu6PenkSWCuvv19zIWkYHfXj-dQcTx9eLAxhE",
-      "image_credit": "Barchart.com",
-      "news": [
-        {
-          "url": "https://www.barchart.com/story/news/8593078/walmart-stock-is-wall-street-bullish-or-bearish",
-          "title": "Walmart Stock: Is Wall Street Bullish or Bearish?",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSmFOGAGwabMH_EAmaBCQsozJu6PenkSWCuvv19zIWkYHfXj-dQcTx9eLAxhE"
         },
         {
-          "url": "https://seekingalpha.com/article/4961204-walmart-back-to-the-strong-sell-rating",
-          "title": "Walmart Stock: Back To The Strong Sell Rating (NASDAQ:WMT)",
-          "publisher": "Seeking Alpha",
+          "url": "https://nintendoeverything.com/nintendos-main-manufacturer-for-switch-2-and-switch-cartridges-is-quitting-the-business/",
+          "title": "Nintendo’s main manufacturer for Switch 2 and Switch cartridges is quitting the business",
+          "publisher": "Nintendo Everything",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTD-26FMuypDOABgXe53wPrvLnJD_QU0eJhIAbyUKhoOmkAW9A1TfGnDd6OeQA"
-        },
-        {
-          "url": "https://in.investing.com/news/stock-market-news/why-is-walmart-stock-rallying-today-93CH-5679843",
-          "title": "Why is Walmart stock rallying today? By Investing.com",
-          "publisher": "Investing.com India",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBhS9-QXAThpphk25YdPvoqtJqpdhh4i2kYGQgfg9U9RZtwuPeDxBrZblGoDU"
-        }
-      ]
-    },
-    {
-      "query": "nvda stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T15:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/nvidia-rises-3-despite-ai-184852243.html",
-        "https://www.barchart.com/story/news/8597937/nvidia-stock-looks-surprisingly-cheap-why-nvda-could-rise-61",
-        "https://www.investors.com/research/nvidia-nvda-stock-buy-now-november-2026-earnings/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_Noah6aFJQUedA-UqJfKTw3X1BOx0UyxWAtuRAeKjxkzXpb1tF9xn8gcbTV0",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-rises-3-despite-ai-184852243.html",
-          "title": "NVIDIA Rises 3% Despite AI CEO’s Warning on Chinese Chip Competition; AMD Climbs 5%, Broadcom Gains 3%",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_Noah6aFJQUedA-UqJfKTw3X1BOx0UyxWAtuRAeKjxkzXpb1tF9xn8gcbTV0"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8597937/nvidia-stock-looks-surprisingly-cheap-why-nvda-could-rise-61",
-          "title": "Nvidia Stock Looks Surprisingly Cheap. Why NVDA Could Rise 61%.",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaY8OifZRrIm6F950Qlk4WgmFWVRy_mlbvVuwsynu80ldj47lmqjfMxIpv2i4"
-        },
-        {
-          "url": "https://www.investors.com/research/nvidia-nvda-stock-buy-now-november-2026-earnings/",
-          "title": "Nvidia Flashes Sell Signals As Earnings Loom; Is Nvidia A Buy Now?",
-          "publisher": "Investor's Business Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQXaV_xmyM9evrrTEkFoOHlXrCclNTYierfr3W-YTb8ljUVAjJA4N65JbZx1M"
-        }
-      ]
-    },
-    {
-      "query": "qqq",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T15:10:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/article/4960901-qqq-after-a-minus-6-7-percent-october-what-history-says-about-november",
-        "https://pluang.com/en/news-feed/qqqm-nasdaq-100-pullback-peluang-beli",
-        "https://tradersunion.com/news/market-voices/show/4090909-qqq-key-levels-focus/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVI9OBkYIwxUQ5Q2lFOL2hUTpt_Qd04GWAiDE0u7XZG3LWP0WfLAH57sE2sM",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/article/4960901-qqq-after-a-minus-6-7-percent-october-what-history-says-about-november",
-          "title": "QQQ After A -6.7% October: What History Says About November (NASDAQ:QQQ)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVI9OBkYIwxUQ5Q2lFOL2hUTpt_Qd04GWAiDE0u7XZG3LWP0WfLAH57sE2sM"
-        },
-        {
-          "url": "https://pluang.com/en/news-feed/qqqm-nasdaq-100-pullback-peluang-beli",
-          "title": "Invesco NASDAQ 100 ETF drops 7% in October but seen as a buy on strong tech earnings growth and AI exposure.",
-          "publisher": "Pluang",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyV29EpL_l224LNRJIF0MsVOiRNjd_Ek7uC0gWAU4-GUMpoZy-Fa1tj66HRXY"
-        },
-        {
-          "url": "https://tradersunion.com/news/market-voices/show/4090909-qqq-key-levels-focus/",
-          "title": "Scott Redler: Focus on QQQ 200-day, key $687 and $671 levels",
-          "publisher": "Traders Union",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4-R2UexSFtwWDRijUNcwf0K6UwrjYaadebV30di7-HBMn0KPSHqu9b11-7-8"
-        }
-      ]
-    },
-    {
-      "query": "covid tests",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T15:10:00Z",
-      "related_news_urls": [
-        "https://www.miamiherald.com/living/travel/article317892300.html",
-        "https://www.fodors.com/news/photos/starting-today-you-must-complete-this-new-form-to-fly-to-the-u-s",
-        "https://www.reuters.com/legal/government/airline-groups-urge-us-cdc-reconsider-ebola-declaration-requirements-2026-10-29/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcAlPeL8uyvhzItNRg6hcmOhYcN-M723FSsE-hAAdVJzntc8ELZr7uPiT0NrE",
-      "image_credit": "Miami Herald",
-      "news": [
-        {
-          "url": "https://www.miamiherald.com/living/travel/article317892300.html",
-          "title": "Health alert: Overseas travelers face new requirement at MIA, other airports",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcAlPeL8uyvhzItNRg6hcmOhYcN-M723FSsE-hAAdVJzntc8ELZr7uPiT0NrE"
-        },
-        {
-          "url": "https://www.fodors.com/news/photos/starting-today-you-must-complete-this-new-form-to-fly-to-the-u-s",
-          "title": "Starting Today, You Must Complete This New Form to Fly to the U.S.",
-          "publisher": "Fodors Travel Guide",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnzlBfRkEUC3gzuImXIbr3AvOdF38D4CCg2PeHVJt0WoyIQXDWSJXSgG5KojE"
-        },
-        {
-          "url": "https://www.reuters.com/legal/government/airline-groups-urge-us-cdc-reconsider-ebola-declaration-requirements-2026-10-29/",
-          "title": "Airline groups urge US CDC to reconsider Ebola declaration requirements",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK437fHgCIzOhEvSBdQEl_wUCo3S0fUzHIIU_UiyIbciRqdcOtmfk6aMX32FE"
-        }
-      ]
-    },
-    {
-      "query": "dell stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T15:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/dell-crashed-20-over-last-134508986.html",
-        "https://www.tikr.com/blog/memory-trade-warnings-pile-up-dells-tripled-inventory-says-chip-supply-is-a-lot-closer-to-demand",
-        "https://www.gurufocus.com/news/9163405/dell-technologies-inc-dell-stock-down-74-but-still-overvalued-gf-score-71100"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-JFIlYkf_LU8JHHDDAtXBCjtR16erI6xlfXZ-H5r9_JrRNnllxcNzKUhH_mo",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dell-crashed-20-over-last-134508986.html",
-          "title": "Dell Crashed by 20% Over The Last Month: A Respected Wall Street Analyst Says 65% Gains Are Incoming",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-JFIlYkf_LU8JHHDDAtXBCjtR16erI6xlfXZ-H5r9_JrRNnllxcNzKUhH_mo"
-        },
-        {
-          "url": "https://www.tikr.com/blog/memory-trade-warnings-pile-up-dells-tripled-inventory-says-chip-supply-is-a-lot-closer-to-demand",
-          "title": "Memory Trade Warnings Pile Up: Dell’s Tripled Inventory Says Chip Supply Is “a Lot Closer” to Demand",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0UMm3iC_TmwgM1wDNlspjFoSWLd9-5FflnCxPB_MyLRccK-tPNNqgqFNtwtk"
-        },
-        {
-          "url": "https://www.gurufocus.com/news/9163405/dell-technologies-inc-dell-stock-down-74-but-still-overvalued-gf-score-71100",
-          "title": "Dell Technologies Inc (DELL) Stock Down 7.4% but Still Overvalued -- GF Score: 71/100",
-          "publisher": "GuruFocus",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS12km4p4cGb5KRfCIE9RPqbZwSPS8R6vmz2nO9fRS_ImFbHVZmtmveVenCsWk"
-        }
-      ]
-    },
-    {
-      "query": "nvda",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T15:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html",
-        "https://markets.financialcontent.com/stocks/article/stockstory-2026-11-3-allegro-microsystems-entegris-photronics-and-amtech-shares-skyrocket-what-you-need-to-know"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvFPffksrCyp3T6WI9iQDekHrd7U_9KjKoEOdmwz44jY7j0AXnkMftc4AdO_E",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html",
-          "title": "Micron, Nvidia, and AMD lead chip stocks' rebound",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvFPffksrCyp3T6WI9iQDekHrd7U_9KjKoEOdmwz44jY7j0AXnkMftc4AdO_E"
-        },
-        {
-          "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-11-3-allegro-microsystems-entegris-photronics-and-amtech-shares-skyrocket-what-you-need-to-know",
-          "title": "Allegro MicroSystems, Entegris, Photronics, and Amtech shares skyrocket, what you need to know",
-          "publisher": "FinancialContent",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPGDdkpD0L6DbAIr9TQMJnNtvjY9uNeFfBqnS18dDTKBawA83H40l6G7Xvx_s"
-        }
-      ]
-    },
-    {
-      "query": "nvidia stock price",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T15:00:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/articles/nvidia-stock-price-data-centers-5b4a74a1",
-        "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3",
-        "https://seekingalpha.com/news/4664849-data-center-chip-shares-drop-but-hyperscalers-gain-as-democrats-win-congress"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaDJocz5YJ7nSJWThvGPc1PwWdUVl5uot8MD1pQBUTuGE0bUkfxxph4CH_Hy4",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/articles/nvidia-stock-price-data-centers-5b4a74a1",
-          "title": "Why Nvidia Stock Can Ride Out a Data-Center Crackdown",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaDJocz5YJ7nSJWThvGPc1PwWdUVl5uot8MD1pQBUTuGE0bUkfxxph4CH_Hy4"
-        },
-        {
-          "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3",
-          "title": "Micron and other chip stocks slip as election results strike at the core of data-center optimism",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSn4MshXWghx2EDm-PrGkc31-vmqFTeII9ugkkN9UGMtiU_RWYWJYn8qf-baA"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4664849-data-center-chip-shares-drop-but-hyperscalers-gain-as-democrats-win-congress",
-          "title": "AI infrastructure stocks drop, hyperscalers gain as Democrats win Congress (NVDA:NASDAQ)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtP_w6oIJff-RhMKZkkNrpvB72mwxN0I5zjbVNjvlCZyNZxubnVZbBOb9Te60"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSssaef9LrUlXnQwu2qqLICJnEbqwQuqhyoI-Kiw86d3J9Wz7zC8D5xj9U3GrA"
         }
       ]
     }
