@@ -3932,6 +3932,9 @@ async function pollBrainProgress(){
   const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
+  // A sign-out, wallet/account switch or re-pair during the network wait must
+  // not project a prior owner's ticket into the newly active chat.
+  if(!ownerReady||ownerHeaders!==headers)return;
   // A safe website/PWA update may reload during a pending repository job.
   // The pointer becomes valid only when this owner's fresh signed list confirms it.
   if(!activeIterationTicketId){
@@ -3959,7 +3962,7 @@ async function pollBrainProgress(){
     const projection=projectVerifiedJobTransitions(iterationTicket,ownerJobMarkers);
     ownerJobMarkers=projection.markers;
     if(typeof CustomEvent==='function')for(const step of projection.events){
-     if(activeIterationThreadId!==activeThread)break;
+     if(!ownerReady||ownerHeaders!==headers||activeIterationThreadId!==activeThread)break;
      window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:step}));
     }
    }catch{/* Optional display must not interrupt authenticated ticket polling. */}
