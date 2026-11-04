@@ -3192,7 +3192,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Public source state is NOT the private chat memory or a Brain execution receipt.
  // When asked what changed, Bubbles can read current main commits and open PRs
  // directly rather than confidently guessing what another session built.
- if(!embedded&&/\b(?:today|tonight|recent|latest|already|last night|since|status)\b/i.test(request)&&
+ if(!embedded&&/\b(?:today|tonight|recent(?:ly)?|latest|already|last night|since|status)\b/i.test(request)&&
     /\b(?:work|built|build|added|merged|merge|changes?|changed|commits?|pull requests?|prs?|finished|completed)\b/i.test(request)){
   try{
    const {isBuildHistoryQuestion,readRecentBuildHistory}=await import('/bubbles-public-build-history.mjs?v=20261103-source1');
