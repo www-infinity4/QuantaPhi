@@ -1095,8 +1095,19 @@ export async function ownerTickets(env,path,body){
  }
  if(path==='/work/continuity')return ownerContinuitySnapshot(db,ownerHash,body);
  if(path==='/work/tickets/list'){
-  const rows=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100").bind(ownerHash).all();
-  return {status:200,result:{ok:true,notificationScope:ownerHash,tickets:(rows.results||[]).map(publicTicket)}};
+  // Bubbles ordinary work history stays unchanged. A signed owner continuation
+  // needs an older eligible ticket even after 100 more-recent blocked updates.
+  // Read-only selection preserves the same owner_hash partition, and the later
+  // /run-next and /runner/claim paths independently recheck every job gate.
+  const continuation=body?.continuation===true;
+  const sql=continuation?
+   "SELECT * FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY CASE status WHEN 'ready' THEN 0 WHEN 'working' THEN 1 ELSE 2 END,updated_at DESC,id DESC LIMIT 101":
+   "SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100";
+  const rows=await db.prepare(sql).bind(ownerHash).all();
+  const found=Array.isArray(rows?.results)?rows.results:[];
+  return {status:200,result:{ok:true,notificationScope:ownerHash,
+   tickets:(continuation?found.slice(0,100):found).map(publicTicket),
+   ...(continuation?{continuationScope:'owner_robot_directions',truncated:found.length>100}:{})}};
  }
  if(path==='/work/tickets/approve-all'){
   // One verified owner click authorizes a bounded BATCH, not 50 GitHub dispatches.
