@@ -90,3 +90,54 @@ test('repeated unchanged 15-second ticket polls must not look like new engineeri
  s=advanceLiveBits(s,{...evt,status:'blocked'});
  assert.equal(s.entries.length,n+1);
 });
+
+
+test('the operator pulse shows actual commit, test, deployment and verification steps as distinct evidence',()=>{
+ let s=advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
+ s=advanceLiveBits(s,{type:'memory',state:'retrieved'});
+ const actions=[
+  ['github.commit','receipt_commit_001','op_commit_001','Create a reviewed source commit'],
+  ['github.workflow_checks','receipt_tests_002','op_tests_002','Verify the exact GitHub SHA'],
+  ['cloudflare.worker.deploy','receipt_deploy_003','op_deploy_003','Deploy Cloudflare Worker'],
+  ['cloudflare.worker.verify','receipt_verify_004','op_verify_004','Read active production version']
+ ];
+ for(const [tool,receiptId,operationId,criteriaSummary] of actions){
+  s=advanceLiveBits(s,{type:'tool_started',tool,operationId,criteriaSummary});
+  assert.equal(s.entries.at(-1).state,'running',tool);
+  s=advanceLiveBits(s,{type:'tool_receipt',tool,operationId,status:'complete',
+   receiptId,criteriaSummary,resource:'www-infinity4/QuantaPhi'});
+  assert.equal(s.entries.at(-1).state,'complete',tool);
+  assert.equal(s.entries.at(-1).evidenceKind,'technical_execution',tool);
+ }
+ assert.equal(s.candidates,4,'one observed step per distinct receipt, no repeated polling credit');
+ assert.equal(s.credits,0,'never confuse Gits accounting with spendable user Bits');
+ assert.equal(s.entries.filter(x=>x.tool==='cloudflare.worker.verify').length,1);
+ const once=advanceLiveBits(s,{type:'tool_receipt',tool:'cloudflare.worker.verify',
+  operationId:'op_verify_004',status:'complete',receiptId:'receipt_verify_004'});
+ assert.equal(once.candidates,4);
+ assert.equal(once.entries.length,s.entries.length);
+});
+test('a failed deployment does not become completion, wallet credit or operator Gits',()=>{
+ let s=advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
+ s=advanceLiveBits(s,{type:'memory',state:'retrieved'});
+ s=advanceLiveBits(s,{type:'tool_started',tool:'cloudflare.worker.deploy',
+  operationId:'op_failed_deploy_01',criteriaSummary:'Deploy Bubbles Brain safely'});
+ s=advanceLiveBits(s,{type:'tool_receipt',tool:'cloudflare.worker.deploy',
+  operationId:'op_failed_deploy_01',status:'failed',receiptId:'receipt_failed_deploy_01'});
+ assert.equal(s.entries.at(-1).state,'failed');
+ assert.equal(s.candidates,0);
+ assert.equal(s.credits,0);
+ assert.doesNotMatch(JSON.stringify(s),/spendableCredits|GitsMinted/);
+});
+
+
+test('the pulse never calls a technical operation complete without a receipt ID',()=>{
+ let s=advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
+ s=advanceLiveBits(s,{type:'memory',state:'retrieved'});
+ s=advanceLiveBits(s,{type:'tool_started',tool:'cloudflare.worker.deploy',operationId:'op_noreceipt_001'});
+ s=advanceLiveBits(s,{type:'tool_receipt',tool:'cloudflare.worker.deploy',operationId:'op_noreceipt_001',
+  status:'complete',detail:'The model says deployment succeeded'});
+ assert.equal(s.entries.at(-1).state,'unverified');
+ assert.equal(s.candidates,0);
+ assert.equal(s.credits,0);
+});
