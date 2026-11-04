@@ -3,12 +3,152 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T07:01:47.100922Z",
+  "checked_at": "2026-11-04T07:31:30.795799Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ontario california election results",
+      "query": "david flippo",
       "approx_searches": "200+",
+      "published_at": "2026-11-04T07:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-nevada-us-house-2.html",
+        "https://news3lv.com/news/local/meet-the-candidates-running-for-nevadas-four-seats-in-congress",
+        "https://lasvegassun.com/news/2026/nov/03/the-nation-is-watching-nevada-vote-like-it/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugfEsJSsS4425pM79xD07I1CkT0HHCwbUA7gw3kuOPjuw0WXbPmjOeAhWrEo",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-nevada-us-house-2.html",
+          "title": "Nevada Second Congressional District 2026: Live Election Results, Benitez-Thompson vs. Flippo",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugfEsJSsS4425pM79xD07I1CkT0HHCwbUA7gw3kuOPjuw0WXbPmjOeAhWrEo"
+        },
+        {
+          "url": "https://news3lv.com/news/local/meet-the-candidates-running-for-nevadas-four-seats-in-congress",
+          "title": "Meet the candidates running for Nevada’s four seats in Congress",
+          "publisher": "KSNV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzb1n1Rb0M-e8PxYe2oT2G3AGHl6ObiuNU_SuvjehltreHu6UNaNUXHmNnr18"
+        },
+        {
+          "url": "https://lasvegassun.com/news/2026/nov/03/the-nation-is-watching-nevada-vote-like-it/",
+          "title": "The nation is watching Nevada; vote like it",
+          "publisher": "Las Vegas Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDXpozK7cDd0v2jYIjn_qmwlzdw5TByYS42NqV1_5X8TCXC-nKF8dKP2VoLiA"
+        }
+      ]
+    },
+    {
+      "query": "huntington beach election results",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T07:00:00Z",
+      "related_news_urls": [
+        "https://www.sfgate.com/politics/article/kluwe-oc-22500889.php",
+        "https://voiceofoc.org/2026/11/election-night-2026-results-whos-set-to-take-orange-countys-coastal-assembly-seat/",
+        "https://www.ocregister.com/2026/11/03/election-results-11-vie-for-4-huntington-beach-city-council-seats/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnL0JxZitG2uxYfxiTy3-edPNLEykhyE9jFBwsqVxwlHppHDsNcrDkwelt8KM",
+      "image_credit": "SFGATE",
+      "news": [
+        {
+          "url": "https://www.sfgate.com/politics/article/kluwe-oc-22500889.php",
+          "title": "MAGA's 'heartland of the West Coast' could soon be in Dem hands",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnL0JxZitG2uxYfxiTy3-edPNLEykhyE9jFBwsqVxwlHppHDsNcrDkwelt8KM"
+        },
+        {
+          "url": "https://voiceofoc.org/2026/11/election-night-2026-results-whos-set-to-take-orange-countys-coastal-assembly-seat/",
+          "title": "Election Night 2026 Results: Who’s Set to Take Orange County’s Coastal Assembly Seat?",
+          "publisher": "Voice of OC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_BwyAln7pm3XcVmoR0jd8GKDS6jyRfwY5gHIxi2PNLJy4PrpKcTInkgnH2b0"
+        },
+        {
+          "url": "https://www.ocregister.com/2026/11/03/election-results-11-vie-for-4-huntington-beach-city-council-seats/",
+          "title": "Election results: 11 vie for 4 Huntington Beach City Council seats",
+          "publisher": "Orange County Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTtFTEyzSk1bWhLAf1By2oNcsqgTZhUfMn6_ySxiKeOKG9U5SGcZpyDM_QcIE"
+        }
+      ]
+    },
+    {
+      "query": "spencer pratt",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T06:50:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/entertainment/spencer-pratt-1200-hotel-fortress-cheaper-security-death-threats-mounted",
+        "https://www.yahoo.com/entertainment/celebrity/articles/spencer-pratt-claims-death-threats-225952910.html",
+        "https://www.usmagazine.com/celebrity-news/news/spencer-pratt-defends-luxury-hotel-stay-during-mayor-race/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGy6Rm1Y9X6oIJ3vN0Z6MI4baPpUWcyUy1KIek77whGXgfKTnw4BpAtiVBNzo",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/entertainment/spencer-pratt-1200-hotel-fortress-cheaper-security-death-threats-mounted",
+          "title": "Spencer Pratt says $1,200 hotel 'fortress' was cheaper than security as death threats mounted",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGy6Rm1Y9X6oIJ3vN0Z6MI4baPpUWcyUy1KIek77whGXgfKTnw4BpAtiVBNzo"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/spencer-pratt-claims-death-threats-225952910.html",
+          "title": "Spencer Pratt Claims Death Threats Forced Him to Move Into $1,200-a-Night Hotel Amid L.A. Mayoral Race",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTq3i0Bf0s_UWFkiILsN6Vf_qgva72UC5HFHlgqGhvbtBwOsBYJHkc4DCnA85k"
+        },
+        {
+          "url": "https://www.usmagazine.com/celebrity-news/news/spencer-pratt-defends-luxury-hotel-stay-during-mayor-race/",
+          "title": "Spencer Pratt Defends Staying in $1,200-a-Night Hotel After Featuring Trailer in L.A. Mayoral Race Ad",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW22_UshAPtrieCquMnpWBiGX7lLP9ywqR93uNhDYq2D5pxTWLXL6rWCz3HDc"
+        }
+      ]
+    },
+    {
+      "query": "detroit free press",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T06:50:00Z",
+      "related_news_urls": [
+        "https://michigan.law.umich.edu/news/2l-mary-caroline-heinen-places-third-detroit-free-press-marathon",
+        "https://www.freep.com/story/sports/high-school/athlete-of-the-week/2026/11/03/vote-for-the-freep-boys-athlete-of-the-week-for-oct-26-nov-1-avolio-foster-harris-jones-michelotti/92565085007/",
+        "https://www.yahoo.com/news/videos/finalists-free-press-boys-athlete-100823340.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfqGnyEKKISjxOSr-H3MIZw6XCIfFsFNZxaN-2Fa1mwqqvUNRdfrIf0gSO-vc",
+      "image_credit": "University of Michigan Law School",
+      "news": [
+        {
+          "url": "https://michigan.law.umich.edu/news/2l-mary-caroline-heinen-places-third-detroit-free-press-marathon",
+          "title": "2L Mary Caroline Heinen Places Third in Detroit Free Press Marathon",
+          "publisher": "University of Michigan Law School",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfqGnyEKKISjxOSr-H3MIZw6XCIfFsFNZxaN-2Fa1mwqqvUNRdfrIf0gSO-vc"
+        },
+        {
+          "url": "https://www.freep.com/story/sports/high-school/athlete-of-the-week/2026/11/03/vote-for-the-freep-boys-athlete-of-the-week-for-oct-26-nov-1-avolio-foster-harris-jones-michelotti/92565085007/",
+          "title": "Vote now for the Freep Boys Athlete of the Week for Oct. 26-Nov. 1",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrFWakW3dxPx1TrjHvusKqeQvKYkNfD7Tp1tD69BdSbe-eYyP5Ij2mZZP1EOU"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/finalists-free-press-boys-athlete-100823340.html",
+          "title": "Here are the finalists for the Free Press Boys Athlete of the Week",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2l-8DouTejCDCd8I22_9qPWR0Tt5s4aeAX9vGCxGWptyOXfP5TmOimFTz_KQ"
+        }
+      ]
+    },
+    {
+      "query": "ontario california election results",
+      "approx_searches": "500+",
       "published_at": "2026-11-04T06:40:00Z",
       "related_news_urls": [
         "https://www.dailybulletin.com/2026/11/03/election-results-ontario-voters-decide-city-leadership-amid-fbi-probe/",
@@ -42,30 +182,65 @@
       ]
     },
     {
+      "query": "virat kohli",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T06:40:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-odi-1539437/match-preview",
+        "https://www.wral.com/news/ap/eb0bf-india-bowls-out-new-zealand-for-185-in-the-1st-one-day-cricket-international/",
+        "https://sports.yahoo.com/articles/virat-kohli-score-today-zealand-020353562.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaPBs73RMhcqn6hvrfmFP5tyvv-AsnXqMqyDkPsR9G1clbqm3J9X5pLXePqJA",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-odi-1539437/match-preview",
+          "title": "India, New Zealand switch to World Cup prep at bouncy Eden Park",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaPBs73RMhcqn6hvrfmFP5tyvv-AsnXqMqyDkPsR9G1clbqm3J9X5pLXePqJA"
+        },
+        {
+          "url": "https://www.wral.com/news/ap/eb0bf-india-bowls-out-new-zealand-for-185-in-the-1st-one-day-cricket-international/",
+          "title": "India bowls out New Zealand for 185 in the 1st one-day cricket international",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2yMXwvCMtGVS2Opkl9H0zRrFGOmTfc6nr92DvIYo0Hpf4Qm1zG_MIcXtJoeY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/virat-kohli-score-today-zealand-020353562.html",
+          "title": "Virat Kohli score today for New Zealand vs. India 1st ODI in Auckland",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZO1iJbP0hmgsOgFtrUCWEeO0UyKUOqP0O5dLkCfH_RF7QZ-OTI18xUrUqOVs"
+        }
+      ]
+    },
+    {
       "query": "bill huizenga",
       "approx_searches": "200+",
       "published_at": "2026-11-04T06:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-michigan-us-house-4.html",
         "https://wwmt.com/news/michigan-politics/sean-mccann-kalamazoo-election-night-gathering-bill-huizenga-race-fourth-district-house-politics-government-west-michigan",
+        "https://www.yahoo.com/news/politics/articles/gop-u-rep-huizenga-tries-010853840.html",
         "https://www.mlive.com/politics/2026/11/bill-huizengas-gop-primary-challenger-endorses-sean-mccann-in-us-house-race.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ770huSEnUuxIuYOuE8wMQOBNMzlAmgpKTLxjIhormKba4A5gdFCikj32qsh8",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKDVQyb9LIWUblkASzU17AUrJR5vnMRIeN-Mwd4NLHf6_6XollN2j7K0N-_Yc",
+      "image_credit": "WWMT",
       "news": [
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-michigan-us-house-4.html",
-          "title": "Michigan Fourth Congressional District 2026: Live Election Results, Huizenga vs. McCann",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ770huSEnUuxIuYOuE8wMQOBNMzlAmgpKTLxjIhormKba4A5gdFCikj32qsh8"
-        },
         {
           "url": "https://wwmt.com/news/michigan-politics/sean-mccann-kalamazoo-election-night-gathering-bill-huizenga-race-fourth-district-house-politics-government-west-michigan",
           "title": "'I'm honored to be your candidate': McCann thanks supporters at Kalamazoo gathering",
           "publisher": "WWMT",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKDVQyb9LIWUblkASzU17AUrJR5vnMRIeN-Mwd4NLHf6_6XollN2j7K0N-_Yc"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/gop-u-rep-huizenga-tries-010853840.html",
+          "title": "GOP U.S. Rep. Huizenga tries to stave off Democrat McCann in 4th District",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD7kV9ZzvHao0fkzkzwAWPUja6UdFeU3DC8AgiQlM7GkffTLOL-85rKRvEX9E"
         },
         {
           "url": "https://www.mlive.com/politics/2026/11/bill-huizengas-gop-primary-challenger-endorses-sean-mccann-in-us-house-race.html",
@@ -77,23 +252,65 @@
       ]
     },
     {
+      "query": "stock markets",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T06:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
+        "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-dip-investors-010842458.html",
+        "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11032026-12209150"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eboXcVvbEB561yC5v0uNq6NT9r-2qvDx9SpPeR6MXaqiZgjG4VkJRdf7VaU",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
+          "title": "US tech stocks recover after selloff spooks investors over AI spending",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eboXcVvbEB561yC5v0uNq6NT9r-2qvDx9SpPeR6MXaqiZgjG4VkJRdf7VaU"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-dip-investors-010842458.html",
+          "title": "US stock futures dip as investors await midterm election results",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIJ18_Wl3DZQz2kgjIctMRy3gsWAJqAQONTJRUoUPqj2Qcaa-tvoLSvuzQ4kU"
+        },
+        {
+          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11032026-12209150",
+          "title": "Markets News, Nov. 3, 2026: S&P 500, Nasdaq Snap 3-Day Losing Streaks as Chip Stocks Rally; Investors Brace for Midterm Election Results",
+          "publisher": "Investopedia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnT-auWgIbvhv-Xy8s4Ua8-syfCtyiPPUPd7F2UJCiw4TsPb9ksdqG8j0cbFk"
+        }
+      ]
+    },
+    {
       "query": "brenton awa",
       "approx_searches": "200+",
       "published_at": "2026-11-04T06:20:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-wyoming-us-house-at-large.html",
-        "https://www.staradvertiser.com/2026/11/03/breaking-news/ed-case-and-jill-tokuda-win-re-election-to-the-u-s-house/",
-        "https://www.civilbeat.org/2026/11/case-tokuda-win-easily-as-democrats-take-house-senate/"
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-north-dakota-us-house-at-large.html",
+        "https://www.civilbeat.org/2026/11/case-tokuda-win-easily-as-democrats-take-house-senate/",
+        "https://www.staradvertiser.com/2026/11/03/breaking-news/ed-case-and-jill-tokuda-win-re-election-to-the-u-s-house/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZ7H-IinmlmdY6V3PuWwhlLLd6vhYIyBsRJ_n15F9JUDDBstz05F-nOruQzBo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBLYurWqSJ-ETlhiMINr3rt6GUIJVd4GJ8C6EW-nV41mLmU0ZKUjpCe21WuNc",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-wyoming-us-house-at-large.html",
-          "title": "Wyoming At-Large Congressional District 2026: Live Election Results, Kinney vs. Gray",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-north-dakota-us-house-at-large.html",
+          "title": "North Dakota At-Large Congressional District 2026: Live Election Results, Fedorchak vs. Hammer",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZ7H-IinmlmdY6V3PuWwhlLLd6vhYIyBsRJ_n15F9JUDDBstz05F-nOruQzBo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBLYurWqSJ-ETlhiMINr3rt6GUIJVd4GJ8C6EW-nV41mLmU0ZKUjpCe21WuNc"
+        },
+        {
+          "url": "https://www.civilbeat.org/2026/11/case-tokuda-win-easily-as-democrats-take-house-senate/",
+          "title": "Case, Tokuda Win Easily, Add To Democrats’ Upcoming Majority In Congress/The House xx",
+          "publisher": "Honolulu Civil Beat",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3yEXwj5vEoA0QDYD-lrJwMyYQu9AsR9q1VhBBYDFp0MS0nCVA31q0-ybzXE"
         },
         {
           "url": "https://www.staradvertiser.com/2026/11/03/breaking-news/ed-case-and-jill-tokuda-win-re-election-to-the-u-s-house/",
@@ -101,48 +318,6 @@
           "publisher": "Honolulu Star-Advertiser",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA5TKEWdM0F5o6snOQzE2c-wUDP65p4peFNQLM9IaBW9vbrI91cHMtAPE1lB4"
-        },
-        {
-          "url": "https://www.civilbeat.org/2026/11/case-tokuda-win-easily-as-democrats-take-house-senate/",
-          "title": "Case, Tokuda Win Easily, Add To Democrats’ Upcoming Majority In Congress/The House xx",
-          "publisher": "Honolulu Civil Beat",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPs9YFK3rUByFmhT8YbtQszaM3PfOiDhlCumqo-cUG6WTnvIGXY2Ezpxw7wzs"
-        }
-      ]
-    },
-    {
-      "query": "provisional ballots",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T06:20:00Z",
-      "related_news_urls": [
-        "https://www.wtol.com/article/news/local/vote/police-investigate-school-threat-in-lake-township-sweep-tps-polling-location/512-97755e13-a45e-4b5b-9d45-4fc9e015776e",
-        "https://www.13abc.com/2026/11/03/polling-location-beverly-elementary-evacuated-due-bomb-treat/",
-        "https://www.fox19.com/2026/11/03/polling-location-ohio-elementary-school-evacuated-due-bomb-threat/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT14nHFrKmdjlIK9KdWPnHMkPV2LDTdcZoMshLS-oHMBA2oHWrbw9vT4E3IRcU",
-      "image_credit": "WTOL",
-      "news": [
-        {
-          "url": "https://www.wtol.com/article/news/local/vote/police-investigate-school-threat-in-lake-township-sweep-tps-polling-location/512-97755e13-a45e-4b5b-9d45-4fc9e015776e",
-          "title": "Judge extends voting hours at Beverly Elementary to allow for provisional ballots",
-          "publisher": "WTOL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT14nHFrKmdjlIK9KdWPnHMkPV2LDTdcZoMshLS-oHMBA2oHWrbw9vT4E3IRcU"
-        },
-        {
-          "url": "https://www.13abc.com/2026/11/03/polling-location-beverly-elementary-evacuated-due-bomb-treat/",
-          "title": "Polling location at Beverly Elementary temporarily evacuated due to bomb threat",
-          "publisher": "WTVG",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFEXZNob7963fovkAYiZlqNSdtbYPL-3tNdt6lTG1M5C08XgsGaHrLmT_o1pA"
-        },
-        {
-          "url": "https://www.fox19.com/2026/11/03/polling-location-ohio-elementary-school-evacuated-due-bomb-threat/",
-          "title": "Polling location at Ohio elementary school evacuated due to bomb threat",
-          "publisher": "FOX19 | Cincinnati",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZEyxU9u7LTfeqgoigk099Upk3bhAaFwvCD-HEIY1vqlx5V8r_u84a8hFJaE8"
         }
       ]
     },
@@ -178,173 +353,6 @@
           "publisher": "Collider",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTy0qsTaV5LzvlaqJ8jSgWiAx-q9bsQjHmtDaIwVysIJ74dkP82k43CfIHEI84"
-        }
-      ]
-    },
-    {
-      "query": "alina charaeva",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T06:10:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/elena-pridankina-vs-alexandra-shubladze-set-1-winner-nov-05-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/quentin-halys-vs-frances-tiafoe-set-2-winner-nov-04-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/quentin-halys-vs-frances-tiafoe-set-1-winner-nov-04-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTATOLhXmS-HncFOge7xr8Zj5knOjNWRGItw2XWrW7dRFY4IQC2M1qjP9kAuSE",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/elena-pridankina-vs-alexandra-shubladze-set-1-winner-nov-05-2026/",
-          "title": "November 5, 2026: Elena Pridankina vs Alexandra Shubladze: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTATOLhXmS-HncFOge7xr8Zj5knOjNWRGItw2XWrW7dRFY4IQC2M1qjP9kAuSE"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/quentin-halys-vs-frances-tiafoe-set-2-winner-nov-04-2026/",
-          "title": "November 4, 2026: Quentin Halys vs Frances Tiafoe: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_u9IxaKS3i243RBNHUSJTmLkrThcyZiiUshUEhjBBvL9J9QFUMvM7i27Gl5o"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/quentin-halys-vs-frances-tiafoe-set-1-winner-nov-04-2026/",
-          "title": "November 4, 2026: Quentin Halys vs Frances Tiafoe: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJgBE7ZTVda4HT8CntcK97LT48Es75oHpX8kHH01QMmP5UqpsBCBoVn_KLDUA"
-        }
-      ]
-    },
-    {
-      "query": "katy tur",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T06:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/tony-dokoupil-wife-meet-katy-204806919.html",
-        "https://www.imdb.com/news/ni66094109/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPwYQWS_KhcARBxOpDmizZu_4YYjnocnUSAqETEGmyXo5f_KXBFMQPpc6LpkM",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/tony-dokoupil-wife-meet-katy-204806919.html",
-          "title": "Who Is Tony Dokoupil’s Wife? Meet Katy Tur, the Fellow News Anchor He’s Been Married to Since 2017",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPwYQWS_KhcARBxOpDmizZu_4YYjnocnUSAqETEGmyXo5f_KXBFMQPpc6LpkM"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66094109/?ref_=nwc_art_perm",
-          "title": "Who Is Tony Dokoupil’s Wife? Meet Katy Tur, the Fellow News Anchor He’s Been Married to Since 2017",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpqydyePRZHQP69n51yBsOqt0iak5fDguoRNOAwwjHqAp5xApkdFo9YgOgegE"
-        }
-      ]
-    },
-    {
-      "query": "mississippi senators",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T06:00:00Z",
-      "related_news_urls": [
-        "https://www.theatlantic.com/culture/2026/11/protect-college-sports-act/689235/",
-        "https://lawliberty.org/forum/governing-games/",
-        "https://www.app.com/story/sports/college/2026/11/02/nj-college-athletic-directors-geo-baker-protect-college-sports-act-rutgers-seton-hall-monmouth/92476854007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvAac7WqB_3-F13ZgGJiiuoAQHhGygra3pUOZvLbCjkdfCuDonN33WFFmWgWI",
-      "image_credit": "The Atlantic",
-      "news": [
-        {
-          "url": "https://www.theatlantic.com/culture/2026/11/protect-college-sports-act/689235/",
-          "title": "The Protect College Sports Act Isn’t Enough",
-          "publisher": "The Atlantic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvAac7WqB_3-F13ZgGJiiuoAQHhGygra3pUOZvLbCjkdfCuDonN33WFFmWgWI"
-        },
-        {
-          "url": "https://lawliberty.org/forum/governing-games/",
-          "title": "Governing Games – Neal McCluskey",
-          "publisher": "Law & Liberty",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeh34SmFWDE-nkfiz13lRifIB31Xs0x0KVKT0onIqYsXjCmIYp0CxRwmIGD8M"
-        },
-        {
-          "url": "https://www.app.com/story/sports/college/2026/11/02/nj-college-athletic-directors-geo-baker-protect-college-sports-act-rutgers-seton-hall-monmouth/92476854007/",
-          "title": "NJ college athletic directors, Geo Baker on the Protect College Sports Act | Exclusive",
-          "publisher": "Asbury Park Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOxjddP06IASCZubyJD4_YP34k2noWzjmhppH0Vl6VGP6IzkN31Wv_xzCFTfs"
-        }
-      ]
-    },
-    {
-      "query": "runoff election",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T06:00:00Z",
-      "related_news_urls": [
-        "https://communityimpact.com/bryan-college-station/election/results-college-station-voters-decide-on-city-mayor-3-council-members/",
-        "https://www.kbtx.com/2026/11/04/yancy-wins-college-station-mayoral-race-after-cunha-concedes/",
-        "https://theeagle.com/news/local/government-politics/elections/article_a196ec05-2c11-4821-b6dc-00327a82cee2.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlkNTm6TZ18n4oMZmIL70_TkhZOt3HfcxNV4xSuJNSt5jJ0cxAE01vtbKGFM",
-      "image_credit": "Community Impact",
-      "news": [
-        {
-          "url": "https://communityimpact.com/bryan-college-station/election/results-college-station-voters-decide-on-city-mayor-3-council-members/",
-          "title": "RESULTS: College Station voters decide on city mayor, 3 council members",
-          "publisher": "Community Impact",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlkNTm6TZ18n4oMZmIL70_TkhZOt3HfcxNV4xSuJNSt5jJ0cxAE01vtbKGFM"
-        },
-        {
-          "url": "https://www.kbtx.com/2026/11/04/yancy-wins-college-station-mayoral-race-after-cunha-concedes/",
-          "title": "Yancy wins College Station mayoral race after Cunha concedes",
-          "publisher": "KBTX News 3",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpaKgHZxnOM01Y4yaS6q_6RcfcHbqhBDFIX4wTzkOhQJTeYYJQN1nt3asPpvg"
-        },
-        {
-          "url": "https://theeagle.com/news/local/government-politics/elections/article_a196ec05-2c11-4821-b6dc-00327a82cee2.html",
-          "title": "Yancy elected College Station mayor; council races go to runoff",
-          "publisher": "Bryan College Station Eagle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzcPYoR-sjL7EFYHndc450FPPmsyxY6MC0j7tPdlXUU6nnqmQb0erUqvPIA44"
-        }
-      ]
-    },
-    {
-      "query": "hawaii news now",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-04T06:00:00Z",
-      "related_news_urls": [
-        "https://www.hawaiinewsnow.com/2026/11/04/election-day-oahu-inside-final-hours-in-person-voting/",
-        "https://www.staradvertiser.com/2026/11/03/breaking-news/hawaii-voters-line-up-to-cast-their-ballots-on-election-day/",
-        "https://www.hawaiipublicradio.org/local-news/2026-11-02/6-things-to-watch-on-election-day-in-hawaii"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiCQhU3T1xzBhE0jTbybe9AMwaLZR7dyxV_si-Yp4JuiF437Gzz6qLUfLEvA",
-      "image_credit": "Hawaii News Now",
-      "news": [
-        {
-          "url": "https://www.hawaiinewsnow.com/2026/11/04/election-day-oahu-inside-final-hours-in-person-voting/",
-          "title": "Election Day on Oahu: Inside the final hours of in-person voting",
-          "publisher": "Hawaii News Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiCQhU3T1xzBhE0jTbybe9AMwaLZR7dyxV_si-Yp4JuiF437Gzz6qLUfLEvA"
-        },
-        {
-          "url": "https://www.staradvertiser.com/2026/11/03/breaking-news/hawaii-voters-line-up-to-cast-their-ballots-on-election-day/",
-          "title": "Hawaii voters line up to cast their ballots on Election Day",
-          "publisher": "Honolulu Star-Advertiser",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoJQvc809VOUwvhJrcNw2-S_kqJr75Nec05Mf-o_kijItX7Jqqu8ag4Bxb4os"
-        },
-        {
-          "url": "https://www.hawaiipublicradio.org/local-news/2026-11-02/6-things-to-watch-on-election-day-in-hawaii",
-          "title": "Will Republicans make more gains in Hawaiʻi? 6 things to watch on Election Day",
-          "publisher": "Hawaii Public Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhoGn0PN7QiAi4D6dONRUAvtSUvnkcIrv6F_J7r75MToV3MXercHFWMZJGxBU"
         }
       ]
     }
