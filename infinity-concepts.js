@@ -52,11 +52,20 @@
   const summary=(parent,cls,title)=>{
     const d=add(parent,node('details',cls));add(d,node('summary','',title));return d;
   };
+  // A rotating visit should not repeatedly show experiment #001. Deep links
+  // still open their exact experiment, and only complete, illustrated entries appear.
+  const LAST_SEEN_KEY='quantaPhi:physicsLastViewed:v1';
   let entries=[],current=0;
+  const lastSeen=()=>{try{return localStorage.getItem(LAST_SEEN_KEY)||''}catch{return''}};
+  const pickAfterLast=()=>{
+    const i=entries.findIndex(e=>String(e.id)===lastSeen());
+    return (i+1)%entries.length;
+  };
   function render(){
     mount.replaceChildren();
     if(!entries.length)return renderEmpty('The generated physics card feed has no available cards.');
     const e=entries[current];
+    try{localStorage.setItem(LAST_SEEN_KEY,String(e.id))}catch(_){}
     const shell=add(mount,node('article','icp-shell'));
     shell.setAttribute('data-infinity-concept-id',String(e.id));
     shell.id='infinity-concept-'+slug(e.id);
@@ -166,10 +175,11 @@
       if(catalog.schema!=='widgetphi.physics-seed/v1'||produced.schema!=='widgetphi.physics-built/v1')throw Error('Feed schema');
       const ids=new Set(Array.isArray(produced.generatedIds)?produced.generatedIds:[]);
       entries=(Array.isArray(catalog.experiments)?catalog.experiments:[])
-        .filter(e=>e&&ids.has(e.id)&&Number.isInteger(e.number)&&e.sources?.length&&e.steps?.length)
+        .filter(e=>e&&ids.has(e.id)&&Number.isInteger(e.number)&&e.sources?.length&&e.steps?.length&&artPath(e))
         .sort((a,b)=>a.number-b.number);
       const requested=window.location.hash.slice(1);
-      current=Math.max(0,entries.findIndex(e=>'infinity-concept-'+slug(e.id)===requested));render();
+      const linked=entries.findIndex(e=>'infinity-concept-'+slug(e.id)===requested);
+      current=linked>=0?linked:pickAfterLast();render();
       if(requested.startsWith('infinity-concept-')&&entries.some(e=>'infinity-concept-'+slug(e.id)===requested))
         requestAnimationFrame(()=>mount.scrollIntoView({block:'start'}));
     }catch(error){
@@ -177,6 +187,10 @@
       console.warn('Infinity concept reader:',error?.message||error);
     }finally{clearTimeout(stop)}
   }
+  mount.addEventListener('oracle:activate',()=>{
+    if(!entries.length||window.location.hash.startsWith('#infinity-concept-'))return;
+    current=pickAfterLast();render();
+  });
   window.addEventListener('hashchange',()=>{
     const requested=window.location.hash.slice(1);
     const target=entries.findIndex(e=>'infinity-concept-'+slug(e.id)===requested);
