@@ -3888,6 +3888,7 @@ const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker
 let progressPolling=false,progressUnavailable=false;
 let activeIterationTicketId=''; // Only a ticket submitted by this chat can update its Build role.
 let activeIterationThreadId='';
+const ACTIVE_WORK_REF='bubbles-last-active-work-v1';
 let ownerJobMarkers={}; // Dedup real signed per-job changes, never count polling as work.
 async function pollBrainProgress(){
  if(embedded||!ownerReady||!progressTracker||progressPolling)return;
@@ -3897,6 +3898,19 @@ async function pollBrainProgress(){
   const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
+  // A safe website/PWA update may reload during a pending repository job.
+  // The pointer becomes valid only when this owner's fresh signed list confirms it.
+  if(!activeIterationTicketId){
+   try{
+    const restored=JSON.parse(sessionStorage.getItem(ACTIVE_WORK_REF)||'null');
+    if(restored&&restored.thread===activeThread&&Number.isFinite(restored.at)&&
+       restored.at<=Date.now()&&Date.now()-restored.at<7*86400000&&
+       /^IW-[0-9]{8}-[A-Z0-9]{8}$/.test(restored.ticketId||'')){
+     const verified=result.tickets.find(ticket=>ticket?.id===restored.ticketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''));
+     if(verified){activeIterationTicketId=verified.id;activeIterationThreadId=activeThread;ownerJobMarkers={};}
+    }
+   }catch{/* Session storage blocked; verified live status still functions. */}
+  }
   // Unrelated historic/blocked Brain tickets are not this chat's execution result.
   const iterationTicket=activeIterationTicketId&&activeIterationThreadId===activeThread
    ?result.tickets.find(ticket=>ticket?.id===activeIterationTicketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
@@ -4024,6 +4038,10 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   activeIterationTicketId=result.ticket.id;
   activeIterationThreadId=typeof activeThread==='string'?activeThread:'';
   ownerJobMarkers={};
+  // Keep only a same-thread reference, never credentials or request text.
+  // Always revalidate against the current authenticated owner's backend.
+  try{sessionStorage.setItem(ACTIVE_WORK_REF,JSON.stringify({
+   ticketId:result.ticket.id,thread:activeIterationThreadId,at:Date.now()}));}catch{}
   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
    type:'job',repository,status:result.ticket.status,url:result.ticket.progress?.url||''}}));
   if(String(workText.value||'').trim()===request)workText.value='';
@@ -4331,9 +4349,22 @@ if(nativeOverlay){
  launcher.hidden=true;
  status.textContent='Bubbles website assistant · native microphone · owner wallet verification required for Brain jobs';
 }
+function requestAutomaticSiteUpdate(){
+ if(embedded||document.hidden)return;
+ // Update the installed Chrome/PWA shell without a button. Private chat
+ // content is never added to the public service worker's asset cache.
+ if(navigator.serviceWorker?.getRegistration){
+  void navigator.serviceWorker.getRegistration('/').then(reg=>reg?.update()).catch(()=>{});
+ }
+ // Recheck after focus/return; the existing conversation, drafts, photo and
+ // microphone safety gates decide if a page reload is currently allowed.
+ void checkForSiteUpdate();
+}
 if(!embedded&&typeof setInterval==='function'){
- // Both Chrome and APK can refresh their loaded page after a site deployment.
- setInterval(()=>{if(!document.hidden)void checkForSiteUpdate()},90000);
+ window.addEventListener('focus',requestAutomaticSiteUpdate);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)requestAutomaticSiteUpdate()});
+ setTimeout(requestAutomaticSiteUpdate,1200);
+ setInterval(requestAutomaticSiteUpdate,90000);
  // A short owner-scoped sync loop stops competing microphones and mirrors chat.
  setInterval(()=>{if(ownerReady){
   if(!busy)void sharedMemory();
