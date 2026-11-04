@@ -5,7 +5,7 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Phases 1 and 2 merged; real spendable Bits ledger and live production acceptance remain incomplete"
-sessions_spent: 5
+sessions_spent: 6
 sessions_remaining_estimate: unknown
 agent: ChatGPT
 lease_id: null
@@ -72,3 +72,14 @@ Owner's heartbeat metaphor mapped to the existing Bubbles/Brain signal: a pulse 
 - Added regression tests for sequence, deduplication, failure handling and missing technical receipt IDs. A completed technical step without a valid receipt stays **unverified**.
 - No new backend action emitters, settlement records, hardware control or external API permissions were added. Actual Cloudflare/GitHub operations must still produce authenticated receipts via existing or future tools. The Gits ledger remains a distinct proposed policy, not spendable currency or an assertion that all providers recognize it.
 - Work issue: https://github.com/www-infinity4/QuantaPhi/issues/1296. Source only; no verified real Bubbles Android receipt of these new tool labels, no deployment. Next action: check exact-head CI, and wire authenticated backend stage events if provider stage receipts exist; owner identity/wallet rollout remains separately gated.
+
+# Session 6 · 2026-11-04 UTC · direct GitHub read event wiring
+
+- Owner specifically requested actual Bubbles-to-Brain engineering, not another concept description. Reused issue #1296 with related #1192; no lease was claimed or another active branch overwritten.
+- Draft PR #1673: https://github.com/www-infinity4/QuantaPhi/pull/1673 ; branch fix/bubbles-verified-live-tool-steps-20261104.
+- RED proof: commit 05039ed5871c0a8b334a2fc2be2904e608cf1f1d, Bubbles unified CI run https://github.com/www-infinity4/QuantaPhi/actions/runs/41926396723 failed both new direct GitHub iteration tests before production code changed.
+- Implementation commits f0ef4286940a64a41206857bc02685ec79052bd6 and 258e3ba3795914eb6ba29453cb5cb7ca5f7de260 now emit tool_started/tool_progress/tool_receipt in the real authenticated direct GitHub read adapter and durable receipt watcher.
+- Browser request ID correlates observations only. Only matching real backend receipt tool/status/id can count as a candidate; no wallet mint, Gits settlement, or deployment claim.
+- Guarded optional observer calls for isolated Android/WebView adapter compatibility. GREEN exact-head CI remains unverified until actually observed.
+- Independently verified Cloudflare Brain Worker v94 at 100% Nov 4 22:10 UTC, but this new source PR is not deployed and there is no verified signed owner code-job acceptance.
+- Next: exact-head CI including owner WebView/receipt tests, independent review and gated release, then authentic same-conversation progress and phone readback. Keep D1 spending and full signed execution out of scope until proven.
