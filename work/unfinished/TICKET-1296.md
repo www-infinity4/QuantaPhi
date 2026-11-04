@@ -50,3 +50,15 @@ Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1296
 - Exact merged source: `447a34be60229766a60f999e66bafbeda5916d59`
 - Required CI green: Bubbles Bits, unified interface, shared-memory, Android draft-safety, picture/story, Quanta wallet regressions and Brain full diagnostic.
 - Source merge verified. Cloudflare deployment, spendable Bits settlement and live phone acceptance are not verified.
+
+# Session 4 · 2026-11-04 UTC · visible skill-like iteration feed
+
+Owner clarified that every Bubble Bit describes a **distinct, user-criteria-driven iteration**, similar to a reusable skill, not a generic counter. The small chat-reply status must show the current action as the iteration changes, with a detailed per-step drilldown.
+
+- Bounded UI branch: feature/bubbles-visible-bit-iterations-20261104; existing Bubbles chat, Claude transport recovery, owner authentication, voice, Android bridge, and wallet remain unchanged.
+- Added bubbles-live-iteration-feed.mjs and compact accessible CSS next to the existing Bubbles status on four website entrypoints. It consumes existing Bubbles iteration events. Context checks, GitHub reads, web searches, runner states, and future Cloudflare D1 actions can appear as their own recorded iterations rather than a generic replying message.
+- Entries support criteriaSummary, criteriaKey, operationId, resource, detail, tool name and receipt tail only when provided by actual events. Repeated receipt IDs are deduplicated. A visible item is observed activity, not automatically a spendable Bit; no client-side wallet writes.
+- Red→green local focused tests: 5 passed with node --test test/bubbles-live-bits.test.mjs; static entrypoint regression added for CI. PR exact-head CI, production Pages/Worker readback and Android acceptance are not yet verified.
+- The current browser-to-Worker adapter emits turn start, owner-context result, final tool receipt and job states. It does not yet emit all real in-flight provider switching or criteria metadata. D1 create/fetch/store labels are display-capable but absent until authenticated backend events exist. Never synthesize activity from model narration.
+- Existing issue remains open and dot YELLOW. No coordinator lease was claimed. Source-only frontend progress is staged; the wallet settlement portion remains incomplete and overall acceptance percentage unknown.
+- Next action: wire authenticated backend tool_started/tool_progress/tool_receipt events to the same signed per-turn operation ID and user-criteria fingerprint, then independently verify live status updates on phone. Authenticated transactional D1 settlement is separate.

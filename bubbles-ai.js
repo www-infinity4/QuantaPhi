@@ -2356,16 +2356,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    aiConsult[1].toLowerCase()==='claude'?'claude_only':'gemini_first';
   await consultExternalAi(aiConsult[2],mode,fromVoice);return;
  }
- // One character from the owner or the Android Bubbles bridge resumes
- // existing work. Archived text is context, NEVER new build authorization.
- if(spoken==='*'){
+ // An explicit short owner command (including '*') resumes existing saved work.
+ // Context and archived text NEVER grant new build permission. The existing
+ // signed owner session and Brain eligibility gates still control dispatch.
+ if(spoken==='*'||/^(?:continue|resume)(?:\s+(?:engineering|work))?(?:\s+please)?[.!]?$/i.test(spoken)){
   display(spoken,'you');clearSentComposer();
   messages.push({role:'user',text:spoken});persistChat();
   busy=true;send.disabled=true;setOrbState('busy');
   let reply,spokenResult='Blocked.';
   try{
    if(embedded)throw Error('verified_owner_session_required');
-   const module=await import('/bubbles-star-continuation.mjs?v=20261101-star-proof1');
+   const module=await import('/bubbles-star-continuation.mjs?v=20261104-owner-continue2');
    const result=await module.continueSavedWork({
     fetcher:bubblesFetch,ownerHeaders:verifiedOwnerHeaders,base:BRAIN,maxSlots:8
    });
@@ -3387,6 +3388,38 @@ screenShareButton.setAttribute('aria-pressed','false');
 screenShareButton.addEventListener('click',()=>void sendMessage((nativeOverlay?nativeScreenSharing:pageScreenSharing)?'stop screen sharing':'start screen sharing'));
 tools.append(screenShareButton);
 const pendingGithubReceipts=new Set();
+const GITHUB_PENDING_KEY='bubbles-pending-github-work-v1';
+const githubResumeStarted=new Set();
+function readPendingGithubWork(){
+ try{
+  const saved=JSON.parse(sessionStorage.getItem(GITHUB_PENDING_KEY)||'[]');
+  if(!Array.isArray(saved))return [];
+  return saved.filter(x=>x&&typeof x.thread==='string'&&/^[a-zA-Z0-9_-]{1,100}$/.test(x.thread)&&
+   typeof x.requestId==='string'&&/^[0-9a-f-]{36}$/i.test(x.requestId)&&
+   Number.isFinite(x.at)&&x.at<=Date.now()&&Date.now()-x.at<86400000).slice(-6);
+ }catch{return []}
+}
+function rememberPendingGithubWork(requestId,thread){
+ try{
+  const rows=readPendingGithubWork().filter(x=>x.requestId!==requestId);
+  rows.push({requestId,thread,at:Date.now()});
+  sessionStorage.setItem(GITHUB_PENDING_KEY,JSON.stringify(rows.slice(-6)));
+ }catch{/* Browser storage optional; receipt watching runs in memory. */}
+}
+function clearPendingGithubWork(requestId){
+ try{sessionStorage.setItem(GITHUB_PENDING_KEY,
+  JSON.stringify(readPendingGithubWork().filter(x=>x.requestId!==requestId)))}catch{}
+}
+function resumePendingGithubReceipts(){
+ // A saved opaque request ID is not authorization. The current verified owner
+ // must read the actual receipt from Brain before a result is displayed.
+ for(const restored of readPendingGithubWork()){
+  if(restored.thread!==activeThread)continue;
+  if(githubResumeStarted.has(restored.requestId))continue;
+  githubResumeStarted.add(restored.requestId);
+  watchDirectGithubReceipt(restored.requestId,null,'');
+ }
+}
 async function githubReceipt(requestId){
  const headers=await verifiedOwnerHeaders();
  const r=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
@@ -3417,6 +3450,7 @@ async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEv
 function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence=''){
  if(pendingGithubReceipts.has(requestId))return;
  const receiptThread=activeThread;
+ rememberPendingGithubWork(requestId,receiptThread);
  pendingGithubReceipts.add(requestId);
  void (async()=>{
   try{
@@ -3425,6 +3459,7 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
     let result;
     try{result=await githubReceipt(requestId);}catch{continue;}
     if(result.status==='working'||result.error==='receipt_not_found')continue;
+    clearPendingGithubWork(requestId);
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
     const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
@@ -3888,6 +3923,8 @@ const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker
 let progressPolling=false,progressUnavailable=false;
 let activeIterationTicketId=''; // Only a ticket submitted by this chat can update its Build role.
 let activeIterationThreadId='';
+const ACTIVE_WORK_REF='bubbles-last-active-work-v1';
+let ownerJobMarkers={}; // Dedup real signed per-job changes, never count polling as work.
 async function pollBrainProgress(){
  if(embedded||!ownerReady||!progressTracker||progressPolling)return;
  progressPolling=true;
@@ -3896,15 +3933,44 @@ async function pollBrainProgress(){
   const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
+  // A sign-out, wallet/account switch or re-pair during the network wait must
+  // not project a prior owner's ticket into the newly active chat.
+  if(!ownerReady||ownerHeaders!==headers)return;
+  // A safe website/PWA update may reload during a pending repository job.
+  // The pointer becomes valid only when this owner's fresh signed list confirms it.
+  if(!activeIterationTicketId){
+   try{
+    const restored=JSON.parse(sessionStorage.getItem(ACTIVE_WORK_REF)||'null');
+    if(restored&&restored.thread===activeThread&&Number.isFinite(restored.at)&&
+       restored.at<=Date.now()&&Date.now()-restored.at<7*86400000&&
+       /^IW-[0-9]{8}-[A-Z0-9]{8}$/.test(restored.ticketId||'')){
+     const verified=result.tickets.find(ticket=>ticket?.id===restored.ticketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''));
+     if(verified){activeIterationTicketId=verified.id;activeIterationThreadId=activeThread;ownerJobMarkers={};}
+    }
+   }catch{/* Session storage blocked; verified live status still functions. */}
+  }
   // Unrelated historic/blocked Brain tickets are not this chat's execution result.
   const iterationTicket=activeIterationTicketId&&activeIterationThreadId===activeThread
    ?result.tickets.find(ticket=>ticket?.id===activeIterationTicketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
    :null;
-  if(iterationTicket)if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
-   type:'job',repository:iterationTicket.repository,status:iterationTicket.status,
-   url:iterationTicket.progress?.url||''}}));
+  if(iterationTicket){
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+    type:'job',repository:iterationTicket.repository,status:iterationTicket.status,
+    url:iterationTicket.progress?.url||''}}));
+   try{
+    // Verified owner ticket list, not a model answer, supplies these steps.
+    const {projectVerifiedJobTransitions}=await import('/bubbles-brain-job-steps.mjs?v=20261104-owner-steps1');
+    const projection=projectVerifiedJobTransitions(iterationTicket,ownerJobMarkers);
+    ownerJobMarkers=projection.markers;
+    if(typeof CustomEvent==='function')for(const step of projection.events){
+     if(!ownerReady||ownerHeaders!==headers||activeIterationThreadId!==activeThread)break;
+     window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:step}));
+    }
+   }catch{/* Optional display must not interrupt authenticated ticket polling. */}
+  }
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
   brainConnectionState('Connected · Work status available in Options', 'connected');
+  resumePendingGithubReceipts();
   if(!brainInboxInitialized){
    brainInboxInitialized=true;
    recordBrainNotice('Work history is connected. Detailed receipts are available here; waiting and running are not the same as finished.');
@@ -4010,6 +4076,11 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||'No confirmed request'));
   activeIterationTicketId=result.ticket.id;
   activeIterationThreadId=typeof activeThread==='string'?activeThread:'';
+  ownerJobMarkers={};
+  // Keep only a same-thread reference, never credentials or request text.
+  // Always revalidate against the current authenticated owner's backend.
+  try{sessionStorage.setItem(ACTIVE_WORK_REF,JSON.stringify({
+   ticketId:result.ticket.id,thread:activeIterationThreadId,at:Date.now()}));}catch{}
   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
    type:'job',repository,status:result.ticket.status,url:result.ticket.progress?.url||''}}));
   if(String(workText.value||'').trim()===request)workText.value='';
@@ -4317,9 +4388,22 @@ if(nativeOverlay){
  launcher.hidden=true;
  status.textContent='Bubbles website assistant · native microphone · owner wallet verification required for Brain jobs';
 }
+function requestAutomaticSiteUpdate(){
+ if(embedded||document.hidden)return;
+ // Update the installed Chrome/PWA shell without a button. Private chat
+ // content is never added to the public service worker's asset cache.
+ if(navigator.serviceWorker?.getRegistration){
+  void navigator.serviceWorker.getRegistration('/').then(reg=>reg?.update()).catch(()=>{});
+ }
+ // Recheck after focus/return; the existing conversation, drafts, photo and
+ // microphone safety gates decide if a page reload is currently allowed.
+ void checkForSiteUpdate();
+}
 if(!embedded&&typeof setInterval==='function'){
- // Both Chrome and APK can refresh their loaded page after a site deployment.
- setInterval(()=>{if(!document.hidden)void checkForSiteUpdate()},90000);
+ window.addEventListener('focus',requestAutomaticSiteUpdate);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)requestAutomaticSiteUpdate()});
+ setTimeout(requestAutomaticSiteUpdate,1200);
+ setInterval(requestAutomaticSiteUpdate,90000);
  // A short owner-scoped sync loop stops competing microphones and mirrors chat.
  setInterval(()=>{if(ownerReady){
   if(!busy)void sharedMemory();
