@@ -3,52 +3,262 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T17:31:21.537210Z",
+  "checked_at": "2026-11-04T18:01:27.959250Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "fenerbahçe",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T17:00:00Z",
+      "query": "oil prices today",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T17:40:00Z",
       "related_news_urls": [
-        "https://www.fanatik.com.tr/fenerbahce/live-fenerbahce-liverpool-maci-ne-zaman-saat-kacta-hangi-kanalda-2643330",
-        "https://www.hurriyet.com.tr/sporarena/galeri-trt-1-canli-mac-izleme-ekrani-fenerbahce-sampiyonlar-ligi-maci-hangi-kanalda-sifresiz-mi-nereden-izlenir-trt-1-yayin-akisi-ve-43366078",
-        "https://www.kayserihaber.com/4-kasim-2026-bu-aksam-hangi-maclar-var-mac-programi-saat-kacta"
+        "https://www.wsj.com/business/energy-oil/oil-prices-rise-as-investors-weigh-u-s-midterm-results-iran-risks-1d97da8a",
+        "https://www.cnbc.com/2026/11/04/oil-us-midterm-election-results.html",
+        "https://www.ft.com/content/b526f876-810a-4e74-8b8d-4ffca04b29c7?syn-25a6b1a6=1"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtvxhJ3ZofKZ6vP5PVTVRZ9De6leOXlRt16YWf605UVC786SaJUj3K6xtiKcY",
-      "image_credit": "Fanatik",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGpXAGKYHvK3iT-i4L3c56QId1ps2SRiJm-TsLfpNk8wTDmNJTFtAAYITVe8U",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://www.fanatik.com.tr/fenerbahce/live-fenerbahce-liverpool-maci-ne-zaman-saat-kacta-hangi-kanalda-2643330",
-          "title": "🚨 İLK 11'LER BELLİ OLDU! | Fenerbahçe - Liverpool maçı ne zaman, saat kaçta, hangi kanalda? (Şampiyonlar Ligi)",
-          "publisher": "Fanatik",
+          "url": "https://www.wsj.com/business/energy-oil/oil-prices-rise-as-investors-weigh-u-s-midterm-results-iran-risks-1d97da8a",
+          "title": "Oil Prices Fall as Investors Weigh U.S. Midterm Results, Iran Risks",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtvxhJ3ZofKZ6vP5PVTVRZ9De6leOXlRt16YWf605UVC786SaJUj3K6xtiKcY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGpXAGKYHvK3iT-i4L3c56QId1ps2SRiJm-TsLfpNk8wTDmNJTFtAAYITVe8U"
         },
         {
-          "url": "https://www.hurriyet.com.tr/sporarena/galeri-trt-1-canli-mac-izleme-ekrani-fenerbahce-sampiyonlar-ligi-maci-hangi-kanalda-sifresiz-mi-nereden-izlenir-trt-1-yayin-akisi-ve-43366078",
-          "title": "TRT 1 CANLI MAÇ İZLEME EKRANI || Fenerbahçe Şampiyonlar Ligi maçı hangi kanalda, şifresiz mi, nereden izlenir? TRT 1 yayın akışı ve güncel frekans ayarı...",
-          "publisher": "Hürriyet",
+          "url": "https://www.cnbc.com/2026/11/04/oil-us-midterm-election-results.html",
+          "title": "Oil falls on Iran war uncertainty, US Democrats' midterm sweep",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhbAILfbgZ6Uvh_jW046ExNUS0-s9JA_w4c2jZ0n7MGJ9rorTiMhDK6_Yb4I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwZ4Qq1ewLbksDHP3mfCKr2C7DAH0VfdljQqQnlTn4k19Z3F8Q_bdAb8pbkis"
         },
         {
-          "url": "https://www.kayserihaber.com/4-kasim-2026-bu-aksam-hangi-maclar-var-mac-programi-saat-kacta",
-          "title": "4 Kasım 2026 bu akşam hangi maçlar var, maç programı saat kaçta? Fenerbahçe Liverpool maçı saat kaçta, hangi kanalda?",
-          "publisher": "kayserihaber.com",
+          "url": "https://www.ft.com/content/b526f876-810a-4e74-8b8d-4ffca04b29c7?syn-25a6b1a6=1",
+          "title": "Oil prices tumble below $100 on post-election peace hopes",
+          "publisher": "Financial Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ95GUUXe3O7B7glqnEZ3SeNhBdAAPHn0ROjDNqDsezXG671hiMse2Frl64Sk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6WNbNAzg9oObUuMRoUo2iHQC_13rGbTqbiuR7sLfuHfMVJ0cXj2H3ftmyrs0"
+        }
+      ]
+    },
+    {
+      "query": "garrett wilson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T17:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-04/garrett-wilson-placed-in-concussion-protocol",
+        "https://bleacherreport.com/articles/25529316-garrett-wilson-injured-latest-updates-jets-wrs-status-vs-chiefs-after-concussion",
+        "https://www.thescore.com/nfl/news/3645036/jets-wr-wilson-enters-concussion-protocol-considered-day-to-day"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj2bgBlB23U6H2df5kErntdugCefXHhc8996e3xWL8qK6Q6cWD6RZUC0Hmt6g",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-04/garrett-wilson-placed-in-concussion-protocol",
+          "title": "Garrett Wilson placed in concussion protocol",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj2bgBlB23U6H2df5kErntdugCefXHhc8996e3xWL8qK6Q6cWD6RZUC0Hmt6g"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529316-garrett-wilson-injured-latest-updates-jets-wrs-status-vs-chiefs-after-concussion",
+          "title": "Garrett Wilson Injured, Latest Updates on Jets WR's Status vs. Chiefs After Concussion",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRXzudqAyvx181-BhU_g315rdRSO1A4m3mwYM_FogvinbqZEB1lvQC7zLTthU"
+        },
+        {
+          "url": "https://www.thescore.com/nfl/news/3645036/jets-wr-wilson-enters-concussion-protocol-considered-day-to-day",
+          "title": "Jets' Wilson enters concussion protocol, considered day-to-day",
+          "publisher": "theScore",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReo1IwJ__a0UGEug7T1USN6du9D2xrQ-eXWGpX93CangWFVi9OzqYlJTuaD9o"
+        }
+      ]
+    },
+    {
+      "query": "real madrid vs aek athens",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T17:30:00Z",
+      "related_news_urls": [
+        "https://en.as.com/soccer/valverde-injury-opens-door-for-trent-alexander-arnold-and-dumfries-at-real-madrid-f202611-n/",
+        "https://www.goal.com/en/news/a-huge-boost-mourinho-regains-a-key-star-ahead-of-the-aek-athens-clash/blt89cafc7b8ecf32f3",
+        "https://www.managingmadrid.com/114872/valverde-expected-to-miss-sundays-match-against-racing-santander"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9ceZRpn4w0DuEEpTammxbtvh_x1c4MyRil2Pxvcp2xu-8Nfd1OeBgtCRG4K4",
+      "image_credit": "Diario AS",
+      "news": [
+        {
+          "url": "https://en.as.com/soccer/valverde-injury-opens-door-for-trent-alexander-arnold-and-dumfries-at-real-madrid-f202611-n/",
+          "title": "Valverde injury opens door for Trent Alexander-Arnold and Dumfries at Real Madrid",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9ceZRpn4w0DuEEpTammxbtvh_x1c4MyRil2Pxvcp2xu-8Nfd1OeBgtCRG4K4"
+        },
+        {
+          "url": "https://www.goal.com/en/news/a-huge-boost-mourinho-regains-a-key-star-ahead-of-the-aek-athens-clash/blt89cafc7b8ecf32f3",
+          "title": "A huge boost: Mourinho regains a key star ahead of the AEK Athens clash",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQH9D1rqMzTeYZ4u-LJi2La8pDOrvW9pEAw78MmHQcIpAbt88D9q2VGHFPOVwQ"
+        },
+        {
+          "url": "https://www.managingmadrid.com/114872/valverde-expected-to-miss-sundays-match-against-racing-santander",
+          "title": "Valverde expected to miss Sunday’s match against Racing Santander",
+          "publisher": "Managing Madrid",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmizvs5Fpe9KTHOGV8CbS8g0EtwC6ZoO__vmZgRtESPL6xnUnSJMwRbL5Ib8s"
+        }
+      ]
+    },
+    {
+      "query": "liverpool vs fenerbahce",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T17:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50379484/fenerbahce-liverpool-live-champions-league-latest-updates-commentary-score-result",
+        "https://www.reuters.com/sports/soccer/gravenberch-misses-fenerbahce-clash-weekend-return-possible-says-iraola-2026-11-03/",
+        "https://sports.yahoo.com/articles/liverpool-coach-admits-pointed-difference-115000239.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAhdMx5-To-J_Ql25IXaP6Mv3l_7a4ucE9nnHY5-s8tOob5LtHJzw6sXvMing",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50379484/fenerbahce-liverpool-live-champions-league-latest-updates-commentary-score-result",
+          "title": "Fenerbahce vs. Liverpool LIVE: Champions League updates as Reds look to bounce back",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAhdMx5-To-J_Ql25IXaP6Mv3l_7a4ucE9nnHY5-s8tOob5LtHJzw6sXvMing"
+        },
+        {
+          "url": "https://www.reuters.com/sports/soccer/gravenberch-misses-fenerbahce-clash-weekend-return-possible-says-iraola-2026-11-03/",
+          "title": "Gravenberch misses Fenerbahce clash but weekend return possible, says Iraola",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSoq-oR8pPen44UpuFMZMkn1tjxzrjNLFNpcxCraAdbVA1xCmTSZIYAq4NQo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/liverpool-coach-admits-pointed-difference-115000239.html",
+          "title": "Liverpool coach admits pointed difference between domestic and European form",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQn0PkPt_2PzAbXWZEKhbbY6y8Dgu5xiLrhjvvikAAlkL7t6WnOjs95521TZo"
+        }
+      ]
+    },
+    {
+      "query": "katherine clark",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T17:10:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/04/nation/house-democrats-won-house-what-happens-now/",
+        "https://www.npr.org/2026/11/03/nx-s1-6028015/rep-katherine-clark-says-democrats-are-on-track-to-win-control-of-the-house-tonight",
+        "https://www.wbur.org/news/2026/11/04/katherine-clark-congress-democrat-election"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQabypbcbVpldDkgwX8yWR0TiKRJiFKeXiomV7EoC--cnv_PHjMg54f6RFktag",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/04/nation/house-democrats-won-house-what-happens-now/",
+          "title": "Clark and House Democratic leadership made history and won the majority. Now they face the real test: how to use it.",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQabypbcbVpldDkgwX8yWR0TiKRJiFKeXiomV7EoC--cnv_PHjMg54f6RFktag"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/03/nx-s1-6028015/rep-katherine-clark-says-democrats-are-on-track-to-win-control-of-the-house-tonight",
+          "title": "Rep. Katherine Clark says Democrats are on track to win control of the House tonight",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSotgGkf4uo_tNbz2OlxLQGZmJ4KFf7NxV_KsFNuegGO-XyT-sfR6slXSFXsyw"
+        },
+        {
+          "url": "https://www.wbur.org/news/2026/11/04/katherine-clark-congress-democrat-election",
+          "title": "Rep. Clark, poised to become House Majority Leader, talks priorities as Democrats take Congress",
+          "publisher": "WBUR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0N4L8RUTNv1d9ldGl4O2njrl8EJE0oIPjJwH7n-IaB0Nj7H7Uif_xI4yU2SM"
+        }
+      ]
+    },
+    {
+      "query": "aek athènes – real madrid",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T17:10:00Z",
+      "related_news_urls": [
+        "https://www.footmercato.net/a3395918815723227440-real-madrid-cinq-absents-face-a-laek-athenes-en-ligue-des-champions",
+        "https://interaktiv.tagesanzeiger.ch/2016/plaine-morte/panos/camp/camp.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vYW5nZWxkYWluYTYuZ2l0aHViLmlvL3NhLnNwb3J0cy9zcHMueG1sIi8+PC9rcnBhbm8+&id=video-ligue-des-champions-2026-liv-str-ytnisel",
+        "https://africatopsports.com/football-europe/ligue-des-champions-uefa-les-compositions-probables-du-match-aek-vs-real-madrid/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3pQqirLCm3n3WwMVNPKcN9YjUpkx4ik5hbR_Fw-EVdNvTvL8IPYtJMm50U8g",
+      "image_credit": "Foot Mercato",
+      "news": [
+        {
+          "url": "https://www.footmercato.net/a3395918815723227440-real-madrid-cinq-absents-face-a-laek-athenes-en-ligue-des-champions",
+          "title": "Real Madrid : cinq absents face à l’AEK Athènes en Ligue des Champions",
+          "publisher": "Foot Mercato",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3pQqirLCm3n3WwMVNPKcN9YjUpkx4ik5hbR_Fw-EVdNvTvL8IPYtJMm50U8g"
+        },
+        {
+          "url": "https://interaktiv.tagesanzeiger.ch/2016/plaine-morte/panos/camp/camp.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vYW5nZWxkYWluYTYuZ2l0aHViLmlvL3NhLnNwb3J0cy9zcHMueG1sIi8+PC9rcnBhbm8+&id=video-ligue-des-champions-2026-liv-str-ytnisel",
+          "title": "[[DIRECT/LIVE]] Ligue des champions 2026 En Direct Streaming 28.07.2026",
+          "publisher": "tagesanzeiger.ch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThRcR4SgQt9-aQPbBnyZV2fwEWWS1ZmLVYjehMLY6Lhq5SDy0SyJdWJR2Cr0k"
+        },
+        {
+          "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-les-compositions-probables-du-match-aek-vs-real-madrid/",
+          "title": "Ligue des Champions UEFA : les compositions probables du match AEK vs Real Madrid !",
+          "publisher": "Africa Top Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSol-NrDEowqgOX67bTJXMDpViVLikuRfw2uoAXmfbMZv1l5APvOVUyREehDOs"
+        }
+      ]
+    },
+    {
+      "query": "fenerbahçe",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T17:00:00Z",
+      "related_news_urls": [
+        "https://www.sozcu.com.tr/arda-turan-ve-emre-belozoglu-sampiyonlar-ligi-tarihine-gececek-p375878",
+        "https://www.afyonanahaber.com.tr/spor/fenerbahce-shakhtar-donetsk-maci-ne-zaman-saat-kacta-nerede-oynanacak/403453",
+        "https://www.goal.com/tr/biletler-seyahatler/ma%C3%A7i/shakhtar-donetsk-fenerbahce-macina-bilet-nasil-alinir-sampiyonlar-ligi-bilet-fiyatlari-mac-bilgileri-son-dakika-bilet-satislari-ve-daha-fazlasi/A~blt529a14a739f015e3"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVRMNcy7nth1dOVqxK7ZUNJW1G3TglLfD9xum3nyNMyQu9bG28h9sZZG8mekk",
+      "image_credit": "Sözcü Gazetesi",
+      "news": [
+        {
+          "url": "https://www.sozcu.com.tr/arda-turan-ve-emre-belozoglu-sampiyonlar-ligi-tarihine-gececek-p375878",
+          "title": "Arda Turan ve Emre Belözoğlu Şampiyonlar Ligi tarihine geçecek",
+          "publisher": "Sözcü Gazetesi",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVRMNcy7nth1dOVqxK7ZUNJW1G3TglLfD9xum3nyNMyQu9bG28h9sZZG8mekk"
+        },
+        {
+          "url": "https://www.afyonanahaber.com.tr/spor/fenerbahce-shakhtar-donetsk-maci-ne-zaman-saat-kacta-nerede-oynanacak/403453",
+          "title": "Fenerbahçe Shakhtar Donetsk maçı ne zaman, saat kaçta, nerede oynanacak?",
+          "publisher": "Afyon Ana Haber",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1119H6tPOR4pU4waxkePxoXBLBhNAmQJh8mZh52Bu52mFkyc1r8F53rnQgpU"
+        },
+        {
+          "url": "https://www.goal.com/tr/biletler-seyahatler/ma%C3%A7i/shakhtar-donetsk-fenerbahce-macina-bilet-nasil-alinir-sampiyonlar-ligi-bilet-fiyatlari-mac-bilgileri-son-dakika-bilet-satislari-ve-daha-fazlasi/A~blt529a14a739f015e3",
+          "title": "Shakhtar Donetsk - Fenerbahçe maçına bilet nasıl alınır? UEFA Şampiyonlar Ligi bilet fiyatları, maç bilgileri, son dakika satışları ve daha fazlası",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbl8GPEELl5nAJeVYFUMoibE0rEa4x0IHJ8kJLturdLrc5FsObAwynraRxuq4"
         }
       ]
     },
     {
       "query": "aek vs real madrid",
-      "approx_searches": "20000+",
+      "approx_searches": "50000+",
       "published_at": "2026-11-04T16:50:00Z",
       "related_news_urls": [
         "https://www.si.com/soccer/aek-athens-vs-real-madrid-preview-predictions-lineups-11-4-26",
-        "https://www.managingmadrid.com/115097/aek-athens-vs-real-madrid-2026-champions-league-live-online-stream",
-        "https://www.realmadrid.com/en-US/news/football/first-team/press-conference/mourinho-xxxx-03-11-2026"
+        "https://www.realmadrid.com/en-US/news/football/first-team/press-conference/mourinho-xxxx-03-11-2026",
+        "https://www.bbc.com/sport/football/live/cm70pvdg5wvrt"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJgDEf1WeK6G4YsSUaZf_M6tEbpTN3hJYv1FhczxA69sGfpc9R2bNbVgVjbrw",
       "image_credit": "Sports Illustrated",
@@ -61,29 +271,64 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJgDEf1WeK6G4YsSUaZf_M6tEbpTN3hJYv1FhczxA69sGfpc9R2bNbVgVjbrw"
         },
         {
-          "url": "https://www.managingmadrid.com/115097/aek-athens-vs-real-madrid-2026-champions-league-live-online-stream",
-          "title": "CONFIRMED lineups: AEK Athens vs Real Madrid, 2026 Champions League",
-          "publisher": "Managing Madrid",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3QV0hBKqX27mJcoG7JbJF1Qe09RBXSbB5BvZ-0JYNo5B2jkhFWXBA7Oa3sBQ"
-        },
-        {
           "url": "https://www.realmadrid.com/en-US/news/football/first-team/press-conference/mourinho-xxxx-03-11-2026",
           "title": "Mourinho: \"We need to play at our best, stay focused, and maintain our level of play\"",
           "publisher": "Real Madrid CF | Web Oficial",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXg5-8MIr7TcexTX2JvuYOt5cdoAtH0WMdmBO5YBPBIFs_A7OTioKz5uVA_Kg"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/live/cm70pvdg5wvrt",
+          "title": "AEK Athens vs Real Madrid: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQM0NKo_65Pk-Q-RuHkqXyCAJSnk5xVvzgObxNE6Cd7GPtlaHmGIhZf2RmjI7k"
+        }
+      ]
+    },
+    {
+      "query": "aek - real madrid",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-04T16:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50329182/real-madrid-liverpool-manchester-city-arsenal",
+        "https://www.cbssports.com/soccer/news/champions-league-scores-live-updates-real-madrid-liverpool-man-city-arsenal/live/",
+        "https://www.si.com/soccer/champions-league-predictions-real-madrid-liverpool-maintain-perfection"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu35QFaNMeHSh3EThxjKtxR7i5rzHVjnGNHKnRHDPCkx_fFMshGOLZQS7ooUM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50329182/real-madrid-liverpool-manchester-city-arsenal",
+          "title": "Champions League live updates: Real Madrid, Liverpool in action in early matches",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu35QFaNMeHSh3EThxjKtxR7i5rzHVjnGNHKnRHDPCkx_fFMshGOLZQS7ooUM"
+        },
+        {
+          "url": "https://www.cbssports.com/soccer/news/champions-league-scores-live-updates-real-madrid-liverpool-man-city-arsenal/live/",
+          "title": "Champions League scores: Live updates as Real Madrid, Liverpool headline early window; Man City, Arsenal later",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcxWSp9cF6bk99cB2moRYS5zCeZkEVJZrP15oxiIraQ-5YqSR0EXJwmIxkTH4"
+        },
+        {
+          "url": "https://www.si.com/soccer/champions-league-predictions-real-madrid-liverpool-maintain-perfection",
+          "title": "Champions League Predictions 11/4: Real Madrid, Liverpool Aiming to Maintain Perfection",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWfHxhh6v4tYkxQD_3RDuaNqXZygUg4-mnVgwqMHLGGLEKWqdLAqDRXWgc5Pg"
         }
       ]
     },
     {
       "query": "fenerbahçe vs liverpool",
-      "approx_searches": "10000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-04T16:50:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/c6rmy8zvwnryt",
         "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-fenerbahce",
-        "https://www.usatoday.com/story/sports/soccer/ucl/2026/11/04/florian-wirtz-liverpool-fenerbahce-lineup-bench/92610751007/"
+        "https://www.cnet.com/tech/services-and-software/fenerbahce-vs-liverpool-livestream-champions-league-soccer-from-anywhere/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWRvs4WutdiH7dZXajL3vcI9c-9ZdivLWau3vmU1gn1Fhu0KuJy0onD3R0XAw",
       "image_credit": "BBC",
@@ -103,256 +348,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9vny2c0YqKdwjbkoY7BjeM3aGBN8epURBZRL_EoP9UA_yQAoFcb2LBOTC2Io"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/soccer/ucl/2026/11/04/florian-wirtz-liverpool-fenerbahce-lineup-bench/92610751007/",
-          "title": "Why isn't Florian Wirtz starting for Liverpool vs. Fenerbahçe today?",
-          "publisher": "USA Today",
+          "url": "https://www.cnet.com/tech/services-and-software/fenerbahce-vs-liverpool-livestream-champions-league-soccer-from-anywhere/",
+          "title": "Fenerbahçe vs. Liverpool: Livestream Champions League Soccer From Anywhere",
+          "publisher": "CNET",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHCxgDC397Bru7tgBwj_g7zgnjFqq2zL6VgaPUXVrLXHl4tA8c0SoTqw1IAfM"
-        }
-      ]
-    },
-    {
-      "query": "fenerbahçe - liverpool",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T16:50:00Z",
-      "related_news_urls": [
-        "https://www.sozcu.com.tr/fenerbahce-liverpool-macinda-gol-yagmuru-p375988",
-        "https://www.ntvspor.net/futbol/galeri-uefa-genclik-ligindeki-fenerbahce-liverpool-macinda-8-gol-432454",
-        "https://www.sondakika.com/spor/haber-fenerbahcede-cagri-baltadan-olay-hareket-20395705/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQosKrrNogzxkiq2Et5Z9TfMnu60gsQ7vXsIsRbJMStcQqC-U7Ia2NAxLRw88M",
-      "image_credit": "Sözcü Gazetesi",
-      "news": [
-        {
-          "url": "https://www.sozcu.com.tr/fenerbahce-liverpool-macinda-gol-yagmuru-p375988",
-          "title": "Fenerbahçe-Liverpool maçında gol yağmuru",
-          "publisher": "Sözcü Gazetesi",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQosKrrNogzxkiq2Et5Z9TfMnu60gsQ7vXsIsRbJMStcQqC-U7Ia2NAxLRw88M"
-        },
-        {
-          "url": "https://www.ntvspor.net/futbol/galeri-uefa-genclik-ligindeki-fenerbahce-liverpool-macinda-8-gol-432454",
-          "title": "UEFA Gençlik Ligi'ndeki Fenerbahçe-Liverpool maçında 8 gol",
-          "publisher": "NTVSpor",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmLfTau5GGm_doaOkZxxeSfYUlim9vaqh9yOS8adOmm0tIub8Phr2LvcJCiEc"
-        },
-        {
-          "url": "https://www.sondakika.com/spor/haber-fenerbahcede-cagri-baltadan-olay-hareket-20395705/",
-          "title": "Fenerbahçe'de Çağrı Balta'dan olay hareket! Formasını çıkarıp gitti",
-          "publisher": "Son Dakika",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSww6CU_k5_JoieVHDty6tgqCBOZQuena2BZuELRiolKYmqPXmb6XVrh2GpWYw"
-        }
-      ]
-    },
-    {
-      "query": "djokovic",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T16:50:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/djokovic-vacherot-paris-2026-tuesday",
-        "https://www.bbc.com/sport/tennis/articles/c3n04nzv1n21o",
-        "https://www.reuters.com/sports/tennis/djokovic-becomes-oldest-paris-masters-match-winner-keeps-atp-finals-hopes-alive-2026-11-03/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzyZkUH94_jLzLzedqZhMDtlph0GhQWYW9sEVzSVOQd01LSdoyjJvo8uXIoq4",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/djokovic-vacherot-paris-2026-tuesday",
-          "title": "Djokovic battles past Vacherot in Paris, maintains Turin hopes",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzyZkUH94_jLzLzedqZhMDtlph0GhQWYW9sEVzSVOQd01LSdoyjJvo8uXIoq4"
-        },
-        {
-          "url": "https://www.bbc.com/sport/tennis/articles/c3n04nzv1n21o",
-          "title": "Paris Masters: Novak Djokovic through to keep alive bid for place at ATP Finals",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnGOc_dFSXH8-RbW5-M5RBhbI-HnXJeY-__pPOpCmv1pSAAzweK0rQs2kCc2g"
-        },
-        {
-          "url": "https://www.reuters.com/sports/tennis/djokovic-becomes-oldest-paris-masters-match-winner-keeps-atp-finals-hopes-alive-2026-11-03/",
-          "title": "Djokovic becomes oldest Paris Masters match winner, keeps ATP Finals hopes alive",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-28W5dpZLjdmdyEOys_j57kWuPXLQaMx8xvKOvlrVCklDadh18UPbsh5CyPI"
-        }
-      ]
-    },
-    {
-      "query": "rinky hijikata",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T16:50:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/video/hot-shot-how-did-hijikata-win-this-point-vs-djokovic-in-paris-2026",
-        "https://sports.yahoo.com/articles/novak-djokovic-atp-finals-hopes-170644321.html",
-        "https://www.syracuse.com/tv/2026/11/where-to-watch-novak-djokovics-second-round-match-at-rolex-paris-masters-for-free-today.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn1VqKN5ANDUZkX4MKN5krJLh2Lq6y40_Z6SPct72fZpK-NXGCvpLJPF7PH5Q",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/video/hot-shot-how-did-hijikata-win-this-point-vs-djokovic-in-paris-2026",
-          "title": "Hot Shot: How did Hijikata win this point vs. Djokovic in Paris 2026",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn1VqKN5ANDUZkX4MKN5krJLh2Lq6y40_Z6SPct72fZpK-NXGCvpLJPF7PH5Q"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/novak-djokovic-atp-finals-hopes-170644321.html",
-          "title": "Novak Djokovic’s ATP Finals hopes brought to stunning end in huge Paris shock",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSM_RqzyM-O2Aafx3jqBuZf5zoVdMKal488iAqMZa02_rSddE2TzvqX8UfYIM"
-        },
-        {
-          "url": "https://www.syracuse.com/tv/2026/11/where-to-watch-novak-djokovics-second-round-match-at-rolex-paris-masters-for-free-today.html",
-          "title": "Where to watch Novak Djokovic’s second round match at Rolex Paris Masters for free today",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8plbkWmTSlWTezWYXsAMtLSKV2wm7n0tARH_nqkOn0BvPgp5aHVhNbz6yCvY"
-        }
-      ]
-    },
-    {
-      "query": "jessica chastain",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T16:40:00Z",
-      "related_news_urls": [
-        "https://www.thatericalper.com/2026/11/03/carter-faith-makes-her-acting-debut-alongside-jessica-chastain-in-netflixs-heartland-and-shares-new-song-still-the-sparrow-sings/",
-        "https://www.universalmusic.ca/2026/10/30/carter-faith-unveils-still-the-sparrow-sings-written-and-performed-for-her-role-in-netflixs-heartland/",
-        "https://www.antimusic.com/p/26/c1030watch_carter_faith_perform_new_song_still_the_sparrow_sings_at_the_bluebird_cafe.shtml"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZg5a_bc6YKb5jd-V8-UVJidMnG_tPkvOjzJPsMAa0mRLzhZsJL0wnUIa3CYg",
-      "image_credit": "That Eric Alper",
-      "news": [
-        {
-          "url": "https://www.thatericalper.com/2026/11/03/carter-faith-makes-her-acting-debut-alongside-jessica-chastain-in-netflixs-heartland-and-shares-new-song-still-the-sparrow-sings/",
-          "title": "Carter Faith Makes Her Acting Debut Alongside Jessica Chastain in Netflix's 'Heartland' and Shares New Song \"Still the Sparrow Sings\"",
-          "publisher": "That Eric Alper",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZg5a_bc6YKb5jd-V8-UVJidMnG_tPkvOjzJPsMAa0mRLzhZsJL0wnUIa3CYg"
-        },
-        {
-          "url": "https://www.universalmusic.ca/2026/10/30/carter-faith-unveils-still-the-sparrow-sings-written-and-performed-for-her-role-in-netflixs-heartland/",
-          "title": "CARTER FAITH UNVEILS “STILL THE SPARROW SINGS,” WRITTEN AND PERFORMED FOR HER ROLE IN NETFLIX’S HEARTLAND",
-          "publisher": "Umusic",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAraJXJLR6CNdp6kVUWCW-Pd-xf1gHOtFcqK1usnnFFMLqwih5yXNfuuX3d9w"
-        },
-        {
-          "url": "https://www.antimusic.com/p/26/c1030watch_carter_faith_perform_new_song_still_the_sparrow_sings_at_the_bluebird_cafe.shtml",
-          "title": "Watch Carter Faith Perform New Song 'Still The Sparrow Sings' At The Bluebird Cafe",
-          "publisher": "antiMusic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDgb1s6KfE3iqNINxnYURqfDh70s4DP0AsgfZwCJf24UvFUG859v31DPlnZg"
-        }
-      ]
-    },
-    {
-      "query": "yella beezy",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T16:40:00Z",
-      "related_news_urls": [
-        "https://www.fox4news.com/news/day-7-testimony-underway-yella-beezy-murder-for-hire-trial",
-        "https://www.wfaa.com/article/news/crime/yella-beezy-trial/yella-beezys-childhood-friend-says-he-lied-in-second-week-of-trial/287-250ce194-a856-4df8-beca-555b7ed9e464",
-        "https://www.nbcdfw.com/news/local/yella-beezy-murder-trial-enters-seventh-day-as-prosecution-continues-to-call-witnesses/4101308/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDx-m6VtTaVG3PZOx5FwGFDch6NC9ilc4tb5exLqJzvwwQwD4_UhiXw40sWaw",
-      "image_credit": "FOX 4 News Dallas-Fort Worth",
-      "news": [
-        {
-          "url": "https://www.fox4news.com/news/day-7-testimony-underway-yella-beezy-murder-for-hire-trial",
-          "title": "Day 7 of testimony underway in the Yella Beezy murder-for-hire trial",
-          "publisher": "FOX 4 News Dallas-Fort Worth",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDx-m6VtTaVG3PZOx5FwGFDch6NC9ilc4tb5exLqJzvwwQwD4_UhiXw40sWaw"
-        },
-        {
-          "url": "https://www.wfaa.com/article/news/crime/yella-beezy-trial/yella-beezys-childhood-friend-says-he-lied-in-second-week-of-trial/287-250ce194-a856-4df8-beca-555b7ed9e464",
-          "title": "Yella Beezy's childhood friend says on the stand he lied in second week of trial",
-          "publisher": "WFAA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxYyyvxB0FQwbZDHtnXHcuWcB9CB_OFD2jYp6o6DKu0kQjtyh74-gcSugjuDA"
-        },
-        {
-          "url": "https://www.nbcdfw.com/news/local/yella-beezy-murder-trial-enters-seventh-day-as-prosecution-continues-to-call-witnesses/4101308/",
-          "title": "Yella Beezy murder trial enters seventh day as prosecution continues to call witnesses",
-          "publisher": "NBC 5 Dallas-Fort Worth",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6SF74j5DmdJkVfyLacwXynuztn_swN7x2fnS3Y9z-3KP3-iQkcqamObCdcLE"
-        }
-      ]
-    },
-    {
-      "query": "valkyries parade",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T16:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/wnba/story/_/id/50379540/wnba-finals-saw-surge-attendance-record-ratings",
-        "https://www.sf.gov/event-20261104-golden-state-valkyries-championship-parade-2026",
-        "https://www.nytimes.com/athletic/7751875/2026/11/03/wnba-finals-game-7-record-viewership-valkyries-dream/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK7LvPaaqiu2ghwpUe6sLcXo7h4g0rwNCLG7H1aylUilL_uaUacwEeJhvbOY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/wnba/story/_/id/50379540/wnba-finals-saw-surge-attendance-record-ratings",
-          "title": "WNBA Finals saw surge in attendance and record ratings",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK7LvPaaqiu2ghwpUe6sLcXo7h4g0rwNCLG7H1aylUilL_uaUacwEeJhvbOY"
-        },
-        {
-          "url": "https://www.sf.gov/event-20261104-golden-state-valkyries-championship-parade-2026",
-          "title": "Golden State Valkyries Championship Parade 2026",
-          "publisher": "SF.gov",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKZV9EwP-qttEhGOYRwF5r4OTtDiRWa-EGgwuEFy8UawwJh_iENABsLVOU6r0"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7751875/2026/11/03/wnba-finals-game-7-record-viewership-valkyries-dream/",
-          "title": "WNBA Finals Game 7 draws record 3.3 million viewers, most in playoff history",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx5bfNsQ46GweYzPhNnUoug0gp7sUw-ZJ-FKh-L9jhTbcb5WKtd_ntuheKK_Y"
-        }
-      ]
-    },
-    {
-      "query": "amnesty",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T16:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/us/articles/china-must-extradition-request-wants-092717341.html",
-        "https://www.bangkokpost.com/thailand/politics/3348314/opposition-mp-warns-against-deporting-two-uyghur-detainees-to-china",
-        "https://www.uyghurcongress.org/en/press-release-thailand-must-not-deport-two-uyghurs-it-holds-in-immigration-detention/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBIUPWMrfxXq32Xywr1RDvef0hFlP_xcyyKCEWvNJ7PYCoTCOX8Nfuq8W4Uk",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/us/articles/china-must-extradition-request-wants-092717341.html",
-          "title": "2 Uyghur men held in Thailand plead not be sent back to China",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBIUPWMrfxXq32Xywr1RDvef0hFlP_xcyyKCEWvNJ7PYCoTCOX8Nfuq8W4Uk"
-        },
-        {
-          "url": "https://www.bangkokpost.com/thailand/politics/3348314/opposition-mp-warns-against-deporting-two-uyghur-detainees-to-china",
-          "title": "Opposition MP warns against deporting two Uyghur detainees to China",
-          "publisher": "Bangkok Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK9fJlHWOvc6ti4C_UsOKU5PJZPSZmlx_ZV_ScLiUkbSM9nJTbgTqSgad0G8k"
-        },
-        {
-          "url": "https://www.uyghurcongress.org/en/press-release-thailand-must-not-deport-two-uyghurs-it-holds-in-immigration-detention/",
-          "title": "PRESS RELEASE: Thailand must not deport two Uyghurs it holds in immigration detention!",
-          "publisher": "World Uyghur Congress",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZGVuR4n30_t4KVD-oTcP8ikfhiH-XzRyeYne15HKmeXR3tfHju9yfttKaiw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQqxC76Vh0NfXAOlhDphdULLCKnCDYt_pNy-A6e-TBHvtlwCLWAemysLOl4XI"
         }
       ]
     }
