@@ -47,10 +47,30 @@ export function advanceLiveBits(previous,event){
   s.live=event.failed===true?'Reply failed · review the chat status':'Reply ready · '+s.sequence+' observed iterations';
   return s;
  }
+ if(event.type==='job_step'){
+  // Each distinct stage comes only from the authenticated owner ticket read;
+  // it is still an observation, not an independently proven code write.
+  if(event.source!=='owner_ticket_snapshot')return s;
+  const repo=clean(event.repository,95),status=clean(event.status,36);
+  if(!/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/.test(repo))return s;
+  if(!['queued','ready','working','blocked','committed_unverified','merged_verified','deployed_verified','complete','completed','superseded'].includes(status))return s;
+  const agent=clean(event.agent,40),stage=clean(event.stage,100);
+  const summary=clean(event.summary,180);
+  const label=status==='blocked'?'blocked':status==='working'?'working':status==='deployed_verified'?'deployment recorded':status==='merged_verified'?'merge recorded':status==='committed_unverified'?'commit awaiting verification':status==='ready'||status==='queued'?'waiting for runner':status==='superseded'?'superseded':'result recorded';
+  add('GitHub · '+(agent||'Brain')+' · '+label,status==='blocked'?'failed':status==='working'?'running':'observed',{
+   resource:repo,criteria:stage,detail:summary||'Stage recorded in the owner Brain ledger; result evidence remains separate.',
+   tool:'robot_brain.job',receiptTail:''
+  });
+  return s;
+ }
  if(event.type==='job'){
   const repo=clean(event.repository,95),state=clean(event.status,35);
   if(!/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/.test(repo)||!['queued','ready','working','blocked','committed_unverified','merged_verified','deployed_verified','complete','completed'].includes(state))return s;
   const phrase=state==='queued'||state==='ready'?'runner queued':state==='working'?'runner working':state==='blocked'?'runner blocked':state==='deployed_verified'?'deployment verified by Brain':state==='merged_verified'?'merge verified; deployment pending':'result awaiting independent verification';
+  // The ticket is polled every 15 seconds. Identical state is one iteration.
+  const signature=repo+'|'+state;
+  if(s.lastJobStatus===signature)return s;
+  s.lastJobStatus=signature;
   add('GitHub · '+phrase,state==='blocked'?'failed':state==='working'?'running':'observed',{resource:repo,detail:'This reports job state; it does not mint a Bubble Bit or independently verify a deployment.'});
   return s;
  }
