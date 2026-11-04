@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {describeRunnerIdle} from '../workers/infinity-brain-clock/runner-claim-idle.mjs';
+import {describeRunnerIdle,noteRunnerSkip} from '../workers/infinity-brain-clock/runner-claim-idle.mjs';
 
 test('empty owner queue cannot masquerade as successful work',()=>{
  assert.deepEqual(describeRunnerIdle({candidateCount:0,admission:{allowed:[],deferred:[]},adapterMatches:0}),
@@ -23,4 +23,27 @@ test('bounded scans and untrusted malformed values remain safe',()=>{
  assert.equal(x.examined,500);
  assert.equal(x.agedOut,0);
  assert.ok(!JSON.stringify(x).includes('Bearer'));
+});
+
+test('post-admission claim failures are bounded, private-data free and actionable',()=>{
+ const claimBlockedBy={};
+ noteRunnerSkip(claimBlockedBy,'dependency_pending');
+ noteRunnerSkip(claimBlockedBy,'repository_lease_active');
+ noteRunnerSkip(claimBlockedBy,'Bearer token from a forged model');
+ const idle=describeRunnerIdle({candidateCount:309,
+  admission:{allowed:[{},{},{}],deferred:[]},adapterMatches:2,scanLimited:true,claimBlockedBy});
+ assert.equal(idle.code,'eligible_but_not_claimed');
+ assert.deepEqual(idle.claimBlockedBy,{dependency_pending:1,repository_lease_active:1,other_policy:1});
+ assert.ok(!JSON.stringify(idle).includes('Bearer'));
+ const overflow=describeRunnerIdle({claimBlockedBy:{runner_backoff:9999,secret:'never report'}});
+ assert.deepEqual(overflow.claimBlockedBy,{runner_backoff:500});
+});
+test('real Brain claim loop annotates every typed post-admission skip',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const code=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ assert.match(code,/noteRunnerSkip\(claimBlockedBy,'source_repair_active'\)/);
+ assert.match(code,/noteRunnerSkip\(claimBlockedBy,'dependency_pending'\)/);
+ assert.match(code,/noteRunnerSkip\(claimBlockedBy,'repository_lease_active'\)/);
+ assert.match(code,/noteRunnerSkip\(claimBlockedBy,eligibility.reason\)/);
+ assert.match(code,/claimBlockedBy,scanLimited:/);
 });
