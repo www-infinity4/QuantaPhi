@@ -90,3 +90,32 @@ test('immutable source edit path is a technical evidence blocker, never an owner
  assert.equal(ticketAdmission(genuine,{now}).reason,'owner_decision_required');
  assert.equal(checkOwnerRunnerRequest(genuine.job,{now}).reason,'owner_decision_required');
 });
+
+
+test('signed owner selection includes only same-ticket same-repository prerequisite closure of aged work',()=>{
+ const primary=mk('OLD',{days:30,jobId:'TASK-3'});
+ const predecessor=mk('OLD',{days:30,jobId:'TASK-2'});
+ const ancestor=mk('OLD',{days:30,jobId:'TASK-1'});
+ const unrelated=mk('OLD',{days:30,jobId:'TASK-4'});
+ const crossRepo=mk('OLD',{days:30,jobId:'TASK-5'});
+ primary.job.dependencies=['TASK-2','TASK-5'];
+ predecessor.job.dependencies=['TASK-1'];
+ ancestor.job.dependencies=[];
+ unrelated.job.dependencies=[];
+ crossRepo.job.repository='www-infinity4/Other';
+ const candidates=[primary,predecessor,ancestor,unrelated,crossRepo];
+ const snapshot=JSON.stringify(candidates);
+ const selected=filterActiveTickets(candidates,{now,requested:{ticketId:'OLD',jobId:'TASK-3'}});
+ assert.deepEqual(selected.allowed.map(x=>x.job.id),['TASK-3','TASK-2','TASK-1']);
+ assert.deepEqual(selected.deferred.map(x=>x.jobId),['TASK-4','TASK-5']);
+ assert.equal(JSON.stringify(candidates),snapshot,'selection cannot modify D1 tickets or grant a lease');
+});
+test('security-held prerequisite stays deferred even when an owner selects its dependent',()=>{
+ const primary=mk('OLD',{days:30,jobId:'TASK-2'});
+ const restricted=mk('OLD',{days:30,jobId:'TASK-1',status:'blocked',blocker:'security_hold'});
+ primary.job.dependencies=['TASK-1'];
+ const selected=filterActiveTickets([primary,restricted],{now,requested:{ticketId:'OLD',jobId:'TASK-2'}});
+ assert.deepEqual(selected.allowed.map(x=>x.job.id),['TASK-2']);
+ assert.deepEqual(selected.deferred.map(x=>x.reason),['owner_decision_required']);
+ assert.equal(checkOwnerRunnerRequest(primary.job,{now,deps:[restricted.job]}).reason,'dependency_pending');
+});
