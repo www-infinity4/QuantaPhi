@@ -1,0 +1,39 @@
+name: eBay Quant Quick Cards
+on:
+  pull_request:
+    paths:
+      - 'ebay-quick-cards*'
+      - 'workers/quantaphi-site/ebay-api.mjs'
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/ebay-quick-cards.test.mjs'
+      - 'crosslist-inventory-core.mjs'
+      - 'test/crosslist-inventory-core.test.mjs'
+      - 'index.html'
+      - '.github/workflows/ebay-quick-cards.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ebay-quick-cards*'
+      - 'workers/quantaphi-site/ebay-api.mjs'
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/ebay-quick-cards.test.mjs'
+      - 'index.html'
+jobs:
+  eBay-card-contract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JS syntax
+        run: |
+          node --check ebay-quick-cards-core.mjs
+          node --check ebay-quick-cards.mjs
+          node --check crosslist-inventory-core.mjs
+          node --check workers/quantaphi-site/ebay-api.mjs
+          node --check workers/quantaphi-site/worker.js
+      - name: Test real-source contracts and server-only eBay authentication
+        run: node --test test/ebay-quick-cards.test.mjs test/crosslist-inventory-core.test.mjs
