@@ -55,6 +55,7 @@ test('up to eight independent project slots, exactly one eligible runner request
  assert.equal(result.selected.slots.length,8);
  assert.equal(result.selected.target.repository,'www-infinity4/Repo9');
  assert.deepEqual(requests.map(r=>r.path),['/owner/conversation','/work/tickets/list','/work/run-next']);
+ assert.deepEqual(requests[1].body,{continuation:true},'owner continuation must request prioritized signed queue, not generic newest-100 history');
  assert.equal(requests[2].body.ticketId,'IW-20261025-00000010');
  assert.equal(requests[2].body.jobId,'TASK-1');
  assert.equal(requests[2].authorization,'Bearer owner-test');
