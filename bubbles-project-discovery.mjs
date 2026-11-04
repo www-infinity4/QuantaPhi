@@ -106,3 +106,6 @@ export async function discoverProject({request,catalog,views=[],invoke}){
 export function hasActionDraft(text){
  return /["']action["']\s*:\s*["'](?:(?:github|web|browser|weather|tools?|brain)[._][\w.-]{1,80}|read_repo|read_repository|read_file|search|web_search|commit_files|create_pr|deploy)["'][\s\S]{0,1000}["']parameters["']\s*:/i.test(String(text||''));
 }
+
+// A source template is non-executing guidance; the owner adapter still verifies its real files.
+export {findBuildTemplate,makeBuildPacket} from './bubbles-build-templates.mjs';
