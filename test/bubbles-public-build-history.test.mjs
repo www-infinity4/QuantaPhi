@@ -36,7 +36,7 @@ test('a GitHub outage never becomes a claim that work is finished or absent',asy
 
 test('Bubbles invokes public receipt check only for explicit retrospective build-history questions',()=>{
  const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
- assert.match(source,/import\('\\/bubbles-public-build-history\\.mjs\?v=/);
+ assert.ok(source.includes("import('/bubbles-public-build-history.mjs?v="));
  assert.match(source,/isBuildHistoryQuestion\(request\)/);
  assert.match(source,/readRecentBuildHistory\(\{question:request/);
 });
