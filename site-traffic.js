@@ -67,7 +67,7 @@
    (d.coverageContinuous?'':' Some daily records are missing; the total is incomplete.');
  }
  async function load(url){
-  const r=await fetch(url,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(10000)});
+  const r=await fetch(url,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(url.includes('refresh=1')?20000:10000)});
   if(!r.ok)throw Error('traffic_http_'+r.status);
   const d=await r.json();
   if(!valid(d))throw Error('traffic_invalid');
@@ -82,12 +82,12 @@
   try{backup=await load('/data/site-traffic-lifetime.json?v='+Math.floor(Date.now()/60000));}catch{}
   return backup;
  }
- async function refresh(){
+ async function refresh(manual=false){
   if(busy)return;busy=true;
-  if(refreshButton){refreshButton.disabled=true;refreshButton.textContent='Checking totals…';}
+  if(refreshButton){refreshButton.disabled=true;refreshButton.textContent=manual?'Checking Cloudflare…':'Checking totals…';}
   try{
    let server=null;
-   try{server=await load('/api/site-traffic')}catch{}
+   try{server=await load(manual?'/api/site-traffic?refresh=1':'/api/site-traffic')}catch{}
    const oldServer=!server||Date.now()-Date.parse(server.fetchedAt)>60*60*1000;
    const fallback=oldServer?await validatedBackup():null;
    // Do not trust a newer timestamp if its recorded totals go backwards.
@@ -100,12 +100,22 @@
    if(chosen)render(chosen,{fallback:useFallback});
    else if(best)render(best,{fallback:true});
    else{requests.textContent='—';views.textContent='—';note.textContent='Cloudflare recorded ledger currently unavailable; no estimated counts shown.';}
+   if(manual){
+    const messages={
+     refreshed:'Cloudflare refresh complete. Fresh analytics were verified and saved.',
+     recent:'Cloudflare was checked within five minutes. Showing the latest verified record.',
+     not_configured:'Live Cloudflare refresh unavailable: the Analytics Read secret is not configured.',
+     failed:'Cloudflare refresh failed. Keeping the last verified totals.'
+    };
+    note.textContent+=' '+(messages[server?.refreshStatus]||
+     'A new Cloudflare refresh could not be confirmed. Displaying last available records.');
+   }
   }finally{
    busy=false;
-   if(refreshButton){refreshButton.disabled=false;refreshButton.textContent='Refresh totals';}
+   if(refreshButton){refreshButton.disabled=false;refreshButton.textContent='Refresh Cloudflare traffic';}
   }
  }
- if(refreshButton)refreshButton.addEventListener('click',()=>refresh());
+ if(refreshButton)refreshButton.addEventListener('click',()=>refresh(true));
  refresh();
  setInterval(()=>{if(!document.hidden)refresh();},60000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
