@@ -18,7 +18,7 @@ const channels=[
  {name:'KYOU · FOX 15.1',eyebrow:'IOWA · OFFICIAL LIVESTREAM',description:'KYOU’s live channels and newscasts are on the official station website. Use the play screen to watch there; FOX 15.1 programming may differ.',key:'kyou',poster:'https://webpubcontent.gray.tv/gray/arc-fusion-assets/images/logo-off-site/kyou.png?d=602&mxId=00000000',icon:'KY',tone:'kyou'},
  {name:'StarQuest',eyebrow:'CLASSIC MOVIES · WATCH NOW',description:'Direct movie player · daily feature or next title.',key:'starquest',poster:catalog.now('starquest',new Date()).poster,icon:'SQ',tone:'starquest'},
  {name:'Omni TV',eyebrow:'ONE REMOTE · THREE CHANNELS',description:'Actual video only. CH− / CH+ switches between StarQuest, Chiller and Shop LC.',key:'omni',poster:catalog.now('starquest',new Date()).poster,icon:'TV',tone:'omni'},
- {name:'Chiller',eyebrow:'1980s SUSPENSE · ON AIR',description:'Current scheduled Hitchcock or Twilight Zone episode in the screen.',key:'chiller',poster:'https://i.ytimg.com/vi/YD5xBeGeX5w/hqdefault.jpg',icon:'C',tone:'chiller'},
+ {name:'Chiller',eyebrow:'1980s SUSPENSE · ON AIR',description:'1980s Hitchcock and Twilight Zone collection · full episodes selected for the screen.',key:'chiller',poster:'https://i.ytimg.com/vi/YD5xBeGeX5w/hqdefault.jpg',icon:'C',tone:'chiller'},
  {name:'ShopLC',eyebrow:'SHOPPING TV · LIVE',description:'The live Shop LC video broadcast, directly in the screen.',key:'shoplc',poster:'https://i.ytimg.com/vi/eqpG55UKM8M/hqdefault.jpg',icon:'LC',tone:'shoplc'}
 ];
 const remoteChannels=['starquest','chiller','shoplc'];
@@ -167,7 +167,7 @@ function showProgram(playback,program,token){
  if(program.start)url.searchParams.set('start',String(program.start));
  frame.src=url.toString();
  playback.frame=frame;playback.screenSlot.append(frame);
- playback.status.textContent='Playing '+program.title+'. If sound is blocked, tap ▶ or 🔊 inside the TV.';
+ playback.status.textContent='Opening '+program.title+' in the video player. Playback is not yet confirmed.';
  void ytAPI().then(ok=>{
   if(!ok||active!==playback||token!==generation||playback.frame!==frame)return;
   try{
@@ -182,7 +182,10 @@ function showProgram(playback,program,token){
       if([2,5,100,101,150].includes(code)){
        playback.status.textContent='That video cannot play here. Selecting another verified title…';
        if(playback.fallbacks<2){playback.fallbacks++;changeProgram(playback,1)}
-       else playback.status.textContent='The source blocked playback. Choose another program using CH+.';
+       else {
+        resetMedia();
+        playback.status.textContent='This video is unavailable here. Tap Next program to try another title.';
+       }
       }
      },
      onStateChange:event=>{if(active!==playback||token!==generation)return;
@@ -297,7 +300,7 @@ for(const c of channels){
  const status=viewer.appendChild(el('p','channelphi-status','Ready'));status.setAttribute('role','status');
  const controls=viewer.appendChild(el('div','channelphi-controls'));
  const previous=controls.appendChild(el('button','channelphi-prev','◀ CH−'));previous.type='button';
- const next=controls.appendChild(el('button','channelphi-next','CH+ ▶'));next.type='button';
+ const next=controls.appendChild(el('button','channelphi-next',c.key==='chiller'||c.key==='starquest'?'Next program':c.key==='shoplc'?'Try another feed':'CH+ ▶'));next.type='button';
  const sound=controls.appendChild(el('button','channelphi-sound','🔊 Sound'));sound.type='button';
  const close=controls.appendChild(el('button','channelphi-stop','■ Stop'));close.type='button';
  const playback={key:c.key,owner:owner.id,card,screen,viewer,screenSlot,status,title:now,programHeading,programNote,description:detail,sourceLink,sound,video:null,frame:null,yt:null,hls:null,program:null,channel:c.key,remoteChannel:c.key};
