@@ -21,6 +21,7 @@ import {handleQuickCardBrowser,readBoundedJson} from './quick-card-browser.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
+import {describeRunnerIdle} from './runner-claim-idle.mjs';
 import {DEFERRED_REVIEW_INTERVAL_MS,sourceRecoveryEligibility,inspectDeferredSources,recoveryDecision} from './deferred-recovery.mjs';
 import {ticketStatusFromJobs} from './ticket-status.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
@@ -337,7 +338,18 @@ export class BrainClock extends DurableObject{
      return Response.json({ok:true,lease});
     }
    }
-   return Response.json({ok:true,lease:null});
+   // A valid signed writer run with no lease is not a completed engineering
+   // iteration. Report only bounded aggregate admission facts, never ticket
+   // IDs, owner hashes, instructions or raw blocker strings.
+   const adapterMatches=admission.allowed.filter(({job})=>
+    !['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status)&&
+    (engine?/^www-infinity4\\/[\\w.-]+$/.test(job.repository||''):supported(job))
+    .length;
+   const idle=describeRunnerIdle({candidateCount:candidates.length,admission,
+    adapterMatches,scanLimited:(rows.results||[]).length>=100});
+   await this.ctx.storage.put('writer-idle-summary:'+ (engine?'repository-engine':'interface-writer'),
+    {at:Date.now(),...idle});
+   return Response.json({ok:true,lease:null,idle});
   }
   const lease=await this.ctx.storage.get(String(body.key||''));
   if(path==='/runner/source-review-receipt'){
