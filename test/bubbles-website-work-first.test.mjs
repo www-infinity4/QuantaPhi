@@ -54,5 +54,7 @@ test('all Bubbles website entrypoints request the repaired scripts instead of st
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   assert.match(source(path),new RegExp('/bubbles-ai\\.js\\?v='+revision));
  }
- assert.match(source('bubbles-ai.js'),new RegExp('/bubbles-iteration-bubbles\\.mjs\\?v='+revision));
+ // The existing activity module retains its own published version; only
+ // the Bubbles chat script changed for this release.
+ assert.match(source('bubbles-ai.js'),/\/bubbles-iteration-bubbles\.mjs\?v=20261103-work-first1/);
 });
