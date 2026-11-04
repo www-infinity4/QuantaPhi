@@ -50,3 +50,22 @@ Five independent official artist YouTube channel launch buttons (Pink Floyd, REO
 - Targeted automated checks: five canonical band names; no resale URLs; no hidden audio/video player; link and merch panel selection; carousel placement/registration; no wallet paths.
 - New regression: test/classic-rock-official-card.test.mjs; exact head CI remains separate.
 - Current status is not live; merge and Android browser acceptance are separate gates.
+
+
+# Session 2 — owner correction, 2026-11-03 evening (2026-11-04 UTC)
+
+Owner clarified that music selection must be **play/pause on QuantaPhi**, not an external YouTube launch or a large album viewer in each card. Users should keep browsing the same page. This supersedes the original external-launch acceptance text in #1641.
+
+Branch: `fix/artist-music-stays-on-quantaphi-20261103` (based on current main); unclaimed coordinator lease, no conflicting file edits on another branch.
+
+Implemented in this branch:
+- One page-level `infinity-artist-music.js` controller, loaded once, with six sourced official tracks: Steve Miller Book of Dreams playlist, Pink Floyd, REO Speedwagon, Cheap Trick, Journey, Styx.
+- Steve Miller and five rock artist buttons now call shared Play/Pause. No per-card player, automatic playback, or external navigation from music buttons.
+- Player stays outside Oracle stage, so selecting a new card does not destroy or pause it. Infinity Radio and the artist controller pause each other on selection; manual stop/close works.
+- Official YouTube requires an **on-screen, minimum 200×200 iframe player**, so the single 220×220 pinned dock is deliberately visible and attributed. A truly invisible, audio-only YouTube player is forbidden by YouTube API policies; this part of the owner's ideal is **not delivered**. No stream extraction, proxying or unlicensed audio copies.
+- Site navigation via **full page unload** (e.g. another page or a new tab) is still not continuous; a persistent SPA navigation or native Android audio service would be a separate implementation. Browser autoplay restrictions may require a second tap inside the official player.
+- New test `test/infinity-artist-music.test.mjs`; updated Steve Miller and rock-card regressions, cache-busted entry scripts; no wallets, token balances, sign-in gates, ad inventory or merchant sales modified.
+
+State: `implementing`, 🟡, **~65% estimate** for corrected scope (source updates done, no exact-head CI/browser/Cloudflare/Android release verification). Sessions 2; remaining 1–3 acceptance/review sessions, unspecified effort. Independent review should verify player visibility, official-video embeddings, playback after card switching, shared-audio focus, no music button outbound action, browser restrictions and deployed source readback. **Never declare merged, deployed or playing on device without receipts.**
+
+Next action: run focused Node regression suite and exact-head CI on this branch; repair failures, then independent review before any merge and Cloudflare live browser/mobile readback.
