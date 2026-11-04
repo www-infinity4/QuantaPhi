@@ -30,3 +30,13 @@ test('a work receipt can resume only with a verified same-thread ticket',()=>{
  assert.match(src,/result\.tickets\.find\(ticket=>ticket\?\.id===restored\.ticketId/);
  assert.match(src,/sessionStorage\.setItem\(ACTIVE_WORK_REF,/);
 });
+
+test('direct GitHub work keeps only a bounded opaque request ID for signed receipt recovery',()=>{
+ const src=file('bubbles-ai.js');
+ assert.match(src,/const GITHUB_PENDING_KEY='bubbles-pending-github-work-v1';/);
+ assert.match(src,/function resumePendingGithubReceipts\(\)/);
+ assert.match(src,/sessionStorage\.setItem\(GITHUB_PENDING_KEY,/);
+ assert.match(src,/githubReceipt\(requestId\)/);
+ assert.match(src,/clearPendingGithubWork\(requestId\)/);
+ assert.match(src,/if\(restored\.thread!==activeThread\)continue;/);
+});
