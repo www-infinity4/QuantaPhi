@@ -281,7 +281,7 @@ test('manual traffic refresh rereads server totals without minting or double-cou
  assert.equal(nodes.qtrafficRequests.textContent,'1,192,500');
  assert.equal(nodes.qtrafficViews.textContent,'460,000');
  assert.equal(nodes.qtrafficRefresh.disabled,false);
- assert.equal(nodes.qtrafficRefresh.textContent,'Refresh totals');
+ assert.equal(nodes.qtrafficRefresh.textContent,'Refresh Cloudflare traffic');
 });
 test('verified public Cloudflare fallback is current, scoped and never presented as automatically synced',()=>{
  const s=JSON.parse(readFileSync(new URL('../data/site-traffic-lifetime.json',import.meta.url),'utf8'));
@@ -297,7 +297,7 @@ test('verified public Cloudflare fallback is current, scoped and never presented
  assert.equal(s.last7Days.pageViews<=s.pageViews,true);
  const page=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  assert.match(page,/id="qtrafficRefresh"/);
- assert.match(page,/site-traffic\.js\?v=20261031-freshsource2/);
+ assert.match(page,/site-traffic\.js\?v=20261103-manual-cloudflare1/);
 });
 
 test('stale successful ledger cannot hide newer, source-validated Cloudflare fallback',async()=>{
