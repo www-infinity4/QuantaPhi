@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T01:01:29.366510Z",
+  "checked_at": "2026-11-04T01:31:24.009537Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "new york times",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-04T00:40:00Z",
+      "query": "when was the last time texas had a democratic senator",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T01:10:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/03/politics/justice-department-target-letters-dan-sullivan-alaska-democratic-party",
-        "https://www.usatoday.com/story/news/politics/elections/2026/11/03/alaska-dan-sullivan-ballot-probe-justice-department-letters/92595476007/",
-        "https://www.nytimes.com/2026/10/28/us/politics/alaska-dan-sullivan-conspiracy-peltola.html"
+        "https://www.khou.com/article/news/politics/elections/texas-senate-race-election-prediction-market/285-9103589e-48a8-480f-a26b-7e25e1f25490",
+        "https://www.nytimes.com/video/us/politics/100000011237962/can-democrats-flip-texas.html",
+        "https://www.click2houston.com/enough/2026/11/03/texas-election-2026-where-paxton-and-talarico-stand/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ76gR9KaRZf0YB0uA7frph-mZefQgaY-FpzEEpfhj8bf8IQEuwEaT_vObuCLI",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1hR5hGd2-QignD2UsOHOf_vt5-fcEyyfq7hSKCWeMHkcqqx1PzHyn22Z1Rok",
+      "image_credit": "KHOU",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/03/politics/justice-department-target-letters-dan-sullivan-alaska-democratic-party",
-          "title": "Justice Department sends criminal target letters in Alaska probe to people aligned with Democratic party",
-          "publisher": "CNN",
+          "url": "https://www.khou.com/article/news/politics/elections/texas-senate-race-election-prediction-market/285-9103589e-48a8-480f-a26b-7e25e1f25490",
+          "title": "Polls show tight Texas Senate race, but prediction markets tell a different story",
+          "publisher": "KHOU",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ76gR9KaRZf0YB0uA7frph-mZefQgaY-FpzEEpfhj8bf8IQEuwEaT_vObuCLI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1hR5hGd2-QignD2UsOHOf_vt5-fcEyyfq7hSKCWeMHkcqqx1PzHyn22Z1Rok"
         },
         {
-          "url": "https://www.usatoday.com/story/news/politics/elections/2026/11/03/alaska-dan-sullivan-ballot-probe-justice-department-letters/92595476007/",
-          "title": "Justice Department sends 20 letters in expanded Alaska ballot probe",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmQU-NNNcxojA_u9E6LLjZVZYBjee71qwgFVTN1_7CZN2Py6XsR4Pq_l44zK8"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/10/28/us/politics/alaska-dan-sullivan-conspiracy-peltola.html",
-          "title": "Inside Democrats’ Secret Effort to Stack Alaska’s Midterm Ballot With Another Dan Sullivan",
+          "url": "https://www.nytimes.com/video/us/politics/100000011237962/can-democrats-flip-texas.html",
+          "title": "Video: Can Democrats Flip Texas?",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHq72Csc3pFgLBF2RlEV37sBq4mrg7zJkIdBAdGfe99d34c33Cf2bYRNA-i0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcxHwwI9SOgfD5ctbEsU17P5qD36qIClW6BjhOUIIkdOcuVmmWDhC073rsQCk"
+        },
+        {
+          "url": "https://www.click2houston.com/enough/2026/11/03/texas-election-2026-where-paxton-and-talarico-stand/",
+          "title": "Texas election 2026: Where Paxton and Talarico Stand",
+          "publisher": "Click2Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoQVjaqmZrH2rGz9Y9sHqPgPynpOb7vX-SHrM0vJsbDuBYnB190WzMKrjc3fc"
         }
       ]
     },
     {
-      "query": "cbs news",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T00:40:00Z",
+      "query": "is dancing with the stars on tonight",
+      "approx_searches": "100000+",
+      "published_at": "2026-11-04T01:10:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/news/trump-midterm-election-2026-interview/",
-        "https://www.reuters.com/legal/government/trump-white-house-maps-path-govern-without-congress-if-democrats-win-2026-11-01/",
-        "https://www.telegraph.co.uk/us/politics/2026/11/02/white-house-ready-battle-as-trump-facing-midterms-defeat/"
+        "https://people.com/dancing-with-the-stars-recap-1-star-sent-home-disney-night-12208629",
+        "https://ew.com/dwts-season-35-disney-night-recap-12208470",
+        "https://playbill.com/article/watch-heather-headley-sherri-shepherd-more-sing-on-disney-night-on-dancing-with-the-stars"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHI9_dpD7R3J0gawj77byNXrIfWE4XdAeO8HRx8prSIdcKberyVmAWH2GHNO0",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEIhRSOyfETBMSdn3_vQpqBWbeVq2P1mnG20SGUNolzMA9W237a7PPkIk8HVo",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.cbsnews.com/news/trump-midterm-election-2026-interview/",
-          "title": "Trump says he is prepared to use \"tremendous powers\" if Democrats take control",
-          "publisher": "CBS News",
+          "url": "https://people.com/dancing-with-the-stars-recap-1-star-sent-home-disney-night-12208629",
+          "title": "‘Dancing with the Stars’ Recap: 1 Star Goes Home on Disney Night After an Injury Left Them Crying on the Dance Floor",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHI9_dpD7R3J0gawj77byNXrIfWE4XdAeO8HRx8prSIdcKberyVmAWH2GHNO0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEIhRSOyfETBMSdn3_vQpqBWbeVq2P1mnG20SGUNolzMA9W237a7PPkIk8HVo"
         },
         {
-          "url": "https://www.reuters.com/legal/government/trump-white-house-maps-path-govern-without-congress-if-democrats-win-2026-11-01/",
-          "title": "Trump White House maps path to govern without Congress if Democrats win",
-          "publisher": "Reuters",
+          "url": "https://ew.com/dwts-season-35-disney-night-recap-12208470",
+          "title": "‘DWTS’ Disney Night recap: An uneven first group dance-off and a tragic fan-favorite elimination",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu-OIeTrasQ-53usE93mM2gVuL9xSU87b1r5br3hoC-7MxCIa1uNICjWkb_LY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp9Da-qmTmbU7OjbympWyo061cpp8vi8cND6xEdJlYQcf2ogTsW3vrHxyvdgE"
         },
         {
-          "url": "https://www.telegraph.co.uk/us/politics/2026/11/02/white-house-ready-battle-as-trump-facing-midterms-defeat/",
-          "title": "Nervous White House plans for life after midterms defeat",
-          "publisher": "The Telegraph",
+          "url": "https://playbill.com/article/watch-heather-headley-sherri-shepherd-more-sing-on-disney-night-on-dancing-with-the-stars",
+          "title": "Watch Heather Headley, Sherri Shepherd, More Sing on 'Disney Night' on Dancing With the Stars",
+          "publisher": "Playbill",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzqrFfBH50uk3ql5YiLvbRWYjl0DnWo4Gog8jBBv-u9QaTEDN1Z5bvYXo8W-k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOxMGZ8YAwVuyZJHX6i2WQfOkRzjEMS3WSPZXcA1ultzAWfMAuEGjll0yC7WU"
         }
       ]
     },
     {
-      "query": "chris christie",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T00:40:00Z",
-      "related_news_urls": [
-        "https://newjerseyglobe.com/governor/christie-racks-up-six-parking-tickets-in-less-than-a-year/",
-        "https://apnews.com/projects/elections-2026/ohio-governor-results/",
-        "https://fox8.com/news/acton-or-ramaswamy-latest-election-results/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU5BcP-o_ZCc4eqi1oxgtinH8eWbhGj9gVXlZe_AWhQ6j-6sT4J9cMxaLeaUc",
-      "image_credit": "New Jersey Globe",
-      "news": [
-        {
-          "url": "https://newjerseyglobe.com/governor/christie-racks-up-six-parking-tickets-in-less-than-a-year/",
-          "title": "Christie racks up six parking tickets in less than a year",
-          "publisher": "New Jersey Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU5BcP-o_ZCc4eqi1oxgtinH8eWbhGj9gVXlZe_AWhQ6j-6sT4J9cMxaLeaUc"
-        },
-        {
-          "url": "https://apnews.com/projects/elections-2026/ohio-governor-results/",
-          "title": "Ohio Governor Election Live Results 2026",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCYxnXrw1FlKHJNjO6ziZXC1tt6KHCrgqdjIRpGESrbfRW4tIK4mQbzyj_ZF8"
-        },
-        {
-          "url": "https://fox8.com/news/acton-or-ramaswamy-latest-election-results/",
-          "title": "Acton or Ramaswamy? Latest election results",
-          "publisher": "FOX 8 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREZJ4Q3TCGhCdmo179njJky_PB-CAKgfuKnzXlNl2KyAP_JCcX8HiJunUHkKk"
-        }
-      ]
-    },
-    {
-      "query": "nc board of elections",
+      "query": "moody vs nixon",
       "approx_searches": "1000+",
-      "published_at": "2026-11-04T00:40:00Z",
+      "published_at": "2026-11-04T01:10:00Z",
       "related_news_urls": [
-        "https://www.wral.com/news/nccapitol/nc-voting-election-polls-races-ballot-north-carolina-midterm-updates-results-november-2026/",
-        "https://www.wsj.com/livecoverage/midterm-election-results-2026-latest-updates/card/technical-issues-to-delay-some-n-c-pa-results-aQKrLLSrZLljo2qcaemw",
-        "https://www.wbtv.com/2026/11/03/north-carolina-election-officials-extend-voting-4-counties-what-we-know/"
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-hampshire.html",
+        "https://www.nbcnews.com/politics/2026-elections/new-hampshire-senate-results",
+        "https://www.nhpr.org/nh-news/2026-11-01/nh-newhampshire-down-ballot-races-state-house-control-election-2026-midterm-legislature"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQFCyvShI_fe9g_5J5KfC1xkIbVkKMHvr_XYU_gXfGOp3ybDmBGB15kkiAgE0",
-      "image_credit": "WRAL",
-      "news": [
-        {
-          "url": "https://www.wral.com/news/nccapitol/nc-voting-election-polls-races-ballot-north-carolina-midterm-updates-results-november-2026/",
-          "title": "Election Day latest: Polling issues in 4 counties, results delayed",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQFCyvShI_fe9g_5J5KfC1xkIbVkKMHvr_XYU_gXfGOp3ybDmBGB15kkiAgE0"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/midterm-election-results-2026-latest-updates/card/technical-issues-to-delay-some-n-c-pa-results-aQKrLLSrZLljo2qcaemw",
-          "title": "Technical Issues to Delay Some N.C., Pa. Results",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRankEwwuWIkxrtEgGZJiMdheQbwEkx7spjblSJGMqC-ZaAtbNx6jnEN5Wf_KA"
-        },
-        {
-          "url": "https://www.wbtv.com/2026/11/03/north-carolina-election-officials-extend-voting-4-counties-what-we-know/",
-          "title": "North Carolina election officials extend voting in 4 counties: What we know",
-          "publisher": "WBTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGtRJUXLbxVQNpWiruSUa7Es7PPMD-9NREjIpxLrgRPorYcuhdIWRX5AgYnq4"
-        }
-      ]
-    },
-    {
-      "query": "desantis not running for governor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T00:40:00Z",
-      "related_news_urls": [
-        "https://floridapolitics.com/archives/828842-ron-desantis-says-democrats-are-tying-donald-trump-to-byron-donalds-and-its-juicing-turnout/",
-        "https://www.aljazeera.com/news/2026/11/3/how-florida-governor-ron-desantis-will-shape-his-states-2026-midterm-race",
-        "https://www.hernandosun.com/2026/11/02/defending-the-florida-dream-tour-stops-in-brooksville-ahead-of-election-day/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFMtgmHuRCaJBJP8_VphJ0Z4glKVpAxGS_uHQTO2t38c0kMWm1L6rRLft7bEA",
-      "image_credit": "Florida Politics",
-      "news": [
-        {
-          "url": "https://floridapolitics.com/archives/828842-ron-desantis-says-democrats-are-tying-donald-trump-to-byron-donalds-and-its-juicing-turnout/",
-          "title": "Ron DeSantis says Democrats are tying Donald Trump to Byron Donalds. And it's juicing turnout.",
-          "publisher": "Florida Politics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFMtgmHuRCaJBJP8_VphJ0Z4glKVpAxGS_uHQTO2t38c0kMWm1L6rRLft7bEA"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/3/how-florida-governor-ron-desantis-will-shape-his-states-2026-midterm-race",
-          "title": "How Florida Governor Ron DeSantis will shape his state’s 2026 midterm race",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCEQTD-8vLC28EO4_SnxB3WFRsviH2QyBqaSwx0daF58dw_rdi1ZPqBfX0tA"
-        },
-        {
-          "url": "https://www.hernandosun.com/2026/11/02/defending-the-florida-dream-tour-stops-in-brooksville-ahead-of-election-day/",
-          "title": "‘Defending the Florida Dream’ Tour Stops in Brooksville Ahead of Election Day",
-          "publisher": "Hernando Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrwZuR1hgs4YPxVidkGd-TyH5mtrCk-GdRUdXg9HjIP2JDOF8AVnr5UC9fsa0"
-        }
-      ]
-    },
-    {
-      "query": "new mexico governor race",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T00:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-mexico.html",
-        "https://www.koat.com/article/voter-turnout-rises-in-new-mexico-gubernatorial-elections/74320704",
-        "https://www.krqe.com/news/politics-government/elections/bernalillo-county-clerk-says-in-person-voting-is-up-this-year/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDVA9EhF3ulfpIjATJtvyRlsRkdN7RaYQ4T_m-o-6fThN10VHoQP-_5CJqS0Q",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3jWTyFrcKhE9CGQqAwJaXW4F-WX4YIC3-T3VfqwTwmj26rQPEEGtASk9MTaM",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-mexico.html",
-          "title": "New Mexico 2026: Live Midterm Election Results",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-hampshire.html",
+          "title": "New Hampshire 2026: Live Midterm Election Results",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDVA9EhF3ulfpIjATJtvyRlsRkdN7RaYQ4T_m-o-6fThN10VHoQP-_5CJqS0Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3jWTyFrcKhE9CGQqAwJaXW4F-WX4YIC3-T3VfqwTwmj26rQPEEGtASk9MTaM"
         },
         {
-          "url": "https://www.koat.com/article/voter-turnout-rises-in-new-mexico-gubernatorial-elections/74320704",
-          "title": "Strong voter turnout in New Mexico for midterm election",
-          "publisher": "KOAT",
+          "url": "https://www.nbcnews.com/politics/2026-elections/new-hampshire-senate-results",
+          "title": "New Hampshire U.S. Senate Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2pE1slDjWc6Jb_akPA6jYCB2wvLRCnsPmumrt5laGrVncwhN_8Ua5Y_Yw1pU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDhgQorbcY1NfhN26JlftKpII66PdodbAyQjRtM_ckQjVlwEGLi78kgj0UHZc"
         },
         {
-          "url": "https://www.krqe.com/news/politics-government/elections/bernalillo-county-clerk-says-in-person-voting-is-up-this-year/",
-          "title": "Bernalillo County Clerk says in-person voting is up this year",
-          "publisher": "KRQE",
+          "url": "https://www.nhpr.org/nh-news/2026-11-01/nh-newhampshire-down-ballot-races-state-house-control-election-2026-midterm-legislature",
+          "title": "Much is at stake this year in NH’s down-ballot races, including State House control",
+          "publisher": "New Hampshire Public Radio",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnzSm3oBZtPbtiMVntiRAkaSShclfrYUFktRtnHKmGas-_LBiIbBWIl4_qNWU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8TuTEnXnkRd6Cw6dMtHpAicHKBfsFlPpMLuMecbIqtJFlZdCbMVa7f_ZM7Ek"
         }
       ]
     },
     {
-      "query": "stacey abrams",
+      "query": "rebecca bennett",
       "approx_searches": "500+",
-      "published_at": "2026-11-04T00:40:00Z",
+      "published_at": "2026-11-04T01:10:00Z",
       "related_news_urls": [
-        "https://www.ajc.com/politics/2026/11/stacey-abrams-uses-her-star-power-to-boost-democrats-in-georgia-and-beyond/",
-        "https://milwaukeecourier.com/news/2026/11/03/stacey-abrams-connects-black-leadership-to-americas-political-future",
-        "https://www.lawfaremedia.org/article/live-from-emory-law--stacey-abrams-joins-alex-bores---kevin-frazier"
+        "https://www.nbcnews.com/politics/2026-elections/new-jersey-house-results",
+        "https://www.nytimes.com/2026/10/31/nyregion/rebecca-bennett-nj-house-race.html",
+        "https://www.northjersey.com/story/news/2026/11/03/rebecca-bennett-tom-kean-polls-odds-who-is-winning/92582957007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5iNWa_6MkArU9hRPtmJ_DEsDyzqjpDRc3aokc5UE60Huc4VQcaSmNHy2W_Ps",
-      "image_credit": "The Atlanta Journal-Constitution",
-      "news": [
-        {
-          "url": "https://www.ajc.com/politics/2026/11/stacey-abrams-uses-her-star-power-to-boost-democrats-in-georgia-and-beyond/",
-          "title": "Stacey Abrams uses her star power to boost Democrats in Georgia and beyond.",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5iNWa_6MkArU9hRPtmJ_DEsDyzqjpDRc3aokc5UE60Huc4VQcaSmNHy2W_Ps"
-        },
-        {
-          "url": "https://milwaukeecourier.com/news/2026/11/03/stacey-abrams-connects-black-leadership-to-americas-political-future",
-          "title": "Stacey Abrams Connects Black Leadership to America's Political Future",
-          "publisher": "The Milwaukee Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKlDMkLDEHmSFXOR9agEtpQTHG8K3rdfyCVzeX9kZJx9uXgMkGfgxIt2lpb9Q"
-        },
-        {
-          "url": "https://www.lawfaremedia.org/article/live-from-emory-law--stacey-abrams-joins-alex-bores---kevin-frazier",
-          "title": "Live from Emory Law: Stacey Abrams joins Alex Bores & Kevin Frazier",
-          "publisher": "Lawfare",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBhQaZSust3ZqTk6oSOJGcVDsaGa0qoGPjyAFSwCrGdJXYrua1IvV6_IV6LVI"
-        }
-      ]
-    },
-    {
-      "query": "wdbj7",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T00:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
-        "https://www.cbsnews.com/atlanta/video/rain-chances-rising-across-georgia-as-week-continues/",
-        "https://weather.com/2026/11/03/forecast/national/election-day-maps-tracker"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB2txBGZBcEWESNNKNGy9Pe15c5IXp1c-W6wUyzyVYq_W28R2ZSEAnz8T0nN0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVSupvaUhTFA69MirU7FasK0epMWhFWVkjpuUlB2ChJf1enfGaFEcMI-avSI",
       "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
-          "title": "Floods and severe weather beset parts of the U.S. on Election Day",
+          "url": "https://www.nbcnews.com/politics/2026-elections/new-jersey-house-results",
+          "title": "New Jersey U.S. House Midterm Election 2026: Live Results",
           "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB2txBGZBcEWESNNKNGy9Pe15c5IXp1c-W6wUyzyVYq_W28R2ZSEAnz8T0nN0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVSupvaUhTFA69MirU7FasK0epMWhFWVkjpuUlB2ChJf1enfGaFEcMI-avSI"
         },
         {
-          "url": "https://www.cbsnews.com/atlanta/video/rain-chances-rising-across-georgia-as-week-continues/",
-          "title": "Rain chances rising across Georgia as week continues",
+          "url": "https://www.nytimes.com/2026/10/31/nyregion/rebecca-bennett-nj-house-race.html",
+          "title": "A Navy Pilot Tries to Flip a Key House Seat, Right by Trump’s Golf Club",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-UvCxxKX8ux1ecM6-zsG69LGI4CgKYJ845eAp2mZgBUjDhcuAEb4s1pH65K4"
+        },
+        {
+          "url": "https://www.northjersey.com/story/news/2026/11/03/rebecca-bennett-tom-kean-polls-odds-who-is-winning/92582957007/",
+          "title": "Will Rebecca Bennett win today? Latest polls in Bennett-Kean race",
+          "publisher": "Bergen Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1FE8QJI5l7rkVLZGZr5N1yHtBeJ_zfRTT4xCI8CkR-1w2XT331mC7XZtLeeA"
+        }
+      ]
+    },
+    {
+      "query": "tarrant county election results",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T01:10:00Z",
+      "related_news_urls": [
+        "https://www.fox4news.com/news/election-results-2026-midterm-tarrant-county",
+        "https://abcnews.com/Politics/advocates-rally-midterm-voters-after-dozens-polling-sites/story?id=137615179",
+        "https://www.democracydocket.com/news-alerts/voters-in-battleground-texas-county-face-longer-waits-after-gop-slashed-polling-places/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbyt1bVtNjlI2p0QTwdqwv3vKVFdd3zvSWWHl6CDsqGzwjSCBjaLZARVM1XUQ",
+      "image_credit": "FOX 4 News Dallas-Fort Worth",
+      "news": [
+        {
+          "url": "https://www.fox4news.com/news/election-results-2026-midterm-tarrant-county",
+          "title": "LIVE | Tarrant County 2026 midterm election results",
+          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbyt1bVtNjlI2p0QTwdqwv3vKVFdd3zvSWWHl6CDsqGzwjSCBjaLZARVM1XUQ"
+        },
+        {
+          "url": "https://abcnews.com/Politics/advocates-rally-midterm-voters-after-dozens-polling-sites/story?id=137615179",
+          "title": "Advocates rally midterm voters after dozens of polling sites shut down in 'swing' Texas county",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGsp0sNtyAmywkVD6q2xGp7-hrzBtbbuZ6cgBGn8p_nrqNXxXrYwRny_rnhVY"
+        },
+        {
+          "url": "https://www.democracydocket.com/news-alerts/voters-in-battleground-texas-county-face-longer-waits-after-gop-slashed-polling-places/",
+          "title": "Voters in battleground Texas county face longer waits after GOP slashed polling places",
+          "publisher": "Democracy Docket",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmVM7d5B8IbUs_Z3xp59oq4gFzgELPJhpKjhJMaJgljwBMzvIqSQjoSX1iWdY"
+        }
+      ]
+    },
+    {
+      "query": "saquon barkley trade",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T01:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50336880/sources-eagles-trade-star-rb-saquon-barkley",
+        "https://www.nfl.com/news/eagles-rb-saquon-barkley-assured-he-won-t-be-traded-i-want-to-be-one-of-the-reasons-why-we-fix-it",
+        "https://6abc.com/post/saquon-barkley-talks-future-philadelphia-eagles-6th-straight-loss-plan-being-here/20007772/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQPbhx0Mohuqyi6llEFJS9_QTx9lqI4du7uY4dz195FP16_ajsBQYCD9-bjKU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50336880/sources-eagles-trade-star-rb-saquon-barkley",
+          "title": "Sources: Saquon Barkley won't be traded by deadline despite Eagles' struggles",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQPbhx0Mohuqyi6llEFJS9_QTx9lqI4du7uY4dz195FP16_ajsBQYCD9-bjKU"
+        },
+        {
+          "url": "https://www.nfl.com/news/eagles-rb-saquon-barkley-assured-he-won-t-be-traded-i-want-to-be-one-of-the-reasons-why-we-fix-it",
+          "title": "Eagles RB Saquon Barkley assured he won't be traded: 'I want to be one of the reasons why we fix it'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_35oLfxF0IQfa_7X9t_U9E43k3OZL2a7k0u9kNyGGafVDfghThdnnYZzrUJo"
+        },
+        {
+          "url": "https://6abc.com/post/saquon-barkley-talks-future-philadelphia-eagles-6th-straight-loss-plan-being-here/20007772/",
+          "title": "Saquon Barkley talks about future with Philadelphia Eagles after 6th straight loss: 'I plan on being here'",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHFHgcco5TO-cWQ_BCmfD9rFeb8YFlcekHIyuk_g2NhI7JUlNVbmQepOqMJEo"
+        }
+      ]
+    },
+    {
+      "query": "governor term limits",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T01:10:00Z",
+      "related_news_urls": [
+        "https://www.wwltv.com/article/news/politics/louisiana-politics/term-limits-for-louisiana-governors-on-the-ballot-would-they-apply-to-bel-edwards-jindal/289-384c23c0-8632-4ac6-b030-2b807b44c0e1",
+        "https://www.kplctv.com/2026/10/27/what-do-amendments-mean-breaking-down-10-proposals-nov-3-ballot/",
+        "https://www.audacy.com/wwl/news/local/louisiana-election-2678146391"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE2x-ivJUHkUjpKdCNE58_Zkla9lYLtHcvOkpM0XhQ0dAVwxIekUnk1lDuK-s",
+      "image_credit": "WWLTV.com",
+      "news": [
+        {
+          "url": "https://www.wwltv.com/article/news/politics/louisiana-politics/term-limits-for-louisiana-governors-on-the-ballot-would-they-apply-to-bel-edwards-jindal/289-384c23c0-8632-4ac6-b030-2b807b44c0e1",
+          "title": "Term limits for Louisiana governors on the ballot. Would they apply to Edwards, Jindal?",
+          "publisher": "WWLTV.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE2x-ivJUHkUjpKdCNE58_Zkla9lYLtHcvOkpM0XhQ0dAVwxIekUnk1lDuK-s"
+        },
+        {
+          "url": "https://www.kplctv.com/2026/10/27/what-do-amendments-mean-breaking-down-10-proposals-nov-3-ballot/",
+          "title": "What do the amendments mean? Breaking down 10 proposals on Nov. 3 ballot",
+          "publisher": "KPLC 7 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqFt9rFr1nkwyRKmD6Zvy323lrx8C9jKXNC1mpZjSW5AEc4dRUsLxn1VrRENQ"
+        },
+        {
+          "url": "https://www.audacy.com/wwl/news/local/louisiana-election-2678146391",
+          "title": "Louisiana Midterm Guide: All 10 constitutional amendments explained; New Orleans weighs charter amendment",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFb3Ca4UwrPOZJbw7MaYr-768a6CLonmjlRlUpjIOmLpJeZosmbmT3sbWPK20"
+        }
+      ]
+    },
+    {
+      "query": "lucy mcbath",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T01:10:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/atlanta/news/georgia-6-congressional-district-election-results-2026/",
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-georgia-us-house-13.html",
+        "https://www.news8000.com/news/politics/national-politics/democrat-lucy-mcbath-wins-reelection-to-u-s-house-in-georgias-6th-congressional-district/article_a977d6a2-19c4-5cb1-8ecc-c560b4f4b5d3.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRsdsARP6nTNcyRAgKF03f25AOkrQ-TweYQvxmWTR3dqQ3BpMpWZV6UFluUk",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/atlanta/news/georgia-6-congressional-district-election-results-2026/",
+          "title": "Lucy McBath wins fifth term in Congress, defeating Republican challenger in Georgia's 6th District",
           "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLNGTGCfp_LLctLPr47NfMZ924ItkJU4mzidEpYfMYzM-gY75y84PjLl3DQFM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRsdsARP6nTNcyRAgKF03f25AOkrQ-TweYQvxmWTR3dqQ3BpMpWZV6UFluUk"
         },
         {
-          "url": "https://weather.com/2026/11/03/forecast/national/election-day-maps-tracker",
-          "title": "Election Day 2026 weather forecast: Nov. 3 maps and tracker",
-          "publisher": "The Weather Channel",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-georgia-us-house-13.html",
+          "title": "Georgia 13th Congressional District 2026: Live Election Results, Clark vs. Chavez",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-7lAs_marqVYNXqjxqmNXLN26KKsEmTjGtwcQpnwcUliRklncOquc6Z49rw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPBHs8TKo9QldctkNQD1-jx7rFnCDS-iYj7neZSMwkqBGGQewlTysq59K7tFI"
+        },
+        {
+          "url": "https://www.news8000.com/news/politics/national-politics/democrat-lucy-mcbath-wins-reelection-to-u-s-house-in-georgias-6th-congressional-district/article_a977d6a2-19c4-5cb1-8ecc-c560b4f4b5d3.html",
+          "title": "Democrat Lucy McBath wins reelection to U.S. House in Georgia's 6th Congressional District",
+          "publisher": "news8000.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUeEdrUctG-2qu2qJTVc0jRkSD6e7NMVbMVAJemI6lXMiTSW3qLsGdZK6YRcA"
         }
       ]
     },
     {
-      "query": "wesh 2 news",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T00:40:00Z",
+      "query": "marcy kaptur",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T01:10:00Z",
       "related_news_urls": [
-        "https://www.mercurynews.com/2026/11/03/bay-area-weather-light-rain-right-on-schedule/",
-        "https://www.wesh.com/article/lowering-rain-chances-this-weekend/74326951",
-        "https://www.wfxg.com/news/next-system-moves-in-mid-week-more-dry-air-with-mild-conditions-afterwards/article_613e4f14-d2fe-4b40-ba2e-3d9ccb8bf06d.html"
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-ohio-us-house-9.html",
+        "https://www.foxnews.com/video/6407796838112",
+        "https://www.toledoblade.com/local/politics/2026/11/01/kaptur-merrin-rematch-ohios-9th-congressional-district/stories/20261031025"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJ77JsgmWWhXvTMQhddLHA_1gm3Pg9dsjpM34zZzFxEOQTVXO7Ba2rgx-2CEY",
-      "image_credit": "The Mercury News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOWqNRNhuHewNHQ3rR1cvqvsPLNKJWD-wTmf4XZkEGWBjba33r9R7hdBnAKKw",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.mercurynews.com/2026/11/03/bay-area-weather-light-rain-right-on-schedule/",
-          "title": "Next soaking for Bay Area will be from the sun",
-          "publisher": "The Mercury News",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-ohio-us-house-9.html",
+          "title": "Ohio Ninth Congressional District 2026: Live Election Results, Kaptur vs. Merrin",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJ77JsgmWWhXvTMQhddLHA_1gm3Pg9dsjpM34zZzFxEOQTVXO7Ba2rgx-2CEY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOWqNRNhuHewNHQ3rR1cvqvsPLNKJWD-wTmf4XZkEGWBjba33r9R7hdBnAKKw"
         },
         {
-          "url": "https://www.wesh.com/article/lowering-rain-chances-this-weekend/74326951",
-          "title": "Lowering rain chances should help jumpstart cleanup efforts through the weekend! 11.3.2026",
-          "publisher": "WESH",
+          "url": "https://www.foxnews.com/video/6407796838112",
+          "title": "Ohio Republican looks to unseat longtime Democrat in key House race",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbc98B7q6BrUZLhAu-CZ0PEh2fMjSBw6zRz9xCjYpJB7WY9IWPg9k5UONEHk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCI2aj5qeLTh1P7mLL7qEoKSQ504XOEIFJOdFK6ARYpCZh8vR7v717nUdCX_Y"
         },
         {
-          "url": "https://www.wfxg.com/news/next-system-moves-in-mid-week-more-dry-air-with-mild-conditions-afterwards/article_613e4f14-d2fe-4b40-ba2e-3d9ccb8bf06d.html",
-          "title": "Next system moves in mid-week; more dry air with mild conditions afterwards",
-          "publisher": "WFXG",
+          "url": "https://www.toledoblade.com/local/politics/2026/11/01/kaptur-merrin-rematch-ohios-9th-congressional-district/stories/20261031025",
+          "title": "Kaptur and Merrin rematch for Ohio's 9th Congressional District",
+          "publisher": "Toledo Blade",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgbPZOicMjqOa-oDKgACx5QxJE3hTiDklokZYtWhz7udzO_tDMpeEUr4ypv0s"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvOFcHyG6xJbNJavIe-vx_FzxN6LQEbXoITMTxuTj9jernlEoRYZa8L89LS9c"
         }
       ]
     },
     {
-      "query": "raphael warnock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T00:40:00Z",
+      "query": "ducks vs canucks",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T01:10:00Z",
       "related_news_urls": [
-        "https://www.politico.com/news/magazine/2026/11/01/raphael-warnock-midterms-2028-south-democrats-01144066",
-        "https://www.cnn.com/2026/11/01/politics/video/warnock-2028-sotu",
-        "https://katu.com/news/nation-world/georgia-senator-says-2028-may-be-theoretical-if-democrats-lose-the-midterms?teaserSource=databricks"
+        "https://www.nhl.com/canucks/news/canucks-host-ducks-at-rogers-arena-on-tuesday-night-for-diwali-night",
+        "https://canucksarmy.com/news/vancouver-canucks-anaheim-ducks-game-preview-kevin-lankinen",
+        "https://sports.yahoo.com/articles/lineup-notes-lankinen-starts-mancini-183119176.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-ZxZJ8SKlezbZX4KP71qXzMUFI51AFhKYPnbZZqw4a_uACFTyZsC_9Irocw",
-      "image_credit": "Politico",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgKbv4WGhsqLrgHwqMnyUSggUCt46EiZNjj75p9_vG-n7cQ6bHN7S9OFyO2ws",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.politico.com/news/magazine/2026/11/01/raphael-warnock-midterms-2028-south-democrats-01144066",
-          "title": "Faith, the South and Jon Ossoff: Raphael Warnock on Democrats’ Next Chapter",
-          "publisher": "Politico",
+          "url": "https://www.nhl.com/canucks/news/canucks-host-ducks-at-rogers-arena-on-tuesday-night-for-diwali-night",
+          "title": "Canucks Host Ducks at Rogers Arena on Tuesday Night for Diwali Night | Vancouver Canucks",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-ZxZJ8SKlezbZX4KP71qXzMUFI51AFhKYPnbZZqw4a_uACFTyZsC_9Irocw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgKbv4WGhsqLrgHwqMnyUSggUCt46EiZNjj75p9_vG-n7cQ6bHN7S9OFyO2ws"
         },
         {
-          "url": "https://www.cnn.com/2026/11/01/politics/video/warnock-2028-sotu",
-          "title": "Senator Warnock says he'll be running for 'high office' in 2028 ... but doesn't specify which high office",
-          "publisher": "CNN",
+          "url": "https://canucksarmy.com/news/vancouver-canucks-anaheim-ducks-game-preview-kevin-lankinen",
+          "title": "Scenes from morning skate: Lankinen to make first start in two weeks as Canucks host Ducks",
+          "publisher": "Canucks Army",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpozpATYk_42St4vkpo3l86_-43_iTTSmL1VewLtm7Fkyak_LKVYJHyyVW5k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hVBVTa7ITkd5EwrETVYUwhYXBwJgKFXqkR_J5Yp1iutCSl_mtajtWOJeado"
         },
         {
-          "url": "https://katu.com/news/nation-world/georgia-senator-says-2028-may-be-theoretical-if-democrats-lose-the-midterms?teaserSource=databricks",
-          "title": "Georgia senator says 2028 may be 'theoretical' if Democrats lose the midterms",
-          "publisher": "KATU",
+          "url": "https://sports.yahoo.com/articles/lineup-notes-lankinen-starts-mancini-183119176.html",
+          "title": "Lineup Notes: Lankinen Starts, Mancini Draws In As Canucks Battle The Ducks",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDlLXW4DMW9NkqOoTOF_Y06eIErskuL13JOUwSKpXkUXqDGLq_a74OmlS48Mk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnhdSmjipdKXyYjMwcmvgCqG-ILR06On3QARgHvBmuhH78gNwxmw4YK83ovMQ"
         }
       ]
     }
