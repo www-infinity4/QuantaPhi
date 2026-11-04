@@ -59,3 +59,9 @@ test('old activity cannot follow the wrong conversation',()=>{
  const next=projectVerifiedJobTransitions(changed,first.markers);
  assert.equal(next.events.length,1);
 });
+
+test('Moltnook signed engineering runs can be linked without accepting arbitrary URLs',()=>{
+ const copy=structuredClone(original);
+ copy.context.color_jobs[0].progress.runUrl='https://github.com/www-infinity4/Moltnook/actions/runs/41875539597';
+ assert.equal(projectVerifiedJobTransitions(copy).events[0].runUrl,copy.context.color_jobs[0].progress.runUrl);
+});
