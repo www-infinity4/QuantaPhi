@@ -86,6 +86,9 @@
   let generation = 0;
   let playbackRequested = false;
   let newArrivalWaiting = false;
+  // Playback failures are source-specific; a broken recording must not end the station.
+  const unavailableSources = new Set();
+  let skippedSinceSuccess = 0;
   const songCount = () => tracks.length+' songs · newest first';
   function applyCatalog(incoming,origin) {
     const before = new Set(tracks.map(track=>track.url));
@@ -151,24 +154,44 @@
       if (current !== generation) return;
       failures = 0;
       setPlaying(true);
-      status.textContent = tracks[trackIndex].title+' · '+songCount();
-    }).catch(() => {
-      if (current !== generation) return;
-      playbackRequested = false;
-      setPlaying(false);
-      status.textContent = 'Playback unavailable · try Full station';
+      status.textContent = tracks[trackIndex].title+' · '+songCount()+
+        (skippedSinceSuccess?' · Skipped '+skippedSinceSuccess+' unavailable source(s)':'');
+      skippedSinceSuccess=0;
+    }).catch(error => {
+      if (current !== generation || !playbackRequested) return;
+      // Android blocks unattended starts: respect that policy rather than
+      // racing through songs without a fresh user tap.
+      if (error?.name === 'NotAllowedError' || error?.name === 'SecurityError') {
+        playbackRequested = false;
+        setPlaying(false);
+        status.textContent = 'Tap Play again to allow audio on this device.';
+        return;
+      }
+      unavailableSources.add(tracks[trackIndex].url);
+      skippedSinceSuccess++;
+      console.warn('Infinity Radio skipped unavailable song',tracks[trackIndex].title,error?.name||'play rejected');
+      advance('unavailable');
     });
   }
-  function advance() {
-    // A queued media error/ended event is not a new Play gesture.
-    if (!playbackRequested) return;
-    if (++failures > tracks.length) {
+  function advance(reason='ended') {
+    // A completed song is healthy; only actual failures count toward the retry limit.
+    if (!playbackRequested || !tracks.length) return;
+    if (reason === 'ended') failures=0;
+    else if (++failures >= Math.min(5,tracks.length)) {
       playbackRequested = false; audio.pause(); ++generation; setPlaying(false);
-      status.textContent = 'Audio sources unavailable · open Full station';
+      status.textContent = 'Several audio sources could not play. Tap Play to retry.';
       return;
     }
-    trackIndex = newArrivalWaiting ? 0 : (trackIndex + 1) % tracks.length;
-    newArrivalWaiting=false;
+    const startIndex=trackIndex;
+    do {
+      trackIndex = newArrivalWaiting ? 0 : (trackIndex+1)%tracks.length;
+      newArrivalWaiting=false;
+    } while(unavailableSources.has(tracks[trackIndex].url) && trackIndex!==startIndex);
+    if (unavailableSources.has(tracks[trackIndex].url)) {
+      playbackRequested=false;audio.pause();++generation;setPlaying(false);
+      status.textContent='No playable songs remain in this session. Tap Play to retry.';
+      return;
+    }
     setTrack();
     start();
   }
@@ -186,12 +209,19 @@
     } else if(tracks.length) {
       playbackRequested = true;
       failures = 0;
+      // A deliberate new Play gesture retries temporary network failures.
+      unavailableSources.clear();
+      skippedSinceSuccess=0;
       start();
     }
   });
-  audio.addEventListener('ended',advance);
+  audio.addEventListener('ended',()=>advance('ended'));
   audio.addEventListener('error',() => {
-    if (audio.getAttribute('src') && !audio.ended) advance();
+    if (!playbackRequested || !audio.getAttribute('src') || audio.ended) return;
+    unavailableSources.add(tracks[trackIndex].url);
+    skippedSinceSuccess++;
+    console.warn('Infinity Radio skipped failed media source',tracks[trackIndex].title);
+    advance('unavailable');
   });
   audio.addEventListener('pause',() => { if (audio.paused) setPlaying(false); });
   audio.addEventListener('playing',() => {

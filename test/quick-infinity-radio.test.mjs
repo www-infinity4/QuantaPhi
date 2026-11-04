@@ -21,10 +21,11 @@ test('audio begins only on explicit Play; no autoplay and no speculative wallet 
 });
 
 test('player handles errors and continues playlist without background media preloading',()=>{
-  assert.match(player,/audio\.addEventListener\('ended',advance\)/);
+  assert.match(player,/audio\.addEventListener\('ended',\(\)=>advance\('ended'\)\)/);
   assert.match(player,/audio\.addEventListener\('error'/);
-  assert.match(player,/if \(\+\+failures > tracks\.length\)/);
-  assert.match(player,/Playback unavailable/);
+  assert.match(player,/if \(\+\+failures >= Math\.min\(5,tracks\.length\)\)/);
+  assert.match(player,/unavailableSources\.add/);
+  assert.match(player,/Tap Play again to allow audio/);
 });
 
 test('original cover has a known bundled image and fails gracefully',()=>{

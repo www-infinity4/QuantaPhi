@@ -1,0 +1,20 @@
+name: Infinity Physics visit rotation
+on:
+  pull_request:
+    paths: ['infinity-concepts.js', 'test/physics-visit-rotation.test.cjs', 'test/physics-card-images.test.cjs', '.github/workflows/physics-card-rotation.yml']
+  push:
+    branches: [main]
+    paths: ['infinity-concepts.js', 'test/physics-visit-rotation.test.cjs', 'test/physics-card-images.test.cjs', '.github/workflows/physics-card-rotation.yml']
+permissions:
+  contents: read
+jobs:
+  physics-rotation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          node --check infinity-concepts.js
+          node --test test/physics-visit-rotation.test.cjs test/physics-card-images.test.cjs
