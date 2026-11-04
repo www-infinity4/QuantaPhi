@@ -129,3 +129,15 @@ test('a failed deployment does not become completion, wallet credit or operator 
  assert.equal(s.credits,0);
  assert.doesNotMatch(JSON.stringify(s),/spendableCredits|GitsMinted/);
 });
+
+
+test('the pulse never calls a technical operation complete without a receipt ID',()=>{
+ let s=advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
+ s=advanceLiveBits(s,{type:'memory',state:'retrieved'});
+ s=advanceLiveBits(s,{type:'tool_started',tool:'cloudflare.worker.deploy',operationId:'op_noreceipt_001'});
+ s=advanceLiveBits(s,{type:'tool_receipt',tool:'cloudflare.worker.deploy',operationId:'op_noreceipt_001',
+  status:'complete',detail:'The model says deployment succeeded'});
+ assert.equal(s.entries.at(-1).state,'unverified');
+ assert.equal(s.candidates,0);
+ assert.equal(s.credits,0);
+});
