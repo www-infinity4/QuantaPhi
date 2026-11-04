@@ -1,3 +1,4 @@
+import {readFileSync} from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {isBuildHistoryQuestion,readRecentBuildHistory} from '../bubbles-public-build-history.mjs';
@@ -30,4 +31,12 @@ test('today uses Central Time and reports commits separately from open PRs',asyn
 
 test('a GitHub outage never becomes a claim that work is finished or absent',async()=>{
  await assert.rejects(()=>readRecentBuildHistory({question:'show recent builds',fetcher:async()=>({ok:false,status:403}),now}),/unavailable/);
+});
+
+
+test('Bubbles invokes public receipt check only for explicit retrospective build-history questions',()=>{
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(source,/import\('\\/bubbles-public-build-history\\.mjs\?v=/);
+ assert.match(source,/isBuildHistoryQuestion\(request\)/);
+ assert.match(source,/readRecentBuildHistory\(\{question:request/);
 });
