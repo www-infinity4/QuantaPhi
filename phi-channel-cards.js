@@ -164,7 +164,8 @@ function showProgram(playback,program,token){
  url.searchParams.set('autoplay','1');url.searchParams.set('playsinline','1');
  url.searchParams.set('controls','1');url.searchParams.set('enablejsapi','1');
  url.searchParams.set('origin',location.origin);url.searchParams.set('rel','0');
- if(program.start)url.searchParams.set('start',String(program.start));
+ const playbackStart=Number.isFinite(program.playbackStartSeconds)?program.playbackStartSeconds:program.start;
+ if(playbackStart)url.searchParams.set('start',String(playbackStart));
  frame.src=url.toString();
  playback.frame=frame;playback.screenSlot.append(frame);
  playback.status.textContent='Opening '+program.title+' in the video player. Playback is not yet confirmed.';
