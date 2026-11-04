@@ -1,0 +1,31 @@
+name: Executor and Media Star receipt safety
+on:
+  pull_request:
+    paths:
+      - 'workers/executor-insights/**'
+      - 'test/executor-insights.test.mjs'
+      - 'media-star-interactions.js'
+      - 'bubbles-executor-insights.js'
+      - 'index.html'
+      - 'bubbles.html'
+      - 'bubbles-card-host.html'
+      - '.github/workflows/executor-media-star-receipts.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  receipt-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify executor isolation and real card interaction contracts
+        run: node --test test/executor-insights.test.mjs
+      - name: Check browser and Worker syntax
+        run: |
+          node --check media-star-interactions.js
+          node --check bubbles-executor-insights.js
+          node --check workers/executor-insights/worker.mjs
