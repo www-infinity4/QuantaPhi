@@ -9,8 +9,11 @@ function safeRunUrl(value,repository){
  try{
   const url=new URL(value);
   if(url.origin!=='https://github.com'||url.search||url.hash||url.username||url.password)return '';
-  const prefix='/'+repository+'/';
-  if(!url.pathname.startsWith(prefix))return '';
+  // The general repository engineer runs in Moltnook, even when the ticket
+  // changes QuantaPhi source. Keep its signed GitHub Actions proof visible.
+  const prefixes=['/'+repository+'/','/www-infinity4/Moltnook/'];
+  const prefix=prefixes.find(value=>url.pathname.startsWith(value));
+  if(!prefix)return '';
   const action=url.pathname.slice(prefix.length);
   return /^(?:actions\/runs\/[0-9]+|pull\/[0-9]+|commit\/[0-9a-f]{7,40})$/.test(action)?url.href:'';
  }catch{return ''}
