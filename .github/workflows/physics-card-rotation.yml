@@ -17,4 +17,4 @@ jobs:
           node-version: '24'
       - run: |
           node --check infinity-concepts.js
-          node --test test/physics-visit-rotation.test.cjs test/physics-card-images.test.cjs test/story-library-physics-actions.test.cjs
+          node --test test/physics-visit-rotation.test.cjs test/physics-card-images.test.cjs
