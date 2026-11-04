@@ -49,3 +49,25 @@ test('public click endpoint cannot mint Quant, GIT or Bubble Bit assets',async()
  const r=await worker.fetch(new Request('https://example.workers.dev/v1/executor/credit',{method:'POST',headers:{Origin:'https://quantaphi.org'}}),{});
  assert.equal(r.status,404);
 });
+
+test('unauthenticated viewers cannot read an available executor database',async()=>{
+ const {default:worker}=await import('../workers/executor-insights/worker.mjs');
+ const r=await worker.fetch(new Request('https://example.workers.dev/v1/executor/summary'),{DB:{}});
+ assert.equal(r.status,401);
+});
+test('source wires two public card entrypoints without client-side asset minting',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const home=readFileSync('index.html','utf8'),host=readFileSync('bubbles-card-host.html','utf8');
+ const chat=readFileSync('bubbles.html','utf8');
+ const capture=readFileSync('media-star-interactions.js','utf8');
+ const wallet=readFileSync('bubbles-executor-insights.js','utf8');
+ const schema=readFileSync('workers/executor-insights/schema.sql','utf8');
+ assert.match(home,/media-star-interactions\\.js/);
+ assert.match(host,/media-star-interactions\\.js/);
+ assert.match(chat,/bubbles-executor-insights\\.js/);
+ assert.match(capture,/event\\.isTrusted/);
+ assert.match(capture,/IntersectionObserver/);
+ assert.match(schema,/CREATE UNIQUE INDEX IF NOT EXISTS media_star_impression_once/);
+ assert.doesNotMatch(capture,/mintToken|spendInfinity|wallet\\/spend/);
+ assert.doesNotMatch(wallet,/mintToken|localStorage\\.setItem/);
+});
