@@ -3387,6 +3387,38 @@ screenShareButton.setAttribute('aria-pressed','false');
 screenShareButton.addEventListener('click',()=>void sendMessage((nativeOverlay?nativeScreenSharing:pageScreenSharing)?'stop screen sharing':'start screen sharing'));
 tools.append(screenShareButton);
 const pendingGithubReceipts=new Set();
+const GITHUB_PENDING_KEY='bubbles-pending-github-work-v1';
+const githubResumeStarted=new Set();
+function readPendingGithubWork(){
+ try{
+  const saved=JSON.parse(sessionStorage.getItem(GITHUB_PENDING_KEY)||'[]');
+  if(!Array.isArray(saved))return [];
+  return saved.filter(x=>x&&typeof x.thread==='string'&&/^[a-zA-Z0-9_-]{1,100}$/.test(x.thread)&&
+   typeof x.requestId==='string'&&/^[0-9a-f-]{36}$/i.test(x.requestId)&&
+   Number.isFinite(x.at)&&x.at<=Date.now()&&Date.now()-x.at<86400000).slice(-6);
+ }catch{return []}
+}
+function rememberPendingGithubWork(requestId,thread){
+ try{
+  const rows=readPendingGithubWork().filter(x=>x.requestId!==requestId);
+  rows.push({requestId,thread,at:Date.now()});
+  sessionStorage.setItem(GITHUB_PENDING_KEY,JSON.stringify(rows.slice(-6)));
+ }catch{/* Browser storage optional; receipt watching runs in memory. */}
+}
+function clearPendingGithubWork(requestId){
+ try{sessionStorage.setItem(GITHUB_PENDING_KEY,
+  JSON.stringify(readPendingGithubWork().filter(x=>x.requestId!==requestId)))}catch{}
+}
+function resumePendingGithubReceipts(){
+ // A saved opaque request ID is not authorization. The current verified owner
+ // must read the actual receipt from Brain before a result is displayed.
+ for(const restored of readPendingGithubWork()){
+  if(restored.thread!==activeThread)continue;
+  if(githubResumeStarted.has(restored.requestId))continue;
+  githubResumeStarted.add(restored.requestId);
+  watchDirectGithubReceipt(restored.requestId,null,'');
+ }
+}
 async function githubReceipt(requestId){
  const headers=await verifiedOwnerHeaders();
  const r=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
@@ -3417,6 +3449,7 @@ async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEv
 function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence=''){
  if(pendingGithubReceipts.has(requestId))return;
  const receiptThread=activeThread;
+ rememberPendingGithubWork(requestId,receiptThread);
  pendingGithubReceipts.add(requestId);
  void (async()=>{
   try{
@@ -3425,6 +3458,7 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
     let result;
     try{result=await githubReceipt(requestId);}catch{continue;}
     if(result.status==='working'||result.error==='receipt_not_found')continue;
+    clearPendingGithubWork(requestId);
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
     const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
@@ -3932,6 +3966,7 @@ async function pollBrainProgress(){
   }
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
   brainConnectionState('Connected · Work status available in Options', 'connected');
+  resumePendingGithubReceipts();
   if(!brainInboxInitialized){
    brainInboxInitialized=true;
    recordBrainNotice('Work history is connected. Detailed receipts are available here; waiting and running are not the same as finished.');
