@@ -43,7 +43,7 @@ function playerFixture(snapshotCount=129){
    insertAdjacentElement(){},setAttribute(key,value){attrs.set(key,String(value))},
    getAttribute(key){return attrs.get(key)||this[key]||null},
    addEventListener(type,listener){listeners.set(type,listener)},
-   emit(type){listeners.get(type)?.()},
+   emit(type,event={preventDefault(){}}){listeners.get(type)?.(event)},
    play(){this.paused=false;return new Promise((resolve,reject)=>pending.push({resolve,reject}))},
    pause(){this.paused=true;this.emit('pause')}
   };
@@ -58,7 +58,7 @@ function playerFixture(snapshotCount=129){
    localStorage:{getItem(key){return store.get(key)||null},setItem(key,value){store.set(key,value)}},
    fetch:async(url)=>({ok:true,json:async()=>({tracks:String(url).includes('raw.githubusercontent.com')?stableCatalog:catalog})})});
  return {audio:all.find(node=>node.tagName==='audio'),play:document.getElementById('irQuickPlay'),
-  status:all.find(node=>node.className==='ir-quick-status'),next:document.getElementById('irQuickNext'),pending,store};
+  status:all.find(node=>node.className==='ir-quick-status'),next:document.getElementById('irQuickNext'),search:document.getElementById('irQuickSearch'),searchInput:document.getElementById('irQuickQuery'),pending,store};
 }
 
 const catalogReady=async()=>{await new Promise(resolve=>setImmediate(resolve))};
@@ -126,4 +126,24 @@ test('stale public 129-song catalog is supplemented by verified 274-song bootstr
  assert.equal(JSON.parse(f.store.get('infinityRadio:quickFullCatalog:v1')).length,274);
  f.play.emit('click');
  assert.match(f.audio.src,/catalog-274\.mp3$/);
+});
+
+test('Search & Listen plays a matching verified catalog song inside the existing card',async()=>{
+ const f=playerFixture();await catalogReady();
+ assert.ok(f.search,'search form should be mounted in the radio card');
+ assert.ok(f.searchInput,'radio search input should be mounted in the card');
+ f.searchInput.value='catalog song 128';
+ f.search.emit('submit');
+ assert.match(f.audio.src,/catalog-128\\.mp3$/);
+ assert.equal(f.pending.length,1,'the radio must attempt one in-card audio play');
+ assert.doesNotMatch(player,/youtube\\.com\\/results|location\\.(?:href|assign|replace)/i);
+});
+
+test('Search & Listen never opens YouTube or starts playback when no verified song matches',async()=>{
+ const f=playerFixture();await catalogReady();
+ f.searchInput.value='an unavailable band';
+ f.search.emit('submit');
+ assert.equal(f.pending.length,0,'no fabricated result should start audio');
+ assert.match(f.status.textContent,/not found|not in/i);
+ assert.equal(f.play.getAttribute('aria-pressed'),'false');
 });
