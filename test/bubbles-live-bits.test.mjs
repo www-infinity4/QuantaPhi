@@ -66,3 +66,27 @@ test('the same live status line loads on every Bubbles website entrypoint withou
 function requireSource(){
  return file=>readFileSync(new URL('../'+file,import.meta.url),'utf8');
 }
+
+
+test('signed Brain job steps appear one per recorded change, never as wallet credit',()=>{
+ let s=advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
+ s=advanceLiveBits(s,{type:'job_step',source:'owner_ticket_snapshot',repository:'www-infinity4/QuantaPhi',
+  agent:'greenbeans',status:'working',stage:'Fix Bubbles chat',summary:'Reading exact source and GitHub tests'});
+ assert.match(s.live,/GitHub.*greenbeans.*working/i);
+ assert.match(s.entries.at(-1).detail,/Reading exact source/);
+ assert.equal(s.credits,0);
+ assert.equal(s.candidates,0);
+ const before=s.entries.length;
+ s=advanceLiveBits(s,{type:'job_step',source:'unverified_model_text',repository:'www-infinity4/QuantaPhi',status:'deployed_verified'});
+ assert.equal(s.entries.length,before);
+});
+test('repeated unchanged 15-second ticket polls must not look like new engineering',()=>{
+ let s=newLiveBitsState();
+ const evt={type:'job',repository:'www-infinity4/QuantaPhi',status:'working'};
+ s=advanceLiveBits(s,evt);
+ const n=s.entries.length;
+ s=advanceLiveBits(s,evt);
+ assert.equal(s.entries.length,n);
+ s=advanceLiveBits(s,{...evt,status:'blocked'});
+ assert.equal(s.entries.length,n+1);
+});
