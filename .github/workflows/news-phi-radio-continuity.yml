@@ -1,0 +1,25 @@
+name: News Phi radio continuity
+on:
+  pull_request:
+    paths:
+      - 'news-phi-continuous-audio.js'
+      - 'index.html'
+      - 'test/news-phi-continuous-audio.test.mjs'
+      - '.github/workflows/news-phi-radio-continuity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  radio-news-navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify syntax and News Phi radio continuity
+        run: |
+          node --check news-phi-continuous-audio.js
+          node --test test/news-phi-continuous-audio.test.mjs
