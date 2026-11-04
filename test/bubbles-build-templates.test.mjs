@@ -83,3 +83,14 @@ test('Termux-friendly CLI prints non-executing JSON without model API',async()=>
  assert.equal(miss.status,1);
  assert.equal(miss.stdout,'');
 });
+
+test('template source references exist and owner chat only receives plan guidance',async()=>{
+ const {existsSync,readFileSync}=await import('node:fs');
+ for(const template of BUILD_TEMPLATES)for(const path of template.sourcePaths)
+  assert.ok(existsSync(new URL('../'+path,import.meta.url)),template.id+' -> '+path);
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const discover=readFileSync(new URL('../bubbles-project-discovery.mjs',import.meta.url),'utf8');
+ assert.match(discover,/export \{findBuildTemplate,makeBuildPacket\} from '\.\/bubbles-build-templates\.mjs'/);
+ assert.match(ui,/reusableBuildPlan=!embedded&&ownerReady/);
+ assert.match(ui,/Reusable source template \(planning hint only; no source read\/write authority or execution receipt\)/);
+});
