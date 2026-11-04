@@ -2366,7 +2366,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   let reply,spokenResult='Blocked.';
   try{
    if(embedded)throw Error('verified_owner_session_required');
-   const module=await import('/bubbles-star-continuation.mjs?v=20261101-star-proof1');
+   const module=await import('/bubbles-star-continuation.mjs?v=20261104-owner-continue2');
    const result=await module.continueSavedWork({
     fetcher:bubblesFetch,ownerHeaders:verifiedOwnerHeaders,base:BRAIN,maxSlots:8
    });
