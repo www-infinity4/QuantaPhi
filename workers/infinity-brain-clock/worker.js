@@ -21,6 +21,7 @@ import {handleQuickCardBrowser,readBoundedJson} from './quick-card-browser.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
+import {describeRunnerIdle} from './runner-claim-idle.mjs';
 import {DEFERRED_REVIEW_INTERVAL_MS,sourceRecoveryEligibility,inspectDeferredSources,recoveryDecision} from './deferred-recovery.mjs';
 import {ticketStatusFromJobs} from './ticket-status.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
@@ -337,7 +338,18 @@ export class BrainClock extends DurableObject{
      return Response.json({ok:true,lease});
     }
    }
-   return Response.json({ok:true,lease:null});
+   // A valid signed writer run with no lease is not a completed engineering
+   // iteration. Report only bounded aggregate admission facts, never ticket
+   // IDs, owner hashes, instructions or raw blocker strings.
+   const adapterMatches=admission.allowed.filter(({job})=>
+    !['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status)&&
+    (engine?/^www-infinity4\/[\w.-]+$/.test(job.repository||''):supported(job)))
+    .length;
+   const idle=describeRunnerIdle({candidateCount:candidates.length,admission,
+    adapterMatches,scanLimited:(rows.results||[]).length>=100});
+   await this.ctx.storage.put('writer-idle-summary:'+ (engine?'repository-engine':'interface-writer'),
+    {at:Date.now(),...idle});
+   return Response.json({ok:true,lease:null,idle});
   }
   const lease=await this.ctx.storage.get(String(body.key||''));
   if(path==='/runner/source-review-receipt'){
@@ -1083,8 +1095,19 @@ export async function ownerTickets(env,path,body){
  }
  if(path==='/work/continuity')return ownerContinuitySnapshot(db,ownerHash,body);
  if(path==='/work/tickets/list'){
-  const rows=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100").bind(ownerHash).all();
-  return {status:200,result:{ok:true,notificationScope:ownerHash,tickets:(rows.results||[]).map(publicTicket)}};
+  // Bubbles ordinary work history stays unchanged. A signed owner continuation
+  // needs an older eligible ticket even after 100 more-recent blocked updates.
+  // Read-only selection preserves the same owner_hash partition, and the later
+  // /run-next and /runner/claim paths independently recheck every job gate.
+  const continuation=body?.continuation===true;
+  const sql=continuation?
+   "SELECT * FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY CASE status WHEN 'ready' THEN 0 WHEN 'working' THEN 1 ELSE 2 END,updated_at DESC,id DESC LIMIT 101":
+   "SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100";
+  const rows=await db.prepare(sql).bind(ownerHash).all();
+  const found=Array.isArray(rows?.results)?rows.results:[];
+  return {status:200,result:{ok:true,notificationScope:ownerHash,
+   tickets:(continuation?found.slice(0,100):found).map(publicTicket),
+   ...(continuation?{continuationScope:'owner_robot_directions',truncated:found.length>100}:{})}};
  }
  if(path==='/work/tickets/approve-all'){
   // One verified owner click authorizes a bounded BATCH, not 50 GitHub dispatches.
