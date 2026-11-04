@@ -3,83 +3,223 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T18:01:27.959250Z",
+  "checked_at": "2026-11-04T18:31:36.263247Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "oil prices today",
+      "query": "madrid vs",
       "approx_searches": "1000+",
-      "published_at": "2026-11-04T17:40:00Z",
+      "published_at": "2026-11-04T18:10:00Z",
       "related_news_urls": [
-        "https://www.wsj.com/business/energy-oil/oil-prices-rise-as-investors-weigh-u-s-midterm-results-iran-risks-1d97da8a",
-        "https://www.cnbc.com/2026/11/04/oil-us-midterm-election-results.html",
-        "https://www.ft.com/content/b526f876-810a-4e74-8b8d-4ffca04b29c7?syn-25a6b1a6=1"
+        "https://www.lmtonline.com/sports/article/mbappe-vuelve-a-marcar-y-real-madrid-gana-para-22505307.php",
+        "https://as.com/opinion/el-real-madrid-se-arremanga-y-no-frena-f202611-n/",
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17462493/racing-santander-real-madrid-laliga-2026-claves-jornada-11"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGpXAGKYHvK3iT-i4L3c56QId1ps2SRiJm-TsLfpNk8wTDmNJTFtAAYITVe8U",
-      "image_credit": "WSJ",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNwYAeI5tP8hORwjaw75K9zIeTDeWqbNKjXGLVy7DpYe1LayE9vkmlI2urn_4",
+      "image_credit": "Laredo Morning Times",
       "news": [
         {
-          "url": "https://www.wsj.com/business/energy-oil/oil-prices-rise-as-investors-weigh-u-s-midterm-results-iran-risks-1d97da8a",
-          "title": "Oil Prices Fall as Investors Weigh U.S. Midterm Results, Iran Risks",
-          "publisher": "WSJ",
+          "url": "https://www.lmtonline.com/sports/article/mbappe-vuelve-a-marcar-y-real-madrid-gana-para-22505307.php",
+          "title": "Mbappé vuelve a marcar y Real Madrid supera al Racing para no perderle pisada al Barcelona",
+          "publisher": "Laredo Morning Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGpXAGKYHvK3iT-i4L3c56QId1ps2SRiJm-TsLfpNk8wTDmNJTFtAAYITVe8U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNwYAeI5tP8hORwjaw75K9zIeTDeWqbNKjXGLVy7DpYe1LayE9vkmlI2urn_4"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/04/oil-us-midterm-election-results.html",
-          "title": "Oil falls on Iran war uncertainty, US Democrats' midterm sweep",
-          "publisher": "CNBC",
+          "url": "https://as.com/opinion/el-real-madrid-se-arremanga-y-no-frena-f202611-n/",
+          "title": "El Real Madrid se arremanga y no frena",
+          "publisher": "Diario AS",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwZ4Qq1ewLbksDHP3mfCKr2C7DAH0VfdljQqQnlTn4k19Z3F8Q_bdAb8pbkis"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZs_agO0aWXadaDXUoONwYqe1A--Melt7jwqMlR1ppxFJp6kUdqL7GRZG2XQY"
         },
         {
-          "url": "https://www.ft.com/content/b526f876-810a-4e74-8b8d-4ffca04b29c7?syn-25a6b1a6=1",
-          "title": "Oil prices tumble below $100 on post-election peace hopes",
-          "publisher": "Financial Times",
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17462493/racing-santander-real-madrid-laliga-2026-claves-jornada-11",
+          "title": "Claves de la victoria del Real Madrid vs Racing en LaLiga",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6WNbNAzg9oObUuMRoUo2iHQC_13rGbTqbiuR7sLfuHfMVJ0cXj2H3ftmyrs0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0PKxoTpBWSmXUhLFmTxckr9QT3rwKug-0cEUhfTqC0mXsaAB2WpPReaF-8vA"
         }
       ]
     },
     {
-      "query": "garrett wilson",
+      "query": "deion sanders",
       "approx_searches": "1000+",
-      "published_at": "2026-11-04T17:30:00Z",
+      "published_at": "2026-11-04T18:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-04/garrett-wilson-placed-in-concussion-protocol",
-        "https://bleacherreport.com/articles/25529316-garrett-wilson-injured-latest-updates-jets-wrs-status-vs-chiefs-after-concussion",
-        "https://www.thescore.com/nfl/news/3645036/jets-wr-wilson-enters-concussion-protocol-considered-day-to-day"
+        "https://www.espn.com/college-football/story/_/id/50372454/deion-says-colorado-not-giving-hope-year-snapping-skid",
+        "https://www.dailycamera.com/2026/11/03/colorado-buffaloes-football-deion-sanders-richard-young-arizona-state/",
+        "https://www.si.com/college/colorado/football/deion-sanders-richard-young-arizona-state-sun-devils-colorado-buffaloes"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj2bgBlB23U6H2df5kErntdugCefXHhc8996e3xWL8qK6Q6cWD6RZUC0Hmt6g",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5IvMp1SUXsb2o18U6u0damYN1GoW45pqYsk8AJAXD2ko1aZMGuWWL5dK8Dok",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-04/garrett-wilson-placed-in-concussion-protocol",
-          "title": "Garrett Wilson placed in concussion protocol",
-          "publisher": "NBC Sports",
+          "url": "https://www.espn.com/college-football/story/_/id/50372454/deion-says-colorado-not-giving-hope-year-snapping-skid",
+          "title": "Deion Sanders - Colorado 'not giving up' hope on year after snapping skid",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj2bgBlB23U6H2df5kErntdugCefXHhc8996e3xWL8qK6Q6cWD6RZUC0Hmt6g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5IvMp1SUXsb2o18U6u0damYN1GoW45pqYsk8AJAXD2ko1aZMGuWWL5dK8Dok"
         },
         {
-          "url": "https://bleacherreport.com/articles/25529316-garrett-wilson-injured-latest-updates-jets-wrs-status-vs-chiefs-after-concussion",
-          "title": "Garrett Wilson Injured, Latest Updates on Jets WR's Status vs. Chiefs After Concussion",
-          "publisher": "Bleacher Report",
+          "url": "https://www.dailycamera.com/2026/11/03/colorado-buffaloes-football-deion-sanders-richard-young-arizona-state/",
+          "title": "Deion Sanders says CU Buffs RB Richard Young will start at Arizona State",
+          "publisher": "Daily Camera",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRXzudqAyvx181-BhU_g315rdRSO1A4m3mwYM_FogvinbqZEB1lvQC7zLTthU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpDAHgHtoc_B-tQjM7Uzu6zW7fKZIX2yeLZ_pTcvEGFuTLmk9S5biJT8DNfY"
         },
         {
-          "url": "https://www.thescore.com/nfl/news/3645036/jets-wr-wilson-enters-concussion-protocol-considered-day-to-day",
-          "title": "Jets' Wilson enters concussion protocol, considered day-to-day",
-          "publisher": "theScore",
+          "url": "https://www.si.com/college/colorado/football/deion-sanders-richard-young-arizona-state-sun-devils-colorado-buffaloes",
+          "title": "Deion Sanders Doubles Down Ahead Of Colorado’s Arizona State Game",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReo1IwJ__a0UGEug7T1USN6du9D2xrQ-eXWGpX93CangWFVi9OzqYlJTuaD9o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzL7Ab_JGnbkC50ldK-fJ6sDN9oj5RW2PXUDOotcfD73KH2PbtPtWz9DluyMY"
         }
       ]
     },
     {
-      "query": "real madrid vs aek athens",
+      "query": "real madrid game",
       "approx_searches": "500+",
-      "published_at": "2026-11-04T17:30:00Z",
+      "published_at": "2026-11-04T18:10:00Z",
+      "related_news_urls": [
+        "https://www.bengals.com/news/bengals-madrid-travel-logistics-falcons-nfl-international-series-2026",
+        "https://www.nytimes.com/athletic/7752927/2026/11/04/falcons-madrid-spain-bengals-week-9/",
+        "https://www.lmtonline.com/sports/article/stefanski-prepares-falcons-for-bengals-offense-22511407.php"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRz6pIDZjcXSSSbkEbgf0E3Ca6R0yOtPzYdOt4n44C1FY8Phc2aHms9HMN3lU",
+      "image_credit": "Cincinnati Bengals",
+      "news": [
+        {
+          "url": "https://www.bengals.com/news/bengals-madrid-travel-logistics-falcons-nfl-international-series-2026",
+          "title": "Madrid Manifest: Inside The Bengals' Travel Plan For 2026 International Game Against The Falcons",
+          "publisher": "Cincinnati Bengals",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRz6pIDZjcXSSSbkEbgf0E3Ca6R0yOtPzYdOt4n44C1FY8Phc2aHms9HMN3lU"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7752927/2026/11/04/falcons-madrid-spain-bengals-week-9/",
+          "title": "Battered, bruised Falcons happy for chance to ‘flip the script’ vs. Bengals in Spain - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRadj8-yjufv_-b03M9YMQtQPNFAIvqeIllEu3CJd4GS2JsT9fRjODrsKBngZ4"
+        },
+        {
+          "url": "https://www.lmtonline.com/sports/article/stefanski-prepares-falcons-for-bengals-offense-22511407.php",
+          "title": "Stefanski prepares Falcons for Bengals' offense in Madrid after struggles in Florida rain",
+          "publisher": "Laredo Morning Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8-sqR7cHqyXC3xtFAwNjtM0xOFF50S84Sv0mY_aKG2bB8y_fw3doG3vo-k2I"
+        }
+      ]
+    },
+    {
+      "query": "ugo humbert",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T18:10:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/agamenone-vs-monzon-nov-04-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/gibson-inglis-vs-tang-ye-q-nov-05-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/etcheverry-vs-de-minaur-nov-04-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpqJHF-ltE-CJIFuWfGz4Wmj9DiUGsWNTYCo2mYQrHUn__IZygIArfvq4yPNE",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/agamenone-vs-monzon-nov-04-2026/",
+          "title": "November 4, 2026: Agamenone vs Monzon Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpqJHF-ltE-CJIFuWfGz4Wmj9DiUGsWNTYCo2mYQrHUn__IZygIArfvq4yPNE"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/gibson-inglis-vs-tang-ye-q-nov-05-2026/",
+          "title": "November 5, 2026: Gibson / Inglis vs Tang / Ye Q Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNfc0vAUt6hp5oPzxx--ejEfnOBvyDANNNnHHpp8xPf5NPWcqCcaVO_8wAp6s"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/etcheverry-vs-de-minaur-nov-04-2026/",
+          "title": "November 4, 2026: Etcheverry vs de Minaur Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGCcFyJqCuM_L6BAz8z_PzlKz8tdswCr1ggmuXouALO1jITiINe19e67fwPYU"
+        }
+      ]
+    },
+    {
+      "query": "alyce huckstepp",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T18:00:00Z",
+      "related_news_urls": [
+        "https://people.com/jamie-foxx-welcomes-his-third-baby-his-first-with-girlfriend-alyce-huckstepp-12216410",
+        "https://pagesix.com/2026/11/04/parents/jamie-foxx-58-and-girlfriend-alyce-huckstepp-31-welcome-their-first-child-together-his-third/",
+        "https://www.justjared.com/2026/11/04/jamie-foxx-welcomes-third-child-his-first-with-alyce-huckstepp/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkEnWeenX9FtGNMe-oTHRn2IhgHmKQdsTXuS40XfWhvJCl52Td0kz_vBtUXkk",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/jamie-foxx-welcomes-his-third-baby-his-first-with-girlfriend-alyce-huckstepp-12216410",
+          "title": "Jamie Foxx Welcomes His Third Baby, His First with Girlfriend Alyce Huckstepp",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkEnWeenX9FtGNMe-oTHRn2IhgHmKQdsTXuS40XfWhvJCl52Td0kz_vBtUXkk"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/04/parents/jamie-foxx-58-and-girlfriend-alyce-huckstepp-31-welcome-their-first-child-together-his-third/",
+          "title": "Jamie Foxx, 58, and girlfriend Alyce Huckstepp, 31, welcome their first child together, his third",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_e6MbBRD0lR1YAb50_Vp1DSBvntfnVnQcT95cpv0BWo3Wskv6fquALHcFL-4"
+        },
+        {
+          "url": "https://www.justjared.com/2026/11/04/jamie-foxx-welcomes-third-child-his-first-with-alyce-huckstepp/",
+          "title": "Jamie Foxx Welcomes Third Child, His First with Alyce Huckstepp",
+          "publisher": "Just Jared",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6gapHoGsmlM9PPVEMIp8GNpDrn1P73rFtAh1eLuh8SUXCakeILUraa9vrWw0"
+        }
+      ]
+    },
+    {
+      "query": "kervin arriaga",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T18:00:00Z",
+      "related_news_urls": [
+        "https://as.com/futbol/champions/aek-atenas-real-madrid-hoy-en-directo-partido-de-fase-liga-de-champions-league-ultima-hora-f202611-d/",
+        "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17474288/real-madrid-no-aspira-liderato-culpa-psg-champions",
+        "https://es-us.noticias.yahoo.com/deportes/regreso-vinicius-ausencia-valverde-mourinho-164956527.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMQ6iUFJyjCe2j4vAIEzJEoRdpU_dTjD2zDXSpBLDk5TRAkwKZHqOeoocVy2A",
+      "image_credit": "Diario AS",
+      "news": [
+        {
+          "url": "https://as.com/futbol/champions/aek-atenas-real-madrid-hoy-en-directo-partido-de-fase-liga-de-champions-league-ultima-hora-f202611-d/",
+          "title": "AEK Atenas - Real Madrid hoy, en directo: partido de fase liga de Champions League, última hora",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMQ6iUFJyjCe2j4vAIEzJEoRdpU_dTjD2zDXSpBLDk5TRAkwKZHqOeoocVy2A"
+        },
+        {
+          "url": "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17474288/real-madrid-no-aspira-liderato-culpa-psg-champions",
+          "title": "Real Madrid no puede aspirar al liderato por culpa del PSG",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHiwugQA6qzPELmajiJIgbnGo3L0vduJFiXf5NBdi_0FW_FSgskd9rTBCa4I"
+        },
+        {
+          "url": "https://es-us.noticias.yahoo.com/deportes/regreso-vinicius-ausencia-valverde-mourinho-164956527.html",
+          "title": "El regreso de Vinicius y la ausencia de Valverde: Mourinho anuncia la alineación del Real Madrid para el partido ante el AEK Atenas",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBGAOEK2o1YxzNzwSwRUJmbFoEd5Opr_RsDF5oEfXgG-eqbbOhKeW-MF_fSSw"
+        }
+      ]
+    },
+    {
+      "query": "real madrid vs aek",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T18:00:00Z",
       "related_news_urls": [
         "https://en.as.com/soccer/valverde-injury-opens-door-for-trent-alexander-arnold-and-dumfries-at-real-madrid-f202611-n/",
         "https://www.goal.com/en/news/a-huge-boost-mourinho-regains-a-key-star-ahead-of-the-aek-athens-clash/blt89cafc7b8ecf32f3",
@@ -112,247 +252,107 @@
       ]
     },
     {
-      "query": "liverpool vs fenerbahce",
+      "query": "bob dylan",
       "approx_searches": "500+",
-      "published_at": "2026-11-04T17:30:00Z",
+      "published_at": "2026-11-04T18:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50379484/fenerbahce-liverpool-live-champions-league-latest-updates-commentary-score-result",
-        "https://www.reuters.com/sports/soccer/gravenberch-misses-fenerbahce-clash-weekend-return-possible-says-iraola-2026-11-03/",
-        "https://sports.yahoo.com/articles/liverpool-coach-admits-pointed-difference-115000239.html"
+        "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-receives-bob-dylan-at-the-vatican.html",
+        "https://www.reuters.com/world/bob-dylan-blows-meeting-with-pope-leo-vatican-2026-11-04/",
+        "https://pitchfork.com/story/bob-dylan-wearing-hoodie-meets-pope/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAhdMx5-To-J_Ql25IXaP6Mv3l_7a4ucE9nnHY5-s8tOob5LtHJzw6sXvMing",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6mftjUq0_FelMMvI7z1w5gv4E1lCKQKapP51Dp8FwYnXKg7LiXsATfyjnNuo",
+      "image_credit": "Vatican News",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50379484/fenerbahce-liverpool-live-champions-league-latest-updates-commentary-score-result",
-          "title": "Fenerbahce vs. Liverpool LIVE: Champions League updates as Reds look to bounce back",
-          "publisher": "ESPN",
+          "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-receives-bob-dylan-at-the-vatican.html",
+          "title": "Pope Leo receives Bob Dylan at the Vatican",
+          "publisher": "Vatican News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAhdMx5-To-J_Ql25IXaP6Mv3l_7a4ucE9nnHY5-s8tOob5LtHJzw6sXvMing"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6mftjUq0_FelMMvI7z1w5gv4E1lCKQKapP51Dp8FwYnXKg7LiXsATfyjnNuo"
         },
         {
-          "url": "https://www.reuters.com/sports/soccer/gravenberch-misses-fenerbahce-clash-weekend-return-possible-says-iraola-2026-11-03/",
-          "title": "Gravenberch misses Fenerbahce clash but weekend return possible, says Iraola",
+          "url": "https://www.reuters.com/world/bob-dylan-blows-meeting-with-pope-leo-vatican-2026-11-04/",
+          "title": "Bob Dylan blows in for meeting with Pope Leo at Vatican",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSoq-oR8pPen44UpuFMZMkn1tjxzrjNLFNpcxCraAdbVA1xCmTSZIYAq4NQo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_uev-_tvp_-5-GLARJsfVBnSHCID3Qity8pDPGyqg1rZCi3OBJ4SkiDKchDE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/liverpool-coach-admits-pointed-difference-115000239.html",
-          "title": "Liverpool coach admits pointed difference between domestic and European form",
-          "publisher": "Yahoo Sports",
+          "url": "https://pitchfork.com/story/bob-dylan-wearing-hoodie-meets-pope/",
+          "title": "Bob Dylan, Wearing Hoodie, Meets Pope",
+          "publisher": "Pitchfork",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQn0PkPt_2PzAbXWZEKhbbY6y8Dgu5xiLrhjvvikAAlkL7t6WnOjs95521TZo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBpstVRynjzb8Hj6SmWZmulW7db3ZueGbJk0C4sszc8N2eR-Q95g7pluN-pr4"
         }
       ]
     },
     {
-      "query": "katherine clark",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T17:10:00Z",
+      "query": "god of war laufey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T17:50:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/04/nation/house-democrats-won-house-what-happens-now/",
-        "https://www.npr.org/2026/11/03/nx-s1-6028015/rep-katherine-clark-says-democrats-are-on-track-to-win-control-of-the-house-tonight",
-        "https://www.wbur.org/news/2026/11/04/katherine-clark-congress-democrat-election"
+        "https://www.theverge.com/games/1026448/sony-playstation-god-of-war-laufey-delay",
+        "https://gameinformer.com/2026/11/04/god-of-war-laufey-delayed-to-may",
+        "https://www.ign.com/articles/god-of-war-laufey-delayed-to-may-2027"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQabypbcbVpldDkgwX8yWR0TiKRJiFKeXiomV7EoC--cnv_PHjMg54f6RFktag",
-      "image_credit": "The Boston Globe",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMjaTwwafxEsEmC6YOfVyqqdpkcPNaUvbTWNEcL9r3O4EelTNAoSdkbJ0SbMc",
+      "image_credit": "The Verge",
       "news": [
         {
-          "url": "https://www.bostonglobe.com/2026/11/04/nation/house-democrats-won-house-what-happens-now/",
-          "title": "Clark and House Democratic leadership made history and won the majority. Now they face the real test: how to use it.",
-          "publisher": "The Boston Globe",
+          "url": "https://www.theverge.com/games/1026448/sony-playstation-god-of-war-laufey-delay",
+          "title": "God of War Laufey delayed until May",
+          "publisher": "The Verge",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQabypbcbVpldDkgwX8yWR0TiKRJiFKeXiomV7EoC--cnv_PHjMg54f6RFktag"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMjaTwwafxEsEmC6YOfVyqqdpkcPNaUvbTWNEcL9r3O4EelTNAoSdkbJ0SbMc"
         },
         {
-          "url": "https://www.npr.org/2026/11/03/nx-s1-6028015/rep-katherine-clark-says-democrats-are-on-track-to-win-control-of-the-house-tonight",
-          "title": "Rep. Katherine Clark says Democrats are on track to win control of the House tonight",
-          "publisher": "NPR",
+          "url": "https://gameinformer.com/2026/11/04/god-of-war-laufey-delayed-to-may",
+          "title": "God Of War Laufey Delayed To May",
+          "publisher": "Game Informer",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSotgGkf4uo_tNbz2OlxLQGZmJ4KFf7NxV_KsFNuegGO-XyT-sfR6slXSFXsyw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq7JyQURcgj6T3KC83P7N2vsoFOe83cC7dHWT_jmAgu-bN2sifFkYtd02HiP0"
         },
         {
-          "url": "https://www.wbur.org/news/2026/11/04/katherine-clark-congress-democrat-election",
-          "title": "Rep. Clark, poised to become House Majority Leader, talks priorities as Democrats take Congress",
-          "publisher": "WBUR",
+          "url": "https://www.ign.com/articles/god-of-war-laufey-delayed-to-may-2027",
+          "title": "God of War Laufey Has Been Delayed",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0N4L8RUTNv1d9ldGl4O2njrl8EJE0oIPjJwH7n-IaB0Nj7H7Uif_xI4yU2SM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnBa9sLPzSMBn2Cno2MeJfeq6uelUf8vH5-BBlj7N29mqM1GXsvudUGhJQ9Fc"
         }
       ]
     },
     {
-      "query": "aek athènes – real madrid",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T17:10:00Z",
+      "query": "citi tampa",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T17:40:00Z",
       "related_news_urls": [
-        "https://www.footmercato.net/a3395918815723227440-real-madrid-cinq-absents-face-a-laek-athenes-en-ligue-des-champions",
-        "https://interaktiv.tagesanzeiger.ch/2016/plaine-morte/panos/camp/camp.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vYW5nZWxkYWluYTYuZ2l0aHViLmlvL3NhLnNwb3J0cy9zcHMueG1sIi8+PC9rcnBhbm8+&id=video-ligue-des-champions-2026-liv-str-ytnisel",
-        "https://africatopsports.com/football-europe/ligue-des-champions-uefa-les-compositions-probables-du-match-aek-vs-real-madrid/"
+        "https://www.wfla.com/news/hillsborough-county/live-large-police-presence-reported-at-citi-bank-center-in-brandon/",
+        "https://www.wtsp.com/article/news/local/hillsboroughcounty/citibank-tampa-police-reported-shooting/67-bcb59cd7-5af9-449e-90da-f08b1e7ab8cc",
+        "https://baynews9.com/fl/tampa/news/2026/11/04/report--swat-team-responds-to-hillsborough-county-school"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3pQqirLCm3n3WwMVNPKcN9YjUpkx4ik5hbR_Fw-EVdNvTvL8IPYtJMm50U8g",
-      "image_credit": "Foot Mercato",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM_JaCleZ3M5ZLi8lhIOYKIFNtT02sCTkq2jSY1RZA-CbBjpf70Vn-tybJA8s",
+      "image_credit": "WFLA",
       "news": [
         {
-          "url": "https://www.footmercato.net/a3395918815723227440-real-madrid-cinq-absents-face-a-laek-athenes-en-ligue-des-champions",
-          "title": "Real Madrid : cinq absents face à l’AEK Athènes en Ligue des Champions",
-          "publisher": "Foot Mercato",
+          "url": "https://www.wfla.com/news/hillsborough-county/live-large-police-presence-reported-at-citi-bank-center-in-brandon/",
+          "title": "LIVE: HCSO, SWAT respond to Citi Bank Center in Brandon",
+          "publisher": "WFLA",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3pQqirLCm3n3WwMVNPKcN9YjUpkx4ik5hbR_Fw-EVdNvTvL8IPYtJMm50U8g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM_JaCleZ3M5ZLi8lhIOYKIFNtT02sCTkq2jSY1RZA-CbBjpf70Vn-tybJA8s"
         },
         {
-          "url": "https://interaktiv.tagesanzeiger.ch/2016/plaine-morte/panos/camp/camp.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vYW5nZWxkYWluYTYuZ2l0aHViLmlvL3NhLnNwb3J0cy9zcHMueG1sIi8+PC9rcnBhbm8+&id=video-ligue-des-champions-2026-liv-str-ytnisel",
-          "title": "[[DIRECT/LIVE]] Ligue des champions 2026 En Direct Streaming 28.07.2026",
-          "publisher": "tagesanzeiger.ch",
+          "url": "https://www.wtsp.com/article/news/local/hillsboroughcounty/citibank-tampa-police-reported-shooting/67-bcb59cd7-5af9-449e-90da-f08b1e7ab8cc",
+          "title": "Large police presence reported at Citibank Tampa building",
+          "publisher": "wtsp.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThRcR4SgQt9-aQPbBnyZV2fwEWWS1ZmLVYjehMLY6Lhq5SDy0SyJdWJR2Cr0k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTNnF-lSXqU3fePu_e5uTVjWYH93RnLGPRzMBLWNqQR7NdluZUX2VAT9yybIs"
         },
         {
-          "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-les-compositions-probables-du-match-aek-vs-real-madrid/",
-          "title": "Ligue des Champions UEFA : les compositions probables du match AEK vs Real Madrid !",
-          "publisher": "Africa Top Sports",
+          "url": "https://baynews9.com/fl/tampa/news/2026/11/04/report--swat-team-responds-to-hillsborough-county-school",
+          "title": "Heavy police response responds to Hillsborough County business complex",
+          "publisher": "Bay News 9",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSol-NrDEowqgOX67bTJXMDpViVLikuRfw2uoAXmfbMZv1l5APvOVUyREehDOs"
-        }
-      ]
-    },
-    {
-      "query": "fenerbahçe",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T17:00:00Z",
-      "related_news_urls": [
-        "https://www.sozcu.com.tr/arda-turan-ve-emre-belozoglu-sampiyonlar-ligi-tarihine-gececek-p375878",
-        "https://www.afyonanahaber.com.tr/spor/fenerbahce-shakhtar-donetsk-maci-ne-zaman-saat-kacta-nerede-oynanacak/403453",
-        "https://www.goal.com/tr/biletler-seyahatler/ma%C3%A7i/shakhtar-donetsk-fenerbahce-macina-bilet-nasil-alinir-sampiyonlar-ligi-bilet-fiyatlari-mac-bilgileri-son-dakika-bilet-satislari-ve-daha-fazlasi/A~blt529a14a739f015e3"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVRMNcy7nth1dOVqxK7ZUNJW1G3TglLfD9xum3nyNMyQu9bG28h9sZZG8mekk",
-      "image_credit": "Sözcü Gazetesi",
-      "news": [
-        {
-          "url": "https://www.sozcu.com.tr/arda-turan-ve-emre-belozoglu-sampiyonlar-ligi-tarihine-gececek-p375878",
-          "title": "Arda Turan ve Emre Belözoğlu Şampiyonlar Ligi tarihine geçecek",
-          "publisher": "Sözcü Gazetesi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVRMNcy7nth1dOVqxK7ZUNJW1G3TglLfD9xum3nyNMyQu9bG28h9sZZG8mekk"
-        },
-        {
-          "url": "https://www.afyonanahaber.com.tr/spor/fenerbahce-shakhtar-donetsk-maci-ne-zaman-saat-kacta-nerede-oynanacak/403453",
-          "title": "Fenerbahçe Shakhtar Donetsk maçı ne zaman, saat kaçta, nerede oynanacak?",
-          "publisher": "Afyon Ana Haber",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1119H6tPOR4pU4waxkePxoXBLBhNAmQJh8mZh52Bu52mFkyc1r8F53rnQgpU"
-        },
-        {
-          "url": "https://www.goal.com/tr/biletler-seyahatler/ma%C3%A7i/shakhtar-donetsk-fenerbahce-macina-bilet-nasil-alinir-sampiyonlar-ligi-bilet-fiyatlari-mac-bilgileri-son-dakika-bilet-satislari-ve-daha-fazlasi/A~blt529a14a739f015e3",
-          "title": "Shakhtar Donetsk - Fenerbahçe maçına bilet nasıl alınır? UEFA Şampiyonlar Ligi bilet fiyatları, maç bilgileri, son dakika satışları ve daha fazlası",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbl8GPEELl5nAJeVYFUMoibE0rEa4x0IHJ8kJLturdLrc5FsObAwynraRxuq4"
-        }
-      ]
-    },
-    {
-      "query": "aek vs real madrid",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-04T16:50:00Z",
-      "related_news_urls": [
-        "https://www.si.com/soccer/aek-athens-vs-real-madrid-preview-predictions-lineups-11-4-26",
-        "https://www.realmadrid.com/en-US/news/football/first-team/press-conference/mourinho-xxxx-03-11-2026",
-        "https://www.bbc.com/sport/football/live/cm70pvdg5wvrt"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJgDEf1WeK6G4YsSUaZf_M6tEbpTN3hJYv1FhczxA69sGfpc9R2bNbVgVjbrw",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/soccer/aek-athens-vs-real-madrid-preview-predictions-lineups-11-4-26",
-          "title": "AEK Athens vs. Real Madrid: Preview, Predictions and Lineups",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJgDEf1WeK6G4YsSUaZf_M6tEbpTN3hJYv1FhczxA69sGfpc9R2bNbVgVjbrw"
-        },
-        {
-          "url": "https://www.realmadrid.com/en-US/news/football/first-team/press-conference/mourinho-xxxx-03-11-2026",
-          "title": "Mourinho: \"We need to play at our best, stay focused, and maintain our level of play\"",
-          "publisher": "Real Madrid CF | Web Oficial",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXg5-8MIr7TcexTX2JvuYOt5cdoAtH0WMdmBO5YBPBIFs_A7OTioKz5uVA_Kg"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/cm70pvdg5wvrt",
-          "title": "AEK Athens vs Real Madrid: UEFA Champions League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQM0NKo_65Pk-Q-RuHkqXyCAJSnk5xVvzgObxNE6Cd7GPtlaHmGIhZf2RmjI7k"
-        }
-      ]
-    },
-    {
-      "query": "aek - real madrid",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-04T16:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50329182/real-madrid-liverpool-manchester-city-arsenal",
-        "https://www.cbssports.com/soccer/news/champions-league-scores-live-updates-real-madrid-liverpool-man-city-arsenal/live/",
-        "https://www.si.com/soccer/champions-league-predictions-real-madrid-liverpool-maintain-perfection"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu35QFaNMeHSh3EThxjKtxR7i5rzHVjnGNHKnRHDPCkx_fFMshGOLZQS7ooUM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50329182/real-madrid-liverpool-manchester-city-arsenal",
-          "title": "Champions League live updates: Real Madrid, Liverpool in action in early matches",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu35QFaNMeHSh3EThxjKtxR7i5rzHVjnGNHKnRHDPCkx_fFMshGOLZQS7ooUM"
-        },
-        {
-          "url": "https://www.cbssports.com/soccer/news/champions-league-scores-live-updates-real-madrid-liverpool-man-city-arsenal/live/",
-          "title": "Champions League scores: Live updates as Real Madrid, Liverpool headline early window; Man City, Arsenal later",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcxWSp9cF6bk99cB2moRYS5zCeZkEVJZrP15oxiIraQ-5YqSR0EXJwmIxkTH4"
-        },
-        {
-          "url": "https://www.si.com/soccer/champions-league-predictions-real-madrid-liverpool-maintain-perfection",
-          "title": "Champions League Predictions 11/4: Real Madrid, Liverpool Aiming to Maintain Perfection",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWfHxhh6v4tYkxQD_3RDuaNqXZygUg4-mnVgwqMHLGGLEKWqdLAqDRXWgc5Pg"
-        }
-      ]
-    },
-    {
-      "query": "fenerbahçe vs liverpool",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-04T16:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c6rmy8zvwnryt",
-        "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-fenerbahce",
-        "https://www.cnet.com/tech/services-and-software/fenerbahce-vs-liverpool-livestream-champions-league-soccer-from-anywhere/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWRvs4WutdiH7dZXajL3vcI9c-9ZdivLWau3vmU1gn1Fhu0KuJy0onD3R0XAw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c6rmy8zvwnryt",
-          "title": "Champions League: Liverpool visit Fenerbahce before Arsenal and Man City in action",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWRvs4WutdiH7dZXajL3vcI9c-9ZdivLWau3vmU1gn1Fhu0KuJy0onD3R0XAw"
-        },
-        {
-          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-fenerbahce",
-          "title": "Team news: Confirmed Liverpool line-up v Fenerbahce",
-          "publisher": "Liverpool FC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9vny2c0YqKdwjbkoY7BjeM3aGBN8epURBZRL_EoP9UA_yQAoFcb2LBOTC2Io"
-        },
-        {
-          "url": "https://www.cnet.com/tech/services-and-software/fenerbahce-vs-liverpool-livestream-champions-league-soccer-from-anywhere/",
-          "title": "Fenerbahçe vs. Liverpool: Livestream Champions League Soccer From Anywhere",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQqxC76Vh0NfXAOlhDphdULLCKnCDYt_pNy-A6e-TBHvtlwCLWAemysLOl4XI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdc3BqdED3nyor0JzBRn4aTJ42L_t4g-4e4YKJ_wzrxK4tTHUdnV5uOdLuLSM"
         }
       ]
     }
