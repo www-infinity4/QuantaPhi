@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {describeRunnerIdle,noteRunnerSkip} from '../workers/infinity-brain-clock/runner-claim-idle.mjs';
+import {describeRunnerIdle,noteRunnerSkip,noteRunnerDependencyStatuses} from '../workers/infinity-brain-clock/runner-claim-idle.mjs';
 
 test('empty owner queue cannot masquerade as successful work',()=>{
  assert.deepEqual(describeRunnerIdle({candidateCount:0,admission:{allowed:[],deferred:[]},adapterMatches:0}),
@@ -46,4 +46,39 @@ test('real Brain claim loop annotates every typed post-admission skip',async()=>
  assert.match(code,/noteRunnerSkip\(claimBlockedBy,'repository_lease_active'\)/);
  assert.match(code,/noteRunnerSkip\(claimBlockedBy,eligibility.reason\)/);
  assert.match(code,/claimBlockedBy,scanLimited:/);
+});
+
+test('signaled pending dependencies show bounded statuses, not ticket identities or private prose',()=>{
+ const statuses={};
+ const jobs=[
+  {id:'DEPA',status:'blocked',instructions:'Owner private A'},
+  {id:'DEPB',status:'committed_unverified',progress:{source:'Bearer secret'}},
+  {id:'DEPC',status:'queued'},
+  {id:'DEPD',status:'merged_verified'},
+  {id:'DEPE',status:'deployed_verified'}
+ ];
+ noteRunnerDependencyStatuses(statuses,jobs,['DEPA','DEPB','DEPB','DEPC','DEPD','DEPE','MISSING']);
+ assert.deepEqual(statuses,{blocked:1,committed_unverified:1,queued:1,missing:1});
+ const report=describeRunnerIdle({candidateCount:2,admission:{allowed:[{},{}],deferred:[]},
+  adapterMatches:2,claimBlockedBy:{dependency_pending:1},dependencyStates:statuses});
+ assert.deepEqual(report.dependencyStates,statuses);
+ assert.ok(!JSON.stringify(report).includes('Owner private'));
+ assert.ok(!JSON.stringify(report).includes('Bearer'));
+ assert.ok(!JSON.stringify(report).includes('DEPA'));
+});
+test('dependency classifications fail closed and never surface arbitrary status names',()=>{
+ const s={};noteRunnerDependencyStatuses(s,[
+  {id:'one',status:'security_hold_Bearer_secret'},
+  {id:'two',status:'working'},
+  {id:'three',status:'complete'},
+  {id:'four',status:'superseded'}
+ ],['one','two','three','four']);
+ assert.deepEqual(s,{other_policy:1,working:1,superseded:1});
+ assert.deepEqual(describeRunnerIdle({dependencyStates:{blocked:9999,secret_code:4,queued:-5}}).dependencyStates,{blocked:500});
+});
+test('the signed Cloudflare claim loop counts unfinished dependencies before returning idle',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const source=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ assert.match(source,/noteRunnerDependencyStatuses\(dependencyStates,jobs,effectiveDependencies\)/);
+ assert.match(source,/claimBlockedBy,dependencyStates,scanLimited:/);
 });
