@@ -67,7 +67,7 @@
    (d.coverageContinuous?'':' Some daily records are missing; the total is incomplete.');
  }
  async function load(url){
-  const r=await fetch(url,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(10000)});
+  const r=await fetch(url,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(url.includes('refresh=1')?20000:10000)});
   if(!r.ok)throw Error('traffic_http_'+r.status);
   const d=await r.json();
   if(!valid(d))throw Error('traffic_invalid');
