@@ -315,3 +315,67 @@ test('stale successful ledger cannot hide newer, source-validated Cloudflare fal
  assert.match(nodes.qtrafficNote.textContent,/2026-10-24 to 2026-10-30, 7\/7 days recorded/);
  assert.match(nodes.qtrafficNote.textContent,/automatic ingestion is not yet authorized/);
 });
+
+test('manual refresh asks server to recheck Cloudflare rather than just reread cached totals',async()=>{
+ const first=trafficPayload(1000,500,'2026-10-26T16:28:24.621Z');
+ const checked=trafficPayload(1010,505,'2026-10-26T16:29:24.621Z');
+ checked.refreshStatus='refreshed';
+ const nodes=await runClientOnce(new Map(),[first,checked]);
+ await nodes.qtrafficRefresh.click();
+ assert.match(nodes.qtrafficNote.textContent,/Cloudflare.*refresh.*complete/i);
+ assert.equal(nodes.qtrafficRequests.textContent,'1,010');
+});
+
+test('forced refresh without Cloudflare secret is explicitly unavailable; preserves verified ledger',async()=>{
+ const {db}=mockDb();
+ const res=await worker.fetch(new Request('https://quantaphi.org/api/site-traffic?refresh=1'),{TRAFFIC_LEDGER:db},{waitUntil:()=>{}});
+ assert.equal(res.status,200);
+ assert.equal(res.headers.get('cache-control'),'no-store');
+ const body=await res.json();
+ assert.equal(body.refreshStatus,'not_configured');
+ assert.equal(body.requests,2310);
+ assert.equal(body.refreshConfigured,false);
+});
+
+test('manual refresh returns a durable post-GraphQL readback rather than pre-refresh data',async()=>{
+ const traffic=await import('../workers/site-traffic/worker.mjs');
+ assert.equal(typeof traffic.handleTrafficRequest,'function');
+ const records=rows.map(r=>({...r,verified_at:'2026-10-24T00:00:00.000Z'}));
+ const statements=[];
+ const db={
+  prepare(sql){
+   if(sql.startsWith('SELECT'))return {all:async()=>({results:records})};
+   return {bind(...params){statements.push(params);return {params}}};
+  },
+  async batch(batch){
+   for(const s of batch){
+    const [date,requests,page_views,verified_at]=s.params;
+    const r=records.find(d=>d.date===date);
+    if(r){r.requests=Math.max(r.requests,requests);r.page_views=Math.max(r.page_views,page_views);r.verified_at=verified_at;}
+   }
+   return batch.map(()=>({success:true}));
+  }
+ };
+ const res=await traffic.handleTrafficRequest(new Request('https://quantaphi.org/api/site-traffic?refresh=1'),{
+  TRAFFIC_LEDGER:db,SITE_TRAFFIC_CLOUDFLARE_TOKEN:'not-a-real-private-token'
+ },{now,fetcher:async()=>({ok:true,json:async()=>({data:{viewer:{zones:[{httpRequests1dGroups:groups}]}}})})});
+ assert.equal(res.status,200);
+ assert.equal(res.headers.get('cache-control'),'no-store');
+ const payload=await res.json();
+ assert.equal(payload.refreshStatus,'refreshed');
+ assert.equal(payload.fetchedAt,now.toISOString());
+ assert.equal(statements.length,21);
+});
+
+test('manual refresh failure reports stale ledger with no fake success',async()=>{
+ const traffic=await import('../workers/site-traffic/worker.mjs');
+ const stale=rows.map(r=>({...r,verified_at:'2026-10-24T00:00:00.000Z'}));
+ const {db}=mockDb(stale);
+ const res=await traffic.handleTrafficRequest(new Request('https://quantaphi.org/api/site-traffic?refresh=1'),{
+  TRAFFIC_LEDGER:db,SITE_TRAFFIC_CLOUDFLARE_TOKEN:'not-a-real-private-token'
+ },{now,fetcher:async()=>{throw Error('simulated_cloudflare_failure');}});
+ const body=await res.json();
+ assert.equal(body.refreshStatus,'failed');
+ assert.equal(body.requests,2310);
+ assert.notEqual(body.fetchedAt,now.toISOString());
+});
