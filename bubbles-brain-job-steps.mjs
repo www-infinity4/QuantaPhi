@@ -9,8 +9,10 @@ function safeRunUrl(value,repository){
  try{
   const url=new URL(value);
   if(url.origin!=='https://github.com'||url.search||url.hash||url.username||url.password)return '';
-  const encoded=repository.replace(/[.*+?^\x24{}()|[\]\\]/g,'\\\x24&');
-  return new RegExp('^/'+encoded+'/(?:actions/runs/[0-9]+|pull/[0-9]+|commit/[0-9a-f]{7,40})$').test(url.pathname)?url.href:'';
+  const prefix='/'+repository+'/';
+  if(!url.pathname.startsWith(prefix))return '';
+  const action=url.pathname.slice(prefix.length);
+  return /^(?:actions\/runs\/[0-9]+|pull\/[0-9]+|commit\/[0-9a-f]{7,40})$/.test(action)?url.href:'';
  }catch{return ''}
 }
 export function projectVerifiedJobTransitions(ticket,previous={}){
