@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T02:01:28.852776Z",
+  "checked_at": "2026-11-04T02:31:33.370115Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ro khanna",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T01:40:00Z",
+      "query": "childcare",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T02:10:00Z",
       "related_news_urls": [
-        "https://thehill.com/homenews/house/6187467-khanna-opposes-iran-war-funding/",
-        "https://www.firstpost.com/world/indian-diaspora/trump-vows-to-become-mr-veto-if-democrats-win-ro-khanna-has-other-plans-14057038.html",
-        "https://www.benzinga.com/news/politics/26/11/62768317/ro-khanna-wants-congress-to-use-vietnam-war-funding-tactic-to-stop-trumps-iran-campaign-thats-what-we-did"
+        "https://www.tribstar.com/news/indiana_news/indiana-makes-progress-in-cutting-childcare-voucher-waitlist/article_5c67df18-2280-4e6b-9765-07283d6fceb1.html",
+        "https://www.wwbl.com/2026/11/02/braun-200-million-investment-cuts-childcare-waitlist-by-nearly-80-percent/",
+        "https://pro.stateaffairs.com/in/families/braun-invests-millions-in-cc-vouchers"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO0qNSy0LTu930znNO8GRM943GwU2fmUhzbk3iIfm5Mriilr63Bj8ZAbCQKDQ",
-      "image_credit": "The Hill",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLpjsoCUcxYNjCK18Pl2Gd_j0n8ZjjPjp_wFjZCHGXJtbJZ9nBQL8xEvYknJ4",
+      "image_credit": "Terre Haute Tribune-Star",
       "news": [
         {
-          "url": "https://thehill.com/homenews/house/6187467-khanna-opposes-iran-war-funding/",
-          "title": "Khanna says he’d stop funding further US military actions in Iran",
-          "publisher": "The Hill",
+          "url": "https://www.tribstar.com/news/indiana_news/indiana-makes-progress-in-cutting-childcare-voucher-waitlist/article_5c67df18-2280-4e6b-9765-07283d6fceb1.html",
+          "title": "Indiana makes progress in cutting childcare voucher waitlist",
+          "publisher": "Terre Haute Tribune-Star",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO0qNSy0LTu930znNO8GRM943GwU2fmUhzbk3iIfm5Mriilr63Bj8ZAbCQKDQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLpjsoCUcxYNjCK18Pl2Gd_j0n8ZjjPjp_wFjZCHGXJtbJZ9nBQL8xEvYknJ4"
         },
         {
-          "url": "https://www.firstpost.com/world/indian-diaspora/trump-vows-to-become-mr-veto-if-democrats-win-ro-khanna-has-other-plans-14057038.html",
-          "title": "Trump vows to become 'Mr Veto' if Democrats win, Ro Khanna has other plans",
-          "publisher": "Firstpost",
+          "url": "https://www.wwbl.com/2026/11/02/braun-200-million-investment-cuts-childcare-waitlist-by-nearly-80-percent/",
+          "title": "Braun: $200 Million Investment Cuts Childcare Waitlist by Nearly 80 Percent",
+          "publisher": "WWBL",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6VqbviR5XRw5Cyhn1K0J-0pO6Z0unlEN6RJjcTVwtyjGmDD27RVsG2xJQEyc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzsDxuGFF_CQJPTudexL_hsBi98HDkb232FS0CzOnRd9775gGUNMPM6PK2L64"
         },
         {
-          "url": "https://www.benzinga.com/news/politics/26/11/62768317/ro-khanna-wants-congress-to-use-vietnam-war-funding-tactic-to-stop-trumps-iran-campaign-thats-what-we-did",
-          "title": "Ro Khanna Wants Congress To Use Vietnam War Funding Tactic to Stop Trump’s Iran Campaign: ‘That’s What We Did’",
-          "publisher": "Benzinga",
+          "url": "https://pro.stateaffairs.com/in/families/braun-invests-millions-in-cc-vouchers",
+          "title": "Indiana child care waitlist falls to 9,006 children",
+          "publisher": "State Affairs Pro",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFqxp8WlAc510h2_-_VKORSQSZ7kPD2rnJeRD484eX08AqucqONHS57D-qrRw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWNXgWZBG7i45s3H4un51vPanGVwLs-eme1BnmDfoip6Ppmw04LFhqMax_1Kk"
         }
       ]
     },
     {
-      "query": "jeff van drew",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T01:40:00Z",
+      "query": "iowa",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T02:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-jersey-us-house-2.html",
-        "https://newjerseyglobe.com/congress/republicans-outpacing-democrats-in-election-day-voting-in-nj-2-but-democratic-turnout-lead-holds/",
-        "https://www.app.com/story/news/2026/11/03/jeff-van-drew-zack-mullock-odds-who-is-winning-nj-2/92582768007/"
+        "https://www.nbcnews.com/news/us-news/federal-judge-orders-iowa-satanic-temple-hold-holiday-capitol-rcna607149",
+        "https://www.theguardian.com/us-news/2026/nov/03/iowa-satanic-temple-holiday-event-judge",
+        "https://iowacapitaldispatch.com/2026/11/02/satanic-temple-wins-right-to-stage-holiday-event-in-iowa-capitols-rotunda/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREKy1pnkWwY5PAdbPIkFtRFqNHcJ36S302PcUisdJBkvUhM9PLLJGu4oyQfd4",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm5_qbrTfwZPK_9-Rli4OEp3AO0guJceYv6-Q8F5cjOw06wy8Kg2eNnQFFoIM",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/news/us-news/federal-judge-orders-iowa-satanic-temple-hold-holiday-capitol-rcna607149",
+          "title": "Federal judge orders Iowa to allow Satanic Temple to hold holiday event in the State Capitol",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm5_qbrTfwZPK_9-Rli4OEp3AO0guJceYv6-Q8F5cjOw06wy8Kg2eNnQFFoIM"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/03/iowa-satanic-temple-holiday-event-judge",
+          "title": "Judge orders Iowa to permit Satanic Temple holiday event at state capitol",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmZbQjFPasjEN-1xrUOcz6Bh66Mjw4qTCmv_Z7QF7bFdyaxzzGtCzX-5trf10"
+        },
+        {
+          "url": "https://iowacapitaldispatch.com/2026/11/02/satanic-temple-wins-right-to-stage-holiday-event-in-iowa-capitols-rotunda/",
+          "title": "Satanic Temple wins right to stage holiday event in Iowa Capitol’s rotunda",
+          "publisher": "Iowa Capital Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTak_3bn6Kqcdj0MgIt1bzBhgk6E5Gp1-T4pxHvZTSJpwCXyBIRzgdZ8bqJZiU"
+        }
+      ]
+    },
+    {
+      "query": "connor mcdavid",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T02:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/story/_/id/50360065/lightning-star-nikita-kucherov-says-trade-request-not-money",
+        "https://sports.yahoo.com/articles/maple-leafs-handed-reality-check-233847366.html",
+        "https://www.nhl.com/news/nikita-kucherov-says-trade-request-to-tampa-bay-about-poor-communication-respect"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTI7rMMhhLGvA0tAY1FVuMURK8oIFQZ6-KQC7NIU27sp5zHVqobta4AhDuoK_g",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50360065/lightning-star-nikita-kucherov-says-trade-request-not-money",
+          "title": "Lightning star Nikita Kucherov says trade request not about money",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTI7rMMhhLGvA0tAY1FVuMURK8oIFQZ6-KQC7NIU27sp5zHVqobta4AhDuoK_g"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/maple-leafs-handed-reality-check-233847366.html",
+          "title": "Maple Leafs Handed Reality Check on Nikita Kucherov Trade Talk",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKOElk9NBEIBxyznV42amEBKDfIHxwqGnrqg9RymcLOmLvqxwcLpzsL3puXjI"
+        },
+        {
+          "url": "https://www.nhl.com/news/nikita-kucherov-says-trade-request-to-tampa-bay-about-poor-communication-respect",
+          "title": "Kucherov says trade request to Lightning about poor communication, respect",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeSLjYH2_Nhbyr_iq-CSG9sp_7D5kcN4XGvA62map42BrDm7WAfzkFKJ-LqlE"
+        }
+      ]
+    },
+    {
+      "query": "rashida tlaib",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T02:10:00Z",
+      "related_news_urls": [
+        "https://www.detroitnews.com/story/news/politics/elections/2026/11/03/rashida-tlaib-democrat-12th-congressional-district-republican-james-hooper-results/92504770007/",
+        "https://www.duboiscountyherald.com/ap/ap_national_news/democrat-rashida-tlaib-wins-reelection-to-u-s-house-in-michigans-12th-congressional-district/article_5efcc7d9-7b41-5ca7-a231-bff0440bbc92.html",
+        "https://www.cbsnews.com/detroit/news/rashida-tlaib-james-hooper-michigan-12th-congressional-district-results/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSB--VtE7dijS4PMno730S5_GQ08mODEKupwFNTNU80wQ8rC7AKvPdB1pNs3gY",
+      "image_credit": "The Detroit News",
+      "news": [
+        {
+          "url": "https://www.detroitnews.com/story/news/politics/elections/2026/11/03/rashida-tlaib-democrat-12th-congressional-district-republican-james-hooper-results/92504770007/",
+          "title": "U.S. Rep. Rashida Tlaib leading in bid for fifth term in 12th District",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSB--VtE7dijS4PMno730S5_GQ08mODEKupwFNTNU80wQ8rC7AKvPdB1pNs3gY"
+        },
+        {
+          "url": "https://www.duboiscountyherald.com/ap/ap_national_news/democrat-rashida-tlaib-wins-reelection-to-u-s-house-in-michigans-12th-congressional-district/article_5efcc7d9-7b41-5ca7-a231-bff0440bbc92.html",
+          "title": "Democrat Rashida Tlaib wins reelection to U.S. House in Michigan's 12th Congressional District",
+          "publisher": "Dubois County Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOPSqktnjHekBD7NkdPFyRdbgX_3jSm4xmsOEr52GlQltFdpEJ6yhY0DIS-w"
+        },
+        {
+          "url": "https://www.cbsnews.com/detroit/news/rashida-tlaib-james-hooper-michigan-12th-congressional-district-results/",
+          "title": "Rashida Tlaib seeks another term in Michigan's 12th District against James Hooper",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNg9r4KgzPlk2yApEYPlRrVUXINtX50Gz3hyTX4Zp0PcgCjLSez40Jbwa3_kw"
+        }
+      ]
+    },
+    {
+      "query": "nc amendments 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T02:10:00Z",
+      "related_news_urls": [
+        "https://www.wxii12.com/article/north-carolina-election-results-2026-constitutional-amendments/74232226",
+        "https://www.newsobserver.com/news/politics-government/election/article317835603.html",
+        "https://www.wral.com/news/nccapitol/nc-voters-decide-on-constitutional-amendments-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG8qarOrQdjZQMkFVt2_0X-v-NOpXHiO9FnHt0-3_ORwucu8x2gcNVl16RpwY",
+      "image_credit": "WXII",
+      "news": [
+        {
+          "url": "https://www.wxii12.com/article/north-carolina-election-results-2026-constitutional-amendments/74232226",
+          "title": "Constitutional Amendments | Results for voter ID, property tax limits, income tax cap",
+          "publisher": "WXII",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG8qarOrQdjZQMkFVt2_0X-v-NOpXHiO9FnHt0-3_ORwucu8x2gcNVl16RpwY"
+        },
+        {
+          "url": "https://www.newsobserver.com/news/politics-government/election/article317835603.html",
+          "title": "See the election results for NC constitutional amendments about taxes, voter ID",
+          "publisher": "Raleigh News & Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMJNA1te-qq-eo4mZ5G4Umk-eMzEKvXpneGuY0WaphQG-740HAMWoUx8cE_yU"
+        },
+        {
+          "url": "https://www.wral.com/news/nccapitol/nc-voters-decide-on-constitutional-amendments-november-2026/",
+          "title": "NC voters to decide on tax, voter ID constitutional amendments. Here’s what to know",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2RrSSn4cDdOgb0Q2fqTtjvEus9tcIvCX3-RVPCerK4iIC_IJC9ebXBreYSyA"
+        }
+      ]
+    },
+    {
+      "query": "larry kudlow",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T02:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/politics/articles/fox-host-freaks-polls-pointing-091913411.html",
+        "https://www.foxbusiness.com/video/6407804199112",
+        "https://www.nysun.com/article/democratic-dirty-tricks-are-already-backfiring-where-do-i-send-the-thank-you-note"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUNrMk5oS1FvJDy74VPkhG3ETjMUNdgWPNoQ2mNlbKMsJ-wJgQF47wq4NWc78",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/fox-host-freaks-polls-pointing-091913411.html",
+          "title": "Fox Host Freaks Out at Polls Pointing to Disaster for Trump",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUNrMk5oS1FvJDy74VPkhG3ETjMUNdgWPNoQ2mNlbKMsJ-wJgQF47wq4NWc78"
+        },
+        {
+          "url": "https://www.foxbusiness.com/video/6407804199112",
+          "title": "Larry Kudlow: Voters, not polls, will decide the 2026 midterm elections",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNQ-TMXEwo3UY5xBDFHEP7h26aj3YkIxDUOuEVQP6B_zaQFKacqsDxXCM__A4"
+        },
+        {
+          "url": "https://www.nysun.com/article/democratic-dirty-tricks-are-already-backfiring-where-do-i-send-the-thank-you-note",
+          "title": "Democratic Dirty Tricks Are Already Backfiring. Where Do I Send the Thank You Note?",
+          "publisher": "The New York Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoJRFOogDsoVQ0H-IoQ36p__8w7BU1uwB85WMPH5ZQQ0rVGkB2Ja6o0B2MTdw"
+        }
+      ]
+    },
+    {
+      "query": "melat kiros",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T02:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-1-results",
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-colorado-us-house-1.html",
+        "https://denverite.com/2026/11/01/denver-jews-zionism-melat-kiros/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkyIu6am6Z1ZghjllvJ4kBF4payu92IK0X0e2rsJIb6B-hNJyhOlkGzmYK6h8",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-1-results",
+          "title": "Colorado House District 1 Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkyIu6am6Z1ZghjllvJ4kBF4payu92IK0X0e2rsJIb6B-hNJyhOlkGzmYK6h8"
+        },
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-colorado-us-house-1.html",
+          "title": "Colorado First Congressional District 2026: Live Election Results, Kiros vs. Peterson",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLYRw_zafnSYFB5DVn9AwOrkilidzwnAeuRyxf7UcCL_S_Kjuak3pCLZ71880"
+        },
+        {
+          "url": "https://denverite.com/2026/11/01/denver-jews-zionism-melat-kiros/",
+          "title": "How Melat Kiros made Zionism a defining issue in Denver’s congressional election",
+          "publisher": "Denverite",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ojxI5zwVCF1ifGpPa0NvOQ49J8iFP9uDddCkLKby-jNRlFAgc6nz5OMMe-Q"
+        }
+      ]
+    },
+    {
+      "query": "eric barlow",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T02:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-wyoming.html",
+        "https://wyofile.com/wyomingites-go-to-the-polls-to-vote-on-the-economy-the-states-next-governor-and-change/",
+        "https://apnews.com/projects/elections-2026/wyoming-us-senate-results/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfTuZWRe19ohzOJ34EdAAGMKO03woz6JuVpsZUfVE2bNbBGXHvgtIYhA0oxYA",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-jersey-us-house-2.html",
-          "title": "New Jersey Second Congressional District 2026: Live Election Results, Van Drew vs. Mullock",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-wyoming.html",
+          "title": "Wyoming 2026: Live Midterm Election Results",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREKy1pnkWwY5PAdbPIkFtRFqNHcJ36S302PcUisdJBkvUhM9PLLJGu4oyQfd4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfTuZWRe19ohzOJ34EdAAGMKO03woz6JuVpsZUfVE2bNbBGXHvgtIYhA0oxYA"
         },
         {
-          "url": "https://newjerseyglobe.com/congress/republicans-outpacing-democrats-in-election-day-voting-in-nj-2-but-democratic-turnout-lead-holds/",
-          "title": "Republicans outpacing Democrats in Election Day voting in NJ-2, but Democratic turnout lead holds",
-          "publisher": "New Jersey Globe",
+          "url": "https://wyofile.com/wyomingites-go-to-the-polls-to-vote-on-the-economy-the-states-next-governor-and-change/",
+          "title": "Wyomingites go to the polls to vote on the economy, the state’s next governor and ‘change’",
+          "publisher": "WyoFile",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQa6OcAhdo2NL_ceul73gAIeRzgHDPYvWNnHMoiXPwtVMMN061c9fZeiCG-0KU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWZ2qIOlpMep7QSrQ_9OPEK_zMZgdZ7RrZ2FxKfxkMXX4RWbo02NoCmnjZl6k"
         },
         {
-          "url": "https://www.app.com/story/news/2026/11/03/jeff-van-drew-zack-mullock-odds-who-is-winning-nj-2/92582768007/",
-          "title": "Could Jeff Van Drew lose today? Election odds show major swing",
-          "publisher": "Asbury Park Press",
+          "url": "https://apnews.com/projects/elections-2026/wyoming-us-senate-results/",
+          "title": "Wyoming U.S. Senate Election Live Results 2026",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQswRWtIjfcyod1bgR89yetMRSOjY7-r8dywbyke7p4nPy5ES3Qzl13CBIVkbs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAcdZEBgEhxSQXVz9mTIdjN0Zg3qN8TGLmdvdCDaW4934A_wRvnZXm4AoibO8"
         }
       ]
     },
     {
-      "query": "chicago mayoral election",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T01:40:00Z",
+      "query": "lynne walz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T02:00:00Z",
       "related_news_urls": [
-        "https://blockclubchicago.org/2026/11/02/johnson-other-candidates-face-challenges-to-nominating-petitions-for-mayors-race/",
-        "https://www.chicagotribune.com/2026/11/02/mayor-brandon-johnson-nominating-petitions/",
-        "https://chicago.suntimes.com/elections/2026/11/02/willie-wilson-petition-challenges-mayor-brandon-johnson-signatures-mayoral-election"
+        "https://apnews.com/projects/elections-2026/nebraska-governor-results/",
+        "https://www.wowt.com/2026/11/03/election-night-2026-nebraska-governors-race-updates/",
+        "https://www.norfolkneradio.com/news/pillen-encourages-all-voters-to-make-sure-they-are-heard-in-midterm-elections/article_787e8523-a02a-44fb-9e64-eae170cb7e19.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_c3kRbjXi6vz5yVSkPSyjm1FRkHWJz-dN4ZSbSZsOcDFLQlgYcXlx2IPZS_E",
-      "image_credit": "Block Club Chicago",
-      "news": [
-        {
-          "url": "https://blockclubchicago.org/2026/11/02/johnson-other-candidates-face-challenges-to-nominating-petitions-for-mayors-race/",
-          "title": "Johnson, Other Candidates Face Challenges To Nominating Petitions For Mayor’s Race",
-          "publisher": "Block Club Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_c3kRbjXi6vz5yVSkPSyjm1FRkHWJz-dN4ZSbSZsOcDFLQlgYcXlx2IPZS_E"
-        },
-        {
-          "url": "https://www.chicagotribune.com/2026/11/02/mayor-brandon-johnson-nominating-petitions/",
-          "title": "Mayor Brandon Johnson’s nominating petitions to be challenged, opponent says",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPV7fcYWV0ZAhgz1vR_BBIwsJ_baM54we8AlZyRmjY26cR3XaFYZoZ-Ji-znw"
-        },
-        {
-          "url": "https://chicago.suntimes.com/elections/2026/11/02/willie-wilson-petition-challenges-mayor-brandon-johnson-signatures-mayoral-election",
-          "title": "Willie Wilson’s campaign seeks to knock Mayor Johnson off ballot with petition challenges",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThrmvRBRV0H3dSj_Y2uI-8UUJrGj7MqEvCd9uX1iFA7DSsmiYpyDoxBclitq0"
-        }
-      ]
-    },
-    {
-      "query": "sarah mcbride",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T01:40:00Z",
-      "related_news_urls": [
-        "https://www.advocate.com/politics/election/sarah-mcbride-delaware-wins-reelection",
-        "https://www.delawareonline.com/videos/news/politics/2026/11/03/rep-sarah-mcbride-hopes-new-congress-will-stand-up-to-trump-administration/92591621007/",
-        "https://www.reutersconnect.com/item/delaware-attorney-general-kathy-jennings-goes-to-vote-at-immanuel-highlands-episcopal-church-on-november-3-2026/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAyNjcxMjg"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwkKh77du2pQ3qD72PTM7kPfRrTDX_kZ-xoGRi9TEn5umYWzwrq9XpsmB48Rc",
-      "image_credit": "Advocate.com",
-      "news": [
-        {
-          "url": "https://www.advocate.com/politics/election/sarah-mcbride-delaware-wins-reelection",
-          "title": "Delaware voters send trailblazing transgender Congresswoman Sarah McBride back to the U.S. Congress",
-          "publisher": "Advocate.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwkKh77du2pQ3qD72PTM7kPfRrTDX_kZ-xoGRi9TEn5umYWzwrq9XpsmB48Rc"
-        },
-        {
-          "url": "https://www.delawareonline.com/videos/news/politics/2026/11/03/rep-sarah-mcbride-hopes-new-congress-will-stand-up-to-trump-administration/92591621007/",
-          "title": "Rep. Sarah McBride hopeful in election results, Democratic-controlled Congress",
-          "publisher": "Delawareonline.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnRrBCQepQLtuD_Sm4hZm9xtmiRoGWn0wb14zDvx6AXGbh3AUvDD-ZAxLusCc"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/delaware-attorney-general-kathy-jennings-goes-to-vote-at-immanuel-highlands-episcopal-church-on-november-3-2026/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAyNjcxMjg",
-          "title": "Licensable picture: Delaware Attorney General Kathy Jennings goes to vote at Immanuel Highlands Episcopal Church on November 3, 2026.",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1mv9SLhQU5NJxWcBfWLvymVmPgGt3Xnxk9IEkahm6Kv84oN1g89vVzhC7Xhw"
-        }
-      ]
-    },
-    {
-      "query": "hillsborough county election results",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T01:40:00Z",
-      "related_news_urls": [
-        "https://www.tampabay.com/news/florida-politics/elections/2026/11/03/hillsborough-midterm-election-results/",
-        "https://www.yahoo.com/news/politics/articles/incumbent-commissioner-joshua-wostal-down-003508837.html",
-        "https://floridapolitics.com/archives/827841-harry-cohen-easily-hangs-on-in-hillsborough-county-commission-battle-against-jackie-toledo-dems-flip-commission/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0NMkFTUoi-loHAWGt0cdDfC6gYmq12lH1EUwF5sKxf_McyDvmS0cazrNCujE",
-      "image_credit": "Tampa Bay Times",
-      "news": [
-        {
-          "url": "https://www.tampabay.com/news/florida-politics/elections/2026/11/03/hillsborough-midterm-election-results/",
-          "title": "Hillsborough County election results: commission and more",
-          "publisher": "Tampa Bay Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0NMkFTUoi-loHAWGt0cdDfC6gYmq12lH1EUwF5sKxf_McyDvmS0cazrNCujE"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/incumbent-commissioner-joshua-wostal-down-003508837.html",
-          "title": "Incumbent Commissioner Joshua Wostal down, early voting shows",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkQDasgS--6dCnPL61_ecDZ1fm-4rsWdaBY9bMxB1fvO2A2trHQlt62IOlYn0"
-        },
-        {
-          "url": "https://floridapolitics.com/archives/827841-harry-cohen-easily-hangs-on-in-hillsborough-county-commission-battle-against-jackie-toledo-dems-flip-commission/",
-          "title": "Harry Cohen easily hangs on in Hillsborough County Commission battle against Jackie Toledo, Dems flip Commission",
-          "publisher": "Florida Politics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQN1PlRmYnwWNlB-35b1A6biYCbwkY-Z-bMcVzIT6favMpZywEm_eKiVSvW5Qw"
-        }
-      ]
-    },
-    {
-      "query": "speaker of the house",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T01:40:00Z",
-      "related_news_urls": [
-        "https://www.valleycentral.com/news/local-news/u-s-house-speaker-visits-valley-to-boost-republican-candidates/",
-        "https://www.wsj.com/livecoverage/midterm-election-results-2026-latest-updates/card/speaker-johnson-visits-south-texas-a-key-area-for-gop-M3LsBfRGe2Wikil5DEUh",
-        "https://www.newsnationnow.com/politics/2026-midterm-elections/tx-34-election-results-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaO3dOsX9gbRmR2-AR3ytiQ4u7tTvziNgZzkp1in3_g5bhApTT-MkYsIm2m4s",
-      "image_credit": "ValleyCentral.com",
-      "news": [
-        {
-          "url": "https://www.valleycentral.com/news/local-news/u-s-house-speaker-visits-valley-to-boost-republican-candidates/",
-          "title": "U.S. House speaker visits Valley to boost Republican candidates",
-          "publisher": "ValleyCentral.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaO3dOsX9gbRmR2-AR3ytiQ4u7tTvziNgZzkp1in3_g5bhApTT-MkYsIm2m4s"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/midterm-election-results-2026-latest-updates/card/speaker-johnson-visits-south-texas-a-key-area-for-gop-M3LsBfRGe2Wikil5DEUh",
-          "title": "Speaker Johnson Visits South Texas, a Key GOP Area",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL64IB07YLmZdepMa97LtG_0c-daa9XokMro_zYm1yeOl9EY6K26FKrlL0lzk"
-        },
-        {
-          "url": "https://www.newsnationnow.com/politics/2026-midterm-elections/tx-34-election-results-2026/",
-          "title": "Live results: Eric Flores faces Vicente Gonzalez in Texas’s 34th District",
-          "publisher": "NewsNation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqgMAlwrknVveAk7vi2n0WR7ofjJP6XNI5DKpUUtzzjnuMGIyNSAemWZPYf0"
-        }
-      ]
-    },
-    {
-      "query": "anthony constantino",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T01:40:00Z",
-      "related_news_urls": [
-        "https://nysfocus.com/interactives/2026-election-results/congress/district-21/",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-york-us-house-21.html",
-        "https://www.mynbc5.com/article/new-york-21-race-results-2026/74110745"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDpLu5hWqZItEMSeDUu_xfScjKLLqf1ftb1kXZxUShiPZy1dvoJd3gL85ra8M",
-      "image_credit": "New York Focus",
-      "news": [
-        {
-          "url": "https://nysfocus.com/interactives/2026-election-results/congress/district-21/",
-          "title": "Congressional District 21 Results 2026 (NY-21)",
-          "publisher": "New York Focus",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDpLu5hWqZItEMSeDUu_xfScjKLLqf1ftb1kXZxUShiPZy1dvoJd3gL85ra8M"
-        },
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-new-york-us-house-21.html",
-          "title": "New York 21st Congressional District 2026: Live Election Results, Gendebien vs. Constantino",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8y_jJBGAuK5JCjaQQWSojVWXuBduhejpTM0yw0_4TifImPqOTd8-Fk5OWB0"
-        },
-        {
-          "url": "https://www.mynbc5.com/article/new-york-21-race-results-2026/74110745",
-          "title": "New York Congressional District 21 race results: See live results",
-          "publisher": "WPTZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShJIhMWj1zjwM_DulujPJCKGxBIzkSBfdYPd17by5ooygUhdCU_ORbLe2uUBk"
-        }
-      ]
-    },
-    {
-      "query": "summer lee",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T01:40:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/philadelphia/news/delaware-2026-midterm-election-ballot/",
-        "https://www.wdel.com/news/delaware-department-of-elections-issues-voting-alert-ahead-of-2026-general-election/article_f48a16d2-1ff7-528d-a9a4-99111a244385.html",
-        "https://spotlightdelaware.org/es/2026/11/03/election-day-live-blog/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDvYOzYgmQnMCwBzIH9mXPE3gBKkAIDxtLJJugmLKCFHfM3Bd9ggr81Q5eWEk",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/philadelphia/news/delaware-2026-midterm-election-ballot/",
-          "title": "Who's on your 2026 midterm election ballot in Delaware? Find out how you can vote for this year",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDvYOzYgmQnMCwBzIH9mXPE3gBKkAIDxtLJJugmLKCFHfM3Bd9ggr81Q5eWEk"
-        },
-        {
-          "url": "https://www.wdel.com/news/delaware-department-of-elections-issues-voting-alert-ahead-of-2026-general-election/article_f48a16d2-1ff7-528d-a9a4-99111a244385.html",
-          "title": "Delaware Department of Elections issues voting alert ahead of 2026 General Election",
-          "publisher": "WDEL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTl1aHJRq0bdO4pOy3mLX1slerjhyUT6XoVs4S1KJS_OjWb5_-GHhGBDsvVqQQ"
-        },
-        {
-          "url": "https://spotlightdelaware.org/es/2026/11/03/election-day-live-blog/",
-          "title": "Blog en directo del día de las elecciones: Los votantes acuden a las urnas",
-          "publisher": "Spotlight Delaware",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRmtv_BOyQ-ocCe5uSuAbMY4VmD_E_c-AdfQDWJDkvuCC6arbVOOE5Yim7W2I"
-        }
-      ]
-    },
-    {
-      "query": "colin allred",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T01:30:00Z",
-      "related_news_urls": [
-        "https://thehill.com/homenews/campaign/6185721-colin-allred-wins-texas-house-seat-2026-midterms/",
-        "https://www.dallasnews.com/news/elections/article/allred-gillespie-us-house-33rd-district-22506659.php",
-        "https://www.cbsnews.com/texas/news/texas-district-33-election-results-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMpcXAZaUOWaZgBjjYEReUPprVsod8axTCfYzPmiNnjxkOzBhGE84KaSGHGE",
-      "image_credit": "The Hill",
-      "news": [
-        {
-          "url": "https://thehill.com/homenews/campaign/6185721-colin-allred-wins-texas-house-seat-2026-midterms/",
-          "title": "Allred wins Texas House seat in comeback bid after 2 Senate campaigns",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMpcXAZaUOWaZgBjjYEReUPprVsod8axTCfYzPmiNnjxkOzBhGE84KaSGHGE"
-        },
-        {
-          "url": "https://www.dallasnews.com/news/elections/article/allred-gillespie-us-house-33rd-district-22506659.php",
-          "title": "Colin Allred returns to Congress in redrawn 33rd District",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNoKnW5PFelbzKfWHS4GZfWsSDtRZceElsRQkjAza4tqKjIOUn2NyNwSavsws"
-        },
-        {
-          "url": "https://www.cbsnews.com/texas/news/texas-district-33-election-results-2026/",
-          "title": "Democrat Colin Allred wins Texas' 33rd Congressional District race, defeating Patrick Gillespie",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsiR06Jv7DqdHcnCLin78MG0eHj0wq0vKal58Vu0qVgkLD19ic_KrxOoWCunw"
-        }
-      ]
-    },
-    {
-      "query": "mississippi",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-04T01:30:00Z",
-      "related_news_urls": [
-        "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-        "https://www.localmemphis.com/article/news/politics/elections/live-election-night-results-here-are-the-results-for-races-in-mississippi/522-b583e739-b094-4b3b-a207-bf69201919c1",
-        "https://mississippitoday.org/2026/11/03/live-2026-election-mississippi-midterm-results-trump-scott-colom-cindy-hyde-smith/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7w-cK-gUNfiWHk6pOEm2ZkGKkjsOYppJpOD73qDkCYocYNkSe9S10mrKotZU",
       "image_credit": "AP News",
       "news": [
         {
-          "url": "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-          "title": "Mississippi U.S. Senate Election Live Results 2026",
+          "url": "https://apnews.com/projects/elections-2026/nebraska-governor-results/",
+          "title": "Nebraska Governor Election Live Results 2026",
           "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7w-cK-gUNfiWHk6pOEm2ZkGKkjsOYppJpOD73qDkCYocYNkSe9S10mrKotZU"
         },
         {
-          "url": "https://www.localmemphis.com/article/news/politics/elections/live-election-night-results-here-are-the-results-for-races-in-mississippi/522-b583e739-b094-4b3b-a207-bf69201919c1",
-          "title": "Live Election Night results | Here are the results for races in Mississippi",
-          "publisher": "localmemphis.com",
+          "url": "https://www.wowt.com/2026/11/03/election-night-2026-nebraska-governors-race-updates/",
+          "title": "Election Night 2026: Nebraska governor’s race updates",
+          "publisher": "WOWT",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuZnIKI-xxpCEQot4UKZdq0awh-0DVwemVcBgNzMOyDkzJ850RzX0pEBi9PsE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQywF8rodMRKiXE1yxCF8Y78_dSNEFxTYuUPqtGTTwNNBEapV2P01wJXind-7I"
         },
         {
-          "url": "https://mississippitoday.org/2026/11/03/live-2026-election-mississippi-midterm-results-trump-scott-colom-cindy-hyde-smith/",
-          "title": "LIVE: 2026 Mississippi election results",
-          "publisher": "Mississippi Today",
+          "url": "https://www.norfolkneradio.com/news/pillen-encourages-all-voters-to-make-sure-they-are-heard-in-midterm-elections/article_787e8523-a02a-44fb-9e64-eae170cb7e19.html",
+          "title": "Pillen encourages all voters to make sure they are heard in midterm elections",
+          "publisher": "norfolkneradio.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrJM3d8aDjx-rTuqewkGLX7zyn_JDfot8vPxahmcUPsIdR05n4N1RIYBL3lr4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYbjg8_3gXZtFbANT_75sbOsWlfERFzo2iXaqJnxT3GFFg9bUA0wP6RPRE76Q"
+        }
+      ]
+    },
+    {
+      "query": "first black woman governor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T02:00:00Z",
+      "related_news_urls": [
+        "https://www.fox5atlanta.com/news/keisha-lance-bottoms-delivers-closing-rally-before-georgia-vote",
+        "https://apnews.com/article/georgia-governor-keisha-lance-bottoms-black-woman-a66cda3338b6fc571149546fa33bc320",
+        "https://www.yahoo.com/news/videos/keisha-lance-bottoms-awaiting-results-233742357.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr1cMWbe94dPefxDFRkCH98E8N95UF4vF2uYQUANd9-ZgP0b0mfjw_pcoGFNQ",
+      "image_credit": "FOX 5 Atlanta",
+      "news": [
+        {
+          "url": "https://www.fox5atlanta.com/news/keisha-lance-bottoms-delivers-closing-rally-before-georgia-vote",
+          "title": "Keisha Lance Bottoms delivers closing rally before Georgia vote",
+          "publisher": "FOX 5 Atlanta",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr1cMWbe94dPefxDFRkCH98E8N95UF4vF2uYQUANd9-ZgP0b0mfjw_pcoGFNQ"
+        },
+        {
+          "url": "https://apnews.com/article/georgia-governor-keisha-lance-bottoms-black-woman-a66cda3338b6fc571149546fa33bc320",
+          "title": "Georgia's Keisha Lance Bottoms navigates the challenges of Black women battling political barriers",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2dxA_LnJa6g-_i2WGEkq0d4CGORmbfhPkc1mjKHMdCPI_4i6GwxtSc7dvp-8"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/keisha-lance-bottoms-awaiting-results-233742357.html",
+          "title": "Keisha Lance Bottoms awaiting results for 2026 midterm election to decide governor's race in Georgia",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStmNjlrHSUamVHjpuvFlIOXK79uFtjYSqsj3Ygl4I6_KOFrxmwsdN0n7nycrw"
         }
       ]
     }
