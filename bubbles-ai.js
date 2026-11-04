@@ -3189,6 +3189,21 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   try{workEvidence=await readBrainReport()}
   catch(error){workEvidence='Robot Brain report unavailable: '+String(error.message||error)+'. No bot activity was assumed.'}
  }
+ // Public source state is NOT the private chat memory or a Brain execution receipt.
+ // When asked what changed, Bubbles can read current main commits and open PRs
+ // directly rather than confidently guessing what another session built.
+ if(!embedded&&/\\b(?:today|tonight|recent|latest|already|last night|since|status)\\b/i.test(request)&&
+    /\\b(?:work|built|build|added|merged|merge|changes?|changed|commits?|pull requests?|prs?|finished|completed)\\b/i.test(request)){
+  try{
+   const {isBuildHistoryQuestion,readRecentBuildHistory}=await import('/bubbles-public-build-history.mjs?v=20261103-source1');
+   if(isBuildHistoryQuestion(request)){
+    const publicHistory=await readRecentBuildHistory({question:request});
+    workEvidence=[workEvidence,publicHistory].filter(Boolean).join('\\n\\n');
+   }
+  }catch(error){
+   workEvidence=[workEvidence,'Public GitHub build-history read failed; recent merges or deployments are unverified here. '+String(error.message||error).slice(0,130)].filter(Boolean).join('\\n\\n');
+  }
+ }
  // Show the authoritative receipt immediately, then let GPT explain it.
  // Model latency or failure cannot change whether the Brain job was recorded.
  if(workEvidence){
