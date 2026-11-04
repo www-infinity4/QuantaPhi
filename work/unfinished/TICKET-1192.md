@@ -5,7 +5,7 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Source-level continuation and admission diagnostics staged; no production job execution or live Android acceptance proved"
-sessions_spent: unknown
+sessions_spent: 1
 sessions_remaining_estimate: unknown
 agent: ChatGPT
 lease_id: null
@@ -21,6 +21,10 @@ live_verified: false
 next_action: "Verify exact-head CI on Bubbles #1664; obtain independent review and gated merge/release, then use one signed owner continuation with real claim/test/PR receipt"
 blocker: "Live Brain's deployed source predates pending admission fixes; older tickets require explicit eligible owner selection. Independent review and guarded release still pending."
 ---
+
+# Canonical issue
+
+https://github.com/www-infinity4/QuantaPhi/issues/1192
 
 # Owner acceptance
 
