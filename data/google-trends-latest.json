@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T11:31:05.516944Z",
+  "checked_at": "2026-11-04T12:01:29.446107Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "did brian fitzpatrick win",
+      "query": "clima de hoy",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T11:40:00Z",
+      "related_news_urls": [
+        "https://eldiariony.com/2026/11/02/pronostico-del-tiempo-en-nueva-york-para-este-lunes-2-de-noviembre/",
+        "https://www.identidadcorrentina.com.ar/noticia/44893_new-york-domingo-fresco-con-cielo-cubierto-y-presin-alta.htm",
+        "https://tn.com.ar/estados-unidos/clima/2026/11/04/como-estara-el-clima-en-new-york-este-miercoles-4-de-noviembre/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiZIgfag67jKOq4moKjnRwua24cd2glQeDFFP-ulY3sn0WmR1UWYe1pg9WwJE",
+      "image_credit": "El Diario NY",
+      "news": [
+        {
+          "url": "https://eldiariony.com/2026/11/02/pronostico-del-tiempo-en-nueva-york-para-este-lunes-2-de-noviembre/",
+          "title": "Pronóstico del tiempo en Nueva York para este lunes 2 de noviembre",
+          "publisher": "El Diario NY",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiZIgfag67jKOq4moKjnRwua24cd2glQeDFFP-ulY3sn0WmR1UWYe1pg9WwJE"
+        },
+        {
+          "url": "https://www.identidadcorrentina.com.ar/noticia/44893_new-york-domingo-fresco-con-cielo-cubierto-y-presin-alta.htm",
+          "title": "New York: domingo fresco, con cielo cubierto y presión alta",
+          "publisher": "Identidad Correntina",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsB6NVLREAMzWGVn9uDcBbSgSAJMs4tCup32hsaTgYQbZIvgoGgNh3oTIjaSI"
+        },
+        {
+          "url": "https://tn.com.ar/estados-unidos/clima/2026/11/04/como-estara-el-clima-en-new-york-este-miercoles-4-de-noviembre/",
+          "title": "¿Cómo estará el clima en New York este miércoles 4 de noviembre?",
+          "publisher": "TN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToEQIg7WQS7WKAR2UxKIzpQBvoNSWYpAvVaHr2D9GQmyW3nKga3ytEhvbosPs"
+        }
+      ]
+    },
+    {
+      "query": "virginia beach election results",
       "approx_searches": "200+",
-      "published_at": "2026-11-04T11:10:00Z",
+      "published_at": "2026-11-04T11:40:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/pennsylvania-house-results",
-        "https://6abc.com/live-updates/midterm-elections-2026-what-voters-need-know-pennsylvania-new-jersey-delaware/20000315/",
-        "https://www.spotlightpa.org/news/2026/11/pennsylvania-house-election-results-legislature-control-elections/"
+        "https://www.13newsnow.com/article/news/politics/elections/virginia-beach-city-council-race-results-2026-election-live/291-f19d4a5e-0595-4aca-9b41-09df31ddc512",
+        "https://www.wavy.com/news/local-news/virginia-beach/virginia-beach-november-2026-election-results/",
+        "https://www.whro.org/elections/2026-11-03/heres-who-won-local-elections-around-hampton-roads"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9tSaeap2o6zhz2LhLilVx7zcUcjnG0-UKmgFXlKuvZVVhQUZ0rHozHAIhLf8",
-      "image_credit": "NBC News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmeraj0snoXccvYBDasg-QByQ4M-6CenbGOPI4lQsawUnBUftj3Qheyn0F7HQ",
+      "image_credit": "13newsnow.com",
       "news": [
         {
-          "url": "https://www.nbcnews.com/politics/2026-elections/pennsylvania-house-results",
-          "title": "Pennsylvania U.S. House Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
+          "url": "https://www.13newsnow.com/article/news/politics/elections/virginia-beach-city-council-race-results-2026-election-live/291-f19d4a5e-0595-4aca-9b41-09df31ddc512",
+          "title": "Who won on Virginia Beach City Council?",
+          "publisher": "13newsnow.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9tSaeap2o6zhz2LhLilVx7zcUcjnG0-UKmgFXlKuvZVVhQUZ0rHozHAIhLf8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmeraj0snoXccvYBDasg-QByQ4M-6CenbGOPI4lQsawUnBUftj3Qheyn0F7HQ"
         },
         {
-          "url": "https://6abc.com/live-updates/midterm-elections-2026-what-voters-need-know-pennsylvania-new-jersey-delaware/20000315/",
-          "title": "Midterm elections 2026: Live updates for Pennsylvania, New Jersey and Delaware",
-          "publisher": "6abc Philadelphia",
+          "url": "https://www.wavy.com/news/local-news/virginia-beach/virginia-beach-november-2026-election-results/",
+          "title": "Virginia Beach: November 2026 Election Results",
+          "publisher": "WAVY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStP7P0cUW6-oJ46bHKU8XZ4sWAiK3k2cKm5I19AtuOVQdXjk2VO7_zimgzJ-Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ23-j6RHRHZ1PkZxONgFQ8d-Re9imIe6cyoHh0WbV54PjLtLj1n2iuprogplY"
         },
         {
-          "url": "https://www.spotlightpa.org/news/2026/11/pennsylvania-house-election-results-legislature-control-elections/",
-          "title": "Democrats say they’ve won the Pennsylvania House and Senate, handing Shapiro a powerful trifecta",
-          "publisher": "Spotlight PA",
+          "url": "https://www.whro.org/elections/2026-11-03/heres-who-won-local-elections-around-hampton-roads",
+          "title": "Here’s who won local elections around Hampton Roads",
+          "publisher": "WHRO",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4CnyI3fZupXBa2gZ1eS0uZtsaVxLpblFfivY-WV-HeZlQfxpZokemCkMKICY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpPn84i0GpUr_ZmFQV0V8bH3wZfpyfopDNxM1YrVBhnmua5unMw8Zo5jrcMvs"
         }
       ]
     },
     {
-      "query": "summit county election results",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T11:10:00Z",
+      "query": "natalee holloway",
+      "approx_searches": "200+",
+      "published_at": "2026-11-04T11:40:00Z",
       "related_news_urls": [
-        "https://signalakron.org/summit-county-judge-races-election-results-november-2026/",
-        "https://www.beaconjournal.com/story/news/politics/elections/county/2026/11/03/summit-county-judge-races-election-results/92381922007/",
-        "https://www.centredaily.com/news/nation-world/national/article317911378.html"
+        "https://pagesix.com/2026/11/04/entertainment/the-biggest-revelations-from-netflixs-natalee-holloway-doc/",
+        "https://people.com/what-to-know-natalee-holloway-disappearance-killed-12208054",
+        "https://www.yahoo.com/entertainment/tv/articles/natalee-holloway-doc-reveals-unseen-080125580.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT56d1kDnmBcLTZ1Dn1k7R6vmZdvd5mJZf5BrhB7pve4_Tjs1-XlAnwtzYlIPA",
-      "image_credit": "Signal Akron",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdRBhMH_PsrdAmYHehIgiMp9okT2WLPAtlC84-eG-7obFSyc8dHjPETs6bXP8",
+      "image_credit": "Page Six",
       "news": [
         {
-          "url": "https://signalakron.org/summit-county-judge-races-election-results-november-2026/",
-          "title": "2026 election results for Summit County judge races",
-          "publisher": "Signal Akron",
+          "url": "https://pagesix.com/2026/11/04/entertainment/the-biggest-revelations-from-netflixs-natalee-holloway-doc/",
+          "title": "The biggest revelations from Netflix’s Natalee Holloway doc",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT56d1kDnmBcLTZ1Dn1k7R6vmZdvd5mJZf5BrhB7pve4_Tjs1-XlAnwtzYlIPA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdRBhMH_PsrdAmYHehIgiMp9okT2WLPAtlC84-eG-7obFSyc8dHjPETs6bXP8"
         },
         {
-          "url": "https://www.beaconjournal.com/story/news/politics/elections/county/2026/11/03/summit-county-judge-races-election-results/92381922007/",
-          "title": "Democrats win in all but 2 contested Summit judge races",
-          "publisher": "Akron Beacon Journal",
+          "url": "https://people.com/what-to-know-natalee-holloway-disappearance-killed-12208054",
+          "title": "Was Natalee Holloway Ever Found? Inside Her Disappearance and Murder",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMRU5DM7Z93BkNHoII5GF7DbwMtgDhUefJ_Th6axAIOnbxjVTu5D13GqI3z9U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWz6YjOXA83Uy0YUR7AFnrZxDk7ssW4e1Oanf1E7jLONcpf8NdzOuOJ1u9siQ"
         },
         {
-          "url": "https://www.centredaily.com/news/nation-world/national/article317911378.html",
-          "title": "Democrats are leading in contested Summit County judge races",
-          "publisher": "Centre Daily Times",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/natalee-holloway-doc-reveals-unseen-080125580.html",
+          "title": "Natalee Holloway Doc Reveals Unseen Footage of Joran van der Sloot",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwQVl6WU1WqnBG8-UWWBj-TPFUq668fkFICuPwT2UzsWK-r5BQmOOmuOAOtI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT20lbk8oqB8MW3yHN64jhIeLOzcfiHJCUS1PXyROHcFycmy5dKsDGGxcqyWAs"
         }
       ]
     },
     {
-      "query": "kane county election results",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T11:10:00Z",
+      "query": "luke murray",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T11:40:00Z",
       "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/04/kane-county-treasurer-election-results/",
-        "https://www.shawlocal.com/daily-journal/2026/11/04/kankakee-county-voters-decide-fate-of-local-ballot-initiatives/",
-        "https://elginobserver.com/25469/news/kane-county-treasurer-candidates-visit-campus/"
+        "https://www.bostonglobe.com/2026/11/02/sports/luke-murray-bc-mens-basketball/",
+        "https://www.bcinterruption.com/boston-college-mens-basketball/52719/boston-college-mens-basketball-roundtable-a-new-era-dawns",
+        "https://bceagles.com/news/2026/11/2/mens-basketball-hosts-wagner-in-2026-27-season-opener"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbVUi2WBxHElS82rMYLejnQD4-HuyJbhS78iCmIZJPJHOfG2BUJCeaQT2A5nA",
-      "image_credit": "Chicago Tribune",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8U_A0mpPfFpsDYVnZ6hEwQrso-XqpSizmMJEfjMej4WHGnetnZuk-NXMTBmI",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://www.chicagotribune.com/2026/11/04/kane-county-treasurer-election-results/",
-          "title": "Penny Wegman in lead in Kane County treasurer’s race",
+          "url": "https://www.bostonglobe.com/2026/11/02/sports/luke-murray-bc-mens-basketball/",
+          "title": "Boston College men’s basketball building around Luke Murray’s offense, and more to know as Eagles tip off",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8U_A0mpPfFpsDYVnZ6hEwQrso-XqpSizmMJEfjMej4WHGnetnZuk-NXMTBmI"
+        },
+        {
+          "url": "https://www.bcinterruption.com/boston-college-mens-basketball/52719/boston-college-mens-basketball-roundtable-a-new-era-dawns",
+          "title": "Boston College Men’s Basketball Roundtable: A New Era Dawns",
+          "publisher": "BC Interruption",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS74ATzGHUGGKIqh1I53uVvK58QE9LgTna8RPzwJum-OH5Zm7tWpq2WnfhSOrs"
+        },
+        {
+          "url": "https://bceagles.com/news/2026/11/2/mens-basketball-hosts-wagner-in-2026-27-season-opener",
+          "title": "Men's Basketball Hosts Wagner in 2026-27 Season Opener",
+          "publisher": "Boston College Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJPxr7GZFZ9wNbBcQ5M_RiHr69DeyP0lGJDgTK6FMkCZwEiTSXluKdcGHc5g"
+        }
+      ]
+    },
+    {
+      "query": "gloucester county election results",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T11:40:00Z",
+      "related_news_urls": [
+        "https://newjerseyglobe.com/local/democratic-wave-sweeps-atlantic-county-ousting-republican-incumbents/",
+        "https://www.nj.com/atlantic/2026/11/nj-election-day-2026-atlantic-county-live-results.html",
+        "https://pressofatlanticcity.com/news/video_fd48fca3-2c4c-5540-995f-d21be757e26a.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3_P93gyRY5zZksUlOVT4KaOseUg-H0UYJlTtcRtKjaORBfZ1knON2HcscYg",
+      "image_credit": "New Jersey Globe",
+      "news": [
+        {
+          "url": "https://newjerseyglobe.com/local/democratic-wave-sweeps-atlantic-county-ousting-republican-incumbents/",
+          "title": "Democratic wave sweeps Atlantic County, ousting Republican incumbents",
+          "publisher": "New Jersey Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3_P93gyRY5zZksUlOVT4KaOseUg-H0UYJlTtcRtKjaORBfZ1knON2HcscYg"
+        },
+        {
+          "url": "https://www.nj.com/atlantic/2026/11/nj-election-day-2026-atlantic-county-live-results.html",
+          "title": "N.J. election day 2026: Atlantic County live results",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbqE-R9BATwt7LOu8_7LEJXLQAvSVMTQ2mVyldBVbHFAUhtDOM-vHOtSCPVpo"
+        },
+        {
+          "url": "https://pressofatlanticcity.com/news/video_fd48fca3-2c4c-5540-995f-d21be757e26a.html",
+          "title": "Atlantic County Democrats celebrate election results",
+          "publisher": "Press of Atlantic City",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLPO_sDMzOqztK_Pptfmothez0QzfeoFEguwziBpvrmd3yQrElTWUBBlDBEAY"
+        }
+      ]
+    },
+    {
+      "query": "new york state elections 2026",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T11:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcnewyork.com/elections/live-updates-election-day-nyc-nj-poll-vote-governor-congress/6566156/",
+        "https://www.democratandchronicle.com/story/news/2026/11/04/new-york-election-results-2026-who-won-big-races/92606742007/",
+        "https://www.fox5ny.com/election/ny-election-results-2026-vote-ballot-new-york"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcJD-CGNwNkzKuhFle2DHtdeeAYc36JfXmEX_tTK3WsfqSajBYqQEQYoVyMI",
+      "image_credit": "NBC New York",
+      "news": [
+        {
+          "url": "https://www.nbcnewyork.com/elections/live-updates-election-day-nyc-nj-poll-vote-governor-congress/6566156/",
+          "title": "Midterm elections blog: Democrats pick up House seats in NY and NJ, Hochul reelected",
+          "publisher": "NBC New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcJD-CGNwNkzKuhFle2DHtdeeAYc36JfXmEX_tTK3WsfqSajBYqQEQYoVyMI"
+        },
+        {
+          "url": "https://www.democratandchronicle.com/story/news/2026/11/04/new-york-election-results-2026-who-won-big-races/92606742007/",
+          "title": "Who won the big races in NY? Where the governor, Congress races stand",
+          "publisher": "Democrat and Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmbhoEdq0zUXY-0k3GPrbrGhSD35OBLXRH_o_Z74W68wE_ZMnXR294fEj9DVs"
+        },
+        {
+          "url": "https://www.fox5ny.com/election/ny-election-results-2026-vote-ballot-new-york",
+          "title": "New York election results 2026: State Senate, Assembly, more l LIVE",
+          "publisher": "FOX 5 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVDhW5MLjPBAC2A_QHM7pxhn_pt243ydYSlwyueK9EpMFNrAoJanEg5Rk1m0Y"
+        }
+      ]
+    },
+    {
+      "query": "lake county election results",
+      "approx_searches": "100+",
+      "published_at": "2026-11-04T11:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/politics/articles/democrats-sweep-lake-county-races-062146617.html",
+        "https://gary.capitalbnews.org/jerry-williams-lake-county-first-black-sheriff/",
+        "https://www.chicagotribune.com/2026/11/03/democrat-jerry-williams-leads-republican-david-crane-in-lake-county-sheriff-race/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShQa_D2nM3tHdYDasDopPqjd6rFAb_uYQR-PD69poqnWV-oP7DCa4hA_ZM0GQ",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/democrats-sweep-lake-county-races-062146617.html",
+          "title": "Democrats Sweep Lake County Races",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShQa_D2nM3tHdYDasDopPqjd6rFAb_uYQR-PD69poqnWV-oP7DCa4hA_ZM0GQ"
+        },
+        {
+          "url": "https://gary.capitalbnews.org/jerry-williams-lake-county-first-black-sheriff/",
+          "title": "Jerry Williams Elected Lake County’s First Black Sheriff",
+          "publisher": "Capital B Gary",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwy5UTL49cX_LIR4GRmg_04lRY3eO-X-VmyGDVQQPrm-acr-55VmWVV-nbzCw"
+        },
+        {
+          "url": "https://www.chicagotribune.com/2026/11/03/democrat-jerry-williams-leads-republican-david-crane-in-lake-county-sheriff-race/",
+          "title": "Democrat Jerry Williams leads Republican David Crane in Lake County sheriff race",
           "publisher": "Chicago Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbVUi2WBxHElS82rMYLejnQD4-HuyJbhS78iCmIZJPJHOfG2BUJCeaQT2A5nA"
-        },
-        {
-          "url": "https://www.shawlocal.com/daily-journal/2026/11/04/kankakee-county-voters-decide-fate-of-local-ballot-initiatives/",
-          "title": "Kankakee County voters decide fate of local ballot initiatives",
-          "publisher": "Shaw Local",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH5NhUgK5GS9BJmTfJhT8q-g2sbLZowO-TskHAGqbA9sjRbwo_YspqHHqAlKc"
-        },
-        {
-          "url": "https://elginobserver.com/25469/news/kane-county-treasurer-candidates-visit-campus/",
-          "title": "Kane County Treasurer Candidates Visit Campus",
-          "publisher": "Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSHhbfx7_dfyYm6NjBerj7IW_v0no8SCYGkPYCRgBgFTv9IqkYcF7vHhWUnbk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUk0x5U2ojfIdyF2A1NLhWd5okxkFLQR7nWYIR26gLsYO6SjevbxmruatYW9I"
         }
       ]
     },
     {
-      "query": "apple",
+      "query": "nintendo switch zelda ocarina of time",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T11:30:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/04/nx-s1-6026597/review-legend-of-zelda-ocarina-of-time-remake-switch-2",
+        "https://www.theverge.com/games/1025415/the-legend-of-zelda-ocarina-of-time-review-nintendo-switch-2",
+        "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-3/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRKs1-ByFmk6GooMU8gfEY5u22GpGszCeK_MLBE7-AfeZADayJlnO-CUV0Y5o",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/04/nx-s1-6026597/review-legend-of-zelda-ocarina-of-time-remake-switch-2",
+          "title": "Review: The Legend of Zelda: Ocarina of Time remake is superb, streamlined and safe",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRKs1-ByFmk6GooMU8gfEY5u22GpGszCeK_MLBE7-AfeZADayJlnO-CUV0Y5o"
+        },
+        {
+          "url": "https://www.theverge.com/games/1025415/the-legend-of-zelda-ocarina-of-time-review-nintendo-switch-2",
+          "title": "The Legend of Zelda: Ocarina of Time never gets old",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgwUCOaufOYx71bZ3TK6P_bdrZlqIVON5ltEhwOuIwW_9CxBQS9Rw4telXCEM"
+        },
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-3/",
+          "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 3",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHm55IKYx3CGV3D3v-CkERgYtDZ6OoPHse90qS2ea6XG2mxQmLqOk4cQypz6U"
+        }
+      ]
+    },
+    {
+      "query": "orange county ny election results",
       "approx_searches": "1000+",
-      "published_at": "2026-11-04T11:00:00Z",
+      "published_at": "2026-11-04T11:30:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
-        "https://www.cnbc.com/2026/11/03/apple-palantir-stock-earnings.html",
-        "https://www.wsj.com/tech/apple-beats-wall-street-expectations-with-boost-from-higher-prices-36749418"
+        "https://www.chroniclenewspaper.com/news/local-news/orange-county-election-results-FX6356513",
+        "https://laist.com/news/politics/voter-guides/2026-election-general-la-county-live-results",
+        "https://www.ocregister.com/2026/11/03/election-day-2026-live-election-results-in-orange-county-2/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwVF27L6WwKtiFqh8skjgNQ6lYQCgzrEohW_7wa_jVrcU7ZfiYBwHEkFbRpu4",
+      "image_credit": "chroniclenewspaper.com",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
-          "title": "Apple beats Q4 estimates on strong iPhone sales but misses on China revenue, stock falls",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.chroniclenewspaper.com/news/local-news/orange-county-election-results-FX6356513",
+          "title": "Orange County Election Results",
+          "publisher": "chroniclenewspaper.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwVF27L6WwKtiFqh8skjgNQ6lYQCgzrEohW_7wa_jVrcU7ZfiYBwHEkFbRpu4"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/03/apple-palantir-stock-earnings.html",
-          "title": "Palantir sinks after earnings as analysts point to slowdown in total contract value",
-          "publisher": "CNBC",
+          "url": "https://laist.com/news/politics/voter-guides/2026-election-general-la-county-live-results",
+          "title": "Live election results for races in LA County",
+          "publisher": "LAist",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-dXkvCWxepv-V5aaYk3cbxTuuhXAbchcMNFg6ECqRAFAeOWcXL2XWZJGF5YE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmKqNTi7VmaVe2UNouffggcsqAe5R9_VR61Z3-xONMyHCIuseyH40Hsg7M2I8"
         },
         {
-          "url": "https://www.wsj.com/tech/apple-beats-wall-street-expectations-with-boost-from-higher-prices-36749418",
-          "title": "Apple’s Growth Machine Is Slowing. High Prices Might Not Save It.",
-          "publisher": "WSJ",
+          "url": "https://www.ocregister.com/2026/11/03/election-day-2026-live-election-results-in-orange-county-2/",
+          "title": "Election Day 2026: Live election results in Orange County",
+          "publisher": "Orange County Register",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDLROPodKwtiXveEuYV2ljIWWYwdwz_0fOklVn6JI4u7VPub2sQp-7w00MAJc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQUcwXo5YV53oJkHXbBnfuW_4Ngq4FXbr4oTAsEWeEw6Lf1MqeCwMSemtpjas"
         }
       ]
     },
     {
-      "query": "nassau county elections",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T11:00:00Z",
+      "query": "who won in indiana",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T11:30:00Z",
       "related_news_urls": [
-        "https://www.newsday.com/news/region-state/democratic-wave-new-york-tjrq4q08",
-        "https://www.whec.com/local/decision-2026-guide-to-local-races-for-congress-governor-and-other-state-offices/",
-        "https://www.liherald.com/baldwin/stories/long-island-election-results-2026-hochul-gillen-scianablo-hempstead-democrats,226448"
+        "https://fox59.com/news/politics/dems-break-republican-supermajority-in-indiana-statehouse-preliminary-results/",
+        "https://indianacapitalchronicle.com/2026/11/03/indiana-dems-break-gop-supermajority-in-house/",
+        "https://www.indystar.com/picture-gallery/news/politics/2026/11/03/indiana-house-gop-leader-todd-huston-loses-seat-see-his-career-over-the-years-republican-speaker/92598088007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwvtNWLS6TljEZpJoxaMWRLW0D2puJ0T_oAoaroEnV9YzugrcpYafo3y9Jux4",
-      "image_credit": "Newsday",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5-JztPZ0dNbYvplggjx_z0yU0CF3dfTjqoeXYR_xF-xKsFomb0cCYibnmvx0",
+      "image_credit": "Fox 59",
       "news": [
         {
-          "url": "https://www.newsday.com/news/region-state/democratic-wave-new-york-tjrq4q08",
-          "title": "Stunning wave of Democratic victories comes to New York",
-          "publisher": "Newsday",
+          "url": "https://fox59.com/news/politics/dems-break-republican-supermajority-in-indiana-statehouse-preliminary-results/",
+          "title": "Dems break Republican supermajority in Indiana Statehouse: preliminary results",
+          "publisher": "Fox 59",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwvtNWLS6TljEZpJoxaMWRLW0D2puJ0T_oAoaroEnV9YzugrcpYafo3y9Jux4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5-JztPZ0dNbYvplggjx_z0yU0CF3dfTjqoeXYR_xF-xKsFomb0cCYibnmvx0"
         },
         {
-          "url": "https://www.whec.com/local/decision-2026-guide-to-local-races-for-congress-governor-and-other-state-offices/",
-          "title": "Decision 2026: Gov. Hochul, Rep. Morelle, and Rep. Tenney win re-election; More results",
-          "publisher": "WHEC.com",
+          "url": "https://indianacapitalchronicle.com/2026/11/03/indiana-dems-break-gop-supermajority-in-house/",
+          "title": "Indiana Dems break GOP supermajority in House, notch Senate wins",
+          "publisher": "Indiana Capital Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6WarmhOSINSZFvfPA2AOTQrWs57iQmL2u2Cg2ubxO2q11-iNJ_AgBVVXTb0A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpb0EZsL5_FrLqK8HNZi_ldk5PiVO62mKsSNJH6XpI2dgTEjIUdQmeMfQv_qo"
         },
         {
-          "url": "https://www.liherald.com/baldwin/stories/long-island-election-results-2026-hochul-gillen-scianablo-hempstead-democrats,226448",
-          "title": "Democrats sweep key Long Island races as Hochul, Gillen win re-election and Scianablo leads in Hempstead",
-          "publisher": "Herald Community Newspapers",
+          "url": "https://www.indystar.com/picture-gallery/news/politics/2026/11/03/indiana-house-gop-leader-todd-huston-loses-seat-see-his-career-over-the-years-republican-speaker/92598088007/",
+          "title": "Indiana House Speaker Todd Huston trailing Democratic challenger. See his career",
+          "publisher": "IndyStar",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjMNg36Z87yz5bJEd6c29bRUBFzc7zDItVNU93a1xEUw6xAtMulp_nUGoDVI"
-        }
-      ]
-    },
-    {
-      "query": "spy stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-04T11:00:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/news/4662169-william-blair-refreshes-stock-conviction-list-with-5-additions-3-removals",
-        "https://www.investing.com/news/analyst-ratings/william-blair-adds-five-stocks-to-november-conviction-list-93CH-4990663",
-        "https://finance.yahoo.com/markets/stocks/articles/william-blair-shakes-top-stock-162539821.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsJS9bw_3L7216pU-QGXgjeWSBfZkM3B5Hqdz92FoF9qo8x3H9A41FSm-R9kU",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/news/4662169-william-blair-refreshes-stock-conviction-list-with-5-additions-3-removals",
-          "title": "William Blair refreshes stock Conviction List with 5 additions, 3 removals (SPY:NYSEARCA)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsJS9bw_3L7216pU-QGXgjeWSBfZkM3B5Hqdz92FoF9qo8x3H9A41FSm-R9kU"
-        },
-        {
-          "url": "https://www.investing.com/news/analyst-ratings/william-blair-adds-five-stocks-to-november-conviction-list-93CH-4990663",
-          "title": "William Blair adds five stocks to November conviction list",
-          "publisher": "Investing.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsaO0BC-N2dmHKembRQ2RmhNpQMmMleYC43zwPARjQDa30X71GLCXZWdNozE"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/william-blair-shakes-top-stock-162539821.html",
-          "title": "William Blair shakes up its top stock picks",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
-        }
-      ]
-    },
-    {
-      "query": "calvert county election results",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T11:00:00Z",
-      "related_news_urls": [
-        "https://southernmarylandchronicle.com/2026/11/03/calvert-county-2026-general-election-results/",
-        "https://smnewsnet.com/archives/566419/republicans-lead-all-five-calvert-county-commissioner-races/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWQmq7bQXD8MDdS9LRmY0A7iKUbyU2wUrrzVk1mCLpKWxXbiRHJoEvG3FZHuA",
-      "image_credit": "SoMdNews.com",
-      "news": [
-        {
-          "url": "https://southernmarylandchronicle.com/2026/11/03/calvert-county-2026-general-election-results/",
-          "title": "Calvert Election: Commissioner Races Too Close to Call -",
-          "publisher": "- SoMD Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-_uhr8I0TKQ3XusV1dHTW5PgDgwEAU-EMedBqMxZSp9lxFf7me-Q_ptiKigM"
-        },
-        {
-          "url": "https://smnewsnet.com/archives/566419/republicans-lead-all-five-calvert-county-commissioner-races/",
-          "title": "Republicans Lead All Five Calvert County Commissioner Races",
-          "publisher": "Southern Maryland News Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStmgMZQObj_2tAXQmAWxQiqzJCBidGTQRV5EAZOJpC_PWgpKBDc0UL2XVuVAc"
-        }
-      ]
-    },
-    {
-      "query": "hillary scholten",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T11:00:00Z",
-      "related_news_urls": [
-        "https://www.woodtv.com/news/elections/hillary-scholten-wins-reelection-in-3rd-us-house-district/",
-        "https://wwmt.com/news/local/terri-deboer-us-congress-third-district-michigan-republican-hillary-scholten-democrat-affordability-immigration-politics-government-state",
-        "https://www.mlive.com/news/grand-rapids/2026/11/hillary-scholten-defeats-terri-deboer-wins-reelection-to-congress.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDaWcqih90078uJABdu5zh0q02nJX2yx8WpCR400OQ95c52oTbsIh1cC1dNLo",
-      "image_credit": "WOODTV.com",
-      "news": [
-        {
-          "url": "https://www.woodtv.com/news/elections/hillary-scholten-wins-reelection-in-3rd-us-house-district/",
-          "title": "Hillary Scholten wins reelection in 3rd US House District",
-          "publisher": "WOODTV.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDaWcqih90078uJABdu5zh0q02nJX2yx8WpCR400OQ95c52oTbsIh1cC1dNLo"
-        },
-        {
-          "url": "https://wwmt.com/news/local/terri-deboer-us-congress-third-district-michigan-republican-hillary-scholten-democrat-affordability-immigration-politics-government-state",
-          "title": "Former News Channel 3 Meteorologist Terri DeBoer aims for U.S. Congress",
-          "publisher": "WWMT",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6Mg2jLva2bjDZ9iel1FmUmgzU4iFyvtIynOTxp1MDagOv8CMPS-pyZmrfbHc"
-        },
-        {
-          "url": "https://www.mlive.com/news/grand-rapids/2026/11/hillary-scholten-defeats-terri-deboer-wins-reelection-to-congress.html",
-          "title": "Hillary Scholten defeats Terri DeBoer, wins reelection to Congress",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdjuZ1XEcNdmpRd8vn-9ex0oEp0hoF4K3WfutiRVCkdnnl4lxmQ0ZzFnKOrEY"
-        }
-      ]
-    },
-    {
-      "query": "jazz chisholm yankees free agent",
-      "approx_searches": "100+",
-      "published_at": "2026-11-04T11:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/today-pinstripe-alley-11-3-110059947.html",
-        "https://nypost.com/2026/11/03/sports/yankees-jazz-chisholm-split-feels-inevitable-after-qualifying-offer-decision/",
-        "https://bleacherreport.com/articles/25528787-new-yankees-rumors-jazz-chisholm-jr-plans-after-2b-does-not-receive-qualifying-contract-offer"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIE4eC0p0zrRVF6_ZC3bipP7kjniMmJ0mK_68vW6yqt7xRnxVvcn5S2CjhlZs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/today-pinstripe-alley-11-3-110059947.html",
-          "title": "Today on Pinstripe Alley – 11/3/26",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIE4eC0p0zrRVF6_ZC3bipP7kjniMmJ0mK_68vW6yqt7xRnxVvcn5S2CjhlZs"
-        },
-        {
-          "url": "https://nypost.com/2026/11/03/sports/yankees-jazz-chisholm-split-feels-inevitable-after-qualifying-offer-decision/",
-          "title": "Yankees split with Jazz Chisholm feels inevitable after $23 million decision",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlex9ryqiv1g8VCjtTIlkY7YU7oj2DYieTnI2A4R7qpVEkSATDyqss63txkbU"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25528787-new-yankees-rumors-jazz-chisholm-jr-plans-after-2b-does-not-receive-qualifying-contract-offer",
-          "title": "New Yankees Rumors on Jazz Chisholm Jr. Plans After 2B Does Not Receive Qualifying Contract Offer",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Ojzn_rPM59nJw5aNHfWJLekc6by1yOAK_TeuBDDpNmxUlfoGMBgvpmIZaEQ"
-        }
-      ]
-    },
-    {
-      "query": "oakland county election results",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T10:50:00Z",
-      "related_news_urls": [
-        "https://www.clickondetroit.com/decision-2026/2026/11/02/key-races-2026-michigan-general-election-results/",
-        "https://www.detroitnews.com/story/news/politics/elections/oakland-county/2026/11/03/oakland-county-election-results-november-3-2026/92566476007/",
-        "https://www.mlive.com/news/kalamazoo/2026/11/election-results-for-kalamazoo-area-races-proposals-nov-3-2026.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3AIWJfXex5Yt4WDl3iApMCDVuLozRc3fcNHRo8a6vSyIHy2-grdHD8uef1wo",
-      "image_credit": "ClickOnDetroit | WDIV Local 4",
-      "news": [
-        {
-          "url": "https://www.clickondetroit.com/decision-2026/2026/11/02/key-races-2026-michigan-general-election-results/",
-          "title": "Key Races: 2026 Michigan General Election Results",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3AIWJfXex5Yt4WDl3iApMCDVuLozRc3fcNHRo8a6vSyIHy2-grdHD8uef1wo"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/news/politics/elections/oakland-county/2026/11/03/oakland-county-election-results-november-3-2026/92566476007/",
-          "title": "2026 Michigan election results for Oakland County races and proposals",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr-jrf2YTpCJu-4NgJXuyuBVtxgSO7Xa-bjNU3_HrM-dkGuACuQVnS-phEoJw"
-        },
-        {
-          "url": "https://www.mlive.com/news/kalamazoo/2026/11/election-results-for-kalamazoo-area-races-proposals-nov-3-2026.html",
-          "title": "Election results for Kalamazoo-area races, proposals, Nov. 3, 2026",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAtcuZ4EBR2ZU0-gUzp-R2m8p6FaHK0NWedsvFq6I4zL_faY5cX8vY5Iw0t5M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkY5jJBPuxONUjIuDreHuovOWdi83yd2rEbv9SbNoVKS0gRQDkM9CQKDn1PZM"
         }
       ]
     }
