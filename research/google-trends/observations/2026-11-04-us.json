@@ -3,12 +3,303 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T15:01:45.451681Z",
+  "checked_at": "2026-11-04T15:31:36.168311Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "rennes vs olympiacos",
+      "query": "nvda stock",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-04T15:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html",
+        "https://stockstory.org/us/stocks/nasdaq/mtsi/news/why-up-down/macom-vishay-intertechnology-semtech-penguin-solutions-and-power-integrations-shares-skyrocket-what-you-need-to-know"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvFPffksrCyp3T6WI9iQDekHrd7U_9KjKoEOdmwz44jY7j0AXnkMftc4AdO_E",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html",
+          "title": "Micron, Nvidia, and AMD lead chip stocks' rebound",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvFPffksrCyp3T6WI9iQDekHrd7U_9KjKoEOdmwz44jY7j0AXnkMftc4AdO_E"
+        },
+        {
+          "url": "https://stockstory.org/us/stocks/nasdaq/mtsi/news/why-up-down/macom-vishay-intertechnology-semtech-penguin-solutions-and-power-integrations-shares-skyrocket-what-you-need-to-know",
+          "title": "MACOM, Vishay Intertechnology, Semtech, Penguin Solutions, and Power Integrations shares skyrocket, what you need to know",
+          "publisher": "StockStory",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWPRjNRM5cAH7G_NHmk4_JUmM3orIrPNyClrSFR4GtFPIf5GXoFAe7x8DoC68"
+        }
+      ]
+    },
+    {
+      "query": "qqq",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T15:10:00Z",
+      "related_news_urls": [
+        "https://seekingalpha.com/article/4960901-qqq-after-a-minus-6-7-percent-october-what-history-says-about-november",
+        "https://pluang.com/en/news-feed/qqqm-nasdaq-100-pullback-peluang-beli",
+        "https://tradersunion.com/news/market-voices/show/4090909-qqq-key-levels-focus/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVI9OBkYIwxUQ5Q2lFOL2hUTpt_Qd04GWAiDE0u7XZG3LWP0WfLAH57sE2sM",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/article/4960901-qqq-after-a-minus-6-7-percent-october-what-history-says-about-november",
+          "title": "QQQ After A -6.7% October: What History Says About November (NASDAQ:QQQ)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVI9OBkYIwxUQ5Q2lFOL2hUTpt_Qd04GWAiDE0u7XZG3LWP0WfLAH57sE2sM"
+        },
+        {
+          "url": "https://pluang.com/en/news-feed/qqqm-nasdaq-100-pullback-peluang-beli",
+          "title": "Invesco NASDAQ 100 ETF drops 7% in October but seen as a buy on strong tech earnings growth and AI exposure.",
+          "publisher": "Pluang",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyV29EpL_l224LNRJIF0MsVOiRNjd_Ek7uC0gWAU4-GUMpoZy-Fa1tj66HRXY"
+        },
+        {
+          "url": "https://tradersunion.com/news/market-voices/show/4090909-qqq-key-levels-focus/",
+          "title": "Scott Redler: Focus on QQQ 200-day, key $687 and $671 levels",
+          "publisher": "Traders Union",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4-R2UexSFtwWDRijUNcwf0K6UwrjYaadebV30di7-HBMn0KPSHqu9b11-7-8"
+        }
+      ]
+    },
+    {
+      "query": "covid tests",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T15:10:00Z",
+      "related_news_urls": [
+        "https://broadandliberty.com/2026/11/03/six-years-later-chester-countys-20-million-covid-test-debacle-continues/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS64IDFIq6ytX_2zUT6a5_qZPKC-MdRUTWmJgsCgd3aTs7QQYZzeyYS45DkA_A",
+      "image_credit": "Broad + Liberty",
+      "news": [
+        {
+          "url": "https://broadandliberty.com/2026/11/03/six-years-later-chester-countys-20-million-covid-test-debacle-continues/",
+          "title": "Six years later, Chester County’s $20 Million Covid test debacle continues",
+          "publisher": "Broad + Liberty",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS64IDFIq6ytX_2zUT6a5_qZPKC-MdRUTWmJgsCgd3aTs7QQYZzeyYS45DkA_A"
+        }
+      ]
+    },
+    {
+      "query": "dell stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T15:10:00Z",
+      "related_news_urls": [
+        "https://seekingalpha.com/article/4960857-refreshing-thoughts-ahead-of-dells-q3-earnings",
+        "https://www.trefis.com/stock/dell/articles/621542/what-are-dell-investors-betting-on/2026-10-30",
+        "https://www.marketwatch.com/data-news/h-r-block-inc-stock-underperforms-tuesday-when-compared-to-competitors-f45c8e9f-1c7bf3ef80dd"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcqrq537kzM1LcY1bWw23u7M-I_a9_HSzS8QlNHka9ASVjfMwBZEFX6r8qv8",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/article/4960857-refreshing-thoughts-ahead-of-dells-q3-earnings",
+          "title": "Refreshing Thoughts Ahead Of Dell's Q3 Earnings",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcqrq537kzM1LcY1bWw23u7M-I_a9_HSzS8QlNHka9ASVjfMwBZEFX6r8qv8"
+        },
+        {
+          "url": "https://www.trefis.com/stock/dell/articles/621542/what-are-dell-investors-betting-on/2026-10-30",
+          "title": "What Are Dell Investors Betting On?",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbWYO5qWswELvl7b6La5bKub6CygMqJZtI0JxkUXP2KB0Oij-D5f_cjk_yQZs"
+        },
+        {
+          "url": "https://www.marketwatch.com/data-news/h-r-block-inc-stock-underperforms-tuesday-when-compared-to-competitors-f45c8e9f-1c7bf3ef80dd",
+          "title": "H&R Block Inc. stock underperforms Tuesday when compared to competitors",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTELrZBk2oHD-lb3LayGayxt_pw8CWnBT0_GDiNlf45HykrttzSBTNjguhmF9w"
+        }
+      ]
+    },
+    {
+      "query": "nvidia stock price",
       "approx_searches": "1000+",
+      "published_at": "2026-11-04T15:00:00Z",
+      "related_news_urls": [
+        "https://www.barrons.com/articles/nvidia-stock-price-data-centers-5b4a74a1",
+        "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3",
+        "https://www.tipranks.com/news/ai-chip-stocks-nvda-amd-and-others-rise-despite-democratic-win-amds-strong-forecast-fuels-optimism"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaDJocz5YJ7nSJWThvGPc1PwWdUVl5uot8MD1pQBUTuGE0bUkfxxph4CH_Hy4",
+      "image_credit": "Barron's",
+      "news": [
+        {
+          "url": "https://www.barrons.com/articles/nvidia-stock-price-data-centers-5b4a74a1",
+          "title": "Why Nvidia Stock Can Ride a Democrat AI Data-Center Crackdown",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaDJocz5YJ7nSJWThvGPc1PwWdUVl5uot8MD1pQBUTuGE0bUkfxxph4CH_Hy4"
+        },
+        {
+          "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3",
+          "title": "Micron and other chip stocks slip as election results strike at the core of data-center optimism",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSn4MshXWghx2EDm-PrGkc31-vmqFTeII9ugkkN9UGMtiU_RWYWJYn8qf-baA"
+        },
+        {
+          "url": "https://www.tipranks.com/news/ai-chip-stocks-nvda-amd-and-others-rise-despite-democratic-win-amds-strong-forecast-fuels-optimism",
+          "title": "AI Chip Stocks NVDA, AMD, and Others Rise Despite Democratic Win; AMD’s Strong Forecast Fuels Optimism",
+          "publisher": "TipRanks",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFoU7bwFYbUtbn2mS9n6BWGt4hmYP0ngGi4HXjIJkrajllP9PL6x4dWTmakZc"
+        }
+      ]
+    },
+    {
+      "query": "apple stock price",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-04T15:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
+        "https://www.nytimes.com/2026/11/02/technology/apple-earnings.html",
+        "https://www.cnbc.com/2026/11/03/apple-margin-oil-iran.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html",
+          "title": "Apple beats Q4 estimates on strong iPhone sales but misses on China revenue, stock falls",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMnNF0z6zI6icqtCNuCHp-hIJFIDvM0NVtCaZG0WX7w3lsqEXVyHXJ690SWfk"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/02/technology/apple-earnings.html",
+          "title": "Apple’s Profit Grows 12% Despite Component Price Worries",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72kAQgt8BWAldURzZ4grCiVJNqaDkLroD9weR6h1JGxSLbr7xouIMDRBagkI"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/03/apple-margin-oil-iran.html",
+          "title": "Apple margin outlook pressures tech as reported U.S. strike lifts oil",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCLOxdtbzMmaL5ohrwiscluY5OVldBerfZwbVZJZupDkDoXk2bWidCHf6k77w"
+        }
+      ]
+    },
+    {
+      "query": "ignacio buse",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T15:00:00Z",
+      "related_news_urls": [
+        "https://www.bleachernation.com/picks/2026/11/02/buse-vs-medvedev-prediction-at-the-rolex-paris-masters-wednesday-november-4/",
+        "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-day-3-predictions-medvedev-buse/",
+        "https://www.dimers.com/tennis/news/ignacio-buse-vs-daniil-medvedev-tennis-prediction-atp-paris-masters-2026-ac"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfO11jXZwhrawDlNj9a3DegnOpW6zho6ySw6gTfhCBGMKyY3dSWueBk5Y_-I4",
+      "image_credit": "Bleacher Nation",
+      "news": [
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/02/buse-vs-medvedev-prediction-at-the-rolex-paris-masters-wednesday-november-4/",
+          "title": "Buse vs. Medvedev Prediction at the Rolex Paris Masters – Wednesday, November 4",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfO11jXZwhrawDlNj9a3DegnOpW6zho6ySw6gTfhCBGMKyY3dSWueBk5Y_-I4"
+        },
+        {
+          "url": "https://lastwordonsports.com/tennis/2026/11/03/atp-paris-day-3-predictions-medvedev-buse/",
+          "title": "ATP Paris Day 3 Predictions Including Daniil Medvedev vs Ignacio Buse",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD3wbfac7ysmBGi2AeRz_Sud7uB_KeQw4Rn7G5zWi3CHPrnqRdLZxCd4FwTE8"
+        },
+        {
+          "url": "https://www.dimers.com/tennis/news/ignacio-buse-vs-daniil-medvedev-tennis-prediction-atp-paris-masters-2026-ac",
+          "title": "Ignacio Buse vs. Daniil Medvedev prediction, odds, picks for ATP Paris Masters 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSt7_t6l9wGvD0tir0nFtM9FHfK_w1Vc4spgMLp8Yt0QuHL-sXC34Q2lps62sQ"
+        }
+      ]
+    },
+    {
+      "query": "voo stock",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T14:50:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/voo-vs-vti-vanguard-fund-134400510.html",
+        "https://www.tipranks.com/news/voo-vs-vti-one-vanguard-etf-covers-nearly-the-entire-us-stock-market-is-it-better",
+        "https://www.fool.com/investing/2026/11/02/voo-vs-vti-which-vanguard-fund-better-buy-now/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rpkx6oKqu1-QmQTcXzXiyL2p2JcJdA9D66ze5ctPhUV_lYzn68WB5WNfkxg",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/voo-vs-vti-vanguard-fund-134400510.html",
+          "title": "VOO vs. VTI: Which Vanguard Fund Is the Better Buy Right Now?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rpkx6oKqu1-QmQTcXzXiyL2p2JcJdA9D66ze5ctPhUV_lYzn68WB5WNfkxg"
+        },
+        {
+          "url": "https://www.tipranks.com/news/voo-vs-vti-one-vanguard-etf-covers-nearly-the-entire-us-stock-market-is-it-better",
+          "title": "VOO vs. VTI: One Vanguard ETF Covers Nearly the Entire US Stock Market – Is It Better?",
+          "publisher": "TipRanks",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIAJyGhITO0HZ1fMxjAw0e7Dpx8NgVZkHSt20pbYXNq-Cqx6sF20N6vbyMQA"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/02/voo-vs-vti-which-vanguard-fund-better-buy-now/",
+          "title": "VOO vs. VTI: Which Vanguard Fund Is the Better Buy Right Now?",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFIQoxHbfhuifQ687LU0H4lbnE5hFCqcTDHVLoqaXGpGh3or2Cq1jDhqlwy1w"
+        }
+      ]
+    },
+    {
+      "query": "spx",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T14:50:00Z",
+      "related_news_urls": [
+        "https://www.investors.com/news/vix-stock-market-fear-gauge-sp-500/",
+        "https://www.cnbc.com/2026/11/02/wall-streets-fear-index-is-doing-something-strange-heres-what-it-means-for-stocks.html",
+        "https://pro.thestreet.com/market-commentary/is-a-jumpy-vix-trying-to-tell-us-where-the-market-is-headed-next"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT6tcSSRKR9L9x5qdSE_NZtdV6hXGLlB0_yx5UGuJbFz9cgqRWTwmPEQBI8rw",
+      "image_credit": "Investor's Business Daily",
+      "news": [
+        {
+          "url": "https://www.investors.com/news/vix-stock-market-fear-gauge-sp-500/",
+          "title": "Investor Fear Spikes Ahead Of Midterms. It May Not Be So Bad For Stocks.",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT6tcSSRKR9L9x5qdSE_NZtdV6hXGLlB0_yx5UGuJbFz9cgqRWTwmPEQBI8rw"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/02/wall-streets-fear-index-is-doing-something-strange-heres-what-it-means-for-stocks.html",
+          "title": "Wall Street's Fear Index is doing something strange. Here's what it means for stocks",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj7nCr2r1LGnhSxggGskTX7_UyxmRE7ZalmvXPEl_yRYIdlLr7R9lt3WvyBLY"
+        },
+        {
+          "url": "https://pro.thestreet.com/market-commentary/is-a-jumpy-vix-trying-to-tell-us-where-the-market-is-headed-next",
+          "title": "Is a Jumpy VIX Trying to Tell Us Where the Market Is Headed Next?",
+          "publisher": "RealMoney Pro",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9YWi8xKVolQfpWVpd77jNgBu9I3_ySi30kXSuU5FNUlS9cb89uM4RL61LrAM"
+        }
+      ]
+    },
+    {
+      "query": "rennes vs olympiacos",
+      "approx_searches": "2000+",
       "published_at": "2026-11-04T14:40:00Z",
       "related_news_urls": [
         "https://www.oregonlive.com/tv/2026/11/how-to-watch-olympiacos-vs-stade-rennais-today-europa-league-streaming-guide-time-betting-lines.html",
@@ -38,321 +329,6 @@
           "publisher": "Coinbase",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
-        }
-      ]
-    },
-    {
-      "query": "spy",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T14:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/options/articles/daily-etf-flows-spy-takes-234639008.html",
-        "https://finance.yahoo.com/markets/options/articles/etf-activity-spy-leads-1-110011146.html",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-02/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG1ayY6a3Rw0-cE5FGLIw2jqqjXCMMaaWD9q3oVieZvBVW9Q0EH6ReHWxPed4",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/options/articles/daily-etf-flows-spy-takes-234639008.html",
-          "title": "Daily ETF Flows: SPY Takes No. 1 Spot",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG1ayY6a3Rw0-cE5FGLIw2jqqjXCMMaaWD9q3oVieZvBVW9Q0EH6ReHWxPed4"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/options/articles/etf-activity-spy-leads-1-110011146.html",
-          "title": "ETF Activity: SPY Leads With $1.60 Billion Inflow on Oct. 22",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
-        },
-        {
-          "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-02/",
-          "title": "COMMENTARY: Morning Bid: Apple's healthier core",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSfkAJ3l-6OmdkZZYdTBO7VVzh_Ry4IqrLTjJePmM77f3ZQdmZXBvTJhNPNi0"
-        }
-      ]
-    },
-    {
-      "query": "djia",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T14:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-03/",
-        "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAaGoF4-b-JuL2i8kz5WjNgPC2p6zn3ga4oPPYcX7_PDNyIOHadmNmjcNY9BM",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html",
-          "title": "S&P 500 snaps 3-day skid on Election Day as chip stocks rebound",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAaGoF4-b-JuL2i8kz5WjNgPC2p6zn3ga4oPPYcX7_PDNyIOHadmNmjcNY9BM"
-        },
-        {
-          "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-03/",
-          "title": "COMMENTARY: Trading Day: AI trade rebounds, midterms awaited",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzcSEkC7cGVX7BV4JY_rPTLGb-41wm5MZOMV7Fp5Qm5Dpdap1Hxf0XprNPv0"
-        },
-        {
-          "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
-          "title": "US tech stocks recover after selloff spooks investors over AI spending",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eboXcVvbEB561yC5v0uNq6NT9r-2qvDx9SpPeR6MXaqiZgjG4VkJRdf7VaU"
-        }
-      ]
-    },
-    {
-      "query": "alex de minaur",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T14:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50348138/carlos-alcaraz-beats-alex-de-minaur-win-vienna-open",
-        "https://www.atptour.com/en/news/alcaraz-de-minaur-vienna-2026-final",
-        "https://www.atptour.com/en/video/hot-shot-alcaraz-breaks-brilliantly-on-fire-early-in-vienna-2026-final"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCaCKrxBEVmS1zqpCjNvMvZzAtsizYmK9XWsNhiOTrf4UqOBsPAWTAAmgWx7s",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50348138/carlos-alcaraz-beats-alex-de-minaur-win-vienna-open",
-          "title": "Carlos Alcaraz beats Alex de Minaur to win Vienna Open for fourth title of 2026",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCaCKrxBEVmS1zqpCjNvMvZzAtsizYmK9XWsNhiOTrf4UqOBsPAWTAAmgWx7s"
-        },
-        {
-          "url": "https://www.atptour.com/en/news/alcaraz-de-minaur-vienna-2026-final",
-          "title": "Alcaraz storms past De Minaur to Vienna title, completes perfect ATP 500 season",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjoe9fTPgQ2fz8ybcso0c8ZpU0uTHSJ1agbYupWxNhTw979Xic4xgJY_-XrH4"
-        },
-        {
-          "url": "https://www.atptour.com/en/video/hot-shot-alcaraz-breaks-brilliantly-on-fire-early-in-vienna-2026-final",
-          "title": "Hot Shot: Alcaraz breaks brilliantly, on fire early in Vienna 2026 final!",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7PtE2Hs1pHXALaLIez7RfjtZoctxXefSW4W5j_0yzvcB7MWVi4IySpRVofRI"
-        }
-      ]
-    },
-    {
-      "query": "nyse",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T14:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/healthcare/articles/cvs-health-cvs-beats-q3-115002518.html",
-        "https://www.barrons.com/articles/cvs-health-earnings-stock-price-2b2f99cc",
-        "https://seekingalpha.com/news/4664614-cvs-health-stock-slips-despite-q3-beat"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22Y2mS-1ZRcewKB-_fYfOF4xTZRugvAAITEhU4ohdrGbr7RtVE1I13QHon3A",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/healthcare/articles/cvs-health-cvs-beats-q3-115002518.html",
-          "title": "CVS Health (CVS) Beats Q3 Earnings and Revenue Estimates",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22Y2mS-1ZRcewKB-_fYfOF4xTZRugvAAITEhU4ohdrGbr7RtVE1I13QHon3A"
-        },
-        {
-          "url": "https://www.barrons.com/articles/cvs-health-earnings-stock-price-2b2f99cc",
-          "title": "CVS Raises Outlook and Reveals Breakup Plan. The Real Risk Sits in a Federal Drug Program.",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjWGxr8ywNPLVqf7FyEHiJ4NH38gxJ3ch4wtU7cq3WfQmiYVesZXnB2G2my5A"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4664614-cvs-health-stock-slips-despite-q3-beat",
-          "title": "CVS Health stock slips despite Q3 beat (CVS:NYSE)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSgOk3emrsLruMa0OAp0aquDaZXfSTqy344znRzrRLJo9QqQgBH-8lzfwlmW4"
-        }
-      ]
-    },
-    {
-      "query": "zverev",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T14:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7690457/2026/11/02/alexander-zverev-tennis-world-no-1/",
-        "https://www.espn.com/tennis/story/_/id/50354131/alexander-sasha-zverev-world-no-1-ranking-domestic-abuse-charges",
-        "https://www.bbc.com/sport/tennis/articles/cwkg5z5jmye0o"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCukA41FOpUAy-zVPmuKCVJI1mwFIug67rBJ9BfUFWZHiFoh5nDt3FKXdYcLY",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7690457/2026/11/02/alexander-zverev-tennis-world-no-1/",
-          "title": "Alexander Zverev’s rise to world No. 1: Seizing opportunities and a wretched top-10 record",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCukA41FOpUAy-zVPmuKCVJI1mwFIug67rBJ9BfUFWZHiFoh5nDt3FKXdYcLY"
-        },
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50354131/alexander-sasha-zverev-world-no-1-ranking-domestic-abuse-charges",
-          "title": "FAQ: Why Zverev's rise to world No. 1 provokes mixed feelings",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtvzYJ_pqvp3WhhNQBIWxn17JU4oXLYe-0asv17V_ajzf3wmTqgE5Y2O4y0JQ"
-        },
-        {
-          "url": "https://www.bbc.com/sport/tennis/articles/cwkg5z5jmye0o",
-          "title": "Alexander Zverev becomes deserved world number one but sense of discomfort remains",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnS1p91uC7dqU5cwDEJjvVMFOaJoJIDmautjG8RxnwqLVZMoM0Nap_6KreslY"
-        }
-      ]
-    },
-    {
-      "query": "cherif millogo",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-04T14:20:00Z",
-      "related_news_urls": [
-        "https://www.on3.com/teams/kentucky-wildcats/news/7-foot-5-center-cherif-millogo-commits-to-kentucky-2/",
-        "https://sports.yahoo.com/articles/7-foot-5-center-cherif-140033944.html",
-        "https://247sports.com/college/kentucky/article/scouting-cherif-millogo-and-his-fit-at-kentucky-292173603/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1hzlovi1CCzCQMA3AVwZpgQq7mtwKpUel7jF3-LuHumSR1eXg_5KtE3XBYVY",
-      "image_credit": "On3",
-      "news": [
-        {
-          "url": "https://www.on3.com/teams/kentucky-wildcats/news/7-foot-5-center-cherif-millogo-commits-to-kentucky-2/",
-          "title": "7-foot-5 center Cherif Millogo commits to Kentucky",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1hzlovi1CCzCQMA3AVwZpgQq7mtwKpUel7jF3-LuHumSR1eXg_5KtE3XBYVY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/7-foot-5-center-cherif-140033944.html",
-          "title": "7-foot-5 center Cherif Millogo commits to Kentucky",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzUZU_8hwT0pNGA6eqIGMPvaO56GdxDkTNcnTQ2CjnVrRXY3pfrSAvbecqr1o"
-        },
-        {
-          "url": "https://247sports.com/college/kentucky/article/scouting-cherif-millogo-and-his-fit-at-kentucky-292173603/",
-          "title": "Scouting Cherif Millogo and his fit at Kentucky",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWbuQb7dDFCkM7slksNavbjHACdEZtMpQ7J5Fvjzs6-Ht419QzaBHkIePYCnE"
-        }
-      ]
-    },
-    {
-      "query": "fantasy football trade",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T14:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-week-9-waiver-wire/",
-        "https://sports.yahoo.com/articles/fantasy-football-start-em-sit-141618030.html",
-        "https://www.nbcsports.com/fantasy/football/news/2026-fantasy-football-week-9-defense-dst-rankings-and-streamers"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4AyQS9X26l-XNOIYvPRWlFGCScfHql48VCmBShrVRNeno9CYoCJCfGMBzi4Y",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-week-9-waiver-wire/",
-          "title": "Fantasy football Week 9 waiver wire: Mike Washington Jr. leads the charge as backfields face major shakeups",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4AyQS9X26l-XNOIYvPRWlFGCScfHql48VCmBShrVRNeno9CYoCJCfGMBzi4Y"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/fantasy-football-start-em-sit-141618030.html",
-          "title": "Fantasy Football Start’em, Sit’em Week 9: RB Edition",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlOI7OWZXD2Ib6tXt9Wo3PIVFHu1d9KmsUlpgwxHob3zSfGGtsAMuzjnzl0pg"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/news/2026-fantasy-football-week-9-defense-dst-rankings-and-streamers",
-          "title": "2026 Fantasy Football Week 9 Defense (DST) Rankings and Streamers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcGcw3WV-BlL2BmauXM0evQ8FNxdwQ6pEehn8xubOsHxzwx7FNZFUhYLz71Vg"
-        }
-      ]
-    },
-    {
-      "query": "magnolias athens",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T13:50:00Z",
-      "related_news_urls": [
-        "https://www.11alive.com/article/news/local/vehicle-causes-major-damage-after-crashing-into-popular-magnolias-bar-in-athens/85-ca38d154-9139-4cfd-950e-43ea482e17db",
-        "https://www.redandblack.com/athensnews/motor-vehicle-crashes-into-magnolias-bar-causing-damage-road-closures/article_c3a25640-320b-47cb-a6c7-78a69af1f467.html",
-        "https://www.classiccitynews.com/post/large-area-of-downtown-closed-after-car-crashed-into-building"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYsOoDDglWQNkXxVWxVIoXDiVX3YsXHHS-nsGCkj11C5iPxgquVin0Awgddpc",
-      "image_credit": "11Alive.com",
-      "news": [
-        {
-          "url": "https://www.11alive.com/article/news/local/vehicle-causes-major-damage-after-crashing-into-popular-magnolias-bar-in-athens/85-ca38d154-9139-4cfd-950e-43ea482e17db",
-          "title": "Vehicle causes major damage after crashing into popular Magnolias Bar in Athens",
-          "publisher": "11Alive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYsOoDDglWQNkXxVWxVIoXDiVX3YsXHHS-nsGCkj11C5iPxgquVin0Awgddpc"
-        },
-        {
-          "url": "https://www.redandblack.com/athensnews/motor-vehicle-crashes-into-magnolias-bar-causing-damage-road-closures/article_c3a25640-320b-47cb-a6c7-78a69af1f467.html",
-          "title": "Motor vehicle crashes into Magnolias Bar causing damage, road closures",
-          "publisher": "The Red & Black",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1ycs7tzGxifME_eQrL0l3sctgf7L2Y9HVqPyAjPc_IgdvfJpI9iM0AX6z730"
-        },
-        {
-          "url": "https://www.classiccitynews.com/post/large-area-of-downtown-closed-after-car-crashed-into-building",
-          "title": "Large area of downtown Athens closed after truck crashed into building",
-          "publisher": "Classic City News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhMKgPb4adrb0qcTLn0fxEIYgZprsD8IcJ5-JC0rMyPCMl-QzCyQ1KZFSMbRk"
-        }
-      ]
-    },
-    {
-      "query": "carrie coon",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T13:50:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1437777/carrie-coon-shares-how-marriage-to-tracy-letts-stays-golden",
-        "https://ew.com/carrie-coon-shares-secret-to-tracy-letts-marriage-after-open-relationship-rumors-12235424",
-        "https://people.com/gilded-age-star-carrie-coon-shares-secrets-to-her-13-year-marriage-to-tracy-letts-12224362"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNGURpn4mlvf9iKQxHAFg3Ybdqw0v1Ku8dXfge6gWms25PCQdcLBHSDbUUuLU",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1437777/carrie-coon-shares-how-marriage-to-tracy-letts-stays-golden",
-          "title": "The Gilded Age's Carrie Coon Shares How Her Marriage to Tracy Letts Stays Golden",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNGURpn4mlvf9iKQxHAFg3Ybdqw0v1Ku8dXfge6gWms25PCQdcLBHSDbUUuLU"
-        },
-        {
-          "url": "https://ew.com/carrie-coon-shares-secret-to-tracy-letts-marriage-after-open-relationship-rumors-12235424",
-          "title": "Carrie Coon shares secret to Tracy Letts marriage a year after ‘open’ relationship rumors: ‘The only way to proceed’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9h0rGzpLXG3j3VvkUvHn7jOdpYRUPG5iOlL7i_eJ1JKUQKVEognecooiiW8k"
-        },
-        {
-          "url": "https://people.com/gilded-age-star-carrie-coon-shares-secrets-to-her-13-year-marriage-to-tracy-letts-12224362",
-          "title": "‘The Gilded Age’ Star Carrie Coon Shares the Secrets to Her 13-Year Marriage to Husband Tracy Letts",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa3rDoX7BLDBG0THpmh9RKwhTdeDFqYXCTwCCEUoXX6eK0uhWyu1ca-Qu4MyY"
         }
       ]
     }
