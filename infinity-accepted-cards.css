@@ -41,3 +41,15 @@ body.oracle-quanta #oracleCardStage > .iac-card{max-height:none;height:auto;over
 .iac-source-icon-note{display:block;color:#526774;text-align:center;font:650 11px/1.35 system-ui,sans-serif;padding:0 8px}
 .iac-media.iac-logo-only{grid-template-rows:minmax(0,1fr) auto;gap:0;padding:6px;min-height:94px}
 .iac-media.iac-logo-only img{height:64px;max-width:75%;width:auto;object-fit:contain;margin:auto}
+
+/* Credited independent manufacturer/retailer photography, not an advertisement. */
+.iac-media{position:relative}
+.iac-image-credit{position:absolute;bottom:7px;left:7px;max-width:calc(100% - 14px);
+ padding:5px 8px;background:rgba(22,32,41,.86);border-radius:6px;color:#fff!important;
+ font:650 11px/1.3 system-ui,sans-serif;text-decoration:underline;overflow-wrap:anywhere}
+.iac-image-credit[hidden]{display:none!important}
+
+/* A verified live source photo replaces the logo panel without layout shifts. */
+.iac-media.iac-source-discovered{background:#edf2f4;height:180px;padding:0}
+.iac-media.iac-source-discovered>img{height:100%;width:100%;max-width:100%;object-fit:cover;margin:0}
+@media(max-width:420px){.iac-media.iac-source-discovered{height:148px}}

@@ -3,7 +3,7 @@
  * source icon when a publisher blocks a preview. Never invent products,
  * claim a sponsored ad, or copy private account content.
  */
-import {fetchSpotlights, publicImageUrl} from './quick-card-spotlights.mjs';
+import {fetchSpotlights, publicImageUrl} from './quick-card-spotlights.mjs?v=20261103-photo-reuse1';
 
 const IDENTITY=/logo|favicon|brandmark|og[-_]?image|ogimage|opengraph|social[-_]?share|social[-_]?image|app[-_]?icon/i;
 const BAD_IMAGE=/pixel|tracking|spacer|beacon|transparent\.gif|blank\./i;
