@@ -19,6 +19,7 @@ test('questions, refusals, generic requests and unsupported systems do not becom
   'What is the baseball teams database?',
   'How does the restaurant directory work?',
   'Do not build a restaurant directory',
+  "I don't want to build a restaurant directory",
   'Never add radio buttons',
   'Please stop building the traffic card',
   'Show me the site traffic counter',
