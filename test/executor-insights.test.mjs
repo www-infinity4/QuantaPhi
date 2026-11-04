@@ -62,12 +62,12 @@ test('source wires two public card entrypoints without client-side asset minting
  const capture=readFileSync('media-star-interactions.js','utf8');
  const wallet=readFileSync('bubbles-executor-insights.js','utf8');
  const schema=readFileSync('workers/executor-insights/schema.sql','utf8');
- assert.match(home,/media-star-interactions\\.js/);
- assert.match(host,/media-star-interactions\\.js/);
- assert.match(chat,/bubbles-executor-insights\\.js/);
- assert.match(capture,/event\\.isTrusted/);
+ assert.match(home,/media-star-interactions\.js/);
+ assert.match(host,/media-star-interactions\.js/);
+ assert.match(chat,/bubbles-executor-insights\.js/);
+ assert.match(capture,/event\.isTrusted/);
  assert.match(capture,/IntersectionObserver/);
  assert.match(schema,/CREATE UNIQUE INDEX IF NOT EXISTS media_star_impression_once/);
- assert.doesNotMatch(capture,/mintToken|spendInfinity|wallet\\/spend/);
- assert.doesNotMatch(wallet,/mintToken|localStorage\\.setItem/);
+ assert.doesNotMatch(capture,new RegExp('mintToken|spendInfinity|wallet/spend'));
+ assert.doesNotMatch(wallet,/mintToken|localStorage\.setItem/);
 });
