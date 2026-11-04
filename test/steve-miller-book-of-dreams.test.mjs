@@ -12,7 +12,7 @@ test('one 48px Infinity Radio style button with no autoplay, viewer, or external
  const src=read('steve-miller-book-of-dreams.js');
  assert.match(src,/width:48px;height:48px/);
  assert.match(src,/button\.id='smbAlbumPlay'/);
- assert.match(src,/InfinityArtistMusic\.toggle\('steve-miller'\)/);
+ assert.match(src,/music\.toggle\('steve-miller'\)/);
  assert.match(src,/aria-pressed/);
  assert.doesNotMatch(src,/new yt\.Player|iframe|window\.open|target\s*=|autoplay|oracle:card-deactivated/);
  assert.doesNotMatch(src,/MusicQuant|StarCoin|wallet\.debit/);
