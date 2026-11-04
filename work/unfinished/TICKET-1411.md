@@ -18,12 +18,13 @@ fence: null
 last_observed_at_utc: "2026-11-04T02:58:09.389Z"
 repo: www-infinity4/QuantaPhi
 branch: fix/news-phi-radio-continuity-20261103
-head_sha: ece0289a069460553c0ee9657b93c0054dfae6ef
-pr: null
+head_sha: ac262ec11b6f2e1a540cb7d97ac7ee892fd51356
+pr: 1654
 tests:
   - "Node 22 local isolated source: node --test test/news-phi-continuous-audio.test.mjs — 5/5 PASS (mock DOM)"
   - "node --check news-phi-continuous-audio.js — PASS"
-ci: []
+ci:
+  - "Dedicated workflow committed; latest exact-head run not yet verified"
 merged: false
 deployed: false
 live_verified: false
@@ -42,7 +43,7 @@ next_action: "Run exact-head Node CI and an Android browser test: Play Infinity 
 
 ## Evidence and acceptance
 - Local RED before implementation: five regression tests failed because the new reader and wiring did not exist.
-- Local GREEN after implementation: five focused Node tests passed; JS syntax check passed. Committed test, reader module and homepage loader on branch fix/news-phi-radio-continuity-20261103.
+- Local GREEN after implementation: five focused Node tests passed; JS syntax check passed. Committed test, reader module and homepage loader plus dedicated read-only CI workflow on branch fix/news-phi-radio-continuity-20261103.
 - This source-level fix does **not** provide Android system Media3 foreground playback. Browser app kills, audio-focus changes, and network failures can still stop music. Preserve issue 1411 native-service acceptance separately.
 - No wallet, tokens, login, credentials, media licenses, or autoplay settings changed. Do not mark 100% until review, merge, Cloudflare release and actual playback observed on the owner's Android.
 
