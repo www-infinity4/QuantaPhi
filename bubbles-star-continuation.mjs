@@ -92,6 +92,9 @@ export async function continueSavedWork({fetcher,ownerHeaders,base,now=Date.now(
  // the generic newest-100 timeline (which can hide all ready work).
  const inventory=await call('/work/tickets/list',{continuation:true},15000);
  const selected=selectContinuation(inventory.tickets,{now,maxSlots});
+ // Older Brain versions ignore the new prioritized-list hint; never pretend
+ // that one bounded page proves full backlog coverage in that case.
+ selected.inventoryTruncated=inventory.continuationScope!=='owner_robot_directions'||inventory.truncated===true;
  if(!selected.target)return {ok:true,selected,archive,dispatch:null,executionVerified:false};
  // One real signed GitHub runner request, with its exact existing ticket/job.
  // Never authorize work from imported conversation text or a guessed repository.
@@ -102,7 +105,8 @@ export function continuationReply(result){
  const selection=result?.selected;
  if(!result?.ok||!selection)return 'Continuation could not verify owner work. Nothing was started.';
  const n=selection.slots.length,unfinished=Object.values(selection.counts).reduce((a,b)=>a+b,0);
- const summary='Checked saved owner work: '+unfinished+' unfinished job stages across '+selection.scanned+' tickets; '+n+' project slots available (maximum '+selection.maximum+').';
+ const summary='Checked saved owner work: '+unfinished+' unfinished job stages across '+selection.scanned+' tickets; '+n+' project slots available (maximum '+selection.maximum+').'+
+  (selection.inventoryTruncated?' This is a partial queue view; other older work may remain.':'');
  if(!result.archive?.checked)return summary+' Conversation archive was unavailable; no missing request was invented. '+dispatchSummary(result.dispatch);
  return summary+' Earlier conversations were checked read-only. '+dispatchSummary(result.dispatch);
 }
