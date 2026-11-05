@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T07:31:36.152600Z",
+  "checked_at": "2026-11-05T08:01:40.458106Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "midterm election results senate",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-05T07:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/04/politics/live-news/midterm-election-congress",
+        "https://www.rte.ie/news/2026/1105/1598043-us-midterm-elections/",
+        "https://www.bbc.com/news/articles/cqkgjvr00zmyo"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlZANqFfFhEEvWtTOZDqz_fVq_vPdYnjKa5FbNB-wuAMGv9ZzecHc9dbEoutQ",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/04/politics/live-news/midterm-election-congress",
+          "title": "Democrats continue to stack wins in House as Republicans start blame game after midterm rout",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlZANqFfFhEEvWtTOZDqz_fVq_vPdYnjKa5FbNB-wuAMGv9ZzecHc9dbEoutQ"
+        },
+        {
+          "url": "https://www.rte.ie/news/2026/1105/1598043-us-midterm-elections/",
+          "title": "Democrats vow to rein in Trump after midterm victory",
+          "publisher": "RTE.ie",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVoVpXlciSuGNAkeYHZDBUjbd0QbtDPaXBEp9g6ftUOcwsS9pm-cz2an2EgTk"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cqkgjvr00zmyo",
+          "title": "Five reasons why Republicans lost so badly",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2d2qlvNeZE1mTR1V_-3Q5uIZcm-V_kmqpzD-jerhuWV05IhEM6smaiRNmBcI"
+        }
+      ]
+    },
+    {
+      "query": "lapd navy helicopter near miss",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T07:30:00Z",
+      "related_news_urls": [
+        "https://ktla.com/news/local-news/lapd-navy-helicopter-close-call-echo-park/",
+        "https://www.yahoo.com/news/us/articles/lapd-chopper-pilot-fumes-avoiding-202502152.html",
+        "https://www.cbsnews.com/losangeles/video/lapd-helicopter-makes-last-minute-move-to-avoid-mid-air-collision-with-military-aircraft/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4NgJs4ija789JKpvTZ4ISr3FNKfnHz7Qj6_Vtf8IkFTAHt-azj6_XyFEzb1Y",
+      "image_credit": "KTLA",
+      "news": [
+        {
+          "url": "https://ktla.com/news/local-news/lapd-navy-helicopter-close-call-echo-park/",
+          "title": "‘You guys gotta pay attention’: LAPD pilot blasts Navy helicopter after near miss",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4NgJs4ija789JKpvTZ4ISr3FNKfnHz7Qj6_Vtf8IkFTAHt-azj6_XyFEzb1Y"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/lapd-chopper-pilot-fumes-avoiding-202502152.html",
+          "title": "LAPD chopper pilot fumes after avoiding mid-air disaster with military helicopters: ‘You guys need to pay attention’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWn7nq2azJVYJhe_0_MWP3VY1vb5t61gGWbUegowmCGqaVqrB-ke5ModrDJ3o"
+        },
+        {
+          "url": "https://www.cbsnews.com/losangeles/video/lapd-helicopter-makes-last-minute-move-to-avoid-mid-air-collision-with-military-aircraft/",
+          "title": "LAPD helicopter makes last-minute move to avoid mid-air collision with military aircraft",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV7ebfIz_2-VGlEe_9yqKzQY4tIZmU2jRemW0CshNNu1TARiQi-jom-hjW3tM"
+        }
+      ]
+    },
+    {
+      "query": "chipotle",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T07:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/investors-buy-chipotle-turnaround-072500920.html",
+        "https://www.the-independent.com/us/money/chipotle-new-rewards-program-breaks-records-b3078350.html",
+        "https://www.cnbc.com/2026/10/28/chipotle-mexican-grill-cmg-q3-2026-earnings.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6fs-9k_AvYI4xmJyKj4vSKSl3kZ2vCqPfhe9dkLMjchPWenDLaTwtiY3gHPI",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/investors-buy-chipotle-turnaround-072500920.html",
+          "title": "Should Investors Buy Into the Chipotle Turnaround?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6fs-9k_AvYI4xmJyKj4vSKSl3kZ2vCqPfhe9dkLMjchPWenDLaTwtiY3gHPI"
+        },
+        {
+          "url": "https://www.the-independent.com/us/money/chipotle-new-rewards-program-breaks-records-b3078350.html",
+          "title": "Chipotle overhauled its rewards program - and it looks like it’s working",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG9lBp7dJ0f7S86gRDCKR8DasIHCXJExV8iPfym2GZ4pWLUDrg5z9pMW8P9AI"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/10/28/chipotle-mexican-grill-cmg-q3-2026-earnings.html",
+          "title": "Chipotle shares rise 7% after CEO says same-store sales growth will continue",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsDtOx8PE5rDbU7P24Q5aFgnOUsZCbEfPoPrdj-AJp_2BpIqgd8XIbpgHaHTM"
+        }
+      ]
+    },
     {
       "query": "tennis club",
       "approx_searches": "200+",
@@ -73,33 +178,68 @@
       "approx_searches": "200+",
       "published_at": "2026-11-05T06:50:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/game/_/gameId/401872996/texans-jaguars",
-        "https://www.espn.com/nba/game/_/gameId/401909859/pelicans-nuggets",
-        "https://www.espn.com/nfl/game/_/gameId/401873018/buccaneers-panthers"
+        "https://www.espn.com/mlb/story/_/id/50328890/mlb-early-free-agency-buzz-intel-skubal-trade-rumors",
+        "https://www.mlb.com/news/mets-rotation-offseason-questions-2026-2027",
+        "https://www.bleedcubbieblue.com/chicago-cubs-rumors/236981/cubs-free-agent-target-tarik-skubal"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLutB4wxBzc--XkSlo-UWi4XFjkmYdsf4jlGrb-2yE7Rh-IgOeoapLH_SB-es",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqNu0VhG_C_Fk9EL8nKAWqISUz5v0OP9k5BmOBoX-VPX0eZBY3Z1BDmFuiIY",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/game/_/gameId/401872996/texans-jaguars",
-          "title": "Texans 34-31 Jaguars (Oct 18, 2026) Final Score",
+          "url": "https://www.espn.com/mlb/story/_/id/50328890/mlb-early-free-agency-buzz-intel-skubal-trade-rumors",
+          "title": "MLB offseason buzz: Intel on Skubal, free agency, trade rumors",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLutB4wxBzc--XkSlo-UWi4XFjkmYdsf4jlGrb-2yE7Rh-IgOeoapLH_SB-es"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqNu0VhG_C_Fk9EL8nKAWqISUz5v0OP9k5BmOBoX-VPX0eZBY3Z1BDmFuiIY"
         },
         {
-          "url": "https://www.espn.com/nba/game/_/gameId/401909859/pelicans-nuggets",
-          "title": "Nuggets 141-135 Pelicans (Oct 24, 2026) Final Score",
-          "publisher": "ESPN",
+          "url": "https://www.mlb.com/news/mets-rotation-offseason-questions-2026-2027",
+          "title": "4 big questions for Mets' rotation this offseason",
+          "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSolM151OiYQ7c854BUKeqt_NLBVfaxLS80qbRhdMVP_AGrFdsCf7A9zEfjLLQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBqgHt-lG-07MtI5x4w3tppFShnO2CcMieoiN_ufLCujkwMtQnfhWbkAy8_l8"
         },
         {
-          "url": "https://www.espn.com/nfl/game/_/gameId/401873018/buccaneers-panthers",
-          "title": "Buccaneers 43-13 Panthers (Oct 25, 2026) Final Score",
-          "publisher": "ESPN",
+          "url": "https://www.bleedcubbieblue.com/chicago-cubs-rumors/236981/cubs-free-agent-target-tarik-skubal",
+          "title": "Cubs free agent target: Tarik Skubal",
+          "publisher": "Bleed Cubbie Blue",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgl2918rjO4feBiy9mztgIWjvvpnTGgP0kfloXp4W-8QEFpwfYG8UIxPZWqNI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXZqQsYs5uHJKqtwsfaexSY78oqMN90fwOGmNzWPCY4BWTLuUTW6LBKrlGhVo"
+        }
+      ]
+    },
+    {
+      "query": "enzo amore",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T06:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/backstage-possible-wwe-return-enzo-230157089.html",
+        "https://www.cagesideseats.com/rumor-round-up/485011/rumor-roundup-wwe-signs-enzo-amore-rko-trademark-dispute-hurt-syndicate-aew-contract-mustafa",
+        "https://bleacherreport.com/articles/25528065-big-cass-addresses-enzo-amore-buzz-wwe-rumors-bayley-oba-femi-penta-jevon-and-vision"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSx1JkJR1EntTkIAAh6FwTgbPUg-o5Wrz2dUf19N_2S9dZlsxad2Uc2pc_BGc",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/backstage-possible-wwe-return-enzo-230157089.html",
+          "title": "Backstage Update On Possible WWE Return Of Enzo Amore",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSx1JkJR1EntTkIAAh6FwTgbPUg-o5Wrz2dUf19N_2S9dZlsxad2Uc2pc_BGc"
+        },
+        {
+          "url": "https://www.cagesideseats.com/rumor-round-up/485011/rumor-roundup-wwe-signs-enzo-amore-rko-trademark-dispute-hurt-syndicate-aew-contract-mustafa",
+          "title": "Rumor Roundup: WWE signs Enzo Amore, Hurt Syndicate’s AEW status, RKO issue, more!",
+          "publisher": "Cageside Seats",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7to7Zj8Sl3_oBdAOj1JAzRFU2eioeTxzPfboXVrik_bTjhRZZPqW1jW2ZJrs"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25528065-big-cass-addresses-enzo-amore-buzz-wwe-rumors-bayley-oba-femi-penta-jevon-and-vision",
+          "title": "Big Cass Addresses Enzo Amore Buzz, WWE Rumors on Bayley, Oba Femi, Penta, Je'Von and The Vision",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSic6btqYSkr_xUCy4lUusq55YkCim7RVMR9tqoCZGcS_2zeZ5iEG6oOtQ5X5g"
         }
       ]
     },
@@ -139,43 +279,8 @@
       ]
     },
     {
-      "query": "enzo amore",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T06:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/backstage-possible-wwe-return-enzo-230157089.html",
-        "https://www.cagesideseats.com/rumor-round-up/485011/rumor-roundup-wwe-signs-enzo-amore-rko-trademark-dispute-hurt-syndicate-aew-contract-mustafa",
-        "https://bleacherreport.com/articles/25528065-big-cass-addresses-enzo-amore-buzz-wwe-rumors-bayley-oba-femi-penta-jevon-and-vision"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSx1JkJR1EntTkIAAh6FwTgbPUg-o5Wrz2dUf19N_2S9dZlsxad2Uc2pc_BGc",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/backstage-possible-wwe-return-enzo-230157089.html",
-          "title": "Backstage Update On Possible WWE Return Of Enzo Amore",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSx1JkJR1EntTkIAAh6FwTgbPUg-o5Wrz2dUf19N_2S9dZlsxad2Uc2pc_BGc"
-        },
-        {
-          "url": "https://www.cagesideseats.com/rumor-round-up/485011/rumor-roundup-wwe-signs-enzo-amore-rko-trademark-dispute-hurt-syndicate-aew-contract-mustafa",
-          "title": "Rumor Roundup: WWE signs Enzo Amore, Hurt Syndicate’s AEW status, RKO issue, more!",
-          "publisher": "Cageside Seats",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7to7Zj8Sl3_oBdAOj1JAzRFU2eioeTxzPfboXVrik_bTjhRZZPqW1jW2ZJrs"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25528065-big-cass-addresses-enzo-amore-buzz-wwe-rumors-bayley-oba-femi-penta-jevon-and-vision",
-          "title": "Big Cass Addresses Enzo Amore Buzz, WWE Rumors on Bayley, Oba Femi, Penta, Je'Von and The Vision",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSic6btqYSkr_xUCy4lUusq55YkCim7RVMR9tqoCZGcS_2zeZ5iEG6oOtQ5X5g"
-        }
-      ]
-    },
-    {
       "query": "super troopers 3",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-05T06:30:00Z",
       "related_news_urls": [
         "https://www.imdb.com/de/news/ni66095509/?ref_=nm_nwr_1",
@@ -210,7 +315,7 @@
     },
     {
       "query": "antonia ruzic",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-05T06:20:00Z",
       "related_news_urls": [
         "https://www.bleachernation.com/picks/2026/11/04/wang-vs-ruzic-prediction-at-the-merida-open-akron-thursday-november-5/",
@@ -240,111 +345,6 @@
           "publisher": "Robinhood",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJf9JJoDQmOnUJYF9IO8wzWzoMkRiYYGlme8THNDT8eaHGhO_CI7iAljeAkqE"
-        }
-      ]
-    },
-    {
-      "query": "giannis antetokounmpo",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T06:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/tim-hardaway-sr-calls-giannis-053215599.html",
-        "https://www.essentiallysports.com/nba-legends-basketball-news-theres-zero-urgency-hall-of-famer-tim-hardaway-rips-bam-adebayo-and-co-without-sparing-his-own-son-miami-heat/",
-        "https://www.sportingnews.com/us/nba/miami-heat/news/tim-hardaway-sr-calls-out-giannis-praise-cooper-flagg/b1253a478afb8c940ea288ed"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUz_QvxSczzSyrVVJXR27ekJf1YPqA0MqbaMCFMu9RiaAiDSFAgbkHL0_ARA",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/tim-hardaway-sr-calls-giannis-053215599.html",
-          "title": "Tim Hardaway Sr. calls out Giannis Antetokounmpo while praising Cooper Flagg",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUz_QvxSczzSyrVVJXR27ekJf1YPqA0MqbaMCFMu9RiaAiDSFAgbkHL0_ARA"
-        },
-        {
-          "url": "https://www.essentiallysports.com/nba-legends-basketball-news-theres-zero-urgency-hall-of-famer-tim-hardaway-rips-bam-adebayo-and-co-without-sparing-his-own-son-miami-heat/",
-          "title": "\"There's Zero Urgency\": Hall of Famer Tim Hardaway Rips Bam Adebayo and Co. Without Sparing His Own Son",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjtqtZGclUoh_wSdZ-R22bBw9UzruN4cJ01KS4DNCKbxaB3EYweJjfxRExryY"
-        },
-        {
-          "url": "https://www.sportingnews.com/us/nba/miami-heat/news/tim-hardaway-sr-calls-out-giannis-praise-cooper-flagg/b1253a478afb8c940ea288ed",
-          "title": "Tim Hardaway Sr. calls out Giannis Antetokounmpo while praising Cooper Flagg",
-          "publisher": "www.sportingnews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjnnZPSvcwnavh7Rfen-hFf3TFLI4aCSq-z4YFWUCp-gWrZgjBNyMj70uzwWg"
-        }
-      ]
-    },
-    {
-      "query": "brook lopez",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T06:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/brook-lopez-records-20-8-1-line-two-blocked-shots",
-        "https://www.espn.com/video/clip/_/id/50365936/darius-garland-shows-range-3-pointer",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/noah-clowney-knee-will-not-return-wednesday"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9UfnYkmZE0LA9W5rvov6h7mFFQScoUQrrOy_51uNvdScpfZRDsXLEz8_OZX8",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/brook-lopez-records-20-8-1-line-two-blocked-shots",
-          "title": "Brook Lopez records 20/8/1 line, two blocked shots",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9UfnYkmZE0LA9W5rvov6h7mFFQScoUQrrOy_51uNvdScpfZRDsXLEz8_OZX8"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50365936/darius-garland-shows-range-3-pointer",
-          "title": "Darius Garland shows off the range on 3-pointer",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD52jBY8BzNuOozwoFok2sJ_sEcwtyMjrkFkn69yFXcIgVo5C8mMATFQSuSPs"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/noah-clowney-knee-will-not-return-wednesday",
-          "title": "Noah Clowney (knee) will not return Wednesday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkdtdhWUaL12_7TJwO1o9FRn9OPlqjQkNBrkLSjEVSAhPW0BrECuJMo2_DYBs"
-        }
-      ]
-    },
-    {
-      "query": "john kennedy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T06:20:00Z",
-      "related_news_urls": [
-        "https://www.ncsl.org/resources/details/2026-state-legislative-elections-the-results-and-what-they-mean",
-        "https://ballotpedia.org/Election_results,_2026:_Secretaries_of_State",
-        "https://www.npr.org/2026/11/04/nx-s1-6026708/a-look-at-results-for-state-legislatures-around-the-country"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWq1bkjuys9Tqf0gR7Ct4E3LiI0lChSGGRtIiw00xMsIq3UJLt809cjYsnGKg",
-      "image_credit": "National Conference of State Legislatures",
-      "news": [
-        {
-          "url": "https://www.ncsl.org/resources/details/2026-state-legislative-elections-the-results-and-what-they-mean",
-          "title": "2026 State Legislative Elections: The Results and What They Mean",
-          "publisher": "National Conference of State Legislatures",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWq1bkjuys9Tqf0gR7Ct4E3LiI0lChSGGRtIiw00xMsIq3UJLt809cjYsnGKg"
-        },
-        {
-          "url": "https://ballotpedia.org/Election_results,_2026:_Secretaries_of_State",
-          "title": "Election results, 2026: Secretaries of State",
-          "publisher": "Ballotpedia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWGFTbW9MAjc4jVhqI9yu3K_00QXaUlXhTPm0BZnfxs6u_n8hhxZxcfM_FF9w"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/04/nx-s1-6026708/a-look-at-results-for-state-legislatures-around-the-country",
-          "title": "A look at results for state legislatures around the country",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
         }
       ]
     }
