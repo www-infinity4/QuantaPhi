@@ -58,6 +58,8 @@
   function exportHtml(data) {
     const title = esc(data.title.trim() || "My Media Star");
     const description = esc(data.description.trim() || "Creator-selected original media");
+    const rawImage=String(data.imageUrl||"").trim();
+    const coverHtml=rawImage?'<img src="'+esc(safeSource(rawImage))+'" alt="Creator-supplied cover for '+title+'" loading="lazy" style="display:block;width:100%;height:185px;object-fit:cover;border-radius:12px;margin:12px 0">':'';
     const source = safeSource(data.url);
     const productionCredits=creditManifest(data);
     const productionManifest=esc(JSON.stringify({version:1,sourceUrl:source,
@@ -73,7 +75,7 @@
       '<div style="position:relative"><strong style="letter-spacing:.06em;font-size:22px">⭐ MEDIA STAR</strong>' +
       '<p style="font-size:12px;font-weight:800;letter-spacing:.07em;margin:5px 0">CREATOR MEDIA</p>' +
       '<h2 style="font-size:24px;margin:10px 0">' + title + '</h2>' +
-      '<p style="margin:11px 0">' + description + '</p>' +
+      '<p style="margin:11px 0">' + description + '</p>' + coverHtml +
       '<div data-media-star-player>' + (source ? playable(source) :
       '<form data-media-star-setup style="padding:12px;border:1px dashed #856728;border-radius:12px;background:#fff6d1"><label style="display:block;font-weight:700">Add your own media link <input type="url" name="media" required placeholder="https://your-site.example/your-episode.mp3" style="display:block;width:100%;box-sizing:border-box;padding:11px;border-radius:8px;border:1px solid #8c702a;margin:9px 0"></label><button type="submit" style="padding:10px 15px;border:0;border-radius:15px;background:#39204e;color:white;font-weight:800">Preview my media</button><p style="font-size:12px">This is a local preview. To publish for everyone, add the link in the website builder and copy the completed card.</p></form>') +
       '</div><details style="margin-top:12px;padding:12px;background:#fff7d6;border-radius:12px;border:1px solid #ac873b"><summary style="font-weight:900">Production credits · researched ledger</summary><ol>'+creditList+'</ol><p style="font-size:12px">These public credits need evidence, identity verification and a funded payout contract. No spendable StarCoins or cash are created by this card.</p></details><p style="font-size:12px;margin:12px 0 0">Creator-owned source. Independent wallet and server required for any paid access; no Phi or Fred entitlements are copied.</p></div></article>';
@@ -99,9 +101,15 @@
   const title=field("title","Card title","My original episode");
   const link=field("url","Link to your own content (HTTP or HTTPS)","https://your-site.example/episode.mp3");
   const description=field("description","Episode description","Tell viewers about your content","textarea");
+  const cover=field("imageUrl","Your original cover image (HTTPS)","https://your-site.example/cover.webp");
+  const topics=field("topics","Topics for interest-based discovery · comma separated","football, radio, sports");
   const creator=field("creator","Creator or main host to research","Creator / host name");
   const creditEvidence=field("creditEvidence","Official production credits source URL","https://example.org/credits");
   const contributors=field("credits","Actors, guests and crew · one per line","guest | Person Name | https://source.example/credits","textarea");
+  const permission=el("label","ms-creator-label");
+  const permissionCheck=el("input");permissionCheck.type="checkbox";permissionCheck.name="galleryRights";
+  permission.append(permissionCheck,el("span","","I have permission to promote this media and cover image publicly. Publication requires an independent rights review."));
+  form.append(permission);
   form.append(el("p","ms-creator-intro","Each exported card includes a production credits manifest. Review researched names and sources; no automatic wallet payout is authorized."));
 
   const actions=el("div","ms-creator-actions");
@@ -109,6 +117,7 @@
   const preview=el("div","ms-creator-preview");preview.setAttribute("aria-live","polite");
   const feedback=el("p","ms-creator-status");feedback.setAttribute("role","status");
   const data=()=>({title:title.value,url:link.value,description:description.value,
+    imageUrl:cover.value,topics:topics.value,
     creator:creator.value,creditEvidence:creditEvidence.value,credits:contributors.value});
   let registeredContentId='';
   async function registerBuiltCard(){
@@ -143,6 +152,32 @@
       feedback.textContent="Your independent Media Star HTML is copied. No Fred content, Phi wallet, Cloudflare binding or payment keys are included.";
       if(link.value.trim())void registerBuiltCard();
     }catch(e){feedback.textContent=e.message;}
+  });
+  createBtn("Submit for public Media Star review","ms-creator-button ms-primary",async()=>{
+    const item=data();
+    if(!permissionCheck.checked){feedback.textContent="Confirm that you have rights to promote the media and cover image.";return;}
+    const endpoint=String(window.PhiMediaStarGalleryEndpoint||"").replace(/\\/$/,"");
+    if(!/^https:\\/\\/[A-Za-z0-9.-]+$/.test(endpoint)){
+      feedback.textContent="Media Star public submissions are not connected yet. Your portable creator card still works.";
+      return;
+    }
+    try{
+      const token=await window.QuantaCloudConnection?.resolveDeviceToken?.();
+      if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||""))throw Error("wallet_login_required");
+      const payload={title:item.title,description:item.description,sourceUrl:safeSource(item.url),
+        imageUrl:safeSource(item.imageUrl),topics:String(item.topics||"").split(",").map(x=>x.trim()).filter(Boolean),
+        confirmRights:true};
+      const result=await fetch(endpoint+"/v1/submissions",{method:"POST",cache:"no-store",
+        headers:{"Content-Type":"application/json",Authorization:"Bearer "+token},body:JSON.stringify(payload)});
+      const reply=await result.json().catch(()=>({}));
+      if(!result.ok||!reply.ok)throw Error(reply.error||"submission_not_accepted");
+      feedback.textContent="Submission recorded for rights review · "+reply.submissionId+
+        ". This is not public or paid until independently approved.";
+    }catch(e){
+      feedback.textContent=e.message==="wallet_login_required"?
+        "Sign in to your original verified wallet before submitting a public Media Star.":
+        "Submission not accepted. Check the HTTPS media and image, topics and your signed-in account.";
+    }
   });
   const build=which=>{
     let clean;
