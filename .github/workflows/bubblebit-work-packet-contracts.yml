@@ -37,7 +37,8 @@ jobs:
         with:
           python-version: '3.13'
       - run: node --check bubble-bits/work-packet.mjs
+      - run: node --check bubble-bits/d1-candidate-store.mjs
       - run: node --check bubblebit-coin-cards.mjs
       - run: node --check oracle-card-deck.js
-      - run: node --test test/bubblebit-work-packet.test.mjs test/bubblebit-education-cards.test.mjs
+      - run: node --test test/bubblebit-work-packet.test.mjs test/bubblebit-d1-candidate-store.test.mjs test/bubblebit-education-cards.test.mjs
       - run: python3 -m unittest discover -s test -p 'test_bubblebit_schema.py' -v
