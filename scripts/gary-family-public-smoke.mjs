@@ -3,6 +3,7 @@
 // Run with Node >=20 on a schedule. Never log cookies, accounts or private content.
 // Fails on real web-origin/source mismatches, not on speculative ad/view metrics.
 import {writeFileSync,mkdirSync} from 'node:fs';
+import {dirname} from 'node:path';
 
 const ORIGIN='https://quantaphi.org';
 const checks=[
@@ -12,7 +13,7 @@ const checks=[
   {path:'/gary/presentation.mjs',type:'javascript',need:['2026-11-06T06:00:00.000Z','familyPresentationAt','castInstructions']},
   {path:'/gary/presentation-init.mjs',type:'javascript',need:['familyPresentationAt(new Date())','document.title']},
   {path:'/gary/octaves.css',type:'text/css',need:['color-scheme:light','family-spotlight','family-cast-panel']},
-  {path:'/gary/main.mjs',type:'javascript',need:['createEmbedUrl','archive']},
+  {path:'/gary/main.mjs',type:'javascript',need:['createEmbedUrl','programKey(movie)']},
   {path:'/infinity-radio/oracle-track-feed.json',type:'application/json',need:['"tracks"']}
 ];
 
@@ -54,7 +55,7 @@ const receipt={
   next_action:problems.length?'Review failed public paths, recent GitHub Pages propagation, Cloudflare edge cache and source CI before re-deployment. Never claim live health until readback succeeds.':'No verified source or origin regressions found. Scheduled checks do not certify Chromecast, licensing or individualized AI quality.'
 };
 const out=process.env.GARY_FAMILY_REPORT||'/tmp/gary-family-health.json';
-try{mkdirSync(new URL('.', 'file://'+out).pathname,{recursive:true})}catch{}
+mkdirSync(dirname(out),{recursive:true});
 writeFileSync(out,JSON.stringify(receipt,null,2)+'\n');
 for(const item of results)console.log((item.ok?'PASS ':'FAIL ')+item.path+(item.error?' · '+item.error:''));
 console.log('Health: '+(receipt.ok?'PASS':'FAIL')+' · '+receipt.checked_at+' · '+problems.length+' failed checks');
