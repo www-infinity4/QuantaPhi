@@ -3010,7 +3010,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const directRequest=/^(?:(?:hey|please|bubbles)[, ]+)*(?:(?:can|could|would|will) you\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
  // Ordinary one-repository changes belong to Bubbles direct GitHub. Only a
  // clear request for multiple cooperating color agents enters Robot Brain.
- const requestsAgents=/\b(?:robot\s*brain|moltnook|multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|bot\s+team|team\s+of\s+bots|run\s+the\s+bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request);
+ const requestsAgents=/\b(?:multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|bot\s+team|team\s+of\s+bots|run\s+the\s+bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request)
+  ||/\b(?:use|via|through|delegate(?:\s+to)?|send(?:\s+to)?|ask|run|start|launch|engage)\s+(?:the\s+)?(?:robot\s*brain|moltnook)\b/i.test(request);
  const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|populate|scaffold|test|run|move|put|place|relocate)\b[\s\S]{0,180}\b(?:github|repositor(?:y|ies)|repos?|code|source|files?|readme|scripts?|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
  // Owner-named RecordB issue #2 is a multi-agent implementation job, not a
  // generic GitHub 'assist' operation or a read-only work history report.
@@ -3030,11 +3031,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Original user intent, verified owner session, repository and permissions
  // are still enforced independently. Never classify a screen observation.
  let neuralCoding=false;
- const neuralWorkCandidate=!embedded&&ownerReady&&!ownerGithubNonAction&&!requestsAgents
+ const neuralWorkCandidate=!embedded&&ownerReady&&!ownerGithubNonAction
   &&!namedRecordBIssue&&!directCoding
-  &&/^(?:(?:bubbles|please)[\s,:]+)*(?:(?:can|could|would|will) you\s+)?(?:get|make|have|help|i (?:need|want) (?:you|bubbles) to|we need (?:you|bubbles) to)\b/i.test(request)
-  &&/\b(?:bubbles|quantaphi|quanta phi|robot brain|moltnook|infinity phi|omni phi|code phi|my (?:app|website|program))\b/i.test(request)
-  &&/\b(?:work(?:ing)?|fix|repair|restore|integrat(?:e|ion)|hook|connect|build|program|implement|run|execute|test|develop|functional|properly)\b/i.test(request)
+  &&request.length>=8&&request.length<=4000
+  // Do not require a magic opening phrase or a product-name keyword before
+  // asking the existing model to interpret the current direct utterance.
+  &&!/^(?:(?:bubbles|please|hey)[\s,:]+)*(?:(?:what|how|why|where|when|who|which)\b|(?:can|could|would|will) you\s+(?:explain|describe|tell me|show me how)\b|(?:i was|we were)\b)/i.test(request)
   &&!/\b(?:do not|don't|never|cancel|without permission)\b/i.test(request);
  if(neuralWorkCandidate){
   try{
@@ -3048,7 +3050,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     &&planned.receipt?.executed===false;
    // A model's label can only enable the already authenticated owner workflow;
    // it cannot create its own command or silently select a new repository.
-   if(neuralCoding)directCoding=true;
+   if(neuralCoding&&!requestsAgents)directCoding=true;
   }catch{neuralCoding=false;}
  }
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
@@ -3178,7 +3180,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }else workEvidence=(await humanReplies()).githubReply(result);
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }
- else if(!embedded&&isOwnerWorkRequest(request)){
+ else if(!embedded&&(isOwnerWorkRequest(request)||neuralCoding&&requestsAgents)){
   workText.value=request;tools.open=true;
   try{
    const ticket=await submitWork(request,'explicit-user-command',imageWorkEvidence);
