@@ -3,17 +3,157 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T16:31:37.184239Z",
+  "checked_at": "2026-11-05T17:02:05.417672Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "tuten",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T16:40:00Z",
+      "related_news_urls": [
+        "https://www.jaguars.com/news/wednesday-quick-hits-tuten-a-game-time-decision-ahead-of-week-9-vs-ravens",
+        "https://sports.yahoo.com/articles/fantasy-football-start-sit-week-153812995.html",
+        "https://www.si.com/nfl/jaguars/onsi/jacksonville-ravens-injury-report-why-recent-history-doesn-t-bode-well-for-bhayshul-tuten"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFsoGXlbrsUXV8HHLzRywjG0Gqs0TeHVrX1zNMF8NYYGNTJRGPXCxhppNhgQQ",
+      "image_credit": "Jacksonville Jaguars",
+      "news": [
+        {
+          "url": "https://www.jaguars.com/news/wednesday-quick-hits-tuten-a-game-time-decision-ahead-of-week-9-vs-ravens",
+          "title": "Wednesday Quick Hits: Tuten a \"Game-Time Decision\" Ahead of Week 9 vs. Ravens",
+          "publisher": "Jacksonville Jaguars",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFsoGXlbrsUXV8HHLzRywjG0Gqs0TeHVrX1zNMF8NYYGNTJRGPXCxhppNhgQQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/fantasy-football-start-sit-week-153812995.html",
+          "title": "Fantasy football start-sit Week 9: Chris Rodriguez, Zay Flowers, Brenton Strange",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQPuXgYpcxlMmfcnzNvwRCrlJt-_p2zBA8FS3EG77VhYCYj7Kc9hbGbpfAkc0"
+        },
+        {
+          "url": "https://www.si.com/nfl/jaguars/onsi/jacksonville-ravens-injury-report-why-recent-history-doesn-t-bode-well-for-bhayshul-tuten",
+          "title": "Jaguars-Ravens Injury Report: Why Recent History Doesn't Bode Well for Bhayshul Tuten",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaHBhOaFiUHWyTxAA42SZgf89iw7gc_3l1JngHEHJMMegZxmsyo81vaANGtvc"
+        }
+      ]
+    },
+    {
+      "query": "ignacio buse",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T16:30:00Z",
+      "related_news_urls": [
+        "https://www.bleachernation.com/picks/2026/11/04/borges-vs-buse-prediction-at-the-rolex-paris-masters-thursday-november-5/",
+        "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2163130",
+        "https://www.sportytrader.com/us/picks/nuno-borges-ignacio-buse-385600/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUisgdwg-nFcpUrZkQFlrHU7wS8btLqzHGu74YuuU6b3aR8_ov5hfuskE3Vv8",
+      "image_credit": "Bleacher Nation",
+      "news": [
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/04/borges-vs-buse-prediction-at-the-rolex-paris-masters-thursday-november-5/",
+          "title": "Borges vs. Buse Prediction at the Rolex Paris Masters – Thursday, November 5",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUisgdwg-nFcpUrZkQFlrHU7wS8btLqzHGu74YuuU6b3aR8_ov5hfuskE3Vv8"
+        },
+        {
+          "url": "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2163130",
+          "title": "Live: Paris Masters Open Live : Nuno Borges vs Ignacio Buse Live updates",
+          "publisher": "Powell River Peak",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ87VUknxg9d-pZyA7LSJ9Uc5LyuZV1lz6tt85IRh-M6s17xxO1Y6dsmyy25U"
+        },
+        {
+          "url": "https://www.sportytrader.com/us/picks/nuno-borges-ignacio-buse-385600/",
+          "title": "Nuno Borges vs Ignacio Buse Prediction & Picks - Rolex Paris Masters",
+          "publisher": "SportyTrader",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh4ZUKLSzEqjnIRR4JTWVpT4P9BoDe1t3aVRqCEuqmTwN1zcDki05SIzwmgaw"
+        }
+      ]
+    },
+    {
+      "query": "bill skarsgård",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T16:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-culture/nicolas-cage-returns-arms-dealer-yuri-orlov-lords-war-sequel-2027",
+        "https://variety.com/2026/film/news/lords-of-war-trailer-nicolas-cage-bill-skarsgard-sequel-1236938977/",
+        "https://www.firstshowing.net/2026/nicolas-cage-returns-in-legacy-sequel-lords-of-war-teaser-trailer/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbocQkZH7q9WZdDb8qRhBAfBeOZf5Jq6og64V4JKvB3EsryKi5RlNcJSOV1yU",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-culture/nicolas-cage-returns-arms-dealer-yuri-orlov-lords-war-sequel-2027",
+          "title": "Nicolas Cage returns as arms dealer Yuri Orlov in 'Lords of War' sequel arriving in 2027",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbocQkZH7q9WZdDb8qRhBAfBeOZf5Jq6og64V4JKvB3EsryKi5RlNcJSOV1yU"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/lords-of-war-trailer-nicolas-cage-bill-skarsgard-sequel-1236938977/",
+          "title": "‘Lords of War’ Trailer: Nicolas Cage and Bill Skarsgård Star as Father and Son in ‘Lord of War’ Sequel",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCmQ-A1PZqazcte_NEOZ7p3t5w6F7oo0Xd-M-6TC5QZxp41dENsIgvQdD79tc"
+        },
+        {
+          "url": "https://www.firstshowing.net/2026/nicolas-cage-returns-in-legacy-sequel-lords-of-war-teaser-trailer/",
+          "title": "Nicolas Cage Returns in Legacy Sequel 'Lords of War' Teaser Trailer",
+          "publisher": "FirstShowing.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9tmLWb59MpY7ErhJoVeiyW-wRBFv_tdLKi7AE5SIttz-GVuRgKfo_aQeOYE"
+        }
+      ]
+    },
+    {
+      "query": "rubio",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T16:20:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/politics/house-conservative-emerges-2028-presidential-pick-after-gops-midterm-massacre-i-am-all-in",
+        "https://floridianpress.com/2026/11/last-squeeze%F0%9F%8D%8A-11-2-2026-can-marco-rubio-save-the-gop-in-2028-private-jet-may-have-suffered-structural-loss-before-crash-and-much-more/",
+        "https://www.yahoo.com/news/politics/articles/marco-rubio-preparing-resign-ahead-162210559.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1L8HoEvMrkYlboaMTVhNfMt1fW8v1AQBt1VAL--thrbRs7rUx7wqqNUB22_8",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/politics/house-conservative-emerges-2028-presidential-pick-after-gops-midterm-massacre-i-am-all-in",
+          "title": "House conservative emerges with 2028 presidential pick after GOP's midterm massacre: 'I am all in'",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1L8HoEvMrkYlboaMTVhNfMt1fW8v1AQBt1VAL--thrbRs7rUx7wqqNUB22_8"
+        },
+        {
+          "url": "https://floridianpress.com/2026/11/last-squeeze%F0%9F%8D%8A-11-2-2026-can-marco-rubio-save-the-gop-in-2028-private-jet-may-have-suffered-structural-loss-before-crash-and-much-more/",
+          "title": "Last Squeeze🍊— 11.2.2026 — Can Marco Rubio Save the GOP in 2028? — Private Jet May Have Suffered Structural Loss Before Crash — and Much More...",
+          "publisher": "Floridian Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRebZ6MQ_bUvNGcaFOOimtfgbab9YmmGVNVuNefHBi6TtwN7kPh9GaF_QzT2_U"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/marco-rubio-preparing-resign-ahead-162210559.html",
+          "title": "Marco Rubio ‘Preparing to Resign’ Ahead of a 2028 Bid, Report Says — White House Vehemently Denies",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHuMgDJaGo4j7beIp1Z6srDX_f9rgcq3PHPzHl8677PpwjwXgimZSEA-aM8eI"
+        }
+      ]
+    },
     {
       "query": "melania trump",
       "approx_searches": "2000+",
       "published_at": "2026-11-05T16:10:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/cm87zvpzwq0no",
-        "https://www.nbcnews.com/world/ukraine/melania-trump-host-russia-ukraine-representatives-white-house-rare-mee-rcna607390",
-        "https://komonews.com/news/nation-world/first-lady-melania-trump-to-bring-russian-ukrainian-envoys-together-at-white-house-after-humanitarian-ceasefire-oleshky-kremlin-puting-zelenskyy-trilateral-talks-abu-dhabi"
+        "https://thehill.com/video-clips/6200577-watch-live-melania-trump-russia-ukraine-officials-white-house-localized-ceasefire/",
+        "https://www.reuters.com/world/asia-pacific/russias-dmitriev-washington-first-us-contact-since-trumps-midterm-setback-2026-11-05/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3-kpysyL9uj8NxR4waG8mDzfX9qYwPdgh7fBzHQKsFm-xDvr19YM7q3iH_0o",
       "image_credit": "BBC",
@@ -26,18 +166,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3-kpysyL9uj8NxR4waG8mDzfX9qYwPdgh7fBzHQKsFm-xDvr19YM7q3iH_0o"
         },
         {
-          "url": "https://www.nbcnews.com/world/ukraine/melania-trump-host-russia-ukraine-representatives-white-house-rare-mee-rcna607390",
-          "title": "Melania Trump to host Russia and Ukraine representatives at the White House in a rare meeting",
-          "publisher": "NBC News",
+          "url": "https://thehill.com/video-clips/6200577-watch-live-melania-trump-russia-ukraine-officials-white-house-localized-ceasefire/",
+          "title": "Watch live: Melania Trump hosts Russian, Ukrainian officials at White House",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLpxbW40XeXB6_UA7NAUDuLqxv06ypBRf04qRvHA4-BTCUl4-vFV-Y5De9MQo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJtP6h3ob6UteQowIKWulYsbuwCjt-jJcKC0iTGtXwI9LybKrrEB-l_1ynyvw"
         },
         {
-          "url": "https://komonews.com/news/nation-world/first-lady-melania-trump-to-bring-russian-ukrainian-envoys-together-at-white-house-after-humanitarian-ceasefire-oleshky-kremlin-puting-zelenskyy-trilateral-talks-abu-dhabi",
-          "title": "Melania Trump brings Russian, Ukrainian envoys together at White House after ceasefire",
-          "publisher": "KOMO",
+          "url": "https://www.reuters.com/world/asia-pacific/russias-dmitriev-washington-first-us-contact-since-trumps-midterm-setback-2026-11-05/",
+          "title": "Melania Trump urges 'humanity over war' with Ukraine, Russia officials​",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI5szs-t7wcEQA7FzpZYltK6ZOMrddRzKOF55_T-b3aPFl1wOKTOd6b33X8bQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW5NETk-QzjzEba0EfiHjmoOuJLg9R99wUyWijXuQwPvPU9xjjv4l4Fd1z4Ic"
         }
       ]
     },
@@ -46,33 +186,33 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-05T16:00:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-stock-may-trade-121235029.html",
-        "https://www.barrons.com/articles/spacex-stock-buy-rating-cathie-wood-e46d26d7",
-        "https://www.businessinsider.com/elon-musk-net-worth-tesla-spacex-net-share-price-midterms-2026-11"
+        "https://finance.yahoo.com/technology/ai/articles/goldman-apollo-talks-sell-spacex-211021473.html",
+        "https://www.investors.com/news/spacex-goldman-sachs-apollo-40bil-nvidia-ai-gpu-deal-sale-cathie-wood-ark-invest-spcx-stock/",
+        "https://www.theinformation.com/articles/apollo-vastly-outspending-neoclouds-ai-chips"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCvl7Ew3j1flfDZyb_P2ZJP4hzR9BllRV2cCZcoeRCfXRzpvhdtzjzWvhvyY0",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnuUkuXCPJTOp2Pp-VKgJKul53epx8FtuDWuzTxdbCwjOcnfsgLD3hxn0sCog",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-stock-may-trade-121235029.html",
-          "title": "SpaceX (SPCX) Stock May Trade Below Fair Value On Fresh AI Compute News",
+          "url": "https://finance.yahoo.com/technology/ai/articles/goldman-apollo-talks-sell-spacex-211021473.html",
+          "title": "Goldman, Apollo in Talks to Sell SpaceX’s $40 Billion AI Deal",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCvl7Ew3j1flfDZyb_P2ZJP4hzR9BllRV2cCZcoeRCfXRzpvhdtzjzWvhvyY0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnuUkuXCPJTOp2Pp-VKgJKul53epx8FtuDWuzTxdbCwjOcnfsgLD3hxn0sCog"
         },
         {
-          "url": "https://www.barrons.com/articles/spacex-stock-buy-rating-cathie-wood-e46d26d7",
-          "title": "SpaceX Stock Today Has These 2 Positives. The Stock Is Still Falling.",
-          "publisher": "Barron's",
+          "url": "https://www.investors.com/news/spacex-goldman-sachs-apollo-40bil-nvidia-ai-gpu-deal-sale-cathie-wood-ark-invest-spcx-stock/",
+          "title": "SpaceX Lessors Look To Sell $40 Bil AI Deal. ARK Buys The Dip On SPCX Stock.",
+          "publisher": "Investor's Business Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbk73GtZ30ykf0knQ_PijKuEhunWnjd5nAfP4frlU9YOvwhq58D0H1MjNsnE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEDx6-4UHuIYdh9pK8pdUuDWfc3-KZpEj42XQSG3FjTbvXrp93SVrnb0QWEBU"
         },
         {
-          "url": "https://www.businessinsider.com/elon-musk-net-worth-tesla-spacex-net-share-price-midterms-2026-11",
-          "title": "SpaceX and Tesla's midterm stock drop cut Elon Musk's wealth by $33 billion",
-          "publisher": "Business Insider",
+          "url": "https://www.theinformation.com/articles/apollo-vastly-outspending-neoclouds-ai-chips",
+          "title": "Apollo Is Vastly Outspending the Neoclouds on AI Chips",
+          "publisher": "The Information",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROoCGrvZ6OEPrwmbjF4VowRiytUQQbNFrRQGAOmA5ecOWKknHatWDcDxdDffw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLjWAWrfwxrrHzrUqgB8lOO9Ry1JoCPRLQ0KujOcZygwmYB9ft1WKHqmuwUBM"
         }
       ]
     },
@@ -183,16 +323,23 @@
     },
     {
       "query": "vix",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-05T15:40:00Z",
       "related_news_urls": [
+        "https://www.barrons.com/livecoverage/stock-market-news-today-110526/card/the-vix-hasn-t-surged-like-this-since-trump-tariff-chaos-oJ9oVKLtwtYkn6b9nER8",
         "https://www.cnbc.com/2026/11/02/wall-streets-fear-index-is-doing-something-strange-heres-what-it-means-for-stocks.html",
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/vix-takes-biggest-leap-since-liberation-day-meltdown-L2wCiTu9aVXTg8pB0KA8",
-        "https://seekingalpha.com/news/4666309-wall-streets-fear-gauge-gets-the-jitters-out-as-midterm-dust-settles"
+        "https://seekingalpha.com/news/4666745-vix-on-pace-for-biggest-daily-rise-since-february-2018"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj7nCr2r1LGnhSxggGskTX7_UyxmRE7ZalmvXPEl_yRYIdlLr7R9lt3WvyBLY",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbbTpAQ2R4nwoFogTJb5G_jKe3MnxrxhB9VtHniKbpgy20ET9Rk3Xlw_Z0s0U",
+      "image_credit": "Barron's",
       "news": [
+        {
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-110526/card/the-vix-hasn-t-surged-like-this-since-trump-tariff-chaos-oJ9oVKLtwtYkn6b9nER8",
+          "title": "The VIX Hasn't Surged Like This Since Trump Tariff Chaos",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbbTpAQ2R4nwoFogTJb5G_jKe3MnxrxhB9VtHniKbpgy20ET9Rk3Xlw_Z0s0U"
+        },
         {
           "url": "https://www.cnbc.com/2026/11/02/wall-streets-fear-index-is-doing-something-strange-heres-what-it-means-for-stocks.html",
           "title": "Wall Street's Fear Index is doing something strange. Here's what it means for stocks",
@@ -201,158 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj7nCr2r1LGnhSxggGskTX7_UyxmRE7ZalmvXPEl_yRYIdlLr7R9lt3WvyBLY"
         },
         {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/vix-takes-biggest-leap-since-liberation-day-meltdown-L2wCiTu9aVXTg8pB0KA8",
-          "title": "VIX Takes Biggest Leap Since Liberation Day Meltdown",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4666309-wall-streets-fear-gauge-gets-the-jitters-out-as-midterm-dust-settles",
-          "title": "Wall Street’s fear gauge gets the jitters out as midterm dust settles (VIX:)",
+          "url": "https://seekingalpha.com/news/4666745-vix-on-pace-for-biggest-daily-rise-since-february-2018",
+          "title": "VIX spikes to seven-month high, erasing post-midterm relief (VIX:)",
           "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3WRheKZ0QtE5BbVoh6UEPCPtPdPES2I6Mz0sIA5zzh41OgnNmrVc1E2TyPPw"
-        }
-      ]
-    },
-    {
-      "query": "stock market crash",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T15:40:00Z",
-      "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/05/prediction-stock-market-crash-investors-70-years/",
-        "https://finance.yahoo.com/markets/stocks/articles/warren-buffett-1-simple-rule-155000853.html",
-        "https://banyanhill.com/would-a-stock-market-crash-be-good/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4kLRknflVMjOFTHZib2ZUhq2ExXbsKTbwTXSMtQ_oiCbBJhLZLuhyHLfUDew",
-      "image_credit": "The Motley Fool",
-      "news": [
-        {
-          "url": "https://www.fool.com/investing/2026/11/05/prediction-stock-market-crash-investors-70-years/",
-          "title": "Prediction: A Stock Market Crash Is Coming. Here's What Investors Should Do Based on Nearly 70 Years' Worth of History.",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4kLRknflVMjOFTHZib2ZUhq2ExXbsKTbwTXSMtQ_oiCbBJhLZLuhyHLfUDew"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/warren-buffett-1-simple-rule-155000853.html",
-          "title": "Warren Buffett Has 1 Simple Rule for Investing During Bear Markets. History Says He's Right.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyIzS0l7uoX9hRHElUR4W0MJxiIfMJDkKCJhjDDuBBtLSW-OHVcPXSZ4uWk4w"
-        },
-        {
-          "url": "https://banyanhill.com/would-a-stock-market-crash-be-good/",
-          "title": "Would a Stock Market Crash Be Good?",
-          "publisher": "Banyan Hill Publishing",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6reNZG5lJ8lKXM1JXMLoKFEYpXw8-A2R69cNih9vZ7eggoEbtcGynXfc170U"
-        }
-      ]
-    },
-    {
-      "query": "dallas jenkins",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T15:40:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/03/the-chosen-season-6-upsets-fans-with-native-american-african-angels/",
-        "https://www.deseret.com/entertainment/2026/11/05/dallas-jenkins-responds-to-mixed-responses-over-the-chosen-angels/",
-        "https://www.news.com.au/entertainment/tv/streaming/native-american-angels-the-chosen-teaser-sparks-fierce-debate-over-jesus-scene/news-story/77539ace99a0fa29a0845fc6bf7a6bf0"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPURps9vfFENQ1UnJiU98DBNNUVJUVVFRjbFMBYf4W6JkaUbo8s6JXWHzcM2M",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/03/the-chosen-season-6-upsets-fans-with-native-american-african-angels/",
-          "title": "‘The Chosen’ Season 6 Upsets Fans With Native American And African Angels",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPURps9vfFENQ1UnJiU98DBNNUVJUVVFRjbFMBYf4W6JkaUbo8s6JXWHzcM2M"
-        },
-        {
-          "url": "https://www.deseret.com/entertainment/2026/11/05/dallas-jenkins-responds-to-mixed-responses-over-the-chosen-angels/",
-          "title": "Dallas Jenkins responds to mixed reactions over angels in ‘The Chosen’",
-          "publisher": "Deseret News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3wA5jSVVXqwjohLDaoFZGGYfrkRISA-cRwyV7MfftBtEUirx7A68qZ3l7sLM"
-        },
-        {
-          "url": "https://www.news.com.au/entertainment/tv/streaming/native-american-angels-the-chosen-teaser-sparks-fierce-debate-over-jesus-scene/news-story/77539ace99a0fa29a0845fc6bf7a6bf0",
-          "title": "‘Forced diversity’ complaints hit Jesus show",
-          "publisher": "News.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGXCKjIVh3XiGbOBfFOahnXL7oQK5989bDesRKh4emkj2U8JiVen1IRfJhWGA"
-        }
-      ]
-    },
-    {
-      "query": "tesla stock",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T15:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/05/opinion/elon-musk-midterms-trump-results.html",
-        "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html",
-        "https://www.cnn.com/2026/11/05/business/musk-texas-donations-midterms-spacex-tesla"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-ORf7Z-L24X7hZgVBfD7B04nlxS4EmeCmDG8YmSNvHjPga6vrH5CR6TXatt8",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/05/opinion/elon-musk-midterms-trump-results.html",
-          "title": "Opinion | Elon Musk’s Very Bad Night",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-ORf7Z-L24X7hZgVBfD7B04nlxS4EmeCmDG8YmSNvHjPga6vrH5CR6TXatt8"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html",
-          "title": "SpaceX, Tesla stocks tumble as Democratic sweep raises questions on merger prospects, AI build-out",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvmyyIKztLi7OCvLZWhq9P3VfHg0IqPS7itohRee9n4gYZHPm7qgp-mXVBHXs"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/05/business/musk-texas-donations-midterms-spacex-tesla",
-          "title": "Musk bet big on keeping Texas red. What happens to his business empire now?",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH7HB4zuW5x9Y1y1xPU0utsZbm-6m-XCHYUDz7l4STT4HzYGjr7wnpCQoM5dg"
-        }
-      ]
-    },
-    {
-      "query": "coreweave stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T15:30:00Z",
-      "related_news_urls": [
-        "https://www.foxbusiness.com/politics/data-centers-ballot-voters-sent-unmistakable-message",
-        "https://www.ft.com/content/32fd4450-5880-437d-9bd9-df13289ada24?syn-25a6b1a6=1",
-        "https://www.cnn.com/2026/11/05/economy/data-center-texas-election"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBOAc77aFLd4IAutA-3fSaNagj8eygdIvvt9dIIexQfbyDtY0X-6rZ7devI_M",
-      "image_credit": "Fox Business",
-      "news": [
-        {
-          "url": "https://www.foxbusiness.com/politics/data-centers-ballot-voters-sent-unmistakable-message",
-          "title": "Data centers were on the ballot, and voters sent unmistakable message",
-          "publisher": "Fox Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBOAc77aFLd4IAutA-3fSaNagj8eygdIvvt9dIIexQfbyDtY0X-6rZ7devI_M"
-        },
-        {
-          "url": "https://www.ft.com/content/32fd4450-5880-437d-9bd9-df13289ada24?syn-25a6b1a6=1",
-          "title": "AI backlash threatens trillion-dollar data centre boom, say tech leaders",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQON0YLeSXsGrlHi-N8pdyKhOY_dfI2cWY4JBl7TDcv2jgUSjpfI6ZCNJUuXgI"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/05/economy/data-center-texas-election",
-          "title": "America got the anti-data-center wave it voted for. Here come the economic consequences",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStclBbenrBKhh_7htcHWoxK7qCE9giUuIpqp6qOIN_xLRS6iflA2db_42-KeE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnWgoBRNkgi7I7vjc_fxvQ5_gyGJiQUIdhgzvIToH-rnsKj6Zv0VimTweO6mY"
         }
       ]
     }
