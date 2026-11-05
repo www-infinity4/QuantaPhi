@@ -102,3 +102,8 @@ Owner's heartbeat metaphor mapped to the existing Bubbles/Brain signal: a pulse 
 ## Session 7 exact-head CI correction
 
 GitHub Bubbles unified run 41947949854 reproduced a standalone WebView adapter regression: the newly optional context projection could reference an absent module variable before submitting the actual request. Added typeof guards for the context and saved-iteration observer, preserving request execution and original-receipt timeout recovery when optional UI modules are absent. The same existing WebView regression is rerun before the correction commit; financial enablement stays OFF.
+
+
+## Session 7 revision-test correction
+
+At 41a9cc6 the core Brain, identity, Bit and unified-interface GitHub workflows passed. Draft-safe run 41948535236 exposed a fixture that replaced the first shared revision string anywhere in the document, which now correctly appears on multiple scripts. Scoped that fixture replacement to bubbles-ai.js itself; production updater behavior remains unchanged. Native/web draft, fresh-chat and embedded-card tests are rerun before the correction commit.
