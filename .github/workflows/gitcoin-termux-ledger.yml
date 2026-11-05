@@ -1,0 +1,38 @@
+name: GIT Termux SQLite and Bubbles attribution contracts
+on:
+  push:
+    paths:
+      - 'gitcoin/termux-ledger.py'
+      - 'gitcoin/agent-attribution.mjs'
+      - 'gitcoin.html'
+      - 'test/test_termux_ledger.py'
+      - 'test/gitcoin-agent-attribution.test.mjs'
+      - 'test/gitcoin-entry.test.mjs'
+      - '.github/workflows/gitcoin-termux-ledger.yml'
+  pull_request:
+    paths:
+      - 'gitcoin/termux-ledger.py'
+      - 'gitcoin/agent-attribution.mjs'
+      - 'gitcoin.html'
+      - 'test/test_termux_ledger.py'
+      - 'test/gitcoin-agent-attribution.test.mjs'
+      - 'test/gitcoin-entry.test.mjs'
+      - '.github/workflows/gitcoin-termux-ledger.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: node --check gitcoin/agent-attribution.mjs
+      - run: python3 -m py_compile gitcoin/termux-ledger.py
+      - run: python3 -m unittest discover -s test -p 'test_termux_ledger.py' -v
+      - run: node --test test/gitcoin-agent-attribution.test.mjs test/gitcoin-entry.test.mjs
