@@ -76,7 +76,7 @@ export function mountXSpacesQuickCard(root){
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const deck=node('div','xqs-deck');
  const nav=node('div','xqs-nav');
- const prev=node('button','xqs-button','‹ Previous X Space'),count=node('span','xqs-counter','0 of 0'),next=node('button','xqs-button','Next X Space ›');
+ const prev=node('button','xqs-button','Space back'),count=node('span','xqs-counter','0 of 0'),next=node('button','xqs-button','Space forward');
  prev.type=next.type='button';
  append(nav,prev,count,next);
  const note=node('p','xqs-note',
