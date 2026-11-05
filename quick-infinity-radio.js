@@ -75,6 +75,13 @@
   next.setAttribute('aria-label','Next Infinity Radio song');next.disabled=true;
   bar.append(play,next,copy,open);
   anchor.insertAdjacentElement('afterend',bar);
+  // Attach source-backed local radio cards beside the existing Infinity Radio.
+  // The browser loads one small module rather than adding seven player iframes.
+  const liveRadioScript = document.createElement('script');
+  liveRadioScript.src = '/iowa-live-radio-cards.js?v=20261104-who1';
+  liveRadioScript.defer = true;
+  document.head.appendChild(liveRadioScript);
+
 
   const audio = document.createElement('audio');
   audio.preload = 'none';
@@ -209,6 +216,8 @@
     } else if(tracks.length) {
       playbackRequested = true;
       failures = 0;
+      if (typeof CustomEvent === 'function')
+        window.dispatchEvent(new CustomEvent('quantaphi:infinity-radio-play'));
       // A deliberate new Play gesture retries temporary network failures.
       unavailableSources.clear();
       skippedSinceSuccess=0;
@@ -227,5 +236,10 @@
   audio.addEventListener('playing',() => {
     if (!playbackRequested) { audio.pause(); setPlaying(false); return; }
     setPlaying(true);
+  });
+  window.addEventListener('quantaphi:station-selected', () => {
+    if (!playbackRequested) return;
+    playbackRequested=false; ++generation; audio.pause(); setPlaying(false);
+    status.textContent='Paused for another live radio station.';
   });
 })();
