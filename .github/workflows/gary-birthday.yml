@@ -1,0 +1,28 @@
+name: Gary birthday Westerns checks
+
+on:
+  pull_request:
+    paths:
+      - 'gary/**'
+      - 'templates/western-birthday/**'
+      - 'test/gary-birthday.test.mjs'
+      - '.github/workflows/gary-birthday.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'gary/**'
+      - 'templates/western-birthday/**'
+      - 'test/gary-birthday.test.mjs'
+      - '.github/workflows/gary-birthday.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify-gary-westerns:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Gary Westerns acceptance tests without dependencies
+        run: node --test test/gary-birthday.test.mjs
