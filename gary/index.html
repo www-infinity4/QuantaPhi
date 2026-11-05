@@ -3,14 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#212823">
-  <meta name="description" content="A birthday Western movie room and Bubbles assistant for Gary.">
-  <title>Happy Birthday, Gary! · Gary's Westerns</title>
+  <meta name="theme-color" content="#f8f3fc">
+  <meta name="description" content="Gary and family living room with TV, Westerns, Iowa weather, radio, Bubbles and discovery.">
+  <title>Gary &amp; Family · TV, Radio, Weather &amp; Bubbles | QuantaPhi</title>
+  <script>
+    // Early mode selection prevents a flash of birthday art after the cutoff.
+    document.documentElement.dataset.familyMode =
+      Date.now()<Date.UTC(2026,10,6,6)?'birthday':'octaves';
+  </script>
   <link rel="stylesheet" href="/gary/style.css">
+  <link rel="stylesheet" href="/gary/octaves.css">
+  <script type="module" src="/gary/presentation-init.mjs"></script>
 </head>
 <body>
   <div class="topline"><span>★ A SPECIAL BIRTHDAY FROM KRIS ★</span></div>
-  <header class="hero" aria-labelledby="greeting">
+  <header class="hero" id="gary-birthday-hero" aria-labelledby="greeting">
     <div class="hero-inner">
       <p class="eyebrow">The best seat in the house is yours, Dad.</p>
       <h1 id="greeting">Happy Birthday, Gary!</h1>
@@ -18,6 +25,14 @@
       <a class="go" href="#watch">▶ Watch a Western</a>
     </div>
     <div class="sunset" aria-hidden="true"><span class="sun"></span><span class="ridge ridge-back"></span><span class="ridge ridge-front"></span></div>
+  </header>
+  <header class="hero family-evergreen-hero" id="gary-family-hero" aria-labelledby="family-hero-title">
+    <div class="hero-inner">
+      <p class="eyebrow">INFINITY · ORACLE OCTAVES · FAMILY LIVING ROOM</p>
+      <h1 id="family-hero-title">Gary &amp; Family</h1>
+      <p class="dedication">Welcome home. Your favorite TV, Westerns, Iowa weather, music, search and Bubbles assistant are all here.</p>
+      <a class="go" href="#family-lounge">Open the living room</a>
+    </div>
   </header>
   <main>
 
@@ -35,7 +50,22 @@
         <p id="family-search-status" class="family-status" role="status" aria-live="polite">Voice listens to one command only after you tap the microphone button, where supported.</p>
       </form>
       <div class="family-remote" aria-labelledby="family-tv-heading">
-        <div class="family-head"><h3 id="family-tv-heading">TV remote</h3><button type="button" id="family-cast">Fullscreen / screen cast</button></div>
+        <div class="family-head"><h3 id="family-tv-heading">TV remote</h3><button type="button" id="family-cast" aria-expanded="false" aria-controls="family-cast-panel">Cast to TV</button></div>
+        <section id="family-cast-panel" class="family-cast-panel" aria-labelledby="family-cast-title" hidden>
+          <h4 id="family-cast-title">Connect this page to your TV</h4>
+          <p id="family-cast-status" role="status" aria-live="polite">A browser cannot open Android's system screen-mirroring picker directly. Google Cast normally needs the phone and TV on the same Wi-Fi network.</p>
+          <ol id="family-cast-steps">
+            <li>Connect the phone and a Cast-enabled TV/Chromecast to the <strong>same Wi-Fi</strong>. Mobile data alone normally cannot discover it.</li>
+            <li>On Android, swipe down twice and tap <strong>Screen Cast / Cast / Smart View</strong> (or find screen casting in Google Home).</li>
+            <li>Select the television and approve the connection. Then return to this page to watch the cards on the TV.</li>
+            <li>For Netflix or paid channels, use the official provider's Cast button, if supported.</li>
+          </ol>
+          <div class="family-cast-actions">
+            <button id="family-cast-fullscreen" type="button">Fullscreen on this device</button>
+            <button id="family-cast-close" type="button">Close instructions</button>
+            <a href="https://support.google.com/chromecast/answer/3006709" target="_blank" rel="noopener noreferrer">Google Cast help</a>
+          </div>
+        </section>
         <div id="family-channel-buttons" class="family-channel-buttons" aria-label="Available channels and official players"></div>
         <div id="family-channel-detail" class="family-channel-detail" aria-live="polite">Western Movies are ready in the player below. Choose a new channel above.</div>
         <p class="family-fine">An “Open provider” button goes to the broadcaster’s authorized player. Netflix, CNN and other restricted apps cannot silently play or cast in a different website. Use Android Screen Cast or the provider’s own Cast control for your TV.</p>
