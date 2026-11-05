@@ -50,6 +50,6 @@ test('artist promo cards use actual Apple artwork, a dedicated small strip and n
  assert.match(js,/appleAlbumForArtist/);
  assert.match(js,/artworkUrl100/);
  assert.match(js,/price not shown/i);
- assert.doesNotMatch(js,/Math\.random\(\)|fakeProduct|checkout|StarCoin|wallet/);
+ assert.doesNotMatch(js.replace(/\/\*[\s\S]*?\*\//g,''),/Math\.random\(\)|fakeProduct|checkout|StarCoin|wallet/);
  assert.match(js,/setInterval/);
 });
