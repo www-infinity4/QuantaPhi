@@ -4,7 +4,7 @@ issue: 1701
 project: "QuantaPhi viewer and edge framing security"
 source_requests:
   - "Owner security request, 2026-11-05; unexpected Android pop-up/keyboard behavior has not been linked to QuantaPhi"
-state: source_tested
+state: implementing
 dot: "🟡"
 progress_percent: 50
 progress_basis: "3/6 milestones prepared: source audit, regression test, bounded source patch. CI, independent review and live/mobile acceptance not complete."
