@@ -1,5 +1,5 @@
 import { garyPage } from './films.mjs';
-import { createEmbedUrl, createPosterUrl, validateMovie } from '../templates/western-birthday/player.mjs';
+import { createEmbedUrl, createPosterUrl, programKey, validateMovie } from '../templates/western-birthday/player.mjs';
 
 const cover = document.getElementById('western-cover');
 const coverArt = cover?.querySelector('img');
@@ -36,7 +36,7 @@ function choose(movie) {
   source.href = movie.sourceUrl;
   status.textContent = 'Ready to play. Nothing starts without your tap.';
   for (const [id, button] of buttons) {
-    button.setAttribute('aria-pressed', String(id === movie.videoId));
+    button.setAttribute('aria-pressed', String(id === programKey(movie)));
   }
 }
 
@@ -50,7 +50,7 @@ function startMovie() {
   iframe.allowFullscreen = true;
   iframe.referrerPolicy = 'strict-origin-when-cross-origin';
   iframe.loading = 'eager';
-  // Use the publisher's real YouTube embed, never an invented "live" stream.
+  // Use the source provider's real player embed, never an invented "live" stream.
   player.replaceChildren(iframe);
   cover.hidden = true;
   player.hidden = false;
@@ -77,7 +77,7 @@ for (const movie of garyPage.movies) {
   button.append(artwork, name, byline);
   button.addEventListener('click', () => choose(movie));
   choices.append(button);
-  buttons.set(movie.videoId, button);
+  buttons.set(programKey(movie), button);
 }
 play.addEventListener('click', startMovie);
 if (garyPage.movies.some(validateMovie)) {
