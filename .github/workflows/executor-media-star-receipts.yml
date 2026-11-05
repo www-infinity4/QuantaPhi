@@ -1,0 +1,54 @@
+name: Executor and Media Star receipt safety
+on:
+  pull_request:
+    paths:
+      - 'workers/executor-insights/**'
+      - 'workers/media-star-gallery/**'
+      - 'test/media-star-gallery*.test.mjs'
+      - 'media-star-gallery*.mjs'
+      - 'media-star-gallery.css'
+      - 'media-star-owner-metrics.js'
+      - 'media-star-creator.js'
+      - 'bubbles-star-coin-audit.js'
+      - 'test/bubbles-star-coin-audit.test.mjs'
+      - 'test/executor-insights.test.mjs'
+      - 'media-star-interactions.js'
+      - 'bubbles-executor-insights.js'
+      - 'index.html'
+      - 'bubbles.html'
+      - 'bubbles-card-host.html'
+      - '.github/workflows/executor-media-star-receipts.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  receipt-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify executor isolation and real card interaction contracts
+        run: node --test test/executor-insights.test.mjs test/media-star-gallery*.test.mjs test/bubbles-star-coin-audit.test.mjs
+      - name: Check browser and Worker syntax
+        run: |
+          node --check media-star-interactions.js
+          node --check bubbles-executor-insights.js
+          node --check workers/executor-insights/worker.mjs
+          node --check workers/media-star-gallery/worker.mjs
+          node --check media-star-gallery-core.mjs
+          node --check media-star-gallery.mjs
+          node --check media-star-creator.js
+          node --check media-star-owner-metrics.js
+          node --check bubbles-star-coin-audit.js
+      - name: Check Cloudflare D1 SQL migrations
+        run: |
+          python3 - <<'PY'
+          import sqlite3,pathlib
+          db=sqlite3.connect(':memory:')
+          for path in ('workers/executor-insights/schema.sql','workers/media-star-gallery/schema.sql'):
+              db.executescript(pathlib.Path(path).read_text())
+              print('Schema valid',path)
+          PY

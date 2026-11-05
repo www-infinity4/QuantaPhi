@@ -429,7 +429,20 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
   <p style="margin:0 0 7px;font-weight:800;color:#8e281f">BUILD WITH BUBBLES · QUANTAPHI QUICK CARDS</p>
   <p style="margin:0 0 12px">Turn a website and its most useful interaction into a card. Publish a shareable QuantaPhi link immediately; discovery rotation follows review.</p>
   <a href="/quick-card-builder.html" style="display:inline-block;border-radius:12px;padding:12px 18px;background:#a52520;color:white;font-weight:800;text-decoration:none">+ Create a Quick Card</a>
+   <a href="#mediaStarCreator" style="display:inline-block;margin-left:8px;border:1px solid #bdb1bd;border-radius:12px;padding:12px 18px;background:#f9f5ef;color:#403448;font-weight:800;text-decoration:none">+ Build a Media Star</a>
 </div>
+<section id="mediaStarGallery" aria-labelledby="mediaStarGalleryTitle">
+  <div class="msg-head"><div><h2 id="mediaStarGalleryTitle">Media Star · Public radio & creator cards</h2>
+   <p class="msg-explain">Explore original media after publisher review. Find radio and replays relevant to interests you choose.</p></div>
+   <div class="msg-controls">
+    <a href="#mediaStarCreator">+ Build a Media Star</a>
+    <button id="mediaStarGalleryMatch" type="button">Match My Search</button>
+    <button id="mediaStarGalleryPrev" type="button" aria-label="Previous Media Star">‹</button>
+    <button id="mediaStarGalleryNext" type="button" aria-label="Next Media Star">›</button>
+   </div></div>
+  <p id="mediaStarGalleryStatus" role="status" aria-live="polite">Looking for approved creator media…</p>
+  <div id="mediaStarGalleryCards" aria-label="Reviewed public Media Star cards"></div>
+ </section>
 <section id="oracleCardDeck" class="oracle-card-deck" aria-label="Interactive Oracle widget viewer">
 
   <div class="oracle-direction-tabs" role="tablist" aria-label="Choose card direction">
@@ -2125,5 +2138,9 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <style>#publicCardTrends{border:1px solid #d9c6ee}#publicCardTrends h2{font-size:19px}#publicCardTrends p,.public-card-count{font-size:12px;color:#665574;line-height:1.5}#publicCardTrends li{margin:12px 0}#publicCardTrends a{color:#5f259f;font-weight:800}.public-card-count{padding:8px 12px;border-radius:12px;background:#f4eff9}</style><script defer src="/public-card-trends.js?v=20261013-trends1"></script><link rel="stylesheet" href="/group-story.css?v=20261013-group1"><script defer src="/group-story.js?v=20261013-group1"></script><script type="module" src="/walmart-card.mjs?v=20261024-pizza1"></script>
 <link rel="stylesheet" href="/published-quick-card.css?v=2">
 <script type="module" src="/published-quick-cards-feed.js?v=2"></script>
-<link rel="stylesheet" href="/bubbles-identity-settings-card.css?v=20261101-is1">\n<script type="module" src="/bubbles-identity-settings-card.mjs?v=20261101-is1"></script>\n</body></html>
+<link rel="stylesheet" href="/bubbles-identity-settings-card.css?v=20261101-is1">\n<script type="module" src="/bubbles-identity-settings-card.mjs?v=20261101-is1"></script>\n<link rel="stylesheet" href="/media-star-gallery.css?v=20261104-creator1">
+<script type="module" src="/media-star-gallery.mjs?v=20261104-creator1"></script>
+<script defer src="/media-star-owner-metrics.js?v=20261104-creator-metrics1"></script>
+<script defer src="/media-star-interactions.js?v=20261104-realcards1"></script>
+</body></html>
 
