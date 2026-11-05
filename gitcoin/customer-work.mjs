@@ -105,10 +105,29 @@ export async function postVerifiedCustomerGits(manifest,options={}){
    line.request_sha256,line.provider,line.wallet_id));
  }
  const outcome=await db.batch(statements);
- if(!Array.isArray(outcome)||outcome.some(x=>x?.success!==true))error('gitcoin_atomic_write_unconfirmed');
- // Receipt ledger evidence still requires a separately live, authenticated
- // GIT balance reader and policy before calling anything spendable or cash.
+ if(!Array.isArray(outcome)||outcome.length!==statements.length||
+  outcome.some(x=>x?.success!==true))error('gitcoin_atomic_write_unconfirmed');
+ // INSERT OR IGNORE is replay-safe but would otherwise also hide a conflicting
+ // wallet/contract. Never report submitted credit without verifying the exact
+ // recipient, consent and acceptance after the atomic transaction.
+ const ids=plan.map(x=>x.receipt_id);
+ const placeholders=ids.map((_,i)=>'?'+(i+1)).join(',');
+ const rows=await db.prepare(
+  'SELECT a.receipt_id,a.wallet_id,a.amount,l.customer_id,l.grant_id,l.acceptance_receipt_id,l.executor_wallet_id FROM gitcoin_awards a JOIN gitcoin_customer_award_links l ON a.receipt_id=l.receipt_id WHERE a.receipt_id IN ('+placeholders+')'
+ ).bind(...ids).all();
+ const found=new Map((rows?.results||[]).map(x=>[x.receipt_id,x]));
+ if(found.size!==plan.length)error('gitcoin_readback_unconfirmed');
+ for(const x of plan){
+  const row=found.get(x.receipt_id);
+  if(!row||row.wallet_id!==x.wallet_id||row.executor_wallet_id!==x.wallet_id||
+   row.customer_id!==x.customer_id||row.grant_id!==x.grant_id||
+   row.acceptance_receipt_id!==x.acceptance_receipt_id||Number(row.amount)!==1)
+   error('gitcoin_readback_mismatch');
+ }
+ // Verified, idempotent ledger receipt. Whether it is available to trade or
+ // redeem depends on a separate authorized wallet/read-policy rollout.
  return {ok:true,proposedLineCount:plan.length,
-  submittedForIdempotentStorage:plan.length,walletMinted:false,
-  spendableBalanceProvided:false,creditUnit:'GIT',recipientWalletId:reviewed.recipient_wallet_id};
+  submittedForIdempotentStorage:plan.length,verifiedLedgerReceipts:plan.length,
+  walletMinted:false,spendableBalanceProvided:false,
+  creditUnit:'GIT',recipientWalletId:reviewed.recipient_wallet_id};
 }
