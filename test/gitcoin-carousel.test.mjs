@@ -15,4 +15,5 @@ test('homepage carousel includes real GIT code setup card',()=>{
  assert.match(deck,/gitcoinQuickCard:\['gitcoin-code/);
  assert.match(deck,/gitcoin:'gitcoinQuickCard'/);
  assert.match(read('gitcoin-quick-card.css'),/#gitcoinQuickCard/);
+ assert.match(read('gitcoin-quick-card.css'),/oracle-card-deck-active:not/);
 });
