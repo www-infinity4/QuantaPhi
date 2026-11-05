@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'gary/**'
+      - 'templates/family-lounge/**'
+      - 'test/gary-family-lounge.test.mjs'
       - 'templates/western-birthday/**'
       - 'test/gary-birthday.test.mjs'
       - '.github/workflows/gary-birthday.yml'
@@ -11,6 +13,8 @@ on:
     branches: [main]
     paths:
       - 'gary/**'
+      - 'templates/family-lounge/**'
+      - 'test/gary-family-lounge.test.mjs'
       - 'templates/western-birthday/**'
       - 'test/gary-birthday.test.mjs'
       - '.github/workflows/gary-birthday.yml'
@@ -25,4 +29,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run Gary Westerns acceptance tests without dependencies
-        run: node --test test/gary-birthday.test.mjs
+        run: node --test test/gary-birthday.test.mjs test/gary-family-lounge.test.mjs
