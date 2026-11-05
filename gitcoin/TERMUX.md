@@ -23,6 +23,14 @@ SQLite location: `~/.quantaphi/gitcoin/receipts.sqlite3`. It contains only IDs, 
 
 `balance` deliberately prints `settled_gits: 0` and `verified_wallet_balance: null`. Real issuance would require a verified commit on the repo's default branch, passing CI, Quant AI quality review, independent author/agent attribution, authenticated customer-beneficiary consent, and an idempotent owner-scoped Cloudflare D1 wallet transaction. Neither the local database nor client JavaScript may award a spendable coin.
 
+## Copyable QuantaPhi GIT card
+
+The owner's GIT Coin quick card is now staged in the QuantaPhi Oracle carousel as `gitcoinQuickCard` (deep link `/?card=gitcoin`), with a matching guide at `/gitcoin.html`. Both offer **Copy for Termux** and **Copy for AI**. Users enter their own `owner/repo`; scripts clone the collector to `~/quantaphi-gitcoin`, clone the user-owned repository to `~/gitcoin-workspaces/owner/repo`, then scan and display the pending SQLite totals. The setup installs standard Termux packages and uses the user's own `gh auth status`; it never asks users to paste personal access tokens into an AI chat.
+
+The copy payload is created locally by `gitcoin/setup-snippets.mjs`, with no browser API or account tokens sent anywhere. The commands collect provisional GIT line receipts but **do not award a spendable currency**. Each source line may receive an evidence receipt including lines with no immediate economic usefulness. Quality review and issuance are separate from collection.
+
+**Provider distinction:** GPT Coin is an optional third-party/provider-issued asset design, not a QuantaPhi-minted currency. Users can construct their own local proof records, but those are not official GPT-issued coins. A GPT-provided opt-in issuer and independently authenticated importer would be prerequisites for legitimate provider-issued credits. Bubbles Bits remain QuantaPhi's separate user-criteria-specific, verifiable tool-iteration units; the browser's iteration display must not imply backend wallet minting.
+
 ## Bubbles integration boundary
 
 `agent-attribution.mjs` stages a **pending** owner/operator allocation only when customer consent, signed Bubbles job evidence, and the destination wallet are independently checked by the backend and all IDs agree. No current Bubbles/Wallet endpoint is connected by this change. The existing `gitcoin/verification.mjs` is still responsible for independent source/CI/Quant AI verification; an authorized server later settles to the isolated `gitcoin_awards` D1 table. User-owned source and code-sharing rights remain with their lawful holders unless they separately agree otherwise.
@@ -31,7 +39,7 @@ SQLite location: `~/.quantaphi/gitcoin/receipts.sqlite3`. It contains only IDs, 
 
 ```bash
 python3 -m unittest discover -s test -p 'test_termux_ledger.py'
-node --test test/gitcoin-agent-attribution.test.mjs test/gitcoin-entry.test.mjs
+node --test test/gitcoin-agent-attribution.test.mjs test/gitcoin-entry.test.mjs test/gitcoin-setup-snippets.test.mjs test/gitcoin-card.test.mjs test/gitcoin-carousel.test.mjs
 ```
 
 See `gitcoin.html` for a readable public QuantaPhi entry page. The global GIT marketplace, IBM/tech vendor acceptance, GPT third-party settlement and deployed wallet balance integrations are **not** claimed or enabled. Gitcoin's existing GTC token is a separate product.
