@@ -14,7 +14,11 @@ const checks=[
   // OCTAVES_URL is not a separate deployment; this is the same published site.
   {path:'/gary/index.html',type:'text/html',need:['id="gary-family-hero"','id="gary-birthday-hero"','/gary/presentation-init.mjs','/gary/octaves.css','id="family-cast-panel"','id="family-lounge"']},
   {path:'/family/index.html',type:'text/html',need:['Gary & Family','/gary/index.html','http-equiv="refresh"']},
-  {path:'/gary/lounge.mjs',type:'javascript',need:['castAction(','family-cast-panel','bubbles-embed.js','forecastSevenDays','sourceCardForIntent']},
+  {path:'/gary/lounge.mjs',type:'javascript',need:['castAction(','family-cast-panel','bubbles-embed.js','bubbleTheme','family-modern','forecastSevenDays','sourceCardForIntent']},
+  {path:'/bubbles-embed.js',type:'javascript',need:["family-modern","bubbleTheme","pendingOpen"]},
+  {path:'/bubbles.html',type:'text/html',need:["bubbles-family-modern.css","bubbles-family-prompts.js","bubbles-family-modern","bubbles-octaves-chat.css"]},
+  {path:'/bubbles-family-modern.css',type:'text/css',need:["html.bubble-iframe.bubbles-family-modern",".ba-composer",".ba-header",".ba-thread"]},
+  {path:'/bubbles-family-prompts.js',type:'javascript',need:["ba-family-suggestions","gary-westerns-2026","What can we watch on TV tonight?"]},
   {path:'/gary/presentation.mjs',type:'javascript',need:['2026-11-06T06:00:00.000Z','familyPresentationAt','castInstructions']},
   {path:'/gary/presentation-init.mjs',type:'javascript',need:['familyPresentationAt(new Date())','document.title']},
   {path:'/gary/octaves.css',type:'text/css',need:['color-scheme:light','family-spotlight','family-cast-panel']},

@@ -83,7 +83,11 @@
   <meta name="twitter:description" content="Research and voice-oriented assistance inside QuantaPhi.">
   <meta name="twitter:image" content="https://quantaphi.org/assets/bubbles-introduction.webp">
   <script>
-    if(new URLSearchParams(location.search).get('embed')==='1')document.documentElement.classList.add('bubble-iframe');
+    const params=new URLSearchParams(location.search);
+    if(params.get('embed')==='1'){
+      document.documentElement.classList.add('bubble-iframe');
+      if(params.get('theme')==='family-modern')document.documentElement.classList.add('bubbles-family-modern');
+    }
     document.addEventListener('DOMContentLoaded',()=>{
       if(document.documentElement.classList.contains('bubble-iframe'))document.body.classList.add('bubbles-embedded');
     });
@@ -98,6 +102,7 @@
   <script defer src="/bubbles-memory.js?v=20261020-synapse1"></script>
   <script defer src="/quant-ai-personal.js?v=20261020-bubbles-private1"></script>
   <script defer src="/bubbles-ai.js?v=20261104-iteration-credit1"></script>
+  <script defer src="/bubbles-family-prompts.js?v=20261104-family-prompts1"></script>
 <script type="module" src="/bubbles-live-iteration-feed.mjs?v=20261104-iteration-credit1"></script>
   <script defer src="/bubbles-owner-diagnostic.js?v=20261026-owner-health2"></script>
   <script defer src="/bubbles-pwa.js?v=20261019-chrome1"></script>
@@ -116,6 +121,7 @@
   </style>
   <link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1">
   <link rel="stylesheet" href="/bubbles-responsive-20261026-v2.css?v=20261026-mobile-layout3">
+  <link rel="stylesheet" href="/bubbles-family-modern.css?v=20261104-family-room1">
 </head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">

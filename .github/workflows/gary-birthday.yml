@@ -4,6 +4,11 @@ on:
   pull_request:
     paths:
       - 'gary/**'
+      - 'bubbles-embed.js'
+      - 'bubbles-family-prompts.js'
+      - 'bubbles.html'
+      - 'bubbles-family-modern.css'
+      - 'test/gary-modern-bubbles.test.mjs'
       - 'family/**'
       - 'templates/family-lounge/**'
       - 'templates/western-birthday/**'
@@ -16,6 +21,11 @@ on:
     branches: [main]
     paths:
       - 'gary/**'
+      - 'bubbles-embed.js'
+      - 'bubbles-family-prompts.js'
+      - 'bubbles.html'
+      - 'bubbles-family-modern.css'
+      - 'test/gary-modern-bubbles.test.mjs'
       - 'family/**'
       - 'templates/family-lounge/**'
       - 'templates/western-birthday/**'
@@ -39,9 +49,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Verify birthday and family content without dependencies
-        run: node --test test/gary-birthday.test.mjs test/gary-family-lounge.test.mjs test/gary-presentation-and-cast.test.mjs
+        run: node --test test/gary-birthday.test.mjs test/gary-family-lounge.test.mjs test/gary-presentation-and-cast.test.mjs test/gary-modern-bubbles.test.mjs test/bubbles-embed.test.mjs
       - name: Verify page module syntax
         run: |
+          node --check bubbles-embed.js
+          node --check bubbles-family-prompts.js
           node --check gary/lounge.mjs
           node --check gary/presentation.mjs
           node --check gary/presentation-init.mjs
