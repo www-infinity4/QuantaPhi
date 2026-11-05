@@ -317,7 +317,7 @@
     updateActive();
   }
 
-  for (const station of stations) {
+  function appendStationCard(station) {
     const card = make('article','ilr-card');
     card.dataset.station = station.id;
     card.dataset.state=station.state;
@@ -348,6 +348,7 @@
     cards.set(station.id,card);
     buttons.set(station.id,play);
   }
+  for (const station of stations) appendStationCard(station);
   function showState(code) {
     let available = 0;
     for (const station of stations) {
@@ -364,6 +365,57 @@
   }
   stateFilter.addEventListener('change',()=>showState(stateFilter.value));
   showState('all');
+
+  // D1 directory is additive. Static published broadcaster streams remain usable
+  // while the API is unavailable; no unverified provider claims are displayed.
+  const validHttps = value => {
+    if (typeof value !== 'string') return false;
+    try {
+      const u = new URL(value);
+      return u.protocol === 'https:' && !u.username && !u.password;
+    } catch { return false; }
+  };
+  const safeText = (value,max=100) =>
+    typeof value === 'string' && value.length > 0 && value.length <= max ? value : null;
+  function normalizeDirectoryStation(row) {
+    if (!row || !safeText(row.id,70) || !/^[a-z0-9-]+$/.test(row.id) || !safeText(row.name)) return null;
+    if (!safeText(row.state,5) || (!(row.state in STATE_NAMES) && row.state !== 'WORLD')) return null;
+    if (!safeText(row.frequency,50) || !safeText(row.type,65) || !safeText(row.city,80)) return null;
+    if (!['mp3','iheart'].includes(row.player) || !validHttps(row.url)) return null;
+    if (row.player === 'mp3' && !validHttps(row.stream)) return null;
+    if (row.low && !validHttps(row.low)) return null;
+    if (row.schedule && !validHttps(row.schedule)) return null;
+    // The DB is curated and reviewed, not a user-submitted URL playback proxy.
+    return {id:row.id,name:row.name,state:row.state,frequency:row.frequency,
+      type:row.type,city:row.city,player:row.player,url:row.url,
+      stream:row.stream||null,low:row.low||null,schedule:row.schedule||null};
+  }
+  async function loadDirectory() {
+    try {
+      const response = await fetch('/api/radio-stations?state=all',
+        {cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(8500)});
+      if (!response.ok) return;
+      const payload = await response.json();
+      if (payload?.schemaVersion !== 1 || !Array.isArray(payload.stations)) return;
+      let added = 0;
+      for (const raw of payload.stations.slice(0,250)) {
+        const station = normalizeDirectoryStation(raw);
+        if (!station || stations.some(item=>item.id===station.id)) continue;
+        stations.push(station);
+        appendStationCard(station);
+        added++;
+      }
+      if (added) {
+        showState(stateFilter.value);
+        copy.querySelector('.ilr-caption').textContent =
+          'Browse '+stations.length+' sourced broadcasts · filter across all 50 states';
+      }
+    } catch {
+      // No false success state and no loss of static fallback broadcasts.
+    }
+  }
+  loadDirectory();
+
   previous.addEventListener('click',() => track.scrollBy({left: -280, behavior:'smooth'}));
   next.addEventListener('click',() => track.scrollBy({left: 280, behavior:'smooth'}));
   stop.addEventListener('click',() => {
