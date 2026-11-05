@@ -3,17 +3,87 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T13:31:17.738212Z",
+  "checked_at": "2026-11-05T14:01:52.922799Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "amazon uber eats",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T13:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/article/amazon-partners-with-uber-eats-to-bring-restaurant-delivery-to-prime-members-110100295.html",
+        "https://www.bloomberg.com/news/articles/2026-11-05/amazon-adds-uber-food-delivery-perks-for-its-prime-subscribers",
+        "https://techcrunch.com/2026/11/05/amazon-ditches-grubhub-taps-uber-eats-for-prime/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXB_h10dBI08qfqb5G4SuPaCqq55z28D5vt1ukEt20N0wIFiOT943iKf7W4-E",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/article/amazon-partners-with-uber-eats-to-bring-restaurant-delivery-to-prime-members-110100295.html",
+          "title": "Amazon partners with Uber Eats to bring restaurant delivery to Prime members",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXB_h10dBI08qfqb5G4SuPaCqq55z28D5vt1ukEt20N0wIFiOT943iKf7W4-E"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/amazon-adds-uber-food-delivery-perks-for-its-prime-subscribers",
+          "title": "Amazon Adds Uber Food Delivery Perks for Its Prime Subscribers",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkPMVoqIczZ9-o3l3ICO0r92VQXrR3iShqv2YvalmJtgfEUg0LPCyGowjGNFs"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/05/amazon-ditches-grubhub-taps-uber-eats-for-prime/",
+          "title": "Amazon ditches GrubHub, taps Uber Eats for Prime",
+          "publisher": "TechCrunch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl6f75b4iy8FrLmh78KYPw7TMOP-a1hhRzkgYKlOapaqXUOiQ7cAv36RX7PkA"
+        }
+      ]
+    },
+    {
+      "query": "sunset park fire",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T13:10:00Z",
+      "related_news_urls": [
+        "https://abc7ny.com/post/6-dead-3-alarm-fire-tears-sunset-park-home-brooklyn/20017265/",
+        "https://www.bbc.com/news/articles/c39wz44411w0o",
+        "https://www.nbcnewyork.com/brooklyn/deadly-sunset-park-fire-thursday/6568034/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPxJHTNZ6C3q18o65zuSAq4IuNVctKyNxqX8QlpseWVRlSI7qO_TG-ZN1ow5A",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/post/6-dead-3-alarm-fire-tears-sunset-park-home-brooklyn/20017265/",
+          "title": "Sunset Park, Brooklyn fire leaves 6 dead after flames tear through home",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPxJHTNZ6C3q18o65zuSAq4IuNVctKyNxqX8QlpseWVRlSI7qO_TG-ZN1ow5A"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/c39wz44411w0o",
+          "title": "Six dead and others injured in fire at Brooklyn building",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnLGt7IRRr1icJcth4rn1Rt0T5_XzR4Uj0_HDQXYeSfk3TnM_Itn_wDbZVax4"
+        },
+        {
+          "url": "https://www.nbcnewyork.com/brooklyn/deadly-sunset-park-fire-thursday/6568034/",
+          "title": "At least six people dead, more missing in Sunset Park overnight fire: FDNY",
+          "publisher": "NBC New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ251Sdm3SmXg4h_NJaZsudXfsTDZmHAareTF9s0CKSjD4i1TeoXxLR10z5ZM"
+        }
+      ]
+    },
     {
       "query": "hailey bieber",
       "approx_searches": "200+",
       "published_at": "2026-11-05T13:10:00Z",
       "related_news_urls": [
         "https://wwd.com/beauty-industry-news/beauty-features/hailey-bieber-rhode-womens-health-5-million-1239392562/",
-        "https://ew.com/hailey-bieber-pmdd-struggles-after-giving-birth-12235909",
-        "https://www.eonline.com/news/1437813/hailey-bieber-details-pmdd-journey-after-welcoming-her-justin-biebers-son"
+        "https://wlos.com/news/entertainment/hailey-bieber-opens-up-on-lonely-journey-with-pmdd-after-birth-of-son",
+        "https://www.billboard.com/culture/lifestyle/hailey-bieber-struggle-pmdd-diagnosis-son-jack-blues-birth-1236373857/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSykIStNaRJPsZVLeZfsjO0Ptvh5XKfNeMJrh4KynkmPDuC1a30TH6yxIJxPFI",
       "image_credit": "WWD",
@@ -26,53 +96,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSykIStNaRJPsZVLeZfsjO0Ptvh5XKfNeMJrh4KynkmPDuC1a30TH6yxIJxPFI"
         },
         {
-          "url": "https://ew.com/hailey-bieber-pmdd-struggles-after-giving-birth-12235909",
-          "title": "Hailey Bieber breaks down PMDD struggles after giving birth to son: ‘Not a lot of conversation or research’",
-          "publisher": "Entertainment Weekly",
+          "url": "https://wlos.com/news/entertainment/hailey-bieber-opens-up-on-lonely-journey-with-pmdd-after-birth-of-son",
+          "title": "Hailey Bieber opens up on 'lonely journey' with PMDD after birth of son",
+          "publisher": "WLOS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8MowD5QUKPKIuzNCqcALEEC6PURphUoznx-ae8n_3uFj3LVY_PNNVFERV1jo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-vYUC6h7B6FZm5FYu71287BaG8B1k0fUS1b2bQ5ROkYPlkUCauxv-0DHp6c"
         },
         {
-          "url": "https://www.eonline.com/news/1437813/hailey-bieber-details-pmdd-journey-after-welcoming-her-justin-biebers-son",
-          "title": "Hailey Bieber Details \"Lonely Journey\" With PMDD After Giving Birth to Son Jack Bieber",
-          "publisher": "E! News",
+          "url": "https://www.billboard.com/culture/lifestyle/hailey-bieber-struggle-pmdd-diagnosis-son-jack-blues-birth-1236373857/",
+          "title": "Hailey Bieber Details Struggle of PMDD Diagnosis After Jack Blues' Birth",
+          "publisher": "Billboard",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6BOSQGSaiUWmsqFZ8maHuA6nV6I6D8cAlihxgwfC6NCWc6zG4Y6D3IQ8uxtA"
-        }
-      ]
-    },
-    {
-      "query": "sunset park fire",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T13:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/c39wz44411w0o",
-        "https://www.foxnews.com/video/6407957676112",
-        "https://www.nbcnewyork.com/brooklyn/deadly-sunset-park-fire-thursday/6568034/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnLGt7IRRr1icJcth4rn1Rt0T5_XzR4Uj0_HDQXYeSfk3TnM_Itn_wDbZVax4",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/c39wz44411w0o",
-          "title": "Six dead and others injured in fire at Brooklyn building",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnLGt7IRRr1icJcth4rn1Rt0T5_XzR4Uj0_HDQXYeSfk3TnM_Itn_wDbZVax4"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6407957676112",
-          "title": "WATCH LIVE: NYC Mayor Mamdani holds press conference on the Brooklyn fire",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb5YBZR0AIWUnhhkXcFCyJlEM_JcXaz5FKeS5u_-qZcUB0Bj75nKQdIfJXpvk"
-        },
-        {
-          "url": "https://www.nbcnewyork.com/brooklyn/deadly-sunset-park-fire-thursday/6568034/",
-          "title": "At least six people dead, more missing in Sunset Park overnight fire: FDNY",
-          "publisher": "NBC New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ251Sdm3SmXg4h_NJaZsudXfsTDZmHAareTF9s0CKSjD4i1TeoXxLR10z5ZM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPJVmcNkBdqbDbzKEwUN62EkXwpWYb4ggTBXMHpNqJwGQsBYQhWbl4C6oABMg"
         }
       ]
     },
@@ -113,29 +148,29 @@
     },
     {
       "query": "scarlett johansson",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-05T13:00:00Z",
       "related_news_urls": [
-        "https://www.hollywoodreporter.com/movies/movie-news/scarlett-johansson-on-the-batman-part-ii-role-1236748021/",
         "https://gizmodo.com/scarlett-johansson-offers-a-surprising-tease-about-her-batman-part-ii-role-2000835295",
+        "https://www.ign.com/articles/scarlett-johansson-the-batman-2-existential-angst",
         "https://www.justjared.com/2026/11/04/scarlett-johansson-shares-first-comments-on-the-batman-part-ii-casting-admits-mystery-role-was-very-hard-to-figure-out/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPI0pr78j9sGaEW_kDIpC9CNEKRvpBirC7ZWk3e5uNe7QPGapLL13KJSkWUzQ",
-      "image_credit": "The Hollywood Reporter",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNNIiNKQVGUAfX7GiwjBbHlOe0DA384mbljSMKp58t069zPNO9wOu2xZq81Qk",
+      "image_credit": "Gizmodo",
       "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/scarlett-johansson-on-the-batman-part-ii-role-1236748021/",
-          "title": "Scarlett Johansson Breaks Silence on ‘The Batman Part II’ Role: “It Was Very Hard to Figure Out”",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPI0pr78j9sGaEW_kDIpC9CNEKRvpBirC7ZWk3e5uNe7QPGapLL13KJSkWUzQ"
-        },
         {
           "url": "https://gizmodo.com/scarlett-johansson-offers-a-surprising-tease-about-her-batman-part-ii-role-2000835295",
           "title": "Scarlett Johansson Offers a Surprising Tease About Her ‘Batman Part II’ Role",
           "publisher": "Gizmodo",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNNIiNKQVGUAfX7GiwjBbHlOe0DA384mbljSMKp58t069zPNO9wOu2xZq81Qk"
+        },
+        {
+          "url": "https://www.ign.com/articles/scarlett-johansson-the-batman-2-existential-angst",
+          "title": "Scarlett Johansson Says The Batman: Part 2 Role Caused 'Existential Angst'",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmsl_kghJknHd3dkqUR3qxEBCXfofMzECoaEVmK8JihWZvbuXOfJ_aRi6VGas"
         },
         {
           "url": "https://www.justjared.com/2026/11/04/scarlett-johansson-shares-first-comments-on-the-batman-part-ii-casting-admits-mystery-role-was-very-hard-to-figure-out/",
@@ -152,8 +187,8 @@
       "published_at": "2026-11-05T13:00:00Z",
       "related_news_urls": [
         "https://www.bostonglobe.com/2026/11/04/sports/red-sox-shelley-duncan/",
-        "https://sports.yahoo.com/articles/red-sox-bold-move-steal-102211989.html",
-        "https://nypost.com/2026/11/04/sports/yankees-triple-a-manager-shelley-duncan-joining-red-sox/"
+        "https://nypost.com/2026/11/04/sports/yankees-triple-a-manager-shelley-duncan-joining-red-sox/",
+        "https://sports.yahoo.com/articles/red-sox-bold-move-steal-102211989.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZZpWiLslXfBLTKVW4NwKGGwB_2yEhGzKV2hcbP-Lwtz8DiI9CqlN0hTMh-c8",
       "image_credit": "The Boston Globe",
@@ -166,18 +201,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZZpWiLslXfBLTKVW4NwKGGwB_2yEhGzKV2hcbP-Lwtz8DiI9CqlN0hTMh-c8"
         },
         {
-          "url": "https://sports.yahoo.com/articles/red-sox-bold-move-steal-102211989.html",
-          "title": "Red Sox Make Bold Move, Steal Key Coach From The Yankees",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYEAOVbuxRTcYLWs6E79EyuQ-QCE5Jsjzk2Y1o_CgA1hz-IKnVuxxuLO3GBt4"
-        },
-        {
           "url": "https://nypost.com/2026/11/04/sports/yankees-triple-a-manager-shelley-duncan-joining-red-sox/",
           "title": "Yankees’ Triple-A manager Shelley Duncan poached by Red Sox",
           "publisher": "New York Post",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuKlZSbrD9RghMT-ygi8CXy0cbLLMyegAYCBdyttRkgbIbvU4ro0cTNPHbkPo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/red-sox-bold-move-steal-102211989.html",
+          "title": "Red Sox Make Bold Move, Steal Key Coach From The Yankees",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYEAOVbuxRTcYLWs6E79EyuQ-QCE5Jsjzk2Y1o_CgA1hz-IKnVuxxuLO3GBt4"
         }
       ]
     },
@@ -221,26 +256,26 @@
       "approx_searches": "500+",
       "published_at": "2026-11-05T12:50:00Z",
       "related_news_urls": [
+        "https://people.com/carson-daly-named-new-co-anchor-of-saturday-today-will-join-laura-jarrett-12237339",
         "https://pagesix.com/2026/11/05/entertainment/carson-daly-lands-major-new-role-at-today-show/",
-        "https://www.today.com/news/carson-daly-saturday-today-anchor-rcna607601",
         "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6vqwQAn8xyLy8iPKbKanAkL1JJO6PNw1UsTX5gu4KveJZ7tm7qH2TqcJrK10",
-      "image_credit": "Page Six",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PFbajNkR5gH3FdA9aVLqLGkVtbDElTPoSqTxXJLNVRWKFS2_bl1FBEj2Ffk",
+      "image_credit": "People.com",
       "news": [
+        {
+          "url": "https://people.com/carson-daly-named-new-co-anchor-of-saturday-today-will-join-laura-jarrett-12237339",
+          "title": "Carson Daly Named New Co-Anchor of ‘Saturday Today,’ Will Join Laura Jarrett",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PFbajNkR5gH3FdA9aVLqLGkVtbDElTPoSqTxXJLNVRWKFS2_bl1FBEj2Ffk"
+        },
         {
           "url": "https://pagesix.com/2026/11/05/entertainment/carson-daly-lands-major-new-role-at-today-show/",
           "title": "‘Today’ host Carson Daly lands a major new role: ‘I’m thrilled’",
           "publisher": "Page Six",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6vqwQAn8xyLy8iPKbKanAkL1JJO6PNw1UsTX5gu4KveJZ7tm7qH2TqcJrK10"
-        },
-        {
-          "url": "https://www.today.com/news/carson-daly-saturday-today-anchor-rcna607601",
-          "title": "Carson Daly Announced as Co-Anchor of Saturday TODAY",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4t1B2PJqDaosvd28ZjMM5D7bTBL3dx6mX12QH-Uv9fmS7i4JureLSWvZ2uso"
         },
         {
           "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/",
@@ -253,7 +288,7 @@
     },
     {
       "query": "voice of logan",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-05T12:40:00Z",
       "related_news_urls": [
         "https://www.wcvb.com/article/voice-of-logan-winner-announcement-boston/74343292",
@@ -291,20 +326,13 @@
       "approx_searches": "5000+",
       "published_at": "2026-11-05T12:30:00Z",
       "related_news_urls": [
-        "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
         "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
+        "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
         "https://www.gulfcoastnewsnow.com/article/weather-forecast-southwest-florida-atlantic-tropical-storm-hurricane-season/74330734"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk",
-      "image_credit": "WPEC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLi_lQgE9mMuWxNZ4Pf9uMJZbLEq2OD-E2NE8UwTFWY-ZitbZKFAiL8XTmxLk",
+      "image_credit": "The Weather Channel",
       "news": [
-        {
-          "url": "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
-          "title": "Tracking potential tropical development",
-          "publisher": "WPEC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk"
-        },
         {
           "url": "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
           "title": "Subtropical storm could develop in the Atlantic this week",
@@ -313,46 +341,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLi_lQgE9mMuWxNZ4Pf9uMJZbLEq2OD-E2NE8UwTFWY-ZitbZKFAiL8XTmxLk"
         },
         {
+          "url": "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
+          "title": "Tracking potential tropical development",
+          "publisher": "WPEC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk"
+        },
+        {
           "url": "https://www.gulfcoastnewsnow.com/article/weather-forecast-southwest-florida-atlantic-tropical-storm-hurricane-season/74330734",
           "title": "NHC says 50% development odds for feature over open Atlantic Ocean",
           "publisher": "Gulf Coast News and Weather",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj7iF3opNIM97PulfHOOT0lRpnE7yHoIz-ZiDqQKMUgylXqymzRAjNnNefzyk"
-        }
-      ]
-    },
-    {
-      "query": "charles porter",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T12:30:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/movies/2026/11/04/charles-f-porter-dead-cancer-battle/92619942007/",
-        "https://deadline.com/2026/11/charles-porter-actor-dead-1237213861/",
-        "https://www.hollywoodreporter.com/movies/movie-news/charles-porter-dead-finding-faith-duke-wendell-scott-1236748133/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq7Zkw3Hcpr9PrGkZB5ijLxiX04bR230oajvje5ZkVBsEU7tgN7Rb0CklxnV8",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/04/charles-f-porter-dead-cancer-battle/92619942007/",
-          "title": "'Wendell Scott' star Charles F. Porter dies at 47 after cancer battle",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq7Zkw3Hcpr9PrGkZB5ijLxiX04bR230oajvje5ZkVBsEU7tgN7Rb0CklxnV8"
-        },
-        {
-          "url": "https://deadline.com/2026/11/charles-porter-actor-dead-1237213861/",
-          "title": "Charles Porter Dies: ‘Finding Faith’ Producer & Actor Was 47",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJc6VsYQbLKJUi6p9FZ4Iz3gapDa1ipYp07MmvkSTtKy6aRojUVwpGCmuEDcc"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/charles-porter-dead-finding-faith-duke-wendell-scott-1236748133/",
-          "title": "Charles F. Porter, Actor and ‘Finding Faith’ Producer, Dies at 47",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSlXcBP_otjYdPf00wqyWgDPifq0arEckNnZxB_GlrdasK-uURanuvCkDlZC4"
         }
       ]
     }
