@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T12:01:52.482161Z",
+  "checked_at": "2026-11-05T12:33:25.324908Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "weather",
-      "approx_searches": "100000+",
-      "published_at": "2026-11-05T11:40:00Z",
+      "query": "amlodipine recall",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T12:20:00Z",
       "related_news_urls": [
-        "https://www.foxweather.com/weather-news/massive-cross-country-storm-targets-east-coast-with-heavy-rain-after-unleashing-severe-weather-in-southeast",
-        "https://www.weathernationtv.com/news/severe-storms-target-the-plains-south-to-start-the-week",
-        "https://www.yahoo.com/news/videos/east-coast-braces-heavy-rain-032032788.html"
+        "https://www.wusa9.com/article/news/nation-world/blood-pressure-medication-recalled-olmesartan-medoxomil-amlodipine-hydrochlorothiazide/507-8f431ffb-301b-42a1-9064-9d09c86215be",
+        "https://www.foxbusiness.com/lifestyle/thousands-blood-pressure-medication-bottles-recalled-nationwide-pills-fail-quality-test",
+        "https://www.prevention.com/health/a74322378/macleods-pharmaceuticals-blood-pressure-medication-recall-fda/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZeml1lsXa1UG_cpvwNYzNuJH-mWIcU3Ezwi378TkfeyTWt39N8ktrtnw5D6Q",
-      "image_credit": "FOX Weather",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKeSSHKGAxgV8Co_yU9kG9q1IvoqhgmvLWqZ5yjeIi0B9rFBiUHKvDbPgP_pQ",
+      "image_credit": "WUSA9",
       "news": [
         {
-          "url": "https://www.foxweather.com/weather-news/massive-cross-country-storm-targets-east-coast-with-heavy-rain-after-unleashing-severe-weather-in-southeast",
-          "title": "Massive storm targets East Coast with heavy rain after unleashing severe weather in Southeast",
-          "publisher": "FOX Weather",
+          "url": "https://www.wusa9.com/article/news/nation-world/blood-pressure-medication-recalled-olmesartan-medoxomil-amlodipine-hydrochlorothiazide/507-8f431ffb-301b-42a1-9064-9d09c86215be",
+          "title": "Blood pressure medication recalled as it may be ineffective, FDA says",
+          "publisher": "WUSA9",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZeml1lsXa1UG_cpvwNYzNuJH-mWIcU3Ezwi378TkfeyTWt39N8ktrtnw5D6Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKeSSHKGAxgV8Co_yU9kG9q1IvoqhgmvLWqZ5yjeIi0B9rFBiUHKvDbPgP_pQ"
         },
         {
-          "url": "https://www.weathernationtv.com/news/severe-storms-target-the-plains-south-to-start-the-week",
-          "title": "Severe Storms Target the Plains & South to Start the Week",
-          "publisher": "WeatherNation",
+          "url": "https://www.foxbusiness.com/lifestyle/thousands-blood-pressure-medication-bottles-recalled-nationwide-pills-fail-quality-test",
+          "title": "Thousands of blood pressure medication bottles recalled nationwide after pills fail quality test",
+          "publisher": "Fox Business",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgICG_KLTkmkYhGm9qFrWXzD1ZlwFL-p_s1xw1uHeETD2NONQm8qtNBlIqLZI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoXf185PCFrN0pVpZG9jxV8wsw7oBnMiC6Nd1eLuFwBCFvrcqWfgvgQBJeZ9I"
         },
         {
-          "url": "https://www.yahoo.com/news/videos/east-coast-braces-heavy-rain-032032788.html",
-          "title": "East Coast braces for heavy rain as massive storm moves east",
-          "publisher": "Yahoo",
+          "url": "https://www.prevention.com/health/a74322378/macleods-pharmaceuticals-blood-pressure-medication-recall-fda/",
+          "title": "FDA Announces 3,700-Bottle Recall of Popular Blood Pressure Medication",
+          "publisher": "Prevention",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqweD1PkZHneVFOQFaQwDqN72r6ag2sA1GoGzmV0GTGy1ZakKUnOxF-MxePVs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Obm0aqF3o3hkY-sDFFUgAXQDLvI3DOhcghtDfsjcKDpvGKodFWqptbKo6iY"
         }
       ]
     },
     {
-      "query": "national donut day",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T11:40:00Z",
+      "query": "ben shelton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T12:10:00Z",
       "related_news_urls": [
-        "https://www.buzzfeed.com/gem758/its-national-donut-day-lets-see-how-loyal-you-are-to-the-don",
-        "https://10best.usatoday.com/food-drink/how-to-make-donuts-at-home/",
-        "https://upnorthlive.com/news/local/poll-what-is-your-favorite-type-of-donut-11-04-2026"
+        "https://www.espn.com/tennis/story/_/id/50353478/ben-shelton-adds-coach-juan-carlos-ferrero-2027-staff",
+        "https://www.si.com/tennis/tennis-mailbag-will-ben-shelton-juan-carlos-ferrero-perfect-match",
+        "https://www.bbc.com/sport/tennis/articles/crz654jdzdqpo"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF8JCvn8sq86yEofO7kyRqblteTixyrFIslutDbkwake4TWceruOBqe-gtXpA",
-      "image_credit": "BuzzFeed",
-      "news": [
-        {
-          "url": "https://www.buzzfeed.com/gem758/its-national-donut-day-lets-see-how-loyal-you-are-to-the-don",
-          "title": "Does The Donut Really, Truly Reign Supreme?",
-          "publisher": "BuzzFeed",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF8JCvn8sq86yEofO7kyRqblteTixyrFIslutDbkwake4TWceruOBqe-gtXpA"
-        },
-        {
-          "url": "https://10best.usatoday.com/food-drink/how-to-make-donuts-at-home/",
-          "title": "Pro donut makers say this is the mistake behind dense, greasy homemade donuts",
-          "publisher": "USA TODAY 10BEST",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOa4NuGhJqvO9TpIY3qrO6g5rMdmRAtmz-8hTsxeYw8IgFV16Kb81vhzEG4sM"
-        },
-        {
-          "url": "https://upnorthlive.com/news/local/poll-what-is-your-favorite-type-of-donut-11-04-2026",
-          "title": "Poll: What is your favorite type of donut?",
-          "publisher": "WPBN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTL3xZUoNbbIoF5wq7t2rPdWbQb-oPigeVI9-rj0zObNW11y4DZT5gUlMPfVOI"
-        }
-      ]
-    },
-    {
-      "query": "baltimore weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T11:40:00Z",
-      "related_news_urls": [
-        "https://www.wbaltv.com/article/baltimore-weather-rain-showers-november-5-2026/74343513",
-        "https://foxbaltimore.com/news/local/much-needed-rain-returns-to-baltimore",
-        "https://www.wmar2news.com/weather/a-dry-start-to-the-first-week-of-november"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1vGQyPmnrW7xEoi-svPAzv1eq621LtzKO-PNPJ63090uBNkeB0vfKOuygMfQ",
-      "image_credit": "WBAL-TV",
-      "news": [
-        {
-          "url": "https://www.wbaltv.com/article/baltimore-weather-rain-showers-november-5-2026/74343513",
-          "title": "Some showers possible in Baltimore area, particularly south",
-          "publisher": "WBAL-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1vGQyPmnrW7xEoi-svPAzv1eq621LtzKO-PNPJ63090uBNkeB0vfKOuygMfQ"
-        },
-        {
-          "url": "https://foxbaltimore.com/news/local/much-needed-rain-returns-to-baltimore",
-          "title": "Much needed rain returns to Baltimore",
-          "publisher": "WBFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY9v-z59sPoF-1OKEJEPvPtE7IqG5yymc5oWEN_D1qGXVMOEjjyQ3obWM_qV4"
-        },
-        {
-          "url": "https://www.wmar2news.com/weather/a-dry-start-to-the-first-week-of-november",
-          "title": "Tuesday: Warm and cloudy",
-          "publisher": "WMAR 2 News Baltimore",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9JhbX0ebfiMNy13qamx8UUE0qEn23FsE_ZIHa7AnYeHlrQTaMwb2Gth7vJKE"
-        }
-      ]
-    },
-    {
-      "query": "clima",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-05T11:30:00Z",
-      "related_news_urls": [
-        "https://www.univision.com/noticias/clima-de-hoy-y-manana-en-eeuu-un-frente-arrastrara-lluvias-hacia-el-este-y-sureste-del-pais-video",
-        "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-syracuse-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-5-de-noviembre-nid05112026/",
-        "https://tn.com.ar/estados-unidos/clima/2026/11/05/como-estara-el-clima-en-new-york-este-jueves-5-de-noviembre/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ05mky4GBQS-chNfGOyZgs3Juu6LloASaWFiQoFsx8Scyo0KMQVcJIx5FyzRw",
-      "image_credit": "Univision",
-      "news": [
-        {
-          "url": "https://www.univision.com/noticias/clima-de-hoy-y-manana-en-eeuu-un-frente-arrastrara-lluvias-hacia-el-este-y-sureste-del-pais-video",
-          "title": "Clima de hoy y para los próximos días en EEUU: Un frente arrastrará lluvias hacia el este y sureste del país",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ05mky4GBQS-chNfGOyZgs3Juu6LloASaWFiQoFsx8Scyo0KMQVcJIx5FyzRw"
-        },
-        {
-          "url": "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-syracuse-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-5-de-noviembre-nid05112026/",
-          "title": "Clima en Syracuse, New York hoy: cuál es el pronóstico del tiempo para hoy 5 de noviembre",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA"
-        },
-        {
-          "url": "https://tn.com.ar/estados-unidos/clima/2026/11/05/como-estara-el-clima-en-new-york-este-jueves-5-de-noviembre/",
-          "title": "¿Cómo estará el clima en New York este jueves 5 de noviembre?",
-          "publisher": "TN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwbCypP87lX-XPlftKnvuA3Hhuh6d0Nr32Bab0XdTrZUBZPWuwTiXbmi7hwkc"
-        }
-      ]
-    },
-    {
-      "query": "alexandra eala",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T11:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
-        "https://sports.inquirer.net/705074/alex-eala-battles-czech-tereza-valentova-in-hong-kong-open-last-16",
-        "https://www.tennisworldusa.org/tennis/news/Tennis_Stories/171190/alexandra-eala-laughs-off-tiredness-claims-after-reaching-new-careerhigh-ranking/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkStoz7ECXfIvVdc0oyU0TbFXuEw-qjRx99tfXd_tLPaqlb7qDR0HlDKpRUCo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuJSjArcSeFF_5cUGnsl79ZvdqaM9AoTtE_5HicPfKXVbBDY-XP6FGpuXR038",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
-          "title": "Alex Eala brushes aside late replacement Emerson Jones to reach Hong Kong Open round of 16",
+          "url": "https://www.espn.com/tennis/story/_/id/50353478/ben-shelton-adds-coach-juan-carlos-ferrero-2027-staff",
+          "title": "Ben Shelton adds coach Juan Carlos Ferrero to 2027 staff",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkStoz7ECXfIvVdc0oyU0TbFXuEw-qjRx99tfXd_tLPaqlb7qDR0HlDKpRUCo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuJSjArcSeFF_5cUGnsl79ZvdqaM9AoTtE_5HicPfKXVbBDY-XP6FGpuXR038"
         },
         {
-          "url": "https://sports.inquirer.net/705074/alex-eala-battles-czech-tereza-valentova-in-hong-kong-open-last-16",
-          "title": "Alex Eala battles Czech Tereza Valentova in Hong Kong Open last 16",
-          "publisher": "Inquirer.net",
+          "url": "https://www.si.com/tennis/tennis-mailbag-will-ben-shelton-juan-carlos-ferrero-perfect-match",
+          "title": "Tennis Mailbag: Will Ben Shelton and Juan Carlos Ferrero Be a Perfect Match?",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT1f0aXiOL7AxbHH2SsZlasfcgr6apoxGP7uCYiVKmeUqg6p-7kzYr3MmvXi4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7nz8fF9yxV1QpNYZDe-qq3QArARIdkqJv8Wfkk640TqdSG0TZKWtQ3WR8VE"
         },
         {
-          "url": "https://www.tennisworldusa.org/tennis/news/Tennis_Stories/171190/alexandra-eala-laughs-off-tiredness-claims-after-reaching-new-careerhigh-ranking/",
-          "title": "Alexandra Eala laughs off tiredness claims after reaching new career-high ranking",
-          "publisher": "Tennis World USA",
+          "url": "https://www.bbc.com/sport/tennis/articles/crz654jdzdqpo",
+          "title": "Juan Carlos Ferrero: Ben Shelton appoints Carlos Alcaraz's former coach - will it work?",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPqKuvOvkIn6kMOYsSY5hqn_rIsHUkerpt-VwwfnuXLsXo_CoZQwGg-0gyjNo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl5x0Km4IoOTTscPGQcGnaVNfB1rR_hHHlj-oNNd4GbYCTXOpQzpRZb_fi7Bo"
         }
       ]
     },
     {
-      "query": "arby's",
+      "query": "weather philadelphia",
       "approx_searches": "200+",
-      "published_at": "2026-11-05T11:30:00Z",
+      "published_at": "2026-11-05T12:10:00Z",
       "related_news_urls": [
-        "https://www.mashed.com/2291578/ordering-tips-best-arbys-curly-fries/",
-        "https://www.kansascity.com/news/business/openings-closings/article317928080.html"
+        "https://www.nbcphiladelphia.com/weather/stories-weather/rain-returns-after-17-days/4491679/",
+        "https://www.wgal.com/article/rain-returns-tonight-lingers-into-thursday/74336415",
+        "https://www.cbsnews.com/philadelphia/video/how-much-rain-will-philadelphia-see-thursday-when-18-day-dry-stretch-ends/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUn9HEcCRu7k_m4j9fVkjmr1ikGEdWWfCtepk_BtfWNxqGms8OHMMaIQeYqQ0",
-      "image_credit": "Mashed",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNiiUmPyP0BR4pMF8r6DIlVZdRf4gVabBSN6kIaNAX7_QBFp4O2_NL4FjuGyM",
+      "image_credit": "NBC10 Philadelphia",
       "news": [
         {
-          "url": "https://www.mashed.com/2291578/ordering-tips-best-arbys-curly-fries/",
-          "title": "5 Ordering Tips For The Best Arby's Curly Fries",
-          "publisher": "Mashed",
+          "url": "https://www.nbcphiladelphia.com/weather/stories-weather/rain-returns-after-17-days/4491679/",
+          "title": "Rain to return to Philly region after 17 days",
+          "publisher": "NBC10 Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUn9HEcCRu7k_m4j9fVkjmr1ikGEdWWfCtepk_BtfWNxqGms8OHMMaIQeYqQ0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNiiUmPyP0BR4pMF8r6DIlVZdRf4gVabBSN6kIaNAX7_QBFp4O2_NL4FjuGyM"
         },
         {
-          "url": "https://www.kansascity.com/news/business/openings-closings/article317928080.html",
-          "title": "Fast-food chain has closed two Johnson County restaurants. More remain open",
-          "publisher": "Kansas City Star",
+          "url": "https://www.wgal.com/article/rain-returns-tonight-lingers-into-thursday/74336415",
+          "title": "Rain returns tonight, lingers into Thursday",
+          "publisher": "WGAL",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzphesXP6EN-m-napSaTIgPnxFEPuErh_54yKv6uZFe6gkoEcMRMk8erhTEmE"
-        }
-      ]
-    },
-    {
-      "query": "погода",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T11:30:00Z",
-      "related_news_urls": [
-        "https://www.rosbalt.ru/news/2026-11-05/takogo-v-noyabre-ne-zhdali-peterburg-nakroet-anomalnoe-teplo-5724703",
-        "https://www.fontanka.ru/2026/11/05/76745446/",
-        "https://pogoda.mail.ru/news/72970974/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_DZIOXuwaTpCaDChovkBf8DvrMjBsnij9pKDt_xBRRvBSPeBG4v3f9AmA53s",
-      "image_credit": "Росбалт",
-      "news": [
-        {
-          "url": "https://www.rosbalt.ru/news/2026-11-05/takogo-v-noyabre-ne-zhdali-peterburg-nakroet-anomalnoe-teplo-5724703",
-          "title": "Такого в ноябре не ждали: Петербург накроет аномальное тепло",
-          "publisher": "Росбалт",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_DZIOXuwaTpCaDChovkBf8DvrMjBsnij9pKDt_xBRRvBSPeBG4v3f9AmA53s"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNwF87EST6Rj3_U8lBrk32c0kFDXrD6NBh6QYg2oSrWWvp_fslDC8f1TSb-8"
         },
         {
-          "url": "https://www.fontanka.ru/2026/11/05/76745446/",
-          "title": "Новое похолодание начинается. Но есть и хорошая новость",
-          "publisher": "ФОНТАНКА.ру",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCnpEQYXbbfhORy1676wziZSHOLXyoTfLBjyKA06LVZRX7NJ09VIdhDHxV7dQ"
-        },
-        {
-          "url": "https://pogoda.mail.ru/news/72970974/",
-          "title": "Температура в Петербурге впервые за осень опустилась ниже нуля",
-          "publisher": "Погода Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcOcvebgYQ2RH82IijyN-seEND21u_Y9V7OJ9txdwLXA5c1B-GG2OJOC-xy7c"
-        }
-      ]
-    },
-    {
-      "query": "weather nyc",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T11:30:00Z",
-      "related_news_urls": [
-        "https://www.wcvb.com/article/video-friday-rain-then-a-cooler-weekend-1793875227/74343124",
-        "https://www.cbsnews.com/newyork/video/showers-around-nyc-today-with-heavy-rain-coming/",
-        "https://whdh.com/weather-blog/it-all-comes-to-an-end/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3vGZQDH_Xzcka9AMQzfrSqqhAza4TVLnc00ekX3aJOoNRoLNCLKEjDrtUE9I",
-      "image_credit": "WCVB",
-      "news": [
-        {
-          "url": "https://www.wcvb.com/article/video-friday-rain-then-a-cooler-weekend-1793875227/74343124",
-          "title": "Video: Friday rain, then a cooler weekend",
-          "publisher": "WCVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3vGZQDH_Xzcka9AMQzfrSqqhAza4TVLnc00ekX3aJOoNRoLNCLKEjDrtUE9I"
-        },
-        {
-          "url": "https://www.cbsnews.com/newyork/video/showers-around-nyc-today-with-heavy-rain-coming/",
-          "title": "Showers around NYC today with heavy rain coming",
+          "url": "https://www.cbsnews.com/philadelphia/video/how-much-rain-will-philadelphia-see-thursday-when-18-day-dry-stretch-ends/",
+          "title": "How much rain will Philadelphia see Thursday when 18-day dry stretch ends?",
           "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJOE2rDIFAn_yByMukzaeStNL-Bmldyto0YTGNeNCqzAe3vz4TwLY5N-aOnWs"
-        },
-        {
-          "url": "https://whdh.com/weather-blog/it-all-comes-to-an-end/",
-          "title": "It all comes to an end",
-          "publisher": "WHDH",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe1KBiOohf-tTncADOXkp_9zv5Ii0aGUqnobzgEDGi8e3doseCvA4QLbcrlHA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGbFTgOSBn9LeTg-wWAc2VEHUlUARhtwjxiJKy2FLu4mBignY2MvNszf5yyac"
         }
       ]
     },
     {
-      "query": "天气",
+      "query": "red cup day",
       "approx_searches": "200+",
-      "published_at": "2026-11-05T11:30:00Z",
+      "published_at": "2026-11-05T12:10:00Z",
       "related_news_urls": [
-        "https://www.epochtimes.com/gb/26/11/5/n14883257.htm",
-        "https://news.ifeng.com/c/8xmXJFiQ5tW",
-        "https://news.online.sh.cn/news/gb/content/2026-11/05/content_10501222.htm"
+        "https://www.yahoo.com/lifestyle/articles/starbucks-red-cup-day-2026-172738102.html",
+        "https://about.starbucks.com/stories/2026/discover-starbucks-2026-holiday-merchandise-in-coffeehouses-starting-nov-5/",
+        "https://www.usatoday.com/story/money/food/2026/11/05/starbucks-holiday-menu-thursday/92611603007/"
       ],
-      "image_url": null,
-      "image_credit": "大紀元",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQksCSeBY-3dOJJdXsL9Mxf5ICOgi1LwG-jHT3lBIAmFrGatVX5o3W49f7Qn_A",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.epochtimes.com/gb/26/11/5/n14883257.htm",
-          "title": "天氣預報：紐約週末前或有雨",
-          "publisher": "大紀元",
+          "url": "https://www.yahoo.com/lifestyle/articles/starbucks-red-cup-day-2026-172738102.html",
+          "title": "Starbucks Red Cup Day 2026: Everything to Know to Snag the Freebie",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQksCSeBY-3dOJJdXsL9Mxf5ICOgi1LwG-jHT3lBIAmFrGatVX5o3W49f7Qn_A"
         },
         {
-          "url": "https://news.ifeng.com/c/8xmXJFiQ5tW",
-          "title": "iPhone天气应用出现多地-32℃异常数据，气象部门回应",
-          "publisher": "凤凰网",
+          "url": "https://about.starbucks.com/stories/2026/discover-starbucks-2026-holiday-merchandise-in-coffeehouses-starting-nov-5/",
+          "title": "Discover Starbucks 2026 holiday merchandise in coffeehouses starting Nov. 5",
+          "publisher": "Starbucks",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlWm2QZ5-QvPWUqWxvR7sDGzGTKHTTjkmoK2ORuicXPYySEwHp8izusIWWjeU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW4ZUU4CM1XsKRgwFT4b2hhugrBG1bSt_KqowRFa8IybDdXzMe1ouxJz6WN0"
         },
         {
-          "url": "https://news.online.sh.cn/news/gb/content/2026-11/05/content_10501222.htm",
-          "title": "多地-32℃？ APP显示天气预报“离大谱”",
-          "publisher": "上海热线",
+          "url": "https://www.usatoday.com/story/money/food/2026/11/05/starbucks-holiday-menu-thursday/92611603007/",
+          "title": "Starbucks' holiday menu releases Thursday. See festive drinks, food",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtgITD1TjihHeEjYLFIFfBFXvTvwU79I0szyPA_mY2H9_DkIhRo5hbCj70PPA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGFPgdqytX9SObrBQH1d0i7N_XngLaB2NNy8VNibV5WpTzI2WnLAH2vhiSvKk"
         }
       ]
     },
     {
-      "query": "날씨",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T11:30:00Z",
+      "query": "marlon",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T12:10:00Z",
       "related_news_urls": [
-        "https://www.koreadaily.com/article/20261104192951678",
-        "https://www.chosun.com/national/transport-environment/2026/11/05/7NPT6KECUBGV3NFKP4SOOQF5AI/",
-        "https://imnews.imbc.com/replay/2026/nw1700/article/6863467_36981.html"
+        "https://www.baltimoresun.com/2026/11/04/ravens-marlon-humphrey-fans-always-freaking-out/",
+        "https://heavy.com/sports/nfl/baltimore-ravens/marlon-humphrey-mockery-jesse-minter-mantra/",
+        "https://www.5newsonline.com/video/sports/locked-on/lo-baltimore/locked-on-ravens-hit/marlon-humphrey-doubles-down-on-controversial-comments-admits-embarrassing-baltimore-ravens-play/535-079b90ec-09a3-483a-977c-89abca3e3089"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnRjN_Q2ownBFchRJKt8nMMh1PHsltqMvy10aX9oHYxiGZ2jIBTsIFD5hmLRI",
-      "image_credit": "미주중앙일보",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNzFJ6gyf63jvGYhHxHdtsuE-lpIKMbfMzJzWnJbKYqv9cTsJyW7131TIi1KE",
+      "image_credit": "Baltimore Sun",
       "news": [
         {
-          "url": "https://www.koreadaily.com/article/20261104192951678",
-          "title": "[포토타임] 입동 앞두고 전국 가을비... 기상청 ‘비 그친 뒤 춥다’",
-          "publisher": "미주중앙일보",
+          "url": "https://www.baltimoresun.com/2026/11/04/ravens-marlon-humphrey-fans-always-freaking-out/",
+          "title": "Ravens’ Marlon Humphrey questions criticism, says fans ‘always freaking out’",
+          "publisher": "Baltimore Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnRjN_Q2ownBFchRJKt8nMMh1PHsltqMvy10aX9oHYxiGZ2jIBTsIFD5hmLRI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNzFJ6gyf63jvGYhHxHdtsuE-lpIKMbfMzJzWnJbKYqv9cTsJyW7131TIi1KE"
         },
         {
-          "url": "https://www.chosun.com/national/transport-environment/2026/11/05/7NPT6KECUBGV3NFKP4SOOQF5AI/",
-          "title": "초겨울 문턱 넘는 한반도...주말 서울 올가을 첫 영하권",
-          "publisher": "조선일보",
+          "url": "https://heavy.com/sports/nfl/baltimore-ravens/marlon-humphrey-mockery-jesse-minter-mantra/",
+          "title": "Ravens’ All-Pro Called Out After ‘Mockery’ of Jesse Minter’s Mantra",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqDSY272DBkZYXiGHgGJEZpdQceVuINbFDEuOJSTvc-_xuNoHnITxfxf5cvpI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD7fRq7itvgskg1T5Aok2bmFlFPho23O8bTvNMoGSAu1ctQWUVHZIWPLhlzN4"
         },
         {
-          "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6863467_36981.html",
-          "title": "내일 전국 맑고 쌀쌀‥오늘보다 5~8도 '뚝'",
-          "publisher": "MBC 뉴스",
+          "url": "https://www.5newsonline.com/video/sports/locked-on/lo-baltimore/locked-on-ravens-hit/marlon-humphrey-doubles-down-on-controversial-comments-admits-embarrassing-baltimore-ravens-play/535-079b90ec-09a3-483a-977c-89abca3e3089",
+          "title": "Marlon Humphrey DOUBLES DOWN on CONTROVERSIAL comments, admits EMBARRASSING Baltimore Ravens play",
+          "publisher": "5newsonline.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6As06WSZkadcsHzDK2WIeJIPelD0IeVtPGTsBwuhcfyJC1mY3zjlKT6AFg2g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8oJD1N8BLh_jHYLAdmEb_OM-rjWAIDWYqyj6CLaaZjmclA3JPGGsFwR54GWQ"
+        }
+      ]
+    },
+    {
+      "query": "dc weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T12:00:00Z",
+      "related_news_urls": [
+        "https://www.fox5dc.com/weather/dc-weather-scattered-showers-warm-temperatures-near-75-degrees-thursday",
+        "https://www.capitalweather.com/live/?live_target=dc-area-forecast-bright-skies-and-splendid-70s-before-late-week-rain-chances/",
+        "https://www.wusa9.com/article/weather/forecast/dc-forecast-midweek-warmup-showers-return-to-cap-off-the-week/65-46717fed-325e-489c-bcfd-e0b0426e7aca"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZhK2If40MCOVfuw_1GyinEh2VUI1gAAgYcZr-4_EaBTnl9_dDtezAJkBlS60",
+      "image_credit": "FOX 5 DC",
+      "news": [
+        {
+          "url": "https://www.fox5dc.com/weather/dc-weather-scattered-showers-warm-temperatures-near-75-degrees-thursday",
+          "title": "DC weather: Scattered showers, warm temperatures near 75 degrees Thursday",
+          "publisher": "FOX 5 DC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZhK2If40MCOVfuw_1GyinEh2VUI1gAAgYcZr-4_EaBTnl9_dDtezAJkBlS60"
+        },
+        {
+          "url": "https://www.capitalweather.com/live/?live_target=dc-area-forecast-bright-skies-and-splendid-70s-before-late-week-rain-chances/",
+          "title": "Capital Weather Live Updates",
+          "publisher": "Capital Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwggp4xBMCQLexcyq1HL9HWrK9ocUyBIr9qm_jr8ALTfDInFxmWNnaK84WiNU"
+        },
+        {
+          "url": "https://www.wusa9.com/article/weather/forecast/dc-forecast-midweek-warmup-showers-return-to-cap-off-the-week/65-46717fed-325e-489c-bcfd-e0b0426e7aca",
+          "title": "DC Forecast | Sunshine returns in time for the weekend",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnsajzP1sRqBQqNtZW5fYQv7yBcvwujIijAjEIoyWJukPfCwdEgw22WY2Azxc"
+        }
+      ]
+    },
+    {
+      "query": "sacred heart shooting",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T12:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/us/four-dead-including-washington-deputy-following-domestic-call-shooting-another-deputy-life-support",
+        "https://www.kxly.com/news/investigators-work-to-get-details-on-south-spokane-county-shooting-that-resulted-in-4-people/article_c7f9603c-57c6-4881-88af-3d829768d4db.html",
+        "https://www.cbsnews.com/news/3-dead-including-suspect-2-deputies-critically-injured-shooting-washington/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpL0O3jkgi7F8ZrQUgA51_PZt4XFW6K0TpPkb1UBjh2wBYvjX4vxIwWjvpQAA",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/us/four-dead-including-washington-deputy-following-domestic-call-shooting-another-deputy-life-support",
+          "title": "Four dead, including Washington deputy, following domestic call shooting; another deputy on life support",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpL0O3jkgi7F8ZrQUgA51_PZt4XFW6K0TpPkb1UBjh2wBYvjX4vxIwWjvpQAA"
+        },
+        {
+          "url": "https://www.kxly.com/news/investigators-work-to-get-details-on-south-spokane-county-shooting-that-resulted-in-4-people/article_c7f9603c-57c6-4881-88af-3d829768d4db.html",
+          "title": "Investigators work to get details on south Spokane County shooting that resulted in 4 people dead; house taped off for more than 24 hours",
+          "publisher": "KXLY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwQlj388t_UYsY85cA7H0xo4aumqOs9tlDMUm8cyqq_4TKiMi3MQpO-WCwDKY"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/3-dead-including-suspect-2-deputies-critically-injured-shooting-washington/",
+          "title": "3 dead, including suspect, and 2 deputies critically injured in Washington state shooting",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbnoLSm0xZWU-GjwvICgi9dw1P7y3c3smPZgA4Ee24ULgvvOowIz4S01XUTlY"
+        }
+      ]
+    },
+    {
+      "query": "randall woodfin",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T12:00:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/01/us/alabama-college-football-game-shooting",
+        "https://www.wbrc.com/2026/11/03/17-year-old-charged-with-murder-death-19-year-old-after-magic-city-classic/",
+        "https://abc3340.com/news/local/17-year-old-charged-in-legion-field-shooting-that-killed-19-year-old"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkEeYjssikI1HMBu22gB1A2SBE3fbMZx_LKNeBBqGKzjE9P9EdT3h_0vHcPNQ",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/01/us/alabama-college-football-game-shooting",
+          "title": "1 dead, 8 injured in pair of shootings after college football game in Alabama",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkEeYjssikI1HMBu22gB1A2SBE3fbMZx_LKNeBBqGKzjE9P9EdT3h_0vHcPNQ"
+        },
+        {
+          "url": "https://www.wbrc.com/2026/11/03/17-year-old-charged-with-murder-death-19-year-old-after-magic-city-classic/",
+          "title": "17-year-old charged with murder in death of 19-year-old after Magic City Classic",
+          "publisher": "WBRC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjEZtbtCu6zrBQPl0cIzB29K3qQUbK0a9dnAS6RzVWVzxulZDWHjt05j2OwFo"
+        },
+        {
+          "url": "https://abc3340.com/news/local/17-year-old-charged-in-legion-field-shooting-that-killed-19-year-old",
+          "title": "17-year-old charged in Legion Field shooting that killed 19-year-old",
+          "publisher": "WBMA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNy-n9CnRgaJyg-pU3Q_0bXRneOKA2gPU-7BcgWWS45wbVQM8x6RLcs4OIFbo"
+        }
+      ]
+    },
+    {
+      "query": "forecast",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T12:00:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/business/earnings/bombardier-raises-free-2026-cash-flow-outlook-as-profit-slips-847b5393",
+        "https://kfgo.com/2026/11/05/bombardier-raises-2026-free-cash-flow-forecast-on-strong-private-jet-demand/",
+        "https://www.marketbeat.com/instant-alerts/upcoming-bombardier-bdrbf-expected-to-post-earnings-on-thursday-2026-10-29/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThxZ8kja2W_ZU32kMjLQNMOoGIAmFKzvWSwDc_0iHJ_fc2ZYqHp0_Fz_fgJKI",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/business/earnings/bombardier-raises-free-2026-cash-flow-outlook-as-profit-slips-847b5393",
+          "title": "Bombardier Raises Free 2026 Cash Flow Outlook as Profit Slips",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThxZ8kja2W_ZU32kMjLQNMOoGIAmFKzvWSwDc_0iHJ_fc2ZYqHp0_Fz_fgJKI"
+        },
+        {
+          "url": "https://kfgo.com/2026/11/05/bombardier-raises-2026-free-cash-flow-forecast-on-strong-private-jet-demand/",
+          "title": "Bombardier raises 2026 free cash flow forecast on strong private jet demand",
+          "publisher": "The Mighty 790 KFGO",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYwpQQsehkqcBlwb7xJthokquFHhZzPazcDZLL1ziTWXGLUahQHD0BL_T1loU"
+        },
+        {
+          "url": "https://www.marketbeat.com/instant-alerts/upcoming-bombardier-bdrbf-expected-to-post-earnings-on-thursday-2026-10-29/",
+          "title": "Bombardier (BDRBF) Expected to Post Earnings on Thursday",
+          "publisher": "MarketBeat",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmrRJnB9dJwDyo96dISbZnoTR7VBGGPqJ_egJLUKxXxv-hwYN-PO0OLYSJ7us"
+        }
+      ]
+    },
+    {
+      "query": "stephen redic",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T12:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/us/michael-ruiz-video-shows-polling-place-attack-turning-point-member-poet-arrested",
+        "https://www.wmur.com/article/man-assault-turning-point-arrest/74333117",
+        "https://indepthnh.org/2026/11/04/turning-point-charlie-kirks-movement-makes-a-splash-to-little-effect/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrVAq2Z2asn6_WB1ADLVxM7s3FSkCMekSjApaPTdOO5lSb46c32szDs8xusE0",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/us/michael-ruiz-video-shows-polling-place-attack-turning-point-member-poet-arrested",
+          "title": "MICHAEL RUIZ: Video shows polling place attack on Turning Point member; poet arrested",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrVAq2Z2asn6_WB1ADLVxM7s3FSkCMekSjApaPTdOO5lSb46c32szDs8xusE0"
+        },
+        {
+          "url": "https://www.wmur.com/article/man-assault-turning-point-arrest/74333117",
+          "title": "70-year-old man accused of assaulting Turning Point member at NH polling site",
+          "publisher": "WMUR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFzxL_rSV-IJGUSxGdye6n4sX4YDJ9e1Q81nk4hnxu2HEp8UcrfRPMHeGz"
+        },
+        {
+          "url": "https://indepthnh.org/2026/11/04/turning-point-charlie-kirks-movement-makes-a-splash-to-little-effect/",
+          "title": "Turning Point: Charlie Kirk’s Movement Makes a Splash – to Little Effect",
+          "publisher": "InDepthNH.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl44phpAPdHucdw2z40wCXHzs68fPDCl4Oxm5O8DsCs6Ow01eO0j-VlFqJXB0"
         }
       ]
     }
