@@ -3462,7 +3462,7 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
     await new Promise(resolve=>setTimeout(resolve,i<8?2000:5000));
     let result;
     try{result=await githubReceipt(requestId);}catch{continue;}
-    publishSavedGithubIterations(result,receiptThread);
+    if(typeof publishSavedGithubIterations==='function')publishSavedGithubIterations(result,receiptThread);
     if(result.status==='working'||result.error==='receipt_not_found')continue;
     const pendingBits=(result.receipts||[]).some(item=>item.bit?.status==='pending');
     if(!pendingBits)clearPendingGithubWork(requestId);
@@ -3553,9 +3553,9 @@ async function directGithubOperation(operation,{quiet=false,ownerRequest='',imag
  let result;
  try{
   const response=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
-   body:JSON.stringify({...operation,requestId,sessionId:receiptThread,...(currentBitContext?.sessionId===receiptThread?{bitContext:currentBitContext}:{})})},18000);
+   body:JSON.stringify({...operation,requestId,sessionId:receiptThread,...(typeof currentBitContext!=='undefined'&&currentBitContext?.sessionId===receiptThread?{bitContext:currentBitContext}:{})})},18000);
   result=await response.json();
-  publishSavedGithubIterations(result,receiptThread);
+  if(typeof publishSavedGithubIterations==='function')publishSavedGithubIterations(result,receiptThread);
   if(!response.ok){
    if(typeof publishDirectGithubIteration==='function')
     publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);

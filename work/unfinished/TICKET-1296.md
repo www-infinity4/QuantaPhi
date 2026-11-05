@@ -97,3 +97,8 @@ Owner's heartbeat metaphor mapped to the existing Bubbles/Brain signal: a pulse 
 - Local verification: 186/186 focused Brain, chat, identity, wallet and receipt tests passed, including actual SQLite credit replay/isolation and real Brain execution with an unavailable/recovered fixture wallet. This is source evidence; fixture credits are not live credits.
 - State: source_tested / review_pending, YELLOW; overall progress_percent and remaining sessions unknown because production acceptance is outstanding. merged/deployed/live_verified are false for this new handoff.
 - Next action: exact-head CI and independent review of the receipt/recipient boundary, then staged wallet+Brain rollout with the flags OFF, reviewed enablement and one authenticated customer chat↔wallet readback.
+
+
+## Session 7 exact-head CI correction
+
+GitHub Bubbles unified run 41947949854 reproduced a standalone WebView adapter regression: the newly optional context projection could reference an absent module variable before submitting the actual request. Added typeof guards for the context and saved-iteration observer, preserving request execution and original-receipt timeout recovery when optional UI modules are absent. The same existing WebView regression is rerun before the correction commit; financial enablement stays OFF.
