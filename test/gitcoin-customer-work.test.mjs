@@ -91,7 +91,7 @@ test('D1 writer receives only server-verified line plans and no website-supplied
  assert.ok(calls.some(x=>x.sql.includes('INSERT OR IGNORE INTO gitcoin_customer_award_links')));
  assert.ok(!calls.some(x=>/UPDATE\s+unified_wallet/i.test(x.sql)));
  const schema=readFileSync('gitcoin/customer-contract-schema.sql','utf8');
- assert.match(schema,/PRIMARY KEY \(receipt_id\)/);
+ assert.match(schema,/receipt_id TEXT NOT NULL PRIMARY KEY/);
  assert.match(schema,/acceptance_receipt_id/);
 });
 test('missing database never claims to have minted a spendable credit',async()=>{
