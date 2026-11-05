@@ -7,6 +7,10 @@ on:
       - 'test/coliseum-api.test.mjs'
       - 'test/coliseum*'
       - 'test/zeus-session-history.test.mjs'
+      - 'test/zeus-live-chat-contract.test.mjs'
+      - 'test/zeus-quest-browser.spec.mjs'
+      - 'playwright.zeus-quest.config.mjs'
+      - 'bubbles-ai.js'
       - 'test/zeus-session-history-browser.spec.mjs'
       - 'playwright.zeus-session-history.config.mjs'
       - 'oracle-card-deck.js'
@@ -27,6 +31,8 @@ jobs:
         run: |
           node --check coliseum/coliseum-core.mjs
           node --check coliseum/coliseum.js
+          node --check bubbles-ai.js
+          node --check test/zeus-quest-browser.spec.mjs
           node --check coliseum/zeus-quick-card.mjs
           node --check coliseum/room-api-core.mjs
           node --check coliseum/coliseum-live.mjs
@@ -34,7 +40,7 @@ jobs:
           node --check coliseum/session-history.mjs
           node --check test/zeus-session-history-browser.spec.mjs
           node --check workers/coliseum/worker.mjs
-          node --test test/coliseum.test.mjs test/coliseum-api.test.mjs test/zeus-session-history.test.mjs
+          node --test test/coliseum.test.mjs test/coliseum-api.test.mjs test/zeus-session-history.test.mjs test/zeus-live-chat-contract.test.mjs
       - name: Verify prototype has no fabricated live subscription routes
         run: |
           test -f coliseum/index.html
@@ -55,4 +61,6 @@ jobs:
           npm install --no-save @playwright/test@1.56.1
           npx playwright install --with-deps chromium
       - name: Verify Zeus history on Android-sized layouts and session state controls
-        run: npx playwright test --config=playwright.zeus-session-history.config.mjs --reporter=line
+        run: |
+          npx playwright test --config=playwright.zeus-session-history.config.mjs --reporter=line
+          npx playwright test --config=playwright.zeus-quest.config.mjs --reporter=line

@@ -88,11 +88,98 @@ function renderChat(){
   const div=node('div','chat-note');div.append(node('small','You · '+formatDate(note.createdAt)),node('p','',note.text));root.append(div);
  }
 }
+// Open the existing Bubbles chat once, inside Zeus' actual Chat tab.
+// The iframe never receives wallet credentials, owner powers or fake replies.
+let zeusAssistantStarted=false,zeusAssistantReady=false,questPending=null,questLastAttempt=null;
+function mountZeusAssistant(){
+ if(zeusAssistantStarted)return;
+ const iframe=el('zeusAssistantFrame'),status=el('zeusAssistantStatus');
+ if(!iframe||!status)return;
+ zeusAssistantStarted=true;
+ const id='coliseum-zeus-assistant';
+ const query=new URLSearchParams({embed:'1',id,role:'builder',name:'Zeus AI',
+  instructions:'You are Zeus AI, the Infinity Coliseum builder, using the existing Bubbles assistant service. Give useful answers, identify tool limitations honestly, and ask before publishing, charging or running owner jobs.'});
+ iframe.addEventListener('load',()=>{
+  zeusAssistantReady=true;
+  iframe.contentWindow?.postMessage({type:'quantaphi:bubbles:open',id},window.location.origin);
+  status.textContent='Bubbles conversation is open. Send a question to test the connected AI service.';
+  deliverQuest();
+ });
+ iframe.addEventListener('error',()=>{
+  zeusAssistantReady=false;
+  status.textContent='Bubbles chat could not load. Use the full Bubbles chat link below.';
+  el('zeusQuestStatus').textContent='Chat unavailable. Your question is still in the textbox.';
+  el('zeusQuestSend').disabled=false;
+  questPending=null;
+ });
+ iframe.src='/bubbles.html?'+query.toString();
+}
+// The top-page Send is a user-initiated handoff to the SAME Bubbles AI conversation.
+ // A request ID prevents lost-ack retries from duplicating a question.
+function deliverQuest(){
+ if(!zeusAssistantReady||!questPending||questPending.dispatched)return;
+ const iframe=el('zeusAssistantFrame');
+ questPending.dispatched=true;
+ iframe.contentWindow?.postMessage({
+  type:'quantaphi:bubbles:quest',id:'coliseum-zeus-assistant',
+  requestId:questPending.requestId,prompt:questPending.text
+ },window.location.origin);
+}
+const questForm=el('zeusQuestForm'),questInput=el('zeusQuestInput'),
+ questSend=el('zeusQuestSend'),questStatus=el('zeusQuestStatus');
+questInput.addEventListener('keydown',event=>{
+ if(event.key==='Enter'&&!event.shiftKey&&!event.isComposing){
+  event.preventDefault();questForm.requestSubmit();
+ }
+});
+questForm.addEventListener('submit',event=>{
+ event.preventDefault();
+ const text=questInput.value.trim();
+ if(!text||text.length>1800||questPending)return;
+ setMode('chat');
+ const requestId=questLastAttempt?.text===text?questLastAttempt.requestId:
+  'quest_'+crypto.randomUUID();
+ const pending={requestId,text,dispatched:false};
+ questPending=pending;questLastAttempt={requestId,text};
+ questSend.disabled=true;
+ questStatus.textContent=zeusAssistantReady?
+  'Sending your question into the Bubbles conversation…':
+  'Connecting to Bubbles. Your question stays here until accepted.';
+ deliverQuest();
+ // No automatic repeat: a missing acknowledgement leaves the user's text intact.
+ setTimeout(()=>{
+  if(questPending!==pending)return;
+  questPending=null;questSend.disabled=false;
+  questStatus.textContent='No acknowledgment from Bubbles. Your question is still here; press Send to retry.';
+ },12000);
+});
+window.addEventListener('message',event=>{
+ const iframe=el('zeusAssistantFrame'),data=event.data;
+ if(event.origin!==window.location.origin||event.source!==iframe?.contentWindow||
+  !questPending||data?.type!=='quantaphi:bubbles:quest-ack'||
+  data.id!=='coliseum-zeus-assistant'||data.requestId!==questPending.requestId)return;
+ const accepted=data.status==='accepted';
+ if(accepted){
+  // User might have started typing a second message after pressing Send.
+  if(questInput.value.trim()===questPending.text)questInput.value='';
+  questLastAttempt=null;
+  questStatus.textContent='Question accepted by Bubbles. The AI reply appears in the conversation below.';
+  el('zeusAssistantMount')?.scrollIntoView?.({block:'start',behavior:'smooth'});
+ }else{
+  if(data.status==='busy')questLastAttempt=null;
+  questStatus.textContent=data.status==='busy'?
+   'Bubbles is working on another reply. Your text is saved here; send it again when ready.':
+   'Bubbles did not accept this question. Your text remains here to retry.';
+ }
+ questPending=null;questSend.disabled=false;
+});
 function setMode(next){
+ document.body.dataset.zeusMode=next;
  el('chatPane').hidden=next!=='chat';el('buildPane').hidden=next!=='build';
+ if(next==='chat')mountZeusAssistant();
  el('chatTab').setAttribute('aria-pressed',String(next==='chat'));
  el('buildTab').setAttribute('aria-pressed',String(next==='build'));
- notify((next==='chat'?'Chat':'Build')+' mode is a private prototype; no people or AI providers are connected.');
+ notify(next==='chat'?'Zeus chat uses Bubbles AI. Send a message to check live responses.':'Build mode keeps project drafts on your device; shared rooms are still a prototype.');
 }
 el('pitchForm').addEventListener('submit',event=>{
  event.preventDefault();
@@ -121,4 +208,4 @@ el('resetDemo').addEventListener('click',()=>{
  if(!confirm('Clear local Coliseum ideas, votes and notes from this browser?'))return;
  store={ideas:[],notes:[],votes:{}};write();renderIdeas();renderChat();notify('Local demo cleared. No wallet or cloud account was changed.');
 });
-renderModels();renderRooms();renderSectors();renderIdeas();renderChat();setMode('build');
+renderModels();renderRooms();renderSectors();renderIdeas();renderChat();setMode('chat');
