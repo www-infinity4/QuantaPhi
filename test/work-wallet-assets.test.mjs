@@ -18,6 +18,7 @@ function ledger(){
 
 test('GIT balance reads only actual awards and separates pending claims per wallet',async()=>{
  const env=ledger();
+ env.GIT_DB=env.DB;
  assert.equal((await readGitAsset(env,'owner')).status,'ledger_unavailable');
  env.sql.exec(`CREATE TABLE gitcoin_awards(wallet_id TEXT,amount INTEGER);
   CREATE TABLE gitcoin_line_claims(recipient_wallet_id TEXT,status TEXT);

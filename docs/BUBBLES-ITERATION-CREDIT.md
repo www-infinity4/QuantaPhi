@@ -17,7 +17,7 @@ If the flag, schema or service is unavailable, the UI reports the ledger unavail
 
 ## Unified Wallet work assets
 
-The authenticated wallet state reads GIT awards and pending claims using the account's linked ledger wallet ID. It reads settled Bubble Bits using the account ID. Pending wallet delivery and missing ledgers remain distinct from confirmed holdings.
+The authenticated wallet state reads GIT awards and pending claims from the separate `GIT_DB` binding using the account's linked ledger wallet ID. It reads settled Bubble Bits using the account ID. Pending wallet delivery and missing ledgers remain distinct from confirmed holdings.
 
 GPT Coin uses the `GPT_COIN` wallet code. The optional provider import accepts a JSON object with `receipt` and base64url `signature`. Configure `GPT_COIN_ISSUER` and the issuer's raw Ed25519 public key in `GPT_COIN_ISSUER_PUBLIC_KEY` only for an authorized provider. The signed UTF-8 JSON array is `["quantaphi:gpt-coin:v1", issuer, receiptId, recipient, amount, issuedAt, expiresAt]`. The receipt has version 1, asset `GPT_COIN`, the listed fields, and millisecond dates. The signature and the wallet's authenticated account must agree before the immutable ledger accepts it. Import retries use the same issuer and receipt ID. Existing imported holdings remain visible while new imports are paused.
 

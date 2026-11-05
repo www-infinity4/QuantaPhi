@@ -5,8 +5,9 @@ const validAmount = value => Number.isSafeInteger(value) && value >= 0;
 // Award rows are the balance source. Pending line claims never enter it.
 export async function readGitAsset(env,walletId){
  if(!walletId)return unavailable('wallet_link_required');
+ if(!env.GIT_DB)return unavailable('ledger_unavailable');
  try{
-  const row=await env.DB.prepare(`SELECT
+  const row=await env.GIT_DB.prepare(`SELECT
    (SELECT COALESCE(SUM(amount),0) FROM gitcoin_awards WHERE wallet_id=?1) AS credited,
    (SELECT COUNT(*) FROM gitcoin_line_claims WHERE recipient_wallet_id=?1 AND status='pending') AS pending`).bind(walletId).first();
   if(!validAmount(row?.credited)||!validAmount(row?.pending))return unavailable('ledger_unavailable');

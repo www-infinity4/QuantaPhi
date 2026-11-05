@@ -38,7 +38,7 @@ async function fixture(){
  const source=fs.readFileSync('workers/unified-wallet/worker.js','utf8').replace(/^import .*\n/gm,'').replace('export default','globalThis.worker =');
  let keyFetches=0;
  const worker=vm.runInNewContext(source+';worker',{readBubbleBits,readGitAsset,readGptCoinAsset,importGptCoin,crypto,TextEncoder,TextDecoder,Request,Response,URL,Uint8Array,btoa,atob,AbortSignal,console,fetch:async()=>{keyFetches++;throw Error('Ordinary wallet routes must not request Access keys');}});
- const env={DB:db,IDENTITY_DB:db};
+ const env={DB:db,IDENTITY_DB:db,GIT_DB:db};
  const request=(path,token)=>new Request('https://wallet.example.test'+path,{headers:{Origin:'https://quantaphi.org',...(token?{Authorization:'Bearer '+token}:{})}});
  return{accounts,tokens,reads,env,request,worker,keyFetches:()=>keyFetches};
 }
