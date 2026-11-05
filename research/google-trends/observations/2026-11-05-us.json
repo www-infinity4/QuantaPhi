@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T01:01:41.681165Z",
+  "checked_at": "2026-11-05T01:31:24.682168Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "rob lowe",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T00:40:00Z",
+      "query": "trail blazers vs suns",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T01:10:00Z",
       "related_news_urls": [
-        "https://ew.com/rob-lowe-the-outsider-documentary-first-look-trailer-exclusive-12208089",
-        "https://www.avclub.com/the-outsider-netflix-rob-lowe-documentary-trailer",
-        "https://realscreen.com/2026/11/03/netflix-slates-rob-lowe-doc-from-chris-smith/"
+        "https://www.blazersedge.com/gameday-coverage/117910/portland-trail-blazers-phoenix-suns-nba-preview-tv-time-injuries-devin-booker-damian-lillard-deni-avdija",
+        "https://www.brightsideofthesun.com/suns-game/113001/trail-blazers-rematch-seven-game-homestand-mark-williams",
+        "https://sports.yahoo.com/articles/5-questions-ahead-blazers-vs-170004480.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREicRqaSkidbQhR83qp45plbhHv19Kr8TQ3vzVni3E1PtNCcnSpvIcDy_WvHE",
-      "image_credit": "Entertainment Weekly",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGydndnMuvMtgB9M20PYzlpzN0HoTL2kaNB7MoUjvGe7eQDrDBsqCWW715BME",
+      "image_credit": "Blazer's Edge",
       "news": [
         {
-          "url": "https://ew.com/rob-lowe-the-outsider-documentary-first-look-trailer-exclusive-12208089",
-          "title": "Rob Lowe reflects on ‘completely bananas’ life in ‘The Outsider’ doc trailer (exclusive)",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.blazersedge.com/gameday-coverage/117910/portland-trail-blazers-phoenix-suns-nba-preview-tv-time-injuries-devin-booker-damian-lillard-deni-avdija",
+          "title": "Blazers vs. Suns Preview",
+          "publisher": "Blazer's Edge",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREicRqaSkidbQhR83qp45plbhHv19Kr8TQ3vzVni3E1PtNCcnSpvIcDy_WvHE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGydndnMuvMtgB9M20PYzlpzN0HoTL2kaNB7MoUjvGe7eQDrDBsqCWW715BME"
         },
         {
-          "url": "https://www.avclub.com/the-outsider-netflix-rob-lowe-documentary-trailer",
-          "title": "The Outsider trailer gives Rob Lowe's tumultuous life the documentary treatment",
-          "publisher": "A.V. Club",
+          "url": "https://www.brightsideofthesun.com/suns-game/113001/trail-blazers-rematch-seven-game-homestand-mark-williams",
+          "title": "Game Preview: Suns get another shot at the team that started their season spiraling",
+          "publisher": "Bright Side Of The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnMmxZfDVysYE8lGNouW38SPWWjpfLUs68Eu99TEVOuxEn0ajI5OyokGuWfDI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuX4sbTl2G-iTWjWtGwa1qeph5SeD7YMgJzA0aUVb02Zi0wouQ1BW_L_QkUSc"
         },
         {
-          "url": "https://realscreen.com/2026/11/03/netflix-slates-rob-lowe-doc-from-chris-smith/",
-          "title": "Netflix slates Rob Lowe doc from Chris Smith",
-          "publisher": "Realscreen",
+          "url": "https://sports.yahoo.com/articles/5-questions-ahead-blazers-vs-170004480.html",
+          "title": "5 Questions Ahead of Blazers vs. Suns Rematch",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTd-mJgmpd1id1xYfdgWnflNoXPHdXDvOGOlhUsxhGMmb9gT7IqiS86PT-dTxQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk56dN5gwF6KWC1fE-X2QMQQpB5vilkQrt9M8yHBX_46RRkc4J-OEdnOGEVmg"
         }
       ]
     },
     {
-      "query": "timberwolves vs rockets",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T00:30:00Z",
+      "query": "raptors vs nuggets",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T01:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-timberwolves-vs-rockets-live-003000244.html",
-        "https://sports.yahoo.com/articles/rockets-vs-timberwolves-prediction-edwards-001607480.html",
-        "https://www.foxnews.com/outkick-betting/alperen-sengun-kevin-durant-power-houston-rockets-matchup-shorthanded-timberwolves"
+        "https://www.denverstiffs.com/preview-the-nuggets-try-to-to-avoid-having-their-faces-eaten-off-by-the-visiting-raptors/",
+        "https://sports.yahoo.com/articles/4-key-storylines-raptors-vs-170004822.html",
+        "https://www.foxnews.com/outkick-betting/raptors-without-kawhi-leonard-could-struggle-contain-nikola-jokic-jamal-murray-denver"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvGEsX2PKIIi5plGtwnH5wjRec0q6G9iFCh931LxUWHgMCnfJU_IXNpKLF8pk",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4GU58vdebkxHwJ1AXmA5fFj32aHqKIdyAye5qTOcDIW_sooCD6qJhkRJOpk8",
+      "image_credit": "Denver Stiffs",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/watch-timberwolves-vs-rockets-live-003000244.html",
-          "title": "How to watch Timberwolves vs Rockets: Live stream NBA, TV channel",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.denverstiffs.com/preview-the-nuggets-try-to-to-avoid-having-their-faces-eaten-off-by-the-visiting-raptors/",
+          "title": "Preview: The Nuggets try to to avoid having their faces eaten off by the visiting Raptors",
+          "publisher": "Denver Stiffs",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvGEsX2PKIIi5plGtwnH5wjRec0q6G9iFCh931LxUWHgMCnfJU_IXNpKLF8pk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4GU58vdebkxHwJ1AXmA5fFj32aHqKIdyAye5qTOcDIW_sooCD6qJhkRJOpk8"
         },
         {
-          "url": "https://sports.yahoo.com/articles/rockets-vs-timberwolves-prediction-edwards-001607480.html",
-          "title": "Rockets vs Timberwolves Prediction Edwards Out and Houston Covers",
+          "url": "https://sports.yahoo.com/articles/4-key-storylines-raptors-vs-170004822.html",
+          "title": "4 Key Storylines: Raptors vs. Nuggets",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRelroL8HSwTiIE2FcXJkWfG5bzX4p3hZZRftPWFP3oXUxZYiBCtt9lHR8LqbU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbbvmIWXZcBge3ob3CB_LYLxBVzAWFi0TK53p20p9lzwLAu3aVp2h7U-J81iU"
         },
         {
-          "url": "https://www.foxnews.com/outkick-betting/alperen-sengun-kevin-durant-power-houston-rockets-matchup-shorthanded-timberwolves",
-          "title": "Alperen Sengun and Kevin Durant power Houston Rockets into matchup with shorthanded Timberwolves",
+          "url": "https://www.foxnews.com/outkick-betting/raptors-without-kawhi-leonard-could-struggle-contain-nikola-jokic-jamal-murray-denver",
+          "title": "Raptors without Kawhi Leonard could struggle to contain Nikola Jokic and Jamal Murray in Denver",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqbxVa6J78lX_zjbL5MKKjRHEqNMsxaiAAt0N5M-fsKntft7vFXwFnPAEnpq4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhcxMkffy_TcDmOHCWa5Aw60rjjLPZzwBZxm216MWLiHZJ4vgGoi7vy-1cEXY"
         }
       ]
     },
     {
-      "query": "tyrese maxey",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T00:30:00Z",
+      "query": "chris hansen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T01:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/jaylen-brown-names-76ers-leader-132057527.html",
-        "https://www.libertyballers.com/76ers-analysis/100971/tyrese-maxey-birthday-sixers-lebron-james-joel-embiid-jaylen-brown-mike-gansey",
-        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-jaylen-brown-role-defense-maxey/764138/"
+        "https://www.forbes.com/sites/timlammers/2026/11/02/primetime-pivots-to-digital-this-week-as-hansen-pursues-pattinson-for-podcast-interview/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/chris-hansen-invites-robert-pattinson-190022504.html",
+        "https://www.ladbible.com/entertainment/celebrity/chris-hansen-challenges-robert-pattinson-meet-primtime-controversy-804896-20261028"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfEm5bM_rpk5zydWqO3E7TrQNdiHb6khISDm6Lw9kC-wePB3a1RWIXMeU2pxk",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpzC90MHec-QOcl8a42wArtmQJOPzhAYxANCMCSTbsrwxYl1UcRBnAhExd8OE",
+      "image_credit": "Forbes",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/jaylen-brown-names-76ers-leader-132057527.html",
-          "title": "Jaylen Brown names 76ers’ leader…and it’s not LeBron James",
+          "url": "https://www.forbes.com/sites/timlammers/2026/11/02/primetime-pivots-to-digital-this-week-as-hansen-pursues-pattinson-for-podcast-interview/",
+          "title": "‘Primetime’: Hansen Pursues Pattinson For Podcast Interview As Film Pivots To Streaming",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpzC90MHec-QOcl8a42wArtmQJOPzhAYxANCMCSTbsrwxYl1UcRBnAhExd8OE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/chris-hansen-invites-robert-pattinson-190022504.html",
+          "title": "Chris Hansen Invites Robert Pattinson For 1-On-1 Interview After Controversial Film Portrayal",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ0tYud4tWl5qi1qnLXb-C62V4FMOtbTgp-GU_-Stw2aavxUP_cw0KKhsGMd0"
+        },
+        {
+          "url": "https://www.ladbible.com/entertainment/celebrity/chris-hansen-challenges-robert-pattinson-meet-primtime-controversy-804896-20261028",
+          "title": "Chris Hansen challenges Robert Pattinson to meet after branding new movie Primetime an ‘insult’",
+          "publisher": "LADbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVnniso83Y9SUF2uz0o9sWbIWZ-21x6V20FNlkxsYf17aXozi5iCpGuMyJjNc"
+        }
+      ]
+    },
+    {
+      "query": "god of war laufey delayed",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T01:10:00Z",
+      "related_news_urls": [
+        "https://www.theverge.com/games/1026448/sony-playstation-god-of-war-laufey-delay",
+        "https://gameinformer.com/2026/11/04/god-of-war-laufey-delayed-to-may",
+        "https://www.fandompulse.com/p/malfoid-ch-14-god-of-war-delay-hasan"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMjaTwwafxEsEmC6YOfVyqqdpkcPNaUvbTWNEcL9r3O4EelTNAoSdkbJ0SbMc",
+      "image_credit": "The Verge",
+      "news": [
+        {
+          "url": "https://www.theverge.com/games/1026448/sony-playstation-god-of-war-laufey-delay",
+          "title": "God of War Laufey delayed until May",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMjaTwwafxEsEmC6YOfVyqqdpkcPNaUvbTWNEcL9r3O4EelTNAoSdkbJ0SbMc"
+        },
+        {
+          "url": "https://gameinformer.com/2026/11/04/god-of-war-laufey-delayed-to-may",
+          "title": "God Of War Laufey Delayed To May",
+          "publisher": "Game Informer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq7JyQURcgj6T3KC83P7N2vsoFOe83cC7dHWT_jmAgu-bN2sifFkYtd02HiP0"
+        },
+        {
+          "url": "https://www.fandompulse.com/p/malfoid-ch-14-god-of-war-delay-hasan",
+          "title": "Malfoid Ch 14, God of War Delay, Hasan Calls For Asmongold Imprisonment - Fandom Pulse Daily Briefing",
+          "publisher": "Fandom Pulse",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqJoEehGewaJg2WyP_F45yebpSYeIAsn29fy3_w5LT8N8NCuMsY4CDtjo-1rc"
+        }
+      ]
+    },
+    {
+      "query": "kon knueppel injury",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T01:10:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/news/charlotte-hornets-kon-knueppel-season-debut",
+        "https://sports.yahoo.com/articles/nba-week-3-injury-report-173701918.html",
+        "https://bleacherreport.com/articles/25529347-hornets-kon-knueppel-make-season-debut-vs-nets-after-hamstring-injury-recovery"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBbU7BHbWeKfV2R89kVd5oH1V_qeYo7zyCo6k1VkGhYOjNCDy-g2NrL5o5Uy8",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/news/charlotte-hornets-kon-knueppel-season-debut",
+          "title": "Kon Knueppel ready to make season debut for Hornets tonight",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBbU7BHbWeKfV2R89kVd5oH1V_qeYo7zyCo6k1VkGhYOjNCDy-g2NrL5o5Uy8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nba-week-3-injury-report-173701918.html",
+          "title": "NBA Week 3 Injury Report: Kon Knueppel expected back Wednesday; replacing Ja Morant",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfEm5bM_rpk5zydWqO3E7TrQNdiHb6khISDm6Lw9kC-wePB3a1RWIXMeU2pxk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkC86Zw_BVepTDMDHAhEYZoTlm992XO24tIWdiRMAVSf56PePoJJYDsxLHNQc"
         },
         {
-          "url": "https://www.libertyballers.com/76ers-analysis/100971/tyrese-maxey-birthday-sixers-lebron-james-joel-embiid-jaylen-brown-mike-gansey",
-          "title": "Now 26 years old, Tyrese Maxey’s career trajectory remains remarkable",
-          "publisher": "Liberty Ballers",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJuB_pen5YM090xw3h28Qqv_BLVlpRb8BYL8zzmhcDhSpRe4meMeFoM0mkr4"
-        },
-        {
-          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-jaylen-brown-role-defense-maxey/764138/",
-          "title": "‘I'm finding my footing': Jaylen Brown's role taking shape with Sixers",
-          "publisher": "NBC Sports Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOegy6RXRPaDI2DKm-BP4akbBPmKC9_nb09GAY6Dc1YH5FWMMw2tYmiQzc6cs"
-        }
-      ]
-    },
-    {
-      "query": "ryan seacrest",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T00:30:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1301728/wheel-of-fortune-ryan-seacrest-shocked-after-contestant-loses-113k/",
-        "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss",
-        "https://www.wect.com/2026/10/30/big-win-wilmington-army-veteran-wins-over-76k-wheel-fortune/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOl9QxFTYD0bOLYk_RsCm04c937Z2GeHIs7zP-VolzNFI0rTNrtzssqP1nFPM",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1301728/wheel-of-fortune-ryan-seacrest-shocked-after-contestant-loses-113k/",
-          "title": "‘Wheel of Fortune’: Ryan Seacrest Shocked After Contestant Loses Out on $113,000",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOl9QxFTYD0bOLYk_RsCm04c937Z2GeHIs7zP-VolzNFI0rTNrtzssqP1nFPM"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss",
-          "title": "See Wheel of Fortune’s Ryan Seacrest Comfort Player After $50,000 Loss",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPGLnwAMvZeT_SWv7Wv8fX_3A-IaLC3NRlDZCq290hoHNflG5Yc4xjf-pqMUI"
-        },
-        {
-          "url": "https://www.wect.com/2026/10/30/big-win-wilmington-army-veteran-wins-over-76k-wheel-fortune/",
-          "title": "BIG WIN: Wilmington Army veteran wins over $76K on ‘Wheel of Fortune’",
-          "publisher": "WECT",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRl-_fPa8xxawYCtHWbNXfZIV15O9FiW50Y6V8O9mhPNppFYen8dxi8S7qn-J0"
-        }
-      ]
-    },
-    {
-      "query": "cade cunningham",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T00:30:00Z",
-      "related_news_urls": [
-        "https://heavy.com/sports/nba/detroit-pistons/cade-cunningham-instagram-message-76ers/",
-        "https://www.detroitbadboys.com/detroit-pistons-game-day/51424/pistons-vs-hornets-final-score-cade-cunningham-powers-second-half-surge-in-blowout-win",
-        "https://www.espn.com/nba/recap/_/gameId/401909908"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFGyZUqcFT3bfXIhm1YiwKYEPEgWP8XTdWDgq2iy0A-MItRM6ctMOVqQ4Lc_w",
-      "image_credit": "Heavy.com",
-      "news": [
-        {
-          "url": "https://heavy.com/sports/nba/detroit-pistons/cade-cunningham-instagram-message-76ers/",
-          "title": "Detroit Pistons Star Cade Cunningham Shares Candid Message Before 76ers Game",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFGyZUqcFT3bfXIhm1YiwKYEPEgWP8XTdWDgq2iy0A-MItRM6ctMOVqQ4Lc_w"
-        },
-        {
-          "url": "https://www.detroitbadboys.com/detroit-pistons-game-day/51424/pistons-vs-hornets-final-score-cade-cunningham-powers-second-half-surge-in-blowout-win",
-          "title": "Pistons vs. Hornets final score: Cade Cunningham powers second-half surge in blowout win",
-          "publisher": "Detroit Bad Boys",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqgohOfVYDN5Ew4la3TekQp-S0cyC22YwUoMLrAGnM5otDby6xFANxIdZiIQs"
-        },
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909908",
-          "title": "Pistons 124-91 Hornets (Nov 2, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYMxnhZA3qUFurBNwfvBX5xJNOxkMLKE5PoUCJuIF9Ni0eYp63lm1YmwFKnno"
-        }
-      ]
-    },
-    {
-      "query": "claudia sheinbaum",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T00:30:00Z",
-      "related_news_urls": [
-        "https://certezadiario.com/mensaje-del-secretario-de-seguridad-y-proteccion-ciudadana-omar-garcia-harfuch-durante-la-ceremonia-de-entrega-de-reconocimientos-a-agentes-de-investigacion-de-la-secretaria-de-seguridad-y-proteccio/",
-        "https://www.gob.mx/sspc/prensa/sspc-reconoce-el-compromiso-y-la-vocacion-de-servicio-de-agentes-de-investigacion-e-inteligencia-y-personal-de-proteccion-civil",
-        "https://www.reporteindigo.com/nacional/hoy-gracias-al-liderazgo-de-la-presidenta-claudia-sheinbaum-la-seguridad-del-pais-esta-cambiando-omar-garcia-harfuch-20261104-0079.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vA3JfQFF9ECjKp_w8WACpr4uwRaWY4Am5MCUW0YpZ58FHvYLmsD-kKZSI18",
-      "image_credit": "Certeza Diario",
-      "news": [
-        {
-          "url": "https://certezadiario.com/mensaje-del-secretario-de-seguridad-y-proteccion-ciudadana-omar-garcia-harfuch-durante-la-ceremonia-de-entrega-de-reconocimientos-a-agentes-de-investigacion-de-la-secretaria-de-seguridad-y-proteccio/",
-          "title": "Mensaje del Secretario de Seguridad y Protección Ciudadana, Omar García Harfuch, durante la ceremonia de entrega de Reconocimientos a Agentes de Investigación de la Secretaría de S",
-          "publisher": "Certeza Diario",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vA3JfQFF9ECjKp_w8WACpr4uwRaWY4Am5MCUW0YpZ58FHvYLmsD-kKZSI18"
-        },
-        {
-          "url": "https://www.gob.mx/sspc/prensa/sspc-reconoce-el-compromiso-y-la-vocacion-de-servicio-de-agentes-de-investigacion-e-inteligencia-y-personal-de-proteccion-civil",
-          "title": "SSPC RECONOCE EL COMPROMISO Y LA VOCACIÓN DE SERVICIO DE AGENTES DE INVESTIGACIÓN E INTELIGENCIA Y PERSONAL DE PROTECCIÓN CIVIL",
-          "publisher": "Gob MX",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjFro6f6YYpX4jfLxIgIZLqQm5Zqy5kc4oVWhJjNprYCMVq9iIOWGurGbisR0"
-        },
-        {
-          "url": "https://www.reporteindigo.com/nacional/hoy-gracias-al-liderazgo-de-la-presidenta-claudia-sheinbaum-la-seguridad-del-pais-esta-cambiando-omar-garcia-harfuch-20261104-0079.html",
-          "title": "“Hoy, gracias al liderazgo de la presidenta Claudia Sheinbaum la Seguridad del país está cambiando”: Omar García Harfuch",
-          "publisher": "Reporte Indigo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnDa4ndTa65_4qmoRfhpVfB76MOhOr3q_H6bLoOKBc4xmGyC03rvc0nf7i_DA"
-        }
-      ]
-    },
-    {
-      "query": "cj mccollum",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T00:30:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/hawks-cj-mccollum-not-starting-wednesday/",
-        "https://www.nola.com/sports/rod-walker-ex-pelicans-star-cj-mccollum-got-the-love-he-deserved-in-return-to/article_bd88ee97-9b26-403d-bd8b-bb6196aaf309.html",
-        "https://www.fantasypros.com/nba/news/617495/cj-mccollum-comes-up-one-rebound-shy-triple-double.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/hawks-cj-mccollum-not-starting-wednesday/",
-          "title": "Hawks' CJ McCollum: Not starting Wednesday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI"
-        },
-        {
-          "url": "https://www.nola.com/sports/rod-walker-ex-pelicans-star-cj-mccollum-got-the-love-he-deserved-in-return-to/article_bd88ee97-9b26-403d-bd8b-bb6196aaf309.html",
-          "title": "Rod Walker: Ex-Pelicans’ star CJ McCollum got the love he deserved in return to New Orleans",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN0h7WKtTsa1PRaz3u1hmqH2yVfpzeGcCq6GZ7TP9wtBvXxW3z_qER2oZznuQ"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/617495/cj-mccollum-comes-up-one-rebound-shy-triple-double.php",
-          "title": "CJ McCollum comes up one rebound shy of triple-double",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0UdymfZ-pJMPvZNwhrLGM5bQfhpG9SLmFUOxy1ZeogaJ4keCvVYJYeUMMoL8"
-        }
-      ]
-    },
-    {
-      "query": "unrivaled basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T00:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/article/unrivaled-announces-2027-rosters-as-olivia-miles-and-sonia-citron-team-up-on-hive-bc-while-paige-bueckers-lands-with-breeze-001549296.html",
-        "https://bleacherreport.com/articles/25529323-2027-unrivaled-rosters-revealed-featuring-olivia-miles-paige-bueckers-and-more-wnba-stars",
-        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/barbara-turner-unrivaled-head-coach-hodges-sun-ct-22498026.php"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1iOXr_eBsx5AyU2uSKNQ4KWuvY8DQSo_jhZlQsvs4Ww1DxovHFBsddU0UtTg",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/article/unrivaled-announces-2027-rosters-as-olivia-miles-and-sonia-citron-team-up-on-hive-bc-while-paige-bueckers-lands-with-breeze-001549296.html",
-          "title": "Unrivaled announces 2027 rosters as Olivia Miles and Sonia Citron team up on Hive BC, while Paige Bueckers lands with Breeze",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1iOXr_eBsx5AyU2uSKNQ4KWuvY8DQSo_jhZlQsvs4Ww1DxovHFBsddU0UtTg"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529323-2027-unrivaled-rosters-revealed-featuring-olivia-miles-paige-bueckers-and-more-wnba-stars",
-          "title": "2027 Unrivaled Rosters Revealed Featuring Olivia Miles, Paige Bueckers and More WNBA Stars",
+          "url": "https://bleacherreport.com/articles/25529347-hornets-kon-knueppel-make-season-debut-vs-nets-after-hamstring-injury-recovery",
+          "title": "Hornets' Kon Knueppel to Make Season Debut vs. Nets After Hamstring Injury Recovery",
           "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmQ0QlpX1d-xHOdMaZoAyfPOdz_6_mgVP8Va_SSbCzTXfBmRDQlC6_Qtp0x3A"
-        },
-        {
-          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/barbara-turner-unrivaled-head-coach-hodges-sun-ct-22498026.php",
-          "title": "UConn alum Barbara Turner will be head coach with Unrivaled in 2027",
-          "publisher": "CT Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRluxWzFxbx3h6hp8MHDfP55UobXgFfjrsXT1Th3ztCOIlj1SN30e5QouOgDXE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzL2Zi1YthdJNUBMQZ7qsDYIqB4FMZRXIJn5PCeDEJgP3zxKkgmoSG1XIdw2Y"
         }
       ]
     },
     {
-      "query": "maría alicia delgado",
+      "query": "millonarios - américa",
       "approx_searches": "500+",
-      "published_at": "2026-11-05T00:20:00Z",
+      "published_at": "2026-11-05T01:10:00Z",
       "related_news_urls": [
-        "https://www.univision.com/famosos/muere-maria-alicia-delgado",
-        "https://es-us.vida-estilo.yahoo.com/muere-actriz-comediante-maria-alicia-235138236.html",
-        "https://www.elfinanciero.com.mx/espectaculos/2026/11/04/muere-maria-alicia-delgado-actriz-de-amorcito-corazon-y-derbez-en-cuando/"
+        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17474271/millonarios-vs-america-clasificacion-liderato-liga-betplay-2026",
+        "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-vs-america-de-cali-en-vivo-minuto-a-minuto-del-clasico-de-la-liga-ii-3598556",
+        "https://www.espn.com.pe/futbol/colombia/nota/_/id/17471475/gamero-llevamos-10-partidos-sin-perder-y-eso-es-bueno-millonarios"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFA4SA4UCG-90r9dmWkHBF6EbWe5yrjCu6WlDWw5mh-Mht4ANGEaz4T4i7sl0",
-      "image_credit": "Univision",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX-zOxaZFcrXInCvbD74pIqMhVqCxbirCIwpj4gSiTYaimPkds798O4H2TBWk",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://www.univision.com/famosos/muere-maria-alicia-delgado",
-          "title": "Muere María Alicia Delgado, actriz de ‘Cero En Conducta’ y ‘Monteverde’",
-          "publisher": "Univision",
+          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17474271/millonarios-vs-america-clasificacion-liderato-liga-betplay-2026",
+          "title": "Millonarios vs. América: un clásico con la clasificación y el liderato en juego",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFA4SA4UCG-90r9dmWkHBF6EbWe5yrjCu6WlDWw5mh-Mht4ANGEaz4T4i7sl0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX-zOxaZFcrXInCvbD74pIqMhVqCxbirCIwpj4gSiTYaimPkds798O4H2TBWk"
         },
         {
-          "url": "https://es-us.vida-estilo.yahoo.com/muere-actriz-comediante-maria-alicia-235138236.html",
-          "title": "Muere la actriz y comediante María Alicia Delgado",
-          "publisher": "Yahoo en Español Vida y Estilo",
+          "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-vs-america-de-cali-en-vivo-minuto-a-minuto-del-clasico-de-la-liga-ii-3598556",
+          "title": "Millonarios vs América de Cali en vivo: minuto a minuto del clásico de la Liga II",
+          "publisher": "El Tiempo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcaFqKKbJNphJKwHU_F4MaTBVxHim5XEiPyh_IsSJ9D_KMPcoZU8MZY7AfTw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz3TTxhnMzXIYKWUIXuZs2v0RvJEztMWZKis1Kc6A1EbJYN0uyIfBc3XSC67s"
         },
         {
-          "url": "https://www.elfinanciero.com.mx/espectaculos/2026/11/04/muere-maria-alicia-delgado-actriz-de-amorcito-corazon-y-derbez-en-cuando/",
-          "title": "Muere María Alicia Delgado, actriz de ‘Amorcito corazón’ y ‘Derbez en cuando’, a los 77 años",
-          "publisher": "El Financiero",
+          "url": "https://www.espn.com.pe/futbol/colombia/nota/_/id/17471475/gamero-llevamos-10-partidos-sin-perder-y-eso-es-bueno-millonarios",
+          "title": "Gamero: \"Llevamos 10 partidos sin perder y eso es bueno\"",
+          "publisher": "espn.com.pe",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBD2kYRLvhdqOn_rF2C_MzD-OFZOwBJmUy-j5p66SJNo8iqMrMFQEKiwEn7O8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYfhd9muQK_VdyGoEhzgBUQcYi2CiRileVjZWSrd595UDGa4a0wfBewuqN7nE"
         }
       ]
     },
     {
-      "query": "middletown fisheries violations 8 people",
+      "query": "sonny liston",
       "approx_searches": "500+",
-      "published_at": "2026-11-05T00:20:00Z",
+      "published_at": "2026-11-05T01:10:00Z",
       "related_news_urls": [
-        "https://turnto10.com/news/local/dozens-of-illegally-caught-fish-seized-in-middletown-as-8-people-face-fisheries-violations-undersized-tautog-black-sea-bass-november-4-2026",
-        "https://www.wpri.com/community/environment/man-cited-for-having-140-illegal-filets-in-middletown/",
-        "https://www.thefisherman.com/article/rhode-island-environmental-police-seize-over-70-illegally-caught-blackfish/"
+        "https://www.espn.com/boxing/story/_/id/50364075/jaalen-best-greatest-cast-muhammad-ali-series",
+        "https://www.theguardian.com/tv-and-radio/2026/nov/04/the-greatest-amazon-muhammad-ali-series-review",
+        "https://www.yahoo.com/entertainment/tv/articles/first-opponent-yourself-omari-hardwick-170000552.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSbbIuMe3y_iKkm84Cif3UZpnYRoIfukZnJcoLBj4dGwGCm_CQ1kg84bOV8Nc",
-      "image_credit": "WJAR",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfXLIbE4RfMqiQ4DSnNduBWao0R5vLWM2hJFFlMXNaXZr0y3BA16iS20Rpv9M",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://turnto10.com/news/local/dozens-of-illegally-caught-fish-seized-in-middletown-as-8-people-face-fisheries-violations-undersized-tautog-black-sea-bass-november-4-2026",
-          "title": "Dozens of illegally caught fish seized in Middletown as 8 people face fisheries violations",
-          "publisher": "WJAR",
+          "url": "https://www.espn.com/boxing/story/_/id/50364075/jaalen-best-greatest-cast-muhammad-ali-series",
+          "title": "How Jaalen Best and the cast of 'The Greatest' stepped into Muhammad Ali's world",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSbbIuMe3y_iKkm84Cif3UZpnYRoIfukZnJcoLBj4dGwGCm_CQ1kg84bOV8Nc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfXLIbE4RfMqiQ4DSnNduBWao0R5vLWM2hJFFlMXNaXZr0y3BA16iS20Rpv9M"
         },
         {
-          "url": "https://www.wpri.com/community/environment/man-cited-for-having-140-illegal-filets-in-middletown/",
-          "title": "Man cited for having 140 illegal filets in Middletown",
-          "publisher": "WPRI.com",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/04/the-greatest-amazon-muhammad-ali-series-review",
+          "title": "The Greatest review – Amazon’s sturdy Muhammad Ali series is a tale told too many times",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIFVy6N5JFkv_NEQ01OI-gocJuHnx6gXEnXzBAVdDuNn3klLYnLxWtU-vd44"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUW_AbIrx1rnvU3QoYixqMG9paBFcdAowbwmQ4WaoIRvLdrlkuKhnO_9S5RY"
         },
         {
-          "url": "https://www.thefisherman.com/article/rhode-island-environmental-police-seize-over-70-illegally-caught-blackfish/",
-          "title": "Rhode Island Environmental Police Seize Over 70 Illegally-Caught Blackfish",
-          "publisher": "www.thefisherman.com",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/first-opponent-yourself-omari-hardwick-170000552.html",
+          "title": "\"Your first opponent is... yourself\": Omari Hardwick opens up about what he learned as Cassius Clay Sr. in \"The Greatest\"",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj9eZ1Eld-7DnvcIS_3Ek16sMhDY_NGQxFUOONTa4FMIKCmJgWOvVIjcUepCE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRumgq6sL3ee-wUpSvGDdEMETjauAsiDYU-Su81yGe1u4lVxF7emegvlWyGmgQ"
+        }
+      ]
+    },
+    {
+      "query": "dillon boucher",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T01:10:00Z",
+      "related_news_urls": [
+        "https://echl.com/news/2026/11/boucher-makes-nhl-debut",
+        "https://www.nhl.com/blackhawks/news/release-blackhawks-recall-dillion-boucher-from-rockford-place-byram-on-injured-reserve",
+        "https://chicago.suntimes.com/blackhawks/2026/11/02/blackhawks-bowen-byram-injury-timeline-specialist"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfGZDr6xQZ6aeTC_2YFiffpYubaJac04oRlzSnjThGGbn_fRyuOA-2NMacFDw",
+      "image_credit": "ECHL",
+      "news": [
+        {
+          "url": "https://echl.com/news/2026/11/boucher-makes-nhl-debut",
+          "title": "Boucher makes NHL debut",
+          "publisher": "ECHL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfGZDr6xQZ6aeTC_2YFiffpYubaJac04oRlzSnjThGGbn_fRyuOA-2NMacFDw"
+        },
+        {
+          "url": "https://www.nhl.com/blackhawks/news/release-blackhawks-recall-dillion-boucher-from-rockford-place-byram-on-injured-reserve",
+          "title": "RELEASE: Blackhawks Recall Dillion Boucher From Rockford, Place Bowen Byram on Injured Reserve",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3_nW7BIusN5FyBm-o8iLjwMIuHP6bjLwUDJCMvJvf0YUOhGPPbx5iFYc6UiI"
+        },
+        {
+          "url": "https://chicago.suntimes.com/blackhawks/2026/11/02/blackhawks-bowen-byram-injury-timeline-specialist",
+          "title": "Blackhawks defenseman Bowen Byram now seeing specialist as injury saga continues",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRisClQA_tQ_Ecw87UJn5wq9DLjasGpv716AmWUpsiLKVayK08rs36gDsJnmLs"
+        }
+      ]
+    },
+    {
+      "query": "josh hart",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T01:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/final-injury-report-bulls-knicks-203000359.html",
+        "https://www.nydailynews.com/2026/11/04/knicks-josh-hart-ankle-injury-out-chicago-bulls/",
+        "https://www.si.com/nba/knicks/onsi/predicting-knicks-starting-lineup-bulls-if-josh-hart-ruled-out-01m6kkpska5k"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVSqsoMD4wEtNiECGOL8tS1uVU2qcPSeI-MW0wFgHXmtJYSZ8V4YOiVwSpbvM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/final-injury-report-bulls-knicks-203000359.html",
+          "title": "Final Injury Report for Bulls-Knicks: Will Josh Hart, Nic Claxton Play?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVSqsoMD4wEtNiECGOL8tS1uVU2qcPSeI-MW0wFgHXmtJYSZ8V4YOiVwSpbvM"
+        },
+        {
+          "url": "https://www.nydailynews.com/2026/11/04/knicks-josh-hart-ankle-injury-out-chicago-bulls/",
+          "title": "Knicks’ Josh Hart’s nagging right ankle costs him his first game of season",
+          "publisher": "New York Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZYfDEkvAtvoLZnldzppRCpia2gozR5y9ysCJXub4OyrxGsSvYsBSV-FESGM"
+        },
+        {
+          "url": "https://www.si.com/nba/knicks/onsi/predicting-knicks-starting-lineup-bulls-if-josh-hart-ruled-out-01m6kkpska5k",
+          "title": "Predicting Knicks' Starting Lineup vs. Bulls With Josh Hart Out",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfg09Jtc3NLrExFmDf7fgXZPe3kdbEJZVmveK3vtmSb0C4xY77RyTEydapJl8"
+        }
+      ]
+    },
+    {
+      "query": "csun vs wichita state",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T01:00:00Z",
+      "related_news_urls": [
+        "https://www.kansas.com/sports/college/wichita-state/article317886928.html",
+        "https://www.actionnetwork.com/ncaab-game/cal-state-northridge-matadors-kansas-state-wildcats/297416",
+        "https://www.bleachernation.com/how-to-watch/2026/11/04/how-to-watch-wichita-state-shockers-vs-csu-northridge-matadors-live-stream-or-on-tv/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhVstUkZAk2rJrgRYU0ki4eg0URvQ8tRPFId0Zu-ooHq-didjrFelMNz0qzfs",
+      "image_credit": "Wichita Eagle",
+      "news": [
+        {
+          "url": "https://www.kansas.com/sports/college/wichita-state/article317886928.html",
+          "title": "Who will start for Wichita State basketball? Mills weighs his options",
+          "publisher": "Wichita Eagle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhVstUkZAk2rJrgRYU0ki4eg0URvQ8tRPFId0Zu-ooHq-didjrFelMNz0qzfs"
+        },
+        {
+          "url": "https://www.actionnetwork.com/ncaab-game/cal-state-northridge-matadors-kansas-state-wildcats/297416",
+          "title": "CS Northridge vs. K State Odds & Betting Predictions November 7, 2026",
+          "publisher": "Action Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ4jaNiz_58QYF0T5L5CXQxtWNLk-E8MJWwNYjuWUgfCFe9oFZSZgkz_yB30s"
+        },
+        {
+          "url": "https://www.bleachernation.com/how-to-watch/2026/11/04/how-to-watch-wichita-state-shockers-vs-csu-northridge-matadors-live-stream-or-on-tv/",
+          "title": "How to Watch Wichita State Shockers vs. CSU Northridge Matadors: Live Stream or on TV",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjOlideBfYDzlQeKzd6c4qZr0RPYwd3CIsRMhk3kbrQMKGEBlBo6_KymIb7eY"
         }
       ]
     }
