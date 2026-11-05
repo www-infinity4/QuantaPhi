@@ -1,10 +1,10 @@
 ---
 issue: 1589
 project: "WHO and Iowa live-radio Quick Card carousel"
-state: implementing
+state: ci_passed
 dot: "🔴"
-progress_percent: 55
-progress_basis: "Seven sourced station cards implemented, 3 official MP3 stream URLs and 4 official broadcaster embeds; exact-head CI red pending test harness and ledger fixes; 0 live browser acceptance"
+progress_percent: 72
+progress_basis: "Seven source-backed cards; 3 IPR MP3 and 4 broadcaster official-player embeds; previous exact-head six GitHub checks passed (radio, ledger, validate, search-wallet, verify, payout), rerun pending this checkpoint-only update; 0 live browser acceptance"
 sessions_spent: 1
 sessions_remaining_estimate: "1–3 acceptance sessions; uncertain"
 agent: "ChatGPT"
@@ -15,7 +15,7 @@ task_session_id: null
 repo: www-infinity4/QuantaPhi
 branch: feat/iowa-live-radio-station-carousel-1589
 last_observed_utc: "2026-11-05T04:08:00Z"
-tests: "CI first pass revealed Node window guard and YAML front matter requirement; fixing both on current branch"
+tests: "Fixed two first-run regressions; previous exact head ae792f9ef8c460341eb78cef9f324b2a51f31979 reported six GitHub checks success, including radio and ledger; new head recheck pending"
 merged: false
 deployed: false
 live_verified: false
@@ -30,9 +30,9 @@ next_action: "Verify exact-head GitHub Actions after harness and ledger fixes; t
 - Repository: www-infinity4/QuantaPhi
 - Working branch: feat/iowa-live-radio-station-carousel-1589 from main
 - Session: 2026-11-05 UTC / radio-carousel-1589 / ChatGPT
-- Work state: implementation authored; exact-head CI not yet verified
-- Dot: RED / unverified PR, deployment and Android acceptance pending; no work lease claimed
-- Progress: ~55% estimated: station sourcing and 7-card UI + tests authored, 0 live playback confirmations and 0 release/Android checks
+- Work state: source CI passed on prior head; latest checkpoint-only commit awaits recheck
+- Dot: RED / unmerged PR, deployment and Android acceptance pending; no work lease claimed
+- Progress: ~72% estimated: station source verification, seven station cards and automated CI pass, but 0 live playback confirmations and 0 release/Android checks
 - Sessions spent: 1
 - Sessions remaining estimate: 1–3, not a promise
 - Lease: unclaimed, session identity and expiry null; no implied coordinator ownership
@@ -60,7 +60,7 @@ next_action: "Verify exact-head GitHub Actions after harness and ledger fixes; t
 - Added iowa-live-radio-cards.js and test/iowa-live-radio-cards.test.mjs.
 - Hooked into quick-infinity-radio.js; updated quick-infinity-radio workflow.
 - Test command: node --check iowa-live-radio-cards.js && node --test test/quick-infinity-radio.test.mjs test/quick-radio-recovery.test.cjs test/iowa-live-radio-cards.test.mjs
-- Automated CI: pending actual GitHub receipt.
+- Automated CI: first pass failed from Node test harness global and missing YAML front matter; both corrected and six checks passed on prior head ae792f9ef8c460341eb78cef9f324b2a51f31979; checkpoint-only head recheck pending.
 - Review, merge, Cloudflare deploy and Android audio verification: pending.
 - Blocker: iHeart iframe policy and embedded playback cannot be validated by static inspection.
 
