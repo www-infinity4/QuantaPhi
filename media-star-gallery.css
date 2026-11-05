@@ -1,0 +1,21 @@
+/* Media Star creator lane: image-first, readable, one card visible on narrow screens. */
+#mediaStarGallery{max-width:840px;margin:16px auto 24px;padding:16px;border:1px solid #d5c6b1;border-radius:18px;background:#f0ebe3;color:#312a30;box-sizing:border-box;min-width:0}
+#mediaStarGallery *{box-sizing:border-box}
+#mediaStarGallery .msg-head{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+#mediaStarGallery h2{font:750 clamp(19px,3vw,24px)/1.25 system-ui,sans-serif;margin:0;color:#382d37}
+#mediaStarGallery .msg-explain,#mediaStarGalleryStatus{font:500 15px/1.65 system-ui,sans-serif;letter-spacing:.016em;max-width:730px;margin:8px 0;color:#514757}
+#mediaStarGallery .msg-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#mediaStarGallery .msg-controls button,#mediaStarGallery .msg-controls a,#mediaStarGallery .msg-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:9px 13px;border-radius:12px;border:1px solid #bdb1bd;background:#faf8f4;color:#403448;font:650 14px/1.4 system-ui,sans-serif;text-decoration:none;cursor:pointer;letter-spacing:.012em}
+#mediaStarGallery .msg-controls button:focus-visible,#mediaStarGallery a:focus-visible{outline:3px solid #554e91;outline-offset:2px}
+#mediaStarGalleryCards{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;padding:8px 2px;scrollbar-width:thin}
+#mediaStarGallery .msg-card{flex:0 0 min(100%,355px);min-width:0;scroll-snap-align:start;border:1px solid #d3c6bd;border-radius:14px;overflow:hidden;background:#f7f4ec;color:#342d35}
+#mediaStarGallery .msg-photo{display:block;width:100%;height:185px;object-fit:cover;background:#e8e2d9}
+#mediaStarGallery .msg-body{padding:13px}
+#mediaStarGallery .msg-body h3{font:750 19px/1.3 system-ui,sans-serif;margin:0 0 8px;color:#382e39}
+#mediaStarGallery .msg-body p{font:500 15px/1.6 system-ui,sans-serif;letter-spacing:.012em;margin:0 0 9px}
+#mediaStarGallery .msg-topics{font-size:13px!important;color:#625266}
+#mediaStarGallery .msg-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+#mediaStarGallery .msg-actions .msg-note{font-size:12px;line-height:1.55;color:#695a66}
+#mediaStarGallery .msg-audio,#mediaStarGallery .msg-video{width:100%;max-width:100%;margin:8px 0;border-radius:8px}
+@media(max-width:520px){#mediaStarGallery{margin:12px 10px;padding:13px}#mediaStarGallery .msg-controls{width:100%}#mediaStarGallery .msg-controls button{flex:1 1 auto}}
+@media(prefers-reduced-motion:reduce){#mediaStarGalleryCards{scroll-behavior:auto}}
