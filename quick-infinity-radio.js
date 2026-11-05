@@ -216,7 +216,7 @@
     } else if(tracks.length) {
       playbackRequested = true;
       failures = 0;
-      if (typeof CustomEvent === 'function')
+      if (typeof window !== 'undefined' && typeof CustomEvent === 'function' && typeof window.dispatchEvent === 'function')
         window.dispatchEvent(new CustomEvent('quantaphi:infinity-radio-play'));
       // A deliberate new Play gesture retries temporary network failures.
       unavailableSources.clear();
@@ -237,6 +237,7 @@
     if (!playbackRequested) { audio.pause(); setPlaying(false); return; }
     setPlaying(true);
   });
+  if (typeof window !== 'undefined' && typeof window.addEventListener === 'function')
   window.addEventListener('quantaphi:station-selected', () => {
     if (!playbackRequested) return;
     playbackRequested=false; ++generation; audio.pause(); setPlaying(false);
