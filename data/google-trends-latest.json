@@ -3,258 +3,320 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T06:01:49.630593Z",
+  "checked_at": "2026-11-05T06:36:18.118452Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nba standings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T05:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50371604/nba-power-rankings-30-teams-rank-week-two-describe-season",
-        "https://www.nba.com/news/power-rankings-2026-27-week-3",
-        "https://www.nytimes.com/athletic/7747535/2026/11/02/nba-power-rankings-rockets-thunder-grizzlies/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ5aGPn0JuTWIwodSL5psmbzr9LqbaTrJpgs0NxjJZ3Z-tF0BxO-HgcvZxD24",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50371604/nba-power-rankings-30-teams-rank-week-two-describe-season",
-          "title": "NBA Power Rankings: Summing up all 30 teams' starts",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ5aGPn0JuTWIwodSL5psmbzr9LqbaTrJpgs0NxjJZ3Z-tF0BxO-HgcvZxD24"
-        },
-        {
-          "url": "https://www.nba.com/news/power-rankings-2026-27-week-3",
-          "title": "Power Rankings: Undefeated Grizzlies surge into Top 5",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDGew_F6gj0cWGGfGUif59Lw6NZ55TOOM11o39jNroDkB9Vtsc4Gy4OnnS4I"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7747535/2026/11/02/nba-power-rankings-rockets-thunder-grizzlies/",
-          "title": "NBA Power Rankings: Liftoff in Houston, and how far have the Thunder fallen?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTurzxfYhjbWglbpqoO3KFGCEk1XX9Vy_UAnJUq9iwAhjtBlPaVkig21ToX-kw"
-        }
-      ]
-    },
-    {
-      "query": "afg vs zim",
+      "query": "brook lopez",
       "approx_searches": "500+",
-      "published_at": "2026-11-05T05:40:00Z",
+      "published_at": "2026-11-05T06:20:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-1st-test-1555123/match-preview",
-        "https://sports.yahoo.com/articles/afghanistan-vs-zimbabwe-1st-test-043612698.html",
-        "https://www.cricbuzz.com/cricket-news/140784/graeme-cremer-returns-bennett-to-lead-cricbuzzcom"
+        "https://sports.yahoo.com/articles/brook-lopez-perfect-76ers-buyout-173338817.html",
+        "https://thesixersense.com/brook-lopez-should-be-no-brainer-76ers-target-clippers-make-obvious-move"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSyXiOjZ3KCcGOMMNJMGH0MYuQUs28rDyQ3Hv0pMhmPZ_HP8Fr29piWj_dc4c",
-      "image_credit": "Cricinfo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUTrvgILris9m4Lp66dd_K1mUNQZ5d7gIX3LfAjdmdoQdsbYvxppSMVFJVkns",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-1st-test-1555123/match-preview",
-          "title": "AFG vs ZIM 2026/27, AFG vs ZIM 1st Test Match Preview - Afghanistan, Zimbabwe face-off with WTC spot on the horizon",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSyXiOjZ3KCcGOMMNJMGH0MYuQUs28rDyQ3Hv0pMhmPZ_HP8Fr29piWj_dc4c"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/afghanistan-vs-zimbabwe-1st-test-043612698.html",
-          "title": "Afghanistan vs Zimbabwe 1st Test prediction, lineups and Sharjah pitch report — who will win?",
+          "url": "https://sports.yahoo.com/articles/brook-lopez-perfect-76ers-buyout-173338817.html",
+          "title": "Brook Lopez Is The Perfect 76ers Buyout Target Right Now",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMb6C605UzuDkJI1H1jldYnhcNmoBOvbyjbEpmR8rqCzauiNCdQ3soLq3L4Yo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUTrvgILris9m4Lp66dd_K1mUNQZ5d7gIX3LfAjdmdoQdsbYvxppSMVFJVkns"
         },
         {
-          "url": "https://www.cricbuzz.com/cricket-news/140784/graeme-cremer-returns-bennett-to-lead-cricbuzzcom",
-          "title": "Graeme Cremer returns; Bennett to lead in Afghanistan Tests",
-          "publisher": "Cricbuzz",
+          "url": "https://thesixersense.com/brook-lopez-should-be-no-brainer-76ers-target-clippers-make-obvious-move",
+          "title": "Brook Lopez should be a no-brainer 76ers target if Clippers make obvious move",
+          "publisher": "The Sixer Sense",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRngGlOS8jo9Kp0CVXecLQCOtqhBQtzwUYbkUZog0oBcVZbf5Tmx4HDKtdUSD8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8DCVnL_37QcyezRmcYt4Ointei-vFD6Xuye64HBEoj0d95u-svRhyzwnmT0"
         }
       ]
     },
     {
-      "query": "mega millions",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T05:40:00Z",
-      "related_news_urls": [
-        "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
-        "https://www.cincinnati.com/story/news/lottery/2026/11/04/mega-millions-winning-numbers-last-night-nov-3-drawing-numbers-jackpot-results/92607504007/",
-        "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4",
-      "image_credit": "WAVY.com",
-      "news": [
-        {
-          "url": "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
-          "title": "Over $1B in Mega Millions, Powerball jackpots up for grabs",
-          "publisher": "WAVY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4"
-        },
-        {
-          "url": "https://www.cincinnati.com/story/news/lottery/2026/11/04/mega-millions-winning-numbers-last-night-nov-3-drawing-numbers-jackpot-results/92607504007/",
-          "title": "Mega Millions numbers for $482M jackpot Nov. 3. Did anyone win last night?",
-          "publisher": "Cincinnati Enquirer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkVEn3TfXQmhXucKdCo-oEnsTF6y8vOWL8ser-2Z7vDX61Rwz3tX3aHfCfYmQ"
-        },
-        {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/",
-          "title": "Mega Millions Jackpot Tops $500 Million—Here’s What The Winner Could Take Home",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHTuzxS6qku_Z3j3KuW7i_UjPPjxJKpJwp2osGQIDYwGxJHf4eHqMB2YRgZVY"
-        }
-      ]
-    },
-    {
-      "query": "zaccharie risacher",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T05:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/dal-starts-irving-flagg-risacher-pj-gafford",
-        "https://www.rotowire.com/basketball/headlines/zaccharie-risacher-news-starting-versus-spurs-537600",
-        "https://www.cbssports.com/fantasy/basketball/news/mavericks-zaccharie-risacher-starting-versus-spurs/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa9Q18mSz1wPDxRSo-ZxH4x2uKRKLtQv3_ZA3XekDO9sIZxHkt1kYtznNw3L4",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/dal-starts-irving-flagg-risacher-pj-gafford",
-          "title": "DAL starts Irving, Flagg, Risacher, PJ, Gafford",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa9Q18mSz1wPDxRSo-ZxH4x2uKRKLtQv3_ZA3XekDO9sIZxHkt1kYtznNw3L4"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/zaccharie-risacher-news-starting-versus-spurs-537600",
-          "title": "Zaccharie Risacher News: Starting versus Spurs",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQubjYDTtRR7d42yIjM0doJN-ru28APfVPpCy4qg_fER5un7Dy5ifwHd8WnYO4"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/mavericks-zaccharie-risacher-starting-versus-spurs/",
-          "title": "Mavericks' Zaccharie Risacher: Starting versus Spurs",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI"
-        }
-      ]
-    },
-    {
-      "query": "robert de niro",
+      "query": "antonia ruzic",
       "approx_searches": "200+",
-      "published_at": "2026-11-05T05:40:00Z",
+      "published_at": "2026-11-05T06:20:00Z",
       "related_news_urls": [
-        "https://nypost.com/2026/10/30/us-news/trump-tears-into-moron-robert-de-niro-mulls-hollywood-tax-credits-during-daytona-beach-rally/",
-        "https://www.thewrap.com/media-platforms/politics/trump-mocks-hollywood-kissing-up-tax-credits/",
-        "https://www.miamitimesonline.com/news/florida/donald-trump-says-gop-voters-should-pretend-byron-donalds-and-ashley-moody-are-one-point/article_1f2ce88a-b6de-4750-aa03-57fb274ab951.html"
+        "https://www.bleachernation.com/picks/2026/11/04/wang-vs-ruzic-prediction-at-the-merida-open-akron-thursday-november-5/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/aliaksandra-sasnovich-vs-maria-sakkari-set-2-winner-nov-06-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-learner-tien-set-2-winner-nov-04-2026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8IeznFUyrpP-sBlfyr0eVQpn1gnDZYnkzB5YT6UFIK6U1034TdHT2RzBIQXY",
-      "image_credit": "New York Post",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpe1jeJhT29Otnf8rzVGAfIRuiTmCzSVjXmv8Xn3a-WfIDa1QKYcmsfsjS33c",
+      "image_credit": "Bleacher Nation",
       "news": [
         {
-          "url": "https://nypost.com/2026/10/30/us-news/trump-tears-into-moron-robert-de-niro-mulls-hollywood-tax-credits-during-daytona-beach-rally/",
-          "title": "Trump tears into 'moron' Robert De Niro, mulls Hollywood tax credits during Daytona Beach rally",
-          "publisher": "New York Post",
+          "url": "https://www.bleachernation.com/picks/2026/11/04/wang-vs-ruzic-prediction-at-the-merida-open-akron-thursday-november-5/",
+          "title": "Wang vs. Ruzic Prediction at the Merida Open Akron – Thursday, November 5",
+          "publisher": "Bleacher Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8IeznFUyrpP-sBlfyr0eVQpn1gnDZYnkzB5YT6UFIK6U1034TdHT2RzBIQXY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpe1jeJhT29Otnf8rzVGAfIRuiTmCzSVjXmv8Xn3a-WfIDa1QKYcmsfsjS33c"
         },
         {
-          "url": "https://www.thewrap.com/media-platforms/politics/trump-mocks-hollywood-kissing-up-tax-credits/",
-          "title": "Trump Mocks Hollywood for ‘Kissing My Ass’ Over Federal Film and TV Tax Credit",
-          "publisher": "TheWrap",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/aliaksandra-sasnovich-vs-maria-sakkari-set-2-winner-nov-06-2026/",
+          "title": "November 6, 2026: Aliaksandra Sasnovich vs Maria Sakkari: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEmHpW1q2_3FLkM7Mx6BsmyNSeW9iMBlPTBkiG-ak4BdyWu2HmhixM7WIU-3o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSB1GZz5k1v1tBvLtMZzcZGTsORRtwLxsCXvGS12rcsNidJxgQs0pwed9m9SAk"
         },
         {
-          "url": "https://www.miamitimesonline.com/news/florida/donald-trump-says-gop-voters-should-pretend-byron-donalds-and-ashley-moody-are-one-point/article_1f2ce88a-b6de-4750-aa03-57fb274ab951.html",
-          "title": "Donald Trump says GOP voters should pretend Byron Donalds and Ashley Moody are ‘one point down’",
-          "publisher": "The Miami Times",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-learner-tien-set-2-winner-nov-04-2026/",
+          "title": "November 4, 2026: Luca Van Assche vs Learner Tien: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTN9TJsGyaejUu_mwgC6v0L3dU1MEcoh5uAMJ3kGLC2LcsVJkyYF7u_Be5zpKI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5m5p1Hlvu028hRp9dKQeA2f3guLVu6bQMd9JCY272ZAV3T_V1jQ97VBc4-ZA"
         }
       ]
     },
     {
-      "query": "caleb martin",
+      "query": "john kennedy",
       "approx_searches": "200+",
-      "published_at": "2026-11-05T05:40:00Z",
+      "published_at": "2026-11-05T06:20:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/mavericks-caleb-martin-headed-to-bench/",
-        "https://www.rotowire.com/football/headlines/drew-shelton-news-full-practice-wednesday-646031",
-        "https://www.goldenstateofmind.com/warriors-game-previews/112961/how-to-watch-warriors-vs-timberwolves"
+        "https://www.ncsl.org/resources/details/2026-state-legislative-elections-the-results-and-what-they-mean",
+        "https://ballotpedia.org/Election_results,_2026:_Secretaries_of_State",
+        "https://www.npr.org/2026/11/04/nx-s1-6026708/a-look-at-results-for-state-legislatures-around-the-country"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWq1bkjuys9Tqf0gR7Ct4E3LiI0lChSGGRtIiw00xMsIq3UJLt809cjYsnGKg",
+      "image_credit": "National Conference of State Legislatures",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/mavericks-caleb-martin-headed-to-bench/",
-          "title": "Mavericks' Caleb Martin: Headed to bench",
-          "publisher": "CBS Sports",
+          "url": "https://www.ncsl.org/resources/details/2026-state-legislative-elections-the-results-and-what-they-mean",
+          "title": "2026 State Legislative Elections: The Results and What They Mean",
+          "publisher": "National Conference of State Legislatures",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWq1bkjuys9Tqf0gR7Ct4E3LiI0lChSGGRtIiw00xMsIq3UJLt809cjYsnGKg"
         },
         {
-          "url": "https://www.rotowire.com/football/headlines/drew-shelton-news-full-practice-wednesday-646031",
-          "title": "Drew Shelton News: Full practice Wednesday",
-          "publisher": "RotoWire",
+          "url": "https://ballotpedia.org/Election_results,_2026:_Secretaries_of_State",
+          "title": "Election results, 2026: Secretaries of State",
+          "publisher": "Ballotpedia",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREd6sv7j3AuWA9CdZi9Eu8rlHfEkpY2MXYV1mJdvwBySXXApuXRfPIL3754e8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWGFTbW9MAjc4jVhqI9yu3K_00QXaUlXhTPm0BZnfxs6u_n8hhxZxcfM_FF9w"
         },
         {
-          "url": "https://www.goldenstateofmind.com/warriors-game-previews/112961/how-to-watch-warriors-vs-timberwolves",
-          "title": "How to watch Warriors vs. Timberwolves",
-          "publisher": "Golden State Of Mind",
+          "url": "https://www.npr.org/2026/11/04/nx-s1-6026708/a-look-at-results-for-state-legislatures-around-the-country",
+          "title": "A look at results for state legislatures around the country",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0TqCW_RhV9m0p8gCH3OzY66L9AAsdkLTEanG6e8CuMerA6YRBb-viJno6Hx8"
+          "image_url": null
         }
       ]
     },
     {
-      "query": "dylan cardwell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T05:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/dylan-cardwell-calf-removed-from-injury-report",
-        "https://www.rotowire.com/basketball/headlines/dylan-cardwell-injury-downgraded-to-questionable-537220",
-        "https://www.cbssports.com/fantasy/basketball/news/kings-dylan-cardwell-upgraded-to-probable/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKnxRbx5Jq8rCKS4kB9oB232SGtZ6HF427Ap9-NYA5Vv6zs_Vdt_qXCzIc6ZU",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/dylan-cardwell-calf-removed-from-injury-report",
-          "title": "Dylan Cardwell (calf) removed from injury report",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKnxRbx5Jq8rCKS4kB9oB232SGtZ6HF427Ap9-NYA5Vv6zs_Vdt_qXCzIc6ZU"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/dylan-cardwell-injury-downgraded-to-questionable-537220",
-          "title": "Dylan Cardwell Injury: Downgraded to questionable",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3uSnYFRlf0Gw6ndDkXboampCJp04VI5pXy_T9NmpD9kVXYnI95MovqkNAW_o"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/kings-dylan-cardwell-upgraded-to-probable/",
-          "title": "Kings' Dylan Cardwell: Upgraded to probable",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmLIwE1zlfyS6xb8ymhSWDvKv0LgashX6y6wOSWJGXG_u98cAq22Hsp0FGT8"
-        }
-      ]
-    },
-    {
-      "query": "luka dončić",
+      "query": "klay thompson",
       "approx_searches": "2000+",
-      "published_at": "2026-11-05T05:30:00Z",
+      "published_at": "2026-11-05T06:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/klay-thompson-heating-just-time-231518918.html",
+        "https://basketnews.com/news-258837-klay-thompson-gets-embarrassing-comparison-as-miami-heat-struggles-continue.html",
+        "https://sports.yahoo.com/articles/theres-reason-two-teams-were-114500863.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQIgLtmb_4W3xYOe8nOJ7xnpIhkxNSMDQm1NkBYSZ0JKBpWP9x__y4DOFznc4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/klay-thompson-heating-just-time-231518918.html",
+          "title": "Klay Thompson heating up just in time to bury Warriors in Golden State return",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQIgLtmb_4W3xYOe8nOJ7xnpIhkxNSMDQm1NkBYSZ0JKBpWP9x__y4DOFznc4"
+        },
+        {
+          "url": "https://basketnews.com/news-258837-klay-thompson-gets-embarrassing-comparison-as-miami-heat-struggles-continue.html",
+          "title": "Klay Thompson gets embarrassing comparison as Miami Heat struggles continue",
+          "publisher": "BasketNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8bdXKbvV_Rbuiod3atemOkVQgvBieYXMeiIfMIlT0WCVCSOcV80Zw22LYWg8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/theres-reason-two-teams-were-114500863.html",
+          "title": "\"There's a Reason Two Teams Were Ready to Move On From Him\": Bill Simmons Takes Brutal Shot at Klay Thompson Amid Heat Struggles",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRukf-x564Pi14evMKQJ4ko0PeOk3G1OS3E3oLP8TcJoxYiJh8fp7n_WqjKUJQ"
+        }
+      ]
+    },
+    {
+      "query": "john malkovich",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T06:10:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/arts-culture/film/wild-horse-nine-review-martin-mcdonaghs-black-comic-beauty-6f232d16",
+        "https://www.bostonglobe.com/2026/11/04/arts/wild-horse-nine-review-john-malkovich/",
+        "https://www.nytimes.com/2026/10/31/magazine/martin-mcdonagh-interview.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2RpM9u26I0WpszamEoVhOybs6fwAB9JCirs55TmO3dKHxADiOkshxyYe5aw",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/arts-culture/film/wild-horse-nine-review-martin-mcdonaghs-black-comic-beauty-6f232d16",
+          "title": "‘Wild Horse Nine’ Review: Martin McDonagh’s Black-Comic Beauty",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2RpM9u26I0WpszamEoVhOybs6fwAB9JCirs55TmO3dKHxADiOkshxyYe5aw"
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/04/arts/wild-horse-nine-review-john-malkovich/",
+          "title": "‘Wild Horse Nine’ has two CIA agents outside Easter Island",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShi0z3KOP5nrakBdgK60_PTGYuOvvch8l4eYyJ_uBWPfJEwaurx90iR0o41M8"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/10/31/magazine/martin-mcdonagh-interview.html",
+          "title": "Martin McDonagh Says Art Can Change the World. Just Not As Much as Murder.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdy39jpAPDQuuTQW7WvFWZiKPRZlMAat71ekZBMhoqBJMVkh92fFtFu5dWqg"
+        }
+      ]
+    },
+    {
+      "query": "xinyu wang",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T06:10:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/aliaksandra-sasnovich-vs-maria-sakkari-set-2-winner-nov-06-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-learner-tien-set-2-winner-nov-04-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/anastasia-zakharova-vs-vaishnavi-adkar-set-1-winner-nov-04-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSB1GZz5k1v1tBvLtMZzcZGTsORRtwLxsCXvGS12rcsNidJxgQs0pwed9m9SAk",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/aliaksandra-sasnovich-vs-maria-sakkari-set-2-winner-nov-06-2026/",
+          "title": "November 6, 2026: Aliaksandra Sasnovich vs Maria Sakkari: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSB1GZz5k1v1tBvLtMZzcZGTsORRtwLxsCXvGS12rcsNidJxgQs0pwed9m9SAk"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-learner-tien-set-2-winner-nov-04-2026/",
+          "title": "November 4, 2026: Luca Van Assche vs Learner Tien: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5m5p1Hlvu028hRp9dKQeA2f3guLVu6bQMd9JCY272ZAV3T_V1jQ97VBc4-ZA"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/anastasia-zakharova-vs-vaishnavi-adkar-set-1-winner-nov-04-2026/",
+          "title": "November 4, 2026: Anastasia Zakharova vs Vaishnavi Adkar: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxNZqLJFPRFoVbvTNnUA1RjGcJ5etq7ui6VnQ73he5Eee2MPnbXKoS2JQBRSY"
+        }
+      ]
+    },
+    {
+      "query": "cameron carr",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T06:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/lakers-cameron-carr-shares-hilarious-155939404.html",
+        "https://fadeawayworld.net/nba/los-angeles-lakers/lakers-cameron-carr-on-luka-doncic-teasing-dad-about-losing-to-kobe-bryant-in-96-dunk-contest",
+        "https://sports.yahoo.com/articles/hates-seeing-over-place-sees-203651465.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLjaW9vTAEZjREDh08ODSNiLSD0i8cMGX3bug62OFZpaLDCh4wIQbEGRFF-XA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/lakers-cameron-carr-shares-hilarious-155939404.html",
+          "title": "Lakers' Cameron Carr Shares Hilarious Story About His Dad and Kobe Bryant",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLjaW9vTAEZjREDh08ODSNiLSD0i8cMGX3bug62OFZpaLDCh4wIQbEGRFF-XA"
+        },
+        {
+          "url": "https://fadeawayworld.net/nba/los-angeles-lakers/lakers-cameron-carr-on-luka-doncic-teasing-dad-about-losing-to-kobe-bryant-in-96-dunk-contest",
+          "title": "Lakers’ Cameron Carr On Luka Dončić, Teasing Dad About Losing To Kobe Bryant In ’96 Dunk Contest",
+          "publisher": "Fadeaway World",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmhqvYf2mF9E64WoLLJKVSwBv9cnDJdCgC2nITL-eG4wgRjHoTylvPooQT6Dw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/hates-seeing-over-place-sees-203651465.html",
+          "title": "“He hates seeing it. It’s all over the place. He sees …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbQBwwO-ijkVrGymXYtj5SvusaPEziaQQY7bJkgW__RsvohTIGIGFbvQj8_A"
+        }
+      ]
+    },
+    {
+      "query": "rui hachimura",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T05:50:00Z",
+      "related_news_urls": [
+        "https://www.ajc.com/sports/2026/11/could-braves-and-sonny-gray-finally-happen-this-offseason/",
+        "https://www.mlbtraderumors.com/2026/10/sonny-gray-becomes-free-agent-after-mutual-option-is-declined.html",
+        "https://sports.yahoo.com/articles/red-sox-fan-favorite-starter-220006430.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTggWjbNDAsU6RgtRJNsLhYkWzJeXWlr_5fpo06vmysTa3gOS46_5S446Ul59Y",
+      "image_credit": "The Atlanta Journal-Constitution",
+      "news": [
+        {
+          "url": "https://www.ajc.com/sports/2026/11/could-braves-and-sonny-gray-finally-happen-this-offseason/",
+          "title": "Could Braves and Sonny Gray finally happen this offseason?",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTggWjbNDAsU6RgtRJNsLhYkWzJeXWlr_5fpo06vmysTa3gOS46_5S446Ul59Y"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/10/sonny-gray-becomes-free-agent-after-mutual-option-is-declined.html",
+          "title": "Red Sox Decline Mutual Option On Sonny Gray",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYoYFfpD_nXRIJScC2D9ymWoEobOEIvm0YdcfXI-nP7SKEjj6UI0yLqmsMnFU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/red-sox-fan-favorite-starter-220006430.html",
+          "title": "Red Sox Fan Favorite Starter Could Be One-and-Done in Boston",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQX9gdIAB10JpgiIYkkT3pQTzIuGtkxKX_oJ7kl9oK9W0McsVXQaxi60fSx6o"
+        }
+      ]
+    },
+    {
+      "query": "miami heat vs la clippers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T05:50:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/sports/nba/event/2026/3018620/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=3",
+        "https://www.wvnews.com/sports/pro/heat-clippers-basketball/image_d824fb69-867e-5391-9870-37f4782d0154.html",
+        "https://www.nytimes.com/athletic/7754132/2026/11/04/heat-vs-clippers-stream-how-to-watch-nov-4/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj1dcqNPGG3V8pZpvuJg8AJep1XI-HA5klqQZ5fz5MadS7lbCyI8-lOAU7TDA",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/sports/nba/event/2026/3018620/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=3",
+          "title": "Miami Heat at Los Angeles Clippers - NBA Game Summary - Nov 04, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj1dcqNPGG3V8pZpvuJg8AJep1XI-HA5klqQZ5fz5MadS7lbCyI8-lOAU7TDA"
+        },
+        {
+          "url": "https://www.wvnews.com/sports/pro/heat-clippers-basketball/image_d824fb69-867e-5391-9870-37f4782d0154.html",
+          "title": "Heat Clippers Basketball",
+          "publisher": "WV News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB8wBGmaWePyuvINJjG9A2ryC66pY-oQ8BkM2H0w0aPQeIIQCOEFEL8a930e4"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7754132/2026/11/04/heat-vs-clippers-stream-how-to-watch-nov-4/",
+          "title": "How to watch Heat vs. Clippers: TV channel and streaming options for November 4",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiipixUBgnMyY7Ai95SI6iqa3sG7FhVk34rwcVV_u9dtfB2FXwPur6E6CRVWY"
+        }
+      ]
+    },
+    {
+      "query": "heat score",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T05:50:00Z",
       "related_news_urls": [
         "https://www.espn.com/nba/story/_/id/50374485/lakers-luka-doncic-2nd-technical-season-rescinded-nba",
         "https://www.latimes.com/sports/lakers/story/2026-11-03/flowing-not-flawless-lakers-league-best-offense-room-for-improvement",
@@ -283,76 +345,6 @@
           "publisher": "NBA.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFmZ8I3hAlEUt0fjbFkc0KZ1mCtR9td8X6ftQ5i5fWIQDBAqgHQVOcwA0WPik"
-        }
-      ]
-    },
-    {
-      "query": "luka doncic stats",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T05:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
-        "https://www.nba.com/news/starting-5-november-2-2026",
-        "https://www.si.com/nba/lakers/luka-doncic-wants-mvp-unlocked-another-part-his-game-chase-it"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
-          "title": "Luka Doncic touts his improved defense, draws praise from Lakers, Raptors",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI"
-        },
-        {
-          "url": "https://www.nba.com/news/starting-5-november-2-2026",
-          "title": "Starting 5: Luka makes history, Celtics and Warriors extend streaks",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7H6XxpJ6I1hoPWn5saQQMxprBWwsCGV69zUJWzffiPMBUQXsmk1i1cie312A"
-        },
-        {
-          "url": "https://www.si.com/nba/lakers/luka-doncic-wants-mvp-unlocked-another-part-his-game-chase-it",
-          "title": "Luka Dončić Wants the MVP. He Unlocked Another Part of His Game to Chase It.",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd8h4wRTItB0h2-y90Qn-iRqi9lB1v5Kf4D0ppWEHADTmJhulLT71qLyft9_c"
-        }
-      ]
-    },
-    {
-      "query": "precious achiuwa",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T05:30:00Z",
-      "related_news_urls": [
-        "https://www.si.com/nba/kings/onsi/kings-remove-key-big-man-from-injury-report-vs-lakers",
-        "https://www.rotowire.com/basketball/headlines/precious-achiuwa-news-good-to-go-wednesday-537532",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/precious-achiuwa-ankle-available-vs-los-angeles"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJYvWuwIegTe__rHvnJs5q5d3wkc9jXQR1TLThn1FUZ2I-ZDYguV1kSE71BgI",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/nba/kings/onsi/kings-remove-key-big-man-from-injury-report-vs-lakers",
-          "title": "Kings Remove Key Big Man From Injury Report vs. Lakers",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJYvWuwIegTe__rHvnJs5q5d3wkc9jXQR1TLThn1FUZ2I-ZDYguV1kSE71BgI"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/precious-achiuwa-news-good-to-go-wednesday-537532",
-          "title": "Precious Achiuwa News: Good to go Wednesday",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWCaAcSonMrzgq79d6BI8QZauYmCa6IPRqVwCdH11-gcHizCvGeW7qxd3svDY"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/precious-achiuwa-ankle-available-vs-los-angeles",
-          "title": "Precious Achiuwa (ankle) available vs. Los Angeles",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4kTEyxj0KIz0tdGByftyI3cLNbyEipJ4YKBeS7bDUQFXkUlkFHp8NLBwMmXE"
         }
       ]
     }
