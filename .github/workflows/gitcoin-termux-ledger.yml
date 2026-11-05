@@ -5,18 +5,34 @@ on:
       - 'gitcoin/termux-ledger.py'
       - 'gitcoin/agent-attribution.mjs'
       - 'gitcoin.html'
+      - 'gitcoin/setup-snippets.mjs'
+      - 'gitcoin-quick-card.mjs'
+      - 'gitcoin-quick-card.css'
+      - 'index.html'
+      - 'oracle-card-deck.js'
       - 'test/test_termux_ledger.py'
       - 'test/gitcoin-agent-attribution.test.mjs'
       - 'test/gitcoin-entry.test.mjs'
+      - 'test/gitcoin-setup-snippets.test.mjs'
+      - 'test/gitcoin-card.test.mjs'
+      - 'test/gitcoin-carousel.test.mjs'
       - '.github/workflows/gitcoin-termux-ledger.yml'
   pull_request:
     paths:
       - 'gitcoin/termux-ledger.py'
       - 'gitcoin/agent-attribution.mjs'
       - 'gitcoin.html'
+      - 'gitcoin/setup-snippets.mjs'
+      - 'gitcoin-quick-card.mjs'
+      - 'gitcoin-quick-card.css'
+      - 'index.html'
+      - 'oracle-card-deck.js'
       - 'test/test_termux_ledger.py'
       - 'test/gitcoin-agent-attribution.test.mjs'
       - 'test/gitcoin-entry.test.mjs'
+      - 'test/gitcoin-setup-snippets.test.mjs'
+      - 'test/gitcoin-card.test.mjs'
+      - 'test/gitcoin-carousel.test.mjs'
       - '.github/workflows/gitcoin-termux-ledger.yml'
 permissions:
   contents: read
@@ -33,6 +49,9 @@ jobs:
         with:
           python-version: '3.13'
       - run: node --check gitcoin/agent-attribution.mjs
+      - run: node --check gitcoin/setup-snippets.mjs
+      - run: node --check gitcoin-quick-card.mjs
+      - run: node --check oracle-card-deck.js
       - run: python3 -m py_compile gitcoin/termux-ledger.py
       - run: python3 -m unittest discover -s test -p 'test_termux_ledger.py' -v
-      - run: node --test test/gitcoin-agent-attribution.test.mjs test/gitcoin-entry.test.mjs
+      - run: node --test test/gitcoin-agent-attribution.test.mjs test/gitcoin-entry.test.mjs test/gitcoin-setup-snippets.test.mjs test/gitcoin-card.test.mjs test/gitcoin-carousel.test.mjs
