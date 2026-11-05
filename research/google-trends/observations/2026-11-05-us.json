@@ -3,9 +3,141 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T07:01:36.369356Z",
+  "checked_at": "2026-11-05T07:31:36.152600Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "tennis club",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T07:10:00Z",
+      "related_news_urls": [
+        "https://www.tennis365.com/tennis-news/tennis-holiday-venue-turkiye-corendon",
+        "https://uk.news.yahoo.com/padel-courts-approved-despite-fears-050000925.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp91j2RO1pSJT1UncpBNF8bjK_ZgSnNK7Wpdpg3ZbEaWy2hS9PAQ_mzs5dzJw",
+      "image_credit": "Tennis365",
+      "news": [
+        {
+          "url": "https://www.tennis365.com/tennis-news/tennis-holiday-venue-turkiye-corendon",
+          "title": "New tennis holiday venue set to take on the established big-hitters in Europe",
+          "publisher": "Tennis365",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp91j2RO1pSJT1UncpBNF8bjK_ZgSnNK7Wpdpg3ZbEaWy2hS9PAQ_mzs5dzJw"
+        },
+        {
+          "url": "https://uk.news.yahoo.com/padel-courts-approved-despite-fears-050000925.html",
+          "title": "New padel courts approved despite fears for neighbouring squash club",
+          "publisher": "Yahoo News UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi2S-eENII9rKQP2mrrEHGToE8eWbhQBvyjQZ45DdQ7mROoRnTsHF_VkhZJeI"
+        }
+      ]
+    },
+    {
+      "query": "aliyah boston",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T07:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/aliyah-bostons-much-easier-surgery-015846998.html",
+        "https://athlonsports.com/wnba/indiana-fever/indiana-fever-aliyah-boston-makes-decision-after-surgery",
+        "https://www.essentiallysports.com/wnba-basketball-news-unrivaled-kate-martin-mutually-agree-to-terminate-league-contract/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefHlaOZqjHXNe2qnQPnNSs-OkI6z3I8jLP7pt3day69EgwOwlzSBk1yX9z_A",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/aliyah-bostons-much-easier-surgery-015846998.html",
+          "title": "Aliyah Boston's 'Much Easier' Surgery Admission Should Worry Fever Opponents",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefHlaOZqjHXNe2qnQPnNSs-OkI6z3I8jLP7pt3day69EgwOwlzSBk1yX9z_A"
+        },
+        {
+          "url": "https://athlonsports.com/wnba/indiana-fever/indiana-fever-aliyah-boston-makes-decision-after-surgery",
+          "title": "Indiana Fever’s Aliyah Boston Makes Decision After Surgery",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSg1tzIDMfwr22iV2kN054rBCbwUyYQz0uFjBvGm6M-MNcjlOUMY3iwTxteoxY"
+        },
+        {
+          "url": "https://www.essentiallysports.com/wnba-basketball-news-unrivaled-kate-martin-mutually-agree-to-terminate-league-contract/",
+          "title": "Unrivaled & Kate Martin Mutually Agree to Terminate League Contract",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKi_YV-IVeLmG61u6m06jNGkzf7y2aOoa6_lRopCtkmM9TgsW_zlQsx-bhkm0"
+        }
+      ]
+    },
+    {
+      "query": "los angeles dodgers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T06:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/game/_/gameId/401872996/texans-jaguars",
+        "https://www.espn.com/nba/game/_/gameId/401909859/pelicans-nuggets",
+        "https://www.espn.com/nfl/game/_/gameId/401873018/buccaneers-panthers"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLutB4wxBzc--XkSlo-UWi4XFjkmYdsf4jlGrb-2yE7Rh-IgOeoapLH_SB-es",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401872996/texans-jaguars",
+          "title": "Texans 34-31 Jaguars (Oct 18, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLutB4wxBzc--XkSlo-UWi4XFjkmYdsf4jlGrb-2yE7Rh-IgOeoapLH_SB-es"
+        },
+        {
+          "url": "https://www.espn.com/nba/game/_/gameId/401909859/pelicans-nuggets",
+          "title": "Nuggets 141-135 Pelicans (Oct 24, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSolM151OiYQ7c854BUKeqt_NLBVfaxLS80qbRhdMVP_AGrFdsCf7A9zEfjLLQ"
+        },
+        {
+          "url": "https://www.espn.com/nfl/game/_/gameId/401873018/buccaneers-panthers",
+          "title": "Buccaneers 43-13 Panthers (Oct 25, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgl2918rjO4feBiy9mztgIWjvvpnTGgP0kfloXp4W-8QEFpwfYG8UIxPZWqNI"
+        }
+      ]
+    },
+    {
+      "query": "wang xinyu",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T06:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
+        "https://sports.inquirer.net/705074/alex-eala-battles-czech-tereza-valentova-in-hong-kong-open-last-16",
+        "https://www.scmp.com/sport/hong-kong/article/3373181/alexandra-eala-super-happy-be-back-aims-finish-season-high-hong-kong-open"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkStoz7ECXfIvVdc0oyU0TbFXuEw-qjRx99tfXd_tLPaqlb7qDR0HlDKpRUCo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
+          "title": "Alex Eala brushes aside late replacement Emerson Jones to reach Hong Kong Open round of 16",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkStoz7ECXfIvVdc0oyU0TbFXuEw-qjRx99tfXd_tLPaqlb7qDR0HlDKpRUCo"
+        },
+        {
+          "url": "https://sports.inquirer.net/705074/alex-eala-battles-czech-tereza-valentova-in-hong-kong-open-last-16",
+          "title": "Alex Eala battles Czech Tereza Valentova in Hong Kong Open last 16",
+          "publisher": "Inquirer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT1f0aXiOL7AxbHH2SsZlasfcgr6apoxGP7uCYiVKmeUqg6p-7kzYr3MmvXi4"
+        },
+        {
+          "url": "https://www.scmp.com/sport/hong-kong/article/3373181/alexandra-eala-super-happy-be-back-aims-finish-season-high-hong-kong-open",
+          "title": "Alexandra Eala ‘super happy’ to be back, aims to finish on high at Hong Kong Open",
+          "publisher": "South China Morning Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8KPpEHBsfofR7nhsab3mfIULrsZO4OrbQSDrTFmCqFUYgaDmkZKHNuC11x4"
+        }
+      ]
+    },
     {
       "query": "enzo amore",
       "approx_searches": "100+",
@@ -151,20 +283,13 @@
       "approx_searches": "500+",
       "published_at": "2026-11-05T06:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50385259/darius-garland-buries-triple-vs-miami-heat",
         "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/brook-lopez-records-20-8-1-line-two-blocked-shots",
-        "https://www.espn.com/video/clip/_/id/50365936/darius-garland-shows-range-3-pointer"
+        "https://www.espn.com/video/clip/_/id/50365936/darius-garland-shows-range-3-pointer",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/noah-clowney-knee-will-not-return-wednesday"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyFk2rcWt1N7xMGl8bAbpSadfHWRwhfZ52eC1KrvPZS3iBKqqLkANdfpqdWBU",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9UfnYkmZE0LA9W5rvov6h7mFFQScoUQrrOy_51uNvdScpfZRDsXLEz8_OZX8",
+      "image_credit": "NBC Sports",
       "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50385259/darius-garland-buries-triple-vs-miami-heat",
-          "title": "Darius Garland buries triple vs. Miami Heat",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyFk2rcWt1N7xMGl8bAbpSadfHWRwhfZ52eC1KrvPZS3iBKqqLkANdfpqdWBU"
-        },
         {
           "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/brook-lopez-records-20-8-1-line-two-blocked-shots",
           "title": "Brook Lopez records 20/8/1 line, two blocked shots",
@@ -178,6 +303,13 @@
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD52jBY8BzNuOozwoFok2sJ_sEcwtyMjrkFkn69yFXcIgVo5C8mMATFQSuSPs"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/noah-clowney-knee-will-not-return-wednesday",
+          "title": "Noah Clowney (knee) will not return Wednesday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkdtdhWUaL12_7TJwO1o9FRn9OPlqjQkNBrkLSjEVSAhPW0BrECuJMo2_DYBs"
         }
       ]
     },
@@ -213,146 +345,6 @@
           "publisher": "NPR",
           "description": "",
           "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "klay thompson",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T06:10:00Z",
-      "related_news_urls": [
-        "https://www.sun-sentinel.com/2026/11/05/thompson-3-pointer-salvages-night-for-heat-in-ot-victory-over-clippers/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/klay-thompson-caps-30-point-night-with-game-winner",
-        "https://clutchpoints.com/nba/miami-heat/heat-news-klay-thompson-calls-game-on-clippers-with-game-winning-3-to-cap-monster-night"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYNf-cC-lDjaT4nHDHI42bG65sur6fgEKyumwdbcNmPP2KyDCI-P4tFrW3VvA",
-      "image_credit": "Sun Sentinel",
-      "news": [
-        {
-          "url": "https://www.sun-sentinel.com/2026/11/05/thompson-3-pointer-salvages-night-for-heat-in-ot-victory-over-clippers/",
-          "title": "Thompson 3-pointer salvages night for Heat in OT victory over Clippers",
-          "publisher": "Sun Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYNf-cC-lDjaT4nHDHI42bG65sur6fgEKyumwdbcNmPP2KyDCI-P4tFrW3VvA"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/klay-thompson-caps-30-point-night-with-game-winner",
-          "title": "Klay Thompson caps 30-point night with game-winner",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE"
-        },
-        {
-          "url": "https://clutchpoints.com/nba/miami-heat/heat-news-klay-thompson-calls-game-on-clippers-with-game-winning-3-to-cap-monster-night",
-          "title": "Heat’s Klay Thompson calls game on Clippers with game-winning 3 to cap monster night",
-          "publisher": "ClutchPoints",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ieEOBPrcMCzfMAvV0y-v1PRz2Ar9tZAhAEKGaZczGCx1o2idL_CHQZ_4iLc"
-        }
-      ]
-    },
-    {
-      "query": "xinyu wang",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T06:10:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/aliaksandra-sasnovich-vs-maria-sakkari-set-1-winner-nov-06-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/tomas-martin-etcheverry-vs-alex-de-minaur-game-spread-nov-04-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-learner-tien-set-2-winner-nov-04-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrFtBnvnaLaIKLwEIgVxfRT38Mwkrf6fhzIQPRDQKKr4h_aQXsvQSlxGPoeZ0",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/aliaksandra-sasnovich-vs-maria-sakkari-set-1-winner-nov-06-2026/",
-          "title": "November 6, 2026: Aliaksandra Sasnovich vs Maria Sakkari: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrFtBnvnaLaIKLwEIgVxfRT38Mwkrf6fhzIQPRDQKKr4h_aQXsvQSlxGPoeZ0"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/tomas-martin-etcheverry-vs-alex-de-minaur-game-spread-nov-04-2026/",
-          "title": "November 4, 2026: Tomas Martin Etcheverry vs Alex de Minaur: Game Spread Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJf9JJoDQmOnUJYF9IO8wzWzoMkRiYYGlme8THNDT8eaHGhO_CI7iAljeAkqE"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-learner-tien-set-2-winner-nov-04-2026/",
-          "title": "November 4, 2026: Luca Van Assche vs Learner Tien: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5m5p1Hlvu028hRp9dKQeA2f3guLVu6bQMd9JCY272ZAV3T_V1jQ97VBc4-ZA"
-        }
-      ]
-    },
-    {
-      "query": "john malkovich",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T06:10:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/arts-culture/film/wild-horse-nine-review-martin-mcdonaghs-black-comic-beauty-6f232d16",
-        "https://www.bostonglobe.com/2026/11/04/arts/wild-horse-nine-review-john-malkovich/",
-        "https://www.nytimes.com/2026/10/31/magazine/martin-mcdonagh-interview.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2RpM9u26I0WpszamEoVhOybs6fwAB9JCirs55TmO3dKHxADiOkshxyYe5aw",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/arts-culture/film/wild-horse-nine-review-martin-mcdonaghs-black-comic-beauty-6f232d16",
-          "title": "‘Wild Horse Nine’ Review: Martin McDonagh’s Black-Comic Beauty",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2RpM9u26I0WpszamEoVhOybs6fwAB9JCirs55TmO3dKHxADiOkshxyYe5aw"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/04/arts/wild-horse-nine-review-john-malkovich/",
-          "title": "‘Wild Horse Nine’ has two CIA agents outside Easter Island",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShi0z3KOP5nrakBdgK60_PTGYuOvvch8l4eYyJ_uBWPfJEwaurx90iR0o41M8"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/10/31/magazine/martin-mcdonagh-interview.html",
-          "title": "Martin McDonagh Says Art Can Change the World. Just Not As Much as Murder.",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdy39jpAPDQuuTQW7WvFWZiKPRZlMAat71ekZBMhoqBJMVkh92fFtFu5dWqg"
-        }
-      ]
-    },
-    {
-      "query": "baba miller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T06:10:00Z",
-      "related_news_urls": [
-        "https://www.ajc.com/sports/2026/11/could-braves-and-sonny-gray-finally-happen-this-offseason/",
-        "https://www.mlbtraderumors.com/2026/10/sonny-gray-becomes-free-agent-after-mutual-option-is-declined.html",
-        "https://sports.yahoo.com/articles/red-sox-fan-favorite-starter-220006430.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTggWjbNDAsU6RgtRJNsLhYkWzJeXWlr_5fpo06vmysTa3gOS46_5S446Ul59Y",
-      "image_credit": "The Atlanta Journal-Constitution",
-      "news": [
-        {
-          "url": "https://www.ajc.com/sports/2026/11/could-braves-and-sonny-gray-finally-happen-this-offseason/",
-          "title": "Could Braves and Sonny Gray finally happen this offseason?",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTggWjbNDAsU6RgtRJNsLhYkWzJeXWlr_5fpo06vmysTa3gOS46_5S446Ul59Y"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/10/sonny-gray-becomes-free-agent-after-mutual-option-is-declined.html",
-          "title": "Red Sox Decline Mutual Option On Sonny Gray",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYoYFfpD_nXRIJScC2D9ymWoEobOEIvm0YdcfXI-nP7SKEjj6UI0yLqmsMnFU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/red-sox-fan-favorite-starter-220006430.html",
-          "title": "Red Sox Fan Favorite Starter Could Be One-and-Done in Boston",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQX9gdIAB10JpgiIYkkT3pQTzIuGtkxKX_oJ7kl9oK9W0McsVXQaxi60fSx6o"
         }
       ]
     }
