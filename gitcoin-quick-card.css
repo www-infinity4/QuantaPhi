@@ -1,0 +1,20 @@
+/* GIT setup belongs to the existing first-party carousel; compact and readable. */
+#gitcoinQuickCard{background:#202b36;color:#ebe7df;border:1px solid #465867;border-radius:20px;padding:18px;max-width:840px;box-shadow:0 5px 22px #15253224;font:500 16px/1.5 system-ui,-apple-system,Roboto,sans-serif;letter-spacing:.14px}
+#gitcoinQuickCard .gcq-top{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#bfcdd8;font-size:13px;font-weight:700}
+#gitcoinQuickCard .gcq-art{height:138px;display:flex;align-items:center;justify-content:center;margin:12px 0;border-radius:15px;background:linear-gradient(140deg,#263d53,#334454 60%,#30465c)}
+#gitcoinQuickCard .gcq-art svg{width:152px;height:112px;stroke:#d2e1ec;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+#gitcoinQuickCard h2{font-size:clamp(24px,6vw,31px);line-height:1.2;color:#fff;margin:8px 0}
+#gitcoinQuickCard p{margin:8px 0 12px;color:#c6d2d9}
+#gitcoinQuickCard label{display:block;font-size:14px;color:#d3e0e9;margin:10px 0 4px}
+#gitcoinQuickCard input{width:100%;min-height:48px;max-width:100%;border:1px solid #97afc1;border-radius:10px;padding:11px 13px;background:#14202b;color:#fff;font:500 17px/1.4 system-ui}
+#gitcoinQuickCard .gcq-actions{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}
+#gitcoinQuickCard button{border:1px solid #a1bccc;background:#d3e4eb;color:#152630;padding:11px 14px;min-height:48px;border-radius:11px;font-size:15px}
+#gitcoinQuickCard a{color:#c6dfef;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+#gitcoinQuickCard button:focus-visible,#gitcoinQuickCard a:focus-visible,#gitcoinQuickCard input:focus-visible{outline:3px solid #edcd83;outline-offset:3px}
+#gitcoinQuickCard details{margin:10px 0;color:#d8e2ec}
+#gitcoinQuickCard pre{max-height:220px;white-space:pre-wrap;overflow:auto;overflow-wrap:anywhere;font:13px/1.6 ui-monospace,monospace;background:#111c26;color:#cce4d5;padding:12px;border-radius:10px}
+#gitcoinQuickCard [data-gitcoin-status]{display:block;min-height:22px;font-size:13px;color:#c6d3de}
+
+/* One real card in the rotating stage: no extra visible homepage duplicate. */
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app > #gitcoinQuickCard{display:none!important}
+.oracle-card-deck-stage > #gitcoinQuickCard{display:block;margin:0}

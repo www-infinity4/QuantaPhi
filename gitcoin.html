@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GIT Coin · QuantaPhi</title>
+<meta name="description" content="Collect traceable GIT code-line candidates from your own GitHub contributions with a private Termux SQLite ledger.">
+<style>
+:root{font:17px/1.58 system-ui,-apple-system,Roboto,sans-serif;letter-spacing:.18px;color:#e6e2dc;background:#151c25}*{box-sizing:border-box}
+body{max-width:840px;margin:auto;padding:22px 16px 70px}header{display:flex;align-items:center;justify-content:space-between;gap:18px}
+a{color:#abc9ee}a:focus-visible,button:focus-visible{outline:3px solid #ffda95;outline-offset:3px}
+main{display:grid;gap:18px;margin-top:28px}section{background:#202b36;border:1px solid #3a4854;border-radius:17px;padding:18px}
+h1{font-size:clamp(2rem,7vw,3rem);line-height:1.18;margin:10px 0}h2{font-size:1.25rem;margin:0 0 7px}p{margin:8px 0 13px}
+.tag{display:inline-block;color:#d8caa8;border:1px solid #76694e;border-radius:24px;padding:3px 10px;font-size:.85rem}
+pre{white-space:pre-wrap;word-break:break-word;padding:14px;border-radius:10px;background:#111820;color:#d2e9cb;font-size:.9rem;line-height:1.6;overflow:auto}
+button{border:1px solid #9bb7cb;border-radius:10px;padding:12px 16px;min-height:48px;background:#d5e4ed;color:#1b2a38;font:700 1rem system-ui;cursor:pointer}
+small{color:#c6cbd1}.rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.item{background:#18222d;border-radius:12px;padding:13px}.item strong{display:block;color:#fff}footer{margin-top:25px;color:#abb6c0}
+</style>
+</head>
+<body>
+<header><strong>QuantaPhi · GIT</strong><a href="/">Back to QuantaPhi</a></header>
+<main>
+<section aria-labelledby="title"><span class="tag">Source-backed programming assets · pilot</span>
+<h1 id="title">GIT Coin</h1>
+<p>Build code. Push a commit to your personal GitHub repository. Collect a unique, traceable local receipt for each newly added line. Quant AI's separate review will decide which candidates eventually qualify for awards.</p>
+<div class="rail"><div class="item"><strong>Code line</strong><small>Repo, commit, file, line and hash</small></div><div class="item"><strong>Local database</strong><small>Private SQLite receipts</small></div><div class="item"><strong>Credit status</strong><small>Pending, not spendable or cash</small></div></div>
+</section>
+<section aria-labelledby="termux" data-gitcoin-root><h2 id="termux">Collect with Termux or an AI assistant</h2>
+<p>Enter your own GitHub repository. Copy the commands into Android Termux, or give the setup instructions to an AI assistant you choose. Your repository must already have pushed commits.</p>
+<label for="gitcoinRepo">Your GitHub repository (owner/repo)</label>
+<input id="gitcoinRepo" data-gitcoin-repo type="text" placeholder="YOUR_GITHUB/your-repo" autocapitalize="off" spellcheck="false" aria-describedby="copyStatus" style="width:100%;min-height:48px;padding:11px;border:1px solid #a9bccb;border-radius:10px;background:#14202b;color:#fff;font:17px system-ui">
+<pre id="setupCode" data-gitcoin-preview>Enter YOUR_GITHUB/your-repo to generate your commands.</pre>
+<button id="copySetup" data-gitcoin-copy="termux" type="button">Copy Termux commands</button>
+<button id="copyAi" data-gitcoin-copy="ai" type="button">Copy for AI</button>
+<small id="copyStatus" data-gitcoin-status role="status" aria-live="polite">Pending local receipts only; no wallet credits issued.</small>
+<p><a href="https://github.com/www-infinity4/QuantaPhi/blob/feat/gitcoin-termux-sqlite-20261104/gitcoin/termux-ledger.py">Inspect the actual collector source: termux-ledger.py</a></p>
+<p>Requires <code>git</code>, <code>gh</code>, <code>node</code> and <code>python3</code>, with <code>gh auth login</code> completed by you. No npm or paid API. Database: <code>~/.quantaphi/gitcoin/receipts.sqlite3</code>.</p>
+</section>
+<section aria-labelledby="agent"><h2 id="agent">Bubbles and GPT developer receipts</h2>
+<p>Bubbles may create pending GIT claims for eligible code that it genuinely commits for a consenting user, with a signed task receipt and an explicitly approved owner/operator beneficiary. GPT or another agent is attributed separately. No third-party AI provider participates in or accepts GIT automatically.</p>
+<p><strong>Bubble Bits</strong> are the separate QuantaPhi/Bubbles work-iteration system. <strong>GPT Coin</strong> is a distinct optional provider-issued system: a user can propose or create their own similar record, but it is not an official GPT-issued coin. No provider-issued GPT Coin or integration is currently verified.</p>
+</section>
+<section aria-labelledby="trade"><h2 id="trade">Business marketplace — proposed</h2>
+<p>Businesses could someday license useful code, purchase approved GIT units, or accept units for eligible services under signed agreements. These transactions require a real buyer, lawful reuse rights and tested wallet transfers. IBM and other technology companies have not been verified as accepting this GIT Coin.</p>
+<p><a href="https://github.com/www-infinity4/QuantaPhi/pull/1675">GIT collector and verification PR</a> · <a href="https://github.com/www-infinity4/QuantaPhi/issues/1250">Engineering issue and release gates</a></p>
+</section>
+</main>
+<footer>GIT is a QuantaPhi proposed programming-work unit, distinct from Gitcoin's existing GTC token and the Git version-control system. Pending local receipts do not constitute real financial income or a verified wallet balance.</footer>
+<script type="module" src="/gitcoin-quick-card.mjs?v=20261104-copy-ai1"></script>
+</body></html>
