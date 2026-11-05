@@ -8,6 +8,8 @@ on:
       - 'media-star-gallery*.mjs'
       - 'media-star-gallery.css'
       - 'media-star-creator.js'
+      - 'bubbles-star-coin-audit.js'
+      - 'test/bubbles-star-coin-audit.test.mjs'
       - 'test/executor-insights.test.mjs'
       - 'media-star-interactions.js'
       - 'bubbles-executor-insights.js'
@@ -28,7 +30,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify executor isolation and real card interaction contracts
-        run: node --test test/executor-insights.test.mjs test/media-star-gallery*.test.mjs
+        run: node --test test/executor-insights.test.mjs test/media-star-gallery*.test.mjs test/bubbles-star-coin-audit.test.mjs
       - name: Check browser and Worker syntax
         run: |
           node --check media-star-interactions.js
@@ -38,6 +40,7 @@ jobs:
           node --check media-star-gallery-core.mjs
           node --check media-star-gallery.mjs
           node --check media-star-creator.js
+          node --check bubbles-star-coin-audit.js
       - name: Check Cloudflare D1 SQL migrations
         run: |
           python3 - <<'PY'
