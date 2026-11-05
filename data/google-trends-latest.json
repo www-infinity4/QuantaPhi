@@ -3,12 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-04T23:31:30.845390Z",
+  "checked_at": "2026-11-05T00:02:09.048142Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "hawks vs wizards",
+      "query": "blackhawks vs panthers",
       "approx_searches": "2000+",
+      "published_at": "2026-11-04T23:40:00Z",
+      "related_news_urls": [
+        "https://www.litterboxcats.com/florida-panthers-vs-chicago-blackhawks-gameday-16-2026-27-nhl-season/",
+        "https://www.nhl.com/nhl-network/topic/nhln-latest-video/pepsi-primetime-preview-blackhawks-at-panthers-6407926398112",
+        "https://sports.yahoo.com/articles/florida-panthers-lars-eller-hit-221237145.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNt-HwlkUieL4BQhP5tBZnTUw2xsp692rUm6Xq5aYnsJoXvKNR3b-3Tq7voU8",
+      "image_credit": "Litter Box Cats",
+      "news": [
+        {
+          "url": "https://www.litterboxcats.com/florida-panthers-vs-chicago-blackhawks-gameday-16-2026-27-nhl-season/",
+          "title": "Gameday 16: Florida Panthers vs Chicago Blackhawks",
+          "publisher": "Litter Box Cats",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNt-HwlkUieL4BQhP5tBZnTUw2xsp692rUm6Xq5aYnsJoXvKNR3b-3Tq7voU8"
+        },
+        {
+          "url": "https://www.nhl.com/nhl-network/topic/nhln-latest-video/pepsi-primetime-preview-blackhawks-at-panthers-6407926398112",
+          "title": "Pepsi Primetime Preview: Blackhawks at Panthers",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK9Tn8AwLSSj_BOrgC1ZTdZBe_n0H2RzXGntf5jX5QJ6cY6aMq9TamhNcbjPE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/florida-panthers-lars-eller-hit-221237145.html",
+          "title": "Florida Panthers' Lars Eller Will Hit Impressive Games Played Milestone Against The Chicago Blackhawks",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMX5XxeZtx_BclhvUha9oektWc30jV5TDHH4qt6OtXXZ0HyJITto_5xn_2HkU"
+        }
+      ]
+    },
+    {
+      "query": "senators vs sabres",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T23:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-4-2026",
+        "https://www.nytimes.com/athletic/7750552/2026/11/04/buffalo-sabres-alex-tuch-trade-dylan-larkin/",
+        "https://sports.yahoo.com/articles/senators-vs-sabres-prediction-picks-143750764.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDOgK_28pq020TYCQkRra_0HlcfFxDYidlMk2YL3PdtQEXjvbhq3ftUZYRsDQ",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-4-2026",
+          "title": "NHL On Tap: Batherson looks to extend streak when Senators visit Sabres",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDOgK_28pq020TYCQkRra_0HlcfFxDYidlMk2YL3PdtQEXjvbhq3ftUZYRsDQ"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7750552/2026/11/04/buffalo-sabres-alex-tuch-trade-dylan-larkin/",
+          "title": "Buffalo Sabres mailbag: Alex Tuch, Dylan Larkin, trade rumors and more",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuYHERsfATUn109cjBpM4sl0l3KuKgtsR7KkANxKcgjH4wmDDuVxg5QJtztmw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/senators-vs-sabres-prediction-picks-143750764.html",
+          "title": "Senators vs Sabres Prediction, Picks, NHL Odds for Wednesday, November 4",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSgi6qi_47xeDp_R_MovfoyDZUNW1HFUENGVibvPyqC0ExgJM0HXVWo5uOHLA"
+        }
+      ]
+    },
+    {
+      "query": "bruce springsteen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T23:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/entertainment/bruce-springsteen-sparks-fan-fury-after-backing-abdul-el-sayed-michigan-senate-race",
+        "https://variety.com/2026/music/news/bruce-springsteen-abdul-el-sayed-senator-election-1236937898/",
+        "https://www.jpost.com/us-elections/article-913656"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQNgPTblvpLK2XKdv4aFTD2gB0Kw_1XpjfJkZbR4sgI2r0BXONo40KFsOFEc",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/entertainment/bruce-springsteen-sparks-fan-fury-after-backing-abdul-el-sayed-michigan-senate-race",
+          "title": "Bruce Springsteen sparks fan fury after backing Abdul El-Sayed in Michigan Senate race",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQNgPTblvpLK2XKdv4aFTD2gB0Kw_1XpjfJkZbR4sgI2r0BXONo40KFsOFEc"
+        },
+        {
+          "url": "https://variety.com/2026/music/news/bruce-springsteen-abdul-el-sayed-senator-election-1236937898/",
+          "title": "Bruce Springsteen Endorses Abdul El-Sayed for Senator: ‘He’s a Fighter Against’ Trump’s ‘Corrupt, Lawless, Anti-American Leadership’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX_zwGzby4RouGC0W82cvTWuklyki5i76zFOvqx_g8Uy8IzYzY03Q8jOjKTfM"
+        },
+        {
+          "url": "https://www.jpost.com/us-elections/article-913656",
+          "title": "US midterms: Nicki Minaj backs Donald Trump, Springsteen backs Democrats",
+          "publisher": "The Jerusalem Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-75fo4A7VDdNcAgzUwK4oX7e3yc8bRlgZHPq_cFD34Xaa23KMKJTHrNFmOFI"
+        }
+      ]
+    },
+    {
+      "query": "molly miller",
+      "approx_searches": "500+",
+      "published_at": "2026-11-04T23:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/molly-miller-back-second-year-arizona-state-turns-heads-home-opener",
+        "https://www.barstoolsports.com/blog/3580455/forks-up-asu-womens-basketball-coach-molly-miller-is-a-rock-star",
+        "https://www.reutersconnect.com/item/fans-cheer-from-the-stands-as-the-arizona-state-womens-basketball-team-plays-the-jackson-state-tigers-at-desert-financial-arena/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAyNjA4NjI"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ81lSar4T8OThInOzqysNwHRH21XszOMCSy7BYLyZhkIi30KTAxdFyZCP_6qY",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/molly-miller-back-second-year-arizona-state-turns-heads-home-opener",
+          "title": "Molly Miller is back for her second year at Arizona State, turns heads during home opener",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ81lSar4T8OThInOzqysNwHRH21XszOMCSy7BYLyZhkIi30KTAxdFyZCP_6qY"
+        },
+        {
+          "url": "https://www.barstoolsports.com/blog/3580455/forks-up-asu-womens-basketball-coach-molly-miller-is-a-rock-star",
+          "title": "Forks Up: ASU Women's Basketball Coach Molly Miller is a Rock Star",
+          "publisher": "Barstool Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNCaSDN-VZSfo2qsNgn-W-gBq6iN4RPSfMOw0Qz9Wu5Bj7SLphJ_yBCImuSUY"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/fans-cheer-from-the-stands-as-the-arizona-state-womens-basketball-team-plays-the-jackson-state-tigers-at-desert-financial-arena/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAyNjA4NjI",
+          "title": "Licensable picture: Fans cheer from the stands as the Arizona State women's basketball team plays the Jackson State Tigers at Desert Financial Arena",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYt92w72IZyQnEEv6SoOwWs_rrnjl-UEAxuxk2z4SmzPBxIZfJnk5vJGSIiy4"
+        }
+      ]
+    },
+    {
+      "query": "bulls vs knicks",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-04T23:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/watch-bulls-vs-knicks-live-231500389.html",
+        "https://www.cbssports.com/betting/news/knicks-bulls-prediction-odds-time-2026-nba-picks-best-bets-wednesday-november-4/",
+        "https://www.postingandtoasting.com/knicks-news/90913/knicks-bulletin-im-a-little-excited-that-were-struggling"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7fZ5Xv3cT3pnTWhCxxaEiBLIt9pRNYp5-ARzoyjZclZid4lrELH6QrMsgkSo",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/watch-bulls-vs-knicks-live-231500389.html",
+          "title": "How to watch Bulls vs Knicks: Live stream NBA, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7fZ5Xv3cT3pnTWhCxxaEiBLIt9pRNYp5-ARzoyjZclZid4lrELH6QrMsgkSo"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/knicks-bulls-prediction-odds-time-2026-nba-picks-best-bets-wednesday-november-4/",
+          "title": "Knicks vs. Bulls prediction, odds, time: 2026 NBA picks for Wednesday, Nov. 4 from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6NCc2UOfnM7LR-lOOkYV5qzQliB--spXNS6P76Upg3VJzGMSH5DuNYhrt8F8"
+        },
+        {
+          "url": "https://www.postingandtoasting.com/knicks-news/90913/knicks-bulletin-im-a-little-excited-that-were-struggling",
+          "title": "Knicks Bulletin: ‘I’m a little excited that we’re struggling’",
+          "publisher": "Posting and Toasting",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPnbIOoJXW8dg6SMsi1Sj0c7kCsrHrUjEJldt7V-y6LjfJv-XfQPLf_MTp87E"
+        }
+      ]
+    },
+    {
+      "query": "bucks vs celtics",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-04T23:30:00Z",
+      "related_news_urls": [
+        "https://nesn.com/boston-celtics/news/why-jayson-tatum-isnt-playing-tonight-bucks/34fbe942e4637d0f749702d4",
+        "https://sports.yahoo.com/articles/bucks-visit-celtics-looking-prevent-213039670.html",
+        "https://www.celticsblog.com/boston-celtics-news/149289/celtics-injury-report-bucks-jayson-tatum-payton-pritchard"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38kj9pI6_MKVREBV3YtW9cmjY4UGI27NDs3ZrB3vXyyEjo2sjWH30HyF-8nI",
+      "image_credit": "NESN",
+      "news": [
+        {
+          "url": "https://nesn.com/boston-celtics/news/why-jayson-tatum-isnt-playing-tonight-bucks/34fbe942e4637d0f749702d4",
+          "title": "Why Jayson Tatum Isn't Playing Tonight vs. Bucks",
+          "publisher": "NESN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38kj9pI6_MKVREBV3YtW9cmjY4UGI27NDs3ZrB3vXyyEjo2sjWH30HyF-8nI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/bucks-visit-celtics-looking-prevent-213039670.html",
+          "title": "Bucks visit Celtics, looking to prevent one of Milwaukee’s worst starts ever",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7h9hJ2tgUbpgIDA1vMYafj6aK_srRYkSKQ5RNpEXIg31uf_w0tUHSM5AIBIs"
+        },
+        {
+          "url": "https://www.celticsblog.com/boston-celtics-news/149289/celtics-injury-report-bucks-jayson-tatum-payton-pritchard",
+          "title": "Celtics injury report reveals team could be without two stars vs. Bucks",
+          "publisher": "CelticsBlog",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4yZfKpCj7z8jAg_ytGO9ZLNgV9j98t-P7YtjnSsL8bGOCF17N-OcITcy09mM"
+        }
+      ]
+    },
+    {
+      "query": "dakota johnson",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-04T23:30:00Z",
+      "related_news_urls": [
+        "https://people.com/dakota-johnson-and-mgk-spotted-together-in-california-12236676",
+        "https://www.eonline.com/news/1437832/dakota-johnson-machine-gun-kelly-have-l-a-date-night-amid-romance-rumors",
+        "https://www.elle.com/culture/celebrities/a73962132/dakota-johnson-machine-gun-kelly-relationship-timeline/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCxRJJT1uAJpQF7S_cKXvlIN_FAuGByQO12u2NJ4zESuKn563F2VAwjBNItI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/dakota-johnson-and-mgk-spotted-together-in-california-12236676",
+          "title": "Dakota Johnson and MGK Step Out Together in California as Their Romance Heats Up",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCxRJJT1uAJpQF7S_cKXvlIN_FAuGByQO12u2NJ4zESuKn563F2VAwjBNItI"
+        },
+        {
+          "url": "https://www.eonline.com/news/1437832/dakota-johnson-machine-gun-kelly-have-l-a-date-night-amid-romance-rumors",
+          "title": "Dakota Johnson, Machine Gun Kelly Hit a High Note With L.A. Dinner Date",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuo5g9TMUoy28Ick8jrgKXd_5cz5MyJ_pmsZmaV5nuI3hcywJyMoLDzIbgxp0"
+        },
+        {
+          "url": "https://www.elle.com/culture/celebrities/a73962132/dakota-johnson-machine-gun-kelly-relationship-timeline/",
+          "title": "Dakota Johnson and Machine Gun Kelly Are ‘Growing Closer’—Get to Know Their History",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO6wNmg9mBEyewOFduJRxItjl6o8OcEgk-ZLFtHWA3f95YfIw09_BDTAbZopY"
+        }
+      ]
+    },
+    {
+      "query": "lebron james stats",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-04T23:30:00Z",
+      "related_news_urls": [
+        "https://arizonasports.com/ncaa/arizona-wildcats/uofa-basketball/arizona-wildcats-start-bryce-james-in-season-opener-vs-ucla",
+        "https://www.usatoday.com/story/sports/ncaab/big12/2026/11/03/bryce-james-arizona-basketball-first-start-stats/92579162007/",
+        "https://bleacherreport.com/articles/25528879-bryce-james-full-box-score-highlights-mcbb-debut-arizonas-upset-loss-ucla"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTj30OlZaydhspeQjbrOJYY7SvzhnRsL37YDfU1QQ-b6thJ_ulsRMz5QGCdWew",
+      "image_credit": "Arizona Sports",
+      "news": [
+        {
+          "url": "https://arizonasports.com/ncaa/arizona-wildcats/uofa-basketball/arizona-wildcats-start-bryce-james-in-season-opener-vs-ucla",
+          "title": "Arizona Wildcats start Bryce James in season opener vs. UCLA",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTj30OlZaydhspeQjbrOJYY7SvzhnRsL37YDfU1QQ-b6thJ_ulsRMz5QGCdWew"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaab/big12/2026/11/03/bryce-james-arizona-basketball-first-start-stats/92579162007/",
+          "title": "Bryce James stats: Lebron James' son makes first college start for Arizona",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNoHpPEajTDrpMvgTre_WT8UtVkc8KjokaeiOycC8NJ5ELKDOknYUUGPYpI7s"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25528879-bryce-james-full-box-score-highlights-mcbb-debut-arizonas-upset-loss-ucla",
+          "title": "Bryce James' Full Box Score, Highlights From MCBB Debut in Arizona's Upset Loss to UCLA",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9r9w0lOykX4RuLwpa-wmmjcq0FEPdpkpVVBtSVlMfeO513-Q_fwd2178hcBU"
+        }
+      ]
+    },
+    {
+      "query": "hawks vs wizards",
+      "approx_searches": "5000+",
       "published_at": "2026-11-04T23:10:00Z",
       "related_news_urls": [
         "https://www.bulletsforever.com/washington-wizards-preview/73821/washington-wizards-atlanta-hawks-nba-game-preview",
@@ -42,48 +322,13 @@
       ]
     },
     {
-      "query": "ball state vs umass",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-04T23:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsline.com/insiders/ball-state-vs-umass-odds-2026-college-football-picks-week-10-maction-predictions-from-proven-model/",
-        "https://nypost.com/2026/11/04/betting/ball-state-vs-umass-prediction-maction-picks-odds-best-bets-for-wednesday/",
-        "https://collegefootballnews.com/college-football/ball-state-vs-umass-prediction-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjBKfBb3agQheJ0RJz6T4mta91-8pQNeFfeZtQOOuOUQXQSRvYdKXl88eNTVs",
-      "image_credit": "SportsLine",
-      "news": [
-        {
-          "url": "https://www.sportsline.com/insiders/ball-state-vs-umass-odds-2026-college-football-picks-week-10-maction-predictions-from-proven-model/",
-          "title": "Ball State vs. UMass odds: 2026 college football picks, Week 10 MACtion predictions from proven model",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjBKfBb3agQheJ0RJz6T4mta91-8pQNeFfeZtQOOuOUQXQSRvYdKXl88eNTVs"
-        },
-        {
-          "url": "https://nypost.com/2026/11/04/betting/ball-state-vs-umass-prediction-maction-picks-odds-best-bets-for-wednesday/",
-          "title": "Ball State vs. UMass prediction: MACtion picks, odds, best bets for Wednesday",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFdnc-LO99Ue3KAJkskgCDpOCl-ZesAjDRJNX-Hoomd_-QyekrfPs0sgv0wvU"
-        },
-        {
-          "url": "https://collegefootballnews.com/college-football/ball-state-vs-umass-prediction-2026",
-          "title": "Ball State vs UMass Prediction: Can the Minutemen Turn This Around?",
-          "publisher": "College Football News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIV3SL_xHucc6csn2Cz1e16WpCcogaXa91qEIAVvGeqeOesIRlzfomcU0oMBQ"
-        }
-      ]
-    },
-    {
       "query": "jen affleck",
-      "approx_searches": "500+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-04T23:10:00Z",
       "related_news_urls": [
         "https://www.tmz.com/2026/11/04/jen-affleck-files-for-divorce/",
         "https://www.eonline.com/news/1437660/pregnant-mormon-wives-jen-affleck-zac-affleck-break-up-divorcing",
-        "https://parade.com/news/mormon-wives-jen-affleck-files-divorce-husband-zac"
+        "https://www.usmagazine.com/celebrity-news/news/pregnant-jen-affleck-files-for-divorce-from-husband-zac/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg8Amqio3K0kaTmhE2xd_1-3B6lSxOhf4XORqq3HhhobBIUGCevJeBhV1nnGQ",
       "image_credit": "TMZ",
@@ -100,259 +345,14 @@
           "title": "Pregnant Mormon Wives Star Jen Affleck and Zac Affleck Break Up, Divorcing After 7 Years of Marriage",
           "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpiWQiMPMMGsD9DnUWqqGyB5AeAETBEz3eaIzqUvnyofycHeaUD_lHGgzqBt8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb36JUC989hG-ur-Jgk0Ll8QBevt0iiLC053Hsk8s904i21YbyfU6-0Fp8Gek"
         },
         {
-          "url": "https://parade.com/news/mormon-wives-jen-affleck-files-divorce-husband-zac",
-          "title": "Mormon Wives’ Jen Affleck Files for Divorce from Husband Zac",
-          "publisher": "Parade Magazine",
+          "url": "https://www.usmagazine.com/celebrity-news/news/pregnant-jen-affleck-files-for-divorce-from-husband-zac/",
+          "title": "Secret Lives of Mormon Wives’ Jen Affleck Files for Divorce From Zac While Pregnant With Baby No. 4",
+          "publisher": "Us Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOVcdTELJ6dTa7rZCZps8NbT0Z4-iTQsElj_8qPZ15WM1eRyNHe1WsiQSI4U"
-        }
-      ]
-    },
-    {
-      "query": "toledo vs sacramento st",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T23:10:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/polymarket-promo-code-cbssports-get-25-bonus-toledo-sacramento-state-wednesday-college-football-predictions/",
-        "https://www.cbssports.com/betting/news/toledo-sacramento-state-prediction-odds-time-2026-week-10-maction-college-football-picks-best-bets/",
-        "https://sportsbook.fanduel.com/football/ncaa-football-games/toledo-@-sacramento-state-36248785"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-football/news/polymarket-promo-code-cbssports-get-25-bonus-toledo-sacramento-state-wednesday-college-football-predictions/",
-          "title": "Polymarket promo code CBSSPORTS: Get $25 bonus for Toledo-Sacramento State, Wednesday college football",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/toledo-sacramento-state-prediction-odds-time-2026-week-10-maction-college-football-picks-best-bets/",
-          "title": "Toledo vs. Sacramento State prediction, odds, time: Week 10 MACtion picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTAdiYPX4hi0q88WLuf82UtRNA2t4MPmUbzCp3wGrP7XT_GDRTTMMl-0Bplz8"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/toledo-@-sacramento-state-36248785",
-          "title": "Toledo @ Sacramento State Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3VnYzYqI_rFs_w6UNwKwekPzs91TDC7oqxv4aqx5Va0iYDC7m9U_WkMCZeeQ"
-        }
-      ]
-    },
-    {
-      "query": "central michigan football",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-04T23:10:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/eastern-michigan-vs-central-michigan-odds-picks-prediction-start-time-college-football-betting-preview/",
-        "https://www.mlive.com/tv/2026/11/how-to-watch-central-michigan-vs-eastern-michigan-football-for-free-tonight.html",
-        "https://collegefootballnews.com/college-football/central-michigan-vs-eastern-michigan-prediction-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu3MRW8GzgK6fLMmC0Bq9GtkDVnBwjwQXfvlaaxm21TKzsJxClk9WIARfzhK4",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/eastern-michigan-vs-central-michigan-odds-picks-prediction-start-time-college-football-betting-preview/",
-          "title": "Eastern Michigan vs. Central Michigan odds, picks, prediction, start time: College football betting preview",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu3MRW8GzgK6fLMmC0Bq9GtkDVnBwjwQXfvlaaxm21TKzsJxClk9WIARfzhK4"
-        },
-        {
-          "url": "https://www.mlive.com/tv/2026/11/how-to-watch-central-michigan-vs-eastern-michigan-football-for-free-tonight.html",
-          "title": "How to watch Central Michigan vs. Eastern Michigan football for free tonight",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSndEsKkRjszyOrt9-oO688t-Y2AYkTJOuFojTLpX4yWLmar91dpI0Wh4p9B8Y"
-        },
-        {
-          "url": "https://collegefootballnews.com/college-football/central-michigan-vs-eastern-michigan-prediction-2026",
-          "title": "Central Michigan vs Eastern Michigan Prediction: Can the Eagles Make a MAC Push?",
-          "publisher": "College Football News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtDKzSeXMLkVCgpvpItwqFl-r-EsqcFTZJJbX_TM8HoQ3ROSfa1N1YkGwpIpM"
-        }
-      ]
-    },
-    {
-      "query": "76ers vs pistons",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-04T23:00:00Z",
-      "related_news_urls": [
-        "https://www.detroitbadboys.com/detroit-pistons-game-day/51431/pistons-vs-76ers-preview-easts-top-two-teams-square-off-on-national-tv",
-        "https://www.libertyballers.com/76ers-game-previews/100969/philadelphia-sixers-detroit-pistons-nba-embiid-lebron-duren-reed",
-        "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-get-55-bonus-76ers-vs-pistons-mavericks-vs-spurs-nba-wednesday/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAv305c6fac_FP2yIA40DTEzWuk9Y71LnufKytv3-dxfBr2JYupSlMGYzFsg",
-      "image_credit": "Detroit Bad Boys",
-      "news": [
-        {
-          "url": "https://www.detroitbadboys.com/detroit-pistons-game-day/51431/pistons-vs-76ers-preview-easts-top-two-teams-square-off-on-national-tv",
-          "title": "Pistons vs 76ers preview: East’s top two teams square off on National TV",
-          "publisher": "Detroit Bad Boys",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAv305c6fac_FP2yIA40DTEzWuk9Y71LnufKytv3-dxfBr2JYupSlMGYzFsg"
-        },
-        {
-          "url": "https://www.libertyballers.com/76ers-game-previews/100969/philadelphia-sixers-detroit-pistons-nba-embiid-lebron-duren-reed",
-          "title": "Sixers face Pistons with chance to avenge lone loss of the season",
-          "publisher": "Liberty Ballers",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2jC3cZisPFsY_C-V15bsSeUJs-ATlkzoHhFyZ7IwNyCbjN9bYcyMyEulNUs"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-get-55-bonus-76ers-vs-pistons-mavericks-vs-spurs-nba-wednesday/",
-          "title": "Best Kalshi promo code CBSSPORTS55: Get $55 bonus for 76ers vs. Pistons, Mavericks vs. Spurs, NBA Wednesday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnrfzmZeWglIoRznqZnGDqP0LJKBcEunIHzysQ9EYeI8BAqcU6PX5jiZaY_pI"
-        }
-      ]
-    },
-    {
-      "query": "twitch",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-04T23:00:00Z",
-      "related_news_urls": [
-        "https://www.pokernews.com/news/2026/11/lex-veldhuis-joins-ggpoker-52729.htm",
-        "https://www.poker.org/latest-news/twitch-poker-king-lex-veldhuis-signs-with-ggpoker-amkZy9l4I1UM/",
-        "https://pokerfuse.com/the-rail/2026/45/?post=7566"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7G2nfESP3TFBTuxFtCXxVh7YpwRLD5qMkf1eML7WlUdEmqEUpogyF0HngDCU",
-      "image_credit": "PokerNews",
-      "news": [
-        {
-          "url": "https://www.pokernews.com/news/2026/11/lex-veldhuis-joins-ggpoker-52729.htm",
-          "title": "Lex Veldhuis Becomes the Newest GGPoker Ambassador",
-          "publisher": "PokerNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7G2nfESP3TFBTuxFtCXxVh7YpwRLD5qMkf1eML7WlUdEmqEUpogyF0HngDCU"
-        },
-        {
-          "url": "https://www.poker.org/latest-news/twitch-poker-king-lex-veldhuis-signs-with-ggpoker-amkZy9l4I1UM/",
-          "title": "Twitch poker king Lex Veldhuis signs with GGPoker",
-          "publisher": "Poker.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKDF8o0VbK3BMNTC8zvoV494ul-j46li87IgGv3bPtvvWvAhTVjZArRVPlt9c"
-        },
-        {
-          "url": "https://pokerfuse.com/the-rail/2026/45/?post=7566",
-          "title": "This is your opportunity to ask your questions and have Lex Veldhuis give his honest response.",
-          "publisher": "Pokerfuse",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhd6vbxLtgHWDovXnMwbO53YzwyskLCk112eOfwWslsezDJWz17AB5OI9Fg2k"
-        }
-      ]
-    },
-    {
-      "query": "fanning island boat rescue kiribati",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T23:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/world/australia/months-lost-sea-small-boat-5-people-are-rescued-island-nation-kiribati-rcna607254",
-        "https://www.nytimes.com/2026/11/04/world/asia/micronesia-boat-survivors-found.html",
-        "https://people.com/5-people-found-alive-after-being-lost-at-sea-20-foot-boat-for-3-months-12207828"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtnsV5W5zLlNEiDGeWWNQoqnYTIGgUWwZgLD0NR7jhCLx8Yx7efl_IlM_ljy4",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/world/australia/months-lost-sea-small-boat-5-people-are-rescued-island-nation-kiribati-rcna607254",
-          "title": "After months lost at sea on a small boat, 5 people are rescued in the island nation of Kiribati",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtnsV5W5zLlNEiDGeWWNQoqnYTIGgUWwZgLD0NR7jhCLx8Yx7efl_IlM_ljy4"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/04/world/asia/micronesia-boat-survivors-found.html",
-          "title": "Five Survivors Rescued on Remote Pacific Island After 3 Months Lost at Sea",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0-B9qySYjbIxQauWnFwcEmQtS_tb_qxa0VjPYSnUxTZdp3-Cmdm-D9HPA5FI"
-        },
-        {
-          "url": "https://people.com/5-people-found-alive-after-being-lost-at-sea-20-foot-boat-for-3-months-12207828",
-          "title": "5 People, Including 2 Kids, Are Found Alive After 3 Months Lost at Sea When They Headed Out on 20-Foot Boat",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvbcSCqrjRPzk6lBwXIEgVNKFZEcHPbOAyTEN9bDgXrC_eFCpNsHaczxH__Eg"
-        }
-      ]
-    },
-    {
-      "query": "time magazine cover",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T23:00:00Z",
-      "related_news_urls": [
-        "https://www.thedailybeast.com/trumps-favorite-magazine-sticks-the-knife-in-after-crushing-defeat",
-        "https://www.yahoo.com/entertainment/celebrity/articles/donald-trump-really-really-going-191225086.html",
-        "https://www.aol.com/articles/donald-trump-gets-silent-treatment-145128000.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5zPwCOG6KAN4dyofCGWhfV74GriHYx-PJdkDGuAxlX0DT8x8Uf9sEntEVbpE",
-      "image_credit": "The Daily Beast",
-      "news": [
-        {
-          "url": "https://www.thedailybeast.com/trumps-favorite-magazine-sticks-the-knife-in-after-crushing-defeat",
-          "title": "Trump’s Favorite Magazine Sticks the Knife in After Crushing Defeat",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5zPwCOG6KAN4dyofCGWhfV74GriHYx-PJdkDGuAxlX0DT8x8Uf9sEntEVbpE"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/donald-trump-really-really-going-191225086.html",
-          "title": "Donald Trump Is Really, Really Going To Hate His New Time Magazine Cover",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgu4E_mrshjkBKTDwtmVlrhj1JcaG_48_l6hEi4F0yBGdUDrebPPUT0_jVVJU"
-        },
-        {
-          "url": "https://www.aol.com/articles/donald-trump-gets-silent-treatment-145128000.html",
-          "title": "Donald Trump Gets the Silent Treatment on TIME’s New Cover",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-QKeCCDNawemzaC4mfayLYB82OIsMLMzG5dft5DWxoUzdBwliiTNrJl-RJgU"
-        }
-      ]
-    },
-    {
-      "query": "aj dybantsa stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-04T23:00:00Z",
-      "related_news_urls": [
-        "https://wizofawes.com/washington-wizards-aj-dybantsa-defense-way-ahead-schedule-raises-ceiling",
-        "https://www.nba.com/watch/video/first-pick-aj-dybantsa-joins-the-association-to-talk-emirates-cup-play",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/aj-dybantsa-has-21-points-in-win-over-magic"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGfUG71Myds5F2ReNQAoR1K8kUXCzB9gSZ0g8drRM_xfDte7FnQ9IZvUzhcU0",
-      "image_credit": "Wiz of Awes",
-      "news": [
-        {
-          "url": "https://wizofawes.com/washington-wizards-aj-dybantsa-defense-way-ahead-schedule-raises-ceiling",
-          "title": "AJ Dybantsa's defense is way ahead of schedule and raises Wizards ceiling",
-          "publisher": "Wiz of Awes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGfUG71Myds5F2ReNQAoR1K8kUXCzB9gSZ0g8drRM_xfDte7FnQ9IZvUzhcU0"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/first-pick-aj-dybantsa-joins-the-association-to-talk-emirates-cup-play",
-          "title": "First pick AJ Dybantsa joins The Association to talk Emirates NBA Cup play",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwSMJ1Jq1RQO2la0GUyFfEIhd--NDrKp7wualto07hIaQ-vKo45xMaCHBae8s"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/aj-dybantsa-has-21-points-in-win-over-magic",
-          "title": "AJ Dybantsa has 21 points in win over Magic",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7pya_CNMdegQsF7ZNKN76ff71WMsxlRsPokX7OQFejnZJB5LRrBBatFDY71E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2tO8VwOmVgVNnwaocmd__B3cVwuN5I_kN5OpiiZQ-HarN_XFTmm75-ByUGpc"
         }
       ]
     }
