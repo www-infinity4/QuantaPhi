@@ -71,6 +71,13 @@ const inCentral=(value)=>{
   const d=new Date(value);
   return Number.isNaN(d.valueOf())?null:new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).format(d);
 };
+const verifiedNwsIcon=value=>{
+  if(typeof value!=='string')return '';
+  try{
+    const url=new URL(value);
+    return url.protocol==='https:'&&url.hostname==='api.weather.gov'&&url.pathname.startsWith('/icons/')&&!url.username&&!url.password&&!url.port?url.href:'';
+  }catch{return ''}
+};
 export function forecastSevenDays(periods,now=new Date()){
   if(!Array.isArray(periods))return [];
   const today=inCentral(now); if(!today)return [];
@@ -78,10 +85,12 @@ export function forecastSevenDays(periods,now=new Date()){
   for(const p of periods){
     const day=inCentral(p?.startTime);
     if(!day||day<today||!Number.isFinite(p?.temperature))continue;
-    if(!days.has(day))days.set(day,{date:day,high:null,low:null,summary:'',precip:null});
+    if(!days.has(day))days.set(day,{date:day,high:null,low:null,summary:'',precip:null,icon:''});
     const row=days.get(day);
     if(p.isDaytime){row.high=p.temperature;row.summary=String(p.shortForecast||'').slice(0,80)}
     else {row.low=p.temperature;if(!row.summary)row.summary=String(p.shortForecast||'').slice(0,80)}
+    const icon=verifiedNwsIcon(p?.icon);
+    if(icon&&(p.isDaytime||!row.icon))row.icon=icon;
     const prob=p?.probabilityOfPrecipitation?.value;
     if(Number.isFinite(prob))row.precip=Math.max(row.precip??0,Math.min(100,Math.max(0,prob)));
   }
