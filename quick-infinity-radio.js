@@ -153,6 +153,9 @@
   }
   function start() {
     if (!playbackRequested) return;
+    // Do not compete with the artist music dock when radio takes focus.
+    if (typeof window !== 'undefined' && typeof CustomEvent === 'function' && typeof window.dispatchEvent === 'function')
+      window.dispatchEvent(new CustomEvent('infinity:music-focus',{detail:{player:'radio'}}));
     if (!audio.getAttribute('src')) setTrack();
     const current = ++generation;
     status.textContent = 'Connecting · ' + tracks[trackIndex].title+' · '+songCount();
@@ -236,6 +239,12 @@
   audio.addEventListener('playing',() => {
     if (!playbackRequested) { audio.pause(); setPlaying(false); return; }
     setPlaying(true);
+  });
+  if (typeof window !== 'undefined' && typeof window.addEventListener === 'function')
+  window.addEventListener('infinity:music-focus', event => {
+    if (event.detail?.player !== 'artists' || !playbackRequested) return;
+    playbackRequested = false; ++generation; audio.pause(); setPlaying(false);
+    status.textContent = 'Paused for artist music';
   });
   if (typeof window !== 'undefined' && typeof window.addEventListener === 'function')
   window.addEventListener('quantaphi:station-selected', () => {

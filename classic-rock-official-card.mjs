@@ -1,9 +1,6 @@
-/* Classic Rock official artist shelf. Every ▶ is an actual external
- * YouTube artist-channel launch, not a pretend local player. The visitor
- * controls playback in YouTube. No embedded viewer, scraping or wallet calls.
- * All URLs are first-party HTTPS sources checked against the catalog allowlist.
- * https://www.youtube.com/@pinkfloyd is one of the official artist channels.
- */
+/* Compact band selections feed one shared visible YouTube dock. Music taps
+ * never launch other sites or create a player in each Oracle card. Official
+ * merchandise links below remain voluntary external merchant actions. */
 import {CLASSIC_ROCK_BANDS,linkIsAllowed} from './classic-rock-official-catalog.mjs';
 const root = document.getElementById('classicRockOfficialMusicCard');
 if(root && root.dataset.officialRockMounted!=='true'){
@@ -25,7 +22,7 @@ if(root && root.dataset.officialRockMounted!=='true'){
   '#classicRockOfficialMusicCard h2{margin:0;font-size:21px;font-weight:850;line-height:1.25;letter-spacing:.01em;color:#243c45;}',
   '#classicRockOfficialMusicCard .cr-intro{margin:4px 0 0;color:#536c74;font-size:13px;line-height:1.45;}',
   '#classicRockOfficialMusicCard .cr-artist-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:10px 0 13px;}',
-  '#classicRockOfficialMusicCard .cr-artist{display:flex;align-items:center;gap:9px;min-width:0;min-height:61px;padding:8px;border:1px solid #cadbde;border-radius:14px;background:#fff;color:#25444a;text-decoration:none;}',
+  '#classicRockOfficialMusicCard .cr-artist{display:flex;align-items:center;gap:9px;min-width:0;min-height:61px;padding:8px;border:1px solid #cadbde;border-radius:14px;background:#fff;color:#25444a;text-decoration:none;cursor:pointer;text-align:left;font:inherit;}',
   '#classicRockOfficialMusicCard .cr-artist[aria-current="true"]{border-color:#0d737a;background:#eef9f9;}',
   '#classicRockOfficialMusicCard .cr-play{display:grid;flex:none;place-items:center;width:48px;height:48px;border-radius:50%;background:#136a76;color:#fff;font-size:22px;font-weight:850;line-height:1;}',
   '#classicRockOfficialMusicCard .cr-artist-label{min-width:0;overflow-wrap:anywhere;font-size:15px;font-weight:800;line-height:1.25;}',
@@ -45,10 +42,10 @@ if(root && root.dataset.officialRockMounted!=='true'){
  record.setAttribute('aria-hidden','true');
  const introWrap=node('div');
  introWrap.append(node('h2','', 'Classic Rock · Listen & Shop'),
-  node('p','cr-intro','Official artist music buttons and real band-linked release shops.'));
+  node('p','cr-intro','Tap a band to listen while you shop. Official artist releases below.'));
  heading.append(record,introWrap);
  const artistList=node('nav','cr-artist-list');
- artistList.setAttribute('aria-label','Open official rock music on YouTube');
+ artistList.setAttribute('aria-label','Select artist music without leaving QuantaPhi');
  const offersSection=node('section','cr-offers');
  offersSection.setAttribute('aria-label','Official artist releases and merchandise');
  const offerTitle=node('h3','cr-offer-heading');
@@ -57,12 +54,12 @@ if(root && root.dataset.officialRockMounted!=='true'){
  current.setAttribute('aria-live','polite');
  const offerGrid=node('div','cr-offer-grid');
  offersSection.append(offerTitle,current,offerGrid);
- const note=node('p','cr-note','Select ▶ to listen on YouTube. Playback, pause and volume remain in YouTube. Release links go directly to official band sources; these are editorial links, not paid advertisements, guaranteed stock or on-page checkout.');
+ const note=node('p','cr-note','▶ switches the music without leaving QuantaPhi. One small official YouTube player stays visible while shopping. Release links are optional third-party shop visits, not paid ads or guaranteed inventory.');
  const links=new Map();
 
  function renderOffers(band){
   offerTitle.textContent=band.name+' · Artist release spotlight';
-  current.textContent=band.feature+' · YouTube opens in a new tab or app.';
+  current.textContent=band.feature+' · Tap ▶ to play here while you shop.';
   offerGrid.replaceChildren();
   for(const offer of band.offers){
    if(!linkIsAllowed(offer.url)) continue;
@@ -80,17 +77,23 @@ if(root && root.dataset.officialRockMounted!=='true'){
  }
  for(const band of CLASSIC_ROCK_BANDS){
   if(!linkIsAllowed(band.youtube)) continue;
-  const artistLink = node('a','cr-artist');
-  artistLink.href = band.youtube;
-  artistLink.target = '_blank';
-  artistLink.rel = 'noopener noreferrer';
-  artistLink.setAttribute('aria-label','Play official '+band.name+' music on YouTube');
+  const artistLink = node('button','cr-artist');
+  artistLink.type = 'button';
+  artistLink.setAttribute('aria-label','Play '+band.name+' while shopping');
+  artistLink.setAttribute('aria-pressed','false');
   artistLink.append(node('span','cr-play','▶'),node('span','cr-artist-label',band.name));
   artistLink.querySelector('.cr-play')?.setAttribute('aria-hidden','true');
-  artistLink.addEventListener('click',()=>renderOffers(band));
+  artistLink.addEventListener('click',()=>{renderOffers(band);window.InfinityArtistMusic?.toggle(band.id);});
   links.set(band.id,artistLink);
   artistList.append(artistLink);
  }
+ window.addEventListener('infinity:artist-state',event=>{
+  for(const [id,control] of links){
+   const on=event.detail?.id===id&&Boolean(event.detail.playing);
+   control.setAttribute('aria-pressed',String(on));
+   const glyph=control.querySelector('.cr-play');if(glyph)glyph.textContent=on?'Ⅱ':'▶';
+  }
+ });
  root.append(heading,artistList,offersSection,note);
  if(CLASSIC_ROCK_BANDS.length)renderOffers(CLASSIC_ROCK_BANDS[0]);
 }

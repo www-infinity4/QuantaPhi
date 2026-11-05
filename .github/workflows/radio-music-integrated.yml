@@ -1,0 +1,39 @@
+name: QuantaPhi radio, News Phi and artist offers integration
+on:
+  pull_request:
+    paths:
+      - 'news-phi-continuous-audio.js'
+      - 'radio-artist-offers-data.mjs'
+      - 'radio-artist-offers.mjs'
+      - 'infinity-artist-music.js'
+      - 'quick-infinity-radio.js'
+      - 'classic-rock-official-card.mjs'
+      - 'steve-miller-book-of-dreams.js'
+      - 'index.html'
+      - 'test/news-phi-continuous-audio.test.mjs'
+      - 'test/radio-artist-offers.test.mjs'
+      - 'test/infinity-artist-music.test.mjs'
+      - '.github/workflows/radio-music-integrated.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify JavaScript syntax
+        run: |
+          node --check news-phi-continuous-audio.js
+          node --check radio-artist-offers-data.mjs
+          node --check radio-artist-offers.mjs
+          node --check infinity-artist-music.js
+          node --check quick-infinity-radio.js
+          node --check classic-rock-official-card.mjs
+          node --check steve-miller-book-of-dreams.js
+      - name: Verify radio, News Phi and artist product regressions
+        run: |
+          node --test test/news-phi-continuous-audio.test.mjs test/radio-artist-offers.test.mjs test/infinity-artist-music.test.mjs test/classic-rock-official-card.test.mjs test/steve-miller-book-of-dreams.test.mjs test/quick-infinity-radio.test.mjs
