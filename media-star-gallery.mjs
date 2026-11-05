@@ -10,6 +10,53 @@ if(root){
  const cardsNode=document.getElementById('mediaStarGalleryCards');
  const match=document.getElementById('mediaStarGalleryMatch');
  let approved=[],explicitTerms=[],request=0;
+ let sessionId;
+ try{
+  sessionId=sessionStorage.getItem('phi-media-star-gallery-session');
+  if(!/^[0-9a-f-]{36}$/i.test(sessionId||'')){
+   sessionId=crypto.randomUUID();sessionStorage.setItem('phi-media-star-gallery-session',sessionId);
+  }
+ }catch{sessionId=crypto.randomUUID()}
+ const impressions=new Set(),visible=new Set(),timers=new Map();
+ let viewport=null;
+ const send=(contentId,kind)=>{
+  if(!/^https:\/\/[A-Za-z0-9.-]+$/.test(endpoint))return;
+  void fetch(endpoint+'/v1/events',{method:'POST',mode:'cors',credentials:'omit',keepalive:true,
+   headers:{'Content-Type':'application/json'},
+   body:JSON.stringify({eventId:crypto.randomUUID(),sessionId,contentId,kind})}).catch(()=>{});
+ };
+ const schedule=(article,id)=>{
+  clearTimeout(timers.get(id));
+  timers.set(id,setTimeout(()=>{
+   const picture=article.querySelector('.msg-photo');
+   if(!impressions.has(id)&&visible.has(id)&&document.visibilityState==='visible'&&!article.hidden&&
+    picture?.complete&&picture.naturalWidth>0){
+    impressions.add(id);send(id,'impression');
+   }
+  },750));
+ };
+ function observe(){
+  viewport?.disconnect();
+  visible.clear();
+  for(const timer of timers.values())clearTimeout(timer);
+  timers.clear();
+  if(typeof IntersectionObserver==='undefined')return;
+  viewport=new IntersectionObserver(entries=>{
+   for(const entry of entries){
+    const id=entry.target.dataset.mediaStarId;
+    if(!id)continue;
+    if(entry.isIntersecting&&entry.intersectionRatio>=.5){
+     visible.add(id);if(!impressions.has(id))schedule(entry.target,id);
+    }else{visible.delete(id);clearTimeout(timers.get(id))}
+   }
+  },{threshold:[0,.5,1]});
+  for(const article of cardsNode.querySelectorAll('.msg-card'))viewport.observe(article);
+ }
+ document.addEventListener('visibilitychange',()=>{
+  if(document.visibilityState==='hidden'){
+   visible.clear();for(const timer of timers.values())clearTimeout(timer);
+  }
+ });
  const el=(tag,cls,value)=>{
   const node=document.createElement(tag);
   if(cls)node.className=cls;
@@ -40,6 +87,7 @@ if(root){
    const img=el('img','msg-photo');img.src=image;img.loading='lazy';img.decoding='async';
    img.alt=item.title+' · creator-supplied image reviewed for publication';
    img.onerror=()=>{article.hidden=true;};
+   img.addEventListener('load',()=>{if(visible.has(item.id)&&!impressions.has(item.id))schedule(article,item.id)});
    article.append(img);
    const body=el('div','msg-body');
    body.append(el('h3','',item.title),el('p','',item.description||''));
@@ -50,11 +98,13 @@ if(root){
    if(item.mediaMode==='linked_audio'&&ext){
     const audio=el('audio','msg-audio');audio.controls=true;audio.preload='none';audio.src=source;
     audio.setAttribute('aria-label','Play '+item.title+' in QuantaPhi');
+    audio.addEventListener('play',()=>send(item.id,'play_intent'));
     body.append(audio);
     actions.append(el('span','msg-note','Licensed source link · audio begins only when you press play'));
    }else if(item.mediaMode==='linked_video'&&video){
     const player=el('video','msg-video');player.controls=true;player.preload='none';player.playsInline=true;player.src=source;
     player.setAttribute('aria-label','Play '+item.title+' in QuantaPhi');body.append(player);
+    player.addEventListener('play',()=>send(item.id,'play_intent'));
    }else{
     actions.append(link('Open original publisher media',source));
     actions.append(el('span','msg-note','An in-page player has not been authorized for this source'));
@@ -62,8 +112,10 @@ if(root){
    const more=el('a','msg-creator-link','Build a Media Star like this');
    more.href='#mediaStarCreator';actions.append(more);
    body.append(actions);article.append(body);cardsNode.append(article);
+   article.addEventListener('click',event=>{if(event.isTrusted&&event.target?.closest?.('.msg-actions a'))send(item.id,'click')});
   }
   if(!cardsNode.children.length)status.textContent='No approved Media Stars have usable original images and media links.';
+  observe();
  }
  async function load(){
   const current=++request;
