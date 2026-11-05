@@ -79,10 +79,10 @@ async function followImport(env,owner,hosts,source){
  return {imported:clean.size,snapshot,source};
 }
 async function syncX(env,owner){
- if(!env.X_OWNER_ID||!env.X_USER_ACCESS_TOKEN||owner!==env.X_OWNER_ID)throw error('x_account_not_connected',503);
+ const xToken=await xoOwnerToken(env,owner);
  const declared=await linkedAccount(env,owner);
  if(!declared?.handle)throw error('x_handle_not_registered',409);
- const headers={Authorization:'Bearer '+env.X_USER_ACCESS_TOKEN,Accept:'application/json'};
+ const headers={Authorization:'Bearer '+xToken,Accept:'application/json'};
  const profile=await fetch('https://api.x.com/2/users/me',{headers,signal:AbortSignal.timeout(12000)});
  if(!profile.ok)throw error('x_authentication_failed',502);
  const me=(await profile.json()).data;if(!me?.id||!me?.username)throw error('x_identity_missing',502);
@@ -113,11 +113,11 @@ async function syncX(env,owner){
 async function syncSpaceMetadata(env,owner){
  // The X API may return only supported discoverable Spaces, not a full history
  // or accessible replay audio. Import only ended Space IDs, marked indexed.
- if(!env.X_OWNER_ID||!env.X_USER_ACCESS_TOKEN||owner!==env.X_OWNER_ID)throw error('x_account_not_connected',503);
+ const xToken=await xoOwnerToken(env,owner);
  const following=await env.DB.prepare("SELECT x_user_id AS id,handle FROM followed_hosts WHERE owner_id=? AND source='x_api_verified' AND active=1").bind(owner).all();
  const hosts=(following.results||[]).filter(x=>/^[0-9]{1,22}$/.test(x.id));
  if(!hosts.length)throw error('verified_following_sync_required',409);
- const header={Authorization:'Bearer '+env.X_USER_ACCESS_TOKEN,Accept:'application/json'};
+ const header={Authorization:'Bearer '+xToken,Accept:'application/json'};
  let indexed=0,rejected=0,attempted=0;
  for(let offset=0;offset<hosts.length;offset+=25){
   const chunk=hosts.slice(offset,offset+25);
@@ -223,7 +223,9 @@ async function playbackReport(env,owner,body){
 }
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
- if(path==='/health')return out({ok:true,service:'media-star-following-spaces',xConnected:Boolean(env.X_OWNER_ID&&env.X_USER_ACCESS_TOKEN),playsAudioLocally:false});
+ const legal=xoLegal(path);if(legal)return legal;
+ if(path==='/api/x/oauth/callback'){if(request.method!=='GET')return out({error:'method_not_allowed'},405);return xoFinish(request,env)}
+ if(path==='/health')return out({ok:true,service:'media-star-following-spaces',oauthConfigured:xoReady(env),playsAudioLocally:false});
  if(!env.DB)return out({error:'media_star_database_unavailable'},503);
  if(path==='/v1/featured'&&request.method==='GET'){
   // A priority source URL is a discovery lead, NOT a playable X replay.
@@ -239,9 +241,11 @@ async function handle(request,env){
  }
  try{
   const owner=await account(request,env);
+  if(path==='/v1/x/oauth/start'&&request.method==='POST')return out(await xoBegin(env,owner));
+  if(path==='/v1/x/oauth/disconnect'&&request.method==='POST')return out(await xoDisconnect(env,owner));
   if(path==='/v1/x/account'&&request.method==='GET'){
    const claimed=await linkedAccount(env,owner);
-   return out({account:claimed||null,xConnected:Boolean(env.X_OWNER_ID&&env.X_USER_ACCESS_TOKEN&&owner===env.X_OWNER_ID)});
+   return out({account:claimed||null,xConnected:await xoConnected(env,owner),oauthConfigured:xoReady(env)});
   }
   if(path==='/v1/x/account'&&request.method==='POST'){
    const raw=await request.text();
@@ -316,6 +320,118 @@ async function handle(request,env){
   return out({error:'not_found'},404);
  }catch(err){return out({error:err.message||'failed'},err.status||500)}
 }
+
+// X OAuth2 authorization code + PKCE. All authorization state and encrypted
+// provider credentials stay in the existing Media Star D1 database.
+const XO_REDIRECT='https://quantaphi.org/api/x/oauth/callback';
+const XO_SCOPE='tweet.read users.read follows.read space.read offline.access';
+const XO_ENCODER=new TextEncoder();
+const xoErr=(name,status=400)=>Object.assign(new Error(name),{status});
+const xoB64=bytes=>btoa(Array.from(new Uint8Array(bytes),b=>String.fromCharCode(b)).join('')).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+const xoUnb64=text=>Uint8Array.from(atob(String(text).replace(/-/g,'+').replace(/_/g,'/')),x=>x.charCodeAt(0));
+const xoHash=async text=>xoB64(await crypto.subtle.digest('SHA-256',XO_ENCODER.encode(text)));
+const xoReady=e=>Boolean(e.X_OAUTH_CLIENT_ID&&e.X_OAUTH_CLIENT_SECRET&&e.X_OAUTH_ENCRYPTION_KEY);
+async function xoKey(env){
+ const raw=xoUnb64(env.X_OAUTH_ENCRYPTION_KEY||'');
+ if(raw.byteLength!==32)throw xoErr('x_encryption_key_invalid',503);
+ return crypto.subtle.importKey('raw',raw,'AES-GCM',false,['encrypt','decrypt']);
+}
+async function xoSeal(env,text,owner){
+ const iv=crypto.getRandomValues(new Uint8Array(12));
+ const value=await crypto.subtle.encrypt({name:'AES-GCM',iv,additionalData:XO_ENCODER.encode(owner)},await xoKey(env),XO_ENCODER.encode(text));
+ return xoB64(iv)+'.'+xoB64(value);
+}
+async function xoOpen(env,text,owner){
+ const parts=String(text||'').split('.');
+ if(parts.length!==2)throw xoErr('x_invalid_ciphertext',503);
+ try{
+  return new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:xoUnb64(parts[0]),additionalData:XO_ENCODER.encode(owner)},await xoKey(env),xoUnb64(parts[1])));
+ }catch{throw xoErr('x_credential_decryption_failed',503)}
+}
+async function xoTokenRequest(env,params){
+ const auth=btoa(env.X_OAUTH_CLIENT_ID+':'+env.X_OAUTH_CLIENT_SECRET);
+ const r=await fetch('https://api.x.com/2/oauth2/token',{method:'POST',headers:{Authorization:'Basic '+auth,'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(params),signal:AbortSignal.timeout(15000)});
+ if(!r.ok)throw xoErr('x_token_exchange_failed',502);
+ const j=await r.json();
+ if(!j?.access_token||!Number.isFinite(Number(j.expires_in))||Number(j.expires_in)<=0)throw xoErr('x_invalid_token_response',502);
+ return j;
+}
+async function xoSave(env,owner,token,profile,priorRefresh=''){
+ const refresh=token.refresh_token||priorRefresh;
+ const access=await xoSeal(env,token.access_token,owner);
+ const encryptedRefresh=refresh?await xoSeal(env,refresh,owner):null;
+ const expiry=Date.now()+Number(token.expires_in)*1000;
+ await env.DB.prepare('INSERT INTO x_oauth_tokens(owner_id,x_user_id,x_handle,access_cipher,refresh_cipher,expires_at,scope,updated_at) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(owner_id) DO UPDATE SET x_user_id=excluded.x_user_id,x_handle=excluded.x_handle,access_cipher=excluded.access_cipher,refresh_cipher=excluded.refresh_cipher,expires_at=excluded.expires_at,scope=excluded.scope,updated_at=excluded.updated_at').bind(owner,profile.id,profile.username,access,encryptedRefresh,expiry,String(token.scope||XO_SCOPE),Date.now()).run();
+}
+async function xoBegin(env,owner){
+ if(!xoReady(env))throw xoErr('x_oauth_not_configured',503);
+ const state=xoB64(crypto.getRandomValues(new Uint8Array(32)));
+ const verifier=xoB64(crypto.getRandomValues(new Uint8Array(48)));
+ const challenge=await xoHash(verifier);
+ await env.DB.prepare('INSERT INTO x_oauth_pending(state_hash,owner_id,verifier_cipher,created_at,consumed_at) VALUES(?,?,?,?,NULL)').bind(await xoHash(state),owner,await xoSeal(env,verifier,owner),Date.now()).run();
+ const u=new URL('https://x.com/i/oauth2/authorize');
+ for(const [k,v] of Object.entries({response_type:'code',client_id:env.X_OAUTH_CLIENT_ID,redirect_uri:XO_REDIRECT,scope:XO_SCOPE,state,code_challenge:challenge,code_challenge_method:'S256'}))u.searchParams.set(k,v);
+ return {authorizationUrl:u.href,expiresInSeconds:600};
+}
+function xoPage(title,message,status=200){
+ const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+ const html='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>'+escape(title)+' | QuantaPhi</title><style>body{background:#f7f4fb;color:#261c30;font:18px/1.6 system-ui;padding:24px}main{background:#fff;max-width:700px;margin:6vh auto;padding:28px;border-radius:16px}a{color:#5f259f}</style><main><h1>'+escape(title)+'</h1><p>'+escape(message)+'</p><a href="https://quantaphi.org/#followingSpacesRadio">Back to Media Star</a></main></html>';
+ return new Response(html,{status,headers:{'Content-Type':'text/html;charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"}});
+}
+async function xoFinish(request,env){
+ const url=new URL(request.url),state=url.searchParams.get('state')||'',code=url.searchParams.get('code')||'';
+ if(url.searchParams.has('error'))return xoPage('Connection cancelled','No X connection was saved. Retry from Media Star.',400);
+ if(!/^[A-Za-z0-9_-]{40,100}$/.test(state)||!code||code.length>2048)return xoPage('Invalid authorization','Please start a new authorization from Media Star.',400);
+ if(!xoReady(env))return xoPage('X connection unavailable','The X developer credentials are not configured yet.',503);
+ try{
+  const digest=await xoHash(state),now=Date.now();
+  const pending=await env.DB.prepare('SELECT owner_id,verifier_cipher,created_at,consumed_at FROM x_oauth_pending WHERE state_hash=?').bind(digest).first();
+  if(!pending||pending.consumed_at!=null||pending.created_at>now||pending.created_at<now-600000)throw xoErr('x_state_invalid_or_expired',403);
+  const claimed=await env.DB.prepare('UPDATE x_oauth_pending SET consumed_at=? WHERE state_hash=? AND consumed_at IS NULL AND created_at>=?').bind(now,digest,now-600000).run();
+  if(Number(claimed.meta?.changes||0)!==1)throw xoErr('x_state_already_used',403);
+  const verifier=await xoOpen(env,pending.verifier_cipher,pending.owner_id);
+  const token=await xoTokenRequest(env,{grant_type:'authorization_code',code,redirect_uri:XO_REDIRECT,code_verifier:verifier});
+  const profileResponse=await fetch('https://api.x.com/2/users/me',{headers:{Authorization:'Bearer '+token.access_token},signal:AbortSignal.timeout(12000)});
+  if(!profileResponse.ok)throw xoErr('x_profile_unavailable',502);
+  const profile=(await profileResponse.json()).data;
+  if(!profile?.id||!profile?.username)throw xoErr('x_profile_invalid',502);
+  const declared=await env.DB.prepare('SELECT handle FROM x_account_links WHERE owner_id=?').bind(pending.owner_id).first();
+  if(!declared||String(declared.handle).toLowerCase()!==profile.username.toLowerCase())throw xoErr('x_account_handle_mismatch',403);
+  await xoSave(env,pending.owner_id,token,profile);
+  return xoPage('X account connected','Media Star has securely saved this X authorization. You can now sync your Following list.');
+ }catch(e){return xoPage('Connection not completed','No new X authorization was saved ('+String(e.message||'error')+'). Please retry.',e.status||500)}
+}
+async function xoOwnerToken(env,owner){
+ const record=await env.DB.prepare('SELECT x_user_id,x_handle,access_cipher,refresh_cipher,expires_at FROM x_oauth_tokens WHERE owner_id=?').bind(owner).first();
+ if(!record){
+  if(env.X_OWNER_ID===owner&&env.X_USER_ACCESS_TOKEN)return env.X_USER_ACCESS_TOKEN;
+  throw xoErr('x_account_not_connected',503);
+ }
+ if(record.expires_at>Date.now()+60000)return xoOpen(env,record.access_cipher,owner);
+ if(!record.refresh_cipher)throw xoErr('x_reauthorization_required',401);
+ if(!xoReady(env))throw xoErr('x_oauth_not_configured',503);
+ const oldRefresh=await xoOpen(env,record.refresh_cipher,owner);
+ const newToken=await xoTokenRequest(env,{grant_type:'refresh_token',refresh_token:oldRefresh});
+ await xoSave(env,owner,newToken,{id:record.x_user_id,username:record.x_handle},oldRefresh);
+ return newToken.access_token;
+}
+async function xoConnected(env,owner){
+ const row=await env.DB.prepare('SELECT expires_at,refresh_cipher FROM x_oauth_tokens WHERE owner_id=?').bind(owner).first();
+ return Boolean(row&&(row.refresh_cipher||row.expires_at>Date.now())||env.X_OWNER_ID===owner&&env.X_USER_ACCESS_TOKEN);
+}
+async function xoDisconnect(env,owner){
+ await env.DB.prepare('DELETE FROM x_oauth_tokens WHERE owner_id=?').bind(owner).run();
+ return {disconnected:true,alsoRevokeInXSettings:true,existingFollowingPreserved:true};
+}
+const XO_TERMS='<p>QuantaPhi offers experimental AI, research, Media Star, Bubbles, and token-ledger features. Use these features lawfully, respect intellectual property and other users, and keep your own sign-in credentials secure.</p><h2>Connected accounts</h2><p>Connecting X or another service is optional. The provider sets its own permissions, availability, and terms; you may disconnect your account. Connected third-party data should not be redistributed without permission.</p><h2>AI and content</h2><p>AI answers and generated code can contain errors; review important information and test software before relying on or deploying it. Media links are indexed original-source links, not guarantees that playback, embedding, or redistribution is permitted.</p><h2>Wallet and project units</h2><p>Quants, GIT, Bubble Bits, Star Coins, and other internal project units are experimental records. They are not automatically cash, legal tender, securities, or promises of redemption or investment return. Separate explicit purchase terms apply if paid transactions are offered.</p><h2>Safety, availability and changes</h2><p>Do not bypass authorization, falsify receipts, attack systems, or collect other users private information. Services may be temporarily unavailable or change; statutory rights remain unaffected. Revisions will be posted on this page.</p><h2>Contact</h2><p>See <a href="https://quantaphi.org/about.html">About QuantaPhi</a> and the official project repository. A dedicated private support address has not yet been published. Do not post secrets or private data in public GitHub issues.</p>';
+const XO_PRIVACY='<p>This is the X/Media Star authorization notice. The general <a href="https://quantaphi.org/privacy.html">QuantaPhi privacy policy</a> also describes site analytics, advertising, AI services, and wallet records.</p><h2>What X access is requested</h2><p>With your consent, Media Star requests tweet.read, users.read, follows.read, space.read, and offline.access. It may use your X username, account ID, followed handles, and Space metadata for account verification and requested synchronization. X may provide only limited or partial content.</p><h2>Storage and security</h2><p>Short-lived OAuth state is kept in the existing Cloudflare D1 database for ten minutes. Access and refresh tokens are stored encrypted in that database for the linked QuantaPhi wallet account. Authorization tokens are not placed in public source code, local browser storage, or public media cards. The Cloudflare Worker exchanges and refreshes tokens server-side.</p><h2>Sharing, retention and choices</h2><p>X handles the authorization process, and Cloudflare hosts the service. Collected following lists, saved Space links, and playback history may remain after disconnecting until deleted by a supported account-data request. Disconnecting deletes QuantaPhi-stored X OAuth credentials, but you should separately revoke the app in your X settings. No universal retention deadline is promised.</p><h2>Questions</h2><p>See <a href="https://quantaphi.org/about.html">About QuantaPhi</a>. A private support address has not yet been published; do not send credentials in public issues.</p>';
+function xoLegal(path){
+ if(path!=='/legal/terms'&&path!=='/legal/privacy')return null;
+ const isTerms=path==='/legal/terms',title=isTerms?'Terms of Service':'Privacy Policy';
+ const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>'+title+' | QuantaPhi</title><style>:root{font-family:system-ui;color:#291f35;background:#f7f4fb}body{margin:0}main{max-width:850px;margin:20px auto;background:#fff;padding:clamp(20px,5vw,40px);border-radius:20px}p,li{line-height:1.7}a{color:#5f259f}nav{padding:20px;text-align:center}</style></head><body><nav><a href="https://quantaphi.org/">QuantaPhi</a> · <a href="/legal/privacy">Privacy</a> · <a href="/legal/terms">Terms</a></nav><main><h1>'+title+'</h1><p><strong>Effective November 5, 2026</strong></p>'+(isTerms?XO_TERMS:XO_PRIVACY)+'</main></body></html>';
+ return new Response(html,{status:200,headers:{'Content-Type':'text/html;charset=utf-8','Cache-Control':'public,max-age=300','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'"}});
+}
+
 export {handle,randBelow,directSpace};
 const allowedOrigins=new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 async function browserFetch(request,env){
