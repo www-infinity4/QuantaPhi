@@ -1,0 +1,35 @@
+name: Artist album offers and on-page music
+on:
+  pull_request:
+    paths:
+      - 'radio-artist-offers-data.mjs'
+      - 'radio-artist-offers.mjs'
+      - 'infinity-artist-music.js'
+      - 'quick-infinity-radio.js'
+      - 'classic-rock-official-card.mjs'
+      - 'steve-miller-book-of-dreams.js'
+      - 'index.html'
+      - 'test/radio-artist-offers.test.mjs'
+      - 'test/infinity-artist-music.test.mjs'
+      - '.github/workflows/radio-artist-offers.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-and-regressions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify script syntax
+        run: |
+          node --check radio-artist-offers.mjs
+          node --check radio-artist-offers-data.mjs
+          node --check infinity-artist-music.js
+      - name: Verify verified offers and shared music player
+        run: |
+          node --test test/radio-artist-offers.test.mjs test/infinity-artist-music.test.mjs test/classic-rock-official-card.test.mjs
