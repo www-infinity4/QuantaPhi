@@ -67,6 +67,53 @@ async function submit(req,env){
  return json(req,{ok:true,submissionId:id,submitted:true,status:'pending_review',
   public:false,paid:false,spendableAward:false},202);
 }
+/* Browser-observed per-approved-card engagement: never wallet credit. */
+const V4=/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+async function event(req,env){
+ if(!allowed.has(req.headers.get('Origin')||''))throw fail('origin_not_allowed',403);
+ if(!env.DB)throw fail('gallery_db_unavailable',503);
+ if(!req.headers.get('Content-Type')?.toLowerCase().startsWith('application/json'))throw fail('json_required',415);
+ if(Number(req.headers.get('Content-Length')||0)>500)throw fail('event_too_large',413);
+ const raw=await req.text();if(raw.length>500)throw fail('event_too_large',413);
+ let input;try{input=JSON.parse(raw)}catch{throw fail('invalid_json')}
+ if(!input||typeof input!=='object'||!V4.test(input.eventId||'')||
+  !V4.test(input.sessionId||'')||!/^[A-Za-z0-9_-]{3,80}$/.test(input.contentId||'')||
+  !['impression','click','play_intent'].includes(input.kind))throw fail('invalid_event');
+ const score=req.cf?.botManagement?.score;
+ if(Number.isFinite(score)&&score<20)throw fail('bot_traffic_rejected',403);
+ const card=await env.DB.prepare(
+  "SELECT id FROM media_star_gallery_submissions WHERE id=?1 AND status='approved' AND rights_verified=1 AND image_verified=1 AND review_receipt IS NOT NULL"
+ ).bind(input.contentId).first();
+ if(!card?.id)throw fail('approved_media_required',404);
+ const result=await env.DB.prepare(
+  'INSERT OR IGNORE INTO media_star_gallery_events(event_id,content_id,session_id,kind,created_at) VALUES(?1,?2,?3,?4,?5)'
+ ).bind(input.eventId,input.contentId,input.sessionId,input.kind,Date.now()).run();
+ return json(req,{ok:true,recorded:Number(result.meta?.changes||0)===1,
+  classification:'browser_observed_not_verified_human',walletCredit:false},202);
+}
+async function ownerMetrics(req,env){
+ const accountId=await owner(req,env);
+ if(!env.DB)throw fail('gallery_db_unavailable',503);
+ const cutoff=Date.now()-30*86400000;
+ const result=await env.DB.prepare(
+  'SELECT s.id AS contentId,s.title AS title,e.kind AS kind,COUNT(*) AS events,COUNT(DISTINCT e.session_id) AS sessions FROM media_star_gallery_submissions s JOIN media_star_gallery_events e ON e.content_id=s.id WHERE s.owner_id=?1 AND e.created_at>=?2 GROUP BY s.id,s.title,e.kind'
+ ).bind(accountId,cutoff).all();
+ const map=new Map();
+ for(const row of result.results||[]){
+  const item=map.get(row.contentId)||{id:row.contentId,title:row.title,
+   impressions:0,clickEvents:0,uniqueClicks:0,playIntents:0,ctrPercent:null,
+   paidConversions:null,settledStarCoins:null};
+  if(row.kind==='impression')item.impressions=Number(row.sessions)||0;
+  if(row.kind==='click'){item.clickEvents=Number(row.events)||0;item.uniqueClicks=Number(row.sessions)||0}
+  if(row.kind==='play_intent')item.playIntents=Number(row.events)||0;
+  map.set(row.contentId,item);
+ }
+ for(const item of map.values())
+  if(item.impressions>0&&item.uniqueClicks<=item.impressions)
+   item.ctrPercent=Math.round(1000*item.uniqueClicks/item.impressions)/10;
+ return json(req,{ok:true,periodDays:30,metrics:[...map.values()],
+  browserObservedOnly:true,payoutLedgerConnected:false,settledStarCoins:null});
+}
 export default {async fetch(req,env){
  try{
   const path=new URL(req.url).pathname;
@@ -74,6 +121,8 @@ export default {async fetch(req,env){
   if(path==='/health'&&req.method==='GET')return json(req,{ok:true,service:'media-star-gallery',
    configured:Boolean(env.DB&&env.IDENTITY_DB),publicationsRequireReview:true,payments:false});
   if(path==='/v1/cards'&&req.method==='GET')return await cards(req,env);
+  if(path==='/v1/events'&&req.method==='POST')return await event(req,env);
+  if(path==='/v1/my/metrics'&&req.method==='GET')return await ownerMetrics(req,env);
   if(path==='/v1/submissions'&&req.method==='POST')return await submit(req,env);
   return json(req,{ok:false,error:'not_found'},404);
  }catch(e){return json(req,{ok:false,error:e.message||'service_error'},e.status||500)}
