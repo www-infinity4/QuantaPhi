@@ -3,17 +3,157 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T09:01:44.361300Z",
+  "checked_at": "2026-11-05T09:31:35.231765Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "pluto tv",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T09:10:00Z",
+      "related_news_urls": [
+        "https://cordcuttersnews.com/pluto-tv-adds-4-new-channels-to-start-november-2026/",
+        "https://www.thetvcave.com/post/interview-emily-curl-talks-pluto-tv-s-double-feature-fridays-horror-favorites-and-bringing-back-mo",
+        "https://www.pocket-lint.com/pluto-tv-adding-14-new-free-live-tv-channels/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZgeL7ZTTjQymzUOZqbUTyTjVb_iSRjPSgzkE2xt30Z2vDihV2MSoMOFeZvVQ",
+      "image_credit": "| Cord Cutters News",
+      "news": [
+        {
+          "url": "https://cordcuttersnews.com/pluto-tv-adds-4-new-channels-to-start-november-2026/",
+          "title": "Pluto TV Adds 4 New Channels to Start November 2026",
+          "publisher": "| Cord Cutters News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZgeL7ZTTjQymzUOZqbUTyTjVb_iSRjPSgzkE2xt30Z2vDihV2MSoMOFeZvVQ"
+        },
+        {
+          "url": "https://www.thetvcave.com/post/interview-emily-curl-talks-pluto-tv-s-double-feature-fridays-horror-favorites-and-bringing-back-mo",
+          "title": "Interview: Emily Curl Talks Pluto TV’s Double Feature Fridays, Horror Favorites and Bringing Back Movie Night",
+          "publisher": "The TV Cave",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPqnRUKlxMuSDX50TACy4FR2Af6p0IrRbnoAfn3zDD9TUTIshu_U52SZ_BcOM"
+        },
+        {
+          "url": "https://www.pocket-lint.com/pluto-tv-adding-14-new-free-live-tv-channels/",
+          "title": "Pluto TV is adding 14 new free live TV channels",
+          "publisher": "Pocket-lint",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ2Kgqyc1VAwmJOBs8O0KL5KvBYRaIz1ATYlT4qmNKBFb7BZwwC2Hryy7D3Qw"
+        }
+      ]
+    },
+    {
+      "query": "zeynep sonmez",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T08:50:00Z",
+      "related_news_urls": [
+        "https://mansethaber.com/news/milli-tenisciden-wta-250de-basarili-ilk-mac",
+        "https://www.sabah.com.tr/spor/tum-sporlar/2026/11/03/zeynep-sonmez-prudential-hong-kong-acikta-2-tura-yukseldi",
+        "https://www.odakgazetesi.com/milli-raket-zeynep-sonmezden-guangzhouda-zafer"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLU-2GBbtkGXoqJBBvhv6eOaXKbAEEzPZw4zd9MXowbQ-5CvujQtPPDmVE8ng",
+      "image_credit": "Manşet Haber",
+      "news": [
+        {
+          "url": "https://mansethaber.com/news/milli-tenisciden-wta-250de-basarili-ilk-mac",
+          "title": "Milli tenisçiden WTA 250'de başarılı ilk maç!",
+          "publisher": "Manşet Haber",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLU-2GBbtkGXoqJBBvhv6eOaXKbAEEzPZw4zd9MXowbQ-5CvujQtPPDmVE8ng"
+        },
+        {
+          "url": "https://www.sabah.com.tr/spor/tum-sporlar/2026/11/03/zeynep-sonmez-prudential-hong-kong-acikta-2-tura-yukseldi",
+          "title": "Zeynep Sönmez, Prudential Hong Kong Açık'ta 2. tura yükseldi",
+          "publisher": "Sabah",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu0q0a_qrd2FmblgmfNlFBvW-eE0c-_ETUO4nfW4DMjBgrj692mjXY80vyv1k"
+        },
+        {
+          "url": "https://www.odakgazetesi.com/milli-raket-zeynep-sonmezden-guangzhouda-zafer",
+          "title": "Milli raket Zeynep Sönmez’den Guangzhou’da zafer",
+          "publisher": "Odakgazetesi",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJR0-nCJIhDNY7RU6zjysRDN4dxbfunDLm3l8dGPahyxJFxtSFQT4NeWLlSdY"
+        }
+      ]
+    },
+    {
+      "query": "terence crawford",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T08:50:00Z",
+      "related_news_urls": [
+        "https://boxingnewsonline.net/news/terence-crawford-calls-out-boxing-legend/",
+        "https://www.boxingnews24.com/2026/11/canelo-wants-crawford-rematch-but-the-purse-demand-could-kill-it/",
+        "https://bloodyelbow.com/2026/11/04/terence-crawford-attempts-to-hijack-floyd-mayweathers-comeback-fight-with-160lb-offer/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW3_OQ0apT11qR5a5OOPzelvc9ibqeqF0LAxfL44wfbrfyqMmNWvcyqkAu5Wk",
+      "image_credit": "Boxing News Online",
+      "news": [
+        {
+          "url": "https://boxingnewsonline.net/news/terence-crawford-calls-out-boxing-legend/",
+          "title": "Terence Crawford calls out retired boxing legend for comeback fight: \"GOAT vs GOAT\"",
+          "publisher": "Boxing News Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW3_OQ0apT11qR5a5OOPzelvc9ibqeqF0LAxfL44wfbrfyqMmNWvcyqkAu5Wk"
+        },
+        {
+          "url": "https://www.boxingnews24.com/2026/11/canelo-wants-crawford-rematch-but-the-purse-demand-could-kill-it/",
+          "title": "Canelo Wants Crawford Rematch, But The Purse Demand Could Kill It",
+          "publisher": "Boxing News 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvJwsYbRlxxeR4p-p7EeIEiG6cO3jaJJ1Bb28TIt3AhSNWd3CtUgvhnlvQFxU"
+        },
+        {
+          "url": "https://bloodyelbow.com/2026/11/04/terence-crawford-attempts-to-hijack-floyd-mayweathers-comeback-fight-with-160lb-offer/",
+          "title": "Terence Crawford attempts to hijack Floyd Mayweather’s comeback fight with 160lb offer",
+          "publisher": "Bloody Elbow",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqU6EOPVmIUv9tjUL-s1VCCHaVlm9WMIly1wMLQUkSFVdTD08VItw_sKmLPlM"
+        }
+      ]
+    },
+    {
+      "query": "cruise ship",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T08:40:00Z",
+      "related_news_urls": [
+        "https://www.news.uscg.mil/Press-Releases/Article/4640850/coast-guard-detains-msc-poesia-in-port-of-miami/",
+        "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
+        "https://www.nbcmiami.com/news/local/us-coast-guard-detains-msc-poesia-portmiami-sailing-cancelled/3882614/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGbWdY1JVuV6M2hEKjkPNlNiUmTSLHgT69QsBno1p4XHvGUh_e_9SLR9yJi14",
+      "image_credit": "United States Coast Guard News (.mil)",
+      "news": [
+        {
+          "url": "https://www.news.uscg.mil/Press-Releases/Article/4640850/coast-guard-detains-msc-poesia-in-port-of-miami/",
+          "title": "Coast Guard detains MSC Poesia in Port of Miami",
+          "publisher": "United States Coast Guard News (.mil)",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGbWdY1JVuV6M2hEKjkPNlNiUmTSLHgT69QsBno1p4XHvGUh_e_9SLR9yJi14"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
+          "title": "Cruise canceled after Coast Guard detains ship in Miami, officials say",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE"
+        },
+        {
+          "url": "https://www.nbcmiami.com/news/local/us-coast-guard-detains-msc-poesia-portmiami-sailing-cancelled/3882614/",
+          "title": "U.S. Coast Guard detains MSC Poesia at PortMiami; 11-night sailing canceled",
+          "publisher": "NBC 6 South Florida",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBAr0JFTLqOwetsUNn_zNAGxE0anD4G22p3YinI2NOafINsUCBRPfgdKh24M0"
+        }
+      ]
+    },
     {
       "query": "la",
       "approx_searches": "500+",
       "published_at": "2026-11-05T08:40:00Z",
       "related_news_urls": [
         "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/",
-        "https://www.latimes.com/california/story/2026-11-04/raman-on-cusp-of-becoming-mayor-analysts-predict-citing-expected-results-from-late-votes",
-        "https://www.politico.com/news/2026/11/04/nithya-raman-rise-jolts-la-establishment-01151074"
+        "https://www.arkansasonline.com/news/2026/nov/05/la-mayor-candidates-tightly-matched/",
+        "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A",
       "image_credit": "ABC7 Los Angeles",
@@ -26,18 +166,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A"
         },
         {
-          "url": "https://www.latimes.com/california/story/2026-11-04/raman-on-cusp-of-becoming-mayor-analysts-predict-citing-expected-results-from-late-votes",
-          "title": "Raman keeps widening her lead against Bass, closing in on becoming L.A.’s next mayor",
-          "publisher": "Los Angeles Times",
+          "url": "https://www.arkansasonline.com/news/2026/nov/05/la-mayor-candidates-tightly-matched/",
+          "title": "LA mayor candidates tightly matched",
+          "publisher": "The Arkansas Democrat-Gazette",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmWSmEczC4O3U1GW9TTaZvxGQLk83qJ6pm33WUG_qwDYddgGqlaHmVH3w81-4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSn4qfyOx8L9bWKyZ0hmajFDRZvAD2XdTDFKsSGsh2mrJIt-oYk-aGjGqHYAg0"
         },
         {
-          "url": "https://www.politico.com/news/2026/11/04/nithya-raman-rise-jolts-la-establishment-01151074",
-          "title": "‘An earthquake’: Nithya Raman’s rise jolts LA’s political establishment",
-          "publisher": "Politico",
+          "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman",
+          "title": "Raman widens her lead over Bass as counting continues in the race for LA mayor",
+          "publisher": "LAist",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSfZX7M3-BrtTIKwtnwWnFK4cQP7IZ3c8QOlgkIe2g9bLke3trKgoCYajKlWI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxHH0QMVyumqZT0fMHyg4Alobtgzj15zQrm_EIxeJ_-l6lTucDSa4YQzJ1jLg"
         }
       ]
     },
@@ -73,6 +213,41 @@
           "publisher": "Pluang",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCntQcx8-b9TFLmdZa61BuT8pN61k71J3_iK3FT4l7v_5q2otAcuCZzB0JR1Q"
+        }
+      ]
+    },
+    {
+      "query": "apartments",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T08:20:00Z",
+      "related_news_urls": [
+        "https://www.foxcarolina.com/2026/11/05/live-crews-responding-apartment-fire-greenville-county/",
+        "https://www.waff.com/2026/11/02/fire-huntsville-apartment-complex-displaces-about-15-families/",
+        "https://whnt.com/news/huntsville/resident-describes-flames-near-her-home-in-huntsville-apartment-fire/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6xXRYruWXe_n3SWujhJNmjREf_7XT98jYCqYoFmGAoiDyNL_RmBD_n58_pk",
+      "image_credit": "FOX Carolina News",
+      "news": [
+        {
+          "url": "https://www.foxcarolina.com/2026/11/05/live-crews-responding-apartment-fire-greenville-county/",
+          "title": "LIVE: Crews responding to apartment fire in Greenville County",
+          "publisher": "FOX Carolina News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6xXRYruWXe_n3SWujhJNmjREf_7XT98jYCqYoFmGAoiDyNL_RmBD_n58_pk"
+        },
+        {
+          "url": "https://www.waff.com/2026/11/02/fire-huntsville-apartment-complex-displaces-about-15-families/",
+          "title": "Fire at Huntsville apartment complex displaces about 15 families",
+          "publisher": "WAFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGk8Biu7pTkWaogm9pWYAHvrnfZOt1mtiZjF3foRPHTXrltWGXZ3vU97zEPaw"
+        },
+        {
+          "url": "https://whnt.com/news/huntsville/resident-describes-flames-near-her-home-in-huntsville-apartment-fire/",
+          "title": "Resident describes flames near her home in Huntsville apartment fire",
+          "publisher": "WHNT.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYLd5cGoWrjP3TZ_L_jQsNNi9Czxq1Oghd9SW327X1FGeg4j0GeSk3-y8dWvs"
         }
       ]
     },
@@ -178,173 +353,6 @@
           "publisher": "Rubin Observatory",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH_J7bhzuEnomoX-expzACeP8KEJbIPgiqYblIyBvHRZbq87yb2F-MZaT7LpI"
-        }
-      ]
-    },
-    {
-      "query": "jeffrey epstein",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T08:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/congress/leon-black-sues-robert-garcia-alleging-defamation-epstein-comments-rcna607565",
-        "https://apnews.com/article/leon-black-robert-garcia-jeffrey-epstein-lawsuit-5a4192fb838712bb651c2d941e3b45e6",
-        "https://www.politico.com/news/2026/11/04/leon-black-rep-garcia-epstein-01150786"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9UrFw9aZZjdjDs4EDz5WoISzpvyjrmSKBewjqz_7G5xKifa9hJDV3jSNhk5Y",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/congress/leon-black-sues-robert-garcia-alleging-defamation-epstein-comments-rcna607565",
-          "title": "Billionaire Leon Black sues Rep. Robert Garcia, alleging defamation over Epstein comments",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9UrFw9aZZjdjDs4EDz5WoISzpvyjrmSKBewjqz_7G5xKifa9hJDV3jSNhk5Y"
-        },
-        {
-          "url": "https://apnews.com/article/leon-black-robert-garcia-jeffrey-epstein-lawsuit-5a4192fb838712bb651c2d941e3b45e6",
-          "title": "Billionaire Leon Black sues U.S. Rep. Robert Garcia for defamation over Epstein comments",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvqzp_zISmuZV1N7Mzi1KVerARsKZY10zDunNjuaA8NJj2YqeyiulzMQUHbd8"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/04/leon-black-rep-garcia-epstein-01150786",
-          "title": "Leon Black sues Rep. Garcia over remarks about his relationship with Epstein",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ-eYBJpa2nJSli8MGndzhE7J9gxnvU52Bjk0pWBU4h1tF25ZPlMARzLRdfzM"
-        }
-      ]
-    },
-    {
-      "query": "midterm election results senate",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-05T07:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/04/politics/live-news/midterm-election-congress",
-        "https://www.rte.ie/news/2026/1105/1598043-us-midterm-elections/",
-        "https://www.bbc.com/news/articles/cqkgjvr00zmyo"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlZANqFfFhEEvWtTOZDqz_fVq_vPdYnjKa5FbNB-wuAMGv9ZzecHc9dbEoutQ",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/04/politics/live-news/midterm-election-congress",
-          "title": "Democrats continue to stack wins in House as Republicans start blame game after midterm rout",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlZANqFfFhEEvWtTOZDqz_fVq_vPdYnjKa5FbNB-wuAMGv9ZzecHc9dbEoutQ"
-        },
-        {
-          "url": "https://www.rte.ie/news/2026/1105/1598043-us-midterm-elections/",
-          "title": "Democrats vow to rein in Trump after midterm victory",
-          "publisher": "RTE.ie",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVoVpXlciSuGNAkeYHZDBUjbd0QbtDPaXBEp9g6ftUOcwsS9pm-cz2an2EgTk"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cqkgjvr00zmyo",
-          "title": "Five reasons why Republicans lost so badly",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2d2qlvNeZE1mTR1V_-3Q5uIZcm-V_kmqpzD-jerhuWV05IhEM6smaiRNmBcI"
-        }
-      ]
-    },
-    {
-      "query": "lapd navy helicopter near miss",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T07:30:00Z",
-      "related_news_urls": [
-        "https://ktla.com/news/local-news/lapd-navy-helicopter-close-call-echo-park/",
-        "https://www.yahoo.com/news/us/articles/lapd-chopper-pilot-fumes-avoiding-202502152.html",
-        "https://www.cbsnews.com/losangeles/video/lapd-helicopter-makes-last-minute-move-to-avoid-mid-air-collision-with-military-aircraft/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4NgJs4ija789JKpvTZ4ISr3FNKfnHz7Qj6_Vtf8IkFTAHt-azj6_XyFEzb1Y",
-      "image_credit": "KTLA",
-      "news": [
-        {
-          "url": "https://ktla.com/news/local-news/lapd-navy-helicopter-close-call-echo-park/",
-          "title": "‘You guys gotta pay attention’: LAPD pilot blasts Navy helicopter after near miss",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4NgJs4ija789JKpvTZ4ISr3FNKfnHz7Qj6_Vtf8IkFTAHt-azj6_XyFEzb1Y"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/lapd-chopper-pilot-fumes-avoiding-202502152.html",
-          "title": "LAPD chopper pilot fumes after avoiding mid-air disaster with military helicopters: ‘You guys need to pay attention’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWn7nq2azJVYJhe_0_MWP3VY1vb5t61gGWbUegowmCGqaVqrB-ke5ModrDJ3o"
-        },
-        {
-          "url": "https://www.cbsnews.com/losangeles/video/lapd-helicopter-makes-last-minute-move-to-avoid-mid-air-collision-with-military-aircraft/",
-          "title": "LAPD helicopter makes last-minute move to avoid mid-air collision with military aircraft",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV7ebfIz_2-VGlEe_9yqKzQY4tIZmU2jRemW0CshNNu1TARiQi-jom-hjW3tM"
-        }
-      ]
-    },
-    {
-      "query": "chipotle",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T07:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/investors-buy-chipotle-turnaround-072500920.html",
-        "https://www.the-independent.com/us/money/chipotle-new-rewards-program-breaks-records-b3078350.html",
-        "https://www.cnbc.com/2026/10/28/chipotle-mexican-grill-cmg-q3-2026-earnings.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6fs-9k_AvYI4xmJyKj4vSKSl3kZ2vCqPfhe9dkLMjchPWenDLaTwtiY3gHPI",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/investors-buy-chipotle-turnaround-072500920.html",
-          "title": "Should Investors Buy Into the Chipotle Turnaround?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6fs-9k_AvYI4xmJyKj4vSKSl3kZ2vCqPfhe9dkLMjchPWenDLaTwtiY3gHPI"
-        },
-        {
-          "url": "https://www.the-independent.com/us/money/chipotle-new-rewards-program-breaks-records-b3078350.html",
-          "title": "Chipotle overhauled its rewards program - and it looks like it’s working",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG9lBp7dJ0f7S86gRDCKR8DasIHCXJExV8iPfym2GZ4pWLUDrg5z9pMW8P9AI"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/10/28/chipotle-mexican-grill-cmg-q3-2026-earnings.html",
-          "title": "Chipotle shares rise 7% after CEO says same-store sales growth will continue",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsDtOx8PE5rDbU7P24Q5aFgnOUsZCbEfPoPrdj-AJp_2BpIqgd8XIbpgHaHTM"
-        }
-      ]
-    },
-    {
-      "query": "tennis club",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T07:10:00Z",
-      "related_news_urls": [
-        "https://www.tennis365.com/tennis-news/tennis-holiday-venue-turkiye-corendon",
-        "https://uk.news.yahoo.com/padel-courts-approved-despite-fears-050000925.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp91j2RO1pSJT1UncpBNF8bjK_ZgSnNK7Wpdpg3ZbEaWy2hS9PAQ_mzs5dzJw",
-      "image_credit": "Tennis365",
-      "news": [
-        {
-          "url": "https://www.tennis365.com/tennis-news/tennis-holiday-venue-turkiye-corendon",
-          "title": "New tennis holiday venue set to take on the established big-hitters in Europe",
-          "publisher": "Tennis365",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp91j2RO1pSJT1UncpBNF8bjK_ZgSnNK7Wpdpg3ZbEaWy2hS9PAQ_mzs5dzJw"
-        },
-        {
-          "url": "https://uk.news.yahoo.com/padel-courts-approved-despite-fears-050000925.html",
-          "title": "New padel courts approved despite fears for neighbouring squash club",
-          "publisher": "Yahoo News UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi2S-eENII9rKQP2mrrEHGToE8eWbhQBvyjQZ45DdQ7mROoRnTsHF_VkhZJeI"
         }
       ]
     }
