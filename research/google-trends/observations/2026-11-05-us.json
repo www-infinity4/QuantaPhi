@@ -3,47 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T17:31:06.901579Z",
+  "checked_at": "2026-11-05T18:01:58.909907Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jason sudeikis",
+      "query": "naresh bhatt",
       "approx_searches": "500+",
-      "published_at": "2026-11-05T17:10:00Z",
+      "published_at": "2026-11-05T17:40:00Z",
       "related_news_urls": [
-        "https://www.animationmagazine.net/2026/11/the-angry-birds-movie-3-new-trailer-debuts-jisoo-tune/",
-        "https://www.hollywoodreporter.com/music/film-tv-music-news/jisoo-original-song-the-angry-birds-movie-3-exclusive-1236747168/",
-        "https://www.yahoo.com/entertainment/movies/trailers/articles/sonic-hedgehog-shocking-cameo-2026-175727481.html"
+        "https://wtop.com/virginia/2026/11/naresh-bhatt-contends-wife-mamta-died-by-suicide-in-virginia-murder-trial/",
+        "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-mamta-kafle-bhatt-says-he-found-her-dead/65-1e47de3d-9243-4329-9a51-b0ccf6e29920",
+        "https://www.courttv.com/news/im-not-that-type-of-person-husband-denies-ever-harming-missing-nurse/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-e7jnAlDWqSOeIUvdKoqzeIfpOATLnIYt3VTWqtpqQNtqPwCAM-MB-0Ui-vA",
-      "image_credit": "Animation Magazine",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHI22q6IAIinjgYuhFFGeKgBqX_R8Yp_J9xKM4zAl8o5c6bMIRqucgyoShhwg",
+      "image_credit": "WTOP News",
       "news": [
         {
-          "url": "https://www.animationmagazine.net/2026/11/the-angry-birds-movie-3-new-trailer-debuts-jisoo-tune/",
-          "title": "‘The Angry Birds Movie 3’ New Trailer Debuts Jisoo Tune",
-          "publisher": "Animation Magazine",
+          "url": "https://wtop.com/virginia/2026/11/naresh-bhatt-contends-wife-mamta-died-by-suicide-in-virginia-murder-trial/",
+          "title": "Naresh Bhatt contends wife Mamta died by suicide in Virginia murder trial",
+          "publisher": "WTOP News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-e7jnAlDWqSOeIUvdKoqzeIfpOATLnIYt3VTWqtpqQNtqPwCAM-MB-0Ui-vA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHI22q6IAIinjgYuhFFGeKgBqX_R8Yp_J9xKM4zAl8o5c6bMIRqucgyoShhwg"
         },
         {
-          "url": "https://www.hollywoodreporter.com/music/film-tv-music-news/jisoo-original-song-the-angry-birds-movie-3-exclusive-1236747168/",
-          "title": "Jisoo to Release Original Song for Upcoming ‘The Angry Birds Movie 3’ (Exclusive)",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-mamta-kafle-bhatt-says-he-found-her-dead/65-1e47de3d-9243-4329-9a51-b0ccf6e29920",
+          "title": "Naresh Bhatt testifies he found his wife dead, tried to dismember her body",
+          "publisher": "WUSA9",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcc8YX6E3JnwAQWEjxNDSvJ5srOtY-sv1sBSpmRgCwqmc78Vdheb_sKSdtokM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHyFv-y_vKgb2NhvP3XSYbsKHUU66PXyZenTJa1sn8KF1UDr1A7hCDDb04rWo"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/sonic-hedgehog-shocking-cameo-2026-175727481.html",
-          "title": "Sonic the Hedgehog’s Shocking Cameo in New 2026 Movie Has Fans Reacting the Same Way",
-          "publisher": "Yahoo",
+          "url": "https://www.courttv.com/news/im-not-that-type-of-person-husband-denies-ever-harming-missing-nurse/",
+          "title": "‘I’m not that type of person’: Husband denies ever harming missing nurse",
+          "publisher": "Court TV",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJww1b2qBdznG-UjoX-n8JFsCdTqmL9lKLvY0DJA6SKASuC-BtDeSTSgdLJ1g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCGV9izGq05NsOMZDNXFZcnQJxuCUz_4GLU8iVvYgHBzr-xDldkBddxVzlwSc"
+        }
+      ]
+    },
+    {
+      "query": "crystal palace - hoffenheim",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T17:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/ck87z2p1g5gzt",
+        "https://www.theguardian.com/football/live/2026/nov/05/crystal-palace-hoffenheim-sparta-prague-bournemouth-sunderland-celtic-europa-league-live?page=with:block-6aecc0838f0825bde3295f3b",
+        "https://www.beinsports.com/en-us/soccer/uefa-europa-league/articles/sage-embracing-pressure-of-competing-on-multiple-fronts-with-palace-2026-11-04"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlnxby-BRk1jBr0nHBVRXDYwU8IqI1yGtD8Wz55J5zG18lTTNGG-f7mBPNCSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/ck87z2p1g5gzt",
+          "title": "Crystal Palace vs Hoffenheim: UEFA Europa League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlnxby-BRk1jBr0nHBVRXDYwU8IqI1yGtD8Wz55J5zG18lTTNGG-f7mBPNCSw"
+        },
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/05/crystal-palace-hoffenheim-sparta-prague-bournemouth-sunderland-celtic-europa-league-live?page=with:block-6aecc0838f0825bde3295f3b",
+          "title": "Crystal Palace v Hoffenheim, Sparta Prague v Bournemouth: Europa League – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeaiI0oM_WSZYoGVS7-re5s2frzHWv9_di2lwYfXO2v8dVUoSgCNwdd6hNkoc"
+        },
+        {
+          "url": "https://www.beinsports.com/en-us/soccer/uefa-europa-league/articles/sage-embracing-pressure-of-competing-on-multiple-fronts-with-palace-2026-11-04",
+          "title": "Sage embracing pressure of competing on multiple fronts with Palace",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwFgEfgCljvCGCKMamfU-NYI_rI6hEOnT6D0o7kCc0ZW3NccN4ZBL9QLrr1K4"
+        }
+      ]
+    },
+    {
+      "query": "justin jefferson",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T17:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7753776/2026/11/05/justin-jefferson-vikings-offense-trade-deadline-silence/",
+        "https://www.startribune.com/minnesota-vikings-offense-kyler-murray-justin-jefferson-stats-nfl-film-breakdown-buffalo-bills-mnf/601906308",
+        "https://sports.yahoo.com/articles/vikings-jordan-addison-sends-veiled-001510910.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWzhLcnCYaapwce4qd8Rx4iXdMPTsWTrN7YjWr4MHPwE2SMzBgKM_JENKHkx0",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7753776/2026/11/05/justin-jefferson-vikings-offense-trade-deadline-silence/",
+          "title": "Why Justin Jefferson’s silence is deafening when it comes to the Vikings’ offense - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWzhLcnCYaapwce4qd8Rx4iXdMPTsWTrN7YjWr4MHPwE2SMzBgKM_JENKHkx0"
+        },
+        {
+          "url": "https://www.startribune.com/minnesota-vikings-offense-kyler-murray-justin-jefferson-stats-nfl-film-breakdown-buffalo-bills-mnf/601906308",
+          "title": "Justin Jefferson keeps getting open. Here’s why the Vikings aren’t capitalizing.",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXqT8m4dsWH14GC11_rx_z7QCQkCfyl8XLtQ1_GUazY4-Jmw7V8b8J-1WhEIQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/vikings-jordan-addison-sends-veiled-001510910.html",
+          "title": "Vikings’ Jordan Addison Sends Veiled Shot at Kyler Murray After Lions Loss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvwQBQ2MupEuu1M19G6PtcVEcXyePEqQNYvLqNd2mhwtfzj6AtK4_wOoEH08Q"
+        }
+      ]
+    },
+    {
+      "query": "aldosivi vs river",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T17:30:00Z",
+      "related_news_urls": [
+        "https://www.ole.com.ar/futbol-primera/aldosivi-vs-river-vivo-minuto-minuto-partido-torneo-clausura-fecha16_0_h9r9bVagbD.html",
+        "https://www.clarin.com/deportes/river-sorpresas-despues-derrota-superclasico-lista-ponzio-juveniles-visitar-aldosivi_0_xMuc3O6f1p.html",
+        "https://www.lanacion.com.ar/deportes/futbol/aldosivi-vs-river-en-vivo-nid05112026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxT8LaGadHfIJo8MYJRrmAuU94N_pV8pN8jK5uBETEfDbbCrPAO86BDiEv0q0",
+      "image_credit": "Olé",
+      "news": [
+        {
+          "url": "https://www.ole.com.ar/futbol-primera/aldosivi-vs-river-vivo-minuto-minuto-partido-torneo-clausura-fecha16_0_h9r9bVagbD.html",
+          "title": "Aldosivi vs. River, hoy EN VIVO por el Torneo Clausura: formaciones confirmadas, horario y por dónde ver",
+          "publisher": "Olé",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxT8LaGadHfIJo8MYJRrmAuU94N_pV8pN8jK5uBETEfDbbCrPAO86BDiEv0q0"
+        },
+        {
+          "url": "https://www.clarin.com/deportes/river-sorpresas-despues-derrota-superclasico-lista-ponzio-juveniles-visitar-aldosivi_0_xMuc3O6f1p.html",
+          "title": "River, con sorpresas después de la derrota en el Superclásico: la lista de Ponzio con muchos juveniles para visitar a Aldosivi",
+          "publisher": "Clarin.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSusFjrZKVx-ncPMEQ6EQANF2Z3E0F4vMeMu6n6mTgoSfLsHgIsUkkkXuoz6bs"
+        },
+        {
+          "url": "https://www.lanacion.com.ar/deportes/futbol/aldosivi-vs-river-en-vivo-nid05112026/",
+          "title": "Aldosivi vs. River, EN VIVO: el minuto a minuto del partido",
+          "publisher": "La Nación",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOt_zvdhHBsHKMxg-XMCPR_BZJbQMKmc0UT8DwNihoMwPSyIgkSSxFcnw1PhA"
+        }
+      ]
+    },
+    {
+      "query": "atalanta vs kairat",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T17:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/conference-league-line-ups-atalanta-164000981.html",
+        "https://www.bbc.com/sport/football/live/c5djvklyewpgt",
+        "https://football-italia.net/sarri-atalanta-training-retreat-bring-closer/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz2S0wzgwZFtIgEB7qiGZulNIvVnBzQAXZmVVL6HSe8wpKG4DtOzVs6DRDRPY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/conference-league-line-ups-atalanta-164000981.html",
+          "title": "Conference League line-ups: Atalanta vs. Kairat Almaty",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz2S0wzgwZFtIgEB7qiGZulNIvVnBzQAXZmVVL6HSe8wpKG4DtOzVs6DRDRPY"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/live/c5djvklyewpgt",
+          "title": "Atalanta vs Kairat: UEFA Conference League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvXcLdjm0698wpwyv6TYRsFO6H68t3EyZ8g4gSBbqwH4X21rGeuGzhu7aRZ3I"
+        },
+        {
+          "url": "https://football-italia.net/sarri-atalanta-training-retreat-bring-closer/",
+          "title": "Sarri: Atalanta’s training retreat is meant to ‘bring us closer’",
+          "publisher": "Football Italia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg9XSm8kAtc4FGMSTP4UzwGeXBH6GpTxWraEqZK6D-DaGlhRVPqRryDTBsCvg"
+        }
+      ]
+    },
+    {
+      "query": "midtjylland vs ajax",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T17:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c8r4y7n209ykt",
+        "https://sports.yahoo.com/articles/changes-midfield-brandt-amrabat-injuries-112014368.html",
+        "https://www.flashscore.com/news/ajax-dream-of-first-european-trophy-in-30-years-before-midtjylland-clash-says-dutch-expert/ANanLSCi/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c8r4y7n209ykt",
+          "title": "Midtjylland vs Ajax: UEFA Conference League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/changes-midfield-brandt-amrabat-injuries-112014368.html",
+          "title": "Changes In Midfield After Brandt And Amrabat Injuries: Ajax Predicted XI vs FC Midtjylland",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiZnjRBKPv-VP_PRC9Hh1XJRoKay0FWP8-9GQN2RRb-17WUqNjzqhOdIGYpVQ"
+        },
+        {
+          "url": "https://www.flashscore.com/news/ajax-dream-of-first-european-trophy-in-30-years-before-midtjylland-clash-says-dutch-expert/ANanLSCi/",
+          "title": "Ajax dream of first European trophy in 30 years before Midtjylland clash, says Dutch expert",
+          "publisher": "Flashscore.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjSd40Z2CoID7Nlx_O13TGUEZDY_N8Dj46Rb31UGbX89d4hYGJKQM9VOVJNok"
+        }
+      ]
+    },
+    {
+      "query": "national hurricane center",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T17:20:00Z",
+      "related_news_urls": [
+        "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
+        "https://www.gulfcoastnewsnow.com/article/weather-forecast-florida-atlantic-tropics-hurricane-storm-kyle-bermuda/74342327",
+        "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk",
+      "image_credit": "WPEC",
+      "news": [
+        {
+          "url": "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
+          "title": "Tracking potential tropical development",
+          "publisher": "WPEC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk"
+        },
+        {
+          "url": "https://www.gulfcoastnewsnow.com/article/weather-forecast-florida-atlantic-tropics-hurricane-storm-kyle-bermuda/74342327",
+          "title": "Medium odds for development in the Atlantic",
+          "publisher": "Gulf Coast News and Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqNKZBkxb8lVVudXdjFQUDDffFwNbr29yoAB1K3JgHtZWHyYygU_iSzWVO2M"
+        },
+        {
+          "url": "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
+          "title": "Subtropical storm could develop in the Atlantic this week",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOg8p4vNB8JJ4Np7qtj56Jvcd3WN8lsOLEyQt_5vBTePWVj4LCtWaaYm5xtyQ"
+        }
+      ]
+    },
+    {
+      "query": "jason sudeikis",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T17:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/espn/betting/story/_/id/50355297/2026-college-football-week-10-top-25-betting-lines-odds",
+        "https://www.cbssports.com/college-football/news/miami-notre-dame-position-by-position-breakdown/",
+        "https://www.onefootdown.com/notre-dame-fighting-irish-football/86626/updated-weather-report-no-4-notre-dame-vs-no-1-miami"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9Mw8CMKK7Kp71vVouCE6yejpdORDjFi_Umute7nA_RYJasYSD3hFqy0O8mU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/espn/betting/story/_/id/50355297/2026-college-football-week-10-top-25-betting-lines-odds",
+          "title": "Top 25 betting lines: No. 4 Notre Dame favored over No. 1 Miami",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9Mw8CMKK7Kp71vVouCE6yejpdORDjFi_Umute7nA_RYJasYSD3hFqy0O8mU"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/miami-notre-dame-position-by-position-breakdown/",
+          "title": "Who has the edge in Miami vs. Notre Dame? Position-by-position breakdown for major showdown",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJkHr1kuSGv7PfaexjeTqW8GA8sfjzEc1no0qikz_UP-uhLmgYd5ojQalVb0"
+        },
+        {
+          "url": "https://www.onefootdown.com/notre-dame-fighting-irish-football/86626/updated-weather-report-no-4-notre-dame-vs-no-1-miami",
+          "title": "UPDATED WEATHER REPORT: No. 4 Notre Dame VS No. 1 Miami",
+          "publisher": "One Foot Down",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV4k1QUfm8UPMZ3jzZOuS2NWycwyPwAFiKQDuo1B_ZoiHdiENhGP88QLeNFzo"
         }
       ]
     },
     {
       "query": "sparta praha vs bournemouth",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-05T17:00:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/cq77p066k1ero",
@@ -73,41 +318,6 @@
           "publisher": "AOL.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQLMaA4te17x4asfNLRA57xadCpZ4FK7sL0XpLR8ufUjP46vdkkz-L2NTu5KI"
-        }
-      ]
-    },
-    {
-      "query": "rexal ford",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T17:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/05/europe/rexal-ford-trial-rome-verdict-intl-cec",
-        "https://www.nytimes.com/2026/11/05/world/europe/italy-american-murder-case.html",
-        "https://www.reuters.com/legal/litigation/us-man-jailed-life-murder-russian-partner-daughter-rome-2026-11-05/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVGFFaqc7z3dfSfWJK4A7_Kdi0MLH6Hd_CPbnTkaX4sOR522P5dxOLIFle248",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/05/europe/rexal-ford-trial-rome-verdict-intl-cec",
-          "title": "American man convicted of murdering his girlfriend and infant child in Rome",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVGFFaqc7z3dfSfWJK4A7_Kdi0MLH6Hd_CPbnTkaX4sOR522P5dxOLIFle248"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/05/world/europe/italy-american-murder-case.html",
-          "title": "American Is Convicted of Murder in Case That Gripped Italy",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcUxoNlEHpHUSHGnoXLBi1Nf5roM-GdckSPXm5leqeDEUWsRdZk_Cl9YgZLOc"
-        },
-        {
-          "url": "https://www.reuters.com/legal/litigation/us-man-jailed-life-murder-russian-partner-daughter-rome-2026-11-05/",
-          "title": "US man jailed for life for murder of Russian partner and daughter in Rome",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPWWFsXye25qRcz3plKhmoXFFddVzXkKergy9i8XlU1gyECtQuWh-1zh1T_1Y"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "Eos",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm9XkHOgI2aFHEZotCw842qRZG2yjbdJ4XZ-4eqG5fkyo1mtNhEa6S8Uib_XE"
-        }
-      ]
-    },
-    {
-      "query": "milan vs ferencváros",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T16:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c69vz2ey82grt",
-        "https://www.espn.com/soccer/story/_/id/50380347/ruben-amorim-ac-milan-season-start-europa-league-ferencvaros",
-        "https://sports.yahoo.com/articles/europa-league-liveblog-milan-ferencvaros-163500490.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNkW4ZUiWaT4LD_w7nhUvLGCfwLNyQ7KkajWiAtQm67Y9RIbubUpKihWeLW9s",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c69vz2ey82grt",
-          "title": "AC Milan vs Ferencváros: UEFA Europa League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNkW4ZUiWaT4LD_w7nhUvLGCfwLNyQ7KkajWiAtQm67Y9RIbubUpKihWeLW9s"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50380347/ruben-amorim-ac-milan-season-start-europa-league-ferencvaros",
-          "title": "Ruben Amorim not satisfied with Milan's start: 'We can do better'",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRChXeikQYbJtYdtphN1Au_fS09cFlbGhsJPc8nEunl4MM5tiJwN6RY4DbsISA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/europa-league-liveblog-milan-ferencvaros-163500490.html",
-          "title": "Europa League Liveblog: Milan-Ferencvaros, AZ Alkmaar-Juventus, Atalanta-Kairat",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtSRcK8i3q1CItTz9NL3eecR_TKrgJpSRq0bBOjAn30h_RKTwuUVPcQ8xRvKE"
-        }
-      ]
-    },
-    {
-      "query": "harmeet dhillon",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T16:50:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/harmeet-dhillon-resigns-justice-departments-assistant-attorney-general-civil-rights",
-        "https://news.bloomberglaw.com/us-law-week/justice-department-civil-rights-head-dhillon-plans-to-resign",
-        "https://www.bloomberg.com/news/articles/2026-11-05/dhillon-plans-doj-civil-rights-exit-after-democrats-sweep"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaPGWaVotydyAenaJrnxeOK-qgMoii1Z9Q96SXALBNbgEjL09wxnnrro1dZwY",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/politics/harmeet-dhillon-resigns-justice-departments-assistant-attorney-general-civil-rights",
-          "title": "Harmeet Dhillon resigns as Justice Department's assistant attorney general for civil rights",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaPGWaVotydyAenaJrnxeOK-qgMoii1Z9Q96SXALBNbgEjL09wxnnrro1dZwY"
-        },
-        {
-          "url": "https://news.bloomberglaw.com/us-law-week/justice-department-civil-rights-head-dhillon-plans-to-resign",
-          "title": "Justice Department Civil Rights Head Dhillon Plans to Resign",
-          "publisher": "Bloomberg Law News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSClHOP6OfoJ0RF_BYlBES-dwTzcqonNKIS-7blpatgWh--q7kjFLGOu0Gy0IQ"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-05/dhillon-plans-doj-civil-rights-exit-after-democrats-sweep",
-          "title": "Dhillon Plans DOJ Civil Rights Exit After Democrats’ Sweep",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1x6ETTNqVYsWCQnFE6dJ1VOXsHsOKQ4uTSqq8_gt56XreYSDzauuy2ib3IP8"
-        }
-      ]
-    },
-    {
-      "query": "naomi watts",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T16:50:00Z",
-      "related_news_urls": [
-        "https://www.theskimm.com/health/naomi-watts-quotes-menopause-aging",
-        "https://wwd.com/pop-culture/celebrity-news/naomi-watts-ashi-studio-couture-alls-fair-mexico-city-1239389009/",
-        "https://www.thefashionspot.com/fashion-news/981063-naomi-watts-micro-minidress-thighs-legs-balmain-alls-fair"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnMA8dOhmPBO6SKMDBWLtuahHhJ7ws_C6jeCKP68oCW17CmuG76TNeBCO38RM",
-      "image_credit": "theSkimm",
-      "news": [
-        {
-          "url": "https://www.theskimm.com/health/naomi-watts-quotes-menopause-aging",
-          "title": "Naomi Watts on Finding Your Way Through Menopause",
-          "publisher": "theSkimm",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnMA8dOhmPBO6SKMDBWLtuahHhJ7ws_C6jeCKP68oCW17CmuG76TNeBCO38RM"
-        },
-        {
-          "url": "https://wwd.com/pop-culture/celebrity-news/naomi-watts-ashi-studio-couture-alls-fair-mexico-city-1239389009/",
-          "title": "Naomi Watts Goes Couture in Ashi Studio for 'All's Fair' Mexico City",
-          "publisher": "WWD",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXMP_4cDcpxUykVpJv_ybUAuj87dmAkLfrSV--7c31SQkFJpAkVrV_4IMtN0s"
-        },
-        {
-          "url": "https://www.thefashionspot.com/fashion-news/981063-naomi-watts-micro-minidress-thighs-legs-balmain-alls-fair",
-          "title": "Naomi Watts’ Balmain Micro Minidress Rides High on Her Thighs for ‘All’s Fair’",
-          "publisher": "theFashionSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTua6Yx2Vn1uYTMndJEToj8v-OHMW8tLnjCobdDnMbOoz2ok89uD2tsmOiDidU"
-        }
-      ]
-    },
-    {
-      "query": "real sociedad vs ol",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T16:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cm2keyvgjwqnt",
-        "https://sports.yahoo.com/articles/real-sociedad-predicted-xi-v-104600725.html",
-        "https://www.reutersconnect.com/item/matarazzo-they-are-not-going-to-change-their-style/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzU1MDIxODg4MDA2MDAx"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXpvN1XP0hyUQAtryYlt5Uuac1UMMqzsh6jXId_SI-cNzVxK_eRk7ZM4UtMQ8",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cm2keyvgjwqnt",
-          "title": "Real Sociedad vs Olympique Lyonnais: UEFA Europa League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXpvN1XP0hyUQAtryYlt5Uuac1UMMqzsh6jXId_SI-cNzVxK_eRk7ZM4UtMQ8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/real-sociedad-predicted-xi-v-104600725.html",
-          "title": "Real Sociedad predicted XI v Lyon: Mamadou Sarr to start against former club",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3NeggQ_HKAs9lxHQ8dIDdxBSI1vk_79j-mVYKf-BEltAS4CIJw7_CH4gHLKU"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/matarazzo-they-are-not-going-to-change-their-style/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzU1MDIxODg4MDA2MDAx",
-          "title": "Licensable video: Matarazzo: \"They are not going to change their style\"",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjmCtagoJGmiCSMIpAL5eIvV0SuQzHN3H5bKi0eJX7SP6ptbK9iN54_WLn30w"
-        }
-      ]
-    },
-    {
-      "query": "niecy nash",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T16:50:00Z",
-      "related_news_urls": [
-        "https://wwd.com/footwear-news/shoe-trends/niecy-nash-dalmatian-print-pumps-good-morning-america-1239400157/",
-        "https://www.instagram.com/reel/DfXHsR2SJKi/",
-        "https://hellobeautiful.com/4607058/niecy-nash-wigs/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL_FWHavhO7pldZGKX91JNQrLcClFfCVYZ00ALpJVKRBuUqXBi34Iio0HXMLk",
-      "image_credit": "WWD",
-      "news": [
-        {
-          "url": "https://wwd.com/footwear-news/shoe-trends/niecy-nash-dalmatian-print-pumps-good-morning-america-1239400157/",
-          "title": "Niecy Nash-Betts Blends Polka Dot Trend With Dalmatian Print Pumps on ‘Good Morning America’",
-          "publisher": "WWD",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL_FWHavhO7pldZGKX91JNQrLcClFfCVYZ00ALpJVKRBuUqXBi34Iio0HXMLk"
-        },
-        {
-          "url": "https://www.instagram.com/reel/DfXHsR2SJKi/",
-          "title": "#PressPlay: Oh wowwww! 🤩 #NiecyNash shows off glamorous wig closet she had television writer #RyanMurphy make her. 🔥✍🏾: #TSRStaffLG",
-          "publisher": "Instagram",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://hellobeautiful.com/4607058/niecy-nash-wigs/",
-          "title": "Niecy Nash-Betts & Her Ladies: 8 Times The Star’s Wig Game Turned Heads",
-          "publisher": "HelloBeautiful",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMwiDfO-AyA2xnUCnbiZg-fh_Ye05QEVIdpLQJ_fXT7mzJxEz9-fBnZIUux1Y"
-        }
-      ]
-    },
-    {
-      "query": "drug",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T16:50:00Z",
-      "related_news_urls": [
-        "https://people.com/kevin-mcenroe-interview-exclusive-12215243",
-        "https://pagesix.com/2026/11/05/celebrity-news/tatum-oneals-son-spills-on-oscar-winning-actress-drug-problem-time-to-let-it-rip/",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/john-mcenroe-son-kevin-nearly-023020204.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7BuboLvNcbE3NIJWJQ1NOL02NQFDW2R44jOAS_5clE-VMV-RE0ZwFZC26SAc",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/kevin-mcenroe-interview-exclusive-12215243",
-          "title": "Kevin McEnroe Calls Writing on Addiction, Almost Dying and His Mom Tatum O’Neal ‘Life-Saving’ (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7BuboLvNcbE3NIJWJQ1NOL02NQFDW2R44jOAS_5clE-VMV-RE0ZwFZC26SAc"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/05/celebrity-news/tatum-oneals-son-spills-on-oscar-winning-actress-drug-problem-time-to-let-it-rip/",
-          "title": "Tatum O’Neal’s son spills on Oscar-winning actress’ ‘drug problem’: Time to ‘let it rip’",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmPlw60Se1sIlCkmuyGMHhq8klTGTXKzFdibdsV-Jw6JhbUIA6EOdvGDhUpYo"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/john-mcenroe-son-kevin-nearly-023020204.html",
-          "title": "John McEnroe’s Son Kevin Nearly Died From Liver Failure—Then Became Mom Tatum O’Neal’s Medical Proxy",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs3xNCPo1LkBsqFr6KlWRDTjPGeoGqG7v0G8DXcF0UGr5XZEWXNlbSHKIeGQw"
         }
       ]
     }
