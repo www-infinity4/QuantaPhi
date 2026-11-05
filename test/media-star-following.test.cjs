@@ -240,3 +240,91 @@ test('owner-reported unplayable Space is removed without changing global source 
  assert.equal(restored.status,200);
  assert.equal((await(await call('/v1/hosts',tok)).json()).eligibleCount,1);
 });
+
+
+test('X OAuth legal pages are public and contain privacy and service conditions',async()=>{
+ const {call}=await fixture();
+ for(const path of ['/legal/privacy','/legal/terms']){
+  const r=await call(path);
+  assert.equal(r.status,200);
+  assert.match(r.headers.get('content-type'),/text\/html/);
+  const content=await r.text();
+  assert.match(content,/QuantaPhi/);
+  assert.doesNotMatch(content,/<script|adsbygoogle/);
+ }
+ const bad=await call('/api/x/oauth/callback');
+ assert.equal(bad.status,400);
+});
+test('X OAuth requires configured server secrets and a wallet-authenticated owner',async()=>{
+ const {call,env}=await fixture();
+ const noConfig=await call('/v1/x/oauth/start',tok,{});
+ assert.equal(noConfig.status,503);
+ assert.equal((await noConfig.json()).error,'x_oauth_not_configured');
+ const noAuth=await call('/v1/x/oauth/start',null,{});
+ assert.equal(noAuth.status,401);
+ env.X_OAUTH_CLIENT_ID='test-client';
+ env.X_OAUTH_CLIENT_SECRET='test-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,17).toString('base64url');
+ const r=await call('/v1/x/oauth/start',tok,{});
+ assert.equal(r.status,200);
+ const auth=new URL((await r.json()).authorizationUrl);
+ assert.equal(auth.origin,'https://x.com');
+ assert.equal(auth.searchParams.get('redirect_uri'),'https://quantaphi.org/api/x/oauth/callback');
+ assert.equal(auth.searchParams.get('code_challenge_method'),'S256');
+ assert.match(auth.searchParams.get('scope'),/offline.access/);
+});
+test('X OAuth token exchange saves encrypted credentials only for the matching account, state is single-use',async()=>{
+ const {call,env,db}=await fixture();
+ env.X_OAUTH_CLIENT_ID='test-client';
+ env.X_OAUTH_CLIENT_SECRET='test-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,15).toString('base64url');
+ await call('/v1/x/account',tok,{handle:'YahooPingcwlz'});
+ const begin=await call('/v1/x/oauth/start',tok,{});
+ const state=new URL((await begin.json()).authorizationUrl).searchParams.get('state');
+ let requests=0;
+ const prior=global.fetch;
+ global.fetch=async (url,options)=>{
+  requests++;
+  if(String(url).includes('/oauth2/token')){
+   assert.equal(options.method,'POST');
+   assert.equal(new URLSearchParams(options.body).get('grant_type'),'authorization_code');
+   assert.match(String(options.body),/code_verifier=/);
+   return new Response(JSON.stringify({access_token:'private-token-for-test',refresh_token:'private-refresh-for-test',expires_in:3600}),{status:200});
+  }
+  if(String(url).includes('/users/me'))return new Response(JSON.stringify({data:{id:'123456',username:'YahooPingcwlz'}}),{status:200});
+  throw Error('unexpected url');
+ };
+ try{
+  const url='/api/x/oauth/callback?state='+state+'&code=one-time-code';
+  const success=await call(url);
+  assert.equal(success.status,200);
+  assert.match(await success.text(),/X account connected/);
+  assert.equal(requests,2);
+  const stored=db.prepare('SELECT * FROM x_oauth_tokens WHERE owner_id=?').get('owner-one');
+  assert.ok(stored.access_cipher);
+  assert.doesNotMatch(JSON.stringify(stored),/private-token-for-test|private-refresh-for-test/);
+  const replay=await call(url);
+  assert.equal(replay.status,403);
+  assert.equal(requests,2);
+  const owner=(await(await call('/v1/x/account',tok)).json());
+  assert.equal(owner.xConnected,true);
+  const stranger=(await(await call('/v1/x/account',other)).json());
+  assert.equal(stranger.xConnected,false);
+  const disconnected=await call('/v1/x/oauth/disconnect',tok,{});
+  assert.equal(disconnected.status,200);
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM x_oauth_tokens').get().n,0);
+ }finally{global.fetch=prior}
+});
+test('X OAuth rejects an X identity different from the owner-claimed handle',async()=>{
+ const {call,env,db}=await fixture();
+ env.X_OAUTH_CLIENT_ID='test-client';env.X_OAUTH_CLIENT_SECRET='test-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,9).toString('base64url');
+ await call('/v1/x/account',tok,{handle:'YahooPingcwlz'});
+ const state=new URL((await(await call('/v1/x/oauth/start',tok,{})).json()).authorizationUrl).searchParams.get('state');
+ const original=global.fetch;
+ global.fetch=async url=>new Response(JSON.stringify(String(url).includes('/oauth2/token')?{access_token:'tmp',expires_in:3600}:{data:{id:'999',username:'SomeoneElse'}}),{status:200});
+ try{const r=await call('/api/x/oauth/callback?state='+state+'&code=fake');
+  assert.equal(r.status,403);
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM x_oauth_tokens').get().n,0);
+ }finally{global.fetch=original}
+});
