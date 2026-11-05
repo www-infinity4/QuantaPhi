@@ -68,7 +68,12 @@ export function filterActiveTickets(candidates,{
 }={}){
  const allowed=[],selected=[],prerequisites=[],deferred=[];
  const limit=Number.isInteger(maxLookAhead)?Math.max(1,Math.min(500,maxLookAhead)):500;
- const examined=(Array.isArray(candidates)?candidates:[]).slice(0,limit);
+ const rows=Array.isArray(candidates)?candidates:[];
+ const inSelectedTicket=candidate=>candidate?.ticket?.id===requested?.ticketId;
+ // Keep the selected ticket's rows together inside the scan limit, even if
+ // hundreds of higher-priority background stages sort before its prerequisites.
+ const examined=(requested?.ticketId&&rows.length>limit
+  ?[...rows.filter(inSelectedTicket),...rows.filter(candidate=>!inSelectedTicket(candidate))]:rows).slice(0,limit);
  // A signed owner request to finish a specific old job must also be able to
  // execute the SAME ticket's SAME repository prerequisite stages. Otherwise
  // the selected parent remains stuck behind its old, aged-out dependencies.

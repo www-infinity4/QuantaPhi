@@ -119,3 +119,12 @@ test('security-held prerequisite stays deferred even when an owner selects its d
  assert.deepEqual(selected.deferred.map(x=>x.reason),['owner_decision_required']);
  assert.equal(checkOwnerRunnerRequest(primary.job,{now,deps:[restricted.job]}).reason,'dependency_pending');
 });
+test('the selected ticket’s prerequisites remain in the bounded scan behind a large backlog',()=>{
+ const primary=mk('OLD',{days:30,jobId:'TASK-2'});
+ primary.job.dependencies=['TASK-1'];
+ const prerequisite=mk('OLD',{days:30,jobId:'TASK-1'});
+ const backlog=Array.from({length:510},(_,index)=>mk('RECENT-'+index));
+ const selected=filterActiveTickets([primary,...backlog,prerequisite],{now,requested:{ticketId:'OLD',jobId:'TASK-2'}});
+ assert.equal(selected.examined,500);
+ assert.deepEqual(selected.allowed.slice(0,2),[primary,prerequisite]);
+});
