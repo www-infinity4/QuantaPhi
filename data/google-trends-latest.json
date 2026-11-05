@@ -3,9 +3,273 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T10:01:45.958525Z",
+  "checked_at": "2026-11-05T10:31:01.656737Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "mai hontama",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T10:10:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/jeline-vandromme-vs-kyoka-okamura-set-1-winner-nov-02-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLDxTEhPPbhYVRoRiX78LupNFRg55xRTsnmaNrkUMzhWTipeFEs7J8rHGmT0",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/jeline-vandromme-vs-kyoka-okamura-set-1-winner-nov-02-2026/",
+          "title": "November 2, 2026: Jeline Vandromme vs Kyoka Okamura: Set 1 Winner Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLDxTEhPPbhYVRoRiX78LupNFRg55xRTsnmaNrkUMzhWTipeFEs7J8rHGmT0"
+        }
+      ]
+    },
+    {
+      "query": "curt cignetti",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T10:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/video/6407908232112",
+        "https://247sports.com/college/indiana/article/everything-cfp-college-football-playoff-hunter-yurachek-said-indiana-iu-rsum-no-4-ranking-292173835/",
+        "https://www.thedailyhoosier.com/heres-why-cfp-committee-put-iu-well-above-notre-dame-in-first-rankings-release/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQu6CV9e3M9FCXOQs_N6O2BFC4LuqgTEhHkB0VcI8wLqdnUD4-YEJ7WbP8nnk",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/video/6407908232112",
+          "title": "Dan Dakich has NO IDEA How Indiana is at Four in the Latest CFP Rankings | Don't @ Me w/ Dan Dakich",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQu6CV9e3M9FCXOQs_N6O2BFC4LuqgTEhHkB0VcI8wLqdnUD4-YEJ7WbP8nnk"
+        },
+        {
+          "url": "https://247sports.com/college/indiana/article/everything-cfp-college-football-playoff-hunter-yurachek-said-indiana-iu-rsum-no-4-ranking-292173835/",
+          "title": "Everything CFP chairman Hunter Yurachek said about Indiana's résumé after first rankings reveal",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUebzRgKznaqD1KYOZ_KOlliDPinNGFvhKss99S8NL-q1wVcDEohClUOBm3X4"
+        },
+        {
+          "url": "https://www.thedailyhoosier.com/heres-why-cfp-committee-put-iu-well-above-notre-dame-in-first-rankings-release/",
+          "title": "Here’s why CFP Committee put IU well above Notre Dame in first rankings release",
+          "publisher": "The Daily Hoosier",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4AkMr1OCBsFyUnBbZsW306HZH5hFAPUyHZQEgbbodIGGcwXNsaa5kmjexFyA"
+        }
+      ]
+    },
+    {
+      "query": "hacker",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T10:10:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/legal/government/india-flags-chinese-linked-ai-tools-hacking-campaign-against-financial-firms-2026-11-05/",
+        "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
+        "https://indianexpress.com/article/business/cert-in-reporting-deadline-ai-security-incidents-10951358/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4l31udegqfXgHU6qq6BFsLoR85JS93ZO6Dp-kqhAvxs8Tg-oSfRrkxJ5dXR8",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/legal/government/india-flags-chinese-linked-ai-tools-hacking-campaign-against-financial-firms-2026-11-05/",
+          "title": "India flags Chinese-linked AI tools in hacking campaign against financial firms",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4l31udegqfXgHU6qq6BFsLoR85JS93ZO6Dp-kqhAvxs8Tg-oSfRrkxJ5dXR8"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
+          "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+          "publisher": "The Hacker News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBIcE2JkkFwFir8q-csgUp1Yo_uaDXY-7M4peJfFRv59dznUjYqjnwD6rz4rY"
+        },
+        {
+          "url": "https://indianexpress.com/article/business/cert-in-reporting-deadline-ai-security-incidents-10951358/",
+          "title": "CERT-In sets six-hour reporting deadline for AI security incidents",
+          "publisher": "The Indian Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq6Het8J0bHRw9IyN-NBVt1AwKYSosDZaRJh79jTCx-EYyIASptnt4N3quw2I"
+        }
+      ]
+    },
+    {
+      "query": "president trump",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T10:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/04/us/trump-midterms-ballroom.html",
+        "https://www.reuters.com/legal/government/democrats-vow-rein-trump-he-shows-off-white-house-ballroom-2026-11-05/",
+        "https://www.wusa9.com/article/news/nation-world/donald-trump-comments-white-house-midterm-elections/507-e7b1d69a-dd06-4795-8231-8106fb6e37e2"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEh6q96Cou2i1UvzgMpkVtGnKKWDQpQbCk2IzHZ05_aK3ARoiT-28vGoFU-bs",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/04/us/trump-midterms-ballroom.html",
+          "title": "Trump Emerges After the Midterms: ‘Did You Guys See the Helipad?’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEh6q96Cou2i1UvzgMpkVtGnKKWDQpQbCk2IzHZ05_aK3ARoiT-28vGoFU-bs"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/democrats-vow-rein-trump-he-shows-off-white-house-ballroom-2026-11-05/",
+          "title": "Democrats vow to rein in Trump as he shows off White House ballroom",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZSzs6WOljt8_hpNadqjyuCtJq7tBznb6ltydm1cbipWYY_PuIqCGsXRRjkA"
+        },
+        {
+          "url": "https://www.wusa9.com/article/news/nation-world/donald-trump-comments-white-house-midterm-elections/507-e7b1d69a-dd06-4795-8231-8106fb6e37e2",
+          "title": "President Trump makes first public comments since Republicans suffer midterm losses",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiS883qxUyCkwKDq6DKNkSto4_NkrnPYDDZZBrxcSD6DGMhv3SblC9fuzzATQ"
+        }
+      ]
+    },
+    {
+      "query": "tropics",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T10:00:00Z",
+      "related_news_urls": [
+        "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
+        "https://weather.com/2026/11/04/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
+        "https://www.foxweather.com/weather-news/bryan-norcross-hurricane-analysis-november-3-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk",
+      "image_credit": "WPEC",
+      "news": [
+        {
+          "url": "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
+          "title": "Tracking potential tropical development",
+          "publisher": "WPEC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk"
+        },
+        {
+          "url": "https://weather.com/2026/11/04/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
+          "title": "Subtropical storm could develop in the Atlantic this week",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb09CXIQNTscShhSk1MxADYuG4myAkYSBsqCJp7uA-_bwikueX9CeSkNmx7Ao"
+        },
+        {
+          "url": "https://www.foxweather.com/weather-news/bryan-norcross-hurricane-analysis-november-3-2026",
+          "title": "Bryan Norcross: Chance for a storm developing east of the Bahamas to be named Kyle this week",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZx1RpbiYFr52GXQqRWyskSrz2HCdRM5kCVVA-6drqua9gKQd0q7RU5-AmYew"
+        }
+      ]
+    },
+    {
+      "query": "savannah bananas 2027 schedule",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T09:50:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/04/savannah-bananas-2027-tickets-are-selling-fast-see-the-full-schedule/92614424007/",
+        "https://www.mlive.com/detroit/2026/11/there-will-be-a-savannah-banana-ball-triple-header-at-the-home-of-the-tigers.html",
+        "https://www.milb.com/rochester/news/third-banana-ball-game"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJEmfKSzOWMbN-LHkaEJwkliVMaO4hUIJukTvvc3GrxS4U5vW709gBWPYa8J4",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/04/savannah-bananas-2027-tickets-are-selling-fast-see-the-full-schedule/92614424007/",
+          "title": "Savannah Bananas reveal huge 2027 tour: See dates, stadiums and tickets",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJEmfKSzOWMbN-LHkaEJwkliVMaO4hUIJukTvvc3GrxS4U5vW709gBWPYa8J4"
+        },
+        {
+          "url": "https://www.mlive.com/detroit/2026/11/there-will-be-a-savannah-banana-ball-triple-header-at-the-home-of-the-tigers.html",
+          "title": "There will be a Savannah Banana Ball triple-header at the home of the Tigers",
+          "publisher": "MLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0gGNCY5HScTYHI_0yfcvBSxQFOYWns1HSVx9TZSKss36wPLk1SV3MFM9rPwc"
+        },
+        {
+          "url": "https://www.milb.com/rochester/news/third-banana-ball-game",
+          "title": "OFFICIAL: BANANA BALL ADDS THIRD DATE AT ESL BALLPARK IN 2027",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReNt70RhoM87iqZ_2TWx1e3XkM9brpoXKfVGk4upyTsvjziGMrXvffwJscNEk"
+        }
+      ]
+    },
+    {
+      "query": "prince george aston villa match",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T09:50:00Z",
+      "related_news_urls": [
+        "https://www.today.com/parents/family/prince-george-track-jacket-soccer-match-prince-william-rcna607484",
+        "https://www.instyle.com/prince-george-subtle-hair-change-prince-william-spain-outing-12236053",
+        "https://www.espn.com/soccer/story/_/id/50368442/prince-william-barcelona-vs-aston-villa-camp-nou-source"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeg_7Q9JIznhQ5siLLAaMLj4OvFpMBx9HUgbcCrpyyrH1VtoSkROGsN2IGyvs",
+      "image_credit": "TODAY.com",
+      "news": [
+        {
+          "url": "https://www.today.com/parents/family/prince-george-track-jacket-soccer-match-prince-william-rcna607484",
+          "title": "Prince George, 13, Debuts a New Teen Look at a Soccer Match With Prince William",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeg_7Q9JIznhQ5siLLAaMLj4OvFpMBx9HUgbcCrpyyrH1VtoSkROGsN2IGyvs"
+        },
+        {
+          "url": "https://www.instyle.com/prince-george-subtle-hair-change-prince-william-spain-outing-12236053",
+          "title": "Prince George, 13, Looks So Grown Up With a Subtle Hair Change and an Emerging Sense of Style During Father-Son Outing",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhs2jxeIeBEnkT_phIDVjiVmM0XeytmHUmoLc9FC5Z6OQeVTdTV8M_BjLOwx4"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50368442/prince-william-barcelona-vs-aston-villa-camp-nou-source",
+          "title": "Prince William, Prince George watch on as Barcelona beat Aston Villa at Camp Nou",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTU0K_JXb3Q_cVGXR6Fy4IEzeqiFAOQsdqVOUOspvxnt9l9PxfiRCVfOlWnZtE"
+        }
+      ]
+    },
+    {
+      "query": "nxt results",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T09:50:00Z",
+      "related_news_urls": [
+        "https://www.wwe.com/shows/wwenxt/2026-11-4",
+        "https://www.foxnews.com/outkick-sports/wwe-aew-stack-deck-programs-head-to-head-wednesday-night-showcase",
+        "https://bleacherreport.com/articles/25529393-wwe-nxt-results-winners-live-grades-reaction-highlights-after-halloween-havoc-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4_U7ALfC-Hk4L2lINthxLp_2fl52L-TDL2CF4yh_VRz1O3omPzk2BgygcXBY",
+      "image_credit": "WWE",
+      "news": [
+        {
+          "url": "https://www.wwe.com/shows/wwenxt/2026-11-4",
+          "title": "WWE NXT results, Nov. 4, 2026: Kevin Owens costs CM Punk the NXT Championship against Grayson Waller",
+          "publisher": "WWE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4_U7ALfC-Hk4L2lINthxLp_2fl52L-TDL2CF4yh_VRz1O3omPzk2BgygcXBY"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/wwe-aew-stack-deck-programs-head-to-head-wednesday-night-showcase",
+          "title": "WWE, AEW stack the deck as programs go head-to-head in Wednesday night showcase",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkQT5s9IrL19wT-QGO42GarA6yripUtFUqT17Pc_ikN-EPU3uCbVlp2bLBTsw"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529393-wwe-nxt-results-winners-live-grades-reaction-highlights-after-halloween-havoc-2026",
+          "title": "WWE NXT Results, Winners, Live Grades, Reaction, Highlights After Halloween Havoc 2026",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6Hrj9AgMRXLNhYY9ovSrtaF9ttY8u5KPSByK7QVQY2RsohSjklQxHCDKmBL8"
+        }
+      ]
+    },
     {
       "query": "ukraine news",
       "approx_searches": "100+",
@@ -42,317 +306,37 @@
       ]
     },
     {
-      "query": "mika stojsavljevic",
+      "query": "rice krispies",
       "approx_searches": "100+",
-      "published_at": "2026-11-05T09:20:00Z",
+      "published_at": "2026-11-05T09:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/british-teenager-mika-stojsavljevic-beats-100813799.html",
-        "https://justwomenssports.com/reads/mika-stojsavljevic-upsets-sofia-kenin-hong-kong-open-2026/",
-        "https://www.aol.com/articles/gbs-stojsavljevic-17-claims-first-100615000.html"
+        "https://www.foxbusiness.com/lifestyle/breakfast-food-giant-makes-major-change-iconic-cereals-recipe",
+        "https://www.bbc.com/news/videos/c6pwgl9v9q8ko",
+        "https://www.ctvnews.ca/business/article/rice-krispies-will-continue-to-be-made-with-real-rice-in-canada-kelloggs-says/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7UtVMEmIRCuu0huswuUf7jm6DX1WlA7aEUTtXK1GaK3WgJluPyRky-86PAfU",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7fK0Ic2LqxYC9vitCB2WIcfTygQaO54otMxd7byYS_05kR8O1rwT8HYaE3As",
+      "image_credit": "Fox Business",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/british-teenager-mika-stojsavljevic-beats-100813799.html",
-          "title": "British teenager Mika Stojsavljevic beats grand slam champion for first WTA Tour win",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.foxbusiness.com/lifestyle/breakfast-food-giant-makes-major-change-iconic-cereals-recipe",
+          "title": "Breakfast food giant makes major change to iconic cereal's recipe",
+          "publisher": "Fox Business",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7UtVMEmIRCuu0huswuUf7jm6DX1WlA7aEUTtXK1GaK3WgJluPyRky-86PAfU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7fK0Ic2LqxYC9vitCB2WIcfTygQaO54otMxd7byYS_05kR8O1rwT8HYaE3As"
         },
         {
-          "url": "https://justwomenssports.com/reads/mika-stojsavljevic-upsets-sofia-kenin-hong-kong-open-2026/",
-          "title": "Teenager Mika Stojsavljevic Shocks Sofia Kenin at 2026 Hong Kong Open",
-          "publisher": "Just Women's Sports",
+          "url": "https://www.bbc.com/news/videos/c6pwgl9v9q8ko",
+          "title": "Why Rice Krispies are no longer made with rice grains",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8i4CrF8JVesyjSADY8l5XSpeYdI_d0gjDpoJYzF81CkqZxP3kfWvVH7YLkRs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlJGJ_h4DpDUqAwrWhCDiyC85E6cHMxlNJ6bqvHZR5UtxbDlaHFsWjdSaMKCo"
         },
         {
-          "url": "https://www.aol.com/articles/gbs-stojsavljevic-17-claims-first-100615000.html",
-          "title": "GB's Stojsavljevic, 17, claims first WTA Tour win despite short notice",
-          "publisher": "AOL.com",
+          "url": "https://www.ctvnews.ca/business/article/rice-krispies-will-continue-to-be-made-with-real-rice-in-canada-kelloggs-says/",
+          "title": "Rice Krispies will continue to be made with real rice in Canada, Kellogg’s says",
+          "publisher": "CTV News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1MCMy4QJt1R4YXpTVskVUIZxkTok3Sfx-yWUrU3AS_ZbBy4QMif1aLFE3Dxo"
-        }
-      ]
-    },
-    {
-      "query": "cvs breakup",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T09:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/04/business/cvs-to-split-into-two-companies",
-        "https://www.reuters.com/legal/transactional/cvs-health-split-two-separating-pharmacy-business-insurance-2026-11-04/",
-        "https://wwd.com/beauty-industry-news/beauty-features/beauty-and-wellness-have-more-space-to-shine-in-a-revamped-cvs-1239400818/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTG6jvxoAwxao8dkPxaN9f6_mqS0nw8IdaOtSRtAEmzrwgnqGEP5m6ZK_t14w",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/04/business/cvs-to-split-into-two-companies",
-          "title": "CVS to split into two companies, in major breakup of its $117 billion healthcare empire",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTG6jvxoAwxao8dkPxaN9f6_mqS0nw8IdaOtSRtAEmzrwgnqGEP5m6ZK_t14w"
-        },
-        {
-          "url": "https://www.reuters.com/legal/transactional/cvs-health-split-two-separating-pharmacy-business-insurance-2026-11-04/",
-          "title": "CVS to break up $117 billion business, separating pharmacies from insurance; shares fall",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkoyJuVfIidR0DrCpmgEYR2fZwLKDfl34_iWDmsrKumJfGiWGxm0WIJpGRFXo"
-        },
-        {
-          "url": "https://wwd.com/beauty-industry-news/beauty-features/beauty-and-wellness-have-more-space-to-shine-in-a-revamped-cvs-1239400818/",
-          "title": "Will Beauty and Wellness Have More Space to Shine in a Revamped CVS?",
-          "publisher": "WWD",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5VI9mEB-CdsK8d2rbjidzm9xlP_zMjqdlK6-EGjLZPKqO2NspM6UxK1McTss"
-        }
-      ]
-    },
-    {
-      "query": "pluto tv",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T09:10:00Z",
-      "related_news_urls": [
-        "https://cordcuttersnews.com/pluto-tv-adds-4-new-channels-to-start-november-2026/",
-        "https://www.thetvcave.com/post/interview-emily-curl-talks-pluto-tv-s-double-feature-fridays-horror-favorites-and-bringing-back-mo",
-        "https://www.pocket-lint.com/pluto-tv-adding-14-new-free-live-tv-channels/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZgeL7ZTTjQymzUOZqbUTyTjVb_iSRjPSgzkE2xt30Z2vDihV2MSoMOFeZvVQ",
-      "image_credit": "| Cord Cutters News",
-      "news": [
-        {
-          "url": "https://cordcuttersnews.com/pluto-tv-adds-4-new-channels-to-start-november-2026/",
-          "title": "Pluto TV Adds 4 New Channels to Start November 2026",
-          "publisher": "| Cord Cutters News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZgeL7ZTTjQymzUOZqbUTyTjVb_iSRjPSgzkE2xt30Z2vDihV2MSoMOFeZvVQ"
-        },
-        {
-          "url": "https://www.thetvcave.com/post/interview-emily-curl-talks-pluto-tv-s-double-feature-fridays-horror-favorites-and-bringing-back-mo",
-          "title": "Interview: Emily Curl Talks Pluto TV’s Double Feature Fridays, Horror Favorites and Bringing Back Movie Night",
-          "publisher": "The TV Cave",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPqnRUKlxMuSDX50TACy4FR2Af6p0IrRbnoAfn3zDD9TUTIshu_U52SZ_BcOM"
-        },
-        {
-          "url": "https://www.pocket-lint.com/pluto-tv-adding-14-new-free-live-tv-channels/",
-          "title": "Pluto TV is adding 14 new free live TV channels",
-          "publisher": "Pocket-lint",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ2Kgqyc1VAwmJOBs8O0KL5KvBYRaIz1ATYlT4qmNKBFb7BZwwC2Hryy7D3Qw"
-        }
-      ]
-    },
-    {
-      "query": "ja morant haircut",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T08:50:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/articles/25529452-ja-morant-gets-haircut-loses-dreads-photos-video-during-blazers-stars-injury-rehab",
-        "https://www.espn.com/nba/story/_/id/50329588/ja-morant-least-four-weeks-injury-vs-grizzlies",
-        "https://sports.yahoo.com/articles/blazers-star-ja-morant-debuts-061201243.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkgG567TWCYNJnxWDs5XjgM97TmEyZmm3D0XNBu-R1-gsi4h1oEymwrFH3qo8",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25529452-ja-morant-gets-haircut-loses-dreads-photos-video-during-blazers-stars-injury-rehab",
-          "title": "Ja Morant Gets Haircut, Loses Dreads in Photos, Video During Blazers Star's Injury Rehab",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkgG567TWCYNJnxWDs5XjgM97TmEyZmm3D0XNBu-R1-gsi4h1oEymwrFH3qo8"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50329588/ja-morant-least-four-weeks-injury-vs-grizzlies",
-          "title": "Ja Morant out at least 4 weeks with hamstring strain suffered against Grizzlies",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn_i9dDEnv2duHScP8XQGG2en6Lqewvm4_ISckzlCQ5fh-nwHRkrXLFCeKFI4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/blazers-star-ja-morant-debuts-061201243.html",
-          "title": "Blazers star Ja Morant debuts new look before Lakers showdown",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu1c9sdl6q_w7tNrF4YtcuLHEY0FnQnOxCxuhLEHC6N9tkWfg4SzrwHs7nD2I"
-        }
-      ]
-    },
-    {
-      "query": "zeynep sonmez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T08:50:00Z",
-      "related_news_urls": [
-        "https://mansethaber.com/news/milli-tenisciden-wta-250de-basarili-ilk-mac",
-        "https://www.sabah.com.tr/spor/tum-sporlar/2026/11/03/zeynep-sonmez-prudential-hong-kong-acikta-2-tura-yukseldi",
-        "https://www.odakgazetesi.com/milli-raket-zeynep-sonmezden-guangzhouda-zafer"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLU-2GBbtkGXoqJBBvhv6eOaXKbAEEzPZw4zd9MXowbQ-5CvujQtPPDmVE8ng",
-      "image_credit": "Manşet Haber",
-      "news": [
-        {
-          "url": "https://mansethaber.com/news/milli-tenisciden-wta-250de-basarili-ilk-mac",
-          "title": "Milli tenisçiden WTA 250'de başarılı ilk maç!",
-          "publisher": "Manşet Haber",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLU-2GBbtkGXoqJBBvhv6eOaXKbAEEzPZw4zd9MXowbQ-5CvujQtPPDmVE8ng"
-        },
-        {
-          "url": "https://www.sabah.com.tr/spor/tum-sporlar/2026/11/03/zeynep-sonmez-prudential-hong-kong-acikta-2-tura-yukseldi",
-          "title": "Zeynep Sönmez, Prudential Hong Kong Açık'ta 2. tura yükseldi",
-          "publisher": "Sabah",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu0q0a_qrd2FmblgmfNlFBvW-eE0c-_ETUO4nfW4DMjBgrj692mjXY80vyv1k"
-        },
-        {
-          "url": "https://www.odakgazetesi.com/milli-raket-zeynep-sonmezden-guangzhouda-zafer",
-          "title": "Milli raket Zeynep Sönmez’den Guangzhou’da zafer",
-          "publisher": "Odakgazetesi",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJR0-nCJIhDNY7RU6zjysRDN4dxbfunDLm3l8dGPahyxJFxtSFQT4NeWLlSdY"
-        }
-      ]
-    },
-    {
-      "query": "terence crawford",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T08:50:00Z",
-      "related_news_urls": [
-        "https://boxingnewsonline.net/news/terence-crawford-calls-out-boxing-legend/",
-        "https://www.boxingnews24.com/2026/11/canelo-wants-crawford-rematch-but-the-purse-demand-could-kill-it/",
-        "https://bloodyelbow.com/2026/11/04/terence-crawford-attempts-to-hijack-floyd-mayweathers-comeback-fight-with-160lb-offer/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW3_OQ0apT11qR5a5OOPzelvc9ibqeqF0LAxfL44wfbrfyqMmNWvcyqkAu5Wk",
-      "image_credit": "Boxing News Online",
-      "news": [
-        {
-          "url": "https://boxingnewsonline.net/news/terence-crawford-calls-out-boxing-legend/",
-          "title": "Terence Crawford calls out retired boxing legend for comeback fight: \"GOAT vs GOAT\"",
-          "publisher": "Boxing News Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW3_OQ0apT11qR5a5OOPzelvc9ibqeqF0LAxfL44wfbrfyqMmNWvcyqkAu5Wk"
-        },
-        {
-          "url": "https://www.boxingnews24.com/2026/11/canelo-wants-crawford-rematch-but-the-purse-demand-could-kill-it/",
-          "title": "Canelo Wants Crawford Rematch, But The Purse Demand Could Kill It",
-          "publisher": "Boxing News 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvJwsYbRlxxeR4p-p7EeIEiG6cO3jaJJ1Bb28TIt3AhSNWd3CtUgvhnlvQFxU"
-        },
-        {
-          "url": "https://bloodyelbow.com/2026/11/04/terence-crawford-attempts-to-hijack-floyd-mayweathers-comeback-fight-with-160lb-offer/",
-          "title": "Terence Crawford attempts to hijack Floyd Mayweather’s comeback fight with 160lb offer",
-          "publisher": "Bloody Elbow",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqU6EOPVmIUv9tjUL-s1VCCHaVlm9WMIly1wMLQUkSFVdTD08VItw_sKmLPlM"
-        }
-      ]
-    },
-    {
-      "query": "cruise ship",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T08:40:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
-        "https://www.news.uscg.mil/Press-Releases/Article/4640850/coast-guard-detains-msc-poesia-in-port-of-miami/",
-        "https://www.nbcmiami.com/news/local/us-coast-guard-detains-msc-poesia-portmiami-sailing-cancelled/3882614/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
-          "title": "Cruise canceled after Coast Guard detains ship in Miami, officials say",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE"
-        },
-        {
-          "url": "https://www.news.uscg.mil/Press-Releases/Article/4640850/coast-guard-detains-msc-poesia-in-port-of-miami/",
-          "title": "Coast Guard detains MSC Poesia in Port of Miami",
-          "publisher": "United States Coast Guard News (.mil)",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGbWdY1JVuV6M2hEKjkPNlNiUmTSLHgT69QsBno1p4XHvGUh_e_9SLR9yJi14"
-        },
-        {
-          "url": "https://www.nbcmiami.com/news/local/us-coast-guard-detains-msc-poesia-portmiami-sailing-cancelled/3882614/",
-          "title": "U.S. Coast Guard detains MSC Poesia at PortMiami; 11-night sailing canceled",
-          "publisher": "NBC 6 South Florida",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBAr0JFTLqOwetsUNn_zNAGxE0anD4G22p3YinI2NOafINsUCBRPfgdKh24M0"
-        }
-      ]
-    },
-    {
-      "query": "la",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T08:40:00Z",
-      "related_news_urls": [
-        "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/",
-        "https://www.arkansasonline.com/news/2026/nov/05/la-mayor-candidates-tightly-matched/",
-        "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A",
-      "image_credit": "ABC7 Los Angeles",
-      "news": [
-        {
-          "url": "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/",
-          "title": "Live election results: Raman increases lead over Bass in LA mayoral race",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A"
-        },
-        {
-          "url": "https://www.arkansasonline.com/news/2026/nov/05/la-mayor-candidates-tightly-matched/",
-          "title": "LA mayor candidates tightly matched",
-          "publisher": "The Arkansas Democrat-Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSn4qfyOx8L9bWKyZ0hmajFDRZvAD2XdTDFKsSGsh2mrJIt-oYk-aGjGqHYAg0"
-        },
-        {
-          "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman",
-          "title": "Raman widens her lead over Bass as counting continues in the race for LA mayor",
-          "publisher": "LAist",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxHH0QMVyumqZT0fMHyg4Alobtgzj15zQrm_EIxeJ_-l6lTucDSa4YQzJ1jLg"
-        }
-      ]
-    },
-    {
-      "query": "jeff bezos",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T08:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/world/articles/fact-check-fake-image-shows-051409685.html",
-        "https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk",
-        "https://pluang.com/en/news-feed/jeff-bezos-pensiunan-sp500-risiko-saham-ai"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHKvGiYmsvgSTz2wo5osFxtWUBCmfv-mOaiblz7rmLfVdzxPK0NDBNrolpBvU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/world/articles/fact-check-fake-image-shows-051409685.html",
-          "title": "Fact Check: FAKE Image Shows Jeff Bezos After 'Hair Transplant' -- It Is AI-Altered",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHKvGiYmsvgSTz2wo5osFxtWUBCmfv-mOaiblz7rmLfVdzxPK0NDBNrolpBvU"
-        },
-        {
-          "url": "https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk",
-          "title": "Don’t be fooled by the fake hair on these famous baldies",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyKSfva6STBduzyp0m3xZ1Bthq4o098G7S52vbHcVegBxFxwWvEoeA4Nkewp0"
-        },
-        {
-          "url": "https://pluang.com/en/news-feed/jeff-bezos-pensiunan-sp500-risiko-saham-ai",
-          "title": "Bezos advises retirees to buy the S&P 500 over AI stocks, but the index's tech concentration poses hidden risks.",
-          "publisher": "Pluang",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCntQcx8-b9TFLmdZa61BuT8pN61k71J3_iK3FT4l7v_5q2otAcuCZzB0JR1Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrod_2LZt7Sq15V7zb1EC3D1k6hBdyRdC1bjH2oZZ6GARbS1ASaZv9b6U8rU"
         }
       ]
     }
