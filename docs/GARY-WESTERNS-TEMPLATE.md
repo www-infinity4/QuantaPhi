@@ -4,11 +4,11 @@
 
 The public birthday URL is /gary/ after the site's deployment publishes this branch. It uses:
 - A birthday dedication from Kris to his dad Gary.
-- A single lightweight on-page YouTube-nocookie film player with full-length selections from the verified Grjngo Western Movies publisher.
+- A single on-page player with two verified public-domain John Wayne Westerns, Blue Steel and The Star Packer, from the Internet Archive.
 - The existing /bubbles-embed.js module, which talks to the existing QuantaPhi Bubbles Worker rather than a simulated responder.
 - A readable, phone-sized interface with buttons and film photographs loaded from the video publisher.
 
-The page is NOT a new live-TV broadcast service. YouTube licenses, geography, embeds and availability can change. Film links are publisher URLs; the embed is loaded only on a user click. When an uploader disables embedding, the visible original-source link is the truthful fallback. The original publisher serves content, ads and playback controls.
+The page is NOT a new live-TV broadcast service. Original archive source URLs and public-domain declarations were verified at archive.org/details/BlueSteel and archive.org/details/The_Star_Packer. Internet Archive publishes canonical iframe embed URLs for each; the embed loads only on a tap. Streaming may still fail or be interrupted. The visible archive-source link is the fallback, never a fake success claim.
 
 ## Reusable template versus an individual use
 
@@ -39,4 +39,4 @@ There is no custom shared account or login created for Gary here. If cross-devic
 6. Confirm 320px-wide readability, keyboard access, screen reader status, and no resource errors. Verify /gary/ live before sharing the URL with Gary.
 7. No new Cloudflare D1 table or wallet mutation is required for this page. Do not represent a staged PR or published source as a deployed birthday site.
 
-Verified reference film: https://www.youtube.com/watch?v=pH15fIh7xrg (publisher states its movies are legally licensed). Second curated source: https://www.youtube.com/watch?v=CDLk7SJLuGU (same publisher).
+Verified archival films: https://archive.org/details/BlueSteel and https://archive.org/details/The_Star_Packer . The original Rio Lobo YouTube movie was removed from the lineup after a live browser test reported Video unavailable. The guest Bubbles reply was independently observed on https://quantaphi.org/gary/index.html.
