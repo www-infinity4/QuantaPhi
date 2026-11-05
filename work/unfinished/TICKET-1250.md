@@ -135,3 +135,13 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 - Local tests: 14/14 GIT tests passed, including full settlement and readback against real SQLite, duplicate retries, historical re-add, recipient conflict and failed verification before any write. Exact-head GitHub CI remains to be recorded on the PR.
 - YELLOW / source_tested / review_pending; overall progress and remaining sessions unknown. One additional documented source session. No coordinator lease claimed; lease_id/fence/task_session_id null. No deployment, database mutation, live GIT issue, transfer, cash payout, provider adoption, or bypass of Gitpal/Copilot holds.
 - Next action: independent exact-head review and CI, then implement the production authenticated GitHub/Quant AI adapters and reviewed wallet runtime route before attempting a live credit.
+
+
+## 2026-11-05 UTC · owner correction: all Bubbles-generated GIT belongs to the executor
+
+- Owner explicitly corrected the prior recipient description: Kris collects the GIT generated through Bubbles for every user. Customers cannot collect their own GIT through Bubbles. Customer Bubble Bits remain separate. This correction supersedes earlier Bubbles/provider recipient wording in this ticket.
+- Reused #1675/#1250 and preserved concurrent HTML collector work. Added authenticated execution-channel checks, signed customer-job authorization and a server-only singleton verified owner/executor binding. Bubbles refuses customer-recipient receipts, changed owner bindings, missing configuration and builder-label/channel spoofing.
+- `settleGitClaim` supplies its own database-backed owner resolver, not a caller-selected resolver. D1 claims retain customer/channel/binding/policy separately; the SQL award guard rejects customer GIT even if an internal result is forged. No public owner-registration or wallet-redirect endpoint was added.
+- Tests first: four new owner-routing tests failed against the prior source. Green verification: 20/20 GIT tests pass locally, including a real SQLite two-customer run paying 4 total GIT only to the fixture executor wallet, replay protection and SQL rollback of forged customer credit. Fixtures are not production payments.
+- State YELLOW/source_tested/review_pending; overall completion and remaining sessions unknown. One additional documented source session; no coordinator lease, lease_id/fence/task_session_id null. No live migration, actual owner-wallet provisioning, existing-balance change, payout, merge or deployment is claimed.
+- Next action: exact-head CI and independent review, then reviewed setup from the existing verified executor identity and live acceptance demonstrating customers receive zero Bubbles-generated GIT.

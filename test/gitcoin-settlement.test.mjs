@@ -11,7 +11,7 @@ const diff='diff --git a/app.js b/app.js\n--- a/app.js\n+++ b/app.js\n@@ -0,0 +1
 const manifest=(sha='a'.repeat(40))=>buildManifest(diff,{repo:'user/project',commit:sha,intent:'repair',builderClaim:'human',githubLoginClaim:'developer'});
 const principal={id:'authenticated-developer',walletId:'customer-wallet'};
 const adapters={principal,github:{getDiff:async()=>diff,containsCommitOnDefault:async()=>true,checksPassed:async()=>true,
- resolveAttribution:async()=>({valid:true,source:'verified_human_authorization',recipient:principal.walletId,evidenceId:'signed_authorization_123'})},
+ resolveAttribution:async()=>({valid:true,source:'verified_human_authorization',executionChannel:'github_cli',recipient:principal.walletId,evidenceId:'signed_authorization_123'})},
  quantAI:{review:async({lines})=>({reviewId:'quant_review_123',decisions:lines.map(l=>({id:l.id,approved:true,reason:'Useful source for the customer request'}))})}};
 test('real SQLite ledger gives one GIT per verified line, rejects recipient replay and prevents delete/re-add reminting',async()=>{
  const first=manifest(),verified=await evaluateClaim(first,adapters);
@@ -38,7 +38,7 @@ test('settlement runs independent verification before any database write',async(
  const db={prepare:()=>{throw Error('must_not_read')},batch:async()=>{writes++;throw Error('must_not_write')}};
  await assert.rejects(settleGitClaim(manifest(),{...adapters,github:{...adapters.github,checksPassed:async()=>false},db}),/ci_not_passing/);
  await assert.rejects(settleGitClaim(manifest(),{...adapters,github:{...adapters.github,resolveAttribution:async()=>({valid:true,source:'signed_agent_job',recipient:'operator-wallet',server_signature_verified:false})},db}),/attribution_unverified/);
- await assert.rejects(settleGitClaim(manifest(),{...adapters,github:{...adapters.github,resolveAttribution:async()=>({valid:true,source:'verified_human_authorization',recipient:principal.walletId})},db}),/attribution_receipt_required/);
+ await assert.rejects(settleGitClaim(manifest(),{...adapters,github:{...adapters.github,resolveAttribution:async()=>({valid:true,source:'verified_human_authorization',executionChannel:'github_cli',recipient:principal.walletId})},db}),/attribution_receipt_required/);
  assert.equal(writes,0);
 });
 test('the complete server settlement executes and reads back real SQLite receipts, including replay and historical dedupe',async()=>{
@@ -56,7 +56,7 @@ else:print(json.dumps(dict(results=[dict(x) for x in d.execute(p['sql'],p['param
 `,path],{input:JSON.stringify(payload),encoding:'utf8'}));
  try{
   run({schema:readFileSync(new URL('../gitcoin/schema.sql',import.meta.url),'utf8')});
-  const db={prepare(sql){return {bind(...params){return {sql,params,async all(){return run({sql,params})}}}}},async batch(batch){return run({batch})}};
+  const db={prepare(sql){return {async first(){return run({sql,params:[]}).results[0]||null;},bind(...params){return {sql,params,async all(){return run({sql,params})}}}}},async batch(batch){return run({batch})}};
   const first=await settleGitClaim(manifest(),{...adapters,db});
   const replay=await settleGitClaim(manifest(),{...adapters,db});
   const readded=await settleGitClaim(manifest('b'.repeat(40)),{...adapters,db});
@@ -64,5 +64,19 @@ else:print(json.dumps(dict(results=[dict(x) for x in d.execute(p['sql'],p['param
   assert.equal(replay.credited,0);assert.equal(replay.alreadyCredited,2);
   assert.equal(readded.credited,0);assert.equal(readded.excludedHistorical.length,2);
   assert.equal(first.cashPaid,false);
+  run({batch:[{sql:'INSERT INTO gitcoin_bubbles_executor(singleton,binding_id,wallet_id,owner_subject,active,owner_verified) VALUES(1,?,?,?,?,?)',
+   params:['owner-binding-fixture','bubbles-owner-wallet','owner-subject-fixture',1,1]}]});
+  for(const [customer,sha] of [['customer-A','c'],['customer-B','d']]){
+   const principal={id:customer,walletId:'wallet-'+customer,executionChannel:'bubbles'};
+   const claim=buildManifest(diff,{repo:customer+'/project',commit:sha.repeat(40),intent:'repair',builderClaim:'bubbles'});
+   const github={...adapters.github,resolveAttribution:async()=>({valid:true,source:'signed_agent_job',server_signature_verified:true,
+    executionChannel:'bubbles',customerId:customer,customerWalletId:principal.walletId,customerAuthorizationVerified:true,
+    executorBindingId:'owner-binding-fixture',recipient:'bubbles-owner-wallet',evidenceId:'signed-job-'+customer})};
+   const result=await settleGitClaim(claim,{principal,github,quantAI:adapters.quantAI,db});
+   assert.equal(result.walletId,'bubbles-owner-wallet');assert.equal(result.credited,2);
+   assert.equal((await settleGitClaim(claim,{principal,github,quantAI:adapters.quantAI,db})).credited,0);
+  }
+  const rows=run({sql:"SELECT a.wallet_id,SUM(a.amount) AS total FROM gitcoin_awards a JOIN gitcoin_line_claims c ON c.receipt_id=a.receipt_id WHERE c.execution_channel='bubbles' GROUP BY a.wallet_id",params:[]}).results;
+  assert.deepEqual(rows,[{wallet_id:'bubbles-owner-wallet',total:4}]);
  }finally{rmSync(dir,{recursive:true,force:true})}
 });

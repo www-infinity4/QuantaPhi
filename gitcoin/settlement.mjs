@@ -13,9 +13,9 @@ export function gitCreditStatements(manifest,result,principal){
  if(lines.length>200)fail('git_settlement_batch_too_large');
  const statements=[];
  for(const line of lines){
-  statements.push({sql:`INSERT OR IGNORE INTO gitcoin_line_claims(receipt_id,repo,commit_sha,file_path,line_number,content_sha256,git_type,intent,builder_claim,authenticated_submitter,recipient_wallet_id,status,github_evidence_id,quant_ai_review_id)
-   VALUES(?1,?2,?3,?4,?5,?6,?7,?8,?9,?10,?11,'verified',?12,?13)`,
-   params:[line.receipt_id,line.repo,line.commit_sha,line.path,line.line_number,line.content_sha256,line.git_type,manifest.intent,manifest.builder_claim,principal.id,line.wallet_id,result.github_evidence_id,result.review_id]});
+  statements.push({sql:`INSERT OR IGNORE INTO gitcoin_line_claims(receipt_id,repo,commit_sha,file_path,line_number,content_sha256,git_type,intent,builder_claim,authenticated_submitter,recipient_wallet_id,status,github_evidence_id,quant_ai_review_id,execution_channel,recipient_policy,executor_binding_id,customer_wallet_id)
+   VALUES(?1,?2,?3,?4,?5,?6,?7,?8,?9,?10,?11,'verified',?12,?13,?14,?15,?16,?17)`,
+   params:[line.receipt_id,line.repo,line.commit_sha,line.path,line.line_number,line.content_sha256,line.git_type,manifest.intent,manifest.builder_claim,principal.id,line.wallet_id,result.github_evidence_id,result.review_id,result.execution_channel,result.recipient_policy,result.executor_binding_id,result.customer_wallet_id]});
   statements.push({sql:'INSERT OR IGNORE INTO gitcoin_line_history(repo,file_path,content_sha256,receipt_id) VALUES(?1,?2,?3,?4)',
    params:[line.repo,line.path,line.content_sha256,line.receipt_id]});
   // The unique historical source fingerprint prevents removing and re-adding
@@ -31,7 +31,13 @@ export function gitCreditStatements(manifest,result,principal){
 
 export async function settleGitClaim(manifest,{principal,github,quantAI,db}={}){
  if(!db?.batch||!db.prepare)fail('git_ledger_unavailable');
- const verified=await evaluateClaim(manifest,{principal,github,quantAI});
+ // No caller-supplied resolver is accepted here. The Bubbles owner binding
+ // is provisioned server-side from the existing verified executor identity.
+ const bubblesExecutor={resolve:async()=>{
+  const row=await db.prepare('SELECT binding_id,wallet_id,owner_subject,active,owner_verified FROM gitcoin_bubbles_executor WHERE singleton=1').first();
+  return row?{bindingId:row.binding_id,walletId:row.wallet_id,ownerSubject:row.owner_subject,active:row.active===1,ownerVerified:row.owner_verified===1}:null;
+ }};
+ const verified=await evaluateClaim(manifest,{principal,github,quantAI,bubblesExecutor});
  if(verified.status==='rejected')return {asset:'GIT',status:'rejected',credited:0,receiptIds:[]};
  const plan=gitCreditStatements(manifest,verified,principal);
  // D1 batch is transactional: a provenance/recipient conflict aborts the

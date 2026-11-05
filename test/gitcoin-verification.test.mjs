@@ -5,7 +5,7 @@ import {evaluateClaim, createSettlementPlan} from '../gitcoin/verification.mjs';
 const sha='b'.repeat(40);
 const diff='diff --git a/src/a.js b/src/a.js\n--- /dev/null\n+++ b/src/a.js\n@@ -0,0 +1,2 @@\n+export const answer = 42;\n+export const useful = true;';
 const manifest=buildManifest(diff,{repo:'www-infinity4/demo',commit:sha,intent:'app',builderClaim:'copilot',githubLoginClaim:'demo-user'});
-const context={principal:{id:'user/123',walletId:'wallet/123'},github:{getDiff:async()=>diff,containsCommitOnDefault:async()=>true,resolveAttribution:async()=>({valid:true,recipient:'wallet/123',source:'verified_human_authorization'}),checksPassed:async()=>true},quantAI:{review:async({lines})=>({reviewId:'review-001',decisions:lines.map(l=>({id:l.id,approved:true,reason:'tested and meaningful'}))})}};
+const context={principal:{id:'user/123',walletId:'wallet/123'},github:{getDiff:async()=>diff,containsCommitOnDefault:async()=>true,resolveAttribution:async()=>({valid:true,recipient:'wallet/123',source:'verified_human_authorization',executionChannel:'github_cli'}),checksPassed:async()=>true},quantAI:{review:async({lines})=>({reviewId:'review-001',decisions:lines.map(l=>({id:l.id,approved:true,reason:'tested and meaningful'}))})}};
 
 test('verified line requires independent GitHub and Quant AI receipts before settlement',async()=>{
  const result=await evaluateClaim(manifest,context);
