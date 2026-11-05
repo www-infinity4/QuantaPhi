@@ -29,6 +29,9 @@ test('X Spaces local search filters by topic and handle without manufacturing li
 test('QuantaPhi has dedicated Spaces quick card with manual source import and verified private index, not fake embeds',()=>{
  const js=read('x-spaces-quick-card.mjs'),html=read('index.html');
  assert.match(html,/id="xSpacesQuickCard"/);
+ const oracle=read('oracle-card-deck.js');
+ assert.match(oracle,/\['xSpacesQuickCard','Explore X Spaces'/);
+ assert.match(oracle,/xSpacesQuickCard:\['x-spaces'/);
  assert.match(html,/src="\/x-spaces-quick-card.mjs\?/);
  assert.match(js,/readIndexedSpaces/);
  assert.match(js,/resolveDeviceToken/);
