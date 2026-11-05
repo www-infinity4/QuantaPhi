@@ -93,16 +93,18 @@ test('chat theme does not touch wallet, guest permissions, microphone consent, o
 
 
 test('new modern family chat has useful real composer starters without auto-submitting or listening',()=>{
-  const chat=source('bubbles-ai.js');
+  const chat=source('bubbles-family-prompts.js');
+  assert.match(source('bubbles.html'),/bubbles-family-prompts\.js/);
   assert.match(chat,/family-modern/);
   assert.match(chat,/ba-family-suggestions/);
+  assert.match(chat,/args\.get\('id'\)!=='gary-westerns-2026'/);
   assert.match(chat,/What can we watch on TV tonight\?/);
   assert.match(chat,/What is the Iowa forecast this week\?/);
   assert.match(chat,/Can you recommend a good Western movie\?/);
   assert.match(chat,/Hardee's, McDonald's and Wendy's/);
   assert.match(chat,/input\.value=message/);
   assert.match(chat,/input\.focus\(\)/);
-  assert.doesNotMatch(chat,/ba-family-suggestions[^\n]*\bsubmit\(\)/);
+  assert.doesNotMatch(chat,/\bsubmit\(|\bfetch\(|getUserMedia\(/);
   const style=source('bubbles-family-modern.css');
   assert.match(style,/\.ba-family-suggestions/);
 });
