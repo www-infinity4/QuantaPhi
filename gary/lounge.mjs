@@ -1,6 +1,7 @@
 /* Source-backed family lounge. No fabricated TV playback, deals, ads or wallet receipts.
    Recognition is one-shot after an explicit tap; relevance is opt-in device-local. */
 import {CHANNELS,OFFERS,IOWA_CITIES,routeFamilyRequest,rankDiscovery,forecastSevenDays,filteredTrends,normalizeName,sourceCardForIntent} from '../templates/family-lounge/logic.mjs';
+import {castAction} from './presentation.mjs';
 const q=id=>document.getElementById(id);
 const node=(tag,cls='',text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=String(text);return x};
 const status=(id,text)=>{if(q(id))q(id).textContent=text};
@@ -68,15 +69,56 @@ for(const c of CHANNELS){
  button.addEventListener('click',()=>showChannel(c));
  q('family-channel-buttons').append(button);
 }
-q('family-cast').addEventListener('click',async()=>{
- const root=q('family-lounge');
- if(typeof root?.requestFullscreen==='function'){
-   try{await root.requestFullscreen();
-     status('family-channel-detail','Fullscreen active. Use your device Screen Cast setting or the provider’s built-in Cast button to send supported playback to a TV.');return;
-   }catch{}
- }
- status('family-channel-detail','To show this page on TV, use Android Screen Cast or the provider app’s Cast control. This website cannot force a Netflix/CNN stream onto your TV.');
+// Browser fullscreen is NOT TV casting. Keep the real TV setup help visible.
+// Optional native Remote Playback is offered ONLY for directly controlled
+// Infinity Radio audio when a browser actually exposes a remote media picker.
+const castPanel=q('family-cast-panel');
+const closeCast=()=>{
+  castPanel.hidden=true;
+  q('family-cast').setAttribute('aria-expanded','false');
+};
+q('family-cast').addEventListener('click',()=>{
+  const showing=castPanel.hidden;
+  castPanel.hidden=!showing;
+  q('family-cast').setAttribute('aria-expanded',String(showing));
+  if(!showing)return;
+  castPanel.querySelector('.family-cast-audio')?.remove();
+  const remote=audio?.remote;
+  const mode=castAction({
+    remotePromptAvailable:typeof remote?.prompt==='function',
+    activeNativeMedia:Boolean(audio&&!audio.paused)
+  });
+  if(mode==='native-media-picker'){
+    status('family-cast-status','Infinity Radio is playing. This browser supports a remote audio picker. It does not cast the Westerns iframe or whole screen; use Android Screen Cast for the page.');
+    const button=node('button','family-cast-audio','Cast playing radio audio');
+    button.type='button';
+    button.addEventListener('click',async()=>{
+      try{
+        await remote.prompt();
+        status('family-cast-status','The browser opened its audio device picker. Check the receiver for actual playback. For the full page use Android Screen Cast.');
+      }catch{
+        status('family-cast-status','The audio picker did not connect. To mirror the page, use Android Screen Cast on the same Wi-Fi network.');
+      }
+    },{once:true});
+    q('family-cast-fullscreen').before(button);
+  }else{
+    castPanel.querySelector('.family-cast-audio')?.remove();
+    status('family-cast-status','This website cannot open Android’s system screen-cast picker. Follow the steps below. The phone and TV normally need the same Wi-Fi network; fullscreen alone is not casting.');
+  }
 });
+q('family-cast-fullscreen').addEventListener('click',async()=>{
+  const root=q('family-lounge');
+  if(typeof root?.requestFullscreen!=='function'){
+    status('family-cast-status','This browser cannot fullscreen this page. To mirror it, use Android Screen Cast instead.');return;
+  }
+  try{
+    await root.requestFullscreen();
+    status('family-cast-status','Fullscreen on this device only. If a TV is connected with Android Screen Cast, it will also show this page.');
+  }catch{
+    status('family-cast-status','Fullscreen could not start. To connect a TV, use your phone’s Screen Cast controls.');
+  }
+});
+q('family-cast-close').addEventListener('click',closeCast);
 
 function offerCard(offer,label='Check official source ↗'){
  const card=node('article','family-offer-card');
@@ -185,6 +227,12 @@ async function loadWeather(){
    for(const day of days){
      const card=node('article','family-day');
      card.append(node('strong','',new Date(day.date+'T12:00:00').toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})));
+     if(day.icon){
+       const icon=node('img','family-weather-icon');
+       icon.src=day.icon;icon.alt='';icon.width=72;icon.height=72;icon.loading='lazy';
+       icon.addEventListener('error',()=>icon.remove(),{once:true});
+       card.append(icon);
+     }
      card.append(node('p','family-temperatures',(day.high===null?'—':day.high+'°')+' / '+(day.low===null?'—':day.low+'°')+'F'));
      card.append(node('small','',day.summary||'Forecast published by NWS'));
      if(day.precip!==null)card.append(node('small','',day.precip+'% precipitation chance'));

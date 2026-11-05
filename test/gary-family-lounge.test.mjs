@@ -61,6 +61,16 @@ test('NWS 12-hour periods become seven real date-labelled days without made-up n
   assert.equal(IOWA_CITIES.ottumwa.name,'Ottumwa');
 });
 
+test('actual NWS weather icon artwork is optional and restricted to official weather.gov host',()=>{
+  const period={startTime:'2026-11-04T06:00:00-06:00',isDaytime:true,temperature:46,
+    shortForecast:'Cloudy',icon:'https://api.weather.gov/icons/land/day/bkn?size=medium',
+    probabilityOfPrecipitation:{value:20}};
+  const days=forecastSevenDays([period],'2026-11-04T12:00:00-06:00');
+  assert.equal(days[0]?.icon,'https://api.weather.gov/icons/land/day/bkn?size=medium');
+  const spoof=forecastSevenDays([{...period,icon:'https://evil.example/icons/land/day/bkn'}],'2026-11-04T12:00:00-06:00');
+  assert.equal(spoof[0]?.icon,'');
+});
+
 test('trend cards are rejected when stale, unverified or unrelated to followed subjects',()=>{
   const sample={schema_version:1,source_url:'https://trends.google.com/trending/rss?geo=US',
     generated_at:'2026-11-04T20:00:00Z',
