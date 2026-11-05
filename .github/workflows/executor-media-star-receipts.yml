@@ -3,6 +3,11 @@ on:
   pull_request:
     paths:
       - 'workers/executor-insights/**'
+      - 'workers/media-star-gallery/**'
+      - 'test/media-star-gallery*.test.mjs'
+      - 'media-star-gallery*.mjs'
+      - 'media-star-gallery.css'
+      - 'media-star-creator.js'
       - 'test/executor-insights.test.mjs'
       - 'media-star-interactions.js'
       - 'bubbles-executor-insights.js'
@@ -23,9 +28,22 @@ jobs:
         with:
           node-version: '22'
       - name: Verify executor isolation and real card interaction contracts
-        run: node --test test/executor-insights.test.mjs
+        run: node --test test/executor-insights.test.mjs test/media-star-gallery*.test.mjs
       - name: Check browser and Worker syntax
         run: |
           node --check media-star-interactions.js
           node --check bubbles-executor-insights.js
           node --check workers/executor-insights/worker.mjs
+          node --check workers/media-star-gallery/worker.mjs
+          node --check media-star-gallery-core.mjs
+          node --check media-star-gallery.mjs
+          node --check media-star-creator.js
+      - name: Check Cloudflare D1 SQL migrations
+        run: |
+          python3 - <<'PY'
+          import sqlite3,pathlib
+          db=sqlite3.connect(':memory:')
+          for path in ('workers/executor-insights/schema.sql','workers/media-star-gallery/schema.sql'):
+              db.executescript(pathlib.Path(path).read_text())
+              print('Schema valid',path)
+          PY
