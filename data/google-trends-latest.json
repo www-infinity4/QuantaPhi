@@ -3,340 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T15:01:45.317059Z",
+  "checked_at": "2026-11-05T15:31:26.737826Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nvda stock",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-05T14:40:00Z",
+      "query": "stock market",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-05T15:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/nvidia-investors-paying-attention-nov-120500580.html",
-        "https://www.barrons.com/articles/nvidia-stock-price-floor-0fb3b5dd",
-        "https://www.barchart.com/story/news/8612958/nvidias-dismal-run-might-be-coming-to-an-end-grab-nvda-stock-while-its-still-around-200"
+        "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html",
+        "https://www.cnbc.com/2026/11/05/markets-cool-midterm-musk-stocks-under-pressure.html",
+        "https://www.investopedia.com/economy-changes-democrats-congress-midterm-election-2026-gas-prices-data-centers-tariffs-federal-reserve-budget-12236408"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDWIc4CPeLONx5vuGfx_2VfdDwLiuJo1aDTywYJTHqmjth3e9McpcSJtTfG4",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQisyQqbq4kIguFNOfxXbw6mqtFl74AvU41C-cavK4pYHdLfradRd6qBHwVC0k",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-investors-paying-attention-nov-120500580.html",
-          "title": "Nvidia Investors Need to Be Paying Attention on Nov. 17",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html",
+          "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip as post-election relief rally fades, oil rises",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDWIc4CPeLONx5vuGfx_2VfdDwLiuJo1aDTywYJTHqmjth3e9McpcSJtTfG4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQisyQqbq4kIguFNOfxXbw6mqtFl74AvU41C-cavK4pYHdLfradRd6qBHwVC0k"
         },
         {
-          "url": "https://www.barrons.com/articles/nvidia-stock-price-floor-0fb3b5dd",
-          "title": "Nvidia Stock Is Back at $200. What History Suggests Is the Floor.",
-          "publisher": "Barron's",
+          "url": "https://www.cnbc.com/2026/11/05/markets-cool-midterm-musk-stocks-under-pressure.html",
+          "title": "Markets cool after the monster midterm rally with Musk's stocks under pressure",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpRtKxV2504k10UnS5ZcH2rWhaR7w3PZwKcy_KMAOLXfbmwaH_CTOxTrr8GkI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSc_0P05fODvhpxVQpXRbuBCWn4LGNMSZcY9tGrXWpzIO6M2EbmUFaffJWWQ"
         },
         {
-          "url": "https://www.barchart.com/story/news/8612958/nvidias-dismal-run-might-be-coming-to-an-end-grab-nvda-stock-while-its-still-around-200",
-          "title": "Nvidia’s Dismal Run Might Be Coming to an End. Grab NVDA Stock While It’s Still Around $200.",
-          "publisher": "Barchart.com",
+          "url": "https://www.investopedia.com/economy-changes-democrats-congress-midterm-election-2026-gas-prices-data-centers-tariffs-federal-reserve-budget-12236408",
+          "title": "What’s Likely to Change for the U.S. Economy After Democrats’ Resounding Victory in the Midterms?",
+          "publisher": "Investopedia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdSfMYFwZYlCKTbXi8kA_zH-Utf9byFuvNQUE9wrrXjnGATVpBcT83LsihJck"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzO-16XyTjlCRbGP2orxUQsKD98vSL9Z5LjgOSU3HkAraHf8u34Is9xDJ42s"
         }
       ]
     },
     {
-      "query": "soxl stock",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-05T14:40:00Z",
+      "query": "amd stock",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T15:10:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
-        "https://finance.yahoo.com/markets/live/stock-market-today-dow-rallies-1500-points-sp-500-nasdaq-midterm-elections-democrats-sweep-201207340.html",
-        "https://www.cnn.com/2026/11/04/investing/us-markets-midterm-elections"
+        "https://arstechnica.com/gadgets/2026/11/amds-record-quarter-data-center-business-doubles-while-gaming-craters/",
+        "https://www.trefis.com/stock/amd/articles/622729/buy-sell-or-hold-amd-stock/2026-11-05",
+        "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvcTzERXh7oAzJQ5gw7Uf6W2JspbT05ROYIN_sQUQWCttJs1JetFEwJM9paFM",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfllJbhVn70qiLMMAKjLuTvI-LYz18oTQl7rdznhz1wfGaor0XOGXpHaF4C6s",
+      "image_credit": "Ars Technica",
+      "news": [
+        {
+          "url": "https://arstechnica.com/gadgets/2026/11/amds-record-quarter-data-center-business-doubles-while-gaming-craters/",
+          "title": "AMD’s record quarter: Data center business doubles, while gaming craters",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfllJbhVn70qiLMMAKjLuTvI-LYz18oTQl7rdznhz1wfGaor0XOGXpHaF4C6s"
+        },
+        {
+          "url": "https://www.trefis.com/stock/amd/articles/622729/buy-sell-or-hold-amd-stock/2026-11-05",
+          "title": "Buy, Sell Or Hold AMD Stock?",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwwW5S-3jP92JUEfRW3pynByTNBZDiCwTyg_qJLT0IzHpsbjHKV8dAYHuGJ9Q"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+          "title": "AMD's data center revenue nearly doubles in Q3 and CEO Su expects growth to accelerate",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgxns8J9zdSwMjfuGgyt0Jb1D0Ht_k2BjC_AjvcS8esrFlBTh8UtykGcqyZ9I"
+        }
+      ]
+    },
+    {
+      "query": "voo",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T15:10:00Z",
+      "related_news_urls": [
+        "https://g1.globo.com/mundo/noticia/2026/11/05/voos-na-europa-fazem-pouso-de-emergencia-por-ameaca-de-bomba.ghtml",
+        "https://www.cnnbrasil.com.br/internacional/alerta-bomba-voos-europa-aeroportos/",
+        "https://www.rfi.fr/br/europa/20261105-o-que-se-sabe-sobre-os-falsos-alertas-de-bomba-que-perturbam-o-tr%C3%A1fego-a%C3%A9reo-na-europa"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNu3pfoXXpgKHUgnPmUTjH-GTVI_vEjMHKuAALkKj3FWoj35xML0DnHmVmffk",
+      "image_credit": "G1",
+      "news": [
+        {
+          "url": "https://g1.globo.com/mundo/noticia/2026/11/05/voos-na-europa-fazem-pouso-de-emergencia-por-ameaca-de-bomba.ghtml",
+          "title": "Voos na Europa fazem pousos de emergência por ameaça de bomba; nenhum explosivo foi encontrado",
+          "publisher": "G1",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNu3pfoXXpgKHUgnPmUTjH-GTVI_vEjMHKuAALkKj3FWoj35xML0DnHmVmffk"
+        },
+        {
+          "url": "https://www.cnnbrasil.com.br/internacional/alerta-bomba-voos-europa-aeroportos/",
+          "title": "Nova onda de ameaças de bomba afeta voos comerciais na Europa",
+          "publisher": "CNN Brasil",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCnbCSNhozwkJlAPlzPaJBlhf7q4Xk0GllIMWVSBNZMRrNLXTxu6QFmwt1Zh8"
+        },
+        {
+          "url": "https://www.rfi.fr/br/europa/20261105-o-que-se-sabe-sobre-os-falsos-alertas-de-bomba-que-perturbam-o-tr%C3%A1fego-a%C3%A9reo-na-europa",
+          "title": "O que se sabe sobre os falsos alertas de bomba que perturbam o tráfego aéreo na Europa",
+          "publisher": "RFI",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyc0vIimwl9cIhFcvvU-W7Nb83L6yaYHufU0UacR5tkxrvEq0Nu1RHWV_B0rY"
+        }
+      ]
+    },
+    {
+      "query": "tsla",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T15:10:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-05/tesla-shares-tumble-again-in-deepening-post-election-slump",
+        "https://finance.yahoo.com/markets/stocks/articles/tsla-stock-slips-overnight-analysts-052212373.html",
+        "https://www.moomoo.com/community/feed/nov-check-in-6-117558478241798"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWJjIPwaK4ENTN1my1UoIEXGIxnWqDA4lshwhfHhroPm75AHPWc1XMKIAIpsw",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/tesla-shares-tumble-again-in-deepening-post-election-slump",
+          "title": "Tesla Shares Tumble Again in Deepening Post-Election Slump",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWJjIPwaK4ENTN1my1UoIEXGIxnWqDA4lshwhfHhroPm75AHPWc1XMKIAIpsw"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tsla-stock-slips-overnight-analysts-052212373.html",
+          "title": "TSLA Stock Slips Overnight: Analysts Flag Political, Premium Risks To SpaceX Merger — Cathie Wood’s ARK Buys Anyway",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rYaqMFQwkbUs5P-NSR8eyG4aBAeGD5_joXxxgEgD0h20Ag1yCEvUC3tOpWg"
+        },
+        {
+          "url": "https://www.moomoo.com/community/feed/nov-check-in-6-117558478241798",
+          "title": "NOV check in #6",
+          "publisher": "Moomoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCxh6eRkNc2IP4t78j1Pettwz8E-my3BtAGGF1m8YPnmevpkqfhjdSC9-H91g"
+        }
+      ]
+    },
+    {
+      "query": "sp500",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T15:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/video/2026/11/05/ed-yardeni-on-his-7900-sp-500-year-end-target-santa-is-coming.html",
+        "https://seekingalpha.com/article/4962953-s-and-p-500-outlook-the-2027-rally-depends-on-2028-earnings",
+        "https://finance.yahoo.com/markets/stocks/articles/ed-yardeni-sees-buying-opportunities-145838003.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqRMB66ugRsGa5XoQM2WoJXVhAnosCQe8XzF2JQCM9soFQL7394QJitkND1n8",
       "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
-          "title": "Here's what the Democratic election rout could mean for the U.S. economy",
+          "url": "https://www.cnbc.com/video/2026/11/05/ed-yardeni-on-his-7900-sp-500-year-end-target-santa-is-coming.html",
+          "title": "Ed Yardeni on his 7,900 S&P 500 year-end target: 'Santa is coming'",
           "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvcTzERXh7oAzJQ5gw7Uf6W2JspbT05ROYIN_sQUQWCttJs1JetFEwJM9paFM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqRMB66ugRsGa5XoQM2WoJXVhAnosCQe8XzF2JQCM9soFQL7394QJitkND1n8"
         },
         {
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-rallies-1500-points-sp-500-nasdaq-midterm-elections-democrats-sweep-201207340.html",
-          "title": "Stock market today: Dow rallies 1,500 points, S&P 500 and Nasdaq gain after Democrats win control of Congress",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi5CTFxB1KDuyX_27U4Cu0qs4rn1E6CmXvqActyq8SItwbEek5DjIb_iXMcWU"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/04/investing/us-markets-midterm-elections",
-          "title": "Dow has best post-midterm elections day in 44 years as Democrats take control of Congress",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9C33l8DNkgvhYQQNT3vDAAwkkd6EKfZTKxD87JjOBHvSY_e3bpok5Jh45Qh8"
-        }
-      ]
-    },
-    {
-      "query": "micron stock price",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T14:40:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/articles/micron-stock-price-drop-e2480de5",
-        "https://www.trefis.com/stock/mu/articles/622817/is-40-crash-risk-for-micron-stock-real/2026-11-05",
-        "https://seekingalpha.com/article/4961486-micron-a-150-billion-ai-reckoning-is-coming"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSrXE4NdPE49qx5HNzGI7-CFBUJZWmZbDwk_a1OEuAFTv7DXM7ivHyhfwb7A",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/articles/micron-stock-price-drop-e2480de5",
-          "title": "Micron Stock Drops Again as Its Market Share Shrinks. Why That’s an Opportunity.",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSrXE4NdPE49qx5HNzGI7-CFBUJZWmZbDwk_a1OEuAFTv7DXM7ivHyhfwb7A"
-        },
-        {
-          "url": "https://www.trefis.com/stock/mu/articles/622817/is-40-crash-risk-for-micron-stock-real/2026-11-05",
-          "title": "Is 40% Crash Risk For Micron Stock Real?",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTx0bDU7DyIcIggJsGkb9Op3eRDIoESG9UEk7b4zLmZwisjjMENgl21pahK_Us"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4961486-micron-a-150-billion-ai-reckoning-is-coming",
-          "title": "Micron: A $150 Billion AI Reckoning Is Coming (NASDAQ:MU)",
+          "url": "https://seekingalpha.com/article/4962953-s-and-p-500-outlook-the-2027-rally-depends-on-2028-earnings",
+          "title": "S&P 500 Outlook: The 2027 Rally Depends On 2028 Earnings (SP500)",
           "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqaDCKWTkmeR52iNcAdxMq3C4lNS0r8p5Th8FqF8FnMPP82t-ahbWIU70-xeM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Dh7wcnH4M-vu16SO4PNWdcsNTXvZ25hMNfIiPB4o-33Fi1HGZlB2EhqKfYc"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ed-yardeni-sees-buying-opportunities-145838003.html",
+          "title": "Ed Yardeni Sees Buying Opportunities Ahead Despite S&P 500 Valuation Concerns",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRU5ucpX5c4NqjiuwS9s31H_9j6T56AjLR-66FcC_u26yyYBQSvpdszQhjf6OQ"
         }
       ]
     },
     {
-      "query": "smh stock",
+      "query": "vti",
       "approx_searches": "1000+",
-      "published_at": "2026-11-05T14:40:00Z",
+      "published_at": "2026-11-05T15:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/technology/articles/asian-chip-stocks-slide-disappointing-045137047.html",
-        "https://seekingalpha.com/article/4962492-the-semiconductor-sector-may-be-nearing-a-meltdown",
-        "https://www.marketwatch.com/story/chip-stocks-are-suffering-from-a-crisis-of-confidence-but-things-arent-as-gloomy-as-they-seem-6ed14ea9"
+        "https://www.fool.com/investing/2026/11/04/could-investing-400-per-month-in-vti-make-you-a-mi/",
+        "https://www.aol.com/articles/could-investing-400-per-month-022000000.html",
+        "https://www.nacionale.com/en/articles/vti-up-today-why-vanguard-total-stock-market-etf-midterms-morningstar-name"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtgRPqxwWCn3pUkzuV5V9fLTFv19JiW9SPZsQZoE4ijtDlxnUndyjL-Uz1g7Q",
+      "image_credit": "The Motley Fool",
+      "news": [
+        {
+          "url": "https://www.fool.com/investing/2026/11/04/could-investing-400-per-month-in-vti-make-you-a-mi/",
+          "title": "Could Investing $400 per Month in VTI Make You a Millionaire? Here's the Math.",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtgRPqxwWCn3pUkzuV5V9fLTFv19JiW9SPZsQZoE4ijtDlxnUndyjL-Uz1g7Q"
+        },
+        {
+          "url": "https://www.aol.com/articles/could-investing-400-per-month-022000000.html",
+          "title": "Could Investing $400 per Month in VTI Make You a Millionaire? Here's the Math.",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8uRDzZYw0lPHowgcAiy0nyJfcme36n7KhaSN-aUBDuYeDSaU8QyXBUCNJS0"
+        },
+        {
+          "url": "https://www.nacionale.com/en/articles/vti-up-today-why-vanguard-total-stock-market-etf-midterms-morningstar-name",
+          "title": "Why is VTI up today? The total market ETF rises with stocks after Democrats win Congress",
+          "publisher": "Nacionale",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsud7sryS8yg4JjurLOdZ1AzaLNFJk3qgoczcFof_9UnTY9U5DzRIqdKTk5CU"
+        }
+      ]
+    },
+    {
+      "query": "rockstar",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T15:10:00Z",
+      "related_news_urls": [
+        "https://insider-gaming.com/take-two-ceo-faces-bizarre-question-not-enough-hits/",
+        "https://www.businessinsider.com/ro-ceo-shares-making-of-new-ai-agent-2026-10",
+        "https://www.gamespot.com/articles/gta-6-boss-talks-the-games-budget-and-calls-out-a-high-profile-game-for-releasing-in-a-rough-state/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGNPxwteZu-pGYpOYhPX2vHvEMG-cyjeO926bL_5Oc7LX1SYbXOcunyGFojME",
+      "image_credit": "Insider Gaming",
+      "news": [
+        {
+          "url": "https://insider-gaming.com/take-two-ceo-faces-bizarre-question-not-enough-hits/",
+          "title": "Take-Two CEO Faces Bizarre Question Over Company’s Lack of ‘Enough Hits’",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGNPxwteZu-pGYpOYhPX2vHvEMG-cyjeO926bL_5Oc7LX1SYbXOcunyGFojME"
+        },
+        {
+          "url": "https://www.businessinsider.com/ro-ceo-shares-making-of-new-ai-agent-2026-10",
+          "title": "Ro CEO Shares the Making of Its New AI Agent",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmNH_f6iChQZYSq0Svebouj-lCdy4oFSRU6hqFgQcOxyFLqy8GmX8VdzNknzM"
+        },
+        {
+          "url": "https://www.gamespot.com/articles/gta-6-boss-talks-the-games-budget-and-calls-out-a-high-profile-game-for-releasing-in-a-rough-state/",
+          "title": "GTA 6 Boss Talks The Game's Budget And Calls Out A \"High-Profile\" Game For Releasing In A Rough State",
+          "publisher": "GameSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2s9gKaNcVQXUB-VCTO7C4idPKU06bw2xkQXZWh559Gam9vLPUS0_G9JzHqPQ"
+        }
+      ]
+    },
+    {
+      "query": "schd",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T15:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/schwabs-dividend-etf-keeps-hitting-040101769.html",
+        "https://www.fool.com/investing/2026/11/04/history-says-this-etf-is-a-fantastic-buy-and-hold/",
+        "https://seekingalpha.com/article/4961640-schds-outperformance-wont-last"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrHn6O5PlcHqd4ydT7clJQDDAxGT0pdrijCpVUKPE9ucH8fTlqCWLqPVcOM0Q",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/technology/articles/asian-chip-stocks-slide-disappointing-045137047.html",
-          "title": "Asian chip stocks slide as disappointing Qualcomm, Arm earnings weigh",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/schwabs-dividend-etf-keeps-hitting-040101769.html",
+          "title": "Schwab's Dividend ETF Keeps Hitting Records. I'd Still Buy It Now.",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrHn6O5PlcHqd4ydT7clJQDDAxGT0pdrijCpVUKPE9ucH8fTlqCWLqPVcOM0Q"
         },
         {
-          "url": "https://seekingalpha.com/article/4962492-the-semiconductor-sector-may-be-nearing-a-meltdown",
-          "title": "The Semiconductor Sector May Be Nearing A Meltdown",
+          "url": "https://www.fool.com/investing/2026/11/04/history-says-this-etf-is-a-fantastic-buy-and-hold/",
+          "title": "History Says This ETF Is a Fantastic Buy-and-Hold Investment -- and It Could Turn $100 per Month Into $359,492",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEQU0W72wMZb4fwy1KlGcgRu8-Qp9EHsc6N9BkHLFVGePBsGld-hkFcfjzAKE"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4961640-schds-outperformance-wont-last",
+          "title": "SCHD's Outperformance Won't Last (NYSEARCA:SCHD)",
           "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUJHaho6K19lBvZrwEN7ZVG0lWC5_DhHW0jSFIabK5L7JqUeudl4xYEm-AqU8"
-        },
-        {
-          "url": "https://www.marketwatch.com/story/chip-stocks-are-suffering-from-a-crisis-of-confidence-but-things-arent-as-gloomy-as-they-seem-6ed14ea9",
-          "title": "Chip stocks are suffering from a ‘crisis of confidence’ — but things aren’t as gloomy as they seem",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRx5mLlxr7Abg1UEwPHRKZks_lr2e5z_-jJxWOYv_o8yTZlKu7cm2trhzY7BWo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHgi2TdLASTapf1VTY_TkcBRNqMmUswRQcmNKiAKsSo9QvuWrtZSlUo0co5qI"
         }
       ]
     },
     {
-      "query": "lorenzo musetti",
+      "query": "rklb stock",
       "approx_searches": "500+",
-      "published_at": "2026-11-05T14:40:00Z",
+      "published_at": "2026-11-05T15:10:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/tennis/articles/ckpdg01pq55eo",
-        "https://www.espn.com/tennis/story/_/id/50379005/alexander-zverev-tenure-no-1-begins-paris-loss",
-        "https://www.reuters.com/sports/tennis/sublime-musetti-stuns-world-number-one-zverev-paris-masters-2026-11-04/"
+        "https://finance.yahoo.com/markets/stocks/articles/insider-alert-rocket-lab-cfo-120938434.html",
+        "https://ca.investing.com/news/stock-market-news/form-144-globus-medical-inc-for-5-november-93CH-4934851",
+        "https://stocktwits.com/news-articles/markets/equity/rklb-stock-cfo-sale-plan-analyst-sticks-to-target-neutron-setback/cNGQ8miR9Py"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPZz6x5Vpjdvbk5zGOtzdqAwubs5J8hSrTHx37Rl2DQKGQkeaKc73MSVAWSg8",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd7JOUIACXpcUWbaNAn8hfEDqkz9m-jLt9K0f6e2Yq3VrMQFhdVrMvUXZuUOw",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/tennis/articles/ckpdg01pq55eo",
-          "title": "Zverev annoyed by reaction to becoming world number one",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPZz6x5Vpjdvbk5zGOtzdqAwubs5J8hSrTHx37Rl2DQKGQkeaKc73MSVAWSg8"
-        },
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50379005/alexander-zverev-tenure-no-1-begins-paris-loss",
-          "title": "Alexander Zverev loses first match as No. 1, falls in Paris to Lorenzo Musetti",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdA9bTX1y4W3Cy4InavuBQz8CY2I7MqmXbqTfWJw-2IUuUupNOIXjpTvqNGd0"
-        },
-        {
-          "url": "https://www.reuters.com/sports/tennis/sublime-musetti-stuns-world-number-one-zverev-paris-masters-2026-11-04/",
-          "title": "Zverev falls in first match as world number one; Djokovic's ATP Finals hopes over",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJopStulCXMZeIOd6mDJp6GufJ47Mj_tpyKJihpztj1eNIo7BXSfL3iYQ6ks"
-        }
-      ]
-    },
-    {
-      "query": "russell brand wife",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T14:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cky93127nyepo",
-        "https://www.bbc.co.uk/news/articles/cx4g1ve5ylg7o",
-        "https://deadline.com/2026/10/russell-brand-prosecution-weaponize-wendy-williams-quote-1237209413/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjZxeS0rFCWdtOxzR7Q0ado1SKPJrzzWqSr7ZmH7ORoxIEx15Bma49zNLBiOA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cky93127nyepo",
-          "title": "Russell Brand's wife tells his rape trial he is 'kind and a wonderful father'",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjZxeS0rFCWdtOxzR7Q0ado1SKPJrzzWqSr7ZmH7ORoxIEx15Bma49zNLBiOA"
-        },
-        {
-          "url": "https://www.bbc.co.uk/news/articles/cx4g1ve5ylg7o",
-          "title": "Russell Brand accusers 'haunted' for years by alleged crimes, court hears",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWFMgV39wwjb6Pr-TYWSD2u6xjGMDtyJSnoC5vkpunxgIJ_3xvZ3dypek0Mc8"
-        },
-        {
-          "url": "https://deadline.com/2026/10/russell-brand-prosecution-weaponize-wendy-williams-quote-1237209413/",
-          "title": "Russell Brand Trial: Prosecution Weaponizes Wendy Williams Interview",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVDZOsXneXctu_eKW2MWERUSbEgligq5XxeRKpEDLZQYkRRPHMGl8etCkO_kc"
-        }
-      ]
-    },
-    {
-      "query": "dell stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T14:40:00Z",
-      "related_news_urls": [
-        "https://www.trefis.com/stock/dell/articles/622833/can-dell-stock-hit-560/2026-11-05",
-        "https://finance.yahoo.com/technology/ai/articles/dell-technologies-dell-shares-just-121309049.html",
-        "https://www.barchart.com/story/news/8672029/what-are-wall-street-analysts-target-price-for-dell-technologies-stock"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbWYO5qWswELvl7b6La5bKub6CygMqJZtI0JxkUXP2KB0Oij-D5f_cjk_yQZs",
-      "image_credit": "Trefis",
-      "news": [
-        {
-          "url": "https://www.trefis.com/stock/dell/articles/622833/can-dell-stock-hit-560/2026-11-05",
-          "title": "Can Dell Stock Hit $560?",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbWYO5qWswELvl7b6La5bKub6CygMqJZtI0JxkUXP2KB0Oij-D5f_cjk_yQZs"
-        },
-        {
-          "url": "https://finance.yahoo.com/technology/ai/articles/dell-technologies-dell-shares-just-121309049.html",
-          "title": "Dell Technologies (DELL) Shares Just Moved, So What Is Driving Attention Now?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/insider-alert-rocket-lab-cfo-120938434.html",
+          "title": "Insider Alert: Rocket Lab CFO Dumps $7.4 Million in Shares",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd7JOUIACXpcUWbaNAn8hfEDqkz9m-jLt9K0f6e2Yq3VrMQFhdVrMvUXZuUOw"
         },
         {
-          "url": "https://www.barchart.com/story/news/8672029/what-are-wall-street-analysts-target-price-for-dell-technologies-stock",
-          "title": "What Are Wall Street Analysts' Target Price for Dell Technologies Stock?",
-          "publisher": "Barchart.com",
+          "url": "https://ca.investing.com/news/stock-market-news/form-144-globus-medical-inc-for-5-november-93CH-4934851",
+          "title": "Form 144 GLOBUS MEDICAL INC For: 5 November By Investing.com",
+          "publisher": "Investing.com Canada",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfFzFYIRf3BrqfB-qcE8y_pjFpkDxfw56iHUBsoUa0gNMssx_niU4_Gun9FM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsaO0BC-N2dmHKembRQ2RmhNpQMmMleYC43zwPARjQDa30X71GLCXZWdNozE"
+        },
+        {
+          "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-cfo-sale-plan-analyst-sticks-to-target-neutron-setback/cNGQ8miR9Py",
+          "title": "RKLB Stock Rises Overnight Despite CFO’s $7.7M Sale Plan As Analyst Backs Neutron Recovery",
+          "publisher": "Stocktwits",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrZnZLmal6lur7P2XY6B0kx9IPTed34kCc-esxhCrF7djGB7OpySUMM8W9u6I"
         }
       ]
     },
     {
-      "query": "carlos penavega",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T14:30:00Z",
+      "query": "vgt",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T15:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/alexa-carlos-penavega-feel-hopeful-160104152.html",
-        "https://www.usmagazine.com/entertainment/news/alexa-penavega-had-vision-of-babys-death-before-stillbirth/",
-        "https://starmagazine.com/spy-kids-star-alexa-penavega-reveals-haunting-premonition-before-pregnancy-tragedy/"
+        "https://finance.yahoo.com/markets/stocks/articles/vgt-vs-qqq-tech-etf-140500753.html",
+        "https://www.fool.com/coverage/etfs/2026/10/30/tech-sector-showdown-the-trade-off-between-tactical-concentration-and-low-cost-breadth/",
+        "https://www.stockinvestor.com/etf-talk-a-place-on-the-island/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlKSf9yLU_0vT4luZQiNJR9QRBEi7Iwx4WtReyGpIySiaMB_-EE1h7mZKyciQ",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZO0XLCZp_s_rjgzCbQqRqpjEjWCJw7OOWzlVHE9k4g0ujkvjODi4XodfgJr0",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/alexa-carlos-penavega-feel-hopeful-160104152.html",
-          "title": "Alexa and Carlos PenaVega Feel ‘Hopeful’ About Possibly Welcoming Another Baby After Stillbirth",
-          "publisher": "Yahoo",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/vgt-vs-qqq-tech-etf-140500753.html",
+          "title": "VGT vs. QQQ: Which Tech ETF Is the Better Long-Term Buy?",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlKSf9yLU_0vT4luZQiNJR9QRBEi7Iwx4WtReyGpIySiaMB_-EE1h7mZKyciQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZO0XLCZp_s_rjgzCbQqRqpjEjWCJw7OOWzlVHE9k4g0ujkvjODi4XodfgJr0"
         },
         {
-          "url": "https://www.usmagazine.com/entertainment/news/alexa-penavega-had-vision-of-babys-death-before-stillbirth/",
-          "title": "Alexa PenaVega Says She Had a ‘Vision’ of Baby’s Death Before Stillbirth: ‘Felt So Clear’",
-          "publisher": "Us Weekly",
+          "url": "https://www.fool.com/coverage/etfs/2026/10/30/tech-sector-showdown-the-trade-off-between-tactical-concentration-and-low-cost-breadth/",
+          "title": "Tech Sector Showdown: The Trade-Off Between Tactical Concentration and Low-Cost Breadth",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBp6tAAxir-8pRgCd9RmXonURKI_jZ53g7NEOy8l6CbJ7ChQqHywgMv4XM4U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReUhe__ssrVWZsf-kgELBwaDvgYL6H6gx8sRbyUELN_utGIu_7lxH9xM7Btr0"
         },
         {
-          "url": "https://starmagazine.com/spy-kids-star-alexa-penavega-reveals-haunting-premonition-before-pregnancy-tragedy/",
-          "title": "‘Spy Kids’ Star Alexa PenaVega Reveals Haunting Premonition Before Pregnancy Tragedy",
-          "publisher": "starmagazine.com",
+          "url": "https://www.stockinvestor.com/etf-talk-a-place-on-the-island/",
+          "title": "ETF Talk: A Place on the Island",
+          "publisher": "Stock Investor",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToFL23zvZ8C5PZaIfm1lGKvMU6a7tVkraIEwbkVMbr67FD4k8xYD58ymxYdec"
-        }
-      ]
-    },
-    {
-      "query": "hailee steinfeld",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T14:20:00Z",
-      "related_news_urls": [
-        "https://www.9news.com/article/news/nation-world/hailee-steinfeld-shares-photos-from-halloween-party-with-josh-allen/507-b28c9119-7cd8-4886-aa69-95c2e84db582",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailee-steinfeld-baby-daughter-becomes-065707151.html",
-        "https://people.com/josh-allen-and-hailee-steinfeld-throw-wild-halloween-bash-for-bills-teammates-and-wags-12236483"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9jpM9VC_rC4o0gAqWdQp6Flr798I99mJKEWHl3EeHB_XE9s2PuVgpzjUY3Ig",
-      "image_credit": "9News",
-      "news": [
-        {
-          "url": "https://www.9news.com/article/news/nation-world/hailee-steinfeld-shares-photos-from-halloween-party-with-josh-allen/507-b28c9119-7cd8-4886-aa69-95c2e84db582",
-          "title": "Actress Hailee Steinfeld shares photos from Wonderland-themed Halloween party with Bills QB Josh Allen",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9jpM9VC_rC4o0gAqWdQp6Flr798I99mJKEWHl3EeHB_XE9s2PuVgpzjUY3Ig"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailee-steinfeld-baby-daughter-becomes-065707151.html",
-          "title": "Hailee Steinfeld’s Baby Daughter Becomes Alice in Mom & Dad’s Wonderland",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTTEYnEQVGTWAGReigwdJJYl-PEkcEejd749ADC0isIH9aqQpjgryNLA0cXWQ"
-        },
-        {
-          "url": "https://people.com/josh-allen-and-hailee-steinfeld-throw-wild-halloween-bash-for-bills-teammates-and-wags-12236483",
-          "title": "Josh Allen and Hailee Steinfeld Throw Wild Halloween Bash for Bills Teammates and WAGs",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_tr5PGsKZCKqWfSAVA8CuAhD4qsXYhjsqqk3O7JUpDAWM2ZjWau98sUInEg"
-        }
-      ]
-    },
-    {
-      "query": "matt dillon",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T14:20:00Z",
-      "related_news_urls": [
-        "https://parade.com/celebrities/rarely-seen-80s-heartthrob-matt-dillon-unrecognizable-first-photos-sylvester-stallone-biopic-i-play-rocky"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWNIzStdgZX6D1pgXS2Xb3ylr_N_5DFvaTgoTNHtdIawGdopJppd1WCDvgqM4",
-      "image_credit": "Parade Magazine",
-      "news": [
-        {
-          "url": "https://parade.com/celebrities/rarely-seen-80s-heartthrob-matt-dillon-unrecognizable-first-photos-sylvester-stallone-biopic-i-play-rocky",
-          "title": "Rarely Seen '80s Heartthrob Matt Dillon is Unrecognizable in First Photos From the Sylvester Stallone Biopic 'I Play Rocky'",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWNIzStdgZX6D1pgXS2Xb3ylr_N_5DFvaTgoTNHtdIawGdopJppd1WCDvgqM4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTd8is7khiQWgIrJ2YQ8beUxhT51Ah-Kx1tQ1ndvlHSVEERcYJUctNhMI3-Tws"
         }
       ]
     }
