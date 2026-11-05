@@ -1,5 +1,4 @@
-# TICKET-1701 · External viewer framing and permission security
-```yaml
+---
 issue: 1701
 project: "QuantaPhi viewer and edge framing security"
 source_requests:
@@ -28,7 +27,11 @@ deployed: false
 live_verified: false
 blocker: "Independent security review, CI and live Android/headers verification not yet established; phone itself cannot be inspected remotely"
 next_action: "Open PR for #1701, run exact-head Node security tests, inspect CI, require independent review before deploy"
-```
+---
+
+# TICKET-1701 · External viewer framing and permission security
+
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1701
 
 ## Source audit (2026-11-05)
 - Main `index.html` loads Google Analytics and AdSense. This does not prove malicious software or an advertising-source infection. Review ad supply chain separately; avoid accidentally removing revenue without evidence.
@@ -37,8 +40,8 @@ next_action: "Open PR for #1701, run exact-head Node security tests, inspect CI,
 
 ## Proposed source changes
 - Official-site iframe: `sandbox="allow-scripts allow-forms allow-same-origin"` with no top navigation, popups, downloads, mic or clipboard delegation. Retain explicit click and known provider allowlist.
-- Edge Worker: `X-Frame-Options: SAMEORIGIN` plus `Content-Security-Policy: frame-ancestors 'self'` and `X-Content-Type-Options: nosniff` for homepage and standalone viewer; preserve intentionally embedded Bubbles subpages.
-- Regression test: inspect iframe permission boundary and execute mocked Worker responses. CI and live header readback remain mandatory.
+- Edge Worker: `X-Frame-Options: DENY` plus `Content-Security-Policy: frame-ancestors 'none'` and `X-Content-Type-Options: nosniff` for homepage and standalone viewer; preserve intentionally embedded Bubbles subpages.
+- Regression test: inspect iframe permission boundary and execute mocked Worker responses. Focused security CI succeeded at previous draft head; after correcting unrelated frame-compatibility and ticket-format regressions, rerun exact-head CI and then verify live headers.
 
 ## Boundaries
 - No claim about the Android device being infected, Google being responsible, actual phone remediation, global site safety, revenue/payout changes or all external content isolation.
