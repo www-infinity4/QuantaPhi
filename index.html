@@ -267,6 +267,7 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
 <link rel="stylesheet" href="/quick-card-search.css?v=20261028-search1">
 
 <link rel="stylesheet" href="/live-tv-cards.css?v=20261102-player1">
+<link rel="stylesheet" href="/gitcoin-quick-card.css?v=20261104-copy-ai1">
 </head>
 <body class="oracle-surface oracle-quanta oracle-octaves-home"><script>document.body.classList.add('oracle-card-deck-active');</script><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Open menu" aria-controls="qmenu" aria-expanded="false">☰</button><h1>Quantaφ</h1><button class="qnewSearch" id="qNewSearch" type="button" aria-label="Start a new search">＋ New Search</button>
@@ -372,6 +373,21 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
 </article>
 <section id="bubblesIdentitySettingsCard" aria-label="Bubbles personal identity and documents settings"></section>
 <section id="disabilityHousingCard" class="card ha-launcher" aria-label="Home Access disability housing quick card"><p>Home Access · Housing help with SSI or SSDI income.</p><a href="/disability-housing.html">Start my housing intake →</a></section>
+<article id="gitcoinQuickCard" class="iqc-card iac-card gcq-card" data-source-ready="true" data-source-id="gitcoin-code" data-source-name="GIT Coin · Collect code receipts" data-gitcoin-root aria-label="GIT Coin collection setup">
+ <header class="gcq-top"><strong>GIT Coin</strong><small>QUANTAPHI · BUILD &amp; COLLECT</small></header>
+ <div class="gcq-art" aria-hidden="true"><svg viewBox="0 0 180 116" role="img" focusable="false"><rect x="21" y="8" width="138" height="95" rx="14"/><path d="M72 40 53 57l19 17M108 40l19 17-19 17M96 31 84 83"/><path d="M52 92h76"/></svg></div>
+ <h2>Collect GITs from your code</h2>
+ <p>Use your own GitHub project. Each added code line gets a traceable receipt in your private Termux SQLite database. Quant AI must separately approve awards; local records are not money.</p>
+ <label for="gcqRepo">Your GitHub repository (owner/repo)</label>
+ <input id="gcqRepo" data-gitcoin-repo type="text" placeholder="YOUR_GITHUB/your-repo" autocapitalize="off" spellcheck="false" autocomplete="off">
+ <div class="gcq-actions">
+  <button type="button" data-gitcoin-copy="termux">Copy for Termux</button>
+  <button type="button" data-gitcoin-copy="ai">Copy for AI</button>
+  <a href="/gitcoin.html">GIT Coin guide</a>
+ </div>
+ <details><summary>View your Termux setup commands</summary><pre data-gitcoin-preview>Enter your own GitHub repository above.</pre></details>
+ <small data-gitcoin-status role="status" aria-live="polite">Pending receipt collector. No verified wallet credits or payouts.</small>
+</article>
 <section id="infinityAcceptedCards" hidden data-oracle-widget-bank="true" aria-label="Infinity accepted brands"></section>
 <section id="verifiedBrandSportsCards" hidden data-oracle-widget-bank="true" aria-label="Verified brands, source-backed 2026 sports, health, civic, food, retail and travel cards"></section>
 <section id="siteQuickCards" class="card iqc-home-shelf" hidden data-oracle-widget-bank="true" aria-label="Completed source quick cards" style="background:#fff;border:1px solid #e1d3cb;border-radius:18px;padding:16px;margin:16px 0;color:#292222">
@@ -2083,6 +2099,7 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script defer src="/steve-miller-book-of-dreams.js?v=20261102-album1"></script>
 <script type="module" src="/wireless/order.mjs?v=20261103-intake1"></script>
 <script type="module" src="/classic-rock-official-card.mjs?v=20261103-v1"></script>
+<script type="module" src="/gitcoin-quick-card.mjs?v=20261104-copy-ai1"></script>
 <script defer src="/oracle-card-deck.js?v=20261101-showcase1"></script>
 <link rel="stylesheet" href="/restricted-ad-card.css?v=20261102-plan1">
 <script type="module" src="/restricted-ad-card.mjs?v=20261102-plan1"></script>
