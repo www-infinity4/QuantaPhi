@@ -3,52 +3,157 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T18:01:58.909907Z",
+  "checked_at": "2026-11-05T18:31:42.209293Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "naresh bhatt",
+      "query": "erin napier",
       "approx_searches": "500+",
-      "published_at": "2026-11-05T17:40:00Z",
+      "published_at": "2026-11-05T18:10:00Z",
       "related_news_urls": [
-        "https://wtop.com/virginia/2026/11/naresh-bhatt-contends-wife-mamta-died-by-suicide-in-virginia-murder-trial/",
-        "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-mamta-kafle-bhatt-says-he-found-her-dead/65-1e47de3d-9243-4329-9a51-b0ccf6e29920",
-        "https://www.courttv.com/news/im-not-that-type-of-person-husband-denies-ever-harming-missing-nurse/"
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/hgtv-star-erin-napier-announces-152122701.html",
+        "https://www.aol.com/articles/erin-napier-honors-aunt-mae-040429000.html",
+        "https://www.imdb.com/news/ni66096762/?ref_=tt_nwr_1"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHI22q6IAIinjgYuhFFGeKgBqX_R8Yp_J9xKM4zAl8o5c6bMIRqucgyoShhwg",
-      "image_credit": "WTOP News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMKzLQu_nVyditYTDZrf3OQQyM-hgCRUZ63LhzZ-Q8ZbSQZSDbBM_4IMKc2eI",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://wtop.com/virginia/2026/11/naresh-bhatt-contends-wife-mamta-died-by-suicide-in-virginia-murder-trial/",
-          "title": "Naresh Bhatt contends wife Mamta died by suicide in Virginia murder trial",
-          "publisher": "WTOP News",
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/hgtv-star-erin-napier-announces-152122701.html",
+          "title": "HGTV Star Erin Napier Announces Devastating Family Loss",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHI22q6IAIinjgYuhFFGeKgBqX_R8Yp_J9xKM4zAl8o5c6bMIRqucgyoShhwg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMKzLQu_nVyditYTDZrf3OQQyM-hgCRUZ63LhzZ-Q8ZbSQZSDbBM_4IMKc2eI"
         },
         {
-          "url": "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-mamta-kafle-bhatt-says-he-found-her-dead/65-1e47de3d-9243-4329-9a51-b0ccf6e29920",
-          "title": "Naresh Bhatt testifies he found his wife dead, tried to dismember her body",
-          "publisher": "WUSA9",
+          "url": "https://www.aol.com/articles/erin-napier-honors-aunt-mae-040429000.html",
+          "title": "Erin Napier Honors Late Aunt Mae Mae in Heartfelt Instagram Tribute",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHyFv-y_vKgb2NhvP3XSYbsKHUU66PXyZenTJa1sn8KF1UDr1A7hCDDb04rWo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1rDsleZplMhgNPORgUeUSXuZTrJDrseA0aThoZ21pJlfKaC1nVPs-7Vx40K8"
         },
         {
-          "url": "https://www.courttv.com/news/im-not-that-type-of-person-husband-denies-ever-harming-missing-nurse/",
-          "title": "‘I’m not that type of person’: Husband denies ever harming missing nurse",
-          "publisher": "Court TV",
+          "url": "https://www.imdb.com/news/ni66096762/?ref_=tt_nwr_1",
+          "title": "HGTV’s Erin Napier Announces Devastating Family Loss Amid ‘Home Town’ Filming",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCGV9izGq05NsOMZDNXFZcnQJxuCUz_4GLU8iVvYgHBzr-xDldkBddxVzlwSc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrFIu9qBBdNW6zrt5oI_Mh8h7Zm4tqWhsFqbhT505-z09hYxCzD7vgpimiplc"
         }
       ]
     },
     {
-      "query": "crystal palace - hoffenheim",
+      "query": "brysen wright",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T18:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/article/florida-miami-texas-wr-brysen-wright-commitment-292209449/",
+        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article317517061.html",
+        "https://www.on3.com/teams/miami-hurricanes/news/decision-primer-five-star-miami-wr-target-brysen-wright-ready-to-make-call/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPnwpcYWSfznZtk5TD_HqWRRovUVFN3FBVz2LClWOftA07aUACFIVrTWCHd_s",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/article/florida-miami-texas-wr-brysen-wright-commitment-292209449/",
+          "title": "Florida, Miami or Texas? Elite WR Brysen Wright set to make commitment",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPnwpcYWSfznZtk5TD_HqWRRovUVFN3FBVz2LClWOftA07aUACFIVrTWCHd_s"
+        },
+        {
+          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article317517061.html",
+          "title": "Canes’ elite class could get even better on Thursday. And UM notes, draft fallout",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmCtVNg1Ia-N6JxcQoSi_ADpWYWgmLRdF9ZZrHxv9k3G1StDrNkuXf2JCwtXM"
+        },
+        {
+          "url": "https://www.on3.com/teams/miami-hurricanes/news/decision-primer-five-star-miami-wr-target-brysen-wright-ready-to-make-call/",
+          "title": "Decision Primer: Five-star Miami WR target Brysen Wright ready to make call",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9HH7jQ4UcK2hYilob25ky-e02dDnqepSFxDp3lip-ogr8fl7lbNze3t22Q6M"
+        }
+      ]
+    },
+    {
+      "query": "jalayshia alford",
       "approx_searches": "500+",
-      "published_at": "2026-11-05T17:40:00Z",
+      "published_at": "2026-11-05T18:00:00Z",
+      "related_news_urls": [
+        "https://6abc.com/post/jalayshia-allford-update-search-continues-missing-10-year-old-west-philadelphia/20017799/",
+        "https://www.fox29.com/news/search-10-year-old-jalayshia-alford-expands-new-location-west-philly-crime-scene-unit-fbi-scene",
+        "https://www.nbcphiladelphia.com/news/local/10-year-old-missing-philadelphia-girl-jalayshia-malayshia-alford-found-dead-lindenwold-nj/4492319/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnx8ihqY3P78XK0swP4uzu8imCWD6NtqmMetzjbeWY14RHlVbBRjlY1fY71co",
+      "image_credit": "6abc Philadelphia",
+      "news": [
+        {
+          "url": "https://6abc.com/post/jalayshia-allford-update-search-continues-missing-10-year-old-west-philadelphia/20017799/",
+          "title": "All-out search continues for 10-year-old Jalayshia Allford of West Philadelphia",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnx8ihqY3P78XK0swP4uzu8imCWD6NtqmMetzjbeWY14RHlVbBRjlY1fY71co"
+        },
+        {
+          "url": "https://www.fox29.com/news/search-10-year-old-jalayshia-alford-expands-new-location-west-philly-crime-scene-unit-fbi-scene",
+          "title": "Search for 10-year-old Jalayshia Alford expands to new location in West Philly; Crime Scene Unit, FBI on scene",
+          "publisher": "FOX 29 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH2F81LZftcW4M6TfXjg00--vIx1Gzi50GkhPUNHyMIjE-ClEfKrPEpyJo0Dk"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/10-year-old-missing-philadelphia-girl-jalayshia-malayshia-alford-found-dead-lindenwold-nj/4492319/",
+          "title": "10-year-old girl found dead after disappearing from West Philadelphia",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAl-_Ks1iZnF4V1L3bGIdabe3e8g2XVuL0Pz8kQ2I30qzuDg7FffPT1GicLH4"
+        }
+      ]
+    },
+    {
+      "query": "india",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T17:50:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/asia-pacific/india-final-stage-talks-expand-missile-sale-philippines-sources-say-2026-11-05/",
+        "https://timesofindia.indiatimes.com/defence/news/india-eyes-new-800m-brahmos-deal-as-philippines-boosts-defences-against-china/articleshow/135577766.cms",
+        "https://defencesecurityasia.com/en/philippines-army-brahmos-deal-south-china-sea-deterrence/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6G_A0FKjQIaJa-5qKTZuOMSwUkHJX-1z3YH0r8F-2d3DsWv04YJak9YSm_LQ",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/india-final-stage-talks-expand-missile-sale-philippines-sources-say-2026-11-05/",
+          "title": "India in final-stage talks to expand missile sale to Philippines, sources say",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6G_A0FKjQIaJa-5qKTZuOMSwUkHJX-1z3YH0r8F-2d3DsWv04YJak9YSm_LQ"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/defence/news/india-eyes-new-800m-brahmos-deal-as-philippines-boosts-defences-against-china/articleshow/135577766.cms",
+          "title": "India eyes new $800m BrahMos deal as Philippines boosts defences against China",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_Oqw3fR8wj0JmW2WnOPSDvpsEzd_8MetrOhEuLX3eXeBPKS4tqlt3CWQph5o"
+        },
+        {
+          "url": "https://defencesecurityasia.com/en/philippines-army-brahmos-deal-south-china-sea-deterrence/",
+          "title": "Philippines Eyes Army BrahMos Deal to Expand South China Sea Deterrence",
+          "publisher": "Defence Security Asia",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT28C2Jm_qkq0xXc-uFRAG-CyNH0f0Mov1jlj-CLTHiNrVyVPuZ90HRfRmZF7g"
+        }
+      ]
+    },
+    {
+      "query": "crystal palace",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T17:50:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/ck87z2p1g5gzt",
-        "https://www.theguardian.com/football/live/2026/nov/05/crystal-palace-hoffenheim-sparta-prague-bournemouth-sunderland-celtic-europa-league-live?page=with:block-6aecc0838f0825bde3295f3b",
-        "https://www.beinsports.com/en-us/soccer/uefa-europa-league/articles/sage-embracing-pressure-of-competing-on-multiple-fronts-with-palace-2026-11-04"
+        "https://www.theguardian.com/football/live/2026/nov/05/crystal-palace-hoffenheim-sparta-prague-bournemouth-sunderland-celtic-europa-league-live",
+        "https://www.skysports.com/football/live-blog/13608388/europa-league-and-conference-league-live-crystal-palace-brighton-bournemouth-celtic-sunderland-score-updates"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlnxby-BRk1jBr0nHBVRXDYwU8IqI1yGtD8Wz55J5zG18lTTNGG-f7mBPNCSw",
       "image_credit": "BBC",
@@ -61,24 +166,129 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlnxby-BRk1jBr0nHBVRXDYwU8IqI1yGtD8Wz55J5zG18lTTNGG-f7mBPNCSw"
         },
         {
-          "url": "https://www.theguardian.com/football/live/2026/nov/05/crystal-palace-hoffenheim-sparta-prague-bournemouth-sunderland-celtic-europa-league-live?page=with:block-6aecc0838f0825bde3295f3b",
+          "url": "https://www.theguardian.com/football/live/2026/nov/05/crystal-palace-hoffenheim-sparta-prague-bournemouth-sunderland-celtic-europa-league-live",
           "title": "Crystal Palace v Hoffenheim, Sparta Prague v Bournemouth: Europa League – live",
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeaiI0oM_WSZYoGVS7-re5s2frzHWv9_di2lwYfXO2v8dVUoSgCNwdd6hNkoc"
         },
         {
-          "url": "https://www.beinsports.com/en-us/soccer/uefa-europa-league/articles/sage-embracing-pressure-of-competing-on-multiple-fronts-with-palace-2026-11-04",
-          "title": "Sage embracing pressure of competing on multiple fronts with Palace",
-          "publisher": "beIN SPORTS",
+          "url": "https://www.skysports.com/football/live-blog/13608388/europa-league-and-conference-league-live-crystal-palace-brighton-bournemouth-celtic-sunderland-score-updates",
+          "title": "Europa League and Conference League LIVE! Crystal Palace, Brighton, Bournemouth, Celtic, Sunderland score updates",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwFgEfgCljvCGCKMamfU-NYI_rI6hEOnT6D0o7kCc0ZW3NccN4ZBL9QLrr1K4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTelnPz0OJ7GP4CQHkFaehQLWO6H-gGpLH1ry47FjfZhqPWOBUrwOieYsVKCS8"
+        }
+      ]
+    },
+    {
+      "query": "sylvester stallone",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T17:50:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/film/2026/nov/05/i-play-rocky-review-anthony-ippolito-adds-knockout-sweetness-to-the-story-of-stallones-hollywood-triumph",
+        "https://www.nytimes.com/2026/11/05/movies/i-play-rocky-review-hes-a-champion.html",
+        "https://www.reuters.com/business/media-telecom/i-play-rocky-tells-underdog-story-behind-classic-underdog-film-2026-11-02/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5dmapFbUIfpXgQ4SZ4TixpskKAVZCMUKJwgcc6AQcWr20YYY9QQWG-5Z7Ds4",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/05/i-play-rocky-review-anthony-ippolito-adds-knockout-sweetness-to-the-story-of-stallones-hollywood-triumph",
+          "title": "I Play Rocky review – Anthony Ippolito adds knockout sweetness to the story of Stallone’s Hollywood triumph",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5dmapFbUIfpXgQ4SZ4TixpskKAVZCMUKJwgcc6AQcWr20YYY9QQWG-5Z7Ds4"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/05/movies/i-play-rocky-review-hes-a-champion.html",
+          "title": "‘I Play Rocky’ Review: He’s a Champion",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKhEESb_E46MbCZewx1Gcy0M9yMouWO_0C3s7zj_FVX55GirYx6B6BGvCgS4Y"
+        },
+        {
+          "url": "https://www.reuters.com/business/media-telecom/i-play-rocky-tells-underdog-story-behind-classic-underdog-film-2026-11-02/",
+          "title": "'I Play Rocky' tells the underdog story behind the classic underdog film",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWs7O_wu_0y_YUPB_Gh9UvAvx-2u8_2slitU1Anc_cdKPNLH5QSOKyMT0Z8_k"
+        }
+      ]
+    },
+    {
+      "query": "perez hilton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T17:50:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/perez-hilton-family-shares-health-000127519.html",
+        "https://www.miamiherald.com/miami-com/miami-com-news/article317922221.html",
+        "https://pagesix.com/2026/10/29/celebrity-news/perez-hiltons-sister-shares-new-details-about-meltdown-in-911-call/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5qWslQP4jAqX0C4-JkZqPwXUo08ud11PgMkbfA7Sbilm2RiylQWwE1hI0rzE",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/perez-hilton-family-shares-health-000127519.html",
+          "title": "Perez Hilton’s Family Shares Health Update 3 Months After Blogger’s Mental Health Crisis",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5qWslQP4jAqX0C4-JkZqPwXUo08ud11PgMkbfA7Sbilm2RiylQWwE1hI0rzE"
+        },
+        {
+          "url": "https://www.miamiherald.com/miami-com/miami-com-news/article317922221.html",
+          "title": "Three months after alarming livestream, there’s a major update in Perez Hilton’s condition",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpi_1TQ9s-8K47GsyRHrGMNAB6oviUGaDU8CED6C54nQI8iuc3cyO0dBcpHws"
+        },
+        {
+          "url": "https://pagesix.com/2026/10/29/celebrity-news/perez-hiltons-sister-shares-new-details-about-meltdown-in-911-call/",
+          "title": "Perez Hilton’s sister shares new details about celeb blogger’s ‘meltdown’ in 911 call: ‘He’s covered in blood’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqwaMn7apGVQ-VtEMet0IgavfOiU30PVWtUcjik4haH9Ph1gQRqRThv46hoDo"
+        }
+      ]
+    },
+    {
+      "query": "naresh bhatt",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T17:40:00Z",
+      "related_news_urls": [
+        "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-mamta-kafle-bhatt-says-he-found-her-dead/65-1e47de3d-9243-4329-9a51-b0ccf6e29920",
+        "https://www.nbcwashington.com/news/local/northern-virginia/naresh-bhatt-testifies-he-found-his-wife-dead-then-disposed-of-her-body/4178386/",
+        "https://www.courttv.com/news/husband-denies-killing-missing-nurse-but-admits-to-cutting-up-her-body-so-it-would-fit-in-trash-can/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHyFv-y_vKgb2NhvP3XSYbsKHUU66PXyZenTJa1sn8KF1UDr1A7hCDDb04rWo",
+      "image_credit": "WUSA9",
+      "news": [
+        {
+          "url": "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-mamta-kafle-bhatt-says-he-found-her-dead/65-1e47de3d-9243-4329-9a51-b0ccf6e29920",
+          "title": "Naresh Bhatt testifies he found his wife dead, tried to dismember her body",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHyFv-y_vKgb2NhvP3XSYbsKHUU66PXyZenTJa1sn8KF1UDr1A7hCDDb04rWo"
+        },
+        {
+          "url": "https://www.nbcwashington.com/news/local/northern-virginia/naresh-bhatt-testifies-he-found-his-wife-dead-then-disposed-of-her-body/4178386/",
+          "title": "Naresh Bhatt testifies he found his wife dead, then disposed of her body",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXHMfSfcmL1jQyZ8RNUua7wUqUZ51uLsbHQa8DbRrGiKxuwmiwDQ4gf2AHQuU"
+        },
+        {
+          "url": "https://www.courttv.com/news/husband-denies-killing-missing-nurse-but-admits-to-cutting-up-her-body-so-it-would-fit-in-trash-can/",
+          "title": "Husband denies killing missing nurse but admits to cutting up her body so it would fit in trash can",
+          "publisher": "Court TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYIaMnrc0TKir94EYVdDFovWvhsY4l2BePpiyyFuZrA1SFypdG14E6kDmfOl4"
         }
       ]
     },
     {
       "query": "justin jefferson",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-05T17:30:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/athletic/7753776/2026/11/05/justin-jefferson-vikings-offense-trade-deadline-silence/",
@@ -113,29 +323,22 @@
     },
     {
       "query": "aldosivi vs river",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-05T17:30:00Z",
       "related_news_urls": [
-        "https://www.ole.com.ar/futbol-primera/aldosivi-vs-river-vivo-minuto-minuto-partido-torneo-clausura-fecha16_0_h9r9bVagbD.html",
-        "https://www.clarin.com/deportes/river-sorpresas-despues-derrota-superclasico-lista-ponzio-juveniles-visitar-aldosivi_0_xMuc3O6f1p.html",
-        "https://www.lanacion.com.ar/deportes/futbol/aldosivi-vs-river-en-vivo-nid05112026/"
+        "https://espndeportes.espn.com/futbol/argentina/nota/_/id/17473310/aldosivi-vs-river-torneo-clausura-equipo-fecha-hora-tv-en-vivo",
+        "https://www.lanacion.com.ar/deportes/futbol/aldosivi-vs-river-en-vivo-nid05112026/",
+        "https://www.ole.com.ar/river-plate/river-plate-leonardo-ponzio-sorpresa-11-titular-santiago-espindola_0_5AHN7lvXWg.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxT8LaGadHfIJo8MYJRrmAuU94N_pV8pN8jK5uBETEfDbbCrPAO86BDiEv0q0",
-      "image_credit": "Olé",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQciLSxucea8Zo5mT3S_O1Qab_G25oU20Kvy_QqGIviJxboWyg6d8ZE625ZdcY",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://www.ole.com.ar/futbol-primera/aldosivi-vs-river-vivo-minuto-minuto-partido-torneo-clausura-fecha16_0_h9r9bVagbD.html",
-          "title": "Aldosivi vs. River, hoy EN VIVO por el Torneo Clausura: formaciones confirmadas, horario y por dónde ver",
-          "publisher": "Olé",
+          "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/17473310/aldosivi-vs-river-torneo-clausura-equipo-fecha-hora-tv-en-vivo",
+          "title": "Cuándo juegan Aldosivi vs. River por el Torneo Clausura: equipo, fecha, hora y TV en vivo",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxT8LaGadHfIJo8MYJRrmAuU94N_pV8pN8jK5uBETEfDbbCrPAO86BDiEv0q0"
-        },
-        {
-          "url": "https://www.clarin.com/deportes/river-sorpresas-despues-derrota-superclasico-lista-ponzio-juveniles-visitar-aldosivi_0_xMuc3O6f1p.html",
-          "title": "River, con sorpresas después de la derrota en el Superclásico: la lista de Ponzio con muchos juveniles para visitar a Aldosivi",
-          "publisher": "Clarin.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSusFjrZKVx-ncPMEQ6EQANF2Z3E0F4vMeMu6n6mTgoSfLsHgIsUkkkXuoz6bs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQciLSxucea8Zo5mT3S_O1Qab_G25oU20Kvy_QqGIviJxboWyg6d8ZE625ZdcY"
         },
         {
           "url": "https://www.lanacion.com.ar/deportes/futbol/aldosivi-vs-river-en-vivo-nid05112026/",
@@ -143,216 +346,13 @@
           "publisher": "La Nación",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOt_zvdhHBsHKMxg-XMCPR_BZJbQMKmc0UT8DwNihoMwPSyIgkSSxFcnw1PhA"
-        }
-      ]
-    },
-    {
-      "query": "atalanta vs kairat",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T17:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/conference-league-line-ups-atalanta-164000981.html",
-        "https://www.bbc.com/sport/football/live/c5djvklyewpgt",
-        "https://football-italia.net/sarri-atalanta-training-retreat-bring-closer/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz2S0wzgwZFtIgEB7qiGZulNIvVnBzQAXZmVVL6HSe8wpKG4DtOzVs6DRDRPY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/conference-league-line-ups-atalanta-164000981.html",
-          "title": "Conference League line-ups: Atalanta vs. Kairat Almaty",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz2S0wzgwZFtIgEB7qiGZulNIvVnBzQAXZmVVL6HSe8wpKG4DtOzVs6DRDRPY"
         },
         {
-          "url": "https://www.bbc.com/sport/football/live/c5djvklyewpgt",
-          "title": "Atalanta vs Kairat: UEFA Conference League stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.ole.com.ar/river-plate/river-plate-leonardo-ponzio-sorpresa-11-titular-santiago-espindola_0_5AHN7lvXWg.html",
+          "title": "La sorpresa de Ponzio en el 11 de River para jugar ante Aldosivi",
+          "publisher": "Olé",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvXcLdjm0698wpwyv6TYRsFO6H68t3EyZ8g4gSBbqwH4X21rGeuGzhu7aRZ3I"
-        },
-        {
-          "url": "https://football-italia.net/sarri-atalanta-training-retreat-bring-closer/",
-          "title": "Sarri: Atalanta’s training retreat is meant to ‘bring us closer’",
-          "publisher": "Football Italia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg9XSm8kAtc4FGMSTP4UzwGeXBH6GpTxWraEqZK6D-DaGlhRVPqRryDTBsCvg"
-        }
-      ]
-    },
-    {
-      "query": "midtjylland vs ajax",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T17:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c8r4y7n209ykt",
-        "https://sports.yahoo.com/articles/changes-midfield-brandt-amrabat-injuries-112014368.html",
-        "https://www.flashscore.com/news/ajax-dream-of-first-european-trophy-in-30-years-before-midtjylland-clash-says-dutch-expert/ANanLSCi/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c8r4y7n209ykt",
-          "title": "Midtjylland vs Ajax: UEFA Conference League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/changes-midfield-brandt-amrabat-injuries-112014368.html",
-          "title": "Changes In Midfield After Brandt And Amrabat Injuries: Ajax Predicted XI vs FC Midtjylland",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiZnjRBKPv-VP_PRC9Hh1XJRoKay0FWP8-9GQN2RRb-17WUqNjzqhOdIGYpVQ"
-        },
-        {
-          "url": "https://www.flashscore.com/news/ajax-dream-of-first-european-trophy-in-30-years-before-midtjylland-clash-says-dutch-expert/ANanLSCi/",
-          "title": "Ajax dream of first European trophy in 30 years before Midtjylland clash, says Dutch expert",
-          "publisher": "Flashscore.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjSd40Z2CoID7Nlx_O13TGUEZDY_N8Dj46Rb31UGbX89d4hYGJKQM9VOVJNok"
-        }
-      ]
-    },
-    {
-      "query": "national hurricane center",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T17:20:00Z",
-      "related_news_urls": [
-        "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
-        "https://www.gulfcoastnewsnow.com/article/weather-forecast-florida-atlantic-tropics-hurricane-storm-kyle-bermuda/74342327",
-        "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk",
-      "image_credit": "WPEC",
-      "news": [
-        {
-          "url": "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
-          "title": "Tracking potential tropical development",
-          "publisher": "WPEC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk"
-        },
-        {
-          "url": "https://www.gulfcoastnewsnow.com/article/weather-forecast-florida-atlantic-tropics-hurricane-storm-kyle-bermuda/74342327",
-          "title": "Medium odds for development in the Atlantic",
-          "publisher": "Gulf Coast News and Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqNKZBkxb8lVVudXdjFQUDDffFwNbr29yoAB1K3JgHtZWHyYygU_iSzWVO2M"
-        },
-        {
-          "url": "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
-          "title": "Subtropical storm could develop in the Atlantic this week",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOg8p4vNB8JJ4Np7qtj56Jvcd3WN8lsOLEyQt_5vBTePWVj4LCtWaaYm5xtyQ"
-        }
-      ]
-    },
-    {
-      "query": "jason sudeikis",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T17:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/espn/betting/story/_/id/50355297/2026-college-football-week-10-top-25-betting-lines-odds",
-        "https://www.cbssports.com/college-football/news/miami-notre-dame-position-by-position-breakdown/",
-        "https://www.onefootdown.com/notre-dame-fighting-irish-football/86626/updated-weather-report-no-4-notre-dame-vs-no-1-miami"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9Mw8CMKK7Kp71vVouCE6yejpdORDjFi_Umute7nA_RYJasYSD3hFqy0O8mU",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/espn/betting/story/_/id/50355297/2026-college-football-week-10-top-25-betting-lines-odds",
-          "title": "Top 25 betting lines: No. 4 Notre Dame favored over No. 1 Miami",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9Mw8CMKK7Kp71vVouCE6yejpdORDjFi_Umute7nA_RYJasYSD3hFqy0O8mU"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/miami-notre-dame-position-by-position-breakdown/",
-          "title": "Who has the edge in Miami vs. Notre Dame? Position-by-position breakdown for major showdown",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJkHr1kuSGv7PfaexjeTqW8GA8sfjzEc1no0qikz_UP-uhLmgYd5ojQalVb0"
-        },
-        {
-          "url": "https://www.onefootdown.com/notre-dame-fighting-irish-football/86626/updated-weather-report-no-4-notre-dame-vs-no-1-miami",
-          "title": "UPDATED WEATHER REPORT: No. 4 Notre Dame VS No. 1 Miami",
-          "publisher": "One Foot Down",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV4k1QUfm8UPMZ3jzZOuS2NWycwyPwAFiKQDuo1B_ZoiHdiENhGP88QLeNFzo"
-        }
-      ]
-    },
-    {
-      "query": "sparta praha vs bournemouth",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T17:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cq77p066k1ero",
-        "https://www.kare11.com/article/syndication/associatedpress/bournemouth-visits-sparta-prague-seeking-fourth-straight-europa-league-win/616-021bddde-52e5-48e8-b38b-74fb090d574b",
-        "https://www.aol.com/articles/cherries-fans-prague-083020000.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRHft5BKAjYKWqytFegNFBnKnwk3FOIrAzIQgLahMONrJ_Rv_7qpAx4AM-ADo",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cq77p066k1ero",
-          "title": "Cherries match in Prague 'pinch me moment' for fan",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRHft5BKAjYKWqytFegNFBnKnwk3FOIrAzIQgLahMONrJ_Rv_7qpAx4AM-ADo"
-        },
-        {
-          "url": "https://www.kare11.com/article/syndication/associatedpress/bournemouth-visits-sparta-prague-seeking-fourth-straight-europa-league-win/616-021bddde-52e5-48e8-b38b-74fb090d574b",
-          "title": "Bournemouth visits Sparta Prague seeking fourth straight Europa League win",
-          "publisher": "kare11.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn9YbFxZ2ObFzc8x6KJ7Qhw2lBGv_OmRRuEu5BdLs9jG7pVFLhLh78aGUNaGg"
-        },
-        {
-          "url": "https://www.aol.com/articles/cherries-fans-prague-083020000.html",
-          "title": "🎧Cherries fans in Prague",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQLMaA4te17x4asfNLRA57xadCpZ4FK7sL0XpLR8ufUjP46vdkkz-L2NTu5KI"
-        }
-      ]
-    },
-    {
-      "query": "nasa artemis",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T17:00:00Z",
-      "related_news_urls": [
-        "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/",
-        "https://spacenews.com/race-to-2028-nasas-2028-crunch-for-artemis-sr-1-and-robotic-lunar-landings/",
-        "https://eos.org/research-and-developments/nasas-ignition-sequence-has-begun"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3CzA-4s2takIkTLe9SAcb8MS9IA2FqlRQwvwaLy-ChhajUPWuTj1KGkkD0HU",
-      "image_credit": "NASA (.gov)",
-      "news": [
-        {
-          "url": "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/",
-          "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
-          "publisher": "NASA (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3CzA-4s2takIkTLe9SAcb8MS9IA2FqlRQwvwaLy-ChhajUPWuTj1KGkkD0HU"
-        },
-        {
-          "url": "https://spacenews.com/race-to-2028-nasas-2028-crunch-for-artemis-sr-1-and-robotic-lunar-landings/",
-          "title": "The 2028 Imperative: NASA’s 2028 crunch for Artemis, SR-1 and robotic lunar landings",
-          "publisher": "SpaceNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJdjz7EEM9oC3DnRfrc8VO5U6_xw1s8Ai1MndvLuTZ3CaOEEdZhCYz5lXQRV4"
-        },
-        {
-          "url": "https://eos.org/research-and-developments/nasas-ignition-sequence-has-begun",
-          "title": "NASA’s Ignition Sequence Has Begun",
-          "publisher": "Eos",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm9XkHOgI2aFHEZotCw842qRZG2yjbdJ4XZ-4eqG5fkyo1mtNhEa6S8Uib_XE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtmlptBeVl3kWVSCcksK3fC1Re6EsJitUHOwL4yRNWvaxT6n7OO0v9rXqnRx0"
         }
       ]
     }
