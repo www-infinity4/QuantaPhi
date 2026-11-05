@@ -1394,7 +1394,6 @@ if(embedded){
  chatScroll.append(conversation);
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
  panel.insertBefore(program,composer);
-
 }
 // The RecordB project owns the reusable recorder-card source. This first-party
 // QuantaPhi bundle gives the Android WebView actual device commands and status.
