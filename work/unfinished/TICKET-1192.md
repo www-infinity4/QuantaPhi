@@ -63,3 +63,11 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 - Dispatch and claim now require the same integrated prerequisite state. A selected job can dispatch an eligible prerequisite within its existing ticket and repository; committed-only, cross-repository and security-held prerequisites remain gated.
 - Repository discovery now polls the existing authenticated GitHub receipt reader. Delayed source results and delegated work preserve the originating conversation if the owner changes chats during submission.
 - Local focused tests: 141 passed. Next action: run exact-head CI and obtain independent review of the task branch. Then verify a binding-preserving Brain release and one signed owner job from chat to execution receipt.
+
+## 2026-11-05 · interrupted session resumed
+
+- Pink verification specialist `pink_review` reviewed #1699 at `0dc8eb8797f99683f9ea3bbe399d510aaba956ba`. Reproduced lost selection after a prerequisite claim and a thread switch during the first context lookup. Existing authorization and held prerequisites still gate claims.
+- The root selection now survives prerequisite claims, waits for integrated source, and survives a conflicting D1 update. The alarm explicitly loads the same owner-partitioned ticket outside the scan window. The regression claims two prerequisite stages, then the original aged job ahead of unrelated work.
+- The chat waits for the pending turn before switching, resetting or reloading. Delayed ticket references and markers are scoped to their own conversation. Global spoken work notices still follow preferences, and only matched notices can enter a transcript.
+- [Signed Bubbles chat run 42067603007](https://github.com/www-infinity4/Moltnook/actions/runs/42067603007) confirms current five-day approval and real GitHub reads. It passed 5 of 10 probes. Some findings stopped after source readback, so this does not prove the completed same-chat engineering flow.
+- State `source_tested`, 🟡. One additional documented session. Overall completion and remaining sessions unknown. No coordinator lease or fence was claimed. Live Brain acceptance and wallet settlement remain outstanding. Next action is to verify the updated #1699 head in CI and independent review before guarded release.

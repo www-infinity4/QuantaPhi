@@ -66,7 +66,7 @@ export function ticketAdmission(candidate,{
 export function filterActiveTickets(candidates,{
  now=Date.now(),maximumAgeDays=MAXIMUM_BACKGROUND_AGE_DAYS,requested=null,maxLookAhead=500
 }={}){
- const allowed=[],deferred=[];
+ const allowed=[],selected=[],prerequisites=[],deferred=[];
  const limit=Number.isInteger(maxLookAhead)?Math.max(1,Math.min(500,maxLookAhead)):500;
  const examined=(Array.isArray(candidates)?candidates:[]).slice(0,limit);
  // A signed owner request to finish a specific old job must also be able to
@@ -97,8 +97,12 @@ export function filterActiveTickets(candidates,{
    selectedDependencies.has(candidate?.job?.id)&&candidate?.job?.repository===root?.job?.repository;
   const admission=ticketAdmission(candidate,{now,maximumAgeDays,
    requested:selectedDependency?{ticketId:requested.ticketId,jobId:candidate.job.id}:requested});
-  if(admission.eligible)allowed.push(candidate);
+  if(admission.eligible){
+   if(candidate===root)selected.push(candidate);
+   else if(selectedDependency)prerequisites.push(candidate);
+   else allowed.push(candidate);
+  }
   else deferred.push({ticketId:candidate?.ticket?.id||'',jobId:candidate?.job?.id||'',reason:admission.reason});
  }
- return {allowed,deferred,examined:examined.length,selectedDependencies};
+ return {allowed:[...selected,...prerequisites,...allowed],deferred,examined:examined.length,selectedDependencies};
 }

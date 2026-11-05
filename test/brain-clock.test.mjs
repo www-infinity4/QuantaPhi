@@ -462,43 +462,73 @@ test('real BrainClock honors explicit owner selection for aged but eligible work
 });
 
 
-test('run-next dispatches only an eligible same-repository prerequisite of the requested job',async()=>{
+test('run-next carries an aged selection through integrated prerequisites to its own claim',async()=>{
  const repository='www-infinity4/QuantaPhi',ticketId='IW-20261001-12345678';
  const prerequisite={id:'TASK-1',repository,instructions:'Implement missing source',status:'queued'};
- const requested={id:'TASK-2',repository,instructions:'Verify integrated source',status:'queued',dependencies:[prerequisite.id]};
+ const second={id:'TASK-4',repository,instructions:'Integrate the compatible adapter',status:'queued',dependencies:[prerequisite.id]};
+ const requested={id:'TASK-2',repository,instructions:'Verify integrated source',status:'queued',dependencies:[second.id]};
  const unrelated={id:'TASK-3',repository,instructions:'Unrelated work',status:'queued',queue_priority:100};
  const ticket={id:ticketId,created_at:Date.now()-28*86400000};
+ const fresh={id:'IW-20261105-12345678',created_at:Date.now(),context_json:JSON.stringify({kind:'robot-directions',color_jobs:[unrelated]})};
  const memory=new Map();
  const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)};
- const WORK_DB={prepare:()=>({bind(){return this},all:async()=>({results:[ticket]}),run:async()=>({meta:{changes:1}})})};
+ let includeFresh=true,updateChanges=1;
+ const WORK_DB={prepare:()=>({bind(){return this},all:async()=>({results:includeFresh?[fresh]:[]}),first:async()=>ticket,run:async()=>({meta:{changes:updateChanges}})})};
  const clock=new BrainClock({storage},{WORK_DB});
+ clock.reconcilePendingWork=async()=>{};
  let dispatches=0;
  clock.dispatchRunner=async()=>{dispatches++;return {ok:true,status:'dispatch_accepted'}};
- const next=async(...jobs)=>{
-  ticket.context_json=JSON.stringify({kind:'robot-directions',color_jobs:jobs});
+ const setJobs=(...jobs)=>{ticket.context_json=JSON.stringify({kind:'robot-directions',color_jobs:jobs});};
+ const next=async()=>{
   const response=await clock.fetch(new Request('https://clock.internal/run-next',{
    method:'POST',body:JSON.stringify({ticketId,jobId:requested.id})}));
   return response.json();
  };
+ const claim=async runId=>(await clock.runner(new Request('https://clock.internal/runner/claim',{
+  method:'POST',body:JSON.stringify({runId,runnerRepository:'www-infinity4/Moltnook'})}))).json();
  for(const blocked of [
   {...prerequisite,status:'committed_unverified'},
   {...prerequisite,status:'blocked',progress:{blocker:'security_hold'}},
   {...prerequisite,repository:'www-infinity4/Other'},
  ]){
-  const result=await next(requested,blocked,unrelated);
+  setJobs(requested,second,blocked,unrelated);
+  const result=await next();
   assert.equal(result.status,'job_not_dispatchable');
   assert.equal(result.reason,'dependency_pending');
  }
  assert.equal(dispatches,0);
  assert.equal(memory.has('requested-next-job'),false);
- const result=await next(requested,prerequisite,unrelated);
+ setJobs(requested,second,prerequisite,unrelated);
+ const result=await next();
  assert.equal(result.status,'queued_for_runner');
  assert.equal(result.requestedJobId,requested.id);
- assert.deepEqual(memory.get('requested-next-job'),{ticketId,jobId:prerequisite.id});
- const claimed=await clock.runner(new Request('https://clock.internal/runner/claim',{
-  method:'POST',body:JSON.stringify({runId:'105',runnerRepository:'www-infinity4/Moltnook'})}));
- assert.equal((await claimed.json()).lease.jobId,prerequisite.id);
+ const selection={ticketId,jobId:requested.id};
+ assert.deepEqual(memory.get('requested-next-job'),selection);
+ assert.equal((await claim('105')).lease.jobId,prerequisite.id);
  assert.equal(dispatches,1);
+ assert.deepEqual(memory.get('requested-next-job'),selection);
+ memory.delete('repository-lease:'+repository);
+ includeFresh=false;
+ setJobs(requested,second,{...prerequisite,status:'committed_unverified'});
+ assert.equal((await claim('106')).lease,null,'an unmerged prerequisite cannot unlock a dependent stage');
+ assert.deepEqual(memory.get('requested-next-job'),selection);
+
+ includeFresh=true;
+ const merged={...prerequisite,status:'merged_verified'};
+ setJobs(requested,second,merged,unrelated);
+ const retried=await clock.retryPendingWork();
+ assert.equal(retried.jobId,second.id,'the alarm finds the selected ticket outside its normal scan');
+ // The alarm dispatch records its cooldown before the signed runner wakes.
+ assert.equal((await claim('107')).lease.jobId,second.id);
+ assert.deepEqual(memory.get('requested-next-job'),selection);
+ memory.delete('repository-lease:'+repository);
+ setJobs(requested,{...second,status:'merged_verified'},merged,unrelated);
+ includeFresh=false;updateChanges=0;
+ assert.equal((await claim('108')).lease,null,'a competing ticket write cannot confirm a claim');
+ assert.deepEqual(memory.get('requested-next-job'),selection);
+ updateChanges=1;
+ assert.equal((await claim('109')).lease.jobId,requested.id);
+ assert.equal(memory.has('requested-next-job'),false,'only the original selected stage consumes the selection');
 });
 
 test('BrainClock automatically rescues a blocked Quant AI ticket using pinned technical source evidence',async()=>{

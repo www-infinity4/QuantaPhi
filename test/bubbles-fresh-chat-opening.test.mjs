@@ -66,7 +66,7 @@ test('automatic reopened chat preserves old turns but does not create empty clou
  const b=ui.indexOf("newConversation.addEventListener('click'",a);
  assert.ok(a>0&&b>a);
  const saved=[],cloud=[],storage=new Map(),ctx={
-  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
+  busy:false,turnPending:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   chatsMessage:{textContent:''},keepChat:true,
   pendingImage:{data:'old-image'},pendingImages:[{data:'old-image'}],photoInput:{value:'old'},photoPreview:{hidden:false},
   messages:[{id:'message_0001',role:'user',text:'earlier turn'}],
@@ -122,7 +122,7 @@ test('active requests do not reset the chat when a panel is reopened',async()=>{
 test('standalone website and Android reopen fresh chats while embedded cards retain their thread',()=>{
  assert.match(ui,/if\(reopening&&!nativeOverlay&&!embedded&&!unsentDraft\)void startConversation\(\{automatic:true\}\)/);
  assert.match(ui,/startFreshOnReopen:\(\)=>\{/);
- assert.match(ui,/if\(busy\|\|nativeBridgeBusy\|\|nativeSpeechPending\|\|voicePending\.length\)return false/);
+ assert.match(ui,/if\(busy\|\|turnPending\|\|nativeBridgeBusy\|\|nativeSpeechPending\|\|voicePending\.length\)return false/);
  assert.match(ui,/sessionStorage\.setItem\(UPDATE_RELOAD_THREAD,'1'\)/);
  assert.match(ui,/restoreNativeHistory:\(backup\)=>\{/);
  assert.match(native,/final boolean reopened = root\.getVisibility\(\) != View\.VISIBLE/);
@@ -138,7 +138,7 @@ test('history storage failure blocks both automatic and confirmed New chat witho
  assert.ok(a>0&&b>a);
  let saves=0,clears=0,confirms=0;
  const ctx={
-  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
+  busy:false,turnPending:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   chatsMessage:{textContent:''},keepChat:true,
   messages:[{id:'old_message',role:'user',text:'important saved conversation'}],
   activeThread:'chat_old',threadIndex:[{id:'chat_old',title:'Existing',updated:1}],
@@ -189,7 +189,7 @@ test('new chat preserves the active session when the new History index cannot be
  assert.ok(a>0&&b>a);
  const events=[];
  const ctx={
-  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
+  busy:false,turnPending:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   chatsMessage:{textContent:''},keepChat:true,
   messages:[],activeThread:'old',
   threadIndex:[{id:'old',title:'Earlier conversation',updated:1}],
@@ -271,7 +271,7 @@ test('History switching never discards unsent photos, typed work or an unsaved c
   let confirmations=0,saves=0,clears=0;
   const original={id:'old_message',role:'user',text:'Important current chat',at:100};
   const ctx={
-   busy:false,nativeBridgeBusy:nativeBusy,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
+   busy:false,turnPending:false,nativeBridgeBusy:nativeBusy,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
    chatsMessage:{textContent:''},
    threadIndex:[{id:'chat_old',title:'Current chat',updated:100},{id:'chat_target',title:'Earlier chat',updated:10}],
    keepChat:!historyOff,messages:[original],activeThread:'chat_old',
@@ -371,7 +371,7 @@ test('History-off turns survive automatic website and Android reopen without uns
  assert.ok(a>0&&b>a,'real fresh-chat handler exists');
  let clears=0;
  const state={
-  busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
+  busy:false,turnPending:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   chatsMessage:{textContent:''},keepChat:false,
   messages:[{id:'prior_turn',role:'user',text:'History disabled but still active'}],
   activeThread:'chat_live',threadIndex:[{id:'chat_live',title:'Current chat',updated:1}],
@@ -391,7 +391,7 @@ test('History-off turns survive automatic website and Android reopen without uns
  assert.ok(n>0&&e>n,'real Android reopen bridge exists');
  let starts=0;
  const native=vm.runInNewContext('({'+ui.slice(n,e)+'}).startFreshOnReopen',{
-  nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
+  nativeOverlay:true,busy:false,turnPending:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   keepChat:false,messages:state.messages,input:{value:''},noteText:{value:''},workText:{value:''},
   pendingImage:null,pendingImages:[],startConversation:()=>{starts++}
  });
@@ -407,7 +407,7 @@ test('explicit New chat requires confirmation before discarding History-off conv
  async function attempt(approve){
   let confirms=0,clears=0,warning='';
   const ctx={
-   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
+   busy:false,turnPending:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
    chatsMessage:{textContent:''},keepChat:false,
    messages:[{id:'turn_1',role:'user',text:'Important conversation with History disabled'}],
    activeThread:'chat_live',threadIndex:[{id:'chat_live',title:'Current chat',updated:1}],
@@ -440,17 +440,17 @@ test('explicit New chat requires confirmation before discarding History-off conv
  assert.equal(approved.clears,1);
 });
 
-test('Android RecordB, live mic and speech block History switch, New chat and native reopen',async()=>{
+test('pending chat turns, Android RecordB, live mic and speech block History switch, New chat and native reopen',async()=>{
  const openStart=ui.indexOf('async function openConversation(id){');
  const freshStart=ui.indexOf('function startConversation(',openStart);
  const freshEnd=ui.indexOf("newConversation.addEventListener('click'",freshStart);
  const nativeStart=ui.indexOf('startFreshOnReopen:()=>{');
  const nativeEnd=ui.indexOf('nativeHistorySnapshot:',nativeStart);
  assert.ok(openStart>0&&freshStart>openStart&&freshEnd>freshStart&&nativeStart>0&&nativeEnd>nativeStart);
- for(const media of ['nativeRecordingActive','voiceStarting','voiceEnabled','speaking']){
+ for(const media of ['turnPending','nativeRecordingActive','voiceStarting','voiceEnabled','speaking']){
   let opened=0,cleared=0,started=0;
   const state={
-   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+   busy:false,turnPending:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
    nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
    chatsMessage:{textContent:''},keepChat:true,ownerReady:false,
    threadIndex:[{id:'old',title:'Earlier chat',updated:1},{id:'target',title:'Saved chat',updated:2}],
@@ -475,7 +475,7 @@ test('Android RecordB, live mic and speech block History switch, New chat and na
   assert.equal(state.activeThread,'old');
   assert.equal(cleared,0);
   const native=vm.runInNewContext('({'+ui.slice(nativeStart,nativeEnd)+'}).startFreshOnReopen',{
-   nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
+   nativeOverlay:true,busy:false,turnPending:media==='turnPending',nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
    nativeRecordingActive:media==='nativeRecordingActive',
    voiceStarting:media==='voiceStarting',voiceEnabled:media==='voiceEnabled',speaking:media==='speaking',
    keepChat:true,messages:[],input:{value:''},noteText:{value:''},workText:{value:''},
