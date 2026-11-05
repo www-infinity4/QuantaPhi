@@ -1,26 +1,28 @@
-/* Gary's use of the reusable Western birthday template.
-   Program IDs come from publisher-uploaded licensed YouTube full-length films.
-   Provider availability, embedding policy and territory restrictions may change. */
+/* Gary's specific instance of a reusable Western birthday template.
+   These public-domain films are hosted with an official iframe embed by Internet Archive.
+   External streaming and regional availability may change. */
 export const garyPage = Object.freeze({
   template: 'western-birthday-v1',
   recipient: 'Gary',
   bubbleId: 'gary-westerns-2026',
   movies: Object.freeze([
     Object.freeze({
-      title: 'McLintock!',
-      year: 1963,
-      videoId: 'pH15fIh7xrg',
-      publisher: 'Grjngo – Western Movies',
-      description: 'John Wayne and Maureen O’Hara in a lively frontier comedy on a cattle ranch.',
-      sourceUrl: 'https://www.youtube.com/watch?v=pH15fIh7xrg'
+      provider: 'internet-archive',
+      archiveId: 'BlueSteel',
+      title: 'Blue Steel',
+      year: 1934,
+      publisher: 'Internet Archive · public-domain film',
+      description: 'John Wayne plays an undercover marshal trying to expose a gang of ruthless outlaws.',
+      sourceUrl: 'https://archive.org/details/BlueSteel'
     }),
     Object.freeze({
-      title: 'Rio Lobo',
-      year: 1970,
-      videoId: 'CDLk7SJLuGU',
-      publisher: 'Grjngo – Western Movies',
-      description: 'John Wayne stars in a Western about loyalty and the aftermath of the Civil War.',
-      sourceUrl: 'https://www.youtube.com/watch?v=CDLk7SJLuGU'
+      provider: 'internet-archive',
+      archiveId: 'The_Star_Packer',
+      title: 'The Star Packer',
+      year: 1934,
+      publisher: 'Internet Archive · public-domain film',
+      description: 'John Wayne rides into a threatened frontier town and faces the mysterious Shadow.',
+      sourceUrl: 'https://archive.org/details/The_Star_Packer'
     })
   ])
 });
