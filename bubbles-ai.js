@@ -388,14 +388,17 @@ function isWeatherTownReply(value){
  if(/\b(?:you|your|i|my|me|we|our|remember|forgot|forget|know|already|should|would|could|please|that|this|yes|no|thanks|thank|stop|cancel|play|open|build|fix|search|why|what|how|weather|tomorrow)\b/i.test(text))return false;
  return /^(?:\d{5}(?:-\d{4})?|[a-z][a-z .’'-]*(?:,? +[a-z][a-z .’'-]*)?)$/i.test(text);
 }
+let currentBitContext=null;
 async function currentOwnerContext(query){
+ currentBitContext=null;
  const empty={related:[],userInstructions:[],capabilities:[],state:'unavailable'};
  if(embedded||!ownerReady||!ownerHeaders)return empty;
  const headers=ownerHeaders,thread=activeThread;
  try{
-  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({messages:[],query,sessionId:thread})},1300);
+  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({messages:[],query,sessionId:thread,bitContext:true})},1300);
   const result=await response.json();
   if(!response.ok||!result.ok||ownerHeaders!==headers||activeThread!==thread||!ownerReady)return empty;
+  currentBitContext=result.bitContext?.sessionId===thread?result.bitContext:null;
   return {related:Array.isArray(result.related)?result.related:[],userInstructions:Array.isArray(result.userInstructions)?result.userInstructions:[],capabilities:Array.isArray(result.capabilities)?result.capabilities:[],state:'retrieved'};
  }catch{return empty}
 }
@@ -1493,7 +1496,7 @@ if(!embedded){
 }
 document.body.append(launcher,panel);
 // One messenger with evidence-backed cognitive/activity bubbles; no extra AI session.
-void import('/bubbles-iteration-bubbles.mjs?v=20261103-work-first1')
+void import('/bubbles-iteration-bubbles.mjs?v=20261104-iteration-credit1')
  .then(({mountBubbleIterations})=>mountBubbleIterations({launcher,panel,status,chatScroll,conversation}))
  .catch(()=>{ /* The activity view must never interrupt chat, voice or wallet. */ });
 // Fit the visible phone viewport, including the space remaining above its keyboard.
@@ -3453,13 +3456,18 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
  rememberPendingGithubWork(requestId,receiptThread);
  pendingGithubReceipts.add(requestId);
  void (async()=>{
+  let workReported=false;
   try{
    for(let i=0;i<120;i++){
     await new Promise(resolve=>setTimeout(resolve,i<8?2000:5000));
     let result;
     try{result=await githubReceipt(requestId);}catch{continue;}
+    publishSavedGithubIterations(result,receiptThread);
     if(result.status==='working'||result.error==='receipt_not_found')continue;
-    clearPendingGithubWork(requestId);
+    const pendingBits=(result.receipts||[]).some(item=>item.bit?.status==='pending');
+    if(!pendingBits)clearPendingGithubWork(requestId);
+    if(workReported){if(pendingBits)continue;return;}
+    workReported=true;
     if(typeof publishDirectGithubIteration==='function')
     publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
     // Testing, merge and deployment require separate verified receipts.
@@ -3473,8 +3481,10 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
      save(THREAD_PREFIX+receiptThread,[...readThread(receiptThread),entry].slice(-160));
      if(ownerReady)void syncCloudFolder(receiptThread,[entry]);
     }
+    if(pendingBits)continue;
     return;
    }
+   if(workReported)return; // Work is finished; saved pending credits retry on the Brain alarm.
    // Every bounded watcher terminates with a visible terminal *observation*.
    // This is a monitoring timeout, never a cancellation or a verified job end.
    if(typeof publishDirectGithubIteration==='function')
@@ -3510,7 +3520,7 @@ function publishDirectGithubIteration(operation,requestId,phase,result=null,thre
    'Response not confirmed; checking durable GitHub receipt';
  }
  if(phase==='tool_receipt'){
-  const proof=result?.receipt;
+  const proof=result?.receipt||(Array.isArray(result?.receipts)&&result.receipts.length===1?result.receipts[0].receipt:null);
   const matched=proof?.tool===tool&&typeof proof?.id==='string'&&
    /^[A-Za-z0-9_-]{8,100}$/.test(proof.id);
   // A client-shaped success, a tool-mismatched receipt, or a completed model
@@ -3521,6 +3531,19 @@ function publishDirectGithubIteration(operation,requestId,phase,result=null,thre
  }
  window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail}));
 }
+function publishSavedGithubIterations(result,thread){
+ if(thread!==activeThread||typeof CustomEvent!=='function')return;
+ for(const item of (Array.isArray(result?.receipts)?result.receipts:[]).slice(0,12)){
+  const proof=item.receipt;
+  if(proof?.status!=='complete'||!/^[A-Za-z0-9_-]{8,100}$/.test(proof.id||''))continue;
+  const bit=item.bit;
+  const credit=bit?.status==='credited'&&bit.asset==='BUBBLE_BIT'&&bit.amount===1&&bit.receiptId===proof.id&&bit.creditId===proof.id?bit:null;
+  window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'tool_receipt',
+   tool:proof.tool,status:proof.status,receiptId:proof.id,operationId:result.action!=='assist'&&result.receipts.length===1?result.requestId:proof.id,
+   criteriaSummary:item.bitCredit?.goal||'',criteriaKey:item.criteriaKey||'',resource:result.repository||'',credit,
+   detail:credit?'1 Bubble Bit credited':bit?.status==='pending'?'Bubble Bit awaiting wallet confirmation':'Receipt recorded; credit unavailable'}}));
+ }
+}
 async function directGithubOperation(operation,{quiet=false,ownerRequest='',imageEvidence=''}={}){
  if(embedded)throw Error('owner_tools_unavailable_in_embed');
  const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
@@ -3530,8 +3553,9 @@ async function directGithubOperation(operation,{quiet=false,ownerRequest='',imag
  let result;
  try{
   const response=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
-   body:JSON.stringify({...operation,requestId})},18000);
+   body:JSON.stringify({...operation,requestId,sessionId:receiptThread,...(currentBitContext?.sessionId===receiptThread?{bitContext:currentBitContext}:{})})},18000);
   result=await response.json();
+  publishSavedGithubIterations(result,receiptThread);
   if(!response.ok){
    if(typeof publishDirectGithubIteration==='function')
     publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);

@@ -5,7 +5,7 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Phases 1 and 2 merged; real spendable Bits ledger and live production acceptance remain incomplete"
-sessions_spent: 6
+sessions_spent: 7
 sessions_remaining_estimate: unknown
 agent: ChatGPT
 lease_id: null
@@ -13,8 +13,8 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feature/bubbles-pulse-evidence-tiers-20261104
-head_sha: 79739a2338bbb93c563b2f39d7d56f48e5ec11df
+branch: fix/bubbles-verified-live-tool-steps-20261104
+head_sha: null # exact tested source is recorded in the PR and canonical issue
 tests:
   - "Phase 1 receipt projection merged in PR #1297"
   - "Phase 2 PR #1338 merged after seven required CI groups passed"
@@ -73,6 +73,7 @@ Owner's heartbeat metaphor mapped to the existing Bubbles/Brain signal: a pulse 
 - No new backend action emitters, settlement records, hardware control or external API permissions were added. Actual Cloudflare/GitHub operations must still produce authenticated receipts via existing or future tools. The Gits ledger remains a distinct proposed policy, not spendable currency or an assertion that all providers recognize it.
 - Work issue: https://github.com/www-infinity4/QuantaPhi/issues/1296. Source only; no verified real Bubbles Android receipt of these new tool labels, no deployment. Next action: check exact-head CI, and wire authenticated backend stage events if provider stage receipts exist; owner identity/wallet rollout remains separately gated.
 
+
 # Session 6 · 2026-11-04 UTC · direct GitHub read event wiring
 
 - Owner specifically requested actual Bubbles-to-Brain engineering, not another concept description. Reused issue #1296 with related #1192; no lease was claimed or another active branch overwritten.
@@ -83,3 +84,16 @@ Owner's heartbeat metaphor mapped to the existing Bubbles/Brain signal: a pulse 
 - Guarded optional observer calls for isolated Android/WebView adapter compatibility. GREEN exact-head CI remains unverified until actually observed.
 - Independently verified Cloudflare Brain Worker v94 at 100% Nov 4 22:10 UTC, but this new source PR is not deployed and there is no verified signed owner code-job acceptance.
 - Next: exact-head CI including owner WebView/receipt tests, independent review and gated release, then authentic same-conversation progress and phone readback. Keep D1 spending and full signed execution out of scope until proven.
+
+
+# Session 7 · 2026-11-05 UTC · receipt-to-credit server handoff
+
+- Reused #1296, #1192 and PR #1673; incorporated the earlier direct-read event patch while preserving newer main Brain admission repairs. No external coordinator lease claimed; lease_id/fence/task_session_id remain null.
+- Fixed divergent counters: commit/test/merge/Cloudflare observations use the same receipt projection; later receipt-matched wallet confirmations can upgrade a pending observation once without recounting the operation.
+- Added owner/session/criteria-bound context proofs after actual owner archive retrieval. The Brain direct GitHub engine records stable source-operation receipts and private criteria packets, submits one internal Bubble Bit credit, and retains pending delivery before a network call. Receipt polling and the existing Brain alarm retry delivery without rerunning GitHub.
+- Added isolated immutable Bubble Bit credit rows in the existing wallet service, authenticated by the existing internal service key; the wallet identity selects the customer view. No customer-selected recipient, existing asset balance overwrite, spend/transfer API or cash conversion.
+- Source coverage: direct GitHub file/repository/code reads, source commits and workflow-result inspections. General web-search/Cloudflare emitters, context-lookup rewards themselves, non-owner customer enrollment, legacy runner per-step packet ingestion, GIT runtime settlement, and full reusable-packet exchange from #1681 remain unfinished.
+- New credit bridge is OFF unless BUBBLE_BITS_ENABLED=1 is deliberately configured on both Brain and Unified Wallet after independent review. Preserve existing bindings, secrets, owner identity, grants and APK security hold.
+- Local verification: 186/186 focused Brain, chat, identity, wallet and receipt tests passed, including actual SQLite credit replay/isolation and real Brain execution with an unavailable/recovered fixture wallet. This is source evidence; fixture credits are not live credits.
+- State: source_tested / review_pending, YELLOW; overall progress_percent and remaining sessions unknown because production acceptance is outstanding. merged/deployed/live_verified are false for this new handoff.
+- Next action: exact-head CI and independent review of the receipt/recipient boundary, then staged wallet+Brain rollout with the flags OFF, reviewed enablement and one authenticated customer chat↔wallet readback.

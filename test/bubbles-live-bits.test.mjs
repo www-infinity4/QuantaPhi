@@ -55,9 +55,9 @@ test('the same live status line loads on every Bubbles website entrypoint withou
  const fs=requireSource();
  for(const page of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs(page);
-  assert.match(html,/bubbles-live-iteration-feed\.mjs\?v=20261104-live-bits1/);
+  assert.match(html,/bubbles-live-iteration-feed\.mjs\?v=20261104-iteration-credit1/);
   assert.match(html,/bubbles-live-iteration-feed\.css\?v=20261104-live-bits1/);
-  assert.match(html,/bubbles-ai\.js\?v=20261104-work-results4/);
+  assert.match(html,/bubbles-ai\.js\?v=20261104-iteration-credit1/);
  }
  const module=fs('bubbles-live-iteration-feed.mjs');
  assert.match(module,/status\.after\(wrapper\)/);
@@ -151,7 +151,7 @@ test('authenticated direct GitHub read displays real start and pending states wi
  assert.ok(begin>0&&end>begin,'the real Bubbles GitHub adapter must publish iterations');
  const events=[];
  const ctx={
-  embedded:false,activeThread:'conversation-A',
+  embedded:false,activeThread:'conversation-A',currentBitContext:null,
   verifiedOwnerHeaders:async()=>({Authorization:'Bearer synthetic-owner'}),
   BRAIN:'https://brain.fixture',crypto:{randomUUID:()=> '11111111-1111-4111-8111-111111111111'},
   CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},
@@ -184,7 +184,7 @@ test('direct GitHub read reports server receipt only for matching verified backe
  const events=[];
  let backend={ok:true,status:'inspected',receipt:{id:'real_github_receipt_12345678',tool:'github.read_file',status:'complete'}};
  const ctx={
-  embedded:false,activeThread:'conversation-A',
+  embedded:false,activeThread:'conversation-A',currentBitContext:null,
   verifiedOwnerHeaders:async()=>({Authorization:'Bearer synthetic-owner'}),
   BRAIN:'https://brain.fixture',crypto:{randomUUID:()=> '22222222-2222-4222-8222-222222222222'},
   CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},

@@ -11,7 +11,27 @@ export function noteRunnerSkip(counts,reason){
  counts[key]=Math.min(500,(Number.isSafeInteger(counts[key])&&counts[key]>=0?counts[key]:0)+1);
  return counts;
 }
-export function describeRunnerIdle({candidateCount=0,admission={},adapterMatches=0,scanLimited=false,claimBlockedBy=null}={}) {
+const DEPENDENCY_STATES=Object.freeze([
+ 'blocked','queued','ready','working','committed_unverified','superseded','missing','other_policy'
+]);
+const FINISHED=new Set(['complete','deployed_verified','merged_verified']);
+// Called only by the signed Brain claim path. Records status categories of
+// unfinished prerequisites, not their IDs, repository paths or owner text.
+export function noteRunnerDependencyStatuses(counts,jobs,dependencyIds){
+ if(!counts||typeof counts!=='object'||!Array.isArray(dependencyIds))return counts;
+ const source=Array.isArray(jobs)?jobs:[],seen=new Set();
+ for(const id of dependencyIds.slice(0,32)){
+  if(typeof id!=='string'||seen.has(id))continue;
+  seen.add(id);
+  const dependency=source.find(j=>j?.id===id);
+  const status=dependency?dependency.status:'missing';
+  if(FINISHED.has(status))continue;
+  const key=DEPENDENCY_STATES.includes(status)?status:'other_policy';
+  counts[key]=Math.min(500,(Number.isSafeInteger(counts[key])&&counts[key]>=0?counts[key]:0)+1);
+ }
+ return counts;
+}
+export function describeRunnerIdle({candidateCount=0,admission={},adapterMatches=0,scanLimited=false,claimBlockedBy=null,dependencyStates=null}={}) {
  const bounded=n=>Number.isSafeInteger(n)&&n>0?Math.min(n,500):0;
  const examined=bounded(candidateCount);
  const admitted=bounded(Array.isArray(admission.allowed)?admission.allowed.length:0);
@@ -22,6 +42,9 @@ export function describeRunnerIdle({candidateCount=0,admission={},adapterMatches
  const code=!examined?'owner_queue_empty':!admitted?'admission_deferred':!compatible?'no_matching_runner_adapter':'eligible_but_not_claimed';
  const safe=claimBlockedBy&&typeof claimBlockedBy==='object'&&!Array.isArray(claimBlockedBy)
   ? Object.fromEntries(CLAIM_SKIP_REASONS.filter(k=>claimBlockedBy[k]>0).map(k=>[k,bounded(claimBlockedBy[k])])):null;
+ const dependencySummary=dependencyStates&&typeof dependencyStates==='object'&&!Array.isArray(dependencyStates)
+  ?Object.fromEntries(DEPENDENCY_STATES.filter(k=>dependencyStates[k]>0).map(k=>[k,bounded(dependencyStates[k])])):null;
  return {code,examined,admitted,deferred,adapterMatches:compatible,agedOut,scanLimited:scanLimited===true,
-  ...(safe?{claimBlockedBy:safe}:{})};
+  ...(safe?{claimBlockedBy:safe}:{}),
+  ...(dependencySummary&&Object.keys(dependencySummary).length?{dependencyStates:dependencySummary}:{})};
 }

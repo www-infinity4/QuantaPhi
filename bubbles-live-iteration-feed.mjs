@@ -2,6 +2,7 @@
  * skill-like action with optional user criteria and evidence. Display ONLY:
  * browser observations are not wallet settlement or server proof of a write.
  */
+import {newBitSession,applyBitObservation} from './bubbles-bit-session.mjs?v=20261104-credit1';
 const TOOL_NAMES=Object.freeze({
  'web.search':['Web','searching sources','search results received'],
  'web.read_page':['Web','reading source page','source page read'],
@@ -37,11 +38,13 @@ const toolTitle=(tool,phase,provider)=>{
  const name=tool.startsWith('web.')&&provider==='google'?'Google':info[0];
  return name+' · '+(phase==='complete'?info[2]:phase==='failed'?'action failed':info[1]);
 };
-export function newLiveBitsState(){return {entries:[],seenReceipts:[],contextReady:false,candidates:0,credits:0,sequence:0,live:'Ready for your next request',running:false};}
+export function newLiveBitsState(){return {entries:[],seenReceipts:[],bitState:newBitSession(),contextReady:false,candidates:0,credits:0,sequence:0,live:'Ready for your next request',running:false};}
 export function advanceLiveBits(previous,event){
  if(!event||typeof event!=='object')return previous;
  if(event.type==='session_changed')return newLiveBitsState();
  const s={...previous,entries:previous.entries.map(e=>({...e})),seenReceipts:[...previous.seenReceipts]};
+ s.bitState=applyBitObservation(previous.bitState||newBitSession(),event);
+ s.candidates=s.bitState.candidateCount;s.credits=s.bitState.creditedBits;
  const add=(headline,state,extra={})=>{
   const entry={number:++s.sequence,headline,state,criteria:'',criteriaKey:'',resource:'',detail:'',tool:'',receiptTail:'',...extra};
   s.entries.push(entry);if(s.entries.length>40)s.entries.shift();
@@ -98,19 +101,23 @@ export function advanceLiveBits(previous,event){
  if(!Object.hasOwn(TOOL_NAMES,tool))return s;
  const receipt=clean(event.receiptId,100),opId=idOkay(event.operationId)?event.operationId:'';
  const existing=opId?s.entries.find(e=>e.operationId===opId&&e.tool===tool):null;
- if(event.type==='tool_receipt'&&idOkay(receipt)&&s.seenReceipts.includes(receipt))return s;
+ if(event.type==='tool_receipt'&&idOkay(receipt)&&s.seenReceipts.includes(receipt)){
+  if(event.credit?.status==='credited'&&s.bitState.creditedReceiptIds.includes(receipt)){
+   const row=s.entries.find(e=>e.fullReceiptId===receipt);if(row)row.detail='1 Bubble Bit credited';
+  }
+  return s;
+ }
  if(event.type==='tool_progress'&&!existing)return s; // Don't invent a start from loose progress text.
  const phase=event.type==='tool_receipt'?(event.status==='failed'?'failed':event.status==='complete'&&idOkay(receipt)?'complete':'unverified'):'running';
  const headline=toolTitle(tool,phase,clean(event.provider,30));
- const extra={tool,operationId:opId,criteria:clean(event.criteriaSummary,220),criteriaKey:clean(event.criteriaKey,100),resource:clean(event.resource,140),detail:clean(event.detail,220),receiptTail:idOkay(receipt)?receipt.slice(-8):'',evidenceKind:TECHNICAL_TOOLS.has(tool)?'technical_execution':'activity_observation'};
+ const extra={tool,operationId:opId,criteria:clean(event.criteriaSummary,220),criteriaKey:clean(event.criteriaKey,100),resource:clean(event.resource,140),detail:clean(event.detail,220),fullReceiptId:idOkay(receipt)?receipt:'',receiptTail:idOkay(receipt)?receipt.slice(-8):'',evidenceKind:TECHNICAL_TOOLS.has(tool)?'technical_execution':'activity_observation'};
  let row;
  if(existing){
-  Object.assign(existing,{headline,state:phase,criteria:extra.criteria||existing.criteria,criteriaKey:extra.criteriaKey||existing.criteriaKey,resource:extra.resource||existing.resource,detail:extra.detail||existing.detail,receiptTail:extra.receiptTail||existing.receiptTail});
+  Object.assign(existing,{headline,state:phase,criteria:extra.criteria||existing.criteria,criteriaKey:extra.criteriaKey||existing.criteriaKey,resource:extra.resource||existing.resource,detail:extra.detail||existing.detail,receiptTail:extra.receiptTail||existing.receiptTail,fullReceiptId:extra.fullReceiptId||existing.fullReceiptId});
   row=existing;s.live='Iteration '+row.number+' · '+headline;
  }else row=add(headline,phase,extra);
  if(event.type==='tool_receipt'&&idOkay(receipt)&&s.seenReceipts.length<500){
   s.seenReceipts.push(receipt);
-  if(phase==='complete'&&s.contextReady)s.candidates++;
  }
  return s;
 }
@@ -128,7 +135,7 @@ function mountLiveView(){
  const record=document.createElement('ol');record.className='ba-live-bit-record';
  disclosure.append(summary,record);wrapper.append(line,disclosure);status.after(wrapper);
  return state=>{
-  line.textContent=state.live+' · '+state.candidates+' receipt candidate'+(state.candidates===1?'':'s');
+  line.textContent=state.live+' · '+state.credits+' Bubble Bits credited · '+Math.max(0,state.candidates-state.credits)+' pending';
   record.replaceChildren();
   for(const entry of state.entries){
    const li=document.createElement('li');li.className='ba-live-bit-entry';
@@ -143,7 +150,7 @@ function mountLiveView(){
    }
    record.append(li);
   }
-  summary.textContent='Iteration details · '+state.entries.length+' steps · 0 wallet credits';
+  summary.textContent='Iteration details · '+state.entries.length+' steps · '+state.credits+' Bubble Bits credited';
  };
 }
 if(typeof window!=='undefined'&&typeof document!=='undefined'&&!window.__BubblesLiveBitFeed){
