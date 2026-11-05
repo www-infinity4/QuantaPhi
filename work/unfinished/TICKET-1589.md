@@ -1,3 +1,28 @@
+---
+issue: 1589
+project: "WHO and Iowa live-radio Quick Card carousel"
+state: implementing
+dot: "🔴"
+progress_percent: 55
+progress_basis: "Seven sourced station cards implemented, 3 official MP3 stream URLs and 4 official broadcaster embeds; exact-head CI red pending test harness and ledger fixes; 0 live browser acceptance"
+sessions_spent: 1
+sessions_remaining_estimate: "1–3 acceptance sessions; uncertain"
+agent: "ChatGPT"
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+repo: www-infinity4/QuantaPhi
+branch: feat/iowa-live-radio-station-carousel-1589
+last_observed_utc: "2026-11-05T04:08:00Z"
+tests: "CI first pass revealed Node window guard and YAML front matter requirement; fixing both on current branch"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Exact-head CI, approved embed/playback behavior, independent Android verification"
+next_action: "Verify exact-head GitHub Actions after harness and ledger fixes; then review, merge if safe, and check live Android playback"
+---
+
 # Ticket #1589 — WHO and Iowa live radio Quick Card carousel
 
 - Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1589
