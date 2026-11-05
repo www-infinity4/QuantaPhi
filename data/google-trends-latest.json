@@ -3,227 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T11:31:01.687342Z",
+  "checked_at": "2026-11-05T12:01:52.482161Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "coinbase",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T11:10:00Z",
+      "query": "weather",
+      "approx_searches": "100000+",
+      "published_at": "2026-11-05T11:40:00Z",
       "related_news_urls": [
-        "https://cryptonews.net/news/market/33704980/",
-        "https://www.tokenpost.com/news/technology/48080",
-        "https://www.cryptoninjas.net/news/coinbase-launches-ai-agent-sign-ups-for-crypto-trading-with-built-in-safety-limits/"
+        "https://www.foxweather.com/weather-news/massive-cross-country-storm-targets-east-coast-with-heavy-rain-after-unleashing-severe-weather-in-southeast",
+        "https://www.weathernationtv.com/news/severe-storms-target-the-plains-south-to-start-the-week",
+        "https://www.yahoo.com/news/videos/east-coast-braces-heavy-rain-032032788.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaMwNgKwPtNZWiQShKRo1ipY-uMEn8RAEhOdFvFBNRNcI50syh08q4LW0Bfrg",
-      "image_credit": "Cryptonews.net",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZeml1lsXa1UG_cpvwNYzNuJH-mWIcU3Ezwi378TkfeyTWt39N8ktrtnw5D6Q",
+      "image_credit": "FOX Weather",
       "news": [
         {
-          "url": "https://cryptonews.net/news/market/33704980/",
-          "title": "Coinbase Launches Global Liquidity Pool for U.S. Institutions",
-          "publisher": "Cryptonews.net",
+          "url": "https://www.foxweather.com/weather-news/massive-cross-country-storm-targets-east-coast-with-heavy-rain-after-unleashing-severe-weather-in-southeast",
+          "title": "Massive storm targets East Coast with heavy rain after unleashing severe weather in Southeast",
+          "publisher": "FOX Weather",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaMwNgKwPtNZWiQShKRo1ipY-uMEn8RAEhOdFvFBNRNcI50syh08q4LW0Bfrg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZeml1lsXa1UG_cpvwNYzNuJH-mWIcU3Ezwi378TkfeyTWt39N8ktrtnw5D6Q"
         },
         {
-          "url": "https://www.tokenpost.com/news/technology/48080",
-          "title": "Brian Armstrong Says Agentic Finance Is Still in Its Early Stages",
-          "publisher": "www.tokenpost.com",
+          "url": "https://www.weathernationtv.com/news/severe-storms-target-the-plains-south-to-start-the-week",
+          "title": "Severe Storms Target the Plains & South to Start the Week",
+          "publisher": "WeatherNation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSc11j84tbY9_bhpvJw8GsC8ZoHXqs2QyXEWb_Ny73qU5tPQfQitAonhBHAqeg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgICG_KLTkmkYhGm9qFrWXzD1ZlwFL-p_s1xw1uHeETD2NONQm8qtNBlIqLZI"
         },
         {
-          "url": "https://www.cryptoninjas.net/news/coinbase-launches-ai-agent-sign-ups-for-crypto-trading-with-built-in-safety-limits/",
-          "title": "Coinbase Launches AI Agent Sign-Ups for Crypto Trading With Built-In Safety Limits",
-          "publisher": "CryptoNinjas",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBpxRAw5WHRBqOU_70vipTRM6B-D8a2BbpKvLI5IO4fwLg3Fd5svV4ubIB8J4"
-        }
-      ]
-    },
-    {
-      "query": "mccaysville ga",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T11:00:00Z",
-      "related_news_urls": [
-        "https://www.11alive.com/article/weather/weather-impact/catastrophic-flash-flood-warning-fannin-gilmer-counties/85-418dc7dc-f64d-4b90-a0ab-02978fcda5af",
-        "https://www.wsbtv.com/news/local/public-safety-director-urges-evacuation-flooding-causes-bridge-closure-north-georgia/22ZLQNRIPNACXGH2AVM6OR5V64/",
-        "https://www.fox5atlanta.com/news/north-georgia-forecast-strong-storms-isolated-tornadoes-possible-today"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiwapUqZvOj936J0R8TaHsDrFmGfsKa0ECCOwa9djTFsxPpAro8L6IAAwgpt0",
-      "image_credit": "11Alive.com",
-      "news": [
-        {
-          "url": "https://www.11alive.com/article/weather/weather-impact/catastrophic-flash-flood-warning-fannin-gilmer-counties/85-418dc7dc-f64d-4b90-a0ab-02978fcda5af",
-          "title": "Catastrophic flash flood warning impacts Fannin, Gilmer counties",
-          "publisher": "11Alive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiwapUqZvOj936J0R8TaHsDrFmGfsKa0ECCOwa9djTFsxPpAro8L6IAAwgpt0"
-        },
-        {
-          "url": "https://www.wsbtv.com/news/local/public-safety-director-urges-evacuation-flooding-causes-bridge-closure-north-georgia/22ZLQNRIPNACXGH2AVM6OR5V64/",
-          "title": "Public safety director urges residents to avoid flooded areas as crews evacuate those in need",
-          "publisher": "WSB-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE7kQUKSrF-e72GAaMBzxtr8B3402EVNW2TpErttztrWUEUHZnJZVyJLD5jao"
-        },
-        {
-          "url": "https://www.fox5atlanta.com/news/north-georgia-forecast-strong-storms-isolated-tornadoes-possible-today",
-          "title": "Catastrophic Flash Flood Warning in North Georgia | What you need to know",
-          "publisher": "FOX 5 Atlanta",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBFqO8VuONZ0oDmXZvPoyMAJI4U4XQ1BLtN_Qt-XvCKEJxHswKamSu3sjnw5U"
-        }
-      ]
-    },
-    {
-      "query": "dianna russini",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T11:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dianna-russini-gets-out-the-word-that-shes-coming-back-to-work-next-week",
-        "https://www.foxnews.com/outkick-sports/dianna-russini-planning-return-unknown-sports-media-position-next-week-after-scandal",
-        "https://nypost.com/2026/11/04/sports/dianna-russini-will-be-headlining-her-own-show-months-after-mike-vrabel-scandal/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6Hb7jQ6Wd2WDCYGaLEQ2Ce4mXqmmGPmtD_fc438uhih4s2AWYh0vce2c6Xp0",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dianna-russini-gets-out-the-word-that-shes-coming-back-to-work-next-week",
-          "title": "Dianna Russini gets out the word that she’s coming back to work next week",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6Hb7jQ6Wd2WDCYGaLEQ2Ce4mXqmmGPmtD_fc438uhih4s2AWYh0vce2c6Xp0"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/dianna-russini-planning-return-unknown-sports-media-position-next-week-after-scandal",
-          "title": "Dianna Russini is planning a return to unknown sports media position 'next week' after scandal",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSebbQhB5SZiVAH7YwdoozoEAK_sQPZStqgZycuMz-odGtogXR5A8_d8IfFrlk"
-        },
-        {
-          "url": "https://nypost.com/2026/11/04/sports/dianna-russini-will-be-headlining-her-own-show-months-after-mike-vrabel-scandal/",
-          "title": "Dianna Russini will be ‘headlining her own show’ months after Mike Vrabel scandal",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV7KBEYiPnGXqmTh3bxNiq8NkC8eCYtsUqTFW4EviUmBv-yYdk46ACiAF4DMA"
-        }
-      ]
-    },
-    {
-      "query": "guy fawkes day",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T11:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/world/articles/guy-fawkes-caught-guarding-36-040338133.html",
-        "https://www.theguardian.com/uk-news/2026/nov/03/law-behind-bonfire-night-among-records-sent-from-parliament-to-national-archives",
-        "https://www.bbc.com/news/articles/c62xk7pzjnyo"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3Ttse2mksPNmJLsJmflzo8xMi3TbEOlzd9IUP81lsEoR_3-RQQVokLn-3eIo",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/world/articles/guy-fawkes-caught-guarding-36-040338133.html",
-          "title": "Guy Fawkes was caught guarding 36 barrels of gunpowder beneath Parliament in the 1605 Gunpowder Plot; he was tortured into naming his co-conspirators and tried on Jan. 27, 1606",
+          "url": "https://www.yahoo.com/news/videos/east-coast-braces-heavy-rain-032032788.html",
+          "title": "East Coast braces for heavy rain as massive storm moves east",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3Ttse2mksPNmJLsJmflzo8xMi3TbEOlzd9IUP81lsEoR_3-RQQVokLn-3eIo"
-        },
-        {
-          "url": "https://www.theguardian.com/uk-news/2026/nov/03/law-behind-bonfire-night-among-records-sent-from-parliament-to-national-archives",
-          "title": "Law behind Bonfire Night among records sent from parliament to National Archives",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIdvBpSoW_LDcC9USEJBIBj9tcAdhEkCNrAJo-oGg9QsCN65JmYI6D_yn0jAE"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/c62xk7pzjnyo",
-          "title": "Could Margaret Clitherow’s execution have shaped Guy Fawkes?",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYX7XlrCXFR1J5el8z4Pc3Z3hLRl_3G_TdFJ53eyHo3IRzd_ETdMjY5ofn6G8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqweD1PkZHneVFOQFaQwDqN72r6ag2sA1GoGzmV0GTGy1ZakKUnOxF-MxePVs"
         }
       ]
     },
     {
-      "query": "zimbabwe vs afghanistan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T11:00:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/story/zim-vs-afg-antum-naqvi-set-for-long-awaited-zimbabwe-debut-after-eligibility-clearance-1561379",
-        "https://sports.yahoo.com/articles/afghanistan-vs-zimbabwe-1st-test-043612698.html",
-        "https://www.icc-cricket.com/news/bennett-to-lead-zimbabwe-in-afghanistan-test-series"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRKuugMnKvHPfbqOECquh-AEOXBSqacaWVB8sBHBAaMnOnQuAtUZsu5Lg2UmA",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/story/zim-vs-afg-antum-naqvi-set-for-long-awaited-zimbabwe-debut-after-eligibility-clearance-1561379",
-          "title": "Antum Naqvi set for long-awaited Zimbabwe debut after eligibility clearance",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRKuugMnKvHPfbqOECquh-AEOXBSqacaWVB8sBHBAaMnOnQuAtUZsu5Lg2UmA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/afghanistan-vs-zimbabwe-1st-test-043612698.html",
-          "title": "Afghanistan vs Zimbabwe 1st Test prediction, lineups and Sharjah pitch report — who will win?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMb6C605UzuDkJI1H1jldYnhcNmoBOvbyjbEpmR8rqCzauiNCdQ3soLq3L4Yo"
-        },
-        {
-          "url": "https://www.icc-cricket.com/news/bennett-to-lead-zimbabwe-in-afghanistan-test-series",
-          "title": "Bennett to lead Zimbabwe in Afghanistan Test series",
-          "publisher": "ICC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX4WO1g5Q1wJ4h1z147FgPnb5SrVSmTX_tlTEkC1tMaz1fd2IJTJ35PV9cpQE"
-        }
-      ]
-    },
-    {
-      "query": "fl lottery",
+      "query": "national donut day",
       "approx_searches": "100+",
-      "published_at": "2026-11-05T11:00:00Z",
+      "published_at": "2026-11-05T11:40:00Z",
       "related_news_urls": [
-        "https://www.floridatoday.com/story/news/2026/11/04/florida-publix-lotto-winner-cash-indialantic-spring-hill/92593550007/",
-        "https://www.miamiherald.com/news/lottery/article317920459.html",
-        "https://www.tcpalm.com/story/news/2026/11/04/florida-lotto-winner-numbers-wednesday-november/92593216007/"
+        "https://www.buzzfeed.com/gem758/its-national-donut-day-lets-see-how-loyal-you-are-to-the-don",
+        "https://10best.usatoday.com/food-drink/how-to-make-donuts-at-home/",
+        "https://upnorthlive.com/news/local/poll-what-is-your-favorite-type-of-donut-11-04-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBGsWRK3ge8fjmWAHOxDNYff9jHEMB7Lhrrb8EpN04rsk5N3hxeySIyIlLaek",
-      "image_credit": "Florida Today",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF8JCvn8sq86yEofO7kyRqblteTixyrFIslutDbkwake4TWceruOBqe-gtXpA",
+      "image_credit": "BuzzFeed",
       "news": [
         {
-          "url": "https://www.floridatoday.com/story/news/2026/11/04/florida-publix-lotto-winner-cash-indialantic-spring-hill/92593550007/",
-          "title": "Publix sold Florida Lotto ticket worth $10.75 million. Winner took the cash",
-          "publisher": "Florida Today",
+          "url": "https://www.buzzfeed.com/gem758/its-national-donut-day-lets-see-how-loyal-you-are-to-the-don",
+          "title": "Does The Donut Really, Truly Reign Supreme?",
+          "publisher": "BuzzFeed",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBGsWRK3ge8fjmWAHOxDNYff9jHEMB7Lhrrb8EpN04rsk5N3hxeySIyIlLaek"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF8JCvn8sq86yEofO7kyRqblteTixyrFIslutDbkwake4TWceruOBqe-gtXpA"
         },
         {
-          "url": "https://www.miamiherald.com/news/lottery/article317920459.html",
-          "title": "Miami, Broward players among lottery winners. Wednesday has a Powerball drawing",
-          "publisher": "Miami Herald",
+          "url": "https://10best.usatoday.com/food-drink/how-to-make-donuts-at-home/",
+          "title": "Pro donut makers say this is the mistake behind dense, greasy homemade donuts",
+          "publisher": "USA TODAY 10BEST",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDf-bk_kgWyFe4zI4l96aLh79XJCRQPRgdeCxpYuCRKmCmpoMP4UQtOl4TJEM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOa4NuGhJqvO9TpIY3qrO6g5rMdmRAtmz-8hTsxeYw8IgFV16Kb81vhzEG4sM"
         },
         {
-          "url": "https://www.tcpalm.com/story/news/2026/11/04/florida-lotto-winner-numbers-wednesday-november/92593216007/",
-          "title": "Florida Lotto at $9.25 million. Wednesday, Nov. 4, numbers and results",
-          "publisher": "Treasure Coast News",
+          "url": "https://upnorthlive.com/news/local/poll-what-is-your-favorite-type-of-donut-11-04-2026",
+          "title": "Poll: What is your favorite type of donut?",
+          "publisher": "WPBN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUIXNH4e5bbuQTHJW_2r3GHY0zp6s3AiRgLoMLRuDlXsQAK-LM3oE-4minZAc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTL3xZUoNbbIoF5wq7t2rPdWbQb-oPigeVI9-rj0zObNW11y4DZT5gUlMPfVOI"
         }
       ]
     },
     {
-      "query": "clima de hoy",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T10:50:00Z",
+      "query": "baltimore weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T11:40:00Z",
+      "related_news_urls": [
+        "https://www.wbaltv.com/article/baltimore-weather-rain-showers-november-5-2026/74343513",
+        "https://foxbaltimore.com/news/local/much-needed-rain-returns-to-baltimore",
+        "https://www.wmar2news.com/weather/a-dry-start-to-the-first-week-of-november"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1vGQyPmnrW7xEoi-svPAzv1eq621LtzKO-PNPJ63090uBNkeB0vfKOuygMfQ",
+      "image_credit": "WBAL-TV",
+      "news": [
+        {
+          "url": "https://www.wbaltv.com/article/baltimore-weather-rain-showers-november-5-2026/74343513",
+          "title": "Some showers possible in Baltimore area, particularly south",
+          "publisher": "WBAL-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1vGQyPmnrW7xEoi-svPAzv1eq621LtzKO-PNPJ63090uBNkeB0vfKOuygMfQ"
+        },
+        {
+          "url": "https://foxbaltimore.com/news/local/much-needed-rain-returns-to-baltimore",
+          "title": "Much needed rain returns to Baltimore",
+          "publisher": "WBFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY9v-z59sPoF-1OKEJEPvPtE7IqG5yymc5oWEN_D1qGXVMOEjjyQ3obWM_qV4"
+        },
+        {
+          "url": "https://www.wmar2news.com/weather/a-dry-start-to-the-first-week-of-november",
+          "title": "Tuesday: Warm and cloudy",
+          "publisher": "WMAR 2 News Baltimore",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9JhbX0ebfiMNy13qamx8UUE0qEn23FsE_ZIHa7AnYeHlrQTaMwb2Gth7vJKE"
+        }
+      ]
+    },
+    {
+      "query": "clima",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-05T11:30:00Z",
       "related_news_urls": [
         "https://www.univision.com/noticias/clima-de-hoy-y-manana-en-eeuu-un-frente-arrastrara-lluvias-hacia-el-este-y-sureste-del-pais-video",
-        "https://eldiariony.com/2026/11/04/el-tiempo-de-hoy-en-chicago-illinois-para-este-miercoles-4-de-noviembre/",
-        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-rockford-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-la-semana-del-2-de-noviembre-al-nid01112026/"
+        "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-syracuse-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-5-de-noviembre-nid05112026/",
+        "https://tn.com.ar/estados-unidos/clima/2026/11/05/como-estara-el-clima-en-new-york-este-jueves-5-de-noviembre/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ05mky4GBQS-chNfGOyZgs3Juu6LloASaWFiQoFsx8Scyo0KMQVcJIx5FyzRw",
       "image_credit": "Univision",
@@ -235,104 +130,6 @@
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ05mky4GBQS-chNfGOyZgs3Juu6LloASaWFiQoFsx8Scyo0KMQVcJIx5FyzRw"
         },
-        {
-          "url": "https://eldiariony.com/2026/11/04/el-tiempo-de-hoy-en-chicago-illinois-para-este-miercoles-4-de-noviembre/",
-          "title": "El tiempo de hoy en Chicago, Illinois para este miércoles 4 de noviembre",
-          "publisher": "El Diario NY",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRF5lnxxeUCzmVAY43TW6FQprNh4DcHHOU84zfBNmyEQPQvBfFKGd0ruQGPUms"
-        },
-        {
-          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-rockford-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-la-semana-del-2-de-noviembre-al-nid01112026/",
-          "title": "Clima en Rockford, Illinois hoy: cuál es el pronóstico del tiempo para la semana del 2 de noviembre al 2 de noviembre",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
-        }
-      ]
-    },
-    {
-      "query": "canelo álvarez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T10:50:00Z",
-      "related_news_urls": [
-        "https://www.mediotiempo.com/mas-deportes/box/juan-manuel-marquez-senala-accionar-mbilli-canelo-alvarez",
-        "https://www.infobae.com/mexico/deportes/2026/11/03/terence-crawford-defiende-a-canelo-alvarez-de-las-criticas-tras-haber-conquistado-el-titulo-supermediano-del-cmb-digan-lo-que-quieran/",
-        "https://oem.com.mx/esto/analisis/jose-luis-camarillo-dulce-ciencia-32932157"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCC7BeVwS_oxWvkzFTRgmI7_4BSXJKBo778ntpdGfTsjKbtRz6Tu9L1aqb45I",
-      "image_credit": "Mediotiempo",
-      "news": [
-        {
-          "url": "https://www.mediotiempo.com/mas-deportes/box/juan-manuel-marquez-senala-accionar-mbilli-canelo-alvarez",
-          "title": "'Tenía que seguir un guion': Juan Manuel Márquez lanza crítica a Mbilli tras pelea con Canelo",
-          "publisher": "Mediotiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCC7BeVwS_oxWvkzFTRgmI7_4BSXJKBo778ntpdGfTsjKbtRz6Tu9L1aqb45I"
-        },
-        {
-          "url": "https://www.infobae.com/mexico/deportes/2026/11/03/terence-crawford-defiende-a-canelo-alvarez-de-las-criticas-tras-haber-conquistado-el-titulo-supermediano-del-cmb-digan-lo-que-quieran/",
-          "title": "Terence Crawford defiende a Canelo Álvarez de las críticas tras haber conquistado el título supermediano del CMB: “Digan lo que quieran”",
-          "publisher": "Infobae",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhaFEgKU1uwcE9yXOhJmWtQYlRMqP4SgU-sWNTNHc3rWsDi7quziZRGiy466c"
-        },
-        {
-          "url": "https://oem.com.mx/esto/analisis/jose-luis-camarillo-dulce-ciencia-32932157",
-          "title": "José Luis Camarillo Dulce ciencia - esto",
-          "publisher": "El Sol de México",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmT8em4A098n-rMGTW6up2jd-GP156A51ohNUgYwwoyd2v76tEhcN59mLKs5E"
-        }
-      ]
-    },
-    {
-      "query": "pa lottery",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T10:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/articles/pennsylvania-lottery-powerball-pick-2-043007659.html",
-        "https://www.pennlive.com/lottery/2026/11/winning-pa-lottery-numbers-for-nov-3-2026.html",
-        "https://www.aol.com/articles/pennsylvania-lottery-pick-2-day-043020000.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5_Rjoc8g2EZQ8DI0tADQgd79FsXNv-E4E7ikLnisUD8WMDeGmuycIJfkTQ_E",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/articles/pennsylvania-lottery-powerball-pick-2-043007659.html",
-          "title": "Pennsylvania Lottery Powerball, Pick 2 Day results for Nov. 4, 2026",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5_Rjoc8g2EZQ8DI0tADQgd79FsXNv-E4E7ikLnisUD8WMDeGmuycIJfkTQ_E"
-        },
-        {
-          "url": "https://www.pennlive.com/lottery/2026/11/winning-pa-lottery-numbers-for-nov-3-2026.html",
-          "title": "Winning Pa. Lottery numbers for Nov. 3, 2026",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbzVb2GPUP1peKhA54r-3e1hgBDzllAtwubc8dVGkhu7pj3xkB3Woy4AsRDAA"
-        },
-        {
-          "url": "https://www.aol.com/articles/pennsylvania-lottery-pick-2-day-043020000.html",
-          "title": "Pennsylvania Lottery Pick 2 Day, Pick 2 Evening results for Nov. 1, 2026",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKWl6VCBmWxUWTeRXGcfK5kf4vxgtX_A_iimLCFVs9aCHY-sEtsEZQQW_ukBg"
-        }
-      ]
-    },
-    {
-      "query": "tiempo de hoy",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T10:50:00Z",
-      "related_news_urls": [
-        "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-syracuse-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-5-de-noviembre-nid05112026/",
-        "https://tn.com.ar/estados-unidos/clima/2026/11/05/como-estara-el-clima-en-new-york-este-jueves-5-de-noviembre/",
-        "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-yonkers-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-5-de-noviembre-nid05112026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA",
-      "image_credit": "La Nación",
-      "news": [
         {
           "url": "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-syracuse-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-5-de-noviembre-nid05112026/",
           "title": "Clima en Syracuse, New York hoy: cuál es el pronóstico del tiempo para hoy 5 de noviembre",
@@ -346,13 +143,208 @@
           "publisher": "TN",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwbCypP87lX-XPlftKnvuA3Hhuh6d0Nr32Bab0XdTrZUBZPWuwTiXbmi7hwkc"
+        }
+      ]
+    },
+    {
+      "query": "alexandra eala",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T11:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
+        "https://sports.inquirer.net/705074/alex-eala-battles-czech-tereza-valentova-in-hong-kong-open-last-16",
+        "https://www.tennisworldusa.org/tennis/news/Tennis_Stories/171190/alexandra-eala-laughs-off-tiredness-claims-after-reaching-new-careerhigh-ranking/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkStoz7ECXfIvVdc0oyU0TbFXuEw-qjRx99tfXd_tLPaqlb7qDR0HlDKpRUCo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
+          "title": "Alex Eala brushes aside late replacement Emerson Jones to reach Hong Kong Open round of 16",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkStoz7ECXfIvVdc0oyU0TbFXuEw-qjRx99tfXd_tLPaqlb7qDR0HlDKpRUCo"
         },
         {
-          "url": "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-yonkers-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-5-de-noviembre-nid05112026/",
-          "title": "Clima en Yonkers, New York hoy: cuál es el pronóstico del tiempo para hoy 5 de noviembre",
-          "publisher": "La Nación",
+          "url": "https://sports.inquirer.net/705074/alex-eala-battles-czech-tereza-valentova-in-hong-kong-open-last-16",
+          "title": "Alex Eala battles Czech Tereza Valentova in Hong Kong Open last 16",
+          "publisher": "Inquirer.net",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT1f0aXiOL7AxbHH2SsZlasfcgr6apoxGP7uCYiVKmeUqg6p-7kzYr3MmvXi4"
+        },
+        {
+          "url": "https://www.tennisworldusa.org/tennis/news/Tennis_Stories/171190/alexandra-eala-laughs-off-tiredness-claims-after-reaching-new-careerhigh-ranking/",
+          "title": "Alexandra Eala laughs off tiredness claims after reaching new career-high ranking",
+          "publisher": "Tennis World USA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPqKuvOvkIn6kMOYsSY5hqn_rIsHUkerpt-VwwfnuXLsXo_CoZQwGg-0gyjNo"
+        }
+      ]
+    },
+    {
+      "query": "arby's",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T11:30:00Z",
+      "related_news_urls": [
+        "https://www.mashed.com/2291578/ordering-tips-best-arbys-curly-fries/",
+        "https://www.kansascity.com/news/business/openings-closings/article317928080.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUn9HEcCRu7k_m4j9fVkjmr1ikGEdWWfCtepk_BtfWNxqGms8OHMMaIQeYqQ0",
+      "image_credit": "Mashed",
+      "news": [
+        {
+          "url": "https://www.mashed.com/2291578/ordering-tips-best-arbys-curly-fries/",
+          "title": "5 Ordering Tips For The Best Arby's Curly Fries",
+          "publisher": "Mashed",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUn9HEcCRu7k_m4j9fVkjmr1ikGEdWWfCtepk_BtfWNxqGms8OHMMaIQeYqQ0"
+        },
+        {
+          "url": "https://www.kansascity.com/news/business/openings-closings/article317928080.html",
+          "title": "Fast-food chain has closed two Johnson County restaurants. More remain open",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzphesXP6EN-m-napSaTIgPnxFEPuErh_54yKv6uZFe6gkoEcMRMk8erhTEmE"
+        }
+      ]
+    },
+    {
+      "query": "погода",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T11:30:00Z",
+      "related_news_urls": [
+        "https://www.rosbalt.ru/news/2026-11-05/takogo-v-noyabre-ne-zhdali-peterburg-nakroet-anomalnoe-teplo-5724703",
+        "https://www.fontanka.ru/2026/11/05/76745446/",
+        "https://pogoda.mail.ru/news/72970974/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_DZIOXuwaTpCaDChovkBf8DvrMjBsnij9pKDt_xBRRvBSPeBG4v3f9AmA53s",
+      "image_credit": "Росбалт",
+      "news": [
+        {
+          "url": "https://www.rosbalt.ru/news/2026-11-05/takogo-v-noyabre-ne-zhdali-peterburg-nakroet-anomalnoe-teplo-5724703",
+          "title": "Такого в ноябре не ждали: Петербург накроет аномальное тепло",
+          "publisher": "Росбалт",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_DZIOXuwaTpCaDChovkBf8DvrMjBsnij9pKDt_xBRRvBSPeBG4v3f9AmA53s"
+        },
+        {
+          "url": "https://www.fontanka.ru/2026/11/05/76745446/",
+          "title": "Новое похолодание начинается. Но есть и хорошая новость",
+          "publisher": "ФОНТАНКА.ру",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCnpEQYXbbfhORy1676wziZSHOLXyoTfLBjyKA06LVZRX7NJ09VIdhDHxV7dQ"
+        },
+        {
+          "url": "https://pogoda.mail.ru/news/72970974/",
+          "title": "Температура в Петербурге впервые за осень опустилась ниже нуля",
+          "publisher": "Погода Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcOcvebgYQ2RH82IijyN-seEND21u_Y9V7OJ9txdwLXA5c1B-GG2OJOC-xy7c"
+        }
+      ]
+    },
+    {
+      "query": "weather nyc",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T11:30:00Z",
+      "related_news_urls": [
+        "https://www.wcvb.com/article/video-friday-rain-then-a-cooler-weekend-1793875227/74343124",
+        "https://www.cbsnews.com/newyork/video/showers-around-nyc-today-with-heavy-rain-coming/",
+        "https://whdh.com/weather-blog/it-all-comes-to-an-end/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3vGZQDH_Xzcka9AMQzfrSqqhAza4TVLnc00ekX3aJOoNRoLNCLKEjDrtUE9I",
+      "image_credit": "WCVB",
+      "news": [
+        {
+          "url": "https://www.wcvb.com/article/video-friday-rain-then-a-cooler-weekend-1793875227/74343124",
+          "title": "Video: Friday rain, then a cooler weekend",
+          "publisher": "WCVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3vGZQDH_Xzcka9AMQzfrSqqhAza4TVLnc00ekX3aJOoNRoLNCLKEjDrtUE9I"
+        },
+        {
+          "url": "https://www.cbsnews.com/newyork/video/showers-around-nyc-today-with-heavy-rain-coming/",
+          "title": "Showers around NYC today with heavy rain coming",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJOE2rDIFAn_yByMukzaeStNL-Bmldyto0YTGNeNCqzAe3vz4TwLY5N-aOnWs"
+        },
+        {
+          "url": "https://whdh.com/weather-blog/it-all-comes-to-an-end/",
+          "title": "It all comes to an end",
+          "publisher": "WHDH",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe1KBiOohf-tTncADOXkp_9zv5Ii0aGUqnobzgEDGi8e3doseCvA4QLbcrlHA"
+        }
+      ]
+    },
+    {
+      "query": "天气",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T11:30:00Z",
+      "related_news_urls": [
+        "https://www.epochtimes.com/gb/26/11/5/n14883257.htm",
+        "https://news.ifeng.com/c/8xmXJFiQ5tW",
+        "https://news.online.sh.cn/news/gb/content/2026-11/05/content_10501222.htm"
+      ],
+      "image_url": null,
+      "image_credit": "大紀元",
+      "news": [
+        {
+          "url": "https://www.epochtimes.com/gb/26/11/5/n14883257.htm",
+          "title": "天氣預報：紐約週末前或有雨",
+          "publisher": "大紀元",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://news.ifeng.com/c/8xmXJFiQ5tW",
+          "title": "iPhone天气应用出现多地-32℃异常数据，气象部门回应",
+          "publisher": "凤凰网",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlWm2QZ5-QvPWUqWxvR7sDGzGTKHTTjkmoK2ORuicXPYySEwHp8izusIWWjeU"
+        },
+        {
+          "url": "https://news.online.sh.cn/news/gb/content/2026-11/05/content_10501222.htm",
+          "title": "多地-32℃？ APP显示天气预报“离大谱”",
+          "publisher": "上海热线",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtgITD1TjihHeEjYLFIFfBFXvTvwU79I0szyPA_mY2H9_DkIhRo5hbCj70PPA"
+        }
+      ]
+    },
+    {
+      "query": "날씨",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T11:30:00Z",
+      "related_news_urls": [
+        "https://www.koreadaily.com/article/20261104192951678",
+        "https://www.chosun.com/national/transport-environment/2026/11/05/7NPT6KECUBGV3NFKP4SOOQF5AI/",
+        "https://imnews.imbc.com/replay/2026/nw1700/article/6863467_36981.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnRjN_Q2ownBFchRJKt8nMMh1PHsltqMvy10aX9oHYxiGZ2jIBTsIFD5hmLRI",
+      "image_credit": "미주중앙일보",
+      "news": [
+        {
+          "url": "https://www.koreadaily.com/article/20261104192951678",
+          "title": "[포토타임] 입동 앞두고 전국 가을비... 기상청 ‘비 그친 뒤 춥다’",
+          "publisher": "미주중앙일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnRjN_Q2ownBFchRJKt8nMMh1PHsltqMvy10aX9oHYxiGZ2jIBTsIFD5hmLRI"
+        },
+        {
+          "url": "https://www.chosun.com/national/transport-environment/2026/11/05/7NPT6KECUBGV3NFKP4SOOQF5AI/",
+          "title": "초겨울 문턱 넘는 한반도...주말 서울 올가을 첫 영하권",
+          "publisher": "조선일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqDSY272DBkZYXiGHgGJEZpdQceVuINbFDEuOJSTvc-_xuNoHnITxfxf5cvpI"
+        },
+        {
+          "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6863467_36981.html",
+          "title": "내일 전국 맑고 쌀쌀‥오늘보다 5~8도 '뚝'",
+          "publisher": "MBC 뉴스",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6As06WSZkadcsHzDK2WIeJIPelD0IeVtPGTsBwuhcfyJC1mY3zjlKT6AFg2g"
         }
       ]
     }
