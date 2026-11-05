@@ -20,6 +20,9 @@ export function classifyLine(content,path){
  if(!CODE_EXT.test(path))return {eligible:false,reason:'non_code_file'};
  const clean=content.trim();
  if(!clean)return {eligible:false,reason:'blank_line'};
+ // An HTML closing tag is a real structural code line even when short.
+ // Record it as a candidate; CI and Quant AI still reject invalid filler.
+ if(/\.html?$/i.test(path)&&/^<\/[A-Za-z][A-Za-z0-9:-]*\s*>$/.test(clean))return {eligible:true,reason:null};
  if(/^(?:\/\/|\/\*|\*|#|<!--|--(?:\s|$))/.test(clean))return {eligible:false,reason:'comment_only'};
  if(clean.length<8||/^[{}()[\];,]+$/.test(clean))return {eligible:false,reason:'trivial_line'};
  if(/^(.)\1{16,}$/.test(clean)||/(\b(?:lorem|foobar|placeholder|filler)\b.*){3,}/i.test(clean))return {eligible:false,reason:'repetitive_filler'};
@@ -47,7 +50,10 @@ export function buildManifest(diff,source){
    const hash=sha256(raw);
    const kind=classifyLine(raw,path);
    const signature=path+'\0'+hash;
-   const unique=!seen.has(signature);
+   // Common structural HTML tags repeat legitimately at different line numbers.
+   // Their provenance IDs remain unique; later verification rejects tag spam.
+   const structuralHtml=/\.html?$/i.test(path)&&/^<\/[A-Za-z][A-Za-z0-9:-]*\s*>$/.test(raw.trim());
+   const unique=structuralHtml||!seen.has(signature);
    seen.add(signature);
    const eligible=kind.eligible&&unique;
    const receipt={

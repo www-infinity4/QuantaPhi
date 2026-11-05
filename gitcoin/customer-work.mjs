@@ -4,13 +4,14 @@
  * customers, resolve signatures, charge them or authenticate by itself.
  */
 import {evaluateClaim,createSettlementPlan} from './verification.mjs';
+import {databaseBubblesExecutor,storeVerifiedGitCredits} from './settlement.mjs';
 
 const error=code=>{throw Error(code)};
 const SHA=/^[a-f0-9]{64}$/i;
 const validId=v=>typeof v==='string'&&/^[a-zA-Z0-9:_./-]{8,160}$/.test(v);
 const providers=new Set(['bubbles','gpt','copilot','human','other-ai']);
 
-export async function evaluateCustomerJob(manifest,{principal,github,quantAI,contracts}={}){
+export async function evaluateCustomerJob(manifest,{principal,github,quantAI,contracts,bubblesExecutor}={}){
  if(!principal?.id||!principal?.walletId)error('unauthenticated_customer');
  if(!contracts?.verifyGrant||!contracts?.verifyAcceptance)error('customer_contract_service_unavailable');
  if(!providers.has(manifest?.builder_claim))error('unsupported_builder');
@@ -42,7 +43,7 @@ export async function evaluateCustomerJob(manifest,{principal,github,quantAI,con
 
  // Independent immutable GitHub diff, default branch, CI, signed agent job,
  // and Quant AI per-line quality gates run only AFTER acceptance is verified.
- const evaluated=await evaluateClaim(manifest,{principal,github,quantAI});
+ const evaluated=await evaluateClaim(manifest,{principal,github,quantAI,bubblesExecutor});
  if(evaluated.recipient_wallet_id!==grant.recipientWalletId)error('executor_recipient_mismatch');
  return {
   ...evaluated,
@@ -82,54 +83,37 @@ export function planAcceptedGits(evaluated){
  * not directly from a card click or user-supplied JSON.
  */
 export async function postVerifiedCustomerGits(manifest,options={}){
- const {db}=options;
+ const {db,principal}=options;
  if(!db?.prepare||!db?.batch)error('gitcoin_database_unavailable');
- const reviewed=await evaluateCustomerJob(manifest,options);
+ const reviewed=await evaluateCustomerJob(manifest,{...options,bubblesExecutor:databaseBubblesExecutor(db)});
  const plan=planAcceptedGits(reviewed);
  if(!plan.length)return {ok:true,proposedLineCount:0,submittedForIdempotentStorage:0,
   walletMinted:false,spendableBalanceProvided:false};
- const statements=[];
- for(const line of plan){
-  statements.push(db.prepare(
-   'INSERT OR IGNORE INTO gitcoin_line_claims (receipt_id,repo,commit_sha,file_path,line_number,content_sha256,git_type,intent,builder_claim,authenticated_submitter,recipient_wallet_id,status,github_evidence_id,quant_ai_review_id) VALUES (?1,?2,?3,?4,?5,?6,?7,?8,?9,?10,?11,\'verified\',?12,?13)'
-  ).bind(
-   line.receipt_id,line.repo,line.commit_sha,line.path,line.line_number,
-   line.content_sha256,line.git_type,String(reviewed.lines.find(x=>x.id===line.receipt_id)?.git_type||'').split(':')[1],
-   line.provider,line.customer_id,line.wallet_id,'github:'+line.commit_sha,line.quant_ai_review_id
-  ));
-  statements.push(db.prepare(
-   'INSERT OR IGNORE INTO gitcoin_awards (receipt_id,wallet_id,git_type,amount,github_evidence_id,quant_ai_review_id,attribution_evidence_id) SELECT ?1,?2,?3,1,?4,?5,?6 WHERE EXISTS (SELECT 1 FROM gitcoin_line_claims WHERE receipt_id=?1 AND recipient_wallet_id=?2 AND status=\'verified\' AND quant_ai_review_id=?5)'
-  ).bind(line.receipt_id,line.wallet_id,line.git_type,'github:'+line.commit_sha,
-   line.quant_ai_review_id,line.consent_receipt_id));
-  statements.push(db.prepare(
+ const awardLinks=plan.map(line=>db.prepare(
    'INSERT OR IGNORE INTO gitcoin_customer_award_links (receipt_id,customer_id,grant_id,acceptance_receipt_id,request_sha256,provider,executor_wallet_id) SELECT ?1,?2,?3,?4,?5,?6,?7 WHERE EXISTS (SELECT 1 FROM gitcoin_awards WHERE receipt_id=?1 AND wallet_id=?7)'
   ).bind(line.receipt_id,line.customer_id,line.grant_id,line.acceptance_receipt_id,
    line.request_sha256,line.provider,line.wallet_id));
- }
- const outcome=await db.batch(statements);
- if(!Array.isArray(outcome)||outcome.length!==statements.length||
-  outcome.some(x=>x?.success!==true))error('gitcoin_atomic_write_unconfirmed');
- // INSERT OR IGNORE is replay-safe but would otherwise also hide a conflicting
- // wallet/contract. Never report submitted credit without verifying the exact
- // recipient, consent and acceptance after the atomic transaction.
- const ids=plan.map(x=>x.receipt_id);
- const placeholders=ids.map((_,i)=>'?'+(i+1)).join(',');
- const rows=await db.prepare(
-  'SELECT a.receipt_id,a.wallet_id,a.amount,l.customer_id,l.grant_id,l.acceptance_receipt_id,l.executor_wallet_id FROM gitcoin_awards a JOIN gitcoin_customer_award_links l ON a.receipt_id=l.receipt_id WHERE a.receipt_id IN ('+placeholders+')'
- ).bind(...ids).all();
- const found=new Map((rows?.results||[]).map(x=>[x.receipt_id,x]));
- if(found.size!==plan.length)error('gitcoin_readback_unconfirmed');
- for(const x of plan){
-  const row=found.get(x.receipt_id);
-  if(!row||row.wallet_id!==x.wallet_id||row.executor_wallet_id!==x.wallet_id||
-   row.customer_id!==x.customer_id||row.grant_id!==x.grant_id||
-   row.acceptance_receipt_id!==x.acceptance_receipt_id||Number(row.amount)!==1)
-   error('gitcoin_readback_mismatch');
+ const settlement=await storeVerifiedGitCredits(manifest,reviewed,{principal,db,awardLinks});
+ const ids=settlement.receiptIds;
+ if(ids.length){
+  const byId=new Map(plan.map(line=>[line.receipt_id,line]));
+  const placeholders=ids.map((_,i)=>'?'+(i+1)).join(',');
+  const rows=await db.prepare(
+   'SELECT * FROM gitcoin_customer_award_links WHERE receipt_id IN ('+placeholders+')'
+  ).bind(...ids).all();
+  if(rows.results?.length!==ids.length)error('gitcoin_readback_unconfirmed');
+  for(const row of rows.results){
+   const x=byId.get(row.receipt_id);
+   if(!x||row.executor_wallet_id!==x.wallet_id||row.customer_id!==x.customer_id||row.grant_id!==x.grant_id||
+    row.acceptance_receipt_id!==x.acceptance_receipt_id||row.request_sha256!==x.request_sha256||row.provider!==x.provider)
+    error('gitcoin_readback_mismatch');
+  }
  }
  // Verified, idempotent ledger receipt. Whether it is available to trade or
  // redeem depends on a separate authorized wallet/read-policy rollout.
  return {ok:true,proposedLineCount:plan.length,
-  submittedForIdempotentStorage:plan.length,verifiedLedgerReceipts:plan.length,
+  submittedForIdempotentStorage:plan.length,verifiedLedgerReceipts:ids.length,
+  credited:settlement.credited,alreadyCredited:settlement.alreadyCredited,excludedHistorical:settlement.excludedHistorical.length,
   walletMinted:false,spendableBalanceProvided:false,
   creditUnit:'GIT',recipientWalletId:reviewed.recipient_wallet_id};
 }

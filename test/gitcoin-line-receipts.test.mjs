@@ -85,3 +85,20 @@ test('repetitive filler, minified vendors and lockfiles cannot become eligible r
  assert.equal(classifyLine('const x = 1;', 'src/bundle.min.js').eligible,false);
  assert.equal(classifyLine('const x = 1;', 'package-lock.json').eligible,false);
 });
+
+test('HTML structural closing lines such as Moltnook guestbook </a> are real provisional code candidates',()=>{
+ const sourceHtml={...source,commit:'c'.repeat(40)};
+ const html=['diff --git a/guestbook/index.html b/guestbook/index.html',
+  '--- /dev/null','+++ b/guestbook/index.html','@@ -0,0 +1,5 @@',
+  '+<a href="../index.html" aria-label="Moltnook home">',
+  '+</a>',
+  '+<section aria-label="Second link">',
+  '+</a>',
+  '+<p>Other content</p>'].join("\n")
+ const manifest=buildManifest(html,sourceHtml);
+ assert.equal(manifest.lines.length,5);
+ assert.equal(manifest.lines[1].eligible,true,'a real closing anchor is not discarded just for short length');
+ assert.equal(manifest.lines[3].eligible,true,'separate structural anchor in the same source file remains traceable');
+ assert.notEqual(manifest.lines[1].id,manifest.lines[3].id);
+ assert.equal(manifest.lines[1].content_sha256,manifest.lines[3].content_sha256);
+});

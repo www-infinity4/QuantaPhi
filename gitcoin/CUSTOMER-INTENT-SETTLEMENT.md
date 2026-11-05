@@ -38,3 +38,10 @@ Related: https://github.com/www-infinity4/QuantaPhi/pull/1675 and https://github
 Tests: `node --test test/gitcoin-*.test.mjs` (CI still required).
 Status: source milestone only, no owner lease, no proof of outside customer use, no live Cloudflare deployment, no guaranteed payment or credited balance.
 Next single action: pass exact-head CI and independent security review before connecting the authenticated provider/customer grant service.
+
+## 2026-11-05 · owner settlement integration
+
+- State `source_tested`, 🟡. The customer settlement branch now uses the phase-one GIT owner binding, line history and transaction. Customer acceptance links enter the same atomic batch and cannot be overwritten.
+- Two customer jobs in the SQLite regression credited four fixture GIT to the server-bound executor. A different recipient, a changed acceptance replay and a case-only repository rename could not create extra credits.
+- Local GIT suite passed all 28 tests. One additional source session. Overall completion and remaining sessions are unknown. No active lease, fence or expiry.
+- The wallet work on #1703 reads verified awards from the separate GIT database. Exact-head review, trusted GitHub and Quant AI adapters, durable customer grant and acceptance services, a verified production executor binding and signed live jobs remain required.
