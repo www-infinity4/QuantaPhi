@@ -26,8 +26,8 @@ test('main site and standalone viewer reject outside framing at the edge',async(
  for(const path of ['/','/website-viewer.html']){
   const response=await context.worker.fetch(new Request('https://quantaphi.org'+path),{});
   assert.equal(response.status,200,path);
-  assert.equal(response.headers.get('X-Frame-Options'),'SAMEORIGIN',path);
-  assert.match(response.headers.get('Content-Security-Policy')||'',/frame-ancestors 'self'/,path);
+  assert.equal(response.headers.get('X-Frame-Options'),'DENY',path);
+  assert.match(response.headers.get('Content-Security-Policy')||'',/frame-ancestors 'none'/,path);
   assert.equal(response.headers.get('X-Content-Type-Options'),'nosniff',path);
  }
 });
