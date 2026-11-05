@@ -4015,12 +4015,14 @@ async function pollBrainProgress(){
  progressPolling=true;
  try{
   const headers=await verifiedOwnerHeaders();
+  const authorization=headers.Authorization;
+  const sameOwner=()=>ownerReady&&ownerHeaders===headers&&ownerHeaders.Authorization===authorization;
   const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
   // A sign-out, wallet/account switch or re-pair during the network wait must
   // not project a prior owner's ticket into the newly active chat.
-  if(!ownerReady||ownerHeaders!==headers)return;
+  if(!sameOwner())return;
   const receiptThread=activeThread;
   const work=iterationWorkByThread.get(receiptThread);
   // Unrelated historic/blocked Brain tickets are not this chat's execution result.
@@ -4034,13 +4036,14 @@ async function pollBrainProgress(){
    try{
     // Verified owner ticket list, not a model answer, supplies these steps.
     const {projectVerifiedJobTransitions}=await import('/bubbles-brain-job-steps.mjs?v=20261104-owner-steps1');
-    if(ownerReady&&ownerHeaders===headers&&receiptThread===activeThread&&iterationWorkByThread.get(receiptThread)===work){
+    if(sameOwner()&&receiptThread===activeThread&&iterationWorkByThread.get(receiptThread)===work){
      const projection=projectVerifiedJobTransitions(iterationTicket,work.markers);
      work.markers=projection.markers;
      if(typeof CustomEvent==='function')for(const step of projection.events)window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:step}));
     }
    }catch{/* Optional display must not interrupt authenticated ticket polling. */}
   }
+  if(!sameOwner())return;
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
   brainConnectionState('Connected · Work status available in Options', 'connected');
   resumePendingGithubReceipts();
@@ -4060,7 +4063,7 @@ async function pollBrainProgress(){
     const claim=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({mode:'notification-claim',client:memoryClient,events})},12000);
     const receipt=await claim.json();
     if(!claim.ok||!receipt.ok||!Array.isArray(receipt.notices))throw Error('notification_reservation_unavailable');
-    if(!ownerReady||ownerHeaders!==headers)return;
+    if(!sameOwner())return;
     notificationPreferences=receipt.preferences||notificationPreferences;updates=receipt.notices;
    }
   }else if(notificationPreferences.mode==='finished')updates=updates.filter(text=>/finished/.test(text));

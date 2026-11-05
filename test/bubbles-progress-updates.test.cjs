@@ -60,7 +60,14 @@ test('actual poller speaks verified completions and only writes matching receipt
  const verifiedHeaders={Authorization:'Bearer fixture'};
  const context={memoryClient:'android_fixture',notificationPreferences:{mode:'brief'},brainInboxInitialized:false,brainConnectionState:()=>{},recordBrainNotice:()=>{},showOwnerApprovalRequests:()=>{},refreshBulkOwnerRun:()=>{},resumePendingGithubReceipts:()=>{},brainTools:{ProgressTracker},embedded:false,ownerReady:true,ownerHeaders:verifiedHeaders,nativeOverlay:true,busy:false,speaking:false,config:{voice:true},messages:[],progressVoiceQueue:voice,activeThread:'chat_one',BRAIN:'https://brain.invalid',verifiedOwnerHeaders:async()=>verifiedHeaders,bubblesFetch:async(url,options)=>{calls++;assert.equal(options.method,'POST');if(url.endsWith('/owner/conversation')){const body=JSON.parse(options.body);assert.equal(body.mode,'notification-claim');assert.equal(body.client,'android_fixture');assert.deepEqual(body.events,[{ticketId:tickets[0].id,jobId:'TASK-1',transition:'finished'}]);return {ok:true,json:async()=>({ok:true,notices:['UI job finished.'],preferences:{mode:'brief'}})};}assert.ok(url.endsWith('/work/tickets/list'));if(failed)throw Error('offline');return {ok:true,json:async()=>({ok:true,notificationScope:'a'.repeat(64),tickets:tickets.map(t=>({...t,repository:'www-infinity4/QuantaPhi'}))})}},display:text=>displayed.push(text),persistChat:()=>{},setInterval:()=>{},speakText:()=>{}};
  vm.createContext(context);
- vm.runInContext(source.slice(source.indexOf('let progressStorage;'),source.indexOf('async function readBrainReport(){')),context);
+ let rePair=false;
+ context.readJobSteps=async()=>{
+  if(rePair)verifiedHeaders.Authorization='Bearer rotated-fixture';
+  return {projectVerifiedJobTransitions:()=>({markers:{},events:[]})};
+ };
+ const poller=source.slice(source.indexOf('let progressStorage;'),source.indexOf('async function readBrainReport(){'))
+  .replace("import('/bubbles-brain-job-steps.mjs?v=20261104-owner-steps1')",'readJobSteps()');
+ vm.runInContext(poller,context);
  context.rememberIterationWork('chat_one','ticket');
  await new Promise(r=>setImmediate(r));assert.equal(displayed.length,0);
  tickets=[ticket([merged()])];
@@ -77,6 +84,14 @@ test('actual poller speaks verified completions and only writes matching receipt
  await context.pollBrainProgress();
  assert.equal(voice.length,2,'global owner notices still speak when enabled');
  assert.equal(displayed.length,1,'another conversation’s work cannot enter this transcript');
+ tickets=[{...ticket([job('queued')]),id:'stale-ticket'}];
+ context.rememberIterationWork('chat_one','stale-ticket');
+ await context.pollBrainProgress();
+ tickets=[{...ticket([finished()]),id:'stale-ticket'}];
+ rePair=true;
+ await context.pollBrainProgress();
+ assert.equal(voice.length,2,'a result from a changed authorization cannot be spoken');
+ assert.equal(displayed.length,1,'a result from a changed authorization cannot enter chat');
 });
 
 test('attempt timestamps and retry bounces cannot narrate a second claim',()=>{
