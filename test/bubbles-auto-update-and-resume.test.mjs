@@ -21,7 +21,7 @@ test('existing safe update guards preserve drafts, photos, unsaved history and l
 });
 test('reloaded first-party apps request the current Bubbles build revision',()=>{
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html'])
-  assert.match(file(path),/\/bubbles-ai\.js\?v=20261104-iteration-credit1/);
+  assert.match(file(path),/\/bubbles-ai\.js\?v=20261105-brain-receipts1/);
 });
 test('a work receipt can resume only with a verified same-thread ticket',()=>{
  const src=file('bubbles-ai.js');

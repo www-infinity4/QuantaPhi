@@ -55,3 +55,11 @@ https://github.com/www-infinity4/QuantaPhi/issues/1192
 ### Same-session independent source review and CI correction
 
 A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after 92 focused tests. Credit activation remains held on the two reproducible recovery/provenance findings recorded in docs/BUBBLES-ITERATION-CREDIT.md. The ordinary-routing CI failures were stale literal-branch assertions plus a voice harness that counted the new non-executing intent proposal as a mutation; updated those fixtures while preserving owner/embedded/explicit-team assertions. No credit enablement or existing job permission was changed. Exact-head checks are rerun before any source promotion.
+
+## 2026-11-05 · continuation and chat receipt recovery
+
+- State `source_tested`, 🟡. Branch `fix/bubbles-brain-continuation-receipts-1192` from main `d5a1510d0dd338f97638f838f8c45e9adb608609`. One additional session; overall progress and remaining sessions unknown. No live lease was claimed for this patch, so lease ID, fence and expiry are null.
+- [Robot review #1697](https://github.com/www-infinity4/QuantaPhi/pull/1697) is merged evidence of a Brain-authored source job. The blocked work on this issue still needs same-chat signed execution acceptance.
+- Dispatch and claim now require the same integrated prerequisite state. A selected job can dispatch an eligible prerequisite within its existing ticket and repository; committed-only, cross-repository and security-held prerequisites remain gated.
+- Repository discovery now polls the existing authenticated GitHub receipt reader. Delayed source results and delegated work preserve the originating conversation if the owner changes chats during submission.
+- Local focused tests: 141 passed. Next action: run exact-head CI and obtain independent review of the task branch. Then verify a binding-preserving Brain release and one signed owner job from chat to execution receipt.

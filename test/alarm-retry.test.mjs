@@ -28,6 +28,8 @@ test('retry does not duplicate work already committed, merged or deployed',()=>{
 });
 test('retry respects dependency jobs, active runner evidence, and owner-only blocks',()=>{
  assert.equal(eligibleForRetry(job(),{now:t,deps:[job('queued')]}).reason,'dependency_pending');
+ assert.equal(eligibleForRetry(job(),{now:t,deps:[job('committed_unverified')]}).reason,'dependency_pending');
+ assert.equal(eligibleForRetry(job(),{now:t,deps:[job('merged_verified')]}).eligible,true);
  assert.equal(eligibleForRetry(job(),{now:t,deps:[job('complete')]}).eligible,true);
  const running={...job('working'),progress:{runUrl:'https://github.com/www-infinity4/QuantaPhi/actions/runs/1',attemptedAt:new Date(t-60000).toISOString()}};
  assert.equal(eligibleForRetry(running,{now:t}).reason,'recent_runner_receipt');

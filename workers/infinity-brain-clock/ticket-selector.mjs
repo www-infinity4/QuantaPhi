@@ -100,5 +100,5 @@ export function filterActiveTickets(candidates,{
   if(admission.eligible)allowed.push(candidate);
   else deferred.push({ticketId:candidate?.ticket?.id||'',jobId:candidate?.job?.id||'',reason:admission.reason});
  }
- return {allowed,deferred,examined:examined.length};
+ return {allowed,deferred,examined:examined.length,selectedDependencies};
 }

@@ -462,6 +462,45 @@ test('real BrainClock honors explicit owner selection for aged but eligible work
 });
 
 
+test('run-next dispatches only an eligible same-repository prerequisite of the requested job',async()=>{
+ const repository='www-infinity4/QuantaPhi',ticketId='IW-20261001-12345678';
+ const prerequisite={id:'TASK-1',repository,instructions:'Implement missing source',status:'queued'};
+ const requested={id:'TASK-2',repository,instructions:'Verify integrated source',status:'queued',dependencies:[prerequisite.id]};
+ const unrelated={id:'TASK-3',repository,instructions:'Unrelated work',status:'queued',queue_priority:100};
+ const ticket={id:ticketId,created_at:Date.now()-28*86400000};
+ const memory=new Map();
+ const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)};
+ const WORK_DB={prepare:()=>({bind(){return this},all:async()=>({results:[ticket]}),run:async()=>({meta:{changes:1}})})};
+ const clock=new BrainClock({storage},{WORK_DB});
+ let dispatches=0;
+ clock.dispatchRunner=async()=>{dispatches++;return {ok:true,status:'dispatch_accepted'}};
+ const next=async(...jobs)=>{
+  ticket.context_json=JSON.stringify({kind:'robot-directions',color_jobs:jobs});
+  const response=await clock.fetch(new Request('https://clock.internal/run-next',{
+   method:'POST',body:JSON.stringify({ticketId,jobId:requested.id})}));
+  return response.json();
+ };
+ for(const blocked of [
+  {...prerequisite,status:'committed_unverified'},
+  {...prerequisite,status:'blocked',progress:{blocker:'security_hold'}},
+  {...prerequisite,repository:'www-infinity4/Other'},
+ ]){
+  const result=await next(requested,blocked,unrelated);
+  assert.equal(result.status,'job_not_dispatchable');
+  assert.equal(result.reason,'dependency_pending');
+ }
+ assert.equal(dispatches,0);
+ assert.equal(memory.has('requested-next-job'),false);
+ const result=await next(requested,prerequisite,unrelated);
+ assert.equal(result.status,'queued_for_runner');
+ assert.equal(result.requestedJobId,requested.id);
+ assert.deepEqual(memory.get('requested-next-job'),{ticketId,jobId:prerequisite.id});
+ const claimed=await clock.runner(new Request('https://clock.internal/runner/claim',{
+  method:'POST',body:JSON.stringify({runId:'105',runnerRepository:'www-infinity4/Moltnook'})}));
+ assert.equal((await claimed.json()).lease.jobId,prerequisite.id);
+ assert.equal(dispatches,1);
+});
+
 test('BrainClock automatically rescues a blocked Quant AI ticket using pinned technical source evidence',async()=>{
  const oldFetch=globalThis.fetch,now=Date.now(),sha='a'.repeat(40),walletHash='f'.repeat(64);
  const task={id:'TASK-4',status:'blocked',queue_priority:95,repository:'www-infinity4/QuantaPhi',

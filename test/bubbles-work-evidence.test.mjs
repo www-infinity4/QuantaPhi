@@ -14,7 +14,7 @@ const overflow=ui.slice(ui.indexOf('async function maybeDelegateDirectOverflow('
 function harness({denied=false}={}){
  const posts=[];
  const ctx={workEvidenceModule,overflowChooser:chooseOverflow,brainTools,crypto:webcrypto,TextEncoder,JSON,Date,
-  activeCardEvidence:null,workButton:{disabled:false},workStatus:{},workText:{value:''},config:{role:'owner'},TICKETS:'https://brain.example',location:{origin:'https://quantaphi.org',pathname:'/bubbles.html'},
+  activeThread:'fixture-thread',activeCardEvidence:null,workButton:{disabled:false},workStatus:{},workText:{value:''},config:{role:'owner'},TICKETS:'https://brain.example',location:{origin:'https://quantaphi.org',pathname:'/bubbles.html'},
   CustomEvent:class {constructor(name,args){this.detail=args.detail;}},window:{dispatchEvent(){}},pollBrainProgress:async()=>{},recordBrainNotice(){},humanReplies:async()=>({workReply:()=> 'Request saved.'}),
   // The harness evaluates a bounded watcher slice; recovery helpers live outside it.
   rememberPendingGithubWork:(requestId,thread)=>{ctx.savedPending={requestId,thread}},
@@ -68,8 +68,8 @@ test('evidence is bounded, drops original bytes and never mutates base jobs',()=
 });
 test('both immediate and delayed receipt paths capture the same observation snapshot',()=>{
  assert.match(ui,/directGithubOperation\(args,\{ownerRequest:request,imageEvidence:imageWorkEvidence\}\)/);
- assert.match(ui,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation.request\|\|'',imageEvidence\)/);
- assert.match(ui,/maybeDelegateDirectOverflow\(result,operation,ownerRequest,imageEvidence\)/);
+ assert.match(ui,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation.request\|\|'',imageEvidence,receiptThread\)/);
+ assert.match(ui,/maybeDelegateDirectOverflow\(result,operation,ownerRequest,imageEvidence,receiptThread\)/);
  assert.match(ui,/maybeDelegateDirectOverflow\(result,args,request,imageWorkEvidence\)/);
  assert.match(ui,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
 });
@@ -77,18 +77,18 @@ test('both immediate and delayed receipt paths capture the same observation snap
 test('actual delayed receipt preserves observations and saves reply to its original conversation',async()=>{
  const {ctx,posts}=harness();
  let reads=0,resolveDone;const done=new Promise(resolve=>resolveDone=resolve);
- Object.assign(ctx,{activeThread:'original-thread',keepChat:true,ownerReady:true,pendingGithubReceipts:new Set(),setTimeout:fn=>fn(),
+ Object.assign(ctx,{activeThread:'new-thread',keepChat:true,ownerReady:true,pendingGithubReceipts:new Set(),setTimeout:fn=>fn(),
   githubReceipt:async()=>{reads++;if(reads===1)return {status:'working'};return {ok:false,status:'blocked',error:'direct_engineer_model_unavailable',requestId:'fixture-delayed-receipt'};},
   readThread:()=>[],THREAD_PREFIX:'thread:',save:(key,items)=>{ctx.saved={key,items};resolveDone();},syncCloudFolder:async()=>{},messages:[],display:()=>{throw Error('Must not display an old result in the new thread');},persistChat(){}});
  const watcher=ui.slice(ui.indexOf('function watchDirectGithubReceipt('),ui.indexOf('\nasync function directGithubOperation(',ui.indexOf('function watchDirectGithubReceipt(')));
  vm.runInContext(watcher,ctx);
- ctx.watchDirectGithubReceipt('fixture-delayed-receipt',{action:'assist',mode:'write',repository:'www-infinity4/QuantaPhi'},'Fix Bubbles','Image 1: original issue; Image 2: original issue');
- ctx.activeThread='new-thread';
+ ctx.watchDirectGithubReceipt('fixture-delayed-receipt',{action:'assist',mode:'write',repository:'www-infinity4/QuantaPhi'},'Fix Bubbles','Image 1: original issue; Image 2: original issue','original-thread');
  await done;
  assert.equal(reads,2);assert.equal(posts.length,1);
  assert.match(posts[0].body.context.image_observations.observations,/Image 2/);
  assert.equal(ctx.saved.key,'thread:original-thread');assert.equal(ctx.saved.items[0].sessionId,'original-thread');
  assert.equal(ctx.savedPending.thread,'original-thread');
+ assert.equal(ctx.activeIterationThreadId,'original-thread');
  assert.equal(ctx.clearedPending,'fixture-delayed-receipt');
  assert.equal(ctx.messages.length,0);
 });

@@ -1215,7 +1215,7 @@ async function suggestRepositoryTargets(request,preview=false){
        let read=await directGithubOperation(operation,{quiet:true});
        if(['read_file','read_repository'].includes(operation.action)&&read.requestId){
         for(let i=0;i<8&&['working','unconfirmed'].includes(read.status);i++){
-         await new Promise(resolve=>setTimeout(resolve,1000));read=await readGithubReceipt(read.requestId);
+         await new Promise(resolve=>setTimeout(resolve,1000));read=await githubReceipt(read.requestId);
         }
        }
        return read;
@@ -1268,7 +1268,7 @@ async function suggestRepositoryTargets(request,preview=false){
      let read=await directGithubOperation(operation,{quiet:true});
      if(['read_file','read_repository'].includes(operation.action)&&read.requestId){
       for(let i=0;i<8&&['working','unconfirmed'].includes(read.status);i++){
-       await new Promise(resolve=>setTimeout(resolve,1000));read=await readGithubReceipt(read.requestId);
+       await new Promise(resolve=>setTimeout(resolve,1000));read=await githubReceipt(read.requestId);
       }
      }
      return read;
@@ -3434,13 +3434,13 @@ async function githubReceipt(requestId){
 }
 // Direct GitHub jobs start asynchronously. Only a final persisted no-action
 // receipt can justify a fallback. Never replay an in-flight or ambiguous write.
-async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence=''){
+async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence='',receiptThread=activeThread){
  if(result?.ok!==false||result.status!=='blocked'||!operation)return null;
  try{
   const {chooseOverflow}=await import('/bubbles-dispatch-catalog.mjs?v=20261024-verified-overflow1');
   const overflow=chooseOverflow({result,operation,repository:operation.repository,request:ownerRequest});
   if(!overflow.delegate)return null;
-  const delegated=await submitRepositoryWork(ownerRequest,'explicit-direct-overflow',operation.repository,null,imageEvidence);
+  const delegated=await submitRepositoryWork(ownerRequest,'explicit-direct-overflow',operation.repository,null,imageEvidence,receiptThread);
   recordBrainNotice('Direct GitHub did not execute; Robot Brain accepted '+overflow.role+
    ' work for '+operation.repository+'. Source, CI and deployment remain unverified.');
   return 'Direct GitHub could not execute this request ('+String(result.error)+'). '+
@@ -3452,9 +3452,8 @@ async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEv
    String(error.message||error).slice(0,170)+'. No completed write is claimed.';
  }
 }
-function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence=''){
+function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence='',receiptThread=activeThread){
  if(pendingGithubReceipts.has(requestId))return;
- const receiptThread=activeThread;
  rememberPendingGithubWork(requestId,receiptThread);
  pendingGithubReceipts.add(requestId);
  void (async()=>{
@@ -3474,7 +3473,7 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
     publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
-    const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
+    const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence,receiptThread)||
      (await humanReplies()).githubReply(result);
     if(activeThread===receiptThread){
      display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
@@ -3548,8 +3547,8 @@ function publishSavedGithubIterations(result,thread){
 }
 async function directGithubOperation(operation,{quiet=false,ownerRequest='',imageEvidence=''}={}){
  if(embedded)throw Error('owner_tools_unavailable_in_embed');
- const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
  const receiptThread=typeof activeThread==='string'?activeThread:'';
+ const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
  if(typeof publishDirectGithubIteration==='function')
   publishDirectGithubIteration(operation,requestId,'tool_started',null,receiptThread);
  let result;
@@ -3570,7 +3569,7 @@ async function directGithubOperation(operation,{quiet=false,ownerRequest='',imag
  if(result.status==='working'||result.status==='unconfirmed'){
   if(typeof publishDirectGithubIteration==='function')
     publishDirectGithubIteration(operation,requestId,'tool_progress',result,receiptThread);
-  if(!quiet)watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'',imageEvidence);
+  if(!quiet)watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'',imageEvidence,receiptThread);
   return {...result,requestId,next:'Checking the durable receipt using this request ID. Tests, merge and deployment remain unverified.'};
  }
  if(typeof publishDirectGithubIteration==='function')
@@ -4104,6 +4103,7 @@ async function requestRunner(ticketId='',jobId=''){
  return result;
 }
 async function submitWork(request,approval='explicit-click',imageEvidence=''){
+ const receiptThread=activeThread;
  if(activeCardEvidence)cardWorkspaceInstance?.diagnose();
  const cardEvidenceSnapshot=activeCardEvidence?JSON.parse(JSON.stringify(activeCardEvidence)):null;
  // Resolve the real target before creating tickets. A guess never silently fans out.
@@ -4118,7 +4118,7 @@ async function submitWork(request,approval='explicit-click',imageEvidence=''){
  const results=[],failures=[];
  try{
   for(const repository of repositories){
-   try{results.push(await submitRepositoryWork(request,approval,repository,cardEvidenceSnapshot,imageEvidence));}
+   try{results.push(await submitRepositoryWork(request,approval,repository,cardEvidenceSnapshot,imageEvidence,receiptThread));}
    catch(error){failures.push(repository+': '+String(error.message||error));}
   }
   if(!results.length)throw Error(failures.join('; '));
@@ -4127,7 +4127,7 @@ async function submitWork(request,approval='explicit-click',imageEvidence=''){
   return {...results[0],repositories:results.map(result=>result.repository),tickets:results,batchSummary:summary};
  }finally{delete repositoryPicker.dataset.submitting;}
 }
-async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence,imageEvidence=''){
+async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence,imageEvidence='',receiptThread=activeThread){
  const headers=await verifiedOwnerHeaders();
  if(!brainTools)throw Error('Bubbles Brain tool helpers are not loaded.');
  if(workButton.disabled)throw Error('A work request is already being submitted.');
@@ -4146,13 +4146,13 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||'No confirmed request'));
   activeIterationTicketId=result.ticket.id;
-  activeIterationThreadId=typeof activeThread==='string'?activeThread:'';
+  activeIterationThreadId=receiptThread;
   ownerJobMarkers={};
   // Keep only a same-thread reference, never credentials or request text.
   // Always revalidate against the current authenticated owner's backend.
   try{sessionStorage.setItem(ACTIVE_WORK_REF,JSON.stringify({
    ticketId:result.ticket.id,thread:activeIterationThreadId,at:Date.now()}));}catch{}
-  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+  if(activeThread===receiptThread&&typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
    type:'job',repository,status:result.ticket.status,url:result.ticket.progress?.url||''}}));
   if(String(workText.value||'').trim()===request)workText.value='';
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs:result.ticket.context?.color_jobs||jobs}}));
