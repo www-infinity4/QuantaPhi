@@ -449,8 +449,8 @@ export default {
   // Protect first-party entry points from being framed by outside origins.
   // Do not change deliberate same-origin card embeds or the public Bubbles embed.
   if (route.repo === 'QuantaPhi' && ['/index.html','/website-viewer.html'].includes(route.sourcePath) && /text\/html/i.test(out.get('Content-Type') || '')) {
-   out.set('X-Frame-Options', 'SAMEORIGIN');
-   out.append('Content-Security-Policy', "frame-ancestors 'self'");
+   out.set('X-Frame-Options', 'DENY');
+   out.append('Content-Security-Policy', "frame-ancestors 'none'");
    out.set('X-Content-Type-Options', 'nosniff');
   }
   // Upstream GitHub headers prohibit even our own embedded suite pages.
