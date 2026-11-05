@@ -44,3 +44,12 @@ node --check gitcoin/gh-gitcoin.mjs
 ```
 
 The proposed isolated SQL schema can be checked with SQLite locally; **do not apply it to a live wallet** until server-side review. Follow issue #1250 and the existing Gitpal/Copilot security-release holds; do not describe this standalone phase as deployed or integrated with Quant AI or the Wallet.
+
+
+## Server settlement source (not deployed)
+
+`settlement.mjs` runs `evaluateClaim` using authenticated GitHub and Quant AI adapters before constructing a transactional D1 award batch. Every verified line requires an attribution evidence ID; human credit follows the verified user's wallet, while a Bubbles/provider job follows its independently signed job attribution. Each qualifying new source line produces exactly **1 GIT**, with no dollar exchange rate.
+
+Receipt replay cannot credit twice or select a different recipient. A historical repository/path/content fingerprint prevents delete-and-re-add reminting; SQL backfills fingerprints from earlier pilot awards without editing those awards. Failed checks, missing attribution and quality rejection cannot award a line. Readback verifies the actual stored receipt before reporting settled units. Batches above 200 verified lines fail before writes; larger-job batching requires a reviewed runtime adapter.
+
+This module is server source, with real SQLite tests, not a deployed API. Production GitHub/Quant AI identity adapters, approved D1 migration, wallet UI integration, signed Bubbles operator job routing, independent security review, protected release and two-user live acceptance remain required. It cannot cause a payment merely by running the CLI or uploading a manifest. Existing Copilot/Gitpal security holds remain.

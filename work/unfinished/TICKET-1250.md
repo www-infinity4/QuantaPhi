@@ -126,3 +126,12 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 - **Security:** no token minting, no D1 migration, no provider payment, no existing wallet mutation, no automatic transfer or bypass of Gitpro/Copilot holds. These components prepare candidate records and a fail-closed server verification interface; the actual signed GitHub+Quant AI+wallet adapter remains to be built.
 - **Lease:** no external coordinator lease claimed; lease_id/fence/task_session_id null. No owner browser or existing security review controlled by this session.
 - **Next single action:** obtain exact-head PR CI and independent security review for this branch, then implement signed server-side Quant AI verification and authenticated idempotent D1 settlement on a reviewed service branch.
+
+
+## 2026-11-05 UTC · authenticated GIT settlement source continuation
+
+- Continued existing GIT PR #1675 rather than creating another coin collector. Added server-only settlement after independent immutable diff/default-branch/CI/Quant AI checks, with required attribution evidence and exactly 1 GIT per verified line. Human and signed provider/operator recipients remain distinct.
+- Transactional isolated D1 statements, immutable awards, recipient-conflict guards, historical repository/path/content dedupe, prior-pilot fingerprint backfill, and readback. Replay and delete/re-add do not remint the same source. Bound each call to 200 verified lines; no silent partial truncation.
+- Local tests: 14/14 GIT tests passed, including full settlement and readback against real SQLite, duplicate retries, historical re-add, recipient conflict and failed verification before any write. Exact-head GitHub CI remains to be recorded on the PR.
+- YELLOW / source_tested / review_pending; overall progress and remaining sessions unknown. One additional documented source session. No coordinator lease claimed; lease_id/fence/task_session_id null. No deployment, database mutation, live GIT issue, transfer, cash payout, provider adoption, or bypass of Gitpal/Copilot holds.
+- Next action: independent exact-head review and CI, then implement the production authenticated GitHub/Quant AI adapters and reviewed wallet runtime route before attempting a live credit.

@@ -1,4 +1,4 @@
-import {buildManifest} from './line-receipts.mjs';
+import {buildManifest,sha256} from './line-receipts.mjs';
 
 const fail=code=>{throw new Error(code)};
 // Server-only primitive: callers supply a previously authenticated principal and
@@ -35,6 +35,8 @@ export async function evaluateClaim(manifest,{principal,github,quantAI}={}){
  return {
   version:1,currency:'GIT',repo:canonical.repo,commit:canonical.commit,
   review_id:quality.reviewId,attribution_source:attribution.source,recipient_wallet_id:attribution.recipient,
+  github_evidence_id:'github-diff:'+sha256(verifiedDiff),
+  attribution_evidence_id:typeof attribution.evidenceId==='string'?attribution.evidenceId:null,
   status:verified===0?'rejected':verified===candidates.length?'verified':'partially_verified',
   lines
  };
