@@ -41,8 +41,9 @@ test('program IDs and source hosts reject injection and mismatches', () => {
 
 test('Gary landing page uses real QuantaPhi Bubbles and does not demand an identity to chat', () => {
   const html = readFileSync(new URL('../gary/index.html', import.meta.url), 'utf8');
-  assert.match(html,/src="\/bubbles-embed\.js"/);
-  assert.match(html,/data-bubble-id="gary-westerns-2026"/);
+  const lounge = readFileSync(new URL('../gary/lounge.mjs', import.meta.url), 'utf8');
+  assert.match(lounge,/script\.src='\/bubbles-embed\.js'/);
+  assert.match(lounge,/script\.dataset\.bubbleId='gary-westerns-2026'/);
   assert.match(html,/Happy Birthday, Gary!/);
   assert.match(html,/Local memory is optional/);
   assert.match(html,/verified wallet/);
