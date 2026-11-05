@@ -1,0 +1,17 @@
+/* Original Bubbles/coin cards fit the existing Oracle carousel. */
+#bubbleBitQuickCard,#gptCoinConceptCard{background:#202b36;color:#e8e5de;border:1px solid #425365;border-radius:19px;padding:18px;max-width:840px;box-shadow:0 5px 23px #141d291a;font:500 16px/1.55 system-ui,-apple-system,Roboto,sans-serif;letter-spacing:.17px}
+#bubbleBitQuickCard *,#gptCoinConceptCard *{box-sizing:border-box}
+#bubbleBitQuickCard h2,#gptCoinConceptCard h2{font-size:clamp(23px,6vw,30px);line-height:1.22;color:#f0eee9;margin:10px 0}
+#bubbleBitQuickCard p,#gptCoinConceptCard p{margin:8px 0 13px;color:#d3dbe0}
+#bubbleBitQuickCard a,#gptCoinConceptCard a{color:#c4ddf0;font-weight:700;text-underline-offset:3px}
+#bubbleBitQuickCard button,#gptCoinConceptCard button{border:1px solid #a5c0ce;background:#d6e5eb;color:#1d2a32;border-radius:11px;font:700 16px system-ui;padding:12px 16px;min-height:48px;margin:6px 9px 6px 0}
+#bubbleBitQuickCard button:focus-visible,#gptCoinConceptCard button:focus-visible,#bubbleBitQuickCard a:focus-visible,#gptCoinConceptCard a:focus-visible{outline:3px solid #eecb8c;outline-offset:3px}
+.bit-card-image{height:128px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#324958,#425667);border-radius:14px;margin:11px 0 15px}
+.bit-card-image svg{height:112px;max-width:210px;fill:none;stroke:#e3e7e1;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+.bit-card-eyebrow{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;font-weight:750;color:#bfcdd6}
+.bit-card-note{font-size:13px!important;color:#c4cbd2!important}
+#bubbleBitQuickCard [data-bubblebit-status]{display:block;font-size:13px;min-height:20px;color:#d5dce2}
+#bubbleBitQuickCard [data-bubblebit-output]{white-space:pre-wrap;overflow-wrap:anywhere;max-height:240px;overflow:auto;padding:12px;border-radius:9px;background:#131d26;color:#e2e9e0;font:13px/1.5 ui-monospace,monospace}
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app>:is(#bubbleBitQuickCard,#gptCoinConceptCard){display:none!important}
+.oracle-card-deck-stage>:is(#bubbleBitQuickCard,#gptCoinConceptCard){display:block!important;margin:0!important}
+@media(max-width:370px){#bubbleBitQuickCard,#gptCoinConceptCard{padding:14px}}
