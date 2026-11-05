@@ -7,7 +7,7 @@ const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 test('radio directory presents all fifty states without inventing local stations',()=>{
  const js=read('iowa-live-radio-cards.js');
  for(const code of ['AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY']) {
-  assert.match(js,new RegExp('\\b'+code+':'),code+' must be available in the state picker');
+  assert.match(js,new RegExp('"'+code+'"\\s*:'),code+' must be available in the state picker');
  }
  assert.match(js,/ilr-state-select/);
  assert.match(js,/No sourced stations are listed yet/);
@@ -30,11 +30,11 @@ test('traffic snapshot stays a marked verified record rather than fake live metr
  assert.equal(d.scope,'recorded_since');
  assert.equal(d.historicComplete,false);
  assert.equal(d.refreshConfigured,false);
- assert.equal(d.through,'2026-11-03');
- assert.equal(d.requests,1416815);
- assert.equal(d.pageViews,521108);
- assert.equal(d.recordedDays,31);
- assert.ok(Date.parse(d.fetchedAt)>=Date.parse('2026-11-03T00:00:00Z'));
+ assert.equal(d.through,'2026-11-05');
+ assert.equal(d.requests,1942571);
+ assert.equal(d.pageViews,591747);
+ assert.equal(d.recordedDays,33);
+ assert.ok(Date.parse(d.fetchedAt)>=Date.parse('2026-11-05T00:00:00Z'));
  assert.ok(d.last7Days.requests<=d.requests);
  assert.ok(d.last7Days.pageViews<=d.pageViews);
 });
