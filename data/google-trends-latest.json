@@ -3,51 +3,156 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T04:31:19.072277Z",
+  "checked_at": "2026-11-05T05:01:38.943313Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "joshua wong",
+      "query": "spurs vs mavs",
       "approx_searches": "200+",
-      "published_at": "2026-11-05T04:10:00Z",
+      "published_at": "2026-11-05T04:40:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/04/china/hong-kong-china-joshua-wong-sentence-hnk-intl",
-        "https://apnews.com/article/hong-kong-joshua-wong-sentencing-national-security-f4b08dd23bab9912569e5cabd990c1ef",
-        "https://www.bbc.com/news/articles/cwp9g3rlp8jlo"
+        "https://www.espn.com/nba/game/_/gameId/401909934/lakers-kings",
+        "https://www.espn.com/nba/game/_/gameId/401909913/kings-mavericks",
+        "https://www.espn.com/nba/game/_/gameId/401909907/thunder-cavaliers"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3hUZv8PnH8Knz6iysh2iASMgGexRbvAIWGXpTUCNTj19bpXpTWPmAOhw9jYY",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfKm_FOWPAb46sU8uom3P-8lIJkKezEQuZLjE1GbodX_i8wArX3srILGj85A",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/04/china/hong-kong-china-joshua-wong-sentence-hnk-intl",
-          "title": "Hong Kong democracy campaigner Joshua Wong handed another 10 years in jail",
-          "publisher": "CNN",
+          "url": "https://www.espn.com/nba/game/_/gameId/401909934/lakers-kings",
+          "title": "Lakers vs. Kings (Nov 4, 2026) Live Score",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3hUZv8PnH8Knz6iysh2iASMgGexRbvAIWGXpTUCNTj19bpXpTWPmAOhw9jYY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfKm_FOWPAb46sU8uom3P-8lIJkKezEQuZLjE1GbodX_i8wArX3srILGj85A"
         },
         {
-          "url": "https://apnews.com/article/hong-kong-joshua-wong-sentencing-national-security-f4b08dd23bab9912569e5cabd990c1ef",
-          "title": "Hong Kong activist Joshua Wong sentenced to 10 years in prison in 2nd national security case",
-          "publisher": "AP News",
+          "url": "https://www.espn.com/nba/game/_/gameId/401909913/kings-mavericks",
+          "title": "Kings 115-100 Mavericks (Nov 2, 2026) Final Score",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk9ach4ywkT_5ON6rEb1RM9GiWMWmNFl8pWRCm0Z8GcugiqM0DAMZ7I-4RJtw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRP1BueH0lqgTU8QmJWPnG4jrnvJfwyJEiApXo7oJ2Q28y1hVfyjZHBAuLBTqs"
         },
         {
-          "url": "https://www.bbc.com/news/articles/cwp9g3rlp8jlo",
-          "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
-          "publisher": "BBC",
+          "url": "https://www.espn.com/nba/game/_/gameId/401909907/thunder-cavaliers",
+          "title": "Thunder 117-112 Cavaliers (Nov 2, 2026) Final Score",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrVoa5MWp0a9noTM5MPRXwR5kqsb8pfbnzm8KOsxADl5v37K8p9N_4kfanSA4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8_ilRdz7Myj7gW-To4V9PTOaB9k_B8Gp3cXr2aThrNncDTEAbFrG_ySk1Nlk"
         }
       ]
     },
     {
-      "query": "powerball drawing",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T04:00:00Z",
+      "query": "portland trail blazers vs phoenix suns match player stats",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T04:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/sports/nba/event/2026/3019178/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=4",
+        "https://ripcityproject.com/deni-avdija-building-all-star-breakout-making-blazers-contenders",
+        "https://www.espn.com.au/video/clip/_/id/50365117/deni-avdija-gets-basket-plus-foul"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBMB6LH3wrctLs5aMRk3OEUBpJr3jUoFpW5DgavHs374RUFHnkXK8goU-qERs",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/sports/nba/event/2026/3019178/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=4",
+          "title": "Portland Trail Blazers at Phoenix Suns - NBA Game Summary - Nov 04, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBMB6LH3wrctLs5aMRk3OEUBpJr3jUoFpW5DgavHs374RUFHnkXK8goU-qERs"
+        },
+        {
+          "url": "https://ripcityproject.com/deni-avdija-building-all-star-breakout-making-blazers-contenders",
+          "title": "Deni Avdija is building on his All-Star breakout by making the Blazers contenders",
+          "publisher": "Rip City Project",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQO-dkJG0oBo_x5GMyC8bqy4oNfk_sAsXoop19Nxn7AdWX8gHMx7mhHHls8Qwg"
+        },
+        {
+          "url": "https://www.espn.com.au/video/clip/_/id/50365117/deni-avdija-gets-basket-plus-foul",
+          "title": "Deni Avdija gets the basket plus the foul",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8DkcoE5HyTyvjH0OB_TSwsv4SKTQJ-QJH4v3KnA9CIJYEnp6SDiyZZXUuYgk"
+        }
+      ]
+    },
+    {
+      "query": "miami heat vs la clippers match player stats",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T04:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7754132/2026/11/04/heat-vs-clippers-stream-how-to-watch-nov-4/",
+        "https://interaktiv.tagesanzeiger.ch/2016/plaine-morte/panos/camp/camp.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vdHJhdmlzLWF1c3Rpbi5naXRodWIuaW8vZW5tL2VudS54bWwiLz48L2tycGFubz4=&id=video-miami-heat-vs-los-angeles-clippers-nba-basketball-lie-en-rvsqxbf",
+        "https://www.wvnews.com/sports/pro/heat-clippers-basketball/image_02ba8f2f-9540-5bdf-aaa0-859264db94e6.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiipixUBgnMyY7Ai95SI6iqa3sG7FhVk34rwcVV_u9dtfB2FXwPur6E6CRVWY",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7754132/2026/11/04/heat-vs-clippers-stream-how-to-watch-nov-4/",
+          "title": "How to watch Heat vs. Clippers: TV channel and streaming options for November 4",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiipixUBgnMyY7Ai95SI6iqa3sG7FhVk34rwcVV_u9dtfB2FXwPur6E6CRVWY"
+        },
+        {
+          "url": "https://interaktiv.tagesanzeiger.ch/2016/plaine-morte/panos/camp/camp.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vdHJhdmlzLWF1c3Rpbi5naXRodWIuaW8vZW5tL2VudS54bWwiLz48L2tycGFubz4=&id=video-miami-heat-vs-los-angeles-clippers-nba-basketball-lie-en-rvsqxbf",
+          "title": "Miami Heat vs Los Angeles Clippers NBA Basketball live: Miami Heat vs Los Angeles Clippers NBA Basketball look to seize control of thrilling Miami Heat vs Los Angeles Clippers NBA ",
+          "publisher": "tagesanzeiger.ch",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIN0P2ac3Gske8_fPiIEAEU2naXljZn8SiRPs4bafK6mASvywMoUZatOPmhO0"
+        },
+        {
+          "url": "https://www.wvnews.com/sports/pro/heat-clippers-basketball/image_02ba8f2f-9540-5bdf-aaa0-859264db94e6.html",
+          "title": "Heat Clippers Basketball",
+          "publisher": "WV News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWUhtaugi9dmHXLGuDGnIHqHS_ApocM23uDbCWIFiYy5wZBsDo3rUxG0RM6Y"
+        }
+      ]
+    },
+    {
+      "query": "macklin celebrini",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T04:30:00Z",
+      "related_news_urls": [
+        "https://www.dailydemocrat.com/2026/11/03/macklin-celebrini-san-jose-sharks-los-angeles-kings-ryan-warsofsky/",
+        "https://www.nhl.com/news/nhl-fanatics-hometown-remix-jersey-descriptions",
+        "https://nypost.com/2026/11/04/sports/islanders-reviving-once-hated-fisherman-logo/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcVz5bRpACacWagsBTRZO9PnH6cnk3MbrydUoHZCpswFOkz90-N7BuAhzUu3o",
+      "image_credit": "Daily Democrat",
+      "news": [
+        {
+          "url": "https://www.dailydemocrat.com/2026/11/03/macklin-celebrini-san-jose-sharks-los-angeles-kings-ryan-warsofsky/",
+          "title": "Why Macklin Celebrini believes the Sharks’ scoring slump will end soon",
+          "publisher": "Daily Democrat",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcVz5bRpACacWagsBTRZO9PnH6cnk3MbrydUoHZCpswFOkz90-N7BuAhzUu3o"
+        },
+        {
+          "url": "https://www.nhl.com/news/nhl-fanatics-hometown-remix-jersey-descriptions",
+          "title": "Hometown Remix: A look at all 32 NHL jerseys",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0u2c8ty66YugsaqimdecC4JgjgQ9qZjF-GeID0Wd-_GvrPAk-pRIGd0VocRQ"
+        },
+        {
+          "url": "https://nypost.com/2026/11/04/sports/islanders-reviving-once-hated-fisherman-logo/",
+          "title": "Islanders reviving once-hated fisherman logo",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnkoSCBKTUPrcvX1Kn6ThiGYG3WLZSRnpGu2AFFsUEOXJJMCnVtzXYT-C-RQ8"
+        }
+      ]
+    },
+    {
+      "query": "powerball numbers",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-05T04:20:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/04/us/powerball-jackpot-lottery",
-        "https://www.yahoo.com/news/us/articles/powerball-winning-numbers-wednesday-nov-030808775.html",
+        "https://www.yahoo.com/news/articles/powerball-numbers-wednesdays-drawing-040341221.html",
         "https://www.newsnationnow.com/business/your-money/powerball-jackpot-one-of-largest-ever/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpvjG1q977l3PwAdlV7Fm-iGj4r-5pX5OvQMDmJlp0zWgBO01NMO92PG0wGxg",
@@ -61,11 +166,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpvjG1q977l3PwAdlV7Fm-iGj4r-5pX5OvQMDmJlp0zWgBO01NMO92PG0wGxg"
         },
         {
-          "url": "https://www.yahoo.com/news/us/articles/powerball-winning-numbers-wednesday-nov-030808775.html",
-          "title": "Powerball winning numbers for Wednesday, Nov. 4. Check your tickets",
+          "url": "https://www.yahoo.com/news/articles/powerball-numbers-wednesdays-drawing-040341221.html",
+          "title": "Powerball numbers for Wednesday's drawing",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKLkyE48gReFtvq7TRTwfJH1OLHpzUxuUn_d92-s0ZkX7tzGxo-RyAnRAMq1g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0LORY52Fpm-DVK7rZMSDM0yr2XHxSn14ZGRflqEDvdI0BPI3GE7Ow79YIZKc"
         },
         {
           "url": "https://www.newsnationnow.com/business/your-money/powerball-jackpot-one-of-largest-ever/",
@@ -77,282 +182,177 @@
       ]
     },
     {
-      "query": "derik queen",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T04:00:00Z",
+      "query": "bryce hopkins",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T04:20:00Z",
       "related_news_urls": [
-        "https://www.rotowire.com/basketball/headlines/derik-queen-news-stuffs-stat-sheet-wednesday-537624",
-        "https://www.nba.com/pelicans/videos/derik-queen-pelicans-vs-nuggets-postgame-interview-10-28-26",
-        "https://www.cbssports.com/fantasy/basketball/news/pelicans-derik-queen-drops-season-high-20-points/"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/ajay-mitchell-has-23-7-4-line-in-win-over-cavaliers",
+        "https://heavy.com/sports/nba/oklahoma-city-thunder/all-star-due-to-jalen-williams-injury/",
+        "https://sports.yahoo.com/videos/mitchell-x-factor-help-heal-001514201.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgNQBAWS_fApVh3jW0ATn0dCr8qKBeZM4NaPP1O63GEcAH-B343uKpknmxGE",
-      "image_credit": "RotoWire",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeiOu-ggr8UvOf5oHJNlEi1Fa0L1p03tea0pXyBK092OcrS0t8gXCaCSVuR2c",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.rotowire.com/basketball/headlines/derik-queen-news-stuffs-stat-sheet-wednesday-537624",
-          "title": "Derik Queen News: Stuffs stat sheet Wednesday",
-          "publisher": "RotoWire",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/ajay-mitchell-has-23-7-4-line-in-win-over-cavaliers",
+          "title": "Ajay Mitchell has 23/7/4 line in win over Cavaliers",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgNQBAWS_fApVh3jW0ATn0dCr8qKBeZM4NaPP1O63GEcAH-B343uKpknmxGE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeiOu-ggr8UvOf5oHJNlEi1Fa0L1p03tea0pXyBK092OcrS0t8gXCaCSVuR2c"
         },
         {
-          "url": "https://www.nba.com/pelicans/videos/derik-queen-pelicans-vs-nuggets-postgame-interview-10-28-26",
-          "title": "Derik Queen | Pelicans vs Nuggets Postgame Interview 10/28/26",
-          "publisher": "NBA.com",
+          "url": "https://heavy.com/sports/nba/oklahoma-city-thunder/all-star-due-to-jalen-williams-injury/",
+          "title": "Thunder Guard Projected To Be All-Star This Season Due To Jalen Williams Injury",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMNa-51eXnw9YFvsFpIjiqB-YVDP6GVycb1mQZkIgOypTFau6zssO-_RzO0k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqLqyCYD0na-gqii3lKB_yz9HnE68wpVGIRfhWYWqeeIq1wZo-k8w3KUsFuo4"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/pelicans-derik-queen-drops-season-high-20-points/",
-          "title": "Pelicans' Derik Queen: Drops season-high 20 points",
-          "publisher": "CBS Sports",
+          "url": "https://sports.yahoo.com/videos/mitchell-x-factor-help-heal-001514201.html",
+          "title": "Is Mitchell the X-Factor to help heal Thunder?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzyLrbvzGfFUfw42YAFgMK0sSN-qkeaFFqSWeRL1u4outWchnKdi5tkkrxutc"
         }
       ]
     },
     {
-      "query": "one piece 1198",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T04:00:00Z",
+      "query": "nikola jokić",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T04:20:00Z",
       "related_news_urls": [
-        "https://gulfnews.com/entertainment/one-piece-chapter-1198-spoilers-luffys-feral-new-form-debuts-as-imu-crushes-loki-1.500735157",
-        "https://www.cbr.com/one-piece-chapter-1197-sanji-conqueror-haki-shield/",
-        "https://comicbook.com/anime/feature/almost-30-years-later-one-piece-finally-gives-sanji-the-power-he-needed-the-most/"
+        "https://bleacherreport.com/articles/25529282-nikola-jokics-trade-status-discussed-nba-exec-amid-nuggets-struggles-start-2026-season",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/04/executives-watching-nikola-jokic-situation-ahead-of-next-summer-i-think-people-are-paying-attention/92616640007/",
+        "https://www.yardbarker.com/nba/articles/dallas_mavericks_kyrie_irving_named_among_stars_rival_nba_executives_are_monitoring/s1_17810_44516672"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcW7kdfxs-rBufaqBI7q73i7ahKxMVXlnAoDjdS7ZQ1cOdmUvL9Op5udM8vxw",
-      "image_credit": "Gulf News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYYzXAVQajTqkzHRffQDR8HRv-BKP85E8qo054HVYTvZ-VsHv0czNpRsYeOLE",
+      "image_credit": "Bleacher Report",
       "news": [
         {
-          "url": "https://gulfnews.com/entertainment/one-piece-chapter-1198-spoilers-luffys-feral-new-form-debuts-as-imu-crushes-loki-1.500735157",
-          "title": "One Piece Chapter 1198 spoilers: Luffy's feral new form debuts, as Imu crushes Loki",
-          "publisher": "Gulf News",
+          "url": "https://bleacherreport.com/articles/25529282-nikola-jokics-trade-status-discussed-nba-exec-amid-nuggets-struggles-start-2026-season",
+          "title": "Nikola Jokic's Trade Status Discussed by NBA Exec Amid Nuggets' Struggles to Start 2026 Season",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcW7kdfxs-rBufaqBI7q73i7ahKxMVXlnAoDjdS7ZQ1cOdmUvL9Op5udM8vxw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYYzXAVQajTqkzHRffQDR8HRv-BKP85E8qo054HVYTvZ-VsHv0czNpRsYeOLE"
         },
         {
-          "url": "https://www.cbr.com/one-piece-chapter-1197-sanji-conqueror-haki-shield/",
-          "title": "One Piece Officially Appoints the Pirate King's Spear & Shield | Review",
-          "publisher": "Comic Book Resources",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/04/executives-watching-nikola-jokic-situation-ahead-of-next-summer-i-think-people-are-paying-attention/92616640007/",
+          "title": "Executives watching Nikola Jokic situation ahead of next summer: 'I think people are paying attention'",
+          "publisher": "HoopsHype",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc4Bo63lBK4RJ-B0CMNyWI8tSeHV4m7u2zDrjUqmZnoDiJuk3__RKJ3GUZ9HY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-85LuF2NQShlHURxCvTmhxCS1X4_QP-XPmHgJYnV3jSQUUMwFYYNdY7Q6K2Q"
         },
         {
-          "url": "https://comicbook.com/anime/feature/almost-30-years-later-one-piece-finally-gives-sanji-the-power-he-needed-the-most/",
-          "title": "Almost 30 Years Later, One Piece Finally Gives Sanji the Power He Needed the Most",
-          "publisher": "ComicBook.com",
+          "url": "https://www.yardbarker.com/nba/articles/dallas_mavericks_kyrie_irving_named_among_stars_rival_nba_executives_are_monitoring/s1_17810_44516672",
+          "title": "Dallas Mavericks' Kyrie Irving Named Among Stars Rival NBA Executives Are Monitoring",
+          "publisher": "Yardbarker",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEW3cGxUyRq---SjDJ_cMpvDtOb1V_pSxre-WHJdUk1OyXiz7Bwl7aTYeGESg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG8VQnzhsVKxovXguu_PX5dI6_cpBII40ah1_lPKQiHgOIgnurklvgV461gwc"
         }
       ]
     },
     {
-      "query": "nba games tomorrow",
+      "query": "芒果tv",
       "approx_searches": "200+",
-      "published_at": "2026-11-05T04:00:00Z",
+      "published_at": "2026-11-05T04:20:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/nba-sits-out-election-day-while-other-sports-leagues-go-about-business-usual",
-        "https://www.nytimes.com/athletic/7747760/2026/11/03/nba-games-schedule-midterm-election-day/",
-        "https://www.nba.com/news/nba-pauses-for-election-day-2026"
+        "https://3g.china.com/act/ent/11005281/20261104/49839033.html",
+        "https://www.sina.cn/news/detail/5361619613780261.html",
+        "https://wap.eastmoney.com/a/202611043922331219.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJMrJcp3Myu-nN90RptOGHuJpiR9vGwhZoiIyJ4pdsew1vuZD4uDVcH8mX4QU",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO4cbVp_mfVD3L-JS7mjI3ibQtcWNnzCZwmhcyu5xF3_LPAABTUNDWJpXkh_Y",
+      "image_credit": "中华网",
       "news": [
         {
-          "url": "https://www.foxnews.com/outkick-sports/nba-sits-out-election-day-while-other-sports-leagues-go-about-business-usual",
-          "title": "NBA sits out Election Day yet again while other sports leagues go about business as usual | OutKick",
-          "publisher": "Fox News",
+          "url": "https://3g.china.com/act/ent/11005281/20261104/49839033.html",
+          "title": "今天是太阳雨定档 青春里的温柔与风雨",
+          "publisher": "中华网",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJMrJcp3Myu-nN90RptOGHuJpiR9vGwhZoiIyJ4pdsew1vuZD4uDVcH8mX4QU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO4cbVp_mfVD3L-JS7mjI3ibQtcWNnzCZwmhcyu5xF3_LPAABTUNDWJpXkh_Y"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7747760/2026/11/03/nba-games-schedule-midterm-election-day/",
-          "title": "NBA schedule takes a pause for Election Day. Here’s why the league doesn’t play - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.sina.cn/news/detail/5361619613780261.html",
+          "title": "敢给创意试错机会，难怪芒果台今年连秋冬都有爆款|湖南卫视|芒果台|爆款综艺|创新_新浪新闻",
+          "publisher": "新浪网",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKBL55L803TuW7BPGw_ZVEziYTiy1IbuqsLEezhN_fWHs60XXhZqgztD7ozVM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUA46-tdy3RAyheSzYNGTuGqthpmC1hJ_Bmr3S8o9s5DApgFNB4v7r52ej-o"
         },
         {
-          "url": "https://www.nba.com/news/nba-pauses-for-election-day-2026",
-          "title": "NBA pauses for Election Day, urging Americans to vote and make their voices heard",
-          "publisher": "NBA.com",
+          "url": "https://wap.eastmoney.com/a/202611043922331219.html",
+          "title": "AI漫剧概念大火，芒果超媒股价大涨，市值超560亿元！知名编剧：大多数制作方是赔钱的",
+          "publisher": "东方财富",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeeWQ4SPXTMA5KDIYpH9MWePBGpiNGbnQb1e3xhzpiVcFhsEErU62YibYz0gg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEBmeup-r_HddOvKLgXeat-axFRWebhN2FhTSKxabiE4q9uuFqP277MV-IeU"
         }
       ]
     },
     {
-      "query": "victor wembanyama",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T03:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/victor-wembanyama-reaching-inhuman-status-230033191.html",
-        "https://airalamo.com/spurs-still-havent-fully-unlocked-victor-wembanyamas-playmaking",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/victor-wembanyama-has-12-11-5-1-3-line-in-win"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRcJvgGI7BS0ZZCSAThu3hfuXhpySw7FD-ITolHdMzAtfRowZ8um9cibYkLWE",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/victor-wembanyama-reaching-inhuman-status-230033191.html",
-          "title": "Victor Wembanyama Reaching Inhuman Status in Spurs' 4-Game Win Streak",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRcJvgGI7BS0ZZCSAThu3hfuXhpySw7FD-ITolHdMzAtfRowZ8um9cibYkLWE"
-        },
-        {
-          "url": "https://airalamo.com/spurs-still-havent-fully-unlocked-victor-wembanyamas-playmaking",
-          "title": "Spurs still haven't fully unlocked Victor Wembanyama's playmaking",
-          "publisher": "Air Alamo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiseqhAqunICNtztbv_sy9OAfNnPXmIQhHlTGDjxB9seFRC_qu_K9BZCrjnFs"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/victor-wembanyama-has-12-11-5-1-3-line-in-win",
-          "title": "Victor Wembanyama has 12/11/5/1/3 line in win",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLblSgBQVviYHo2zbsNleWUizMbwUfU2zPNDqhmLlo8BwyjmUK4AccuLZ2rKo"
-        }
-      ]
-    },
-    {
-      "query": "keyonte george",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T03:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50384551/keyonte-george-1-bucket",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/keyonte-george-with-a-monster-39-and-9-dimes",
-        "https://www.rotowire.com/basketball/headlines/keyonte-george-news-struggles-through-rough-shooting-night-537415"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9xEmF-XvG05VNULk1U4xHQ-7mCyG3OM8RvJlmFYknvMcNATa66g5Hn1N7aUE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50384551/keyonte-george-1-bucket",
-          "title": "Keyonte George with the and-1 bucket",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9xEmF-XvG05VNULk1U4xHQ-7mCyG3OM8RvJlmFYknvMcNATa66g5Hn1N7aUE"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/keyonte-george-with-a-monster-39-and-9-dimes",
-          "title": "Keyonte George with a monster 39 and 9 dimes",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT403-71z6piZr0DyZmHanQfymRsA8vB-oR-Gi7QDCqMStLwsRyvr9tmL3EZPE"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/keyonte-george-news-struggles-through-rough-shooting-night-537415",
-          "title": "Keyonte George News: Struggles through rough shooting night",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0zEZR-nYDf1hQ2RFHqUjAFRlSsvfd1ORyxmhsaE1dqUsq1_vanXsKdXB571o"
-        }
-      ]
-    },
-    {
-      "query": "dusty may",
+      "query": "domantas sabonis",
       "approx_searches": "500+",
-      "published_at": "2026-11-05T03:50:00Z",
+      "published_at": "2026-11-05T04:20:00Z",
       "related_news_urls": [
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/04/dusty-may-says-santi-aldama-is-very-very-close-to/92619186007/",
-        "https://sports.yahoo.com/articles/cooper-flagg-drops-rave-review-205108539.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/04/its-been-great-flagg-said-of-his-bond-with-may/92611074007/"
+        "https://bleacherreport.com/articles/25528554-trade-packages-and-landing-spots-sacramento-kings-star-domantas-sabonis",
+        "https://www.slcdunk.com/jazz-analysis/70521/5-reasons-for-the-jazz-to-consider-a-lauri-markkanen-domantas-sabonis-swap",
+        "https://sactownsports.com/nba/sacramento-kings/darius-acuff-sabonis-2"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHhMqro606gu3YzgJt4AzXcMA9uaPggjuY_8ivpiXzOJUGhO7Nua08qa-AGXk",
-      "image_credit": "HoopsHype",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWqJwrPJ2AQrDOBQ38zTkB4bVKQtBT8qIYboVPU1t5YhpRhBsWLnttzTqn07Y",
+      "image_credit": "Bleacher Report",
       "news": [
         {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/04/dusty-may-says-santi-aldama-is-very-very-close-to/92619186007/",
-          "title": "Dusty May says Santi Aldama is “very, very close,” to …",
-          "publisher": "HoopsHype",
+          "url": "https://bleacherreport.com/articles/25528554-trade-packages-and-landing-spots-sacramento-kings-star-domantas-sabonis",
+          "title": "Trade Packages and Landing Spots for Sacramento Kings Star Domantas Sabonis",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHhMqro606gu3YzgJt4AzXcMA9uaPggjuY_8ivpiXzOJUGhO7Nua08qa-AGXk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWqJwrPJ2AQrDOBQ38zTkB4bVKQtBT8qIYboVPU1t5YhpRhBsWLnttzTqn07Y"
         },
         {
-          "url": "https://sports.yahoo.com/articles/cooper-flagg-drops-rave-review-205108539.html",
-          "title": "Cooper Flagg drops rave review on early Dusty May pairing",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.slcdunk.com/jazz-analysis/70521/5-reasons-for-the-jazz-to-consider-a-lauri-markkanen-domantas-sabonis-swap",
+          "title": "5 Reasons For The Jazz To Consider A Lauri Markkanen/Domantas Sabonis Swap",
+          "publisher": "SLC Dunk",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3iKkNSDLBy68qP3X3sJ-XfnjeqqDwvOzmdUoXQOjOanOg8dpkWmSGF3XFcfs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTPssZNhxmCulgT3QoliuBeOQ3ImmMdqeNUcWAneQWSW3Jr8auMmaygSsnpmg"
         },
         {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/04/its-been-great-flagg-said-of-his-bond-with-may/92611074007/",
-          "title": "\"It's been great,\" Flagg said of his bond with May. …",
-          "publisher": "HoopsHype",
+          "url": "https://sactownsports.com/nba/sacramento-kings/darius-acuff-sabonis-2",
+          "title": "Reporter clarifies Darius Acuff-Domantas Sabonis report",
+          "publisher": "Sactown Sports 1140 AM",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAtXFjbTQ28Ph_HZt_AxRNRz_0bA3Gf6jgvz2XzY52Y4cEjq9ZLbWwztwqWnk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVTnh_bktxMzkCpcSRDc1OllN4yjBGSe4XlIIDRMBWybiqeXnCHusoHV2cZZY"
         }
       ]
     },
     {
-      "query": "harold greene news anchor",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T03:40:00Z",
+      "query": "joshua wong",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T04:10:00Z",
       "related_news_urls": [
-        "https://abc7.com/post/harold-greene-longtime-abc7-news-anchor-reporter-dies-82/20016497/",
-        "https://www.cbsnews.com/losangeles/news/former-cbs-la-anchor-harold-greene-dies-at-82/",
-        "https://deadline.com/2026/11/harold-greene-dead-l-a-news-anchor-1237213947/"
+        "https://apnews.com/article/hong-kong-joshua-wong-sentencing-national-security-f4b08dd23bab9912569e5cabd990c1ef",
+        "https://www.cnn.com/2026/11/04/china/hong-kong-china-joshua-wong-sentence-hnk-intl",
+        "https://www.reuters.com/world/china/hong-kong-activist-joshua-wong-set-be-sentenced-national-security-charge-2026-11-04/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRydeeQcLETtb_sR-c3QmM8m_B71XQg9-1V7ubg3F5Q5pZJBEx_wN3xRyOvzwQ",
-      "image_credit": "ABC7 Los Angeles",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk9ach4ywkT_5ON6rEb1RM9GiWMWmNFl8pWRCm0Z8GcugiqM0DAMZ7I-4RJtw",
+      "image_credit": "AP News",
       "news": [
         {
-          "url": "https://abc7.com/post/harold-greene-longtime-abc7-news-anchor-reporter-dies-82/20016497/",
-          "title": "Harold Greene, longtime ABC7 news anchor and reporter, dies at 82",
-          "publisher": "ABC7 Los Angeles",
+          "url": "https://apnews.com/article/hong-kong-joshua-wong-sentencing-national-security-f4b08dd23bab9912569e5cabd990c1ef",
+          "title": "Hong Kong activist Joshua Wong sentenced to 10 years in prison in 2nd national security case",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRydeeQcLETtb_sR-c3QmM8m_B71XQg9-1V7ubg3F5Q5pZJBEx_wN3xRyOvzwQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk9ach4ywkT_5ON6rEb1RM9GiWMWmNFl8pWRCm0Z8GcugiqM0DAMZ7I-4RJtw"
         },
         {
-          "url": "https://www.cbsnews.com/losangeles/news/former-cbs-la-anchor-harold-greene-dies-at-82/",
-          "title": "Former CBS LA anchor Harold Greene dies at 82",
-          "publisher": "CBS News",
+          "url": "https://www.cnn.com/2026/11/04/china/hong-kong-china-joshua-wong-sentence-hnk-intl",
+          "title": "Hong Kong democracy campaigner Joshua Wong handed another 10 years in jail",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMpsoMycx4q1pg2cHs_h4jeRnjjqvB2S60ynfHoJgkI0h0JLLYBnuA_0oiE8s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3hUZv8PnH8Knz6iysh2iASMgGexRbvAIWGXpTUCNTj19bpXpTWPmAOhw9jYY"
         },
         {
-          "url": "https://deadline.com/2026/11/harold-greene-dead-l-a-news-anchor-1237213947/",
-          "title": "Harold Greene Dies: Longtime L.A. News Anchor Was 82",
-          "publisher": "Deadline",
+          "url": "https://www.reuters.com/world/china/hong-kong-activist-joshua-wong-set-be-sentenced-national-security-charge-2026-11-04/",
+          "title": "Hong Kong activist Joshua Wong set to be sentenced on national security charge",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6RzxCf7FNL_DDFm451FhYq7ieEsCFJHpTibLmglELl-vvXQTlvmb2ecxZ5Z8"
-        }
-      ]
-    },
-    {
-      "query": "dylan harper",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T03:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/kenny-smith-questions-whether-spurs-024408744.html",
-        "https://airalamo.com/dylan-harpers-three-point-shooting-silencing-skepticism-spurs-offense",
-        "https://www.nba.com/spurs/videos/dylan-harper-post-game-vs-minnesota-timberwolves-10-31-26"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9aY7J2MHP7WbblXclQe0EtwC7nSI3okS_6uE5jhjNVCvCA6Mh9N3YaF5AYJU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/kenny-smith-questions-whether-spurs-024408744.html",
-          "title": "Kenny Smith questions whether Spurs' three-guard lineup can last with Fox, Castle and Harper",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9aY7J2MHP7WbblXclQe0EtwC7nSI3okS_6uE5jhjNVCvCA6Mh9N3YaF5AYJU"
-        },
-        {
-          "url": "https://airalamo.com/dylan-harpers-three-point-shooting-silencing-skepticism-spurs-offense",
-          "title": "Dylan Harper's three-point shooting is silencing skepticism of Spurs' offense",
-          "publisher": "Air Alamo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMN7WJqR46q7m74QXDVQgVJ4fKheAXjkvMrK5Wl9Yx23tmdJNoqPbVwS8-Uxs"
-        },
-        {
-          "url": "https://www.nba.com/spurs/videos/dylan-harper-post-game-vs-minnesota-timberwolves-10-31-26",
-          "title": "Dylan Harper, Post‑Game vs Minnesota Timberwolves | 10/31/26",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4afr57iOJp9BC7Ioj7TJ1yGpw4BzfR0fpdOBerVI-CKrmhytl4pXR9c33Wyg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvmJVa1ns7GvJ-rI24qP2IioUgH4jI0UN7q4-A1TukZz2nEA--jwRafzM93ao"
         }
       ]
     }
