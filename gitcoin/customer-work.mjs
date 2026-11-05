@@ -63,6 +63,8 @@ export function planAcceptedGits(evaluated){
  if(!validId(contract.grantId)||!validId(contract.acceptanceReceiptId)||
   !validId(contract.consentReceiptId)||!SHA.test(contract.requestHash||'')||
   !validId(contract.customerId))error('customer_contract_invalid');
+ if(evaluated.status==='rejected'&&Array.isArray(evaluated.lines)&&
+  evaluated.lines.every(line=>line.status!=='verified'))return [];
  const plans=createSettlementPlan(evaluated);
  if(plans.length>100)error('too_many_line_awards_for_one_transaction');
  return plans.map(x=>({
