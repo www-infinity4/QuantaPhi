@@ -43,18 +43,18 @@ test('pending GitHub result is never called completed and saved receipt is not r
  assert.match(ui,/verifiedOwnerHeaders\(\)/);
 });
 
-test('personal context Bubble Bits stay observed only and never claim a spendable ledger',()=>{
+test('personal context Bubble Bits display server-confirmed credits without browser wallet writes',()=>{
  const activity=source('bubbles-iteration-bubbles.mjs');
- assert.match(activity,/0 credited · 0 spendable/);
+ assert.match(activity,/bitsState\.creditedBits/);
+ assert.doesNotMatch(activity,/fetch\(|mint\(|walletWrites:1/);
  assert.match(activity,/contextReady/);
 });
 
 test('all Bubbles website entrypoints request the repaired scripts instead of stale cached versions',()=>{
- const revision='20261104-work-results4';
+ const revision='20261104-iteration-credit1';
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   assert.match(source(path),new RegExp('/bubbles-ai\\.js\\?v='+revision));
  }
- // The existing activity module retains its own published version; only
- // the Bubbles chat script changed for this release.
- assert.match(source('bubbles-ai.js'),/\/bubbles-iteration-bubbles\.mjs\?v=20261103-work-first1/);
+ // Both chat and activity projections request the repaired release.
+ assert.match(source('bubbles-ai.js'),/\/bubbles-iteration-bubbles\.mjs\?v=20261104-iteration-credit1/);
 });

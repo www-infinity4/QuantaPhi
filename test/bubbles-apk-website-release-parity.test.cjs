@@ -68,7 +68,7 @@ test('APK loads the current live website, not an HTML build pinned to the APK ve
  const expression=line.trim().replace(/^const remote=/,'').replace(/;$/,'');
  const remoteRevision=new Function('html','return '+expression);
  assert.equal(remoteRevision(doc),revision);
- assert.equal(remoteRevision(doc.replace(revision,'new-script-revision')),'new-script-revision');
+ assert.equal(remoteRevision(doc.replace('bubbles-ai.js?v='+revision,'bubbles-ai.js?v=new-script-revision')),'new-script-revision');
 });
 
 

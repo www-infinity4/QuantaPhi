@@ -88,3 +88,30 @@ test('owner-gated neural task candidate recognizes conversational repairs, not o
  assert.match(bubbles,/planned\.receipt\?\.executed===false/);
  assert.match(bubbles,/neuralCoding\|\|/);
 });
+
+test('ordinary repair sentences reach the intent model without a required prefix or product keyword',()=>{
+ const beginning=bubbles.indexOf(' const neuralWorkCandidate=');
+ const ending=bubbles.indexOf(' if(neuralWorkCandidate)',beginning);
+ const source=bubbles.slice(beginning,ending).replace(' const neuralWorkCandidate=', 'const neuralWorkCandidate=');
+ const evaluate=new Function('embedded','ownerReady','ownerGithubNonAction','requestsAgents','namedRecordBIssue','directCoding','request',source+'\nreturn neuralWorkCandidate;');
+ for(const request of [
+  'The radio cuts out at every song. Please sort that out.',
+  'I need the search fixed so results stay here.',
+  'The chat is not responding. Restore normal replies for me.',
+  'Could you get my radio reliable while I shop?'
+ ])assert.equal(evaluate(false,true,false,false,false,false,request),true,request);
+ assert.equal(evaluate(false,true,false,true,false,false,'Get Robot Brain working properly'),true);
+ assert.equal(evaluate(true,true,false,false,false,false,'Get my radio reliable'),false);
+ assert.equal(evaluate(false,false,false,false,false,false,'Get my radio reliable'),false);
+});
+
+test('a project named Robot Brain or Moltnook does not force the legacy bot queue',()=>{
+ const start=bubbles.indexOf(' const requestsAgents=');
+ const end=bubbles.indexOf('\n const codeTask=',start);
+ const evaluate=new Function('request',bubbles.slice(start,end)+'\nreturn requestsAgents;');
+ assert.equal(evaluate('Fix Robot Brain so chat can execute work'),false);
+ assert.equal(evaluate('Repair Moltnook repository source'),false);
+ assert.equal(evaluate('Use Robot Brain to repair the site'),true);
+ assert.equal(evaluate('Run all agents to repair the site'),true);
+ assert.equal(evaluate('Use the bot team to repair the site'),true);
+});

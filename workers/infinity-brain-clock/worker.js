@@ -658,7 +658,18 @@ export class BrainClock extends DurableObject{
  async directGithub(body){
   if(!/^[0-9a-f-]{36}$/i.test(body.requestId||''))return {ok:false,error:'request_id_required'};
   const key='direct-github:'+body.requestId;
-  if(body.action==='receipt')return await this.ctx.storage.get(key)||{ok:false,error:'receipt_not_found'};
+  if(body.action==='receipt'){
+   const saved=await this.ctx.storage.get(key);
+   if(saved&&this.env.BUBBLE_BITS_ENABLED==='1'){
+    const {deliverBitCredit}=await import('./iteration-credit.mjs');
+    for(const item of (saved.receipts||[]).slice(0,12))if(item.bit?.status==='pending'&&item.bitCredit){
+     const settled=await this.ctx.storage.get('bit-credit-proof:'+item.receipt.id);
+     const proof=settled||(saved.status==='working'?item.bit:await deliverBitCredit(this.env,{receipt:item.receipt,credit:item.bitCredit}));
+     if(proof.status==='credited'){item.bit=proof;await this.ctx.storage.put('bit-credit-proof:'+item.receipt.id,proof);}
+    }
+   }
+   return saved||{ok:false,error:'receipt_not_found'};
+  }
   if(body.action==='search_github_code'){
    // Read-only global code search is independent of the repository write lease.
    // The /work/github ingress already verifies the current owner session.
@@ -687,7 +698,12 @@ export class BrainClock extends DurableObject{
    const prior=await this.ctx.storage.get(key);if(prior)return {existing:prior};
    const lease=await this.ctx.storage.get(leaseKey);
    if(lease?.leaseUntil>Date.now())return {existing:{ok:false,status:'blocked',error:'repository_job_running',repository}};
-   const record={ok:true,status:'working',repository,requestId:body.requestId,receipts:[],startedAt:new Date().toISOString()};
+   let bitContext=null;
+   if(this.env.BUBBLE_BITS_ENABLED==='1'){
+    const {resolveBitContext}=await import('./iteration-credit.mjs');
+    bitContext=await resolveBitContext(this.ctx.storage,this.env,body);
+   }
+   const record={ok:true,status:'working',repository,action:body.action,requestId:body.requestId,receipts:[],bitContext,startedAt:new Date().toISOString()};
    await this.ctx.storage.put(key,record);
    await this.ctx.storage.put(leaseKey,{leaseUntil:Date.now()+10*60*1000,directRequestId:body.requestId,status:'direct_bubbles'});
    return {record};
@@ -701,10 +717,29 @@ export class BrainClock extends DurableObject{
  }
  async completeDirectGithub(body,record,key,leaseKey){
   const repository=record.repository;
-  const saveReceipt=async receipt=>{
+  const saveReceipt=async (receipt,operation=body)=>{
    const {content,...metadata}=receipt;
+   if(this.env.BUBBLE_BITS_ENABLED==='1'){
+    const {githubIteration}=await import('./iteration-credit.mjs');
+    const iteration=await githubIteration(this.env,record,receipt,operation,record.receipts.length);
+    if(iteration){metadata.receipt=iteration.receipt;metadata.bit=iteration.bit;metadata.criteriaKey=record.bitContext?.criteriaKey;
+     if(iteration.credit)metadata.bitCredit=iteration.credit;}
+   }
    record.receipts.push(metadata);
+   // Persist pending credit before making a wallet request. A network failure
+   // leaves the packet available for exactly-once delivery on receipt readback.
    await this.ctx.storage.put(key,record);
+   if(metadata.bitCredit){
+    const retryKey='bit-credit-retry:0000000000000000:'+metadata.receipt.id;
+    await this.ctx.storage.put(retryKey,{recordKey:key,receiptId:metadata.receipt.id,retryAfter:0});
+    const {deliverBitCredit}=await import('./iteration-credit.mjs');
+    metadata.bit=await deliverBitCredit(this.env,{receipt:metadata.receipt,credit:metadata.bitCredit});
+    await this.ctx.storage.put(key,record);
+    if(metadata.bit.status==='credited'){
+     await this.ctx.storage.put('bit-credit-proof:'+metadata.receipt.id,metadata.bit);
+     await this.ctx.storage.delete(retryKey);
+    }
+   }
    await this.emit('bubbles','purple-pearl','direct GitHub receipt',repository+' · '+(metadata.status||metadata.action||'source inspected'),metadata.url);
   };
   try{
@@ -766,6 +801,11 @@ export class BrainClock extends DurableObject{
    }catch(error){
     return Response.json({ok:false,error:String(error.message||'owner_github_read_failed').slice(0,140)},{status:503});
    }
+  }
+  if(new URL(request.url).pathname==='/iteration/context'){
+   if(this.env.BUBBLE_BITS_ENABLED!=='1')return Response.json({ok:true,bitContext:null});
+   const {captureBitContext}=await import('./iteration-credit.mjs');
+   return Response.json({ok:true,bitContext:await this.ctx.blockConcurrencyWhile(async()=>captureBitContext(this.ctx.storage,this.env,await request.json()))});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
   if(new URL(request.url).pathname==='/quick-card-browser'){
@@ -934,6 +974,10 @@ export class BrainClock extends DurableObject{
   try{
    try{await this.archiveOlderPreviews()}catch(e){await this.ctx.storage.put('evidence-archive-error',{when:Date.now(),error:String(e.message).slice(0,200)})}
    if(await this.ctx.storage.get('bot-work-recipient'))await this.settleWork();
+   if(this.env.BUBBLE_BITS_ENABLED==='1'){
+    try{const {retryBitCredits}=await import('./iteration-credit.mjs');await retryBitCredits(this.ctx.storage,this.env);}
+    catch{/* Saved pending receipts survive the next alarm. */}
+   }
    try{await this.recoverDeferredWork()}catch(error){await this.ctx.storage.put('deferred-recovery-status',{at:Date.now(),state:'recovery_error',reason:String(error.message||error).slice(0,160)});}
    // Owner-defined clock entries use this SAME alarm and existing signed runner.
    // An alarm authorizes no new source write or ticket; it requests only a
@@ -1547,7 +1591,18 @@ export default{
    if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
    try{
     const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
-    return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
+    const body=JSON.parse(raw||'{}');
+    const result=await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,body);
+    // Proof is created only AFTER a successful authenticated context lookup.
+    // Background sync/voice/session inventory never creates Bit context.
+    if(result.ok&&body.bitContext===true&&!body.mode&&env.BUBBLE_BITS_ENABLED==='1'){
+     try{
+      const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/iteration/context',{
+       method:'POST',body:JSON.stringify({query:body.query,sessionId:body.sessionId})});
+      const proof=await response.json();if(response.ok&&proof.ok)result.bitContext=proof.bitContext;
+     }catch{/* Context retrieval still succeeds when credit infrastructure is down. */}
+    }
+    return output(request,result);
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
   }
   if(path==='/work/autopilot/status'&&request.method==='GET'){

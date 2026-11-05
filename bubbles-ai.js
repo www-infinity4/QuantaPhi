@@ -388,14 +388,17 @@ function isWeatherTownReply(value){
  if(/\b(?:you|your|i|my|me|we|our|remember|forgot|forget|know|already|should|would|could|please|that|this|yes|no|thanks|thank|stop|cancel|play|open|build|fix|search|why|what|how|weather|tomorrow)\b/i.test(text))return false;
  return /^(?:\d{5}(?:-\d{4})?|[a-z][a-z .’'-]*(?:,? +[a-z][a-z .’'-]*)?)$/i.test(text);
 }
+let currentBitContext=null;
 async function currentOwnerContext(query){
+ currentBitContext=null;
  const empty={related:[],userInstructions:[],capabilities:[],state:'unavailable'};
  if(embedded||!ownerReady||!ownerHeaders)return empty;
  const headers=ownerHeaders,thread=activeThread;
  try{
-  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({messages:[],query,sessionId:thread})},1300);
+  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({messages:[],query,sessionId:thread,bitContext:true})},1300);
   const result=await response.json();
   if(!response.ok||!result.ok||ownerHeaders!==headers||activeThread!==thread||!ownerReady)return empty;
+  currentBitContext=result.bitContext?.sessionId===thread?result.bitContext:null;
   return {related:Array.isArray(result.related)?result.related:[],userInstructions:Array.isArray(result.userInstructions)?result.userInstructions:[],capabilities:Array.isArray(result.capabilities)?result.capabilities:[],state:'retrieved'};
  }catch{return empty}
 }
@@ -1493,7 +1496,7 @@ if(!embedded){
 }
 document.body.append(launcher,panel);
 // One messenger with evidence-backed cognitive/activity bubbles; no extra AI session.
-void import('/bubbles-iteration-bubbles.mjs?v=20261103-work-first1')
+void import('/bubbles-iteration-bubbles.mjs?v=20261104-iteration-credit1')
  .then(({mountBubbleIterations})=>mountBubbleIterations({launcher,panel,status,chatScroll,conversation}))
  .catch(()=>{ /* The activity view must never interrupt chat, voice or wallet. */ });
 // Fit the visible phone viewport, including the space remaining above its keyboard.
@@ -3007,7 +3010,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const directRequest=/^(?:(?:hey|please|bubbles)[, ]+)*(?:(?:can|could|would|will) you\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
  // Ordinary one-repository changes belong to Bubbles direct GitHub. Only a
  // clear request for multiple cooperating color agents enters Robot Brain.
- const requestsAgents=/\b(?:robot\s*brain|moltnook|multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|bot\s+team|team\s+of\s+bots|run\s+the\s+bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request);
+ const requestsAgents=/\b(?:multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|bot\s+team|team\s+of\s+bots|run\s+the\s+bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request)
+  ||/\b(?:use|via|through|delegate(?:\s+to)?|send(?:\s+to)?|ask|run|start|launch|engage)\s+(?:the\s+)?(?:robot\s*brain|moltnook)\b/i.test(request);
  const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|populate|scaffold|test|run|move|put|place|relocate)\b[\s\S]{0,180}\b(?:github|repositor(?:y|ies)|repos?|code|source|files?|readme|scripts?|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
  // Owner-named RecordB issue #2 is a multi-agent implementation job, not a
  // generic GitHub 'assist' operation or a read-only work history report.
@@ -3027,11 +3031,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Original user intent, verified owner session, repository and permissions
  // are still enforced independently. Never classify a screen observation.
  let neuralCoding=false;
- const neuralWorkCandidate=!embedded&&ownerReady&&!ownerGithubNonAction&&!requestsAgents
+ const neuralWorkCandidate=!embedded&&ownerReady&&!ownerGithubNonAction
   &&!namedRecordBIssue&&!directCoding
-  &&/^(?:(?:bubbles|please)[\s,:]+)*(?:(?:can|could|would|will) you\s+)?(?:get|make|have|help|i (?:need|want) (?:you|bubbles) to|we need (?:you|bubbles) to)\b/i.test(request)
-  &&/\b(?:bubbles|quantaphi|quanta phi|robot brain|moltnook|infinity phi|omni phi|code phi|my (?:app|website|program))\b/i.test(request)
-  &&/\b(?:work(?:ing)?|fix|repair|restore|integrat(?:e|ion)|hook|connect|build|program|implement|run|execute|test|develop|functional|properly)\b/i.test(request)
+  &&request.length>=8&&request.length<=4000
+  // Do not require a magic opening phrase or a product-name keyword before
+  // asking the existing model to interpret the current direct utterance.
+  &&!/^(?:(?:bubbles|please|hey)[\s,:]+)*(?:(?:what|how|why|where|when|who|which)\b|(?:can|could|would|will) you\s+(?:explain|describe|tell me|show me how)\b|(?:i was|we were)\b)/i.test(request)
   &&!/\b(?:do not|don't|never|cancel|without permission)\b/i.test(request);
  if(neuralWorkCandidate){
   try{
@@ -3045,7 +3050,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     &&planned.receipt?.executed===false;
    // A model's label can only enable the already authenticated owner workflow;
    // it cannot create its own command or silently select a new repository.
-   if(neuralCoding)directCoding=true;
+   if(neuralCoding&&!requestsAgents)directCoding=true;
   }catch{neuralCoding=false;}
  }
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
@@ -3175,7 +3180,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }else workEvidence=(await humanReplies()).githubReply(result);
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }
- else if(!embedded&&isOwnerWorkRequest(request)){
+ else if(!embedded&&(isOwnerWorkRequest(request)||neuralCoding&&requestsAgents)){
   workText.value=request;tools.open=true;
   try{
    const ticket=await submitWork(request,'explicit-user-command',imageWorkEvidence);
@@ -3453,13 +3458,20 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
  rememberPendingGithubWork(requestId,receiptThread);
  pendingGithubReceipts.add(requestId);
  void (async()=>{
+  let workReported=false;
   try{
    for(let i=0;i<120;i++){
     await new Promise(resolve=>setTimeout(resolve,i<8?2000:5000));
     let result;
     try{result=await githubReceipt(requestId);}catch{continue;}
+    if(typeof publishSavedGithubIterations==='function')publishSavedGithubIterations(result,receiptThread);
     if(result.status==='working'||result.error==='receipt_not_found')continue;
-    clearPendingGithubWork(requestId);
+    const pendingBits=(result.receipts||[]).some(item=>item.bit?.status==='pending');
+    if(!pendingBits)clearPendingGithubWork(requestId);
+    if(workReported){if(pendingBits)continue;return;}
+    workReported=true;
+    if(typeof publishDirectGithubIteration==='function')
+    publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
     const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
@@ -3471,10 +3483,14 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
      save(THREAD_PREFIX+receiptThread,[...readThread(receiptThread),entry].slice(-160));
      if(ownerReady)void syncCloudFolder(receiptThread,[entry]);
     }
+    if(pendingBits)continue;
     return;
    }
+   if(workReported)return; // Work is finished; saved pending credits retry on the Brain alarm.
    // Every bounded watcher terminates with a visible terminal *observation*.
    // This is a monitoring timeout, never a cancellation or a verified job end.
+   if(typeof publishDirectGithubIteration==='function')
+    publishDirectGithubIteration(operation,requestId,'tool_receipt',{status:'unconfirmed'},receiptThread);
    const report='GitHub has not returned a final receipt after repeated owner-authenticated checks. The request may still be running; no finished code, tests, merge or deployment can be verified. Check Work details before retrying a write.';
    recordBrainNotice(report);
    if(activeThread===receiptThread){
@@ -3487,23 +3503,78 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
   }finally{pendingGithubReceipts.delete(requestId);}
  })();
 }
+// Only real owner-authenticated direct GitHub READ calls may create these
+// in-chat iterations. A browser request ID is merely a correlation key;
+// neither an accepted request nor model narration is a verified tool receipt.
+function publishDirectGithubIteration(operation,requestId,phase,result=null,thread=''){
+ const currentThread=typeof activeThread==='string'?activeThread:'';
+ const actionTools={read_file:'github.read_file',read_repository:'github.read_repository',
+  read_repo:'github.read_repo',search:'github.search',search_code:'github.search'};
+ const tool=actionTools[operation?.action];
+ if(!tool||!/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/.test(operation?.repository||'')||
+    !/^[a-f0-9-]{36}$/i.test(requestId||'')||!thread||thread!==currentThread||
+    typeof CustomEvent!=='function')return;
+ if(!['tool_started','tool_progress','tool_receipt'].includes(phase))return;
+ const detail={type:phase,tool,operationId:requestId,resource:operation.repository,
+  criteriaSummary:'Authenticated GitHub read for this conversation'};
+ if(phase==='tool_progress'){
+  detail.detail=result?.status==='working'?'GitHub reports working; the final receipt is pending':
+   'Response not confirmed; checking durable GitHub receipt';
+ }
+ if(phase==='tool_receipt'){
+  const proof=result?.receipt||(Array.isArray(result?.receipts)&&result.receipts.length===1?result.receipts[0].receipt:null);
+  const matched=proof?.tool===tool&&typeof proof?.id==='string'&&
+   /^[A-Za-z0-9_-]{8,100}$/.test(proof.id);
+  // A client-shaped success, a tool-mismatched receipt, or a completed model
+  // response cannot be credited as a GitHub operation.
+  detail.status=matched&&proof.status==='complete'?'complete':
+   ['failed','blocked'].includes(result?.status)||result?.ok===false?'failed':'unverified';
+  if(matched)detail.receiptId=proof.id;
+ }
+ window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail}));
+}
+function publishSavedGithubIterations(result,thread){
+ if(thread!==activeThread||typeof CustomEvent!=='function')return;
+ for(const item of (Array.isArray(result?.receipts)?result.receipts:[]).slice(0,12)){
+  const proof=item.receipt;
+  if(proof?.status!=='complete'||!/^[A-Za-z0-9_-]{8,100}$/.test(proof.id||''))continue;
+  const bit=item.bit;
+  const credit=bit?.status==='credited'&&bit.asset==='BUBBLE_BIT'&&bit.amount===1&&bit.receiptId===proof.id&&bit.creditId===proof.id?bit:null;
+  window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'tool_receipt',
+   tool:proof.tool,status:proof.status,receiptId:proof.id,operationId:result.action!=='assist'&&result.receipts.length===1?result.requestId:proof.id,
+   criteriaSummary:item.bitCredit?.goal||'',criteriaKey:item.criteriaKey||'',resource:result.repository||'',credit,
+   detail:credit?'1 Bubble Bit credited':bit?.status==='pending'?'Bubble Bit awaiting wallet confirmation':'Receipt recorded; credit unavailable'}}));
+ }
+}
 async function directGithubOperation(operation,{quiet=false,ownerRequest='',imageEvidence=''}={}){
  if(embedded)throw Error('owner_tools_unavailable_in_embed');
  const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
+ const receiptThread=typeof activeThread==='string'?activeThread:'';
+ if(typeof publishDirectGithubIteration==='function')
+  publishDirectGithubIteration(operation,requestId,'tool_started',null,receiptThread);
  let result;
  try{
   const response=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
-   body:JSON.stringify({...operation,requestId})},18000);
+   body:JSON.stringify({...operation,requestId,sessionId:receiptThread,...(typeof currentBitContext!=='undefined'&&currentBitContext?.sessionId===receiptThread?{bitContext:currentBitContext}:{})})},18000);
   result=await response.json();
-  if(!response.ok)return {...result,requestId};
+  if(typeof publishSavedGithubIterations==='function')publishSavedGithubIterations(result,receiptThread);
+  if(!response.ok){
+   if(typeof publishDirectGithubIteration==='function')
+    publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
+   return {...result,requestId};
+  }
  }catch(error){
   // A timeout only means the client missed the response. Look up the original ID.
   result={ok:true,status:'unconfirmed',requestId,error:'response_missing_or_timed_out',detail:String(error.message||error).slice(0,100)};
  }
  if(result.status==='working'||result.status==='unconfirmed'){
+  if(typeof publishDirectGithubIteration==='function')
+    publishDirectGithubIteration(operation,requestId,'tool_progress',result,receiptThread);
   if(!quiet)watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'',imageEvidence);
   return {...result,requestId,next:'Checking the durable receipt using this request ID. Tests, merge and deployment remain unverified.'};
  }
+ if(typeof publishDirectGithubIteration==='function')
+    publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
  return {...result,requestId};
 }
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});

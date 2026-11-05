@@ -41,3 +41,17 @@ https://github.com/www-infinity4/QuantaPhi/issues/1192
 - Related Brain source PR [#1669](https://github.com/www-infinity4/QuantaPhi/pull/1669) provides safe typed admission summaries; Moltnook [#236](https://github.com/www-infinity4/Moltnook/pull/236) renders the idle result; Moltnook [#237](https://github.com/www-infinity4/Moltnook/pull/237) hardens GitHub API GET retry/ETag behavior.
 - Bubbles PR exact-head CI after the natural continuation and cache-pin change is pending. Last proven predecessor checks were green, not a release. No signed owner lease, code-task deployment or phone smoke test was claimed in this session.
 - Single next executable action: inspect PR #1664 latest CI, correct any regressions, then advance through independent review, protected merge and guarded production readback before asking for phone testing.
+
+## 2026-11-05 UTC · live execution audit and ordinary-request routing
+
+- Read live Cloudflare Worker settings and ledger schemas without changing records. Production Brain source pin is main 59a706847bf9d46c0a1590aed9831b515b969c6e; the GIT/Bubble Bit credit source changes are not deployed and their new award tables are absent from the live wallet. A visitor count cannot establish a code execution or a GIT award.
+- Actual signed Moltnook repository-engine run 41952154071 returned BRAIN_RUNNER_IDLE: eligible_but_not_claimed, dependency_pending=2 and dependencyStates.blocked=2. The workflow's green conclusion is not a claimed coding job. Private request text and wallet/account identifiers are not copied here.
+- Found and fixed a frontend gate that asked the existing semantic intent model only for a narrow prefix + product name + verb combination. Owner-authenticated ordinary repair sentences now reach the same bounded classifier; questions, refusals, past reports, embedded visitors and missing owner sessions keep their existing boundaries.
+- Project names Robot Brain/Moltnook no longer alone force the legacy multi-agent queue. Explicit requests to use that engine or bot team retain that route. Ordinary single-project repairs use the existing direct GitHub path; repository discovery, authorization, review and real result receipts remain required.
+- Reused #1192/#1296 and existing PR #1673; no coordinator lease claimed, lease_id/fence/task_session_id null. One additional documented source session; overall completion and remaining sessions unknown. Local first-pass routing/semantic/auth/receipt suites: 122/122 pass after two regression-first failures. State source_tested/review_pending, YELLOW; no production deployment, GIT credit or completed customer job asserted.
+- Next: exact-head CI and review, then guarded website rollout and one actual owner job receipt in the same chat. Existing blocked prerequisite decisions remain blocked; this patch does not manufacture grants or mark them complete.
+
+
+### Same-session independent source review and CI correction
+
+A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after 92 focused tests. Credit activation remains held on the two reproducible recovery/provenance findings recorded in docs/BUBBLES-ITERATION-CREDIT.md. The ordinary-routing CI failures were stale literal-branch assertions plus a voice harness that counted the new non-executing intent proposal as a mutation; updated those fixtures while preserving owner/embedded/explicit-team assertions. No credit enablement or existing job permission was changed. Exact-head checks are rerun before any source promotion.
