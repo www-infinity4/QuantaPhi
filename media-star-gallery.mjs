@@ -85,6 +85,13 @@ if(root){
    status.textContent='Verified public Media Star catalog is unavailable. No invented cards or view counts are displayed.';
   }
  }
+ const step=direction=>{
+  const first=cardsNode.querySelector('.msg-card:not([hidden])');
+  const size=(first?.getBoundingClientRect().width||cardsNode.clientWidth)+14;
+  cardsNode.scrollBy({left:direction*size,behavior:'smooth'});
+ };
+ document.getElementById('mediaStarGalleryPrev')?.addEventListener('click',()=>step(-1));
+ document.getElementById('mediaStarGalleryNext')?.addEventListener('click',()=>step(1));
  match?.addEventListener('click',()=>{
   const q=String(document.getElementById('q')?.value||'');
   explicitTerms=extractPublicInterest(q,true);
