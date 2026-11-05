@@ -21,6 +21,7 @@ const adapters={
  verifyOperationReceipt:async s=>s.receiptId===receiptA||s.receiptId===receiptB,
  verifyJobResult:async q=>q.taskId==='task_789'&&q.result.stage==='deployed_verified',
  verifyShareGrant:async()=>true,
+ verifyBlueprintPrivacy:async()=>true,
  verifyTransferAuthorization:async()=>true
 };
 
@@ -45,12 +46,15 @@ test('rejects ungrounded deployment counts and apparent credentials',async()=>{
 });
 test('blueprint requires sharing approval and omits private identifiers',async()=>{
  const p=await createBitCandidate(base,adapters);
- const blue=await exportBitBlueprint(p,{verifyShareGrant:adapters.verifyShareGrant});
+ const blue=await exportBitBlueprint(p,{verifyShareGrant:adapters.verifyShareGrant,verifyBlueprintPrivacy:adapters.verifyBlueprintPrivacy});
+ assert.equal(blue.sourceStatus,'candidate_requires_independent_review');
  assert.equal(blue.summary,base.summary);assert.equal(blue.filesTested,73);
  assert.equal(blue.stage,'deployed_verified');
  const all=JSON.stringify(blue);
  assert.ok(!all.includes(base.customerId)&&!all.includes(base.sessionId)&&!all.includes(receiptA)&&!all.includes('wallet'));
  await assert.rejects(exportBitBlueprint(p,{verifyShareGrant:async()=>false}),/share_not_authorized/);
+ await assert.rejects(exportBitBlueprint(p,{verifyShareGrant:async()=>true}),/blueprint_privacy_unverified/);
+ await assert.rejects(exportBitBlueprint(p,{verifyShareGrant:async()=>true,verifyBlueprintPrivacy:async()=>false}),/blueprint_privacy_unverified/);
  const privateP=await createBitCandidate({...base,reuse:{...base.reuse,permission:'private'}},adapters);
  await assert.rejects(exportBitBlueprint(privateP,adapters),/share_not_authorized/);
 });
