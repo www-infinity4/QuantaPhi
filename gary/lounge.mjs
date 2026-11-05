@@ -82,6 +82,7 @@ q('family-cast').addEventListener('click',()=>{
   castPanel.hidden=!showing;
   q('family-cast').setAttribute('aria-expanded',String(showing));
   if(!showing)return;
+  castPanel.querySelector('.family-cast-audio')?.remove();
   const remote=audio?.remote;
   const mode=castAction({
     remotePromptAvailable:typeof remote?.prompt==='function',
@@ -226,6 +227,12 @@ async function loadWeather(){
    for(const day of days){
      const card=node('article','family-day');
      card.append(node('strong','',new Date(day.date+'T12:00:00').toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})));
+     if(day.icon){
+       const icon=node('img','family-weather-icon');
+       icon.src=day.icon;icon.alt='';icon.width=72;icon.height=72;icon.loading='lazy';
+       icon.addEventListener('error',()=>icon.remove(),{once:true});
+       card.append(icon);
+     }
      card.append(node('p','family-temperatures',(day.high===null?'—':day.high+'°')+' / '+(day.low===null?'—':day.low+'°')+'F'));
      card.append(node('small','',day.summary||'Forecast published by NWS'));
      if(day.precip!==null)card.append(node('small','',day.precip+'% precipitation chance'));
