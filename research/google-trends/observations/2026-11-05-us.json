@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T08:01:40.458106Z",
+  "checked_at": "2026-11-05T08:31:54.764402Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "josh duhamel",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T08:10:00Z",
+      "related_news_urls": [
+        "https://ew.com/eric-dane-josh-duhamel-nearly-fought-las-vegas-set-12199083",
+        "https://www.syracuse.com/entertainment/2026/11/late-actors-posthumous-memoir-reveals-explosive-on-set-fight-with-co-star.html",
+        "https://variety.com/2026/tv/news/eric-dane-memoir-fight-josh-duhamel-set-1236938856/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyryecAvDnoZKnPXPqUmXPRi-ZxBItIb6hzK6HNsKyxuvBqmtFPZT4KHzhX4k",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/eric-dane-josh-duhamel-nearly-fought-las-vegas-set-12199083",
+          "title": "Eric Dane nearly fought ‘p---y-ass actor’ Josh Duhamel on ‘Las Vegas’ set",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyryecAvDnoZKnPXPqUmXPRi-ZxBItIb6hzK6HNsKyxuvBqmtFPZT4KHzhX4k"
+        },
+        {
+          "url": "https://www.syracuse.com/entertainment/2026/11/late-actors-posthumous-memoir-reveals-explosive-on-set-fight-with-co-star.html",
+          "title": "Late actor’s posthumous memoir reveals explosive on-set fight with co-star",
+          "publisher": "Syracuse.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStOoGcH9Ov6ebUxwkVJAWQrCgrrerxQvO6tctrvZ3Lhp3WdasKBl9WscvF9dM"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/eric-dane-memoir-fight-josh-duhamel-set-1236938856/",
+          "title": "Eric Dane’s Posthumous Memoir Reveals Actor’s Fight With Josh Duhamel on Set: ‘Let’s Go, You P—- Ass Actor!’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSexnIcK0Zm983V7PTxQfbApP6OUd3eKwywu8ChnxmNi0GTiA8etj7lO1HgM3o"
+        }
+      ]
+    },
+    {
+      "query": "pluto",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T08:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/travel/scientists-discover-potentially-massive-dwarf-planet-candidate-hiding-beyond-pluto",
+        "https://www.nationalgeographic.com/science/article/new-dwarf-planet-rubin-pluto",
+        "https://rubinobservatory.org/news/rubin-first-dwarf-planet-candidate"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJbkIYTGyVy0jVujD2NTH1oO540J1tklp-Wkh9reJlSMeiROVFVJVVQH0FipE",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/travel/scientists-discover-potentially-massive-dwarf-planet-candidate-hiding-beyond-pluto",
+          "title": "Scientists discover potentially massive dwarf planet candidate hiding beyond Pluto",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJbkIYTGyVy0jVujD2NTH1oO540J1tklp-Wkh9reJlSMeiROVFVJVVQH0FipE"
+        },
+        {
+          "url": "https://www.nationalgeographic.com/science/article/new-dwarf-planet-rubin-pluto",
+          "title": "Astronomers Just Discovered a New Hidden World Beyond Neptune",
+          "publisher": "National Geographic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBEVL7I7xOdSQPznfemMVywkUVckHCmLhlpT5Vj60DamPPbymxgq_YR4fPDyo"
+        },
+        {
+          "url": "https://rubinobservatory.org/news/rubin-first-dwarf-planet-candidate",
+          "title": "NSF–DOE Vera C. Rubin Observatory Reveals Its First Dwarf Planet Candidate in Our Solar System",
+          "publisher": "Rubin Observatory",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH_J7bhzuEnomoX-expzACeP8KEJbIPgiqYblIyBvHRZbq87yb2F-MZaT7LpI"
+        }
+      ]
+    },
+    {
+      "query": "jeffrey epstein",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T08:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/congress/leon-black-sues-robert-garcia-alleging-defamation-epstein-comments-rcna607565",
+        "https://apnews.com/article/leon-black-robert-garcia-jeffrey-epstein-lawsuit-5a4192fb838712bb651c2d941e3b45e6",
+        "https://www.politico.com/news/2026/11/04/leon-black-rep-garcia-epstein-01150786"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9UrFw9aZZjdjDs4EDz5WoISzpvyjrmSKBewjqz_7G5xKifa9hJDV3jSNhk5Y",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/congress/leon-black-sues-robert-garcia-alleging-defamation-epstein-comments-rcna607565",
+          "title": "Billionaire Leon Black sues Rep. Robert Garcia, alleging defamation over Epstein comments",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9UrFw9aZZjdjDs4EDz5WoISzpvyjrmSKBewjqz_7G5xKifa9hJDV3jSNhk5Y"
+        },
+        {
+          "url": "https://apnews.com/article/leon-black-robert-garcia-jeffrey-epstein-lawsuit-5a4192fb838712bb651c2d941e3b45e6",
+          "title": "Billionaire Leon Black sues U.S. Rep. Robert Garcia for defamation over Epstein comments",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvqzp_zISmuZV1N7Mzi1KVerARsKZY10zDunNjuaA8NJj2YqeyiulzMQUHbd8"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/04/leon-black-rep-garcia-epstein-01150786",
+          "title": "Leon Black sues Rep. Garcia over remarks about his relationship with Epstein",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ-eYBJpa2nJSli8MGndzhE7J9gxnvU52Bjk0pWBU4h1tF25ZPlMARzLRdfzM"
+        }
+      ]
+    },
+    {
+      "query": "raman vs bass",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T07:50:00Z",
+      "related_news_urls": [
+        "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/",
+        "https://www.latimes.com/california/story/2026-11-04/raman-on-cusp-of-becoming-mayor-analysts-predict-citing-expected-results-from-late-votes",
+        "https://www.politico.com/news/2026/11/04/nithya-raman-rise-jolts-la-establishment-01151074"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A",
+      "image_credit": "ABC7 Los Angeles",
+      "news": [
+        {
+          "url": "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/",
+          "title": "Live election results: Raman increases lead over Bass in LA mayoral race",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A"
+        },
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-04/raman-on-cusp-of-becoming-mayor-analysts-predict-citing-expected-results-from-late-votes",
+          "title": "Raman keeps widening her lead against Bass, closing in on becoming L.A.’s next mayor",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmWSmEczC4O3U1GW9TTaZvxGQLk83qJ6pm33WUG_qwDYddgGqlaHmVH3w81-4"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/04/nithya-raman-rise-jolts-la-establishment-01151074",
+          "title": "‘An earthquake’: Nithya Raman’s rise jolts LA’s political establishment",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSfZX7M3-BrtTIKwtnwWnFK4cQP7IZ3c8QOlgkIe2g9bLke3trKgoCYajKlWI"
+        }
+      ]
+    },
     {
       "query": "midterm election results senate",
       "approx_searches": "50000+",
@@ -139,114 +279,9 @@
       ]
     },
     {
-      "query": "aliyah boston",
-      "approx_searches": "100+",
+      "query": "hong kong open",
+      "approx_searches": "500+",
       "published_at": "2026-11-05T07:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/aliyah-bostons-much-easier-surgery-015846998.html",
-        "https://athlonsports.com/wnba/indiana-fever/indiana-fever-aliyah-boston-makes-decision-after-surgery",
-        "https://www.essentiallysports.com/wnba-basketball-news-unrivaled-kate-martin-mutually-agree-to-terminate-league-contract/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefHlaOZqjHXNe2qnQPnNSs-OkI6z3I8jLP7pt3day69EgwOwlzSBk1yX9z_A",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/aliyah-bostons-much-easier-surgery-015846998.html",
-          "title": "Aliyah Boston's 'Much Easier' Surgery Admission Should Worry Fever Opponents",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefHlaOZqjHXNe2qnQPnNSs-OkI6z3I8jLP7pt3day69EgwOwlzSBk1yX9z_A"
-        },
-        {
-          "url": "https://athlonsports.com/wnba/indiana-fever/indiana-fever-aliyah-boston-makes-decision-after-surgery",
-          "title": "Indiana Fever’s Aliyah Boston Makes Decision After Surgery",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSg1tzIDMfwr22iV2kN054rBCbwUyYQz0uFjBvGm6M-MNcjlOUMY3iwTxteoxY"
-        },
-        {
-          "url": "https://www.essentiallysports.com/wnba-basketball-news-unrivaled-kate-martin-mutually-agree-to-terminate-league-contract/",
-          "title": "Unrivaled & Kate Martin Mutually Agree to Terminate League Contract",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKi_YV-IVeLmG61u6m06jNGkzf7y2aOoa6_lRopCtkmM9TgsW_zlQsx-bhkm0"
-        }
-      ]
-    },
-    {
-      "query": "los angeles dodgers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T06:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50328890/mlb-early-free-agency-buzz-intel-skubal-trade-rumors",
-        "https://www.mlb.com/news/mets-rotation-offseason-questions-2026-2027",
-        "https://www.bleedcubbieblue.com/chicago-cubs-rumors/236981/cubs-free-agent-target-tarik-skubal"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqNu0VhG_C_Fk9EL8nKAWqISUz5v0OP9k5BmOBoX-VPX0eZBY3Z1BDmFuiIY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50328890/mlb-early-free-agency-buzz-intel-skubal-trade-rumors",
-          "title": "MLB offseason buzz: Intel on Skubal, free agency, trade rumors",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqNu0VhG_C_Fk9EL8nKAWqISUz5v0OP9k5BmOBoX-VPX0eZBY3Z1BDmFuiIY"
-        },
-        {
-          "url": "https://www.mlb.com/news/mets-rotation-offseason-questions-2026-2027",
-          "title": "4 big questions for Mets' rotation this offseason",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBqgHt-lG-07MtI5x4w3tppFShnO2CcMieoiN_ufLCujkwMtQnfhWbkAy8_l8"
-        },
-        {
-          "url": "https://www.bleedcubbieblue.com/chicago-cubs-rumors/236981/cubs-free-agent-target-tarik-skubal",
-          "title": "Cubs free agent target: Tarik Skubal",
-          "publisher": "Bleed Cubbie Blue",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXZqQsYs5uHJKqtwsfaexSY78oqMN90fwOGmNzWPCY4BWTLuUTW6LBKrlGhVo"
-        }
-      ]
-    },
-    {
-      "query": "enzo amore",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T06:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/backstage-possible-wwe-return-enzo-230157089.html",
-        "https://www.cagesideseats.com/rumor-round-up/485011/rumor-roundup-wwe-signs-enzo-amore-rko-trademark-dispute-hurt-syndicate-aew-contract-mustafa",
-        "https://bleacherreport.com/articles/25528065-big-cass-addresses-enzo-amore-buzz-wwe-rumors-bayley-oba-femi-penta-jevon-and-vision"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSx1JkJR1EntTkIAAh6FwTgbPUg-o5Wrz2dUf19N_2S9dZlsxad2Uc2pc_BGc",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/backstage-possible-wwe-return-enzo-230157089.html",
-          "title": "Backstage Update On Possible WWE Return Of Enzo Amore",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSx1JkJR1EntTkIAAh6FwTgbPUg-o5Wrz2dUf19N_2S9dZlsxad2Uc2pc_BGc"
-        },
-        {
-          "url": "https://www.cagesideseats.com/rumor-round-up/485011/rumor-roundup-wwe-signs-enzo-amore-rko-trademark-dispute-hurt-syndicate-aew-contract-mustafa",
-          "title": "Rumor Roundup: WWE signs Enzo Amore, Hurt Syndicate’s AEW status, RKO issue, more!",
-          "publisher": "Cageside Seats",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7to7Zj8Sl3_oBdAOj1JAzRFU2eioeTxzPfboXVrik_bTjhRZZPqW1jW2ZJrs"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25528065-big-cass-addresses-enzo-amore-buzz-wwe-rumors-bayley-oba-femi-penta-jevon-and-vision",
-          "title": "Big Cass Addresses Enzo Amore Buzz, WWE Rumors on Bayley, Oba Femi, Penta, Je'Von and The Vision",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSic6btqYSkr_xUCy4lUusq55YkCim7RVMR9tqoCZGcS_2zeZ5iEG6oOtQ5X5g"
-        }
-      ]
-    },
-    {
-      "query": "wang xinyu",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T06:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
         "https://sports.inquirer.net/705074/alex-eala-battles-czech-tereza-valentova-in-hong-kong-open-last-16",
@@ -279,72 +314,37 @@
       ]
     },
     {
-      "query": "super troopers 3",
+      "query": "aliyah boston",
       "approx_searches": "200+",
-      "published_at": "2026-11-05T06:30:00Z",
+      "published_at": "2026-11-05T07:00:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/de/news/ni66095509/?ref_=nm_nwr_1",
-        "https://whatsondisneyplus.com/super-troopers-3-coming-soon-to-hulu-disney/",
-        "https://www.news8000.com/entertainment/eye-on-entertainment-super-troopers-3-on-digital-platforms/video_2c5e49e2-609a-5990-8247-cd245c3fe215.html"
+        "https://sports.yahoo.com/articles/aliyah-bostons-much-easier-surgery-015846998.html",
+        "https://athlonsports.com/wnba/indiana-fever/indiana-fever-aliyah-boston-makes-decision-after-surgery",
+        "https://www.essentiallysports.com/wnba-basketball-news-unrivaled-kate-martin-mutually-agree-to-terminate-league-contract/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNM6Jup3HTu9D5w_nr0GnstRYuxJIiWhIHSpqGLc9Rdh1lQp-9DzMrQ3nvBY",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefHlaOZqjHXNe2qnQPnNSs-OkI6z3I8jLP7pt3day69EgwOwlzSBk1yX9z_A",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.imdb.com/de/news/ni66095509/?ref_=nm_nwr_1",
-          "title": "‘Super Troopers 3’ Streaming: How to Watch the New Movie at Home & Where to Stream the First Two",
-          "publisher": "IMDb",
+          "url": "https://sports.yahoo.com/articles/aliyah-bostons-much-easier-surgery-015846998.html",
+          "title": "Aliyah Boston's 'Much Easier' Surgery Admission Should Worry Fever Opponents",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNM6Jup3HTu9D5w_nr0GnstRYuxJIiWhIHSpqGLc9Rdh1lQp-9DzMrQ3nvBY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefHlaOZqjHXNe2qnQPnNSs-OkI6z3I8jLP7pt3day69EgwOwlzSBk1yX9z_A"
         },
         {
-          "url": "https://whatsondisneyplus.com/super-troopers-3-coming-soon-to-hulu-disney/",
-          "title": "\"Super Troopers 3\" Coming Soon To Hulu & Disney+",
-          "publisher": "What's On Disney Plus",
+          "url": "https://athlonsports.com/wnba/indiana-fever/indiana-fever-aliyah-boston-makes-decision-after-surgery",
+          "title": "Indiana Fever’s Aliyah Boston Makes Decision After Surgery",
+          "publisher": "Athlon Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSz3d_1la2nnf9rR7Yi3YOi2kbOOzLppFwlki2lPEzT96M0PG4B-8xBh00b-r4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSg1tzIDMfwr22iV2kN054rBCbwUyYQz0uFjBvGm6M-MNcjlOUMY3iwTxteoxY"
         },
         {
-          "url": "https://www.news8000.com/entertainment/eye-on-entertainment-super-troopers-3-on-digital-platforms/video_2c5e49e2-609a-5990-8247-cd245c3fe215.html",
-          "title": "Eye on Entertainment: 'Super Troopers 3' on digital platforms",
-          "publisher": "news8000.com",
+          "url": "https://www.essentiallysports.com/wnba-basketball-news-unrivaled-kate-martin-mutually-agree-to-terminate-league-contract/",
+          "title": "Unrivaled & Kate Martin Mutually Agree to Terminate League Contract",
+          "publisher": "EssentiallySports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnIN1H23PXWAXFusLAKG9lIZ_wk2Sq1MziENc9NpUFPsc1Cbnqjgq2rZiz_Ko"
-        }
-      ]
-    },
-    {
-      "query": "antonia ruzic",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T06:20:00Z",
-      "related_news_urls": [
-        "https://www.bleachernation.com/picks/2026/11/04/wang-vs-ruzic-prediction-at-the-merida-open-akron-thursday-november-5/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/aliaksandra-sasnovich-vs-maria-sakkari-set-1-winner-nov-06-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/tomas-martin-etcheverry-vs-alex-de-minaur-game-spread-nov-04-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpe1jeJhT29Otnf8rzVGAfIRuiTmCzSVjXmv8Xn3a-WfIDa1QKYcmsfsjS33c",
-      "image_credit": "Bleacher Nation",
-      "news": [
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/04/wang-vs-ruzic-prediction-at-the-merida-open-akron-thursday-november-5/",
-          "title": "Wang vs. Ruzic Prediction at the Merida Open Akron – Thursday, November 5",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpe1jeJhT29Otnf8rzVGAfIRuiTmCzSVjXmv8Xn3a-WfIDa1QKYcmsfsjS33c"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/aliaksandra-sasnovich-vs-maria-sakkari-set-1-winner-nov-06-2026/",
-          "title": "November 6, 2026: Aliaksandra Sasnovich vs Maria Sakkari: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrFtBnvnaLaIKLwEIgVxfRT38Mwkrf6fhzIQPRDQKKr4h_aQXsvQSlxGPoeZ0"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/tomas-martin-etcheverry-vs-alex-de-minaur-game-spread-nov-04-2026/",
-          "title": "November 4, 2026: Tomas Martin Etcheverry vs Alex de Minaur: Game Spread Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJf9JJoDQmOnUJYF9IO8wzWzoMkRiYYGlme8THNDT8eaHGhO_CI7iAljeAkqE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKi_YV-IVeLmG61u6m06jNGkzf7y2aOoa6_lRopCtkmM9TgsW_zlQsx-bhkm0"
         }
       ]
     }
