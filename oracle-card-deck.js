@@ -9,6 +9,8 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
  ['gitcoinQuickCard','GIT Coin · Collect your GitHub code receipts'],
+ ['bubbleBitQuickCard','Bubble Bits · Reusable Bubbles work packets'],
+ ['gptCoinConceptCard','GPT Coin · Optional provider-issued units'],
  ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
@@ -79,6 +81,8 @@ const CARD_DIRECTIONS={
  liveFoxGameCard:['fox-live-game','Television','Watch KYOU news in the official station player'],
  liveFoxNewsCard:['fox-live-news','Television','Watch the official LiveNOW from FOX news player'],
  gitcoinQuickCard:['gitcoin-code','Programming','Copy setup commands and collect pending GIT code receipts from your own GitHub project'],
+ bubbleBitQuickCard:['bubble-bit-knowledge','Bubbles work','Read and copy an illustrative meaningful Bubbles work packet'],
+ gptCoinConceptCard:['gpt-coin-optional','Provider economy','Learn the separate optional provider-issued GPT Coin model'],
  coliseumZeusCard:['coliseum-zeus','Collaboration','Pitch, vote, branch and build in the Zeus arena'],
  walmartShoppingCard:['walmart-shopping','Shopping','Shop Walmart pizza, groceries and related products'],
  cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
@@ -150,7 +154,7 @@ const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={gitcoin:'gitcoinQuickCard',gits:'gitcoinQuickCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ const names={gitcoin:'gitcoinQuickCard',gits:'gitcoinQuickCard',bits:'bubbleBitQuickCard',bubblebits:'bubbleBitQuickCard',gptcoin:'gptCoinConceptCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
  names.housing='disabilityHousingCard';names['disability-housing']='disabilityHousingCard';names['home-access']='disabilityHousingCard';
  const requested=url.searchParams.get('card');
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
