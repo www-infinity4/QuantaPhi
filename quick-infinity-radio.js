@@ -30,7 +30,7 @@
   }
   const style = document.createElement('style');
   style.textContent = `
-    #infinityRadioQuick{box-sizing:border-box;display:flex;gap:10px;align-items:center;margin:9px 0 12px;padding:10px 12px;
+    #infinityRadioQuick{box-sizing:border-box;display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:9px 0 12px;padding:10px 12px;
       border:1px solid #9fcecc;border-radius:16px;background:linear-gradient(115deg,#e8faf7,#fff);color:#163e4b;
       box-shadow:0 4px 15px #184e4d12}
     #irQuickPlay{flex:none;width:48px;height:48px;min-height:48px;border:0;border-radius:50%;padding:0;
@@ -39,6 +39,10 @@
     #infinityRadioQuick .ir-quick-copy{flex:1 1 auto;min-width:0}
     #infinityRadioQuick .ir-quick-title{display:block;font-weight:900;font-size:14px;line-height:1.3}
     #infinityRadioQuick .ir-quick-status{display:block;max-width:100%;color:#43646a;font-size:11px;line-height:1.3;overflow-wrap:anywhere}
+    #infinityRadioQuick .ir-quick-search{display:flex;gap:8px;flex:1 0 100%;min-width:0;margin:2px 0 0}
+    #irQuickQuery{flex:1 1 auto;min-width:0;min-height:44px;border:1px solid #b5d6d7;border-radius:11px;background:#fff;color:#163e4b;font-size:15px;padding:9px 11px}
+    #irQuickSearchButton{flex:none;min-height:44px;border:0;border-radius:11px;padding:8px 12px;background:#136a76;color:#fff;font-size:14px;font-weight:800;cursor:pointer}
+    #irQuickQuery:focus-visible,#irQuickSearchButton:focus-visible{outline:3px solid #9c5dd6;outline-offset:3px}
     #irQuickStation{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:5px 10px;
       border:1px solid #b5d6d7;border-radius:11px;color:#155164;background:#fff;font-size:12px;font-weight:850;text-decoration:none}
     @media(max-width:360px){#infinityRadioQuick{flex-wrap:wrap}#irQuickStation{margin-left:58px}}
@@ -73,7 +77,24 @@
   const next = document.createElement('button');
   next.id='irQuickNext';next.type='button';next.textContent='⏭';
   next.setAttribute('aria-label','Next Infinity Radio song');next.disabled=true;
-  bar.append(play,next,copy,open);
+  const searchForm=document.createElement('form');
+  searchForm.id='irQuickSearch';
+  searchForm.className='ir-quick-search';
+  searchForm.setAttribute('role','search');
+  searchForm.setAttribute('aria-label','Search and listen inside Infinity Radio');
+  const searchInput=document.createElement('input');
+  searchInput.id='irQuickQuery';
+  searchInput.type='search';
+  searchInput.autocomplete='off';
+  searchInput.maxLength=120;
+  searchInput.placeholder='Song or artist in Infinity Radio';
+  searchInput.setAttribute('aria-label','Song or artist');
+  const searchButton=document.createElement('button');
+  searchButton.id='irQuickSearchButton';
+  searchButton.type='submit';
+  searchButton.textContent='Search & Listen';
+  searchForm.append(searchInput,searchButton);
+  bar.append(play,next,copy,open,searchForm);
   anchor.insertAdjacentElement('afterend',bar);
   // Attach source-backed local radio cards beside the existing Infinity Radio.
   // The browser loads one small module rather than adding seven player iframes.
@@ -202,6 +223,25 @@
     setTrack();
     start();
   }
+  searchForm.addEventListener('submit',event=>{
+    event.preventDefault();
+    const term=searchInput.value.trim().toLowerCase();
+    if(term.length<2){status.textContent='Enter at least two letters to search Infinity Radio.';return;}
+    const found=tracks.findIndex(track=>track.title.toLowerCase().includes(term));
+    if(found<0){
+      status.textContent='Not found in the verified radio collection. Try a different song or artist.';
+      return; // Never redirect to YouTube or play an unrelated recording.
+    }
+    // One actual audio player: switch its source only after an explicit gesture.
+    ++generation;
+    if(playbackRequested)audio.pause();
+    trackIndex=found;
+    newArrivalWaiting=false;
+    failures=0;
+    playbackRequested=true;
+    setTrack();
+    start();
+  });
   next.addEventListener('click',()=>{
     if(!tracks.length)return;
     if(playbackRequested){
