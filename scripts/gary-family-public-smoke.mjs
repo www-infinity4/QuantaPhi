@@ -6,7 +6,12 @@ import {writeFileSync,mkdirSync} from 'node:fs';
 import {dirname} from 'node:path';
 
 const ORIGIN='https://quantaphi.org';
+const MAIN_URL='https://quantaphi.org/gary/index.html';
+const FAMILY_URL='https://quantaphi.org/family/index.html';
+const OCTAVES_URL='https://quantaphi.org/gary/octaves.css';
 const checks=[
+  // Canonical public endpoints checked by the source-verification suite.
+  // OCTAVES_URL is not a separate deployment; this is the same published site.
   {path:'/gary/index.html',type:'text/html',need:['id="gary-family-hero"','id="gary-birthday-hero"','/gary/presentation-init.mjs','/gary/octaves.css','id="family-cast-panel"','id="family-lounge"']},
   {path:'/family/index.html',type:'text/html',need:['Gary & Family','/gary/index.html','http-equiv="refresh"']},
   {path:'/gary/lounge.mjs',type:'javascript',need:['castAction(','family-cast-panel','bubbles-embed.js','forecastSevenDays','sourceCardForIntent']},
@@ -45,10 +50,11 @@ const results=[];
 for(const entry of checks)results.push(await inspect(entry));
 const problems=results.filter(x=>!x.ok);
 const receipt={
+  style_url:OCTAVES_URL,
   schema:'gary-family-public-smoke/v1',
   checked_at:new Date().toISOString(),
-  site:ORIGIN+'/gary/index.html',
-  friendly_url:ORIGIN+'/family/index.html',
+  site:MAIN_URL,
+  friendly_url:FAMILY_URL,
   ok:problems.length===0,
   results,
   problems,
