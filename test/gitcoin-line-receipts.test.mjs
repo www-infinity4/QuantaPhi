@@ -94,7 +94,7 @@ test('HTML structural closing lines such as Moltnook guestbook </a> are real pro
   '+</a>',
   '+<section aria-label="Second link">',
   '+</a>',
-  '+<p>Other content</p>'].join('\\n');
+  '+<p>Other content</p>'].join("\n")
  const manifest=buildManifest(html,sourceHtml);
  assert.equal(manifest.lines.length,5);
  assert.equal(manifest.lines[1].eligible,true,'a real closing anchor is not discarded just for short length');
