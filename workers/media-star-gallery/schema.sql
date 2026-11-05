@@ -27,3 +27,17 @@ CREATE INDEX IF NOT EXISTS media_star_gallery_by_owner ON media_star_gallery_sub
 -- Owner payout receipts, when separately funded and independently signed, must
 -- stay in original payout ledgers. Neither gallery impression nor submission
 -- invokes any currency change.
+
+-- Per-creator impressions/clicks: browser observations, NOT paid conversions.
+-- No IP, email, user-agent or arbitrary payout instructions are stored.
+CREATE TABLE IF NOT EXISTS media_star_gallery_events (
+ event_id TEXT PRIMARY KEY,
+ content_id TEXT NOT NULL REFERENCES media_star_gallery_submissions(id),
+ session_id TEXT NOT NULL,
+ kind TEXT NOT NULL CHECK(kind IN ('impression','click','play_intent')),
+ created_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS media_star_gallery_events_by_card
+ ON media_star_gallery_events(content_id,created_at,kind);
+CREATE UNIQUE INDEX IF NOT EXISTS media_star_gallery_impression_once
+ ON media_star_gallery_events(content_id,session_id) WHERE kind='impression';
