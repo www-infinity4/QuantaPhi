@@ -1,26 +1,26 @@
 ---
 issue: 1589
 project: "WHO and Iowa live-radio Quick Card carousel"
-state: ci_passed
+state: merged
 dot: "🔴"
-progress_percent: 72
-progress_basis: "Seven source-backed cards; 3 IPR MP3 and 4 broadcaster official-player embeds; previous exact-head six GitHub checks passed (radio, ledger, validate, search-wallet, verify, payout), rerun pending this checkpoint-only update; 0 live browser acceptance"
-sessions_spent: 1
-sessions_remaining_estimate: "1–3 acceptance sessions; uncertain"
+progress_percent: 82
+progress_basis: "Original seven cards merged as PR #1690 with 6/6 CI and public IPR News Android readback; eight new broadcaster-supported streams added to follow-up branch, exact-head CI/browser acceptance pending; iHeart playback still provider-dependent."
+sessions_spent: 2
+sessions_remaining_estimate: "unknown; individual provider playback acceptance remains"
 agent: "ChatGPT"
 lease_id: null
 fence: null
 lease_expires_at: null
 task_session_id: null
 repo: www-infinity4/QuantaPhi
-branch: feat/iowa-live-radio-station-carousel-1589
+branch: feat/stream-radio-x-spaces-20261104
 last_observed_utc: "2026-11-05T04:08:00Z"
 tests: "Fixed two first-run regressions; previous exact head ae792f9ef8c460341eb78cef9f324b2a51f31979 reported six GitHub checks success, including radio and ledger; new head recheck pending"
-merged: false
-deployed: false
-live_verified: false
+merged: true
+deployed: true
+live_verified: true
 blocker: "Exact-head CI, approved embed/playback behavior, independent Android verification"
-next_action: "Verify exact-head GitHub Actions after harness and ledger fixes; then review, merge if safe, and check live Android playback"
+next_action: "Verify follow-up eight-stream exact-head CI and public Android KEXP/KNKX/RadioMV audio; then close only after provider playback acceptance."
 ---
 
 # Ticket #1589 — WHO and Iowa live radio Quick Card carousel
@@ -67,3 +67,9 @@ next_action: "Verify exact-head GitHub Actions after harness and ledger fixes; t
 ## Next single executable action
 
 Open scoped PR, inspect exact-head CI results, fix regressions, then review and merge once checks pass. Verify published carousel on Android for official iHeart player behavior and audio exclusivity. Log outcome in #1589.
+
+## Session 2 — Nov 4 / Nov 5 UTC, 2026
+
+- Source-backed additions: KEXP, Jazz24, KNKX, WFMU, RadioMV English, Spanish, German and Slavic, bringing carousel to 15. All stream URLs are published by their providers and embedded with user-initiated browser audio; no rebroadcasting or unlicensed SomaFM streams.
+- Source links: https://www.kexp.org/mobile/kexp-livestreams/ ; https://www.jazz24.org/streaming-links/ ; https://www.knkx.org/stream-knkx-online ; https://www.wfmu.org/audiostream.shtml ; https://api.radiomv.studio/docs/streaming
+- Original #1690 merged, original seven live, IPR News readback verified. Follow-up is staged until CI/merge/live audio verification.

@@ -1,0 +1,35 @@
+name: X Spaces Quick Card + Worldwide Radio Sources
+on:
+  pull_request:
+    paths:
+      - 'x-spaces-quick-card.mjs'
+      - 'quanta-feed-spaces.mjs'
+      - 'iowa-live-radio-cards.js'
+      - 'index.html'
+      - 'test/live-radio-x-spaces-quick-card.test.mjs'
+      - 'test/iowa-live-radio-cards.test.mjs'
+      - '.github/workflows/live-radio-x-spaces-quick-card.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'x-spaces-quick-card.mjs'
+      - 'quanta-feed-spaces.mjs'
+      - 'iowa-live-radio-cards.js'
+      - 'test/live-radio-x-spaces-quick-card.test.mjs'
+      - '.github/workflows/live-radio-x-spaces-quick-card.yml'
+permissions:
+  contents: read
+jobs:
+  quick-card-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax checks
+        run: |
+          node --check iowa-live-radio-cards.js
+          node --check x-spaces-quick-card.mjs
+      - name: Source and mobile-control regressions
+        run: node --test test/live-radio-x-spaces-quick-card.test.mjs test/iowa-live-radio-cards.test.mjs
