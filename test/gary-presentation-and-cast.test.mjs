@@ -75,3 +75,18 @@ test('continuity workflow checks the real URL, theme assets, and accepts source 
   assert.match(probe,/https:\/\/quantaphi\.org\/gary\/octaves\.css/);
   assert.match(probe,/redirect:|location\.replace|meta http-equiv/i);
 });
+
+
+test('Infinity-style spotlight is genuinely media-led with archive film artwork and usable actions',()=>{
+  const html=file('gary/index.html');
+  const css=file('gary/octaves.css');
+  assert.match(html,/class="family-spotlight"/);
+  assert.match(html,/archive\.org\/services\/img\/BlueSteel/);
+  assert.match(html,/archive\.org\/services\/img\/The_Star_Packer/);
+  assert.match(html,/href="#watch"/);
+  assert.match(html,/family-spotlight-radio/);
+  assert.match(css,/\.family-spotlight/);
+  assert.match(css,/object-fit:cover/);
+  assert.match(css,/prefers-reduced-motion/);
+  assert.doesNotMatch(html,/sponsored.*sponsored|fake.*ad impression/i);
+});
