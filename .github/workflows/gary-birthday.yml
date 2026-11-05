@@ -5,7 +5,7 @@ on:
     paths:
       - 'gary/**'
       - 'bubbles-embed.js'
-      - 'bubbles-ai.js'
+      - 'bubbles-family-prompts.js'
       - 'bubbles.html'
       - 'bubbles-family-modern.css'
       - 'test/gary-modern-bubbles.test.mjs'
@@ -22,7 +22,7 @@ on:
     paths:
       - 'gary/**'
       - 'bubbles-embed.js'
-      - 'bubbles-ai.js'
+      - 'bubbles-family-prompts.js'
       - 'bubbles.html'
       - 'bubbles-family-modern.css'
       - 'test/gary-modern-bubbles.test.mjs'
@@ -53,7 +53,7 @@ jobs:
       - name: Verify page module syntax
         run: |
           node --check bubbles-embed.js
-          node --check bubbles-ai.js
+          node --check bubbles-family-prompts.js
           node --check gary/lounge.mjs
           node --check gary/presentation.mjs
           node --check gary/presentation-init.mjs
