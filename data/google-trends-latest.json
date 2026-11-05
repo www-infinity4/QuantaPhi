@@ -3,12 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T13:01:44.735670Z",
+  "checked_at": "2026-11-05T13:31:17.738212Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "hailey bieber",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T13:10:00Z",
+      "related_news_urls": [
+        "https://wwd.com/beauty-industry-news/beauty-features/hailey-bieber-rhode-womens-health-5-million-1239392562/",
+        "https://ew.com/hailey-bieber-pmdd-struggles-after-giving-birth-12235909",
+        "https://www.eonline.com/news/1437813/hailey-bieber-details-pmdd-journey-after-welcoming-her-justin-biebers-son"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSykIStNaRJPsZVLeZfsjO0Ptvh5XKfNeMJrh4KynkmPDuC1a30TH6yxIJxPFI",
+      "image_credit": "WWD",
+      "news": [
+        {
+          "url": "https://wwd.com/beauty-industry-news/beauty-features/hailey-bieber-rhode-womens-health-5-million-1239392562/",
+          "title": "EXCLUSIVE: Hailey Bieber Opens Up About Women’s Health as Rhode Commits $5 Million to Research",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSykIStNaRJPsZVLeZfsjO0Ptvh5XKfNeMJrh4KynkmPDuC1a30TH6yxIJxPFI"
+        },
+        {
+          "url": "https://ew.com/hailey-bieber-pmdd-struggles-after-giving-birth-12235909",
+          "title": "Hailey Bieber breaks down PMDD struggles after giving birth to son: ‘Not a lot of conversation or research’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8MowD5QUKPKIuzNCqcALEEC6PURphUoznx-ae8n_3uFj3LVY_PNNVFERV1jo"
+        },
+        {
+          "url": "https://www.eonline.com/news/1437813/hailey-bieber-details-pmdd-journey-after-welcoming-her-justin-biebers-son",
+          "title": "Hailey Bieber Details \"Lonely Journey\" With PMDD After Giving Birth to Son Jack Bieber",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6BOSQGSaiUWmsqFZ8maHuA6nV6I6D8cAlihxgwfC6NCWc6zG4Y6D3IQ8uxtA"
+        }
+      ]
+    },
+    {
+      "query": "sunset park fire",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T13:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/c39wz44411w0o",
+        "https://www.foxnews.com/video/6407957676112",
+        "https://www.nbcnewyork.com/brooklyn/deadly-sunset-park-fire-thursday/6568034/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnLGt7IRRr1icJcth4rn1Rt0T5_XzR4Uj0_HDQXYeSfk3TnM_Itn_wDbZVax4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/c39wz44411w0o",
+          "title": "Six dead and others injured in fire at Brooklyn building",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnLGt7IRRr1icJcth4rn1Rt0T5_XzR4Uj0_HDQXYeSfk3TnM_Itn_wDbZVax4"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6407957676112",
+          "title": "WATCH LIVE: NYC Mayor Mamdani holds press conference on the Brooklyn fire",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb5YBZR0AIWUnhhkXcFCyJlEM_JcXaz5FKeS5u_-qZcUB0Bj75nKQdIfJXpvk"
+        },
+        {
+          "url": "https://www.nbcnewyork.com/brooklyn/deadly-sunset-park-fire-thursday/6568034/",
+          "title": "At least six people dead, more missing in Sunset Park overnight fire: FDNY",
+          "publisher": "NBC New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ251Sdm3SmXg4h_NJaZsudXfsTDZmHAareTF9s0CKSjD4i1TeoXxLR10z5ZM"
+        }
+      ]
+    },
+    {
+      "query": "sorana cirstea",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T13:10:00Z",
+      "related_news_urls": [
+        "https://www.mediafax.ro/sport/sorana-cirstea-fata-in-fata-cu-fiica-unui-fost-tenismen-roman-cine-este-adversara-sa-din-optimile-de-la-hong-kong-23837575",
+        "https://www.sport.ro/tenis/victimele-soranei-cirstea-numele-grele-doborate-de-romanca-in-2026.html",
+        "https://agerpres.ro/sport-extern/2026/11/03/tenis-sorana-cirstea-s-a-calificat-in-optimi-la-hong-kong-wta--1609523"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLK6y4_LjSPOkJGTQG_BZlNFv4UTvMlD1b-sBsaG9Wfb4sOmLduronHigYOiQ",
+      "image_credit": "Mediafax",
+      "news": [
+        {
+          "url": "https://www.mediafax.ro/sport/sorana-cirstea-fata-in-fata-cu-fiica-unui-fost-tenismen-roman-cine-este-adversara-sa-din-optimile-de-la-hong-kong-23837575",
+          "title": "Sorana Cîrstea, față în față cu fiica unui fost tenismen român. Cine este adversara sa…",
+          "publisher": "Mediafax",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLK6y4_LjSPOkJGTQG_BZlNFv4UTvMlD1b-sBsaG9Wfb4sOmLduronHigYOiQ"
+        },
+        {
+          "url": "https://www.sport.ro/tenis/victimele-soranei-cirstea-numele-grele-doborate-de-romanca-in-2026.html",
+          "title": "„Victimele” Soranei Cîrstea: numele grele, doborâte de româncă, în 2026",
+          "publisher": "Sport.ro",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVmnKbsa2lm0nPPQ8ZgSLfOH6QlSna3Nhksuxcp5JHnQlL0CfbE7f_tyamEYA"
+        },
+        {
+          "url": "https://agerpres.ro/sport-extern/2026/11/03/tenis-sorana-cirstea-s-a-calificat-in-optimi-la-hong-kong-wta--1609523",
+          "title": "Tenis: Sorana Cîrstea s-a calificat în optimi la Hong Kong (WTA)",
+          "publisher": "Agerpres",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ28aYsPEnE4H2_4iEExCjJUJxz-iPP1eCMzHsC9wNnPKTYzg8Z9_DmZRnci4s"
+        }
+      ]
+    },
+    {
+      "query": "scarlett johansson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T13:00:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/movies/movie-news/scarlett-johansson-on-the-batman-part-ii-role-1236748021/",
+        "https://gizmodo.com/scarlett-johansson-offers-a-surprising-tease-about-her-batman-part-ii-role-2000835295",
+        "https://www.justjared.com/2026/11/04/scarlett-johansson-shares-first-comments-on-the-batman-part-ii-casting-admits-mystery-role-was-very-hard-to-figure-out/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPI0pr78j9sGaEW_kDIpC9CNEKRvpBirC7ZWk3e5uNe7QPGapLL13KJSkWUzQ",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/scarlett-johansson-on-the-batman-part-ii-role-1236748021/",
+          "title": "Scarlett Johansson Breaks Silence on ‘The Batman Part II’ Role: “It Was Very Hard to Figure Out”",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPI0pr78j9sGaEW_kDIpC9CNEKRvpBirC7ZWk3e5uNe7QPGapLL13KJSkWUzQ"
+        },
+        {
+          "url": "https://gizmodo.com/scarlett-johansson-offers-a-surprising-tease-about-her-batman-part-ii-role-2000835295",
+          "title": "Scarlett Johansson Offers a Surprising Tease About Her ‘Batman Part II’ Role",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNNIiNKQVGUAfX7GiwjBbHlOe0DA384mbljSMKp58t069zPNO9wOu2xZq81Qk"
+        },
+        {
+          "url": "https://www.justjared.com/2026/11/04/scarlett-johansson-shares-first-comments-on-the-batman-part-ii-casting-admits-mystery-role-was-very-hard-to-figure-out/",
+          "title": "Scarlett Johansson Shares First Comments on 'The Batman Part II' Casting, Admits Mystery Role Was 'Very Hard to Figure Out'",
+          "publisher": "Just Jared",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8tKk1GiJlVHVZLEpUfbzJ2p-q4ZAg-BBbKhhLxGY8GJr3td_7HtL_70ls3Pw"
+        }
+      ]
+    },
+    {
+      "query": "aaron boone",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T13:00:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/04/sports/red-sox-shelley-duncan/",
+        "https://sports.yahoo.com/articles/red-sox-bold-move-steal-102211989.html",
+        "https://nypost.com/2026/11/04/sports/yankees-triple-a-manager-shelley-duncan-joining-red-sox/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZZpWiLslXfBLTKVW4NwKGGwB_2yEhGzKV2hcbP-Lwtz8DiI9CqlN0hTMh-c8",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/04/sports/red-sox-shelley-duncan/",
+          "title": "Red Sox hiring the Yankees’ Shelley Duncan for Chad Tracy’s coaching staff",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZZpWiLslXfBLTKVW4NwKGGwB_2yEhGzKV2hcbP-Lwtz8DiI9CqlN0hTMh-c8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/red-sox-bold-move-steal-102211989.html",
+          "title": "Red Sox Make Bold Move, Steal Key Coach From The Yankees",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYEAOVbuxRTcYLWs6E79EyuQ-QCE5Jsjzk2Y1o_CgA1hz-IKnVuxxuLO3GBt4"
+        },
+        {
+          "url": "https://nypost.com/2026/11/04/sports/yankees-triple-a-manager-shelley-duncan-joining-red-sox/",
+          "title": "Yankees’ Triple-A manager Shelley Duncan poached by Red Sox",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuKlZSbrD9RghMT-ygi8CXy0cbLLMyegAYCBdyttRkgbIbvU4ro0cTNPHbkPo"
+        }
+      ]
+    },
+    {
+      "query": "price of gold today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T13:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/05/gold-hits-two-week-high-as-dollar-yields-ease-after-us-midterms.html",
+        "https://www.barrons.com/articles/gold-price-dollar-bond-yields-midterm-elections-25a81dad",
+        "https://www.wsj.com/finance/commodities-futures/gold-climbs-on-softer-dollar-falling-treasury-yields-after-u-s-midterms-b16998e4"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiEcVbi7zFGXK8TvH9RutTg58OrCNLtNurGgafDgEpVFWkEBUL1xRc1Zkm7Js",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/05/gold-hits-two-week-high-as-dollar-yields-ease-after-us-midterms.html",
+          "title": "Gold hits 2-week high as dollar, oil, yields fall after US midterms",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiEcVbi7zFGXK8TvH9RutTg58OrCNLtNurGgafDgEpVFWkEBUL1xRc1Zkm7Js"
+        },
+        {
+          "url": "https://www.barrons.com/articles/gold-price-dollar-bond-yields-midterm-elections-25a81dad",
+          "title": "Gold Prices Are Above $4,000 After Democrats Win Big in Midterm Elections",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52ckBPKPjKuT_DlYwoJWtA2eYRCtcidMteXOB2GR-KTWpMsT_6KWf1f2PKMc"
+        },
+        {
+          "url": "https://www.wsj.com/finance/commodities-futures/gold-climbs-on-softer-dollar-falling-treasury-yields-after-u-s-midterms-b16998e4",
+          "title": "Gold Climbs on Softer Dollar, Falling Treasury Yields After U.S. Midterms",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZi7Y8-NtdLL0QYLBoT9TmeLpKOVshON830VUC4NHelu4tn-SWdRBdc_cox2g"
+        }
+      ]
+    },
+    {
+      "query": "carson daly",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T12:50:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/05/entertainment/carson-daly-lands-major-new-role-at-today-show/",
+        "https://www.today.com/news/carson-daly-saturday-today-anchor-rcna607601",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6vqwQAn8xyLy8iPKbKanAkL1JJO6PNw1UsTX5gu4KveJZ7tm7qH2TqcJrK10",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/05/entertainment/carson-daly-lands-major-new-role-at-today-show/",
+          "title": "‘Today’ host Carson Daly lands a major new role: ‘I’m thrilled’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6vqwQAn8xyLy8iPKbKanAkL1JJO6PNw1UsTX5gu4KveJZ7tm7qH2TqcJrK10"
+        },
+        {
+          "url": "https://www.today.com/news/carson-daly-saturday-today-anchor-rcna607601",
+          "title": "Carson Daly Announced as Co-Anchor of Saturday TODAY",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4t1B2PJqDaosvd28ZjMM5D7bTBL3dx6mX12QH-Uv9fmS7i4JureLSWvZ2uso"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/",
+          "title": "Carson Daly joins 'Saturday Today' beside Laura Jarrett, will keep 'Today' job",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ZWb1to5wMUtpcwsMsQKF9QctPBfE5UvsAHP3eKjVIODbENX8XUjW4wIT3YA"
+        }
+      ]
+    },
+    {
+      "query": "voice of logan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T12:40:00Z",
+      "related_news_urls": [
+        "https://www.wcvb.com/article/voice-of-logan-winner-announcement-boston/74343292",
+        "https://www.cbsnews.com/boston/news/voice-of-logan-airport-winner-chris-donisi-burlington-ma/",
+        "https://whdh.com/news/arlington-pipefitter-voted-winner-of-the-voice-of-logan-contest/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdXB_Z3xScphLYAF-0IDD80eagBRW8zU-12P0ADAip3G1nIYVNTZYup9g0Ew",
+      "image_credit": "WCVB",
+      "news": [
+        {
+          "url": "https://www.wcvb.com/article/voice-of-logan-winner-announcement-boston/74343292",
+          "title": "'Voice of Logan' winner to be announced today",
+          "publisher": "WCVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdXB_Z3xScphLYAF-0IDD80eagBRW8zU-12P0ADAip3G1nIYVNTZYup9g0Ew"
+        },
+        {
+          "url": "https://www.cbsnews.com/boston/news/voice-of-logan-airport-winner-chris-donisi-burlington-ma/",
+          "title": "Voice of Logan Airport winner is Chris Donisi, a pipefitter from Burlington, Massachusetts",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbsNTtTJaRXiun4_xFSquUel9B3FD9TLsJm-qBeyRTh1GjZBoS8mJPvwrcZNo"
+        },
+        {
+          "url": "https://whdh.com/news/arlington-pipefitter-voted-winner-of-the-voice-of-logan-contest/",
+          "title": "Arlington pipefitter voted winner of ‘The Voice of Logan’ contest - Boston News, Weather, Sports",
+          "publisher": "WHDH",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJ2TLY-RkqCDZDdGavKSebyNjElxzuyekmsGU4hkfqR8Qx7gbvrpCgmkiPSQ"
+        }
+      ]
+    },
+    {
       "query": "hurricane season",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-05T12:30:00Z",
       "related_news_urls": [
         "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
@@ -48,7 +328,7 @@
       "related_news_urls": [
         "https://www.usatoday.com/story/entertainment/movies/2026/11/04/charles-f-porter-dead-cancer-battle/92619942007/",
         "https://deadline.com/2026/11/charles-porter-actor-dead-1237213861/",
-        "https://people.com/charles-f-porter-dies-47-hodgkin-lymphoma-12237355"
+        "https://www.hollywoodreporter.com/movies/movie-news/charles-porter-dead-finding-faith-duke-wendell-scott-1236748133/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq7Zkw3Hcpr9PrGkZB5ijLxiX04bR230oajvje5ZkVBsEU7tgN7Rb0CklxnV8",
       "image_credit": "USA Today",
@@ -68,291 +348,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJc6VsYQbLKJUi6p9FZ4Iz3gapDa1ipYp07MmvkSTtKy6aRojUVwpGCmuEDcc"
         },
         {
-          "url": "https://people.com/charles-f-porter-dies-47-hodgkin-lymphoma-12237355",
-          "title": "Charles F. Porter, Actor and Finding Faith Producer, Dies at 47",
-          "publisher": "People.com",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/charles-porter-dead-finding-faith-duke-wendell-scott-1236748133/",
+          "title": "Charles F. Porter, Actor and ‘Finding Faith’ Producer, Dies at 47",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREqIyrhbXJwCLk7yZcu0m_4RggTmlubYjtwkYQSgGOCCFnikdtviYacf2uDto"
-        }
-      ]
-    },
-    {
-      "query": "amlodipine recall",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T12:20:00Z",
-      "related_news_urls": [
-        "https://www.wusa9.com/article/news/nation-world/blood-pressure-medication-recalled-olmesartan-medoxomil-amlodipine-hydrochlorothiazide/507-8f431ffb-301b-42a1-9064-9d09c86215be",
-        "https://www.foxbusiness.com/lifestyle/thousands-blood-pressure-medication-bottles-recalled-nationwide-pills-fail-quality-test",
-        "https://www.prevention.com/health/a74322378/macleods-pharmaceuticals-blood-pressure-medication-recall-fda/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKeSSHKGAxgV8Co_yU9kG9q1IvoqhgmvLWqZ5yjeIi0B9rFBiUHKvDbPgP_pQ",
-      "image_credit": "WUSA9",
-      "news": [
-        {
-          "url": "https://www.wusa9.com/article/news/nation-world/blood-pressure-medication-recalled-olmesartan-medoxomil-amlodipine-hydrochlorothiazide/507-8f431ffb-301b-42a1-9064-9d09c86215be",
-          "title": "Blood pressure medication recalled as it may be ineffective, FDA says",
-          "publisher": "WUSA9",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKeSSHKGAxgV8Co_yU9kG9q1IvoqhgmvLWqZ5yjeIi0B9rFBiUHKvDbPgP_pQ"
-        },
-        {
-          "url": "https://www.foxbusiness.com/lifestyle/thousands-blood-pressure-medication-bottles-recalled-nationwide-pills-fail-quality-test",
-          "title": "Thousands of blood pressure medication bottles recalled nationwide after pills fail quality test",
-          "publisher": "Fox Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoXf185PCFrN0pVpZG9jxV8wsw7oBnMiC6Nd1eLuFwBCFvrcqWfgvgQBJeZ9I"
-        },
-        {
-          "url": "https://www.prevention.com/health/a74322378/macleods-pharmaceuticals-blood-pressure-medication-recall-fda/",
-          "title": "FDA Announces 3,700-Bottle Recall of Popular Blood Pressure Medication",
-          "publisher": "Prevention",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Obm0aqF3o3hkY-sDFFUgAXQDLvI3DOhcghtDfsjcKDpvGKodFWqptbKo6iY"
-        }
-      ]
-    },
-    {
-      "query": "amc stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T12:20:00Z",
-      "related_news_urls": [
-        "https://investor.amctheatres.com/news-events/press-releases/detail/446/amc-entertainment-holdings-inc-reports-third-quarter-2026-results-setting-new-all-time-records-for-quarterly-revenue-and-adjusted-ebitda",
-        "https://www.barrons.com/articles/amc-entertainment-earnings-stock-price-0370ef6b",
-        "https://finance.yahoo.com/markets/stocks/articles/amc-entertainment-amc-q3-earnings-010002745.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxU06cehPgRthSHtsRr0gv8bx2-_vlQNvCccEK36LTWPX0YLPcRQRQnVs2rNU",
-      "image_credit": "AMC Entertainment Holdings, Inc.",
-      "news": [
-        {
-          "url": "https://investor.amctheatres.com/news-events/press-releases/detail/446/amc-entertainment-holdings-inc-reports-third-quarter-2026-results-setting-new-all-time-records-for-quarterly-revenue-and-adjusted-ebitda",
-          "title": "AMC Entertainment Holdings, Inc. Reports Third Quarter 2026 Results, Setting New All-Time Records for Quarterly Revenue and Adjusted EBITDA",
-          "publisher": "AMC Entertainment Holdings, Inc.",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxU06cehPgRthSHtsRr0gv8bx2-_vlQNvCccEK36LTWPX0YLPcRQRQnVs2rNU"
-        },
-        {
-          "url": "https://www.barrons.com/articles/amc-entertainment-earnings-stock-price-0370ef6b",
-          "title": "AMC Posts Its Highest Revenue Quarter Ever. CEO Aron Says Critics ‘Were Wrong.’",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQa70LQ26sQ7ag7rlFYXpsvL0vnkrD66unOgQOZMgfd3aWjuQWdghVpUFnBBw"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/amc-entertainment-amc-q3-earnings-010002745.html",
-          "title": "AMC Entertainment (AMC) Q3 Earnings: Taking a Look at Key Metrics Versus Estimates",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThbSWsrlBeUrh1EaE9u-vDPMp7B0or5QtZik8oirVTnr8ZhUZMHUaTL3ObDY8"
-        }
-      ]
-    },
-    {
-      "query": "birmingham mayor",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T12:20:00Z",
-      "related_news_urls": [
-        "https://www.al.com/news/birmingham/2026/11/calera-mayor-steps-down-after-alleged-racist-remarks-resignation-letter-rings-hollow.html",
-        "https://www.shelbycountyreporter.com/news/city-of-calera-mayor-resigns-in-result-of-alleged-racist-comments-89c8648d",
-        "https://abc3340.com/news/local/calera-council-to-consider-formally-condemning-mayor-over-racially-insensitive-remarks"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSV6laqYK7E_BzAcal-SjtSF7y82jhHkMcQfNr5iWS8V5hB3oyYnKQqZouP8nU",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/news/birmingham/2026/11/calera-mayor-steps-down-after-alleged-racist-remarks-resignation-letter-rings-hollow.html",
-          "title": "Calera mayor steps down after alleged racist remarks: ‘Resignation letter rings hollow’",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSV6laqYK7E_BzAcal-SjtSF7y82jhHkMcQfNr5iWS8V5hB3oyYnKQqZouP8nU"
-        },
-        {
-          "url": "https://www.shelbycountyreporter.com/news/city-of-calera-mayor-resigns-in-result-of-alleged-racist-comments-89c8648d",
-          "title": "Calera mayor resigns following backlash from discriminatory comments",
-          "publisher": "Shelby County Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaUAwvdtXjEpZ-PoIOmH3sN6rQGUNFU3ceB1hXLyZevAMfQ1Lb2srUl9ByEMU"
-        },
-        {
-          "url": "https://abc3340.com/news/local/calera-council-to-consider-formally-condemning-mayor-over-racially-insensitive-remarks",
-          "title": "Calera council to consider formally condemning mayor over racially insensitive remarks",
-          "publisher": "WBMA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUHfzVkPNlh2oURWQ8BsW1Ym2ubhOqlaSemIfDujxAeAqKQT-025aLkFkOj0"
-        }
-      ]
-    },
-    {
-      "query": "lotto",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T12:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/articles/sd-lottery-powerball-lotto-america-043005965.html",
-        "https://www.greatfallstribune.com/story/news/local/2026/11/04/montana-lottery-results-wednesday-november-4-2026/92620872007/",
-        "https://www.sctimes.com/story/news/local/2026/11/04/minnesota-lottery-results-wednesday-november-4-2026/92621065007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fwzXHogzHWN9IbwftbbFR-ufYQ_-EKzDPkI-NHPuWBveIrQlIDSRMdIRkNA",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/articles/sd-lottery-powerball-lotto-america-043005965.html",
-          "title": "SD Lottery Powerball, Lotto America winning numbers for Nov. 4, 2026",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fwzXHogzHWN9IbwftbbFR-ufYQ_-EKzDPkI-NHPuWBveIrQlIDSRMdIRkNA"
-        },
-        {
-          "url": "https://www.greatfallstribune.com/story/news/local/2026/11/04/montana-lottery-results-wednesday-november-4-2026/92620872007/",
-          "title": "Montana Lottery Powerball, Lotto America results for Nov. 4, 2026",
-          "publisher": "Great Falls Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSL8ciWc_U9d9x3KzEzgpshC1-eadM9JupPUDMoJ_EDEdKUH0i1PKnUyAZpxI"
-        },
-        {
-          "url": "https://www.sctimes.com/story/news/local/2026/11/04/minnesota-lottery-results-wednesday-november-4-2026/92621065007/",
-          "title": "MN Lottery Results: Powerball, Lotto America winning numbers for Nov. 4, 2026",
-          "publisher": "St. Cloud Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKj_vT8iZ2jASVs6EFu53EruexGaDeUCWWNjNkQwRzTFVQbdA7QJ2C9g3gqA"
-        }
-      ]
-    },
-    {
-      "query": "ben shelton",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T12:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50353478/ben-shelton-adds-coach-juan-carlos-ferrero-2027-staff",
-        "https://sports.yahoo.com/articles/ben-shelton-father-bryan-gets-120709530.html",
-        "https://www.si.com/tennis/tennis-mailbag-will-ben-shelton-juan-carlos-ferrero-perfect-match"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuJSjArcSeFF_5cUGnsl79ZvdqaM9AoTtE_5HicPfKXVbBDY-XP6FGpuXR038",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50353478/ben-shelton-adds-coach-juan-carlos-ferrero-2027-staff",
-          "title": "Ben Shelton adds coach Juan Carlos Ferrero to 2027 staff",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuJSjArcSeFF_5cUGnsl79ZvdqaM9AoTtE_5HicPfKXVbBDY-XP6FGpuXR038"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ben-shelton-father-bryan-gets-120709530.html",
-          "title": "Ben Shelton’s Father Bryan Gets Special Credit from Ex-World No. 1 For Being Open To Hire Juan Carlos Ferrero",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP2P7sorI_YUbFAHXODzzCow5DeLTU5HXRCyaf4Gh-vrA2tLItJzBaXsZlL_c"
-        },
-        {
-          "url": "https://www.si.com/tennis/tennis-mailbag-will-ben-shelton-juan-carlos-ferrero-perfect-match",
-          "title": "Tennis Mailbag: Will Ben Shelton and Juan Carlos Ferrero Be a Perfect Match?",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7nz8fF9yxV1QpNYZDe-qq3QArARIdkqJv8Wfkk640TqdSG0TZKWtQ3WR8VE"
-        }
-      ]
-    },
-    {
-      "query": "red cup day",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T12:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/lifestyle/articles/starbucks-red-cup-day-2026-172738102.html",
-        "https://about.starbucks.com/stories/2026/discover-starbucks-2026-holiday-merchandise-in-coffeehouses-starting-nov-5/",
-        "https://www.yahoo.com/news/us/article/the-starbucks-holiday-menu-includes-a-tiramisu-drink-debut--and-the-viral-bear-cup-is-back-153304404.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQksCSeBY-3dOJJdXsL9Mxf5ICOgi1LwG-jHT3lBIAmFrGatVX5o3W49f7Qn_A",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/lifestyle/articles/starbucks-red-cup-day-2026-172738102.html",
-          "title": "Starbucks Red Cup Day 2026: Everything to Know to Snag the Freebie",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQksCSeBY-3dOJJdXsL9Mxf5ICOgi1LwG-jHT3lBIAmFrGatVX5o3W49f7Qn_A"
-        },
-        {
-          "url": "https://about.starbucks.com/stories/2026/discover-starbucks-2026-holiday-merchandise-in-coffeehouses-starting-nov-5/",
-          "title": "Discover Starbucks 2026 holiday merchandise in coffeehouses starting Nov. 5",
-          "publisher": "Starbucks",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW4ZUU4CM1XsKRgwFT4b2hhugrBG1bSt_KqowRFa8IybDdXzMe1ouxJz6WN0"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/article/the-starbucks-holiday-menu-includes-a-tiramisu-drink-debut--and-the-viral-bear-cup-is-back-153304404.html",
-          "title": "The Starbucks holiday menu includes a tiramisu drink debut — and the viral bear cup is back",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfGnqrrdyrE5dvYY6pOn8-ieudi1vRpM0isg0g8y-kToSCKNC5j-gTDySe0AQ"
-        }
-      ]
-    },
-    {
-      "query": "weather philadelphia",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcphiladelphia.com/weather/stories-weather/rain-returns-after-17-days/4491679/",
-        "https://www.wgal.com/article/rain-returns-tonight-lingers-into-thursday/74336415",
-        "https://www.cbsnews.com/philadelphia/video/how-much-rain-will-philadelphia-see-thursday-when-18-day-dry-stretch-ends/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNiiUmPyP0BR4pMF8r6DIlVZdRf4gVabBSN6kIaNAX7_QBFp4O2_NL4FjuGyM",
-      "image_credit": "NBC10 Philadelphia",
-      "news": [
-        {
-          "url": "https://www.nbcphiladelphia.com/weather/stories-weather/rain-returns-after-17-days/4491679/",
-          "title": "Rain to return to Philly region after 17 days",
-          "publisher": "NBC10 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNiiUmPyP0BR4pMF8r6DIlVZdRf4gVabBSN6kIaNAX7_QBFp4O2_NL4FjuGyM"
-        },
-        {
-          "url": "https://www.wgal.com/article/rain-returns-tonight-lingers-into-thursday/74336415",
-          "title": "Rain returns tonight, lingers into Thursday",
-          "publisher": "WGAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNwF87EST6Rj3_U8lBrk32c0kFDXrD6NBh6QYg2oSrWWvp_fslDC8f1TSb-8"
-        },
-        {
-          "url": "https://www.cbsnews.com/philadelphia/video/how-much-rain-will-philadelphia-see-thursday-when-18-day-dry-stretch-ends/",
-          "title": "How much rain will Philadelphia see Thursday when 18-day dry stretch ends?",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGbFTgOSBn9LeTg-wWAc2VEHUlUARhtwjxiJKy2FLu4mBignY2MvNszf5yyac"
-        }
-      ]
-    },
-    {
-      "query": "marlon",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T12:10:00Z",
-      "related_news_urls": [
-        "https://www.baltimoresun.com/2026/11/04/ravens-marlon-humphrey-fans-always-freaking-out/",
-        "https://heavy.com/sports/nfl/baltimore-ravens/marlon-humphrey-mockery-jesse-minter-mantra/",
-        "https://www.5newsonline.com/video/sports/locked-on/lo-baltimore/locked-on-ravens-hit/marlon-humphrey-doubles-down-on-controversial-comments-admits-embarrassing-baltimore-ravens-play/535-079b90ec-09a3-483a-977c-89abca3e3089"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNzFJ6gyf63jvGYhHxHdtsuE-lpIKMbfMzJzWnJbKYqv9cTsJyW7131TIi1KE",
-      "image_credit": "Baltimore Sun",
-      "news": [
-        {
-          "url": "https://www.baltimoresun.com/2026/11/04/ravens-marlon-humphrey-fans-always-freaking-out/",
-          "title": "Ravens’ Marlon Humphrey questions criticism, says fans ‘always freaking out’",
-          "publisher": "Baltimore Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNzFJ6gyf63jvGYhHxHdtsuE-lpIKMbfMzJzWnJbKYqv9cTsJyW7131TIi1KE"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/baltimore-ravens/marlon-humphrey-mockery-jesse-minter-mantra/",
-          "title": "Ravens’ All-Pro Called Out After ‘Mockery’ of Jesse Minter’s Mantra",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD7fRq7itvgskg1T5Aok2bmFlFPho23O8bTvNMoGSAu1ctQWUVHZIWPLhlzN4"
-        },
-        {
-          "url": "https://www.5newsonline.com/video/sports/locked-on/lo-baltimore/locked-on-ravens-hit/marlon-humphrey-doubles-down-on-controversial-comments-admits-embarrassing-baltimore-ravens-play/535-079b90ec-09a3-483a-977c-89abca3e3089",
-          "title": "Marlon Humphrey DOUBLES DOWN on CONTROVERSIAL comments, admits EMBARRASSING Baltimore Ravens play",
-          "publisher": "5newsonline.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8oJD1N8BLh_jHYLAdmEb_OM-rjWAIDWYqyj6CLaaZjmclA3JPGGsFwR54GWQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSlXcBP_otjYdPf00wqyWgDPifq0arEckNnZxB_GlrdasK-uURanuvCkDlZC4"
         }
       ]
     }
