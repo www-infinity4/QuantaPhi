@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T08:31:54.764402Z",
+  "checked_at": "2026-11-05T09:01:44.361300Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "la",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T08:40:00Z",
+      "related_news_urls": [
+        "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/",
+        "https://www.latimes.com/california/story/2026-11-04/raman-on-cusp-of-becoming-mayor-analysts-predict-citing-expected-results-from-late-votes",
+        "https://www.politico.com/news/2026/11/04/nithya-raman-rise-jolts-la-establishment-01151074"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A",
+      "image_credit": "ABC7 Los Angeles",
+      "news": [
+        {
+          "url": "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/",
+          "title": "Live election results: Raman increases lead over Bass in LA mayoral race",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A"
+        },
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-04/raman-on-cusp-of-becoming-mayor-analysts-predict-citing-expected-results-from-late-votes",
+          "title": "Raman keeps widening her lead against Bass, closing in on becoming L.A.’s next mayor",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmWSmEczC4O3U1GW9TTaZvxGQLk83qJ6pm33WUG_qwDYddgGqlaHmVH3w81-4"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/04/nithya-raman-rise-jolts-la-establishment-01151074",
+          "title": "‘An earthquake’: Nithya Raman’s rise jolts LA’s political establishment",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSfZX7M3-BrtTIKwtnwWnFK4cQP7IZ3c8QOlgkIe2g9bLke3trKgoCYajKlWI"
+        }
+      ]
+    },
+    {
+      "query": "jeff bezos",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T08:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/world/articles/fact-check-fake-image-shows-051409685.html",
+        "https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk",
+        "https://pluang.com/en/news-feed/jeff-bezos-pensiunan-sp500-risiko-saham-ai"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHKvGiYmsvgSTz2wo5osFxtWUBCmfv-mOaiblz7rmLfVdzxPK0NDBNrolpBvU",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/world/articles/fact-check-fake-image-shows-051409685.html",
+          "title": "Fact Check: FAKE Image Shows Jeff Bezos After 'Hair Transplant' -- It Is AI-Altered",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHKvGiYmsvgSTz2wo5osFxtWUBCmfv-mOaiblz7rmLfVdzxPK0NDBNrolpBvU"
+        },
+        {
+          "url": "https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk",
+          "title": "Don’t be fooled by the fake hair on these famous baldies",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyKSfva6STBduzyp0m3xZ1Bthq4o098G7S52vbHcVegBxFxwWvEoeA4Nkewp0"
+        },
+        {
+          "url": "https://pluang.com/en/news-feed/jeff-bezos-pensiunan-sp500-risiko-saham-ai",
+          "title": "Bezos advises retirees to buy the S&P 500 over AI stocks, but the index's tech concentration poses hidden risks.",
+          "publisher": "Pluang",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCntQcx8-b9TFLmdZa61BuT8pN61k71J3_iK3FT4l7v_5q2otAcuCZzB0JR1Q"
+        }
+      ]
+    },
+    {
+      "query": "suite life zack and cody residuals",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T08:20:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1437783/dylan-sprouses-suite-life-of-zack-cody-residual-paycheck-revealed",
+        "https://variety.com/2026/tv/news/dylan-sprouse-residual-check-suite-life-of-zack-and-cody-1236939089/",
+        "https://ew.com/suite-life-star-phill-lewis-claims-show-filmed-extra-episodes-without-having-to-pay-cast-12224963"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUA6fhXM9xDl_5d3vyhZzNdVHplep9uhAYTr5g_X9KchNCWUfu1DesrBftfXw",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1437783/dylan-sprouses-suite-life-of-zack-cody-residual-paycheck-revealed",
+          "title": "Dylan Sprouse Reveals Mind-Blowing Residual Paycheck From Suite Life of Zack & Cody",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUA6fhXM9xDl_5d3vyhZzNdVHplep9uhAYTr5g_X9KchNCWUfu1DesrBftfXw"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/dylan-sprouse-residual-check-suite-life-of-zack-and-cody-1236939089/",
+          "title": "Dylan Sprouse Received One 'Suite Life' Residual Check for Five Cents",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFIdMCzDMnEXB_yR23N5nowjlG1XN2_tQ5MjU5QVNMKpGjEAVqkTO-zYXZiWw"
+        },
+        {
+          "url": "https://ew.com/suite-life-star-phill-lewis-claims-show-filmed-extra-episodes-without-having-to-pay-cast-12224963",
+          "title": "‘Suite Life’ star Phill Lewis claims show filmed extra episodes without having to pay cast",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJvnvOhliVdIEJgjQbNVxfkq5ZdDkkc2-4aJzSTF-sm8AYDvTD8bL5JooJ5-0"
+        }
+      ]
+    },
     {
       "query": "josh duhamel",
       "approx_searches": "100+",
@@ -108,41 +213,6 @@
           "publisher": "Politico",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ-eYBJpa2nJSli8MGndzhE7J9gxnvU52Bjk0pWBU4h1tF25ZPlMARzLRdfzM"
-        }
-      ]
-    },
-    {
-      "query": "raman vs bass",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T07:50:00Z",
-      "related_news_urls": [
-        "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/",
-        "https://www.latimes.com/california/story/2026-11-04/raman-on-cusp-of-becoming-mayor-analysts-predict-citing-expected-results-from-late-votes",
-        "https://www.politico.com/news/2026/11/04/nithya-raman-rise-jolts-la-establishment-01151074"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A",
-      "image_credit": "ABC7 Los Angeles",
-      "news": [
-        {
-          "url": "https://abc7.com/live-updates/california-election-day-2026-los-angeles-mayor-governor-propositions-top-mind-voters/20011511/",
-          "title": "Live election results: Raman increases lead over Bass in LA mayoral race",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1OKnOiM7vm8s2YRoLxzAFvzhx3-7V2vqxMSY4amsEjjcNKLZ9c4j9Y1WwI0A"
-        },
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-04/raman-on-cusp-of-becoming-mayor-analysts-predict-citing-expected-results-from-late-votes",
-          "title": "Raman keeps widening her lead against Bass, closing in on becoming L.A.’s next mayor",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmWSmEczC4O3U1GW9TTaZvxGQLk83qJ6pm33WUG_qwDYddgGqlaHmVH3w81-4"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/04/nithya-raman-rise-jolts-la-establishment-01151074",
-          "title": "‘An earthquake’: Nithya Raman’s rise jolts LA’s political establishment",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSfZX7M3-BrtTIKwtnwWnFK4cQP7IZ3c8QOlgkIe2g9bLke3trKgoCYajKlWI"
         }
       ]
     },
@@ -275,76 +345,6 @@
           "publisher": "Yahoo News UK",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi2S-eENII9rKQP2mrrEHGToE8eWbhQBvyjQZ45DdQ7mROoRnTsHF_VkhZJeI"
-        }
-      ]
-    },
-    {
-      "query": "hong kong open",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T07:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
-        "https://sports.inquirer.net/705074/alex-eala-battles-czech-tereza-valentova-in-hong-kong-open-last-16",
-        "https://www.scmp.com/sport/hong-kong/article/3373181/alexandra-eala-super-happy-be-back-aims-finish-season-high-hong-kong-open"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkStoz7ECXfIvVdc0oyU0TbFXuEw-qjRx99tfXd_tLPaqlb7qDR0HlDKpRUCo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50368453/alex-eala-emerson-jones-hong-kong-open-last-16",
-          "title": "Alex Eala brushes aside late replacement Emerson Jones to reach Hong Kong Open round of 16",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkStoz7ECXfIvVdc0oyU0TbFXuEw-qjRx99tfXd_tLPaqlb7qDR0HlDKpRUCo"
-        },
-        {
-          "url": "https://sports.inquirer.net/705074/alex-eala-battles-czech-tereza-valentova-in-hong-kong-open-last-16",
-          "title": "Alex Eala battles Czech Tereza Valentova in Hong Kong Open last 16",
-          "publisher": "Inquirer.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT1f0aXiOL7AxbHH2SsZlasfcgr6apoxGP7uCYiVKmeUqg6p-7kzYr3MmvXi4"
-        },
-        {
-          "url": "https://www.scmp.com/sport/hong-kong/article/3373181/alexandra-eala-super-happy-be-back-aims-finish-season-high-hong-kong-open",
-          "title": "Alexandra Eala ‘super happy’ to be back, aims to finish on high at Hong Kong Open",
-          "publisher": "South China Morning Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8KPpEHBsfofR7nhsab3mfIULrsZO4OrbQSDrTFmCqFUYgaDmkZKHNuC11x4"
-        }
-      ]
-    },
-    {
-      "query": "aliyah boston",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T07:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/aliyah-bostons-much-easier-surgery-015846998.html",
-        "https://athlonsports.com/wnba/indiana-fever/indiana-fever-aliyah-boston-makes-decision-after-surgery",
-        "https://www.essentiallysports.com/wnba-basketball-news-unrivaled-kate-martin-mutually-agree-to-terminate-league-contract/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefHlaOZqjHXNe2qnQPnNSs-OkI6z3I8jLP7pt3day69EgwOwlzSBk1yX9z_A",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/aliyah-bostons-much-easier-surgery-015846998.html",
-          "title": "Aliyah Boston's 'Much Easier' Surgery Admission Should Worry Fever Opponents",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefHlaOZqjHXNe2qnQPnNSs-OkI6z3I8jLP7pt3day69EgwOwlzSBk1yX9z_A"
-        },
-        {
-          "url": "https://athlonsports.com/wnba/indiana-fever/indiana-fever-aliyah-boston-makes-decision-after-surgery",
-          "title": "Indiana Fever’s Aliyah Boston Makes Decision After Surgery",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSg1tzIDMfwr22iV2kN054rBCbwUyYQz0uFjBvGm6M-MNcjlOUMY3iwTxteoxY"
-        },
-        {
-          "url": "https://www.essentiallysports.com/wnba-basketball-news-unrivaled-kate-martin-mutually-agree-to-terminate-league-contract/",
-          "title": "Unrivaled & Kate Martin Mutually Agree to Terminate League Contract",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKi_YV-IVeLmG61u6m06jNGkzf7y2aOoa6_lRopCtkmM9TgsW_zlQsx-bhkm0"
         }
       ]
     }
