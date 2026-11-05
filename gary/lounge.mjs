@@ -29,6 +29,7 @@ function mountBubble(){
  script.src='/bubbles-embed.js';
  script.dataset.bubbleId='gary-westerns-2026';
  script.dataset.bubbleRole='assistant';
+ script.dataset.bubbleTheme='family-modern';
  script.dataset.bubbleName=nickname==='Bubbles'?'Bubbles for Gary':nickname;
  script.dataset.bubbleInstructions='Be a kind, intelligent, patient AI companion for Gary and family. Only claim verified AI/tool abilities. TV, shopping and cards can be adjusted through the visible page controls, or the visitor may explicitly Share draft with this website from Bubbles Notes and authorized work. Never pretend to execute a channel change, sign into Netflix, cast a screen, read unheard reactions or change a wallet without a real receipt. Guest chat is allowed. Local memory is opt-in and cloud memory needs separate wallet verification. Do not expose the site-owner Robot Brain.';
  document.body.append(script);
