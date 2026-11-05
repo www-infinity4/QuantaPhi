@@ -5,6 +5,7 @@
  * X controls Spaces playback. This is not a paid X search or OAuth client.
  */
 import {readIndexedSpaces, validSpaceLink} from './quanta-feed-spaces.mjs';
+export {validSpaceLink};
 
 export function normalizeSpaceEntry(source) {
   if (!source || !validSpaceLink(source.url)) return null;
