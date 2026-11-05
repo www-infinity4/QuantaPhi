@@ -137,3 +137,15 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 - Progress: 🟡 source-tested milestone (12/12 focused local tests), not overall completion. Parent #1675 remains draft; dependent #1679 remains draft. Sessions added: 1; remaining effort unknown due independent security review, live identity/consent, deployment and provider integrations.
 - Blocker: no authenticated Quant AI production review adapter, committed default-branch proof, signed multi-tenant owner-wallet settlement, or confirmed merchant accepting GIT. GPT Coin and Bubble Bits stay separate.
 - Next single action: verify exact-head GitHub CI for #1679, obtain independent review and on-device Termux proof before promoting any merge or wallet issuance.
+
+## 2026-11-04 · Copyable GIT code card for Termux and AI (follow-up)
+
+- User clarified: **GPT Coin** would be an optional provider-issued credit, not automatically minted by QuantaPhi. Individually created lookalikes are not proof of GPT issuance. **GIT and Bubble Bits** remain separate QuantaPhi implementation goals.
+- Reused existing draft PR #1679 and issue #1250; no competing coin collector or wallet mutation. Branch `feat/gitcoin-termux-sqlite-20261104`; source head before this checkpoint `9dc9fab75bd4daef74e070e03401649cbf5e4288`.
+- Added `gitcoin/setup-snippets.mjs`: validated GitHub owner/repo input generates copyable Termux commands and AI instructions; no npm, copied credentials, private code export, or implied payouts.
+- Added `gitcoinQuickCard` to root `index.html` and `oracle-card-deck.js`, with an original small vector code graphic, mobile-readable CSS, `Copy for Termux` and `Copy for AI`, and no separate duplicate homepage card. Updated `gitcoin.html` with the same actions and a visible collector source link.
+- Local focused evidence: 11/11 Node tests PASS (existing attribution, existing landing and new copy tests), 6/6 Python SQLite tests PASS; Node syntax checks PASS. The new main-carousel contract is checked by GitHub Actions because the large source files were inspected and changed through the connected GitHub API.
+- Source-only `review_pending`; no direct termux-device proof, signed end-to-end Bubbles Bits settlement, Gitcoin D1 award, GPT-provider token issuance or third-party merchant acceptance. All wallet credits remain zero/unverified.
+- No coordinator lease claimed; `lease_id`, `fence`, `task_session_id` remain null. Other agent work not overridden.
+- Next executable action: inspect exact-head PR #1679 GitHub CI for the new carousel tests; repair any failure, then obtain independent security review and Android acceptance before release.
+
