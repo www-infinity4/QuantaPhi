@@ -72,10 +72,18 @@ test('failed CI or failed quality review produces no award',async()=>{
  assert.equal(planAcceptedGits(decision).length,0);
 });
 test('D1 writer receives only server-verified line plans and no website-supplied payment action',async()=>{
- const calls=[];
- const db={prepare(sql){return{bind(...args){return{sql,args}}}},async batch(stmts){
-   calls.push(...stmts);return stmts.map(()=>({success:true,meta:{changes:1}}));
- }};
+ const calls=[],saved=new Map();
+ const db={prepare(sql){return{bind(...args){return{sql,args,
+  async all(){return {results:args.map(id=>saved.get(id)).filter(Boolean)}}}}}},
+  async batch(stmts){
+   calls.push(...stmts);
+   for(const x of stmts)if(x.sql.includes('INSERT OR IGNORE INTO gitcoin_customer_award_links')){
+    saved.set(x.args[0],{receipt_id:x.args[0],wallet_id:x.args[6],amount:1,
+     customer_id:x.args[1],grant_id:x.args[2],acceptance_receipt_id:x.args[3],
+     executor_wallet_id:x.args[6]});
+   }
+   return stmts.map(()=>({success:true,meta:{changes:1}}));
+  }};
  const r=await postVerifiedCustomerGits(manifest,{...dependencies(),db});
  assert.equal(r.proposedLineCount,2);
  assert.equal(r.submittedForIdempotentStorage,2);
@@ -88,4 +96,15 @@ test('D1 writer receives only server-verified line plans and no website-supplied
 });
 test('missing database never claims to have minted a spendable credit',async()=>{
  await assert.rejects(postVerifiedCustomerGits(manifest,{...dependencies(),db:null}),/gitcoin_database_unavailable/);
+});
+
+test('replayed receipt to a different wallet cannot be reported as credited',async()=>{
+ const db={prepare(sql){return{bind(...args){return {sql,args,async all(){
+  return {results:args.map(receipt_id=>({
+   receipt_id,amount:1,wallet_id:'wallet/other',
+   executor_wallet_id:'wallet/other',customer_id:'customer-1',
+   grant_id:'grant-accepted001',acceptance_receipt_id:'accept-commit-001'
+  }))};
+ }}}}},async batch(stmts){return stmts.map(()=>({success:true}))}};
+ await assert.rejects(postVerifiedCustomerGits(manifest,{...dependencies(),db}),/gitcoin_readback_mismatch/);
 });
