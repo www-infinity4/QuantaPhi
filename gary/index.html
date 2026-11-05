@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#212823">
+  <meta name="description" content="A birthday Western movie room and Bubbles assistant for Gary.">
+  <title>Happy Birthday, Gary! · Gary's Westerns</title>
+  <link rel="stylesheet" href="/gary/style.css">
+</head>
+<body>
+  <div class="topline"><span>★ A SPECIAL BIRTHDAY FROM KRIS ★</span></div>
+  <header class="hero" aria-labelledby="greeting">
+    <div class="hero-inner">
+      <p class="eyebrow">The best seat in the house is yours, Dad.</p>
+      <h1 id="greeting">Happy Birthday, Gary!</h1>
+      <p class="dedication">Happy birthday, Dad. Here's a little place of your own to enjoy a good Western, put your feet up, and talk with Bubbles whenever you feel like it. Love, Kris.</p>
+      <a class="go" href="#watch">▶ Watch a Western</a>
+    </div>
+    <div class="sunset" aria-hidden="true"><span class="sun"></span><span class="ridge ridge-back"></span><span class="ridge ridge-front"></span></div>
+  </header>
+  <main>
+    <section class="viewer-section" id="watch" aria-labelledby="watch-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">GARY'S WESTERNS</p><h2 id="watch-title">Pick a movie. Enjoy the show.</h2></div>
+        <span class="watch-note">Free Westerns · tap to play</span>
+      </div>
+      <div class="theater">
+        <div class="screen" id="western-screen">
+          <div class="screen-cover" id="western-cover">
+            <img src="https://i.ytimg.com/vi/pH15fIh7xrg/hqdefault.jpg" alt="McLintock! Western film preview" width="480" height="360">
+            <button type="button" id="western-play" class="big-play">▶ Play this Western</button>
+          </div>
+          <div id="western-player" class="screen-video" hidden></div>
+        </div>
+        <div class="screen-info">
+          <h3 id="western-title">McLintock! (1963)</h3>
+          <p id="western-description">John Wayne and Maureen O'Hara in a lively frontier comedy on a cattle ranch.</p>
+          <p id="western-status" role="status" aria-live="polite">Choose Play to start the movie here. Nothing plays automatically.</p>
+          <p class="small">A film from its original publishing channel. If embedding is unavailable, <a id="western-source" href="https://www.youtube.com/watch?v=pH15fIh7xrg" target="_blank" rel="noopener noreferrer">view the licensed source</a>.</p>
+        </div>
+      </div>
+      <h3 class="pick-title">Choose a Western</h3>
+      <div id="western-choices" class="choices" aria-label="Western movie choices"></div>
+      <p class="small">These are curated full-length movie selections, not a claim of a live TV broadcast. Availability and ad playback are controlled by the original publisher. YouTube's player may show its own controls and ads.</p>
+    </section>
+    <section class="assistant-section" aria-labelledby="assistant-title">
+      <div class="bubble-icon" aria-hidden="true">✦</div>
+      <div>
+        <p class="eyebrow">YOUR OWN AI COMPANION</p>
+        <h2 id="assistant-title">Say hello to Bubbles</h2>
+        <p>Tap the floating blue bubble in the lower-right corner. Ask about Western movies, the weather, a favorite actor, or anything else. You can type or use voice where your browser supports it.</p>
+        <p><strong>No sign-in is needed to chat.</strong> Local memory is optional: Bubbles can remember recent conversation and notes on this device when you turn that on. If you want memory on another device, use Bubbles' verified wallet sync with your own identity. Sharing a browser isn't proof of who is using it.</p>
+        <p class="small">Bubbles uses QuantaPhi's existing Cloudflare AI connection. It does not automatically know personal information about Gary, and it will not use the site owner's private wallet or Robot Brain access.</p>
+      </div>
+    </section>
+  </main>
+  <footer>Made with love for Gary · <a href="/">QuantaPhi home</a> · Western films remain with their original publishers</footer>
+  <script type="module" src="/gary/main.mjs"></script>
+  <script defer src="/bubbles-embed.js"
+    data-bubble-id="gary-westerns-2026"
+    data-bubble-role="assistant"
+    data-bubble-name="Bubbles for Gary"
+    data-bubble-instructions="Be a friendly, patient assistant on Gary's birthday Westerns page. Talk about Western films, television and everyday questions. Answer naturally using real available model capabilities. Do not claim personal memories or tools that are not available; explain how Gary can opt in to local memory or verified wallet sync within Bubbles. Never reveal or use site owner credentials. Keep responses easy to understand."></script>
+</body>
+</html>
