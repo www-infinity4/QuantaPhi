@@ -3,118 +3,118 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T05:31:45.216566Z",
+  "checked_at": "2026-11-05T06:01:49.630593Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "darius acuff jr.",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T05:10:00Z",
+      "query": "nba standings",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T05:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50385297/darius-acuff-jr-gets-basket-plus-foul",
-        "https://bleacherreport.com/articles/25529369-darius-acuff-jr-downplays-shot-volume-concerns-video-talks-relationship-kings-veterans",
-        "https://basketnews.com/news-258824-darius-acuff-jr-gets-honest-about-kings-veterans-criticism-over-shot-attempts.html"
+        "https://www.espn.com/nba/story/_/id/50371604/nba-power-rankings-30-teams-rank-week-two-describe-season",
+        "https://www.nba.com/news/power-rankings-2026-27-week-3",
+        "https://www.nytimes.com/athletic/7747535/2026/11/02/nba-power-rankings-rockets-thunder-grizzlies/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGjB1fh08woRwuqptYPJBPe1nwEdLv9hgTuDWu5nU7KvnsiHwKvtTV0eic4YY",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ5aGPn0JuTWIwodSL5psmbzr9LqbaTrJpgs0NxjJZ3Z-tF0BxO-HgcvZxD24",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/video/clip/_/id/50385297/darius-acuff-jr-gets-basket-plus-foul",
-          "title": "Darius Acuff Jr. gets the basket plus the foul",
+          "url": "https://www.espn.com/nba/story/_/id/50371604/nba-power-rankings-30-teams-rank-week-two-describe-season",
+          "title": "NBA Power Rankings: Summing up all 30 teams' starts",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGjB1fh08woRwuqptYPJBPe1nwEdLv9hgTuDWu5nU7KvnsiHwKvtTV0eic4YY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ5aGPn0JuTWIwodSL5psmbzr9LqbaTrJpgs0NxjJZ3Z-tF0BxO-HgcvZxD24"
         },
         {
-          "url": "https://bleacherreport.com/articles/25529369-darius-acuff-jr-downplays-shot-volume-concerns-video-talks-relationship-kings-veterans",
-          "title": "Darius Acuff Jr. Downplays Shot Volume Concerns in Video, Talks Relationship With Kings' Veterans",
-          "publisher": "Bleacher Report",
+          "url": "https://www.nba.com/news/power-rankings-2026-27-week-3",
+          "title": "Power Rankings: Undefeated Grizzlies surge into Top 5",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsiNdcc-vjBq9LV1aLjFIvlLFT-f7JsL5sc4NrAia1L5pC18pJ2WZyaIVMHYE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDGew_F6gj0cWGGfGUif59Lw6NZ55TOOM11o39jNroDkB9Vtsc4Gy4OnnS4I"
         },
         {
-          "url": "https://basketnews.com/news-258824-darius-acuff-jr-gets-honest-about-kings-veterans-criticism-over-shot-attempts.html",
-          "title": "Darius Acuff Jr. gets honest about Kings veterans, criticism over shot attempts",
-          "publisher": "BasketNews.com",
+          "url": "https://www.nytimes.com/athletic/7747535/2026/11/02/nba-power-rankings-rockets-thunder-grizzlies/",
+          "title": "NBA Power Rankings: Liftoff in Houston, and how far have the Thunder fallen?",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6oN5bfOM_OQQ95RnUxZH6Ab9piZJ1Ap_za_nqWKTEh7Amn7PxWX6fFFU2LfM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTurzxfYhjbWglbpqoO3KFGCEk1XX9Vy_UAnJUq9iwAhjtBlPaVkig21ToX-kw"
         }
       ]
     },
     {
-      "query": "zach lavine",
+      "query": "afg vs zim",
       "approx_searches": "500+",
-      "published_at": "2026-11-05T05:10:00Z",
+      "published_at": "2026-11-05T05:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50385135/zach-lavine-gets-hoop-harm",
-        "https://www.fantasypros.com/nba/news/617443/zach-lavine-efficient-monday.php",
-        "https://www.espn.ph/video/clip/_/id/50363134/zach-lavine-throws-powerful-slam-dunk-vs-dallas-mavericks"
+        "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-1st-test-1555123/match-preview",
+        "https://sports.yahoo.com/articles/afghanistan-vs-zimbabwe-1st-test-043612698.html",
+        "https://www.cricbuzz.com/cricket-news/140784/graeme-cremer-returns-bennett-to-lead-cricbuzzcom"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoUYQz5r8utUV4g3C_66DxwVw2o8dxqUNaWpN3TFgQLZvcJDz5jB_fh84b6fQ",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSyXiOjZ3KCcGOMMNJMGH0MYuQUs28rDyQ3Hv0pMhmPZ_HP8Fr29piWj_dc4c",
+      "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://www.espn.com/video/clip/_/id/50385135/zach-lavine-gets-hoop-harm",
-          "title": "Zach LaVine gets the hoop and the harm",
-          "publisher": "ESPN",
+          "url": "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-1st-test-1555123/match-preview",
+          "title": "AFG vs ZIM 2026/27, AFG vs ZIM 1st Test Match Preview - Afghanistan, Zimbabwe face-off with WTC spot on the horizon",
+          "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoUYQz5r8utUV4g3C_66DxwVw2o8dxqUNaWpN3TFgQLZvcJDz5jB_fh84b6fQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSyXiOjZ3KCcGOMMNJMGH0MYuQUs28rDyQ3Hv0pMhmPZ_HP8Fr29piWj_dc4c"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/617443/zach-lavine-efficient-monday.php",
-          "title": "Zach LaVine efficient Monday",
-          "publisher": "FantasyPros",
+          "url": "https://sports.yahoo.com/articles/afghanistan-vs-zimbabwe-1st-test-043612698.html",
+          "title": "Afghanistan vs Zimbabwe 1st Test prediction, lineups and Sharjah pitch report — who will win?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvcth9BJ9PfCkzh0Ntq-DWyQMszvjo9GmInrhJ0-aU7oIW05MsMQAcerFs5ko"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMb6C605UzuDkJI1H1jldYnhcNmoBOvbyjbEpmR8rqCzauiNCdQ3soLq3L4Yo"
         },
         {
-          "url": "https://www.espn.ph/video/clip/_/id/50363134/zach-lavine-throws-powerful-slam-dunk-vs-dallas-mavericks",
-          "title": "Zach LaVine throws down powerful slam dunk vs. Dallas Mavericks",
-          "publisher": "ESPN Philippines",
+          "url": "https://www.cricbuzz.com/cricket-news/140784/graeme-cremer-returns-bennett-to-lead-cricbuzzcom",
+          "title": "Graeme Cremer returns; Bennett to lead in Afghanistan Tests",
+          "publisher": "Cricbuzz",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwZtAOk-TA7QJygrc9Ktzps2DO4eU7U9hB7lDsAHi6V5FUhvxPgfAzzEyBsIY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRngGlOS8jo9Kp0CVXecLQCOtqhBQtzwUYbkUZog0oBcVZbf5Tmx4HDKtdUSD8"
         }
       ]
     },
     {
-      "query": "de'aaron fox",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T05:10:00Z",
+      "query": "mega millions",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T05:40:00Z",
       "related_news_urls": [
-        "https://www.lineups.com/articles/nba-first-basket-picks-today-nov-4-deaaron-fox/",
-        "https://www.bettingpros.com/articles/nba-first-basket-scorers-picks-wednesday-11-4/",
-        "https://www.dimers.com/nba/news/nba-first-basket-predictions-11-04-2026-ac"
+        "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
+        "https://www.cincinnati.com/story/news/lottery/2026/11/04/mega-millions-winning-numbers-last-night-nov-3-drawing-numbers-jackpot-results/92607504007/",
+        "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxq3AzoDY-jlqcsCXV7waBmHLCZDxjVR3F1b4862zj-gqYI-BFc3_oZXzKPXs",
-      "image_credit": "Lineups",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4",
+      "image_credit": "WAVY.com",
       "news": [
         {
-          "url": "https://www.lineups.com/articles/nba-first-basket-picks-today-nov-4-deaaron-fox/",
-          "title": "NBA First Basket Picks Today (Nov. 4): De'Aaron Fox vs. Mavericks",
-          "publisher": "Lineups",
+          "url": "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
+          "title": "Over $1B in Mega Millions, Powerball jackpots up for grabs",
+          "publisher": "WAVY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxq3AzoDY-jlqcsCXV7waBmHLCZDxjVR3F1b4862zj-gqYI-BFc3_oZXzKPXs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4"
         },
         {
-          "url": "https://www.bettingpros.com/articles/nba-first-basket-scorers-picks-wednesday-11-4/",
-          "title": "NBA First Basket Scorers & Picks: Wednesday (11/4)",
-          "publisher": "BettingPros",
+          "url": "https://www.cincinnati.com/story/news/lottery/2026/11/04/mega-millions-winning-numbers-last-night-nov-3-drawing-numbers-jackpot-results/92607504007/",
+          "title": "Mega Millions numbers for $482M jackpot Nov. 3. Did anyone win last night?",
+          "publisher": "Cincinnati Enquirer",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSDXMb7lDG4xyKHjrPbFLbEJqYD1vwy0CQQgcfSXHz2CUuoc9EMaq6j1QqSps"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkVEn3TfXQmhXucKdCo-oEnsTF6y8vOWL8ser-2Z7vDX61Rwz3tX3aHfCfYmQ"
         },
         {
-          "url": "https://www.dimers.com/nba/news/nba-first-basket-predictions-11-04-2026-ac",
-          "title": "NBA first basket predictions and picks for Wednesday, November 4, 2026",
-          "publisher": "Dimers",
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/",
+          "title": "Mega Millions Jackpot Tops $500 Million—Here’s What The Winner Could Take Home",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDw0DBS0BdmfsU84waRQR4Afw4gjNV2f5lK3FImX6fRD5W3eq_bhL4Zc3OW-s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHTuzxS6qku_Z3j3KuW7i_UjPPjxJKpJwp2osGQIDYwGxJHf4eHqMB2YRgZVY"
         }
       ]
     },
     {
-      "query": "p.j. washington",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T05:10:00Z",
+      "query": "zaccharie risacher",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T05:40:00Z",
       "related_news_urls": [
         "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/dal-starts-irving-flagg-risacher-pj-gafford",
         "https://www.rotowire.com/basketball/headlines/zaccharie-risacher-news-starting-versus-spurs-537600",
@@ -147,204 +147,212 @@
       ]
     },
     {
-      "query": "jimmy kimmel",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T05:10:00Z",
+      "query": "robert de niro",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T05:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/04/arts/television/jimmy-kimmel-midterm-election-blue-wave.html",
-        "https://www.cbc.ca/news/entertainment/jimmy-kimmel-monologue-slams-donald-trump-9.7409167",
-        "https://www.theguardian.com/culture/2026/nov/04/jimmy-kimmel-midterms-trump"
+        "https://nypost.com/2026/10/30/us-news/trump-tears-into-moron-robert-de-niro-mulls-hollywood-tax-credits-during-daytona-beach-rally/",
+        "https://www.thewrap.com/media-platforms/politics/trump-mocks-hollywood-kissing-up-tax-credits/",
+        "https://www.miamitimesonline.com/news/florida/donald-trump-says-gop-voters-should-pretend-byron-donalds-and-ashley-moody-are-one-point/article_1f2ce88a-b6de-4750-aa03-57fb274ab951.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgC36LyPQazn9j1Jd8sWycoyS6Xppn3AJQLcKdN8j_Ram6aswPxOX7H4zzUUM",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8IeznFUyrpP-sBlfyr0eVQpn1gnDZYnkzB5YT6UFIK6U1034TdHT2RzBIQXY",
+      "image_credit": "New York Post",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/04/arts/television/jimmy-kimmel-midterm-election-blue-wave.html",
-          "title": "Jimmy Kimmel Rides Election Day’s ‘Blue Tsunami’",
-          "publisher": "The New York Times",
+          "url": "https://nypost.com/2026/10/30/us-news/trump-tears-into-moron-robert-de-niro-mulls-hollywood-tax-credits-during-daytona-beach-rally/",
+          "title": "Trump tears into 'moron' Robert De Niro, mulls Hollywood tax credits during Daytona Beach rally",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgC36LyPQazn9j1Jd8sWycoyS6Xppn3AJQLcKdN8j_Ram6aswPxOX7H4zzUUM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8IeznFUyrpP-sBlfyr0eVQpn1gnDZYnkzB5YT6UFIK6U1034TdHT2RzBIQXY"
         },
         {
-          "url": "https://www.cbc.ca/news/entertainment/jimmy-kimmel-monologue-slams-donald-trump-9.7409167",
-          "title": "Jimmy Kimmel roasts Trump in late night monologue amid 'blue tsunami' midterms",
-          "publisher": "CBC",
+          "url": "https://www.thewrap.com/media-platforms/politics/trump-mocks-hollywood-kissing-up-tax-credits/",
+          "title": "Trump Mocks Hollywood for ‘Kissing My Ass’ Over Federal Film and TV Tax Credit",
+          "publisher": "TheWrap",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZHMJOPJC1kN431HCG4Fu_j6CLp10TilW1dYUK8j2RJRPRdDrHxU-D7VCucLU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEmHpW1q2_3FLkM7Mx6BsmyNSeW9iMBlPTBkiG-ak4BdyWu2HmhixM7WIU-3o"
         },
         {
-          "url": "https://www.theguardian.com/culture/2026/nov/04/jimmy-kimmel-midterms-trump",
-          "title": "Jimmy Kimmel on a midterm tsunami: ‘Trump’s run out of dipping sauce containers to throw at the TV’",
-          "publisher": "The Guardian",
+          "url": "https://www.miamitimesonline.com/news/florida/donald-trump-says-gop-voters-should-pretend-byron-donalds-and-ashley-moody-are-one-point/article_1f2ce88a-b6de-4750-aa03-57fb274ab951.html",
+          "title": "Donald Trump says GOP voters should pretend Byron Donalds and Ashley Moody are ‘one point down’",
+          "publisher": "The Miami Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQptYtED-1CgVlUBMR-UcPd5Ln8gygVH-k_U6v4o9TIFnBUfcwDrw2v_iamxME"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTN9TJsGyaejUu_mwgC6v0L3dU1MEcoh5uAMJ3kGLC2LcsVJkyYF7u_Be5zpKI"
         }
       ]
     },
     {
-      "query": "spurs score",
+      "query": "caleb martin",
       "approx_searches": "200+",
-      "published_at": "2026-11-05T05:10:00Z",
+      "published_at": "2026-11-05T05:40:00Z",
       "related_news_urls": [
-        "https://www.expressnews.com/sports/spurs/article/wembanyama-s-43-point-outburst-says-spurs-team-22503211.php",
-        "https://www.poundingtherock.com/spurs-analysis/109242/what-we-learned-from-the-spurs-win-over-the-timberwolves",
-        "https://www.canishoopus.com/timberwolves-game-previews/71283/nba-thread-san-antonio-spurs-rudy-gobert"
+        "https://www.cbssports.com/fantasy/basketball/news/mavericks-caleb-martin-headed-to-bench/",
+        "https://www.rotowire.com/football/headlines/drew-shelton-news-full-practice-wednesday-646031",
+        "https://www.goldenstateofmind.com/warriors-game-previews/112961/how-to-watch-warriors-vs-timberwolves"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiSQqp3fuGjPcLOs9TQZMXfML1k3Q3Z7QR7ZM12Ro1qDVdDuXRIn9XiNMD_ww",
-      "image_credit": "San Antonio Express-News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.expressnews.com/sports/spurs/article/wembanyama-s-43-point-outburst-says-spurs-team-22503211.php",
-          "title": "What Wembanyama's 43-point outburst says about the Spurs as a team",
-          "publisher": "San Antonio Express-News",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/mavericks-caleb-martin-headed-to-bench/",
+          "title": "Mavericks' Caleb Martin: Headed to bench",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiSQqp3fuGjPcLOs9TQZMXfML1k3Q3Z7QR7ZM12Ro1qDVdDuXRIn9XiNMD_ww"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI"
         },
         {
-          "url": "https://www.poundingtherock.com/spurs-analysis/109242/what-we-learned-from-the-spurs-win-over-the-timberwolves",
-          "title": "What we learned from the Spurs’ win over the Timberwolves",
-          "publisher": "Pounding The Rock",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl6QOeFg-460aLiVodKIwzoAcKrhomo_FibPsrwieUPbBcMRNm3ZLFYvtZWB4"
-        },
-        {
-          "url": "https://www.canishoopus.com/timberwolves-game-previews/71283/nba-thread-san-antonio-spurs-rudy-gobert",
-          "title": "🎃Game Preview #7: Wolves vs Spurs Game Thread🎃",
-          "publisher": "Canis Hoopus",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2HLJ_2D68TXvPOfUO85F2vugv33Yad51uavF37pHuj68-aJk35-u73pmMvaM"
-        }
-      ]
-    },
-    {
-      "query": "walter clayton jr",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T05:10:00Z",
-      "related_news_urls": [
-        "https://thesmokingcuban.com/walter-clayton-jr-signing-is-mavericks-biggest-steal-of-season",
-        "https://roundtable.io/sports/nba/mavericks/players/mavs-should-turn-to-two-way-guard-in-times-of-need",
-        "https://www.wgrz.com/video/sports/locked-on/lo-dallas/mavericks-show/is-walter-clayton-jr-a-keeper-kyrie-irving-the-mentor-a-dallas-mavericks-podcast/535-0bf31692-fa86-4098-8563-4ea1adb5a1a8"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIttIuwn99AhH8kf_728bIfXMLC-MawjnqvSp0ZZC0UpQ9lpvL_rAcXQKF6XY",
-      "image_credit": "The Smoking Cuban",
-      "news": [
-        {
-          "url": "https://thesmokingcuban.com/walter-clayton-jr-signing-is-mavericks-biggest-steal-of-season",
-          "title": "Walter Clayton Jr. signing is the Mavericks' biggest steal of the season",
-          "publisher": "The Smoking Cuban",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIttIuwn99AhH8kf_728bIfXMLC-MawjnqvSp0ZZC0UpQ9lpvL_rAcXQKF6XY"
-        },
-        {
-          "url": "https://roundtable.io/sports/nba/mavericks/players/mavs-should-turn-to-two-way-guard-in-times-of-need",
-          "title": "Mavs Should Turn to Two-Way Guard in Times of Need",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRgLa-NqsNJsbuXC1uHuFW7_foAFo45JcBgRmtvJf9TRLLIf72bNR0_sBpzag"
-        },
-        {
-          "url": "https://www.wgrz.com/video/sports/locked-on/lo-dallas/mavericks-show/is-walter-clayton-jr-a-keeper-kyrie-irving-the-mentor-a-dallas-mavericks-podcast/535-0bf31692-fa86-4098-8563-4ea1adb5a1a8",
-          "title": "Is Walter Clayton Jr. a KEEPER? Kyrie Irving the Mentor? | A Dallas Mavericks Podcast",
-          "publisher": "WGRZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-HvKoJZ0pJRTzpSNWBBvVAxOq2rgwOGrKbVUPsg3H2DSQRRSdq1_tSZChMw"
-        }
-      ]
-    },
-    {
-      "query": "tracy morgan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T05:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/exclusive-tracy-morgan-promised-convert-160003338.html",
-        "https://www.broadwayworld.com/bwwtv/article/Tracy-Morgan-on-REGGIE-DINKINS-Season-2-and-Knicks-Title-20261102",
-        "https://www.today.com/video/tracy-morgan-on-reggie-dinkins-knicks-championship-win-more-272685637947"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpY16FFWhE6-jDRKioevJWno1Xd7uBYM46EYzo6QaBB0HAEGrFQ5AJ8yGyijw",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/exclusive-tracy-morgan-promised-convert-160003338.html",
-          "title": "Exclusive: Tracy Morgan promised to convert son in Reggie Dinkins into Knicks fan",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpY16FFWhE6-jDRKioevJWno1Xd7uBYM46EYzo6QaBB0HAEGrFQ5AJ8yGyijw"
-        },
-        {
-          "url": "https://www.broadwayworld.com/bwwtv/article/Tracy-Morgan-on-REGGIE-DINKINS-Season-2-and-Knicks-Title-20261102",
-          "title": "Tracy Morgan on REGGIE DINKINS Season 2 and Knicks Title",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5YHabgS2kBA1t_QpN8pZ-96NlVRx2Ewj3T1fdfG686OVq3eUezRBIl1QUvrE"
-        },
-        {
-          "url": "https://www.today.com/video/tracy-morgan-on-reggie-dinkins-knicks-championship-win-more-272685637947",
-          "title": "Tracy Morgan on 'Reggie Dinkins,' Knicks Championship Win, More",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0aQoH_7dm3qNhadQ3lvTzdmK5Z_aoFESYDc-pklQuBflktKaoztcsSlk9ij8"
-        }
-      ]
-    },
-    {
-      "query": "pj washington",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T05:10:00Z",
-      "related_news_urls": [
-        "https://lakeshowlife.com/lakers-can-use-p-j-washington-as-template-for-their-next-forward-acquisition",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/dal-starts-irving-flagg-risacher-pj-gafford",
-        "https://www.rotowire.com/basketball/headlines/zaccharie-risacher-news-starting-versus-spurs-537600"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsV_K-OB4aNSVX5SFHjzPIebgUGmyqQGb_i7WuzHo-zD3gF07u0H1dCHU4l9s",
-      "image_credit": "Lake Show Life",
-      "news": [
-        {
-          "url": "https://lakeshowlife.com/lakers-can-use-p-j-washington-as-template-for-their-next-forward-acquisition",
-          "title": "Lakers can use P.J. Washington as template for their next forward acquisition",
-          "publisher": "Lake Show Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsV_K-OB4aNSVX5SFHjzPIebgUGmyqQGb_i7WuzHo-zD3gF07u0H1dCHU4l9s"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/dal-starts-irving-flagg-risacher-pj-gafford",
-          "title": "DAL starts Irving, Flagg, Risacher, PJ, Gafford",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa9Q18mSz1wPDxRSo-ZxH4x2uKRKLtQv3_ZA3XekDO9sIZxHkt1kYtznNw3L4"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/zaccharie-risacher-news-starting-versus-spurs-537600",
-          "title": "Zaccharie Risacher News: Starting versus Spurs",
+          "url": "https://www.rotowire.com/football/headlines/drew-shelton-news-full-practice-wednesday-646031",
+          "title": "Drew Shelton News: Full practice Wednesday",
           "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQubjYDTtRR7d42yIjM0doJN-ru28APfVPpCy4qg_fER5un7Dy5ifwHd8WnYO4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREd6sv7j3AuWA9CdZi9Eu8rlHfEkpY2MXYV1mJdvwBySXXApuXRfPIL3754e8"
+        },
+        {
+          "url": "https://www.goldenstateofmind.com/warriors-game-previews/112961/how-to-watch-warriors-vs-timberwolves",
+          "title": "How to watch Warriors vs. Timberwolves",
+          "publisher": "Golden State Of Mind",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0TqCW_RhV9m0p8gCH3OzY66L9AAsdkLTEanG6e8CuMerA6YRBb-viJno6Hx8"
         }
       ]
     },
     {
-      "query": "naji marshall",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T05:00:00Z",
+      "query": "dylan cardwell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T05:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/mavericks-already-regretting-contract-extension-230005797.html",
-        "https://www.11alive.com/video/sports/locked-on/lo-dallas/locked-on-mavericks-hit/its-not-time-to-give-up-on-naji-marshall-yet/535-4ef0e81a-a66b-48d1-8415-c79009eaae02"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/dylan-cardwell-calf-removed-from-injury-report",
+        "https://www.rotowire.com/basketball/headlines/dylan-cardwell-injury-downgraded-to-questionable-537220",
+        "https://www.cbssports.com/fantasy/basketball/news/kings-dylan-cardwell-upgraded-to-probable/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKY3dUWkKqnmYXI949nUHo_XMSRoFWViwbn2i5RBPriPECSI3Er7pcmeZuddI",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKnxRbx5Jq8rCKS4kB9oB232SGtZ6HF427Ap9-NYA5Vv6zs_Vdt_qXCzIc6ZU",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/mavericks-already-regretting-contract-extension-230005797.html",
-          "title": "Are Mavericks Already Regretting Contract Extension for Naji Marshall?",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-03/dylan-cardwell-calf-removed-from-injury-report",
+          "title": "Dylan Cardwell (calf) removed from injury report",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKY3dUWkKqnmYXI949nUHo_XMSRoFWViwbn2i5RBPriPECSI3Er7pcmeZuddI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKnxRbx5Jq8rCKS4kB9oB232SGtZ6HF427Ap9-NYA5Vv6zs_Vdt_qXCzIc6ZU"
         },
         {
-          "url": "https://www.11alive.com/video/sports/locked-on/lo-dallas/locked-on-mavericks-hit/its-not-time-to-give-up-on-naji-marshall-yet/535-4ef0e81a-a66b-48d1-8415-c79009eaae02",
-          "title": "It’s Not Time to Give Up on Naji Marshall Yet",
-          "publisher": "11Alive.com",
+          "url": "https://www.rotowire.com/basketball/headlines/dylan-cardwell-injury-downgraded-to-questionable-537220",
+          "title": "Dylan Cardwell Injury: Downgraded to questionable",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTUtPqsPsu5suIA84kgg6jRmgTXLWe0cN_u7ypPhz7SG7yqpgHzpPZ8OLH-Z4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3uSnYFRlf0Gw6ndDkXboampCJp04VI5pXy_T9NmpD9kVXYnI95MovqkNAW_o"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/kings-dylan-cardwell-upgraded-to-probable/",
+          "title": "Kings' Dylan Cardwell: Upgraded to probable",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmLIwE1zlfyS6xb8ymhSWDvKv0LgashX6y6wOSWJGXG_u98cAq22Hsp0FGT8"
+        }
+      ]
+    },
+    {
+      "query": "luka dončić",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T05:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50374485/lakers-luka-doncic-2nd-technical-season-rescinded-nba",
+        "https://www.latimes.com/sports/lakers/story/2026-11-03/flowing-not-flawless-lakers-league-best-offense-room-for-improvement",
+        "https://www.nba.com/news/luka-doncic-off-to-great-offensive-start"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcGIJcbz3MSt8AHo6IM8OPLGrKYWwrnGHzqqwoR7VJoEsLSQ7vmG9kJQM8i88",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50374485/lakers-luka-doncic-2nd-technical-season-rescinded-nba",
+          "title": "Lakers' Luka Doncic has 2nd tech of season rescinded by NBA",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcGIJcbz3MSt8AHo6IM8OPLGrKYWwrnGHzqqwoR7VJoEsLSQ7vmG9kJQM8i88"
+        },
+        {
+          "url": "https://www.latimes.com/sports/lakers/story/2026-11-03/flowing-not-flawless-lakers-league-best-offense-room-for-improvement",
+          "title": "Fun, flowing, not yet flawless: Lakers’ league-best offense still has room to improve",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMAQ6goAW3h1mkQIwNRi8ASyb_CtjHLX8iFRBtzzBWpfbYjvPqQvdHMzTg1z0"
+        },
+        {
+          "url": "https://www.nba.com/news/luka-doncic-off-to-great-offensive-start",
+          "title": "Luka Dončić is off to a spectacular offensive start for the Lakers",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFmZ8I3hAlEUt0fjbFkc0KZ1mCtR9td8X6ftQ5i5fWIQDBAqgHQVOcwA0WPik"
+        }
+      ]
+    },
+    {
+      "query": "luka doncic stats",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T05:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
+        "https://www.nba.com/news/starting-5-november-2-2026",
+        "https://www.si.com/nba/lakers/luka-doncic-wants-mvp-unlocked-another-part-his-game-chase-it"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
+          "title": "Luka Doncic touts his improved defense, draws praise from Lakers, Raptors",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI"
+        },
+        {
+          "url": "https://www.nba.com/news/starting-5-november-2-2026",
+          "title": "Starting 5: Luka makes history, Celtics and Warriors extend streaks",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7H6XxpJ6I1hoPWn5saQQMxprBWwsCGV69zUJWzffiPMBUQXsmk1i1cie312A"
+        },
+        {
+          "url": "https://www.si.com/nba/lakers/luka-doncic-wants-mvp-unlocked-another-part-his-game-chase-it",
+          "title": "Luka Dončić Wants the MVP. He Unlocked Another Part of His Game to Chase It.",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd8h4wRTItB0h2-y90Qn-iRqi9lB1v5Kf4D0ppWEHADTmJhulLT71qLyft9_c"
+        }
+      ]
+    },
+    {
+      "query": "precious achiuwa",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T05:30:00Z",
+      "related_news_urls": [
+        "https://www.si.com/nba/kings/onsi/kings-remove-key-big-man-from-injury-report-vs-lakers",
+        "https://www.rotowire.com/basketball/headlines/precious-achiuwa-news-good-to-go-wednesday-537532",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/precious-achiuwa-ankle-available-vs-los-angeles"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJYvWuwIegTe__rHvnJs5q5d3wkc9jXQR1TLThn1FUZ2I-ZDYguV1kSE71BgI",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/nba/kings/onsi/kings-remove-key-big-man-from-injury-report-vs-lakers",
+          "title": "Kings Remove Key Big Man From Injury Report vs. Lakers",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJYvWuwIegTe__rHvnJs5q5d3wkc9jXQR1TLThn1FUZ2I-ZDYguV1kSE71BgI"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/precious-achiuwa-news-good-to-go-wednesday-537532",
+          "title": "Precious Achiuwa News: Good to go Wednesday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWCaAcSonMrzgq79d6BI8QZauYmCa6IPRqVwCdH11-gcHizCvGeW7qxd3svDY"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/precious-achiuwa-ankle-available-vs-los-angeles",
+          "title": "Precious Achiuwa (ankle) available vs. Los Angeles",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4kTEyxj0KIz0tdGByftyI3cLNbyEipJ4YKBeS7bDUQFXkUlkFHp8NLBwMmXE"
         }
       ]
     }
