@@ -1394,23 +1394,7 @@ if(embedded){
  chatScroll.append(conversation);
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
  panel.insertBefore(program,composer);
- // Modern Gary & Family: prompts only fill the existing Bubbles composer.
- // No synthetic AI messages, auto-send, mic access, or separate identity.
- if(bubbleId==='gary-westerns-2026'&&params.get('theme')==='family-modern'){
-   const suggestions=create('nav','ba-family-suggestions');
-   suggestions.setAttribute('aria-label','Suggested questions to ask Bubbles');
-   for(const [label,message] of [
-     ['📺 TV tonight','What can we watch on TV tonight?'],
-     ['☀️ Iowa weather','What is the Iowa forecast this week?'],
-     ['🎬 Westerns','Can you recommend a good Western movie?'],
-     ['🍔 Food deals',"What deals should we check at Hardee's, McDonald's and Wendy's?"]
-   ]){
-     const b=create('button','ba-family-prompt',label);b.type='button';
-     b.addEventListener('click',()=>{input.value=message;input.focus();});
-     suggestions.append(b);
-   }
-   panel.insertBefore(suggestions,program);
- }
+
 }
 // The RecordB project owns the reusable recorder-card source. This first-party
 // QuantaPhi bundle gives the Android WebView actual device commands and status.
