@@ -1,0 +1,43 @@
+name: Bubble Bits packet and economy card contracts
+on:
+  push:
+    paths:
+      - 'bubble-bits/**'
+      - 'bubblebit-coin-cards.mjs'
+      - 'bubblebit-coin-cards.css'
+      - 'bubblebit-economy.html'
+      - 'test/bubblebit-*'
+      - 'test/test_bubblebit_schema.py'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - '.github/workflows/bubblebit-work-packet-contracts.yml'
+  pull_request:
+    paths:
+      - 'bubble-bits/**'
+      - 'bubblebit-coin-cards.mjs'
+      - 'bubblebit-coin-cards.css'
+      - 'bubblebit-economy.html'
+      - 'test/bubblebit-*'
+      - 'test/test_bubblebit_schema.py'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - '.github/workflows/bubblebit-work-packet-contracts.yml'
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: node --check bubble-bits/work-packet.mjs
+      - run: node --check bubblebit-coin-cards.mjs
+      - run: node --check oracle-card-deck.js
+      - run: node --test test/bubblebit-work-packet.test.mjs test/bubblebit-education-cards.test.mjs
+      - run: python3 -m unittest discover -s test -p 'test_bubblebit_schema.py' -v
