@@ -2,14 +2,14 @@
  * It never mints, debits, transfers, licenses code, or grants execution rights.
  * Production verifiers MUST be independently authenticated server adapters.
  */
-import {createHash} from 'node:crypto';
+// Uses Web Crypto so this server-side module also runs in Cloudflare Workers.
 
 const fail=code=>{throw new Error(code)};
 const validId=x=>typeof x==='string'&&/^[A-Za-z0-9_-]{3,100}$/.test(x);
 const validReceipt=x=>typeof x==='string'&&/^[A-Za-z0-9_-]{8,100}$/.test(x);
 const validText=(x,max=500)=>typeof x==='string'&&x.trim().length>=12&&x.length<=max;
 const TAG=/^[a-z][a-z0-9-]{1,39}$/;
-const sha256=v=>createHash('sha256').update(v,'utf8').digest('hex');
+const sha256=async v=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(v)))].map(x=>x.toString(16).padStart(2,'0')).join('');
 const secretLike=/(?:gh[pousr]_[A-Za-z0-9]{16,}|sk-[A-Za-z0-9_-]{16,}|-----BEGIN [A-Z ]*PRIVATE KEY-----|\b(?:bearer|api[_ -]?key|password|secret)\s*[:=]\s*\S{8,})/i;
 const safeDescription=(v,max)=>{
  if(!validText(v,max))fail('invalid_description');
@@ -47,7 +47,7 @@ export async function createBitCandidate(input,{verifyOwnerContext,verifyOperati
  if(await verifyOwnerContext(input)!==true)fail('owner_context_unverified');
  for(const step of steps){if(await verifyOperationReceipt(step,input)!==true)fail('receipt_not_verified');}
  if(await verifyJobResult(input)!==true)fail('job_not_verified');
- const id=sha256(JSON.stringify(['bubbles-bit-packet-v1',input.customerId,input.taskId,input.operationId,...steps.map(s=>s.receiptId).sort()]));
+ const id=await sha256(JSON.stringify(['bubbles-bit-packet-v1',input.customerId,input.taskId,input.operationId,...steps.map(s=>s.receiptId).sort()]));
  return freezePacket({version:1,asset:'BUBBLE_BIT',id,status:'pending_settlement',walletCredits:0,
   customerId:input.customerId,sessionId:input.sessionId,taskId:input.taskId,operationId:input.operationId,
   criteriaKey:input.criteriaKey,goal,summary,capability:input.capability,
