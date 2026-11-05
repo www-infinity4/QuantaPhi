@@ -3,41 +3,208 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T19:01:25.743634Z",
+  "checked_at": "2026-11-05T19:31:37.828177Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "az vs juventus",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T19:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/game-time-thread-juventus-vs-184500491.html",
+        "https://www.oregonlive.com/tv/2026/11/how-to-watch-juventus-vs-az-alkmaar-europa-league-live-today-streaming-service-start-time-preview.html",
+        "https://www.juventus.com/en/news/articles/spalletti-and-koopmeiners-comments-ahead-of-az-alkmaar-juventus-05-11-26"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWdRfFI4DHKY0GxDVlJOF4kUPRApNkubsSFIeDIdVwCfeh2caoR027cmD_c9E",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/game-time-thread-juventus-vs-184500491.html",
+          "title": "Game Time Thread: Juventus vs. AZ Alkmaar",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWdRfFI4DHKY0GxDVlJOF4kUPRApNkubsSFIeDIdVwCfeh2caoR027cmD_c9E"
+        },
+        {
+          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-juventus-vs-az-alkmaar-europa-league-live-today-streaming-service-start-time-preview.html",
+          "title": "How to watch Juventus vs. AZ Alkmaar Europa League live today: Streaming service, start time, preview",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaTMbxRiqb_v5iXdbDe62S-xdX1Vwr5VksWHnhHCZurAwyog_Lh1DhU4eRCg8"
+        },
+        {
+          "url": "https://www.juventus.com/en/news/articles/spalletti-and-koopmeiners-comments-ahead-of-az-alkmaar-juventus-05-11-26",
+          "title": "Spalletti and Koopmeiners' comments ahead of AZ Alkmaar-Juventus",
+          "publisher": "Juventus.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjZUtflS_ev3lepy2_sY0TYFGZ8iDH8cxlMvekhq-NfvS8mVcdtj4ekbNeFdQ"
+        }
+      ]
+    },
+    {
+      "query": "sunderland vs dinamo zagreb",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T19:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cr78pyje5052t",
+        "https://sports.yahoo.com/articles/sunderland-starting-xi-vs-dinamo-155000355.html",
+        "https://rokerreport.sbnation.com/features/158045/score-predictions-how-will-sunlun-do-back-in-europa-league-action"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP3ReAMLSsYY62YlEShReQC7gjvnWcBTH8zWl2k_U5uZ1Inm86OBJK5mNoFig",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cr78pyje5052t",
+          "title": "Sunderland vs Dinamo Zagreb: UEFA Europa League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP3ReAMLSsYY62YlEShReQC7gjvnWcBTH8zWl2k_U5uZ1Inm86OBJK5mNoFig"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/sunderland-starting-xi-vs-dinamo-155000355.html",
+          "title": "Sunderland Starting XI vs Dinamo Zagreb: Confirmed Team News and Predicted Lineup",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyfcGcA6tj07GWZKtnrqta5QkOhjdqJie3T_g-Ibdx8Pcca6QJZMCBGUO_q-g"
+        },
+        {
+          "url": "https://rokerreport.sbnation.com/features/158045/score-predictions-how-will-sunlun-do-back-in-europa-league-action",
+          "title": "Score Predictions - can SAFC get Past Zagreb?",
+          "publisher": "Roker Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNJGVpbYfFVsIk-XqIzqW-QDRyvJKGBEdy_59ph93LMviQEnvLcW9yR6UOLug"
+        }
+      ]
+    },
+    {
+      "query": "aaron judge",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T19:00:00Z",
+      "related_news_urls": [
+        "https://heavy.com/sports/mlb/new-york-yankees/aaron-judge-personal-news-wife-family-historic-feat/",
+        "https://www.nj.com/yankees/2026/11/is-aaron-judge-part-of-blame-for-yankees-clubhouse-issues.html",
+        "https://heavy.com/sports/mlb/new-york-yankees/aaron-judge-issues-ultimatum-offseason/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQENk1fdEgixW7vuQTUnB_29gQxo5NX-VBLa71op9_TgujZJf0iRUmkDab0U6s",
+      "image_credit": "Heavy.com",
+      "news": [
+        {
+          "url": "https://heavy.com/sports/mlb/new-york-yankees/aaron-judge-personal-news-wife-family-historic-feat/",
+          "title": "Yankees’ Aaron Judge Announces Personal Family News After Historic Feat",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQENk1fdEgixW7vuQTUnB_29gQxo5NX-VBLa71op9_TgujZJf0iRUmkDab0U6s"
+        },
+        {
+          "url": "https://www.nj.com/yankees/2026/11/is-aaron-judge-part-of-blame-for-yankees-clubhouse-issues.html",
+          "title": "Yankees’ clubhouse issues raise a question about Aaron Judge",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRteWw1uHIoulzhkNkI8Vh-VXxGEeYbO39_xDXaAKrCJXRhgft_uzzY_tZO8oc"
+        },
+        {
+          "url": "https://heavy.com/sports/mlb/new-york-yankees/aaron-judge-issues-ultimatum-offseason/",
+          "title": "Aaron Judge Gave Yankees an Ultimatum for the Offseason",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRqrUwgm03eSVbCBE20lxcU_IPIUPo4qrHAFtFGcSvjvbxl_m7s1RTvI-NG2I"
+        }
+      ]
+    },
+    {
+      "query": "malik nabers injury",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T19:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/giants-malik-nabers-spotted-with-training-staff-thursday/",
+        "https://www.rotowire.com/football/headlines/malik-nabers-injury-spotted-with-training-staff-thursday-646056"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6IZepRI9gTMMeeV1QI8P5ZShVBPsRhcSNzRbZFjNg-VEoRuBY0wUkhrZ4u6g",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/giants-malik-nabers-spotted-with-training-staff-thursday/",
+          "title": "Giants' Malik Nabers: Spotted with training staff Thursday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6IZepRI9gTMMeeV1QI8P5ZShVBPsRhcSNzRbZFjNg-VEoRuBY0wUkhrZ4u6g"
+        },
+        {
+          "url": "https://www.rotowire.com/football/headlines/malik-nabers-injury-spotted-with-training-staff-thursday-646056",
+          "title": "Malik Nabers Injury: Spotted with training staff Thursday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVAkbOyg65KN1wszb5QupHnq3M8lu5yhlSXWm9MwdU4aWH97oy3lf8BJtaWSw"
+        }
+      ]
+    },
+    {
+      "query": "malik nabers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T18:50:00Z",
+      "related_news_urls": [
+        "https://www.bigblueview.com/new-york-giants-news/178575/malik-nabers-named-nfc-offensive-player-of-the-month",
+        "https://sports.yahoo.com/videos/week-9-malik-nabers-fantasy-165658764.html",
+        "https://www.si.com/nfl/giants/onsi/giants-midseason-awards-nabers-carter-mccarthy-01m6cea6ttkh"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWbx3O5R3epTRfznrjC_cLdrgm2z7YdpId-N-ORxJGzsKkvXpi0idIBdPuGiI",
+      "image_credit": "Big Blue View",
+      "news": [
+        {
+          "url": "https://www.bigblueview.com/new-york-giants-news/178575/malik-nabers-named-nfc-offensive-player-of-the-month",
+          "title": "NY Giants WR Malik Nabers named NFC Offensive Player of the Month",
+          "publisher": "Big Blue View",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWbx3O5R3epTRfznrjC_cLdrgm2z7YdpId-N-ORxJGzsKkvXpi0idIBdPuGiI"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/week-9-malik-nabers-fantasy-165658764.html",
+          "title": "Week 9 Malik Nabers Fantasy Start or Sit 2026",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQe53RtqAMfZ-_WsJscyIuytgmoTkNsY3eQNT4r96QuE1vt4RmGtydtNqMU8tA"
+        },
+        {
+          "url": "https://www.si.com/nfl/giants/onsi/giants-midseason-awards-nabers-carter-mccarthy-01m6cea6ttkh",
+          "title": "Giants Midseason Awards: Best Players, Biggest Surprises and the Turning Point",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzNQpib20WU0QrEVOoYIl54NPgOl9EyYMShhxxDJcOqsfHJY8TyWw_DIahT_0"
+        }
+      ]
+    },
     {
       "query": "taylor fritz",
       "approx_searches": "1000+",
       "published_at": "2026-11-05T18:40:00Z",
       "related_news_urls": [
-        "https://www.atptour.com/en/video/highlights-paul-books-paris-2026-qf-spot-keeps-turin-hopes-alive",
-        "https://en.tennistemple.com/actu/rolex-paris-masters-four-french-players-in-action/Ymzq",
-        "https://lastwordonsports.com/tennis/2026/11/04/atp-paris-day-4-predictions-fritz-fils/"
+        "https://www.reuters.com/sports/tennis/alcaraz-into-paris-quarter-finals-after-berrettini-withdraws-2026-11-05/",
+        "https://sports.yahoo.com/articles/carlos-alcaraz-reaches-paris-masters-183523504.html",
+        "https://www.wral.com/news/ap/3ef32-alcaraz-advances-to-paris-masters-quarterfinals-after-berrettini-pulls-out-injured/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZQcbOV_k6VhiPTZnNEUERcOIlkTQ2yLQtW1aSXq1jsAbvx3fmxEoPJGEMXP0",
-      "image_credit": "ATP Tour",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjzWRvmcwkTSyYJ5mZSpUhcgG26cIB06oxRlaAJqc66CFx89F436Y06WVCcgM",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.atptour.com/en/video/highlights-paul-books-paris-2026-qf-spot-keeps-turin-hopes-alive",
-          "title": "Highlights: Paul books Paris QF spot, keeps Turin hopes alive",
-          "publisher": "ATP Tour",
+          "url": "https://www.reuters.com/sports/tennis/alcaraz-into-paris-quarter-finals-after-berrettini-withdraws-2026-11-05/",
+          "title": "Alcaraz into Paris quarter-finals after Berrettini withdraws",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZQcbOV_k6VhiPTZnNEUERcOIlkTQ2yLQtW1aSXq1jsAbvx3fmxEoPJGEMXP0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjzWRvmcwkTSyYJ5mZSpUhcgG26cIB06oxRlaAJqc66CFx89F436Y06WVCcgM"
         },
         {
-          "url": "https://en.tennistemple.com/actu/rolex-paris-masters-four-french-players-in-action/Ymzq",
-          "title": "Rolex Paris Masters: Four French Players in Action Thursday, with Fils Closing Out the Day",
-          "publisher": "TennisTemple",
+          "url": "https://sports.yahoo.com/articles/carlos-alcaraz-reaches-paris-masters-183523504.html",
+          "title": "Carlos Alcaraz Reaches Paris Masters Quarterfinals After Matteo Berrettini’s Withdrawal",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT8fPAnZhatcYOS7BJC18I93rTCOGIRR5YCFuP0ZHPePU_P9VsR3XMTpvI6PY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJDrS8steB9v4cbHHoQrn_YGlm5lwSwIYWY1Jwe9E2csjxUGNUNAhGAZVdqEY"
         },
         {
-          "url": "https://lastwordonsports.com/tennis/2026/11/04/atp-paris-day-4-predictions-fritz-fils/",
-          "title": "ATP Paris Day 4 Predictions Including Taylor Fritz vs Arthur Fils",
-          "publisher": "Last Word On Sports",
+          "url": "https://www.wral.com/news/ap/3ef32-alcaraz-advances-to-paris-masters-quarterfinals-after-berrettini-pulls-out-injured/",
+          "title": "Alcaraz advances to Paris Masters quarterfinals after Berrettini pulls out injured",
+          "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwuiELka_M2CW84KV9dK5-hUMmLKsA5yVLJZHBcwip9g7usCYHLAenqNNYtek"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZqCUEzS31yQvpSDgWOm-zqiauWxKwSBghXjz7NDS4p4q-hU-HRJdmLIyKQQ"
         }
       ]
     },
@@ -48,7 +215,7 @@
       "related_news_urls": [
         "https://www.lequipe.fr/Tennis/Article/Les-grands-ont-chute-quatre-bleus-se-sont-qualifies-folle-journee-a-la-plenitude-arena/1741241",
         "https://www.france24.com/fr/info-en-continu/20261104-tennis-premier-masters-et-nouveau-cap-franchi-pour-arthur-fils",
-        "https://rennes.maville.com/sport/infos/detail_-masters-1000-de-paris-fils-halys-et-alcaraz-qualifies-zverev-et-djokovic-elimines-le-resume-de-la-3e-journee_-7556655_actu.Htm"
+        "https://www.franceinfo.fr/sports/tennis/arthur-fils/yannick-noah-en-premier-supporter-d-arthur-fils-lors-de-sa-victoire-au-masters-1000-de-paris_8268968.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiZeAJHW5yDQxk7vcYIUYL9tz28IJ2O9bGAQe3d7paiu7_nCZLZggwHZYEb2s",
       "image_credit": "L'Équipe",
@@ -68,11 +235,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnAWSCroQYhkaV3ux7P5XS8prq9IV1TvxIC2sTYcbRJkbsl8c-rssrEV4UTNI"
         },
         {
-          "url": "https://rennes.maville.com/sport/infos/detail_-masters-1000-de-paris-fils-halys-et-alcaraz-qualifies-zverev-et-djokovic-elimines-le-resume-de-la-3e-journee_-7556655_actu.Htm",
-          "title": "Masters 1000 de Paris. Fils, Halys et Alcaraz qualifiés, Zverev et Djokovic éliminés… Le résumé de la 3e journée",
-          "publisher": "maville.com",
+          "url": "https://www.franceinfo.fr/sports/tennis/arthur-fils/yannick-noah-en-premier-supporter-d-arthur-fils-lors-de-sa-victoire-au-masters-1000-de-paris_8268968.html",
+          "title": "Yannick Noah en premier supporter d'Arthur Fils lors de sa victoire au Masters 1000 de Paris",
+          "publisher": "franceinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeZvs0h1M8Ag_gSVoWHwuRXeTflZF9HWqVMh83SOe6ID8e-3AMIUVUyF54Kwc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyM0vO2rHNrquy7HuC8kKyrzvlW0ZnMHGYnGvYR0rmABPdddSlRSH2JaOZ4FQ"
         }
       ]
     },
@@ -82,7 +249,7 @@
       "published_at": "2026-11-05T18:40:00Z",
       "related_news_urls": [
         "https://www.sozcu.com.tr/canli-veya-trabzonspor-freiburg-maci-canli-anlatimi-uefa-konferans-ligi-p376402",
-        "https://www.hurriyet.com.tr/sporarena/ozan-tufan-milli-takima-donmek-istiyorum-43366016",
+        "https://www.hurriyet.com.tr/sporarena/freiburg-nerenin-takimi-hangi-ligde-oynuyor-freiburg-guncel-kadro-degeri-2026-43367119",
         "https://www.milliyet.com.tr/galeri/konferans-ligi-trabzonspor-puan-durumu-trabzonspor-konferans-liginde-kacinci-sirada-puani-kac-trabzonsporun-konferans-ligi-7694846"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZnMLr4PD8WG1YfGNalBbvyaloNVbtjjkrbE7UE-RQJlZpXsSJajTviL9agzc",
@@ -96,11 +263,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZnMLr4PD8WG1YfGNalBbvyaloNVbtjjkrbE7UE-RQJlZpXsSJajTviL9agzc"
         },
         {
-          "url": "https://www.hurriyet.com.tr/sporarena/ozan-tufan-milli-takima-donmek-istiyorum-43366016",
-          "title": "Ozan Tufan: Milli Takım'a dönmek istiyorum",
+          "url": "https://www.hurriyet.com.tr/sporarena/freiburg-nerenin-takimi-hangi-ligde-oynuyor-freiburg-guncel-kadro-degeri-2026-43367119",
+          "title": "Freiburg nerenin takımı, hangi ligde oynuyor? Freiburg güncel kadro değeri 2026!",
           "publisher": "Hürriyet",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPVUQ54etBmMK8biVBDFH_rgHqfjM0EYW-0mXMwx1h8hl8o9_zjD-to3O68Js"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPaD0snnL2d5xESvEcMl3BhT0RCMAFrwFmmc1KmhQZDUE40p4qDA-rtRCdE7k"
         },
         {
           "url": "https://www.milliyet.com.tr/galeri/konferans-ligi-trabzonspor-puan-durumu-trabzonspor-konferans-liginde-kacinci-sirada-puani-kac-trabzonsporun-konferans-ligi-7694846",
@@ -116,33 +283,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-05T18:40:00Z",
       "related_news_urls": [
-        "https://www.caranddriver.com/es/coches/planeta-motor/a74343360/polemica-con-los-descuentos-a-la-gasolina-y-diesel-la-ocu-denuncia-practicas-anticompetitivas-y-senala-a-las-low-cost/",
-        "https://www.naiz.eus/en/info/noticia/20261105/una-de-cada-tres-gasolineras-no-ha-trasladado-toda-la-rebaja-fiscal-a-los-carburantes",
-        "https://cadenaser.com/nacional/2026/11/05/una-de-cada-tres-estaciones-de-servicio-no-ha-trasladado-totalmente-el-descuento-sobre-la-gasolina-segun-la-ocu-cadena-ser/"
+        "https://www.univision.com/noticias/politica/elecciones-en-estados-unidos-2026/la-gasolina-y-el-diesel-alcanzan-su-precio-mas-alto-para-una-jornada-electoral-en-cuanto-esta-el-galon",
+        "https://efe.com/mundo/2026-11-02/trump-subida-gasolina-guerra-iran/",
+        "https://www.expansion.com/opinion/2026/11/03/alivio-petrolero-previo-elecciones-estados-unidos.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQL4lcH43SRtEuVtfLoC9feNS41if5oSr35puT5U5kApuKOnbqOifGdFi22Fmg",
-      "image_credit": "Car and Driver",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSwL3fMYrGdRXxncQ7OWlehx5Ek4tQDbHMEUg_HlY-LtSLyWlrvDRuCsey3n8",
+      "image_credit": "Univision",
       "news": [
         {
-          "url": "https://www.caranddriver.com/es/coches/planeta-motor/a74343360/polemica-con-los-descuentos-a-la-gasolina-y-diesel-la-ocu-denuncia-practicas-anticompetitivas-y-senala-a-las-low-cost/",
-          "title": "Polémica con los descuentos a la gasolina y diésel: la OCU denuncia \"prácticas anticompetitivas\" y señala a las low cost",
-          "publisher": "Car and Driver",
+          "url": "https://www.univision.com/noticias/politica/elecciones-en-estados-unidos-2026/la-gasolina-y-el-diesel-alcanzan-su-precio-mas-alto-para-una-jornada-electoral-en-cuanto-esta-el-galon",
+          "title": "La gasolina y el diésel alcanzan su precio más alto para una jornada electoral: ¿en cuánto está el galón?",
+          "publisher": "Univision",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQL4lcH43SRtEuVtfLoC9feNS41if5oSr35puT5U5kApuKOnbqOifGdFi22Fmg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSwL3fMYrGdRXxncQ7OWlehx5Ek4tQDbHMEUg_HlY-LtSLyWlrvDRuCsey3n8"
         },
         {
-          "url": "https://www.naiz.eus/en/info/noticia/20261105/una-de-cada-tres-gasolineras-no-ha-trasladado-toda-la-rebaja-fiscal-a-los-carburantes",
-          "title": "Una de cada tres gasolineras no ha trasladado toda la rebaja fiscal a los carburantes",
-          "publisher": "naiz:",
+          "url": "https://efe.com/mundo/2026-11-02/trump-subida-gasolina-guerra-iran/",
+          "title": "Trump califica de un «pequeño precio a pagar» la subida de la gasolina por la guerra en Irán",
+          "publisher": "EFE - Agencia de noticias",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFR_OPcjpaPw5DxOE9lVLE8Se5CG8Wb27U7Bx-vmEqlhBNf8iQREZMRG1RMI0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6hCWU_ZKNFWk6FpVR38A9RbMA-istyACC4jKM1RKuSqUOCCV5N7DsnCg9AOw"
         },
         {
-          "url": "https://cadenaser.com/nacional/2026/11/05/una-de-cada-tres-estaciones-de-servicio-no-ha-trasladado-totalmente-el-descuento-sobre-la-gasolina-segun-la-ocu-cadena-ser/",
-          "title": "Una de cada tres estaciones de servicio no ha trasladado totalmente el descuento sobre la gasolina, según la OCU",
-          "publisher": "Cadena SER",
+          "url": "https://www.expansion.com/opinion/2026/11/03/alivio-petrolero-previo-elecciones-estados-unidos.html",
+          "title": "Alivio petrolero previo a las elecciones en Estados Unidos",
+          "publisher": "Expansión",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBoqzjGZozRUQ7HX-0kA9buiO9ne0Ng3xjlKpaH9a62NkfX-5fLoojJ2KH32U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBF_JqVZRXOSQLvAfuUiAtrYXBddk6_vf4jon6Q0JyTo6j6qidtsIBtiDLNIw"
         }
       ]
     },
@@ -151,200 +318,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-05T18:40:00Z",
       "related_news_urls": [
-        "https://www.telegraaf.nl/sport/voetbal/elf-spelers-ajax-geweigerd-privejets-ingezet-erik-ten-hag-vertelt-het-bizarre-verhaal-van-midtjylland-uit-in-2020/164064932.html",
-        "https://nos.nl/artikel/2638043-ajax-mist-brandt-en-amrabat-in-conference-league-az-heeft-smit-terug",
-        "https://www.parool.nl/sport/live-fc-midtjylland-ajax-uitstekende-start-voor-ajax-arokodare-kopt-al-snel-raak~b0b8dc34/"
+        "https://www.telegraaf.nl/sport/voetbal/live-conference-league-ajax-lijkt-wedstrijd-tegen-tiental-midtjylland-al-te-beslissen-tolu-weer-belangrijk/164112788.html",
+        "https://www.vi.nl/nieuws/etim-scoort-tegen-ajax-na-dubieus-duel-met-kehrer-vind-het-dom-verdedigd",
+        "https://sporza.be/nl/2026/11/05/milan-en-atalanta-verrassend-op-achterstand-tolu-heeft-tweede-treffer-beet-volg-hier-alle-scores~1793895453842/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNB2G8-kKWKmSOmTpTtS-hCLytRdMVZft7IMjJ1Ul6s5UACM7jU2BkfFy7KbU",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrlkyikEs3PFXWsexnZhVDJ6mmVc75pOFToEwEYwTCGYz7gQXMT3w98PIngNY",
       "image_credit": "De Telegraaf",
       "news": [
         {
-          "url": "https://www.telegraaf.nl/sport/voetbal/elf-spelers-ajax-geweigerd-privejets-ingezet-erik-ten-hag-vertelt-het-bizarre-verhaal-van-midtjylland-uit-in-2020/164064932.html",
-          "title": "Elf spelers Ajax geweigerd, privéjets ingezet: Erik ten Hag vertelt het bizarre verhaal van Midtjylland-uit in 2020",
+          "url": "https://www.telegraaf.nl/sport/voetbal/live-conference-league-ajax-lijkt-wedstrijd-tegen-tiental-midtjylland-al-te-beslissen-tolu-weer-belangrijk/164112788.html",
+          "title": "LIVE Conference League | Ajax lijkt wedstrijd tegen tiental Midtjylland al te beslissen, Tolu weer belangrijk",
           "publisher": "De Telegraaf",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNB2G8-kKWKmSOmTpTtS-hCLytRdMVZft7IMjJ1Ul6s5UACM7jU2BkfFy7KbU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrlkyikEs3PFXWsexnZhVDJ6mmVc75pOFToEwEYwTCGYz7gQXMT3w98PIngNY"
         },
         {
-          "url": "https://nos.nl/artikel/2638043-ajax-mist-brandt-en-amrabat-in-conference-league-az-heeft-smit-terug",
-          "title": "Ajax mist Brandt en Amrabat in Conference League, AZ heeft Smit terug",
-          "publisher": "NOS",
+          "url": "https://www.vi.nl/nieuws/etim-scoort-tegen-ajax-na-dubieus-duel-met-kehrer-vind-het-dom-verdedigd",
+          "title": "Etim scoort tegen Ajax na dubieus duel met Kehrer: 'Vind het dom verdedigd'",
+          "publisher": "Voetbal International",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8G6oRXxMGyf8DhroKS4kKE2OHRm8iu0agTx8G2kqSctK4CX_95IYdj-WOKog"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHOvHbOF0x0CtybkOOVjc1UQVcgbcOysCfJm_Jj1IerfAuZMtcuosc8_ZrjBA"
         },
         {
-          "url": "https://www.parool.nl/sport/live-fc-midtjylland-ajax-uitstekende-start-voor-ajax-arokodare-kopt-al-snel-raak~b0b8dc34/",
-          "title": "Live FC Midtjylland - Ajax | Uitstekende start voor Ajax: Arokodare kopt al snel raak",
-          "publisher": "Het Parool",
+          "url": "https://sporza.be/nl/2026/11/05/milan-en-atalanta-verrassend-op-achterstand-tolu-heeft-tweede-treffer-beet-volg-hier-alle-scores~1793895453842/",
+          "title": "Milan én Atalanta verrassend op achterstand, Tolu heeft tweede treffer beet: volg hier alle scores",
+          "publisher": "Sporza",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3xXmIx5ii5Fn__Wxd8ZlFwkSDv6KC7-fIRrXlopAUc9rewFRdLnQsWJ5LSWU"
-        }
-      ]
-    },
-    {
-      "query": "jubilación",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T18:30:00Z",
-      "related_news_urls": [
-        "https://www.indexbox.io/es/blog/tiaa-report-43-of-americans-cut-or-stopped-401k-contributions-to-cover-rising-living-costs/",
-        "https://www.wfmz.com/espanol/sindicato-policial-de-allentown-demanda-al-concejo-por-programa-de-jubilaci-n/article_8acebce8-53b0-4b31-a7e5-4fec4d61c47f.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoa5rXRnH1WzxhHYhU_SxsmHuk6aP1d-TVYJ1etooYUJoJy7f0IxwYnue-wqA",
-      "image_credit": "IndexBox",
-      "news": [
-        {
-          "url": "https://www.indexbox.io/es/blog/tiaa-report-43-of-americans-cut-or-stopped-401k-contributions-to-cover-rising-living-costs/",
-          "title": "Encuesta de TIAA: el 43 % redujo o dejó de hacer aportes a su 401(k) ante el alza de costos - Noticias y Estadísticas",
-          "publisher": "IndexBox",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoa5rXRnH1WzxhHYhU_SxsmHuk6aP1d-TVYJ1etooYUJoJy7f0IxwYnue-wqA"
-        },
-        {
-          "url": "https://www.wfmz.com/espanol/sindicato-policial-de-allentown-demanda-al-concejo-por-programa-de-jubilaci-n/article_8acebce8-53b0-4b31-a7e5-4fec4d61c47f.html",
-          "title": "Sindicato policial de Allentown demanda al Concejo por programa de jubilación",
-          "publisher": "WFMZ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PwZ-MQ7WwFnqr-MoAfHQhXMcIctw6ij5w74nMr92XVKFmGRGQukPypOp1eE"
-        }
-      ]
-    },
-    {
-      "query": "conference league",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T18:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c5djvklyewpgt",
-        "https://sports.yahoo.com/articles/conference-league-line-ups-atalanta-164000981.html",
-        "https://football-italia.net/sarri-atalanta-training-retreat-bring-closer/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c5djvklyewpgt",
-          "title": "Atalanta vs Kairat: UEFA Conference League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/conference-league-line-ups-atalanta-164000981.html",
-          "title": "Conference League line-ups: Atalanta vs. Kairat Almaty",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz2S0wzgwZFtIgEB7qiGZulNIvVnBzQAXZmVVL6HSe8wpKG4DtOzVs6DRDRPY"
-        },
-        {
-          "url": "https://football-italia.net/sarri-atalanta-training-retreat-bring-closer/",
-          "title": "Sarri: Atalanta’s training retreat is meant to ‘bring us closer’",
-          "publisher": "Football Italia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg9XSm8kAtc4FGMSTP4UzwGeXBH6GpTxWraEqZK6D-DaGlhRVPqRryDTBsCvg"
-        }
-      ]
-    },
-    {
-      "query": "erin napier",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T18:10:00Z",
-      "related_news_urls": [
-        "https://www.aol.com/articles/erin-napier-honors-aunt-mae-040429000.html",
-        "https://www.imdb.com/news/ni66096762/?ref_=tt_nwr_1",
-        "https://www.tvinsider.com/1301837/erin-napier-mourns-family-loss-amid-home-town-season-11-filming-hgtv/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1rDsleZplMhgNPORgUeUSXuZTrJDrseA0aThoZ21pJlfKaC1nVPs-7Vx40K8",
-      "image_credit": "AOL.com",
-      "news": [
-        {
-          "url": "https://www.aol.com/articles/erin-napier-honors-aunt-mae-040429000.html",
-          "title": "Erin Napier Honors Late Aunt Mae Mae in Heartfelt Instagram Tribute",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1rDsleZplMhgNPORgUeUSXuZTrJDrseA0aThoZ21pJlfKaC1nVPs-7Vx40K8"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66096762/?ref_=tt_nwr_1",
-          "title": "HGTV’s Erin Napier Announces Devastating Family Loss Amid ‘Home Town’ Filming",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrFIu9qBBdNW6zrt5oI_Mh8h7Zm4tqWhsFqbhT505-z09hYxCzD7vgpimiplc"
-        },
-        {
-          "url": "https://www.tvinsider.com/1301837/erin-napier-mourns-family-loss-amid-home-town-season-11-filming-hgtv/",
-          "title": "HGTV Star Erin Napier Announces Devastating Family Loss",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpQ4rekbyryGJ-DV-97lj_LzbfVVomwdb8PKIpRSd7WpyChRzetZ4KqSHwi_8"
-        }
-      ]
-    },
-    {
-      "query": "brysen wright",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T18:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/miami/article/wr-brysen-wright-commits-miami-reclassifies-2027-291533553/",
-        "https://www.usatoday.com/story/sports/high-school/football/2026/11/05/brysen-wright-commits-miami-football-2028-recruiting-class/92397655007/",
-        "https://www.news4jax.com/sports/2026/11/05/the-u-brysen-wright-makes-college-decision-official-chooses-hurricanes/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0e1Rw5o7nq_2CAhV32MxFTi_yu_MD6hioUAAPY_JE_Ddqsr1_c8Qzr_mdV3o",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/miami/article/wr-brysen-wright-commits-miami-reclassifies-2027-291533553/",
-          "title": "Elite WR Brysen Wright commits to Miami, reclassifies to 2027",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0e1Rw5o7nq_2CAhV32MxFTi_yu_MD6hioUAAPY_JE_Ddqsr1_c8Qzr_mdV3o"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/05/brysen-wright-commits-miami-football-2028-recruiting-class/92397655007/",
-          "title": "Brysen Wright commitment: 5-star WR commits to Miami football, Mario Cristobal",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOrIKcJmsVU1IBLeLkVnAT-INCZeAUjyIqH4DoUVeBa8BrduMH4S_tFpgPJ0"
-        },
-        {
-          "url": "https://www.news4jax.com/sports/2026/11/05/the-u-brysen-wright-makes-college-decision-official-chooses-hurricanes/",
-          "title": "The U! Brysen Wright makes college decision official, chooses Hurricanes",
-          "publisher": "News4JAX",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRH9quis2LsZGBPK7fPpGITeW13aaQWS5cDoXaT41HHi_tZA8CEbfe-Mf4ZVo"
-        }
-      ]
-    },
-    {
-      "query": "jalayshia alford",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T18:00:00Z",
-      "related_news_urls": [
-        "https://6abc.com/post/jalayshia-allford-update-search-continues-missing-10-year-old-west-philadelphia/20017799/",
-        "https://www.nbcphiladelphia.com/news/local/10-year-old-missing-philadelphia-girl-jalayshia-malayshia-alford-found-dead-lindenwold-nj/4492319/",
-        "https://www.inquirer.com/crime/jalayshia-alford-body-found-new-jersey-20261105.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9vZUvtIhV7d6tYz9KnD5yNHB9DrjXmgfhHuEN3tme6j_3fZTFg7IuxqOaCU",
-      "image_credit": "6abc Philadelphia",
-      "news": [
-        {
-          "url": "https://6abc.com/post/jalayshia-allford-update-search-continues-missing-10-year-old-west-philadelphia/20017799/",
-          "title": "Jalayshia Allford update: Missing 10-year-old Philadelphia girl found dead in Lindenwold, New Jersey: Sources",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9vZUvtIhV7d6tYz9KnD5yNHB9DrjXmgfhHuEN3tme6j_3fZTFg7IuxqOaCU"
-        },
-        {
-          "url": "https://www.nbcphiladelphia.com/news/local/10-year-old-missing-philadelphia-girl-jalayshia-malayshia-alford-found-dead-lindenwold-nj/4492319/",
-          "title": "Girl, 10, found dead in NJ after disappearing from West Philly, sources say",
-          "publisher": "NBC10 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAl-_Ks1iZnF4V1L3bGIdabe3e8g2XVuL0Pz8kQ2I30qzuDg7FffPT1GicLH4"
-        },
-        {
-          "url": "https://www.inquirer.com/crime/jalayshia-alford-body-found-new-jersey-20261105.html",
-          "title": "Police find body of Jalayshia Alford, missing 10-year-old, inside trunk of car in New Jersey, sources say",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFHzFz-v5zRFGFByyx4TCqUNn5UV2S20Sp1nKQiOs0U6UpMSmDKxAtwWYRAWs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHZTz-hWyFJTE4ZSSQWZGCmgjwjsEEJNUZnYwVxKdrVDfQA_fizMEoBo9eebU"
         }
       ]
     }
