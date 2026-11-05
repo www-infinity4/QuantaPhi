@@ -273,3 +273,36 @@ html.bubble-iframe.bubbles-family-modern .ba-panel .ba-iteration-bubbles{
 @media(prefers-reduced-motion:reduce){
  html.bubble-iframe.bubbles-family-modern .ba-panel *{animation-duration:.001ms!important;transition-duration:.001ms!important}
 }
+
+/* Compact, useful opt-in starters. They fill the user's input only when tapped. */
+html.bubble-iframe.bubbles-family-modern .ba-panel>.ba-family-suggestions{
+ flex:0 0 auto!important;
+ display:flex!important;
+ flex-wrap:nowrap;
+ gap:7px;
+ min-width:0;
+ overflow-x:auto;
+ overflow-y:hidden;
+ padding:8px 12px!important;
+ border-block:1px solid #ece4f3;
+ background:#fcfaff;
+ scrollbar-width:thin;
+ overscroll-behavior-x:contain;
+}
+html.bubble-iframe.bubbles-family-modern .ba-panel>.ba-family-suggestions .ba-family-prompt{
+ flex:0 0 auto;
+ min-height:38px!important;
+ max-width:190px;
+ padding:6px 11px!important;
+ white-space:nowrap!important;
+ border:1px solid #d8c5e9!important;
+ background:#fff!important;
+ border-radius:999px!important;
+ color:#58327c!important;
+ -webkit-text-fill-color:#58327c!important;
+ font:750 12px/1.3 system-ui,sans-serif!important;
+ box-shadow:none;
+}
+html.bubble-iframe.bubbles-family-modern .ba-panel>.ba-family-suggestions .ba-family-prompt:hover{
+ background:#f4eafb!important;
+}
