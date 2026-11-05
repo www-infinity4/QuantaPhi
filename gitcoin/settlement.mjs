@@ -29,25 +29,30 @@ export function gitCreditStatements(manifest,result,principal){
  return statements;
 }
 
-export async function settleGitClaim(manifest,{principal,github,quantAI,db}={}){
- if(!db?.batch||!db.prepare)fail('git_ledger_unavailable');
- // No caller-supplied resolver is accepted here. The Bubbles owner binding
- // is provisioned server-side from the existing verified executor identity.
- const bubblesExecutor={resolve:async()=>{
+export function databaseBubblesExecutor(db){
+ return {resolve:async()=>{
   const row=await db.prepare('SELECT binding_id,wallet_id,owner_subject,active,owner_verified FROM gitcoin_bubbles_executor WHERE singleton=1').first();
   return row?{bindingId:row.binding_id,walletId:row.wallet_id,ownerSubject:row.owner_subject,active:row.active===1,ownerVerified:row.owner_verified===1}:null;
  }};
- const verified=await evaluateClaim(manifest,{principal,github,quantAI,bubblesExecutor});
+}
+
+// Called by the two trusted settlement entry points after verification.
+// Customer agreement links join the same atomic batch as their awards.
+export async function storeVerifiedGitCredits(manifest,verified,{principal,db,awardLinks=[]}){
  if(verified.status==='rejected')return {asset:'GIT',status:'rejected',credited:0,receiptIds:[]};
  const plan=gitCreditStatements(manifest,verified,principal);
  // D1 batch is transactional: a provenance/recipient conflict aborts the
  // complete batch. An interruption is safe to retry with the same receipts.
- const changes=await db.batch(plan.map(s=>db.prepare(s.sql).bind(...s.params)));
+ const changes=await db.batch([...plan.map(s=>db.prepare(s.sql).bind(...s.params)),...awardLinks]);
  const expected=createSettlementPlan(verified),receiptIds=[],excludedHistorical=[];
- const readback=await db.prepare(`SELECT c.receipt_id,c.recipient_wallet_id,h.receipt_id AS canonical_receipt,a.wallet_id,a.amount
-   FROM gitcoin_line_claims c JOIN gitcoin_line_history h ON h.repo=c.repo AND h.file_path=c.file_path AND h.content_sha256=c.content_sha256
-   LEFT JOIN gitcoin_awards a ON a.receipt_id=c.receipt_id WHERE c.receipt_id IN (${expected.map((_,i)=>'?'+(i+1)).join(',')})`).bind(...expected.map(x=>x.receipt_id)).all();
- const saved=new Map((readback.results||[]).map(row=>[row.receipt_id,row]));
+ const saved=new Map();
+ for(let start=0;start<expected.length;start+=100){
+  const ids=expected.slice(start,start+100).map(x=>x.receipt_id);
+  const readback=await db.prepare(`SELECT c.receipt_id,c.recipient_wallet_id,h.receipt_id AS canonical_receipt,a.wallet_id,a.amount
+    FROM gitcoin_line_claims c JOIN gitcoin_line_history h ON h.repo=c.repo AND h.file_path=c.file_path AND h.content_sha256=c.content_sha256
+    LEFT JOIN gitcoin_awards a ON a.receipt_id=c.receipt_id WHERE c.receipt_id IN (${ids.map((_,i)=>'?'+(i+1)).join(',')})`).bind(...ids).all();
+  for(const row of readback.results||[])saved.set(row.receipt_id,row);
+ }
  for(const line of expected){
   const row=saved.get(line.receipt_id);
   if(!row||row.recipient_wallet_id!==line.wallet_id)fail('git_credit_readback_failed');
@@ -55,8 +60,14 @@ export async function settleGitClaim(manifest,{principal,github,quantAI,db}={}){
   if(row.wallet_id!==line.wallet_id||row.amount!==1)fail('git_credit_readback_failed');
   receiptIds.push(line.receipt_id);
  }
- const credited=changes.reduce((n,x,i)=>n+(i%3===2?Number(x.meta?.changes||0):0),0);
+ const credited=changes.slice(0,plan.length).reduce((n,x,i)=>n+(i%3===2?Number(x.meta?.changes||0):0),0);
  if(!Number.isSafeInteger(credited)||credited<0||credited>receiptIds.length)fail('git_credit_readback_failed');
  return {asset:'GIT',status:'settled',walletId:verified.recipient_wallet_id,credited,alreadyCredited:receiptIds.length-credited,
   receiptIds,excludedHistorical,reviewId:verified.review_id,cashPaid:false};
+}
+
+export async function settleGitClaim(manifest,{principal,github,quantAI,db}={}){
+ if(!db?.batch||!db.prepare)fail('git_ledger_unavailable');
+ const verified=await evaluateClaim(manifest,{principal,github,quantAI,bubblesExecutor:databaseBubblesExecutor(db)});
+ return storeVerifiedGitCredits(manifest,verified,{principal,db});
 }

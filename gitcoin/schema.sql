@@ -61,7 +61,7 @@ CREATE INDEX IF NOT EXISTS idx_gitcoin_awards_wallet ON gitcoin_awards(wallet_id
 -- One historical copy per repository/path/content. Copying the same line back
 -- into the file after deletion cannot mint it again under a new commit SHA.
 CREATE TABLE IF NOT EXISTS gitcoin_line_history (
- repo TEXT NOT NULL,
+ repo TEXT NOT NULL COLLATE NOCASE,
  file_path TEXT NOT NULL,
  content_sha256 TEXT NOT NULL,
  receipt_id TEXT NOT NULL UNIQUE REFERENCES gitcoin_line_claims(receipt_id),
@@ -76,12 +76,14 @@ CREATE TRIGGER IF NOT EXISTS gitcoin_claim_recipient_guard_v2 BEFORE INSERT ON g
 WHEN EXISTS(SELECT 1 FROM gitcoin_line_claims c WHERE c.receipt_id=NEW.receipt_id AND
  (c.repo<>NEW.repo OR c.commit_sha<>NEW.commit_sha OR c.file_path<>NEW.file_path OR c.line_number<>NEW.line_number OR
   c.content_sha256<>NEW.content_sha256 OR c.recipient_wallet_id IS NOT NEW.recipient_wallet_id OR
+  c.authenticated_submitter<>NEW.authenticated_submitter OR c.customer_wallet_id IS NOT NEW.customer_wallet_id OR
   c.execution_channel<>NEW.execution_channel OR c.recipient_policy<>NEW.recipient_policy OR c.executor_binding_id IS NOT NEW.executor_binding_id))
 BEGIN SELECT RAISE(ABORT,'git_receipt_conflict'); END;
 CREATE TRIGGER IF NOT EXISTS gitcoin_award_verified_guard_v2 BEFORE INSERT ON gitcoin_awards
 WHEN NOT EXISTS(SELECT 1 FROM gitcoin_line_claims c WHERE c.receipt_id=NEW.receipt_id AND c.status='verified'
  AND c.recipient_wallet_id=NEW.wallet_id AND c.git_type=NEW.git_type
  AND c.github_evidence_id=NEW.github_evidence_id AND c.quant_ai_review_id=NEW.quant_ai_review_id
+ AND (c.builder_claim<>'bubbles' OR c.execution_channel='bubbles')
  AND (c.execution_channel<>'bubbles' OR EXISTS(SELECT 1 FROM gitcoin_bubbles_executor e
   WHERE e.singleton=1 AND e.active=1 AND e.owner_verified=1 AND e.binding_id=c.executor_binding_id
   AND e.wallet_id=NEW.wallet_id AND c.recipient_policy='bubbles_owner_executor_v1')))
