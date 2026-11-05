@@ -7,7 +7,7 @@
  'use strict';
  const endpoint=String(window.PhiExecutorInsightsEndpoint||'').replace(/\/$/,'');
  if(!/^https:\/\/[A-Za-z0-9.-]+$/.test(endpoint))return;
- const mounts=[['fredSpacesRadio','fred-spaces'],['followingSpacesRadio','following-spaces'],['mediaStarCreator','media-star-creator']];
+ const mounts=[['fredSpacesRadio','fred-spaces'],['followingSpacesRadio','following-spaces'],['mediaStarCreator','media-star-creator'],['mediaStarGallery','media-star']];
  const place=location.pathname.includes('card-host')?'quick_card':location.pathname.includes('bubbles')?'bubbles':'homepage';
  let sessionId;
  try{
