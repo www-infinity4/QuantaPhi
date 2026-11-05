@@ -3,340 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T02:01:35.676237Z",
+  "checked_at": "2026-11-05T02:31:31.908704Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jesse watters",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T01:40:00Z",
+      "query": "sharks vs kings",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T02:10:00Z",
       "related_news_urls": [
-        "https://thehill.com/homenews/media/6194912-watters-gop-election-results-trump-dividends/",
-        "https://www.the-independent.com/bulletin/news/fox-news-jesse-watters-republicans-midterms-trump-b3078704.html",
-        "https://www.thedailybeast.com/fox-news-host-jesse-watters-delivers-bleak-election-verdict-before-results-roll-in"
+        "https://lakingsinsider.com/2026/11/04/11-4-preview-measuring-stick-game-vs-san-jose-clarke-on-injury-scare-connors-lineup-fit-hometown-remix-debut/",
+        "https://www.nhl.com/kings/news/tune-in-kings-versus-sharks-november-4",
+        "https://www.mercurynews.com/2026/11/04/what-channel-is-televising-tonights-san-jose-sharks-los-angeles-kings-game/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RHg19pNY-34QWuJApunVslwBQ8swVMeV7KXtOaMq9J8POnWLjUUux6B504M",
-      "image_credit": "The Hill",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQo_w6QvVA3hx_D0CR1CpxYsGWGyzHbK8TXoQXjgUUomh3Hs0dzqG-HMwIbbnc",
+      "image_credit": "LA Kings Insider",
       "news": [
         {
-          "url": "https://thehill.com/homenews/media/6194912-watters-gop-election-results-trump-dividends/",
-          "title": "Jesse Watters: ‘I don’t think we’re getting our $5,000 checks’",
-          "publisher": "The Hill",
+          "url": "https://lakingsinsider.com/2026/11/04/11-4-preview-measuring-stick-game-vs-san-jose-clarke-on-injury-scare-connors-lineup-fit-hometown-remix-debut/",
+          "title": "11/4 Preview - Measuring Stick Game vs. San Jose + Clarke On Injury Scare, Connors Lineup Fit, Hometown Remix Debut",
+          "publisher": "LA Kings Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RHg19pNY-34QWuJApunVslwBQ8swVMeV7KXtOaMq9J8POnWLjUUux6B504M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQo_w6QvVA3hx_D0CR1CpxYsGWGyzHbK8TXoQXjgUUomh3Hs0dzqG-HMwIbbnc"
         },
         {
-          "url": "https://www.the-independent.com/bulletin/news/fox-news-jesse-watters-republicans-midterms-trump-b3078704.html",
-          "title": "Fox News host seemingly gives up on Republican midterms success mid-broadcast",
-          "publisher": "The Independent",
+          "url": "https://www.nhl.com/kings/news/tune-in-kings-versus-sharks-november-4",
+          "title": "Game Preview - LAK vs. SJS",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKYB-BIirJ_rE6evqG-p0ya-ojvqoOY5T9y3AYemLpBWWfvPvbCm76FMSSvNo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLtONZkibUaHzgRUJb-ReD-l0VON_PS_6XcfOCte1aNaCoT19RCDIvN4o61fI"
         },
         {
-          "url": "https://www.thedailybeast.com/fox-news-host-jesse-watters-delivers-bleak-election-verdict-before-results-roll-in",
-          "title": "Fox News Host Jesse Watters Delivers Bleak Election Verdict Before Results Roll In",
-          "publisher": "The Daily Beast",
+          "url": "https://www.mercurynews.com/2026/11/04/what-channel-is-televising-tonights-san-jose-sharks-los-angeles-kings-game/",
+          "title": "What channel is televising tonight’s San Jose Sharks-Los Angeles Kings game?",
+          "publisher": "The Mercury News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyWgMjPiBlTiZdeHJrMME7vi-puydsFBrfxlf4W4BifSLKEH_w_dFM5_BjQOk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW5cW8MfFx12_CX2UliWkwGyjv56rN9I_X9z2QDl0k3Exf7H-axMyyndclqxU"
         }
       ]
     },
     {
-      "query": "mavericks vs spurs",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-05T01:30:00Z",
+      "query": "jarrett allen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T02:10:00Z",
       "related_news_urls": [
-        "https://www.poundingtherock.com/spurs-game-previews/109371/game-preview-san-antonio-spurs-vs-dallas-mavericks",
-        "https://www.cbssports.com/prediction/news/mavericks-vs-spurs-odds-picks-prediction-start-time-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-        "https://sports.yahoo.com/articles/final-injury-report-mavericks-spurs-223000542.html"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/jarrett-allen-knee-doubtful-to-return-wednesday",
+        "https://www.cbssports.com/fantasy/basketball/news/cavaliers-jarrett-allen-exits-to-locker-room/",
+        "https://www.rotowire.com/basketball/headlines/jarrett-allen-injury-doubtful-to-return-wednesday-537591"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQp_EPQ7mXXPXjDHW9Nx-SeXovJqAp98HiJIiw84HfWqhGcg6Weuk7g9ih_gk8",
-      "image_credit": "Pounding The Rock",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOYMlkyTpupZoKGaXNNIyqLPtIlhs1x-M_MVZb50TNA9Zyj2fk_8Fc5fqVxVw",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.poundingtherock.com/spurs-game-previews/109371/game-preview-san-antonio-spurs-vs-dallas-mavericks",
-          "title": "Game Preview: San Antonio Spurs vs. Dallas Mavericks",
-          "publisher": "Pounding The Rock",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/jarrett-allen-knee-doubtful-to-return-wednesday",
+          "title": "Jarrett Allen (knee) doubtful to return Wednesday",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQp_EPQ7mXXPXjDHW9Nx-SeXovJqAp98HiJIiw84HfWqhGcg6Weuk7g9ih_gk8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOYMlkyTpupZoKGaXNNIyqLPtIlhs1x-M_MVZb50TNA9Zyj2fk_8Fc5fqVxVw"
         },
         {
-          "url": "https://www.cbssports.com/prediction/news/mavericks-vs-spurs-odds-picks-prediction-start-time-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-          "title": "Mavericks vs. Spurs odds, picks, prediction, start time: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/cavaliers-jarrett-allen-exits-to-locker-room/",
+          "title": "Cavaliers' Jarrett Allen: Exits to locker room",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfKq0QJaMuD1pL3HyZRUDp-Swiq4N-codSOGjFwxMMIwpW2Mcif-MhpbaqCFU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/final-injury-report-mavericks-spurs-223000542.html",
-          "title": "Final Injury Report for Mavericks-Spurs: Will Kyrie Irving, Tobias Harris Play?",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.rotowire.com/basketball/headlines/jarrett-allen-injury-doubtful-to-return-wednesday-537591",
+          "title": "Jarrett Allen Injury: Doubtful to return Wednesday",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvjL8d2VvJ7SjInAIIJt6LjqqId-4saLr3PHmBws6urLEmtQBcETEOrzFR2pc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR92QANOIrkl2ip8AZsSorHEp5v2_LTHxoQSnA7jzQDwlSm2_UqyMv_xa5u1T4"
         }
       ]
     },
     {
-      "query": "clima para amanhã",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T01:30:00Z",
+      "query": "lakers vs kings",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T02:00:00Z",
       "related_news_urls": [
-        "https://www.bra1.com.br/clima/id-698760/previsao_do_tempo_em_manaus__88__de_chuva_e_30.4_c",
-        "https://novo2026.portaldoholanda.com.br/amazonas/depois-do-calor-de-34c-alerta-amarelo-poe-granizo-no-radar-de-manaus-nesta-quarta",
-        "https://g1.globo.com/am/amazonas/videos-jam-1-edicao/video/previsao-do-tempo-para-o-amazonas-nesta-quarta-feira-4-15159105.ghtml"
+        "https://www.silverscreenandroll.com/lakers-game-previews/128397/lakers-vs-kings-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-zach-lavine",
+        "https://kingsherald.com/articles/kings-vs-lakers-preview-sacramento-win-tsunami-incoming/",
+        "https://www.si.com/betting/lakers-vs-kings-prediction-odds-and-best-nba-prop-bets-for-wednesday-nov-4-2026"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT19SJ4zPmrUwERMc3EFUQJ9c1pzFFyd-J8bC_2fKVzNuVIVUFBSx2AmgIznS4",
-      "image_credit": "www.bra1.com.br",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSebvZmv7Z416wqDa2qEqwD0xzD6MAE1EHVV54l99p4cygfhgRSKZBIvUaWJ3I",
+      "image_credit": "Silver Screen and Roll",
       "news": [
         {
-          "url": "https://www.bra1.com.br/clima/id-698760/previsao_do_tempo_em_manaus__88__de_chuva_e_30.4_c",
-          "title": "Previsão do tempo em Manaus: 88% de chuva e 30.4°C",
-          "publisher": "www.bra1.com.br",
+          "url": "https://www.silverscreenandroll.com/lakers-game-previews/128397/lakers-vs-kings-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-zach-lavine",
+          "title": "Lakers vs. Kings Preview: Quick road trip",
+          "publisher": "Silver Screen and Roll",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT19SJ4zPmrUwERMc3EFUQJ9c1pzFFyd-J8bC_2fKVzNuVIVUFBSx2AmgIznS4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSebvZmv7Z416wqDa2qEqwD0xzD6MAE1EHVV54l99p4cygfhgRSKZBIvUaWJ3I"
         },
         {
-          "url": "https://novo2026.portaldoholanda.com.br/amazonas/depois-do-calor-de-34c-alerta-amarelo-poe-granizo-no-radar-de-manaus-nesta-quarta",
-          "title": "Depois do calor de 34°C, alerta amarelo põe granizo no radar de Manaus nesta quarta",
-          "publisher": "Portal do Holanda",
+          "url": "https://kingsherald.com/articles/kings-vs-lakers-preview-sacramento-win-tsunami-incoming/",
+          "title": "Kings vs Lakers Preview: Sacramento Win Tsunami Incoming?",
+          "publisher": "The Kings Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQqR8NNeaPaOoOT0rGZOAEsstYMIhPzfrbb-Im1lI_z3-7Ie8h1ypnuyecEF0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThL9O6wKStffhTTettDIFWUV7Y6qUsm9gwDTL49vBgmQye2er3cEiVvh0faWI"
         },
         {
-          "url": "https://g1.globo.com/am/amazonas/videos-jam-1-edicao/video/previsao-do-tempo-para-o-amazonas-nesta-quarta-feira-4-15159105.ghtml",
-          "title": "Previsão do tempo para o Amazonas nesta quarta-feira (4)",
-          "publisher": "G1",
+          "url": "https://www.si.com/betting/lakers-vs-kings-prediction-odds-and-best-nba-prop-bets-for-wednesday-nov-4-2026",
+          "title": "Lakers vs. Kings Prediction, Odds and Best NBA Prop Bets for Wednesday, Nov. 4",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHUROwRr7tyWrX_S5EE7NG0moaTpIMnSTIpPmbr1T7IfmI1XRVWrNmhIvG0Ws"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOzxUrDE2YcEqVK59iTGN7GmN52o6uhq0diD7ozygb_wEg8ecGIpVXmdG3Fao"
         }
       ]
     },
     {
-      "query": "universitario - sport boys",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T01:30:00Z",
+      "query": "dalton knecht",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T02:00:00Z",
       "related_news_urls": [
-        "https://rpp.pe/futbol/descentralizado/universitario-vs-sport-boys-en-vivo-a-que-hora-juegan-y-donde-ver-fecha-14-torneo-clausura-2026-via-l1max-partidos-de-hoy-noticia-1715660",
-        "https://depor.com/futbol-peruano/descentralizado/tabla-de-posiciones-liga-1-peru-2026-en-vivo-hoy-acumulado-y-resultado-universitario-vs-sport-boys-pendiente-fecha-14-torneo-clausura-sporting-cristal-alianza-lima-noticia/",
-        "https://www.infobae.com/video/deportes/fabian-bustos-explica-el-cambio-de-arquero-en-universitario/Ba0MD46z/"
+        "https://www.espn.com/nba/story/_/id/50258464/ex-laker-dalton-knecht-joins-knicks-two-way-contract",
+        "https://knicks.com/news/new-york-knicks-sign-dalton-knecht-totwo-way-contract",
+        "https://www.hoopsrumors.com/2026/10/knicks-reportedly-interested-in-dalton-knecht.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqJuhmXbNtQpFzpGmWF9f5-J11JFeDZOWwfnTdJkotD3pZAQGKlNZUFBNT8FA",
-      "image_credit": "RPP Noticias",
-      "news": [
-        {
-          "url": "https://rpp.pe/futbol/descentralizado/universitario-vs-sport-boys-en-vivo-a-que-hora-juegan-y-donde-ver-fecha-14-torneo-clausura-2026-via-l1max-partidos-de-hoy-noticia-1715660",
-          "title": "Universitario vs Sport Boys hoy EN VIVO: ¿a qué hora juegan y dónde por la fecha 14 del Torneo Clausura?",
-          "publisher": "RPP Noticias",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqJuhmXbNtQpFzpGmWF9f5-J11JFeDZOWwfnTdJkotD3pZAQGKlNZUFBNT8FA"
-        },
-        {
-          "url": "https://depor.com/futbol-peruano/descentralizado/tabla-de-posiciones-liga-1-peru-2026-en-vivo-hoy-acumulado-y-resultado-universitario-vs-sport-boys-pendiente-fecha-14-torneo-clausura-sporting-cristal-alianza-lima-noticia/",
-          "title": "Tabla de posiciones de la Liga 1 2026 EN VIVO: acumulado y resultado del Universitario vs. Sport Boys",
-          "publisher": "Depor",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3KoB4xIPfq4M8RZA-B9td2jYQi0c3NIe7WcdJd4fyqDf7_VHs_dfD3TQetEo"
-        },
-        {
-          "url": "https://www.infobae.com/video/deportes/fabian-bustos-explica-el-cambio-de-arquero-en-universitario/Ba0MD46z/",
-          "title": "Fabián Bustos explica el cambio de arquero en Universitario",
-          "publisher": "Infobae",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLTHEHIMir0on-FfIRsxVsW9Hy2Q5lIVLWDiX9-QW5r-0dJpAFDV3URNeNgj4"
-        }
-      ]
-    },
-    {
-      "query": "aircraft carrier",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T01:30:00Z",
-      "related_news_urls": [
-        "https://www.wavy.com/news/national/former-uss-enterprise-begins-final-voyage-from-virginia/",
-        "https://news.usni.org/2026/11/02/enterprise-hulk-towed-from-newport-news-shipbuilding",
-        "https://www.flightglobal.com/defence/2026/11/uss-enterprise-worlds-first-nuclear-powered-aircraft-carrier-heads-to-the-scrapyard/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWJWH40sha0_zhFDeVTjeiw6ud-7c9atvdzH0vXm4PVuqZ7xOM41zn4MO-KBo",
-      "image_credit": "WAVY.com",
-      "news": [
-        {
-          "url": "https://www.wavy.com/news/national/former-uss-enterprise-begins-final-voyage-from-virginia/",
-          "title": "PHOTOS: Former USS Enterprise begins final voyage from Virginia",
-          "publisher": "WAVY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWJWH40sha0_zhFDeVTjeiw6ud-7c9atvdzH0vXm4PVuqZ7xOM41zn4MO-KBo"
-        },
-        {
-          "url": "https://news.usni.org/2026/11/02/enterprise-hulk-towed-from-newport-news-shipbuilding",
-          "title": "Enterprise Hulk Towed from Newport News Shipbuilding",
-          "publisher": "USNI News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4vYZi_1xR-zA4NKj79dN_sKeWlYW3R44TwGwqwO8d-MK7AZk1_Cz01XH2FQ8"
-        },
-        {
-          "url": "https://www.flightglobal.com/defence/2026/11/uss-enterprise-worlds-first-nuclear-powered-aircraft-carrier-heads-to-the-scrapyard/",
-          "title": "USS Enterprise, world’s first nuclear-powered aircraft carrier, heads to the scrapyard",
-          "publisher": "FlightGlobal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAbzXbiKrqtZfE01FX_lRYgApnQ5HBYEbrNVqEsR2Co-SmNmkCjNoLTm5hGD8"
-        }
-      ]
-    },
-    {
-      "query": "heisman odds",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T01:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/espn/betting/story/_/id/50360375/college-football-heisman-2026-odds-favorites-picks-week-10",
-        "https://sports.yahoo.com/college-football/article/heisman-watch-will-julian-sayins-injury-ultimately-derail-jeremiah-smiths-heisman-hopes-150703738.html",
-        "https://www.nytimes.com/athletic/7749077/2026/11/03/heisman-watch-2026-jeremiah-smith-malachi-toney/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDUG5SlnTkiPSjVtfTeRf6AkFPkPIUogDIQm0swjTcVHyk_P6RQ6OFli195II",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4i6xk7twNUuygKHbQTLtIm08symoqFPTpxmuqIikrMwLasJHUKkEzWKZ2Cg",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/espn/betting/story/_/id/50360375/college-football-heisman-2026-odds-favorites-picks-week-10",
-          "title": "Breaking down the Heisman race: How Week 10 could change everything",
+          "url": "https://www.espn.com/nba/story/_/id/50258464/ex-laker-dalton-knecht-joins-knicks-two-way-contract",
+          "title": "Ex-Laker Dalton Knecht joins Knicks on two-way contract",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDUG5SlnTkiPSjVtfTeRf6AkFPkPIUogDIQm0swjTcVHyk_P6RQ6OFli195II"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4i6xk7twNUuygKHbQTLtIm08symoqFPTpxmuqIikrMwLasJHUKkEzWKZ2Cg"
         },
         {
-          "url": "https://sports.yahoo.com/college-football/article/heisman-watch-will-julian-sayins-injury-ultimately-derail-jeremiah-smiths-heisman-hopes-150703738.html",
-          "title": "Heisman Watch: Will Julian Sayin's injury ultimately derail Jeremiah Smith's Heisman hopes?",
+          "url": "https://knicks.com/news/new-york-knicks-sign-dalton-knecht-totwo-way-contract",
+          "title": "NEW YORK KNICKS SIGN DALTON KNECHT TO TWO-WAY CONTRACT",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_HubFFbSDT9lioeqxKxVeKeoB0hbdwGHio-fR1MSr8-igeGlWXPUzLYI5b2k"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/10/knicks-reportedly-interested-in-dalton-knecht.html",
+          "title": "Knicks Reportedly Interested In Dalton Knecht",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPB1fULAOwaxKwq3-LXVWSq8TgOGdgrWsLmGlcWFzM9JQ4YZMAw9rlew4kNio"
+        }
+      ]
+    },
+    {
+      "query": "daisy ridley",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T02:00:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/global/daisy-ridley-sosie-bacon-simon-rex-get-rid-of-it-1236939126/",
+        "https://www.yahoo.com/entertainment/movies/articles/star-wars-daisy-ridley-leading-183548972.html",
+        "https://deadline.com/2026/11/daisy-ridley-sosie-bacon-simon-rex-get-rid-of-it-horror-1237213519/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTn06oMU07hODiS5j1t5CNAZ03Ue3A9g3aq7e6BGcEE0wBxrlKMb60x8klRuHk",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/global/daisy-ridley-sosie-bacon-simon-rex-get-rid-of-it-1236939126/",
+          "title": "Daisy Ridley, Sosie Bacon, Simon Rex to Star in Get Rid of It",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTn06oMU07hODiS5j1t5CNAZ03Ue3A9g3aq7e6BGcEE0wBxrlKMb60x8klRuHk"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/star-wars-daisy-ridley-leading-183548972.html",
+          "title": "Star Wars’ Daisy Ridley Leading New Road Trip Horror Movie, Simon Rex & More Also Cast",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzLMWg907dEITLeSg8zFrG91_1JThuGICYSuqGq7eefafQHSgii1lneJ9ZK4c"
+        },
+        {
+          "url": "https://deadline.com/2026/11/daisy-ridley-sosie-bacon-simon-rex-get-rid-of-it-horror-1237213519/",
+          "title": "Daisy Ridley, Sosie Bacon & Simon Rex Set For ‘Get Rid of It’ Horror From Director Ry Russo-Young",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBDxfHHFm7EFjfUaSO0y0t_dss2m0fuA57YCcIN2sEV0ak90zN_NQbI71eSwY"
+        }
+      ]
+    },
+    {
+      "query": "maria alicia delgado",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T02:00:00Z",
+      "related_news_urls": [
+        "https://www.univision.com/famosos/la-fallecida-maria-alicia-delgado-a-sus-77-anos-no-podia-dejar-de-trabajar-video",
+        "https://es-us.vida-estilo.yahoo.com/muere-actriz-comediante-maria-alicia-235138236.html",
+        "https://www.lasestrellas.tv/famosos/produccion-de-sabor-a-ti-se-despide-con-conmovedoras-palabras-de-maria-alicia-delgado"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGEnF6rD6ju9Lh3q63Sth-nMBS7rn2BSZu_2yCT5P1QIiB8BpDzaBlQmEOHBY",
+      "image_credit": "Univision",
+      "news": [
+        {
+          "url": "https://www.univision.com/famosos/la-fallecida-maria-alicia-delgado-a-sus-77-anos-no-podia-dejar-de-trabajar-video",
+          "title": "La fallecida María Alicia Delgado, a sus 77 años, no podía dejar de trabajar",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGEnF6rD6ju9Lh3q63Sth-nMBS7rn2BSZu_2yCT5P1QIiB8BpDzaBlQmEOHBY"
+        },
+        {
+          "url": "https://es-us.vida-estilo.yahoo.com/muere-actriz-comediante-maria-alicia-235138236.html",
+          "title": "Muere la actriz y comediante María Alicia Delgado",
+          "publisher": "Yahoo en Español Vida y Estilo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcaFqKKbJNphJKwHU_F4MaTBVxHim5XEiPyh_IsSJ9D_KMPcoZU8MZY7AfTw"
+        },
+        {
+          "url": "https://www.lasestrellas.tv/famosos/produccion-de-sabor-a-ti-se-despide-con-conmovedoras-palabras-de-maria-alicia-delgado",
+          "title": "Producción de Sabor a ti se despide con conmovedoras palabras de María Alicia Delgado",
+          "publisher": "Las Estrellas",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx6AYia2P96l6i_g5lItv-K9v_Ic0bLjewT4ffHS9ArhL-aZdwCmb6VriWx0Y"
+        }
+      ]
+    },
+    {
+      "query": "aldi november 2026 new products",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T02:00:00Z",
+      "related_news_urls": [
+        "https://www.foodandwine.com/aldi-finds-november-2026-12219435",
+        "https://www.southernliving.com/november-aldi-finds-12202804",
+        "https://bestlifeonline.com/aldi-old-fashioned-christmas-decor-under-15/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3TpIvq6f2qKj6TJ70A9WBXyb9qK4isYbnHuVgnyKDgX3UPXFxOiVHEnWB-E",
+      "image_credit": "Food & Wine",
+      "news": [
+        {
+          "url": "https://www.foodandwine.com/aldi-finds-november-2026-12219435",
+          "title": "Aldi Is Releasing Over 30 New Items This November — Including Returning Holiday Favorites",
+          "publisher": "Food & Wine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3TpIvq6f2qKj6TJ70A9WBXyb9qK4isYbnHuVgnyKDgX3UPXFxOiVHEnWB-E"
+        },
+        {
+          "url": "https://www.southernliving.com/november-aldi-finds-12202804",
+          "title": "15 ALDI Finds We’re Adding To Our Carts This November",
+          "publisher": "Southern Living",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUxfjn15yphwH-uTFv60HOGliCuWRKVj2Saw9tnAUappTkNltKw-VQT8PSmMo"
+        },
+        {
+          "url": "https://bestlifeonline.com/aldi-old-fashioned-christmas-decor-under-15/",
+          "title": "7 Best New Aldi Finds for Old-Fashioned Christmas Decorating Under $15",
+          "publisher": "bestlifeonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLxLfSbz5YrGhjHINK1yvNGNMcbMjL6jsx43EutsmBsMZGCRBBv44fnf9rSzI"
+        }
+      ]
+    },
+    {
+      "query": "duncan robinson",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T01:50:00Z",
+      "related_news_urls": [
+        "https://www.freep.com/story/sports/columnists/shawn-windsor/2026/11/04/duncan-robinsons-new-found-stability-detroit-pistons-to-new-hiehghts/92599322007/",
+        "https://pistonpowered.com/duncan-robinson-career-best-start-about-shooting-detroit-pistons",
+        "https://www.fantasypros.com/nba/news/617483/duncan-robinson-pours-24-points-monday-night.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK1z9QyiRZwcxF3Df9SwDAv54g7U7DWRh_VHcnrRgPiqQ8S_bbTSSqWVQuxKU",
+      "image_credit": "Detroit Free Press",
+      "news": [
+        {
+          "url": "https://www.freep.com/story/sports/columnists/shawn-windsor/2026/11/04/duncan-robinsons-new-found-stability-detroit-pistons-to-new-hiehghts/92599322007/",
+          "title": "Duncan Robinson's basketball renaissance would make his brother proud",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK1z9QyiRZwcxF3Df9SwDAv54g7U7DWRh_VHcnrRgPiqQ8S_bbTSSqWVQuxKU"
+        },
+        {
+          "url": "https://pistonpowered.com/duncan-robinson-career-best-start-about-shooting-detroit-pistons",
+          "title": "Duncan Robinson's career-best start isn't just about shooting",
+          "publisher": "PistonPowered",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTd8dW5lcRdoRTqTo_GBiuD1TzrT3rSFBV4uZfL1f5Fv5WZGefvsd--cvwITC0"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/617483/duncan-robinson-pours-24-points-monday-night.php",
+          "title": "Duncan Robinson pours in 24 points Monday night",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjNnOO989f755v2qgGeJJ1L-zyRkot4Q1KBVo3DJJ7g-lgehcQXO5hHO8MX2o"
+        }
+      ]
+    },
+    {
+      "query": "hurricane",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T01:50:00Z",
+      "related_news_urls": [
+        "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
+        "https://weather.com/2026/11/04/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
+        "https://www.foxweather.com/weather-news/bryan-norcross-hurricane-analysis-november-3-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk",
+      "image_credit": "WPEC",
+      "news": [
+        {
+          "url": "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
+          "title": "Tracking potential tropical development",
+          "publisher": "WPEC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk"
+        },
+        {
+          "url": "https://weather.com/2026/11/04/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
+          "title": "Subtropical storm could develop in the Atlantic this week",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmZQO5Dn7J_GyPaFz74GWC5rwepbUl8yAofcJl1zYbansiMNwq1F1pOZWePo"
+        },
+        {
+          "url": "https://www.foxweather.com/weather-news/bryan-norcross-hurricane-analysis-november-3-2026",
+          "title": "Bryan Norcross: Chance for a storm developing east of the Bahamas to be named Kyle this week",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZx1RpbiYFr52GXQqRWyskSrz2HCdRM5kCVVA-6drqua9gKQd0q7RU5-AmYew"
+        }
+      ]
+    },
+    {
+      "query": "bennett stirtz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T01:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/thunder-could-continue-benefit-bennett-214556886.html",
+        "https://www.thegazette.com/sports/national/former-hawkeye-bennett-stirtz-a-perfect-fit-in-okc/article_82ad6a0e-e67d-4153-a9c1-0ae0cf2cb344.html",
+        "https://www.itemonline.com/sports/national_sports/thunder-basketball/image_a31517f4-bb9a-509c-8c00-608d9d94a4c7.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ067qiGmMVxdeeykB27X5v919aNDhZvGXGu4ajFKTwRd4RS9zs_QeOKpTVzXg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/thunder-could-continue-benefit-bennett-214556886.html",
+          "title": "The Thunder Could Continue To Benefit From Bennett Stirtz's Efficient Play",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6mfntx9VZlrr4vy3qOTdEyD8MgisTSj74jQ16knypAzEMSJj4r7vpV0-orA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ067qiGmMVxdeeykB27X5v919aNDhZvGXGu4ajFKTwRd4RS9zs_QeOKpTVzXg"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7749077/2026/11/03/heisman-watch-2026-jeremiah-smith-malachi-toney/",
-          "title": "Who’s winning the Heisman Trophy after Week 9? Ranking the top 7 players",
-          "publisher": "The New York Times",
+          "url": "https://www.thegazette.com/sports/national/former-hawkeye-bennett-stirtz-a-perfect-fit-in-okc/article_82ad6a0e-e67d-4153-a9c1-0ae0cf2cb344.html",
+          "title": "Former Hawkeye Bennett Stirtz a perfect fit in OKC",
+          "publisher": "The Gazette",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMq5ETRCzsGXEND7jhQMZdCKTcJQFyQ-TT0CwBFZhPqymkfEJzysMU4bnBkFM"
-        }
-      ]
-    },
-    {
-      "query": "joel embiid",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T01:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/what-makes-this-76ers-team-stacked-with-superstars-so-unique/764288/",
-        "https://www.inquirer.com/sixers/sixers-extra-lebron-james-tyrese-maxey-jaylen-brown-joel-embiid-20261104.html",
-        "https://allphly.com/76ers/a-rejuvenated-joel-embiid-is-anchoring-the-nbas-second-best-defense/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfdsgsOVr7OEoTg4rSY21AizSJ5hnX4syc0shtTmt2wURmJjuEPEGMIcl0SWU",
-      "image_credit": "NBC Sports Philadelphia",
-      "news": [
-        {
-          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/what-makes-this-76ers-team-stacked-with-superstars-so-unique/764288/",
-          "title": "What makes this 76ers team stacked with superstars so unique",
-          "publisher": "NBC Sports Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfdsgsOVr7OEoTg4rSY21AizSJ5hnX4syc0shtTmt2wURmJjuEPEGMIcl0SWU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTsEVl9E1AGRq6o9xLUE4_C0xtaKs-naBftYdaMWv1xf3_LI86HScod4rHiM"
         },
         {
-          "url": "https://www.inquirer.com/sixers/sixers-extra-lebron-james-tyrese-maxey-jaylen-brown-joel-embiid-20261104.html",
-          "title": "Elite defense, offense needs work, and Tyrese Maxey, No. 1 option: Let’s play Sixers real or not real",
-          "publisher": "Inquirer.com",
+          "url": "https://www.itemonline.com/sports/national_sports/thunder-basketball/image_a31517f4-bb9a-509c-8c00-608d9d94a4c7.html",
+          "title": "Thunder Basketball",
+          "publisher": "itemonline.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSx2w6i-4L7751OxVRLBd8YaV-xVOa-29vg_mVA7tjlAe0RcVl5l29j7sxOwUw"
-        },
-        {
-          "url": "https://allphly.com/76ers/a-rejuvenated-joel-embiid-is-anchoring-the-nbas-second-best-defense/",
-          "title": "A rejuvenated Joel Embiid is anchoring the NBA’s second best defense",
-          "publisher": "PHLY Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRScyqtye82LHcomJqshEc5JmRkIJqpiSwh7bW9Rz7qJa8clEFb2_s8LOHSKBI"
-        }
-      ]
-    },
-    {
-      "query": "tolu smith",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T01:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/sports/nba/2026/11/04/joel-embiid-fight-tolu-smith-76ers-pistons/92618821007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNeduDLIJteW4YcPeU3ECVfwncpXWL5-umyOtrcjXpjMyquxwduIk3dGL2cEs",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/sports/nba/2026/11/04/joel-embiid-fight-tolu-smith-76ers-pistons/92618821007/",
-          "title": "Joel Embiid hit with technical foul for altercation in 76ers-Pistons",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNeduDLIJteW4YcPeU3ECVfwncpXWL5-umyOtrcjXpjMyquxwduIk3dGL2cEs"
-        }
-      ]
-    },
-    {
-      "query": "aew blood and guts 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T01:20:00Z",
-      "related_news_urls": [
-        "https://www.allelitewrestling.com/post/aew-dynamite-blood-and-guts-preview-november-4-2026",
-        "https://bleacherreport.com/articles/25529376-aew-dynamite-results-winners-live-grades-reaction-highlights-blood-guts-2026",
-        "https://www.forbes.com/sites/robwolkenbrod/2026/11/04/aew-dynamite-blood-and-guts-2026-match-card-start-time-streaming/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2pPzgKAmu6SeihoWb_WelOumYBAVvoJXhk9wgtH98a8u7PialkflYujYJ9z8",
-      "image_credit": "AEW",
-      "news": [
-        {
-          "url": "https://www.allelitewrestling.com/post/aew-dynamite-blood-and-guts-preview-november-4-2026",
-          "title": "AEW Dynamite Blood and Guts Preview: November 4, 2026 – Men’s and Women’s Blood and Guts Matches Take Center Stage With Full Gear 10 Days Away, More",
-          "publisher": "AEW",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2pPzgKAmu6SeihoWb_WelOumYBAVvoJXhk9wgtH98a8u7PialkflYujYJ9z8"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529376-aew-dynamite-results-winners-live-grades-reaction-highlights-blood-guts-2026",
-          "title": "AEW Dynamite Results, Winners, Live Grades, Reaction, Highlights From Blood & Guts 2026",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2LREeFAIUibPpvLQCgyHPFuu8TlslbB9X0GkUzIZYRJgR459cS6jR4o33jaY"
-        },
-        {
-          "url": "https://www.forbes.com/sites/robwolkenbrod/2026/11/04/aew-dynamite-blood-and-guts-2026-match-card-start-time-streaming/",
-          "title": "AEW Dynamite Blood And Guts 2026 Match Card, Start Time, Streaming",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1j1GggUDHWB5MvVngKitA2yU5KZLU9uIFpQ6YBqkMt8udK5qjE8khP3eRFEU"
-        }
-      ]
-    },
-    {
-      "query": "trail blazers vs suns",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T01:10:00Z",
-      "related_news_urls": [
-        "https://www.blazersedge.com/gameday-coverage/117910/portland-trail-blazers-phoenix-suns-nba-preview-tv-time-injuries-devin-booker-damian-lillard-deni-avdija",
-        "https://www.brightsideofthesun.com/suns-game/113001/trail-blazers-rematch-seven-game-homestand-mark-williams",
-        "https://www.sportsgambler.com/betting-tips/basketball/portland-trail-blazers-vs-phoenix-suns-prediction-odds-6019775/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGydndnMuvMtgB9M20PYzlpzN0HoTL2kaNB7MoUjvGe7eQDrDBsqCWW715BME",
-      "image_credit": "Blazer's Edge",
-      "news": [
-        {
-          "url": "https://www.blazersedge.com/gameday-coverage/117910/portland-trail-blazers-phoenix-suns-nba-preview-tv-time-injuries-devin-booker-damian-lillard-deni-avdija",
-          "title": "Blazers vs. Suns Preview",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGydndnMuvMtgB9M20PYzlpzN0HoTL2kaNB7MoUjvGe7eQDrDBsqCWW715BME"
-        },
-        {
-          "url": "https://www.brightsideofthesun.com/suns-game/113001/trail-blazers-rematch-seven-game-homestand-mark-williams",
-          "title": "Game Preview: Suns get another shot at the team that started their season spiraling",
-          "publisher": "Bright Side Of The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuX4sbTl2G-iTWjWtGwa1qeph5SeD7YMgJzA0aUVb02Zi0wouQ1BW_L_QkUSc"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/portland-trail-blazers-vs-phoenix-suns-prediction-odds-6019775/",
-          "title": "Portland Trail Blazers vs Phoenix Suns Prediction, Picks & Odds | NBA Wednesday",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4X7vdgmZmCxiPCYZ9YxsIQx-KZQP_QLg792Q5jsHAEgw9cFdhsr8H5qYm5Ao"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRv-VUhQoRbgO5fAJR5ij7wMszYk5HIC5SQE-ljfEl50X__IZpU8BxKAKNimg"
         }
       ]
     }
