@@ -57,7 +57,7 @@ test('radio carousel has sourced Iowa stations and user-initiated playback', asy
   const { anchor, existingAudio } = boot();
   const cards = byClass(anchor, 'ilr-card');
   assert.ok(cards.length >= 7, 'WHO, KXNO, Bus, Kiss and three IPR channels');
-  assert.match(cards[0].textContent, /WHO/);
+  assert.ok(descendants(cards[0]).some(n => /WHO/.test(n.textContent)), 'WHO is the first featured station');
   assert.equal(existingAudio.pauses || 0, 0, 'mounting never interrupts current music');
   const news = cards.find(c => c.dataset.station === 'ipr-news');
   assert.ok(news, 'IPR News card exists');
