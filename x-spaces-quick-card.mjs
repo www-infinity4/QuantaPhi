@@ -1,7 +1,7 @@
 /* QuantaPhi · X Spaces Quick Card.
  * Separate from the authenticated Media Star two-stage roll and X Developer Connect.
  * The owner-supplied link is only an index entry, NEVER an audio-verified session.
- * No cross-site frames of x.com/i/spaces; X forbids general Space iframe playback.
+ * No cross-site frames of x.com/i/spaces; generic Space URLs have no verified supported iframe playback.
  * X controls Spaces playback. This is not a paid X search or OAuth client.
  */
 import {readIndexedSpaces, validSpaceLink} from './quanta-feed-spaces.mjs';
@@ -76,7 +76,7 @@ export function mountXSpacesQuickCard(root){
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const deck=node('div','xqs-deck');
  const nav=node('div','xqs-nav');
- const prev=node('button','xqs-button','‹ Previous'),count=node('span','xqs-counter','0 of 0'),next=node('button','xqs-button','Next ›');
+ const prev=node('button','xqs-button','‹ Previous X Space'),count=node('span','xqs-counter','0 of 0'),next=node('button','xqs-button','Next X Space ›');
  prev.type=next.type='button';
  append(nav,prev,count,next);
  const note=node('p','xqs-note',
