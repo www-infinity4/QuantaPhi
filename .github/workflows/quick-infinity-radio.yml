@@ -1,10 +1,10 @@
 name: Infinity Radio quick player
 on:
   pull_request:
-    paths: ['quick-infinity-radio.js', 'test/quick-infinity-radio.test.mjs', 'test/quick-radio-recovery.test.cjs', 'oracle-card-deck.js', 'index.html', '.github/workflows/quick-infinity-radio.yml']
+    paths: ['quick-infinity-radio.js', 'iowa-live-radio-cards.js', 'test/iowa-live-radio-cards.test.mjs', 'test/quick-infinity-radio.test.mjs', 'test/quick-radio-recovery.test.cjs', 'oracle-card-deck.js', 'index.html', '.github/workflows/quick-infinity-radio.yml']
   push:
     branches: [main]
-    paths: ['quick-infinity-radio.js', 'test/quick-infinity-radio.test.mjs', 'test/quick-radio-recovery.test.cjs', 'oracle-card-deck.js', 'index.html', '.github/workflows/quick-infinity-radio.yml']
+    paths: ['quick-infinity-radio.js', 'iowa-live-radio-cards.js', 'test/iowa-live-radio-cards.test.mjs', 'test/quick-infinity-radio.test.mjs', 'test/quick-radio-recovery.test.cjs', 'oracle-card-deck.js', 'index.html', '.github/workflows/quick-infinity-radio.yml']
 permissions:
   contents: read
 jobs:
@@ -15,4 +15,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check quick-infinity-radio.js && node --test test/quick-infinity-radio.test.mjs test/quick-radio-recovery.test.cjs
+      - run: node --check quick-infinity-radio.js && node --check iowa-live-radio-cards.js && node --test test/quick-infinity-radio.test.mjs test/quick-radio-recovery.test.cjs test/iowa-live-radio-cards.test.mjs
