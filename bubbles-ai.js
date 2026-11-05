@@ -3434,7 +3434,7 @@ async function githubReceipt(requestId){
 }
 // Direct GitHub jobs start asynchronously. Only a final persisted no-action
 // receipt can justify a fallback. Never replay an in-flight or ambiguous write.
-async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence='',receiptThread=activeThread){
+async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence='',receiptThread=typeof activeThread==='string'?activeThread:''){
  if(result?.ok!==false||result.status!=='blocked'||!operation)return null;
  try{
   const {chooseOverflow}=await import('/bubbles-dispatch-catalog.mjs?v=20261024-verified-overflow1');
@@ -3452,7 +3452,7 @@ async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEv
    String(error.message||error).slice(0,170)+'. No completed write is claimed.';
  }
 }
-function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence='',receiptThread=activeThread){
+function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence='',receiptThread=typeof activeThread==='string'?activeThread:''){
  if(pendingGithubReceipts.has(requestId))return;
  rememberPendingGithubWork(requestId,receiptThread);
  pendingGithubReceipts.add(requestId);
@@ -4103,7 +4103,7 @@ async function requestRunner(ticketId='',jobId=''){
  return result;
 }
 async function submitWork(request,approval='explicit-click',imageEvidence=''){
- const receiptThread=activeThread;
+ const receiptThread=typeof activeThread==='string'?activeThread:'';
  if(activeCardEvidence)cardWorkspaceInstance?.diagnose();
  const cardEvidenceSnapshot=activeCardEvidence?JSON.parse(JSON.stringify(activeCardEvidence)):null;
  // Resolve the real target before creating tickets. A guess never silently fans out.
@@ -4127,7 +4127,7 @@ async function submitWork(request,approval='explicit-click',imageEvidence=''){
   return {...results[0],repositories:results.map(result=>result.repository),tickets:results,batchSummary:summary};
  }finally{delete repositoryPicker.dataset.submitting;}
 }
-async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence,imageEvidence='',receiptThread=activeThread){
+async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence,imageEvidence='',receiptThread=typeof activeThread==='string'?activeThread:''){
  const headers=await verifiedOwnerHeaders();
  if(!brainTools)throw Error('Bubbles Brain tool helpers are not loaded.');
  if(workButton.disabled)throw Error('A work request is already being submitted.');
@@ -4152,7 +4152,7 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   // Always revalidate against the current authenticated owner's backend.
   try{sessionStorage.setItem(ACTIVE_WORK_REF,JSON.stringify({
    ticketId:result.ticket.id,thread:activeIterationThreadId,at:Date.now()}));}catch{}
-  if(activeThread===receiptThread&&typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+  if(receiptThread&&activeThread===receiptThread&&typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
    type:'job',repository,status:result.ticket.status,url:result.ticket.progress?.url||''}}));
   if(String(workText.value||'').trim()===request)workText.value='';
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs:result.ticket.context?.color_jobs||jobs}}));
