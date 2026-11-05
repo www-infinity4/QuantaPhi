@@ -6,13 +6,13 @@ const site=fs.readFileSync('bubbles-ai.js','utf8');
 const base='android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/';
 const read=name=>fs.readFileSync(base+name,'utf8');
 test('Bubbles routes ordinary repository edits directly but explicit multi-agent requests to Robot Brain',()=>{
- assert.match(site,/const requestsAgents=.*robot/);
+ assert.match(site,/const requestsAgents=[\s\S]*?robot/);
  assert.match(site,/const codeTask=.*edit\|fix\|repair/);
  assert.match(site,/let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask/);
  assert.match(site,/directRequest\|\|githubCheck\|\|createRepository\|\|coderRequest\|\|directCoding/);
- assert.match(site,/else if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
+ assert.match(site,/else if\(!embedded&&\(isOwnerWorkRequest\(request\)\|\|neuralCoding&&requestsAgents\)\)/);
  assert.ok(site.indexOf('directRequest||githubCheck||createRepository||coderRequest||directCoding')<
-           site.indexOf('else if(!embedded&&isOwnerWorkRequest(request))'));
+           site.indexOf('else if(!embedded&&(isOwnerWorkRequest(request)||neuralCoding&&requestsAgents))'));
  assert.match(site,/if\(!repositorySelectionExplicit\)await suggestRepositoryTargets\(request,false\)/);
  assert.match(site,/targets\.length===1/);
 });

@@ -50,3 +50,8 @@ https://github.com/www-infinity4/QuantaPhi/issues/1192
 - Project names Robot Brain/Moltnook no longer alone force the legacy multi-agent queue. Explicit requests to use that engine or bot team retain that route. Ordinary single-project repairs use the existing direct GitHub path; repository discovery, authorization, review and real result receipts remain required.
 - Reused #1192/#1296 and existing PR #1673; no coordinator lease claimed, lease_id/fence/task_session_id null. One additional documented source session; overall completion and remaining sessions unknown. Local first-pass routing/semantic/auth/receipt suites: 122/122 pass after two regression-first failures. State source_tested/review_pending, YELLOW; no production deployment, GIT credit or completed customer job asserted.
 - Next: exact-head CI and review, then guarded website rollout and one actual owner job receipt in the same chat. Existing blocked prerequisite decisions remain blocked; this patch does not manufacture grants or mark them complete.
+
+
+### Same-session independent source review and CI correction
+
+A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after 92 focused tests. Credit activation remains held on the two reproducible recovery/provenance findings recorded in docs/BUBBLES-ITERATION-CREDIT.md. The ordinary-routing CI failures were stale literal-branch assertions plus a voice harness that counted the new non-executing intent proposal as a mutation; updated those fixtures while preserving owner/embedded/explicit-team assertions. No credit enablement or existing job permission was changed. Exact-head checks are rerun before any source promotion.
