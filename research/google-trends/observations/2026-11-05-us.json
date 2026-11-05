@@ -3,12 +3,327 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T21:31:17.969613Z",
+  "checked_at": "2026-11-05T22:01:41.835665Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "josh hokit",
+      "query": "megan bayne",
       "approx_searches": "500+",
+      "published_at": "2026-11-05T21:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/aew-star-bleeds-profusely-womens-blood-guts-match-earns-respect-pro-wrestling-legend",
+        "https://411mania.com/wrestling/mick-foley-praises-megan-bayne-aew-blood-guts-2026/",
+        "https://nodq.com/news/mick-foley-bows-down-to-megan-bayne-after-aews-2026-blood-guts-match/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQcbfdPcluevYHbZMjy6xJJZpIz01f6lVXyAvxaTZ0x7WqTZpqAxl3L1EUUw",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/aew-star-bleeds-profusely-womens-blood-guts-match-earns-respect-pro-wrestling-legend",
+          "title": "AEW star bleeds profusely during women's Blood and Guts match, earns respect from pro wrestling legend",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQcbfdPcluevYHbZMjy6xJJZpIz01f6lVXyAvxaTZ0x7WqTZpqAxl3L1EUUw"
+        },
+        {
+          "url": "https://411mania.com/wrestling/mick-foley-praises-megan-bayne-aew-blood-guts-2026/",
+          "title": "Mick Foley Praises Megan Bayne’s Performance In AEW Blood & Guts Match",
+          "publisher": "411Mania.",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ114_-szanq9V6ieWReNarLRbEXSX4X1NkTjRNA5m_y2QGJHkt8f4v2hSZffk"
+        },
+        {
+          "url": "https://nodq.com/news/mick-foley-bows-down-to-megan-bayne-after-aews-2026-blood-guts-match/",
+          "title": "Mick Foley bows down to Megan Bayne after AEW’s 2026 Blood & Guts match",
+          "publisher": "NoDQ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu2k-frV9uD0sf5WyPTbfSv_gsMosyPin-jQBEqT60aLvB9wK3umiwVN90vnU"
+        }
+      ]
+    },
+    {
+      "query": "ionq stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T21:30:00Z",
+      "related_news_urls": [
+        "https://www.barrons.com/articles/ionq-earnings-stock-price-44567619",
+        "https://ionq.com/news/ionq-announces-record-3q26-revenues-and-raises-fy2026-guidance-to-505---515-million-as-backlog-grows-to-1-2-billion",
+        "https://www.bloomberg.com/news/articles/2026-11-05/ionq-sees-revenue-quadrupling-on-quantum-computing-demand"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWI1C4ANaQhTg7XxcvNwvI8y92wnhgiDafHyzeBkqQSX6hcB8wsh1TBjdKnI",
+      "image_credit": "Barron's",
+      "news": [
+        {
+          "url": "https://www.barrons.com/articles/ionq-earnings-stock-price-44567619",
+          "title": "IonQ CEO Doubles Down on Vision for Quantum Dominance After Blowout Earnings",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWI1C4ANaQhTg7XxcvNwvI8y92wnhgiDafHyzeBkqQSX6hcB8wsh1TBjdKnI"
+        },
+        {
+          "url": "https://ionq.com/news/ionq-announces-record-3q26-revenues-and-raises-fy2026-guidance-to-505---515-million-as-backlog-grows-to-1-2-billion",
+          "title": "Revenue, GAAP EPS and Adjusted EPS All Exceed Consensus Estimates*",
+          "publisher": "IonQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFkfMIIyuOVk1LaZ8kPxqQk97mfJ6aoOEu4oqgZNvB2EAI4r2jHBkGRh7M6UI"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/ionq-sees-revenue-quadrupling-on-quantum-computing-demand",
+          "title": "IonQ Sees Revenue Quadrupling on Quantum Computing Demand",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhck750pWsIlMSTjrx6YXhCabUeVqdRUGBvg8T8ojvrAg1nZPw4G_giuEpgeg"
+        }
+      ]
+    },
+    {
+      "query": "axon stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T21:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/articles/axon-reports-record-q3-2026-210100587.html",
+        "https://www.gurufocus.com/news/9171693/axon-enterprise-axon-set-to-report-q3-earnings-amid-strong-undervaluation-signal",
+        "https://www.tikr.com/blog/axon-trades-on-its-2027-growth-heres-what-the-november-5-report-has-to-prove"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRufULGVNX31oJgqzOR5hpS6L2_KD6_uf1GAc9oxguCcdLVLeC6gTx5wzRuRD0",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/articles/axon-reports-record-q3-2026-210100587.html",
+          "title": "Axon reports record Q3 2026 revenue of $909 million, up 28% year over year",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRufULGVNX31oJgqzOR5hpS6L2_KD6_uf1GAc9oxguCcdLVLeC6gTx5wzRuRD0"
+        },
+        {
+          "url": "https://www.gurufocus.com/news/9171693/axon-enterprise-axon-set-to-report-q3-earnings-amid-strong-undervaluation-signal",
+          "title": "Axon Enterprise (AXON) Set to Report Q3 Earnings Amid Strong Und",
+          "publisher": "GuruFocus",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg7WJk5VWp23ZXmFwgXONDTqRAznQT8o8Vl1ER2xkXNQC9bbO1H6jdZMRRYWs"
+        },
+        {
+          "url": "https://www.tikr.com/blog/axon-trades-on-its-2027-growth-heres-what-the-november-5-report-has-to-prove",
+          "title": "Axon Trades on Its 2027 Growth. Here’s What the November 5 Report Has to Prove",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDD_ZeGDMLthnEKYiD1rP6tRlCI4kJkCJBm3muNXTEkoYDebbDBbwWZnRpZUg"
+        }
+      ]
+    },
+    {
+      "query": "rashee rice",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T21:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50391911/chiefs-rashee-rice-files-bankruptcy-cites-345m-debt",
+        "https://www.wfaa.com/article/sports/nfl/rashee-rice-bankruptcy-dallas-texas-crash-kansas-city-chiefs-nfl/287-8fd32454-6526-4601-8a38-2e5c8eaddd16",
+        "https://www.nbcdfw.com/news/local/rashee-rice-files-for-bankruptcy-amid-ongoing-legal-dispute-over-2024-dallas-crash/4102174/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnQXwOE6HUotz9KuDD1A2C02fs1KCwAsYTFfxG-2Iq_8VUKsYCUe_kxXeC1oo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50391911/chiefs-rashee-rice-files-bankruptcy-cites-345m-debt",
+          "title": "Chiefs WR Rashee Rice files for bankruptcy, claims he owes over $3.45M in debts",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnQXwOE6HUotz9KuDD1A2C02fs1KCwAsYTFfxG-2Iq_8VUKsYCUe_kxXeC1oo"
+        },
+        {
+          "url": "https://www.wfaa.com/article/sports/nfl/rashee-rice-bankruptcy-dallas-texas-crash-kansas-city-chiefs-nfl/287-8fd32454-6526-4601-8a38-2e5c8eaddd16",
+          "title": "Rashee Rice files for bankruptcy amid $1M+ settlement agreement with Dallas crash victims",
+          "publisher": "WFAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv6ec3svaAVAwb4q-wQN2d9663oXXeCyCP_XnmqaKhCclc__wtXOvvFJ8kgvo"
+        },
+        {
+          "url": "https://www.nbcdfw.com/news/local/rashee-rice-files-for-bankruptcy-amid-ongoing-legal-dispute-over-2024-dallas-crash/4102174/",
+          "title": "Rashee Rice files for bankruptcy amid ongoing legal dispute over 2024 Dallas crash",
+          "publisher": "NBC 5 Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQV_Ybw9uzfLkVM6iYVQvE6SF9_aMh9Z-wskvO3aebyuMsQ37F-sVC2i2D30tI"
+        }
+      ]
+    },
+    {
+      "query": "net stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T21:20:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-05/cloudflare-boosts-annual-profit-view-as-ai-spurs-network-demand",
+        "https://finance.yahoo.com/markets/stocks/articles/ahead-cloudflare-earnings-heres-barchart-200838664.html",
+        "https://www.barchart.com/story/news/8645312/jpmorgan-just-upgraded-cloudflare-stock-here-s-why"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXKmSC8y0LWH3-oDegAInpUmXbZToPF_7L6nGV3p1ELQKoPjyOoHe-rk0-9M",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/cloudflare-boosts-annual-profit-view-as-ai-spurs-network-demand",
+          "title": "Cloudflare Boosts Annual Profit View as AI Spurs Network Demand",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXKmSC8y0LWH3-oDegAInpUmXbZToPF_7L6nGV3p1ELQKoPjyOoHe-rk0-9M"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ahead-cloudflare-earnings-heres-barchart-200838664.html",
+          "title": "Ahead of Cloudflare Earnings, Here's What Barchart Data Says Comes Next for NET Stock",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTckbp1N0pflfKBWYqS2YVCEqhfdnAlXcSiWwePYUTe_A-hX_FDgH5fOI2Gbb4"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8645312/jpmorgan-just-upgraded-cloudflare-stock-here-s-why",
+          "title": "JPMorgan Just Upgraded Cloudflare Stock. Here's Why.",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGjJVKFNHf1YnRtqCohEOQ3ZZV_ROh6wWgtJQlikkKzqvsZVHKjARqR1sS1S4"
+        }
+      ]
+    },
+    {
+      "query": "aaoi stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T21:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/articles/applied-optoelectronics-reports-third-quarter-211000773.html",
+        "https://seekingalpha.com/article/4961603-applied-optoelectronics-looks-great-ahead-of-earnings-preview",
+        "https://www.tradingview.com/news/tradingview:0267c926b2a02:0-gtec-q3-26-earnings-eps-estimate-is-0-13-usd/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjHO49nAMRuH0ZjfeSvfOOVJ8nwIgXHASWR_8d7fHy3t4f3Rgi6k82_18o48Q",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/articles/applied-optoelectronics-reports-third-quarter-211000773.html",
+          "title": "Applied Optoelectronics Reports Third Quarter 2026 Results",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjHO49nAMRuH0ZjfeSvfOOVJ8nwIgXHASWR_8d7fHy3t4f3Rgi6k82_18o48Q"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4961603-applied-optoelectronics-looks-great-ahead-of-earnings-preview",
+          "title": "Applied Optoelectronics Looks Great Ahead Of Earnings (Preview) (NASDAQ:AAOI)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0dmPuSQKSJJuisLiNM4h6pdcyk4RlEdPNAQzdE7x044zr2FD8pAKIOioiPI4"
+        },
+        {
+          "url": "https://www.tradingview.com/news/tradingview:0267c926b2a02:0-gtec-q3-26-earnings-eps-estimate-is-0-13-usd/",
+          "title": "GTEC Q3'26 Earnings: EPS estimate is 0.13 USD",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        }
+      ]
+    },
+    {
+      "query": "jonathan taylor trade rumors broncos",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T21:20:00Z",
+      "related_news_urls": [
+        "https://www.si.com/nfl/broncos/onsi/jonathan-taylor-new-price-tag-just-changed-things-for-broncos",
+        "https://denversports.com/nfl/denver-broncos/sean-payton-no-trade-for-back",
+        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/04/denver-broncos-trade-deadline-tracker-news-rumors/92616078007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkonllEMqT1VXIkhpCTyr5EbVBRh1q_EmZNraCxktIFOlAIyVPZSr377C-aQQ",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/nfl/broncos/onsi/jonathan-taylor-new-price-tag-just-changed-things-for-broncos",
+          "title": "Jonathan Taylor's New Price Tag Just Changed Things for Broncos",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkonllEMqT1VXIkhpCTyr5EbVBRh1q_EmZNraCxktIFOlAIyVPZSr377C-aQQ"
+        },
+        {
+          "url": "https://denversports.com/nfl/denver-broncos/sean-payton-no-trade-for-back",
+          "title": "Sean Payton doesn't sound like a coach about to trade for a RB – Denver Sports",
+          "publisher": "Denver Sports 104.3 The Fan",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT-PsjwqEb5ZmBsrxKtQ2FJA8713nuq_tbp8UvZnfQsxqDnWMoe4CtxRDpVyY"
+        },
+        {
+          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/04/denver-broncos-trade-deadline-tracker-news-rumors/92616078007/",
+          "title": "Denver Broncos trade deadline: Tracking all the news and rumors",
+          "publisher": "Broncos Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaJGJikoZ4OdiukOrnTzD2MxVZiOtPxqHJ93Hnvke532KbB9v1g7KJCUlbq6c"
+        }
+      ]
+    },
+    {
+      "query": "is lamar jackson out for the season",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T21:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50359850/look-lamar-jackson-cloudy-future-baltimore-ravens",
+        "https://sports.yahoo.com/articles/lamar-jackson-placed-injured-213003733.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jacksons-latest-injury-raises-obvious-questions-about-his-future-in-baltimore"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREPfsoJuGDRRftpCFQctqCqwbuVjllqGkyQsTXRx6JprauAvo7uyjP02GCS1o",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50359850/look-lamar-jackson-cloudy-future-baltimore-ravens",
+          "title": "Record-setting deal? Trade? A look at Lamar Jackson's cloudy future with Ravens",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREPfsoJuGDRRftpCFQctqCqwbuVjllqGkyQsTXRx6JprauAvo7uyjP02GCS1o"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lamar-jackson-placed-injured-213003733.html",
+          "title": "Lamar Jackson placed on Injured Reserve",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNARg96an_c9zI4ayIpasXr25xF5uBo7YPHuCxojTmJEh6_ZHyw2SwdplDChY"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jacksons-latest-injury-raises-obvious-questions-about-his-future-in-baltimore",
+          "title": "Lamar Jackson’s latest injury raises obvious questions about his future in Baltimore",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeZszaBDdRRl-r1PgvZDQshejuAx7rL1u1teX3wMkThgZ2cYiBRUs7geNSH88"
+        }
+      ]
+    },
+    {
+      "query": "jay b silveria",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T21:10:00Z",
+      "related_news_urls": [
+        "https://www.wlfi.com/2026/11/05/purdue-announces-new-president/",
+        "https://www.purdue.edu/newsroom/purduetoday/2026/Q4/special-board-of-trustees-meeting-set-for-today-special-issue-of-purdue-today-to-follow",
+        "https://www.yahoo.com/news/us/articles/purdue-names-retired-air-force-205927024.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAdGOpGZyQNL1Gc9zD7kRbxMzsQlHR659LMD2W3jW0jy9siWNR50Jm4yGUVI8",
+      "image_credit": "WLFI",
+      "news": [
+        {
+          "url": "https://www.wlfi.com/2026/11/05/purdue-announces-new-president/",
+          "title": "Purdue Announces New President",
+          "publisher": "WLFI",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAdGOpGZyQNL1Gc9zD7kRbxMzsQlHR659LMD2W3jW0jy9siWNR50Jm4yGUVI8"
+        },
+        {
+          "url": "https://www.purdue.edu/newsroom/purduetoday/2026/Q4/special-board-of-trustees-meeting-set-for-today-special-issue-of-purdue-today-to-follow",
+          "title": "Board of Trustees to meet today; special issue of Purdue Today to follow",
+          "publisher": "Purdue University",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEGOHCrdRr8R1mQ8q-TmIBJtvDLCe5XthRB3ThIxnKmwdkeBBII0DgWKu0U38"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/purdue-names-retired-air-force-205927024.html",
+          "title": "Purdue names retired Air Force Lt. Gen. Jay B. Silveria as its 14th president",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlYuRw7HM2cLARdbZjt4hSSDswD2qOTQ3eRxAjwG9zGeIQPuGInBe_e0KPVoo"
+        }
+      ]
+    },
+    {
+      "query": "josh hokit",
+      "approx_searches": "1000+",
       "published_at": "2026-11-05T21:10:00Z",
       "related_news_urls": [
         "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/05/ufc-334-dana-white-admits-josh-hokit-tough-opponents-did-not-like-schtick-heavyweight-title/92622194007/",
@@ -30,321 +345,6 @@
           "publisher": "MMA Fighting",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2rIrweEEUt2MPHY7ez2E_PI-q437YkYZXgm2fzNIPbzIEVeqkrN5JJQ5JPV4"
-        }
-      ]
-    },
-    {
-      "query": "smuggling",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T21:00:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/04/metro/frog-embryo-smuggling-russian-scientist-harvard/",
-        "https://www.theguardian.com/us-news/2026/nov/04/kseniia-petrova-harvard-frog-embryos",
-        "https://www.cnn.com/2026/11/04/us/us-frog-embryo-researcher"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeedbCRf3gcAU8u0uCtE9JY7fD3B4WsRGVi2qgl9lMQWOT8FOThYJWZigMxQc",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/04/metro/frog-embryo-smuggling-russian-scientist-harvard/",
-          "title": "Frog embryo case: Feds drop smuggling charges against Russian scientist at Harvard Medical School",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeedbCRf3gcAU8u0uCtE9JY7fD3B4WsRGVi2qgl9lMQWOT8FOThYJWZigMxQc"
-        },
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/04/kseniia-petrova-harvard-frog-embryos",
-          "title": "US prosecutors drop criminal charges against scientist detained over frog embryos",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8gWqR9T1ZY8BQo2kMx4exJ4R7l0f1X4olTsd0YVDhBZ27OYnu8zl1HBvWMqE"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/04/us/us-frog-embryo-researcher",
-          "title": "Scientist who brought frog embryos to Boston for cancer research is cleared of smuggling charges",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuV-ylFiJEnquV7MXLIJtuxFU99BxlOSE8dIZ-0bH0rUCNwp4mW-QnhqM1zGM"
-        }
-      ]
-    },
-    {
-      "query": "jay silveria",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T20:50:00Z",
-      "related_news_urls": [
-        "https://www.purdue.edu/newsroom/purduetoday/2026/Q4/special-board-of-trustees-meeting-set-for-today-special-issue-of-purdue-today-to-follow",
-        "https://www.purdueexponent.org/campus/general_news/purdue-expected-to-announce-new-president-thursday/article_b421d93a-2212-44c4-96e4-69995e124438.html",
-        "https://www.jconline.com/story/news/local/purdue/2026/11/05/purdue-names-former-fighter-pilot-university-of-arkansas-chief-as-president/92624759007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEGOHCrdRr8R1mQ8q-TmIBJtvDLCe5XthRB3ThIxnKmwdkeBBII0DgWKu0U38",
-      "image_credit": "Purdue University",
-      "news": [
-        {
-          "url": "https://www.purdue.edu/newsroom/purduetoday/2026/Q4/special-board-of-trustees-meeting-set-for-today-special-issue-of-purdue-today-to-follow",
-          "title": "Board of Trustees to meet today; special issue of Purdue Today to follow",
-          "publisher": "Purdue University",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEGOHCrdRr8R1mQ8q-TmIBJtvDLCe5XthRB3ThIxnKmwdkeBBII0DgWKu0U38"
-        },
-        {
-          "url": "https://www.purdueexponent.org/campus/general_news/purdue-expected-to-announce-new-president-thursday/article_b421d93a-2212-44c4-96e4-69995e124438.html",
-          "title": "Sources: Purdue expected to announce new president Thursday",
-          "publisher": "Purdue Exponent",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyWq4QxYDRIB_RHoduX_jQmUONcJjEtyYxlB09KWiBskyYpUgcOOdqoyoTucY"
-        },
-        {
-          "url": "https://www.jconline.com/story/news/local/purdue/2026/11/05/purdue-names-former-fighter-pilot-university-of-arkansas-chief-as-president/92624759007/",
-          "title": "Purdue names former fighter pilot, University of Arkansas chief as president",
-          "publisher": "Journal & Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-KRgorv4YcHjLsRo7kogJEG1l24C7DbYymfgZUZ6M3TnY1kD05269E37ULQ"
-        }
-      ]
-    },
-    {
-      "query": "93.9 lite fm",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T20:50:00Z",
-      "related_news_urls": [
-        "https://www.cachevalleydaily.com/news/christmas-comes-early-to-cache-valley-as-lite-fm-flips-to-all-holiday-music/article_fa622bc6-3f2d-41a6-ae98-c8b4b90fb70f.html",
-        "https://www.cbsnews.com/chicago/video/signs-of-holidays-on-display-in-chicago/",
-        "https://www.nbcchicago.com/news/local/when-will-christmas-music-play-on-the-radio-in-chicago-93-9-lite-fm-reveals-start-date/4012290/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwWdMQXQQ38wELQnhe4eJMp-n5d9tYvOxJnFqzFz9Wse-HCr1nCWGH9QlbZCc",
-      "image_credit": "Cache Valley Daily",
-      "news": [
-        {
-          "url": "https://www.cachevalleydaily.com/news/christmas-comes-early-to-cache-valley-as-lite-fm-flips-to-all-holiday-music/article_fa622bc6-3f2d-41a6-ae98-c8b4b90fb70f.html",
-          "title": "Christmas comes early to Cache Valley as Lite FM flips to all-holiday music",
-          "publisher": "Cache Valley Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwWdMQXQQ38wELQnhe4eJMp-n5d9tYvOxJnFqzFz9Wse-HCr1nCWGH9QlbZCc"
-        },
-        {
-          "url": "https://www.cbsnews.com/chicago/video/signs-of-holidays-on-display-in-chicago/",
-          "title": "Signs of holidays on display in Chicago",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPdAH6m4Fdl0LpSIIuHgW3PKn1sUb_OOBzqal_XkUdFdcy2I_Lv2flMBBbHt0"
-        },
-        {
-          "url": "https://www.nbcchicago.com/news/local/when-will-christmas-music-play-on-the-radio-in-chicago-93-9-lite-fm-reveals-start-date/4012290/",
-          "title": "When will Christmas music play on the radio in Chicago? 93.9 LITE FM reveals start date",
-          "publisher": "NBC 5 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMHPr-Uh5LLfHbDv4M4-cloMNybBwiuGKiUVVWo6HtzMPfDf4gS7e8IpR3mc8"
-        }
-      ]
-    },
-    {
-      "query": "49ers news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T20:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/mike-evans-likely-miss-week-9/1977142/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-05/unlikely-that-evans-or-deebo-will-play-in-week-9",
-        "https://sports.yahoo.com/articles/49ers-reveal-bad-news-mike-165620717.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4Pq__jwwDX00q0LktqEMhDWqWMRwsUD96ScwuQfY3fninCENxbbgDDkI0Bq8",
-      "image_credit": "NBC Sports Bay Area & California",
-      "news": [
-        {
-          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/mike-evans-likely-miss-week-9/1977142/",
-          "title": "John Lynch details why Mike Evans likely will miss 49ers' Week 9 game vs Raiders",
-          "publisher": "NBC Sports Bay Area & California",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4Pq__jwwDX00q0LktqEMhDWqWMRwsUD96ScwuQfY3fninCENxbbgDDkI0Bq8"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-05/unlikely-that-evans-or-deebo-will-play-in-week-9",
-          "title": "Unlikely that Evans or Deebo will play in Week 9",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3RVaM8V3d9KzydX-ekgxl_tVieN7rz_DJseUB4WkoqcttvMtEnsDzfeSMB2A"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/49ers-reveal-bad-news-mike-165620717.html",
-          "title": "49ers reveal bad news on Mike Evans and Deebo Samuel for Raiders game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvRL2FaCj-V5K3H53TvOWVu7hoNFg0JLWv50y5Y5kGP_URjqhd54uleaGiaiY"
-        }
-      ]
-    },
-    {
-      "query": "hershey grinch max cindy lou kisses",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T20:30:00Z",
-      "related_news_urls": [
-        "https://www.abc27.com/local-news/hershey-announces-new-candy-and-salty-snacks-for-2026-holiday-season/",
-        "https://www.allrecipes.com/new-hersheys-grinch-kisses-12235906",
-        "https://people.com/hersheys-christmas-snack-lineup-includes-3-types-of-grinch-kisses-12236204"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ-zjQjwQD6oDpEBX6qba1-uSqSkNRDAAyAHqmGKb5N3MDq3rYsKBL3VZgdV4",
-      "image_credit": "ABC27",
-      "news": [
-        {
-          "url": "https://www.abc27.com/local-news/hershey-announces-new-candy-and-salty-snacks-for-2026-holiday-season/",
-          "title": "Hershey announces new candy and salty snacks for 2026 holiday season",
-          "publisher": "ABC27",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ-zjQjwQD6oDpEBX6qba1-uSqSkNRDAAyAHqmGKb5N3MDq3rYsKBL3VZgdV4"
-        },
-        {
-          "url": "https://www.allrecipes.com/new-hersheys-grinch-kisses-12235906",
-          "title": "Hershey’s Has 2 New Kisses Flavors for a Limited Time",
-          "publisher": "Allrecipes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVMseK5iUsECmN-DGk3UeBSWhSk1mgeKdZsrFw01LqNAY9tfZZJedfUE0HUzM"
-        },
-        {
-          "url": "https://people.com/hersheys-christmas-snack-lineup-includes-3-types-of-grinch-kisses-12236204",
-          "title": "Hershey’s Christmas Snack Lineup Includes 3 Types of Grinch Kisses and a Festive Reese’s Reindeer Mix",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1V6t1ZB5BmTdYYNtYHcERj9ILQcxAb-a8qHQZfLMCuO7Sqac5I76R3UEmDtU"
-        }
-      ]
-    },
-    {
-      "query": "2027 tax brackets",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-05T20:20:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/05/2027-federal-tax-brackets.html",
-        "https://www.kiplinger.com/taxes/2027-tax-brackets-are-set",
-        "https://www.marketwatch.com/story/the-2027-tax-brackets-are-out-see-what-the-standard-deduction-and-salt-tax-breaks-will-be-5dd1d293"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVh8Se1EfXmbjIt6Ey7IlwyyI1XzYaJ5JL75WSpCbfN9sTZikwjFc9npyX4M4",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/05/2027-federal-tax-brackets.html",
-          "title": "IRS announces new federal income tax brackets for 2027",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVh8Se1EfXmbjIt6Ey7IlwyyI1XzYaJ5JL75WSpCbfN9sTZikwjFc9npyX4M4"
-        },
-        {
-          "url": "https://www.kiplinger.com/taxes/2027-tax-brackets-are-set",
-          "title": "New IRS 2027 Tax Brackets Are Set: What the Rates Mean for Your Taxes",
-          "publisher": "Kiplinger",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2en4Cezylbz9hvUuz1i4C_4uf005HCQDLz-tIFymkIJc0Ul75XO69Efy9CI"
-        },
-        {
-          "url": "https://www.marketwatch.com/story/the-2027-tax-brackets-are-out-see-what-the-standard-deduction-and-salt-tax-breaks-will-be-5dd1d293",
-          "title": "The 2027 tax brackets are out. See what the standard deduction and SALT tax breaks will be.",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScbuWULMHIzkKLBcr11YMpnlSDaert_kuTg_17ZCgbU_FAtysFugszx1fP6Ys"
-        }
-      ]
-    },
-    {
-      "query": "leverkusen",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T20:10:00Z",
-      "related_news_urls": [
-        "https://de.nachrichten.yahoo.com/ab-20-15-uhr-rtl-144311265.html",
-        "https://www.rnd.de/sport/fussball-heute-live-mit-der-europa-und-conference-league-alle-spiele-im-tv-und-stream-am-05-11-2026-TSBJV6HCJZAVVMNWO3ZKBHHHUA.html",
-        "https://www.tipico.de/wett-tipps/sportwetten-news/fussball-heute-live-im-tv-stream-donnerstag-05-11-2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOy7DDjZJ-6DKXueCE-qAgiucw98YgiLGtJnjyHPkNn09s78viErWN7wftPsg",
-      "image_credit": "Yahoo Nachrichten",
-      "news": [
-        {
-          "url": "https://de.nachrichten.yahoo.com/ab-20-15-uhr-rtl-144311265.html",
-          "title": "Ab 20.15 Uhr - RTL zeigt Europa-League-Partie Leverkusen gegen Marseille",
-          "publisher": "Yahoo Nachrichten",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOy7DDjZJ-6DKXueCE-qAgiucw98YgiLGtJnjyHPkNn09s78viErWN7wftPsg"
-        },
-        {
-          "url": "https://www.rnd.de/sport/fussball-heute-live-mit-der-europa-und-conference-league-alle-spiele-im-tv-und-stream-am-05-11-2026-TSBJV6HCJZAVVMNWO3ZKBHHHUA.html",
-          "title": "Fußball heute: Übertragung der Spiele im Free-TV und Stream",
-          "publisher": "RND.de",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PhbrZII1_5h7VPJHcXLSL9NotqnJlnZ6Bl8_Tyu3umLRRakZMsP5u1_yDJY"
-        },
-        {
-          "url": "https://www.tipico.de/wett-tipps/sportwetten-news/fussball-heute-live-im-tv-stream-donnerstag-05-11-2026",
-          "title": "Fußball heute live im TV & Stream | Donnerstag, 05.11.2026",
-          "publisher": "Tipico",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCeq2XanjL-T42TBEyEeI8jNWtLmqZHl4WK5q8bJSsjimuRwnuYGONJH9c4qQ"
-        }
-      ]
-    },
-    {
-      "query": "celta vs union",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T20:00:00Z",
-      "related_news_urls": [
-        "https://www.marca.com/futbol/europa-league/celta-union-sg/2026/11/05/01_0104_20261105_176_3235-directo.html",
-        "https://elpais.com/deportes/futbol/2026-11-05/celta-de-vigo-union-saint-gilloise-horario-y-donde-ver-el-partido-de-la-europa-league.html",
-        "https://www.atlantico.net/celtismo/claudio-giraldez-deporte-no-espera_1_20261105-4480021.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4m6peFtt2UCd9pE1CaCdtU8FZxKqi7nsgUZzF9h5fyC0W_h_PqQ1g5dQ1auQ",
-      "image_credit": "MARCA",
-      "news": [
-        {
-          "url": "https://www.marca.com/futbol/europa-league/celta-union-sg/2026/11/05/01_0104_20261105_176_3235-directo.html",
-          "title": "Celta - Union Saint-Gilloise en directo | Última hora de Europa League en vivo hoy",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4m6peFtt2UCd9pE1CaCdtU8FZxKqi7nsgUZzF9h5fyC0W_h_PqQ1g5dQ1auQ"
-        },
-        {
-          "url": "https://elpais.com/deportes/futbol/2026-11-05/celta-de-vigo-union-saint-gilloise-horario-y-donde-ver-el-partido-de-la-europa-league.html",
-          "title": "Celta de Vigo - Union Saint-Gilloise: horario y dónde ver el partido de la Europa League",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz6KNYkubRABGmCoY593zZXgLkjNIiiPz0lz1TBxL-0KO1ux4UFSguOf2D2Yk"
-        },
-        {
-          "url": "https://www.atlantico.net/celtismo/claudio-giraldez-deporte-no-espera_1_20261105-4480021.html",
-          "title": "Claudio Giráldez: “El deporte no espera a nadie, hay que reaccionar”",
-          "publisher": "Atlántico",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQComZ0CDpu94k6K6NOUigIsTbKI-gQ_9QfGs3nej8i6XjJMOOSRjPwud0c0EM"
-        }
-      ]
-    },
-    {
-      "query": "katseye chicago",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T19:50:00Z",
-      "related_news_urls": [
-        "https://wgntv.com/news/the-weekender/tonights-sold-out-katseye-show-at-united-center-postponed/",
-        "https://www.cbsnews.com/chicago/news/katseye-concert-chicago-united-center-canceled/",
-        "https://www.fox2detroit.com/news/k-pop-band-cancels-sold-out-detroit-show-leaving-angry-parents-take-social-media"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ1vY0dWwBmAbvwHXVvL50-PRERKSVcOzePibiLAzVoBxwvtcS2TbGl37d3mQ",
-      "image_credit": "WGN-TV",
-      "news": [
-        {
-          "url": "https://wgntv.com/news/the-weekender/tonights-sold-out-katseye-show-at-united-center-postponed/",
-          "title": "Tonight’s sold-out Katseye show at United Center postponed",
-          "publisher": "WGN-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ1vY0dWwBmAbvwHXVvL50-PRERKSVcOzePibiLAzVoBxwvtcS2TbGl37d3mQ"
-        },
-        {
-          "url": "https://www.cbsnews.com/chicago/news/katseye-concert-chicago-united-center-canceled/",
-          "title": "Katseye concert in Chicago at United Center canceled because member is sick",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsfD8EfT5sjTsupEvVet5-9-YCQSBAyYQoi-MA-L1vPnaHPPoqyluERJPMt50"
-        },
-        {
-          "url": "https://www.fox2detroit.com/news/k-pop-band-cancels-sold-out-detroit-show-leaving-angry-parents-take-social-media",
-          "title": "K-pop band cancels sold out Detroit show, leaving angry parents to take to social media",
-          "publisher": "FOX 2 Detroit",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxeyouSzlM6GHfixVdePTca4Scoix7bh184FmywgkZrFU5DzaEyfXW0M9wWM0"
         }
       ]
     }
