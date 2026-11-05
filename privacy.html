@@ -27,7 +27,7 @@ footer{padding-bottom:40px;text-align:center;color:#62586b}footer a{display:inli
 <header><strong>QuantaPhi</strong><nav aria-label="Site navigation"><a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/learn/">Learn</a></nav></header>
 <main id="main">
 <h1>Privacy Policy</h1>
-<p class="muted"><strong>Effective and last updated:</strong> October 22, 2026</p>
+<p class="muted"><strong>Effective and last updated:</strong> November 5, 2026</p>
 <p>This policy explains information handled when you visit <a href="https://quantaphi.org/">quantaphi.org</a> or use QuantaPhi services, including research and media tools, Bubbles AI, and wallet/token features. The site is operated as the QuantaPhi project. Different features have different data flows; some features are experimental or depend on third-party providers.</p>
 <p class="notice"><strong>Important:</strong> QuantaPhi uses Google Analytics and includes Google AdSense advertising code. A page may contact Google even if no advertisement is visible. This privacy notice is not a cookie-consent control.</p>
 
@@ -58,6 +58,12 @@ footer{padding-bottom:40px;text-align:center;color:#62586b}footer a{display:inli
 
 <h2 id="retention">5. Storage, security and retention</h2>
 <p>Locally stored data can remain until you clear it, remove the app, or a feature deletes it. Cloud wallet/ledger records, synced Bubbles history, service logs and backups may be retained for operational, security, accounting or recovery needs. Retention periods differ by system and are not represented here as having one universal automatic deletion deadline. We use available platform security and access controls, but no service can guarantee absolute security. Do not expose wallet credentials or private authentication tokens.</p>
+
+
+<h2 id="x-oauth">5a. X / Media Star authorization</h2>
+<p>When a signed-in QuantaPhi user explicitly chooses to connect an X account, QuantaPhi requests OAuth permissions for profile identity, followed accounts and Spaces metadata (<code>tweet.read</code>, <code>users.read</code>, <code>follows.read</code>, <code>space.read</code>) and <code>offline.access</code> to refresh access when permitted. X's authorization screen presents the requested access. QuantaPhi checks the authorized X username against the handle that the user previously entered in Media Star, and does not import an unrelated account's Following list.</p>
+<p>The Cloudflare Worker temporarily stores a single-use authorization state and PKCE verifier in the existing Media Star D1 database. The X access token and optional refresh token are encrypted at rest and tied to the authenticated wallet owner. Tokens are handled server-side and are not intentionally exposed in site JavaScript, publicly shared cards or the GitHub repository. X receives requests necessary for authorization, identity checking and user-requested synchronization. Some X Spaces metadata may not be available, and indexed links do not confirm audio replay rights or availability.</p>
+<p>A Media Star user can disconnect the X connection, which removes QuantaPhi's stored OAuth tokens without automatically deleting imported Following or Space history. The user can also revoke the app in X's connected-app settings. The optional connection may require separate developer/API access and can be unavailable while that integration is not configured. See the <a href="/legal/privacy">X-specific privacy notice</a> and <a href="/legal/terms">Terms of Service</a>.</p>
 
 <h2 id="choices">6. Your choices and requests</h2>
 <ul>
