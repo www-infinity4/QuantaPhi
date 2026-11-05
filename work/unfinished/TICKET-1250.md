@@ -126,3 +126,14 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 - **Security:** no token minting, no D1 migration, no provider payment, no existing wallet mutation, no automatic transfer or bypass of Gitpro/Copilot holds. These components prepare candidate records and a fail-closed server verification interface; the actual signed GitHub+Quant AI+wallet adapter remains to be built.
 - **Lease:** no external coordinator lease claimed; lease_id/fence/task_session_id null. No owner browser or existing security review controlled by this session.
 - **Next single action:** obtain exact-head PR CI and independent security review for this branch, then implement signed server-side Quant AI verification and authenticated idempotent D1 settlement on a reviewed service branch.
+
+
+## 2026-11-05 00:03 UTC · GIT local SQLite collector and Bubbles attribution milestone
+
+- Owner intent: add a Termux-ready GIT collector, QuantaPhi page link, and Bubbles-to-owner candidate attribution without copying whole code files or inventing wallet balances.
+- Reused issue #1250 and upstream draft GIT PR [#1675](https://github.com/www-infinity4/QuantaPhi/pull/1675); dependent draft [#1679](https://github.com/www-infinity4/QuantaPhi/pull/1679) on branch `feat/gitcoin-termux-sqlite-20261104` head before this checkpoint `43ad010dc676cf78ca1d3abe487523a8bb7f91d7`. No coordinator lease claimed; no other agent branch overwritten.
+- Source implemented: `gitcoin/termux-ledger.py` uses existing provenance generator to store verified-remote *pending* line metadata in a local private, deduplicated SQLite database; `gitcoin/agent-attribution.mjs` requires independently verified customer grant, signed job receipt and owner wallet; `gitcoin.html` and main menu link; `gitcoin/TERMUX.md`; read-only CI workflow.
+- Test-first local verification: six Python SQLite tests PASS; five Node agent attribution tests PASS; one Node page contract test PASS; Node and Python syntax checks. GitHub exact-head CI, Android device, source-release review, Cloudflare D1 and wallet readback **not yet confirmed**.
+- Progress: 🟡 source-tested milestone (12/12 focused local tests), not overall completion. Parent #1675 remains draft; dependent #1679 remains draft. Sessions added: 1; remaining effort unknown due independent security review, live identity/consent, deployment and provider integrations.
+- Blocker: no authenticated Quant AI production review adapter, committed default-branch proof, signed multi-tenant owner-wallet settlement, or confirmed merchant accepting GIT. GPT Coin and Bubble Bits stay separate.
+- Next single action: verify exact-head GitHub CI for #1679, obtain independent review and on-device Termux proof before promoting any merge or wallet issuance.
