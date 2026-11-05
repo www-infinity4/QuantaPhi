@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-05T08:23:29.914683Z",
+  "checked_at": "2026-11-05T09:20:33.158505Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -732,17 +732,17 @@
     },
     "durable-knipex": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": []
     },
     "durable-wera": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": []
     },
     "durable-wiha": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.wihatools.com/account/login",
@@ -750,7 +750,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -759,7 +759,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -768,7 +768,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -777,7 +777,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -786,14 +786,14 @@
           "title": "158 piece Overlanding Kit in Rolling Tool Box",
           "kind": "product",
           "description": "Introducing the 158 Piece Industrial MRO Rolling Case Kit; a masterclass in tool storage, protection, and versatility. This premium case is custom molded to perfection, featuring custom foam tray compartments for each tool, ensuring they are securely held in p",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "1614.09",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock",
-            "valid_until": "2026-11-14T23:59:59+00:00"
+            "valid_until": "2026-11-15T23:59:59+00:00"
           }
         },
         {
@@ -802,21 +802,21 @@
           "title": "194 Piece Premium Kit In Rolling Tool Box",
           "kind": "product",
           "description": "The Wiha 194 Piece Premium Tool Kit In Rolling Tool Box is designed to empower contractors and professionals with a comprehensive set of high-quality tools for all their needs. With an extensive array of 194 must-have pieces, Wiha’s Premium Tool Kit is the per",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "1199.99",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock",
-            "valid_until": "2026-11-14T23:59:59+00:00"
+            "valid_until": "2026-11-15T23:59:59+00:00"
           }
         }
       ]
     },
     "durable-pb-swiss-tools": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
@@ -824,7 +824,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -833,7 +833,7 @@
           "title": "PB 6464",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -842,7 +842,7 @@
           "title": "PB 900 V01",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -851,7 +851,7 @@
           "title": "PB C6 192",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -860,7 +860,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -869,7 +869,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -878,7 +878,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -887,14 +887,14 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-snap-on": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.snapon.com/EN/Makers-and-Fixers",
@@ -902,14 +902,14 @@
           "title": "Snap-on Makers and Fixers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-lie-nielsen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
@@ -917,7 +917,7 @@
           "title": "Boggs Concave Spokeshave",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -926,7 +926,7 @@
           "title": "1-SP-Boggs-Con.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -935,7 +935,7 @@
           "title": "boggs-concave-2021-iso.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -944,7 +944,7 @@
           "title": "concave-boggs-spokeshave-2019.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -953,7 +953,7 @@
           "title": "Small Router Plane - Open Throat",
           "kind": "website",
           "description": "Small Router Plane Loosely based on the Stanley No. 271, these small Router Planes are perfect for shallow mortise and small relief work. The compact design makes it easy to guide along narrow edges and fit into tight spaces. 4\" long x 2\" wide O1 blade with 1/",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -962,7 +962,7 @@
           "title": "small-router-plane-ot-front.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -971,7 +971,7 @@
           "title": "small-router-plane-ot-iso-l.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -980,14 +980,14 @@
           "title": "small-router-plane-ot-iso-r.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-starrett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.starrett.com/",
@@ -995,7 +995,7 @@
           "title": "Premium Starrett micrometer resting on an American flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1004,7 +1004,7 @@
           "title": "W4900 Animated Gif",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1013,7 +1013,7 @@
           "title": "Starrett Carbide Tipped Reciprocating Saw Blade",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1022,7 +1022,7 @@
           "title": "Starrett and Roush Yates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1031,7 +1031,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1040,7 +1040,7 @@
           "title": "HG Electronic Height Gages and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1049,7 +1049,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1058,14 +1058,14 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-mitutoyo": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.mitutoyo.com/services/calibration-repair/calibration-lab/",
@@ -1073,7 +1073,7 @@
           "title": "Mitutoyo Metrology Calibration Lab",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1082,7 +1082,7 @@
           "title": "precision measurement services",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1091,14 +1091,14 @@
           "title": "Coordinate Measuring Machines | Mitutoyo America Corporation",
           "kind": "website",
           "description": "Mitutoyo manufactures top-quality coordinate measuring machines (CMM) that lead the industry in precision. Find the perfect solution for you.",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-leatherman": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.leatherman.com/collections/bestsellers/products/arc",
@@ -1106,7 +1106,7 @@
           "title": "Black DLC and stainless steel Leatherman ARC® multi-tool opened showcasing the many tools and features included.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1115,7 +1115,7 @@
           "title": "Leatherman ARC® Talos multi-tool opened showcasing the many tools and features included.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1124,7 +1124,7 @@
           "title": "Black DLC and stainless steel Leatherman ARC® multi-tool closed showcasing its compact design.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1133,7 +1133,7 @@
           "title": "Leatherman ARC® Talos closed showcasing the Bronze Cerakote coating and compact design.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1142,7 +1142,7 @@
           "title": "Leatherman Gift Card",
           "kind": "product",
           "description": "Leatherman's Digital Gift Card is perfect for any occasion. This e-gift card lets recipients pick their favorite products from our online store. Choose how you deliver — email right away, schedule for later, or send to yourself to pass along personally. Simple",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "10.0",
@@ -1157,7 +1157,7 @@
           "title": "ARC®",
           "kind": "product",
           "description": "The ARC is our most advanced multi-tool, built to be both durable and easier to use. It features a MagnaCut steel blade that holds its edge longer and resists rust, making it perfect for both daily tasks and hard outdoor jobs. Every feature is outside-accessib",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "249.95",
@@ -1172,7 +1172,7 @@
           "title": "Skeletool® CX",
           "kind": "product",
           "description": "The Leatherman Skeletool CX packs only the most essential features into a lightweight, portable design. It’s made for people who want serious function without carrying extra bulk. The premium 154CM stainless steel straight-edge blade has a great balance of cor",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.95",
@@ -1185,7 +1185,7 @@
     },
     "durable-victorinox": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.victorinox.com/en-US/",
@@ -1193,7 +1193,7 @@
           "title": "Victorinox (USA) | Victorinox Homepage",
           "kind": "website",
           "description": "Victorinox ✚ Makers of the Original Swiss Army Knife ✚ High quality products ✚ Watches, Cutlery, Travel Gear and Fragrances ✚ Order online now!",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1202,7 +1202,7 @@
           "title": "Swiss Army Knife™ & Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1211,25 +1211,25 @@
           "title": "CUTLERY",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
-          "url": "https://www.victorinox.com/en-US/Products/Watches/c/TP/",
+          "url": "https://www.victorinox.com/en-US/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/c/TP/",
           "image": "https://imageengine.victorinox.com/transform/f81b70d8-94a0-40eb-9dd0-1f941590f281/WAT_242059_B1_OB_1800x1000px?io=transform%3Afill&focuspoint=0.48%2C0.42&io=transform%3Afill%2Cwidth%3A575%2Cheight%3A575&quality=100",
           "title": "WATCHES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
-          "url": "https://www.victorinox.com/en-US/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Synergy-Winter-Magic-Limited-Edition-2026/p/0.8211.22E1",
+          "url": "https://www.victorinox.com/en-US/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Synergy-Winter-Magic-Limited-Edition-2026/p/0.8211.22E1?slug=en-US&amp;slug=Products&amp;slug=Swiss-Army-Knife%E2%84%A2-and-Tools&amp;slug=Essentials&amp;slug=Synergy-Winter-Magic-Limited-Edition-2026&amp;slug=p&amp;slug=0.8211.22E1/",
           "image": "https://imageengine.victorinox.com/transform/14a60efe-ff70-43fe-a1cf-b07b617fe08c/SAK_0_8211_22E1_S1",
           "title": "Synergy Winter Magic Limited Edition 2026",
           "kind": "product",
           "description": "Based on the Synergy pocket knife, this Swiss Made limited edition combines nine functions, including a large lockable blade, box opener, two screwdrivers, nail file, nail cleaner, bottle opener and wire stripper. Its distinctive Alox scales complete the desig",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "85",
@@ -1245,7 +1245,7 @@
           "title": "Swiss Army Knives / Pocket Knives from Victorinox | Victorinox (USA)",
           "kind": "website",
           "description": "Since 1897, the Swiss Army Knife has been a trusted tool of adventurers around the world. The Swiss Army Knife is the companion you can count on.",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1254,7 +1254,7 @@
           "title": "Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1263,14 +1263,14 @@
           "title": "Trades & Crafts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T03:21:00.805297Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-stabila": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T03:21:00.805297Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": []
     },
     "durable-klein-tools": {
@@ -3325,12 +3325,12 @@
     },
     "durable-sony-professional-pro-audio": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": []
     },
     "durable-sennheiser-studio-monitor-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.sennheiser.com/en-us",
@@ -3338,7 +3338,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "For over 75 years, our products come with a built-in mission: to stay true to the sound and soul the music was given by its artist.",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3347,7 +3347,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3356,7 +3356,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3365,7 +3365,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3374,7 +3374,7 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "Discover Sennheiser's microphones: Accentuate character, lend power to the voice, reach and touch the audience. Learn more now!",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3383,16 +3383,16 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
-          "url": "https://www.sennheiser.com/en-us/product-families/microphones-evolution",
-          "image": "https://assets.sennheiser.com/assets/CROPPED-Product-Series-Tile-Evolution.png/Zz00ZDUzNzJhY2U3ZDkxMWYwYmIyMWNlM2Q3NWM0MGYwNw==?width=1920&format=webp&quality=80",
-          "title": "evolution",
+          "url": "https://www.sennheiser.com/en-us/catalog/products/microphones",
+          "image": "https://assets.sennheiser.com/images/assets/taa_filter_card_us.png/Zz0wMjUzMDYyODM5MGYxMWYxYjM5YTUyZmMxYjdlNGFiNw==?width=1920&format=webp&quality=80",
+          "title": "Looking for TAA-compliant products?",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3401,14 +3401,14 @@
           "title": "Wireless Systems: Top Audio Solutions | Sennheiser",
           "kind": "website",
           "description": "Unleash superior sound with Sennheiser wireless systems. Experience unmatched audio quality and reliability for professional-grade performance.",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-beyerdynamic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://north-america.beyerdynamic.com/",
@@ -3416,7 +3416,7 @@
           "title": "MMX 130 WIRELESS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3425,7 +3425,7 @@
           "title": "AVENTHO Y",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3434,7 +3434,7 @@
           "title": "Made in Germany | beyerdynamic",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3443,14 +3443,14 @@
           "title": "Made in Germany T1 & T5 in third generation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-audio-technica-studio-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.audio-technica.com/en-us/",
@@ -3458,7 +3458,7 @@
           "title": "English Flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3467,7 +3467,7 @@
           "title": "Launch Recite Me assistive technology",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3476,7 +3476,7 @@
           "title": "ATH-M50x studio headphones resting on an audio mixer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3485,14 +3485,14 @@
           "title": "corporate conference room",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-genelec": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.genelec.com/studio-monitors",
@@ -3500,7 +3500,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3509,7 +3509,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3518,7 +3518,7 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3527,19 +3527,19 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-miele": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": []
     },
     "durable-speed-queen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://speedqueen.com/",
@@ -3547,7 +3547,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3556,7 +3556,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3565,7 +3565,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3574,7 +3574,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3583,7 +3583,7 @@
           "title": "All Products - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3592,7 +3592,7 @@
           "title": "TR7 TR7006WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3601,7 +3601,7 @@
           "title": "TR7 TR7006BN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3610,14 +3610,14 @@
           "title": "TC5 TC5003WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-henry-numatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://numatic.com/",
@@ -3625,7 +3625,7 @@
           "title": "Home",
           "kind": "website",
           "description": "Numatic International the home of reliable, high performance, sustainable cleaning for all. UK’s No.1 in Professional Cleaning. Designed & Made in the UK. Committed to Sustainability.",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3634,7 +3634,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3643,7 +3643,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3652,7 +3652,7 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3661,7 +3661,7 @@
           "title": "WBV370NX Pro Cordless Wet Vacuum",
           "kind": "website",
           "description": "The WBV370NX Pro Cordless Wet Vacuum. Eliminate the risk of slips, trips and falls with no cable. Perfect for cleaning up spills in high traffic areas.",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3670,7 +3670,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3679,7 +3679,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3688,14 +3688,14 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-leica-camera-m-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://leica-camera.com/en-US/photography/cameras/m",
@@ -3703,7 +3703,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3712,7 +3712,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3721,7 +3721,7 @@
           "title": "Leica Metal Gray products on a podest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3730,7 +3730,7 @@
           "title": "Leica Q3 43 Formula 1® Edition",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3739,7 +3739,7 @@
           "title": "Leica Geovid Max 10x42 | Leica Camera US",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3748,7 +3748,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3757,7 +3757,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3766,14 +3766,14 @@
           "title": "Leica Metal Gray products on a podest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-garmin-handheld-gps-mariner": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.garmin.com/en-US/",
@@ -3781,7 +3781,7 @@
           "title": "Garmin",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3790,7 +3790,7 @@
           "title": "Holiday Gift Guide",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3799,7 +3799,7 @@
           "title": "FĒNIX® 9",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3808,7 +3808,7 @@
           "title": "APPROACH® S72",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3817,7 +3817,7 @@
           "title": "Approach® S72 – 47 mm",
           "kind": "product",
           "description": "Silver/Citron Titanium Bezel with Fog Gray/Citron ComfortFit Fabric Band",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "799.99",
@@ -3832,7 +3832,7 @@
           "title": "CIRQA™ Smart Band",
           "kind": "product",
           "description": "Black",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "199.99",
@@ -3854,12 +3854,12 @@
     },
     "durable-fujitsu-fi-series-scanners": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": []
     },
     "durable-brother-monochrome-laser-printers": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://www.brother-usa.com/c/shop/printers",
@@ -3867,7 +3867,7 @@
           "title": "Printer on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3876,7 +3876,7 @@
           "title": "Ink Cartridge box on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3885,7 +3885,7 @@
           "title": "Sewing machine on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3894,7 +3894,7 @@
           "title": "P-touch label maker on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3903,7 +3903,7 @@
           "title": "Brother MFC-J5010DW INKvestment Wireless Color Inkjet All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -3913,7 +3913,7 @@
           "title": "Brother MFC-L3780CDW Digital Color All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -3923,7 +3923,7 @@
           "title": "Brother PT-D215EMIKR P-touch Embellish Ribbon and Tape Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -3933,7 +3933,7 @@
           "title": "Brother MFC-J1360DW Wireless Color Inkjet All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         }
@@ -3941,7 +3941,7 @@
     },
     "durable-texas-instruments-graphing-calculators": {
       "schema_version": 1,
-      "attempted_at": "2026-11-05T02:23:16.934919Z",
+      "attempted_at": "2026-11-05T09:20:33.158505Z",
       "items": [
         {
           "url": "https://education.ti.com/",
@@ -3949,7 +3949,7 @@
           "title": "Algebra 1: Seven Important Calculator Functions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-05T02:23:16.934919Z",
+          "checked_at": "2026-11-05T09:20:33.158505Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
