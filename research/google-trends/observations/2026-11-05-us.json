@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T12:33:25.324908Z",
+  "checked_at": "2026-11-05T13:01:44.735670Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "hurricane season",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T12:30:00Z",
+      "related_news_urls": [
+        "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
+        "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
+        "https://www.gulfcoastnewsnow.com/article/weather-forecast-southwest-florida-atlantic-tropical-storm-hurricane-season/74330734"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk",
+      "image_credit": "WPEC",
+      "news": [
+        {
+          "url": "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
+          "title": "Tracking potential tropical development",
+          "publisher": "WPEC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk"
+        },
+        {
+          "url": "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
+          "title": "Subtropical storm could develop in the Atlantic this week",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLi_lQgE9mMuWxNZ4Pf9uMJZbLEq2OD-E2NE8UwTFWY-ZitbZKFAiL8XTmxLk"
+        },
+        {
+          "url": "https://www.gulfcoastnewsnow.com/article/weather-forecast-southwest-florida-atlantic-tropical-storm-hurricane-season/74330734",
+          "title": "NHC says 50% development odds for feature over open Atlantic Ocean",
+          "publisher": "Gulf Coast News and Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj7iF3opNIM97PulfHOOT0lRpnE7yHoIz-ZiDqQKMUgylXqymzRAjNnNefzyk"
+        }
+      ]
+    },
+    {
+      "query": "charles porter",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T12:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/movies/2026/11/04/charles-f-porter-dead-cancer-battle/92619942007/",
+        "https://deadline.com/2026/11/charles-porter-actor-dead-1237213861/",
+        "https://people.com/charles-f-porter-dies-47-hodgkin-lymphoma-12237355"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq7Zkw3Hcpr9PrGkZB5ijLxiX04bR230oajvje5ZkVBsEU7tgN7Rb0CklxnV8",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/04/charles-f-porter-dead-cancer-battle/92619942007/",
+          "title": "'Wendell Scott' star Charles F. Porter dies at 47 after cancer battle",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq7Zkw3Hcpr9PrGkZB5ijLxiX04bR230oajvje5ZkVBsEU7tgN7Rb0CklxnV8"
+        },
+        {
+          "url": "https://deadline.com/2026/11/charles-porter-actor-dead-1237213861/",
+          "title": "Charles Porter Dies: ‘Finding Faith’ Producer & Actor Was 47",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJc6VsYQbLKJUi6p9FZ4Iz3gapDa1ipYp07MmvkSTtKy6aRojUVwpGCmuEDcc"
+        },
+        {
+          "url": "https://people.com/charles-f-porter-dies-47-hodgkin-lymphoma-12237355",
+          "title": "Charles F. Porter, Actor and Finding Faith Producer, Dies at 47",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREqIyrhbXJwCLk7yZcu0m_4RggTmlubYjtwkYQSgGOCCFnikdtviYacf2uDto"
+        }
+      ]
+    },
     {
       "query": "amlodipine recall",
       "approx_searches": "200+",
@@ -42,13 +112,118 @@
       ]
     },
     {
-      "query": "ben shelton",
+      "query": "amc stock",
       "approx_searches": "500+",
+      "published_at": "2026-11-05T12:20:00Z",
+      "related_news_urls": [
+        "https://investor.amctheatres.com/news-events/press-releases/detail/446/amc-entertainment-holdings-inc-reports-third-quarter-2026-results-setting-new-all-time-records-for-quarterly-revenue-and-adjusted-ebitda",
+        "https://www.barrons.com/articles/amc-entertainment-earnings-stock-price-0370ef6b",
+        "https://finance.yahoo.com/markets/stocks/articles/amc-entertainment-amc-q3-earnings-010002745.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxU06cehPgRthSHtsRr0gv8bx2-_vlQNvCccEK36LTWPX0YLPcRQRQnVs2rNU",
+      "image_credit": "AMC Entertainment Holdings, Inc.",
+      "news": [
+        {
+          "url": "https://investor.amctheatres.com/news-events/press-releases/detail/446/amc-entertainment-holdings-inc-reports-third-quarter-2026-results-setting-new-all-time-records-for-quarterly-revenue-and-adjusted-ebitda",
+          "title": "AMC Entertainment Holdings, Inc. Reports Third Quarter 2026 Results, Setting New All-Time Records for Quarterly Revenue and Adjusted EBITDA",
+          "publisher": "AMC Entertainment Holdings, Inc.",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxU06cehPgRthSHtsRr0gv8bx2-_vlQNvCccEK36LTWPX0YLPcRQRQnVs2rNU"
+        },
+        {
+          "url": "https://www.barrons.com/articles/amc-entertainment-earnings-stock-price-0370ef6b",
+          "title": "AMC Posts Its Highest Revenue Quarter Ever. CEO Aron Says Critics ‘Were Wrong.’",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQa70LQ26sQ7ag7rlFYXpsvL0vnkrD66unOgQOZMgfd3aWjuQWdghVpUFnBBw"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amc-entertainment-amc-q3-earnings-010002745.html",
+          "title": "AMC Entertainment (AMC) Q3 Earnings: Taking a Look at Key Metrics Versus Estimates",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThbSWsrlBeUrh1EaE9u-vDPMp7B0or5QtZik8oirVTnr8ZhUZMHUaTL3ObDY8"
+        }
+      ]
+    },
+    {
+      "query": "birmingham mayor",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T12:20:00Z",
+      "related_news_urls": [
+        "https://www.al.com/news/birmingham/2026/11/calera-mayor-steps-down-after-alleged-racist-remarks-resignation-letter-rings-hollow.html",
+        "https://www.shelbycountyreporter.com/news/city-of-calera-mayor-resigns-in-result-of-alleged-racist-comments-89c8648d",
+        "https://abc3340.com/news/local/calera-council-to-consider-formally-condemning-mayor-over-racially-insensitive-remarks"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSV6laqYK7E_BzAcal-SjtSF7y82jhHkMcQfNr5iWS8V5hB3oyYnKQqZouP8nU",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/news/birmingham/2026/11/calera-mayor-steps-down-after-alleged-racist-remarks-resignation-letter-rings-hollow.html",
+          "title": "Calera mayor steps down after alleged racist remarks: ‘Resignation letter rings hollow’",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSV6laqYK7E_BzAcal-SjtSF7y82jhHkMcQfNr5iWS8V5hB3oyYnKQqZouP8nU"
+        },
+        {
+          "url": "https://www.shelbycountyreporter.com/news/city-of-calera-mayor-resigns-in-result-of-alleged-racist-comments-89c8648d",
+          "title": "Calera mayor resigns following backlash from discriminatory comments",
+          "publisher": "Shelby County Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaUAwvdtXjEpZ-PoIOmH3sN6rQGUNFU3ceB1hXLyZevAMfQ1Lb2srUl9ByEMU"
+        },
+        {
+          "url": "https://abc3340.com/news/local/calera-council-to-consider-formally-condemning-mayor-over-racially-insensitive-remarks",
+          "title": "Calera council to consider formally condemning mayor over racially insensitive remarks",
+          "publisher": "WBMA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUHfzVkPNlh2oURWQ8BsW1Ym2ubhOqlaSemIfDujxAeAqKQT-025aLkFkOj0"
+        }
+      ]
+    },
+    {
+      "query": "lotto",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T12:20:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/articles/sd-lottery-powerball-lotto-america-043005965.html",
+        "https://www.greatfallstribune.com/story/news/local/2026/11/04/montana-lottery-results-wednesday-november-4-2026/92620872007/",
+        "https://www.sctimes.com/story/news/local/2026/11/04/minnesota-lottery-results-wednesday-november-4-2026/92621065007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fwzXHogzHWN9IbwftbbFR-ufYQ_-EKzDPkI-NHPuWBveIrQlIDSRMdIRkNA",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/articles/sd-lottery-powerball-lotto-america-043005965.html",
+          "title": "SD Lottery Powerball, Lotto America winning numbers for Nov. 4, 2026",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fwzXHogzHWN9IbwftbbFR-ufYQ_-EKzDPkI-NHPuWBveIrQlIDSRMdIRkNA"
+        },
+        {
+          "url": "https://www.greatfallstribune.com/story/news/local/2026/11/04/montana-lottery-results-wednesday-november-4-2026/92620872007/",
+          "title": "Montana Lottery Powerball, Lotto America results for Nov. 4, 2026",
+          "publisher": "Great Falls Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSL8ciWc_U9d9x3KzEzgpshC1-eadM9JupPUDMoJ_EDEdKUH0i1PKnUyAZpxI"
+        },
+        {
+          "url": "https://www.sctimes.com/story/news/local/2026/11/04/minnesota-lottery-results-wednesday-november-4-2026/92621065007/",
+          "title": "MN Lottery Results: Powerball, Lotto America winning numbers for Nov. 4, 2026",
+          "publisher": "St. Cloud Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKj_vT8iZ2jASVs6EFu53EruexGaDeUCWWNjNkQwRzTFVQbdA7QJ2C9g3gqA"
+        }
+      ]
+    },
+    {
+      "query": "ben shelton",
+      "approx_searches": "1000+",
       "published_at": "2026-11-05T12:10:00Z",
       "related_news_urls": [
         "https://www.espn.com/tennis/story/_/id/50353478/ben-shelton-adds-coach-juan-carlos-ferrero-2027-staff",
-        "https://www.si.com/tennis/tennis-mailbag-will-ben-shelton-juan-carlos-ferrero-perfect-match",
-        "https://www.bbc.com/sport/tennis/articles/crz654jdzdqpo"
+        "https://sports.yahoo.com/articles/ben-shelton-father-bryan-gets-120709530.html",
+        "https://www.si.com/tennis/tennis-mailbag-will-ben-shelton-juan-carlos-ferrero-perfect-match"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuJSjArcSeFF_5cUGnsl79ZvdqaM9AoTtE_5HicPfKXVbBDY-XP6FGpuXR038",
       "image_credit": "ESPN",
@@ -61,18 +236,53 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuJSjArcSeFF_5cUGnsl79ZvdqaM9AoTtE_5HicPfKXVbBDY-XP6FGpuXR038"
         },
         {
+          "url": "https://sports.yahoo.com/articles/ben-shelton-father-bryan-gets-120709530.html",
+          "title": "Ben Shelton’s Father Bryan Gets Special Credit from Ex-World No. 1 For Being Open To Hire Juan Carlos Ferrero",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP2P7sorI_YUbFAHXODzzCow5DeLTU5HXRCyaf4Gh-vrA2tLItJzBaXsZlL_c"
+        },
+        {
           "url": "https://www.si.com/tennis/tennis-mailbag-will-ben-shelton-juan-carlos-ferrero-perfect-match",
           "title": "Tennis Mailbag: Will Ben Shelton and Juan Carlos Ferrero Be a Perfect Match?",
           "publisher": "Sports Illustrated",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7nz8fF9yxV1QpNYZDe-qq3QArARIdkqJv8Wfkk640TqdSG0TZKWtQ3WR8VE"
+        }
+      ]
+    },
+    {
+      "query": "red cup day",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T12:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/lifestyle/articles/starbucks-red-cup-day-2026-172738102.html",
+        "https://about.starbucks.com/stories/2026/discover-starbucks-2026-holiday-merchandise-in-coffeehouses-starting-nov-5/",
+        "https://www.yahoo.com/news/us/article/the-starbucks-holiday-menu-includes-a-tiramisu-drink-debut--and-the-viral-bear-cup-is-back-153304404.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQksCSeBY-3dOJJdXsL9Mxf5ICOgi1LwG-jHT3lBIAmFrGatVX5o3W49f7Qn_A",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/lifestyle/articles/starbucks-red-cup-day-2026-172738102.html",
+          "title": "Starbucks Red Cup Day 2026: Everything to Know to Snag the Freebie",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQksCSeBY-3dOJJdXsL9Mxf5ICOgi1LwG-jHT3lBIAmFrGatVX5o3W49f7Qn_A"
         },
         {
-          "url": "https://www.bbc.com/sport/tennis/articles/crz654jdzdqpo",
-          "title": "Juan Carlos Ferrero: Ben Shelton appoints Carlos Alcaraz's former coach - will it work?",
-          "publisher": "BBC",
+          "url": "https://about.starbucks.com/stories/2026/discover-starbucks-2026-holiday-merchandise-in-coffeehouses-starting-nov-5/",
+          "title": "Discover Starbucks 2026 holiday merchandise in coffeehouses starting Nov. 5",
+          "publisher": "Starbucks",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl5x0Km4IoOTTscPGQcGnaVNfB1rR_hHHlj-oNNd4GbYCTXOpQzpRZb_fi7Bo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW4ZUU4CM1XsKRgwFT4b2hhugrBG1bSt_KqowRFa8IybDdXzMe1ouxJz6WN0"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/article/the-starbucks-holiday-menu-includes-a-tiramisu-drink-debut--and-the-viral-bear-cup-is-back-153304404.html",
+          "title": "The Starbucks holiday menu includes a tiramisu drink debut — and the viral bear cup is back",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfGnqrrdyrE5dvYY6pOn8-ieudi1vRpM0isg0g8y-kToSCKNC5j-gTDySe0AQ"
         }
       ]
     },
@@ -112,43 +322,8 @@
       ]
     },
     {
-      "query": "red cup day",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T12:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/lifestyle/articles/starbucks-red-cup-day-2026-172738102.html",
-        "https://about.starbucks.com/stories/2026/discover-starbucks-2026-holiday-merchandise-in-coffeehouses-starting-nov-5/",
-        "https://www.usatoday.com/story/money/food/2026/11/05/starbucks-holiday-menu-thursday/92611603007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQksCSeBY-3dOJJdXsL9Mxf5ICOgi1LwG-jHT3lBIAmFrGatVX5o3W49f7Qn_A",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/lifestyle/articles/starbucks-red-cup-day-2026-172738102.html",
-          "title": "Starbucks Red Cup Day 2026: Everything to Know to Snag the Freebie",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQksCSeBY-3dOJJdXsL9Mxf5ICOgi1LwG-jHT3lBIAmFrGatVX5o3W49f7Qn_A"
-        },
-        {
-          "url": "https://about.starbucks.com/stories/2026/discover-starbucks-2026-holiday-merchandise-in-coffeehouses-starting-nov-5/",
-          "title": "Discover Starbucks 2026 holiday merchandise in coffeehouses starting Nov. 5",
-          "publisher": "Starbucks",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW4ZUU4CM1XsKRgwFT4b2hhugrBG1bSt_KqowRFa8IybDdXzMe1ouxJz6WN0"
-        },
-        {
-          "url": "https://www.usatoday.com/story/money/food/2026/11/05/starbucks-holiday-menu-thursday/92611603007/",
-          "title": "Starbucks' holiday menu releases Thursday. See festive drinks, food",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGFPgdqytX9SObrBQH1d0i7N_XngLaB2NNy8VNibV5WpTzI2WnLAH2vhiSvKk"
-        }
-      ]
-    },
-    {
       "query": "marlon",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-05T12:10:00Z",
       "related_news_urls": [
         "https://www.baltimoresun.com/2026/11/04/ravens-marlon-humphrey-fans-always-freaking-out/",
@@ -178,181 +353,6 @@
           "publisher": "5newsonline.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8oJD1N8BLh_jHYLAdmEb_OM-rjWAIDWYqyj6CLaaZjmclA3JPGGsFwR54GWQ"
-        }
-      ]
-    },
-    {
-      "query": "dc weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T12:00:00Z",
-      "related_news_urls": [
-        "https://www.fox5dc.com/weather/dc-weather-scattered-showers-warm-temperatures-near-75-degrees-thursday",
-        "https://www.capitalweather.com/live/?live_target=dc-area-forecast-bright-skies-and-splendid-70s-before-late-week-rain-chances/",
-        "https://www.wusa9.com/article/weather/forecast/dc-forecast-midweek-warmup-showers-return-to-cap-off-the-week/65-46717fed-325e-489c-bcfd-e0b0426e7aca"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZhK2If40MCOVfuw_1GyinEh2VUI1gAAgYcZr-4_EaBTnl9_dDtezAJkBlS60",
-      "image_credit": "FOX 5 DC",
-      "news": [
-        {
-          "url": "https://www.fox5dc.com/weather/dc-weather-scattered-showers-warm-temperatures-near-75-degrees-thursday",
-          "title": "DC weather: Scattered showers, warm temperatures near 75 degrees Thursday",
-          "publisher": "FOX 5 DC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZhK2If40MCOVfuw_1GyinEh2VUI1gAAgYcZr-4_EaBTnl9_dDtezAJkBlS60"
-        },
-        {
-          "url": "https://www.capitalweather.com/live/?live_target=dc-area-forecast-bright-skies-and-splendid-70s-before-late-week-rain-chances/",
-          "title": "Capital Weather Live Updates",
-          "publisher": "Capital Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwggp4xBMCQLexcyq1HL9HWrK9ocUyBIr9qm_jr8ALTfDInFxmWNnaK84WiNU"
-        },
-        {
-          "url": "https://www.wusa9.com/article/weather/forecast/dc-forecast-midweek-warmup-showers-return-to-cap-off-the-week/65-46717fed-325e-489c-bcfd-e0b0426e7aca",
-          "title": "DC Forecast | Sunshine returns in time for the weekend",
-          "publisher": "WUSA9",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnsajzP1sRqBQqNtZW5fYQv7yBcvwujIijAjEIoyWJukPfCwdEgw22WY2Azxc"
-        }
-      ]
-    },
-    {
-      "query": "sacred heart shooting",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T12:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/us/four-dead-including-washington-deputy-following-domestic-call-shooting-another-deputy-life-support",
-        "https://www.kxly.com/news/investigators-work-to-get-details-on-south-spokane-county-shooting-that-resulted-in-4-people/article_c7f9603c-57c6-4881-88af-3d829768d4db.html",
-        "https://www.cbsnews.com/news/3-dead-including-suspect-2-deputies-critically-injured-shooting-washington/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpL0O3jkgi7F8ZrQUgA51_PZt4XFW6K0TpPkb1UBjh2wBYvjX4vxIwWjvpQAA",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/us/four-dead-including-washington-deputy-following-domestic-call-shooting-another-deputy-life-support",
-          "title": "Four dead, including Washington deputy, following domestic call shooting; another deputy on life support",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpL0O3jkgi7F8ZrQUgA51_PZt4XFW6K0TpPkb1UBjh2wBYvjX4vxIwWjvpQAA"
-        },
-        {
-          "url": "https://www.kxly.com/news/investigators-work-to-get-details-on-south-spokane-county-shooting-that-resulted-in-4-people/article_c7f9603c-57c6-4881-88af-3d829768d4db.html",
-          "title": "Investigators work to get details on south Spokane County shooting that resulted in 4 people dead; house taped off for more than 24 hours",
-          "publisher": "KXLY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwQlj388t_UYsY85cA7H0xo4aumqOs9tlDMUm8cyqq_4TKiMi3MQpO-WCwDKY"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/3-dead-including-suspect-2-deputies-critically-injured-shooting-washington/",
-          "title": "3 dead, including suspect, and 2 deputies critically injured in Washington state shooting",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbnoLSm0xZWU-GjwvICgi9dw1P7y3c3smPZgA4Ee24ULgvvOowIz4S01XUTlY"
-        }
-      ]
-    },
-    {
-      "query": "randall woodfin",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T12:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/01/us/alabama-college-football-game-shooting",
-        "https://www.wbrc.com/2026/11/03/17-year-old-charged-with-murder-death-19-year-old-after-magic-city-classic/",
-        "https://abc3340.com/news/local/17-year-old-charged-in-legion-field-shooting-that-killed-19-year-old"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkEeYjssikI1HMBu22gB1A2SBE3fbMZx_LKNeBBqGKzjE9P9EdT3h_0vHcPNQ",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/01/us/alabama-college-football-game-shooting",
-          "title": "1 dead, 8 injured in pair of shootings after college football game in Alabama",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkEeYjssikI1HMBu22gB1A2SBE3fbMZx_LKNeBBqGKzjE9P9EdT3h_0vHcPNQ"
-        },
-        {
-          "url": "https://www.wbrc.com/2026/11/03/17-year-old-charged-with-murder-death-19-year-old-after-magic-city-classic/",
-          "title": "17-year-old charged with murder in death of 19-year-old after Magic City Classic",
-          "publisher": "WBRC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjEZtbtCu6zrBQPl0cIzB29K3qQUbK0a9dnAS6RzVWVzxulZDWHjt05j2OwFo"
-        },
-        {
-          "url": "https://abc3340.com/news/local/17-year-old-charged-in-legion-field-shooting-that-killed-19-year-old",
-          "title": "17-year-old charged in Legion Field shooting that killed 19-year-old",
-          "publisher": "WBMA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNy-n9CnRgaJyg-pU3Q_0bXRneOKA2gPU-7BcgWWS45wbVQM8x6RLcs4OIFbo"
-        }
-      ]
-    },
-    {
-      "query": "forecast",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T12:00:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/earnings/bombardier-raises-free-2026-cash-flow-outlook-as-profit-slips-847b5393",
-        "https://kfgo.com/2026/11/05/bombardier-raises-2026-free-cash-flow-forecast-on-strong-private-jet-demand/",
-        "https://www.marketbeat.com/instant-alerts/upcoming-bombardier-bdrbf-expected-to-post-earnings-on-thursday-2026-10-29/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThxZ8kja2W_ZU32kMjLQNMOoGIAmFKzvWSwDc_0iHJ_fc2ZYqHp0_Fz_fgJKI",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/earnings/bombardier-raises-free-2026-cash-flow-outlook-as-profit-slips-847b5393",
-          "title": "Bombardier Raises Free 2026 Cash Flow Outlook as Profit Slips",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThxZ8kja2W_ZU32kMjLQNMOoGIAmFKzvWSwDc_0iHJ_fc2ZYqHp0_Fz_fgJKI"
-        },
-        {
-          "url": "https://kfgo.com/2026/11/05/bombardier-raises-2026-free-cash-flow-forecast-on-strong-private-jet-demand/",
-          "title": "Bombardier raises 2026 free cash flow forecast on strong private jet demand",
-          "publisher": "The Mighty 790 KFGO",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYwpQQsehkqcBlwb7xJthokquFHhZzPazcDZLL1ziTWXGLUahQHD0BL_T1loU"
-        },
-        {
-          "url": "https://www.marketbeat.com/instant-alerts/upcoming-bombardier-bdrbf-expected-to-post-earnings-on-thursday-2026-10-29/",
-          "title": "Bombardier (BDRBF) Expected to Post Earnings on Thursday",
-          "publisher": "MarketBeat",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmrRJnB9dJwDyo96dISbZnoTR7VBGGPqJ_egJLUKxXxv-hwYN-PO0OLYSJ7us"
-        }
-      ]
-    },
-    {
-      "query": "stephen redic",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T12:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/us/michael-ruiz-video-shows-polling-place-attack-turning-point-member-poet-arrested",
-        "https://www.wmur.com/article/man-assault-turning-point-arrest/74333117",
-        "https://indepthnh.org/2026/11/04/turning-point-charlie-kirks-movement-makes-a-splash-to-little-effect/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrVAq2Z2asn6_WB1ADLVxM7s3FSkCMekSjApaPTdOO5lSb46c32szDs8xusE0",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/us/michael-ruiz-video-shows-polling-place-attack-turning-point-member-poet-arrested",
-          "title": "MICHAEL RUIZ: Video shows polling place attack on Turning Point member; poet arrested",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrVAq2Z2asn6_WB1ADLVxM7s3FSkCMekSjApaPTdOO5lSb46c32szDs8xusE0"
-        },
-        {
-          "url": "https://www.wmur.com/article/man-assault-turning-point-arrest/74333117",
-          "title": "70-year-old man accused of assaulting Turning Point member at NH polling site",
-          "publisher": "WMUR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFzxL_rSV-IJGUSxGdye6n4sX4YDJ9e1Q81nk4hnxu2HEp8UcrfRPMHeGz"
-        },
-        {
-          "url": "https://indepthnh.org/2026/11/04/turning-point-charlie-kirks-movement-makes-a-splash-to-little-effect/",
-          "title": "Turning Point: Charlie Kirk’s Movement Makes a Splash – to Little Effect",
-          "publisher": "InDepthNH.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl44phpAPdHucdw2z40wCXHzs68fPDCl4Oxm5O8DsCs6Ow01eO0j-VlFqJXB0"
         }
       ]
     }
