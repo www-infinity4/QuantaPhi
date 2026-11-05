@@ -65,7 +65,7 @@ export function rankDiscovery(rows,context={}){
 }
 export function normalizeName(name){
   const str=String(name||'').trim().replace(/\s+/g,' ');
-  return str&&/^[\p{L}\p{N} .'-]{1,60}$/u.test(str)?str.slice(0,32):'Bubbles';
+  return str&&/^[\p{L}\p{N} .'-]{1,120}$/u.test(str)?str.slice(0,32):'Bubbles';
 }
 const inCentral=(value)=>{
   const d=new Date(value);
@@ -97,7 +97,7 @@ const TREND_TERMS=Object.freeze({
 });
 export function filteredTrends(payload,interests,clock=new Date()){
   if(payload?.schema_version!==1||payload?.source_url!=='https://trends.google.com/trending/rss?geo=US'||!Array.isArray(payload.topics)||!Array.isArray(interests)||!interests.length)return [];
-  const when=new Date(payload.generated_at||payload.fetched_at||payload.updated_at||'');
+  const when=new Date(payload.checked_at||payload.generated_at||payload.fetched_at||payload.updated_at||'');
   const now=new Date(clock); const age=now.getTime()-when.getTime();
   if(!Number.isFinite(age)||age<0||age>48*3600000)return [];
   const patterns=interests.map(x=>TREND_TERMS[x]).filter(Boolean);
