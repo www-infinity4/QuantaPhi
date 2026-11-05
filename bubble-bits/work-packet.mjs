@@ -59,14 +59,17 @@ export async function createBitCandidate(input,{verifyOwnerContext,verifyOperati
 
 // Server authorization verifies that the customer deliberately shared only a
 // public blueprint. No private task IDs, source, receipt IDs or wallet identifiers.
-export async function exportBitBlueprint(packet,{verifyShareGrant}={}){
+export async function exportBitBlueprint(packet,{verifyShareGrant,verifyBlueprintPrivacy}={}){
  if(packet?.asset!=='BUBBLE_BIT'||packet.reuse?.permission!=='public_blueprint'||typeof verifyShareGrant!=='function'||await verifyShareGrant(packet)!==true)fail('share_not_authorized');
+ // Reuse permission does NOT imply that the user criteria and summaries are
+ // safe to publish. An independent server-side privacy/rights check is mandatory.
+ if(typeof verifyBlueprintPrivacy!=='function'||await verifyBlueprintPrivacy({goal:packet.goal,summary:packet.summary,guidance:packet.reuse.guidance})!==true)fail('blueprint_privacy_unverified');
  return freezePacket({type:'BUBBLE_BIT_BLUEPRINT',version:1,capability:packet.capability,
   goal:packet.goal,summary:packet.summary,stage:packet.result.stage,
   filesTested:packet.result.filesTested,filesChanged:packet.result.filesChanged,
   tools:freezePacket([...new Set(packet.steps.map(s=>s.tool))]),
   tags:freezePacket([...packet.reuse.tags]),guidance:packet.reuse.guidance,
-  sourceStatus:'verified_by_server_adapter_at_packet_creation',
+  sourceStatus:'candidate_requires_independent_review',
   executable:false,assetOwnershipTransferred:false,licenseIncluded:false});
 }
 
