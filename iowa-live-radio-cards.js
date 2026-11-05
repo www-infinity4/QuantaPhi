@@ -33,7 +33,36 @@
     { id: 'ipr-classical', name: 'IPR Classical', frequency: '105.9 FM (Des Moines)', type: 'Classical Music',
       city: 'Statewide', player: 'mp3', url: 'https://www.iowapublicradio.org/listening-digitally',
       stream: 'https://classical-stream.iowapublicradio.org/Classical.mp3',
-      low: 'https://classical-stream.iowapublicradio.org/ClassicalLow.mp3' }
+      low: 'https://classical-stream.iowapublicradio.org/ClassicalLow.mp3' },
+    // These broadcasters publish direct listening streams; play remains browser-to-publisher,
+    // with no rebroadcast, caching, third-party advertisements or invented "now playing".
+    { id: 'kexp', name: 'KEXP', frequency: '90.3 FM', type: 'Independent Music',
+      city: 'Seattle', player: 'mp3', url: 'https://www.kexp.org/mobile/kexp-livestreams/',
+      stream: 'https://kexp.streamguys1.com/kexp160.aac',
+      low: 'https://kexp.streamguys1.com/kexp64.aac' },
+    { id: 'jazz24', name: 'Jazz24', frequency: 'Online', type: 'Jazz',
+      city: 'KNKX Public Radio', player: 'mp3', url: 'https://www.jazz24.org/streaming-links/',
+      stream: 'https://knkx-live-a.edge.audiocdn.com/6285_128k',
+      low: 'https://knkx-live-a.edge.audiocdn.com/6285_64k' },
+    { id: 'knkx', name: 'KNKX Public Radio', frequency: '88.5 FM', type: 'News & Jazz',
+      city: 'Seattle–Tacoma', player: 'mp3', url: 'https://www.knkx.org/stream-knkx-online',
+      stream: 'https://knkx-live-a.edge.audiocdn.com/6284_128k',
+      low: 'https://knkx-live-a.edge.audiocdn.com/6284_64k' },
+    { id: 'wfmu', name: 'WFMU Freeform', frequency: '91.1 FM', type: 'Freeform Music',
+      city: 'New Jersey', player: 'mp3', url: 'https://www.wfmu.org/audiostream.shtml',
+      stream: 'https://stream0.wfmu.org/freeform-128k' },
+    { id: 'radiomv-english', name: 'RadioMV English', frequency: 'Online', type: 'Christian Radio',
+      city: 'Worldwide', player: 'mp3', url: 'https://player.radiomv.com/english.html',
+      stream: 'https://stream.radiomv.com/stream/english.mp3' },
+    { id: 'radiomv-espanol', name: 'RadioMV Español', frequency: 'Online', type: 'Christian Radio · Spanish',
+      city: 'Worldwide', player: 'mp3', url: 'https://player.radiomv.com/spanish.html',
+      stream: 'https://stream.radiomv.com/stream/spanish.mp3' },
+    { id: 'radiomv-deutsch', name: 'RadioMV Deutsch', frequency: 'Online', type: 'Christian Radio · German',
+      city: 'Worldwide', player: 'mp3', url: 'https://player.radiomv.com/german.html',
+      stream: 'https://stream.radiomv.com/stream/german.mp3' },
+    { id: 'radiomv-slavic', name: 'RadioMV Slavic', frequency: 'Online', type: 'Christian Radio · Slavic',
+      city: 'Worldwide', player: 'mp3', url: 'https://player.radiomv.com/slavic.html',
+      stream: 'https://stream.radiomv.com/stream/slavic.mp3' }
   ];
 
   const make = (tag, className, value) => {
@@ -75,10 +104,10 @@
 
   const shell = make('section');
   shell.id = 'iowaLiveRadio';
-  shell.setAttribute('aria-label', 'Iowa live radio station carousel');
+  shell.setAttribute('aria-label', 'Iowa and worldwide live radio station carousel');
   const head = make('header', 'ilr-head');
   const copy = make('div');
-  copy.append(make('h2', '', '📻 Iowa Live Radio'), make('p','ilr-caption','Swipe stations · choose one to listen right here'));
+  copy.append(make('h2', '', '📻 Live Radio · Iowa & Beyond'), make('p','ilr-caption','Swipe 15 sourced stations · one-tap supported broadcasts'));
   const arrows = make('div','ilr-arrows');
   const previous = make('button','ilr-arrow','‹');
   previous.type = 'button';
