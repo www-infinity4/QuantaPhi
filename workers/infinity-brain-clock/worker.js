@@ -12,7 +12,7 @@ import {triageBacklog} from './autopilot-triage.mjs';
 import {AGENT_SKILLS} from './agent-skills.mjs';
 import {checkOwnerRunnerRequest,runnerDispatchReceipt,submitApprovedBridgeWork} from './runner-request.mjs';
 import {phoneTool} from './phone-tool.mjs';
-import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
+import {githubOperation,directGithubAgent,directGithubCriteria,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {planCloudflareToken,confirmCloudflareToken,inspectCloudflareTokenManager} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
@@ -697,12 +697,7 @@ export class BrainClock extends DurableObject{
    const prior=await this.ctx.storage.get(key);if(prior)return {existing:prior};
    const lease=await this.ctx.storage.get(leaseKey);
    if(lease?.leaseUntil>Date.now())return {existing:{ok:false,status:'blocked',error:'repository_job_running',repository}};
-   let bitContext=null;
-   if(this.env.BUBBLE_BITS_ENABLED==='1'){
-    const {resolveBitContext}=await import('./iteration-credit.mjs');
-    bitContext=await resolveBitContext(this.ctx.storage,this.env,body);
-   }
-   const record={ok:true,status:'working',repository,action:body.action,requestId:body.requestId,receipts:[],bitContext,startedAt:new Date().toISOString()};
+   const record={ok:true,status:'working',repository,action:body.action,requestId:body.requestId,receipts:[],startedAt:new Date().toISOString()};
    await this.ctx.storage.put(key,record);
    await this.ctx.storage.put(leaseKey,{leaseUntil:Date.now()+10*60*1000,directRequestId:body.requestId,status:'direct_bubbles'});
    return {record};
@@ -724,24 +719,35 @@ export class BrainClock extends DurableObject{
     if(iteration){metadata.receipt=iteration.receipt;metadata.bit=iteration.bit;metadata.criteriaKey=record.bitContext?.criteriaKey;
      if(iteration.credit)metadata.bitCredit=iteration.credit;}
    }
-   record.receipts.push(metadata);
-   // Persist pending credit before making a wallet request. A network failure
-   // leaves the packet available for exactly-once delivery on receipt readback.
-   await this.ctx.storage.put(key,record);
+   const next={...record,receipts:[...record.receipts,metadata]};
    if(metadata.bitCredit){
     const retryKey='bit-credit-retry:0000000000000000:'+metadata.receipt.id;
-    await this.ctx.storage.put(retryKey,{recordKey:key,receiptId:metadata.receipt.id,retryAfter:0});
-    const {deliverBitCredit}=await import('./iteration-credit.mjs');
-    metadata.bit=await deliverBitCredit(this.env,{receipt:metadata.receipt,credit:metadata.bitCredit});
-    await this.ctx.storage.put(key,record);
-    if(metadata.bit.status==='credited'){
-     await this.ctx.storage.put('bit-credit-proof:'+metadata.receipt.id,metadata.bit);
-     await this.ctx.storage.delete(retryKey);
-    }
-   }
+    if(record.receipts.some(item=>item.receipt?.id===metadata.receipt.id))return;
+    // A single durable multi-put commits the source receipt and its outbox.
+    // A failed wallet call or lost response leaves both available for replay.
+    await this.ctx.storage.put({[key]:next,[retryKey]:{recordKey:key,receiptId:metadata.receipt.id,retryAfter:0}});
+    try{
+     const {deliverBitCredit}=await import('./iteration-credit.mjs');
+     const proof=await deliverBitCredit(this.env,{receipt:metadata.receipt,credit:metadata.bitCredit});
+     if(proof.status==='credited'){
+      await this.ctx.storage.put('bit-credit-proof:'+metadata.receipt.id,proof);
+      metadata.bit=proof;
+      await this.ctx.storage.delete(retryKey);
+     }
+    }catch{/* Delivery can retry without blocking GitHub work. */}
+   }else await this.ctx.storage.put(key,next);
+   record.receipts=next.receipts;
    await this.emit('bubbles','purple-pearl','direct GitHub receipt',repository+' · '+(metadata.status||metadata.action||'source inspected'),metadata.url);
   };
   try{
+   if(body.action==='assist'&&this.env.BUBBLE_BITS_ENABLED==='1'){
+    const criteria=directGithubCriteria(body);
+    try{
+     const {captureBitContext}=await import('./iteration-credit.mjs');
+     record.bitContext=await captureBitContext(this.ctx.storage,this.env,body,criteria,
+      input=>conversationMemory(this.env.WORK_DB,this.env.WRITER_OWNER_HASH,input));
+    }catch{/* An unavailable archive leaves the tool run usable without credit. */}
+   }
    const runtime=await githubEnvironment(this.env,this.ctx.storage);
    const result=body.action==='assist'?await directGithubAgent(runtime,body,fetch,saveReceipt):await githubOperation(runtime,body);
    if(body.action!=='assist')await saveReceipt(result);
@@ -800,11 +806,6 @@ export class BrainClock extends DurableObject{
    }catch(error){
     return Response.json({ok:false,error:String(error.message||'owner_github_read_failed').slice(0,140)},{status:503});
    }
-  }
-  if(new URL(request.url).pathname==='/iteration/context'){
-   if(this.env.BUBBLE_BITS_ENABLED!=='1')return Response.json({ok:true,bitContext:null});
-   const {captureBitContext}=await import('./iteration-credit.mjs');
-   return Response.json({ok:true,bitContext:await this.ctx.blockConcurrencyWhile(async()=>captureBitContext(this.ctx.storage,this.env,await request.json()))});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
   if(new URL(request.url).pathname==='/quick-card-browser'){
@@ -1599,15 +1600,6 @@ export default{
     const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
     const body=JSON.parse(raw||'{}');
     const result=await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,body);
-    // Proof is created only AFTER a successful authenticated context lookup.
-    // Background sync/voice/session inventory never creates Bit context.
-    if(result.ok&&body.bitContext===true&&!body.mode&&env.BUBBLE_BITS_ENABLED==='1'){
-     try{
-      const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/iteration/context',{
-       method:'POST',body:JSON.stringify({query:body.query,sessionId:body.sessionId})});
-      const proof=await response.json();if(response.ok&&proof.ok)result.bitContext=proof.bitContext;
-     }catch{/* Context retrieval still succeeds when credit infrastructure is down. */}
-    }
     return output(request,result);
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
   }

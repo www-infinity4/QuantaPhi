@@ -3,6 +3,7 @@ const fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto').
 
 async function fixture(){
  const {readBubbleBits}=await import('../workers/unified-wallet/bubble-bit-credit.mjs');
+ const {readGitAsset,readGptCoinAsset,importGptCoin}=await import('../workers/unified-wallet/engineering-assets.mjs');
  const accounts=[
   {id:'account-a',username:'alice',star_coins:7,pending_share_credits:0,share_count:0,quant:11,infinity:13,music:17},
   {id:'account-b',username:'bob',star_coins:19,pending_share_credits:0,share_count:0,quant:23,infinity:29,music:31}
@@ -15,6 +16,10 @@ async function fixture(){
   async first(){
    reads.push({sql,args});
    if(sql.startsWith('SELECT a.id'))return byToken.get(args[0])||null;
+   if(sql.includes('FROM gitcoin_awards')){
+    const n=accounts.findIndex(a=>'wallet-'+a.id===args[0]);assert.ok(n>=0,'GIT queries use the verified wallet ID');
+    return {credited:n+4,pending:n};
+   }
    const account=accounts.find(a=>a.id===args[0]);assert.ok(account,'queries must use an authenticated account');
    if(sql.startsWith('SELECT * FROM unified_wallet_state'))return{user_id:account.id,infinity_balance:account.infinity,music_quant_balance:account.music,updated_at:1};
    if(sql.startsWith('SELECT w.wallet_id'))return{wallet_id:'wallet-'+account.id,balance:account.quant};
@@ -32,7 +37,7 @@ async function fixture(){
  }}}}};
  const source=fs.readFileSync('workers/unified-wallet/worker.js','utf8').replace(/^import .*\n/gm,'').replace('export default','globalThis.worker =');
  let keyFetches=0;
- const worker=vm.runInNewContext(source+';worker',{readBubbleBits,crypto,TextEncoder,TextDecoder,Request,Response,URL,Uint8Array,btoa,atob,AbortSignal,console,fetch:async()=>{keyFetches++;throw Error('Ordinary wallet routes must not request Access keys');}});
+ const worker=vm.runInNewContext(source+';worker',{readBubbleBits,readGitAsset,readGptCoinAsset,importGptCoin,crypto,TextEncoder,TextDecoder,Request,Response,URL,Uint8Array,btoa,atob,AbortSignal,console,fetch:async()=>{keyFetches++;throw Error('Ordinary wallet routes must not request Access keys');}});
  const env={DB:db,IDENTITY_DB:db};
  const request=(path,token)=>new Request('https://wallet.example.test'+path,{headers:{Origin:'https://quantaphi.org',...(token?{Authorization:'Bearer '+token}:{})}});
  return{accounts,tokens,reads,env,request,worker,keyFetches:()=>keyFetches};
@@ -45,7 +50,10 @@ test('both existing users can read their own balances without Access configurati
   assert.equal(response.status,200);
   const payload=await response.json(),account=f.accounts[i];
   assert.equal(payload.user.id,account.id);
-  assert.deepEqual(payload.balances,{STARCOIN:account.star_coins,QUANT:account.quant,MUSIC_QUANT:account.music,INFINITY:account.infinity});
+  assert.deepEqual(payload.balances,{GIT:i+4,STARCOIN:account.star_coins,QUANT:account.quant,MUSIC_QUANT:account.music,INFINITY:account.infinity});
+  assert.equal(payload.workAssets.GIT.pending,i);
+  assert.equal(payload.workAssets.GPT_COIN.status,'issuer_not_connected');
+  assert.equal(payload.workAssets.BUBBLE_BIT.credited,null);
   assert.equal(payload.tokens[0].token_id,'token-'+account.id);
  }
  assert.equal(f.keyFetches(),0);

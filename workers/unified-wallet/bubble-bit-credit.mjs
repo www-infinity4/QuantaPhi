@@ -39,11 +39,12 @@ export async function creditBubbleBit(env,value){
  return {ok:true,asset:'BUBBLE_BIT',receiptId:input.receiptId,creditId:input.receiptId,amount:1};
 }
 export async function readBubbleBits(env,userId){
- if(env.BUBBLE_BITS_ENABLED!=='1'||!env.DB)return {available:false,credited:null};
+ if(!env.DB)return {available:false,credited:null};
  try{
   const count=await env.DB.prepare('SELECT COUNT(*) AS credited FROM bubble_bit_credits WHERE user_id=?1').bind(userId).first();
   const n=Number(count?.credited);
   if(!Number.isSafeInteger(n)||n<0)fail('invalid_bit_balance');
+  if(env.BUBBLE_BITS_ENABLED!=='1'&&!n)return {available:false,credited:null};
   return {available:true,credited:n,transferAvailable:false,spendAvailable:false};
  }catch{return {available:false,credited:null}}
 }

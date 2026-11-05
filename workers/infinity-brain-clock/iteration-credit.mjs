@@ -1,29 +1,27 @@
 // Server-only bridge from actual GitHub operations to private Bubble Bit packets.
 // A request, poll, model reply, dispatch or client event cannot authorize credit.
 const hex=value=>typeof value==='string'&&/^[a-f0-9]{64}$/.test(value);
-const id=value=>typeof value==='string'&&/^[A-Za-z0-9_-]{8,100}$/.test(value);
 const sha=value=>typeof value==='string'&&/^[a-f0-9]{40}$/.test(value);
 const hash=async value=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value)))].map(b=>b.toString(16).padStart(2,'0')).join('');
 const description=value=>{
  const text=String(value||'').replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim();
  return /(?:gh[pousr]_|sk-[A-Za-z0-9]|\bsq_|\br[bd]_|private key|\b(?:password|secret|bearer|api.key)\b)/i.test(text)?'Private customer criteria (details retained in the owner conversation)':text.slice(0,380);
 };
-export async function captureBitContext(storage,env,{sessionId,query}={}){
- if(env.BUBBLE_BITS_ENABLED!=='1'||!hex(env.WRITER_OWNER_HASH)||!id(sessionId)||typeof query!=='string'||!query.trim()||query.length>6000)return null;
- const now=Date.now(),record={id:'ctx_'+crypto.randomUUID().replaceAll('-',''),sessionId,ownerHash:env.WRITER_OWNER_HASH,
-  criteriaKey:await hash(query.trim()),goal:description(query),expiresAt:now+30*60*1000};
- // Bound retention. Expired context cannot be renewed by replaying a proof.
- const index=await storage.get('bit-context-index')||[],keep=index.filter(x=>x.expiresAt>now).slice(-199);
- for(const old of index)if(!keep.some(x=>x.id===old.id))await storage.delete('bit-context:'+old.id);
- await storage.put('bit-context:'+record.id,record);
- await storage.put('bit-context-index',[...keep,{id:record.id,expiresAt:record.expiresAt}]);
- return {id:record.id,sessionId,criteriaKey:record.criteriaKey};
-}
-export async function resolveBitContext(storage,env,body){
- if(env.BUBBLE_BITS_ENABLED!=='1'||!id(body?.bitContext?.id)||!id(body.sessionId))return null;
- const ctx=await storage.get('bit-context:'+body.bitContext.id),recipient=await storage.get('bot-work-recipient');
- if(!ctx||ctx.ownerHash!==env.WRITER_OWNER_HASH||ctx.sessionId!==body.sessionId||ctx.criteriaKey!==body.bitContext.criteriaKey||ctx.expiresAt<=Date.now()||!(typeof recipient?.userId==='string'&&recipient.userId.length>0&&recipient.userId.length<=200))return null;
- return {...ctx,userId:recipient.userId};
+export async function captureBitContext(storage,env,body,criteria,readContext){
+ if(env.BUBBLE_BITS_ENABLED!=='1'||!hex(env.WRITER_OWNER_HASH)||body.action!=='assist'||
+    !/^[A-Za-z0-9_-]{10,80}$/.test(body.sessionId||'')||
+    !/^[a-f0-9-]{36}$/i.test(body.requestId||'')||!criteria?.request)return null;
+ const recipient=await storage.get('bot-work-recipient');
+ if(!(typeof recipient?.userId==='string'&&recipient.userId.length>0&&recipient.userId.length<=200))return null;
+ const {request,sourceHint,imageObservations}=criteria;
+ const context=await readContext({messages:[],query:request,sessionId:body.sessionId});
+ if(context?.ok!==true)return null;
+ // Derive from the same canonical request used by the server tool runner.
+ // Observations are untrusted evidence and contribute only a private hash.
+ // No browser proof, wallet ID or assistant prose can replace these criteria.
+ const criteriaKey=await hash(JSON.stringify([body.repository,body.mode,request,sourceHint,await hash(imageObservations)]));
+ return {id:'ctx_'+body.requestId.replaceAll('-',''),sessionId:body.sessionId,requestId:body.requestId,
+  ownerHash:env.WRITER_OWNER_HASH,criteriaKey,goal:description(request),userId:recipient.userId};
 }
 export async function githubIteration(env,record,result,operation,index){
  if(!result?.ok||result.exists===false||!Number.isSafeInteger(index)||index<0||
@@ -41,7 +39,8 @@ export async function githubIteration(env,record,result,operation,index){
  const receiptId='bb_'+await hash(JSON.stringify([env.WRITER_OWNER_HASH,record.requestId,tool,operation.repository,operation.path||null,result.commitSha||result.headSha||result.run?.headSha||result.sha||null,result.run?.id||null,operation.query||null]));
  const receipt={id:receiptId,tool,status:'complete'};
  const ctx=record.bitContext;
- if(!ctx)return {receipt,bit:{status:'context_unavailable',amount:0}};
+ if(!ctx||ctx.requestId!==record.requestId||ctx.ownerHash!==env.WRITER_OWNER_HASH)
+  return {receipt,bit:{status:'context_unavailable',amount:0}};
  const packet={version:1,source:'brain_direct_github_v1',asset:'BUBBLE_BIT',receiptId,userId:ctx.userId,
   sessionId:ctx.sessionId,criteriaKey:ctx.criteriaKey,contextId:ctx.id,tool,
   goal:ctx.goal,summary:tool+' completed for '+String(operation.repository||'GitHub'),

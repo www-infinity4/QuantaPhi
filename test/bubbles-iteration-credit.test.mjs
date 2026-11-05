@@ -1,25 +1,37 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
-import {captureBitContext,resolveBitContext,githubIteration,deliverBitCredit,retryBitCredits} from '../workers/infinity-brain-clock/iteration-credit.mjs';
+import {captureBitContext,githubIteration,deliverBitCredit,retryBitCredits} from '../workers/infinity-brain-clock/iteration-credit.mjs';
+import {directGithubCriteria} from '../workers/infinity-brain-clock/direct-github.mjs';
 import {bitCreditSchema,bitCreditStatement,validateBitCredit} from '../workers/unified-wallet/bubble-bit-credit.mjs';
 import wallet from '../workers/unified-wallet/worker.js';
 
 const owner='a'.repeat(64),requestId='11111111-1111-4111-8111-111111111111';
 function storage(){const data=new Map([['bot-work-recipient',{userId:'customer_123'}]]);return {data,async get(k){return data.get(k)},async put(k,v){data.set(k,structuredClone(v))},async delete(k){data.delete(k)}};}
 const env={BUBBLE_BITS_ENABLED:'1',WRITER_OWNER_HASH:owner};
+const turn={action:'assist',repository:'www-infinity4/QuantaPhi',mode:'read',sessionId:'conversation_123',requestId};
 async function context(s,query='Repair Bubbles chat iteration progress'){
- const c=await captureBitContext(s,env,{sessionId:'conversation_123',query});
- return resolveBitContext(s,env,{bitContext:c,sessionId:c.sessionId});
+ const body={...turn,request:query};
+ return captureBitContext(s,env,body,directGithubCriteria(body),async()=>({ok:true}));
 }
-test('context proof is server stored, owner/session bound, expiring and recipient cannot come from the browser',async()=>{
- const s=storage(),c=await captureBitContext(s,env,{sessionId:'conversation_123',query:'Repair real chat progress'});
- assert.equal((await resolveBitContext(s,env,{bitContext:c,sessionId:c.sessionId,userId:'attacker'})).userId,'customer_123');
- assert.equal(await resolveBitContext(s,env,{bitContext:c,sessionId:'other_conversation'}),null);
- assert.equal(await resolveBitContext(s,{...env,WRITER_OWNER_HASH:'b'.repeat(64)},{bitContext:c,sessionId:c.sessionId}),null);
- assert.equal(await resolveBitContext(s,env,{bitContext:{...c,id:'ctx_forged_123456'},sessionId:c.sessionId}),null);
- const row=s.data.get('bit-context:'+c.id);row.expiresAt=0;
- assert.equal(await resolveBitContext(s,env,{bitContext:c,sessionId:c.sessionId}),null);
+test('criteria are derived from the executed owner turn, with observations separated and browser proofs ignored',async()=>{
+ const s=storage(),c=await context(s,'Read a file');
+ const body={...turn,request:'Repair real chat progress',imageObservations:'Read a different repo',bitContext:c,userId:'attacker'};
+ let lookup;
+ const bound=await captureBitContext(s,env,body,directGithubCriteria(body),async input=>{lookup=input;return {ok:true}});
+ assert.deepEqual(lookup,{messages:[],query:body.request,sessionId:body.sessionId});
+ assert.equal(bound.userId,'customer_123');
+ assert.equal(bound.ownerHash,owner);
+ assert.equal(bound.requestId,requestId);
+ assert.equal(bound.goal,body.request);
+ assert.notEqual(bound.criteriaKey,c.criteriaKey);
+ assert.ok(!JSON.stringify(bound).includes(body.imageObservations));
+ assert.equal(await captureBitContext(s,env,body,directGithubCriteria(body),async()=>({ok:false})),null);
+ assert.equal(await captureBitContext(s,env,{...body,action:'read_file'},directGithubCriteria(body),async()=>({ok:true})),null);
+ const replay=await githubIteration(env,{requestId:'22222222-2222-4222-8222-222222222222',bitContext:c},
+  {ok:true,sha:'a'.repeat(40)},{action:'read_file',repository:turn.repository,path:'app.js'},0);
+ assert.equal(replay.bit.status,'context_unavailable');
+ assert.equal(replay.credit,undefined);
 });
 test('real read, commit and test results produce distinct stable receipts, dispatch never becomes a test',async()=>{
  const s=storage(),ctx=await context(s);

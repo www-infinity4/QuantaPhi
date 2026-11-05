@@ -107,3 +107,10 @@ GitHub Bubbles unified run 41947949854 reproduced a standalone WebView adapter r
 ## Session 7 revision-test correction
 
 At 41a9cc6 the core Brain, identity, Bit and unified-interface GitHub workflows passed. Draft-safe run 41948535236 exposed a fixture that replaced the first shared revision string anywhere in the document, which now correctly appears on multiple scripts. Scoped that fixture replacement to bubbles-ai.js itself; production updater behavior remains unchanged. Native/web draft, fresh-chat and embedded-card tests are rerun before the correction commit.
+
+## 2026-11-05 · verified work assets in Unified Wallet
+
+- State `source_tested`, 🟡. One additional documented session, overall progress and remaining sessions unknown. Branch `fix/bubbles-verified-wallet-assets-1296` builds on the Brain receipt routing repair in #1699. No live lease was claimed. Lease ID, fence, task session and expiry are null.
+- The direct engineering runner derives Bit provenance from the request it actually executes after its owner-scoped archive read. The durable receipt and retry entry are atomic. Simulated storage and wallet failures, replay, account isolation and exact wallet readback have regressions.
+- Unified Wallet separates actual GIT awards from pending claims, reads Bubble Bit credits by authenticated account, and can accept an optional issuer-signed GPT Coin receipt for the authenticated recipient. The issuer is unconfigured in production. GIT runtime issuance still depends on the reviewed GitHub/Quant AI/acceptance adapters and owner-executor enrollment on #1675/#1682.
+- Next action is exact-head CI and independent review of the wallet Worker and Brain receipt bridge. Keep the pilot flag absent until both Workers, isolated tables and two-account live acceptance are ready. The Nov. 5 signed Moltnook benchmark returned the existing five-day approval gate before an authenticated chat turn.
