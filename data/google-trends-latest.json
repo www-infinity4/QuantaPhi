@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T09:31:35.231765Z",
+  "checked_at": "2026-11-05T10:01:45.958525Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "ukraine news",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T09:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/zelenskiy-hopes-us-election-outcome-will-generate-more-help-ukraine-2026-11-04/",
+        "https://www.aljazeera.com/news/2026/11/5/zelenskyy-hopes-democratic-congress-will-bring-more-us-help-for-ukraine",
+        "https://tvpworld.com/96306998/ian-brzezinski-us-midterm-results-negative-for-putin-as-congress-gains-power-to-challenge-trump"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeaFPyrvAue24Q60W8oywI6BfVS52gOj9y8wbCX7fspN_S_BLawftkWf_AdJk",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/zelenskiy-hopes-us-election-outcome-will-generate-more-help-ukraine-2026-11-04/",
+          "title": "Zelenskiy hopes US election outcome will generate more help for Ukraine",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeaFPyrvAue24Q60W8oywI6BfVS52gOj9y8wbCX7fspN_S_BLawftkWf_AdJk"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/5/zelenskyy-hopes-democratic-congress-will-bring-more-us-help-for-ukraine",
+          "title": "Zelenskyy hopes Democratic Congress will bring more US help for Ukraine",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN_0teX2BKqRVScR3SF0uXL8FGWkBMfyhf2v9bUhg9Wbprr8-lJj31pmSEqC4"
+        },
+        {
+          "url": "https://tvpworld.com/96306998/ian-brzezinski-us-midterm-results-negative-for-putin-as-congress-gains-power-to-challenge-trump",
+          "title": "Putin’s ability to ‘manipulate’ Trump weakened by US midterm results: expert",
+          "publisher": "TVP World",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMFKRJuHCqaVBiowgH7_hoX8-ojpA6gQAc6QX9Peyh2nWCQSQz-q33OOpgmFU"
+        }
+      ]
+    },
+    {
+      "query": "mika stojsavljevic",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T09:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/british-teenager-mika-stojsavljevic-beats-100813799.html",
+        "https://justwomenssports.com/reads/mika-stojsavljevic-upsets-sofia-kenin-hong-kong-open-2026/",
+        "https://www.aol.com/articles/gbs-stojsavljevic-17-claims-first-100615000.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7UtVMEmIRCuu0huswuUf7jm6DX1WlA7aEUTtXK1GaK3WgJluPyRky-86PAfU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/british-teenager-mika-stojsavljevic-beats-100813799.html",
+          "title": "British teenager Mika Stojsavljevic beats grand slam champion for first WTA Tour win",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7UtVMEmIRCuu0huswuUf7jm6DX1WlA7aEUTtXK1GaK3WgJluPyRky-86PAfU"
+        },
+        {
+          "url": "https://justwomenssports.com/reads/mika-stojsavljevic-upsets-sofia-kenin-hong-kong-open-2026/",
+          "title": "Teenager Mika Stojsavljevic Shocks Sofia Kenin at 2026 Hong Kong Open",
+          "publisher": "Just Women's Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8i4CrF8JVesyjSADY8l5XSpeYdI_d0gjDpoJYzF81CkqZxP3kfWvVH7YLkRs"
+        },
+        {
+          "url": "https://www.aol.com/articles/gbs-stojsavljevic-17-claims-first-100615000.html",
+          "title": "GB's Stojsavljevic, 17, claims first WTA Tour win despite short notice",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1MCMy4QJt1R4YXpTVskVUIZxkTok3Sfx-yWUrU3AS_ZbBy4QMif1aLFE3Dxo"
+        }
+      ]
+    },
+    {
+      "query": "cvs breakup",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T09:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/04/business/cvs-to-split-into-two-companies",
+        "https://www.reuters.com/legal/transactional/cvs-health-split-two-separating-pharmacy-business-insurance-2026-11-04/",
+        "https://wwd.com/beauty-industry-news/beauty-features/beauty-and-wellness-have-more-space-to-shine-in-a-revamped-cvs-1239400818/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTG6jvxoAwxao8dkPxaN9f6_mqS0nw8IdaOtSRtAEmzrwgnqGEP5m6ZK_t14w",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/04/business/cvs-to-split-into-two-companies",
+          "title": "CVS to split into two companies, in major breakup of its $117 billion healthcare empire",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTG6jvxoAwxao8dkPxaN9f6_mqS0nw8IdaOtSRtAEmzrwgnqGEP5m6ZK_t14w"
+        },
+        {
+          "url": "https://www.reuters.com/legal/transactional/cvs-health-split-two-separating-pharmacy-business-insurance-2026-11-04/",
+          "title": "CVS to break up $117 billion business, separating pharmacies from insurance; shares fall",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkoyJuVfIidR0DrCpmgEYR2fZwLKDfl34_iWDmsrKumJfGiWGxm0WIJpGRFXo"
+        },
+        {
+          "url": "https://wwd.com/beauty-industry-news/beauty-features/beauty-and-wellness-have-more-space-to-shine-in-a-revamped-cvs-1239400818/",
+          "title": "Will Beauty and Wellness Have More Space to Shine in a Revamped CVS?",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5VI9mEB-CdsK8d2rbjidzm9xlP_zMjqdlK6-EGjLZPKqO2NspM6UxK1McTss"
+        }
+      ]
+    },
     {
       "query": "pluto tv",
       "approx_searches": "200+",
@@ -42,8 +147,43 @@
       ]
     },
     {
+      "query": "ja morant haircut",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T08:50:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25529452-ja-morant-gets-haircut-loses-dreads-photos-video-during-blazers-stars-injury-rehab",
+        "https://www.espn.com/nba/story/_/id/50329588/ja-morant-least-four-weeks-injury-vs-grizzlies",
+        "https://sports.yahoo.com/articles/blazers-star-ja-morant-debuts-061201243.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkgG567TWCYNJnxWDs5XjgM97TmEyZmm3D0XNBu-R1-gsi4h1oEymwrFH3qo8",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25529452-ja-morant-gets-haircut-loses-dreads-photos-video-during-blazers-stars-injury-rehab",
+          "title": "Ja Morant Gets Haircut, Loses Dreads in Photos, Video During Blazers Star's Injury Rehab",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkgG567TWCYNJnxWDs5XjgM97TmEyZmm3D0XNBu-R1-gsi4h1oEymwrFH3qo8"
+        },
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50329588/ja-morant-least-four-weeks-injury-vs-grizzlies",
+          "title": "Ja Morant out at least 4 weeks with hamstring strain suffered against Grizzlies",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn_i9dDEnv2duHScP8XQGG2en6Lqewvm4_ISckzlCQ5fh-nwHRkrXLFCeKFI4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/blazers-star-ja-morant-debuts-061201243.html",
+          "title": "Blazers star Ja Morant debuts new look before Lakers showdown",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu1c9sdl6q_w7tNrF4YtcuLHEY0FnQnOxCxuhLEHC6N9tkWfg4SzrwHs7nD2I"
+        }
+      ]
+    },
+    {
       "query": "zeynep sonmez",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-05T08:50:00Z",
       "related_news_urls": [
         "https://mansethaber.com/news/milli-tenisciden-wta-250de-basarili-ilk-mac",
@@ -116,26 +256,26 @@
       "approx_searches": "100+",
       "published_at": "2026-11-05T08:40:00Z",
       "related_news_urls": [
-        "https://www.news.uscg.mil/Press-Releases/Article/4640850/coast-guard-detains-msc-poesia-in-port-of-miami/",
         "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
+        "https://www.news.uscg.mil/Press-Releases/Article/4640850/coast-guard-detains-msc-poesia-in-port-of-miami/",
         "https://www.nbcmiami.com/news/local/us-coast-guard-detains-msc-poesia-portmiami-sailing-cancelled/3882614/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGbWdY1JVuV6M2hEKjkPNlNiUmTSLHgT69QsBno1p4XHvGUh_e_9SLR9yJi14",
-      "image_credit": "United States Coast Guard News (.mil)",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE",
+      "image_credit": "CBS News",
       "news": [
-        {
-          "url": "https://www.news.uscg.mil/Press-Releases/Article/4640850/coast-guard-detains-msc-poesia-in-port-of-miami/",
-          "title": "Coast Guard detains MSC Poesia in Port of Miami",
-          "publisher": "United States Coast Guard News (.mil)",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGbWdY1JVuV6M2hEKjkPNlNiUmTSLHgT69QsBno1p4XHvGUh_e_9SLR9yJi14"
-        },
         {
           "url": "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
           "title": "Cruise canceled after Coast Guard detains ship in Miami, officials say",
           "publisher": "CBS News",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE"
+        },
+        {
+          "url": "https://www.news.uscg.mil/Press-Releases/Article/4640850/coast-guard-detains-msc-poesia-in-port-of-miami/",
+          "title": "Coast Guard detains MSC Poesia in Port of Miami",
+          "publisher": "United States Coast Guard News (.mil)",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGbWdY1JVuV6M2hEKjkPNlNiUmTSLHgT69QsBno1p4XHvGUh_e_9SLR9yJi14"
         },
         {
           "url": "https://www.nbcmiami.com/news/local/us-coast-guard-detains-msc-poesia-portmiami-sailing-cancelled/3882614/",
@@ -213,146 +353,6 @@
           "publisher": "Pluang",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCntQcx8-b9TFLmdZa61BuT8pN61k71J3_iK3FT4l7v_5q2otAcuCZzB0JR1Q"
-        }
-      ]
-    },
-    {
-      "query": "apartments",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T08:20:00Z",
-      "related_news_urls": [
-        "https://www.foxcarolina.com/2026/11/05/live-crews-responding-apartment-fire-greenville-county/",
-        "https://www.waff.com/2026/11/02/fire-huntsville-apartment-complex-displaces-about-15-families/",
-        "https://whnt.com/news/huntsville/resident-describes-flames-near-her-home-in-huntsville-apartment-fire/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6xXRYruWXe_n3SWujhJNmjREf_7XT98jYCqYoFmGAoiDyNL_RmBD_n58_pk",
-      "image_credit": "FOX Carolina News",
-      "news": [
-        {
-          "url": "https://www.foxcarolina.com/2026/11/05/live-crews-responding-apartment-fire-greenville-county/",
-          "title": "LIVE: Crews responding to apartment fire in Greenville County",
-          "publisher": "FOX Carolina News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6xXRYruWXe_n3SWujhJNmjREf_7XT98jYCqYoFmGAoiDyNL_RmBD_n58_pk"
-        },
-        {
-          "url": "https://www.waff.com/2026/11/02/fire-huntsville-apartment-complex-displaces-about-15-families/",
-          "title": "Fire at Huntsville apartment complex displaces about 15 families",
-          "publisher": "WAFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGk8Biu7pTkWaogm9pWYAHvrnfZOt1mtiZjF3foRPHTXrltWGXZ3vU97zEPaw"
-        },
-        {
-          "url": "https://whnt.com/news/huntsville/resident-describes-flames-near-her-home-in-huntsville-apartment-fire/",
-          "title": "Resident describes flames near her home in Huntsville apartment fire",
-          "publisher": "WHNT.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYLd5cGoWrjP3TZ_L_jQsNNi9Czxq1Oghd9SW327X1FGeg4j0GeSk3-y8dWvs"
-        }
-      ]
-    },
-    {
-      "query": "suite life zack and cody residuals",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T08:20:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1437783/dylan-sprouses-suite-life-of-zack-cody-residual-paycheck-revealed",
-        "https://variety.com/2026/tv/news/dylan-sprouse-residual-check-suite-life-of-zack-and-cody-1236939089/",
-        "https://ew.com/suite-life-star-phill-lewis-claims-show-filmed-extra-episodes-without-having-to-pay-cast-12224963"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUA6fhXM9xDl_5d3vyhZzNdVHplep9uhAYTr5g_X9KchNCWUfu1DesrBftfXw",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1437783/dylan-sprouses-suite-life-of-zack-cody-residual-paycheck-revealed",
-          "title": "Dylan Sprouse Reveals Mind-Blowing Residual Paycheck From Suite Life of Zack & Cody",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUA6fhXM9xDl_5d3vyhZzNdVHplep9uhAYTr5g_X9KchNCWUfu1DesrBftfXw"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/dylan-sprouse-residual-check-suite-life-of-zack-and-cody-1236939089/",
-          "title": "Dylan Sprouse Received One 'Suite Life' Residual Check for Five Cents",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFIdMCzDMnEXB_yR23N5nowjlG1XN2_tQ5MjU5QVNMKpGjEAVqkTO-zYXZiWw"
-        },
-        {
-          "url": "https://ew.com/suite-life-star-phill-lewis-claims-show-filmed-extra-episodes-without-having-to-pay-cast-12224963",
-          "title": "‘Suite Life’ star Phill Lewis claims show filmed extra episodes without having to pay cast",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJvnvOhliVdIEJgjQbNVxfkq5ZdDkkc2-4aJzSTF-sm8AYDvTD8bL5JooJ5-0"
-        }
-      ]
-    },
-    {
-      "query": "josh duhamel",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T08:10:00Z",
-      "related_news_urls": [
-        "https://ew.com/eric-dane-josh-duhamel-nearly-fought-las-vegas-set-12199083",
-        "https://www.syracuse.com/entertainment/2026/11/late-actors-posthumous-memoir-reveals-explosive-on-set-fight-with-co-star.html",
-        "https://variety.com/2026/tv/news/eric-dane-memoir-fight-josh-duhamel-set-1236938856/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyryecAvDnoZKnPXPqUmXPRi-ZxBItIb6hzK6HNsKyxuvBqmtFPZT4KHzhX4k",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/eric-dane-josh-duhamel-nearly-fought-las-vegas-set-12199083",
-          "title": "Eric Dane nearly fought ‘p---y-ass actor’ Josh Duhamel on ‘Las Vegas’ set",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyryecAvDnoZKnPXPqUmXPRi-ZxBItIb6hzK6HNsKyxuvBqmtFPZT4KHzhX4k"
-        },
-        {
-          "url": "https://www.syracuse.com/entertainment/2026/11/late-actors-posthumous-memoir-reveals-explosive-on-set-fight-with-co-star.html",
-          "title": "Late actor’s posthumous memoir reveals explosive on-set fight with co-star",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStOoGcH9Ov6ebUxwkVJAWQrCgrrerxQvO6tctrvZ3Lhp3WdasKBl9WscvF9dM"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/eric-dane-memoir-fight-josh-duhamel-set-1236938856/",
-          "title": "Eric Dane’s Posthumous Memoir Reveals Actor’s Fight With Josh Duhamel on Set: ‘Let’s Go, You P—- Ass Actor!’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSexnIcK0Zm983V7PTxQfbApP6OUd3eKwywu8ChnxmNi0GTiA8etj7lO1HgM3o"
-        }
-      ]
-    },
-    {
-      "query": "pluto",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T08:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/travel/scientists-discover-potentially-massive-dwarf-planet-candidate-hiding-beyond-pluto",
-        "https://www.nationalgeographic.com/science/article/new-dwarf-planet-rubin-pluto",
-        "https://rubinobservatory.org/news/rubin-first-dwarf-planet-candidate"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJbkIYTGyVy0jVujD2NTH1oO540J1tklp-Wkh9reJlSMeiROVFVJVVQH0FipE",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/travel/scientists-discover-potentially-massive-dwarf-planet-candidate-hiding-beyond-pluto",
-          "title": "Scientists discover potentially massive dwarf planet candidate hiding beyond Pluto",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJbkIYTGyVy0jVujD2NTH1oO540J1tklp-Wkh9reJlSMeiROVFVJVVQH0FipE"
-        },
-        {
-          "url": "https://www.nationalgeographic.com/science/article/new-dwarf-planet-rubin-pluto",
-          "title": "Astronomers Just Discovered a New Hidden World Beyond Neptune",
-          "publisher": "National Geographic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBEVL7I7xOdSQPznfemMVywkUVckHCmLhlpT5Vj60DamPPbymxgq_YR4fPDyo"
-        },
-        {
-          "url": "https://rubinobservatory.org/news/rubin-first-dwarf-planet-candidate",
-          "title": "NSF–DOE Vera C. Rubin Observatory Reveals Its First Dwarf Planet Candidate in Our Solar System",
-          "publisher": "Rubin Observatory",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH_J7bhzuEnomoX-expzACeP8KEJbIPgiqYblIyBvHRZbq87yb2F-MZaT7LpI"
         }
       ]
     }
