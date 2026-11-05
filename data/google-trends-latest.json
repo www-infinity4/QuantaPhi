@@ -3,340 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T10:31:01.656737Z",
+  "checked_at": "2026-11-05T11:01:45.378502Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mai hontama",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T10:10:00Z",
+      "query": "cristiano ronaldo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T10:40:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/jeline-vandromme-vs-kyoka-okamura-set-1-winner-nov-02-2026/"
+        "https://www.cnn.com/2026/11/05/sport/cristiano-ronaldo-retires-portuguese-national-team",
+        "https://www.espn.com/soccer/story/_/id/49266866/cristiano-ronaldo-retires-international-football",
+        "https://www.nytimes.com/athletic/7752962/2026/11/05/cristiano-ronaldo-portugal-international-retirement/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLDxTEhPPbhYVRoRiX78LupNFRg55xRTsnmaNrkUMzhWTipeFEs7J8rHGmT0",
-      "image_credit": "Robinhood",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMdrXdXRECweuq7aQVegR6zrQ9rNL9HwhfOGQI6Oe5vD5N71NSBcaziaUVOCc",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/jeline-vandromme-vs-kyoka-okamura-set-1-winner-nov-02-2026/",
-          "title": "November 2, 2026: Jeline Vandromme vs Kyoka Okamura: Set 1 Winner Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.cnn.com/2026/11/05/sport/cristiano-ronaldo-retires-portuguese-national-team",
+          "title": "Cristiano Ronaldo retires from international soccer",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLDxTEhPPbhYVRoRiX78LupNFRg55xRTsnmaNrkUMzhWTipeFEs7J8rHGmT0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMdrXdXRECweuq7aQVegR6zrQ9rNL9HwhfOGQI6Oe5vD5N71NSBcaziaUVOCc"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/49266866/cristiano-ronaldo-retires-international-football",
+          "title": "Cristiano Ronaldo retires from international football with Portugal",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT74owzTTgvBOJHKL8-fZ8W9OiraUGKCpc-3ZOQzeavbhQtl1IXm1J7iJx2jh8"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7752962/2026/11/05/cristiano-ronaldo-portugal-international-retirement/",
+          "title": "Cristiano Ronaldo announces international retirement: ‘Portugal will always be in my heart’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1k4mfpUDQ3JmgJDRhK0uQd6guXC7d_jS-yYSuuHUOafvrNOgJrVDp5tKD8yw"
         }
       ]
     },
     {
-      "query": "curt cignetti",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T10:10:00Z",
+      "query": "dólar estadounidense",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T10:40:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/video/6407908232112",
-        "https://247sports.com/college/indiana/article/everything-cfp-college-football-playoff-hunter-yurachek-said-indiana-iu-rsum-no-4-ranking-292173835/",
-        "https://www.thedailyhoosier.com/heres-why-cfp-committee-put-iu-well-above-notre-dame-in-first-rankings-release/"
+        "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-4-noviembre-tipo-de-cambio-22511485.php",
+        "https://www.elfinanciero.com.mx/mercados/2026/11/04/peso-dolar-tipo-de-cambio-hoy-precio-4-de-noviembre-de-2027/",
+        "https://es.dailyforex.com/forex-technical-analysis/2026/11/usdmxn-mantiene-trayectoria-alcista-4-noviembre-2026/251415"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQu6CV9e3M9FCXOQs_N6O2BFC4LuqgTEhHkB0VcI8wLqdnUD4-YEJ7WbP8nnk",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOoUObQ51rxlEwCBZWfxT4c96oYSoTycCkgsJy5JdvUBCXWmc41u4EwCwadFY",
+      "image_credit": "Dallas News",
       "news": [
         {
-          "url": "https://www.foxnews.com/video/6407908232112",
-          "title": "Dan Dakich has NO IDEA How Indiana is at Four in the Latest CFP Rankings | Don't @ Me w/ Dan Dakich",
-          "publisher": "Fox News",
+          "url": "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-4-noviembre-tipo-de-cambio-22511485.php",
+          "title": "Así está el dólar en México hoy: tipo de cambio y cotizaciones en bancos",
+          "publisher": "Dallas News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQu6CV9e3M9FCXOQs_N6O2BFC4LuqgTEhHkB0VcI8wLqdnUD4-YEJ7WbP8nnk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOoUObQ51rxlEwCBZWfxT4c96oYSoTycCkgsJy5JdvUBCXWmc41u4EwCwadFY"
         },
         {
-          "url": "https://247sports.com/college/indiana/article/everything-cfp-college-football-playoff-hunter-yurachek-said-indiana-iu-rsum-no-4-ranking-292173835/",
-          "title": "Everything CFP chairman Hunter Yurachek said about Indiana's résumé after first rankings reveal",
-          "publisher": "247Sports",
+          "url": "https://www.elfinanciero.com.mx/mercados/2026/11/04/peso-dolar-tipo-de-cambio-hoy-precio-4-de-noviembre-de-2027/",
+          "title": "Peso ‘hace leña’ de derrota de Trump en elecciones en EU: Gana 27 centavos al dólar",
+          "publisher": "El Financiero",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUebzRgKznaqD1KYOZ_KOlliDPinNGFvhKss99S8NL-q1wVcDEohClUOBm3X4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8E9qlG7N4cgmNG3T6kIzlLJ6U4ZVlYeqwVDtZpcfyBykYA_-mhhmdpRbwF_s"
         },
         {
-          "url": "https://www.thedailyhoosier.com/heres-why-cfp-committee-put-iu-well-above-notre-dame-in-first-rankings-release/",
-          "title": "Here’s why CFP Committee put IU well above Notre Dame in first rankings release",
-          "publisher": "The Daily Hoosier",
+          "url": "https://es.dailyforex.com/forex-technical-analysis/2026/11/usdmxn-mantiene-trayectoria-alcista-4-noviembre-2026/251415",
+          "title": "USD/MXN Hoy 04/11: Señales Mantienen Tensión del Mercado",
+          "publisher": "Daily Forex",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4AkMr1OCBsFyUnBbZsW306HZH5hFAPUyHZQEgbbodIGGcwXNsaa5kmjexFyA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpwh-ICPj49O4szQgNTnUVV9EHDWE6gzGH_AGmKXyk72sJeYGdxGhfn30OSYk"
         }
       ]
     },
     {
-      "query": "hacker",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T10:10:00Z",
+      "query": "narcotráfico",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T10:40:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/legal/government/india-flags-chinese-linked-ai-tools-hacking-campaign-against-financial-firms-2026-11-05/",
-        "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
-        "https://indianexpress.com/article/business/cert-in-reporting-deadline-ai-security-incidents-10951358/"
+        "https://www.bloomberg.com/news/articles/2026-11-04/presidente-del-tribunal-supremo-de-bolivia-huye-del-pais-por-amenazas",
+        "https://www.rfi.fr/es/am%C3%A9ricas/20261105-bolivia-el-presidente-del-tribunal-supremo-huye-tras-orden-de-captura-por-narcotr%C3%A1fico",
+        "https://larazon.bo/nacional/2026/11/04/fiscalia-gestiona-sello-rojo-contra-saucedo-y-tramita-ordenes-de-aprehension/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4l31udegqfXgHU6qq6BFsLoR85JS93ZO6Dp-kqhAvxs8Tg-oSfRrkxJ5dXR8",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnH3QRTG2EkY_1aC830yGC4bXjaI-XAvVmIon153IYZjz9flGAr1n03LZEbFg",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-04/presidente-del-tribunal-supremo-de-bolivia-huye-del-pais-por-amenazas",
+          "title": "Presidente del Tribunal Supremo de Bolivia huye del país tras recibir amenazas",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnH3QRTG2EkY_1aC830yGC4bXjaI-XAvVmIon153IYZjz9flGAr1n03LZEbFg"
+        },
+        {
+          "url": "https://www.rfi.fr/es/am%C3%A9ricas/20261105-bolivia-el-presidente-del-tribunal-supremo-huye-tras-orden-de-captura-por-narcotr%C3%A1fico",
+          "title": "Bolivia: el presidente del Tribunal Supremo huye tras orden de captura por narcotráfico",
+          "publisher": "RFI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJbFzikXtkoVgKwpmnxrrE1N673cBrmcudujLs846b4S_Cc-MXhC4Ld7_nfXQ"
+        },
+        {
+          "url": "https://larazon.bo/nacional/2026/11/04/fiscalia-gestiona-sello-rojo-contra-saucedo-y-tramita-ordenes-de-aprehension/",
+          "title": "Fiscalía gestiona sello rojo contra Saucedo y tramita órdenes de aprehensión",
+          "publisher": "La Razón Digital Bolivia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZUzFPNCunsy_5bgMqCAVxv0jXd-vXLsA7kVWRnueIfLAruOYcfio90_p1Jdo"
+        }
+      ]
+    },
+    {
+      "query": "cyberattack",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T10:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/legal/litigation/why-europes-supermarket-fridges-were-easy-targets-2026-11-04/",
+        "https://www.yahoo.com/news/videos/french-blood-banks-hit-cyberattack-091500547.html",
+        "https://www.bbc.com/news/articles/c8vgxyvz6y9ro"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_iHSnqNHgEob2UpUs0N9K3-Gvb4UslaFeCgPU3IYp5Ewtpv5N5fov6r5Yxis",
       "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.reuters.com/legal/government/india-flags-chinese-linked-ai-tools-hacking-campaign-against-financial-firms-2026-11-05/",
-          "title": "India flags Chinese-linked AI tools in hacking campaign against financial firms",
+          "url": "https://www.reuters.com/legal/litigation/why-europes-supermarket-fridges-were-easy-targets-2026-11-04/",
+          "title": "Why Europe's supermarket fridges were easy targets",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4l31udegqfXgHU6qq6BFsLoR85JS93ZO6Dp-kqhAvxs8Tg-oSfRrkxJ5dXR8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_iHSnqNHgEob2UpUs0N9K3-Gvb4UslaFeCgPU3IYp5Ewtpv5N5fov6r5Yxis"
         },
         {
-          "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
-          "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
-          "publisher": "The Hacker News",
+          "url": "https://www.yahoo.com/news/videos/french-blood-banks-hit-cyberattack-091500547.html",
+          "title": "French Blood Banks Hit by Cyberattack as European Supermarkets Targeted",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBIcE2JkkFwFir8q-csgUp1Yo_uaDXY-7M4peJfFRv59dznUjYqjnwD6rz4rY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKhwK6f4qvViHX2OsHopt2eTIvs-5ZlmZDflGU9DbTLKWSAsLHR0wt-qv3YX4"
         },
         {
-          "url": "https://indianexpress.com/article/business/cert-in-reporting-deadline-ai-security-incidents-10951358/",
-          "title": "CERT-In sets six-hour reporting deadline for AI security incidents",
-          "publisher": "The Indian Express",
+          "url": "https://www.bbc.com/news/articles/c8vgxyvz6y9ro",
+          "title": "French blood storage impacted by freezer hacks as theories swirl about culprits",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq6Het8J0bHRw9IyN-NBVt1AwKYSosDZaRJh79jTCx-EYyIASptnt4N3quw2I"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdgI49LSex-N9zZBoJMeBi6MJb9xNXjJgXNLl6T5AquMEkPIvQ-QUvOElUHM0"
         }
       ]
     },
     {
-      "query": "president trump",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T10:10:00Z",
+      "query": "walmart black friday 2026",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-05T10:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/04/us/trump-midterms-ballroom.html",
-        "https://www.reuters.com/legal/government/democrats-vow-rein-trump-he-shows-off-white-house-ballroom-2026-11-05/",
-        "https://www.wusa9.com/article/news/nation-world/donald-trump-comments-white-house-midterm-elections/507-e7b1d69a-dd06-4795-8231-8106fb6e37e2"
+        "https://www.cnn.com/cnn-underscored/deals/early-amazon-black-friday-deals-2026-11-04",
+        "https://lifehacker.com/tech/what-to-know-about-black-friday-2026-sales",
+        "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-2026-the-best-early-deals-from-kate-spade-lego-hoka-and-more-plus-everything-we-know-about-the-biggest-sale-of-the-season-151130500.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEh6q96Cou2i1UvzgMpkVtGnKKWDQpQbCk2IzHZ05_aK3ARoiT-28vGoFU-bs",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN8HTOC38AqvikmY8wy_qXcSks4rwaiEIFxEvFFCS49ftAVST6SoSXNPc2kuw",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/early-amazon-black-friday-deals-2026-11-04",
+          "title": "I found 10 Amazon deals offering entirely new low prices ahead of Black Friday",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN8HTOC38AqvikmY8wy_qXcSks4rwaiEIFxEvFFCS49ftAVST6SoSXNPc2kuw"
+        },
+        {
+          "url": "https://lifehacker.com/tech/what-to-know-about-black-friday-2026-sales",
+          "title": "Everything You Should Know About This Year's Black Friday Sales",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBpUXO1lPjiUULm77Z1LoNSbnMhFmbYbHwH03I7sc0CX5vuHOxgPBsm4NDS2k"
+        },
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-2026-the-best-early-deals-from-kate-spade-lego-hoka-and-more-plus-everything-we-know-about-the-biggest-sale-of-the-season-151130500.html",
+          "title": "Black Friday 2026: The best early deals from Kate Spade, Lego, Hoka and more, plus everything we know about the biggest sale of the season",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXwzD0qjSaqV3CGvS13c7IFQKD8br5TSLpSpZcT3E-XHTJCb5NOjA_Pvlmojs"
+        }
+      ]
+    },
+    {
+      "query": "florida state seminoles football",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T10:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50372988/bottom-10-week-9-florida-state",
+        "https://www.tomahawknation.com/florida-state-football/140064/rick-stockstill-its-going-to-be-a-street-fight-against-boston-college",
+        "https://247sports.com/college/florida-state/longformarticle/fsu-football-opponent-preview-boston-college-292157695/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlBI_chQLidLopjJ5AuRZE4FkOMOy_IbqmVHj-Wxjg8y-mMvl18Ynx7G3ClLU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50372988/bottom-10-week-9-florida-state",
+          "title": "Bottom 10 after Week 9: Florida State follies spell doom for Seminoles",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlBI_chQLidLopjJ5AuRZE4FkOMOy_IbqmVHj-Wxjg8y-mMvl18Ynx7G3ClLU"
+        },
+        {
+          "url": "https://www.tomahawknation.com/florida-state-football/140064/rick-stockstill-its-going-to-be-a-street-fight-against-boston-college",
+          "title": "Rick Stockstill: “It’s going to be a street fight” against Boston College",
+          "publisher": "Tomahawk Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTydDKBsq6MaF0ccbTRQ2d1AWuKfEnldvUMFHwo9KzXhWRnQTQomtXfxDCt9-k"
+        },
+        {
+          "url": "https://247sports.com/college/florida-state/longformarticle/fsu-football-opponent-preview-boston-college-292157695/",
+          "title": "2-4-7: A look at the Boston College Eagles",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp5iHioVwbTO3TxvpL5j-KsWHAsgOY8FlNPpLLBY_Yxm7BfivIdqq_WpAJKg0"
+        }
+      ]
+    },
+    {
+      "query": "kylo ren",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T10:30:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/adam-driver-the-hunt-for-ben-solo-kylo-ren-1236939988/",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/canceled-kylo-ren-star-wars-044200420.html",
+        "https://www.thewrap.com/creative-content/movies/adam-driver-hunt-for-ben-solo-dead-despite-fans-videos/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGdZEU6eE8inF60WIH_cm2p1TyR2jbvdxpXAdgLnyFmd7zjI6hli3xQidraTo",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/adam-driver-the-hunt-for-ben-solo-kylo-ren-1236939988/",
+          "title": "Adam Driver Says ‘The Ship Has Sailed’ on ‘The Hunt for Ben Solo’ and He’s Done Playing Kylo Ren: ‘It’s Over’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGdZEU6eE8inF60WIH_cm2p1TyR2jbvdxpXAdgLnyFmd7zjI6hli3xQidraTo"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/canceled-kylo-ren-star-wars-044200420.html",
+          "title": "Canceled Kylo Ren Star Wars Movie Gets Clear Verdict From Adam Driver",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR36hjCeeR33yjPqdzh2vPpGfeOzizDFgka4qeI-aj-mgvTBDX6WXDAvhIaENI"
+        },
+        {
+          "url": "https://www.thewrap.com/creative-content/movies/adam-driver-hunt-for-ben-solo-dead-despite-fans-videos/",
+          "title": "Adam Driver Says 'The Hunt for Ben Solo' Is Dead Despite 'Incredible' Fan Support: 'We Tried'",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk705h_UTksQkLioFBicKyTnHvY7RHy5kHHel3OiSmSjJQe44dBU_RhenH-jg"
+        }
+      ]
+    },
+    {
+      "query": "florida learjet",
+      "approx_searches": "100+",
+      "published_at": "2026-11-05T10:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/03/us/florida-plane-crash-wreckage-recovered.html",
+        "https://www.cnn.com/2026/11/05/us/learjet-crash-investigation-thursday",
+        "https://www.pbs.org/newshour/nation/parts-of-jets-tail-found-more-than-a-mile-from-plane-crash-site-in-south-florida-official-says"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpEPNXyxXzWWZZ-sD-ru6eGF_TyspN-GJPsn9ruTB-uu8b_MS9JxHJmB2mGQg",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/04/us/trump-midterms-ballroom.html",
-          "title": "Trump Emerges After the Midterms: ‘Did You Guys See the Helipad?’",
+          "url": "https://www.nytimes.com/2026/11/03/us/florida-plane-crash-wreckage-recovered.html",
+          "title": "Key Part of Jet in Deadly Florida Crash Found Far From Impact Site",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEh6q96Cou2i1UvzgMpkVtGnKKWDQpQbCk2IzHZ05_aK3ARoiT-28vGoFU-bs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpEPNXyxXzWWZZ-sD-ru6eGF_TyspN-GJPsn9ruTB-uu8b_MS9JxHJmB2mGQg"
         },
         {
-          "url": "https://www.reuters.com/legal/government/democrats-vow-rein-trump-he-shows-off-white-house-ballroom-2026-11-05/",
-          "title": "Democrats vow to rein in Trump as he shows off White House ballroom",
-          "publisher": "Reuters",
+          "url": "https://www.cnn.com/2026/11/05/us/learjet-crash-investigation-thursday",
+          "title": "What the NTSB is examining as it investigates why a Learjet plunged into the ground",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZSzs6WOljt8_hpNadqjyuCtJq7tBznb6ltydm1cbipWYY_PuIqCGsXRRjkA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_YH75sR5WiF_CpHB5yYuaiIMXVNngYDKG-RYLalBWWLIatLtpVS4_C5pt9yo"
         },
         {
-          "url": "https://www.wusa9.com/article/news/nation-world/donald-trump-comments-white-house-midterm-elections/507-e7b1d69a-dd06-4795-8231-8106fb6e37e2",
-          "title": "President Trump makes first public comments since Republicans suffer midterm losses",
-          "publisher": "WUSA9",
+          "url": "https://www.pbs.org/newshour/nation/parts-of-jets-tail-found-more-than-a-mile-from-plane-crash-site-in-south-florida-official-says",
+          "title": "Parts of jet's tail found more than a mile from plane crash site in South Florida, official says",
+          "publisher": "PBS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiS883qxUyCkwKDq6DKNkSto4_NkrnPYDDZZBrxcSD6DGMhv3SblC9fuzzATQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQNFjrY4niTYE2RI6tlwgigQ0C7aq0SmV1We6AK8Ee6ORpooue4Kbll4qhYzQ"
         }
       ]
     },
     {
-      "query": "tropics",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T10:00:00Z",
-      "related_news_urls": [
-        "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
-        "https://weather.com/2026/11/04/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
-        "https://www.foxweather.com/weather-news/bryan-norcross-hurricane-analysis-november-3-2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk",
-      "image_credit": "WPEC",
-      "news": [
-        {
-          "url": "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
-          "title": "Tracking potential tropical development",
-          "publisher": "WPEC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk"
-        },
-        {
-          "url": "https://weather.com/2026/11/04/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
-          "title": "Subtropical storm could develop in the Atlantic this week",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb09CXIQNTscShhSk1MxADYuG4myAkYSBsqCJp7uA-_bwikueX9CeSkNmx7Ao"
-        },
-        {
-          "url": "https://www.foxweather.com/weather-news/bryan-norcross-hurricane-analysis-november-3-2026",
-          "title": "Bryan Norcross: Chance for a storm developing east of the Bahamas to be named Kyle this week",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZx1RpbiYFr52GXQqRWyskSrz2HCdRM5kCVVA-6drqua9gKQd0q7RU5-AmYew"
-        }
-      ]
-    },
-    {
-      "query": "savannah bananas 2027 schedule",
+      "query": "magda linette",
       "approx_searches": "100+",
-      "published_at": "2026-11-05T09:50:00Z",
+      "published_at": "2026-11-05T10:20:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/04/savannah-bananas-2027-tickets-are-selling-fast-see-the-full-schedule/92614424007/",
-        "https://www.mlive.com/detroit/2026/11/there-will-be-a-savannah-banana-ball-triple-header-at-the-home-of-the-tigers.html",
-        "https://www.milb.com/rochester/news/third-banana-ball-game"
+        "https://przegladsportowy.onet.pl/tenis/moyuka-uchijima-magda-linette-relacja-na-zywo/4zff1gd",
+        "https://pilot.wp.pl/program-tv/program/tenis-turniej-wta-w-cennaj-mecz-1-rundy-gry-pojedynczej-alona-falej-magda-linette-194ce5f94731480723e03ecc2788af93",
+        "https://tenismagazyn.pl/chennai-open-2026-magda-linette-dolaczyla-do-weroniki-falkowskiej-odpadla-katarzyna-kawa/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJEmfKSzOWMbN-LHkaEJwkliVMaO4hUIJukTvvc3GrxS4U5vW709gBWPYa8J4",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVdhw4nP5HjHREZKrNfNh9KlNYwIIilf2NM6GD-9WxbQ7cY0JhdnqelaWi_E",
+      "image_credit": "Przegląd Sportowy",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/04/savannah-bananas-2027-tickets-are-selling-fast-see-the-full-schedule/92614424007/",
-          "title": "Savannah Bananas reveal huge 2027 tour: See dates, stadiums and tickets",
-          "publisher": "USA Today",
+          "url": "https://przegladsportowy.onet.pl/tenis/moyuka-uchijima-magda-linette-relacja-na-zywo/4zff1gd",
+          "title": "Moyuka Uchijima - Magda Linette [RELACJA NA ŻYWO]",
+          "publisher": "Przegląd Sportowy",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJEmfKSzOWMbN-LHkaEJwkliVMaO4hUIJukTvvc3GrxS4U5vW709gBWPYa8J4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVdhw4nP5HjHREZKrNfNh9KlNYwIIilf2NM6GD-9WxbQ7cY0JhdnqelaWi_E"
         },
         {
-          "url": "https://www.mlive.com/detroit/2026/11/there-will-be-a-savannah-banana-ball-triple-header-at-the-home-of-the-tigers.html",
-          "title": "There will be a Savannah Banana Ball triple-header at the home of the Tigers",
-          "publisher": "MLive.com",
+          "url": "https://pilot.wp.pl/program-tv/program/tenis-turniej-wta-w-cennaj-mecz-1-rundy-gry-pojedynczej-alona-falej-magda-linette-194ce5f94731480723e03ecc2788af93",
+          "title": "Program tv dla Tenis: Turniej WTA w Ćennaj - mecz 1. rundy gry pojedynczej: Alona Falej - Magda Linette",
+          "publisher": "Pilot WP",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0gGNCY5HScTYHI_0yfcvBSxQFOYWns1HSVx9TZSKss36wPLk1SV3MFM9rPwc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbPRSSrOV0tjbcsfR3wyXMv-SQyKC4GnnLvyBMc4dclIh905wRA5xj4R5Wqfs"
         },
         {
-          "url": "https://www.milb.com/rochester/news/third-banana-ball-game",
-          "title": "OFFICIAL: BANANA BALL ADDS THIRD DATE AT ESL BALLPARK IN 2027",
-          "publisher": "MLB.com",
+          "url": "https://tenismagazyn.pl/chennai-open-2026-magda-linette-dolaczyla-do-weroniki-falkowskiej-odpadla-katarzyna-kawa/",
+          "title": "Chennai Open 2026. Magda Linette dołączyła do Weroniki Falkowskiej, odpadła Katarzyna Kawa",
+          "publisher": "Tenis Magazyn",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReNt70RhoM87iqZ_2TWx1e3XkM9brpoXKfVGk4upyTsvjziGMrXvffwJscNEk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeWo-nTPXXAW7Srtbx33W0dGiinif9NPDUVDbOOehVxhjtlmTOq3ZjXnqNCg"
         }
       ]
     },
     {
-      "query": "prince george aston villa match",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T09:50:00Z",
-      "related_news_urls": [
-        "https://www.today.com/parents/family/prince-george-track-jacket-soccer-match-prince-william-rcna607484",
-        "https://www.instyle.com/prince-george-subtle-hair-change-prince-william-spain-outing-12236053",
-        "https://www.espn.com/soccer/story/_/id/50368442/prince-william-barcelona-vs-aston-villa-camp-nou-source"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeg_7Q9JIznhQ5siLLAaMLj4OvFpMBx9HUgbcCrpyyrH1VtoSkROGsN2IGyvs",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/parents/family/prince-george-track-jacket-soccer-match-prince-william-rcna607484",
-          "title": "Prince George, 13, Debuts a New Teen Look at a Soccer Match With Prince William",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeg_7Q9JIznhQ5siLLAaMLj4OvFpMBx9HUgbcCrpyyrH1VtoSkROGsN2IGyvs"
-        },
-        {
-          "url": "https://www.instyle.com/prince-george-subtle-hair-change-prince-william-spain-outing-12236053",
-          "title": "Prince George, 13, Looks So Grown Up With a Subtle Hair Change and an Emerging Sense of Style During Father-Son Outing",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhs2jxeIeBEnkT_phIDVjiVmM0XeytmHUmoLc9FC5Z6OQeVTdTV8M_BjLOwx4"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50368442/prince-william-barcelona-vs-aston-villa-camp-nou-source",
-          "title": "Prince William, Prince George watch on as Barcelona beat Aston Villa at Camp Nou",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTU0K_JXb3Q_cVGXR6Fy4IEzeqiFAOQsdqVOUOspvxnt9l9PxfiRCVfOlWnZtE"
-        }
-      ]
-    },
-    {
-      "query": "nxt results",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T09:50:00Z",
-      "related_news_urls": [
-        "https://www.wwe.com/shows/wwenxt/2026-11-4",
-        "https://www.foxnews.com/outkick-sports/wwe-aew-stack-deck-programs-head-to-head-wednesday-night-showcase",
-        "https://bleacherreport.com/articles/25529393-wwe-nxt-results-winners-live-grades-reaction-highlights-after-halloween-havoc-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4_U7ALfC-Hk4L2lINthxLp_2fl52L-TDL2CF4yh_VRz1O3omPzk2BgygcXBY",
-      "image_credit": "WWE",
-      "news": [
-        {
-          "url": "https://www.wwe.com/shows/wwenxt/2026-11-4",
-          "title": "WWE NXT results, Nov. 4, 2026: Kevin Owens costs CM Punk the NXT Championship against Grayson Waller",
-          "publisher": "WWE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4_U7ALfC-Hk4L2lINthxLp_2fl52L-TDL2CF4yh_VRz1O3omPzk2BgygcXBY"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/wwe-aew-stack-deck-programs-head-to-head-wednesday-night-showcase",
-          "title": "WWE, AEW stack the deck as programs go head-to-head in Wednesday night showcase",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkQT5s9IrL19wT-QGO42GarA6yripUtFUqT17Pc_ikN-EPU3uCbVlp2bLBTsw"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529393-wwe-nxt-results-winners-live-grades-reaction-highlights-after-halloween-havoc-2026",
-          "title": "WWE NXT Results, Winners, Live Grades, Reaction, Highlights After Halloween Havoc 2026",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6Hrj9AgMRXLNhYY9ovSrtaF9ttY8u5KPSByK7QVQY2RsohSjklQxHCDKmBL8"
-        }
-      ]
-    },
-    {
-      "query": "ukraine news",
+      "query": "sc lottery",
       "approx_searches": "100+",
-      "published_at": "2026-11-05T09:40:00Z",
+      "published_at": "2026-11-05T10:20:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/world/zelenskiy-hopes-us-election-outcome-will-generate-more-help-ukraine-2026-11-04/",
-        "https://www.aljazeera.com/news/2026/11/5/zelenskyy-hopes-democratic-congress-will-bring-more-us-help-for-ukraine",
-        "https://tvpworld.com/96306998/ian-brzezinski-us-midterm-results-negative-for-putin-as-congress-gains-power-to-challenge-trump"
+        "https://wpde.com/station/south-carolina-education-lottery/south-carolina-education-lottery-latest-results-11032026",
+        "https://www.greenvilleonline.com/story/news/local/2026/11/03/south-carolina-lottery-results-tuesday-november-3-2026/92603421007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeaFPyrvAue24Q60W8oywI6BfVS52gOj9y8wbCX7fspN_S_BLawftkWf_AdJk",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3A-XlCywOPnbbMA2m0-O2zs9v_4JDMIwN2SlSODSg-DR4lyrQRjKGnBzlzJQ",
+      "image_credit": "WPDE",
       "news": [
         {
-          "url": "https://www.reuters.com/world/zelenskiy-hopes-us-election-outcome-will-generate-more-help-ukraine-2026-11-04/",
-          "title": "Zelenskiy hopes US election outcome will generate more help for Ukraine",
-          "publisher": "Reuters",
+          "url": "https://wpde.com/station/south-carolina-education-lottery/south-carolina-education-lottery-latest-results-11032026",
+          "title": "South Carolina Education Lottery Latest Results",
+          "publisher": "WPDE",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeaFPyrvAue24Q60W8oywI6BfVS52gOj9y8wbCX7fspN_S_BLawftkWf_AdJk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3A-XlCywOPnbbMA2m0-O2zs9v_4JDMIwN2SlSODSg-DR4lyrQRjKGnBzlzJQ"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/11/5/zelenskyy-hopes-democratic-congress-will-bring-more-us-help-for-ukraine",
-          "title": "Zelenskyy hopes Democratic Congress will bring more US help for Ukraine",
-          "publisher": "Al Jazeera",
+          "url": "https://www.greenvilleonline.com/story/news/local/2026/11/03/south-carolina-lottery-results-tuesday-november-3-2026/92603421007/",
+          "title": "South Carolina Lottery Mega Millions, Pick 3 results for Nov. 3, 2026",
+          "publisher": "Greenville Online",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN_0teX2BKqRVScR3SF0uXL8FGWkBMfyhf2v9bUhg9Wbprr8-lJj31pmSEqC4"
-        },
-        {
-          "url": "https://tvpworld.com/96306998/ian-brzezinski-us-midterm-results-negative-for-putin-as-congress-gains-power-to-challenge-trump",
-          "title": "Putin’s ability to ‘manipulate’ Trump weakened by US midterm results: expert",
-          "publisher": "TVP World",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMFKRJuHCqaVBiowgH7_hoX8-ojpA6gQAc6QX9Peyh2nWCQSQz-q33OOpgmFU"
-        }
-      ]
-    },
-    {
-      "query": "rice krispies",
-      "approx_searches": "100+",
-      "published_at": "2026-11-05T09:40:00Z",
-      "related_news_urls": [
-        "https://www.foxbusiness.com/lifestyle/breakfast-food-giant-makes-major-change-iconic-cereals-recipe",
-        "https://www.bbc.com/news/videos/c6pwgl9v9q8ko",
-        "https://www.ctvnews.ca/business/article/rice-krispies-will-continue-to-be-made-with-real-rice-in-canada-kelloggs-says/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7fK0Ic2LqxYC9vitCB2WIcfTygQaO54otMxd7byYS_05kR8O1rwT8HYaE3As",
-      "image_credit": "Fox Business",
-      "news": [
-        {
-          "url": "https://www.foxbusiness.com/lifestyle/breakfast-food-giant-makes-major-change-iconic-cereals-recipe",
-          "title": "Breakfast food giant makes major change to iconic cereal's recipe",
-          "publisher": "Fox Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7fK0Ic2LqxYC9vitCB2WIcfTygQaO54otMxd7byYS_05kR8O1rwT8HYaE3As"
-        },
-        {
-          "url": "https://www.bbc.com/news/videos/c6pwgl9v9q8ko",
-          "title": "Why Rice Krispies are no longer made with rice grains",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlJGJ_h4DpDUqAwrWhCDiyC85E6cHMxlNJ6bqvHZR5UtxbDlaHFsWjdSaMKCo"
-        },
-        {
-          "url": "https://www.ctvnews.ca/business/article/rice-krispies-will-continue-to-be-made-with-real-rice-in-canada-kelloggs-says/",
-          "title": "Rice Krispies will continue to be made with real rice in Canada, Kellogg’s says",
-          "publisher": "CTV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrod_2LZt7Sq15V7zb1EC3D1k6hBdyRdC1bjH2oZZ6GARbS1ASaZv9b6U8rU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZ8uuXagpbAM9PVtqI6Bsy9JLqqhvk_DO1qS3QIMikZZqPNRK-moCGDrOOXVw"
         }
       ]
     }
