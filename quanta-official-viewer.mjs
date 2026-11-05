@@ -34,7 +34,10 @@ export function mountOfficialViewer(root,id){
    frame.src=site.url;
    frame.loading='lazy';
    frame.referrerPolicy='no-referrer';
-   frame.setAttribute('allow','clipboard-write; microphone');
+   // Keep the cross-origin preview inside its own origin, without popups,
+   // top-level navigation, downloads, mic or clipboard delegation.
+   // The provider may prohibit framing; use the official external link then.
+   frame.setAttribute('sandbox','allow-scripts allow-forms allow-same-origin');
    frameBox.append(frame);
    frameBox.hidden=false;
    previewButton.textContent='Close website viewer';
