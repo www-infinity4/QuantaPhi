@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T14:01:52.922799Z",
+  "checked_at": "2026-11-05T14:31:46.021556Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "chris van hollen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T14:10:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-04/progressive-senator-demands-bold-agenda-before-backing-schumer",
+        "https://www.commondreams.org/news/chris-van-hollen-chuck-schumer",
+        "https://aa.com.tr/en/americas/democrat-van-hollen-demands-bold-agenda-before-backing-schumer-for-senate-leader-report/4112128"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTOkU-a427btWTNxP_TxW-EtebytOeXMgz12V47w0kCI0ov70im-U2IJuAYTw",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-04/progressive-senator-demands-bold-agenda-before-backing-schumer",
+          "title": "Progressive Senator Demands ‘Bold Agenda’ Before Backing Schumer",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTOkU-a427btWTNxP_TxW-EtebytOeXMgz12V47w0kCI0ov70im-U2IJuAYTw"
+        },
+        {
+          "url": "https://www.commondreams.org/news/chris-van-hollen-chuck-schumer",
+          "title": "Van Hollen Says No Rubber Stamp for Schumer as Majority Leader Without Support for 'Bold Agenda'",
+          "publisher": "Common Dreams",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIzBnS8yuF0lEaqJvbkKRzTnnC5lxIAUAnJ2CEoqaASW_0m6A0Cv9oPiJrjXA"
+        },
+        {
+          "url": "https://aa.com.tr/en/americas/democrat-van-hollen-demands-bold-agenda-before-backing-schumer-for-senate-leader-report/4112128",
+          "title": "Democrat Van Hollen demands ‘bold agenda’ before backing Schumer for Senate leader: Report",
+          "publisher": "Anadolu Ajansı",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLFQjQEPR2JBuN0oFN2_UjY2-L3pyP-AyaAkeRMMp8iitqPOn3XsCQFDV1dXQ"
+        }
+      ]
+    },
+    {
+      "query": "russell brand",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T14:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/live/cmde8w42jpeyt",
+        "https://news.sky.com/story/russell-brand-rape-trial-live-closing-arguments-begin-13592674",
+        "https://www.reuters.com/business/media-telecom/jury-begins-deliberations-russell-brands-uk-sexual-offences-trial-2026-11-03/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc0dR0wznVZb81sL5nUbv-qoic9dVdMrUfbPLv2Wwp-6ZGW9lsnyfYzUhFBes",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/live/cmde8w42jpeyt",
+          "title": "Russell Brand trial: Jury expected to deliver verdict",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc0dR0wznVZb81sL5nUbv-qoic9dVdMrUfbPLv2Wwp-6ZGW9lsnyfYzUhFBes"
+        },
+        {
+          "url": "https://news.sky.com/story/russell-brand-rape-trial-live-closing-arguments-begin-13592674",
+          "title": "Russell Brand rape trial live: Comedian found guilty of rape and sexual assault",
+          "publisher": "Sky News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2MT_rNpLnQEkHeYThgx5QHScun2BbmpR6YWWd_sVYgoZqKfDvhkc0Sysbhh8"
+        },
+        {
+          "url": "https://www.reuters.com/business/media-telecom/jury-begins-deliberations-russell-brands-uk-sexual-offences-trial-2026-11-03/",
+          "title": "Jury begins deliberations in Russell Brand's UK sexual offences trial",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt_QsTRw2X9-DnzSTUPmepPI2fJiTME6Hd-HSgkirWf3FzBxFxB0Z4PNBjTGY"
+        }
+      ]
+    },
+    {
+      "query": "rinky hijikata",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-05T14:10:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/djokovic-hijikata-paris-2026-wednesday",
+        "https://sports.yahoo.com/articles/why-blessing-disguise-novak-djokovic-140000082.html",
+        "https://www.skysports.com/tennis/news/13607999/atp-paris-masters-novak-djokovic-eliminated-from-atp-finals-race-as-world-no-1-alexander-zverev-also-suffers-shock-exit"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk34q3F30lYzE9zyhYHtMOoTLf2Vn5Bp_gsbDF4riVmm4w19Qon4Q7V6MfMY4",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/djokovic-hijikata-paris-2026-wednesday",
+          "title": "Hijikata upsets Djokovic in Paris, leaves Live Race open",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk34q3F30lYzE9zyhYHtMOoTLf2Vn5Bp_gsbDF4riVmm4w19Qon4Q7V6MfMY4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/why-blessing-disguise-novak-djokovic-140000082.html",
+          "title": "Why it is a blessing in disguise that Novak Djokovic has failed to qualify for the ATP Finals this year",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrkefIFUKmA6kaGDcxXrRKk9CAfROCnuikn5fUUhxSRfJQetDkj5xevS92Cz8"
+        },
+        {
+          "url": "https://www.skysports.com/tennis/news/13607999/atp-paris-masters-novak-djokovic-eliminated-from-atp-finals-race-as-world-no-1-alexander-zverev-also-suffers-shock-exit",
+          "title": "ATP Paris Masters: Novak Djokovic eliminated from ATP Finals race as world No 1 Alexander Zverev also suffers shock exit",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2WKdiabmBZOBBWQXpvK6Fmx2hxnrfFKi3qXY2XDa2QNzaxU7Dh2Kw_gUwUCg"
+        }
+      ]
+    },
+    {
+      "query": "louisiana lottery",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T13:50:00Z",
+      "related_news_urls": [
+        "https://kpel965.com/ixp/33/p/louisiana-lottery-wins-october-november/",
+        "https://wgno.com/louisiana-lottery/150000-in-lottery-tickets-drawn-in-jefferson-st-tammany-parishes/",
+        "https://973thedawg.com/louisiana-lottery-results-saturday-october/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjGddfSM29hOtadCOPGtZW-7Y-d7xtrFCHOa1I3jTzMlEBHukAMFfg44TqXlw",
+      "image_credit": "96.5 KPEL",
+      "news": [
+        {
+          "url": "https://kpel965.com/ixp/33/p/louisiana-lottery-wins-october-november/",
+          "title": "Powerball Winner - Louisiana Ticket Wins $50,000 in Monday's Drawing",
+          "publisher": "96.5 KPEL",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjGddfSM29hOtadCOPGtZW-7Y-d7xtrFCHOa1I3jTzMlEBHukAMFfg44TqXlw"
+        },
+        {
+          "url": "https://wgno.com/louisiana-lottery/150000-in-lottery-tickets-drawn-in-jefferson-st-tammany-parishes/",
+          "title": "$150,000 in lottery tickets drawn in Jefferson, St. Tammany parishes",
+          "publisher": "WGNO",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsvmFqOPUMgD37_N4LF1MEtchX94JxOH8dlGwGCNk5PAHTR7QlxLU6dopfFik"
+        },
+        {
+          "url": "https://973thedawg.com/louisiana-lottery-results-saturday-october/",
+          "title": "DId You Play at Circle K? - Lottery Confirms Two Big Wins Saturday",
+          "publisher": "97.3 The Dawg",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1jzlc8FxNQJE0s4-RCQRRJZqnR67RWUpQl1Uc64OsRwWijA3o4eeN60zEYRE"
+        }
+      ]
+    },
+    {
+      "query": "tarek mansour",
+      "approx_searches": "200+",
+      "published_at": "2026-11-05T13:40:00Z",
+      "related_news_urls": [
+        "https://www.cjr.org/the-interview/kalshis-tarek-mansour-wants-to-depolarize-the-conversation-midterms-betting-prediction-markets-insider-donald-trump-jr-board.php",
+        "https://www.fox13now.com/news/politics/other-predictive-markets-pull-out-of-utah-after-kalshi-criminal-charges",
+        "https://www.coindesk.com/policy/2026/11/05/the-pile-of-lawsuits-against-kalshi-just-grew-by-one"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyygBD6gTjhl5GuXLJEsCr-8yzXzts_SGtebDJ6NF8BRSAyIhiPbLOLP5OiU",
+      "image_credit": "Columbia Journalism Review",
+      "news": [
+        {
+          "url": "https://www.cjr.org/the-interview/kalshis-tarek-mansour-wants-to-depolarize-the-conversation-midterms-betting-prediction-markets-insider-donald-trump-jr-board.php",
+          "title": "Kalshi’s Tarek Mansour Wants to ‘Depolarize the Conversation’",
+          "publisher": "Columbia Journalism Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyygBD6gTjhl5GuXLJEsCr-8yzXzts_SGtebDJ6NF8BRSAyIhiPbLOLP5OiU"
+        },
+        {
+          "url": "https://www.fox13now.com/news/politics/other-predictive-markets-pull-out-of-utah-after-kalshi-criminal-charges",
+          "title": "Other predictive markets pull out of Utah after Kalshi criminal charges",
+          "publisher": "FOX 13 News Utah",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAh7MTIgwZqlJwr1HPD_ke5ZG8oBF6pozO76rh-6-W2JauCNN29dSN4LBMDIA"
+        },
+        {
+          "url": "https://www.coindesk.com/policy/2026/11/05/the-pile-of-lawsuits-against-kalshi-just-grew-by-one",
+          "title": "Arkansas Attorney General sues Kalshi for illegal gambling",
+          "publisher": "CoinDesk",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNIVyGbV_7Jz6USjErIvj-hrC0pMzO2Wv7R74NnHBzvslniTgdRrf4mFMxttk"
+        }
+      ]
+    },
     {
       "query": "amazon uber eats",
       "approx_searches": "200+",
@@ -43,16 +218,23 @@
     },
     {
       "query": "sunset park fire",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-05T13:10:00Z",
       "related_news_urls": [
+        "https://gothamist.com/news/brooklyn-fire-kills-6-people-injures-7-others-in-sunset-park",
         "https://abc7ny.com/post/6-dead-3-alarm-fire-tears-sunset-park-home-brooklyn/20017265/",
-        "https://www.bbc.com/news/articles/c39wz44411w0o",
-        "https://www.nbcnewyork.com/brooklyn/deadly-sunset-park-fire-thursday/6568034/"
+        "https://www.bbc.com/news/articles/c39wz44411w0o"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPxJHTNZ6C3q18o65zuSAq4IuNVctKyNxqX8QlpseWVRlSI7qO_TG-ZN1ow5A",
-      "image_credit": "ABC7 New York",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-A935IQ9W4IdVMh89QpIkU5dIrK1eAm_-YWPeE8A-cNL1wuNoFa_DnbfHImk",
+      "image_credit": "Gothamist",
       "news": [
+        {
+          "url": "https://gothamist.com/news/brooklyn-fire-kills-6-people-injures-7-others-in-sunset-park",
+          "title": "Brooklyn fire kills 6 people, injures 7 others in Sunset Park",
+          "publisher": "Gothamist",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-A935IQ9W4IdVMh89QpIkU5dIrK1eAm_-YWPeE8A-cNL1wuNoFa_DnbfHImk"
+        },
         {
           "url": "https://abc7ny.com/post/6-dead-3-alarm-fire-tears-sunset-park-home-brooklyn/20017265/",
           "title": "Sunset Park, Brooklyn fire leaves 6 dead after flames tear through home",
@@ -66,13 +248,41 @@
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnLGt7IRRr1icJcth4rn1Rt0T5_XzR4Uj0_HDQXYeSfk3TnM_Itn_wDbZVax4"
+        }
+      ]
+    },
+    {
+      "query": "sorana cirstea",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T13:10:00Z",
+      "related_news_urls": [
+        "https://www.mediafax.ro/sport/sorana-cirstea-fata-in-fata-cu-fiica-unui-fost-tenismen-roman-cine-este-adversara-sa-din-optimile-de-la-hong-kong-23837575",
+        "https://www.sport.ro/tenis/victimele-soranei-cirstea-numele-grele-doborate-de-romanca-in-2026.html",
+        "https://agerpres.ro/sport-extern/2026/11/03/tenis-sorana-cirstea-s-a-calificat-in-optimi-la-hong-kong-wta--1609523"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLK6y4_LjSPOkJGTQG_BZlNFv4UTvMlD1b-sBsaG9Wfb4sOmLduronHigYOiQ",
+      "image_credit": "Mediafax",
+      "news": [
+        {
+          "url": "https://www.mediafax.ro/sport/sorana-cirstea-fata-in-fata-cu-fiica-unui-fost-tenismen-roman-cine-este-adversara-sa-din-optimile-de-la-hong-kong-23837575",
+          "title": "Sorana Cîrstea, față în față cu fiica unui fost tenismen român. Cine este adversara sa…",
+          "publisher": "Mediafax",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLK6y4_LjSPOkJGTQG_BZlNFv4UTvMlD1b-sBsaG9Wfb4sOmLduronHigYOiQ"
         },
         {
-          "url": "https://www.nbcnewyork.com/brooklyn/deadly-sunset-park-fire-thursday/6568034/",
-          "title": "At least six people dead, more missing in Sunset Park overnight fire: FDNY",
-          "publisher": "NBC New York",
+          "url": "https://www.sport.ro/tenis/victimele-soranei-cirstea-numele-grele-doborate-de-romanca-in-2026.html",
+          "title": "„Victimele” Soranei Cîrstea: numele grele, doborâte de româncă, în 2026",
+          "publisher": "Sport.ro",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ251Sdm3SmXg4h_NJaZsudXfsTDZmHAareTF9s0CKSjD4i1TeoXxLR10z5ZM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVmnKbsa2lm0nPPQ8ZgSLfOH6QlSna3Nhksuxcp5JHnQlL0CfbE7f_tyamEYA"
+        },
+        {
+          "url": "https://agerpres.ro/sport-extern/2026/11/03/tenis-sorana-cirstea-s-a-calificat-in-optimi-la-hong-kong-wta--1609523",
+          "title": "Tenis: Sorana Cîrstea s-a calificat în optimi la Hong Kong (WTA)",
+          "publisher": "Agerpres",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ28aYsPEnE4H2_4iEExCjJUJxz-iPP1eCMzHsC9wNnPKTYzg8Z9_DmZRnci4s"
         }
       ]
     },
@@ -112,52 +322,24 @@
       ]
     },
     {
-      "query": "sorana cirstea",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T13:10:00Z",
-      "related_news_urls": [
-        "https://www.mediafax.ro/sport/sorana-cirstea-fata-in-fata-cu-fiica-unui-fost-tenismen-roman-cine-este-adversara-sa-din-optimile-de-la-hong-kong-23837575",
-        "https://www.sport.ro/tenis/victimele-soranei-cirstea-numele-grele-doborate-de-romanca-in-2026.html",
-        "https://agerpres.ro/sport-extern/2026/11/03/tenis-sorana-cirstea-s-a-calificat-in-optimi-la-hong-kong-wta--1609523"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLK6y4_LjSPOkJGTQG_BZlNFv4UTvMlD1b-sBsaG9Wfb4sOmLduronHigYOiQ",
-      "image_credit": "Mediafax",
-      "news": [
-        {
-          "url": "https://www.mediafax.ro/sport/sorana-cirstea-fata-in-fata-cu-fiica-unui-fost-tenismen-roman-cine-este-adversara-sa-din-optimile-de-la-hong-kong-23837575",
-          "title": "Sorana Cîrstea, față în față cu fiica unui fost tenismen român. Cine este adversara sa…",
-          "publisher": "Mediafax",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLK6y4_LjSPOkJGTQG_BZlNFv4UTvMlD1b-sBsaG9Wfb4sOmLduronHigYOiQ"
-        },
-        {
-          "url": "https://www.sport.ro/tenis/victimele-soranei-cirstea-numele-grele-doborate-de-romanca-in-2026.html",
-          "title": "„Victimele” Soranei Cîrstea: numele grele, doborâte de româncă, în 2026",
-          "publisher": "Sport.ro",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVmnKbsa2lm0nPPQ8ZgSLfOH6QlSna3Nhksuxcp5JHnQlL0CfbE7f_tyamEYA"
-        },
-        {
-          "url": "https://agerpres.ro/sport-extern/2026/11/03/tenis-sorana-cirstea-s-a-calificat-in-optimi-la-hong-kong-wta--1609523",
-          "title": "Tenis: Sorana Cîrstea s-a calificat în optimi la Hong Kong (WTA)",
-          "publisher": "Agerpres",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ28aYsPEnE4H2_4iEExCjJUJxz-iPP1eCMzHsC9wNnPKTYzg8Z9_DmZRnci4s"
-        }
-      ]
-    },
-    {
       "query": "scarlett johansson",
       "approx_searches": "2000+",
       "published_at": "2026-11-05T13:00:00Z",
       "related_news_urls": [
+        "https://www.hollywoodreporter.com/movies/movie-news/scarlett-johansson-on-the-batman-part-ii-role-1236748021/",
         "https://gizmodo.com/scarlett-johansson-offers-a-surprising-tease-about-her-batman-part-ii-role-2000835295",
-        "https://www.ign.com/articles/scarlett-johansson-the-batman-2-existential-angst",
-        "https://www.justjared.com/2026/11/04/scarlett-johansson-shares-first-comments-on-the-batman-part-ii-casting-admits-mystery-role-was-very-hard-to-figure-out/"
+        "https://www.ign.com/articles/scarlett-johansson-the-batman-2-existential-angst"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNNIiNKQVGUAfX7GiwjBbHlOe0DA384mbljSMKp58t069zPNO9wOu2xZq81Qk",
-      "image_credit": "Gizmodo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPI0pr78j9sGaEW_kDIpC9CNEKRvpBirC7ZWk3e5uNe7QPGapLL13KJSkWUzQ",
+      "image_credit": "The Hollywood Reporter",
       "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/scarlett-johansson-on-the-batman-part-ii-role-1236748021/",
+          "title": "Scarlett Johansson Breaks Silence on ‘The Batman Part II’ Role: “It Was Very Hard to Figure Out”",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPI0pr78j9sGaEW_kDIpC9CNEKRvpBirC7ZWk3e5uNe7QPGapLL13KJSkWUzQ"
+        },
         {
           "url": "https://gizmodo.com/scarlett-johansson-offers-a-surprising-tease-about-her-batman-part-ii-role-2000835295",
           "title": "Scarlett Johansson Offers a Surprising Tease About Her ‘Batman Part II’ Role",
@@ -171,188 +353,6 @@
           "publisher": "IGN",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmsl_kghJknHd3dkqUR3qxEBCXfofMzECoaEVmK8JihWZvbuXOfJ_aRi6VGas"
-        },
-        {
-          "url": "https://www.justjared.com/2026/11/04/scarlett-johansson-shares-first-comments-on-the-batman-part-ii-casting-admits-mystery-role-was-very-hard-to-figure-out/",
-          "title": "Scarlett Johansson Shares First Comments on 'The Batman Part II' Casting, Admits Mystery Role Was 'Very Hard to Figure Out'",
-          "publisher": "Just Jared",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8tKk1GiJlVHVZLEpUfbzJ2p-q4ZAg-BBbKhhLxGY8GJr3td_7HtL_70ls3Pw"
-        }
-      ]
-    },
-    {
-      "query": "aaron boone",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T13:00:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/04/sports/red-sox-shelley-duncan/",
-        "https://nypost.com/2026/11/04/sports/yankees-triple-a-manager-shelley-duncan-joining-red-sox/",
-        "https://sports.yahoo.com/articles/red-sox-bold-move-steal-102211989.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZZpWiLslXfBLTKVW4NwKGGwB_2yEhGzKV2hcbP-Lwtz8DiI9CqlN0hTMh-c8",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/04/sports/red-sox-shelley-duncan/",
-          "title": "Red Sox hiring the Yankees’ Shelley Duncan for Chad Tracy’s coaching staff",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZZpWiLslXfBLTKVW4NwKGGwB_2yEhGzKV2hcbP-Lwtz8DiI9CqlN0hTMh-c8"
-        },
-        {
-          "url": "https://nypost.com/2026/11/04/sports/yankees-triple-a-manager-shelley-duncan-joining-red-sox/",
-          "title": "Yankees’ Triple-A manager Shelley Duncan poached by Red Sox",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuKlZSbrD9RghMT-ygi8CXy0cbLLMyegAYCBdyttRkgbIbvU4ro0cTNPHbkPo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/red-sox-bold-move-steal-102211989.html",
-          "title": "Red Sox Make Bold Move, Steal Key Coach From The Yankees",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYEAOVbuxRTcYLWs6E79EyuQ-QCE5Jsjzk2Y1o_CgA1hz-IKnVuxxuLO3GBt4"
-        }
-      ]
-    },
-    {
-      "query": "price of gold today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T13:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/05/gold-hits-two-week-high-as-dollar-yields-ease-after-us-midterms.html",
-        "https://www.barrons.com/articles/gold-price-dollar-bond-yields-midterm-elections-25a81dad",
-        "https://www.wsj.com/finance/commodities-futures/gold-climbs-on-softer-dollar-falling-treasury-yields-after-u-s-midterms-b16998e4"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiEcVbi7zFGXK8TvH9RutTg58OrCNLtNurGgafDgEpVFWkEBUL1xRc1Zkm7Js",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/05/gold-hits-two-week-high-as-dollar-yields-ease-after-us-midterms.html",
-          "title": "Gold hits 2-week high as dollar, oil, yields fall after US midterms",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiEcVbi7zFGXK8TvH9RutTg58OrCNLtNurGgafDgEpVFWkEBUL1xRc1Zkm7Js"
-        },
-        {
-          "url": "https://www.barrons.com/articles/gold-price-dollar-bond-yields-midterm-elections-25a81dad",
-          "title": "Gold Prices Are Above $4,000 After Democrats Win Big in Midterm Elections",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52ckBPKPjKuT_DlYwoJWtA2eYRCtcidMteXOB2GR-KTWpMsT_6KWf1f2PKMc"
-        },
-        {
-          "url": "https://www.wsj.com/finance/commodities-futures/gold-climbs-on-softer-dollar-falling-treasury-yields-after-u-s-midterms-b16998e4",
-          "title": "Gold Climbs on Softer Dollar, Falling Treasury Yields After U.S. Midterms",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZi7Y8-NtdLL0QYLBoT9TmeLpKOVshON830VUC4NHelu4tn-SWdRBdc_cox2g"
-        }
-      ]
-    },
-    {
-      "query": "carson daly",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T12:50:00Z",
-      "related_news_urls": [
-        "https://people.com/carson-daly-named-new-co-anchor-of-saturday-today-will-join-laura-jarrett-12237339",
-        "https://pagesix.com/2026/11/05/entertainment/carson-daly-lands-major-new-role-at-today-show/",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PFbajNkR5gH3FdA9aVLqLGkVtbDElTPoSqTxXJLNVRWKFS2_bl1FBEj2Ffk",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/carson-daly-named-new-co-anchor-of-saturday-today-will-join-laura-jarrett-12237339",
-          "title": "Carson Daly Named New Co-Anchor of ‘Saturday Today,’ Will Join Laura Jarrett",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PFbajNkR5gH3FdA9aVLqLGkVtbDElTPoSqTxXJLNVRWKFS2_bl1FBEj2Ffk"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/05/entertainment/carson-daly-lands-major-new-role-at-today-show/",
-          "title": "‘Today’ host Carson Daly lands a major new role: ‘I’m thrilled’",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6vqwQAn8xyLy8iPKbKanAkL1JJO6PNw1UsTX5gu4KveJZ7tm7qH2TqcJrK10"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/",
-          "title": "Carson Daly joins 'Saturday Today' beside Laura Jarrett, will keep 'Today' job",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ZWb1to5wMUtpcwsMsQKF9QctPBfE5UvsAHP3eKjVIODbENX8XUjW4wIT3YA"
-        }
-      ]
-    },
-    {
-      "query": "voice of logan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T12:40:00Z",
-      "related_news_urls": [
-        "https://www.wcvb.com/article/voice-of-logan-winner-announcement-boston/74343292",
-        "https://www.cbsnews.com/boston/news/voice-of-logan-airport-winner-chris-donisi-burlington-ma/",
-        "https://whdh.com/news/arlington-pipefitter-voted-winner-of-the-voice-of-logan-contest/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdXB_Z3xScphLYAF-0IDD80eagBRW8zU-12P0ADAip3G1nIYVNTZYup9g0Ew",
-      "image_credit": "WCVB",
-      "news": [
-        {
-          "url": "https://www.wcvb.com/article/voice-of-logan-winner-announcement-boston/74343292",
-          "title": "'Voice of Logan' winner to be announced today",
-          "publisher": "WCVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdXB_Z3xScphLYAF-0IDD80eagBRW8zU-12P0ADAip3G1nIYVNTZYup9g0Ew"
-        },
-        {
-          "url": "https://www.cbsnews.com/boston/news/voice-of-logan-airport-winner-chris-donisi-burlington-ma/",
-          "title": "Voice of Logan Airport winner is Chris Donisi, a pipefitter from Burlington, Massachusetts",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbsNTtTJaRXiun4_xFSquUel9B3FD9TLsJm-qBeyRTh1GjZBoS8mJPvwrcZNo"
-        },
-        {
-          "url": "https://whdh.com/news/arlington-pipefitter-voted-winner-of-the-voice-of-logan-contest/",
-          "title": "Arlington pipefitter voted winner of ‘The Voice of Logan’ contest - Boston News, Weather, Sports",
-          "publisher": "WHDH",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJ2TLY-RkqCDZDdGavKSebyNjElxzuyekmsGU4hkfqR8Qx7gbvrpCgmkiPSQ"
-        }
-      ]
-    },
-    {
-      "query": "hurricane season",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T12:30:00Z",
-      "related_news_urls": [
-        "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
-        "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
-        "https://www.gulfcoastnewsnow.com/article/weather-forecast-southwest-florida-atlantic-tropical-storm-hurricane-season/74330734"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLi_lQgE9mMuWxNZ4Pf9uMJZbLEq2OD-E2NE8UwTFWY-ZitbZKFAiL8XTmxLk",
-      "image_credit": "The Weather Channel",
-      "news": [
-        {
-          "url": "https://weather.com/2026/11/05/storms/hurricane/atlantic-tropics-subtropical-storm-kyle-nhc-november",
-          "title": "Subtropical storm could develop in the Atlantic this week",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLi_lQgE9mMuWxNZ4Pf9uMJZbLEq2OD-E2NE8UwTFWY-ZitbZKFAiL8XTmxLk"
-        },
-        {
-          "url": "https://cbs12.com/news/local/tracking-potential-tropical-development-11-04-2026",
-          "title": "Tracking potential tropical development",
-          "publisher": "WPEC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS85EZtx7j24ymEF24t4rME4SFjV5SHMOdMJ7IfDhJD656wQvtAYuoou_tNIVk"
-        },
-        {
-          "url": "https://www.gulfcoastnewsnow.com/article/weather-forecast-southwest-florida-atlantic-tropical-storm-hurricane-season/74330734",
-          "title": "NHC says 50% development odds for feature over open Atlantic Ocean",
-          "publisher": "Gulf Coast News and Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj7iF3opNIM97PulfHOOT0lRpnE7yHoIz-ZiDqQKMUgylXqymzRAjNnNefzyk"
         }
       ]
     }
