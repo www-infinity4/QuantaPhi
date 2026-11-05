@@ -29,7 +29,7 @@ test('birthday hero is removed for the later evergreen experience, with permanen
   assert.match(presentation,/familyPresentationAt\(new Date\(\)\)/);
   assert.match(presentation,/\.remove\(\)/);
   assert.match(presentation,/document\.title\s*=/);
-  assert.match(html,/<title>Gary & Family/);
+  assert.match(html,/<title>Gary &amp; Family/);
   assert.match(html,/\/gary\/octaves\.css/);
   assert.match(html,/type="module" src="\/gary\/presentation-init\.mjs"/);
   assert.match(html,/family-lounge/);
