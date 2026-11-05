@@ -236,3 +236,11 @@ html[data-family-mode="octaves"] .family-spotlight article{
  .family-spotlight-poster{transition:none}
  .family-spotlight-film:hover .family-spotlight-poster{transform:none}
 }
+
+.family-weather-icon{
+ display:block;width:60px;height:60px;max-width:100%;object-fit:contain;
+ margin:7px auto 5px;border-radius:9px;
+}
+html[data-family-mode="octaves"] .family-weather-icon{
+ background:#f7f2fb;border:1px solid #eee5f4;
+}
