@@ -156,8 +156,11 @@
   createBtn("Submit for public Media Star review","ms-creator-button ms-primary",async()=>{
     const item=data();
     if(!permissionCheck.checked){feedback.textContent="Confirm that you have rights to promote the media and cover image.";return;}
-    const endpoint=String(window.PhiMediaStarGalleryEndpoint||"").replace(/\\/$/,"");
-    if(!/^https:\\/\\/[A-Za-z0-9.-]+$/.test(endpoint)){
+    const configuredEndpoint=String(window.PhiMediaStarGalleryEndpoint||"");
+    const endpoint=configuredEndpoint.endsWith("/")?configuredEndpoint.slice(0,-1):configuredEndpoint;
+    let validEndpoint=false;
+    try{const u=new URL(endpoint);validEndpoint=u.protocol==="https:"&&!u.username&&!u.password&&u.pathname==="/"&&!u.search&&!u.hash;}catch{}
+    if(!validEndpoint){
       feedback.textContent="Media Star public submissions are not connected yet. Your portable creator card still works.";
       return;
     }
