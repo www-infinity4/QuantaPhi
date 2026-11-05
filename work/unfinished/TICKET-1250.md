@@ -148,4 +148,3 @@ This ticket is a **durable source checkpoint**, not an assertion of autonomous b
 - Source-only `review_pending`; no direct termux-device proof, signed end-to-end Bubbles Bits settlement, Gitcoin D1 award, GPT-provider token issuance or third-party merchant acceptance. All wallet credits remain zero/unverified.
 - No coordinator lease claimed; `lease_id`, `fence`, `task_session_id` remain null. Other agent work not overridden.
 - Next executable action: inspect exact-head PR #1679 GitHub CI for the new carousel tests; repair any failure, then obtain independent security review and Android acceptance before release.
-
