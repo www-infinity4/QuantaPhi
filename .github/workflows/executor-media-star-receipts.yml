@@ -7,6 +7,7 @@ on:
       - 'test/media-star-gallery*.test.mjs'
       - 'media-star-gallery*.mjs'
       - 'media-star-gallery.css'
+      - 'media-star-owner-metrics.js'
       - 'media-star-creator.js'
       - 'bubbles-star-coin-audit.js'
       - 'test/bubbles-star-coin-audit.test.mjs'
@@ -40,6 +41,7 @@ jobs:
           node --check media-star-gallery-core.mjs
           node --check media-star-gallery.mjs
           node --check media-star-creator.js
+          node --check media-star-owner-metrics.js
           node --check bubbles-star-coin-audit.js
       - name: Check Cloudflare D1 SQL migrations
         run: |
