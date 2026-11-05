@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-05T00:43:25.700356Z",
+  "checked_at": "2026-11-05T01:01:41.681165Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "rob lowe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T00:40:00Z",
+      "related_news_urls": [
+        "https://ew.com/rob-lowe-the-outsider-documentary-first-look-trailer-exclusive-12208089",
+        "https://www.avclub.com/the-outsider-netflix-rob-lowe-documentary-trailer",
+        "https://realscreen.com/2026/11/03/netflix-slates-rob-lowe-doc-from-chris-smith/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREicRqaSkidbQhR83qp45plbhHv19Kr8TQ3vzVni3E1PtNCcnSpvIcDy_WvHE",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/rob-lowe-the-outsider-documentary-first-look-trailer-exclusive-12208089",
+          "title": "Rob Lowe reflects on ‘completely bananas’ life in ‘The Outsider’ doc trailer (exclusive)",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREicRqaSkidbQhR83qp45plbhHv19Kr8TQ3vzVni3E1PtNCcnSpvIcDy_WvHE"
+        },
+        {
+          "url": "https://www.avclub.com/the-outsider-netflix-rob-lowe-documentary-trailer",
+          "title": "The Outsider trailer gives Rob Lowe's tumultuous life the documentary treatment",
+          "publisher": "A.V. Club",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnMmxZfDVysYE8lGNouW38SPWWjpfLUs68Eu99TEVOuxEn0ajI5OyokGuWfDI"
+        },
+        {
+          "url": "https://realscreen.com/2026/11/03/netflix-slates-rob-lowe-doc-from-chris-smith/",
+          "title": "Netflix slates Rob Lowe doc from Chris Smith",
+          "publisher": "Realscreen",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTd-mJgmpd1id1xYfdgWnflNoXPHdXDvOGOlhUsxhGMmb9gT7IqiS86PT-dTxQ"
+        }
+      ]
+    },
+    {
+      "query": "timberwolves vs rockets",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-05T00:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/watch-timberwolves-vs-rockets-live-003000244.html",
+        "https://sports.yahoo.com/articles/rockets-vs-timberwolves-prediction-edwards-001607480.html",
+        "https://www.foxnews.com/outkick-betting/alperen-sengun-kevin-durant-power-houston-rockets-matchup-shorthanded-timberwolves"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvGEsX2PKIIi5plGtwnH5wjRec0q6G9iFCh931LxUWHgMCnfJU_IXNpKLF8pk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/watch-timberwolves-vs-rockets-live-003000244.html",
+          "title": "How to watch Timberwolves vs Rockets: Live stream NBA, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvGEsX2PKIIi5plGtwnH5wjRec0q6G9iFCh931LxUWHgMCnfJU_IXNpKLF8pk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rockets-vs-timberwolves-prediction-edwards-001607480.html",
+          "title": "Rockets vs Timberwolves Prediction Edwards Out and Houston Covers",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRelroL8HSwTiIE2FcXJkWfG5bzX4p3hZZRftPWFP3oXUxZYiBCtt9lHR8LqbU"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-betting/alperen-sengun-kevin-durant-power-houston-rockets-matchup-shorthanded-timberwolves",
+          "title": "Alperen Sengun and Kevin Durant power Houston Rockets into matchup with shorthanded Timberwolves",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqbxVa6J78lX_zjbL5MKKjRHEqNMsxaiAAt0N5M-fsKntft7vFXwFnPAEnpq4"
+        }
+      ]
+    },
     {
       "query": "tyrese maxey",
       "approx_searches": "2000+",
@@ -42,48 +112,13 @@
       ]
     },
     {
-      "query": "timberwolves vs rockets",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-05T00:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/rockets-hope-stay-red-hot-220404913.html",
-        "https://www.foxnews.com/outkick-betting/alperen-sengun-kevin-durant-power-houston-rockets-matchup-shorthanded-timberwolves",
-        "https://www.thedreamshake.com/rockets-game-previews/42301/houston-rockets-vs-minnesota-timberwolves-game-preview"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyn4bsUFTeBMBljPSAAXfgtb2ZM97_CJUv0YyHotAEwK47SjlRrl9tERPxKOs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/rockets-hope-stay-red-hot-220404913.html",
-          "title": "Rockets hope to stay red hot against Timberwolves",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyn4bsUFTeBMBljPSAAXfgtb2ZM97_CJUv0YyHotAEwK47SjlRrl9tERPxKOs"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-betting/alperen-sengun-kevin-durant-power-houston-rockets-matchup-shorthanded-timberwolves",
-          "title": "Alperen Sengun and Kevin Durant power Houston Rockets into matchup with shorthanded Timberwolves",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqbxVa6J78lX_zjbL5MKKjRHEqNMsxaiAAt0N5M-fsKntft7vFXwFnPAEnpq4"
-        },
-        {
-          "url": "https://www.thedreamshake.com/rockets-game-previews/42301/houston-rockets-vs-minnesota-timberwolves-game-preview",
-          "title": "Houston Rockets vs. Minnesota Timberwolves game preview",
-          "publisher": "The Dream Shake",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsADGYxItSpY0YM0tqqB81cxS3xmrmeCyFuHfnT4EZxsi0Q2Ri0Hqq9Lw5Ma4"
-        }
-      ]
-    },
-    {
       "query": "ryan seacrest",
       "approx_searches": "2000+",
       "published_at": "2026-11-05T00:30:00Z",
       "related_news_urls": [
         "https://www.tvinsider.com/1301728/wheel-of-fortune-ryan-seacrest-shocked-after-contestant-loses-113k/",
-        "https://www.wect.com/2026/10/30/big-win-wilmington-army-veteran-wins-over-76k-wheel-fortune/",
-        "https://www.yahoo.com/entertainment/videos/see-wheel-fortune-ryan-seacrest-214036813.html"
+        "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss",
+        "https://www.wect.com/2026/10/30/big-win-wilmington-army-veteran-wins-over-76k-wheel-fortune/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOl9QxFTYD0bOLYk_RsCm04c937Z2GeHIs7zP-VolzNFI0rTNrtzssqP1nFPM",
       "image_credit": "TV Insider",
@@ -96,18 +131,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOl9QxFTYD0bOLYk_RsCm04c937Z2GeHIs7zP-VolzNFI0rTNrtzssqP1nFPM"
         },
         {
+          "url": "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss",
+          "title": "See Wheel of Fortune’s Ryan Seacrest Comfort Player After $50,000 Loss",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPGLnwAMvZeT_SWv7Wv8fX_3A-IaLC3NRlDZCq290hoHNflG5Yc4xjf-pqMUI"
+        },
+        {
           "url": "https://www.wect.com/2026/10/30/big-win-wilmington-army-veteran-wins-over-76k-wheel-fortune/",
           "title": "BIG WIN: Wilmington Army veteran wins over $76K on ‘Wheel of Fortune’",
           "publisher": "WECT",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRl-_fPa8xxawYCtHWbNXfZIV15O9FiW50Y6V8O9mhPNppFYen8dxi8S7qn-J0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/videos/see-wheel-fortune-ryan-seacrest-214036813.html",
-          "title": "See Wheel of Fortune’s Ryan Seacrest Comfort Player After $50,000 Loss",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3huuQiuL8ORxpfzXV5bPpe1id6_S7sw2v0LV_kX20m5fJagamUerVeR0OhiM"
         }
       ]
     },
@@ -116,13 +151,20 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-05T00:30:00Z",
       "related_news_urls": [
+        "https://heavy.com/sports/nba/detroit-pistons/cade-cunningham-instagram-message-76ers/",
         "https://www.detroitbadboys.com/detroit-pistons-game-day/51424/pistons-vs-hornets-final-score-cade-cunningham-powers-second-half-surge-in-blowout-win",
-        "https://www.espn.com/nba/recap/_/gameId/401909908",
-        "https://sports.yahoo.com/articles/detroits-33-point-demolition-charlotte-152508454.html"
+        "https://www.espn.com/nba/recap/_/gameId/401909908"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqgohOfVYDN5Ew4la3TekQp-S0cyC22YwUoMLrAGnM5otDby6xFANxIdZiIQs",
-      "image_credit": "Detroit Bad Boys",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFGyZUqcFT3bfXIhm1YiwKYEPEgWP8XTdWDgq2iy0A-MItRM6ctMOVqQ4Lc_w",
+      "image_credit": "Heavy.com",
       "news": [
+        {
+          "url": "https://heavy.com/sports/nba/detroit-pistons/cade-cunningham-instagram-message-76ers/",
+          "title": "Detroit Pistons Star Cade Cunningham Shares Candid Message Before 76ers Game",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFGyZUqcFT3bfXIhm1YiwKYEPEgWP8XTdWDgq2iy0A-MItRM6ctMOVqQ4Lc_w"
+        },
         {
           "url": "https://www.detroitbadboys.com/detroit-pistons-game-day/51424/pistons-vs-hornets-final-score-cade-cunningham-powers-second-half-surge-in-blowout-win",
           "title": "Pistons vs. Hornets final score: Cade Cunningham powers second-half surge in blowout win",
@@ -136,13 +178,41 @@
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYMxnhZA3qUFurBNwfvBX5xJNOxkMLKE5PoUCJuIF9Ni0eYp63lm1YmwFKnno"
+        }
+      ]
+    },
+    {
+      "query": "claudia sheinbaum",
+      "approx_searches": "500+",
+      "published_at": "2026-11-05T00:30:00Z",
+      "related_news_urls": [
+        "https://certezadiario.com/mensaje-del-secretario-de-seguridad-y-proteccion-ciudadana-omar-garcia-harfuch-durante-la-ceremonia-de-entrega-de-reconocimientos-a-agentes-de-investigacion-de-la-secretaria-de-seguridad-y-proteccio/",
+        "https://www.gob.mx/sspc/prensa/sspc-reconoce-el-compromiso-y-la-vocacion-de-servicio-de-agentes-de-investigacion-e-inteligencia-y-personal-de-proteccion-civil",
+        "https://www.reporteindigo.com/nacional/hoy-gracias-al-liderazgo-de-la-presidenta-claudia-sheinbaum-la-seguridad-del-pais-esta-cambiando-omar-garcia-harfuch-20261104-0079.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vA3JfQFF9ECjKp_w8WACpr4uwRaWY4Am5MCUW0YpZ58FHvYLmsD-kKZSI18",
+      "image_credit": "Certeza Diario",
+      "news": [
+        {
+          "url": "https://certezadiario.com/mensaje-del-secretario-de-seguridad-y-proteccion-ciudadana-omar-garcia-harfuch-durante-la-ceremonia-de-entrega-de-reconocimientos-a-agentes-de-investigacion-de-la-secretaria-de-seguridad-y-proteccio/",
+          "title": "Mensaje del Secretario de Seguridad y Protección Ciudadana, Omar García Harfuch, durante la ceremonia de entrega de Reconocimientos a Agentes de Investigación de la Secretaría de S",
+          "publisher": "Certeza Diario",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vA3JfQFF9ECjKp_w8WACpr4uwRaWY4Am5MCUW0YpZ58FHvYLmsD-kKZSI18"
         },
         {
-          "url": "https://sports.yahoo.com/articles/detroits-33-point-demolition-charlotte-152508454.html",
-          "title": "Detroit's 33-Point Demolition Of Charlotte Has the Eastern Conference on Notice",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.gob.mx/sspc/prensa/sspc-reconoce-el-compromiso-y-la-vocacion-de-servicio-de-agentes-de-investigacion-e-inteligencia-y-personal-de-proteccion-civil",
+          "title": "SSPC RECONOCE EL COMPROMISO Y LA VOCACIÓN DE SERVICIO DE AGENTES DE INVESTIGACIÓN E INTELIGENCIA Y PERSONAL DE PROTECCIÓN CIVIL",
+          "publisher": "Gob MX",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIEWGzjF9jWE0llMe7A0XxULs_npcGwzwGyCJprWMP_WHHOsLhWZvIY_IUmXA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjFro6f6YYpX4jfLxIgIZLqQm5Zqy5kc4oVWhJjNprYCMVq9iIOWGurGbisR0"
+        },
+        {
+          "url": "https://www.reporteindigo.com/nacional/hoy-gracias-al-liderazgo-de-la-presidenta-claudia-sheinbaum-la-seguridad-del-pais-esta-cambiando-omar-garcia-harfuch-20261104-0079.html",
+          "title": "“Hoy, gracias al liderazgo de la presidenta Claudia Sheinbaum la Seguridad del país está cambiando”: Omar García Harfuch",
+          "publisher": "Reporte Indigo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnDa4ndTa65_4qmoRfhpVfB76MOhOr3q_H6bLoOKBc4xmGyC03rvc0nf7i_DA"
         }
       ]
     },
@@ -182,48 +252,13 @@
       ]
     },
     {
-      "query": "claudia sheinbaum",
-      "approx_searches": "200+",
-      "published_at": "2026-11-05T00:30:00Z",
-      "related_news_urls": [
-        "https://certezadiario.com/mensaje-del-secretario-de-seguridad-y-proteccion-ciudadana-omar-garcia-harfuch-durante-la-ceremonia-de-entrega-de-reconocimientos-a-agentes-de-investigacion-de-la-secretaria-de-seguridad-y-proteccio/",
-        "https://www.gob.mx/sspc/prensa/sspc-reconoce-el-compromiso-y-la-vocacion-de-servicio-de-agentes-de-investigacion-e-inteligencia-y-personal-de-proteccion-civil",
-        "https://www.reporteindigo.com/nacional/hoy-gracias-al-liderazgo-de-la-presidenta-claudia-sheinbaum-la-seguridad-del-pais-esta-cambiando-omar-garcia-harfuch-20261104-0079.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vA3JfQFF9ECjKp_w8WACpr4uwRaWY4Am5MCUW0YpZ58FHvYLmsD-kKZSI18",
-      "image_credit": "Certeza Diario",
-      "news": [
-        {
-          "url": "https://certezadiario.com/mensaje-del-secretario-de-seguridad-y-proteccion-ciudadana-omar-garcia-harfuch-durante-la-ceremonia-de-entrega-de-reconocimientos-a-agentes-de-investigacion-de-la-secretaria-de-seguridad-y-proteccio/",
-          "title": "Mensaje del Secretario de Seguridad y Protección Ciudadana, Omar García Harfuch, durante la ceremonia de entrega de Reconocimientos a Agentes de Investigación de la Secretaría de S",
-          "publisher": "Certeza Diario",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vA3JfQFF9ECjKp_w8WACpr4uwRaWY4Am5MCUW0YpZ58FHvYLmsD-kKZSI18"
-        },
-        {
-          "url": "https://www.gob.mx/sspc/prensa/sspc-reconoce-el-compromiso-y-la-vocacion-de-servicio-de-agentes-de-investigacion-e-inteligencia-y-personal-de-proteccion-civil",
-          "title": "SSPC RECONOCE EL COMPROMISO Y LA VOCACIÓN DE SERVICIO DE AGENTES DE INVESTIGACIÓN E INTELIGENCIA Y PERSONAL DE PROTECCIÓN CIVIL",
-          "publisher": "Gob MX",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjFro6f6YYpX4jfLxIgIZLqQm5Zqy5kc4oVWhJjNprYCMVq9iIOWGurGbisR0"
-        },
-        {
-          "url": "https://www.reporteindigo.com/nacional/hoy-gracias-al-liderazgo-de-la-presidenta-claudia-sheinbaum-la-seguridad-del-pais-esta-cambiando-omar-garcia-harfuch-20261104-0079.html",
-          "title": "“Hoy, gracias al liderazgo de la presidenta Claudia Sheinbaum la Seguridad del país está cambiando”: Omar García Harfuch",
-          "publisher": "Reporte Indigo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnDa4ndTa65_4qmoRfhpVfB76MOhOr3q_H6bLoOKBc4xmGyC03rvc0nf7i_DA"
-        }
-      ]
-    },
-    {
       "query": "unrivaled basketball",
       "approx_searches": "1000+",
       "published_at": "2026-11-05T00:20:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/article/unrivaled-announces-2027-rosters-as-olivia-miles-and-sonia-citron-team-up-on-hive-bc-while-paige-bueckers-lands-with-breeze-001549296.html",
         "https://bleacherreport.com/articles/25529323-2027-unrivaled-rosters-revealed-featuring-olivia-miles-paige-bueckers-and-more-wnba-stars",
-        "https://www.theixsports.com/features/unrivaled-announces-season-3-rosters/"
+        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/barbara-turner-unrivaled-head-coach-hodges-sun-ct-22498026.php"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1iOXr_eBsx5AyU2uSKNQ4KWuvY8DQSo_jhZlQsvs4Ww1DxovHFBsddU0UtTg",
       "image_credit": "Yahoo Sports",
@@ -243,11 +278,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmQ0QlpX1d-xHOdMaZoAyfPOdz_6_mgVP8Va_SSbCzTXfBmRDQlC6_Qtp0x3A"
         },
         {
-          "url": "https://www.theixsports.com/features/unrivaled-announces-season-3-rosters/",
-          "title": "Unrivaled announces Season 3 rosters",
-          "publisher": "The IX Sports",
+          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/barbara-turner-unrivaled-head-coach-hodges-sun-ct-22498026.php",
+          "title": "UConn alum Barbara Turner will be head coach with Unrivaled in 2027",
+          "publisher": "CT Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkYBHwaOnIMrMypmKnFmi-ANGx435imeiDWlJrEcnFTI7YpnRJWaetR9ITZ9A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRluxWzFxbx3h6hp8MHDfP55UobXgFfjrsXT1Th3ztCOIlj1SN30e5QouOgDXE"
         }
       ]
     },
@@ -258,7 +293,7 @@
       "related_news_urls": [
         "https://www.univision.com/famosos/muere-maria-alicia-delgado",
         "https://es-us.vida-estilo.yahoo.com/muere-actriz-comediante-maria-alicia-235138236.html",
-        "https://www.record.com.mx/historia/de-que-murio-maria-alicia-delgado-la-actriz-trabajo-con-eugenio-derbez-2026110423471423379"
+        "https://www.elfinanciero.com.mx/espectaculos/2026/11/04/muere-maria-alicia-delgado-actriz-de-amorcito-corazon-y-derbez-en-cuando/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFA4SA4UCG-90r9dmWkHBF6EbWe5yrjCu6WlDWw5mh-Mht4ANGEaz4T4i7sl0",
       "image_credit": "Univision",
@@ -278,11 +313,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcaFqKKbJNphJKwHU_F4MaTBVxHim5XEiPyh_IsSJ9D_KMPcoZU8MZY7AfTw"
         },
         {
-          "url": "https://www.record.com.mx/historia/de-que-murio-maria-alicia-delgado-la-actriz-trabajo-con-eugenio-derbez-2026110423471423379",
-          "title": "¿De qué murió María Alicia Delgado? La actriz trabajó con Eugenio Derbez",
-          "publisher": "Récord",
+          "url": "https://www.elfinanciero.com.mx/espectaculos/2026/11/04/muere-maria-alicia-delgado-actriz-de-amorcito-corazon-y-derbez-en-cuando/",
+          "title": "Muere María Alicia Delgado, actriz de ‘Amorcito corazón’ y ‘Derbez en cuando’, a los 77 años",
+          "publisher": "El Financiero",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS83Z-fSaTrSh-QQTRzjMPQsT8mzoo0HbyH2XHSQc4lodeoWmuin4lEefPMmI8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBD2kYRLvhdqOn_rF2C_MzD-OFZOwBJmUy-j5p66SJNo8iqMrMFQEKiwEn7O8"
         }
       ]
     },
@@ -318,41 +353,6 @@
           "publisher": "www.thefisherman.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj9eZ1Eld-7DnvcIS_3Ek16sMhDY_NGQxFUOONTa4FMIKCmJgWOvVIjcUepCE"
-        }
-      ]
-    },
-    {
-      "query": "pacers vs grizzlies",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T00:10:00Z",
-      "related_news_urls": [
-        "https://pacers.com/news/preview-pacers-grizzlies-261104",
-        "https://www.cbssports.com/betting/news/pacers-vs-grizzlies-nba-picks-indiana-should-have-more-players-available-against-surprising-memphis/",
-        "https://sportsbook.fanduel.com/basketball/nba/indiana-pacers-@-memphis-grizzlies-36266785"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7pxyXLJxXjLNWf93amGh26V3HnCv5_KrYRya6nJ_rY8bPKaRztGsuCGcuXGM",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://pacers.com/news/preview-pacers-grizzlies-261104",
-          "title": "Pacers at Grizzlies Preview: Wednesday, November 4 at FedEx Forum",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7pxyXLJxXjLNWf93amGh26V3HnCv5_KrYRya6nJ_rY8bPKaRztGsuCGcuXGM"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/pacers-vs-grizzlies-nba-picks-indiana-should-have-more-players-available-against-surprising-memphis/",
-          "title": "Pacers vs. Grizzlies NBA picks: Indiana should have more players available against surprising Memphis",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfY1egF4ppWEKMqVebXkFBghMq0JEKURJQaMlPLdgnw7-F7Yvdhsvv9kbPYAU"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/basketball/nba/indiana-pacers-@-memphis-grizzlies-36266785",
-          "title": "Indiana Pacers @ Memphis Grizzlies Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSad9ciGe8ffcbL4L11kQ1-UrSAfdQMCoY7n1Xxy8PsRfooEWXuCHnfmUtnCMA"
         }
       ]
     }
