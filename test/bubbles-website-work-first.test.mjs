@@ -51,7 +51,7 @@ test('personal context Bubble Bits display server-confirmed credits without brow
 });
 
 test('all Bubbles website entrypoints request the repaired scripts instead of stale cached versions',()=>{
- const revision='20261105-cloudflare-google-status3';
+ const revision='20261105-google-android-return4';
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   assert.match(source(path),new RegExp('/bubbles-ai\\.js\\?v='+revision));
  }
