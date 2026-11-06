@@ -56,5 +56,5 @@ test('all Bubbles website entrypoints request the repaired scripts instead of st
   assert.match(source(path),new RegExp('/bubbles-ai\\.js\\?v='+revision));
  }
  // Both chat and activity projections request the repaired release.
- assert.match(source('bubbles-ai.js'),/\/bubbles-iteration-bubbles\.mjs\?v=20261106-inthread-iterations2/);
+ assert.match(source('bubbles-ai.js'),/\/bubbles-iteration-bubbles\.mjs\?v=20261104-iteration-credit1/);
 });
