@@ -3,291 +3,62 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T05:01:35.650245Z",
+  "checked_at": "2026-11-06T05:31:40.789028Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "arizona basketball",
+      "query": "brandin podziemski",
       "approx_searches": "1000+",
-      "published_at": "2026-11-06T04:40:00Z",
+      "published_at": "2026-11-06T05:10:00Z",
       "related_news_urls": [
-        "https://tucson.com/sports/arizonawildcats/basketball/article_d591f930-db85-4d24-92c4-da2d585336c7.html",
-        "https://www.thestar.com/sports/basketball/arizona-forward-rj-godfrey-files-lawsuit-against-arizona-board-of-regents-over-eligibility/article_2aa592c1-3966-5b1f-b43d-297ca4dfeea0.html",
-        "https://www.azdesertswarm.com/basketball/85196/arizona-wildcats-basketball-rj-godfrey-pima-county-lawsuit-eligibility-tro-2026-bergin-ncaa"
+        "https://bluemanhoop.com/brandin-podziemski-is-already-quietly-justifying-his-warriors-extension",
+        "https://www.yardbarker.com/nba/articles/nba_notes_warriors_brandin_podziemski_pistons_ron_holland_sixers/s1_17038_44496350",
+        "https://www.nba.com/warriors/videos/postgame-warriors-talk-brandin-podziemski-11-2-26"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRfB1rpttO27rFlCuAHDEIPuWiIE8Wnap4yrL1aIS-xWxbeNnTg3we0tkY68g",
-      "image_credit": "Arizona Daily Star",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2R1idx6fmUm7zCFH8ZVf45NL6oa6gB5oBuX8nCyIwrRyFsC9jdPfUsDO4pNI",
+      "image_credit": "Blue Man Hoop",
       "news": [
         {
-          "url": "https://tucson.com/sports/arizonawildcats/basketball/article_d591f930-db85-4d24-92c4-da2d585336c7.html",
-          "title": "RJ Godfrey's attorneys sue Arizona Regents for not certifying him under NCAA bylaws",
-          "publisher": "Arizona Daily Star",
+          "url": "https://bluemanhoop.com/brandin-podziemski-is-already-quietly-justifying-his-warriors-extension",
+          "title": "Brandin Podziemski is already quietly justifying his Warriors extension",
+          "publisher": "Blue Man Hoop",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRfB1rpttO27rFlCuAHDEIPuWiIE8Wnap4yrL1aIS-xWxbeNnTg3we0tkY68g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2R1idx6fmUm7zCFH8ZVf45NL6oa6gB5oBuX8nCyIwrRyFsC9jdPfUsDO4pNI"
         },
         {
-          "url": "https://www.thestar.com/sports/basketball/arizona-forward-rj-godfrey-files-lawsuit-against-arizona-board-of-regents-over-eligibility/article_2aa592c1-3966-5b1f-b43d-297ca4dfeea0.html",
-          "title": "Arizona forward RJ Godfrey files lawsuit against Arizona Board of Regents over eligibility",
-          "publisher": "Toronto Star",
+          "url": "https://www.yardbarker.com/nba/articles/nba_notes_warriors_brandin_podziemski_pistons_ron_holland_sixers/s1_17038_44496350",
+          "title": "NBA Notes: Warriors, Brandin Podziemski, Pistons, Ron Holland, Sixers",
+          "publisher": "Yardbarker",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgtdNEkmBXzvodBbfYvKTfarrOvPj1SuWLfHPyTZCAbq9tgzL75tE1WOQjLoU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv5OzJaDJYpIobk9Ta36Z5O4StbKYPgsN4rdRVy5APF9jZ0yKwjz1GDP_uXpg"
         },
         {
-          "url": "https://www.azdesertswarm.com/basketball/85196/arizona-wildcats-basketball-rj-godfrey-pima-county-lawsuit-eligibility-tro-2026-bergin-ncaa",
-          "title": "RJ Godfrey sues Arizona Board of Regents in latest push for eligibility with Wildcats",
-          "publisher": "Arizona Desert Swarm",
+          "url": "https://www.nba.com/warriors/videos/postgame-warriors-talk-brandin-podziemski-11-2-26",
+          "title": "Postgame Warriors Talk: Brandin Podziemski ‑ 11/2/26",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFEdnKC21q_L11evq3h_7agJh9Y8pnT8TwVhuUFHYQCHcJJE1vMKKuTyAmeAg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBgIjYwrjKUHQl5377xITgCRirlRiDW-cwiHEhMDlhL5pEMwEKfDdzccbXtcQ"
         }
       ]
     },
     {
-      "query": "tim hardaway jr.",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T04:40:00Z",
-      "related_news_urls": [
-        "https://allucanheat.com/erik-spoelstra-sends-tim-hardaway-jr-a-pointed-message-with-second-half-benching",
-        "https://sports.yahoo.com/articles/jason-kidd-sends-urgent-demand-224636667.html",
-        "https://www.si.com/nba/heat/onsi/the-one-player-still-struggling-for-the-miami-heat-01m69yz7n9r7"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4EP0hLLXpuVXbtUTny2AUHcgNWfJxXiNYZKdAPtz0BWeo9vVuO7XYtGfS8Ks",
-      "image_credit": "All U Can Heat",
-      "news": [
-        {
-          "url": "https://allucanheat.com/erik-spoelstra-sends-tim-hardaway-jr-a-pointed-message-with-second-half-benching",
-          "title": "Erik Spoelstra sends Tim Hardaway Jr. a pointed message with second-half benching",
-          "publisher": "All U Can Heat",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4EP0hLLXpuVXbtUTny2AUHcgNWfJxXiNYZKdAPtz0BWeo9vVuO7XYtGfS8Ks"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jason-kidd-sends-urgent-demand-224636667.html",
-          "title": "Jason Kidd sends urgent demand to Heat player he used to coach with Mavericks",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN6W25ID8uPAXnYYStVGavaAlbteX0Bm8fcAUB0gjs2dwVahG3gA2fBJe9YDE"
-        },
-        {
-          "url": "https://www.si.com/nba/heat/onsi/the-one-player-still-struggling-for-the-miami-heat-01m69yz7n9r7",
-          "title": "The one player still struggling for the Miami Heat",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYnO1MqbgXxZQKq_E6upJbMlHYQTIQmD2l0GVz4Lxfr6iF2eOlcoggn6Szwvc"
-        }
-      ]
-    },
-    {
-      "query": "travis hunter",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T04:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/hurt-heck-travis-hunters-wife-155121009.html",
-        "https://timesofindia.indiatimes.com/sports/nfl/news/travis-hunters-wife-leanna-lenee-makes-surprising-admission-about-her-custom-jaguars-outfit-before-colts-win/articleshow/135580440.cms",
-        "https://www.nfl.com/videos/trevor-lawrence-s-best-throws-from-242-yard-game-vs-ravens-week-8"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLC21anstRmLrrZtsRLOI4S648ZRCVS30H-wJ2UYsalu5xEy0k960-zi9CCqU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/hurt-heck-travis-hunters-wife-155121009.html",
-          "title": "“Hurt Like Heck”: Travis Hunter's Wife Leanna Lenee Shares Painful Truth About Her Jaguars-Colts Game Day Outfit",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLC21anstRmLrrZtsRLOI4S648ZRCVS30H-wJ2UYsalu5xEy0k960-zi9CCqU"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/travis-hunters-wife-leanna-lenee-makes-surprising-admission-about-her-custom-jaguars-outfit-before-colts-win/articleshow/135580440.cms",
-          "title": "Travis Hunter’s wife Leanna Lenee makes surprising admission about her custom Jaguars outfit before Colts",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPSQCCActUcGQXNQnuZLjgEq1sKrqwtSLE-WzMQEkmadwPk7LlayjeZzkRgTA"
-        },
-        {
-          "url": "https://www.nfl.com/videos/trevor-lawrence-s-best-throws-from-242-yard-game-vs-ravens-week-8",
-          "title": "Jacksonville Jaguars quarterback Trevor Lawrence's best throws from 242-yard game vs. Baltimore Ravens | Week 8",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT524U9OyYg0XAaMfg7SmckrsAUNDvIYlEXBJW4c_yh9X_xOLQVGHV6QA57L4o"
-        }
-      ]
-    },
-    {
-      "query": "al horford",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T04:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say",
-        "https://sports.yahoo.com/nba/article/warriors-reportedly-not-paying-kristaps-porzingis-as-he-contemplates-nba-future-162041664.html",
-        "https://www.nytimes.com/athletic/7753389/2026/11/04/kristaps-porzingis-contract-salary-warriors-nba/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvlgC-SNcSJBXKbFdfsQY8_91Cfa_dPPjjgp4MAhZmACIyUmYNNDlePyTVRMc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say",
-          "title": "Warriors withholding payments to Porzingis, sources say",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvlgC-SNcSJBXKbFdfsQY8_91Cfa_dPPjjgp4MAhZmACIyUmYNNDlePyTVRMc"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/article/warriors-reportedly-not-paying-kristaps-porzingis-as-he-contemplates-nba-future-162041664.html",
-          "title": "Warriors reportedly not paying Kristaps Porziņģis as he contemplates NBA future",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIoNQwBDwapg8gabvhX2d8feyVSIvEiaJLFUxzWMnA-o_7WtXNd-CQATMld4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7753389/2026/11/04/kristaps-porzingis-contract-salary-warriors-nba/",
-          "title": "Warriors withholding Kristaps Porziņģis’ salary as absence from team continues: Sources - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQy39gj2zYuY26u_bhVZDK3yimHxGT3ukPC10AV3dmpzUz648Um2zuhn-2tvk4"
-        }
-      ]
-    },
-    {
-      "query": "solo leveling season 3 release date",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T04:30:00Z",
-      "related_news_urls": [
-        "https://www.cbr.com/solo-leveling-ragnarok-webtoon-november-5-release-date/",
-        "https://www.imdb.com/news/ni66093215/?ref_=ttnw_art_perm",
-        "https://comicbook.com/anime/news/solo-leveling-ragnarok-confirms-return-from-hiatus-with-new-season-artist-first-look-revealed/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwOv_duFELj-qVvLPvSh4lXGkIl9HcmyxASdlhkl05CzT-wbY9a_xUn5tj4WA",
-      "image_credit": "Comic Book Resources",
-      "news": [
-        {
-          "url": "https://www.cbr.com/solo-leveling-ragnarok-webtoon-november-5-release-date/",
-          "title": "Solo Leveling Officially Returns Next Week With 3 New Episodes",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwOv_duFELj-qVvLPvSh4lXGkIl9HcmyxASdlhkl05CzT-wbY9a_xUn5tj4WA"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66093215/?ref_=ttnw_art_perm",
-          "title": "Solo Leveling: 4 Strongest Hunters In Anime Sequel, Officially Ranked",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgC3AKg5EmApkq7B0DLAqupayScmGiEAGaJR06extNZt-JKXANAZLL1KJqlr4"
-        },
-        {
-          "url": "https://comicbook.com/anime/news/solo-leveling-ragnarok-confirms-return-from-hiatus-with-new-season-artist-first-look-revealed/",
-          "title": "Solo Leveling: Ragnarok Confirms Return From Hiatus With New Season & Artist (First Look Revealed)",
-          "publisher": "ComicBook.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2RFDtIeKxsDCGeNB9RyK6_fR6e3dZKnnL4gPjTpqF4gJ-6zRBmXVubZjflbM"
-        }
-      ]
-    },
-    {
-      "query": "adam driver",
+      "query": "mw4 season 1 release date",
       "approx_searches": "500+",
-      "published_at": "2026-11-06T04:30:00Z",
+      "published_at": "2026-11-06T05:10:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/film/news/adam-driver-the-hunt-for-ben-solo-kylo-ren-1236939988/",
-        "https://www.hollywoodreporter.com/movies/movie-news/adam-driver-kylo-ren-the-hunt-for-ben-solo-ship-sailed-1236748987/",
-        "https://people.com/adam-driver-confirms-his-solo-star-wars-movie-is-officially-over-12238735"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGdZEU6eE8inF60WIH_cm2p1TyR2jbvdxpXAdgLnyFmd7zjI6hli3xQidraTo",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/adam-driver-the-hunt-for-ben-solo-kylo-ren-1236939988/",
-          "title": "Adam Driver Says ‘The Ship Has Sailed’ on ‘The Hunt for Ben Solo’ and He’s Done Playing Kylo Ren: ‘It’s Over’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGdZEU6eE8inF60WIH_cm2p1TyR2jbvdxpXAdgLnyFmd7zjI6hli3xQidraTo"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/adam-driver-kylo-ren-the-hunt-for-ben-solo-ship-sailed-1236748987/",
-          "title": "Adam Driver Says “the Ship Has Sailed” on Playing Kylo Ren: “No More ‘Star Wars'”",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEvPKoNA-3Ax0UV86xcWtEFsOYLiNQF1WpfQsphSnExTl9qlrASOgEjuUEsH4"
-        },
-        {
-          "url": "https://people.com/adam-driver-confirms-his-solo-star-wars-movie-is-officially-over-12238735",
-          "title": "Adam Driver Confirms His Solo ‘Star Wars’ Movie Is Officially Over: ‘It’s Dead’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz84qty305tCqLdS46gRCdssJrbA0JssNg4HUfbToWt9rU7XKx4pQg4BS0ios"
-        }
-      ]
-    },
-    {
-      "query": "terence crawford",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T04:30:00Z",
-      "related_news_urls": [
-        "https://boxingnewsonline.net/news/crawford-on-fight-he-takes-at-any-weight/",
-        "https://www.boxingscene.com/articles/terence-crawford-teases-one-more-fight-as-boxing-struggles-to-embrace-a-new-generation",
-        "https://www.boxing247.com/boxing-news/terence-crawford-talks-comeback-but-who-pays/311081"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCCLt7Qt97xL2lpM1nUJ7_f-4CLlGLjoxPn4yaIOlE5MUNLi2_u57c4O8QLf4",
-      "image_credit": "Boxing News Online",
-      "news": [
-        {
-          "url": "https://boxingnewsonline.net/news/crawford-on-fight-he-takes-at-any-weight/",
-          "title": "Terence Crawford names the man he would face if weight wasn't an issue: \"He talks too much\"",
-          "publisher": "Boxing News Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCCLt7Qt97xL2lpM1nUJ7_f-4CLlGLjoxPn4yaIOlE5MUNLi2_u57c4O8QLf4"
-        },
-        {
-          "url": "https://www.boxingscene.com/articles/terence-crawford-teases-one-more-fight-as-boxing-struggles-to-embrace-a-new-generation",
-          "title": "Terence Crawford teases one more fight as boxing struggles to embrace a new generation",
-          "publisher": "BoxingScene",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr63A-rydybom7jQ2Mr__ojIBdluYx5IvAX8kJZbKUubvkle4PDqGXaQ9isLc"
-        },
-        {
-          "url": "https://www.boxing247.com/boxing-news/terence-crawford-talks-comeback-but-who-pays/311081",
-          "title": "Terence Crawford Talks Comeback, But Who Pays?",
-          "publisher": "Boxing News 24/7",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyLiCB7C4PC0talOBNkdly9dEQ99nZtN66nGw9kn_Bb6iSzGb8DS-piaPC4To"
-        }
-      ]
-    },
-    {
-      "query": "burt reynolds",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T04:20:00Z",
-      "related_news_urls": [
-        "https://whysoblu.com/toy-robots-dec-releases-passenger-57-sharkys-machine-detroit-rock-city-arrive-on-4k/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72AvG4fZIoGqu-PcXp9QYM8k2qmLqghf7O51Psiq5vk2W1PJp8Hz0dH7wqMU",
-      "image_credit": "Why So Blu?",
-      "news": [
-        {
-          "url": "https://whysoblu.com/toy-robots-dec-releases-passenger-57-sharkys-machine-detroit-rock-city-arrive-on-4k/",
-          "title": "Toy Robot's Dec Releases: Passenger 57, Sharky's Machine & Detroit Rock City Arrive on 4K!",
-          "publisher": "Why So Blu?",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72AvG4fZIoGqu-PcXp9QYM8k2qmLqghf7O51Psiq5vk2W1PJp8Hz0dH7wqMU"
-        }
-      ]
-    },
-    {
-      "query": "mw4 season 1",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T04:20:00Z",
-      "related_news_urls": [
-        "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-warzone-season-1",
+        "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-season-1-battle-pass-blackcell-store-bundles",
         "https://www.ign.com/articles/call-of-duty-warzone-is-adding-a-weather-system-this-week",
-        "https://gonintendo.com/contents/66954-call-of-duty-modern-warfare-4-season-1-battle-pass-system-blackcell-and-new-store"
+        "https://www.mmoexp.com/News/cod-mw4-rally-point-guide-how-to-play-pve-features-rewards-season-1-details.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpWolggGtcS_6t3tINbyWcgOJLnkZZ77z4AN20a4aqgnjRbI_DX5df_oYqLPc",
+      "image_url": null,
       "image_credit": "Call of Duty® | Best-Selling Video Game Franchise",
       "news": [
         {
-          "url": "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-warzone-season-1",
-          "title": "Call of Duty: Warzone Season 1: Everything You Need to Know",
+          "url": "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-season-1-battle-pass-blackcell-store-bundles",
+          "title": "Intel Drop: All You Need to Know about the Modern Warfare 4 Season 1 Battle Pass System, BlackCell, and New Store Bundles",
           "publisher": "Call of Duty® | Best-Selling Video Game Franchise",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpWolggGtcS_6t3tINbyWcgOJLnkZZ77z4AN20a4aqgnjRbI_DX5df_oYqLPc"
+          "image_url": null
         },
         {
           "url": "https://www.ign.com/articles/call-of-duty-warzone-is-adding-a-weather-system-this-week",
@@ -297,46 +68,291 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2VX88DzwS6o1uDcM6NlZRd4ygyIODL1kbrnc3Uw-vbN6JoSafNJZAf17wvT4"
         },
         {
-          "url": "https://gonintendo.com/contents/66954-call-of-duty-modern-warfare-4-season-1-battle-pass-system-blackcell-and-new-store",
-          "title": "Call of Duty: Modern Warfare 4 Season 1 Battle Pass System, BlackCell, and New Store Bundles Detailed",
-          "publisher": "GoNintendo",
+          "url": "https://www.mmoexp.com/News/cod-mw4-rally-point-guide-how-to-play-pve-features-rewards-season-1-details.html",
+          "title": "CoD MW4 Rally Point Guide: How to Play, PvE Features, Rewards & Season 1 Details",
+          "publisher": "MMOEXP",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbq9POTDOBxOl6kseC9zydYlq84RwPcAfRWA1CCnlplUQjWxVx2r90tZGT1is"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRYD704ajejBntJI8svcj8iLOFa-4dUWNuNmW6TcuqIQh-cVh_utYTauKVfWg"
         }
       ]
     },
     {
-      "query": "kris jenner",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T04:10:00Z",
+      "query": "kiyomi mcmiller",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T05:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/videos/khloe-kardashian-details-finding-lamar-141621573.html",
-        "https://people.com/khloe-kardashian-shocking-lamar-odom-story-kris-jenner-12236801",
-        "https://www.instyle.com/kris-jenner-khloe-kardashian-found-lamar-odom-orgy-before-divorce-12238416"
+        "https://floridagators.com/news/2026/11/5/womens-basketball-mcmiller-erupts-for-42-in-gators-95-65-win-over-ucf",
+        "https://sports.yahoo.com/articles/florida-kiyomi-mcmiller-leaves-ncaa-040720531.html",
+        "https://www.orlandosentinel.com/2026/11/05/florida-gators-womens-basketball-kiyomi-mckiller-tammi-reiss-ucf-knights/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsbHDG7pmqC_v4KO5icc1gJoz8PME0CW_dci6anj0_1hIUtm6RxXvhqDHcA28",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRosdjk3JiT3xASPW-rkPZewQTzqjqtDtgf0JUP0BrKZ3tlJdMFcK25wQ5nrjg",
+      "image_credit": "Florida Gators",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/videos/khloe-kardashian-details-finding-lamar-141621573.html",
-          "title": "Khloe Kardashian Details Finding Lamar Odom in 20-Person \"Circle Jerk”",
-          "publisher": "Yahoo",
+          "url": "https://floridagators.com/news/2026/11/5/womens-basketball-mcmiller-erupts-for-42-in-gators-95-65-win-over-ucf",
+          "title": "McMiller erupts for career-high 42 in 95-65 win over UCF",
+          "publisher": "Florida Gators",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsbHDG7pmqC_v4KO5icc1gJoz8PME0CW_dci6anj0_1hIUtm6RxXvhqDHcA28"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRosdjk3JiT3xASPW-rkPZewQTzqjqtDtgf0JUP0BrKZ3tlJdMFcK25wQ5nrjg"
         },
         {
-          "url": "https://people.com/khloe-kardashian-shocking-lamar-odom-story-kris-jenner-12236801",
-          "title": "Khloé Kardashian, Kris Jenner Recount Wild Lamar Odom Story Involving ‘Hookers’ at Hotel",
+          "url": "https://sports.yahoo.com/articles/florida-kiyomi-mcmiller-leaves-ncaa-040720531.html",
+          "title": "Florida’s Kiyomi McMiller Leaves NCAA Fans Talking After Becoming Fifth Player in Program History to Post Back-to-Back 30-Point Games",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiy0Ggt7axgSobZkTt4u_J_RqXnFSMStBGn3pc9YvGvLcALb_2Ein_LHw97T4"
+        },
+        {
+          "url": "https://www.orlandosentinel.com/2026/11/05/florida-gators-womens-basketball-kiyomi-mckiller-tammi-reiss-ucf-knights/",
+          "title": "Gators’ transfer Kiyomi McMiller explodes for 42 points as Florida routs UCF",
+          "publisher": "Orlando Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0cLJMrL_fLAvQNy7Run-_36Xa0f3w4v7khv_SfZLa4_LSf5GwcZcwy8QZ8og"
+        }
+      ]
+    },
+    {
+      "query": "dan koh",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T05:10:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/03/metro/koh-wins-sixth-district-house-asian-american/",
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-massachusetts-us-house-6.html",
+        "https://www.wbur.org/news/2026/11/04/dan-koh-elected-salem-lynn-congress-representative"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtu0sLFVe1RPBLLPufgjrMT0c2iLEE5rQeLGRZLXGIF3EF9FkpmoUP0eerFo",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/03/metro/koh-wins-sixth-district-house-asian-american/",
+          "title": "Koh sails to victory in Sixth District House race",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtu0sLFVe1RPBLLPufgjrMT0c2iLEE5rQeLGRZLXGIF3EF9FkpmoUP0eerFo"
+        },
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-massachusetts-us-house-6.html",
+          "title": "Massachusetts Sixth Congressional District 2026: Live Election Results, Koh vs. Jones",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvrpfyvxdycqlQ2GCFF6r5e9hWGMk3_2SA0FtIRvWcPxHABzsU4XStnYur0JA"
+        },
+        {
+          "url": "https://www.wbur.org/news/2026/11/04/dan-koh-elected-salem-lynn-congress-representative",
+          "title": "Congressman-elect Dan Koh says his first priority is to 'get to the bottom of Donald Trump’s corruption'",
+          "publisher": "WBUR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkwt2w4jfenDD1KmUDOFHBYlgaUzI1naYb8TLp4-P9z-1acr_Nux5ocrBIAUM"
+        }
+      ]
+    },
+    {
+      "query": "giannis antetokounmpo",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T05:00:00Z",
+      "related_news_urls": [
+        "https://www.si.com/betting/giannis-antetokounmpo-injury-update-betting-impact-for-heat-vs-warriors-nov-5",
+        "https://sports.yahoo.com/articles/visiting-heat-listing-giannis-antetokounmpo-214454898.html",
+        "https://basketnews.com/news-258840-giannis-antetokounmpo-final-status-for-miami-heat-vs-la-clippers-revealed.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfyzMZ07EqEWOhQqyMjvSUKR-kZ1QhM9pck81nx0Tb50UJgsKgl-dp2_tEcU8",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/betting/giannis-antetokounmpo-injury-update-betting-impact-for-heat-vs-warriors-nov-5",
+          "title": "Is Giannis Antetokounmpo Playing Tonight? (Injury Update Betting Impact for Heat vs. Warriors)",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfyzMZ07EqEWOhQqyMjvSUKR-kZ1QhM9pck81nx0Tb50UJgsKgl-dp2_tEcU8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/visiting-heat-listing-giannis-antetokounmpo-214454898.html",
+          "title": "Visiting Heat are listing Giannis Antetokounmpo as …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRHg7zR2kcFmOWx8HQgT-C9RQAbedR8HliA79pHuKxTmPx0EeC981Bf_zfrh4"
+        },
+        {
+          "url": "https://basketnews.com/news-258840-giannis-antetokounmpo-final-status-for-miami-heat-vs-la-clippers-revealed.html",
+          "title": "Giannis Antetokounmpo final status for Miami Heat vs LA Clippers revealed",
+          "publisher": "BasketNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8gzqcbdbTXbPfPB38RVvQGvTiic_fRyBiHByfx6nMvxnE43OZn5Ap2T_DeUk"
+        }
+      ]
+    },
+    {
+      "query": "bryce james",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T05:00:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/ncaab/big12/2026/11/03/bryce-james-arizona-basketball-first-start-stats/92579162007/",
+        "https://bleacherreport.com/articles/25528879-bryce-james-full-box-score-highlights-mcbb-debut-arizonas-upset-loss-ucla",
+        "https://www.basketballnetwork.net/college/jason-whitlock-accuses-lebron-james-of-forcing-bryce-onto-arizonas-roster"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNoHpPEajTDrpMvgTre_WT8UtVkc8KjokaeiOycC8NJ5ELKDOknYUUGPYpI7s",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaab/big12/2026/11/03/bryce-james-arizona-basketball-first-start-stats/92579162007/",
+          "title": "Bryce James stats: Lebron James' son makes first college start for Arizona",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNoHpPEajTDrpMvgTre_WT8UtVkc8KjokaeiOycC8NJ5ELKDOknYUUGPYpI7s"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25528879-bryce-james-full-box-score-highlights-mcbb-debut-arizonas-upset-loss-ucla",
+          "title": "Bryce James' Full Box Score, Highlights From MCBB Debut in Arizona's Upset Loss to UCLA",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9r9w0lOykX4RuLwpa-wmmjcq0FEPdpkpVVBtSVlMfeO513-Q_fwd2178hcBU"
+        },
+        {
+          "url": "https://www.basketballnetwork.net/college/jason-whitlock-accuses-lebron-james-of-forcing-bryce-onto-arizonas-roster",
+          "title": "“We got another Make-A-Swish Kid” – Jason Whitlock accuses LeBron James of forcing Bryce onto Arizona's roster",
+          "publisher": "Basketball Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToChPpbkIRuY_BiAzFnKE6ElY1ZQx7iCghBDQYU-RPsgSTEMR6gSD7n4gwBvA"
+        }
+      ]
+    },
+    {
+      "query": "jaguars nfl standings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T05:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/steelers-fall-afc-playoff-standings-042007897.html",
+        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-nfl-playoffs/177525/steelers-fall-in-afc-playoff-standings-after-ravens-loss-to-jaguars",
+        "https://www.nytimes.com/athletic/7753648/2026/11/05/nfl-underrated-storylines-jaguars-jordan-love-kirk-cousins/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqbqLfv9OjKtJh1wlVsb9zW-gw2q_Y28ELqeXGf_8eUHrFWM15BxE7BTpiosk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/steelers-fall-afc-playoff-standings-042007897.html",
+          "title": "Steelers fall in AFC playoff standings after Ravens loss to Jaguars",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqbqLfv9OjKtJh1wlVsb9zW-gw2q_Y28ELqeXGf_8eUHrFWM15BxE7BTpiosk"
+        },
+        {
+          "url": "https://www.behindthesteelcurtain.com/pittsburgh-steelers-nfl-playoffs/177525/steelers-fall-in-afc-playoff-standings-after-ravens-loss-to-jaguars",
+          "title": "Steelers fall in AFC playoff standings after Ravens loss to Jaguars",
+          "publisher": "Behind the Steel Curtain",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAuXhFpP_xBh98OHUgfIaAxSkpq71CXkkhIm0xVA4bgCScmDgjRo8fZXfXWYE"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7753648/2026/11/05/nfl-underrated-storylines-jaguars-jordan-love-kirk-cousins/",
+          "title": "Jaguars the class of the AFC? Jordan Love for MVP? Exploring underrated NFL storylines",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9x7iUcr61iHaoVDmoSTmaARbOvF1RJlt17LRN3qnyrFTQwsqdVMvjvuAmdQQ"
+        }
+      ]
+    },
+    {
+      "query": "the lowdown",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T05:00:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1301953/the-lowdown-season-2-episode-5-kyle-maclachlan-interview-donald-washberg-jed-sallsman/",
+        "https://www.kvue.com/article/entertainment/in-the-spotlight/kyle-maclachlan-interview-season-2-the-lowdown-ethan-hawke-sterlin-harjo/507-4997c7f5-f955-4ec9-9b9a-0d354b52fb7b",
+        "https://www.newscentermaine.com/video/entertainment/in-the-spotlight/kyle-maclachlan-interview-season-2-the-lowdown-ethan-hawke-sterlin-harjo/507-fbb7ac41-e5e6-485b-b090-5d2b12df6263"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFAWQwqHsp07NvAeOG_HjgrTCIxLIwzE-GeWnOWVcBB_LiGCLtYfsG8j7bag",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1301953/the-lowdown-season-2-episode-5-kyle-maclachlan-interview-donald-washberg-jed-sallsman/",
+          "title": "'The Lowdown': Kyle MacLachlan Breaks Down Donald's Return",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFAWQwqHsp07NvAeOG_HjgrTCIxLIwzE-GeWnOWVcBB_LiGCLtYfsG8j7bag"
+        },
+        {
+          "url": "https://www.kvue.com/article/entertainment/in-the-spotlight/kyle-maclachlan-interview-season-2-the-lowdown-ethan-hawke-sterlin-harjo/507-4997c7f5-f955-4ec9-9b9a-0d354b52fb7b",
+          "title": "Emmy nominee Kyle MacLachlan discusses returning for Season 2 of comedic noir 'The Lowdown'",
+          "publisher": "KVUE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIvTFQsfyzeQdGB3sr6CDVnRxwyIiR22Ubje_aXtowzGk0bDZcOhqkdIKVw9U"
+        },
+        {
+          "url": "https://www.newscentermaine.com/video/entertainment/in-the-spotlight/kyle-maclachlan-interview-season-2-the-lowdown-ethan-hawke-sterlin-harjo/507-fbb7ac41-e5e6-485b-b090-5d2b12df6263",
+          "title": "Emmy nominee Kyle MacLachlan discusses returning for Season 2 of comedic noir 'The Lowdown'",
+          "publisher": "newscentermaine.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIvTFQsfyzeQdGB3sr6CDVnRxwyIiR22Ubje_aXtowzGk0bDZcOhqkdIKVw9U"
+        }
+      ]
+    },
+    {
+      "query": "ethan hawke",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T04:50:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/levon-hawke-anthony-hopkins-twenty-seven-gregory-caruso-1236940057/",
+        "https://people.com/levon-hawke-lands-first-leading-film-role-opposite-anthony-hopkins-12239107",
+        "https://www.imdb.com/it/news/ni66097212/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5cHR8hj0tg_4Eb6Eke_gWK4qCbIevKXfasCa1SPv1Akap8yLYFkA7Mul8Z7A",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/levon-hawke-anthony-hopkins-twenty-seven-gregory-caruso-1236940057/",
+          "title": "Levon Hawke to Star With Anthony Hopkins in Indie Drama ‘Twenty-Seven’ (EXCLUSIVE)",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5cHR8hj0tg_4Eb6Eke_gWK4qCbIevKXfasCa1SPv1Akap8yLYFkA7Mul8Z7A"
+        },
+        {
+          "url": "https://people.com/levon-hawke-lands-first-leading-film-role-opposite-anthony-hopkins-12239107",
+          "title": "Ethan Hawke’s Son Levon Hawke Lands First Leading Role Opposite Anthony Hopkins",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUTYojJgOrSIsW6eCkjDWiFMivoIL3xJgMiUC3KB7Tq-GzE1EyW5XmNcQwJvc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfh8wCusKd7pCCkr9-6obH5Orbr-Hu6tEtYpiSq8EXeZL85WOWcX8bM5wFRE"
         },
         {
-          "url": "https://www.instyle.com/kris-jenner-khloe-kardashian-found-lamar-odom-orgy-before-divorce-12238416",
-          "title": "Kris Jenner and Khloé Kardashian Recall Catching Lamar Odom Having an “Orgy” Before Divorce",
-          "publisher": "InStyle",
+          "url": "https://www.imdb.com/it/news/ni66097212/?ref_=nwc_art_perm",
+          "title": "Levon Hawke to Star With Anthony Hopkins in Indie Drama ‘Twenty-Seven’ (Exclusive)",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTQZbbG12fxzE6Y8De4dvxotQ3N1yEsjKm11uopJcrXi1DnTAyBZLE1jjkJoA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_vqY8lvGIHFWG4WZyuZx-Tr2BzTQcEMRe58J_xbWpkgFrtFmf0HfQRoqBmVo"
+        }
+      ]
+    },
+    {
+      "query": "maya hawke",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T04:50:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/maya-hawke-magic-the-gathering-movie-1237213391/",
+        "https://www.hollywoodreporter.com/movies/movie-news/maya-hawke-magic-the-gathering-1236747928/",
+        "https://gizmodo.com/magic-the-gathering-movie-casts-a-stranger-things-star-2000835204"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAmcOzXZsAd7pDkDlEdIEHtUI-ufjvSa0h4K2wrII7ata27JzhMZ3TdbGHaSw",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/maya-hawke-magic-the-gathering-movie-1237213391/",
+          "title": "Maya Hawke Boards ‘Magic: The Gathering’ Movie From Legendary And Hasbro",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAmcOzXZsAd7pDkDlEdIEHtUI-ufjvSa0h4K2wrII7ata27JzhMZ3TdbGHaSw"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/maya-hawke-magic-the-gathering-1236747928/",
+          "title": "Maya Hawke Joins ‘Magic: The Gathering’ Movie Adaptation",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5aJmXeUbVOCy0UaRpzQGk74dWf8UIzf4JuFK88Y44uoEGavTwBgL2fBeR92M"
+        },
+        {
+          "url": "https://gizmodo.com/magic-the-gathering-movie-casts-a-stranger-things-star-2000835204",
+          "title": "‘Magic: The Gathering’ Movie Casts Maya Hawke in Key Role",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfm1v7Hwmkbi7L-N9CcrWX4abS1TA3Rqd2pocWN2HWKzcANyFPUX0SgOErwdo"
         }
       ]
     }
