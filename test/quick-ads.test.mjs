@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {GAME_START,CAMPAIGN_START,GAME_END,HOUSE_START,QUICK_ADS,HOUSE_ADS,quickAdCampaign,restoreQuickAdState,quickAdPacingAllows,inGameWindow,isOfficialUrl,gameLiveStatus,eligibleQuickAds,chooseQuickAd} from '../quick-ads-core.mjs';
+import {GAME_START,CAMPAIGN_START,GAME_END,HOUSE_START,QUICK_ADS,HOUSE_ADS,quickAdCampaign,restoreQuickAdState,quickAdPacingAllows,inGameWindow,isOfficialUrl,gameLiveStatus,eligibleQuickAds,chooseQuickAd,reviewedCatalogAds} from '../quick-ads-core.mjs';
 import {GAME_PK} from '../world-series-score.mjs';
 const source=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 test('Game 5 Quick Ads start early and expire tonight in Chicago',()=>{
@@ -149,4 +149,23 @@ test('house ads never restart after every creative is recorded',()=>{
  assert.equal(chooseQuickAd({category:'shopping'},counts,['infinity-accepted-house'],HOUSE_START),null);
  const ui=source('quick-ads.mjs');
  assert.match(ui,/localStorage/,'seen history must survive page refresh and browser restarts');
+});
+
+test('new approved D1 content appears once after the original house ads are exhausted',()=>{
+ const row={creative_id:'licensed-fixture',equivalence_key:'product-campaign-a',campaign_id:'launch',
+  kind:'editorial',review_state:'approved',image_rights:'owned',
+  destination_url:'https://example.org/real-source',source_url:'https://example.org/real-source',
+  image_url:'https://example.org/approved-photo.jpg',name:'Source-backed product',
+  tagline:'Discover original catalog evidence',category:'shopping',tone:'#174679'};
+ const ad=reviewedCatalogAds([row])[0];
+ assert.ok(ad);
+ assert.equal(ad.id,'catalog:licensed-fixture');
+ const seen=Object.fromEntries(HOUSE_ADS.map(a=>[a.id,1]));
+ assert.equal(chooseQuickAd({category:'shopping'},seen,[],HOUSE_START,[row]).id,ad.id);
+ seen[ad.equivalenceKey]=1;
+ assert.equal(chooseQuickAd({category:'shopping'},seen,[],HOUSE_START,[row]),null,
+  'same campaign-equivalent creative must not be re-skinned to replay');
+ assert.deepEqual(reviewedCatalogAds([{...row,kind:'sponsored'}]),[],
+  'sponsorship without source evidence is not publishable');
+ assert.deepEqual(reviewedCatalogAds([{...row,image_rights:'unverified'}]),[]);
 });
