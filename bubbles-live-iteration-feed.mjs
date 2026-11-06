@@ -11,6 +11,12 @@ const TOOL_NAMES=Object.freeze({
  'github.read_file':['GitHub','reading a file','file read'],
  'github.read_repository':['GitHub','reading repository','repository read'],
  'github.read_repo':['GitHub','reading repository','repository read'],
+ 'github.assist':['GitHub','planning and executing authorized repository work','engineering receipt received (verify each action)'],
+ 'github.capabilities':['GitHub','checking actual GitHub access','GitHub access response received'],
+ 'github.list_workflows':['GitHub','listing repository workflows','workflow catalog received'],
+ 'github.list_runs':['GitHub','reading recent workflow results','workflow runs received (outcomes shown separately)'],
+ 'github.create_pr':['GitHub','opening a reviewed pull request','pull request opened (not merged)'],
+ 'github.dispatch_workflow':['GitHub','requesting a GitHub Actions run','workflow dispatch accepted (execution pending)'],
  'bubbles.image_read':['Bubbles','reading image','image read'],
  'cloudflare.d1.create':['Cloudflare','creating D1 database','D1 creation reported'],
  'cloudflare.d1.query':['Cloudflare','querying D1','D1 query reported'],
@@ -30,7 +36,8 @@ const TOOL_NAMES=Object.freeze({
 });
 const clean=(v,n=160)=>typeof v==='string'?v.replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,n):'';
 const idOkay=v=>typeof v==='string'&&/^[A-Za-z0-9_-]{8,100}$/.test(v);
-const TECHNICAL_TOOLS=new Set(['github.commit','github.update_file','github.workflow_checks',
+const TECHNICAL_TOOLS=new Set(['github.assist','github.capabilities','github.list_workflows','github.list_runs',
+ 'github.create_pr','github.dispatch_workflow','github.commit','github.update_file','github.workflow_checks',
  'github.test_result','github.merge_pull_request','github.pr_merge_receipt',
  'cloudflare.worker.stage','cloudflare.worker.deploy','cloudflare.worker.verify','brain.runner_receipt']);
 const toolTitle=(tool,phase,provider)=>{
@@ -124,42 +131,80 @@ export function advanceLiveBits(previous,event){
 
 // Mount near the existing small Bubbles chat status. This module never edits
 // the assistant, its turn handler, credential flow, wallet, or tool gateway.
-function mountLiveView(){
- if(typeof document==='undefined')return;
- const status=document.querySelector('#bubblesAICard .ba-status');
- if(!status||document.querySelector('#bubblesAICard .ba-live-bit-feed'))return false;
- const wrapper=document.createElement('section');wrapper.className='ba-live-bit-feed';wrapper.setAttribute('aria-label','Current Bubbles iteration');
- const line=document.createElement('div');line.className='ba-live-bit-line';line.setAttribute('role','status');line.setAttribute('aria-live','polite');
- const disclosure=document.createElement('details');disclosure.className='ba-live-bit-details';
- const summary=document.createElement('summary');summary.textContent='Iteration details';
- const record=document.createElement('ol');record.className='ba-live-bit-record';
- disclosure.append(summary,record);wrapper.append(line,disclosure);status.after(wrapper);
- return state=>{
-  line.textContent=state.live+' · '+state.credits+' Bubble Bits credited · '+Math.max(0,state.candidates-state.credits)+' pending';
+// Show the user's requested sequence INSIDE the same Bubbles conversation,
+// not next to a detached product card or in another activity panel.
+export function mountLiveView(doc=typeof document!=='undefined'?document:null){
+ if(!doc)return false;
+ const panel=doc.querySelector('.ba-panel');
+ const status=panel?.querySelector('.ba-status');
+ const conversation=panel?.querySelector('.ba-messages');
+ if(!status||!conversation)return false;
+ if(panel.querySelector('.ba-current-iteration'))return false;
+ const small=doc.createElement('small');
+ small.className='ba-current-iteration';
+ small.setAttribute('role','status');small.setAttribute('aria-live','polite');
+ status.after(small);
+ let current=null;
+ const begin=()=>{
+  current=null;
+  small.textContent='Bubbles · checking the request; no GitHub result confirmed yet.';
+ };
+ const reset=()=>{current=null;small.textContent='';};
+ const show=state=>{
+  if(!current){
+   const wrapper=doc.createElement('section');
+   wrapper.className='ba-line ba-line-ai ba-live-bit-feed';
+   wrapper.setAttribute('aria-label','Bubbles iterations for this chat message');
+   const heading=doc.createElement('strong');
+   heading.className='ba-chat-iteration-title';
+   heading.textContent='Bubbles · working through your request';
+   const record=doc.createElement('ol');record.className='ba-live-bit-record';
+   const footer=doc.createElement('small');footer.className='ba-chat-iteration-footer';
+   wrapper.append(heading,record,footer);
+   conversation.append(wrapper);
+   current={wrapper,record,footer};
+  }
+  const {record,footer}=current;
   record.replaceChildren();
   for(const entry of state.entries){
-   const li=document.createElement('li');li.className='ba-live-bit-entry';
-   const heading=document.createElement('strong');heading.textContent='Iteration '+entry.number+' · '+entry.headline+' ('+entry.state+')';li.append(heading);
-   for(const [label,value] of [['Criteria',entry.criteria],['Criteria key',entry.criteriaKey],['Resource',entry.resource],['Detail',entry.detail],['Tool',entry.tool],['Evidence class',entry.evidenceKind],['Receipt suffix',entry.receiptTail]]){
+   const li=doc.createElement('li');li.className='ba-live-bit-entry';
+   const heading=doc.createElement('strong');
+   heading.textContent='Iteration '+entry.number+' · '+entry.headline+' · '+entry.state;
+   li.append(heading);
+   for(const [label,value] of [['Criteria',entry.criteria],['Repository / resource',entry.resource],
+       ['Work performed',entry.detail],['Receipt suffix',entry.receiptTail]]){
     if(!value)continue;
-    const small=document.createElement('small');small.textContent=label+': '+value;li.append(small);
+    const valueLine=doc.createElement('small');valueLine.textContent=label+': '+value;li.append(valueLine);
    }
    if(entry.url){
-    const link=document.createElement('a');link.textContent='Inspect actual GitHub run';
+    const link=doc.createElement('a');link.textContent='Verified GitHub run';
     link.href=entry.url;link.target='_blank';link.rel='noopener noreferrer';li.append(link);
    }
    record.append(li);
   }
-  summary.textContent='Iteration details · '+state.entries.length+' steps · '+state.credits+' Bubble Bits credited';
+  footer.textContent=state.credits+' Bubble Bits confirmed · '+Math.max(0,state.candidates-state.credits)+
+   ' receipt candidates pending; no unverified wallet credit.';
+  small.textContent=state.live;
  };
+ return {begin,reset,show};
 }
 if(typeof window!=='undefined'&&typeof document!=='undefined'&&!window.__BubblesLiveBitFeed){
  window.__BubblesLiveBitFeed=true;
- let state=newLiveBitsState(),render=null;
- const mount=()=>{
-  render=render||mountLiveView()||null;
-  if(render)render(state);
- };
- window.addEventListener('bubbles:iteration',event=>{state=advanceLiveBits(state,event.detail);mount();});
+ let state=newLiveBitsState(),render=null,turnVisible=false;
+ const mount=()=>{render=render||mountLiveView()||null;};
+ window.addEventListener('bubbles:iteration',event=>{
+  const kind=event?.detail?.type;
+  if(kind==='turn_started'){turnVisible=false;mount();render?.begin();}
+  if(kind==='session_changed'){turnVisible=false;mount();render?.reset();}
+  state=advanceLiveBits(state,event.detail);
+  mount();
+  if(turnVisible)render?.show(state);
+ });
+ // The user message is appended by the actual Bubbles chat before starting
+ // this assistant iteration sequence. Old history replay never emits this.
+ window.addEventListener('bubbles:chat-user-visible',()=>{
+  if(!state.running)return;
+  turnVisible=true;mount();render?.show(state);
+ });
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
 }
