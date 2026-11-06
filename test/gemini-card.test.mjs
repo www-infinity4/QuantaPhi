@@ -47,7 +47,7 @@ test('wrong or missing wallet credentials fail before provider calls',async()=>{
  const f=fixture(),req=f.request();
  const bare=new Request(req,{headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'}});
  assert.equal((await handleGeminiCard(bare,f.env)).status,401);
- const badOrigin=new Request(req,{headers:{Authorization:auth,Origin:'https://attacker.test','Content-Type':'application/json'}});
+ const badOrigin=new Request(f.request(),{headers:{Authorization:auth,Origin:'https://attacker.test','Content-Type':'application/json'}});
  assert.equal((await handleGeminiCard(badOrigin,f.env)).status,403);
  assert.equal(f.requests,0);
 });
