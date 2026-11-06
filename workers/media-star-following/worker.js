@@ -221,6 +221,116 @@ async function playbackReport(env,owner,body){
  await env.DB.prepare("INSERT INTO space_playback_reports(owner_id,space_id,state,reported_at) VALUES(?,?,?,?) ON CONFLICT(owner_id,space_id) DO UPDATE SET state=excluded.state,reported_at=excluded.reported_at").bind(owner,id,body.state,Date.now()).run();
  return {ok:true,spaceId:id,state:body.state,globalPlaybackVerified:false};
 }
+
+// X social Quick Card: all data is provider-confirmed per user; no synthetic timeline.
+// Requests are bounded, owner-authenticated, and only read or write requested X APIs.
+const XT_FIELDS='tweet.fields=author_id,created_at,public_metrics,referenced_tweets&expansions=author_id&user.fields=username,name,profile_image_url,verified';
+const xtId=x=>/^[0-9]{1,22}$/.test(String(x||''));
+const xtTopic=x=>/^[\p{L}\p{N}\s#@_-]{2,60}$/u.test(String(x||'').trim());
+async function xtAccount(env,owner){
+ const row=await env.DB.prepare('SELECT x_user_id,x_handle,scope FROM x_oauth_tokens WHERE owner_id=?').bind(owner).first();
+ const scopes=new Set(String(row?.scope||'').split(/\s+/).filter(Boolean));
+ return {row,canPost:scopes.has('tweet.write'),canLike:scopes.has('like.write')};
+}
+async function xtFetch(token,url,{method='GET',body}={}){
+ const response=await fetch(url,{method,headers:{Authorization:'Bearer '+token,Accept:'application/json',...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{}),signal:AbortSignal.timeout(12000)});
+ if(!response.ok){
+  const code=response.status===429?'x_rate_limited':(response.status===402||response.status===403)?'x_plan_or_permission_required':'x_api_'+response.status;
+  throw xoErr(code,response.status===429?429:502);
+ }
+ return response.json().catch(()=>{throw xoErr('x_api_invalid_response',502)});
+}
+function xtPosts(payload){
+ const people=new Map((payload.includes?.users||[]).filter(p=>xtId(p.id)).map(p=>[p.id,p]));
+ return (Array.isArray(payload.data)?payload.data:[]).filter(post=>xtId(post.id)).slice(0,20).map(post=>{
+  const person=people.get(post.author_id)||{};
+  const authorHandle=/^[A-Za-z0-9_]{1,15}$/.test(person.username||'')?person.username:null;
+  return {id:String(post.id),url:authorHandle?'https://x.com/'+authorHandle+'/status/'+post.id:'https://x.com/i/status/'+post.id,
+   text:String(post.text||'').slice(0,2000),createdAt:post.created_at||null,
+   author:{id:post.author_id||null,name:person.name||null,handle:authorHandle,avatarUrl:(/^https:\/\/pbs\.twimg\.com\//.test(person.profile_image_url||'')?person.profile_image_url:null),verified:person.verified===true},
+   metrics:post.public_metrics||null,source:'x_api_verified'};
+ });
+}
+async function xtTimeline(env,owner,url){
+ const mode=url.searchParams.get('feed')||'following';
+ if(!['public','following'].includes(mode))throw xoErr('invalid_feed',400);
+ const token=await xoOwnerToken(env,owner),account=await xtAccount(env,owner);
+ let path;
+ if(mode==='following'){
+  if(!xtId(account.row?.x_user_id))throw xoErr('x_oauth_account_required',401);
+  path='/2/users/'+account.row.x_user_id+'/reverse_chronological_timeline?max_results=10&'+XT_FIELDS;
+ }else{
+  const topic=(url.searchParams.get('q')||'science technology').trim();
+  if(!xtTopic(topic))throw xoErr('invalid_public_search',400);
+  path='/2/tweets/search/recent?query='+encodeURIComponent('('+topic.replace(/\s+/g,' OR ')+') -is:retweet')+'&max_results=10&'+XT_FIELDS;
+ }
+ const payload=await xtFetch(token,'https://api.x.com'+path);
+ return {feed:mode,posts:xtPosts(payload),source:'x_api_verified',fetchedAt:new Date().toISOString(),paginationToken:typeof payload.meta?.next_token==='string'?payload.meta.next_token:null};
+}
+async function xtLiveSpaces(env,owner,url){
+ const token=await xoOwnerToken(env,owner);
+ const topic=(url.searchParams.get('q')||'technology').trim();
+ if(!xtTopic(topic))throw xoErr('invalid_space_search',400);
+ const search=new URL('https://api.x.com/2/spaces/search');
+ search.searchParams.set('query',topic);
+ search.searchParams.set('state','live');
+ search.searchParams.set('space.fields','title,state,creator_id,started_at,scheduled_start');
+ search.searchParams.set('expansions','creator_id');
+ search.searchParams.set('user.fields','username,name');
+ const payload=await xtFetch(token,search.href);
+ const people=new Map((payload.includes?.users||[]).filter(x=>xtId(x.id)).map(x=>[x.id,x]));
+ const spaces=(payload.data||[]).filter(space=>xtId(space.creator_id)&&/^[A-Za-z0-9]{10,25}$/.test(space.id||'')&&space.state==='live').slice(0,15).map(space=>{
+  const host=people.get(space.creator_id)||{};
+  return {id:space.id,title:String(space.title||'Untitled live Space').slice(0,240),url:'https://x.com/i/spaces/'+space.id,
+   state:'live',creatorId:space.creator_id,creatorHandle:host.username||null,creatorName:host.name||null,startedAt:space.started_at||null,source:'x_api_live'};
+ });
+ return {spaces,source:'x_api_live',fetchedAt:new Date().toISOString(),refreshAfterSeconds:90,endedExcluded:true,playbackOnXOnly:true};
+}
+async function xtProfile(env,owner){
+ const token=await xoOwnerToken(env,owner);
+ const payload=await xtFetch(token,'https://api.x.com/2/users/me?user.fields=username,name,description,profile_image_url,public_metrics');
+ const person=payload.data;
+ if(!person?.id||!xtId(person.id)||!/^[A-Za-z0-9_]{1,15}$/.test(person.username||''))throw xoErr('x_identity_unavailable',502);
+ const cap=await xtAccount(env,owner);
+ if(cap.row&&cap.row.x_user_id!==person.id)throw xoErr('x_profile_mismatch',403);
+ return {profile:{id:person.id,name:person.name||null,handle:person.username,description:person.description||null,avatarUrl:/^https:\/\/pbs\.twimg\.com\//.test(person.profile_image_url||'')?person.profile_image_url:null,url:'https://x.com/'+person.username},canPost:cap.canPost,canLike:cap.canLike,source:'x_api_verified'};
+}
+async function xtWrite(env,owner,request,kind){
+ const raw=await request.text();if(raw.length>1600)throw xoErr('x_request_too_large',413);
+ let body;try{body=JSON.parse(raw)}catch{throw xoErr('invalid_json',400)}
+ if(!body||typeof body!=='object'||Array.isArray(body))throw xoErr('invalid_payload',400);
+ const cap=await xtAccount(env,owner);
+ if(!cap.row)throw xoErr('x_reauthorization_required',401);
+ if((kind==='like'&&!cap.canLike)||(kind!=='like'&&!cap.canPost))throw xoErr('x_write_permission_required',403);
+ if(!xtId(cap.row.x_user_id))throw xoErr('x_identity_unavailable',403);
+ const token=await xoOwnerToken(env,owner);
+ if(kind==='like'){
+  if(!xtId(body.postId))throw xoErr('invalid_post_id',400);
+  const result=await xtFetch(token,'https://api.x.com/2/users/'+cap.row.x_user_id+'/likes',{method:'POST',body:{tweet_id:String(body.postId)}});
+  if(result.data?.liked!==true)throw xoErr('x_like_not_confirmed',502);
+  return {ok:true,action:'liked',postId:String(body.postId),source:'x_api_confirmed'};
+ }
+ if(kind==='repost'){
+  if(!xtId(body.postId))throw xoErr('invalid_post_id',400);
+  const result=await xtFetch(token,'https://api.x.com/2/users/'+cap.row.x_user_id+'/retweets',{method:'POST',body:{tweet_id:String(body.postId)}});
+  if(result.data?.retweeted!==true)throw xoErr('x_repost_not_confirmed',502);
+  return {ok:true,action:'reposted',postId:String(body.postId),source:'x_api_confirmed'};
+ }
+ const content=String(body.text||'').trim();
+ if(!content||Array.from(content).length>280||/[\u0000-\u001f\u007f]/.test(content))throw xoErr('invalid_post_text',400);
+ const replyTo=body.replyTo||null;
+ if(replyTo!==null&&!xtId(replyTo))throw xoErr('invalid_reply_id',400);
+ const payload={text:content};
+ if(replyTo)payload.reply={in_reply_to_tweet_id:String(replyTo)};
+ const result=await xtFetch(token,'https://api.x.com/2/tweets',{method:'POST',body:payload});
+ if(!xtId(result.data?.id))throw xoErr('x_post_not_confirmed',502);
+ return {ok:true,action:replyTo?'replied':'posted',postId:String(result.data.id),url:'https://x.com/i/status/'+result.data.id,source:'x_api_confirmed'};
+}
+async function xtArchive(env,owner){
+ const query=await env.DB.prepare("SELECT e.space_id AS id,e.title,e.space_url AS url,e.availability,e.started_at AS startedAt,h.handle FROM space_episodes e JOIN space_hosts h ON e.host_user_id=h.x_user_id JOIN followed_hosts f ON f.owner_id=? AND f.active=1 AND lower(f.handle)=lower(h.handle) WHERE e.availability IN ('indexed','verified_replay') ORDER BY e.started_at DESC LIMIT 50").bind(owner).all();
+ return {spaces:(query.results||[]).map(x=>({id:x.id,title:x.title,url:x.url,handle:x.handle,status:'archived_link_unverified',source:'media_star_index'})),playbackUnverified:true};
+}
+
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
  const connect=xoConnectPage(path);if(connect)return connect;
@@ -245,9 +355,16 @@ async function handle(request,env){
   const owner=await account(request,env);
   if(path==='/v1/x/oauth/start'&&request.method==='POST')return out(await xoBegin(env,owner));
   if(path==='/v1/x/oauth/disconnect'&&request.method==='POST')return out(await xoDisconnect(env,owner,(await request.json().catch(()=>({}))).confirmation));
+  if(path==='/v1/x/timeline'&&request.method==='GET')return out(await xtTimeline(env,owner,url));
+  if(path==='/v1/x/spaces/live'&&request.method==='GET')return out(await xtLiveSpaces(env,owner,url));
+  if(path==='/v1/x/profile'&&request.method==='GET')return out(await xtProfile(env,owner));
+  if(path==='/v1/x/archive'&&request.method==='GET')return out(await xtArchive(env,owner));
+  if(path==='/v1/x/post'&&request.method==='POST')return out(await xtWrite(env,owner,request,'post'));
+  if(path==='/v1/x/like'&&request.method==='POST')return out(await xtWrite(env,owner,request,'like'));
+  if(path==='/v1/x/repost'&&request.method==='POST')return out(await xtWrite(env,owner,request,'repost'));
   if(path==='/v1/x/account'&&request.method==='GET'){
    const claimed=await linkedAccount(env,owner);
-   return out({account:claimed||null,xConnected:await xoConnected(env,owner),oauthConfigured:xoReady(env)});
+   const flags=await xtAccount(env,owner);return out({account:claimed||null,xConnected:await xoConnected(env,owner),oauthConfigured:xoReady(env),canPost:flags.canPost,canLike:flags.canLike});
   }
   if(path==='/v1/x/account'&&request.method==='POST'){
    const raw=await request.text();
