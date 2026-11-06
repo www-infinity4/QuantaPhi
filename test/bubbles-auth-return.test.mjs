@@ -89,3 +89,15 @@ test('failed callback reports only recognized error classes and never OAuth code
  assert.equal(resumeAuthReturn(host),false);
  assert.equal(JSON.parse(store.get('bubbles:oauth-return-note:v1')).reason,null);
 });
+
+
+test('Google callback returns to Bubbles chat when a valid chat-originated OAuth handoff exists',()=>{
+ const pending={provider:'google',state:'g'.repeat(43),returnPath:'/bubbles.html',flow:'same-window',expiresAt:Date.now()+60000};
+ let destination='';
+ const host={
+  location:{pathname:'/api/bubbles/connections/google/callback',search:'?result=received',replace:path=>destination=path},
+  sessionStorage:{getItem:key=>key==='bubbles:oauth-pending:v1'?JSON.stringify(pending):null,setItem:()=>{}}
+ };
+ assert.equal(resumeAuthReturn(host),true);
+ assert.equal(destination,'/bubbles.html');
+});

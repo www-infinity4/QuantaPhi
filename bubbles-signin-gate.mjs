@@ -16,6 +16,15 @@ export function summarizeGate(payload){
    scopeSetupRequired:record?.scopeSetupRequired===true,
    missing:Array.isArray(record?.missingActions)?record.missingActions.filter(a=>typeof a==='string'&&a.length<80).slice(0,6):[]};
  }
+ // /accounts is read with the same authenticated wallet session as /gate/status.
+ // An OAuth redirect or browser flag alone never earns a green check.
+ const knownGoogle=payload?.ok===true&&payload?.walletVerified===true&&
+  payload?.accountsVerified===true&&Array.isArray(payload?.accountRecords);
+ const googleAccount=knownGoogle?payload.accountRecords.find(account=>
+  account?.provider==='google'&&account.status==='connected'&&
+  Number.isFinite(account.expiresAt)&&account.expiresAt>Date.now()+30000):null;
+ summary.providers.google={connected:!!googleAccount,known:knownGoogle,
+  label:googleAccount&&typeof googleAccount.label==='string'?googleAccount.label:''};
  summary.ready=summary.providers.github.approved&&summary.providers.cloudflare.approved&&payload?.ready===true;
  summary.signedIn=summary.providers.github.connected&&summary.providers.cloudflare.connected;
  summary.state=summary.ready?'ready':summary.signedIn?'signed-in':'setup';
@@ -27,6 +36,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const gate=get('bubblesSigninGate');
  if(!gate)return null;
  const status=get('bubblesSigninStatus');
+ const connectionSummary=get('bubblesConnectionSummary');
  const actions={github:get('bubblesGithubSignIn'),cloudflare:get('bubblesCloudflareSignIn')};
  const labels={github:get('bubblesGithubStatus'),cloudflare:get('bubblesCloudflareStatus')};
  const cards={github:get('bubblesGithubCard'),cloudflare:get('bubblesCloudflareCard')};
@@ -102,6 +112,15 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const render=data=>{
   const summary=summarizeGate(data);latest=summary;
   if(recover)recover.hidden=true;
+  if(connectionSummary){
+   const names={google:'Google',github:'GitHub',cloudflare:'Cloudflare'};
+   connectionSummary.textContent=['google','github','cloudflare'].map(id=>{
+    const provider=summary.providers[id];
+    return provider?.connected?'✅ '+names[id]+' signed in':
+     id==='google'&&!provider?.known?'Google status unavailable':names[id]+' not connected';
+   }).join(' · ');
+   connectionSummary.hidden=false;
+  }
   for(const id of ['github','cloudflare']){
    const value=summary.providers[id];
    cards[id].dataset.status=value.connected?'connected':value.configured?'pending':'unavailable';
@@ -147,10 +166,20 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
      if(session?.walletVerified!==true)throw error;
      data={ok:true,ready:false,providers:{}};
     }
+    // Google is in the verified accounts catalog, not build-permissions gate.
+    let accountRecords=null;
+    if(session?.walletVerified===true){
+     try{
+      const accounts=await client.call('/accounts');
+      if(Array.isArray(accounts?.accounts))accountRecords=accounts.accounts;
+     }catch{}
+    }
     lastChecked=Date.now();
-    return render({...data,walletVerified:session?.walletVerified===true});
+    return render({...data,walletVerified:session?.walletVerified===true,
+     accountsVerified:Array.isArray(accountRecords),accountRecords:accountRecords||[]});
    } catch(error) {
     latest=null;gate.hidden=prefix==='chat'&&gate.dataset.ownerVerified==='true';gate.dataset.ready='false';
+    if(connectionSummary){connectionSummary.textContent='Account status unavailable · Open Account Connections to retry';connectionSummary.hidden=false;}
     if(walletIdentity){walletIdentity.hidden=true;walletIdentity.textContent='';}
     const code=String(error?.message||'');
     if(code==='verified_wallet_required'){
@@ -218,8 +247,9 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   client.cancelConnect();oauthInProgress=false;
   setStatus('Sign-in cancelled. You can try again.');updateButtons();
  });
- host.addEventListener('pageshow',()=>{if(Date.now()-lastChecked>15000)void refresh();});
- root.addEventListener('visibilitychange',()=>{if(!root.hidden&&Date.now()-lastChecked>15000)void refresh();});
+ // Android may return seconds after provider consent. Always revalidate.
+ host.addEventListener('pageshow',()=>void refresh());
+ root.addEventListener('visibilitychange',()=>{if(!root.hidden)void refresh();});
  // Resume the existing wallet-bound Android handoff after same-window navigation.
  const resumingProvider=client.readPendingHandoff()?.provider||'cloudflare';
  const resuming=client.resumePending(error=>void finalizeReturn(resumingProvider,error));

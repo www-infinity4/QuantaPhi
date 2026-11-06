@@ -922,6 +922,13 @@ header.append(name,close);
 // The same wallet-scoped two-account setup appears at the start of first-party
 // Bubbles chat (including the Android WebView). Preview never blocks chat.
 const chatGate=embedded?null:create('section','ba-inline-account-gate');
+const chatConnectionSummary=chatGate?create('p','ba-verified-connections','Checking connected accounts…'):null;
+if(chatConnectionSummary){
+ chatConnectionSummary.id='chatBubblesConnectionSummary';
+ chatConnectionSummary.hidden=true;
+ chatConnectionSummary.setAttribute('role','status');
+ chatConnectionSummary.setAttribute('aria-live','polite');
+}
 let chatGateMounted=false,chatGateLoading=false;
 if(chatGate){
  chatGate.id='chatBubblesSigninGate';
@@ -958,14 +965,18 @@ async function checkPanelGate(){
  if(!chatGate||chatGateMounted||chatGateLoading)return;
  // Owner/Wallet verification is separate from GitHub and Cloudflare tool grants.
  // The owner chat must not be covered by an unrelated provider setup panel.
- if(syncOwnerIdentity())return;
+ syncOwnerIdentity();
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261105-owner-verified1');
+  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261105-provider-status2');
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
   if(!chatGateMounted)throw Error('signin_gate_mount_failed');
  }catch{
-  if(syncOwnerIdentity())return;
+  syncOwnerIdentity();
+  if(chatConnectionSummary){
+   chatConnectionSummary.textContent='Account status unavailable · Open Account Connections to retry';
+   chatConnectionSummary.hidden=false;
+  }
   const hint=document.getElementById('chatBubblesSigninStatus');
   if(hint)hint.textContent='Could not verify GitHub or Cloudflare permissions. Chat is available; retry the check or open Account Connections.';
   for(const id of ['chatBubblesGithub','chatBubblesCloudflare']){
@@ -1355,7 +1366,7 @@ pairingCode.addEventListener('click',()=>pairingCode.select());
   catch{pairingCode.select();status.textContent='Select and copy the code manually.'}
  });
  pairingCard.append(pairingInstructions,pairingCode,pairingCopy);
- panel.append(header,...(chatGate?[chatGate]:[]),status,ownerMode,createOwnerCode,ownerCodeHelp,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
+ panel.append(header,...(chatGate?[chatConnectionSummary,chatGate]:[]),status,ownerMode,createOwnerCode,ownerCodeHelp,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
 if(nativeOverlay){
  // Owner pairing uses the same chat composer, never a separate paste form.
  ownerMode.textContent='Robot Brain not linked';
@@ -1537,6 +1548,14 @@ body .ba-panel button:disabled,#bubblesAICard button:disabled{
  color:#65536f!important;-webkit-text-fill-color:#65536f!important;
  background:#f1eaf5!important;opacity:.58!important;cursor:not-allowed!important;
 }
+/* Compact verified sign-ins stay readable after the login panel is hidden. */
+body .ba-panel .ba-verified-connections{
+ display:block;margin:8px 0;padding:9px 12px;
+ font:650 14px/1.6 system-ui;letter-spacing:.015em;
+ color:#285443!important;-webkit-text-fill-color:#285443!important;
+ background:#f3f9f5;border:1px solid #bed8c9;border-radius:11px;overflow-wrap:anywhere;
+}
+body .ba-panel .ba-verified-connections[hidden]{display:none!important}
 /* Provider identity remains familiar inside the floating chat; these override generic purple controls. */
 body .ba-panel .ba-inline-account-provider button[data-provider]{
  display:flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;
