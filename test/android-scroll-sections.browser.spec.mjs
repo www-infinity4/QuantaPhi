@@ -24,7 +24,7 @@ test('Android proximity sections and arrows do not forcibly move viewport',async
  await expect.poll(()=>page.evaluate(()=>getComputedStyle(document.documentElement).scrollSnapType)).toBe('none');
 });
 
-test('populated Following feed stays at the user's scroll position after a card change',async({page})=>{
+test("populated Following feed stays at the user's scroll position after a card change",async({page})=>{
  await ready(page);
  await page.evaluate(()=>{
   const feed=document.getElementById('oracleFollowingFeed');
