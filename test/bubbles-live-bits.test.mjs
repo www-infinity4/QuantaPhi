@@ -60,7 +60,14 @@ test('the same live status line loads on every Bubbles website entrypoint withou
   assert.match(html,/bubbles-ai\.js\?v=20261106-cloudflare-click-fixed7/);
  }
  const module=fs('bubbles-live-iteration-feed.mjs');
- assert.match(module,/status\.after\(wrapper\)/);
+ assert.match(module,/\.ba-panel \.ba-status|querySelector\('\.ba-panel'\)/,
+  'Live iterations must mount on the actual body-mounted Bubbles chat, not #bubblesAICard');
+ assert.match(module,/conversation\.append\(wrapper\)/,
+  'Each iteration sequence must be part of the same chat transcript');
+ assert.match(module,/bubbles:chat-user-visible/,
+  'The first iteration should appear after the user's message');
+ assert.doesNotMatch(module,/#bubblesAICard \.ba-status/,
+  'The original selector never finds the detached messenger panel');
  assert.doesNotMatch(module,/fetch\(|localStorage|walletWrites|innerHTML/);
 });
 function requireSource(){
@@ -213,3 +220,29 @@ test('direct GitHub read reports server receipt only for matching verified backe
  await ctx.runDirect(op,{ownerRequest:'Inspect real chat source'});
  assert.equal(events.at(-1).status,'unverified','text-only outcome is not a verified tool receipt');
 });
+
+test('live GitHub receipts appear even while Bubble Bit wallet issuance stays disabled',async()=>{
+ const {githubIteration}=await import('../workers/infinity-brain-clock/iteration-credit.mjs');
+ const ownerHash='a'.repeat(64),requestId='11111111-1111-4111-8111-111111111111';
+ const receipt=await githubIteration({WRITER_OWNER_HASH:ownerHash,BUBBLE_BITS_ENABLED:'0'},
+  {requestId,bitContext:null},{ok:true,status:'runs_read_only',runs:[]},
+  {action:'list_runs',repository:'www-infinity4/TestPilot'},0);
+ assert.equal(receipt.receipt.tool,'github.list_runs');
+ assert.equal(receipt.receipt.status,'complete');
+ assert.equal(receipt.credit,undefined,'Display receipts never mint wallet currency');
+ assert.equal(receipt.bit.status,'context_unavailable');
+ const source=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ const marker=source.indexOf('const saveReceipt=async (receipt,operation=body)=>{');
+ const end=source.indexOf('record.receipts.push(metadata);',marker);
+ assert.ok(marker>0&&end>marker);
+ assert.doesNotMatch(source.slice(marker,end),/if\(this\.env\.BUBBLE_BITS_ENABLED==='1'\)/,
+  'Brain must record real tool receipts regardless of the credit flag');
+});
+
+test('the messenger emits a user-visible chat turn before showing its sequential iterations',()=>{
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(source,/new CustomEvent\('bubbles:chat-user-visible'/);
+ assert.match(source,/publishDirectGithubIteration\(operation,requestId,'tool_started'/);
+ assert.match(source,/assist:'github\.assist'/);
+});
+
