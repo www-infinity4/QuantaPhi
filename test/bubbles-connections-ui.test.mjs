@@ -124,6 +124,7 @@ test('account page starts consent with the selected provider permissions',async 
 
  googleConfigured=true;
  window.location.assign=url=>{navigation=url;};
+ window.location.replace=url=>{navigation=url;};
  await panel.refresh();
  const googleButton=descendants(container).find(node=>node.dataset?.provider==='google');
  const googleCard=descendants(container).find(node=>node.childNodes?.includes(googleButton));
@@ -154,6 +155,8 @@ test('account page starts consent with the selected provider permissions',async 
  await staleLoad;
  assert.ok(googleSignedIn(),'An older account read must not replace the verified Google status');
  assert.equal(descendants(returned).some(node=>node.dataset?.provider==='google'),false);
+ for(let i=0;i<8&&navigation!=='/bubbles.html';i++)await new Promise(setImmediate);
+ assert.equal(navigation,'/bubbles.html','Verified lost-tab Google callback must return to Bubbles, not strand user in settings');
 });
 
 test('Android Cloudflare sign-in navigates this tab directly and never opens about:blank',async()=>{

@@ -57,7 +57,7 @@ test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>
  assert.match(source,/Finishing sign-in/);
 });
 
-function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn=null,chat=false}={}){
+function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn=null,oauthProvider='cloudflare',googleRecovery=false,chat=false}={}){
  const ids=chat?['chatBubblesSigninGate','chatBubblesSigninStatus','chatBubblesGithubSignIn',
   'chatBubblesCloudflareSignIn','chatBubblesGithubStatus','chatBubblesCloudflareStatus',
   'chatBubblesGithubCard','chatBubblesCloudflareCard','chatBubblesRetrySignInCheck',
@@ -69,7 +69,8 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
   listeners:{},addEventListener(event,callback){this.listeners[event]=callback;},scrollIntoView(){}}]));
  const root={getElementById:id=>elements.get(id)||null,addEventListener(){}};
  const popups=[],calls=[],storage=new Map();
- if(oauthReturn)storage.set('bubbles:oauth-return-note:v1',JSON.stringify({provider:'cloudflare',result:oauthReturn,at:Date.now()}));
+ if(oauthReturn)storage.set('bubbles:oauth-return-note:v1',JSON.stringify({provider:oauthProvider,result:oauthReturn,at:Date.now()}));
+ let recoveredGoogle=false;
  const host={document:root,QuantaCloudConnection:{resolveDeviceToken:async()=>walletMissing?'':'sq_'+'a'.repeat(40)},
   addEventListener(){},removeEventListener(){},setTimeout:()=>1,clearTimeout(){},
   sessionStorage:{getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)},
@@ -80,7 +81,12 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
   const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
   if(path==='/session')return Response.json({ok:true,walletVerified:payload?.walletVerified===true});
   if(path==='/gate/status')return Response.json({ok:true,...payload});
-  if(path==='/accounts')return Response.json({ok:true,accounts:payload?.accountRecords||[]});
+  if(path==='/accounts')return Response.json({ok:true,accounts:googleRecovery&&recoveredGoogle?
+   [{provider:'google',id:'verified-google-id',status:'connected',label:'Google account',expiresAt:Date.now()+3600000}]:payload?.accountRecords||[]});
+  if(path==='/handoff/google/resume'&&googleRecovery){
+   recoveredGoogle=true;
+   return Response.json({ok:true,status:'connected',account:{id:'verified-google-id',provider:'google',label:'Google account'}});
+  }
   if(path==='/start'){
    if(startFails)return Response.json({ok:false,error:'provider_not_configured'},{status:503});
    const adapter=cloudflareAdapter({clientId:'bubbles-test-client',clientSecret:'server-only',
@@ -298,4 +304,35 @@ test('chat owner verification must not bypass the connection status mount',()=>{
  const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.doesNotMatch(source,/if\(syncOwnerIdentity\(\)\)return;/);
  assert.match(source,/chatBubblesConnectionSummary/);
+});
+
+
+test('Google callback received in a different Android tab resumes verified wallet handoff inside Bubbles',async t=>{
+ const payload={...partialGate(),ok:true,walletVerified:true};
+ const ui=mountedGate(t,payload,{oauthReturn:'received',oauthProvider:'google',googleRecovery:true});
+ await new Promise(setImmediate);
+ await new Promise(setImmediate);
+ assert.ok(ui.calls.some(call=>call.path==='/handoff/google/resume'),
+  'Bubbles must recover the encrypted Google return even when tab sessionStorage has no pending state');
+ assert.equal(ui.calls.some(call=>call.path==='/start'),false,
+  'Google must not demand another authorization after the server already received consent');
+ assert.match(ui.get('bubblesConnectionSummary').textContent,/✅ Google signed in/);
+ assert.match(ui.get('bubblesSigninStatus').textContent,/Google sign-in verified/);
+ assert.equal(ui.get('bubblesCloudflareCard').hidden,false,'Google authorization does not grant Cloudflare permissions');
+});
+
+
+test('Bubbles chat and Account Connections share the current Google and Cloudflare connector code',()=>{
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const html=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
+ const accounts=readFileSync(new URL('../bubbles-accounts.html',import.meta.url),'utf8');
+ const gate=readFileSync(new URL('../bubbles-signin-gate.mjs',import.meta.url),'utf8');
+ const shared=readFileSync(new URL('../bubbles-connections-gate.mjs',import.meta.url),'utf8');
+ assert.doesNotMatch(source,/bubbles-connections\.mjs\?v=20261026-full-consent6/,'Old October connector cannot be loaded in chat');
+ for(const content of [source,accounts,shared])
+  assert.match(content,/bubbles-connections\.mjs\?v=20261105-google-android-return4/);
+ for(const content of [source,html])
+  assert.match(content,/bubbles-signin-gate\.mjs\?v=20261105-google-android-return4/);
+ assert.match(gate,/bubbles-connections-gate\.mjs\?v=20261105-google-android-return4/);
+ assert.match(html,/bubbles-ai\.js\?v=20261105-google-android-return4/);
 });
