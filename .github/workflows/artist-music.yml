@@ -1,0 +1,31 @@
+name: On-page artist music source and regression checks
+on:
+  pull_request:
+    paths:
+      - 'classic-rock-official-card.mjs'
+      - 'infinity-artist-music.js'
+      - 'steve-miller-book-of-dreams.js'
+      - 'quick-infinity-radio.js'
+      - 'index.html'
+      - 'test/infinity-artist-music.test.mjs'
+      - 'test/steve-miller-book-of-dreams.test.mjs'
+      - 'test/classic-rock-official-card.test.mjs'
+      - '.github/workflows/artist-music.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  music-regressions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify player and card scripts
+        run: |
+          node --check infinity-artist-music.js
+          node --check steve-miller-book-of-dreams.js
+          node --check classic-rock-official-card.mjs
+      - name: Verify shared player, radio focus and no outbound music controls
+        run: node --test test/infinity-artist-music.test.mjs test/steve-miller-book-of-dreams.test.mjs test/classic-rock-official-card.test.mjs
