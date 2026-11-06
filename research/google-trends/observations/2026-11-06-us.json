@@ -3,348 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T03:31:32.544477Z",
+  "checked_at": "2026-11-06T04:01:35.067614Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jessica chastain",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T03:10:00Z",
+      "query": "brian thomas jr",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T03:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/inside-jessica-chastains-marriage-italian-213101174.html",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-chastain-pucci-micro-minidress-072043786.html",
-        "https://www.wvnews.com/newsfeed/us/ny-special-screening-of-heartland/image_ac0f7709-6e51-50f1-9ba9-3101eba39d09.html"
+        "https://www.espn.com/nfl/story/_/id/50366346/jaguars-wr-brian-thomas-jr-trade-deadline-rumors",
+        "https://www.bigcatcountry.com/jacksonville-jaguars-draft/90730/jacksonville-jaguar-news-would-you-trade-wr-brian-thomas-jr",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-03/rap-btj-has-drawn-interest-from-a-lot-of-teams"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Rvxc1r0ZP_IKnUDvSFUqMLr78OihurfJYvgXeqcaFS_pptwJL1e-0AbFVoU",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWOerMcZ4_oBM5gC-Wr6n-dB8qRszeQ0vLCM0E1mO5kShw9wmdkD9HxJOtQbU",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/inside-jessica-chastains-marriage-italian-213101174.html",
-          "title": "Inside Jessica Chastain's marriage to Italian nobleman husband and rarely-seen two kids",
-          "publisher": "Yahoo",
+          "url": "https://www.espn.com/nfl/story/_/id/50366346/jaguars-wr-brian-thomas-jr-trade-deadline-rumors",
+          "title": "Why trade deadline rumors are swirling around Jaguars receiver Brian Thomas Jr.",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Rvxc1r0ZP_IKnUDvSFUqMLr78OihurfJYvgXeqcaFS_pptwJL1e-0AbFVoU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWOerMcZ4_oBM5gC-Wr6n-dB8qRszeQ0vLCM0E1mO5kShw9wmdkD9HxJOtQbU"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-chastain-pucci-micro-minidress-072043786.html",
-          "title": "Jessica Chastain’s Pucci Micro Minidress Barely Skims Her Thighs for Press",
-          "publisher": "Yahoo",
+          "url": "https://www.bigcatcountry.com/jacksonville-jaguars-draft/90730/jacksonville-jaguar-news-would-you-trade-wr-brian-thomas-jr",
+          "title": "Duval Dispatch: Would you trade WR Brian Thomas Jr.?",
+          "publisher": "Big Cat Country",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU4V4vvl-v1O7uej1a6Q_jMZpdWyQKWEVLj-JZSWKw3gYg3e-aDBdSUHJ9KN8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl_JISMh8P97FOIbvVnsT5II_VWHxrqp_-EtBbmrALqbB9sND7WtkuyRH1yU4"
         },
         {
-          "url": "https://www.wvnews.com/newsfeed/us/ny-special-screening-of-heartland/image_ac0f7709-6e51-50f1-9ba9-3101eba39d09.html",
-          "title": "NY Special Screening of \"Heartland\"",
-          "publisher": "WV News",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-03/rap-btj-has-drawn-interest-from-a-lot-of-teams",
+          "title": "Rap: BTJ has drawn interest from ‘a lot’ of teams",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs0rRUxN6MRimibc8tqQVFdrmLfTil2V5Lfg6zgI_NTnRjC6UY9IxbVIFFZNE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPUltWeawqI-13KCjpQ0gFErTXjKnw6oAoAF0QZBnJN7mEddXAlNXalOVbwWo"
         }
       ]
     },
     {
-      "query": "josh cuevas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T03:10:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/ravens-josh-cuevas-draws-two-targets-in-loss/",
-        "https://www.rotowire.com/football/headlines/josh-cuevas-news-draws-two-targets-in-loss-645847"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6IZepRI9gTMMeeV1QI8P5ZShVBPsRhcSNzRbZFjNg-VEoRuBY0wUkhrZ4u6g",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/ravens-josh-cuevas-draws-two-targets-in-loss/",
-          "title": "Ravens' Josh Cuevas: Draws two targets in loss",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6IZepRI9gTMMeeV1QI8P5ZShVBPsRhcSNzRbZFjNg-VEoRuBY0wUkhrZ4u6g"
-        },
-        {
-          "url": "https://www.rotowire.com/football/headlines/josh-cuevas-news-draws-two-targets-in-loss-645847",
-          "title": "Josh Cuevas News: Draws two targets in loss",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREd6sv7j3AuWA9CdZi9Eu8rlHfEkpY2MXYV1mJdvwBySXXApuXRfPIL3754e8"
-        }
-      ]
-    },
-    {
-      "query": "meg ryan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T03:10:00Z",
-      "related_news_urls": [
-        "https://people.com/billy-crystal-and-meg-ryan-reunite-at-broadway-show-860-12238598",
-        "https://www.yahoo.com/news/videos/meg-ryan-billy-crystal-reunite-133847464.html",
-        "https://palipost.com/860-billy-crystals-love-letter-to-pacific-palisades/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREPJ1tzNEr4ldcNHn5zHiDulSsBHs_ZYG6ZlRuYs7qLyPLhO6peqSZ6Liw1EQ",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/billy-crystal-and-meg-ryan-reunite-at-broadway-show-860-12238598",
-          "title": "Billy Crystal and Meg Ryan Reunite at His Broadway Show, 37 Years After When Harry Met Sally",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREPJ1tzNEr4ldcNHn5zHiDulSsBHs_ZYG6ZlRuYs7qLyPLhO6peqSZ6Liw1EQ"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/meg-ryan-billy-crystal-reunite-133847464.html",
-          "title": "Meg Ryan and Billy Crystal Reunite in Sweet New Photo",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQHwHCzrnosrs0TZ__yWAzi2xpORtt2vVH4DYIVHjKqpP5FkI9iTlij_AS0bo"
-        },
-        {
-          "url": "https://palipost.com/860-billy-crystals-love-letter-to-pacific-palisades/",
-          "title": "‘860’: Billy Crystal’s Love Letter to Pacific Palisades",
-          "publisher": "Palisadian-Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQWn1b6fjuOI0rsRTULRfm8pAUGMo6dnB6o97LbGqVsBfvTeulWhO5dH7pSNU"
-        }
-      ]
-    },
-    {
-      "query": "rice basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T03:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/texas-a-m-commerce-lions-vs-rice-owls-prediction-odds-2026-11-05/",
-        "https://www.accuscore.com/game/cmw3dmmh20oo3nu01k2tokc02",
-        "https://www.bleachernation.com/picks/2026/11/05/southland-basketball-predictions-computer-picks-and-best-bets-november-5/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/texas-a-m-commerce-lions-vs-rice-owls-prediction-odds-2026-11-05/",
-          "title": "Texas A&M-Commerce vs Rice Prediction, Picks & Odds | 05 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
-        },
-        {
-          "url": "https://www.accuscore.com/game/cmw3dmmh20oo3nu01k2tokc02",
-          "title": "East Texas A&M vs Rice Prediction (Nov 5): Rice 68% — Odds & Live Score",
-          "publisher": "AccuScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVe5QK3K4pl4EsTRMoia7itiVGglzNGbyM4pdyVy5yvzm4vu_snGyHPVflKak"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/05/southland-basketball-predictions-computer-picks-and-best-bets-november-5/",
-          "title": "Southland Basketball Predictions, Computer Picks and Best Bets | November 5",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_hkpVTUmuzoHc2fKxAa-phvbE5xkt3TR9xIqR3EgCKs46mfx8S1AESyOm4yY"
-        }
-      ]
-    },
-    {
-      "query": "miles bridges",
+      "query": "dillon brooks",
       "approx_searches": "1000+",
-      "published_at": "2026-11-06T03:00:00Z",
+      "published_at": "2026-11-06T03:40:00Z",
       "related_news_urls": [
-        "https://www.nba.com/watch/video/miles-bridges-with-the-3-pointer-2",
-        "https://www.cbssports.com/fantasy/basketball/news/suns-miles-bridges-chips-in-18-in-wednesdays-loss/",
-        "https://www.espn.com/video/clip/_/id/50364706/miles-bridges-1-bucket"
+        "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
+        "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns",
+        "https://www.espn.com/nba/story/_/id/50365914/warriors-draymond-green-ejected-scuffle-suns"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzaMUnUAEIj-raQk7_eiLcC0p0O7w4q9q_zHz2Hx0L1O9xPdwdBGHbIl1CvKs",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9L3IbesFtC2R1bQ6RajCERU_JICdBLNrJcO1GjSHMhdXh6QjCubt-P_Fq0E8",
       "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://www.nba.com/watch/video/miles-bridges-with-the-3-pointer-2",
-          "title": "Miles Bridges with the 3-pointer",
+          "url": "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
+          "title": "Steph Curry says Draymond's ejection 'lit a fire' in Warriors",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzaMUnUAEIj-raQk7_eiLcC0p0O7w4q9q_zHz2Hx0L1O9xPdwdBGHbIl1CvKs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9L3IbesFtC2R1bQ6RajCERU_JICdBLNrJcO1GjSHMhdXh6QjCubt-P_Fq0E8"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/suns-miles-bridges-chips-in-18-in-wednesdays-loss/",
-          "title": "Suns' Miles Bridges: Chips in 18 in Wednesday's loss",
-          "publisher": "CBS Sports",
+          "url": "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns",
+          "title": "Draymond Green Rips Dillon Brooks, Won't Respect His 'Energy' After Altercation in Warriors-Suns",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRexZUBC31V2b_qWPQuYS7NLlKz7nZ6EbsLxoBaQlxfP74UK5mCW9hQla-oNio"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1RPn5xpd2j4qKr_Blsf5DnJzrWURse5aFyTwHazkTEJzURaQzOOSoltGdmS4"
         },
         {
-          "url": "https://www.espn.com/video/clip/_/id/50364706/miles-bridges-1-bucket",
-          "title": "Miles Bridges with the and-1 bucket",
+          "url": "https://www.espn.com/nba/story/_/id/50365914/warriors-draymond-green-ejected-scuffle-suns",
+          "title": "Draymond Green ejected after scuffle with Suns as Warriors rally for win",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT18dsjDC3HzfH8g2i1Tfnh1U2H0EiZv-76ogecbOPwy0LxeYgNtpVjgD7dp2Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfpZXFyT6xWztDpNBcd_wFkIZ626NYNJoILXFw3DIfFU0MNTtTw3JYoDsW7EQ"
         }
       ]
     },
     {
-      "query": "bryan cranston",
+      "query": "cal poly vs arizona",
       "approx_searches": "500+",
-      "published_at": "2026-11-06T03:00:00Z",
+      "published_at": "2026-11-06T03:40:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-05/t-mobile-customers-swap-roaming-hotspots-for-streaming-benefits",
-        "https://www.cnet.com/tech/mobile/t-mobile-t-mix-saver-plan/",
-        "https://variety.com/2026/tv/news/t-mobile-bryan-cranston-t-mix-1236940344/"
+        "https://sports.yahoo.com/articles/arizona-men-basketball-vs-cal-030000056.html",
+        "https://www.azdesertswarm.com/basketball/85124/arizona-wildcats-mens-basketball-cal-poly-mustangs-preview-home-opener-mckale-2026",
+        "https://tucson.com/sports/arizonawildcats/basketball/article_2c8df165-a0e3-4ddf-8686-92b5658a7afb.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4TTB6AsiR-fyjm0qDvG-Kpt0r4vXSr_1T_tTGQCFwcw3tnUPjtQvZfOcnztw",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-05/t-mobile-customers-swap-roaming-hotspots-for-streaming-benefits",
-          "title": "T-Mobile Customers Swap Roaming, Hotspots For Streaming Benefits",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4TTB6AsiR-fyjm0qDvG-Kpt0r4vXSr_1T_tTGQCFwcw3tnUPjtQvZfOcnztw"
-        },
-        {
-          "url": "https://www.cnet.com/tech/mobile/t-mobile-t-mix-saver-plan/",
-          "title": "T-Mobile Is Throwing One More Phone Plan Into the T-Mix for Budget Subscribers",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrnLlM5dB_51zc-5j39XQJIJ5B7K7eiW_hoyTW9xl1dyrMP3edL8DLuVpVWM"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/t-mobile-bryan-cranston-t-mix-1236940344/",
-          "title": "T-Mobile Taps Bryan Cranston in Bid to Wake Consumers Up to ‘T-Mix’ Plan",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaFoMXQ3TprazLbpQ0KOs945u-kytc7MQ86TIaaQdkyRYKNWLx60IAJGcsnno"
-        }
-      ]
-    },
-    {
-      "query": "nhl games",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T03:00:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/anaheim-ducks-at-edmonton-oilers-game-preview-november-5-2026",
-        "https://www.espn.com/video/clip/_/id/50394636/cutter-gauthier-tallies-goal-vs-oilers",
-        "https://www.nytimes.com/athletic/7756771/2026/11/05/ducks-vs-oilers-stream-how-to-watch-nov-5/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/anaheim-ducks-at-edmonton-oilers-game-preview-november-5-2026",
-          "title": "Ducks at Oilers projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50394636/cutter-gauthier-tallies-goal-vs-oilers",
-          "title": "Cutter Gauthier tallies goal vs. Oilers",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyrcL7-zl1f-lJOugX3WLydpn_M5Kdpy71GDUIZeOWpHSODXqCSORAig05LOM"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7756771/2026/11/05/ducks-vs-oilers-stream-how-to-watch-nov-5/",
-          "title": "How to watch Ducks vs. Oilers: TV channel and streaming options for November 5",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPbrfHQFgu5zdTOgAFGbLK6LDbnyn4OEqoZMkAcXTppKEjiz1ITDIqRA7UckM"
-        }
-      ]
-    },
-    {
-      "query": "tristan da silva",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T03:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/videos/tristan-da-silva-primed-light-180146042.html",
-        "https://www.washingtonpost.com/politics/2026/11/02/trump-last-midterm-rally-marks-end-political-era/",
-        "https://www.telegraphherald.com/image_009e4b93-bda5-44c2-934e-10809f6a79da.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-7SX4FGrWagQFZ8B0k44tMeOroxkkv4IGBWkwrSfynj49zu11G_RLPGSyjFM",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3zp1DR0T5b-hub6TgMDwgmWf8gwo5K9AZiBUeVrqo95ZsIO4FPtZ4gMajYM",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/videos/tristan-da-silva-primed-light-180146042.html",
-          "title": "Tristan da Silva Primed to Light Up the Suns from Deep",
+          "url": "https://sports.yahoo.com/articles/arizona-men-basketball-vs-cal-030000056.html",
+          "title": "Arizona men’s basketball vs. Cal Poly fan discussion",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-7SX4FGrWagQFZ8B0k44tMeOroxkkv4IGBWkwrSfynj49zu11G_RLPGSyjFM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3zp1DR0T5b-hub6TgMDwgmWf8gwo5K9AZiBUeVrqo95ZsIO4FPtZ4gMajYM"
         },
         {
-          "url": "https://www.washingtonpost.com/politics/2026/11/02/trump-last-midterm-rally-marks-end-political-era/",
-          "title": "Trump faces a future without the rallies that made him a political force",
-          "publisher": "The Washington Post",
+          "url": "https://www.azdesertswarm.com/basketball/85124/arizona-wildcats-mens-basketball-cal-poly-mustangs-preview-home-opener-mckale-2026",
+          "title": "What to watch for when Arizona men’s basketball faces Cal Poly in home opener",
+          "publisher": "Arizona Desert Swarm",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMbXoT_hq1Z_UaMajcFzTvk-1nr-KvB_mP6iF_iTrqQgexguB1b8J4_8GGwo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStVU7OGpoU4Zo_BHGogyBpHIhpZAycaKGGjnkQJPy6G8qrdBBX6bF1trglaZE"
         },
         {
-          "url": "https://www.telegraphherald.com/image_009e4b93-bda5-44c2-934e-10809f6a79da.html",
-          "title": "Trump Visit",
-          "publisher": "TelegraphHerald.com",
+          "url": "https://tucson.com/sports/arizonawildcats/basketball/article_2c8df165-a0e3-4ddf-8686-92b5658a7afb.html",
+          "title": "Arizona-Cal Poly scouting report: On Godfrey's latest possibilities and Mustang retention",
+          "publisher": "Arizona Daily Star",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjfPuUJZ69RwhWkjwYzsYoFIlpCUG1A1tjgK1A4Cuw-3hJZ5ZxusLHz-kOU5U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1VR-3ppL3wWwLGn46ccLE1WYhhIUe9yZ_KOphsHdStnOfKTJuSvuThZN4Ko"
         }
       ]
     },
     {
-      "query": "the walking dead",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T02:50:00Z",
-      "related_news_urls": [
-        "https://ew.com/yaga-hudson-williams-castrated-corpse-director-interview-12194611",
-        "https://www.theguardian.com/tv-and-radio/2026/oct/31/yaga-review-sky-atlantic-erotic-thriller-hudson-williams",
-        "https://www.amcglobalmedia.com/2026/11/05/yaga-is-the-1-exclusive-series-launch-in-the-history-of-amc/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJyhqGksxVswAR7sLUJIuYFykqKSp8i5NxBGWsj_eredyx1X4E8oqWzPGm7rg",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/yaga-hudson-williams-castrated-corpse-director-interview-12194611",
-          "title": "How ‘Yaga’ put Hudson Williams ‘through hell’ for an exposing scene",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJyhqGksxVswAR7sLUJIuYFykqKSp8i5NxBGWsj_eredyx1X4E8oqWzPGm7rg"
-        },
-        {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/oct/31/yaga-review-sky-atlantic-erotic-thriller-hudson-williams",
-          "title": "Yaga review – this erotic witchy thriller starring Hudson Williams is a total head-messer",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5kp3BwJLY6BN4KdimAvO34s0M0ZOKBLQvDRJXjqiLq53yVqv7ImMf9ZSgJqw"
-        },
-        {
-          "url": "https://www.amcglobalmedia.com/2026/11/05/yaga-is-the-1-exclusive-series-launch-in-the-history-of-amc/",
-          "title": "YAGA IS THE #1 EXCLUSIVE SERIES LAUNCH IN THE HISTORY OF AMC+",
-          "publisher": "AMC Global Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6f0nr44e935Emzbq9zr5UHkJlIqm0yKbNxG4d2lNU_5DuHf5SrfdHYcd2U9I"
-        }
-      ]
-    },
-    {
-      "query": "montreal canadiens",
+      "query": "schumer",
       "approx_searches": "500+",
-      "published_at": "2026-11-06T02:50:00Z",
+      "published_at": "2026-11-06T03:40:00Z",
       "related_news_urls": [
-        "https://theahl.com/news/mittelstadt-ahl-rookie-month",
-        "https://thehockeynews.com/nhl/montreal-canadiens/latest-news/canadiens-top-prospect-is-only-continuing-to-dominate",
-        "https://insidetherink.com/tag/ahl-rookie-of-the-month/"
+        "https://www.theatlantic.com/ideas/2026/11/midterms-democrats-mississippi-senate/689301/",
+        "https://www.politico.com/news/2026/11/05/chuck-schumer-democrats-majority-senate-01152797",
+        "https://apnews.com/article/schumer-trump-democrat-majority-election-d8d5262fe3d820a3dc73193002f0f27e"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqkaHgn8HtOdOYIIURDoytXtpw2GjItw_WkpE2wBnEC0ncevXsJHjBcdcjIA",
-      "image_credit": "The American Hockey League",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsp_CCwVFZLkgNoMRRxzO_ajp90iGnUvRaMoRWQ4WQuTB4S_GaTL5pqj9rgwU",
+      "image_credit": "The Atlantic",
       "news": [
         {
-          "url": "https://theahl.com/news/mittelstadt-ahl-rookie-month",
-          "title": "Rocket’s Mittelstadt named AHL Rookie of the Month for October",
-          "publisher": "The American Hockey League",
+          "url": "https://www.theatlantic.com/ideas/2026/11/midterms-democrats-mississippi-senate/689301/",
+          "title": "Chuck Schumer’s Revenge",
+          "publisher": "The Atlantic",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqkaHgn8HtOdOYIIURDoytXtpw2GjItw_WkpE2wBnEC0ncevXsJHjBcdcjIA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsp_CCwVFZLkgNoMRRxzO_ajp90iGnUvRaMoRWQ4WQuTB4S_GaTL5pqj9rgwU"
         },
         {
-          "url": "https://thehockeynews.com/nhl/montreal-canadiens/latest-news/canadiens-top-prospect-is-only-continuing-to-dominate",
-          "title": "Canadiens Top Prospect Is Only Continuing To Dominate",
-          "publisher": "The Hockey News",
+          "url": "https://www.politico.com/news/2026/11/05/chuck-schumer-democrats-majority-senate-01152797",
+          "title": "Chuck Schumer just won a huge majority. He’s already thinking about making it bigger.",
+          "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRF3Cz_G9sqNx4mC0MKLv1G9Qiu137sUUCDcETPNk6SLnKYUFfqGe13WNR7474"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbSMvpeNZ8cDnTh733BxNy0ocAeou2yiHUFsrcLxEo4SHCt7IavGWcTUAQkuE"
         },
         {
-          "url": "https://insidetherink.com/tag/ahl-rookie-of-the-month/",
-          "title": "AHL Rookie of the Month Archives",
-          "publisher": "Inside The Rink",
+          "url": "https://apnews.com/article/schumer-trump-democrat-majority-election-d8d5262fe3d820a3dc73193002f0f27e",
+          "title": "Senate Democrats will not let Trump put a 'right-winger' on the Supreme Court, Schumer vows",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUxb43z2HVC7q3jHV_4PaA33SxbqlCdTC8zFFDbnzPqdJkcm4ANO090287yS4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ283VH_BN5mq_6FQnwfFzHTSN_tg8xUj5-P6OE1aXeLOaJ9rgrSzUUurfEMKU"
+        }
+      ]
+    },
+    {
+      "query": "paul newman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T03:40:00Z",
+      "related_news_urls": [
+        "https://stephensilver.substack.com/p/a-generational-acting-duel-the-color",
+        "https://westfaironline.com/fairfield/paul-newmans-hole-in-the-wall-gang-camp-names-coo/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIDCrRpDMR25oSanWqCdGxX0bYEM2Debjk9c8Q6QYcymjo6OcfFdi6tvyLNZA",
+      "image_credit": "Substack",
+      "news": [
+        {
+          "url": "https://stephensilver.substack.com/p/a-generational-acting-duel-the-color",
+          "title": "A generational acting duel: ‘The Color of Money’ turns 40",
+          "publisher": "Substack",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIDCrRpDMR25oSanWqCdGxX0bYEM2Debjk9c8Q6QYcymjo6OcfFdi6tvyLNZA"
+        },
+        {
+          "url": "https://westfaironline.com/fairfield/paul-newmans-hole-in-the-wall-gang-camp-names-coo/",
+          "title": "Paul Newman’s Hole in the Wall Gang Camp names COO",
+          "publisher": "Westfair Communications",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScw1otxZWTpu2MGjopSUhMxkKQkXFIS-BX6ruRILRbcqAZqgJgAijCxuyer64"
+        }
+      ]
+    },
+    {
+      "query": "cornhusker state",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T03:40:00Z",
+      "related_news_urls": [
+        "https://nebraskaexaminer.com/2026/11/04/nebraska-legislature-republican-supermajority-will-end-democrats-could-pick-up-three-seats/",
+        "https://omaha.com/news/state-regional/government-politics/elections/article_7a1a4d55-a7ac-4162-af3d-68ba95b2dc96.html",
+        "https://www.ktiv.com/2026/11/03/nebraska-election-results-maps/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUMbWyHp4QXya9AFiIi8tWvLQTGyyy6plYw2lT-IruKy0wYCCC-sqr6nsxx6E",
+      "image_credit": "Nebraska Examiner",
+      "news": [
+        {
+          "url": "https://nebraskaexaminer.com/2026/11/04/nebraska-legislature-republican-supermajority-will-end-democrats-could-pick-up-three-seats/",
+          "title": "Nebraska Legislature Republican supermajority will end; Democrats could pick up 3 seats",
+          "publisher": "Nebraska Examiner",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUMbWyHp4QXya9AFiIi8tWvLQTGyyy6plYw2lT-IruKy0wYCCC-sqr6nsxx6E"
+        },
+        {
+          "url": "https://omaha.com/news/state-regional/government-politics/elections/article_7a1a4d55-a7ac-4162-af3d-68ba95b2dc96.html",
+          "title": "Omaha-area voters shift the balance of power in Nebraska's Legislature",
+          "publisher": "Omaha World-Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2cpu88bPkOo17jWvKX6_Cv8KAuroJaL7_gfDetl0vQ5kKPSpi8n5gMmlavLY"
+        },
+        {
+          "url": "https://www.ktiv.com/2026/11/03/nebraska-election-results-maps/",
+          "title": "Nebraska Election Results Maps",
+          "publisher": "KTIV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyzP_bCCK_KPG9FY6s-1x_GvX9WpvZR4Z2p1diiPdRONpoOgaN1MibfnLgxKA"
+        }
+      ]
+    },
+    {
+      "query": "lawrence o'donnell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T03:40:00Z",
+      "related_news_urls": [
+        "https://www.ms.now/morning-joe/watch/lawrence-on-the-emotion-of-democrats-doing-the-impossible-winning-in-deep-red-states-2519761987687",
+        "https://www.ms.now/the-last-word/watch/lawrence-the-bad-guys-lost-in-the-midterm-elections-2519718979587",
+        "https://sg.news.yahoo.com/trump-reign-terror-over-ms-141312551.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHn6nVIi3FiLQ6u8KtsxghmJ6q881wiUutydgRp2CxCyEt5AU7JZPALVFjTb4",
+      "image_credit": "MS NOW",
+      "news": [
+        {
+          "url": "https://www.ms.now/morning-joe/watch/lawrence-on-the-emotion-of-democrats-doing-the-impossible-winning-in-deep-red-states-2519761987687",
+          "title": "Lawrence on the ’emotion’ of Democrats ‘doing the impossible’ winning in deep red states",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHn6nVIi3FiLQ6u8KtsxghmJ6q881wiUutydgRp2CxCyEt5AU7JZPALVFjTb4"
+        },
+        {
+          "url": "https://www.ms.now/the-last-word/watch/lawrence-the-bad-guys-lost-in-the-midterm-elections-2519718979587",
+          "title": "Lawrence: ‘The bad guys lost’ in the midterm elections",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmabHC_MUdYpz2nwSLHplLowBs5cFAngzbnrTl6mm2ALjfzRxE0vIVetnhaU4"
+        },
+        {
+          "url": "https://sg.news.yahoo.com/trump-reign-terror-over-ms-141312551.html",
+          "title": "‘Trump Reign Of Terror Is Over’: MS NOW Host’s Euphoric Take Wins The Night",
+          "publisher": "Yahoo News Singapore",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBQCus70EykrgJgL011P2WsOl3yGGjMPyUZ3wIYl0PSsPkz-RyHOmzJDHJhqA"
+        }
+      ]
+    },
+    {
+      "query": "sienna miller",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T03:40:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1437866/sienna-miller-shares-her-older-kids-reaction-to-baby-boy-with-oli-green",
+        "https://www.eonline.com/videos/2519809091917/sienna-miller-reveals-how-her-kids-are-adjusting-to-her-new-baby-boy-with-oli-green",
+        "https://www.whowhatwear.com/fashion/celebrity-style/peep-toe-heel-trend-sienna-miller-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY8E9gZvabqZqidrO03crv5hwpn1TKAxIasOJy6u8_KpiFvhnWfZ0asgc2Wbg",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1437866/sienna-miller-shares-her-older-kids-reaction-to-baby-boy-with-oli-green",
+          "title": "Sienna Miller Reveals How Her Kids Are Adjusting to Her New Baby Boy With Oli Green",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY8E9gZvabqZqidrO03crv5hwpn1TKAxIasOJy6u8_KpiFvhnWfZ0asgc2Wbg"
+        },
+        {
+          "url": "https://www.eonline.com/videos/2519809091917/sienna-miller-reveals-how-her-kids-are-adjusting-to-her-new-baby-boy-with-oli-green",
+          "title": "Sienna Miller Reveals How Her Kids Are Adjusting to Her New Baby Boy With Oli Green",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY8E9gZvabqZqidrO03crv5hwpn1TKAxIasOJy6u8_KpiFvhnWfZ0asgc2Wbg"
+        },
+        {
+          "url": "https://www.whowhatwear.com/fashion/celebrity-style/peep-toe-heel-trend-sienna-miller-2026",
+          "title": "Even Sienna Miller Agrees—This “Dated” Shoe Trend Is Picking Up Where Your Loafers Left Off",
+          "publisher": "Who What Wear",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ505HBYHBQcSuyxKPHfTRC5CLzTLyC6YoNyn6oC1aM_7SE7oHB_Gxd1J7Ismc"
+        }
+      ]
+    },
+    {
+      "query": "bobby portis",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T03:40:00Z",
+      "related_news_urls": [
+        "https://www.fanduel.com/research/nba/player-news/game-recaps/tyrese-maxey-scores-19-points-in-win-over-pistons-nov-4-2026",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/jeremiah-fears-with-19-and-6-rebounds-in-win",
+        "https://www.fantasypros.com/nba/news/616931/jeremiah-fears-puts-up-20-points-saturdays-win.php"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiieYNvEejVpnENcGVQO0ofOUWEIed25RomrulRIkGOmCVmDdSvU4W48OAd2s",
+      "image_credit": "FanDuel",
+      "news": [
+        {
+          "url": "https://www.fanduel.com/research/nba/player-news/game-recaps/tyrese-maxey-scores-19-points-in-win-over-pistons-nov-4-2026",
+          "title": "Tyrese Maxey Scores 19 Points In Win Over Pistons",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiieYNvEejVpnENcGVQO0ofOUWEIed25RomrulRIkGOmCVmDdSvU4W48OAd2s"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/jeremiah-fears-with-19-and-6-rebounds-in-win",
+          "title": "Jeremiah Fears with 19 and 6 rebounds in win",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8cWG7q3fWR5wd3WVj1FG0uqom7laCIM5JEuk5TkfHR8bF3y-V40tPEiLOp_c"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/616931/jeremiah-fears-puts-up-20-points-saturdays-win.php",
+          "title": "Jeremiah Fears puts up 20 points in Saturday's win",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCKukzEDpPlunEtmSNdyAINFt3F2-4ES48rI39jAOqNLdtwq6LXyrFsJ640iU"
+        }
+      ]
+    },
+    {
+      "query": "abby phillip",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T03:40:00Z",
+      "related_news_urls": [
+        "https://people.com/cnn-s-abby-phillip-welcomes-baby-no-2-with-husband-marcus-richardson-12214439",
+        "https://www.imdb.com/news/ni66093646/?ref_=nwc_art_perm",
+        "https://www.yahoo.com/entertainment/celebrity/articles/cnn-host-reveals-reason-missing-013012526.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkc5Wf0iAF1OYRlb35WV7GL-OJgK1yeeIDGXe9xArdeQZhA6FDcfta7fy5Fi8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/cnn-s-abby-phillip-welcomes-baby-no-2-with-husband-marcus-richardson-12214439",
+          "title": "CNN’s Abby Phillip Welcomes Baby No. 2 with Husband Marcus Richardson",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkc5Wf0iAF1OYRlb35WV7GL-OJgK1yeeIDGXe9xArdeQZhA6FDcfta7fy5Fi8"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66093646/?ref_=nwc_art_perm",
+          "title": "CNN’s Abby Phillip Gives Birth to Second Child, a Boy, with Husband Marcus Richardson: Name Revealed!",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKupn3tq5ptzZa4EA2iASTVWYXgGGYu7ZmjXlwwUu06IscfTRJXQQTtDx0O4E"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/cnn-host-reveals-reason-missing-013012526.html",
+          "title": "CNN Host Reveals Reason for Missing Election Night",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMRoHeYxsZGbH6kZXxnEaNU1dLalSnEIEtdIxBb3LTCz732k_s02pu1YYYCgs"
         }
       ]
     }
