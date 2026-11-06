@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {newLiveBitsState,advanceLiveBits} from '../bubbles-live-iteration-feed.mjs';
+import {newLiveBitsState,advanceLiveBits,mountLiveView} from '../bubbles-live-iteration-feed.mjs';
 
 const turn = () => advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
 test('an iteration begins with owner context; no fabricated actions or spendable credits',()=>{
@@ -246,3 +246,40 @@ test('the messenger emits a user-visible chat turn before showing its sequential
  assert.match(source,/assist:'github\.assist'/);
 });
 
+
+test('real Bubbles messenger mounts iteration rows in the conversation after the user message',()=>{
+ class Node{
+  constructor(){this.children=[];this.textContent='';this.className='';this.attributes={};this.isConnected=false;}
+  setAttribute(k,v){this.attributes[k]=v;}
+  append(...items){for(const item of items){item.isConnected=true;this.children.push(item);}}
+  replaceChildren(...items){this.children=[];this.append(...items);}
+  after(element){this.afterElement=element;element.isConnected=true;}
+ }
+ const status=new Node(),conversation=new Node();
+ const panel={querySelector:selector=>selector==='.ba-status'?status:selector==='.ba-messages'?conversation:selector==='.ba-current-iteration'?null:null};
+ const doc={querySelector:selector=>selector==='.ba-panel'?panel:null,createElement:()=>new Node()};
+ const view=mountLiveView(doc);
+ assert.ok(view,'The body-mounted messenger is discoverable without #bubblesAICard');
+ assert.equal(view.show instanceof Function,true);
+ view.begin();
+ assert.equal(conversation.children.length,0,'Opening a turn does not put iterations above the user message');
+ // Simulate Bubbles displaying the user's message before the first iteration.
+ const userMessage=new Node();conversation.append(userMessage);
+ let state=advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
+ state=advanceLiveBits(state,{type:'memory',state:'retrieved'});
+ view.show(state);
+ assert.equal(conversation.children[0],userMessage);
+ const current=conversation.children[1];
+ assert.match(current.attributes['aria-label'],/this chat message/);
+ assert.ok(current.children[1].children.length>=2,'One live line per distinct iteration');
+ assert.match(status.afterElement.textContent,/Iteration/);
+ state=advanceLiveBits(state,{type:'tool_started',tool:'github.assist',
+  operationId:'aaa11111-1111-4111-8111-111111111111',resource:'www-infinity4/TestPilot'});
+ view.show(state);
+ assert.equal(current.children[1].children.length,3);
+ state=advanceLiveBits(state,{type:'tool_receipt',tool:'github.assist',
+  operationId:'aaa11111-1111-4111-8111-111111111111',status:'unverified'});
+ view.show(state);
+ assert.equal(current.children[1].children.length,3,'A tool state change updates its row rather than inventing another iteration');
+ assert.equal(state.credits,0);
+});
