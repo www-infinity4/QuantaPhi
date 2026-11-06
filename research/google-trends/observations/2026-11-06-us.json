@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T08:01:42.112331Z",
+  "checked_at": "2026-11-06T08:30:51.868515Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "brooks",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T08:10:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
+        "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns",
+        "https://www.espn.com/nba/story/_/id/50365914/warriors-draymond-green-ejected-scuffle-suns"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9L3IbesFtC2R1bQ6RajCERU_JICdBLNrJcO1GjSHMhdXh6QjCubt-P_Fq0E8",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
+          "title": "Steph Curry says Draymond's ejection 'lit a fire' in Warriors",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9L3IbesFtC2R1bQ6RajCERU_JICdBLNrJcO1GjSHMhdXh6QjCubt-P_Fq0E8"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns",
+          "title": "Draymond Green Rips Dillon Brooks, Won't Respect His 'Energy' After Altercation in Warriors-Suns",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1RPn5xpd2j4qKr_Blsf5DnJzrWURse5aFyTwHazkTEJzURaQzOOSoltGdmS4"
+        },
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50365914/warriors-draymond-green-ejected-scuffle-suns",
+          "title": "Draymond Green ejected after scuffle with Suns as Warriors rally for win",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfpZXFyT6xWztDpNBcd_wFkIZ626NYNJoILXFw3DIfFU0MNTtTw3JYoDsW7EQ"
+        }
+      ]
+    },
+    {
+      "query": "zelda 40th anniversary switch 2",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T08:10:00Z",
+      "related_news_urls": [
+        "https://mashable.com/tech/zelda-switch-2-restock-retailers-where-to-buy-nov-5",
+        "https://shattered.io/walmart-zelda-switch-2-519-99-gift-card-48-hour-reorder-2026/",
+        "https://www.theshortcut.com/p/zelda-switch-2-restock-when-will-target-restock-online"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7MuNHfA1prwwJuOP1v8vdCfAkH-88d5CVhsU8jqmBP9Y-O0G8dgTuV8KSf-U",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/tech/zelda-switch-2-restock-retailers-where-to-buy-nov-5",
+          "title": "Zelda Switch 2 restock retailers: Where to buy the 40th anniversary console",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7MuNHfA1prwwJuOP1v8vdCfAkH-88d5CVhsU8jqmBP9Y-O0G8dgTuV8KSf-U"
+        },
+        {
+          "url": "https://shattered.io/walmart-zelda-switch-2-519-99-gift-card-48-hour-reorder-2026/",
+          "title": "Walmart Zelda Switch 2: $519.99 Gift Card, 48 Hours [2026]",
+          "publisher": "shattered.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTky2FHHApp_OOdMxsUhNhZEgY6mNSofspm28yVGGZBwruNgp8IxBA2m4WEnhQ"
+        },
+        {
+          "url": "https://www.theshortcut.com/p/zelda-switch-2-restock-when-will-target-restock-online",
+          "title": "Zelda 40th anniversary Switch 2 restock: when will Target restock online?",
+          "publisher": "The Shortcut | Matt Swider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSio5640oZUcP5Tmbfq8qkr7QGbBf9rtjXov2eIErVDaxtO7mm8DypAidrzOzs"
+        }
+      ]
+    },
+    {
+      "query": "on",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T08:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/05/us/politics/trump-triumphal-arch-planning-commission.html",
+        "https://www.cbsnews.com/news/trump-arch-approval-national-capital-planning-commission/",
+        "https://www.nbcwashington.com/news/local/trump-arch-project-near-arlington-cemetery-expected-to-be-approved-amid-court-battles/4178421/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1Pq9w_bfIh5JwGEFBLTIa-u7TCyEiM4urvD7I93YZ33xNiyy8w3PHdphBq1k",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/05/us/politics/trump-triumphal-arch-planning-commission.html",
+          "title": "Trump’s Triumphal Arch Wins Commission Approval Despite Court Challenges",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1Pq9w_bfIh5JwGEFBLTIa-u7TCyEiM4urvD7I93YZ33xNiyy8w3PHdphBq1k"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/trump-arch-approval-national-capital-planning-commission/",
+          "title": "Judge blocks construction on Trump's 250-foot arch for now",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4iw7nsv6FAX-XA2JMjHMCFHLCg_N4Up7WIcDcHrIeNdG_F8pu4IMOmVEELbs"
+        },
+        {
+          "url": "https://www.nbcwashington.com/news/local/trump-arch-project-near-arlington-cemetery-expected-to-be-approved-amid-court-battles/4178421/",
+          "title": "Trump arch project near Arlington Cemetery expected to be approved amid court battles",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdOOOLHJURjoxfrvarB1cAgSDNtzUerrsYokvxnyfcK7C2CRp2QdCaKvT10Ww"
+        }
+      ]
+    },
+    {
+      "query": "anya taylor-joy",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T07:30:00Z",
+      "related_news_urls": [
+        "https://collider.com/anya-taylor-joy-the-gorge-streaming-success-apple-tv-november-2026/",
+        "https://www.imdb.com/news/ni66093071/?ref_=nmnw_art_perm",
+        "https://collider.com/anya-taylor-joy-the-northman-streaming-success-prime-video-apple-tv-october-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF3rABVanayb_fkSzzfytWnh4wJ9SEpdxT87BYqFm9vNpFjVp-O-th3rJMAhQ",
+      "image_credit": "Collider",
+      "news": [
+        {
+          "url": "https://collider.com/anya-taylor-joy-the-gorge-streaming-success-apple-tv-november-2026/",
+          "title": "Anya Taylor-Joy’s 128-Minute Sci-Fi Thriller Is Officially One of Apple TV’s Biggest Movies Ever",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF3rABVanayb_fkSzzfytWnh4wJ9SEpdxT87BYqFm9vNpFjVp-O-th3rJMAhQ"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66093071/?ref_=nmnw_art_perm",
+          "title": "Anya Taylor-Joy's R-Rated 'Vikings' Replacement Officially Conquers Streaming",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTa-GtsDFVNmyX9BS0FBmvASpnWlleGIcSOQvG0w6DO5lUtHjV4uG8sGHHuxb8"
+        },
+        {
+          "url": "https://collider.com/anya-taylor-joy-the-northman-streaming-success-prime-video-apple-tv-october-2026/",
+          "title": "Anya Taylor-Joy's R-Rated 'Vikings' Replacement Officially Conquers Streaming",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5RuII-If7Chvnj4Rss4cAHGm2JH5a1DqfKKuFm2AB71sqgGp6W_dZWU8FcRk"
+        }
+      ]
+    },
     {
       "query": "nifty 50",
       "approx_searches": "100+",
@@ -38,41 +178,6 @@
           "publisher": "Bloomberg.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTejnQoIMsiNM63mCyg5Aw08IDkv8Z7QcLxYzwlDj9JpewLXrwtpbx95g3s3L4"
-        }
-      ]
-    },
-    {
-      "query": "anya taylor-joy",
-      "approx_searches": "100+",
-      "published_at": "2026-11-06T07:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/04/movies/dune-part-three-timothee-chalamet-zendaya-robert-pattinson.html",
-        "https://www.yahoo.com/entertainment/movies/articles/dune-3-star-anya-taylor-152023239.html",
-        "https://variety.com/2026/film/news/dune-3-changes-books-cast-1236939217/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNRIIe7rbjuablATKn2s-W01mGffFls6KXcSvKGsSgVVi-h0NoFiqACfo3-kQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/04/movies/dune-part-three-timothee-chalamet-zendaya-robert-pattinson.html",
-          "title": "‘Dune’ Reunion: Timothée Chalamet, Zendaya and Friends Can Take the Heat",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNRIIe7rbjuablATKn2s-W01mGffFls6KXcSvKGsSgVVi-h0NoFiqACfo3-kQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/dune-3-star-anya-taylor-152023239.html",
-          "title": "Dune 3 star Anya Taylor-Joy didn't realize Alia Atreides is a \"bad guy\" in the sequel until the end of the movie",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://variety.com/2026/film/news/dune-3-changes-books-cast-1236939217/",
-          "title": "‘Dune 3’ Cast Says the Movie Takes ‘Departures’ From the Books, but ‘You’re Crazy If You’re Going to Pick Fault’ With It",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7vDmXujtPM6nTE-w1qYUPPO0Bg8hFE3OycHeq39seoKoTavwIIbel-rJBFOQ"
         }
       ]
     },
@@ -116,20 +221,13 @@
       "approx_searches": "200+",
       "published_at": "2026-11-06T07:00:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/the-terminal-list-franchise-amazon-savage-son-chris-pratt-1237215033/",
         "https://www.hollywoodreporter.com/tv/tv-news/chris-pratt-terminal-list-savage-son-1236748924/",
-        "https://www.imdb.com/news/ni66087983/?ref_=nmnw_art_perm"
+        "https://deadline.com/2026/11/the-terminal-list-franchise-amazon-savage-son-chris-pratt-1237215033/",
+        "https://variety.com/2026/tv/news/chris-pratt-terminal-list-savage-son-series-amazon-1236940840/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3a00j-aJSGab69aarf78RpKNUzD71um1Df6OQ0-gny1LiyWF3UzsDOt5qMJ4",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqodI9l6FVTCMm6LgLpwfHPCv2h5pH2dUXn-fsKO2kDYlfWf1eWBwQpDL_LmE",
+      "image_credit": "The Hollywood Reporter",
       "news": [
-        {
-          "url": "https://deadline.com/2026/11/the-terminal-list-franchise-amazon-savage-son-chris-pratt-1237215033/",
-          "title": "‘The Terminal List’ Franchise Continues At Amazon With ‘Savage Son’",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3a00j-aJSGab69aarf78RpKNUzD71um1Df6OQ0-gny1LiyWF3UzsDOt5qMJ4"
-        },
         {
           "url": "https://www.hollywoodreporter.com/tv/tv-news/chris-pratt-terminal-list-savage-son-1236748924/",
           "title": "Prime Video’s ‘Terminal List’ Franchise Expands With ‘Savage Son’ Series",
@@ -138,11 +236,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqodI9l6FVTCMm6LgLpwfHPCv2h5pH2dUXn-fsKO2kDYlfWf1eWBwQpDL_LmE"
         },
         {
-          "url": "https://www.imdb.com/news/ni66087983/?ref_=nmnw_art_perm",
-          "title": "'The Terminal List' Season 3 Gets Exciting Update as Creators Tease Next Book Adaptation",
-          "publisher": "IMDb",
+          "url": "https://deadline.com/2026/11/the-terminal-list-franchise-amazon-savage-son-chris-pratt-1237215033/",
+          "title": "‘The Terminal List’ Franchise Continues At Amazon With ‘Savage Son’",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4t23hZcQqD9bvlYe4fVcihrpWmYXaFmnm5TQ7KVf7xtLQd7b2sY_X6YDwwU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3a00j-aJSGab69aarf78RpKNUzD71um1Df6OQ0-gny1LiyWF3UzsDOt5qMJ4"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/chris-pratt-terminal-list-savage-son-series-amazon-1236940840/",
+          "title": "Chris Pratt to Continue ‘Terminal List’ Story in ‘Savage Son’ Series for Amazon",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKKQrM6LMmfCQmwGP0XLDIYkhuBvv5C8KQ50-2P5FRyaB3ycGUcGOtoi_gYyY"
         }
       ]
     },
@@ -186,33 +291,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-06T06:40:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/business/energy/new-jersey-governor-warns-ports-against-accepting-russian-diesel-2026-11-03/",
-        "https://www.pbs.org/newshour/world/tankers-carrying-russian-diesel-change-course-raising-doubts-about-shipments-to-u-s",
-        "https://www.ft.com/content/f66ebf48-6d09-4a91-9af5-8bf7adca65ba?syn-25a6b1a6=1"
+        "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
+        "https://www.reuters.com/world/middle-east/tankers-hit-hormuz-iran-keeps-up-pressure-after-us-vote-2026-11-05/",
+        "https://www.wsj.com/world/middle-east/iran-turns-to-guerrilla-tactics-in-bid-to-reassert-grip-on-strait-of-hormuz-f10da428"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBDG9IO3F_WksApJqAlynGK06fvGtXcnVFvb1ufrwcB3QTwN9MUBRwMFBFXyA",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawj2dcqFb8qNH5e7YDZWtFFMJERcchE1yKt2qNkIberKMVR8VGFrXskaDZHg",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://www.reuters.com/business/energy/new-jersey-governor-warns-ports-against-accepting-russian-diesel-2026-11-03/",
-          "title": "New Jersey governor warns ports against accepting Russian diesel",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
+          "title": "Iran War Updates: More ships attacked in Persian Gulf, oil prices rebound slightly after post-midterm plunge",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawj2dcqFb8qNH5e7YDZWtFFMJERcchE1yKt2qNkIberKMVR8VGFrXskaDZHg"
+        },
+        {
+          "url": "https://www.reuters.com/world/middle-east/tankers-hit-hormuz-iran-keeps-up-pressure-after-us-vote-2026-11-05/",
+          "title": "Tankers hit in Hormuz as Iran keeps up pressure after US vote",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBDG9IO3F_WksApJqAlynGK06fvGtXcnVFvb1ufrwcB3QTwN9MUBRwMFBFXyA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHmzxYJEIRmK_Z8MzgRBcpzGsIVZ0fmiYfxVeuzD7DhXTlQQwz86oDEmBpFkQ"
         },
         {
-          "url": "https://www.pbs.org/newshour/world/tankers-carrying-russian-diesel-change-course-raising-doubts-about-shipments-to-u-s",
-          "title": "Tankers carrying Russian diesel change course, raising doubts about shipments to U.S.",
-          "publisher": "PBS",
+          "url": "https://www.wsj.com/world/middle-east/iran-turns-to-guerrilla-tactics-in-bid-to-reassert-grip-on-strait-of-hormuz-f10da428",
+          "title": "Iran Turns to Guerrilla Tactics in Bid to Reassert Grip on Strait of Hormuz",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT18W3kjylX7qEjnFlXGI6oshWyEwvCRiHNXWoDgksWvM2UIgVuPU3m9osGLHk"
-        },
-        {
-          "url": "https://www.ft.com/content/f66ebf48-6d09-4a91-9af5-8bf7adca65ba?syn-25a6b1a6=1",
-          "title": "Trump diesel deal with Russia falters as US fuel supplies hit 20-year low",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtefT42JhRuwZr2dicrACwcneXedDS_9E5tDnUahdqONOrNDmHkzL_7CQZEKM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnGiuaX6OeKOKosDubDUFqK6-5sdrWJUJe8b_v6er_6UJqxPQ48fzne2tzfRg"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "Fox News",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEwF_2bj3xs1eQnHK_7RgWSSDNae14E-0VJSiCs8yex2ZWvRsQXAAb6a5FSFU"
-        }
-      ]
-    },
-    {
-      "query": "martin mcdonagh",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T06:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/arts-culture/film/wild-horse-nine-review-martin-mcdonaghs-black-comic-beauty-6f232d16",
-        "https://www.nytimes.com/2026/11/05/movies/wild-horse-nine-review.html",
-        "https://slate.com/culture/2026/11/wild-horse-nine-oscars-john-malkovich-sam-rockwell-movie.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2RpM9u26I0WpszamEoVhOybs6fwAB9JCirs55TmO3dKHxADiOkshxyYe5aw",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/arts-culture/film/wild-horse-nine-review-martin-mcdonaghs-black-comic-beauty-6f232d16",
-          "title": "‘Wild Horse Nine’ Review: Martin McDonagh’s Black-Comic Beauty",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2RpM9u26I0WpszamEoVhOybs6fwAB9JCirs55TmO3dKHxADiOkshxyYe5aw"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/05/movies/wild-horse-nine-review.html",
-          "title": "‘Wild Horse Nine’ Review: A C.I.A. Holiday",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqlSTn49lNW_g4kycP_VXMUgqxuazjasXebe08tP40N_Zr2kkuriCtSM-Llgc"
-        },
-        {
-          "url": "https://slate.com/culture/2026/11/wild-horse-nine-oscars-john-malkovich-sam-rockwell-movie.html",
-          "title": "There’s Only One Man I Want to See Win Best Actor This Year",
-          "publisher": "Slate Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpT1D1BfGHeM6bd3KxHo3s3Rx-TW7VMy3d6EZTMpNbW9d7LFWla8kKPYTMrw8"
-        }
-      ]
-    },
-    {
-      "query": "michelle obama",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T06:20:00Z",
-      "related_news_urls": [
-        "https://www.jta.org/2026/11/05/ideas/rabbi-capers-funnye-skillfully-navigated-a-jewish-world-wary-of-hebrew-israelites",
-        "https://chicago.suntimes.com/obituaries/2026/11/02/rabbi-capers-funnye-obituary-michelle-obama-cousin-beth-shalom-bnai-zaken-dies-74",
-        "https://forward.com/opinion/860060/capers-funnye-remembrance-black-jewish-chicago-beth-shalom-bnai-zaken/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36soXvH1f0b3qCQN0RfcCQFiqftP0TU0qjjgkFbTT-NwtxS2UjZIrR2Rvtbo",
-      "image_credit": "Jewish Telegraphic Agency",
-      "news": [
-        {
-          "url": "https://www.jta.org/2026/11/05/ideas/rabbi-capers-funnye-skillfully-navigated-a-jewish-world-wary-of-hebrew-israelites",
-          "title": "Rabbi Capers Funnye skillfully navigated a Jewish world wary of Hebrew Israelites",
-          "publisher": "Jewish Telegraphic Agency",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36soXvH1f0b3qCQN0RfcCQFiqftP0TU0qjjgkFbTT-NwtxS2UjZIrR2Rvtbo"
-        },
-        {
-          "url": "https://chicago.suntimes.com/obituaries/2026/11/02/rabbi-capers-funnye-obituary-michelle-obama-cousin-beth-shalom-bnai-zaken-dies-74",
-          "title": "Rabbi Capers Funnye, Michelle Obama's cousin who ran South Side synagogue, broke racial barriers, dies at 74",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJbquWKuNH7146nuKdCGP9wyT8aK40Q2099YNoAVMcwJODFTq_qNIeLHlmaIc"
-        },
-        {
-          "url": "https://forward.com/opinion/860060/capers-funnye-remembrance-black-jewish-chicago-beth-shalom-bnai-zaken/",
-          "title": "A ‘unique 20th Century Israelite’ who always made sure we got it right",
-          "publisher": "The Forward",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSd5M3RgQiITJJ1L198wnHDKzhYw-t42DeiPFb25KMwVWUYdPVVsRPr3HvP-dY"
-        }
-      ]
-    },
-    {
-      "query": "zeynep sonmez",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T06:10:00Z",
-      "related_news_urls": [
-        "https://www.24saatgazetesi.com/milli-tenisci-zeynep-sonmez-hong-kongda-ceyrek-finalde",
-        "https://mansethaber.com/spor/milli-tenisciden-wta-250de-basarili-ilk-mac",
-        "https://www.yenisafak.com/spor/zeynep-sonmez-hong-kongda-ceyrek-finale-yukseldi-4870069"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9COEDk_rXKkiUbjsRGMb7OqE0OlHCtznD8qrtpawaYHq3d__WhtUVfP_aTCI",
-      "image_credit": "24 Saat Gazetesi Ankara",
-      "news": [
-        {
-          "url": "https://www.24saatgazetesi.com/milli-tenisci-zeynep-sonmez-hong-kongda-ceyrek-finalde",
-          "title": "Milli tenisçi Zeynep Sönmez Hong Kong'da çeyrek finalde",
-          "publisher": "24 Saat Gazetesi Ankara",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9COEDk_rXKkiUbjsRGMb7OqE0OlHCtznD8qrtpawaYHq3d__WhtUVfP_aTCI"
-        },
-        {
-          "url": "https://mansethaber.com/spor/milli-tenisciden-wta-250de-basarili-ilk-mac",
-          "title": "Milli tenisçiden WTA 250'de başarılı ilk maç!",
-          "publisher": "Manşet Haber",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLU-2GBbtkGXoqJBBvhv6eOaXKbAEEzPZw4zd9MXowbQ-5CvujQtPPDmVE8ng"
-        },
-        {
-          "url": "https://www.yenisafak.com/spor/zeynep-sonmez-hong-kongda-ceyrek-finale-yukseldi-4870069",
-          "title": "Zeynep Sönmez Hong Kong'da çeyrek finale yükseldi",
-          "publisher": "Yeni Şafak",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpFrZvdrBwhrvIBgHBwPpq3qAjpOkCVXMEOUXQSsAVHrvQkPXJ4ffZ-d7Rz78"
         }
       ]
     }
