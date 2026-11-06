@@ -117,7 +117,7 @@ test('missing image shows an honest source identity instead of invented product 
  const module=src('shop-phi-switchboard.mjs'),css=src('shop-phi-switchboard.css');
  assert.match(module,/shopphi-flank-no-photo/);
  assert.match(module,/Source image unavailable/);
- assert.match(module,/Open interactive Quick Card/);
+ assert.match(module,/View in this Quick Card/);
  assert.match(css,/\.shopphi-flank-brand/);
  assert.match(css,/height:165px/);
  assert.match(css,/\.shopphi-flank\[hidden\]\{display:flex!important\}/);
