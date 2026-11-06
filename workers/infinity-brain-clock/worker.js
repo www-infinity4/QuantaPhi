@@ -722,8 +722,14 @@ export class BrainClock extends DurableObject{
    // Observing an actual GitHub operation and issuing a Bubble Bit are
    // separate. Receipt identifiers must exist even when wallet minting is OFF.
    // The credit helper returns only non-spendable context_unavailable in that case.
-   const {githubIteration}=await import('./iteration-credit.mjs');
-   const iteration=await githubIteration(this.env,record,receipt,operation,record.receipts.length);
+   let iteration=null;
+   // The owner hash must be present for a tenant-specific, deterministic
+   // receipt. In isolated/no-owner test runtimes, do not import the Bit
+   // subsystem or fabricate an identity/receipt.
+   if(/^[a-f0-9]{64}$/.test(this.env.WRITER_OWNER_HASH||'')){
+    const {githubIteration}=await import('./iteration-credit.mjs');
+    iteration=await githubIteration(this.env,record,receipt,operation,record.receipts.length);
+   }
    if(iteration){
     metadata.receipt=iteration.receipt;
     metadata.bit=iteration.bit;
