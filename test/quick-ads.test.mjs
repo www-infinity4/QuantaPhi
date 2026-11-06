@@ -109,7 +109,7 @@ test('replacement ad rotates through every unseen website before recycling',()=>
   recent.unshift(ad.id);if(recent.length>4)recent.pop();
  }
  assert.equal(used.size,QUICK_ADS.length);
- assert.ok(chooseQuickAd({category:'Sports'},counts,recent,GAME_START));
+ assert.equal(chooseQuickAd({category:'Sports'},counts,recent,GAME_START),null,'exhaustion must stop advertising rather than recycling');
 });
 test('official scoreboard status gates live, scheduled and final states',()=>{
  const fixture=status=>({dates:[{games:[{gamePk:GAME_PK,seriesDescription:'World Series',status}]}]});
@@ -140,4 +140,13 @@ test('no retired World Series advertising copy or outdated game links remain in 
   assert.doesNotMatch(a.name+' '+a.tagline,/world series|game 5|brewers vs rays/i);
   if(a.id==='mlb')assert.equal(a.href,'https://www.mlb.com/scores');
  }
+});
+
+// No-repeat requests are permanent per browser history, not a four-item short-term window.
+test('house ads never restart after every creative is recorded',()=>{
+ const counts=Object.fromEntries(HOUSE_ADS.map(a=>[a.id,1]));
+ assert.equal(chooseQuickAd({category:'shopping'},counts,[],HOUSE_START),null);
+ assert.equal(chooseQuickAd({category:'shopping'},counts,['infinity-accepted-house'],HOUSE_START),null);
+ const ui=source('quick-ads.mjs');
+ assert.match(ui,/localStorage/,'seen history must survive page refresh and browser restarts');
 });
