@@ -338,11 +338,11 @@ test('Bubbles chat and Account Connections share the current Google and Cloudfla
  const shared=readFileSync(new URL('../bubbles-connections-gate.mjs',import.meta.url),'utf8');
  assert.doesNotMatch(source,/bubbles-connections\.mjs\?v=20261026-full-consent6/,'Old October connector cannot be loaded in chat');
  for(const content of [source,accounts,shared])
-  assert.match(content,/bubbles-connections\.mjs\?v=20261106-cloudflare-click-fixed7/);
+  assert.match(content,/bubbles-connections\.mjs\?v=20261106-google-multi-cloudflare-full8/);
  for(const content of [source,html])
-  assert.match(content,/bubbles-signin-gate\.mjs\?v=20261106-cloudflare-click-fixed7/);
- assert.match(gate,/bubbles-connections-gate\.mjs\?v=20261106-cloudflare-click-fixed7/);
- assert.match(html,/bubbles-ai\.js\?v=20261106-bubbles-github-receipts9/);
+  assert.match(content,/bubbles-signin-gate\.mjs\?v=20261106-google-multi-cloudflare-full8/);
+ assert.match(gate,/bubbles-connections-gate\.mjs\?v=20261106-google-multi-cloudflare-full8/);
+ assert.match(html,/bubbles-ai\.js\?v=20261106-bubbles-google-cloudflare10/);
 });
 
 test('Cloudflare account list is authoritative for a verified wallet if the permission gate returns stale connection state',()=>{
