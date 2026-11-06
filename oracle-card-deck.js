@@ -164,9 +164,11 @@ let active=null,expanded=false;
 let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
-let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
+const chainFollow=document.getElementById('oraclePowerChainFollow'),chainReason=document.getElementById('oraclePowerChainReason');
+let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,powerChainApi=null,quantWeights={},quantConnected=false;
 const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
 let feedState=null,proposed=null,followingPublisherFeed=null;
+let followedIds=new Set(),relatedFollows=new Map();
 const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
 let viewerTouched=false,selectionVersion=0;
@@ -183,17 +185,18 @@ function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
+ const registeredIds=new Set(entries.map(e=>e.feedId));
  for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
   if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
-  if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
+  if(!/^[a-z0-9-]+$/.test(id||'')||registeredIds.has(id))continue;
   const label=node.dataset.sourceName||node.querySelector('h3')?.textContent?.trim()||id;
   const category=node.querySelector('.iqc-kind')?.textContent?.trim()||'Website';
   const entry={id:'source-'+id,title:label+' · Interactive',feedId:id,
    category,feature:'Use the real '+label+' card controls',study:'Original source card with direct controls',
    official:node.dataset.official||'',
    node,marker:null,count:Math.max(0,Math.min(1000,Number(counts['source-'+id])||0))};
-  entries.push(entry);added=true;
+  entries.push(entry);registeredIds.add(id);added=true;
  }
  if(added){
   updateTabs();predict();
@@ -244,11 +247,28 @@ function registerLateWidgets(){
 // Module evaluation ordering can differ across mobile WebViews; recover both.
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
-function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
-function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
- cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
+function storeDirections(){
+ if(!directionApi||!feedState)return false;
+ try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState));return true}catch{return false}
+}
+function chainCard(entry){
+ const nativeX=entry.id==='xTwitterCard';
+ return {id:entry.feedId,name:entry.node.dataset.sourceName||entry.title,
+  category:entry.node.dataset.sourceCategory||entry.category,official:nativeX?'https://x.com/':entry.official,
+  ready:(nativeX||entry.node.dataset.sourceReady==='true')&&available(entry),restricted:nonProfiling(entry)};
+}
+function refreshFollows(){
+ relatedFollows=powerChainApi&&feedState?.powerChain?.seeds.length?
+  powerChainApi.resolvePowerChainFollows(entries.map(chainCard),feedState):new Map();
+ followedIds=new Set([...(feedState?.following||[]),...relatedFollows.keys()]);
+}
+function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({
+ id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e),
+ powerChain:selectedTab==='following'&&relatedFollows.size?powerChainApi.powerChainProfile(chainCard(e)):null
+}));}
+function eligible(){return entries.filter(e=>available(e)&&(selectedTab!=='following'||followedIds.has(e.feedId)));}
 function updateTabs(){
+ refreshFollows();
  updateInventory();
   for(const button of host.querySelectorAll('[data-oracle-family]')){
   const count=eligible().filter(e=>cardFamily(e)===button.dataset.oracleFamily).length;
@@ -257,11 +277,34 @@ function updateTabs(){
  }
  tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
  followingPublisherFeed?.sync({tab:selectedTab});
+ const id=active?.feedId,related=relatedFollows.get(id);
  if(follow){
-  const saved=Boolean(active&&feedState?.following.includes(active.feedId));
-  follow.hidden=!active;
-  follow.textContent=saved?'✓ Following':'+ Follow';
+  const saved=followedIds.has(id);
+  follow.hidden=!active||!directionApi;
+  follow.toggleAttribute('data-power-chain',Boolean(related));
+  follow.textContent=related?'Unfollow this one':saved?'✓ Following':'+ Follow';
   follow.setAttribute('aria-pressed',String(saved));
+ }
+ if(active){
+  const cardFollow=stage.querySelector('[data-card-actions="'+id+'"] [data-action="follow"]');
+  if(cardFollow){
+   const direct=Boolean(feedState?.following.includes(id));
+   const label=direct?'✓ Following':related?'Follow directly':'+ Follow';
+   if(cardFollow.textContent!==label)cardFollow.textContent=label;
+   cardFollow.setAttribute('aria-pressed',String(direct));
+  }
+ }
+ if(chainFollow){
+  const profile=active&&powerChainApi?.powerChainProfile(chainCard(active));
+  const enabled=Boolean(feedState?.powerChain?.seeds.includes(id));
+  chainFollow.hidden=!profile;
+  chainFollow.textContent=enabled?'Power Chain on':'Power Chain follow';
+  chainFollow.title=enabled?'Turn off related follows for this card':'Follow this card and include closely related Quick Cards in Following';
+  chainFollow.setAttribute('aria-pressed',String(enabled));
+  const explanation=related?'Via '+related.seedName:enabled&&profile?
+   powerChainApi.POWER_CHAIN_TOPICS[profile.topic]+' matches appear in Following.':'';
+  chainReason.textContent=explanation;
+  chainReason.hidden=!explanation;
  }
 }
 function updateInventory(){
@@ -308,15 +351,19 @@ function predict(){
  if(!possible.length){next.disabled=true;reason.textContent='Your Following view is empty. Return to Public and add a card with + Follow.';return;}
  if(directionApi&&feedState){
   const present=liveCatalog();
-  const context={...feedState,catalog:present,quantScores:quantWeights};
+  const context={...feedState,catalog:present,quantScores:quantWeights,
+   following:selectedTab==='following'?[...followedIds]:feedState.following};
   const eligibleIds=new Set(possible.map(e=>e.feedId));
   const tour=directionApi.nextDeckCycle(
    present.filter(c=>eligibleIds.has(c.id)),active?.feedId||'',seenByTab[selectedTab]);
   seenByTab[selectedTab]=tour.seen;
-  const balanced=familyApi?.selectNextFamilyPool(tour.cards,cardFamily(active))||tour.cards;
+  const balanced=selectedTab==='following'&&relatedFollows.size?
+   powerChainApi.balancePowerChainRotation(tour.cards,present.find(card=>card.id===active?.feedId)):
+   familyApi?.selectNextFamilyPool(tour.cards,cardFamily(active))||tour.cards;
   const pick=directionApi.nextFeedDirection(balanced,selectedTab,context,active?.feedId||'');
   proposed=possible.find(e=>e.feedId===pick.card?.id)||null;
-  reason.textContent=proposed?(proposed.title+' · '+pick.reason+
+  const match=selectedTab==='following'&&relatedFollows.get(proposed?.feedId);
+  reason.textContent=proposed?(proposed.title+' · '+(match?'Via '+match.seedName:pick.reason)+
    ' · '+tour.remaining+' other cards in this round'):
    'Use a card to help choose the next useful action.';
  }else{
@@ -357,28 +404,50 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
  if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
  updateTabs();
- if(selectedTab==='following'&&!eligible().some(e=>e===active)){
-  returnActive();const first=eligible()[0];if(first)show(first,false);else{
-   now.textContent='No followed interactive cards';status.textContent='Use Public and tap + Follow on any live card.';
-  }
- }
+ syncFollowingSelection();
  if(selectedTab==='for-you')void connectQuant({select:true,revision});
  predict();
 }));
-follow?.addEventListener('click',()=>{
+function syncFollowingSelection(preferred){
+ if(selectedTab!=='following'||expanded)return;
+ const cards=eligible();
+ if(cards.includes(active))return;
+ const first=cards.includes(preferred)?preferred:cards.find(e=>feedState?.following.includes(e.feedId))||cards[0];
+ if(first){show(first,false);return;}
+ returnActive();
+ now.textContent='No followed interactive cards';
+ status.textContent='Choose Public and follow a card to fill this view.';
+ updateTabs();
+}
+function changeFollowing(update){
  if(!directionApi||!active)return;
- feedState=directionApi.toggleFollowing(readDirections(),active.feedId);storeDirections();
- if(selectedTab==='following'&&!feedState.following.includes(active.feedId)){
-  returnActive();const first=eligible()[0];if(first)show(first,false);
-  else {now.textContent='No followed interactive cards';status.textContent='Choose Public and follow a card to fill this view.';}
+ const previous=readDirections(),preferred=proposed;
+ feedState=directionApi.cleanFeedState(update(previous,active.feedId));
+ if(!storeDirections()){
+  feedState=previous;
+  status.textContent='Could not save Follow on this device.';
+  return;
  }
- updateTabs();predict();
+ updateTabs();syncFollowingSelection(preferred);predict();
  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
+}
+follow?.addEventListener('click',()=>{
+ changeFollowing((state,id)=>relatedFollows.has(id)&&!state.following.includes(id)?
+  directionApi.unfollowPowerChainCard(state,id):directionApi.toggleFollowing(state,id));
 });
-window.addEventListener('quantaphi:feed-updated',e=>{
- if(e.detail?.origin==='oracle-viewer'||!directionApi)return;
+chainFollow?.addEventListener('click',()=>{
+ if(active&&powerChainApi?.powerChainProfile(chainCard(active)))changeFollowing(directionApi.togglePowerChainFollowing);
+});
+function reloadFollowing(){
+ if(!directionApi)return;
  feedState=readDirections();
- updateTabs();predict();
+ updateTabs();syncFollowingSelection(proposed);predict();
+}
+window.addEventListener('quantaphi:feed-updated',e=>{
+ if(e.detail?.origin!=='oracle-viewer')reloadFollowing();
+});
+window.addEventListener('storage',e=>{
+ if(directionApi&&e.key===directionApi.FEED_STORAGE_KEY)reloadFollowing();
 });
 void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountFollowingPublisherFeed})=>{
  const target=document.getElementById('oracleFollowingFeed');
@@ -391,10 +460,11 @@ void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountF
  });
  followingPublisherFeed?.sync({tab:selectedTab});
 }).catch(()=>{const target=document.getElementById('oracleFollowingFeed');if(target)target.hidden=true;});
-Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261106-power-chain1'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1'),
- import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
- directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
+ import('/quanta-carousel-balance.mjs?v=20261027-all-families1'),
+ import('/power-chain-follow.mjs?v=20261106-power-chain1').catch(()=>null)]).then(([r,q,f,p])=>{
+ directionApi=r;quantApi=q;familyApi=f;powerChainApi=p;reloadFollowing();
  if(selectedTab==='for-you')void connectQuant();
  predict();
 }).catch(()=>{reason.textContent='Card directions are not available; original interactive cards are still usable.'});
@@ -465,6 +535,7 @@ function show(entry,remember=true,automatic=false){
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
     category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
    stage.append(container);
+   updateTabs();
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
  if(!automatic&&!nonProfiling(entry)){
@@ -476,7 +547,7 @@ function show(entry,remember=true,automatic=false){
  now.textContent=entry.title;updateTabs();predict();
  status.textContent='Live interactive card · '+entry.title+
   '. '+(nonProfiling(entry)?'Private browsing: no view or interaction history recorded.':selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
-    selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.')+
+    selectedTab==='following'?'Your direct follows and enabled Power Chain matches appear here.':'Public includes every available original widget.')+
   ' · '+eligible().length+' ready cards in this direction.';
 }
 function advance(direction){
@@ -615,6 +686,7 @@ function chooseOpening(){
  return pool[openingCursor%pool.length]||ready[0];
 }
 function start(){if(!active&&!expanded){
+ if(selectedTab==='following'){syncFollowingSelection();return;}
  const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
  // Keep an explicitly requested original card in front of generic rotation.
  // Some tools hydrate asynchronously after DOMContentLoaded.

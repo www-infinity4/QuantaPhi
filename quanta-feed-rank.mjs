@@ -5,6 +5,12 @@ export const FEED_STORAGE_KEY='quanta:discovery:anonymous:v1';
 export const FEED_TABS=Object.freeze(['public','for-you','following']);
 const validId=id=>typeof id==='string'&&/^[a-z0-9-]{1,70}$/.test(id);
 const bounded=n=>Number.isFinite(n)&&n>0?Math.min(5000,Math.floor(n)):0;
+const followIds=value=>[...new Set((Array.isArray(value)?value:[]).filter(validId))];
+function cleanPowerChain(raw,following){
+ const direct=new Set(following);
+ return {seeds:followIds(raw?.seeds).filter(id=>direct.has(id)),
+  excluded:followIds(raw?.excluded).filter(id=>!direct.has(id))};
+}
 export const cleanFeedState=raw=>{
  const r=raw&&typeof raw==='object'&&!Array.isArray(raw)?raw:{};
  const following=[...new Set((Array.isArray(r.following)?r.following:[]).filter(validId).slice(0,800))];
@@ -18,7 +24,7 @@ export const cleanFeedState=raw=>{
   for(const [to,n] of Object.entries(row).slice(0,80))if(validId(to)&&to!==from&&bounded(n))edges[to]=bounded(n);
   if(Object.keys(edges).length)transitions[from]=edges;
  }
- return {version:2,following,counts,viewed,transitions,
+ return {version:2,following,powerChain:cleanPowerChain(r.powerChain,following),counts,viewed,transitions,
   lastUsed:validId(r.lastUsed)?r.lastUsed:'',
   advance:Math.max(0,Math.min(100000,Number(r.advance)||0))};
 };
@@ -52,11 +58,19 @@ export function directionScore(from,to,state){
   nextAction?'A useful next step after '+from.name:'';
  return {score,reason};
 }
-export function feedScore(card,state){
+function rankingInputs(state){
+ const categories=new Map((state.catalog||[]).map(card=>[card.id,card.category]));
+ const categoryCounts=new Map();
+ for(const [id,count] of Object.entries(state.counts||{})){
+  const category=categories.get(id);
+  categoryCounts.set(category,(categoryCounts.get(category)||0)+count);
+ }
+ return {categoryCounts,following:new Set(state.following||[])};
+}
+export function feedScore(card,state,inputs=rankingInputs(state)){
  const clicks=state.counts?.[card.id]||0;
- const category=Object.entries(state.counts||{}).reduce((n,[id,v])=>n+
-  (card.category===state.catalog?.find(x=>x.id===id)?.category?v:0),0);
- const saved=(state.following||[]).includes(card.id);
+ const category=inputs.categoryCounts.get(card.category)||0;
+ const saved=inputs.following.has(card.id);
  const seen=state.viewed?.[card.id]||0;
  return clicks*8+category*2+(saved?12:0)+
   Math.min(70,Math.max(0,Number(state.quantScores?.[card.id])||0))-
@@ -64,11 +78,15 @@ export function feedScore(card,state){
 }
 export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
- const filtered=cards.filter(c=>(tab!=='following'||(state.following||[]).includes(c.id))&&
+ const following=tab==='following'?new Set(state.following||[]):null;
+ const filtered=cards.filter(c=>(!following||following.has(c.id))&&
   (!q||[c.name,c.category,c.feature,c.study].join(' ').toLowerCase().includes(q)));
  const priority=(a,b)=>Number(isInfinityAccepted(b))-Number(isInfinityAccepted(a));
  if(tab==='following')return filtered.sort((a,b)=>priority(a,b)||(state.counts?.[b.id]||0)-(state.counts?.[a.id]||0)||a.name.localeCompare(b.name));
- if(tab==='for-you')return filtered.sort((a,b)=>priority(a,b)||feedScore(b,state)-feedScore(a,state)||a.id.localeCompare(b.id));
+ if(tab==='for-you'){
+  const inputs=rankingInputs(state);
+  return filtered.sort((a,b)=>priority(a,b)||feedScore(b,state,inputs)-feedScore(a,state,inputs)||a.id.localeCompare(b.id));
+ }
  // Public remains a broad catalog rather than a personalized, narrowed feed.
  return filtered.sort(priority);
 }
@@ -86,9 +104,10 @@ export function nextFeedDirection(cards,tab,state,currentId='',query=''){
  const accepted=leastExposed.filter(isInfinityAccepted);
  const pool=accepted.length?accepted:leastExposed;
  if(!current&&tab==='public')return {card:pool[(state.advance||0)%pool.length],reason:accepted.length?'Infinity accepted · priority discovery':'Discover another interactive card'};
+ const inputs=tab==='public'?null:rankingInputs(state);
  const scored=pool.map(card=>{
   const relation=directionScore(current,card,state);
-  const personal=tab==='public'?0:Math.min(95,feedScore(card,state));
+  const personal=inputs?Math.min(95,feedScore(card,state,inputs)):0;
   const interest=tab==='for-you'?Math.min(70,Math.max(0,Number(state.quantScores?.[card.id])||0)):0;
   // The candidate must be useful after the current card, not simply the
   // repeatedly opened favorite. Penalize exposure to avoid endless loops.
@@ -132,5 +151,23 @@ export const markOpened=(state,id,fromId=state.lastUsed)=>({
   ...state.transitions,[fromId]:{...(state.transitions?.[fromId]||{}),
    [id]:Math.min(5000,(state.transitions?.[fromId]?.[id]||0)+1)}}:state.transitions||{}
 });
-export const toggleFollowing=(state,id)=>({...state,following:(state.following||[]).includes(id)?
- state.following.filter(x=>x!==id):[...state.following,id]});
+export function toggleFollowing(state,id){
+ const direct=state.following||[],removing=direct.includes(id);
+ const following=removing?direct.filter(value=>value!==id):[...direct,id];
+ const powerChain=cleanPowerChain(state.powerChain,following);
+ if(removing&&!powerChain.excluded.includes(id))powerChain.excluded.push(id);
+ return {...state,following,powerChain};
+}
+export function togglePowerChainFollowing(state,id){
+ if(!validId(id))return state;
+ const next=state.following.includes(id)?state:toggleFollowing(state,id);
+ const powerChain=cleanPowerChain(next.powerChain,next.following);
+ powerChain.seeds=powerChain.seeds.includes(id)?powerChain.seeds.filter(seed=>seed!==id):[...powerChain.seeds,id];
+ return {...next,powerChain};
+}
+export function unfollowPowerChainCard(state,id){
+ if(!validId(id)||state.following.includes(id))return state;
+ const powerChain=cleanPowerChain(state.powerChain,state.following);
+ if(!powerChain.excluded.includes(id))powerChain.excluded.push(id);
+ return {...state,powerChain};
+}
