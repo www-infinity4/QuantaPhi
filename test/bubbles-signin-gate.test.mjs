@@ -370,6 +370,18 @@ test('Cloudflare connected in wallet-bound accounts hides the obsolete Cloudflar
  assert.equal(ui.calls.some(c=>c.path==='/start'),false,'No duplicate OAuth flow');
 });
 
+test('main Bubbles automatically recovers an existing Cloudflare consent without launching another OAuth flow',async t=>{
+ const payload={...partialGate(),ok:true,walletVerified:true};
+ const ui=mountedGate(t,payload,{cloudflareRecovery:true});
+ await new Promise(setImmediate);
+ await new Promise(setImmediate);
+ assert.ok(ui.calls.some(call=>call.path==='/handoff/cloudflare/resume'),
+  'Chat checks for a server-sealed Cloudflare authorization even with no callback hint');
+ assert.equal(ui.calls.some(call=>call.path==='/start'),false,'No new Cloudflare login');
+ assert.match(ui.get('bubblesConnectionSummary').textContent,/Cloudflare signed in/);
+ assert.equal(ui.get('bubblesCloudflareSignIn').hidden,true);
+});
+
 test('Cloudflare received callback recovers verified account on Android without local pending state',async t=>{
  const payload={...partialGate(),ok:true,walletVerified:true};
  const ui=mountedGate(t,payload,{oauthReturn:'received',oauthProvider:'cloudflare',cloudflareRecovery:true});
