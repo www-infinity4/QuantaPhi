@@ -182,3 +182,43 @@ test('owner closure phrased as "is fixed" or "we have fixed" stops stale Cardona
  const owner=curateOwnerTaskContext("We've fixed Cardonay. Stop opening that repair.",{related:[],recent:[]});
  assert.match(owner.note,/do not dispatch a Cardone repair/);
 });
+
+
+test('two-feature repairs search individual owner code terms after a compound index miss',async()=>{
+ const searches=[],reads=[],owner='www-infinity4/QuantaPhi';
+ const result=await discoverProject({
+  request:'Fix Bubbles login and microphone',
+  catalog:[owner,'www-infinity4/Moltnook'],
+  invoke:async command=>{
+   if(command.action==='search_github_code'){
+    searches.push(command.query);
+    if(command.query==='login')return {ok:true,status:'code_search_results',results:[
+     {repository:owner,path:'bubbles-login.mjs',excerpt:'Bubbles login callback state'}]};
+    if(command.query==='microphone')return {ok:true,status:'code_search_results',results:[
+     {repository:owner,path:'bubbles-microphone.mjs',excerpt:'Bubbles microphone permissions'}]};
+    return {ok:true,status:'code_search_results',results:[]};
+   }
+   if(command.action==='read_repository')return {ok:true,headSha:'b'.repeat(40)};
+   if(command.action==='read_file'){
+    reads.push(command);
+    return {ok:true,sha:'a'.repeat(40),content:'Bubbles login and microphone controls'};
+   }
+   throw Error('unexpected tool');
+  }
+ });
+ assert.ok(searches.includes('login'), 'search login independently');
+ assert.ok(searches.includes('microphone'), 'search microphone independently');
+ assert.equal(result?.repository,owner);
+ assert.ok(reads.length>0,'pin a real source read before choosing a writable target');
+ assert.equal(result.writeAuthorized,false);
+});
+
+test('brief plural repair follow-up reuses latest owner defects for read-only discovery',()=>{
+ const history=[{role:'user',text:'The Bubbles login is broken and the microphone cannot connect.'},
+  {role:'assistant',text:'I will investigate.'}];
+ const query=sourceQueryFor('Fix those two things',history);
+ assert.match(query,/Bubbles login is broken/i);
+ assert.match(query,/microphone cannot connect/i);
+ assert.equal(sourceQueryFor('Explain those two things',history),'Explain those two things');
+ assert.equal(sourceQueryFor('Fix those two things',[{role:'user',text:'The issue was fixed. Stop reopening it.'}]),'Fix those two things');
+});
