@@ -57,7 +57,7 @@ export function callbackPage(provider,result='',reason='') {
   if(!['google','github','cloudflare'].includes(provider))return new Response('Unknown provider',{status:404});
   const providerName={google:'Google',github:'GitHub',cloudflare:'Cloudflare'}[provider];
   const details=Object.hasOwn(OAUTH_RETURN_REASONS,reason)?OAUTH_RETURN_REASONS[reason].replaceAll('Cloudflare',providerName):null;
-  const returnPath=provider==='google'&&result==='received'?'/bubbles-accounts.html?return=google':'/bubbles.html';
+  const returnPath=(provider==='google'||provider==='cloudflare')&&result==='received'?'/bubbles-accounts.html?return='+provider:'/bubbles.html';
   const message=result==='received'
     ? 'Authorization received securely. Return to Bubbles to verify and finish connecting your account.'
     : result==='declined'
@@ -201,7 +201,7 @@ export async function handleConnections(request,env,resolveService) {
         ready:github.permissionsApproved&&cloudflare.permissionsApproved,
         providers:{github,cloudflare}});
     }
-    if (request.method === 'GET' && url.pathname === PREFIX+'/accounts') return json(origin,{ok:true,accounts:await service.list(identity)});
+    if (request.method === 'GET' && url.pathname === PREFIX+'/accounts') return json(origin,{ok:true,accounts:await service.gateStatus(identity)});
     if (request.method !== 'POST') return json(origin,{ok:false,error:'not_found'},404);
     if (!request.headers.get('Content-Type')?.startsWith('application/json')) return json(origin,{ok:false,error:'json_required'},415);
     if (Number(request.headers.get('Content-Length')) > 8192) return json(origin,{ok:false,error:'too_large'},413);
@@ -213,8 +213,9 @@ export async function handleConnections(request,env,resolveService) {
       if(result?.connectionError)throw Error(result.connectionError);
       return json(origin,{ok:true,...result});
     }
-    if(url.pathname===PREFIX+'/handoff/google/resume'){
-      const result=await service.resumeGoogleHandoff(identity);
+    if(url.pathname===PREFIX+'/handoff/google/resume'||url.pathname===PREFIX+'/handoff/cloudflare/resume'){
+      const result=url.pathname.includes('/cloudflare/')
+        ?await service.resumeCloudflareHandoff(identity):await service.resumeGoogleHandoff(identity);
       if(result?.connectionError)throw Error(result.connectionError);
       return json(origin,{ok:true,...result});
     }
