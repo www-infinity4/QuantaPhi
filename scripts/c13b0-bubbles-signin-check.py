@@ -73,11 +73,11 @@ def javascript():
     if code!=200:raise Exception('Sign-in JS HTTP '+str(code))
     if "fullCloudflare?['owner.full']" not in body:
         raise Exception('Expected configured full-386 consent code is not live')
-    if 'Sign in and authorize 386 Cloudflare permissions' not in body:
-        raise Exception('Explicit 386-scope Cloudflare sign-in label is not live')
+    if 'Review Cloudflare project access' not in body or re.search(r'\b386 (?:registered |Cloudflare )?permissions\b',body):
+        raise Exception('Cloudflare account sign-in and project access review labels are not live')
     if 'client.resumePending(' not in body:
         raise Exception('Android/Chrome OAuth return recovery not present')
-    return {"fullRequiredScopeConsent":True,"scopeCountDisclosed":386,"returnHandler":True}
+    return {"fullRequiredScopeConsent":True,"separateProjectAccessLabel":True,"returnHandler":True}
 
 def callback():
     code,headers,body,url=get('/api/bubbles/connections/cloudflare/callback?result=failed&c13b0='+STAMP)

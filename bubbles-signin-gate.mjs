@@ -1,4 +1,4 @@
-import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261026-completion7';
+import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261105-provider-return1';
 
 export function summarizeGate(payload){
  const summary={ready:false,signedIn:false,walletVerified:payload?.ok===true&&payload?.walletVerified===true,providers:{},state:'unverified'};
@@ -54,7 +54,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   callback_handoff_decrypt_failed:'Bubbles could not decrypt your original sign-in session. The server keyring needs repair without erasing existing credentials.',
   callback_handoff_encrypt_failed:'Bubbles could not encrypt Cloudflare authorization. The server keyring needs repair.',
   callback_handoff_store_failed:'Bubbles could not write the encrypted authorization to secure storage.',
-  invalid_scope:'Cloudflare rejected the requested permissions. This OAuth client currently has 386 required scopes.',
+  invalid_scope:'Cloudflare rejected the permissions requested by Bubbles.',
   invalid_request:'Cloudflare rejected the sign-in request.',
   unauthorized_client:'Cloudflare did not authorize this OAuth application.',
   access_denied:'Cloudflare access was declined.',
@@ -104,24 +104,13 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   if(recover)recover.hidden=true;
   for(const id of ['github','cloudflare']){
    const value=summary.providers[id];
-   cards[id].dataset.status=value.connected?(value.approved?'connected':'upgrade'):value.configured?'pending':'unavailable';
-   // A previous partial OAuth connection must still offer re-authorization.
-   // Hiding the button because an old six-scope connection exists prevents
-   // the new 386-scope consent flow from ever starting.
+   cards[id].dataset.status=value.connected?'connected':value.configured?'pending':'unavailable';
+   // Keep project access review separate from an already verified identity.
    cards[id].hidden=value.connected&&value.approved;
-   // Identity and full toolkit consent are separate user actions.
-   // Initial Cloudflare sign-in needs only user-details.read + memberships.read.
-   // Only an already authenticated Cloudflare account offers 386-scope upgrade.
-   // When Cloudflare's existing client marks all 386 registered scopes as
-   // required, a two-scope request cannot establish a valid first consent.
-   // Tell the user explicitly that this sign-in also requests the toolkit.
-   actions[id].textContent=id==='cloudflare'&&value.authorizationActions.includes('owner.full')?
-    (value.connected?'Authorize all 386 Cloudflare permissions':'Sign in and authorize 386 Cloudflare permissions'):
-    value.connected&&!value.approved&&id==='cloudflare'?'Review Cloudflare permissions':
+   actions[id].textContent=value.connected&&!value.approved&&id==='cloudflare'?'Review Cloudflare project access':
     'Sign in with '+(id==='github'?'GitHub':'Cloudflare');
    labels[id].textContent=value.connected?
-    value.approved?'Signed in'+(value.label?' as '+value.label:''):
-    'Cloudflare account verified. Full toolkit authorization is separate. Your existing 386 registered permissions are unchanged.':
+    'Signed in'+(value.label?' as '+value.label:''):
     !value.configured?'Sign-in is temporarily unavailable. Please try again later.':
     value.reconnect?'Your session expired. Sign in again.':
     'Continue securely on '+(id==='github'?'GitHub':'Cloudflare')+'.';
@@ -138,7 +127,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    clearReturnNote();returnIssue='';
    setStatus('You’re signed in with the required permissions.');
   }else if(returnIssue)setStatus(returnIssue);
-  else if(summary.signedIn)setStatus('Your account is connected, but Cloudflare needs authorization for the remaining permissions.');
+  else if(summary.signedIn)setStatus('Your accounts are signed in. Review Cloudflare access to use project tools.');
   else if(summary.providers.github.connected)setStatus('Continue with Cloudflare.');
   else setStatus('Sign in to connect your accounts.');
   updateButtons();
@@ -193,17 +182,17 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     setStatus((id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in is not configured on the connection service. No authorization was started.');
     return;
    }
+   if(provider.connected&&provider.approved)return;
    // A registered owner.full permission means the OAuth client currently
    // requires the full scope inventory at consent time. Do not request an
    // incompatible two-scope subset and bounce back to the login button.
-   // The button explicitly discloses the 386-permission request.
    const fullCloudflare=id==='cloudflare'&&provider.authorizationActions.includes('owner.full');
    const authorizationActions=fullCloudflare?['owner.full']:
     id==='cloudflare'&&!provider.connected?['account.read']:provider.authorizationActions;
    const upgrading=id==='cloudflare'&&provider.connected;
    oauthInProgress=true;updateButtons();
    setStatus(fullCloudflare?
-    'Opening official Cloudflare consent for all 386 registered permissions. Only approve if you intend to grant all 386.':
+    'Opening Cloudflare to review the requested project access…':
     upgrading?'Opening Cloudflare to review permissions…':
     'Continue on '+(id==='github'?'GitHub':'Cloudflare')+' to sign in.');
    try{

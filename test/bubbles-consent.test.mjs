@@ -309,6 +309,28 @@ test('cross-browser handoff remains bound to the initiating wallet session',asyn
   await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'replayed'}),/callback_already_received/);
   assert.equal(JSON.stringify([...f.db.rows]).includes('provider-code'),false);
 });
+
+test('Google return recovers without a tab marker only for the original wallet session',async()=>{
+  const f=fixture(),state=await f.begin();
+  const {userId,sessionId}=f.input;
+  assert.deepEqual(await f.service.resumeGoogleHandoff({userId,sessionId}),{status:'missing'});
+  await f.service.handoff({userId,provider:'google',state,code:'private-return-code'});
+  for(const identity of [{userId:'bob',sessionId},{userId,sessionId:'other-wallet-session'}]){
+    assert.deepEqual(await f.service.resumeGoogleHandoff(identity),{status:'missing'});
+  }
+  assert.equal(f.calls,0);
+  const attempts=await Promise.all([f.service.resumeGoogleHandoff({userId,sessionId}),
+    f.service.resumeGoogleHandoff({userId,sessionId})]);
+  const recovered=attempts.find(attempt=>attempt.status==='connected');
+  assert.equal(recovered.status,'connected');
+  assert.equal(recovered.account.provider,'google');
+  assert.equal((await f.service.resumeGoogleHandoff({userId,sessionId})).status,'connected');
+  assert.equal(f.calls,1);
+  assert.ok(!JSON.stringify([...f.db.rows]).includes(state));
+  assert.ok(!JSON.stringify(recovered).includes('private-return-code'));
+  await f.service.disconnect({userId,id:recovered.account.id});
+  assert.equal((await f.service.resumeGoogleHandoff({userId,sessionId})).status,'expired');
+});
 test('cross-browser handoff rejects wrong owner, provider and expired state',async()=>{
   const f=fixture(),state=await f.begin();
   await assert.rejects(f.service.handoff({userId:'bob',provider:'google',state,code:'code'}),/state_invalid_or_used/);

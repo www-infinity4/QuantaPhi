@@ -62,6 +62,16 @@ test('received callback with lost tab session stays visible with an explanation'
  assert.match(message,/no longer has the matching Bubbles sign-in session/);
 });
 
+test('Google returns to Account Connections even when Android lost the original tab',()=>{
+ let destination='';
+ const host={
+  location:{pathname:'/api/bubbles/connections/google/callback',search:'?result=received',replace:path=>destination=path},
+  sessionStorage:{getItem:()=>{throw Error('Tab storage unavailable');}}
+ };
+ assert.equal(resumeAuthReturn(host),true);
+ assert.equal(destination,'/bubbles-accounts.html?return=google');
+});
+
 test('failed callback reports only recognized error classes and never OAuth code or state',()=>{
  const store=new Map();
  const pending={provider:'cloudflare',state:'q'.repeat(43),returnPath:'/bubbles.html',expiresAt:Date.now()+60000};
