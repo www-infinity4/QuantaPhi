@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T03:01:40.472601Z",
+  "checked_at": "2026-11-06T03:31:32.544477Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nj devils",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T02:40:00Z",
+      "query": "jessica chastain",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T03:10:00Z",
       "related_news_urls": [
-        "https://www.allaboutthejersey.com/devils-games/74902/2026-27-gamethread-16-new-jersey-devils-vs-st-louis-blues",
-        "https://www.espn.com/video/clip/_/id/50394801/anthony-mantha-nets-goal-devils",
-        "https://www.nhl.com/devils/video/stl-njd-mantha-scores-goal-against-jordan-binnington-6407991337112"
+        "https://www.yahoo.com/entertainment/celebrity/articles/inside-jessica-chastains-marriage-italian-213101174.html",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-chastain-pucci-micro-minidress-072043786.html",
+        "https://www.wvnews.com/newsfeed/us/ny-special-screening-of-heartland/image_ac0f7709-6e51-50f1-9ba9-3101eba39d09.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYbzt0L5xosmZVnPvrg4iQXagkzBskdGs72Y220oNZGurS0qgL6854d0rYQR0",
-      "image_credit": "All About The Jersey",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Rvxc1r0ZP_IKnUDvSFUqMLr78OihurfJYvgXeqcaFS_pptwJL1e-0AbFVoU",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.allaboutthejersey.com/devils-games/74902/2026-27-gamethread-16-new-jersey-devils-vs-st-louis-blues",
-          "title": "2026-27 Gamethread #16: New Jersey Devils vs. St. Louis Blues",
-          "publisher": "All About The Jersey",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/inside-jessica-chastains-marriage-italian-213101174.html",
+          "title": "Inside Jessica Chastain's marriage to Italian nobleman husband and rarely-seen two kids",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYbzt0L5xosmZVnPvrg4iQXagkzBskdGs72Y220oNZGurS0qgL6854d0rYQR0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Rvxc1r0ZP_IKnUDvSFUqMLr78OihurfJYvgXeqcaFS_pptwJL1e-0AbFVoU"
         },
         {
-          "url": "https://www.espn.com/video/clip/_/id/50394801/anthony-mantha-nets-goal-devils",
-          "title": "Anthony Mantha nets goal for Devils",
-          "publisher": "ESPN",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-chastain-pucci-micro-minidress-072043786.html",
+          "title": "Jessica Chastain’s Pucci Micro Minidress Barely Skims Her Thighs for Press",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPXK7uL-PDLo2lmmeFltV7D28BmkjG_RJ6QnudwM7_sjyeY2wAnMaF1MvvRts"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU4V4vvl-v1O7uej1a6Q_jMZpdWyQKWEVLj-JZSWKw3gYg3e-aDBdSUHJ9KN8"
         },
         {
-          "url": "https://www.nhl.com/devils/video/stl-njd-mantha-scores-goal-against-jordan-binnington-6407991337112",
-          "title": "STL@NJD: Mantha scores goal against Jordan Binnington",
-          "publisher": "NHL.com",
+          "url": "https://www.wvnews.com/newsfeed/us/ny-special-screening-of-heartland/image_ac0f7709-6e51-50f1-9ba9-3101eba39d09.html",
+          "title": "NY Special Screening of \"Heartland\"",
+          "publisher": "WV News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVoPquwh2cvdkFdflx0oXiUT-sIfxo5YKcvU26sImB3XaRtFIJOlZwqGl1gn0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs0rRUxN6MRimibc8tqQVFdrmLfTil2V5Lfg6zgI_NTnRjC6UY9IxbVIFFZNE"
         }
       ]
     },
     {
-      "query": "lauren boebert congressional district",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T02:40:00Z",
+      "query": "josh cuevas",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T03:10:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-4-results",
-        "https://www.cpr.org/2026/11/03/colorado-election-results-congressional-district-4-boebert-laubacher/",
-        "https://www.denverpost.com/2026/11/04/lauren-boebert-election-results-eileen-laubacher-cd4/"
+        "https://www.cbssports.com/fantasy/football/news/ravens-josh-cuevas-draws-two-targets-in-loss/",
+        "https://www.rotowire.com/football/headlines/josh-cuevas-news-draws-two-targets-in-loss-645847"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA-84ftLC9S4MUfoDmDtErRixiuH6u1k-9I8pZCm8Vn8ZSYcFWriCdaBWwlIs",
-      "image_credit": "NBC News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6IZepRI9gTMMeeV1QI8P5ZShVBPsRhcSNzRbZFjNg-VEoRuBY0wUkhrZ4u6g",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-4-results",
-          "title": "Colorado House District 4 Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
+          "url": "https://www.cbssports.com/fantasy/football/news/ravens-josh-cuevas-draws-two-targets-in-loss/",
+          "title": "Ravens' Josh Cuevas: Draws two targets in loss",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA-84ftLC9S4MUfoDmDtErRixiuH6u1k-9I8pZCm8Vn8ZSYcFWriCdaBWwlIs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6IZepRI9gTMMeeV1QI8P5ZShVBPsRhcSNzRbZFjNg-VEoRuBY0wUkhrZ4u6g"
         },
         {
-          "url": "https://www.cpr.org/2026/11/03/colorado-election-results-congressional-district-4-boebert-laubacher/",
-          "title": "Lauren Boebert in big fight to keep her seat in Congress in too-close-to-call race",
-          "publisher": "Colorado Public Radio",
+          "url": "https://www.rotowire.com/football/headlines/josh-cuevas-news-draws-two-targets-in-loss-645847",
+          "title": "Josh Cuevas News: Draws two targets in loss",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw31sj8gahgKTqRRaGWyQB1tkEdVqUrxDAWO0dFimMAWS7DTItmo3gLPtFbPg"
-        },
-        {
-          "url": "https://www.denverpost.com/2026/11/04/lauren-boebert-election-results-eileen-laubacher-cd4/",
-          "title": "Rep. Lauren Boebert trails Democratic challenger in Colorado’s 4th Congressional District",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4REZKMskXLuqAd61DTdQYhYt8fsWMLEV6WI0XwtN9LwbhiSUNYEdCJfdCF_g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREd6sv7j3AuWA9CdZi9Eu8rlHfEkpY2MXYV1mJdvwBySXXApuXRfPIL3754e8"
         }
       ]
     },
     {
-      "query": "tulane basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T02:40:00Z",
+      "query": "meg ryan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T03:10:00Z",
       "related_news_urls": [
-        "https://www.nola.com/no-tujacksonstate-110626--039-jpg/image_815128f7-2dda-596a-a285-b5003eaa7673.html",
-        "https://www.sportsgambler.com/betting-tips/basketball/jackson-state-tigers-vs-tulane-green-wave-prediction-odds-2026-11-05/",
-        "https://www.bleachernation.com/picks/2026/11/05/aac-basketball-predictions-computer-picks-and-best-bets-november-5-2/"
+        "https://people.com/billy-crystal-and-meg-ryan-reunite-at-broadway-show-860-12238598",
+        "https://www.yahoo.com/news/videos/meg-ryan-billy-crystal-reunite-133847464.html",
+        "https://palipost.com/860-billy-crystals-love-letter-to-pacific-palisades/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSxO0PPUXi68oi4e_x3q60kLmB1KPbbGv1YZRnWUeLqcXcZs8om5YQGBP2l9M",
-      "image_credit": "NOLA.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREPJ1tzNEr4ldcNHn5zHiDulSsBHs_ZYG6ZlRuYs7qLyPLhO6peqSZ6Liw1EQ",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.nola.com/no-tujacksonstate-110626--039-jpg/image_815128f7-2dda-596a-a285-b5003eaa7673.html",
-          "title": "NO.tujacksonstate.110626-.039.jpg",
-          "publisher": "NOLA.com",
+          "url": "https://people.com/billy-crystal-and-meg-ryan-reunite-at-broadway-show-860-12238598",
+          "title": "Billy Crystal and Meg Ryan Reunite at His Broadway Show, 37 Years After When Harry Met Sally",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSxO0PPUXi68oi4e_x3q60kLmB1KPbbGv1YZRnWUeLqcXcZs8om5YQGBP2l9M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREPJ1tzNEr4ldcNHn5zHiDulSsBHs_ZYG6ZlRuYs7qLyPLhO6peqSZ6Liw1EQ"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/jackson-state-tigers-vs-tulane-green-wave-prediction-odds-2026-11-05/",
-          "title": "Jackson State vs Tulane Prediction, Picks & Odds | 05 Nov 2026",
+          "url": "https://www.yahoo.com/news/videos/meg-ryan-billy-crystal-reunite-133847464.html",
+          "title": "Meg Ryan and Billy Crystal Reunite in Sweet New Photo",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQHwHCzrnosrs0TZ__yWAzi2xpORtt2vVH4DYIVHjKqpP5FkI9iTlij_AS0bo"
+        },
+        {
+          "url": "https://palipost.com/860-billy-crystals-love-letter-to-pacific-palisades/",
+          "title": "‘860’: Billy Crystal’s Love Letter to Pacific Palisades",
+          "publisher": "Palisadian-Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQWn1b6fjuOI0rsRTULRfm8pAUGMo6dnB6o97LbGqVsBfvTeulWhO5dH7pSNU"
+        }
+      ]
+    },
+    {
+      "query": "rice basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T03:10:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/texas-a-m-commerce-lions-vs-rice-owls-prediction-odds-2026-11-05/",
+        "https://www.accuscore.com/game/cmw3dmmh20oo3nu01k2tokc02",
+        "https://www.bleachernation.com/picks/2026/11/05/southland-basketball-predictions-computer-picks-and-best-bets-november-5/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/texas-a-m-commerce-lions-vs-rice-owls-prediction-odds-2026-11-05/",
+          "title": "Texas A&M-Commerce vs Rice Prediction, Picks & Odds | 05 Nov 2026",
           "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
         },
         {
-          "url": "https://www.bleachernation.com/picks/2026/11/05/aac-basketball-predictions-computer-picks-and-best-bets-november-5-2/",
-          "title": "AAC Basketball Predictions, Computer Picks and Best Bets | November 5",
+          "url": "https://www.accuscore.com/game/cmw3dmmh20oo3nu01k2tokc02",
+          "title": "East Texas A&M vs Rice Prediction (Nov 5): Rice 68% — Odds & Live Score",
+          "publisher": "AccuScore",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVe5QK3K4pl4EsTRMoia7itiVGglzNGbyM4pdyVy5yvzm4vu_snGyHPVflKak"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/05/southland-basketball-predictions-computer-picks-and-best-bets-november-5/",
+          "title": "Southland Basketball Predictions, Computer Picks and Best Bets | November 5",
           "publisher": "Bleacher Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfYGDEOmnhed-o92OJPhh55d4WoTH_XSl9Yxk6FPk-zPNz1V4gp57scMhYDsE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_hkpVTUmuzoHc2fKxAa-phvbE5xkt3TR9xIqR3EgCKs46mfx8S1AESyOm4yY"
         }
       ]
     },
     {
-      "query": "texas tech basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T02:40:00Z",
+      "query": "miles bridges",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T03:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7756792/2026/11/05/bethune-cookman-vs-texas-tech-stream-how-to-watch-nov-5/",
-        "https://bleacherreport.com/game/northern-kentucky-w-basketball-vs-kentucky-w-basketball-2026-11-5-18-30",
-        "https://lufkindailynews.com/news_reuters/sports/damarion-dennis-no-19-texas-tech-gear-up-for-bethune-cookman/article_14bb7c6c-3e3d-50a5-bd43-d4fd81e7d4c9.html"
+        "https://www.nba.com/watch/video/miles-bridges-with-the-3-pointer-2",
+        "https://www.cbssports.com/fantasy/basketball/news/suns-miles-bridges-chips-in-18-in-wednesdays-loss/",
+        "https://www.espn.com/video/clip/_/id/50364706/miles-bridges-1-bucket"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXFOe4JNzHqMfNURfEOk6m4AJTiqZ5nz1A5s6Ec4Ty1Btl-ey5gGi-qIgODA",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzaMUnUAEIj-raQk7_eiLcC0p0O7w4q9q_zHz2Hx0L1O9xPdwdBGHbIl1CvKs",
+      "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7756792/2026/11/05/bethune-cookman-vs-texas-tech-stream-how-to-watch-nov-5/",
-          "title": "How to watch Bethune-Cookman vs. Texas Tech men’s basketball: TV channel and streaming options for November 5",
+          "url": "https://www.nba.com/watch/video/miles-bridges-with-the-3-pointer-2",
+          "title": "Miles Bridges with the 3-pointer",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzaMUnUAEIj-raQk7_eiLcC0p0O7w4q9q_zHz2Hx0L1O9xPdwdBGHbIl1CvKs"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/suns-miles-bridges-chips-in-18-in-wednesdays-loss/",
+          "title": "Suns' Miles Bridges: Chips in 18 in Wednesday's loss",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRexZUBC31V2b_qWPQuYS7NLlKz7nZ6EbsLxoBaQlxfP74UK5mCW9hQla-oNio"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50364706/miles-bridges-1-bucket",
+          "title": "Miles Bridges with the and-1 bucket",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT18dsjDC3HzfH8g2i1Tfnh1U2H0EiZv-76ogecbOPwy0LxeYgNtpVjgD7dp2Q"
+        }
+      ]
+    },
+    {
+      "query": "bryan cranston",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T03:00:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-05/t-mobile-customers-swap-roaming-hotspots-for-streaming-benefits",
+        "https://www.cnet.com/tech/mobile/t-mobile-t-mix-saver-plan/",
+        "https://variety.com/2026/tv/news/t-mobile-bryan-cranston-t-mix-1236940344/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4TTB6AsiR-fyjm0qDvG-Kpt0r4vXSr_1T_tTGQCFwcw3tnUPjtQvZfOcnztw",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/t-mobile-customers-swap-roaming-hotspots-for-streaming-benefits",
+          "title": "T-Mobile Customers Swap Roaming, Hotspots For Streaming Benefits",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4TTB6AsiR-fyjm0qDvG-Kpt0r4vXSr_1T_tTGQCFwcw3tnUPjtQvZfOcnztw"
+        },
+        {
+          "url": "https://www.cnet.com/tech/mobile/t-mobile-t-mix-saver-plan/",
+          "title": "T-Mobile Is Throwing One More Phone Plan Into the T-Mix for Budget Subscribers",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrnLlM5dB_51zc-5j39XQJIJ5B7K7eiW_hoyTW9xl1dyrMP3edL8DLuVpVWM"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/t-mobile-bryan-cranston-t-mix-1236940344/",
+          "title": "T-Mobile Taps Bryan Cranston in Bid to Wake Consumers Up to ‘T-Mix’ Plan",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaFoMXQ3TprazLbpQ0KOs945u-kytc7MQ86TIaaQdkyRYKNWLx60IAJGcsnno"
+        }
+      ]
+    },
+    {
+      "query": "nhl games",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T03:00:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/anaheim-ducks-at-edmonton-oilers-game-preview-november-5-2026",
+        "https://www.espn.com/video/clip/_/id/50394636/cutter-gauthier-tallies-goal-vs-oilers",
+        "https://www.nytimes.com/athletic/7756771/2026/11/05/ducks-vs-oilers-stream-how-to-watch-nov-5/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/anaheim-ducks-at-edmonton-oilers-game-preview-november-5-2026",
+          "title": "Ducks at Oilers projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50394636/cutter-gauthier-tallies-goal-vs-oilers",
+          "title": "Cutter Gauthier tallies goal vs. Oilers",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyrcL7-zl1f-lJOugX3WLydpn_M5Kdpy71GDUIZeOWpHSODXqCSORAig05LOM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7756771/2026/11/05/ducks-vs-oilers-stream-how-to-watch-nov-5/",
+          "title": "How to watch Ducks vs. Oilers: TV channel and streaming options for November 5",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXFOe4JNzHqMfNURfEOk6m4AJTiqZ5nz1A5s6Ec4Ty1Btl-ey5gGi-qIgODA"
-        },
-        {
-          "url": "https://bleacherreport.com/game/northern-kentucky-w-basketball-vs-kentucky-w-basketball-2026-11-5-18-30",
-          "title": "Kentucky vs. Northern Kentucky - November 05, 2026",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXQrzlMKuQKZjOeCPnsyeYG-157l1GBdhTJgq6n3DpMtV-dzqKZjUmB6AQmog"
-        },
-        {
-          "url": "https://lufkindailynews.com/news_reuters/sports/damarion-dennis-no-19-texas-tech-gear-up-for-bethune-cookman/article_14bb7c6c-3e3d-50a5-bd43-d4fd81e7d4c9.html",
-          "title": "Damarion Dennis, No. 19 Texas Tech gear up for Bethune-Cookman",
-          "publisher": "The Lufkin Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfTTUZC4sgKjYTiK9QgYq2LGUkxPeCzbr0IwYWQZbL11nPc_xoRb6N-FXU-aM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPbrfHQFgu5zdTOgAFGbLK6LDbnyn4OEqoZMkAcXTppKEjiz1ITDIqRA7UckM"
         }
       ]
     },
     {
-      "query": "stock market drop 401k impact",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T02:40:00Z",
+      "query": "tristan da silva",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T03:00:00Z",
       "related_news_urls": [
-        "https://www.foxbusiness.com/economy/wall-street-stocks-tech-sell-off-november-5-2026",
-        "https://seekingalpha.com/news/4667291-failing-tech-stocks-hit-retirement-accounts-that-ought-to-pressure-democrats-into-ai-and-tech",
-        "https://finance.yahoo.com/personal-finance/investing/article/heres-what-to-do-with-your-retirement-savings-in-a-market-sell-off-183419856.html"
+        "https://sports.yahoo.com/videos/tristan-da-silva-primed-light-180146042.html",
+        "https://www.washingtonpost.com/politics/2026/11/02/trump-last-midterm-rally-marks-end-political-era/",
+        "https://www.telegraphherald.com/image_009e4b93-bda5-44c2-934e-10809f6a79da.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSNbsOLdFr3o5Ra8E86hvVhZWXny4tgdIObl22v_GM_ZN5cRIfpMMnIkFkf5Y",
-      "image_credit": "Fox Business",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-7SX4FGrWagQFZ8B0k44tMeOroxkkv4IGBWkwrSfynj49zu11G_RLPGSyjFM",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.foxbusiness.com/economy/wall-street-stocks-tech-sell-off-november-5-2026",
-          "title": "What Wall Street's tech stock sell-off means for your 401(k)",
-          "publisher": "Fox Business",
+          "url": "https://sports.yahoo.com/videos/tristan-da-silva-primed-light-180146042.html",
+          "title": "Tristan da Silva Primed to Light Up the Suns from Deep",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSNbsOLdFr3o5Ra8E86hvVhZWXny4tgdIObl22v_GM_ZN5cRIfpMMnIkFkf5Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-7SX4FGrWagQFZ8B0k44tMeOroxkkv4IGBWkwrSfynj49zu11G_RLPGSyjFM"
         },
         {
-          "url": "https://seekingalpha.com/news/4667291-failing-tech-stocks-hit-retirement-accounts-that-ought-to-pressure-democrats-into-ai-and-tech",
-          "title": "Failing tech stocks hit retirement accounts, that ought to pressure Democrats, says SA analyst",
-          "publisher": "Seeking Alpha",
+          "url": "https://www.washingtonpost.com/politics/2026/11/02/trump-last-midterm-rally-marks-end-political-era/",
+          "title": "Trump faces a future without the rallies that made him a political force",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTx9RmJnAb16Qp3HChc3tSMvMJphHh_T7eF4n09VaBHq2DwbLm9Uk8uTvJM550"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMbXoT_hq1Z_UaMajcFzTvk-1nr-KvB_mP6iF_iTrqQgexguB1b8J4_8GGwo"
         },
         {
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/heres-what-to-do-with-your-retirement-savings-in-a-market-sell-off-183419856.html",
-          "title": "Here's what to do with your retirement savings in a market sell-off",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.telegraphherald.com/image_009e4b93-bda5-44c2-934e-10809f6a79da.html",
+          "title": "Trump Visit",
+          "publisher": "TelegraphHerald.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhbekXQ4kfzbTXTJNJgH1_bnBwxFoUaTSwo8JNIORmQnfOCgLGqYMWCr2VvJg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjfPuUJZ69RwhWkjwYzsYoFIlpCUG1A1tjgK1A4Cuw-3hJZ5ZxusLHz-kOU5U"
         }
       ]
     },
     {
-      "query": "oso ighodaro",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T02:40:00Z",
-      "related_news_urls": [
-        "https://www.azcentral.com/story/sports/nba/suns/2026/11/05/phoenix-suns-make-change-in-starting-lineup-after-slow-start/92634825007/",
-        "https://www.si.com/nba/suns/onsi/phoenix-suns-make-big-starting-lineup-change-orlando-magic",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/sandro-mamukelashvili-illness-questionable"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOt6tw5i4fQ1RKU8rbvZgwQ2u-l5ZsHLoDadvGgu7G805sSjDNpllBwdh_j6Q",
-      "image_credit": "azcentral.com and The Arizona Republic",
-      "news": [
-        {
-          "url": "https://www.azcentral.com/story/sports/nba/suns/2026/11/05/phoenix-suns-make-change-in-starting-lineup-after-slow-start/92634825007/",
-          "title": "Phoenix Suns make change in starting lineup after 1-5 start",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOt6tw5i4fQ1RKU8rbvZgwQ2u-l5ZsHLoDadvGgu7G805sSjDNpllBwdh_j6Q"
-        },
-        {
-          "url": "https://www.si.com/nba/suns/onsi/phoenix-suns-make-big-starting-lineup-change-orlando-magic",
-          "title": "Suns Make Big Starting Lineup Change vs Orlando Magic",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxpDyCdQY8FChOmIOpnTc_nigiUdV4hXJa-BZTE3BWhD5CK88XQKc0V4t60tw"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/sandro-mamukelashvili-illness-questionable",
-          "title": "Sandro Mamukelashvili (illness) questionable",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7PCQAfCOD5Fg0zRl98E3lJKDgtOaAoG6-ldS-e50pidmYedcM7NBuqTGI1vI"
-        }
-      ]
-    },
-    {
-      "query": "vaccinations",
+      "query": "the walking dead",
       "approx_searches": "2000+",
-      "published_at": "2026-11-06T02:30:00Z",
+      "published_at": "2026-11-06T02:50:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/05/health/measles-death-wisconsin-infant",
-        "https://abcnews.com/Health/wisconsin-infant-dies-measles-health-officials/story?id=137886629",
-        "https://www.cidrap.umn.edu/measles/baby-wisconsin-has-died-measles-3rd-such-us-death-week"
+        "https://ew.com/yaga-hudson-williams-castrated-corpse-director-interview-12194611",
+        "https://www.theguardian.com/tv-and-radio/2026/oct/31/yaga-review-sky-atlantic-erotic-thriller-hudson-williams",
+        "https://www.amcglobalmedia.com/2026/11/05/yaga-is-the-1-exclusive-series-launch-in-the-history-of-amc/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfE9_zmkIUqGqpDwR1PKVuK4tuvOoo3NuEt7JAnO2a06Bg7b3q_fHI-PMLK-w",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJyhqGksxVswAR7sLUJIuYFykqKSp8i5NxBGWsj_eredyx1X4E8oqWzPGm7rg",
+      "image_credit": "Entertainment Weekly",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/05/health/measles-death-wisconsin-infant",
-          "title": "Wisconsin infant is US’ third measles-related death this week",
-          "publisher": "CNN",
+          "url": "https://ew.com/yaga-hudson-williams-castrated-corpse-director-interview-12194611",
+          "title": "How ‘Yaga’ put Hudson Williams ‘through hell’ for an exposing scene",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfE9_zmkIUqGqpDwR1PKVuK4tuvOoo3NuEt7JAnO2a06Bg7b3q_fHI-PMLK-w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJyhqGksxVswAR7sLUJIuYFykqKSp8i5NxBGWsj_eredyx1X4E8oqWzPGm7rg"
         },
         {
-          "url": "https://abcnews.com/Health/wisconsin-infant-dies-measles-health-officials/story?id=137886629",
-          "title": "8th measles-related death reported in Wisconsin: Health officials",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/oct/31/yaga-review-sky-atlantic-erotic-thriller-hudson-williams",
+          "title": "Yaga review – this erotic witchy thriller starring Hudson Williams is a total head-messer",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStA8kx4rWyeXhYS8pzfhA1-CZKpxEBGDEok5skgzYo4NlDEqeZuqJZG1IqFeA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5kp3BwJLY6BN4KdimAvO34s0M0ZOKBLQvDRJXjqiLq53yVqv7ImMf9ZSgJqw"
         },
         {
-          "url": "https://www.cidrap.umn.edu/measles/baby-wisconsin-has-died-measles-3rd-such-us-death-week",
-          "title": "A baby in Wisconsin has died from measles, the 3rd such US death this week",
-          "publisher": "CIDRAP",
+          "url": "https://www.amcglobalmedia.com/2026/11/05/yaga-is-the-1-exclusive-series-launch-in-the-history-of-amc/",
+          "title": "YAGA IS THE #1 EXCLUSIVE SERIES LAUNCH IN THE HISTORY OF AMC+",
+          "publisher": "AMC Global Media",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSDM3ZG1XzOfNsROjAl6gNYUa77Ghv828zDRxp4bAptQYaVBzgJB1WI78Tds"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6f0nr44e935Emzbq9zr5UHkJlIqm0yKbNxG4d2lNU_5DuHf5SrfdHYcd2U9I"
         }
       ]
     },
     {
-      "query": "flu shots",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T02:30:00Z",
+      "query": "montreal canadiens",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T02:50:00Z",
       "related_news_urls": [
-        "https://www.newsday.com/news/health/flu-shot-t6c6r1e6",
-        "https://www.cbsnews.com/newyork/video/ny-health-dept-urges-residents-to-get-flu-shot-ahead-of-the-holidays/",
-        "https://www.sgmc.org/sgmc-health-urges-community-to-take-precautions-as-flu-cases-rise/"
+        "https://theahl.com/news/mittelstadt-ahl-rookie-month",
+        "https://thehockeynews.com/nhl/montreal-canadiens/latest-news/canadiens-top-prospect-is-only-continuing-to-dominate",
+        "https://insidetherink.com/tag/ahl-rookie-of-the-month/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwCyVNkkbiLjo9Wdz6_JKDEFdp6DFdGwSMSRL9fvxOEo_mEyWX5zyRGJh6uS0",
-      "image_credit": "Newsday",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqkaHgn8HtOdOYIIURDoytXtpw2GjItw_WkpE2wBnEC0ncevXsJHjBcdcjIA",
+      "image_credit": "The American Hockey League",
       "news": [
         {
-          "url": "https://www.newsday.com/news/health/flu-shot-t6c6r1e6",
-          "title": "New York flu cases have nearly quadrupled from last year",
-          "publisher": "Newsday",
+          "url": "https://theahl.com/news/mittelstadt-ahl-rookie-month",
+          "title": "Rocket’s Mittelstadt named AHL Rookie of the Month for October",
+          "publisher": "The American Hockey League",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwCyVNkkbiLjo9Wdz6_JKDEFdp6DFdGwSMSRL9fvxOEo_mEyWX5zyRGJh6uS0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqkaHgn8HtOdOYIIURDoytXtpw2GjItw_WkpE2wBnEC0ncevXsJHjBcdcjIA"
         },
         {
-          "url": "https://www.cbsnews.com/newyork/video/ny-health-dept-urges-residents-to-get-flu-shot-ahead-of-the-holidays/",
-          "title": "NY Health Dept. urges residents to get flu shot ahead of the holidays",
-          "publisher": "CBS News",
+          "url": "https://thehockeynews.com/nhl/montreal-canadiens/latest-news/canadiens-top-prospect-is-only-continuing-to-dominate",
+          "title": "Canadiens Top Prospect Is Only Continuing To Dominate",
+          "publisher": "The Hockey News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ-bEhdRwN2DFQYn50TrwwYEGPiigGbCh3tGMzirsKqvYVMmJEFT6mhXrDNfQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRF3Cz_G9sqNx4mC0MKLv1G9Qiu137sUUCDcETPNk6SLnKYUFfqGe13WNR7474"
         },
         {
-          "url": "https://www.sgmc.org/sgmc-health-urges-community-to-take-precautions-as-flu-cases-rise/",
-          "title": "SGMC Health Urges Community to Take Precautions as Flu Cases Rise",
-          "publisher": "SGMC Health",
+          "url": "https://insidetherink.com/tag/ahl-rookie-of-the-month/",
+          "title": "AHL Rookie of the Month Archives",
+          "publisher": "Inside The Rink",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ20X2fS6kucksp1pecfwt1_sarbWTvbJ9VkBiZzKWPwUEiqj7Otfc7tWCEiaw"
-        }
-      ]
-    },
-    {
-      "query": "immunizations",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T02:30:00Z",
-      "related_news_urls": [
-        "https://theclintonjournal.com/stories/idph-reminds-illinoisans-its-time-to-get-seasonal-respiratory-illness-immunizations,98895",
-        "https://www.cbsnews.com/chicago/news/cook-county-health-free-flu-coivd-vaccines-holiday-season/",
-        "https://chicago.suntimes.com/letters-to-the-editor/2026/10/31/vaccinations-midterms-trump-summer-festivals-nurses-comed-data-centers-campus-sex-assaults-ctu"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkO4Q4g0TwQ94t8d7jmH8vBFwlO93IVLcNm1bMGDDOOWA8WIJKnMw0YG-Wvg",
-      "image_credit": "The Clinton Journal",
-      "news": [
-        {
-          "url": "https://theclintonjournal.com/stories/idph-reminds-illinoisans-its-time-to-get-seasonal-respiratory-illness-immunizations,98895",
-          "title": "IDPH reminds Illinoisans: It’s time to get seasonal respiratory illness immunizations",
-          "publisher": "The Clinton Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkO4Q4g0TwQ94t8d7jmH8vBFwlO93IVLcNm1bMGDDOOWA8WIJKnMw0YG-Wvg"
-        },
-        {
-          "url": "https://www.cbsnews.com/chicago/news/cook-county-health-free-flu-coivd-vaccines-holiday-season/",
-          "title": "Cook County Health offering free flu, COIVD vaccines ahead of holiday season",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReC5gXN6BgskZ5vRDGXLf3ZHF_f6otNwkvkxGC87xuor41ROY9aBEWuCKgte0"
-        },
-        {
-          "url": "https://chicago.suntimes.com/letters-to-the-editor/2026/10/31/vaccinations-midterms-trump-summer-festivals-nurses-comed-data-centers-campus-sex-assaults-ctu",
-          "title": "Get vaccinated to protect yourself and others",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVlPAnWQ2RiHZnUObFjCbTtSe02YaVFoaODaXuytPuRjvCFLGM61RIw0zREI4"
-        }
-      ]
-    },
-    {
-      "query": "flu shots near me",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T02:30:00Z",
-      "related_news_urls": [
-        "https://kewaneevoice.com/health-roundup-flu-shots-diabetes-awareness-and-county-board-meetings/",
-        "https://www.lehighvalleylive.com/news/2026/11/free-drive-through-flu-shots-offered-this-weekend-in-the-lehigh-valley.html",
-        "https://www.wfmz.com/news/area/lehighvalley/lvhn-to-hold-annual-free-drive-thru-flu-shot-clinics-amid-flu-and-cold-season/article_141df483-e5df-4c77-99c9-b9f3531b044d.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKIJyKzjNEScBUAizIzofAppNxHDPy_iCqx_lyEJM77plvo61zVvx_rXCZ52s",
-      "image_credit": "Kewanee Voice",
-      "news": [
-        {
-          "url": "https://kewaneevoice.com/health-roundup-flu-shots-diabetes-awareness-and-county-board-meetings/",
-          "title": "Health roundup, flu shots, diabetes awareness and county board meetings",
-          "publisher": "Kewanee Voice",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKIJyKzjNEScBUAizIzofAppNxHDPy_iCqx_lyEJM77plvo61zVvx_rXCZ52s"
-        },
-        {
-          "url": "https://www.lehighvalleylive.com/news/2026/11/free-drive-through-flu-shots-offered-this-weekend-in-the-lehigh-valley.html",
-          "title": "Free drive-through flu shots offered this weekend in the Lehigh Valley",
-          "publisher": "LehighValleyLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRL-kWw9ju4VKTI9U32f32-PKc7sFitwnnDooVMuvjEDhZVwNM95wU_SYnWAK8"
-        },
-        {
-          "url": "https://www.wfmz.com/news/area/lehighvalley/lvhn-to-hold-annual-free-drive-thru-flu-shot-clinics-amid-flu-and-cold-season/article_141df483-e5df-4c77-99c9-b9f3531b044d.html",
-          "title": "LVHN to hold annual free drive-thru flu shot clinics, amid flu and cold season",
-          "publisher": "WFMZ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbrOTjtSJ5S7egvaFjfTxH5vZ02lo7yecgFYJmbVcZtC7ev0vjUQukQEXxN48"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUxb43z2HVC7q3jHV_4PaA33SxbqlCdTC8zFFDbnzPqdJkcm4ANO090287yS4"
         }
       ]
     }
