@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T07:31:29.672921Z",
+  "checked_at": "2026-11-06T08:01:42.112331Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "nifty 50",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T07:30:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/india/indian-stocks-set-pullback-after-sharp-rally-oil-slide-foreign-inflows-2026-11-06/",
+        "https://m.economictimes.com/markets/stocks/news/bloodbath-in-nasdaq-kospi-and-nikkei-but-why-nifty-is-an-oasis-of-peace-amid-global-rout/articleshow/135594762.cms",
+        "https://www.bloomberg.com/news/newsletters/2026-11-06/overbought-nifty-may-find-fresh-fuel-as-ai-stocks-tumble-globally"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVeAO3wu26OB2rsKKiOfCjAw3FpzqeqPItY4iQPP3EalS_kwSzWid2NZQ0758",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/india/indian-stocks-set-pullback-after-sharp-rally-oil-slide-foreign-inflows-2026-11-06/",
+          "title": "India bucks Asia tech rout as oil slide reverses market fortunes",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVeAO3wu26OB2rsKKiOfCjAw3FpzqeqPItY4iQPP3EalS_kwSzWid2NZQ0758"
+        },
+        {
+          "url": "https://m.economictimes.com/markets/stocks/news/bloodbath-in-nasdaq-kospi-and-nikkei-but-why-nifty-is-an-oasis-of-peace-amid-global-rout/articleshow/135594762.cms",
+          "title": "Bloodbath in Nasdaq, Kospi and Nikkei but why Nifty is an oasis of peace amid global rout",
+          "publisher": "The Economic Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToETzz163UwQhfyLOdqvvjjsVCVz4243qM-iSWM3hibLN3ItOqAEWdmzQOzuA"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/newsletters/2026-11-06/overbought-nifty-may-find-fresh-fuel-as-ai-stocks-tumble-globally",
+          "title": "Overbought Nifty May Find Fresh Fuel as AI Stocks Tumble Globally",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTejnQoIMsiNM63mCyg5Aw08IDkv8Z7QcLxYzwlDj9JpewLXrwtpbx95g3s3L4"
+        }
+      ]
+    },
+    {
+      "query": "anya taylor-joy",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T07:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/04/movies/dune-part-three-timothee-chalamet-zendaya-robert-pattinson.html",
+        "https://www.yahoo.com/entertainment/movies/articles/dune-3-star-anya-taylor-152023239.html",
+        "https://variety.com/2026/film/news/dune-3-changes-books-cast-1236939217/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNRIIe7rbjuablATKn2s-W01mGffFls6KXcSvKGsSgVVi-h0NoFiqACfo3-kQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/04/movies/dune-part-three-timothee-chalamet-zendaya-robert-pattinson.html",
+          "title": "‘Dune’ Reunion: Timothée Chalamet, Zendaya and Friends Can Take the Heat",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNRIIe7rbjuablATKn2s-W01mGffFls6KXcSvKGsSgVVi-h0NoFiqACfo3-kQ"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/dune-3-star-anya-taylor-152023239.html",
+          "title": "Dune 3 star Anya Taylor-Joy didn't realize Alia Atreides is a \"bad guy\" in the sequel until the end of the movie",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://variety.com/2026/film/news/dune-3-changes-books-cast-1236939217/",
+          "title": "‘Dune 3’ Cast Says the Movie Takes ‘Departures’ From the Books, but ‘You’re Crazy If You’re Going to Pick Fault’ With It",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7vDmXujtPM6nTE-w1qYUPPO0Bg8hFE3OycHeq39seoKoTavwIIbel-rJBFOQ"
+        }
+      ]
+    },
+    {
+      "query": "kylie arellano",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T07:20:00Z",
+      "related_news_urls": [
+        "https://www.ktvb.com/article/news/investigations/7-investigates/hes-danger-children-eastern-oregon-man-accused-abusing-six-year-old-faces-federal-charge-in-utah/277-1cb1292b-057a-407d-a5e7-99baff6a1911",
+        "https://www.oregonlive.com/crime/2026/11/oregon-man-who-kidnapped-utah-teen-girl-kept-her-in-a-basement-for-over-a-year-assaulted-her-fbi-says.html",
+        "https://www.actionnews5.com/2026/11/05/teen-missing-over-year-found-home-man-who-sexually-assaulted-her-removed-braces-with-pliers-police-say/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX-dcOx0wy_MA5YohCT_7b49clUItEXub5SfUdiReRemgxQFd-egBb8u3XDgs",
+      "image_credit": "KTVB",
+      "news": [
+        {
+          "url": "https://www.ktvb.com/article/news/investigations/7-investigates/hes-danger-children-eastern-oregon-man-accused-abusing-six-year-old-faces-federal-charge-in-utah/277-1cb1292b-057a-407d-a5e7-99baff6a1911",
+          "title": "'He’s a danger to all children': Eastern Oregon man accused of abusing six-year-old now faces federal charge in Utah",
+          "publisher": "KTVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX-dcOx0wy_MA5YohCT_7b49clUItEXub5SfUdiReRemgxQFd-egBb8u3XDgs"
+        },
+        {
+          "url": "https://www.oregonlive.com/crime/2026/11/oregon-man-who-kidnapped-utah-teen-girl-kept-her-in-a-basement-for-over-a-year-assaulted-her-fbi-says.html",
+          "title": "Oregon man who kidnapped Utah teen girl kept her in a basement for over a year, assaulted her, FBI says",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUvbEWGtPqfikl-FbIL7_FQOpNRu31TSWR8dKTf5pJKkHtwx-cQhrLKh7Jy3E"
+        },
+        {
+          "url": "https://www.actionnews5.com/2026/11/05/teen-missing-over-year-found-home-man-who-sexually-assaulted-her-removed-braces-with-pliers-police-say/",
+          "title": "Teen missing for over a year found at home of man who sexually assaulted her, removed braces with pliers, police say",
+          "publisher": "Action News 5",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-69BVPNq99CxySbp7Z2aEsCC6ZqLh91CSX5HEQ7b8TZm4MXRSBE4qzJk2HSw"
+        }
+      ]
+    },
     {
       "query": "chris pratt",
       "approx_searches": "200+",
@@ -46,39 +151,39 @@
       "approx_searches": "500+",
       "published_at": "2026-11-06T06:50:00Z",
       "related_news_urls": [
-        "https://nymag.com/strategist/article/what-will-be-on-sale-for-black-friday-2026.html",
-        "https://www.cnn.com/cnn-underscored/deals/early-amazon-black-friday-deals-2026-11-04",
-        "https://lifehacker.com/tech/what-to-know-about-black-friday-2026-sales"
+        "https://www.nbcnews.com/select/shopping/home-depot-early-black-friday-sale-2026-rcna607717",
+        "https://www.gearpatrol.com/home/home-depot-milwaukee-tool-early-black-friday-deals/",
+        "https://www.slashgear.com/2307034/milwaukee-tools-with-deep-discounts-in-november-2026/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfl7TlVRScCaA8fvCm14-O2ddoULECPwYylTJYAo8ceU82lEzLnnx63b3zF14",
-      "image_credit": "New York Magazine",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNN_H6-0-92vEY63TL-MD-WInj5C98FTb5enmweP1E6tpxl2NDDWp2cqxtJaU",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://nymag.com/strategist/article/what-will-be-on-sale-for-black-friday-2026.html",
-          "title": "Save These Black Friday Deals Now, Shop Them Later",
-          "publisher": "New York Magazine",
+          "url": "https://www.nbcnews.com/select/shopping/home-depot-early-black-friday-sale-2026-rcna607717",
+          "title": "The 18+ best home improvement deals from Home Depot’s early Black Friday sale, starting at just $9",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfl7TlVRScCaA8fvCm14-O2ddoULECPwYylTJYAo8ceU82lEzLnnx63b3zF14"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNN_H6-0-92vEY63TL-MD-WInj5C98FTb5enmweP1E6tpxl2NDDWp2cqxtJaU"
         },
         {
-          "url": "https://www.cnn.com/cnn-underscored/deals/early-amazon-black-friday-deals-2026-11-04",
-          "title": "I found 10 Amazon deals offering entirely new low prices ahead of Black Friday",
-          "publisher": "CNN",
+          "url": "https://www.gearpatrol.com/home/home-depot-milwaukee-tool-early-black-friday-deals/",
+          "title": "Home Depot Is Selling a Bunch of Milwaukee Tools Way Below Retail",
+          "publisher": "Gear Patrol",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN8HTOC38AqvikmY8wy_qXcSks4rwaiEIFxEvFFCS49ftAVST6SoSXNPc2kuw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo4Iue9YIuuzlxdID3yPstLQyE33iyKUkgrUe-41x60cwzW-s9rZ-7dhQNl9Y"
         },
         {
-          "url": "https://lifehacker.com/tech/what-to-know-about-black-friday-2026-sales",
-          "title": "Everything You Should Know About This Year's Black Friday Sales",
-          "publisher": "Lifehacker",
+          "url": "https://www.slashgear.com/2307034/milwaukee-tools-with-deep-discounts-in-november-2026/",
+          "title": "4 Milwaukee Tools With Deep Discounts In November 2026",
+          "publisher": "SlashGear",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBpUXO1lPjiUULm77Z1LoNSbnMhFmbYbHwH03I7sc0CX5vuHOxgPBsm4NDS2k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3Hf3LZEaY3XmF7GBe1aGX7jDSZzUfm8Lx2FzK3t5xNsC6lnp1EDMFNBEU0mk"
         }
       ]
     },
     {
       "query": "tanker",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-06T06:40:00Z",
       "related_news_urls": [
         "https://www.reuters.com/business/energy/new-jersey-governor-warns-ports-against-accepting-russian-diesel-2026-11-03/",
@@ -108,6 +213,41 @@
           "publisher": "Financial Times",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtefT42JhRuwZr2dicrACwcneXedDS_9E5tDnUahdqONOrNDmHkzL_7CQZEKM"
+        }
+      ]
+    },
+    {
+      "query": "anthony santander",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T06:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/mlb/article/blue-jays-distance-themselves-from-of-anthony-santanders-anti-islam-instagram-posts-225839601.html",
+        "https://www.nytimes.com/athletic/7757158/2026/11/05/anthony-santander-instagram-story-adbul-el-sayed/",
+        "https://www.foxnews.com/outkick-sports/mlb-outfielder-anthony-santander-faces-backlash-abdul-el-sayed-video-blue-jays-respond"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThj-TWFcUe-qUzBVjVBfg-nn6tn-2aEnyTsHvuP_GEtIQt_Xz09oJ0HKKZM2E",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/mlb/article/blue-jays-distance-themselves-from-of-anthony-santanders-anti-islam-instagram-posts-225839601.html",
+          "title": "Blue Jays distance themselves from OF Anthony Santander's anti-Islam Instagram posts",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThj-TWFcUe-qUzBVjVBfg-nn6tn-2aEnyTsHvuP_GEtIQt_Xz09oJ0HKKZM2E"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7757158/2026/11/05/anthony-santander-instagram-story-adbul-el-sayed/",
+          "title": "Blue Jays distance themselves from Anthony Santander’s Islamophobic Instagram story",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjLo5OifabiPCrj2YDH6b0m5eAdHHIWqfuNzxLZGQho_8kk8ZgkdCeOiBGnOQ"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/mlb-outfielder-anthony-santander-faces-backlash-abdul-el-sayed-video-blue-jays-respond",
+          "title": "MLB outfielder Anthony Santander faces backlash over Abdul El-Sayed video, Blue Jays respond",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEwF_2bj3xs1eQnHK_7RgWSSDNae14E-0VJSiCs8yex2ZWvRsQXAAb6a5FSFU"
         }
       ]
     },
@@ -148,7 +288,7 @@
     },
     {
       "query": "michelle obama",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-06T06:20:00Z",
       "related_news_urls": [
         "https://www.jta.org/2026/11/05/ideas/rabbi-capers-funnye-skillfully-navigated-a-jewish-world-wary-of-hebrew-israelites",
@@ -213,146 +353,6 @@
           "publisher": "Yeni Şafak",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpFrZvdrBwhrvIBgHBwPpq3qAjpOkCVXMEOUXQSsAVHrvQkPXJ4ffZ-d7Rz78"
-        }
-      ]
-    },
-    {
-      "query": "did they vote",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T06:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/05/us/texas-democrats-statewide-sweep.html",
-        "https://www.nbcnews.com/politics/2026-election/texas-latino-voter-turnout-historic-democratic-shift-rcna607455",
-        "https://robertreich.substack.com/p/the-best-victory-speech"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY4yT5aa8mQcSC6kQRVwjKZ35ooG8BGtXbSYZ9MLx33fPdOaUfo33-NdlMRwo",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/05/us/texas-democrats-statewide-sweep.html",
-          "title": "The Machine, and the Messaging, That Won Texas for Democrats",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY4yT5aa8mQcSC6kQRVwjKZ35ooG8BGtXbSYZ9MLx33fPdOaUfo33-NdlMRwo"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/2026-election/texas-latino-voter-turnout-historic-democratic-shift-rcna607455",
-          "title": "‘Everyone was mad’: How anger helped fuel Latino voter turnout and a historic Democratic shift in Texas",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8qHKD7WGnwaGiIHy4ELxOvNjIUNaUcOm7uDnWwPHkqS2R8lzKmXPJ3RH3OIE"
-        },
-        {
-          "url": "https://robertreich.substack.com/p/the-best-victory-speech",
-          "title": "The Best Victory Speech",
-          "publisher": "Robert Reich | Substack",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3d3PyOGVJzx5wN67lyvAtdNARehekz8DgYcUHhtkIBvfQjdTj6zhGYmLAKQ"
-        }
-      ]
-    },
-    {
-      "query": "claire liu",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T06:00:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-rinky-hijikata-game-spread-nov-06-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/moyuka-uchijima-vs-magda-linette-set-2-winner-nov-05-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-carlos-alcaraz-game-spread-nov-04-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNuLglb1tkJs2NHIpp1wX8e-dZm7veHgAoHj8NL71I7OnbRdKa3Pjo7hl2v5Y",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-rinky-hijikata-game-spread-nov-06-2026/",
-          "title": "November 6, 2026: Luca Van Assche vs Rinky Hijikata: Game Spread Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNuLglb1tkJs2NHIpp1wX8e-dZm7veHgAoHj8NL71I7OnbRdKa3Pjo7hl2v5Y"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/moyuka-uchijima-vs-magda-linette-set-2-winner-nov-05-2026/",
-          "title": "November 5, 2026: Moyuka Uchijima vs Magda Linette: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReJeHI9bTzPaOln_33cxa4fI02psbp05xA9NvHlZy_W5cJgLkE4iSH8KPiWqk"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-carlos-alcaraz-game-spread-nov-04-2026/",
-          "title": "November 4, 2026: Alex Michelsen vs Carlos Alcaraz: Game Spread Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIW7bBFhlG4Sl6CHE7nXr1XSI6wvOOKMbnfwgqpO-IBrE5eAWAQ6RoKSQE_p0"
-        }
-      ]
-    },
-    {
-      "query": "ryan clark",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T05:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/put-mute-nfl-legend-ryan-192614973.html",
-        "https://awfulannouncing.com/espn/ryan-clark-almost-quit-espn-pressure-apologize-kyren-lacy-comments.html",
-        "https://www.essentiallysports.com/ncaa-college-football-news-fired-analyst-ryan-clark-reveals-espn-forced-lsu-kyren-lacy-apology-before-wife-yonka-talked-him-out-of-quitting-not-this-one/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2IMr_VN-8-QbfsiGBjPsYaNE_LYXaPqY5kQHRhVrKBRJh3PaEiAX6hKAahGY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/put-mute-nfl-legend-ryan-192614973.html",
-          "title": "“I Put It On Mute”: NFL Legend Ryan Clark Makes Painful Admission About Not Being Able to Watch Peers After ESPN Exit",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2IMr_VN-8-QbfsiGBjPsYaNE_LYXaPqY5kQHRhVrKBRJh3PaEiAX6hKAahGY"
-        },
-        {
-          "url": "https://awfulannouncing.com/espn/ryan-clark-almost-quit-espn-pressure-apologize-kyren-lacy-comments.html",
-          "title": "Ryan Clark almost quit ESPN over pressure to apologize for Kyren Lacy comments",
-          "publisher": "Awful Announcing",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQj-xzpxepCOTyiZ8XgJru2iD6Da85iRBxSEHHeTSw9GipCTTfPFB8wfXzCymU"
-        },
-        {
-          "url": "https://www.essentiallysports.com/ncaa-college-football-news-fired-analyst-ryan-clark-reveals-espn-forced-lsu-kyren-lacy-apology-before-wife-yonka-talked-him-out-of-quitting-not-this-one/",
-          "title": "Fired Analyst Ryan Clark Reveals ESPN Forced LSU Kyren Lacy Apology Before Wife Yonka Talked Him Out of Quitting: “Not This One”",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQU0hb1F9iF7yBc1wS6P_F0TRlN6tU9pRID4ybQg6HSscjQrMOk4hmjRtSUMMA"
-        }
-      ]
-    },
-    {
-      "query": "christian bale",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T05:40:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/christian-bale-sibi-blazic-date-night-nicolas-cage-madden-premiere-12238982",
-        "https://people.com/all-about-riko-shibata-nicolas-cage-wife-12237864",
-        "https://pagesix.com/2026/11/04/photos/madden-premiere-red-carpet-nicholas-cage-christian-bale-kathryn-hahn-and-more/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-0bLCWIOW8NArWrbRu7500ijsean2pIYpzq19dv3El0UzjB_eKS_TdHwkR8E",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/christian-bale-sibi-blazic-date-night-nicolas-cage-madden-premiere-12238982",
-          "title": "Christian Bale and Wife Sibi Blažić Enjoy Rare Date Night in Coordinated Suits",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-0bLCWIOW8NArWrbRu7500ijsean2pIYpzq19dv3El0UzjB_eKS_TdHwkR8E"
-        },
-        {
-          "url": "https://people.com/all-about-riko-shibata-nicolas-cage-wife-12237864",
-          "title": "Who Is Nicolas Cage’s Wife, Riko Shibata?",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8qy72vZt5bx7-Y0fxIGsMSHZ1qCwnZgziOS7chdy5iqblgkbd6G8TBIsjJbI"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/04/photos/madden-premiere-red-carpet-nicholas-cage-christian-bale-kathryn-hahn-and-more/",
-          "title": "‘Madden’ premiere red carpet: Nicolas Cage, Christian Bale, Kathryn Hahn and more",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc8bv1lZ2wlY0cbTR-I5RBUghgAaVV00KNXj3qRGKwDg7B_i-6TJ1KuMsAYhg"
         }
       ]
     }
