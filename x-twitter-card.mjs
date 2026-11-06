@@ -109,21 +109,23 @@ export function mountXTwitterCard(root){
   select();
  }
  async function act(path,payload,success){
-  if(state.pending)return;state.pending=true;refresh.disabled=true;
-  try{const result=await api(path,'POST',payload);if(result.ok&&result.source==='x_api_confirmed'){status(success+' · confirmed by X.');if(state.tab!=='spaces')await load();}else status('X did not confirm that action.')}
+  if(state.pending)return;state.pending=true;refresh.disabled=true;let reload=false;
+  try{const result=await api(path,'POST',payload);if(result.ok&&result.source==='x_api_confirmed'){status(success+' · confirmed by X.');reload=state.tab!=='spaces';}else status('X did not confirm that action.')}
   catch(e){status('X action not completed: '+String(e.message||e))}
   finally{state.pending=false;refresh.disabled=false}
+  if(reload)void load();
  }
  send.addEventListener('click',async()=>{
   if(state.pending||!state.canPost)return;
   const value=textarea.value.trim();
   if(!value||Array.from(value).length>280){feedback.textContent='Enter 1 to 280 characters.';return}
-  state.pending=true;send.disabled=true;feedback.textContent='Sending once to X…';
+  state.pending=true;send.disabled=true;feedback.textContent='Sending once to X…';let reload=false;
   try{const result=await api('/v1/x/post','POST',{text:value,...(replyTo?{replyTo}:{})});
-   if(result.ok&&result.source==='x_api_confirmed'){feedback.textContent='Published on X · '+result.postId;status('X confirmed your '+(replyTo?'reply.':'post.'));closeComposer();void load();}
+   if(result.ok&&result.source==='x_api_confirmed'){feedback.textContent='Published on X · '+result.postId;status('X confirmed your '+(replyTo?'reply.':'post.'));closeComposer();reload=true;}
    else feedback.textContent='X did not confirm the post; do not retry until checked.';
   }catch(e){feedback.textContent='Could not confirm a post: '+String(e.message||e)+'. Check your X account before retrying.'}
   finally{state.pending=false;send.disabled=false}
+  if(reload)void load();
  });
  async function load(){
   if(state.pending)return;
