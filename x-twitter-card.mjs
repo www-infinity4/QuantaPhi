@@ -5,8 +5,8 @@ const append=(n,...children)=>{n.append(...children);return n};
 const safeHandle=x=>/^[A-Za-z0-9_]{1,15}$/.test(String(x||''))?String(x):'';
 export function mountXTwitterCard(root){
  if(!root||typeof document==='undefined')return null;
- const state={tab:'public',connected:false,canPost:false,canLike:false,pending:false,posts:[],spaces:[],profile:null,archive:[],topic:'technology',updatedAt:null,notice:'Connect your QuantaPhi wallet and X account to load genuine posts.'};
- const card=el('article','xt-card'),head=el('header','xt-head'),title=el('h2','', '𝕏 · Twitter'),caption=el('p','xt-caption','Original X content, inside an Infinity card. No fake posts or likes.');
+ const state={tab:'public',connected:false,canPost:false,canLike:false,pending:false,posts:[],spaces:[],profile:null,archive:[],topic:'technology',updatedAt:null};
+ const card=el('article','xt-card'),head=el('header','xt-head'),title=el('h2','', '𝕏 · Twitter'),caption=el('p','xt-caption','Read posts and find Spaces from X.');
  const connect=el('a','xt-button xt-connect','Connect X account');connect.href='/connect-x';connect.setAttribute('aria-label','Connect your X account through QuantaPhi');
  const write=el('a','xt-button xt-write','Enable posting');write.href='/connect-x?write=1';
  const profile=el('button','xt-button xt-profile','Profile'),compose=el('button','xt-button xt-compose','Compose');profile.type=compose.type='button';
@@ -32,7 +32,7 @@ export function mountXTwitterCard(root){
  const feedback=el('p','xt-feedback');feedback.setAttribute('role','status');
  append(actions,cancel,send);append(dialog,dialogTitle,dialogNote,textarea,counter,feedback,actions);
  append(card,head,tabs,search,notice,timeline,footer,dialog);root.replaceChildren(card);
- let replyTo=null;
+ let replyTo=null,readQueued=false,hasRequestedRead=false;
  const openComposer=(id=null)=>{replyTo=id;dialogTitle.textContent=id?'Reply on X':'Compose on X';textarea.value='';counter.textContent='0 / 280';feedback.textContent='';if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');textarea.focus()};
  const closeComposer=()=>{if(typeof dialog.close==='function')dialog.close();else dialog.removeAttribute('open')};
  textarea.addEventListener('input',()=>{counter.textContent=Array.from(textarea.value).length+' / 280'});
@@ -53,7 +53,7 @@ export function mountXTwitterCard(root){
   if(!response.ok||payload.error)throw Error(payload.error||'X service returned '+response.status);
   return payload;
  }
- const status=s=>{state.notice=s;notice.textContent=s};
+ const status=message=>{notice.textContent=message};
  function select(){
   for(const [id,b] of tabButtons)b.setAttribute('aria-selected',String(state.tab===id));
   search.hidden=!['public','spaces'].includes(state.tab);
@@ -112,8 +112,7 @@ export function mountXTwitterCard(root){
   if(state.pending)return;state.pending=true;refresh.disabled=true;let reload=false;
   try{const result=await api(path,'POST',payload);if(result.ok&&result.source==='x_api_confirmed'){status(success+' · confirmed by X.');reload=state.tab!=='spaces';}else status('X did not confirm that action.')}
   catch(e){status('X action not completed: '+String(e.message||e))}
-  finally{state.pending=false;refresh.disabled=false}
-  if(reload)void load();
+  finally{finishRequest(reload)}
  }
  send.addEventListener('click',async()=>{
   if(state.pending||!state.canPost)return;
@@ -124,34 +123,77 @@ export function mountXTwitterCard(root){
    if(result.ok&&result.source==='x_api_confirmed'){feedback.textContent='Published on X · '+result.postId;status('X confirmed your '+(replyTo?'reply.':'post.'));closeComposer();reload=true;}
    else feedback.textContent='X did not confirm the post; do not retry until checked.';
   }catch(e){feedback.textContent='Could not confirm a post: '+String(e.message||e)+'. Check your X account before retrying.'}
-  finally{state.pending=false;send.disabled=false}
-  if(reload)void load();
+  finally{send.disabled=false;finishRequest(reload)}
  });
+ function finishRequest(reload=false){
+  state.pending=false;
+  refresh.disabled=false;
+  if(readQueued||reload){
+   readQueued=false;
+   void load();
+  }
+ }
  async function load(){
-  if(state.pending)return;
-  state.pending=true;refresh.disabled=true;status('Reading X source data…');
-  // Never keep stale live cards visible after a failed refresh.
-  if(state.tab==='spaces'){state.spaces=[];render()}
+  hasRequestedRead=true;
+  timeline.replaceChildren();
+  fetched.textContent='';
+  status('Reading X source data…');
+  // Keep one request in flight. A later selection supersedes its result.
+  if(state.pending){readQueued=true;return}
+  const {tab,topic:query}=state;
+  state.pending=true;
+  refresh.disabled=true;
+  Object.assign(state,{posts:[],spaces:[],profile:null,archive:[],updatedAt:null});
   try{
    const account=await api('/v1/x/account');
+   if(readQueued)return;
    state.connected=Boolean(account.xConnected);state.canPost=Boolean(account.canPost);state.canLike=Boolean(account.canLike);
    if(!state.connected){
-    state.posts=[];state.spaces=[];state.profile=null;state.archive=[];
-    status('No authorized X connection. Connect your account, then return to this card.');render();return;
+    status('Connect your X account to load this view.');render();return;
    }
-   let result;
-   if(state.tab==='profile'){result=await api('/v1/x/profile');state.profile=result}
-   if(state.tab==='public'||state.tab==='following'){result=await api('/v1/x/timeline?feed='+state.tab+(state.tab==='public'?'&q='+encodeURIComponent(state.topic):''));state.posts=result.posts||[]}
-   if(state.tab==='spaces'){result=await api('/v1/x/spaces/live?q='+encodeURIComponent(state.topic));state.spaces=(result.spaces||[]).filter(s=>s.state==='live')}
-   if(state.tab==='archive'){result=await api('/v1/x/archive');state.archive=result.spaces||[]}
+   const endpoints={
+    public:'/v1/x/timeline?feed=public&q='+encodeURIComponent(query),
+    following:'/v1/x/timeline?feed=following',
+    spaces:'/v1/x/spaces/live?q='+encodeURIComponent(query),
+    archive:'/v1/x/archive',
+    profile:'/v1/x/profile'
+   };
+   const result=await api(endpoints[tab]);
+   if(readQueued)return;
+   if(tab==='public'||tab==='following')state.posts=result.posts||[];
+   if(tab==='spaces')state.spaces=(result.spaces||[]).filter(space=>space.state==='live');
+   if(tab==='archive')state.archive=result.spaces||[];
+   if(tab==='profile')state.profile=result;
    state.updatedAt=result?.fetchedAt||new Date().toISOString();
-   status(state.tab==='spaces'?'Live-only X Space results · refreshes while this tab is visible.': 'Showing only verified X API records.');
+   status(tab==='spaces'?'Live Spaces refresh while this card is on screen.':'Showing verified X records.');
    render();
-  }catch(e){if(state.tab==='spaces')state.spaces=[];if(state.tab==='public'||state.tab==='following')state.posts=[];status('X data unavailable: '+String(e.message||e)+'. No estimated or stale records displayed.');render()}
-  finally{state.pending=false;refresh.disabled=false}
+  }catch(e){
+   if(readQueued)return;
+   status('Could not load X data. '+String(e.message||e));
+   render();
+  }finally{finishRequest()}
  }
- // Rate-limited fetch only for the visible live tab; never label ended Spaces as current.
- const poll=setInterval(()=>{if(root.isConnected&&state.tab==='spaces'&&document.visibilityState==='visible'&&!state.pending)void load();if(!root.isConnected)clearInterval(poll)},90000);
- select();void load();return card;
+ // The carousel keeps the original card in the DOM even when it is stowed.
+ let onScreen=false;
+ function loadOnFirstView(){
+  if(onScreen&&!hasRequestedRead&&document.visibilityState==='visible')void load();
+ }
+ const observer=new IntersectionObserver(([entry])=>{
+  onScreen=entry.isIntersecting&&entry.intersectionRatio>0;
+  loadOnFirstView();
+ });
+ observer.observe(root);
+ document.addEventListener('visibilitychange',loadOnFirstView);
+ const poll=setInterval(()=>{
+  if(!root.isConnected){
+   clearInterval(poll);
+   observer.disconnect();
+   document.removeEventListener('visibilitychange',loadOnFirstView);
+   return;
+  }
+  if(onScreen&&state.tab==='spaces'&&document.visibilityState==='visible'&&!state.pending)void load();
+ },90000);
+ select();
+ return card;
 }
 if(typeof document!=='undefined')mountXTwitterCard(document.getElementById('xTwitterCard'));
