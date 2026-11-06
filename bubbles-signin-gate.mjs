@@ -256,11 +256,13 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  root.addEventListener('visibilitychange',()=>{if(!root.hidden)void refresh();});
  // Resume the existing wallet-bound Android handoff after same-window navigation.
  const pendingHandoff=client.readPendingHandoff();
- const recoveredProvider=returned?.result==='received'?returned.provider:null;
+ // Only Google needs lost-tab recovery in chat. Cloudflare's existing
+ // callback path remains status-only unless the original pending state exists.
+ // Never start another Cloudflare authorization from a UI return hint.
+ const recoveredProvider=returned?.result==='received'&&returned.provider==='google'?'google':null;
  const resumingProvider=pendingHandoff?.provider||recoveredProvider||'cloudflare';
  const resuming=client.resumePending(error=>void finalizeReturn(resumingProvider,error),{
-  recoverGoogle:recoveredProvider==='google',
-  recoverCloudflare:recoveredProvider==='cloudflare'
+  recoverGoogle:recoveredProvider==='google'
  });
  if(resuming){
   oauthInProgress=true;updateButtons();
