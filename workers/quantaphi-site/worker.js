@@ -231,10 +231,10 @@ async function getUpstream(url, request, headers, timeoutMs = 10000) {
 const VERIFIED_HOME_CACHE_KEY = new Request('https://quantaphi.org/__qp-edge/verified-home-v1');
 function isVerifiedHomepageHtml(html) {
  return /<!doctype html>/i.test(html) &&
-  /<html\\b/i.test(html) &&
-  /<title>QuantaPhi\\b/i.test(html) &&
-  /<link rel="canonical" href="https:\\/\\/quantaphi\\.org\\/"/i.test(html) &&
-  /<\\/html>/i.test(html);
+  /<html\b/i.test(html) &&
+  /<title>QuantaPhi\b/i.test(html) &&
+  /<link rel="canonical" href="https:\/\/quantaphi\.org\/"/i.test(html) &&
+  /<\/html>/i.test(html);
 }
 async function storeVerifiedHomepage(html, ctx) {
  const cache = globalThis.caches?.default;
@@ -258,7 +258,7 @@ async function loadVerifiedHomepage(request) {
   const cache = globalThis.caches?.default;
   const saved = await cache?.match(VERIFIED_HOME_CACHE_KEY);
   if (!saved || saved.status !== 200 ||
-      !/^text\\/html/i.test(saved.headers.get('Content-Type') || '')) return null;
+      !/^text\/html/i.test(saved.headers.get('Content-Type') || '')) return null;
   const html = await saved.text();
   if (!isVerifiedHomepageHtml(html)) return null;
   const headers = new Headers(saved.headers);
