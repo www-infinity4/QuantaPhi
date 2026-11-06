@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T15:31:22.571750Z",
+  "checked_at": "2026-11-06T16:01:38.408608Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "treveyon henderson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T15:40:00Z",
+      "related_news_urls": [
+        "https://www.bostonherald.com/2026/11/06/callahan-latest-on-patriots-treveyon-henderson-christian-barmore-and-more-week-9-thoughts/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-05/hendersons-illness-may-be-related-to-adversity",
+        "https://bleacherreport.com/articles/25529910-patriots-treveyon-henderson-was-hospitalized-medical-emergency-after-neurological-symptoms"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqQlZqrisZ7ruBytar3uWdiHhf4GdoI5APZANBneLykKPEAmkhfPGHOk7Fla8",
+      "image_credit": "Boston Herald",
+      "news": [
+        {
+          "url": "https://www.bostonherald.com/2026/11/06/callahan-latest-on-patriots-treveyon-henderson-christian-barmore-and-more-week-9-thoughts/",
+          "title": "Callahan: Latest on Patriots' TreVeyon Henderson, Christian Barmore and more Week 9 thoughts",
+          "publisher": "Boston Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqQlZqrisZ7ruBytar3uWdiHhf4GdoI5APZANBneLykKPEAmkhfPGHOk7Fla8"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-05/hendersons-illness-may-be-related-to-adversity",
+          "title": "Henderson’s illness may be related to ‘adversity’",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmXpEk6UEgWMDoAOPfs2E5fWZrIxvQl_Ep-yQWwfXRNP3ErdYKWgaLkvxjtmA"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529910-patriots-treveyon-henderson-was-hospitalized-medical-emergency-after-neurological-symptoms",
+          "title": "Patriots' TreVeyon Henderson Was Hospitalized for 'Medical Emergency' After 'Neurological Symptoms'",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2WCn6m3HIH_D45SI06vPhVl02zmfEnBuFOquSN2kuLPcjqFwJnDniyz2k45Y"
+        }
+      ]
+    },
+    {
+      "query": "megan markle",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T15:40:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/06/royal-family/meghan-markles-hollywood-reputation-unraveling-in-real-time-as-latest-drama-weakens-career-hopes/",
+        "https://deadline.com/2026/11/chanel-pysnik-exits-head-nonfiction-harry-meghan-archewell-1237212368/",
+        "https://www.yahoo.com/entertainment/tv/articles/meghan-markle-prince-harry-hollywood-060738713.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQa9DymiX8IqFP1GvwMViF4FdDXORutYanRoh4bvDemogMyg3GKrVIrd7Pt3rQ",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/06/royal-family/meghan-markles-hollywood-reputation-unraveling-in-real-time-as-latest-drama-weakens-career-hopes/",
+          "title": "Exclusive | Meghan Markle's Hollywood reputation 'unraveling in real time' as latest drama 'weakens' career hopes",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQa9DymiX8IqFP1GvwMViF4FdDXORutYanRoh4bvDemogMyg3GKrVIrd7Pt3rQ"
+        },
+        {
+          "url": "https://deadline.com/2026/11/chanel-pysnik-exits-head-nonfiction-harry-meghan-archewell-1237212368/",
+          "title": "Chanel Pysnik Departing As Head Of Nonfiction For Prince Harry & Meghan Markle’s Archewell Prods.",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVjxXTTU3JJyI-UUrwIaXveGWBFdtWEqVz18tk-Xj1AiSgFHQcGmNdNP62yDo"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/meghan-markle-prince-harry-hollywood-060738713.html",
+          "title": "Meghan Markle & Prince Harry’s Hollywood Dreams Hit the Brakes — Report",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYz4RT-EvvcE4dMoMimFhWaGuqB-YsAOp6jlYSKWGNZdLfV47mPxHVxVRVvUk"
+        }
+      ]
+    },
+    {
+      "query": "thomas markle",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-06T15:20:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/thomas-markle-sr-meghan-father-arrested-florida/",
+        "https://www.bbc.com/news/live/cwnv03203yvmt",
+        "https://people.com/meghan-markle-half-brother-named-person-of-interest-child-abuse-investigation-12237893"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIsWGrvlxerh2ki0G_ach4z7GtKyru4edIVWTxqGqe9zipnOz27_h3yJDKySw",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/thomas-markle-sr-meghan-father-arrested-florida/",
+          "title": "Duchess Meghan's father, Thomas Markle Sr., arrested in Florida in child pornography probe, sources say",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIsWGrvlxerh2ki0G_ach4z7GtKyru4edIVWTxqGqe9zipnOz27_h3yJDKySw"
+        },
+        {
+          "url": "https://www.bbc.com/news/live/cwnv03203yvmt",
+          "title": "Meghan's father Thomas Markle arrested over allegations he possessed child sex abuse material",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqeoXwgLD312YNk2Wd-Lf-wVr39hLupZPjDpvjQ0y8tHpF4kPUDVaS5U9tBrA"
+        },
+        {
+          "url": "https://people.com/meghan-markle-half-brother-named-person-of-interest-child-abuse-investigation-12237893",
+          "title": "Meghan Markle’s Half-Brother Named ‘Person of Interest’ in Child Sex Abuse Investigation Involving Their Father",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTy-qpr5mk0I7ILoDI9EPkmPl4s1A-yhA6SJBZnZk7OAxXa3pIRTqLD9qWDZAM"
+        }
+      ]
+    },
+    {
+      "query": "broadcom stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T15:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-could-approaching-major-130307410.html",
+        "https://seekingalpha.com/article/4963996-broadcom-and-the-ai-panic-the-market-has-lost-its-mind",
+        "https://www.fool.com/investing/2026/11/06/prediction-november-will-be-a-huge-month-for-broad/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR97L7w3B-7VjaG8crPtRcqjHl8e6jxKTVYJe0QhYtoX2H3-gW4b0OhJ6vqBE4",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-could-approaching-major-130307410.html",
+          "title": "Broadcom Stock Could Be Approaching a Major Turning Point. Here’s the Price Target",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR97L7w3B-7VjaG8crPtRcqjHl8e6jxKTVYJe0QhYtoX2H3-gW4b0OhJ6vqBE4"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4963996-broadcom-and-the-ai-panic-the-market-has-lost-its-mind",
+          "title": "Broadcom And The AI Panic: The Market Has Lost Its Mind (NASDAQ:AVGO)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9scPLb_lW3HdL-iGhWbUg87hwDFWDcme8YKvUePm3q-ctL_Fnlzb2F0I6Qzw"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/06/prediction-november-will-be-a-huge-month-for-broad/",
+          "title": "Prediction: November Will Be a Huge Month for Broadcom",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFUC9xxTcfP5dfEgVuHEvkoLlXumKKz-ke3UpMxp3brjTY5gKemhpec9e2K2A"
+        }
+      ]
+    },
+    {
+      "query": "ciara",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T15:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glorilla-responds-ciaras-halloween-homage-171343402.html",
+        "https://wbxxfm.com/ixp/812/p/glorilla-brandon-ingram-ciara-bow-wow-like-you-halloween-costume/",
+        "https://www.hotnewhiphop.com/1015172-glorilla-brandon-ingram-ciara-bow-wow-halloween"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeADe6P7DGUcqnw9n0_jXItI0tkbrwE_gULLPrZF9ZPwr-DrwaZfQu8K6Rq-4",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glorilla-responds-ciaras-halloween-homage-171343402.html",
+          "title": "GloRilla Responds to Ciara's Halloween Homage With Her Own Costume Tribute",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeADe6P7DGUcqnw9n0_jXItI0tkbrwE_gULLPrZF9ZPwr-DrwaZfQu8K6Rq-4"
+        },
+        {
+          "url": "https://wbxxfm.com/ixp/812/p/glorilla-brandon-ingram-ciara-bow-wow-like-you-halloween-costume/",
+          "title": "GloRilla, Boyfriend Dress Up Like Ciara, Bow Wow for Halloween",
+          "publisher": "K1025",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2GiJygo6qlMoZQFX1tjmbw1jYfba3EVT0Kpu0Fyyf2c0MUqseB6Fm6sjZRso"
+        },
+        {
+          "url": "https://www.hotnewhiphop.com/1015172-glorilla-brandon-ingram-ciara-bow-wow-halloween",
+          "title": "GloRilla & Brandon Ingram Channel Ciara & Bow Wow For Halloween",
+          "publisher": "HotNewHipHop",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfRkS4V3D03vaw_nczC9kHUi5V3NHSzojkjE5hKulI4a342edqQlTiJCNuXU"
+        }
+      ]
+    },
+    {
+      "query": "doc rivers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-06T15:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50399276/doc-rivers-giannis-antetokounmpo-bucks-exit-coaching-star",
+        "https://bleacherreport.com/articles/25529880-doc-rivers-says-giannis-wasnt-easy-coach-doesnt-necessarily-have-super-iq",
+        "https://www.usatoday.com/story/sports/nba/heat/2026/11/06/doc-rivers-giannis-antetokounmpo-criticisms-bill-simmons/92638216007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdNGXW_li98h-C-Sbu-35O1YOKJsJJHeepvciWFkm6MCndvTFxLIG0y5q1fj8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50399276/doc-rivers-giannis-antetokounmpo-bucks-exit-coaching-star",
+          "title": "Doc Rivers: Giannis 'didn't want to be the bad guy' when seeking Bucks exit",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdNGXW_li98h-C-Sbu-35O1YOKJsJJHeepvciWFkm6MCndvTFxLIG0y5q1fj8"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529880-doc-rivers-says-giannis-wasnt-easy-coach-doesnt-necessarily-have-super-iq",
+          "title": "Doc Rivers Says Giannis Wasn't 'Easy' to Coach, 'Doesn't Necessarily Have This Super IQ'",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSykISye9JksERCiLhh2UeTKJ9LmidV_UHzDHFS4H23ssqIm5SL6UPro_-vVU"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nba/heat/2026/11/06/doc-rivers-giannis-antetokounmpo-criticisms-bill-simmons/92638216007/",
+          "title": "Doc Rivers shares criticisms of Giannis Antetokounmpo's game − and how he can improve",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyKF3igk8CLkzzAG-NgaSY3XYSTFjxHOII5Y2k6sIDoNEO_h8oI-9awClBjuI"
+        }
+      ]
+    },
     {
       "query": "dell stock",
       "approx_searches": "500+",
@@ -42,107 +252,37 @@
       ]
     },
     {
-      "query": "ciara",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T15:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glorilla-responds-ciaras-halloween-homage-171343402.html",
-        "https://wbxxfm.com/ixp/812/p/glorilla-brandon-ingram-ciara-bow-wow-like-you-halloween-costume/",
-        "https://www.hotnewhiphop.com/1015172-glorilla-brandon-ingram-ciara-bow-wow-halloween"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeADe6P7DGUcqnw9n0_jXItI0tkbrwE_gULLPrZF9ZPwr-DrwaZfQu8K6Rq-4",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glorilla-responds-ciaras-halloween-homage-171343402.html",
-          "title": "GloRilla Responds to Ciara's Halloween Homage With Her Own Costume Tribute",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeADe6P7DGUcqnw9n0_jXItI0tkbrwE_gULLPrZF9ZPwr-DrwaZfQu8K6Rq-4"
-        },
-        {
-          "url": "https://wbxxfm.com/ixp/812/p/glorilla-brandon-ingram-ciara-bow-wow-like-you-halloween-costume/",
-          "title": "GloRilla, Boyfriend Dress Up Like Ciara, Bow Wow for Halloween",
-          "publisher": "K1025",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2GiJygo6qlMoZQFX1tjmbw1jYfba3EVT0Kpu0Fyyf2c0MUqseB6Fm6sjZRso"
-        },
-        {
-          "url": "https://www.hotnewhiphop.com/1015172-glorilla-brandon-ingram-ciara-bow-wow-halloween",
-          "title": "GloRilla & Brandon Ingram Channel Ciara & Bow Wow For Halloween",
-          "publisher": "HotNewHipHop",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfRkS4V3D03vaw_nczC9kHUi5V3NHSzojkjE5hKulI4a342edqQlTiJCNuXU"
-        }
-      ]
-    },
-    {
       "query": "wow forever server status",
       "approx_searches": "2000+",
       "published_at": "2026-11-06T15:00:00Z",
       "related_news_urls": [
-        "https://news.blizzard.com/en-us/article/24317678/set-your-campfire-ablaze-with-the-pouch-of-violet-dust",
-        "https://blog.twitch.tv/en/2026/11/04/world-of-warcraft-forever-is-here/",
-        "https://www.engadget.com/2305373/world-of-warcraft-forever-blizzard-had-to-reconnect-with-what-made-wow-great-in-the-first-place/"
+        "https://games.gg/world-of-warcraft/guides/wow-forever-this-faction-is-currently-unavailable-what-it-means/",
+        "https://mein-mmo.de/en/wow-forever-server-down-on-november-6-in-the-live-ticker-start-time-status-duration,1595208/",
+        "https://games.gg/world-of-warcraft/guides/wow-forever-wow51900337-valid-access-license-error-how-to-fix/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFbNQlHLyqqtl2NrWhpiJnXjiG2HBVxXkHfPZYyoKsQ0LRQ6Eij2AWDb8IXPM",
-      "image_credit": "Blizzard News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Y_uEVmIfANBmIe0gx1dTrejyHf1f6_l588M0Zgai0fekia-ZcqSBaMIHYgg",
+      "image_credit": "games.gg",
       "news": [
         {
-          "url": "https://news.blizzard.com/en-us/article/24317678/set-your-campfire-ablaze-with-the-pouch-of-violet-dust",
-          "title": "Set Your Campfire Ablaze with the Pouch of Violet Dust!",
-          "publisher": "Blizzard News",
+          "url": "https://games.gg/world-of-warcraft/guides/wow-forever-this-faction-is-currently-unavailable-what-it-means/",
+          "title": "WoW Forever 'This Faction Is Currently Unavailable': What It Means",
+          "publisher": "games.gg",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFbNQlHLyqqtl2NrWhpiJnXjiG2HBVxXkHfPZYyoKsQ0LRQ6Eij2AWDb8IXPM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Y_uEVmIfANBmIe0gx1dTrejyHf1f6_l588M0Zgai0fekia-ZcqSBaMIHYgg"
         },
         {
-          "url": "https://blog.twitch.tv/en/2026/11/04/world-of-warcraft-forever-is-here/",
-          "title": "Begin Again in Azeroth: World of Warcraft: Forever Is Here",
-          "publisher": "Twitch Blog",
+          "url": "https://mein-mmo.de/en/wow-forever-server-down-on-november-6-in-the-live-ticker-start-time-status-duration,1595208/",
+          "title": "WoW Forever Server Down on November 6 in the Live Ticker – Start Time, Status, Duration",
+          "publisher": "Mein-MMO",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3YGvvEoJJjNzp3PtFe9MElXz12R-B5EXLkXjKXCuiR4Vgp0pJdSk7etEs5K8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmWsPk-MjUssH_KUf_VzfIAwVUfVZXgHM0PeQ9XbiAJ4ukSsxaFeQuLPCaR3Q"
         },
         {
-          "url": "https://www.engadget.com/2305373/world-of-warcraft-forever-blizzard-had-to-reconnect-with-what-made-wow-great-in-the-first-place/",
-          "title": "With World of Warcraft: Forever, Blizzard had to reconnect with what made WoW great in the first place",
-          "publisher": "Engadget",
+          "url": "https://games.gg/world-of-warcraft/guides/wow-forever-wow51900337-valid-access-license-error-how-to-fix/",
+          "title": "WoW Forever WOW51900337 'Valid Access License' Error: How to Fix It",
+          "publisher": "games.gg",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu7Sq7q0zKt7Jc_FvMPTZoS6e6a0yrY2O4KQk8RY_yyxyY1ByvUhOvExydbNc"
-        }
-      ]
-    },
-    {
-      "query": "qqqm",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T15:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/invesco-nasdaq-100-etf-qqqm-110516688.html",
-        "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-qqq-buys-19-110535090.html",
-        "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-adds-apple-110521279.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-nasdaq-100-etf-qqqm-110516688.html",
-          "title": "Invesco NASDAQ 100 ETF (QQQM) Adds NVIDIA and Apple on Tuesday",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-qqq-buys-19-110535090.html",
-          "title": "Invesco QQQ (QQQ) Buys $19.6 Million More NVIDIA on Tuesday",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-adds-apple-110521279.html",
-          "title": "Proshares Trust (TQQQ) Adds Apple and Nvidia on Nov. 4",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT89kgtzjNgmBkWD9FNDcNTNFz3yGMG_235Ip1OmlABT0Zznl3gaUw-arQBX10"
         }
       ]
     },
@@ -151,68 +291,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-06T15:00:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/nishesh-basavareddy-vs-jerome-kym-nov-06-2026/",
-        "https://en.tennistemple.com/actu/van-assche-vs-hijikata-rare-under-180m/GbHP",
-        "https://www.dimers.com/tennis/news/luca-van-assche-vs-rinky-hijikata-tennis-prediction-atp-paris-masters-2026-ac"
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/casper-ruud-vs-nuno-borges-quarter-finals-match-nov-06-2026/",
+        "https://en.tennistemple.com/actu/rolex-paris-masters-rinderknech-advances-as/sbJS",
+        "https://www.dimers.com/tennis/news/arthur-rinderknech-vs-francisco-cerundolo-tennis-prediction-atp-paris-masters-2026-ac"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBoj3SloaaKRs5cXSgJc7cv6hvZHr71Xsjt8MWD_qxVforioCt0oFRel7-CQ",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTivTpWUlwWTfOVWnWItoTnYmxsMxR3CVv3zjIaaCoKx9gdJyFweeW0DRcyIyw",
       "image_credit": "Robinhood",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/nishesh-basavareddy-vs-jerome-kym-nov-06-2026/",
-          "title": "November 6, 2026: Nishesh Basavareddy vs Jerome Kym Tennis Prediction Market",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/casper-ruud-vs-nuno-borges-quarter-finals-match-nov-06-2026/",
+          "title": "November 6, 2026: Casper Ruud vs Nuno Borges Quarter Finals match Tennis Prediction Market",
           "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBoj3SloaaKRs5cXSgJc7cv6hvZHr71Xsjt8MWD_qxVforioCt0oFRel7-CQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTivTpWUlwWTfOVWnWItoTnYmxsMxR3CVv3zjIaaCoKx9gdJyFweeW0DRcyIyw"
         },
         {
-          "url": "https://en.tennistemple.com/actu/van-assche-vs-hijikata-rare-under-180m/GbHP",
-          "title": "Van Assche vs Hijikata: Rare Under-1.80m Quarterfinal at Paris Masters",
+          "url": "https://en.tennistemple.com/actu/rolex-paris-masters-rinderknech-advances-as/sbJS",
+          "title": "Rolex Paris Masters: Rinderknech advances as Cerundolo retires, Halys takes down Fery",
           "publisher": "TennisTemple",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjGodfl9pDARnqmu8oJs4Z2__1YsiTYEcOXH9q1Jv3wHzSAuy6aXSvgZiPsW0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWPqtyQHAxzgvj4c__I3dO0CJpcVX_r1buUIuYT0Zu4hZ7k6C0NCov83sbH0U"
         },
         {
-          "url": "https://www.dimers.com/tennis/news/luca-van-assche-vs-rinky-hijikata-tennis-prediction-atp-paris-masters-2026-ac",
-          "title": "Luca Van Assche vs. Rinky Hijikata prediction, odds, picks for ATP Paris Masters 2026",
+          "url": "https://www.dimers.com/tennis/news/arthur-rinderknech-vs-francisco-cerundolo-tennis-prediction-atp-paris-masters-2026-ac",
+          "title": "Arthur Rinderknech vs. Francisco Cerundolo prediction, odds, picks for ATP Paris Masters 2026",
           "publisher": "Dimers",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpxH5-z3BRGFs2cD0nLOU39L1G-QVV4RiIr76dYh98M9F6wnsqcfga1csNhA"
-        }
-      ]
-    },
-    {
-      "query": "asts stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T15:00:00Z",
-      "related_news_urls": [
-        "https://www.businesswire.com/news/home/20261104508354/en/AST-SpaceMobile-Awarded-U.S.-Space-Force-Contract-Through-STR-to-Advance-Space-Based-Sensing-Capabilities",
-        "https://www.barchart.com/story/news/8680261/asts-stock-alert-ast-spacemobile-lands-new-space-force-contract",
-        "https://spacewatch.global/2026/11/ast-spacemobile-joins-u-s-space-force-program-to-advance-space-based-sensing/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKSYZnsBapX2CViLcHa35O-dQfoe0Jn8t6GG2vAMaq2qrJEFj2m55iBjA8t6w",
-      "image_credit": "Business Wire",
-      "news": [
-        {
-          "url": "https://www.businesswire.com/news/home/20261104508354/en/AST-SpaceMobile-Awarded-U.S.-Space-Force-Contract-Through-STR-to-Advance-Space-Based-Sensing-Capabilities",
-          "title": "AST SpaceMobile Awarded U.S. Space Force Contract Through STR to Advance Space-Based Sensing Capabilities",
-          "publisher": "Business Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKSYZnsBapX2CViLcHa35O-dQfoe0Jn8t6GG2vAMaq2qrJEFj2m55iBjA8t6w"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8680261/asts-stock-alert-ast-spacemobile-lands-new-space-force-contract",
-          "title": "ASTS Stock Alert: AST SpaceMobile Lands New Space Force Contract",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsE3iSkzVunBGHPYUnPkspVZ0waZ8HXD8dML2Rvh4Uf58hAn9daOXPv21bll8"
-        },
-        {
-          "url": "https://spacewatch.global/2026/11/ast-spacemobile-joins-u-s-space-force-program-to-advance-space-based-sensing/",
-          "title": "AST SpaceMobile Joins U.S. Space Force Program to Advance Space-Based Sensing",
-          "publisher": "SpaceWatch.GLOBAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdhK1gJxyGDzrsG0NJWbDLt7nQKF3VpftkxbgC_S1ij5VBanhIK9imlv-82QY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvjHCutkgbt3UYr-jrlYTAgCAmZp9kSJ5gRIrxXxaQsRNFynUT9c4wauGejZk"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "Forbes",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUO_yOUiFmOgoOTZkktCpFczktlYmkAcJeWr37N7TPOH8fFzUq93z9lpEpYsk"
-        }
-      ]
-    },
-    {
-      "query": "vgt",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T15:00:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/news/4666970-ten-undervalued-tech-stocks-riding-a-wave-of-rising-capital-spending",
-        "https://finance.yahoo.com/markets/stocks/articles/3-value-stocks-38-discount-011948981.html",
-        "https://global.morningstar.com/en-ea/stocks/best-tech-stocks-buy-2"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKXTd6NhFJl_9YfnQ6SRZfb1TKCnQnvBP309Hd2Tgqb3UYpaiahIDgvmflzw",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/news/4666970-ten-undervalued-tech-stocks-riding-a-wave-of-rising-capital-spending",
-          "title": "Ten undervalued tech stocks riding a wave of rising capital spending (VGT:NYSEARCA)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKXTd6NhFJl_9YfnQ6SRZfb1TKCnQnvBP309Hd2Tgqb3UYpaiahIDgvmflzw"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/3-value-stocks-38-discount-011948981.html",
-          "title": "3 Value Stocks With Up To 38% Discount To Fair Value",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbotSpfLO3eColFBlYrGMH9V7qD51sO35d0cMyLU9gslQdilDDFDBrIggBNV0"
-        },
-        {
-          "url": "https://global.morningstar.com/en-ea/stocks/best-tech-stocks-buy-2",
-          "title": "The Best Tech Stocks to Buy",
-          "publisher": "Morningstar",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvvUCEWLO8QwwzdvroTiHB1PcmDYBEPxBDfjQBAnBSdQFQU5LiG2ciGPDjWn4"
-        }
-      ]
-    },
-    {
-      "query": "s&p500",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T14:50:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/article/4963563-i-was-tired-of-winning",
-        "https://www.benzinga.com/opinion/26/10/62636823/sp500-rose-14-percent-in-a-year-and-got-cheaper",
-        "https://seekingalpha.com/article/4960918-the-bear-market-is-ending-not-beginning"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWDRfqEfXOja4SFj6jDOq1wS22-p_o09XyCPCpAjbQ9RD04zTEmFaUXLxOROA",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/article/4963563-i-was-tired-of-winning",
-          "title": "I Was Tired Of Winning (SP500)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWDRfqEfXOja4SFj6jDOq1wS22-p_o09XyCPCpAjbQ9RD04zTEmFaUXLxOROA"
-        },
-        {
-          "url": "https://www.benzinga.com/opinion/26/10/62636823/sp500-rose-14-percent-in-a-year-and-got-cheaper",
-          "title": "S&P 500 Rose 14% In A Year And Got Cheaper",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDu9i3XLW6nxuO19GbnSybaVp0WUAPqgVWO-3jrqYStKsck4H3tduO5MlgX-c"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4960918-the-bear-market-is-ending-not-beginning",
-          "title": "The Bear Market Is Ending, Not Beginning (SPX)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_ffJt5Mz_H2GYidu7swxi140Es8yHu_pQc9ZuT0EqpvXKhWh1pzz5Vfs7nIs"
-        }
-      ]
-    },
-    {
-      "query": "schd stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T14:50:00Z",
-      "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/04/history-says-this-etf-is-a-fantastic-buy-and-hold/",
-        "https://seekingalpha.com/article/4961640-schds-outperformance-wont-last",
-        "https://finance.yahoo.com/markets/stocks/articles/dividend-equity-etf-schd-touches-125500052.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEQU0W72wMZb4fwy1KlGcgRu8-Qp9EHsc6N9BkHLFVGePBsGld-hkFcfjzAKE",
-      "image_credit": "The Motley Fool",
-      "news": [
-        {
-          "url": "https://www.fool.com/investing/2026/11/04/history-says-this-etf-is-a-fantastic-buy-and-hold/",
-          "title": "History Says This ETF Is a Fantastic Buy-and-Hold Investment -- and It Could Turn $100 per Month Into $359,492",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEQU0W72wMZb4fwy1KlGcgRu8-Qp9EHsc6N9BkHLFVGePBsGld-hkFcfjzAKE"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4961640-schds-outperformance-wont-last",
-          "title": "SCHD's Outperformance Won't Last (NYSEARCA:SCHD)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHgi2TdLASTapf1VTY_TkcBRNqMmUswRQcmNKiAKsSo9QvuWrtZSlUo0co5qI"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dividend-equity-etf-schd-touches-125500052.html",
-          "title": "Dividend Equity ETF (SCHD) Touches New 52-Week High",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_1f8snons6QHzGR8A8ev6dukorLtpEqJya4NZVbt8B7s3nuxxEZtBZAB_JDU"
         }
       ]
     }
