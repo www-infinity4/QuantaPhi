@@ -353,7 +353,7 @@ async function handle(request,env){
  }
  try{
   const owner=await account(request,env);
-  if(path==='/v1/x/oauth/start'&&request.method==='POST')return out(await xoBegin(env,owner));
+  if(path==='/v1/x/oauth/start'&&request.method==='POST'){const body=await request.json().catch(()=>({}));return out(await xoBegin(env,owner,{write:body?.write===true}));}
   if(path==='/v1/x/oauth/disconnect'&&request.method==='POST')return out(await xoDisconnect(env,owner,(await request.json().catch(()=>({}))).confirmation));
   if(path==='/v1/x/timeline'&&request.method==='GET')return out(await xtTimeline(env,owner,url));
   if(path==='/v1/x/spaces/live'&&request.method==='GET')return out(await xtLiveSpaces(env,owner,url));
@@ -448,7 +448,7 @@ function xoConnectPage(path){
  if(path==='/connect-x.js'){
   return new Response(XO_CONNECT_JS,{headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'}});
  }
- const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="description" content="Connect your existing QuantaPhi wallet to X for Media Star following and Spaces."><title>Connect X | QuantaPhi Media Star</title><style>:root{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#2b2235;background:#f7f4fb}*{box-sizing:border-box}body{margin:0}main{max-width:650px;margin:28px auto;padding:clamp(18px,5vw,36px);background:#fff;border:1px solid #d9cce4;border-radius:18px}h1{font-size:clamp(28px,6vw,36px);line-height:1.25;margin:0 0 16px}p{font-size:17px;line-height:1.6}a{color:#55218f;font-weight:650}button{padding:15px 20px;font:700 17px/1.3 system-ui;border:0;border-radius:12px;background:#55218f;color:#fff;min-height:48px}button:disabled{opacity:.5}input{font:16px system-ui;padding:12px;border-radius:10px;border:1px solid #a89caf;max-width:100%;width:250px}label{display:block;font-size:16px;font-weight:650;margin-bottom:6px}.stack{display:grid;gap:13px}.muted{color:#62596b}.bar{display:flex;gap:16px;flex-wrap:wrap}.status{padding:14px;border:1px solid #cfc4da;border-radius:12px;background:#f9f7fc}details{margin:16px 0;padding:13px;border:1px solid #ddd2e8;border-radius:12px}summary{font-weight:650;cursor:pointer}@media(max-width:700px){main{margin:14px;padding:22px}}</style></head><body><main><p><a href="https://quantaphi.org/">QuantaPhi home</a> / Media Star</p><h1>Connect your X account</h1><p>Use your existing QuantaPhi wallet and approve the connection directly on X. This page does not revoke permissions or delete saved following records.</p><section class="stack" aria-live="polite"><div class="status"><strong>Wallet connection</strong><p id="walletStatus">Checking this device...</p><a id="walletLink" href="https://quantaphi.org/wallet-recovery.html" hidden>Open QuantaPhi wallet sign-in</a></div><div class="status"><strong>X authorization</strong><p id="xStatus">Checking the Media Star connection...</p><p id="xHandle" class="muted"></p></div></section><p><button id="authorizeX" type="button" disabled>Authorize my X account</button></p><p id="actionStatus" role="status">Authorization only starts when you tap the button.</p><details><summary>Use a different X username</summary><p>This changes the claimed username for this wallet, not your actual X identity. X will verify it during authorization.</p><label for="xUsername">Your X username</label><div class="bar"><input id="xUsername" maxlength="15" autocapitalize="off" autocomplete="off" placeholder="@username"><button id="saveUsername" type="button" disabled>Save X username</button></div></details><p><a href="https://quantaphi.org/legal/privacy">X privacy policy</a> · <a href="https://quantaphi.org/legal/terms">Terms of Service</a></p></main><script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script><script defer src="https://quantaphi.org/cloud-wallet-client.js"></script><script defer src="/connect-x.js"></script></body></html>';
+ const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="description" content="Connect your existing QuantaPhi wallet to X for Media Star following and Spaces."><title>Connect X | QuantaPhi Media Star</title><style>:root{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#2b2235;background:#f7f4fb}*{box-sizing:border-box}html,body{max-width:100%;overflow-x:hidden}body{margin:0}main{width:calc(100% - 24px);min-width:0;max-width:650px;margin:28px auto;padding:clamp(18px,5vw,36px);background:#fff;border:1px solid #d9cce4;border-radius:18px}h1{font-size:clamp(28px,6vw,36px);line-height:1.25;margin:0 0 16px}p{font-size:17px;line-height:1.6}a{color:#55218f;font-weight:650}button{padding:15px 20px;font:700 17px/1.3 system-ui;border:0;border-radius:12px;background:#55218f;color:#fff;min-height:48px}button:disabled{opacity:.5}input{font:16px system-ui;padding:12px;border-radius:10px;border:1px solid #a89caf;max-width:100%;width:250px}label{display:block;font-size:16px;font-weight:650;margin-bottom:6px}.stack{display:grid;gap:13px}.muted{color:#62596b}.bar{display:flex;gap:16px;flex-wrap:wrap}.status{padding:14px;border:1px solid #cfc4da;border-radius:12px;background:#f9f7fc}details{margin:16px 0;padding:13px;border:1px solid #ddd2e8;border-radius:12px}summary{font-weight:650;cursor:pointer}@media(max-width:700px){main{margin:14px;padding:22px}}</style></head><body><main><p><a href="https://quantaphi.org/">QuantaPhi home</a> / Media Star</p><h1>Connect your X account</h1><p>Use your existing QuantaPhi wallet and approve the connection directly on X. This page does not revoke permissions or delete saved following records.</p><section class="stack" aria-live="polite"><div class="status"><strong>Wallet connection</strong><p id="walletStatus">Checking this device...</p><a id="walletLink" href="https://quantaphi.org/wallet-recovery.html" hidden>Open QuantaPhi wallet sign-in</a></div><div class="status"><strong>X authorization</strong><p id="xStatus">Checking the Media Star connection...</p><p id="xHandle" class="muted"></p></div></section><p><button id="authorizeX" type="button" disabled>Authorize my X account</button></p><p id="actionStatus" role="status">Authorization only starts when you tap the button.</p><details><summary>Use a different X username</summary><p>This changes the claimed username for this wallet, not your actual X identity. X will verify it during authorization.</p><label for="xUsername">Your X username</label><div class="bar"><input id="xUsername" maxlength="15" autocapitalize="off" autocomplete="off" placeholder="@username"><button id="saveUsername" type="button" disabled>Save X username</button></div></details><p><a href="/connect-x?write=1">Enable posting, replies and likes (requires X developer Read and write permission)</a></p><p><a href="https://quantaphi.org/legal/privacy">X privacy policy</a> · <a href="https://quantaphi.org/legal/terms">Terms of Service</a></p></main><script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script><script defer src="https://quantaphi.org/cloud-wallet-client.js"></script><script defer src="/connect-x.js"></script></body></html>';
  return new Response(html,{status:200,headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self' https://media-star-following-spaces.marvaseater.workers.dev https://starquest-ledger.marvaseater.workers.dev https://unified-wallet.marvaseater.workers.dev; frame-src https://www-infinity4.github.io; form-action 'none'; frame-ancestors 'none'; base-uri 'none'"}});
 }
 const XO_CONNECT_JS=String.raw`
@@ -457,6 +457,8 @@ const XO_CONNECT_JS=String.raw`
  const api='https://media-star-following-spaces.marvaseater.workers.dev';
  const $=id=>document.getElementById(id);
  const authButton=$('authorizeX'),saveButton=$('saveUsername');
+ const wantsWrite=new URLSearchParams(window.location.search).get('write')==='1';
+ if(wantsWrite)authButton.textContent='Authorize X posting';
  const set=(id,msg)=>{$(id).textContent=msg};
  let walletToken='',xAccount=null;
  async function getToken(){
@@ -487,7 +489,7 @@ const XO_CONNECT_JS=String.raw`
    const handle=xAccount?.handle?'@'+xAccount.handle:'not selected';
    set('xHandle','Registered X username: '+handle);
    $('xUsername').value=xAccount?.handle||'';
-   if(response.xConnected){
+   if(response.xConnected&&!(wantsWrite&&(!response.canPost||!response.canLike))){
     set('xStatus','Connected to X. Your authorization is saved securely.');
     set('actionStatus','X is connected. Use Media Star to sync your Following list.');
     authButton.hidden=true;
@@ -504,7 +506,7 @@ const XO_CONNECT_JS=String.raw`
   authButton.disabled=true;
   set('actionStatus','Opening the official X authorization page. You may need to sign in to X.');
   try{
-   const result=await request('/v1/x/oauth/start','POST',{});
+   const result=await request('/v1/x/oauth/start','POST',{write:wantsWrite});
    const target=new URL(result.authorizationUrl);
    if(target.origin!=='https://x.com'||target.pathname!=='/i/oauth2/authorize')throw Error('Unrecognized X destination');
    window.location.assign(target.href);
@@ -523,6 +525,7 @@ const XO_CONNECT_JS=String.raw`
 
 const XO_REDIRECT='https://quantaphi.org/api/x/oauth/callback';
 const XO_SCOPE='tweet.read users.read follows.read space.read offline.access';
+const XO_WRITE_SCOPE=XO_SCOPE+' tweet.write like.write';
 const XO_ENCODER=new TextEncoder();
 const xoErr=(name,status=400)=>Object.assign(new Error(name),{status});
 const xoB64=bytes=>btoa(Array.from(new Uint8Array(bytes),b=>String.fromCharCode(b)).join('')).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
@@ -561,14 +564,14 @@ async function xoSave(env,owner,token,profile,priorRefresh=''){
  const expiry=Date.now()+Number(token.expires_in)*1000;
  await env.DB.prepare('INSERT INTO x_oauth_tokens(owner_id,x_user_id,x_handle,access_cipher,refresh_cipher,expires_at,scope,updated_at) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(owner_id) DO UPDATE SET x_user_id=excluded.x_user_id,x_handle=excluded.x_handle,access_cipher=excluded.access_cipher,refresh_cipher=excluded.refresh_cipher,expires_at=excluded.expires_at,scope=excluded.scope,updated_at=excluded.updated_at').bind(owner,profile.id,profile.username,access,encryptedRefresh,expiry,String(token.scope||XO_SCOPE),Date.now()).run();
 }
-async function xoBegin(env,owner){
+async function xoBegin(env,owner,{write=false}={}){
  if(!xoReady(env))throw xoErr('x_oauth_not_configured',503);
  const state=xoB64(crypto.getRandomValues(new Uint8Array(32)));
  const verifier=xoB64(crypto.getRandomValues(new Uint8Array(48)));
  const challenge=await xoHash(verifier);
- await env.DB.prepare('INSERT INTO x_oauth_pending(state_hash,owner_id,verifier_cipher,created_at,consumed_at) VALUES(?,?,?,?,NULL)').bind(await xoHash(state),owner,await xoSeal(env,verifier,owner),Date.now()).run();
+ await env.DB.prepare('INSERT INTO x_oauth_pending(state_hash,owner_id,verifier_cipher,created_at,consumed_at) VALUES(?,?,?,?,NULL)').bind(await xoHash(state),owner,await xoSeal(env,JSON.stringify({verifier,write:write===true}),owner),Date.now()).run();
  const u=new URL('https://x.com/i/oauth2/authorize');
- for(const [k,v] of Object.entries({response_type:'code',client_id:env.X_OAUTH_CLIENT_ID,redirect_uri:XO_REDIRECT,scope:XO_SCOPE,state,code_challenge:challenge,code_challenge_method:'S256'}))u.searchParams.set(k,v);
+ for(const [k,v] of Object.entries({response_type:'code',client_id:env.X_OAUTH_CLIENT_ID,redirect_uri:XO_REDIRECT,scope:write===true?XO_WRITE_SCOPE:XO_SCOPE,state,code_challenge:challenge,code_challenge_method:'S256'}))u.searchParams.set(k,v);
  return {authorizationUrl:u.href,expiresInSeconds:600};
 }
 function xoPage(title,message,status=200){
@@ -587,7 +590,9 @@ async function xoFinish(request,env){
   if(!pending||pending.consumed_at!=null||pending.created_at>now||pending.created_at<now-600000)throw xoErr('x_state_invalid_or_expired',403);
   const claimed=await env.DB.prepare('UPDATE x_oauth_pending SET consumed_at=? WHERE state_hash=? AND consumed_at IS NULL AND created_at>=?').bind(now,digest,now-600000).run();
   if(Number(claimed.meta?.changes||0)!==1)throw xoErr('x_state_already_used',403);
-  const verifier=await xoOpen(env,pending.verifier_cipher,pending.owner_id);
+  const encryptedVerifier=await xoOpen(env,pending.verifier_cipher,pending.owner_id);
+  const verifier=encryptedVerifier.startsWith('{')?JSON.parse(encryptedVerifier).verifier:encryptedVerifier;
+  if(!/^[A-Za-z0-9_-]{40,150}$/.test(verifier||''))throw xoErr('x_pkce_invalid',403);
   const token=await xoTokenRequest(env,{grant_type:'authorization_code',code,redirect_uri:XO_REDIRECT,code_verifier:verifier});
   const profileResponse=await fetch('https://api.x.com/2/users/me',{headers:{Authorization:'Bearer '+token.access_token},signal:AbortSignal.timeout(12000)});
   if(!profileResponse.ok)throw xoErr('x_profile_unavailable',502);
