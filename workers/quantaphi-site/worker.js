@@ -275,6 +275,42 @@ async function loadVerifiedHomepage(request) {
  } catch { return null; }
 }
 
+
+// GA4 measures browser activity, not raw Cloudflare request counts.
+// Instrument only successful public HTML. Never send URLs with query tokens,
+// text inputs, account details, wallet routes, or private housing submissions.
+const QP_GA4_ID = 'G-JXQKLVZQT1';
+const QP_GA4_PRIVATE_PATH = /(?:^|\/)(?:api|admin|account|accounts|auth|callback|login|logout|signin|sign-in|wallet|profile|checkout|payment|payments|recovery|settings|phone|health|housing|housing-help|disability-housing)(?:[/.]|$)|\/bubbles-(?:account|auth|signin|connection|setting|profile|wallet)[a-z0-9-]*\.(?:html|htm)$/i;
+function instrumentPublicGa4(html, request, headers) {
+ const url = new URL(request.url);
+ if (request.method !== 'GET' || url.hostname !== 'quantaphi.org' ||
+     QP_GA4_PRIVATE_PATH.test(url.pathname) ||
+     headers.has('Content-Security-Policy') ||
+     /<meta\s+[^>]*http-equiv\s*=\s*["']Content-Security-Policy["']/i.test(html) ||
+     !/<head\b[^>]*>/i.test(html) || !/<\/head>/i.test(html) ||
+     /<meta\s+[^>]*name\s*=\s*["']robots["'][^>]*noindex/i.test(html) ||
+     !/<html\b/i.test(html)) return {html, status:null};
+ const existing = /G-JXQKLVZQT1/i.test(html) && /(?:gtag\s*\(|googletagmanager\.com\/gtag)/i.test(html);
+ const ga4 = existing ? '' : 
+  '<script async data-quantaphi-ga4="sitewide" src="https://www.googletagmanager.com/gtag/js?id='+QP_GA4_ID+'"></script>'+
+  '<script data-quantaphi-ga4="config">'+
+  'window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};'+
+  "gtag('js',new Date());"+
+  "gtag('config','G-JXQKLVZQT1',{page_location:location.origin+location.pathname,allow_google_signals:false,allow_ad_personalization_signals:false});"+
+  '</script>';
+ const clicks = html.includes('data-quantaphi-clicks=') ? '' :
+  '<script data-quantaphi-clicks="v1">'+
+  "document.addEventListener('click',function(event){"+
+  "if(!event.isTrusted||!event.target||typeof event.target.closest!=='function')return;"+
+  "var t=event.target.closest('a,button,[role=\"button\"]');"+
+  "if(!t||t.closest('form,[data-analytics-ignore]'))return;"+
+  "if(typeof window.gtag==='function')window.gtag('event','quanta_click',"+
+  "{interaction_kind:t.tagName==='A'?'link':'button',page_location:location.origin+location.pathname,page_path:location.pathname});"+
+  '},true);'+
+  '</script>';
+ return {html:html.replace(/<head\b[^>]*>/i, match=>match+'\n'+ga4+clicks),status:existing?'existing':'installed'};
+}
+
 function rewriteSuiteText(text) {
  // Preserve inline Crusher behavior even while the page origin serves older HTML.
  if(text.includes('id="quanta-inline-crusher"')){
@@ -544,9 +580,12 @@ export default {
    // Home page is read from a pinned older commit; remove its APK link during the hold.
    if(route.repo==='QuantaPhi'&&route.sourcePath==='/index.html')bodyText=bodyText.replace(/<a href="\/downloads\/site\.apk" data-apk-download="site">[\s\S]*?<\/a>/,'<strong role="status" data-platinum-security-hold style="color:#a51c30">Infinity Platinum APK withdrawn pending security review — do not install the preview.</strong>');
    const rewritten = rewriteSuiteText(bodyText);
-   if (isPublicHomepage && upstream.status === 200) await storeVerifiedHomepage(rewritten, ctx);
+   const tracked = /text\/html/i.test(contentType) && upstream.status === 200
+    ? instrumentPublicGa4(rewritten, request, out) : {html:rewritten, status:null};
+   if (tracked.status) out.set('x-quantaphi-ga4', tracked.status);
+   if (isPublicHomepage && upstream.status === 200) await storeVerifiedHomepage(tracked.html, ctx);
    out.delete('Content-Length'); out.delete('Content-Encoding'); out.delete('ETag');
-   return new Response(rewritten, { status: upstream.status, headers: out });
+   return new Response(tracked.html, { status: upstream.status, headers: out });
   }
   return new Response(upstream.body, { status: upstream.status, headers: out });
  }

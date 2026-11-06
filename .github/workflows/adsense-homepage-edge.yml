@@ -5,6 +5,7 @@ on:
     paths:
       - 'workers/quantaphi-site/worker.js'
       - 'test/adsense-homepage-fallback.test.cjs'
+      - 'test/sitewide-ga4-tracking.test.cjs'
       - 'test/adsense-public-files.test.cjs'
       - 'test/site-source-release.test.cjs'
       - '.github/workflows/adsense-homepage-edge.yml'
@@ -13,6 +14,7 @@ on:
     paths:
       - 'workers/quantaphi-site/worker.js'
       - 'test/adsense-homepage-fallback.test.cjs'
+      - 'test/sitewide-ga4-tracking.test.cjs'
       - 'test/adsense-public-files.test.cjs'
       - 'test/site-source-release.test.cjs'
       - '.github/workflows/adsense-homepage-edge.yml'
@@ -31,4 +33,4 @@ jobs:
         with:
           node-version: '22'
       - name: Verify last-good cache, crawler failure fallback, and existing site routes
-        run: node --test test/adsense-homepage-fallback.test.cjs test/adsense-public-files.test.cjs test/site-source-release.test.cjs test/suite-routing.test.cjs
+        run: node --test test/adsense-homepage-fallback.test.cjs test/adsense-public-files.test.cjs test/sitewide-ga4-tracking.test.cjs test/site-source-release.test.cjs test/suite-routing.test.cjs
