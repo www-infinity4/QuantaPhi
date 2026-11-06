@@ -128,14 +128,12 @@ export function eligibleQuickAds(now=Date.now()){
  const ads=campaign==='world-series'?QUICK_ADS:campaign==='infinity-house'?HOUSE_ADS:[];
  return ads.filter(a=>isOfficialUrl(a.href,a.id));
 }
-// Session-first rotation: never replay the same ad while a different unseen one
-// exists, then restart the queue with adjacent/topic relevance and view penalty.
+// A creative may appear once only. Exhaustion is a valid result; never silently
+// reset the selection queue or re-skin a previous ad to evade the history.
 export function chooseQuickAd(context={},viewCounts={},recent=[],now=Date.now()){
  const eligible=eligibleQuickAds(now);if(!eligible.length)return null;
- const unseen=eligible.filter(a=>!(Number(viewCounts[a.id])>0));
- let pool=unseen.length?unseen:eligible;
- const withoutRecent=pool.filter(a=>!recent.includes(a.id));
- if(withoutRecent.length)pool=withoutRecent;
+ const pool=eligible.filter(a=>!(Number(viewCounts[a.id])>0)&&!recent.includes(a.id));
+ if(!pool.length)return null;
  const topic=String(context.category||'').toLowerCase();
  const card=String(context.title||'').toLowerCase();
  const media=/music|video|radio|tv|film|entertain|media/.test(topic+' '+card);
