@@ -53,3 +53,12 @@ This scoped work continues the user's requested Twitter/X Spaces card. Account X
 - Verify that actual official X Space embed/audio can legally play within QuantaPhi; failing this, honest official-player link remains.
 - Independent implementation of full user-authorized X OAuth/post/feed in #1284; only this Spaces slice is built here.
 - Separate exact-head CI, review, merge, deploy, independent readback and issue update.
+
+## November 5, 2026 CT · X timeline reliability
+
+- Confirmed the live [X Quick Card](https://quantaphi.org/?card=twitter) mounts inside the Oracle viewer after [#1713](https://github.com/www-infinity4/QuantaPhi/pull/1713). The browser showed the wallet requirement. Signed-in X reads, provider write permission and in-page Spaces audio still need separate verification.
+- Found that a delayed Public response can appear under Following and that the stowed card starts provider reads. Two runtime regressions reproduced both problems before the fix.
+- In branch `fix/x-quick-card-visible-1284`, serialized reads retain the newest selected view, discard superseded results, and limit initial and scheduled reads to the visible card. The site and direct card entry points pin the updated module.
+- Source-tested on the isolated branch. All 33 focused tests passed with X provider fixtures, including signed-in scope checks and the two runtime regressions. No coordinator lease was issued for this source-only follow-up.
+- Scope estimate 3 of 6 acceptance steps complete (50%). Reproduction, implementation and local tests are complete. Exact-head CI, independent review and live readback remain. This checkpoint records a second documented source session in this file. Estimate 1–2 further sessions for this narrow repair. The broader issue remains open.
+- Next action is to inspect the exact-head X native card and API workflow after opening the PR.
