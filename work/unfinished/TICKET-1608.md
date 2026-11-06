@@ -25,8 +25,8 @@ ci: []
 merged: false
 deployed: false
 live_verified: false
-blocker: "No account-wide authenticated atomic ad-claim route; D1 migration not applied; no approved external creative evidence"
-next_action: "Run exact-head PR CI and address failures before database rollout"
+blocker: "No account-wide authenticated atomic ad-claim route; Worker and homepage not deployed; no approved external creative evidence"
+next_action: "Review CI-green draft PR, deploy and read back Worker, secure cross-device claim, then release homepage"
 ---
 
 # Ticket #1608 — 2026-11-06 session
@@ -42,6 +42,6 @@ Existing [#1608](https://github.com/www-infinity4/QuantaPhi/issues/1608) reused 
 - `docs/AD-CREATIVE-NOREPEAT.md`: release and security details.
 
 ## Known limitations
-Browser-local history does not protect against cleared browser data, all simultaneous tabs or other devices. Atomic signed-in D1 claims are required for that. Other site ad placements and external providers are not yet covered. No real new sponsor/brand creative inserted. Do not interpret staged code as delivered production behavior.
+Browser-local history does not protect against cleared browser data, all simultaneous tabs or other devices. Atomic signed-in D1 claims are required for that. Other site ad placements and external providers are not yet covered. The existing Cloudflare D1 database was changed *additively* on 2026-11-06: ad_creatives/ad_seen_receipts tables and indexes created successfully. Cloudflare readback confirmed existing catalog brands=8, collections=9, offers=0 and new ad_creatives=0, ad_seen_receipts=0. No sponsor/brand creative was inserted. The Worker and homepage code are still not deployed; do not interpret staged code as delivered production behavior.
 
 Next gate: exact-head CI, independent review, migration/readback, Android acceptance and identity claim integration.
