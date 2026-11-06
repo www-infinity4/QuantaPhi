@@ -320,13 +320,30 @@ export function mountConnections(container,{token}) {
   redeem.addEventListener('click',async()=>{redeem.disabled=true;try{const data=await client.call('/pair/redeem',{code:code.value.trim()});sessionStorage.setItem(sessionKey,JSON.stringify({token:data.token,expiresAt:data.expiresAt}));code.value='';output.textContent='This browser is connected for 15 minutes.';await load();}catch{output.textContent='Connection failed. Use a fresh code from your verified phone.';}finally{redeem.disabled=false;}});
   end.addEventListener('click',async()=>{try{if(paired())await client.call('/pair/end',{});sessionStorage.removeItem(sessionKey);output.textContent='Browser connection ended.';await load();}catch{output.textContent='Could not end the server session. Try again; it expires automatically after 15 minutes.';}});
   pairing.append(create,output,code,redeem,end);section.append(pairing);
-  let loadVersion=0;
+  let loadVersion=0,cloudflareRecoveryAttempted=false,cloudflareRecoveryFailure='';
   async function load() {
     const version=++loadVersion;
     refresh.disabled=true;
     try {
-      const [data,dataAccounts,settings]=await Promise.all([client.call('/catalog'),client.call('/accounts'),
+      let [data,dataAccounts,settings]=await Promise.all([client.call('/catalog'),client.call('/accounts'),
         client.call('/wallet-email/preferences',{action:'read'}).catch(()=>null)]);
+      // Recover a previously authorized Cloudflare callback that the Android
+      // browser never completed. This does NOT open Cloudflare, mint permissions
+      // or claim dashboard login as Bubbles authorization. Server binds it to
+      // the same verified wallet and initiating session; missing means no grant.
+      const alreadyConnected=Array.isArray(dataAccounts.accounts)&&dataAccounts.accounts.some(account=>
+        account.provider==='cloudflare'&&account.status==='connected'&&
+        Number.isFinite(account.expiresAt)&&account.expiresAt>Date.now()+30000);
+      if(!cloudflareRecoveryAttempted&&!client.pending&&!alreadyConnected){
+        cloudflareRecoveryAttempted=true;
+        try {
+          const recovered=await client.call('/handoff/cloudflare/resume',{},CLOUDFLARE_HANDOFF_TIMEOUT_MS);
+          if(recovered.status==='connected'&&recovered.account)
+            dataAccounts=await client.call('/accounts');
+        } catch(error) {
+          cloudflareRecoveryFailure=providerSignInErrorMessage(error?.message,'cloudflare');
+        }
+      }
       // An account read started before OAuth finished must not repaint older
       // sign-in buttons after the verified connection has been loaded.
       if(version!==loadVersion)return;
@@ -375,10 +392,9 @@ export function mountConnections(container,{token}) {
         if(provider.id==='google')card.append(scopes,button,googleStatus);
         else card.append(button);
         if(provider.id==='cloudflare'){
-          card.append(element('p','Cloudflare may already recognize your login and go straight to Review permissions. After authorizing, Bubbles must verify the connection.','ba-muted'));
-          const login=element('a','Open Cloudflare login separately','ba-link');
-          login.href='https://dash.cloudflare.com/login';login.target='_blank';login.rel='noopener noreferrer';
-          card.append(login);
+          card.append(element('p','Bubbles has not confirmed a saved Cloudflare authorization for this wallet. It checked for a previously received return without opening another sign-in. Cloudflare dashboard login alone does not complete this connection.','ba-muted'));
+          // The Cloudflare dashboard link is not an OAuth callback and made
+          // an already-logged-in owner appear to be sent in circles.
           if(provider.fullProjectConfigured===false)
             card.append(element('p','Additional project permissions need Bubbles OAuth client setup. More scopes in the Cloudflare dashboard do not automatically change this sign-in request.','ba-muted'));
         }
@@ -653,6 +669,7 @@ export function mountConnections(container,{token}) {
         }
       }
       status.textContent=client.pending?'Complete or cancel the current sign-in.':
+        cloudflareRecoveryFailure?cloudflareRecoveryFailure:
         dataAccounts.accounts.length?'Account connection status verified.':'No connected accounts yet.';
       cancel.hidden=!client.pending;
       return signedIn;

@@ -58,7 +58,7 @@ test('account page starts consent with the selected provider permissions',async 
  const document={createElement:tag=>new Element(tag),createTextNode:text=>({textContent:text}),addEventListener(){}};
  const storage=new Map(),sessionStorage={getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
  const popup={location:{},close(){}},calls=[];
- let googleConfigured=false,fullCloudflareConfigured=false,navigation='',holdOldAccounts=false,finishOldRead;
+ let googleConfigured=false,fullCloudflareConfigured=false,navigation='',holdOldAccounts=false,finishOldRead,cloudflareRecoveryAvailable=false;
  let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',expiresAt:Date.now()+600000,grantedActions:['repository.read']}];
  const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
  Object.assign(globalThis,{document,sessionStorage,window,fetch:async(url,options)=>{
@@ -72,6 +72,15 @@ test('account page starts consent with the selected provider permissions',async 
    const response=Response.json({ok:true,accounts:accountRecords});
    if(holdOldAccounts&&!finishOldRead)return new Promise(resolve=>{finishOldRead=()=>resolve(response);});
    return response;
+  }
+  if(path==='/handoff/cloudflare/resume'){
+   assert.deepEqual(body,{});
+   if(!cloudflareRecoveryAvailable)return Response.json({ok:true,status:'missing'});
+   const account={id:'cf-autorecovered',provider:'cloudflare',label:'recovered@example.test',
+    status:'connected',expiresAt:Date.now()+600000,grantedActions:['account.read']};
+   accountRecords=[...accountRecords,account];
+   cloudflareRecoveryAvailable=false;
+   return Response.json({ok:true,status:'connected',account});
   }
   if(path==='/handoff/google/resume'){
    assert.deepEqual(body,{});
@@ -91,6 +100,10 @@ test('account page starts consent with the selected provider permissions',async 
  const container=new Element('main'),panel=mountConnections(container,{token:async()=>'sq_'+'a'.repeat(40)});
  await panel.refresh();
  const descendants=node=>[node,...(node.childNodes||[]).flatMap(descendants)];
+ assert.equal(calls.filter(call=>call.path==='/handoff/cloudflare/resume').length,1,
+  'Account Connections should try recovering an already received Cloudflare grant even without return URL');
+ assert.equal(calls.some(call=>call.path==='/start'),false,
+  'Recovering existing Cloudflare authorization never starts a new sign-in');
  assert.equal(descendants(container).some(node=>node.dataset?.provider==='github'),false,'Connected GitHub must not show a second sign-in button');
  assert.ok(descendants(container).some(node=>node.textContent?.includes('GitHub signed in ✓ as www-infinity4')));
  const button=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
@@ -157,6 +170,19 @@ test('account page starts consent with the selected provider permissions',async 
  assert.equal(descendants(returned).some(node=>node.dataset?.provider==='google'),false);
  for(let i=0;i<8&&navigation!=='/bubbles.html';i++)await new Promise(setImmediate);
  assert.equal(navigation,'/bubbles.html','Verified lost-tab Google callback must return to Bubbles, not strand user in settings');
+ window.location.search='';
+ accountRecords=accountRecords.filter(row=>row.provider!=='cloudflare');
+ cloudflareRecoveryAvailable=true;
+ const beforeRecovery=calls.length;
+ const recoveredContainer=new Element('main'),recoveredPanel=mountConnections(recoveredContainer,{token:async()=>'sq_'+'a'.repeat(40)});
+ await recoveredPanel.refresh();
+ assert.equal(calls.slice(beforeRecovery).filter(call=>call.path==='/handoff/cloudflare/resume').length,1,
+  'Only one wallet-bound Cloudflare recovery attempt per Accounts page');
+ assert.equal(calls.slice(beforeRecovery).some(call=>call.path==='/start'),false);
+ assert.ok(descendants(recoveredContainer).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as recovered@example.test')),
+  'Recovered Cloudflare connection replaces its old sign-in button');
+ assert.equal(descendants(recoveredContainer).some(node=>node.dataset?.provider==='cloudflare'),false);
+
 });
 
 test('Android Cloudflare sign-in navigates this tab directly and never opens about:blank',async()=>{

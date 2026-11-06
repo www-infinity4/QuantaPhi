@@ -90,7 +90,8 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
    recoveredGoogle=true;
    return Response.json({ok:true,status:'connected',account:{id:'verified-google-id',provider:'google',label:'Google account'}});
   }
-  if(path==='/handoff/cloudflare/resume'&&cloudflareRecovery){
+  if(path==='/handoff/cloudflare/resume'){
+   if(!cloudflareRecovery)return Response.json({ok:true,status:'missing'});
    recoveredCloudflare=true;
    return Response.json({ok:true,status:'connected',account:{id:'verified-cloudflare-id',provider:'cloudflare',label:'Cloudflare account'}});
   }
@@ -337,11 +338,11 @@ test('Bubbles chat and Account Connections share the current Google and Cloudfla
  const shared=readFileSync(new URL('../bubbles-connections-gate.mjs',import.meta.url),'utf8');
  assert.doesNotMatch(source,/bubbles-connections\.mjs\?v=20261026-full-consent6/,'Old October connector cannot be loaded in chat');
  for(const content of [source,accounts,shared])
-  assert.match(content,/bubbles-connections\.mjs\?v=20261106-cloudflare-verified-status5/);
+  assert.match(content,/bubbles-connections\.mjs\?v=20261106-cloudflare-auto-recover6/);
  for(const content of [source,html])
-  assert.match(content,/bubbles-signin-gate\.mjs\?v=20261106-cloudflare-verified-status5/);
- assert.match(gate,/bubbles-connections-gate\.mjs\?v=20261106-cloudflare-verified-status5/);
- assert.match(html,/bubbles-ai\.js\?v=20261106-cloudflare-verified-status5/);
+  assert.match(content,/bubbles-signin-gate\.mjs\?v=20261106-cloudflare-auto-recover6/);
+ assert.match(gate,/bubbles-connections-gate\.mjs\?v=20261106-cloudflare-auto-recover6/);
+ assert.match(html,/bubbles-ai\.js\?v=20261106-cloudflare-auto-recover6/);
 });
 
 test('Cloudflare account list is authoritative for a verified wallet if the permission gate returns stale connection state',()=>{
@@ -368,6 +369,18 @@ test('Cloudflare connected in wallet-bound accounts hides the obsolete Cloudflar
  assert.equal(ui.get('bubblesCloudflareSignIn').hidden,true);
  assert.match(ui.get('bubblesConnectionSummary').textContent,/Cloudflare signed in/);
  assert.equal(ui.calls.some(c=>c.path==='/start'),false,'No duplicate OAuth flow');
+});
+
+test('main Bubbles automatically recovers an existing Cloudflare consent without launching another OAuth flow',async t=>{
+ const payload={...partialGate(),ok:true,walletVerified:true};
+ const ui=mountedGate(t,payload,{cloudflareRecovery:true});
+ await new Promise(setImmediate);
+ await new Promise(setImmediate);
+ assert.ok(ui.calls.some(call=>call.path==='/handoff/cloudflare/resume'),
+  'Chat checks for a server-sealed Cloudflare authorization even with no callback hint');
+ assert.equal(ui.calls.some(call=>call.path==='/start'),false,'No new Cloudflare login');
+ assert.match(ui.get('bubblesConnectionSummary').textContent,/Cloudflare signed in/);
+ assert.equal(ui.get('bubblesCloudflareSignIn').hidden,true);
 });
 
 test('Cloudflare received callback recovers verified account on Android without local pending state',async t=>{
