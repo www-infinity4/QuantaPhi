@@ -232,7 +232,7 @@ test('browser carries plural repair context to real owner source discovery and G
  assert.match(ui,/await suggestRepositoryTargets\(request,false\)/);
  const index=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  const bubbles=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
- for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261106-contextual-discovery1/);
+ for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261106-agent-runner1/);
 });
 
 
@@ -253,6 +253,30 @@ test('Bubbles waits for a real durable GitHub code-search receipt before decidin
  assert.equal(result.status,'code_search_results');
  assert.equal(result.results[0].path,'bubbles-ai.js');
  assert.deepEqual(events,['request:search_github_code','receipt:verified-reader-1','receipt:verified-reader-1']);
- assert.match(ui,/return settleGithubRead\(operation\);/);
+ assert.match(ui,/return settleGithubRead\(operation,\{showProgress:!preview\}\);/);
  assert.match(ui,/await settleGithubRead\(\{action:'list_repositories',mode:'read'\}\)/);
+});
+
+test('an ordinary chat repair reaches the tested repository runner, while direct inspection uses GitHub',async()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const start=ui.indexOf(' else if(!embedded&&!ownerGithubNonAction&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){');
+ const end=ui.indexOf(' else if(!embedded&&(isOwnerWorkRequest(request)',start);
+ const calls=[];
+ const run=new Function('submitRepositoryWork','directGithubOperation',
+  `return async (request,directRequest=false)=>{
+    const embedded=false,ownerGithubNonAction=false,githubCheck=false,createRepository=false,coderRequest=null,directCoding=true;
+    const repoCreateQualifiers=null,neuralCoding=false,repositoryAdvice=null,imageWorkEvidence='',activeCardEvidence=null,contextualPluralRepair=false;
+    const status={};let workEvidence='';
+    const humanReplies=async()=>({workReply:t=>t.status,githubReply:r=>r.status});
+    const recordBrainNotice=()=>{},maybeDelegateDirectOverflow=async()=>null;
+    if(false){} ${ui.slice(start,end)}
+    return workEvidence;
+  }`)(
+  async (request,approval,repository)=>{calls.push(['runner',request,approval,repository]);return {status:'ready'};},
+  async args=>{calls.push(['github',args.mode,args.repository]);return {ok:true,status:'inspected'};}
+ );
+ const repair='Fix the login route in www-infinity4/RecordB';
+ assert.equal(await run(repair),'ready');
+ assert.equal(await run('Inspect the source in www-infinity4/RecordB',true),'inspected');
+ assert.deepEqual(calls,[['runner',repair,'explicit-user-command','www-infinity4/RecordB'],['github','read','www-infinity4/RecordB']]);
 });

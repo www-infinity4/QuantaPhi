@@ -31,6 +31,18 @@ export function projectVerifiedJobTransitions(ticket,previous={}){
   const runUrl=safeRunUrl(p.runUrl||p.url||'',ticket.repository);
   const agent=safeText(job.agent||'',40);
   const stage=safeText(job.title||'',100);
+  for(const step of (Array.isArray(p.runnerSteps)?p.runnerSteps:[]).slice(-20)){
+   const runnerUrl=safeRunUrl(step?.runUrl,ticket.repository);
+   const label=safeText(step?.label,100);
+   if(!runnerUrl||!label||!/^\d+-[0-3]-(?:source_read|patch_prepared|checks_started|checks_passed|attempt_failed|pr_opened)$/.test(step?.id||''))continue;
+   const key=job.id+'|'+step.id;
+   markers[key]=true;
+   if(old[key])continue;
+   events.push({type:'job_step',repository:ticket.repository,agent,status:job.status,
+    stage:label+(step.attempt?' · attempt '+step.attempt:''),summary:safeText(step.summary,180),
+    runUrl:safeRunUrl(step.prUrl,ticket.repository)||runnerUrl,runnerPhase:step.phase,
+    source:'owner_ticket_snapshot',verifiedCompletion:false});
+  }
   const fingerprint=JSON.stringify([job.status,summary,runUrl]);
   markers[job.id]=fingerprint;
   if(old[job.id]===fingerprint)continue;

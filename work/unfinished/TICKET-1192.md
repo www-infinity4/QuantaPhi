@@ -73,3 +73,11 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 - Focused local check: 133 tests passed. Current production was observed serving #1730 and Brain v97. This checkpoint is source tested. The new browser and Brain releases, independently read-back live repo creation, and phone acceptance are pending. No owner coordinator lease was available in this session.
 - This slice has three acceptance steps: source tests passed, exact-head CI and guarded release pending, owner chat write/readback pending. Estimated slice progress 1/3. Overall progress and remaining sessions are unknown.
 - Next action: verify the reconciled PR head in GitHub CI, then stage the exact Brain source through the existing release gate.
+
+## November 6 CT · Bubbles chat to repository repair loop
+
+- The [owner release](https://github.com/www-infinity4/Moltnook/actions/runs/42188409507) and Cloudflare deployment readback confirmed Brain v98 at 100%. The later [signed benchmark](https://github.com/www-infinity4/Moltnook/actions/runs/42255359447) passed six of ten checks. Some GitHub file reads finished while their explanations remained partial.
+- Reconciled [PR #1737](https://github.com/www-infinity4/QuantaPhi/pull/1737) with current main. Normal source-changing chat requests now use the existing signed repository runner. GitHub reads, repository creation, and explicitly selected workflows retain their existing adapters. A saved ticket still needs a runner claim and actual result.
+- The runner uses a temporary checkout at a pinned commit. It prepares exact block edits, runs focused tests, and passes bounded terminal diagnostics to the next attempt. The new progress entries use the owner ticket, run identity, and source revision to show real attempts in the chat that submitted the repair.
+- Local verification covered a real test process exiting 1 and then 0 after a corrected patch. The harness supplied the candidate edits. Production acceptance still requires a signed owner chat request with an actual runner claim, test receipt, and pull request returned to that chat.
+- State is source tested. This is one additional documented session. Overall percentage and remaining sessions are unknown. The next action is to check the updated PR heads in CI and review them for the existing guarded release.

@@ -381,6 +381,29 @@ export class BrainClock extends DurableObject{
    await this.ctx.storage.put(lease.key,lease);
    await this.ctx.storage.put('repository-lease:'+lease.repository,lease);
    if(/^[a-f0-9]{40}$/.test(body.commitSha||'')){lease.commitSha=body.commitSha;await this.ctx.storage.put(lease.key,lease);}
+   if(engine&&lease.engine&&body.step){
+    // Project signed events onto the claimed owner ticket, with the same
+    // revision/run boundary as the eventual result. Progress never advances
+    // the job state or authorizes a write.
+    try{
+     const {appendRunnerStep}=await import('./runner-progress.mjs');
+     const db=this.env.WORK_DB,owner=this.env.WRITER_OWNER_HASH;
+     for(let i=0;i<2;i++){
+      const row=await db.prepare('SELECT context_json FROM work_tickets WHERE id=? AND owner_hash=?').bind(lease.ticketId,owner).first();
+      if(!row)break;
+      const context=JSON.parse(row.context_json);
+      const job=context.color_jobs?.find(job=>job.id===lease.jobId);
+      if(job?.status!=='working'||job.repository!==lease.repository||
+       await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}))!==lease.revision)break;
+      const progress=appendRunnerStep(job.progress,body.step,lease.repository,runUrl);
+      if(!progress)break;
+      job.progress=progress;
+      const saved=await db.prepare('UPDATE work_tickets SET context_json=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?')
+       .bind(JSON.stringify(context),Date.now(),lease.ticketId,owner,row.context_json).run();
+      if(saved.meta?.changes===1)break;
+     }
+    }catch{/* A missed progress observation must not abort actual execution. */}
+   }
    await this.emit(['gold-diggers-ink','blueberry','greenbeans','pink-panther','gpt-purple'].includes(body.agent)?body.agent:'greenbeans','gpt-purple','repair progress',lease.job.repository+' · '+message,runUrl);
    return Response.json({ok:true});
   }

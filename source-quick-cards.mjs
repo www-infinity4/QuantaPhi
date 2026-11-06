@@ -53,9 +53,115 @@ export const validSourceCard=card=>{
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
 function link(text,href,klass=''){const a=el('a',klass,text);a.href=href;a.target='_blank';a.rel='noopener noreferrer';return a}
 export const aiCardMode=id=>id==='gemini'?'gemini_first':id==='claude'?'gemini_claude_review':null;
+
+const GEMINI_CARD_API='https://infinity-rogers.marvaseater.workers.dev/v1/ai/card/gemini';
+function mountGeminiTools(root){
+ root.classList.add('iqc-gemini');
+ // The existing Quick Card article owns every control. No new viewer, feed
+ // ordering, modal, or Bubbles chat impersonation is introduced.
+ const status=el('p','iqc-ai-receipt','Checking Google account connection…');
+ status.setAttribute('role','status');
+ const oauth=el('button','iqc-gemini-connect','Sign in with Google');
+ oauth.type='button';oauth.disabled=true;
+ const select=el('select','iqc-gemini-account');
+ select.setAttribute('aria-label','Google account for Gemini');
+ select.hidden=true;
+ const transcript=el('div','iqc-gemini-transcript');
+ transcript.setAttribute('role','log');transcript.setAttribute('aria-label','Gemini responses in this quick card');
+ const form=el('form','iqc-ai-form'),input=el('textarea','iqc-ai-input');
+ input.rows=3;input.maxLength=1800;
+ input.placeholder='Message Gemini here…';
+ input.setAttribute('aria-label','Message Gemini');
+ const send=el('button','iqc-ai-send','Send to Gemini');send.type='submit';send.disabled=true;
+ form.append(input,send);root.append(oauth,select,form,status,transcript);
+ let module=null,client=null,history=[],inFlight=false;
+ function showLine(sender,value){
+  const line=el('p','iqc-gemini-line');
+  const who=el('strong','',sender+': ');
+  const message=el('span','',String(value).slice(0,6000));
+  line.append(who,message);transcript.append(line);
+  // Keep an accessible bounded conversation in this one card.
+  while(transcript.childNodes.length>16)transcript.firstChild.remove();
+ }
+ async function loadGoogleAccounts(){
+  try{
+   module=await import('/bubbles-connections.mjs?v=20261106-google-multi-cloudflare-full8');
+   client=new module.AccountConnections({token:()=>module.resolveConnectorWalletToken(window)});
+   const result=await client.call('/accounts');
+   const connected=(result.accounts||[]).filter(a=>a.provider==='google'&&a.status==='connected'&&
+     Number.isFinite(a.expiresAt)&&a.expiresAt>Date.now()+30000);
+   select.replaceChildren();
+   for(const account of connected){
+    const option=el('option','',account.label||'Google account');
+    option.value=account.id;select.append(option);
+   }
+   select.hidden=connected.length===0;
+   oauth.textContent=connected.length?'Connect another Google account':'Sign in with Google';
+   oauth.disabled=false;send.disabled=connected.length===0;
+   status.textContent=connected.length
+     ?'Google verified for '+connected.length+' account(s). Messages go to the Gemini API only when you tap Send.'
+     :'No Google account connected to this Bubbles wallet. Sign in here to use the Gemini card.';
+  }catch(error){
+   oauth.disabled=false;send.disabled=true;
+   status.textContent=error?.message==='verified_wallet_required'
+     ?'A verified Bubbles wallet session is required. Sign in to Bubbles first, then connect Google.'
+     :'Google connection could not be verified. No Gemini request was sent.';
+  }
+ }
+ oauth.addEventListener('click',async()=>{
+  if(inFlight)return;
+  oauth.disabled=true;status.textContent='Opening Google’s official authorization page…';
+  try{
+   if(!module||!client)await loadGoogleAccounts();
+   // Only a navigation target is saved, never account tokens or OAuth codes.
+   sessionStorage.setItem('bubbles:gemini-card-return:v1','1');
+   await client.connect('google',['identity.read'],async(error)=>{
+    if(error){sessionStorage.removeItem('bubbles:gemini-card-return:v1');status.textContent=error.message;await loadGoogleAccounts();}
+    else await loadGoogleAccounts();
+   });
+  }catch(error){
+   try{sessionStorage.removeItem('bubbles:gemini-card-return:v1')}catch{}
+   status.textContent='Google sign-in could not start: '+String(error.message||'connection unavailable').slice(0,140);
+  }finally{oauth.disabled=false;}
+ });
+ form.addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(inFlight||!client||!select.value)return;
+  const question=input.value.trim();
+  if(question.length<3)return;
+  inFlight=true;send.disabled=true;status.textContent='Contacting the real Gemini model…';
+  const chosen=select.value;
+  const oldHistory=history.slice(-8);
+  try{
+   const token=await module.resolveConnectorWalletToken(window);
+   const res=await fetch(GEMINI_CARD_API,{
+    method:'POST',cache:'no-store',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},
+    body:JSON.stringify({accountId:chosen,question,history:oldHistory})
+   });
+   const data=await res.json().catch(()=>({ok:false,error:'invalid_gemini_response'}));
+   if(!res.ok||data.ok!==true||data.provider!=='Gemini'||typeof data.answer!=='string')
+    throw Error(String(data.error||'Gemini did not return a verified response.'));
+   showLine('You',question);showLine('Gemini',data.answer);
+   history=[...oldHistory,{role:'user',text:question},{role:'model',text:data.answer.slice(0,1800)}].slice(-8);
+   input.value='';
+   status.textContent='Gemini response received · '+String(data.model||'model')+
+     (Number.isFinite(data.remaining)?' · '+data.remaining+' messages left today':'');
+  }catch(error){
+   const code=String(error.message||'').slice(0,100);
+   status.textContent=code==='gemini_not_configured'
+     ?'Gemini API key is not configured on the model Worker. No response was generated.'
+     :code==='google_connection_required'?'Google authorization expired. Reconnect this account.'
+     :code==='gemini_daily_limit'?'This Google account reached today’s Gemini card limit.'
+     :'Gemini request failed: '+code+'. No model success is claimed.';
+  }finally{inFlight=false;send.disabled=!select.value;}
+ });
+ select.addEventListener('change',()=>{history=[];transcript.replaceChildren();status.textContent='Google account selected. Your previous card conversation was cleared from this view.'});
+ void loadGoogleAccounts();
+}
 function askAiTools(root,card){
  if(!['gemini','claude','copilot'].includes(card.id))return;
  const area=el('div','iqc-ask-ai');
+ if(card.id==='gemini'){mountGeminiTools(area);root.append(area);return;}
  if(card.id==='copilot'){
   area.append(el('p','iqc-muted','Copilot runs through GitHub’s own agent interface, with repository permission and a reviewable PR. No silent issue assignment.'));
   root.append(area);return;

@@ -1,187 +1,80 @@
-/* Steve Miller Band — Book of Dreams (1977).
- * Use YouTube's own player and playlist; do not download or proxy music.
- * Sounded autoplay is attempted only when this original Oracle card is active.
- * Browser autoplay rules or video-owner restrictions may require a tap.
+/* Steve Miller music Quick Card · genuine shared Infinity Radio transport.
+ * Album artwork/info is editorial. This radio source is NOT a Steve Miller
+ * recording: the catalog currently contains separately licensed/free tracks.
  */
 (() => {
   'use strict';
-  const root = document.getElementById('steveMillerBookOfDreamsCard');
-  if (!root || root.dataset.smbMounted === 'true') return;
-  root.dataset.smbMounted = 'true';
+  const root=document.getElementById('steveMillerBookOfDreamsCard');
+  if(!root||root.dataset.smbMounted==='true')return;
+  root.dataset.smbMounted='true';
   root.classList.add('smb-album-card');
-  const ALBUM_PLAYLIST_ID = 'PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k';
-  const FIRST_VIDEO_ID = 'D6KCZXzLdVM';
-  const playlistURL = 'https://www.youtube.com/playlist?list=' + ALBUM_PLAYLIST_ID;
-
-  const style = document.createElement('style');
-  style.id = 'smb-album-player-style';
-  style.textContent = [
-    '#steveMillerBookOfDreamsCard{box-sizing:border-box;padding:16px;border:1px solid #d4d9dc;border-radius:17px;background:#fff;color:#24343e;}',
-    '#steveMillerBookOfDreamsCard .smb-heading{margin:0 0 4px;font-size:20px;font-weight:850;line-height:1.25;color:#203b45;}',
-    '#steveMillerBookOfDreamsCard .smb-subtitle{margin:0 0 12px;color:#52646b;font-size:13px;line-height:1.4;}',
-    '#steveMillerBookOfDreamsCard .smb-player-row{display:flex;gap:10px;align-items:center;padding:9px 0;}',
-    '#smbAlbumPlay{flex:none;width:48px;height:48px;min-height:48px;border:0;border-radius:50%;padding:0;display:grid;place-items:center;background:#136a76;color:#fff;font-size:22px;cursor:pointer;}',
-    '#smbAlbumPlay:focus-visible,#smbAlbumOpen:focus-visible{outline:3px solid #8050b4;outline-offset:3px;}',
-    '#steveMillerBookOfDreamsCard .smb-status{flex:1;min-width:0;color:#43646a;font-size:12px;line-height:1.5;overflow-wrap:anywhere;}',
-    '#steveMillerBookOfDreamsCard .smb-player-frame{position:relative;aspect-ratio:16/9;width:100%;border-radius:12px;overflow:hidden;background:#10181b;}',
-    '#steveMillerBookOfDreamsCard .smb-player-frame>iframe{display:block;width:100%;height:100%;border:0;}',
-    '#steveMillerBookOfDreamsCard .smb-player-placeholder{display:grid;place-items:center;height:100%;color:#e5eff0;text-align:center;padding:14px;font-size:14px;}',
-    '#smbAlbumOpen{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;margin-top:10px;border:1px solid #b5d6d7;border-radius:11px;background:#fff;color:#155164;text-decoration:none;font-weight:800;font-size:13px;}'
-  ].join('');
-  document.head.appendChild(style);
-
-  const create = (tag, cls, txt) => {
-    const node = document.createElement(tag);
-    if (cls) node.className = cls;
-    if (txt !== undefined) node.textContent = txt;
-    return node;
+  const album='https://www.youtube.com/playlist?list=PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k';
+  const make=(tag,cls,value)=>{
+    const el=document.createElement(tag);
+    if(cls)el.className=cls;
+    if(value!==undefined)el.textContent=value;
+    return el;
   };
-  const heading = create('h2', 'smb-heading', 'Steve Miller');
-  const subtitle = create('p', 'smb-subtitle', 'Book of Dreams · 1977 · Full album on YouTube');
-  const row = create('div', 'smb-player-row');
-  const button = create('button', '', '▶');
-  button.id = 'smbAlbumPlay';
-  button.type = 'button';
-  button.setAttribute('aria-label', 'Play Steve Miller Book of Dreams');
-  button.setAttribute('aria-pressed', 'false');
-  const status = create('span', 'smb-status', 'Ready · opens the full YouTube album when you reach this card');
-  status.setAttribute('role', 'status');
-  status.setAttribute('aria-live', 'polite');
-  row.append(button, status);
-  const frame = create('div', 'smb-player-frame');
-  frame.id = 'smbAlbumFrame';
-  const mount = create('div', '', '');
-  mount.id = 'smbAlbumYoutubeMount';
-  const placeholder = create('div', 'smb-player-placeholder', 'Book of Dreams · YouTube album player');
-  frame.append(mount, placeholder);
-  const open = create('a', '', 'Open full album on YouTube ↗');
-  open.id = 'smbAlbumOpen';
-  open.href = playlistURL;
-  open.target = '_blank';
-  open.rel = 'noopener noreferrer';
-  root.append(heading, subtitle, row, frame, open);
-
-  let player = null;
-  let ready = false;
-  let playing = false;
-  let pending = false;
-
-  function isActive() {
-    return !document.hidden && root.isConnected && !!root.closest('#oracleCardStage');
+  const css=make('style');
+  css.textContent=[
+   '#steveMillerBookOfDreamsCard{box-sizing:border-box;border:1px solid #cad7d8;border-radius:17px;background:#f7faf9;color:#203b45;padding:15px;font:inherit;}',
+   '#steveMillerBookOfDreamsCard .smb-head{display:flex;align-items:center;gap:12px;}',
+   '#steveMillerBookOfDreamsCard .smb-cover{width:86px;height:86px;border-radius:12px;object-fit:cover;background:#172830;flex:none;}',
+   '#steveMillerBookOfDreamsCard h2{margin:0 0 4px;font-size:21px;line-height:1.3;color:#203b45;}',
+   '#steveMillerBookOfDreamsCard .smb-sub{font-size:14px;line-height:1.5;color:#536e74;margin:0;}',
+   '#steveMillerBookOfDreamsCard .smb-radio{display:flex;align-items:center;gap:12px;padding:14px 0 6px;}',
+   '#steveMillerBookOfDreamsCard .smb-radio-play{display:grid;place-items:center;flex:none;width:48px;height:48px;border:0;border-radius:50%;background:#136a76;color:#fff;font-size:22px;cursor:pointer;}',
+   '#steveMillerBookOfDreamsCard .smb-radio-play:focus-visible{outline:3px solid #9c5dd6;outline-offset:3px;}',
+   '#steveMillerBookOfDreamsCard .smb-radio-name{font-size:16px;line-height:1.4;font-weight:800;}',
+   '#steveMillerBookOfDreamsCard .smb-radio-status{font-size:13px;line-height:1.45;color:#536e74;overflow-wrap:anywhere;}',
+   '#steveMillerBookOfDreamsCard .smb-credit{font-size:12px;color:#59747a;margin:4px 0 0;line-height:1.45;}',
+   '#steveMillerBookOfDreamsCard .smb-source{margin-top:8px;font-size:12px;}',
+   '#steveMillerBookOfDreamsCard .smb-source a{color:#155164;text-decoration:underline;}'
+  ].join('\n');
+  document.head.append(css);
+  const head=make('div','smb-head');
+  const cover=make('img','smb-cover');
+  cover.src='https://i.ytimg.com/vi/D6KCZXzLdVM/hqdefault.jpg';
+  cover.alt='Book of Dreams · Steve Miller Band video preview';
+  cover.loading='lazy';
+  const headText=make('div');
+  headText.append(make('h2','', 'Steve Miller'),make('p','smb-sub','Book of Dreams · 1977'));
+  head.append(cover,headText);
+  const radio=make('div','smb-radio');
+  const button=make('button','smb-radio-play','▶');
+  button.type='button';
+  button.id='smbAlbumPlay';
+  button.setAttribute('aria-label','Play Infinity Radio');
+  button.setAttribute('aria-pressed','false');
+  const radioCopy=make('div');
+  radioCopy.append(make('strong','smb-radio-name','∞ Infinity Radio'));
+  const status=make('div','smb-radio-status','Loading the shared Infinity Radio…');
+  status.setAttribute('role','status');
+  status.setAttribute('aria-live','polite');
+  radioCopy.append(status);
+  radio.append(button,radioCopy);
+  const note=make('p','smb-credit','The radio plays its own cleared catalog; this Steve Miller album is not in that catalog.');
+  const more=make('details','smb-source');
+  more.append(make('summary','','Album information'));
+  const source=make('a','','Book of Dreams · original YouTube album source');
+  source.href=album;
+  source.target='_blank';
+  source.rel='noopener noreferrer';
+  more.append(source);
+  root.append(head,radio,note,more);
+  function refresh(state){
+    const s=state||window.InfinityRadioQuick?.getState?.();
+    if(!s){status.textContent='Infinity Radio is initializing.';return;}
+    button.textContent=s.playing?'Ⅱ':'▶';
+    button.setAttribute('aria-label',s.playing?'Pause Infinity Radio':'Play Infinity Radio');
+    button.setAttribute('aria-pressed',String(!!s.playing));
+    status.textContent=s.ready?(s.status||'Tap to listen to Infinity Radio'):'Infinity Radio is loading its catalog.';
   }
-  function setPlaying(value) {
-    playing = !!value;
-    button.textContent = playing ? 'Ⅱ' : '▶';
-    button.setAttribute('aria-label', playing ? 'Pause Steve Miller Book of Dreams' : 'Play Steve Miller Book of Dreams');
-    button.setAttribute('aria-pressed', String(playing));
-  }
-  function loadYouTube() {
-    if (window.YT && typeof window.YT.Player === 'function') return Promise.resolve(window.YT);
-    if (window.__smbYouTubeAPIPromise) return window.__smbYouTubeAPIPromise;
-    const promise = new Promise((resolve, reject) => {
-      const earlier = window.onYouTubeIframeAPIReady;
-      window.onYouTubeIframeAPIReady = function () {
-        if (typeof earlier === 'function') {
-          try { earlier(); } catch (error) { console.warn('Previous YouTube callback failed', error); }
-        }
-        if (window.YT && typeof window.YT.Player === 'function') resolve(window.YT);
-        else reject(new Error('YouTube player did not initialize'));
-      };
-      const script = document.createElement('script');
-      script.src = 'https://www.youtube.com/iframe_api';
-      script.async = true;
-      script.onerror = () => reject(new Error('YouTube could not load'));
-      document.head.appendChild(script);
-    });
-    window.__smbYouTubeAPIPromise = promise;
-    return promise;
-  }
-  function autoplayIfActive() {
-    if (!isActive()) return;
-    if (player && ready) {
-      status.textContent = 'Starting album · if sound is blocked, tap ▶';
-      player.playVideo();
-      return;
-    }
-    if (pending || player) return;
-    pending = true;
-    status.textContent = 'Loading the full album from YouTube…';
-    loadYouTube().then(yt => {
-      if (!isActive()) return;
-      placeholder.remove();
-      player = new yt.Player(mount.id, {
-        videoId: FIRST_VIDEO_ID,
-        width: '100%',
-        height: '100%',
-        playerVars: {
-          listType: 'playlist',
-          list: ALBUM_PLAYLIST_ID,
-          autoplay: 1,
-          playsinline: 1,
-          controls: 1,
-          origin: window.location.origin
-        },
-        events: {
-          onReady() {
-            ready = true;
-            try {
-              player.getIframe().setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
-            } catch (_) {}
-            if (!isActive()) return;
-            status.textContent = 'Starting Book of Dreams · tap ▶ if sound is blocked';
-            player.playVideo();
-            window.setTimeout(() => {
-              if (isActive() && !playing) status.textContent = 'Autoplay blocked or still loading · tap ▶ to play';
-            }, 2000);
-          },
-          onStateChange(event) {
-            if (event.data === yt.PlayerState.PLAYING) {
-              if (!isActive()) { player.pauseVideo(); return; }
-              setPlaying(true);
-              status.textContent = 'Playing · Book of Dreams · Steve Miller Band';
-            } else if (event.data === yt.PlayerState.PAUSED) {
-              setPlaying(false);
-              status.textContent = 'Paused · Book of Dreams';
-            } else if (event.data === yt.PlayerState.ENDED) {
-              setPlaying(false);
-              status.textContent = 'Album finished · tap ▶ to replay';
-            }
-          },
-          onError() {
-            setPlaying(false);
-            status.textContent = 'YouTube playback unavailable here · use Open full album';
-          }
-        }
-      });
-    }).catch(() => {
-      status.textContent = 'YouTube player unavailable · open the album on YouTube';
-      setPlaying(false);
-    }).finally(() => { pending = false; });
-  }
-  button.addEventListener('click', () => {
-    if (!isActive()) return;
-    if (!ready || !player) { autoplayIfActive(); return; }
-    if (playing) {
-      player.pauseVideo();
-      setPlaying(false);
-      status.textContent = 'Paused · Book of Dreams';
-    } else {
-      status.textContent = 'Starting album · waiting for YouTube';
-      player.playVideo();
-    }
+  button.addEventListener('click',()=>{
+    const radio=window.InfinityRadioQuick;
+    if(!radio){status.textContent='Infinity Radio is not loaded; refresh the page.';return;}
+    refresh(window.InfinityRadioQuick.toggle());
   });
-  root.addEventListener('oracle:activate', () => autoplayIfActive());
-  document.addEventListener('oracle:card-deactivated', event => {
-    if (event.detail?.id !== root.id) return;
-    if (player && ready) player.pauseVideo();
-    setPlaying(false);
-    status.textContent = 'Paused · return to this card to play';
-  });
-  document.addEventListener('visibilitychange', () => {
-    if (!document.hidden) return;
-    if (player && ready) player.pauseVideo();
-    setPlaying(false);
-    status.textContent = 'Paused while the page is hidden';
-  });
-  if (isActive()) autoplayIfActive();
+  window.addEventListener('quantaphi:infinity-radio-state',e=>refresh(e.detail));
+  refresh();
 })();

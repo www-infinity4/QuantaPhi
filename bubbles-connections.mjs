@@ -258,7 +258,7 @@ export function mountConnections(container,{token}) {
   refresh.type='button';status.setAttribute('role','status');
   const scopes=element('fieldset',''),googleStatus=element('p','','ba-muted');
   googleStatus.setAttribute('role','status');
-  scopes.append(element('legend','Google access'),element('p','Choose what Bubbles can read, then sign in.','ba-muted'));
+  scopes.append(element('legend','Google access'),element('p','Basic Google sign-in is available without Gmail or Drive. Select any extra account access you want Bubbles to request.','ba-muted'));
   scopes.addEventListener('change',()=>{googleStatus.textContent='';});
   cancel.addEventListener('click',()=>{
     client.cancelConnect();clearProviderReturn();cancel.hidden=true;googleStatus.textContent='';
@@ -372,13 +372,16 @@ export function mountConnections(container,{token}) {
           const connected=element('p',providerName+' signed in ✓'+(existing.label?' as '+existing.label:''),'ba-provider-connected');
           connected.setAttribute('role','status');
           card.append(connected);
-          // Verified sign-in is complete. Optional project grants belong in
-          // settings, never as another login button.
-          catalog.append(card);
-          continue;
+          // Cloudflare and GitHub stay signed in; a second Google identity
+          // can be authorized without disconnecting this wallet's first one.
+          if(provider.id!=='google'){
+            catalog.append(card);
+            continue;
+          }
         }
         if(upgrade)card.append(element('p','Project tools require separate Cloudflare approval.','ba-muted'));
-        const button=element('button',upgrade?'Review Cloudflare project access':'Sign in with '+providerName,'ba-control');
+        const button=element('button',provider.id==='google'&&existing?'Connect another Google account':
+          upgrade?'Review Cloudflare project access':'Sign in with '+providerName,'ba-control');
         button.type='button';button.disabled=Boolean(client.pending);button.dataset.provider=provider.id;
         button.classList.add('ba-signin-button');
         button.setAttribute('aria-label',button.textContent);
@@ -405,14 +408,12 @@ export function mountConnections(container,{token}) {
         }
         button.addEventListener('click',async()=>{
           if(client.pending){signInStatus.textContent='Finish or cancel the current sign-in first.';return;}
-          // Connecting an account needs only the two registered identity
-          // scopes. A 386-scope project toolkit is a separate explicit review.
-          // Never send a user to a huge owner.full consent URL for sign-in.
-          const fullCloudflare=provider.id==='cloudflare'&&upgrade&&availableActions.includes('owner.full');
-          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):
-            provider.id==='cloudflare'&&!upgrade?['account.read']:
-            fullCloudflare?['owner.full']:availableActions;
-          if(!actions.length){signInStatus.textContent='Choose at least one Google permission above to continue.';return;}
+          // Google identity-only consent never requires Gmail or Drive.
+          // The Cloudflare OAuth app's full, server-allowed toolkit is reviewed
+          // in the SAME sign-in when available. Provider consent is mandatory.
+          const fullCloudflare=provider.id==='cloudflare'&&availableActions.includes('owner.full');
+          const actions=provider.id==='google'?['identity.read',...selections.filter(c=>c.checked).map(c=>c.value)]:
+            provider.id==='cloudflare'?(fullCloudflare?['owner.full']:['account.read']):availableActions;
           button.disabled=true;button.setAttribute('aria-busy','true');
           signInStatus.textContent=fullCloudflare?
             'Opening Cloudflare to review the requested project access…':
@@ -714,8 +715,18 @@ export function mountConnections(container,{token}) {
         }catch{}
       }
       await load();
-      if(verifiedReturn&&typeof window.location?.replace==='function')
-        window.location.replace('/bubbles.html');
+      if(verifiedReturn&&typeof window.location?.replace==='function'){
+        let destination='/bubbles.html';
+        if(returnProvider==='google'){
+          try{
+            if(sessionStorage.getItem('bubbles:gemini-card-return:v1')==='1'){
+              sessionStorage.removeItem('bubbles:gemini-card-return:v1');
+              destination='/?gemini=ready#gemini';
+            }
+          }catch{}
+        }
+        window.location.replace(destination);
+      }
       else status.textContent='Connected '+account.label+'.';
     }
   },{recoverGoogle,recoverCloudflare})){cancel.hidden=false;status.textContent='Finishing account authorization securely…';}

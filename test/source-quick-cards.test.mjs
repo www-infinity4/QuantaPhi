@@ -36,7 +36,7 @@ test('Google and Bing start real engine requests inside the Infinity Viewer',()=
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261102-cardimages1/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261106-gemini-oncard1/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
@@ -70,7 +70,9 @@ test('provider permissions and content limitations remain explicit',()=>{
  assert.ok(!launcher.includes('localStorage.setItem'));
  assert.ok(!launcher.includes('navigator.geolocation'));
  assert.ok(!launcher.includes('navigator.mediaDevices.getUserMedia'));
- assert.ok(!launcher.includes('fetch('));
+ assert.match(launcher,/fetch\(GEMINI_CARD_API/,'Gemini is allowed to use its verified in-card API route');
+ assert.match(launcher,/client\.call\('\/accounts'\)/,'Google accounts come from wallet-verified connection service');
+ assert.doesNotMatch(launcher,/fetch\(\s*['\"]https:\/\/gemini\.google\.com/,'No consumer Gemini cookie or session scraping');
 });
 
 test('cross-origin links cannot white-screen the local Infinity iframe',()=>{
