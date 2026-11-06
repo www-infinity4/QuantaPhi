@@ -244,18 +244,11 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     return;
    }
    if(provider.connected)return;
-   // A registered owner.full permission means the OAuth client currently
-   // requires the full scope inventory at consent time. Do not request an
-   // incompatible two-scope subset and bounce back to the login button.
-   const fullCloudflare=id==='cloudflare'&&provider.authorizationActions.includes('owner.full');
-   const authorizationActions=fullCloudflare?['owner.full']:
-    id==='cloudflare'&&!provider.connected?['account.read']:provider.authorizationActions;
-   const upgrading=id==='cloudflare'&&provider.connected;
+   // Sign-in must open Cloudflare's small account consent. Large project
+   // scopes require separate, explicit permission review after verification.
+   const authorizationActions=id==='cloudflare'?['account.read']:provider.authorizationActions;
    oauthInProgress=true;updateButtons();
-   setStatus(fullCloudflare?
-    'Opening Cloudflare to review the requested project access…':
-    upgrading?'Opening Cloudflare to review permissions…':
-    'Continue on '+(id==='github'?'GitHub':'Cloudflare')+' to sign in.');
+   setStatus('Opening '+(id==='github'?'GitHub':'Cloudflare')+' account authorization…');
    try{
     returnIssue='';
     clearReturnNote();
