@@ -157,7 +157,7 @@ test('authenticated direct GitHub read displays real start and pending states wi
   CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},
   window:{dispatchEvent:event=>events.push(event.detail)},
   bubblesFetch:async()=>({ok:true,json:async()=>({ok:true,status:'working'})}),
-  watchDirectGithubReceipt:()=>{}
+  rememberRecentGithubWork:()=>{},watchDirectGithubReceipt:()=>{}
  };
  vm.createContext(ctx);
  vm.runInContext(source.slice(begin,end)+'\nthis.runDirect=directGithubOperation;',ctx);
@@ -190,7 +190,7 @@ test('direct GitHub read reports server receipt only for matching verified backe
   CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},
   window:{dispatchEvent:event=>events.push(event.detail)},
   bubblesFetch:async()=>({ok:true,json:async()=>backend}),
-  watchDirectGithubReceipt:()=>{}
+  rememberRecentGithubWork:()=>{},watchDirectGithubReceipt:()=>{}
  };
  vm.createContext(ctx);
  vm.runInContext(source.slice(begin,end)+'\nthis.runDirect=directGithubOperation;',ctx);
