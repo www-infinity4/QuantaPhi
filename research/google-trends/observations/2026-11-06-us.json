@@ -3,16 +3,156 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T18:02:51.081594Z",
+  "checked_at": "2026-11-06T18:31:14.286458Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "katherine ryan",
+      "query": "antonio brown",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T18:10:00Z",
+      "related_news_urls": [
+        "https://www.seattletimes.com/nation-world/nation/judge-accepts-ex-nfl-star-antonio-browns-guilty-plea-to-reduced-charge-sentences-probation/",
+        "https://www.nbcnews.com/news/us-news/antonio-brown-avoids-jail-pleading-guilty-lesser-change-miami-shooting-rcna607840",
+        "https://www.foxnews.com/outkick-sports/judge-accepts-former-pittsburgh-steelers-star-wideout-antonio-brown-plea-deal-sentenced-probation"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9DLt7rvwhUFpZlBQ0zAaBnjpOrPUY_WWBAVz5Zav5JcrWSgYA2mDuHcTOXdA",
+      "image_credit": "The Seattle Times",
+      "news": [
+        {
+          "url": "https://www.seattletimes.com/nation-world/nation/judge-accepts-ex-nfl-star-antonio-browns-guilty-plea-to-reduced-charge-sentences-probation/",
+          "title": "Judge accepts ex-NFL star Antonio Brown’s guilty plea to reduced charge, sentences probation",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9DLt7rvwhUFpZlBQ0zAaBnjpOrPUY_WWBAVz5Zav5JcrWSgYA2mDuHcTOXdA"
+        },
+        {
+          "url": "https://www.nbcnews.com/news/us-news/antonio-brown-avoids-jail-pleading-guilty-lesser-change-miami-shooting-rcna607840",
+          "title": "Antonio Brown avoids jail by pleading guilty to lesser change in Miami shooting",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7dKNLgebGV56m_nK_sLhUkvOwNmoF67aNXRotnoFfzWE-9g67UJt4Bt74Ufw"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/judge-accepts-former-pittsburgh-steelers-star-wideout-antonio-brown-plea-deal-sentenced-probation",
+          "title": "Judge accepts former Pittsburgh Steelers star wideout Antonio Brown's plea deal, sentenced to probation",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEFTlrbpns75K3MkGviyMNrINo9MSXTDqxtrpAXgQ0poiOlTEXnaIMUSoPg7c"
+        }
+      ]
+    },
+    {
+      "query": "paige bueckers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T17:50:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25529943-paige-bueckers-and-azzi-fudd-announce-breakup-reveal-split-happened-wnba-season",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/paige-bueckers-azzi-fudd-reveal-175740000.html",
+        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/paige-bueckers-azzi-fudd-wnba-dallas-wings-22516707.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlFhqoqWcX02y8lGGSfZg_oW26iVAMPJk06V9UJHrze9d9VLISOwZTmkJBNjg",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25529943-paige-bueckers-and-azzi-fudd-announce-breakup-reveal-split-happened-wnba-season",
+          "title": "Paige Bueckers and Azzi Fudd Announce Breakup, Reveal Split Happened Before WNBA Season",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlFhqoqWcX02y8lGGSfZg_oW26iVAMPJk06V9UJHrze9d9VLISOwZTmkJBNjg"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/paige-bueckers-azzi-fudd-reveal-175740000.html",
+          "title": "Paige Bueckers and Azzi Fudd reveal update on relationship status with honest message",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaCjoOKq6QGfkfm9hL314KOHHVFg3XDnbf1v3T_cxFaSnvL53-VtG2_NhuFwE"
+        },
+        {
+          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/paige-bueckers-azzi-fudd-wnba-dallas-wings-22516707.php",
+          "title": "Former UConn stars Paige Bueckers and Azzi Fudd announce they are no longer a couple",
+          "publisher": "CT Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpkp97ej8EvnIgZd64u87s_EkolUjhCCWd4eCjF2A5C5bapwqNTStg1YIH_Cw"
+        }
+      ]
+    },
+    {
+      "query": "burger king holiday countdown calendar",
       "approx_searches": "1000+",
+      "published_at": "2026-11-06T17:50:00Z",
+      "related_news_urls": [
+        "https://mashable.com/life/burger-king-2026-holiday-advent-calendar-how-to-buy",
+        "https://www.allrecipes.com/burger-king-2026-advent-calendar-12238679",
+        "https://news.bk.com/blog-posts/big-holiday-cheer-comes-in-mini-packages-with-the-return-of-the-burger-king-r-advent-calendar"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbEHyuW3QSdWkVGP9OUOrT7zpdIbg465gnbRNxOhgEgAB2FdJDNq0Jb3rYy38",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/life/burger-king-2026-holiday-advent-calendar-how-to-buy",
+          "title": "Burger King’s viral holiday advent calendar is back: How to buy the internet’s mini obsession",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbEHyuW3QSdWkVGP9OUOrT7zpdIbg465gnbRNxOhgEgAB2FdJDNq0Jb3rYy38"
+        },
+        {
+          "url": "https://www.allrecipes.com/burger-king-2026-advent-calendar-12238679",
+          "title": "Burger King Has a New Version of the Holiday Item That Sold Out in 5 Minutes",
+          "publisher": "Allrecipes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjJpWGx-Cl0FbGqxOzsjdEaV5iIms5WcUpj8rp2ZGWz0efKxOeacgbfF7ut0w"
+        },
+        {
+          "url": "https://news.bk.com/blog-posts/big-holiday-cheer-comes-in-mini-packages-with-the-return-of-the-burger-king-r-advent-calendar",
+          "title": "Big Holiday Cheer Comes In Mini Packages With The Return Of The Burger King® Advent Calendar",
+          "publisher": "Burger King Newsroom",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRexqNFrdQOUYrKUcpC0e-sNLgogVOfH8CgSi4YHwEUlnzUnZijn7aAhA-pW-w"
+        }
+      ]
+    },
+    {
+      "query": "orcl stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T17:50:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/fionariley/2026/11/05/larry-ellison-falls-out-of-top-10-in-billionaire-rankings-as-oracle-plunges/",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/oracle-stock-slides-as-ai-trade-swoons-Iia21sCdA4aesmmwVkEz",
+        "https://seekingalpha.com/article/4962446-oracle-the-party-is-almost-over"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROVnlt6yOS8xd5Ys-dPItv-qo0ZONB74Wh0o8a5zCgLEWKX6gDlIDVLLBeBVc",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/fionariley/2026/11/05/larry-ellison-falls-out-of-top-10-in-billionaire-rankings-as-oracle-plunges/",
+          "title": "Larry Ellison Falls Out Of Top 10 In Billionaire Rankings As Oracle Plunges",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROVnlt6yOS8xd5Ys-dPItv-qo0ZONB74Wh0o8a5zCgLEWKX6gDlIDVLLBeBVc"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/oracle-stock-slides-as-ai-trade-swoons-Iia21sCdA4aesmmwVkEz",
+          "title": "Oracle Stock Slides as AI Trade Swoons",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWwhm_cjqBBBXtQacyp8GMYLMdMO_ilhILp8pe99RUd_Mu-xmsfCpZOWOGCLg"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4962446-oracle-the-party-is-almost-over",
+          "title": "Oracle: The Party Is Almost Over (NYSE:ORCL)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfkN66Ea6zZOmR6U6cj-xbyPoG27A6hWsd0_29DYi-aa5LRe7LFKi3rszYgug"
+        }
+      ]
+    },
+    {
+      "query": "katherine ryan",
+      "approx_searches": "2000+",
       "published_at": "2026-11-06T16:50:00Z",
       "related_news_urls": [
         "https://www.yahoo.com/news/world/article/russell-brand-faces-significant-prison-sentence-after-rape-and-sexual-assault-conviction-110123123.html",
-        "https://news.sky.com/story/katherine-ryan-feels-grief-and-relief-over-brand-guilty-verdict-13608891",
+        "https://www.theguardian.com/commentisfree/2026/nov/06/russell-brand-justice-comedy-other-abusers",
         "https://www.reuters.com/world/uk/russell-brand-convicted-rape-now-likely-face-more-allegations-says-uk-police-2026-11-06/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbOZO0aPXAnH4RQmk7hKnDqGxxSrUNjd7Y5CtwOPvn4EVffU9vkaiu6W8KoJg",
@@ -26,11 +166,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbOZO0aPXAnH4RQmk7hKnDqGxxSrUNjd7Y5CtwOPvn4EVffU9vkaiu6W8KoJg"
         },
         {
-          "url": "https://news.sky.com/story/katherine-ryan-feels-grief-and-relief-over-brand-guilty-verdict-13608891",
-          "title": "Katherine Ryan feels 'grief and relief' over Brand guilty verdict",
-          "publisher": "Sky News",
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/06/russell-brand-justice-comedy-other-abusers",
+          "title": "Russell Brand has finally faced justice. But other abusers in comedy are still hiding in plain sight | Sarah Solemani",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR05ft23uVBpe3ABP1xO8dL8tzG4w3z2YPRR5_AeDhMGMSnJrwLux-l8dNIFbg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWUjM4t5VTu9PyB5HyUPfaO7uldVb8tzcGGtxROXujhFxn2zwmIkx7I21MKCE"
         },
         {
           "url": "https://www.reuters.com/world/uk/russell-brand-convicted-rape-now-likely-face-more-allegations-says-uk-police-2026-11-06/",
@@ -78,7 +218,7 @@
     },
     {
       "query": "treveyon henderson",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-06T15:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50400016/patriots-treveyon-henderson-affected-neurological-symptoms",
@@ -107,7 +247,7 @@
           "title": "Patriots' TreVeyon Henderson provides update on 'unknown and unexplainable' illness",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8kY306tHifBfHaa5GfAAS4X52xnXkPGDBOaLs9p5g-eKLDhgsFNgEpnm5las"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyQhXFM1mytAl5iRRf9_Yps7BYh8igAJ-r39Lj4ohKTdYlbvg_wMrRQPMqWbI"
         }
       ]
     },
@@ -117,8 +257,8 @@
       "published_at": "2026-11-06T15:20:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/06/us/thomas-markle-arrest",
-        "https://www.cbsnews.com/chicago/video/meghan-markles-father-arrested-for-child-porn-possession/",
-        "https://www.nytimes.com/2026/11/06/us/thomas-markle-arrested-child-sexual-abuse.html"
+        "https://www.wfla.com/news/polk-county/fbi-found-film-negatives-of-thomas-markle-meghan-markles-father-with-nude-children-affidavit-says/",
+        "https://apnews.com/article/meghan-markle-father-abuse-allegations-0bf10d1c7d915b82048c04bd9cca9fc5"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbSQXdnaONgoIK6yJKiMyATxoOlpwk7N7_f12l8HkZL087uWbRY5BdJJBDQYQ",
       "image_credit": "CNN",
@@ -131,18 +271,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbSQXdnaONgoIK6yJKiMyATxoOlpwk7N7_f12l8HkZL087uWbRY5BdJJBDQYQ"
         },
         {
-          "url": "https://www.cbsnews.com/chicago/video/meghan-markles-father-arrested-for-child-porn-possession/",
-          "title": "Meghan Markle's father arrested for child porn possession",
-          "publisher": "CBS News",
+          "url": "https://www.wfla.com/news/polk-county/fbi-found-film-negatives-of-thomas-markle-meghan-markles-father-with-nude-children-affidavit-says/",
+          "title": "FBI found film negatives of Thomas Markle, Meghan Markle’s father, with nude children, affidavit says",
+          "publisher": "WFLA",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQt_VoJHO3hIFct5mh0AKCHZzH465eeXPdBu81sC56Y2jAzQ9Q8FXpc8TjvtN8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0mBcXMLAh16zjjTNMWVWjFy8OgbapYXkMPlfjtr1VzT4Deo6nvg3EadYqGAI"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/06/us/thomas-markle-arrested-child-sexual-abuse.html",
-          "title": "Meghan Markle’s Father Is Arrested on Child Sex Abuse Material Charges",
-          "publisher": "The New York Times",
+          "url": "https://apnews.com/article/meghan-markle-father-abuse-allegations-0bf10d1c7d915b82048c04bd9cca9fc5",
+          "title": "Meghan Markle's estranged father arrested and charged with possessing child sexual abuse materials",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnsKPdD6Q_vPT47ffQTknrbua3KgZtIgmMm7_zr6GQNSgzANLzzzsBKeC2KdQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGePV5Ql1bs3cS_MTN2WhxOcESn3p0hAJj-06zZz96zM9UZd0RF9vFQI5fqYE"
         }
       ]
     },
@@ -151,19 +291,19 @@
       "approx_searches": "500+",
       "published_at": "2026-11-06T15:20:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-had-only-2-090102789.html",
+        "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-buy-now-182000414.html",
         "https://seekingalpha.com/article/4963996-broadcom-and-the-ai-panic-the-market-has-lost-its-mind",
         "https://www.benzinga.com/markets/tech/26/11/62976767/broadcom-stock-is-surging-friday-whats-going-on"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS48Ma9dglLCxIaCZ4yNtI5nKXbuJLyuiEfXNDu6_mKMvRJsQrjPEDo60wx6pw",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTYmTI9J4PtiM8Zd5YN3yrSvpKpccV7EA-fHiRUNYoWvioC-ZZhvXCygz7BU",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-had-only-2-090102789.html",
-          "title": "Broadcom Stock Has Had Only 2 Losing Years Since 2009. 2026 Is on Pace to Be the 3rd.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-buy-now-182000414.html",
+          "title": "Is Broadcom Stock a Buy Now?",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS48Ma9dglLCxIaCZ4yNtI5nKXbuJLyuiEfXNDu6_mKMvRJsQrjPEDo60wx6pw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTYmTI9J4PtiM8Zd5YN3yrSvpKpccV7EA-fHiRUNYoWvioC-ZZhvXCygz7BU"
         },
         {
           "url": "https://seekingalpha.com/article/4963996-broadcom-and-the-ai-panic-the-market-has-lost-its-mind",
@@ -186,20 +326,13 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-06T15:10:00Z",
       "related_news_urls": [
-        "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b",
         "https://www.cnn.com/2026/11/06/investing/wall-street-mayhem-complicates-anthropics-already-complicated-ipo",
+        "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b",
         "https://www.cnbc.com/2026/11/06/anthropic-ipo-kalshi-post-midterms-ai-sell-off.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnX1T4B_1jJQrQnTIFTyuzIk79nkaJ-8CWp10UnaEiQy22MkHe_Z_996grLgA",
-      "image_credit": "WSJ",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhtQJw7DJPxTAUEjlwCXV7IgB32bH2G3vg_b_DfiRACFzYYrY08artn8qxqEo",
+      "image_credit": "CNN",
       "news": [
-        {
-          "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b",
-          "title": "Exclusive | Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnX1T4B_1jJQrQnTIFTyuzIk79nkaJ-8CWp10UnaEiQy22MkHe_Z_996grLgA"
-        },
         {
           "url": "https://www.cnn.com/2026/11/06/investing/wall-street-mayhem-complicates-anthropics-already-complicated-ipo",
           "title": "Market turmoil saps enthusiasm for the buzziest IPO of the year",
@@ -208,151 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhtQJw7DJPxTAUEjlwCXV7IgB32bH2G3vg_b_DfiRACFzYYrY08artn8qxqEo"
         },
         {
+          "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b",
+          "title": "Exclusive | Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnX1T4B_1jJQrQnTIFTyuzIk79nkaJ-8CWp10UnaEiQy22MkHe_Z_996grLgA"
+        },
+        {
           "url": "https://www.cnbc.com/2026/11/06/anthropic-ipo-kalshi-post-midterms-ai-sell-off.html",
           "title": "Anthropic IPO announcement odds drop on Kalshi following midterms and AI sell-off",
           "publisher": "CNBC",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSXAGtsDXffAHyHKwFBeT_sbFqhUAPDiCy-3hxLjpiSqPdTks3AcZfZKRAfuc"
-        }
-      ]
-    },
-    {
-      "query": "ciara",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T15:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glorilla-responds-ciaras-halloween-homage-171343402.html",
-        "https://wbxxfm.com/ixp/812/p/glorilla-brandon-ingram-ciara-bow-wow-like-you-halloween-costume/",
-        "https://www.si.com/onsi/athlete-lifestyle/clippers-brandon-ingram-rapper-glorilla-channel-ciara-bow-wow--epic-halloween"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeADe6P7DGUcqnw9n0_jXItI0tkbrwE_gULLPrZF9ZPwr-DrwaZfQu8K6Rq-4",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glorilla-responds-ciaras-halloween-homage-171343402.html",
-          "title": "GloRilla Responds to Ciara's Halloween Homage With Her Own Costume Tribute",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeADe6P7DGUcqnw9n0_jXItI0tkbrwE_gULLPrZF9ZPwr-DrwaZfQu8K6Rq-4"
-        },
-        {
-          "url": "https://wbxxfm.com/ixp/812/p/glorilla-brandon-ingram-ciara-bow-wow-like-you-halloween-costume/",
-          "title": "GloRilla, Boyfriend Dress Up Like Ciara, Bow Wow for Halloween",
-          "publisher": "K1025",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2GiJygo6qlMoZQFX1tjmbw1jYfba3EVT0Kpu0Fyyf2c0MUqseB6Fm6sjZRso"
-        },
-        {
-          "url": "https://www.si.com/onsi/athlete-lifestyle/clippers-brandon-ingram-rapper-glorilla-channel-ciara-bow-wow--epic-halloween",
-          "title": "Clippers Brandon Ingram and Rapper GloRilla Channel Ciara, Bow Wow for Epic Halloween Couple Tribute",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr_uwBJmOZ2OcCXaXLlOnYC7aM5IGQa6W2YE96m0b4HTKlMPzCWo1iAJSSMbY"
-        }
-      ]
-    },
-    {
-      "query": "dell stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T15:10:00Z",
-      "related_news_urls": [
-        "https://www.barchart.com/story/news/8674065/why-its-time-to-buy-the-pullback-in-dell-stock",
-        "https://finance.yahoo.com/technology/ai/articles/dell-technologies-dell-shares-just-121309049.html",
-        "https://www.investing.com/news/stock-market-news/why-is-dell-technologies-stock-plunging-today-93CH-5005083"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfFzFYIRf3BrqfB-qcE8y_pjFpkDxfw56iHUBsoUa0gNMssx_niU4_Gun9FM",
-      "image_credit": "Barchart.com",
-      "news": [
-        {
-          "url": "https://www.barchart.com/story/news/8674065/why-its-time-to-buy-the-pullback-in-dell-stock",
-          "title": "Why It’s Time to Buy the Pullback in Dell Stock",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfFzFYIRf3BrqfB-qcE8y_pjFpkDxfw56iHUBsoUa0gNMssx_niU4_Gun9FM"
-        },
-        {
-          "url": "https://finance.yahoo.com/technology/ai/articles/dell-technologies-dell-shares-just-121309049.html",
-          "title": "Dell Technologies (DELL) Shares Just Moved, So What Is Driving Attention Now?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA"
-        },
-        {
-          "url": "https://www.investing.com/news/stock-market-news/why-is-dell-technologies-stock-plunging-today-93CH-5005083",
-          "title": "Why is Dell Technologies stock plunging today?",
-          "publisher": "Investing.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSed6Y2w81xKE9OZ1Kx_arwm1dLZk9eR7rj_XrvUGgIRnPoC6NY-EQomNPSP4"
-        }
-      ]
-    },
-    {
-      "query": "vxus",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T15:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/spdw-vs-vxus-state-street-190302458.html",
-        "https://www.fool.com/coverage/etfs/2026/11/05/spdw-vs-eem-which-international-etf-offers-better-value-for-investors-seeking-global-stock-profits/",
-        "https://etfdb.com/equity-etf-content-hub/inside-ticker-iemg-vwo/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvFlm9rq3_tCff8QJatl4jkqX_IVD-yzWe1W4TEJLQN0KTB3JL3RQmGwVCIp0",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spdw-vs-vxus-state-street-190302458.html",
-          "title": "SPDW vs VXUS: Is a State Street or Vanguard International ETF the Better Fit for Your Portfolio?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvFlm9rq3_tCff8QJatl4jkqX_IVD-yzWe1W4TEJLQN0KTB3JL3RQmGwVCIp0"
-        },
-        {
-          "url": "https://www.fool.com/coverage/etfs/2026/11/05/spdw-vs-eem-which-international-etf-offers-better-value-for-investors-seeking-global-stock-profits/",
-          "title": "SPDW vs EEM: Which International ETF Offers Better Value for Investors Seeking Global Stock Profits?",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGmvt2T1NW26b9UUb2flOP5uE__Macz5dks7WzQsueiLqr4XR5kYDTt_GzwpA"
-        },
-        {
-          "url": "https://etfdb.com/equity-etf-content-hub/inside-ticker-iemg-vwo/",
-          "title": "Inside the Ticker: IEMG vs. VWO",
-          "publisher": "ETF Database",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7zZWGAyCdFYF3juVs7OKhGBt3xgq8O7XDRiv41m5gQ3qZ0EUuqU6_cqHBBVI"
-        }
-      ]
-    },
-    {
-      "query": "school",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T15:00:00Z",
-      "related_news_urls": [
-        "https://www.mercurynews.com/2026/11/06/sacred-heart-prep-menlo-school-rivalry-stanford-stadium/",
-        "https://www.eastbaytimes.com/2026/11/06/sacred-heart-prep-menlo-school-rivalry-stanford-stadium/",
-        "https://varsity.startribune.com/minnesota-high-school-football-playoffs-game-officials-player-safety/601908706"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1arp2JBOJBY8UBr8Q8p__L2KiMS1aOp0J5EbfCsIfnJjF6NsTmzgBTd_JHc",
-      "image_credit": "The Mercury News",
-      "news": [
-        {
-          "url": "https://www.mercurynews.com/2026/11/06/sacred-heart-prep-menlo-school-rivalry-stanford-stadium/",
-          "title": "Peninsula high school rivalry coming to Stanford Stadium",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1arp2JBOJBY8UBr8Q8p__L2KiMS1aOp0J5EbfCsIfnJjF6NsTmzgBTd_JHc"
-        },
-        {
-          "url": "https://www.eastbaytimes.com/2026/11/06/sacred-heart-prep-menlo-school-rivalry-stanford-stadium/",
-          "title": "Peninsula high school rivalry coming to Stanford Stadium",
-          "publisher": "East Bay Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbQJgHBODqchiUT3y3ZKi1mmxVGnKgOmfUZyf1KtlFfaVg41YXGCAM0py2YU8"
-        },
-        {
-          "url": "https://varsity.startribune.com/minnesota-high-school-football-playoffs-game-officials-player-safety/601908706",
-          "title": "Five observations on the high school football season",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Pl2ACXJ8CV4NRBr2Oqsj1OpcZ9yvhAf2JFaGqMaFX3LisPrHo4iKDdGo9Ts"
         }
       ]
     }
