@@ -3,76 +3,216 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T22:01:35.577904Z",
+  "checked_at": "2026-11-06T22:31:17.268591Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "casper ruud",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T21:40:00Z",
+      "query": "northeastern vs virginia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T22:10:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/magda-linette-vs-anastasia-zakharova-total-games-nov-07-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/mai-hontama-vs-zhibek-kulambayeva-set-1-winner-nov-05-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/simona-waltert-vs-lucrezia-stefanini-set-2-winner-nov-05-2026/"
+        "https://virginiasports.com/news/2026/11/5/no-9-mens-basketball-hosts-northeastern-on-friday-at-5-pm",
+        "https://augustafreepress.com/news/uva-basketball-9-hoos-set-to-host-northeastern-on-friday-at-jpj/",
+        "https://sports.yahoo.com/articles/watch-uva-basketball-vs-northeastern-204509581.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSHR68YPljuysHlLjLIPkRNRykFGVvuS2Ffp3zaZjeY3R1zxu4Y1gIE1gyRFk",
-      "image_credit": "Robinhood",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgc3hvhHPVWRUWwlPSlFEWw06kXXJIwP4eHDZmlNISVlci49uLeSgbzwrGzdQ",
+      "image_credit": "Virginia Sports",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/magda-linette-vs-anastasia-zakharova-total-games-nov-07-2026/",
-          "title": "November 7, 2026: Magda Linette vs Anastasia Zakharova: Total Games Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://virginiasports.com/news/2026/11/5/no-9-mens-basketball-hosts-northeastern-on-friday-at-5-pm",
+          "title": "No. 9 Men’s Basketball Hosts Northeastern on Friday at 5 p.m.",
+          "publisher": "Virginia Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSHR68YPljuysHlLjLIPkRNRykFGVvuS2Ffp3zaZjeY3R1zxu4Y1gIE1gyRFk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgc3hvhHPVWRUWwlPSlFEWw06kXXJIwP4eHDZmlNISVlci49uLeSgbzwrGzdQ"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/mai-hontama-vs-zhibek-kulambayeva-set-1-winner-nov-05-2026/",
-          "title": "November 5, 2026: Mai Hontama vs Zhibek Kulambayeva: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://augustafreepress.com/news/uva-basketball-9-hoos-set-to-host-northeastern-on-friday-at-jpj/",
+          "title": "UVA Basketball: #9 ‘Hoos set to host Northeastern on Friday at JPJ",
+          "publisher": "Augusta Free Press",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_P7z-kIqWmEQbnICM2j08ZYaI1wnk3qLB1ic678_Mxgr29wP4vaPzM0UZBN8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZgYFUOrT9xEUA3uhLQkWe37K3brp2LwI0VTtSnQ09Zzs7HUX8jO_QBZxNAoA"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/simona-waltert-vs-lucrezia-stefanini-set-2-winner-nov-05-2026/",
-          "title": "November 5, 2026: Simona Waltert vs Lucrezia Stefanini: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://sports.yahoo.com/articles/watch-uva-basketball-vs-northeastern-204509581.html",
+          "title": "How to watch UVA basketball vs. Northeastern and GAME THREAD",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpwVmguigl7aXzqeDbCTiSLI5cmYZGtMiJt9XxbOeFdKg_1jg6PHpd6frLrls"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAq9k74vFyMR_q_FjJpg_YArRBXUw78QypezrffZ7qNVATbwqw6IL7ynCI9pY"
         }
       ]
     },
     {
-      "query": "sevilla vs. alavés",
+      "query": "tulsa king square one",
       "approx_searches": "200+",
-      "published_at": "2026-11-06T21:40:00Z",
+      "published_at": "2026-11-06T22:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/confirmed-sevilla-alav-line-ups-190100249.html",
-        "https://www.comuniate.com/en/noticias/38887/predicted-alaves-line-up-according-to-the-sports-press",
-        "https://www.toffeeweb.com/int/sevilla-vs-deportivo-alaves-predictions-picks-odds-06-11-2026/"
+        "https://www.imdb.com/news/ni66087039/?ref_=nmnw_art_perm",
+        "https://www.yahoo.com/entertainment/tv/articles/tulsa-king-star-gretchen-mol-211654878.html",
+        "https://www.tvinsider.com/1301741/tulsa-king-season-4-episode-4-gretchen-mol-interview-exclusive/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRcu7LzDo6udk-uqQYXO59-RjvTfE147N6Kmn7fftXaYQ0BkYOKIaeA1AD72I",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpBZV5hw1tuWm1jg7glvbx_rhN9bkymB2UaTtCmOicfFVsUpphuenpmOncqmc",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/confirmed-sevilla-alav-line-ups-190100249.html",
-          "title": "Confirmed Sevilla and Alavés line-ups for LALIGA matchweek 12",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.imdb.com/news/ni66087039/?ref_=nmnw_art_perm",
+          "title": "‘Tulsa King’ Season 4 Episode 4 Release Date, Time, Where to Watch and Preview",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRcu7LzDo6udk-uqQYXO59-RjvTfE147N6Kmn7fftXaYQ0BkYOKIaeA1AD72I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpBZV5hw1tuWm1jg7glvbx_rhN9bkymB2UaTtCmOicfFVsUpphuenpmOncqmc"
         },
         {
-          "url": "https://www.comuniate.com/en/noticias/38887/predicted-alaves-line-up-according-to-the-sports-press",
-          "title": "Predicted Alaves line-up according to the sports press",
-          "publisher": "Comuniate",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/tulsa-king-star-gretchen-mol-211654878.html",
+          "title": "‘Tulsa King’ Star Gretchen Mol Talks Reunion With Stallone And Creatives For Series’ Fourth Season",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bSXMoCi27dhtabcqGepcZunY3xTKpLipjbJsCaxhVXwZ-MxJ1t5xMwVXiec"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvsgUfDO-W4slAuQIIz-plsYJ-IWhCM26XoahsPoY36y1uBbkOB3av-9LDpv0"
         },
         {
-          "url": "https://www.toffeeweb.com/int/sevilla-vs-deportivo-alaves-predictions-picks-odds-06-11-2026/",
-          "title": "Sevilla vs Deportivo Alavés Predictions, Picks & Odds – 06/11/2026",
-          "publisher": "ToffeeWeb",
+          "url": "https://www.tvinsider.com/1301741/tulsa-king-season-4-episode-4-gretchen-mol-interview-exclusive/",
+          "title": "‘Tulsa King’: Gretchen Mol Reveals Amanda’s True Intentions With Dwight Manfredi (Exclusive)",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiSSUqFaulMyt369l-m2qsn_lICnuVTffdFXbWELU9DKOH97iWRmRrdtTSk3A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9daV3V0X2qejFvhjWXGFyKoHEF__hxxqRhrxc_BwKxktn0zOBOsH8KJrVHYU"
+        }
+      ]
+    },
+    {
+      "query": "nuno borges",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T22:00:00Z",
+      "related_news_urls": [
+        "https://www.sofascore.com/pt/news/nuno-borges-atropela-ignacio-buse-por-6-0-6-2-no-atp-paris",
+        "https://www.abola.pt/noticias/nuno-borges-na-segunda-ronda-do-masters-1000-de-paris-2026110317065278106",
+        "https://bolamarela.pt/borges-e-os-primeiros-quartos-masters-1000-da-carreira-e-surreal-para-ser-honesto/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEFMtfW1szvEa5j8RyWr_z4uBCBSkBs-a8RFuzgFc917mpVh_wCcVqc-6tq_M",
+      "image_credit": "Sofascore",
+      "news": [
+        {
+          "url": "https://www.sofascore.com/pt/news/nuno-borges-atropela-ignacio-buse-por-6-0-6-2-no-atp-paris",
+          "title": "Nuno Borges atropela Ignacio Buse por 6-0, 6-2 no ATP Paris",
+          "publisher": "Sofascore",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEFMtfW1szvEa5j8RyWr_z4uBCBSkBs-a8RFuzgFc917mpVh_wCcVqc-6tq_M"
+        },
+        {
+          "url": "https://www.abola.pt/noticias/nuno-borges-na-segunda-ronda-do-masters-1000-de-paris-2026110317065278106",
+          "title": "Nuno Borges na segunda ronda do Masters 1000 de Paris",
+          "publisher": "A Bola",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoI43kF5E9cqWO3daOn8AX9MqXBf6LErxzdqT9AsDEeFcvWxmLULFD4ytYJNg"
+        },
+        {
+          "url": "https://bolamarela.pt/borges-e-os-primeiros-quartos-masters-1000-da-carreira-e-surreal-para-ser-honesto/",
+          "title": "Borges e os primeiros ‘quartos’ Masters 1000 da carreira: «É surreal, para ser honesto»",
+          "publisher": "Bola Amarela",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShD4HkuQrFMIIJ8GSsLJ-IgFYNhjrgP8gzmCJTZMcX9u1-WC9lsbxBYI7jrt8"
+        }
+      ]
+    },
+    {
+      "query": "loewe nightmare before christmas",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T22:00:00Z",
+      "related_news_urls": [
+        "https://www.wallpaper.com/fashion-beauty/loewe-tim-burton-disney-the-nightmare-before-christmas-collection",
+        "https://variety.com/2026/shopping/news/tim-burton-loewe-nightmare-before-christmas-collection-1236940243/",
+        "https://www.phantasmag.com/articles-6/tim-burton-loewe-the-nightmare-before-christmas-collection"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7yKGcBsBPWmscSSmMqf7vMlxgX_Cfo47HBKsgY82TlmyBA3iokqQUmnHpwgQ",
+      "image_credit": "Wallpaper*",
+      "news": [
+        {
+          "url": "https://www.wallpaper.com/fashion-beauty/loewe-tim-burton-disney-the-nightmare-before-christmas-collection",
+          "title": "Loewe’s ‘The Nightmare Before Christmas’ collection makes for spooky festive gifting",
+          "publisher": "Wallpaper*",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7yKGcBsBPWmscSSmMqf7vMlxgX_Cfo47HBKsgY82TlmyBA3iokqQUmnHpwgQ"
+        },
+        {
+          "url": "https://variety.com/2026/shopping/news/tim-burton-loewe-nightmare-before-christmas-collection-1236940243/",
+          "title": "Tim Burton and Loewe Team Up on Luxe ‘Nightmare Before Christmas’ Collection",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5ySTBu429G9LhyruNo36R2FuC1wcYTBX8lyznLIXpGUfcMRDn28fdjAvT_pQ"
+        },
+        {
+          "url": "https://www.phantasmag.com/articles-6/tim-burton-loewe-the-nightmare-before-christmas-collection",
+          "title": "Tim Burton Teams Up with Loewe for 'The Nightmare Before Christmas' Fashion Collection",
+          "publisher": "PHANTASMAG",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ6Xq282WudF4zDjPAe80i6cD8TnNUXG-Y-0V3jTTXw2UBSD_9ueiUkObFbGw"
+        }
+      ]
+    },
+    {
+      "query": "t1 vs kc",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T22:00:00Z",
+      "related_news_urls": [
+        "https://theloadout.com/karmine-corp-vs-t1",
+        "https://egamersworld.com/blog/karmine-corp-how-a-streamers-team-became-the-psg-o-um6iv44kI_",
+        "https://www.hotspawn.com/league-of-legends/news/kc-vs-t1-worlds-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-X7R8CpmLMlnG52iCMBayOXy7ZMGSvuG8yNhGKy5iRFWQNvD4Lolyb1ZLPJ4",
+      "image_credit": "The Loadout",
+      "news": [
+        {
+          "url": "https://theloadout.com/karmine-corp-vs-t1",
+          "title": "Karmine Corp vs T1: Why T1 Will Crush KC at Worlds 2026",
+          "publisher": "The Loadout",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-X7R8CpmLMlnG52iCMBayOXy7ZMGSvuG8yNhGKy5iRFWQNvD4Lolyb1ZLPJ4"
+        },
+        {
+          "url": "https://egamersworld.com/blog/karmine-corp-how-a-streamers-team-became-the-psg-o-um6iv44kI_",
+          "title": "Karmine Corp: The Parisian Phenomenon Challenging T1 at Worlds 2026",
+          "publisher": "EGamersWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQqugFO9dBKEuuid_ISCt0rsMxOdXLld4_NGh_ICfg6L04mHAo7iSWjvnNhyk"
+        },
+        {
+          "url": "https://www.hotspawn.com/league-of-legends/news/kc-vs-t1-worlds-2026",
+          "title": "KC Vs T1 Worlds 2026 Quarterfinals Preview: Europe’s Last Hope To Face T1",
+          "publisher": "Hotspawn",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7ijlB7KEYohtAVyXq__VZyW-NquiV1xL-57z45vDgcSFU-z68vHIM_V-S5y4"
+        }
+      ]
+    },
+    {
+      "query": "casper ruud",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T21:40:00Z",
+      "related_news_urls": [
+        "https://en.tennistemple.com/actu/players-defend-topspin-much-better-now-ruud-breaks/YbYT",
+        "https://www.tennisworlditalia.com/en/tennis/news/Interviste_Tennis/108398/casper-ruud-opens-up-last-year-i-no-longer-felt-like-getting-up-and-training/",
+        "https://www.puntodebreak.com/en/2026/11/06/ruud-explains-why-there-are-fewer-good-matches-in-modern-tennis"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz8aaVwx3FDYKhhuQlDGwwOBpzJlNJk-Pg2xaCq72AkBypmKt8FWRtr0OPFFk",
+      "image_credit": "TennisTemple",
+      "news": [
+        {
+          "url": "https://en.tennistemple.com/actu/players-defend-topspin-much-better-now-ruud-breaks/YbYT",
+          "title": "\"Players defend topspin much better now\": Ruud breaks down how tennis has changed",
+          "publisher": "TennisTemple",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz8aaVwx3FDYKhhuQlDGwwOBpzJlNJk-Pg2xaCq72AkBypmKt8FWRtr0OPFFk"
+        },
+        {
+          "url": "https://www.tennisworlditalia.com/en/tennis/news/Interviste_Tennis/108398/casper-ruud-opens-up-last-year-i-no-longer-felt-like-getting-up-and-training/",
+          "title": "Casper Ruud Opens Up: “Last Year, I No Longer Felt Like Getting Up and Training”",
+          "publisher": "Tennis World Italia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgP4OO4HYYBkC7ekcqJS0Bl4dIk5LffaduDIXjYAhGbDPDwnDUAdaUSr5u3PI"
+        },
+        {
+          "url": "https://www.puntodebreak.com/en/2026/11/06/ruud-explains-why-there-are-fewer-good-matches-in-modern-tennis",
+          "title": "Ruud explains why there are fewer good matches in modern tennis",
+          "publisher": "Punto de Break",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBf1dVTXn9uHcVAfFG93qqurSb2hgqwEf6K7EgB-jw6gdpbOsmysN8Pqd5dX8"
         }
       ]
     },
@@ -113,16 +253,23 @@
     },
     {
       "query": "kristaps porzingis",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-06T21:20:00Z",
       "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50402041/warriors-kristaps-porzingis-step-away-prioritize-health",
         "https://www.nytimes.com/athletic/7758885/2026/11/06/kristaps-porzingis-warriors-spurs-heat-nba/",
-        "https://sports.yahoo.com/articles/kristaps-porzingis-announces-stepping-away-213459550.html",
-        "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say"
+        "https://www.hoopsrumors.com/2026/11/kristaps-porzingis-announces-hes-stepping-away-from-basketball.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFojI2rnDf4q6WHMYT349x2pHEEzHQux0O1HH2OKqwNAVVxn50dRciaV3bZIg",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_580Np2CeBSmE1lAOmhKnxM3xDyC8nU9xY4z7cd0bwcKVZ0bEOQH0ubihDjU",
+      "image_credit": "ESPN",
       "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50402041/warriors-kristaps-porzingis-step-away-prioritize-health",
+          "title": "Warriors' Kristaps Porzingis to 'step away,' prioritize health",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_580Np2CeBSmE1lAOmhKnxM3xDyC8nU9xY4z7cd0bwcKVZ0bEOQH0ubihDjU"
+        },
         {
           "url": "https://www.nytimes.com/athletic/7758885/2026/11/06/kristaps-porzingis-warriors-spurs-heat-nba/",
           "title": "What I’m hearing on Kristaps Porziņģis and the Warriors, the Spurs’ lineup and more - The Athletic",
@@ -131,18 +278,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFojI2rnDf4q6WHMYT349x2pHEEzHQux0O1HH2OKqwNAVVxn50dRciaV3bZIg"
         },
         {
-          "url": "https://sports.yahoo.com/articles/kristaps-porzingis-announces-stepping-away-213459550.html",
-          "title": "Kristaps Porzingis announces he is stepping away from basketball",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.hoopsrumors.com/2026/11/kristaps-porzingis-announces-hes-stepping-away-from-basketball.html",
+          "title": "Kristaps Porzingis Announces He’s Stepping Away From Basketball",
+          "publisher": "Hoops Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPbJO0NTHDWwqtJKh9C793YVmWs-IVRBn5wlNCjLBHad5sO9e8mAuqSZ6qCkA"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say",
-          "title": "Warriors withholding payments to Porzingis, sources say",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvlgC-SNcSJBXKbFdfsQY8_91Cfa_dPPjjgp4MAhZmACIyUmYNNDlePyTVRMc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD589mUN3H-iHZVwdPXk8Cch_nN-HNjGon1Pd86bX_DwBIlesdgvCycYTahC8"
         }
       ]
     },
@@ -152,7 +292,7 @@
       "published_at": "2026-11-06T21:20:00Z",
       "related_news_urls": [
         "https://rdcsport.cd/news/coventry-frank-lampard-retour-goodison",
-        "https://www.ruedesjoueurs.com/paris-sportifs/le-petit-journal/74933-le-petit-journal-du-parieur-vendredi-6-novembre-2026.html",
+        "https://www.ouest-france.fr/sport/football/angleterre/premier-league-le-francais-thierno-barry-narrete-plus-de-marquer-avec-everton-6091a7ec-da2e-11f1-81f5-8e32b0872d76",
         "https://www.mediasportif.fr/2026/11/06/football-everton-coventry-chaine-streaming-ou-voir-le-match-et-a-quelle-heure-en-france/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmNUKdoK3WlyX0H-PPZU-wfhZnOcWzOvXUiiVx-etEOwMwOyWe_SHiy_qihU",
@@ -166,11 +306,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmNUKdoK3WlyX0H-PPZU-wfhZnOcWzOvXUiiVx-etEOwMwOyWe_SHiy_qihU"
         },
         {
-          "url": "https://www.ruedesjoueurs.com/paris-sportifs/le-petit-journal/74933-le-petit-journal-du-parieur-vendredi-6-novembre-2026.html",
-          "title": "Le Petit Journal du Parieur - Vendredi 6 novembre 2026",
-          "publisher": "RueDesJoueurs",
+          "url": "https://www.ouest-france.fr/sport/football/angleterre/premier-league-le-francais-thierno-barry-narrete-plus-de-marquer-avec-everton-6091a7ec-da2e-11f1-81f5-8e32b0872d76",
+          "title": "Premier League. Le Français Thierno Barry n’arrête plus de marquer avec Everton",
+          "publisher": "Ouest-France",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREvjpXeB9MKxxfxalQlymK1cPtv3AIpDo54Vfpko6xdvRMCZHT2e_Nu4-mZGA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpk5I7v28V2ejDrdrLxGu0Bu8810J_RLLdFfPP_rWqe-uGIIiAT4UdQ6IEOBM"
         },
         {
           "url": "https://www.mediasportif.fr/2026/11/06/football-everton-coventry-chaine-streaming-ou-voir-le-match-et-a-quelle-heure-en-france/",
@@ -183,7 +323,7 @@
     },
     {
       "query": "boston college basketball",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-06T21:10:00Z",
       "related_news_urls": [
         "https://www.sportsline.com/insiders/umass-vs-boston-college-odds-2026-college-basketball-picks-for-friday-nov-6-from-proven-model/",
@@ -215,120 +355,6 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rJPGg035kBWwIyB8FKa6AZ1GOGRR58c1cny8UZ5qCxD6_gQmCKS2Qw0IcnY"
         }
       ]
-    },
-    {
-      "query": "charlie woods florida state signing",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T21:10:00Z",
-      "related_news_urls": [
-        "https://people.com/tiger-woods-ex-elin-nordegren-pose-together-son-charlie-officially-commits-florida-state-12240606",
-        "https://golfweek.usatoday.com/story/sports/golf/college/2026/11/06/tiger-woods-applauds-charlie-woods-florida-state-mens-golf-cap/92644580007/",
-        "https://www.palmbeachpost.com/story/sports/college/golf/2026/11/06/charlie-woods-tiger-woods-florida-state-signing-day-ceremony-high-school-benjamin/92632308007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReuvT04AZf8ONObghI0OunT1S1G0T7ZFkbmSJGm-VufQFsR92k2fVxTNood_8",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/tiger-woods-ex-elin-nordegren-pose-together-son-charlie-officially-commits-florida-state-12240606",
-          "title": "Tiger Woods and Ex Elin Nordegren Pose Together as Son Charlie Officially Commits to Florida State",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReuvT04AZf8ONObghI0OunT1S1G0T7ZFkbmSJGm-VufQFsR92k2fVxTNood_8"
-        },
-        {
-          "url": "https://golfweek.usatoday.com/story/sports/golf/college/2026/11/06/tiger-woods-applauds-charlie-woods-florida-state-mens-golf-cap/92644580007/",
-          "title": "Tiger Woods on hand as son Charlie Woods makes Florida State decision official",
-          "publisher": "Golfweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbigG4ege_Rdt6psd3GICrMMSqqJldbLU-MIH553CZr1jtul5ViH-tXofrFhc"
-        },
-        {
-          "url": "https://www.palmbeachpost.com/story/sports/college/golf/2026/11/06/charlie-woods-tiger-woods-florida-state-signing-day-ceremony-high-school-benjamin/92632308007/",
-          "title": "Charlie Woods dons Florida State cap in signing day ceremony",
-          "publisher": "The Palm Beach Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD3_hn2J6F-7FAjxecMo_N0__Yj-1t3aVGFkjn8YZk5qcbYsYrOfh381yVMZs"
-        }
-      ]
-    },
-    {
-      "query": "gamemill entertainment xbox game delisting",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T21:00:00Z",
-      "related_news_urls": [
-        "https://www.purexbox.com/news/2026/11/xbox-publisher-announces-four-games-being-delisted-by-end-of-2026",
-        "https://www.cbr.com/avatar-the-last-airbender-quest-for-balance-steam-delist/",
-        "https://comicbook.com/gaming/news/avatar-the-last-airbender-game-delisted/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHXUnVssgrwXxx9B6tahyVvyWExOrKT2jM3QEB7AxLfW6DYPiCaNyrNX9F4O0",
-      "image_credit": "Pure Xbox",
-      "news": [
-        {
-          "url": "https://www.purexbox.com/news/2026/11/xbox-publisher-announces-four-games-being-delisted-by-end-of-2026",
-          "title": "Xbox Publisher Announces Four Games Being Delisted By End Of 2026",
-          "publisher": "Pure Xbox",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHXUnVssgrwXxx9B6tahyVvyWExOrKT2jM3QEB7AxLfW6DYPiCaNyrNX9F4O0"
-        },
-        {
-          "url": "https://www.cbr.com/avatar-the-last-airbender-quest-for-balance-steam-delist/",
-          "title": "After 3 Years, It's Officially the End of an Era for Avatar: The Last Airbender",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY4H87FYbM-jBkSHNJCdrrGHpMLExAMqQFTBVPLc1Gewe1QjldeEsDM8P6coE"
-        },
-        {
-          "url": "https://comicbook.com/gaming/news/avatar-the-last-airbender-game-delisted/",
-          "title": "2023 Avatar: The Last Airbender Release Is Being Permanently Removed From Sale",
-          "publisher": "ComicBook.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNZfCjPf26NuDjblSVoX-yEgzfD5bZmjbe_YKtysHlbBFD7kOuprBq-oD12TQ"
-        }
-      ]
-    },
-    {
-      "query": "irs 2027 tax brackets",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T20:50:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/05/2027-federal-tax-brackets.html",
-        "https://www.washingtonpost.com/business/2026/11/05/us-taxpayers-can-shield-an-extra-500-taxation-next-year/",
-        "https://www.axios.com/2026/11/06/income-tax-bracket-2027-thresholds"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVh8Se1EfXmbjIt6Ey7IlwyyI1XzYaJ5JL75WSpCbfN9sTZikwjFc9npyX4M4",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/05/2027-federal-tax-brackets.html",
-          "title": "IRS announces new federal income tax brackets for 2027",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVh8Se1EfXmbjIt6Ey7IlwyyI1XzYaJ5JL75WSpCbfN9sTZikwjFc9npyX4M4"
-        },
-        {
-          "url": "https://www.washingtonpost.com/business/2026/11/05/us-taxpayers-can-shield-an-extra-500-taxation-next-year/",
-          "title": "U.S. taxpayers can shield an extra $500 from taxation next year",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwX_GUpW4J1OvHFGGH2Vq3olXzIwlUkC-CGifba_6eQtYvNdjF3_9ZxxKeHAo"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/06/income-tax-bracket-2027-thresholds",
-          "title": "IRS reveals 2027 tax brackets. Find yours here",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5Yv4wP-xxi02h6hW8V0EnriUXGWXkhCE1ZYgqFxp2MWCiPm_nsbdM79oE_8"
-        }
-      ]
-    },
-    {
-      "query": "michael sanft",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T20:50:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
     }
   ]
 }
