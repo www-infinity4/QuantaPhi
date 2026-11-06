@@ -3,9 +3,123 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T00:43:25.015179Z",
+  "checked_at": "2026-11-06T01:01:45.771010Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "erin burnett",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T00:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "nate boerkircher",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/recap/_/gameId/401873028",
+        "https://www.nytimes.com/athletic/7744658/2026/11/01/colts-jaguars-nfl-week-8-score-result-takeaways/",
+        "https://www.jaguars.com/news/game-report-2026-week-8-jaguars-42-colts-7"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSW3RuOwdFIqHP5FrKgtGYpYcazTkAVUf2igUiWhDIoa1gb4dJsatmBxJASQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/recap/_/gameId/401873028",
+          "title": "Jaguars 42-7 Colts (Nov 1, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSW3RuOwdFIqHP5FrKgtGYpYcazTkAVUf2igUiWhDIoa1gb4dJsatmBxJASQ"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7744658/2026/11/01/colts-jaguars-nfl-week-8-score-result-takeaways/",
+          "title": "Colts embarrassed in Jacksonville after big trades; who’s next to go in Indianapolis?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyOHgRG7nHxhk01hYuoPY0WHtL7amKLYmZPOhwa9EbOh62zz9EnT9RQWplDXI"
+        },
+        {
+          "url": "https://www.jaguars.com/news/game-report-2026-week-8-jaguars-42-colts-7",
+          "title": "Game Report, 2026 Week 8: Jaguars 42, Colts 7",
+          "publisher": "Jacksonville Jaguars",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_wqs9Otza5FZlglJSTKKcQnNrh79gzf1XYoqW-uKAOfqnlKgiNn4150Jpto"
+        }
+      ]
+    },
+    {
+      "query": "pitt basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T00:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/pittsburgh/article/pitt-panthers-basketball-buffalo-bulls-matchup-preview-jeff-capel-naithan-george-jj-starling-292215519/",
+        "https://www.sportsgambler.com/betting-tips/basketball/buffalo-bulls-vs-pittsburgh-panthers-prediction-odds-2026-11-05/",
+        "https://www.tribdem.com/gallery/photo-gallery-time-dealer-of-the-year-nomination-matt-smith/collection_d6ccf73a-3b50-4691-9d45-9e5a0be54a24.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjp5XnB8J637MjlFeD9pPYCkG39P9m1oDXdk3pfWBYaHX0zWAbA7kyZKDVvoc",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/pittsburgh/article/pitt-panthers-basketball-buffalo-bulls-matchup-preview-jeff-capel-naithan-george-jj-starling-292215519/",
+          "title": "Matchup preview: Pitt battles Buffalo in second game of the season",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjp5XnB8J637MjlFeD9pPYCkG39P9m1oDXdk3pfWBYaHX0zWAbA7kyZKDVvoc"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/buffalo-bulls-vs-pittsburgh-panthers-prediction-odds-2026-11-05/",
+          "title": "Buffalo vs Pittsburgh Prediction, Picks & Odds | 05 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
+        },
+        {
+          "url": "https://www.tribdem.com/gallery/photo-gallery-time-dealer-of-the-year-nomination-matt-smith/collection_d6ccf73a-3b50-4691-9d45-9e5a0be54a24.html",
+          "title": "PHOTO GALLERY | TIME Dealer of the Year Nomination | Matt Smith",
+          "publisher": "The Tribune-Democrat",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUH2QCNy5Y9u9zuAy8qGlGbzllNNRSp7Dzd2nAFviP20eN4Pa7na0VhVPzJLs"
+        }
+      ]
+    },
+    {
+      "query": "columbus blue jackets",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/stars/news/game-day-guide-dallas-stars-at-columbus-blue-jackets-110526",
+        "https://sports.yahoo.com/articles/stars-vs-blue-jackets-prediction-163151251.html",
+        "https://www.nytimes.com/athletic/7756489/2026/11/05/stars-vs-blue-jackets-stream-how-to-watch-nov-5/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnTvl3r2IPM5iPrfzelXJTTGKj0yFEtW1VRv1HNAZqSRDeCaF05H4G42vzyC4",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/stars/news/game-day-guide-dallas-stars-at-columbus-blue-jackets-110526",
+          "title": "Game Day Guide: Stars at Blue Jackets",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnTvl3r2IPM5iPrfzelXJTTGKj0yFEtW1VRv1HNAZqSRDeCaF05H4G42vzyC4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/stars-vs-blue-jackets-prediction-163151251.html",
+          "title": "Stars vs Blue Jackets Prediction, Pick, NHL Odds for Thursday, November 5",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIt8xycSFe2DB9YBJUxnV2dqwNGv-mxagTt0eJahyAJv9GYIVo2fhWaCdbkx8"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7756489/2026/11/05/stars-vs-blue-jackets-stream-how-to-watch-nov-5/",
+          "title": "How to watch Stars vs. Blue Jackets: TV channel and streaming options for November 5",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSp5N16TZ8treRl4eBKofIdG4mgu9Ky4vFBirWZFa47Rqgb_Sl0zDMyP7vPkYo"
+        }
+      ]
+    },
     {
       "query": "derrick henry",
       "approx_searches": "1000+",
@@ -105,7 +219,7 @@
     },
     {
       "query": "mercyhurst vs notre dame",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-06T00:30:00Z",
       "related_news_urls": [
         "https://irishsportsdaily.com/s/28483/game-thread-mercyhurst-at-notre-dame",
@@ -174,177 +288,37 @@
       ]
     },
     {
-      "query": "shrinking",
-      "approx_searches": "500+",
+      "query": "ravens schedule",
+      "approx_searches": "2000+",
       "published_at": "2026-11-06T00:20:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/trailers/articles/vince-vaughn-returns-more-crime-212404864.html",
-        "https://9to5mac.com/2026/11/05/apple-tv-unveils-return-of-hit-comedy-from-ted-lasso-shrinking-creator/",
-        "https://www.darkhorizons.com/official-trailer-bad-monkey-season-2/"
+        "https://www.baltimoreravens.com/news/nate-wiggins-inactive-for-jaguars-week-9-austin-reed-backup-quarterback",
+        "https://www.baltimoresun.com/2026/11/04/ravens-injury-report-nate-wiggins-vega-ioane/",
+        "https://www.cbssports.com/fantasy/football/news/ravens-nate-wiggins-inactive-against-jacksonville/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl9AtSbHzv4p9X9oercQ4gA1Ty3Zvlt-sQbf8uOVlTZhrUcTZFNxqOfCVyuP0",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTpIgKpr-bqk3eQWVWAUrmSSX8UHZaEzni0SIfEbIqOu2LHP3JnUV7FNTrMqY",
+      "image_credit": "Baltimore Ravens",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/vince-vaughn-returns-more-crime-212404864.html",
-          "title": "Vince Vaughn Returns With More Crime & Chaos in Bad Monkey Season 2 Trailer",
-          "publisher": "Yahoo",
+          "url": "https://www.baltimoreravens.com/news/nate-wiggins-inactive-for-jaguars-week-9-austin-reed-backup-quarterback",
+          "title": "Nate Wiggins Inactive vs. Jaguars",
+          "publisher": "Baltimore Ravens",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl9AtSbHzv4p9X9oercQ4gA1Ty3Zvlt-sQbf8uOVlTZhrUcTZFNxqOfCVyuP0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTpIgKpr-bqk3eQWVWAUrmSSX8UHZaEzni0SIfEbIqOu2LHP3JnUV7FNTrMqY"
         },
         {
-          "url": "https://9to5mac.com/2026/11/05/apple-tv-unveils-return-of-hit-comedy-from-ted-lasso-shrinking-creator/",
-          "title": "Apple TV unveils return of hit comedy from Ted Lasso, Shrinking creator",
-          "publisher": "9to5Mac",
+          "url": "https://www.baltimoresun.com/2026/11/04/ravens-injury-report-nate-wiggins-vega-ioane/",
+          "title": "Ravens injury report: Wiggins questionable for Jaguars game Thursday night",
+          "publisher": "Baltimore Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_hEHGuvm5JoA7Wbr5gp-M04csuHWEmZNwUVcCxn36k8Dgu3h33EDxK5F8S_s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVHMlwkiAdFFq32Epe_f5562mivrifq2y8swpzNWSLHUxHLI_jpJoz4BbPrRU"
         },
         {
-          "url": "https://www.darkhorizons.com/official-trailer-bad-monkey-season-2/",
-          "title": "Official Trailer: \"Bad Monkey\" Season 2",
-          "publisher": "Dark Horizons",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIkUWSgSeLL8fKFX0-RVig7j_rhyaBG1FTTNmoAm1tUjOHZqrRQxAVdwqCOdg"
-        }
-      ]
-    },
-    {
-      "query": "iowa women's basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T00:20:00Z",
-      "related_news_urls": [
-        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/05/where-to-watch-iowa-womens-basketball-eastner-illinois-tv-channel-streaming-tim/92610865007/",
-        "https://www.on3.com/teams/iowa-hawkeyes/news/iowa-womens-basketball-tip-time-preview-eastern-illinois-panthers/",
-        "https://www.bryantimes.com/sports/ap_sports/indiana-and-bellarmine-set-for-cross-conference-game/article_8874f439-fb4e-5930-8b1e-139713b77e59.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjNMgGIiIKUkdvs3_BvzNIX-gOX3uAjhxv-xRRym40Gk1UpV_6HWUBZg3DfH8",
-      "image_credit": "Hawk Central",
-      "news": [
-        {
-          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/05/where-to-watch-iowa-womens-basketball-eastner-illinois-tv-channel-streaming-tim/92610865007/",
-          "title": "How to watch Iowa women's basketball vs Eastern Illinois, stream, TV",
-          "publisher": "Hawk Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjNMgGIiIKUkdvs3_BvzNIX-gOX3uAjhxv-xRRym40Gk1UpV_6HWUBZg3DfH8"
-        },
-        {
-          "url": "https://www.on3.com/teams/iowa-hawkeyes/news/iowa-womens-basketball-tip-time-preview-eastern-illinois-panthers/",
-          "title": "Iowa Women's Basketball Tip Time Preview: Eastern Illinois Panthers",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrnbI_ysyYBaEDrOY-fbvLwS4UUYEjyLxQ3McRGXb_xUWhnhw-FjbM7df5TSc"
-        },
-        {
-          "url": "https://www.bryantimes.com/sports/ap_sports/indiana-and-bellarmine-set-for-cross-conference-game/article_8874f439-fb4e-5930-8b1e-139713b77e59.html",
-          "title": "Indiana and Bellarmine set for cross-conference game",
-          "publisher": "Bryan Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOdXi_FNrRdgdkbpDoj7oa5kgomcg-nzxp73uhUxgT4dV4op6yDfEqCmv1XW8"
-        }
-      ]
-    },
-    {
-      "query": "weather in baltimore",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T00:20:00Z",
-      "related_news_urls": [
-        "https://www.wbaltv.com/article/baltimore-weather-rain-showers-november-5-2026/74343513",
-        "https://foxbaltimore.com/news/local/much-needed-rain-returns-to-baltimore",
-        "https://www.yahoo.com/news/weather-news/articles/more-rain-possible-east-95-184822423.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw6aPcFF4IfzvKVjNHGZ4vdKgM5N1TuyJSnkwXwZhDCQYGdO4ZI-OOQo-kvU8",
-      "image_credit": "WBAL-TV",
-      "news": [
-        {
-          "url": "https://www.wbaltv.com/article/baltimore-weather-rain-showers-november-5-2026/74343513",
-          "title": "Some showers possible in Baltimore area, particularly south",
-          "publisher": "WBAL-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw6aPcFF4IfzvKVjNHGZ4vdKgM5N1TuyJSnkwXwZhDCQYGdO4ZI-OOQo-kvU8"
-        },
-        {
-          "url": "https://foxbaltimore.com/news/local/much-needed-rain-returns-to-baltimore",
-          "title": "Much needed rain returns to Baltimore",
-          "publisher": "WBFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY9v-z59sPoF-1OKEJEPvPtE7IqG5yymc5oWEN_D1qGXVMOEjjyQ3obWM_qV4"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/more-rain-possible-east-95-184822423.html",
-          "title": "More rain possible east of I-95, drier to the west",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTxp4R73-u9-PSI39M7yS-CP7QtXSIkzMtZ8Tr_u4GO_FikimDl7w4wM_In8Q"
-        }
-      ]
-    },
-    {
-      "query": "heat vs warriors",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T00:20:00Z",
-      "related_news_urls": [
-        "https://www.goldenstateofmind.com/warriors-injury-report/113251/warriors-heat-injury-report-gui-santos-giannis-antetokounmpo",
-        "https://www.cbssports.com/prediction/news/get-up-to-420-in-nba-prediction-market-promos-with-kalshi-promo-code-cbssports55-others-for-november-5/",
-        "https://sports.yahoo.com/articles/watch-miami-heat-golden-state-174520583.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRu9hrktVCuxb9tDN8guoySZ1tu4sYN33DA6sPc130vF-h_vqaDVrPkZal7qNI",
-      "image_credit": "Golden State Of Mind",
-      "news": [
-        {
-          "url": "https://www.goldenstateofmind.com/warriors-injury-report/113251/warriors-heat-injury-report-gui-santos-giannis-antetokounmpo",
-          "title": "Warriors vs. Heat injury report: Gui Santos remains out, Giannis in",
-          "publisher": "Golden State Of Mind",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRu9hrktVCuxb9tDN8guoySZ1tu4sYN33DA6sPc130vF-h_vqaDVrPkZal7qNI"
-        },
-        {
-          "url": "https://www.cbssports.com/prediction/news/get-up-to-420-in-nba-prediction-market-promos-with-kalshi-promo-code-cbssports55-others-for-november-5/",
-          "title": "Get up to $420 in NBA prediction market promos with Kalshi promo code CBSSPORTS55, others for November 5",
+          "url": "https://www.cbssports.com/fantasy/football/news/ravens-nate-wiggins-inactive-against-jacksonville/",
+          "title": "Ravens' Nate Wiggins: Inactive against Jacksonville",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9GqNVTgW4V5PUUDVGvuliSGTyOMeADJ4-0obR4gM5_OqJdqubWo2cl8xTth0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-miami-heat-golden-state-174520583.html",
-          "title": "How To Watch Miami Heat At Golden State Warriors; Lineups, Injury Report, Betting Lines",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4FpFdzQujlOo-xZz0LAmutZIX1Y09Jn2TriMRcf5yC2x3DS9AhQSb5ZyOP0A"
-        }
-      ]
-    },
-    {
-      "query": "stranger things",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T00:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/finn-wolfhard-caleb-mclaughlin-filmed-204315545.html",
-        "https://parade.com/news/millie-bobby-brown-ross-duffer-posts-resurrect-stranger-things-conformity-gate-from-the-dead",
-        "https://younghollywood.com/scene/caleb-mclaughlin-finn-wolfhard-chicago-filming.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReGk_CQgOTIbTh4y56JZoKujqw1dpBpf-MDdkMqprfCS8qGrB7tTXI5mdVCjQ",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/finn-wolfhard-caleb-mclaughlin-filmed-204315545.html",
-          "title": "Finn Wolfhard and Caleb McLaughlin Filmed Together in Chicago, Sparking 'Stranger Things' Speculation",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReGk_CQgOTIbTh4y56JZoKujqw1dpBpf-MDdkMqprfCS8qGrB7tTXI5mdVCjQ"
-        },
-        {
-          "url": "https://parade.com/news/millie-bobby-brown-ross-duffer-posts-resurrect-stranger-things-conformity-gate-from-the-dead",
-          "title": "Millie Bobby Brown, Ross Duffer Posts Resurrect ‘Stranger Things’ Conformity Gate From the Dead",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TKqkAUdgvvNfHfuTl90_uHI063pJ-KEsbPFWkD6K-sM77NBd-XYhyhMqejA"
-        },
-        {
-          "url": "https://younghollywood.com/scene/caleb-mclaughlin-finn-wolfhard-chicago-filming.html",
-          "title": "Caleb McLaughlin Films in Chicago With Finn Wolfhard (November 2026)",
-          "publisher": "Young Hollywood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0junKLpDAU7OZYpdWdEDIo_fPuk_0v2lSS8ub6M6OSzXCRYF0MVO5tPU-a6c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
         }
       ]
     }
