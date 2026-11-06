@@ -3,41 +3,321 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T20:30:55.233049Z",
+  "checked_at": "2026-11-06T21:01:29.392520Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "austin simmons",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T20:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50400199/sources-qb-austin-simmons-re-signs-missouri-2027",
+        "https://bleacherreport.com/articles/25529974-austin-simmons-reportedly-returning-missouri-new-contract-will-skip-2027-nfl-draft",
+        "https://www.si.com/college/missouri/football/mizzou-qb-austin-simmons-re-signs-for-2027-season-per-report"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4oAHZAq4HmS-paJgBz4AZEzRHzWvYd4WAgKZ0hox39KP-wtJN27XCBnf2Io",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50400199/sources-qb-austin-simmons-re-signs-missouri-2027",
+          "title": "Sources - QB Austin Simmons re-signs with Missouri for 2027",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4oAHZAq4HmS-paJgBz4AZEzRHzWvYd4WAgKZ0hox39KP-wtJN27XCBnf2Io"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529974-austin-simmons-reportedly-returning-missouri-new-contract-will-skip-2027-nfl-draft",
+          "title": "Austin Simmons Reportedly Returning to Missouri on New Contract, Will Skip 2027 NFL Draft",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvDimmaYZz65MaC2eZhUtLKkE1rlbRunbXhN4LEisqNXBcQYn2z73QqwhpNrY"
+        },
+        {
+          "url": "https://www.si.com/college/missouri/football/mizzou-qb-austin-simmons-re-signs-for-2027-season-per-report",
+          "title": "Mizzou QB Austin Simmons re-signs for 2027 season, per report",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_llX_spd4ZbqojCm23USG91K-ZFjnRXM_1TcmBX1Tt0GfVziy4bh_I79Q5bQ"
+        }
+      ]
+    },
+    {
+      "query": "patrick lynch mt lebanon",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T20:30:00Z",
+      "related_news_urls": [
+        "https://people.com/dad-had-been-laid-off-and-was-depressed-before-fatally-jumping-off-garage-with-two-kids-6-and-8-12238419",
+        "https://nypost.com/2026/11/06/us-news/patrick-lynch-cause-of-death-after-pittsburgh-murders/",
+        "https://www.cbsnews.com/pittsburgh/news/mt-lebanon-murder-suicide-christmas-lights/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8RDFhfpZjvZslZJr1KJBkvNpYi9rLdmk_HfevsKPEytTOmTF-U1L6GBDpUPA",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/dad-had-been-laid-off-and-was-depressed-before-fatally-jumping-off-garage-with-two-kids-6-and-8-12238419",
+          "title": "Mom of Kids Pushed to Death in Murder-Suicide Says Killer Was ‘Wonderful Dad’ Who Was ‘Depressed’ After Layoff",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8RDFhfpZjvZslZJr1KJBkvNpYi9rLdmk_HfevsKPEytTOmTF-U1L6GBDpUPA"
+        },
+        {
+          "url": "https://nypost.com/2026/11/06/us-news/patrick-lynch-cause-of-death-after-pittsburgh-murders/",
+          "title": "Chilling new details about dad who threw two young kids from parking garage before jumping",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSL_-sbIE9yuw7HCctl6iT5T_xHqBbZWfNr7DD3qLSzrl9fHHNRM5v8sEfw8AU"
+        },
+        {
+          "url": "https://www.cbsnews.com/pittsburgh/news/mt-lebanon-murder-suicide-christmas-lights/",
+          "title": "Mt. Lebanon community encouraged to put up Christmas lights early to honor 3 killed in murder-suicide",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN5dOs-tRBh1u5uIDRaLfiPbigHyKTe9HzBXme_ojcdbrafnkVI7XJu_JBGCE"
+        }
+      ]
+    },
+    {
+      "query": "senfronia thompson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T20:30:00Z",
+      "related_news_urls": [
+        "https://www.texastribune.org/2026/11/05/texas-democrats-house-speaker-senfronia-thompson-eddie-morales/",
+        "https://www.click2houston.com/news/local/2026/11/05/texass-longest-serving-black-lawmaker-senfronia-thompson-now-one-step-away-from-most-powerful-seat-in-the-house/",
+        "https://www.kxan.com/news/texas-politics/watch-senfronia-thompson-holds-news-conference-on-house-speaker-campaign/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPpVbZTRk3bCN323rX-i6vM8is91Yxgejkm-msBRogCjuX96aB6SfxAjZL76I",
+      "image_credit": "The Texas Tribune",
+      "news": [
+        {
+          "url": "https://www.texastribune.org/2026/11/05/texas-democrats-house-speaker-senfronia-thompson-eddie-morales/",
+          "title": "Texas Democrats already angling to be the next House speaker",
+          "publisher": "The Texas Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPpVbZTRk3bCN323rX-i6vM8is91Yxgejkm-msBRogCjuX96aB6SfxAjZL76I"
+        },
+        {
+          "url": "https://www.click2houston.com/news/local/2026/11/05/texass-longest-serving-black-lawmaker-senfronia-thompson-now-one-step-away-from-most-powerful-seat-in-the-house/",
+          "title": "Texas’s longest-serving Black lawmaker Senfronia Thompson now one step away from most powerful seat in the House",
+          "publisher": "Click2Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7bbAnYoijmsh1Iez_4YS1Jrw-gEwpV3p291Rk0lGUqri3GL2YEHPBspqx-DM"
+        },
+        {
+          "url": "https://www.kxan.com/news/texas-politics/watch-senfronia-thompson-holds-news-conference-on-house-speaker-campaign/",
+          "title": "WATCH: Senfronia Thompson holds news conference on House speaker campaign",
+          "publisher": "KXAN Austin",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpQ1OPlWP25k6LfGI9hbwaLyWDNGPsHHvpa-e5Ug5Mtr9xG_mLViKopEJglaU"
+        }
+      ]
+    },
+    {
+      "query": "zelda switch 2 pro controller",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T20:30:00Z",
+      "related_news_urls": [
+        "https://mashable.com/tech/zelda-switch-2-restock-retailers-where-to-buy-now",
+        "https://shattered.io/walmart-zelda-switch-2-519-99-gift-card-48-hour-reorder-2026/",
+        "https://www.theshortcut.com/p/still-searching-for-a-zelda-40th-anniversary-switch-2-nintendo-has-good-news"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7MuNHfA1prwwJuOP1v8vdCfAkH-88d5CVhsU8jqmBP9Y-O0G8dgTuV8KSf-U",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/tech/zelda-switch-2-restock-retailers-where-to-buy-now",
+          "title": "Zelda Switch 2 restock retailers: Where to buy the 40th anniversary console",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7MuNHfA1prwwJuOP1v8vdCfAkH-88d5CVhsU8jqmBP9Y-O0G8dgTuV8KSf-U"
+        },
+        {
+          "url": "https://shattered.io/walmart-zelda-switch-2-519-99-gift-card-48-hour-reorder-2026/",
+          "title": "Walmart Zelda Switch 2: $519.99 Gift Card, 48 Hours [2026]",
+          "publisher": "shattered.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTky2FHHApp_OOdMxsUhNhZEgY6mNSofspm28yVGGZBwruNgp8IxBA2m4WEnhQ"
+        },
+        {
+          "url": "https://www.theshortcut.com/p/still-searching-for-a-zelda-40th-anniversary-switch-2-nintendo-has-good-news",
+          "title": "Still searching for a Zelda 40th Anniversary Switch 2? Nintendo has good news",
+          "publisher": "The Shortcut | Matt Swider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS4A4e4NF3qoExKX9cblQMvNGQe125BAqrWohSZsovMKPX_WbwRJRA5XwKjMg"
+        }
+      ]
+    },
+    {
+      "query": "toulouse fc",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T20:30:00Z",
+      "related_news_urls": [
+        "https://www.sport.fr/football/tfc-rc-strasbourg-le-tfc-et-le-racing-jouent-leur-sortie-de-crise-au-stadium-1498195.shtm",
+        "https://www.lesviolets.com/actu/je-sais-que-nous-pouvons-marquer-sion-oppong-croit-au-reveil-offensif-du-tfc,84958.html",
+        "https://www.dna.fr/sport/2026/11/06/le-racing-club-de-strasbourg-va-t-il-poursuivre-son-redressement-a-toulouse-suivez-le-match-en-direct"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJuQsNU1BJ13v0TsQkNhCpVyqkxzBfV1pLjKj1cUye6U_BMdfugPzniNG2AY",
+      "image_credit": "Sport.fr",
+      "news": [
+        {
+          "url": "https://www.sport.fr/football/tfc-rc-strasbourg-le-tfc-et-le-racing-jouent-leur-sortie-de-crise-au-stadium-1498195.shtm",
+          "title": "TFC – RC Strasbourg : le TFC et le Racing jouent leur sortie de crise au Stadium",
+          "publisher": "Sport.fr",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJuQsNU1BJ13v0TsQkNhCpVyqkxzBfV1pLjKj1cUye6U_BMdfugPzniNG2AY"
+        },
+        {
+          "url": "https://www.lesviolets.com/actu/je-sais-que-nous-pouvons-marquer-sion-oppong-croit-au-reveil-offensif-du-tfc,84958.html",
+          "title": "« Je sais que nous pouvons marquer » : Sion Oppong croit au réveil offensif du TFC",
+          "publisher": "LesViolets.Com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4SEZasI_mAclAmuSHA5r5o42_tmJtZArLlJp4uNU_JJ4fU0OCZwa4KWg4wQE"
+        },
+        {
+          "url": "https://www.dna.fr/sport/2026/11/06/le-racing-club-de-strasbourg-va-t-il-poursuivre-son-redressement-a-toulouse-suivez-le-match-en-direct",
+          "title": "Toulouse ouvre la marque, le Racing Club de Strasbourg mené à la pause : suivez la rencontre en direct",
+          "publisher": "dna.fr",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz62SqYZaFNnNepwRfCrHlrlPPAl_Lov77kRknHDzBAhAo5_hXBm35YSRc5Sk"
+        }
+      ]
+    },
+    {
+      "query": "did the stock market crash today",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-06T20:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/06/business/dealbook/tech-investors-ai-rout.html",
+        "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html",
+        "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo8tveMYsXoX1pTxV0ALxHTey-vVp-V9YGDB-qpWZtgzUVsxag5UntU0nWwjw",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/06/business/dealbook/tech-investors-ai-rout.html",
+          "title": "After a $2.5 Trillion Wipeout, Tech Investors Brace for More Pain",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo8tveMYsXoX1pTxV0ALxHTey-vVp-V9YGDB-qpWZtgzUVsxag5UntU0nWwjw"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html",
+          "title": "Nasdaq attempts to recover from worst rout in 19 months as AI stocks see some buying: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oy9hvXksqG7nMjhOZve6zyQTZAiquHtw7qO6_kwpgaGnLUqG_BSDcUuIKkY"
+        },
+        {
+          "url": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89",
+          "title": "AI stocks halt their brutal, worldwide sell-off as Wall Street trims its loss for the week",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHQLmvj5AwOY-uYWH8IKTjVPHjlYsbBBbA27Vp-HyDABI-kWXut_7eIxnwvCU"
+        }
+      ]
+    },
+    {
+      "query": "detención",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T20:20:00Z",
+      "related_news_urls": [
+        "https://www.expressnews.com/news/article/arrestan-y-acusan-en-eeuu-de-soborno-a-un-juez-22514762.php",
+        "https://www.bloomberg.com/news/articles/2026-11-05/fbi-detiene-a-juez-mexicano-ligado-a-caso-de-ryan-wedding",
+        "https://www.elfinanciero.com.mx/cdmx/2026/11/05/juez-mexicano-detenido-en-colombia-es-una-fichita-que-casos-polemicos-llevo/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxS21VbHznrSkJ8XlL_eEonYbqmxzISO_6kvQyqTlI0ndO6zg1rRES94HE-8",
+      "image_credit": "San Antonio Express-News",
+      "news": [
+        {
+          "url": "https://www.expressnews.com/news/article/arrestan-y-acusan-en-eeuu-de-soborno-a-un-juez-22514762.php",
+          "title": "Arrestan y acusan en EEUU de soborno a un juez mexicano en caso de narcotráfico internacional",
+          "publisher": "San Antonio Express-News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxS21VbHznrSkJ8XlL_eEonYbqmxzISO_6kvQyqTlI0ndO6zg1rRES94HE-8"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/fbi-detiene-a-juez-mexicano-ligado-a-caso-de-ryan-wedding",
+          "title": "FBI detiene a juez mexicano vinculado a pesquisa por narcotráfico de exolímpico",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR46zXKmtB5QaJOim178s8rhGE5U7IGP3Gs3Psp2YzVxfPc9lMoN82pSK_9yHw"
+        },
+        {
+          "url": "https://www.elfinanciero.com.mx/cdmx/2026/11/05/juez-mexicano-detenido-en-colombia-es-una-fichita-que-casos-polemicos-llevo/",
+          "title": "Juez mexicano detenido en Colombia es una ‘fichita’: ¿Qué casos polémicos llevó?",
+          "publisher": "El Financiero",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgQoy-xtATiqXxWgwIVReDi0ibBDd5SSjtzqr_J820Yr02L_QFyW62lW4rds4"
+        }
+      ]
+    },
+    {
+      "query": "rihanna",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T20:20:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/rihanna-naughty-christmas-surprise-gives-234445765.html",
+        "https://pagesix.com/2026/11/03/photos/rihanna-gets-cheeky-and-more-star-snaps/",
+        "https://www.the-sun.com/entertainment/17264767/rihanna-gift-red-lingerie-savage-fenty-christmas/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd5gBrF-YGVaDaLYl1pJ9ZVOkrh71VqKR7ngWamfEzTi-orCYcYmHQmHGe39Q",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/rihanna-naughty-christmas-surprise-gives-234445765.html",
+          "title": "Rihanna’s Naughty Christmas Surprise Gives Santa a Run for His Money",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd5gBrF-YGVaDaLYl1pJ9ZVOkrh71VqKR7ngWamfEzTi-orCYcYmHQmHGe39Q"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/03/photos/rihanna-gets-cheeky-and-more-star-snaps/",
+          "title": "Rihanna gets cheeky and more star snaps",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTotrhHtjT6htHhOc0O_QlCcSgnKni_nABzQ0BLLHLsxXptTo6AriZ0Wpyu3ZQ"
+        },
+        {
+          "url": "https://www.the-sun.com/entertainment/17264767/rihanna-gift-red-lingerie-savage-fenty-christmas/",
+          "title": "Rihanna calls herself a ‘GIFT’ in very naughty red lingerie and thigh highs for Savage x Fenty’s Christmas campaign",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6nOfscDnhFbBIpxy48JGw_vGO3cBbvVXyBxwo0wUFluZ5XTsEDlzzdvEs4ms"
+        }
+      ]
+    },
     {
       "query": "minnesota vikings quarterback trade rumors",
       "approx_searches": "500+",
       "published_at": "2026-11-06T20:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50390732/vikings-start-qb-wentz-bills-murray-injured",
-        "https://sports.yahoo.com/articles/schefter-watching-mn-vikings-qb-181118078.html",
-        "https://www.nfl.com/news/vikings-to-start-carson-wentz-vs-bills-kyler-murray-hamstring"
+        "https://www.nfl.com/news/vikings-to-start-carson-wentz-vs-bills-kyler-murray-hamstring",
+        "https://atozsports.com/nfl/minnesota-vikings-news/minnesota-vikings-dont-appear-to-be-done-at-the-quarterback-position-and-it-sends-a-strong-signal-about-the-future/",
+        "https://www.espn.com/nfl/story/_/id/50390732/vikings-start-qb-wentz-bills-murray-injured"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWuV7OTDlvgnjggkKDG60AHCkjMpb0GuUHARp-SuSw8CDT7C-Hyq53MxE9aJ0",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOI54QC0nZL4aySkqbhOx9TBg1KhR0-vGSaBw0kVWjTavuEYSGxJYmjy1Su6U",
+      "image_credit": "NFL.com",
       "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50390732/vikings-start-qb-wentz-bills-murray-injured",
-          "title": "Vikings to start QB Carson Wentz against Bills with Kyler Murray ruled out",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWuV7OTDlvgnjggkKDG60AHCkjMpb0GuUHARp-SuSw8CDT7C-Hyq53MxE9aJ0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/schefter-watching-mn-vikings-qb-181118078.html",
-          "title": "Schefter Watching MN Vikings’ QB Situation Too",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTELHrYaEfcwQuFQtQlKWb9vu-5Nj_WIBmb86UZAekdRYNUmBlKCOQijhuLojY"
-        },
         {
           "url": "https://www.nfl.com/news/vikings-to-start-carson-wentz-vs-bills-kyler-murray-hamstring",
           "title": "Vikings to start Carson Wentz vs. Bills on Monday with Kyler Murray battling hamstring injury",
           "publisher": "NFL.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOI54QC0nZL4aySkqbhOx9TBg1KhR0-vGSaBw0kVWjTavuEYSGxJYmjy1Su6U"
+        },
+        {
+          "url": "https://atozsports.com/nfl/minnesota-vikings-news/minnesota-vikings-dont-appear-to-be-done-at-the-quarterback-position-and-it-sends-a-strong-signal-about-the-future/",
+          "title": "Minnesota Vikings don't appear to be done at the quarterback position, and it sends a strong signal about the future",
+          "publisher": "A to Z Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGKrtqH5EKFoAHDXUMpXTAMbo5YBt4HbJoJ8PqPSt54K55OJjLsG2fq6O386g"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50390732/vikings-start-qb-wentz-bills-murray-injured",
+          "title": "Vikings to start QB Carson Wentz against Bills with Kyler Murray ruled out",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWuV7OTDlvgnjggkKDG60AHCkjMpb0GuUHARp-SuSw8CDT7C-Hyq53MxE9aJ0"
         }
       ]
     },
@@ -47,8 +327,8 @@
       "published_at": "2026-11-06T19:50:00Z",
       "related_news_urls": [
         "https://www.espn.com/soccer/match/_/gameId/401932840",
-        "https://www.espn.com/mens-college-basketball/game/_/gameId/401909491",
-        "https://www.espn.com/soccer/team-stats/_/gameId/401882809/league/esp.1"
+        "https://www.espn.com/soccer/team-stats/_/gameId/401882809/league/esp.1",
+        "https://www.espn.com/soccer/team-stats/_/gameId/401874815/league/ita.1"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3xATYqvi39XuLfEAAZc9oAkOVb9o_-2f67XJIsNGA5PIB3dU0H91dYEHnzjA",
       "image_credit": "ESPN",
@@ -61,298 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3xATYqvi39XuLfEAAZc9oAkOVb9o_-2f67XJIsNGA5PIB3dU0H91dYEHnzjA"
         },
         {
-          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909491",
-          "title": "Creighton 83-55 Le Moyne (Nov 5, 2026) Final Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYD29fL3XHPpf8C66u4VagIlQKIAg6RKctUdMBEpNV2YlCj1do8z5YYC0TtiY"
-        },
-        {
           "url": "https://www.espn.com/soccer/team-stats/_/gameId/401882809/league/esp.1",
           "title": "Sevilla vs. Alavés (Nov 6, 2026) Team Stats",
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNCVQQLgmMLvxG7a4-JAbI02cEAL8ZTECBcH_j9z4GmeJKLFeISuxzJu4HszQ"
-        }
-      ]
-    },
-    {
-      "query": "oxford city vs leicester city",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T19:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c98rz2612n2nt",
-        "https://sports.yahoo.com/articles/russell-martin-last-chance-change-081126128.html",
-        "https://www.lcfc.com/media-article/leicester-city-emirates-fa-cup-bobby-de-cordova-reid-first-round-preview-oxford-city"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgp0Glq0gnL4Y6u-Lwj9Nb4ZI-mp_erqEh-cs1LprtQHweSOnn3S08kfhkg5o",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c98rz2612n2nt",
-          "title": "Oxford City vs Leicester City: FA Cup stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgp0Glq0gnL4Y6u-Lwj9Nb4ZI-mp_erqEh-cs1LprtQHweSOnn3S08kfhkg5o"
         },
         {
-          "url": "https://sports.yahoo.com/articles/russell-martin-last-chance-change-081126128.html",
-          "title": "This is Russell Martin’s last chance to change the narrative",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmy-LWPOSh_Pei7cB5DOG9omtj3_0gV6VA_yIVZCTjKwkJN6dBR8q2z1GqrLA"
-        },
-        {
-          "url": "https://www.lcfc.com/media-article/leicester-city-emirates-fa-cup-bobby-de-cordova-reid-first-round-preview-oxford-city",
-          "title": "‘The FA Cup’s Always Special’ - De Cordova-Reid On First Round",
-          "publisher": "LCFC | Official Website",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE4nabAb274_UCq0tfnX2vg_X4i5r6XGymjI6bxYf1DwBn1CySmQ18-b6Vyao"
-        }
-      ]
-    },
-    {
-      "query": "tyler kolek",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T19:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50401300/taylor-swift-knicks-fan-tyler-kolek-miles-mcbride",
-        "https://www.espn.com/nba/story/_/id/50401522/knicks-appreciative-taylor-swift-players-comments",
-        "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-called-fakest-york-164814394.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwCojEJvEiFvSoMLwZNR6wBFuBO_BSQu7lvCZ6JR1hnvBI0B8hF2DL8wVZYXo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50401300/taylor-swift-knicks-fan-tyler-kolek-miles-mcbride",
-          "title": "Knicks defend Taylor Swift's fandom after Tyler Kolek, Miles McBride weigh in",
+          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401874815/league/ita.1",
+          "title": "Venezia vs. Udinese (Nov 6, 2026) Team Stats",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwCojEJvEiFvSoMLwZNR6wBFuBO_BSQu7lvCZ6JR1hnvBI0B8hF2DL8wVZYXo"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50401522/knicks-appreciative-taylor-swift-players-comments",
-          "title": "Knicks 'appreciative' of Taylor Swift after Kolek, McBride question fandom",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtlyD1trMdu79MICjFjzR5C_pTDSz92pOLH7HILc4Tj5eOALuEmLa0YLhPqlc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-called-fakest-york-164814394.html",
-          "title": "Taylor Swift Called the ‘Fakest’ New York Knicks Fan by 2 of Team’s Players: ‘It’s a Little Performative’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnbwtcn9KMCulJX1NrpsEsMw3flMZsV7rxaQ6pP0JCXhdNBi5VTLwznFjyziA"
-        }
-      ]
-    },
-    {
-      "query": "maverick lyon",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T19:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/news/us-news/oregon-college-student-was-held-knifepoint-brother-escaped-police-shot-rcna607633",
-        "https://www.yahoo.com/news/us/articles/unarmed-oregon-man-shot-5-230356913.html",
-        "https://www.oregonlive.com/crime/2026/11/an-oregon-college-student-escaped-knife-attack-ran-for-help-then-officers-shot-him-5-times-lawsuit-says.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7Yb-Svs98YzuoFcmW9-fXctGY89ftq6K4COFYf2FMXyKTbFJht8kDg30A8AA",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/news/us-news/oregon-college-student-was-held-knifepoint-brother-escaped-police-shot-rcna607633",
-          "title": "An Oregon college student was held at knifepoint by his brother. He escaped, and police shot him.",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7Yb-Svs98YzuoFcmW9-fXctGY89ftq6K4COFYf2FMXyKTbFJht8kDg30A8AA"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/unarmed-oregon-man-shot-5-230356913.html",
-          "title": "Unarmed Oregon man shot 5 times by police after being kidnapped by brother files lawsuit",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVPEpej1dJ0rCWfnBF7Bhf3zDeV-J7NbTIrIb89qi8Q2YmcIz9vOHPUfjpsBg"
-        },
-        {
-          "url": "https://www.oregonlive.com/crime/2026/11/an-oregon-college-student-escaped-knife-attack-ran-for-help-then-officers-shot-him-5-times-lawsuit-says.html",
-          "title": "An Oregon college student escaped knife attack, ran for help — then officers shot him 5 times, lawsuit says",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2GAQpxmv3Ofg9ZGo2wYxfbWCO0YrRqM8YVfjKnpg0lFDtSRJJO1V1ZLRiavc"
-        }
-      ]
-    },
-    {
-      "query": "tornado warning",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T19:30:00Z",
-      "related_news_urls": [
-        "https://www.wral.com/news/local/flooding-heavy-rain-storms-triangle-severe-weather-risk-november-2026/",
-        "https://www.cbs17.com/weather/weather-stories/flood-advisory-issued-in-central-north-carolina-with-up-to-4-inches-of-rainfall-possible/",
-        "https://www.charlotteobserver.com/news/weather-news/article317960233.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFjjLjb68QQEj_eTS2ym1MaXFA9DeZxMLJpjt9TjTqYiuYeK2ZS1bGHDKfIo0",
-      "image_credit": "WRAL",
-      "news": [
-        {
-          "url": "https://www.wral.com/news/local/flooding-heavy-rain-storms-triangle-severe-weather-risk-november-2026/",
-          "title": "Flash flooding reported in Triangle as storms with heavy rain move through area",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFjjLjb68QQEj_eTS2ym1MaXFA9DeZxMLJpjt9TjTqYiuYeK2ZS1bGHDKfIo0"
-        },
-        {
-          "url": "https://www.cbs17.com/weather/weather-stories/flood-advisory-issued-in-central-north-carolina-with-up-to-4-inches-of-rainfall-possible/",
-          "title": "Tornado warning issued in Wayne County; several Raleigh vehicle crashes reported as storms hit central NC",
-          "publisher": "CBS17.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-lgOy5aGbBXZ61Y4x1uNtYuXx2Rd3O3BJOXIBa5VBNqrK9XC4_oU_Wc6wqYw"
-        },
-        {
-          "url": "https://www.charlotteobserver.com/news/weather-news/article317960233.html",
-          "title": "UPDATE: Flash flood warning affecting the Piedmont region Friday afternoon",
-          "publisher": "Charlotte Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNi7ZaM1etLirp2pyqoIM9taRUoaxASV5IW1Y99gMwwhdo2Oar-3DgdN7B4WM"
-        }
-      ]
-    },
-    {
-      "query": "stephen miller wife",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T19:20:00Z",
-      "related_news_urls": [
-        "https://www.the-independent.com/bulletin/news/katie-miller-republican-midterm-losses-b3079089.html",
-        "https://www.indy100.com/politics/katie-miller-midterm-elections-vote",
-        "https://www.themirror.com/entertainment/celebrity-news/katie-miller-mother-midterm-elections-2096927"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbu9oxOKyLSHQQvWd2n55IXwLUIzfmn6b8ysmBbCCYZPimXLW6uGLvkNJd5qM",
-      "image_credit": "The Independent",
-      "news": [
-        {
-          "url": "https://www.the-independent.com/bulletin/news/katie-miller-republican-midterm-losses-b3079089.html",
-          "title": "Katie Miller mocked after blaming busy moms for GOP midterm wipeout while admitting she skipped the vote",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbu9oxOKyLSHQQvWd2n55IXwLUIzfmn6b8ysmBbCCYZPimXLW6uGLvkNJd5qM"
-        },
-        {
-          "url": "https://www.indy100.com/politics/katie-miller-midterm-elections-vote",
-          "title": "'Nothing is more MAGA': Top Trump official's wife admits she didn't vote in the midterms",
-          "publisher": "Indy100",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpPxN383ak5x35WNdrQOlSxV0mdF5XnvGrn0sx-FrfuzwvH0zStM-iMZ2CuGQ"
-        },
-        {
-          "url": "https://www.themirror.com/entertainment/celebrity-news/katie-miller-mother-midterm-elections-2096927",
-          "title": "MAGA podcaster Katie Miller blames mothers for election disaster as she admits she didn't vote",
-          "publisher": "The Mirror US",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSd0UA87hCYhXCZz948q4uq0zNiAgn5HekJU-I2w6qHUgoihktgxkW2hPpMkVk"
-        }
-      ]
-    },
-    {
-      "query": "pbskids",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T19:20:00Z",
-      "related_news_urls": [
-        "https://azpbs.org/2026/11/new-show-carnival-of-the-animals-coming-to-pbs-kids/",
-        "https://www.awn.com/news/pbs-kids-sets-premiere-gustavo-dudamels-carnival-animals",
-        "https://www.eonline.com/news/1437869/arthur-celebrates-30th-anniversary-pbs-kids-tv-show-first-aired-in-1996"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVC7AQsn-U9GNX8wJ14zttPetpmkkgIlb7QjIb4JUe_wcYpKMGT9DgJ1mdx5s",
-      "image_credit": "Arizona PBS",
-      "news": [
-        {
-          "url": "https://azpbs.org/2026/11/new-show-carnival-of-the-animals-coming-to-pbs-kids/",
-          "title": "New show, ‘Carnival of the Animals,’ coming to PBS Kids",
-          "publisher": "Arizona PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVC7AQsn-U9GNX8wJ14zttPetpmkkgIlb7QjIb4JUe_wcYpKMGT9DgJ1mdx5s"
-        },
-        {
-          "url": "https://www.awn.com/news/pbs-kids-sets-premiere-gustavo-dudamels-carnival-animals",
-          "title": "PBS KIDS Sets Premiere for Gustavo Dudamel's 'Carnival of the Animals'",
-          "publisher": "Animation World Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8CUIS11HxPweXbrxAkJKAS_Pn2Z78D3NERbtPFs27hJyVxGCffPnScKKofpw"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437869/arthur-celebrates-30th-anniversary-pbs-kids-tv-show-first-aired-in-1996",
-          "title": "PBS Kids' Arthur Turns 30—and It's a Wonderful Kind of Day, Even If You Feel Old",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYWmV0CT_HDScoDqkYOz4ACN14fq0NobRi2M1RGOMwthXLb8ZPCv-94WW0NzI"
-        }
-      ]
-    },
-    {
-      "query": "venezia - udinese",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T19:20:00Z",
-      "related_news_urls": [
-        "https://www.fantacalcio.it/news/calcio-italia/06_11_2026/venezia-udinese-le-formazioni-ufficiali-500381",
-        "https://www.libero.it/magazine/news/calcio-in-tv-oggi-programmazione-diretta-venerdi-6-novembre-2026-cosa-vedere-229977",
-        "https://www.gazzetta.it/Calcio/Serie-A/06-11-2026/le-partite-di-oggi-in-campo-serie-a-serie-b-liga-premier-league-bundesliga-e-ligue-1.shtml"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIyq41IG_oGdbRI_2tnYtHyX4Cm8OIrJ9OT5PUMrk3MeHN9yCqvIU9aBGU_0c",
-      "image_credit": "Fantacalcio",
-      "news": [
-        {
-          "url": "https://www.fantacalcio.it/news/calcio-italia/06_11_2026/venezia-udinese-le-formazioni-ufficiali-500381",
-          "title": "Venezia-Udinese, le formazioni ufficiali",
-          "publisher": "Fantacalcio",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIyq41IG_oGdbRI_2tnYtHyX4Cm8OIrJ9OT5PUMrk3MeHN9yCqvIU9aBGU_0c"
-        },
-        {
-          "url": "https://www.libero.it/magazine/news/calcio-in-tv-oggi-programmazione-diretta-venerdi-6-novembre-2026-cosa-vedere-229977",
-          "title": "Il calcio in TV oggi, venerdì 6 novembre: torna la Serie A con Venezia-Udinese. Dove vederla live",
-          "publisher": "Libero",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrLKZ-O0a9zTIEjuNmsf4obG4ITT5FBdFgSp6jQtfbZrD5jNDcXD8S0S6tGXU"
-        },
-        {
-          "url": "https://www.gazzetta.it/Calcio/Serie-A/06-11-2026/le-partite-di-oggi-in-campo-serie-a-serie-b-liga-premier-league-bundesliga-e-ligue-1.shtml",
-          "title": "Le partite di oggi: Venezia-Udinese. In campo anche Everton, Siviglia e Tolosa",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGz7OK7I7itSmc4VaIe4kLTEMa6nJ4SqyUkn1OW9muRfNVr5r8LtpQRGH2zP4"
-        }
-      ]
-    },
-    {
-      "query": "sevilla - alavés",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T19:10:00Z",
-      "related_news_urls": [
-        "https://www.marca.com/futbol/laliga-ea-sports/sevilla-alaves/2026/11/06/01_0101_20261106_179_173-directo.html",
-        "https://onefootball.com/es/noticias/el-alaves-prepara-su-visita-al-sanchez-pizjuan-con-una-convocatoria-de-24-jugadores-43736877",
-        "https://www.elcorreo.com/alaves/quique-continuidad-guevara-yusi-once-20261106200547-nt.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi5H9ZskKiqywVb5hohpjqQBRecgdjePJxhXN_o4r7ezNz4CYFsPrcYgld5UI",
-      "image_credit": "MARCA",
-      "news": [
-        {
-          "url": "https://www.marca.com/futbol/laliga-ea-sports/sevilla-alaves/2026/11/06/01_0101_20261106_179_173-directo.html",
-          "title": "Sevilla - Alavés en directo | Última hora de LALIGA EA Sports en vivo hoy",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi5H9ZskKiqywVb5hohpjqQBRecgdjePJxhXN_o4r7ezNz4CYFsPrcYgld5UI"
-        },
-        {
-          "url": "https://onefootball.com/es/noticias/el-alaves-prepara-su-visita-al-sanchez-pizjuan-con-una-convocatoria-de-24-jugadores-43736877",
-          "title": "El Alavés prepara su visita al Sánchez-Pizjuán con una convocatoria de 24 jugadores",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc7V_YVUbotBYfha_68K41aw1upwpPCTMAjr_9L7OXmaSHRurcmmcVkl41a1E"
-        },
-        {
-          "url": "https://www.elcorreo.com/alaves/quique-continuidad-guevara-yusi-once-20261106200547-nt.html",
-          "title": "Quique da continuidad a Guevara y a Yusi en el once",
-          "publisher": "El Correo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy_O0vnrZVII5w2m-w9FYtCqR26EqHMI5ADnaI71dUWrSc4qtzy8dhpCGc3g4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGHSE7M53UTYS-Jv599AD_lhsJHrB0y2hbbPSBK9TJbOjrnTa2YLoETYk1bcg"
         }
       ]
     }
