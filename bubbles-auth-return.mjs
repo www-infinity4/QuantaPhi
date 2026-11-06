@@ -22,7 +22,13 @@ export function resumeAuthReturn(host=window) {
   // a fresh login screen.
   if(result==='failed'||result==='declined')return false;
   if(result==='received'&&callbackProvider==='google'){
-   host.location.replace('/bubbles-accounts.html?return=google');
+   // Respect the saved destination only for a live, same-window Google flow.
+   // Without its browser state, use the wallet-bound account recovery page.
+   const returningToChat=saved?.provider==='google'&&saved?.flow==='same-window'&&
+    saved.returnPath==='/bubbles.html'&&/^[A-Za-z0-9_-]{43}$/.test(saved.state)&&
+    Number.isFinite(saved.expiresAt)&&saved.expiresAt>Date.now()&&
+    saved.expiresAt<=Date.now()+300000;
+   host.location.replace(returningToChat?'/bubbles.html':'/bubbles-accounts.html?return=google');
    return true;
   }
   const pending=saved;
