@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T15:01:59.633019Z",
+  "checked_at": "2026-11-06T15:31:22.571750Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "tsm stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T14:40:00Z",
+      "query": "dell stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T15:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/tsmc-sinks-10-umc-down-182304636.html",
-        "https://www.fool.com/investing/2026/11/05/better-foundry-stock-taiwan-semiconductor-vs-intel/",
-        "https://247wallst.com/investing/2026/11/05/tsmcs-ai-opportunity-is-expanding-heres-the-question-that-matters-for-its-stock-price/"
+        "https://finance.yahoo.com/technology/ai/articles/dell-technologies-dell-shares-just-121309049.html",
+        "https://www.barchart.com/story/news/8674065/why-its-time-to-buy-the-pullback-in-dell-stock",
+        "https://www.investing.com/news/stock-market-news/why-is-dell-technologies-stock-plunging-today-93CH-5005083"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH1i5smlab_YTDQNq2G2eUo8cYSY-ZaiBppfWNewNwfm5_Oxdc__4HW39RpKI",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-sinks-10-umc-down-182304636.html",
-          "title": "TSMC Sinks 10%, UMC Down 16% as Chip Rout Deepens After Democrats’ Midterm Wins",
+          "url": "https://finance.yahoo.com/technology/ai/articles/dell-technologies-dell-shares-just-121309049.html",
+          "title": "Dell Technologies (DELL) Shares Just Moved, So What Is Driving Attention Now?",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH1i5smlab_YTDQNq2G2eUo8cYSY-ZaiBppfWNewNwfm5_Oxdc__4HW39RpKI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/05/better-foundry-stock-taiwan-semiconductor-vs-intel/",
-          "title": "Better Foundry Stock: Taiwan Semiconductor vs. Intel",
-          "publisher": "The Motley Fool",
+          "url": "https://www.barchart.com/story/news/8674065/why-its-time-to-buy-the-pullback-in-dell-stock",
+          "title": "Why It’s Time to Buy the Pullback in Dell Stock",
+          "publisher": "Barchart.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0agb96N5ub8QGuw4TN1FlhhVJWQQX6ivZyEHC9aRFROVBuDkZRz3AfI3IvlQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfFzFYIRf3BrqfB-qcE8y_pjFpkDxfw56iHUBsoUa0gNMssx_niU4_Gun9FM"
         },
         {
-          "url": "https://247wallst.com/investing/2026/11/05/tsmcs-ai-opportunity-is-expanding-heres-the-question-that-matters-for-its-stock-price/",
-          "title": "TSMC’s AI Opportunity Is Expanding. Here’s the Question That Matters for Its Stock Price",
-          "publisher": "24/7 Wall St.",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-dell-technologies-stock-plunging-today-93CH-5005083",
+          "title": "Why is Dell Technologies stock plunging today?",
+          "publisher": "Investing.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdSwB19sTzA4pzauKE2VcMkfwhBP7-OwkTqjvz2fcYKuQrDL6jBjmRvFfd4lk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSed6Y2w81xKE9OZ1Kx_arwm1dLZk9eR7rj_XrvUGgIRnPoC6NY-EQomNPSP4"
         }
       ]
     },
     {
-      "query": "john cena",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T14:30:00Z",
-      "related_news_urls": [
-        "https://www.wwe.com/videos/john-cena-shuts-down-kam-hendrix-in-savage-exchange-nxt-highlights-nov-4-2026",
-        "https://thewaltdisneycompany.com/news/wwe-espn-wide-world-sports-takeover/",
-        "https://www.foxnews.com/outkick-sports/john-cena-finds-next-invitee-namesake-wwe-showcase-nxt"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjiaHkPbwfF8RpFnHsBeHYlt9I1jlPnZXE39AOHfy8Ue92xOK9CHBBHRib4M",
-      "image_credit": "WWE",
-      "news": [
-        {
-          "url": "https://www.wwe.com/videos/john-cena-shuts-down-kam-hendrix-in-savage-exchange-nxt-highlights-nov-4-2026",
-          "title": "John Cena shuts down Kam Hendrix in savage exchange: NXT highlights, Nov. 4, 2026",
-          "publisher": "WWE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjiaHkPbwfF8RpFnHsBeHYlt9I1jlPnZXE39AOHfy8Ue92xOK9CHBBHRib4M"
-        },
-        {
-          "url": "https://thewaltdisneycompany.com/news/wwe-espn-wide-world-sports-takeover/",
-          "title": "WWE® & The Walt Disney Company Expand Partnership with Two-Day Takeover of ESPN Wide World of Sports Complex Featuring the John Cena Classic & Marvel Studios’ ‘Avengers: Doomsday’-",
-          "publisher": "The Walt Disney Company",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Ai6Rao-oel6E63IVJmehES_ChZb7lQzf6jKQUw2nsTeXeJCRaKN2X4eZC8s"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/john-cena-finds-next-invitee-namesake-wwe-showcase-nxt",
-          "title": "John Cena finds next invitee to his namesake WWE showcase at NXT",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfoIrSNtISXTuGFNSAXdAjBIE6etYfpZz7FSVtAoxHsj6mtg-SrkleLOqWkW0"
-        }
-      ]
-    },
-    {
-      "query": "magda linette",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T14:30:00Z",
-      "related_news_urls": [
-        "https://przegladsportowy.onet.pl/tenis/mai-hontama-magda-linette-relacja-na-zywo/b15vpcm",
-        "https://sportowefakty.wp.pl/tenis/1282714/dwa-kompletnie-inne-sety-w-meczu-magdy-linette",
-        "https://www.flashscore.pl/wiadomosci/tenis-flash-linette-walczy-o-po-fina-w-cennaj-cwiercfina-y-w-paryzu/OEBMAevI/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvPzSYVjImqvluH2153Y5WcM1AUq21KRVuOO6T-LvW__3-Z77hMTl7q5HMDY",
-      "image_credit": "Przegląd Sportowy",
-      "news": [
-        {
-          "url": "https://przegladsportowy.onet.pl/tenis/mai-hontama-magda-linette-relacja-na-zywo/b15vpcm",
-          "title": "Mai Hontama - Magda Linette [RELACJA NA ŻYWO]",
-          "publisher": "Przegląd Sportowy",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvPzSYVjImqvluH2153Y5WcM1AUq21KRVuOO6T-LvW__3-Z77hMTl7q5HMDY"
-        },
-        {
-          "url": "https://sportowefakty.wp.pl/tenis/1282714/dwa-kompletnie-inne-sety-w-meczu-magdy-linette",
-          "title": "Dwa kompletnie inne sety w meczu Magdy Linette",
-          "publisher": "SportoweFakty",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7AKd7uubieQkon-Al8aviAwThkb77NFhcqS2RCEKHCw-bz5vHX5vYGg7dg3Y"
-        },
-        {
-          "url": "https://www.flashscore.pl/wiadomosci/tenis-flash-linette-walczy-o-po-fina-w-cennaj-cwiercfina-y-w-paryzu/OEBMAevI/",
-          "title": "Tenis Flash: Linette walczy o półfinał w Cennaj. Ćwierćfinały w Paryżu",
-          "publisher": "Wyniki na żywo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6CubP9rZF0pRQdCD73ZdjkyKIcyvHuQvSYwIayhjVQw8C0hN4CZEzqazL6Mo"
-        }
-      ]
-    },
-    {
-      "query": "naomi watts",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T14:20:00Z",
-      "related_news_urls": [
-        "https://www.redcarpet-fashionawards.com/2026/11/05/naomi-watts-takes-alls-fair-press-to-the-streets-of-manhattan/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/naomi-watts-ashi-studio-couture-145957469.html",
-        "https://wwd.com/pop-culture/celebrity-news/naomi-watts-demellier-bag-balmain-dress-new-york-city-1239400059/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrqgycPH0aLs18TsI6BhhrPd7Cl_4GIZIVxanSZrBxgUxlrGjGdIfkoaKlHpE",
-      "image_credit": "Red Carpet Fashion Awards",
-      "news": [
-        {
-          "url": "https://www.redcarpet-fashionawards.com/2026/11/05/naomi-watts-takes-alls-fair-press-to-the-streets-of-manhattan/",
-          "title": "Naomi Watts Takes ‘All’s Fair’ Press to the Streets of Manhattan",
-          "publisher": "Red Carpet Fashion Awards",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrqgycPH0aLs18TsI6BhhrPd7Cl_4GIZIVxanSZrBxgUxlrGjGdIfkoaKlHpE"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/naomi-watts-ashi-studio-couture-145957469.html",
-          "title": "Naomi Watts’ Ashi Studio Couture Is an Old Hollywood Dream",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3_FNKGCiniM8-we-oZI_b2pED5WLRHPooQaOaT7JsvMuuaOoH5Vm-8jk_MOA"
-        },
-        {
-          "url": "https://wwd.com/pop-culture/celebrity-news/naomi-watts-demellier-bag-balmain-dress-new-york-city-1239400059/",
-          "title": "Naomi Watts Pairs Balmain with DeMellier",
-          "publisher": "WWD",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAZMfg1u0OzMY-QCq4yv9H42yQYOqqSI9mstXeUG82BcHQ1DivMUYeCQUkcmY"
-        }
-      ]
-    },
-    {
-      "query": "united states immigration and customs enforcement",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T14:10:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/05/ice-california-detention-santa-maria",
-        "https://www.independent.com/2026/11/02/santa-barbara-county-students-stage-walkouts-congressmember-calls-for-investigation-amid-ice-surge/",
-        "https://www.santamariasun.com/opinion/the-world-is-watching-you-santa-maria/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0hJEM4R_ztajr1WgN73SBqkeRnG9i9nXQA5ox2xTSEx-mkQZmVBOhAtjkZT4",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/05/ice-california-detention-santa-maria",
-          "title": "Outcry after ICE violently detains US citizen walking to high school: ‘I thought they were going to kill me’",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0hJEM4R_ztajr1WgN73SBqkeRnG9i9nXQA5ox2xTSEx-mkQZmVBOhAtjkZT4"
-        },
-        {
-          "url": "https://www.independent.com/2026/11/02/santa-barbara-county-students-stage-walkouts-congressmember-calls-for-investigation-amid-ice-surge/",
-          "title": "Santa Barbara County Students Stage Walkouts, Congressmember Calls for Investigation Amid ICE Surge",
-          "publisher": "The Santa Barbara Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl3fCdYBnvL8M2QVCTdZW7lDfCe8FvjWzzJ7N7G94Lgdqr2-LW4UtBv8FtRkM"
-        },
-        {
-          "url": "https://www.santamariasun.com/opinion/the-world-is-watching-you-santa-maria/",
-          "title": "The world is watching you, Santa Maria",
-          "publisher": "Santa Maria Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5PWyfGpF7kVCeEy88XABNqhDTdj4nyUspp0X8eJYlSxfmfxonvjH3uCj18A4"
-        }
-      ]
-    },
-    {
-      "query": "cloud gaming",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T14:00:00Z",
-      "related_news_urls": [
-        "https://news.xbox.com/en-us/2026/11/05/a-faster-simpler-xbox-experience-is-coming-to-pc-web-and-cloud/",
-        "https://www.techpowerup.com/354525/new-xbox-pc-app-claims-60-faster-launch-times-and-ux-improvements",
-        "https://www.theverge.com/news/1027353/microsoft-new-xbox-pc-app-redesign"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmY4Z4DTlQTQ2Fk0vFO3zsiWX7TzLxLyJ2Q4hMej6Z-29j1KBD3FbtCqYOMiI",
-      "image_credit": "XBOX Wire",
-      "news": [
-        {
-          "url": "https://news.xbox.com/en-us/2026/11/05/a-faster-simpler-xbox-experience-is-coming-to-pc-web-and-cloud/",
-          "title": "A Faster, Simpler XBOX Experience Is Coming to PC, Web and Cloud",
-          "publisher": "XBOX Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmY4Z4DTlQTQ2Fk0vFO3zsiWX7TzLxLyJ2Q4hMej6Z-29j1KBD3FbtCqYOMiI"
-        },
-        {
-          "url": "https://www.techpowerup.com/354525/new-xbox-pc-app-claims-60-faster-launch-times-and-ux-improvements",
-          "title": "New Xbox PC App Claims 60% Faster Launch Times and UX Improvements",
-          "publisher": "TechPowerUp",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbK6JweNv8wB9OpDf4LqVHfw3vLkXnEClU8nPGSkNLhHLlysIRo6wNhm4EUuM"
-        },
-        {
-          "url": "https://www.theverge.com/news/1027353/microsoft-new-xbox-pc-app-redesign",
-          "title": "Xbox overhauls its PC, web, and cloud apps with a faster design",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWI66PbkmYpOOiZASZJM5zwGT_CgcJ-ylNN73NQN5VhRP2ACqCLhFvAOkG5so"
-        }
-      ]
-    },
-    {
-      "query": "stephanie ruhle",
+      "query": "ciara",
       "approx_searches": "200+",
-      "published_at": "2026-11-06T14:00:00Z",
+      "published_at": "2026-11-06T15:10:00Z",
       "related_news_urls": [
-        "https://www.mediaite.com/opinion/ms-now-lecturing-the-peasants-on-affordability-while-wearing-high-end-fashion/",
-        "https://www.ms.now/money-power-politics/full-episode/money-power-politics-11-4-26",
-        "https://www.ms.now/money-power-politics/full-episode/money-power-politics-10-30-26"
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glorilla-responds-ciaras-halloween-homage-171343402.html",
+        "https://wbxxfm.com/ixp/812/p/glorilla-brandon-ingram-ciara-bow-wow-like-you-halloween-costume/",
+        "https://www.hotnewhiphop.com/1015172-glorilla-brandon-ingram-ciara-bow-wow-halloween"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgBw6XAbvEXjzoO32MWi_-mO6p5YNhqVBsDiHjbTN56VH-dpHuw-4HmjnNyY",
-      "image_credit": "Mediaite",
-      "news": [
-        {
-          "url": "https://www.mediaite.com/opinion/ms-now-lecturing-the-peasants-on-affordability-while-wearing-high-end-fashion/",
-          "title": "MS NOW Lecturing the Peasants On Affordability While Wearing High-end Fashion",
-          "publisher": "Mediaite",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgBw6XAbvEXjzoO32MWi_-mO6p5YNhqVBsDiHjbTN56VH-dpHuw-4HmjnNyY"
-        },
-        {
-          "url": "https://www.ms.now/money-power-politics/full-episode/money-power-politics-11-4-26",
-          "title": "Money, Power, Politics – 11/4/26",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbfGuBuXUl9Fb1wGgtZPikz2rJkS-f-OqLjYKOrSalvvXbTzkRUXBPNZYadnw"
-        },
-        {
-          "url": "https://www.ms.now/money-power-politics/full-episode/money-power-politics-10-30-26",
-          "title": "Money, Power, Politics – 10/30/26",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYDz6reuf0GlObwfkXS9ob2_7e4c7V0HpnFkJiCq8Oy-XiKgU06iJdNWsTsgQ"
-        }
-      ]
-    },
-    {
-      "query": "carson daly",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T13:50:00Z",
-      "related_news_urls": [
-        "https://www.syracuse.com/entertainment/2026/11/beloved-today-show-anchor-announces-new-role-at-nbc.html",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/",
-        "https://www.today.com/news/carson-daly-saturday-today-anchor-rcna607601"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtY9dJbbieQ696vHfmlFTASpS55OT6wLNed4k1mHh4KqHVEWIobI7hVS9oXg8",
-      "image_credit": "Syracuse.com",
-      "news": [
-        {
-          "url": "https://www.syracuse.com/entertainment/2026/11/beloved-today-show-anchor-announces-new-role-at-nbc.html",
-          "title": "Beloved ‘Today’ show anchor announces new role at NBC",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtY9dJbbieQ696vHfmlFTASpS55OT6wLNed4k1mHh4KqHVEWIobI7hVS9oXg8"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/",
-          "title": "Carson Daly joins 'Saturday Today' beside Laura Jarrett, will keep 'Today' job",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo14vY6VpozLBqC4ur3fRcE5rFULO26Q_HUzQx2iRVMPwlwg9pAPjrxHtJ7jc"
-        },
-        {
-          "url": "https://www.today.com/news/carson-daly-saturday-today-anchor-rcna607601",
-          "title": "Carson Daly Announced as Co-Anchor of Saturday TODAY",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQA2esk9FksIirrGbiYs08If9Kme-XNQbgoJCu0EHi28uGyrYx1d5klJRugfBk"
-        }
-      ]
-    },
-    {
-      "query": "heartland",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T13:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/jessica-chastain-premieres-country-music-050311439.html",
-        "https://www.imdb.com/news/ni66097921/?ref_=nwc_art_perm",
-        "https://www.timesargus.com/news/national/ny-special-screening-of-heartland/image_812b5d13-a16f-5f53-9561-0486c8222ba0.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShSehaYcZb-dXPro9OcdJFDl3qKiSwhjype0fqgjk8BWEhTaDh24Bh3nFszY",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeADe6P7DGUcqnw9n0_jXItI0tkbrwE_gULLPrZF9ZPwr-DrwaZfQu8K6Rq-4",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/jessica-chastain-premieres-country-music-050311439.html",
-          "title": "Jessica Chastain Premieres New Country Music Movie ‘Heartland’ in NYC, Explains Why She Won’t Be Singing on Broadway",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glorilla-responds-ciaras-halloween-homage-171343402.html",
+          "title": "GloRilla Responds to Ciara's Halloween Homage With Her Own Costume Tribute",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShSehaYcZb-dXPro9OcdJFDl3qKiSwhjype0fqgjk8BWEhTaDh24Bh3nFszY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeADe6P7DGUcqnw9n0_jXItI0tkbrwE_gULLPrZF9ZPwr-DrwaZfQu8K6Rq-4"
         },
         {
-          "url": "https://www.imdb.com/news/ni66097921/?ref_=nwc_art_perm",
-          "title": "Jessica Chastain Premieres New Country Music Movie ‘Heartland’ in NYC, Explains Why She Won’t Be Singing on Broadway",
-          "publisher": "IMDb",
+          "url": "https://wbxxfm.com/ixp/812/p/glorilla-brandon-ingram-ciara-bow-wow-like-you-halloween-costume/",
+          "title": "GloRilla, Boyfriend Dress Up Like Ciara, Bow Wow for Halloween",
+          "publisher": "K1025",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBCJRE5zWGahnLguZZqG1YYqOnVRcKscFHJiUMVMFdvvsM3id6ZiOPAeW5v8c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2GiJygo6qlMoZQFX1tjmbw1jYfba3EVT0Kpu0Fyyf2c0MUqseB6Fm6sjZRso"
         },
         {
-          "url": "https://www.timesargus.com/news/national/ny-special-screening-of-heartland/image_812b5d13-a16f-5f53-9561-0486c8222ba0.html",
-          "title": "NY Special Screening of \"Heartland\"",
-          "publisher": "Times Argus",
+          "url": "https://www.hotnewhiphop.com/1015172-glorilla-brandon-ingram-ciara-bow-wow-halloween",
+          "title": "GloRilla & Brandon Ingram Channel Ciara & Bow Wow For Halloween",
+          "publisher": "HotNewHipHop",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjoQps71L_JhhK_Oaw71JQSkjdmN1eIRIJMO09dKR3nP6HCZMX1wRLZETmkhE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfRkS4V3D03vaw_nczC9kHUi5V3NHSzojkjE5hKulI4a342edqQlTiJCNuXU"
         }
       ]
     },
     {
-      "query": "ben shelton",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T13:30:00Z",
+      "query": "wow forever server status",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T15:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50389791/ben-shelton-moves-paris-masters-quarters-vs-tommy-paul",
-        "https://www.atptour.com/en/video/hot-shot-rinderknech-clinches-first-set-vs-shelton-with-dreamy-touch-paris-2026",
-        "https://tennisnow.com/shelton-wins-thriller-sets-up-all-american-paris-showdown-vs-paul/"
+        "https://news.blizzard.com/en-us/article/24317678/set-your-campfire-ablaze-with-the-pouch-of-violet-dust",
+        "https://blog.twitch.tv/en/2026/11/04/world-of-warcraft-forever-is-here/",
+        "https://www.engadget.com/2305373/world-of-warcraft-forever-blizzard-had-to-reconnect-with-what-made-wow-great-in-the-first-place/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdRcY2kfegyysoZEHc142s0AirzZCM81XAcic-lr2BdTbmbmHzcHA2ZEXc09E",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFbNQlHLyqqtl2NrWhpiJnXjiG2HBVxXkHfPZYyoKsQ0LRQ6Eij2AWDb8IXPM",
+      "image_credit": "Blizzard News",
       "news": [
         {
-          "url": "https://www.espn.com/tennis/story/_/id/50389791/ben-shelton-moves-paris-masters-quarters-vs-tommy-paul",
-          "title": "Ben Shelton moves into Paris Masters quarters, to face Tommy Paul next",
-          "publisher": "ESPN",
+          "url": "https://news.blizzard.com/en-us/article/24317678/set-your-campfire-ablaze-with-the-pouch-of-violet-dust",
+          "title": "Set Your Campfire Ablaze with the Pouch of Violet Dust!",
+          "publisher": "Blizzard News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdRcY2kfegyysoZEHc142s0AirzZCM81XAcic-lr2BdTbmbmHzcHA2ZEXc09E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFbNQlHLyqqtl2NrWhpiJnXjiG2HBVxXkHfPZYyoKsQ0LRQ6Eij2AWDb8IXPM"
         },
         {
-          "url": "https://www.atptour.com/en/video/hot-shot-rinderknech-clinches-first-set-vs-shelton-with-dreamy-touch-paris-2026",
-          "title": "Hot Shot: Rinderknech clinches first set vs. Shelton with dreamy touch",
+          "url": "https://blog.twitch.tv/en/2026/11/04/world-of-warcraft-forever-is-here/",
+          "title": "Begin Again in Azeroth: World of Warcraft: Forever Is Here",
+          "publisher": "Twitch Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3YGvvEoJJjNzp3PtFe9MElXz12R-B5EXLkXjKXCuiR4Vgp0pJdSk7etEs5K8"
+        },
+        {
+          "url": "https://www.engadget.com/2305373/world-of-warcraft-forever-blizzard-had-to-reconnect-with-what-made-wow-great-in-the-first-place/",
+          "title": "With World of Warcraft: Forever, Blizzard had to reconnect with what made WoW great in the first place",
+          "publisher": "Engadget",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu7Sq7q0zKt7Jc_FvMPTZoS6e6a0yrY2O4KQk8RY_yyxyY1ByvUhOvExydbNc"
+        }
+      ]
+    },
+    {
+      "query": "qqqm",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T15:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/invesco-nasdaq-100-etf-qqqm-110516688.html",
+        "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-qqq-buys-19-110535090.html",
+        "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-adds-apple-110521279.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-nasdaq-100-etf-qqqm-110516688.html",
+          "title": "Invesco NASDAQ 100 ETF (QQQM) Adds NVIDIA and Apple on Tuesday",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-qqq-buys-19-110535090.html",
+          "title": "Invesco QQQ (QQQ) Buys $19.6 Million More NVIDIA on Tuesday",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-adds-apple-110521279.html",
+          "title": "Proshares Trust (TQQQ) Adds Apple and Nvidia on Nov. 4",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        }
+      ]
+    },
+    {
+      "query": "luca van assche",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T15:00:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/nishesh-basavareddy-vs-jerome-kym-nov-06-2026/",
+        "https://en.tennistemple.com/actu/van-assche-vs-hijikata-rare-under-180m/GbHP",
+        "https://www.dimers.com/tennis/news/luca-van-assche-vs-rinky-hijikata-tennis-prediction-atp-paris-masters-2026-ac"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBoj3SloaaKRs5cXSgJc7cv6hvZHr71Xsjt8MWD_qxVforioCt0oFRel7-CQ",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/nishesh-basavareddy-vs-jerome-kym-nov-06-2026/",
+          "title": "November 6, 2026: Nishesh Basavareddy vs Jerome Kym Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBoj3SloaaKRs5cXSgJc7cv6hvZHr71Xsjt8MWD_qxVforioCt0oFRel7-CQ"
+        },
+        {
+          "url": "https://en.tennistemple.com/actu/van-assche-vs-hijikata-rare-under-180m/GbHP",
+          "title": "Van Assche vs Hijikata: Rare Under-1.80m Quarterfinal at Paris Masters",
+          "publisher": "TennisTemple",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjGodfl9pDARnqmu8oJs4Z2__1YsiTYEcOXH9q1Jv3wHzSAuy6aXSvgZiPsW0"
+        },
+        {
+          "url": "https://www.dimers.com/tennis/news/luca-van-assche-vs-rinky-hijikata-tennis-prediction-atp-paris-masters-2026-ac",
+          "title": "Luca Van Assche vs. Rinky Hijikata prediction, odds, picks for ATP Paris Masters 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpxH5-z3BRGFs2cD0nLOU39L1G-QVV4RiIr76dYh98M9F6wnsqcfga1csNhA"
+        }
+      ]
+    },
+    {
+      "query": "asts stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T15:00:00Z",
+      "related_news_urls": [
+        "https://www.businesswire.com/news/home/20261104508354/en/AST-SpaceMobile-Awarded-U.S.-Space-Force-Contract-Through-STR-to-Advance-Space-Based-Sensing-Capabilities",
+        "https://www.barchart.com/story/news/8680261/asts-stock-alert-ast-spacemobile-lands-new-space-force-contract",
+        "https://spacewatch.global/2026/11/ast-spacemobile-joins-u-s-space-force-program-to-advance-space-based-sensing/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKSYZnsBapX2CViLcHa35O-dQfoe0Jn8t6GG2vAMaq2qrJEFj2m55iBjA8t6w",
+      "image_credit": "Business Wire",
+      "news": [
+        {
+          "url": "https://www.businesswire.com/news/home/20261104508354/en/AST-SpaceMobile-Awarded-U.S.-Space-Force-Contract-Through-STR-to-Advance-Space-Based-Sensing-Capabilities",
+          "title": "AST SpaceMobile Awarded U.S. Space Force Contract Through STR to Advance Space-Based Sensing Capabilities",
+          "publisher": "Business Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKSYZnsBapX2CViLcHa35O-dQfoe0Jn8t6GG2vAMaq2qrJEFj2m55iBjA8t6w"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8680261/asts-stock-alert-ast-spacemobile-lands-new-space-force-contract",
+          "title": "ASTS Stock Alert: AST SpaceMobile Lands New Space Force Contract",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsE3iSkzVunBGHPYUnPkspVZ0waZ8HXD8dML2Rvh4Uf58hAn9daOXPv21bll8"
+        },
+        {
+          "url": "https://spacewatch.global/2026/11/ast-spacemobile-joins-u-s-space-force-program-to-advance-space-based-sensing/",
+          "title": "AST SpaceMobile Joins U.S. Space Force Program to Advance Space-Based Sensing",
+          "publisher": "SpaceWatch.GLOBAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdhK1gJxyGDzrsG0NJWbDLt7nQKF3VpftkxbgC_S1ij5VBanhIK9imlv-82QY"
+        }
+      ]
+    },
+    {
+      "query": "rinky hijikata",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T15:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/tennis/articles/ckn8we5p1ydeo",
+        "https://www.atptour.com/en/news/djokovic-hijikata-paris-2026-wednesday",
+        "https://www.forbes.com/sites/adamzagoria/2026/11/04/djokovic-out-of-atp-finals-zverev-makes-history-with-loss/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIy_lLTBfOst04sTPnp5qWW_Di0qOd4oype9kage1ijAJ9SfxyXLZ0NgrmCc4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/tennis/articles/ckn8we5p1ydeo",
+          "title": "Novak Djokovic: Serb's season over as defeat in Paris means he will miss ATP Finals",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIy_lLTBfOst04sTPnp5qWW_Di0qOd4oype9kage1ijAJ9SfxyXLZ0NgrmCc4"
+        },
+        {
+          "url": "https://www.atptour.com/en/news/djokovic-hijikata-paris-2026-wednesday",
+          "title": "Hijikata upsets Djokovic in Paris, leaves Live Race open",
           "publisher": "ATP Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1M-u4hT5M2CpdkAFuxCwDuaOpIcBKxoxhtIyEk2zcrrnSqONcazPgef4EBA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk34q3F30lYzE9zyhYHtMOoTLf2Vn5Bp_gsbDF4riVmm4w19Qon4Q7V6MfMY4"
         },
         {
-          "url": "https://tennisnow.com/shelton-wins-thriller-sets-up-all-american-paris-showdown-vs-paul/",
-          "title": "Shelton Wins Thriller, Sets Up All-American Paris Showdown vs. Paul",
-          "publisher": "Tennis Now",
+          "url": "https://www.forbes.com/sites/adamzagoria/2026/11/04/djokovic-out-of-atp-finals-zverev-makes-history-with-loss/",
+          "title": "Djokovic Misses Out On ATP Finals; Zverev Makes History With Loss",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1XauziuHwj8KOoBE1aTEmOZkb2DQGsM5Hi6MmKwqwpUsP3t2Mj8QXlxrgGnk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUO_yOUiFmOgoOTZkktCpFczktlYmkAcJeWr37N7TPOH8fFzUq93z9lpEpYsk"
+        }
+      ]
+    },
+    {
+      "query": "vgt",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T15:00:00Z",
+      "related_news_urls": [
+        "https://seekingalpha.com/news/4666970-ten-undervalued-tech-stocks-riding-a-wave-of-rising-capital-spending",
+        "https://finance.yahoo.com/markets/stocks/articles/3-value-stocks-38-discount-011948981.html",
+        "https://global.morningstar.com/en-ea/stocks/best-tech-stocks-buy-2"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKXTd6NhFJl_9YfnQ6SRZfb1TKCnQnvBP309Hd2Tgqb3UYpaiahIDgvmflzw",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/news/4666970-ten-undervalued-tech-stocks-riding-a-wave-of-rising-capital-spending",
+          "title": "Ten undervalued tech stocks riding a wave of rising capital spending (VGT:NYSEARCA)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKXTd6NhFJl_9YfnQ6SRZfb1TKCnQnvBP309Hd2Tgqb3UYpaiahIDgvmflzw"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/3-value-stocks-38-discount-011948981.html",
+          "title": "3 Value Stocks With Up To 38% Discount To Fair Value",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbotSpfLO3eColFBlYrGMH9V7qD51sO35d0cMyLU9gslQdilDDFDBrIggBNV0"
+        },
+        {
+          "url": "https://global.morningstar.com/en-ea/stocks/best-tech-stocks-buy-2",
+          "title": "The Best Tech Stocks to Buy",
+          "publisher": "Morningstar",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvvUCEWLO8QwwzdvroTiHB1PcmDYBEPxBDfjQBAnBSdQFQU5LiG2ciGPDjWn4"
+        }
+      ]
+    },
+    {
+      "query": "s&p500",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T14:50:00Z",
+      "related_news_urls": [
+        "https://seekingalpha.com/article/4963563-i-was-tired-of-winning",
+        "https://www.benzinga.com/opinion/26/10/62636823/sp500-rose-14-percent-in-a-year-and-got-cheaper",
+        "https://seekingalpha.com/article/4960918-the-bear-market-is-ending-not-beginning"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWDRfqEfXOja4SFj6jDOq1wS22-p_o09XyCPCpAjbQ9RD04zTEmFaUXLxOROA",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/article/4963563-i-was-tired-of-winning",
+          "title": "I Was Tired Of Winning (SP500)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWDRfqEfXOja4SFj6jDOq1wS22-p_o09XyCPCpAjbQ9RD04zTEmFaUXLxOROA"
+        },
+        {
+          "url": "https://www.benzinga.com/opinion/26/10/62636823/sp500-rose-14-percent-in-a-year-and-got-cheaper",
+          "title": "S&P 500 Rose 14% In A Year And Got Cheaper",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDu9i3XLW6nxuO19GbnSybaVp0WUAPqgVWO-3jrqYStKsck4H3tduO5MlgX-c"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4960918-the-bear-market-is-ending-not-beginning",
+          "title": "The Bear Market Is Ending, Not Beginning (SPX)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_ffJt5Mz_H2GYidu7swxi140Es8yHu_pQc9ZuT0EqpvXKhWh1pzz5Vfs7nIs"
+        }
+      ]
+    },
+    {
+      "query": "schd stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T14:50:00Z",
+      "related_news_urls": [
+        "https://www.fool.com/investing/2026/11/04/history-says-this-etf-is-a-fantastic-buy-and-hold/",
+        "https://seekingalpha.com/article/4961640-schds-outperformance-wont-last",
+        "https://finance.yahoo.com/markets/stocks/articles/dividend-equity-etf-schd-touches-125500052.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEQU0W72wMZb4fwy1KlGcgRu8-Qp9EHsc6N9BkHLFVGePBsGld-hkFcfjzAKE",
+      "image_credit": "The Motley Fool",
+      "news": [
+        {
+          "url": "https://www.fool.com/investing/2026/11/04/history-says-this-etf-is-a-fantastic-buy-and-hold/",
+          "title": "History Says This ETF Is a Fantastic Buy-and-Hold Investment -- and It Could Turn $100 per Month Into $359,492",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEQU0W72wMZb4fwy1KlGcgRu8-Qp9EHsc6N9BkHLFVGePBsGld-hkFcfjzAKE"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4961640-schds-outperformance-wont-last",
+          "title": "SCHD's Outperformance Won't Last (NYSEARCA:SCHD)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHgi2TdLASTapf1VTY_TkcBRNqMmUswRQcmNKiAKsSo9QvuWrtZSlUo0co5qI"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/dividend-equity-etf-schd-touches-125500052.html",
+          "title": "Dividend Equity ETF (SCHD) Touches New 52-Week High",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_1f8snons6QHzGR8A8ev6dukorLtpEqJya4NZVbt8B7s3nuxxEZtBZAB_JDU"
         }
       ]
     }
