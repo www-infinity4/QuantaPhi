@@ -61,3 +61,41 @@ To activate unattended ingestion:
 
 **Source commits are not proof of public deployment.** D1 backfill success
 does not by itself mean the Worker is scheduled and serving live queries.
+
+## Visitor-initiated refresh (one tap)
+
+The homepage **Refresh Cloudflare traffic** button uses
+`GET /api/site-traffic?refresh=1` with `Cache-Control: no-store`.
+The request runs entirely through the same-origin Worker. The Worker
+validates the existing D1 ledger, then, **only when a server-side
+`SITE_TRAFFIC_CLOUDFLARE_TOKEN` secret exists**, fetches the last 30
+UTC days directly from Cloudflare GraphQL, performs idempotent D1
+upserts and reads D1 again before reporting `refreshStatus=refreshed`.
+
+To avoid triggering unnecessary provider requests on repeated taps, a
+successful verification younger than five minutes returns
+`refreshStatus=recent` and the last verified totals. Without the
+secret it returns `refreshStatus=not_configured`; on GraphQL or D1
+update failure it returns `refreshStatus=failed` with the preserved
+ledger rather than inventing a new count. The initial page load and
+once-per-minute background display update continue to use the
+read-only `GET /api/site-traffic` route.
+
+**Important deployment gate (November 3, 2026):** Inspecting the
+active `quantaphi-site-traffic` Worker's bindings showed
+`TRAFFIC_LEDGER` but no Analytics secret. Until the owner provisions
+that secret **and deploys the updated Worker**, the button cannot
+perform a real Cloudflare source refresh. The client must not say
+"refreshed" merely because it reloaded a stored number.
+
+Operational checks: verify the Worker secret's **name only** through
+Cloudflare settings (never print token value), deploy the isolated
+Worker with its unchanged D1 and route bindings, click once after five
+minutes and verify response `refreshStatus=refreshed` plus a new
+`fetchedAt`, click again to verify `refreshStatus=recent`, then
+temporarily simulate provider failure in staging to ensure the
+verified number remains visible. Do not confuse the number of
+HTTP requests with unique people. The five-minute cooldown is a
+best-effort guard rather than a strict global rate limit; protect the
+route with an additional shared rate limiter if the public button is
+subjected to high traffic.

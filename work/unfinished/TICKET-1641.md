@@ -82,3 +82,12 @@ Owner reiterated requirements: Infinity Radio remains playing inside News Phi; c
 - **Related independent work:** News Phi audio continuity draft [#1654](https://github.com/www-infinity4/QuantaPhi/pull/1654) remains open; older album-lookup draft [#1631](https://github.com/www-infinity4/QuantaPhi/pull/1631) and Alien-Radio [#41](https://github.com/www-infinity4/Alien-Radio/pull/41) remain unmerged. The compact source strip should not overwrite those workstreams.
 
 **Status:** 🟡 `implementing`, 65% source-scope estimate, sessions 3, remaining unknown, lease/fence unclaimed. **Next:** verify exact-head CI on #1655, repair conflicts with current main safely, independent review, then separately merge and verify mobile playback and artist offer source links before declaring live.
+
+
+## 2026-11-06 screenshot-driven reconciliation
+
+- Owner Android screenshot confirms default-branch Steve Miller still shows an empty black video placeholder and external YouTube handoff; the Classic Rock buttons open external media. These violate the later, superseding on-page play/pause requirement.
+- Reused draft PR #1655 and existing ticket #1641, no new work issue or coordinator lease. Sourced shared official-player controls from the existing unmerged repair, while preserving main's newer Infinity Radio catalog/audio recovery logic and adding mutual artist↔radio focus.
+- The six music buttons do not open YouTube tabs; a single visible 220×220 embedded provider player stays anchored outside the Oracle carousel so switching Quick Cards does not unmount it. YouTube policy still requires a visible player and provider/Android/browser autoplay or embed restrictions can prevent a particular source from playing; a hidden audio-only player is not claimed.
+- Preserved all newer main authentication and site changes by producing a merge tree based on the current main, rather than replacing homepage or radio modules wholesale. Corrected an existing test typo (`b.name` instead of `band.name`) and placed the media dock on the left to avoid the existing right-side Bubbles orb.
+- Stage state: source prepared; exact-head CI and independently verified Android playback still required. No production deployment, full-album playlist validity, licensing rights, monetization, or wallet credits asserted. Next: inspect workflow status and run device/browser readback after reviewed merge.

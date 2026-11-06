@@ -6,7 +6,7 @@ const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 test('five verified artist channels and original band-controlled releases, never reseller links',()=>{
  assert.deepEqual(CLASSIC_ROCK_BANDS.map(b=>b.id),['pink-floyd','reo-speedwagon','cheap-trick','journey','styx']);
  for(const band of CLASSIC_ROCK_BANDS){
-  assert.ok(b.name&&band.feature&&band.youtube.startsWith('https://www.youtube.com/'));
+  assert.ok(band.name&&band.feature&&band.youtube.startsWith('https://www.youtube.com/'));
   assert.ok(b.offers.length>=1);
   assert.ok(linkIsAllowed(band.youtube));
   for(const offer of band.offers){

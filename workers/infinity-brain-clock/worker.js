@@ -21,6 +21,7 @@ import {handleQuickCardBrowser,readBoundedJson} from './quick-card-browser.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
+import {describeRunnerIdle,noteRunnerSkip,noteRunnerDependencyStatuses} from './runner-claim-idle.mjs';
 import {DEFERRED_REVIEW_INTERVAL_MS,sourceRecoveryEligibility,inspectDeferredSources,recoveryDecision} from './deferred-recovery.mjs';
 import {ticketStatusFromJobs} from './ticket-status.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
@@ -297,6 +298,7 @@ export class BrainClock extends DurableObject{
    sortCandidates(candidates,requested);
    const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
    await this.ctx.storage.put('writer-queue-selector',{when:Date.now(),examined:admission.examined,deferred:admission.deferred.slice(0,40)});
+   const claimBlockedBy={},dependencyStates={};
    for(const {ticket,jobs,job,context} of prioritizeReadOnlyPinkReviews(admission.allowed,{requested})){
     {
      if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status))continue;
@@ -306,16 +308,17 @@ export class BrainClock extends DurableObject{
      // Never claim a read-only Pink verification while an associated Green
      // technical repair is running, committed or finished. Claiming it would
      // later fail the D1 receipt guard and churn the ticket without progress.
-     if(sourceReview&&pinkReviewHasActiveRepair(context,sourceReview))continue;
+     if(sourceReview&&pinkReviewHasActiveRepair(context,sourceReview)){noteRunnerSkip(claimBlockedBy,'source_repair_active');continue;}
      const effectiveDependencies=sourceReview?[sourceReview.primaryId]:(job.dependencies||[]);
-     if(engine&&effectiveDependencies.some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified','merged_verified'].includes(j.status))))continue;
+     if(engine&&effectiveDependencies.some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified','merged_verified'].includes(j.status)))){noteRunnerSkip(claimBlockedBy,'dependency_pending');noteRunnerDependencyStatuses(dependencyStates,jobs,effectiveDependencies);continue;}
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='writer:'+ticket.id+':'+job.id+':'+revision;
      const previous=await this.ctx.storage.get(key);
      const repositoryLease=await this.ctx.storage.get('repository-lease:'+job.repository);
-     if(repositoryLease?.leaseUntil>Date.now())continue;
+     if(repositoryLease?.leaseUntil>Date.now()){noteRunnerSkip(claimBlockedBy,'repository_lease_active');continue;}
      const deps=effectiveDependencies.map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
-     if(!checkOwnerRunnerRequest(job,{now:Date.now(),prior:previous,lease:repositoryLease,deps}).eligible)continue;
+     const eligibility=checkOwnerRunnerRequest(job,{now:Date.now(),prior:previous,lease:repositoryLease,deps});
+     if(!eligibility.eligible){noteRunnerSkip(claimBlockedBy,eligibility.reason);if(eligibility.reason==='dependency_pending')noteRunnerDependencyStatuses(dependencyStates,jobs,effectiveDependencies);continue;}
      const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+(engine?40:20)*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
      const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
      const memories=[];for(const item of quantIndex.filter(q=>q.repository===job.repository).slice(0,5)){const q=await this.ctx.storage.get(item.id);if(q)memories.push(q);}
@@ -332,12 +335,23 @@ export class BrainClock extends DurableObject{
      const claimedJob=claimedContext.color_jobs.find(j=>j.id===job.id);
      claimedJob.status='working';claimedJob.progress={...claimedJob.progress,attemptedAt:new Date().toISOString(),claimedAt:new Date().toISOString(),summary:'The authenticated runner claimed this order and is inspecting the repository.',blocker:'',next:'Implementation and test receipts will follow automatically.',runUrl};
      const claimed=await this.env.WORK_DB.prepare("UPDATE work_tickets SET context_json=?,status='working',updated_at=? WHERE id=? AND context_json=?").bind(JSON.stringify(claimedContext),Date.now(),ticket.id,ticket.context_json).run();
-     if(claimed?.meta?.changes===0){await this.ctx.storage.put(key,{...lease,leaseUntil:0,status:'superseded'});await this.ctx.storage.put('repository-lease:'+job.repository,{...lease,leaseUntil:0});continue;}
+     if(claimed?.meta?.changes===0){noteRunnerSkip(claimBlockedBy,'d1_update_conflict');await this.ctx.storage.put(key,{...lease,leaseUntil:0,status:'superseded'});await this.ctx.storage.put('repository-lease:'+job.repository,{...lease,leaseUntil:0});continue;}
      await this.emit(sourceReview?'pink-panther':'greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+(sourceReview?' for read-only source verification. No new code write is authorized.':'. It will inspect its credential, target repository and acceptance adapters before any write.'),runUrl);
      return Response.json({ok:true,lease});
     }
    }
-   return Response.json({ok:true,lease:null});
+   // A valid signed writer run with no lease is not a completed engineering
+   // iteration. Report only bounded aggregate admission facts, never ticket
+   // IDs, owner hashes, instructions or raw blocker strings.
+   const adapterMatches=admission.allowed.filter(({job})=>
+    !['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status)&&
+    (engine?/^www-infinity4\/[\w.-]+$/.test(job.repository||''):supported(job)))
+    .length;
+   const idle=describeRunnerIdle({candidateCount:candidates.length,admission,
+    adapterMatches,claimBlockedBy,dependencyStates,scanLimited:(rows.results||[]).length>=100});
+   await this.ctx.storage.put('writer-idle-summary:'+ (engine?'repository-engine':'interface-writer'),
+    {at:Date.now(),...idle});
+   return Response.json({ok:true,lease:null,idle});
   }
   const lease=await this.ctx.storage.get(String(body.key||''));
   if(path==='/runner/source-review-receipt'){
@@ -644,7 +658,18 @@ export class BrainClock extends DurableObject{
  async directGithub(body){
   if(!/^[0-9a-f-]{36}$/i.test(body.requestId||''))return {ok:false,error:'request_id_required'};
   const key='direct-github:'+body.requestId;
-  if(body.action==='receipt')return await this.ctx.storage.get(key)||{ok:false,error:'receipt_not_found'};
+  if(body.action==='receipt'){
+   const saved=await this.ctx.storage.get(key);
+   if(saved&&this.env.BUBBLE_BITS_ENABLED==='1'){
+    const {deliverBitCredit}=await import('./iteration-credit.mjs');
+    for(const item of (saved.receipts||[]).slice(0,12))if(item.bit?.status==='pending'&&item.bitCredit){
+     const settled=await this.ctx.storage.get('bit-credit-proof:'+item.receipt.id);
+     const proof=settled||(saved.status==='working'?item.bit:await deliverBitCredit(this.env,{receipt:item.receipt,credit:item.bitCredit}));
+     if(proof.status==='credited'){item.bit=proof;await this.ctx.storage.put('bit-credit-proof:'+item.receipt.id,proof);}
+    }
+   }
+   return saved||{ok:false,error:'receipt_not_found'};
+  }
   if(body.action==='search_github_code'){
    // Read-only global code search is independent of the repository write lease.
    // The /work/github ingress already verifies the current owner session.
@@ -673,7 +698,12 @@ export class BrainClock extends DurableObject{
    const prior=await this.ctx.storage.get(key);if(prior)return {existing:prior};
    const lease=await this.ctx.storage.get(leaseKey);
    if(lease?.leaseUntil>Date.now())return {existing:{ok:false,status:'blocked',error:'repository_job_running',repository}};
-   const record={ok:true,status:'working',repository,requestId:body.requestId,receipts:[],startedAt:new Date().toISOString()};
+   let bitContext=null;
+   if(this.env.BUBBLE_BITS_ENABLED==='1'){
+    const {resolveBitContext}=await import('./iteration-credit.mjs');
+    bitContext=await resolveBitContext(this.ctx.storage,this.env,body);
+   }
+   const record={ok:true,status:'working',repository,action:body.action,requestId:body.requestId,receipts:[],bitContext,startedAt:new Date().toISOString()};
    await this.ctx.storage.put(key,record);
    await this.ctx.storage.put(leaseKey,{leaseUntil:Date.now()+10*60*1000,directRequestId:body.requestId,status:'direct_bubbles'});
    return {record};
@@ -687,10 +717,29 @@ export class BrainClock extends DurableObject{
  }
  async completeDirectGithub(body,record,key,leaseKey){
   const repository=record.repository;
-  const saveReceipt=async receipt=>{
+  const saveReceipt=async (receipt,operation=body)=>{
    const {content,...metadata}=receipt;
+   if(this.env.BUBBLE_BITS_ENABLED==='1'){
+    const {githubIteration}=await import('./iteration-credit.mjs');
+    const iteration=await githubIteration(this.env,record,receipt,operation,record.receipts.length);
+    if(iteration){metadata.receipt=iteration.receipt;metadata.bit=iteration.bit;metadata.criteriaKey=record.bitContext?.criteriaKey;
+     if(iteration.credit)metadata.bitCredit=iteration.credit;}
+   }
    record.receipts.push(metadata);
+   // Persist pending credit before making a wallet request. A network failure
+   // leaves the packet available for exactly-once delivery on receipt readback.
    await this.ctx.storage.put(key,record);
+   if(metadata.bitCredit){
+    const retryKey='bit-credit-retry:0000000000000000:'+metadata.receipt.id;
+    await this.ctx.storage.put(retryKey,{recordKey:key,receiptId:metadata.receipt.id,retryAfter:0});
+    const {deliverBitCredit}=await import('./iteration-credit.mjs');
+    metadata.bit=await deliverBitCredit(this.env,{receipt:metadata.receipt,credit:metadata.bitCredit});
+    await this.ctx.storage.put(key,record);
+    if(metadata.bit.status==='credited'){
+     await this.ctx.storage.put('bit-credit-proof:'+metadata.receipt.id,metadata.bit);
+     await this.ctx.storage.delete(retryKey);
+    }
+   }
    await this.emit('bubbles','purple-pearl','direct GitHub receipt',repository+' · '+(metadata.status||metadata.action||'source inspected'),metadata.url);
   };
   try{
@@ -752,6 +801,11 @@ export class BrainClock extends DurableObject{
    }catch(error){
     return Response.json({ok:false,error:String(error.message||'owner_github_read_failed').slice(0,140)},{status:503});
    }
+  }
+  if(new URL(request.url).pathname==='/iteration/context'){
+   if(this.env.BUBBLE_BITS_ENABLED!=='1')return Response.json({ok:true,bitContext:null});
+   const {captureBitContext}=await import('./iteration-credit.mjs');
+   return Response.json({ok:true,bitContext:await this.ctx.blockConcurrencyWhile(async()=>captureBitContext(this.ctx.storage,this.env,await request.json()))});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
   if(new URL(request.url).pathname==='/quick-card-browser'){
@@ -920,6 +974,10 @@ export class BrainClock extends DurableObject{
   try{
    try{await this.archiveOlderPreviews()}catch(e){await this.ctx.storage.put('evidence-archive-error',{when:Date.now(),error:String(e.message).slice(0,200)})}
    if(await this.ctx.storage.get('bot-work-recipient'))await this.settleWork();
+   if(this.env.BUBBLE_BITS_ENABLED==='1'){
+    try{const {retryBitCredits}=await import('./iteration-credit.mjs');await retryBitCredits(this.ctx.storage,this.env);}
+    catch{/* Saved pending receipts survive the next alarm. */}
+   }
    try{await this.recoverDeferredWork()}catch(error){await this.ctx.storage.put('deferred-recovery-status',{at:Date.now(),state:'recovery_error',reason:String(error.message||error).slice(0,160)});}
    // Owner-defined clock entries use this SAME alarm and existing signed runner.
    // An alarm authorizes no new source write or ticket; it requests only a
@@ -1083,8 +1141,19 @@ export async function ownerTickets(env,path,body){
  }
  if(path==='/work/continuity')return ownerContinuitySnapshot(db,ownerHash,body);
  if(path==='/work/tickets/list'){
-  const rows=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100").bind(ownerHash).all();
-  return {status:200,result:{ok:true,notificationScope:ownerHash,tickets:(rows.results||[]).map(publicTicket)}};
+  // Bubbles ordinary work history stays unchanged. A signed owner continuation
+  // needs an older eligible ticket even after 100 more-recent blocked updates.
+  // Read-only selection preserves the same owner_hash partition, and the later
+  // /run-next and /runner/claim paths independently recheck every job gate.
+  const continuation=body?.continuation===true;
+  const sql=continuation?
+   "SELECT * FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY CASE status WHEN 'ready' THEN 0 WHEN 'working' THEN 1 ELSE 2 END,updated_at DESC,id DESC LIMIT 101":
+   "SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100";
+  const rows=await db.prepare(sql).bind(ownerHash).all();
+  const found=Array.isArray(rows?.results)?rows.results:[];
+  return {status:200,result:{ok:true,notificationScope:ownerHash,
+   tickets:(continuation?found.slice(0,100):found).map(publicTicket),
+   ...(continuation?{continuationScope:'owner_robot_directions',truncated:found.length>100}:{})}};
  }
  if(path==='/work/tickets/approve-all'){
   // One verified owner click authorizes a bounded BATCH, not 50 GitHub dispatches.
@@ -1522,7 +1591,18 @@ export default{
    if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
    try{
     const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
-    return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
+    const body=JSON.parse(raw||'{}');
+    const result=await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,body);
+    // Proof is created only AFTER a successful authenticated context lookup.
+    // Background sync/voice/session inventory never creates Bit context.
+    if(result.ok&&body.bitContext===true&&!body.mode&&env.BUBBLE_BITS_ENABLED==='1'){
+     try{
+      const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/iteration/context',{
+       method:'POST',body:JSON.stringify({query:body.query,sessionId:body.sessionId})});
+      const proof=await response.json();if(response.ok&&proof.ok)result.bitContext=proof.bitContext;
+     }catch{/* Context retrieval still succeeds when credit infrastructure is down. */}
+    }
+    return output(request,result);
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
   }
   if(path==='/work/autopilot/status'&&request.method==='GET'){

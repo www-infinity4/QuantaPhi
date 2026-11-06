@@ -157,9 +157,9 @@ if(typeof document!=='undefined'){
   const heading=document.createElement('p');heading.className='shopphi-switchboard-heading';
   heading.textContent='Related source cards · ShopPhi';
   const receipt=document.createElement('p');receipt.className='shopphi-switchboard-receipt';receipt.setAttribute('role','status');
-  stage.parentNode.insertBefore(heading,stage);
   stage.parentNode.insertBefore(grid,stage);
-  grid.append(before,stage,after);
+  // The chosen interactive hero is always first. Related discovery follows it.
+  grid.append(stage,heading,before,after);
   grid.after(receipt);
   const navigation=document.createElement('nav');navigation.className='shopphi-flank-navigation';
   navigation.setAttribute('aria-label','Browse larger companion cards');
@@ -285,7 +285,13 @@ if(typeof document!=='undefined'){
     link.append(art,span(c.title,'shopphi-flank-title'));
     if(c.price&&c.type==='shop-item')link.append(span(c.price,'shopphi-flank-price'));
     if(c.reason)link.append(span(c.reason,'shopphi-flank-reason'));
-    link.append(span(internal?'Open interactive Quick Card →':'Open original offer →','shopphi-flank-cta'));
+    link.append(span(internal&&c.type==='website-card'?'View in this Quick Card':'Open original offer','shopphi-flank-cta'));
+    if(internal&&c.type==='website-card'){
+     link.addEventListener('click',event=>{
+      event.preventDefault();
+      window.dispatchEvent(new CustomEvent('quantaphi:select-source-card',{detail:{sourceId:c.sourceId}}));
+     });
+    }
     link.addEventListener('click',()=>{ // Local rank rotation only; never financial or viewability reporting.
      exposure[c.id]=Math.min(200,(exposure[c.id]||0)+1);
     });

@@ -86,12 +86,12 @@ test('recorded anonymous exposure reduces repeated winning, not creates StarCoin
 test('six responsive positions preserve original viewer and scripts, with real provenance labels',()=>{
  const deck=src('oracle-card-deck.js'),page=src('index.html'),
   shop=src('shop-ad-phi.js'),css=src('shop-phi-switchboard.css'),engine=src('shop-phi-switchboard.mjs');
- assert.match(page,/shop-phi-switchboard\.mjs\?v=20261101-showcase1/);
- assert.match(page,/shop-phi-switchboard\.css\?v=20261101-showcase1/);
+ assert.match(page,/shop-phi-switchboard\.mjs\?v=20261105-hero-first1/);
+ assert.match(page,/shop-phi-switchboard\.css\?v=20261105-hero-first1/);
  assert.match(deck,/quantaphi:switchboard-change/);
  assert.match(shop,/quantaphi:switchboard-change/);
  assert.match(engine,/stage\.parentNode\.insertBefore\(grid,stage\)/);
- assert.match(engine,/grid\.append\(before,stage,after\)/);
+ assert.match(engine,/grid\.append\(stage,heading,before,after\)/);
  assert.match(engine,/INDEPENDENT SOURCE CARD/);
  assert.match(engine,/SPONSORED/);
  assert.match(css,/@media\(max-width:480px\)/);
@@ -117,7 +117,7 @@ test('missing image shows an honest source identity instead of invented product 
  const module=src('shop-phi-switchboard.mjs'),css=src('shop-phi-switchboard.css');
  assert.match(module,/shopphi-flank-no-photo/);
  assert.match(module,/Source image unavailable/);
- assert.match(module,/Open interactive Quick Card/);
+ assert.match(module,/View in this Quick Card/);
  assert.match(css,/\.shopphi-flank-brand/);
  assert.match(css,/height:165px/);
  assert.match(css,/\.shopphi-flank\[hidden\]\{display:flex!important\}/);

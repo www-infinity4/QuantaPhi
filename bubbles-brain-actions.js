@@ -20,6 +20,24 @@ const OWNER_REPOS={
  'recordb':'www-infinity4/RecordB',
  'record b':'www-infinity4/RecordB'
 };
+// Canonical first-party chat/social repairs can be sent directly to an
+// authenticated Brain ticket without asking for an unrelated repository.
+// Intent detection never grants permissions: the server still verifies owner
+// identity, repository scope and actual runner/job receipts.
+function firstPartyRepairTarget(utterance){
+ const command=String(utterance||'').trim().slice(0,4001);
+ if(!command||command.length>4000)return null;
+ if(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don't|never|stop|how\b|why\b|what\b|when\b|where\b|explain\b|describe\b)/i.test(command))return null;
+ if(/\bwww-infinity4\/[\w.-]+\b/i.test(command))return null;
+ if(/\b(?:moltnook|widget\s*phi|widgetphi|record\s?b|tv-database|code\s*phi|omni\s*phi)\b/i.test(command))return null;
+ if(/\b(?:both|two|multiple|all)\b.{0,50}\b(?:repos?|repositories)\b/i.test(command))return null;
+ const firstParty=/\b(?:bubbles|twitter)\b|\bx[\s/-]+(?:quick\s*card|posting|feed|timeline|spaces)\b|\b(?:infinity|oracle)\s+carousel\b/i;
+ if(!firstParty.test(command))return null;
+ const verb='(?:fix|repair|finish|complete|restore|debug|update|upgrade|build|create|wire|connect|replace|correct|implement|integrate|hook\\s+up)';
+ const start=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)*'+verb+'\\b','i');
+ const directive=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)?(?:i\\s+(?:need|want)\\s+(?:you\\s+)?to|you\\s+(?:need|have)\\s+to|(?:can|could|would|will)\\s+you|we\\s+need\\s+to)\\s+'+verb+'\\b','i');
+ return start.test(command)||directive.test(command)?'www-infinity4/QuantaPhi':null;
+}
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
  if(!text||text.length>4000)return 'chat';
@@ -441,7 +459,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
+const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,firstPartyRepairTarget,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);

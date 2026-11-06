@@ -61,10 +61,10 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
  const ids=chat?['chatBubblesSigninGate','chatBubblesSigninStatus','chatBubblesGithubSignIn',
   'chatBubblesCloudflareSignIn','chatBubblesGithubStatus','chatBubblesCloudflareStatus',
   'chatBubblesGithubCard','chatBubblesCloudflareCard','chatBubblesRetrySignInCheck',
-  'chatBubblesRecoverWallet','chatBubblesCancelSignIn']:
+  'chatBubblesRecoverWallet','chatBubblesCancelSignIn','chatBubblesConnectionSummary']:
   ['bubblesSigninGate','bubblesSigninStatus','bubblesGithubSignIn','bubblesCloudflareSignIn',
    'bubblesGithubStatus','bubblesCloudflareStatus','bubblesGithubCard','bubblesCloudflareCard',
-   'bubblesAICard','bubblesRetrySignInCheck','bubblesRecoverWallet','bubblesWalletIdentity','bubblesCancelSignIn'];
+   'bubblesAICard','bubblesRetrySignInCheck','bubblesRecoverWallet','bubblesWalletIdentity','bubblesCancelSignIn','bubblesConnectionSummary'];
  const elements=new Map(ids.map(id=>[id,{dataset:{},hidden:false,disabled:false,textContent:'',
   listeners:{},addEventListener(event,callback){this.listeners[event]=callback;},scrollIntoView(){}}]));
  const root={getElementById:id=>elements.get(id)||null,addEventListener(){}};
@@ -80,6 +80,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
   const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
   if(path==='/session')return Response.json({ok:true,walletVerified:payload?.walletVerified===true});
   if(path==='/gate/status')return Response.json({ok:true,...payload});
+  if(path==='/accounts')return Response.json({ok:true,accounts:payload?.accountRecords||[]});
   if(path==='/start'){
    if(startFails)return Response.json({ok:false,error:'provider_not_configured'},{status:503});
    const adapter=cloudflareAdapter({clientId:'bubbles-test-client',clientSecret:'server-only',
@@ -163,7 +164,7 @@ test('an abandoned provider sign-in can be cancelled and immediately retried',as
  assert.equal(ui.calls.filter(c=>c.path==='/start').length,2);
  cancel.listeners.click();
 });
-test('previously limited Cloudflare connection offers reauthorization instead of hiding the button',async t=>{
+test('already-connected Cloudflare hides login even when optional project scopes are missing',async t=>{
  const payload=partialGate();
  payload.providers.cloudflare.connected=true;
  payload.providers.cloudflare.missingActions=['projects.full'];
@@ -174,11 +175,14 @@ test('previously limited Cloudflare connection offers reauthorization instead of
  assert.deepEqual(summary.providers.cloudflare.missing,['projects.full']);
  const ui=mountedGate(t,payload);
  await new Promise(setImmediate);
- assert.equal(ui.get('bubblesSigninGate').hidden,false);
+ assert.equal(ui.get('bubblesSigninGate').hidden,true);
  assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
- assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
- assert.equal(ui.get('bubblesCloudflareSignIn').disabled,false);
- assert.equal(ui.get('bubblesCloudflareSignIn').textContent,'Review Cloudflare permissions');
+ assert.equal(ui.get('bubblesCloudflareCard').hidden,true);
+ assert.equal(ui.get('bubblesCloudflareSignIn').hidden,true);
+ assert.match(ui.get('bubblesCloudflareStatus').textContent,/^Signed in/);
+ assert.match(ui.get('bubblesConnectionSummary').textContent,/✅ Cloudflare signed in/);
+ await ui.get('bubblesCloudflareSignIn').listeners.click();
+ assert.equal(ui.calls.some(c=>c.path==='/start'),false);
 });
 test('full project permissions are still requested when registered by the server',()=>{
  const payload=partialGate();
@@ -231,10 +235,10 @@ test('a verified Cloudflare identity keeps full 386-scope upgrade separate from 
  const ui=mountedGate(t,payload);
  await new Promise(setImmediate);
  const button=ui.get('bubblesCloudflareSignIn');
- assert.equal(button.textContent,'Authorize all 386 Cloudflare permissions');
+ assert.equal(button.hidden,true);
+ assert.match(ui.get('bubblesCloudflareStatus').textContent,/^Signed in/);
  await button.listeners.click();
- assert.deepEqual(ui.calls.find(x=>x.path==='/start').body,
-  {provider:'cloudflare',actions:['owner.full']});
+ assert.equal(ui.calls.some(x=>x.path==='/start'),false);
 });
 
 test('registered full-scope Cloudflare client uses all 386 at first consent instead of incompatible two-scope request',async t=>{
@@ -243,7 +247,7 @@ test('registered full-scope Cloudflare client uses all 386 at first consent inst
  const ui=mountedGate(t,payload);
  await new Promise(setImmediate);
  const button=ui.get('bubblesCloudflareSignIn');
- assert.equal(button.textContent,'Sign in and authorize 386 Cloudflare permissions');
+ assert.equal(button.textContent,'Sign in with Cloudflare');
  await button.listeners.click();
  assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['owner.full']});
  const authorization=new URL(ui.popups[0].location.href);
@@ -253,4 +257,45 @@ test('registered full-scope Cloudflare client uses all 386 at first consent inst
  assert.ok(scopes.includes('user-details.read'));
  assert.ok(scopes.includes('memberships.read'));
  assert.equal(authorization.origin,'https://dash.cloudflare.com');
+});
+
+
+test('Google check is green only when the wallet-bound server account is actively verified',()=>{
+ const account={provider:'google',status:'connected',label:'Google person',expiresAt:Date.now()+3600000};
+ const good=summarizeGate({...partialGate(),ok:true,walletVerified:true,accountsVerified:true,accountRecords:[account]});
+ assert.equal(good.providers.google.connected,true);
+ assert.equal(good.providers.google.label,'Google person');
+ for(const invalid of [
+  {...partialGate(),ok:true,walletVerified:false,accountsVerified:true,accountRecords:[account]},
+  {...partialGate(),ok:true,walletVerified:true,accountsVerified:false,accountRecords:[account]},
+  {...partialGate(),ok:true,walletVerified:true,accountsVerified:true,accountRecords:[{...account,expiresAt:Date.now()-1000}]},
+  {...partialGate(),ok:true,walletVerified:true,accountsVerified:true,accountRecords:[{...account,status:'revoked'}]}
+ ])assert.equal(summarizeGate(invalid).providers.google.connected,false);
+});
+
+for(const chat of [false,true])test((chat?'inline chat':'main Bubbles')+' shows all three verified checks without reopening login',async t=>{
+ const payload={ok:true,walletVerified:true,ready:true,providers:{
+  github:{configured:true,connected:true,permissionsApproved:true},
+  cloudflare:{configured:true,connected:true,permissionsApproved:true}
+ },accountRecords:[{provider:'google',status:'connected',expiresAt:Date.now()+3600000,label:'Google person'}]};
+ const ui=mountedGate(t,payload,{chat});
+ await new Promise(setImmediate);
+ const label=ui.get(chat?'chatBubblesConnectionSummary':'bubblesConnectionSummary');
+ assert.equal(label.hidden,false);
+ for(const provider of ['Google','GitHub','Cloudflare'])assert.match(label.textContent,new RegExp('✅ '+provider+' signed in'));
+ assert.equal(ui.get(chat?'chatBubblesSigninGate':'bubblesSigninGate').hidden,true);
+ assert.equal(ui.calls.some(call=>call.path==='/start'),false);
+});
+
+test('a missing Google connection never gets a green verified indicator',async t=>{
+ const ui=mountedGate(t,{...partialGate(),ok:true,walletVerified:true});
+ await new Promise(setImmediate);
+ assert.doesNotMatch(ui.get('bubblesConnectionSummary').textContent,/✅ Google signed in/);
+ assert.match(ui.get('bubblesConnectionSummary').textContent,/Google not connected/);
+});
+
+test('chat owner verification must not bypass the connection status mount',()=>{
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.doesNotMatch(source,/if\(syncOwnerIdentity\(\)\)return;/);
+ assert.match(source,/chatBubblesConnectionSummary/);
 });

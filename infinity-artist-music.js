@@ -36,7 +36,7 @@
   const css=document.createElement('style');
   css.id='infinity-artist-music-style';
   css.textContent=[
-   '#infinityArtistDock{position:fixed;right:12px;bottom:12px;z-index:99998;box-sizing:border-box;width:244px;max-width:calc(100vw - 24px);padding:12px;border:1px solid #b4d3d4;border-radius:16px;background:#f8fbfa;color:#20383e;box-shadow:0 7px 28px #102f3550;font:inherit}',
+   '#infinityArtistDock{position:fixed;left:12px;bottom:12px;z-index:99998;box-sizing:border-box;width:244px;max-width:calc(100vw - 24px);padding:12px;border:1px solid #b4d3d4;border-radius:16px;background:#f8fbfa;color:#20383e;box-shadow:0 7px 28px #102f3550;font:inherit}',
    '#infinityArtistDock[hidden]{display:none}',
    '#infinityArtistDock .iam-head{display:flex;align-items:center;gap:7px;margin-bottom:7px}',
    '#infinityArtistDock .iam-title{flex:1;min-width:0;font-size:14px;font-weight:850;line-height:1.3;overflow-wrap:anywhere}',

@@ -19,6 +19,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  id-token: write
 jobs:
   provenance:
     runs-on: ubuntu-latest

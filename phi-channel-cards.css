@@ -80,7 +80,7 @@
 .channelphi-independent .channelphi-status{padding:3px 11px 8px;color:#d4e1e8}
 .channelphi-independent .channelphi-controls{display:flex;gap:8px;justify-content:flex-end;padding:8px}
 .channelphi-independent .channelphi-controls button{flex:0 0 auto;min-height:44px;min-width:74px;border:1px solid #8d9eac;border-radius:9px;padding:9px 12px!important;background:#e6edf3;color:#273a4c;font:650 13px/1.4 system-ui}
-.channelphi-independent:not(.channelphi-omni) :is(.channelphi-prev,.channelphi-next,.channelphi-sound){display:none}
+.channelphi-independent:not(.channelphi-omni) :is(.channelphi-prev,.channelphi-sound){display:none}
 .channelphi-independent.channelphi-omni .channelphi-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
 .channelphi-independent.channelphi-omni .channelphi-controls button{min-width:0}
 @media(max-width:420px){.channelphi-standalone-root{margin:10px auto}.channelphi-independent{padding:12px}.channelphi-independent .channelphi-controls button{font-size:13px}}

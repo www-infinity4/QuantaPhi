@@ -30,6 +30,19 @@ test('new conversation clears unsaved local projections and never transfers the 
  s=applyBitObservation(s,{type:'session_changed'});
  assert.equal(s.candidateCount,0);assert.equal(s.seenReceiptIds.length,0);assert.equal(s.contextReady,false);
 });
+test('technical steps count consistently; a later wallet confirmation upgrades one receipt only once',()=>{
+ let s=applyBitObservation(newBitSession(),{type:'memory',state:'retrieved'});
+ for(const [tool,receiptId] of [['github.commit','commit_receipt_123'],['github.workflow_checks','test_receipt_123'],['cloudflare.worker.verify','deploy_receipt_123']]){
+  s=applyBitObservation(s,{type:'tool_receipt',tool,status:'complete',receiptId});
+ }
+ assert.equal(s.candidateCount,3);assert.equal(s.creditedBits,0);
+ const paid={type:'tool_receipt',tool:'github.commit',status:'complete',receiptId:'commit_receipt_123',
+  credit:{status:'credited',asset:'BUBBLE_BIT',amount:1,receiptId:'commit_receipt_123',creditId:'commit_receipt_123'}};
+ s=applyBitObservation(s,paid);s=applyBitObservation(s,paid);
+ assert.equal(s.candidateCount,3);assert.equal(s.creditedBits,1);
+ s=applyBitObservation(s,{...paid,receiptId:'unpaid_receipt_123'});
+ assert.equal(s.creditedBits,1);assert.equal(s.walletWrites,0);
+});
 test('no user input, source snippet, GitHub URL or private context text is retained in the Bits projection',()=>{
  let s=applyBitObservation(newBitSession(),{type:'memory',state:'retrieved',text:'secret password'});
  s=applyBitObservation(s,{type:'tool_receipt',tool:'web.search',status:'complete',receiptId:'source_proof_1234',text:'secret password',url:'https://wrong.example?secret=password'});

@@ -8,21 +8,23 @@ async function ready(page){
  await expect(page.locator('#oracleCardStage > *').first()).toBeVisible({timeout:18000});
 }
 
-test('Android proximity sections and successful arrows keep navigation visible',async({page})=>{
+test('Android proximity sections and arrows do not forcibly move viewport',async({page})=>{
  await ready(page);
  const nav=page.locator('#oracleCardDeck .oracle-card-deck-nav');
  // Chromium may serialize the default "proximity" strictness as just "y".
  await expect.poll(()=>page.evaluate(()=>getComputedStyle(document.documentElement).scrollSnapType)).toMatch(/^y(?: proximity)?$/);
+ await page.locator('#oracleCardNext').scrollIntoViewIfNeeded();
+ const scrollBefore=await page.evaluate(()=>window.scrollY);
  const before=await page.locator('#oracleCardNow').textContent();
- await page.locator('#oracleCardNext').click();
+ await page.locator('#oracleCardNext').evaluate(button=>button.click());
  await expect(page.locator('#oracleCardNow')).not.toHaveText(before||'');
- await expect.poll(async()=>Math.abs(await nav.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:6000}).toBeLessThan(35);
+ expect(Math.abs(await page.evaluate(()=>window.scrollY)-scrollBefore)).toBeLessThan(30);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
  await page.emulateMedia({reducedMotion:'reduce'});
  await expect.poll(()=>page.evaluate(()=>getComputedStyle(document.documentElement).scrollSnapType)).toBe('none');
 });
 
-test('populated Following feed does not hide arrows after a new card',async({page})=>{
+test("populated Following feed stays at the user's scroll position after a card change",async({page})=>{
  await ready(page);
  await page.evaluate(()=>{
   const feed=document.getElementById('oracleFollowingFeed');
@@ -35,8 +37,9 @@ test('populated Following feed does not hide arrows after a new card',async({pag
  // Dispatch through the existing click handler without Playwright's auto-scroll.
  await page.locator('#oracleCardNext').evaluate(button=>button.click());
  await expect(page.locator('#oracleCardNow')).not.toHaveText(before||'');
- await expect.poll(async()=>Math.abs(await nav.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:6000}).toBeLessThan(35);
- await expect(nav).toBeInViewport();
+ // Automatic card changes may not scroll a long feed up to the arrow row.
+ expect(await page.evaluate(()=>window.scrollY)).toBeLessThan(20);
+ await expect(nav).toBeVisible();
 });
 
 test.describe('fine-pointer narrow desktop',()=>{
@@ -53,7 +56,7 @@ test.describe('fine-pointer narrow desktop',()=>{
  });
 });
 
-test('Android returns to fully visible header after card navigation and can settle on carousel again',async({page})=>{
+test('Android header stays reachable and manual scroll can settle on carousel',async({page})=>{
  await ready(page);
  const header=page.locator('main.app > .qtop');
  const search=page.locator('main.app > .search');
@@ -62,10 +65,12 @@ test('Android returns to fully visible header after card navigation and can sett
  await expect.poll(()=>search.evaluate(e=>getComputedStyle(e).scrollSnapAlign)).toBe('none');
  await page.locator('#oracleCardNext').click();
  const nav=page.locator('#oracleCardDeck .oracle-card-deck-nav');
- await expect.poll(async()=>Math.abs(await nav.evaluate(e=>e.getBoundingClientRect().top-12)),{timeout:6000}).toBeLessThan(35);
+ await expect(nav).toBeVisible();
  await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
- // A few CSS snap pixels of alignment are harmless if the full header and search remain visible.
- await expect.poll(()=>page.evaluate(()=>window.scrollY),{timeout:4000}).toBeLessThan(8);
+ // Mobile Chromium proximity-snap may leave an 11px offset even when the
+ // complete header and search field are both visibly in the viewport.
+ // Verify actual visibility below rather than rejecting that harmless offset.
+ await expect.poll(()=>page.evaluate(()=>window.scrollY),{timeout:4000}).toBeLessThan(16);
  await expect(header).toBeInViewport({ratio:0.95});
  await expect(page.locator('#q')).toBeInViewport();
  // Simulate a short downward user scroll from the restored top, without

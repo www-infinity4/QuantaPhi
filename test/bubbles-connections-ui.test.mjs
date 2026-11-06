@@ -43,7 +43,7 @@ test('client setup probe uses only a fictitious grant and never claims account v
  }
 });
 
-test('account page launches real Cloudflare consent with registered actions even without the full project toolkit',async t=>{
+test('account page starts consent with the selected provider permissions',async t=>{
  class Element {
   constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.classList={add(){}};}
   append(...nodes){this.childNodes.push(...nodes);}
@@ -57,14 +57,34 @@ test('account page launches real Cloudflare consent with registered actions even
  t.after(()=>Object.assign(globalThis,originals));
  const document={createElement:tag=>new Element(tag),createTextNode:text=>({textContent:text}),addEventListener(){}};
  const storage=new Map(),sessionStorage={getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
- const popup={location:{},close(){}},calls=[];let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',expiresAt:Date.now()+600000,grantedActions:['repository.read']}];
+ const popup={location:{},close(){}},calls=[];
+ let googleConfigured=false,fullCloudflareConfigured=false,navigation='',holdOldAccounts=false,finishOldRead;
+ let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',expiresAt:Date.now()+600000,grantedActions:['repository.read']}];
  const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
  Object.assign(globalThis,{document,sessionStorage,window,fetch:async(url,options)=>{
   const path=String(url).replace('/api/bubbles/connections','');
   const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
-  if(path==='/catalog')return Response.json({ok:true,providers:[{id:'github',configured:true,actions:['repository.read']},{id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read','projects.build','ledger.read']},{id:'google',configured:false}]});
-  if(path==='/accounts')return Response.json({ok:true,accounts:accountRecords});
-  if(path==='/start')return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+'s'.repeat(43),expiresIn:300});
+  if(path==='/catalog')return Response.json({ok:true,providers:[{id:'github',configured:true,actions:['repository.read']},
+   {id:'cloudflare',configured:true,fullProjectConfigured:fullCloudflareConfigured,
+    actions:fullCloudflareConfigured?['account.read','owner.full']:['account.read','projects.build','ledger.read']},
+   {id:'google',configured:googleConfigured,actions:['drive.read','gmail.read']}]});
+  if(path==='/accounts'){
+   const response=Response.json({ok:true,accounts:accountRecords});
+   if(holdOldAccounts&&!finishOldRead)return new Promise(resolve=>{finishOldRead=()=>resolve(response);});
+   return response;
+  }
+  if(path==='/handoff/google/resume'){
+   assert.deepEqual(body,{});
+   await new Promise(setImmediate);
+   const account={id:'google-a',provider:'google',label:'google@example.test',status:'connected',
+    expiresAt:Date.now()+600000,grantedActions:['drive.read']};
+   accountRecords=[...accountRecords,account];
+   return Response.json({ok:true,status:'connected',account});
+  }
+  if(path==='/start'){
+   const authorizationUrl=body.provider==='google'?'https://accounts.google.com/o/oauth2/v2/auth':'https://dash.cloudflare.com/oauth2/auth';
+   return Response.json({ok:true,authorizationUrl:authorizationUrl+'?state='+'s'.repeat(43),expiresIn:300});
+  }
   if(path==='/handoff/status')return Response.json({ok:true,status:'pending'});
   assert.fail('Unexpected endpoint '+path);
  }});
@@ -76,7 +96,7 @@ test('account page launches real Cloudflare consent with registered actions even
  const button=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
  assert.equal(button.disabled,false);
  assert.equal(button.textContent,'Sign in with Cloudflare');
- assert.equal(descendants(container).find(node=>node.tag==='fieldset').hidden,true);
+ assert.equal(descendants(container).some(node=>node.tag==='fieldset'&&!node.hidden),false);
  await button.listeners.click();
  assert.deepEqual(calls.find(call=>call.path==='/start').body,{provider:'cloudflare',actions:['account.read']});
  assert.equal(new URL(popup.location.href).origin,'https://dash.cloudflare.com');
@@ -86,6 +106,15 @@ test('account page launches real Cloudflare consent with registered actions even
  await panel.refresh();
  assert.equal(descendants(container).some(node=>node.dataset?.provider==='cloudflare'),false,'Connected Cloudflare button must disappear');
  assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare · Signed in as owner@example.test')));
+ fullCloudflareConfigured=true;
+ await panel.refresh();
+ const cloudflareReview=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
+ assert.equal(cloudflareReview,undefined,'Signed-in Cloudflare must never show another login button');
+ const manage=descendants(container).find(node=>node.textContent==='Review project permissions');
+ assert.ok(manage,'Optional access review stays in account settings');
+ assert.ok(descendants(container).some(node=>node.tag==='details'&&node.childNodes.includes(manage)),
+  'Review action must stay collapsed in a settings disclosure');
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare · Signed in as owner@example.test')));
  // An expired provider grant must not claim sign-in, even if the historical
  // row still has a connected status until the service refreshes it.
  accountRecords=accountRecords.map(row=>row.provider==='cloudflare'?{...row,expiresAt:Date.now()-10000}:row);
@@ -93,6 +122,38 @@ test('account page launches real Cloudflare consent with registered actions even
  assert.ok(descendants(container).some(node=>node.dataset?.provider==='cloudflare'));
  assert.ok(descendants(container).some(node=>String(node.textContent).includes('reconnect required')));
 
+ googleConfigured=true;
+ window.location.assign=url=>{navigation=url;};
+ await panel.refresh();
+ const googleButton=descendants(container).find(node=>node.dataset?.provider==='google');
+ const googleCard=descendants(container).find(node=>node.childNodes?.includes(googleButton));
+ const permissions=googleCard.childNodes.find(node=>node.tag==='fieldset');
+ assert.ok(permissions,'Google permissions must be in the same card as sign-in');
+ assert.ok(googleCard.childNodes.indexOf(permissions)<googleCard.childNodes.indexOf(googleButton));
+ const beforeClick=calls.length;
+ await googleButton.listeners.click();
+ assert.equal(calls.length,beforeClick,'An unchecked Google permission must not start OAuth');
+ assert.ok(googleCard.childNodes.some(node=>node.role==='status'&&/Choose at least one Google permission/.test(node.textContent)));
+ descendants(permissions).find(node=>node.value==='drive.read').checked=true;
+ await googleButton.listeners.click();
+ assert.deepEqual(calls.slice(beforeClick).find(call=>call.path==='/start').body,{provider:'google',actions:['drive.read']});
+ assert.equal(new URL(navigation).origin,'https://accounts.google.com');
+ panel.client.cancelConnect();
+
+ assert.equal(storage.has('bubbles:oauth-pending:v1'),false);
+ window.location.search='?return=google';
+ const returned=new Element('main');
+ holdOldAccounts=true;
+ const returningPanel=mountConnections(returned,{token:async()=>'sq_'+'a'.repeat(40)});
+ const staleLoad=returningPanel.refresh();
+ const googleSignedIn=()=>descendants(returned).some(node=>node.textContent==='Google · Signed in as google@example.test');
+ for(let i=0;i<8&&!googleSignedIn();i++)await new Promise(setImmediate);
+ assert.ok(googleSignedIn(),'A verified Google return must replace the sign-in button');
+ assert.equal(calls.filter(call=>call.path==='/handoff/google/resume').length,1);
+ finishOldRead();
+ await staleLoad;
+ assert.ok(googleSignedIn(),'An older account read must not replace the verified Google status');
+ assert.equal(descendants(returned).some(node=>node.dataset?.provider==='google'),false);
 });
 
 test('Android Cloudflare sign-in navigates this tab directly and never opens about:blank',async()=>{
