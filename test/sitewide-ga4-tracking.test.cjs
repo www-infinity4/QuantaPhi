@@ -61,7 +61,9 @@ test('auth, wallet, profile and sensitive public housing pages never get analyti
 
 test('strict CSP and in-page CSP prevent instrumentation, not weaken security headers',async()=>{
  const {app}=workerWith(page,{'Content-Type':'text/html','Content-Security-Policy':"default-src 'self'; script-src 'self'"});
- const res=await app.fetch(new Request('https://quantaphi.org/directory/'),{});
+ // The published Pages-origin route retains its CSP. Raw GitHub routes
+ // intentionally strip GitHub's generic CSP in the existing gateway.
+ const res=await app.fetch(new Request('https://quantaphi.org/cannabis-directory-policy.mjs'),{});
  assert.equal(res.headers.get('Content-Security-Policy'),"default-src 'self'; script-src 'self'");
  assert.equal(res.headers.get('x-quantaphi-ga4'),null);
  assert.ok(!(await res.text()).includes('data-quantaphi-ga4'));
