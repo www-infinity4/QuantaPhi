@@ -56,6 +56,7 @@ export const aiCardMode=id=>id==='gemini'?'gemini_first':id==='claude'?'gemini_c
 
 const GEMINI_CARD_API='https://infinity-rogers.marvaseater.workers.dev/v1/ai/card/gemini';
 function mountGeminiTools(root){
+ root.classList.add('iqc-gemini');
  // The existing Quick Card article owns every control. No new viewer, feed
  // ordering, modal, or Bubbles chat impersonation is introduced.
  const status=el('p','iqc-ai-receipt','Checking Google account connection…');
