@@ -198,3 +198,13 @@
   grid-row:1;grid-column:1
  }
 }
+
+/* Main media comes first on all viewport sizes; related titles stay beneath. */
+#oracleCardDeck .shopphi-switchboard-grid>.shopphi-switchboard-heading{
+ grid-column:1/-1;grid-row:2;margin:8px 0 1px
+}
+#oracleCardDeck .shopphi-flank-cta{
+ margin-top:4px;min-height:0;padding:0;border-radius:0;
+ background:transparent;color:#34546b;text-align:left;
+ font:650 12px/1.4 system-ui,sans-serif
+}
