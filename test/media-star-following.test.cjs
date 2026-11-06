@@ -360,3 +360,37 @@ test('OAuth success directs owner back to the dedicated status page',async()=>{
  assert.equal(r.status,400);
  assert.ok((await r.text()).includes('https://quantaphi.org/connect-x'));
 });
+
+test('X card public posts come from X and ended Spaces are never live',async()=>{
+ const {env,call}=await fixture();
+ env.X_OWNER_ID='owner-one';env.X_USER_ACCESS_TOKEN='fixture-test';
+ const previous=global.fetch;
+ global.fetch=async url=>{
+  const pathname=new URL(String(url)).pathname;
+  if(pathname==='/2/tweets/search/recent')return Response.json({
+   data:[{id:'1888777666555444333',author_id:'123456',text:'Original source post'}],
+   includes:{users:[{id:'123456',username:'ActualHost',name:'Actual Host'}]}});
+  if(pathname==='/2/spaces/search')return Response.json({
+   data:[{id:'1OyKAjYPeXqGb',creator_id:'123456',title:'Happening now',state:'live'},
+   {id:'1BRJjPRygqaKw',creator_id:'123456',title:'Ended already',state:'ended'}]});
+  throw Error('unexpected X request: '+pathname);
+ };
+ try{
+  const posts=await(await call('/v1/x/timeline?feed=public&q=technology',tok)).json();
+  assert.equal(posts.posts[0].text,'Original source post');
+  assert.equal(posts.posts[0].source,'x_api_verified');
+  const spaces=await(await call('/v1/x/spaces/live?q=technology',tok)).json();
+  assert.equal(spaces.endedExcluded,true);
+  assert.deepEqual(spaces.spaces.map(x=>x.id),['1OyKAjYPeXqGb']);
+  const otherResponse=await call('/v1/x/spaces/live?q=technology',other);
+  assert.notEqual(otherResponse.status,200);
+ }finally{global.fetch=previous}
+});
+test('X writing requires user-granted scopes and rejects unverified posts',async()=>{
+ const {env,call}=await fixture();
+ env.X_OWNER_ID='owner-one';env.X_USER_ACCESS_TOKEN='fixture-test';
+ const reply=await call('/v1/x/post',tok,{text:'Hello'});
+ assert.equal(reply.status,401);
+ const like=await call('/v1/x/like',tok,{postId:'1888777666555444333'});
+ assert.equal(like.status,401);
+});
