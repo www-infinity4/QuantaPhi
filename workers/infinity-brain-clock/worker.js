@@ -719,11 +719,22 @@ export class BrainClock extends DurableObject{
   const repository=record.repository;
   const saveReceipt=async (receipt,operation=body)=>{
    const {content,...metadata}=receipt;
-   if(this.env.BUBBLE_BITS_ENABLED==='1'){
+   // Observing an actual GitHub operation and issuing a Bubble Bit are
+   // separate. Receipt identifiers must exist even when wallet minting is OFF.
+   // The credit helper returns only non-spendable context_unavailable in that case.
+   let iteration=null;
+   // The owner hash must be present for a tenant-specific, deterministic
+   // receipt. In isolated/no-owner test runtimes, do not import the Bit
+   // subsystem or fabricate an identity/receipt.
+   if(/^[a-f0-9]{64}$/.test(this.env.WRITER_OWNER_HASH||'')){
     const {githubIteration}=await import('./iteration-credit.mjs');
-    const iteration=await githubIteration(this.env,record,receipt,operation,record.receipts.length);
-    if(iteration){metadata.receipt=iteration.receipt;metadata.bit=iteration.bit;metadata.criteriaKey=record.bitContext?.criteriaKey;
-     if(iteration.credit)metadata.bitCredit=iteration.credit;}
+    iteration=await githubIteration(this.env,record,receipt,operation,record.receipts.length);
+   }
+   if(iteration){
+    metadata.receipt=iteration.receipt;
+    metadata.bit=iteration.bit;
+    metadata.criteriaKey=record.bitContext?.criteriaKey;
+    if(this.env.BUBBLE_BITS_ENABLED==='1'&&iteration.credit)metadata.bitCredit=iteration.credit;
    }
    record.receipts.push(metadata);
    // Persist pending credit before making a wallet request. A network failure

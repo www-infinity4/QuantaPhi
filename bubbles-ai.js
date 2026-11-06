@@ -14,7 +14,9 @@ let streamVoice=null,voiceGeneration=0;
 // Core job acknowledgements must work in Android WebView even if module imports fail.
 const humanReplies=()=>({
  githubReply(result){
-  if(result.error||!result.ok)return 'I could not confirm that GitHub finished the request. Nothing is being marked complete.';
+  if(result.error||!result.ok)return 'GitHub work blocked or unverified: '+
+   String(result.error||result.status||'No execution receipt returned').replace(/[\u0000-\u001f]/g,' ').slice(0,150)+
+   '. This is the authenticated Brain result, not a successful build. No commit, tests or deployment is claimed.';
   if(result.status==='dispatch_accepted')return 'GitHub accepted the request, but the work has not finished.';
   if(result.status==='repository_created')return 'GitHub created '+result.repository+'. '+(result.url||'')+' The repository exists.'+(result.environment?.status==='blocked'?' Automated checks could not be configured: '+String(result.environment.error||'unknown').slice(0,90)+'.':' The automated workflow setup state is '+String(result.environment?.status||'unverified')+'.');
   if(result.status==='repository_already_exists')return 'This repository already exists: '+result.repository+'. '+(result.url||'')+' I can continue work there without creating a duplicate.';
@@ -2476,7 +2478,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    });
   }catch(error){status.textContent='Tool action driver unavailable: '+String(error.message||error).slice(0,110);}
   if(toolAction){
-   busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
+   busy=true;send.disabled=true;display(spoken,'you');
+ // Only an accepted standard chat turn starts the in-thread iteration trail.
+ // Do not alter the shared display() or voice/History startup behavior.
+ if(typeof CustomEvent==='function')
+  window.dispatchEvent(new CustomEvent('bubbles:chat-user-visible'));
+ clearSentComposer();setOrbState('thinking');
    let answer='',workspace=null;
    try{
     if(toolAction.kind==='phone'){
@@ -3559,7 +3566,11 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
 // neither an accepted request nor model narration is a verified tool receipt.
 function publishDirectGithubIteration(operation,requestId,phase,result=null,thread=''){
  const currentThread=typeof activeThread==='string'?activeThread:'';
- const actionTools={read_file:'github.read_file',read_repository:'github.read_repository',
+ const actionTools={assist:'github.assist',capabilities:'github.capabilities',
+  list_workflows:'github.list_workflows',list_runs:'github.list_runs',
+  list_workflow_runs:'github.list_runs',create_pr:'github.create_pr',
+  dispatch_workflow:'github.dispatch_workflow',
+  read_file:'github.read_file',read_repository:'github.read_repository',
   read_repo:'github.read_repo',search:'github.search',search_code:'github.search'};
  const tool=actionTools[operation?.action];
  if(!tool||!/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/.test(operation?.repository||'')||
@@ -3567,7 +3578,9 @@ function publishDirectGithubIteration(operation,requestId,phase,result=null,thre
     typeof CustomEvent!=='function')return;
  if(!['tool_started','tool_progress','tool_receipt'].includes(phase))return;
  const detail={type:phase,tool,operationId:requestId,resource:operation.repository,
-  criteriaSummary:'Authenticated GitHub read for this conversation'};
+  criteriaSummary:typeof operation.request==='string'?
+   operation.request.replace(/[\u0000-\u001f]/g,' ').slice(0,180):
+   'Owner-authenticated GitHub work for this conversation'};
  if(phase==='tool_progress'){
   detail.detail=result?.status==='working'?'GitHub reports working; the final receipt is pending':
    'Response not confirmed; checking durable GitHub receipt';

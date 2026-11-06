@@ -31,6 +31,11 @@ export async function githubIteration(env,record,result,operation,index){
  let tool;
  if(operation?.action==='read_file'&&sha(result.sha))tool='github.read_file';
  if(operation?.action==='read_repository'&&sha(result.headSha))tool='github.read_repository';
+ if(operation?.action==='capabilities'&&result.status==='credential_verified_read')tool='github.capabilities';
+ if(operation?.action==='list_workflows'&&result.complete===true)tool='github.list_workflows';
+ if(['list_runs','list_workflow_runs'].includes(operation?.action)&&result.status==='runs_read_only')tool='github.list_runs';
+ if(operation?.action==='create_pr'&&result.status==='pull_request_open'&&Number.isSafeInteger(result.number))tool='github.create_pr';
+ if(operation?.action==='dispatch_workflow'&&result.status==='dispatch_accepted'&&result.completed===false)tool='github.dispatch_workflow';
  if(operation?.action==='search_github_code'&&result.status==='code_search_results')tool='github.search';
  if(operation?.action==='commit_files'&&result.status==='committed_unverified'&&sha(result.commitSha))tool='github.commit';
  if(operation?.action==='read_run'&&result.status==='workflow_run_read'){
