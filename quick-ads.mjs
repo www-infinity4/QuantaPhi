@@ -6,9 +6,29 @@ import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAd
  if(typeof window==='undefined'||typeof document==='undefined')return;
  const KEY='quantaphi:quickads:house-20261029:v1';
  const LEGACY_KEY='quantaphi:worldseries-quickads:20261028:v1';
- const read=key=>{try{return JSON.parse(sessionStorage.getItem(key)||'{}')}catch{return {}}};
+ // Unlike session-only view counts, this history survives browser restarts.
+ // If persistent storage is blocked, fail closed instead of replaying old ads.
+ const HISTORY_KEY='quantaphi:quickads:seen-creatives:v1';
+ const read=(key,kind='sessionStorage')=>{try{return JSON.parse(window[kind].getItem(key)||'{}')}catch{return {}}};
  const state=restoreQuickAdState(read(KEY),read(LEGACY_KEY));
+ const storedSeen=read(HISTORY_KEY,'localStorage').seen;
+ if(storedSeen&&typeof storedSeen==='object'&&!Array.isArray(storedSeen)){
+  for(const [id,seen] of Object.entries(storedSeen)){
+   if(typeof id==='string'&&id.length<=128&&seen===true)state.counts[id]=Math.max(1,Number(state.counts[id])||0);
+  }
+ }
  const save=()=>{try{sessionStorage.setItem(KEY,JSON.stringify(state))}catch{}};
+ function claimFreshCreative(id){
+  if(typeof id!=='string'||!id||id.length>128||Number(state.counts[id])>0)return false;
+  try{
+   const storage=window.localStorage;
+   const latest=read(HISTORY_KEY,'localStorage').seen||{};
+   if(latest[id]===true)return false; // Another tab may have already displayed it.
+   const seen={...latest,[id]:true};
+   storage.setItem(HISTORY_KEY,JSON.stringify({seen}));
+   return true;
+  }catch{return false;} // Storage disabled/full: never violate the no-repeat promise.
+ }
  let currentId='',moves=0,shown=null,closeTimer=null,seq=0,poll=null,scoreAdSuppressedUntil=0;
  let liveState='unknown',lastFetch=0,checking=null;
  const node=document.createElement('aside');node.id='quantaQuickAd';
@@ -50,6 +70,7 @@ import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAd
   return checking;
  }
  function display(ad){
+  if(!claimFreshCreative(ad.id))return;
   if(shown===ad.id)hide();
   node.replaceChildren();
   node.style.setProperty('--qad-tone',ad.tone);
