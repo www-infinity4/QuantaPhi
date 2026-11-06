@@ -18,3 +18,22 @@ test('published offers require independent unexpired listing, price and image-ri
  for(const field of ['listing_expires_at','price_expires_at','rights_expires_at'])assert.match(observed[0],new RegExp("julianday\\(o\\."+field+"\\)\\s*>\\s*julianday\\('now'\\)"));
  assert.match(observed[0],/sponsor_evidence_url/);
 });
+
+// The D1 catalog is a source-backed inventory, not an ad generator or a payment system.
+test('public ad inventory exposes only reviewed, licensed, unexpired creative rows',async()=>{
+ const queries=[];
+ const mock={DB:{prepare(sql){queries.push(sql);return {bind(...args){return {all:async()=>({results:[]})}},all:async()=>({results:[]})};}}};
+ const r=await handler.fetch(new Request('https://example.com/v1/ads?limit=20'),mock);
+ assert.equal(r.status,200);
+ assert.deepEqual((await r.json()).data,[]);
+ assert.match(queries[0],/FROM ad_creatives/);
+ for(const field of ['review_state','image_rights','rights_expires_at','source_checked_at','sponsor_evidence_url','equivalence_key'])assert.match(queries[0],new RegExp(field));
+});
+
+test('ad D1 migration includes creative equivalence and owner-scoped seen receipts',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const sql=readFileSync(new URL('../workers/product-directory/migrations/0001-ad-creatives.sql',import.meta.url),'utf8');
+ assert.match(sql,/CREATE TABLE IF NOT EXISTS ad_creatives/);
+ assert.match(sql,/CREATE TABLE IF NOT EXISTS ad_seen_receipts/);
+ assert.match(sql,/UNIQUE\\s*\\(principal_id,\\s*equivalence_key\\)/);
+});
