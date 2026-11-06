@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T00:01:38.141870Z",
+  "checked_at": "2026-11-06T00:43:25.015179Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "utsa vs fl atlantic",
+      "query": "derrick henry",
       "approx_searches": "1000+",
-      "published_at": "2026-11-05T23:40:00Z",
+      "published_at": "2026-11-06T00:30:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/betting/news/utsa-vs-florida-atlantic-picks-predictions-loss-would-crush-roadrunners-college-football-playoff-hopes/",
-        "https://collegefootballnews.com/college-football/utsa-vs-florida-atlantic-prediction-2026",
-        "https://www.covers.com/ncaaf/utsa-vs-fau-prediction-picks-best-bets-tonight-nov-5-2026"
+        "https://www.cbssports.com/nfl/news/nfl-trade-deadline-why-ravens-should-trade-derrick-henry/",
+        "https://bleacherreport.com/articles/25529509-nfl-trade-rumors-predictions-derrick-henry-brian-thomas-jr-and-jessie-bates-iii",
+        "https://sports.yahoo.com/articles/giants-linked-derrick-henry-cheaper-204359262.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_M7G5dDXJlnd9i4qfTJneI6tSdsaYO_q95_jO7Ji4uvI-ETYmrBmpZQB98AI",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoRImyQghWpHrG1MXDWfxd-ncT6SWfQaR6NVRKxb1yenAsV5TGoEBQxxj5DCo",
       "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.cbssports.com/betting/news/utsa-vs-florida-atlantic-picks-predictions-loss-would-crush-roadrunners-college-football-playoff-hopes/",
-          "title": "UTSA vs. Florida Atlantic picks, predictions: Loss would crush Roadrunners' College Football Playoff hopes",
+          "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-why-ravens-should-trade-derrick-henry/",
+          "title": "Why Ravens should trade Derrick Henry: Don't let Baltimore's QB woes drag down 'King Henry'",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_M7G5dDXJlnd9i4qfTJneI6tSdsaYO_q95_jO7Ji4uvI-ETYmrBmpZQB98AI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoRImyQghWpHrG1MXDWfxd-ncT6SWfQaR6NVRKxb1yenAsV5TGoEBQxxj5DCo"
         },
         {
-          "url": "https://collegefootballnews.com/college-football/utsa-vs-florida-atlantic-prediction-2026",
-          "title": "UTSA vs Florida Atlantic Prediction: Can the Owls Ruin the Roadrunner Run?",
-          "publisher": "College Football News",
+          "url": "https://bleacherreport.com/articles/25529509-nfl-trade-rumors-predictions-derrick-henry-brian-thomas-jr-and-jessie-bates-iii",
+          "title": "NFL Trade Rumors, Predictions for Derrick Henry, Brian Thomas Jr. and Jessie Bates III",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqKl3LCfGUk513Xn2dtkY6TDEGlTyzLoKbv-q1QcuPhs3Klv5tVgjlq-UaydE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxtr8HoEHrDklDRS1d70jJuvcKA1gJqlbFxAZJMcrJqR1Z0-FCiGFDTV4-HyE"
         },
         {
-          "url": "https://www.covers.com/ncaaf/utsa-vs-fau-prediction-picks-best-bets-tonight-nov-5-2026",
-          "title": "UTSA vs FAU Prediction, Top Picks & Odds Tonight: College Football Week 10",
-          "publisher": "Covers.com",
+          "url": "https://sports.yahoo.com/articles/giants-linked-derrick-henry-cheaper-204359262.html",
+          "title": "Giants Linked to Derrick Henry as Cheaper Alternative to Jonathan Taylor",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkDmlk-8LPAmHAKcqHzoj5DAgjPCjEH1y1UfMAaHw7zLZp6Yg-ksEQY3kO2Bc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5TgBeo3kGusjWWh-JLWvD6U4TUxaDNyvxXGuTJNak8kgpJzgGks99a0uqkis"
         }
       ]
     },
     {
-      "query": "sc state vs howard",
+      "query": "jodie sweetin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T00:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jodie-sweetin-details-learning-humility-225734013.html",
+        "https://www.usmagazine.com/celebrity-news/news/jodie-sweetin-had-no-money-learned-humility-after-full-house/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOgByPeuiGAh2pyuB79nWvtX-LEGGulwFV2lyyvimvO7lYxzqicNYduGzKqE4",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jodie-sweetin-details-learning-humility-225734013.html",
+          "title": "Jodie Sweetin details learning ‘humility’ after not being able to pay for items at Target",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOgByPeuiGAh2pyuB79nWvtX-LEGGulwFV2lyyvimvO7lYxzqicNYduGzKqE4"
+        },
+        {
+          "url": "https://www.usmagazine.com/celebrity-news/news/jodie-sweetin-had-no-money-learned-humility-after-full-house/",
+          "title": "Full House’s Jodie Sweetin Recalls Learning ‘Humility’ After Being Unable to Afford Items at Target",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAVRRC4budSUwD2U7PytsPScLjOqLWFW-C3iua9CL-l4f6fBfJs39Ida1cOlY"
+        }
+      ]
+    },
+    {
+      "query": "yellowjackets",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T00:30:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/yellowjackets-trailer-creepy-alanis-morissette-soundtrack-1237213999/",
+        "https://www.yahoo.com/entertainment/tv/articles/yellowjackets-sneak-peek-final-season-225141254.html",
+        "https://www.tvline.com/2307423/yellowjackets-season-4-trailer-paramount-plus/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgzpq7UlXjAyhYQDBYz4BJFaXoEhbnWZSfDVJhq-LfubOAwzBlUAJlMEE_Jo",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/yellowjackets-trailer-creepy-alanis-morissette-soundtrack-1237213999/",
+          "title": "‘Yellowjackets’ Trailer: The Team Adjusts To Civilization With Creepy Alanis Morissette Soundtrack In Final Season",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgzpq7UlXjAyhYQDBYz4BJFaXoEhbnWZSfDVJhq-LfubOAwzBlUAJlMEE_Jo"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/yellowjackets-sneak-peek-final-season-225141254.html",
+          "title": "‘Yellowjackets’ Sneak Peek: Final Season Teases Savage Homecoming In First-Look Photos",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKwIvtbmQzOdxGYSDU-kq341WlDTR3GaQd17InGYW_f3TJ-UTDfbzWfN7x86o"
+        },
+        {
+          "url": "https://www.tvline.com/2307423/yellowjackets-season-4-trailer-paramount-plus/",
+          "title": "Yellowjackets Final Season Trailer: The Survivors Are Home, But The Nightmare's Far From Over — Watch",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQyqc98oFhSKTGAMKzB_1Mn-iCycZDmEKd488ZBu5uucYRwZisdjEhMq21ujg"
+        }
+      ]
+    },
+    {
+      "query": "mercyhurst vs notre dame",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T00:30:00Z",
+      "related_news_urls": [
+        "https://irishsportsdaily.com/s/28483/game-thread-mercyhurst-at-notre-dame",
+        "https://fightingirish.com/news/2026/11/4/2-irish-host-lakers-in-home-opener-thursday",
+        "https://www.southbendtribune.com/story/sports/college/basketball/2026/11/04/notre-dame-basketball-vs-mercyhurst-preview-how-to-watch-home-opener/92333977007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTU8Fcva5s8LLw7kAOeH9BGMuhDKEBBSwIX34ZNsFEYqgN7Z3vq6fHo-QNrfCA",
+      "image_credit": "Irish Sports Daily",
+      "news": [
+        {
+          "url": "https://irishsportsdaily.com/s/28483/game-thread-mercyhurst-at-notre-dame",
+          "title": "Game Thread | Mercyhurst at Notre Dame",
+          "publisher": "Irish Sports Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTU8Fcva5s8LLw7kAOeH9BGMuhDKEBBSwIX34ZNsFEYqgN7Z3vq6fHo-QNrfCA"
+        },
+        {
+          "url": "https://fightingirish.com/news/2026/11/4/2-irish-host-lakers-in-home-opener-thursday",
+          "title": "2. Irish Host Lakers in Home Opener Thursday",
+          "publisher": "Notre Dame Fighting Irish",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzcWNVDbrtw3bxMH3OgPpiIUvwtvHaGs1h4LSQE7jiLdasih2c-DCUHJ_Wa3o"
+        },
+        {
+          "url": "https://www.southbendtribune.com/story/sports/college/basketball/2026/11/04/notre-dame-basketball-vs-mercyhurst-preview-how-to-watch-home-opener/92333977007/",
+          "title": "Everything you need know as Notre Dame basketball hosts Mercyhurst",
+          "publisher": "South Bend Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYwb8FV3r-kYDERhFhpNZSmD30hsBMPvdj8bcUOw-EhAkAcKdTbA6KDBLkMPU"
+        }
+      ]
+    },
+    {
+      "query": "kospi",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T00:20:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-05/korean-chip-stocks-sink-10-in-pre-market-as-ai-fears-deepen",
+        "https://www.chosun.com/english/market-money-en/2026/11/06/3QON7GQZ5JAL3OINMUDEQRMQHE/",
+        "https://www.koreaherald.com/article/10926487"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPS8Dvkd6yhrmYGn9rlPvG_TDZFUFQ6ciHSeegqbyRh0Tbag9WG17pQtDBbzg",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/korean-chip-stocks-sink-10-in-pre-market-as-ai-fears-deepen",
+          "title": "Korean Chip Stocks Sink 10% in Pre-Market as AI Fears Deepen",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPS8Dvkd6yhrmYGn9rlPvG_TDZFUFQ6ciHSeegqbyRh0Tbag9WG17pQtDBbzg"
+        },
+        {
+          "url": "https://www.chosun.com/english/market-money-en/2026/11/06/3QON7GQZ5JAL3OINMUDEQRMQHE/",
+          "title": "US AI Sell-Off Triggers KOSPI Plunge Below 5,000 Mark",
+          "publisher": "조선일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-BRvk7F3ooSkdc2MJwkvP0NfPXSqva-Bgm5PTqI5CvKOqHw5BbP7J7HQl2xI"
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10926487",
+          "title": "Seoul shares open lower on Democratic Party victory in US midterm elections",
+          "publisher": "The Korea Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3WK-_aAlUu5pnLHNW8R7WpSxaicUWk7ZsTtCnfNIK957eBdwlqduk5HSewA"
+        }
+      ]
+    },
+    {
+      "query": "shrinking",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T00:20:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/vince-vaughn-returns-more-crime-212404864.html",
+        "https://9to5mac.com/2026/11/05/apple-tv-unveils-return-of-hit-comedy-from-ted-lasso-shrinking-creator/",
+        "https://www.darkhorizons.com/official-trailer-bad-monkey-season-2/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl9AtSbHzv4p9X9oercQ4gA1Ty3Zvlt-sQbf8uOVlTZhrUcTZFNxqOfCVyuP0",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/vince-vaughn-returns-more-crime-212404864.html",
+          "title": "Vince Vaughn Returns With More Crime & Chaos in Bad Monkey Season 2 Trailer",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl9AtSbHzv4p9X9oercQ4gA1Ty3Zvlt-sQbf8uOVlTZhrUcTZFNxqOfCVyuP0"
+        },
+        {
+          "url": "https://9to5mac.com/2026/11/05/apple-tv-unveils-return-of-hit-comedy-from-ted-lasso-shrinking-creator/",
+          "title": "Apple TV unveils return of hit comedy from Ted Lasso, Shrinking creator",
+          "publisher": "9to5Mac",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_hEHGuvm5JoA7Wbr5gp-M04csuHWEmZNwUVcCxn36k8Dgu3h33EDxK5F8S_s"
+        },
+        {
+          "url": "https://www.darkhorizons.com/official-trailer-bad-monkey-season-2/",
+          "title": "Official Trailer: \"Bad Monkey\" Season 2",
+          "publisher": "Dark Horizons",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIkUWSgSeLL8fKFX0-RVig7j_rhyaBG1FTTNmoAm1tUjOHZqrRQxAVdwqCOdg"
+        }
+      ]
+    },
+    {
+      "query": "iowa women's basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T00:20:00Z",
+      "related_news_urls": [
+        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/05/where-to-watch-iowa-womens-basketball-eastner-illinois-tv-channel-streaming-tim/92610865007/",
+        "https://www.on3.com/teams/iowa-hawkeyes/news/iowa-womens-basketball-tip-time-preview-eastern-illinois-panthers/",
+        "https://www.bryantimes.com/sports/ap_sports/indiana-and-bellarmine-set-for-cross-conference-game/article_8874f439-fb4e-5930-8b1e-139713b77e59.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjNMgGIiIKUkdvs3_BvzNIX-gOX3uAjhxv-xRRym40Gk1UpV_6HWUBZg3DfH8",
+      "image_credit": "Hawk Central",
+      "news": [
+        {
+          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/05/where-to-watch-iowa-womens-basketball-eastner-illinois-tv-channel-streaming-tim/92610865007/",
+          "title": "How to watch Iowa women's basketball vs Eastern Illinois, stream, TV",
+          "publisher": "Hawk Central",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjNMgGIiIKUkdvs3_BvzNIX-gOX3uAjhxv-xRRym40Gk1UpV_6HWUBZg3DfH8"
+        },
+        {
+          "url": "https://www.on3.com/teams/iowa-hawkeyes/news/iowa-womens-basketball-tip-time-preview-eastern-illinois-panthers/",
+          "title": "Iowa Women's Basketball Tip Time Preview: Eastern Illinois Panthers",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrnbI_ysyYBaEDrOY-fbvLwS4UUYEjyLxQ3McRGXb_xUWhnhw-FjbM7df5TSc"
+        },
+        {
+          "url": "https://www.bryantimes.com/sports/ap_sports/indiana-and-bellarmine-set-for-cross-conference-game/article_8874f439-fb4e-5930-8b1e-139713b77e59.html",
+          "title": "Indiana and Bellarmine set for cross-conference game",
+          "publisher": "Bryan Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOdXi_FNrRdgdkbpDoj7oa5kgomcg-nzxp73uhUxgT4dV4op6yDfEqCmv1XW8"
+        }
+      ]
+    },
+    {
+      "query": "weather in baltimore",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T00:20:00Z",
+      "related_news_urls": [
+        "https://www.wbaltv.com/article/baltimore-weather-rain-showers-november-5-2026/74343513",
+        "https://foxbaltimore.com/news/local/much-needed-rain-returns-to-baltimore",
+        "https://www.yahoo.com/news/weather-news/articles/more-rain-possible-east-95-184822423.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw6aPcFF4IfzvKVjNHGZ4vdKgM5N1TuyJSnkwXwZhDCQYGdO4ZI-OOQo-kvU8",
+      "image_credit": "WBAL-TV",
+      "news": [
+        {
+          "url": "https://www.wbaltv.com/article/baltimore-weather-rain-showers-november-5-2026/74343513",
+          "title": "Some showers possible in Baltimore area, particularly south",
+          "publisher": "WBAL-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw6aPcFF4IfzvKVjNHGZ4vdKgM5N1TuyJSnkwXwZhDCQYGdO4ZI-OOQo-kvU8"
+        },
+        {
+          "url": "https://foxbaltimore.com/news/local/much-needed-rain-returns-to-baltimore",
+          "title": "Much needed rain returns to Baltimore",
+          "publisher": "WBFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY9v-z59sPoF-1OKEJEPvPtE7IqG5yymc5oWEN_D1qGXVMOEjjyQ3obWM_qV4"
+        },
+        {
+          "url": "https://www.yahoo.com/news/weather-news/articles/more-rain-possible-east-95-184822423.html",
+          "title": "More rain possible east of I-95, drier to the west",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTxp4R73-u9-PSI39M7yS-CP7QtXSIkzMtZ8Tr_u4GO_FikimDl7w4wM_In8Q"
+        }
+      ]
+    },
+    {
+      "query": "heat vs warriors",
       "approx_searches": "1000+",
-      "published_at": "2026-11-05T23:40:00Z",
+      "published_at": "2026-11-06T00:20:00Z",
       "related_news_urls": [
-        "https://hubison.com/news/2026/11/4/football-hosts-south-carolina-state-thursday-night.aspx",
-        "https://meacsports.com/news/2026/11/4/football-howard-south-carolina-state-kickoff-week-10-thursday-on-espnu.aspx",
-        "https://sports.yahoo.com/articles/south-carolina-state-vs-howard-123046484.html"
+        "https://www.goldenstateofmind.com/warriors-injury-report/113251/warriors-heat-injury-report-gui-santos-giannis-antetokounmpo",
+        "https://www.cbssports.com/prediction/news/get-up-to-420-in-nba-prediction-market-promos-with-kalshi-promo-code-cbssports55-others-for-november-5/",
+        "https://sports.yahoo.com/articles/watch-miami-heat-golden-state-174520583.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkmeC2MC4zWoZo7vtgZEt9b_PDsJOVsNhlxjOQCiHK_x4PHM2xP_7cCR8PlHU",
-      "image_credit": "Howard University Athletics",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRu9hrktVCuxb9tDN8guoySZ1tu4sYN33DA6sPc130vF-h_vqaDVrPkZal7qNI",
+      "image_credit": "Golden State Of Mind",
       "news": [
         {
-          "url": "https://hubison.com/news/2026/11/4/football-hosts-south-carolina-state-thursday-night.aspx",
-          "title": "Football Hosts South Carolina State Thursday Night",
-          "publisher": "Howard University Athletics",
+          "url": "https://www.goldenstateofmind.com/warriors-injury-report/113251/warriors-heat-injury-report-gui-santos-giannis-antetokounmpo",
+          "title": "Warriors vs. Heat injury report: Gui Santos remains out, Giannis in",
+          "publisher": "Golden State Of Mind",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkmeC2MC4zWoZo7vtgZEt9b_PDsJOVsNhlxjOQCiHK_x4PHM2xP_7cCR8PlHU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRu9hrktVCuxb9tDN8guoySZ1tu4sYN33DA6sPc130vF-h_vqaDVrPkZal7qNI"
         },
         {
-          "url": "https://meacsports.com/news/2026/11/4/football-howard-south-carolina-state-kickoff-week-10-thursday-on-espnu.aspx",
-          "title": "Howard, South Carolina State Kickoff Week 10 Thursday on ESPNU",
-          "publisher": "Mid-Eastern Athletic Conference",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN2xMbvv5DC45c4aSBY4ICotfQZcofhPXyphkijJGIWqz-cZaV3spUXZX6d20"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/south-carolina-state-vs-howard-123046484.html",
-          "title": "South Carolina State vs Howard Prediction, Odds, Picks: Thursday’s FCS Best Bet",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdv2kvglxrX9XJtcxiPGXsdz8iLYOK_IneHfHIQDMlzqBMJLeg_oCP7IQvkqw"
-        }
-      ]
-    },
-    {
-      "query": "msu basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T23:40:00Z",
-      "related_news_urls": [
-        "https://msuspartans.com/news/2026/11/4/mens-basketball-no-6-michigan-state-hosts-toledo-on-thursday-night-at-the-breslin-center",
-        "https://www.mlive.com/spartans/basketball/2026/11/michigan-state-basketball-adjusting-to-early-season-first.html",
-        "https://www.lansingstatejournal.com/story/sports/columnists/graham-couch/2026/11/04/msu-basketball-vs-toledo-prediction-matchup-analysis-preview-how-to-watch-betting-line/92599034007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpgEgObB0XnnoBwLR2pJt74nTMn23DtfAsHFmy_5RywSsFe7jD3Lp-tDOR-Pk",
-      "image_credit": "Michigan State University Athletics",
-      "news": [
-        {
-          "url": "https://msuspartans.com/news/2026/11/4/mens-basketball-no-6-michigan-state-hosts-toledo-on-thursday-night-at-the-breslin-center",
-          "title": "No. 6 Michigan State Hosts Toledo on Thursday Night at the Breslin Center",
-          "publisher": "Michigan State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpgEgObB0XnnoBwLR2pJt74nTMn23DtfAsHFmy_5RywSsFe7jD3Lp-tDOR-Pk"
-        },
-        {
-          "url": "https://www.mlive.com/spartans/basketball/2026/11/michigan-state-basketball-adjusting-to-early-season-first.html",
-          "title": "Michigan State basketball adjusting to early-season first",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdv7Hl9hwhG9uaczzR_R9uc5uGMBHUOxKxJ1kuchnuGANVod5ClIpbNnqqo-4"
-        },
-        {
-          "url": "https://www.lansingstatejournal.com/story/sports/columnists/graham-couch/2026/11/04/msu-basketball-vs-toledo-prediction-matchup-analysis-preview-how-to-watch-betting-line/92599034007/",
-          "title": "Michigan State basketball vs. Toledo Tipoff: Matchup analysis and a prediction",
-          "publisher": "Lansing State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIPzoJHreBbKlYFrkumgz0dtXurY5cOBGRD1-vIHxmzWDUi-6J7Cu1vVG-4is"
-        }
-      ]
-    },
-    {
-      "query": "justice hill",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T23:40:00Z",
-      "related_news_urls": [
-        "https://www.fantasypros.com/nfl/news/617822/justice-hill-groin-set-to-play-thursday.php",
-        "https://www.rotoballer.com/player-news/justice-hill-cleared-to-play-but-remains-low-level-fantasy-option/1983917",
-        "https://www.cbssports.com/fantasy/football/news/ravens-justice-hill-churns-out-full-practice/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxRp800M76D0-asHNB80teKMhIyA8Q4JpnoZlG31EfBoC4-Mgra3JQQm5gtXc",
-      "image_credit": "FantasyPros",
-      "news": [
-        {
-          "url": "https://www.fantasypros.com/nfl/news/617822/justice-hill-groin-set-to-play-thursday.php",
-          "title": "Justice Hill (groin) set to play Thursday",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxRp800M76D0-asHNB80teKMhIyA8Q4JpnoZlG31EfBoC4-Mgra3JQQm5gtXc"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/justice-hill-cleared-to-play-but-remains-low-level-fantasy-option/1983917",
-          "title": "Justice Hill Week 9 Outlook for Fantasy Football (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6AVOFcLl75hXEebeFeGIxp38ujNjulsT1v8RnG7-2bhfcnhS8Ux3eXYjN8ro"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/ravens-justice-hill-churns-out-full-practice/",
-          "title": "Ravens' Justice Hill: Churns out full practice",
+          "url": "https://www.cbssports.com/prediction/news/get-up-to-420-in-nba-prediction-market-promos-with-kalshi-promo-code-cbssports55-others-for-november-5/",
+          "title": "Get up to $420 in NBA prediction market promos with Kalshi promo code CBSSPORTS55, others for November 5",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6IZepRI9gTMMeeV1QI8P5ZShVBPsRhcSNzRbZFjNg-VEoRuBY0wUkhrZ4u6g"
-        }
-      ]
-    },
-    {
-      "query": "uconn vs michigan",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T23:30:00Z",
-      "related_news_urls": [
-        "https://mgoblue.com/news/2026/11/3/womens-basketball-michigan-to-kick-off-2026-27-with-no-2-uconn-at-crisler",
-        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/uconn-vs-michigan-3-keys-to-the-game-22506005.php",
-        "https://uconnhuskies.com/news/2026/11/3/womens-basketball-no-2-uconn-faces-no-5-michigan-thursday"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuEbpysIi6zwIw6Qn0RHexVhtQNP5LWh1e1DDsup8OrD0EPxXdaRB2luQgdQc",
-      "image_credit": "University of Michigan Athletics",
-      "news": [
-        {
-          "url": "https://mgoblue.com/news/2026/11/3/womens-basketball-michigan-to-kick-off-2026-27-with-no-2-uconn-at-crisler",
-          "title": "Michigan to Kick Off 2026-27 with No. 2 UConn at Crisler",
-          "publisher": "University of Michigan Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuEbpysIi6zwIw6Qn0RHexVhtQNP5LWh1e1DDsup8OrD0EPxXdaRB2luQgdQc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9GqNVTgW4V5PUUDVGvuliSGTyOMeADJ4-0obR4gM5_OqJdqubWo2cl8xTth0"
         },
         {
-          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/uconn-vs-michigan-3-keys-to-the-game-22506005.php",
-          "title": "3 keys to the game: No. 2 UConn women's basketball at No. 5 Michigan",
-          "publisher": "CT Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwnhryfFySWwJmLBmLwTZw3slSmanpTJcK87NRszbBkjeOmDdvS8kuSlr_TaI"
-        },
-        {
-          "url": "https://uconnhuskies.com/news/2026/11/3/womens-basketball-no-2-uconn-faces-no-5-michigan-thursday",
-          "title": "No. 2 UConn Faces No. 5 Michigan Thursday",
-          "publisher": "University of Connecticut Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2Ag_hfDFvm_T9p-ZPWI_kUwjHLrt-wI8q3_1Hfok_jTreZGS62Pz_qWiDR_I"
-        }
-      ]
-    },
-    {
-      "query": "canucks vs jets",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T23:30:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/vancouver-canucks-winnipeg-jets-game-preview-november-5-2026",
-        "https://sports.yahoo.com/articles/canucks-rundown-lineup-notes-vs-190845223.html",
-        "https://www.cbssports.com/nhl/news/jets-look-to-build-on-historic-rally-against-slumping-canucks/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/vancouver-canucks-winnipeg-jets-game-preview-november-5-2026",
-          "title": "Canucks at Jets projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/canucks-rundown-lineup-notes-vs-190845223.html",
-          "title": "Canucks Rundown: Lineup Notes Vs. Jets, Former Canucks Take Charge of New WHL Team",
+          "url": "https://sports.yahoo.com/articles/watch-miami-heat-golden-state-174520583.html",
+          "title": "How To Watch Miami Heat At Golden State Warriors; Lineups, Injury Report, Betting Lines",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCxmqLKgeqVAu_wxgWdrPDYjMQdFEZHN1YK49WBnG7M7bd7uDIfG65LcTyEwk"
-        },
-        {
-          "url": "https://www.cbssports.com/nhl/news/jets-look-to-build-on-historic-rally-against-slumping-canucks/",
-          "title": "Jets look to build on historic rally against slumping Canucks",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyuCmJtZk7i7XURVMrZVlYEf3IB6n9ppgS9Xg7QZg2LLaVgdIKgXxXwcA6zBI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4FpFdzQujlOo-xZz0LAmutZIX1Y09Jn2TriMRcf5yC2x3DS9AhQSb5ZyOP0A"
         }
       ]
     },
     {
-      "query": "national merit scholarship",
-      "approx_searches": "500+",
-      "published_at": "2026-11-05T23:20:00Z",
+      "query": "stranger things",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T00:20:00Z",
       "related_news_urls": [
-        "https://www.enterprisenews.com/story/news/education/2026/11/05/brockton-high-students-national-academic-success-psat-scores/92109358007/",
-        "https://www.kentucky.com/news/nation-world/national/article317937420.html",
-        "https://jhsplank.com/8874/showcase/among-the-best-three-jesuit-seniors-named-national-merit-semifinalists/"
+        "https://www.yahoo.com/entertainment/tv/articles/finn-wolfhard-caleb-mclaughlin-filmed-204315545.html",
+        "https://parade.com/news/millie-bobby-brown-ross-duffer-posts-resurrect-stranger-things-conformity-gate-from-the-dead",
+        "https://younghollywood.com/scene/caleb-mclaughlin-finn-wolfhard-chicago-filming.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5OyCKiWCLUx9Kyaefz8vYw9ToOloWoZ8XeUsvRUHTbkxNnJXoTQLWC26y7Ao",
-      "image_credit": "Enterprise News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReGk_CQgOTIbTh4y56JZoKujqw1dpBpf-MDdkMqprfCS8qGrB7tTXI5mdVCjQ",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.enterprisenews.com/story/news/education/2026/11/05/brockton-high-students-national-academic-success-psat-scores/92109358007/",
-          "title": "Three Brockton High seniors earn National Merit recognition",
-          "publisher": "Enterprise News",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/finn-wolfhard-caleb-mclaughlin-filmed-204315545.html",
+          "title": "Finn Wolfhard and Caleb McLaughlin Filmed Together in Chicago, Sparking 'Stranger Things' Speculation",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5OyCKiWCLUx9Kyaefz8vYw9ToOloWoZ8XeUsvRUHTbkxNnJXoTQLWC26y7Ao"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReGk_CQgOTIbTh4y56JZoKujqw1dpBpf-MDdkMqprfCS8qGrB7tTXI5mdVCjQ"
         },
         {
-          "url": "https://www.kentucky.com/news/nation-world/national/article317937420.html",
-          "title": "Academic excellence earns national recognition for Hillsdale pair",
-          "publisher": "Lexington Herald Leader",
+          "url": "https://parade.com/news/millie-bobby-brown-ross-duffer-posts-resurrect-stranger-things-conformity-gate-from-the-dead",
+          "title": "Millie Bobby Brown, Ross Duffer Posts Resurrect ‘Stranger Things’ Conformity Gate From the Dead",
+          "publisher": "Parade Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4i7udLcQ1e4ZoWS0l9947nvvDF9Ov1Y0DWVX0MqwugiykYeYq76JW1HqnSB4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TKqkAUdgvvNfHfuTl90_uHI063pJ-KEsbPFWkD6K-sM77NBd-XYhyhMqejA"
         },
         {
-          "url": "https://jhsplank.com/8874/showcase/among-the-best-three-jesuit-seniors-named-national-merit-semifinalists/",
-          "title": "Among the Best: three Jesuit seniors named National Merit semifinalists",
-          "publisher": "JHS Plank",
+          "url": "https://younghollywood.com/scene/caleb-mclaughlin-finn-wolfhard-chicago-filming.html",
+          "title": "Caleb McLaughlin Films in Chicago With Finn Wolfhard (November 2026)",
+          "publisher": "Young Hollywood",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTHB4hzSlr-f_I7DvQyqBOx07nD2ieFpWe9VnYyZYfcwKUVBRPRXK87HpFse0"
-        }
-      ]
-    },
-    {
-      "query": "bruins vs penguins",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-05T23:10:00Z",
-      "related_news_urls": [
-        "https://www.pensburgh.com/penguins-lines-game-time-watch/82772/game-preview-boston-bruins-pittsburgh-penguins-11-5-2026",
-        "https://sports.yahoo.com/articles/penguins-vs-bruins-score-live-232002497.html",
-        "https://www.nhl.com/bruins/news/need-to-know-bruins-at-penguins-x0083"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiLSs6zBgEbKG3rDEC7HhdbrckNvaf4IzSkkY_gtclLBnXinzMaQzcBGk6kBA",
-      "image_credit": "PensBurgh",
-      "news": [
-        {
-          "url": "https://www.pensburgh.com/penguins-lines-game-time-watch/82772/game-preview-boston-bruins-pittsburgh-penguins-11-5-2026",
-          "title": "Game Preview: Boston Bruins @ Pittsburgh Penguins 11/5/2026",
-          "publisher": "PensBurgh",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiLSs6zBgEbKG3rDEC7HhdbrckNvaf4IzSkkY_gtclLBnXinzMaQzcBGk6kBA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/penguins-vs-bruins-score-live-232002497.html",
-          "title": "Penguins vs. Bruins Score, Live Updates, Highlights From NHL Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZleq5w8XnBPhONJge6zWqTN2BOGvY9R-UueYKWn6VZGW5SQAygyOd2Ytfduc"
-        },
-        {
-          "url": "https://www.nhl.com/bruins/news/need-to-know-bruins-at-penguins-x0083",
-          "title": "Need to Know: Bruins at Penguins",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDJq1X0DbI1q8j5HFatG6wNcbKKNmzOZwDpSibhD7vRS-7P1IuQ_OGlHULm7c"
-        }
-      ]
-    },
-    {
-      "query": "blackhawks vs lightning",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T23:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/blackhawks-vs-lightning-projected-lineup-193431582.html",
-        "https://www.nhl.com/news/chicago-blackhawks-tampa-bay-lightning-game-preview-november-5-2026",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/chicago-blackhawks-vs-tampa-bay-lightning-prediction-odds-2026-11-05/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5g26MvXXnXq1doCtChdRxSgbp2QFlF-d2g06yTuvQigGS2Ah0QoOLS41RFlI",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/blackhawks-vs-lightning-projected-lineup-193431582.html",
-          "title": "Blackhawks Vs Lightning: Projected Lineup, How To Watch, & More Ahead Of Game 17",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5g26MvXXnXq1doCtChdRxSgbp2QFlF-d2g06yTuvQigGS2Ah0QoOLS41RFlI"
-        },
-        {
-          "url": "https://www.nhl.com/news/chicago-blackhawks-tampa-bay-lightning-game-preview-november-5-2026",
-          "title": "Blackhawks at Lightning projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/chicago-blackhawks-vs-tampa-bay-lightning-prediction-odds-2026-11-05/",
-          "title": "Chicago Blackhawks vs Tampa Bay Lightning Prediction, Picks & Odds | 05 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxiM1MecEy6HnV3eyPkba-klQt4k2qGV10ESJGbdktrfT5uyrpVLc9b9ofsQU"
-        }
-      ]
-    },
-    {
-      "query": "golden knights vs red wings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-05T23:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/redwings/news/preview-back-at-little-caesars-arena-for-military-appreciation-night-red-wings-host-golden-knights-on-thursday",
-        "https://www.si.com/nhl/red-wings/onsi/news/red-wings-vs-golden-knights-lineups-injuries-starting-goalies-and-how-to-watch",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/vegas-golden-knights-vs-detroit-red-wings-prediction-odds-2026-11-05/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh0ko3QEVFbBeLmjv6Hzxz-DYKXg-xkhL8WODoRthaCQYw2_3JVVZ907UpiLE",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/redwings/news/preview-back-at-little-caesars-arena-for-military-appreciation-night-red-wings-host-golden-knights-on-thursday",
-          "title": "PREVIEW: Back at Little Caesars Arena for Military Appreciation Night, Red Wings host Golden Knights on Thursday",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh0ko3QEVFbBeLmjv6Hzxz-DYKXg-xkhL8WODoRthaCQYw2_3JVVZ907UpiLE"
-        },
-        {
-          "url": "https://www.si.com/nhl/red-wings/onsi/news/red-wings-vs-golden-knights-lineups-injuries-starting-goalies-and-how-to-watch",
-          "title": "Red Wings vs. Golden Knights Lineups, Injuries, Starting Goalies and How to Watch",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIeLqVpeSL_hZ88EFA5iJzQRDW20U47QAKCgTnRDUaoHi8mSFdsRe2agSULA4"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/vegas-golden-knights-vs-detroit-red-wings-prediction-odds-2026-11-05/",
-          "title": "Vegas Golden Knights vs Detroit Red Wings Prediction, Picks & Odds | 05 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3psawmgXs0IgLPqzFlmVTLAciNiDSbZCDPapDta3MjCvUbGeG8EA0CrNCfws"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0junKLpDAU7OZYpdWdEDIo_fPuk_0v2lSS8ub6M6OSzXCRYF0MVO5tPU-a6c"
         }
       ]
     }
