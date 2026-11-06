@@ -3030,7 +3030,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Brain job. Do not turn it into a conversational direct GitHub 'assist'.
  // Owner verification, trusted repository and runner receipts remain mandatory.
  const knownQuantaRepair=!ownerGithubNonAction&&!createRepository&&!directRequest&&!pairedRepoWork
-  &&brainTools?.firstPartyRepairTarget?.(request)==='www-infinity4/QuantaPhi';
+  &&typeof brainTools!=='undefined'&&brainTools?.firstPartyRepairTarget?.(request)==='www-infinity4/QuantaPhi';
  if(knownQuantaRepair)directCoding=false;
  // Grammar Phi may interpret an unusually worded direct engineering request
  // before the owner tool dispatcher. It returns ONLY a non-authorizing label.
@@ -3038,7 +3038,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // are still enforced independently. Never classify a screen observation.
  let neuralCoding=false;
  const neuralWorkCandidate=!embedded&&ownerReady&&!ownerGithubNonAction
-  &&!namedRecordBIssue&&!directCoding&&!knownQuantaRepair
+  &&!namedRecordBIssue&&!directCoding&&!(typeof knownQuantaRepair!=='undefined'&&knownQuantaRepair)
   &&request.length>=8&&request.length<=4000
   // Do not require a magic opening phrase or a product-name keyword before
   // asking the existing model to interpret the current direct utterance.
