@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T13:31:02.094182Z",
+  "checked_at": "2026-11-06T14:01:42.455018Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "ben shelton",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T13:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50389791/ben-shelton-moves-paris-masters-quarters-vs-tommy-paul",
+        "https://www.atptour.com/en/video/hot-shot-rinderknech-clinches-first-set-vs-shelton-with-dreamy-touch-paris-2026",
+        "https://tennisnow.com/shelton-wins-thriller-sets-up-all-american-paris-showdown-vs-paul/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdRcY2kfegyysoZEHc142s0AirzZCM81XAcic-lr2BdTbmbmHzcHA2ZEXc09E",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50389791/ben-shelton-moves-paris-masters-quarters-vs-tommy-paul",
+          "title": "Ben Shelton moves into Paris Masters quarters, to face Tommy Paul next",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdRcY2kfegyysoZEHc142s0AirzZCM81XAcic-lr2BdTbmbmHzcHA2ZEXc09E"
+        },
+        {
+          "url": "https://www.atptour.com/en/video/hot-shot-rinderknech-clinches-first-set-vs-shelton-with-dreamy-touch-paris-2026",
+          "title": "Hot Shot: Rinderknech clinches first set vs. Shelton with dreamy touch",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1M-u4hT5M2CpdkAFuxCwDuaOpIcBKxoxhtIyEk2zcrrnSqONcazPgef4EBA"
+        },
+        {
+          "url": "https://tennisnow.com/shelton-wins-thriller-sets-up-all-american-paris-showdown-vs-paul/",
+          "title": "Shelton Wins Thriller, Sets Up All-American Paris Showdown vs. Paul",
+          "publisher": "Tennis Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1XauziuHwj8KOoBE1aTEmOZkb2DQGsM5Hi6MmKwqwpUsP3t2Mj8QXlxrgGnk"
+        }
+      ]
+    },
+    {
+      "query": "economic calendar",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T13:30:00Z",
+      "related_news_urls": [
+        "https://seekingalpha.com/news/4665097-fridays-economic-calendar",
+        "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
+        "https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsYoopIPGetFOVxt1VA6Vw5IqpKsGDhP2tpV0AwFQlhCiy0zKrbOaXHtJuN8",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/news/4665097-fridays-economic-calendar",
+          "title": "Friday’s Economic Calendar",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsYoopIPGetFOVxt1VA6Vw5IqpKsGDhP2tpV0AwFQlhCiy0zKrbOaXHtJuN8"
+        },
+        {
+          "url": "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
+          "title": "Live Updates: U.S. Jobs Report Shows Strength After Stock Market Falls",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg0HvKSMnRkdJLeM_xvMdNSFYdHPUKO-uVb96Od193dW7Gu9Eyg5L2TSTyKl0"
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/",
+          "title": "U.S. economy added 165,000 jobs in October, showing surprising strength",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvC31As5oD8W72wYS9QMhDChGZ03LEpGski17lPcMZRHiafOd62ja8k_fKFg"
+        }
+      ]
+    },
+    {
+      "query": "mindy kaling",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T13:20:00Z",
+      "related_news_urls": [
+        "https://www.parents.com/mindy-kaling-on-morning-chaos-with-kids-12207123",
+        "https://www.yahoo.com/entertainment/tv/articles/20-upcoming-tv-shows-just-164636161.html",
+        "https://whatculture.com/tv/20-upcoming-tv-shows-which-just-got-cancelled?page=16"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY6yIL4fpvkbIRDLlWj9n90NLRXlTiZYxlLZ16P7K7mGARZru8Mk7RbpM6y-8",
+      "image_credit": "Parents",
+      "news": [
+        {
+          "url": "https://www.parents.com/mindy-kaling-on-morning-chaos-with-kids-12207123",
+          "title": "Mindy Kaling’s Take on School Morning Chaos With 3 Kids Is So Relatable",
+          "publisher": "Parents",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY6yIL4fpvkbIRDLlWj9n90NLRXlTiZYxlLZ16P7K7mGARZru8Mk7RbpM6y-8"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/20-upcoming-tv-shows-just-164636161.html",
+          "title": "20 Upcoming TV Shows Which Just Got Cancelled",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJhyxMA6hdWKnQnCZRvNPB4TJ4cCmvuf-r8y2c-8QF5cd6qXCKQOj8EebCrUk"
+        },
+        {
+          "url": "https://whatculture.com/tv/20-upcoming-tv-shows-which-just-got-cancelled?page=16",
+          "title": "20 Upcoming TV Shows Which Just Got Cancelled – Page 16",
+          "publisher": "WhatCulture.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTgnqeXnce6E-lXvt2YDVusdPo1vEPn1LQRtc7fO9L-vlAhgaAfoNF7YNr5M8"
+        }
+      ]
+    },
+    {
+      "query": "forex factory",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T13:20:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-06/trump-holds-call-with-mediator-qatar-about-iran-de-escalation",
+        "https://www.ft.com/content/d89a6369-7572-42e4-b3eb-413b462c587d?syn-25a6b1a6=1",
+        "https://www.seattletimes.com/nation-world/trump-discusses-middle-east-de-escalation-with-qatars-emir-and-other-mideast-news/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1vNBPxRMRGgTpf1QkB2Wy2LhQG0XNZGVUqpJtnIOwSU1BVACpET30toc7FI",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/trump-holds-call-with-mediator-qatar-about-iran-de-escalation",
+          "title": "Trump Holds Call With Mediator Qatar About Iran De-Escalation",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1vNBPxRMRGgTpf1QkB2Wy2LhQG0XNZGVUqpJtnIOwSU1BVACpET30toc7FI"
+        },
+        {
+          "url": "https://www.ft.com/content/d89a6369-7572-42e4-b3eb-413b462c587d?syn-25a6b1a6=1",
+          "title": "Qatar’s emir holds call with Trump as mediators push for deal to end Iran war",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHPTrxNvBNo7nK-uYrYqqs6qD_dWfUbykpuu48oHHGVrBDwYZ_l55HgiLU_qQ"
+        },
+        {
+          "url": "https://www.seattletimes.com/nation-world/trump-discusses-middle-east-de-escalation-with-qatars-emir-and-other-mideast-news/",
+          "title": "Trump discusses Middle East de-escalation with Qatar’s emir, and other Mideast news",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzZ7G06NCf1g2i__Uc3cf8rPcXT1YCb6lCXX84z_euiYtRPEEbp7J2P_lTf8g"
+        }
+      ]
+    },
+    {
+      "query": "jobs report",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T13:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
+        "https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/",
+        "https://www.reuters.com/business/us-job-growth-expected-pick-up-october-with-moderation-wage-gains-2026-11-06/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg0HvKSMnRkdJLeM_xvMdNSFYdHPUKO-uVb96Od193dW7Gu9Eyg5L2TSTyKl0",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
+          "title": "Live Updates: U.S. Jobs Report Shows Strength After Stock Market Falls",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg0HvKSMnRkdJLeM_xvMdNSFYdHPUKO-uVb96Od193dW7Gu9Eyg5L2TSTyKl0"
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/",
+          "title": "U.S. economy added 165,000 jobs in October, showing surprising strength",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvC31As5oD8W72wYS9QMhDChGZ03LEpGski17lPcMZRHiafOd62ja8k_fKFg"
+        },
+        {
+          "url": "https://www.reuters.com/business/us-job-growth-expected-pick-up-october-with-moderation-wage-gains-2026-11-06/",
+          "title": "US job growth expected to pick up in October, with moderation in wage gains",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSicYEbaDqqTXpZ1rzMA3GFLA1MUHkfR4VQZdsYePVSRB1VECiIqQ5eWC0NyQ"
+        }
+      ]
+    },
+    {
+      "query": "jay rockefeller",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T13:10:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/",
+        "https://wvmetronews.com/2026/11/06/breaking-former-senator-and-governor-jay-rockefeller-has-died/",
+        "https://www.usnews.com/news/politics/articles/2026-11-06/former-us-senator-jay-rockefeller-dies-at-89-washington-post-reports"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61VBD7ecxmMcGEOga7xosFEBIuG0woD1iLm76s5bUngLusZi9YBuBfPN82ko",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/",
+          "title": "Jay Rockefeller, Senate voice on health care and security, dies at 89",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61VBD7ecxmMcGEOga7xosFEBIuG0woD1iLm76s5bUngLusZi9YBuBfPN82ko"
+        },
+        {
+          "url": "https://wvmetronews.com/2026/11/06/breaking-former-senator-and-governor-jay-rockefeller-has-died/",
+          "title": "BREAKING: Former senator and governor Jay Rockefeller has died",
+          "publisher": "WV MetroNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1NxKw0fVaadqipaGejq0qwwQbnWdrQIUae3IWhPyesz1y6__nxOVdNqLE2pc"
+        },
+        {
+          "url": "https://www.usnews.com/news/politics/articles/2026-11-06/former-us-senator-jay-rockefeller-dies-at-89-washington-post-reports",
+          "title": "Former US Senator Jay Rockefeller Dies at 89, Washington Post Reports",
+          "publisher": "U.S. News & World Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFncK9k98TgFYXAfnFcmNNnTb2jAGhYLZxT7xihE1GfIluVvbHG4h7IAjeBdo"
+        }
+      ]
+    },
     {
       "query": "martha stewart halloween costume 2026",
       "approx_searches": "200+",
@@ -38,76 +248,6 @@
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY_LcMuB-VWUAUmaTFhVO51qpLK3GaYCNPx9eSeIRPbkldmNI9Bf9T6Aoox1I"
-        }
-      ]
-    },
-    {
-      "query": "jay rockefeller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T13:10:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/",
-        "https://www.reuters.com/world/us/former-us-senator-jay-rockefeller-dies-89-washington-post-reports-2026-11-06/",
-        "https://sg.news.yahoo.com/former-us-senator-jay-rockefeller-130135991.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61VBD7ecxmMcGEOga7xosFEBIuG0woD1iLm76s5bUngLusZi9YBuBfPN82ko",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/",
-          "title": "Jay Rockefeller, Senate voice on health care and security, dies at 89",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61VBD7ecxmMcGEOga7xosFEBIuG0woD1iLm76s5bUngLusZi9YBuBfPN82ko"
-        },
-        {
-          "url": "https://www.reuters.com/world/us/former-us-senator-jay-rockefeller-dies-89-washington-post-reports-2026-11-06/",
-          "title": "Former US Senator Jay Rockefeller dies at 89, Washington Post reports",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaobT-sVkpBt2304JJKHqTuZNKjlIu3RA4ZrDPDhBQj2mLP1R5PoqO13Wt-30"
-        },
-        {
-          "url": "https://sg.news.yahoo.com/former-us-senator-jay-rockefeller-130135991.html",
-          "title": "Jay Rockefeller, heir to famed dynasty and healthcare advocate in US Senate, dies at 89",
-          "publisher": "Yahoo News Singapore",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIbNGCqX1qyflaRy8uPo26Maw9q5xESPEcpPRLZSaUZ34njs_nYciuom6sdxA"
-        }
-      ]
-    },
-    {
-      "query": "jobs report",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T13:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
-        "https://www.reuters.com/business/us-job-growth-expected-pick-up-october-with-moderation-wage-gains-2026-11-06/",
-        "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR99mDkHOIh1sypVv-j2hPxeXj7v1kJVu15BQP2N_o9ExP66yuZachvJdju-VI",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
-          "title": "The October jobs report is out Friday. Here's everything to expect",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR99mDkHOIh1sypVv-j2hPxeXj7v1kJVu15BQP2N_o9ExP66yuZachvJdju-VI"
-        },
-        {
-          "url": "https://www.reuters.com/business/us-job-growth-expected-pick-up-october-with-moderation-wage-gains-2026-11-06/",
-          "title": "US job growth expected to pick up in October, with moderation in wage gains",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSicYEbaDqqTXpZ1rzMA3GFLA1MUHkfR4VQZdsYePVSRB1VECiIqQ5eWC0NyQ"
-        },
-        {
-          "url": "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
-          "title": "Jobs Report to Be Released After Stock Market Falls: Live Updates",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwQ-SFPLVkTtHUWrjH56g1W5bTaePNBgy1Q51hXSfKmTnziwhp6lt4-jpXt-A"
         }
       ]
     },
@@ -148,22 +288,22 @@
     },
     {
       "query": "bluegrass",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-06T12:50:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/country-bluegrass-legend-dies-sleep-100122161.html",
+        "https://www.pennlive.com/entertainment/2026/11/country-and-bluegrass-legend-dies-in-his-sleep-at-95-the-music-world-lost-a-pioneer.html",
         "https://www.farrisfuneralservice.com/obituaries/william-marburg",
         "https://www.thatericalper.com/2026/11/03/bill-clifton-bluegrass-troubadour-behind-little-whitewashed-chimney-who-launched-one-of-the-first-bluegrass-festivals-dies-at-95/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhCYMDo1z-IWAnvAv3yiKqqOmG1IG14aMis5bv6PE1WOmYy_gV4PXmHQQSHsc",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkzVhS0Bzbu-rCFbRnswZYThbdVMIozai520lunD24Up2Opc-czixzE_hn7ZE",
+      "image_credit": "PennLive.com",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/country-bluegrass-legend-dies-sleep-100122161.html",
+          "url": "https://www.pennlive.com/entertainment/2026/11/country-and-bluegrass-legend-dies-in-his-sleep-at-95-the-music-world-lost-a-pioneer.html",
           "title": "Country and bluegrass legend dies in his sleep at 95: ‘The music world lost a pioneer’",
-          "publisher": "Yahoo",
+          "publisher": "PennLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhCYMDo1z-IWAnvAv3yiKqqOmG1IG14aMis5bv6PE1WOmYy_gV4PXmHQQSHsc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkzVhS0Bzbu-rCFbRnswZYThbdVMIozai520lunD24Up2Opc-czixzE_hn7ZE"
         },
         {
           "url": "https://www.farrisfuneralservice.com/obituaries/william-marburg",
@@ -183,7 +323,7 @@
     },
     {
       "query": "silver lake pif unity acquisition",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-06T12:50:00Z",
       "related_news_urls": [
         "https://www.gamesindustry.biz/unity-reportedly-in-acquisition-talks-with-silver-lake-and-public-investment-fund-two-firms-involved-in-eas-55bn-buyout",
@@ -213,146 +353,6 @@
           "publisher": "Wccftech",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYaFGYWLfRf_qq5GT4QYLrT9CiAzQ1IZoiX2NxJt1xWG1myk5LbvMQKBDzej4"
-        }
-      ]
-    },
-    {
-      "query": "jim clyburn",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T12:50:00Z",
-      "related_news_urls": [
-        "https://www.wistv.com/2026/11/04/rep-jim-clyburn-wins-18th-term-us-house/",
-        "https://www.postandcourier.com/columbia/news/midlands-congressional-sc-statehouse-elections/article_c72073c8-13db-4a1b-86f5-cde188010dd3.html",
-        "https://thetandd.com/news/local/government-politics/article_5c956ab5-6f5e-4313-a443-249c6c41ace9.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrKW1lE1nfN7jj0oTWB-nU7WEgX-tmvio2WnS6kJrgZyGjZ9q9-tMgtocksNQ",
-      "image_credit": "WIS News 10",
-      "news": [
-        {
-          "url": "https://www.wistv.com/2026/11/04/rep-jim-clyburn-wins-18th-term-us-house/",
-          "title": "Rep. Jim Clyburn wins 18th term in U.S. House",
-          "publisher": "WIS News 10",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrKW1lE1nfN7jj0oTWB-nU7WEgX-tmvio2WnS6kJrgZyGjZ9q9-tMgtocksNQ"
-        },
-        {
-          "url": "https://www.postandcourier.com/columbia/news/midlands-congressional-sc-statehouse-elections/article_c72073c8-13db-4a1b-86f5-cde188010dd3.html",
-          "title": "Majority leader for state House appears to have lost. How did others in Midlands fare?",
-          "publisher": "Post and Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWDFyD7Vr7mQyPPAcd2E32RIt0RB_UusIlZeVZlBLuPbUAezM3p-ncXm8OlDQ"
-        },
-        {
-          "url": "https://thetandd.com/news/local/government-politics/article_5c956ab5-6f5e-4313-a443-249c6c41ace9.html",
-          "title": "Clyburn says Democrats must invest in the South",
-          "publisher": "The Times and Democrat",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkcoGVsCH28lhurpXR5oO3-8YmAfgahkGlE6ZFFpPXsf2TQcFtSxGhn9WERWU"
-        }
-      ]
-    },
-    {
-      "query": "uganda",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T12:50:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-06/museveni-son-to-quit-army-as-he-eyes-uganda-s-presidency",
-        "https://www.kenyans.co.ke/news/129181-muhoozi-announces-plans-step-down-ugandas-military-chief",
-        "https://thekenyatimes.com/latest-kenya-times-news/musevenis-son-to-step-down-as-army-chief-reveals-next-move/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRycdghi5TTc7BXq2QfahijgNPksI4cjvwlboVYBbPPnKDgOK3qibqWEzI67hg",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-06/museveni-son-to-quit-army-as-he-eyes-uganda-s-presidency",
-          "title": "Museveni Son to Quit Army as He Eyes Uganda’s Presidency",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRycdghi5TTc7BXq2QfahijgNPksI4cjvwlboVYBbPPnKDgOK3qibqWEzI67hg"
-        },
-        {
-          "url": "https://www.kenyans.co.ke/news/129181-muhoozi-announces-plans-step-down-ugandas-military-chief",
-          "title": "Muhoozi Announces Exit as Uganda’s Military Chief",
-          "publisher": "Kenyans.co.ke",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmEFBfLJXfbkLWqxrpkZHIZltALIy623lASqlrQD93m0asrgo6aWGghaNgfII"
-        },
-        {
-          "url": "https://thekenyatimes.com/latest-kenya-times-news/musevenis-son-to-step-down-as-army-chief-reveals-next-move/",
-          "title": "Museveni’s Son To Step Down As Army Chief, Reveals Next Move",
-          "publisher": "The Kenya Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvq63cUny3qrDyTH4chINSSbOTPf24dYIs-liZ4pGGy5v7Dtw0Tbvqt2_5jOs"
-        }
-      ]
-    },
-    {
-      "query": "antonia ružić",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T12:50:00Z",
-      "related_news_urls": [
-        "https://sports.inquirer.net/705557/live-alex-eala-vs-antonia-ruzic-hong-kong-open-quarterfinals",
-        "https://www.skysports.com/tennis/watch/7818242428795535112/prudential-hong-kong-tennis-open-2026",
-        "https://www.gmanetwork.com/news/sports/othersports/1008501/alex-eala-faces-antonia-ruzic-in-hong-kong-tennis-open-quarterfinals/story/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTgBmPMUFmOUQjMgpkA-IwTZmwWtL5wUWi0oMHYBbZTFLzd-Orl6zcrqaHznM",
-      "image_credit": "Inquirer.net",
-      "news": [
-        {
-          "url": "https://sports.inquirer.net/705557/live-alex-eala-vs-antonia-ruzic-hong-kong-open-quarterfinals",
-          "title": "LIVE: Alex Eala vs Antonia Ruzic – Hong Kong Open quarterfinals",
-          "publisher": "Inquirer.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTgBmPMUFmOUQjMgpkA-IwTZmwWtL5wUWi0oMHYBbZTFLzd-Orl6zcrqaHznM"
-        },
-        {
-          "url": "https://www.skysports.com/tennis/watch/7818242428795535112/prudential-hong-kong-tennis-open-2026",
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLX9Pr2gyYDrziI7tAzMej-eIpKbzv0wHqiHwkUR1B9xBYnp45JjrCZcNwcXs"
-        },
-        {
-          "url": "https://www.gmanetwork.com/news/sports/othersports/1008501/alex-eala-faces-antonia-ruzic-in-hong-kong-tennis-open-quarterfinals/story/",
-          "title": "Alex Eala faces Antonia Ruzic in Hong Kong Tennis Open quarterfinals",
-          "publisher": "GMA Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3t2sQtH8HVYbhrpYxAt1T5YlcuIodMXffOkBcofEbxqGbtg0REQ_W-3e_sWE"
-        }
-      ]
-    },
-    {
-      "query": "ron baron",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T12:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/prediction-spacex-stock-parabolic-nov-102000297.html",
-        "https://www.basenor.com/blogs/news/elon-musk-at-baron-conference-nov-6-what-to-expect",
-        "https://www.tipranks.com/news/article/watch-this-date-says-top-investor-about-spacex-stock"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQid5yqAIzibJCdx8ONRIWkW2m1FRQ6J71NJE7_3h4YzwMeOszwndQP3qaiI4k",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-spacex-stock-parabolic-nov-102000297.html",
-          "title": "Prediction: SpaceX Stock Will Go Parabolic After Nov. 6",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQid5yqAIzibJCdx8ONRIWkW2m1FRQ6J71NJE7_3h4YzwMeOszwndQP3qaiI4k"
-        },
-        {
-          "url": "https://www.basenor.com/blogs/news/elon-musk-at-baron-conference-nov-6-what-to-expect",
-          "title": "Elon Musk at Baron Conference Nov 6: What to Expect",
-          "publisher": "BASENOR - Tesla Accessories",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSD4NA4z6nvw9ne5CNiXL5qQu9O_J15kqQzLifxo0X9Y_u_c0THqKqGF6UK08"
-        },
-        {
-          "url": "https://www.tipranks.com/news/article/watch-this-date-says-top-investor-about-spacex-stock",
-          "title": "‘Watch This Date,’ Says Top Investor About SpaceX Stock",
-          "publisher": "TipRanks",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKg5y0Jn8eHA5nEqZfRpvoMCqvAZNEPoDg9Pkvaz_6eKG75af-MryBSV5kaiU"
         }
       ]
     }
