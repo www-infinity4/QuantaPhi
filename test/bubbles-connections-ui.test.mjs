@@ -134,6 +134,14 @@ test('account page starts consent with the selected provider permissions',async 
  await panel.refresh();
  assert.ok(descendants(container).some(node=>node.dataset?.provider==='cloudflare'));
  assert.ok(descendants(container).some(node=>String(node.textContent).includes('reconnect required')));
+ const fullClientButton=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
+ assert.equal(fullCloudflareConfigured,true);
+ await fullClientButton.listeners.click();
+ assert.deepEqual(calls.filter(call=>call.path==='/start').at(-1).body,
+  {provider:'cloudflare',actions:['account.read']},
+  'Initial account sign-in must not launch 386 Cloudflare permission scopes');
+ panel.client.cancelConnect();
+
 
  googleConfigured=true;
  window.location.assign=url=>{navigation=url;};
