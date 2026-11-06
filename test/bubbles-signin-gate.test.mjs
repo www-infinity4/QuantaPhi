@@ -255,7 +255,7 @@ test('a verified Cloudflare identity keeps full 386-scope upgrade separate from 
  assert.equal(ui.calls.some(x=>x.path==='/start'),false);
 });
 
-test('registered full-scope Cloudflare client uses all 386 at first consent instead of incompatible two-scope request',async t=>{
+test('Cloudflare initial sign-in opens the smallest registered account consent rather than 386-scope review',async t=>{
  const payload=partialGate();
  payload.providers.cloudflare.authorizationActions=['account.read','owner.full'];
  const ui=mountedGate(t,payload);
@@ -263,11 +263,11 @@ test('registered full-scope Cloudflare client uses all 386 at first consent inst
  const button=ui.get('bubblesCloudflareSignIn');
  assert.equal(button.textContent,'Sign in with Cloudflare');
  await button.listeners.click();
- assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['owner.full']});
+ assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['account.read']});
  const authorization=new URL(ui.popups[0].location.href);
  const scopes=authorization.searchParams.get('scope').split(' ');
- assert.equal(scopes.length,386);
- assert.equal(new Set(scopes).size,386);
+ assert.equal(scopes.length,2);
+ assert.deepEqual(scopes,['user-details.read','memberships.read']);
  assert.ok(scopes.includes('user-details.read'));
  assert.ok(scopes.includes('memberships.read'));
  assert.equal(authorization.origin,'https://dash.cloudflare.com');
