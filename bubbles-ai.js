@@ -1234,6 +1234,18 @@ function renderRepositoryOptions(){
  repositorySummary.textContent='GitHub targets · '+(repositorySelection.size===1?[...repositorySelection][0].split('/')[1]:repositorySelection.size+' selected');
 }
 repositoryFilter.addEventListener('input',renderRepositoryOptions);
+// Authenticated GitHub reads may finish asynchronously. A returned request ID
+// is not the result; read the durable receipt before interpreting discovery.
+async function settleGithubRead(operation,{pause=ms=>new Promise(resolve=>setTimeout(resolve,ms)),maxChecks=8}={}){
+ let read=await directGithubOperation(operation,{quiet:true});
+ const requestId=read?.requestId;
+ for(let i=0;requestId&&i<maxChecks&&
+  (['working','unconfirmed'].includes(read?.status)||read?.error==='receipt_not_found');i++){
+  await pause(1000);
+  read=await githubReceipt(requestId);
+ }
+ return read;
+}
 async function suggestRepositoryTargets(request,preview=false){
  if(embedded||!request||request.length<6)return null;
  const seq=++repositorySuggestionSequence;
@@ -1250,13 +1262,7 @@ async function suggestRepositoryTargets(request,preview=false){
     if(!repositorySourceSearch||repositorySourceSearch.key!==key||Date.now()-repositorySourceSearch.at>60000){
      const pending=discovery.discoverProject({request:searchRequest,catalog:repositoryCatalog,
       views:discovery.relevantProjectViews(request),invoke:async operation=>{
-       let read=await directGithubOperation(operation,{quiet:true});
-       if(['read_file','read_repository'].includes(operation.action)&&read.requestId){
-        for(let i=0;i<8&&['working','unconfirmed'].includes(read.status);i++){
-         await new Promise(resolve=>setTimeout(resolve,1000));read=await readGithubReceipt(read.requestId);
-        }
-       }
-       return read;
+       return settleGithubRead(operation);
       }});
      repositorySourceSearch={key,at:Date.now(),pending};
     }
@@ -1284,7 +1290,7 @@ async function suggestRepositoryTargets(request,preview=false){
  }
  let result;
  try{
-  result=await directGithubOperation({action:'suggest_repositories',mode:'read',request});
+  result=await settleGithubRead({action:'suggest_repositories',mode:'read',request});
   if(!result.ok||!result.catalogComplete||!Array.isArray(result.candidates))throw Error(result.error||'Repository suggestions unavailable');
  }catch(serverError){
   // During independent Cloudflare Worker rollout, the existing GitHub inventory
@@ -1303,13 +1309,7 @@ async function suggestRepositoryTargets(request,preview=false){
    const discovery=await import('/bubbles-project-discovery.mjs?v=20261106-contextual1');
    const evidence=repositoryCatalogComplete?await discovery.discoverProject({request,catalog:repositoryCatalog,
     views:discovery.relevantProjectViews(request),invoke:async operation=>{
-     let read=await directGithubOperation(operation,{quiet:true});
-     if(['read_file','read_repository'].includes(operation.action)&&read.requestId){
-      for(let i=0;i<8&&['working','unconfirmed'].includes(read.status);i++){
-       await new Promise(resolve=>setTimeout(resolve,1000));read=await readGithubReceipt(read.requestId);
-      }
-     }
-     return read;
+     return settleGithubRead(operation);
     }}):null;
    if(evidence)result={...result,selection:[evidence.repository],requiresReview:false,
     confidence:'high',source:evidence.source,reason:'Matching source file was read.',evidence};
@@ -1339,7 +1339,7 @@ async function loadRepositoryCatalog(){
  if(repositoryCatalogLoading||embedded)return;
  repositoryCatalogLoading=true;repositoryState.textContent='Loading your GitHub repository list…';
  try{
-  const result=await directGithubOperation({action:'list_repositories',mode:'read'});
+  const result=await settleGithubRead({action:'list_repositories',mode:'read'});
   if(!result.ok||!result.complete||!Array.isArray(result.repositories))throw Error(result.error||'Repository list incomplete');
   repositoryCatalog=[...new Set(['www-infinity4/QuantaPhi',...result.repositories.map(repo=>repo.repository).filter(repo=>/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(repo))])];
   repositoryCatalogComplete=true;repositoryState.textContent='Select one, several, or all repositories. Each receives its own tracked ticket.';
@@ -3201,7 +3201,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }
  else if(!embedded&&githubInventoryRequested){
   try{
-   const result=await directGithubOperation({action:'list_repositories',mode:'read'});
+   const result=await settleGithubRead({action:'list_repositories',mode:'read'});
    if(!result.ok||!result.complete||!Array.isArray(result.repositories))
     throw Error(result.error||result.status||'GitHub inventory incomplete');
    const names=result.repositories.map(item=>String(item.repository||item.full_name||'')).filter(Boolean);

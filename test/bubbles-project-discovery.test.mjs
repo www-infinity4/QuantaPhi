@@ -234,3 +234,25 @@ test('browser carries plural repair context to real owner source discovery and G
  const bubbles=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
  for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261106-contextual-discovery1/);
 });
+
+
+test('Bubbles waits for a real durable GitHub code-search receipt before deciding discovery failed',async()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const begin=ui.indexOf('async function settleGithubRead(');
+ const end=ui.indexOf('async function suggestRepositoryTargets(',begin);
+ assert.ok(begin>0&&end>begin,'shared receipt reader is defined');
+ assert.doesNotMatch(ui,/readGithubReceipt\(/,'a nonexistent receipt helper must never stop GitHub inspection');
+ const events=[];
+ const settle=new Function('directGithubOperation','githubReceipt',ui.slice(begin,end)+'\nreturn settleGithubRead;')(
+  async command=>{events.push('request:'+command.action);return {ok:true,status:'working',requestId:'verified-reader-1'};},
+  async id=>{events.push('receipt:'+id);return events.length===2
+   ?{ok:false,error:'receipt_not_found',requestId:id}
+   :{ok:true,status:'code_search_results',requestId:id,results:[{repository:'www-infinity4/QuantaPhi',path:'bubbles-ai.js'}]};}
+ );
+ const result=await settle({action:'search_github_code',mode:'read'}, {pause:async()=>{},maxChecks:4});
+ assert.equal(result.status,'code_search_results');
+ assert.equal(result.results[0].path,'bubbles-ai.js');
+ assert.deepEqual(events,['request:search_github_code','receipt:verified-reader-1','receipt:verified-reader-1']);
+ assert.match(ui,/return settleGithubRead\(operation\);/);
+ assert.match(ui,/await settleGithubRead\(\{action:'list_repositories',mode:'read'\}\)/);
+});
