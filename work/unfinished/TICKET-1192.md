@@ -55,3 +55,13 @@ https://github.com/www-infinity4/QuantaPhi/issues/1192
 ### Same-session independent source review and CI correction
 
 A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after 92 focused tests. Credit activation remains held on the two reproducible recovery/provenance findings recorded in docs/BUBBLES-ITERATION-CREDIT.md. The ordinary-routing CI failures were stale literal-branch assertions plus a voice harness that counted the new non-executing intent proposal as a mutation; updated those fixtures while preserving owner/embedded/explicit-team assertions. No credit enablement or existing job permission was changed. Exact-head checks are rerun before any source promotion.
+
+
+## 2026-11-06 UTC · screenshot-reported GitHub reply gap and creation iteration repair
+
+- Source: owner-provided Bubbles screenshots, same-conversation `test-pilot` create request and follow-up `Did GitHub respond?`. The screenshot displayed an action proposal and unverified delayed reply, not a real GitHub repository creation receipt. Public GitHub lookup for `www-infinity4/test-pilot` returned 404; this does not prove what a private owner session attempted.
+- Reused canonical #1192 for authenticated execution and #1296 for receipt-driven Bubble Bits. No external coordinator lease was claimed; lease, task/session ID and fence remain null.
+- Draft PR #1723, branch `fix/bubbles-github-receipt-followup-and-iterations-20261105`: owner-scoped opaque GitHub request reference, natural status question routed to durable `/work/github` receipt (without mutation replay), repository-creation iteration start/progress/receipt, and pending status preserved after chat reply.
+- The branch merged in current Google sign-in work from main as a two-parent source merge without reverting it. Isolated follow-up Node tests passed locally 3/3; CI first found a missing test-harness stub in two existing Bubbles direct GitHub VM tests, corrected in `dc72b9e63cfb90396a1e46dafa91e2f066470981`. Exact-head CI after this correction remains to be checked.
+- Status: source_tested / review_pending (🟡); overall progress remains unknown. No production Cloudflare release, physical Android readback, new repo creation, settled Bubble Bits or GIT issuance has been claimed. Existing `BUBBLE_BITS_ENABLED` safety hold stays OFF.
+- Next single executable action: inspect PR #1723 exact-head Bubbles unified and Bits CI results; independently review, then guarded release with an authenticated owner same-conversation `create_repository` receipt and Android status/iteration acceptance.
