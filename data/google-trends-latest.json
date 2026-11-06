@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T06:35:35.063182Z",
+  "checked_at": "2026-11-06T07:01:25.666050Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "tanker",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T06:40:00Z",
+      "related_news_urls": [
+        "https://www.pbs.org/newshour/world/tankers-carrying-russian-diesel-change-course-raising-doubts-about-shipments-to-u-s",
+        "https://www.reuters.com/business/energy/new-jersey-governor-warns-ports-against-accepting-russian-diesel-2026-11-03/",
+        "https://www.ft.com/content/f66ebf48-6d09-4a91-9af5-8bf7adca65ba?syn-25a6b1a6=1"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT18W3kjylX7qEjnFlXGI6oshWyEwvCRiHNXWoDgksWvM2UIgVuPU3m9osGLHk",
+      "image_credit": "PBS",
+      "news": [
+        {
+          "url": "https://www.pbs.org/newshour/world/tankers-carrying-russian-diesel-change-course-raising-doubts-about-shipments-to-u-s",
+          "title": "Tankers carrying Russian diesel change course, raising doubts about shipments to U.S.",
+          "publisher": "PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT18W3kjylX7qEjnFlXGI6oshWyEwvCRiHNXWoDgksWvM2UIgVuPU3m9osGLHk"
+        },
+        {
+          "url": "https://www.reuters.com/business/energy/new-jersey-governor-warns-ports-against-accepting-russian-diesel-2026-11-03/",
+          "title": "New Jersey governor warns ports against accepting Russian diesel",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBDG9IO3F_WksApJqAlynGK06fvGtXcnVFvb1ufrwcB3QTwN9MUBRwMFBFXyA"
+        },
+        {
+          "url": "https://www.ft.com/content/f66ebf48-6d09-4a91-9af5-8bf7adca65ba?syn-25a6b1a6=1",
+          "title": "Trump diesel deal with Russia falters as US fuel supplies hit 20-year low",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtefT42JhRuwZr2dicrACwcneXedDS_9E5tDnUahdqONOrNDmHkzL_7CQZEKM"
+        }
+      ]
+    },
+    {
+      "query": "martin mcdonagh",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T06:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/arts-culture/film/wild-horse-nine-review-martin-mcdonaghs-black-comic-beauty-6f232d16",
+        "https://www.nytimes.com/2026/11/05/movies/wild-horse-nine-review.html",
+        "https://slate.com/culture/2026/11/wild-horse-nine-oscars-john-malkovich-sam-rockwell-movie.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2RpM9u26I0WpszamEoVhOybs6fwAB9JCirs55TmO3dKHxADiOkshxyYe5aw",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/arts-culture/film/wild-horse-nine-review-martin-mcdonaghs-black-comic-beauty-6f232d16",
+          "title": "‘Wild Horse Nine’ Review: Martin McDonagh’s Black-Comic Beauty",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2RpM9u26I0WpszamEoVhOybs6fwAB9JCirs55TmO3dKHxADiOkshxyYe5aw"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/05/movies/wild-horse-nine-review.html",
+          "title": "‘Wild Horse Nine’ Review: A C.I.A. Holiday",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqlSTn49lNW_g4kycP_VXMUgqxuazjasXebe08tP40N_Zr2kkuriCtSM-Llgc"
+        },
+        {
+          "url": "https://slate.com/culture/2026/11/wild-horse-nine-oscars-john-malkovich-sam-rockwell-movie.html",
+          "title": "There’s Only One Man I Want to See Win Best Actor This Year",
+          "publisher": "Slate Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpT1D1BfGHeM6bd3KxHo3s3Rx-TW7VMy3d6EZTMpNbW9d7LFWla8kKPYTMrw8"
+        }
+      ]
+    },
     {
       "query": "elon musk net worth",
       "approx_searches": "20000+",
@@ -217,41 +287,6 @@
       ]
     },
     {
-      "query": "motiejus krivas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T06:00:00Z",
-      "related_news_urls": [
-        "https://www.basketnews.lt/news-258864-ncaa-aiksteje-fantastinis-indrusaicio-zaidimas.html",
-        "https://osportas.lt/nba-talentu-reitinge-aukstas-krivo-ivertinimas/",
-        "https://www.sportas.lt/naujiena/552347/ncaa-lygoje-29-lietuviu-pasirodymai"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn5OT7LJTXUWmzZd7w3PpoaMzJi_YIgKFMmb_LoDxqOZ9s6M84sBs8kfeT8Ik",
-      "image_credit": "BasketNews.lt",
-      "news": [
-        {
-          "url": "https://www.basketnews.lt/news-258864-ncaa-aiksteje-fantastinis-indrusaicio-zaidimas.html",
-          "title": "NCAA aikštėje – fantastinis lietuvio žaidimas",
-          "publisher": "BasketNews.lt",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn5OT7LJTXUWmzZd7w3PpoaMzJi_YIgKFMmb_LoDxqOZ9s6M84sBs8kfeT8Ik"
-        },
-        {
-          "url": "https://osportas.lt/nba-talentu-reitinge-aukstas-krivo-ivertinimas/",
-          "title": "NBA talentų reitinge – aukštas Krivo įvertinimas",
-          "publisher": "O, Sportas!",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeeJdCz94F9ButMrzEdLi8Qsga7oFaM4hbbKEvWbO2XEvlO86_GUtE7jOalr8"
-        },
-        {
-          "url": "https://www.sportas.lt/naujiena/552347/ncaa-lygoje-29-lietuviu-pasirodymai",
-          "title": "NCAA lygoje – 29 lietuvių pasirodymai",
-          "publisher": "Sportas.lt",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsCHKMDxwagnrJ-dL8ilKKVnf5BqxZLR2Fs7p05E9X9fJlV3Ro4YyK_SEGDK8"
-        }
-      ]
-    },
-    {
       "query": "ryan clark",
       "approx_searches": "500+",
       "published_at": "2026-11-06T05:40:00Z",
@@ -288,7 +323,7 @@
     },
     {
       "query": "christian bale",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-06T05:40:00Z",
       "related_news_urls": [
         "https://people.com/all-about-riko-shibata-nicolas-cage-wife-12237864",
@@ -318,41 +353,6 @@
           "publisher": "Page Six",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc8bv1lZ2wlY0cbTR-I5RBUghgAaVV00KNXj3qRGKwDg7B_i-6TJ1KuMsAYhg"
-        }
-      ]
-    },
-    {
-      "query": "fortnite token",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T05:40:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/04/fortnite-clarifies-the-odds-of-opening-a-pirate-shop-token-chest/",
-        "https://www.gamespot.com/articles/people-are-acting-weird-as-hell-during-fortnites-treasure-hunt/",
-        "https://aftermath.site/fortnite-pirate-token/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbD9ACPjHDZIB4GHxA7QqmblNFGzIwDEgMskUmBXJvNEFIiV3I9rgpOh1BTQI",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/04/fortnite-clarifies-the-odds-of-opening-a-pirate-shop-token-chest/",
-          "title": "‘Fortnite’ Clarifies The Odds Of Opening A Pirate Shop Token Chest",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbD9ACPjHDZIB4GHxA7QqmblNFGzIwDEgMskUmBXJvNEFIiV3I9rgpOh1BTQI"
-        },
-        {
-          "url": "https://www.gamespot.com/articles/people-are-acting-weird-as-hell-during-fortnites-treasure-hunt/",
-          "title": "People Are Acting Weird As Hell During Fortnite’s Treasure Hunt",
-          "publisher": "GameSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtjoE4tW-Axp4DvzK_9AiKHJYMzfLHBuhf3RhsFaMPpl9snRS-_6nQYXz0M-o"
-        },
-        {
-          "url": "https://aftermath.site/fortnite-pirate-token/",
-          "title": "Fortnite's Pirate Token Item Is Everything That's Wrong With The Game These Days",
-          "publisher": "Aftermath",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN6vNEOO4jl1XyvzGvVx9EoV6I5yc3UNCHJBSa0PslGHr3oEswjmpiWYp6bow"
         }
       ]
     }
