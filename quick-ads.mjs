@@ -1,4 +1,4 @@
-import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAdState,quickAdPacingAllows} from './quick-ads-core.mjs?v=20261029-house2';
+import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAdState,quickAdPacingAllows} from './quick-ads-core.mjs?v=20261106-norepeat1';
 /* QuantaPhi Quick Ads: event-driven, silent, dismissible game spots and first-party successor.
  * Server feed establishes live vs final; network errors fail closed.
  * No merchant, wallet, search or account data leaves this module. */
