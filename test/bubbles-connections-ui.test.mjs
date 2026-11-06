@@ -45,7 +45,7 @@ test('client setup probe uses only a fictitious grant and never claims account v
 
 test('account page starts consent with the selected provider permissions',async t=>{
  class Element {
-  constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.classList={add(){}};}
+  constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.style={};this.classList={add(){}};}
   append(...nodes){this.childNodes.push(...nodes);}
   prepend(...nodes){this.childNodes.unshift(...nodes);}
   replaceChildren(...nodes){this.childNodes=nodes;}
@@ -200,12 +200,7 @@ test('account page starts consent with the selected provider permissions',async 
  for(let i=0;i<20&&calls.slice(beforeRecovery).filter(call=>call.path==='/handoff/cloudflare/resume').length<1;i++)
   await new Promise(setImmediate);
  assert.equal(calls.slice(beforeRecovery).filter(call=>call.path==='/handoff/cloudflare/resume').length,1,
-  'Only one wallet-bound Cloudflare recovery attempt per Accounts page; seen '+JSON.stringify({
-    paths:calls.slice(beforeRecovery).map(c=>c.path),
-    accounts:accountRecords.map(c=>[c.provider,c.status]),
-    pending:!!recoveredPanel.client.pending,
-    status:descendants(recoveredContainer).map(n=>n.textContent).filter(x=>typeof x==='string'&&(/connection|authorization|Sign in/.test(x))).slice(0,8)
-  }));
+  'Only one wallet-bound Cloudflare recovery attempt per Accounts page');
  assert.equal(calls.slice(beforeRecovery).some(call=>call.path==='/start'),false);
  for(let i=0;i<20&&!descendants(recoveredContainer).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as recovered@example.test'));i++)
   await new Promise(setImmediate);
