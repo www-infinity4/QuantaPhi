@@ -216,9 +216,10 @@
     } else if(tracks.length) {
       playbackRequested = true;
       failures = 0;
-      if (typeof window !== 'undefined' && typeof CustomEvent === 'function' && typeof window.dispatchEvent === 'function')
+      if (typeof window !== 'undefined' && typeof CustomEvent === 'function' && typeof window.dispatchEvent === 'function') {
         window.dispatchEvent(new CustomEvent('infinity:music-focus',{detail:{player:'radio'}}));
         window.dispatchEvent(new CustomEvent('quantaphi:infinity-radio-play'));
+      }
       // A deliberate new Play gesture retries temporary network failures.
       unavailableSources.clear();
       skippedSinceSuccess=0;
