@@ -57,7 +57,7 @@ test('the same live status line loads on every Bubbles website entrypoint withou
   const html=fs(page);
   assert.match(html,/bubbles-live-iteration-feed\.mjs\?v=20261104-iteration-credit1/);
   assert.match(html,/bubbles-live-iteration-feed\.css\?v=20261104-live-bits1/);
-  assert.match(html,/bubbles-ai\.js\?v=20261106-cloudflare-auto-recover6/);
+  assert.match(html,/bubbles-ai\.js\?v=20261106-cloudflare-click-fixed7/);
  }
  const module=fs('bubbles-live-iteration-feed.mjs');
  assert.match(module,/status\.after\(wrapper\)/);
