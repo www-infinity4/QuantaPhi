@@ -1,39 +1,47 @@
 /* QuantaPhi native X cards — min 320px mobile, no horizontal overflow. */
-#xTwitterCard{width:100%;max-width:680px;margin:18px auto;min-width:0;box-sizing:border-box;color:#263441}
-#xTwitterCard *,#xTwitterCard *::before,#xTwitterCard *::after{box-sizing:border-box}
-#xTwitterCard .xt-card{width:100%;min-width:0;max-width:100%;overflow:hidden;border:1px solid #cbd5de;border-radius:20px;padding:clamp(12px,3vw,20px);background:#f8fafc;box-shadow:0 8px 28px #26364412;font-family:system-ui,-apple-system,Roboto,sans-serif}
-#xTwitterCard .xt-head{display:flex;flex-wrap:wrap;gap:12px;align-items:start;justify-content:space-between;min-width:0}
-#xTwitterCard .xt-title{min-width:0;flex:1 1 200px}
-#xTwitterCard .xt-title h2{font:800 clamp(24px,5vw,30px)/1.3 system-ui;margin:0;color:#182f44;letter-spacing:.008em}
-#xTwitterCard .xt-caption{font:450 15px/1.55 system-ui;color:#556676;margin:5px 0 9px}
-#xTwitterCard .xt-head-actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center;max-width:100%;min-width:0}
-#xTwitterCard .xt-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:15px 0 12px;min-width:0}
-#xTwitterCard .xt-button,#xTwitterCard .xt-tab{display:inline-flex;align-items:center;justify-content:center;min-height:46px;min-width:0;max-width:100%;padding:10px 12px;border:1px solid #aebcca;border-radius:11px;background:#fff;color:#19374e;-webkit-text-fill-color:#19374e;font:700 14px/1.35 system-ui;letter-spacing:.005em;text-decoration:none;text-align:center;white-space:normal;overflow-wrap:anywhere;cursor:pointer}
-#xTwitterCard .xt-tab[aria-selected=true]{border-color:#285a80;background:#e9f1f7;color:#173c5b;font-weight:800}
-#xTwitterCard .xt-button:disabled{opacity:.55;cursor:not-allowed}
-#xTwitterCard .xt-compose,#xTwitterCard .xt-send{background:#1e445f;color:#fff;-webkit-text-fill-color:#fff;border-color:#1e445f}
-#xTwitterCard .xt-search{display:flex;flex-wrap:wrap;align-items:center;gap:9px;min-width:0;margin:12px 0}
-#xTwitterCard .xt-search[hidden],#xTwitterCard a[hidden]{display:none!important}
-#xTwitterCard .xt-topic{min-width:0;flex:1 1 150px;max-width:100%;height:48px;border:1px solid #a9bac7;border-radius:11px;padding:12px;background:#fff;color:#203b4d;font:500 16px/1.4 system-ui}
-#xTwitterCard .xt-status{font:550 14px/1.55 system-ui;color:#304b60;padding:10px 12px;border:1px solid #d1dee7;border-radius:10px;background:#eef4f8;overflow-wrap:anywhere;margin:9px 0}
-#xTwitterCard .xt-post{min-width:0;max-width:100%;overflow-wrap:anywhere;border:1px solid #d7e0e6;border-radius:15px;background:#fff;margin:10px 0;padding:15px}
-#xTwitterCard .xt-post-head{display:flex;gap:5px 9px;align-items:baseline;flex-wrap:wrap;font:600 15px/1.45 system-ui}
-#xTwitterCard .xt-post-head strong{color:#17384b}
-#xTwitterCard .xt-muted,#xTwitterCard .xt-time{color:#536675;font:450 13px/1.55 system-ui;overflow-wrap:anywhere}
-#xTwitterCard .xt-post-text{font:450 16px/1.7 system-ui;color:#283946;letter-spacing:.008em;margin:12px 0;white-space:pre-wrap;overflow-wrap:anywhere}
-#xTwitterCard .xt-metrics{display:block;color:#596d7b;font:500 13px/1.45 system-ui;margin-bottom:9px}
-#xTwitterCard .xt-post-actions{display:flex;flex-wrap:wrap;gap:7px;min-width:0}
-#xTwitterCard .xt-post-actions .xt-button{flex:1 1 85px}
-#xTwitterCard .xt-footer{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;padding:12px 0 2px}
-#xTwitterCard .xt-fetched{color:#506a7c;font:500 13px/1.5 system-ui}
-#xTwitterCard .xt-empty{color:#526777;font:500 16px/1.6 system-ui;padding:14px 10px}
-#xTwitterCard .xt-dialog{border:1px solid #a0afbf;border-radius:18px;width:min(95vw,520px);max-width:520px;max-height:88dvh;overflow-y:auto;padding:20px;background:#fff;color:#1c3443;box-shadow:0 18px 55px #091a2b55}
-#xTwitterCard .xt-dialog::backdrop{background:#13202bb8}
-#xTwitterCard .xt-dialog h3{font:800 24px/1.4 system-ui;margin:0 0 8px}
-#xTwitterCard .xt-dialog-note{font:500 15px/1.55 system-ui;color:#536676}
-#xTwitterCard .xt-editor{display:block;width:100%;min-height:142px;max-width:100%;padding:14px;border:1px solid #9fadb8;border-radius:11px;background:#fff;color:#223843;font:500 17px/1.6 system-ui;resize:vertical;overflow-wrap:anywhere}
-#xTwitterCard .xt-counter,#xTwitterCard .xt-feedback{display:block;font:500 14px/1.5 system-ui;margin:8px 0;color:#3f586a;overflow-wrap:anywhere}
-#xTwitterCard .xt-dialog-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px}
-#xTwitterCard :is(button,a,textarea,input):focus-visible{outline:3px solid #7c4eb4;outline-offset:3px}
-@media(max-width:380px){#xTwitterCard .xt-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}#xTwitterCard .xt-card{padding:11px}#xTwitterCard .xt-post{padding:12px}#xTwitterCard .xt-post-actions .xt-button{flex:1 1 42%}}
-@media(prefers-reduced-motion:reduce){#xTwitterCard *{animation:none!important;transition:none!important}}
+:is(#xTwitterCard,.qf-x-native){width:100%;max-width:680px;margin:18px auto;min-width:0;box-sizing:border-box;color:#263441}
+:is(#xTwitterCard,.qf-x-native) *,:is(#xTwitterCard,.qf-x-native) *::before,:is(#xTwitterCard,.qf-x-native) *::after{box-sizing:border-box}
+:is(#xTwitterCard,.qf-x-native) .xt-card{width:100%;min-width:0;max-width:100%;overflow:hidden;border:1px solid #cbd5de;border-radius:20px;padding:clamp(12px,3vw,20px);background:#f8fafc;box-shadow:0 8px 28px #26364412;font-family:system-ui,-apple-system,Roboto,sans-serif}
+:is(#xTwitterCard,.qf-x-native) .xt-head{display:flex;flex-wrap:wrap;gap:12px;align-items:start;justify-content:space-between;min-width:0}
+:is(#xTwitterCard,.qf-x-native) .xt-title{min-width:0;flex:1 1 200px}
+:is(#xTwitterCard,.qf-x-native) .xt-title h2{font:800 clamp(24px,5vw,30px)/1.3 system-ui;margin:0;color:#182f44;letter-spacing:.008em}
+:is(#xTwitterCard,.qf-x-native) .xt-caption{font:450 15px/1.55 system-ui;color:#556676;margin:5px 0 9px}
+:is(#xTwitterCard,.qf-x-native) .xt-head-actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center;max-width:100%;min-width:0}
+:is(#xTwitterCard,.qf-x-native) .xt-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:15px 0 12px;min-width:0}
+:is(#xTwitterCard,.qf-x-native) .xt-button,:is(#xTwitterCard,.qf-x-native) .xt-tab{display:inline-flex;align-items:center;justify-content:center;min-height:46px;min-width:0;max-width:100%;padding:10px 12px;border:1px solid #aebcca;border-radius:11px;background:#fff;color:#19374e;-webkit-text-fill-color:#19374e;font:700 14px/1.35 system-ui;letter-spacing:.005em;text-decoration:none;text-align:center;white-space:normal;overflow-wrap:anywhere;cursor:pointer}
+:is(#xTwitterCard,.qf-x-native) .xt-tab[aria-selected=true]{border-color:#285a80;background:#e9f1f7;color:#173c5b;font-weight:800}
+:is(#xTwitterCard,.qf-x-native) .xt-button:disabled{opacity:.55;cursor:not-allowed}
+:is(#xTwitterCard,.qf-x-native) .xt-compose,:is(#xTwitterCard,.qf-x-native) .xt-send{background:#1e445f;color:#fff;-webkit-text-fill-color:#fff;border-color:#1e445f}
+:is(#xTwitterCard,.qf-x-native) .xt-search{display:flex;flex-wrap:wrap;align-items:center;gap:9px;min-width:0;margin:12px 0}
+:is(#xTwitterCard,.qf-x-native) .xt-search[hidden],:is(#xTwitterCard,.qf-x-native) a[hidden]{display:none!important}
+:is(#xTwitterCard,.qf-x-native) .xt-topic{min-width:0;flex:1 1 150px;max-width:100%;height:48px;border:1px solid #a9bac7;border-radius:11px;padding:12px;background:#fff;color:#203b4d;font:500 16px/1.4 system-ui}
+:is(#xTwitterCard,.qf-x-native) .xt-status{font:550 14px/1.55 system-ui;color:#304b60;padding:10px 12px;border:1px solid #d1dee7;border-radius:10px;background:#eef4f8;overflow-wrap:anywhere;margin:9px 0}
+:is(#xTwitterCard,.qf-x-native) .xt-post{min-width:0;max-width:100%;overflow-wrap:anywhere;border:1px solid #d7e0e6;border-radius:15px;background:#fff;margin:10px 0;padding:15px}
+:is(#xTwitterCard,.qf-x-native) .xt-post-head{display:flex;gap:5px 9px;align-items:baseline;flex-wrap:wrap;font:600 15px/1.45 system-ui}
+:is(#xTwitterCard,.qf-x-native) .xt-post-head strong{color:#17384b}
+:is(#xTwitterCard,.qf-x-native) .xt-muted,:is(#xTwitterCard,.qf-x-native) .xt-time{color:#536675;font:450 13px/1.55 system-ui;overflow-wrap:anywhere}
+:is(#xTwitterCard,.qf-x-native) .xt-post-text{font:450 16px/1.7 system-ui;color:#283946;letter-spacing:.008em;margin:12px 0;white-space:pre-wrap;overflow-wrap:anywhere}
+:is(#xTwitterCard,.qf-x-native) .xt-metrics{display:block;color:#596d7b;font:500 13px/1.45 system-ui;margin-bottom:9px}
+:is(#xTwitterCard,.qf-x-native) .xt-post-actions{display:flex;flex-wrap:wrap;gap:7px;min-width:0}
+:is(#xTwitterCard,.qf-x-native) .xt-post-actions .xt-button{flex:1 1 85px}
+:is(#xTwitterCard,.qf-x-native) .xt-footer{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;padding:12px 0 2px}
+:is(#xTwitterCard,.qf-x-native) .xt-fetched{color:#506a7c;font:500 13px/1.5 system-ui}
+:is(#xTwitterCard,.qf-x-native) .xt-empty{color:#526777;font:500 16px/1.6 system-ui;padding:14px 10px}
+:is(#xTwitterCard,.qf-x-native) .xt-dialog{border:1px solid #a0afbf;border-radius:18px;width:min(95vw,520px);max-width:520px;max-height:88dvh;overflow-y:auto;padding:20px;background:#fff;color:#1c3443;box-shadow:0 18px 55px #091a2b55}
+:is(#xTwitterCard,.qf-x-native) .xt-dialog::backdrop{background:#13202bb8}
+:is(#xTwitterCard,.qf-x-native) .xt-dialog h3{font:800 24px/1.4 system-ui;margin:0 0 8px}
+:is(#xTwitterCard,.qf-x-native) .xt-dialog-note{font:500 15px/1.55 system-ui;color:#536676}
+:is(#xTwitterCard,.qf-x-native) .xt-editor{display:block;width:100%;min-height:142px;max-width:100%;padding:14px;border:1px solid #9fadb8;border-radius:11px;background:#fff;color:#223843;font:500 17px/1.6 system-ui;resize:vertical;overflow-wrap:anywhere}
+:is(#xTwitterCard,.qf-x-native) .xt-counter,:is(#xTwitterCard,.qf-x-native) .xt-feedback{display:block;font:500 14px/1.5 system-ui;margin:8px 0;color:#3f586a;overflow-wrap:anywhere}
+:is(#xTwitterCard,.qf-x-native) .xt-dialog-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px}
+:is(#xTwitterCard,.qf-x-native) :is(button,a,textarea,input):focus-visible{outline:3px solid #7c4eb4;outline-offset:3px}
+@media(max-width:380px){:is(#xTwitterCard,.qf-x-native) .xt-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}:is(#xTwitterCard,.qf-x-native) .xt-card{padding:11px}:is(#xTwitterCard,.qf-x-native) .xt-post{padding:12px}:is(#xTwitterCard,.qf-x-native) .xt-post-actions .xt-button{flex:1 1 42%}}
+@media(prefers-reduced-motion:reduce){:is(#xTwitterCard,.qf-x-native) *{animation:none!important;transition:none!important}}
+
+/* The authenticated X feed is a native Infinity carousel slide. */
+.qf-feature.qf-x-feature{display:block;grid-template-columns:none;min-width:0;overflow:visible;background:#f9f6fb;border-color:#ded4e8}
+.qf-feature.qf-x-feature>.qf-inline-tool,.qf-feature.qf-x-feature>.qf-actions{margin:12px auto;max-width:680px}
+.qf-x-native{width:100%;min-width:0;max-width:680px;margin:0 auto}
+.qf-x-native .xt-card{background:#fffdfd;border-color:#d9d2df}
+.qf-x-native :is(.xt-compose,.xt-send){background:#182028;border-color:#182028}
+.qf-x-native .xt-tab[aria-selected=true]{background:#f0eaf5;border-color:#6d5185;color:#2c2144}
