@@ -35,5 +35,5 @@ test('ad D1 migration includes creative equivalence and owner-scoped seen receip
  const sql=readFileSync(new URL('../workers/product-directory/migrations/0001-ad-creatives.sql',import.meta.url),'utf8');
  assert.match(sql,/CREATE TABLE IF NOT EXISTS ad_creatives/);
  assert.match(sql,/CREATE TABLE IF NOT EXISTS ad_seen_receipts/);
- assert.match(sql,/UNIQUE\\s*\\(principal_id,\\s*equivalence_key\\)/);
+ assert.match(sql,/PRIMARY KEY\\s*\\(principal_id,\\s*equivalence_key\\)/);
 });
