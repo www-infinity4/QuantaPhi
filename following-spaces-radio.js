@@ -108,21 +108,7 @@ async function sync(type){
  }finally{state.loading=false;render();await refresh(true)}
 }
 
-async function connectX(){
- if(state.loading)return;
- state.loading=true;render();
- try{
-  const answer=await query('/v1/x/oauth/start','POST',{});
-  const target=new URL(answer.authorizationUrl);
-  if(target.origin!=='https://x.com'||target.pathname!=='/i/oauth2/authorize')throw Error('Unrecognized X authorization destination');
-  window.location.assign(target.href);
- }catch(e){state.loading=false;state.notice='X authorization: '+String(e.message||e);render()}
-}
-async function disconnectX(){
- if(!window.confirm('Disconnect X? Saved following and Space history will remain.'))return;
- try{await query('/v1/x/oauth/disconnect','POST',{});state.notice='X access disconnected. Revoke QuantaPhi in X app settings too.';await refresh(true)}
- catch(e){notice(String(e.message||e))}
-}
+function connectX(){window.location.assign('https://quantaphi.org/connect-x')}
 
 function parseFollowing(txt){
  return [...new Set(String(txt||'').split(/[\s,;]+/).map(x=>x.replace(/^https?:\/\/(?:x|twitter)\.com\//i,'').replace(/^@/,'').replace(/\/.*$/,'')).filter(x=>/^[A-Za-z0-9_]{1,15}$/.test(x)))].slice(0,500);
@@ -197,8 +183,8 @@ function render(){
  const episodes=item('div','fsr-episodes');panel.append(episodes);
  const status=item('p','fsr-status',state.notice);status.setAttribute('role','status');panel.append(status);
  const settings=item('details','fsr-import');settings.append(item('summary','','Update following list'));
- if(state.xConnected){settings.append(button('Sync my following',()=>void sync('following')));settings.append(button('Disconnect X',()=>void disconnectX()))}
- else {settings.append(button('Connect X account',()=>void connectX()));if(!state.oauthConfigured)settings.append(item('small','','X app credentials must be configured on the Worker before connecting.'))}
+ if(state.xConnected){settings.append(button('Sync my following',()=>void sync('following')));settings.append(button('View X connection status',connectX))}
+ else {settings.append(button('Open X connection screen',connectX));if(!state.oauthConfigured)settings.append(item('small','','X app credentials must be configured on the Worker before connecting.'))}
  const handles=item('textarea');handles.setAttribute('aria-label','Followed X handles');
  handles.placeholder='Paste your followed @handles';
  settings.append(handles,button('Save following list',()=>void importFollowing(handles.value)));

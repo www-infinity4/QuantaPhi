@@ -223,6 +223,8 @@ async function playbackReport(env,owner,body){
 }
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
+ const connect=xoConnectPage(path);if(connect)return connect;
+ if(path.startsWith('/connect-x'))return out({error:'not_found'},404);
  const legal=xoLegal(path);if(legal)return legal;
  if(path==='/api/x/oauth/callback'){if(request.method!=='GET')return out({error:'method_not_allowed'},405);return xoFinish(request,env)}
  if(path==='/health')return out({ok:true,service:'media-star-following-spaces',oauthConfigured:xoReady(env),playsAudioLocally:false});
@@ -242,7 +244,7 @@ async function handle(request,env){
  try{
   const owner=await account(request,env);
   if(path==='/v1/x/oauth/start'&&request.method==='POST')return out(await xoBegin(env,owner));
-  if(path==='/v1/x/oauth/disconnect'&&request.method==='POST')return out(await xoDisconnect(env,owner));
+  if(path==='/v1/x/oauth/disconnect'&&request.method==='POST')return out(await xoDisconnect(env,owner,(await request.json().catch(()=>({}))).confirmation));
   if(path==='/v1/x/account'&&request.method==='GET'){
    const claimed=await linkedAccount(env,owner);
    return out({account:claimed||null,xConnected:await xoConnected(env,owner),oauthConfigured:xoReady(env)});
@@ -323,6 +325,85 @@ async function handle(request,env){
 
 // X OAuth2 authorization code + PKCE. All authorization state and encrypted
 // provider credentials stay in the existing Media Star D1 database.
+
+function xoConnectPage(path){
+ if(path!=='/connect-x'&&path!=='/connect-x.js')return null;
+ if(path==='/connect-x.js'){
+  return new Response(XO_CONNECT_JS,{headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'}});
+ }
+ const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="description" content="Connect your existing QuantaPhi wallet to X for Media Star following and Spaces."><title>Connect X | QuantaPhi Media Star</title><style>:root{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#2b2235;background:#f7f4fb}*{box-sizing:border-box}body{margin:0}main{max-width:650px;margin:28px auto;padding:clamp(18px,5vw,36px);background:#fff;border:1px solid #d9cce4;border-radius:18px}h1{font-size:clamp(28px,6vw,36px);line-height:1.25;margin:0 0 16px}p{font-size:17px;line-height:1.6}a{color:#55218f;font-weight:650}button{padding:15px 20px;font:700 17px/1.3 system-ui;border:0;border-radius:12px;background:#55218f;color:#fff;min-height:48px}button:disabled{opacity:.5}input{font:16px system-ui;padding:12px;border-radius:10px;border:1px solid #a89caf;max-width:100%;width:250px}label{display:block;font-size:16px;font-weight:650;margin-bottom:6px}.stack{display:grid;gap:13px}.muted{color:#62596b}.bar{display:flex;gap:16px;flex-wrap:wrap}.status{padding:14px;border:1px solid #cfc4da;border-radius:12px;background:#f9f7fc}details{margin:16px 0;padding:13px;border:1px solid #ddd2e8;border-radius:12px}summary{font-weight:650;cursor:pointer}@media(max-width:700px){main{margin:14px;padding:22px}}</style></head><body><main><p><a href="https://quantaphi.org/">QuantaPhi home</a> / Media Star</p><h1>Connect your X account</h1><p>Use your existing QuantaPhi wallet and approve the connection directly on X. This page does not revoke permissions or delete saved following records.</p><section class="stack" aria-live="polite"><div class="status"><strong>Wallet connection</strong><p id="walletStatus">Checking this device...</p><a id="walletLink" href="https://quantaphi.org/wallet-recovery.html" hidden>Open QuantaPhi wallet sign-in</a></div><div class="status"><strong>X authorization</strong><p id="xStatus">Checking the Media Star connection...</p><p id="xHandle" class="muted"></p></div></section><p><button id="authorizeX" type="button" disabled>Authorize my X account</button></p><p id="actionStatus" role="status">Authorization only starts when you tap the button.</p><details><summary>Use a different X username</summary><p>This changes the claimed username for this wallet, not your actual X identity. X will verify it during authorization.</p><label for="xUsername">Your X username</label><div class="bar"><input id="xUsername" maxlength="15" autocapitalize="off" autocomplete="off" placeholder="@username"><button id="saveUsername" type="button" disabled>Save X username</button></div></details><p><a href="https://quantaphi.org/legal/privacy">X privacy policy</a> · <a href="https://quantaphi.org/legal/terms">Terms of Service</a></p></main><script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script><script defer src="https://quantaphi.org/cloud-wallet-client.js"></script><script defer src="/connect-x.js"></script></body></html>';
+ return new Response(html,{status:200,headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self' https://media-star-following-spaces.marvaseater.workers.dev https://starquest-ledger.marvaseater.workers.dev https://unified-wallet.marvaseater.workers.dev; frame-src https://www-infinity4.github.io; form-action 'none'; frame-ancestors 'none'; base-uri 'none'"}});
+}
+const XO_CONNECT_JS=String.raw`
+(function(){
+ 'use strict';
+ const api='https://media-star-following-spaces.marvaseater.workers.dev';
+ const $=id=>document.getElementById(id);
+ const authButton=$('authorizeX'),saveButton=$('saveUsername');
+ const set=(id,msg)=>{$(id).textContent=msg};
+ let walletToken='',xAccount=null;
+ async function getToken(){
+  const bridge=window.QuantaCloudConnection;
+  if(bridge?.ready)await Promise.race([bridge.ready,new Promise(resolve=>setTimeout(resolve,7500))]);
+  const token=String(await bridge?.resolveDeviceToken?.()||'');
+  return /^sq_[A-Za-z0-9_-]{32,}$/.test(token)?token:'';
+ }
+ async function request(path,method='GET',data){
+  if(!walletToken)throw Error('Wallet sign-in required');
+  const response=await fetch(api+path,{method,cache:'no-store',headers:{Authorization:'Bearer '+walletToken,'Content-Type':'application/json'},...(data===undefined?{}:{body:JSON.stringify(data)})});
+  const json=await response.json().catch(()=>({}));
+  if(!response.ok||json.error)throw Error(json.error||'Connection temporarily unavailable');
+  return json;
+ }
+ async function refresh(){
+  authButton.disabled=true;saveButton.disabled=true;
+  try{
+   walletToken=await getToken();
+   if(!walletToken){
+    set('walletStatus','No verified wallet session in this browser. Open the wallet sign-in, then return to this exact page.');
+    $('walletLink').hidden=false;set('xStatus','Your X account will not be accessed until you sign in.');return;
+   }
+   $('walletLink').hidden=true;
+   set('walletStatus','Verified wallet token found on this device.');
+   const response=await request('/v1/x/account');
+   xAccount=response.account||null;
+   const handle=xAccount?.handle?'@'+xAccount.handle:'not selected';
+   set('xHandle','Registered X username: '+handle);
+   $('xUsername').value=xAccount?.handle||'';
+   if(response.xConnected){
+    set('xStatus','Connected to X. Your authorization is saved securely.');
+    set('actionStatus','X is connected. Use Media Star to sync your Following list.');
+    authButton.hidden=true;
+   }else{
+    authButton.hidden=false;
+    set('xStatus',response.oauthConfigured?'X developer credentials ready. Personal authorization is still required.':'X developer app credentials have not been configured yet.');
+    authButton.disabled=!response.oauthConfigured||!xAccount?.handle;
+    set('actionStatus',xAccount?.handle?'Tap Authorize my X account to open the official X consent page.':'Save your X username first.');
+   }
+   saveButton.disabled=false;
+  }catch(e){set('xStatus','Could not verify account: '+String(e.message||e));set('actionStatus','No authorization was changed.')}
+ }
+ authButton.addEventListener('click',async()=>{
+  authButton.disabled=true;
+  set('actionStatus','Opening the official X authorization page. You may need to sign in to X.');
+  try{
+   const result=await request('/v1/x/oauth/start','POST',{});
+   const target=new URL(result.authorizationUrl);
+   if(target.origin!=='https://x.com'||target.pathname!=='/i/oauth2/authorize')throw Error('Unrecognized X destination');
+   window.location.assign(target.href);
+  }catch(e){set('actionStatus','Authorization did not start: '+String(e.message||e));authButton.disabled=false}
+ });
+ saveButton.addEventListener('click',async()=>{
+  const handle=String($('xUsername').value||'').trim().replace(/^@/,'');
+  if(!/^[A-Za-z0-9_]{1,15}$/.test(handle)){set('actionStatus','Enter a valid X username, without a URL.');return}
+  saveButton.disabled=true;
+  try{await request('/v1/x/account','POST',{handle});set('actionStatus','Username saved. Authorization still requires your approval on X.');await refresh()}
+  catch(e){set('actionStatus','Username was not saved: '+String(e.message||e));saveButton.disabled=false}
+ });
+ void refresh();
+})();
+`;
+
 const XO_REDIRECT='https://quantaphi.org/api/x/oauth/callback';
 const XO_SCOPE='tweet.read users.read follows.read space.read offline.access';
 const XO_ENCODER=new TextEncoder();
@@ -375,7 +456,7 @@ async function xoBegin(env,owner){
 }
 function xoPage(title,message,status=200){
  const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
- const html='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>'+escape(title)+' | QuantaPhi</title><style>body{background:#f7f4fb;color:#261c30;font:18px/1.6 system-ui;padding:24px}main{background:#fff;max-width:700px;margin:6vh auto;padding:28px;border-radius:16px}a{color:#5f259f}</style><main><h1>'+escape(title)+'</h1><p>'+escape(message)+'</p><a href="https://quantaphi.org/#followingSpacesRadio">Back to Media Star</a></main></html>';
+ const html='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>'+escape(title)+' | QuantaPhi</title><style>body{background:#f7f4fb;color:#261c30;font:18px/1.6 system-ui;padding:24px}main{background:#fff;max-width:700px;margin:6vh auto;padding:28px;border-radius:16px}a{color:#5f259f}</style><main><h1>'+escape(title)+'</h1><p>'+escape(message)+'</p><a href="https://quantaphi.org/connect-x">Return to X connection</a></main></html>';
  return new Response(html,{status,headers:{'Content-Type':'text/html;charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"}});
 }
 async function xoFinish(request,env){
@@ -419,7 +500,8 @@ async function xoConnected(env,owner){
  const row=await env.DB.prepare('SELECT expires_at,refresh_cipher FROM x_oauth_tokens WHERE owner_id=?').bind(owner).first();
  return Boolean(row&&(row.refresh_cipher||row.expires_at>Date.now())||env.X_OWNER_ID===owner&&env.X_USER_ACCESS_TOKEN);
 }
-async function xoDisconnect(env,owner){
+async function xoDisconnect(env,owner,confirmation){
+ if(confirmation!=='DISCONNECT X')throw xoErr('explicit_disconnect_confirmation_required',400);
  await env.DB.prepare('DELETE FROM x_oauth_tokens WHERE owner_id=?').bind(owner).run();
  return {disconnected:true,alsoRevokeInXSettings:true,existingFollowingPreserved:true};
 }

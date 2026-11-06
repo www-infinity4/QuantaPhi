@@ -310,7 +310,10 @@ test('X OAuth token exchange saves encrypted credentials only for the matching a
   assert.equal(owner.xConnected,true);
   const stranger=(await(await call('/v1/x/account',other)).json());
   assert.equal(stranger.xConnected,false);
-  const disconnected=await call('/v1/x/oauth/disconnect',tok,{});
+  const accidental=await call('/v1/x/oauth/disconnect',tok,{});
+  assert.equal(accidental.status,400);
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM x_oauth_tokens').get().n,1);
+  const disconnected=await call('/v1/x/oauth/disconnect',tok,{confirmation:'DISCONNECT X'});
   assert.equal(disconnected.status,200);
   assert.equal(db.prepare('SELECT COUNT(*) AS n FROM x_oauth_tokens').get().n,0);
  }finally{global.fetch=prior}
@@ -327,4 +330,33 @@ test('X OAuth rejects an X identity different from the owner-claimed handle',asy
   assert.equal(r.status,403);
   assert.equal(db.prepare('SELECT COUNT(*) AS n FROM x_oauth_tokens').get().n,0);
  }finally{global.fetch=original}
+});
+
+test('X authorization has a dedicated direct screen without a delete/revoke control',async()=>{
+ const {call}=await fixture();
+ const response=await call('/connect-x');
+ assert.equal(response.status,200);
+ assert.ok(response.headers.get('content-type').includes('text/html'));
+ const html=await response.text();
+ assert.ok(html.includes('Authorize my X account'));
+ assert.ok(html.includes('cloud-wallet-client.js'));
+ assert.ok(!html.includes('Disconnect X'));
+ assert.ok(!html.includes('Revoke X access'));
+ const js=await call('/connect-x.js');
+ assert.equal(js.status,200);
+ const source=await js.text();
+ assert.ok(source.includes('/v1/x/oauth/start'));
+ assert.ok(source.includes('/v1/x/account'));
+ assert.ok(!source.includes('/v1/x/oauth/disconnect'));
+ const notFound=await call('/connect-x-unexpected');
+ assert.equal(notFound.status,404);
+});
+test('OAuth success directs owner back to the dedicated status page',async()=>{
+ const {call,env}=await fixture();
+ env.X_OAUTH_CLIENT_ID='test-client';
+ env.X_OAUTH_CLIENT_SECRET='test-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,12).toString('base64url');
+ const r=await call('/api/x/oauth/callback?state=invalid');
+ assert.equal(r.status,400);
+ assert.ok((await r.text()).includes('https://quantaphi.org/connect-x'));
 });
