@@ -189,6 +189,7 @@ if(root && root.dataset.officialRockMounted!=='true'){
      },
      onError(){
       playing=false;updateButtons();
+      if(!poster.isConnected)frame.append(poster);
       playerStatus.textContent='Video cannot play here · use Watch on YouTube.';
      }
     }
