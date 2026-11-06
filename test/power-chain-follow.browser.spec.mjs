@@ -48,3 +48,18 @@ test('Power Chain follows source cards, mixes topics and remembers an individual
  expect(saved.following).toEqual(['levis-501-dark', 'coinworld']);
  expect(saved.powerChain.excluded).toContain('guess-g11-light');
 });
+
+test('resuming a deep-linked page respects an empty Following feed', async ({ page }) => {
+ await page.route('**/*', route => route.request().url().startsWith(base+'/') ? route.continue() : route.abort());
+ await page.goto(base+'/?card=levis-501-dark', { waitUntil: 'domcontentloaded' });
+ const deck = page.locator('#oracleCardDeck');
+ const stage = deck.locator('#oracleCardStage');
+ const follow = deck.locator('#oracleCardFollow');
+ await expect(stage).toHaveAttribute('data-switchboard-id', 'levis-501-dark');
+ await follow.click();
+ await deck.getByRole('tab', { name: 'Following' }).click();
+ await follow.click();
+ await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')));
+ await expect(deck.locator('#oracleCardNow')).toHaveText('No followed interactive cards');
+ await expect(stage).not.toHaveAttribute('data-switchboard-id', /.+/);
+});

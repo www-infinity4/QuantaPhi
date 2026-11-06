@@ -686,6 +686,7 @@ function chooseOpening(){
  return pool[openingCursor%pool.length]||ready[0];
 }
 function start(){if(!active&&!expanded){
+ if(selectedTab==='following'){syncFollowingSelection();return;}
  const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
  // Keep an explicitly requested original card in front of generic rotation.
  // Some tools hydrate asynchronously after DOMContentLoaded.
