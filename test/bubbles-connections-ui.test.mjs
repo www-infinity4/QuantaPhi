@@ -92,7 +92,7 @@ test('account page starts consent with the selected provider permissions',async 
  await panel.refresh();
  const descendants=node=>[node,...(node.childNodes||[]).flatMap(descendants)];
  assert.equal(descendants(container).some(node=>node.dataset?.provider==='github'),false,'Connected GitHub must not show a second sign-in button');
- assert.ok(descendants(container).some(node=>node.textContent?.includes('GitHub · Signed in as www-infinity4')));
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('GitHub signed in ✓ as www-infinity4')));
  const button=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
  assert.equal(button.disabled,false);
  assert.equal(button.textContent,'Sign in with Cloudflare');
@@ -105,7 +105,7 @@ test('account page starts consent with the selected provider permissions',async 
  accountRecords=[...accountRecords,{id:'cf-a',provider:'cloudflare',label:'owner@example.test',status:'connected',expiresAt:Date.now()+600000,grantedActions:['account.read']}];
  await panel.refresh();
  assert.equal(descendants(container).some(node=>node.dataset?.provider==='cloudflare'),false,'Connected Cloudflare button must disappear');
- assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare · Signed in as owner@example.test')));
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as owner@example.test')));
  fullCloudflareConfigured=true;
  await panel.refresh();
  const cloudflareReview=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
@@ -114,7 +114,7 @@ test('account page starts consent with the selected provider permissions',async 
  assert.ok(manage,'Optional access review stays in account settings');
  assert.ok(descendants(container).some(node=>node.tag==='details'&&node.childNodes.includes(manage)),
   'Review action must stay collapsed in a settings disclosure');
- assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare · Signed in as owner@example.test')));
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as owner@example.test')));
  // An expired provider grant must not claim sign-in, even if the historical
  // row still has a connected status until the service refreshes it.
  accountRecords=accountRecords.map(row=>row.provider==='cloudflare'?{...row,expiresAt:Date.now()-10000}:row);
@@ -147,7 +147,7 @@ test('account page starts consent with the selected provider permissions',async 
  holdOldAccounts=true;
  const returningPanel=mountConnections(returned,{token:async()=>'sq_'+'a'.repeat(40)});
  const staleLoad=returningPanel.refresh();
- const googleSignedIn=()=>descendants(returned).some(node=>node.textContent==='Google · Signed in as google@example.test');
+ const googleSignedIn=()=>descendants(returned).some(node=>node.textContent==='Google signed in ✓ as google@example.test');
  for(let i=0;i<8&&!googleSignedIn();i++)await new Promise(setImmediate);
  assert.ok(googleSignedIn(),'A verified Google return must replace the sign-in button');
  assert.equal(calls.filter(call=>call.path==='/handoff/google/resume').length,1);

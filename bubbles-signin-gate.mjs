@@ -1,17 +1,24 @@
-import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261105-google-android-return4';
+import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261106-cloudflare-verified-status5';
 
 export function summarizeGate(payload){
  const summary={ready:false,signedIn:false,walletVerified:payload?.ok===true&&payload?.walletVerified===true,providers:{},state:'unverified'};
+ // The authenticated /accounts view can confirm a live account even if
+ // /gate/status is stale. No cookie, URL hint or dashboard login is proof.
+ const verifiedAccounts=summary.walletVerified&&payload?.accountsVerified===true&&
+  Array.isArray(payload?.accountRecords)?payload.accountRecords:[];
  for(const id of ['github','cloudflare']){
   const record=payload?.providers?.[id];
-  const configured=record?.configured===true;
-  const connected=configured&&record?.connected===true;
+  const live=verifiedAccounts.find(account=>account?.provider===id&&
+   account.status==='connected'&&Number.isFinite(account.expiresAt)&&
+   account.expiresAt>Date.now()+30000);
+  const configured=record?.configured===true||(record==null&&!!live);
+  const connected=configured&&(record?.connected===true||!!live);
   const approved=connected&&record?.permissionsApproved===true;
   // Request every capability registered for this application. A missing project
   // capability must not prevent account sign-in or imply that access was granted.
   const authorizationActions=providerAuthorizationActions({id,...record});
   summary.providers[id]={configured,connected,approved,authorizationActions,
-   label:connected&&typeof record.label==='string'?record.label:'',
+   label:connected?(typeof live?.label==='string'?live.label:typeof record?.label==='string'?record.label:''):'',
    reconnect:record?.reconnectRequired===true,
    scopeSetupRequired:record?.scopeSetupRequired===true,
    missing:Array.isArray(record?.missingActions)?record.missingActions.filter(a=>typeof a==='string'&&a.length<80).slice(0,6):[]};
@@ -195,6 +202,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
      setStatus('Could not check the account session. Tap Sign in with Cloudflare to retry; no permissions were changed.');
     }
     for(const id of ['github','cloudflare']){
+     cards[id].hidden=false;actions[id].hidden=false;
      labels[id].textContent='';
      actions[id].textContent='Sign in with '+(id==='github'?'GitHub':'Cloudflare');
     }
@@ -256,13 +264,14 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  root.addEventListener('visibilitychange',()=>{if(!root.hidden)void refresh();});
  // Resume the existing wallet-bound Android handoff after same-window navigation.
  const pendingHandoff=client.readPendingHandoff();
- // Only Google needs lost-tab recovery in chat. Cloudflare's existing
- // callback path remains status-only unless the original pending state exists.
- // Never start another Cloudflare authorization from a UI return hint.
- const recoveredProvider=returned?.result==='received'&&returned.provider==='google'?'google':null;
+ // Both Google and Cloudflare recover an already-received callback in a
+ // lost Android tab only through the server's wallet-bound sealed handoff.
+ const recoveredProvider=returned?.result==='received'&&
+  ['google','cloudflare'].includes(returned.provider)?returned.provider:null;
  const resumingProvider=pendingHandoff?.provider||recoveredProvider||'cloudflare';
  const resuming=client.resumePending(error=>void finalizeReturn(resumingProvider,error),{
-  recoverGoogle:recoveredProvider==='google'
+  recoverGoogle:recoveredProvider==='google',
+  recoverCloudflare:recoveredProvider==='cloudflare'
  });
  if(resuming){
   oauthInProgress=true;updateButtons();
