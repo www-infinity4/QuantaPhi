@@ -1548,6 +1548,14 @@ body .ba-panel button:disabled,#bubblesAICard button:disabled{
  color:#65536f!important;-webkit-text-fill-color:#65536f!important;
  background:#f1eaf5!important;opacity:.58!important;cursor:not-allowed!important;
 }
+/* Compact verified sign-ins stay readable after the login panel is hidden. */
+body .ba-panel .ba-verified-connections{
+ display:block;margin:8px 0;padding:9px 12px;
+ font:650 14px/1.6 system-ui;letter-spacing:.015em;
+ color:#285443!important;-webkit-text-fill-color:#285443!important;
+ background:#f3f9f5;border:1px solid #bed8c9;border-radius:11px;overflow-wrap:anywhere;
+}
+body .ba-panel .ba-verified-connections[hidden]{display:none!important}
 /* Provider identity remains familiar inside the floating chat; these override generic purple controls. */
 body .ba-panel .ba-inline-account-provider button[data-provider]{
  display:flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;
