@@ -883,7 +883,12 @@ export default {
 
     if (request.method === "POST") {
       if (!originAllowed(request)) return json(request, { ok: false, error: "origin_not_allowed" }, 403);
-      if(url.pathname===COLLAB_PATH){
+      if(url.pathname==='/v1/ai/card/gemini'){
+         const {handleGeminiCard}=await import('./gemini-card.mjs');
+         const result=await handleGeminiCard(request,env);
+         return new Response(result.body,{status:result.status,headers:{...headers(request)}});
+       }
+       if(url.pathname===COLLAB_PATH){
         const {handleCollaboration}=await import('./ai-collaboration.mjs');
         const result=await handleCollaboration(request,env);
         return new Response(result.body,{status:result.status,headers:{...headers(request)}});

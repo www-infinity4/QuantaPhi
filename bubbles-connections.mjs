@@ -715,8 +715,18 @@ export function mountConnections(container,{token}) {
         }catch{}
       }
       await load();
-      if(verifiedReturn&&typeof window.location?.replace==='function')
-        window.location.replace('/bubbles.html');
+      if(verifiedReturn&&typeof window.location?.replace==='function'){
+        let destination='/bubbles.html';
+        if(returnProvider==='google'){
+          try{
+            if(sessionStorage.getItem('bubbles:gemini-card-return:v1')==='1'){
+              sessionStorage.removeItem('bubbles:gemini-card-return:v1');
+              destination='/?gemini=ready#gemini';
+            }
+          }catch{}
+        }
+        window.location.replace(destination);
+      }
       else status.textContent='Connected '+account.label+'.';
     }
   },{recoverGoogle,recoverCloudflare})){cancel.hidden=false;status.textContent='Finishing account authorization securely…';}

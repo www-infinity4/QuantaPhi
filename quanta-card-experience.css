@@ -289,3 +289,14 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-ebay-direct>summary{list-style:revert;cursor:pointer;min-height:46px;display:list-item;margin:0 13px;padding:12px 4px;color:#273f50;font:750 13px/1.45 system-ui,sans-serif}
 .qcx-ebay-direct[open]{padding-bottom:10px}
 .qcx-ebay-direct .qcx-tool{margin:0 10px}
+
+
+/* Google-authenticated Gemini operates in the original Octaves source card. */
+.iqc-gemini{display:grid;gap:10px;min-width:0}
+.iqc-gemini-connect{min-height:44px;width:100%;border:1px solid #b9aba5;border-radius:12px;background:#f4f1ef;color:#302b2b;padding:10px 14px;font:700 15px/1.4 system-ui;cursor:pointer}
+.iqc-gemini-connect:disabled{opacity:.58}
+.iqc-gemini-account{min-height:44px;min-width:0;max-width:100%;width:100%;padding:10px;border:1px solid #c8b8ac;border-radius:10px;background:#fff;color:#29252b;font:inherit}
+.iqc-gemini .iqc-ai-send{min-height:44px;border:1px solid #a8a3a8;border-radius:12px;background:#ece9ec;color:#25232a;font:700 16px/1.45 system-ui}
+.iqc-gemini-transcript{max-height:280px;overflow:auto;display:grid;gap:8px;overflow-wrap:anywhere}
+.iqc-gemini-line{margin:0;padding:11px 12px;border-radius:12px;background:#f5f2f0;color:#29252b;white-space:pre-wrap;font:15px/1.55 system-ui}
+.iqc-gemini-connect:focus-visible,.iqc-gemini-account:focus-visible{outline:3px solid #70469c;outline-offset:2px}
