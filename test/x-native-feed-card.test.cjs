@@ -8,9 +8,16 @@ test('native X card mounts in QuantaPhi and preserves separate Spaces card',()=>
  assert.ok(page.includes('cloud-wallet-client.js'));
  assert.ok(page.includes('x-twitter-card.mjs'));
  assert.ok(!page.includes('window.location.replace'))
- assert.ok(home.includes('id="xTwitterCard"'));
- assert.ok(home.includes('/x-twitter-card.mjs'));
+ assert.ok(!home.includes('id="xTwitterCard"'),'X is not an unrelated homepage section');
  assert.ok(home.includes('/x-twitter-card.css'));
+ const feed=read('quanta-feed.mjs');
+ assert.ok(feed.includes("import {mountXTwitterCard} from './x-twitter-card.mjs'"));
+ assert.ok(feed.includes("selected.id==='x-twitter'"));
+ assert.ok(feed.includes('mountXTwitterCard(native)'),'real X module must be mounted in active feed card');
+ assert.ok(feed.includes("choose(card);refresh()"),'tapping feed tile selects card without page navigation');
+ assert.ok(css.includes('.qf-x-native'),'native inline card must inherit mobile styles');
+ assert.ok(!feed.includes("openQuickCardPreview({url:'/twitter.html'"));
+ assert.ok(page.includes('id="xTwitterCard"'),'old bookmarked page remains usable');
  assert.ok(home.includes('id="xSpacesQuickCard"'));
  for(const name of ['Public','Following','Live Spaces','Profile','Compose','Reply','Like'])assert.ok(card.includes(name),name);
  assert.ok(card.includes('textContent'),'untrusted post text must be escaped');
