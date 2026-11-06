@@ -3,27 +3,202 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T21:31:04.840561Z",
+  "checked_at": "2026-11-06T22:01:35.577904Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "umass basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T21:10:00Z",
+      "query": "casper ruud",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-06T21:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/gamethread-boston-college-men-basketball-201603734.html",
-        "https://www.basketunderreview.com/friday-watchlist-november-6-2026/",
-        "https://www.espn.com/espnplus/player/_/eventCalendarId/401909552"
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/magda-linette-vs-anastasia-zakharova-total-games-nov-07-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/mai-hontama-vs-zhibek-kulambayeva-set-1-winner-nov-05-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/simona-waltert-vs-lucrezia-stefanini-set-2-winner-nov-05-2026/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rJPGg035kBWwIyB8FKa6AZ1GOGRR58c1cny8UZ5qCxD6_gQmCKS2Qw0IcnY",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSHR68YPljuysHlLjLIPkRNRykFGVvuS2Ffp3zaZjeY3R1zxu4Y1gIE1gyRFk",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/magda-linette-vs-anastasia-zakharova-total-games-nov-07-2026/",
+          "title": "November 7, 2026: Magda Linette vs Anastasia Zakharova: Total Games Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSHR68YPljuysHlLjLIPkRNRykFGVvuS2Ffp3zaZjeY3R1zxu4Y1gIE1gyRFk"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/mai-hontama-vs-zhibek-kulambayeva-set-1-winner-nov-05-2026/",
+          "title": "November 5, 2026: Mai Hontama vs Zhibek Kulambayeva: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_P7z-kIqWmEQbnICM2j08ZYaI1wnk3qLB1ic678_Mxgr29wP4vaPzM0UZBN8"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/simona-waltert-vs-lucrezia-stefanini-set-2-winner-nov-05-2026/",
+          "title": "November 5, 2026: Simona Waltert vs Lucrezia Stefanini: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpwVmguigl7aXzqeDbCTiSLI5cmYZGtMiJt9XxbOeFdKg_1jg6PHpd6frLrls"
+        }
+      ]
+    },
+    {
+      "query": "sevilla vs. alavés",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T21:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/confirmed-sevilla-alav-line-ups-190100249.html",
+        "https://www.comuniate.com/en/noticias/38887/predicted-alaves-line-up-according-to-the-sports-press",
+        "https://www.toffeeweb.com/int/sevilla-vs-deportivo-alaves-predictions-picks-odds-06-11-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRcu7LzDo6udk-uqQYXO59-RjvTfE147N6Kmn7fftXaYQ0BkYOKIaeA1AD72I",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/gamethread-boston-college-men-basketball-201603734.html",
-          "title": "Gamethread: Boston College Men’s Basketball vs UMass",
+          "url": "https://sports.yahoo.com/articles/confirmed-sevilla-alav-line-ups-190100249.html",
+          "title": "Confirmed Sevilla and Alavés line-ups for LALIGA matchweek 12",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rJPGg035kBWwIyB8FKa6AZ1GOGRR58c1cny8UZ5qCxD6_gQmCKS2Qw0IcnY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRcu7LzDo6udk-uqQYXO59-RjvTfE147N6Kmn7fftXaYQ0BkYOKIaeA1AD72I"
+        },
+        {
+          "url": "https://www.comuniate.com/en/noticias/38887/predicted-alaves-line-up-according-to-the-sports-press",
+          "title": "Predicted Alaves line-up according to the sports press",
+          "publisher": "Comuniate",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bSXMoCi27dhtabcqGepcZunY3xTKpLipjbJsCaxhVXwZ-MxJ1t5xMwVXiec"
+        },
+        {
+          "url": "https://www.toffeeweb.com/int/sevilla-vs-deportivo-alaves-predictions-picks-odds-06-11-2026/",
+          "title": "Sevilla vs Deportivo Alavés Predictions, Picks & Odds – 06/11/2026",
+          "publisher": "ToffeeWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiSSUqFaulMyt369l-m2qsn_lICnuVTffdFXbWELU9DKOH97iWRmRrdtTSk3A"
+        }
+      ]
+    },
+    {
+      "query": "ios",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T21:40:00Z",
+      "related_news_urls": [
+        "https://www.tokenpost.com/news/technology/50344",
+        "https://crypto.news/darksword-iphone-exploit-crypto-wallets-certik/",
+        "https://thedefiant.io/news/hacks/iphone-wallet-theft-probe-traces-4-06-million-in-tron-drains"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVQK9cd-I2Ry8O8Qc3H846VAaNQj_o1kamP-BbwPpIcqS-kfslH1WkIzV_Y8",
+      "image_credit": "www.tokenpost.com",
+      "news": [
+        {
+          "url": "https://www.tokenpost.com/news/technology/50344",
+          "title": "iOS Self-Custody Wallet Losses Reach About $127,000 in One Week",
+          "publisher": "www.tokenpost.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVQK9cd-I2Ry8O8Qc3H846VAaNQj_o1kamP-BbwPpIcqS-kfslH1WkIzV_Y8"
+        },
+        {
+          "url": "https://crypto.news/darksword-iphone-exploit-crypto-wallets-certik/",
+          "title": "DarkSword iPhone exploit puts crypto wallets at risk, CertiK warns",
+          "publisher": "Crypto News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHffcLjIhoB3T7kqATqTZJapzxhLPRbb0o3H0ktHg-CrkK9gtW8NW1aiIy1M"
+        },
+        {
+          "url": "https://thedefiant.io/news/hacks/iphone-wallet-theft-probe-traces-4-06-million-in-tron-drains",
+          "title": "iPhone Wallet Theft Probe Traces $4.06 Million in TRON Drains",
+          "publisher": "The Defiant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM8UGP5YnyEDqUkTW1MnDxEja_WfJ_GcVkHoY4eXv_P5_fLOCtGfYlvr6L_N4"
+        }
+      ]
+    },
+    {
+      "query": "kristaps porzingis",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-06T21:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7758885/2026/11/06/kristaps-porzingis-warriors-spurs-heat-nba/",
+        "https://sports.yahoo.com/articles/kristaps-porzingis-announces-stepping-away-213459550.html",
+        "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFojI2rnDf4q6WHMYT349x2pHEEzHQux0O1HH2OKqwNAVVxn50dRciaV3bZIg",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7758885/2026/11/06/kristaps-porzingis-warriors-spurs-heat-nba/",
+          "title": "What I’m hearing on Kristaps Porziņģis and the Warriors, the Spurs’ lineup and more - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFojI2rnDf4q6WHMYT349x2pHEEzHQux0O1HH2OKqwNAVVxn50dRciaV3bZIg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/kristaps-porzingis-announces-stepping-away-213459550.html",
+          "title": "Kristaps Porzingis announces he is stepping away from basketball",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPbJO0NTHDWwqtJKh9C793YVmWs-IVRBn5wlNCjLBHad5sO9e8mAuqSZ6qCkA"
+        },
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50379460/warriors-not-making-payments-porzingis-sources-say",
+          "title": "Warriors withholding payments to Porzingis, sources say",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvlgC-SNcSJBXKbFdfsQY8_91Cfa_dPPjjgp4MAhZmACIyUmYNNDlePyTVRMc"
+        }
+      ]
+    },
+    {
+      "query": "thierno barry",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T21:20:00Z",
+      "related_news_urls": [
+        "https://rdcsport.cd/news/coventry-frank-lampard-retour-goodison",
+        "https://www.ruedesjoueurs.com/paris-sportifs/le-petit-journal/74933-le-petit-journal-du-parieur-vendredi-6-novembre-2026.html",
+        "https://www.mediasportif.fr/2026/11/06/football-everton-coventry-chaine-streaming-ou-voir-le-match-et-a-quelle-heure-en-france/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmNUKdoK3WlyX0H-PPZU-wfhZnOcWzOvXUiiVx-etEOwMwOyWe_SHiy_qihU",
+      "image_credit": "rdcsport.cd",
+      "news": [
+        {
+          "url": "https://rdcsport.cd/news/coventry-frank-lampard-retour-goodison",
+          "title": "Coventry et Frank Lampard : un retour prometteur à Goodison",
+          "publisher": "rdcsport.cd",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmNUKdoK3WlyX0H-PPZU-wfhZnOcWzOvXUiiVx-etEOwMwOyWe_SHiy_qihU"
+        },
+        {
+          "url": "https://www.ruedesjoueurs.com/paris-sportifs/le-petit-journal/74933-le-petit-journal-du-parieur-vendredi-6-novembre-2026.html",
+          "title": "Le Petit Journal du Parieur - Vendredi 6 novembre 2026",
+          "publisher": "RueDesJoueurs",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREvjpXeB9MKxxfxalQlymK1cPtv3AIpDo54Vfpko6xdvRMCZHT2e_Nu4-mZGA"
+        },
+        {
+          "url": "https://www.mediasportif.fr/2026/11/06/football-everton-coventry-chaine-streaming-ou-voir-le-match-et-a-quelle-heure-en-france/",
+          "title": "Football | Everton - Coventry : Chaîne, streaming, où voir le match et à quelle heure en France ?",
+          "publisher": "Mediasportif",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxawLefRrLBi5a3LwzGvcbdYCxxL22SXuNONYQumvM2b5Y1oI2zICuW0Lpekk"
+        }
+      ]
+    },
+    {
+      "query": "boston college basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T21:10:00Z",
+      "related_news_urls": [
+        "https://www.sportsline.com/insiders/umass-vs-boston-college-odds-2026-college-basketball-picks-for-friday-nov-6-from-proven-model/",
+        "https://www.basketunderreview.com/friday-watchlist-november-6-2026/",
+        "https://sports.yahoo.com/articles/gamethread-boston-college-men-basketball-201603734.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbJKLZrQYnmj2vschcDjfGla4NxKRujb3Qcke0KuTOXadCSnQvWj_UFCP-4N8",
+      "image_credit": "SportsLine",
+      "news": [
+        {
+          "url": "https://www.sportsline.com/insiders/umass-vs-boston-college-odds-2026-college-basketball-picks-for-friday-nov-6-from-proven-model/",
+          "title": "UMass vs. Boston College odds: 2026 college basketball picks for Friday Nov. 6 from proven model",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbJKLZrQYnmj2vschcDjfGla4NxKRujb3Qcke0KuTOXadCSnQvWj_UFCP-4N8"
         },
         {
           "url": "https://www.basketunderreview.com/friday-watchlist-november-6-2026/",
@@ -33,11 +208,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGR4hVLoZQcXJ2RhUfBjZcrqkJ9IhFBPEypO-WhchNk6ozUx5ZrOiMxFHpQMw"
         },
         {
-          "url": "https://www.espn.com/espnplus/player/_/eventCalendarId/401909552",
-          "title": "Massachusetts vs. Boston College",
-          "publisher": "ESPN",
+          "url": "https://sports.yahoo.com/articles/gamethread-boston-college-men-basketball-201603734.html",
+          "title": "Gamethread: Boston College Men’s Basketball vs UMass",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6SFZbZAi8D3c0MQQVc-YF6vU3su7EH1QaGr9ElmncGti6ST6KBOejv0RjNno"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rJPGg035kBWwIyB8FKa6AZ1GOGRR58c1cny8UZ5qCxD6_gQmCKS2Qw0IcnY"
         }
       ]
     },
@@ -78,11 +253,11 @@
     },
     {
       "query": "gamemill entertainment xbox game delisting",
-      "approx_searches": "1000+",
+      "approx_searches": "200+",
       "published_at": "2026-11-06T21:00:00Z",
       "related_news_urls": [
         "https://www.purexbox.com/news/2026/11/xbox-publisher-announces-four-games-being-delisted-by-end-of-2026",
-        "https://www.pushsquare.com/news/2026/11/these-8plus-ps5-games-will-be-delisted-in-november-and-december-2026",
+        "https://www.cbr.com/avatar-the-last-airbender-quest-for-balance-steam-delist/",
         "https://comicbook.com/gaming/news/avatar-the-last-airbender-game-delisted/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHXUnVssgrwXxx9B6tahyVvyWExOrKT2jM3QEB7AxLfW6DYPiCaNyrNX9F4O0",
@@ -96,11 +271,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHXUnVssgrwXxx9B6tahyVvyWExOrKT2jM3QEB7AxLfW6DYPiCaNyrNX9F4O0"
         },
         {
-          "url": "https://www.pushsquare.com/news/2026/11/these-8plus-ps5-games-will-be-delisted-in-november-and-december-2026",
-          "title": "These 8+ PS5 Games Will Be Delisted in November and December 2026",
-          "publisher": "Push Square",
+          "url": "https://www.cbr.com/avatar-the-last-airbender-quest-for-balance-steam-delist/",
+          "title": "After 3 Years, It's Officially the End of an Era for Avatar: The Last Airbender",
+          "publisher": "Comic Book Resources",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMssQGCQpJZ6gPjiT_8oNKIosG93TEn_PdhXApRm3ihr5plorVyQ7_XEC7ds"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY4H87FYbM-jBkSHNJCdrrGHpMLExAMqQFTBVPLc1Gewe1QjldeEsDM8P6coE"
         },
         {
           "url": "https://comicbook.com/gaming/news/avatar-the-last-airbender-game-delisted/",
@@ -112,233 +287,48 @@
       ]
     },
     {
-      "query": "michael sanft",
-      "approx_searches": "500+",
+      "query": "irs 2027 tax brackets",
+      "approx_searches": "5000+",
       "published_at": "2026-11-06T20:50:00Z",
       "related_news_urls": [
-        "https://wcti12.com/news/nation-world/las-vegas-attorney-michael-sanft-died-represented-tupac-shakur-murder-suspect-duane-davis-sources"
+        "https://www.cnbc.com/2026/11/05/2027-federal-tax-brackets.html",
+        "https://www.washingtonpost.com/business/2026/11/05/us-taxpayers-can-shield-an-extra-500-taxation-next-year/",
+        "https://www.axios.com/2026/11/06/income-tax-bracket-2027-thresholds"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo8a1vTrfsY0Teo9AcxB7Arioe-VVZ3ktyZ7_FOvLYj-1fIBe1Quh4KBaXoWY",
-      "image_credit": "WCTI",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVh8Se1EfXmbjIt6Ey7IlwyyI1XzYaJ5JL75WSpCbfN9sTZikwjFc9npyX4M4",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://wcti12.com/news/nation-world/las-vegas-attorney-michael-sanft-died-represented-tupac-shakur-murder-suspect-duane-davis-sources",
-          "title": "Las Vegas attorney who represented Tupac Shakur murder suspect has died: sources",
-          "publisher": "WCTI",
+          "url": "https://www.cnbc.com/2026/11/05/2027-federal-tax-brackets.html",
+          "title": "IRS announces new federal income tax brackets for 2027",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo8a1vTrfsY0Teo9AcxB7Arioe-VVZ3ktyZ7_FOvLYj-1fIBe1Quh4KBaXoWY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVh8Se1EfXmbjIt6Ey7IlwyyI1XzYaJ5JL75WSpCbfN9sTZikwjFc9npyX4M4"
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2026/11/05/us-taxpayers-can-shield-an-extra-500-taxation-next-year/",
+          "title": "U.S. taxpayers can shield an extra $500 from taxation next year",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwX_GUpW4J1OvHFGGH2Vq3olXzIwlUkC-CGifba_6eQtYvNdjF3_9ZxxKeHAo"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/06/income-tax-bracket-2027-thresholds",
+          "title": "IRS reveals 2027 tax brackets. Find yours here",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5Yv4wP-xxi02h6hW8V0EnriUXGWXkhCE1ZYgqFxp2MWCiPm_nsbdM79oE_8"
         }
       ]
     },
     {
-      "query": "sevilla vs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T20:40:00Z",
-      "related_news_urls": [
-        "https://sevillafc.es/actualidad/noticias/convocatoria-odysseas-grecia-noviembre-26",
-        "https://imd.sevilla.org/noticias/sevilla-vs-bullying",
-        "https://www.elconfidencial.com/sociedad/2026-11-06/municipios-contra-acoso-escolar-1hms-1svm_4460520/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh_AMRKEs6nNco7hSrJk-aBx9kqEZytQJ5X-pYr06ARny-8_GjSrXZ-UVBRgg",
-      "image_credit": "Sevilla FC",
-      "news": [
-        {
-          "url": "https://sevillafc.es/actualidad/noticias/convocatoria-odysseas-grecia-noviembre-26",
-          "title": "ODYSSEAS REPITE CON GRECIA PARA EL PARÓN DE NOVIEMBRE",
-          "publisher": "Sevilla FC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh_AMRKEs6nNco7hSrJk-aBx9kqEZytQJ5X-pYr06ARny-8_GjSrXZ-UVBRgg"
-        },
-        {
-          "url": "https://imd.sevilla.org/noticias/sevilla-vs-bullying",
-          "title": "Sevilla vs Bullying",
-          "publisher": "Instituto Municipal de Deportes de Sevilla",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuuLlc8aTMUroxh7QPYjSxJP-NxDZckqvTezaShb4sI8dn8wvj5HM7gO-g-t8"
-        },
-        {
-          "url": "https://www.elconfidencial.com/sociedad/2026-11-06/municipios-contra-acoso-escolar-1hms-1svm_4460520/",
-          "title": "Más de 20 ciudades se unen contra el bullying y llevan a sus ayuntamientos el mensaje del fútbol español",
-          "publisher": "El Confidencial",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRod15iQEbosQhiagUWuugxqWn-O2mJ2j2wu7P1plRy_svemIC_c6ySxuN2zw"
-        }
-      ]
-    },
-    {
-      "query": "austin simmons",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T20:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50400199/sources-qb-austin-simmons-re-signs-missouri-2027",
-        "https://247sports.com/college/missouri/article/quarterback-austin-simmons-re-signs-with-missouri-for-2027-season-292254068/",
-        "https://www.cbssports.com/college-football/news/austin-simmons-re-signs-missouri-2027-season-expectations/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4oAHZAq4HmS-paJgBz4AZEzRHzWvYd4WAgKZ0hox39KP-wtJN27XCBnf2Io",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50400199/sources-qb-austin-simmons-re-signs-missouri-2027",
-          "title": "Sources - QB Austin Simmons re-signs with Missouri for 2027",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4oAHZAq4HmS-paJgBz4AZEzRHzWvYd4WAgKZ0hox39KP-wtJN27XCBnf2Io"
-        },
-        {
-          "url": "https://247sports.com/college/missouri/article/quarterback-austin-simmons-re-signs-with-missouri-for-2027-season-292254068/",
-          "title": "Quarterback Austin Simmons re-signs with Missouri for 2027 season",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRX3xM2l4PRfIuO8kpYw_5Qz0cwRm0_qeJVVpJARe4Cl4CzeoB1ABH5Ky1v6M"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/austin-simmons-re-signs-missouri-2027-season-expectations/",
-          "title": "Austin Simmons re-signs with Missouri: Tigers set for high expectations in 2027 with star QB returning",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFVvbMriVe7_bRslznNH2IWn_Hm8qlFas3MywoLyGNgksIltjVYN9IBUQf4r4"
-        }
-      ]
-    },
-    {
-      "query": "patrick lynch mt lebanon",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T20:30:00Z",
-      "related_news_urls": [
-        "https://katu.com/news/nation-world/father-suspected-of-throwing-2-kids-from-parking-garage-murder-suicide-was-depressed-after-layoff-mother-says-mt-lebanon-allegheny-county-pennsylvania-williams-syndrome",
-        "https://people.com/dad-had-been-laid-off-and-was-depressed-before-fatally-jumping-off-garage-with-two-kids-6-and-8-12238419",
-        "https://nypost.com/2026/11/06/us-news/patrick-lynch-cause-of-death-after-pittsburgh-murders/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUNaZNyTOwIUc79VY6zfmkW-KuXjJYQnhlZWRYWivg8NmyRL-oqnTxcuHJakY",
-      "image_credit": "KATU",
-      "news": [
-        {
-          "url": "https://katu.com/news/nation-world/father-suspected-of-throwing-2-kids-from-parking-garage-murder-suicide-was-depressed-after-layoff-mother-says-mt-lebanon-allegheny-county-pennsylvania-williams-syndrome",
-          "title": "Father suspected of throwing kids to their deaths from garage was 'depressed,' mother says",
-          "publisher": "KATU",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUNaZNyTOwIUc79VY6zfmkW-KuXjJYQnhlZWRYWivg8NmyRL-oqnTxcuHJakY"
-        },
-        {
-          "url": "https://people.com/dad-had-been-laid-off-and-was-depressed-before-fatally-jumping-off-garage-with-two-kids-6-and-8-12238419",
-          "title": "Mom of Kids Pushed to Death in Murder-Suicide Says Killer Was ‘Wonderful Dad’ Who Was ‘Depressed’ After Layoff",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8RDFhfpZjvZslZJr1KJBkvNpYi9rLdmk_HfevsKPEytTOmTF-U1L6GBDpUPA"
-        },
-        {
-          "url": "https://nypost.com/2026/11/06/us-news/patrick-lynch-cause-of-death-after-pittsburgh-murders/",
-          "title": "Chilling new details about dad who threw two young kids from parking garage before jumping",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgP3sHERS6yFN16fYrD0KQjZ4tfCo5DEfy_A7C_U4JMp71h_HeKxFhJC0G9qA"
-        }
-      ]
-    },
-    {
-      "query": "senfronia thompson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T20:30:00Z",
-      "related_news_urls": [
-        "https://www.texastribune.org/2026/11/05/texas-democrats-house-speaker-senfronia-thompson-eddie-morales/",
-        "https://www.click2houston.com/news/local/2026/11/05/texass-longest-serving-black-lawmaker-senfronia-thompson-now-one-step-away-from-most-powerful-seat-in-the-house/",
-        "https://texasscorecard.com/state/senfronia-thompson-launches-speaker-bid-as-democrats-seize-texas-house/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPpVbZTRk3bCN323rX-i6vM8is91Yxgejkm-msBRogCjuX96aB6SfxAjZL76I",
-      "image_credit": "The Texas Tribune",
-      "news": [
-        {
-          "url": "https://www.texastribune.org/2026/11/05/texas-democrats-house-speaker-senfronia-thompson-eddie-morales/",
-          "title": "Texas Democrats already angling to be the next House speaker",
-          "publisher": "The Texas Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPpVbZTRk3bCN323rX-i6vM8is91Yxgejkm-msBRogCjuX96aB6SfxAjZL76I"
-        },
-        {
-          "url": "https://www.click2houston.com/news/local/2026/11/05/texass-longest-serving-black-lawmaker-senfronia-thompson-now-one-step-away-from-most-powerful-seat-in-the-house/",
-          "title": "Texas’s longest-serving Black lawmaker Senfronia Thompson now one step away from most powerful seat in the House",
-          "publisher": "Click2Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7bbAnYoijmsh1Iez_4YS1Jrw-gEwpV3p291Rk0lGUqri3GL2YEHPBspqx-DM"
-        },
-        {
-          "url": "https://texasscorecard.com/state/senfronia-thompson-launches-speaker-bid-as-democrats-seize-texas-house/",
-          "title": "Senfronia Thompson Launches Speaker Bid as Democrats Seize Texas House",
-          "publisher": "Texas Scorecard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVwP-xL7rO0MtKq7MXZcTpFJBGjzwBrMcY23Xa6ZCgP77negRaaUo-B9MS76Y"
-        }
-      ]
-    },
-    {
-      "query": "zelda switch 2 pro controller",
+      "query": "michael sanft",
       "approx_searches": "1000+",
-      "published_at": "2026-11-06T20:30:00Z",
-      "related_news_urls": [
-        "https://mashable.com/tech/zelda-switch-2-restock-retailers-where-to-buy-now",
-        "https://shattered.io/walmart-zelda-switch-2-519-99-gift-card-48-hour-reorder-2026/",
-        "https://www.theshortcut.com/p/still-searching-for-a-zelda-40th-anniversary-switch-2-nintendo-has-good-news"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7MuNHfA1prwwJuOP1v8vdCfAkH-88d5CVhsU8jqmBP9Y-O0G8dgTuV8KSf-U",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/tech/zelda-switch-2-restock-retailers-where-to-buy-now",
-          "title": "Zelda Switch 2 restock retailers: Where to buy the 40th anniversary console",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7MuNHfA1prwwJuOP1v8vdCfAkH-88d5CVhsU8jqmBP9Y-O0G8dgTuV8KSf-U"
-        },
-        {
-          "url": "https://shattered.io/walmart-zelda-switch-2-519-99-gift-card-48-hour-reorder-2026/",
-          "title": "Walmart Zelda Switch 2: $519.99 Gift Card, 48 Hours [2026]",
-          "publisher": "shattered.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTky2FHHApp_OOdMxsUhNhZEgY6mNSofspm28yVGGZBwruNgp8IxBA2m4WEnhQ"
-        },
-        {
-          "url": "https://www.theshortcut.com/p/still-searching-for-a-zelda-40th-anniversary-switch-2-nintendo-has-good-news",
-          "title": "Still searching for a Zelda 40th Anniversary Switch 2? Nintendo has good news",
-          "publisher": "The Shortcut | Matt Swider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS4A4e4NF3qoExKX9cblQMvNGQe125BAqrWohSZsovMKPX_WbwRJRA5XwKjMg"
-        }
-      ]
-    },
-    {
-      "query": "toulouse fc",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T20:30:00Z",
-      "related_news_urls": [
-        "https://www.sport.fr/football/tfc-rc-strasbourg-le-tfc-et-le-racing-jouent-leur-sortie-de-crise-au-stadium-1498195.shtm",
-        "https://www.lesviolets.com/actu/je-sais-que-nous-pouvons-marquer-sion-oppong-croit-au-reveil-offensif-du-tfc,84958.html",
-        "https://www.dna.fr/sport/2026/11/06/le-racing-club-de-strasbourg-va-t-il-poursuivre-son-redressement-a-toulouse-suivez-le-match-en-direct"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJuQsNU1BJ13v0TsQkNhCpVyqkxzBfV1pLjKj1cUye6U_BMdfugPzniNG2AY",
-      "image_credit": "Sport.fr",
-      "news": [
-        {
-          "url": "https://www.sport.fr/football/tfc-rc-strasbourg-le-tfc-et-le-racing-jouent-leur-sortie-de-crise-au-stadium-1498195.shtm",
-          "title": "TFC – RC Strasbourg : le TFC et le Racing jouent leur sortie de crise au Stadium",
-          "publisher": "Sport.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJuQsNU1BJ13v0TsQkNhCpVyqkxzBfV1pLjKj1cUye6U_BMdfugPzniNG2AY"
-        },
-        {
-          "url": "https://www.lesviolets.com/actu/je-sais-que-nous-pouvons-marquer-sion-oppong-croit-au-reveil-offensif-du-tfc,84958.html",
-          "title": "« Je sais que nous pouvons marquer » : Sion Oppong croit au réveil offensif du TFC",
-          "publisher": "LesViolets.Com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4SEZasI_mAclAmuSHA5r5o42_tmJtZArLlJp4uNU_JJ4fU0OCZwa4KWg4wQE"
-        },
-        {
-          "url": "https://www.dna.fr/sport/2026/11/06/le-racing-club-de-strasbourg-va-t-il-poursuivre-son-redressement-a-toulouse-suivez-le-match-en-direct",
-          "title": "Toulouse ouvre la marque, le Racing Club de Strasbourg mené à la pause : suivez la rencontre en direct",
-          "publisher": "dna.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz62SqYZaFNnNepwRfCrHlrlPPAl_Lov77kRknHDzBAhAo5_hXBm35YSRc5Sk"
-        }
-      ]
+      "published_at": "2026-11-06T20:50:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
     }
   ]
 }
