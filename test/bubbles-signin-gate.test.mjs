@@ -90,7 +90,8 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
    recoveredGoogle=true;
    return Response.json({ok:true,status:'connected',account:{id:'verified-google-id',provider:'google',label:'Google account'}});
   }
-  if(path==='/handoff/cloudflare/resume'&&cloudflareRecovery){
+  if(path==='/handoff/cloudflare/resume'){
+   if(!cloudflareRecovery)return Response.json({ok:true,status:'missing'});
    recoveredCloudflare=true;
    return Response.json({ok:true,status:'connected',account:{id:'verified-cloudflare-id',provider:'cloudflare',label:'Cloudflare account'}});
   }
