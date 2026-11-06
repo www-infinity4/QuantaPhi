@@ -157,9 +157,9 @@ if(typeof document!=='undefined'){
   const heading=document.createElement('p');heading.className='shopphi-switchboard-heading';
   heading.textContent='Related source cards · ShopPhi';
   const receipt=document.createElement('p');receipt.className='shopphi-switchboard-receipt';receipt.setAttribute('role','status');
-  stage.parentNode.insertBefore(heading,stage);
   stage.parentNode.insertBefore(grid,stage);
-  grid.append(before,stage,after);
+  // The chosen interactive hero is always first. Related discovery follows it.
+  grid.append(stage,heading,before,after);
   grid.after(receipt);
   const navigation=document.createElement('nav');navigation.className='shopphi-flank-navigation';
   navigation.setAttribute('aria-label','Browse larger companion cards');
