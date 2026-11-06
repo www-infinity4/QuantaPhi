@@ -119,6 +119,32 @@ test('Google requests only chosen service scopes and explicit account selection'
   assert.ok(!url.searchParams.get('scope').includes('drive.readonly'));
   assert.ok(!url.href.includes('server-secret'));
 });
+test('basic Google consent requests only identity and email, not Gmail or Drive',()=>{
+ const adapter=googleAdapter(config);
+ const url=new URL(adapter.authorization({state:'state',challenge:'challenge',actions:['identity.read']}));
+ assert.equal(url.searchParams.get('scope'),'openid email');
+ assert.equal(url.searchParams.get('prompt'),'consent select_account');
+});
+test('two Google identities share one wallet without replacing or disconnecting each other',async()=>{
+ const f=fixture(),input={...f.input,actions:['identity.read']};
+ f.adapter.exchange=async({code})=>({subject:code,label:code+'@example.test',
+  accessToken:'private-access-'+code,refreshToken:'private-refresh-'+code,
+  expiresIn:3600,grantedActions:['identity.read']});
+ const authorize=async code=>{
+  const state=new URL((await f.service.start(input)).authorizationUrl).searchParams.get('state');
+  return f.service.complete({...input,state,code});
+ };
+ const first=await authorize('integra'),second=await authorize('second');
+ assert.notEqual(first.id,second.id);
+ assert.equal(first.label,'integra@example.test');
+ assert.equal(second.label,'second@example.test');
+ assert.equal((await f.service.list({userId:'alice'})).filter(r=>r.status==='connected').length,2);
+ assert.equal((await f.service.list({userId:'bob'})).length,0);
+ await f.service.disconnect({userId:'alice',id:second.id});
+ const remaining=await f.service.list({userId:'alice'});
+ assert.equal(remaining.find(r=>r.id===first.id)?.status,'connected');
+ assert.equal(remaining.find(r=>r.id===second.id)?.status,'disconnected');
+});
 test('Google grants only requested actions actually present in provider response', async () => {
   const replies = [{access_token:'access',token_type:'Bearer',expires_in:3600,scope:'openid email https://www.googleapis.com/auth/drive.readonly'}, {sub:'stable-sub',email:'address@test',email_verified:true}];
   const calls = [];
