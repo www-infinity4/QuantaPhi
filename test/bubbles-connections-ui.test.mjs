@@ -43,7 +43,7 @@ test('client setup probe uses only a fictitious grant and never claims account v
  }
 });
 
-test('account page launches real Cloudflare consent with registered actions even without the full project toolkit',async t=>{
+test('account page starts consent with the selected provider permissions',async t=>{
  class Element {
   constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.classList={add(){}};}
   append(...nodes){this.childNodes.push(...nodes);}
@@ -57,14 +57,19 @@ test('account page launches real Cloudflare consent with registered actions even
  t.after(()=>Object.assign(globalThis,originals));
  const document={createElement:tag=>new Element(tag),createTextNode:text=>({textContent:text}),addEventListener(){}};
  const storage=new Map(),sessionStorage={getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
- const popup={location:{},close(){}},calls=[];let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',expiresAt:Date.now()+600000,grantedActions:['repository.read']}];
+ const popup={location:{},close(){}},calls=[];
+ let googleConfigured=false,navigation='';
+ let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',expiresAt:Date.now()+600000,grantedActions:['repository.read']}];
  const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
  Object.assign(globalThis,{document,sessionStorage,window,fetch:async(url,options)=>{
   const path=String(url).replace('/api/bubbles/connections','');
   const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
-  if(path==='/catalog')return Response.json({ok:true,providers:[{id:'github',configured:true,actions:['repository.read']},{id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read','projects.build','ledger.read']},{id:'google',configured:false}]});
+  if(path==='/catalog')return Response.json({ok:true,providers:[{id:'github',configured:true,actions:['repository.read']},{id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read','projects.build','ledger.read']},{id:'google',configured:googleConfigured,actions:['drive.read','gmail.read']}]});
   if(path==='/accounts')return Response.json({ok:true,accounts:accountRecords});
-  if(path==='/start')return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+'s'.repeat(43),expiresIn:300});
+  if(path==='/start'){
+   const authorizationUrl=body.provider==='google'?'https://accounts.google.com/o/oauth2/v2/auth':'https://dash.cloudflare.com/oauth2/auth';
+   return Response.json({ok:true,authorizationUrl:authorizationUrl+'?state='+'s'.repeat(43),expiresIn:300});
+  }
   if(path==='/handoff/status')return Response.json({ok:true,status:'pending'});
   assert.fail('Unexpected endpoint '+path);
  }});
@@ -76,7 +81,7 @@ test('account page launches real Cloudflare consent with registered actions even
  const button=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
  assert.equal(button.disabled,false);
  assert.equal(button.textContent,'Sign in with Cloudflare');
- assert.equal(descendants(container).find(node=>node.tag==='fieldset').hidden,true);
+ assert.equal(descendants(container).some(node=>node.tag==='fieldset'&&!node.hidden),false);
  await button.listeners.click();
  assert.deepEqual(calls.find(call=>call.path==='/start').body,{provider:'cloudflare',actions:['account.read']});
  assert.equal(new URL(popup.location.href).origin,'https://dash.cloudflare.com');
@@ -93,6 +98,23 @@ test('account page launches real Cloudflare consent with registered actions even
  assert.ok(descendants(container).some(node=>node.dataset?.provider==='cloudflare'));
  assert.ok(descendants(container).some(node=>String(node.textContent).includes('reconnect required')));
 
+ googleConfigured=true;
+ window.location.assign=url=>{navigation=url;};
+ await panel.refresh();
+ const googleButton=descendants(container).find(node=>node.dataset?.provider==='google');
+ const googleCard=descendants(container).find(node=>node.childNodes?.includes(googleButton));
+ const permissions=googleCard.childNodes.find(node=>node.tag==='fieldset');
+ assert.ok(permissions,'Google permissions must be in the same card as sign-in');
+ assert.ok(googleCard.childNodes.indexOf(permissions)<googleCard.childNodes.indexOf(googleButton));
+ const beforeClick=calls.length;
+ await googleButton.listeners.click();
+ assert.equal(calls.length,beforeClick,'An unchecked Google permission must not start OAuth');
+ assert.ok(googleCard.childNodes.some(node=>node.role==='status'&&/Choose at least one Google permission/.test(node.textContent)));
+ descendants(permissions).find(node=>node.value==='drive.read').checked=true;
+ await googleButton.listeners.click();
+ assert.deepEqual(calls.slice(beforeClick).find(call=>call.path==='/start').body,{provider:'google',actions:['drive.read']});
+ assert.equal(new URL(navigation).origin,'https://accounts.google.com');
+ panel.client.cancelConnect();
 });
 
 test('Android Cloudflare sign-in navigates this tab directly and never opens about:blank',async()=>{
