@@ -197,9 +197,13 @@ test('account page starts consent with the selected provider permissions',async 
  const beforeRecovery=calls.length;
  const recoveredContainer=new Element('main'),recoveredPanel=mountConnections(recoveredContainer,{token:async()=>'sq_'+'a'.repeat(40)});
  await recoveredPanel.refresh();
+ for(let i=0;i<20&&calls.slice(beforeRecovery).filter(call=>call.path==='/handoff/cloudflare/resume').length<1;i++)
+  await new Promise(setImmediate);
  assert.equal(calls.slice(beforeRecovery).filter(call=>call.path==='/handoff/cloudflare/resume').length,1,
   'Only one wallet-bound Cloudflare recovery attempt per Accounts page');
  assert.equal(calls.slice(beforeRecovery).some(call=>call.path==='/start'),false);
+ for(let i=0;i<20&&!descendants(recoveredContainer).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as recovered@example.test'));i++)
+  await new Promise(setImmediate);
  assert.ok(descendants(recoveredContainer).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as recovered@example.test')),
   'Recovered Cloudflare connection replaces its old sign-in button');
  assert.equal(descendants(recoveredContainer).some(node=>node.dataset?.provider==='cloudflare'),false);
