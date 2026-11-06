@@ -285,7 +285,13 @@ if(typeof document!=='undefined'){
     link.append(art,span(c.title,'shopphi-flank-title'));
     if(c.price&&c.type==='shop-item')link.append(span(c.price,'shopphi-flank-price'));
     if(c.reason)link.append(span(c.reason,'shopphi-flank-reason'));
-    link.append(span(internal?'Open interactive Quick Card →':'Open original offer →','shopphi-flank-cta'));
+    link.append(span(internal&&c.type==='website-card'?'View in this Quick Card':'Open original offer','shopphi-flank-cta'));
+    if(internal&&c.type==='website-card'){
+     link.addEventListener('click',event=>{
+      event.preventDefault();
+      window.dispatchEvent(new CustomEvent('quantaphi:select-source-card',{detail:{sourceId:c.sourceId}}));
+     });
+    }
     link.addEventListener('click',()=>{ // Local rank rotation only; never financial or viewability reporting.
      exposure[c.id]=Math.min(200,(exposure[c.id]||0)+1);
     });
