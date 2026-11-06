@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T10:31:31.165424Z",
+  "checked_at": "2026-11-06T11:01:34.094176Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "to",
-      "approx_searches": "100+",
-      "published_at": "2026-11-06T10:10:00Z",
+      "query": "dow futures",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-06T10:40:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/05/trump-oval-office-design-proclamation",
-        "https://www.bbc.com/news/articles/cmy0eeg101djo",
-        "https://www.foxnews.com/politics/trump-signs-proclamation-prevent-changes-oval-office-other-white-house-rooms"
+        "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+        "https://finance.yahoo.com/markets/stocks/articles/midterm-elections-yield-dubious-surprise-092601945.html",
+        "https://www.economist.com/finance-and-economics/2026/11/04/what-markets-make-of-the-midterms"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRc0bZ0hvBmYVtdzTd8Z2m3dCov9o9nKqkhPrM9mzF3t_Gxqt7dmvYkD-tLy5A",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvcTzERXh7oAzJQ5gw7Uf6W2JspbT05ROYIN_sQUQWCttJs1JetFEwJM9paFM",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/05/trump-oval-office-design-proclamation",
-          "title": "Trump signs proclamation to try to prevent changes to gold-covered Oval Office",
-          "publisher": "The Guardian",
+          "url": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+          "title": "Here's what the Democratic election rout could mean for the U.S. economy",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRc0bZ0hvBmYVtdzTd8Z2m3dCov9o9nKqkhPrM9mzF3t_Gxqt7dmvYkD-tLy5A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvcTzERXh7oAzJQ5gw7Uf6W2JspbT05ROYIN_sQUQWCttJs1JetFEwJM9paFM"
         },
         {
-          "url": "https://www.bbc.com/news/articles/cmy0eeg101djo",
-          "title": "Trump signs order to prevent future presidents from changing Oval Office",
-          "publisher": "BBC",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/midterm-elections-yield-dubious-surprise-092601945.html",
+          "title": "Midterm Elections Yield a Dubious Surprise for the Trump Bull Market -- Is a Stock Market Crash Imminent?",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwd_bvXSdgqnOCAMXfi7yGzktMWwsDxLYv-xIrxWzd7Yom-2VYO5mYplBQt0g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnDRSsv310a3CtGxQp9RX7-6Ptq8NZ2D3gYCrpH_zu6YFFTYv2SW4AQmCeyVw"
         },
         {
-          "url": "https://www.foxnews.com/politics/trump-signs-proclamation-prevent-changes-oval-office-other-white-house-rooms",
-          "title": "Trump signs proclamation to prevent changes to Oval Office, other White House rooms",
-          "publisher": "Fox News",
+          "url": "https://www.economist.com/finance-and-economics/2026/11/04/what-markets-make-of-the-midterms",
+          "title": "What markets make of the midterms",
+          "publisher": "The Economist",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROhNbg_hdqeDfNIC9MOwhcfJ3Eh4fKsLONXYSVeNuBhTLG_Bu5DwIBmmBsMqY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhVR9wtgc6BDCtCEN7tMTIGAXJVON1RbEVqtAwj_Et70ygorpm6Qy-8RxAqAA"
         }
       ]
     },
     {
-      "query": "xbox",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T10:00:00Z",
-      "related_news_urls": [
-        "https://news.xbox.com/en-us/2026/11/05/a-faster-simpler-xbox-experience-is-coming-to-pc-web-and-cloud/",
-        "https://www.techpowerup.com/354525/new-xbox-pc-app-claims-60-faster-launch-times-and-ux-improvements",
-        "https://www.engadget.com/2308407/the-xbox-pc-app-is-getting-a-speed-boost/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmY4Z4DTlQTQ2Fk0vFO3zsiWX7TzLxLyJ2Q4hMej6Z-29j1KBD3FbtCqYOMiI",
-      "image_credit": "XBOX Wire",
-      "news": [
-        {
-          "url": "https://news.xbox.com/en-us/2026/11/05/a-faster-simpler-xbox-experience-is-coming-to-pc-web-and-cloud/",
-          "title": "A Faster, Simpler XBOX Experience Is Coming to PC, Web and Cloud",
-          "publisher": "XBOX Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmY4Z4DTlQTQ2Fk0vFO3zsiWX7TzLxLyJ2Q4hMej6Z-29j1KBD3FbtCqYOMiI"
-        },
-        {
-          "url": "https://www.techpowerup.com/354525/new-xbox-pc-app-claims-60-faster-launch-times-and-ux-improvements",
-          "title": "New Xbox PC App Claims 60% Faster Launch Times and UX Improvements",
-          "publisher": "TechPowerUp",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbK6JweNv8wB9OpDf4LqVHfw3vLkXnEClU8nPGSkNLhHLlysIRo6wNhm4EUuM"
-        },
-        {
-          "url": "https://www.engadget.com/2308407/the-xbox-pc-app-is-getting-a-speed-boost/",
-          "title": "The Xbox PC App Is Getting A Speed Boost",
-          "publisher": "Engadget",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvEp2CgFxLWuWvWIkL2PyDDhX6f62DQvb0VXlN9UuWLXuzbldMiDGaA6ZUp5E"
-        }
-      ]
-    },
-    {
-      "query": "hong kong open",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T10:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50388508/alex-eala-tereza-valentova-hong-kong-open-quarterfinal",
-        "https://sports.yahoo.com/articles/alex-eala-reacts-immediately-beating-134139690.html",
-        "https://www.wtatennis.com/videos/4605290/valentova-delays-the-inevitable-with-epic-match-point-save-against-eala-in-hong-kong"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToIqf_7la_2YNVn94sWl3ncG6Y2EIDwcXQFpwNGI--rPW15Vkyd-hMyIPuWXo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50388508/alex-eala-tereza-valentova-hong-kong-open-quarterfinal",
-          "title": "Alex Eala finally gets past Tereza Valentová to book Hong Kong Open quarterfinal berth",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToIqf_7la_2YNVn94sWl3ncG6Y2EIDwcXQFpwNGI--rPW15Vkyd-hMyIPuWXo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/alex-eala-reacts-immediately-beating-134139690.html",
-          "title": "Alex Eala reacts immediately after beating Tereza Valentova to reach Hong Kong quarter-final, ‘I escaped a little bit’",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbKKZ71GeZvEJPZo6yy_GnDf4BmqqXQuxsuY7oQp8FvzVBJyt3mvSMZPMo2Go"
-        },
-        {
-          "url": "https://www.wtatennis.com/videos/4605290/valentova-delays-the-inevitable-with-epic-match-point-save-against-eala-in-hong-kong",
-          "title": "Valentova delays the inevitable with epic match point save against Eala in Hong Kong",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvMEd_2N0WsqsW50WeOyIbWloZEb2eiQRlszqRo6f81gWHb9N23Q6zmgRRF4"
-        }
-      ]
-    },
-    {
-      "query": "allen county sheriff's",
-      "approx_searches": "100+",
-      "published_at": "2026-11-06T09:40:00Z",
-      "related_news_urls": [
-        "https://www.adastraradio.com/iola-news/allen-county-sheriffs-office-brings-back-adopt-a-grandparent-program-for-holidays/",
-        "https://www.wane.com/top-stories/former-sheriffs-department-sergeant-charged-with-multiple-owis/",
-        "https://www.wane.com/top-stories/court-documents-detail-drug-arrests-in-mass-warrant-operation/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIW-TC71BxKNtmxxKRQ3Xwy1kpcJ5uZ9z_jr8unGMOGcLDX9DM7LVIPpucnw8",
-      "image_credit": "Ad Astra Radio",
-      "news": [
-        {
-          "url": "https://www.adastraradio.com/iola-news/allen-county-sheriffs-office-brings-back-adopt-a-grandparent-program-for-holidays/",
-          "title": "Allen County Sheriff’s Office Brings Back Adopt-A-Grandparent Program for Holidays",
-          "publisher": "Ad Astra Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIW-TC71BxKNtmxxKRQ3Xwy1kpcJ5uZ9z_jr8unGMOGcLDX9DM7LVIPpucnw8"
-        },
-        {
-          "url": "https://www.wane.com/top-stories/former-sheriffs-department-sergeant-charged-with-multiple-owis/",
-          "title": "Former Sheriff’s Department sergeant charged with multiple OWIs",
-          "publisher": "WANE 15",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9L71FH1_GYikkabi5IVNzbhUKRaxxcdkJVFkE25Ci7VC9h7gN44pAwAfou_s"
-        },
-        {
-          "url": "https://www.wane.com/top-stories/court-documents-detail-drug-arrests-in-mass-warrant-operation/",
-          "title": "Court documents detail drug arrests in mass warrant operation",
-          "publisher": "WANE 15",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5Nb8AerKgHVvPTEB1ibAwxMGd7g2oUPtMwUJxxqWQ7x5WGlz_is2KuZE9Ais"
-        }
-      ]
-    },
-    {
-      "query": "wi vs ban",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T09:30:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/ball-by-ball-commentary",
-        "https://www.espn.com/cricket/series/19430/preview/1553296/bangladesh-vs-west-indies-2nd-test-24756",
-        "https://www.oskaloosa.com/sports/national_sports/west-indies-wins-the-toss-and-bats-1st-in-the-2nd-cricket-test-against-bangladesh/article_704bf601-7400-556f-a13b-6c49b22c66ba.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR93Xynw_LgLr7d6IPpqXMFGfLLj8NUFmfB43ISJ1luc_bbh7JdR13aMMGAM3w",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - BAN vs WI, 2nd Test",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR93Xynw_LgLr7d6IPpqXMFGfLLj8NUFmfB43ISJ1luc_bbh7JdR13aMMGAM3w"
-        },
-        {
-          "url": "https://www.espn.com/cricket/series/19430/preview/1553296/bangladesh-vs-west-indies-2nd-test-24756",
-          "title": "West Indies eye rare series win as Bangladesh seek answers",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEWapRM03h0E5hb-3NspdI1QySqIl2hMPgtZHGTLLfU9uBgGPH5UNpES-KZG8"
-        },
-        {
-          "url": "https://www.oskaloosa.com/sports/national_sports/west-indies-wins-the-toss-and-bats-1st-in-the-2nd-cricket-test-against-bangladesh/article_704bf601-7400-556f-a13b-6c49b22c66ba.html",
-          "title": "West Indies wins the toss and bats 1st in the 2nd cricket test against Bangladesh",
-          "publisher": "Oskaloosa Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxD8iQsxbS39mZq4klK4BKszdoVWxMw4K6K_rCDJ723bWlryGxqdWZDaBLzE"
-        }
-      ]
-    },
-    {
-      "query": "zac affleck",
+      "query": "weather boston",
       "approx_searches": "500+",
-      "published_at": "2026-11-06T09:10:00Z",
+      "published_at": "2026-11-06T10:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/pregnant-secret-lives-mormon-wives-000546598.html",
-        "https://www.latimes.com/entertainment-arts/tv/story/2026-11-05/secret-lives-mormon-wives-jen-affleck-divorce-pregnant-zac",
-        "https://www.eonline.com/news/1437878/mormon-wives-zac-affleck-shares-why-jen-affleck-divorced-broke-up"
+        "https://whdh.com/weather-blog/dry-streak-ends-soggy-stretch-ahead/",
+        "https://www.bostonglobe.com/2026/11/05/metro/forecast-rain-maps-new-england-boston-weather/",
+        "https://turnto10.com/weather/weather-blog/weather-alert-pockets-of-heavy-for-us-friday"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK6ILCkbaEIw2oOsgXt2v3duy92meYgLPbxYfXSKN3xsXpLTDuIr_OHhAWjkk",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1SL06jr3UKVhCoc5dthj0R-tv9DMPVdp-rOuPyKqpSO-0wcmmRxFExleKmJg",
+      "image_credit": "WHDH",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/pregnant-secret-lives-mormon-wives-000546598.html",
-          "title": "Pregnant ‘Secret Lives of Mormon Wives’ star Jen Affleck shockingly files for divorce from husband Zac",
+          "url": "https://whdh.com/weather-blog/dry-streak-ends-soggy-stretch-ahead/",
+          "title": "Dry streak ends, soggy stretch ahead!",
+          "publisher": "WHDH",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1SL06jr3UKVhCoc5dthj0R-tv9DMPVdp-rOuPyKqpSO-0wcmmRxFExleKmJg"
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/05/metro/forecast-rain-maps-new-england-boston-weather/",
+          "title": "Soggy stretch of weather arrives Friday. Up to 3 inches of rain, flash flooding expected.",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1foGRIKcuJi9NNO-4wDb85o1bWjYHtUEy3Ol9Fw9_dAadx46ND_GaE895U58"
+        },
+        {
+          "url": "https://turnto10.com/weather/weather-blog/weather-alert-pockets-of-heavy-for-us-friday",
+          "title": "Weather Alert: Pockets of heavy for us Friday",
+          "publisher": "WJAR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiTzdgwQew6bCQbDhBykGu8YDNCwvgPkeQrlhTbf_-xzoAgf3E4Of9AU7qOis"
+        }
+      ]
+    },
+    {
+      "query": "elise stefanik",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T10:40:00Z",
+      "related_news_urls": [
+        "https://thehill.com/homenews/state-watch/6202067-blakeman-attacks-stefanik-ny-gov/",
+        "https://nypost.com/2026/11/04/us-news/rep-elise-stefanik-blasts-blue-wave-massacre-as-republican-reckoning/",
+        "https://www.timesunion.com/capitol/article/bruce-blakeman-lashes-elise-stefanik-anthony-22514802.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ0EAhFtio2hwHX24lxiB-gmparBqO_EXL_QW-Q15TRAApLecu7KunBJHq9fw",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/homenews/state-watch/6202067-blakeman-attacks-stefanik-ny-gov/",
+          "title": "Blakeman rips ‘selfish’ Stefanik after losing New York governor’s race",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ0EAhFtio2hwHX24lxiB-gmparBqO_EXL_QW-Q15TRAApLecu7KunBJHq9fw"
+        },
+        {
+          "url": "https://nypost.com/2026/11/04/us-news/rep-elise-stefanik-blasts-blue-wave-massacre-as-republican-reckoning/",
+          "title": "Elise Stefanik tears into ‘low energy’ Bruce Blakeman, calls GOP midterm disaster a ‘reckoning’",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFrq9Sgs6kghmL_iCFptt1UhdVFzphOaoleUyUwpP4uRff8OvS3vg0Rxmx8g8"
+        },
+        {
+          "url": "https://www.timesunion.com/capitol/article/bruce-blakeman-lashes-elise-stefanik-anthony-22514802.php",
+          "title": "Bruce Blakeman lashes out at Stefanik, Constantino",
+          "publisher": "Times Union",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkvKrdr5oyQkpPTayIRPxGKvrepivIn1E12lHh2JcCfoZhud4lFRAkWbHK8PU"
+        }
+      ]
+    },
+    {
+      "query": "weather philadelphia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T10:30:00Z",
+      "related_news_urls": [
+        "https://www.inquirer.com/weather/philadelphia-weather-forecast-rain-road-conditions-20261105.html",
+        "https://patch.com/pennsylvania/across-pa/multiple-days-rain-thunderstorms-possible-philly-area-see-forecast",
+        "https://www.wgal.com/article/lingering-showers-mild-thursday-in-south-central-pennsylvania/74277408"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqkHJreDcu2wO0B-a6ySi8Bw02RdynYIT4TiA5U5tZay9bcITeJDl47ppy1Cw",
+      "image_credit": "Inquirer.com",
+      "news": [
+        {
+          "url": "https://www.inquirer.com/weather/philadelphia-weather-forecast-rain-road-conditions-20261105.html",
+          "title": "Philly’s 18-day dry spell has ended, with rains and slick roads expected through Friday morning",
+          "publisher": "Inquirer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqkHJreDcu2wO0B-a6ySi8Bw02RdynYIT4TiA5U5tZay9bcITeJDl47ppy1Cw"
+        },
+        {
+          "url": "https://patch.com/pennsylvania/across-pa/multiple-days-rain-thunderstorms-possible-philly-area-see-forecast",
+          "title": "Storms Target Philly Area: See Latest Forecast",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYgyO36KfEniYhOVKGKwAaLl8ImNQpIjwKzDhYmYLKf2CGMi2xaa53XpZfUwc"
+        },
+        {
+          "url": "https://www.wgal.com/article/lingering-showers-mild-thursday-in-south-central-pennsylvania/74277408",
+          "title": "Lingering showers & mild Thursday in south central Pennsylvania",
+          "publisher": "WGAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6_81X0BjZaSAZqrANV2d2IIgVTlEai_oq_Y8JUY4CEyQIPJQWRkHUwxIaEa8"
+        }
+      ]
+    },
+    {
+      "query": "theft",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T10:30:00Z",
+      "related_news_urls": [
+        "https://thehill.com/homenews/house/6202537-lakesha-womack-nc-felony/",
+        "https://www.wbtv.com/2026/11/04/us-congressman-charlotte-area-loses-election-day-surprise/",
+        "https://www.wfae.org/politics/2026-11-04/how-lakesha-womacks-56-000-campaign-and-president-trump-sunk-powerful-republican-tim-moore"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQp4U-u9TDMQAXlf-dB-oU1_gm6u-pmgeCWzlws8biP925oYtfPDRkK1ILxYU",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/homenews/house/6202537-lakesha-womack-nc-felony/",
+          "title": "Democrat, who clinched surprise House win, facing felony charge",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQp4U-u9TDMQAXlf-dB-oU1_gm6u-pmgeCWzlws8biP925oYtfPDRkK1ILxYU"
+        },
+        {
+          "url": "https://www.wbtv.com/2026/11/04/us-congressman-charlotte-area-loses-election-day-surprise/",
+          "title": "US congressman from Charlotte area losing in Election Day surprise",
+          "publisher": "WBTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTL-j4ZpQuljxp0C2NcFzKJFh19b6a7-5S7lza-oN2PLiF3zqPNNPga73Nu2a0"
+        },
+        {
+          "url": "https://www.wfae.org/politics/2026-11-04/how-lakesha-womacks-56-000-campaign-and-president-trump-sunk-powerful-republican-tim-moore",
+          "title": "How LaKesha Womack's $56,000 campaign (and President Trump) sunk powerful Republican Tim Moore",
+          "publisher": "WFAE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQvx5g-ZEhoEKP6AD4WJg4ZIPcwF3z1M7H33bcCQi9pXs9UkpmY9O_k5Lt6HM"
+        }
+      ]
+    },
+    {
+      "query": "s&p 500 futures",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T10:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-091927729.html",
+        "https://seekingalpha.com/news/4667207-3-things-to-look-out-for-on-friday",
+        "https://www.fool.com/investing/2026/11/04/prediction-nov-6-will-be-a-huge-day-for-the-stock/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPCVch_ooknMKADGiwrhIuWtga5z3rCXdF77z4lJQN0d6pz50VA4yVRw_ungs",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-091927729.html",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq futures wobble after brutal sell-off, with key jobs report on deck",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPCVch_ooknMKADGiwrhIuWtga5z3rCXdF77z4lJQN0d6pz50VA4yVRw_ungs"
+        },
+        {
+          "url": "https://seekingalpha.com/news/4667207-3-things-to-look-out-for-on-friday",
+          "title": "3 things to look out for on Friday (SP500:)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGheK6RN3zzObNschzNwnW58bL8hNVeNNOEm6BF5krt2HVnzwyrVBOBiFSlD0"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/04/prediction-nov-6-will-be-a-huge-day-for-the-stock/",
+          "title": "Prediction: Nov. 6 Will Be a Huge Day for the Stock Market",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV9TYbGeZgxBsWwrmiE6-FN36QY7BBZJBdKRE7aXH-7_xpoz7GeYd_S2wZYFE"
+        }
+      ]
+    },
+    {
+      "query": "weather new york",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T10:20:00Z",
+      "related_news_urls": [
+        "https://www.wmbfnews.com/2026/11/05/winter-edge-wmbf-special-el-nio-winter-prep-airs-thursday-night/",
+        "https://www.wgrz.com/article/weather/winter-weather-outlook-wny-2026-2027/71-8e04bcf8-51f0-493c-8978-09d9dd627443",
+        "https://www.wcnc.com/article/weather/weather-iq/brads-winter-outlook-202627/275-983c94e6-1452-4209-8582-69a05ec19217"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiVRWG9M9DGsn4kJtswX9fptJ9f0Ik62_PQzaUjMoWfgznC3k5NbDFgOEBPFw",
+      "image_credit": "WMBF",
+      "news": [
+        {
+          "url": "https://www.wmbfnews.com/2026/11/05/winter-edge-wmbf-special-el-nio-winter-prep-airs-thursday-night/",
+          "title": "‘Winter on the Edge’: WMBF special on El Niño and winter prep airs Thursday night",
+          "publisher": "WMBF",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiVRWG9M9DGsn4kJtswX9fptJ9f0Ik62_PQzaUjMoWfgznC3k5NbDFgOEBPFw"
+        },
+        {
+          "url": "https://www.wgrz.com/article/weather/winter-weather-outlook-wny-2026-2027/71-8e04bcf8-51f0-493c-8978-09d9dd627443",
+          "title": "WNY Winter Weather Outlook",
+          "publisher": "WGRZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrpWmhiNC4Ynb-HBWttDLVcTVgBGUCYv8wo4hmhdpTn1XWz4kc-U7FgbTMhBo"
+        },
+        {
+          "url": "https://www.wcnc.com/article/weather/weather-iq/brads-winter-outlook-202627/275-983c94e6-1452-4209-8582-69a05ec19217",
+          "title": "Brad's Winter Outlook 2026–27: Wet, mild and short on cold",
+          "publisher": "WCNC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROQ8lSUpVLKxjHYGi-X87O4UyL9jfFgHGXY5k2LxNItye9TDpmJksKHoz1IiU"
+        }
+      ]
+    },
+    {
+      "query": "kt vs samsung",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T10:20:00Z",
+      "related_news_urls": [
+        "https://www.koreajoongangdaily.com/sports/live-kt-wiz-vs-samsung-lions-in-korean-series-game-3/12960263",
+        "https://www.chosun.com/english/sports-en/2026/11/04/YWR7HGDQ5RE2TFDT3VIV2RIVW4/",
+        "https://www.starnewskorea.com/en/sports/2026/11/04/2026110323302742907"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHVhdUf4VZUh1IMyvOy9qQwCLgd-3nlaOQKKlMZmb0j4nfLWyE2QtO0IFr-dk",
+      "image_credit": "Korea JoongAng Daily",
+      "news": [
+        {
+          "url": "https://www.koreajoongangdaily.com/sports/live-kt-wiz-vs-samsung-lions-in-korean-series-game-3/12960263",
+          "title": "LIVE: KT Wiz vs. Samsung Lions in Korean Series Game 3",
+          "publisher": "Korea JoongAng Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHVhdUf4VZUh1IMyvOy9qQwCLgd-3nlaOQKKlMZmb0j4nfLWyE2QtO0IFr-dk"
+        },
+        {
+          "url": "https://www.chosun.com/english/sports-en/2026/11/04/YWR7HGDQ5RE2TFDT3VIV2RIVW4/",
+          "title": "Kim Jeong-woon's Seventh-Inning Struggle Leads to KT's 8-7 Victory",
+          "publisher": "조선일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQp9wby5p8mwYQNJun_swEVkpEvsGQSFG-qBIJ3vI7xNcpTGYj1kZQBKXThiE"
+        },
+        {
+          "url": "https://www.starnewskorea.com/en/sports/2026/11/04/2026110323302742907",
+          "title": "Leading 8-0, could you have imagined the closer taking the mound? Four pitchers couldn't even hold out for two innings... Manager Lee Kang-cheol's concerns become reality",
+          "publisher": "스타뉴스",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRU76N0sAGdLtrVYML0uAMumaXlXa9ML4ndF92BkdAofPlYXz040IVT_JvACiw"
+        }
+      ]
+    },
+    {
+      "query": "tiempo de hoy",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T10:20:00Z",
+      "related_news_urls": [
+        "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-syracuse-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-5-de-noviembre-nid05112026/",
+        "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-syracuse-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/",
+        "https://secretnyc.co/es/tiempo-en-nueva-york-prevision-de-tormenta-con-lluvias-intensas/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA",
+      "image_credit": "La Nación",
+      "news": [
+        {
+          "url": "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-syracuse-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-5-de-noviembre-nid05112026/",
+          "title": "Clima en Syracuse, New York hoy: cuál es el pronóstico del tiempo para hoy 5 de noviembre",
+          "publisher": "La Nación",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA"
+        },
+        {
+          "url": "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-syracuse-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-4-de-noviembre-nid04112026/",
+          "title": "Clima en Syracuse, New York hoy: cuál es el pronóstico del tiempo para hoy 4 de noviembre",
+          "publisher": "La Nación",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA"
+        },
+        {
+          "url": "https://secretnyc.co/es/tiempo-en-nueva-york-prevision-de-tormenta-con-lluvias-intensas/",
+          "title": "Previsión meteorológica para Nueva York: una fuerte tormenta pone fin a la racha de sequía",
+          "publisher": "Secret NYC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQc6RilABflx3cAPydbvwXQF2Mt_TsMzQNQGIuLdJh55mnviprODCDF74lC24A"
+        }
+      ]
+    },
+    {
+      "query": "emma stone",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T10:20:00Z",
+      "related_news_urls": [
+        "https://comicbook.com/movies/list/5-outstanding-emma-stone-performances-that-didnt-win-her-an-oscar-including-her-only-horror-role/",
+        "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-6-2026-includes-celebrities-sally-field-emma-stone.html",
+        "https://www.yahoo.com/entertainment/articles/famous-birthdays-nov-6-sally-080007857.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKUNiFciCWcsbbjUysvlP0o6YbL_5xhSQPzVISuDFkysCABTEySKRUGkJ1_Mk",
+      "image_credit": "ComicBook.com",
+      "news": [
+        {
+          "url": "https://comicbook.com/movies/list/5-outstanding-emma-stone-performances-that-didnt-win-her-an-oscar-including-her-only-horror-role/",
+          "title": "5 Outstanding Emma Stone Performances That Didn't Win Her an Oscar, Including Her Only Horror Role",
+          "publisher": "ComicBook.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKUNiFciCWcsbbjUysvlP0o6YbL_5xhSQPzVISuDFkysCABTEySKRUGkJ1_Mk"
+        },
+        {
+          "url": "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-6-2026-includes-celebrities-sally-field-emma-stone.html",
+          "title": "Today’s famous birthdays list for November 6, 2026 includes celebrities Sally Field, Emma Stone",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-Zm9gij5Nha0i4v4Ef5zhrQjyCG_rPN-uvcs3HLnz2VeigOIkhNalUzB4dgg"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/famous-birthdays-nov-6-sally-080007857.html",
+          "title": "Famous birthdays for Nov. 6: Sally Field, Rebecca Romijn",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK6ILCkbaEIw2oOsgXt2v3duy92meYgLPbxYfXSKN3xsXpLTDuIr_OHhAWjkk"
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/tv/story/2026-11-05/secret-lives-mormon-wives-jen-affleck-divorce-pregnant-zac",
-          "title": "Zac Affleck says he’ll ‘always be Jen’s supporter’ after ‘Mormon Wives’ star files for divorce",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDefbNN2VS1Rp1OFM2Nvn_adywfvLFuKMB0giBQ2ZuOmHTUa3XPjdMxsZouuU"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437878/mormon-wives-zac-affleck-shares-why-jen-affleck-divorced-broke-up",
-          "title": "Mormon Wives ' Zac Affleck Admits to \"Mistakes\" in Jen Affleck Marriage",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJKuncmgvmKfxQMREq2GAuEJY52Dd9Z7Ot7lzVCE4nxw07mk5_4ZArmOYzrQQ"
-        }
-      ]
-    },
-    {
-      "query": "bath and body works advent calendar",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T09:00:00Z",
-      "related_news_urls": [
-        "https://www.bbwinc.com/media/stories/bath-body-works-introduces-the-2026-feel-the-wonder-advent-calendar",
-        "https://totallythebomb.com/bath-body-works-feel-the-wonder-advent-calendar-2026/",
-        "https://www.usatoday.com/story/money/holidays/2026/11/03/bath-body-works-advent-calendar-early-orders/92479191007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCu0bJNP6AxjtTf9Hr9HuWbmqY79jw-uMGzamO_n-qSGwdrWkmNBqvPB9rEkE",
-      "image_credit": "https://www.bbwinc.com/",
-      "news": [
-        {
-          "url": "https://www.bbwinc.com/media/stories/bath-body-works-introduces-the-2026-feel-the-wonder-advent-calendar",
-          "title": "Bath & Body Works Introduces the 2026 Feel the Wonder Advent Calendar",
-          "publisher": "https://www.bbwinc.com/",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCu0bJNP6AxjtTf9Hr9HuWbmqY79jw-uMGzamO_n-qSGwdrWkmNBqvPB9rEkE"
-        },
-        {
-          "url": "https://totallythebomb.com/bath-body-works-feel-the-wonder-advent-calendar-2026/",
-          "title": "Bath & Body Works’ $50 Advent Calendar Has a Tiny Cookie-Sheet Holder and Seven Full-Size Finds",
-          "publisher": "Totally The Bomb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvPuLu5o61AYTOOWs-q2__PT15SV2XBb19OuonR3rJVfahPPPKgRizzxCUHOw"
-        },
-        {
-          "url": "https://www.usatoday.com/story/money/holidays/2026/11/03/bath-body-works-advent-calendar-early-orders/92479191007/",
-          "title": "Get early access to Bath & Body Works' Advent calendar",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnTQSZwOw2xwDlv853eLHWFGm8aDmgh5BnfCTNj3ybjpKaXW6kU991fcpFpZw"
-        }
-      ]
-    },
-    {
-      "query": "hltv",
-      "approx_searches": "100+",
-      "published_at": "2026-11-06T09:00:00Z",
-      "related_news_urls": [
-        "https://www.dust2.us/news/79679/iowa-stormboars-h0nest-breaks-into-hltv-top-50-prospects-at-33",
-        "https://www.dust2.us/news/79678/na-counter-strike-legend-rambo-nominated-for-hltv-hall-of-fame",
-        "https://pley.gg/cs2/dupreeh-kennys-and-neo-make-hltvs-2026-hall-of-fame-ballot/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_sjFA_ccZmOrIWWPoWNL0nafJgLZhmPRgjqWi8HcrjnI-y7SNVA6AV4PvzPw",
-      "image_credit": "Dust2.us",
-      "news": [
-        {
-          "url": "https://www.dust2.us/news/79679/iowa-stormboars-h0nest-breaks-into-hltv-top-50-prospects-at-33",
-          "title": "Iowa Stormboar's H0NeST breaks into HLTV Top 50 Prospects at #33",
-          "publisher": "Dust2.us",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_sjFA_ccZmOrIWWPoWNL0nafJgLZhmPRgjqWi8HcrjnI-y7SNVA6AV4PvzPw"
-        },
-        {
-          "url": "https://www.dust2.us/news/79678/na-counter-strike-legend-rambo-nominated-for-hltv-hall-of-fame",
-          "title": "NA Counter-Strike legend Rambo nominated for HLTV Hall of Fame",
-          "publisher": "Dust2.us",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSkhCw_aiuFOSZGQ6nJszwS-h1MW4VwhwVC4DSWXsrfWXwYwqYl8EP39fZ65w"
-        },
-        {
-          "url": "https://pley.gg/cs2/dupreeh-kennys-and-neo-make-hltvs-2026-hall-of-fame-ballot/",
-          "title": "dupreeh, kennyS and NEO on the 2026 HLTV Hall of Fame ballot",
-          "publisher": "Pley.gg",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUEnXbkmg03hOygL9uZir7s571oMXr-A9uibeJ8HnbGNl8ZkUYtJP7E04AObU"
-        }
-      ]
-    },
-    {
-      "query": "el niño",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T08:50:00Z",
-      "related_news_urls": [
-        "https://www.telemundo20.com/noticias/local/calor-san-diego-atencion-posible-historico-fenomeno-nino/2552046/",
-        "https://cadenanoticias.com/regional/2026/11/alertan-por-riesgo-de-inundaciones-costeras-en-el-condado-de-san-diego",
-        "https://www.telemundoareadelabahia.com/noticias/local/condado-san-mateo-el-nino/2570717/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTRcVhR4HLCZQ2HWQD6ABvAXgRBURaD0_VIpZ5rSkFPqfAcfkk6r_E-e83MVU",
-      "image_credit": "Telemundo San Diego",
-      "news": [
-        {
-          "url": "https://www.telemundo20.com/noticias/local/calor-san-diego-atencion-posible-historico-fenomeno-nino/2552046/",
-          "title": "Calor récord en San Diego aumenta la atención ante un posible histórico fenómeno de El Niño",
-          "publisher": "Telemundo San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTRcVhR4HLCZQ2HWQD6ABvAXgRBURaD0_VIpZ5rSkFPqfAcfkk6r_E-e83MVU"
-        },
-        {
-          "url": "https://cadenanoticias.com/regional/2026/11/alertan-por-riesgo-de-inundaciones-costeras-en-el-condado-de-san-diego",
-          "title": "Alertan por riesgo de inundaciones costeras en el condado de San Diego",
-          "publisher": "Cadena Noticias",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMhc_SFxZrcUGHYApV2NFRwiEj9phnXq-_ngI1VI4gFVaxYN_38kuR6Sk9mVA"
-        },
-        {
-          "url": "https://www.telemundoareadelabahia.com/noticias/local/condado-san-mateo-el-nino/2570717/",
-          "title": "El condado de San Mateo se prepara para El Niño",
-          "publisher": "Telemundo Area de la Bahia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3ZFN3zppYA8V37jV1TxQFpbBdyeqlP4qWqlsJ3SbDuIibKk89NbD4PvNz8dE"
-        }
-      ]
-    },
-    {
-      "query": "baltimore ravens lamar jackson negotiations",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T08:40:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/articles/25529811-new-lamar-jackson-rumors-reveal-ravens-are-willing-give-qb-largest-contact-nfl-history",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-05/ravens-willing-to-make-jackson-highest-paid-player",
-        "https://www.miamiherald.com/sports/spt-columns-blogs/omar-kelly/article317919936.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhJurqeiD0B6P223znyeepgWrcRCklvHrSZh_AEKRNwrknVCLE6R0ZyDBo1P0",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25529811-new-lamar-jackson-rumors-reveal-ravens-are-willing-give-qb-largest-contact-nfl-history",
-          "title": "New Lamar Jackson Rumors Reveal Ravens Are Willing to Give QB Largest Contact in NFL History",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhJurqeiD0B6P223znyeepgWrcRCklvHrSZh_AEKRNwrknVCLE6R0ZyDBo1P0"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-05/ravens-willing-to-make-jackson-highest-paid-player",
-          "title": "Ravens willing to make Jackson highest-paid player",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyoUTkL_rPGNqSoNKicWKrNUiUd4AP_UoW_rn5EHxuznUM82shtWOrnnjq1Sk"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/spt-columns-blogs/omar-kelly/article317919936.html",
-          "title": "Kelly: Lamar Jackson isn’t the solution to all of Dolphins’ problems | Opinion",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ4BrAaBOxhxCvU7xT2-XSvBaeGlTyuSYC_W8fYqH_YvbUVnn29ZcjjyYURX8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBvZizXBKXg-hS17PcniFnYjkn7mkOhKQcdwll_30oIP6NNmZB0SptvptDjkI"
         }
       ]
     }
