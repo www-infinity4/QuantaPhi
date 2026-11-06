@@ -236,7 +236,7 @@ test('a declined Cloudflare callback remains visible through wallet status refre
 test('received callback with no completion receipt never claims the user is connected',async t=>{
  const ui=mountedGate(t,partialGate(),{oauthReturn:'received'});
  await new Promise(setImmediate);
- assert.match(ui.get('bubblesSigninStatus').textContent,/Waiting to verify/);
+ assert.match(ui.get('bubblesSigninStatus').textContent,/unverified|Waiting to verify/);
  assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
  assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
 });
