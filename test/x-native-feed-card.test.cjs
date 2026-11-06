@@ -2,7 +2,11 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
 const read=path=>fs.readFileSync(path,'utf8');
 test('native X card mounts in QuantaPhi and preserves separate Spaces card',()=>{
- const home=read('index.html'),card=read('x-twitter-card.mjs'),css=read('x-twitter-card.css');
+ const home=read('index.html'),card=read('x-twitter-card.mjs'),css=read('x-twitter-card.css'),page=read('twitter.html');
+ assert.ok(page.includes('id="xTwitterCard"'));
+ assert.ok(page.includes('cloud-wallet-client.js'));
+ assert.ok(page.includes('x-twitter-card.mjs'));
+ assert.ok(!page.includes('window.location.replace'))
  assert.ok(home.includes('id="xTwitterCard"'));
  assert.ok(home.includes('/x-twitter-card.mjs'));
  assert.ok(home.includes('/x-twitter-card.css'));
