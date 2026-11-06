@@ -358,7 +358,7 @@ export function mountConnections(container,{token}) {
           !existing.grantedActions?.includes('owner.full');
         if(existing){
           card.dataset.status='connected';
-          const connected=element('p',providerName+' · Signed in'+(existing.label?' as '+existing.label:''),'ba-provider-connected');
+          const connected=element('p',providerName+' signed in ✓'+(existing.label?' as '+existing.label:''),'ba-provider-connected');
           connected.setAttribute('role','status');
           card.append(connected);
           // Verified sign-in is complete. Optional project grants belong in
