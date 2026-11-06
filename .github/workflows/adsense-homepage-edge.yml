@@ -1,0 +1,32 @@
+name: AdSense homepage crawler resilience
+
+on:
+  pull_request:
+    paths:
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/adsense-homepage-fallback.test.cjs'
+      - 'test/site-source-release.test.cjs'
+      - '.github/workflows/adsense-homepage-edge.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/adsense-homepage-fallback.test.cjs'
+      - 'test/site-source-release.test.cjs'
+      - '.github/workflows/adsense-homepage-edge.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  homepage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify last-good cache, crawler failure fallback, and existing site routes
+        run: node --test test/adsense-homepage-fallback.test.cjs test/site-source-release.test.cjs test/suite-routing.test.cjs
