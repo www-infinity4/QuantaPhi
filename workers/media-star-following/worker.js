@@ -224,6 +224,7 @@ async function playbackReport(env,owner,body){
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
  const connect=xoConnectPage(path);if(connect)return connect;
+ if(path.startsWith('/connect-x'))return out({error:'not_found'},404);
  const legal=xoLegal(path);if(legal)return legal;
  if(path==='/api/x/oauth/callback'){if(request.method!=='GET')return out({error:'method_not_allowed'},405);return xoFinish(request,env)}
  if(path==='/health')return out({ok:true,service:'media-star-following-spaces',oauthConfigured:xoReady(env),playsAudioLocally:false});
