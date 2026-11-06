@@ -2,7 +2,7 @@
 // Convert failures to a small, non-secret result inside the Durable Object,
 // using the same boundary for direct and Android handoff completion.
 const EXPECTED = /^(?:callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|provider_not_configured|provider_response_invalid|provider_identity_invalid|provider_token_invalid|expiring_token_required|provider_response_too_large|vault_key_unavailable|vault_key_invalid|cloudflare_(?:exchange|refresh)_(?:[45]\d{2}|rejected)(?:_(?:invalid_client|invalid_grant|invalid_scope|invalid_request|unauthorized_client|unsupported_grant_type|server_error|temporarily_unavailable))?|cloudflare_identity_[45]\d{2})$/;
-const GOOGLE_FAILURE = /^google_(?:exchange|identity)_(?:[45]\d{2}|rejected)$/;
+const GOOGLE_FAILURE = /^google_(?:exchange|identity|refresh)_(?:[345]\\d{2}|rejected)$/;
 const DIAGNOSTIC = /^connection_complete_(?:state|exchange|seal|store|handoff_read|handoff_decrypt|handoff_store|receipt_seal|receipt_store|unknown)_(?:timeout|type|internal)_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown)$/;
 
 export const safeConnectionFailure = value => typeof value === 'string' &&

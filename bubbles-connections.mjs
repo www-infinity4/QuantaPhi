@@ -53,6 +53,8 @@ export function providerSignInErrorMessage(code,provider='cloudflare'){
     return 'This authorization was already used or expired. Start a new '+providerName+' authorization.';
   if(value==='connection_timeout')
     return providerName+' sign-in timed out. Try again.';
+  if(/^google_(?:exchange|identity|refresh)_3\\d{2}$/.test(value))
+    return 'Google returned an unexpected redirect during secure authorization. Bubbles blocked it to protect your credentials. Diagnostic: '+value+'.';
   if(/^google_exchange_(?:[45]\d{2}|rejected)$/.test(value))
     return 'Google rejected the token exchange. Diagnostic: '+value+'.';
   if(/^google_identity_(?:[45]\d{2}|rejected)$/.test(value))
