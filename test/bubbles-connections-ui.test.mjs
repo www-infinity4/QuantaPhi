@@ -578,3 +578,27 @@ test('Cloudflare OAuth rejects User Details responses with no verified user ID',
    Response.json({success:true,result:{email:'owner@example.test'}}));
  await assert.rejects(adapter.exchange({code:'code',verifier:'pkce',actions:['account.read']}),/provider_identity_invalid/);
 });
+
+test('Cloudflare OAuth code exchange never uses the unsupported Workers redirect:error mode',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ const calls=[];
+ const adapter=cloudflareAdapter({clientId:'test',clientSecret:'private',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+  calls.push(url);
+  assert.equal(options.redirect,'manual');
+  if(url.endsWith('/oauth2/token'))return Response.json({access_token:'access',refresh_token:'refresh',token_type:'Bearer',expires_in:3600,scope:'user-details.read memberships.read'});
+  return Response.json({success:true,result:{id:'e'.repeat(32),email:'test@example.test'}});
+ });
+ const connected=await adapter.exchange({code:'auth-code',verifier:'verifier',actions:['account.read']});
+ assert.equal(connected.subject,'e'.repeat(32));
+ assert.deepEqual(connected.grantedActions,['account.read']);
+ assert.equal(calls.length,2);
+});
+
+test('Google OAuth redirect status stays sanitized across Worker completion boundary',async()=>{
+ const {connectionFailureCode,safeConnectionFailure}=await import('../workers/bubbles-connections/completion.mjs');
+ const code=connectionFailureCode(Object.assign(Error('google_exchange_302'),{connectionStage:'exchange'}));
+ assert.equal(code,'google_exchange_302');
+ assert.equal(safeConnectionFailure(code),true);
+ assert.match(providerSignInErrorMessage(code,'google'),/unexpected redirect/);
+ assert.ok(!providerSignInErrorMessage(code,'google').includes('private-code'));
+});
