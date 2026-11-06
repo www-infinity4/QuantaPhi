@@ -65,7 +65,7 @@ test('the same live status line loads on every Bubbles website entrypoint withou
  assert.match(module,/conversation\.append\(wrapper\)/,
   'Each iteration sequence must be part of the same chat transcript');
  assert.match(module,/bubbles:chat-user-visible/,
-  'The first iteration should appear after the user's message');
+  "The first iteration should appear after the user's message");
  assert.doesNotMatch(module,/#bubblesAICard \.ba-status/,
   'The original selector never finds the detached messenger panel');
  assert.doesNotMatch(module,/fetch\(|localStorage|walletWrites|innerHTML/);
