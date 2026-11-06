@@ -93,22 +93,28 @@
     if (window.YT && typeof window.YT.Player === 'function') return Promise.resolve(window.YT);
     if (window.__smbYouTubeAPIPromise) return window.__smbYouTubeAPIPromise;
     const promise = new Promise((resolve, reject) => {
+      const timeout = window.setTimeout(() => reject(new Error('YouTube loading timed out')), 12000);
+      const success = value => { window.clearTimeout?.(timeout); resolve(value); };
+      const failure = error => { window.clearTimeout?.(timeout); reject(error); };
       const earlier = window.onYouTubeIframeAPIReady;
       window.onYouTubeIframeAPIReady = function () {
         if (typeof earlier === 'function') {
           try { earlier(); } catch (error) { console.warn('Previous YouTube callback failed', error); }
         }
-        if (window.YT && typeof window.YT.Player === 'function') resolve(window.YT);
-        else reject(new Error('YouTube player did not initialize'));
+        if (window.YT && typeof window.YT.Player === 'function') success(window.YT);
+        else failure(new Error('YouTube player did not initialize'));
       };
       const script = document.createElement('script');
       script.src = 'https://www.youtube.com/iframe_api';
       script.async = true;
-      script.onerror = () => reject(new Error('YouTube could not load'));
+      script.onerror = () => failure(new Error('YouTube could not load'));
       document.head.appendChild(script);
     });
-    window.__smbYouTubeAPIPromise = promise;
-    return promise;
+    window.__smbYouTubeAPIPromise = promise.catch(error => {
+      window.__smbYouTubeAPIPromise = null;
+      throw error;
+    });
+    return window.__smbYouTubeAPIPromise;
   }
   function autoplayIfActive(manual = false) {
     if (manual) manualRequested = true;
@@ -154,6 +160,7 @@
               if (!isAuthorized()) { player.pauseVideo(); return; }
               setPlaying(true);
               status.textContent = 'Playing · Book of Dreams · Steve Miller Band';
+              document.dispatchEvent(new CustomEvent('quanta:youtube-card-start', {detail:{id:root.id}}));
             } else if (event.data === yt.PlayerState.PAUSED) {
               setPlaying(false);
               status.textContent = 'Paused · Book of Dreams';
@@ -184,6 +191,12 @@
       status.textContent = 'Starting album · waiting for YouTube';
       player.playVideo();
     }
+  });
+  document.addEventListener('quanta:youtube-card-start', event => {
+    if (event.detail?.id === root.id) return;
+    manualRequested = false;
+    if (player && ready) player.pauseVideo();
+    setPlaying(false);
   });
   root.addEventListener('oracle:activate', () => autoplayIfActive());
   document.addEventListener('oracle:card-deactivated', event => {
