@@ -669,14 +669,22 @@ export function mountConnections(container,{token}) {
       const message=error.message;
       await load();status.textContent=message;
     }else{
-      // The server receipt alone is not a client-side sign-in badge: reread
-      // this wallet's verified connections before sending Android back to chat.
-      const verified=await load();
-      if((recoverGoogle||recoverCloudflare)&&account?.id&&
-        verified?.get(returnProvider)?.id===account.id&&
-        typeof window.location?.replace==='function'){
+      // Verify directly against the wallet-authenticated server before any
+      // automatic return to chat. UI loads may overlap an older stale fetch.
+      let verifiedReturn=false;
+      if((recoverGoogle||recoverCloudflare)&&account?.id){
+        try{
+          const latest=await client.call('/accounts');
+          verifiedReturn=Array.isArray(latest.accounts)&&latest.accounts.some(record=>
+            record.id===account.id&&record.provider===returnProvider&&
+            record.status==='connected'&&Number.isFinite(record.expiresAt)&&
+            record.expiresAt>Date.now()+30000);
+        }catch{}
+      }
+      await load();
+      if(verifiedReturn&&typeof window.location?.replace==='function')
         window.location.replace('/bubbles.html');
-      }else status.textContent='Connected '+account.label+'.';
+      else status.textContent='Connected '+account.label+'.';
     }
   },{recoverGoogle,recoverCloudflare})){cancel.hidden=false;status.textContent='Finishing account authorization securely…';}
   return {client,refresh:load};
