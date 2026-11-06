@@ -3,16 +3,156 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T19:00:41.282761Z",
+  "checked_at": "2026-11-06T19:31:06.037628Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "alcaraz",
+      "query": "sevilla - alavés",
       "approx_searches": "1000+",
-      "published_at": "2026-11-06T18:40:00Z",
+      "published_at": "2026-11-06T19:10:00Z",
+      "related_news_urls": [
+        "https://www.eldesmarque.com/futbol/liga-1a-division/20261106/alineaciones-confirmadas-sevilla-alaves-jornada-12_18_020645326.html",
+        "https://onefootball.com/es/noticias/el-alaves-prepara-su-visita-al-sanchez-pizjuan-con-una-convocatoria-de-24-jugadores-43736877",
+        "https://www.elcorreo.com/alaves/alaves-obligado-cortar-peligrosa-mala-racha-pizjuan-20261106162554-nt.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnRMGWEU2NZCPcNi99z0N2t0gqIuGrl9py4s9L40iURaahldomsLGh5dOuY0U",
+      "image_credit": "El Desmarque",
+      "news": [
+        {
+          "url": "https://www.eldesmarque.com/futbol/liga-1a-division/20261106/alineaciones-confirmadas-sevilla-alaves-jornada-12_18_020645326.html",
+          "title": "Alineaciones confirmadas del Sevilla y del Alavés en la jornada 12 de LALIGA EA Sports",
+          "publisher": "El Desmarque",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnRMGWEU2NZCPcNi99z0N2t0gqIuGrl9py4s9L40iURaahldomsLGh5dOuY0U"
+        },
+        {
+          "url": "https://onefootball.com/es/noticias/el-alaves-prepara-su-visita-al-sanchez-pizjuan-con-una-convocatoria-de-24-jugadores-43736877",
+          "title": "El Alavés prepara su visita al Sánchez-Pizjuán con una convocatoria de 24 jugadores",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc7V_YVUbotBYfha_68K41aw1upwpPCTMAjr_9L7OXmaSHRurcmmcVkl41a1E"
+        },
+        {
+          "url": "https://www.elcorreo.com/alaves/alaves-obligado-cortar-peligrosa-mala-racha-pizjuan-20261106162554-nt.html",
+          "title": "El Alavés, obligado a cortar su peligrosa mala racha en el Pizjuán",
+          "publisher": "El Correo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFYIFRPzN-x63ljwUTGAvQKAyPF1sEwCSLbUMOGCGs6cGyAdhKtzRo-Zpk96g"
+        }
+      ]
+    },
+    {
+      "query": "sevilla vs alavés",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T19:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/confirmed-sevilla-alav-line-ups-190100249.html",
+        "https://www.comuniate.com/en/noticias/38887/predicted-alaves-line-up-according-to-the-sports-press",
+        "https://www.toffeeweb.com/int/sevilla-vs-deportivo-alaves-predictions-picks-odds-06-11-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRcu7LzDo6udk-uqQYXO59-RjvTfE147N6Kmn7fftXaYQ0BkYOKIaeA1AD72I",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/confirmed-sevilla-alav-line-ups-190100249.html",
+          "title": "Confirmed Sevilla and Alavés line-ups for LALIGA matchweek 12",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRcu7LzDo6udk-uqQYXO59-RjvTfE147N6Kmn7fftXaYQ0BkYOKIaeA1AD72I"
+        },
+        {
+          "url": "https://www.comuniate.com/en/noticias/38887/predicted-alaves-line-up-according-to-the-sports-press",
+          "title": "Predicted Alaves line-up according to the sports press",
+          "publisher": "Comuniate",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bSXMoCi27dhtabcqGepcZunY3xTKpLipjbJsCaxhVXwZ-MxJ1t5xMwVXiec"
+        },
+        {
+          "url": "https://www.toffeeweb.com/int/sevilla-vs-deportivo-alaves-predictions-picks-odds-06-11-2026/",
+          "title": "Sevilla vs Deportivo Alavés Predictions, Picks & Odds – 06/11/2026",
+          "publisher": "ToffeeWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiSSUqFaulMyt369l-m2qsn_lICnuVTffdFXbWELU9DKOH97iWRmRrdtTSk3A"
+        }
+      ]
+    },
+    {
+      "query": "taylor fritz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T19:10:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/fritz-paris-2026-qf-turin-scenario",
+        "https://www.syracuse.com/tv/2026/11/where-to-watch-carlos-alcaraz-vs-taylor-fritz-tennis-for-free-today.html",
+        "https://www.tennis365.com/tennis-news/atp-finals-update-taylor-fritz-rafael-jodar"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSkCfgW2IEZPRo10r6rBz7Wk30hiss8ltwayDD_lS8KmviDMakrjBOaAu7RkM",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/fritz-paris-2026-qf-turin-scenario",
+          "title": "Fritz faces Alcaraz with Turin qualification on the line",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSkCfgW2IEZPRo10r6rBz7Wk30hiss8ltwayDD_lS8KmviDMakrjBOaAu7RkM"
+        },
+        {
+          "url": "https://www.syracuse.com/tv/2026/11/where-to-watch-carlos-alcaraz-vs-taylor-fritz-tennis-for-free-today.html",
+          "title": "Where to watch Carlos Alcaraz vs Taylor Fritz tennis for free today",
+          "publisher": "Syracuse.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpXgQOHgYiYblTuByCKkjjmcUfERBhpExFWpuhPe8VYQXqFwD8UGGN9c6RNFM"
+        },
+        {
+          "url": "https://www.tennis365.com/tennis-news/atp-finals-update-taylor-fritz-rafael-jodar",
+          "title": "Huge twist in race for last ATP Finals place as Rafael Jodar faces a last gasp threat",
+          "publisher": "Tennis365",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNPdMu8M7T5JnyNcXPKjKzQhfxyhy3jzx3eyK3Ya-ROmFWZMpkPpEBtZxFjAQ"
+        }
+      ]
+    },
+    {
+      "query": "everton vs coventry",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T19:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cr15jy8xy50jt",
+        "https://www.skysports.com/football/live-blog/13592843/everton-vs-coventry-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+        "https://www.evertonfc.com/news/2026/november/06/everton-team-revealed-to-take-on-coventry/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVGM4wyrcjfg8IzfpVO8VuYMFfYldtH9srCK98B2qjD81C6TTZVshp4aR8cqA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cr15jy8xy50jt",
+          "title": "Premier League LIVE: Everton vs Coventry City - build-up, team news, score updates, text commentary & match stats",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVGM4wyrcjfg8IzfpVO8VuYMFfYldtH9srCK98B2qjD81C6TTZVshp4aR8cqA"
+        },
+        {
+          "url": "https://www.skysports.com/football/live-blog/13592843/everton-vs-coventry-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+          "title": "Everton vs Coventry LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST-2okFw5tl2vUUUhPROehbJyZG1CMdb_lgRNaZ9RvYWpm6mZDLhZ6VXtDZB0"
+        },
+        {
+          "url": "https://www.evertonfc.com/news/2026/november/06/everton-team-revealed-to-take-on-coventry/",
+          "title": "Everton Team Revealed To Take On Coventry",
+          "publisher": "Everton FC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKmC-90n_m4dIjBCMUQ-lOptqI-PI8yUAQjCMmKCwZpGe8ZAy0RF2gVKE3WH8"
+        }
+      ]
+    },
+    {
+      "query": "carlos alcaraz",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T19:00:00Z",
       "related_news_urls": [
         "https://www.chicagotribune.com/2026/11/05/alcaraz-avanza-a-cuartos-del-masters-de-pars-tras-retiro-por-lesin-de-berrettini/",
-        "https://elpais.com/deportes/2026-11-06/carlos-alcaraz-taylor-fritz-el-partido-de-cuartos-de-final-del-masters-atp-de-paris-en-vivo.html",
+        "https://www.marca.com/tenis/masters-1000-paris/taylor-harry-fritz-carlos-alcaraz/2026/11/06/04_0413_20261106_60-directo.html",
         "https://espndeportes.espn.com/tenis/nota/_/id/17478683/berrettini-sufrio-una-lesion-en-el-codo-alcaraz-avanzo-a-los-cuartos-de-final-del-masters-1000-de-paris-sin-jugar"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa8jI7tNQ8rpurdPzd8CJPoNysqd3R0NwoNLdxStRrtzRUNU80Lshmq8YPuE8",
@@ -26,11 +166,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa8jI7tNQ8rpurdPzd8CJPoNysqd3R0NwoNLdxStRrtzRUNU80Lshmq8YPuE8"
         },
         {
-          "url": "https://elpais.com/deportes/2026-11-06/carlos-alcaraz-taylor-fritz-el-partido-de-cuartos-de-final-del-masters-atp-de-paris-en-vivo.html",
-          "title": "Carlos Alcaraz-Taylor Fritz, el partido de cuartos de final del Masters ATP de París en vivo",
-          "publisher": "EL PAÍS",
+          "url": "https://www.marca.com/tenis/masters-1000-paris/taylor-harry-fritz-carlos-alcaraz/2026/11/06/04_0413_20261106_60-directo.html",
+          "title": "Taylor Fritz - Carlos Alcaraz en directo | Última hora de los cuartos de final del Masters 1000 de París, en vivo",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbCdXegOH3kRKGj4-3Of7XpC0tdo8HszLBj_h2VO8wC4vS4TsscDVICUVl-_k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRc9JikhEW08FBIaZIHuV8cEbQ9elflb3s0ZDlbKNaBN4OwB01AEcrWbPOdx9E"
         },
         {
           "url": "https://espndeportes.espn.com/tenis/nota/_/id/17478683/berrettini-sufrio-una-lesion-en-el-codo-alcaraz-avanzo-a-los-cuartos-de-final-del-masters-1000-de-paris-sin-jugar",
@@ -42,17 +182,129 @@
       ]
     },
     {
+      "query": "venezia vs udinese",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T19:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c617kyj8y7wet",
+        "https://www.besoccer.com/new/when-the-basement-club-look-to-drag-you-down-1439382",
+        "https://www.racingpost.com/sport/football-tips/football-bet-of-the-day-for-friday-november-6-aoo800S3KO2t/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c617kyj8y7wet",
+          "title": "Venezia vs Udinese: Italian Serie A stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.besoccer.com/new/when-the-basement-club-look-to-drag-you-down-1439382",
+          "title": "When the basement club look to drag you down",
+          "publisher": "BeSoccer Livescore",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF-5lEwG7qSiqF6sQ1d5oFwjLWutolo_40NzQOq59UrzOzfyG4a6hg_5JmqBE"
+        },
+        {
+          "url": "https://www.racingpost.com/sport/football-tips/football-bet-of-the-day-for-friday-november-6-aoo800S3KO2t/",
+          "title": "Football Bet of the Day: James Milton has a 5-4 selection from Serie A",
+          "publisher": "Racing Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbJUqaazHbueV0GLxwT_KOdeQKZLKt02s0DNFJSK9tlsYZoU7OGIdcHY1AFUo"
+        }
+      ]
+    },
+    {
+      "query": "stephen miller",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-06T18:50:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
+        "https://www.washingtonpost.com/politics/2026/11/06/trump-names-stephen-miller-new-white-house-chief-staff/",
+        "https://www.nytimes.com/live/2026/11/06/us/wiles-trump"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTelIUZVM0iFl9LEHqlxIAPa-XWSKNXIyCJy3KrczKddWBidZm9uLhxs8QFYDA",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
+          "title": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTelIUZVM0iFl9LEHqlxIAPa-XWSKNXIyCJy3KrczKddWBidZm9uLhxs8QFYDA"
+        },
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/11/06/trump-names-stephen-miller-new-white-house-chief-staff/",
+          "title": "Trump names Stephen Miller new White House chief of staff",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJHiCu5mAypuDHxAZhZlQzidPaLF4BhS4z4_oTXlwG18LxjUY32lcCYcG6_l4"
+        },
+        {
+          "url": "https://www.nytimes.com/live/2026/11/06/us/wiles-trump",
+          "title": "Live Updates: Stephen Miller to Replace Susie Wiles as Trump’s Chief of Staff",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUhxGtjK4fyS5Ht1GzXMY1TEh4dRKGZ0YepW4gUYOXDSAUxiu1y3DQbs6wvMs"
+        }
+      ]
+    },
+    {
+      "query": "sny",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T18:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7759719/2026/11/06/sny-layoffs-show-cancellations-website/",
+        "https://nypost.com/2026/11/06/sports/sny-cancels-top-shows-lays-off-significant-in-dark-day-for-mets-network/",
+        "https://metsmerizedonline.com/report-sny-cancels-two-programs-amidst-major-layoffs/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn_AwNcME--RmcCNdfqCzQ1aNHurfVzxHmFGiVhMJF9mVG7Mx1TAzRLpf_Qds",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7759719/2026/11/06/sny-layoffs-show-cancellations-website/",
+          "title": "SNY hit with major layoffs, show cancellations; website shuttered: Sources",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn_AwNcME--RmcCNdfqCzQ1aNHurfVzxHmFGiVhMJF9mVG7Mx1TAzRLpf_Qds"
+        },
+        {
+          "url": "https://nypost.com/2026/11/06/sports/sny-cancels-top-shows-lays-off-significant-in-dark-day-for-mets-network/",
+          "title": "SNY cancels top shows, lays off significant staff in dark day for Mets network",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaXH2roG4LjVoXyIyURM6pTlKRw2ZcaX-MEAmcqBPKsJAO38EgNx2fwXgSoqI"
+        },
+        {
+          "url": "https://metsmerizedonline.com/report-sny-cancels-two-programs-amidst-major-layoffs/",
+          "title": "Report: SNY Cancels Two Programs Amidst Major Layoffs",
+          "publisher": "Metsmerized",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzlqhG5NN3RUwIU6YzHxBo__kYnVzb-SXML4DOqkELSVPva5oui8uoBg5kCck"
+        }
+      ]
+    },
+    {
       "query": "sebastian lelio",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-06T18:40:00Z",
       "related_news_urls": [
+        "https://deadline.com/2026/11/sebastian-lelio-dead-fantastic-woman-director-1237215711/",
         "https://variety.com/2026/film/news/sebastian-lelio-dead-fantastic-woman-1236941486/",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/sebasti-n-lelio-chilean-director-183834935.html",
-        "https://www.justjared.com/2026/11/06/sebastian-lelio-dies-at-52-chilean-directors-death-announced-by-partner-amalia-kassai/"
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/chilean-oscar-winning-director-sebastian-185758430.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAJFnIRhSvnYux3K-HY4-3xvv_bzdDjUvpzxZh6ORDobOr1n83gRa3Lje0AQ",
-      "image_credit": "Variety",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9iq9LYjsFFstPIf8Fw25M84wgfcg5szng0e97cUGi9DlA0is3H6umgjQuLv0",
+      "image_credit": "Deadline",
       "news": [
+        {
+          "url": "https://deadline.com/2026/11/sebastian-lelio-dead-fantastic-woman-director-1237215711/",
+          "title": "Sebastián Lelio Dead: Oscar-Winning 'A Fantastic Woman' Filmmaker Was 52",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9iq9LYjsFFstPIf8Fw25M84wgfcg5szng0e97cUGi9DlA0is3H6umgjQuLv0"
+        },
         {
           "url": "https://variety.com/2026/film/news/sebastian-lelio-dead-fantastic-woman-1236941486/",
           "title": "Sebastián Lelio, Chilean Director of Oscar-Winning ‘A Fantastic Woman,’ Dies at 52",
@@ -61,18 +313,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAJFnIRhSvnYux3K-HY4-3xvv_bzdDjUvpzxZh6ORDobOr1n83gRa3Lje0AQ"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/sebasti-n-lelio-chilean-director-183834935.html",
-          "title": "Sebastián Lelio, Chilean Director of Oscar-Winning ‘A Fantastic Woman,’ Dead at 52",
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/chilean-oscar-winning-director-sebastian-185758430.html",
+          "title": "Chilean Oscar-winning director Sebastian Lelio dies",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4oVhRSxUJZP6VfXhdRjkCOIrosy2ukjJzRaWuz7gNKjAurHaVpdyGOixCcBU"
-        },
-        {
-          "url": "https://www.justjared.com/2026/11/06/sebastian-lelio-dies-at-52-chilean-directors-death-announced-by-partner-amalia-kassai/",
-          "title": "Sebastian Lelio Dies at 52: Chilean Director’s Death Announced by Partner Amalia Kassai",
-          "publisher": "Just Jared",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5Oo47NC-QgDlfxiYWk8Z1vGa74BqjnYS-ZXd9fxi3N_1r-PFt6fgNZIf_QpI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8rV1jgl7Y_B8OJ8lM7WdQV5bowSdZCrbxRlABSpsN-Zxk2TPc0dWpVmZE1aQ"
         }
       ]
     },
@@ -82,8 +327,8 @@
       "published_at": "2026-11-06T18:30:00Z",
       "related_news_urls": [
         "https://abcnews.com/GMA/Culture/dolly-partons-estate-moves-dismiss-lawsuit-nephew/story?id=137897385",
-        "https://www.today.com/popculture/news/dolly-parton-estate-files-dismiss-lawsuit-nephew-rcna607863",
-        "https://people.com/dolly-parton-estate-drops-lawsuit-against-nephew-bryan-seaver-12239201"
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/dolly-parton-estate-drama-takes-170045199.html",
+        "https://www.theguardian.com/music/2026/nov/05/dolly-parton-nephew-harassment"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1x_Vt-iqJOTBNb0Z5sMES4yA98XfXdsO4D6OHJef-gHe_ugmsgwP0kzDxhqw",
       "image_credit": "ABC News - Breaking News, Latest News and Videos",
@@ -96,263 +341,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1x_Vt-iqJOTBNb0Z5sMES4yA98XfXdsO4D6OHJef-gHe_ugmsgwP0kzDxhqw"
         },
         {
-          "url": "https://www.today.com/popculture/news/dolly-parton-estate-files-dismiss-lawsuit-nephew-rcna607863",
-          "title": "Dolly Parton Estate Files To Dismiss Lawsuit Against Her Nephew",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIKbrFHKtztDbBuKR-Cf9mQmxzGv-jRqc-bq1vTvQBq3dHQ-ChW83zylTzRE"
-        },
-        {
-          "url": "https://people.com/dolly-parton-estate-drops-lawsuit-against-nephew-bryan-seaver-12239201",
-          "title": "Dolly Parton’s Estate Drops Lawsuit Against Her Nephew Bryan Seaver",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCzEfSUyWmuWS-OZ1IA6k5xIlgGQtJDtB50zBrUOFqLH32ow94ThWzbfqwmVo"
-        }
-      ]
-    },
-    {
-      "query": "sebastián lelio",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T18:30:00Z",
-      "related_news_urls": [
-        "https://www.emol.com/noticias/Espectaculos/2026/11/06/1216353/muerte-director-sebastian-lelio-perfil.html",
-        "https://elpais.com/cultura/cine/2026-11-06/muere-a-los-52-anos-el-director-chileno-sebastian-lelio-ganador-del-oscar-por-una-mujer-fantastica.html",
-        "https://www.cnnchile.com/pais/murio-el-director-de-cine-chileno-sebastian-lelio-ganador-del-oscar-por-una-mujer-fantastica/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Kic9OyCyt8xXFm65sRGtIsxIoREpoWZ7-p6qCdDj7iYFykzH83WpUd3BcoA",
-      "image_credit": "Emol",
-      "news": [
-        {
-          "url": "https://www.emol.com/noticias/Espectaculos/2026/11/06/1216353/muerte-director-sebastian-lelio-perfil.html",
-          "title": "Estrenó su primera película en 2005 y en 2018 ganó un Oscar: Sebastián Lelio, el reconocido director que murió a los 52 años",
-          "publisher": "Emol",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Kic9OyCyt8xXFm65sRGtIsxIoREpoWZ7-p6qCdDj7iYFykzH83WpUd3BcoA"
-        },
-        {
-          "url": "https://elpais.com/cultura/cine/2026-11-06/muere-a-los-52-anos-el-director-chileno-sebastian-lelio-ganador-del-oscar-por-una-mujer-fantastica.html",
-          "title": "Muere a los 52 años el director chileno Sebastián Lelio, ganador del Oscar por ‘Una mujer fantástica’",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvT8WiPclBCOvbwKhgfC66mPRCDEROZYwWhUdX27CC1uY1fZKoEoEwKOfvU_4"
-        },
-        {
-          "url": "https://www.cnnchile.com/pais/murio-el-director-de-cine-chileno-sebastian-lelio-ganador-del-oscar-por-una-mujer-fantastica/",
-          "title": "Murió el director de cine chileno Sebastián Lelio, ganador del Oscar por “Una mujer fantástica”",
-          "publisher": "CNN Chile",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvh0dzRRkKDpGYQiJGEkdOkUrJ1tBLOMwt00Za_T8GJgDRr9VgOWu8RBKKKlk"
-        }
-      ]
-    },
-    {
-      "query": "atp paris",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T18:30:00Z",
-      "related_news_urls": [
-        "https://sportsbook.fanduel.com/tennis/atp-paris-2026/ben-shelton-v-tommy-paul-36283627",
-        "https://www.click2houston.com/sports/2026/11/06/ben-shelton-tops-tommy-paul-to-reach-first-paris-masters-semifinal-tiafoe-claims-atp-finals-spot/",
-        "https://www.wvnews.com/sports/pro/france-paris-masters-tennis/image_862dbb0d-a922-51e6-9168-bf9a8a70918d.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA",
-      "image_credit": "FanDuel Sportsbook",
-      "news": [
-        {
-          "url": "https://sportsbook.fanduel.com/tennis/atp-paris-2026/ben-shelton-v-tommy-paul-36283627",
-          "title": "Ben Shelton v Tommy Paul Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
-        },
-        {
-          "url": "https://www.click2houston.com/sports/2026/11/06/ben-shelton-tops-tommy-paul-to-reach-first-paris-masters-semifinal-tiafoe-claims-atp-finals-spot/",
-          "title": "Ben Shelton tops Tommy Paul to reach first Paris Masters semifinal, Tiafoe claims ATP Finals spot",
-          "publisher": "Click2Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSq_3aK4Gt-3yD77ur6Kkf4i09uiLaHFpSaDwdy1trwYbr7xJKz26rt_hRhX0"
-        },
-        {
-          "url": "https://www.wvnews.com/sports/pro/france-paris-masters-tennis/image_862dbb0d-a922-51e6-9168-bf9a8a70918d.html",
-          "title": "France Paris Masters Tennis",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi4_feiPWb2bq4WuHGp3dHOpH4d3Jo-9rS2UJ32yBmQNgNdPFexMI5ODuefhk"
-        }
-      ]
-    },
-    {
-      "query": "oracle stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T18:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/oracle-beats-microsoft-amazon-key-160655388.html",
-        "https://seekingalpha.com/news/4668038-oracle-leads-big-tech-hyperscalers-in-valuation-as-ai-stocks-rebound-premarket",
-        "https://www.gurufocus.com/news/9181135/oracle-beats-microsoft-and-amazon-on-a-key-wall-street-metric?utm_source=yahoo_finance&utm_medium=syndication&utm_campaign=headlines&r=caf6fe0e0db70d936033da5461e60141"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-beats-microsoft-amazon-key-160655388.html",
-          "title": "Oracle beats Microsoft and Amazon on a key Wall Street metric",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4668038-oracle-leads-big-tech-hyperscalers-in-valuation-as-ai-stocks-rebound-premarket",
-          "title": "Oracle leads big tech hyperscalers in valuation as AI stocks rebound premarket",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6Lh4ysnHZ-ZwvNR_KqisP_u8RCkapoL7OyTQu7QFY_bGNmfXyiLZiZDGE9uQ"
-        },
-        {
-          "url": "https://www.gurufocus.com/news/9181135/oracle-beats-microsoft-and-amazon-on-a-key-wall-street-metric?utm_source=yahoo_finance&utm_medium=syndication&utm_campaign=headlines&r=caf6fe0e0db70d936033da5461e60141",
-          "title": "Oracle beats Microsoft and Amazon on a key Wall Street metric",
-          "publisher": "GuruFocus",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjoCnC3oOZUUCK1iO3qWkjrQ0wB17_TSqxo2gOHEIrL3fIqZgAq4QU3gCui5k"
-        }
-      ]
-    },
-    {
-      "query": "antonio brown",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T18:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50400733/antonio-brown-pleads-guilty-lesser-charge-shooting-case",
-        "https://www.nbcnews.com/news/us-news/antonio-brown-avoids-jail-pleading-guilty-lesser-change-miami-shooting-rcna607840",
-        "https://abcnews.com/US/wireStory/judge-accepts-nfl-star-antonio-browns-guilty-plea-137917266"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrMDFw3NY3wWhIyIiDcFSfw-i8j_cyKHycNSOT68AWjy6IolU_IN4iKgHGKRw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50400733/antonio-brown-pleads-guilty-lesser-charge-shooting-case",
-          "title": "Antonio Brown pleads guilty to lesser charge, gets probation in shooting case",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrMDFw3NY3wWhIyIiDcFSfw-i8j_cyKHycNSOT68AWjy6IolU_IN4iKgHGKRw"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/antonio-brown-avoids-jail-pleading-guilty-lesser-change-miami-shooting-rcna607840",
-          "title": "Antonio Brown avoids jail by pleading guilty to lesser change in Miami shooting",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7dKNLgebGV56m_nK_sLhUkvOwNmoF67aNXRotnoFfzWE-9g67UJt4Bt74Ufw"
-        },
-        {
-          "url": "https://abcnews.com/US/wireStory/judge-accepts-nfl-star-antonio-browns-guilty-plea-137917266",
-          "title": "Judge accepts ex-NFL star Antonio Brown's guilty plea to reduced charge, sentences probation",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaGUuvwWy9JYmYaUCPJQ3PB_gi7C4ZN4o6VoH31_3Rkbr4GP2NhVEkuOdhiNQ"
-        }
-      ]
-    },
-    {
-      "query": "paige bueckers",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T17:50:00Z",
-      "related_news_urls": [
-        "https://people.com/paige-bueckers-azzi-fudd-confirm-they-broke-up-over-a-year-ago-12240488",
-        "https://bleacherreport.com/articles/25529943-paige-bueckers-and-azzi-fudd-announce-breakup-reveal-split-happened-wnba-season",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/paige-bueckers-azzi-fudd-reveal-175740000.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrYMu2LVTNBI40MOzMDZigc3-xva7c9CaHMtEmmGen-OmhqjAg-OgxQnuvBX8",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/paige-bueckers-azzi-fudd-confirm-they-broke-up-over-a-year-ago-12240488",
-          "title": "Paige Bueckers and Azzi Fudd Confirm They Broke Up Over a Year Ago",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrYMu2LVTNBI40MOzMDZigc3-xva7c9CaHMtEmmGen-OmhqjAg-OgxQnuvBX8"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529943-paige-bueckers-and-azzi-fudd-announce-breakup-reveal-split-happened-wnba-season",
-          "title": "Paige Bueckers and Azzi Fudd Announce Breakup, Reveal Split Happened Before WNBA Season",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlFhqoqWcX02y8lGGSfZg_oW26iVAMPJk06V9UJHrze9d9VLISOwZTmkJBNjg"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/paige-bueckers-azzi-fudd-reveal-175740000.html",
-          "title": "Paige Bueckers and Azzi Fudd reveal update on relationship status with honest message",
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/dolly-parton-estate-drama-takes-170045199.html",
+          "title": "Dolly Parton’s Estate Drama Takes Legal Turn After Her Real Cause of Death Was Exposed",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaCjoOKq6QGfkfm9hL314KOHHVFg3XDnbf1v3T_cxFaSnvL53-VtG2_NhuFwE"
-        }
-      ]
-    },
-    {
-      "query": "burger king holiday countdown calendar",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T17:50:00Z",
-      "related_news_urls": [
-        "https://mashable.com/life/burger-king-2026-holiday-advent-calendar-how-to-buy",
-        "https://www.allrecipes.com/burger-king-2026-advent-calendar-12238679",
-        "https://news.bk.com/blog-posts/big-holiday-cheer-comes-in-mini-packages-with-the-return-of-the-burger-king-r-advent-calendar"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbEHyuW3QSdWkVGP9OUOrT7zpdIbg465gnbRNxOhgEgAB2FdJDNq0Jb3rYy38",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/life/burger-king-2026-holiday-advent-calendar-how-to-buy",
-          "title": "Burger King’s viral holiday advent calendar is back: How to buy the internet’s mini obsession",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbEHyuW3QSdWkVGP9OUOrT7zpdIbg465gnbRNxOhgEgAB2FdJDNq0Jb3rYy38"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbDY9p8OT2k7lNUErn3vxw_Molt4S0Wbq5YGjN2ecak-rKMJK4PvYJ6CFX8DI"
         },
         {
-          "url": "https://www.allrecipes.com/burger-king-2026-advent-calendar-12238679",
-          "title": "Burger King Has a New Version of the Holiday Item That Sold Out in 5 Minutes",
-          "publisher": "Allrecipes",
+          "url": "https://www.theguardian.com/music/2026/nov/05/dolly-parton-nephew-harassment",
+          "title": "Dolly Parton’s manager drops complaint accusing nephew of harassment",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjJpWGx-Cl0FbGqxOzsjdEaV5iIms5WcUpj8rp2ZGWz0efKxOeacgbfF7ut0w"
-        },
-        {
-          "url": "https://news.bk.com/blog-posts/big-holiday-cheer-comes-in-mini-packages-with-the-return-of-the-burger-king-r-advent-calendar",
-          "title": "Big Holiday Cheer Comes In Mini Packages With The Return Of The Burger King® Advent Calendar",
-          "publisher": "Burger King Newsroom",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRexqNFrdQOUYrKUcpC0e-sNLgogVOfH8CgSi4YHwEUlnzUnZijn7aAhA-pW-w"
-        }
-      ]
-    },
-    {
-      "query": "orcl stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T17:50:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/fionariley/2026/11/05/larry-ellison-falls-out-of-top-10-in-billionaire-rankings-as-oracle-plunges/",
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/oracle-stock-slides-as-ai-trade-swoons-Iia21sCdA4aesmmwVkEz",
-        "https://seekingalpha.com/article/4962446-oracle-the-party-is-almost-over"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROVnlt6yOS8xd5Ys-dPItv-qo0ZONB74Wh0o8a5zCgLEWKX6gDlIDVLLBeBVc",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/fionariley/2026/11/05/larry-ellison-falls-out-of-top-10-in-billionaire-rankings-as-oracle-plunges/",
-          "title": "Larry Ellison Falls Out Of Top 10 In Billionaire Rankings As Oracle Plunges",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROVnlt6yOS8xd5Ys-dPItv-qo0ZONB74Wh0o8a5zCgLEWKX6gDlIDVLLBeBVc"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026/card/oracle-stock-slides-as-ai-trade-swoons-Iia21sCdA4aesmmwVkEz",
-          "title": "Oracle Stock Slides as AI Trade Swoons",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWwhm_cjqBBBXtQacyp8GMYLMdMO_ilhILp8pe99RUd_Mu-xmsfCpZOWOGCLg"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4962446-oracle-the-party-is-almost-over",
-          "title": "Oracle: The Party Is Almost Over (NYSE:ORCL)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfkN66Ea6zZOmR6U6cj-xbyPoG27A6hWsd0_29DYi-aa5LRe7LFKi3rszYgug"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKrE7CXHs3-VJ1dUbIZdKuaryoLxxHfyrSeFI-Ym3iW-pQ5tVEnGHCMxqzKvs"
         }
       ]
     }
