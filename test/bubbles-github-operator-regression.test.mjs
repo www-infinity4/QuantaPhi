@@ -14,7 +14,7 @@ const source=originalSource.slice(0,neuralStart)+' let neuralCoding=false;\n'+or
 const modeLine=site.slice(site.indexOf('   const mode='),site.indexOf('   const namedWorkflow=',site.indexOf('   const mode=')));
 // The real chat resolves namedCardWork from its card catalog before entering this
 // excerpt. Here, exercise the old operator with no named-card match.
-const classify=new Function('request','coderIntent','const namedCardWork=null;\n'+source+'\n'+modeLine+'\nreturn {ownerGithubNonAction,createRepository,directCoding,requestsAgents,mode};');
+const classify=new Function('request','coderIntent','const namedCardWork=null;\nconst contextualPluralRepair=false;\n'+source+'\n'+modeLine+'\nreturn {ownerGithubNonAction,createRepository,directCoding,requestsAgents,mode};');
 
 test('create a new file uses GitHub WRITE, not READ',()=>{
  const request='Create a new file named hello.txt in RecordB';
