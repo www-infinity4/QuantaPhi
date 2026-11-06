@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T05:31:40.789028Z",
+  "checked_at": "2026-11-06T06:01:52.209146Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "brandin podziemski",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T05:10:00Z",
-      "related_news_urls": [
-        "https://bluemanhoop.com/brandin-podziemski-is-already-quietly-justifying-his-warriors-extension",
-        "https://www.yardbarker.com/nba/articles/nba_notes_warriors_brandin_podziemski_pistons_ron_holland_sixers/s1_17038_44496350",
-        "https://www.nba.com/warriors/videos/postgame-warriors-talk-brandin-podziemski-11-2-26"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2R1idx6fmUm7zCFH8ZVf45NL6oa6gB5oBuX8nCyIwrRyFsC9jdPfUsDO4pNI",
-      "image_credit": "Blue Man Hoop",
-      "news": [
-        {
-          "url": "https://bluemanhoop.com/brandin-podziemski-is-already-quietly-justifying-his-warriors-extension",
-          "title": "Brandin Podziemski is already quietly justifying his Warriors extension",
-          "publisher": "Blue Man Hoop",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2R1idx6fmUm7zCFH8ZVf45NL6oa6gB5oBuX8nCyIwrRyFsC9jdPfUsDO4pNI"
-        },
-        {
-          "url": "https://www.yardbarker.com/nba/articles/nba_notes_warriors_brandin_podziemski_pistons_ron_holland_sixers/s1_17038_44496350",
-          "title": "NBA Notes: Warriors, Brandin Podziemski, Pistons, Ron Holland, Sixers",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv5OzJaDJYpIobk9Ta36Z5O4StbKYPgsN4rdRVy5APF9jZ0yKwjz1GDP_uXpg"
-        },
-        {
-          "url": "https://www.nba.com/warriors/videos/postgame-warriors-talk-brandin-podziemski-11-2-26",
-          "title": "Postgame Warriors Talk: Brandin Podziemski ‑ 11/2/26",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBgIjYwrjKUHQl5377xITgCRirlRiDW-cwiHEhMDlhL5pEMwEKfDdzccbXtcQ"
-        }
-      ]
-    },
-    {
-      "query": "mw4 season 1 release date",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T05:10:00Z",
-      "related_news_urls": [
-        "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-season-1-battle-pass-blackcell-store-bundles",
-        "https://www.ign.com/articles/call-of-duty-warzone-is-adding-a-weather-system-this-week",
-        "https://www.mmoexp.com/News/cod-mw4-rally-point-guide-how-to-play-pve-features-rewards-season-1-details.html"
-      ],
-      "image_url": null,
-      "image_credit": "Call of Duty® | Best-Selling Video Game Franchise",
-      "news": [
-        {
-          "url": "https://www.callofduty.com/blog/2026/11/call-of-duty-modern-warfare-4-season-1-battle-pass-blackcell-store-bundles",
-          "title": "Intel Drop: All You Need to Know about the Modern Warfare 4 Season 1 Battle Pass System, BlackCell, and New Store Bundles",
-          "publisher": "Call of Duty® | Best-Selling Video Game Franchise",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.ign.com/articles/call-of-duty-warzone-is-adding-a-weather-system-this-week",
-          "title": "Call of Duty: Warzone Is Adding One of Its Most Requested Features Very Soon",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2VX88DzwS6o1uDcM6NlZRd4ygyIODL1kbrnc3Uw-vbN6JoSafNJZAf17wvT4"
-        },
-        {
-          "url": "https://www.mmoexp.com/News/cod-mw4-rally-point-guide-how-to-play-pve-features-rewards-season-1-details.html",
-          "title": "CoD MW4 Rally Point Guide: How to Play, PvE Features, Rewards & Season 1 Details",
-          "publisher": "MMOEXP",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRYD704ajejBntJI8svcj8iLOFa-4dUWNuNmW6TcuqIQh-cVh_utYTauKVfWg"
-        }
-      ]
-    },
-    {
-      "query": "kiyomi mcmiller",
+      "query": "ryan clark",
       "approx_searches": "200+",
-      "published_at": "2026-11-06T05:10:00Z",
+      "published_at": "2026-11-06T05:40:00Z",
       "related_news_urls": [
-        "https://floridagators.com/news/2026/11/5/womens-basketball-mcmiller-erupts-for-42-in-gators-95-65-win-over-ucf",
-        "https://sports.yahoo.com/articles/florida-kiyomi-mcmiller-leaves-ncaa-040720531.html",
-        "https://www.orlandosentinel.com/2026/11/05/florida-gators-womens-basketball-kiyomi-mckiller-tammi-reiss-ucf-knights/"
+        "https://sports.yahoo.com/articles/ryan-clark-accuses-espn-using-214003043.html",
+        "https://awfulannouncing.com/espn/ryan-clark-almost-quit-espn-pressure-apologize-kyren-lacy-comments.html",
+        "https://www.essentiallysports.com/ncaa-college-football-news-i-put-it-on-mute-nfl-legend-ryan-clark-makes-painful-admission-about-not-being-able-to-watch-peers-after-espn-exit/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRosdjk3JiT3xASPW-rkPZewQTzqjqtDtgf0JUP0BrKZ3tlJdMFcK25wQ5nrjg",
-      "image_credit": "Florida Gators",
-      "news": [
-        {
-          "url": "https://floridagators.com/news/2026/11/5/womens-basketball-mcmiller-erupts-for-42-in-gators-95-65-win-over-ucf",
-          "title": "McMiller erupts for career-high 42 in 95-65 win over UCF",
-          "publisher": "Florida Gators",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRosdjk3JiT3xASPW-rkPZewQTzqjqtDtgf0JUP0BrKZ3tlJdMFcK25wQ5nrjg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/florida-kiyomi-mcmiller-leaves-ncaa-040720531.html",
-          "title": "Florida’s Kiyomi McMiller Leaves NCAA Fans Talking After Becoming Fifth Player in Program History to Post Back-to-Back 30-Point Games",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiy0Ggt7axgSobZkTt4u_J_RqXnFSMStBGn3pc9YvGvLcALb_2Ein_LHw97T4"
-        },
-        {
-          "url": "https://www.orlandosentinel.com/2026/11/05/florida-gators-womens-basketball-kiyomi-mckiller-tammi-reiss-ucf-knights/",
-          "title": "Gators’ transfer Kiyomi McMiller explodes for 42 points as Florida routs UCF",
-          "publisher": "Orlando Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0cLJMrL_fLAvQNy7Run-_36Xa0f3w4v7khv_SfZLa4_LSf5GwcZcwy8QZ8og"
-        }
-      ]
-    },
-    {
-      "query": "dan koh",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T05:10:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/03/metro/koh-wins-sixth-district-house-asian-american/",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-massachusetts-us-house-6.html",
-        "https://www.wbur.org/news/2026/11/04/dan-koh-elected-salem-lynn-congress-representative"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtu0sLFVe1RPBLLPufgjrMT0c2iLEE5rQeLGRZLXGIF3EF9FkpmoUP0eerFo",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/03/metro/koh-wins-sixth-district-house-asian-american/",
-          "title": "Koh sails to victory in Sixth District House race",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtu0sLFVe1RPBLLPufgjrMT0c2iLEE5rQeLGRZLXGIF3EF9FkpmoUP0eerFo"
-        },
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-massachusetts-us-house-6.html",
-          "title": "Massachusetts Sixth Congressional District 2026: Live Election Results, Koh vs. Jones",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvrpfyvxdycqlQ2GCFF6r5e9hWGMk3_2SA0FtIRvWcPxHABzsU4XStnYur0JA"
-        },
-        {
-          "url": "https://www.wbur.org/news/2026/11/04/dan-koh-elected-salem-lynn-congress-representative",
-          "title": "Congressman-elect Dan Koh says his first priority is to 'get to the bottom of Donald Trump’s corruption'",
-          "publisher": "WBUR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkwt2w4jfenDD1KmUDOFHBYlgaUzI1naYb8TLp4-P9z-1acr_Nux5ocrBIAUM"
-        }
-      ]
-    },
-    {
-      "query": "giannis antetokounmpo",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T05:00:00Z",
-      "related_news_urls": [
-        "https://www.si.com/betting/giannis-antetokounmpo-injury-update-betting-impact-for-heat-vs-warriors-nov-5",
-        "https://sports.yahoo.com/articles/visiting-heat-listing-giannis-antetokounmpo-214454898.html",
-        "https://basketnews.com/news-258840-giannis-antetokounmpo-final-status-for-miami-heat-vs-la-clippers-revealed.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfyzMZ07EqEWOhQqyMjvSUKR-kZ1QhM9pck81nx0Tb50UJgsKgl-dp2_tEcU8",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/betting/giannis-antetokounmpo-injury-update-betting-impact-for-heat-vs-warriors-nov-5",
-          "title": "Is Giannis Antetokounmpo Playing Tonight? (Injury Update Betting Impact for Heat vs. Warriors)",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfyzMZ07EqEWOhQqyMjvSUKR-kZ1QhM9pck81nx0Tb50UJgsKgl-dp2_tEcU8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/visiting-heat-listing-giannis-antetokounmpo-214454898.html",
-          "title": "Visiting Heat are listing Giannis Antetokounmpo as …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRHg7zR2kcFmOWx8HQgT-C9RQAbedR8HliA79pHuKxTmPx0EeC981Bf_zfrh4"
-        },
-        {
-          "url": "https://basketnews.com/news-258840-giannis-antetokounmpo-final-status-for-miami-heat-vs-la-clippers-revealed.html",
-          "title": "Giannis Antetokounmpo final status for Miami Heat vs LA Clippers revealed",
-          "publisher": "BasketNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8gzqcbdbTXbPfPB38RVvQGvTiic_fRyBiHByfx6nMvxnE43OZn5Ap2T_DeUk"
-        }
-      ]
-    },
-    {
-      "query": "bryce james",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T05:00:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/sports/ncaab/big12/2026/11/03/bryce-james-arizona-basketball-first-start-stats/92579162007/",
-        "https://bleacherreport.com/articles/25528879-bryce-james-full-box-score-highlights-mcbb-debut-arizonas-upset-loss-ucla",
-        "https://www.basketballnetwork.net/college/jason-whitlock-accuses-lebron-james-of-forcing-bryce-onto-arizonas-roster"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNoHpPEajTDrpMvgTre_WT8UtVkc8KjokaeiOycC8NJ5ELKDOknYUUGPYpI7s",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaab/big12/2026/11/03/bryce-james-arizona-basketball-first-start-stats/92579162007/",
-          "title": "Bryce James stats: Lebron James' son makes first college start for Arizona",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNoHpPEajTDrpMvgTre_WT8UtVkc8KjokaeiOycC8NJ5ELKDOknYUUGPYpI7s"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25528879-bryce-james-full-box-score-highlights-mcbb-debut-arizonas-upset-loss-ucla",
-          "title": "Bryce James' Full Box Score, Highlights From MCBB Debut in Arizona's Upset Loss to UCLA",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9r9w0lOykX4RuLwpa-wmmjcq0FEPdpkpVVBtSVlMfeO513-Q_fwd2178hcBU"
-        },
-        {
-          "url": "https://www.basketballnetwork.net/college/jason-whitlock-accuses-lebron-james-of-forcing-bryce-onto-arizonas-roster",
-          "title": "“We got another Make-A-Swish Kid” – Jason Whitlock accuses LeBron James of forcing Bryce onto Arizona's roster",
-          "publisher": "Basketball Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToChPpbkIRuY_BiAzFnKE6ElY1ZQx7iCghBDQYU-RPsgSTEMR6gSD7n4gwBvA"
-        }
-      ]
-    },
-    {
-      "query": "jaguars nfl standings",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T05:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/steelers-fall-afc-playoff-standings-042007897.html",
-        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-nfl-playoffs/177525/steelers-fall-in-afc-playoff-standings-after-ravens-loss-to-jaguars",
-        "https://www.nytimes.com/athletic/7753648/2026/11/05/nfl-underrated-storylines-jaguars-jordan-love-kirk-cousins/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqbqLfv9OjKtJh1wlVsb9zW-gw2q_Y28ELqeXGf_8eUHrFWM15BxE7BTpiosk",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgqgdNKtVTXTt68F0y75u9lPuqCNw3Kur2Okwbxo2XThp_yFMCJLuWAMkriCg",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/steelers-fall-afc-playoff-standings-042007897.html",
-          "title": "Steelers fall in AFC playoff standings after Ravens loss to Jaguars",
+          "url": "https://sports.yahoo.com/articles/ryan-clark-accuses-espn-using-214003043.html",
+          "title": "Ryan Clark accuses ESPN of using Sophie Cunningham to overshadow his firing",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqbqLfv9OjKtJh1wlVsb9zW-gw2q_Y28ELqeXGf_8eUHrFWM15BxE7BTpiosk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgqgdNKtVTXTt68F0y75u9lPuqCNw3Kur2Okwbxo2XThp_yFMCJLuWAMkriCg"
         },
         {
-          "url": "https://www.behindthesteelcurtain.com/pittsburgh-steelers-nfl-playoffs/177525/steelers-fall-in-afc-playoff-standings-after-ravens-loss-to-jaguars",
-          "title": "Steelers fall in AFC playoff standings after Ravens loss to Jaguars",
-          "publisher": "Behind the Steel Curtain",
+          "url": "https://awfulannouncing.com/espn/ryan-clark-almost-quit-espn-pressure-apologize-kyren-lacy-comments.html",
+          "title": "Ryan Clark almost quit ESPN over pressure to apologize for Kyren Lacy comments",
+          "publisher": "Awful Announcing",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAuXhFpP_xBh98OHUgfIaAxSkpq71CXkkhIm0xVA4bgCScmDgjRo8fZXfXWYE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQj-xzpxepCOTyiZ8XgJru2iD6Da85iRBxSEHHeTSw9GipCTTfPFB8wfXzCymU"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7753648/2026/11/05/nfl-underrated-storylines-jaguars-jordan-love-kirk-cousins/",
-          "title": "Jaguars the class of the AFC? Jordan Love for MVP? Exploring underrated NFL storylines",
-          "publisher": "The New York Times",
+          "url": "https://www.essentiallysports.com/ncaa-college-football-news-i-put-it-on-mute-nfl-legend-ryan-clark-makes-painful-admission-about-not-being-able-to-watch-peers-after-espn-exit/",
+          "title": "“I Put It On Mute”: NFL Legend Ryan Clark Makes Painful Admission About Not Being Able to Watch Peers After ESPN Exit",
+          "publisher": "EssentiallySports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9x7iUcr61iHaoVDmoSTmaARbOvF1RJlt17LRN3qnyrFTQwsqdVMvjvuAmdQQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQU0hb1F9iF7yBc1wS6P_F0TRlN6tU9pRID4ybQg6HSscjQrMOk4hmjRtSUMMA"
         }
       ]
     },
     {
-      "query": "the lowdown",
+      "query": "natalie portman",
       "approx_searches": "200+",
-      "published_at": "2026-11-06T05:00:00Z",
+      "published_at": "2026-11-06T05:40:00Z",
       "related_news_urls": [
-        "https://www.tvinsider.com/1301953/the-lowdown-season-2-episode-5-kyle-maclachlan-interview-donald-washberg-jed-sallsman/",
-        "https://www.kvue.com/article/entertainment/in-the-spotlight/kyle-maclachlan-interview-season-2-the-lowdown-ethan-hawke-sterlin-harjo/507-4997c7f5-f955-4ec9-9b9a-0d354b52fb7b",
-        "https://www.newscentermaine.com/video/entertainment/in-the-spotlight/kyle-maclachlan-interview-season-2-the-lowdown-ethan-hawke-sterlin-harjo/507-fbb7ac41-e5e6-485b-b090-5d2b12df6263"
+        "https://deadline.com/2026/11/the-gallerist-trailer-natalie-portman-jenna-ortega-dark-comedy-1237214004/",
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/jenna-ortega-natalie-portman-absurd-161223419.html",
+        "https://www.artnews.com/art-news/news/gallerist-movie-trailer-1234804759/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFAWQwqHsp07NvAeOG_HjgrTCIxLIwzE-GeWnOWVcBB_LiGCLtYfsG8j7bag",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1301953/the-lowdown-season-2-episode-5-kyle-maclachlan-interview-donald-washberg-jed-sallsman/",
-          "title": "'The Lowdown': Kyle MacLachlan Breaks Down Donald's Return",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFAWQwqHsp07NvAeOG_HjgrTCIxLIwzE-GeWnOWVcBB_LiGCLtYfsG8j7bag"
-        },
-        {
-          "url": "https://www.kvue.com/article/entertainment/in-the-spotlight/kyle-maclachlan-interview-season-2-the-lowdown-ethan-hawke-sterlin-harjo/507-4997c7f5-f955-4ec9-9b9a-0d354b52fb7b",
-          "title": "Emmy nominee Kyle MacLachlan discusses returning for Season 2 of comedic noir 'The Lowdown'",
-          "publisher": "KVUE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIvTFQsfyzeQdGB3sr6CDVnRxwyIiR22Ubje_aXtowzGk0bDZcOhqkdIKVw9U"
-        },
-        {
-          "url": "https://www.newscentermaine.com/video/entertainment/in-the-spotlight/kyle-maclachlan-interview-season-2-the-lowdown-ethan-hawke-sterlin-harjo/507-fbb7ac41-e5e6-485b-b090-5d2b12df6263",
-          "title": "Emmy nominee Kyle MacLachlan discusses returning for Season 2 of comedic noir 'The Lowdown'",
-          "publisher": "newscentermaine.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIvTFQsfyzeQdGB3sr6CDVnRxwyIiR22Ubje_aXtowzGk0bDZcOhqkdIKVw9U"
-        }
-      ]
-    },
-    {
-      "query": "ethan hawke",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T04:50:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/levon-hawke-anthony-hopkins-twenty-seven-gregory-caruso-1236940057/",
-        "https://people.com/levon-hawke-lands-first-leading-film-role-opposite-anthony-hopkins-12239107",
-        "https://www.imdb.com/it/news/ni66097212/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5cHR8hj0tg_4Eb6Eke_gWK4qCbIevKXfasCa1SPv1Akap8yLYFkA7Mul8Z7A",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/levon-hawke-anthony-hopkins-twenty-seven-gregory-caruso-1236940057/",
-          "title": "Levon Hawke to Star With Anthony Hopkins in Indie Drama ‘Twenty-Seven’ (EXCLUSIVE)",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5cHR8hj0tg_4Eb6Eke_gWK4qCbIevKXfasCa1SPv1Akap8yLYFkA7Mul8Z7A"
-        },
-        {
-          "url": "https://people.com/levon-hawke-lands-first-leading-film-role-opposite-anthony-hopkins-12239107",
-          "title": "Ethan Hawke’s Son Levon Hawke Lands First Leading Role Opposite Anthony Hopkins",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfh8wCusKd7pCCkr9-6obH5Orbr-Hu6tEtYpiSq8EXeZL85WOWcX8bM5wFRE"
-        },
-        {
-          "url": "https://www.imdb.com/it/news/ni66097212/?ref_=nwc_art_perm",
-          "title": "Levon Hawke to Star With Anthony Hopkins in Indie Drama ‘Twenty-Seven’ (Exclusive)",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_vqY8lvGIHFWG4WZyuZx-Tr2BzTQcEMRe58J_xbWpkgFrtFmf0HfQRoqBmVo"
-        }
-      ]
-    },
-    {
-      "query": "maya hawke",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T04:50:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/maya-hawke-magic-the-gathering-movie-1237213391/",
-        "https://www.hollywoodreporter.com/movies/movie-news/maya-hawke-magic-the-gathering-1236747928/",
-        "https://gizmodo.com/magic-the-gathering-movie-casts-a-stranger-things-star-2000835204"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAmcOzXZsAd7pDkDlEdIEHtUI-ufjvSa0h4K2wrII7ata27JzhMZ3TdbGHaSw",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB-ZOeByihk1MwM_SO8OuYq24QnrCtvdIcRbDshY-JSIz_E7hlHgRV2GoYFmQ",
       "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/maya-hawke-magic-the-gathering-movie-1237213391/",
-          "title": "Maya Hawke Boards ‘Magic: The Gathering’ Movie From Legendary And Hasbro",
+          "url": "https://deadline.com/2026/11/the-gallerist-trailer-natalie-portman-jenna-ortega-dark-comedy-1237214004/",
+          "title": "'The Gallerist' Trailer: Natalie Portman, Jenna Ortega At Art Basel",
           "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAmcOzXZsAd7pDkDlEdIEHtUI-ufjvSa0h4K2wrII7ata27JzhMZ3TdbGHaSw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB-ZOeByihk1MwM_SO8OuYq24QnrCtvdIcRbDshY-JSIz_E7hlHgRV2GoYFmQ"
         },
         {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/maya-hawke-magic-the-gathering-1236747928/",
-          "title": "Maya Hawke Joins ‘Magic: The Gathering’ Movie Adaptation",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/jenna-ortega-natalie-portman-absurd-161223419.html",
+          "title": "Jenna Ortega & Natalie Portman’s Absurd Comedy Movie With More A-Listers Gets New Trailer",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5aJmXeUbVOCy0UaRpzQGk74dWf8UIzf4JuFK88Y44uoEGavTwBgL2fBeR92M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRjguA_twl5ld2IhdNHDE5cgr-DNnrk7TaB5X2m0S2i0SfVVxCBMjuMwTGiSI"
         },
         {
-          "url": "https://gizmodo.com/magic-the-gathering-movie-casts-a-stranger-things-star-2000835204",
-          "title": "‘Magic: The Gathering’ Movie Casts Maya Hawke in Key Role",
-          "publisher": "Gizmodo",
+          "url": "https://www.artnews.com/art-news/news/gallerist-movie-trailer-1234804759/",
+          "title": "Antic Trailer Released for The Gallerist , Natalie Portman-Starring Art World Satire",
+          "publisher": "ARTnews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfm1v7Hwmkbi7L-N9CcrWX4abS1TA3Rqd2pocWN2HWKzcANyFPUX0SgOErwdo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Nz4XjUdTj-tn_6UUrZWQTQShKlPz3q92JfKo5gPT3ncdswZITacxTAjFnWo"
+        }
+      ]
+    },
+    {
+      "query": "christian bale",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T05:40:00Z",
+      "related_news_urls": [
+        "https://people.com/all-about-riko-shibata-nicolas-cage-wife-12237864",
+        "https://www.instyle.com/christian-bale-sibi-blazic-date-night-nicolas-cage-madden-premiere-12238982",
+        "https://pagesix.com/2026/11/04/photos/madden-premiere-red-carpet-nicholas-cage-christian-bale-kathryn-hahn-and-more/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8qy72vZt5bx7-Y0fxIGsMSHZ1qCwnZgziOS7chdy5iqblgkbd6G8TBIsjJbI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/all-about-riko-shibata-nicolas-cage-wife-12237864",
+          "title": "Who Is Nicolas Cage’s Wife, Riko Shibata?",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8qy72vZt5bx7-Y0fxIGsMSHZ1qCwnZgziOS7chdy5iqblgkbd6G8TBIsjJbI"
+        },
+        {
+          "url": "https://www.instyle.com/christian-bale-sibi-blazic-date-night-nicolas-cage-madden-premiere-12238982",
+          "title": "Christian Bale and Wife Sibi Blažić Enjoy Rare Date Night in Coordinated Suits",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-0bLCWIOW8NArWrbRu7500ijsean2pIYpzq19dv3El0UzjB_eKS_TdHwkR8E"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/04/photos/madden-premiere-red-carpet-nicholas-cage-christian-bale-kathryn-hahn-and-more/",
+          "title": "‘Madden’ premiere red carpet: Nicolas Cage, Christian Bale, Kathryn Hahn and more",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc8bv1lZ2wlY0cbTR-I5RBUghgAaVV00KNXj3qRGKwDg7B_i-6TJ1KuMsAYhg"
+        }
+      ]
+    },
+    {
+      "query": "fortnite token",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T05:40:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/04/fortnite-clarifies-the-odds-of-opening-a-pirate-shop-token-chest/",
+        "https://www.gamespot.com/articles/people-are-acting-weird-as-hell-during-fortnites-treasure-hunt/",
+        "https://aftermath.site/fortnite-pirate-token/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbD9ACPjHDZIB4GHxA7QqmblNFGzIwDEgMskUmBXJvNEFIiV3I9rgpOh1BTQI",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/04/fortnite-clarifies-the-odds-of-opening-a-pirate-shop-token-chest/",
+          "title": "‘Fortnite’ Clarifies The Odds Of Opening A Pirate Shop Token Chest",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbD9ACPjHDZIB4GHxA7QqmblNFGzIwDEgMskUmBXJvNEFIiV3I9rgpOh1BTQI"
+        },
+        {
+          "url": "https://www.gamespot.com/articles/people-are-acting-weird-as-hell-during-fortnites-treasure-hunt/",
+          "title": "People Are Acting Weird As Hell During Fortnite’s Treasure Hunt",
+          "publisher": "GameSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtjoE4tW-Axp4DvzK_9AiKHJYMzfLHBuhf3RhsFaMPpl9snRS-_6nQYXz0M-o"
+        },
+        {
+          "url": "https://aftermath.site/fortnite-pirate-token/",
+          "title": "Fortnite's Pirate Token Item Is Everything That's Wrong With The Game These Days",
+          "publisher": "Aftermath",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN6vNEOO4jl1XyvzGvVx9EoV6I5yc3UNCHJBSa0PslGHr3oEswjmpiWYp6bow"
+        }
+      ]
+    },
+    {
+      "query": "brandon williams",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T05:30:00Z",
+      "related_news_urls": [
+        "https://www.goldenstateofmind.com/warriors-injury-report/113181/warriors-suns-injury-report-brandon-williams-gui-santos-mark-williams",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/clint-capela-ankle-to-remain-out-vs-minnesota",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/02/brandon-williams-was-out-pregame-testing-his-quad/92576100007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWr6kPqj-x7oSJopJrQCf3HXdX47Yn8QeJqoxB9XLcPQL7fu4Aa1uEzHHcC6M",
+      "image_credit": "Golden State Of Mind",
+      "news": [
+        {
+          "url": "https://www.goldenstateofmind.com/warriors-injury-report/113181/warriors-suns-injury-report-brandon-williams-gui-santos-mark-williams",
+          "title": "Warriors vs. Suns injury report: Brandon Williams and Gui Santos out",
+          "publisher": "Golden State Of Mind",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWr6kPqj-x7oSJopJrQCf3HXdX47Yn8QeJqoxB9XLcPQL7fu4Aa1uEzHHcC6M"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/clint-capela-ankle-to-remain-out-vs-minnesota",
+          "title": "Clint Capela (ankle) to remain out vs. Minnesota",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHzFqs1VjJhMxnlHo3QjZbzOLTDp2BmCU0kRkygqb-6zWQsTGRsHFZLWA1S74"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/02/brandon-williams-was-out-pregame-testing-his-quad/92576100007/",
+          "title": "Brandon Williams was out pregame testing his quad …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmSPiuBRujd3D5x_Qs-BuBVMCO5Xb05ptpgC3rHK_bQmii_ArrE_j6b4zqvaE"
+        }
+      ]
+    },
+    {
+      "query": "georges niang",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T05:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909919",
+        "https://www.goldenstateofmind.com/warriors-scores-results/113194/its-all-about-that-bassey-as-warriors-win-5th-straight",
+        "https://www.sfchronicle.com/sports/warriors/article/warriors-lose-draymond-green-ejection-persevere-22507981.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHPeYamyVjn0jGsjvcdy_PKv-SXmhm9Uybct62QEThLMwfP6yleMzheIQq2a4",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909919",
+          "title": "Warriors 116-113 Suns (Nov 2, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHPeYamyVjn0jGsjvcdy_PKv-SXmhm9Uybct62QEThLMwfP6yleMzheIQq2a4"
+        },
+        {
+          "url": "https://www.goldenstateofmind.com/warriors-scores-results/113194/its-all-about-that-bassey-as-warriors-win-5th-straight",
+          "title": "Steph Curry, Charles Bassey help Warriors to fifth straight win",
+          "publisher": "Golden State Of Mind",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQInCjzLLd3rivq9t6jF_6mTXMuEyuK88F9zfGJwW7Wwt08OQAOtqDyQEOPFow"
+        },
+        {
+          "url": "https://www.sfchronicle.com/sports/warriors/article/warriors-lose-draymond-green-ejection-persevere-22507981.php",
+          "title": "After Draymond Green’s ejection, galvanized Warriors hang on to beat Suns for fifth straight win",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5vZXpRUfVvgP3kI7wlQZDyVU54kDR-noOWiNeb_oicnHfF1I1AM7shrGRJf4"
+        }
+      ]
+    },
+    {
+      "query": "draymond green",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T05:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/draymond-green-reveals-reason-why-035923781.html",
+        "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
+        "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiiskx6v2D1ADHvOxF8DpiEOk0vDqoHtl8pes-14YUEbNFCdhSC5-cvidiCHQ",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/draymond-green-reveals-reason-why-035923781.html",
+          "title": "Draymond Green reveals the reason why he threw Khaman Maluach to the floor",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiiskx6v2D1ADHvOxF8DpiEOk0vDqoHtl8pes-14YUEbNFCdhSC5-cvidiCHQ"
+        },
+        {
+          "url": "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
+          "title": "Steph Curry says Draymond's ejection 'lit a fire' in Warriors",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9L3IbesFtC2R1bQ6RajCERU_JICdBLNrJcO1GjSHMhdXh6QjCubt-P_Fq0E8"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns",
+          "title": "Draymond Green Rips Dillon Brooks, Won't Respect His 'Energy' After Altercation in Warriors-Suns",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1RPn5xpd2j4qKr_Blsf5DnJzrWURse5aFyTwHazkTEJzURaQzOOSoltGdmS4"
+        }
+      ]
+    },
+    {
+      "query": "warriors standings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T05:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50380187/joe-lacob-thinks-warriors-nailed-drafting-yaxel-lendeborg",
+        "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/yaxel-lendeborg-rookie-of-the-year-race/1976860/",
+        "https://sports.yahoo.com/articles/warriors-owner-admits-yaxel-lendeborg-050707746.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVQU0r7tFaR459VyZeVxnVvnnSD8wsyousA-1CyV9Ta45X8IZQMoHxw1OnQVY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50380187/joe-lacob-thinks-warriors-nailed-drafting-yaxel-lendeborg",
+          "title": "Warriors owner Joe Lacob ecstatic with early Yaxel Lendeborg returns",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVQU0r7tFaR459VyZeVxnVvnnSD8wsyousA-1CyV9Ta45X8IZQMoHxw1OnQVY"
+        },
+        {
+          "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/yaxel-lendeborg-rookie-of-the-year-race/1976860/",
+          "title": "Where Warriors' Yaxel Lendeborg ranks in Rookie of the Year race after two weeks",
+          "publisher": "NBC Sports Bay Area & California",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpw0r85tQXFbiKXUol3M5nnFBBA3k_mjLrb9pjfJG5yg3KxnKwcK-nM3EQl1w"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/warriors-owner-admits-yaxel-lendeborg-050707746.html",
+          "title": "Warriors owner admits Yaxel Lendeborg has changed his thoughts on making trades",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJ2ywEHGyej6unnu60xYr1wEZ2kyr9m0zgYKGJ3ymO1Sn9eTOjkayvqgespS0"
+        }
+      ]
+    },
+    {
+      "query": "nba.",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T05:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50391857/bronny-james-sent-lakers-g-league-affiliate",
+        "https://www.nba.com/news/bronny-james-assigned-to-g-league-again-by-lakers",
+        "https://sports.yahoo.com/nba/article/bronny-james-assigned-to-g-leagues-coachella-valley-lakers-after-playing-limited-minutes-early-in-third-nba-season-221007643.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAjB-kGwYkeMU0Rxd-h_AmW5k055kJTcPY4Tmd8KfW6wKB7Lx5u2a0DnAeFFc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50391857/bronny-james-sent-lakers-g-league-affiliate",
+          "title": "Bronny James assigned to Coachella Valley Lakers in G League",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAjB-kGwYkeMU0Rxd-h_AmW5k055kJTcPY4Tmd8KfW6wKB7Lx5u2a0DnAeFFc"
+        },
+        {
+          "url": "https://www.nba.com/news/bronny-james-assigned-to-g-league-again-by-lakers",
+          "title": "Bronny James assigned to G League by Lakers",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5bxI9nkhl8B7bUanx3DjiZv9pULwwfK1W4OQsV8JKVPxzhQ4-k0Ifb1O_NFs"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/article/bronny-james-assigned-to-g-leagues-coachella-valley-lakers-after-playing-limited-minutes-early-in-third-nba-season-221007643.html",
+          "title": "Bronny James assigned to G League's Coachella Valley Lakers after playing limited minutes early in third NBA season",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmk-whXuyXV6GAPodc5NDmb8W6vGoz40i3AAmNfRH3bjCIi9cHW4yS-vX4r7A"
+        }
+      ]
+    },
+    {
+      "query": "19 year old elected",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T05:30:00Z",
+      "related_news_urls": [
+        "https://whdh.com/news/19-year-old-elected-to-massachusetts-house-knocking-off-16-year-incumbent/",
+        "https://www.cbsnews.com/boston/news/19-year-old-daniel-darris-oconnor-elected-billerica-massachusetts/",
+        "https://www.bostonglobe.com/2026/11/04/metro/darris-oconnor-lombardo-billerica-legislature/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXIG2I-5CpjnKz72WwpfQhDjbtrXFHXAn8vTldZzgiQc1By5NKIaO8GbB8GfE",
+      "image_credit": "WHDH",
+      "news": [
+        {
+          "url": "https://whdh.com/news/19-year-old-elected-to-massachusetts-house-knocking-off-16-year-incumbent/",
+          "title": "19-year-old elected to Massachusetts House, knocking off 16-year incumbent - Boston News, Weather, Sports",
+          "publisher": "WHDH",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXIG2I-5CpjnKz72WwpfQhDjbtrXFHXAn8vTldZzgiQc1By5NKIaO8GbB8GfE"
+        },
+        {
+          "url": "https://www.cbsnews.com/boston/news/19-year-old-daniel-darris-oconnor-elected-billerica-massachusetts/",
+          "title": "19-year-old Democrat unseats longtime Republican Massachusetts state lawmaker",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxU4_loVXzIoTaO0FF2Uwp5tqsTFxfAS-EeUk3B4IBhFwngPHFpl85eXUoE9g"
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/04/metro/darris-oconnor-lombardo-billerica-legislature/",
+          "title": "A teen knocked off a sitting Mass. lawmaker. He’s among the youngest members of Tuesday’s blue wave.",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu9Wswt8-U2um7GjsRmU_n1H3QgRUXVe-g5UoxAGgHdk0iTit130K6ZShWRlU"
         }
       ]
     }
