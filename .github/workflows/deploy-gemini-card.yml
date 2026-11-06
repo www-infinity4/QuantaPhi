@@ -56,7 +56,7 @@ jobs:
           const data=JSON.parse(readFileSync('/tmp/infinity-rogers-before.json','utf8'));
           if(data.success!==true)throw Error('Existing Worker settings are unreadable; no deployment');
           const map=new Map((data.result?.bindings||[]).map(b=>[b.name,b]));
-          for(const [name,type] of Object.entries({AI:'ai',METER_DB:'d1',BRAIN:'service',GEMINI_API_KEY:'secret_text'})){
+          for(const [name,type] of Object.entries({AI:'ai',METER_DB:'d1',GEMINI_API_KEY:'secret_text'})){
             if(map.get(name)?.type!==type)throw Error('Existing production model binding missing or different: '+name);
           }
           // Every non-secret live binding must be represented in the source file.
@@ -97,5 +97,7 @@ jobs:
           }
           if(current.get('CONNECTIONS_SERVICE')?.type!=='service')
             throw Error('New Google connection verification binding missing');
+          if(current.get('BRAIN')?.type!=='service')
+            throw Error('Existing BRAIN service binding still missing after deployment');
           console.log('Production Gemini card deployed; all previous Worker bindings preserved.');
           NODE
