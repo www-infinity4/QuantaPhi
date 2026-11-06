@@ -320,3 +320,19 @@ test('Google callback received in a different Android tab resumes verified walle
  assert.match(ui.get('bubblesSigninStatus').textContent,/Google sign-in verified/);
  assert.equal(ui.get('bubblesCloudflareCard').hidden,false,'Google authorization does not grant Cloudflare permissions');
 });
+
+
+test('Bubbles chat and Account Connections share the current Google and Cloudflare connector code',()=>{
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const html=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
+ const accounts=readFileSync(new URL('../bubbles-accounts.html',import.meta.url),'utf8');
+ const gate=readFileSync(new URL('../bubbles-signin-gate.mjs',import.meta.url),'utf8');
+ const shared=readFileSync(new URL('../bubbles-connections-gate.mjs',import.meta.url),'utf8');
+ assert.doesNotMatch(source,/bubbles-connections\.mjs\?v=20261026-full-consent6/,'Old October connector cannot be loaded in chat');
+ for(const content of [source,accounts,shared])
+  assert.match(content,/bubbles-connections\.mjs\?v=20261105-google-android-return4/);
+ for(const content of [source,html])
+  assert.match(content,/bubbles-signin-gate\.mjs\?v=20261105-google-android-return4/);
+ assert.match(gate,/bubbles-connections-gate\.mjs\?v=20261105-google-android-return4/);
+ assert.match(html,/bubbles-ai\.js\?v=20261105-google-android-return4/);
+});
