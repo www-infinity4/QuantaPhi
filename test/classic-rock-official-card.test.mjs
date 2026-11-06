@@ -7,7 +7,7 @@ test('five verified artist channels and original band-controlled releases, never
  assert.deepEqual(CLASSIC_ROCK_BANDS.map(b=>b.id),['pink-floyd','reo-speedwagon','cheap-trick','journey','styx']);
  for(const band of CLASSIC_ROCK_BANDS){
   assert.ok(band.name&&band.feature&&band.youtube.startsWith('https://www.youtube.com/'));
-  assert.ok(b.offers.length>=1);
+  assert.ok(band.offers.length>=1);
   assert.ok(linkIsAllowed(band.youtube));
   for(const offer of band.offers){
    assert.ok(linkIsAllowed(offer.url),band.name+' '+offer.url);
