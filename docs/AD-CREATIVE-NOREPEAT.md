@@ -2,7 +2,7 @@
 
 Canonical owner request: **every ad shown must be new, never a recycled impression**.
 Related issue: [#1608](https://github.com/www-infinity4/QuantaPhi/issues/1608).
-This is source code on a review branch; it is **not a live Cloudflare migration or deployment**.
+The additive ad_creatives and ad_seen_receipts schema was applied and independently read back in the existing Cloudflare D1 on 2026-11-06; the Worker endpoint and QuantaPhi homepage changes remain only on a draft review branch, **not deployed**.
 
 ## What now works in source
 - Quick Ads selects only unseen ad IDs. When inventory is exhausted, it returns no ad.
