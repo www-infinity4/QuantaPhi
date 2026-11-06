@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T09:01:53.217407Z",
+  "checked_at": "2026-11-06T09:31:29.915225Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "bath and body works advent calendar",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T09:00:00Z",
+      "related_news_urls": [
+        "https://www.bbwinc.com/media/stories/bath-body-works-introduces-the-2026-feel-the-wonder-advent-calendar",
+        "https://totallythebomb.com/bath-body-works-feel-the-wonder-advent-calendar-2026/",
+        "https://www.usatoday.com/story/money/holidays/2026/11/03/bath-body-works-advent-calendar-early-orders/92479191007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQo7yhCGW-9RVkQGQoC5qMgadCg2nTM1pVBYWmTSE7_QcpDTlMtg2V81Xts4",
+      "image_credit": "https://www.bbwinc.com/",
+      "news": [
+        {
+          "url": "https://www.bbwinc.com/media/stories/bath-body-works-introduces-the-2026-feel-the-wonder-advent-calendar",
+          "title": "Bath & Body Works Introduces the 2026 Feel the Wonder Advent Calendar",
+          "publisher": "https://www.bbwinc.com/",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQo7yhCGW-9RVkQGQoC5qMgadCg2nTM1pVBYWmTSE7_QcpDTlMtg2V81Xts4"
+        },
+        {
+          "url": "https://totallythebomb.com/bath-body-works-feel-the-wonder-advent-calendar-2026/",
+          "title": "Bath & Body Works’ $50 Advent Calendar Has a Tiny Cookie-Sheet Holder and Seven Full-Size Finds",
+          "publisher": "Totally The Bomb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvPuLu5o61AYTOOWs-q2__PT15SV2XBb19OuonR3rJVfahPPPKgRizzxCUHOw"
+        },
+        {
+          "url": "https://www.usatoday.com/story/money/holidays/2026/11/03/bath-body-works-advent-calendar-early-orders/92479191007/",
+          "title": "Get early access to Bath & Body Works' Advent calendar",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnTQSZwOw2xwDlv853eLHWFGm8aDmgh5BnfCTNj3ybjpKaXW6kU991fcpFpZw"
+        }
+      ]
+    },
+    {
+      "query": "hltv",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T09:00:00Z",
+      "related_news_urls": [
+        "https://www.dust2.us/news/79679/iowa-stormboars-h0nest-breaks-into-hltv-top-50-prospects-at-33",
+        "https://www.dust2.us/news/79678/na-counter-strike-legend-rambo-nominated-for-hltv-hall-of-fame",
+        "https://pley.gg/cs2/dupreeh-kennys-and-neo-make-hltvs-2026-hall-of-fame-ballot/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_sjFA_ccZmOrIWWPoWNL0nafJgLZhmPRgjqWi8HcrjnI-y7SNVA6AV4PvzPw",
+      "image_credit": "Dust2.us",
+      "news": [
+        {
+          "url": "https://www.dust2.us/news/79679/iowa-stormboars-h0nest-breaks-into-hltv-top-50-prospects-at-33",
+          "title": "Iowa Stormboar's H0NeST breaks into HLTV Top 50 Prospects at #33",
+          "publisher": "Dust2.us",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_sjFA_ccZmOrIWWPoWNL0nafJgLZhmPRgjqWi8HcrjnI-y7SNVA6AV4PvzPw"
+        },
+        {
+          "url": "https://www.dust2.us/news/79678/na-counter-strike-legend-rambo-nominated-for-hltv-hall-of-fame",
+          "title": "NA Counter-Strike legend Rambo nominated for HLTV Hall of Fame",
+          "publisher": "Dust2.us",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSkhCw_aiuFOSZGQ6nJszwS-h1MW4VwhwVC4DSWXsrfWXwYwqYl8EP39fZ65w"
+        },
+        {
+          "url": "https://pley.gg/cs2/dupreeh-kennys-and-neo-make-hltvs-2026-hall-of-fame-ballot/",
+          "title": "dupreeh, kennyS and NEO on the 2026 HLTV Hall of Fame ballot",
+          "publisher": "Pley.gg",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUEnXbkmg03hOygL9uZir7s571oMXr-A9uibeJ8HnbGNl8ZkUYtJP7E04AObU"
+        }
+      ]
+    },
+    {
+      "query": "el niño",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T08:50:00Z",
+      "related_news_urls": [
+        "https://www.telemundo20.com/noticias/local/calor-san-diego-atencion-posible-historico-fenomeno-nino/2552046/",
+        "https://cadenanoticias.com/regional/2026/11/alertan-por-riesgo-de-inundaciones-costeras-en-el-condado-de-san-diego",
+        "https://www.telemundoareadelabahia.com/noticias/local/condado-san-mateo-el-nino/2570717/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTRcVhR4HLCZQ2HWQD6ABvAXgRBURaD0_VIpZ5rSkFPqfAcfkk6r_E-e83MVU",
+      "image_credit": "Telemundo San Diego",
+      "news": [
+        {
+          "url": "https://www.telemundo20.com/noticias/local/calor-san-diego-atencion-posible-historico-fenomeno-nino/2552046/",
+          "title": "Calor récord en San Diego aumenta la atención ante un posible histórico fenómeno de El Niño",
+          "publisher": "Telemundo San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTRcVhR4HLCZQ2HWQD6ABvAXgRBURaD0_VIpZ5rSkFPqfAcfkk6r_E-e83MVU"
+        },
+        {
+          "url": "https://cadenanoticias.com/regional/2026/11/alertan-por-riesgo-de-inundaciones-costeras-en-el-condado-de-san-diego",
+          "title": "Alertan por riesgo de inundaciones costeras en el condado de San Diego",
+          "publisher": "Cadena Noticias",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMhc_SFxZrcUGHYApV2NFRwiEj9phnXq-_ngI1VI4gFVaxYN_38kuR6Sk9mVA"
+        },
+        {
+          "url": "https://www.telemundoareadelabahia.com/noticias/local/condado-san-mateo-el-nino/2570717/",
+          "title": "El condado de San Mateo se prepara para El Niño",
+          "publisher": "Telemundo Area de la Bahia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3ZFN3zppYA8V37jV1TxQFpbBdyeqlP4qWqlsJ3SbDuIibKk89NbD4PvNz8dE"
+        }
+      ]
+    },
     {
       "query": "baltimore ravens lamar jackson negotiations",
       "approx_searches": "500+",
@@ -118,7 +223,7 @@
       "related_news_urls": [
         "https://www.gsp.ro/sporturi/tenis/live-sorana-cirstea-mary-stoiana-optimile-wta-250-hong-kong-995907.html",
         "https://www.sport.ro/tenis/ultima-adversara-usoara-cum-arata-posibilul-traseu-al-soranei-cirstea-spre-trofeu-la-hong-kong.html",
-        "https://www.eurosport.ro/tenis/hong-kong-tennis-open/2025/sorana-cirstea-isi-stie-adversara-din-semifinalele-de-la-hong-kong.-cu-cine-joaca-daca-trece-de-shubladze_sto23352738/story.shtml"
+        "https://www.eurosport.ro/tenis/prudential-hong-kong-tennis-open/2026/live-sorana-cirstea-alexandra-shubladze_mtc22041432/live.shtml"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUBwHdNfSIHvpd_Zql6Jp1VZ8uc6jl3c9CXfcG47mq5pmq2RAYva61hRgV2Ms",
       "image_credit": "GSP",
@@ -138,11 +243,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpkeU8rF75GTC8K8xuw1qKKSVIak9oIvM3SchzuIu_adHv37pWojEYdE4abOI"
         },
         {
-          "url": "https://www.eurosport.ro/tenis/hong-kong-tennis-open/2025/sorana-cirstea-isi-stie-adversara-din-semifinalele-de-la-hong-kong.-cu-cine-joaca-daca-trece-de-shubladze_sto23352738/story.shtml",
-          "title": "Cîrstea îşi ştie adversara din semifinalele de la Hong Kong. Cu cine joacă dacă trece de Shubladze",
+          "url": "https://www.eurosport.ro/tenis/prudential-hong-kong-tennis-open/2026/live-sorana-cirstea-alexandra-shubladze_mtc22041432/live.shtml",
+          "title": "Sorana Cîrstea - Alexandra Shubladze Rezumat: Tenis Scoruri & Rezumate",
           "publisher": "Eurosport",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ1VVtWcvu-X8vGUtNsxyGUlZIEllNSz16hRbvjOzcS2DzXgOcXdJLRZbKcBc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-8SaNwp3hIr_F7Hngf8qcTMX7vAvo6tiVZiiThKZwhMTHhFN39DNphkX3ZM4"
         }
       ]
     },
@@ -183,7 +288,7 @@
     },
     {
       "query": "zelda switch 2 console",
-      "approx_searches": "500+",
+      "approx_searches": "200+",
       "published_at": "2026-11-06T08:20:00Z",
       "related_news_urls": [
         "https://mashable.com/tech/zelda-switch-2-restock-retailers-where-to-buy-nov-5",
@@ -248,111 +353,6 @@
           "publisher": "ИФЗ РАН",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvcJhXYMr0XbJTWf8KT0bl_G5iU9h-lJTDW6uiKLX4SRoPi940MqweGMetCI"
-        }
-      ]
-    },
-    {
-      "query": "mobland season 2",
-      "approx_searches": "100+",
-      "published_at": "2026-11-06T08:20:00Z",
-      "related_news_urls": [
-        "https://www.mensjournal.com/entertainment/mobland-season-2-episode-8-streaming-time-plot",
-        "https://www.forbes.com/sites/erikkain/2026/11/03/mobland-season-2-episode-8-release-date-time-paramount-plus/",
-        "https://www.yahoo.com/entertainment/tv/articles/many-episodes-mobland-season-2-153000671.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg_DBgoC3W3B83byU7f6HTgAgLsoBG_4XE0iQJfIp5dQRioSRIHy7Tn-ko88U",
-      "image_credit": "Men's Journal",
-      "news": [
-        {
-          "url": "https://www.mensjournal.com/entertainment/mobland-season-2-episode-8-streaming-time-plot",
-          "title": "‘MobLand’ Season 2 Enters the Endgame With Pivotal Episode 8, Streaming Very Soon",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg_DBgoC3W3B83byU7f6HTgAgLsoBG_4XE0iQJfIp5dQRioSRIHy7Tn-ko88U"
-        },
-        {
-          "url": "https://www.forbes.com/sites/erikkain/2026/11/03/mobland-season-2-episode-8-release-date-time-paramount-plus/",
-          "title": "‘MobLand’ Season 2, Episode 8 Release Time And Preview: Did Harry Just Dig His Own Grave?",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3qAOOwp11B6hIGveAOUwxtfXkLkN_2rWhTNVZR64l6M7om_XQ7WsUi77_BpM"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/many-episodes-mobland-season-2-153000671.html",
-          "title": "How Many Episodes Are In ‘MobLand’ Season 2? ‘MobLand’ Season 3 Info",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQtMWiORX2ANLCj70w6vwooZNI_Nb3nubyGoVOdSuAv_JdrSes2VGggy2pCfE"
-        }
-      ]
-    },
-    {
-      "query": "alexandra shubladze",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T08:10:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-rinky-hijikata-game-spread-nov-06-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/moyuka-uchijima-vs-magda-linette-set-1-winner-nov-05-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/moyuka-uchijima-vs-magda-linette-set-2-winner-nov-05-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNuLglb1tkJs2NHIpp1wX8e-dZm7veHgAoHj8NL71I7OnbRdKa3Pjo7hl2v5Y",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/luca-van-assche-vs-rinky-hijikata-game-spread-nov-06-2026/",
-          "title": "November 6, 2026: Luca Van Assche vs Rinky Hijikata: Game Spread Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNuLglb1tkJs2NHIpp1wX8e-dZm7veHgAoHj8NL71I7OnbRdKa3Pjo7hl2v5Y"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/moyuka-uchijima-vs-magda-linette-set-1-winner-nov-05-2026/",
-          "title": "November 5, 2026: Moyuka Uchijima vs Magda Linette: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQa9IuEvtV-rMNzjgBJkVI9NXBSEW6WFkBZ7rVtUn1V_yCvK9c4G4QQyEvtlZU"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/moyuka-uchijima-vs-magda-linette-set-2-winner-nov-05-2026/",
-          "title": "November 5, 2026: Moyuka Uchijima vs Magda Linette: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReJeHI9bTzPaOln_33cxa4fI02psbp05xA9NvHlZy_W5cJgLkE4iSH8KPiWqk"
-        }
-      ]
-    },
-    {
-      "query": "brooks",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T08:10:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
-        "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns",
-        "https://www.espn.com/nba/story/_/id/50365914/warriors-draymond-green-ejected-scuffle-suns"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9L3IbesFtC2R1bQ6RajCERU_JICdBLNrJcO1GjSHMhdXh6QjCubt-P_Fq0E8",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
-          "title": "Steph Curry says Draymond's ejection 'lit a fire' in Warriors",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9L3IbesFtC2R1bQ6RajCERU_JICdBLNrJcO1GjSHMhdXh6QjCubt-P_Fq0E8"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns",
-          "title": "Draymond Green Rips Dillon Brooks, Won't Respect His 'Energy' After Altercation in Warriors-Suns",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1RPn5xpd2j4qKr_Blsf5DnJzrWURse5aFyTwHazkTEJzURaQzOOSoltGdmS4"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50365914/warriors-draymond-green-ejected-scuffle-suns",
-          "title": "Draymond Green ejected after scuffle with Suns as Warriors rally for win",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfpZXFyT6xWztDpNBcd_wFkIZ626NYNJoILXFw3DIfFU0MNTtTw3JYoDsW7EQ"
         }
       ]
     }
