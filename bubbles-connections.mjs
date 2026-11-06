@@ -653,6 +653,7 @@ export function mountConnections(container,{token}) {
       status.textContent=client.pending?'Complete or cancel the current sign-in.':
         dataAccounts.accounts.length?'Account connection status verified.':'No connected accounts yet.';
       cancel.hidden=!client.pending;
+      return signedIn;
     }catch(error) {
       if(version===loadVersion)status.textContent=error?.message==='verified_wallet_required'?
         'This browser has no verified Bubbles account session. Open Bubbles in the browser where you are signed in.':
@@ -664,12 +665,18 @@ export function mountConnections(container,{token}) {
     cancel.hidden=true;
     clearProviderReturn();
     if(error){
-      // The resumed page was rendered with all buttons disabled while pending.
-      // A failed/expired attempt must restore Cloudflare Sign in immediately.
+      // Failed or expired handoffs must remain visible and must not redirect.
       const message=error.message;
       await load();status.textContent=message;
     }else{
-      status.textContent='Connected '+account.label+'.';await load();
+      // The server receipt alone is not a client-side sign-in badge: reread
+      // this wallet's verified connections before sending Android back to chat.
+      const verified=await load();
+      if((recoverGoogle||recoverCloudflare)&&account?.id&&
+        verified?.get(returnProvider)?.id===account.id&&
+        typeof window.location?.replace==='function'){
+        window.location.replace('/bubbles.html');
+      }else status.textContent='Connected '+account.label+'.';
     }
   },{recoverGoogle,recoverCloudflare})){cancel.hidden=false;status.textContent='Finishing account authorization securely…';}
   return {client,refresh:load};
