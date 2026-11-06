@@ -3,17 +3,176 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T21:01:29.392520Z",
+  "checked_at": "2026-11-06T21:31:04.840561Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "umass basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T21:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/gamethread-boston-college-men-basketball-201603734.html",
+        "https://www.basketunderreview.com/friday-watchlist-november-6-2026/",
+        "https://www.espn.com/espnplus/player/_/eventCalendarId/401909552"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rJPGg035kBWwIyB8FKa6AZ1GOGRR58c1cny8UZ5qCxD6_gQmCKS2Qw0IcnY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/gamethread-boston-college-men-basketball-201603734.html",
+          "title": "Gamethread: Boston College Men’s Basketball vs UMass",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rJPGg035kBWwIyB8FKa6AZ1GOGRR58c1cny8UZ5qCxD6_gQmCKS2Qw0IcnY"
+        },
+        {
+          "url": "https://www.basketunderreview.com/friday-watchlist-november-6-2026/",
+          "title": "Friday Watchlist: November 6, 2026",
+          "publisher": "Basket Under Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGR4hVLoZQcXJ2RhUfBjZcrqkJ9IhFBPEypO-WhchNk6ozUx5ZrOiMxFHpQMw"
+        },
+        {
+          "url": "https://www.espn.com/espnplus/player/_/eventCalendarId/401909552",
+          "title": "Massachusetts vs. Boston College",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6SFZbZAi8D3c0MQQVc-YF6vU3su7EH1QaGr9ElmncGti6ST6KBOejv0RjNno"
+        }
+      ]
+    },
+    {
+      "query": "charlie woods florida state signing",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T21:10:00Z",
+      "related_news_urls": [
+        "https://people.com/tiger-woods-ex-elin-nordegren-pose-together-son-charlie-officially-commits-florida-state-12240606",
+        "https://golfweek.usatoday.com/story/sports/golf/college/2026/11/06/tiger-woods-applauds-charlie-woods-florida-state-mens-golf-cap/92644580007/",
+        "https://www.palmbeachpost.com/story/sports/college/golf/2026/11/06/charlie-woods-tiger-woods-florida-state-signing-day-ceremony-high-school-benjamin/92632308007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReuvT04AZf8ONObghI0OunT1S1G0T7ZFkbmSJGm-VufQFsR92k2fVxTNood_8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/tiger-woods-ex-elin-nordegren-pose-together-son-charlie-officially-commits-florida-state-12240606",
+          "title": "Tiger Woods and Ex Elin Nordegren Pose Together as Son Charlie Officially Commits to Florida State",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReuvT04AZf8ONObghI0OunT1S1G0T7ZFkbmSJGm-VufQFsR92k2fVxTNood_8"
+        },
+        {
+          "url": "https://golfweek.usatoday.com/story/sports/golf/college/2026/11/06/tiger-woods-applauds-charlie-woods-florida-state-mens-golf-cap/92644580007/",
+          "title": "Tiger Woods on hand as son Charlie Woods makes Florida State decision official",
+          "publisher": "Golfweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbigG4ege_Rdt6psd3GICrMMSqqJldbLU-MIH553CZr1jtul5ViH-tXofrFhc"
+        },
+        {
+          "url": "https://www.palmbeachpost.com/story/sports/college/golf/2026/11/06/charlie-woods-tiger-woods-florida-state-signing-day-ceremony-high-school-benjamin/92632308007/",
+          "title": "Charlie Woods dons Florida State cap in signing day ceremony",
+          "publisher": "The Palm Beach Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD3_hn2J6F-7FAjxecMo_N0__Yj-1t3aVGFkjn8YZk5qcbYsYrOfh381yVMZs"
+        }
+      ]
+    },
+    {
+      "query": "gamemill entertainment xbox game delisting",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T21:00:00Z",
+      "related_news_urls": [
+        "https://www.purexbox.com/news/2026/11/xbox-publisher-announces-four-games-being-delisted-by-end-of-2026",
+        "https://www.pushsquare.com/news/2026/11/these-8plus-ps5-games-will-be-delisted-in-november-and-december-2026",
+        "https://comicbook.com/gaming/news/avatar-the-last-airbender-game-delisted/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHXUnVssgrwXxx9B6tahyVvyWExOrKT2jM3QEB7AxLfW6DYPiCaNyrNX9F4O0",
+      "image_credit": "Pure Xbox",
+      "news": [
+        {
+          "url": "https://www.purexbox.com/news/2026/11/xbox-publisher-announces-four-games-being-delisted-by-end-of-2026",
+          "title": "Xbox Publisher Announces Four Games Being Delisted By End Of 2026",
+          "publisher": "Pure Xbox",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHXUnVssgrwXxx9B6tahyVvyWExOrKT2jM3QEB7AxLfW6DYPiCaNyrNX9F4O0"
+        },
+        {
+          "url": "https://www.pushsquare.com/news/2026/11/these-8plus-ps5-games-will-be-delisted-in-november-and-december-2026",
+          "title": "These 8+ PS5 Games Will Be Delisted in November and December 2026",
+          "publisher": "Push Square",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMssQGCQpJZ6gPjiT_8oNKIosG93TEn_PdhXApRm3ihr5plorVyQ7_XEC7ds"
+        },
+        {
+          "url": "https://comicbook.com/gaming/news/avatar-the-last-airbender-game-delisted/",
+          "title": "2023 Avatar: The Last Airbender Release Is Being Permanently Removed From Sale",
+          "publisher": "ComicBook.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNZfCjPf26NuDjblSVoX-yEgzfD5bZmjbe_YKtysHlbBFD7kOuprBq-oD12TQ"
+        }
+      ]
+    },
+    {
+      "query": "michael sanft",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T20:50:00Z",
+      "related_news_urls": [
+        "https://wcti12.com/news/nation-world/las-vegas-attorney-michael-sanft-died-represented-tupac-shakur-murder-suspect-duane-davis-sources"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo8a1vTrfsY0Teo9AcxB7Arioe-VVZ3ktyZ7_FOvLYj-1fIBe1Quh4KBaXoWY",
+      "image_credit": "WCTI",
+      "news": [
+        {
+          "url": "https://wcti12.com/news/nation-world/las-vegas-attorney-michael-sanft-died-represented-tupac-shakur-murder-suspect-duane-davis-sources",
+          "title": "Las Vegas attorney who represented Tupac Shakur murder suspect has died: sources",
+          "publisher": "WCTI",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo8a1vTrfsY0Teo9AcxB7Arioe-VVZ3ktyZ7_FOvLYj-1fIBe1Quh4KBaXoWY"
+        }
+      ]
+    },
+    {
+      "query": "sevilla vs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T20:40:00Z",
+      "related_news_urls": [
+        "https://sevillafc.es/actualidad/noticias/convocatoria-odysseas-grecia-noviembre-26",
+        "https://imd.sevilla.org/noticias/sevilla-vs-bullying",
+        "https://www.elconfidencial.com/sociedad/2026-11-06/municipios-contra-acoso-escolar-1hms-1svm_4460520/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh_AMRKEs6nNco7hSrJk-aBx9kqEZytQJ5X-pYr06ARny-8_GjSrXZ-UVBRgg",
+      "image_credit": "Sevilla FC",
+      "news": [
+        {
+          "url": "https://sevillafc.es/actualidad/noticias/convocatoria-odysseas-grecia-noviembre-26",
+          "title": "ODYSSEAS REPITE CON GRECIA PARA EL PARÓN DE NOVIEMBRE",
+          "publisher": "Sevilla FC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh_AMRKEs6nNco7hSrJk-aBx9kqEZytQJ5X-pYr06ARny-8_GjSrXZ-UVBRgg"
+        },
+        {
+          "url": "https://imd.sevilla.org/noticias/sevilla-vs-bullying",
+          "title": "Sevilla vs Bullying",
+          "publisher": "Instituto Municipal de Deportes de Sevilla",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuuLlc8aTMUroxh7QPYjSxJP-NxDZckqvTezaShb4sI8dn8wvj5HM7gO-g-t8"
+        },
+        {
+          "url": "https://www.elconfidencial.com/sociedad/2026-11-06/municipios-contra-acoso-escolar-1hms-1svm_4460520/",
+          "title": "Más de 20 ciudades se unen contra el bullying y llevan a sus ayuntamientos el mensaje del fútbol español",
+          "publisher": "El Confidencial",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRod15iQEbosQhiagUWuugxqWn-O2mJ2j2wu7P1plRy_svemIC_c6ySxuN2zw"
+        }
+      ]
+    },
     {
       "query": "austin simmons",
       "approx_searches": "500+",
       "published_at": "2026-11-06T20:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/college-football/story/_/id/50400199/sources-qb-austin-simmons-re-signs-missouri-2027",
-        "https://bleacherreport.com/articles/25529974-austin-simmons-reportedly-returning-missouri-new-contract-will-skip-2027-nfl-draft",
-        "https://www.si.com/college/missouri/football/mizzou-qb-austin-simmons-re-signs-for-2027-season-per-report"
+        "https://247sports.com/college/missouri/article/quarterback-austin-simmons-re-signs-with-missouri-for-2027-season-292254068/",
+        "https://www.cbssports.com/college-football/news/austin-simmons-re-signs-missouri-2027-season-expectations/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4oAHZAq4HmS-paJgBz4AZEzRHzWvYd4WAgKZ0hox39KP-wtJN27XCBnf2Io",
       "image_credit": "ESPN",
@@ -26,18 +185,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4oAHZAq4HmS-paJgBz4AZEzRHzWvYd4WAgKZ0hox39KP-wtJN27XCBnf2Io"
         },
         {
-          "url": "https://bleacherreport.com/articles/25529974-austin-simmons-reportedly-returning-missouri-new-contract-will-skip-2027-nfl-draft",
-          "title": "Austin Simmons Reportedly Returning to Missouri on New Contract, Will Skip 2027 NFL Draft",
-          "publisher": "Bleacher Report",
+          "url": "https://247sports.com/college/missouri/article/quarterback-austin-simmons-re-signs-with-missouri-for-2027-season-292254068/",
+          "title": "Quarterback Austin Simmons re-signs with Missouri for 2027 season",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvDimmaYZz65MaC2eZhUtLKkE1rlbRunbXhN4LEisqNXBcQYn2z73QqwhpNrY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRX3xM2l4PRfIuO8kpYw_5Qz0cwRm0_qeJVVpJARe4Cl4CzeoB1ABH5Ky1v6M"
         },
         {
-          "url": "https://www.si.com/college/missouri/football/mizzou-qb-austin-simmons-re-signs-for-2027-season-per-report",
-          "title": "Mizzou QB Austin Simmons re-signs for 2027 season, per report",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.cbssports.com/college-football/news/austin-simmons-re-signs-missouri-2027-season-expectations/",
+          "title": "Austin Simmons re-signs with Missouri: Tigers set for high expectations in 2027 with star QB returning",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_llX_spd4ZbqojCm23USG91K-ZFjnRXM_1TcmBX1Tt0GfVziy4bh_I79Q5bQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFVvbMriVe7_bRslznNH2IWn_Hm8qlFas3MywoLyGNgksIltjVYN9IBUQf4r4"
         }
       ]
     },
@@ -46,13 +205,20 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-06T20:30:00Z",
       "related_news_urls": [
+        "https://katu.com/news/nation-world/father-suspected-of-throwing-2-kids-from-parking-garage-murder-suicide-was-depressed-after-layoff-mother-says-mt-lebanon-allegheny-county-pennsylvania-williams-syndrome",
         "https://people.com/dad-had-been-laid-off-and-was-depressed-before-fatally-jumping-off-garage-with-two-kids-6-and-8-12238419",
-        "https://nypost.com/2026/11/06/us-news/patrick-lynch-cause-of-death-after-pittsburgh-murders/",
-        "https://www.cbsnews.com/pittsburgh/news/mt-lebanon-murder-suicide-christmas-lights/"
+        "https://nypost.com/2026/11/06/us-news/patrick-lynch-cause-of-death-after-pittsburgh-murders/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8RDFhfpZjvZslZJr1KJBkvNpYi9rLdmk_HfevsKPEytTOmTF-U1L6GBDpUPA",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUNaZNyTOwIUc79VY6zfmkW-KuXjJYQnhlZWRYWivg8NmyRL-oqnTxcuHJakY",
+      "image_credit": "KATU",
       "news": [
+        {
+          "url": "https://katu.com/news/nation-world/father-suspected-of-throwing-2-kids-from-parking-garage-murder-suicide-was-depressed-after-layoff-mother-says-mt-lebanon-allegheny-county-pennsylvania-williams-syndrome",
+          "title": "Father suspected of throwing kids to their deaths from garage was 'depressed,' mother says",
+          "publisher": "KATU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUNaZNyTOwIUc79VY6zfmkW-KuXjJYQnhlZWRYWivg8NmyRL-oqnTxcuHJakY"
+        },
         {
           "url": "https://people.com/dad-had-been-laid-off-and-was-depressed-before-fatally-jumping-off-garage-with-two-kids-6-and-8-12238419",
           "title": "Mom of Kids Pushed to Death in Murder-Suicide Says Killer Was ‘Wonderful Dad’ Who Was ‘Depressed’ After Layoff",
@@ -65,14 +231,7 @@
           "title": "Chilling new details about dad who threw two young kids from parking garage before jumping",
           "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSL_-sbIE9yuw7HCctl6iT5T_xHqBbZWfNr7DD3qLSzrl9fHHNRM5v8sEfw8AU"
-        },
-        {
-          "url": "https://www.cbsnews.com/pittsburgh/news/mt-lebanon-murder-suicide-christmas-lights/",
-          "title": "Mt. Lebanon community encouraged to put up Christmas lights early to honor 3 killed in murder-suicide",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN5dOs-tRBh1u5uIDRaLfiPbigHyKTe9HzBXme_ojcdbrafnkVI7XJu_JBGCE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgP3sHERS6yFN16fYrD0KQjZ4tfCo5DEfy_A7C_U4JMp71h_HeKxFhJC0G9qA"
         }
       ]
     },
@@ -83,7 +242,7 @@
       "related_news_urls": [
         "https://www.texastribune.org/2026/11/05/texas-democrats-house-speaker-senfronia-thompson-eddie-morales/",
         "https://www.click2houston.com/news/local/2026/11/05/texass-longest-serving-black-lawmaker-senfronia-thompson-now-one-step-away-from-most-powerful-seat-in-the-house/",
-        "https://www.kxan.com/news/texas-politics/watch-senfronia-thompson-holds-news-conference-on-house-speaker-campaign/"
+        "https://texasscorecard.com/state/senfronia-thompson-launches-speaker-bid-as-democrats-seize-texas-house/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPpVbZTRk3bCN323rX-i6vM8is91Yxgejkm-msBRogCjuX96aB6SfxAjZL76I",
       "image_credit": "The Texas Tribune",
@@ -103,11 +262,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7bbAnYoijmsh1Iez_4YS1Jrw-gEwpV3p291Rk0lGUqri3GL2YEHPBspqx-DM"
         },
         {
-          "url": "https://www.kxan.com/news/texas-politics/watch-senfronia-thompson-holds-news-conference-on-house-speaker-campaign/",
-          "title": "WATCH: Senfronia Thompson holds news conference on House speaker campaign",
-          "publisher": "KXAN Austin",
+          "url": "https://texasscorecard.com/state/senfronia-thompson-launches-speaker-bid-as-democrats-seize-texas-house/",
+          "title": "Senfronia Thompson Launches Speaker Bid as Democrats Seize Texas House",
+          "publisher": "Texas Scorecard",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpQ1OPlWP25k6LfGI9hbwaLyWDNGPsHHvpa-e5Ug5Mtr9xG_mLViKopEJglaU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVwP-xL7rO0MtKq7MXZcTpFJBGjzwBrMcY23Xa6ZCgP77negRaaUo-B9MS76Y"
         }
       ]
     },
@@ -178,181 +337,6 @@
           "publisher": "dna.fr",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz62SqYZaFNnNepwRfCrHlrlPPAl_Lov77kRknHDzBAhAo5_hXBm35YSRc5Sk"
-        }
-      ]
-    },
-    {
-      "query": "did the stock market crash today",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-06T20:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/06/business/dealbook/tech-investors-ai-rout.html",
-        "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html",
-        "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo8tveMYsXoX1pTxV0ALxHTey-vVp-V9YGDB-qpWZtgzUVsxag5UntU0nWwjw",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/06/business/dealbook/tech-investors-ai-rout.html",
-          "title": "After a $2.5 Trillion Wipeout, Tech Investors Brace for More Pain",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo8tveMYsXoX1pTxV0ALxHTey-vVp-V9YGDB-qpWZtgzUVsxag5UntU0nWwjw"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html",
-          "title": "Nasdaq attempts to recover from worst rout in 19 months as AI stocks see some buying: Live updates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oy9hvXksqG7nMjhOZve6zyQTZAiquHtw7qO6_kwpgaGnLUqG_BSDcUuIKkY"
-        },
-        {
-          "url": "https://apnews.com/article/markets-japan-nikkei-oil-ai-bba6f0bf9035a6e6b1c4fef3e8230b89",
-          "title": "AI stocks halt their brutal, worldwide sell-off as Wall Street trims its loss for the week",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHQLmvj5AwOY-uYWH8IKTjVPHjlYsbBBbA27Vp-HyDABI-kWXut_7eIxnwvCU"
-        }
-      ]
-    },
-    {
-      "query": "detención",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T20:20:00Z",
-      "related_news_urls": [
-        "https://www.expressnews.com/news/article/arrestan-y-acusan-en-eeuu-de-soborno-a-un-juez-22514762.php",
-        "https://www.bloomberg.com/news/articles/2026-11-05/fbi-detiene-a-juez-mexicano-ligado-a-caso-de-ryan-wedding",
-        "https://www.elfinanciero.com.mx/cdmx/2026/11/05/juez-mexicano-detenido-en-colombia-es-una-fichita-que-casos-polemicos-llevo/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxS21VbHznrSkJ8XlL_eEonYbqmxzISO_6kvQyqTlI0ndO6zg1rRES94HE-8",
-      "image_credit": "San Antonio Express-News",
-      "news": [
-        {
-          "url": "https://www.expressnews.com/news/article/arrestan-y-acusan-en-eeuu-de-soborno-a-un-juez-22514762.php",
-          "title": "Arrestan y acusan en EEUU de soborno a un juez mexicano en caso de narcotráfico internacional",
-          "publisher": "San Antonio Express-News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxS21VbHznrSkJ8XlL_eEonYbqmxzISO_6kvQyqTlI0ndO6zg1rRES94HE-8"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-05/fbi-detiene-a-juez-mexicano-ligado-a-caso-de-ryan-wedding",
-          "title": "FBI detiene a juez mexicano vinculado a pesquisa por narcotráfico de exolímpico",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR46zXKmtB5QaJOim178s8rhGE5U7IGP3Gs3Psp2YzVxfPc9lMoN82pSK_9yHw"
-        },
-        {
-          "url": "https://www.elfinanciero.com.mx/cdmx/2026/11/05/juez-mexicano-detenido-en-colombia-es-una-fichita-que-casos-polemicos-llevo/",
-          "title": "Juez mexicano detenido en Colombia es una ‘fichita’: ¿Qué casos polémicos llevó?",
-          "publisher": "El Financiero",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgQoy-xtATiqXxWgwIVReDi0ibBDd5SSjtzqr_J820Yr02L_QFyW62lW4rds4"
-        }
-      ]
-    },
-    {
-      "query": "rihanna",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T20:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/rihanna-naughty-christmas-surprise-gives-234445765.html",
-        "https://pagesix.com/2026/11/03/photos/rihanna-gets-cheeky-and-more-star-snaps/",
-        "https://www.the-sun.com/entertainment/17264767/rihanna-gift-red-lingerie-savage-fenty-christmas/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd5gBrF-YGVaDaLYl1pJ9ZVOkrh71VqKR7ngWamfEzTi-orCYcYmHQmHGe39Q",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/rihanna-naughty-christmas-surprise-gives-234445765.html",
-          "title": "Rihanna’s Naughty Christmas Surprise Gives Santa a Run for His Money",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd5gBrF-YGVaDaLYl1pJ9ZVOkrh71VqKR7ngWamfEzTi-orCYcYmHQmHGe39Q"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/03/photos/rihanna-gets-cheeky-and-more-star-snaps/",
-          "title": "Rihanna gets cheeky and more star snaps",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTotrhHtjT6htHhOc0O_QlCcSgnKni_nABzQ0BLLHLsxXptTo6AriZ0Wpyu3ZQ"
-        },
-        {
-          "url": "https://www.the-sun.com/entertainment/17264767/rihanna-gift-red-lingerie-savage-fenty-christmas/",
-          "title": "Rihanna calls herself a ‘GIFT’ in very naughty red lingerie and thigh highs for Savage x Fenty’s Christmas campaign",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6nOfscDnhFbBIpxy48JGw_vGO3cBbvVXyBxwo0wUFluZ5XTsEDlzzdvEs4ms"
-        }
-      ]
-    },
-    {
-      "query": "minnesota vikings quarterback trade rumors",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T20:10:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/vikings-to-start-carson-wentz-vs-bills-kyler-murray-hamstring",
-        "https://atozsports.com/nfl/minnesota-vikings-news/minnesota-vikings-dont-appear-to-be-done-at-the-quarterback-position-and-it-sends-a-strong-signal-about-the-future/",
-        "https://www.espn.com/nfl/story/_/id/50390732/vikings-start-qb-wentz-bills-murray-injured"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOI54QC0nZL4aySkqbhOx9TBg1KhR0-vGSaBw0kVWjTavuEYSGxJYmjy1Su6U",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/vikings-to-start-carson-wentz-vs-bills-kyler-murray-hamstring",
-          "title": "Vikings to start Carson Wentz vs. Bills on Monday with Kyler Murray battling hamstring injury",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOI54QC0nZL4aySkqbhOx9TBg1KhR0-vGSaBw0kVWjTavuEYSGxJYmjy1Su6U"
-        },
-        {
-          "url": "https://atozsports.com/nfl/minnesota-vikings-news/minnesota-vikings-dont-appear-to-be-done-at-the-quarterback-position-and-it-sends-a-strong-signal-about-the-future/",
-          "title": "Minnesota Vikings don't appear to be done at the quarterback position, and it sends a strong signal about the future",
-          "publisher": "A to Z Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGKrtqH5EKFoAHDXUMpXTAMbo5YBt4HbJoJ8PqPSt54K55OJjLsG2fq6O386g"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50390732/vikings-start-qb-wentz-bills-murray-injured",
-          "title": "Vikings to start QB Carson Wentz against Bills with Kyler Murray ruled out",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWuV7OTDlvgnjggkKDG60AHCkjMpb0GuUHARp-SuSw8CDT7C-Hyq53MxE9aJ0"
-        }
-      ]
-    },
-    {
-      "query": "toulouse vs strasbourg",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-06T19:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/match/_/gameId/401932840",
-        "https://www.espn.com/soccer/team-stats/_/gameId/401882809/league/esp.1",
-        "https://www.espn.com/soccer/team-stats/_/gameId/401874815/league/ita.1"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3xATYqvi39XuLfEAAZc9oAkOVb9o_-2f67XJIsNGA5PIB3dU0H91dYEHnzjA",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/match/_/gameId/401932840",
-          "title": "Tourcoing vs. Reims (Nov 14, 2026) Live Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3xATYqvi39XuLfEAAZc9oAkOVb9o_-2f67XJIsNGA5PIB3dU0H91dYEHnzjA"
-        },
-        {
-          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401882809/league/esp.1",
-          "title": "Sevilla vs. Alavés (Nov 6, 2026) Team Stats",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNCVQQLgmMLvxG7a4-JAbI02cEAL8ZTECBcH_j9z4GmeJKLFeISuxzJu4HszQ"
-        },
-        {
-          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401874815/league/ita.1",
-          "title": "Venezia vs. Udinese (Nov 6, 2026) Team Stats",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGHSE7M53UTYS-Jv599AD_lhsJHrB0y2hbbPSBK9TJbOjrnTa2YLoETYk1bcg"
         }
       ]
     }
