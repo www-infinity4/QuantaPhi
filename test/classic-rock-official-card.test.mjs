@@ -31,14 +31,17 @@ test('card appears by Steve Miller, ahead of 21 plus source listings, in the ori
  assert.match(deck(),/classicRockOfficialMusicCard:\['classic-rock-official-music','Music'/);
 });
 
-test('one compact button per artist, band-specific shop below, and no embedded player',()=>{
+test('one genuine in-card YouTube player, compact play buttons, band shops and fallback',()=>{
  const js=source();
- assert.match(js,/const artistLink = node\('a'/);
- assert.match(js,/artistLink\.href = band\.youtube/);
- assert.match(js,/artistLink\.target = '_blank'/);
- assert.match(js,/artistLink\.rel = 'noopener noreferrer'/);
+ assert.match(js,/const artistButton=node\('button'/);
+ assert.match(js,/artistButton\.type='button'/);
+ assert.match(js,/void playArtist\(band\)/);
+ assert.match(js,/new yt\.Player/);
+ assert.match(js,/videoId:band\.videoId/);
+ assert.match(js,/player\.pauseVideo\(\)/);
+ assert.match(js,/player\.destroy\(\)/);
  assert.match(js,/renderOffers\(band\)/);
- assert.match(js,/https?:\/\//);
- assert.doesNotMatch(js,/iframe|YT\.Player|audio\.play|video\.play|autoplay|YouTubeIframeAPIReady/);
+ assert.match(js,/Watch on YouTube/);
+ assert.doesNotMatch(js,/artistLink\.target = '_blank'/);
  assert.doesNotMatch(js,/MusicQuant|StarCoin|wallet\.debit/);
 });
