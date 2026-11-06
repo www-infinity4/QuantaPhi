@@ -9,7 +9,7 @@
 <p class="auth-intro">Sign in with GitHub, Cloudflare or Google to grant Bubbles specific account permissions. Gmail access is optional, requires Google's authorization screen and is not granted by signing in to QuantaPhi.</p>
 <main id="accounts"></main>
 <script type="module">
-import {mountConnections,resolveConnectorWalletToken} from '/bubbles-connections.mjs?v=20261106-cloudflare-auto-recover6';
+import {mountConnections,resolveConnectorWalletToken} from '/bubbles-connections.mjs?v=20261106-cloudflare-click-fixed7';
 const panel=mountConnections(document.getElementById('accounts'),{token:()=>resolveConnectorWalletToken(window)});
 await panel.refresh();
 </script></div></body></html>

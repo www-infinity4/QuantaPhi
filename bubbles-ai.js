@@ -512,7 +512,7 @@ let accountConnectionsUI=null;
 connectedAccounts.addEventListener('toggle',async()=>{
  if(!connectedAccounts.open||accountConnectionsUI)return;
  try{
-  const module=await import('/bubbles-connections.mjs?v=20261106-cloudflare-auto-recover6');
+  const module=await import('/bubbles-connections.mjs?v=20261106-cloudflare-click-fixed7');
   accountConnectionsUI=module.mountConnections(connectedAccounts,{token:()=>module.resolveConnectorWalletToken(window)});
   await accountConnectionsUI.refresh();
  }catch{connectedAccounts.append(create('p','ba-muted','Account connections could not load. Try again after reconnecting your wallet.'));}
@@ -968,7 +968,7 @@ async function checkPanelGate(){
  syncOwnerIdentity();
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261106-cloudflare-auto-recover6');
+  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261106-cloudflare-click-fixed7');
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
   if(!chatGateMounted)throw Error('signin_gate_mount_failed');
  }catch{
@@ -1083,7 +1083,7 @@ connectorCodeButton.addEventListener('click',async()=>{
  connectorCodeOutput.hidden=true;connectorCodeValue.value='';clearTimeout(connectorCodeTimer);
  let module;
  try{
-  module=await import('/bubbles-connections.mjs?v=20261106-cloudflare-auto-recover6');
+  module=await import('/bubbles-connections.mjs?v=20261106-cloudflare-click-fixed7');
   const client=new module.AccountConnections({token:()=>module.resolveConnectorWalletToken(window)});
   const result=await client.call('/pair/create',{});
   if(!/^[A-Za-z0-9_-]{16,64}$/.test(result.code||'')||!Number.isFinite(result.expiresIn)||result.expiresIn<=0)throw Error('connection_response_invalid');

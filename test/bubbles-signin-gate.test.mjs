@@ -255,7 +255,7 @@ test('a verified Cloudflare identity keeps full 386-scope upgrade separate from 
  assert.equal(ui.calls.some(x=>x.path==='/start'),false);
 });
 
-test('registered full-scope Cloudflare client uses all 386 at first consent instead of incompatible two-scope request',async t=>{
+test('Cloudflare initial sign-in opens the smallest registered account consent rather than 386-scope review',async t=>{
  const payload=partialGate();
  payload.providers.cloudflare.authorizationActions=['account.read','owner.full'];
  const ui=mountedGate(t,payload);
@@ -263,11 +263,11 @@ test('registered full-scope Cloudflare client uses all 386 at first consent inst
  const button=ui.get('bubblesCloudflareSignIn');
  assert.equal(button.textContent,'Sign in with Cloudflare');
  await button.listeners.click();
- assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['owner.full']});
+ assert.deepEqual(ui.calls.find(c=>c.path==='/start').body,{provider:'cloudflare',actions:['account.read']});
  const authorization=new URL(ui.popups[0].location.href);
  const scopes=authorization.searchParams.get('scope').split(' ');
- assert.equal(scopes.length,386);
- assert.equal(new Set(scopes).size,386);
+ assert.equal(scopes.length,2);
+ assert.deepEqual(scopes,['user-details.read','memberships.read']);
  assert.ok(scopes.includes('user-details.read'));
  assert.ok(scopes.includes('memberships.read'));
  assert.equal(authorization.origin,'https://dash.cloudflare.com');
@@ -338,11 +338,11 @@ test('Bubbles chat and Account Connections share the current Google and Cloudfla
  const shared=readFileSync(new URL('../bubbles-connections-gate.mjs',import.meta.url),'utf8');
  assert.doesNotMatch(source,/bubbles-connections\.mjs\?v=20261026-full-consent6/,'Old October connector cannot be loaded in chat');
  for(const content of [source,accounts,shared])
-  assert.match(content,/bubbles-connections\.mjs\?v=20261106-cloudflare-auto-recover6/);
+  assert.match(content,/bubbles-connections\.mjs\?v=20261106-cloudflare-click-fixed7/);
  for(const content of [source,html])
-  assert.match(content,/bubbles-signin-gate\.mjs\?v=20261106-cloudflare-auto-recover6/);
- assert.match(gate,/bubbles-connections-gate\.mjs\?v=20261106-cloudflare-auto-recover6/);
- assert.match(html,/bubbles-ai\.js\?v=20261106-cloudflare-auto-recover6/);
+  assert.match(content,/bubbles-signin-gate\.mjs\?v=20261106-cloudflare-click-fixed7/);
+ assert.match(gate,/bubbles-connections-gate\.mjs\?v=20261106-cloudflare-click-fixed7/);
+ assert.match(html,/bubbles-ai\.js\?v=20261106-cloudflare-click-fixed7/);
 });
 
 test('Cloudflare account list is authoritative for a verified wallet if the permission gate returns stale connection state',()=>{
