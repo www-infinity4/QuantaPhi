@@ -34,7 +34,7 @@ test('provider failure callback stays visible instead of auto-resuming to an exp
 test('Cloudflare return stores only a bounded UI outcome and not an OAuth secret',()=>{
  const data=new Map();
  const pending={provider:'cloudflare',state:'q'.repeat(43),returnPath:'/bubbles.html',
-  expiresAt:Date.now()+60000};
+  flow:'same-window',expiresAt:Date.now()+60000};
  data.set('bubbles:oauth-pending:v1',JSON.stringify(pending));
  let destination='';
  const host={sessionStorage:{

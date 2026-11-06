@@ -447,3 +447,24 @@ test('Cloudflare callback recovers after Android loses its tab marker only in th
  assert.ok(!JSON.stringify(results).includes('secret-cloudflare-code'));
  assert.ok(!JSON.stringify([...f.db.rows]).includes('private-cloudflare-access'));
 });
+
+test('expired Google OAuth session auto-refreshes on account status without a second sign-in button',async()=>{
+ const f=fixture(),connection=await f.finish(await f.begin());let refreshes=0;
+ f.adapter.refresh=async ({refreshToken,actions})=>{
+  assert.equal(refreshToken,'secret-refresh');
+  assert.deepEqual(actions,['drive.read']);
+  refreshes++;
+  return {accessToken:'new-secret-access',refreshToken:'new-secret-refresh',
+   expiresIn:3600,grantedActions:actions};
+ };
+ f.setTime(3600500);
+ const results=await f.service.gateStatus({userId:'alice'});
+ const google=results.find(account=>account.id===connection.id);
+ assert.equal(refreshes,1);
+ assert.equal(google.status,'connected');
+ assert.ok(google.expiresAt>3600500+30000);
+ assert.ok(!JSON.stringify(results).includes('new-secret'));
+ const next=await f.service.gateStatus({userId:'alice'});
+ assert.equal(next.find(account=>account.id===connection.id).status,'connected');
+ assert.equal(refreshes,1);
+});
