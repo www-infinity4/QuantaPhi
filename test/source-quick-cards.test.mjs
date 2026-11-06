@@ -70,7 +70,9 @@ test('provider permissions and content limitations remain explicit',()=>{
  assert.ok(!launcher.includes('localStorage.setItem'));
  assert.ok(!launcher.includes('navigator.geolocation'));
  assert.ok(!launcher.includes('navigator.mediaDevices.getUserMedia'));
- assert.ok(!launcher.includes('fetch('));
+ assert.match(launcher,/fetch\(GEMINI_CARD_API/,'Gemini is allowed to use its verified in-card API route');
+ assert.match(launcher,/client\.call\('\/accounts'\)/,'Google accounts come from wallet-verified connection service');
+ assert.doesNotMatch(launcher,/fetch\(\s*['\"]https:\/\/gemini\.google\.com/,'No consumer Gemini cookie or session scraping');
 });
 
 test('cross-origin links cannot white-screen the local Infinity iframe',()=>{
