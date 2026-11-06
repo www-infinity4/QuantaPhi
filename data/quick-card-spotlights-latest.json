@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T13:18:19.874671Z",
+  "checked_at": "2026-11-06T14:19:48.357655Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -450,7 +450,7 @@
     },
     "hurley-surfwear": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.hurley.com/",
@@ -458,7 +458,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Clothing"
         },
         {
@@ -467,7 +467,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Clothing"
         },
         {
@@ -476,7 +476,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Clothing"
         },
         {
@@ -485,7 +485,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Clothing"
         },
         {
@@ -494,7 +494,7 @@
           "title": "Phantom Eco Weekender Slub 20\" - Black / 26IN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Clothing",
           "offer": {
             "price": "59.95",
@@ -509,7 +509,7 @@
           "title": "Phantom Naturals Tailgate 18\" - Brown / 26IN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Clothing",
           "offer": {
             "price": "59.95",
@@ -524,7 +524,7 @@
           "title": "Bottlecap Short Sleeve - Destroyer / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Clothing",
           "offer": {
             "price": "36.00",
@@ -537,7 +537,7 @@
     },
     "royal-caribbean-cruises": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.royalcaribbean.com/",
@@ -545,7 +545,7 @@
           "title": "Best Cruise, Vacation and Travel Deals | Royal Caribbean Official Site",
           "kind": "website",
           "description": "Book cruises and vacation deals on the official Royal Caribbean site. Sail to the Caribbean, Bahamas, Perfect Day CocoCay, Mexico, Alaska and Europe.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Travel"
         },
         {
@@ -554,7 +554,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Travel"
         },
         {
@@ -563,7 +563,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Travel"
         },
         {
@@ -572,14 +572,14 @@
           "title": "lg banner 640 480 1x",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Travel"
         }
       ]
     },
     "durable-channellock": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.channellock.com",
@@ -587,7 +587,7 @@
           "title": "CHANNELLOCK®: High-Quality Hand Tools - Channellock, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -596,7 +596,7 @@
           "title": "CHANNELLOCK® adjustable pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -605,7 +605,7 @@
           "title": "CHANNELLOCK® groove-joint pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -614,14 +614,14 @@
           "title": "CHANNELLOCK® locking pliers with blue and black handles and serrated jaws.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-wright-tool": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.wrighttool.com/",
@@ -629,7 +629,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -638,7 +638,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -647,7 +647,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -656,14 +656,14 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-estwing": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.estwing.com/",
@@ -671,7 +671,7 @@
           "title": "Home - Estwing",
           "kind": "website",
           "description": "ProfessionalOutdoorHome Who’s Behind Your Swing? When it’s an Estwing, every strike, every detail counts. https://vimeo.com/1091256749 Estwing 100 Years of a Genuine American Icon How a true American legend grew to become the hand tool of choice for generation",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -680,7 +680,7 @@
           "title": "Shop - Estwing",
           "kind": "website",
           "description": "Select CategorySure Strike— Specialty— Roofing Tools— Pry Tools— Nail HammersSpecialty— Welding & Tinner’s— Lineman’s— Drywall— Drilling & Engineer’s— Bricklayer— Ball PeenSafetyRoofing— Shingler’s Hatchet— Shingler’s Hammer— Rigger’s Axes— Carpenter’s Hatchet",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -689,7 +689,7 @@
           "title": "Titanium Hammer (Black) - Estwing",
           "kind": "website",
           "description": "Power meets precision in a lightweight design as this titanium hammer delivers the striking force of a heavier steel hammer without the added weight. Its magnetic nail starter makes setting nails quick and easy. The Shock Reduction Grip® offers the utmost in b",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -698,7 +698,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -707,7 +707,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_02_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -716,7 +716,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_03_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -725,7 +725,7 @@
           "title": "Timber Titan™ Splitting Tool (Blue) - Estwing",
           "kind": "website",
           "description": "Estwing’s Timber Titan™ Splitting Tool is the ultimate long-handle splitting tool, designed for fast, efficient, and precise wood splitting.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -734,7 +734,7 @@
           "title": "prod_outdoor_splitting_tools_E6-TT4_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
@@ -2052,7 +2052,7 @@
     },
     "colorado-rocky-mountain": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.nps.gov/romo/index.htm",
@@ -2060,7 +2060,7 @@
           "title": "Rocky Mountain National Park (U.S. National Park Service)",
           "kind": "website",
           "description": "Located in northern Colorado, visitors to Rocky Mountain National Park can explore over 415 square miles (265,807 acres) within the Southern Rocky Mountains. From montane meadows to subalpine forests and mountain peaks in the alpine tundra, there is something ",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2069,7 +2069,7 @@
           "title": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2078,7 +2078,7 @@
           "title": "A man is standing on a bridge and looking up at a waterfall",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2087,7 +2087,7 @@
           "title": "A pika has harvested a tundra thistle",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2096,7 +2096,7 @@
           "title": "Visitors are walking on the Tundra Communities trail in summer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2105,7 +2105,7 @@
           "title": "The NPS Arrowhead appears on blue with text \"Rocky Mountain National Park Timed Entry Reservations\"",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2114,7 +2114,7 @@
           "title": "Park Entrance Fees and Passes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2123,14 +2123,14 @@
           "title": "A park ranger is sharing a program inside Beaver Meadows Visitor Center",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Alpine hikes"
         }
       ]
     },
     "colorado-numbers-rafting": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.americanadventure.com/tour-category/the-numbers/",
@@ -2138,7 +2138,7 @@
           "title": "most-popular",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2147,7 +2147,7 @@
           "title": "Classic Colorado Whitewater",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2156,7 +2156,7 @@
           "title": "The Numbers Half Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2165,7 +2165,7 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2174,7 +2174,7 @@
           "title": "Numbers Half Day Rafting Adventure | American Adventure Expeditions",
           "kind": "website",
           "description": "Our classic half-day rafting adventure is great for experienced white water rafters looking for a challenging ride through The Numbers in Buena Vista, CO.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2183,7 +2183,7 @@
           "title": "Numbers Half Day Private Trip",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2192,7 +2192,7 @@
           "title": "The Numbers Raft + ATV",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2201,14 +2201,14 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Whitewater"
         }
       ]
     },
     "colorado-breckenridge-trails": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
@@ -2216,7 +2216,34 @@
           "title": "Easy Hiking Trails in Breckenridge",
           "kind": "website",
           "description": "Enjoying one of the many easy hikes near Breckenridge is a great way to spend a summer day in the outdoors. Find the hike right for you and your crew.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2018/03/Sapphire-Point-sunset-sept-9-Edit.jpg",
+          "title": "Sunset view from the Sapphire Point Loop, one of the easy hiking trails in Breckenridge.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2017/12/Sallie-Barber-Trail-3-1.jpg",
+          "title": "Dog on Sallie Barber Trail: a perfect hike for your four-legged friend!",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
+          "image": "https://gobreck.com/wp-content/uploads/2017/12/Blue-River-Rec-Path.jpg",
+          "title": "The Blue River Rec Path right through the heart of Breckenridge.",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2225,23 +2252,41 @@
           "title": "Hiking in Breckenridge Without A Car",
           "kind": "website",
           "description": "You don’t need a car to hike some spectacular trails in Breckenridge. Free public transportation can make hiking in without a car simple and easy.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Easy hiking"
         },
         {
-          "url": "https://gobreck.com/summer/best-summer-hikes-in-breckenridge/",
-          "image": "https://gobreck.com/wp-content/uploads/2021/05/family-hiking-summer-aspen-alley.jpg",
-          "title": "Best Summer Hikes in Breckenridge",
+          "url": "https://gobreck.com/guide/hiking/hiking-in-breckenridge-without-a-car/",
+          "image": "https://gobreck.com/wp-content/uploads/2018/05/Troll-Hike-Family-Fall-1024x682.jpg",
+          "title": "family hiking to see the Breckenridge Troll",
           "kind": "website",
-          "description": "When it comes to hiking, Breckenridge has it all — waterfalls, wildflowers, alpine lakes, and more. Check out our favorite summer hikes in Breckenridge!",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "description": "",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/hiking-in-breckenridge-without-a-car/",
+          "image": "https://gobreck.com/wp-content/uploads/2019/09/Gold-Hill-scenic-to-north-1024x768.jpg",
+          "title": "View from Gold Hill Trail in Breckenridge",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
+          "category": "Colorado · Easy hiking"
+        },
+        {
+          "url": "https://gobreck.com/guide/hiking/hiking-in-breckenridge-without-a-car/",
+          "image": "https://gobreck.com/wp-content/uploads/2022/09/20191009_BTO_Family_Hike_0070-1024x682.jpg",
+          "title": "family walking the dog by a lake",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Easy hiking"
         }
       ]
     },
     "colorado-glenwood-hot-springs": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://hotspringspool.com/",
@@ -2249,7 +2294,7 @@
           "title": "Home Page",
           "kind": "website",
           "description": "Discover the ultimate Colorado destination with world famous hot springs pool, 107 room lodge and premier athletic club. Perfect for families & romantic getaways.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2258,7 +2303,7 @@
           "title": "Glenwood Hot Springs Resort Logo White Text",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2267,7 +2312,7 @@
           "title": "View from the Bridge of Glenwood Hot Springs Resort Pools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2276,7 +2321,7 @@
           "title": "Alpine Coaster at Glenwood Caverns near Glenwood Hot Springs Resort",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2285,7 +2330,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "Enjoy the benefits of the largest hot springs pool for the day or all year long at Glenwood Hot Springs Resort.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2294,7 +2339,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2303,7 +2348,7 @@
           "title": "Glenwood Hot Springs Resort Wins Seven 2026 Locals’ Choice Award",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2312,31 +2357,22 @@
           "title": "Hot Springs",
           "kind": "website",
           "description": "Soak in mineral-rich, heated water to refresh tired muscles, swim laps, or enjoy summer with cabana rentals and the Sopris Splash Zone. Experience it all at Glenwood Hot Springs.",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Relaxation"
         }
       ]
     },
     "colorado-ouray-ice-park": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
-        {
-          "url": "https://ourayicepark.com/events/2027/01/28/fest",
-          "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1761337787701-7WK847ICRVSBLYMO6O03/temp-icefest-banner.webp",
-          "title": "32nd Annual Ouray Ice Festival",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
-          "category": "Colorado · Technical ice"
-        },
         {
           "url": "https://ourayicepark.com/conditions-reports/2026/2/25",
           "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1772047133259-3P4RPOLI9999ZBDBVCH3/PXL_20260224_172759276.MP.webp",
           "title": "February 25th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2345,7 +2381,7 @@
           "title": "February 17th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2354,13 +2390,22 @@
           "title": "February 11th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · Technical ice"
         },
         {
           "url": "https://ourayicepark.com/conditions-reports/2026/2/4",
           "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1770219836952-P5BYO9WEB38HBYCDYDFC/FiveFingys.webp",
           "title": "February 4th, 2026",
+          "kind": "website",
+          "description": "",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
+          "category": "Colorado · Technical ice"
+        },
+        {
+          "url": "https://ourayicepark.com/events/2027/01/28/fest",
+          "image": "https://images.squarespace-cdn.com/content/v1/5588cbb3e4b086577bcb0c31/1761337787701-7WK847ICRVSBLYMO6O03/temp-icefest-banner.webp",
+          "title": "32nd Annual Ouray Ice Festival",
           "kind": "website",
           "description": "",
           "checked_at": "2026-11-06T08:22:38.083298Z",
@@ -2370,7 +2415,7 @@
     },
     "colorado-ice-lakes-basin": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T08:22:38.083298Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.fs.usda.gov/r02/sanjuan",
@@ -2378,7 +2423,7 @@
           "title": "San Juan National Forest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2387,7 +2432,7 @@
           "title": "A road is washed out by a river",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2396,7 +2441,7 @@
           "title": "Road Conditions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2405,7 +2450,7 @@
           "title": "South Mineral Campground",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T08:22:38.083298Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Colorado · High alpine"
         }
       ]
@@ -3938,12 +3983,12 @@
     },
     "durable-casio-g-shock-classic-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": []
     },
     "durable-seiko-mechanical-automatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.seikowatches.com/us-en/products/diamondcollection",
@@ -3951,7 +3996,7 @@
           "title": "photo of diamond collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3960,7 +4005,7 @@
           "title": "image of new model",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3969,7 +4014,7 @@
           "title": "image of limited edition watch",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3978,7 +4023,7 @@
           "title": "image of diver category",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3987,7 +4032,7 @@
           "title": "King Seiko | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3996,7 +4041,7 @@
           "title": "Prospex | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4005,19 +4050,19 @@
           "title": "Presage | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-rolex": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": []
     },
     "durable-patek-philippe": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.patek.com/en",
@@ -4025,14 +4070,14 @@
           "title": "Patek Philippe Official Site | Luxury Watches for Men & Ladies",
           "kind": "website",
           "description": "Official website of the last family-owned Genevan luxury watch manufacturer. Enter the Patek Philippe universe to discover our watches and savoir-faire.",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-pelican-cases": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.pelican.com/us/en",
@@ -4040,7 +4085,7 @@
           "title": "The Original Protective Case",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4049,7 +4094,7 @@
           "title": "pelican atx30 angled black 02",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4058,7 +4103,7 @@
           "title": "pelican 1615 air case check in airline case",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4067,7 +4112,7 @@
           "title": "pelican atx22 angled black 02",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4076,7 +4121,7 @@
           "title": "1615 Air",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4085,7 +4130,7 @@
           "title": "1535 Air",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4094,7 +4139,7 @@
           "title": "1510 Protector",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4103,14 +4148,14 @@
           "title": "V300PF5 Vault",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-nanuk": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://nanuk.com",
@@ -4118,7 +4163,7 @@
           "title": "NANUK Hard Cases - Durable, Protective Cases for Your Gear",
           "kind": "website",
           "description": "Discover NANUK hard cases in various sizes and colors, perfect for drones, cameras, medical equipment, and more. Made in North America for ultimate protection. Shop Online Now.",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4127,7 +4172,7 @@
           "title": "A tan Nanuk 935 best selling protection case, a rugged rolling hard case with its telescoping handle extended and wheels visible, floats against a light grey background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4136,7 +4181,7 @@
           "title": "A black Nanuk N-EDC 20 bag with a roll-top buckle closure and a water bottle in its side pocket is presented floating against a light gray background, highlighting its functionalit",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4145,7 +4190,7 @@
           "title": "A black Nanuk 905 hard case, part of the Nanuk bags and cases line, floats at an angle on a clean white background, highlighting its textured surface, handle, and latches.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4154,7 +4199,7 @@
           "title": "NANUK 935 - Black / Cubed Foam / Regular Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "254.95",
@@ -4169,7 +4214,7 @@
           "title": "NANUK 935 - Black / Cubed Foam / Heavy Duty Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "289.95",
@@ -4184,7 +4229,7 @@
           "title": "NANUK 935 - Black / Padded Divider / Regular Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "319.95",
@@ -4199,7 +4244,7 @@
           "title": "NANUK 935 - Black / Padded Divider / Heavy Duty Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "349.95",
@@ -4212,7 +4257,7 @@
     },
     "durable-zippo": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://zippo.com/collections/refillable-butane-inserts",
@@ -4220,7 +4265,7 @@
           "title": "Four butane inserts in colorful cases.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4229,7 +4274,7 @@
           "title": "Two classic Pipe Inserts - Brass and Chrome",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4238,7 +4283,7 @@
           "title": "Zippo Bit Safe 4-in-1 Screwdriver Lighter Insert standing at a 3/4 angle with the Phillips head and other screw bits displayed.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4247,7 +4292,7 @@
           "title": "Three packages each of Zippo wicks and flints on a white background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4256,7 +4301,7 @@
           "title": "Double Arc Rechargeable Lighter Insert",
           "kind": "product",
           "description": "Take the customization process one step further with your choice of flame type. The Double Arc Rechargeable Insert features two powerful plasma beams that ignite at the press of a button, offering a flameless and windproof flame source that can easily be recha",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "26.95",
@@ -4271,7 +4316,7 @@
           "title": "Bit Safe Screwdriver Insert",
           "kind": "product",
           "description": "The Bit Safe Lighter Insert packs a functional screwdriver into your favorite Zippo case*, adding compact utility to your everyday carry. Remove the 4-in-1 insert from your case and quickly and easily swap between the onboard Phillips, flathead and Torx screwd",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "19.95",
@@ -4286,7 +4331,7 @@
           "title": "Cotton and Felt Replacement Kit",
           "kind": "product",
           "description": "Keep your windproof lighter working at optimal performance with Zippo's Cotton and Felt Replacement Kit. Kit includes enough absorbent cotton for one windproof lighter fuel reservoir and a replacement felt pad. Genuine Zippo cotton and felt replacement kit for",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "6.95",
@@ -4299,7 +4344,7 @@
     },
     "durable-ronson": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://kb.zippo.com/?hsLang=en",
@@ -4307,7 +4352,7 @@
           "title": "Zippo Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4316,14 +4361,14 @@
           "title": "Z-Lo-Br_ZippoLockupHorizontal-2cReverse",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-maglite": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://maglite.com/collections/everyday",
@@ -4331,7 +4376,7 @@
           "title": "Home & Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4340,7 +4385,7 @@
           "title": "Outdoors & Travel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4349,7 +4394,7 @@
           "title": "Duty & Professional",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4358,7 +4403,7 @@
           "title": "Tactical & Military",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4367,7 +4412,7 @@
           "title": "Maglite® ML300L® 4-Cell D LED Flashlight –511-Meter Beam, Up to 434-Hour Runtime, 1,002 Lumens, 4 D-Cell Power, Quick Focus®, QuickClik® Multi-Mode Operation",
           "kind": "product",
           "description": "The Maglite® ML300L® 4D LED Flashlight is a full-size, high-performance flashlight built for home emergency preparedness, professional work, security, roadside use, camping, outdoor activities, and other situations where dependable long-range illumination and ",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "59.99",
@@ -4382,7 +4427,7 @@
           "title": "Maglite® Complete Home Flashlight Bundle - ML300L 4D Full Size, Mini Maglite Pro LED Compact Size, and Solitaire LED Small Keychain Size Flashlights - Black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "80.72",
@@ -4397,7 +4442,7 @@
           "title": "Maglite® ML150LR Rechargeable LED Flashlight – 458-Meter Beam, 1,082 Lumens, 52,555 Candela & Up to 79-Hour Runtime, Quick Focus®, QuickClik® & Fast-Charging LiFePO4 Power - Black ",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "129.99",
@@ -4412,7 +4457,7 @@
           "title": "Maglite® ML150LR Rechargeable LED Flashlight – 458-Meter Beam, 1,082 Lumens, 52,555 Candela & Up to 79-Hour Runtime, Quick Focus®, QuickClik® & Fast-Charging LiFePO4 Power - Black ",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "119.99",
@@ -4425,7 +4470,7 @@
     },
     "durable-surefire": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://www.surefire.com/categories/illumination/",
@@ -4433,7 +4478,7 @@
           "title": "Illumination",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4442,7 +4487,7 @@
           "title": "Suppressors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4451,7 +4496,7 @@
           "title": "EarPro",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4460,14 +4505,14 @@
           "title": "Parts & Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-toyota-land-cruiser-hilux-industrial-platforms": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://global.toyota/en/",
@@ -4475,7 +4520,7 @@
           "title": "Toyota Motor Corporation Official Global Website",
           "kind": "website",
           "description": "Toyota Motor Corporation Official Global Website―company, ir, newsroom, mobility, sustainability.",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4484,7 +4529,7 @@
           "title": "TMC's FY2027 2Q Financial Results Press Briefing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4493,7 +4538,7 @@
           "title": "TMC's FY2027 2Q Financial Results Press Briefing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4502,7 +4547,7 @@
           "title": "Toyota Launches New Hilux in Japan",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4536,7 +4581,7 @@
     },
     "durable-chris-king": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": [
         {
           "url": "https://chrisking.com",
@@ -4544,7 +4589,7 @@
           "title": "Chris King Precision Components",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4553,7 +4598,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4562,7 +4607,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4571,7 +4616,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4580,7 +4625,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4589,7 +4634,7 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4598,7 +4643,7 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4607,14 +4652,14 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T07:18:57.630969Z",
+          "checked_at": "2026-11-06T14:19:48.357655Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-shimano-deore-xt-xtr-mechanical": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T07:18:57.630969Z",
+      "attempted_at": "2026-11-06T14:19:48.357655Z",
       "items": []
     },
     "durable-phil-wood": {
