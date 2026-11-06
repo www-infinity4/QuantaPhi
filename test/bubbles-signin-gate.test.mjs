@@ -272,20 +272,18 @@ test('Google check is green only when the wallet-bound server account is activel
  ])assert.equal(summarizeGate(invalid).providers.google.connected,false);
 });
 
-test('main Bubbles and inline chat each show all three verified account checks without reopening login',async t=>{
+for(const chat of [false,true])test((chat?'inline chat':'main Bubbles')+' shows all three verified checks without reopening login',async t=>{
  const payload={ok:true,walletVerified:true,ready:true,providers:{
   github:{configured:true,connected:true,permissionsApproved:true},
   cloudflare:{configured:true,connected:true,permissionsApproved:true}
  },accountRecords:[{provider:'google',status:'connected',expiresAt:Date.now()+3600000,label:'Google person'}]};
- for(const chat of [false,true]){
-  const ui=mountedGate(t,payload,{chat});
-  await new Promise(setImmediate);
-  const label=ui.get(chat?'chatBubblesConnectionSummary':'bubblesConnectionSummary');
-  assert.equal(label.hidden,false);
-  for(const provider of ['Google','GitHub','Cloudflare'])assert.match(label.textContent,new RegExp('✅ '+provider+' signed in'));
-  assert.equal(ui.get(chat?'chatBubblesSigninGate':'bubblesSigninGate').hidden,true);
-  assert.equal(ui.calls.some(call=>call.path==='/start'),false);
- }
+ const ui=mountedGate(t,payload,{chat});
+ await new Promise(setImmediate);
+ const label=ui.get(chat?'chatBubblesConnectionSummary':'bubblesConnectionSummary');
+ assert.equal(label.hidden,false);
+ for(const provider of ['Google','GitHub','Cloudflare'])assert.match(label.textContent,new RegExp('✅ '+provider+' signed in'));
+ assert.equal(ui.get(chat?'chatBubblesSigninGate':'bubblesSigninGate').hidden,true);
+ assert.equal(ui.calls.some(call=>call.path==='/start'),false);
 });
 
 test('a missing Google connection never gets a green verified indicator',async t=>{
