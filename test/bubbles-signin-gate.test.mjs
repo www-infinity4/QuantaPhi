@@ -394,3 +394,20 @@ test('Cloudflare received callback recovers verified account on Android without 
  assert.equal(ui.get('bubblesCloudflareCard').hidden,true);
  assert.match(ui.get('bubblesConnectionSummary').textContent,/Cloudflare signed in/);
 });
+
+
+test('server-confirmed Cloudflare connection overrides an outdated disconnected gate record',()=>{
+ const expiresAt=Date.now()+60*60*1000;
+ const payload={ok:true,walletVerified:true,accountsVerified:true,ready:false,
+  accountRecords:[{provider:'cloudflare',status:'connected',expiresAt,label:'Cloudflare account'}],
+  providers:{github:{configured:true,connected:true,permissionsApproved:true},
+   cloudflare:{configured:false,connected:false,permissionsApproved:false,scopeSetupRequired:true}}
+ };
+ const summary=summarizeGate(payload);
+ assert.equal(summary.providers.cloudflare.configured,true,'Verified account is evidence of an existing connection');
+ assert.equal(summary.providers.cloudflare.connected,true);
+ assert.equal(summary.providers.cloudflare.label,'Cloudflare account');
+ assert.equal(summary.providers.cloudflare.approved,false,'Sign-in never implies project permissions');
+ assert.equal(summary.signedIn,true);
+ assert.equal(summary.ready,false);
+});
