@@ -73,7 +73,7 @@
   button.addEventListener('click',()=>{
     const radio=window.InfinityRadioQuick;
     if(!radio){status.textContent='Infinity Radio is not loaded; refresh the page.';return;}
-    refresh(radio.toggle());
+    refresh(window.InfinityRadioQuick.toggle());
   });
   window.addEventListener('quantaphi:infinity-radio-state',e=>refresh(e.detail));
   refresh();
