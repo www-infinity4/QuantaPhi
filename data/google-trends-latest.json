@@ -3,27 +3,237 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T18:31:14.286458Z",
+  "checked_at": "2026-11-06T19:00:41.282761Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "alcaraz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T18:40:00Z",
+      "related_news_urls": [
+        "https://www.chicagotribune.com/2026/11/05/alcaraz-avanza-a-cuartos-del-masters-de-pars-tras-retiro-por-lesin-de-berrettini/",
+        "https://elpais.com/deportes/2026-11-06/carlos-alcaraz-taylor-fritz-el-partido-de-cuartos-de-final-del-masters-atp-de-paris-en-vivo.html",
+        "https://espndeportes.espn.com/tenis/nota/_/id/17478683/berrettini-sufrio-una-lesion-en-el-codo-alcaraz-avanzo-a-los-cuartos-de-final-del-masters-1000-de-paris-sin-jugar"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa8jI7tNQ8rpurdPzd8CJPoNysqd3R0NwoNLdxStRrtzRUNU80Lshmq8YPuE8",
+      "image_credit": "Chicago Tribune",
+      "news": [
+        {
+          "url": "https://www.chicagotribune.com/2026/11/05/alcaraz-avanza-a-cuartos-del-masters-de-pars-tras-retiro-por-lesin-de-berrettini/",
+          "title": "Alcaraz avanza a cuartos del Masters de París tras retiro por lesión de Berrettini",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa8jI7tNQ8rpurdPzd8CJPoNysqd3R0NwoNLdxStRrtzRUNU80Lshmq8YPuE8"
+        },
+        {
+          "url": "https://elpais.com/deportes/2026-11-06/carlos-alcaraz-taylor-fritz-el-partido-de-cuartos-de-final-del-masters-atp-de-paris-en-vivo.html",
+          "title": "Carlos Alcaraz-Taylor Fritz, el partido de cuartos de final del Masters ATP de París en vivo",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbCdXegOH3kRKGj4-3Of7XpC0tdo8HszLBj_h2VO8wC4vS4TsscDVICUVl-_k"
+        },
+        {
+          "url": "https://espndeportes.espn.com/tenis/nota/_/id/17478683/berrettini-sufrio-una-lesion-en-el-codo-alcaraz-avanzo-a-los-cuartos-de-final-del-masters-1000-de-paris-sin-jugar",
+          "title": "Berrettini sufrió una lesión y Alcaraz avanzó a los cuartos de final del Masters 1000 de París sin jugar",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HTz_ywN4LvOQwVOgO3LrSL8z2WOxFzC2uVL5HfDxdmL-VHNwzcCleFzLiCw"
+        }
+      ]
+    },
+    {
+      "query": "sebastian lelio",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T18:40:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/sebastian-lelio-dead-fantastic-woman-1236941486/",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/sebasti-n-lelio-chilean-director-183834935.html",
+        "https://www.justjared.com/2026/11/06/sebastian-lelio-dies-at-52-chilean-directors-death-announced-by-partner-amalia-kassai/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAJFnIRhSvnYux3K-HY4-3xvv_bzdDjUvpzxZh6ORDobOr1n83gRa3Lje0AQ",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/sebastian-lelio-dead-fantastic-woman-1236941486/",
+          "title": "Sebastián Lelio, Chilean Director of Oscar-Winning ‘A Fantastic Woman,’ Dies at 52",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAJFnIRhSvnYux3K-HY4-3xvv_bzdDjUvpzxZh6ORDobOr1n83gRa3Lje0AQ"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/sebasti-n-lelio-chilean-director-183834935.html",
+          "title": "Sebastián Lelio, Chilean Director of Oscar-Winning ‘A Fantastic Woman,’ Dead at 52",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4oVhRSxUJZP6VfXhdRjkCOIrosy2ukjJzRaWuz7gNKjAurHaVpdyGOixCcBU"
+        },
+        {
+          "url": "https://www.justjared.com/2026/11/06/sebastian-lelio-dies-at-52-chilean-directors-death-announced-by-partner-amalia-kassai/",
+          "title": "Sebastian Lelio Dies at 52: Chilean Director’s Death Announced by Partner Amalia Kassai",
+          "publisher": "Just Jared",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5Oo47NC-QgDlfxiYWk8Z1vGa74BqjnYS-ZXd9fxi3N_1r-PFt6fgNZIf_QpI"
+        }
+      ]
+    },
+    {
+      "query": "lawsuit",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-06T18:30:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/GMA/Culture/dolly-partons-estate-moves-dismiss-lawsuit-nephew/story?id=137897385",
+        "https://www.today.com/popculture/news/dolly-parton-estate-files-dismiss-lawsuit-nephew-rcna607863",
+        "https://people.com/dolly-parton-estate-drops-lawsuit-against-nephew-bryan-seaver-12239201"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1x_Vt-iqJOTBNb0Z5sMES4yA98XfXdsO4D6OHJef-gHe_ugmsgwP0kzDxhqw",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/GMA/Culture/dolly-partons-estate-moves-dismiss-lawsuit-nephew/story?id=137897385",
+          "title": "Dolly Parton's estate moves to dismiss lawsuit against nephew",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1x_Vt-iqJOTBNb0Z5sMES4yA98XfXdsO4D6OHJef-gHe_ugmsgwP0kzDxhqw"
+        },
+        {
+          "url": "https://www.today.com/popculture/news/dolly-parton-estate-files-dismiss-lawsuit-nephew-rcna607863",
+          "title": "Dolly Parton Estate Files To Dismiss Lawsuit Against Her Nephew",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDIKbrFHKtztDbBuKR-Cf9mQmxzGv-jRqc-bq1vTvQBq3dHQ-ChW83zylTzRE"
+        },
+        {
+          "url": "https://people.com/dolly-parton-estate-drops-lawsuit-against-nephew-bryan-seaver-12239201",
+          "title": "Dolly Parton’s Estate Drops Lawsuit Against Her Nephew Bryan Seaver",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCzEfSUyWmuWS-OZ1IA6k5xIlgGQtJDtB50zBrUOFqLH32ow94ThWzbfqwmVo"
+        }
+      ]
+    },
+    {
+      "query": "sebastián lelio",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T18:30:00Z",
+      "related_news_urls": [
+        "https://www.emol.com/noticias/Espectaculos/2026/11/06/1216353/muerte-director-sebastian-lelio-perfil.html",
+        "https://elpais.com/cultura/cine/2026-11-06/muere-a-los-52-anos-el-director-chileno-sebastian-lelio-ganador-del-oscar-por-una-mujer-fantastica.html",
+        "https://www.cnnchile.com/pais/murio-el-director-de-cine-chileno-sebastian-lelio-ganador-del-oscar-por-una-mujer-fantastica/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Kic9OyCyt8xXFm65sRGtIsxIoREpoWZ7-p6qCdDj7iYFykzH83WpUd3BcoA",
+      "image_credit": "Emol",
+      "news": [
+        {
+          "url": "https://www.emol.com/noticias/Espectaculos/2026/11/06/1216353/muerte-director-sebastian-lelio-perfil.html",
+          "title": "Estrenó su primera película en 2005 y en 2018 ganó un Oscar: Sebastián Lelio, el reconocido director que murió a los 52 años",
+          "publisher": "Emol",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Kic9OyCyt8xXFm65sRGtIsxIoREpoWZ7-p6qCdDj7iYFykzH83WpUd3BcoA"
+        },
+        {
+          "url": "https://elpais.com/cultura/cine/2026-11-06/muere-a-los-52-anos-el-director-chileno-sebastian-lelio-ganador-del-oscar-por-una-mujer-fantastica.html",
+          "title": "Muere a los 52 años el director chileno Sebastián Lelio, ganador del Oscar por ‘Una mujer fantástica’",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvT8WiPclBCOvbwKhgfC66mPRCDEROZYwWhUdX27CC1uY1fZKoEoEwKOfvU_4"
+        },
+        {
+          "url": "https://www.cnnchile.com/pais/murio-el-director-de-cine-chileno-sebastian-lelio-ganador-del-oscar-por-una-mujer-fantastica/",
+          "title": "Murió el director de cine chileno Sebastián Lelio, ganador del Oscar por “Una mujer fantástica”",
+          "publisher": "CNN Chile",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvh0dzRRkKDpGYQiJGEkdOkUrJ1tBLOMwt00Za_T8GJgDRr9VgOWu8RBKKKlk"
+        }
+      ]
+    },
+    {
+      "query": "atp paris",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-06T18:30:00Z",
+      "related_news_urls": [
+        "https://sportsbook.fanduel.com/tennis/atp-paris-2026/ben-shelton-v-tommy-paul-36283627",
+        "https://www.click2houston.com/sports/2026/11/06/ben-shelton-tops-tommy-paul-to-reach-first-paris-masters-semifinal-tiafoe-claims-atp-finals-spot/",
+        "https://www.wvnews.com/sports/pro/france-paris-masters-tennis/image_862dbb0d-a922-51e6-9168-bf9a8a70918d.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA",
+      "image_credit": "FanDuel Sportsbook",
+      "news": [
+        {
+          "url": "https://sportsbook.fanduel.com/tennis/atp-paris-2026/ben-shelton-v-tommy-paul-36283627",
+          "title": "Ben Shelton v Tommy Paul Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
+        },
+        {
+          "url": "https://www.click2houston.com/sports/2026/11/06/ben-shelton-tops-tommy-paul-to-reach-first-paris-masters-semifinal-tiafoe-claims-atp-finals-spot/",
+          "title": "Ben Shelton tops Tommy Paul to reach first Paris Masters semifinal, Tiafoe claims ATP Finals spot",
+          "publisher": "Click2Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSq_3aK4Gt-3yD77ur6Kkf4i09uiLaHFpSaDwdy1trwYbr7xJKz26rt_hRhX0"
+        },
+        {
+          "url": "https://www.wvnews.com/sports/pro/france-paris-masters-tennis/image_862dbb0d-a922-51e6-9168-bf9a8a70918d.html",
+          "title": "France Paris Masters Tennis",
+          "publisher": "WV News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi4_feiPWb2bq4WuHGp3dHOpH4d3Jo-9rS2UJ32yBmQNgNdPFexMI5ODuefhk"
+        }
+      ]
+    },
+    {
+      "query": "oracle stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T18:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/oracle-beats-microsoft-amazon-key-160655388.html",
+        "https://seekingalpha.com/news/4668038-oracle-leads-big-tech-hyperscalers-in-valuation-as-ai-stocks-rebound-premarket",
+        "https://www.gurufocus.com/news/9181135/oracle-beats-microsoft-and-amazon-on-a-key-wall-street-metric?utm_source=yahoo_finance&utm_medium=syndication&utm_campaign=headlines&r=caf6fe0e0db70d936033da5461e60141"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-beats-microsoft-amazon-key-160655388.html",
+          "title": "Oracle beats Microsoft and Amazon on a key Wall Street metric",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://seekingalpha.com/news/4668038-oracle-leads-big-tech-hyperscalers-in-valuation-as-ai-stocks-rebound-premarket",
+          "title": "Oracle leads big tech hyperscalers in valuation as AI stocks rebound premarket",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6Lh4ysnHZ-ZwvNR_KqisP_u8RCkapoL7OyTQu7QFY_bGNmfXyiLZiZDGE9uQ"
+        },
+        {
+          "url": "https://www.gurufocus.com/news/9181135/oracle-beats-microsoft-and-amazon-on-a-key-wall-street-metric?utm_source=yahoo_finance&utm_medium=syndication&utm_campaign=headlines&r=caf6fe0e0db70d936033da5461e60141",
+          "title": "Oracle beats Microsoft and Amazon on a key Wall Street metric",
+          "publisher": "GuruFocus",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjoCnC3oOZUUCK1iO3qWkjrQ0wB17_TSqxo2gOHEIrL3fIqZgAq4QU3gCui5k"
+        }
+      ]
+    },
     {
       "query": "antonio brown",
       "approx_searches": "500+",
       "published_at": "2026-11-06T18:10:00Z",
       "related_news_urls": [
-        "https://www.seattletimes.com/nation-world/nation/judge-accepts-ex-nfl-star-antonio-browns-guilty-plea-to-reduced-charge-sentences-probation/",
+        "https://www.espn.com/nfl/story/_/id/50400733/antonio-brown-pleads-guilty-lesser-charge-shooting-case",
         "https://www.nbcnews.com/news/us-news/antonio-brown-avoids-jail-pleading-guilty-lesser-change-miami-shooting-rcna607840",
-        "https://www.foxnews.com/outkick-sports/judge-accepts-former-pittsburgh-steelers-star-wideout-antonio-brown-plea-deal-sentenced-probation"
+        "https://abcnews.com/US/wireStory/judge-accepts-nfl-star-antonio-browns-guilty-plea-137917266"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9DLt7rvwhUFpZlBQ0zAaBnjpOrPUY_WWBAVz5Zav5JcrWSgYA2mDuHcTOXdA",
-      "image_credit": "The Seattle Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrMDFw3NY3wWhIyIiDcFSfw-i8j_cyKHycNSOT68AWjy6IolU_IN4iKgHGKRw",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.seattletimes.com/nation-world/nation/judge-accepts-ex-nfl-star-antonio-browns-guilty-plea-to-reduced-charge-sentences-probation/",
-          "title": "Judge accepts ex-NFL star Antonio Brown’s guilty plea to reduced charge, sentences probation",
-          "publisher": "The Seattle Times",
+          "url": "https://www.espn.com/nfl/story/_/id/50400733/antonio-brown-pleads-guilty-lesser-charge-shooting-case",
+          "title": "Antonio Brown pleads guilty to lesser charge, gets probation in shooting case",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9DLt7rvwhUFpZlBQ0zAaBnjpOrPUY_WWBAVz5Zav5JcrWSgYA2mDuHcTOXdA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrMDFw3NY3wWhIyIiDcFSfw-i8j_cyKHycNSOT68AWjy6IolU_IN4iKgHGKRw"
         },
         {
           "url": "https://www.nbcnews.com/news/us-news/antonio-brown-avoids-jail-pleading-guilty-lesser-change-miami-shooting-rcna607840",
@@ -33,11 +243,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7dKNLgebGV56m_nK_sLhUkvOwNmoF67aNXRotnoFfzWE-9g67UJt4Bt74Ufw"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/judge-accepts-former-pittsburgh-steelers-star-wideout-antonio-brown-plea-deal-sentenced-probation",
-          "title": "Judge accepts former Pittsburgh Steelers star wideout Antonio Brown's plea deal, sentenced to probation",
-          "publisher": "Fox News",
+          "url": "https://abcnews.com/US/wireStory/judge-accepts-nfl-star-antonio-browns-guilty-plea-137917266",
+          "title": "Judge accepts ex-NFL star Antonio Brown's guilty plea to reduced charge, sentences probation",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEFTlrbpns75K3MkGviyMNrINo9MSXTDqxtrpAXgQ0poiOlTEXnaIMUSoPg7c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaGUuvwWy9JYmYaUCPJQ3PB_gi7C4ZN4o6VoH31_3Rkbr4GP2NhVEkuOdhiNQ"
         }
       ]
     },
@@ -46,13 +256,20 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-06T17:50:00Z",
       "related_news_urls": [
+        "https://people.com/paige-bueckers-azzi-fudd-confirm-they-broke-up-over-a-year-ago-12240488",
         "https://bleacherreport.com/articles/25529943-paige-bueckers-and-azzi-fudd-announce-breakup-reveal-split-happened-wnba-season",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/paige-bueckers-azzi-fudd-reveal-175740000.html",
-        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/paige-bueckers-azzi-fudd-wnba-dallas-wings-22516707.php"
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/paige-bueckers-azzi-fudd-reveal-175740000.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlFhqoqWcX02y8lGGSfZg_oW26iVAMPJk06V9UJHrze9d9VLISOwZTmkJBNjg",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrYMu2LVTNBI40MOzMDZigc3-xva7c9CaHMtEmmGen-OmhqjAg-OgxQnuvBX8",
+      "image_credit": "People.com",
       "news": [
+        {
+          "url": "https://people.com/paige-bueckers-azzi-fudd-confirm-they-broke-up-over-a-year-ago-12240488",
+          "title": "Paige Bueckers and Azzi Fudd Confirm They Broke Up Over a Year Ago",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrYMu2LVTNBI40MOzMDZigc3-xva7c9CaHMtEmmGen-OmhqjAg-OgxQnuvBX8"
+        },
         {
           "url": "https://bleacherreport.com/articles/25529943-paige-bueckers-and-azzi-fudd-announce-breakup-reveal-split-happened-wnba-season",
           "title": "Paige Bueckers and Azzi Fudd Announce Breakup, Reveal Split Happened Before WNBA Season",
@@ -66,13 +283,6 @@
           "publisher": "Yahoo",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaCjoOKq6QGfkfm9hL314KOHHVFg3XDnbf1v3T_cxFaSnvL53-VtG2_NhuFwE"
-        },
-        {
-          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/paige-bueckers-azzi-fudd-wnba-dallas-wings-22516707.php",
-          "title": "Former UConn stars Paige Bueckers and Azzi Fudd announce they are no longer a couple",
-          "publisher": "CT Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpkp97ej8EvnIgZd64u87s_EkolUjhCCWd4eCjF2A5C5bapwqNTStg1YIH_Cw"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "Seeking Alpha",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfkN66Ea6zZOmR6U6cj-xbyPoG27A6hWsd0_29DYi-aa5LRe7LFKi3rszYgug"
-        }
-      ]
-    },
-    {
-      "query": "katherine ryan",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T16:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/world/article/russell-brand-faces-significant-prison-sentence-after-rape-and-sexual-assault-conviction-110123123.html",
-        "https://www.theguardian.com/commentisfree/2026/nov/06/russell-brand-justice-comedy-other-abusers",
-        "https://www.reuters.com/world/uk/russell-brand-convicted-rape-now-likely-face-more-allegations-says-uk-police-2026-11-06/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbOZO0aPXAnH4RQmk7hKnDqGxxSrUNjd7Y5CtwOPvn4EVffU9vkaiu6W8KoJg",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/world/article/russell-brand-faces-significant-prison-sentence-after-rape-and-sexual-assault-conviction-110123123.html",
-          "title": "Russell Brand faces 'significant' prison sentence after rape and sexual assault conviction",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbOZO0aPXAnH4RQmk7hKnDqGxxSrUNjd7Y5CtwOPvn4EVffU9vkaiu6W8KoJg"
-        },
-        {
-          "url": "https://www.theguardian.com/commentisfree/2026/nov/06/russell-brand-justice-comedy-other-abusers",
-          "title": "Russell Brand has finally faced justice. But other abusers in comedy are still hiding in plain sight | Sarah Solemani",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWUjM4t5VTu9PyB5HyUPfaO7uldVb8tzcGGtxROXujhFxn2zwmIkx7I21MKCE"
-        },
-        {
-          "url": "https://www.reuters.com/world/uk/russell-brand-convicted-rape-now-likely-face-more-allegations-says-uk-police-2026-11-06/",
-          "title": "Russell Brand, convicted of rape, now likely to face more allegations, says UK police chief",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo_M05UPRuEvW8nuFg8SPjpEdPUmR-i0h3cDs2bSwV12C_cu4yO4QKNekujPI"
-        }
-      ]
-    },
-    {
-      "query": "sarah friar",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T16:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
-        "https://www.washingtonpost.com/business/2026/11/05/open-ai-makes-pledges-data-center-operation-after-midterm-backlash/",
-        "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUAaN7TyW1el5WOEE_mXhNv2DGIs5J0qkwLtOh_ezTczgBZdL46jtQNQC3Reg",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
-          "title": "OpenAI will keep investing in AI data centers despite election results, CFO tells CNBC",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUAaN7TyW1el5WOEE_mXhNv2DGIs5J0qkwLtOh_ezTczgBZdL46jtQNQC3Reg"
-        },
-        {
-          "url": "https://www.washingtonpost.com/business/2026/11/05/open-ai-makes-pledges-data-center-operation-after-midterm-backlash/",
-          "title": "Open AI makes pledges on data center operation after midterm backlash",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqlPOV_jqNGN2YcMSOY2VPzvC-SF96qy84l0xMWX7ykMGT-zaJSTQLqSDymLU"
-        },
-        {
-          "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/",
-          "title": "Setting a new standard for responsible AI infrastructure",
-          "publisher": "OpenAI",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqnWZnOZYdPXIm_gOcE79zD895KUPzDcU7Gm_MvBZad2H3USHiwKHkPxYURIk"
-        }
-      ]
-    },
-    {
-      "query": "treveyon henderson",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-06T15:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50400016/patriots-treveyon-henderson-affected-neurological-symptoms",
-        "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery",
-        "https://www.cbssports.com/nfl/news/patriots-treveyon-henderson-update-unknown-unexplainable-illness/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEER9rhghUlGiEPr8R7UuIs1oRMNnZAPiBWQiuK7mOkEdUsTGYh1wobRI7xAM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50400016/patriots-treveyon-henderson-affected-neurological-symptoms",
-          "title": "Patriots' TreVeyon Henderson affected by neurological symptoms",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEER9rhghUlGiEPr8R7UuIs1oRMNnZAPiBWQiuK7mOkEdUsTGYh1wobRI7xAM"
-        },
-        {
-          "url": "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery",
-          "title": "Pats' TreVeyon Henderson says he was hospitalized after 'unusual' emergency, focused on recovery",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTq275OrPffRj3S9bsP9VJkeS7NPVdoeJFEdcN65Cxa3RICe50M2nHHHq83x_4"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/patriots-treveyon-henderson-update-unknown-unexplainable-illness/",
-          "title": "Patriots' TreVeyon Henderson provides update on 'unknown and unexplainable' illness",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyQhXFM1mytAl5iRRf9_Yps7BYh8igAJ-r39Lj4ohKTdYlbvg_wMrRQPMqWbI"
-        }
-      ]
-    },
-    {
-      "query": "meghan markle",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-06T15:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/06/us/thomas-markle-arrest",
-        "https://www.wfla.com/news/polk-county/fbi-found-film-negatives-of-thomas-markle-meghan-markles-father-with-nude-children-affidavit-says/",
-        "https://apnews.com/article/meghan-markle-father-abuse-allegations-0bf10d1c7d915b82048c04bd9cca9fc5"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbSQXdnaONgoIK6yJKiMyATxoOlpwk7N7_f12l8HkZL087uWbRY5BdJJBDQYQ",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/06/us/thomas-markle-arrest",
-          "title": "Thomas Markle, father of Meghan, arrested after feds find sexually explicit photos of him with minors, DOJ says",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbSQXdnaONgoIK6yJKiMyATxoOlpwk7N7_f12l8HkZL087uWbRY5BdJJBDQYQ"
-        },
-        {
-          "url": "https://www.wfla.com/news/polk-county/fbi-found-film-negatives-of-thomas-markle-meghan-markles-father-with-nude-children-affidavit-says/",
-          "title": "FBI found film negatives of Thomas Markle, Meghan Markle’s father, with nude children, affidavit says",
-          "publisher": "WFLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0mBcXMLAh16zjjTNMWVWjFy8OgbapYXkMPlfjtr1VzT4Deo6nvg3EadYqGAI"
-        },
-        {
-          "url": "https://apnews.com/article/meghan-markle-father-abuse-allegations-0bf10d1c7d915b82048c04bd9cca9fc5",
-          "title": "Meghan Markle's estranged father arrested and charged with possessing child sexual abuse materials",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGePV5Ql1bs3cS_MTN2WhxOcESn3p0hAJj-06zZz96zM9UZd0RF9vFQI5fqYE"
-        }
-      ]
-    },
-    {
-      "query": "broadcom stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T15:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-buy-now-182000414.html",
-        "https://seekingalpha.com/article/4963996-broadcom-and-the-ai-panic-the-market-has-lost-its-mind",
-        "https://www.benzinga.com/markets/tech/26/11/62976767/broadcom-stock-is-surging-friday-whats-going-on"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTYmTI9J4PtiM8Zd5YN3yrSvpKpccV7EA-fHiRUNYoWvioC-ZZhvXCygz7BU",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-buy-now-182000414.html",
-          "title": "Is Broadcom Stock a Buy Now?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTYmTI9J4PtiM8Zd5YN3yrSvpKpccV7EA-fHiRUNYoWvioC-ZZhvXCygz7BU"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4963996-broadcom-and-the-ai-panic-the-market-has-lost-its-mind",
-          "title": "Broadcom And The AI Panic: The Market Has Lost Its Mind (NASDAQ:AVGO)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9scPLb_lW3HdL-iGhWbUg87hwDFWDcme8YKvUePm3q-ctL_Fnlzb2F0I6Qzw"
-        },
-        {
-          "url": "https://www.benzinga.com/markets/tech/26/11/62976767/broadcom-stock-is-surging-friday-whats-going-on",
-          "title": "Broadcom Stock Is Surging Friday: What's Going On?",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRerOy4On7wA3gV8HmY5hhuIJEZ9polxWEzJK6jA5AtKV76T7gNbYgyVyYVzFs"
-        }
-      ]
-    },
-    {
-      "query": "djia today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T15:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/06/investing/wall-street-mayhem-complicates-anthropics-already-complicated-ipo",
-        "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b",
-        "https://www.cnbc.com/2026/11/06/anthropic-ipo-kalshi-post-midterms-ai-sell-off.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhtQJw7DJPxTAUEjlwCXV7IgB32bH2G3vg_b_DfiRACFzYYrY08artn8qxqEo",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/06/investing/wall-street-mayhem-complicates-anthropics-already-complicated-ipo",
-          "title": "Market turmoil saps enthusiasm for the buzziest IPO of the year",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhtQJw7DJPxTAUEjlwCXV7IgB32bH2G3vg_b_DfiRACFzYYrY08artn8qxqEo"
-        },
-        {
-          "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b",
-          "title": "Exclusive | Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnX1T4B_1jJQrQnTIFTyuzIk79nkaJ-8CWp10UnaEiQy22MkHe_Z_996grLgA"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/06/anthropic-ipo-kalshi-post-midterms-ai-sell-off.html",
-          "title": "Anthropic IPO announcement odds drop on Kalshi following midterms and AI sell-off",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSXAGtsDXffAHyHKwFBeT_sbFqhUAPDiCy-3hxLjpiSqPdTks3AcZfZKRAfuc"
         }
       ]
     }
