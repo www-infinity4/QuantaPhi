@@ -51,10 +51,10 @@ test('personal context Bubble Bits display server-confirmed credits without brow
 });
 
 test('all Bubbles website entrypoints request the repaired scripts instead of stale cached versions',()=>{
- const revision='20261106-cloudflare-click-fixed7';
+ const revision='20261106-bubbles-thread-iterations8';
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   assert.match(source(path),new RegExp('/bubbles-ai\\.js\\?v='+revision));
  }
  // Both chat and activity projections request the repaired release.
- assert.match(source('bubbles-ai.js'),/\/bubbles-iteration-bubbles\.mjs\?v=20261104-iteration-credit1/);
+ assert.match(source('bubbles-ai.js'),/\/bubbles-iteration-bubbles\.mjs\?v=20261106-inthread-iterations2/);
 });
