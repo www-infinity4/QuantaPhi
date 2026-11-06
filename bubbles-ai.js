@@ -956,25 +956,37 @@ if(chatGate){
 }
 async function checkPanelGate(){
  if(!chatGate||chatGateMounted||chatGateLoading)return;
+ // Owner/Wallet verification is separate from GitHub and Cloudflare tool grants.
+ // The owner chat must not be covered by an unrelated provider setup panel.
+ if(syncOwnerIdentity())return;
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await Promise.race([import('/bubbles-signin-gate.mjs?v=20261029-chat-signin1'),new Promise((_,reject)=>setTimeout(()=>reject(Error('signin_gate_load_timeout')),9000))]);
+  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261105-owner-verified1');
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
   if(!chatGateMounted)throw Error('signin_gate_mount_failed');
  }catch{
+  if(syncOwnerIdentity())return;
   const hint=document.getElementById('chatBubblesSigninStatus');
-  if(hint)hint.textContent='Sign-in status unavailable. Open Account Connections to continue; chat remains available.';
-   for(const id of ['chatBubblesGithub','chatBubblesCloudflare']){
+  if(hint)hint.textContent='Could not verify GitHub or Cloudflare permissions. Chat is available; retry the check or open Account Connections.';
+  for(const id of ['chatBubblesGithub','chatBubblesCloudflare']){
     const button=document.getElementById(id+'SignIn'),label=document.getElementById(id+'Status');
-    if(label)label.textContent='Status unavailable';
+    if(label)label.textContent='Check required';
     if(button){button.disabled=false;button.textContent='Open Account Connections';button.addEventListener('click',()=>location.assign('/bubbles-accounts.html'),{once:true});}
-   }
+  }
+  document.getElementById('chatBubblesRetrySignInCheck')?.addEventListener('click',()=>void checkPanelGate(),{once:true});
  }finally{chatGateLoading=false;}
 }
 const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
 const ownerMode=create('small','ba-owner-status',embedded?'Independent visitor assistant':'Owner tools: checking Unified Wallet…');
 ownerMode.hidden=embedded;
 ownerMode.setAttribute('role','status');
+function syncOwnerIdentity(){
+ if(!chatGate||!ownerReady)return false;
+ chatGate.dataset.ownerVerified='true';
+ chatGate.hidden=true;
+ ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';
+ return true;
+}
 const recorderStatus=create('p','ba-muted','Android recorder: OFF · no saved capture in this session.');
 // RecordB presents the single native recorder UI; keep this old status node for bridge compatibility.
 recorderStatus.hidden=true;recorderStatus.setAttribute('role','status');
@@ -2283,7 +2295,7 @@ async function consumeOwnerCodeFromChat(message,fromVoice){
   if(result?.state!=='verified')throw Error(result?.state==='unreachable'?'Brain verifier unavailable.':'Code expired or was not accepted.');
   await connectOwner();
   if(!ownerReady)throw Error('Verification did not establish an owner session.');
-  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+  ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';syncOwnerIdentity();
   status.textContent='Robot Brain connected. Your normal conversation and tasks are ready.';
   linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing accepted. Shared history syncs automatically.';
   void sharedMemory();
@@ -3758,7 +3770,7 @@ async function verifiedOwnerHeaders(){
  const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
  if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
- ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+ ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';syncOwnerIdentity();
  // Pairing is handled in the same chat composer.
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
  window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
@@ -3771,7 +3783,7 @@ async function connectOwner(){
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
- ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+ ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';syncOwnerIdentity();
  if(nativeOverlay){linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing saved · history syncs automatically.';}
  // Pairing is handled in the same chat composer.
  persistChat();void sharedMemory();
