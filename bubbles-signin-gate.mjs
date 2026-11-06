@@ -1,4 +1,4 @@
-import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261106-cloudflare-verified-status5';
+import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261106-cloudflare-auto-recover6';
 
 export function summarizeGate(payload){
  const summary={ready:false,signedIn:false,walletVerified:payload?.ok===true&&payload?.walletVerified===true,providers:{},state:'unverified'};
