@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T14:01:42.455018Z",
+  "checked_at": "2026-11-06T14:31:19.946969Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "united states immigration and customs enforcement",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T14:10:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/05/ice-california-detention-santa-maria",
+        "https://www.independent.com/2026/11/02/santa-barbara-county-students-stage-walkouts-congressmember-calls-for-investigation-amid-ice-surge/",
+        "https://www.santamariasun.com/opinion/the-world-is-watching-you-santa-maria/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0hJEM4R_ztajr1WgN73SBqkeRnG9i9nXQA5ox2xTSEx-mkQZmVBOhAtjkZT4",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/05/ice-california-detention-santa-maria",
+          "title": "Outcry after ICE violently detains US citizen walking to high school: ‘I thought they were going to kill me’",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0hJEM4R_ztajr1WgN73SBqkeRnG9i9nXQA5ox2xTSEx-mkQZmVBOhAtjkZT4"
+        },
+        {
+          "url": "https://www.independent.com/2026/11/02/santa-barbara-county-students-stage-walkouts-congressmember-calls-for-investigation-amid-ice-surge/",
+          "title": "Santa Barbara County Students Stage Walkouts, Congressmember Calls for Investigation Amid ICE Surge",
+          "publisher": "The Santa Barbara Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl3fCdYBnvL8M2QVCTdZW7lDfCe8FvjWzzJ7N7G94Lgdqr2-LW4UtBv8FtRkM"
+        },
+        {
+          "url": "https://www.santamariasun.com/opinion/the-world-is-watching-you-santa-maria/",
+          "title": "The world is watching you, Santa Maria",
+          "publisher": "Santa Maria Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5PWyfGpF7kVCeEy88XABNqhDTdj4nyUspp0X8eJYlSxfmfxonvjH3uCj18A4"
+        }
+      ]
+    },
+    {
+      "query": "cloud gaming",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T14:00:00Z",
+      "related_news_urls": [
+        "https://news.xbox.com/en-us/2026/11/05/a-faster-simpler-xbox-experience-is-coming-to-pc-web-and-cloud/",
+        "https://www.techpowerup.com/354525/new-xbox-pc-app-claims-60-faster-launch-times-and-ux-improvements",
+        "https://www.theverge.com/news/1027353/microsoft-new-xbox-pc-app-redesign"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmY4Z4DTlQTQ2Fk0vFO3zsiWX7TzLxLyJ2Q4hMej6Z-29j1KBD3FbtCqYOMiI",
+      "image_credit": "XBOX Wire",
+      "news": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/05/a-faster-simpler-xbox-experience-is-coming-to-pc-web-and-cloud/",
+          "title": "A Faster, Simpler XBOX Experience Is Coming to PC, Web and Cloud",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmY4Z4DTlQTQ2Fk0vFO3zsiWX7TzLxLyJ2Q4hMej6Z-29j1KBD3FbtCqYOMiI"
+        },
+        {
+          "url": "https://www.techpowerup.com/354525/new-xbox-pc-app-claims-60-faster-launch-times-and-ux-improvements",
+          "title": "New Xbox PC App Claims 60% Faster Launch Times and UX Improvements",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbK6JweNv8wB9OpDf4LqVHfw3vLkXnEClU8nPGSkNLhHLlysIRo6wNhm4EUuM"
+        },
+        {
+          "url": "https://www.theverge.com/news/1027353/microsoft-new-xbox-pc-app-redesign",
+          "title": "Xbox overhauls its PC, web, and cloud apps with a faster design",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWI66PbkmYpOOiZASZJM5zwGT_CgcJ-ylNN73NQN5VhRP2ACqCLhFvAOkG5so"
+        }
+      ]
+    },
+    {
+      "query": "stephanie ruhle",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T14:00:00Z",
+      "related_news_urls": [
+        "https://www.mediaite.com/opinion/ms-now-lecturing-the-peasants-on-affordability-while-wearing-high-end-fashion/",
+        "https://www.ms.now/money-power-politics/full-episode/money-power-politics-11-4-26",
+        "https://www.ms.now/money-power-politics/full-episode/money-power-politics-10-30-26"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgBw6XAbvEXjzoO32MWi_-mO6p5YNhqVBsDiHjbTN56VH-dpHuw-4HmjnNyY",
+      "image_credit": "Mediaite",
+      "news": [
+        {
+          "url": "https://www.mediaite.com/opinion/ms-now-lecturing-the-peasants-on-affordability-while-wearing-high-end-fashion/",
+          "title": "MS NOW Lecturing the Peasants On Affordability While Wearing High-end Fashion",
+          "publisher": "Mediaite",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgBw6XAbvEXjzoO32MWi_-mO6p5YNhqVBsDiHjbTN56VH-dpHuw-4HmjnNyY"
+        },
+        {
+          "url": "https://www.ms.now/money-power-politics/full-episode/money-power-politics-11-4-26",
+          "title": "Money, Power, Politics – 11/4/26",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbfGuBuXUl9Fb1wGgtZPikz2rJkS-f-OqLjYKOrSalvvXbTzkRUXBPNZYadnw"
+        },
+        {
+          "url": "https://www.ms.now/money-power-politics/full-episode/money-power-politics-10-30-26",
+          "title": "Money, Power, Politics – 10/30/26",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYDz6reuf0GlObwfkXS9ob2_7e4c7V0HpnFkJiCq8Oy-XiKgU06iJdNWsTsgQ"
+        }
+      ]
+    },
+    {
+      "query": "carson daly",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T13:50:00Z",
+      "related_news_urls": [
+        "https://www.syracuse.com/entertainment/2026/11/beloved-today-show-anchor-announces-new-role-at-nbc.html",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/",
+        "https://www.today.com/news/carson-daly-saturday-today-anchor-rcna607601"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtY9dJbbieQ696vHfmlFTASpS55OT6wLNed4k1mHh4KqHVEWIobI7hVS9oXg8",
+      "image_credit": "Syracuse.com",
+      "news": [
+        {
+          "url": "https://www.syracuse.com/entertainment/2026/11/beloved-today-show-anchor-announces-new-role-at-nbc.html",
+          "title": "Beloved ‘Today’ show anchor announces new role at NBC",
+          "publisher": "Syracuse.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtY9dJbbieQ696vHfmlFTASpS55OT6wLNed4k1mHh4KqHVEWIobI7hVS9oXg8"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/05/carson-daly-saturday-today-laura-jarrett-today-show-the-voice/92620577007/",
+          "title": "Carson Daly joins 'Saturday Today' beside Laura Jarrett, will keep 'Today' job",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo14vY6VpozLBqC4ur3fRcE5rFULO26Q_HUzQx2iRVMPwlwg9pAPjrxHtJ7jc"
+        },
+        {
+          "url": "https://www.today.com/news/carson-daly-saturday-today-anchor-rcna607601",
+          "title": "Carson Daly Announced as Co-Anchor of Saturday TODAY",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQA2esk9FksIirrGbiYs08If9Kme-XNQbgoJCu0EHi28uGyrYx1d5klJRugfBk"
+        }
+      ]
+    },
+    {
+      "query": "heartland",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T13:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/articles/jessica-chastain-premieres-country-music-050311439.html",
+        "https://www.timesargus.com/news/national/ny-special-screening-of-heartland/image_812b5d13-a16f-5f53-9561-0486c8222ba0.html",
+        "https://www.guardonline.com/news/national/ny-special-screening-of-heartland/image_07a9db93-9621-584f-9714-6629e9b2638d.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShSehaYcZb-dXPro9OcdJFDl3qKiSwhjype0fqgjk8BWEhTaDh24Bh3nFszY",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/jessica-chastain-premieres-country-music-050311439.html",
+          "title": "Jessica Chastain Premieres New Country Music Movie ‘Heartland’ in NYC, Explains Why She Won’t Be Singing on Broadway",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShSehaYcZb-dXPro9OcdJFDl3qKiSwhjype0fqgjk8BWEhTaDh24Bh3nFszY"
+        },
+        {
+          "url": "https://www.timesargus.com/news/national/ny-special-screening-of-heartland/image_812b5d13-a16f-5f53-9561-0486c8222ba0.html",
+          "title": "NY Special Screening of \"Heartland\"",
+          "publisher": "Times Argus",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjoQps71L_JhhK_Oaw71JQSkjdmN1eIRIJMO09dKR3nP6HCZMX1wRLZETmkhE"
+        },
+        {
+          "url": "https://www.guardonline.com/news/national/ny-special-screening-of-heartland/image_07a9db93-9621-584f-9714-6629e9b2638d.html",
+          "title": "NY Special Screening of \"Heartland\"",
+          "publisher": "The Batesville Daily Guard",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFYFP2bKYPkIsvePLAuAuKne5C4FIlRbgev4vdawuywt90Ou8jXezgQXTblJU"
+        }
+      ]
+    },
     {
       "query": "ben shelton",
       "approx_searches": "2000+",
@@ -42,15 +217,50 @@
       ]
     },
     {
+      "query": "robin roberts",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T13:30:00Z",
+      "related_news_urls": [
+        "https://people.com/robin-roberts-george-stephanopoulos-reveal-super-early-times-wake-up-get-ready-good-morning-america-12238842",
+        "https://people.com/george-stephanopoulos-family-at-hollywood-walk-of-fame-ceremony-12239129",
+        "https://abc7.com/story/gma-stars-robin-roberts-george-stephanopoulous-receiving-hollywood-walk-fame/20018234/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTdi7B2pyXzhDUj9qaJ9PHb7ZxNasmkVb95qdniKvJd68xSycx03uWunOWAcg",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/robin-roberts-george-stephanopoulos-reveal-super-early-times-wake-up-get-ready-good-morning-america-12238842",
+          "title": "Robin Roberts and George Stephanopoulos Reveal Just How Early They Wake Up for Good Morning America",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTdi7B2pyXzhDUj9qaJ9PHb7ZxNasmkVb95qdniKvJd68xSycx03uWunOWAcg"
+        },
+        {
+          "url": "https://people.com/george-stephanopoulos-family-at-hollywood-walk-of-fame-ceremony-12239129",
+          "title": "George Stephanopoulos and Ali Wentworth Pose with Their Daughters",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf-92frUo2B3K657-Vfh3PmeyDF_1A3Zki3EdB70HxyB_jYoljt1rU44Cth-A"
+        },
+        {
+          "url": "https://abc7.com/story/gma-stars-robin-roberts-george-stephanopoulous-receiving-hollywood-walk-fame/20018234/",
+          "title": "'GMA' co-stars Robin Roberts and George Stephanopoulos receive stars on Hollywood Walk of Fame",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmcxigZATAoRSUlw3SfUeJu1UNWbyDn1hkl9ew3mSH3v_8xowMc50EVxwLfxY"
+        }
+      ]
+    },
+    {
       "query": "economic calendar",
       "approx_searches": "200+",
       "published_at": "2026-11-06T13:30:00Z",
       "related_news_urls": [
         "https://seekingalpha.com/news/4665097-fridays-economic-calendar",
         "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
-        "https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/"
+        "https://www.cnn.com/2026/11/06/economy/us-jobs-report-october"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsYoopIPGetFOVxt1VA6Vw5IqpKsGDhP2tpV0AwFQlhCiy0zKrbOaXHtJuN8",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM",
       "image_credit": "Seeking Alpha",
       "news": [
         {
@@ -58,21 +268,56 @@
           "title": "Friday’s Economic Calendar",
           "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsYoopIPGetFOVxt1VA6Vw5IqpKsGDhP2tpV0AwFQlhCiy0zKrbOaXHtJuN8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM"
         },
         {
           "url": "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
           "title": "Live Updates: U.S. Jobs Report Shows Strength After Stock Market Falls",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg0HvKSMnRkdJLeM_xvMdNSFYdHPUKO-uVb96Od193dW7Gu9Eyg5L2TSTyKl0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNjimyqcxHDwVibF4maJfBQlH6nsnSK4g614WT-guNAMW9fKs_n7k1928ath4"
         },
         {
-          "url": "https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/",
-          "title": "U.S. economy added 165,000 jobs in October, showing surprising strength",
-          "publisher": "The Washington Post",
+          "url": "https://www.cnn.com/2026/11/06/economy/us-jobs-report-october",
+          "title": "The US economy added 165,000 jobs in October, showing resilience as new chapter begins",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvC31As5oD8W72wYS9QMhDChGZ03LEpGski17lPcMZRHiafOd62ja8k_fKFg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG7MY0aLwABpJn05EOUT0Q_8HYg74dnW-s18OHdIfNjhPB_H-YOVEhBic3fTY"
+        }
+      ]
+    },
+    {
+      "query": "forex factory",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T13:20:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
+        "https://www.bloomberg.com/news/articles/2026-11-06/trump-holds-call-with-mediator-qatar-about-iran-de-escalation",
+        "https://www.ft.com/content/d89a6369-7572-42e4-b3eb-413b462c587d?syn-25a6b1a6=1"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRWKPKsE7ZTmqcimrmwd_ozmd7KE6bLjiToH0VDeSPwXYmw3p6_TxYmhVAvu8",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
+          "title": "3 tankers reported hit in Hormuz; Trump and Qatar’s emir hold phone call",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRWKPKsE7ZTmqcimrmwd_ozmd7KE6bLjiToH0VDeSPwXYmw3p6_TxYmhVAvu8"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/trump-holds-call-with-mediator-qatar-about-iran-de-escalation",
+          "title": "Trump Holds Call With Mediator Qatar About Iran De-Escalation",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1vNBPxRMRGgTpf1QkB2Wy2LhQG0XNZGVUqpJtnIOwSU1BVACpET30toc7FI"
+        },
+        {
+          "url": "https://www.ft.com/content/d89a6369-7572-42e4-b3eb-413b462c587d?syn-25a6b1a6=1",
+          "title": "Qatar’s emir holds call with Trump as mediators push for deal to end Iran war",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHPTrxNvBNo7nK-uYrYqqs6qD_dWfUbykpuu48oHHGVrBDwYZ_l55HgiLU_qQ"
         }
       ]
     },
@@ -108,251 +353,6 @@
           "publisher": "WhatCulture.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTgnqeXnce6E-lXvt2YDVusdPo1vEPn1LQRtc7fO9L-vlAhgaAfoNF7YNr5M8"
-        }
-      ]
-    },
-    {
-      "query": "forex factory",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T13:20:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-06/trump-holds-call-with-mediator-qatar-about-iran-de-escalation",
-        "https://www.ft.com/content/d89a6369-7572-42e4-b3eb-413b462c587d?syn-25a6b1a6=1",
-        "https://www.seattletimes.com/nation-world/trump-discusses-middle-east-de-escalation-with-qatars-emir-and-other-mideast-news/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1vNBPxRMRGgTpf1QkB2Wy2LhQG0XNZGVUqpJtnIOwSU1BVACpET30toc7FI",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-06/trump-holds-call-with-mediator-qatar-about-iran-de-escalation",
-          "title": "Trump Holds Call With Mediator Qatar About Iran De-Escalation",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1vNBPxRMRGgTpf1QkB2Wy2LhQG0XNZGVUqpJtnIOwSU1BVACpET30toc7FI"
-        },
-        {
-          "url": "https://www.ft.com/content/d89a6369-7572-42e4-b3eb-413b462c587d?syn-25a6b1a6=1",
-          "title": "Qatar’s emir holds call with Trump as mediators push for deal to end Iran war",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHPTrxNvBNo7nK-uYrYqqs6qD_dWfUbykpuu48oHHGVrBDwYZ_l55HgiLU_qQ"
-        },
-        {
-          "url": "https://www.seattletimes.com/nation-world/trump-discusses-middle-east-de-escalation-with-qatars-emir-and-other-mideast-news/",
-          "title": "Trump discusses Middle East de-escalation with Qatar’s emir, and other Mideast news",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzZ7G06NCf1g2i__Uc3cf8rPcXT1YCb6lCXX84z_euiYtRPEEbp7J2P_lTf8g"
-        }
-      ]
-    },
-    {
-      "query": "jobs report",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T13:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
-        "https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/",
-        "https://www.reuters.com/business/us-job-growth-expected-pick-up-october-with-moderation-wage-gains-2026-11-06/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg0HvKSMnRkdJLeM_xvMdNSFYdHPUKO-uVb96Od193dW7Gu9Eyg5L2TSTyKl0",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
-          "title": "Live Updates: U.S. Jobs Report Shows Strength After Stock Market Falls",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg0HvKSMnRkdJLeM_xvMdNSFYdHPUKO-uVb96Od193dW7Gu9Eyg5L2TSTyKl0"
-        },
-        {
-          "url": "https://www.washingtonpost.com/business/2026/11/06/us-economy-added-165000-job-october-strong-gain/",
-          "title": "U.S. economy added 165,000 jobs in October, showing surprising strength",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvC31As5oD8W72wYS9QMhDChGZ03LEpGski17lPcMZRHiafOd62ja8k_fKFg"
-        },
-        {
-          "url": "https://www.reuters.com/business/us-job-growth-expected-pick-up-october-with-moderation-wage-gains-2026-11-06/",
-          "title": "US job growth expected to pick up in October, with moderation in wage gains",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSicYEbaDqqTXpZ1rzMA3GFLA1MUHkfR4VQZdsYePVSRB1VECiIqQ5eWC0NyQ"
-        }
-      ]
-    },
-    {
-      "query": "jay rockefeller",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T13:10:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/",
-        "https://wvmetronews.com/2026/11/06/breaking-former-senator-and-governor-jay-rockefeller-has-died/",
-        "https://www.usnews.com/news/politics/articles/2026-11-06/former-us-senator-jay-rockefeller-dies-at-89-washington-post-reports"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61VBD7ecxmMcGEOga7xosFEBIuG0woD1iLm76s5bUngLusZi9YBuBfPN82ko",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/obituaries/2026/11/06/jay-rockefeller-senate-voice-health-care-security-dies-89/",
-          "title": "Jay Rockefeller, Senate voice on health care and security, dies at 89",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR61VBD7ecxmMcGEOga7xosFEBIuG0woD1iLm76s5bUngLusZi9YBuBfPN82ko"
-        },
-        {
-          "url": "https://wvmetronews.com/2026/11/06/breaking-former-senator-and-governor-jay-rockefeller-has-died/",
-          "title": "BREAKING: Former senator and governor Jay Rockefeller has died",
-          "publisher": "WV MetroNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1NxKw0fVaadqipaGejq0qwwQbnWdrQIUae3IWhPyesz1y6__nxOVdNqLE2pc"
-        },
-        {
-          "url": "https://www.usnews.com/news/politics/articles/2026-11-06/former-us-senator-jay-rockefeller-dies-at-89-washington-post-reports",
-          "title": "Former US Senator Jay Rockefeller Dies at 89, Washington Post Reports",
-          "publisher": "U.S. News & World Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFncK9k98TgFYXAfnFcmNNnTb2jAGhYLZxT7xihE1GfIluVvbHG4h7IAjeBdo"
-        }
-      ]
-    },
-    {
-      "query": "martha stewart halloween costume 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T13:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/02/style/martha-stewart-homeless-halloween-costume-apology.html",
-        "https://www.nbcnews.com/news/us-news/martha-stewart-backlash-homeless-halloween-costume-rcna606837",
-        "https://www.theguardian.com/commentisfree/2026/nov/04/martha-stewart-halloween-homeless-costume-celebrities"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbfXj1toJ1TfEQkbfWWjL937cZeHHX8eKdXMIqdjl1JPlFcaOpy_TG1kOcCe0",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/02/style/martha-stewart-homeless-halloween-costume-apology.html",
-          "title": "Martha Stewart Apologizes for Homeless Halloween Costume. Kind of.",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbfXj1toJ1TfEQkbfWWjL937cZeHHX8eKdXMIqdjl1JPlFcaOpy_TG1kOcCe0"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/martha-stewart-backlash-homeless-halloween-costume-rcna606837",
-          "title": "Martha Stewart responds to backlash over ‘hungry’ homeless Halloween costume",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaSyMk7oWTA0YLH5z13hin_uWgiOt6bvt3MyeAMZ9R9_VFh-azQ5BdDQvO3ag"
-        },
-        {
-          "url": "https://www.theguardian.com/commentisfree/2026/nov/04/martha-stewart-halloween-homeless-costume-celebrities",
-          "title": "After Martha Stewart’s Halloween homeless costume disaster, I have to know: celebrities, why do you risk it?",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY_LcMuB-VWUAUmaTFhVO51qpLK3GaYCNPx9eSeIRPbkldmNI9Bf9T6Aoox1I"
-        }
-      ]
-    },
-    {
-      "query": "housing market",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T13:10:00Z",
-      "related_news_urls": [
-        "https://www.denverpost.com/2026/11/05/home-real-estate-market-rates/",
-        "https://www.9news.com/article/money/markets/real-estate/affordability-mortgage-rates-housing-market-activity/73-3aca3b3e-5334-4818-a0e2-0d72946fd161",
-        "https://www.denvergazette.com/2026/11/05/real-estate-stats-mask-deeper-seller-concessions-in-denver-area-market/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTql1zYK44TOaLVvtrmbBYM1p9GhHT75aFUqdvziNP93rJO0brsKLuncvstRZE",
-      "image_credit": "The Denver Post",
-      "news": [
-        {
-          "url": "https://www.denverpost.com/2026/11/05/home-real-estate-market-rates/",
-          "title": "Fear keeps its grip on Denver’s housing market as buyers and sellers pull back",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTql1zYK44TOaLVvtrmbBYM1p9GhHT75aFUqdvziNP93rJO0brsKLuncvstRZE"
-        },
-        {
-          "url": "https://www.9news.com/article/money/markets/real-estate/affordability-mortgage-rates-housing-market-activity/73-3aca3b3e-5334-4818-a0e2-0d72946fd161",
-          "title": "Homebuyers face affordability hurdles despite election and market trends",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnd9l3Jhqdq6_OHxfBLr3-vKQfMbhKdn1F00TWt6oy_yFPRYQGZ2SGlVjjVhs"
-        },
-        {
-          "url": "https://www.denvergazette.com/2026/11/05/real-estate-stats-mask-deeper-seller-concessions-in-denver-area-market/",
-          "title": "Real estate stats mask deeper seller concessions in Denver area market",
-          "publisher": "Denver Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAAePipaF9e9o4k1wogyffJr1RwWoFX8i4N4Zr28iTQg23inGgXFNZ02sSAjg"
-        }
-      ]
-    },
-    {
-      "query": "bluegrass",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T12:50:00Z",
-      "related_news_urls": [
-        "https://www.pennlive.com/entertainment/2026/11/country-and-bluegrass-legend-dies-in-his-sleep-at-95-the-music-world-lost-a-pioneer.html",
-        "https://www.farrisfuneralservice.com/obituaries/william-marburg",
-        "https://www.thatericalper.com/2026/11/03/bill-clifton-bluegrass-troubadour-behind-little-whitewashed-chimney-who-launched-one-of-the-first-bluegrass-festivals-dies-at-95/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkzVhS0Bzbu-rCFbRnswZYThbdVMIozai520lunD24Up2Opc-czixzE_hn7ZE",
-      "image_credit": "PennLive.com",
-      "news": [
-        {
-          "url": "https://www.pennlive.com/entertainment/2026/11/country-and-bluegrass-legend-dies-in-his-sleep-at-95-the-music-world-lost-a-pioneer.html",
-          "title": "Country and bluegrass legend dies in his sleep at 95: ‘The music world lost a pioneer’",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkzVhS0Bzbu-rCFbRnswZYThbdVMIozai520lunD24Up2Opc-czixzE_hn7ZE"
-        },
-        {
-          "url": "https://www.farrisfuneralservice.com/obituaries/william-marburg",
-          "title": "William August Marburg Obituary Oct 30, 2026",
-          "publisher": "Farris Funeral Service",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL3d3RU9hv-s_M8UEbgei4lNiVRxm0vTumUx-5MEV7H-cn8Y4m6E4IgolDiQc"
-        },
-        {
-          "url": "https://www.thatericalper.com/2026/11/03/bill-clifton-bluegrass-troubadour-behind-little-whitewashed-chimney-who-launched-one-of-the-first-bluegrass-festivals-dies-at-95/",
-          "title": "Bill Clifton, Bluegrass Troubadour Behind “Little Whitewashed Chimney” Who Launched One of the First Bluegrass Festivals, Dies at 95",
-          "publisher": "That Eric Alper",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLISC5ZkFl9ToSyikh8B47x_cILvp4pU4InEWtkYEBj4JRvrJkyuQzyKNyTuM"
-        }
-      ]
-    },
-    {
-      "query": "silver lake pif unity acquisition",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T12:50:00Z",
-      "related_news_urls": [
-        "https://www.gamesindustry.biz/unity-reportedly-in-acquisition-talks-with-silver-lake-and-public-investment-fund-two-firms-involved-in-eas-55bn-buyout",
-        "https://www.ign.com/articles/after-buying-ea-silver-lake-and-pif-are-reportedly-now-seeking-to-acquire-gaming-software-provider-unity",
-        "https://wccftech.com/silver-lake-pif-unity-acquisition-bid-after-ea-buyout-bioware-closure/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRoQY-_eQ_FFeXcfBhRXLGTeqaOB8Nxp56C33Awkbr4dNmVa1hboAUnjFqjmrg",
-      "image_credit": "GamesIndustry.biz",
-      "news": [
-        {
-          "url": "https://www.gamesindustry.biz/unity-reportedly-in-acquisition-talks-with-silver-lake-and-public-investment-fund-two-firms-involved-in-eas-55bn-buyout",
-          "title": "Unity reportedly in acquisition talks with Silver Lake and Public Investment Fund, two firms involved in EA's $55bn buyout",
-          "publisher": "GamesIndustry.biz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRoQY-_eQ_FFeXcfBhRXLGTeqaOB8Nxp56C33Awkbr4dNmVa1hboAUnjFqjmrg"
-        },
-        {
-          "url": "https://www.ign.com/articles/after-buying-ea-silver-lake-and-pif-are-reportedly-now-seeking-to-acquire-gaming-software-provider-unity",
-          "title": "After Buying EA, Silver Lake and PIF Are Reportedly Now Seeking to Acquire Gaming Software Provider Unity",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0D9s4WT67MRY3ZPDMs_Sv5huzhDvyf3dn6wIZiLNIS0sVLTeNnIww6r_o8-A"
-        },
-        {
-          "url": "https://wccftech.com/silver-lake-pif-unity-acquisition-bid-after-ea-buyout-bioware-closure/",
-          "title": "After Buying EA for $55 Billion (and Closing BioWare), Silver Lake and Saudi Arabia’s PIF Are Now Trying to Acquire Game Engine Maker Unity",
-          "publisher": "Wccftech",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYaFGYWLfRf_qq5GT4QYLrT9CiAzQ1IZoiX2NxJt1xWG1myk5LbvMQKBDzej4"
         }
       ]
     }
