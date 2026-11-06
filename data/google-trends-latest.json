@@ -3,12 +3,152 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T14:31:19.946969Z",
+  "checked_at": "2026-11-06T15:01:59.633019Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "tsm stock",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T14:40:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/tsmc-sinks-10-umc-down-182304636.html",
+        "https://www.fool.com/investing/2026/11/05/better-foundry-stock-taiwan-semiconductor-vs-intel/",
+        "https://247wallst.com/investing/2026/11/05/tsmcs-ai-opportunity-is-expanding-heres-the-question-that-matters-for-its-stock-price/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH1i5smlab_YTDQNq2G2eUo8cYSY-ZaiBppfWNewNwfm5_Oxdc__4HW39RpKI",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-sinks-10-umc-down-182304636.html",
+          "title": "TSMC Sinks 10%, UMC Down 16% as Chip Rout Deepens After Democrats’ Midterm Wins",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH1i5smlab_YTDQNq2G2eUo8cYSY-ZaiBppfWNewNwfm5_Oxdc__4HW39RpKI"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/05/better-foundry-stock-taiwan-semiconductor-vs-intel/",
+          "title": "Better Foundry Stock: Taiwan Semiconductor vs. Intel",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0agb96N5ub8QGuw4TN1FlhhVJWQQX6ivZyEHC9aRFROVBuDkZRz3AfI3IvlQ"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/11/05/tsmcs-ai-opportunity-is-expanding-heres-the-question-that-matters-for-its-stock-price/",
+          "title": "TSMC’s AI Opportunity Is Expanding. Here’s the Question That Matters for Its Stock Price",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdSwB19sTzA4pzauKE2VcMkfwhBP7-OwkTqjvz2fcYKuQrDL6jBjmRvFfd4lk"
+        }
+      ]
+    },
+    {
+      "query": "john cena",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T14:30:00Z",
+      "related_news_urls": [
+        "https://www.wwe.com/videos/john-cena-shuts-down-kam-hendrix-in-savage-exchange-nxt-highlights-nov-4-2026",
+        "https://thewaltdisneycompany.com/news/wwe-espn-wide-world-sports-takeover/",
+        "https://www.foxnews.com/outkick-sports/john-cena-finds-next-invitee-namesake-wwe-showcase-nxt"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjiaHkPbwfF8RpFnHsBeHYlt9I1jlPnZXE39AOHfy8Ue92xOK9CHBBHRib4M",
+      "image_credit": "WWE",
+      "news": [
+        {
+          "url": "https://www.wwe.com/videos/john-cena-shuts-down-kam-hendrix-in-savage-exchange-nxt-highlights-nov-4-2026",
+          "title": "John Cena shuts down Kam Hendrix in savage exchange: NXT highlights, Nov. 4, 2026",
+          "publisher": "WWE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjiaHkPbwfF8RpFnHsBeHYlt9I1jlPnZXE39AOHfy8Ue92xOK9CHBBHRib4M"
+        },
+        {
+          "url": "https://thewaltdisneycompany.com/news/wwe-espn-wide-world-sports-takeover/",
+          "title": "WWE® & The Walt Disney Company Expand Partnership with Two-Day Takeover of ESPN Wide World of Sports Complex Featuring the John Cena Classic & Marvel Studios’ ‘Avengers: Doomsday’-",
+          "publisher": "The Walt Disney Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Ai6Rao-oel6E63IVJmehES_ChZb7lQzf6jKQUw2nsTeXeJCRaKN2X4eZC8s"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/john-cena-finds-next-invitee-namesake-wwe-showcase-nxt",
+          "title": "John Cena finds next invitee to his namesake WWE showcase at NXT",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfoIrSNtISXTuGFNSAXdAjBIE6etYfpZz7FSVtAoxHsj6mtg-SrkleLOqWkW0"
+        }
+      ]
+    },
+    {
+      "query": "magda linette",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T14:30:00Z",
+      "related_news_urls": [
+        "https://przegladsportowy.onet.pl/tenis/mai-hontama-magda-linette-relacja-na-zywo/b15vpcm",
+        "https://sportowefakty.wp.pl/tenis/1282714/dwa-kompletnie-inne-sety-w-meczu-magdy-linette",
+        "https://www.flashscore.pl/wiadomosci/tenis-flash-linette-walczy-o-po-fina-w-cennaj-cwiercfina-y-w-paryzu/OEBMAevI/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvPzSYVjImqvluH2153Y5WcM1AUq21KRVuOO6T-LvW__3-Z77hMTl7q5HMDY",
+      "image_credit": "Przegląd Sportowy",
+      "news": [
+        {
+          "url": "https://przegladsportowy.onet.pl/tenis/mai-hontama-magda-linette-relacja-na-zywo/b15vpcm",
+          "title": "Mai Hontama - Magda Linette [RELACJA NA ŻYWO]",
+          "publisher": "Przegląd Sportowy",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvPzSYVjImqvluH2153Y5WcM1AUq21KRVuOO6T-LvW__3-Z77hMTl7q5HMDY"
+        },
+        {
+          "url": "https://sportowefakty.wp.pl/tenis/1282714/dwa-kompletnie-inne-sety-w-meczu-magdy-linette",
+          "title": "Dwa kompletnie inne sety w meczu Magdy Linette",
+          "publisher": "SportoweFakty",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7AKd7uubieQkon-Al8aviAwThkb77NFhcqS2RCEKHCw-bz5vHX5vYGg7dg3Y"
+        },
+        {
+          "url": "https://www.flashscore.pl/wiadomosci/tenis-flash-linette-walczy-o-po-fina-w-cennaj-cwiercfina-y-w-paryzu/OEBMAevI/",
+          "title": "Tenis Flash: Linette walczy o półfinał w Cennaj. Ćwierćfinały w Paryżu",
+          "publisher": "Wyniki na żywo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6CubP9rZF0pRQdCD73ZdjkyKIcyvHuQvSYwIayhjVQw8C0hN4CZEzqazL6Mo"
+        }
+      ]
+    },
+    {
+      "query": "naomi watts",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T14:20:00Z",
+      "related_news_urls": [
+        "https://www.redcarpet-fashionawards.com/2026/11/05/naomi-watts-takes-alls-fair-press-to-the-streets-of-manhattan/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/naomi-watts-ashi-studio-couture-145957469.html",
+        "https://wwd.com/pop-culture/celebrity-news/naomi-watts-demellier-bag-balmain-dress-new-york-city-1239400059/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrqgycPH0aLs18TsI6BhhrPd7Cl_4GIZIVxanSZrBxgUxlrGjGdIfkoaKlHpE",
+      "image_credit": "Red Carpet Fashion Awards",
+      "news": [
+        {
+          "url": "https://www.redcarpet-fashionawards.com/2026/11/05/naomi-watts-takes-alls-fair-press-to-the-streets-of-manhattan/",
+          "title": "Naomi Watts Takes ‘All’s Fair’ Press to the Streets of Manhattan",
+          "publisher": "Red Carpet Fashion Awards",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrqgycPH0aLs18TsI6BhhrPd7Cl_4GIZIVxanSZrBxgUxlrGjGdIfkoaKlHpE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/naomi-watts-ashi-studio-couture-145957469.html",
+          "title": "Naomi Watts’ Ashi Studio Couture Is an Old Hollywood Dream",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3_FNKGCiniM8-we-oZI_b2pED5WLRHPooQaOaT7JsvMuuaOoH5Vm-8jk_MOA"
+        },
+        {
+          "url": "https://wwd.com/pop-culture/celebrity-news/naomi-watts-demellier-bag-balmain-dress-new-york-city-1239400059/",
+          "title": "Naomi Watts Pairs Balmain with DeMellier",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAZMfg1u0OzMY-QCq4yv9H42yQYOqqSI9mstXeUG82BcHQ1DivMUYeCQUkcmY"
+        }
+      ]
+    },
+    {
       "query": "united states immigration and customs enforcement",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-06T14:10:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/us-news/2026/nov/05/ice-california-detention-santa-maria",
@@ -152,8 +292,8 @@
       "published_at": "2026-11-06T13:40:00Z",
       "related_news_urls": [
         "https://www.yahoo.com/entertainment/movies/articles/jessica-chastain-premieres-country-music-050311439.html",
-        "https://www.timesargus.com/news/national/ny-special-screening-of-heartland/image_812b5d13-a16f-5f53-9561-0486c8222ba0.html",
-        "https://www.guardonline.com/news/national/ny-special-screening-of-heartland/image_07a9db93-9621-584f-9714-6629e9b2638d.html"
+        "https://www.imdb.com/news/ni66097921/?ref_=nwc_art_perm",
+        "https://www.timesargus.com/news/national/ny-special-screening-of-heartland/image_812b5d13-a16f-5f53-9561-0486c8222ba0.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShSehaYcZb-dXPro9OcdJFDl3qKiSwhjype0fqgjk8BWEhTaDh24Bh3nFszY",
       "image_credit": "Yahoo",
@@ -166,24 +306,24 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShSehaYcZb-dXPro9OcdJFDl3qKiSwhjype0fqgjk8BWEhTaDh24Bh3nFszY"
         },
         {
+          "url": "https://www.imdb.com/news/ni66097921/?ref_=nwc_art_perm",
+          "title": "Jessica Chastain Premieres New Country Music Movie ‘Heartland’ in NYC, Explains Why She Won’t Be Singing on Broadway",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBCJRE5zWGahnLguZZqG1YYqOnVRcKscFHJiUMVMFdvvsM3id6ZiOPAeW5v8c"
+        },
+        {
           "url": "https://www.timesargus.com/news/national/ny-special-screening-of-heartland/image_812b5d13-a16f-5f53-9561-0486c8222ba0.html",
           "title": "NY Special Screening of \"Heartland\"",
           "publisher": "Times Argus",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjoQps71L_JhhK_Oaw71JQSkjdmN1eIRIJMO09dKR3nP6HCZMX1wRLZETmkhE"
-        },
-        {
-          "url": "https://www.guardonline.com/news/national/ny-special-screening-of-heartland/image_07a9db93-9621-584f-9714-6629e9b2638d.html",
-          "title": "NY Special Screening of \"Heartland\"",
-          "publisher": "The Batesville Daily Guard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFYFP2bKYPkIsvePLAuAuKne5C4FIlRbgev4vdawuywt90Ou8jXezgQXTblJU"
         }
       ]
     },
     {
       "query": "ben shelton",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-06T13:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/tennis/story/_/id/50389791/ben-shelton-moves-paris-masters-quarters-vs-tommy-paul",
@@ -213,146 +353,6 @@
           "publisher": "Tennis Now",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1XauziuHwj8KOoBE1aTEmOZkb2DQGsM5Hi6MmKwqwpUsP3t2Mj8QXlxrgGnk"
-        }
-      ]
-    },
-    {
-      "query": "robin roberts",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T13:30:00Z",
-      "related_news_urls": [
-        "https://people.com/robin-roberts-george-stephanopoulos-reveal-super-early-times-wake-up-get-ready-good-morning-america-12238842",
-        "https://people.com/george-stephanopoulos-family-at-hollywood-walk-of-fame-ceremony-12239129",
-        "https://abc7.com/story/gma-stars-robin-roberts-george-stephanopoulous-receiving-hollywood-walk-fame/20018234/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTdi7B2pyXzhDUj9qaJ9PHb7ZxNasmkVb95qdniKvJd68xSycx03uWunOWAcg",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/robin-roberts-george-stephanopoulos-reveal-super-early-times-wake-up-get-ready-good-morning-america-12238842",
-          "title": "Robin Roberts and George Stephanopoulos Reveal Just How Early They Wake Up for Good Morning America",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTdi7B2pyXzhDUj9qaJ9PHb7ZxNasmkVb95qdniKvJd68xSycx03uWunOWAcg"
-        },
-        {
-          "url": "https://people.com/george-stephanopoulos-family-at-hollywood-walk-of-fame-ceremony-12239129",
-          "title": "George Stephanopoulos and Ali Wentworth Pose with Their Daughters",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf-92frUo2B3K657-Vfh3PmeyDF_1A3Zki3EdB70HxyB_jYoljt1rU44Cth-A"
-        },
-        {
-          "url": "https://abc7.com/story/gma-stars-robin-roberts-george-stephanopoulous-receiving-hollywood-walk-fame/20018234/",
-          "title": "'GMA' co-stars Robin Roberts and George Stephanopoulos receive stars on Hollywood Walk of Fame",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmcxigZATAoRSUlw3SfUeJu1UNWbyDn1hkl9ew3mSH3v_8xowMc50EVxwLfxY"
-        }
-      ]
-    },
-    {
-      "query": "economic calendar",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T13:30:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/news/4665097-fridays-economic-calendar",
-        "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
-        "https://www.cnn.com/2026/11/06/economy/us-jobs-report-october"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/news/4665097-fridays-economic-calendar",
-          "title": "Friday’s Economic Calendar",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM"
-        },
-        {
-          "url": "https://www.nytimes.com/live/2026/11/06/business/jobs-report-stocks-market-economy",
-          "title": "Live Updates: U.S. Jobs Report Shows Strength After Stock Market Falls",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNjimyqcxHDwVibF4maJfBQlH6nsnSK4g614WT-guNAMW9fKs_n7k1928ath4"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/06/economy/us-jobs-report-october",
-          "title": "The US economy added 165,000 jobs in October, showing resilience as new chapter begins",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG7MY0aLwABpJn05EOUT0Q_8HYg74dnW-s18OHdIfNjhPB_H-YOVEhBic3fTY"
-        }
-      ]
-    },
-    {
-      "query": "forex factory",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T13:20:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
-        "https://www.bloomberg.com/news/articles/2026-11-06/trump-holds-call-with-mediator-qatar-about-iran-de-escalation",
-        "https://www.ft.com/content/d89a6369-7572-42e4-b3eb-413b462c587d?syn-25a6b1a6=1"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRWKPKsE7ZTmqcimrmwd_ozmd7KE6bLjiToH0VDeSPwXYmw3p6_TxYmhVAvu8",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
-          "title": "3 tankers reported hit in Hormuz; Trump and Qatar’s emir hold phone call",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRWKPKsE7ZTmqcimrmwd_ozmd7KE6bLjiToH0VDeSPwXYmw3p6_TxYmhVAvu8"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-06/trump-holds-call-with-mediator-qatar-about-iran-de-escalation",
-          "title": "Trump Holds Call With Mediator Qatar About Iran De-Escalation",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo1vNBPxRMRGgTpf1QkB2Wy2LhQG0XNZGVUqpJtnIOwSU1BVACpET30toc7FI"
-        },
-        {
-          "url": "https://www.ft.com/content/d89a6369-7572-42e4-b3eb-413b462c587d?syn-25a6b1a6=1",
-          "title": "Qatar’s emir holds call with Trump as mediators push for deal to end Iran war",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHPTrxNvBNo7nK-uYrYqqs6qD_dWfUbykpuu48oHHGVrBDwYZ_l55HgiLU_qQ"
-        }
-      ]
-    },
-    {
-      "query": "mindy kaling",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T13:20:00Z",
-      "related_news_urls": [
-        "https://www.parents.com/mindy-kaling-on-morning-chaos-with-kids-12207123",
-        "https://www.yahoo.com/entertainment/tv/articles/20-upcoming-tv-shows-just-164636161.html",
-        "https://whatculture.com/tv/20-upcoming-tv-shows-which-just-got-cancelled?page=16"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY6yIL4fpvkbIRDLlWj9n90NLRXlTiZYxlLZ16P7K7mGARZru8Mk7RbpM6y-8",
-      "image_credit": "Parents",
-      "news": [
-        {
-          "url": "https://www.parents.com/mindy-kaling-on-morning-chaos-with-kids-12207123",
-          "title": "Mindy Kaling’s Take on School Morning Chaos With 3 Kids Is So Relatable",
-          "publisher": "Parents",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY6yIL4fpvkbIRDLlWj9n90NLRXlTiZYxlLZ16P7K7mGARZru8Mk7RbpM6y-8"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/20-upcoming-tv-shows-just-164636161.html",
-          "title": "20 Upcoming TV Shows Which Just Got Cancelled",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJhyxMA6hdWKnQnCZRvNPB4TJ4cCmvuf-r8y2c-8QF5cd6qXCKQOj8EebCrUk"
-        },
-        {
-          "url": "https://whatculture.com/tv/20-upcoming-tv-shows-which-just-got-cancelled?page=16",
-          "title": "20 Upcoming TV Shows Which Just Got Cancelled – Page 16",
-          "publisher": "WhatCulture.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTgnqeXnce6E-lXvt2YDVusdPo1vEPn1LQRtc7fO9L-vlAhgaAfoNF7YNr5M8"
         }
       ]
     }
