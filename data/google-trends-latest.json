@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T04:01:35.067614Z",
+  "checked_at": "2026-11-06T04:31:21.449092Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "brian thomas jr",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T03:40:00Z",
+      "query": "nasa artemis ii",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T04:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50366346/jaguars-wr-brian-thomas-jr-trade-deadline-rumors",
-        "https://www.bigcatcountry.com/jacksonville-jaguars-draft/90730/jacksonville-jaguar-news-would-you-trade-wr-brian-thomas-jr",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-03/rap-btj-has-drawn-interest-from-a-lot-of-teams"
+        "https://www.wusa9.com/article/tech/science/nasa-rocket-may-have-punched-a-hole-in-the-atmosphere-heres-how-it-could-impact-gps-signals/65-68bc458b-29b5-4205-87c5-3b0fbd795d4e",
+        "https://www.space.com/space-exploration/launches-spacecraft/nasas-artemis-ii-moon-launch-tore-a-hole-in-earths-upper-atmosphere-so-huge-it-disrupted-gps-signals",
+        "https://people.com/historic-moon-mission-tore-temporary-hole-earths-atmosphere-gps-impacts-study-12239006"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWOerMcZ4_oBM5gC-Wr6n-dB8qRszeQ0vLCM0E1mO5kShw9wmdkD9HxJOtQbU",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7t67jh9b611LlYIcFa6bVvj4ptao60_BUFBVFaOTZx0hacFdnYh7vzZ6KPck",
+      "image_credit": "WUSA9",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50366346/jaguars-wr-brian-thomas-jr-trade-deadline-rumors",
-          "title": "Why trade deadline rumors are swirling around Jaguars receiver Brian Thomas Jr.",
-          "publisher": "ESPN",
+          "url": "https://www.wusa9.com/article/tech/science/nasa-rocket-may-have-punched-a-hole-in-the-atmosphere-heres-how-it-could-impact-gps-signals/65-68bc458b-29b5-4205-87c5-3b0fbd795d4e",
+          "title": "NASA rocket may have punched a hole in the atmosphere, here's how it could impact GPS signals",
+          "publisher": "WUSA9",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWOerMcZ4_oBM5gC-Wr6n-dB8qRszeQ0vLCM0E1mO5kShw9wmdkD9HxJOtQbU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7t67jh9b611LlYIcFa6bVvj4ptao60_BUFBVFaOTZx0hacFdnYh7vzZ6KPck"
         },
         {
-          "url": "https://www.bigcatcountry.com/jacksonville-jaguars-draft/90730/jacksonville-jaguar-news-would-you-trade-wr-brian-thomas-jr",
-          "title": "Duval Dispatch: Would you trade WR Brian Thomas Jr.?",
-          "publisher": "Big Cat Country",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/nasas-artemis-ii-moon-launch-tore-a-hole-in-earths-upper-atmosphere-so-huge-it-disrupted-gps-signals",
+          "title": "NASA's Artemis II moon launch tore a hole in Earth's upper atmosphere so huge it disrupted GPS signals",
+          "publisher": "Space",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl_JISMh8P97FOIbvVnsT5II_VWHxrqp_-EtBbmrALqbB9sND7WtkuyRH1yU4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCkZ-b5Os5QXkrlKQg24_3uEnlAskkt1UsQcYma1Vw5kO2GB6oOEmpCLjKM8"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-03/rap-btj-has-drawn-interest-from-a-lot-of-teams",
-          "title": "Rap: BTJ has drawn interest from ‘a lot’ of teams",
-          "publisher": "NBC Sports",
+          "url": "https://people.com/historic-moon-mission-tore-temporary-hole-earths-atmosphere-gps-impacts-study-12239006",
+          "title": "Space Mission Created ‘Hole’ in Atmosphere, Could Have Impacted GPS: Study",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPUltWeawqI-13KCjpQ0gFErTXjKnw6oAoAF0QZBnJN7mEddXAlNXalOVbwWo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJKCOSKBO0UwKpB_GVZOkj5lldw81GRhPHMrEq48SE-Ige7lsgoAzUl8yZF1w"
         }
       ]
     },
     {
-      "query": "dillon brooks",
+      "query": "trump arch",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T04:10:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/05/politics/trump-arch-ncpc-final-approval",
+        "https://thehill.com/homenews/administration/6202351-ncpc-approves-trump-arch/",
+        "https://www.nbcwashington.com/news/local/trump-arch-project-near-arlington-cemetery-expected-to-be-approved-amid-court-battles/4178421/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR58EWS9QhtCKm_G02CN-jRj3956a9KXAljz8ObDmR4YETNHOc5niuKyfBPAN0",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/05/politics/trump-arch-ncpc-final-approval",
+          "title": "Trump’s 250-foot arch gets final approval to begin construction two days after president’s election drubbing",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR58EWS9QhtCKm_G02CN-jRj3956a9KXAljz8ObDmR4YETNHOc5niuKyfBPAN0"
+        },
+        {
+          "url": "https://thehill.com/homenews/administration/6202351-ncpc-approves-trump-arch/",
+          "title": "NCPC approves plan to build Trump’s triumphal arch",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYD712RAdEZcKE_KdUOACLgVgIBulIdPj5aSLogWkXxJsGcnvslGbPC0s5hQg"
+        },
+        {
+          "url": "https://www.nbcwashington.com/news/local/trump-arch-project-near-arlington-cemetery-expected-to-be-approved-amid-court-battles/4178421/",
+          "title": "Trump arch project near Arlington Cemetery expected to be approved amid court battles",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdOOOLHJURjoxfrvarB1cAgSDNtzUerrsYokvxnyfcK7C2CRp2QdCaKvT10Ww"
+        }
+      ]
+    },
+    {
+      "query": "warriors",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-06T04:00:00Z",
+      "related_news_urls": [
+        "https://www.goldenstateofmind.com/warriors-injury-report/113251/warriors-heat-injury-report-gui-santos-giannis-antetokounmpo",
+        "https://sports.yahoo.com/articles/watch-heat-vs-warriors-live-020000953.html",
+        "https://www.covers.com/nba/heat-vs-warriors-prediction-picks-odds-nov-5-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRu9hrktVCuxb9tDN8guoySZ1tu4sYN33DA6sPc130vF-h_vqaDVrPkZal7qNI",
+      "image_credit": "Golden State Of Mind",
+      "news": [
+        {
+          "url": "https://www.goldenstateofmind.com/warriors-injury-report/113251/warriors-heat-injury-report-gui-santos-giannis-antetokounmpo",
+          "title": "Warriors vs. Heat injury report: Gui Santos remains out, Giannis in",
+          "publisher": "Golden State Of Mind",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRu9hrktVCuxb9tDN8guoySZ1tu4sYN33DA6sPc130vF-h_vqaDVrPkZal7qNI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-heat-vs-warriors-live-020000953.html",
+          "title": "How to watch Heat vs Warriors: Live stream NBA Basketball, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc1rX6lS2NCRxmhhcspkXgNT5D66IXfeeHTvc4e-2LXnGlSddGa3EV_7MgbnM"
+        },
+        {
+          "url": "https://www.covers.com/nba/heat-vs-warriors-prediction-picks-odds-nov-5-2026",
+          "title": "Heat vs Warriors Prediction, Top Picks & Best Bet for Tonight's NBA Game",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xMAChCpbxUI0VS4XN0Kk8hU0tSxdiKWntW3zYljtMhtnC3zk4LGLZca4dm0"
+        }
+      ]
+    },
+    {
+      "query": "arnold schwarzenegger",
       "approx_searches": "1000+",
-      "published_at": "2026-11-06T03:40:00Z",
+      "published_at": "2026-11-06T04:00:00Z",
       "related_news_urls": [
-        "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
-        "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns",
-        "https://www.espn.com/nba/story/_/id/50365914/warriors-draymond-green-ejected-scuffle-suns"
+        "https://pagesix.com/2026/11/05/celebrity-news/sylvester-stallone-reflects-on-very-contentious-arnold-schwarzenegger-feud/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/sylvester-stallone-reveals-finally-ended-130640776.html",
+        "https://ew.com/sylvester-stallone-reveals-why-arnold-schwarzenegger-feud-finally-ended-after-20-years-12222130"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9L3IbesFtC2R1bQ6RajCERU_JICdBLNrJcO1GjSHMhdXh6QjCubt-P_Fq0E8",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8M0UZFqDdJ951gusJGrQFyVynO9y970t1jxiSt9FwI_ylQbp2RICNfNnoe2g",
+      "image_credit": "Page Six",
       "news": [
         {
-          "url": "https://www.nba.com/news/draymond-green-ejection-motivates-warriors",
-          "title": "Steph Curry says Draymond's ejection 'lit a fire' in Warriors",
-          "publisher": "NBA.com",
+          "url": "https://pagesix.com/2026/11/05/celebrity-news/sylvester-stallone-reflects-on-very-contentious-arnold-schwarzenegger-feud/",
+          "title": "Sylvester Stallone reflects on ‘very contentious’ Arnold Schwarzenegger feud: ‘The gauntlet was thrown’",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9L3IbesFtC2R1bQ6RajCERU_JICdBLNrJcO1GjSHMhdXh6QjCubt-P_Fq0E8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8M0UZFqDdJ951gusJGrQFyVynO9y970t1jxiSt9FwI_ylQbp2RICNfNnoe2g"
         },
         {
-          "url": "https://bleacherreport.com/articles/25529589-draymond-green-rips-dillon-brooks-wont-respect-his-energy-after-altercation-warriors-suns",
-          "title": "Draymond Green Rips Dillon Brooks, Won't Respect His 'Energy' After Altercation in Warriors-Suns",
-          "publisher": "Bleacher Report",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/sylvester-stallone-reveals-finally-ended-130640776.html",
+          "title": "Sylvester Stallone Reveals What Finally Ended His Decades-Long Feud With Arnold Schwarzenegger",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1RPn5xpd2j4qKr_Blsf5DnJzrWURse5aFyTwHazkTEJzURaQzOOSoltGdmS4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3pY0mXIb_SkusE-ggVMGcGSoVLhYSXtXHhzrWPKDTJ_dk4mVBd7kFi7cvRqU"
         },
         {
-          "url": "https://www.espn.com/nba/story/_/id/50365914/warriors-draymond-green-ejected-scuffle-suns",
-          "title": "Draymond Green ejected after scuffle with Suns as Warriors rally for win",
-          "publisher": "ESPN",
+          "url": "https://ew.com/sylvester-stallone-reveals-why-arnold-schwarzenegger-feud-finally-ended-after-20-years-12222130",
+          "title": "Sylvester Stallone reveals why his 20-year feud with Arnold Schwarzenegger finally ended: ‘Enough of this’",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfpZXFyT6xWztDpNBcd_wFkIZ626NYNJoILXFw3DIfFU0MNTtTw3JYoDsW7EQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbFTF7B8FESMn2CvQ_6OabXzIg4YQC8Qh-_Jw4UzjUBrlrQJ_F9M9BBqb3DrA"
         }
       ]
     },
     {
-      "query": "cal poly vs arizona",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T03:40:00Z",
+      "query": "dr annie andrews",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T04:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/arizona-men-basketball-vs-cal-030000056.html",
-        "https://www.azdesertswarm.com/basketball/85124/arizona-wildcats-mens-basketball-cal-poly-mustangs-preview-home-opener-mckale-2026",
-        "https://tucson.com/sports/arizonawildcats/basketball/article_2c8df165-a0e3-4ddf-8686-92b5658a7afb.html"
+        "https://www.theguardian.com/us-news/2026/nov/05/south-carolina-republicans-darline-graham-annie-andrews",
+        "https://www.foxnews.com/video/6407986949112",
+        "https://www.nytimes.com/2026/11/03/opinion/annie-andrews-south-carolina-senate.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3zp1DR0T5b-hub6TgMDwgmWf8gwo5K9AZiBUeVrqo95ZsIO4FPtZ4gMajYM",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4KqgZUqtceefxp_2Qapt4QVAGLpNRVvHNQhWu-gGWTZhOjLfACpguQ_KrIQ",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/05/south-carolina-republicans-darline-graham-annie-andrews",
+          "title": "How did Republicans lose a Senate seat in fireball-red South Carolina?",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4KqgZUqtceefxp_2Qapt4QVAGLpNRVvHNQhWu-gGWTZhOjLfACpguQ_KrIQ"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6407986949112",
+          "title": "Sen-elect Annie Andrews on whether she'd back Schumer as majority leader: 'It's time for a generational change'",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxxGx3kk__-7OgSCMIskNMyjO5jkMDNvdIDSbrl0i43AtJgeZnk1GbjXdVqq4"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/03/opinion/annie-andrews-south-carolina-senate.html",
+          "title": "Opinion | It Only Took Four Months to Destroy Lindsey Graham’s Legacy",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH8lWyV_fazzKwGSJvRamyzYidCvMzr345vZnRz3BErOokq6kC5JF1OPht3Is"
+        }
+      ]
+    },
+    {
+      "query": "jalen green",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T04:00:00Z",
+      "related_news_urls": [
+        "https://arizonasports.com/nba/phoenix-suns/vinnys-view-the-suns-look-how-pundits-expected-them-to-look-last-year",
+        "https://www.azcentral.com/story/sports/nba/suns/2026/11/05/phoenix-suns-are-what-they-are-and-thats-a-bad-defensive-team/92622189007/",
+        "https://www.brightsideofthesun.com/suns-analysis/113055/defensive-struggles-rebounding-chemistry-jordan-ott-jalen-green"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUojkC2G67EilxbTK_gXr-y-8NkNiyAzhMXEMFveEM8efESbDshelOLRlrxQg",
+      "image_credit": "Arizona Sports",
+      "news": [
+        {
+          "url": "https://arizonasports.com/nba/phoenix-suns/vinnys-view-the-suns-look-how-pundits-expected-them-to-look-last-year",
+          "title": "Vinny’s View: The Suns look how pundits expected them to look last year",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUojkC2G67EilxbTK_gXr-y-8NkNiyAzhMXEMFveEM8efESbDshelOLRlrxQg"
+        },
+        {
+          "url": "https://www.azcentral.com/story/sports/nba/suns/2026/11/05/phoenix-suns-are-what-they-are-and-thats-a-bad-defensive-team/92622189007/",
+          "title": "Trail Blazers remind Phoenix Suns why they have NBA's worst defense",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW61-9DdjqQczb1z_LhZYk4OKhSSjYYP5uSz0tWO0WKat3ZIHnHom65UhMiw0"
+        },
+        {
+          "url": "https://www.brightsideofthesun.com/suns-analysis/113055/defensive-struggles-rebounding-chemistry-jordan-ott-jalen-green",
+          "title": "Can the Suns fix this from within?",
+          "publisher": "Bright Side Of The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU_0Ok8waK9KOw-XjlDyN8jLGfhqYoama-O7xX9gj5174sLh3aH_1UWYOAxY8"
+        }
+      ]
+    },
+    {
+      "query": "awkwafina",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T04:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/2026/oct/30/i-felt-bad-for-my-exes-awkwafina-on-making-deeply-personal-tv-with-her-grandma",
+        "https://www.sfchronicle.com/entertainment/movies-tv/article/awkwafina-house-of-nanking-22501593.php",
+        "https://www.rutlandherald.com/ap/national/ny-special-screening-of-awkwafina-the-unlikely-cook/image_f2471ab3-33e2-5c73-961c-5e351c88d5e2.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMq0n3AEaU2IPzctSSBVvzlYmCSeMBiiAk98TQhP43xizPf-LvXrjSyh1L1Hk",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/oct/30/i-felt-bad-for-my-exes-awkwafina-on-making-deeply-personal-tv-with-her-grandma",
+          "title": "‘I felt bad for my exes’: Awkwafina on making deeply personal TV – with her grandma",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMq0n3AEaU2IPzctSSBVvzlYmCSeMBiiAk98TQhP43xizPf-LvXrjSyh1L1Hk"
+        },
+        {
+          "url": "https://www.sfchronicle.com/entertainment/movies-tv/article/awkwafina-house-of-nanking-22501593.php",
+          "title": "This comic filmed her new TV show at a famed S.F. restaurant",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDaYRRa4A-cE7UqNSYfM3ynzkkKER1GHrva1b4mtvy1Adf01Y6Z7pzrmEHl2o"
+        },
+        {
+          "url": "https://www.rutlandherald.com/ap/national/ny-special-screening-of-awkwafina-the-unlikely-cook/image_f2471ab3-33e2-5c73-961c-5e351c88d5e2.html",
+          "title": "NY Special Screening of \"Awkwafina: The Unlikely Cook\"",
+          "publisher": "Rutland Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxT6z1fWPoZ06qT5O6wyZ0mZHpA13X7bUQdU3W-u7T3_mpv6ew-7eypVT6wxQ"
+        }
+      ]
+    },
+    {
+      "query": "jimmy butler",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T04:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/jimmy-butler-return-steve-kerr-143904723.html",
+        "https://nbaanalysis.net/steve-kerr-comments-on-jimmy-butler-return-for-golden-state-warriors-its-exciting/",
+        "https://www.sportingnews.com/us/nba/golden-state-warriors/news/warriors-jimmy-butler-gets-good-injury-timeline-update-could-return-sooner-help-steph-curry/38391947b90766d90175304d"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbH7cDeaPZV8Y8AsxFiEPMAm4mEECoK_C8MsQM8ZPU1g3ewhiGW9x9fdd5LvM",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/arizona-men-basketball-vs-cal-030000056.html",
-          "title": "Arizona men’s basketball vs. Cal Poly fan discussion",
+          "url": "https://sports.yahoo.com/articles/jimmy-butler-return-steve-kerr-143904723.html",
+          "title": "Jimmy Butler Return Update: Steve Kerr Shares Latest on Injury Recovery",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3zp1DR0T5b-hub6TgMDwgmWf8gwo5K9AZiBUeVrqo95ZsIO4FPtZ4gMajYM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbH7cDeaPZV8Y8AsxFiEPMAm4mEECoK_C8MsQM8ZPU1g3ewhiGW9x9fdd5LvM"
         },
         {
-          "url": "https://www.azdesertswarm.com/basketball/85124/arizona-wildcats-mens-basketball-cal-poly-mustangs-preview-home-opener-mckale-2026",
-          "title": "What to watch for when Arizona men’s basketball faces Cal Poly in home opener",
-          "publisher": "Arizona Desert Swarm",
+          "url": "https://nbaanalysis.net/steve-kerr-comments-on-jimmy-butler-return-for-golden-state-warriors-its-exciting/",
+          "title": "Steve Kerr comments on Jimmy Butler return for Golden State Warriors, ‘it’s exciting’",
+          "publisher": "NBA Analysis Network",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStVU7OGpoU4Zo_BHGogyBpHIhpZAycaKGGjnkQJPy6G8qrdBBX6bF1trglaZE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5cC9orM192X8tmgXuZfpYZaxC3XXdDdBfCWX3T_yeabAe61AhoLc56LVNZE"
         },
         {
-          "url": "https://tucson.com/sports/arizonawildcats/basketball/article_2c8df165-a0e3-4ddf-8686-92b5658a7afb.html",
-          "title": "Arizona-Cal Poly scouting report: On Godfrey's latest possibilities and Mustang retention",
-          "publisher": "Arizona Daily Star",
+          "url": "https://www.sportingnews.com/us/nba/golden-state-warriors/news/warriors-jimmy-butler-gets-good-injury-timeline-update-could-return-sooner-help-steph-curry/38391947b90766d90175304d",
+          "title": "Warriors' Jimmy Butler gets good injury timeline update, could return sooner to help Steph Curry",
+          "publisher": "Sporting News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1VR-3ppL3wWwLGn46ccLE1WYhhIUe9yZ_KOphsHdStnOfKTJuSvuThZN4Ko"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFfYNt09L8ikVC7aO8SIa65uP7NbWqD-p0Cm2w10gnAKgPtXqXGMimaVzhNgE"
         }
       ]
     },
     {
-      "query": "schumer",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T03:40:00Z",
-      "related_news_urls": [
-        "https://www.theatlantic.com/ideas/2026/11/midterms-democrats-mississippi-senate/689301/",
-        "https://www.politico.com/news/2026/11/05/chuck-schumer-democrats-majority-senate-01152797",
-        "https://apnews.com/article/schumer-trump-democrat-majority-election-d8d5262fe3d820a3dc73193002f0f27e"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsp_CCwVFZLkgNoMRRxzO_ajp90iGnUvRaMoRWQ4WQuTB4S_GaTL5pqj9rgwU",
-      "image_credit": "The Atlantic",
-      "news": [
-        {
-          "url": "https://www.theatlantic.com/ideas/2026/11/midterms-democrats-mississippi-senate/689301/",
-          "title": "Chuck Schumer’s Revenge",
-          "publisher": "The Atlantic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsp_CCwVFZLkgNoMRRxzO_ajp90iGnUvRaMoRWQ4WQuTB4S_GaTL5pqj9rgwU"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/05/chuck-schumer-democrats-majority-senate-01152797",
-          "title": "Chuck Schumer just won a huge majority. He’s already thinking about making it bigger.",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbSMvpeNZ8cDnTh733BxNy0ocAeou2yiHUFsrcLxEo4SHCt7IavGWcTUAQkuE"
-        },
-        {
-          "url": "https://apnews.com/article/schumer-trump-democrat-majority-election-d8d5262fe3d820a3dc73193002f0f27e",
-          "title": "Senate Democrats will not let Trump put a 'right-winger' on the Supreme Court, Schumer vows",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ283VH_BN5mq_6FQnwfFzHTSN_tg8xUj5-P6OE1aXeLOaJ9rgrSzUUurfEMKU"
-        }
-      ]
-    },
-    {
-      "query": "paul newman",
+      "query": "utah basketball",
       "approx_searches": "200+",
-      "published_at": "2026-11-06T03:40:00Z",
+      "published_at": "2026-11-06T04:00:00Z",
       "related_news_urls": [
-        "https://stephensilver.substack.com/p/a-generational-acting-duel-the-color",
-        "https://westfaironline.com/fairfield/paul-newmans-hole-in-the-wall-gang-camp-names-coo/"
+        "https://packinsider.com/2026/11/04/matija-lukic-nc-state-basketball-official-visit-profile/",
+        "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-basketball-recruiting-official-visit-guide-matija-lukic/",
+        "https://247sports.com/college/north-carolina/article/north-carolina-tar-heels-matija-lukic--292172388/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIDCrRpDMR25oSanWqCdGxX0bYEM2Debjk9c8Q6QYcymjo6OcfFdi6tvyLNZA",
-      "image_credit": "Substack",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFNBp2mS-p9yqxtVlPZRBGcNsaCcFIzPKBYNBav29Kjn9fIB5ZCgvdvBHGEUU",
+      "image_credit": "PackInsider",
       "news": [
         {
-          "url": "https://stephensilver.substack.com/p/a-generational-acting-duel-the-color",
-          "title": "A generational acting duel: ‘The Color of Money’ turns 40",
-          "publisher": "Substack",
+          "url": "https://packinsider.com/2026/11/04/matija-lukic-nc-state-basketball-official-visit-profile/",
+          "title": "NC State Hosting Serbian Basketball Star Matija Lukić, a Potential Future NBA First-Round Pick",
+          "publisher": "PackInsider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIDCrRpDMR25oSanWqCdGxX0bYEM2Debjk9c8Q6QYcymjo6OcfFdi6tvyLNZA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFNBp2mS-p9yqxtVlPZRBGcNsaCcFIzPKBYNBav29Kjn9fIB5ZCgvdvBHGEUU"
         },
         {
-          "url": "https://westfaironline.com/fairfield/paul-newmans-hole-in-the-wall-gang-camp-names-coo/",
-          "title": "Paul Newman’s Hole in the Wall Gang Camp names COO",
-          "publisher": "Westfair Communications",
+          "url": "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-basketball-recruiting-official-visit-guide-matija-lukic/",
+          "title": "Matija Lukić UNC Official Visit Guide",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScw1otxZWTpu2MGjopSUhMxkKQkXFIS-BX6ruRILRbcqAZqgJgAijCxuyer64"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7fZtVWNUFciaWnLt0fwHgZ57lnh8UU8PDyK5uTZQIR40xC41G66imqKvA91Q"
+        },
+        {
+          "url": "https://247sports.com/college/north-carolina/article/north-carolina-tar-heels-matija-lukic--292172388/",
+          "title": "What To Know About Top European Guard, Matija Lukic, Before He Visits UNC",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ86Iu88i3GynUHtF5CaUwI0nnhQ7jF1vMEUv9QaMHt6HzskFRjctW5u69VB0s"
         }
       ]
     },
     {
-      "query": "cornhusker state",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T03:40:00Z",
+      "query": "davion mitchell",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T03:50:00Z",
       "related_news_urls": [
-        "https://nebraskaexaminer.com/2026/11/04/nebraska-legislature-republican-supermajority-will-end-democrats-could-pick-up-three-seats/",
-        "https://omaha.com/news/state-regional/government-politics/elections/article_7a1a4d55-a7ac-4162-af3d-68ba95b2dc96.html",
-        "https://www.ktiv.com/2026/11/03/nebraska-election-results-maps/"
+        "https://www.fantasypros.com/nba/news/618064/davion-mitchell-fills-stat-sheet-wednesday-against-clippers.php",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/davion-mitchell-dishes-out-10-assists-vs-lac",
+        "https://allucanheat.com/heat-hierarchy-11-3-pelle-larsson-surges-davion-mitchell-continues-strong-start"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUMbWyHp4QXya9AFiIi8tWvLQTGyyy6plYw2lT-IruKy0wYCCC-sqr6nsxx6E",
-      "image_credit": "Nebraska Examiner",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL7f8W7qvui17Pz4TpMkF4yrQoU0rXovocFVI_dXA-lanULMroH_OFZsrtkyo",
+      "image_credit": "FantasyPros",
       "news": [
         {
-          "url": "https://nebraskaexaminer.com/2026/11/04/nebraska-legislature-republican-supermajority-will-end-democrats-could-pick-up-three-seats/",
-          "title": "Nebraska Legislature Republican supermajority will end; Democrats could pick up 3 seats",
-          "publisher": "Nebraska Examiner",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUMbWyHp4QXya9AFiIi8tWvLQTGyyy6plYw2lT-IruKy0wYCCC-sqr6nsxx6E"
-        },
-        {
-          "url": "https://omaha.com/news/state-regional/government-politics/elections/article_7a1a4d55-a7ac-4162-af3d-68ba95b2dc96.html",
-          "title": "Omaha-area voters shift the balance of power in Nebraska's Legislature",
-          "publisher": "Omaha World-Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2cpu88bPkOo17jWvKX6_Cv8KAuroJaL7_gfDetl0vQ5kKPSpi8n5gMmlavLY"
-        },
-        {
-          "url": "https://www.ktiv.com/2026/11/03/nebraska-election-results-maps/",
-          "title": "Nebraska Election Results Maps",
-          "publisher": "KTIV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyzP_bCCK_KPG9FY6s-1x_GvX9WpvZR4Z2p1diiPdRONpoOgaN1MibfnLgxKA"
-        }
-      ]
-    },
-    {
-      "query": "lawrence o'donnell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T03:40:00Z",
-      "related_news_urls": [
-        "https://www.ms.now/morning-joe/watch/lawrence-on-the-emotion-of-democrats-doing-the-impossible-winning-in-deep-red-states-2519761987687",
-        "https://www.ms.now/the-last-word/watch/lawrence-the-bad-guys-lost-in-the-midterm-elections-2519718979587",
-        "https://sg.news.yahoo.com/trump-reign-terror-over-ms-141312551.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHn6nVIi3FiLQ6u8KtsxghmJ6q881wiUutydgRp2CxCyEt5AU7JZPALVFjTb4",
-      "image_credit": "MS NOW",
-      "news": [
-        {
-          "url": "https://www.ms.now/morning-joe/watch/lawrence-on-the-emotion-of-democrats-doing-the-impossible-winning-in-deep-red-states-2519761987687",
-          "title": "Lawrence on the ’emotion’ of Democrats ‘doing the impossible’ winning in deep red states",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHn6nVIi3FiLQ6u8KtsxghmJ6q881wiUutydgRp2CxCyEt5AU7JZPALVFjTb4"
-        },
-        {
-          "url": "https://www.ms.now/the-last-word/watch/lawrence-the-bad-guys-lost-in-the-midterm-elections-2519718979587",
-          "title": "Lawrence: ‘The bad guys lost’ in the midterm elections",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmabHC_MUdYpz2nwSLHplLowBs5cFAngzbnrTl6mm2ALjfzRxE0vIVetnhaU4"
-        },
-        {
-          "url": "https://sg.news.yahoo.com/trump-reign-terror-over-ms-141312551.html",
-          "title": "‘Trump Reign Of Terror Is Over’: MS NOW Host’s Euphoric Take Wins The Night",
-          "publisher": "Yahoo News Singapore",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBQCus70EykrgJgL011P2WsOl3yGGjMPyUZ3wIYl0PSsPkz-RyHOmzJDHJhqA"
-        }
-      ]
-    },
-    {
-      "query": "sienna miller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T03:40:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1437866/sienna-miller-shares-her-older-kids-reaction-to-baby-boy-with-oli-green",
-        "https://www.eonline.com/videos/2519809091917/sienna-miller-reveals-how-her-kids-are-adjusting-to-her-new-baby-boy-with-oli-green",
-        "https://www.whowhatwear.com/fashion/celebrity-style/peep-toe-heel-trend-sienna-miller-2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY8E9gZvabqZqidrO03crv5hwpn1TKAxIasOJy6u8_KpiFvhnWfZ0asgc2Wbg",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1437866/sienna-miller-shares-her-older-kids-reaction-to-baby-boy-with-oli-green",
-          "title": "Sienna Miller Reveals How Her Kids Are Adjusting to Her New Baby Boy With Oli Green",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY8E9gZvabqZqidrO03crv5hwpn1TKAxIasOJy6u8_KpiFvhnWfZ0asgc2Wbg"
-        },
-        {
-          "url": "https://www.eonline.com/videos/2519809091917/sienna-miller-reveals-how-her-kids-are-adjusting-to-her-new-baby-boy-with-oli-green",
-          "title": "Sienna Miller Reveals How Her Kids Are Adjusting to Her New Baby Boy With Oli Green",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY8E9gZvabqZqidrO03crv5hwpn1TKAxIasOJy6u8_KpiFvhnWfZ0asgc2Wbg"
-        },
-        {
-          "url": "https://www.whowhatwear.com/fashion/celebrity-style/peep-toe-heel-trend-sienna-miller-2026",
-          "title": "Even Sienna Miller Agrees—This “Dated” Shoe Trend Is Picking Up Where Your Loafers Left Off",
-          "publisher": "Who What Wear",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ505HBYHBQcSuyxKPHfTRC5CLzTLyC6YoNyn6oC1aM_7SE7oHB_Gxd1J7Ismc"
-        }
-      ]
-    },
-    {
-      "query": "bobby portis",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T03:40:00Z",
-      "related_news_urls": [
-        "https://www.fanduel.com/research/nba/player-news/game-recaps/tyrese-maxey-scores-19-points-in-win-over-pistons-nov-4-2026",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/jeremiah-fears-with-19-and-6-rebounds-in-win",
-        "https://www.fantasypros.com/nba/news/616931/jeremiah-fears-puts-up-20-points-saturdays-win.php"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiieYNvEejVpnENcGVQO0ofOUWEIed25RomrulRIkGOmCVmDdSvU4W48OAd2s",
-      "image_credit": "FanDuel",
-      "news": [
-        {
-          "url": "https://www.fanduel.com/research/nba/player-news/game-recaps/tyrese-maxey-scores-19-points-in-win-over-pistons-nov-4-2026",
-          "title": "Tyrese Maxey Scores 19 Points In Win Over Pistons",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiieYNvEejVpnENcGVQO0ofOUWEIed25RomrulRIkGOmCVmDdSvU4W48OAd2s"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/jeremiah-fears-with-19-and-6-rebounds-in-win",
-          "title": "Jeremiah Fears with 19 and 6 rebounds in win",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8cWG7q3fWR5wd3WVj1FG0uqom7laCIM5JEuk5TkfHR8bF3y-V40tPEiLOp_c"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/616931/jeremiah-fears-puts-up-20-points-saturdays-win.php",
-          "title": "Jeremiah Fears puts up 20 points in Saturday's win",
+          "url": "https://www.fantasypros.com/nba/news/618064/davion-mitchell-fills-stat-sheet-wednesday-against-clippers.php",
+          "title": "Davion Mitchell fills stat sheet Wednesday against Clippers",
           "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCKukzEDpPlunEtmSNdyAINFt3F2-4ES48rI39jAOqNLdtwq6LXyrFsJ640iU"
-        }
-      ]
-    },
-    {
-      "query": "abby phillip",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T03:40:00Z",
-      "related_news_urls": [
-        "https://people.com/cnn-s-abby-phillip-welcomes-baby-no-2-with-husband-marcus-richardson-12214439",
-        "https://www.imdb.com/news/ni66093646/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/celebrity/articles/cnn-host-reveals-reason-missing-013012526.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkc5Wf0iAF1OYRlb35WV7GL-OJgK1yeeIDGXe9xArdeQZhA6FDcfta7fy5Fi8",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/cnn-s-abby-phillip-welcomes-baby-no-2-with-husband-marcus-richardson-12214439",
-          "title": "CNN’s Abby Phillip Welcomes Baby No. 2 with Husband Marcus Richardson",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkc5Wf0iAF1OYRlb35WV7GL-OJgK1yeeIDGXe9xArdeQZhA6FDcfta7fy5Fi8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL7f8W7qvui17Pz4TpMkF4yrQoU0rXovocFVI_dXA-lanULMroH_OFZsrtkyo"
         },
         {
-          "url": "https://www.imdb.com/news/ni66093646/?ref_=nwc_art_perm",
-          "title": "CNN’s Abby Phillip Gives Birth to Second Child, a Boy, with Husband Marcus Richardson: Name Revealed!",
-          "publisher": "IMDb",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/davion-mitchell-dishes-out-10-assists-vs-lac",
+          "title": "Davion Mitchell dishes out 10 assists vs. LAC",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKupn3tq5ptzZa4EA2iASTVWYXgGGYu7ZmjXlwwUu06IscfTRJXQQTtDx0O4E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2vcLBRuna9TeOlUYhqmbuS-_VTTy5CedbfoRfgy2u9p4-aPLSMBH33U_2QI4"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/cnn-host-reveals-reason-missing-013012526.html",
-          "title": "CNN Host Reveals Reason for Missing Election Night",
-          "publisher": "Yahoo",
+          "url": "https://allucanheat.com/heat-hierarchy-11-3-pelle-larsson-surges-davion-mitchell-continues-strong-start",
+          "title": "Heat Hierarchy 11/3: Pelle Larsson surges, Davion Mitchell continues strong start",
+          "publisher": "All U Can Heat",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMRoHeYxsZGbH6kZXxnEaNU1dLalSnEIEtdIxBb3LTCz732k_s02pu1YYYCgs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvT949Dqs0J2kKC3IVhZOTM0sB2vowste7ALAfFXTgbXb6PiCC1jV82euVpcE"
         }
       ]
     }
