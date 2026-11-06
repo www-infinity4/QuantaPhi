@@ -160,7 +160,9 @@
               if (!isAuthorized()) { player.pauseVideo(); return; }
               setPlaying(true);
               status.textContent = 'Playing · Book of Dreams · Steve Miller Band';
-              document.dispatchEvent(new CustomEvent('quanta:youtube-card-start', {detail:{id:root.id}}));
+              if (typeof CustomEvent === 'function' && typeof document.dispatchEvent === 'function') {
+                document.dispatchEvent(new CustomEvent('quanta:youtube-card-start', {detail:{id:root.id}}));
+              }
             } else if (event.data === yt.PlayerState.PAUSED) {
               setPlaying(false);
               status.textContent = 'Paused · Book of Dreams';
