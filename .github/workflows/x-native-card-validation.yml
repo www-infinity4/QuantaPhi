@@ -1,0 +1,29 @@
+name: X native quick card and API
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'x-twitter-card.mjs'
+      - 'x-twitter-card.css'
+      - 'workers/media-star-following/**'
+      - 'bubbles-card-catalog.mjs'
+      - 'test/x-native-feed-card.test.cjs'
+      - 'test/media-star-following.test.cjs'
+      - '.github/workflows/x-native-card-validation.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Syntax verify
+        run: |
+          node --check workers/media-star-following/worker.js
+          node --check x-twitter-card.mjs
+          node --check bubbles-card-catalog.mjs
+      - name: X API and card regression
+        run: node --test test/x-native-feed-card.test.cjs test/media-star-following.test.cjs test/fred-catalog.test.cjs test/magoo-spaces.test.cjs
