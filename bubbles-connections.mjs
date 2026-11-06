@@ -1,5 +1,6 @@
 const API = '/api/bubbles/connections';
 const GOOGLE_HANDOFF_TIMEOUT_MS=45000;
+const CLOUDFLARE_HANDOFF_TIMEOUT_MS=45000;
 const NAMES = {cloudflare:'Cloudflare',google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic'};
 export function availableCloudflareLoginActions(provider) {
   if(provider?.id!=='cloudflare'||provider.configured!==true||!Array.isArray(provider.actions))return [];
@@ -133,14 +134,15 @@ export class AccountConnections {
       pending.polling=true;
       try{
         const input={provider,state};
-        const timeoutMs=provider==='google'?Math.max(this.timeoutMs,GOOGLE_HANDOFF_TIMEOUT_MS):this.timeoutMs;
+        const timeoutMs=provider==='google'?Math.max(this.timeoutMs,GOOGLE_HANDOFF_TIMEOUT_MS):
+          provider==='cloudflare'?Math.max(this.timeoutMs,CLOUDFLARE_HANDOFF_TIMEOUT_MS):this.timeoutMs;
         let data=state?await this.call('/handoff/status',input):
-          await this.call('/handoff/google/resume',{},timeoutMs);
+          await this.call('/handoff/'+provider+'/resume',{},timeoutMs);
         if(state&&data.status==='received')data=await this.call('/handoff/finish',input,timeoutMs);
         if(data.status==='connected'&&data.account)finish(null,data.account);
         else if(data.status==='declined')finish(Error('Account authorization was declined.'));
         else if(data.status==='expired')finish(Error(expiredMessage));
-        else if(data.status==='missing')finish(Error('No recent Google return matched this wallet session. Use the browser and Bubbles wallet that started sign-in, or start again here.'));
+        else if(data.status==='missing')finish(Error('No recent '+(NAMES[provider]||provider)+' return matched this wallet session. Use the browser and Bubbles wallet that started sign-in, or start again here.'));
       }catch(error){
         // Callback/code exchange failures cannot be cured by polling. Surface a
         // recoverable, sanitized error now rather than waiting five minutes and
@@ -170,9 +172,10 @@ export class AccountConnections {
       Math.max(1,expiresAt-Date.now()));
     void poll();
   }
-  resumePending(onComplete,{recoverGoogle=false}={}) {
+  resumePending(onComplete,{recoverGoogle=false,recoverCloudflare=false}={}) {
     if(this.pending)return false;
-    const saved=this.readPendingHandoff()||(recoverGoogle?{provider:'google',expiresAt:Date.now()+300000}:null);
+    const recoveryProvider=recoverGoogle?'google':recoverCloudflare?'cloudflare':null;
+    const saved=this.readPendingHandoff()||(recoveryProvider?{provider:recoveryProvider,expiresAt:Date.now()+300000}:null);
     if(!saved)return false;
     this.trackHandoff(saved,null,onComplete);
     return true;
@@ -235,9 +238,11 @@ function element(tag,text,className='') {
 }
 export function mountConnections(container,{token}) {
   const sessionKey='bubbles:connector-session:v1';
-  const recoverGoogle=new URLSearchParams(window.location?.search||'').get('return')==='google';
-  const clearGoogleReturn=()=>{
-    if(!recoverGoogle)return;
+  const returnProvider=new URLSearchParams(window.location?.search||'').get('return');
+  const recoverGoogle=returnProvider==='google';
+  const recoverCloudflare=returnProvider==='cloudflare';
+  const clearProviderReturn=()=>{
+    if(!recoverGoogle&&!recoverCloudflare)return;
     try{
       const url=new URL(window.location.href);
       url.searchParams.delete('return');
@@ -254,7 +259,7 @@ export function mountConnections(container,{token}) {
   scopes.append(element('legend','Google access'),element('p','Choose what Bubbles can read, then sign in.','ba-muted'));
   scopes.addEventListener('change',()=>{googleStatus.textContent='';});
   cancel.addEventListener('click',()=>{
-    client.cancelConnect();clearGoogleReturn();cancel.hidden=true;googleStatus.textContent='';
+    client.cancelConnect();clearProviderReturn();cancel.hidden=true;googleStatus.textContent='';
     status.textContent='Sign-in cancelled. You can try again.';void load();
   });
   const selections=[];
@@ -354,10 +359,10 @@ export function mountConnections(container,{token}) {
           const connected=element('p',providerName+' · Signed in'+(existing.label?' as '+existing.label:''),'ba-provider-connected');
           connected.setAttribute('role','status');
           card.append(connected);
-          if(!upgrade){
-            catalog.append(card);
-            continue;
-          }
+          // Verified sign-in is complete. Optional project grants belong in
+          // settings, never as another login button.
+          catalog.append(card);
+          continue;
         }
         if(upgrade)card.append(element('p','Project tools require separate Cloudflare approval.','ba-muted'));
         const button=element('button',upgrade?'Review Cloudflare project access':'Sign in with '+providerName,'ba-control');
@@ -420,6 +425,29 @@ export function mountConnections(container,{token}) {
             grants.includes('projects.build')?'Approved: deploy Workers, Pages and D1 projects. Additional project permissions are not yet approved.':
             'Account connected. Project deployment permission is not yet approved.';
           row.append(element('p',access,'ba-muted'));
+          const provider=data.providers.find(entry=>entry.id==='cloudflare');
+          const available=provider?providerAuthorizationActions(provider):[];
+          if(available.includes('owner.full')&&!grants.includes('owner.full')){
+            const manage=element('details','','ba-optional-project-permissions');
+            const review=element('button','Review project permissions','ba-control');
+            review.type='button';
+            const info=element('p','Signed in. Additional project permissions are optional and require your authorization.','ba-muted');
+            info.setAttribute('role','status');
+            review.addEventListener('click',async()=>{
+              if(client.pending){info.textContent='Finish or cancel the current review first.';return;}
+              review.disabled=true;info.textContent='Opening optional Cloudflare permission review…';
+              try{
+                await client.connect('cloudflare',['owner.full'],async error=>{
+                  cancel.hidden=true;await load();
+                  if(error)status.textContent=providerSignInErrorMessage(error.message,'cloudflare');
+                });
+                cancel.hidden=false;
+              }catch(error){info.textContent=providerSignInErrorMessage(error.message,'cloudflare');}
+              finally{review.disabled=false;}
+            });
+            manage.append(element('summary','Manage Cloudflare project access'),info,review);
+            row.append(manage);
+          }
         }
         if(account.status!=='disconnected') {
           const button=element('button','Disconnect','ba-control');button.type='button';
@@ -634,7 +662,7 @@ export function mountConnections(container,{token}) {
   refresh.addEventListener('click',()=>void load());
   if(client.resumePending(async(error,account)=>{
     cancel.hidden=true;
-    clearGoogleReturn();
+    clearProviderReturn();
     if(error){
       // The resumed page was rendered with all buttons disabled while pending.
       // A failed/expired attempt must restore Cloudflare Sign in immediately.
@@ -643,6 +671,6 @@ export function mountConnections(container,{token}) {
     }else{
       status.textContent='Connected '+account.label+'.';await load();
     }
-  },{recoverGoogle})){cancel.hidden=false;status.textContent='Finishing account authorization securely…';}
+  },{recoverGoogle,recoverCloudflare})){cancel.hidden=false;status.textContent='Finishing account authorization securely…';}
   return {client,refresh:load};
 }
