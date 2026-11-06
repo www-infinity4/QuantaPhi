@@ -4207,12 +4207,15 @@ async function pollBrainProgress(){
    ?result.tickets.find(ticket=>ticket?.id===activeIterationTicketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
    :null;
   if(iterationTicket){
+   const iterationThread=activeThread;
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
     type:'job',ticketId:iterationTicket.id,repository:iterationTicket.repository,status:iterationTicket.status,
     url:iterationTicket.progress?.url||''}}));
    try{
     // Verified owner ticket list, not a model answer, supplies these steps.
     const {projectVerifiedJobTransitions}=await import('/bubbles-brain-job-steps.mjs?v=20261106-runner-steps1');
+    if(!ownerReady||ownerHeaders!==headers||activeThread!==iterationThread||
+     activeIterationTicketId!==iterationTicket.id)return;
     const projection=projectVerifiedJobTransitions(iterationTicket,ownerJobMarkers);
     ownerJobMarkers=projection.markers;
     if(typeof CustomEvent==='function')for(const step of projection.events){
