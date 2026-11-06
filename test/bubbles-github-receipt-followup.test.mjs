@@ -40,6 +40,7 @@ test('ordinary chat mounts its iteration trail before GitHub routing and honors 
  assert.ok(visibility);
  const plan=vm.runInNewContext(`(request=>{${site.slice(begin,end)}; const action=createRepository?'create_repository':'assist'; const args={action}; ${visibility} return args;})`);
  assert.equal(plan('Please create a private GitHub repository called Bubbles-QA').private,true);
+ assert.equal(plan('Create a GitHub repository named Bubbles-QA with private visibility.').private,true);
  assert.equal(plan('Create a public GitHub repo called Bubbles-QA').private,undefined);
  assert.equal(plan('Create a GitHub repo called Bubbles-QA').action,'create_repository');
  assert.equal(plan('How do I create a private repo?').action,'assist');
