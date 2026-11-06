@@ -57,7 +57,7 @@ test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>
  assert.match(source,/Finishing sign-in/);
 });
 
-function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn=null,oauthProvider='cloudflare',googleRecovery=false,chat=false}={}){
+function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn=null,oauthProvider='cloudflare',googleRecovery=false,cloudflareRecovery=false,chat=false}={}){
  const ids=chat?['chatBubblesSigninGate','chatBubblesSigninStatus','chatBubblesGithubSignIn',
   'chatBubblesCloudflareSignIn','chatBubblesGithubStatus','chatBubblesCloudflareStatus',
   'chatBubblesGithubCard','chatBubblesCloudflareCard','chatBubblesRetrySignInCheck',
@@ -70,7 +70,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
  const root={getElementById:id=>elements.get(id)||null,addEventListener(){}};
  const popups=[],calls=[],storage=new Map();
  if(oauthReturn)storage.set('bubbles:oauth-return-note:v1',JSON.stringify({provider:oauthProvider,result:oauthReturn,at:Date.now()}));
- let recoveredGoogle=false;
+ let recoveredGoogle=false,recoveredCloudflare=false;
  const host={document:root,QuantaCloudConnection:{resolveDeviceToken:async()=>walletMissing?'':'sq_'+'a'.repeat(40)},
   addEventListener(){},removeEventListener(){},setTimeout:()=>1,clearTimeout(){},
   sessionStorage:{getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)},
@@ -82,10 +82,17 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
   if(path==='/session')return Response.json({ok:true,walletVerified:payload?.walletVerified===true});
   if(path==='/gate/status')return Response.json({ok:true,...payload});
   if(path==='/accounts')return Response.json({ok:true,accounts:googleRecovery&&recoveredGoogle?
-   [{provider:'google',id:'verified-google-id',status:'connected',label:'Google account',expiresAt:Date.now()+3600000}]:payload?.accountRecords||[]});
+   [{provider:'google',id:'verified-google-id',status:'connected',label:'Google account',expiresAt:Date.now()+3600000}]:
+   cloudflareRecovery&&recoveredCloudflare?
+   [{provider:'cloudflare',id:'verified-cloudflare-id',status:'connected',label:'Cloudflare account',expiresAt:Date.now()+3600000,grantedActions:['account.read']}]:
+   payload?.accountRecords||[]});
   if(path==='/handoff/google/resume'&&googleRecovery){
    recoveredGoogle=true;
    return Response.json({ok:true,status:'connected',account:{id:'verified-google-id',provider:'google',label:'Google account'}});
+  }
+  if(path==='/handoff/cloudflare/resume'&&cloudflareRecovery){
+   recoveredCloudflare=true;
+   return Response.json({ok:true,status:'connected',account:{id:'verified-cloudflare-id',provider:'cloudflare',label:'Cloudflare account'}});
   }
   if(path==='/start'){
    if(startFails)return Response.json({ok:false,error:'provider_not_configured'},{status:503});
@@ -335,4 +342,42 @@ test('Bubbles chat and Account Connections share the current Google and Cloudfla
   assert.match(content,/bubbles-signin-gate\.mjs\?v=20261105-google-android-return4/);
  assert.match(gate,/bubbles-connections-gate\.mjs\?v=20261105-google-android-return4/);
  assert.match(html,/bubbles-ai\.js\?v=20261105-google-android-return4/);
+});
+
+test('Cloudflare account list is authoritative for a verified wallet if the permission gate returns stale connection state',()=>{
+ const live={provider:'cloudflare',id:'id-cloudflare',label:'Verified CF',status:'connected',expiresAt:Date.now()+3600000,grantedActions:['account.read']};
+ const payload={...partialGate(),ok:true,walletVerified:true,accountsVerified:true,accountRecords:[live]};
+ const result=summarizeGate(payload);
+ assert.equal(result.providers.cloudflare.connected,true);
+ assert.equal(result.providers.cloudflare.label,'Verified CF');
+ assert.equal(result.providers.cloudflare.approved,false,'Account sign-in does not invent project grants');
+ for(const invalid of [
+  {...payload,walletVerified:false},
+  {...payload,accountsVerified:false},
+  {...payload,accountRecords:[{...live,status:'revoked'}]},
+  {...payload,accountRecords:[{...live,expiresAt:Date.now()-1000}]}
+ ])assert.equal(summarizeGate(invalid).providers.cloudflare.connected,false);
+});
+
+test('Cloudflare connected in wallet-bound accounts hides the obsolete Cloudflare sign-in button',async t=>{
+ const payload={...partialGate(),ok:true,walletVerified:true,accountRecords:[
+  {provider:'cloudflare',id:'cf-id',label:'Verified CF',status:'connected',expiresAt:Date.now()+3600000,grantedActions:['account.read']}
+ ]};
+ const ui=mountedGate(t,payload);
+ await new Promise(setImmediate);
+ assert.equal(ui.get('bubblesCloudflareSignIn').hidden,true);
+ assert.match(ui.get('bubblesConnectionSummary').textContent,/Cloudflare signed in/);
+ assert.equal(ui.calls.some(c=>c.path==='/start'),false,'No duplicate OAuth flow');
+});
+
+test('Cloudflare received callback recovers verified account on Android without local pending state',async t=>{
+ const payload={...partialGate(),ok:true,walletVerified:true};
+ const ui=mountedGate(t,payload,{oauthReturn:'received',oauthProvider:'cloudflare',cloudflareRecovery:true});
+ await new Promise(setImmediate);
+ await new Promise(setImmediate);
+ assert.ok(ui.calls.some(c=>c.path==='/handoff/cloudflare/resume'),
+  'Server-bound recovery should work in chat for Cloudflare as for Google');
+ assert.equal(ui.calls.some(c=>c.path==='/start'),false);
+ assert.equal(ui.get('bubblesCloudflareCard').hidden,true);
+ assert.match(ui.get('bubblesConnectionSummary').textContent,/Cloudflare signed in/);
 });
