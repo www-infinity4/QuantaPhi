@@ -68,7 +68,7 @@ test('evidence is bounded, drops original bytes and never mutates base jobs',()=
 });
 test('both immediate and delayed receipt paths capture the same observation snapshot',()=>{
  assert.match(ui,/directGithubOperation\(args,\{ownerRequest:request,imageEvidence:imageWorkEvidence\}\)/);
- assert.match(ui,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation.request\|\|'',imageEvidence\)/);
+ assert.match(ui,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation.request\|\|'',imageEvidence,receiptThread\)/);
  assert.match(ui,/maybeDelegateDirectOverflow\(result,operation,ownerRequest,imageEvidence\)/);
  assert.match(ui,/maybeDelegateDirectOverflow\(result,args,request,imageWorkEvidence\)/);
  assert.match(ui,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);

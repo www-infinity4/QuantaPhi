@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {newLiveBitsState,advanceLiveBits} from '../bubbles-live-iteration-feed.mjs';
+import {newLiveBitsState,advanceLiveBits,mountLiveView} from '../bubbles-live-iteration-feed.mjs';
 
 const turn = () => advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
 test('an iteration begins with owner context; no fabricated actions or spendable credits',()=>{
@@ -55,12 +55,19 @@ test('the same live status line loads on every Bubbles website entrypoint withou
  const fs=requireSource();
  for(const page of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs(page);
-  assert.match(html,/bubbles-live-iteration-feed\.mjs\?v=20261105-github-receipt2/);
-  assert.match(html,/bubbles-live-iteration-feed\.css\?v=20261104-live-bits1/);
-  assert.match(html,/bubbles-ai\.js\?v=20261105-github-receipt2/);
+  assert.match(html,/bubbles-live-iteration-feed\.mjs\?v=20261106-inthread-iterations3/);
+  assert.match(html,/bubbles-live-iteration-feed\.css\?v=20261106-inthread-iterations2/);
+  assert.match(html,/bubbles-ai\.js\?v=20261106-bubbles-github-receipts9/);
  }
  const module=fs('bubbles-live-iteration-feed.mjs');
- assert.match(module,/status\.after\(wrapper\)/);
+ assert.match(module,/\.ba-panel \.ba-status|querySelector\('\.ba-panel'\)/,
+  'Live iterations must mount on the actual body-mounted Bubbles chat, not #bubblesAICard');
+ assert.match(module,/conversation\.append\(wrapper\)/,
+  'Each iteration sequence must be part of the same chat transcript');
+ assert.match(module,/bubbles:chat-user-visible/,
+  "The first iteration should appear after the user's message");
+ assert.doesNotMatch(module,/#bubblesAICard \.ba-status/,
+  'The original selector never finds the detached messenger panel');
  assert.doesNotMatch(module,/fetch\(|localStorage|walletWrites|innerHTML/);
 });
 function requireSource(){
@@ -157,7 +164,8 @@ test('authenticated direct GitHub read displays real start and pending states wi
   CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},
   window:{dispatchEvent:event=>events.push(event.detail)},
   bubblesFetch:async()=>({ok:true,json:async()=>({ok:true,status:'working'})}),
-  rememberRecentGithubWork:()=>{},watchDirectGithubReceipt:()=>{}
+  rememberRecentGithubWork:()=>{},
+  watchDirectGithubReceipt:()=>{}
  };
  vm.createContext(ctx);
  vm.runInContext(source.slice(begin,end)+'\nthis.runDirect=directGithubOperation;',ctx);
@@ -190,7 +198,8 @@ test('direct GitHub read reports server receipt only for matching verified backe
   CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},
   window:{dispatchEvent:event=>events.push(event.detail)},
   bubblesFetch:async()=>({ok:true,json:async()=>backend}),
-  rememberRecentGithubWork:()=>{},watchDirectGithubReceipt:()=>{}
+  rememberRecentGithubWork:()=>{},
+  watchDirectGithubReceipt:()=>{}
  };
  vm.createContext(ctx);
  vm.runInContext(source.slice(begin,end)+'\nthis.runDirect=directGithubOperation;',ctx);
@@ -212,4 +221,67 @@ test('direct GitHub read reports server receipt only for matching verified backe
  backend={ok:true,status:'inspected'};
  await ctx.runDirect(op,{ownerRequest:'Inspect real chat source'});
  assert.equal(events.at(-1).status,'unverified','text-only outcome is not a verified tool receipt');
+});
+
+test('live GitHub receipts appear even while Bubble Bit wallet issuance stays disabled',async()=>{
+ const {githubIteration}=await import('../workers/infinity-brain-clock/iteration-credit.mjs');
+ const ownerHash='a'.repeat(64),requestId='11111111-1111-4111-8111-111111111111';
+ const receipt=await githubIteration({WRITER_OWNER_HASH:ownerHash,BUBBLE_BITS_ENABLED:'0'},
+  {requestId,bitContext:null},{ok:true,status:'runs_read_only',runs:[]},
+  {action:'list_runs',repository:'www-infinity4/TestPilot'},0);
+ assert.equal(receipt.receipt.tool,'github.list_runs');
+ assert.equal(receipt.receipt.status,'complete');
+ assert.equal(receipt.credit,undefined,'Display receipts never mint wallet currency');
+ assert.equal(receipt.bit.status,'context_unavailable');
+ const source=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ const marker=source.indexOf('const saveReceipt=async (receipt,operation=body)=>{');
+ const end=source.indexOf('record.receipts.push(metadata);',marker);
+ assert.ok(marker>0&&end>marker);
+ assert.doesNotMatch(source.slice(marker,end),/if\(this\.env\.BUBBLE_BITS_ENABLED==='1'\)/,
+  'Brain must record real tool receipts regardless of the credit flag');
+});
+
+test('the messenger emits a user-visible chat turn before showing its sequential iterations',()=>{
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(source,/new CustomEvent\('bubbles:chat-user-visible'/);
+ assert.match(source,/publishDirectGithubIteration\(operation,requestId,'tool_started'/);
+ assert.match(source,/assist:'github\.assist'/);
+});
+
+
+test('real Bubbles messenger mounts iteration rows in the conversation after the user message',()=>{
+ class Node{
+  constructor(){this.children=[];this.textContent='';this.className='';this.attributes={};this.isConnected=false;}
+  setAttribute(k,v){this.attributes[k]=v;}
+  append(...items){for(const item of items){item.isConnected=true;this.children.push(item);}}
+  replaceChildren(...items){this.children=[];this.append(...items);}
+  after(element){this.afterElement=element;element.isConnected=true;}
+ }
+ const status=new Node(),conversation=new Node();
+ const panel={querySelector:selector=>selector==='.ba-status'?status:selector==='.ba-messages'?conversation:selector==='.ba-current-iteration'?null:null};
+ const doc={querySelector:selector=>selector==='.ba-panel'?panel:null,createElement:()=>new Node()};
+ const view=mountLiveView(doc);
+ assert.ok(view,'The body-mounted messenger is discoverable without #bubblesAICard');
+ assert.equal(view.show instanceof Function,true);
+ view.begin();
+ assert.equal(conversation.children.length,0,'Opening a turn does not put iterations above the user message');
+ // Simulate Bubbles displaying the user's message before the first iteration.
+ const userMessage=new Node();conversation.append(userMessage);
+ let state=advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
+ state=advanceLiveBits(state,{type:'memory',state:'retrieved'});
+ view.show(state);
+ assert.equal(conversation.children[0],userMessage);
+ const current=conversation.children[1];
+ assert.match(current.attributes['aria-label'],/this chat message/);
+ assert.ok(current.children[1].children.length>=2,'One live line per distinct iteration');
+ assert.match(status.afterElement.textContent,/Iteration/);
+ state=advanceLiveBits(state,{type:'tool_started',tool:'github.assist',
+  operationId:'aaa11111-1111-4111-8111-111111111111',resource:'www-infinity4/TestPilot'});
+ view.show(state);
+ assert.equal(current.children[1].children.length,3);
+ state=advanceLiveBits(state,{type:'tool_receipt',tool:'github.assist',
+  operationId:'aaa11111-1111-4111-8111-111111111111',status:'unverified'});
+ view.show(state);
+ assert.equal(current.children[1].children.length,3,'A tool state change updates its row rather than inventing another iteration');
+ assert.equal(state.credits,0);
 });

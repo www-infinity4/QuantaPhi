@@ -50,6 +50,23 @@ if(root){
   if(!cardHost)return [];
   return [...document.querySelectorAll('[data-directory-store-id]')];
  };
+ // Editorial artwork, never represented as a merchant photograph or product.
+ // A verified merchant image takes precedence when the source actually supplies one.
+ function renderDirectoryArtwork(photo,model){
+  photo.replaceChildren();
+  photo.classList.add('icd-store-art');
+  photo.dataset.media='quanta-original-illustration';
+  const hash=Array.from(String(model.sourceId||model.name)).reduce((v,c)=>(v*31+c.charCodeAt(0))%100000,0);
+  photo.dataset.artTheme=String(hash%4);
+  photo.setAttribute('role','img');
+  photo.setAttribute('aria-label','Original QuantaPhi directory artwork for '+model.name+' in '+model.city+', '+model.state+'. Not a photograph of the business.');
+  const brand=make('span','icd-art-brand','INFINITY® · SOURCE DIRECTORY');
+  const leaf=make('span','icd-art-leaf');leaf.setAttribute('aria-hidden','true');
+  const heading=make('strong','icd-art-heading',model.name);
+  const place=make('span','icd-art-place',model.city+' · '+model.state);
+  const note=make('small','icd-art-note','QuantaPhi illustration · not a store photo');
+  photo.append(brand,leaf,heading,place,note);
+ }
  function buildIndividual(row){
   if(!cardHost||!acknowledged)return false;
   const model=directoryCardView(row,true);if(!model||document.getElementById(model.id)||
@@ -61,13 +78,12 @@ if(root){
   const meta=make('small','icd-kicker',(model.accessType==='medical_only'?'Medical program only · not adult-use':medicalProgram?'Medical-program source · adult-use not verified':model.sponsorLabel)+' · '+model.state);
   const photo=make('div','icd-store-photo');
   if(model.imageUrl){
-   const img=make('img','icd-store-image');img.alt='Approved source image for '+model.name;
+   photo.dataset.media='approved-source-image';
+   const img=make('img','icd-store-image');img.alt='Rights-cleared official source image for '+model.name;
    img.src=model.imageUrl;img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';
-   img.addEventListener('error',()=>{img.remove();photo.textContent='Source image unavailable';},{once:true});
+   img.addEventListener('error',()=>renderDirectoryArtwork(photo,model),{once:true});
    photo.append(img);
-  }else{
-   photo.append(make('p','icd-photo-placeholder','Original store image pending documented rights'));
-  }
+  }else renderDirectoryArtwork(photo,model);
   const h=make('h2','icd-store-name',model.name);
   const loc=make('p','icd-store-location',[model.store,model.city+', '+model.state].filter(Boolean).join(' · '));
   const address=make('p','icd-store-address',model.address);

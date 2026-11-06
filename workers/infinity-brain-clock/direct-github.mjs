@@ -14,6 +14,21 @@ function branchName(value){
  if(typeof value!=='string'||!/^bubbles\/[a-zA-Z0-9_-]{1,100}$/.test(value))throw Error('bubbles_task_branch_required');
  return value;
 }
+async function readCreatedRepositoryReadme(request,base,branch,options){
+ if(typeof branch!=='string'||!branch||branch.length>140)return null;
+ try{
+  const read={...options,signal:AbortSignal.timeout(10000)};
+  const commit=await request(base+'/commits/'+encodeURIComponent(branch),read);
+  if(!commit.ok)return null;
+  const commitSha=(await commit.json()).sha;
+  if(!SHA.test(commitSha||''))return null;
+  const readme=await request(base+'/contents/README.md?ref='+commitSha,read);
+  if(!readme.ok)return null;
+  const file=await readme.json();
+  if(file.type!=='file'||file.path!=='README.md'||!SHA.test(file.sha||''))return null;
+  return {path:file.path,commitSha,blobSha:file.sha};
+ }catch{return null;}
+}
 export async function githubOperation(env,body,request=fetch){
  const action=body.action;
  if(action==='search_github_code')return (await import('./github-search.mjs')).searchGithubCode(env,body,request);
@@ -42,6 +57,7 @@ export async function githubOperation(env,body,request=fetch){
    return {ok:false,status:'blocked',error:'ambiguous_repository_name',repository,testsPassed:false,deployed:false};
   const options={redirect:'manual',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','User-Agent':'Bubbles-Direct-GitHub','Content-Type':'application/json'},signal:AbortSignal.timeout(15000)};
   const identity=await request('https://api.github.com/user',options);
+  if([401,403].includes(identity.status))throw Error('github_repository_identity_http_'+identity.status);
   if(!identity.ok||(await identity.json()).login?.toLowerCase()!=='www-infinity4')throw Error('github_repository_creation_owner_mismatch');
   const created=await request('https://api.github.com/user/repos',{...options,method:'POST',body:JSON.stringify({name:repository.split('/')[1],description:String(body.description||'').slice(0,350),private:body.private===true,auto_init:true})});
   if(!created.ok){
@@ -61,7 +77,12 @@ export async function githubOperation(env,body,request=fetch){
    }
    throw Error('github_repository_creation_http_'+created.status);
   }
-  const repo=await created.json();if(repo.full_name?.toLowerCase()!==repository.toLowerCase())throw Error('github_created_repository_mismatch');
+  const repo=await created.json();
+  if(repo.full_name?.toLowerCase()!==repository.toLowerCase()||repo.html_url!=='https://github.com/'+repo.full_name)
+   throw Error('github_created_repository_mismatch');
+  if(body.private===true&&repo.private!==true)throw Error('github_created_repository_privacy_unverified');
+  const base='https://api.github.com/repos/'+repo.full_name;
+  const readme=await readCreatedRepositoryReadme(request,base,repo.default_branch,options);
   const workflow=`name: Bubbles Python and Node checks
 on: [push, pull_request, workflow_dispatch]
 permissions:
@@ -94,9 +115,12 @@ jobs:
           if [ -d tests ] && find tests -type f -name 'test*.py' | grep -q .; then python3 -m unittest discover -s tests; fi
 `;
   const bytes=new TextEncoder().encode(workflow),content=btoa(String.fromCharCode(...bytes));
-  const baseline=await request('https://api.github.com/repos/'+repository+'/contents/.github/workflows/bubbles-checks.yml',{...options,method:'PUT',body:JSON.stringify({message:'Add Bubbles Python and Node execution checks',content,branch:repo.default_branch})});
-  const environment=baseline.ok?{status:'configured',runtime:'GitHub Actions Ubuntu with Python 3.12, Node 22 and Git',workflow:'bubbles-checks.yml'}:{status:'blocked',error:'github_workflow_setup_http_'+baseline.status};
-  return {ok:true,status:'repository_created',repository:repo.full_name,url:repo.html_url,defaultBranch:repo.default_branch,private:repo.private===true,environment,testsPassed:false,deployed:false};
+  let environment;
+  try{
+   const baseline=await request(base+'/contents/.github/workflows/bubbles-checks.yml',{...options,signal:AbortSignal.timeout(15000),method:'PUT',body:JSON.stringify({message:'Add Bubbles Python and Node execution checks',content,branch:repo.default_branch})});
+   environment=baseline.ok?{status:'configured',runtime:'GitHub Actions Ubuntu with Python 3.12, Node 22 and Git',workflow:'bubbles-checks.yml'}:{status:'blocked',error:'github_workflow_setup_http_'+baseline.status};
+  }catch{environment={status:'blocked',error:'github_workflow_setup_unconfirmed'};}
+  return {ok:true,status:'repository_created',repository:repo.full_name,url:repo.html_url,defaultBranch:repo.default_branch,private:repo.private===true,readme,environment,testsPassed:false,deployed:false};
  }
  const base='https://api.github.com/repos/'+repository;
  async function api(path,method='GET',data){

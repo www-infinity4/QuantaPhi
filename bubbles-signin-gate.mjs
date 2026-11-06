@@ -1,17 +1,24 @@
-import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261105-provider-return1';
+import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261106-cloudflare-click-fixed7';
 
 export function summarizeGate(payload){
  const summary={ready:false,signedIn:false,walletVerified:payload?.ok===true&&payload?.walletVerified===true,providers:{},state:'unverified'};
+ // The authenticated /accounts view can confirm a live account even if
+ // /gate/status is stale. No cookie, URL hint or dashboard login is proof.
+ const verifiedAccounts=summary.walletVerified&&payload?.accountsVerified===true&&
+  Array.isArray(payload?.accountRecords)?payload.accountRecords:[];
  for(const id of ['github','cloudflare']){
   const record=payload?.providers?.[id];
-  const configured=record?.configured===true;
-  const connected=configured&&record?.connected===true;
+  const live=verifiedAccounts.find(account=>account?.provider===id&&
+   account.status==='connected'&&Number.isFinite(account.expiresAt)&&
+   account.expiresAt>Date.now()+30000);
+  const configured=record?.configured===true||(record==null&&!!live);
+  const connected=configured&&(record?.connected===true||!!live);
   const approved=connected&&record?.permissionsApproved===true;
   // Request every capability registered for this application. A missing project
   // capability must not prevent account sign-in or imply that access was granted.
   const authorizationActions=providerAuthorizationActions({id,...record});
   summary.providers[id]={configured,connected,approved,authorizationActions,
-   label:connected&&typeof record.label==='string'?record.label:'',
+   label:connected?(typeof live?.label==='string'?live.label:typeof record?.label==='string'?record.label:''):'',
    reconnect:record?.reconnectRequired===true,
    scopeSetupRequired:record?.scopeSetupRequired===true,
    missing:Array.isArray(record?.missingActions)?record.missingActions.filter(a=>typeof a==='string'&&a.length<80).slice(0,6):[]};
@@ -46,12 +53,12 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const walletIdentity=get('bubblesWalletIdentity');
  const cancel=get('bubblesCancelSignIn');
  const client=new AccountConnections({token:()=>resolveConnectorWalletToken(host),root:host});
- let loading=false,oauthInProgress=false,latest=null,lastChecked=0,refreshInFlight=null;
+ let loading=false,oauthInProgress=false,latest=null,lastChecked=0,refreshInFlight=null,cloudflareRecoveryAttempted=false;
  const NOTE_KEY='bubbles:oauth-return-note:v1';
  const returned=(()=>{
   try{
    const value=JSON.parse(host.sessionStorage?.getItem(NOTE_KEY)||'null');
-   return value&&value.provider==='cloudflare'&&['received','failed','declined'].includes(value.result)&&
+   return value&&['cloudflare','google'].includes(value.provider)&&['received','failed','declined'].includes(value.result)&&
     Number.isFinite(value.at)&&value.at<=Date.now()&&value.at>Date.now()-300000?value:null;
   }catch{return null;}
  })();
@@ -71,29 +78,31 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   server_error:'Cloudflare authorization service reported an error.',
   temporarily_unavailable:'Cloudflare authorization service is temporarily unavailable.'
  };
+ const returnedProviderName=returned?.provider==='google'?'Google':'Cloudflare';
  let returnIssue=returned?.result==='declined'?
-  'Cloudflare authorization was declined. No account permission was granted.':
+  returnedProviderName+' authorization was declined. No account permission was granted.':
   returned?.result==='failed'?
-  'Cloudflare returned an authorization error: '+(Object.hasOwn(reasonTexts,returned?.reason)?reasonTexts[returned.reason]:'Callback could not complete.')+' Your Bubbles account is not connected.':
+  returnedProviderName+' returned an authorization error: '+(Object.hasOwn(reasonTexts,returned?.reason)?reasonTexts[returned.reason].replaceAll('Cloudflare',returnedProviderName):'Callback could not complete.')+' Your Bubbles account is not connected.':
   returned?.result==='received'?
-  'Cloudflare returned to Bubbles. Waiting to verify your account with the server.':'';
+  returnedProviderName+' returned to Bubbles. Waiting to verify your account with the server.':'';
  const clearReturnNote=()=>{try{host.sessionStorage?.removeItem(NOTE_KEY);}catch{}};
  const setStatus=text=>{status.textContent=text;};
  const finalizeReturn=async(id,error)=>{
   oauthInProgress=false;
+  const providerName={cloudflare:'Cloudflare',github:'GitHub',google:'Google'}[id]||'Account';
   const summary=await refresh();
   if(error){
-   returnIssue=(id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in did not complete: '+String(error.message||'Authorization could not be verified.')+
+   returnIssue=providerName+' sign-in did not complete: '+String(error.message||'Authorization could not be verified.')+
     ' Your account remains unverified.';
   }else if(summary?.providers?.[id]?.connected){
    clearReturnNote();
    returnIssue=summary.providers[id].approved?
-    (id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in verified and required permissions approved.':
-    (id==='cloudflare'?'Cloudflare':'GitHub')+' account connected, but not all requested permissions were approved. Review the remaining permissions.';
+    providerName+' sign-in verified and required permissions approved.':
+    providerName+' sign-in verified. Optional project permissions are managed separately.';
 
     // OAuth return must not move the visitor away from the active Quick Card.
   }else{
-   returnIssue=(id==='cloudflare'?'Cloudflare':'GitHub')+' returned, but Bubbles could not verify a connected account. Check that you are in the original wallet-authorized Chrome tab.';
+   returnIssue=providerName+' returned, but Bubbles could not verify a connected account. Check that you are in the original wallet-authorized Chrome tab.';
   }
   setStatus(returnIssue);
   updateButtons();
@@ -125,7 +134,9 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    const value=summary.providers[id];
    cards[id].dataset.status=value.connected?'connected':value.configured?'pending':'unavailable';
    // Keep project access review separate from an already verified identity.
-   cards[id].hidden=value.connected&&value.approved;
+   // Connected means signed in, regardless of optional project grants.
+   cards[id].hidden=value.connected;
+   actions[id].hidden=value.connected;
    actions[id].textContent=value.connected&&!value.approved&&id==='cloudflare'?'Review Cloudflare project access':
     'Sign in with '+(id==='github'?'GitHub':'Cloudflare');
    labels[id].textContent=value.connected?
@@ -137,7 +148,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   // Account sign-in and project authorization are separate. Only the server can
   // approve a tool's permissions; hiding this form never authorizes a tool.
   gate.dataset.ready=String(summary.ready);
-  gate.hidden=summary.ready||summary.walletVerified||(prefix==='chat'&&gate.dataset.ownerVerified==='true');
+  gate.hidden=summary.ready||summary.signedIn||summary.walletVerified||(prefix==='chat'&&gate.dataset.ownerVerified==='true');
   if(walletIdentity){
    walletIdentity.hidden=!summary.walletVerified;
    walletIdentity.textContent=summary.walletVerified?'Signed in to Bubbles with your Unified Wallet.':'';
@@ -146,7 +157,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    clearReturnNote();returnIssue='';
    setStatus('You’re signed in with the required permissions.');
   }else if(returnIssue)setStatus(returnIssue);
-  else if(summary.signedIn)setStatus('Your accounts are signed in. Review Cloudflare access to use project tools.');
+  else if(summary.signedIn)setStatus('Your accounts are signed in. Optional project permissions are managed in Account Connections.');
   else if(summary.providers.github.connected)setStatus('Continue with Cloudflare.');
   else setStatus('Sign in to connect your accounts.');
   updateButtons();
@@ -174,6 +185,26 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
       if(Array.isArray(accounts?.accounts))accountRecords=accounts.accounts;
      }catch{}
     }
+    // The Android callback can be received securely while the original tab
+    // loses its browser-local return note. Finish that already-authorized
+    // Cloudflare handoff once, without initiating a fresh OAuth sign-in.
+    if(!cloudflareRecoveryAttempted&&session?.walletVerified===true&&
+       Array.isArray(accountRecords)&&!client.pending&&!oauthInProgress&&
+       !accountRecords.some(account=>account?.provider==='cloudflare'&&
+         account.status==='connected'&&Number.isFinite(account.expiresAt)&&
+         account.expiresAt>Date.now()+30000)){
+      cloudflareRecoveryAttempted=true;
+      try{
+       const recovered=await client.call('/handoff/cloudflare/resume',{},45000);
+       if(recovered.status==='connected'&&recovered.account){
+        const current=await client.call('/accounts');
+        if(Array.isArray(current?.accounts))accountRecords=current.accounts;
+       }
+      }catch(error){
+       returnIssue='Cloudflare authorization recovery failed: '+String(error?.message||'unverified')+
+        '. Your connection remains unverified.';
+      }
+    }
     lastChecked=Date.now();
     return render({...data,walletVerified:session?.walletVerified===true,
      accountsVerified:Array.isArray(accountRecords),accountRecords:accountRecords||[]});
@@ -191,6 +222,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
      setStatus('Could not check the account session. Tap Sign in with Cloudflare to retry; no permissions were changed.');
     }
     for(const id of ['github','cloudflare']){
+     cards[id].hidden=false;actions[id].hidden=false;
      labels[id].textContent='';
      actions[id].textContent='Sign in with '+(id==='github'?'GitHub':'Cloudflare');
     }
@@ -211,19 +243,12 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     setStatus((id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in is not configured on the connection service. No authorization was started.');
     return;
    }
-   if(provider.connected&&provider.approved)return;
-   // A registered owner.full permission means the OAuth client currently
-   // requires the full scope inventory at consent time. Do not request an
-   // incompatible two-scope subset and bounce back to the login button.
-   const fullCloudflare=id==='cloudflare'&&provider.authorizationActions.includes('owner.full');
-   const authorizationActions=fullCloudflare?['owner.full']:
-    id==='cloudflare'&&!provider.connected?['account.read']:provider.authorizationActions;
-   const upgrading=id==='cloudflare'&&provider.connected;
+   if(provider.connected)return;
+   // Sign-in must open Cloudflare's small account consent. Large project
+   // scopes require separate, explicit permission review after verification.
+   const authorizationActions=id==='cloudflare'?['account.read']:provider.authorizationActions;
    oauthInProgress=true;updateButtons();
-   setStatus(fullCloudflare?
-    'Opening Cloudflare to review the requested project access…':
-    upgrading?'Opening Cloudflare to review permissions…':
-    'Continue on '+(id==='github'?'GitHub':'Cloudflare')+' to sign in.');
+   setStatus('Opening '+(id==='github'?'GitHub':'Cloudflare')+' account authorization…');
    try{
     returnIssue='';
     clearReturnNote();
@@ -251,8 +276,16 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  host.addEventListener('pageshow',()=>void refresh());
  root.addEventListener('visibilitychange',()=>{if(!root.hidden)void refresh();});
  // Resume the existing wallet-bound Android handoff after same-window navigation.
- const resumingProvider=client.readPendingHandoff()?.provider||'cloudflare';
- const resuming=client.resumePending(error=>void finalizeReturn(resumingProvider,error));
+ const pendingHandoff=client.readPendingHandoff();
+ // Both Google and Cloudflare recover an already-received callback in a
+ // lost Android tab only through the server's wallet-bound sealed handoff.
+ const recoveredProvider=returned?.result==='received'&&
+  ['google','cloudflare'].includes(returned.provider)?returned.provider:null;
+ const resumingProvider=pendingHandoff?.provider||recoveredProvider||'cloudflare';
+ const resuming=client.resumePending(error=>void finalizeReturn(resumingProvider,error),{
+  recoverGoogle:recoveredProvider==='google',
+  recoverCloudflare:recoveredProvider==='cloudflare'
+ });
  if(resuming){
   oauthInProgress=true;updateButtons();
   setStatus('Finishing sign-in…');

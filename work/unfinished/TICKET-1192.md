@@ -65,3 +65,11 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 - The branch merged in current Google sign-in work from main as a two-parent source merge without reverting it. Isolated follow-up Node tests passed locally 3/3; CI first found a missing test-harness stub in two existing Bubbles direct GitHub VM tests, corrected in `dc72b9e63cfb90396a1e46dafa91e2f066470981`. Exact-head CI after this correction remains to be checked.
 - Status: source_tested / review_pending (🟡); overall progress remains unknown. No production Cloudflare release, physical Android readback, new repo creation, settled Bubble Bits or GIT issuance has been claimed. Existing `BUBBLE_BITS_ENABLED` safety hold stays OFF.
 - Next single executable action: inspect PR #1723 exact-head Bubbles unified and Bits CI results; independently review, then guarded release with an authenticated owner same-conversation `create_repository` receipt and Android status/iteration acceptance.
+
+## 2026-11-06 UTC · repository creation and chat receipt checkpoint
+
+- Reused PR #1723, reconciled against #1730, and preserved the provider sign-in changes. The published chat had a receipt panel, but the standard send path did not start it. The ordinary chat and saved GitHub follow-up now open the same in-thread iteration trail.
+- The direct GitHub path passes explicit private visibility, preserves the originating chat during a delayed reply, and verifies README.md at an exact GitHub commit and blob before linking the file. A follow-up reads the saved request, with no second write. The repository-create receipt is an execution observation and does not award a Bubble Bit.
+- Focused local check: 133 tests passed. Current production was observed serving #1730 and Brain v97. This checkpoint is source tested. The new browser and Brain releases, independently read-back live repo creation, and phone acceptance are pending. No owner coordinator lease was available in this session.
+- This slice has three acceptance steps: source tests passed, exact-head CI and guarded release pending, owner chat write/readback pending. Estimated slice progress 1/3. Overall progress and remaining sessions are unknown.
+- Next action: verify the reconciled PR head in GitHub CI, then stage the exact Brain source through the existing release gate.

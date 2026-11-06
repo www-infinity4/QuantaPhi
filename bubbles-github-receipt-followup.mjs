@@ -8,9 +8,13 @@ export function isGithubReceiptFollowup(value){
  return /^(?:(?:hey|please|bubbles)[,\s]+)?(?:did\s+(?:github|the\s+github\s+(?:job|request)|it)\s+(?:respond|reply|finish|complete|create\s+(?:the|my|a)?\s*(?:repo|repository))\b(?:\s+(?:to|with|on|for|yet)\b[\w\s.-]*)?|has\s+(?:github|it)\s+(?:responded|replied|finished|completed)\b|does\s+that\s+mean\s+(?:yes\s+)?(?:it\s+)?created\s+(?:a|the|my)\s+(?:repo|repository)|was\s+(?:(?:the|my)\s+)?[\w.-]{1,80}\s+created|(?:github|git\s*hub)\s+(?:status|response|result))\s*[?!.]*$/i.test(text);
 }
 const safeRepository=value=>/^www-infinity4\/[a-zA-Z0-9_.-]{1,80}$/.test(String(value||''))?value:'';
-export function githubReceiptFollowupReply(result){
+export function githubReceiptFollowupReply(result,describeResult,question=''){
  if(!result||typeof result!=='object'||result.error==='receipt_not_found')
   return 'GitHub has no saved completion receipt for this request yet. No repository creation is confirmed.';
+ const named=String(question).match(/\bwas\s+(?:(?:the|my)\s+)?([\w.-]{1,80})\s+created\b/i)?.[1];
+ if(named&&safeRepository(result.repository)?.split('/')[1]?.toLowerCase()!==named.toLowerCase())
+  return 'The latest saved GitHub receipt in this conversation is for a different request. Creation of '+named+' is unverified.';
+ if(result.ok!==true&&typeof describeResult==='function')return describeResult(result);
  if(result.ok!==true)return 'The GitHub execution receipt reports a blocked or unsuccessful request ('+String(result.error||result.status||'unavailable').slice(0,90)+'). No repository creation is confirmed.';
  if(result.status==='working'||result.status==='in_progress')
   return 'GitHub is still processing the saved request. The final result and repository creation are not yet verified.';
@@ -19,6 +23,7 @@ export function githubReceiptFollowupReply(result){
  if(result.status==='repository_created'){
   const repository=safeRepository(result.repository);
   const url=repository&&result.url==='https://github.com/'+repository?result.url:'';
+  if(repository&&url&&typeof describeResult==='function')return describeResult(result);
   return repository&&url?'GitHub confirmed that it created '+repository+'. '+url:'GitHub reported repository creation, but its repository identity and URL are not verified in this response.';
  }
  if(result.status==='repository_already_exists'){

@@ -7,10 +7,31 @@
  box-shadow:0 4px 18px #19304110;max-width:800px;margin:15px auto;
  font:16px/1.5 system-ui,-apple-system,Roboto,sans-serif}
 .icd-store-card[hidden]{display:none!important}
-.icd-store-photo{border:1px solid #d5e0e5;background:#f4f7f8;border-radius:12px;min-height:175px;
- display:flex;align-items:center;justify-content:center;overflow:hidden;margin-top:12px}
-.icd-store-image{width:100%;height:auto;max-height:330px;object-fit:contain;display:block}
-.icd-photo-placeholder{color:#71838d;font-size:13px;text-align:center;padding:15px}
+.icd-store-photo{position:relative;isolation:isolate;border:1px solid #d5e0e5;
+ background:#f2f7f6;border-radius:16px;min-height:210px;overflow:hidden;margin-top:12px;
+ display:flex;align-items:center;justify-content:center}
+.icd-store-image{width:100%;height:auto;max-height:330px;min-height:210px;object-fit:cover;display:block}
+.icd-store-art{--icd-art-first:#123f3a;--icd-art-last:#102429;
+ width:100%;min-height:232px;aspect-ratio:16/9;
+ display:grid;grid-template-rows:auto 1fr auto auto;align-items:end;justify-items:start;gap:4px;
+ padding:20px 22px 17px;color:#f4fff6;
+ background:radial-gradient(circle at 83% 20%,#bcdfa032,transparent 48%),
+ linear-gradient(124deg,var(--icd-art-first),var(--icd-art-last))}
+.icd-store-art[data-art-theme="1"]{--icd-art-first:#244936;--icd-art-last:#383129}
+.icd-store-art[data-art-theme="2"]{--icd-art-first:#2b4c51;--icd-art-last:#172a36}
+.icd-store-art[data-art-theme="3"]{--icd-art-first:#4b3648;--icd-art-last:#26382f}
+.icd-art-leaf{position:absolute;inset:0 0 0 auto;width:63%;height:100%;
+ background:url('/cannabis-directory-leaf.svg?v=20261106') center / contain no-repeat;
+ opacity:.31;pointer-events:none;transform:rotate(13deg);filter:drop-shadow(0 12px 16px #050f0d30)}
+.icd-art-brand,.icd-art-heading,.icd-art-place,.icd-art-note{position:relative;z-index:1;max-width:87%;text-shadow:0 2px 8px #061a1e88}
+.icd-art-brand{font-size:11px;font-weight:850;letter-spacing:.14em;color:#e5f3dc}
+.icd-art-heading{font:750 clamp(23px,5.5vw,39px)/1.08 system-ui,-apple-system,Roboto,sans-serif;
+ letter-spacing:-.025em;overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;
+ -webkit-line-clamp:3;overflow:hidden}
+.icd-art-place{font-size:14px;font-weight:730;letter-spacing:.04em;color:#def1df}
+.icd-art-note{font-size:10px;color:#e1eae1;letter-spacing:.015em}
+@media(max-width:480px){.icd-store-art{min-height:205px;padding:16px 18px 14px}.icd-art-heading{font-size:clamp(22px,6vw,32px)}}
+
 .icd-store-name{font-size:clamp(22px,4vw,30px)!important;line-height:1.2!important;color:#233e50!important;margin:12px 0 5px!important}
 .icd-store-location{color:#405969;font-size:15px;font-weight:800}
 .icd-store-address,.icd-store-testimonial{color:#334c5b;font-size:14px}

@@ -185,7 +185,7 @@ test('Google refresh without a new refresh token retains the prior one', async()
 });
 test('Google read tool uses fixed endpoints, verifies caller and suppresses results after disconnect', async()=>{
   const f=fixture(),account=await f.finish(await f.begin());let calls=0;
-  const request=async(url,options)=>{calls++;assert.equal(new URL(url).hostname,'www.googleapis.com');assert.equal(options.redirect,'error');assert.equal(options.headers.Authorization,'Bearer secret-access');return Response.json({files:[{id:'f1',name:'report'}]});};
+  const request=async(url,options)=>{calls++;assert.equal(new URL(url).hostname,'www.googleapis.com');assert.equal(options.redirect,'manual');assert.equal(options.headers.Authorization,'Bearer secret-access');return Response.json({files:[{id:'f1',name:'report'}]});};
   const result=await executeGoogleRead(f.service,{userId:'alice',id:account.id,operation:'drive.list',args:{url:'https://attacker.test',query:'https://attacker.test'}},request);
   assert.equal(result.receipt.status,'provider_confirmed');assert.equal(result.data.files[0].id,'f1');
   await assert.rejects(executeGoogleRead(f.service,{userId:'bob',id:account.id,operation:'drive.list'},request));assert.equal(calls,1);
@@ -427,4 +427,73 @@ test('recovered OAuth success cannot impersonate a later connection revision',as
   assert.equal(newer.id,old.account.id);
   assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
   assert.equal(f.calls,2);
+});
+
+test('Cloudflare callback recovers after Android loses its tab marker only in the originating wallet session',async()=>{
+ const f=fixture();let exchanges=0;
+ f.service.adapters.cloudflare={
+  authorization:({state,challenge})=>'https://dash.cloudflare.com/oauth2/auth?'+new URLSearchParams({state,code_challenge:challenge}),
+  exchange:async()=>{exchanges++;return {subject:'cloudflare-subject',label:'Cloudflare owner',accessToken:'private-cloudflare-access',refreshToken:'private-cloudflare-refresh',expiresIn:3600,grantedActions:['account.read']};}
+ };
+ const input={userId:'alice',sessionId:'session-a',provider:'cloudflare',actions:['account.read']};
+ const state=new URL((await f.service.start(input)).authorizationUrl).searchParams.get('state');
+ assert.deepEqual(await f.service.resumeCloudflareHandoff(input),{status:'missing'});
+ await f.service.handoff({userId:input.userId,provider:'cloudflare',state,code:'secret-cloudflare-code'});
+ assert.deepEqual(await f.service.resumeCloudflareHandoff({...input,userId:'different-owner'}),{status:'missing'});
+ assert.deepEqual(await f.service.resumeCloudflareHandoff({...input,sessionId:'another-wallet-session'}),{status:'missing'});
+ const results=await Promise.all([f.service.resumeCloudflareHandoff(input),f.service.resumeCloudflareHandoff(input)]);
+ assert.ok(results.some(r=>r.status==='connected'&&r.account.provider==='cloudflare'));
+ assert.equal(exchanges,1);
+ assert.ok(!JSON.stringify(results).includes('secret-cloudflare-code'));
+ assert.ok(!JSON.stringify([...f.db.rows]).includes('private-cloudflare-access'));
+});
+
+test('expired Google OAuth session auto-refreshes on account status without a second sign-in button',async()=>{
+ const f=fixture(),connection=await f.finish(await f.begin());let refreshes=0;
+ f.adapter.refresh=async ({refreshToken,actions})=>{
+  assert.equal(refreshToken,'secret-refresh');
+  assert.deepEqual(actions,['drive.read']);
+  refreshes++;
+  return {accessToken:'new-secret-access',refreshToken:'new-secret-refresh',
+   expiresIn:3600,grantedActions:actions};
+ };
+ f.setTime(3600500);
+ const results=await f.service.gateStatus({userId:'alice'});
+ const google=results.find(account=>account.id===connection.id);
+ assert.equal(refreshes,1);
+ assert.equal(google.status,'connected');
+ assert.ok(google.expiresAt>3600500+30000);
+ assert.ok(!JSON.stringify(results).includes('new-secret'));
+ const next=await f.service.gateStatus({userId:'alice'});
+ assert.equal(next.find(account=>account.id===connection.id).status,'connected');
+ assert.equal(refreshes,1);
+});
+
+test('Google OAuth code exchange and userinfo use a Cloudflare Workers-supported redirect policy',async()=>{
+ const urls=[],calls=[];
+ const adapter=googleAdapter(config,async(url,options)=>{
+  urls.push(url);calls.push(options);
+  assert.equal(options.redirect,'manual','Workers rejects redirect:error before requesting Google');
+  if(url==='https://oauth2.googleapis.com/token')return Response.json({access_token:'access',token_type:'Bearer',expires_in:3600,scope:'openid email https://www.googleapis.com/auth/drive.readonly'});
+  if(url==='https://openidconnect.googleapis.com/v1/userinfo')return Response.json({sub:'google-sub',email:'user@example.test',email_verified:true});
+  assert.fail('Unexpected endpoint '+url);
+ });
+ const account=await adapter.exchange({code:'authorized-code',verifier:'verifier',actions:['drive.read']});
+ assert.equal(account.subject,'google-sub');
+ assert.deepEqual(account.grantedActions,['drive.read']);
+ assert.deepEqual(urls,['https://oauth2.googleapis.com/token','https://openidconnect.googleapis.com/v1/userinfo']);
+ assert.equal(calls[1].headers.Authorization,'Bearer access');
+});
+
+test('Google OAuth refuses third-party redirects rather than forwarding codes or access tokens',async()=>{
+ let requests=0;
+ const adapter=googleAdapter(config,async(url,options)=>{
+  requests++;
+  assert.equal(options.redirect,'manual');
+  return Response.redirect('https://untrusted.example/capture',302);
+ });
+ await assert.rejects(adapter.exchange({code:'private-code',verifier:'verifier',actions:['drive.read']}),/google_exchange_302/);
+ assert.equal(requests,1,'A redirect cannot follow or receive the code');
+ await assert.rejects(adapter.refresh({refreshToken:'private-refresh',actions:['drive.read']}),/google_refresh_302/);
+ assert.equal(requests,2);
 });

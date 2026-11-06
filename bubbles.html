@@ -13,7 +13,7 @@
   <meta name="theme-color" content="#f7f4f0">
   <meta name="color-scheme" content="light">
   <link rel="stylesheet" href="/bubbles-ai.css?v=20261101-activity-contrast2">
-<link rel="stylesheet" href="/bubbles-live-iteration-feed.css?v=20261104-live-bits1">
+<link rel="stylesheet" href="/bubbles-live-iteration-feed.css?v=20261106-inthread-iterations2">
   <style>
     html{min-height:100%;background:#f7f4f0}
     /* Embedded orb frames must not show the HTML canvas as a square behind the circle. */
@@ -98,14 +98,14 @@
   <script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script>
   <script defer src="/cloud-wallet-client.js?v=20261013-brain-bridge1"></script>
   <script defer src="/robot-brain-owner.js?v=20261015-owner-webview21"></script>
-  <script defer src="/bubbles-cloud-wallet.js?v=20261104-iteration-credit1"></script>
+  <script defer src="/bubbles-cloud-wallet.js?v=20261106-inthread-iterations2"></script>
   <script defer src="/bubbles-voice-gate.js?v=20261023-cardone-wake1"></script>
   <script defer src="/bubbles-brain-actions.js?v=20261025-speech-guard1"></script>
   <script defer src="/bubbles-memory.js?v=20261020-synapse1"></script>
   <script defer src="/quant-ai-personal.js?v=20261020-bubbles-private1"></script>
-  <script defer src="/bubbles-ai.js?v=20261105-github-receipt2"></script>
+  <script defer src="/bubbles-ai.js?v=20261106-bubbles-github-receipts9"></script>
   <script defer src="/bubbles-family-prompts.js?v=20261104-family-prompts1"></script>
-<script type="module" src="/bubbles-live-iteration-feed.mjs?v=20261105-github-receipt2"></script>
+<script type="module" src="/bubbles-live-iteration-feed.mjs?v=20261106-inthread-iterations3"></script>
   <script defer src="/bubbles-owner-diagnostic.js?v=20261026-owner-health2"></script>
   <script defer src="/bubbles-pwa.js?v=20261019-chrome1"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1">
@@ -172,11 +172,11 @@
       <a class="bubbles-starquest-signin" id="bubblesStarquestSignIn" href="/wallet-recovery.html?signin=starquest&amp;returnTo=/bubbles.html">Sign in with StarQuest</a>
       <details class="bubbles-signin-help"><summary>Connect accounts for tools</summary>
       <div class="bubbles-signin-grid">
-        <article class="bubbles-signin-provider" id="bubblesGithubCard">
+        <article class="bubbles-signin-provider" id="bubblesGithubCard" hidden>
           <button id="bubblesGithubSignIn" data-provider="github" type="button" disabled aria-describedby="bubblesGithubStatus">Sign in with GitHub</button>
           <p id="bubblesGithubStatus"></p>
         </article>
-        <article class="bubbles-signin-provider" id="bubblesCloudflareCard">
+        <article class="bubbles-signin-provider" id="bubblesCloudflareCard" hidden>
           <button id="bubblesCloudflareSignIn" data-provider="cloudflare" type="button" aria-describedby="bubblesCloudflareStatus">Sign in with Cloudflare</button>
           <p id="bubblesCloudflareStatus"></p>
           <a id="bubblesRecoverWallet" class="bubbles-wallet-recovery" href="/wallet-recovery.html?verify=1" hidden>Verify existing wallet to finish Cloudflare sign-in</a>
@@ -268,7 +268,7 @@ html.bubble-iframe .bubbles-bottom-nav,body.bubbles-embedded .bubbles-bottom-nav
 </style>
 <footer class="qp-site-footer" aria-label="QuantaPhi site information"><p>QuantaPhi · AI research, media and learning</p><nav aria-label="Legal and site links"><a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a></nav></footer>
   <script type="module">
-    import('/bubbles-signin-gate.mjs?v=20261105-provider-status2')
+    import('/bubbles-signin-gate.mjs?v=20261106-cloudflare-click-fixed7')
       .then(({mountBubblesSigninGate})=>mountBubblesSigninGate())
       .catch(()=>{
         const state=document.getElementById('bubblesSigninStatus');

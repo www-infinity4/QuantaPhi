@@ -45,7 +45,7 @@ test('client setup probe uses only a fictitious grant and never claims account v
 
 test('account page starts consent with the selected provider permissions',async t=>{
  class Element {
-  constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.classList={add(){}};}
+  constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.style={};this.classList={add(){}};}
   append(...nodes){this.childNodes.push(...nodes);}
   prepend(...nodes){this.childNodes.unshift(...nodes);}
   replaceChildren(...nodes){this.childNodes=nodes;}
@@ -58,7 +58,8 @@ test('account page starts consent with the selected provider permissions',async 
  const document={createElement:tag=>new Element(tag),createTextNode:text=>({textContent:text}),addEventListener(){}};
  const storage=new Map(),sessionStorage={getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
  const popup={location:{},close(){}},calls=[];
- let googleConfigured=false,fullCloudflareConfigured=false,navigation='',holdOldAccounts=false,finishOldRead;
+ let googleConfigured=false,fullCloudflareConfigured=false,navigation='',holdOldAccounts=false,finishOldRead,cloudflareRecoveryAvailable=false;
+ let holdCloudflareRecovery=true,releaseCloudflareRecovery;
  let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',expiresAt:Date.now()+600000,grantedActions:['repository.read']}];
  const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
  Object.assign(globalThis,{document,sessionStorage,window,fetch:async(url,options)=>{
@@ -72,6 +73,16 @@ test('account page starts consent with the selected provider permissions',async 
    const response=Response.json({ok:true,accounts:accountRecords});
    if(holdOldAccounts&&!finishOldRead)return new Promise(resolve=>{finishOldRead=()=>resolve(response);});
    return response;
+  }
+  if(path==='/handoff/cloudflare/resume'){
+   assert.deepEqual(body,{});
+   if(holdCloudflareRecovery)await new Promise(resolve=>releaseCloudflareRecovery=resolve);
+   if(!cloudflareRecoveryAvailable)return Response.json({ok:true,status:'missing'});
+   const account={id:'cf-autorecovered',provider:'cloudflare',label:'recovered@example.test',
+    status:'connected',expiresAt:Date.now()+600000,grantedActions:['account.read']};
+   accountRecords=[...accountRecords,account];
+   cloudflareRecoveryAvailable=false;
+   return Response.json({ok:true,status:'connected',account});
   }
   if(path==='/handoff/google/resume'){
    assert.deepEqual(body,{});
@@ -89,13 +100,28 @@ test('account page starts consent with the selected provider permissions',async 
   assert.fail('Unexpected endpoint '+path);
  }});
  const container=new Element('main'),panel=mountConnections(container,{token:async()=>'sq_'+'a'.repeat(40)});
- await panel.refresh();
  const descendants=node=>[node,...(node.childNodes||[]).flatMap(descendants)];
+ const initialLoad=panel.refresh();
+ for(let i=0;i<8&&!releaseCloudflareRecovery;i++)await new Promise(setImmediate);
+ assert.equal(typeof releaseCloudflareRecovery,'function','A recovery check was started');
+ assert.ok(descendants(container).some(node=>node.dataset?.provider==='cloudflare'),
+  'Cloudflare sign-in button must render and accept taps while legacy recovery is still pending');
+ holdCloudflareRecovery=false;
+ releaseCloudflareRecovery();
+ await initialLoad;
+
+ assert.equal(calls.filter(call=>call.path==='/handoff/cloudflare/resume').length,1,
+  'Account Connections should try recovering an already received Cloudflare grant even without return URL');
+ assert.equal(calls.some(call=>call.path==='/start'),false,
+  'Recovering existing Cloudflare authorization never starts a new sign-in');
  assert.equal(descendants(container).some(node=>node.dataset?.provider==='github'),false,'Connected GitHub must not show a second sign-in button');
- assert.ok(descendants(container).some(node=>node.textContent?.includes('GitHub · Signed in as www-infinity4')));
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('GitHub signed in ✓ as www-infinity4')));
  const button=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
  assert.equal(button.disabled,false);
  assert.equal(button.textContent,'Sign in with Cloudflare');
+ const cloudflareCard=descendants(container).find(node=>node.childNodes?.includes(button));
+ assert.ok(cloudflareCard.childNodes.some(node=>node.role==='status'),
+  'Any failed Cloudflare authorization must display its reason next to the button');
  assert.equal(descendants(container).some(node=>node.tag==='fieldset'&&!node.hidden),false);
  await button.listeners.click();
  assert.deepEqual(calls.find(call=>call.path==='/start').body,{provider:'cloudflare',actions:['account.read']});
@@ -105,21 +131,34 @@ test('account page starts consent with the selected provider permissions',async 
  accountRecords=[...accountRecords,{id:'cf-a',provider:'cloudflare',label:'owner@example.test',status:'connected',expiresAt:Date.now()+600000,grantedActions:['account.read']}];
  await panel.refresh();
  assert.equal(descendants(container).some(node=>node.dataset?.provider==='cloudflare'),false,'Connected Cloudflare button must disappear');
- assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare · Signed in as owner@example.test')));
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as owner@example.test')));
  fullCloudflareConfigured=true;
  await panel.refresh();
  const cloudflareReview=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
- assert.equal(cloudflareReview.textContent,'Review Cloudflare project access');
- assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare · Signed in as owner@example.test')));
+ assert.equal(cloudflareReview,undefined,'Signed-in Cloudflare must never show another login button');
+ const manage=descendants(container).find(node=>node.textContent==='Review project permissions');
+ assert.ok(manage,'Optional access review stays in account settings');
+ assert.ok(descendants(container).some(node=>node.tag==='details'&&node.childNodes.includes(manage)),
+  'Review action must stay collapsed in a settings disclosure');
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as owner@example.test')));
  // An expired provider grant must not claim sign-in, even if the historical
  // row still has a connected status until the service refreshes it.
  accountRecords=accountRecords.map(row=>row.provider==='cloudflare'?{...row,expiresAt:Date.now()-10000}:row);
  await panel.refresh();
  assert.ok(descendants(container).some(node=>node.dataset?.provider==='cloudflare'));
  assert.ok(descendants(container).some(node=>String(node.textContent).includes('reconnect required')));
+ const fullClientButton=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
+ assert.equal(fullCloudflareConfigured,true);
+ await fullClientButton.listeners.click();
+ assert.deepEqual(calls.filter(call=>call.path==='/start').at(-1).body,
+  {provider:'cloudflare',actions:['account.read']},
+  'Initial account sign-in must not launch 386 Cloudflare permission scopes');
+ panel.client.cancelConnect();
+
 
  googleConfigured=true;
  window.location.assign=url=>{navigation=url;};
+ window.location.replace=url=>{navigation=url;};
  await panel.refresh();
  const googleButton=descendants(container).find(node=>node.dataset?.provider==='google');
  const googleCard=descendants(container).find(node=>node.childNodes?.includes(googleButton));
@@ -142,7 +181,7 @@ test('account page starts consent with the selected provider permissions',async 
  holdOldAccounts=true;
  const returningPanel=mountConnections(returned,{token:async()=>'sq_'+'a'.repeat(40)});
  const staleLoad=returningPanel.refresh();
- const googleSignedIn=()=>descendants(returned).some(node=>node.textContent==='Google · Signed in as google@example.test');
+ const googleSignedIn=()=>descendants(returned).some(node=>node.textContent==='Google signed in ✓ as google@example.test');
  for(let i=0;i<8&&!googleSignedIn();i++)await new Promise(setImmediate);
  assert.ok(googleSignedIn(),'A verified Google return must replace the sign-in button');
  assert.equal(calls.filter(call=>call.path==='/handoff/google/resume').length,1);
@@ -150,6 +189,25 @@ test('account page starts consent with the selected provider permissions',async 
  await staleLoad;
  assert.ok(googleSignedIn(),'An older account read must not replace the verified Google status');
  assert.equal(descendants(returned).some(node=>node.dataset?.provider==='google'),false);
+ for(let i=0;i<8&&navigation!=='/bubbles.html';i++)await new Promise(setImmediate);
+ assert.equal(navigation,'/bubbles.html','Verified lost-tab Google callback must return to Bubbles, not strand user in settings');
+ window.location.search='';
+ accountRecords=accountRecords.filter(row=>row.provider!=='cloudflare');
+ cloudflareRecoveryAvailable=true;
+ const beforeRecovery=calls.length;
+ const recoveredContainer=new Element('main'),recoveredPanel=mountConnections(recoveredContainer,{token:async()=>'sq_'+'a'.repeat(40)});
+ await recoveredPanel.refresh();
+ for(let i=0;i<20&&calls.slice(beforeRecovery).filter(call=>call.path==='/handoff/cloudflare/resume').length<1;i++)
+  await new Promise(setImmediate);
+ assert.equal(calls.slice(beforeRecovery).filter(call=>call.path==='/handoff/cloudflare/resume').length,1,
+  'Only one wallet-bound Cloudflare recovery attempt per Accounts page');
+ assert.equal(calls.slice(beforeRecovery).some(call=>call.path==='/start'),false);
+ for(let i=0;i<20&&!descendants(recoveredContainer).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as recovered@example.test'));i++)
+  await new Promise(setImmediate);
+ assert.ok(descendants(recoveredContainer).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as recovered@example.test')),
+  'Recovered Cloudflare connection replaces its old sign-in button');
+ assert.equal(descendants(recoveredContainer).some(node=>node.dataset?.provider==='cloudflare'),false);
+
 });
 
 test('Android Cloudflare sign-in navigates this tab directly and never opens about:blank',async()=>{
@@ -570,4 +628,28 @@ test('Cloudflare OAuth rejects User Details responses with no verified user ID',
    Response.json({access_token:'test',expires_in:3600,scope:scopes,token_type:'Bearer'}):
    Response.json({success:true,result:{email:'owner@example.test'}}));
  await assert.rejects(adapter.exchange({code:'code',verifier:'pkce',actions:['account.read']}),/provider_identity_invalid/);
+});
+
+test('Cloudflare OAuth code exchange never uses the unsupported Workers redirect:error mode',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ const calls=[];
+ const adapter=cloudflareAdapter({clientId:'test',clientSecret:'private',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+  calls.push(url);
+  assert.equal(options.redirect,'manual');
+  if(url.endsWith('/oauth2/token'))return Response.json({access_token:'access',refresh_token:'refresh',token_type:'Bearer',expires_in:3600,scope:'user-details.read memberships.read'});
+  return Response.json({success:true,result:{id:'e'.repeat(32),email:'test@example.test'}});
+ });
+ const connected=await adapter.exchange({code:'auth-code',verifier:'verifier',actions:['account.read']});
+ assert.equal(connected.subject,'e'.repeat(32));
+ assert.deepEqual(connected.grantedActions,['account.read']);
+ assert.equal(calls.length,2);
+});
+
+test('Google OAuth redirect status stays sanitized across Worker completion boundary',async()=>{
+ const {connectionFailureCode,safeConnectionFailure}=await import('../workers/bubbles-connections/completion.mjs');
+ const code=connectionFailureCode(Object.assign(Error('google_exchange_302'),{connectionStage:'exchange'}));
+ assert.equal(code,'google_exchange_302');
+ assert.equal(safeConnectionFailure(code),true);
+ assert.match(providerSignInErrorMessage(code,'google'),/unexpected redirect/);
+ assert.ok(!providerSignInErrorMessage(code,'google').includes('private-code'));
 });
