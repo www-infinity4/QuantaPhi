@@ -189,6 +189,8 @@ test('account page starts consent with the selected provider permissions',async 
  finishOldRead();
  await staleLoad;
  assert.ok(googleSignedIn(),'An older account read must not replace the verified Google status');
+ for(let i=0;i<8&&navigation!=='/bubbles.html';i++)await new Promise(setImmediate);
+ assert.equal(navigation,'/bubbles.html','Verified lost-tab Google callback must return to Bubbles, not strand user in settings');
  const connectAnotherGoogle=descendants(returned).find(node=>node.dataset?.provider==='google');
  assert.equal(connectAnotherGoogle?.textContent,'Connect another Google account',
   'A Google user can add a second account without disconnecting the first one');
@@ -199,8 +201,6 @@ test('account page starts consent with the selected provider permissions',async 
  assert.ok(accountRecords.some(row=>row.provider==='google'&&row.label==='google@example.test'),
   'The verified Google record must remain untouched while another signs in');
  returningPanel.client.cancelConnect();
- for(let i=0;i<8&&navigation!=='/bubbles.html';i++)await new Promise(setImmediate);
- assert.equal(navigation,'/bubbles.html','Verified lost-tab Google callback must return to Bubbles, not strand user in settings');
  window.location.search='';
  accountRecords=accountRecords.filter(row=>row.provider!=='cloudflare');
  cloudflareRecoveryAvailable=true;
