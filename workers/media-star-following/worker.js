@@ -221,6 +221,116 @@ async function playbackReport(env,owner,body){
  await env.DB.prepare("INSERT INTO space_playback_reports(owner_id,space_id,state,reported_at) VALUES(?,?,?,?) ON CONFLICT(owner_id,space_id) DO UPDATE SET state=excluded.state,reported_at=excluded.reported_at").bind(owner,id,body.state,Date.now()).run();
  return {ok:true,spaceId:id,state:body.state,globalPlaybackVerified:false};
 }
+
+// X social Quick Card: all data is provider-confirmed per user; no synthetic timeline.
+// Requests are bounded, owner-authenticated, and only read or write requested X APIs.
+const XT_FIELDS='tweet.fields=author_id,created_at,public_metrics,referenced_tweets&expansions=author_id&user.fields=username,name,profile_image_url,verified';
+const xtId=x=>/^[0-9]{1,22}$/.test(String(x||''));
+const xtTopic=x=>/^[\p{L}\p{N}\s#@_-]{2,60}$/u.test(String(x||'').trim());
+async function xtAccount(env,owner){
+ const row=await env.DB.prepare('SELECT x_user_id,x_handle,scope FROM x_oauth_tokens WHERE owner_id=?').bind(owner).first();
+ const scopes=new Set(String(row?.scope||'').split(/\s+/).filter(Boolean));
+ return {row,canPost:scopes.has('tweet.write'),canLike:scopes.has('like.write')};
+}
+async function xtFetch(token,url,{method='GET',body}={}){
+ const response=await fetch(url,{method,headers:{Authorization:'Bearer '+token,Accept:'application/json',...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{}),signal:AbortSignal.timeout(12000)});
+ if(!response.ok){
+  const code=response.status===429?'x_rate_limited':(response.status===402||response.status===403)?'x_plan_or_permission_required':'x_api_'+response.status;
+  throw xoErr(code,response.status===429?429:502);
+ }
+ return response.json().catch(()=>{throw xoErr('x_api_invalid_response',502)});
+}
+function xtPosts(payload){
+ const people=new Map((payload.includes?.users||[]).filter(p=>xtId(p.id)).map(p=>[p.id,p]));
+ return (Array.isArray(payload.data)?payload.data:[]).filter(post=>xtId(post.id)).slice(0,20).map(post=>{
+  const person=people.get(post.author_id)||{};
+  const authorHandle=/^[A-Za-z0-9_]{1,15}$/.test(person.username||'')?person.username:null;
+  return {id:String(post.id),url:authorHandle?'https://x.com/'+authorHandle+'/status/'+post.id:'https://x.com/i/status/'+post.id,
+   text:String(post.text||'').slice(0,2000),createdAt:post.created_at||null,
+   author:{id:post.author_id||null,name:person.name||null,handle:authorHandle,avatarUrl:(/^https:\/\/pbs\.twimg\.com\//.test(person.profile_image_url||'')?person.profile_image_url:null),verified:person.verified===true},
+   metrics:post.public_metrics||null,source:'x_api_verified'};
+ });
+}
+async function xtTimeline(env,owner,url){
+ const mode=url.searchParams.get('feed')||'following';
+ if(!['public','following'].includes(mode))throw xoErr('invalid_feed',400);
+ const token=await xoOwnerToken(env,owner),account=await xtAccount(env,owner);
+ let path;
+ if(mode==='following'){
+  if(!xtId(account.row?.x_user_id))throw xoErr('x_oauth_account_required',401);
+  path='/2/users/'+account.row.x_user_id+'/reverse_chronological_timeline?max_results=10&'+XT_FIELDS;
+ }else{
+  const topic=(url.searchParams.get('q')||'science technology').trim();
+  if(!xtTopic(topic))throw xoErr('invalid_public_search',400);
+  path='/2/tweets/search/recent?query='+encodeURIComponent('('+topic.replace(/\s+/g,' OR ')+') -is:retweet')+'&max_results=10&'+XT_FIELDS;
+ }
+ const payload=await xtFetch(token,'https://api.x.com'+path);
+ return {feed:mode,posts:xtPosts(payload),source:'x_api_verified',fetchedAt:new Date().toISOString(),paginationToken:typeof payload.meta?.next_token==='string'?payload.meta.next_token:null};
+}
+async function xtLiveSpaces(env,owner,url){
+ const token=await xoOwnerToken(env,owner);
+ const topic=(url.searchParams.get('q')||'technology').trim();
+ if(!xtTopic(topic))throw xoErr('invalid_space_search',400);
+ const search=new URL('https://api.x.com/2/spaces/search');
+ search.searchParams.set('query',topic);
+ search.searchParams.set('state','live');
+ search.searchParams.set('space.fields','title,state,creator_id,started_at,scheduled_start');
+ search.searchParams.set('expansions','creator_id');
+ search.searchParams.set('user.fields','username,name');
+ const payload=await xtFetch(token,search.href);
+ const people=new Map((payload.includes?.users||[]).filter(x=>xtId(x.id)).map(x=>[x.id,x]));
+ const spaces=(payload.data||[]).filter(space=>xtId(space.creator_id)&&/^[A-Za-z0-9]{10,25}$/.test(space.id||'')&&space.state==='live').slice(0,15).map(space=>{
+  const host=people.get(space.creator_id)||{};
+  return {id:space.id,title:String(space.title||'Untitled live Space').slice(0,240),url:'https://x.com/i/spaces/'+space.id,
+   state:'live',creatorId:space.creator_id,creatorHandle:host.username||null,creatorName:host.name||null,startedAt:space.started_at||null,source:'x_api_live'};
+ });
+ return {spaces,source:'x_api_live',fetchedAt:new Date().toISOString(),refreshAfterSeconds:90,endedExcluded:true,playbackOnXOnly:true};
+}
+async function xtProfile(env,owner){
+ const token=await xoOwnerToken(env,owner);
+ const payload=await xtFetch(token,'https://api.x.com/2/users/me?user.fields=username,name,description,profile_image_url,public_metrics');
+ const person=payload.data;
+ if(!person?.id||!xtId(person.id)||!/^[A-Za-z0-9_]{1,15}$/.test(person.username||''))throw xoErr('x_identity_unavailable',502);
+ const cap=await xtAccount(env,owner);
+ if(cap.row&&cap.row.x_user_id!==person.id)throw xoErr('x_profile_mismatch',403);
+ return {profile:{id:person.id,name:person.name||null,handle:person.username,description:person.description||null,avatarUrl:/^https:\/\/pbs\.twimg\.com\//.test(person.profile_image_url||'')?person.profile_image_url:null,url:'https://x.com/'+person.username},canPost:cap.canPost,canLike:cap.canLike,source:'x_api_verified'};
+}
+async function xtWrite(env,owner,request,kind){
+ const raw=await request.text();if(raw.length>1600)throw xoErr('x_request_too_large',413);
+ let body;try{body=JSON.parse(raw)}catch{throw xoErr('invalid_json',400)}
+ if(!body||typeof body!=='object'||Array.isArray(body))throw xoErr('invalid_payload',400);
+ const cap=await xtAccount(env,owner);
+ if(!cap.row)throw xoErr('x_reauthorization_required',401);
+ if((kind==='like'&&!cap.canLike)||(kind!=='like'&&!cap.canPost))throw xoErr('x_write_permission_required',403);
+ if(!xtId(cap.row.x_user_id))throw xoErr('x_identity_unavailable',403);
+ const token=await xoOwnerToken(env,owner);
+ if(kind==='like'){
+  if(!xtId(body.postId))throw xoErr('invalid_post_id',400);
+  const result=await xtFetch(token,'https://api.x.com/2/users/'+cap.row.x_user_id+'/likes',{method:'POST',body:{tweet_id:String(body.postId)}});
+  if(result.data?.liked!==true)throw xoErr('x_like_not_confirmed',502);
+  return {ok:true,action:'liked',postId:String(body.postId),source:'x_api_confirmed'};
+ }
+ if(kind==='repost'){
+  if(!xtId(body.postId))throw xoErr('invalid_post_id',400);
+  const result=await xtFetch(token,'https://api.x.com/2/users/'+cap.row.x_user_id+'/retweets',{method:'POST',body:{tweet_id:String(body.postId)}});
+  if(result.data?.retweeted!==true)throw xoErr('x_repost_not_confirmed',502);
+  return {ok:true,action:'reposted',postId:String(body.postId),source:'x_api_confirmed'};
+ }
+ const content=String(body.text||'').trim();
+ if(!content||Array.from(content).length>280||/[\u0000-\u001f\u007f]/.test(content))throw xoErr('invalid_post_text',400);
+ const replyTo=body.replyTo||null;
+ if(replyTo!==null&&!xtId(replyTo))throw xoErr('invalid_reply_id',400);
+ const payload={text:content};
+ if(replyTo)payload.reply={in_reply_to_tweet_id:String(replyTo)};
+ const result=await xtFetch(token,'https://api.x.com/2/tweets',{method:'POST',body:payload});
+ if(!xtId(result.data?.id))throw xoErr('x_post_not_confirmed',502);
+ return {ok:true,action:replyTo?'replied':'posted',postId:String(result.data.id),url:'https://x.com/i/status/'+result.data.id,source:'x_api_confirmed'};
+}
+async function xtArchive(env,owner){
+ const query=await env.DB.prepare("SELECT e.space_id AS id,e.title,e.space_url AS url,e.availability,e.started_at AS startedAt,h.handle FROM space_episodes e JOIN space_hosts h ON e.host_user_id=h.x_user_id JOIN followed_hosts f ON f.owner_id=? AND f.active=1 AND lower(f.handle)=lower(h.handle) WHERE e.availability IN ('indexed','verified_replay') ORDER BY e.started_at DESC LIMIT 50").bind(owner).all();
+ return {spaces:(query.results||[]).map(x=>({id:x.id,title:x.title,url:x.url,handle:x.handle,status:'archived_link_unverified',source:'media_star_index'})),playbackUnverified:true};
+}
+
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
  const connect=xoConnectPage(path);if(connect)return connect;
@@ -243,11 +353,18 @@ async function handle(request,env){
  }
  try{
   const owner=await account(request,env);
-  if(path==='/v1/x/oauth/start'&&request.method==='POST')return out(await xoBegin(env,owner));
+  if(path==='/v1/x/oauth/start'&&request.method==='POST'){const body=await request.json().catch(()=>({}));return out(await xoBegin(env,owner,{write:body?.write===true}));}
   if(path==='/v1/x/oauth/disconnect'&&request.method==='POST')return out(await xoDisconnect(env,owner,(await request.json().catch(()=>({}))).confirmation));
+  if(path==='/v1/x/timeline'&&request.method==='GET')return out(await xtTimeline(env,owner,url));
+  if(path==='/v1/x/spaces/live'&&request.method==='GET')return out(await xtLiveSpaces(env,owner,url));
+  if(path==='/v1/x/profile'&&request.method==='GET')return out(await xtProfile(env,owner));
+  if(path==='/v1/x/archive'&&request.method==='GET')return out(await xtArchive(env,owner));
+  if(path==='/v1/x/post'&&request.method==='POST')return out(await xtWrite(env,owner,request,'post'));
+  if(path==='/v1/x/like'&&request.method==='POST')return out(await xtWrite(env,owner,request,'like'));
+  if(path==='/v1/x/repost'&&request.method==='POST')return out(await xtWrite(env,owner,request,'repost'));
   if(path==='/v1/x/account'&&request.method==='GET'){
    const claimed=await linkedAccount(env,owner);
-   return out({account:claimed||null,xConnected:await xoConnected(env,owner),oauthConfigured:xoReady(env)});
+   const flags=await xtAccount(env,owner);return out({account:claimed||null,xConnected:await xoConnected(env,owner),oauthConfigured:xoReady(env),canPost:flags.canPost,canLike:flags.canLike});
   }
   if(path==='/v1/x/account'&&request.method==='POST'){
    const raw=await request.text();
@@ -331,7 +448,7 @@ function xoConnectPage(path){
  if(path==='/connect-x.js'){
   return new Response(XO_CONNECT_JS,{headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'}});
  }
- const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="description" content="Connect your existing QuantaPhi wallet to X for Media Star following and Spaces."><title>Connect X | QuantaPhi Media Star</title><style>:root{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#2b2235;background:#f7f4fb}*{box-sizing:border-box}body{margin:0}main{max-width:650px;margin:28px auto;padding:clamp(18px,5vw,36px);background:#fff;border:1px solid #d9cce4;border-radius:18px}h1{font-size:clamp(28px,6vw,36px);line-height:1.25;margin:0 0 16px}p{font-size:17px;line-height:1.6}a{color:#55218f;font-weight:650}button{padding:15px 20px;font:700 17px/1.3 system-ui;border:0;border-radius:12px;background:#55218f;color:#fff;min-height:48px}button:disabled{opacity:.5}input{font:16px system-ui;padding:12px;border-radius:10px;border:1px solid #a89caf;max-width:100%;width:250px}label{display:block;font-size:16px;font-weight:650;margin-bottom:6px}.stack{display:grid;gap:13px}.muted{color:#62596b}.bar{display:flex;gap:16px;flex-wrap:wrap}.status{padding:14px;border:1px solid #cfc4da;border-radius:12px;background:#f9f7fc}details{margin:16px 0;padding:13px;border:1px solid #ddd2e8;border-radius:12px}summary{font-weight:650;cursor:pointer}@media(max-width:700px){main{margin:14px;padding:22px}}</style></head><body><main><p><a href="https://quantaphi.org/">QuantaPhi home</a> / Media Star</p><h1>Connect your X account</h1><p>Use your existing QuantaPhi wallet and approve the connection directly on X. This page does not revoke permissions or delete saved following records.</p><section class="stack" aria-live="polite"><div class="status"><strong>Wallet connection</strong><p id="walletStatus">Checking this device...</p><a id="walletLink" href="https://quantaphi.org/wallet-recovery.html" hidden>Open QuantaPhi wallet sign-in</a></div><div class="status"><strong>X authorization</strong><p id="xStatus">Checking the Media Star connection...</p><p id="xHandle" class="muted"></p></div></section><p><button id="authorizeX" type="button" disabled>Authorize my X account</button></p><p id="actionStatus" role="status">Authorization only starts when you tap the button.</p><details><summary>Use a different X username</summary><p>This changes the claimed username for this wallet, not your actual X identity. X will verify it during authorization.</p><label for="xUsername">Your X username</label><div class="bar"><input id="xUsername" maxlength="15" autocapitalize="off" autocomplete="off" placeholder="@username"><button id="saveUsername" type="button" disabled>Save X username</button></div></details><p><a href="https://quantaphi.org/legal/privacy">X privacy policy</a> · <a href="https://quantaphi.org/legal/terms">Terms of Service</a></p></main><script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script><script defer src="https://quantaphi.org/cloud-wallet-client.js"></script><script defer src="/connect-x.js"></script></body></html>';
+ const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="description" content="Connect your existing QuantaPhi wallet to X for Media Star following and Spaces."><title>Connect X | QuantaPhi Media Star</title><style>:root{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#2b2235;background:#f7f4fb}*{box-sizing:border-box}html,body{max-width:100%;overflow-x:hidden}body{margin:0}main{width:calc(100% - 24px);min-width:0;max-width:650px;margin:28px auto;padding:clamp(18px,5vw,36px);background:#fff;border:1px solid #d9cce4;border-radius:18px}h1{font-size:clamp(28px,6vw,36px);line-height:1.25;margin:0 0 16px}p{font-size:17px;line-height:1.6}a{color:#55218f;font-weight:650}button{padding:15px 20px;font:700 17px/1.3 system-ui;border:0;border-radius:12px;background:#55218f;color:#fff;min-height:48px}button:disabled{opacity:.5}input{font:16px system-ui;padding:12px;border-radius:10px;border:1px solid #a89caf;max-width:100%;width:250px}label{display:block;font-size:16px;font-weight:650;margin-bottom:6px}.stack{display:grid;gap:13px}.muted{color:#62596b}.bar{display:flex;gap:16px;flex-wrap:wrap}.status{padding:14px;border:1px solid #cfc4da;border-radius:12px;background:#f9f7fc}details{margin:16px 0;padding:13px;border:1px solid #ddd2e8;border-radius:12px}summary{font-weight:650;cursor:pointer}@media(max-width:700px){main{margin:14px;padding:22px}}</style></head><body><main><p><a href="https://quantaphi.org/">QuantaPhi home</a> / Media Star</p><h1>Connect your X account</h1><p>Use your existing QuantaPhi wallet and approve the connection directly on X. This page does not revoke permissions or delete saved following records.</p><section class="stack" aria-live="polite"><div class="status"><strong>Wallet connection</strong><p id="walletStatus">Checking this device...</p><a id="walletLink" href="https://quantaphi.org/wallet-recovery.html" hidden>Open QuantaPhi wallet sign-in</a></div><div class="status"><strong>X authorization</strong><p id="xStatus">Checking the Media Star connection...</p><p id="xHandle" class="muted"></p></div></section><p><button id="authorizeX" type="button" disabled>Authorize my X account</button></p><p id="actionStatus" role="status">Authorization only starts when you tap the button.</p><details><summary>Use a different X username</summary><p>This changes the claimed username for this wallet, not your actual X identity. X will verify it during authorization.</p><label for="xUsername">Your X username</label><div class="bar"><input id="xUsername" maxlength="15" autocapitalize="off" autocomplete="off" placeholder="@username"><button id="saveUsername" type="button" disabled>Save X username</button></div></details><p><a href="/connect-x?write=1">Enable posting, replies and likes (requires X developer Read and write permission)</a></p><p><a href="https://quantaphi.org/legal/privacy">X privacy policy</a> · <a href="https://quantaphi.org/legal/terms">Terms of Service</a></p></main><script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script><script defer src="https://quantaphi.org/cloud-wallet-client.js"></script><script defer src="/connect-x.js"></script></body></html>';
  return new Response(html,{status:200,headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self' https://media-star-following-spaces.marvaseater.workers.dev https://starquest-ledger.marvaseater.workers.dev https://unified-wallet.marvaseater.workers.dev; frame-src https://www-infinity4.github.io; form-action 'none'; frame-ancestors 'none'; base-uri 'none'"}});
 }
 const XO_CONNECT_JS=String.raw`
@@ -340,6 +457,8 @@ const XO_CONNECT_JS=String.raw`
  const api='https://media-star-following-spaces.marvaseater.workers.dev';
  const $=id=>document.getElementById(id);
  const authButton=$('authorizeX'),saveButton=$('saveUsername');
+ const wantsWrite=new URLSearchParams(window.location.search).get('write')==='1';
+ if(wantsWrite)authButton.textContent='Authorize X posting';
  const set=(id,msg)=>{$(id).textContent=msg};
  let walletToken='',xAccount=null;
  async function getToken(){
@@ -370,7 +489,7 @@ const XO_CONNECT_JS=String.raw`
    const handle=xAccount?.handle?'@'+xAccount.handle:'not selected';
    set('xHandle','Registered X username: '+handle);
    $('xUsername').value=xAccount?.handle||'';
-   if(response.xConnected){
+   if(response.xConnected&&!(wantsWrite&&(!response.canPost||!response.canLike))){
     set('xStatus','Connected to X. Your authorization is saved securely.');
     set('actionStatus','X is connected. Use Media Star to sync your Following list.');
     authButton.hidden=true;
@@ -387,7 +506,7 @@ const XO_CONNECT_JS=String.raw`
   authButton.disabled=true;
   set('actionStatus','Opening the official X authorization page. You may need to sign in to X.');
   try{
-   const result=await request('/v1/x/oauth/start','POST',{});
+   const result=await request('/v1/x/oauth/start','POST',{write:wantsWrite});
    const target=new URL(result.authorizationUrl);
    if(target.origin!=='https://x.com'||target.pathname!=='/i/oauth2/authorize')throw Error('Unrecognized X destination');
    window.location.assign(target.href);
@@ -406,6 +525,7 @@ const XO_CONNECT_JS=String.raw`
 
 const XO_REDIRECT='https://quantaphi.org/api/x/oauth/callback';
 const XO_SCOPE='tweet.read users.read follows.read space.read offline.access';
+const XO_WRITE_SCOPE=XO_SCOPE+' tweet.write like.write';
 const XO_ENCODER=new TextEncoder();
 const xoErr=(name,status=400)=>Object.assign(new Error(name),{status});
 const xoB64=bytes=>btoa(Array.from(new Uint8Array(bytes),b=>String.fromCharCode(b)).join('')).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
@@ -444,14 +564,14 @@ async function xoSave(env,owner,token,profile,priorRefresh=''){
  const expiry=Date.now()+Number(token.expires_in)*1000;
  await env.DB.prepare('INSERT INTO x_oauth_tokens(owner_id,x_user_id,x_handle,access_cipher,refresh_cipher,expires_at,scope,updated_at) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(owner_id) DO UPDATE SET x_user_id=excluded.x_user_id,x_handle=excluded.x_handle,access_cipher=excluded.access_cipher,refresh_cipher=excluded.refresh_cipher,expires_at=excluded.expires_at,scope=excluded.scope,updated_at=excluded.updated_at').bind(owner,profile.id,profile.username,access,encryptedRefresh,expiry,String(token.scope||XO_SCOPE),Date.now()).run();
 }
-async function xoBegin(env,owner){
+async function xoBegin(env,owner,{write=false}={}){
  if(!xoReady(env))throw xoErr('x_oauth_not_configured',503);
  const state=xoB64(crypto.getRandomValues(new Uint8Array(32)));
  const verifier=xoB64(crypto.getRandomValues(new Uint8Array(48)));
  const challenge=await xoHash(verifier);
- await env.DB.prepare('INSERT INTO x_oauth_pending(state_hash,owner_id,verifier_cipher,created_at,consumed_at) VALUES(?,?,?,?,NULL)').bind(await xoHash(state),owner,await xoSeal(env,verifier,owner),Date.now()).run();
+ await env.DB.prepare('INSERT INTO x_oauth_pending(state_hash,owner_id,verifier_cipher,created_at,consumed_at) VALUES(?,?,?,?,NULL)').bind(await xoHash(state),owner,await xoSeal(env,JSON.stringify({verifier,write:write===true}),owner),Date.now()).run();
  const u=new URL('https://x.com/i/oauth2/authorize');
- for(const [k,v] of Object.entries({response_type:'code',client_id:env.X_OAUTH_CLIENT_ID,redirect_uri:XO_REDIRECT,scope:XO_SCOPE,state,code_challenge:challenge,code_challenge_method:'S256'}))u.searchParams.set(k,v);
+ for(const [k,v] of Object.entries({response_type:'code',client_id:env.X_OAUTH_CLIENT_ID,redirect_uri:XO_REDIRECT,scope:write===true?XO_WRITE_SCOPE:XO_SCOPE,state,code_challenge:challenge,code_challenge_method:'S256'}))u.searchParams.set(k,v);
  return {authorizationUrl:u.href,expiresInSeconds:600};
 }
 function xoPage(title,message,status=200){
@@ -470,7 +590,9 @@ async function xoFinish(request,env){
   if(!pending||pending.consumed_at!=null||pending.created_at>now||pending.created_at<now-600000)throw xoErr('x_state_invalid_or_expired',403);
   const claimed=await env.DB.prepare('UPDATE x_oauth_pending SET consumed_at=? WHERE state_hash=? AND consumed_at IS NULL AND created_at>=?').bind(now,digest,now-600000).run();
   if(Number(claimed.meta?.changes||0)!==1)throw xoErr('x_state_already_used',403);
-  const verifier=await xoOpen(env,pending.verifier_cipher,pending.owner_id);
+  const encryptedVerifier=await xoOpen(env,pending.verifier_cipher,pending.owner_id);
+  const verifier=encryptedVerifier.startsWith('{')?JSON.parse(encryptedVerifier).verifier:encryptedVerifier;
+  if(!/^[A-Za-z0-9_-]{40,150}$/.test(verifier||''))throw xoErr('x_pkce_invalid',403);
   const token=await xoTokenRequest(env,{grant_type:'authorization_code',code,redirect_uri:XO_REDIRECT,code_verifier:verifier});
   const profileResponse=await fetch('https://api.x.com/2/users/me',{headers:{Authorization:'Bearer '+token.access_token},signal:AbortSignal.timeout(12000)});
   if(!profileResponse.ok)throw xoErr('x_profile_unavailable',502);
