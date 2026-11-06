@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T09:31:29.915225Z",
+  "checked_at": "2026-11-06T10:01:38.545425Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "allen county sheriff's",
+      "approx_searches": "100+",
+      "published_at": "2026-11-06T09:40:00Z",
+      "related_news_urls": [
+        "https://www.adastraradio.com/iola-news/allen-county-sheriffs-office-brings-back-adopt-a-grandparent-program-for-holidays/",
+        "https://www.wane.com/top-stories/former-sheriffs-department-sergeant-charged-with-multiple-owis/",
+        "https://www.wane.com/top-stories/court-documents-detail-drug-arrests-in-mass-warrant-operation/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIW-TC71BxKNtmxxKRQ3Xwy1kpcJ5uZ9z_jr8unGMOGcLDX9DM7LVIPpucnw8",
+      "image_credit": "Ad Astra Radio",
+      "news": [
+        {
+          "url": "https://www.adastraradio.com/iola-news/allen-county-sheriffs-office-brings-back-adopt-a-grandparent-program-for-holidays/",
+          "title": "Allen County Sheriff’s Office Brings Back Adopt-A-Grandparent Program for Holidays",
+          "publisher": "Ad Astra Radio",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIW-TC71BxKNtmxxKRQ3Xwy1kpcJ5uZ9z_jr8unGMOGcLDX9DM7LVIPpucnw8"
+        },
+        {
+          "url": "https://www.wane.com/top-stories/former-sheriffs-department-sergeant-charged-with-multiple-owis/",
+          "title": "Former Sheriff’s Department sergeant charged with multiple OWIs",
+          "publisher": "WANE 15",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9L71FH1_GYikkabi5IVNzbhUKRaxxcdkJVFkE25Ci7VC9h7gN44pAwAfou_s"
+        },
+        {
+          "url": "https://www.wane.com/top-stories/court-documents-detail-drug-arrests-in-mass-warrant-operation/",
+          "title": "Court documents detail drug arrests in mass warrant operation",
+          "publisher": "WANE 15",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5Nb8AerKgHVvPTEB1ibAwxMGd7g2oUPtMwUJxxqWQ7x5WGlz_is2KuZE9Ais"
+        }
+      ]
+    },
+    {
+      "query": "wi vs ban",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T09:30:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/ban-vs-wi-kevin-wickham-says-amir-jangoo-was-telling-him-what-test-cricket-is-all-about-1561576",
+        "https://www.espn.com/cricket/series/19430/preview/1553296/bangladesh-vs-west-indies-2nd-test-24756",
+        "https://www.oskaloosa.com/sports/national_sports/west-indies-wins-the-toss-and-bats-1st-in-the-2nd-cricket-test-against-bangladesh/article_704bf601-7400-556f-a13b-6c49b22c66ba.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ4LmoT9zSCQJiIcasg2gU-GpxruNbj_5If6AKS-ALvKxDq5KRcpUjNXs5baA",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/ban-vs-wi-kevin-wickham-says-amir-jangoo-was-telling-him-what-test-cricket-is-all-about-1561576",
+          "title": "Wickham: Jangoo was telling me what Test cricket is all about",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ4LmoT9zSCQJiIcasg2gU-GpxruNbj_5If6AKS-ALvKxDq5KRcpUjNXs5baA"
+        },
+        {
+          "url": "https://www.espn.com/cricket/series/19430/preview/1553296/bangladesh-vs-west-indies-2nd-test-24756",
+          "title": "West Indies eye rare series win as Bangladesh seek answers",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEWapRM03h0E5hb-3NspdI1QySqIl2hMPgtZHGTLLfU9uBgGPH5UNpES-KZG8"
+        },
+        {
+          "url": "https://www.oskaloosa.com/sports/national_sports/west-indies-wins-the-toss-and-bats-1st-in-the-2nd-cricket-test-against-bangladesh/article_704bf601-7400-556f-a13b-6c49b22c66ba.html",
+          "title": "West Indies wins the toss and bats 1st in the 2nd cricket test against Bangladesh",
+          "publisher": "Oskaloosa Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxD8iQsxbS39mZq4klK4BKszdoVWxMw4K6K_rCDJ723bWlryGxqdWZDaBLzE"
+        }
+      ]
+    },
+    {
+      "query": "zac affleck",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T09:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/pregnant-secret-lives-mormon-wives-000546598.html",
+        "https://people.com/mormon-wives-zac-affleck-says-he-begged-wife-jen-to-stay-after-she-told-him-she-wanted-a-divorce-12239664",
+        "https://www.cleveland.com/entertainment/2026/11/reality-tv-star-files-for-divorce-while-pregnant-with-4th-child.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK6ILCkbaEIw2oOsgXt2v3duy92meYgLPbxYfXSKN3xsXpLTDuIr_OHhAWjkk",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/pregnant-secret-lives-mormon-wives-000546598.html",
+          "title": "Pregnant ‘Secret Lives of Mormon Wives’ star Jen Affleck shockingly files for divorce from husband Zac",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK6ILCkbaEIw2oOsgXt2v3duy92meYgLPbxYfXSKN3xsXpLTDuIr_OHhAWjkk"
+        },
+        {
+          "url": "https://people.com/mormon-wives-zac-affleck-says-he-begged-wife-jen-to-stay-after-she-told-him-she-wanted-a-divorce-12239664",
+          "title": "‘Mormon Wives’ Star Zac Affleck Says He ‘Begged’ Wife Jen to Stay After She Told Him She Wanted a Divorce",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvARKz25Ic3L1IrGwJiuFkL8HzH1RRKm8-JuQ6RIHrANKt00zeHam6p1L9FqE"
+        },
+        {
+          "url": "https://www.cleveland.com/entertainment/2026/11/reality-tv-star-files-for-divorce-while-pregnant-with-4th-child.html",
+          "title": "‘Mormon Wives’ star Jen Affleck files for divorce",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT--QY5E5g9JccpjD-VAHIGeEX_HbN_jywqJnI76C8vATxtv3gMzB3HPpsFbVI"
+        }
+      ]
+    },
     {
       "query": "bath and body works advent calendar",
       "approx_searches": "200+",
@@ -15,7 +120,7 @@
         "https://totallythebomb.com/bath-body-works-feel-the-wonder-advent-calendar-2026/",
         "https://www.usatoday.com/story/money/holidays/2026/11/03/bath-body-works-advent-calendar-early-orders/92479191007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQo7yhCGW-9RVkQGQoC5qMgadCg2nTM1pVBYWmTSE7_QcpDTlMtg2V81Xts4",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCu0bJNP6AxjtTf9Hr9HuWbmqY79jw-uMGzamO_n-qSGwdrWkmNBqvPB9rEkE",
       "image_credit": "https://www.bbwinc.com/",
       "news": [
         {
@@ -23,7 +128,7 @@
           "title": "Bath & Body Works Introduces the 2026 Feel the Wonder Advent Calendar",
           "publisher": "https://www.bbwinc.com/",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQo7yhCGW-9RVkQGQoC5qMgadCg2nTM1pVBYWmTSE7_QcpDTlMtg2V81Xts4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCu0bJNP6AxjtTf9Hr9HuWbmqY79jw-uMGzamO_n-qSGwdrWkmNBqvPB9rEkE"
         },
         {
           "url": "https://totallythebomb.com/bath-body-works-feel-the-wonder-advent-calendar-2026/",
@@ -78,7 +183,7 @@
     },
     {
       "query": "el niño",
-      "approx_searches": "1000+",
+      "approx_searches": "200+",
       "published_at": "2026-11-06T08:50:00Z",
       "related_news_urls": [
         "https://www.telemundo20.com/noticias/local/calor-san-diego-atencion-posible-historico-fenomeno-nino/2552046/",
@@ -148,36 +253,36 @@
     },
     {
       "query": "prince harry, duke of sussex",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-06T08:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-harry-meghan-shocking-u-053810728.html",
-        "https://www.instyle.com/prince-harry-meghan-markle-first-uk-christmas-8-years-12237980",
-        "https://www.marieclaire.com/celebrity/royals/harry-meghan-british-christmas-doria/"
+        "https://people.com/meghan-markle-prince-harry-announce-first-joint-overseas-trip-since-uk-return-12235817",
+        "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-harry-meghan-markle-traveling-180148560.html",
+        "https://www.politico.eu/article/prince-harry-and-meghan-markle-to-visit-eu-parliament/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5IzO0_ePI2EbeP130MDBcp0Pvl-D40hYeTmlR3P-oBgznM6L1wB4cnW4I7Ec",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv85-xnjzRBUGdj85phBrraSOExCqwlaFnyl_7seZaR3gTWrKeWDSwT-Z9I6o",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-harry-meghan-shocking-u-053810728.html",
-          "title": "Prince Harry & Meghan Make a Shocking U-Turn With New Christmas Plans — Report",
+          "url": "https://people.com/meghan-markle-prince-harry-announce-first-joint-overseas-trip-since-uk-return-12235817",
+          "title": "Meghan Markle and Prince Harry Announce First Joint Overseas Trip Since U.K. Return",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv85-xnjzRBUGdj85phBrraSOExCqwlaFnyl_7seZaR3gTWrKeWDSwT-Z9I6o"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/prince-harry-meghan-markle-traveling-180148560.html",
+          "title": "Prince Harry and Meghan Markle Traveling to ‘Cities Where They Could Build a Future’ Amid U.K. Return",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5IzO0_ePI2EbeP130MDBcp0Pvl-D40hYeTmlR3P-oBgznM6L1wB4cnW4I7Ec"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaTF7T09D8GZB4esKSP1Ia-umzGkIDZzw_h0wfgFpWVbVjv9teTvRK4mM6Wrc"
         },
         {
-          "url": "https://www.instyle.com/prince-harry-meghan-markle-first-uk-christmas-8-years-12237980",
-          "title": "Prince Harry and Meghan Markle May Spend Their First Christmas in the U.K. in 8 Years Amid Royal Family Tension",
-          "publisher": "InStyle",
+          "url": "https://www.politico.eu/article/prince-harry-and-meghan-markle-to-visit-eu-parliament/",
+          "title": "Prince Harry and Meghan Markle to visit EU Parliament",
+          "publisher": "POLITICO.eu",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQqiFCKfsZLtZ8OjksIN9MT-0Cw17Io5FA3k7rFnv-KaQfyTpxHp1YM3LZlNQ"
-        },
-        {
-          "url": "https://www.marieclaire.com/celebrity/royals/harry-meghan-british-christmas-doria/",
-          "title": "Prince Harry and Meghan Markle's Holiday Plans Might Include a British Christmas—But With a Twist",
-          "publisher": "Marie Claire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ69t5PvabMf7ktRv1e7QBsRcQPkrqd2bGTgV1ScKHgSSiZsJuI5oOC2NmkZBk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkdgIKt0zxNfGkPDrzkHyS4otdXpWG2zCxQ4UUApe3EKwI_6w00OcOU3XInrk"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "Eurosport",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-8SaNwp3hIr_F7Hngf8qcTMX7vAvo6tiVZiiThKZwhMTHhFN39DNphkX3ZM4"
-        }
-      ]
-    },
-    {
-      "query": "pokemon 30th anniversary",
-      "approx_searches": "100+",
-      "published_at": "2026-11-06T08:30:00Z",
-      "related_news_urls": [
-        "https://www.pokemon.com/us/news/collect-and-battle-with-mega-evolution-delta-reign-in-pokemon-tcg-live",
-        "https://mashable.com/life/nov-5-pokemon-tcg-30th-anniversary-ultra-premium-collection-live-preorders",
-        "https://www.polygon.com/pokemon-30th-anniversary-tcg-upc-target-best-buy-stock-locations-release-day/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHWxVNjZ0QNOEolGok9T0T5IQY2-Gfil4f4QkpYfRFwaBqckN9GS7EmXjHv0w",
-      "image_credit": "Pokemon.com",
-      "news": [
-        {
-          "url": "https://www.pokemon.com/us/news/collect-and-battle-with-mega-evolution-delta-reign-in-pokemon-tcg-live",
-          "title": "Collect and Battle with Mega Evolution—Delta Reign in Pokémon TCG Live",
-          "publisher": "Pokemon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHWxVNjZ0QNOEolGok9T0T5IQY2-Gfil4f4QkpYfRFwaBqckN9GS7EmXjHv0w"
-        },
-        {
-          "url": "https://mashable.com/life/nov-5-pokemon-tcg-30th-anniversary-ultra-premium-collection-live-preorders",
-          "title": "Pokémon TCG 30th Celebration Ultra-Premium Collections are live at Amazon: Preorder now",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStV98qZEJ6-2rwFt8FEAKC4-tixjL-Aoo3mwxYmmq6GCXbH8zZTL_aVxn0InU"
-        },
-        {
-          "url": "https://www.polygon.com/pokemon-30th-anniversary-tcg-upc-target-best-buy-stock-locations-release-day/",
-          "title": "Pokémon's 30th Anniversary's UPC release: Target vs. Best Buy",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPyzFbMERzDnPzbAVaUJDdbYsrlKi3eLMOkbgeOZoVo0JL_tDBMqOwQkrQ3kM"
-        }
-      ]
-    },
-    {
-      "query": "zelda switch 2 console",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T08:20:00Z",
-      "related_news_urls": [
-        "https://mashable.com/tech/zelda-switch-2-restock-retailers-where-to-buy-nov-5",
-        "https://shattered.io/walmart-zelda-switch-2-519-99-gift-card-48-hour-reorder-2026/",
-        "https://www.theshortcut.com/p/zelda-switch-2-restock-when-will-target-restock-online"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7MuNHfA1prwwJuOP1v8vdCfAkH-88d5CVhsU8jqmBP9Y-O0G8dgTuV8KSf-U",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/tech/zelda-switch-2-restock-retailers-where-to-buy-nov-5",
-          "title": "Zelda Switch 2 restock retailers: Where to buy the 40th anniversary console",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7MuNHfA1prwwJuOP1v8vdCfAkH-88d5CVhsU8jqmBP9Y-O0G8dgTuV8KSf-U"
-        },
-        {
-          "url": "https://shattered.io/walmart-zelda-switch-2-519-99-gift-card-48-hour-reorder-2026/",
-          "title": "Walmart Zelda Switch 2: $519.99 Gift Card, 48 Hours [2026]",
-          "publisher": "shattered.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTky2FHHApp_OOdMxsUhNhZEgY6mNSofspm28yVGGZBwruNgp8IxBA2m4WEnhQ"
-        },
-        {
-          "url": "https://www.theshortcut.com/p/zelda-switch-2-restock-when-will-target-restock-online",
-          "title": "Zelda 40th anniversary Switch 2 restock: when will Target restock online?",
-          "publisher": "The Shortcut | Matt Swider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSio5640oZUcP5Tmbfq8qkr7QGbBf9rtjXov2eIErVDaxtO7mm8DypAidrzOzs"
-        }
-      ]
-    },
-    {
-      "query": "erika kirk",
-      "approx_searches": "100+",
-      "published_at": "2026-11-06T08:20:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/erika-kirk-channels-charlie-blunt-message-conservatives-after-gop-midterm-losses",
-        "https://www.theconservateur.com/politics/a-message-after-midterms",
-        "https://geosirius.ifz.ru/turning-point-usa-isnt-folding-midterm-defeat"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRey67il9HF90LesRCMDWwL2b5HAqLJQebeaPUXMT5YCgc-V6m6m3OyEHVq_wE",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/politics/erika-kirk-channels-charlie-blunt-message-conservatives-after-gop-midterm-losses",
-          "title": "Erika Kirk channels Charlie with blunt message to conservatives after GOP midterm losses",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRey67il9HF90LesRCMDWwL2b5HAqLJQebeaPUXMT5YCgc-V6m6m3OyEHVq_wE"
-        },
-        {
-          "url": "https://www.theconservateur.com/politics/a-message-after-midterms",
-          "title": "A Message After Midterms",
-          "publisher": "The Conservateur",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0xqNpG-Mnnw7XoS8zh442XLjavJsPTfKaUvMgAZV06gPEnzQY21Z1RFa5sBQ"
-        },
-        {
-          "url": "https://geosirius.ifz.ru/turning-point-usa-isnt-folding-midterm-defeat",
-          "title": "Why Turning Point Usa Isn't Folding After The Midterm Defeat",
-          "publisher": "ИФЗ РАН",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvcJhXYMr0XbJTWf8KT0bl_G5iU9h-lJTDW6uiKLX4SRoPi940MqweGMetCI"
         }
       ]
     }
