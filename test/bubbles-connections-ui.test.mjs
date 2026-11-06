@@ -124,6 +124,7 @@ test('account page starts consent with the selected provider permissions',async 
 
  googleConfigured=true;
  window.location.assign=url=>{navigation=url;};
+ window.location.replace=url=>{navigation=url;};
  await panel.refresh();
  const googleButton=descendants(container).find(node=>node.dataset?.provider==='google');
  const googleCard=descendants(container).find(node=>node.childNodes?.includes(googleButton));
@@ -154,6 +155,8 @@ test('account page starts consent with the selected provider permissions',async 
  await staleLoad;
  assert.ok(googleSignedIn(),'An older account read must not replace the verified Google status');
  assert.equal(descendants(returned).some(node=>node.dataset?.provider==='google'),false);
+ for(let i=0;i<8&&navigation!=='/bubbles.html';i++)await new Promise(setImmediate);
+ assert.equal(navigation,'/bubbles.html','Verified lost-tab Google callback must return to Bubbles, not strand user in settings');
 });
 
 test('Android Cloudflare sign-in navigates this tab directly and never opens about:blank',async()=>{
@@ -574,4 +577,28 @@ test('Cloudflare OAuth rejects User Details responses with no verified user ID',
    Response.json({access_token:'test',expires_in:3600,scope:scopes,token_type:'Bearer'}):
    Response.json({success:true,result:{email:'owner@example.test'}}));
  await assert.rejects(adapter.exchange({code:'code',verifier:'pkce',actions:['account.read']}),/provider_identity_invalid/);
+});
+
+test('Cloudflare OAuth code exchange never uses the unsupported Workers redirect:error mode',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ const calls=[];
+ const adapter=cloudflareAdapter({clientId:'test',clientSecret:'private',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+  calls.push(url);
+  assert.equal(options.redirect,'manual');
+  if(url.endsWith('/oauth2/token'))return Response.json({access_token:'access',refresh_token:'refresh',token_type:'Bearer',expires_in:3600,scope:'user-details.read memberships.read'});
+  return Response.json({success:true,result:{id:'e'.repeat(32),email:'test@example.test'}});
+ });
+ const connected=await adapter.exchange({code:'auth-code',verifier:'verifier',actions:['account.read']});
+ assert.equal(connected.subject,'e'.repeat(32));
+ assert.deepEqual(connected.grantedActions,['account.read']);
+ assert.equal(calls.length,2);
+});
+
+test('Google OAuth redirect status stays sanitized across Worker completion boundary',async()=>{
+ const {connectionFailureCode,safeConnectionFailure}=await import('../workers/bubbles-connections/completion.mjs');
+ const code=connectionFailureCode(Object.assign(Error('google_exchange_302'),{connectionStage:'exchange'}));
+ assert.equal(code,'google_exchange_302');
+ assert.equal(safeConnectionFailure(code),true);
+ assert.match(providerSignInErrorMessage(code,'google'),/unexpected redirect/);
+ assert.ok(!providerSignInErrorMessage(code,'google').includes('private-code'));
 });
