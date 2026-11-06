@@ -151,8 +151,8 @@ test('account page starts consent with the selected provider permissions',async 
  assert.equal(fullCloudflareConfigured,true);
  await fullClientButton.listeners.click();
  assert.deepEqual(calls.filter(call=>call.path==='/start').at(-1).body,
-  {provider:'cloudflare',actions:['account.read']},
-  'Initial account sign-in must not launch 386 Cloudflare permission scopes');
+  {provider:'cloudflare',actions:['owner.full']},
+  'A fully configured Cloudflare client requests the full toolkit through the first sign-in button');
  panel.client.cancelConnect();
 
 
@@ -167,11 +167,12 @@ test('account page starts consent with the selected provider permissions',async 
  assert.ok(googleCard.childNodes.indexOf(permissions)<googleCard.childNodes.indexOf(googleButton));
  const beforeClick=calls.length;
  await googleButton.listeners.click();
- assert.equal(calls.length,beforeClick,'An unchecked Google permission must not start OAuth');
- assert.ok(googleCard.childNodes.some(node=>node.role==='status'&&/Choose at least one Google permission/.test(node.textContent)));
+ assert.deepEqual(calls.slice(beforeClick).find(call=>call.path==='/start').body,{provider:'google',actions:['identity.read']},
+  'Basic Google login must not require Drive, Gmail, Calendar or Sheets');
+ panel.client.cancelConnect();
  descendants(permissions).find(node=>node.value==='drive.read').checked=true;
  await googleButton.listeners.click();
- assert.deepEqual(calls.slice(beforeClick).find(call=>call.path==='/start').body,{provider:'google',actions:['drive.read']});
+ assert.deepEqual(calls.filter(call=>call.path==='/start').at(-1).body,{provider:'google',actions:['identity.read','drive.read']});
  assert.equal(new URL(navigation).origin,'https://accounts.google.com');
  panel.client.cancelConnect();
 
@@ -188,9 +189,18 @@ test('account page starts consent with the selected provider permissions',async 
  finishOldRead();
  await staleLoad;
  assert.ok(googleSignedIn(),'An older account read must not replace the verified Google status');
- assert.equal(descendants(returned).some(node=>node.dataset?.provider==='google'),false);
  for(let i=0;i<8&&navigation!=='/bubbles.html';i++)await new Promise(setImmediate);
  assert.equal(navigation,'/bubbles.html','Verified lost-tab Google callback must return to Bubbles, not strand user in settings');
+ const connectAnotherGoogle=descendants(returned).find(node=>node.dataset?.provider==='google');
+ assert.equal(connectAnotherGoogle?.textContent,'Connect another Google account',
+  'A Google user can add a second account without disconnecting the first one');
+ const otherStartCount=calls.filter(call=>call.path==='/start').length;
+ await connectAnotherGoogle.listeners.click();
+ assert.equal(calls.filter(call=>call.path==='/start').length,otherStartCount+1);
+ assert.deepEqual(calls.filter(call=>call.path==='/start').at(-1).body,{provider:'google',actions:['identity.read']});
+ assert.ok(accountRecords.some(row=>row.provider==='google'&&row.label==='google@example.test'),
+  'The verified Google record must remain untouched while another signs in');
+ returningPanel.client.cancelConnect();
  window.location.search='';
  accountRecords=accountRecords.filter(row=>row.provider!=='cloudflare');
  cloudflareRecoveryAvailable=true;
