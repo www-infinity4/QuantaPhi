@@ -4,6 +4,7 @@ import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=2
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
 import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
+import {mountXTwitterCard} from './x-twitter-card.mjs';
 import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
@@ -77,7 +78,12 @@ function makeTile(card,refresh){
  const buttons=create('div','qf-actions');
  // The original provider widget is directly on its tile. No internal
  // Infinity Viewer or extra "Open card" link is needed to begin searching.
- if(card.origin!=='source'){
+ if(card.id==='x-twitter'){
+  // The native social card is a slide in this feed, not a separate app route.
+  const use=create('button','qf-button','Use X Quick Card');use.type='button';
+  use.addEventListener('click',()=>{choose(card);refresh();document.getElementById('quantaFeedFeature')?.scrollIntoView({behavior:'smooth',block:'nearest'});});
+  buttons.append(use);
+ }else if(card.origin!=='source'){
   const openBtn=create('button','qf-button','Open card');openBtn.type='button';openBtn.addEventListener('click',()=>open(card));buttons.append(openBtn);
  }
  if(card.origin!=='source')buttons.append(followButton(card,refresh));
@@ -149,7 +155,20 @@ function renderHome(){
   info.append(buttons);
   const direction=create('p','qf-direction',lastReason?'Next direction · '+lastReason:'Select a card to explore, then use Next to continue a related activity.');
   info.append(direction);
-  feature.replaceChildren(visual,info);
+  if(selected.id==='x-twitter'){
+   // Native public/following/Spaces/Profile and composer work directly in the
+   // Infinity slide. The user does not have to open /twitter.html or an iframe.
+   feature.classList.add('qf-x-feature');
+   const native=create('section','qf-x-native');
+   native.setAttribute('aria-label','Twitter X Quick Card inside Infinity carousel');
+   const cardTools=create('div','qf-inline-tool');mountCardTools(cardTools,selected);
+   const follow=create('div','qf-actions');follow.append(followButton(selected,refresh));
+   feature.replaceChildren(native,cardTools,follow);
+   mountXTwitterCard(native);
+  }else{
+   feature.classList.remove('qf-x-feature');
+   feature.replaceChildren(visual,info);
+  }
   grid.replaceChildren();
   for(const c of ranked.slice(0,showCount))grid.append(makeTile(c,refresh));
   status.textContent=tab==='following'?ranked.length+' followed cards':tab==='for-you'?
