@@ -956,25 +956,37 @@ if(chatGate){
 }
 async function checkPanelGate(){
  if(!chatGate||chatGateMounted||chatGateLoading)return;
+ // Owner/Wallet verification is separate from GitHub and Cloudflare tool grants.
+ // The owner chat must not be covered by an unrelated provider setup panel.
+ if(syncOwnerIdentity())return;
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await Promise.race([import('/bubbles-signin-gate.mjs?v=20261029-chat-signin1'),new Promise((_,reject)=>setTimeout(()=>reject(Error('signin_gate_load_timeout')),9000))]);
+  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261105-owner-verified1');
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
   if(!chatGateMounted)throw Error('signin_gate_mount_failed');
  }catch{
+  if(syncOwnerIdentity())return;
   const hint=document.getElementById('chatBubblesSigninStatus');
-  if(hint)hint.textContent='Sign-in status unavailable. Open Account Connections to continue; chat remains available.';
-   for(const id of ['chatBubblesGithub','chatBubblesCloudflare']){
+  if(hint)hint.textContent='Could not verify GitHub or Cloudflare permissions. Chat is available; retry the check or open Account Connections.';
+  for(const id of ['chatBubblesGithub','chatBubblesCloudflare']){
     const button=document.getElementById(id+'SignIn'),label=document.getElementById(id+'Status');
-    if(label)label.textContent='Status unavailable';
+    if(label)label.textContent='Check required';
     if(button){button.disabled=false;button.textContent='Open Account Connections';button.addEventListener('click',()=>location.assign('/bubbles-accounts.html'),{once:true});}
-   }
+  }
+  document.getElementById('chatBubblesRetrySignInCheck')?.addEventListener('click',()=>void checkPanelGate(),{once:true});
  }finally{chatGateLoading=false;}
 }
 const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
 const ownerMode=create('small','ba-owner-status',embedded?'Independent visitor assistant':'Owner tools: checking Unified Wallet…');
 ownerMode.hidden=embedded;
 ownerMode.setAttribute('role','status');
+function syncOwnerIdentity(){
+ if(!chatGate||!ownerReady)return false;
+ chatGate.dataset.ownerVerified='true';
+ chatGate.hidden=true;
+ ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';
+ return true;
+}
 const recorderStatus=create('p','ba-muted','Android recorder: OFF · no saved capture in this session.');
 // RecordB presents the single native recorder UI; keep this old status node for bridge compatibility.
 recorderStatus.hidden=true;recorderStatus.setAttribute('role','status');
@@ -2283,7 +2295,7 @@ async function consumeOwnerCodeFromChat(message,fromVoice){
   if(result?.state!=='verified')throw Error(result?.state==='unreachable'?'Brain verifier unavailable.':'Code expired or was not accepted.');
   await connectOwner();
   if(!ownerReady)throw Error('Verification did not establish an owner session.');
-  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+  ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';syncOwnerIdentity();
   status.textContent='Robot Brain connected. Your normal conversation and tasks are ready.';
   linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing accepted. Shared history syncs automatically.';
   void sharedMemory();
@@ -3026,13 +3038,19 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;
  // Additional natural-language route, without changing the original command matcher.
  if(namedCardWork&&!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue)directCoding=true;
+ // Repair of the first-party Bubbles or X Quick Card is explicitly a Robot
+ // Brain job. Do not turn it into a conversational direct GitHub 'assist'.
+ // Owner verification, trusted repository and runner receipts remain mandatory.
+ const knownQuantaRepair=!ownerGithubNonAction&&!createRepository&&!directRequest&&!pairedRepoWork
+  &&typeof brainTools!=='undefined'&&brainTools?.firstPartyRepairTarget?.(request)==='www-infinity4/QuantaPhi';
+ if(knownQuantaRepair)directCoding=false;
  // Grammar Phi may interpret an unusually worded direct engineering request
  // before the owner tool dispatcher. It returns ONLY a non-authorizing label.
  // Original user intent, verified owner session, repository and permissions
  // are still enforced independently. Never classify a screen observation.
  let neuralCoding=false;
  const neuralWorkCandidate=!embedded&&ownerReady&&!ownerGithubNonAction
-  &&!namedRecordBIssue&&!directCoding
+  &&!namedRecordBIssue&&!directCoding&&!(typeof knownQuantaRepair!=='undefined'&&knownQuantaRepair)
   &&request.length>=8&&request.length<=4000
   // Do not require a magic opening phrase or a product-name keyword before
   // asking the existing model to interpret the current direct utterance.
@@ -3050,7 +3068,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     &&planned.receipt?.executed===false;
    // A model's label can only enable the already authenticated owner workflow;
    // it cannot create its own command or silently select a new repository.
-   if(neuralCoding&&!requestsAgents)directCoding=true;
+   if(neuralCoding&&!requestsAgents&&!knownQuantaRepair)directCoding=true;
   }catch{neuralCoding=false;}
  }
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
@@ -3101,6 +3119,20 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     (names.length>20?' (showing the first 20).':'')+' This is a verified read-only result; no files were changed.';
   }catch(error){
    workEvidence='I could not verify a GitHub repository list: '+String(error.message||error).slice(0,160)+'. No repository was changed.';
+  }
+ }
+ else if(!embedded&&knownQuantaRepair){
+  // One normal chat message now triggers the actual authenticated owner Brain
+  // endpoint and returns its real ticket status in this same conversation.
+  // A queued job is never described as completed or deployed.
+  workText.value=request;tools.open=true;
+  try{
+   const ticket=await submitWork(request,'explicit-user-command',imageWorkEvidence);
+   workEvidence=(await humanReplies()).workReply(ticket);
+   recordBrainNotice('Verified owner work ticket: '+ticket.id+' · '+ticket.repository+' · '+ticket.status);
+  }catch(error){
+   workEvidence='Bubbles could not confirm an owner work ticket: '+String(error.message||error).slice(0,190)+'. No code change or bot execution is being claimed.';
+   workStatus.textContent=workEvidence;
   }
  }
  else if(!embedded&&!ownerGithubNonAction&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){
@@ -3737,7 +3769,7 @@ async function verifiedOwnerHeaders(){
  const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
  if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
- ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+ ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';syncOwnerIdentity();
  // Pairing is handled in the same chat composer.
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
  window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
@@ -3750,7 +3782,7 @@ async function connectOwner(){
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
- ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+ ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';syncOwnerIdentity();
  if(nativeOverlay){linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing saved · history syncs automatically.';}
  // Pairing is handled in the same chat composer.
  persistChat();void sharedMemory();
@@ -4119,7 +4151,13 @@ async function submitWork(request,approval='explicit-click',imageEvidence=''){
  // A named issue explicitly targets its own repository, regardless of an
  // unrelated project the owner selected in an older conversation.
  const namedRecordBIssue=/\brecord\s?b\b/i.test(request)&&/\bissue\s*#?\s*2\b/i.test(request);
- if(!namedRecordBIssue&&!repositorySelectionExplicit&&!activeCardEvidence)await suggestRepositoryTargets(request,false);
+ const knownRepository=!namedRecordBIssue&&!repositorySelectionExplicit&&!activeCardEvidence
+  ?brainTools?.firstPartyRepairTarget?.(request):null;
+ if(knownRepository){
+  // Discard stale non-explicit picker hints for this known first-party site.
+  // Explicit selections or other named repositories keep their own scope.
+  repositorySelection.clear();repositorySelection.add(knownRepository);
+ }else if(!namedRecordBIssue&&!repositorySelectionExplicit&&!activeCardEvidence)await suggestRepositoryTargets(request,false);
  const repositories=namedRecordBIssue?['www-infinity4/RecordB']:[...repositorySelection].sort();
  if(!repositories.length)throw Error('Select at least one repository before creating a ticket.');
  if(repositoryPicker.dataset.submitting==='true')throw Error('Repository tickets are already being submitted.');

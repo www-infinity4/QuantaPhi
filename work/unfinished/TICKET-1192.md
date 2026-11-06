@@ -72,3 +72,10 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 - The chat waits for the pending turn before switching, resetting or reloading. Delayed ticket references and markers are scoped to their own conversation. Global spoken work notices still follow preferences, and only matched notices can enter a transcript.
 - [Signed Bubbles chat run 42067603007](https://github.com/www-infinity4/Moltnook/actions/runs/42067603007) confirms current five-day approval and real GitHub reads. It passed 5 of 10 probes. Some findings stopped after source readback, so this does not prove the completed same-chat engineering flow.
 - State `source_tested`, 🟡. One additional documented session. Overall completion and remaining sessions unknown. No coordinator lease or fence was claimed. Live Brain acceptance and wallet settlement remain outstanding. Next action is to verify the updated #1699 head in CI and independent review before guarded release.
+
+## November 5, 2026 CT · reconcile the existing Brain PR
+
+- Brought `main` at `3c5990f940ca067c9e622f43c97ea57ac032028b` into [#1699](https://github.com/www-infinity4/QuantaPhi/pull/1699). Preserved the existing signed work entry point from #1714 and the verified owner indicator and carousel fixes from #1715. Aligned all four Bubbles launchers and their version checks on `20261105-brain-receipts3`.
+- The eight conflicts were revision strings. Syntax and all 207 focused tests passed on the merged source, including same-conversation receipts, owner isolation, and prerequisite claim handling. The Brain worker and sign-in boundaries retain their existing source changes.
+- Source tested, 🟡. Five documented source sessions in this file. The merge reconciliation is locally verified. Full issue completion and remaining sessions are unknown until the signed execution path is exercised. No coordinator lease was claimed for this branch update.
+- Next action is to check GitHub CI and independent review on the reconciled #1699 head, then stage the Brain release and verify a signed claim and execution receipt in the original conversation.

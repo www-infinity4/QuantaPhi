@@ -240,3 +240,187 @@ test('owner-reported unplayable Space is removed without changing global source 
  assert.equal(restored.status,200);
  assert.equal((await(await call('/v1/hosts',tok)).json()).eligibleCount,1);
 });
+
+
+test('X OAuth legal pages are public and contain privacy and service conditions',async()=>{
+ const {call}=await fixture();
+ for(const path of ['/legal/privacy','/legal/terms']){
+  const r=await call(path);
+  assert.equal(r.status,200);
+  assert.match(r.headers.get('content-type'),/text\/html/);
+  const content=await r.text();
+  assert.match(content,/QuantaPhi/);
+  assert.doesNotMatch(content,/<script|adsbygoogle/);
+ }
+ const bad=await call('/api/x/oauth/callback');
+ assert.equal(bad.status,400);
+});
+test('X OAuth requires configured server secrets and a wallet-authenticated owner',async()=>{
+ const {call,env}=await fixture();
+ const noConfig=await call('/v1/x/oauth/start',tok,{});
+ assert.equal(noConfig.status,503);
+ assert.equal((await noConfig.json()).error,'x_oauth_not_configured');
+ const noAuth=await call('/v1/x/oauth/start',null,{});
+ assert.equal(noAuth.status,401);
+ env.X_OAUTH_CLIENT_ID='test-client';
+ env.X_OAUTH_CLIENT_SECRET='test-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,17).toString('base64url');
+ const r=await call('/v1/x/oauth/start',tok,{});
+ assert.equal(r.status,200);
+ const auth=new URL((await r.json()).authorizationUrl);
+ assert.equal(auth.origin,'https://x.com');
+ assert.equal(auth.searchParams.get('redirect_uri'),'https://quantaphi.org/api/x/oauth/callback');
+ assert.equal(auth.searchParams.get('code_challenge_method'),'S256');
+ assert.match(auth.searchParams.get('scope'),/offline.access/);
+});
+test('X OAuth token exchange saves encrypted credentials only for the matching account, state is single-use',async()=>{
+ const {call,env,db}=await fixture();
+ env.X_OAUTH_CLIENT_ID='test-client';
+ env.X_OAUTH_CLIENT_SECRET='test-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,15).toString('base64url');
+ await call('/v1/x/account',tok,{handle:'YahooPingcwlz'});
+ const begin=await call('/v1/x/oauth/start',tok,{});
+ const state=new URL((await begin.json()).authorizationUrl).searchParams.get('state');
+ let requests=0;
+ const prior=global.fetch;
+ global.fetch=async (url,options)=>{
+  requests++;
+  if(String(url).includes('/oauth2/token')){
+   assert.equal(options.method,'POST');
+   assert.equal(new URLSearchParams(options.body).get('grant_type'),'authorization_code');
+   assert.match(String(options.body),/code_verifier=/);
+   return new Response(JSON.stringify({access_token:'private-token-for-test',refresh_token:'private-refresh-for-test',expires_in:3600}),{status:200});
+  }
+  if(String(url).includes('/users/me'))return new Response(JSON.stringify({data:{id:'123456',username:'YahooPingcwlz'}}),{status:200});
+  throw Error('unexpected url');
+ };
+ try{
+  const url='/api/x/oauth/callback?state='+state+'&code=one-time-code';
+  const success=await call(url);
+  assert.equal(success.status,200);
+  assert.match(await success.text(),/X account connected/);
+  assert.equal(requests,2);
+  const stored=db.prepare('SELECT * FROM x_oauth_tokens WHERE owner_id=?').get('owner-one');
+  assert.ok(stored.access_cipher);
+  assert.doesNotMatch(JSON.stringify(stored),/private-token-for-test|private-refresh-for-test/);
+  const replay=await call(url);
+  assert.equal(replay.status,403);
+  assert.equal(requests,2);
+  const owner=(await(await call('/v1/x/account',tok)).json());
+  assert.equal(owner.xConnected,true);
+  const stranger=(await(await call('/v1/x/account',other)).json());
+  assert.equal(stranger.xConnected,false);
+  const accidental=await call('/v1/x/oauth/disconnect',tok,{});
+  assert.equal(accidental.status,400);
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM x_oauth_tokens').get().n,1);
+  const disconnected=await call('/v1/x/oauth/disconnect',tok,{confirmation:'DISCONNECT X'});
+  assert.equal(disconnected.status,200);
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM x_oauth_tokens').get().n,0);
+ }finally{global.fetch=prior}
+});
+test('X OAuth rejects an X identity different from the owner-claimed handle',async()=>{
+ const {call,env,db}=await fixture();
+ env.X_OAUTH_CLIENT_ID='test-client';env.X_OAUTH_CLIENT_SECRET='test-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,9).toString('base64url');
+ await call('/v1/x/account',tok,{handle:'YahooPingcwlz'});
+ const state=new URL((await(await call('/v1/x/oauth/start',tok,{})).json()).authorizationUrl).searchParams.get('state');
+ const original=global.fetch;
+ global.fetch=async url=>new Response(JSON.stringify(String(url).includes('/oauth2/token')?{access_token:'tmp',expires_in:3600}:{data:{id:'999',username:'SomeoneElse'}}),{status:200});
+ try{const r=await call('/api/x/oauth/callback?state='+state+'&code=fake');
+  assert.equal(r.status,403);
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM x_oauth_tokens').get().n,0);
+ }finally{global.fetch=original}
+});
+
+test('X authorization has a dedicated direct screen without a delete/revoke control',async()=>{
+ const {call}=await fixture();
+ const response=await call('/connect-x');
+ assert.equal(response.status,200);
+ assert.ok(response.headers.get('content-type').includes('text/html'));
+ const html=await response.text();
+ assert.ok(html.includes('Authorize my X account'));
+ assert.ok(html.includes('cloud-wallet-client.js'));
+ assert.ok(!html.includes('Disconnect X'));
+ assert.ok(!html.includes('Revoke X access'));
+ const js=await call('/connect-x.js');
+ assert.equal(js.status,200);
+ const source=await js.text();
+ assert.ok(source.includes('/v1/x/oauth/start'));
+ assert.ok(source.includes('/v1/x/account'));
+ assert.ok(!source.includes('/v1/x/oauth/disconnect'));
+ const notFound=await call('/connect-x-unexpected');
+ assert.equal(notFound.status,404);
+});
+test('OAuth success directs owner back to the dedicated status page',async()=>{
+ const {call,env}=await fixture();
+ env.X_OAUTH_CLIENT_ID='test-client';
+ env.X_OAUTH_CLIENT_SECRET='test-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,12).toString('base64url');
+ const r=await call('/api/x/oauth/callback?state=invalid');
+ assert.equal(r.status,400);
+ assert.ok((await r.text()).includes('https://quantaphi.org/connect-x'));
+});
+
+test('X card public posts come from X and ended Spaces are never live',async()=>{
+ const {env,call}=await fixture();
+ env.X_OWNER_ID='owner-one';env.X_USER_ACCESS_TOKEN='fixture-test';
+ const previous=global.fetch;
+ global.fetch=async url=>{
+  const pathname=new URL(String(url)).pathname;
+  if(pathname==='/2/tweets/search/recent')return Response.json({
+   data:[{id:'1888777666555444333',author_id:'123456',text:'Original source post'}],
+   includes:{users:[{id:'123456',username:'ActualHost',name:'Actual Host'}]}});
+  if(pathname==='/2/spaces/search')return Response.json({
+   data:[{id:'1OyKAjYPeXqGb',creator_id:'123456',title:'Happening now',state:'live'},
+   {id:'1BRJjPRygqaKw',creator_id:'123456',title:'Ended already',state:'ended'}]});
+  throw Error('unexpected X request: '+pathname);
+ };
+ try{
+  const posts=await(await call('/v1/x/timeline?feed=public&q=technology',tok)).json();
+  assert.equal(posts.posts[0].text,'Original source post');
+  assert.equal(posts.posts[0].source,'x_api_verified');
+  const spaces=await(await call('/v1/x/spaces/live?q=technology',tok)).json();
+  assert.equal(spaces.endedExcluded,true);
+  assert.deepEqual(spaces.spaces.map(x=>x.id),['1OyKAjYPeXqGb']);
+  const otherResponse=await call('/v1/x/spaces/live?q=technology',other);
+  assert.notEqual(otherResponse.status,200);
+ }finally{global.fetch=previous}
+});
+test('X writing requires user-granted scopes and rejects unverified posts',async()=>{
+ const {env,call}=await fixture();
+ env.X_OWNER_ID='owner-one';env.X_USER_ACCESS_TOKEN='fixture-test';
+ const reply=await call('/v1/x/post',tok,{text:'Hello'});
+ assert.equal(reply.status,401);
+ const like=await call('/v1/x/like',tok,{postId:'1888777666555444333'});
+ assert.equal(like.status,401);
+});
+
+test('consented X write scopes issue real post and like receipts',async()=>{
+ const {env,call}=await fixture();
+ env.X_OAUTH_CLIENT_ID='fixture-client';
+ env.X_OAUTH_CLIENT_SECRET='fixture-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,20).toString('base64url');
+ await call('/v1/x/account',tok,{handle:'SpaceTester'});
+ const begin=await call('/v1/x/oauth/start',tok,{write:true});
+ const params=new URL((await begin.json()).authorizationUrl).searchParams;
+ assert.match(params.get('scope'),/tweet.write/);
+ const old=global.fetch;let writes=0;
+ global.fetch=async (url,options)=>{
+  const p=new URL(String(url)).pathname;
+  if(p==='/2/oauth2/token')return Response.json({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,scope:'tweet.read users.read follows.read space.read offline.access tweet.write like.write'});
+  if(p==='/2/users/me')return Response.json({data:{id:'123456',username:'SpaceTester'}});
+  if(p==='/2/tweets'){writes++;return Response.json({data:{id:'1888777666555444333'}})}
+  if(p==='/2/users/123456/likes'){writes++;return Response.json({data:{liked:true}})}
+  throw Error('unexpected '+p);
+ };
+ try{
+  assert.equal((await call('/api/x/oauth/callback?state='+params.get('state')+'&code=accepted')).status,200);
+  const flags=await(await call('/v1/x/account',tok)).json();
+  assert.equal(flags.canPost,true);assert.equal(flags.canLike,true);
+  const posted=await(await call('/v1/x/post',tok,{text:'Real test post'})).json();
+  assert.equal(posted.postId,'1888777666555444333');
+  const like=await(await call('/v1/x/like',tok,{postId:'1888777666555444333'})).json();
+  assert.equal(like.source,'x_api_confirmed');
+  assert.equal(writes,2);
+ }finally{global.fetch=old}
+});

@@ -78,7 +78,7 @@
   // Attach source-backed local radio cards beside the existing Infinity Radio.
   // The browser loads one small module rather than adding seven player iframes.
   const liveRadioScript = document.createElement('script');
-  liveRadioScript.src = '/iowa-live-radio-cards.js?v=20261104-who1';
+  liveRadioScript.src = '/iowa-live-radio-cards.js?v=20261105-states-db1';
   liveRadioScript.defer = true;
   document.head.appendChild(liveRadioScript);
 

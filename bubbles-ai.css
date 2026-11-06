@@ -479,3 +479,39 @@ body .ba-panel .ba-iteration-heading small,body .ba-panel .ba-bits-note{font-siz
 body .ba-panel .ba-iteration-bits strong,body .ba-panel .ba-bits-count{font-size:13px}
 body .ba-panel .ba-bits-proof{font-size:12px}
 @media(max-width:350px){body .ba-panel .ba-iteration-row{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+
+/* Notes readability upgrade: keep saved notes untouched; improve only presentation.
+   Comfortable on a 320px Android screen, with no destructive one-tap shortcuts. */
+.ba-panel .ba-tools>summary{font-size:17px;line-height:1.5;letter-spacing:.012em;color:#253f50;min-height:48px}
+.ba-panel .ba-notes{
+ max-height:none;overflow:visible;min-width:0;
+ border:1px solid #d7dee6;border-radius:15px;
+ background:#fafbfc;padding:13px;margin-block:8px;
+}
+.ba-panel .ba-note{
+ border:1px solid #d7dfe6;border-radius:14px;
+ padding:15px;margin-top:10px;min-width:0;
+ background:#fff;box-shadow:0 3px 12px rgba(33,45,58,.06);
+}
+.ba-panel .ba-note p{
+ margin:0 0 9px;font-size:16px;line-height:1.65;
+ letter-spacing:.015em;color:#293a46;white-space:pre-wrap;
+ overflow-wrap:anywhere;word-break:normal;
+}
+.ba-panel .ba-note .ba-remove{
+ min-height:44px;min-width:44px;border:1px solid #bdcad3;
+ border-radius:10px;padding:10px 13px;background:#f5f7f9;
+ color:#344b5a;font-size:14px;font-weight:700;
+}
+.ba-tools-viewer-content .ba-notes{
+ max-height:65dvh;overflow-y:auto;overscroll-behavior:contain;
+ scrollbar-gutter:stable;padding:16px;background:#f7f9fb;
+}
+@media(max-width:440px){
+ .ba-tools-viewer-content .ba-notes{max-height:65dvh;padding:12px}
+ .ba-panel .ba-note{padding:13px}
+ .ba-panel .ba-note p{font-size:16px;line-height:1.7}
+ .ba-panel .ba-note .ba-remove{width:auto;max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){.ba-panel .ba-note{transition:none!important}}
