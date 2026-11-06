@@ -2364,7 +2364,43 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // It is not ChatGPT Personal Context, a permission grant or a completed job.
  const firstOwnerContext=await currentOwnerContext(spoken);
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'memory',state:firstOwnerContext.state}}));
- const aiConsult=/^(?:bubbles[, ]+)?ask (gemini then claude|gemini|claude)\s*:\s*([\s\S]{3,2400})$/i.exec(spoken);
+   // A GitHub status question reads the durable owner receipt; no second write.
+  if(!embedded&&/\b(?:github|git\s*hub|repo|repository|created)\b/i.test(spoken)){
+   let receiptModule=null;
+   try{receiptModule=await import('/bubbles-github-receipt-followup.mjs?v=20261105-receipt1');}catch{}
+   if(receiptModule?.isGithubReceiptFollowup(spoken)){
+    display(spoken,'you');clearSentComposer();
+    messages.push({role:'user',text:spoken});messages=messages.slice(-400);persistChat();
+    busy=true;send.disabled=true;setOrbState('thinking');
+    status.textContent='Checking saved GitHub execution receipt…';
+    let reply='';
+    try{
+     const recent=[...readPendingGithubWork(),...readRecentGithubWork()]
+      .filter(item=>item.thread===activeThread).sort((a,b)=>a.at-b.at).at(-1);
+     if(!recent)reply='There is no saved GitHub request ID for this conversation. I cannot verify whether the repository was created. No new request was sent.';
+     else{
+      const result=await githubReceipt(recent.requestId);
+      reply=receiptModule.githubReceiptFollowupReply(result);
+      publishSavedGithubIterations(result,activeThread);
+      const pendingBits=Array.isArray(result.receipts)&&result.receipts.some(item=>item.bit?.status==='pending');
+      if(result.ok===true&&!['working','in_progress','unconfirmed'].includes(result.status)&&!pendingBits)
+       clearPendingGithubWork(recent.requestId);
+     }
+    }catch(error){
+     reply='The owner-authenticated GitHub receipt could not be read ('+String(error.message||error).slice(0,100)+'). Creation remains unverified; no second write was attempted.';
+    }finally{
+     display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+     status.textContent='GitHub receipt checked · '+(reply.includes('confirmed that it created')?'creation confirmed':'result pending or blocked');
+     if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=reply;
+     else if(config.voice&&!nativeOverlay)speakText(reply);
+     nativeSpeechPending=false;busy=false;send.disabled=false;
+     if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+     drainVoiceTurns();
+    }
+    return;
+   }
+  }
+const aiConsult=/^(?:bubbles[, ]+)?ask (gemini then claude|gemini|claude)\s*:\s*([\s\S]{3,2400})$/i.exec(spoken);
  if(aiConsult){
   clearSentComposer();
   const mode=aiConsult[1].toLowerCase()==='gemini then claude'?'gemini_claude_review':
@@ -3427,6 +3463,23 @@ tools.append(screenShareButton);
 const pendingGithubReceipts=new Set();
 const GITHUB_PENDING_KEY='bubbles-pending-github-work-v1';
 const githubResumeStarted=new Set();
+const GITHUB_RECENT_KEY='bubbles-recent-github-receipts-v1';
+function readRecentGithubWork(){
+ try{
+  const saved=JSON.parse(sessionStorage.getItem(GITHUB_RECENT_KEY)||'[]');
+  if(!Array.isArray(saved))return [];
+  return saved.filter(x=>x&&typeof x.thread==='string'&&/^[a-zA-Z0-9_-]{1,100}$/.test(x.thread)&&
+   typeof x.requestId==='string'&&/^[0-9a-f-]{36}$/i.test(x.requestId)&&
+   Number.isFinite(x.at)&&x.at<=Date.now()&&Date.now()-x.at<86400000).slice(-6);
+ }catch{return []}
+}
+function rememberRecentGithubWork(requestId,thread){
+ try{
+  const rows=readRecentGithubWork().filter(x=>x.requestId!==requestId);
+  rows.push({requestId,thread,at:Date.now()});
+  sessionStorage.setItem(GITHUB_RECENT_KEY,JSON.stringify(rows.slice(-6)));
+ }catch{/* Only opaque IDs, never credentials or user request text. */}
+}
 function readPendingGithubWork(){
  try{
   const saved=JSON.parse(sessionStorage.getItem(GITHUB_PENDING_KEY)||'[]');
@@ -3540,7 +3593,7 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
 // neither an accepted request nor model narration is a verified tool receipt.
 function publishDirectGithubIteration(operation,requestId,phase,result=null,thread=''){
  const currentThread=typeof activeThread==='string'?activeThread:'';
- const actionTools={read_file:'github.read_file',read_repository:'github.read_repository',
+ const actionTools={create_repository:'github.create_repository',read_file:'github.read_file',read_repository:'github.read_repository',
   read_repo:'github.read_repo',search:'github.search',search_code:'github.search'};
  const tool=actionTools[operation?.action];
  if(!tool||!/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/.test(operation?.repository||'')||
@@ -3548,7 +3601,7 @@ function publishDirectGithubIteration(operation,requestId,phase,result=null,thre
     typeof CustomEvent!=='function')return;
  if(!['tool_started','tool_progress','tool_receipt'].includes(phase))return;
  const detail={type:phase,tool,operationId:requestId,resource:operation.repository,
-  criteriaSummary:'Authenticated GitHub read for this conversation'};
+  criteriaSummary:operation.action==='create_repository'?'Authenticated GitHub repository creation request':'Authenticated GitHub read for this conversation'};
  if(phase==='tool_progress'){
   detail.detail=result?.status==='working'?'GitHub reports working; the final receipt is pending':
    'Response not confirmed; checking durable GitHub receipt';
@@ -3562,6 +3615,8 @@ function publishDirectGithubIteration(operation,requestId,phase,result=null,thre
   detail.status=matched&&proof.status==='complete'?'complete':
    ['failed','blocked'].includes(result?.status)||result?.ok===false?'failed':'unverified';
   if(matched)detail.receiptId=proof.id;
+  if(operation.action==='create_repository'&&!matched)
+   detail.detail='GitHub reported '+String(result?.status||'unknown').slice(0,50)+'; a matching creation receipt has not been verified';
  }
  window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail}));
 }
@@ -3582,6 +3637,7 @@ async function directGithubOperation(operation,{quiet=false,ownerRequest='',imag
  if(embedded)throw Error('owner_tools_unavailable_in_embed');
  const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
  const receiptThread=typeof activeThread==='string'?activeThread:'';
+ rememberRecentGithubWork(requestId,receiptThread);
  if(typeof publishDirectGithubIteration==='function')
   publishDirectGithubIteration(operation,requestId,'tool_started',null,receiptThread);
  let result;
