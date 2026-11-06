@@ -7,6 +7,9 @@ on:
       - 'quick-ads.css'
       - 'index.html'
       - 'test/quick-ads.test.mjs'
+      - 'workers/product-directory/worker.mjs'
+      - 'workers/product-directory/migrations/**'
+      - 'test/product-directory-worker.test.mjs'
       - '.github/workflows/world-series-quick-ads.yml'
   pull_request:
     paths:
@@ -15,6 +18,9 @@ on:
       - 'quick-ads.css'
       - 'index.html'
       - 'test/quick-ads.test.mjs'
+      - 'workers/product-directory/worker.mjs'
+      - 'workers/product-directory/migrations/**'
+      - 'test/product-directory-worker.test.mjs'
       - '.github/workflows/world-series-quick-ads.yml'
 permissions:
   contents: read
@@ -30,5 +36,6 @@ jobs:
         run: |
           node --check quick-ads-core.mjs
           node --check quick-ads.mjs
+          node --check workers/product-directory/worker.mjs
       - name: Run Quick Ads unit and source-integration tests
-        run: node --test test/quick-ads.test.mjs
+        run: node --test test/quick-ads.test.mjs test/product-directory-worker.test.mjs
