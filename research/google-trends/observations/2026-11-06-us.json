@@ -3,27 +3,272 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T19:31:06.037628Z",
+  "checked_at": "2026-11-06T20:01:36.461095Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "sevilla - alavés",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T19:10:00Z",
+      "query": "oxford city vs leicester city",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T19:40:00Z",
       "related_news_urls": [
-        "https://www.eldesmarque.com/futbol/liga-1a-division/20261106/alineaciones-confirmadas-sevilla-alaves-jornada-12_18_020645326.html",
-        "https://onefootball.com/es/noticias/el-alaves-prepara-su-visita-al-sanchez-pizjuan-con-una-convocatoria-de-24-jugadores-43736877",
-        "https://www.elcorreo.com/alaves/alaves-obligado-cortar-peligrosa-mala-racha-pizjuan-20261106162554-nt.html"
+        "https://www.bbc.com/sport/football/articles/cw054d7nmndzo",
+        "https://www.fourfourtwo.com/person/coaches-managers/russell-martins-last-chance-to-change-the-narrative-lies-in-avoiding-fa-cup-humiliation",
+        "https://www.lcfc.com/media-article/leicester-city-emirates-fa-cup-bobby-de-cordova-reid-first-round-preview-oxford-city"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnRMGWEU2NZCPcNi99z0N2t0gqIuGrl9py4s9L40iURaahldomsLGh5dOuY0U",
-      "image_credit": "El Desmarque",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVuMSp5WxQ2zLGKmLdKWB85ZbbXimvyjF5o4AvzVAnPIfGWp4df9eKDh_OMec",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.eldesmarque.com/futbol/liga-1a-division/20261106/alineaciones-confirmadas-sevilla-alaves-jornada-12_18_020645326.html",
-          "title": "Alineaciones confirmadas del Sevilla y del Alavés en la jornada 12 de LALIGA EA Sports",
-          "publisher": "El Desmarque",
+          "url": "https://www.bbc.com/sport/football/articles/cw054d7nmndzo",
+          "title": "FA Cup: From facing Lionel Messi & Cristiano Ronaldo to non-league for Fernando Forestieri",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnRMGWEU2NZCPcNi99z0N2t0gqIuGrl9py4s9L40iURaahldomsLGh5dOuY0U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVuMSp5WxQ2zLGKmLdKWB85ZbbXimvyjF5o4AvzVAnPIfGWp4df9eKDh_OMec"
+        },
+        {
+          "url": "https://www.fourfourtwo.com/person/coaches-managers/russell-martins-last-chance-to-change-the-narrative-lies-in-avoiding-fa-cup-humiliation",
+          "title": "Leicester City and FA Cup banana skin is Russell Martin's last chance to resurrect his reputation",
+          "publisher": "FourFourTwo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYALQWo3b3plRHqa97BKgCyo7NeCnn1U9B7G6WR6sXvjOtPh2xcNYMR7a4m0g"
+        },
+        {
+          "url": "https://www.lcfc.com/media-article/leicester-city-emirates-fa-cup-bobby-de-cordova-reid-first-round-preview-oxford-city",
+          "title": "‘The FA Cup’s Always Special’ - De Cordova-Reid On First Round",
+          "publisher": "LCFC | Official Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE4nabAb274_UCq0tfnX2vg_X4i5r6XGymjI6bxYf1DwBn1CySmQ18-b6Vyao"
+        }
+      ]
+    },
+    {
+      "query": "tyler kolek",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T19:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-called-fakest-york-164814394.html",
+        "https://bleacherreport.com/articles/25529885-taylor-swift-named-fakest-celebrity-knicks-fan-tyler-kolek-deuce-mcbride-trending-video",
+        "https://people.com/knicks-tyler-kolek-calls-taylor-swift-courtside-appearance-madison-square-garden-little-performative-12239815"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnbwtcn9KMCulJX1NrpsEsMw3flMZsV7rxaQ6pP0JCXhdNBi5VTLwznFjyziA",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-called-fakest-york-164814394.html",
+          "title": "Taylor Swift Called the ‘Fakest’ New York Knicks Fan by 2 of Team’s Players: ‘It’s a Little Performative’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnbwtcn9KMCulJX1NrpsEsMw3flMZsV7rxaQ6pP0JCXhdNBi5VTLwznFjyziA"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529885-taylor-swift-named-fakest-celebrity-knicks-fan-tyler-kolek-deuce-mcbride-trending-video",
+          "title": "Taylor Swift Named 'Fakest' Celebrity Knicks Fan by Tyler Kolek, Deuce McBride in Trending Video",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC-_oUX0Q-c83pZ1O6YgMgD5ck8bfrOnjB7l1uQVbJa_Z53aUglOxnTLrzDXE"
+        },
+        {
+          "url": "https://people.com/knicks-tyler-kolek-calls-taylor-swift-courtside-appearance-madison-square-garden-little-performative-12239815",
+          "title": "Knicks’ Tyler Kolek Calls Taylor Swift’s Courtside Appearance at Madison Square Garden ‘a Little Performative’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cqO4sGUTRdvh5YhzB7ihXbFEIWelcaNeaYD1UY9Bu-DZp3XNjch-uHkjsoQ"
+        }
+      ]
+    },
+    {
+      "query": "maverick lyon",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T19:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/news/us-news/oregon-college-student-was-held-knifepoint-brother-escaped-police-shot-rcna607633",
+        "https://www.yahoo.com/news/us/articles/unarmed-oregon-man-shot-5-230356913.html",
+        "https://www.oregonlive.com/crime/2026/11/an-oregon-college-student-escaped-knife-attack-ran-for-help-then-officers-shot-him-5-times-lawsuit-says.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7Yb-Svs98YzuoFcmW9-fXctGY89ftq6K4COFYf2FMXyKTbFJht8kDg30A8AA",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/news/us-news/oregon-college-student-was-held-knifepoint-brother-escaped-police-shot-rcna607633",
+          "title": "An Oregon college student was held at knifepoint by his brother. He escaped, and police shot him.",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7Yb-Svs98YzuoFcmW9-fXctGY89ftq6K4COFYf2FMXyKTbFJht8kDg30A8AA"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/unarmed-oregon-man-shot-5-230356913.html",
+          "title": "Unarmed Oregon man shot 5 times by police after being kidnapped by brother files lawsuit",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVPEpej1dJ0rCWfnBF7Bhf3zDeV-J7NbTIrIb89qi8Q2YmcIz9vOHPUfjpsBg"
+        },
+        {
+          "url": "https://www.oregonlive.com/crime/2026/11/an-oregon-college-student-escaped-knife-attack-ran-for-help-then-officers-shot-him-5-times-lawsuit-says.html",
+          "title": "An Oregon college student escaped knife attack, ran for help — then officers shot him 5 times, lawsuit says",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2GAQpxmv3Ofg9ZGo2wYxfbWCO0YrRqM8YVfjKnpg0lFDtSRJJO1V1ZLRiavc"
+        }
+      ]
+    },
+    {
+      "query": "tornado warning",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T19:30:00Z",
+      "related_news_urls": [
+        "https://www.wral.com/news/local/lightning-damages-raleigh-home-november-2026/",
+        "https://www.charlotteobserver.com/news/weather-news/article317963349.html",
+        "https://www.cbs17.com/weather/weather-stories/flood-advisory-issued-in-central-north-carolina-with-up-to-4-inches-of-rainfall-possible/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0Bn0v7seoH-HlV1zeXm2dKhTdGfQaj8Eb6PKuF9-HViSLk1jyKusH1j6j2rA",
+      "image_credit": "WRAL",
+      "news": [
+        {
+          "url": "https://www.wral.com/news/local/lightning-damages-raleigh-home-november-2026/",
+          "title": "Lightning causes house fire in Raleigh, family of 4 displaced",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0Bn0v7seoH-HlV1zeXm2dKhTdGfQaj8Eb6PKuF9-HViSLk1jyKusH1j6j2rA"
+        },
+        {
+          "url": "https://www.charlotteobserver.com/news/weather-news/article317963349.html",
+          "title": "UPDATE: Sampson County under a tornado warning Friday afternoon - take cover now",
+          "publisher": "Charlotte Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLxJazysWQrp0AJceD-1fg2w2gFFxoTKRj_YWGVnSQFK2a-hRO36lUUQao1FA"
+        },
+        {
+          "url": "https://www.cbs17.com/weather/weather-stories/flood-advisory-issued-in-central-north-carolina-with-up-to-4-inches-of-rainfall-possible/",
+          "title": "Tornado warning issued in Wayne County; several Raleigh vehicle crashes reported as storms hit central NC",
+          "publisher": "CBS17.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-lgOy5aGbBXZ61Y4x1uNtYuXx2Rd3O3BJOXIBa5VBNqrK9XC4_oU_Wc6wqYw"
+        }
+      ]
+    },
+    {
+      "query": "stephen miller wife",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T19:20:00Z",
+      "related_news_urls": [
+        "https://www.the-independent.com/bulletin/news/katie-miller-republican-midterm-losses-b3079089.html",
+        "https://www.indy100.com/politics/katie-miller-midterm-elections-vote",
+        "https://www.themirror.com/entertainment/celebrity-news/katie-miller-mother-midterm-elections-2096927"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbu9oxOKyLSHQQvWd2n55IXwLUIzfmn6b8ysmBbCCYZPimXLW6uGLvkNJd5qM",
+      "image_credit": "The Independent",
+      "news": [
+        {
+          "url": "https://www.the-independent.com/bulletin/news/katie-miller-republican-midterm-losses-b3079089.html",
+          "title": "Katie Miller mocked after blaming busy moms for GOP midterm wipeout while admitting she skipped the vote",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbu9oxOKyLSHQQvWd2n55IXwLUIzfmn6b8ysmBbCCYZPimXLW6uGLvkNJd5qM"
+        },
+        {
+          "url": "https://www.indy100.com/politics/katie-miller-midterm-elections-vote",
+          "title": "'Nothing is more MAGA': Top Trump official's wife admits she didn't vote in the midterms",
+          "publisher": "Indy100",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpPxN383ak5x35WNdrQOlSxV0mdF5XnvGrn0sx-FrfuzwvH0zStM-iMZ2CuGQ"
+        },
+        {
+          "url": "https://www.themirror.com/entertainment/celebrity-news/katie-miller-mother-midterm-elections-2096927",
+          "title": "MAGA podcaster Katie Miller blames mothers for election disaster as she admits she didn't vote",
+          "publisher": "The Mirror US",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSd0UA87hCYhXCZz948q4uq0zNiAgn5HekJU-I2w6qHUgoihktgxkW2hPpMkVk"
+        }
+      ]
+    },
+    {
+      "query": "venezia - udinese",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T19:20:00Z",
+      "related_news_urls": [
+        "https://www.fantacalcio.it/news/calcio-italia/06_11_2026/venezia-udinese-le-formazioni-ufficiali-500381",
+        "https://www.libero.it/magazine/news/calcio-in-tv-oggi-programmazione-diretta-venerdi-6-novembre-2026-cosa-vedere-229977",
+        "https://www.gazzetta.it/Calcio/Serie-A/06-11-2026/le-partite-di-oggi-in-campo-serie-a-serie-b-liga-premier-league-bundesliga-e-ligue-1.shtml"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIyq41IG_oGdbRI_2tnYtHyX4Cm8OIrJ9OT5PUMrk3MeHN9yCqvIU9aBGU_0c",
+      "image_credit": "Fantacalcio",
+      "news": [
+        {
+          "url": "https://www.fantacalcio.it/news/calcio-italia/06_11_2026/venezia-udinese-le-formazioni-ufficiali-500381",
+          "title": "Venezia-Udinese, le formazioni ufficiali",
+          "publisher": "Fantacalcio",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIyq41IG_oGdbRI_2tnYtHyX4Cm8OIrJ9OT5PUMrk3MeHN9yCqvIU9aBGU_0c"
+        },
+        {
+          "url": "https://www.libero.it/magazine/news/calcio-in-tv-oggi-programmazione-diretta-venerdi-6-novembre-2026-cosa-vedere-229977",
+          "title": "Il calcio in TV oggi, venerdì 6 novembre: torna la Serie A con Venezia-Udinese. Dove vederla live",
+          "publisher": "Libero",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrLKZ-O0a9zTIEjuNmsf4obG4ITT5FBdFgSp6jQtfbZrD5jNDcXD8S0S6tGXU"
+        },
+        {
+          "url": "https://www.gazzetta.it/Calcio/Serie-A/06-11-2026/le-partite-di-oggi-in-campo-serie-a-serie-b-liga-premier-league-bundesliga-e-ligue-1.shtml",
+          "title": "Le partite di oggi: Venezia-Udinese. In campo anche Everton, Siviglia e Tolosa",
+          "publisher": "La Gazzetta dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGz7OK7I7itSmc4VaIe4kLTEMa6nJ4SqyUkn1OW9muRfNVr5r8LtpQRGH2zP4"
+        }
+      ]
+    },
+    {
+      "query": "pbskids",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T19:20:00Z",
+      "related_news_urls": [
+        "https://azpbs.org/2026/11/new-show-carnival-of-the-animals-coming-to-pbs-kids/",
+        "https://www.awn.com/news/pbs-kids-sets-premiere-gustavo-dudamels-carnival-animals",
+        "https://www.eonline.com/news/1437869/arthur-celebrates-30th-anniversary-pbs-kids-tv-show-first-aired-in-1996"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVC7AQsn-U9GNX8wJ14zttPetpmkkgIlb7QjIb4JUe_wcYpKMGT9DgJ1mdx5s",
+      "image_credit": "Arizona PBS",
+      "news": [
+        {
+          "url": "https://azpbs.org/2026/11/new-show-carnival-of-the-animals-coming-to-pbs-kids/",
+          "title": "New show, ‘Carnival of the Animals,’ coming to PBS Kids",
+          "publisher": "Arizona PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVC7AQsn-U9GNX8wJ14zttPetpmkkgIlb7QjIb4JUe_wcYpKMGT9DgJ1mdx5s"
+        },
+        {
+          "url": "https://www.awn.com/news/pbs-kids-sets-premiere-gustavo-dudamels-carnival-animals",
+          "title": "PBS KIDS Sets Premiere for Gustavo Dudamel's 'Carnival of the Animals'",
+          "publisher": "Animation World Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8CUIS11HxPweXbrxAkJKAS_Pn2Z78D3NERbtPFs27hJyVxGCffPnScKKofpw"
+        },
+        {
+          "url": "https://www.eonline.com/news/1437869/arthur-celebrates-30th-anniversary-pbs-kids-tv-show-first-aired-in-1996",
+          "title": "PBS Kids' Arthur Turns 30—and It's a Wonderful Kind of Day, Even If You Feel Old",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYWmV0CT_HDScoDqkYOz4ACN14fq0NobRi2M1RGOMwthXLb8ZPCv-94WW0NzI"
+        }
+      ]
+    },
+    {
+      "query": "sevilla - alavés",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T19:10:00Z",
+      "related_news_urls": [
+        "https://www.marca.com/futbol/laliga-ea-sports/sevilla-alaves/2026/11/06/01_0101_20261106_179_173-directo.html",
+        "https://onefootball.com/es/noticias/el-alaves-prepara-su-visita-al-sanchez-pizjuan-con-una-convocatoria-de-24-jugadores-43736877",
+        "https://www.elcorreo.com/alaves/quique-continuidad-guevara-yusi-once-20261106200547-nt.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi5H9ZskKiqywVb5hohpjqQBRecgdjePJxhXN_o4r7ezNz4CYFsPrcYgld5UI",
+      "image_credit": "MARCA",
+      "news": [
+        {
+          "url": "https://www.marca.com/futbol/laliga-ea-sports/sevilla-alaves/2026/11/06/01_0101_20261106_179_173-directo.html",
+          "title": "Sevilla - Alavés en directo | Última hora de LALIGA EA Sports en vivo hoy",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi5H9ZskKiqywVb5hohpjqQBRecgdjePJxhXN_o4r7ezNz4CYFsPrcYgld5UI"
         },
         {
           "url": "https://onefootball.com/es/noticias/el-alaves-prepara-su-visita-al-sanchez-pizjuan-con-una-convocatoria-de-24-jugadores-43736877",
@@ -33,17 +278,17 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc7V_YVUbotBYfha_68K41aw1upwpPCTMAjr_9L7OXmaSHRurcmmcVkl41a1E"
         },
         {
-          "url": "https://www.elcorreo.com/alaves/alaves-obligado-cortar-peligrosa-mala-racha-pizjuan-20261106162554-nt.html",
-          "title": "El Alavés, obligado a cortar su peligrosa mala racha en el Pizjuán",
+          "url": "https://www.elcorreo.com/alaves/quique-continuidad-guevara-yusi-once-20261106200547-nt.html",
+          "title": "Quique da continuidad a Guevara y a Yusi en el once",
           "publisher": "El Correo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFYIFRPzN-x63ljwUTGAvQKAyPF1sEwCSLbUMOGCGs6cGyAdhKtzRo-Zpk96g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy_O0vnrZVII5w2m-w9FYtCqR26EqHMI5ADnaI71dUWrSc4qtzy8dhpCGc3g4"
         }
       ]
     },
     {
       "query": "sevilla vs alavés",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-06T19:10:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/confirmed-sevilla-alav-line-ups-190100249.html",
@@ -108,251 +353,6 @@
           "publisher": "Tennis365",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNPdMu8M7T5JnyNcXPKjKzQhfxyhy3jzx3eyK3Ya-ROmFWZMpkPpEBtZxFjAQ"
-        }
-      ]
-    },
-    {
-      "query": "everton vs coventry",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T19:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cr15jy8xy50jt",
-        "https://www.skysports.com/football/live-blog/13592843/everton-vs-coventry-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
-        "https://www.evertonfc.com/news/2026/november/06/everton-team-revealed-to-take-on-coventry/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVGM4wyrcjfg8IzfpVO8VuYMFfYldtH9srCK98B2qjD81C6TTZVshp4aR8cqA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cr15jy8xy50jt",
-          "title": "Premier League LIVE: Everton vs Coventry City - build-up, team news, score updates, text commentary & match stats",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVGM4wyrcjfg8IzfpVO8VuYMFfYldtH9srCK98B2qjD81C6TTZVshp4aR8cqA"
-        },
-        {
-          "url": "https://www.skysports.com/football/live-blog/13592843/everton-vs-coventry-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
-          "title": "Everton vs Coventry LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST-2okFw5tl2vUUUhPROehbJyZG1CMdb_lgRNaZ9RvYWpm6mZDLhZ6VXtDZB0"
-        },
-        {
-          "url": "https://www.evertonfc.com/news/2026/november/06/everton-team-revealed-to-take-on-coventry/",
-          "title": "Everton Team Revealed To Take On Coventry",
-          "publisher": "Everton FC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKmC-90n_m4dIjBCMUQ-lOptqI-PI8yUAQjCMmKCwZpGe8ZAy0RF2gVKE3WH8"
-        }
-      ]
-    },
-    {
-      "query": "carlos alcaraz",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T19:00:00Z",
-      "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/05/alcaraz-avanza-a-cuartos-del-masters-de-pars-tras-retiro-por-lesin-de-berrettini/",
-        "https://www.marca.com/tenis/masters-1000-paris/taylor-harry-fritz-carlos-alcaraz/2026/11/06/04_0413_20261106_60-directo.html",
-        "https://espndeportes.espn.com/tenis/nota/_/id/17478683/berrettini-sufrio-una-lesion-en-el-codo-alcaraz-avanzo-a-los-cuartos-de-final-del-masters-1000-de-paris-sin-jugar"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa8jI7tNQ8rpurdPzd8CJPoNysqd3R0NwoNLdxStRrtzRUNU80Lshmq8YPuE8",
-      "image_credit": "Chicago Tribune",
-      "news": [
-        {
-          "url": "https://www.chicagotribune.com/2026/11/05/alcaraz-avanza-a-cuartos-del-masters-de-pars-tras-retiro-por-lesin-de-berrettini/",
-          "title": "Alcaraz avanza a cuartos del Masters de París tras retiro por lesión de Berrettini",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa8jI7tNQ8rpurdPzd8CJPoNysqd3R0NwoNLdxStRrtzRUNU80Lshmq8YPuE8"
-        },
-        {
-          "url": "https://www.marca.com/tenis/masters-1000-paris/taylor-harry-fritz-carlos-alcaraz/2026/11/06/04_0413_20261106_60-directo.html",
-          "title": "Taylor Fritz - Carlos Alcaraz en directo | Última hora de los cuartos de final del Masters 1000 de París, en vivo",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRc9JikhEW08FBIaZIHuV8cEbQ9elflb3s0ZDlbKNaBN4OwB01AEcrWbPOdx9E"
-        },
-        {
-          "url": "https://espndeportes.espn.com/tenis/nota/_/id/17478683/berrettini-sufrio-una-lesion-en-el-codo-alcaraz-avanzo-a-los-cuartos-de-final-del-masters-1000-de-paris-sin-jugar",
-          "title": "Berrettini sufrió una lesión y Alcaraz avanzó a los cuartos de final del Masters 1000 de París sin jugar",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HTz_ywN4LvOQwVOgO3LrSL8z2WOxFzC2uVL5HfDxdmL-VHNwzcCleFzLiCw"
-        }
-      ]
-    },
-    {
-      "query": "venezia vs udinese",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T19:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c617kyj8y7wet",
-        "https://www.besoccer.com/new/when-the-basement-club-look-to-drag-you-down-1439382",
-        "https://www.racingpost.com/sport/football-tips/football-bet-of-the-day-for-friday-november-6-aoo800S3KO2t/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c617kyj8y7wet",
-          "title": "Venezia vs Udinese: Italian Serie A stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.besoccer.com/new/when-the-basement-club-look-to-drag-you-down-1439382",
-          "title": "When the basement club look to drag you down",
-          "publisher": "BeSoccer Livescore",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF-5lEwG7qSiqF6sQ1d5oFwjLWutolo_40NzQOq59UrzOzfyG4a6hg_5JmqBE"
-        },
-        {
-          "url": "https://www.racingpost.com/sport/football-tips/football-bet-of-the-day-for-friday-november-6-aoo800S3KO2t/",
-          "title": "Football Bet of the Day: James Milton has a 5-4 selection from Serie A",
-          "publisher": "Racing Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbJUqaazHbueV0GLxwT_KOdeQKZLKt02s0DNFJSK9tlsYZoU7OGIdcHY1AFUo"
-        }
-      ]
-    },
-    {
-      "query": "stephen miller",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-06T18:50:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
-        "https://www.washingtonpost.com/politics/2026/11/06/trump-names-stephen-miller-new-white-house-chief-staff/",
-        "https://www.nytimes.com/live/2026/11/06/us/wiles-trump"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTelIUZVM0iFl9LEHqlxIAPa-XWSKNXIyCJy3KrczKddWBidZm9uLhxs8QFYDA",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
-          "title": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTelIUZVM0iFl9LEHqlxIAPa-XWSKNXIyCJy3KrczKddWBidZm9uLhxs8QFYDA"
-        },
-        {
-          "url": "https://www.washingtonpost.com/politics/2026/11/06/trump-names-stephen-miller-new-white-house-chief-staff/",
-          "title": "Trump names Stephen Miller new White House chief of staff",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJHiCu5mAypuDHxAZhZlQzidPaLF4BhS4z4_oTXlwG18LxjUY32lcCYcG6_l4"
-        },
-        {
-          "url": "https://www.nytimes.com/live/2026/11/06/us/wiles-trump",
-          "title": "Live Updates: Stephen Miller to Replace Susie Wiles as Trump’s Chief of Staff",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUhxGtjK4fyS5Ht1GzXMY1TEh4dRKGZ0YepW4gUYOXDSAUxiu1y3DQbs6wvMs"
-        }
-      ]
-    },
-    {
-      "query": "sny",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T18:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7759719/2026/11/06/sny-layoffs-show-cancellations-website/",
-        "https://nypost.com/2026/11/06/sports/sny-cancels-top-shows-lays-off-significant-in-dark-day-for-mets-network/",
-        "https://metsmerizedonline.com/report-sny-cancels-two-programs-amidst-major-layoffs/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn_AwNcME--RmcCNdfqCzQ1aNHurfVzxHmFGiVhMJF9mVG7Mx1TAzRLpf_Qds",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7759719/2026/11/06/sny-layoffs-show-cancellations-website/",
-          "title": "SNY hit with major layoffs, show cancellations; website shuttered: Sources",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn_AwNcME--RmcCNdfqCzQ1aNHurfVzxHmFGiVhMJF9mVG7Mx1TAzRLpf_Qds"
-        },
-        {
-          "url": "https://nypost.com/2026/11/06/sports/sny-cancels-top-shows-lays-off-significant-in-dark-day-for-mets-network/",
-          "title": "SNY cancels top shows, lays off significant staff in dark day for Mets network",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaXH2roG4LjVoXyIyURM6pTlKRw2ZcaX-MEAmcqBPKsJAO38EgNx2fwXgSoqI"
-        },
-        {
-          "url": "https://metsmerizedonline.com/report-sny-cancels-two-programs-amidst-major-layoffs/",
-          "title": "Report: SNY Cancels Two Programs Amidst Major Layoffs",
-          "publisher": "Metsmerized",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzlqhG5NN3RUwIU6YzHxBo__kYnVzb-SXML4DOqkELSVPva5oui8uoBg5kCck"
-        }
-      ]
-    },
-    {
-      "query": "sebastian lelio",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T18:40:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/sebastian-lelio-dead-fantastic-woman-director-1237215711/",
-        "https://variety.com/2026/film/news/sebastian-lelio-dead-fantastic-woman-1236941486/",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/chilean-oscar-winning-director-sebastian-185758430.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9iq9LYjsFFstPIf8Fw25M84wgfcg5szng0e97cUGi9DlA0is3H6umgjQuLv0",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/sebastian-lelio-dead-fantastic-woman-director-1237215711/",
-          "title": "Sebastián Lelio Dead: Oscar-Winning 'A Fantastic Woman' Filmmaker Was 52",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9iq9LYjsFFstPIf8Fw25M84wgfcg5szng0e97cUGi9DlA0is3H6umgjQuLv0"
-        },
-        {
-          "url": "https://variety.com/2026/film/news/sebastian-lelio-dead-fantastic-woman-1236941486/",
-          "title": "Sebastián Lelio, Chilean Director of Oscar-Winning ‘A Fantastic Woman,’ Dies at 52",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAJFnIRhSvnYux3K-HY4-3xvv_bzdDjUvpzxZh6ORDobOr1n83gRa3Lje0AQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/chilean-oscar-winning-director-sebastian-185758430.html",
-          "title": "Chilean Oscar-winning director Sebastian Lelio dies",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8rV1jgl7Y_B8OJ8lM7WdQV5bowSdZCrbxRlABSpsN-Zxk2TPc0dWpVmZE1aQ"
-        }
-      ]
-    },
-    {
-      "query": "lawsuit",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-06T18:30:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/GMA/Culture/dolly-partons-estate-moves-dismiss-lawsuit-nephew/story?id=137897385",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/dolly-parton-estate-drama-takes-170045199.html",
-        "https://www.theguardian.com/music/2026/nov/05/dolly-parton-nephew-harassment"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1x_Vt-iqJOTBNb0Z5sMES4yA98XfXdsO4D6OHJef-gHe_ugmsgwP0kzDxhqw",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/GMA/Culture/dolly-partons-estate-moves-dismiss-lawsuit-nephew/story?id=137897385",
-          "title": "Dolly Parton's estate moves to dismiss lawsuit against nephew",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1x_Vt-iqJOTBNb0Z5sMES4yA98XfXdsO4D6OHJef-gHe_ugmsgwP0kzDxhqw"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/dolly-parton-estate-drama-takes-170045199.html",
-          "title": "Dolly Parton’s Estate Drama Takes Legal Turn After Her Real Cause of Death Was Exposed",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbDY9p8OT2k7lNUErn3vxw_Molt4S0Wbq5YGjN2ecak-rKMJK4PvYJ6CFX8DI"
-        },
-        {
-          "url": "https://www.theguardian.com/music/2026/nov/05/dolly-parton-nephew-harassment",
-          "title": "Dolly Parton’s manager drops complaint accusing nephew of harassment",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKrE7CXHs3-VJ1dUbIZdKuaryoLxxHfyrSeFI-Ym3iW-pQ5tVEnGHCMxqzKvs"
         }
       ]
     }
