@@ -8,6 +8,7 @@ const TOOL_NAMES=Object.freeze({
  'web.read_page':['Web','reading source page','source page read'],
  'google.search':['Google','searching','search results received'],
  'github.search':['GitHub','searching code','search results received'],
+ 'github.create_repository':['GitHub','requesting a repository','repository creation result received'],
  'github.read_file':['GitHub','reading a file','file read'],
  'github.read_repository':['GitHub','reading repository','repository read'],
  'github.read_repo':['GitHub','reading repository','repository read'],
@@ -30,7 +31,7 @@ const TOOL_NAMES=Object.freeze({
 });
 const clean=(v,n=160)=>typeof v==='string'?v.replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,n):'';
 const idOkay=v=>typeof v==='string'&&/^[A-Za-z0-9_-]{8,100}$/.test(v);
-const TECHNICAL_TOOLS=new Set(['github.commit','github.update_file','github.workflow_checks',
+const TECHNICAL_TOOLS=new Set(['github.create_repository','github.commit','github.update_file','github.workflow_checks',
  'github.test_result','github.merge_pull_request','github.pr_merge_receipt',
  'cloudflare.worker.stage','cloudflare.worker.deploy','cloudflare.worker.verify','brain.runner_receipt']);
 const toolTitle=(tool,phase,provider)=>{
@@ -62,7 +63,10 @@ export function advanceLiveBits(previous,event){
  }
  if(event.type==='turn_finished'){
   s.running=false;
-  s.live=event.failed===true?'Reply failed · review the chat status':'Reply ready · '+s.sequence+' observed iterations';
+  const pendingTool=s.entries.some(entry=>entry.state==='running'&&entry.tool);
+  s.live=event.failed===true?'Reply failed · review the chat status':
+   pendingTool?'GitHub · waiting for saved execution receipt · '+s.sequence+' observed iterations':
+   'Reply ready · '+s.sequence+' observed iterations';
   return s;
  }
  if(event.type==='job_step'){
