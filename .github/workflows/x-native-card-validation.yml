@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'twitter.html'
       - 'x-twitter-card.mjs'
       - 'x-twitter-card.css'
       - 'workers/media-star-following/**'
