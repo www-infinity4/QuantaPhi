@@ -16,6 +16,10 @@ test('passive companion rotation cannot replace the selected main card',()=>{
  assert.match(deck,/next\.addEventListener\('click',\(\)=>advance\(1\)\)/);
  assert.match(deck,/prev\.addEventListener\('click',\(\)=>advance\(-1\)\)/);
  assert.doesNotMatch(deck,/settleTopGesture/);
+ assert.match(deck,/quantaphi:select-source-card/);
+ const related=source('shop-phi-switchboard.mjs');
+ assert.match(related,/event\.preventDefault\(\)/);
+ assert.match(related,/new CustomEvent\('quantaphi:select-source-card'/);
 });
 
 test('verified Brain owner hides redundant inline provider sign-in without asserting provider grants',()=>{
