@@ -164,7 +164,7 @@ test('an abandoned provider sign-in can be cancelled and immediately retried',as
  assert.equal(ui.calls.filter(c=>c.path==='/start').length,2);
  cancel.listeners.click();
 });
-test('previously limited Cloudflare connection offers reauthorization instead of hiding the button',async t=>{
+test('already-connected Cloudflare hides login even when optional project scopes are missing',async t=>{
  const payload=partialGate();
  payload.providers.cloudflare.connected=true;
  payload.providers.cloudflare.missingActions=['projects.full'];
@@ -175,12 +175,14 @@ test('previously limited Cloudflare connection offers reauthorization instead of
  assert.deepEqual(summary.providers.cloudflare.missing,['projects.full']);
  const ui=mountedGate(t,payload);
  await new Promise(setImmediate);
- assert.equal(ui.get('bubblesSigninGate').hidden,false);
+ assert.equal(ui.get('bubblesSigninGate').hidden,true);
  assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
- assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
- assert.equal(ui.get('bubblesCloudflareSignIn').disabled,false);
- assert.equal(ui.get('bubblesCloudflareSignIn').textContent,'Review Cloudflare project access');
+ assert.equal(ui.get('bubblesCloudflareCard').hidden,true);
+ assert.equal(ui.get('bubblesCloudflareSignIn').hidden,true);
  assert.match(ui.get('bubblesCloudflareStatus').textContent,/^Signed in/);
+ assert.match(ui.get('bubblesConnectionSummary').textContent,/✅ Cloudflare signed in/);
+ await ui.get('bubblesCloudflareSignIn').listeners.click();
+ assert.equal(ui.calls.some(c=>c.path==='/start'),false);
 });
 test('full project permissions are still requested when registered by the server',()=>{
  const payload=partialGate();
@@ -233,11 +235,10 @@ test('a verified Cloudflare identity keeps full 386-scope upgrade separate from 
  const ui=mountedGate(t,payload);
  await new Promise(setImmediate);
  const button=ui.get('bubblesCloudflareSignIn');
- assert.equal(button.textContent,'Review Cloudflare project access');
+ assert.equal(button.hidden,true);
  assert.match(ui.get('bubblesCloudflareStatus').textContent,/^Signed in/);
  await button.listeners.click();
- assert.deepEqual(ui.calls.find(x=>x.path==='/start').body,
-  {provider:'cloudflare',actions:['owner.full']});
+ assert.equal(ui.calls.some(x=>x.path==='/start'),false);
 });
 
 test('registered full-scope Cloudflare client uses all 386 at first consent instead of incompatible two-scope request',async t=>{

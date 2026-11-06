@@ -428,3 +428,22 @@ test('recovered OAuth success cannot impersonate a later connection revision',as
   assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
   assert.equal(f.calls,2);
 });
+
+test('Cloudflare callback recovers after Android loses its tab marker only in the originating wallet session',async()=>{
+ const f=fixture();let exchanges=0;
+ f.service.adapters.cloudflare={
+  authorization:({state,challenge})=>'https://dash.cloudflare.com/oauth2/auth?'+new URLSearchParams({state,code_challenge:challenge}),
+  exchange:async()=>{exchanges++;return {subject:'cloudflare-subject',label:'Cloudflare owner',accessToken:'private-cloudflare-access',refreshToken:'private-cloudflare-refresh',expiresIn:3600,grantedActions:['account.read']};}
+ };
+ const input={userId:'alice',sessionId:'session-a',provider:'cloudflare',actions:['account.read']};
+ const state=new URL((await f.service.start(input)).authorizationUrl).searchParams.get('state');
+ assert.deepEqual(await f.service.resumeCloudflareHandoff(input),{status:'missing'});
+ await f.service.handoff({userId:input.userId,provider:'cloudflare',state,code:'secret-cloudflare-code'});
+ assert.deepEqual(await f.service.resumeCloudflareHandoff({...input,userId:'different-owner'}),{status:'missing'});
+ assert.deepEqual(await f.service.resumeCloudflareHandoff({...input,sessionId:'another-wallet-session'}),{status:'missing'});
+ const results=await Promise.all([f.service.resumeCloudflareHandoff(input),f.service.resumeCloudflareHandoff(input)]);
+ assert.ok(results.some(r=>r.status==='connected'&&r.account.provider==='cloudflare'));
+ assert.equal(exchanges,1);
+ assert.ok(!JSON.stringify(results).includes('secret-cloudflare-code'));
+ assert.ok(!JSON.stringify([...f.db.rows]).includes('private-cloudflare-access'));
+});

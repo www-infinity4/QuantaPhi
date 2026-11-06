@@ -109,7 +109,11 @@ test('account page starts consent with the selected provider permissions',async 
  fullCloudflareConfigured=true;
  await panel.refresh();
  const cloudflareReview=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
- assert.equal(cloudflareReview.textContent,'Review Cloudflare project access');
+ assert.equal(cloudflareReview,undefined,'Signed-in Cloudflare must never show another login button');
+ const manage=descendants(container).find(node=>node.textContent==='Review project permissions');
+ assert.ok(manage,'Optional access review stays in account settings');
+ assert.ok(descendants(container).some(node=>node.tag==='details'&&node.childNodes.includes(manage)),
+  'Review action must stay collapsed in a settings disclosure');
  assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare · Signed in as owner@example.test')));
  // An expired provider grant must not claim sign-in, even if the historical
  // row still has a connected status until the service refreshes it.

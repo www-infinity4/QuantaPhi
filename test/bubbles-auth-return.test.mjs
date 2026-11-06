@@ -52,14 +52,13 @@ test('Cloudflare return stores only a bounded UI outcome and not an OAuth secret
  assert.equal(destination,'');
  assert.equal(JSON.parse(data.get('bubbles:oauth-return-note:v1')).result,'declined');
 });
-test('received callback with lost tab session stays visible with an explanation',()=>{
- let message='Authorization received securely.';
+test('Cloudflare return in another Android tab opens secure recovery without claiming a signed-in account',()=>{
+ let destination='';
  const host={location:{search:'?result=received',pathname:'/api/bubbles/connections/cloudflare/callback',
-  replace:()=>assert.fail('No automatic bounce without a matching tab session')},
-  sessionStorage:{getItem:()=>null,setItem(){}},
-  document:{querySelector:()=>({set textContent(value){message=value;}})}};
- assert.equal(resumeAuthReturn(host),false);
- assert.match(message,/no longer has the matching Bubbles sign-in session/);
+  replace:path=>destination=path},
+  sessionStorage:{getItem:()=>null,setItem(){}}};
+ assert.equal(resumeAuthReturn(host),true);
+ assert.equal(destination,'/bubbles-accounts.html?return=cloudflare');
 });
 
 test('Google returns to Account Connections even when Android lost the original tab',()=>{
