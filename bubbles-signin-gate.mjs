@@ -80,7 +80,8 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    returnIssue=summary.providers[id].approved?
     (id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in verified and required permissions approved.':
     (id==='cloudflare'?'Cloudflare':'GitHub')+' account connected, but not all requested permissions were approved. Review the remaining permissions.';
-   if(summary?.ready&&chat)chat.scrollIntoView({behavior:'smooth',block:'start'});
+
+    // OAuth return must not move the visitor away from the active Quick Card.
   }else{
    returnIssue=(id==='cloudflare'?'Cloudflare':'GitHub')+' returned, but Bubbles could not verify a connected account. Check that you are in the original wallet-authorized Chrome tab.';
   }
@@ -128,7 +129,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   // Account sign-in and project authorization are separate. Only the server can
   // approve a tool's permissions; hiding this form never authorizes a tool.
   gate.dataset.ready=String(summary.ready);
-  gate.hidden=summary.ready||summary.walletVerified;
+  gate.hidden=summary.ready||summary.walletVerified||(prefix==='chat'&&gate.dataset.ownerVerified==='true');
   if(walletIdentity){
    walletIdentity.hidden=!summary.walletVerified;
    walletIdentity.textContent=summary.walletVerified?'Signed in to Bubbles with your Unified Wallet.':'';
@@ -160,7 +161,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     lastChecked=Date.now();
     return render({...data,walletVerified:session?.walletVerified===true});
    } catch(error) {
-    latest=null;gate.hidden=false;gate.dataset.ready='false';
+    latest=null;gate.hidden=prefix==='chat'&&gate.dataset.ownerVerified==='true';gate.dataset.ready='false';
     if(walletIdentity){walletIdentity.hidden=true;walletIdentity.textContent='';}
     const code=String(error?.message||'');
     if(code==='verified_wallet_required'){
