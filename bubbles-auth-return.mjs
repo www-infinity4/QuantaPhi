@@ -31,6 +31,18 @@ export function resumeAuthReturn(host=window) {
    host.location.replace(returningToChat?'/bubbles.html':'/bubbles-accounts.html?return=google');
    return true;
   }
+  if(result==='received'&&callbackProvider==='cloudflare'){
+   // A separate Android tab can finish the sealed callback only after
+   // the original wallet and session are verified by the server.
+   const validSaved=saved?.provider==='cloudflare'&&saved?.flow==='same-window'&&
+    /^[A-Za-z0-9_-]{43}$/.test(saved.state)&&Number.isFinite(saved.expiresAt)&&
+    saved.expiresAt>Date.now()&&saved.expiresAt<=Date.now()+300000;
+   const destination=validSaved&&saved.returnPath==='/bubbles.html'?'/bubbles.html':
+    validSaved&&saved.returnPath==='/bubbles-accounts.html'?'/bubbles-accounts.html':
+    '/bubbles-accounts.html?return=cloudflare';
+   host.location.replace(destination);
+   return true;
+  }
   const pending=saved;
   if(!pending||!['github','cloudflare','google'].includes(pending.provider)||
      !/^[A-Za-z0-9_-]{43}$/.test(pending.state)||!Number.isFinite(pending.expiresAt)||

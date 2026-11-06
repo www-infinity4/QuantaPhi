@@ -89,7 +89,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    clearReturnNote();
    returnIssue=summary.providers[id].approved?
     (id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in verified and required permissions approved.':
-    (id==='cloudflare'?'Cloudflare':'GitHub')+' account connected, but not all requested permissions were approved. Review the remaining permissions.';
+    (id==='cloudflare'?'Cloudflare':'GitHub')+' account signed in. Optional project permissions are managed separately.';
 
     // OAuth return must not move the visitor away from the active Quick Card.
   }else{
@@ -125,7 +125,9 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    const value=summary.providers[id];
    cards[id].dataset.status=value.connected?'connected':value.configured?'pending':'unavailable';
    // Keep project access review separate from an already verified identity.
-   cards[id].hidden=value.connected&&value.approved;
+   // Connected means signed in, regardless of optional project grants.
+   cards[id].hidden=value.connected;
+   actions[id].hidden=value.connected;
    actions[id].textContent=value.connected&&!value.approved&&id==='cloudflare'?'Review Cloudflare project access':
     'Sign in with '+(id==='github'?'GitHub':'Cloudflare');
    labels[id].textContent=value.connected?
@@ -137,7 +139,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   // Account sign-in and project authorization are separate. Only the server can
   // approve a tool's permissions; hiding this form never authorizes a tool.
   gate.dataset.ready=String(summary.ready);
-  gate.hidden=summary.ready||summary.walletVerified||(prefix==='chat'&&gate.dataset.ownerVerified==='true');
+  gate.hidden=summary.ready||summary.signedIn||summary.walletVerified||(prefix==='chat'&&gate.dataset.ownerVerified==='true');
   if(walletIdentity){
    walletIdentity.hidden=!summary.walletVerified;
    walletIdentity.textContent=summary.walletVerified?'Signed in to Bubbles with your Unified Wallet.':'';
@@ -146,7 +148,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    clearReturnNote();returnIssue='';
    setStatus('You’re signed in with the required permissions.');
   }else if(returnIssue)setStatus(returnIssue);
-  else if(summary.signedIn)setStatus('Your accounts are signed in. Review Cloudflare access to use project tools.');
+  else if(summary.signedIn)setStatus('Your accounts are signed in. Optional project permissions are managed in Account Connections.');
   else if(summary.providers.github.connected)setStatus('Continue with Cloudflare.');
   else setStatus('Sign in to connect your accounts.');
   updateButtons();
@@ -211,7 +213,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     setStatus((id==='cloudflare'?'Cloudflare':'GitHub')+' sign-in is not configured on the connection service. No authorization was started.');
     return;
    }
-   if(provider.connected&&provider.approved)return;
+   if(provider.connected)return;
    // A registered owner.full permission means the OAuth client currently
    // requires the full scope inventory at consent time. Do not request an
    // incompatible two-scope subset and bounce back to the login button.

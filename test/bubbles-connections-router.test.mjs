@@ -110,6 +110,21 @@ test('Google return recovery accepts only the wallet identity verified by the se
   });
   assert.deepEqual(await response.json(),{ok:true,status:'missing'});
 });
+test('Cloudflare resume route uses only the server-verified wallet and session',async()=>{
+ const path='/handoff/cloudflare/resume';
+ const denied=await handleConnections(request(path,{method:'POST',authorization:'',body:{}}),env,()=>assert.fail());
+ assert.equal(denied.status,401);
+ const response=await handleConnections(request(path,{method:'POST',body:{userId:'forged',sessionId:'forged'}}),env,id=>{
+  assert.equal(id,'verified-alice');
+  return {resumeCloudflareHandoff:async identity=>{
+   assert.equal(identity.userId,'verified-alice');
+   assert.match(identity.sessionId,/^[A-Za-z0-9_-]{43}$/);
+   assert.deepEqual(Object.keys(identity).sort(),['sessionId','userId']);
+   return {status:'missing'};
+  }};
+ });
+ assert.deepEqual(await response.json(),{ok:true,status:'missing'});
+});
 test('callback rejects unregistered states without revealing provider code',async()=>{
   const state='b'.repeat(43);
   const configured={CONNECTIONS:{idFromName:name=>name,get:()=>({lookupOAuthState:async()=>{throw Error('state_invalid_or_used');}})}};
@@ -124,14 +139,14 @@ test('unexpected provider error text is redacted and no token appears in respons
 });
 
 test('Android finish and status return safe RPC failures as errors, never ok:true',async()=>{
-  for(const path of ['/handoff/finish','/handoff/status','/handoff/google/resume']){
+  for(const path of ['/handoff/finish','/handoff/status','/handoff/google/resume','/handoff/cloudflare/resume']){
     for(const failure of ['cloudflare_exchange_401_invalid_client','cloudflare_exchange_400_invalid_grant',
       'cloudflare_identity_403','google_exchange_400','google_identity_401','provider_token_invalid','vault_key_unavailable']){
       const fail=()=>connectionResult(async()=>{throw Error(failure);});
       // A real RPC result is a plain value, without Error custom properties.
       const rpc=async()=>JSON.parse(JSON.stringify(await fail()));
       const response=await handleConnections(request(path,{method:'POST',body:{provider:'cloudflare',state:'a'.repeat(43)}}),
-        env,()=>({finishHandoff:rpc,handoffStatus:rpc,resumeGoogleHandoff:rpc}));
+        env,()=>({finishHandoff:rpc,handoffStatus:rpc,resumeGoogleHandoff:rpc,resumeCloudflareHandoff:rpc}));
       assert.equal(response.status,failure==='vault_key_unavailable'?503:400);
       assert.deepEqual(await response.json(),{ok:false,error:failure});
     }
