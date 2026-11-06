@@ -91,7 +91,7 @@ test('six responsive positions preserve original viewer and scripts, with real p
  assert.match(deck,/quantaphi:switchboard-change/);
  assert.match(shop,/quantaphi:switchboard-change/);
  assert.match(engine,/stage\.parentNode\.insertBefore\(grid,stage\)/);
- assert.match(engine,/grid\.append\(before,stage,after\)/);
+ assert.match(engine,/grid\.append\(stage,heading,before,after\)/);
  assert.match(engine,/INDEPENDENT SOURCE CARD/);
  assert.match(engine,/SPONSORED/);
  assert.match(css,/@media\(max-width:480px\)/);
