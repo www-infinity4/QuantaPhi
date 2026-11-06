@@ -7,6 +7,7 @@ import brainTools from '../bubbles-brain-actions.js';
 import * as workEvidenceModule from '../bubbles-work-evidence.mjs';
 import {chooseOverflow} from '../bubbles-dispatch-catalog.mjs';
 const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+const tracking=ui.slice(ui.indexOf('const ACTIVE_WORK_REF='),ui.indexOf('async function pollBrainProgress(){'));
 const submission=ui.slice(ui.indexOf('async function submitRepositoryWork('),ui.indexOf("\nworkButton.addEventListener('click'",ui.indexOf('async function submitRepositoryWork(')))
  .replace("await import('/bubbles-work-evidence.mjs?v=20261024-image-handoff2')",'await Promise.resolve(workEvidenceModule)');
 const overflow=ui.slice(ui.indexOf('async function maybeDelegateDirectOverflow('),ui.indexOf('\nfunction watchDirectGithubReceipt(',ui.indexOf('async function maybeDelegateDirectOverflow(')))
@@ -14,7 +15,7 @@ const overflow=ui.slice(ui.indexOf('async function maybeDelegateDirectOverflow('
 function harness({denied=false}={}){
  const posts=[];
  const ctx={workEvidenceModule,overflowChooser:chooseOverflow,brainTools,crypto:webcrypto,TextEncoder,JSON,Date,
-  activeCardEvidence:null,workButton:{disabled:false},workStatus:{},workText:{value:''},config:{role:'owner'},TICKETS:'https://brain.example',location:{origin:'https://quantaphi.org',pathname:'/bubbles.html'},
+  activeThread:'fixture-thread',activeCardEvidence:null,workButton:{disabled:false},workStatus:{},workText:{value:''},config:{role:'owner'},TICKETS:'https://brain.example',location:{origin:'https://quantaphi.org',pathname:'/bubbles.html'},
   CustomEvent:class {constructor(name,args){this.detail=args.detail;}},window:{dispatchEvent(){}},pollBrainProgress:async()=>{},recordBrainNotice(){},humanReplies:async()=>({workReply:()=> 'Request saved.'}),
   // The harness evaluates a bounded watcher slice; recovery helpers live outside it.
   rememberPendingGithubWork:(requestId,thread)=>{ctx.savedPending={requestId,thread}},
@@ -22,7 +23,7 @@ function harness({denied=false}={}){
   verifiedOwnerHeaders:async()=>{if(denied)throw Error('owner_authorization_required');return {Authorization:'Bearer fixture-only'};},
   bubblesFetch:async(url,args)=>{posts.push({url,headers:args.headers,body:JSON.parse(args.body)});return {ok:true,json:async()=>({ok:true,ticket:{id:'synthetic-ticket',status:'ready'},execution:{status:'queued_for_runner'}})};}
  };
- vm.createContext(ctx);vm.runInContext(submission+'\n'+overflow,ctx);
+ vm.createContext(ctx);vm.runInContext(tracking+'\n'+submission+'\n'+overflow,ctx);
  return {ctx,posts};
 }
 test('actual UI ticket boundary retains both images for writer and independent reviewer',async()=>{
@@ -68,8 +69,8 @@ test('evidence is bounded, drops original bytes and never mutates base jobs',()=
 });
 test('both immediate and delayed receipt paths capture the same observation snapshot',()=>{
  assert.match(ui,/directGithubOperation\(args,\{ownerRequest:request,imageEvidence:imageWorkEvidence\}\)/);
- assert.match(ui,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation.request\|\|'',imageEvidence\)/);
- assert.match(ui,/maybeDelegateDirectOverflow\(result,operation,ownerRequest,imageEvidence\)/);
+ assert.match(ui,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation.request\|\|'',imageEvidence,receiptThread\)/);
+ assert.match(ui,/maybeDelegateDirectOverflow\(result,operation,ownerRequest,imageEvidence,receiptThread\)/);
  assert.match(ui,/maybeDelegateDirectOverflow\(result,args,request,imageWorkEvidence\)/);
  assert.match(ui,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
 });
@@ -77,18 +78,20 @@ test('both immediate and delayed receipt paths capture the same observation snap
 test('actual delayed receipt preserves observations and saves reply to its original conversation',async()=>{
  const {ctx,posts}=harness();
  let reads=0,resolveDone;const done=new Promise(resolve=>resolveDone=resolve);
- Object.assign(ctx,{activeThread:'original-thread',keepChat:true,ownerReady:true,pendingGithubReceipts:new Set(),setTimeout:fn=>fn(),
+ Object.assign(ctx,{activeThread:'new-thread',keepChat:true,ownerReady:true,pendingGithubReceipts:new Set(),setTimeout:fn=>fn(),
   githubReceipt:async()=>{reads++;if(reads===1)return {status:'working'};return {ok:false,status:'blocked',error:'direct_engineer_model_unavailable',requestId:'fixture-delayed-receipt'};},
   readThread:()=>[],THREAD_PREFIX:'thread:',save:(key,items)=>{ctx.saved={key,items};resolveDone();},syncCloudFolder:async()=>{},messages:[],display:()=>{throw Error('Must not display an old result in the new thread');},persistChat(){}});
  const watcher=ui.slice(ui.indexOf('function watchDirectGithubReceipt('),ui.indexOf('\nasync function directGithubOperation(',ui.indexOf('function watchDirectGithubReceipt(')));
+ ctx.rememberIterationWork('new-thread','IW-20261105-00000002');
  vm.runInContext(watcher,ctx);
- ctx.watchDirectGithubReceipt('fixture-delayed-receipt',{action:'assist',mode:'write',repository:'www-infinity4/QuantaPhi'},'Fix Bubbles','Image 1: original issue; Image 2: original issue');
- ctx.activeThread='new-thread';
+ ctx.watchDirectGithubReceipt('fixture-delayed-receipt',{action:'assist',mode:'write',repository:'www-infinity4/QuantaPhi'},'Fix Bubbles','Image 1: original issue; Image 2: original issue','original-thread');
  await done;
  assert.equal(reads,2);assert.equal(posts.length,1);
  assert.match(posts[0].body.context.image_observations.observations,/Image 2/);
  assert.equal(ctx.saved.key,'thread:original-thread');assert.equal(ctx.saved.items[0].sessionId,'original-thread');
  assert.equal(ctx.savedPending.thread,'original-thread');
+ assert.equal(vm.runInContext("iterationWorkByThread.get('original-thread').ticketId",ctx),'synthetic-ticket');
+ assert.equal(vm.runInContext("iterationWorkByThread.get('new-thread').ticketId",ctx),'IW-20261105-00000002');
  assert.equal(ctx.clearedPending,'fixture-delayed-receipt');
  assert.equal(ctx.messages.length,0);
 });

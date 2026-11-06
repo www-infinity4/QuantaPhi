@@ -310,7 +310,6 @@ export class BrainClock extends DurableObject{
      // later fail the D1 receipt guard and churn the ticket without progress.
      if(sourceReview&&pinkReviewHasActiveRepair(context,sourceReview)){noteRunnerSkip(claimBlockedBy,'source_repair_active');continue;}
      const effectiveDependencies=sourceReview?[sourceReview.primaryId]:(job.dependencies||[]);
-     if(engine&&effectiveDependencies.some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified','merged_verified'].includes(j.status)))){noteRunnerSkip(claimBlockedBy,'dependency_pending');noteRunnerDependencyStatuses(dependencyStates,jobs,effectiveDependencies);continue;}
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='writer:'+ticket.id+':'+job.id+':'+revision;
      const previous=await this.ctx.storage.get(key);
@@ -328,7 +327,6 @@ export class BrainClock extends DurableObject{
          repository:job.repository,query:ticket.request+' '+job.instructions,limit:6});
      }catch{/* A missing memory schema must not block existing jobs. */}
      lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,...(engine?{experientialMemory}:{}),...(sourceReview?{sourceReview}:{})};
-     if(requested?.ticketId===ticket.id&&requested?.jobId===job.id)await this.ctx.storage.delete('requested-next-job');
      await this.ctx.storage.put(key,lease);
      await this.ctx.storage.put('repository-lease:'+job.repository,lease);
      const claimedContext=JSON.parse(ticket.context_json);
@@ -336,6 +334,7 @@ export class BrainClock extends DurableObject{
      claimedJob.status='working';claimedJob.progress={...claimedJob.progress,attemptedAt:new Date().toISOString(),claimedAt:new Date().toISOString(),summary:'The authenticated runner claimed this order and is inspecting the repository.',blocker:'',next:'Implementation and test receipts will follow automatically.',runUrl};
      const claimed=await this.env.WORK_DB.prepare("UPDATE work_tickets SET context_json=?,status='working',updated_at=? WHERE id=? AND context_json=?").bind(JSON.stringify(claimedContext),Date.now(),ticket.id,ticket.context_json).run();
      if(claimed?.meta?.changes===0){noteRunnerSkip(claimBlockedBy,'d1_update_conflict');await this.ctx.storage.put(key,{...lease,leaseUntil:0,status:'superseded'});await this.ctx.storage.put('repository-lease:'+job.repository,{...lease,leaseUntil:0});continue;}
+     if(requested?.ticketId===ticket.id&&requested?.jobId===job.id)await this.ctx.storage.delete('requested-next-job');
      await this.emit(sourceReview?'pink-panther':'greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+(sourceReview?' for read-only source verification. No new code write is authorized.':'. It will inspect its credential, target repository and acceptance adapters before any write.'),runUrl);
      return Response.json({ok:true,lease});
     }
@@ -624,6 +623,10 @@ export class BrainClock extends DurableObject{
   if((await this.ctx.storage.get('alarm-global-next-at')||0)>now)return {state:'global_dispatch_cooldown'};
   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
   const requested=await this.ctx.storage.get('requested-next-job');
+  if(requested?.ticketId&&!(rows.results||[]).some(t=>t.id===requested.ticketId)){
+   const target=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE id=? AND owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions'").bind(requested.ticketId,this.env.WRITER_OWNER_HASH).first();
+   if(target)rows.results=[target,...(rows.results||[])];
+  }
   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json||'{}')}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
   sortCandidates(candidates,requested);
   const admission=filterActiveTickets(candidates,{requested,now});
@@ -903,27 +906,35 @@ export class BrainClock extends DurableObject{
    const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json)}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
    sortCandidates(candidates,requested);
    const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
-   let blockedReason='';
+   let blockedReason='',allowPrerequisites=false;
    if(body.ticketId){
     blockedReason=admission.deferred.find(x=>x.ticketId===body.ticketId&&(!body.jobId||x.jobId===body.jobId))?.reason||'';
    }
    for(const {ticket:t,jobs,job} of admission.allowed){
     if(body.ticketId&&body.ticketId!==t.id)continue;
-    if(body.jobId&&body.jobId!==job.id)continue;
+    const prerequisite=Boolean(body.jobId&&job.id!==body.jobId);
+    if(prerequisite&&(!allowPrerequisites||!admission.selectedDependencies.has(job.id)))continue;
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='writer:'+t.id+':'+job.id+':'+revision,retryKey='alarm-retry:'+t.id+':'+job.id+':'+revision;
      const [prior,active,retry]=await Promise.all([this.ctx.storage.get(key),this.ctx.storage.get('repository-lease:'+job.repository),this.ctx.storage.get(retryKey)]);
      const deps=(job.dependencies||[]).map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
-     const decision=checkOwnerRunnerRequest(job,{now:Date.now(),prior,lease:active,retry,deps});
+     const options={now:Date.now(),prior,lease:active,retry};
+     const decision=checkOwnerRunnerRequest(job,{...options,deps});
      if(!decision.eligible){
-      if(body.ticketId){blockedReason=decision.reason;if(body.jobId)break;}
+      if(body.ticketId&&!prerequisite)blockedReason=decision.reason;
+      // A specifically requested stage may need an older prerequisite. Only
+      // the admitted same-ticket/repository closure can run in its place.
+      if(body.jobId&&!prerequisite&&decision.reason==='dependency_pending')
+       allowPrerequisites=checkOwnerRunnerRequest(job,options).eligible;
       continue;
      }
-     await this.ctx.storage.put('requested-next-job',{ticketId:t.id,jobId:job.id});
+     // Keep the owner's selected stage admitted while its prerequisites run.
+     await this.ctx.storage.put('requested-next-job',{ticketId:t.id,jobId:body.jobId||job.id});
      await this.emit('purple-pearl','greenbeans','owner requested next job','Owner queued '+t.id+'/'+job.id+' for the next authenticated runner cycle. No completion claimed.');
      const dispatch=await this.dispatchRunner(),receipt=runnerDispatchReceipt(dispatch);
      await recordRedBrain(this.ctx.storage,{kind:'runner_dispatch',state:receipt.status==='queued_for_runner'?'dispatched_unverified':receipt.status,ticketId:t.id,jobId:job.id,reason:receipt.reason});
-     return Response.json({ok:true,status:receipt.status,reason:receipt.reason,ticketId:t.id,jobId:job.id,dispatch});
+     return Response.json({ok:true,status:receipt.status,reason:receipt.reason,ticketId:t.id,jobId:job.id,
+      ...(prerequisite?{requestedJobId:body.jobId}:{}),dispatch});
    }
    if(body.ticketId&&blockedReason)return Response.json({ok:true,status:'job_not_dispatchable',reason:blockedReason,ticketId:body.ticketId,jobId:body.jobId||''});
    return Response.json({ok:true,status:'no_pending_jobs'});

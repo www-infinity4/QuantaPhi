@@ -55,3 +55,27 @@ https://github.com/www-infinity4/QuantaPhi/issues/1192
 ### Same-session independent source review and CI correction
 
 A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after 92 focused tests. Credit activation remains held on the two reproducible recovery/provenance findings recorded in docs/BUBBLES-ITERATION-CREDIT.md. The ordinary-routing CI failures were stale literal-branch assertions plus a voice harness that counted the new non-executing intent proposal as a mutation; updated those fixtures while preserving owner/embedded/explicit-team assertions. No credit enablement or existing job permission was changed. Exact-head checks are rerun before any source promotion.
+
+## 2026-11-05 · continuation and chat receipt recovery
+
+- State `source_tested`, 🟡. Branch `fix/bubbles-brain-continuation-receipts-1192` from main `d5a1510d0dd338f97638f838f8c45e9adb608609`. One additional session; overall progress and remaining sessions unknown. No live lease was claimed for this patch, so lease ID, fence and expiry are null.
+- [Robot review #1697](https://github.com/www-infinity4/QuantaPhi/pull/1697) is merged evidence of a Brain-authored source job. The blocked work on this issue still needs same-chat signed execution acceptance.
+- Dispatch and claim now require the same integrated prerequisite state. A selected job can dispatch an eligible prerequisite within its existing ticket and repository; committed-only, cross-repository and security-held prerequisites remain gated.
+- Repository discovery now polls the existing authenticated GitHub receipt reader. Delayed source results and delegated work preserve the originating conversation if the owner changes chats during submission.
+- Local focused tests: 141 passed. Next action: run exact-head CI and obtain independent review of the task branch. Then verify a binding-preserving Brain release and one signed owner job from chat to execution receipt.
+
+## 2026-11-05 · interrupted session resumed
+
+- Pink verification specialist `pink_review` reviewed #1699 at `0dc8eb8797f99683f9ea3bbe399d510aaba956ba`. Reproduced lost selection after a prerequisite claim and a thread switch during the first context lookup. Existing authorization and held prerequisites still gate claims.
+- The root selection now survives prerequisite claims, waits for integrated source, and survives a conflicting D1 update. The alarm explicitly loads the same owner-partitioned ticket outside the scan window. The regression claims two prerequisite stages, then the original aged job ahead of unrelated work.
+- An independent follow-up reproduced a second scan limit with more than 500 stages. The selected ticket's own rows now stay within the bounded admission scan, while the same-repository dependency cap and authorization checks still apply.
+- The chat waits for the pending turn before switching, resetting or reloading. Delayed ticket references and markers are scoped to their own conversation. Global spoken work notices still follow preferences, and only matched notices can enter a transcript.
+- [Signed Bubbles chat run 42067603007](https://github.com/www-infinity4/Moltnook/actions/runs/42067603007) confirms current five-day approval and real GitHub reads. It passed 5 of 10 probes. Some findings stopped after source readback, so this does not prove the completed same-chat engineering flow.
+- State `source_tested`, 🟡. One additional documented session. Overall completion and remaining sessions unknown. No coordinator lease or fence was claimed. Live Brain acceptance and wallet settlement remain outstanding. Next action is to verify the updated #1699 head in CI and independent review before guarded release.
+
+## November 5, 2026 CT · reconcile the existing Brain PR
+
+- Brought `main` at `3c5990f940ca067c9e622f43c97ea57ac032028b` into [#1699](https://github.com/www-infinity4/QuantaPhi/pull/1699). Preserved the existing signed work entry point from #1714 and the verified owner indicator and carousel fixes from #1715. Aligned all four Bubbles launchers and their version checks on `20261105-brain-receipts3`.
+- The eight conflicts were revision strings. Syntax and all 207 focused tests passed on the merged source, including same-conversation receipts, owner isolation, and prerequisite claim handling. The Brain worker and sign-in boundaries retain their existing source changes.
+- Source tested, 🟡. Five documented source sessions in this file. The merge reconciliation is locally verified. Full issue completion and remaining sessions are unknown until the signed execution path is exercised. No coordinator lease was claimed for this branch update.
+- Next action is to check GitHub CI and independent review on the reconciled #1699 head, then stage the Brain release and verify a signed claim and execution receipt in the original conversation.

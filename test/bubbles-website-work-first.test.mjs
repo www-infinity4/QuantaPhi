@@ -25,10 +25,10 @@ test('activity bubbles and per-message actions stay behind readable disclosures'
 
 test('Build status reflects only the current chat authenticated ticket and not other threads',()=>{
  const ui=source('bubbles-ai.js'),activity=source('bubbles-iteration-bubbles.mjs');
- assert.match(ui,/let activeIterationTicketId='';/);
- assert.match(ui,/activeIterationThreadId===activeThread/);
- assert.match(ui,/result\.tickets\.find\(ticket=>ticket\?\.id===activeIterationTicketId/);
- assert.match(ui,/activeIterationTicketId=result\.ticket\.id/);
+ assert.match(ui,/const receiptThread=activeThread;\s*const work=iterationWorkByThread\.get\(receiptThread\)/);
+ assert.match(ui,/receiptThread===activeThread&&iterationWorkByThread\.get\(receiptThread\)===work/);
+ assert.match(ui,/result\.tickets\.find\(ticket=>ticket\?\.id===work\.ticketId/);
+ assert.match(ui,/rememberIterationWork\(receiptThread,result\.ticket\.id\)/);
  assert.doesNotMatch(ui,/result\.tickets\.find\(ticket=>\['blocked','queued'/);
  assert.doesNotMatch(activity,/window\.addEventListener\('quantaphi:robot-directions'/);
  assert.match(activity,/event\.status==='blocked'/);
@@ -51,7 +51,7 @@ test('personal context Bubble Bits display server-confirmed credits without brow
 });
 
 test('all Bubbles website entrypoints request the repaired scripts instead of stale cached versions',()=>{
- const revision='20261105-owner-verified1';
+ const revision='20261105-brain-receipts3';
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   assert.match(source(path),new RegExp('/bubbles-ai\\.js\\?v='+revision));
  }

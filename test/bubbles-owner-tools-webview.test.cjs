@@ -15,7 +15,7 @@ test('atomic ticket submission works without AbortSignal.timeout and has no dupl
  const ctx={activeCardEvidence:null,repositorySelectionExplicit:true,repositorySelection:new Set(['www-infinity4/QuantaPhi']),repositoryPicker:{dataset:{}},Response,AbortSignal:{},AbortController,setTimeout,clearTimeout,crypto:webcrypto,TextEncoder,brainTools,
   verifiedOwnerHeaders:async()=>({Authorization:'Bearer test-fixture-only'}),
   BRAIN:'https://brain.test',TICKETS:'https://brain.test',workButton:{disabled:false},workStatus:{},workText:{},location:{origin:'https://quantaphi.org',pathname:'/bubbles.html'},config:{role:'assistant'},
-  window:{dispatchEvent:()=>{}},CustomEvent:class{},pollBrainProgress:async()=>{},
+  window:{dispatchEvent:()=>{}},CustomEvent:class{},pollBrainProgress:async()=>{},rememberIterationWork:()=>{},
   fetch:async(url,options)=>{calls.push({url,options});assert.ok(options.signal instanceof AbortSignal);
    const body=url.endsWith('/create')?{ok:true,ticket,execution:{status:'queued_for_runner'}}:url.endsWith('/update')?{ok:true}:{ok:true,status:'queued_for_runner'};
    return Response.json(body);}};

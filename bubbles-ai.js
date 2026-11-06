@@ -1227,7 +1227,7 @@ async function suggestRepositoryTargets(request,preview=false){
        let read=await directGithubOperation(operation,{quiet:true});
        if(['read_file','read_repository'].includes(operation.action)&&read.requestId){
         for(let i=0;i<8&&['working','unconfirmed'].includes(read.status);i++){
-         await new Promise(resolve=>setTimeout(resolve,1000));read=await readGithubReceipt(read.requestId);
+         await new Promise(resolve=>setTimeout(resolve,1000));read=await githubReceipt(read.requestId);
         }
        }
        return read;
@@ -1280,7 +1280,7 @@ async function suggestRepositoryTargets(request,preview=false){
      let read=await directGithubOperation(operation,{quiet:true});
      if(['read_file','read_repository'].includes(operation.action)&&read.requestId){
       for(let i=0;i<8&&['working','unconfirmed'].includes(read.status);i++){
-       await new Promise(resolve=>setTimeout(resolve,1000));read=await readGithubReceipt(read.requestId);
+       await new Promise(resolve=>setTimeout(resolve,1000));read=await githubReceipt(read.requestId);
       }
      }
      return read;
@@ -1905,7 +1905,7 @@ async function refreshConversationFolders(){
  renderConversationFolders();
 }
 async function openConversation(id){
- if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking){
+ if(busy||turnPending||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking){
   chatsMessage.textContent='Finish the current reply before changing conversations.';
   return false;
  }
@@ -1946,7 +1946,7 @@ async function openConversation(id){
  }
  // Cloud History may take seconds. A reply, new typing or photo added while
  // waiting invalidates the earlier switch decision; do not clear new work.
- if(activeThread!==previousThread||busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking||
+ if(activeThread!==previousThread||busy||turnPending||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking||
     input.value!==previousDraft||pendingImage!==previousPhoto||
     pendingImages.length!==previousPhotos.length||pendingImages.some((p,i)=>p!==previousPhotos[i])||
     messages.length!==previousMessages.length||messages.some((m,i)=>m!==previousMessages[i])){
@@ -1972,7 +1972,7 @@ async function openConversation(id){
  return true;
 }
 function startConversation({automatic=false}={}){
- if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking){
+ if(busy||turnPending||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking){
   chatsMessage.textContent='Current reply or voice request must finish before starting a fresh chat.';
   return false;
  }
@@ -3466,13 +3466,13 @@ async function githubReceipt(requestId){
 }
 // Direct GitHub jobs start asynchronously. Only a final persisted no-action
 // receipt can justify a fallback. Never replay an in-flight or ambiguous write.
-async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence=''){
+async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence='',receiptThread=typeof activeThread==='string'?activeThread:''){
  if(result?.ok!==false||result.status!=='blocked'||!operation)return null;
  try{
   const {chooseOverflow}=await import('/bubbles-dispatch-catalog.mjs?v=20261024-verified-overflow1');
   const overflow=chooseOverflow({result,operation,repository:operation.repository,request:ownerRequest});
   if(!overflow.delegate)return null;
-  const delegated=await submitRepositoryWork(ownerRequest,'explicit-direct-overflow',operation.repository,null,imageEvidence);
+  const delegated=await submitRepositoryWork(ownerRequest,'explicit-direct-overflow',operation.repository,null,imageEvidence,receiptThread);
   recordBrainNotice('Direct GitHub did not execute; Robot Brain accepted '+overflow.role+
    ' work for '+operation.repository+'. Source, CI and deployment remain unverified.');
   return 'Direct GitHub could not execute this request ('+String(result.error)+'). '+
@@ -3484,9 +3484,8 @@ async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEv
    String(error.message||error).slice(0,170)+'. No completed write is claimed.';
  }
 }
-function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence=''){
+function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence='',receiptThread=typeof activeThread==='string'?activeThread:''){
  if(pendingGithubReceipts.has(requestId))return;
- const receiptThread=activeThread;
  rememberPendingGithubWork(requestId,receiptThread);
  pendingGithubReceipts.add(requestId);
  void (async()=>{
@@ -3506,7 +3505,7 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
     publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
-    const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
+    const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence,receiptThread)||
      (await humanReplies()).githubReply(result);
     if(activeThread===receiptThread){
      display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
@@ -3580,8 +3579,8 @@ function publishSavedGithubIterations(result,thread){
 }
 async function directGithubOperation(operation,{quiet=false,ownerRequest='',imageEvidence=''}={}){
  if(embedded)throw Error('owner_tools_unavailable_in_embed');
- const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
  const receiptThread=typeof activeThread==='string'?activeThread:'';
+ const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
  if(typeof publishDirectGithubIteration==='function')
   publishDirectGithubIteration(operation,requestId,'tool_started',null,receiptThread);
  let result;
@@ -3602,7 +3601,7 @@ async function directGithubOperation(operation,{quiet=false,ownerRequest='',imag
  if(result.status==='working'||result.status==='unconfirmed'){
   if(typeof publishDirectGithubIteration==='function')
     publishDirectGithubIteration(operation,requestId,'tool_progress',result,receiptThread);
-  if(!quiet)watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'',imageEvidence);
+  if(!quiet)watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'',imageEvidence,receiptThread);
   return {...result,requestId,next:'Checking the durable receipt using this request ID. Tests, merge and deployment remain unverified.'};
  }
  if(typeof publishDirectGithubIteration==='function')
@@ -4024,37 +4023,43 @@ function showOwnerApprovalRequests(tickets){
 let progressStorage;try{progressStorage=localStorage;}catch{}
 const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker({storage:progressStorage}):null;
 let progressPolling=false,progressUnavailable=false;
-let activeIterationTicketId=''; // Only a ticket submitted by this chat can update its Build role.
-let activeIterationThreadId='';
 const ACTIVE_WORK_REF='bubbles-last-active-work-v1';
-let ownerJobMarkers={}; // Dedup real signed per-job changes, never count polling as work.
+const iterationWorkByThread=new Map();
+try{
+ const saved=JSON.parse(sessionStorage.getItem(ACTIVE_WORK_REF)||'null');
+ for(const ref of (Array.isArray(saved)?saved:[saved]).slice(-12)){
+  if(/^[A-Za-z0-9_-]{1,100}$/.test(ref?.thread||'')&&/^IW-[0-9]{8}-[A-Z0-9]{8}$/.test(ref?.ticketId||'')&&
+     Number.isFinite(ref.at)&&ref.at<=Date.now()&&Date.now()-ref.at<7*86400000)
+   iterationWorkByThread.set(ref.thread,{ticketId:ref.ticketId,at:ref.at,markers:{}});
+ }
+}catch{/* Browser storage can be unavailable. */}
+function rememberIterationWork(thread,ticketId){
+ if(!thread)return;
+ iterationWorkByThread.delete(thread);
+ iterationWorkByThread.set(thread,{ticketId,at:Date.now(),markers:{}});
+ if(iterationWorkByThread.size>12)iterationWorkByThread.delete(iterationWorkByThread.keys().next().value);
+ // Store references only. The owner-partitioned backend still verifies each one.
+ try{sessionStorage.setItem(ACTIVE_WORK_REF,JSON.stringify(
+  [...iterationWorkByThread].map(([thread,{ticketId,at}])=>({thread,ticketId,at}))));}catch{}
+}
 async function pollBrainProgress(){
  if(embedded||!ownerReady||!progressTracker||progressPolling)return;
  progressPolling=true;
  try{
   const headers=await verifiedOwnerHeaders();
+  const authorization=headers.Authorization;
+  const sameOwner=()=>ownerReady&&ownerHeaders===headers&&ownerHeaders.Authorization===authorization;
   const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
   // A sign-out, wallet/account switch or re-pair during the network wait must
   // not project a prior owner's ticket into the newly active chat.
-  if(!ownerReady||ownerHeaders!==headers)return;
-  // A safe website/PWA update may reload during a pending repository job.
-  // The pointer becomes valid only when this owner's fresh signed list confirms it.
-  if(!activeIterationTicketId){
-   try{
-    const restored=JSON.parse(sessionStorage.getItem(ACTIVE_WORK_REF)||'null');
-    if(restored&&restored.thread===activeThread&&Number.isFinite(restored.at)&&
-       restored.at<=Date.now()&&Date.now()-restored.at<7*86400000&&
-       /^IW-[0-9]{8}-[A-Z0-9]{8}$/.test(restored.ticketId||'')){
-     const verified=result.tickets.find(ticket=>ticket?.id===restored.ticketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''));
-     if(verified){activeIterationTicketId=verified.id;activeIterationThreadId=activeThread;ownerJobMarkers={};}
-    }
-   }catch{/* Session storage blocked; verified live status still functions. */}
-  }
+  if(!sameOwner())return;
+  const receiptThread=activeThread;
+  const work=iterationWorkByThread.get(receiptThread);
   // Unrelated historic/blocked Brain tickets are not this chat's execution result.
-  const iterationTicket=activeIterationTicketId&&activeIterationThreadId===activeThread
-   ?result.tickets.find(ticket=>ticket?.id===activeIterationTicketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
+  const iterationTicket=work
+   ?result.tickets.find(ticket=>ticket?.id===work.ticketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
    :null;
   if(iterationTicket){
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
@@ -4063,14 +4068,14 @@ async function pollBrainProgress(){
    try{
     // Verified owner ticket list, not a model answer, supplies these steps.
     const {projectVerifiedJobTransitions}=await import('/bubbles-brain-job-steps.mjs?v=20261104-owner-steps1');
-    const projection=projectVerifiedJobTransitions(iterationTicket,ownerJobMarkers);
-    ownerJobMarkers=projection.markers;
-    if(typeof CustomEvent==='function')for(const step of projection.events){
-     if(!ownerReady||ownerHeaders!==headers||activeIterationThreadId!==activeThread)break;
-     window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:step}));
+    if(sameOwner()&&receiptThread===activeThread&&iterationWorkByThread.get(receiptThread)===work){
+     const projection=projectVerifiedJobTransitions(iterationTicket,work.markers);
+     work.markers=projection.markers;
+     if(typeof CustomEvent==='function')for(const step of projection.events)window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:step}));
     }
    }catch{/* Optional display must not interrupt authenticated ticket polling. */}
   }
+  if(!sameOwner())return;
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
   brainConnectionState('Connected · Work status available in Options', 'connected');
   resumePendingGithubReceipts();
@@ -4081,33 +4086,36 @@ async function pollBrainProgress(){
   showOwnerApprovalRequests(result.tickets);
   progressTracker.setScope?.(result.notificationScope);
   let updates=progressTracker.update(result.tickets);
+  const events=progressTracker.events||[];
   if(result.notificationScope&&(nativeOverlay||config.voice)){
    // Reserve speech with the server's actual voice owner and job receipts.
    // A network failure stays quiet; a reservation never proves audio playback.
-   const events=progressTracker.events||[];
    updates=[];
    if(events.length&&(nativeOverlay||config.voice)){
     const claim=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({mode:'notification-claim',client:memoryClient,events})},12000);
     const receipt=await claim.json();
     if(!claim.ok||!receipt.ok||!Array.isArray(receipt.notices))throw Error('notification_reservation_unavailable');
+    if(!sameOwner())return;
     notificationPreferences=receipt.preferences||notificationPreferences;updates=receipt.notices;
    }
   }else if(notificationPreferences.mode==='finished')updates=updates.filter(text=>/finished/.test(text));
   if(progressUnavailable)recordBrainNotice('Robot Brain is reachable again.');
   progressUnavailable=false;
-  if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));
+  if(updates.length)announceBrainProgress(updates.slice(-5).join(' '),
+   receiptThread===activeThread&&iterationWorkByThread.get(receiptThread)===work&&
+   Boolean(iterationTicket&&events.length&&events.every(event=>event.ticketId===iterationTicket.id)));
    if(typeof syncRedSectors==='function')void syncRedSectors().catch(()=>{if(!redLinkFailed){redLinkFailed=true;recordBrainNotice('Red-Brain connection is not responding. Ticket polling continues.');}});
  }catch{
   brainConnectionState('Brain unreachable · latest notices retained', 'unreachable');
   if(!progressUnavailable){progressUnavailable=true;recordBrainNotice('Robot Brain is unreachable. Retrying quietly; saved notices remain available.');}
  }finally{progressPolling=false;}
 }
-function announceBrainProgress(text){
+function announceBrainProgress(text,inConversation){
  recordBrainNotice(text);
  // Preserve authenticated Brain wording and hide accidental internal identifiers.
  const reply=/\b(?:request_id|ticket_id|run_id|IW-[0-9]{8})\b/i.test(String(text))
   ?'There is a new work update. The details are in Work details.':String(text);
- display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+ if(inConversation){display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();}
  if(nativeOverlay||config.voice){progressVoiceQueue.push(reply);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
 }
 
@@ -4136,6 +4144,7 @@ async function requestRunner(ticketId='',jobId=''){
  return result;
 }
 async function submitWork(request,approval='explicit-click',imageEvidence=''){
+ const receiptThread=typeof activeThread==='string'?activeThread:'';
  if(activeCardEvidence)cardWorkspaceInstance?.diagnose();
  const cardEvidenceSnapshot=activeCardEvidence?JSON.parse(JSON.stringify(activeCardEvidence)):null;
  // Resolve the real target before creating tickets. A guess never silently fans out.
@@ -4156,7 +4165,7 @@ async function submitWork(request,approval='explicit-click',imageEvidence=''){
  const results=[],failures=[];
  try{
   for(const repository of repositories){
-   try{results.push(await submitRepositoryWork(request,approval,repository,cardEvidenceSnapshot,imageEvidence));}
+   try{results.push(await submitRepositoryWork(request,approval,repository,cardEvidenceSnapshot,imageEvidence,receiptThread));}
    catch(error){failures.push(repository+': '+String(error.message||error));}
   }
   if(!results.length)throw Error(failures.join('; '));
@@ -4165,7 +4174,7 @@ async function submitWork(request,approval='explicit-click',imageEvidence=''){
   return {...results[0],repositories:results.map(result=>result.repository),tickets:results,batchSummary:summary};
  }finally{delete repositoryPicker.dataset.submitting;}
 }
-async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence,imageEvidence=''){
+async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence,imageEvidence='',receiptThread=typeof activeThread==='string'?activeThread:''){
  const headers=await verifiedOwnerHeaders();
  if(!brainTools)throw Error('Bubbles Brain tool helpers are not loaded.');
  if(workButton.disabled)throw Error('A work request is already being submitted.');
@@ -4183,16 +4192,10 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   const response=await bubblesFetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({start_immediately:true,source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,repository,context:{kind:'robot-directions',card_workspace:cardEvidence,image_observations:imagePacket,repositories:[repository],submission_id:submission,requested_role:config.role,approval,color_jobs:jobs,plan,repository_writes:'require-github-authorization'}})},30000);
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||'No confirmed request'));
-  activeIterationTicketId=result.ticket.id;
-  activeIterationThreadId=typeof activeThread==='string'?activeThread:'';
-  ownerJobMarkers={};
-  // Keep only a same-thread reference, never credentials or request text.
-  // Always revalidate against the current authenticated owner's backend.
-  try{sessionStorage.setItem(ACTIVE_WORK_REF,JSON.stringify({
-   ticketId:result.ticket.id,thread:activeIterationThreadId,at:Date.now()}));}catch{}
-  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
+  rememberIterationWork(receiptThread,result.ticket.id);
+  if(receiptThread&&activeThread===receiptThread&&typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
    type:'job',repository,status:result.ticket.status,url:result.ticket.progress?.url||''}}));
-  if(String(workText.value||'').trim()===request)workText.value='';
+  if(receiptThread&&receiptThread===activeThread&&String(workText.value||'').trim()===request)workText.value='';
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs:result.ticket.context?.color_jobs||jobs}}));
   const execution=result.execution||{};
   workStatus.textContent=brainTools.executionMessage?.(execution,result.deduplicated,result.ticket.status)||'Request saved. Checking the bot team’s progress.';
@@ -4227,7 +4230,7 @@ async function checkForSiteUpdate(){
   const html=await response.text();
   const remote=html.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
   if(!remote||!siteRevision||remote===siteRevision)return false;
-  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
+  if(busy||turnPending||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
   // An Android recording has not been saved until Stop completes. Reloading
   // during RecordB capture, microphone startup, continuous listening or TTS
   // would terminate that active media session without a recovery receipt.
@@ -4258,7 +4261,7 @@ window.QuantaBubbles={
  // Begin another visually empty chat only after a real owner reopening.
  startFreshOnReopen:()=>{
   if(!nativeOverlay)return false;
-  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking)return false;
+  if(busy||turnPending||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking)return false;
   // Android Hide / reopen must preserve an unsent typed message, Notes, work or photos.
   if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length||(!keepChat&&messages.length))return false;
   // The native Android bridge expects a synchronous boolean. Report the
