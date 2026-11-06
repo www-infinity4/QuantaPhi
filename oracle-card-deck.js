@@ -544,6 +544,17 @@ for(const button of host.querySelectorAll('[data-oracle-family]')){
 }
 // Card navigation updates the existing viewer in place. Never move the
 // document viewport as a side effect of swipes, guesses or arrow controls.
+// A companion source points to a real already-mounted Quick Card, not a new
+// browser page. Move that original widget into the viewer on explicit tap.
+window.addEventListener('quantaphi:select-source-card',event=>{
+ const id=event.detail?.sourceId;
+ if(typeof id!=='string'||!/^[a-z0-9-]{2,100}$/.test(id))return;
+ const entry=entries.find(e=>e.feedId===id&&e.id==='source-'+id&&available(e));
+ if(!entry){status.textContent='That source card is not available in the current viewer.';return;}
+ viewerTouched=true;selectionVersion++;
+ if(!eligible().includes(entry)){selectedTab='public';updateTabs();}
+ show(entry);
+});
 next.addEventListener('click',()=>advance(1));
 prev.addEventListener('click',()=>advance(-1));
 scroll.addEventListener('click',()=>{
