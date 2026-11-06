@@ -222,3 +222,15 @@ test('brief plural repair follow-up reuses latest owner defects for read-only di
  assert.equal(sourceQueryFor('Explain those two things',history),'Explain those two things');
  assert.equal(sourceQueryFor('Fix those two things',[{role:'user',text:'The issue was fixed. Stop reopening it.'}]),'Fix those two things');
 });
+
+
+test('browser carries plural repair context to real owner source discovery and GitHub tool',()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/const contextualPluralRepair=pluralRepair&&contextualRepairQuery!==request/);
+ assert.match(ui,/if\(contextualPluralRepair&&!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue\)directCoding=true/);
+ assert.match(ui,/const engineeringRequest=request\+\(contextualPluralRepair\?/);
+ assert.match(ui,/await suggestRepositoryTargets\(request,false\)/);
+ const index=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const bubbles=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
+ for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261106-contextual-discovery1/);
+});
