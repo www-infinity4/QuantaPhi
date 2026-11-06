@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T02:31:26.139700Z",
+  "checked_at": "2026-11-06T03:01:40.472601Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "bill cassidy",
+      "query": "nj devils",
       "approx_searches": "1000+",
-      "published_at": "2026-11-06T02:10:00Z",
+      "published_at": "2026-11-06T02:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-louisiana.html",
-        "https://www.axios.com/local/new-orleans/2026/11/05/louisiana-senate-race-democrats-midterms",
-        "https://www.wafb.com/2026/11/03/polls-open-across-louisiana-voters-decide-senate-seat-major-local-races/"
+        "https://www.allaboutthejersey.com/devils-games/74902/2026-27-gamethread-16-new-jersey-devils-vs-st-louis-blues",
+        "https://www.espn.com/video/clip/_/id/50394801/anthony-mantha-nets-goal-devils",
+        "https://www.nhl.com/devils/video/stl-njd-mantha-scores-goal-against-jordan-binnington-6407991337112"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-yWw3Hl6tJWlf-g00hPBP_eWyzvOPts7gtDkybhitVzQdGimWgM9SaegYRPM",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYbzt0L5xosmZVnPvrg4iQXagkzBskdGs72Y220oNZGurS0qgL6854d0rYQR0",
+      "image_credit": "All About The Jersey",
+      "news": [
+        {
+          "url": "https://www.allaboutthejersey.com/devils-games/74902/2026-27-gamethread-16-new-jersey-devils-vs-st-louis-blues",
+          "title": "2026-27 Gamethread #16: New Jersey Devils vs. St. Louis Blues",
+          "publisher": "All About The Jersey",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYbzt0L5xosmZVnPvrg4iQXagkzBskdGs72Y220oNZGurS0qgL6854d0rYQR0"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50394801/anthony-mantha-nets-goal-devils",
+          "title": "Anthony Mantha nets goal for Devils",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPXK7uL-PDLo2lmmeFltV7D28BmkjG_RJ6QnudwM7_sjyeY2wAnMaF1MvvRts"
+        },
+        {
+          "url": "https://www.nhl.com/devils/video/stl-njd-mantha-scores-goal-against-jordan-binnington-6407991337112",
+          "title": "STL@NJD: Mantha scores goal against Jordan Binnington",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVoPquwh2cvdkFdflx0oXiUT-sIfxo5YKcvU26sImB3XaRtFIJOlZwqGl1gn0"
+        }
+      ]
+    },
+    {
+      "query": "lauren boebert congressional district",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T02:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-4-results",
+        "https://www.cpr.org/2026/11/03/colorado-election-results-congressional-district-4-boebert-laubacher/",
+        "https://www.denverpost.com/2026/11/04/lauren-boebert-election-results-eileen-laubacher-cd4/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA-84ftLC9S4MUfoDmDtErRixiuH6u1k-9I8pZCm8Vn8ZSYcFWriCdaBWwlIs",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-4-results",
+          "title": "Colorado House District 4 Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA-84ftLC9S4MUfoDmDtErRixiuH6u1k-9I8pZCm8Vn8ZSYcFWriCdaBWwlIs"
+        },
+        {
+          "url": "https://www.cpr.org/2026/11/03/colorado-election-results-congressional-district-4-boebert-laubacher/",
+          "title": "Lauren Boebert in big fight to keep her seat in Congress in too-close-to-call race",
+          "publisher": "Colorado Public Radio",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw31sj8gahgKTqRRaGWyQB1tkEdVqUrxDAWO0dFimMAWS7DTItmo3gLPtFbPg"
+        },
+        {
+          "url": "https://www.denverpost.com/2026/11/04/lauren-boebert-election-results-eileen-laubacher-cd4/",
+          "title": "Rep. Lauren Boebert trails Democratic challenger in Colorado’s 4th Congressional District",
+          "publisher": "The Denver Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4REZKMskXLuqAd61DTdQYhYt8fsWMLEV6WI0XwtN9LwbhiSUNYEdCJfdCF_g"
+        }
+      ]
+    },
+    {
+      "query": "tulane basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T02:40:00Z",
+      "related_news_urls": [
+        "https://www.nola.com/no-tujacksonstate-110626--039-jpg/image_815128f7-2dda-596a-a285-b5003eaa7673.html",
+        "https://www.sportsgambler.com/betting-tips/basketball/jackson-state-tigers-vs-tulane-green-wave-prediction-odds-2026-11-05/",
+        "https://www.bleachernation.com/picks/2026/11/05/aac-basketball-predictions-computer-picks-and-best-bets-november-5-2/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSxO0PPUXi68oi4e_x3q60kLmB1KPbbGv1YZRnWUeLqcXcZs8om5YQGBP2l9M",
+      "image_credit": "NOLA.com",
+      "news": [
+        {
+          "url": "https://www.nola.com/no-tujacksonstate-110626--039-jpg/image_815128f7-2dda-596a-a285-b5003eaa7673.html",
+          "title": "NO.tujacksonstate.110626-.039.jpg",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSxO0PPUXi68oi4e_x3q60kLmB1KPbbGv1YZRnWUeLqcXcZs8om5YQGBP2l9M"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/jackson-state-tigers-vs-tulane-green-wave-prediction-odds-2026-11-05/",
+          "title": "Jackson State vs Tulane Prediction, Picks & Odds | 05 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/05/aac-basketball-predictions-computer-picks-and-best-bets-november-5-2/",
+          "title": "AAC Basketball Predictions, Computer Picks and Best Bets | November 5",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfYGDEOmnhed-o92OJPhh55d4WoTH_XSl9Yxk6FPk-zPNz1V4gp57scMhYDsE"
+        }
+      ]
+    },
+    {
+      "query": "texas tech basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T02:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7756792/2026/11/05/bethune-cookman-vs-texas-tech-stream-how-to-watch-nov-5/",
+        "https://bleacherreport.com/game/northern-kentucky-w-basketball-vs-kentucky-w-basketball-2026-11-5-18-30",
+        "https://lufkindailynews.com/news_reuters/sports/damarion-dennis-no-19-texas-tech-gear-up-for-bethune-cookman/article_14bb7c6c-3e3d-50a5-bd43-d4fd81e7d4c9.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXFOe4JNzHqMfNURfEOk6m4AJTiqZ5nz1A5s6Ec4Ty1Btl-ey5gGi-qIgODA",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-louisiana.html",
-          "title": "Louisiana Election Results",
+          "url": "https://www.nytimes.com/athletic/7756792/2026/11/05/bethune-cookman-vs-texas-tech-stream-how-to-watch-nov-5/",
+          "title": "How to watch Bethune-Cookman vs. Texas Tech men’s basketball: TV channel and streaming options for November 5",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-yWw3Hl6tJWlf-g00hPBP_eWyzvOPts7gtDkybhitVzQdGimWgM9SaegYRPM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXFOe4JNzHqMfNURfEOk6m4AJTiqZ5nz1A5s6Ec4Ty1Btl-ey5gGi-qIgODA"
         },
         {
-          "url": "https://www.axios.com/local/new-orleans/2026/11/05/louisiana-senate-race-democrats-midterms",
-          "title": "The blue wave fell short of Louisiana, but it's still firing up Democrats",
-          "publisher": "Axios",
+          "url": "https://bleacherreport.com/game/northern-kentucky-w-basketball-vs-kentucky-w-basketball-2026-11-5-18-30",
+          "title": "Kentucky vs. Northern Kentucky - November 05, 2026",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMnS75Dqyno-O3zWRx9eURX-Sft-JV56BGXy5jtfnEP4UIdKd64PDVskBW5qg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXQrzlMKuQKZjOeCPnsyeYG-157l1GBdhTJgq6n3DpMtV-dzqKZjUmB6AQmog"
         },
         {
-          "url": "https://www.wafb.com/2026/11/03/polls-open-across-louisiana-voters-decide-senate-seat-major-local-races/",
-          "title": "Louisiana election results: Letlow, Johnson, Higgins, Carter, other races decided",
-          "publisher": "WAFB",
+          "url": "https://lufkindailynews.com/news_reuters/sports/damarion-dennis-no-19-texas-tech-gear-up-for-bethune-cookman/article_14bb7c6c-3e3d-50a5-bd43-d4fd81e7d4c9.html",
+          "title": "Damarion Dennis, No. 19 Texas Tech gear up for Bethune-Cookman",
+          "publisher": "The Lufkin Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0w5p-35TbQ4zxVdCaxWaiChLGE3aViWAq32efWpDSRtSwcpmzCGRVOdkH_4w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfTTUZC4sgKjYTiK9QgYq2LGUkxPeCzbr0IwYWQZbL11nPc_xoRb6N-FXU-aM"
         }
       ]
     },
     {
-      "query": "the day after tomorrow",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T02:10:00Z",
-      "related_news_urls": [
-        "https://movieweb.com/the-day-after-tomorrow-jake-gyllenhaal-stream-november-2026/",
-        "https://decider.com/2026/11/03/top-movie-on-netflix-the-day-after-tomorrow/",
-        "https://www.cbr.com/best-movies-for-day-after-tomorrow-fans-list/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFwwT_U-rjIUTm7tpKxT7gFKcfIrmPrX4_xiOCNEQE6vcWgVVu38KUyBt-oxg",
-      "image_credit": "MovieWeb",
-      "news": [
-        {
-          "url": "https://movieweb.com/the-day-after-tomorrow-jake-gyllenhaal-stream-november-2026/",
-          "title": "Jake Gyllenhaal's 123-Minute Sci-Fi Action Thriller Is Officially the Biggest Movie on Netflix",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFwwT_U-rjIUTm7tpKxT7gFKcfIrmPrX4_xiOCNEQE6vcWgVVu38KUyBt-oxg"
-        },
-        {
-          "url": "https://decider.com/2026/11/03/top-movie-on-netflix-the-day-after-tomorrow/",
-          "title": "How Did ‘The Day After Tomorrow’ Become the Top Movie on Netflix in 2026?",
-          "publisher": "Decider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRwdbalXxbpwaZrPsAPfLqIqoajII8BXpk9yCI0VMyomJsrSXhcwzAWH208Ns"
-        },
-        {
-          "url": "https://www.cbr.com/best-movies-for-day-after-tomorrow-fans-list/",
-          "title": "8 Best Movies To Watch If You Love The Day After Tomorrow",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfganwaImLHAqbxYvh4cqI8gPibaYA-doVmlKGchUVH0hiqSwtgVsV_0uY1GQ"
-        }
-      ]
-    },
-    {
-      "query": "deportación",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T02:10:00Z",
-      "related_news_urls": [
-        "https://www.univision.com/noticias/inmigracion/gobierno-de-trump-mantuvo-comunicacion-con-iran-para-llevar-a-cabo-deportaciones-de-iranies-durante-la-guerra",
-        "https://www.americateve.com/eeuu-hablo-iran-deportar-iranies-la-guerra-n5466370",
-        "https://www.democracynow.org/es/2026/11/5/titulares/court_blocks_trump_administration_from_deporting_afghans_to_pakistan_or_afghanistan"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQqzP2MnxWHXdTtqvRq-MB23K4uXtOnr9vs2r0-bsD0jWfz98JCL46uDc4JM",
-      "image_credit": "Univision",
-      "news": [
-        {
-          "url": "https://www.univision.com/noticias/inmigracion/gobierno-de-trump-mantuvo-comunicacion-con-iran-para-llevar-a-cabo-deportaciones-de-iranies-durante-la-guerra",
-          "title": "Gobierno de Trump mantuvo comunicación con Irán para llevar a cabo deportaciones de iraníes durante la guerra",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQqzP2MnxWHXdTtqvRq-MB23K4uXtOnr9vs2r0-bsD0jWfz98JCL46uDc4JM"
-        },
-        {
-          "url": "https://www.americateve.com/eeuu-hablo-iran-deportar-iranies-la-guerra-n5466370",
-          "title": "EEUU habló con Irán sobre deportar iraníes durante la guerra",
-          "publisher": "América TeVé",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVId1ZVA_wNlzgE8L4zfCqWzq3zxMFYaiXji4gvWfsu0w8-3_MO7ohmrRbsGE"
-        },
-        {
-          "url": "https://www.democracynow.org/es/2026/11/5/titulares/court_blocks_trump_administration_from_deporting_afghans_to_pakistan_or_afghanistan",
-          "title": "Una jueza de EE.UU. impide que el Gobierno de Trump deporte a Pakistán o a Afganistán a inmigrantes afganos detenidos",
-          "publisher": "Democracy Now!",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSilLJq2m16sEGFIsKhyCN9nuKLky_TzchMY0W2Zdv3h3ak-Gzvo2AOWAKIkSg"
-        }
-      ]
-    },
-    {
-      "query": "central florida floods",
+      "query": "stock market drop 401k impact",
       "approx_searches": "200+",
-      "published_at": "2026-11-06T02:10:00Z",
+      "published_at": "2026-11-06T02:40:00Z",
       "related_news_urls": [
-        "https://www.wesh.com/article/flooding-timelapse-palm-bay-brevard-county/74345039",
-        "https://www.washingtonpost.com/lifestyle/2026/11/05/her-house-was-flooding-teens-came-rescue-paddleboard-kayak/",
-        "https://www.wptv.com/news/local-news/our-community/west-palm-beach/west-palm-beach-residents-trapped-by-riverwalk-flooding-encounter-snakes-fish-and-alligators"
+        "https://www.foxbusiness.com/economy/wall-street-stocks-tech-sell-off-november-5-2026",
+        "https://seekingalpha.com/news/4667291-failing-tech-stocks-hit-retirement-accounts-that-ought-to-pressure-democrats-into-ai-and-tech",
+        "https://finance.yahoo.com/personal-finance/investing/article/heres-what-to-do-with-your-retirement-savings-in-a-market-sell-off-183419856.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-pX54JRyIKq1Gij6YL4zJl29nnG6qAnEWiZNCXDu3ViocJxNOEVlMz-M38_8",
-      "image_credit": "WESH",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSNbsOLdFr3o5Ra8E86hvVhZWXny4tgdIObl22v_GM_ZN5cRIfpMMnIkFkf5Y",
+      "image_credit": "Fox Business",
       "news": [
         {
-          "url": "https://www.wesh.com/article/flooding-timelapse-palm-bay-brevard-county/74345039",
-          "title": "Timelapse shows Palm Bay neighborhood go underwater in 13 hours amid historic flooding",
-          "publisher": "WESH",
+          "url": "https://www.foxbusiness.com/economy/wall-street-stocks-tech-sell-off-november-5-2026",
+          "title": "What Wall Street's tech stock sell-off means for your 401(k)",
+          "publisher": "Fox Business",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-pX54JRyIKq1Gij6YL4zJl29nnG6qAnEWiZNCXDu3ViocJxNOEVlMz-M38_8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSNbsOLdFr3o5Ra8E86hvVhZWXny4tgdIObl22v_GM_ZN5cRIfpMMnIkFkf5Y"
         },
         {
-          "url": "https://www.washingtonpost.com/lifestyle/2026/11/05/her-house-was-flooding-teens-came-rescue-paddleboard-kayak/",
-          "title": "Her home was flooding. Teens saw her social media post and came to the rescue.",
-          "publisher": "The Washington Post",
+          "url": "https://seekingalpha.com/news/4667291-failing-tech-stocks-hit-retirement-accounts-that-ought-to-pressure-democrats-into-ai-and-tech",
+          "title": "Failing tech stocks hit retirement accounts, that ought to pressure Democrats, says SA analyst",
+          "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM2EhBHeQezWgOk5Ie_Erbl7ctlhGHdJfQd3Px8QLVRwPLY-qhkuwEhA_vgk0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTx9RmJnAb16Qp3HChc3tSMvMJphHh_T7eF4n09VaBHq2DwbLm9Uk8uTvJM550"
         },
         {
-          "url": "https://www.wptv.com/news/local-news/our-community/west-palm-beach/west-palm-beach-residents-trapped-by-riverwalk-flooding-encounter-snakes-fish-and-alligators",
-          "title": "West Palm Beach residents trapped by RiverWalk flooding, encounter snakes, fish and alligators",
-          "publisher": "WPTV",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/heres-what-to-do-with-your-retirement-savings-in-a-market-sell-off-183419856.html",
+          "title": "Here's what to do with your retirement savings in a market sell-off",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbCxuW53TaVZ1CgxzB6bxSvOgTN6wakVdUVsVNnX6tecuW4e_wyjgGr5Mb9jY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhbekXQ4kfzbTXTJNJgH1_bnBwxFoUaTSwo8JNIORmQnfOCgLGqYMWCr2VvJg"
         }
       ]
     },
     {
-      "query": "rashod bateman",
+      "query": "oso ighodaro",
       "approx_searches": "200+",
-      "published_at": "2026-11-06T02:10:00Z",
+      "published_at": "2026-11-06T02:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/chiefs-trade-deadline-brian-thomas-003530812.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-04/kc-talks-trades-constantly-seeks-long-term-option",
-        "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-andy-reid-latest-update-gm-brett-veach-nfl-trade-deadline/"
+        "https://www.azcentral.com/story/sports/nba/suns/2026/11/05/phoenix-suns-make-change-in-starting-lineup-after-slow-start/92634825007/",
+        "https://www.si.com/nba/suns/onsi/phoenix-suns-make-big-starting-lineup-change-orlando-magic",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/sandro-mamukelashvili-illness-questionable"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrXwlzLPr0N3ozvmj1Rx4wNMnZbu5cenUEiHODop_OkHdIpmBOpE5FjeNssKo",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOt6tw5i4fQ1RKU8rbvZgwQ2u-l5ZsHLoDadvGgu7G805sSjDNpllBwdh_j6Q",
+      "image_credit": "azcentral.com and The Arizona Republic",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/chiefs-trade-deadline-brian-thomas-003530812.html",
-          "title": "Chiefs Trade Deadline: Brian Thomas Jr. Or Josh Downs?",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.azcentral.com/story/sports/nba/suns/2026/11/05/phoenix-suns-make-change-in-starting-lineup-after-slow-start/92634825007/",
+          "title": "Phoenix Suns make change in starting lineup after 1-5 start",
+          "publisher": "azcentral.com and The Arizona Republic",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrXwlzLPr0N3ozvmj1Rx4wNMnZbu5cenUEiHODop_OkHdIpmBOpE5FjeNssKo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOt6tw5i4fQ1RKU8rbvZgwQ2u-l5ZsHLoDadvGgu7G805sSjDNpllBwdh_j6Q"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-04/kc-talks-trades-constantly-seeks-long-term-option",
-          "title": "KC talks trades constantly, seeks long-term option",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuPc2bDAGqM1pRaoqsAD04pC81iwrTQzmDN8QtL9jnNuuTjMGB6OEj4KONn1w"
-        },
-        {
-          "url": "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-andy-reid-latest-update-gm-brett-veach-nfl-trade-deadline/",
-          "title": "Kansas City Chiefs HC Andy Reid provides latest updates on GM Brett Veach's NFL trade deadline pursuits",
-          "publisher": "A to Z Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSujJnEXF8i9aySDNjFczTeOZ6R9AdkRdIJCGpAihC6ILpz9mdEQwadahF2WTk"
-        }
-      ]
-    },
-    {
-      "query": "trey hendrickson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T02:00:00Z",
-      "related_news_urls": [
-        "https://ebonybird.com/baltimore-ravens-clearly-dodged-a-bullet-by-backing-out-of-maxx-crosby-trade",
-        "https://www.si.com/nfl/ravens/onsi/the-ravens-anointed-trey-hendrickson-as-a-30m-year-closer-turns-out-he-s-an-opener-01m6mqe2m76c",
-        "https://www.thebanner.com/sports/ravens-nfl/ravens-maxx-crosby-eric-decosta-G3UTZA2XR5FHBMCBOPE4PM6HN4/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGGFEFOEZJM_x31NDROvDpuaYjGUH6QaxrdytifPCzBD75urHe_FQTWgXG214",
-      "image_credit": "Ebony Bird",
-      "news": [
-        {
-          "url": "https://ebonybird.com/baltimore-ravens-clearly-dodged-a-bullet-by-backing-out-of-maxx-crosby-trade",
-          "title": "Ravens clearly dodged a bullet by backing out of the Maxx Crosby trade",
-          "publisher": "Ebony Bird",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGGFEFOEZJM_x31NDROvDpuaYjGUH6QaxrdytifPCzBD75urHe_FQTWgXG214"
-        },
-        {
-          "url": "https://www.si.com/nfl/ravens/onsi/the-ravens-anointed-trey-hendrickson-as-a-30m-year-closer-turns-out-he-s-an-opener-01m6mqe2m76c",
-          "title": "The Ravens Anointed Trey Hendrickson As A $30M/Year Closer. Turns Out He's An Opener",
+          "url": "https://www.si.com/nba/suns/onsi/phoenix-suns-make-big-starting-lineup-change-orlando-magic",
+          "title": "Suns Make Big Starting Lineup Change vs Orlando Magic",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq171snP6rKEyTzZ6l4K7uzxZsV-aWecqXnA0p8_gFhO6SxY9eNNxnMQiRYbM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxpDyCdQY8FChOmIOpnTc_nigiUdV4hXJa-BZTE3BWhD5CK88XQKc0V4t60tw"
         },
         {
-          "url": "https://www.thebanner.com/sports/ravens-nfl/ravens-maxx-crosby-eric-decosta-G3UTZA2XR5FHBMCBOPE4PM6HN4/",
-          "title": "Kyle Goon: For struggling Ravens, the nixed deal for Maxx Crosby has a cost",
-          "publisher": "The Baltimore Banner",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-05/sandro-mamukelashvili-illness-questionable",
+          "title": "Sandro Mamukelashvili (illness) questionable",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA_LE63LDoZUe40qaGr3QeeBBi8XgLlUyd6f9nx8z4lMIfvvEJNhMWTEBxyVg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7PCQAfCOD5Fg0zRl98E3lJKDgtOaAoG6-ldS-e50pidmYedcM7NBuqTGI1vI"
         }
       ]
     },
     {
-      "query": "camryn manheim",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T02:00:00Z",
-      "related_news_urls": [
-        "https://people.com/meet-911-nashville-season-2-new-characters-12237065",
-        "https://deadline.com/2026/10/camryn-manheim-9-1-1-nashville-season-2-cast-1237207691/",
-        "https://www.tvline.com/2301542/911-nashville-cast-camryn-manheim-taraji-p-henson-whiskey-matriarch/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbUNl9faYcsRdoMaR_yEke6HOrKa0G0avJWPUjuxShF7LZjCxlagTLjmQJG1g",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/meet-911-nashville-season-2-new-characters-12237065",
-          "title": "Meet the New Characters in ‘9-1-1: Nashville’ Season 2",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbUNl9faYcsRdoMaR_yEke6HOrKa0G0avJWPUjuxShF7LZjCxlagTLjmQJG1g"
-        },
-        {
-          "url": "https://deadline.com/2026/10/camryn-manheim-9-1-1-nashville-season-2-cast-1237207691/",
-          "title": "Camryn Manheim Joins ‘9-1-1: Nashville’ In Season 2",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1hbSD6nzVsj3JILigT3I5x5xPjwJcEbmCqjdKSlteLz2C8Nfd9Ew3O3bpwnA"
-        },
-        {
-          "url": "https://www.tvline.com/2301542/911-nashville-cast-camryn-manheim-taraji-p-henson-whiskey-matriarch/",
-          "title": "Casting News: 9-1-1: Nashville Adds Camryn Manheim, Taraji P. Henson's Prime Video Drama, And More",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFxnBy-JoiOi9Uu0OtHIpx4tkVDwmtfkRoEAX2-FcASsiFB2NvmmhKQsluCU"
-        }
-      ]
-    },
-    {
-      "query": "will ferrell",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T02:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/time-more-wild-ferrell-elf-234500018.html",
-        "https://www.usmagazine.com/celebrity-news/news/andy-richter-on-elf-scenes-filmed-in-mental-hospital/",
-        "https://www.hollywoodreporter.com/movies/movie-features/elf-oral-history-will-ferrell-chris-farley-andy-richter-1236747109/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFo9IHcFSGFBTbFM2_oZig8QYcjItx69s6aIRQ09rENM23rXRL3_t-QAhJgU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/time-more-wild-ferrell-elf-234500018.html",
-          "title": "It’s That Time Of Year When More Wild Will Ferrell Elf Stories Are Coming Down The Pipeline",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFo9IHcFSGFBTbFM2_oZig8QYcjItx69s6aIRQ09rENM23rXRL3_t-QAhJgU"
-        },
-        {
-          "url": "https://www.usmagazine.com/celebrity-news/news/andy-richter-on-elf-scenes-filmed-in-mental-hospital/",
-          "title": "Andy Richter Reveals Which ‘Elf’ Scenes Were Filmed in a Mental Hospital That ‘Still Had Patients’",
-          "publisher": "Us Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK9Rfq8-DL9ut0RHobkOiFF4mAKY8MvFtuhk1rwstAH2JdDO7QpRtgPpO8fsQ"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-features/elf-oral-history-will-ferrell-chris-farley-andy-richter-1236747109/",
-          "title": "The Origins of ‘Elf’: How Will Ferrell Came to Replace Chris Farley in the Christmas Classic",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL-EfLgCCiFQ48HYg6OX1Fz_J4rxP_mr5F2aaNQAvp6xt2XHZMeWHedwrTi1Y"
-        }
-      ]
-    },
-    {
-      "query": "anthony mantha",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T02:00:00Z",
-      "related_news_urls": [
-        "https://www.idahostatejournal.com/sports/national/blues-devils-hockey/image_d6179ad5-9dd1-5dbc-b58f-819a3a19f24b.html",
-        "https://www.corsicanadailysun.com/sports/national_sports/blues-devils-hockey/image_51ba563a-a6ec-5896-ad6a-18d9ea68e5bf.html",
-        "https://www.couriernews.com/sports/blues-devils-hockey/image_43bdd5a0-456c-574d-a2d4-21c9201d12cc.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDVe3kem1jbnLGU9ThWa_wWqVddicQUEzFngAwl9lUiPhE85ONMtc7eap68g",
-      "image_credit": "Idaho State Journal",
-      "news": [
-        {
-          "url": "https://www.idahostatejournal.com/sports/national/blues-devils-hockey/image_d6179ad5-9dd1-5dbc-b58f-819a3a19f24b.html",
-          "title": "Blues Devils Hockey",
-          "publisher": "Idaho State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDVe3kem1jbnLGU9ThWa_wWqVddicQUEzFngAwl9lUiPhE85ONMtc7eap68g"
-        },
-        {
-          "url": "https://www.corsicanadailysun.com/sports/national_sports/blues-devils-hockey/image_51ba563a-a6ec-5896-ad6a-18d9ea68e5bf.html",
-          "title": "Blues Devils Hockey",
-          "publisher": "Corsicana Daily Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQavpigIwpmjGXnRWGeCc6WbwTlrzopI4wY2ln_h1sUdpBvIMnVzOZIaTJV8tk"
-        },
-        {
-          "url": "https://www.couriernews.com/sports/blues-devils-hockey/image_43bdd5a0-456c-574d-a2d4-21c9201d12cc.html",
-          "title": "Blues Devils Hockey",
-          "publisher": "couriernews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQavpigIwpmjGXnRWGeCc6WbwTlrzopI4wY2ln_h1sUdpBvIMnVzOZIaTJV8tk"
-        }
-      ]
-    },
-    {
-      "query": "joe flacco",
+      "query": "vaccinations",
       "approx_searches": "2000+",
-      "published_at": "2026-11-06T01:50:00Z",
+      "published_at": "2026-11-06T02:30:00Z",
       "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/04/caleb-williams-cleats-controversy/",
-        "https://sports.yahoo.com/nfl/article/bears-qb-caleb-williams-blacks-out-logo-on-cleats-says-he-wants-to-calm-things-down-after-risking-12000-in-nfl-fines-072404682.html",
-        "https://www.foxnews.com/outkick-sports/nfl-keeps-fining-caleb-williams-refusing-cover-logo-science-cleats-worn-over-80-players"
+        "https://www.cnn.com/2026/11/05/health/measles-death-wisconsin-infant",
+        "https://abcnews.com/Health/wisconsin-infant-dies-measles-health-officials/story?id=137886629",
+        "https://www.cidrap.umn.edu/measles/baby-wisconsin-has-died-measles-3rd-such-us-death-week"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqK9FFjAQ4mdD3agDGuXFQZ0_dPf975RAoas1XIAe_TJ9kgaRRH2koDFARSJA",
-      "image_credit": "Chicago Tribune",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfE9_zmkIUqGqpDwR1PKVuK4tuvOoo3NuEt7JAnO2a06Bg7b3q_fHI-PMLK-w",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.chicagotribune.com/2026/11/04/caleb-williams-cleats-controversy/",
-          "title": "Column: Caleb Williams didn’t just black out his cleats’ logo. The Bears QB blocked a growing controversy.",
-          "publisher": "Chicago Tribune",
+          "url": "https://www.cnn.com/2026/11/05/health/measles-death-wisconsin-infant",
+          "title": "Wisconsin infant is US’ third measles-related death this week",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqK9FFjAQ4mdD3agDGuXFQZ0_dPf975RAoas1XIAe_TJ9kgaRRH2koDFARSJA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfE9_zmkIUqGqpDwR1PKVuK4tuvOoo3NuEt7JAnO2a06Bg7b3q_fHI-PMLK-w"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/article/bears-qb-caleb-williams-blacks-out-logo-on-cleats-says-he-wants-to-calm-things-down-after-risking-12000-in-nfl-fines-072404682.html",
-          "title": "Bears QB Caleb Williams blacks out logo on cleats, says he wants 'to calm things down' after risking $12,000 in NFL fines",
-          "publisher": "Yahoo Sports",
+          "url": "https://abcnews.com/Health/wisconsin-infant-dies-measles-health-officials/story?id=137886629",
+          "title": "8th measles-related death reported in Wisconsin: Health officials",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHoaOet5gzHunb0Rj9rp0NLiQaEiueW_LhHMpvVUYmpBjJPjz7lGySrmkWvv8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStA8kx4rWyeXhYS8pzfhA1-CZKpxEBGDEok5skgzYo4NlDEqeZuqJZG1IqFeA"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/nfl-keeps-fining-caleb-williams-refusing-cover-logo-science-cleats-worn-over-80-players",
-          "title": "NFL keeps fining Caleb Williams for refusing to cover logo of \"science\" cleats worn by over 80 players",
-          "publisher": "Fox News",
+          "url": "https://www.cidrap.umn.edu/measles/baby-wisconsin-has-died-measles-3rd-such-us-death-week",
+          "title": "A baby in Wisconsin has died from measles, the 3rd such US death this week",
+          "publisher": "CIDRAP",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlc9j7x0fneyUNxfs-DJ6gUEMO5sGkQGC4NrZkSO2zEayM4x1rnZwsWAZ2cws"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSDM3ZG1XzOfNsROjAl6gNYUa77Ghv828zDRxp4bAptQYaVBzgJB1WI78Tds"
+        }
+      ]
+    },
+    {
+      "query": "flu shots",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T02:30:00Z",
+      "related_news_urls": [
+        "https://www.newsday.com/news/health/flu-shot-t6c6r1e6",
+        "https://www.cbsnews.com/newyork/video/ny-health-dept-urges-residents-to-get-flu-shot-ahead-of-the-holidays/",
+        "https://www.sgmc.org/sgmc-health-urges-community-to-take-precautions-as-flu-cases-rise/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwCyVNkkbiLjo9Wdz6_JKDEFdp6DFdGwSMSRL9fvxOEo_mEyWX5zyRGJh6uS0",
+      "image_credit": "Newsday",
+      "news": [
+        {
+          "url": "https://www.newsday.com/news/health/flu-shot-t6c6r1e6",
+          "title": "New York flu cases have nearly quadrupled from last year",
+          "publisher": "Newsday",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwCyVNkkbiLjo9Wdz6_JKDEFdp6DFdGwSMSRL9fvxOEo_mEyWX5zyRGJh6uS0"
+        },
+        {
+          "url": "https://www.cbsnews.com/newyork/video/ny-health-dept-urges-residents-to-get-flu-shot-ahead-of-the-holidays/",
+          "title": "NY Health Dept. urges residents to get flu shot ahead of the holidays",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ-bEhdRwN2DFQYn50TrwwYEGPiigGbCh3tGMzirsKqvYVMmJEFT6mhXrDNfQ"
+        },
+        {
+          "url": "https://www.sgmc.org/sgmc-health-urges-community-to-take-precautions-as-flu-cases-rise/",
+          "title": "SGMC Health Urges Community to Take Precautions as Flu Cases Rise",
+          "publisher": "SGMC Health",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ20X2fS6kucksp1pecfwt1_sarbWTvbJ9VkBiZzKWPwUEiqj7Otfc7tWCEiaw"
+        }
+      ]
+    },
+    {
+      "query": "immunizations",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T02:30:00Z",
+      "related_news_urls": [
+        "https://theclintonjournal.com/stories/idph-reminds-illinoisans-its-time-to-get-seasonal-respiratory-illness-immunizations,98895",
+        "https://www.cbsnews.com/chicago/news/cook-county-health-free-flu-coivd-vaccines-holiday-season/",
+        "https://chicago.suntimes.com/letters-to-the-editor/2026/10/31/vaccinations-midterms-trump-summer-festivals-nurses-comed-data-centers-campus-sex-assaults-ctu"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkO4Q4g0TwQ94t8d7jmH8vBFwlO93IVLcNm1bMGDDOOWA8WIJKnMw0YG-Wvg",
+      "image_credit": "The Clinton Journal",
+      "news": [
+        {
+          "url": "https://theclintonjournal.com/stories/idph-reminds-illinoisans-its-time-to-get-seasonal-respiratory-illness-immunizations,98895",
+          "title": "IDPH reminds Illinoisans: It’s time to get seasonal respiratory illness immunizations",
+          "publisher": "The Clinton Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkO4Q4g0TwQ94t8d7jmH8vBFwlO93IVLcNm1bMGDDOOWA8WIJKnMw0YG-Wvg"
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/news/cook-county-health-free-flu-coivd-vaccines-holiday-season/",
+          "title": "Cook County Health offering free flu, COIVD vaccines ahead of holiday season",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReC5gXN6BgskZ5vRDGXLf3ZHF_f6otNwkvkxGC87xuor41ROY9aBEWuCKgte0"
+        },
+        {
+          "url": "https://chicago.suntimes.com/letters-to-the-editor/2026/10/31/vaccinations-midterms-trump-summer-festivals-nurses-comed-data-centers-campus-sex-assaults-ctu",
+          "title": "Get vaccinated to protect yourself and others",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVlPAnWQ2RiHZnUObFjCbTtSe02YaVFoaODaXuytPuRjvCFLGM61RIw0zREI4"
+        }
+      ]
+    },
+    {
+      "query": "flu shots near me",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T02:30:00Z",
+      "related_news_urls": [
+        "https://kewaneevoice.com/health-roundup-flu-shots-diabetes-awareness-and-county-board-meetings/",
+        "https://www.lehighvalleylive.com/news/2026/11/free-drive-through-flu-shots-offered-this-weekend-in-the-lehigh-valley.html",
+        "https://www.wfmz.com/news/area/lehighvalley/lvhn-to-hold-annual-free-drive-thru-flu-shot-clinics-amid-flu-and-cold-season/article_141df483-e5df-4c77-99c9-b9f3531b044d.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKIJyKzjNEScBUAizIzofAppNxHDPy_iCqx_lyEJM77plvo61zVvx_rXCZ52s",
+      "image_credit": "Kewanee Voice",
+      "news": [
+        {
+          "url": "https://kewaneevoice.com/health-roundup-flu-shots-diabetes-awareness-and-county-board-meetings/",
+          "title": "Health roundup, flu shots, diabetes awareness and county board meetings",
+          "publisher": "Kewanee Voice",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKIJyKzjNEScBUAizIzofAppNxHDPy_iCqx_lyEJM77plvo61zVvx_rXCZ52s"
+        },
+        {
+          "url": "https://www.lehighvalleylive.com/news/2026/11/free-drive-through-flu-shots-offered-this-weekend-in-the-lehigh-valley.html",
+          "title": "Free drive-through flu shots offered this weekend in the Lehigh Valley",
+          "publisher": "LehighValleyLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRL-kWw9ju4VKTI9U32f32-PKc7sFitwnnDooVMuvjEDhZVwNM95wU_SYnWAK8"
+        },
+        {
+          "url": "https://www.wfmz.com/news/area/lehighvalley/lvhn-to-hold-annual-free-drive-thru-flu-shot-clinics-amid-flu-and-cold-season/article_141df483-e5df-4c77-99c9-b9f3531b044d.html",
+          "title": "LVHN to hold annual free drive-thru flu shot clinics, amid flu and cold season",
+          "publisher": "WFMZ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbrOTjtSJ5S7egvaFjfTxH5vZ02lo7yecgFYJmbVcZtC7ev0vjUQukQEXxN48"
         }
       ]
     }
