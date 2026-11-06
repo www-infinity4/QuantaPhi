@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T02:01:59.568054Z",
+  "checked_at": "2026-11-06T02:31:26.139700Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cam little",
+      "query": "bill cassidy",
       "approx_searches": "1000+",
-      "published_at": "2026-11-06T01:40:00Z",
+      "published_at": "2026-11-06T02:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/videos/waiver-wire-gold-why-cam-205228424.html",
-        "https://www.rotoballer.com/player-news/cam-little-a-top-kicking-option-against-ravens-in-week-9/1984599",
-        "https://www.washingtonpost.com/politics/2026/11/02/trump-last-midterm-rally-marks-end-political-era/"
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-louisiana.html",
+        "https://www.axios.com/local/new-orleans/2026/11/05/louisiana-senate-race-democrats-midterms",
+        "https://www.wafb.com/2026/11/03/polls-open-across-louisiana-voters-decide-senate-seat-major-local-races/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-b7Yq4oxPJqrFQ2D6m7VpOuGCpAt6hV5YDU7wAB0o4TUOzhyMoCX-mctHLbs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/videos/waiver-wire-gold-why-cam-205228424.html",
-          "title": "Waiver Wire Gold: Why Cam Little Is an Elite Fantasy Football Kicker Stash for Weeks Ahead",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-b7Yq4oxPJqrFQ2D6m7VpOuGCpAt6hV5YDU7wAB0o4TUOzhyMoCX-mctHLbs"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/cam-little-a-top-kicking-option-against-ravens-in-week-9/1984599",
-          "title": "Cam Little Week 9 Outlook for Fantasy Football (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZvfTdUdkJ984BaNn3cS9JzX2B9NnDijxjDERsTwJJAfS92K5Lw9I3_d__GdQ"
-        },
-        {
-          "url": "https://www.washingtonpost.com/politics/2026/11/02/trump-last-midterm-rally-marks-end-political-era/",
-          "title": "Trump faces a future without the rallies that made him a political force",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMbXoT_hq1Z_UaMajcFzTvk-1nr-KvB_mP6iF_iTrqQgexguB1b8J4_8GGwo"
-        }
-      ]
-    },
-    {
-      "query": "clima para amanhã",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T01:40:00Z",
-      "related_news_urls": [
-        "https://www.correiobraziliense.com.br/cidades-df/2026/11/7533311-chuva-e-trovoadas-devem-marcar-os-proximos-dias-no-df-veja-previsao.html",
-        "https://novo2026.portaldoholanda.com.br/brasilia/clima-para-amanha-em-brasilia-manha-umida-que-vira-tarde-de-pancada-isolada",
-        "https://www.correiodamanha.com.br/nacional/distrito-federal/2026/11/332200-previsao-do-inmet-indica-semana-chuvosa-no-distrito-federal.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI9aFFNRJZb9aXzazJy5IpC-XBCvJpiLSKA8c-8xGwsOc0e3y9_KPKU_rtzD4",
-      "image_credit": "Correio Braziliense",
-      "news": [
-        {
-          "url": "https://www.correiobraziliense.com.br/cidades-df/2026/11/7533311-chuva-e-trovoadas-devem-marcar-os-proximos-dias-no-df-veja-previsao.html",
-          "title": "Chuva e trovoadas devem marcar os próximos dias no DF; veja previsão",
-          "publisher": "Correio Braziliense",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI9aFFNRJZb9aXzazJy5IpC-XBCvJpiLSKA8c-8xGwsOc0e3y9_KPKU_rtzD4"
-        },
-        {
-          "url": "https://novo2026.portaldoholanda.com.br/brasilia/clima-para-amanha-em-brasilia-manha-umida-que-vira-tarde-de-pancada-isolada",
-          "title": "Clima para amanhã em Brasília: manhã úmida que vira tarde de pancada isolada",
-          "publisher": "Portal do Holanda",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw"
-        },
-        {
-          "url": "https://www.correiodamanha.com.br/nacional/distrito-federal/2026/11/332200-previsao-do-inmet-indica-semana-chuvosa-no-distrito-federal.html",
-          "title": "Previsão do Inmet indica semana chuvosa no Distrito Federal",
-          "publisher": "www.correiodamanha.com.br",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjJqyl0CVmy13cD_jXFkxVaAgLIFhomDSEtzYZsqikiyg2Drjk6MCPvrudSb0"
-        }
-      ]
-    },
-    {
-      "query": "little giant ladder recall",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T01:40:00Z",
-      "related_news_urls": [
-        "https://www.cpsc.gov/Recalls/2027/Little-Giant-Recalls-Ladders-with-Rapid-Locks-Due-to-Risk-of-Serious-Injury-from-Fall-Hazard",
-        "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/05/little-giant-recalls-ladders-injuries/92625051007/",
-        "https://www.kiro7.com/news/trending/recall-alert-36m-little-giant-ladders-recalled/JEAIT6GNCBEI5KDWRQTBDTSXDI/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xG8Lx2pITEPJEreNk5NeKuDD58qV_3q1llrLwRlfl0ObYzyWl4racBRu3Vg",
-      "image_credit": "CPSC.gov",
-      "news": [
-        {
-          "url": "https://www.cpsc.gov/Recalls/2027/Little-Giant-Recalls-Ladders-with-Rapid-Locks-Due-to-Risk-of-Serious-Injury-from-Fall-Hazard",
-          "title": "Little Giant Recalls Ladders with Rapid Locks Due to Risk of Serious Injury from Fall Hazard",
-          "publisher": "CPSC.gov",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xG8Lx2pITEPJEreNk5NeKuDD58qV_3q1llrLwRlfl0ObYzyWl4racBRu3Vg"
-        },
-        {
-          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/05/little-giant-recalls-ladders-injuries/92625051007/",
-          "title": "More than 3.6 million ladders recalled. See the affected products",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOdJHrKY_OZYORpd6fGqbjp5oGamZXWqmtY5KkGGT1N_MTY-Nq7g7dQ9EEVc8"
-        },
-        {
-          "url": "https://www.kiro7.com/news/trending/recall-alert-36m-little-giant-ladders-recalled/JEAIT6GNCBEI5KDWRQTBDTSXDI/",
-          "title": "Recall alert: 3.6M Little Giant ladders recalled",
-          "publisher": "KIRO 7 News Seattle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCWbMNhiiNvEcu7vvoi2T-AvMj9tQSU9JEVSGgIaNHfhkJl_g4YjgW2AH0m9Y"
-        }
-      ]
-    },
-    {
-      "query": "calais campbell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T01:40:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/videos/bhayshul-tuten-s-seventh-td-of-2026-season-opens-scoring-in-jags-ravens-on-tnf",
-        "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/03/raiders-ballers-busters-studs-duds-week-8-jets/92589036007/",
-        "https://www.espn.com/nfl/story/_/id/50353796/jets-being-jets-fitzpatrick-sums-team-latest-loss"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI2k_UCYLK7SpVLDiBtYbDZlpXtNYYIlZO6-lWt9XoJY5AImcr7oHDD6Q2KHQ",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/videos/bhayshul-tuten-s-seventh-td-of-2026-season-opens-scoring-in-jags-ravens-on-tnf",
-          "title": "Bhayshul Tuten's seventh TD of 2026 season opens scoring in Jags-Ravens on 'TNF'",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI2k_UCYLK7SpVLDiBtYbDZlpXtNYYIlZO6-lWt9XoJY5AImcr7oHDD6Q2KHQ"
-        },
-        {
-          "url": "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/03/raiders-ballers-busters-studs-duds-week-8-jets/92589036007/",
-          "title": "Raiders Ballers & Busters for Week 8 vs Jets",
-          "publisher": "Raiders Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLKjqbcIIzhiCAZb6wwQGCsPC5jrPLtRZYVjzXh629PGsXQO2znZDU7WZWevs"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50353796/jets-being-jets-fitzpatrick-sums-team-latest-loss",
-          "title": "'Jets being Jets': Minkah Fitzpatrick sums up team's latest tough loss",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-_RqUWJhFLGB_ClBQhiDtMehd-cuKGONZFL-JGQcYgD6FIZMdOZtckA8p-sI"
-        }
-      ]
-    },
-    {
-      "query": "bryan seaver",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T01:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/05/arts/music/dolly-parton-nephew-manager-lawsuit-dropped.html",
-        "https://people.com/dolly-parton-estate-drops-lawsuit-against-nephew-bryan-seaver-12239201",
-        "https://www.cbsnews.com/news/dolly-parton-estate-lawsuit-dismissed-nephew-bryan-seaver/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIPOwdE3dOWhATBZqmc29dtygZHBEsiTfXRTTs_1ew2FLF_xekbOyD6dIsuts",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-yWw3Hl6tJWlf-g00hPBP_eWyzvOPts7gtDkybhitVzQdGimWgM9SaegYRPM",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/05/arts/music/dolly-parton-nephew-manager-lawsuit-dropped.html",
-          "title": "Dolly Parton’s Manager Drops Lawsuit Against Singer’s Nephew",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-louisiana.html",
+          "title": "Louisiana Election Results",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIPOwdE3dOWhATBZqmc29dtygZHBEsiTfXRTTs_1ew2FLF_xekbOyD6dIsuts"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-yWw3Hl6tJWlf-g00hPBP_eWyzvOPts7gtDkybhitVzQdGimWgM9SaegYRPM"
         },
         {
-          "url": "https://people.com/dolly-parton-estate-drops-lawsuit-against-nephew-bryan-seaver-12239201",
-          "title": "Dolly Parton’s Estate Drops Lawsuit Against Her Nephew Bryan Seaver",
-          "publisher": "People.com",
+          "url": "https://www.axios.com/local/new-orleans/2026/11/05/louisiana-senate-race-democrats-midterms",
+          "title": "The blue wave fell short of Louisiana, but it's still firing up Democrats",
+          "publisher": "Axios",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCzEfSUyWmuWS-OZ1IA6k5xIlgGQtJDtB50zBrUOFqLH32ow94ThWzbfqwmVo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMnS75Dqyno-O3zWRx9eURX-Sft-JV56BGXy5jtfnEP4UIdKd64PDVskBW5qg"
         },
         {
-          "url": "https://www.cbsnews.com/news/dolly-parton-estate-lawsuit-dismissed-nephew-bryan-seaver/",
-          "title": "Dolly Parton's estate moves to dismiss lawsuit against nephew",
-          "publisher": "CBS News",
+          "url": "https://www.wafb.com/2026/11/03/polls-open-across-louisiana-voters-decide-senate-seat-major-local-races/",
+          "title": "Louisiana election results: Letlow, Johnson, Higgins, Carter, other races decided",
+          "publisher": "WAFB",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTg5Uw01QkplJO-6YbwVVBqFiOFFe3RowZHJmfjnmhTSEwokuT_1G7P5ntp0T8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0w5p-35TbQ4zxVdCaxWaiChLGE3aViWAq32efWpDSRtSwcpmzCGRVOdkH_4w"
         }
       ]
     },
     {
-      "query": "catherine bell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T01:40:00Z",
+      "query": "the day after tomorrow",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T02:10:00Z",
       "related_news_urls": [
-        "https://www.hellomagazine.com/us/933114/jag-catherine-bell-chops-hair-new-look/",
-        "https://www.prlog.org/13181480-bell-janssen-odonoghue-hocus-pocus-stars-added-to-fan-expo-new-orleans-guest-list.html"
+        "https://movieweb.com/the-day-after-tomorrow-jake-gyllenhaal-stream-november-2026/",
+        "https://decider.com/2026/11/03/top-movie-on-netflix-the-day-after-tomorrow/",
+        "https://www.cbr.com/best-movies-for-day-after-tomorrow-fans-list/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqSxK62d0wZQZs7hqrBqcwn6eGXseASmqXmqZf5VVL8v6sCqsJxHIhBpIP4ZI",
-      "image_credit": "HELLO!",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFwwT_U-rjIUTm7tpKxT7gFKcfIrmPrX4_xiOCNEQE6vcWgVVu38KUyBt-oxg",
+      "image_credit": "MovieWeb",
       "news": [
         {
-          "url": "https://www.hellomagazine.com/us/933114/jag-catherine-bell-chops-hair-new-look/",
-          "title": "JAG star Catherine Bell chops off hair for bold new look reminiscent of her iconic '90s character",
-          "publisher": "HELLO!",
+          "url": "https://movieweb.com/the-day-after-tomorrow-jake-gyllenhaal-stream-november-2026/",
+          "title": "Jake Gyllenhaal's 123-Minute Sci-Fi Action Thriller Is Officially the Biggest Movie on Netflix",
+          "publisher": "MovieWeb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqSxK62d0wZQZs7hqrBqcwn6eGXseASmqXmqZf5VVL8v6sCqsJxHIhBpIP4ZI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFwwT_U-rjIUTm7tpKxT7gFKcfIrmPrX4_xiOCNEQE6vcWgVVu38KUyBt-oxg"
         },
         {
-          "url": "https://www.prlog.org/13181480-bell-janssen-odonoghue-hocus-pocus-stars-added-to-fan-expo-new-orleans-guest-list.html",
-          "title": "Bell, Janssen, O'Donoghue, 'Hocus Pocus' Stars Added to FAN EXPO New Orleans Guest List",
-          "publisher": "PRLog",
+          "url": "https://decider.com/2026/11/03/top-movie-on-netflix-the-day-after-tomorrow/",
+          "title": "How Did ‘The Day After Tomorrow’ Become the Top Movie on Netflix in 2026?",
+          "publisher": "Decider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKdtF6FxspTw3DPbr4VfPBCwbMV0MUtqEAt1XtDobacr5sQ4rS5smUPDED58Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRwdbalXxbpwaZrPsAPfLqIqoajII8BXpk9yCI0VMyomJsrSXhcwzAWH208Ns"
+        },
+        {
+          "url": "https://www.cbr.com/best-movies-for-day-after-tomorrow-fans-list/",
+          "title": "8 Best Movies To Watch If You Love The Day After Tomorrow",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfganwaImLHAqbxYvh4cqI8gPibaYA-doVmlKGchUVH0hiqSwtgVsV_0uY1GQ"
         }
       ]
     },
     {
-      "query": "nicholas hoult",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T01:40:00Z",
+      "query": "deportación",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T02:10:00Z",
       "related_news_urls": [
-        "https://people.com/nicholas-hoult-and-wife-bryana-holly-welcome-twins-11929202",
-        "https://ew.com/nicholas-hoult-wife-bryana-holly-welcomed-twins-parents-of-4-12238581",
-        "https://www.justjared.com/2026/11/05/nicholas-hoult-wife-bryana-holly-quietly-welcomed-twins-expanding-their-family-to-4-kids/"
+        "https://www.univision.com/noticias/inmigracion/gobierno-de-trump-mantuvo-comunicacion-con-iran-para-llevar-a-cabo-deportaciones-de-iranies-durante-la-guerra",
+        "https://www.americateve.com/eeuu-hablo-iran-deportar-iranies-la-guerra-n5466370",
+        "https://www.democracynow.org/es/2026/11/5/titulares/court_blocks_trump_administration_from_deporting_afghans_to_pakistan_or_afghanistan"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_CD1r63ZHv9aai3xdd9GbsVYzAsuGao9Pp4_t5XsygTzMnUjNqJYMM4b3gV8",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQqzP2MnxWHXdTtqvRq-MB23K4uXtOnr9vs2r0-bsD0jWfz98JCL46uDc4JM",
+      "image_credit": "Univision",
+      "news": [
+        {
+          "url": "https://www.univision.com/noticias/inmigracion/gobierno-de-trump-mantuvo-comunicacion-con-iran-para-llevar-a-cabo-deportaciones-de-iranies-durante-la-guerra",
+          "title": "Gobierno de Trump mantuvo comunicación con Irán para llevar a cabo deportaciones de iraníes durante la guerra",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQqzP2MnxWHXdTtqvRq-MB23K4uXtOnr9vs2r0-bsD0jWfz98JCL46uDc4JM"
+        },
+        {
+          "url": "https://www.americateve.com/eeuu-hablo-iran-deportar-iranies-la-guerra-n5466370",
+          "title": "EEUU habló con Irán sobre deportar iraníes durante la guerra",
+          "publisher": "América TeVé",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVId1ZVA_wNlzgE8L4zfCqWzq3zxMFYaiXji4gvWfsu0w8-3_MO7ohmrRbsGE"
+        },
+        {
+          "url": "https://www.democracynow.org/es/2026/11/5/titulares/court_blocks_trump_administration_from_deporting_afghans_to_pakistan_or_afghanistan",
+          "title": "Una jueza de EE.UU. impide que el Gobierno de Trump deporte a Pakistán o a Afganistán a inmigrantes afganos detenidos",
+          "publisher": "Democracy Now!",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSilLJq2m16sEGFIsKhyCN9nuKLky_TzchMY0W2Zdv3h3ak-Gzvo2AOWAKIkSg"
+        }
+      ]
+    },
+    {
+      "query": "central florida floods",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T02:10:00Z",
+      "related_news_urls": [
+        "https://www.wesh.com/article/flooding-timelapse-palm-bay-brevard-county/74345039",
+        "https://www.washingtonpost.com/lifestyle/2026/11/05/her-house-was-flooding-teens-came-rescue-paddleboard-kayak/",
+        "https://www.wptv.com/news/local-news/our-community/west-palm-beach/west-palm-beach-residents-trapped-by-riverwalk-flooding-encounter-snakes-fish-and-alligators"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-pX54JRyIKq1Gij6YL4zJl29nnG6qAnEWiZNCXDu3ViocJxNOEVlMz-M38_8",
+      "image_credit": "WESH",
+      "news": [
+        {
+          "url": "https://www.wesh.com/article/flooding-timelapse-palm-bay-brevard-county/74345039",
+          "title": "Timelapse shows Palm Bay neighborhood go underwater in 13 hours amid historic flooding",
+          "publisher": "WESH",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-pX54JRyIKq1Gij6YL4zJl29nnG6qAnEWiZNCXDu3ViocJxNOEVlMz-M38_8"
+        },
+        {
+          "url": "https://www.washingtonpost.com/lifestyle/2026/11/05/her-house-was-flooding-teens-came-rescue-paddleboard-kayak/",
+          "title": "Her home was flooding. Teens saw her social media post and came to the rescue.",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM2EhBHeQezWgOk5Ie_Erbl7ctlhGHdJfQd3Px8QLVRwPLY-qhkuwEhA_vgk0"
+        },
+        {
+          "url": "https://www.wptv.com/news/local-news/our-community/west-palm-beach/west-palm-beach-residents-trapped-by-riverwalk-flooding-encounter-snakes-fish-and-alligators",
+          "title": "West Palm Beach residents trapped by RiverWalk flooding, encounter snakes, fish and alligators",
+          "publisher": "WPTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbCxuW53TaVZ1CgxzB6bxSvOgTN6wakVdUVsVNnX6tecuW4e_wyjgGr5Mb9jY"
+        }
+      ]
+    },
+    {
+      "query": "rashod bateman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T02:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/chiefs-trade-deadline-brian-thomas-003530812.html",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-04/kc-talks-trades-constantly-seeks-long-term-option",
+        "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-andy-reid-latest-update-gm-brett-veach-nfl-trade-deadline/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrXwlzLPr0N3ozvmj1Rx4wNMnZbu5cenUEiHODop_OkHdIpmBOpE5FjeNssKo",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/chiefs-trade-deadline-brian-thomas-003530812.html",
+          "title": "Chiefs Trade Deadline: Brian Thomas Jr. Or Josh Downs?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrXwlzLPr0N3ozvmj1Rx4wNMnZbu5cenUEiHODop_OkHdIpmBOpE5FjeNssKo"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-04/kc-talks-trades-constantly-seeks-long-term-option",
+          "title": "KC talks trades constantly, seeks long-term option",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuPc2bDAGqM1pRaoqsAD04pC81iwrTQzmDN8QtL9jnNuuTjMGB6OEj4KONn1w"
+        },
+        {
+          "url": "https://atozsports.com/nfl/kansas-city-chiefs-news/chiefs-andy-reid-latest-update-gm-brett-veach-nfl-trade-deadline/",
+          "title": "Kansas City Chiefs HC Andy Reid provides latest updates on GM Brett Veach's NFL trade deadline pursuits",
+          "publisher": "A to Z Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSujJnEXF8i9aySDNjFczTeOZ6R9AdkRdIJCGpAihC6ILpz9mdEQwadahF2WTk"
+        }
+      ]
+    },
+    {
+      "query": "trey hendrickson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T02:00:00Z",
+      "related_news_urls": [
+        "https://ebonybird.com/baltimore-ravens-clearly-dodged-a-bullet-by-backing-out-of-maxx-crosby-trade",
+        "https://www.si.com/nfl/ravens/onsi/the-ravens-anointed-trey-hendrickson-as-a-30m-year-closer-turns-out-he-s-an-opener-01m6mqe2m76c",
+        "https://www.thebanner.com/sports/ravens-nfl/ravens-maxx-crosby-eric-decosta-G3UTZA2XR5FHBMCBOPE4PM6HN4/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGGFEFOEZJM_x31NDROvDpuaYjGUH6QaxrdytifPCzBD75urHe_FQTWgXG214",
+      "image_credit": "Ebony Bird",
+      "news": [
+        {
+          "url": "https://ebonybird.com/baltimore-ravens-clearly-dodged-a-bullet-by-backing-out-of-maxx-crosby-trade",
+          "title": "Ravens clearly dodged a bullet by backing out of the Maxx Crosby trade",
+          "publisher": "Ebony Bird",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGGFEFOEZJM_x31NDROvDpuaYjGUH6QaxrdytifPCzBD75urHe_FQTWgXG214"
+        },
+        {
+          "url": "https://www.si.com/nfl/ravens/onsi/the-ravens-anointed-trey-hendrickson-as-a-30m-year-closer-turns-out-he-s-an-opener-01m6mqe2m76c",
+          "title": "The Ravens Anointed Trey Hendrickson As A $30M/Year Closer. Turns Out He's An Opener",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq171snP6rKEyTzZ6l4K7uzxZsV-aWecqXnA0p8_gFhO6SxY9eNNxnMQiRYbM"
+        },
+        {
+          "url": "https://www.thebanner.com/sports/ravens-nfl/ravens-maxx-crosby-eric-decosta-G3UTZA2XR5FHBMCBOPE4PM6HN4/",
+          "title": "Kyle Goon: For struggling Ravens, the nixed deal for Maxx Crosby has a cost",
+          "publisher": "The Baltimore Banner",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA_LE63LDoZUe40qaGr3QeeBBi8XgLlUyd6f9nx8z4lMIfvvEJNhMWTEBxyVg"
+        }
+      ]
+    },
+    {
+      "query": "camryn manheim",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T02:00:00Z",
+      "related_news_urls": [
+        "https://people.com/meet-911-nashville-season-2-new-characters-12237065",
+        "https://deadline.com/2026/10/camryn-manheim-9-1-1-nashville-season-2-cast-1237207691/",
+        "https://www.tvline.com/2301542/911-nashville-cast-camryn-manheim-taraji-p-henson-whiskey-matriarch/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbUNl9faYcsRdoMaR_yEke6HOrKa0G0avJWPUjuxShF7LZjCxlagTLjmQJG1g",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/nicholas-hoult-and-wife-bryana-holly-welcome-twins-11929202",
-          "title": "Nicholas Hoult and Wife Bryana Holly Are Now Parents of 4 After Quietly Welcoming Twins",
+          "url": "https://people.com/meet-911-nashville-season-2-new-characters-12237065",
+          "title": "Meet the New Characters in ‘9-1-1: Nashville’ Season 2",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_CD1r63ZHv9aai3xdd9GbsVYzAsuGao9Pp4_t5XsygTzMnUjNqJYMM4b3gV8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbUNl9faYcsRdoMaR_yEke6HOrKa0G0avJWPUjuxShF7LZjCxlagTLjmQJG1g"
         },
         {
-          "url": "https://ew.com/nicholas-hoult-wife-bryana-holly-welcomed-twins-parents-of-4-12238581",
-          "title": "Nicholas Hoult and wife Bryana Holly quietly welcomed twins, are the parents of 4",
-          "publisher": "Entertainment Weekly",
+          "url": "https://deadline.com/2026/10/camryn-manheim-9-1-1-nashville-season-2-cast-1237207691/",
+          "title": "Camryn Manheim Joins ‘9-1-1: Nashville’ In Season 2",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs2nvDujkLCOv5wAMQghA_OhqDnpMMysT0f9ygcK9orvsnxnppcC0-5x9syJI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1hbSD6nzVsj3JILigT3I5x5xPjwJcEbmCqjdKSlteLz2C8Nfd9Ew3O3bpwnA"
         },
         {
-          "url": "https://www.justjared.com/2026/11/05/nicholas-hoult-wife-bryana-holly-quietly-welcomed-twins-expanding-their-family-to-4-kids/",
-          "title": "Nicholas Hoult & Wife Bryana Holly Quietly Welcomed Twins, Expanding Their Family to 4 Kids",
-          "publisher": "Just Jared",
+          "url": "https://www.tvline.com/2301542/911-nashville-cast-camryn-manheim-taraji-p-henson-whiskey-matriarch/",
+          "title": "Casting News: 9-1-1: Nashville Adds Camryn Manheim, Taraji P. Henson's Prime Video Drama, And More",
+          "publisher": "TVLine",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTT3zhHt_zQ1tvaAbAkg74zMrpiS_j6gXMEkuLBYoCbMmZy2z1k-aLushSG91s"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFxnBy-JoiOi9Uu0OtHIpx4tkVDwmtfkRoEAX2-FcASsiFB2NvmmhKQsluCU"
         }
       ]
     },
     {
-      "query": "declan doyle",
+      "query": "will ferrell",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T02:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/articles/time-more-wild-ferrell-elf-234500018.html",
+        "https://www.usmagazine.com/celebrity-news/news/andy-richter-on-elf-scenes-filmed-in-mental-hospital/",
+        "https://www.hollywoodreporter.com/movies/movie-features/elf-oral-history-will-ferrell-chris-farley-andy-richter-1236747109/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFo9IHcFSGFBTbFM2_oZig8QYcjItx69s6aIRQ09rENM23rXRL3_t-QAhJgU",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/time-more-wild-ferrell-elf-234500018.html",
+          "title": "It’s That Time Of Year When More Wild Will Ferrell Elf Stories Are Coming Down The Pipeline",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFo9IHcFSGFBTbFM2_oZig8QYcjItx69s6aIRQ09rENM23rXRL3_t-QAhJgU"
+        },
+        {
+          "url": "https://www.usmagazine.com/celebrity-news/news/andy-richter-on-elf-scenes-filmed-in-mental-hospital/",
+          "title": "Andy Richter Reveals Which ‘Elf’ Scenes Were Filmed in a Mental Hospital That ‘Still Had Patients’",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK9Rfq8-DL9ut0RHobkOiFF4mAKY8MvFtuhk1rwstAH2JdDO7QpRtgPpO8fsQ"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-features/elf-oral-history-will-ferrell-chris-farley-andy-richter-1236747109/",
+          "title": "The Origins of ‘Elf’: How Will Ferrell Came to Replace Chris Farley in the Christmas Classic",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL-EfLgCCiFQ48HYg6OX1Fz_J4rxP_mr5F2aaNQAvp6xt2XHZMeWHedwrTi1Y"
+        }
+      ]
+    },
+    {
+      "query": "anthony mantha",
       "approx_searches": "200+",
-      "published_at": "2026-11-06T01:40:00Z",
+      "published_at": "2026-11-06T02:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50369047/2026-nfl-season-10-new-coaches-midseason-good-bad",
-        "https://www.nytimes.com/athletic/7753441/2026/11/05/nfl-first-year-coordinators-ranked-declan-doyle-jonathan-gannon/",
-        "https://www.cbssports.com/nfl/news/nfl-coordinator-rankings-midseason-packers-jonathan-gannon-steelers/"
+        "https://www.idahostatejournal.com/sports/national/blues-devils-hockey/image_d6179ad5-9dd1-5dbc-b58f-819a3a19f24b.html",
+        "https://www.corsicanadailysun.com/sports/national_sports/blues-devils-hockey/image_51ba563a-a6ec-5896-ad6a-18d9ea68e5bf.html",
+        "https://www.couriernews.com/sports/blues-devils-hockey/image_43bdd5a0-456c-574d-a2d4-21c9201d12cc.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKu6m6J36hASBgPPkWzhTVaT3Gm_IJ_v2TboGcJbpUjLPubv6Jzhxe0jnKuEM",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDVe3kem1jbnLGU9ThWa_wWqVddicQUEzFngAwl9lUiPhE85ONMtc7eap68g",
+      "image_credit": "Idaho State Journal",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50369047/2026-nfl-season-10-new-coaches-midseason-good-bad",
-          "title": "What has gone right -- and wrong -- for 10 new NFL head coaches in 2026 season",
-          "publisher": "ESPN",
+          "url": "https://www.idahostatejournal.com/sports/national/blues-devils-hockey/image_d6179ad5-9dd1-5dbc-b58f-819a3a19f24b.html",
+          "title": "Blues Devils Hockey",
+          "publisher": "Idaho State Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKu6m6J36hASBgPPkWzhTVaT3Gm_IJ_v2TboGcJbpUjLPubv6Jzhxe0jnKuEM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDVe3kem1jbnLGU9ThWa_wWqVddicQUEzFngAwl9lUiPhE85ONMtc7eap68g"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7753441/2026/11/05/nfl-first-year-coordinators-ranked-declan-doyle-jonathan-gannon/",
-          "title": "Drafting the first-year NFL coordinators: Who is making a real impact?",
-          "publisher": "The New York Times",
+          "url": "https://www.corsicanadailysun.com/sports/national_sports/blues-devils-hockey/image_51ba563a-a6ec-5896-ad6a-18d9ea68e5bf.html",
+          "title": "Blues Devils Hockey",
+          "publisher": "Corsicana Daily Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9XOraBT_rSL6NeLZzIhjmnPn1Q-Q6lPAw0Ky7Ckx4R2xLiFv2txLz04rrYLA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQavpigIwpmjGXnRWGeCc6WbwTlrzopI4wY2ln_h1sUdpBvIMnVzOZIaTJV8tk"
         },
         {
-          "url": "https://www.cbssports.com/nfl/news/nfl-coordinator-rankings-midseason-packers-jonathan-gannon-steelers/",
-          "title": "Ranking NFL's best new coordinators: Packers, Steelers assistants lead top 10 at midseason",
-          "publisher": "CBS Sports",
+          "url": "https://www.couriernews.com/sports/blues-devils-hockey/image_43bdd5a0-456c-574d-a2d4-21c9201d12cc.html",
+          "title": "Blues Devils Hockey",
+          "publisher": "couriernews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_qTAY-h4I7K-VRh7f2y15EahYyPCr4ymrzNm5ZnLagIZb2QFCRvMVV2B-jCY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQavpigIwpmjGXnRWGeCc6WbwTlrzopI4wY2ln_h1sUdpBvIMnVzOZIaTJV8tk"
         }
       ]
     },
     {
-      "query": "jake moody",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T01:30:00Z",
+      "query": "joe flacco",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T01:50:00Z",
       "related_news_urls": [
-        "https://www.baltimoreravens.com/news/tyler-loop-injury-moves-jake-moody-into-kicker-role-week-9-jacksonville-jaguars-vega-ioane-hopes-to-return",
-        "https://www.cbssports.com/fantasy/football/news/ravens-jake-moody-officially-elevated-thursday/",
-        "https://www.baltimoresun.com/2026/11/03/ravens-injury-report-tyler-loop-lamar-jackson/"
+        "https://www.chicagotribune.com/2026/11/04/caleb-williams-cleats-controversy/",
+        "https://sports.yahoo.com/nfl/article/bears-qb-caleb-williams-blacks-out-logo-on-cleats-says-he-wants-to-calm-things-down-after-risking-12000-in-nfl-fines-072404682.html",
+        "https://www.foxnews.com/outkick-sports/nfl-keeps-fining-caleb-williams-refusing-cover-logo-science-cleats-worn-over-80-players"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ykd2OMttMWB2blyF9x21uMkq8LStbUphc7wPIdStCVcXKPQp3Lc5zMOL0js",
-      "image_credit": "Baltimore Ravens",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqK9FFjAQ4mdD3agDGuXFQZ0_dPf975RAoas1XIAe_TJ9kgaRRH2koDFARSJA",
+      "image_credit": "Chicago Tribune",
       "news": [
         {
-          "url": "https://www.baltimoreravens.com/news/tyler-loop-injury-moves-jake-moody-into-kicker-role-week-9-jacksonville-jaguars-vega-ioane-hopes-to-return",
-          "title": "News & Notes: Tyler Loop Is Injured, Jake Moody Steps in at Kicker",
-          "publisher": "Baltimore Ravens",
+          "url": "https://www.chicagotribune.com/2026/11/04/caleb-williams-cleats-controversy/",
+          "title": "Column: Caleb Williams didn’t just black out his cleats’ logo. The Bears QB blocked a growing controversy.",
+          "publisher": "Chicago Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ykd2OMttMWB2blyF9x21uMkq8LStbUphc7wPIdStCVcXKPQp3Lc5zMOL0js"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqK9FFjAQ4mdD3agDGuXFQZ0_dPf975RAoas1XIAe_TJ9kgaRRH2koDFARSJA"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/ravens-jake-moody-officially-elevated-thursday/",
-          "title": "Ravens' Jake Moody: Officially elevated Thursday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
-        },
-        {
-          "url": "https://www.baltimoresun.com/2026/11/03/ravens-injury-report-tyler-loop-lamar-jackson/",
-          "title": "Ravens injury report: Loop lands on IR ahead of ‘Thursday Night Football’",
-          "publisher": "Baltimore Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSZI1B81MFTeyQSlr4H-7gLQo_1Jt3oJSfsH3oJyxcjYM-L7R66mC-qrebTI"
-        }
-      ]
-    },
-    {
-      "query": "predators vs avalanche",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T01:30:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/avalanche/news/game-preview-11-05-26",
-        "https://sports.yahoo.com/articles/open-thread-colorado-avalanche-vs-010500962.html",
-        "https://www.milehighhockey.com/colorado-avalanche-game-coverage/67511/preview-colorado-looks-to-bounce-back-against-nashville"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx_GjXdQ9AsT-HWHoIgI1v_AdnMQIQkzAMyPXEwUJcvGlVWiYBttG2cjr65wY",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/avalanche/news/game-preview-11-05-26",
-          "title": "Central Division Clash",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx_GjXdQ9AsT-HWHoIgI1v_AdnMQIQkzAMyPXEwUJcvGlVWiYBttG2cjr65wY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/open-thread-colorado-avalanche-vs-010500962.html",
-          "title": "Open Thread: Colorado Avalanche vs. Nashville Predators (7:30 p.m. MT)",
+          "url": "https://sports.yahoo.com/nfl/article/bears-qb-caleb-williams-blacks-out-logo-on-cleats-says-he-wants-to-calm-things-down-after-risking-12000-in-nfl-fines-072404682.html",
+          "title": "Bears QB Caleb Williams blacks out logo on cleats, says he wants 'to calm things down' after risking $12,000 in NFL fines",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMxCLzuNTi9u0ZDF7_4tNd_rBXqQfFoeHlCLMmOQNm8b-2spuWyOy_pphMqig"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHoaOet5gzHunb0Rj9rp0NLiQaEiueW_LhHMpvVUYmpBjJPjz7lGySrmkWvv8"
         },
         {
-          "url": "https://www.milehighhockey.com/colorado-avalanche-game-coverage/67511/preview-colorado-looks-to-bounce-back-against-nashville",
-          "title": "Preview: Colorado looks to bounce back against Nashville",
-          "publisher": "Mile High Hockey",
+          "url": "https://www.foxnews.com/outkick-sports/nfl-keeps-fining-caleb-williams-refusing-cover-logo-science-cleats-worn-over-80-players",
+          "title": "NFL keeps fining Caleb Williams for refusing to cover logo of \"science\" cleats worn by over 80 players",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfgVmXvmNvJTW5RC5f1sm67HLSDzpvviT7sgRC_-_uCsqKRBugk8aZRXzOtAY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlc9j7x0fneyUNxfs-DJ6gUEMO5sGkQGC4NrZkSO2zEayM4x1rnZwsWAZ2cws"
         }
       ]
     }
