@@ -4,6 +4,7 @@ export {resolveCloudflareScopeConfig} from './scope-config.mjs';
 
 // Generated plugins cannot add arbitrary token endpoints to this registry.
 const GOOGLE_SCOPES = Object.freeze({
+  'identity.read':'openid',
   'gmail.read':'https://www.googleapis.com/auth/gmail.readonly',
   'drive.read':'https://www.googleapis.com/auth/drive.readonly',
   'drive.write':'https://www.googleapis.com/auth/drive.file',
