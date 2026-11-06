@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T16:19:09.920857Z",
+  "checked_at": "2026-11-06T17:18:44.026500Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "pepe-vapour": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://www.pepejeans.in/pepe-jeans-online-exclusive",
@@ -17,7 +17,7 @@
           "title": "Jackets",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Denim & fashion"
         },
         {
@@ -26,7 +26,7 @@
           "title": "Denims",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Denim & fashion"
         },
         {
@@ -35,7 +35,7 @@
           "title": "Sneakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Denim & fashion"
         },
         {
@@ -44,7 +44,7 @@
           "title": "Shirts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Denim & fashion"
         },
         {
@@ -53,7 +53,7 @@
           "title": "Vapour Dark Blue Low Rise Tapered Jeans, , large image number 0",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Denim & fashion"
         },
         {
@@ -62,7 +62,7 @@
           "title": "Vapour Dark Blue Low Rise Tapered Jeans, , large image number 1",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Denim & fashion"
         },
         {
@@ -71,7 +71,7 @@
           "title": "Vapour Dark Blue Low Rise Tapered Jeans, , large image number 2",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Denim & fashion"
         },
         {
@@ -80,34 +80,34 @@
           "title": "Vapour Dark Blue Low Rise Tapered Jeans, , large image number 3",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Denim & fashion"
         }
       ]
     },
     "guess-g11-light": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "guess-g11-dark": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "levis-501-dark": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "levis-501-medium": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "sonic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://pages-a.sonicdrivein.com/deals/",
@@ -115,24 +115,24 @@
           "title": "Deals | Sonic",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Restaurants"
         }
       ]
     },
     "burger-king": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "mcdonalds": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "hidden-valley-ranch": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://www.hiddenvalley.com/recipe-collections/serve-it-or-skip-it-recipe-collection/",
@@ -140,7 +140,7 @@
           "title": "Serve It or Skip It Recipe Collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Food & recipes"
         },
         {
@@ -149,7 +149,7 @@
           "title": "Serve It or Skip It Recipe Collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Food & recipes"
         },
         {
@@ -158,7 +158,7 @@
           "title": "Serve It or Skip It Recipe Collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Food & recipes"
         },
         {
@@ -167,7 +167,7 @@
           "title": "Serve It or Skip It Recipe Collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Food & recipes"
         },
         {
@@ -176,7 +176,7 @@
           "title": "Hidden Valley Ranch Products",
           "kind": "website",
           "description": "Try our bottled dressings, dips, mixes, & seasonings for bold flavors you are sure to love. Our products are a convenient and delicious way to improve...",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Food & recipes"
         },
         {
@@ -185,14 +185,14 @@
           "title": "Ranch Condiments | Hidden Valley™ Ranch",
           "kind": "website",
           "description": "Explore all Hidden Valley™ Ranch condiments—Original Ranch, flavored Ranch varieties, plus lighter and plant-based options for a range of dietary preferences.",
-          "checked_at": "2026-11-06T11:18:41.725778Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Food & recipes"
         }
       ]
     },
     "mcdonalds-big-mac-deals": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T11:18:41.725778Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "burger-king-chicken-2026": {
@@ -6219,12 +6219,12 @@
     },
     "durable-hydro-flask": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "durable-therm-a-rest": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://cascadedesigns.com/blogs/thermarest-gear/ultimate-guide-sleeping-pads",
@@ -6232,7 +6232,7 @@
           "title": "THE ULTIMATE GUIDE TO THERM-A-REST SLEEPING PADS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6241,7 +6241,7 @@
           "title": "THE ULTIMATE GUIDE TO THERM-A-REST SLEEPING BAGS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6250,7 +6250,7 @@
           "title": "THE ULTIMATE GUIDE TO THERM-A-REST PILLOWS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6259,7 +6259,7 @@
           "title": "Therm-a-Rest® - Sleeping Pads, Bags & Outdoor Comfort Gear | Cascade Designs",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6268,7 +6268,7 @@
           "title": "NeoLoft™ Sleeping Pad - Regular",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "249.95",
@@ -6283,7 +6283,7 @@
           "title": "NeoLoft™ Sleeping Pad",
           "kind": "product",
           "description": "Merging the cutting-edge innovation of ultralight pads with the supreme comfort of car camping pads, the NeoLoft air pad takes backpacking comfort to a whole new level.",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "249.95",
@@ -6298,7 +6298,7 @@
           "title": "Synergy™ Luxe Sheets - 30\" Coupler - 30 Inch Coupler",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "57.89",
@@ -6313,7 +6313,7 @@
           "title": "Synergy™ Luxe Sheets - 30\" Coupler",
           "kind": "product",
           "description": "Add an exceptional next-to-skin comfort boost for quilt-based sleep systems.",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "57.89",
@@ -6326,7 +6326,7 @@
     },
     "durable-msr-mountain-safety-research": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://cascadedesigns.com/blogs/msr-gear-guides/ultimate-guide-msr-tents",
@@ -6334,7 +6334,7 @@
           "title": "THE ULTIMATE GUIDE TO MSR TENTS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6343,7 +6343,7 @@
           "title": "A GUIDE TO MSR BACKPACKING STOVES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6352,7 +6352,7 @@
           "title": "MSR WATER TREATMENT GUIDE",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6361,7 +6361,7 @@
           "title": "THE ULTIMATE GUIDE TO MSR SNOWSHOES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6370,7 +6370,7 @@
           "title": "Dromedary® Bags - 4 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "51.95",
@@ -6385,7 +6385,7 @@
           "title": "Dromedary® Bags - 6 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "59.95",
@@ -6400,7 +6400,7 @@
           "title": "Dromedary® Bags - 10 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "64.95",
@@ -6415,7 +6415,7 @@
           "title": "Dromedary® Bags",
           "kind": "product",
           "description": "Our burliest medium-to-large capacity water storage and delivery systems.",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "51.95",
@@ -6428,12 +6428,12 @@
     },
     "durable-coleman-classic-camp-stoves": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "durable-primus": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://primusequipment.com/collections/vandringsutrustning",
@@ -6441,7 +6441,7 @@
           "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6450,7 +6450,7 @@
           "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6459,7 +6459,7 @@
           "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6468,7 +6468,7 @@
           "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6477,7 +6477,7 @@
           "title": "Lite Ultra Stove System 1.2L",
           "kind": "product",
           "description": "Lite Ultra XL Stove System är ett kompakt stormkök för dig som rör dig snabbt och packar lätt. Med en 1,2-literskastrull och en totalvikt på endast 290 g (brännare + kastrull) passar det lika bra för solovandraren som för det lilla sällskapet. Minimalistisk de",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1999.00",
@@ -6492,7 +6492,7 @@
           "title": "Lite Plus Stove System II 0.8L - BLACK",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1699.00",
@@ -6507,7 +6507,7 @@
           "title": "Lite Plus Stove System II 0.8L - GREEN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1699.00",
@@ -6522,7 +6522,7 @@
           "title": "Lite Plus Stove System II 0.8L - BLUE",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1699.00",
@@ -6535,7 +6535,7 @@
     },
     "durable-cascade-designs": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://cascadedesigns.com/careers",
@@ -6543,7 +6543,7 @@
           "title": "WE ARE HIRING!",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6552,7 +6552,7 @@
           "title": "OUR SUSTAINABILITY INITIATIVES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6561,7 +6561,7 @@
           "title": "Cascade Designs, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6570,7 +6570,7 @@
           "title": "Cascade Designs, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6579,7 +6579,7 @@
           "title": "Changing Poncho - Botanical / S/M",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "69.95",
@@ -6594,7 +6594,7 @@
           "title": "Changing Poncho - Botanical / L/XL",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "69.95",
@@ -6609,7 +6609,7 @@
           "title": "Changing Poncho - Retro Curve / S/M",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "69.95",
@@ -6624,7 +6624,7 @@
           "title": "Changing Poncho - Retro Curve / L/XL",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "69.95",
@@ -6637,22 +6637,22 @@
     },
     "durable-montblanc": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "durable-lamy": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "durable-fisher-space-pen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "durable-saddleback-leather": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://saddlebackleather.com/",
@@ -6660,7 +6660,7 @@
           "title": "10\" Convertible Crossbody in Tobacco, angled front view with buckled flap and strap",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6669,7 +6669,7 @@
           "title": "10\" Convertible Crossbody in Tobacco, worn as a backpack by a woman in a denim jacket outdoors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6678,7 +6678,7 @@
           "title": "12\" Drawstring Backpack in Dark Coffee Brown, front view with buckled flap and drawstring ties",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6687,7 +6687,7 @@
           "title": "12\" Drawstring Backpack in Tobacco, worn by a woman watching two rhinos in the African bush",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6696,7 +6696,7 @@
           "title": "10\" Convertible Crossbody - Black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -6706,7 +6706,7 @@
           "title": "10\" Convertible Crossbody - Chestnut",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "249.00",
@@ -6721,7 +6721,7 @@
           "title": "10\" Convertible Crossbody - Dark Coffee Brown",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -6731,7 +6731,7 @@
           "title": "10\" Convertible Crossbody - Tobacco",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "249.00",
@@ -6744,12 +6744,12 @@
     },
     "durable-tanner-goods": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": []
     },
     "durable-fox-umbrellas": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://www.foxumbrellas.com/",
@@ -6757,7 +6757,7 @@
           "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6766,7 +6766,7 @@
           "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6775,7 +6775,7 @@
           "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6784,7 +6784,7 @@
           "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6793,7 +6793,7 @@
           "title": "GT29 Nickel Dragon Head (NEW 2026)",
           "kind": "product",
           "description": "This umbrella comes with a Nickel (Silver) Finish Dragon Head on a straight stem handle with Nickel Tip Cup, the umbrella is made on a 25\" Classic Fox Steel Tube Frame (brown tube with black ribs) with a Best Polyester cover/canopy. This umbrella also comes wi",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -6803,7 +6803,7 @@
           "title": "GT19S Brown Fox Head (NEW 2026)",
           "kind": "product",
           "description": "This umbrella comes with a Brown Finish Fox Head on a straight stem handle with Gilt Tip Cup, the umbrella is made on a 25\" Classic Fox Steel Tube Frame (brown tube with black ribs) with a Best Polyester cover/canopy. This umbrella also comes with a matching o",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -6813,7 +6813,7 @@
           "title": "GT1 Hardwood (4 Handle Choices)",
           "kind": "product",
           "description": "This polished hardwood handle umbrella is available with a choice of four different polished hardwood handles. The handles available are Medium Brown, Dark Brown, Light Grained and Dark Grained. This umbrella is made on a 25\" Classic Fox Steel Tube Frame (brow",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "157.00",
@@ -6827,7 +6827,7 @@
     },
     "durable-kaweco": {
       "schema_version": 1,
-      "attempted_at": "2026-11-06T10:18:44.806258Z",
+      "attempted_at": "2026-11-06T17:18:44.026500Z",
       "items": [
         {
           "url": "https://www.kaweco-pen.com/",
@@ -6835,7 +6835,7 @@
           "title": "Kaweco_Piston_Sport_Bordeaux_Startseite_XXL",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6844,7 +6844,7 @@
           "title": "Kaweco_Piston_Sport_Bordeaux_Startseite_vert",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6853,7 +6853,7 @@
           "title": "Kaweco PISTON SPORT AL Solo Bordeaux/Gold",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6862,7 +6862,7 @@
           "title": "Kaweco PISTON SPORT AL Solo Bordeaux/Gold",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-06T10:18:44.806258Z",
+          "checked_at": "2026-11-06T17:18:44.026500Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
