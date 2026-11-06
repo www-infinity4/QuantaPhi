@@ -123,16 +123,43 @@ export function gameLiveStatus(payload){
  if(state==='preview'||/scheduled|warmup|pre-game/.test(detailed))return 'scheduled';
  return 'unknown';
 }
-export function eligibleQuickAds(now=Date.now()){
+// DB records are accepted only from the reviewed first-party Worker response.
+// Client-side checks defend against malformed rows; server approval, source,
+// image-rights and sponsorship evidence are the publishing authority.
+export function reviewedCatalogAds(rows=[]){
+ if(!Array.isArray(rows))return [];
+ const validUrl=x=>{try{const u=new URL(x);return u.protocol==='https:'&&!u.username&&!u.password&&!!u.hostname}catch{return false}};
+ const validId=x=>typeof x==='string'&&/^[a-z0-9][a-z0-9-]{0,63}$/.test(x);
+ return rows.filter(r=>r&&validId(r.creative_id)&&validId(r.equivalence_key)&&
+  ['house','editorial','sponsored'].includes(r.kind)&&r.review_state==='approved'&&
+  ['owned','licensed'].includes(r.image_rights)&&
+  (r.kind!=='sponsored'||validUrl(r.sponsor_evidence_url))&&
+  validUrl(r.destination_url)&&validUrl(r.source_url)&&validUrl(r.image_url)&&
+  typeof r.name==='string'&&r.name.length>0&&r.name.length<=90&&
+  typeof r.tagline==='string'&&r.tagline.length<=180&&
+  typeof r.category==='string'&&r.category.length<=40&&
+  /^#[0-9a-fA-F]{6}$/.test(r.tone||'')).map(r=>Object.freeze({
+   id:'catalog:'+r.creative_id,equivalenceKey:'catalog:'+r.equivalence_key,
+   name:r.name,tagline:r.tagline,category:r.category,href:r.destination_url,
+   imageUrl:r.image_url,tone:r.tone,kind:r.kind,
+   disclosure:r.kind==='sponsored'?'Sponsored · approved creative':
+    r.kind==='house'?'QuantaPhi house spotlight · not paid placement':
+    'Independent editorial discovery · not a paid ad'
+  }));
+}
+export function eligibleQuickAds(now=Date.now(),catalogRows=[]){
  const campaign=quickAdCampaign(now);
  const ads=campaign==='world-series'?QUICK_ADS:campaign==='infinity-house'?HOUSE_ADS:[];
- return ads.filter(a=>isOfficialUrl(a.href,a.id));
+ const builtIn=ads.filter(a=>isOfficialUrl(a.href,a.id));
+ return campaign==='infinity-house'?[...builtIn,...reviewedCatalogAds(catalogRows)]:builtIn;
 }
 // A creative may appear once only. Exhaustion is a valid result; never silently
 // reset the selection queue or re-skin a previous ad to evade the history.
-export function chooseQuickAd(context={},viewCounts={},recent=[],now=Date.now()){
- const eligible=eligibleQuickAds(now);if(!eligible.length)return null;
- const pool=eligible.filter(a=>!(Number(viewCounts[a.id])>0)&&!recent.includes(a.id));
+export function chooseQuickAd(context={},viewCounts={},recent=[],now=Date.now(),catalogRows=[]){
+ const eligible=eligibleQuickAds(now,catalogRows);if(!eligible.length)return null;
+ const pool=eligible.filter(a=>!(Number(viewCounts[a.id])>0)&&
+  !(a.equivalenceKey&&Number(viewCounts[a.equivalenceKey])>0)&&
+  !recent.includes(a.id));
  if(!pool.length)return null;
  const topic=String(context.category||'').toLowerCase();
  const card=String(context.title||'').toLowerCase();
