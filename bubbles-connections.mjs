@@ -334,16 +334,10 @@ export function mountConnections(container,{token}) {
       const alreadyConnected=Array.isArray(dataAccounts.accounts)&&dataAccounts.accounts.some(account=>
         account.provider==='cloudflare'&&account.status==='connected'&&
         Number.isFinite(account.expiresAt)&&account.expiresAt>Date.now()+30000);
-      if(!cloudflareRecoveryAttempted&&!client.pending&&!alreadyConnected){
-        cloudflareRecoveryAttempted=true;
-        try {
-          const recovered=await client.call('/handoff/cloudflare/resume',{},CLOUDFLARE_HANDOFF_TIMEOUT_MS);
-          if(recovered.status==='connected'&&recovered.account)
-            dataAccounts=await client.call('/accounts');
-        } catch(error) {
-          cloudflareRecoveryFailure=providerSignInErrorMessage(error?.message,'cloudflare');
-        }
-      }
+      // Do not hold the sign-in button hostage to a stalled 45-second
+      // recovery check. Build the card and attach its click handler first.
+      const shouldRecover=!cloudflareRecoveryAttempted&&!client.pending&&!alreadyConnected;
+      if(shouldRecover)cloudflareRecoveryAttempted=true;
       // An account read started before OAuth finished must not repaint older
       // sign-in buttons after the verified connection has been loaded.
       if(version!==loadVersion)return;
@@ -388,8 +382,14 @@ export function mountConnections(container,{token}) {
         button.type='button';button.disabled=Boolean(client.pending);button.dataset.provider=provider.id;
         button.classList.add('ba-signin-button');
         button.setAttribute('aria-label',button.textContent);
-        const signInStatus=provider.id==='google'?googleStatus:status;
+        // Cloudflare errors must appear beside the button the visitor
+        // tapped, not on a distant status line above the entire catalog.
+        const localCloudflareStatus=provider.id==='cloudflare'?element('p','','ba-muted'):null;
+        if(localCloudflareStatus)localCloudflareStatus.setAttribute('role','status');
+        const signInStatus=provider.id==='google'?googleStatus:
+          localCloudflareStatus||status;
         if(provider.id==='google')card.append(scopes,button,googleStatus);
+        else if(localCloudflareStatus)card.append(button,localCloudflareStatus);
         else card.append(button);
         if(provider.id==='cloudflare'){
           card.append(element('p','Bubbles has not confirmed a saved Cloudflare authorization for this wallet. It checked for a previously received return without opening another sign-in. Cloudflare dashboard login alone does not complete this connection.','ba-muted'));
@@ -405,12 +405,13 @@ export function mountConnections(container,{token}) {
         }
         button.addEventListener('click',async()=>{
           if(client.pending){signInStatus.textContent='Finish or cancel the current sign-in first.';return;}
-          // A Cloudflare client can require its full toolkit at consent time.
-          // Only request it when the server advertises that capability.
-          const fullCloudflare=provider.id==='cloudflare'&&availableActions.includes('owner.full');
+          // Connecting an account needs only the two registered identity
+          // scopes. A 386-scope project toolkit is a separate explicit review.
+          // Never send a user to a huge owner.full consent URL for sign-in.
+          const fullCloudflare=provider.id==='cloudflare'&&upgrade&&availableActions.includes('owner.full');
           const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):
-            fullCloudflare?['owner.full']:
-            provider.id==='cloudflare'&&!upgrade?['account.read']:availableActions;
+            provider.id==='cloudflare'&&!upgrade?['account.read']:
+            fullCloudflare?['owner.full']:availableActions;
           if(!actions.length){signInStatus.textContent='Choose at least one Google permission above to continue.';return;}
           button.disabled=true;button.setAttribute('aria-busy','true');
           signInStatus.textContent=fullCloudflare?
@@ -672,6 +673,18 @@ export function mountConnections(container,{token}) {
         cloudflareRecoveryFailure?cloudflareRecoveryFailure:
         dataAccounts.accounts.length?'Account connection status verified.':'No connected accounts yet.';
       cancel.hidden=!client.pending;
+      if(shouldRecover){
+        // Recovery is wallet-bound and read-only until the provider token is
+        // actually exchanged; it must never delay attaching the login button.
+        void client.call('/handoff/cloudflare/resume',{},CLOUDFLARE_HANDOFF_TIMEOUT_MS)
+          .then(recovered=>{
+            if(recovered.status==='connected'&&recovered.account&&!client.pending)
+              return load();
+          }).catch(error=>{
+            cloudflareRecoveryFailure=providerSignInErrorMessage(error?.message,'cloudflare');
+            if(version===loadVersion&&!client.pending)status.textContent=cloudflareRecoveryFailure;
+          });
+      }
       return signedIn;
     }catch(error) {
       if(version===loadVersion)status.textContent=error?.message==='verified_wallet_required'?
