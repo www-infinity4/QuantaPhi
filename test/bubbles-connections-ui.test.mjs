@@ -590,3 +590,12 @@ test('Cloudflare OAuth code exchange never uses the unsupported Workers redirect
  assert.deepEqual(connected.grantedActions,['account.read']);
  assert.equal(calls.length,2);
 });
+
+test('Google OAuth redirect status stays sanitized across Worker completion boundary',async()=>{
+ const {connectionFailureCode,safeConnectionFailure}=await import('../workers/bubbles-connections/completion.mjs');
+ const code=connectionFailureCode(Object.assign(Error('google_exchange_302'),{connectionStage:'exchange'}));
+ assert.equal(code,'google_exchange_302');
+ assert.equal(safeConnectionFailure(code),true);
+ assert.match(providerSignInErrorMessage(code,'google'),/unexpected redirect/);
+ assert.ok(!providerSignInErrorMessage(code,'google').includes('private-code'));
+});
