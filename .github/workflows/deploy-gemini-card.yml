@@ -1,0 +1,92 @@
+name: Gemini quick card guarded deployment
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'workers/infinity-rogers/gemini-card.mjs'
+      - 'workers/infinity-rogers/worker.js'
+      - 'workers/infinity-rogers/wrangler.toml'
+      - '.github/workflows/deploy-gemini-card.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: gemini-card-prod-guarded-deploy
+  cancel-in-progress: false
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test signed Google Gemini and existing card behavior
+        run: |
+          node --check workers/infinity-rogers/worker.js
+          node --check workers/infinity-rogers/gemini-card.mjs
+          node --check source-quick-cards.mjs
+          node --test test/gemini-card.test.mjs test/source-quick-cards.test.mjs test/bubbles-ai-collaboration.test.mjs test/chatgpt-official-viewer.test.mjs test/integra-automation-router.test.mjs test/bubbles-connections-ui.test.mjs
+      - name: Dry-run existing model Worker bundle
+        run: |
+          npx --yes wrangler@4 deploy --config workers/infinity-rogers/wrangler.toml --dry-run --outdir /tmp/gemini-card-bundle
+          test -s /tmp/gemini-card-bundle/worker.js
+      - name: Verify production Gemini secret and existing Worker bindings
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          test -n "${CLOUDFLARE_API_TOKEN:-}"
+          test -n "${CLOUDFLARE_ACCOUNT_ID:-}"
+          curl --silent --show-error --fail-with-body \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/infinity-rogers/settings" \
+            -o /tmp/infinity-rogers-before.json
+          node --input-type=module <<'NODE'
+          import {readFileSync} from 'node:fs';
+          const data=JSON.parse(readFileSync('/tmp/infinity-rogers-before.json','utf8'));
+          if(data.success!==true)throw Error('Existing Worker settings are unreadable; no deployment');
+          const map=new Map((data.result?.bindings||[]).map(b=>[b.name,b]));
+          for(const [name,type] of Object.entries({AI:'ai',METER_DB:'d1',BRAIN:'service',GEMINI_API_KEY:'secret_text'})){
+            if(map.get(name)?.type!==type)throw Error('Existing production model binding missing or different: '+name);
+          }
+          // Every non-secret live binding must be represented in the source file.
+          for(const item of map.values()){
+            if(['secret_text','plain_text'].includes(item.type))continue;
+            if(!['AI','METER_DB','BRAIN','CONNECTIONS_SERVICE'].includes(item.name))
+              throw Error('Undeclared existing binding '+item.name+' requires review before deploying');
+          }
+          console.log('Verified existing model Worker binding contract and Gemini secret before deployment.');
+          NODE
+      - name: Deploy Gemini in-card endpoint preserving production secrets
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 deploy --config workers/infinity-rogers/wrangler.toml --keep-vars
+      - name: Verify live model Worker retained its binding contract
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          curl --silent --show-error --fail-with-body \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/infinity-rogers/settings" \
+            -o /tmp/infinity-rogers-after.json
+          node --input-type=module <<'NODE'
+          import {readFileSync} from 'node:fs';
+          const before=JSON.parse(readFileSync('/tmp/infinity-rogers-before.json','utf8')).result;
+          const after=JSON.parse(readFileSync('/tmp/infinity-rogers-after.json','utf8'));
+          if(!after.success)throw Error('Live Worker readback failed');
+          const current=new Map((after.result?.bindings||[]).map(x=>[x.name,x]));
+          for(const b of before.bindings||[]){
+            const now=current.get(b.name);
+            if(!now||now.type!==b.type)throw Error('Live model Worker binding removed or changed: '+b.name);
+            if(b.type==='plain_text'&&now.text!==b.text)throw Error('Live model Worker variable changed: '+b.name);
+          }
+          if(current.get('CONNECTIONS_SERVICE')?.type!=='service')
+            throw Error('New Google connection verification binding missing');
+          console.log('Production Gemini card deployed; all previous Worker bindings preserved.');
+          NODE
