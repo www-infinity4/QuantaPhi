@@ -19,7 +19,7 @@ if(root&&root.dataset.officialRockMounted!=='true'){
   '#classicRockOfficialMusicCard .cr-radio-name{font-size:16px;font-weight:800;line-height:1.4;}',
   '#classicRockOfficialMusicCard .cr-radio-status{font-size:12px;line-height:1.45;color:#536c74;overflow-wrap:anywhere;}',
   '#classicRockOfficialMusicCard .cr-artist-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:11px 0 14px;}',
-  '#classicRockOfficialMusicCard .cr-artist{min-width:0;min-height:58px;border:1px solid #cadbde;border-radius:13px;padding:9px 11px;background:#fff;color:#25444a;text-align:left;font:700 15px/1.4 inherit;cursor:pointer;overflow-wrap:anywhere;}',
+  '#classicRockOfficialMusicCard .cr-artist{min-width:0;min-height:58px;border:1px solid #cadbde;border-radius:13px;padding:9px 11px;background:#fff;color:#25444a;text-align:left;font:inherit;font-size:15px;font-weight:700;line-height:1.4;cursor:pointer;overflow-wrap:anywhere;}',
   '#classicRockOfficialMusicCard .cr-artist[aria-pressed="true"]{border-color:#0d737a;background:#eef9f9;}',
   '#classicRockOfficialMusicCard .cr-radio-play:focus-visible,#classicRockOfficialMusicCard .cr-artist:focus-visible,#classicRockOfficialMusicCard .cr-offer:focus-visible{outline:3px solid #9c5dd6;outline-offset:3px;}',
   '#classicRockOfficialMusicCard .cr-offers{border-top:1px solid #cadbde;padding-top:12px;}',
