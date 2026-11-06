@@ -38,7 +38,7 @@ export function googleAdapter(config, request = (...args)=>globalThis.fetch(...a
       if (!actions.length || actions.some(a => !Object.hasOwn(GOOGLE_SCOPES, a))) throw Error('unsupported_action');
       const url = new URL('https://accounts.google.com/o/oauth2/v2/auth');
       url.search = new URLSearchParams({client_id:config.clientId, redirect_uri:redirectUri, response_type:'code',
-        scope:['openid','email',...new Set(actions.map(a => GOOGLE_SCOPES[a]))].join(' '),
+        scope:[...new Set(['openid','email',...actions.map(a => GOOGLE_SCOPES[a])])].join(' '),
         state, code_challenge:challenge, code_challenge_method:'S256', access_type:'offline',
         prompt:'consent select_account', include_granted_scopes:'true'}).toString();
       return url.href;
