@@ -216,10 +216,9 @@
     } else if(tracks.length) {
       playbackRequested = true;
       failures = 0;
-      if (typeof window !== 'undefined' && typeof CustomEvent === 'function' && typeof window.dispatchEvent === 'function') {
+      if (typeof window !== 'undefined' && typeof CustomEvent === 'function' && typeof window.dispatchEvent === 'function')
         window.dispatchEvent(new CustomEvent('infinity:music-focus',{detail:{player:'radio'}}));
         window.dispatchEvent(new CustomEvent('quantaphi:infinity-radio-play'));
-      }
       // A deliberate new Play gesture retries temporary network failures.
       unavailableSources.clear();
       skippedSinceSuccess=0;
@@ -245,10 +244,10 @@
     playbackRequested=false; ++generation; audio.pause(); setPlaying(false);
     status.textContent='Paused for another live radio station.';
   });
-  if (typeof window !== 'undefined' && typeof window.addEventListener === 'function')
-    window.addEventListener('infinity:music-focus',event=>{
-      if(event.detail?.player!=='artists'||!playbackRequested)return;
-      playbackRequested=false;++generation;audio.pause();setPlaying(false);
-      status.textContent='Paused for artist music';
-    });
+  if(typeof window!=='undefined'&&typeof window.addEventListener==='function')
+  window.addEventListener('infinity:music-focus',event=>{
+    if(event.detail?.player!=='artists'||!playbackRequested)return;
+    playbackRequested=false;++generation;audio.pause();setPlaying(false);
+    status.textContent='Paused for artist music';
+  });
 })();

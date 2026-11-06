@@ -97,3 +97,8 @@ Owner reiterated requirements: Infinity Radio remains playing inside News Phi; c
 - Existing Playwright Android scroll test on the merged preview observed a 91px viewport jump after a carousel arrow click (threshold 30px), while 80 other Chromium tests passed. The newly introduced asynchronous artist-offer rail above the deck was not requested for this repair and is a plausible layout-shift source; it has been removed from the homepage integration rather than weakening the scroll safety test. No causal certainty claimed before exact-head rerun.
 - This revision brings forward only the six compact artist controls, one visible provider player, and the minimal radio-focus handshake. Existing band-linked merchandise panes remain unchanged by the scope reduction. No album-offer rail, new ad placements, or new wallet effects.
 - Owner acceptance remains: a real Android playback test, no external music-button navigation, carousel position stability, and source-backed provider availability; exact-head CI, review and published readback are still required.
+
+## 2026-11-06 corrected release reconciliation
+
+- Auth regression found in preview: old homepage import unintentionally reverted new Bubbles cache pin `20261105-google-android-return4`, triggering separate Android, owner inbox and source CI. Reconstructed homepage by applying only three music script imports to current `main`; Bubbles/Google/Cloudflare code and new pins remain untouched. Maintained main QRadio failure recovery, introducing only shared focus event + listener.
+- Important test gate: direct Android scroll browser check has fluctuated; isolated synchronous music-controller tests passed. No production/phone playback claimed, even after CI. No extra album-offer strip on this branch.
