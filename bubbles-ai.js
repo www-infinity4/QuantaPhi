@@ -968,7 +968,7 @@ async function checkPanelGate(){
  syncOwnerIdentity();
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261105-provider-status2');
+  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261105-cloudflare-google-status3');
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
   if(!chatGateMounted)throw Error('signin_gate_mount_failed');
  }catch{
