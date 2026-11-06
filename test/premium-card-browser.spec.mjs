@@ -33,11 +33,11 @@ test('available-card chooser exposes original tools plus all 17 actual source se
 test('Following keeps only opted-in sources and shelf mode reveals restored cards',async({page})=>{
  await fixtures(page);await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#oracleCardStage [data-source-id="pcgs"]')).toBeVisible();
- await page.locator('#oracleCardFollow').click();await page.getByRole('tab',{name:'Following',exact:true}).click();
+ await page.locator('#oracleCardFollow').click();await page.locator('#oracleCardDeck').getByRole('tab',{name:'Following',exact:true}).click();
  await expect(page.locator('#oracleCardInventory')).toHaveText('Choose a real interactive card');
  await expect(page.locator('#oracleCardChooser option[value="source-pcgs"]')).toHaveCount(1);
  await expect(page.locator('#oracleCardChooser option[value="source-heritage"]')).toHaveCount(0);
- await page.getByRole('tab',{name:'Public',exact:true}).click();await page.locator('#oracleCardScroll').click();
+ await page.locator('#oracleCardDeck').getByRole('tab',{name:'Public',exact:true}).click();await page.locator('#oracleCardScroll').click();
  await expect(page.locator('#premiumSourceCards')).toBeVisible();await expect(page.locator('#siteQuickCards')).toBeVisible();
 });
 test('unavailable sources are explicit and do not fabricate an item',async({page})=>{
@@ -72,7 +72,7 @@ test('Following displays genuine publisher listings only after Follow and preser
  const listing=page.locator('#oracleFollowingFeed');
  await expect(listing).toBeHidden();
  await page.locator('#oracleCardFollow').click();
- await page.getByRole('tab',{name:'Following',exact:true}).click();
+ await page.locator('#oracleCardDeck').getByRole('tab',{name:'Following',exact:true}).click();
  await expect(listing).toBeVisible();
  await expect(listing.getByText('1885 Morgan Silver Dollar · Heritage lot')).toBeVisible({timeout:20000});
  await expect(listing.getByRole('link',{name:'View original listing'})).toHaveAttribute('href',lot);

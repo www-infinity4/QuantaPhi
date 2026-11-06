@@ -19,16 +19,11 @@ test('Android home softly settles at section boundaries without scroll trapping'
  assert.doesNotMatch(css,/scroll-snap-type:\s*y mandatory/);
 });
 
-test('Card arrows move to the beginning only after a real card change',()=>{
- assert.match(deck,/function settleCardViewport\(/);
- assert.match(deck,/function moveAndSettle\(direction\)/);
- assert.match(deck,/if\(active&&active!==before\)settleCardViewport\(\)/);
- assert.match(deck,/next\.addEventListener\('click',\(\)=>moveAndSettle\(1\)\)/);
- assert.match(deck,/prev\.addEventListener\('click',\(\)=>moveAndSettle\(-1\)\)/);
- assert.match(deck,/if\(active\?\.id!==cardId\|\|expanded\)return/);
- assert.match(deck,/prefers-reduced-motion: reduce/);
- assert.ok(deck.includes("(max-width: 650px) and (pointer: coarse)"));
- assert.ok(deck.includes("host.querySelector('.oracle-card-deck-nav')?.scrollIntoView"));
+test('Card arrows update the main viewer without moving the Android page',()=>{
+ assert.match(deck,/next\.addEventListener\('click',\(\)=>advance\(1\)\)/);
+ assert.match(deck,/prev\.addEventListener\('click',\(\)=>advance\(-1\)\)/);
+ assert.doesNotMatch(deck,/settleCardViewport|settleTopGesture/);
+ assert.doesNotMatch(deck,/host\.querySelector\('\.oracle-card-deck-nav'\)\?\.scrollIntoView/);
 });
 
 test('Scroll repair does not take ownership of wallet, sign-in, media, or card focus',()=>{

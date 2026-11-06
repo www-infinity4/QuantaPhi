@@ -495,69 +495,8 @@ function advance(direction){
  const i=active?list.indexOf(active):-1;
  show(list[(i+1+list.length)%list.length]);
 }
-// Continue a *visual shopping* sequence only after its verified companion
-// offers have been presented. Media, forms, followed feeds and user engagement
-// counters must not be consumed by passive auto-advance.
-const showcaseVisited=new Set();
-let showcaseLastInteraction=0,showcaseTransition=false;
-document.addEventListener('pointerdown',event=>{
- if(host.contains(event.target))showcaseLastInteraction=Date.now();
-},{capture:true,passive:true});
-document.addEventListener('keydown',event=>{
- if(host.contains(event.target))showcaseLastInteraction=Date.now();
-},true);
-window.addEventListener('quantaphi:showcase-chapter-complete',async event=>{
- const selected=active;
- if(!selected||selected.feedId!==event.detail?.id||!selected.id.startsWith('source-')||
-  selectedTab!=='public'||expanded||showcaseTransition||document.hidden)return;
- const eligibleSources=eligible().filter(e=>e.id.startsWith('source-')&&
-  e.node?.dataset?.sourceReady==='true').map(e=>({
-   id:e.feedId,title:e.title,category:e.category,
-   description:e.node.querySelector('.iac-intro,.qbp-description,.iqc-description')?.textContent||e.feature,
-   photo:Boolean(e.node.querySelector('.iac-media img[src],.premium-selected img[src],.iqc-media img[src],img[src]')),
-   entry:e
- }));
- try{
-  const {pickNextShowcase,canShowcaseAdvance}=await import('/shopphi-showcase-core.mjs?v=20261101-connected1');
-  const media=[...stage.querySelectorAll('video,audio')];
-  const focused=Boolean(stage.querySelector('input:focus,textarea:focus,select:focus,[contenteditable="true"]:focus'));
-  let next=pickNextShowcase(eligibleSources,selected.feedId,showcaseVisited);
-  // The playlist is circular, but no offer repeats until the current round
-  // exhausts its genuine, image-backed companions.
-  if(!next){
-   showcaseVisited.clear();
-   next=pickNextShowcase(eligibleSources,selected.feedId,showcaseVisited);
-  }
-  const playable=media.some(m=>!m.paused&&!m.ended);
-  const stillVisible=host.getBoundingClientRect().bottom>0&&host.getBoundingClientRect().top<innerHeight;
-  if(!next||!canShowcaseAdvance({visible:stillVisible,hidden:document.hidden,
-   paused:false,reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches,
-   focused,playing:playable,editing:focused,
-   recencyMs:Date.now()-showcaseLastInteraction})||active!==selected)return;
-  showcaseVisited.add(selected.feedId);
-  showcaseTransition=true;
-  stage.classList.add('shopphi-hero-fading');
-  setTimeout(()=>{
-   // A visitor can focus a form or start media *during* the fade.
-   // The same safety checks must pass immediately before changing cards.
-   const rect=host.getBoundingClientRect();
-   const nowFocused=Boolean(stage.querySelector('input:focus,textarea:focus,select:focus,[contenteditable="true"]:focus'));
-   const nowPlaying=[...stage.querySelectorAll('video,audio')].some(m=>!m.paused&&!m.ended);
-   const safeNow=canShowcaseAdvance({
-    visible:rect.bottom>0&&rect.top<innerHeight,hidden:document.hidden,
-    paused:false,reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches,
-    focused:nowFocused,editing:nowFocused,playing:nowPlaying,
-    recencyMs:Date.now()-showcaseLastInteraction
-   });
-   if(safeNow&&active===selected&&!expanded&&selectedTab==='public'){
-    showcaseVisited.add(next.id);
-    show(next.entry,true,true);
-   }
-   stage.classList.remove('shopphi-hero-fading');
-   showcaseTransition=false;
-  },340);
- }catch{stage.classList.remove('shopphi-hero-fading');showcaseTransition=false;}
-});
+// The visitor controls the primary Quick Card. Passive ShopPhi rotations may
+// update related offers below it, never replace its player or active controls.
 cardoneButton?.addEventListener('click',()=>{
  viewerTouched=true;
  const entry=entries.find(x=>x.id===CARDONE_ID);
@@ -603,52 +542,21 @@ for(const button of host.querySelectorAll('[data-oracle-family]')){
   show(chosen);host.scrollIntoView?.({block:'start',behavior:'smooth'});
  });
 }
-// A deliberate short downward gesture from the restored Android header should
-// settle on the deck, even when Chromium's proximity snap threshold is too
-// small for the gap above the carousel. Do not intercept, preventDefault, or
-// modify scrolling when the user is already browsing below the top.
-let topGestureTimer=0;
-function settleTopGesture(deltaY,startedAtTop){
- if(!startedAtTop||deltaY<85||expanded||
-    !window.matchMedia?.('(max-width: 650px) and (pointer: coarse)')?.matches)return;
- const distance=host.getBoundingClientRect().top;
- if(distance<100||distance>1200)return;
- clearTimeout(topGestureTimer);
- topGestureTimer=setTimeout(()=>{
-  if(expanded||window.scrollY<20||window.scrollY>1200)return;
-  const top=host.getBoundingClientRect().top;
-  if(top>45&&top<700)host.scrollIntoView?.({block:'start',behavior:'smooth'});
- },160);
-}
-window.addEventListener('wheel',e=>settleTopGesture(e.deltaY,window.scrollY<35),{passive:true});
-let touchStartY=0,touchStartedAtTop=false;
-window.addEventListener('touchstart',e=>{
- touchStartedAtTop=window.scrollY<35;
- touchStartY=e.touches?.[0]?.clientY??0;
-},{passive:true});
-window.addEventListener('touchend',e=>{
- const endY=e.changedTouches?.[0]?.clientY??touchStartY;
- settleTopGesture(touchStartY-endY,touchStartedAtTop);
- touchStartedAtTop=false;
-},{passive:true});
-// Move the viewport only after a user changes cards, not when the deck
-// rotates automatically. Scroll to the deck (with arrows visible), not into
-// a tall card that could hide navigation above the phone viewport.
-function settleCardViewport(){
- if(!window.matchMedia?.('(max-width: 650px) and (pointer: coarse)')?.matches)return;
- const cardId=active?.id;
- requestAnimationFrame(()=>{
-  if(active?.id!==cardId||expanded)return;
-  host.querySelector('.oracle-card-deck-nav')?.scrollIntoView?.({block:'start',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth'});
- });
-}
-function moveAndSettle(direction){
- const before=active;
- advance(direction);
- if(active&&active!==before)settleCardViewport();
-}
-next.addEventListener('click',()=>moveAndSettle(1));
-prev.addEventListener('click',()=>moveAndSettle(-1));
+// Card navigation updates the existing viewer in place. Never move the
+// document viewport as a side effect of swipes, guesses or arrow controls.
+// A companion source points to a real already-mounted Quick Card, not a new
+// browser page. Move that original widget into the viewer on explicit tap.
+window.addEventListener('quantaphi:select-source-card',event=>{
+ const id=event.detail?.sourceId;
+ if(typeof id!=='string'||!/^[a-z0-9-]{2,100}$/.test(id))return;
+ const entry=entries.find(e=>e.feedId===id&&e.id==='source-'+id&&available(e));
+ if(!entry){status.textContent='That source card is not available in the current viewer.';return;}
+ viewerTouched=true;selectionVersion++;
+ if(!eligible().includes(entry)){selectedTab='public';updateTabs();}
+ show(entry);
+});
+next.addEventListener('click',()=>advance(1));
+prev.addEventListener('click',()=>advance(-1));
 scroll.addEventListener('click',()=>{
  expanded=!expanded;
  document.body.classList.toggle('oracle-shelf-open',expanded);

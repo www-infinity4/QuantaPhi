@@ -12,7 +12,7 @@ test('Owner commands are parsed and client JavaScript compiles',()=>{
  assert.doesNotMatch(bubbles,/requestRunner\(result\.ticket\.id/);
  assert.match(bubbles,/\/work\/run-next/);
  assert.match(bubbles,/queued_for_runner/);
- assert.match(bubbles,/ownerMode\.textContent='Owner mode connected/);
+ assert.match(bubbles,/ownerMode\.textContent='Signed in to Bubbles & Robot Brain/);
 });
 test('Brain action dispatch is server-authorized and only enqueues a runner cycle',()=>{
  const gate=brain.indexOf("if(path==='/work/run-next'");
