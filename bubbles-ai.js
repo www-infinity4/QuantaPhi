@@ -3026,13 +3026,19 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;
  // Additional natural-language route, without changing the original command matcher.
  if(namedCardWork&&!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue)directCoding=true;
+ // Repair of the first-party Bubbles or X Quick Card is explicitly a Robot
+ // Brain job. Do not turn it into a conversational direct GitHub 'assist'.
+ // Owner verification, trusted repository and runner receipts remain mandatory.
+ const knownQuantaRepair=!ownerGithubNonAction&&!createRepository&&!directRequest&&!pairedRepoWork
+  &&brainTools?.firstPartyRepairTarget?.(request)==='www-infinity4/QuantaPhi';
+ if(knownQuantaRepair)directCoding=false;
  // Grammar Phi may interpret an unusually worded direct engineering request
  // before the owner tool dispatcher. It returns ONLY a non-authorizing label.
  // Original user intent, verified owner session, repository and permissions
  // are still enforced independently. Never classify a screen observation.
  let neuralCoding=false;
  const neuralWorkCandidate=!embedded&&ownerReady&&!ownerGithubNonAction
-  &&!namedRecordBIssue&&!directCoding
+  &&!namedRecordBIssue&&!directCoding&&!knownQuantaRepair
   &&request.length>=8&&request.length<=4000
   // Do not require a magic opening phrase or a product-name keyword before
   // asking the existing model to interpret the current direct utterance.
@@ -3050,7 +3056,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     &&planned.receipt?.executed===false;
    // A model's label can only enable the already authenticated owner workflow;
    // it cannot create its own command or silently select a new repository.
-   if(neuralCoding&&!requestsAgents)directCoding=true;
+   if(neuralCoding&&!requestsAgents&&!knownQuantaRepair)directCoding=true;
   }catch{neuralCoding=false;}
  }
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
@@ -3101,6 +3107,20 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     (names.length>20?' (showing the first 20).':'')+' This is a verified read-only result; no files were changed.';
   }catch(error){
    workEvidence='I could not verify a GitHub repository list: '+String(error.message||error).slice(0,160)+'. No repository was changed.';
+  }
+ }
+ else if(!embedded&&knownQuantaRepair){
+  // One normal chat message now triggers the actual authenticated owner Brain
+  // endpoint and returns its real ticket status in this same conversation.
+  // A queued job is never described as completed or deployed.
+  workText.value=request;tools.open=true;
+  try{
+   const ticket=await submitWork(request,'explicit-user-command',imageWorkEvidence);
+   workEvidence=(await humanReplies()).workReply(ticket);
+   recordBrainNotice('Verified owner work ticket: '+ticket.id+' · '+ticket.repository+' · '+ticket.status);
+  }catch(error){
+   workEvidence='Bubbles could not confirm an owner work ticket: '+String(error.message||error).slice(0,190)+'. No code change or bot execution is being claimed.';
+   workStatus.textContent=workEvidence;
   }
  }
  else if(!embedded&&!ownerGithubNonAction&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){
@@ -4110,7 +4130,13 @@ async function submitWork(request,approval='explicit-click',imageEvidence=''){
  // A named issue explicitly targets its own repository, regardless of an
  // unrelated project the owner selected in an older conversation.
  const namedRecordBIssue=/\brecord\s?b\b/i.test(request)&&/\bissue\s*#?\s*2\b/i.test(request);
- if(!namedRecordBIssue&&!repositorySelectionExplicit&&!activeCardEvidence)await suggestRepositoryTargets(request,false);
+ const knownRepository=!namedRecordBIssue&&!repositorySelectionExplicit&&!activeCardEvidence
+  ?brainTools?.firstPartyRepairTarget?.(request):null;
+ if(knownRepository){
+  // Discard stale non-explicit picker hints for this known first-party site.
+  // Explicit selections or other named repositories keep their own scope.
+  repositorySelection.clear();repositorySelection.add(knownRepository);
+ }else if(!namedRecordBIssue&&!repositorySelectionExplicit&&!activeCardEvidence)await suggestRepositoryTargets(request,false);
  const repositories=namedRecordBIssue?['www-infinity4/RecordB']:[...repositorySelection].sort();
  if(!repositories.length)throw Error('Select at least one repository before creating a ticket.');
  if(repositoryPicker.dataset.submitting==='true')throw Error('Repository tickets are already being submitted.');
