@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T22:31:17.268591Z",
+  "checked_at": "2026-11-06T23:01:32.466418Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "northeastern vs virginia",
+      "query": "ohsaa football playoffs",
       "approx_searches": "500+",
-      "published_at": "2026-11-06T22:10:00Z",
+      "published_at": "2026-11-06T22:40:00Z",
       "related_news_urls": [
-        "https://virginiasports.com/news/2026/11/5/no-9-mens-basketball-hosts-northeastern-on-friday-at-5-pm",
-        "https://augustafreepress.com/news/uva-basketball-9-hoos-set-to-host-northeastern-on-friday-at-jpj/",
-        "https://sports.yahoo.com/articles/watch-uva-basketball-vs-northeastern-204509581.html"
+        "https://www.wkyc.com/article/sports/high-school/hs-football/ohsaa-football-playoffs-list-every-2nd-round-matchup-northeast-ohio-high-schools/95-d4e155ad-a23d-4489-9a41-73c5225d3d58",
+        "https://sports.yahoo.com/articles/ohio-high-school-playoff-football-220040708.html",
+        "https://www.nbc4i.com/sports/ffn/columbus-area-high-school-football-scores-and-highlights-nov-5-2026/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgc3hvhHPVWRUWwlPSlFEWw06kXXJIwP4eHDZmlNISVlci49uLeSgbzwrGzdQ",
-      "image_credit": "Virginia Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxIKcV0mbdSZQn3kRUOHYmzDPRHCxPvU21V-ccj-CyKw28abbshiug1c3UMFU",
+      "image_credit": "WKYC",
       "news": [
         {
-          "url": "https://virginiasports.com/news/2026/11/5/no-9-mens-basketball-hosts-northeastern-on-friday-at-5-pm",
-          "title": "No. 9 Men’s Basketball Hosts Northeastern on Friday at 5 p.m.",
-          "publisher": "Virginia Sports",
+          "url": "https://www.wkyc.com/article/sports/high-school/hs-football/ohsaa-football-playoffs-list-every-2nd-round-matchup-northeast-ohio-high-schools/95-d4e155ad-a23d-4489-9a41-73c5225d3d58",
+          "title": "OHSAA football playoffs: List of every 2nd-round matchup involving Northeast Ohio high schools",
+          "publisher": "WKYC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgc3hvhHPVWRUWwlPSlFEWw06kXXJIwP4eHDZmlNISVlci49uLeSgbzwrGzdQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxIKcV0mbdSZQn3kRUOHYmzDPRHCxPvU21V-ccj-CyKw28abbshiug1c3UMFU"
         },
         {
-          "url": "https://augustafreepress.com/news/uva-basketball-9-hoos-set-to-host-northeastern-on-friday-at-jpj/",
-          "title": "UVA Basketball: #9 ‘Hoos set to host Northeastern on Friday at JPJ",
-          "publisher": "Augusta Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZgYFUOrT9xEUA3uhLQkWe37K3brp2LwI0VTtSnQ09Zzs7HUX8jO_QBZxNAoA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-uva-basketball-vs-northeastern-204509581.html",
-          "title": "How to watch UVA basketball vs. Northeastern and GAME THREAD",
+          "url": "https://sports.yahoo.com/articles/ohio-high-school-playoff-football-220040708.html",
+          "title": "Ohio high school playoff football scores. See who is winning tonight",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAq9k74vFyMR_q_FjJpg_YArRBXUw78QypezrffZ7qNVATbwqw6IL7ynCI9pY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMXXnsRjS5KQU3EVAIGlE0qH3e8pwzOA8EW8yG2X35i6Sx9HTG3bN085HLNPQ"
+        },
+        {
+          "url": "https://www.nbc4i.com/sports/ffn/columbus-area-high-school-football-scores-and-highlights-nov-5-2026/",
+          "title": "Columbus-area high school football scores and highlights, Nov. 5, 2026",
+          "publisher": "NBC4 WCMH-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsu6rtuRnltXpyZ4xUEH1gl5tktGu0-9nAn-OqWxieYgTpLf5uTlGjZIeaerU"
         }
       ]
     },
     {
-      "query": "tulsa king square one",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T22:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66087039/?ref_=nmnw_art_perm",
-        "https://www.yahoo.com/entertainment/tv/articles/tulsa-king-star-gretchen-mol-211654878.html",
-        "https://www.tvinsider.com/1301741/tulsa-king-season-4-episode-4-gretchen-mol-interview-exclusive/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpBZV5hw1tuWm1jg7glvbx_rhN9bkymB2UaTtCmOicfFVsUpphuenpmOncqmc",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66087039/?ref_=nmnw_art_perm",
-          "title": "‘Tulsa King’ Season 4 Episode 4 Release Date, Time, Where to Watch and Preview",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpBZV5hw1tuWm1jg7glvbx_rhN9bkymB2UaTtCmOicfFVsUpphuenpmOncqmc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/tulsa-king-star-gretchen-mol-211654878.html",
-          "title": "‘Tulsa King’ Star Gretchen Mol Talks Reunion With Stallone And Creatives For Series’ Fourth Season",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvsgUfDO-W4slAuQIIz-plsYJ-IWhCM26XoahsPoY36y1uBbkOB3av-9LDpv0"
-        },
-        {
-          "url": "https://www.tvinsider.com/1301741/tulsa-king-season-4-episode-4-gretchen-mol-interview-exclusive/",
-          "title": "‘Tulsa King’: Gretchen Mol Reveals Amanda’s True Intentions With Dwight Manfredi (Exclusive)",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9daV3V0X2qejFvhjWXGFyKoHEF__hxxqRhrxc_BwKxktn0zOBOsH8KJrVHYU"
-        }
-      ]
-    },
-    {
-      "query": "nuno borges",
+      "query": "mizzou basketball",
       "approx_searches": "500+",
-      "published_at": "2026-11-06T22:00:00Z",
+      "published_at": "2026-11-06T22:40:00Z",
       "related_news_urls": [
-        "https://www.sofascore.com/pt/news/nuno-borges-atropela-ignacio-buse-por-6-0-6-2-no-atp-paris",
-        "https://www.abola.pt/noticias/nuno-borges-na-segunda-ronda-do-masters-1000-de-paris-2026110317065278106",
-        "https://bolamarela.pt/borges-e-os-primeiros-quartos-masters-1000-da-carreira-e-surreal-para-ser-honesto/"
+        "https://www.stltoday.com/sports/column/lynn-worthy/article_3018ee0d-fb19-4d1e-a355-ee6d6e42a78d.html",
+        "https://mutigers.com/news/2026/11/5/mens-basketball-faces-saint-louis-in-regions-bank-show-me-showdown",
+        "https://247sports.com/college/missouri/article/mizzou-basketball-tiger-tip-off-preview-saint-louis-292239015/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEFMtfW1szvEa5j8RyWr_z4uBCBSkBs-a8RFuzgFc917mpVh_wCcVqc-6tq_M",
-      "image_credit": "Sofascore",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaTRJg8YoW7PZYLnbRWzbqM2A4ZdEQ0cjmNrQMt4I1rM4fbqLqXHm3LxbpaIk",
+      "image_credit": "STLtoday.com",
       "news": [
         {
-          "url": "https://www.sofascore.com/pt/news/nuno-borges-atropela-ignacio-buse-por-6-0-6-2-no-atp-paris",
-          "title": "Nuno Borges atropela Ignacio Buse por 6-0, 6-2 no ATP Paris",
-          "publisher": "Sofascore",
+          "url": "https://www.stltoday.com/sports/column/lynn-worthy/article_3018ee0d-fb19-4d1e-a355-ee6d6e42a78d.html",
+          "title": "Worthy: Renewal of SLU-Mizzou rivalry deserves a tight game",
+          "publisher": "STLtoday.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEFMtfW1szvEa5j8RyWr_z4uBCBSkBs-a8RFuzgFc917mpVh_wCcVqc-6tq_M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaTRJg8YoW7PZYLnbRWzbqM2A4ZdEQ0cjmNrQMt4I1rM4fbqLqXHm3LxbpaIk"
         },
         {
-          "url": "https://www.abola.pt/noticias/nuno-borges-na-segunda-ronda-do-masters-1000-de-paris-2026110317065278106",
-          "title": "Nuno Borges na segunda ronda do Masters 1000 de Paris",
-          "publisher": "A Bola",
+          "url": "https://mutigers.com/news/2026/11/5/mens-basketball-faces-saint-louis-in-regions-bank-show-me-showdown",
+          "title": "Men's Basketball Faces Saint Louis in Regions Bank Show Me Showdown",
+          "publisher": "Mizzou Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoI43kF5E9cqWO3daOn8AX9MqXBf6LErxzdqT9AsDEeFcvWxmLULFD4ytYJNg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz_7FLPG9bstb9pO8ukfwryeWoopeNudElvcl3rPUSIpC8-melXahxWt-gxfw"
         },
         {
-          "url": "https://bolamarela.pt/borges-e-os-primeiros-quartos-masters-1000-da-carreira-e-surreal-para-ser-honesto/",
-          "title": "Borges e os primeiros ‘quartos’ Masters 1000 da carreira: «É surreal, para ser honesto»",
-          "publisher": "Bola Amarela",
+          "url": "https://247sports.com/college/missouri/article/mizzou-basketball-tiger-tip-off-preview-saint-louis-292239015/",
+          "title": "Tiger Tip-Off Preview: Saint Louis",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShD4HkuQrFMIIJ8GSsLJ-IgFYNhjrgP8gzmCJTZMcX9u1-WC9lsbxBYI7jrt8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqk_KkTzg4p8pkQjmaIIU_Ya07kQd-LGQcowkiyQn4yWzM390mBWZtejuVg_Q"
         }
       ]
     },
     {
-      "query": "loewe nightmare before christmas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T22:00:00Z",
-      "related_news_urls": [
-        "https://www.wallpaper.com/fashion-beauty/loewe-tim-burton-disney-the-nightmare-before-christmas-collection",
-        "https://variety.com/2026/shopping/news/tim-burton-loewe-nightmare-before-christmas-collection-1236940243/",
-        "https://www.phantasmag.com/articles-6/tim-burton-loewe-the-nightmare-before-christmas-collection"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7yKGcBsBPWmscSSmMqf7vMlxgX_Cfo47HBKsgY82TlmyBA3iokqQUmnHpwgQ",
-      "image_credit": "Wallpaper*",
-      "news": [
-        {
-          "url": "https://www.wallpaper.com/fashion-beauty/loewe-tim-burton-disney-the-nightmare-before-christmas-collection",
-          "title": "Loewe’s ‘The Nightmare Before Christmas’ collection makes for spooky festive gifting",
-          "publisher": "Wallpaper*",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7yKGcBsBPWmscSSmMqf7vMlxgX_Cfo47HBKsgY82TlmyBA3iokqQUmnHpwgQ"
-        },
-        {
-          "url": "https://variety.com/2026/shopping/news/tim-burton-loewe-nightmare-before-christmas-collection-1236940243/",
-          "title": "Tim Burton and Loewe Team Up on Luxe ‘Nightmare Before Christmas’ Collection",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5ySTBu429G9LhyruNo36R2FuC1wcYTBX8lyznLIXpGUfcMRDn28fdjAvT_pQ"
-        },
-        {
-          "url": "https://www.phantasmag.com/articles-6/tim-burton-loewe-the-nightmare-before-christmas-collection",
-          "title": "Tim Burton Teams Up with Loewe for 'The Nightmare Before Christmas' Fashion Collection",
-          "publisher": "PHANTASMAG",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ6Xq282WudF4zDjPAe80i6cD8TnNUXG-Y-0V3jTTXw2UBSD_9ueiUkObFbGw"
-        }
-      ]
-    },
-    {
-      "query": "t1 vs kc",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T22:00:00Z",
-      "related_news_urls": [
-        "https://theloadout.com/karmine-corp-vs-t1",
-        "https://egamersworld.com/blog/karmine-corp-how-a-streamers-team-became-the-psg-o-um6iv44kI_",
-        "https://www.hotspawn.com/league-of-legends/news/kc-vs-t1-worlds-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-X7R8CpmLMlnG52iCMBayOXy7ZMGSvuG8yNhGKy5iRFWQNvD4Lolyb1ZLPJ4",
-      "image_credit": "The Loadout",
-      "news": [
-        {
-          "url": "https://theloadout.com/karmine-corp-vs-t1",
-          "title": "Karmine Corp vs T1: Why T1 Will Crush KC at Worlds 2026",
-          "publisher": "The Loadout",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-X7R8CpmLMlnG52iCMBayOXy7ZMGSvuG8yNhGKy5iRFWQNvD4Lolyb1ZLPJ4"
-        },
-        {
-          "url": "https://egamersworld.com/blog/karmine-corp-how-a-streamers-team-became-the-psg-o-um6iv44kI_",
-          "title": "Karmine Corp: The Parisian Phenomenon Challenging T1 at Worlds 2026",
-          "publisher": "EGamersWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQqugFO9dBKEuuid_ISCt0rsMxOdXLld4_NGh_ICfg6L04mHAo7iSWjvnNhyk"
-        },
-        {
-          "url": "https://www.hotspawn.com/league-of-legends/news/kc-vs-t1-worlds-2026",
-          "title": "KC Vs T1 Worlds 2026 Quarterfinals Preview: Europe’s Last Hope To Face T1",
-          "publisher": "Hotspawn",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7ijlB7KEYohtAVyXq__VZyW-NquiV1xL-57z45vDgcSFU-z68vHIM_V-S5y4"
-        }
-      ]
-    },
-    {
-      "query": "casper ruud",
+      "query": "wwe crown jewel 2026",
       "approx_searches": "1000+",
-      "published_at": "2026-11-06T21:40:00Z",
+      "published_at": "2026-11-06T22:40:00Z",
       "related_news_urls": [
-        "https://en.tennistemple.com/actu/players-defend-topspin-much-better-now-ruud-breaks/YbYT",
-        "https://www.tennisworlditalia.com/en/tennis/news/Interviste_Tennis/108398/casper-ruud-opens-up-last-year-i-no-longer-felt-like-getting-up-and-training/",
-        "https://www.puntodebreak.com/en/2026/11/06/ruud-explains-why-there-are-fewer-good-matches-in-modern-tennis"
+        "https://www.espn.com/wwe/story/_/id/50389281/wwe-crown-jewel-2026-predictions-picks",
+        "https://www.cbssports.com/wwe/news/wwe-crown-jewel-2026-predictions-card-matches/",
+        "https://www.cagesideseats.com/wwe/485396/wwe-not-sending-commentary-team-riyadh-saudi-arabia-crown-jewel-production-remote-iran-war"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz8aaVwx3FDYKhhuQlDGwwOBpzJlNJk-Pg2xaCq72AkBypmKt8FWRtr0OPFFk",
-      "image_credit": "TennisTemple",
-      "news": [
-        {
-          "url": "https://en.tennistemple.com/actu/players-defend-topspin-much-better-now-ruud-breaks/YbYT",
-          "title": "\"Players defend topspin much better now\": Ruud breaks down how tennis has changed",
-          "publisher": "TennisTemple",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz8aaVwx3FDYKhhuQlDGwwOBpzJlNJk-Pg2xaCq72AkBypmKt8FWRtr0OPFFk"
-        },
-        {
-          "url": "https://www.tennisworlditalia.com/en/tennis/news/Interviste_Tennis/108398/casper-ruud-opens-up-last-year-i-no-longer-felt-like-getting-up-and-training/",
-          "title": "Casper Ruud Opens Up: “Last Year, I No Longer Felt Like Getting Up and Training”",
-          "publisher": "Tennis World Italia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgP4OO4HYYBkC7ekcqJS0Bl4dIk5LffaduDIXjYAhGbDPDwnDUAdaUSr5u3PI"
-        },
-        {
-          "url": "https://www.puntodebreak.com/en/2026/11/06/ruud-explains-why-there-are-fewer-good-matches-in-modern-tennis",
-          "title": "Ruud explains why there are fewer good matches in modern tennis",
-          "publisher": "Punto de Break",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBf1dVTXn9uHcVAfFG93qqurSb2hgqwEf6K7EgB-jw6gdpbOsmysN8Pqd5dX8"
-        }
-      ]
-    },
-    {
-      "query": "ios",
-      "approx_searches": "200+",
-      "published_at": "2026-11-06T21:40:00Z",
-      "related_news_urls": [
-        "https://www.tokenpost.com/news/technology/50344",
-        "https://crypto.news/darksword-iphone-exploit-crypto-wallets-certik/",
-        "https://thedefiant.io/news/hacks/iphone-wallet-theft-probe-traces-4-06-million-in-tron-drains"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVQK9cd-I2Ry8O8Qc3H846VAaNQj_o1kamP-BbwPpIcqS-kfslH1WkIzV_Y8",
-      "image_credit": "www.tokenpost.com",
-      "news": [
-        {
-          "url": "https://www.tokenpost.com/news/technology/50344",
-          "title": "iOS Self-Custody Wallet Losses Reach About $127,000 in One Week",
-          "publisher": "www.tokenpost.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVQK9cd-I2Ry8O8Qc3H846VAaNQj_o1kamP-BbwPpIcqS-kfslH1WkIzV_Y8"
-        },
-        {
-          "url": "https://crypto.news/darksword-iphone-exploit-crypto-wallets-certik/",
-          "title": "DarkSword iPhone exploit puts crypto wallets at risk, CertiK warns",
-          "publisher": "Crypto News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHffcLjIhoB3T7kqATqTZJapzxhLPRbb0o3H0ktHg-CrkK9gtW8NW1aiIy1M"
-        },
-        {
-          "url": "https://thedefiant.io/news/hacks/iphone-wallet-theft-probe-traces-4-06-million-in-tron-drains",
-          "title": "iPhone Wallet Theft Probe Traces $4.06 Million in TRON Drains",
-          "publisher": "The Defiant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM8UGP5YnyEDqUkTW1MnDxEja_WfJ_GcVkHoY4eXv_P5_fLOCtGfYlvr6L_N4"
-        }
-      ]
-    },
-    {
-      "query": "kristaps porzingis",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-06T21:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50402041/warriors-kristaps-porzingis-step-away-prioritize-health",
-        "https://www.nytimes.com/athletic/7758885/2026/11/06/kristaps-porzingis-warriors-spurs-heat-nba/",
-        "https://www.hoopsrumors.com/2026/11/kristaps-porzingis-announces-hes-stepping-away-from-basketball.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_580Np2CeBSmE1lAOmhKnxM3xDyC8nU9xY4z7cd0bwcKVZ0bEOQH0ubihDjU",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8y2QjEmVRwwUsdVCjZCxMq1a0iU1rXqsUyyOXykIxyNsoZG0p6gp1-TvnLAY",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50402041/warriors-kristaps-porzingis-step-away-prioritize-health",
-          "title": "Warriors' Kristaps Porzingis to 'step away,' prioritize health",
+          "url": "https://www.espn.com/wwe/story/_/id/50389281/wwe-crown-jewel-2026-predictions-picks",
+          "title": "A Sami Zayn stunner? A Tiffany Stratton cash-in? Breaking down WWE Crown Jewel",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_580Np2CeBSmE1lAOmhKnxM3xDyC8nU9xY4z7cd0bwcKVZ0bEOQH0ubihDjU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8y2QjEmVRwwUsdVCjZCxMq1a0iU1rXqsUyyOXykIxyNsoZG0p6gp1-TvnLAY"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7758885/2026/11/06/kristaps-porzingis-warriors-spurs-heat-nba/",
-          "title": "What I’m hearing on Kristaps Porziņģis and the Warriors, the Spurs’ lineup and more - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.cbssports.com/wwe/news/wwe-crown-jewel-2026-predictions-card-matches/",
+          "title": "WWE Crown Jewel 2026 predictions: Match card breakdown with expert picks in Riyadh, Saudi Arabia",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFojI2rnDf4q6WHMYT349x2pHEEzHQux0O1HH2OKqwNAVVxn50dRciaV3bZIg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnlf_DWRUGqh2OV-kK9l8qNbQ9yNi9CxDq_qWsb8uwc9KaZPEt6uB-8wI_pE"
         },
         {
-          "url": "https://www.hoopsrumors.com/2026/11/kristaps-porzingis-announces-hes-stepping-away-from-basketball.html",
-          "title": "Kristaps Porzingis Announces He’s Stepping Away From Basketball",
-          "publisher": "Hoops Rumors",
+          "url": "https://www.cagesideseats.com/wwe/485396/wwe-not-sending-commentary-team-riyadh-saudi-arabia-crown-jewel-production-remote-iran-war",
+          "title": "WWE reportedly didn’t send commentary team to Riyadh for Crown Jewel",
+          "publisher": "Cageside Seats",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD589mUN3H-iHZVwdPXk8Cch_nN-HNjGon1Pd86bX_DwBIlesdgvCycYTahC8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB9vfk_yw9CzhYDt_R6eU_USiCgKafgbEOHT9Z_fBiDk8FYkcwAdEAVAR83AY"
         }
       ]
     },
     {
-      "query": "thierno barry",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-06T21:20:00Z",
+      "query": "ryan seacrest wheel of fortune episode",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T22:40:00Z",
       "related_news_urls": [
-        "https://rdcsport.cd/news/coventry-frank-lampard-retour-goodison",
-        "https://www.ouest-france.fr/sport/football/angleterre/premier-league-le-francais-thierno-barry-narrete-plus-de-marquer-avec-everton-6091a7ec-da2e-11f1-81f5-8e32b0872d76",
-        "https://www.mediasportif.fr/2026/11/06/football-everton-coventry-chaine-streaming-ou-voir-le-match-et-a-quelle-heure-en-france/"
+        "https://www.tvinsider.com/1302038/wheel-of-fortune-ryan-seacrest-is-stunned-by-contestants-138000-win/",
+        "https://www.yahoo.com/entertainment/tv/articles/ryan-seacrest-left-shocked-wheel-164550390.html",
+        "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmNUKdoK3WlyX0H-PPZU-wfhZnOcWzOvXUiiVx-etEOwMwOyWe_SHiy_qihU",
-      "image_credit": "rdcsport.cd",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TVAItTGHdZLcg_MjGHoYJhUSE-BhRWAgxIZYEWAFMOewMy2sNmZ-Sqss11g",
+      "image_credit": "TV Insider",
       "news": [
         {
-          "url": "https://rdcsport.cd/news/coventry-frank-lampard-retour-goodison",
-          "title": "Coventry et Frank Lampard : un retour prometteur à Goodison",
-          "publisher": "rdcsport.cd",
+          "url": "https://www.tvinsider.com/1302038/wheel-of-fortune-ryan-seacrest-is-stunned-by-contestants-138000-win/",
+          "title": "‘Wheel of Fortune’: Ryan Seacrest Is Stunned by Contestant’s $138,000 Win",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmNUKdoK3WlyX0H-PPZU-wfhZnOcWzOvXUiiVx-etEOwMwOyWe_SHiy_qihU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TVAItTGHdZLcg_MjGHoYJhUSE-BhRWAgxIZYEWAFMOewMy2sNmZ-Sqss11g"
         },
         {
-          "url": "https://www.ouest-france.fr/sport/football/angleterre/premier-league-le-francais-thierno-barry-narrete-plus-de-marquer-avec-everton-6091a7ec-da2e-11f1-81f5-8e32b0872d76",
-          "title": "Premier League. Le Français Thierno Barry n’arrête plus de marquer avec Everton",
-          "publisher": "Ouest-France",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/ryan-seacrest-left-shocked-wheel-164550390.html",
+          "title": "Ryan Seacrest Left Shocked After Wheel of Fortune Contestant Loses Out on $113,000",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpk5I7v28V2ejDrdrLxGu0Bu8810J_RLLdFfPP_rWqe-uGIIiAT4UdQ6IEOBM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvQxJ27UtrqoFkkBZLuRwPvv9J6ts1WPgOdngkm8QkJG9zuOWYVU3-IBlpP9k"
         },
         {
-          "url": "https://www.mediasportif.fr/2026/11/06/football-everton-coventry-chaine-streaming-ou-voir-le-match-et-a-quelle-heure-en-france/",
-          "title": "Football | Everton - Coventry : Chaîne, streaming, où voir le match et à quelle heure en France ?",
-          "publisher": "Mediasportif",
+          "url": "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss",
+          "title": "See Wheel of Fortune’s Ryan Seacrest Comfort Player After $50,000 Loss",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxawLefRrLBi5a3LwzGvcbdYCxxL22SXuNONYQumvM2b5Y1oI2zICuW0Lpekk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPGLnwAMvZeT_SWv7Wv8fX_3A-IaLC3NRlDZCq290hoHNflG5Yc4xjf-pqMUI"
         }
       ]
     },
     {
-      "query": "boston college basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T21:10:00Z",
+      "query": "ar-pine bluff vs baylor",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T22:40:00Z",
       "related_news_urls": [
-        "https://www.sportsline.com/insiders/umass-vs-boston-college-odds-2026-college-basketball-picks-for-friday-nov-6-from-proven-model/",
-        "https://www.basketunderreview.com/friday-watchlist-november-6-2026/",
-        "https://sports.yahoo.com/articles/gamethread-boston-college-men-basketball-201603734.html"
+        "https://sicem365.com/s/22254/game-thread-baylor-basketball-welcomes-arkansas-pine-bluff-on-friday-evening",
+        "https://www.si.com/college/baylor/basketball/how-to-watch-baylor-basketball-vs-arkansas-pine-bluff-tv-storylines-prediction-2026",
+        "https://www.itemonline.com/sports/national_sports/uapb-set-for-road-matchup-with-the-baylor-bears/article_138596bb-9f27-5f9d-a226-1659fbeb91df.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbJKLZrQYnmj2vschcDjfGla4NxKRujb3Qcke0KuTOXadCSnQvWj_UFCP-4N8",
-      "image_credit": "SportsLine",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqbBdq2dWI0BDkqK7QGjfdeS4IRlF1KbEPK5zxtdL5CS9LMfrZatW9Bzpkxqo",
+      "image_credit": "SicEm365",
       "news": [
         {
-          "url": "https://www.sportsline.com/insiders/umass-vs-boston-college-odds-2026-college-basketball-picks-for-friday-nov-6-from-proven-model/",
-          "title": "UMass vs. Boston College odds: 2026 college basketball picks for Friday Nov. 6 from proven model",
-          "publisher": "SportsLine",
+          "url": "https://sicem365.com/s/22254/game-thread-baylor-basketball-welcomes-arkansas-pine-bluff-on-friday-evening",
+          "title": "Game Thread: Baylor Basketball Welcomes Arkansas-Pine Bluff on Friday Evening",
+          "publisher": "SicEm365",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbJKLZrQYnmj2vschcDjfGla4NxKRujb3Qcke0KuTOXadCSnQvWj_UFCP-4N8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqbBdq2dWI0BDkqK7QGjfdeS4IRlF1KbEPK5zxtdL5CS9LMfrZatW9Bzpkxqo"
         },
         {
-          "url": "https://www.basketunderreview.com/friday-watchlist-november-6-2026/",
-          "title": "Friday Watchlist: November 6, 2026",
-          "publisher": "Basket Under Review",
+          "url": "https://www.si.com/college/baylor/basketball/how-to-watch-baylor-basketball-vs-arkansas-pine-bluff-tv-storylines-prediction-2026",
+          "title": "How to Watch Baylor Basketball vs. Arkansas-Pine Bluff: TV, Storylines, Prediction",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGR4hVLoZQcXJ2RhUfBjZcrqkJ9IhFBPEypO-WhchNk6ozUx5ZrOiMxFHpQMw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8y9H66wMBdFjfKDPpwpSLZda2-7v5DwwLkiAc85Y4tBEhWl_1u-BN8XF7If4"
         },
         {
-          "url": "https://sports.yahoo.com/articles/gamethread-boston-college-men-basketball-201603734.html",
-          "title": "Gamethread: Boston College Men’s Basketball vs UMass",
+          "url": "https://www.itemonline.com/sports/national_sports/uapb-set-for-road-matchup-with-the-baylor-bears/article_138596bb-9f27-5f9d-a226-1659fbeb91df.html",
+          "title": "UAPB set for road matchup with the Baylor Bears",
+          "publisher": "itemonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFblO5zWNNlO2weXGvtNXcd74hNn4lhWQydw9VDPv1FXLAGHurZPE8okAT1w"
+        }
+      ]
+    },
+    {
+      "query": "robbie avila",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T22:40:00Z",
+      "related_news_urls": [
+        "https://www.stltoday.com/sports/college/slu/article_3b0276f0-bccd-42d7-8ebe-d82bfa5a868e.html",
+        "https://www.espn.com/mens-college-basketball/story/_/id/50392230/saint-louis-robbie-avila-gets-injunction-play-season",
+        "https://fox2now.com/sports/judge-grants-robbie-avila-fifth-year-of-college-eligibility/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0KUWTBeLBZnuJ561DoAVVdiEpqNscpDm_msFNlutupNQmbCYsUZW-aUQAoDk",
+      "image_credit": "STLtoday.com",
+      "news": [
+        {
+          "url": "https://www.stltoday.com/sports/college/slu/article_3b0276f0-bccd-42d7-8ebe-d82bfa5a868e.html",
+          "title": "College Sports Commission denies SLU a 16th spot, says Robbie Avila can't play",
+          "publisher": "STLtoday.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0KUWTBeLBZnuJ561DoAVVdiEpqNscpDm_msFNlutupNQmbCYsUZW-aUQAoDk"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50392230/saint-louis-robbie-avila-gets-injunction-play-season",
+          "title": "Saint Louis star Robbie Avila granted injunction to play this season",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlUyK1X4uah33BPvcjzdFqL8Akpim1_FuDMKt0QodzWOVL4Y134ng05xQcaI"
+        },
+        {
+          "url": "https://fox2now.com/sports/judge-grants-robbie-avila-fifth-year-of-college-eligibility/",
+          "title": "Judge grants Robbie Avila fifth year of college eligibility",
+          "publisher": "FOX 2",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI6qVcQIn4C_kTlL1y_7PJlx3z0sKYyMUZpPPML3jYxDrISbadi55CoPRnlkw"
+        }
+      ]
+    },
+    {
+      "query": "actor",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T22:40:00Z",
+      "related_news_urls": [
+        "https://people.com/model-actress-kimmarie-johnson-dead-50-12238094",
+        "https://abcnews.com/GMA/Culture/beverly-hills-90210-actress-kimmarie-johnson-dies-50/story?id=137892580",
+        "https://deadline.com/2026/11/kimmarie-johnson-dead-1237214553/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiNwCJmgqVSxpAe42YNkKnmK52BinhKJljBwZDnFfyOY2DBjsillt2QkIuOMM",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/model-actress-kimmarie-johnson-dead-50-12238094",
+          "title": "Model Kimmarie Johnson, Who Appeared in ‘Beverly Hills, 90210’ and More, Dies at 50",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiNwCJmgqVSxpAe42YNkKnmK52BinhKJljBwZDnFfyOY2DBjsillt2QkIuOMM"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/beverly-hills-90210-actress-kimmarie-johnson-dies-50/story?id=137892580",
+          "title": "'Beverly Hills, 90210' actress Kimmarie Johnson dies at 50",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaGhppBwuNwIhQJuolEyVqRqHFzFRkM4NJsLaw6e0GpRqiYdS0sUcGRJnRDIk"
+        },
+        {
+          "url": "https://deadline.com/2026/11/kimmarie-johnson-dead-1237214553/",
+          "title": "Kimmarie Johnson Dies: ‘Beverly Hills, 90210’ & ‘Dude, Where’s My Car?’ Actor Was 50",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvEG6NBaeCvpFLVh9Ezi4oP8BQ6Zp5cbK3_CQoM1cQ3Y0JsTKHP1yy1762sXs"
+        }
+      ]
+    },
+    {
+      "query": "virginia basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T22:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/arkansas-basketball-vs-virginia-prediction-170101428.html",
+        "https://www.on3.com/sites/hawg-beat/news/forcing-avoiding-turnovers-key-for-razorbacks-against-cavaliers/",
+        "https://www.washingtonsun.com/sports/colleges/jordan-smith-jr-arkansas-dmv-nba?redirected=notus_org"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnCUHAzOBZiNueQFpuInIRD_xaIi_IlGxnAu1x5dz38rtHkq1jBPevK1dMICI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/arkansas-basketball-vs-virginia-prediction-170101428.html",
+          "title": "Arkansas basketball vs Virginia prediction, pick for top-15 showdown",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rJPGg035kBWwIyB8FKa6AZ1GOGRR58c1cny8UZ5qCxD6_gQmCKS2Qw0IcnY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnCUHAzOBZiNueQFpuInIRD_xaIi_IlGxnAu1x5dz38rtHkq1jBPevK1dMICI"
+        },
+        {
+          "url": "https://www.on3.com/sites/hawg-beat/news/forcing-avoiding-turnovers-key-for-razorbacks-against-cavaliers/",
+          "title": "Forcing, avoiding turnovers key for Razorbacks against Cavaliers",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj1wtKYccUX9CVJlp5HhPclS9ggsr-CgNSDfs7yv__4edzDhVqICBrqlG9rNs"
+        },
+        {
+          "url": "https://www.washingtonsun.com/sports/colleges/jordan-smith-jr-arkansas-dmv-nba?redirected=notus_org",
+          "title": "Jordan Smith Jr. Returns to the DMV as a Highly Touted NBA Prospect",
+          "publisher": "www.washingtonsun.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2I3Q9mxPKSF84cieZ6pCyYDUKRumZMTySbDKCR5aZ5F_HpBs83z_zZayuvgc"
+        }
+      ]
+    },
+    {
+      "query": "vitória vs fluminense",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T22:30:00Z",
+      "related_news_urls": [
+        "https://ge.globo.com/ba/futebol/brasileirao-serie-a/noticia/2026/11/06/vitoria-x-fluminense-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://radio93.com.br/noticias/esporte/esporte-93-edicao-06-de-novembro-4/",
+        "https://www.correiodopovo.com.br/blogs/hiltormombach/inter-e-gremio-vestem-a-camisa-do-fluminense-nesta-sexta-feira-1.1762553"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwhcArhoNp14hG4NQxVjhDV-vxSsRjlKxDuaTzbE4KdgQSEL2UtoDetBsLjL8",
+      "image_credit": "ge",
+      "news": [
+        {
+          "url": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/noticia/2026/11/06/vitoria-x-fluminense-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Vitória x Fluminense: onde assistir ao vivo, horário e escalações",
+          "publisher": "ge",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwhcArhoNp14hG4NQxVjhDV-vxSsRjlKxDuaTzbE4KdgQSEL2UtoDetBsLjL8"
+        },
+        {
+          "url": "https://radio93.com.br/noticias/esporte/esporte-93-edicao-06-de-novembro-4/",
+          "title": "Esporte 93 – edição 06 de novembro",
+          "publisher": "Rádio 93 FM",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3z1jO_RXMcy7o3HoKX6nZgm0GkGPRjyEsJkNo8rJs0MuJWOgGMJUJVWCylA"
+        },
+        {
+          "url": "https://www.correiodopovo.com.br/blogs/hiltormombach/inter-e-gremio-vestem-a-camisa-do-fluminense-nesta-sexta-feira-1.1762553",
+          "title": "Inter e Grêmio vestem a camisa do Fluminense nesta sexta-feira",
+          "publisher": "Correio do Povo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSg6YykzgjzEcpNbTkeksn7oe3tMaRJiExj4EGt0TLivQvO6NRMfikkGq7nuds"
+        }
+      ]
+    },
+    {
+      "query": "dhanteras puja muhurat",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T22:30:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/india/indias-gold-demand-picks-up-diwali-coincides-with-price-dip-2026-11-06/",
+        "https://timesofindia.indiatimes.com/astrology/zodiacs-astrology/dhanteras-2026-why-families-buy-a-jhadu-next-to-gold-and-the-lakshmi-rules-that-come-with-it/articleshow/135547571.cms",
+        "https://m.economictimes.com/industry/cons-products/fashion-/-cosmetics-/-jewellery/dhanteras-expected-to-generate-over-rs-1-lakh-crore-in-business-across-india-cait/articleshow/135595526.cms"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxwIRz9wxY3hlmXkk7WmV2lDPt4gcLFkCAq48Doebz6-sCguK2vgYj6kLpFEc",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/india/indias-gold-demand-picks-up-diwali-coincides-with-price-dip-2026-11-06/",
+          "title": "India's gold demand picks up as Diwali coincides with price dip",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxwIRz9wxY3hlmXkk7WmV2lDPt4gcLFkCAq48Doebz6-sCguK2vgYj6kLpFEc"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/astrology/zodiacs-astrology/dhanteras-2026-why-families-buy-a-jhadu-next-to-gold-and-the-lakshmi-rules-that-come-with-it/articleshow/135547571.cms",
+          "title": "Dhanteras 2026: Why Families Buy a Jhadu Next to Gold, and the Lakshmi Rules That Come With It",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrQdl1ZZmhd-2gYZJYFjfTlUzgL0YwPu61NYixBWAd041Sbt8AuynB3_5_ngI"
+        },
+        {
+          "url": "https://m.economictimes.com/industry/cons-products/fashion-/-cosmetics-/-jewellery/dhanteras-expected-to-generate-over-rs-1-lakh-crore-in-business-across-india-cait/articleshow/135595526.cms",
+          "title": "Dhanteras expected to generate over Rs 1 lakh crore in business across India: CAIT",
+          "publisher": "The Economic Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSosFwAk_kIBP-J5LBmdUiBEV7QWAkJ1Nq1mCUBiLuNg_f6gNo3_iYlAM7GbZs"
         }
       ]
     }
