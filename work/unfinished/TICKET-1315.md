@@ -49,3 +49,11 @@ Explainable in-app ranking, sponsor disclosure, consented metrics and zero unrel
 
 ## Session receipt
 GitHub issue created during the owner-request scoping session; checkpoint staged in a documentation-only branch. No real implementation, provider consent, commercial payout or outside send has occurred.
+
+## November 6 CT · Power Chain follows
+
+- Scope is the existing Oracle homepage Following feed. A visitor can enable a chain for a ready source card with a reviewed denim, coin collecting or social media topic. Closely related cards appear in the existing viewer with the originating follow shown.
+- Direct follows, chain selections and individual unfollows persist on this device. The catalog supplies derived matches on demand. Next prefers another topic, then another publisher, among the unseen cards in the round.
+- Source work is on `codex/power-chain-follow`. Focused tests include 1,250 synthetic eligible matches and real catalog records for the three supported topics. Android-width browser coverage runs in the interactive-card CI workflow.
+- Slice state is 🟡 source tested. The matcher and carousel are implemented. Browser CI, reviewed merge and production readback are pending. One session documented for this slice, with one or two estimated remaining. No coordinator lease is recorded.
+- Next action is to verify the browser result at the pull request head.
