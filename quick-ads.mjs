@@ -18,16 +18,18 @@ import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAd
   }
  }
  const save=()=>{try{sessionStorage.setItem(KEY,JSON.stringify(state))}catch{}};
- function claimFreshCreative(id){
-  if(typeof id!=='string'||!id||id.length>128||Number(state.counts[id])>0)return false;
+ function claimFreshCreative(ad){
+  const keys=[ad?.id,ad?.equivalenceKey].filter(Boolean);
+  if(!keys.length||keys.some(id=>typeof id!=='string'||id.length>128||Number(state.counts[id])>0))return false;
   try{
    const storage=window.localStorage;
    const latest=read(HISTORY_KEY,'localStorage').seen||{};
-   if(latest[id]===true)return false; // Another tab may have already displayed it.
-   const seen={...latest,[id]:true};
+   if(keys.some(id=>latest[id]===true))return false;
+   const seen={...latest};
+   keys.forEach(id=>{seen[id]=true});
    storage.setItem(HISTORY_KEY,JSON.stringify({seen}));
    return true;
-  }catch{return false;} // Storage disabled/full: never violate the no-repeat promise.
+  }catch{return false;} // Storage disabled/full: don't silently replay.
  }
  let currentId='',moves=0,shown=null,closeTimer=null,seq=0,poll=null,scoreAdSuppressedUntil=0;
  let liveState='unknown',lastFetch=0,checking=null;
@@ -70,15 +72,19 @@ import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAd
   return checking;
  }
  function display(ad){
-  if(!claimFreshCreative(ad.id))return;
+  if(!claimFreshCreative(ad))return;
   if(shown===ad.id)hide();
   node.replaceChildren();
   node.style.setProperty('--qad-tone',ad.tone);
-  const glyph=make('span','qad-mark',ad.name.slice(0,1));
+  const glyph=ad.imageUrl?make('img','qad-mark qad-image'):make('span','qad-mark',ad.name.slice(0,1));
+  if(ad.imageUrl){glyph.src=ad.imageUrl;glyph.alt='';glyph.referrerPolicy='no-referrer';glyph.loading='lazy';}
   glyph.setAttribute('aria-hidden','true');
   const heading=make('span','qad-heading');
   const house=quickAdCampaign()==='infinity-house';
-  heading.append(make('small','qad-kicker',house?'INFINITY HOUSE SPOTLIGHT':'QUICK AD · WORLD SERIES NIGHT'),make('strong','',ad.name),make('span','qad-tagline',ad.tagline));
+  const kicker=ad.kind==='sponsored'?'SPONSORED · SOURCE VERIFIED':
+   ad.kind==='editorial'?'INDEPENDENT DISCOVERY':
+   house?'INFINITY HOUSE SPOTLIGHT':'QUICK AD · WORLD SERIES NIGHT';
+  heading.append(make('small','qad-kicker',kicker),make('strong','',ad.name),make('span','qad-tagline',ad.tagline));
   const link=make('a','qad-cta',house?'Explore':'Visit');
   link.href=ad.href;link.target='_blank';link.rel='noopener noreferrer';
   link.setAttribute('aria-label',house?'Explore '+ad.name+' on QuantaPhi':'Visit '+ad.name+' official website');
@@ -87,14 +93,36 @@ import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAd
   dismiss.addEventListener('click',()=>{
    state.dismissedUntil=Date.now()+10*60*1000;save();hide();
   });
-  node.append(glyph,heading,link,dismiss,make('small','qad-disclosure',house?'QuantaPhi house spotlight · no paid placement or affiliate relationship claimed':'Independent website spotlight · not a paid ad'));
+  node.append(glyph,heading,link,dismiss,make('small','qad-disclosure',ad.disclosure||(house?'QuantaPhi house spotlight · no paid placement or affiliate relationship claimed':'Independent website spotlight · not a paid ad')));
   node.hidden=false;shown=ad.id;
   requestAnimationFrame(()=>node.classList.add('qad-visible'));
   closeTimer=setTimeout(hide,6500);
   state.lastAt=Date.now();state.total=(Number(state.total)||0)+1;
   state.counts[ad.id]=(Number(state.counts[ad.id])||0)+1;
+  if(ad.equivalenceKey)state.counts[ad.equivalenceKey]=1;
   state.recent=[ad.id,...state.recent.filter(x=>x!==ad.id)].slice(0,4);
   save();
+ }
+ // This is the EXISTING source directory D1 Worker, not a new ad server.
+ // It returns no ads until migration and independent review are deployed.
+ const CATALOG_URL='https://quantaphi-product-directory.marvaseater.workers.dev/v1/ads?limit=50';
+ let catalogCache=[],catalogChecked=0,catalogLoading=null;
+ async function loadReviewedCatalog(){
+  if(Date.now()-catalogChecked<120000)return catalogCache;
+  if(catalogLoading)return catalogLoading;
+  catalogChecked=Date.now();
+  catalogLoading=(async()=>{
+   const ctrl=new AbortController(),timeout=setTimeout(()=>ctrl.abort(),4000);
+   try{
+    const response=await fetch(CATALOG_URL,{cache:'no-store',signal:ctrl.signal,credentials:'omit'});
+    if(!response.ok)return [];
+    const payload=await response.json();
+    catalogCache=Array.isArray(payload?.data)?payload.data:[];
+    return catalogCache;
+   }catch{return []}
+   finally{clearTimeout(timeout);catalogLoading=null}
+  })();
+  return catalogLoading;
  }
  const onSwitch=async(detail,revision)=>{
   if(quickAdCampaign()==='inactive'||document.hidden||Date.now()<scoreAdSuppressedUntil)return;
@@ -102,7 +130,9 @@ import {inGameWindow,gameLiveStatus,chooseQuickAd,quickAdCampaign,restoreQuickAd
   if(moves%2!==0)return; // one non-blocking pop-up per two card transitions at most
   const status=await live();
   if(!['scheduled','live','house'].includes(status)||revision!==seq||document.hidden||quickAdCampaign()==='inactive'||!quickAdPacingAllows(Date.now(),state,scoreAdSuppressedUntil))return;
-  const pick=chooseQuickAd(detail,state.counts,state.recent,Date.now());
+  const catalog=status==='house'?await loadReviewedCatalog():[];
+  if(revision!==seq||document.hidden||!quickAdPacingAllows(Date.now(),state,scoreAdSuppressedUntil))return;
+  const pick=chooseQuickAd(detail,state.counts,state.recent,Date.now(),catalog);
   if(pick)display(pick);
  };
  window.addEventListener('quantaphi:world-series-toast',e=>{
