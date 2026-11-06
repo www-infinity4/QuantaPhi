@@ -3,16 +3,25 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T16:31:20.532469Z",
+  "checked_at": "2026-11-06T17:01:41.784876Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "sarah friar",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T16:30:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
       "query": "treveyon henderson",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-06T15:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50400016/patriots-treveyon-henderson-affected-neurological-symptoms",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/garrett-wilson-concussion-wont-play-vs-chiefs",
+        "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery",
         "https://www.bostonglobe.com/2026/11/06/sports/patriots-treveyon-henderson-injury/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEER9rhghUlGiEPr8R7UuIs1oRMNnZAPiBWQiuK7mOkEdUsTGYh1wobRI7xAM",
@@ -26,11 +35,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEER9rhghUlGiEPr8R7UuIs1oRMNnZAPiBWQiuK7mOkEdUsTGYh1wobRI7xAM"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/garrett-wilson-concussion-wont-play-vs-chiefs",
-          "title": "Garrett Wilson (concussion) won’t play vs. Chiefs",
-          "publisher": "NBC Sports",
+          "url": "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery",
+          "title": "Pats' TreVeyon Henderson says he was hospitalized after 'unusual' emergency, focused on recovery",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj2bgBlB23U6H2df5kErntdugCefXHhc8996e3xWL8qK6Q6cWD6RZUC0Hmt6g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTq275OrPffRj3S9bsP9VJkeS7NPVdoeJFEdcN65Cxa3RICe50M2nHHHq83x_4"
         },
         {
           "url": "https://www.bostonglobe.com/2026/11/06/sports/patriots-treveyon-henderson-injury/",
@@ -42,37 +51,37 @@
       ]
     },
     {
-      "query": "thomas markle",
+      "query": "meghan markle",
       "approx_searches": "20000+",
       "published_at": "2026-11-06T15:20:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/06/us/thomas-markle-arrest",
-        "https://www.foxnews.com/entertainment/meghan-markles-father-arrested-florida",
-        "https://www.cbsnews.com/news/thomas-markle-sr-meghan-father-arrested-florida/"
+        "https://www.bbc.com/news/live/cwnv03203yvmt",
+        "https://abcnews.com/GMA/News/meghan-markles-father-thomas-markle-sr-arrested-fbi/story?id=137912305"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbSQXdnaONgoIK6yJKiMyATxoOlpwk7N7_f12l8HkZL087uWbRY5BdJJBDQYQ",
       "image_credit": "CNN",
       "news": [
         {
           "url": "https://www.cnn.com/2026/11/06/us/thomas-markle-arrest",
-          "title": "Thomas Markle, father of Meghan, arrested on charges related to child sexual abuse material, AP sources say",
+          "title": "Thomas Markle, father of Meghan, arrested after feds find sexually explicit photos of him with minors, DOJ says",
           "publisher": "CNN",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbSQXdnaONgoIK6yJKiMyATxoOlpwk7N7_f12l8HkZL087uWbRY5BdJJBDQYQ"
         },
         {
-          "url": "https://www.foxnews.com/entertainment/meghan-markles-father-arrested-florida",
-          "title": "Meghan Markle's father is arrested in Florida: law enforcement source",
-          "publisher": "Fox News",
+          "url": "https://www.bbc.com/news/live/cwnv03203yvmt",
+          "title": "Meghan's father Thomas Markle arrested over allegations he possessed child sex abuse material",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAUOOYF9ej_lqI9PPPJgsbQwKu5JqIttCOL-0jiYngLzHQsrcMzQHzZSXIk5M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqeoXwgLD312YNk2Wd-Lf-wVr39hLupZPjDpvjQ0y8tHpF4kPUDVaS5U9tBrA"
         },
         {
-          "url": "https://www.cbsnews.com/news/thomas-markle-sr-meghan-father-arrested-florida/",
-          "title": "Duchess Meghan's father, Thomas Markle Sr., arrested in Florida in child pornography probe, sources say",
-          "publisher": "CBS News",
+          "url": "https://abcnews.com/GMA/News/meghan-markles-father-thomas-markle-sr-arrested-fbi/story?id=137912305",
+          "title": "Meghan Markle's father Thomas Markle Sr. arrested by FBI in Florida",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIsWGrvlxerh2ki0G_ach4z7GtKyru4edIVWTxqGqe9zipnOz27_h3yJDKySw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLJutFZLCoRl2qZt-9aFPAwU-zwSYG3FSqK9PQr1HlPu0aXs0Cgmo2GhW99z4"
         }
       ]
     },
@@ -81,19 +90,19 @@
       "approx_searches": "500+",
       "published_at": "2026-11-06T15:20:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-had-only-2-090102789.html",
+        "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-buy-now-182000414.html",
         "https://seekingalpha.com/article/4963996-broadcom-and-the-ai-panic-the-market-has-lost-its-mind",
-        "https://www.fool.com/investing/2026/11/06/prediction-november-will-be-a-huge-month-for-broad/"
+        "https://www.benzinga.com/markets/tech/26/11/62976767/broadcom-stock-is-surging-friday-whats-going-on"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS48Ma9dglLCxIaCZ4yNtI5nKXbuJLyuiEfXNDu6_mKMvRJsQrjPEDo60wx6pw",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTYmTI9J4PtiM8Zd5YN3yrSvpKpccV7EA-fHiRUNYoWvioC-ZZhvXCygz7BU",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-had-only-2-090102789.html",
-          "title": "Broadcom Stock Has Had Only 2 Losing Years Since 2009. 2026 Is on Pace to Be the 3rd.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stock-buy-now-182000414.html",
+          "title": "Is Broadcom Stock a Buy Now?",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS48Ma9dglLCxIaCZ4yNtI5nKXbuJLyuiEfXNDu6_mKMvRJsQrjPEDo60wx6pw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTYmTI9J4PtiM8Zd5YN3yrSvpKpccV7EA-fHiRUNYoWvioC-ZZhvXCygz7BU"
         },
         {
           "url": "https://seekingalpha.com/article/4963996-broadcom-and-the-ai-panic-the-market-has-lost-its-mind",
@@ -103,11 +112,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9scPLb_lW3HdL-iGhWbUg87hwDFWDcme8YKvUePm3q-ctL_Fnlzb2F0I6Qzw"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/06/prediction-november-will-be-a-huge-month-for-broad/",
-          "title": "Prediction: November Will Be a Huge Month for Broadcom",
-          "publisher": "The Motley Fool",
+          "url": "https://www.benzinga.com/markets/tech/26/11/62976767/broadcom-stock-is-surging-friday-whats-going-on",
+          "title": "Broadcom Stock Is Surging Friday: What's Going On?",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFUC9xxTcfP5dfEgVuHEvkoLlXumKKz-ke3UpMxp3brjTY5gKemhpec9e2K2A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRerOy4On7wA3gV8HmY5hhuIJEZ9polxWEzJK6jA5AtKV76T7gNbYgyVyYVzFs"
         }
       ]
     },
@@ -153,7 +162,7 @@
       "related_news_urls": [
         "https://www.yahoo.com/entertainment/celebrity/fashion/articles/glorilla-responds-ciaras-halloween-homage-171343402.html",
         "https://wbxxfm.com/ixp/812/p/glorilla-brandon-ingram-ciara-bow-wow-like-you-halloween-costume/",
-        "https://www.hotnewhiphop.com/1015172-glorilla-brandon-ingram-ciara-bow-wow-halloween"
+        "https://www.si.com/onsi/athlete-lifestyle/clippers-brandon-ingram-rapper-glorilla-channel-ciara-bow-wow--epic-halloween"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeADe6P7DGUcqnw9n0_jXItI0tkbrwE_gULLPrZF9ZPwr-DrwaZfQu8K6Rq-4",
       "image_credit": "Yahoo",
@@ -173,46 +182,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2GiJygo6qlMoZQFX1tjmbw1jYfba3EVT0Kpu0Fyyf2c0MUqseB6Fm6sjZRso"
         },
         {
-          "url": "https://www.hotnewhiphop.com/1015172-glorilla-brandon-ingram-ciara-bow-wow-halloween",
-          "title": "GloRilla & Brandon Ingram Channel Ciara & Bow Wow For Halloween",
-          "publisher": "HotNewHipHop",
+          "url": "https://www.si.com/onsi/athlete-lifestyle/clippers-brandon-ingram-rapper-glorilla-channel-ciara-bow-wow--epic-halloween",
+          "title": "Clippers Brandon Ingram and Rapper GloRilla Channel Ciara, Bow Wow for Epic Halloween Couple Tribute",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRfRkS4V3D03vaw_nczC9kHUi5V3NHSzojkjE5hKulI4a342edqQlTiJCNuXU"
-        }
-      ]
-    },
-    {
-      "query": "doc rivers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T15:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50399276/doc-rivers-giannis-antetokounmpo-bucks-exit-coaching-star",
-        "https://bleacherreport.com/articles/25529880-doc-rivers-says-giannis-wasnt-easy-coach-doesnt-necessarily-have-super-iq",
-        "https://www.usatoday.com/story/sports/nba/heat/2026/11/06/doc-rivers-giannis-antetokounmpo-criticisms-bill-simmons/92638216007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdNGXW_li98h-C-Sbu-35O1YOKJsJJHeepvciWFkm6MCndvTFxLIG0y5q1fj8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50399276/doc-rivers-giannis-antetokounmpo-bucks-exit-coaching-star",
-          "title": "Doc Rivers: Giannis 'didn't want to be the bad guy' when seeking Bucks exit",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdNGXW_li98h-C-Sbu-35O1YOKJsJJHeepvciWFkm6MCndvTFxLIG0y5q1fj8"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529880-doc-rivers-says-giannis-wasnt-easy-coach-doesnt-necessarily-have-super-iq",
-          "title": "Doc Rivers Says Giannis Wasn't 'Easy' to Coach, 'Doesn't Necessarily Have This Super IQ'",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpUv6vjkhOk66qj9XZnjP14pI7vMp2nclJJH-muMPZ6NkxAIb3YWOjIlXXt3E"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nba/heat/2026/11/06/doc-rivers-giannis-antetokounmpo-criticisms-bill-simmons/92638216007/",
-          "title": "Doc Rivers shares criticisms of Giannis Antetokounmpo's game − and how he can improve",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyKF3igk8CLkzzAG-NgaSY3XYSTFjxHOII5Y2k6sIDoNEO_h8oI-9awClBjuI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr_uwBJmOZ2OcCXaXLlOnYC7aM5IGQa6W2YE96m0b4HTKlMPzCWo1iAJSSMbY"
         }
       ]
     },
@@ -222,7 +196,7 @@
       "published_at": "2026-11-06T15:10:00Z",
       "related_news_urls": [
         "https://finance.yahoo.com/technology/ai/articles/dell-technologies-dell-shares-just-121309049.html",
-        "https://www.barchart.com/story/news/8674065/why-its-time-to-buy-the-pullback-in-dell-stock",
+        "https://www.barchart.com/story/news/8677956/dell-hewlett-packard-enterprise-xerox-super-micro-and-hp-stocks-trade-down-what-you-need-to-know",
         "https://www.investing.com/news/stock-market-news/why-is-dell-technologies-stock-plunging-today-93CH-5005083"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA",
@@ -236,11 +210,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1bEUOPxJjthVnuOCfnIwnP20qK-aWGB10MZpjOeOSo5_30Ye2E6nnZR5PtYA"
         },
         {
-          "url": "https://www.barchart.com/story/news/8674065/why-its-time-to-buy-the-pullback-in-dell-stock",
-          "title": "Why It’s Time to Buy the Pullback in Dell Stock",
+          "url": "https://www.barchart.com/story/news/8677956/dell-hewlett-packard-enterprise-xerox-super-micro-and-hp-stocks-trade-down-what-you-need-to-know",
+          "title": "Dell, Hewlett Packard Enterprise, Xerox, Super Micro, and HP stocks trade down, what you need to know",
           "publisher": "Barchart.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfFzFYIRf3BrqfB-qcE8y_pjFpkDxfw56iHUBsoUa0gNMssx_niU4_Gun9FM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcE5V-PEtIKakHM5QCSz0nEFwB6d2NWsyi8VWHN30I7maaR2jFg9VDxan8C1s"
         },
         {
           "url": "https://www.investing.com/news/stock-market-news/why-is-dell-technologies-stock-plunging-today-93CH-5005083",
@@ -256,13 +230,20 @@
       "approx_searches": "500+",
       "published_at": "2026-11-06T15:10:00Z",
       "related_news_urls": [
+        "https://seekingalpha.com/article/4964073-vanguards-vxus-vs-veu-buy-one-without-small-caps",
         "https://finance.yahoo.com/markets/stocks/articles/spdw-vs-vxus-state-street-190302458.html",
-        "https://www.fool.com/coverage/etfs/2026/11/05/spdw-vs-eem-which-international-etf-offers-better-value-for-investors-seeking-global-stock-profits/",
-        "https://etfdb.com/equity-etf-content-hub/inside-ticker-iemg-vwo/"
+        "https://www.fool.com/coverage/etfs/2026/11/05/spdw-vs-eem-which-international-etf-offers-better-value-for-investors-seeking-global-stock-profits/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvFlm9rq3_tCff8QJatl4jkqX_IVD-yzWe1W4TEJLQN0KTB3JL3RQmGwVCIp0",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiWUdrnSnUxYJxQI4TEXtvSt-MNUmHvqVgf_POFotwcBykpJ1QYTsPXrdE1Kk",
+      "image_credit": "Seeking Alpha",
       "news": [
+        {
+          "url": "https://seekingalpha.com/article/4964073-vanguards-vxus-vs-veu-buy-one-without-small-caps",
+          "title": "Vanguard's VXUS Vs. VEU: Buy The One Without Small Caps (NYSEARCA:VEU)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiWUdrnSnUxYJxQI4TEXtvSt-MNUmHvqVgf_POFotwcBykpJ1QYTsPXrdE1Kk"
+        },
         {
           "url": "https://finance.yahoo.com/markets/stocks/articles/spdw-vs-vxus-state-street-190302458.html",
           "title": "SPDW vs VXUS: Is a State Street or Vanguard International ETF the Better Fit for Your Portfolio?",
@@ -276,83 +257,76 @@
           "publisher": "The Motley Fool",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGmvt2T1NW26b9UUb2flOP5uE__Macz5dks7WzQsueiLqr4XR5kYDTt_GzwpA"
-        },
-        {
-          "url": "https://etfdb.com/equity-etf-content-hub/inside-ticker-iemg-vwo/",
-          "title": "Inside the Ticker: IEMG vs. VWO",
-          "publisher": "ETF Database",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7zZWGAyCdFYF3juVs7OKhGBt3xgq8O7XDRiv41m5gQ3qZ0EUuqU6_cqHBBVI"
         }
       ]
     },
     {
-      "query": "wow forever server status",
+      "query": "school",
       "approx_searches": "2000+",
       "published_at": "2026-11-06T15:00:00Z",
       "related_news_urls": [
-        "https://games.gg/world-of-warcraft/guides/wow-forever-this-faction-is-currently-unavailable-what-it-means/",
-        "https://mein-mmo.de/en/wow-forever-server-down-on-november-6-in-the-live-ticker-start-time-status-duration,1595208/",
-        "https://games.gg/world-of-warcraft/guides/wow-forever-wow51900337-valid-access-license-error-how-to-fix/"
+        "https://www.mercurynews.com/2026/11/06/sacred-heart-prep-menlo-school-rivalry-stanford-stadium/",
+        "https://www.eastbaytimes.com/2026/11/06/sacred-heart-prep-menlo-school-rivalry-stanford-stadium/",
+        "https://varsity.startribune.com/minnesota-high-school-football-playoffs-game-officials-player-safety/601908706"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Y_uEVmIfANBmIe0gx1dTrejyHf1f6_l588M0Zgai0fekia-ZcqSBaMIHYgg",
-      "image_credit": "games.gg",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTZBenAXg2Ew27HBhub-4I9Ky0Gdmo-YkOYvqg9v0u-NT6LeFyUHDT2rn7c68",
+      "image_credit": "The Mercury News",
       "news": [
         {
-          "url": "https://games.gg/world-of-warcraft/guides/wow-forever-this-faction-is-currently-unavailable-what-it-means/",
-          "title": "WoW Forever 'This Faction Is Currently Unavailable': What It Means",
-          "publisher": "games.gg",
+          "url": "https://www.mercurynews.com/2026/11/06/sacred-heart-prep-menlo-school-rivalry-stanford-stadium/",
+          "title": "Peninsula high school rivalry coming to Stanford Stadium",
+          "publisher": "The Mercury News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Y_uEVmIfANBmIe0gx1dTrejyHf1f6_l588M0Zgai0fekia-ZcqSBaMIHYgg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTZBenAXg2Ew27HBhub-4I9Ky0Gdmo-YkOYvqg9v0u-NT6LeFyUHDT2rn7c68"
         },
         {
-          "url": "https://mein-mmo.de/en/wow-forever-server-down-on-november-6-in-the-live-ticker-start-time-status-duration,1595208/",
-          "title": "WoW Forever Server Down on November 6 in the Live Ticker – Start Time, Status, Duration",
-          "publisher": "Mein-MMO",
+          "url": "https://www.eastbaytimes.com/2026/11/06/sacred-heart-prep-menlo-school-rivalry-stanford-stadium/",
+          "title": "Peninsula high school rivalry coming to Stanford Stadium",
+          "publisher": "East Bay Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmWsPk-MjUssH_KUf_VzfIAwVUfVZXgHM0PeQ9XbiAJ4ukSsxaFeQuLPCaR3Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbQJgHBODqchiUT3y3ZKi1mmxVGnKgOmfUZyf1KtlFfaVg41YXGCAM0py2YU8"
         },
         {
-          "url": "https://games.gg/world-of-warcraft/guides/wow-forever-wow51900337-valid-access-license-error-how-to-fix/",
-          "title": "WoW Forever WOW51900337 'Valid Access License' Error: How to Fix It",
-          "publisher": "games.gg",
+          "url": "https://varsity.startribune.com/minnesota-high-school-football-playoffs-game-officials-player-safety/601908706",
+          "title": "Five observations on the high school football season",
+          "publisher": "Star Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT89kgtzjNgmBkWD9FNDcNTNFz3yGMG_235Ip1OmlABT0Zznl3gaUw-arQBX10"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Pl2ACXJ8CV4NRBr2Oqsj1OpcZ9yvhAf2JFaGqMaFX3LisPrHo4iKDdGo9Ts"
         }
       ]
     },
     {
       "query": "luca van assche",
-      "approx_searches": "1000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-06T15:00:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/casper-ruud-vs-nuno-borges-quarter-finals-match-nov-06-2026/",
-        "https://en.tennistemple.com/actu/rolex-paris-masters-rinderknech-advances-as/sbJS",
-        "https://www.dimers.com/tennis/news/arthur-rinderknech-vs-francisco-cerundolo-tennis-prediction-atp-paris-masters-2026-ac"
+        "https://apnews.com/article/paris-masters-alcaraz-shelton-fils-3ef32a631a349af590c096f047aeced2",
+        "https://www.10tv.com/article/syndication/associatedpress/ben-shelton-tops-tommy-paul-to-reach-first-paris-masters-semifinal-tiafoe-claims-atp-finals-spot/616-32b952f8-1582-4316-9fe7-2990c26526ea",
+        "https://www.atptour.com/en/news/shelton-rinderknech-paul-halys-paris-2026-thursday"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTivTpWUlwWTfOVWnWItoTnYmxsMxR3CVv3zjIaaCoKx9gdJyFweeW0DRcyIyw",
-      "image_credit": "Robinhood",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyrlcjw5tUBSlMh5ZYOYi7eJh5c99FQx2G8dcpEer76xlaf6YGNCtNklVWwHs",
+      "image_credit": "AP News",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/casper-ruud-vs-nuno-borges-quarter-finals-match-nov-06-2026/",
-          "title": "November 6, 2026: Casper Ruud vs Nuno Borges Quarter Finals match Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://apnews.com/article/paris-masters-alcaraz-shelton-fils-3ef32a631a349af590c096f047aeced2",
+          "title": "Shelton's season best 43rd win moves him into Paris Masters quarterfinals along with Alcaraz, Fritz",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTivTpWUlwWTfOVWnWItoTnYmxsMxR3CVv3zjIaaCoKx9gdJyFweeW0DRcyIyw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyrlcjw5tUBSlMh5ZYOYi7eJh5c99FQx2G8dcpEer76xlaf6YGNCtNklVWwHs"
         },
         {
-          "url": "https://en.tennistemple.com/actu/rolex-paris-masters-rinderknech-advances-as/sbJS",
-          "title": "Rolex Paris Masters: Rinderknech advances as Cerundolo retires, Halys takes down Fery",
-          "publisher": "TennisTemple",
+          "url": "https://www.10tv.com/article/syndication/associatedpress/ben-shelton-tops-tommy-paul-to-reach-first-paris-masters-semifinal-tiafoe-claims-atp-finals-spot/616-32b952f8-1582-4316-9fe7-2990c26526ea",
+          "title": "Ben Shelton tops Tommy Paul to reach first Paris Masters semifinal, Tiafoe claims ATP Finals spot",
+          "publisher": "10TV",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWPqtyQHAxzgvj4c__I3dO0CJpcVX_r1buUIuYT0Zu4hZ7k6C0NCov83sbH0U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSPLxBycCtpkAdhZ1piDBB_MfQa3e6e_SUytBQawYoG_DuF09LpFhpEFaWSZE"
         },
         {
-          "url": "https://www.dimers.com/tennis/news/arthur-rinderknech-vs-francisco-cerundolo-tennis-prediction-atp-paris-masters-2026-ac",
-          "title": "Arthur Rinderknech vs. Francisco Cerundolo prediction, odds, picks for ATP Paris Masters 2026",
-          "publisher": "Dimers",
+          "url": "https://www.atptour.com/en/news/shelton-rinderknech-paul-halys-paris-2026-thursday",
+          "title": "Shelton, Paul down home hopes, set high-stakes QF clash in Paris",
+          "publisher": "ATP Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvjHCutkgbt3UYr-jrlYTAgCAmZp9kSJ5gRIrxXxaQsRNFynUT9c4wauGejZk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWEtSGDWY3W7_ioyh_pBSncfhEEe3DWqABoezjPRppC00xzw_5QX1Egnl3CYc"
         }
       ]
     }
