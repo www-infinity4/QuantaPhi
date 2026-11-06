@@ -53,7 +53,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const walletIdentity=get('bubblesWalletIdentity');
  const cancel=get('bubblesCancelSignIn');
  const client=new AccountConnections({token:()=>resolveConnectorWalletToken(host),root:host});
- let loading=false,oauthInProgress=false,latest=null,lastChecked=0,refreshInFlight=null;
+ let loading=false,oauthInProgress=false,latest=null,lastChecked=0,refreshInFlight=null,cloudflareRecoveryAttempted=false;
  const NOTE_KEY='bubbles:oauth-return-note:v1';
  const returned=(()=>{
   try{
@@ -184,6 +184,26 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
       const accounts=await client.call('/accounts');
       if(Array.isArray(accounts?.accounts))accountRecords=accounts.accounts;
      }catch{}
+    }
+    // The Android callback can be received securely while the original tab
+    // loses its browser-local return note. Finish that already-authorized
+    // Cloudflare handoff once, without initiating a fresh OAuth sign-in.
+    if(!cloudflareRecoveryAttempted&&session?.walletVerified===true&&
+       Array.isArray(accountRecords)&&!client.pending&&!oauthInProgress&&
+       !accountRecords.some(account=>account?.provider==='cloudflare'&&
+         account.status==='connected'&&Number.isFinite(account.expiresAt)&&
+         account.expiresAt>Date.now()+30000)){
+      cloudflareRecoveryAttempted=true;
+      try{
+       const recovered=await client.call('/handoff/cloudflare/resume',{},45000);
+       if(recovered.status==='connected'&&recovered.account){
+        const current=await client.call('/accounts');
+        if(Array.isArray(current?.accounts))accountRecords=current.accounts;
+       }
+      }catch(error){
+       returnIssue='Cloudflare authorization recovery failed: '+String(error?.message||'unverified')+
+        '. Your connection remains unverified.';
+      }
     }
     lastChecked=Date.now();
     return render({...data,walletVerified:session?.walletVerified===true,
