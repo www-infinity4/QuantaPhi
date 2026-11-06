@@ -1850,10 +1850,6 @@ function display(text,who,greeting=false){
  line.append(actionMenu);
  const wasNearBottom=chatScroll.scrollHeight-chatScroll.scrollTop-chatScroll.clientHeight<96;
  conversation.append(line);
- // Trigger the in-thread iteration sequence only for a newly submitted user
- // turn, never for History replay or a simulated assistant/tool message.
- if(who==='you'&&turnPending&&typeof CustomEvent==='function')
-  window.dispatchEvent(new CustomEvent('bubbles:chat-user-visible'));
  // New replies follow the bottom; reading older messages doesn't jump away.
  if(wasNearBottom||who==='you'||greeting){
   chatScroll.scrollTop=chatScroll.scrollHeight;
@@ -2482,7 +2478,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    });
   }catch(error){status.textContent='Tool action driver unavailable: '+String(error.message||error).slice(0,110);}
   if(toolAction){
-   busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
+   busy=true;send.disabled=true;display(spoken,'you');
+ // Only an accepted standard chat turn starts the in-thread iteration trail.
+ // Do not alter the shared display() or voice/History startup behavior.
+ if(typeof CustomEvent==='function')
+  window.dispatchEvent(new CustomEvent('bubbles:chat-user-visible'));
+ clearSentComposer();setOrbState('thinking');
    let answer='',workspace=null;
    try{
     if(toolAction.kind==='phone'){
