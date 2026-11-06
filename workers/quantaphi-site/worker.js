@@ -1,6 +1,12 @@
 import {videoAPI} from './video-api.mjs';
 const EDGE_VERSION = 'quantaphi-org-service-20261029-housing-v15';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
+// Static public crawler documents, independent of GitHub at request time.
+// These strings must match the root repository files exactly.
+const PUBLIC_CRAWLER_FILES = Object.freeze({
+ '/robots.txt': 'User-agent: *\nAllow: /\n\nSitemap: https://quantaphi.org/sitemap.xml\n',
+ '/ads.txt': 'google.com, pub-4614831062084491, DIRECT, f08c47fec0942fa0\n'
+});
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
  { slug: '/omni-phi/', aliases: ['/omni/', '/OmniPhi/'], repo: 'Omni-Phi' },
@@ -373,6 +379,18 @@ export default {
   if (/^(?:www\.)?quantaphi\.(?:net|org)$/.test(incoming.hostname) && incoming.hostname !== 'quantaphi.org') {
    incoming.hostname = 'quantaphi.org'; incoming.protocol = 'https:';
    return Response.redirect(incoming.toString(), 308);
+  }
+  if (request.method === 'GET' || request.method === 'HEAD') {
+   const body = PUBLIC_CRAWLER_FILES[incoming.pathname];
+   if (body !== undefined) return new Response(request.method === 'HEAD' ? null : body, {
+    status: 200,
+    headers: {
+     'Content-Type': 'text/plain; charset=utf-8',
+     'Cache-Control': 'public, max-age=300, s-maxage=3600',
+     'X-Content-Type-Options': 'nosniff',
+     'x-quantaphi-edge': EDGE_VERSION
+    }
+   });
   }
   // Quant-AI uses a private Worker service binding, never a public GitHub proxy.
   // Strip only the fixed site mount prefix; the browser and wallet stay on
