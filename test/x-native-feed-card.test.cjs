@@ -22,7 +22,7 @@ test('native X backend verifies scope, uses source data, and does not replay end
  const worker=read('workers/media-star-following/worker.js');
  for(const endpoint of ['/v1/x/timeline','/v1/x/spaces/live','/v1/x/profile','/v1/x/post','/v1/x/like'])assert.ok(worker.includes(endpoint),endpoint);
  assert.ok(worker.includes('x_write_permission_required'));
- assert.ok(worker.includes("space.state!=='live'"),'live cards must filter out ended Spaces');
+ assert.ok(worker.includes("space.state==='live'"),'live cards must filter out ended Spaces');
  assert.ok(worker.includes("tweet.write"));
  assert.ok(worker.includes("like.write"));
  assert.ok(worker.includes('x_api_verified'));
