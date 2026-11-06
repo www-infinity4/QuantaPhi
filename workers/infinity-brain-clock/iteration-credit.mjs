@@ -31,6 +31,10 @@ export async function githubIteration(env,record,result,operation,index){
  let tool;
  if(operation?.action==='read_file'&&sha(result.sha))tool='github.read_file';
  if(operation?.action==='read_repository'&&sha(result.headSha))tool='github.read_repository';
+ if(operation?.action==='create_repository'&&result.status==='repository_created'&&
+    /^www-infinity4\/[A-Za-z0-9_.-]{2,80}$/.test(result.repository||'')&&
+    result.repository.toLowerCase()===record.repository?.toLowerCase()&&result.url==='https://github.com/'+result.repository)
+  tool='github.create_repository';
  if(operation?.action==='capabilities'&&result.status==='credential_verified_read')tool='github.capabilities';
  if(operation?.action==='list_workflows'&&result.complete===true)tool='github.list_workflows';
  if(['list_runs','list_workflow_runs'].includes(operation?.action)&&result.status==='runs_read_only')tool='github.list_runs';
@@ -43,10 +47,10 @@ export async function githubIteration(env,record,result,operation,index){
   tool=result.run?.status==='completed'&&result.run.conclusion==='success'?'github.workflow_checks':'github.read_repository';
  }
  if(!tool)return null;
- const receiptId='bb_'+await hash(JSON.stringify([env.WRITER_OWNER_HASH,record.requestId,tool,operation.repository,operation.path||null,result.commitSha||result.headSha||result.run?.headSha||result.sha||null,result.run?.id||null,operation.query||null]));
+ const receiptId='bb_'+await hash(JSON.stringify([env.WRITER_OWNER_HASH,record.requestId,tool,operation.repository,operation.path||null,result.commitSha||result.headSha||result.run?.headSha||result.sha||result.readme?.commitSha||null,result.run?.id||null,operation.query||null]));
  const receipt={id:receiptId,tool,status:'complete'};
  const ctx=record.bitContext;
- if(!ctx)return {receipt,bit:{status:'context_unavailable',amount:0}};
+ if(!ctx||tool==='github.create_repository')return {receipt,bit:{status:'context_unavailable',amount:0}};
  const packet={version:1,source:'brain_direct_github_v1',asset:'BUBBLE_BIT',receiptId,userId:ctx.userId,
   sessionId:ctx.sessionId,criteriaKey:ctx.criteriaKey,contextId:ctx.id,tool,
   goal:ctx.goal,summary:tool+' completed for '+String(operation.repository||'GitHub'),

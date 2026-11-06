@@ -55,9 +55,9 @@ test('the same live status line loads on every Bubbles website entrypoint withou
  const fs=requireSource();
  for(const page of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs(page);
-  assert.match(html,/bubbles-live-iteration-feed\.mjs\?v=20261106-inthread-iterations2/);
+  assert.match(html,/bubbles-live-iteration-feed\.mjs\?v=20261106-inthread-iterations3/);
   assert.match(html,/bubbles-live-iteration-feed\.css\?v=20261106-inthread-iterations2/);
-  assert.match(html,/bubbles-ai\.js\?v=20261106-bubbles-thread-iterations8/);
+  assert.match(html,/bubbles-ai\.js\?v=20261106-bubbles-github-receipts9/);
  }
  const module=fs('bubbles-live-iteration-feed.mjs');
  assert.match(module,/\.ba-panel \.ba-status|querySelector\('\.ba-panel'\)/,
@@ -164,6 +164,7 @@ test('authenticated direct GitHub read displays real start and pending states wi
   CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},
   window:{dispatchEvent:event=>events.push(event.detail)},
   bubblesFetch:async()=>({ok:true,json:async()=>({ok:true,status:'working'})}),
+  rememberRecentGithubWork:()=>{},
   watchDirectGithubReceipt:()=>{}
  };
  vm.createContext(ctx);
@@ -197,6 +198,7 @@ test('direct GitHub read reports server receipt only for matching verified backe
   CustomEvent:class{constructor(name,{detail}){this.detail=detail;}},
   window:{dispatchEvent:event=>events.push(event.detail)},
   bubblesFetch:async()=>({ok:true,json:async()=>backend}),
+  rememberRecentGithubWork:()=>{},
   watchDirectGithubReceipt:()=>{}
  };
  vm.createContext(ctx);
