@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T04:31:25.535822Z",
+  "checked_at": "2026-11-07T05:01:42.684811Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jeremy london 7th heaven",
+      "query": "cody bellinger",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T04:10:00Z",
+      "published_at": "2026-11-07T04:40:00Z",
       "related_news_urls": [
-        "https://people.com/7th-heaven-star-jeremy-london-asks-for-help-finding-a-job-and-home-i-m-not-ok-12241209",
-        "https://www.cleveland.com/entertainment/2026/11/party-of-five-actor-makes-heartbreaking-plea-to-fans-as-he-faces-losing-job-home-im-not-ok.html",
-        "https://www.al.com/life/2026/11/the-devastating-reason-a-party-of-five-alum-is-asking-fans-for-a-place-to-live.html"
+        "https://www.mlb.com/news/2026-silver-slugger-award-finalists",
+        "https://sports.yahoo.com/mlb/article/2026-silver-slugger-shohei-ohtani-mike-trout-junior-caminero-among-finalists-for-batting-award-003254731.html",
+        "https://www.nytimes.com/athletic/7754634/2026/11/05/mlb-silver-slugger-finalists-pete-crow-armstrong-yordan-alvarez/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQBNguhydi3Ia_fQnZH4Y1oOtuaQFI4XbO5i44T4U8fOfnZKuENhCS0zn_OBc",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeMP2DX7p4SmBq13dNweoP4eJ3be1P3sfj2brq4JjOM7TOK2P8OZ9wbGP2hrk",
+      "image_credit": "MLB.com",
       "news": [
         {
-          "url": "https://people.com/7th-heaven-star-jeremy-london-asks-for-help-finding-a-job-and-home-i-m-not-ok-12241209",
-          "title": "‘7th Heaven’ Star Jeremy London Asks for Help Finding a ‘Job and Home’: ‘I’m Not Ok’",
-          "publisher": "People.com",
+          "url": "https://www.mlb.com/news/2026-silver-slugger-award-finalists",
+          "title": "Finalists for Silver Sluggers announced",
+          "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQBNguhydi3Ia_fQnZH4Y1oOtuaQFI4XbO5i44T4U8fOfnZKuENhCS0zn_OBc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeMP2DX7p4SmBq13dNweoP4eJ3be1P3sfj2brq4JjOM7TOK2P8OZ9wbGP2hrk"
         },
         {
-          "url": "https://www.cleveland.com/entertainment/2026/11/party-of-five-actor-makes-heartbreaking-plea-to-fans-as-he-faces-losing-job-home-im-not-ok.html",
-          "title": "‘Party of Five’ actor makes heartbreaking plea to fans as he faces losing job, home: ‘I’m not OK’",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSioniuvnte6DREzJ44pNgV5ica6ccgB6Y-wRxdH79IJk5gFxrL-JMq3HGzPDc"
-        },
-        {
-          "url": "https://www.al.com/life/2026/11/the-devastating-reason-a-party-of-five-alum-is-asking-fans-for-a-place-to-live.html",
-          "title": "The devastating reason a ‘Party of Five’ alum is asking fans for a place to live",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3_CbYjhitWjn3_Exqeakxyz4TJtorWTnZ1SqpCIM_jNxLE5JYRucYeo6mUQ4"
-        }
-      ]
-    },
-    {
-      "query": "wagner vs miami fl",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/miami/article/live-updates-no-14-miami-hurricanes-basketball-vs-wagner-292245707/",
-        "https://www.wsn.com/promos/polymarket-promo-code-ncaa-basketball-wagner-vs-miami-fl-11-06-2026/",
-        "https://www.fanduel.com/research/miami-fl-vs-wagner-college-basketball-predictions-odds-picks-best-bets-for-11-6-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPF5fZnNEOr0cF_lRWTbI6rRFSscP2ZePc7JpKAxObAqkvWidOIqDudF7h5EI",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/miami/article/live-updates-no-14-miami-hurricanes-basketball-vs-wagner-292245707/",
-          "title": "Live Updates: No. 14 Miami basketball vs. Wagner",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPF5fZnNEOr0cF_lRWTbI6rRFSscP2ZePc7JpKAxObAqkvWidOIqDudF7h5EI"
-        },
-        {
-          "url": "https://www.wsn.com/promos/polymarket-promo-code-ncaa-basketball-wagner-vs-miami-fl-11-06-2026/",
-          "title": "Polymarket Promo Code WSN: $25 Bonus for Wagner vs. Miami FL (November 6)",
-          "publisher": "WSN.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThpOhUZmP_TuGCU4e5C-5CMr0b_N_g0h6bTHVQGvuDtqwd9p_1PWJEdrLuNQk"
-        },
-        {
-          "url": "https://www.fanduel.com/research/miami-fl-vs-wagner-college-basketball-predictions-odds-picks-best-bets-for-11-6-2026",
-          "title": "Miami (FL) vs Wagner College Basketball Prediction, Odds, Picks, Best Bets for Nov. 6",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVVkY5GkkuI3sa6-M6kOtU3iSLxD43XqsDXdZimN_Qx12uc29-wPh1QaMOy9Y"
-        }
-      ]
-    },
-    {
-      "query": "mshsaa",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:10:00Z",
-      "related_news_urls": [
-        "https://www.ozarkssportszone.com/2026/11/06/district-semifinal-football-live-updates-3/",
-        "https://abc17news.com/sports/high-school-sports/2026/11/06/sportszone-football-friday-highlights-and-scores-week-ten-2-2/",
-        "https://www.ozarksfirst.com/news/ozarksfirst-hs-football-livestreams/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTilCkMo2mL-fEwuFq-3BNR4wTkfHasP_K49Ux2XveUQNflb4vx-i1MYzbG59g",
-      "image_credit": "Ozarks Sports Zone",
-      "news": [
-        {
-          "url": "https://www.ozarkssportszone.com/2026/11/06/district-semifinal-football-live-updates-3/",
-          "title": "District Semifinal Football Live Updates",
-          "publisher": "Ozarks Sports Zone",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTilCkMo2mL-fEwuFq-3BNR4wTkfHasP_K49Ux2XveUQNflb4vx-i1MYzbG59g"
-        },
-        {
-          "url": "https://abc17news.com/sports/high-school-sports/2026/11/06/sportszone-football-friday-highlights-and-scores-week-ten-2-2/",
-          "title": "Mid-Missouri high school football highlights and scores: Week 11",
-          "publisher": "ABC17NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZBqkLUjNz5n7ylU9tR12N7CV74J5wLV6H0h0qrwIuKdY7C2ElLy-GhshslUw"
-        },
-        {
-          "url": "https://www.ozarksfirst.com/news/ozarksfirst-hs-football-livestreams/",
-          "title": "Southwest Missouri high school football livestreaming starts at 8:30 p.m. here",
-          "publisher": "OzarksFirst.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnXdilAQ6XroYnfUpL7ogmYGUkD7qDpPdkmd8VF-hHsi5yVdxXvCgR6XYn_I"
-        }
-      ]
-    },
-    {
-      "query": "lakewood colorado",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T04:00:00Z",
-      "related_news_urls": [
-        "https://www.denverpost.com/2026/11/05/lakewood-police-shooting-colfax-wadsworth/",
-        "https://www.cbsnews.com/colorado/video/colorado-law-enforcement-agencies-step-in-to-help-lakewood-after-fatal-shooting/",
-        "https://abcnews.com/US/4-colorado-officers-shot-1-fatally-after-gunfight/story?id=137902018"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMXDcKJR0Sk6wiV0XvjXs66MG6lqGzhzKO2RxX98m7O1DngcuRrmkA_rTqrC4",
-      "image_credit": "The Denver Post",
-      "news": [
-        {
-          "url": "https://www.denverpost.com/2026/11/05/lakewood-police-shooting-colfax-wadsworth/",
-          "title": "Lakewood police officer killed, 3 others wounded in shootout on RTD bus",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMXDcKJR0Sk6wiV0XvjXs66MG6lqGzhzKO2RxX98m7O1DngcuRrmkA_rTqrC4"
-        },
-        {
-          "url": "https://www.cbsnews.com/colorado/video/colorado-law-enforcement-agencies-step-in-to-help-lakewood-after-fatal-shooting/",
-          "title": "Colorado law enforcement agencies step in to help Lakewood after fatal shooting",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTan6xXUFHtOPwcuUsQTsp_x3DAmi_Rtnyf-zLve5ZzZuXeBceAUI6egGxeMro"
-        },
-        {
-          "url": "https://abcnews.com/US/4-colorado-officers-shot-1-fatally-after-gunfight/story?id=137902018",
-          "title": "4 Colorado officers shot, 1 fatally, after gunfight with suspect: Police",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBGSuy_rx4z_MVlPkjJ--YQvvxGL2-KjgefG7K9uqXf0cZBXx-VHuHxK4Kd5Y"
-        }
-      ]
-    },
-    {
-      "query": "jeremiah fears",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T04:00:00Z",
-      "related_news_urls": [
-        "https://www.rotowire.com/basketball/headlines/jeremiah-fears-news-scores-season-high-24-points-in-loss-537920",
-        "https://www.fanduel.com/research/nba/player-news/game-recaps/stephen-curry-scores-29-points-in-win-over-heat-nov-6-2026",
-        "https://www.fantasypros.com/nba/news/616931/jeremiah-fears-puts-up-20-points-saturdays-win.php"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWtphFxInbJ3ACLLrkDOdEpNBcx9Bs6DjidZaK1pbscCNHcQs6Jfwie-KXoFY",
-      "image_credit": "RotoWire",
-      "news": [
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/jeremiah-fears-news-scores-season-high-24-points-in-loss-537920",
-          "title": "Jeremiah Fears News: Scores season-high 24 points in loss",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWtphFxInbJ3ACLLrkDOdEpNBcx9Bs6DjidZaK1pbscCNHcQs6Jfwie-KXoFY"
-        },
-        {
-          "url": "https://www.fanduel.com/research/nba/player-news/game-recaps/stephen-curry-scores-29-points-in-win-over-heat-nov-6-2026",
-          "title": "Stephen Curry Scores 29 Points In Win Over Heat",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMWfKvdAwxNysIad8NGd_TASysQtJHs50n2oI29_q-y40-QJZw9AgR6Uf5iE8"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/616931/jeremiah-fears-puts-up-20-points-saturdays-win.php",
-          "title": "Jeremiah Fears puts up 20 points in Saturday's win",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCKukzEDpPlunEtmSNdyAINFt3F2-4ES48rI39jAOqNLdtwq6LXyrFsJ640iU"
-        }
-      ]
-    },
-    {
-      "query": "michael b jordan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T04:00:00Z",
-      "related_news_urls": [
-        "https://www.lifestyleasia.com/kl/culture/fourth-wing-book-series-the-empyrean-rebecca-yarros/",
-        "https://screenrant.com/fourth-wing-change-fantasy-tv-genre-not-like/",
-        "https://www.brit.co/books-for-fourth-wing-fans/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShuZxERV_RD9fikg1RJ917EuXSjLicBO8gdYbo-Ys1OifpAPYHTMEJ6B8tIro",
-      "image_credit": "Lifestyle Asia Hong Kong",
-      "news": [
-        {
-          "url": "https://www.lifestyleasia.com/kl/culture/fourth-wing-book-series-the-empyrean-rebecca-yarros/",
-          "title": "‘The Empyrean’ series: Your guide to read the ‘Fourth Wing’ books in chronological order",
-          "publisher": "Lifestyle Asia Hong Kong",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShuZxERV_RD9fikg1RJ917EuXSjLicBO8gdYbo-Ys1OifpAPYHTMEJ6B8tIro"
-        },
-        {
-          "url": "https://screenrant.com/fourth-wing-change-fantasy-tv-genre-not-like/",
-          "title": "Some Fans Won't Like Michael B. Jordan's New Fantasy Series On Prime Video",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY8HrebbJtuzUU_Trmr_mSRj261v4WtKakV_HYBP5yTkEfuy-lmJxmUlxZiH0"
-        },
-        {
-          "url": "https://www.brit.co/books-for-fourth-wing-fans/",
-          "title": "9 Epic Books to Read While You Wait for the 'Fourth Wing' Show",
-          "publisher": "Brit + Co",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg9E6ShuvDMh3On55pjKDo00JAFQKZUvQI8AUoP2swmjwLvhA5pjrr07gNJP0"
-        }
-      ]
-    },
-    {
-      "query": "byu basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T03:50:00Z",
-      "related_news_urls": [
-        "https://sports.ksl.com/ncaa/byu-basketball/byu-vs-omaha-watch-stream/578795",
-        "https://www.vanquishthefoe.com/byu-basketball/28024/byu-basketball-vs-omaha-preview-byu-massive-favorite-in-home-opener",
-        "https://www.si.com/college/byu/basketball/game-preview-byu-basketball-vs-omaha"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIXNOdfulEZixMrye010Dqh0cfErT1VW-jLLtwsE1wfNMnEPeTqLxmQg4Lyb4",
-      "image_credit": "KSL Sports",
-      "news": [
-        {
-          "url": "https://sports.ksl.com/ncaa/byu-basketball/byu-vs-omaha-watch-stream/578795",
-          "title": "No. 25 BYU basketball vs. Omaha: How to watch, stream, listen",
-          "publisher": "KSL Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIXNOdfulEZixMrye010Dqh0cfErT1VW-jLLtwsE1wfNMnEPeTqLxmQg4Lyb4"
-        },
-        {
-          "url": "https://www.vanquishthefoe.com/byu-basketball/28024/byu-basketball-vs-omaha-preview-byu-massive-favorite-in-home-opener",
-          "title": "BYU vs Omaha Preview: BYU Massive Favorite in Home Opener",
-          "publisher": "Vanquish The Foe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqH7RJiqV5a4CzlIr0-Xz8iIwGuxhGEKrDlaTpmjzqcT2Jj-6H5bBk9uzJAb4"
-        },
-        {
-          "url": "https://www.si.com/college/byu/basketball/game-preview-byu-basketball-vs-omaha",
-          "title": "Game Preview: BYU Basketball vs Omaha",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5UY8v064HlIh_UO55cSOwczU4oiUI1IgdczWMzjbjCxktdO24Y97-ODWqpKw"
-        }
-      ]
-    },
-    {
-      "query": "north florida vs ucla",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T03:50:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/ucla/article/ucla-mens-basketball-north-florida-preview-292218880/",
-        "https://sports.yahoo.com/articles/watch-ucla-vs-north-florida-150008649.html",
-        "https://lufkindailynews.com/news_reuters/sports/relentless-no-22-ucla-will-be-major-test-for-north-florida/article_43cc8759-17f6-599f-ae83-a8ca35c61361.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR0gaX6xWhR0W6S557GTIXP5yTHPKj6FtDr_KvyOfzF0TZ_ji1s5heVT6jl1c",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/ucla/article/ucla-mens-basketball-north-florida-preview-292218880/",
-          "title": "UCLA Men's Basketball: North Florida Preview",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR0gaX6xWhR0W6S557GTIXP5yTHPKj6FtDr_KvyOfzF0TZ_ji1s5heVT6jl1c"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-ucla-vs-north-florida-150008649.html",
-          "title": "How To Watch UCLA vs. North Florida: Time, TV, Matchup To Watch",
+          "url": "https://sports.yahoo.com/mlb/article/2026-silver-slugger-shohei-ohtani-mike-trout-junior-caminero-among-finalists-for-batting-award-003254731.html",
+          "title": "2026 Silver Slugger: Shohei Ohtani, Mike Trout, Junior Caminero among finalists for batting award",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS83BZa_6p-25y_iPGYSqMMt5ZU8KFj8BcTNuJmIc_AOMKsKv-8PyuQTqooiMs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGnwyB29ZbZR_V89buhHCsMC250O6G_vGgBJOMIxDbG8H7w6g0R_NxS37LmHw"
         },
         {
-          "url": "https://lufkindailynews.com/news_reuters/sports/relentless-no-22-ucla-will-be-major-test-for-north-florida/article_43cc8759-17f6-599f-ae83-a8ca35c61361.html",
-          "title": "Relentless No. 22 UCLA will be major test for North Florida",
-          "publisher": "The Lufkin Daily News",
+          "url": "https://www.nytimes.com/athletic/7754634/2026/11/05/mlb-silver-slugger-finalists-pete-crow-armstrong-yordan-alvarez/",
+          "title": "MLB Silver Slugger finalists: Pete Crow-Armstrong, Yordan Alvarez among nominees - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Mhs_1p8NvSzAPv1lqNwa7-1lYZyIQ71bgULD5s5hhaNObeOPq4nJLrBm3P4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZzaZcsxDY4X7RsY8BBNDv1-bBYbHCShIF1c-m6GkVRz3z1mHDJ9jekxDU8w0"
         }
       ]
     },
     {
-      "query": "grayson brousseau",
+      "query": "jimmy fallon",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T03:50:00Z",
+      "published_at": "2026-11-07T04:40:00Z",
       "related_news_urls": [
-        "https://www.deseret.com/sports/2026/11/06/grayson-brousseau-responds-to-discriminatory-byu-and-the-church-of-jesus-christ-chants/",
-        "https://www.espn.com/college-football/story/_/id/50312595/big-12-fines-ucf-fans-chant-aimed-byu-mormon-church",
-        "https://247sports.com/college/central-florida/article/ucfs-grayson-brousseau-responds-to-discriminatory-chants-against-byu-we-need-to-love-each-other-292178987/"
+        "https://www.wthr.com/article/sports/wnba/indiana-fever/caitlin-clark-tonight-show-starring-jimmy-fallon-interview-nbc-friday-night/531-f18c83ef-65cf-4c1b-9bc0-c25b8fd5687e",
+        "https://sports.yahoo.com/articles/caitlin-clark-makes-tonight-show-032723916.html",
+        "https://www.fltimes.com/22-in-the-house-caitlinclark-fallontonight/video_51086e9e-cb69-54c1-ac63-f49097a7e537.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQREFCamkmMYS4IixD4K6Gk4aiyPdYeuh68aeAd6VHPDxOnr_3IJ0nIToP3UPE",
-      "image_credit": "Deseret News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVLkrFkTJu3hBIDNMw8jkHbkUZ0ymWFOCf2sb4_FBR2_bWLEAs0cQDyuuJahw",
+      "image_credit": "WTHR",
       "news": [
         {
-          "url": "https://www.deseret.com/sports/2026/11/06/grayson-brousseau-responds-to-discriminatory-byu-and-the-church-of-jesus-christ-chants/",
-          "title": "Latter-day Saint UCF player Grayson Brousseau responds to derogatory chants directed at BYU",
-          "publisher": "Deseret News",
+          "url": "https://www.wthr.com/article/sports/wnba/indiana-fever/caitlin-clark-tonight-show-starring-jimmy-fallon-interview-nbc-friday-night/531-f18c83ef-65cf-4c1b-9bc0-c25b8fd5687e",
+          "title": "Caitlin Clark capping big week with 'Tonight Show' appearance Friday night",
+          "publisher": "WTHR",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQREFCamkmMYS4IixD4K6Gk4aiyPdYeuh68aeAd6VHPDxOnr_3IJ0nIToP3UPE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVLkrFkTJu3hBIDNMw8jkHbkUZ0ymWFOCf2sb4_FBR2_bWLEAs0cQDyuuJahw"
         },
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50312595/big-12-fines-ucf-fans-chant-aimed-byu-mormon-church",
-          "title": "UCF fined for fans' chants at BYU; Big 12 sets policy with in-game penalties",
-          "publisher": "ESPN",
+          "url": "https://sports.yahoo.com/articles/caitlin-clark-makes-tonight-show-032723916.html",
+          "title": "Caitlin Clark makes ‘The Tonight Show’ appearance",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROsn_-sYPu0I_p4iyueKhGkzoWiU8-rGe3dsfdOPRFHRvLiwgTzEbuE1AuUPA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3PM8Zpt2S61nHCQyIuALjLOyoTXAf_ek_pnGZkJ3j0mPFUw3s9xyOBYSwCg0"
         },
         {
-          "url": "https://247sports.com/college/central-florida/article/ucfs-grayson-brousseau-responds-to-discriminatory-chants-against-byu-we-need-to-love-each-other-292178987/",
-          "title": "UCF's Grayson Brousseau Responds to Discriminatory Chants Against BYU: 'We Need to Love Each Other'",
-          "publisher": "247Sports",
+          "url": "https://www.fltimes.com/22-in-the-house-caitlinclark-fallontonight/video_51086e9e-cb69-54c1-ac63-f49097a7e537.html",
+          "title": "22 in the house! #CaitlinClark #FallonTonight",
+          "publisher": "Finger Lakes Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYJ9CowciuXrXIRD4GO_dkFQrtoYWzalJ-RJozuq3eq2vSpqZ0a3Ji2XGS3Hg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwqIKv-EOD8FYxi5WGp22yd1_GSFoR6Gch_NRZpzb_vflJO_hcv-F4Anp4TEA"
         }
       ]
     },
     {
-      "query": "michael fassbender",
+      "query": "jason eck",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T03:50:00Z",
+      "published_at": "2026-11-07T04:40:00Z",
       "related_news_urls": [
-        "https://collider.com/michael-fassbender-sci-fi-hope-streaming-success-prime-video-november-2026/",
-        "https://www.yahoo.com/entertainment/movies/articles/20-great-performances-trapped-terrible-131959559.html",
-        "https://whatculture.com/film/20-great-performances-trapped-in-terrible-movies?page=14"
+        "https://www.wsj.com/sports/football/new-mexico-jason-eck-b7a03a81",
+        "https://www.nytimes.com/athletic/7749145/2026/11/03/new-mexico-lobos-players-ranked-first-time/",
+        "https://www.santafenewmexican.com/sports/lobos/unm-football-lands-first-ever-ap-top-25-ranking/article_4020c885-08ac-4ff8-8f3b-2c8fb023efe7.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZhEXXa29YZh4PgUoTM-Ky_Tys_k-Lx9toNtWgtB4hMpDs8inaQkEeQwXBkfw",
-      "image_credit": "Collider",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR_i8cAaUy_9C1XhRJ-5ghwv_joI59Mf9rBFPDBtt0E6-wPJ__ke7swJv9kiI",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://collider.com/michael-fassbender-sci-fi-hope-streaming-success-prime-video-november-2026/",
-          "title": "Prime Video Officially Has a New Sci-Fi Hit Thanks to Michael Fassbender",
-          "publisher": "Collider",
+          "url": "https://www.wsj.com/sports/football/new-mexico-jason-eck-b7a03a81",
+          "title": "College Football’s Breakout Coach Almost Quit to Sell Artificial Turf",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZhEXXa29YZh4PgUoTM-Ky_Tys_k-Lx9toNtWgtB4hMpDs8inaQkEeQwXBkfw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR_i8cAaUy_9C1XhRJ-5ghwv_joI59Mf9rBFPDBtt0E6-wPJ__ke7swJv9kiI"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/20-great-performances-trapped-terrible-131959559.html",
-          "title": "20 Great Performances TRAPPED In Terrible Movies",
+          "url": "https://www.nytimes.com/athletic/7749145/2026/11/03/new-mexico-lobos-players-ranked-first-time/",
+          "title": "New Mexico’s players didn’t leave. Now the Lobos are ranked for the first time",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPOTo6_1skjR-ZsXnxDB0K7kCFjmWUF13Qirc4obJTjY0XaYAAXrdhOApjNyQ"
+        },
+        {
+          "url": "https://www.santafenewmexican.com/sports/lobos/unm-football-lands-first-ever-ap-top-25-ranking/article_4020c885-08ac-4ff8-8f3b-2c8fb023efe7.html",
+          "title": "UNM football lands first-ever AP Top 25 ranking",
+          "publisher": "Santa Fe New Mexican",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf5Qcdivi7bXO8QwB3VJ7hIrP9DP0LaxQ9eBPQ_GI9akHjdadyBYNJKTGUW9Q"
+        }
+      ]
+    },
+    {
+      "query": "mega millions numbers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T04:30:00Z",
+      "related_news_urls": [
+        "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
+        "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/",
+        "https://www.detroitnews.com/story/news/lottery/2026/11/06/mega-millions-numbers-for-friday-november-6/92654436007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4",
+      "image_credit": "WAVY.com",
+      "news": [
+        {
+          "url": "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
+          "title": "Over $1B in Mega Millions, Powerball jackpots up for grabs",
+          "publisher": "WAVY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4"
+        },
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/",
+          "title": "Mega Millions Jackpot Tops $500 Million—Here’s What The Winner Could Take Home",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHTuzxS6qku_Z3j3KuW7i_UjPPjxJKpJwp2osGQIDYwGxJHf4eHqMB2YRgZVY"
+        },
+        {
+          "url": "https://www.detroitnews.com/story/news/lottery/2026/11/06/mega-millions-numbers-for-friday-november-6/92654436007/",
+          "title": "Mega Millions numbers for Friday, Nov. 6",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk"
+        }
+      ]
+    },
+    {
+      "query": "gurnoor brar",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T04:30:00Z",
+      "related_news_urls": [
+        "https://www.indiatoday.in/sports/cricket/story/india-vs-new-zealand-1st-odi-auckland-fast-bowlers-gurnoor-brar-anshul-kamboj-3032394-2026-11-05",
+        "https://sportstar.thehindu.com/cricket/gurnoor-brar-bounce-height-after-1st-odi-arshdeep-kamboj/article71669433.ece",
+        "https://m.cricbuzz.com/player-match-performance/match/161245/player/10730/batting?inningsId=1"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrfXJBEYQ6t4jKA-oOy3n8VjmeGF2G1Ui8a9UFWGVXZ1jUth7wjK4CCeZXDXo",
+      "image_credit": "India Today",
+      "news": [
+        {
+          "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-new-zealand-1st-odi-auckland-fast-bowlers-gurnoor-brar-anshul-kamboj-3032394-2026-11-05",
+          "title": "Shubman promises, pacers deliver: Rookie fast bowlers impress in Auckland",
+          "publisher": "India Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrfXJBEYQ6t4jKA-oOy3n8VjmeGF2G1Ui8a9UFWGVXZ1jUth7wjK4CCeZXDXo"
+        },
+        {
+          "url": "https://sportstar.thehindu.com/cricket/gurnoor-brar-bounce-height-after-1st-odi-arshdeep-kamboj/article71669433.ece",
+          "title": "Arshdeep, Kamboj said I would get better bounce with my height: Gurnoor Brar after 1st ODI",
+          "publisher": "Sportstar",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PKuoWTEeeeErJfMGRMq2T3PctqFNx-15xU5ay77lNB41p4ChKebUBVMPDVM"
+        },
+        {
+          "url": "https://m.cricbuzz.com/player-match-performance/match/161245/player/10730/batting?inningsId=1",
+          "title": "Live Cricket Score, Schedule, Latest News, Stats & Videos",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSv74IK_a3fnb4xk4UBokWwdH80lim9LQowz28CHQ0OR6AoaFge7O5AOMTQy8"
+        }
+      ]
+    },
+    {
+      "query": "ocarina of time switch 2 controls",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T04:30:00Z",
+      "related_news_urls": [
+        "https://gameinformer.com/tips/2026/11/05/the-switch-2-pro-controller-can-make-zelda-ocarina-of-time-even-better",
+        "https://www.tomshardware.com/video-games/handheld-gaming/grab-a-nintendo-switch-2-controller-upgrade-from-usd49-just-in-time-for-zelda-ocarina-of-times-remaster-secure-the-tools-to-defeat-ganondorf-with-these-top-wireless-gamepads-from-8bitdo-gamesir-and-others",
+        "https://www.t3.com/tech/gaming-accessories/3-nintendo-switch-2-accessories-that-should-be-on-your-wishlist-ahead-of-shopping-season"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQlMXLHkloF-XGQ0iBhsdPwMf5WaEMZSBz9hxl4ZP2XrGgof4B9tOK8kPjx8U",
+      "image_credit": "Game Informer",
+      "news": [
+        {
+          "url": "https://gameinformer.com/tips/2026/11/05/the-switch-2-pro-controller-can-make-zelda-ocarina-of-time-even-better",
+          "title": "The Switch 2 Pro Controller Can Make Zelda: Ocarina Of Time Even Better",
+          "publisher": "Game Informer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQlMXLHkloF-XGQ0iBhsdPwMf5WaEMZSBz9hxl4ZP2XrGgof4B9tOK8kPjx8U"
+        },
+        {
+          "url": "https://www.tomshardware.com/video-games/handheld-gaming/grab-a-nintendo-switch-2-controller-upgrade-from-usd49-just-in-time-for-zelda-ocarina-of-times-remaster-secure-the-tools-to-defeat-ganondorf-with-these-top-wireless-gamepads-from-8bitdo-gamesir-and-others",
+          "title": "Grab a Nintendo Switch 2 controller upgrade from $49, just in time for Zelda: Ocarina of Time's remaster — secure the tools to defeat Ganondorf with these top wireless gamepads fro",
+          "publisher": "Tom's Hardware",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTf0fIAd1m7D1-UybtkGcixCayLnFy0LV1y1Aq57BKdN8v498zbcTmkGy7jxc"
+        },
+        {
+          "url": "https://www.t3.com/tech/gaming-accessories/3-nintendo-switch-2-accessories-that-should-be-on-your-wishlist-ahead-of-shopping-season",
+          "title": "3 Nintendo Switch 2 accessories that should be on your wishlist ahead of shopping season",
+          "publisher": "T3",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3feqIV5rflp0QNpDukDQNWfjhGRviC57Bqt1ZnIjqZtRjl7dvIIlAxjWlfSc"
+        }
+      ]
+    },
+    {
+      "query": "sarah paulson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T04:30:00Z",
+      "related_news_urls": [
+        "https://www.laineygossip.com/sarah-paulson-as-reliably-chaotic-for-season-two-of-alls-fair-as-she-was-for-first/",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/sarah-paulson-closes-her-fair-231553728.html",
+        "https://www.wmagazine.com/fashion/sarah-paulson-michael-kors-collection-alls-fair-prep"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1QqZhR1PSGR34Gae1yGKBxqfVqsNpIcloE8kjKwsMAd5EyQloJASB6DS6q-E",
+      "image_credit": "LaineyGossip",
+      "news": [
+        {
+          "url": "https://www.laineygossip.com/sarah-paulson-as-reliably-chaotic-for-season-two-of-alls-fair-as-she-was-for-first/",
+          "title": "Sarah Paulson is as reliably chaotic for season two of All's Fair as she was for the first",
+          "publisher": "LaineyGossip",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1QqZhR1PSGR34Gae1yGKBxqfVqsNpIcloE8kjKwsMAd5EyQloJASB6DS6q-E"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/sarah-paulson-closes-her-fair-231553728.html",
+          "title": "Sarah Paulson Closes Her ‘All’s Fair’ Press Tour with Four Looks",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmW9M3KzlXh_AUgSqyT41gbabMtTRWFXm3cCwOrIVl8R5X5RJ4QraauWqcxGk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQBZNUqo2ZrczysSV8_aMDxHllOzVJKTbi8UIJIedP8Dm3qZhJTeVk-lUp3aE"
         },
         {
-          "url": "https://whatculture.com/film/20-great-performances-trapped-in-terrible-movies?page=14",
-          "title": "20 Great Performances TRAPPED In Terrible Movies – Page 14",
-          "publisher": "WhatCulture.com",
+          "url": "https://www.wmagazine.com/fashion/sarah-paulson-michael-kors-collection-alls-fair-prep",
+          "title": "Sarah Paulson Turns a Preppy Classic Into a Quirked-up Fashion Fantasy",
+          "publisher": "W Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHwGzh5uBBDIXkURsitFVzc2iacl5c6cVOz5YOWVHyYz8RvHLwmQvdrV6O7Nk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTPE6gvmXaIM0PDp4Zhb2g-row22gxRjVcisji8NHKTIrP46uR1dIIZrU_b0"
+        }
+      ]
+    },
+    {
+      "query": "tonga rugby",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T04:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/rugby-league/articles/c9kgj3elgmkzo",
+        "https://www.flashscore.com/news/lebanon-and-france-somehow-produce-the-best-game-of-the-2026-rlwc/xlnEzdlJ/",
+        "https://www.tomsguide.com/entertainment/sports/how-to-watch-tonga-vs-samoa-on-7plus-its-free"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-dDN7W3atTrheElcIEuNMUhtsyRHd7H6BoluTwuVjG0LRWVU1KHaGmRrszJ8",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/rugby-league/articles/c9kgj3elgmkzo",
+          "title": "Why rugby league needs Tonga-Samoa World Cup final",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-dDN7W3atTrheElcIEuNMUhtsyRHd7H6BoluTwuVjG0LRWVU1KHaGmRrszJ8"
+        },
+        {
+          "url": "https://www.flashscore.com/news/lebanon-and-france-somehow-produce-the-best-game-of-the-2026-rlwc/xlnEzdlJ/",
+          "title": "Lebanon and France somehow produce the best game of the 2026 RLWC",
+          "publisher": "Flashscore.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRZjUknbkhLSZ-fnEQKdmHPxvqWD6hD3_sj20ets9oeEiGY99DmYzqTGHVlMc"
+        },
+        {
+          "url": "https://www.tomsguide.com/entertainment/sports/how-to-watch-tonga-vs-samoa-on-7plus-its-free",
+          "title": "How to watch Tonga vs Samoa on 7plus — it's *FREE*",
+          "publisher": "Tom's Guide",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpz46Wpybyz1z79BrD_WJgxGgrCwMy7WsWJbgVgnEOmHqlZzfaOq4wGx94Vis"
+        }
+      ]
+    },
+    {
+      "query": "deni avdija",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T04:20:00Z",
+      "related_news_urls": [
+        "https://www.jta.org/2026/11/06/sports/deni-avdija-is-at-it-again",
+        "https://www.nytimes.com/athletic/7749871/2026/11/03/deni-avdija-micah-nori-trail-blazers-nba/",
+        "https://www.usatoday.com/sports/nba/event/2026/3019178/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=4"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvcPMhEK19rI-oca2zfqqqLwQyLrIN8-8rRXwg_wKtJ7AQy8k3vZRN-PYv5RM",
+      "image_credit": "Jewish Telegraphic Agency",
+      "news": [
+        {
+          "url": "https://www.jta.org/2026/11/06/sports/deni-avdija-is-at-it-again",
+          "title": "Deni Avdija is at it again",
+          "publisher": "Jewish Telegraphic Agency",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvcPMhEK19rI-oca2zfqqqLwQyLrIN8-8rRXwg_wKtJ7AQy8k3vZRN-PYv5RM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7749871/2026/11/03/deni-avdija-micah-nori-trail-blazers-nba/",
+          "title": "Deni Avdija, Micah Nori and the summer phone call that defines Trail Blazers’ quick start - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw0lUdbI5gLWcorCG_9-P_eu2HX0bkvrSh_w3J14yryDcfAVCeBLyRkLuzovE"
+        },
+        {
+          "url": "https://www.usatoday.com/sports/nba/event/2026/3019178/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=4",
+          "title": "Portland Trail Blazers at Phoenix Suns - NBA Game Summary - Nov 04, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBMB6LH3wrctLs5aMRk3OEUBpJr3jUoFpW5DgavHs374RUFHnkXK8goU-qERs"
+        }
+      ]
+    },
+    {
+      "query": "luka",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T04:20:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/news/kia-mvp-ladder-nov-6-2026",
+        "https://www.nytimes.com/athletic/7752545/2026/11/04/lakers-luka-doncic-nba-mvp-leader/",
+        "https://www.usatoday.com/story/sports/nba/2026/11/06/nba-mvp-player-rankings-week-2/92632285007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzZNAE1IPV7Zr-wnaRpJAf_8bPvkSYaeVkmrWV7DN9c0bM1WA0CtClq6RafwE",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/news/kia-mvp-ladder-nov-6-2026",
+          "title": "Kia MVP Ladder: Luka Dončić, Victor Wembanyama lead debut Top 10 ranking",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzZNAE1IPV7Zr-wnaRpJAf_8bPvkSYaeVkmrWV7DN9c0bM1WA0CtClq6RafwE"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7752545/2026/11/04/lakers-luka-doncic-nba-mvp-leader/",
+          "title": "Who’s the NBA MVP? Coach of the Year? These are the way-too-early leaders",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj-AqLeWURPgAqtug_WlTALe0nMQ9DTIxulgh750qK0JqI952GJzGaGwbZuzc"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nba/2026/11/06/nba-mvp-player-rankings-week-2/92632285007/",
+          "title": "Who is making a run at Doncic, Wembanyama? Latest NBA MVP rankings",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEnXU1QPpJGTXVluzRbMPGEWr78hal4qiFhXzj4JIdScKuVCJNhitebBjvEF8"
         }
       ]
     }
