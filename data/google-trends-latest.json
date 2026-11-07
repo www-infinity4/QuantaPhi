@@ -3,356 +3,330 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T05:01:42.684811Z",
+  "checked_at": "2026-11-07T05:31:25.487586Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cody bellinger",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:40:00Z",
+      "query": "luka doncic",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-07T05:10:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/2026-silver-slugger-award-finalists",
-        "https://sports.yahoo.com/mlb/article/2026-silver-slugger-shohei-ohtani-mike-trout-junior-caminero-among-finalists-for-batting-award-003254731.html",
-        "https://www.nytimes.com/athletic/7754634/2026/11/05/mlb-silver-slugger-finalists-pete-crow-armstrong-yordan-alvarez/"
+        "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html",
+        "https://www.nba.com/news/starting-5-november-2-2026",
+        "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeMP2DX7p4SmBq13dNweoP4eJ3be1P3sfj2brq4JjOM7TOK2P8OZ9wbGP2hrk",
-      "image_credit": "MLB.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScnsxQpaHTYRjEizaUIeYG-oMsC6_CxA53JAciDXyyTF2VkzviY43lcsa4LzM",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.mlb.com/news/2026-silver-slugger-award-finalists",
-          "title": "Finalists for Silver Sluggers announced",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeMP2DX7p4SmBq13dNweoP4eJ3be1P3sfj2brq4JjOM7TOK2P8OZ9wbGP2hrk"
-        },
-        {
-          "url": "https://sports.yahoo.com/mlb/article/2026-silver-slugger-shohei-ohtani-mike-trout-junior-caminero-among-finalists-for-batting-award-003254731.html",
-          "title": "2026 Silver Slugger: Shohei Ohtani, Mike Trout, Junior Caminero among finalists for batting award",
+          "url": "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html",
+          "title": "The Lakers 'live on a spaceship,' and Luka Dončić looks like the best damn pilot in the galaxy",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGnwyB29ZbZR_V89buhHCsMC250O6G_vGgBJOMIxDbG8H7w6g0R_NxS37LmHw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScnsxQpaHTYRjEizaUIeYG-oMsC6_CxA53JAciDXyyTF2VkzviY43lcsa4LzM"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7754634/2026/11/05/mlb-silver-slugger-finalists-pete-crow-armstrong-yordan-alvarez/",
-          "title": "MLB Silver Slugger finalists: Pete Crow-Armstrong, Yordan Alvarez among nominees - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZzaZcsxDY4X7RsY8BBNDv1-bBYbHCShIF1c-m6GkVRz3z1mHDJ9jekxDU8w0"
-        }
-      ]
-    },
-    {
-      "query": "jimmy fallon",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:40:00Z",
-      "related_news_urls": [
-        "https://www.wthr.com/article/sports/wnba/indiana-fever/caitlin-clark-tonight-show-starring-jimmy-fallon-interview-nbc-friday-night/531-f18c83ef-65cf-4c1b-9bc0-c25b8fd5687e",
-        "https://sports.yahoo.com/articles/caitlin-clark-makes-tonight-show-032723916.html",
-        "https://www.fltimes.com/22-in-the-house-caitlinclark-fallontonight/video_51086e9e-cb69-54c1-ac63-f49097a7e537.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVLkrFkTJu3hBIDNMw8jkHbkUZ0ymWFOCf2sb4_FBR2_bWLEAs0cQDyuuJahw",
-      "image_credit": "WTHR",
-      "news": [
-        {
-          "url": "https://www.wthr.com/article/sports/wnba/indiana-fever/caitlin-clark-tonight-show-starring-jimmy-fallon-interview-nbc-friday-night/531-f18c83ef-65cf-4c1b-9bc0-c25b8fd5687e",
-          "title": "Caitlin Clark capping big week with 'Tonight Show' appearance Friday night",
-          "publisher": "WTHR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVLkrFkTJu3hBIDNMw8jkHbkUZ0ymWFOCf2sb4_FBR2_bWLEAs0cQDyuuJahw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/caitlin-clark-makes-tonight-show-032723916.html",
-          "title": "Caitlin Clark makes ‘The Tonight Show’ appearance",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3PM8Zpt2S61nHCQyIuALjLOyoTXAf_ek_pnGZkJ3j0mPFUw3s9xyOBYSwCg0"
-        },
-        {
-          "url": "https://www.fltimes.com/22-in-the-house-caitlinclark-fallontonight/video_51086e9e-cb69-54c1-ac63-f49097a7e537.html",
-          "title": "22 in the house! #CaitlinClark #FallonTonight",
-          "publisher": "Finger Lakes Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwqIKv-EOD8FYxi5WGp22yd1_GSFoR6Gch_NRZpzb_vflJO_hcv-F4Anp4TEA"
-        }
-      ]
-    },
-    {
-      "query": "jason eck",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:40:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/sports/football/new-mexico-jason-eck-b7a03a81",
-        "https://www.nytimes.com/athletic/7749145/2026/11/03/new-mexico-lobos-players-ranked-first-time/",
-        "https://www.santafenewmexican.com/sports/lobos/unm-football-lands-first-ever-ap-top-25-ranking/article_4020c885-08ac-4ff8-8f3b-2c8fb023efe7.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR_i8cAaUy_9C1XhRJ-5ghwv_joI59Mf9rBFPDBtt0E6-wPJ__ke7swJv9kiI",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/sports/football/new-mexico-jason-eck-b7a03a81",
-          "title": "College Football’s Breakout Coach Almost Quit to Sell Artificial Turf",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR_i8cAaUy_9C1XhRJ-5ghwv_joI59Mf9rBFPDBtt0E6-wPJ__ke7swJv9kiI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7749145/2026/11/03/new-mexico-lobos-players-ranked-first-time/",
-          "title": "New Mexico’s players didn’t leave. Now the Lobos are ranked for the first time",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPOTo6_1skjR-ZsXnxDB0K7kCFjmWUF13Qirc4obJTjY0XaYAAXrdhOApjNyQ"
-        },
-        {
-          "url": "https://www.santafenewmexican.com/sports/lobos/unm-football-lands-first-ever-ap-top-25-ranking/article_4020c885-08ac-4ff8-8f3b-2c8fb023efe7.html",
-          "title": "UNM football lands first-ever AP Top 25 ranking",
-          "publisher": "Santa Fe New Mexican",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf5Qcdivi7bXO8QwB3VJ7hIrP9DP0LaxQ9eBPQ_GI9akHjdadyBYNJKTGUW9Q"
-        }
-      ]
-    },
-    {
-      "query": "mega millions numbers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T04:30:00Z",
-      "related_news_urls": [
-        "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
-        "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/",
-        "https://www.detroitnews.com/story/news/lottery/2026/11/06/mega-millions-numbers-for-friday-november-6/92654436007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4",
-      "image_credit": "WAVY.com",
-      "news": [
-        {
-          "url": "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
-          "title": "Over $1B in Mega Millions, Powerball jackpots up for grabs",
-          "publisher": "WAVY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4"
-        },
-        {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/",
-          "title": "Mega Millions Jackpot Tops $500 Million—Here’s What The Winner Could Take Home",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHTuzxS6qku_Z3j3KuW7i_UjPPjxJKpJwp2osGQIDYwGxJHf4eHqMB2YRgZVY"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/news/lottery/2026/11/06/mega-millions-numbers-for-friday-november-6/92654436007/",
-          "title": "Mega Millions numbers for Friday, Nov. 6",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk"
-        }
-      ]
-    },
-    {
-      "query": "gurnoor brar",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T04:30:00Z",
-      "related_news_urls": [
-        "https://www.indiatoday.in/sports/cricket/story/india-vs-new-zealand-1st-odi-auckland-fast-bowlers-gurnoor-brar-anshul-kamboj-3032394-2026-11-05",
-        "https://sportstar.thehindu.com/cricket/gurnoor-brar-bounce-height-after-1st-odi-arshdeep-kamboj/article71669433.ece",
-        "https://m.cricbuzz.com/player-match-performance/match/161245/player/10730/batting?inningsId=1"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrfXJBEYQ6t4jKA-oOy3n8VjmeGF2G1Ui8a9UFWGVXZ1jUth7wjK4CCeZXDXo",
-      "image_credit": "India Today",
-      "news": [
-        {
-          "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-new-zealand-1st-odi-auckland-fast-bowlers-gurnoor-brar-anshul-kamboj-3032394-2026-11-05",
-          "title": "Shubman promises, pacers deliver: Rookie fast bowlers impress in Auckland",
-          "publisher": "India Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrfXJBEYQ6t4jKA-oOy3n8VjmeGF2G1Ui8a9UFWGVXZ1jUth7wjK4CCeZXDXo"
-        },
-        {
-          "url": "https://sportstar.thehindu.com/cricket/gurnoor-brar-bounce-height-after-1st-odi-arshdeep-kamboj/article71669433.ece",
-          "title": "Arshdeep, Kamboj said I would get better bounce with my height: Gurnoor Brar after 1st ODI",
-          "publisher": "Sportstar",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PKuoWTEeeeErJfMGRMq2T3PctqFNx-15xU5ay77lNB41p4ChKebUBVMPDVM"
-        },
-        {
-          "url": "https://m.cricbuzz.com/player-match-performance/match/161245/player/10730/batting?inningsId=1",
-          "title": "Live Cricket Score, Schedule, Latest News, Stats & Videos",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSv74IK_a3fnb4xk4UBokWwdH80lim9LQowz28CHQ0OR6AoaFge7O5AOMTQy8"
-        }
-      ]
-    },
-    {
-      "query": "ocarina of time switch 2 controls",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:30:00Z",
-      "related_news_urls": [
-        "https://gameinformer.com/tips/2026/11/05/the-switch-2-pro-controller-can-make-zelda-ocarina-of-time-even-better",
-        "https://www.tomshardware.com/video-games/handheld-gaming/grab-a-nintendo-switch-2-controller-upgrade-from-usd49-just-in-time-for-zelda-ocarina-of-times-remaster-secure-the-tools-to-defeat-ganondorf-with-these-top-wireless-gamepads-from-8bitdo-gamesir-and-others",
-        "https://www.t3.com/tech/gaming-accessories/3-nintendo-switch-2-accessories-that-should-be-on-your-wishlist-ahead-of-shopping-season"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQlMXLHkloF-XGQ0iBhsdPwMf5WaEMZSBz9hxl4ZP2XrGgof4B9tOK8kPjx8U",
-      "image_credit": "Game Informer",
-      "news": [
-        {
-          "url": "https://gameinformer.com/tips/2026/11/05/the-switch-2-pro-controller-can-make-zelda-ocarina-of-time-even-better",
-          "title": "The Switch 2 Pro Controller Can Make Zelda: Ocarina Of Time Even Better",
-          "publisher": "Game Informer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQlMXLHkloF-XGQ0iBhsdPwMf5WaEMZSBz9hxl4ZP2XrGgof4B9tOK8kPjx8U"
-        },
-        {
-          "url": "https://www.tomshardware.com/video-games/handheld-gaming/grab-a-nintendo-switch-2-controller-upgrade-from-usd49-just-in-time-for-zelda-ocarina-of-times-remaster-secure-the-tools-to-defeat-ganondorf-with-these-top-wireless-gamepads-from-8bitdo-gamesir-and-others",
-          "title": "Grab a Nintendo Switch 2 controller upgrade from $49, just in time for Zelda: Ocarina of Time's remaster — secure the tools to defeat Ganondorf with these top wireless gamepads fro",
-          "publisher": "Tom's Hardware",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTf0fIAd1m7D1-UybtkGcixCayLnFy0LV1y1Aq57BKdN8v498zbcTmkGy7jxc"
-        },
-        {
-          "url": "https://www.t3.com/tech/gaming-accessories/3-nintendo-switch-2-accessories-that-should-be-on-your-wishlist-ahead-of-shopping-season",
-          "title": "3 Nintendo Switch 2 accessories that should be on your wishlist ahead of shopping season",
-          "publisher": "T3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3feqIV5rflp0QNpDukDQNWfjhGRviC57Bqt1ZnIjqZtRjl7dvIIlAxjWlfSc"
-        }
-      ]
-    },
-    {
-      "query": "sarah paulson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:30:00Z",
-      "related_news_urls": [
-        "https://www.laineygossip.com/sarah-paulson-as-reliably-chaotic-for-season-two-of-alls-fair-as-she-was-for-first/",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/sarah-paulson-closes-her-fair-231553728.html",
-        "https://www.wmagazine.com/fashion/sarah-paulson-michael-kors-collection-alls-fair-prep"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1QqZhR1PSGR34Gae1yGKBxqfVqsNpIcloE8kjKwsMAd5EyQloJASB6DS6q-E",
-      "image_credit": "LaineyGossip",
-      "news": [
-        {
-          "url": "https://www.laineygossip.com/sarah-paulson-as-reliably-chaotic-for-season-two-of-alls-fair-as-she-was-for-first/",
-          "title": "Sarah Paulson is as reliably chaotic for season two of All's Fair as she was for the first",
-          "publisher": "LaineyGossip",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1QqZhR1PSGR34Gae1yGKBxqfVqsNpIcloE8kjKwsMAd5EyQloJASB6DS6q-E"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/sarah-paulson-closes-her-fair-231553728.html",
-          "title": "Sarah Paulson Closes Her ‘All’s Fair’ Press Tour with Four Looks",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQBZNUqo2ZrczysSV8_aMDxHllOzVJKTbi8UIJIedP8Dm3qZhJTeVk-lUp3aE"
-        },
-        {
-          "url": "https://www.wmagazine.com/fashion/sarah-paulson-michael-kors-collection-alls-fair-prep",
-          "title": "Sarah Paulson Turns a Preppy Classic Into a Quirked-up Fashion Fantasy",
-          "publisher": "W Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTPE6gvmXaIM0PDp4Zhb2g-row22gxRjVcisji8NHKTIrP46uR1dIIZrU_b0"
-        }
-      ]
-    },
-    {
-      "query": "tonga rugby",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/rugby-league/articles/c9kgj3elgmkzo",
-        "https://www.flashscore.com/news/lebanon-and-france-somehow-produce-the-best-game-of-the-2026-rlwc/xlnEzdlJ/",
-        "https://www.tomsguide.com/entertainment/sports/how-to-watch-tonga-vs-samoa-on-7plus-its-free"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-dDN7W3atTrheElcIEuNMUhtsyRHd7H6BoluTwuVjG0LRWVU1KHaGmRrszJ8",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/rugby-league/articles/c9kgj3elgmkzo",
-          "title": "Why rugby league needs Tonga-Samoa World Cup final",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-dDN7W3atTrheElcIEuNMUhtsyRHd7H6BoluTwuVjG0LRWVU1KHaGmRrszJ8"
-        },
-        {
-          "url": "https://www.flashscore.com/news/lebanon-and-france-somehow-produce-the-best-game-of-the-2026-rlwc/xlnEzdlJ/",
-          "title": "Lebanon and France somehow produce the best game of the 2026 RLWC",
-          "publisher": "Flashscore.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRZjUknbkhLSZ-fnEQKdmHPxvqWD6hD3_sj20ets9oeEiGY99DmYzqTGHVlMc"
-        },
-        {
-          "url": "https://www.tomsguide.com/entertainment/sports/how-to-watch-tonga-vs-samoa-on-7plus-its-free",
-          "title": "How to watch Tonga vs Samoa on 7plus — it's *FREE*",
-          "publisher": "Tom's Guide",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpz46Wpybyz1z79BrD_WJgxGgrCwMy7WsWJbgVgnEOmHqlZzfaOq4wGx94Vis"
-        }
-      ]
-    },
-    {
-      "query": "deni avdija",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T04:20:00Z",
-      "related_news_urls": [
-        "https://www.jta.org/2026/11/06/sports/deni-avdija-is-at-it-again",
-        "https://www.nytimes.com/athletic/7749871/2026/11/03/deni-avdija-micah-nori-trail-blazers-nba/",
-        "https://www.usatoday.com/sports/nba/event/2026/3019178/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=4"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvcPMhEK19rI-oca2zfqqqLwQyLrIN8-8rRXwg_wKtJ7AQy8k3vZRN-PYv5RM",
-      "image_credit": "Jewish Telegraphic Agency",
-      "news": [
-        {
-          "url": "https://www.jta.org/2026/11/06/sports/deni-avdija-is-at-it-again",
-          "title": "Deni Avdija is at it again",
-          "publisher": "Jewish Telegraphic Agency",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvcPMhEK19rI-oca2zfqqqLwQyLrIN8-8rRXwg_wKtJ7AQy8k3vZRN-PYv5RM"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7749871/2026/11/03/deni-avdija-micah-nori-trail-blazers-nba/",
-          "title": "Deni Avdija, Micah Nori and the summer phone call that defines Trail Blazers’ quick start - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw0lUdbI5gLWcorCG_9-P_eu2HX0bkvrSh_w3J14yryDcfAVCeBLyRkLuzovE"
-        },
-        {
-          "url": "https://www.usatoday.com/sports/nba/event/2026/3019178/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=4",
-          "title": "Portland Trail Blazers at Phoenix Suns - NBA Game Summary - Nov 04, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBMB6LH3wrctLs5aMRk3OEUBpJr3jUoFpW5DgavHs374RUFHnkXK8goU-qERs"
-        }
-      ]
-    },
-    {
-      "query": "luka",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:20:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/kia-mvp-ladder-nov-6-2026",
-        "https://www.nytimes.com/athletic/7752545/2026/11/04/lakers-luka-doncic-nba-mvp-leader/",
-        "https://www.usatoday.com/story/sports/nba/2026/11/06/nba-mvp-player-rankings-week-2/92632285007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzZNAE1IPV7Zr-wnaRpJAf_8bPvkSYaeVkmrWV7DN9c0bM1WA0CtClq6RafwE",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/kia-mvp-ladder-nov-6-2026",
-          "title": "Kia MVP Ladder: Luka Dončić, Victor Wembanyama lead debut Top 10 ranking",
+          "url": "https://www.nba.com/news/starting-5-november-2-2026",
+          "title": "Starting 5: Luka makes history, Celtics and Warriors extend streaks",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzZNAE1IPV7Zr-wnaRpJAf_8bPvkSYaeVkmrWV7DN9c0bM1WA0CtClq6RafwE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7H6XxpJ6I1hoPWn5saQQMxprBWwsCGV69zUJWzffiPMBUQXsmk1i1cie312A"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7752545/2026/11/04/lakers-luka-doncic-nba-mvp-leader/",
-          "title": "Who’s the NBA MVP? Coach of the Year? These are the way-too-early leaders",
+          "url": "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
+          "title": "Luka Doncic touts his improved defense, draws praise from Lakers, Raptors",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI"
+        }
+      ]
+    },
+    {
+      "query": "lakers vs trail blazers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-07T05:10:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/trail-blazers-discussion-game-threads/118024/discussion-portland-trail-blazers-los-angeles-lakers-time-tv-injury-report-streaming",
+        "https://sports.yahoo.com/articles/luka-doncics-remarkable-scoring-streak-120355790.html",
+        "https://www.cbssports.com/prediction/news/lakers-vs-trail-blazers-odds-picks-nba-predictions-get-55-bonus-kalshi-promo-code-cbssports55/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI29drbwHKpmb76-q2KeLIQH9mJevd_t5Q_O35ZNYR9-nmsPJZN6fY0kB8Ma8",
+      "image_credit": "Blazer's Edge",
+      "news": [
+        {
+          "url": "https://www.blazersedge.com/trail-blazers-discussion-game-threads/118024/discussion-portland-trail-blazers-los-angeles-lakers-time-tv-injury-report-streaming",
+          "title": "Discuss Portland Trail Blazers vs. Los Angeles Lakers Now!",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI29drbwHKpmb76-q2KeLIQH9mJevd_t5Q_O35ZNYR9-nmsPJZN6fY0kB8Ma8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/luka-doncics-remarkable-scoring-streak-120355790.html",
+          "title": "Luka Doncic's remarkable scoring streak gives Lakers a new challenge",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStcH_p-yyHYkV41iEk-GUpo22Dw__efpKjibW_BgtkecaeG_5dPe8r2VctS9s"
+        },
+        {
+          "url": "https://www.cbssports.com/prediction/news/lakers-vs-trail-blazers-odds-picks-nba-predictions-get-55-bonus-kalshi-promo-code-cbssports55/",
+          "title": "Lakers vs. Trail Blazers odds, picks, NBA predictions: Get $55 bonus with Kalshi promo code CBSSPORTS55",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdpIM9DcRXNFLQITAtrWaEuyk2XeIwIu7CkBvOOiEfejxV_0s86mBaUeb4iSc"
+        }
+      ]
+    },
+    {
+      "query": "ringer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:10:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "lakers blazers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/game/_/gameId/401909929/cavaliers-thunder",
+        "https://www.espn.com/nba/game/_/gameId/401909922/76ers-pistons",
+        "https://www.espn.com/nba/game/_/gameId/401909897/76ers-hornets"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFeqa_6jZUfVPnn-AgxzY2TviIGp0kx9_hsonVyKe7tMVoOqgNFxpGHl8_bjI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/game/_/gameId/401909929/cavaliers-thunder",
+          "title": "Thunder 124-116 Cavaliers (Nov 4, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFeqa_6jZUfVPnn-AgxzY2TviIGp0kx9_hsonVyKe7tMVoOqgNFxpGHl8_bjI"
+        },
+        {
+          "url": "https://www.espn.com/nba/game/_/gameId/401909922/76ers-pistons",
+          "title": "76ers 112-106 Pistons (Nov 4, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27-FQSAjul_ssj_1Am6-x18FnOnPBRBa_tE4aqYaZ8qvo3bhbkH_oh7i79Nw"
+        },
+        {
+          "url": "https://www.espn.com/nba/game/_/gameId/401909897/76ers-hornets",
+          "title": "76ers 109-104 Hornets (Oct 31, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTslA-i0X-rCrkhYBfyI5UAjM2OMjpoTBxQWqAVKR3qEg5Mdimpy1t56mkwIc"
+        }
+      ]
+    },
+    {
+      "query": "where is luka doncic from",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50388765/fan-ejected-throwing-ball-hard-ref-lakers-kings-game",
+        "https://www.nytimes.com/athletic/7760748/2026/11/06/luka-doncic-technical-referee-lakers/",
+        "https://sports.yahoo.com/articles/respect-ron-harper-fires-back-124000474.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvO-kG3Ky7sQZfUTF808iqLklA_X0gkGX515XY88Y16pskMHsGbOIUUc6lkM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50388765/fan-ejected-throwing-ball-hard-ref-lakers-kings-game",
+          "title": "Fan ejected after throwing ball hard to ref during Lakers-Kings game",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvO-kG3Ky7sQZfUTF808iqLklA_X0gkGX515XY88Y16pskMHsGbOIUUc6lkM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7760748/2026/11/06/luka-doncic-technical-referee-lakers/",
+          "title": "Luka Dončić receives technical foul for throwing ball at referee",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj-AqLeWURPgAqtug_WlTALe0nMQ9DTIxulgh750qK0JqI952GJzGaGwbZuzc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLIa6TjfPP9vsaN61tvwSJ9sy4ezi8Yoc2B4Ib4RAgzAIY4qlyvGO2gXQNgQ"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/nba/2026/11/06/nba-mvp-player-rankings-week-2/92632285007/",
-          "title": "Who is making a run at Doncic, Wembanyama? Latest NBA MVP rankings",
-          "publisher": "USA Today",
+          "url": "https://sports.yahoo.com/articles/respect-ron-harper-fires-back-124000474.html",
+          "title": "“Have Some Respect”: Ron Harper Fires Back at Critic Who Called Out Female Referee in Luka Doncic Fan Ejection",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEnXU1QPpJGTXVluzRbMPGEWr78hal4qiFhXzj4JIdScKuVCJNhitebBjvEF8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShlFJOcdb-twMB9ClqnyaEYT1n80Qq1skBpA9f9R3rfc1DtjAwFuA6KOeFugk"
+        }
+      ]
+    },
+    {
+      "query": "michael c hall",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:00:00Z",
+      "related_news_urls": [
+        "https://www.vulture.com/article/dexter-resurrection-recap-season-2-episode-2-showtime.html",
+        "https://www.tvline.com/2306974/dexter-resurrection-recap-season-2-episode-2-uma-thurman-charley-return/",
+        "https://ew.com/krysten-ritter-teases-her-dexter-resurrection-12201168"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1s4Qcz69EtNigcXv72s-yMvt_ELOPZCx_6pJ8SXpmx86EuRk6-G2Txi3EasA",
+      "image_credit": "Vulture",
+      "news": [
+        {
+          "url": "https://www.vulture.com/article/dexter-resurrection-recap-season-2-episode-2-showtime.html",
+          "title": "Dexter: Resurrection Recap: Attention Economy",
+          "publisher": "Vulture",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1s4Qcz69EtNigcXv72s-yMvt_ELOPZCx_6pJ8SXpmx86EuRk6-G2Txi3EasA"
+        },
+        {
+          "url": "https://www.tvline.com/2306974/dexter-resurrection-recap-season-2-episode-2-uma-thurman-charley-return/",
+          "title": "Dexter: Resurrection Recap: An Old Foe Makes Dexter An Offer He Can't Refuse",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl46ky3ap_JAmbUlAwyiWMYZ3OWmLjcJNIwK2YH-BjGtS2j7LeXp6MiaTVl8c"
+        },
+        {
+          "url": "https://ew.com/krysten-ritter-teases-her-dexter-resurrection-12201168",
+          "title": "Krysten Ritter teases her ‘Dexter’ resurrection: ‘I wanted to come back in any shape or form’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3PNfYFl4FwyOCWXtxjoEpc_FEqWbvtPlVIB-7uY0dhJBDdoXB9oj1InC355k"
+        }
+      ]
+    },
+    {
+      "query": "heated rivalry theaters",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:00:00Z",
+      "related_news_urls": [
+        "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033",
+        "https://www.yoursun.com/charlotte/lifestyles/heated-rivalry-is-coming-out-of-the-cottage-and-into-the-movie-theater/article_35a5ecd1-a544-5a3e-b864-5ad58bb4ac25.html",
+        "https://www.buzzfeed.com/jennifer_mcphee/heated-rivalry-hitting-theatres-this-november"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlJzbndzRUFDuhzQBy00Vtb85-gAtrKIbIvh9CdYYVcMD4JKPngnapUO6l-k",
+      "image_credit": "Inc.com",
+      "news": [
+        {
+          "url": "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033",
+          "title": "Fans Just Dropped $1M in Presales to Watch 'Heated Rivalry' in Movie Theaters—11 Months After Its Premiere",
+          "publisher": "Inc.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlJzbndzRUFDuhzQBy00Vtb85-gAtrKIbIvh9CdYYVcMD4JKPngnapUO6l-k"
+        },
+        {
+          "url": "https://www.yoursun.com/charlotte/lifestyles/heated-rivalry-is-coming-out-of-the-cottage-and-into-the-movie-theater/article_35a5ecd1-a544-5a3e-b864-5ad58bb4ac25.html",
+          "title": "'Heated Rivalry' is coming out of the cottage and into the movie theater",
+          "publisher": "yoursun.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYSNhkBx3SOh00qPG1-ge6vdNYkJ4gdYaWpSEJOXpTJZsAgKjRq-K6wV28xVc"
+        },
+        {
+          "url": "https://www.buzzfeed.com/jennifer_mcphee/heated-rivalry-hitting-theatres-this-november",
+          "title": "\"Heated Rivalry\" Is Hitting Theatres This November, And The Internet Has THOUGHTS",
+          "publisher": "BuzzFeed",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAJtcqT9J-whaPoJxjmtKdwezaDtSk6zRzuLGlCynnJm6jX3zh1LvZ7-2bNxQ"
+        }
+      ]
+    },
+    {
+      "query": "great america",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:00:00Z",
+      "related_news_urls": [
+        "https://www.eastbaytimes.com/2026/11/06/great-america-santa-clara-roller-coaster-jobs-economy-build-property/",
+        "https://www.sfgate.com/disneyland/article/california-great-america-closure-22517433.php",
+        "https://www.kron4.com/news/bay-area/californias-great-america-in-santa-clara-announces-final-season-what-guests-need-to-know/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_cQ02UNIMlK7esHqr6gpffQT7VldKe_F8lE2Sdu29_i4kzHkh4U0MUKCIEEE",
+      "image_credit": "East Bay Times",
+      "news": [
+        {
+          "url": "https://www.eastbaytimes.com/2026/11/06/great-america-santa-clara-roller-coaster-jobs-economy-build-property/",
+          "title": "Exclusive: California’s Great America sets official closing date for Labor Day 2027",
+          "publisher": "East Bay Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_cQ02UNIMlK7esHqr6gpffQT7VldKe_F8lE2Sdu29_i4kzHkh4U0MUKCIEEE"
+        },
+        {
+          "url": "https://www.sfgate.com/disneyland/article/california-great-america-closure-22517433.php",
+          "title": "California's Great America to finally close after more than 50 years",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsAiUrQ9ItQts9prNLWcg01LIbRKAsM3kLLWN8Jdb-h7jmECj98kbNOIPSkYM"
+        },
+        {
+          "url": "https://www.kron4.com/news/bay-area/californias-great-america-in-santa-clara-announces-final-season-what-guests-need-to-know/",
+          "title": "California’s Great America in Santa Clara announces final season: What guests need to know",
+          "publisher": "KRON4",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRol0SCp49itsZpv2ozGJw98xoXKv_zRbxrK3DPbeptMyapbi8DYHNrgie4fxI"
+        }
+      ]
+    },
+    {
+      "query": "tarleton state basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T04:50:00Z",
+      "related_news_urls": [
+        "https://tarletonsports.com/story.aspx?filename=tarleton-state-mens-basketball-set-for-road-opener-at-san-diego&file_date=11/5/2026",
+        "https://usdtoreros.com/news/2026/11/5/mens-basketball-toreros-set-to-host-tarleton-state-at-jcp.aspx",
+        "https://apnews.com/article/mens-college-basketball-san-diego-san-diego-toreros-college-basketball-college-sports-086599e58c264439ac38c9e51b0057c5"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4ASY2upWwY4gzLIzzeYt9gvQ1D5v0FygCfpfM-nihxBGG2Fo-W2OsIbhxchw",
+      "image_credit": "Tarleton State University Athletics",
+      "news": [
+        {
+          "url": "https://tarletonsports.com/story.aspx?filename=tarleton-state-mens-basketball-set-for-road-opener-at-san-diego&file_date=11/5/2026",
+          "title": "Tarleton State Men's Basketball set for road opener at San Diego",
+          "publisher": "Tarleton State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4ASY2upWwY4gzLIzzeYt9gvQ1D5v0FygCfpfM-nihxBGG2Fo-W2OsIbhxchw"
+        },
+        {
+          "url": "https://usdtoreros.com/news/2026/11/5/mens-basketball-toreros-set-to-host-tarleton-state-at-jcp.aspx",
+          "title": "Toreros Set to Host Tarleton State at JCP",
+          "publisher": "University of San Diego Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-aWFBW86KMAKvXv7hxPda4sKdwrEdpCoGcgSEYBxzVyreEeV3mY7YkMt3rSo"
+        },
+        {
+          "url": "https://apnews.com/article/mens-college-basketball-san-diego-san-diego-toreros-college-basketball-college-sports-086599e58c264439ac38c9e51b0057c5",
+          "title": "San Diego Toreros play the Tarleton State Texans in non-conference play",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyxytuQ4aGf2BOxfux9vnLUnsxmXV6_4vU1gfZLf7dr_vdaPit7PYKHCUsALk"
+        }
+      ]
+    },
+    {
+      "query": "ilia topuria",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T04:50:00Z",
+      "related_news_urls": [
+        "https://www.sherdog.com/news/news/Ilia-Topuria-reveals-who-he-wants-to-fight-next-in-the-UFC-203511",
+        "https://www.mmafighting.com/ufc/519653/ilia-topuria-opens-up-on-loss-to-justin-gaethje-calls-for-paddy-pimblett-in-april",
+        "https://sports.yahoo.com/articles/ilia-topuria-makes-candid-admission-225537178.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuN1Jmg3gNxxohiYs2eWeEP1CL4KCjmrFHbgUxG2Sc0SJnmYZf92OOMgH7ybM",
+      "image_credit": "Sherdog",
+      "news": [
+        {
+          "url": "https://www.sherdog.com/news/news/Ilia-Topuria-reveals-who-he-wants-to-fight-next-in-the-UFC-203511",
+          "title": "Ilia Topuria reveals who he wants to fight next in the UFC",
+          "publisher": "Sherdog",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuN1Jmg3gNxxohiYs2eWeEP1CL4KCjmrFHbgUxG2Sc0SJnmYZf92OOMgH7ybM"
+        },
+        {
+          "url": "https://www.mmafighting.com/ufc/519653/ilia-topuria-opens-up-on-loss-to-justin-gaethje-calls-for-paddy-pimblett-in-april",
+          "title": "Ilia Topuria opens up on loss to Justin Gaethje, calls for Paddy Pimblett in April",
+          "publisher": "MMA Fighting",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsEtEW-wTFrr9oBcrPjaOqY05GNQybEFf4sExzzPorAvyLYvzkseumM9inVxE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ilia-topuria-makes-candid-admission-225537178.html",
+          "title": "Ilia Topuria Makes Candid Admission Following Justin Gaethje Loss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS25c7K1GacUUwIJAaVtub7r5qBG6GGEXaO9UTty5d0t8UKnDYGGHjNZXW2iUM"
         }
       ]
     }
