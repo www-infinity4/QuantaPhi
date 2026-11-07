@@ -2,8 +2,9 @@ import {mountCardActions} from './quanta-card-actions.mjs';
 import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
 import {
  COUPON_BRANDS,COUPON_WALLET_KEY,COUPON_FEED,
- filterVerifiedOffers,collectFollowedOffers,sanitizeDeviceCouponWallet,checkoutAdvice
+ filterVerifiedOffers,collectFollowedOffers,sanitizeDeviceCouponWallet
 } from './coupon-wallet-core.mjs';
+import {assessCouponStoreRoute} from './coupon-store-readiness.mjs';
 
 /* Original QuantaPhi coupon experiences: 3 distinct moving Quick Cards.
  * The wallet here is a device-only PUBLIC offer organizer, never a token wallet,
@@ -110,12 +111,23 @@ function renderWallet(){
  for(const [value,label] of [['walmart-in-store','Walmart · at the register'],['walmart-online','Walmart.com · online'],['mcdonalds','McDonald’s · app'],['other','Other retailer']]){
   const option=node('option','',label);option.value=value;selector.append(option);
  }
+ const offerPicker=node('select','qcw-select');
+ offerPicker.setAttribute('aria-label','Saved offer to check at this store');
+ if(!settings.saved.length){
+  const none=node('option','','No verified offers saved');none.value='';offerPicker.append(none);
+  offerPicker.disabled=true;
+ }else for(const offer of settings.saved){
+  const option=node('option','',offer.title);option.value=offer.id;offerPicker.append(option);
+ }
  const recommendation=node('p','qcw-advice');
  const update=()=>{
-  const example=settings.saved[0]||{redemption:selector.value==='walmart-in-store'?'paper-manufacturer':'merchant-app'};
-  recommendation.textContent=checkoutAdvice(example,selector.value).message;
+  const selected=settings.saved.find(o=>o.id===offerPicker.value)||null;
+  const assessment=assessCouponStoreRoute(selected,selector.value);
+  recommendation.textContent=assessment.message;
+  recommendation.dataset.redemptionStatus=assessment.status;
  };
  selector.addEventListener('change',update);
+ offerPicker.addEventListener('change',update);
  update();
  const handoff=node('div','qcw-controls');
  const copy=node('button','qcw-btn qcw-secondary-btn','Prepare Bubbles shopping request');copy.type='button';
@@ -127,7 +139,7 @@ function renderWallet(){
   if(navigator.clipboard?.writeText)void navigator.clipboard.writeText(prompt.value).catch(()=>{});
  });
  handoff.append(copy,link('Open Bubbles ↗','/bubbles.html','qcw-link'));
- checkout.append(selector,recommendation,handoff,prompt);
+ checkout.append(offerPicker,selector,recommendation,handoff,prompt);
  walletHost.append(checkout);
 }
 async function syncOffers(){
