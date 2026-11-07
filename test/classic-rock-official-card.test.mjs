@@ -8,7 +8,7 @@ const html=()=>readFileSync(new URL('../index.html',import.meta.url),'utf8');
 test('all five artist selectors retain official release and video metadata',()=>{
  assert.deepEqual(CLASSIC_ROCK_BANDS.map(b=>b.id),['pink-floyd','reo-speedwagon','cheap-trick','journey','styx']);
  for(const band of CLASSIC_ROCK_BANDS){
-  assert.ok(b.name&&band.offers.length>0&&/^[A-Za-z0-9_-]{11}$/.test(band.videoId));
+  assert.ok(band.name&&band.offers.length>0&&/^[A-Za-z0-9_-]{11}$/.test(band.videoId));
   for(const offer of band.offers)assert.equal(linkIsAllowed(offer.url),true,offer.url);
  }
  assert.equal(linkIsAllowed('javascript:alert(1)'),false);
