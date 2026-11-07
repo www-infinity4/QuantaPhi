@@ -52,7 +52,7 @@ jobs:
           node --check platinum/platinum.js
           node --test test/infinity-platinum.test.cjs test/infinity-platinum-android.test.cjs
       - name: Reuse test-only Platinum signing identity
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.android/debug.keystore
           key: infinity-platinum-preview-debug-keystore-v1
