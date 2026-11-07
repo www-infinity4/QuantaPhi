@@ -39,7 +39,8 @@ test('each trend movie is a native independent Oracle card with in-place stop an
  assert.match(ui,/playsinline/);
  assert.match(ui,/pagehide/);
  assert.match(ui,/setInterval/);
- assert.match(ui,/trends-rss-data\/data\/trending-movies-latest\.json/);
+ assert.match(ui,/MOVIE_FEED_BACKUP/);
+ assert.match(read('trending-movie-core.mjs'),/trends-rss-data\/data\/trending-movies-latest\.json/);
  assert.doesNotMatch(ui,/window\.open|target\s*=\s*['"]_blank/);
  assert.match(deck,/registerTrendingMovieCards/);
  assert.match(deck,/trendingMovieCards/);
