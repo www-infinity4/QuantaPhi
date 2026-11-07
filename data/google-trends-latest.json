@@ -3,348 +3,330 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T12:01:29.827421Z",
+  "checked_at": "2026-11-07T12:31:12.403090Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "spartanburg",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T11:40:00Z",
-      "related_news_urls": [
-        "https://www.wspa.com/news/local-news/officers-respond-to-shooting-after-man-walks-into-spartanburg-er-with-gunshot-wound/",
-        "https://www.foxcarolina.com/2026/11/06/police-report-another-early-morning-shooting-injury-spartanburg/",
-        "https://www.wyff4.com/article/woman-charged-after-gunshot-victim-changes-story/74363478"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkIoSq2uktsL1cthXfwSbpJ0hyxFOZVhy4V11RazhgSnKklkAQ0TF_L73rx1A",
-      "image_credit": "WSPA 7News",
-      "news": [
-        {
-          "url": "https://www.wspa.com/news/local-news/officers-respond-to-shooting-after-man-walks-into-spartanburg-er-with-gunshot-wound/",
-          "title": "Officers respond to shooting after man walks into Spartanburg ER with gunshot wound",
-          "publisher": "WSPA 7News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkIoSq2uktsL1cthXfwSbpJ0hyxFOZVhy4V11RazhgSnKklkAQ0TF_L73rx1A"
-        },
-        {
-          "url": "https://www.foxcarolina.com/2026/11/06/police-report-another-early-morning-shooting-injury-spartanburg/",
-          "title": "Police: Woman arrested after man injured in early morning Spartanburg shooting",
-          "publisher": "FOX Carolina News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeqV67FZFAtkJq_9IE1kjWDzdCGtuv5BnXAg_C5wMsCBFka_N4JdxqIY2DuO0"
-        },
-        {
-          "url": "https://www.wyff4.com/article/woman-charged-after-gunshot-victim-changes-story/74363478",
-          "title": "Woman arrested after man walks into ER with gunshot wound, police say",
-          "publisher": "WYFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMoNK9nPIHFVvbhRozwr1CzWbqBh11qx8L_On5W0z5cESZ9dcqq96g-E6Km8"
-        }
-      ]
-    },
-    {
-      "query": "prate wordle",
+      "query": "málaga vs racing santander",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T11:40:00Z",
+      "published_at": "2026-11-07T12:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/06/crosswords/wordle-review-1967.html",
-        "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-7-1967/",
-        "https://www.forbes.com/sites/erikkain/2026/11/06/wordle-hints-clues-answer-saturday-november-7/"
+        "https://footballwhispers.com/blog/malaga-vs-racing-santander-prediction-07-11-2026/",
+        "https://karlobag.eu/en/sports/news/tickets-for-malaga-cf-racing-de-santander-in-laliga-nmn4x/",
+        "https://www.bbc.com/sport/football/live/cjdx3729wkdlt"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpLGrFOQCDh_hNNCM8HxdMDP5jeBdLu8we008NAmwEcdyukN77v2bg-ch39Es",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwIoeNHj8W1qCFjkOqARQ-0bOMAUYA3zwPaqwVTGOeV0c14_w2Th3tO_9LGgk",
+      "image_credit": "Football Whispers",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/06/crosswords/wordle-review-1967.html",
-          "title": "Today’s Wordle Hints for November 7, 2026",
-          "publisher": "The New York Times",
+          "url": "https://footballwhispers.com/blog/malaga-vs-racing-santander-prediction-07-11-2026/",
+          "title": "Malaga vs Racing Santander – prediction, preview & betting tips – 07/11/2026",
+          "publisher": "Football Whispers",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpLGrFOQCDh_hNNCM8HxdMDP5jeBdLu8we008NAmwEcdyukN77v2bg-ch39Es"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwIoeNHj8W1qCFjkOqARQ-0bOMAUYA3zwPaqwVTGOeV0c14_w2Th3tO_9LGgk"
         },
         {
-          "url": "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-7-1967/",
-          "title": "Today’s NYT Wordle Hints, Answer and Help for Saturday, Nov. 7, #1967",
-          "publisher": "CNET",
+          "url": "https://karlobag.eu/en/sports/news/tickets-for-malaga-cf-racing-de-santander-in-laliga-nmn4x/",
+          "title": "Tickets for Málaga CF - Racing de Santander in LaLiga",
+          "publisher": "KarloBag.eu",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEa5gGqbzlxCuoKeG_Swy0F8UbP2kaD6mieuiuEbz6lIybuNLvqvWJPLR8u40"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPpk3eQeAN1zq3KkVGt87-NtgNNDE98ArqOLLESeo-x4wO4HHW-Y_5cs-Uz5U"
         },
         {
-          "url": "https://www.forbes.com/sites/erikkain/2026/11/06/wordle-hints-clues-answer-saturday-november-7/",
-          "title": "Today’s Wordle #1967 Hints, Clues And Answer For Saturday November 7",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROh6VwHVMCGgMeuZmdVI3qHN6COTca6AocJqEKCUzCHb_dId7DY5wELNIgm1Q"
-        }
-      ]
-    },
-    {
-      "query": "leeds vs spurs",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T11:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cq33x0rvmjret",
-        "https://www.leedsunited.com/en/news/team-news-injury-updates-on-calvert-lewin-okafor-and-stach",
-        "https://www.skysports.com/football/live-blog/13592869/leeds-vs-tottenham-live-premier-league-updates-news-prediction-and-line-ups"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUG9ujP2BxW6_1fT8ZTCOtcPhRUBLL0KFRRBaScJuMjaCQr1no1XqEu8RSwis",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cq33x0rvmjret",
-          "title": "Leeds United vs Tottenham Hotspur: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cjdx3729wkdlt",
+          "title": "Málaga vs Racing de Santander: Spanish La Liga stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUG9ujP2BxW6_1fT8ZTCOtcPhRUBLL0KFRRBaScJuMjaCQr1no1XqEu8RSwis"
-        },
-        {
-          "url": "https://www.leedsunited.com/en/news/team-news-injury-updates-on-calvert-lewin-okafor-and-stach",
-          "title": "Team News: Injury updates on Calvert-Lewin, Okafor & Stach",
-          "publisher": "Leeds United | Official Website - Leeds United",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqwL9kvFPQ2Yd7ud4vE5-eMoHhi3I99hFTq6OxcQCViHAELn62qHHcv7BdEs4"
-        },
-        {
-          "url": "https://www.skysports.com/football/live-blog/13592869/leeds-vs-tottenham-live-premier-league-updates-news-prediction-and-line-ups",
-          "title": "Leeds vs Tottenham LIVE! Premier League updates, news, prediction and line-ups",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX940wvywpnHgCawIeKmOya7-89oFwXCYimc9xVtoEVWnrpt6fLYmE3KL7Uag"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDUe1HSw8UWfBKR-3mXpzmkqB7rsVnNO8_YIj3AfujQOSAtKtsPYGzsI7GRI"
         }
       ]
     },
     {
-      "query": "criminal lawyer",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T11:30:00Z",
+      "query": "nintendo zelda ocarina of time",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T12:10:00Z",
       "related_news_urls": [
-        "https://oaklandside.org/2026/11/05/juarez-assault-duongs-california-waste-thao-trial-oakland/",
-        "https://www.mercurynews.com/2026/11/05/mario-juarez-sheng-thao-testimony-corruption-case/",
-        "https://www.yahoo.com/news/us/articles/key-witness-grilled-corruption-trial-040959613.html"
+        "https://www.nintendo.com/en-gb/News/2026/November/Ask-the-Developer-Vol-24-The-Legend-of-Zelda-Ocarina-of-Time-Chapter-1-3230318.html",
+        "https://gameinformer.com/interview/2026/11/06/award-winning-composer-and-musician-jon-batiste-talks-ocarina-of-times-music",
+        "https://www.ign.com/articles/the-legend-of-zelda-ocarina-of-time-review-remake"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSPck7iM13cOoRVgzDG3-nC818CU_PWesXlALMWJ1fO_f4Lbfxctlfx6XGg4",
-      "image_credit": "The Oaklandside",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnV5nZjIGijYizcERtXK2tJGjctxSrf7u_w6bimlNlGGpkKEbVfb87w5taX0s",
+      "image_credit": "Nintendo",
       "news": [
         {
-          "url": "https://oaklandside.org/2026/11/05/juarez-assault-duongs-california-waste-thao-trial-oakland/",
-          "title": "Brutal assault outside city contractor’s office recounted by FBI informant",
-          "publisher": "The Oaklandside",
+          "url": "https://www.nintendo.com/en-gb/News/2026/November/Ask-the-Developer-Vol-24-The-Legend-of-Zelda-Ocarina-of-Time-Chapter-1-3230318.html",
+          "title": "Ask the Developer Vol. 24, The Legend of Zelda: Ocarina of Time – Chapter 1",
+          "publisher": "Nintendo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSPck7iM13cOoRVgzDG3-nC818CU_PWesXlALMWJ1fO_f4Lbfxctlfx6XGg4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnV5nZjIGijYizcERtXK2tJGjctxSrf7u_w6bimlNlGGpkKEbVfb87w5taX0s"
         },
         {
-          "url": "https://www.mercurynews.com/2026/11/05/mario-juarez-sheng-thao-testimony-corruption-case/",
-          "title": "‘They crossed the line’: Violence and more illicit payoffs alleged by star witness at Sheng Thao’s trial",
-          "publisher": "The Mercury News",
+          "url": "https://gameinformer.com/interview/2026/11/06/award-winning-composer-and-musician-jon-batiste-talks-ocarina-of-times-music",
+          "title": "Award-Winning Composer And Musician Jon Batiste Talks Ocarina Of Time's Music And Why 'Guile's Theme' Goes With Everything",
+          "publisher": "Game Informer",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Dwm6LKlLdHEo6ZVcuRXhRhESsdcAm1Kp9RZ4M-N5PrbBwayZFj6nD4njj90"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUrrs-lE4g4CQ5294A0SXX_tAgfKmFufzCAKhMN6dlyjigE0PlkWguiVNIWOc"
         },
         {
-          "url": "https://www.yahoo.com/news/us/articles/key-witness-grilled-corruption-trial-040959613.html",
-          "title": "Key witness grilled in corruption trial of Oakland ex-mayor",
-          "publisher": "Yahoo",
+          "url": "https://www.ign.com/articles/the-legend-of-zelda-ocarina-of-time-review-remake",
+          "title": "The Legend of Zelda: Ocarina of Time Review",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7LbewyekTMQRYe42_Du2SKY9RGq-VCqgPS00NofF8V7gAYcgXH4YfYAnNqp0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0DA1hil1z5VobNLFzVE-hgMYBug5iynq-iSjY7Z-v_YXBHKKmZpu8KPKxlvI"
         }
       ]
     },
     {
-      "query": "sat",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T11:30:00Z",
+      "query": "south",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T12:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/06/us/college-board-cheating-sat.html",
-        "https://qz.com/college-board-sat-auto-sat-ai-cheating-tool-110626"
+        "https://www.thestate.com/sports/college/university-of-south-carolina/usc-football/article317943611.html",
+        "https://sports.yahoo.com/articles/channel-south-carolina-football-vs-110557661.html",
+        "https://www.on3.com/teams/south-carolina-gamecocks/news/south-carolina-football-texas-am-injuries-2026/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjTJr8ndDeq3P7ODqrV_akfKK02Czpwlaea94xKSL5ullr2EAEKUerg1tK0lc",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mUpHDfAK2n6GFEM1BpK_GD-Gf4A6UcIVqhh7ks1PVuBTNf04KT9Tt7bP6UQ",
+      "image_credit": "The State",
+      "news": [
+        {
+          "url": "https://www.thestate.com/sports/college/university-of-south-carolina/usc-football/article317943611.html",
+          "title": "Five final thoughts, score prediction for South Carolina football vs. Texas A&M",
+          "publisher": "The State",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mUpHDfAK2n6GFEM1BpK_GD-Gf4A6UcIVqhh7ks1PVuBTNf04KT9Tt7bP6UQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/channel-south-carolina-football-vs-110557661.html",
+          "title": "What channel is South Carolina football vs Texas A&M on today? Time, TV schedule",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAj4Q9_BGfwjF-W59LoRmqqY1ENaOQEW2GKn3Cd6kpUZ1l_C-e4s2BbWoSOc"
+        },
+        {
+          "url": "https://www.on3.com/teams/south-carolina-gamecocks/news/south-carolina-football-texas-am-injuries-2026/",
+          "title": "How Texas A&M's injury situation might affect the Aggies against South Carolina",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_D3z0xWbXxYlNxOCOV17-oJHHIfTzu5dL_llmXNwHrKBy49NDHshW4mWumL8"
+        }
+      ]
+    },
+    {
+      "query": "cvs blackwood",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:10:00Z",
+      "related_news_urls": [
+        "https://6abc.com/post/large-police-presence-seen-outside-cvs-store-gloucester-township/20020916/",
+        "https://www.nbcphiladelphia.com/news/local/armed-person-shot-cvs-gloucester-township-new-jersey-friday/4493240/",
+        "https://www.fox29.com/news/incident-gloucester-township-prompts-heavy-police-activity-skyfox"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnhUQNCDLO1hv8hahfbj0hwd1qrOuFvFHPEYMHecC7M7wTfEs7gxMW2FyD24",
+      "image_credit": "6abc Philadelphia",
+      "news": [
+        {
+          "url": "https://6abc.com/post/large-police-presence-seen-outside-cvs-store-gloucester-township/20020916/",
+          "title": "Armed suspect shot during confrontation with police at CVS store in Gloucester Township, Camden County",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnhUQNCDLO1hv8hahfbj0hwd1qrOuFvFHPEYMHecC7M7wTfEs7gxMW2FyD24"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/armed-person-shot-cvs-gloucester-township-new-jersey-friday/4493240/",
+          "title": "Armed man shot by police while robbing CVS in South Jersey",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSScrjIjuH4GMoq9jc-mOjEvoOmK2djJs0LICdccB1B34i41T3ZaA4zZeeDLn0"
+        },
+        {
+          "url": "https://www.fox29.com/news/incident-gloucester-township-prompts-heavy-police-activity-skyfox",
+          "title": "Armed suspect shot by police at Gloucester Township CVS; investigation underway",
+          "publisher": "FOX 29 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgQ_0kUWz1Zu8kztn32vafmwKkgJYeaSLPbBREE_1KdNhrKgQopUDbccvfxUE"
+        }
+      ]
+    },
+    {
+      "query": "eenadu",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:10:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "nato",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/06/world/europe/europe-trump-midterms.html",
+        "https://www.bloomberg.com/news/articles/2026-11-05/nato-s-rutte-says-he-told-trump-to-keep-chin-up-after-midterms",
+        "https://www.politico.eu/article/allies-fear-donald-trump-could-target-nato-after-midterm-loss/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfUR7ZRnRuQgQFkDXI64cN_MnxJW6TXdBRuI1zKhnipermilLuRgOWUDK6Mtw",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/06/us/college-board-cheating-sat.html",
-          "title": "How the College Board Is Fighting A.I. Cheating on the SAT Tests",
+          "url": "https://www.nytimes.com/2026/11/06/world/europe/europe-trump-midterms.html",
+          "title": "Europe Still Sees Trump As Powerful, Especially in Foreign Policy",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjTJr8ndDeq3P7ODqrV_akfKK02Czpwlaea94xKSL5ullr2EAEKUerg1tK0lc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfUR7ZRnRuQgQFkDXI64cN_MnxJW6TXdBRuI1zKhnipermilLuRgOWUDK6Mtw"
         },
         {
-          "url": "https://qz.com/college-board-sat-auto-sat-ai-cheating-tool-110626",
-          "title": "College Board changed SAT to block Auto SAT AI cheating tool",
-          "publisher": "qz.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/nato-s-rutte-says-he-told-trump-to-keep-chin-up-after-midterms",
+          "title": "NATO’s Rutte Says He Told Trump to Keep ‘Chin Up’ After Midterms",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAigXGynvsLf1CEAKYaiF8O_MXn354Zj3nI72uzt9M_STFrJk3bwjEJRND7vY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS645fHnWE3TcahzvKtMe6TFXBQOIR0R61tEiwtF7_aQZqgpOrY1TQZie7zx44"
+        },
+        {
+          "url": "https://www.politico.eu/article/allies-fear-donald-trump-could-target-nato-after-midterm-loss/",
+          "title": "Allies fear Trump will target NATO in case of midterm loss",
+          "publisher": "POLITICO.eu",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYf9K0yeo0v47CKmaUI1SCJLSqivthVKC3vV46GoQzNBT4qJZd-EZ71NbfLmc"
         }
       ]
     },
     {
-      "query": "brittany mahomes",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T11:30:00Z",
+      "query": "klara and the sun",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T12:00:00Z",
       "related_news_urls": [
-        "https://people.com/brittany-mahomes-and-3-kids-wear-chiefs-red-to-support-patrick-mahomes-on-sidelines-new-photos-12239855",
-        "https://timesofindia.indiatimes.com/sports/nfl/news/dad-wasnt-just-gone-patrick-mahomes-opens-up-about-how-he-wants-sterling-bronze-and-golden-to-learn-from-him/articleshow/135613943.cms",
-        "https://www.marca.com/en/nfl/kansas-city-chiefs/2026/11/04/patrick-mahomes-i-have-to-be-dad-too-quote-resurfaces-as-the-chiefs-look-to-bounce-back.html"
+        "https://www.indiewire.com/features/commentary/taika-waititi-bad-instagram-post-critics-klara-and-the-sun-1235225140/",
+        "https://www.hollywoodreporter.com/movies/movie-news/klara-and-the-sun-taika-waititi-slams-critics-reviews-1236744227/",
+        "https://www.pajiba.com/celebrities_are_better_than_you/taika-waititis-anticritics-rant-is-another-symptom-of-his-artistic-decline.php"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4PLvFi9Mm9gi7W8n_mAsb4f3rRFKj__Fu2L9Wu-CVZm3V18xFeJvPQuuZ_LA",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxoA3qu2VlzWtmI_nXB2iCS4yDs1paN0nG3k4WBb2Sxoj4l1DjAYMCZeD75I",
+      "image_credit": "IndieWire",
       "news": [
         {
-          "url": "https://people.com/brittany-mahomes-and-3-kids-wear-chiefs-red-to-support-patrick-mahomes-on-sidelines-new-photos-12239855",
-          "title": "Brittany Mahomes and Her 3 Kids Wear Chiefs Red to Support Dad Patrick on the Sidelines in Adorable New Photos",
-          "publisher": "People.com",
+          "url": "https://www.indiewire.com/features/commentary/taika-waititi-bad-instagram-post-critics-klara-and-the-sun-1235225140/",
+          "title": "The Problem With Taika Waititi's 'Klara and the Sun' Instagram Post",
+          "publisher": "IndieWire",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4PLvFi9Mm9gi7W8n_mAsb4f3rRFKj__Fu2L9Wu-CVZm3V18xFeJvPQuuZ_LA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxoA3qu2VlzWtmI_nXB2iCS4yDs1paN0nG3k4WBb2Sxoj4l1DjAYMCZeD75I"
         },
         {
-          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/dad-wasnt-just-gone-patrick-mahomes-opens-up-about-how-he-wants-sterling-bronze-and-golden-to-learn-from-him/articleshow/135613943.cms",
-          "title": "“Dad wasn’t just gone”: Patrick Mahomes opens up about how he wants Sterling, Bronze and Golden to learn",
-          "publisher": "The Times of India",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/klara-and-the-sun-taika-waititi-slams-critics-reviews-1236744227/",
+          "title": "‘Klara and the Sun’ Director Taika Waititi Calls Critics “Sad Lost Souls” Over Negative Reviews",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOV0_qLND8OJ2z0AciEo94GfPdYH6BfEIQ73fy7Z9KuAp19mrUUOdzBRK65qc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYVJIqphMP90bkXrGbABBVvNIYYn4i9OnshkXN6sig4_-OU45-7PTYLbNmPAA"
         },
         {
-          "url": "https://www.marca.com/en/nfl/kansas-city-chiefs/2026/11/04/patrick-mahomes-i-have-to-be-dad-too-quote-resurfaces-as-the-chiefs-look-to-bounce-back.html",
-          "title": "Patrick Mahomes’ “I have to be a dad too” quote resurfaces as the Chiefs look to bounce back",
-          "publisher": "MARCA",
+          "url": "https://www.pajiba.com/celebrities_are_better_than_you/taika-waititis-anticritics-rant-is-another-symptom-of-his-artistic-decline.php",
+          "title": "There's a Reason the Critics Don't Like Your New Stuff, Taika Waititi",
+          "publisher": "Pajiba",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_5YkzEZldZZBR18ombkM2r4q-8Ue-cWG1A9U_fDdYkaj_F_dXISkJS-IRPeQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIbRRyecmgt2tRFZznColOru5YKNQ52jwNudB0lHRO0MfeD3OEqvc5xRq0gWI"
         }
       ]
     },
     {
-      "query": "macklemore",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T11:30:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/lifestyle/macklemore-says-us-venues-rejected-his-free-palestine-tour-2026-11-06/",
-        "https://www.theguardian.com/music/2026/nov/06/macklemore-arenas-free-palestine-tour",
-        "https://www.sfgate.com/sf-culture/article/macklemore-chase-center-22517302.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgDlEfGX3ehaMYKcAm0PXfjFBkOnYcg4wKObTIsVilMum2DoH_SGdQSHge6QI",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/lifestyle/macklemore-says-us-venues-rejected-his-free-palestine-tour-2026-11-06/",
-          "title": "Macklemore says US venues rejected his Free Palestine tour",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgDlEfGX3ehaMYKcAm0PXfjFBkOnYcg4wKObTIsVilMum2DoH_SGdQSHge6QI"
-        },
-        {
-          "url": "https://www.theguardian.com/music/2026/nov/06/macklemore-arenas-free-palestine-tour",
-          "title": "Macklemore says that nine US arenas turned down his Free Palestine tour",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdCRed0mcygwBfkquC6v0niZA_rxMVEwYeSgN2J4eVYdcnSVhR2kAU9NMoS0"
-        },
-        {
-          "url": "https://www.sfgate.com/sf-culture/article/macklemore-chase-center-22517302.php",
-          "title": "Macklemore calls out Chase Center with regard to Palestine benefit shows",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzzZHQQzawXiXI0WziGQtZ_IZe4-cDrLvUzj3yqVTWLxacQstmHGNZaRNenXU"
-        }
-      ]
-    },
-    {
-      "query": "luka doncic comments dirk nowitzki",
+      "query": "carson daly",
       "approx_searches": "1000+",
-      "published_at": "2026-11-07T11:20:00Z",
+      "published_at": "2026-11-07T12:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/lakers-luka-doncic-calls-nba-051949870.html",
-        "https://www.si.com/nba/lakers/onsi/lakers-luka-doncic-declared-better-than-dirk-nowitzki-by-former-nba-star",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/07/he-said-thank-you-dirk-but-he-doesnt-even-call/92658948007/"
+        "https://www.today.com/popculture/news/carson-daly-feeling-grateful-ahead-saturday-today-job-rcna607949",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/07/carson-daly-saturday-today-gig-today-show-laura-jarrett/92625170007/",
+        "https://www.hollywoodreporter.com/tv/tv-news/carson-daly-named-co-anchor-saturday-today-show-nbc-1236748201/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7RfVKIqFHIELpJWMBE8-yYti1S8_ZsihlLKCdRxRYwzjH5YQcC85lIhlUOu0",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi67czo9O12LKAdzJYQLroi_mLiWDWHIHW4XgI79efOxJEuyFN-7xTdmZxh9Y",
+      "image_credit": "TODAY.com",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/lakers-luka-doncic-calls-nba-051949870.html",
-          "title": "Lakers’ Luka Doncic calls out NBA mentor: ‘He don’t even call’",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.today.com/popculture/news/carson-daly-feeling-grateful-ahead-saturday-today-job-rcna607949",
+          "title": "Carson Daly Reveals How He’s Feeling Ahead of New Saturday TODAY Gig",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7RfVKIqFHIELpJWMBE8-yYti1S8_ZsihlLKCdRxRYwzjH5YQcC85lIhlUOu0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi67czo9O12LKAdzJYQLroi_mLiWDWHIHW4XgI79efOxJEuyFN-7xTdmZxh9Y"
         },
         {
-          "url": "https://www.si.com/nba/lakers/onsi/lakers-luka-doncic-declared-better-than-dirk-nowitzki-by-former-nba-star",
-          "title": "Lakers’ Luka Doncic Declared Better Than Dirk Nowitzki by Former NBA Star",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmIRUOzA1tDLnOIXrECEzFXRRTxV-cDhegP-LhyjyKZPpGlSDmmJkGP7ICG00"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/07/he-said-thank-you-dirk-but-he-doesnt-even-call/92658948007/",
-          "title": "He said: \"Thank you, Dirk. But he doesn't even call. …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9a59Ho6NfR-4miZIHLti3y1VnGKzFlnyf6kckh-pxJNPR2B35JsIrnL_3kF4"
-        }
-      ]
-    },
-    {
-      "query": "megamillions",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T11:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/money/lottery/2026/11/06/mega-millions-winning-numbers-nov-6-2026/92631831007/",
-        "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
-        "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkZsXNy7D-I-MEnAXuzg3KzBRMDL-cqyqKFc0kKse7UPl3mrrt6WkLnk2AvQU",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/money/lottery/2026/11/06/mega-millions-winning-numbers-nov-6-2026/92631831007/",
-          "title": "Mega Millions winning numbers as jackpot climbs to $505M for Nov. 6",
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/07/carson-daly-saturday-today-gig-today-show-laura-jarrett/92625170007/",
+          "title": "Carson Daly says new role gives 'Today' family 'a good reason' to celebrate | Exclusive",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkZsXNy7D-I-MEnAXuzg3KzBRMDL-cqyqKFc0kKse7UPl3mrrt6WkLnk2AvQU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2MP-qTnyUOx5V8ZbAGr2ZRgZjYOzsg5fGrrgKg-0M4etRM0FO-gQGPkaHP0M"
         },
         {
-          "url": "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
-          "title": "Over $1B in Mega Millions, Powerball jackpots up for grabs",
-          "publisher": "WAVY.com",
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/carson-daly-named-co-anchor-saturday-today-show-nbc-1236748201/",
+          "title": "Carson Daly Named Co-Anchor of NBC’s ‘Saturday Today’",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4"
-        },
-        {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/",
-          "title": "Mega Millions Jackpot Tops $500 Million—Here’s What The Winner Could Take Home",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHTuzxS6qku_Z3j3KuW7i_UjPPjxJKpJwp2osGQIDYwGxJHf4eHqMB2YRgZVY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7oPpuewLrM9M6DgAlKKSvPj4Vkvy9CU3tOYgpcgscXURx5MCDvn40tojyk_Q"
         }
       ]
     },
     {
-      "query": "will estes donnie wahlberg boston blue",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T11:10:00Z",
+      "query": "tyson fury comments deontay wilder",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:00:00Z",
       "related_news_urls": [
-        "https://www.tvinsider.com/1302253/boston-blue-will-estes-jamie-reagan-danny-donnie-wahlberg-blue-bloods-interview/",
-        "https://www.tvline.com/2310002/boston-blue-season-2-episode-5-jamie-reagan-returns-will-estes-interview-video/",
-        "https://www.yahoo.com/entertainment/tv/articles/donnie-wahlberg-blue-bloods-brother-190000905.html"
+        "https://www.espn.com/boxing/story/_/id/50379303/wilder-opetaia-serve-co-main-event-fury-joshua-card",
+        "https://www.badlefthook.com/boxing-news/120206/tyson-fury-doesnt-want-to-see-deontay-wilder-fight-jai-opetaia-boxing-news-2026",
+        "https://sports.yahoo.com/articles/tyson-fury-holds-nothing-back-013952870.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_xT5Cf9SgAMv1zSe5kSNRzN41DkalJ9NNkKYgv4tJFQPJMseYPnQL3lV-X0",
-      "image_credit": "TV Insider",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs1yCiIbimIqcDxh_T7yUQhf6JQN0_qEoIqmhBSoHiYko_lAvxK7vfbgrsP4I",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.tvinsider.com/1302253/boston-blue-will-estes-jamie-reagan-danny-donnie-wahlberg-blue-bloods-interview/",
-          "title": "'Boston Blue': Why Will Estes Was 'Terrified' to Play Jamie Reagan Again",
-          "publisher": "TV Insider",
+          "url": "https://www.espn.com/boxing/story/_/id/50379303/wilder-opetaia-serve-co-main-event-fury-joshua-card",
+          "title": "Wilder-Opetaia to serve as co-main event on Fury-Joshua card",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_xT5Cf9SgAMv1zSe5kSNRzN41DkalJ9NNkKYgv4tJFQPJMseYPnQL3lV-X0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs1yCiIbimIqcDxh_T7yUQhf6JQN0_qEoIqmhBSoHiYko_lAvxK7vfbgrsP4I"
         },
         {
-          "url": "https://www.tvline.com/2310002/boston-blue-season-2-episode-5-jamie-reagan-returns-will-estes-interview-video/",
-          "title": "Boston Blue Season 2, Episode 5: Jamie Reagan Returns — Will Estes Interview Video",
-          "publisher": "TVLine",
+          "url": "https://www.badlefthook.com/boxing-news/120206/tyson-fury-doesnt-want-to-see-deontay-wilder-fight-jai-opetaia-boxing-news-2026",
+          "title": "‘He shouldn’t be in the ring’: Tyson Fury doesn’t want to see Deontay Wilder fight Jai Opetaia",
+          "publisher": "Bad Left Hook",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfeZfHUqPqc5zqFsQqRcAKNVk_i9HDWjQ0yHAo8krFJyn8yPgL4tXCNd5D4rA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUKsYKRe5WRJx88un0FLTCQpju6vF_iE8JDhXhAmWfnuTUp_dXNWAzUZ1DUBk"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/donnie-wahlberg-blue-bloods-brother-190000905.html",
-          "title": "Donnie Wahlberg and “Blue Bloods” Brother Will Estes Settle a ‘Beef’ as They Reunite in “Boston Blue” Clip (Exclusive)",
-          "publisher": "Yahoo",
+          "url": "https://sports.yahoo.com/articles/tyson-fury-holds-nothing-back-013952870.html",
+          "title": "Tyson Fury Holds Nothing Back in Blunt Deontay Wilder Assessment",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9kWwbyJbhbO3UKh7Gin8RSEw4TUsZpPKb6r6OD_dPxrwZqHdb85J2SbR-MOc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_5Q2uuchwqk5e7K1yjwGMmpe60EBDda-Dh328FfVcyWRovkzOgsd81Y3EBA"
+        }
+      ]
+    },
+    {
+      "query": "kevin o'connell",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:00:00Z",
+      "related_news_urls": [
+        "https://www.dailynorseman.com/minnesota-vikings-podcasts/101245/oconnell-must-adapt-or-the-offense-stays-stuck",
+        "https://www.cbssports.com/nfl/news/why-vikings-coach-kevin-oconnell-should-be-on-hot-seat/",
+        "https://www.detroitlions.com/news/5-stats-that-stand-out-following-detroit-lions-week-8-victory-gibbs-reed-hutchinson"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7-hqXnduPkF48dGM0gvyV5fmMbNZ_av95FaWO5ll3O-35IPDxZv_zybMLeHY",
+      "image_credit": "Daily Norseman",
+      "news": [
+        {
+          "url": "https://www.dailynorseman.com/minnesota-vikings-podcasts/101245/oconnell-must-adapt-or-the-offense-stays-stuck",
+          "title": "O’Connell Must Adapt or the Offense Stays Stuck",
+          "publisher": "Daily Norseman",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7-hqXnduPkF48dGM0gvyV5fmMbNZ_av95FaWO5ll3O-35IPDxZv_zybMLeHY"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/why-vikings-coach-kevin-oconnell-should-be-on-hot-seat/",
+          "title": "Why Vikings coach Kevin O'Connell should be on hot seat despite NFL-best 6-1 record",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLuOlvgrc_KOUvT9iDv0r-ZM9R54A324cSPSa0MqP9zSHlv-mRAAIdKApAR2g"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/5-stats-that-stand-out-following-detroit-lions-week-8-victory-gibbs-reed-hutchinson",
+          "title": "TWENTYMAN: 5 stats that stand out following Lions' Week 8 victory",
+          "publisher": "Detroit Lions",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEPwrHZd0tZHvhHhxbJo5IqPI0lTX9Ed4HCBvEaRnOOucX1RxKA1QrjM1BDVc"
         }
       ]
     }
