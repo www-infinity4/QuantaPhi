@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {ESSENTIALS_SEED,prepareEssentialsBatch} from '../essentials-card-batch.mjs';
 import assert from 'node:assert/strict';
 import { BRAND_PRODUCT_CARDS } from '../brand-product-cards.mjs';
 import { PREMIUM_CARDS } from '../premium-source-cards.mjs';
@@ -16,6 +17,18 @@ const catalog = [
 ].map(card => ({ ...card, ready: true }));
 const levis = 'levis-501-dark';
 const guess = 'guess-g11-light';
+
+test('explicit Blue Star chain only adds reviewed skin relief from different publishers', () => {
+ const {cards}=prepareEssentialsBatch(ESSENTIALS_SEED,{today:'2026-11-07'});
+ const editorial=cards.map(c=>({id:c.id,name:c.brand,category:c.category,official:c.productUrl,ready:true}));
+ const selected=togglePowerChainFollowing(cleanFeedState({}), 'blue-star-ointment');
+ const matches=resolvePowerChainFollows(editorial,selected);
+ assert.equal(matches.get('aveeno-anti-itch')?.topic,'skin');
+ assert.equal(matches.get('sarna-original-lotion')?.topic,'skin');
+ assert.equal(matches.has('campho-phenique-liquid'),false); // same source seller
+ assert.equal(matches.has('blue-star-ointment'),false);
+ assert.equal(resolvePowerChainFollows(editorial, cleanFeedState({})).size,0);
+});
 
 test('existing direct follows stay direct until the visitor enables Power Chain for one', () => {
  const saved = cleanFeedState({ following: [levis, 'coinworld'] });
