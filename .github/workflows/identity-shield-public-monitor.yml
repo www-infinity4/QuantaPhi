@@ -1,23 +1,43 @@
 name: Infinity Identity Shield public research
 on:
+  pull_request:
+    paths:
+      - 'identity-shield-card.mjs'
+      - 'assets/identity-shield.svg'
+      - 'data/identity-shield-research.json'
+      - 'scripts/identity-shield-public-monitor.py'
+      - 'test/identity-shield-card.test.mjs'
+      - 'test/test_identity_shield_public_monitor.py'
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - '.github/workflows/identity-shield-public-monitor.yml'
   workflow_dispatch:
   schedule:
     - cron: '21 14 * * 1'
-permissions:
-  contents: write
 concurrency:
-  group: identity-shield-public-monitor
+  group: identity-shield-public-monitor-${{ github.ref }}
   cancel-in-progress: false
 jobs:
-  public-research:
+  validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 6
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
-      - name: Verify public card and source safety contracts
+      - name: Test public Quick Card and privacy/monitor contracts
         run: |
           node --test test/identity-shield-card.test.mjs
           python3 -m unittest discover -s test -p 'test_identity_shield_public_monitor.py'
+  public-research:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
       - name: Check allowlisted public agency pages only
         run: python3 scripts/identity-shield-public-monitor.py
       - name: Save public research receipt without user data
