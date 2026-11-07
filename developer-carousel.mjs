@@ -96,7 +96,18 @@ if(root){
  // Selecting it only chooses this on-page original; it does not publish anything.
  const requested=(()=>{try{return new URL(location.href).searchParams.get('card')}catch{return null}})();
  const requestedIndex=cards.findIndex(card=>card.id===requested);
- if(cards.length)show(requestedIndex>=0?requestedIndex:0);
+ if(cards.length){
+  show(requestedIndex>=0?requestedIndex:0);
+  if(requestedIndex>=0){
+   // A shareable ?card= builder link must actually reach the developer section.
+   // This also makes the selected same-origin lazy publisher iframe load on Android.
+   if(cards[requestedIndex].id==='quickCardBuilderInline'){
+    const frame=cards[requestedIndex].node.querySelector('iframe.developer-quickcard-frame');
+    if(frame)frame.loading='eager';
+   }
+   requestAnimationFrame(()=>root.scrollIntoView({block:'start',behavior:'instant'}));
+  }
+ }
  else {
   status.textContent='The original developer tools are temporarily unavailable.';
   previous.disabled=next.disabled=true;
