@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
  DEVELOPMENT_TOPICS,OFFICIAL_DEVELOPER_SOURCES,buildGithubSearchURL,normalizeGithubResult,
- classifyProposal,buildReviewIssueURL,existingCapabilityFor,cleanProposalText,
+ classifyProposal,buildReviewIssueURL,existingCapabilityFor,validateIndexedResource,cleanProposalText,
  summarizeGithubPage
 } from '../developer-discovery-core.mjs';
 
@@ -98,4 +98,16 @@ test('GitHub response deduplicates by repository id and reports actual page coun
  assert.equal(out.reportedMatches,8204);
  assert.equal(out.searchCap,1000);
  assert.equal(out.incomplete,false);
+});
+
+test('indexed candidate cards cannot display mutable user-uploaded avatars or unreviewed image URLs',()=>{
+ const row={id:903,full_name:'safe/design-kit',name:'design-kit',html_url:'https://github.com/safe/design-kit',
+  description:'Accessible UI design patterns',fork:false,archived:false,disabled:false,
+  owner:{avatar_url:'https://avatars.githubusercontent.com/u/2?v=4'},license:{spdx_id:'MIT'}};
+ const source=normalizeGithubResult(row,'design-systems');
+ assert.equal(source.image,'https://github.githubassets.com/favicons/favicon.svg');
+ assert.equal(validateIndexedResource(source)?.id,source.id);
+ assert.equal(validateIndexedResource({...source,image:'https://avatars.githubusercontent.com/u/2?v=4'}),null);
+ assert.equal(validateIndexedResource({...source,url:'https://another-host.example/safe/design-kit'}),null);
+ assert.equal(validateIndexedResource({...source,label:'Porn imagery'}),null);
 });
