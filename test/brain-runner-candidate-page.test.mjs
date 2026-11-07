@@ -90,3 +90,20 @@ test('a database read failure does not silently become an empty, apparently comp
  const db={prepare(){return {bind(){return {all:async()=>{throw Error('D1 unavailable')}}}}}};
  await assert.rejects(readRunnerQueue(db,{ownerHash:'owner-A'}),/D1 unavailable/);
 });
+
+test('all four signed Brain recovery paths use owner-partitioned paging instead of burying recent errors',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const worker=await readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ for(const method of ['reconcilePendingWork','recoverDeferredWork','retryPendingWork']){
+  const start=worker.indexOf('async '+method+'(');
+  assert.ok(start>=0,'expected '+method+' method');
+  const end=method==='reconcilePendingWork'?worker.indexOf('async recoverDeferredWork',start):
+   method==='recoverDeferredWork'?worker.indexOf('async retryPendingWork',start):
+    worker.indexOf('async directGithub',start);
+  assert.ok(end>start,'method region '+method);
+  assert.match(worker.slice(start,end),/readRunnerQueue\(this\.env\.WORK_DB/);
+ }
+ const claim=worker.slice(worker.indexOf("if(path==='/runner/claim')"),worker.indexOf("if(path==='/runner/event')"));
+ assert.match(claim,/readRunnerQueue\(this\.env\.WORK_DB/);
+ assert.equal((worker.match(/readRunnerQueue\(this\.env\.WORK_DB/g)||[]).length,4);
+});
