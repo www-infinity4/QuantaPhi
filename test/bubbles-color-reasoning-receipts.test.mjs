@@ -40,7 +40,7 @@ test('reasoning proof is bounded and does not admit arbitrary phases or backward
  const started=appendRunnerStep({runUrl},{phase:'planning_started',attempt:0},repository,runUrl);
  const red=appendRunnerStep(started,{phase:'red_reasoned',attempt:0,raw:'secret'},repository,runUrl);
  assert.ok(red);
- assert.equal(red.runnerSteps.at(-1).summary,'');
+ assert.match(red.runnerSteps.at(-1).summary,/GPT inference only; no tools, imports or source changes verified/);
  assert.equal(appendRunnerStep(red,{phase:'color_reasoned',attempt:0},repository,runUrl),null);
  assert.equal(appendRunnerStep(red,{phase:'red_reasoned',attempt:0},repository,runUrl),null);
  assert.equal(appendRunnerStep(red,{phase:'planning_started',attempt:0},repository,runUrl),null);
