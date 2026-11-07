@@ -1,0 +1,33 @@
+name: Infinity Identity Shield public research
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '21 14 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: identity-shield-public-monitor
+  cancel-in-progress: false
+jobs:
+  public-research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify public card and source safety contracts
+        run: |
+          node --test test/identity-shield-card.test.mjs
+          python3 -m unittest discover -s test -p 'test_identity_shield_public_monitor.py'
+      - name: Check allowlisted public agency pages only
+        run: python3 scripts/identity-shield-public-monitor.py
+      - name: Save public research receipt without user data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/identity-shield-research.json
+          if git diff --cached --quiet; then
+            echo 'No new published research receipt'
+          else
+            git commit -m 'research: public identity-protection sources weekly readback [skip ci]'
+            git push origin HEAD:main
+          fi
