@@ -14,8 +14,8 @@ task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
 branch: feat/media-star-fred-launcher-otc-featured-20261107
-head_sha: pending PR exact-head readback
-pr: pending
+head_sha: 9298e80c0e9802c0314abfcd63ddc32dac063e7c (initial PR review; latest commit will change with checkpoint)
+pr: 1820
 tests: "Node and Playwright regressions authored; CI not yet checked"
 merged: false
 deployed: false
