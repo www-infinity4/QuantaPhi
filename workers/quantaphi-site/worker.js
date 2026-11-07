@@ -404,6 +404,19 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env, ctx) {
   const incoming = new URL(request.url);
+  if(incoming.pathname==='/api/quant-orange/decision'){
+   if(request.method!=='POST')return Response.json({ok:false,error:'method_not_allowed'},{status:405,headers:{'Cache-Control':'no-store'}});
+   if(!env.TREND_CARD_ENGINE?.fetch)return Response.json({ok:false,error:'quant_orange_decision_tool_not_bound'},{status:503,headers:{'Cache-Control':'no-store'}});
+   // Internal service binding: the existing signed-in QuantaPhi authorization is
+   // verified again by the decision Worker. Never proxy via a public URL.
+   const forwarded=new Request('https://quant-orange.internal/decision',request);
+   const upstream=await env.TREND_CARD_ENGINE.fetch(forwarded);
+   const headers=new Headers(upstream.headers);
+   headers.set('Cache-Control','no-store');
+   headers.delete('Set-Cookie');
+   return new Response(upstream.body,{status:upstream.status,statusText:upstream.statusText,headers});
+  }
+
   if(incoming.pathname.startsWith('/api/bubbles/connections/')){
    if(!env.BUBBLES_CONNECTIONS)return Response.json({ok:false,error:'connections_not_configured'},{status:503,headers:{'Cache-Control':'no-store'}});
    return env.BUBBLES_CONNECTIONS.fetch(request);

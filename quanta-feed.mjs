@@ -6,6 +6,7 @@ import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
 import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
+import {loadOwnOrangeScores} from './quanta-feed-orange.mjs';
 import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
 import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
 
@@ -37,7 +38,8 @@ let state=safeRead(),tab='public',current='',query='',showCount=16,lastReason=''
 // Quant signals are derived in memory from the authenticated user’s existing ledger.
 // They are NEVER written to anonymous localStorage.
 let quantScores={},quantConnected=false,quantAttempted=false;
-const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores});
+let orangeScores={},orangeConnected=false,orangeAttempted=false,orangeRequest=0;
+const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores:{...quantScores,...orangeScores}});
 const persist=()=>{try{localStorage.setItem(FEED_STORAGE_KEY,JSON.stringify(state));}catch{/* Anonymous state can still work for this page. */}};
 const shareChange=()=>window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'public-feed'}}));
 function choose(card){
@@ -87,6 +89,24 @@ function makeTile(card,refresh){
  }
  tile.append(buttons);return tile;
 }
+
+async function refreshOrange(currentId=''){
+ if(tab!=='for-you')return;
+ const version=++orangeRequest;
+ const currentCard=ALL_FEED_CARDS.find(c=>c.id===currentId);
+ const choices=feedCandidates(ALL_FEED_CARDS,'for-you',ranking());
+ const sorted=currentCard?[currentCard,...choices.filter(c=>c.id!==currentId)]:choices;
+ const seenIds=Object.keys(state.viewed||{}).filter(id=>state.viewed[id]>0).slice(0,100);
+ const result=await loadOwnOrangeScores(window.QuantaCloudConnection,sorted,{title:currentCard?.name||''},seenIds);
+ if(version!==orangeRequest||tab!=='for-you')return;
+ if(result.connected){
+  orangeConnected=true;
+  // Keep earlier logged-in Quant relevance where a new bounded Orange score is lower.
+  orangeScores=Object.fromEntries(Object.entries(result.scores).map(([id,v])=>[id,Math.max(v,Number(quantScores[id])||0)]));
+  renderHome();
+ }
+}
+
 function renderHome(){
  const host=document.getElementById('quantaDiscoveryFeed');if(!host)return;
  state=safeRead();
@@ -103,7 +123,7 @@ function renderHome(){
  for(const name of FEED_TABS){
   const b=create('button','qf-tab'+(tab===name?' qf-active':''),name==='for-you'?'For You':name==='following'?'Following':'Public');
   b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(tab===name));
-  b.addEventListener('click',()=>{tab=name;current='';lastReason='';showCount=16;renderHome();});tabs.append(b);
+  b.addEventListener('click',()=>{if(tab!==name){++orangeRequest;orangeScores={};orangeConnected=false;orangeAttempted=false;quantScores={};quantConnected=false;quantAttempted=false;}tab=name;current='';lastReason='';showCount=16;renderHome();});tabs.append(b);
  }host.append(tabs);
  const status=create('p','qf-muted');status.id='quantaFeedStatus';status.setAttribute('role','status');host.append(status);
  const feature=create('div','qf-feature');feature.id='quantaFeedFeature';host.append(feature);
@@ -116,6 +136,7 @@ function renderHome(){
   current=pick.card?.id||'';
   lastReason=pick.reason||'';
   persist();renderResults(false);
+  if(tab==='for-you')void refreshOrange(current);
  });
  controls.append(next);host.append(controls);
  const grid=create('div','qf-grid');grid.id='quantaFeedGrid';host.append(grid);
@@ -153,7 +174,7 @@ function renderHome(){
   grid.replaceChildren();
   for(const c of ranked.slice(0,showCount))grid.append(makeTile(c,refresh));
   status.textContent=tab==='following'?ranked.length+' followed cards':tab==='for-you'?
-    ranked.length+' suggested cards · '+(quantConnected?'your signed-in Quant interests + card activity':'your card interactions on this device'):
+    ranked.length+' suggested cards · '+(orangeConnected?'Orange Quant-AI decisions from your signed-in activity':quantConnected?'your signed-in Quant interests + card activity':'your card interactions on this device'):
     ranked.length+' public cards · unseen first when using Next';
   more.hidden=ranked.length<=showCount;next.disabled=ranked.length===1;
  }
@@ -167,6 +188,10 @@ function renderHome(){
    quantScores=result.scores||{};
    if(tab==='for-you')renderHome();
   });
+ }
+ if(tab==='for-you'&&!orangeAttempted){
+  orangeAttempted=true;
+  void refreshOrange(current);
  }
 }
 function renderDetail(){

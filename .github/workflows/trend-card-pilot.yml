@@ -1,0 +1,41 @@
+name: Infinity Trend-to-Card pilot checks
+on:
+  pull_request:
+    paths:
+      - 'trend-card-core.mjs'
+      - 'creator-ad-studio.css'
+      - 'index.html'
+      - 'quanta-feed.mjs'
+      - 'quanta-feed-orange.mjs'
+      - 'workers/quantaphi-site/worker.js'
+      - 'workers/trend-card-engine/**'
+      - 'test/trend-card-*.test.mjs'
+      - 'docs/INFINITY-TREND-TO-CARD-EIGHT-BOTS.md'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  trend-card-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate source, roles, queue, auth and Orange gate
+        run: node --test test/trend-card-engine.test.mjs test/trend-card-worker.test.mjs test/trend-card-quant-decision.test.mjs test/trend-card-orange-client.test.mjs
+      - name: Permanent public creator shelf must remain outside rotating deck
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs');
+          const html=fs.readFileSync('index.html','utf8');
+          const ad=html.indexOf('id="sponsorBoard"');
+          const shelf=html.indexOf('id="creatorAdStudio"');
+          const footer=html.indexOf('class="qp-site-footer"');
+          if(ad<0||shelf<ad||footer<shelf)throw Error('Creator studio not after sponsor board and before footer');
+          for(const link of ['/quick-card-builder.html','/?card=mediaStarCreator','href="#sponsorBoard"'])if(!html.slice(shelf).includes(link))throw Error('Missing real creator action: '+link);
+          if(!html.includes('/creator-ad-studio.css'))throw Error('Mobile styles missing');
+          const worker=fs.readFileSync('workers/trend-card-engine/worker.mjs','utf8');
+          if(!worker.includes('quant_ai_receipt_verification_not_configured'))throw Error('Orange gate must fail closed');
+          NODE
