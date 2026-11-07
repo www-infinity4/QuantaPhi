@@ -31,9 +31,16 @@ export function createEssentialQuickCard(card){
  });info.append(actions);article.append(info);
  return article;
 }
-export function mountEssentialsQuickCards(){
+async function reviewedCatalog(){
+ try{
+  const response=await fetch('/data/essentials-reviewed.json',{cache:'no-store',credentials:'same-origin'});
+  if(response.ok){const items=await response.json();if(Array.isArray(items)&&items.length)return items;}
+ }catch{} // Fallback only to the four independently curated seeds.
+ return ESSENTIALS_SEED;
+}
+export async function mountEssentialsQuickCards(){
  const host=document.getElementById('essentialsQuickCards');if(!host||host.dataset.mounted==='true')return;
- const {cards,held}=prepareEssentialsBatch(ESSENTIALS_SEED);
+ const {cards,held}=prepareEssentialsBatch(await reviewedCatalog());
  const header=el('div','qec-heading');
  header.append(el('h2','','Hard-to-find medicine cabinet essentials'),
   el('p','','Original products with real source images and direct retailer links. Follow a card or choose Power Chain follow in the Oracle viewer to bring closely related essentials into Following. No medical-interest profiling.'));
