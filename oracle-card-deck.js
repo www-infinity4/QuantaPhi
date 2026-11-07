@@ -274,7 +274,7 @@ function registerTrendingAppCards(){
  }
  if(added){
   updateTabs();predict();if(!active)start();
-  if(!viewerTouched&&!expanded&&['termux','trending-apps','android-apps'].includes(spotlightRequested)){
+  if(!viewerTouched&&!expanded&&spotlightRequested==='trendingAppTermux'){
    const termux=entries.find(e=>e.id==='trendingAppTermux'&&available(e));
    if(termux&&termux!==active)show(termux,false);
   }
