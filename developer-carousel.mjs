@@ -77,7 +77,11 @@ if(root){
   if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5)
    show(nextDeveloperCardIndex(index,dx>0?-1:1,cards.length));
  },{passive:true});
- if(cards.length)show(0);
+ // Preserve existing shared Oracle deep links when a builder moves here.
+ // Selecting it only chooses this on-page original; it does not publish anything.
+ const requested=(()=>{try{return new URL(location.href).searchParams.get('card')}catch{return null}})();
+ const requestedIndex=cards.findIndex(card=>card.id===requested);
+ if(cards.length)show(requestedIndex>=0?requestedIndex:0);
  else {
   status.textContent='The original developer tools are temporarily unavailable.';
   previous.disabled=next.disabled=true;
