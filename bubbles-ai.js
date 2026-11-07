@@ -3665,7 +3665,27 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
     publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
-    const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
+    // The GitHub API normally responds "working" first. Continue only after
+    // the verified final creation receipt, never on chat or dispatch narration.
+    // Do not turn a restored opaque receipt into fresh owner authorization.
+    let packageHandoff=null;
+    if(operation?.action==='create_repository'&&receiptThread===activeThread&&
+     brainTools?.repositoryCreationIntent?.(ownerRequest)?.continueBuild===true&&
+     result.ok===true&&result.repository===operation.repository&&
+     ['repository_created','repository_already_exists'].includes(result.status)){
+     const creationReceipt=(await humanReplies()).githubReply(result);
+     try{
+      const ticket=await submitRepositoryWork(ownerRequest+
+       '\n\nVerified repository: '+operation.repository+
+       '. Finish the original owner-requested package here with source research, color GPT planning, Green implementation, Pink tests, Purple review and independent code/CI/deployment receipts. Do not create another repository.',
+       'explicit-user-command',operation.repository,null,imageEvidence);
+      packageHandoff=creationReceipt+'\n'+(await humanReplies()).workReply(ticket);
+     }catch(error){
+      packageHandoff=creationReceipt+'\nPackage build not confirmed as queued: '+
+       String(error?.message||error).slice(0,180)+'. Repository creation is not build completion.';
+     }
+    }
+    const report=packageHandoff||await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
      (await humanReplies()).githubReply(result);
     appendGithubReport(report,receiptThread);
     if(pendingBits)continue;
