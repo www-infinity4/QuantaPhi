@@ -46,3 +46,10 @@
  .oracle-essentials-jumps{padding:12px 9px;gap:9px}
  .oracle-essentials-jumps button{flex:1 1 138px;min-width:0;font-size:15px;line-height:1.35}
 }
+
+.qec-facts-source{display:inline-flex;align-items:center;min-height:44px;
+ padding:8px 10px;margin:3px 0 9px;border:1px solid #c3d9e5;
+ border-radius:10px;background:#f6fbff;color:#184766;font-size:14px;
+ font-weight:750;line-height:1.4;text-decoration:underline;}
+.qec-photo-credit{display:block;margin:9px 0;color:#566476;
+ font-size:12px;line-height:1.4;}
