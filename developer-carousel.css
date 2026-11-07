@@ -4,7 +4,9 @@
 .developer-head small{display:block;color:#ebd8b7;font-weight:850;letter-spacing:.08em;font-size:13px}
 .developer-head h2{font-size:clamp(22px,5.5vw,30px);line-height:1.17;margin:7px 0}
 .developer-head p{font-size:16px;line-height:1.48;color:#f3eafa;margin:0 0 14px}
-.developer-controls{display:grid;grid-template-columns:50px minmax(0,1fr) 50px;align-items:center;gap:7px}
+/* Keep navigation above the preceding heading when narrow Android layout paints overlapping text. */
+.developer-head{position:relative;z-index:0}
+.developer-controls{position:relative;z-index:2;display:grid;grid-template-columns:50px minmax(0,1fr) 50px;align-items:center;gap:7px}
 .developer-controls button{min-height:48px;min-width:48px;border-radius:13px;background:#f3eefa;color:#2d2233;font-size:28px;padding:0;border:1px solid #d7c8d8}
 .developer-controls button:disabled{opacity:.4}
 .developer-controls strong{text-align:center;font-size:18px;line-height:1.25;min-width:0;overflow-wrap:anywhere}
