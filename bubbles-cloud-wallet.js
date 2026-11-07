@@ -9,7 +9,7 @@ const history=byId('bubblesWalletHistory');
 const receipts=byId('bubblesWalletReceipts');
 const refresh=byId('bubblesWalletRefresh');
 if(!state||!balances||!history||!receipts||!refresh)return;
-let pending=false,lastUser='';
+let pending=false,lastUser='',walletGeneration=0;
 function status(message){state.textContent=message}
 function money(value){return Number.isFinite(Number(value))?Number(value).toLocaleString(undefined,{maximumFractionDigits:1}):'—'}
 function accountTime(value){const number=Number(value);if(!Number.isFinite(number)||number<=0)return '';const t=new Date(number);return Number.isNaN(+t)?'':t.toLocaleString()}
@@ -25,10 +25,10 @@ async function verifiedWalletToken(){
   })]);
  }finally{clearTimeout(timer)}
 }
-async function api(url,token){
+async function api(url,token,options={}){
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
  try{
-  const res=await fetch(url,{headers:{Authorization:'Bearer '+token},cache:'no-store',signal:controller.signal});
+  const res=await fetch(url,{...options,headers:{...options.headers,Authorization:'Bearer '+token},cache:'no-store',signal:controller.signal});
   const data=await res.json().catch(()=>({}));
   if(!res.ok||!data.ok)throw Error(data.error||'Cloudflare wallet request failed ('+res.status+')');
   return data;
@@ -37,8 +37,41 @@ async function api(url,token){
 function line(title,value){
  const span=document.createElement('span');span.className='bubbles-wallet-asset';
  const label=document.createElement('small');label.textContent=title;
- const count=document.createElement('strong');count.textContent=money(value);
+ const count=document.createElement('strong');count.textContent=value===null?'—':money(value);
  span.append(label,count);return span;
+}
+function workAssetLine(title,asset,unavailable){
+ const confirmed=asset?.available===true&&Number.isSafeInteger(asset.credited)&&asset.credited>=0;
+ const entry=line(title,confirmed?asset.credited:null);
+ const note=document.createElement('small');
+ note.textContent=confirmed?(Number.isSafeInteger(asset.pending)?asset.pending+' pending verification':'Confirmed credits'):unavailable;
+ entry.append(note);
+ return entry;
+}
+function gptCoinImport(token,generation){
+ const form=document.createElement('form');
+ const label=document.createElement('label');label.textContent='GPT Coin provider receipt';
+ const input=document.createElement('textarea');input.required=true;input.maxLength=4096;input.rows=3;
+ const submit=document.createElement('button');submit.type='submit';submit.textContent='Import signed receipt';
+ const result=document.createElement('small');result.setAttribute('role','status');
+ label.append(input);form.append(label,submit,result);
+ form.addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(submit.disabled)return;
+  submit.disabled=true;
+  try{
+   const activeToken=await verifiedWalletToken();
+   if(generation!==walletGeneration||activeToken!==token)return;
+   const data=await api(WALLET+'/v1/wallet/gpt-coin/import',token,{
+    method:'POST',headers:{'Content-Type':'application/json'},body:input.value});
+   if(generation!==walletGeneration)return;
+   input.value='';
+   result.textContent=data.replayed?'This receipt is already in your wallet.':'Provider receipt credited.';
+   void load();
+  }catch{result.textContent='The wallet could not verify this provider receipt.';}
+  finally{submit.disabled=false;}
+ });
+ return form;
 }
 function item(target,text){
  const li=document.createElement('li');li.textContent=text;target.append(li);
@@ -58,7 +91,7 @@ async function paginated(kind,token){
  }
  return {items:found,complete:false};
 }
-async function populate(token,star,unified){
+async function populate(token,star,unified,generation){
  const name=String(star.state?.username||'').trim().toLowerCase();
  const account=String(unified.user?.username||'').trim().toLowerCase();
  if(!name||name!==account||!unified.user?.id)throw Error('Wallet identity mismatch. No balances or records were changed.');
@@ -71,12 +104,17 @@ async function populate(token,star,unified){
   line('Infinity',b.INFINITY),
   line('Music Quants',b.MUSIC_QUANT)
  );
- const bitInfo=unified.bubbleBits;
- if(bitInfo?.available&&Number.isSafeInteger(bitInfo.credited))balances.append(line('Bubble Bits credited',bitInfo.credited));
- else {const unavailable=document.createElement('p');unavailable.textContent='Bubble Bit credit ledger unavailable';balances.append(unavailable);}
+ const work=unified.workAssets||{};
+ balances.append(
+  workAssetLine('GIT',work.GIT,work.GIT?.status==='wallet_link_required'?'Wallet link required':'Verification ledger unavailable'),
+  workAssetLine('Bubble Bits',work.BUBBLE_BIT||unified.bubbleBits,'Credit ledger unavailable'),
+  workAssetLine('GPT Coin',work.GPT_COIN,work.GPT_COIN?.status==='ledger_unavailable'?'Import ledger unavailable':'Provider issuer not connected')
+ );
+ if(work.GPT_COIN?.importAvailable===true)balances.append(gptCoinImport(token,generation));
  balances.hidden=false;
  history.hidden=false;
  status('Cloudflare verified · '+name+' · live balances');
+ if(generation!==walletGeneration)return;
  receipts.replaceChildren();
  const description=document.createElement('p');
  description.textContent='Reading the original Infinity transactions and search-token records directly from Cloudflare…';
@@ -92,6 +130,7 @@ async function populate(token,star,unified){
   transactions=(unified.history||[]).filter(x=>x.asset_code==='INFINITY');
   tokens=(unified.tokens||[]).filter(x=>x.token_type==='INFINITY_SEARCH');
  }
+ if(generation!==walletGeneration)return;
  receipts.replaceChildren();
  const note=document.createElement('p');
  note.textContent=legacy?'Showing authenticated recent records only. Full Infinity history needs the updated Cloudflare Worker.':complete?'Complete available Infinity ledger history for this verified account.':'Only part of the Cloudflare history could be loaded; older records remain stored.';
@@ -118,25 +157,35 @@ async function populate(token,star,unified){
 }
 async function load(){
  if(pending)return;
+ const generation=walletGeneration;
  pending=true;refresh.disabled=true;
  status('Checking your previously verified wallet…');
  try{
   const token=await verifiedWalletToken();
+  if(generation!==walletGeneration)return;
   if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||'')){
    balances.hidden=true;history.hidden=true;receipts.replaceChildren();
    status('Wallet not connected in this browser or Android app. Your Cloudflare records have not been erased. Use Find Cloud Tokens to restore an existing verified wallet.');
    return;
   }
   const [star,unified]=await Promise.all([api(STAR+'/v1/state',token),api(WALLET+'/v1/wallet/state',token)]);
-  await populate(token,star,unified);
+  if(generation===walletGeneration)await populate(token,star,unified,generation);
  }catch(error){
+  if(generation!==walletGeneration)return;
   balances.hidden=true;history.hidden=true;receipts.replaceChildren();
   status('Could not verify the current wallet: '+String(error.message||error).slice(0,180)+'. Stored Cloudflare records were not changed.');
- }finally{pending=false;refresh.disabled=false}
+ }finally{
+  pending=false;refresh.disabled=false;
+  if(generation!==walletGeneration)void load();
+ }
 }
 refresh.addEventListener('click',()=>void load());
 document.addEventListener('starquest:ledger-connected',()=>void load());
-document.addEventListener('starquest:auth-changed',()=>void load());
+document.addEventListener('starquest:auth-changed',()=>{
+ walletGeneration++;
+ balances.hidden=true;balances.replaceChildren();history.hidden=true;receipts.replaceChildren();
+ void load();
+});
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')void load()});
 void load();
 })(window);
