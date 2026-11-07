@@ -109,7 +109,7 @@ const groupDefinitions=[
   {id:'phiMediaBuilder',title:'Image Printer · Original Generator'},{id:'phiStoryWriter',title:'Story Writer · Original Stories'}]},
  {id:'realms',title:'Physics · Stories · Realms · Games',description:'Illustrated experiments, original story reading, and playable story realms. Each selected card works inside this viewer.',items:[
   {id:'physicsOracleCard',title:'Physics · Generate a Picture'},{id:'infiniteBook',title:'Read a Story'},
-  {id:'groupStoryBuild',title:'Build a Group Story'},{id:'oracleRealmGame',title:'Play Oracle Realms'}]},
+  {id:'pixieStoryCard',title:'Pixie Stories · Read & Explore'},{id:'groupStoryBuild',title:'Build a Group Story'},{id:'oracleRealmGame',title:'Play Oracle Realms'}]},
  {id:'cartoons',title:'Classic Cartoons · 80s & 90s',description:'Publisher-posted classic episodes only, in a single inline YouTube player.',items:videos.filter(v=>v.category==='cartoons')},
  {id:'documentaries',title:'Full Documentary Films',description:'Water, history, discoveries and science. Selected full-length publisher videos, never trailers passed off as full films.',items:videos.filter(v=>v.category==='documentaries')},
  {id:'shows',title:'Pawn Stars · Bourdain · World TV',description:'Full episodes from recognized publishers, with international travel and food preferred.',items:videos.filter(v=>v.category==='shows')},
