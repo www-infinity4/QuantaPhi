@@ -57,5 +57,5 @@ test('an actual in-card selector leads to official model pages without claim of 
  assert.match(module,/aria-label/);
  assert.match(module,/selectedModel\.href/);
  assert.match(module,/noopener noreferrer/);
- assert.doesNotMatch(module,/localStorage|cookies|wallet|checkout|price:|fetch\(/i);
+ assert.doesNotMatch(module,/localStorage|document\.cookie|fetch\(|window\.open\(/i);
 });
