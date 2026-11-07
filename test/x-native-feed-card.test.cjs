@@ -37,3 +37,14 @@ test('native X backend verifies scope, uses source data, and does not replay end
  assert.ok(worker.includes('x_api_verified'));
  assert.ok(!worker.includes('fakeTimeline'));
 });
+
+test('X post reader accepts genuine status URLs and IDs, rejects unrelated and invalid links',async()=>{
+ const {parseXPostId}=await import('../x-twitter-card.mjs');
+ for(const value of ['1888777666555444333','https://x.com/SomeUser/status/1888777666555444333','https://twitter.com/SomeUser/status/1888777666555444333?s=20'])
+  assert.equal(parseXPostId(value),'1888777666555444333');
+ for(const invalid of ['https://evil.example/SomeUser/status/1888777666555444333','https://x.com/i/spaces/1888777666555444333','https://x.com/SomeUser/status/abc','https://x.com/SomeUser/status/1888777666555444333/extra',''])assert.equal(parseXPostId(invalid),null);
+ const card=read('x-twitter-card.mjs');
+ assert.ok(card.includes('/v1/x/post?id='));
+ assert.ok(card.includes('Read this post'));
+ assert.ok(card.includes('One post'));
+});
