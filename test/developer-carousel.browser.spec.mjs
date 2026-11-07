@@ -16,9 +16,7 @@ for(const width of [320,360,393]){
   await expect(creator.locator('#quickCardCreate input[name="title"]')).toBeVisible({timeout:12000});
   await creator.locator('input[name="title"]').fill('Vintage Radio Creator');
   await section.getByRole('button',{name:'501 Affiliates'}).click();
-  await expect(stage.locator('#government501Affiliates .gov501-card')).toBeVisible({timeout:12000}).catch(async()=>{
-   await expect(stage.locator('#government501Affiliates input[type="search"]')).toBeVisible();
-  });
+  await expect(stage.locator('#government501Affiliates input[type="search"]')).toBeVisible({timeout:12000});
   await section.getByRole('button',{name:'Infinity Brands'}).click();
   await expect(stage.locator('#infinityAffiliates #iaBrandSearch')).toBeVisible({timeout:12000});
   await stage.locator('#iaBrandSearch').fill('Framework');
