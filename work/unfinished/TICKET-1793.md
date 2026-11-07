@@ -1,3 +1,28 @@
+---
+issue: 1793
+project: "Harley-Davidson & Indian Motorcycle 2026 Quick Cards"
+state: source_tested
+dot: "🟡"
+progress_percent: 60
+progress_basis: "Two cards source-staged; interactive card Node CI step passed on bf977f1, ledger metadata fix pending new exact-head CI; browser and production not accepted"
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: "GPT / Green implementation; Pink CI automated test"
+lease_id: null
+lease_expires_at: null
+task_session_id: null
+fence: null
+repo: www-infinity4/QuantaPhi
+branch: feat/motorcycle-harley-indian-quick-cards-1793
+last_observed_at_utc: "2026-11-07"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1794"
+tests: "Interactive card Node regressions passed on bf977f1; ledger metadata repair staged, new exact-head results pending"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Exact-head full CI, image rights and source review, browser/Android and production verification pending"
+next_action: "Verify exact-head CI after repairing ledger metadata and inspect Android-width browser test before independent review"
+---
 # TICKET-1793 · Harley-Davidson & Indian Motorcycle Quick Cards
 
 - Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1793
